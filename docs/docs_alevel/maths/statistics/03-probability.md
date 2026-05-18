@@ -130,7 +130,7 @@ Measure, which is justified by the theorem above. $\blacksquare$
 
 ### 4.1 Statement
 
-**Theorem.** For events $A$ and $B$ with $P(B) \gt{} 0$:
+**Theorem.** For events $A$ and $B$ with $P(B) \gt 0$:
 
 $$P(A|B) = \frac◆LB◆P(B|A) \cdot P(A)◆RB◆◆LB◆P(B)◆RB◆$$
 
@@ -164,7 +164,7 @@ $$P(A \cap B) = P(A) \cdot P(B)$$
 
 ### 5.2 Proof: Independence ⟺ conditional probability equals unconditional
 
-**Theorem.** $A$ and $B$ are independent if and only if $P(A|B) = P(A)$ (provided $P(B) \gt{} 0$).
+**Theorem.** $A$ and $B$ are independent if and only if $P(A|B) = P(A)$ (provided $P(B) \gt 0$).
 
 **Proof.**
 
@@ -231,8 +231,8 @@ $n! = n(n-1)(n-2)\cdots 1$With $0! = 1$.
 
 ### 7.2 Permutations and combinations
 
-- **Permutations:** ${}^n P_r = \dfrac{n!}{(n-r)!}$ (order matters)
-- **Combinations:** ${}^n C_r = \binom{n}{r} = \dfrac{n!}{r!(n-r)!}$ (order does not matter)
+- **Permutations:** $^n P_r = \dfrac{n!}{(n-r)!}$ (order matters)
+- **Combinations:** $^n C_r = \binom{n}{r} = \dfrac{n!}{r!(n-r)!}$ (order does not matter)
 
 ### 7.3 Probability with equally likely outcomes
 
@@ -772,7 +772,7 @@ Check independence: $P(A)P(B) = 0.6 \times 0.52 = 0.312 \neq 0.24 = P(A \cap B)$
 
 <details>
 <summary>Problem 19</summary>
-A discrete random variable $X$ has CDF $F(x) = 0$ for $x \lt{} 0$$F(x) = x/4$ for $0 \leq x \lt{} 1$$F(x) = 1/2$ for $1 \leq x \lt{} 2$$F(x) = 3/4$ for $2 \leq x \lt{} 3$And $F(x) = 1$ for $x \geq 3$. Find the PMF of $X$ and verify it sums to 1.
+A discrete random variable $X$ has CDF $F(x) = 0$ for $x \lt 0$$F(x) = x/4$ for $0 \leq x \lt 1$$F(x) = 1/2$ for $1 \leq x \lt 2$$F(x) = 3/4$ for $2 \leq x \lt 3$And $F(x) = 1$ for $x \geq 3$. Find the PMF of $X$ and verify it sums to 1.
 </details>
 
 <details>

@@ -239,7 +239,7 @@ series **diverges**.
 
 (c) The $p$-integral $\displaystyle\int \frac{du}{u^p}$ converges iff $p > 1$. Therefore:
 
-$$\sum_{n=2}^{\infty}\frac{1}{n(\ln n)^p} \text{ converges iff {} p > 1$$
+$$\sum_{n=2}^{\infty}\frac{1}{n(\ln n)^p} \text{ converges iff  p > 1$$
 
 For the remainder bound with $p = 2$: the error from using $N$ terms satisfies:
 

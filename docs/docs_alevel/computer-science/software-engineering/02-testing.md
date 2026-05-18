@@ -122,8 +122,8 @@ Same way. Test one representative from each class.
 | Equivalence class  | Range       | Test value |
 | ------------------ | ----------- | ---------- |
 | Valid              | $[0, 120]$  | 25         |
-| Invalid (too low)  | $\lt{} 0$   | -1         |
-| Invalid (too high) | $\gt{} 120$ | 150        |
+| Invalid (too low)  | $\lt 0$   | -1         |
+| Invalid (too high) | $\gt 120$ | 150        |
 
 ### Boundary Value Analysis
 
@@ -254,7 +254,7 @@ Using equivalence partitioning and boundary value analysis, identify all test ca
 | Teen               | $[13, 17]$     | 15         |
 | Adult              | $[18, 64]$     | 40         |
 | Senior             | $[65, \infty)$ | 70         |
-| Invalid (negative) | $\lt{} 0$      | -1         |
+| Invalid (negative) | $\lt 0$      | -1         |
 
 **Boundary value analysis:**
 

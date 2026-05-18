@@ -821,7 +821,7 @@ Terms of the microscopic behaviour of molecules.
 ### Pressure of an Ideal Gas -- Derivation
 
 Consider $N$ molecules in a cubic container of side $L$. A single molecule of mass $m$ moving with
-Velocity $\mathbf{{'}v{}'} = (v_x, v_y, v_z)$ collides elastically with a wall perpendicular to the
+Velocity $\mathbf{v} = (v_x, v_y, v_z)$ collides elastically with a wall perpendicular to the
 $x$-axis.
 
 **Change in momentum per collision:**

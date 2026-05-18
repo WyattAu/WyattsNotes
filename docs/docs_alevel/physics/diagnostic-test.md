@@ -283,7 +283,7 @@ J.
 <details>
 <summary>Q28. Write the nuclear equation for $\beta^-$ decay of carbon-14.</summary>
 **Answer.**
-$\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + \prescript{0}{}{-1}\beta^- + \bar{\nu}_e$.
+$\prescript{14}{6}\mathrm{C} \to \prescript{14}{7}\mathrm{N} + \prescript{0}{-1}\beta^- + \bar{\nu}_e$.
 
 <b>If you get this wrong, revise:</b>
 [Radioactivity](/docs/alevel/physics/nuclear-physics/radioactivity)

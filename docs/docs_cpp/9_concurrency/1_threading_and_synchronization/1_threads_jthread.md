@@ -67,7 +67,7 @@ Performs context switching.
 `std::thread::hardware_concurrency()` [N4950 §31.4.4.1.4] returns the number of concurrent threads
 Supported by the implementation. This value approximates the number of hardware threads available:
 
-$$N_{\mathrm{optimal{}} = \mathrm{std::thread::hardware\_concurrency{}()$$
+$$N_{\mathrm{optimal} = \mathrm{std::thread::hardware\_concurrency()$$
 
 ```cpp
 #include <iostream>

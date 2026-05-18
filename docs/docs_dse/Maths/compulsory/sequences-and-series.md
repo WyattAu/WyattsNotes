@@ -19,8 +19,8 @@ Covers arithmetic and geometric progressions, sigma notation manipulation, and r
 
 ### Sequences
 
-A **sequence** is a function $a: \mathbb{{'}N{}'} \to \mathbb{{'}R{}'}$ (or a subset of
-$\mathbb{{'}N{}'}$). We write The sequence as $a_1, a_2, a_3, \ldots$Or $\{a_n\}$. Each $a_n$ is
+A **sequence** is a function $a: \mathbb{N} \to \mathbb{R}$ (or a subset of
+$\mathbb{N}$). We write The sequence as $a_1, a_2, a_3, \ldots$Or $\{a_n\}$. Each $a_n$ is
 called a **term** of the Sequence. The expression $a_n$ giving the $n$-th term in terms of $n$ is
 the **general term** or **formula for the $n$-th term**.
 

@@ -293,7 +293,7 @@ The **conditional probability** of $A$ given $B$ is:
 
 $$
 \begin{aligned}
- P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) \gt{} 0
+ P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) \gt 0
 \end{aligned}
 $$
 
@@ -409,7 +409,7 @@ $$
 ### Equivalent Characterisation
 
 **Theorem.** $A$ and $B$ are independent if and only if $P(A \mid B) = P(A)$ (provided
-$P(B) \gt{} 0$).
+$P(B) \gt 0$).
 
 _Proof._
 
@@ -464,10 +464,10 @@ Now $A'$ = "first coin is tails" and $B'$ = "second coin is heads":
 
 ### Common Pitfall: Mutually Exclusive $\neq$ Independent
 
-**Theorem.** If $A$ and $B$ are mutually exclusive with $P(A) \gt{} 0$ and $P(B) \gt{} 0$Then $A$
+**Theorem.** If $A$ and $B$ are mutually exclusive with $P(A) \gt 0$ and $P(B) \gt 0$Then $A$
 And $B$ are **not** independent.
 
-_Proof._ If $A \cap B = \emptyset$Then $P(A \cap B) = 0$. But $P(A) \cdot P(B) \gt{} 0$ since both
+_Proof._ If $A \cap B = \emptyset$Then $P(A \cap B) = 0$. But $P(A) \cdot P(B) \gt 0$ since both
 Factors are positive. Therefore $P(A \cap B) \neq P(A) \cdot P(B)$So $A$ and $B$ are not
 Independent. $\square$
 
@@ -503,7 +503,7 @@ Verified or explicitly stated. :::
 
 ### Statement
 
-For two events $A$ and $B$ with $P(A) \gt{} 0$ and $P(B) \gt{} 0$:
+For two events $A$ and $B$ with $P(A) \gt 0$ and $P(B) \gt 0$:
 
 $$
 \begin{aligned}
@@ -528,7 +528,7 @@ This is the mathematical foundation of statistical inference -- updating beliefs
 ### Law of Total Probability
 
 If $B_1, B_2, \ldots, B_n$ form a **partition** of $S$ (pairwise mutually exclusive, exhaustive, and
-$P(B_i) \gt{} 0$ for all $i$), then for any event $A$:
+$P(B_i) \gt 0$ for all $i$), then for any event $A$:
 
 $$
 \begin{aligned}
@@ -549,7 +549,7 @@ $$
 
 Combining Bayes' theorem with the law of total probability gives the most useful form. If
 $B_1, \ldots, B_n$ partition $S$ and $A$ is one of them (say $A = B_j$), then for any event $E$ with
-$P(E) \gt{} 0$:
+$P(E) \gt 0$:
 
 $$
 \begin{aligned}

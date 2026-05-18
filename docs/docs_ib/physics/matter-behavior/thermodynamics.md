@@ -835,7 +835,7 @@ $Q_{\mathrm{ice, warm}} = (0.300)(2090)(10) = 6270$ J.
 $Q_{\mathrm{ice, melt}} = (0.300)(3.34 \times 10^5) = 100200$ J. Total needed:
 $6270 + 100200 = 106470$ J.
 
-Since $106470 \gt{} 83720$**not all the ice melts**. The final temperature is $0^\circ\mathrm{C}$.
+Since $106470 \gt 83720$**not all the ice melts**. The final temperature is $0^\circ\mathrm{C}$.
 
 Let $m$ be the mass of ice that melts:
 $m_w c_w (40 - 0) = m_{\mathrm{ice}} c_{\mathrm{ice}} (10) + m L_f$.

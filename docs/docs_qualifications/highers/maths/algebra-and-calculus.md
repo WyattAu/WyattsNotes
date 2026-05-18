@@ -31,7 +31,7 @@ $f \colon A \to B$ means $f$ maps from set $A$ to set $B$.
 
 The **domain** of $f$ is the set of all valid inputs. The **range** is the set of all outputs.
 
-The **domain** of $f(x) = \dfrac{1}{x - 3}$ is $x \in \mathbb{{'}R{}'}$$x \neq 3$.
+The **domain** of $f(x) = \dfrac{1}{x - 3}$ is $x \in \mathbb{R}$$x \neq 3$.
 
 The **range** of $f(x) = x^2$ is $f(x) \geq 0$ (assuming the domain is all real numbers).
 
@@ -80,7 +80,7 @@ Confirmed.
 
 The domain of $f^{-1}$ equals the range of $f$And vice versa. A function has an inverse if and Only
 if it is a **bijection** (both one-to-one and onto). For functions
-$\mathbb{{'}R{}'} \to \mathbb{{'}R{}'}$ This means the function must be strictly monotone.
+$\mathbb{R} \to \mathbb{R}$ This means the function must be strictly monotone.
 
 :::
 
@@ -216,7 +216,7 @@ K = \frac{\ln 2}{8} \approx 0.0866
 $$
 
 $$
-N(25) = 200e^{-0.0866 \times 25} = 200e^{-2.165} \approx 200 \times 0.1147 \approx 22.9 \mathrm{ g{}
+N(25) = 200e^{-0.0866 \times 25} = 200e^{-2.165} \approx 200 \times 0.1147 \approx 22.9 \mathrm{ g
 $$
 
 ### Polynomials
@@ -282,7 +282,7 @@ $$x^2 - 2x - 3 = 0$$
 
 $$(x - 3)(x + 1) = 0$$
 
-$$x = 3 \mathrm{ or {} x = -1$$
+$$x = 3 \mathrm{ or  x = -1$$
 
 When $x = 3$: $y = 9 - 12 + 3 = 0$. When $x = -1$: $y = 1 + 4 + 3 = 8$.
 
@@ -453,9 +453,9 @@ $$
 Optimisation problems require you to express the quantity to be optimised as a function of a single
 Variable, then find the stationary points.
 
-**Example:** A rectangular box with a square base has a volume of $128 \mathrm{ cm{}^3$. The
-material For the base costs 5 pence per $\mathrm{cm{}^2$ and the material for the sides costs 3
-pence per $\mathrm{cm{}^2$. Find the dimensions that minimise the cost.
+**Example:** A rectangular box with a square base has a volume of $128 \mathrm{ cm^3$. The
+material For the base costs 5 pence per $\mathrm{cm^2$ and the material for the sides costs 3
+pence per $\mathrm{cm^2$. Find the dimensions that minimise the cost.
 
 Let the base have side length $x$ cm and height $h$ cm.
 
@@ -482,17 +482,17 @@ X^3 = 153.6
 $$
 
 $$
-X = \sqrt[3]{153.6} \approx 5.35 \mathrm{ cm{}
+X = \sqrt[3]{153.6} \approx 5.35 \mathrm{ cm
 $$
 
 $$
-H = \frac{128}{5.35^2} \approx 4.47 \mathrm{ cm{}
+H = \frac{128}{5.35^2} \approx 4.47 \mathrm{ cm
 $$
 
 **Verification:** $\frac{d^2C}{dx^2} = 10 + \frac{3072}{x^3} > 0$ for all $x > 0$Confirming a
 Minimum.
 
-**Example:** A closed cylindrical can must hold $500 \mathrm{ cm{}^3$ of liquid. Find the dimensions
+**Example:** A closed cylindrical can must hold $500 \mathrm{ cm^3$ of liquid. Find the dimensions
 That minimise the surface area.
 
 Let the radius be $r$ and the height be $h$.
@@ -506,11 +506,11 @@ $$
 $$
 
 $$
-4\pi r^3 = 1000 \implies r^3 = \frac{250}{\pi} \implies r = \sqrt[3]{\frac{250}{\pi}} \approx 4.30 \mathrm{ cm{}
+4\pi r^3 = 1000 \implies r^3 = \frac{250}{\pi} \implies r = \sqrt[3]{\frac{250}{\pi}} \approx 4.30 \mathrm{ cm
 $$
 
 $$
-H = \frac{500}{\pi \times 4.30^2} \approx 8.60 \mathrm{ cm{}
+H = \frac{500}{\pi \times 4.30^2} \approx 8.60 \mathrm{ cm
 $$
 
 Note that $h = 2r$So the optimal can has height equal to diameter.
@@ -607,7 +607,7 @@ $$
 ### Integration by Substitution (Advanced Higher)
 
 $$
-\int f(g(x))g'(x) \, dx = \int f(u) \, du \quad \mathrm{where {} u = g(x)
+\int f(g(x))g'(x) \, dx = \int f(u) \, du \quad \mathrm{where  u = g(x)
 $$
 
 **Example:** Evaluate $\int 2x\sqrt{x^2 + 1} \, dx$.
@@ -711,7 +711,7 @@ $y^2 = x^2 + 3$Giving $y = \sqrt{x^2 + 3}$ (taking the positive root since $y = 
 
 5. Find the area enclosed by the curves $y = x^3$ and $y = x$.
 
-6. A closed cylindrical can must hold $500 \mathrm{ cm{}^3$ of liquid. Find the dimensions that
+6. A closed cylindrical can must hold $500 \mathrm{ cm^3$ of liquid. Find the dimensions that
    minimise the surface area.
 
 7. Solve $\log_3(x) + \log_3(x - 2) = 1$.

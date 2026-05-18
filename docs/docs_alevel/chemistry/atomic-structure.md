@@ -32,7 +32,7 @@ The **atomic number** (proton number) $Z$ defines the element. The **mass number
 $N$ is the neutron number. The notation is:
 
 $$
-{}^{A}_{Z}\mathrm{X}
+^{A}_{Z}\mathrm{X}
 $$
 
 ## Isotopes
@@ -52,8 +52,8 @@ $$
 
 Where $m_i$ is the isotopic mass and $a_i$ is the relative abundance of isotope $i$.
 
-**Worked Example.** Chlorine has two stable isotopes: ${}^{35}\mathrm{Cl}$ (75.77%,
-$m = 34.969\,\mathrm{u}$) and ${}^{37}\mathrm{Cl}$ (24.23%, $m = 36.966\,\mathrm{u}$).
+**Worked Example.** Chlorine has two stable isotopes: $^{35}\mathrm{Cl}$ (75.77%,
+$m = 34.969\,\mathrm{u}$) and $^{37}\mathrm{Cl}$ (24.23%, $m = 36.966\,\mathrm{u}$).
 
 $$
 A_r(\mathrm{Cl}) = \frac{(34.969)(75.77) + (36.966)(24.23)}{100} = \frac{2650.4 + 895.3}{100} = 35.45
@@ -349,7 +349,7 @@ The higher $Z_\mathrm{eff}$ for Ca compared to K explains the higher first ionis
 <details>
 <summary>Problem 1</summary>
 
-Bromine has two stable isotopes: ${}^{79}\mathrm{Br}$ (50.69%) and ${}^{81}\mathrm{Br}$ (49.31%).
+Bromine has two stable isotopes: $^{79}\mathrm{Br}$ (50.69%) and $^{81}\mathrm{Br}$ (49.31%).
 Calculate the relative atomic mass of bromine.
 
 **Solution:**
@@ -418,16 +418,16 @@ The mass spectrum of an element shows three peaks at $m/z = 52$54, and 56 with r
 **Solution:**
 
 (a) The element is chromium ($\mathrm{Cr}$$Z = 24$$A_r \approx 52$). The peaks correspond to
-${}^{52}\mathrm{Cr}$${}^{54}\mathrm{Cr}$And ${}^{56}\mathrm{Cr}$.
+$^{52}\mathrm{Cr}$$^{54}\mathrm{Cr}$And $^{56}\mathrm{Cr}$.
 
-(b) Chromium has four stable isotopes: ${}^{50}\mathrm{Cr}$ (4.3%), ${}^{52}\mathrm{Cr}$ (83.8%),
-${}^{53}\mathrm{Cr}$ (9.5%), and ${}^{54}\mathrm{Cr}$ (2.4%). However, the data shows three peaks at
-52, 54, and 56, which is more consistent with iron ($\mathrm{Fe}$$Z = 26$): ${}^{54}\mathrm{Fe}$
-(5.8%), ${}^{56}\mathrm{Fe}$ (91.7%), ${}^{57}\mathrm{Fe}$ (2.1%), and ${}^{58}\mathrm{Fe}$ (0.3%).
+(b) Chromium has four stable isotopes: $^{50}\mathrm{Cr}$ (4.3%), $^{52}\mathrm{Cr}$ (83.8%),
+$^{53}\mathrm{Cr}$ (9.5%), and $^{54}\mathrm{Cr}$ (2.4%). However, the data shows three peaks at
+52, 54, and 56, which is more consistent with iron ($\mathrm{Fe}$$Z = 26$): $^{54}\mathrm{Fe}$
+(5.8%), $^{56}\mathrm{Fe}$ (91.7%), $^{57}\mathrm{Fe}$ (2.1%), and $^{58}\mathrm{Fe}$ (0.3%).
 
 Re-examining: the $m/z$ values of 52, 54, 56 with the given abundances most closely match chromium:
-${}^{52}\mathrm{Cr}$ ($A_r = 51.94$Abundance $\approx 83.8\%$), ${}^{53}\mathrm{Cr}$
-($A_r = 52.94$$\approx 9.5\%$), ${}^{54}\mathrm{Cr}$ ($A_r = 53.94$$\approx 2.4\%$). However, the
+$^{52}\mathrm{Cr}$ ($A_r = 51.94$Abundance $\approx 83.8\%$), $^{53}\mathrm{Cr}$
+($A_r = 52.94$$\approx 9.5\%$), $^{54}\mathrm{Cr}$ ($A_r = 53.94$$\approx 2.4\%$). However, the
 relative abundances in the problem (17.4%, 67.8%, 14.8%) do not match chromium's known isotope
 pattern.
 

@@ -364,7 +364,7 @@ $B_c(T) \approx B_c(0)\left[1 - (T/T_c)^2\right]$.
 
 **Type I** superconductors (e.g., lead, mercury, aluminium) exhibit a sharp transition: below $B_c$
 They are fully superconducting, above $B_c$ they revert to normal. Their critical fields are low (
-$\lt{}$ 0.1 T).
+$\lt$ 0.1 T).
 
 **Type II** superconductors (e.g., niobium-titanium, YBCO) have two critical fields $B_{c1}$ and
 $B_{c2}$:

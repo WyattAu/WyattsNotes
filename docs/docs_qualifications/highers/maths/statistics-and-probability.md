@@ -84,10 +84,10 @@ The **interquartile range** (IQR) is $Q_3 - Q_1$Where $Q_1$ is the 25th percenti
 
 **Box plots** (box-and-whisker diagrams) display five key statistics: minimum, $Q_1$Median, $Q_3$
 And maximum. The box spans from $Q_1$ to $Q_3$With the median marked inside. Whiskers extend to The
-most extreme data points within $1.5 \times \mathrm{IQR{}$ of the quartiles.
+most extreme data points within $1.5 \times \mathrm{IQR$ of the quartiles.
 
 **Outlier detection:** A value is a potential outlier if it falls below
-$Q_1 - 1.5 \times \mathrm{IQR{}$ or above $Q_3 + 1.5 \times \mathrm{IQR{}$.
+$Q_1 - 1.5 \times \mathrm{IQR$ or above $Q_3 + 1.5 \times \mathrm{IQR$.
 
 **Example:** Data set: $2, 5, 7, 8, 12, 14, 15, 18, 25, 110$.
 
@@ -97,7 +97,7 @@ Lower half: $2, 5, 7, 8, 12$. $Q_1 = 7$.
 
 Upper half: $14, 15, 18, 25, 110$. $Q_3 = 18$.
 
-$\mathrm{IQR{} = 18 - 7 = 11$.
+$\mathrm{IQR = 18 - 7 = 11$.
 
 Upper fence: $Q_3 + 1.5 \times 11 = 18 + 16.5 = 34.5$.
 
@@ -156,9 +156,9 @@ $P(M) \times P(P) = 0.6 \times 0.4 = 0.24$But $P(M \cap P) = 0.25$. Since $0.24 
 are **not** independent.
 
 **Example:** A medical test has a 95% true positive rate
-($P(\mathrm{positive{} | \mathrm{disease{}) = 0.95$) and a 2% false positive rate
-($P(\mathrm{positive{} | \mathrm{no disease{}) = 0.02$). If 1% of the population has the condition,
-find $P(\mathrm{disease{} | \mathrm{positive{})$.
+($P(\mathrm{positive | \mathrm{disease) = 0.95$) and a 2% false positive rate
+($P(\mathrm{positive | \mathrm{no disease) = 0.02$). If 1% of the population has the condition,
+find $P(\mathrm{disease | \mathrm{positive)$.
 
 Let $D$ = has disease, $+$ = tests positive.
 
@@ -200,7 +200,7 @@ First draw: $P(R) = \frac{3}{8}$.
 Second draw (given first was red): $P(R) = \frac{2}{7}$.
 
 $$
-P(\mathrm{both red{}) = \frac{3}{8} \times \frac{2}{7} = \frac{6}{56} = \frac{3}{28}
+P(\mathrm{both red) = \frac{3}{8} \times \frac{2}{7} = \frac{6}{56} = \frac{3}{28}
 $$
 
 ### Binomial Distribution
@@ -221,7 +221,7 @@ $$
 
 **Mean:** $E(X) = np$
 
-**Variance:** $\mathrm{Var{}(X) = np(1-p)$
+**Variance:** $\mathrm{Var(X) = np(1-p)$
 
 **Proof of $E(X) = np$.** Let $X_i$ be the indicator variable for the $i$Th trial: $X_i = 1$ if
 Success, $0$ if failure. Then $X = \sum_{i=1}^{n} X_i$ and $E(X) = \sum E(X_i) = n \cdot p$.
@@ -412,16 +412,16 @@ E(X) = \sum x \cdot P(X = x)
 $$
 
 $$
-\mathrm{Var{}(X) = E(X^2) - [E(X)]^2
+\mathrm{Var(X) = E(X^2) - [E(X)]^2
 $$
 
 **Properties of expectation:**
 
 - $E(aX + b) = aE(X) + b$
 - $E(X + Y) = E(X) + E(Y)$ (always, even if $X$ and $Y$ are dependent)
-- If $X$ and $Y$ are independent: $\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y)$
+- If $X$ and $Y$ are independent: $\mathrm{Var(X + Y) = \mathrm{Var(X) + \mathrm{Var(Y)$
 - If $X$ and $Y$ are dependent:
-  $\mathrm{Var{}(X + Y) = \mathrm{Var{}(X) + \mathrm{Var{}(Y) + 2\mathrm{Cov{}(X, Y)$
+  $\mathrm{Var(X + Y) = \mathrm{Var(X) + \mathrm{Var(Y) + 2\mathrm{Cov(X, Y)$
 
 **Example:** A biased coin lands on heads with probability $p$. Let $X$ be the number of heads in 3
 Tosses.
@@ -429,7 +429,7 @@ Tosses.
 $X \sim B(3, p)$.
 
 $$
-E(X) = 3p, \quad \mathrm{Var{}(X) = 3p(1-p)
+E(X) = 3p, \quad \mathrm{Var(X) = 3p(1-p)
 $$
 
 ### Discrete Probability Distributions
@@ -437,10 +437,10 @@ $$
 **Uniform distribution:** $P(X = x_i) = \frac{1}{n}$ for $n$ equally likely outcomes.
 
 $$
-E(X) = \frac{1}{n}\sum x_i, \quad \mathrm{Var{}(X) = \frac{1}{n}\sum x_i^2 - \left(\frac{1}{n}\sum x_i\right)^2
+E(X) = \frac{1}{n}\sum x_i, \quad \mathrm{Var(X) = \frac{1}{n}\sum x_i^2 - \left(\frac{1}{n}\sum x_i\right)^2
 $$
 
-**Example:** A fair die is rolled. Find $E(X)$ and $\mathrm{Var{}(X)$.
+**Example:** A fair die is rolled. Find $E(X)$ and $\mathrm{Var(X)$.
 
 $$
 E(X) = \frac{1+2+3+4+5+6}{6} = \frac{21}{6} = 3.5
@@ -451,7 +451,7 @@ E(X^2) = \frac{1+4+9+16+25+36}{6} = \frac{91}{6}
 $$
 
 $$
-\mathrm{Var{}(X) = \frac{91}{6} - \frac{49}{4} = \frac{182 - 147}{12} = \frac{35}{12} \approx 2.917
+\mathrm{Var(X) = \frac{91}{6} - \frac{49}{4} = \frac{182 - 147}{12} = \frac{35}{12} \approx 2.917
 $$
 
 ### The Geometric Distribution
@@ -465,7 +465,7 @@ $$
 
 **Mean:** $E(X) = \dfrac{1}{p}$
 
-**Variance:** $\mathrm{Var{}(X) = \dfrac{1-p}{p^2}$
+**Variance:** $\mathrm{Var(X) = \dfrac{1-p}{p^2}$
 
 **Proof of $E(X) = 1/p$.**
 
@@ -511,7 +511,7 @@ $$
 
 **Mean:** $E(X) = \lambda$
 
-**Variance:** $\mathrm{Var{}(X) = \lambda$
+**Variance:** $\mathrm{Var(X) = \lambda$
 
 The Poisson distribution is a limiting case of the binomial when $n \to \infty$ and $p \to 0$ with
 $np = \lambda$ fixed.
@@ -520,7 +520,7 @@ $np = \lambda$ fixed.
 Receiving exactly 6 calls in a given minute.
 
 $$
-X \sim \mathrm{Po{}(4)
+X \sim \mathrm{Po(4)
 $$
 
 $$
@@ -585,7 +585,7 @@ Subject among 200 students:
 | Total  | 70    | 60      | 70      | 200   |
 
 Expected frequencies:
-$E_{ij} = \dfrac{\mathrm{row total{} \times \mathrm{column total{}}{\mathrm{grand total{}}$.
+$E_{ij} = \dfrac{\mathrm{row total \times \mathrm{column total}{\mathrm{grand total}$.
 
 $$
 \chi^2 = \frac{(40 - 31.5)^2}{31.5} + \frac{(35 - 27)^2}{27} + \frac{(15 - 31.5)^2}{31.5} + \frac{(30 - 38.5)^2}{38.5} + \frac{(25 - 33)^2}{33} + \frac{(55 - 38.5)^2}{38.5}
@@ -652,8 +652,8 @@ Regression on $x$. The remaining 15% is due to other factors or random variation
    systematically underestimates the population standard deviation.
 
 2. **Confusing $P(A | B)$ with $P(B | A)$:** These are not the same. A classic example:
-   $P(\mathrm{disease{} | \mathrm{positive test{})$ is much lower than
-   $P(\mathrm{positive test{} | \mathrm{disease{})$ because the base rate of the disease matters.
+   $P(\mathrm{disease | \mathrm{positive test)$ is much lower than
+   $P(\mathrm{positive test | \mathrm{disease)$ because the base rate of the disease matters.
    Use Bayes' theorem if needed.
 
 3. **Forgetting continuity correction:** When approximating a discrete distribution (e.g., binomial)
@@ -725,13 +725,13 @@ Regression on $x$. The remaining 15% is due to other factors or random variation
 12. Explain the difference between a Type I error and a Type II error in the context of a hypothesis
     test.
 
-13. Find $E(X)$ and $\mathrm{Var{}(X)$ for the probability distribution:
+13. Find $E(X)$ and $\mathrm{Var(X)$ for the probability distribution:
 
 | $x$      | 0   | 1   | 2   | 3   |
 | -------- | --- | --- | --- | --- |
 | $P(X=x)$ | 0.1 | 0.3 | 0.4 | 0.2 |
 
-14. Two dice are rolled. Let $X$ be the sum. Find $E(X)$ and $\mathrm{Var{}(X)$.
+14. Two dice are rolled. Let $X$ be the sum. Find $E(X)$ and $\mathrm{Var(X)$.
 
 15. A bag contains 4 red and 6 blue balls. Three balls are drawn without replacement. Find the
     probability that exactly two are red.

@@ -167,10 +167,10 @@ Standard deviation $s = \sqrt{s^2}$. Interquartile range: $Q_3 - Q_1$.
 
 **Discrete distributions.**
 
-_Binomial distribution._ $X \sim \text{Bin{}(n, p)$: $P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}$. Mean
+_Binomial distribution._ $X \sim \text{Bin(n, p)$: $P(X = k) = \binom{n}{k}p^k(1-p)^{n-k}$. Mean
 $np$Variance $np(1-p)$.
 
-_Geometric distribution._ $X \sim \text{Geo{}(p)$: $P(X = k) = (1-p)^{k-1}p$ for
+_Geometric distribution._ $X \sim \text{Geo(p)$: $P(X = k) = (1-p)^{k-1}p$ for
 $k = 1, 2, 3, \ldots$. Mean $1/p$Variance $(1-p)/p^2$.
 
 _Normal distribution._ $X \sim N(\mu, \sigma^2)$. The standard normal $Z = \frac{X - \mu}{\sigma}$
@@ -309,13 +309,13 @@ The proof is therefore Incomplete.
 
 > A random variable $X$ has probability density function:
 >
-> $$f(x) = \begin{cases} kx & 0 \leq x \leq 2 \\ 0 & \text{otherwise{} \end{cases}$$
+> $$f(x) = \begin{cases} kx & 0 \leq x \leq 2 \\ 0 & \text{otherwise \end{cases}$$
 >
-> What is the value of $k$And what is $\mathbb{{'}E{}'}(X)$?
+> What is the value of $k$And what is $\mathbb{E}(X)$?
 
-A: $k = 1/4$$\mathbb{{'}E{}'}(X) = 4/3$ B: $k = 1/2$$\mathbb{{'}E{}'}(X) = 4/3$ C:
-$k = 1/2$$\mathbb{{'}E{}'}(X) = 1$ D: $k = 1/4$$\mathbb{{'}E{}'}(X) = 1$ E:
-$k = 1$$\mathbb{{'}E{}'}(X) = 2$
+A: $k = 1/4$$\mathbb{E}(X) = 4/3$ B: $k = 1/2$$\mathbb{E}(X) = 4/3$ C:
+$k = 1/2$$\mathbb{E}(X) = 1$ D: $k = 1/4$$\mathbb{E}(X) = 1$ E:
+$k = 1$$\mathbb{E}(X) = 2$
 
 **Solution.** Since $f$ is a probability density function, $\int_{-\infty}^{\infty} f(x)\,dx = 1$:
 
@@ -325,7 +325,7 @@ So $k = 1/2$.
 
 For the expected value:
 
-$$\mathbb{{'}E{}'}(X) = \int_0^2 x \cdot \frac{x}{2}\,dx = \frac{1}{2}\int_0^2 x^2\,dx = \frac{1}{2}\left[\frac{x^3}{3}\right]_0^2 = \frac{1}{2} \cdot \frac{8}{3} = \frac{4}{3}$$
+$$\mathbb{E}(X) = \int_0^2 x \cdot \frac{x}{2}\,dx = \frac{1}{2}\int_0^2 x^2\,dx = \frac{1}{2}\left[\frac{x^3}{3}\right]_0^2 = \frac{1}{2} \cdot \frac{8}{3} = \frac{4}{3}$$
 
 **Answer: B.**
 
@@ -354,7 +354,7 @@ $$t = \frac{\ln 2}{0.2} = 5 \ln 2$$
 Into the constant. Actually, $5\ln 2 \approx 3.47$And $\ln 2 \approx 0.693$. Let me reconsider.
 
 The doubling time is $t = \frac{\ln 2}{0.2} = 5\ln 2$. The half-life formula gives
-$t_{\text{double{}} = \frac{\ln 2}{k}$ where $k = 0.2$So $t = \frac{\ln 2}{0.2} = 5\ln 2$.
+$t_{\text{double} = \frac{\ln 2}{k}$ where $k = 0.2$So $t = \frac{\ln 2}{0.2} = 5\ln 2$.
 
 Option A says $\ln 2$ hours, which is $\frac{\ln 2}{0.2}/5 = \frac{5\ln 2}{5} = \ln 2$. This would
 be The doubling time if $k = 1$Not $k = 0.2$.

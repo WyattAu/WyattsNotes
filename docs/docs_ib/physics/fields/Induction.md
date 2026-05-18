@@ -201,8 +201,8 @@ $$
 Where $V_p$ and $V_s$ are the primary and secondary voltages, and $N_p$ and $N_s$ are the number of
 Turns on the primary and secondary coils.
 
-- **Step-up transformer:** $N_s \gt{} N_p$ (increases voltage)
-- **Step-down transformer:** $N_s \lt{} N_p$ (decreases voltage)
+- **Step-up transformer:** $N_s \gt N_p$ (increases voltage)
+- **Step-down transformer:** $N_s \lt N_p$ (decreases voltage)
 
 ### Power in an Ideal Transformer
 

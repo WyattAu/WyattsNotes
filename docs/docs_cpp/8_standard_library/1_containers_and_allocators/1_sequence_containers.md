@@ -56,7 +56,7 @@ Elements currently stored, while `capacity()` returns the number of elements for
 Been allocated [N4950 §22.3.11.3]. The invariant is:
 
 $$
-\mathrm{size{}() \leq \mathrm{capacity{}()
+\mathrm{size() \leq \mathrm{capacity()
 $$
 
 `shrink_to_fit()` is a **non-binding request** to reduce `capacity()` to `size()` [N4950
@@ -245,7 +245,7 @@ guaranteed to store elements contiguously. Typical implementations use a **map o
 Blocks** (segments):
 
 $$
-\mathrm{deque{} = \underbrace{[\mathrm{block{}_0][\mathrm{block{}_1] \cdots [\mathrm{block{}_{n-1}]}_{\mathrm{fixed-size segments{}}
+\mathrm{deque = \underbrace{[\mathrm{block_0][\mathrm{block_1] \cdots [\mathrm{block_{n-1}]}_{\mathrm{fixed-size segments}
 $$
 
 A central **map array** stores pointers to each block. Insertion at the front or back adds to The
@@ -734,11 +734,11 @@ Random access on `std::deque` requires computing which block an element belongs 
 Within that block. Given block size $B$ and element index $i$:
 
 $$
-\mathrm{block\_index{} = \left\lfloor \frac{\mathrm{start\_offset{} + i}{B} \right\rfloor
+\mathrm{block\_index = \left\lfloor \frac{\mathrm{start\_offset + i}{B} \right\rfloor
 $$
 
 $$
-\mathrm{element\_offset{} = (\mathrm{start\_offset{} + i) \mod B
+\mathrm{element\_offset = (\mathrm{start\_offset + i) \mod B
 $$
 
 The map array is a small heap-allocated array (often 8-16 entries initially). When the map Fills up,

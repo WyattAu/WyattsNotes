@@ -41,8 +41,8 @@ Using one factor (labour). Unit labour requirements:
 | **Home**    | $a_C = 2$               | $a_W = 4$              |
 | **Foreign** | $a_C = 6$               | $a_W = 3$              |
 
-Home has absolute advantage in Cloth ($2 \lt{} 6$). Foreign has absolute advantage in Wine
-($3 \lt{} 4$).
+Home has absolute advantage in Cloth ($2 \lt 6$). Foreign has absolute advantage in Wine
+($3 \lt 4$).
 
 **Opportunity costs:**
 
@@ -78,7 +78,7 @@ _Specialisation:_
 **World output increases**: 400C → 600C (+200) and 350W → 400W (+50). Both countries gain if they
 Trade at an exchange rate between the two opportunity cost ratios:
 
-$$0.5 \mathrm{ W/C} \lt{} \mathrm{World price } p \lt{} 2.0 \mathrm{ W/C}$$
+$$0.5 \mathrm{ W/C} \lt \mathrm{World price } p \lt 2.0 \mathrm{ W/C}$$
 
 For example, at $p = 1$ (1 unit of Wine for 1 unit of Cloth):
 
@@ -176,9 +176,9 @@ A **depreciation** of the pound means $e$ rises (more pounds per dollar — the 
 
 The central bank commits to buying and selling currency to maintain $e = \bar{e}$.
 
-$$\mathrm{If } e \gt{} \bar{e} \mathrm{ (depreciation pressure): central bank sells foreign reserves, buys domestic currency}$$
+$$\mathrm{If } e \gt \bar{e} \mathrm{ (depreciation pressure): central bank sells foreign reserves, buys domestic currency}$$
 
-$$\mathrm{If } e \lt{} \bar{e} \mathrm{ (appreciation pressure): central bank buys foreign reserves, sells domestic currency}$$
+$$\mathrm{If } e \lt \bar{e} \mathrm{ (appreciation pressure): central bank buys foreign reserves, sells domestic currency}$$
 
 Advantages: certainty for trade and investment, discipline on monetary policy (cannot inflate away
 The peg), reduces speculative volatility.
@@ -204,7 +204,7 @@ Disadvantages: volatility creates uncertainty for trade and investment, may over
 The central bank allows the market to set the exchange rate but intervenes occasionally to smooth
 Excessive fluctuations or achieve policy objectives.
 
-$$\bar{e}_{\min} \lt{} e \lt{} \bar{e}_{\max}$$
+$$\bar{e}_{\min} \lt e \lt \bar{e}_{\max}$$
 
 ### 3.3 Determinants of Floating Exchange Rates
 
@@ -243,7 +243,7 @@ Current account.
 **Proposition: A depreciation improves the current account if and only if the sum of the price
 Elasticities of demand for exports and imports (in absolute value) exceeds unity.**
 
-$$|E_X| + |E_M| \gt{} 1$$
+$$|E_X| + |E_M| \gt 1$$
 
 Where:
 
@@ -263,18 +263,18 @@ Volume responses are large enough to outweigh the price changes:
 
 $$\Delta CA \approx \left(\frac◆LB◆E_X \cdot P_X \cdot X◆RB◆◆LB◆P_X \cdot X + e \cdot P_M^* \cdot M◆RB◆\right) \times \left(|E_X| + |E_M| - 1\right) \times \frac◆LB◆\Delta e◆RB◆◆LB◆e◆RB◆$$
 
-If $|E_X| + |E_M| \gt{} 1$: the volume effect dominates → $CA$ improves. If $|E_X| + |E_M| \lt{} 1$:
+If $|E_X| + |E_M| \gt 1$: the volume effect dominates → $CA$ improves. If $|E_X| + |E_M| \lt 1$:
 The price effect dominates → $CA$ worsens (the country spends more on imports because they are more
 Expensive, without selling enough extra exports). $\blacksquare$
 
 ### 4.2 The J-Curve Effect
 
 In the short run, $|E_X|$ and $|E_M|$ are low because contracts are fixed, consumers are slow to
-Change habits, and production takes time to adjust. So $|E_X| + |E_M| \lt{} 1$ initially → the
+Change habits, and production takes time to adjust. So $|E_X| + |E_M| \lt 1$ initially → the
 Current account **worsens** after a depreciation.
 
 Over time (6–18 months), elasticities increase as consumers find substitutes and firms adjust
-Production → $|E_X| + |E_M| \gt{} 1$ → the current account **improves**.
+Production → $|E_X| + |E_M| \gt 1$ → the current account **improves**.
 
 The path of the current account traces a **J-shape**:
 
@@ -341,7 +341,7 @@ War, reshoring) reflects these tensions.
 
 - GDP per capita (PPP-adjusted for comparability)
 - GNI per capita (World Bank classification: low &lt;$1,145, lower-middle $1,146–$4,515,
-  upper-middle $4,516–$14,005, high \gt{}$14,005)
+  upper-middle $4,516–$14,005, high \gt$14,005)
 - GDP growth rate
 - Industrial structure (share of agriculture/manufacturing/services)
 
@@ -448,7 +448,7 @@ Trade can benefit both countries.
 
 <details>
 <summary>Hint</summary>
-(a) Country A: absolute advantage in cars (10 \gt{} 6). Country B: absolute advantage in trucks (6 \gt{} 5). (b) OC of 1 car: A = 5/10 = 0.5 trucks, B = 6/6 = 1 truck. OC of 1 truck: A = 10/5 = 2 cars, B = 6/6 = 1 car. (c) A has lower OC in cars (0.5 \lt{} 1) → specialise in cars. B has lower OC in trucks (1 \lt{} 2) → specialise in trucks. (d) World price between 0.5 and 1 truck per car. At $p = 0.75$: A gains by exporting cars at a price higher than its OC (0.5). B gains by importing cars at a price lower than its OC (1.0). Both better off.
+(a) Country A: absolute advantage in cars (10 \gt 6). Country B: absolute advantage in trucks (6 \gt 5). (b) OC of 1 car: A = 5/10 = 0.5 trucks, B = 6/6 = 1 truck. OC of 1 truck: A = 10/5 = 2 cars, B = 6/6 = 1 car. (c) A has lower OC in cars (0.5 \lt 1) → specialise in cars. B has lower OC in trucks (1 \lt 2) → specialise in trucks. (d) World price between 0.5 and 1 truck per car. At $p = 0.75$: A gains by exporting cars at a price higher than its OC (0.5). B gains by importing cars at a price lower than its OC (1.0). Both better off.
 </details>
 
 **Problem 2.** A country's export price index rises from 120 to 132, while its import price index

@@ -63,7 +63,7 @@ Are invoked via software interrupts (e.g., `syscall` on x86-64, `svc` on ARM).
 
 **System call overhead.** A transition from user mode to kernel mode involves saving user Registers,
 switching to the kernel stack, validating arguments, executing kernel code, and Returning. Typical
-overhead: $100\mathrm{--{}1000$ ns on modern hardware.
+overhead: $100\mathrm{--1000$ ns on modern hardware.
 
 ## 2. Process Management
 
@@ -85,9 +85,9 @@ A **process** is an instance of a program in execution. The OS maintains a **pro
 
 **Process states.** Processes transition through states:
 
-$$\mathrm{New{} \to \mathrm{Ready{} \to \mathrm{Running{} \to \mathrm{Terminated{}$$
+$$\mathrm{New \to \mathrm{Ready \to \mathrm{Running \to \mathrm{Terminated$$
 
-$$\mathrm{Running{} \to \mathrm{Blocked{} \to \mathrm{Ready{}$$
+$$\mathrm{Running \to \mathrm{Blocked \to \mathrm{Ready$$
 
 The scheduler dispatches processes from **ready** to **running**. A running process may be
 **preempted** back to ready, or may **block** on I/O or a synchronisation event.
@@ -126,11 +126,11 @@ The CPU scheduler decides which process runs next from the set of ready processe
 
 **Scheduling criteria:**
 
-- **CPU utilisation:** Keep the CPU busy ($\mathrm{utilisation{} = 1 - p$ where $p$ is the I/O wait
+- **CPU utilisation:** Keep the CPU busy ($\mathrm{utilisation = 1 - p$ where $p$ is the I/O wait
   probability).
 - **Throughput:** Number of processes completed per time unit.
 - **Turnaround time:**
-  $T_{\mathrm{turnaround{}} = T_{\mathrm{completion{}} - T_{\mathrm{arrival{}}$.
+  $T_{\mathrm{turnaround} = T_{\mathrm{completion} - T_{\mathrm{arrival}$.
 - **Waiting time:** Time spent in the ready queue.
 - **Response time:** Time from submission to first response.
 
@@ -148,7 +148,7 @@ Remaining burst, preempt the current process.
 
 **Round Robin (RR).** Each process gets a time quantum $q$. If not finished within $q$Preempted and
 Placed at the back of the ready queue. If $q$ is large, RR degenerates to FCFS. Typical $q$:
-$10\mathrm{--{}100$ ms.
+$10\mathrm{--100$ ms.
 
 **Priority Scheduling.** Highest-priority ready process runs. Can be preemptive or non-preemptive.
 Risk of **starvation**; solved by **aging** (gradually increase priority of waiting processes).
@@ -638,10 +638,10 @@ State.
 **Definitions:**
 
 - **Available:** Vector $A = (A_1, \ldots, A_m)$ of available instances of each resource type.
-- **Maximum:** Matrix $\mathrm{Max{}$ where $\mathrm{Max{}[i][j]$ is the maximum demand of process
+- **Maximum:** Matrix $\mathrm{Max$ where $\mathrm{Max[i][j]$ is the maximum demand of process
   $i$ for resource $j$.
-- **Allocation:** Matrix $\mathrm{Alloc{}$ where $\mathrm{Alloc{}[i][j]$ is the current allocation.
-- **Need:** $\mathrm{Need{}[i][j] = \mathrm{Max{}[i][j] - \mathrm{Alloc{}[i][j]$.
+- **Allocation:** Matrix $\mathrm{Alloc$ where $\mathrm{Alloc[i][j]$ is the current allocation.
+- **Need:** $\mathrm{Need[i][j] = \mathrm{Max[i][j] - \mathrm{Alloc[i][j]$.
 
 **Safety algorithm:**
 
@@ -677,8 +677,8 @@ State.
 | $P_3$   | (2,1,1)    | (2,2,2) | (0,1,1) |
 | $P_4$   | (0,0,2)    | (4,3,3) | (4,3,1) |
 
-Safety check: $P_1$ has $\mathrm{Need{} = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release
-$(2,0,0)$New $A = (5,3,2)$. Then $P_3$: $\mathrm{Need{} = (0,1,1) \leq (5,3,2)$. Continuing, All
+Safety check: $P_1$ has $\mathrm{Need = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release
+$(2,0,0)$New $A = (5,3,2)$. Then $P_3$: $\mathrm{Need = (0,1,1) \leq (5,3,2)$. Continuing, All
 processes can complete: system is **safe**.
 
 <details>
@@ -686,9 +686,9 @@ processes can complete: system is **safe**.
 
 Given the state above, suppose $P_1$ requests $(1,0,2)$.
 
-_Step 1:_ Verify $\mathrm{Request{}_1 = (1,0,2) \leq \mathrm{Need{}_1 = (1,2,2)$. OK.
+_Step 1:_ Verify $\mathrm{Request_1 = (1,0,2) \leq \mathrm{Need_1 = (1,2,2)$. OK.
 
-_Step 2:_ Verify $\mathrm{Request{}_1 = (1,0,2) \leq A = (3,3,2)$. OK.
+_Step 2:_ Verify $\mathrm{Request_1 = (1,0,2) \leq A = (3,3,2)$. OK.
 
 _Step 3:_ Pretend to allocate:
 
@@ -704,11 +704,11 @@ $A = (3,3,2) - (1,0,2) = (2,3,0)$.
 
 _Step 4:_ Run safety algorithm.
 
-1. $P_1$: $\mathrm{Need{} = (0,2,0) \leq (2,3,0)$. Execute, $A = (2,3,0) + (3,0,2) = (5,3,2)$.
-2. $P_3$: $\mathrm{Need{} = (0,1,1) \leq (5,3,2)$. Execute, $A = (5,3,2) + (2,1,1) = (7,4,3)$.
-3. $P_4$: $\mathrm{Need{} = (4,3,1) \leq (7,4,3)$. Execute, $A = (7,4,3) + (0,0,2) = (7,4,5)$.
-4. $P_0$: $\mathrm{Need{} = (7,4,3) \leq (7,4,5)$. Execute, $A = (7,4,5) + (0,1,0) = (7,5,5)$.
-5. $P_2$: $\mathrm{Need{} = (6,0,0) \leq (7,5,5)$. Execute, $A = (7,5,5) + (3,0,2) = (10,5,7)$.
+1. $P_1$: $\mathrm{Need = (0,2,0) \leq (2,3,0)$. Execute, $A = (2,3,0) + (3,0,2) = (5,3,2)$.
+2. $P_3$: $\mathrm{Need = (0,1,1) \leq (5,3,2)$. Execute, $A = (5,3,2) + (2,1,1) = (7,4,3)$.
+3. $P_4$: $\mathrm{Need = (4,3,1) \leq (7,4,3)$. Execute, $A = (7,4,3) + (0,0,2) = (7,4,5)$.
+4. $P_0$: $\mathrm{Need = (7,4,3) \leq (7,4,5)$. Execute, $A = (7,4,5) + (0,1,0) = (7,5,5)$.
+5. $P_2$: $\mathrm{Need = (6,0,0) \leq (7,5,5)$. Execute, $A = (7,5,5) + (3,0,2) = (10,5,7)$.
 
 All processes finish. The request is **granted**. Safe sequence:
 $\langle P_1, P_3, P_4, P_0, P_2 \rangle$.
@@ -720,11 +720,11 @@ $\langle P_1, P_3, P_4, P_0, P_2 \rangle$.
 
 Suppose instead $P_0$ requests $(0,2,0)$ in the original state.
 
-_Step 1:_ $\mathrm{Request{}_0 = (0,2,0) \leq \mathrm{Need{}_0 = (7,4,3)$. OK.
+_Step 1:_ $\mathrm{Request_0 = (0,2,0) \leq \mathrm{Need_0 = (7,4,3)$. OK.
 
-_Step 2:_ $\mathrm{Request{}_0 = (0,2,0) \leq A = (3,3,2)$. OK.
+_Step 2:_ $\mathrm{Request_0 = (0,2,0) \leq A = (3,3,2)$. OK.
 
-_Step 3:_ Pretend to allocate. New $A = (3,1,2)$$\mathrm{Need{}_0 = (7,2,3)$.
+_Step 3:_ Pretend to allocate. New $A = (3,1,2)$$\mathrm{Need_0 = (7,2,3)$.
 
 _Step 4:_ Safety check. No process can execute: $P_1$ needs $(1,2,2)$ but only $(3,1,2)$ available
 (second component insufficient). $P_3$ needs $(0,1,1) \leq (3,1,2)$ — OK, execute $P_3$:
@@ -778,18 +778,18 @@ Three processes and one resource type with 10 instances:
 
 Available = $10 - (5 + 2 + 2) = 1$.
 
-$\mathrm{Request{}_0 = 4$$\mathrm{Request{}_1 = 2$$\mathrm{Request{}_2 = 5$.
+$\mathrm{Request_0 = 4$$\mathrm{Request_1 = 2$$\mathrm{Request_2 = 5$.
 
 _Detection:_
 
-1. Work = 1. No process has $\mathrm{Request{} \leq 1$.
+1. Work = 1. No process has $\mathrm{Request \leq 1$.
 2. No process can proceed. All three are deadlocked.
 
 The system is in an **unsafe state** with a deadlock involving $\{P_0, P_1, P_2\}$.
 
 _Recovery:_ Preempt 3 units from $P_0$ (reducing its allocation to 2). Now Available = 4. $P_1$ can
-proceed ($\mathrm{Request{}_1 = 2 \leq 4$). After $P_1$ finishes, Available = $4 + 2 = 6$. $P_0$:
-$\mathrm{Request{}_0 = 4 \leq 6$Proceeds. After: Available = $6 + 5 = 11$. $P_2$ proceeds. Deadlock
+proceed ($\mathrm{Request_1 = 2 \leq 4$). After $P_1$ finishes, Available = $4 + 2 = 6$. $P_0$:
+$\mathrm{Request_0 = 4 \leq 6$Proceeds. After: Available = $6 + 5 = 11$. $P_2$ proceeds. Deadlock
 resolved.
 
 </details>
@@ -824,9 +824,9 @@ is Overly restrictive.
 Divide physical memory into fixed-size **frames** and logical memory into same-size **pages**. A
 **page table** maps page numbers to frame numbers.
 
-$$\mathrm{physical address{} = \mathrm{PT{}[p] \times F + f$$
+$$\mathrm{physical address = \mathrm{PT[p] \times F + f$$
 
-Where $\mathrm{PT{}[p]$ is the frame number for page $p$ and $F$ is the frame size.
+Where $\mathrm{PT[p]$ is the frame number for page $p$ and $F$ is the frame size.
 
 **Page table entry fields:**
 
@@ -842,7 +842,7 @@ Where $\mathrm{PT{}[p]$ is the frame number for page $p$ and $F$ is the frame si
 Two-level scheme uses a **page directory** indexed by the outer page number, pointing to inner Page
 tables:
 
-$$\mathrm{Address: {} \underbrace{p_1}_{\mathrm{outer{}} \mid \underbrace{p_2}_{\mathrm{inner{}} \mid \underbrace{d}_{\mathrm{offset{}}$$
+$$\mathrm{Address:  \underbrace{p_1}_{\mathrm{outer} \mid \underbrace{p_2}_{\mathrm{inner} \mid \underbrace{d}_{\mathrm{offset}$$
 
 X86-64 with 48-bit virtual addresses uses four-level page tables.
 
@@ -854,7 +854,7 @@ Overhead but makes searching for a specific virtual page expensive; solved by ha
 Segments divide the address space into logical units (code, data, stack, heap). Each segment has a
 **base** and **limit**:
 
-$$\mathrm{physical address{} = \mathrm{base{} + \mathrm{offset{}, \quad \mathrm{if {} \mathrm{offset{} \lt{} \mathrm{limit{}$$
+$$\mathrm{physical address = \mathrm{base + \mathrm{offset, \quad \mathrm{if  \mathrm{offset \lt \mathrm{limit$$
 
 _Advantages:_ Reflects program structure; supports sharing individual segments. _Disadvantages:_
 External fragmentation (variable-size segments).
@@ -872,19 +872,19 @@ A process has three segments with the following segment table:
 
 Translate logical address (segment = 1, offset = 1500):
 
-1. Check: offset $1500 \lt{}$ limit $4096$. Valid.
+1. Check: offset $1500 \lt$ limit $4096$. Valid.
 2. Physical address = base + offset = $12288 + 1500 = 13788$.
 
 Translate (segment = 2, offset = 2500):
 
-1. Check: offset $2500 \lt{}$ limit $2048$. **Invalid** — segmentation fault.
+1. Check: offset $2500 \lt$ limit $2048$. **Invalid** — segmentation fault.
 </details>
 
 ### 5.4 Segmented Paging
 
 Combine segmentation and paging: the segment offset is divided into page number and page offset.
 
-$$\mathrm{Address: {} \underbrace{s}_{\mathrm{segment{}} \mid \underbrace{p}_{\mathrm{page{}} \mid \underbrace{d}_{\mathrm{offset{}}$$
+$$\mathrm{Address:  \underbrace{s}_{\mathrm{segment} \mid \underbrace{p}_{\mathrm{page} \mid \underbrace{d}_{\mathrm{offset}$$
 
 Used by x86 (segmentation + paging).
 
@@ -906,14 +906,14 @@ Pages in RAM; the rest reside on disk (swap space).
 
 **Effective access time (EAT):**
 
-$$\mathrm{EAT{} = (1 - p) \times \mathrm{ma{} + p \times \mathrm{pf{}$$
+$$\mathrm{EAT = (1 - p) \times \mathrm{ma + p \times \mathrm{pf$$
 
-Where $p$ = page fault rate, $\mathrm{ma{}$ = memory access time, $\mathrm{pf{}$ = page fault
+Where $p$ = page fault rate, $\mathrm{ma$ = memory access time, $\mathrm{pf$ = page fault
 service Time.
 
-For $p = 0.001$$\mathrm{ma{} = 100$ ns, $\mathrm{pf{} = 8$ ms:
+For $p = 0.001$$\mathrm{ma = 100$ ns, $\mathrm{pf = 8$ ms:
 
-$$\mathrm{EAT{} = 0.999 \times 100 + 0.001 \times 8\,000\,000 = 8.1 \; \mu\mathrm{s{}$$
+$$\mathrm{EAT = 0.999 \times 100 + 0.001 \times 8\,000\,000 = 8.1 \; \mu\mathrm{s$$
 
 This is roughly $80\times$ slower than pure memory access, illustrating why a low page fault rate Is
 critical.
@@ -923,13 +923,13 @@ critical.
 A **TLB** is a hardware cache of recently used page table entries, avoiding an extra memory access
 Per translation.
 
-$$\mathrm{EAT{} = h \times (\mathrm{TLB{} + \mathrm{ma{}) + (1 - h) \times (\mathrm{TLB{} + \mathrm{ma{} + \mathrm{ma{})$$
+$$\mathrm{EAT = h \times (\mathrm{TLB + \mathrm{ma) + (1 - h) \times (\mathrm{TLB + \mathrm{ma + \mathrm{ma)$$
 
 Where $h$ is the TLB hit ratio.
 
-For $h = 0.99$$\mathrm{TLB{} = 2$ ns, $\mathrm{ma{} = 100$ ns:
+For $h = 0.99$$\mathrm{TLB = 2$ ns, $\mathrm{ma = 100$ ns:
 
-$$\mathrm{EAT{} = 0.99 \times 102 + 0.01 \times 202 = 103 \; \mathrm{ns{}$$
+$$\mathrm{EAT = 0.99 \times 102 + 0.01 \times 202 = 103 \; \mathrm{ns$$
 
 **TLB coherence.** When the OS modifies a page table entry, it must invalidate the corresponding TLB
 entry. On x86-64: `invlpg` for single-entry invalidation, or reload `CR3` to flush the entire TLB.
@@ -941,16 +941,16 @@ A system with TLB access time = 2 ns, memory access time = 100 ns, page fault se
 TLB hit ratio = 0.80, and page fault rate = 0.0005.
 
 _Case 1: TLB hit, no page fault_ ($0.80 \times 0.9995 = 0.7996$): Time =
-$\mathrm{TLB{} + \mathrm{ma{} = 2 + 100 = 102$ ns.
+$\mathrm{TLB + \mathrm{ma = 2 + 100 = 102$ ns.
 
 _Case 2: TLB miss, no page fault_ ($0.20 \times 0.9995 = 0.1999$): Time =
-$\mathrm{TLB{} + 2 \times \mathrm{ma{} = 2 + 200 = 202$ ns.
+$\mathrm{TLB + 2 \times \mathrm{ma = 2 + 200 = 202$ ns.
 
 _Case 3: Page fault_ ($0.0005$): Time =
-$\mathrm{TLB{} + \mathrm{ma{} + \mathrm{pf{} = 2 + 100 + 8 \times 10^6 = 8000002$ ns.
+$\mathrm{TLB + \mathrm{ma + \mathrm{pf = 2 + 100 + 8 \times 10^6 = 8000002$ ns.
 
-$$\mathrm{EAT{} = 0.7996 \times 102 + 0.1999 \times 202 + 0.0005 \times 8\,000\,102$$
-$$\mathrm{EAT{} = 81.56 + 40.38 + 4000.05 = 4121.99 \;\mathrm{ns{} \approx 4.12 \;\mu\mathrm{s{}$$
+$$\mathrm{EAT = 0.7996 \times 102 + 0.1999 \times 202 + 0.0005 \times 8\,000\,102$$
+$$\mathrm{EAT = 81.56 + 40.38 + 4000.05 = 4121.99 \;\mathrm{ns \approx 4.12 \;\mu\mathrm{s$$
 
 This is roughly $41\times$ slower than pure memory access, driven almost entirely by the page fault
 Component.
@@ -1107,7 +1107,7 @@ more memory does not always Reduce page faults for non-stack algorithms. :::
 Total working set of all active processes exceeds physical memory.
 
 **Working set model.** $W(t, \Delta)$ is the set of pages referenced in the last $\Delta$
-references. If $\sum W_i \gt{}$ available frames, thrashing occurs.
+references. If $\sum W_i \gt$ available frames, thrashing occurs.
 
 **Solutions:**
 
@@ -1143,7 +1143,7 @@ Decrease its allocation.
 **Theorem 5.4.** If the sum of all working sets exceeds the number of physical frames, at least one
 Process must thrash.
 
-_Proof._ By the pigeonhole principle, if $\sum_{i=1}^{n} \lvert W_i \rvert \gt{} F$ where $F$ is the
+_Proof._ By the pigeonhole principle, if $\sum_{i=1}^{n} \lvert W_i \rvert \gt F$ where $F$ is the
 Total number of frames, at least one process cannot hold its entire working set in memory. That
 Process will repeatedly evict pages it needs, causing its page fault rate to dominate its execution
 Time. $\blacksquare$
@@ -1263,7 +1263,7 @@ Directory entry):
 - **Triple indirect:** 1 more level of indirection (4 TiB).
 
 Maximum file size:
-$48\;\mathrm{KiB{} + 4\;\mathrm{MiB{} + 4\;\mathrm{GiB{} + 4\;\mathrm{TiB{} \approx 4\;\mathrm{TiB{}$.
+$48\;\mathrm{KiB + 4\;\mathrm{MiB + 4\;\mathrm{GiB + 4\;\mathrm{TiB \approx 4\;\mathrm{TiB$.
 
 ### 6.5 Journaling File Systems
 
@@ -1312,10 +1312,10 @@ reliability, Or both.
 - RAID 6: $(n - 2)C$
 - RAID 10: $nC / 2$
 
-**Mean time to failure (MTTF).** If each disk has $\mathrm{MTTF{}_{\mathrm{disk{}}$ and the MTTR
-(mean time to repair) is $T_{\mathrm{repair{}}$:
+**Mean time to failure (MTTF).** If each disk has $\mathrm{MTTF_{\mathrm{disk}$ and the MTTR
+(mean time to repair) is $T_{\mathrm{repair}$:
 
-$$\mathrm{MTTF{}_{\mathrm{RAID\;5{}} \approx \frac{\mathrm{MTTF{}_{\mathrm{disk{}}^2}{n(n-1) \cdot T_{\mathrm{repair{}}}$$
+$$\mathrm{MTTF_{\mathrm{RAID\;5} \approx \frac{\mathrm{MTTF_{\mathrm{disk}^2}{n(n-1) \cdot T_{\mathrm{repair}}$$
 
 RAID 5 significantly improves reliability for large arrays, but the rebuild time grows with disk
 Capacity, increasing the window of vulnerability.
@@ -1323,14 +1323,14 @@ Capacity, increasing the window of vulnerability.
 <details>
 <summary>Worked Example 6.2 — RAID Capacity and Reliability</summary>
 
-Eight 2 TiB disks. $\mathrm{MTTF{}_{\mathrm{disk{}} = 1.2 \times 10^6$ hours,
-$T_{\mathrm{repair{}} = 24$ hours.
+Eight 2 TiB disks. $\mathrm{MTTF_{\mathrm{disk} = 1.2 \times 10^6$ hours,
+$T_{\mathrm{repair} = 24$ hours.
 
 _RAID 0:_ Capacity = $8 \times 2 = 16$ TiB. No fault tolerance. MTTF =
-$\mathrm{MTTF{}_{\mathrm{disk{}} / 8 = 150000$ hours.
+$\mathrm{MTTF_{\mathrm{disk} / 8 = 150000$ hours.
 
 _RAID 5:_ Capacity = $7 \times 2 = 14$ TiB.
-$\mathrm{MTTF{}_{\mathrm{RAID\;5{}} \approx \frac{(1.2 \times 10^6)^2}{8 \times 7 \times 24} = \frac{1.44 \times 10^{12}}{1344} \approx 1.07 \times 10^9$
+$\mathrm{MTTF_{\mathrm{RAID\;5} \approx \frac{(1.2 \times 10^6)^2}{8 \times 7 \times 24} = \frac{1.44 \times 10^{12}}{1344} \approx 1.07 \times 10^9$
 hours.
 
 _RAID 6:_ Capacity = $6 \times 2 = 12$ TiB. Tolerates 2 simultaneous disk failures. MTTF is orders
@@ -1664,7 +1664,7 @@ As a fraction of CPU time on a 3 GHz processor?
 
 **Solution.** (Revision: §1.2)
 
-Total message-passing time per second: $10^6 \times 2 \;\mu\mathrm{s{} = 2$ seconds of CPU time per
+Total message-passing time per second: $10^6 \times 2 \;\mu\mathrm{s = 2$ seconds of CPU time per
 Second. This exceeds available CPU time, making the microkernel approach infeasible at this call
 Rate without optimisations such as batched IPC or shared-memory channels.
 
@@ -1748,8 +1748,8 @@ Compute the schedule under SRTF (preemptive SJF).
 
 **Solution.** (Revision: §2.4)
 
-$t=0$: $P_1$ starts (remaining 8). $t=1$: $P_2$ arrives (remaining 4). SRTF: 4 $\lt{}$ 8, preempt
-$P_1$. $P_2$ starts. $t=2$: $P_3$ arrives (remaining 2). SRTF: 2 $\lt{}$ 4, preempt $P_2$. $P_3$
+$t=0$: $P_1$ starts (remaining 8). $t=1$: $P_2$ arrives (remaining 4). SRTF: 4 $\lt$ 8, preempt
+$P_1$. $P_2$ starts. $t=2$: $P_3$ arrives (remaining 2). SRTF: 2 $\lt$ 4, preempt $P_2$. $P_3$
 starts. $t=4$: $P_3$ completes. $P_2$ (remaining 4) vs $P_1$ (remaining 8). $P_2$ resumes. $t=8$:
 $P_2$ completes. $P_1$ resumes (remaining 6). $t=14$: $P_1$ completes.
 
@@ -1888,9 +1888,9 @@ Granted.
 
 **Solution.** (Revision: §4.3)
 
-1. $\mathrm{Request{}_0 = (1,0,0) \leq \mathrm{Need{}_0 = (2,2,1)$. OK.
-2. $\mathrm{Request{}_0 = (1,0,0) \leq A = (3,2,1)$. OK.
-3. Pretend to allocate: $A = (2,2,1)$$\mathrm{Alloc{}_0 = (2,0,0)$$\mathrm{Need{}_0 = (1,2,1)$.
+1. $\mathrm{Request_0 = (1,0,0) \leq \mathrm{Need_0 = (2,2,1)$. OK.
+2. $\mathrm{Request_0 = (1,0,0) \leq A = (3,2,1)$. OK.
+3. Pretend to allocate: $A = (2,2,1)$$\mathrm{Alloc_0 = (2,0,0)$$\mathrm{Need_0 = (1,2,1)$.
 4. Safety: Work = $(2,2,1)$.
 
 - $P_0$: $(1,2,1) \leq (2,2,1)$. Execute. Work = $(4,2,1)$.
@@ -1929,7 +1929,7 @@ _TLB hit, no fault_ ($0.90 \times 0.999$): $2 + 100 = 102$ ns. _TLB miss, no fau
 ($0.10 \times 0.999$): $2 + 100 + 100 = 202$ ns (TLB + outer PT + inner PT + data). _Fault_
 ($0.001$): $2 + 100 + 100 + 6 \times 10^6 = 6000002$ ns.
 
-$\mathrm{EAT{} = 0.8991 \times 102 + 0.0999 \times 202 + 0.001 \times 6000002$
+$\mathrm{EAT = 0.8991 \times 102 + 0.0999 \times 202 + 0.001 \times 6000002$
 $= 91.71 + 20.18 + 6000.20 = 6112.09$ ns $\approx 6.11$ $\mu$S.
 
 </details>
@@ -1942,7 +1942,7 @@ Access time = 100 ns, page fault service = 8 ms.
 
 **Solution.** (Revision: §5.5)
 
-Assume no TLB for simplicity: $\mathrm{EAT{} = (1 - p) \times 100 + p \times 8 \times 10^6$.
+Assume no TLB for simplicity: $\mathrm{EAT = (1 - p) \times 100 + p \times 8 \times 10^6$.
 
 $200 = 100 - 100p + 8 \times 10^6 p$ $100 = 7999900 p$ $p \approx 1.25 \times 10^{-5}$
 
@@ -2055,10 +2055,10 @@ Of 8 pages is added?
 
 **Solution.** (Revision: §5.8)
 
-Without $P_4$: total working set = $15 + 12 + 18 = 45 \gt{} 40$. Thrashing occurs. Only two
+Without $P_4$: total working set = $15 + 12 + 18 = 45 \gt 40$. Thrashing occurs. Only two
 Processes can run concurrently (e.g., $P_1 + P_2 = 27 \leq 40$Or $P_2 + P_3 = 30 \leq 40$).
 
-With $P_4$: total = $15 + 12 + 18 + 8 = 53 \gt{} 40$. Even worse. Using working set admission, we
+With $P_4$: total = $15 + 12 + 18 + 8 = 53 \gt 40$. Even worse. Using working set admission, we
 Would run at most two processes. The best combination that fits is $P_1 + P_3 = 33$ or
 $P_2 + P_3 =
 30$.

@@ -579,7 +579,7 @@ $$\boxed{\mathrm{Var}(X) = \frac{(b-a)^2}{12}} \quad \blacksquare$$
 
 ### 7.3 CDF of the continuous uniform
 
-$$F(x) = \begin{cases} 0 & x \lt{} a \\ \dfrac{x - a}{b - a} & a \leq x \leq b \\ 1 & x > b \end{cases}$$
+$$F(x) = \begin{cases} 0 & x \lt a \\ \dfrac{x - a}{b - a} & a \leq x \leq b \\ 1 & x > b \end{cases}$$
 
 <hr />
 
@@ -694,7 +694,7 @@ Symmetry of the PDF about $x = 2$).
 
 Inter-arrival time $T \sim \mathrm{Exp}(12)$ per hour.
 
-$P(2/60 \lt{} T \lt{} 5/60) = e^{-12(2/60)} - e^{-12(5/60)} = e^{-0.4} - e^{-1} \approx 0.6703 - 0.3679 = 0.3024$.
+$P(2/60 \lt T \lt 5/60) = e^{-12(2/60)} - e^{-12(5/60)} = e^{-0.4} - e^{-1} \approx 0.6703 - 0.3679 = 0.3024$.
 
 For the third email: the total time $S_3 = T_1 + T_2 + T_3 \sim \mathrm{Gamma}(3, 12)$.
 
@@ -735,10 +735,10 @@ Of the individual rates.
 </details>
 
 <details>
-<summary>Q6. A random variable $X$ has PDF $f(x) = \dfrac{2x}{9}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$$\mathrm{Var}(X)$The median, and $P(1 \lt{} X \lt{} 2)$.</summary>
+<summary>Q6. A random variable $X$ has PDF $f(x) = \dfrac{2x}{9}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$$\mathrm{Var}(X)$The median, and $P(1 \lt X \lt 2)$.</summary>
 
 CDF: $F(x) = \int_0^x \dfrac{2t}{9}\,dt = \dfrac{x^2}{9}$ for $0 \leq x \leq 3$. $F(x) = 0$ for
-$x \lt{} 0$$F(x) = 1$ for $x > 3$.
+$x \lt 0$$F(x) = 1$ for $x > 3$.
 
 $E(X) = \int_0^3 x \cdot \dfrac{2x}{9}\,dx = \dfrac{2}{9}\left[\dfrac{x^3}{3}\right]_0^3 = \dfrac{2}{9} \times 9 = 2$.
 
@@ -748,7 +748,7 @@ $\mathrm{Var}(X) = 4.5 - 4 = 0.5$.
 
 Median: $\dfrac{m^2}{9} = 0.5 \implies m^2 = 4.5 \implies m = \sqrt{4.5} \approx 2.12$.
 
-$P(1 \lt{} X \lt{} 2) = F(2) - F(1) = \dfrac{4}{9} - \dfrac{1}{9} = \dfrac{1}{3}$.
+$P(1 \lt X \lt 2) = F(2) - F(1) = \dfrac{4}{9} - \dfrac{1}{9} = \dfrac{1}{3}$.
 
 </details>
 

@@ -195,7 +195,7 @@ K = -\frac{\ln 2}{5730} \approx -0.000121
 $$
 
 $$
-T = \frac{\ln 0.25}{k} = \frac{-1.386}{-0.000121} \approx 11460 \mathrm{ years{}
+T = \frac{\ln 0.25}{k} = \frac{-1.386}{-0.000121} \approx 11460 \mathrm{ years
 $$
 
 (Equivalently, $25\% = \frac{1}{4} = 2^{-2}$So $t = 2 \times 5730 = 11460$ years.)
@@ -431,8 +431,8 @@ Temperature but never quite reaches it.
 
 :::info[Example]
 
-A cup of coffee at $90^\circ\mathrm{C{}$ is placed in a room at $20^\circ\mathrm{C{}$. After 10
-minutes, The coffee is $60^\circ\mathrm{C{}$. When will the coffee reach $35^\circ\mathrm{C{}$?
+A cup of coffee at $90^\circ\mathrm{C$ is placed in a room at $20^\circ\mathrm{C$. After 10
+minutes, The coffee is $60^\circ\mathrm{C$. When will the coffee reach $35^\circ\mathrm{C$?
 
 $$
 T(t) = 20 + 70e^{-kt}
@@ -448,7 +448,7 @@ $$
 $$
 
 $$
-T = \frac{\ln(14/3)}{k} = \frac{10\ln(14/3)}{\ln(7/4)} \approx \frac{10 \times 1.540}{0.5596} \approx 27.5 \mathrm{ minutes{}
+T = \frac{\ln(14/3)}{k} = \frac{10\ln(14/3)}{\ln(7/4)} \approx \frac{10 \times 1.540}{0.5596} \approx 27.5 \mathrm{ minutes
 $$
 
 :::
@@ -462,7 +462,7 @@ L/min.
 The rate of change of the amount $Q$ of dissolved substance is:
 
 $$
-\frac{dQ}{dt} = \underbrace{r_i c_i}_{\mathrm{rate in{}} - \underbrace{\frac{r_o}{V} Q}_{\mathrm{rate out{}}
+\frac{dQ}{dt} = \underbrace{r_i c_i}_{\mathrm{rate in} - \underbrace{\frac{r_o}{V} Q}_{\mathrm{rate out}
 $$
 
 The term $\frac{Q}{V}$ is the current concentration in the tank, so $\frac{r_o}{V}Q$ is the rate at
@@ -492,7 +492,7 @@ Q(t) = \frac{2.5}{0.05}\left(1 - e^{-0.05t}\right) = 50(1 - e^{-0.05t})
 $$
 
 $$
-Q(20) = 50(1 - e^{-1}) \approx 50(1 - 0.368) \approx 31.6 \mathrm{ kg{}
+Q(20) = 50(1 - e^{-1}) \approx 50(1 - 0.368) \approx 31.6 \mathrm{ kg
 $$
 
 :::
@@ -537,7 +537,7 @@ Q(t) = 0.3(200 + t) - \frac{0.3 \cdot 200^4}{(200 + t)^3}
 $$
 
 At $t = 60$:
-$Q(60) = 0.3(260) - \frac{0.3 \cdot 200^4}{260^3} = 78 - \frac{0.3 \cdot 1.6 \times 10^9}{1.7576 \times 10^7} \approx 78 - 27.3 = 50.7 \mathrm{ kg{}$.
+$Q(60) = 0.3(260) - \frac{0.3 \cdot 200^4}{260^3} = 78 - \frac{0.3 \cdot 1.6 \times 10^9}{1.7576 \times 10^7} \approx 78 - 27.3 = 50.7 \mathrm{ kg$.
 
 ## Qualitative Analysis of Differential Equations
 
@@ -735,8 +735,8 @@ Method would be.
 3. Use Euler's method with $\Delta x = 0.25$ and two steps to approximate $y(0.5)$ for
    $\frac{dy}{dx} = x^2 + y$$y(0) = 1$.
 
-4. A body at $80^\circ\mathrm{C{}$ is placed in a room at $25^\circ\mathrm{C{}$. After 30 minutes,
-   the body is at $50^\circ\mathrm{C{}$. When will it reach $30^\circ\mathrm{C{}$?
+4. A body at $80^\circ\mathrm{C$ is placed in a room at $25^\circ\mathrm{C$. After 30 minutes,
+   the body is at $50^\circ\mathrm{C$. When will it reach $30^\circ\mathrm{C$?
 
 5. For $\displaystyle\frac{dy}{dx} = y(y - 2)(y - 5)$Find all equilibrium solutions and classify
    their stability. Draw the phase line.

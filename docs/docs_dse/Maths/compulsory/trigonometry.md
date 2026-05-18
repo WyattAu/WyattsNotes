@@ -225,11 +225,11 @@ The graph.
 
 | Property       | Value                                |
 | -------------- | ------------------------------------ |
-| Domain         | All real $\mathbb{{'}R{}'}$          |
+| Domain         | All real $\mathbb{R}$          |
 | Range          | $[-1, 1]$                            |
 | Period         | $2\pi$ (or $360^\circ$)              |
 | Amplitude      | $1$                                  |
-| $x$-intercepts | $n\pi$$n \in \mathbb{{'}Z{}'}$       |
+| $x$-intercepts | $n\pi$$n \in \mathbb{Z}$       |
 | Maximum        | $1$ at $x = \frac{\pi}{2} + 2n\pi$   |
 | Minimum        | $-1$ at $x = \frac{3\pi}{2} + 2n\pi$ |
 
@@ -239,11 +239,11 @@ The graph is an odd function ($\sin(-x) = -\sin x$), symmetric about the origin.
 
 | Property       | Value                                          |
 | -------------- | ---------------------------------------------- |
-| Domain         | All real $\mathbb{{'}R{}'}$                    |
+| Domain         | All real $\mathbb{R}$                    |
 | Range          | $[-1, 1]$                                      |
 | Period         | $2\pi$ (or $360^\circ$)                        |
 | Amplitude      | $1$                                            |
-| $x$-intercepts | $\frac{\pi}{2} + n\pi$$n \in \mathbb{{'}Z{}'}$ |
+| $x$-intercepts | $\frac{\pi}{2} + n\pi$$n \in \mathbb{Z}$ |
 | Maximum        | $1$ at $x = 2n\pi$                             |
 | Minimum        | $-1$ at $x = \pi + 2n\pi$                      |
 
@@ -254,10 +254,10 @@ The graph is an even function ($\cos(-x) = \cos x$), symmetric about the $y$-axi
 | Property       | Value                          |
 | -------------- | ------------------------------ |
 | Domain         | $x \neq \frac{\pi}{2} + n\pi$  |
-| Range          | All real $\mathbb{{'}R{}'}$    |
+| Range          | All real $\mathbb{R}$    |
 | Period         | $\pi$ (or $180^\circ$)         |
 | Amplitude      | Not defined (unbounded)        |
-| $x$-intercepts | $n\pi$$n \in \mathbb{{'}Z{}'}$ |
+| $x$-intercepts | $n\pi$$n \in \mathbb{Z}$ |
 | Asymptotes     | $x = \frac{\pi}{2} + n\pi$     |
 
 The graph is an odd function ($\tan(-x) = -\tan x$). The tangent function has vertical asymptotes
@@ -300,7 +300,7 @@ In $[-90^\circ, 90^\circ]$:
 
 $$
 \begin{aligned}
- \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{{'}Z{}'}
+ \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{Z}
 \end{aligned}
 $$
 
@@ -309,7 +309,7 @@ In $[0^\circ, 180^\circ]$:
 
 $$
 \begin{aligned}
- \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb{{'}Z{}'}
+ \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb{Z}
 \end{aligned}
 $$
 
@@ -318,7 +318,7 @@ $(-90^\circ, 90^\circ)$:
 
 $$
 \begin{aligned}
- \theta = 180^\circ n + \alpha, \quad n \in \mathbb{{'}Z{}'}
+ \theta = 180^\circ n + \alpha, \quad n \in \mathbb{Z}
 \end{aligned}
 $$
 

@@ -93,7 +93,7 @@ microscopy.
 (a) Total magnification $= 10 \times 40 = 400\times$.
 
 (b) Actual size
-$= \text{image size{} / \text{magnification{} = 4.2 \text{ mm{} / 400 = 0.0105 \text{ mm{} = 10.5 \mu$M.
+$= \text{image size / \text{magnification = 4.2 \text{ mm / 400 = 0.0105 \text{ mm = 10.5 \mu$M.
 
 (c) **Magnification** is how much larger the image appears compared to the actual object (e.g.,
 $400\times$ means 400 times larger). **Resolution** is the ability to distinguish between two
@@ -188,12 +188,12 @@ surface area to volume ratio.
 
 **Solution:**
 
-(a) $1 \text{ mm{} = 1000 \mu\text{m{}$. Number of cells $= 1000/20 = 50$ cells.
+(a) $1 \text{ mm = 1000 \mu\text{m$. Number of cells $= 1000/20 = 50$ cells.
 
 (b) Magnification
-$= \text{image size{} / \text{actual size{} = 5 \text{ mm{} / 0.0015 \text{ mm{} = 3333\times$.
+$= \text{image size / \text{actual size = 5 \text{ mm / 0.0015 \text{ mm = 3333\times$.
 
-(c) Actual size $= 3.8 \text{ mm{} / 15,000 = 0.000253 \text{ mm{} = 0.253 \mu\text{m{}$.
+(c) Actual size $= 3.8 \text{ mm / 15,000 = 0.000253 \text{ mm = 0.253 \mu\text{m$.
 
 (d) As a cell grows larger, its volume increases faster than its surface area ($V \propto r^3$ vs
 $SA \propto r^2$). The surface area to volume ratio decreases, meaning: (1) Not enough cell membrane

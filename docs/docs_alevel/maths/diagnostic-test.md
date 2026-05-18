@@ -91,7 +91,7 @@ $\binom{5}{3}(2)^2(-3x)^3 = 10 \times 4 \times (-27x^3) = -1080x^3$. Coefficient
 
 <details>
 <summary>Q7. Find the sum to infinity of $0.5 + 0.1 + 0.02 + 0.004 + \cdots$.</summary>
-$a = 0.5$$r = 0.2$. $|r| \lt{} 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5}{0.8} = 0.625$.
+$a = 0.5$$r = 0.2$. $|r| \lt 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5}{0.8} = 0.625$.
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/alevel/maths/pure-mathematics/sequences-and-series)
@@ -160,7 +160,7 @@ $\dfrac{dy}{dx} = \dfrac◆LB◆e^x(x^2+2x)\sin x - x^2e^x\cos x◆RB◆◆LB◆
 <summary>Q13. Find the stationary points of $y = x^3 - 3x + 2$ and classify them.</summary>
 $y' = 3x^2 - 3 = 0 \implies x = \pm 1$. $y'' = 6x$.
 
-$x=1$: $y'' = 6 \gt{} 0$Minimum at $(1, 0)$. $x=-1$: $y'' = -6 \lt{} 0$Maximum at $(-1, 4)$.
+$x=1$: $y'' = 6 \gt 0$Minimum at $(1, 0)$. $x=-1$: $y'' = -6 \lt 0$Maximum at $(-1, 4)$.
 
 **If you get this wrong, revise:**
 [Differentiation](/docs/alevel/maths/pure-mathematics/differentiation)
@@ -239,7 +239,7 @@ Suppose $\sqrt{5} = a/b$ in lowest terms. $5b^2 = a^2$So $5 \mid a^2 \implies 5 
 
 <details>
 <summary>Q21. Show $x^3 - x - 2 = 0$ has a root in $[1, 2]$.</summary>
-$f(1) = -2 \lt{} 0$$f(2) = 4 \gt{} 0$. Sign change, continuous function $\implies$ root in $(1,2)$.
+$f(1) = -2 \lt 0$$f(2) = 4 \gt 0$. Sign change, continuous function $\implies$ root in $(1,2)$.
 
 **If you get this wrong, revise:**
 [Numerical Methods](/docs/alevel/maths/pure-mathematics/numerical-methods)
@@ -334,8 +334,8 @@ $P(X=4) = \binom{12}{4}(0.3)^4(0.7)^8 = 495 \times 0.0081 \times 0.0576 \approx 
 </details>
 
 <details>
-<summary>Q30. $X \sim N(100, 64)$. Find $P(X \gt{} 108)$.</summary>
-$P(X \gt{} 108) = P(Z \gt{} 8/8) = P(Z \gt{} 1) = 1 - 0.8413 = 0.1587$.
+<summary>Q30. $X \sim N(100, 64)$. Find $P(X \gt 108)$.</summary>
+$P(X \gt 108) = P(Z \gt 8/8) = P(Z \gt 1) = 1 - 0.8413 = 0.1587$.
 
 **If you get this wrong, revise:**
 [Statistical Distributions](/docs/alevel/maths/statistics/statistical-distributions)
@@ -357,7 +357,7 @@ $P(X \leq 3) = e^{-5}\left(1+5+\dfrac{25}{2}+\dfrac{125}{6}\right) = e^{-5}(1+5+
 <summary>Q32. A coin is tossed 20 times, landing heads 15 times. Test at 5% if biased towards heads.</summary>
 $H_0: p=0.5$$H_1: p>0.5$. Under $H_0$: $X \sim B(20,0.5)$.
 
-$P(X \geq 15) = 1-P(X \leq 14) \approx 0.0207 \lt{} 0.05$. **Reject** $H_0$: evidence of bias.
+$P(X \geq 15) = 1-P(X \leq 14) \approx 0.0207 \lt 0.05$. **Reject** $H_0$: evidence of bias.
 
 **If you get this wrong, revise:**
 [Hypothesis Testing](/docs/alevel/maths/statistics/hypothesis-testing)

@@ -42,8 +42,8 @@ Sugar-phosphate backbones on the outside.
 **Semi-conservative replication:** Each new DNA molecule contains one original strand and one new
 Strand.
 
-**Meselson-Stahl experiment (1958):** Used heavy (${}^{15}\mathrm{N{}$) and light
-(${}^{14}\mathrm{N{}$) Nitrogen to demonstrate semi-conservative replication.
+**Meselson-Stahl experiment (1958):** Used heavy ($^{15}\mathrm{N$) and light
+($^{14}\mathrm{N$) Nitrogen to demonstrate semi-conservative replication.
 
 **Process:**
 
@@ -56,16 +56,16 @@ Strand.
 
 **Worked Example: The Meselson-Stahl experiment.**
 
-Bacteria are grown in medium containing ${}^{15}\mathrm{N{}$ (heavy nitrogen) for many generations.
-All Their DNA is heavy (${}^{15}\mathrm{N{}/{}^{15}\mathrm{N{}$). They are then transferred to
-medium Containing ${}^{14}\mathrm{N{}$ (light nitrogen) and allowed to replicate once.
+Bacteria are grown in medium containing $^{15}\mathrm{N$ (heavy nitrogen) for many generations.
+All Their DNA is heavy ($^{15}\mathrm{N/^{15}\mathrm{N$). They are then transferred to
+medium Containing $^{14}\mathrm{N$ (light nitrogen) and allowed to replicate once.
 
 If replication is semi-conservative: each new DNA molecule contains one heavy strand and one light
-Strand (${}^{15}\mathrm{N{}/{}^{14}\mathrm{N{}$). After one generation, all DNA is intermediate
+Strand ($^{15}\mathrm{N/^{14}\mathrm{N$). After one generation, all DNA is intermediate
 density.
 
-After two generations: 50% intermediate (${}^{15}\mathrm{N{}/{}^{14}\mathrm{N{}$) and 50% light
-(${}^{14}\mathrm{N{}/{}^{14}\mathrm{N{}$). This is exactly what Meselson and Stahl observed,
+After two generations: 50% intermediate ($^{15}\mathrm{N/^{14}\mathrm{N$) and 50% light
+($^{14}\mathrm{N/^{14}\mathrm{N$). This is exactly what Meselson and Stahl observed,
 confirming Semi-conservative replication.
 
 ### Protein Synthesis
@@ -135,9 +135,9 @@ The **lac operon** in E. Coli controls the metabolism of lactose:
 **Example:** In pea plants, tall (T) is dominant over dwarf (t). Cross a heterozygous tall plant
 With a dwarf plant.
 
-Parents: $\mathrm{Tt{} \times \mathrm{tt{}$
+Parents: $\mathrm{Tt \times \mathrm{tt$
 
-Gametes: $\mathrm{T{}, \mathrm{t{} \times \mathrm{t{}$
+Gametes: $\mathrm{T, \mathrm{t \times \mathrm{t$
 
 |     | T   | t   |
 | --- | --- | --- |
@@ -154,7 +154,7 @@ Recessive individual to determine the genotype.
 **Dihybrid inheritance:** Inheritance of two characteristics simultaneously.
 
 **Example:** In pea plants, round seeds (R) are dominant over wrinkled (r), and yellow seeds (Y) are
-Dominant over green (y). Cross $\mathrm{RrYy{} \times \mathrm{RrYy{}$.
+Dominant over green (y). Cross $\mathrm{RrYy \times \mathrm{RrYy$.
 
 Gametes: RY, Ry, rY, ry (four types)
 
@@ -167,13 +167,13 @@ A single recessive allele will be expressed.
 
 **Example:** Haemophilia is caused by a recessive allele on the X chromosome.
 
-If a carrier female ($\mathrm{X{}^H\mathrm{X{}^h$) marries a normal male
-($\mathrm{X{}^H\mathrm{Y{}$):
+If a carrier female ($\mathrm{X^H\mathrm{X^h$) marries a normal male
+($\mathrm{X^H\mathrm{Y$):
 
-|                 | $\mathrm{X{}^H$                               | $\mathrm{Y{}$                                  |
+|                 | $\mathrm{X^H$                               | $\mathrm{Y$                                  |
 | --------------- | --------------------------------------------- | ---------------------------------------------- |
-| $\mathrm{X{}^H$ | $\mathrm{X{}^H\mathrm{X{}^H$ (normal female)  | $\mathrm{X{}^H\mathrm{Y{}$ (normal male)       |
-| $\mathrm{X{}^h$ | $\mathrm{X{}^H\mathrm{X{}^h$ (carrier female) | $\mathrm{X{}^h\mathrm{Y{}$ (haemophiliac male) |
+| $\mathrm{X^H$ | $\mathrm{X^H\mathrm{X^H$ (normal female)  | $\mathrm{X^H\mathrm{Y$ (normal male)       |
+| $\mathrm{X^h$ | $\mathrm{X^H\mathrm{X^h$ (carrier female) | $\mathrm{X^h\mathrm{Y$ (haemophiliac male) |
 
 Probability of a haemophiliac son: 1/4 (25%).
 
@@ -181,14 +181,14 @@ Probability of a haemophiliac son: 1/4 (25%).
 
 **Incomplete dominance:** Heterozygote has an intermediate phenotype.
 
-Example: $\mathrm{CRCR{}$ (red) $\times$ $\mathrm{CWCW{}$ (white) $\to$ $\mathrm{CRCW{}$ (pink).
+Example: $\mathrm{CRCR$ (red) $\times$ $\mathrm{CWCW$ (white) $\to$ $\mathrm{CRCW$ (pink).
 
 **Codominance:** Both alleles are expressed in the heterozygote.
 
-Example: Blood groups. $\mathrm{I{}^\mathrm{A{}\mathrm{I{}^\mathrm{B{}$ = blood group AB.
+Example: Blood groups. $\mathrm{I^\mathrm{A\mathrm{I^\mathrm{B$ = blood group AB.
 
 **Multiple alleles:** More than two alleles for a gene (e.g., blood groups:
-$\mathrm{I{}^\mathrm{A{}$ $\mathrm{I{}^\mathrm{B{}$$i$).
+$\mathrm{I^\mathrm{A$ $\mathrm{I^\mathrm{B$$i$).
 
 **Epistasis:** One gene affects the expression of another gene.
 
@@ -398,8 +398,8 @@ Genotype frequencies: $p^2 = 0.36$ (homozygous dominant), $2pq = 0.48$ (heterozy
 
 2. Explain how the lac operon allows E. Coli to regulate lactose metabolism.
 
-3. In a dihybrid cross between $\mathrm{RrYy{} \times \mathrm{rryy{}$Determine the expected
-   phenotype ratio and the probability of an offspring with the genotype $\mathrm{RrYy{}$.
+3. In a dihybrid cross between $\mathrm{RrYy \times \mathrm{rryy$Determine the expected
+   phenotype ratio and the probability of an offspring with the genotype $\mathrm{RrYy$.
 
 4. A population has 9% of individuals showing a recessive genetic disorder. Calculate the frequency
    of the carrier genotype.
@@ -409,7 +409,7 @@ Genotype frequencies: $p^2 = 0.36$ (homozygous dominant), $2pq = 0.48$ (heterozy
 6. Explain the difference between missense, nonsense, and frameshift mutations, giving an example of
    each.
 
-7. In a cross between red ($\mathrm{CRCW{}$) and white ($\mathrm{CWCW{}$) flowers where codominance
+7. In a cross between red ($\mathrm{CRCW$) and white ($\mathrm{CWCW$) flowers where codominance
    operates, predict the phenotype ratio of the F1 and F2 generations.
 
 8. Explain why the Hardy-Weinberg equilibrium rarely holds in natural populations.
@@ -695,7 +695,7 @@ Sequence itself.
 
 **DNA methylation:**
 
-- Methyl groups ($-\mathrm{CH{}_3$) are added to cytosine bases, particularly at CpG islands near
+- Methyl groups ($-\mathrm{CH_3$) are added to cytosine bases, particularly at CpG islands near
   gene promoters.
 - Methylation generally silences gene expression by preventing transcription factors from binding to
   the promoter.

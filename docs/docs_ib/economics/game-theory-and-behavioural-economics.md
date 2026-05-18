@@ -1738,7 +1738,7 @@ In evolutionary game theory, strategies are not chosen rationally but spread thr
 Based on their relative fitness (payoff). The **replicator equation** describes how the Frequency of
 a strategy changes over time:
 
-$$\frac{dx_i}{dt} = x_i \left[ f_i(\mathbf{{'}x{}'}) - \bar{f}(\mathbf{{'}x{}'}) \right]$$
+$$\frac{dx_i}{dt} = x_i \left[ f_i(\mathbf{x}) - \bar{f}(\mathbf{x}) \right]$$
 
 Where:
 

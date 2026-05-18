@@ -225,8 +225,8 @@ There are three types:
 
 | Type                | Condition                        | Shape   |
 | ------------------- | -------------------------------- | ------- |
-| Maximum             | $f'(a) = 0$$f''(a) \lt{} 0$      | $\cap$  |
-| Minimum             | $f'(a) = 0$$f''(a) \gt{} 0$      | $\cup$  |
+| Maximum             | $f'(a) = 0$$f''(a) \lt 0$      | $\cap$  |
+| Minimum             | $f'(a) = 0$$f''(a) \gt 0$      | $\cup$  |
 | Point of inflection | $f'(a) = 0$$f''(a) = 0$ (may be) | S-shape |
 
 ### 7.3 Proof of the second derivative test (Taylor expansion intuition)
@@ -239,8 +239,8 @@ Since $f'(a) = 0$ at a stationary point:
 
 $$f(x) - f(a) \approx \frac{f''(a)}{2}(x-a)^2$$
 
-- If $f''(a) \gt{} 0$: $f(x) - f(a) \gt{} 0$ for $x \neq a$So $f(a)$ is a **minimum**.
-- If $f''(a) \lt{} 0$: $f(x) - f(a) \lt{} 0$ for $x \neq a$So $f(a)$ is a **maximum**.
+- If $f''(a) \gt 0$: $f(x) - f(a) \gt 0$ for $x \neq a$So $f(a)$ is a **minimum**.
+- If $f''(a) \lt 0$: $f(x) - f(a) \lt 0$ for $x \neq a$So $f(a)$ is a **maximum**.
 - If $f''(a) = 0$: the test is inconclusive; use a nature table or higher derivatives.
 
 :::warning Warning Point could still be a maximum, minimum, or inflection. Always use a nature table
@@ -279,19 +279,19 @@ $$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\mathrm{cm}^2\mathrm{/s}$$
 **Definition.**
 
 - $f$ is **increasing** on an interval if $f'(x) \geq 0$ for all $x$ in that interval.
-- $f$ is **strictly increasing** if $f'(x) \gt{} 0$ for all $x$.
+- $f$ is **strictly increasing** if $f'(x) \gt 0$ for all $x$.
 - $f$ is **decreasing** if $f'(x) \leq 0$ for all $x$.
-- $f$ is **strictly decreasing** if $f'(x) \lt{} 0$ for all $x$.
+- $f$ is **strictly decreasing** if $f'(x) \lt 0$ for all $x$.
 
-**Example.** Show that $f(x) = x^3 - 3x + 2$ is increasing for $x \gt{} 1$.
+**Example.** Show that $f(x) = x^3 - 3x + 2$ is increasing for $x \gt 1$.
 
 $f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$.
 
-For $x \gt{} 1$: $(x-1) \gt{} 0$ and $(x+1) \gt{} 0$So $f'(x) \gt{} 0$. Hence $f$ is strictly
-Increasing for $x \gt{} 1$.
+For $x \gt 1$: $(x-1) \gt 0$ and $(x+1) \gt 0$So $f'(x) \gt 0$. Hence $f$ is strictly
+Increasing for $x \gt 1$.
 
 :::tip Tip Inequality. When asked to "show that a function is increasing", verify that
-$f'(x) \gt{} 0$ (or $\geq 0$) on the given interval. :::
+$f'(x) \gt 0$ (or $\geq 0$) on the given interval. :::
 
 <hr />
 
@@ -360,8 +360,8 @@ $f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3)$.
 
 Stationary points at $x = 1$ and $x = 3$.
 
-$f''(x) = 6x - 12$. At $x = 1$: $f''(1) = -6 \lt{} 0$So **local maximum**.
-$f(1) = 1 - 6 + 9 + 1 = 5$. At $x = 3$: $f''(3) = 6 \gt{} 0$So **local minimum**.
+$f''(x) = 6x - 12$. At $x = 1$: $f''(1) = -6 \lt 0$So **local maximum**.
+$f(1) = 1 - 6 + 9 + 1 = 5$. At $x = 3$: $f''(3) = 6 \gt 0$So **local minimum**.
 $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 **If you get this wrong, revise:**
@@ -426,15 +426,15 @@ Section 8.
 
 <details>
 <summary>Problem 6</summary>
-Show that $f(x) = e^x + e^{-x}$ is strictly increasing for $x \gt{} 0$.
+Show that $f(x) = e^x + e^{-x}$ is strictly increasing for $x \gt 0$.
 </details>
 
 <details>
 <summary>Solution 6</summary>
 $f'(x) = e^x - e^{-x}$.
 
-For $x \gt{} 0$: $e^x \gt{} 1 \gt{} e^{-x}$So $e^x - e^{-x} \gt{} 0$. Hence $f'(x) \gt{} 0$ for All
-$x \gt{} 0$So $f$ is strictly increasing on $(0, \infty)$.
+For $x \gt 0$: $e^x \gt 1 \gt e^{-x}$So $e^x - e^{-x} \gt 0$. Hence $f'(x) \gt 0$ for All
+$x \gt 0$So $f$ is strictly increasing on $(0, \infty)$.
 
 **If you get this wrong, revise:**
 [Increasing and Decreasing Functions](#9-increasing-and-decreasing-functions) — Section 9.
@@ -474,10 +474,10 @@ $t = 1$: $x = 2$$y = -2$. Point $(2, -2)$. $t = -1$: $x = 2$$y = 2$. Point $(2, 
 
 For nature, check $\dfrac{d^2y}{dx^2}$ or the sign of $\dfrac{dy}{dx}$:
 
-Near $t = 1$: for $t = 0.5$$\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} \lt{} 0$; for
-$t = 2$$\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} \gt{} 0$. So $t=1$ is a **minimum**.
+Near $t = 1$: for $t = 0.5$$\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} \lt 0$; for
+$t = 2$$\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} \gt 0$. So $t=1$ is a **minimum**.
 
-Near $t = -1$: for $t = -2$$\dfrac{dy}{dx} \lt{} 0$; for $t = -0.5$$\dfrac{dy}{dx} \gt{} 0$. So
+Near $t = -1$: for $t = -2$$\dfrac{dy}{dx} \lt 0$; for $t = -0.5$$\dfrac{dy}{dx} \gt 0$. So
 $t=-1$ is a **minimum**.
 
 **If you get this wrong, revise:**
@@ -502,14 +502,14 @@ $$\frac{d}{dx}\sec x = -(\cos x)^{-2} \cdot (-\sin x) = \frac◆LB◆\sin x◆RB
 
 <details>
 <summary>Problem 10</summary>
-Find the minimum value of $f(x) = x + \dfrac{4}{x}$ for $x \gt{} 0$.
+Find the minimum value of $f(x) = x + \dfrac{4}{x}$ for $x \gt 0$.
 </details>
 
 <details>
 <summary>Solution 10</summary>
-$f'(x) = 1 - \dfrac{4}{x^2} = \dfrac{x^2 - 4}{x^2} = 0 \implies x^2 = 4 \implies x = 2$ (since $x \gt{} 0$).
+$f'(x) = 1 - \dfrac{4}{x^2} = \dfrac{x^2 - 4}{x^2} = 0 \implies x^2 = 4 \implies x = 2$ (since $x \gt 0$).
 
-$f''(x) = \dfrac{8}{x^3}$. At $x = 2$: $f''(2) = 1 \gt{} 0$So minimum.
+$f''(x) = \dfrac{8}{x^3}$. At $x = 2$: $f''(2) = 1 \gt 0$So minimum.
 
 $f(2) = 2 + \dfrac{4}{2} = 4$.
 
@@ -567,7 +567,7 @@ As $x \to \pm\infty$: $y \to 2$. Horizontal asymptote: $y = 2$.
 
 $y' = \dfrac{2(x-3) - (2x+1)}{(x-3)^2} = \dfrac{-7}{(x-3)^2}$.
 
-Since $y' \lt{} 0$ for all $x \neq 3$There are **no stationary points**. The function is strictly
+Since $y' \lt 0$ for all $x \neq 3$There are **no stationary points**. The function is strictly
 Decreasing on each branch.
 
 **If you get this wrong, revise:** [The Quotient Rule](#4-the-quotient-rule) — Section 4 and

@@ -116,10 +116,10 @@ The **neutron number** $N = A - Z$.
 ### Nuclear Notation
 
 $$
-{}^A_Z X
+^A_Z X
 $$
 
-For example: ${}^{235}_{92}\mathrm{U}$ has 92 protons and 143 neutrons.
+For example: $^{235}_{92}\mathrm{U}$ has 92 protons and 143 neutrons.
 
 ### Isotopes
 
@@ -127,9 +127,9 @@ Isotopes of an element have the same number of protons but different numbers of 
 
 | Isotope                          | Protons | Neutrons |
 | -------------------------------- | ------- | -------- |
-| ${}^{1}_1\mathrm{H}$ (protium)   | 1       | 0        |
-| ${}^{2}_1\mathrm{H}$ (deuterium) | 1       | 1        |
-| ${}^{3}_1\mathrm{H}$ (tritium)   | 1       | 2        |
+| $^{1}_1\mathrm{H}$ (protium)   | 1       | 0        |
+| $^{2}_1\mathrm{H}$ (deuterium) | 1       | 1        |
+| $^{3}_1\mathrm{H}$ (tritium)   | 1       | 2        |
 
 ### Nuclear Forces
 
@@ -164,7 +164,7 @@ $$
 
 | Property       | Alpha ($\alpha$)            | Beta ($\beta^-$)      | Gamma ($\gamma$) |
 | -------------- | --------------------------- | --------------------- | ---------------- |
-| Particle       | ${}^4_2\mathrm{He}$ nucleus | Electron ($e^-$)      | Photon           |
+| Particle       | $^4_2\mathrm{He}$ nucleus | Electron ($e^-$)      | Photon           |
 | Charge         | $+2e$                       | $-e$                  | $0$              |
 | Mass           | $4\mathrm{ u}$              | $\approx 0$           | $0$              |
 | Speed          | $\approx 0.05c$             | Up to $\approx 0.99c$ | $c$              |
@@ -174,7 +174,7 @@ $$
 ### Alpha Decay
 
 $$
-{}^A_Z X \to {}^{A-4}_{Z-2} Y + {}^4_2\alpha
+^A_Z X \to ^{A-4}_{Z-2} Y + ^4_2\alpha
 $$
 
 The daughter nucleus has atomic number reduced by 2 and mass number reduced by 4.
@@ -182,7 +182,7 @@ The daughter nucleus has atomic number reduced by 2 and mass number reduced by 4
 :::info[Example]
 
 $$
-{}^{238}_{92}\mathrm{U} \to {}^{234}_{90}\mathrm{Th} + {}^4_2\alpha
+^{238}_{92}\mathrm{U} \to ^{234}_{90}\mathrm{Th} + ^4_2\alpha
 $$
 
 :::
@@ -190,7 +190,7 @@ $$
 ### Beta-minus Decay
 
 $$
-{}^A_Z X \to {}^A_{Z+1} Y + {}^0_{-1}\beta + \bar{\nu}_e
+^A_Z X \to ^A_{Z+1} Y + ^0_{-1}\beta + \bar{\nu}_e
 $$
 
 A neutron converts to a proton, emitting an electron and an antineutrino:
@@ -202,7 +202,7 @@ $$
 :::info[Example]
 
 $$
-{}^{14}_6\mathrm{C} \to {}^{14}_7\mathrm{N} + {}^0_{-1}\beta + \bar{\nu}_e
+^{14}_6\mathrm{C} \to ^{14}_7\mathrm{N} + ^0_{-1}\beta + \bar{\nu}_e
 $$
 
 :::
@@ -210,7 +210,7 @@ $$
 ### Beta-plus Decay (Positron Emission)
 
 $$
-{}^A_Z X \to {}^A_{Z-1} Y + {}^0_{+1}\beta^+ + \nu_e
+^A_Z X \to ^A_{Z-1} Y + ^0_{+1}\beta^+ + \nu_e
 $$
 
 A proton converts to a neutron, emitting a positron and a neutrino:
@@ -224,7 +224,7 @@ $$
 The nucleus transitions from a higher energy state to a lower energy state, emitting a gamma photon:
 
 $$
-{}^A_Z X^* \to {}^A_Z X + \gamma
+^A_Z X^* \to ^A_Z X + \gamma
 $$
 
 No change in $Z$ or $A$.
@@ -303,7 +303,7 @@ A heavy nucleus splits into two (or more) lighter nuclei, releasing energy and n
 **Example**:
 
 $$
-{}^{235}_{92}\mathrm{U} + {}^1_0 n \to {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3{}^1_0 n + \mathrm{energy}
+^{235}_{92}\mathrm{U} + ^1_0 n \to ^{141}_{56}\mathrm{Ba} + ^{92}_{36}\mathrm{Kr} + 3^1_0 n + \mathrm{energy}
 $$
 
 ### Chain Reaction
@@ -321,7 +321,7 @@ Light nuclei combine to form a heavier nucleus, releasing energy.
 **Example** (proton-proton chain in the Sun):
 
 $$
-4{}^1_1\mathrm{H} \to {}^4_2\mathrm{He} + 2{}^0_{+1}\beta^+ + 2\nu_e + \mathrm{energy}
+4^1_1\mathrm{H} \to ^4_2\mathrm{He} + 2^0_{+1}\beta^+ + 2\nu_e + \mathrm{energy}
 $$
 
 ### Conditions for Fusion
@@ -340,10 +340,10 @@ The binding energy per nucleon curve shows:
 
 | Nucleus                   | Binding Energy per Nucleon (MeV) |
 | ------------------------- | -------------------------------- |
-| ${}^2_1\mathrm{H}$        | 1.11                             |
-| ${}^4_2\mathrm{He}$       | 7.07                             |
-| ${}^{56}_{26}\mathrm{Fe}$ | 8.79                             |
-| ${}^{235}_{92}\mathrm{U}$ | 7.59                             |
+| $^2_1\mathrm{H}$        | 1.11                             |
+| $^4_2\mathrm{He}$       | 7.07                             |
+| $^{56}_{26}\mathrm{Fe}$ | 8.79                             |
+| $^{235}_{92}\mathrm{U}$ | 7.59                             |
 
 ### Mass Defect and Binding Energy
 
@@ -507,7 +507,7 @@ Confirmed de Broglie's hypothesis by observing the diffraction of electrons by a
 Uranium-238 undergoes alpha decay. What is the daughter nucleus?
 
 $$
-{}^{238}_{92}\mathrm{U} \to {}^{234}_{90}\mathrm{Th} + {}^4_2\alpha
+^{238}_{92}\mathrm{U} \to ^{234}_{90}\mathrm{Th} + ^4_2\alpha
 $$
 
 The daughter is thorium-234.
@@ -570,11 +570,11 @@ $$
 
 ### Question 4 (Paper 2 style)
 
-Calculate the energy released when ${}^{235}\mathrm{U}$ undergoes fission to produce
-${}^{141}\mathrm{Ba}$${}^{92}\mathrm{Kr}$And 3 neutrons.
+Calculate the energy released when $^{235}\mathrm{U}$ undergoes fission to produce
+$^{141}\mathrm{Ba}$$^{92}\mathrm{Kr}$And 3 neutrons.
 
-Masses: ${}^{235}\mathrm{U} = 235.044\mathrm{ u}$${}^{141}\mathrm{Ba} = 140.914\mathrm{ u}$
-${}^{92}\mathrm{Kr} = 91.926\mathrm{ u}$$n = 1.00867\mathrm{ u}$.
+Masses: $^{235}\mathrm{U} = 235.044\mathrm{ u}$$^{141}\mathrm{Ba} = 140.914\mathrm{ u}$
+$^{92}\mathrm{Kr} = 91.926\mathrm{ u}$$n = 1.00867\mathrm{ u}$.
 
 $$
 \Delta m = 235.044 - (140.914 + 91.926 + 3 \times 1.00867)
@@ -753,7 +753,7 @@ The isotope Po-210 undergoes alpha decay with a half-life of 138 days.
 **(a)** Write the nuclear equation for the decay.
 
 $$
-{}^{210}_{84}\mathrm{Po} \to {}^{206}_{82}\mathrm{Pb} + {}^4_2\alpha
+^{210}_{84}\mathrm{Po} \to ^{206}_{82}\mathrm{Pb} + ^4_2\alpha
 $$
 
 **(b)** A sample of Po-210 has an initial activity of $800\mathrm{ Bq}$. Find the activity after 1

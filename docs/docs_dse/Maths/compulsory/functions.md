@@ -56,10 +56,10 @@ A function $f \colon A \to B$ is:
 - **Bijective (one-to-one correspondence)** if $f$ is both injective and surjective.
 
 <summary>Examples</summary>
-- $f(x) = 2x + 1$ with domain $\mathbb{{'}R{}'}$ is injective (linear, non-constant) and surjective onto $\mathbb{{'}R{}'}$Hence bijective.
-- $f(x) = x^2$ with domain $\mathbb{{'}R{}'}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{{'}R{}'}$ (range is $[0, \infty)$).
+- $f(x) = 2x + 1$ with domain $\mathbb{R}$ is injective (linear, non-constant) and surjective onto $\mathbb{R}$Hence bijective.
+- $f(x) = x^2$ with domain $\mathbb{R}$ is neither injective ($f(2) = f(-2) = 4$) nor surjective onto $\mathbb{R}$ (range is $[0, \infty)$).
 - $f(x) = x^2$ with domain $[0, \infty)$ and codomain $[0, \infty)$ is bijective.
-- $f(x) = \dfrac{1}{x}$ with domain $\mathbb{{'}R{}'} \setminus \{0\}$ is injective but not surjective onto $\mathbb{{'}R{}'}$ (range is $\mathbb{{'}R{}'} \setminus \{0\}$).
+- $f(x) = \dfrac{1}{x}$ with domain $\mathbb{R} \setminus \{0\}$ is injective but not surjective onto $\mathbb{R}$ (range is $\mathbb{R} \setminus \{0\}$).
 
 ---
 
@@ -120,13 +120,13 @@ Injective.
 - Set $y = \dfrac{2x + 1}{x - 3}$
 - $y(x - 3) = 2x + 1 \implies yx - 3y = 2x + 1$
 - $x(y - 2) = 3y + 1 \implies x = \dfrac{3y + 1}{y - 2}$
-- Therefore $f^{-1}(x) = \dfrac{3x + 1}{x - 2}$With domain $\mathbb{{'}R{}'} \setminus \{2\}$.
+- Therefore $f^{-1}(x) = \dfrac{3x + 1}{x - 2}$With domain $\mathbb{R} \setminus \{2\}$.
 
 - Let $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + 1$. Find the domain of $f \circ g$:
-- $\mathrm{dom}(g) = \mathbb{{'}R{}'}$
+- $\mathrm{dom}(g) = \mathbb{R}$
 - $\mathrm{dom}(f) = \{x : x \geq 1\}$So we require $g(x) \geq 1$I.e.
   $x^2 + 1 \geq 1 \implies x^2 \geq 0$Which holds for all real $x$.
-- Therefore $\mathrm{dom}(f \circ g) = \mathbb{{'}R{}'}$.
+- Therefore $\mathrm{dom}(f \circ g) = \mathbb{R}$.
 
 ---
 
@@ -218,7 +218,7 @@ Where $a$ is called the **base**.
 
 ### Properties
 
-For $a, b > 0$ and $m, n \in \mathbb{{'}R{}'}$:
+For $a, b > 0$ and $m, n \in \mathbb{R}$:
 
 $$
 \begin{aligned}
@@ -275,12 +275,12 @@ $$
 
 This means $\log_a x$ is the exponent to which $a$ must be raised to obtain $x$.
 
-The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{{'}R{}'}$. See
+The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{R}$. See
 [logarithms](logarithms) for further details.
 
 ### Laws of Logarithms
 
-For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{{'}R{}'}$:
+For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{R}$:
 
 $$
 \begin{aligned}
@@ -414,7 +414,7 @@ $y$-axis, making it an **even function**: $|{-x}| = |x|$ for all $x$.
 
 ### Properties
 
-For all $a, b \in \mathbb{{'}R{}'}$:
+For all $a, b \in \mathbb{R}$:
 
 **Proposition (Multiplicativity).** $|ab| = |a| \cdot |b|$.
 
@@ -500,7 +500,7 @@ Parabola:
 | -------------- | ------------ | ---------------------------- | ----------------------- |
 | $\Delta \gt 0$ | Two distinct | $x \lt x_1$ or $x \gt x_2$   | $x_1 \lt x \lt x_2$     |
 | $\Delta = 0$   | One repeated | All $x \neq x_1$             | No solution             |
-| $\Delta \lt 0$ | None         | All $x \in \mathbb{{'}R{}'}$ | No solution             |
+| $\Delta \lt 0$ | None         | All $x \in \mathbb{R}$ | No solution             |
 
 See [inequalities.md](inequalities)) for the general theory.
 
@@ -553,7 +553,7 @@ F(x) = \frac{P(x)}{Q(x)}
 $$
 
 Where $P(x)$ and $Q(x)$ are polynomials and $Q(x) \neq 0$. The domain is
-$\mathbb{{'}R{}'} \setminus \{x : Q(x) = 0\}$.
+$\mathbb{R} \setminus \{x : Q(x) = 0\}$.
 
 ### Asymptotes
 
@@ -697,9 +697,9 @@ Key observations:
 ### Details
 <summary>Answer</summary>
 - $(f \circ g)(x) = f(g(x)) = f(x^2 - 4) = \dfrac{2(x^2 - 4) - 6}{(x^2 - 4) + 1} = \dfrac{2x^2 - 14}{x^2 - 3}$
-- $\mathrm{dom}(g) = \mathbb{{'}R{}'}$.
-- $\mathrm{dom}(f) = \{x \in \mathbb{{'}R{}'} : x \neq -1\}$So we require $g(x) \neq -1$I.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
-- $\mathrm{dom}(f \circ g) = \mathbb{{'}R{}'} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
+- $\mathrm{dom}(g) = \mathbb{R}$.
+- $\mathrm{dom}(f) = \{x \in \mathbb{R} : x \neq -1\}$So we require $g(x) \neq -1$I.e. $x^2 - 4 \neq -1 \implies x^2 \neq 3 \implies x \neq \pm\sqrt{3}$.
+- $\mathrm{dom}(f \circ g) = \mathbb{R} \setminus \{\sqrt{3},\; -\sqrt{3}\}$.
 
 2. **Question:** Let $f(x) = 3x - 5$. Find $f^{-1}(x)$ and verify that $f^{-1}(f(x)) = x$.
 
@@ -776,18 +776,18 @@ Key observations:
 - To find the true inverse of $f(x) = \log_2(x + 3)$:
 - Set $y = \log_2(x + 3) \implies 2^y = x + 3 \implies x = 2^y - 3$.
 - $f^{-1}(x) = 2^x - 3$.
-- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{{'}R{}'}$ (since $\log_2(x + 3)$ takes all
+- $\mathrm{dom}(f^{-1}) = \mathrm{range}(f) = \mathbb{R}$ (since $\log_2(x + 3)$ takes all
   real values for $x > -3$).
 - $\mathrm{range}(f^{-1}) = \mathrm{dom}(f) = (-3, \infty)$.
 
 9. **Question:** Given $f(x) = x^2 + 2x - 3$Find the range of $f$ when (a) the domain is
-   $\mathbb{{'}R{}'}$And (b) the domain is $[0, 4]$.
+   $\mathbb{R}$And (b) the domain is $[0, 4]$.
 
 <summary>Answer</summary>
 
 - Completing the square: $f(x) = (x^2 + 2x + 1) - 1 - 3 = (x + 1)^2 - 4$.
 - The vertex is at $(-1, -4)$.
-- (a) Domain $\mathbb{{'}R{}'}$: Since the parabola opens upward with minimum $-4$Range is
+- (a) Domain $\mathbb{R}$: Since the parabola opens upward with minimum $-4$Range is
   $[-4, \infty)$.
 - (b) Domain $[0, 4]$:
 - $f(0) = -3$$f(4) = 16 + 8 - 3 = 21$.
@@ -801,7 +801,7 @@ Key observations:
 
 - Set $y = \dfrac{x}{x - 2}$.
 - $y(x - 2) = x \implies yx - 2y = x \implies yx - x = 2y \implies x(y - 1) = 2y \implies x = \dfrac{2y}{y - 1}$.
-- $f^{-1}(x) = \dfrac{2x}{x - 1}$With domain $\mathbb{{'}R{}'} \setminus \{1\}$.
+- $f^{-1}(x) = \dfrac{2x}{x - 1}$With domain $\mathbb{R} \setminus \{1\}$.
 - $f^{-1}(3) = \dfrac{2(3)}{3 - 1} = 3$.
 - $f(3) = \dfrac{3}{3 - 2} = 3$.
 - $f^{-1}(3) + f(3) = 3 + 3 = 6$.
@@ -853,25 +853,25 @@ Exact values are preferred. Decimal answers to 3 significant figures.
 
 **Worked Example 9: Determining injectivity**
 
-Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{{'}R{}'}$?
+Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{R}$?
 
 <summary>Solution</summary>
 
 $f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$.
 
 Since $f(0) = f(\sqrt{3}) = f(-\sqrt{3})$ and the inputs are distinct, $f$ is not injective on
-$\mathbb{{'}R{}'}$.
+$\mathbb{R}$.
 
 Note: $f$ is injective on $[1, \infty)$ since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) > 0$ for $x > 1$.
 
 **Worked Example 10: Surjectivity**
 
-Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{{'}R{}'}$?
+Is $f(x) = x^2 + 1$ surjective if the codomain is $\mathbb{R}$?
 
 <summary>Solution</summary>
 
 No. Since $x^2 \geq 0$ for all real $x$We have $f(x) = x^2 + 1 \geq 1$. The value
-$0 \in \mathbb{{'}R{}'}$ is not attained. Therefore $f$ is not surjective onto $\mathbb{{'}R{}'}$.
+$0 \in \mathbb{R}$ is not attained. Therefore $f$ is not surjective onto $\mathbb{R}$.
 
 If the codomain is restricted to $[1, \infty)$Then $f$ is surjective.
 
@@ -917,7 +917,7 @@ whether $f$ is injective.
 
 <summary>Solution</summary>
 
-Domain: $x \neq 1$So $\mathrm{dom}(f) = \mathbb{{'}R{}'} \setminus \{1\}$.
+Domain: $x \neq 1$So $\mathrm{dom}(f) = \mathbb{R} \setminus \{1\}$.
 
 $f(x) = 2 + \dfrac{5}{x - 1}$.
 
@@ -927,7 +927,7 @@ $(2, +\infty)$.
 For $x < 1$: as $x \to 1^-$$f(x) \to -\infty$; as $x \to -\infty$$f(x) \to 2^-$. Range:
 $(-\infty, 2)$.
 
-Combined range: $\mathbb{{'}R{}'} \setminus \{2\}$.
+Combined range: $\mathbb{R} \setminus \{2\}$.
 
 $f$ is injective: for $x > 1$$f$ is strictly decreasing (derivative $-5/(x-1)^2 < 0$); for
 $x < 1$$f$ is also strictly decreasing. And no value from $(2, +\infty)$ overlaps with
@@ -960,7 +960,7 @@ $$f(-x) = (-x)^3 + (-x) = -x^3 - x = -(x^3 + x) = -f(x)$$
 
 Since $f(-x) = -f(x)$$f$ is odd.
 
-**DSE Practice 5.** The function $f$ is defined on $\mathbb{{'}R{}'}$ by $f(x) = ax^2 + bx + c$.
+**DSE Practice 5.** The function $f$ is defined on $\mathbb{R}$ by $f(x) = ax^2 + bx + c$.
 Given that $f(0) = 5$$f(1) = 4$And $f(-1) = 10$Find $a$$b$And $c$.
 
 <summary>Solution</summary>

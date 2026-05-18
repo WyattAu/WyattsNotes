@@ -617,11 +617,11 @@ is as informative as its presence (e.g. No C=O rules out aldehydes, ketones, aci
 
 ### Step 4: NMR Spectroscopy -- Piece Together the Structure
 
-${}^1\mathrm{H}$ NMR tells you the number of hydrogen environments (signals), the ratio of protons
+$^1\mathrm{H}$ NMR tells you the number of hydrogen environments (signals), the ratio of protons
 in each (integration), the neighbouring environments (splitting), and the electronic environment
 (chemical shift).
 
-${}^{13}\mathrm{C}$ NMR tells you the number of carbon environments. Combine this with the DoU and
+$^{13}\mathrm{C}$ NMR tells you the number of carbon environments. Combine this with the DoU and
 IR data.
 
 ### Step 5: Mass Spectrometry -- Confirm and Find Fragments
@@ -637,9 +637,9 @@ An unknown compound has:
 
 - Mass spec: $M^+ = 120$M+1 peak approximately $7.7\%$ of $M^+$
 - IR: $1705\,\mathrm{cm}^{-1}$ (strong), $2850$--$2950\,\mathrm{cm}^{-1}$ (strong), no O--H, no C--O
-- ${}^1\mathrm{H}$ NMR: $\delta\, 1.2$ (t, 6H), $\delta\, 2.9$ (q, 4H), $\delta\, 7.5$ (t, 2H),
+- $^1\mathrm{H}$ NMR: $\delta\, 1.2$ (t, 6H), $\delta\, 2.9$ (q, 4H), $\delta\, 7.5$ (t, 2H),
   $\delta\, 7.9$ (d, 2H)
-- ${}^{13}\mathrm{C}$ NMR: 6 peaks
+- $^{13}\mathrm{C}$ NMR: 6 peaks
 
 **Step 1:** $M = 120$. M+1 = $7.7\% \implies$ approximately 7 carbons ($1.1\%$ per carbon).
 $\mathrm{C}_7\mathrm{H}_8\mathrm{O}$: $7(12) + 8(1) + 16 = 84 + 8 + 16 = 108 \neq 120$.
@@ -651,7 +651,7 @@ $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$: $96 + 8 + 16 = 120$. Correct.
 **Step 3:** IR: $1705\,\mathrm{cm}^{-1}$ = C=O (ketone). No broad O--H, no strong C--O, so not a
 carboxylic acid or ester.
 
-**Step 4:** ${}^1\mathrm{H}$ NMR: 4 signals.
+**Step 4:** $^1\mathrm{H}$ NMR: 4 signals.
 
 - $\delta\, 7.5$ (t, 2H) and $\delta\, 7.9$ (d, 2H) = 4 aromatic protons = monosubstituted benzene
   ring (but with 4 protons, it is para-disubstituted: two doublets would be expected for AA'BB'

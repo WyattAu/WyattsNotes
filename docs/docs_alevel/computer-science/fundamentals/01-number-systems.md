@@ -23,7 +23,7 @@ $$
 N = \sum_{i=0}^{n-1} d_i \cdot b^i
 $$
 
-Each digit $d_i$ satisfies $0 \leq d_i \lt{} b$. The **most significant digit** (MSD) is $d_{n-1}$
+Each digit $d_i$ satisfies $0 \leq d_i \lt b$. The **most significant digit** (MSD) is $d_{n-1}$
 And the **least significant digit** (LSD) is $d_0$.
 
 The bases relevant to A Level Computer Science are:
@@ -64,7 +64,7 @@ $$1 \times 16^2 + 10 \times 16^1 + 3 \times 16^0 = 256 + 160 + 3 = 419_{10}$$
 **Algorithm.** To convert denary $N$ to base $b$:
 
 1. Set $i = 0$
-2. While $N \gt{} 0$: digit $d_i = N \bmod b$; set $N = \lfloor N / b \rfloor$; $i \leftarrow i + 1$
+2. While $N \gt 0$: digit $d_i = N \bmod b$; set $N = \lfloor N / b \rfloor$; $i \leftarrow i + 1$
 3. The result is $d_{i-1}d_{i-2}\ldots d_0$ (digits collected in reverse order)
 
 **Correctness proof.** We prove by induction on the number of division steps that the algorithm
@@ -195,7 +195,7 @@ For an $n$-bit two's complement representation, the range of representable integ
 $$[-2^{n-1},\ 2^{n-1} - 1]$$
 
 The representation of a non-negative integer $x$ is its standard $n$-bit binary Representation. The
-representation of a negative integer $-x$ (where $x \gt{} 0$) is:
+representation of a negative integer $-x$ (where $x \gt 0$) is:
 
 $$\mathrm{TwosComp}_n(-x) = 2^n - x$$
 

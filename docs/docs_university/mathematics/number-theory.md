@@ -17,23 +17,23 @@ slug: number-theory
 ### 1.1 The Division Algorithm
 
 **Theorem 1.1 (Division Algorithm).** For any integers $a$ and $b$ with $b > 0$There exist unique
-Integers $q$ and $r$ such that $a = bq + r$ with $0 \leq r \lt{} b$.
+Integers $q$ and $r$ such that $a = bq + r$ with $0 \leq r \lt b$.
 
-_Proof._ Consider the set $S = \\{a - bk : k \in \mathbb{{'}Z{}'},\ a - bk \geq 0\\}$. This set is
+_Proof._ Consider the set $S = \\{a - bk : k \in \mathbb{Z},\ a - bk \geq 0\\}$. This set is
 non-empty (by the Archimedean property, choosing $k$ sufficiently negative). By the well-ordering
 principle, $S$ has a least element $r = a - bq$. If $r \geq b$Then $r - b = a - (q+1)b \in S$ with
-$r - b \lt{} r$Contradicting minimality. So $0 \leq r \lt{} b$. For uniqueness, if
-$a = bq_1 + r_1 = bq_2 + r_2$Then $b(q_1 - q_2) = r_2 - r_1$. Since $|r_2 - r_1| \lt{} b$We must
+$r - b \lt r$Contradicting minimality. So $0 \leq r \lt b$. For uniqueness, if
+$a = bq_1 + r_1 = bq_2 + r_2$Then $b(q_1 - q_2) = r_2 - r_1$. Since $|r_2 - r_1| \lt b$We must
 Have $q_1 = q_2$ and $r_1 = r_2$. $\blacksquare$
 
 ### 1.2 Divisibility
 
-We write $d \mid a$ (read "$d$ divides $a$") if there exists $k \in \mathbb{{'}Z{}'}$ with $a = dk$.
+We write $d \mid a$ (read "$d$ divides $a$") if there exists $k \in \mathbb{Z}$ with $a = dk$.
 
-**Proposition 1.2.** For all $a, b, c \in \mathbb{{'}Z{}'}$:
+**Proposition 1.2.** For all $a, b, c \in \mathbb{Z}$:
 
 1. If $a \mid b$ and $b \mid c$Then $a \mid c$.
-2. If $a \mid b$ and $a \mid c$Then $a \mid (mb + nc)$ for all $m, n \in \mathbb{{'}Z{}'}$.
+2. If $a \mid b$ and $a \mid c$Then $a \mid (mb + nc)$ for all $m, n \in \mathbb{Z}$.
 3. If $a \mid b$ and $b \neq 0$Then $|a| \leq |b|$.
 4. $a \mid 0$ for all $a$But $0 \mid a$ only when $a = 0$.
 
@@ -44,7 +44,7 @@ $0 \mid a$Then $a = 0 \cdot k = 0$. $\blacksquare$
 
 ### 1.3 Worked Examples of the Division Algorithm
 
-**Problem.** Apply the division algorithm to write $-237 = 14q + r$ with $0 \leq r \lt{} 14$.
+**Problem.** Apply the division algorithm to write $-237 = 14q + r$ with $0 \leq r \lt 14$.
 
 <details>
 <summary>Solution</summary>
@@ -52,9 +52,9 @@ $0 \mid a$Then $a = 0 \cdot k = 0$. $\blacksquare$
 We compute $237 \div 14 = 16.93\ldots$So $14 \cdot 16 = 224$ and $14 \cdot 17 = 238 > 237$. Thus for
 positive $237$: $q = 16$$r = 13$Giving $237 = 14 \cdot 16 + 13$.
 
-For $a = -237$: we need $q$ such that $r = -237 - 14q$ satisfies $0 \leq r \lt{} 14$.
+For $a = -237$: we need $q$ such that $r = -237 - 14q$ satisfies $0 \leq r \lt 14$.
 $-237 = 14(-17) + 1$: check $14 \cdot (-17) = -238$And $-238 + 1 = -237$. Here $q = -17$ and $r = 1$
-with $0 \leq 1 \lt{} 14$. $\blacksquare$
+with $0 \leq 1 \lt 14$. $\blacksquare$
 
 </details>
 
@@ -63,7 +63,7 @@ with $0 \leq 1 \lt{} 14$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-From $n \equiv 3 \pmod{7}$We have $n = 7k + 3$ for some $k \in \mathbb{{'}Z{}'}$. Substituting into
+From $n \equiv 3 \pmod{7}$We have $n = 7k + 3$ for some $k \in \mathbb{Z}$. Substituting into
 $n \equiv 2 \pmod{5}$: $7k + 3 \equiv 2 \pmod{5}$So $7k \equiv -1 \equiv 4 \pmod{5}$Giving
 $2k \equiv 4 \pmod{5}$Hence $k \equiv 2 \pmod{5}$.
 
@@ -74,10 +74,10 @@ $\blacksquare$
 
 ### 1.4 Uniqueness of the Greatest Common Divisor
 
-**Theorem 1.3.** Let $a, b \in \mathbb{{'}Z{}'}$Not both zero. The greatest common divisor of $a$
+**Theorem 1.3.** Let $a, b \in \mathbb{Z}$Not both zero. The greatest common divisor of $a$
 and $b$ Exists and is unique.
 
-_Proof._ The set $D = \\{d \in \mathbb{{'}N{}'} : d \mid a \mathrm{\ and\ {} d \mid b\\}"$ is
+_Proof._ The set $D = \\{d \in \mathbb{N} : d \mid a \mathrm{\ and\  d \mid b\\}"$ is
 non-empty since $|a| \in D$ (if $a \neq 0$) or $|b| \in D$ (if $b \neq 0$). By the well-ordering
 principle, $D$ has A least element $g$. We claim $g = \gcd(a, b)$. By definition $g \mid a$ and
 $g \mid b$. If $c \mid a$ And $c \mid b$Then $c \leq |c| \leq g$ (since $g$ is the least positive
@@ -87,27 +87,27 @@ $g_1 \mid g_2$ and $g_2 \mid g_1$ So $g_1 = g_2$ (since both are positive). $\bl
 ### 1.5 Least Common Multiple
 
 **Definition.** The **least common multiple** of positive integers $a$ and $b$Written
-$\mathrm{lcm{}(a, b)$Is the smallest positive integer $m$ such that $a \mid m$ and $b \mid m$.
+$\mathrm{lcm(a, b)$Is the smallest positive integer $m$ such that $a \mid m$ and $b \mid m$.
 
 **Theorem 1.4 (GCD--LCM Identity).** For all positive integers $a$ and $b$
 
-$$\gcd(a, b) \cdot \mathrm{lcm{}(a, b) = ab$$
+$$\gcd(a, b) \cdot \mathrm{lcm(a, b) = ab$$
 
 _Proof._ Write $a = \prod_{i=1}^k p_i^{\alpha_i}$ and $b = \prod_{i=1}^k p_i^{\beta_i}$ where
 $\alpha_i, \beta_i \geq 0$. Then $\gcd(a, b) = \prod_{i=1}^k p_i^{\min(\alpha_i, \beta_i)}$ and
-$\mathrm{lcm{}(a, b) = \prod_{i=1}^k p_i^{\max(\alpha_i, \beta_i)}$. Since
+$\mathrm{lcm(a, b) = \prod_{i=1}^k p_i^{\max(\alpha_i, \beta_i)}$. Since
 $\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i) = \alpha_i + \beta_i$ for each $i$We have
 
-$$\gcd(a,b) \cdot \mathrm{lcm{}(a,b) = \prod_{i=1}^k p_i^{\alpha_i + \beta_i} = ab \qquad \blacksquare$$
+$$\gcd(a,b) \cdot \mathrm{lcm(a,b) = \prod_{i=1}^k p_i^{\alpha_i + \beta_i} = ab \qquad \blacksquare$$
 
 **Proposition 1.5.** For all positive integers $a, b$:
 
-1. $\mathrm{lcm{}(a, b) = ab / \gcd(a, b)$.
-2. $\gcd(a, \mathrm{lcm{}(b, c)) = \mathrm{lcm{}(\gcd(a, b), \gcd(a, c))$.
+1. $\mathrm{lcm(a, b) = ab / \gcd(a, b)$.
+2. $\gcd(a, \mathrm{lcm(b, c)) = \mathrm{lcm(\gcd(a, b), \gcd(a, c))$.
 
 ### 1.6 Worked Example: LCM Computation
 
-**Problem.** Compute $\mathrm{lcm{}(252, 105)$ and verify the gcd--lcm identity.
+**Problem.** Compute $\mathrm{lcm(252, 105)$ and verify the gcd--lcm identity.
 
 <details>
 <summary>Solution</summary>
@@ -115,7 +115,7 @@ $$\gcd(a,b) \cdot \mathrm{lcm{}(a,b) = \prod_{i=1}^k p_i^{\alpha_i + \beta_i} = 
 First, $\gcd(252, 105)$. Using the Euclidean algorithm:
 $252 = 2 \cdot 105 + 42$$105 = 2 \cdot 42 + 21$$42 = 2 \cdot 21 + 0$. So $\gcd(252, 105) = 21$.
 
-By the identity: $\mathrm{lcm{}(252, 105) = 252 \cdot 105 / 21 = 252 \cdot 5 = 1260$.
+By the identity: $\mathrm{lcm(252, 105) = 252 \cdot 105 / 21 = 252 \cdot 5 = 1260$.
 
 Verification: $1260 / 252 = 5$ and $1260 / 105 = 12$Both integers. $\blacksquare$
 
@@ -128,23 +128,23 @@ Verification: $1260 / 252 = 5$ and $1260 / 105 = 12$Both integers. $\blacksquare
 **Definition.** The **greatest common divisor** of $a$ and $b$ (not both zero) is the largest
 Positive integer $d$ such that $d \mid a$ and $d \mid b$. We write $d = \gcd(a, b)$.
 
-**Theorem 2.1 (Bézout's Identity).** For any $a, b \in \mathbb{{'}Z{}'}$ not both zero, there exist
-$x, y \in \mathbb{{'}Z{}'}$ such that
+**Theorem 2.1 (Bézout's Identity).** For any $a, b \in \mathbb{Z}$ not both zero, there exist
+$x, y \in \mathbb{Z}$ such that
 
 $$\gcd(a, b) = ax + by$$
 
-_Proof._ Let $S = \\{ax + by : x, y \in \mathbb{{'}Z{}'},\ ax + by > 0\\}$. By the well-ordering
+_Proof._ Let $S = \\{ax + by : x, y \in \mathbb{Z},\ ax + by > 0\\}$. By the well-ordering
 principle, $S$ has a least element $d = ax_0 + by_0$. We show $d = \gcd(a, b)$. First, $d \mid a$:
-write $a = dq + r$ with $0 \leq r \lt{} d$. Then
+write $a = dq + r$ with $0 \leq r \lt d$. Then
 $r = a - dq = a - (ax_0 + by_0)q = a(1 - x_0 q) + b(-y_0 q)$. If $r > 0$Then $r \in S$ with
-$r \lt{} d$Contradicting minimality. So $r = 0$Giving $d \mid a$. Similarly $d \mid b$. For any
+$r \lt d$Contradicting minimality. So $r = 0$Giving $d \mid a$. Similarly $d \mid b$. For any
 Common divisor $c$ of $a$ and $b$: $c \mid (ax_0 + by_0) = d$So $c \leq d$. $\blacksquare$
 
 ### 2.2 The Euclidean Algorithm
 
 To compute $\gcd(a, b)$ with $a \geq b > 0$:
 
-$$a = bq_1 + r_1, \quad 0 \lt{} r_1 \lt{} b$$ $$b = r_1 q_2 + r_2, \quad 0 \lt{} r_2 \lt{} r_1$$
+$$a = bq_1 + r_1, \quad 0 \lt r_1 \lt b$$ $$b = r_1 q_2 + r_2, \quad 0 \lt r_2 \lt r_1$$
 $$\vdots$$ $$r_{n-1} = r_n q_{n+1} + 0$$
 
 Then $\gcd(a, b) = r_n$. The algorithm terminates because $b > r_1 > r_2 > \cdots \geq 0$.
@@ -218,7 +218,7 @@ Integers $a$ and $b$ are **coprime** (or **relatively prime**) if $\gcd(a, b) = 
 **Proposition 2.3 (Euclid's Lemma).** If $p$ is prime and $p \mid ab$Then $p \mid a$ or $p \mid b$.
 
 _Proof._ If $p \nmid a$Then $\gcd(p, a) = 1$. By Bézout's identity, $1 = px + ay$ for some
-$x, y \in \mathbb{{'}Z{}'}$. Multiplying by $b$: $b = pbx + aby$. Since $p \mid aby$We get
+$x, y \in \mathbb{Z}$. Multiplying by $b$: $b = pbx + aby$. Since $p \mid aby$We get
 $p \mid b$. $\blacksquare$
 
 **Corollary 2.4.** If $p$ is prime and $p \mid a_1 a_2 \cdots a_n$Then $p \mid a_i$ for some $i$.
@@ -244,11 +244,11 @@ $1$ as a linear combination of $a$ and $bc$So $\gcd(a, bc) = 1$. $\blacksquare$
 
 $$n = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}$$
 
-Where $p_1 \lt{} p_2 \lt{} \cdots \lt{} p_k$ are primes and $a_i \geq 1$.
+Where $p_1 \lt p_2 \lt \cdots \lt p_k$ are primes and $a_i \geq 1$.
 
 _Proof (existence)._ Suppose for contradiction that some integer $n > 1$ cannot be factored into
 Primes. Let $n$ be the smallest such integer. If $n$ is prime, we are done. Otherwise $n = ab$ with
-$1 \lt{} a, b \lt{} n$. By minimality of $n$Both $a$ and $b$ factor into primes, so $n = ab$ also
+$1 \lt a, b \lt n$. By minimality of $n$Both $a$ and $b$ factor into primes, so $n = ab$ also
 Factors into primes, a contradiction. $\blacksquare$
 
 _Proof (uniqueness)._ Suppose $n = p_1 \cdots p_r = q_1 \cdots q_s$ where all $p_i, q_j$ are prime.
@@ -285,7 +285,7 @@ Of the binomial coefficient $\binom{2n}{n}$. The prime number theorem strengthen
 $\pi(x) \sim x/\ln x$.
 
 **Proposition 3.3b.** For $n \geq 2$The $n$-th prime $p_n$ satisfies
-$n \ln n \lt{} p_n \lt{} 2n \ln n$.
+$n \ln n \lt p_n \lt 2n \ln n$.
 
 This follows from the prime number theorem and the estimate $\pi(x) \sim x/\ln x$.
 
@@ -313,7 +313,7 @@ $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Suppose $\sqrt{2} = a/b$ where $a, b \in \mathbb{{'}N{}'}$ with $\gcd(a, b) = 1$. Then $2b^2 = a^2$
+Suppose $\sqrt{2} = a/b$ where $a, b \in \mathbb{N}$ with $\gcd(a, b) = 1$. Then $2b^2 = a^2$
 So $2 \mid a^2$Hence $2 \mid a$. Write $a = 2c$. Then $2b^2 = 4c^2$So $b^2 = 2c^2$Giving
 $2 \mid b^2$ and hence $2 \mid b$. But then $2 \mid \gcd(a, b) = 1$Contradiction. $\blacksquare$
 
@@ -355,16 +355,16 @@ The primes up to $50$ are: $2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 
 ### 3.6 Bertrand's Postulate
 
 **Theorem 3.5 (Bertrand's Postulate, Chebyshev 1852).** For every integer $n > 1$There exists at
-Least one prime $p$ with $n \lt{} p \lt{} 2n$.
+Least one prime $p$ with $n \lt p \lt 2n$.
 
 _Proof (sketch)._ Let $\theta(x) = \sum_{p \leq x} \ln p$ (Chebyshev's function). The proof proceeds
 In three main steps:
 
-1. Show $\theta(n) \lt{} 2n \ln 2$ for all $n \geq 1$ by induction using properties of binomial
+1. Show $\theta(n) \lt 2n \ln 2$ for all $n \geq 1$ by induction using properties of binomial
    coefficients. Specifically, $\binom{2n}{n}$ is divisible by every prime $p$ with
-   $n \lt{} p \leq 2n$ and $\binom{2n}{n} \leq 4^n$So $\prod_{n \lt{} p \leq 2n} p \leq 4^n$.
+   $n \lt p \leq 2n$ and $\binom{2n}{n} \leq 4^n$So $\prod_{n \lt p \leq 2n} p \leq 4^n$.
 
-2. Strengthen the bound to show that if no prime $p$ satisfies $n \lt{} p \leq 2n$Then
+2. Strengthen the bound to show that if no prime $p$ satisfies $n \lt p \leq 2n$Then
    $\theta(2n) = \theta(n)$Leading to a contradiction with the bound for sufficiently large $n$.
 
 3. The remaining small values of $n$ are checked directly.
@@ -374,7 +374,7 @@ $\blacksquare$
 _Remark._ This was famously conjectured by Bertrand in 1845 and proved by Chebyshev in 1852. Erdős
 published an elegant proof in 1932.
 
-**Problem.** Verify Bertrand's postulate for $n = 20$: find a prime $p$ with $20 \lt{} p \lt{} 40$.
+**Problem.** Verify Bertrand's postulate for $n = 20$: find a prime $p$ with $20 \lt p \lt 40$.
 
 <details>
 <summary>Solution</summary>
@@ -393,7 +393,7 @@ that for large $n$There are approximately $n/\ln n$ primes between $n$ and $2n$.
 
 We write $a \equiv b \pmod{m}$ (read "$a$ is congruent to $b$ modulo $m$") if $m \mid (a - b)$.
 
-**Proposition 4.1.** Congruence modulo $m$ is an equivalence relation on $\mathbb{{'}Z{}'}$.
+**Proposition 4.1.** Congruence modulo $m$ is an equivalence relation on $\mathbb{Z}$.
 
 **Proposition 4.2.** If $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$Then:
 
@@ -411,7 +411,7 @@ In particular, if $\gcd(c, m) = 1$We can cancel: $a \equiv b \pmod{m}$.
 $\gcd(a, m) \mid b$. When solutions exist, there are exactly $\gcd(a, m)$ incongruent solutions
 Modulo $m$.
 
-_Proof._ $ax \equiv b \pmod{m}$ is equivalent to $ax - my = b$ for some $y \in \mathbb{{'}Z{}'}$. By
+_Proof._ $ax \equiv b \pmod{m}$ is equivalent to $ax - my = b$ for some $y \in \mathbb{Z}$. By
 Bézout's identity, solutions exist iff $\gcd(a, m) \mid b$. If $d = \gcd(a, m)$ and $x_0$ is one
 Solution, then $x_0 + k(m/d)$ for $k = 0, 1, \ldots, d-1$ gives $d$ incongruent solutions modulo
 $m$. $\blacksquare$
@@ -427,22 +427,22 @@ So $14(-7) \equiv 1 \pmod{33}$Giving $x \equiv -42 \equiv 24 \pmod{33}$. $\black
 
 ### 4.4 Additional Properties of Congruences
 
-**Proposition 4.5.** For any $a, b, m \in \mathbb{{'}Z{}'}$ with $m > 0$:
+**Proposition 4.5.** For any $a, b, m \in \mathbb{Z}$ with $m > 0$:
 
 1. $a \equiv b \pmod{m}$ if and only if $a$ and $b$ leave the same remainder when divided by $m$.
 2. If $a \equiv b \pmod{m}$ and $d \mid m$Then $a \equiv b \pmod{d}$.
 3. If $a \equiv b \pmod{m_i}$ for $i = 1, \ldots, k$Then
-   $a \equiv b \pmod{\mathrm{lcm{}(m_1, \ldots, m_k)}$.
+   $a \equiv b \pmod{\mathrm{lcm(m_1, \ldots, m_k)}$.
 
-_Proof of (1)._ Write $a = mq_1 + r_1$ and $b = mq_2 + r_2$ with $0 \leq r_1, r_2 \lt{} m$. Then
+_Proof of (1)._ Write $a = mq_1 + r_1$ and $b = mq_2 + r_2$ with $0 \leq r_1, r_2 \lt m$. Then
 $a - b = m(q_1 - q_2) + (r_1 - r_2)$. So $m \mid (a - b)$ iff $m \mid (r_1 - r_2)$Which Happens iff
-$r_1 = r_2$ (since $|r_1 - r_2| \lt{} m$). $\blacksquare$
+$r_1 = r_2$ (since $|r_1 - r_2| \lt m$). $\blacksquare$
 
 _Proof of (2)._ $m \mid (a - b)$ and $d \mid m$So $d \mid (a - b)$. $\blacksquare$
 
 _Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$So
-$\mathrm{lcm{}(m_1, \ldots, m_k) \mid (a-b)$ By definition of the lcm. Hence
-$a \equiv b \pmod{\mathrm{lcm{}(m_1, \ldots, m_k)}$. $\blacksquare$
+$\mathrm{lcm(m_1, \ldots, m_k) \mid (a-b)$ By definition of the lcm. Hence
+$a \equiv b \pmod{\mathrm{lcm(m_1, \ldots, m_k)}$. $\blacksquare$
 
 **Proposition 4.6.** If $a \equiv b \pmod{m}$ and $f(x) = c_k x^k + \cdots + c_1 x + c_0$ is a
 Polynomial with integer coefficients, then $f(a) \equiv f(b) \pmod{m}$.
@@ -495,7 +495,7 @@ The last two digits of $7^{1947}$ are $43$. $\blacksquare$
 
 $$(p - 1)! \equiv -1 \pmod{p}$$
 
-_Proof._ ($\Rightarrow$) Suppose $p$ is prime. In $(\mathbb{{'}Z{}'}/p\mathbb{{'}Z{}'})^*$Every
+_Proof._ ($\Rightarrow$) Suppose $p$ is prime. In $(\mathbb{Z}/p\mathbb{Z})^*$Every
 element $a$ has a Unique multiplicative inverse $a^{-1}$. The elements $1$ and $p - 1$ are
 **self-inverse** since $1 \cdot 1 \equiv 1$ and $(p-1)^2 = p^2 - 2p + 1 \equiv 1 \pmod{p}$. For
 $2 \leq a \leq p-2$We have $a \neq a^{-1}$ (if $a^2 \equiv 1$Then $p \mid (a-1)(a+1)$So
@@ -505,9 +505,9 @@ all elements in each pair is $1$ modulo $p$So
 
 $$(p-1)! = 1 \cdot (p-1) \prod_{a=2}^{p-2} a \equiv 1 \cdot (p-1) \cdot 1^{(p-3)/2} \equiv -1 \pmod{p}$$
 
-($\Leftarrow$) If $n \geq 2$ is composite, then $n = ab$ with $1 \lt{} a \leq b \lt{} n$. If
+($\Leftarrow$) If $n \geq 2$ is composite, then $n = ab$ with $1 \lt a \leq b \lt n$. If
 $a \neq b$ Both $a$ and $b$ appear in $(n-1)!$So $n \mid (n-1)!$ and $(n-1)! \equiv 0 \pmod{n}$. If
-$a = b$ (i.e., $n = a^2$), then $n > 4$ implies $a > 2$And both $a$ and $2a \lt{} a^2 = n$ appear in
+$a = b$ (i.e., $n = a^2$), then $n > 4$ implies $a > 2$And both $a$ and $2a \lt a^2 = n$ appear in
 $(n-1)!$So again $(n-1)! \equiv 0 \pmod{n}$. The case $n = 4$ gives
 $3! = 6 \equiv 2 \pmod{4} \neq -1$. $\blacksquare$
 
@@ -585,7 +585,7 @@ The CRT can be extended to systems where the moduli are not necessarily pairwise
 
 **Theorem 5.2 (General CRT).** The system $x \equiv a_i \pmod{m_i}$ for $i = 1, \ldots, k$ has a
 Solution if and only if $a_i \equiv a_j \pmod{\gcd(m_i, m_j)}$ for all $i, j$. When a solution
-Exists, it is unique modulo $\mathrm{lcm{}(m_1, \ldots, m_k)$.
+Exists, it is unique modulo $\mathrm{lcm(m_1, \ldots, m_k)$.
 
 _Proof._ ($\Rightarrow$) If $x \equiv a_i \pmod{m_i}$ and $x \equiv a_j \pmod{m_j}$Then
 $m_i \mid (x - a_i)$ and $m_j \mid (x - a_j)$. Any common divisor of $m_i$ and $m_j$ divides
@@ -610,7 +610,7 @@ $6k \equiv 2 \pmod{10}$. Dividing by $\gcd(6, 10) = 2$: $3k \equiv 1 \pmod{5}$Gi
 $k \equiv 2 \pmod{5}$.
 
 So $k = 5m + 2$And $x = 6(5m + 2) + 3 = 30m + 15$. The solution is $x \equiv 15 \pmod{30}$. Note
-$\mathrm{lcm{}(6, 10) = 30$. $\blacksquare$
+$\mathrm{lcm(6, 10) = 30$. $\blacksquare$
 
 </details>
 
@@ -717,7 +717,7 @@ $7^{222} = (7^8)^{27} \cdot 7^6 \equiv 1^{27} \cdot 7^6 \pmod{15}$. Now
 $7^2 = 49 \equiv 4 \pmod{15}$$7^4 \equiv 16 \equiv 1 \pmod{15}$So
 $7^6 = 7^4 \cdot 7^2 \equiv 1 \cdot 4 = 4 \pmod{15}$. $\blacksquare$
 
-**Problem.** Show that $n^{13} - n$ is divisible by $2730$ for all $n \in \mathbb{{'}Z{}'}$.
+**Problem.** Show that $n^{13} - n$ is divisible by $2730$ for all $n \in \mathbb{Z}$.
 
 <details>
 <summary>Solution</summary>
@@ -727,7 +727,7 @@ $p \in \\{2, 3, 5, 7, 13\\}$.
 
 For $p = 13$: by Fermat, $n^{13} \equiv n \pmod{13}$.
 
-For $p \in \\{2, 3, 5, 7\\}$: by Fermat, $n^p \equiv n \pmod{p}$. Since $p \lt{} 13$By repeated
+For $p \in \\{2, 3, 5, 7\\}$: by Fermat, $n^p \equiv n \pmod{p}$. Since $p \lt 13$By repeated
 Application $n^{13} = n^{qp+r} = (n^p)^q \cdot n^r \equiv n^q \cdot n^r = n^{q+r}$. Iterating gives
 $n^{13} \equiv n \pmod{p}$.
 
@@ -765,19 +765,19 @@ base $2$. $\blacksquare$
 The RSA cryptosystem is a direct application of Euler's theorem.
 
 **Setup.** Choose two large distinct primes $p$ and $q$. Set $n = pq$ and $\phi(n) = (p-1)(q-1)$.
-Choose $e$ with $1 \lt{} e \lt{} \phi(n)$ and $\gcd(e, \phi(n)) = 1$. Compute $d$ such that
+Choose $e$ with $1 \lt e \lt \phi(n)$ and $\gcd(e, \phi(n)) = 1$. Compute $d$ such that
 $ed \equiv 1 \pmod{\phi(n)}$ using the extended Euclidean algorithm.
 
 **Public key:** $(n, e)$. **Private key:** $(n, d)$.
 
-**Encryption:** To send message $m$ ($0 \leq m \lt{} n$), compute $c = m^e \bmod n$.
+**Encryption:** To send message $m$ ($0 \leq m \lt n$), compute $c = m^e \bmod n$.
 
 **Decryption:** Compute $m = c^d \bmod n$.
 
 **Theorem 6.6.** RSA decryption is correct: $c^d \equiv m \pmod{n}$.
 
 _Proof._ Since $ed \equiv 1 \pmod{\phi(n)}$Write $ed = 1 + k\phi(n)$ for some
-$k \in \mathbb{{'}Z{}'}$. If $\gcd(m, n) = 1$Then
+$k \in \mathbb{Z}$. If $\gcd(m, n) = 1$Then
 $c^d \equiv m^{ed} = m^{1 + k\phi(n)} \equiv m \cdot (m^{\phi(n)})^k \equiv m \cdot 1^k \equiv m \pmod{n}$
 by Euler's theorem.
 
@@ -814,31 +814,31 @@ $\blacksquare$
 ### 7.1 The Multiplicative Order
 
 **Definition.** The **multiplicative order** of $a$ modulo $n$ (where $\gcd(a, n) = 1$) is the
-Smallest positive integer $k$ such that $a^k \equiv 1 \pmod{n}$. We write $\mathrm{ord{}_n(a) = k$.
+Smallest positive integer $k$ such that $a^k \equiv 1 \pmod{n}$. We write $\mathrm{ord_n(a) = k$.
 
-**Proposition 7.1.** $\mathrm{ord{}_n(a)$ divides $\phi(n)$.
+**Proposition 7.1.** $\mathrm{ord_n(a)$ divides $\phi(n)$.
 
-**Proposition 7.2.** $a^k \equiv 1 \pmod{n}$ if and only if $\mathrm{ord{}_n(a) \mid k$.
+**Proposition 7.2.** $a^k \equiv 1 \pmod{n}$ if and only if $\mathrm{ord_n(a) \mid k$.
 
-**Proposition 7.3.** If $\mathrm{ord{}_n(a) = k$Then $\mathrm{ord{}_n(a^m) = k / \gcd(k, m)$.
+**Proposition 7.3.** If $\mathrm{ord_n(a) = k$Then $\mathrm{ord_n(a^m) = k / \gcd(k, m)$.
 
 ### 7.2 Primitive Roots
 
-**Definition.** $g$ is a **primitive root modulo $n$** if $\mathrm{ord{}_n(g) = \phi(n)$I.e., $g$
-Generates the multiplicative group $(\mathbb{{'}Z{}'}/n\mathbb{{'}Z{}'})^*$.
+**Definition.** $g$ is a **primitive root modulo $n$** if $\mathrm{ord_n(g) = \phi(n)$I.e., $g$
+Generates the multiplicative group $(\mathbb{Z}/n\mathbb{Z})^*$.
 
 **Theorem 7.4.** A primitive root modulo $n$ exists if and only if $n = 2$$n = 4$$n = p^k$Or
 $n = 2p^k$ where $p$ is an odd prime and $k \geq 1$.
 
-_Intuition._ The multiplicative group $(\mathbb{{'}Z{}'}/n\mathbb{{'}Z{}'})^*$ is cyclic precisely
+_Intuition._ The multiplicative group $(\mathbb{Z}/n\mathbb{Z})^*$ is cyclic precisely
 for these Values of $n$. When the group is not cyclic (e.g., $n = 8$ where
-$(\mathbb{{'}Z{}'}/8\mathbb{{'}Z{}'})^* \cong C_2 \times C_2$), no single element can generate the
+$(\mathbb{Z}/8\mathbb{Z})^* \cong C_2 \times C_2$), no single element can generate the
 entire group.
 
 **Proposition 7.4a.**
-$(\mathbb{{'}Z{}'}/n\mathbb{{'}Z{}'})^* \cong \prod_{i=1}^k (\mathbb{{'}Z{}'}/p_i^{a_i}\mathbb{{'}Z{}'})^*$
+$(\mathbb{Z}/n\mathbb{Z})^* \cong \prod_{i=1}^k (\mathbb{Z}/p_i^{a_i}\mathbb{Z})^*$
 Where $n = \prod p_i^{a_i}$ is the prime factorization. Each factor
-$(\mathbb{{'}Z{}'}/p^a\mathbb{{'}Z{}'})^*$ is cyclic for odd primes $p$.
+$(\mathbb{Z}/p^a\mathbb{Z})^*$ is cyclic for odd primes $p$.
 
 This decomposition explains why primitive roots exist only for the stated values: a product of
 Cyclic groups is cyclic if and only if the orders are pairwise coprime.
@@ -850,13 +850,13 @@ Modulo $n$.
 
 **Theorem 7.6.** Every prime $p$ has a primitive root.
 
-_Proof._ Let $\psi(d)$ denote the number of elements of $(\mathbb{{'}Z{}'}/p\mathbb{{'}Z{}'})^*$ of
+_Proof._ Let $\psi(d)$ denote the number of elements of $(\mathbb{Z}/p\mathbb{Z})^*$ of
 order Exactly $d$. The key facts are:
 
 1. $\psi(d) \leq \phi(d)$ for all $d \mid (p-1)$.
 2. $\sum_{d \mid (p-1)} \psi(d) = p - 1 = \sum_{d \mid (p-1)} \phi(d)$.
 
-If $\psi(d) \lt{} \phi(d)$ for some $d$Then the sum $\sum \psi(d)$ would be strictly less than
+If $\psi(d) \lt \phi(d)$ for some $d$Then the sum $\sum \psi(d)$ would be strictly less than
 $\sum \phi(d) = p - 1$A contradiction. So $\psi(d) = \phi(d)$ for all $d \mid (p-1)$. In Particular,
 $\psi(p - 1) = \phi(p - 1) > 0$So primitive roots exist. $\blacksquare$
 
@@ -865,15 +865,15 @@ $\psi(p - 1) = \phi(p - 1) > 0$So primitive roots exist. $\blacksquare$
 To test whether $g$ is a primitive root modulo $p$ (where $p$ is prime), it suffices to verify
 $g^{(p-1)/q} \not\equiv 1 \pmod{p}$ for every prime divisor $q$ of $p - 1$.
 
-**Proposition 7.7.** Let $p$ be prime and $g \in (\mathbb{{'}Z{}'}/p\mathbb{{'}Z{}'})^*$. Then $g$
+**Proposition 7.7.** Let $p$ be prime and $g \in (\mathbb{Z}/p\mathbb{Z})^*$. Then $g$
 is a primitive Root modulo $p$ if and only if for every prime
 $q \mid (p - 1)$$g^{(p-1)/q} \not\equiv 1 \pmod{p}$.
 
-_Proof._ If $g$ is a primitive root, $\mathrm{ord{}_p(g) = p - 1$. If
+_Proof._ If $g$ is a primitive root, $\mathrm{ord_p(g) = p - 1$. If
 $g^{(p-1)/q} \equiv 1 \pmod{p}$ For some prime $q \mid (p-1)$Then
-$\mathrm{ord{}_p(g) \mid (p-1)/q \lt{} p-1$Contradiction.
+$\mathrm{ord_p(g) \mid (p-1)/q \lt p-1$Contradiction.
 
-Conversely, if $g$ is not a primitive root, let $d = \mathrm{ord{}_p(g) \lt{} p - 1$. Then
+Conversely, if $g$ is not a primitive root, let $d = \mathrm{ord_p(g) \lt p - 1$. Then
 $d \mid (p-1)$ So $(p-1)/d > 1$ has some prime factor $q$Meaning $q \mid (p-1)$ and
 $d \mid (p-1)/q$. Then $g^{(p-1)/q} \equiv 1 \pmod{p}$Contradicting the hypothesis. $\blacksquare$
 
@@ -882,7 +882,7 @@ $d \mid (p-1)/q$. Then $g^{(p-1)/q} \equiv 1 \pmod{p}$Contradicting the hypothes
 <details>
 <summary>Solution</summary>
 
-$\phi(13) = 12$. We need elements of order $12$ in $(\mathbb{{'}Z{}'}/13\mathbb{{'}Z{}'})^*$. The
+$\phi(13) = 12$. We need elements of order $12$ in $(\mathbb{Z}/13\mathbb{Z})^*$. The
 prime divisors of $12$ are $2$ and $3$. We test $g^6$ and $g^4$.
 
 $g = 2$: $2^4 = 16 \equiv 3 \not\equiv 1$$2^6 = 64 \equiv 12 \equiv -1 \not\equiv 1 \pmod{13}$. So
@@ -905,21 +905,21 @@ By Theorem 7.5, there are $\phi(12) = 4$ primitive roots modulo $13$: $2, 6, 7, 
 ### 7.5 Index Calculus
 
 When a primitive root $g$ modulo $p$ is known, every element $a$ of
-$(\mathbb{{'}Z{}'}/p\mathbb{{'}Z{}'})^*$ Can be written uniquely as $a \equiv g^k \pmod{p}$ with
-$0 \leq k \lt{} p - 1$. The exponent $k$ Is called the **index** (or **discrete logarithm**) of $a$
-to base $g$Written $\mathrm{ind{}_g(a) = k$.
+$(\mathbb{Z}/p\mathbb{Z})^*$ Can be written uniquely as $a \equiv g^k \pmod{p}$ with
+$0 \leq k \lt p - 1$. The exponent $k$ Is called the **index** (or **discrete logarithm**) of $a$
+to base $g$Written $\mathrm{ind_g(a) = k$.
 
 **Proposition 7.8 (Properties of indices).** Let $g$ be a primitive root modulo $p$. For all
-$a, b \in (\mathbb{{'}Z{}'}/p\mathbb{{'}Z{}'})^*$:
+$a, b \in (\mathbb{Z}/p\mathbb{Z})^*$:
 
-1. $\mathrm{ind{}_g(ab) \equiv \mathrm{ind{}_g(a) + \mathrm{ind{}_g(b) \pmod{p-1}$.
-2. $\mathrm{ind{}_g(a^k) \equiv k \cdot \mathrm{ind{}_g(a) \pmod{p-1}$.
-3. $\mathrm{ind{}_g(1) = 0$ and $\mathrm{ind{}_g(g) = 1$.
+1. $\mathrm{ind_g(ab) \equiv \mathrm{ind_g(a) + \mathrm{ind_g(b) \pmod{p-1}$.
+2. $\mathrm{ind_g(a^k) \equiv k \cdot \mathrm{ind_g(a) \pmod{p-1}$.
+3. $\mathrm{ind_g(1) = 0$ and $\mathrm{ind_g(g) = 1$.
 
 ### 7.6 The Discrete Logarithm Problem
 
 **Definition.** Given a prime $p$A primitive root $g$ modulo $p$And
-$a \in (\mathbb{{'}Z{}'}/p\mathbb{{'}Z{}'})^*$ The **discrete logarithm problem** (DLP) asks: find
+$a \in (\mathbb{Z}/p\mathbb{Z})^*$ The **discrete logarithm problem** (DLP) asks: find
 $k$ such that $g^k \equiv a \pmod{p}$.
 
 Unlike ordinary logarithms, no polynomial-time algorithm is known for the DLP. The best known
@@ -933,7 +933,7 @@ solving the DLP.
 
 ### 7.7 Worked Example: Index Calculus
 
-**Problem.** Let $g = 2$ be a primitive root modulo $19$. Find $\mathrm{ind{}_2(14) \pmod{19}$.
+**Problem.** Let $g = 2$ be a primitive root modulo $19$. Find $\mathrm{ind_2(14) \pmod{19}$.
 
 <details>
 <summary>Solution</summary>
@@ -950,7 +950,7 @@ $2^{10} \equiv -2 \equiv 17$$2^{11} \equiv -4 \equiv 15$$2^{12} \equiv -8 \equiv
 $2^{13} \equiv -16 \equiv 3$$2^{14} = 6$$2^{15} = 12$$2^{16} = 24 \equiv 5$
 $2^{17} = 10$$2^{18} = 20 \equiv 1$.
 
-From $2^7 = 14 \pmod{19}$We get $\mathrm{ind{}_2(14) = 7$. $\blacksquare$
+From $2^7 = 14 \pmod{19}$We get $\mathrm{ind_2(14) = 7$. $\blacksquare$
 
 </details>
 
@@ -959,10 +959,10 @@ From $2^7 = 14 \pmod{19}$We get $\mathrm{ind{}_2(14) = 7$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Taking indices base $2$: $\mathrm{ind{}_2(6^x) = \mathrm{ind{}_2(11)$.
-$x \cdot \mathrm{ind{}_2(6) \equiv \mathrm{ind{}_2(11) \pmod{18}$.
+Taking indices base $2$: $\mathrm{ind_2(6^x) = \mathrm{ind_2(11)$.
+$x \cdot \mathrm{ind_2(6) \equiv \mathrm{ind_2(11) \pmod{18}$.
 
-From the table: $\mathrm{ind{}_2(6) = 14$ and $\mathrm{ind{}_2(11) = 12$. So
+From the table: $\mathrm{ind_2(6) = 14$ and $\mathrm{ind_2(11) = 12$. So
 $14x \equiv 12 \pmod{18}$.
 
 $\gcd(14, 18) = 2$ and $2 \mid 12$So solutions exist. Divide by $2$: $7x \equiv 6 \pmod{9}$.
@@ -995,7 +995,7 @@ $x \not\equiv 0 \pmod{p}$ (since $p$ is odd). $\blacksquare$
 
 **Theorem 8.2 (Euler's Criterion).** Let $p$ be an odd prime and $\gcd(a, p) = 1$. Then
 
-$$a^{(p-1)/2} \equiv \begin{cases} 1 \pmod{p} & \mathrm{if\ {} a \mathrm{\ is\ a\ QR\ mod\ {} p \\ -1 \pmod{p} & \mathrm{if\ {} a \mathrm{\ is\ a\ QNR\ mod\ {} p \end{cases}$$
+$$a^{(p-1)/2} \equiv \begin{cases} 1 \pmod{p} & \mathrm{if\  a \mathrm{\ is\ a\ QR\ mod\  p \\ -1 \pmod{p} & \mathrm{if\  a \mathrm{\ is\ a\ QNR\ mod\  p \end{cases}$$
 
 _Proof._ By Fermat's little theorem, $a^{p-1} \equiv 1 \pmod{p}$So
 $(a^{(p-1)/2} - 1)(a^{(p-1)/2} + 1) \equiv 0 \pmod{p}$. Thus $a^{(p-1)/2} \equiv \pm 1 \pmod{p}$.
@@ -1011,7 +1011,7 @@ $a^{(p-1)/2} \equiv 1 \pmod{p}$These sets coincide. $\blacksquare$
 
 **Definition.** The **Legendre symbol** is defined by
 
-$$\left(\frac{a}{p}\right) = \begin{cases} 0 & \mathrm{if\ {} p \mid a \\ 1 & \mathrm{if\ {} a \mathrm{\ is\ a\ QR\ mod\ {} p \\ -1 & \mathrm{if\ {} a \mathrm{\ is\ a\ QNR\ mod\ {} p \end{cases}$$
+$$\left(\frac{a}{p}\right) = \begin{cases} 0 & \mathrm{if\  p \mid a \\ 1 & \mathrm{if\  a \mathrm{\ is\ a\ QR\ mod\  p \\ -1 & \mathrm{if\  a \mathrm{\ is\ a\ QNR\ mod\  p \end{cases}$$
 
 **Proposition 8.3.** The Legendre symbol is completely multiplicative:
 $\left(\frac{ab}{p}\right) = \left(\frac{a}{p}\right)\left(\frac{b}{p}\right)$.
@@ -1179,7 +1179,7 @@ A **simple continued fraction** is an expression of the form
 
 $$a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \cdots}}}$$
 
-Where $a_0 \in \mathbb{{'}Z{}'}$ and $a_1, a_2, \ldots \in \mathbb{{'}N{}'}$. We write
+Where $a_0 \in \mathbb{Z}$ and $a_1, a_2, \ldots \in \mathbb{N}$. We write
 $[a_0; a_1, a_2, \ldots]$.
 
 ### 9.2 Computation
@@ -1200,10 +1200,10 @@ The $n$-th **convergent** $p_n/q_n = [a_0; a_1, \ldots, a_n]$ is computed by:
 $$p_{-1} = 1, \quad p_0 = a_0, \quad p_n = a_n p_{n-1} + p_{n-2}$$
 $$q_{-1} = 0, \quad q_0 = 1, \quad q_n = a_n q_{n-1} + q_{n-2}$$
 
-**Theorem 9.1.** $|p_n/q_n - \alpha| \lt{} 1/q_n^2$ for all $n$.
+**Theorem 9.1.** $|p_n/q_n - \alpha| \lt 1/q_n^2$ for all $n$.
 
-**Theorem 9.2 (Best Approximation).** If $|q\alpha - p| \lt{} |q_n \alpha - p_n|$ for
-$q \lt{} q_{n+1}$Then $p/q = p_n/q_n$.
+**Theorem 9.2 (Best Approximation).** If $|q\alpha - p| \lt |q_n \alpha - p_n|$ for
+$q \lt q_{n+1}$Then $p/q = p_n/q_n$.
 
 ### 9.4 Periodic Continued Fractions
 
@@ -1283,9 +1283,9 @@ $x^2 - Dy^2 = 1$.
 
 **Theorem 9.5.** If $p/q$ is a convergent to $\alpha$Then
 
-$$\left|\alpha - \frac{p}{q}\right| \lt{} \frac{1}{q^2}$$
+$$\left|\alpha - \frac{p}{q}\right| \lt \frac{1}{q^2}$$
 
-Furthermore, if $|\alpha - p/q| \lt{} 1/(2q^2)$Then $p/q$ must be a convergent to $\alpha$.
+Furthermore, if $|\alpha - p/q| \lt 1/(2q^2)$Then $p/q$ must be a convergent to $\alpha$.
 
 **Proposition 9.6.** The convergents $p_n/q_n$ satisfy $q_n \geq F_{n+1}$ (the $(n+1)$-th Fibonacci
 Number), so the denominators grow at least exponentially.
@@ -1315,7 +1315,7 @@ _Proof._ This follows directly from Bézout's identity. $\blacksquare$
 **Proposition 10.1a.** If $d = \gcd(a, b)$ and $(x_0, y_0)$ is a particular solution of
 $ax + by = c$ Then all integer solutions are given by
 
-$$x = x_0 + \frac{b}{d} \cdot t, \quad y = y_0 - \frac{a}{d} \cdot t, \quad t \in \mathbb{{'}Z{}'}$$
+$$x = x_0 + \frac{b}{d} \cdot t, \quad y = y_0 - \frac{a}{d} \cdot t, \quad t \in \mathbb{Z}$$
 
 **Problem.** Find all integer solutions to $15x + 21y = 12$.
 
@@ -1329,7 +1329,7 @@ $1 = 5 - 2 \cdot 2 = 5 - 2(7 - 5) = 3 \cdot 5 - 2 \cdot 7$.
 
 Thus $5(3) + 7(-2) = 1$And $5(12) + 7(-8) = 4$. A particular solution: $(x_0, y_0) = (12, -8)$.
 
-All solutions: $x = 12 + 7t$$y = -8 - 5t$For $t \in \mathbb{{'}Z{}'}$. $\blacksquare$
+All solutions: $x = 12 + 7t$$y = -8 - 5t$For $t \in \mathbb{Z}$. $\blacksquare$
 
 </details>
 
@@ -1375,8 +1375,8 @@ Non-trivial integer solutions. If $(x_1, y_1)$ is the smallest positive solution
 Are given by $(x_n + y_n\sqrt{D}) = (x_1 + y_1\sqrt{D})^n$.
 
 _Proof._ The existence of a non-trivial solution follows from Dirichlet's unit theorem applied to
-$\mathbb{{'}Z{}'}[\sqrt{D}]$. The general solution follows from the fact that the group of units of
-norm $1$ in $\mathbb{{'}Z{}'}[\sqrt{D}]$ is cyclic and generated by the fundamental unit.
+$\mathbb{Z}[\sqrt{D}]$. The general solution follows from the fact that the group of units of
+norm $1$ in $\mathbb{Z}[\sqrt{D}]$ is cyclic and generated by the fundamental unit.
 $\blacksquare$
 
 **Problem.** Find all solutions to $x^2 - 2y^2 = 1$.
@@ -1428,7 +1428,7 @@ Fermat's last theorem for $n = 4$).
 ### 10.5 The Generalized Riemann Hypothesis
 
 **Conjecture (Generalized Riemann Hypothesis).** All non-trivial zeros of the Dirichlet $L$-function
-$L(s, \chi)$ for any Dirichlet character $\chi$ lie on the line $\mathrm{Re{}(s) = 1/2$.
+$L(s, \chi)$ for any Dirichlet character $\chi$ lie on the line $\mathrm{Re(s) = 1/2$.
 
 This is one of the most important open problems in mathematics. It has profound implications for the
 Distribution of primes in arithmetic progressions and the error terms in various number-theoretic
@@ -1439,27 +1439,27 @@ Estimates.
 ### 11.1 The Gaussian Integers
 
 **Definition.** The **Gaussian integers** are
-$\mathbb{{'}Z{}'}[i] = \\{a + bi : a, b \in \mathbb{{'}Z{}'}\\}$ Where $i = \sqrt{-1}$. They form a
+$\mathbb{Z}[i] = \\{a + bi : a, b \in \mathbb{Z}\\}$ Where $i = \sqrt{-1}$. They form a
 commutative ring with unity under the usual addition and Multiplication of complex numbers.
 
 ### 11.2 Norm and Units
 
-The **norm** of $\alpha = a + bi \in \mathbb{{'}Z{}'}[i]$ is
+The **norm** of $\alpha = a + bi \in \mathbb{Z}[i]$ is
 $N(\alpha) = a^2 + b^2 = \alpha \bar{\alpha}$.
 
 **Proposition 11.1.** $N(\alpha\beta) = N(\alpha)N(\beta)$.
 
-**Proposition 11.2.** The units of $\mathbb{{'}Z{}'}[i]$ are $\\{1, -1, i, -i\\}$ (exactly those
+**Proposition 11.2.** The units of $\mathbb{Z}[i]$ are $\\{1, -1, i, -i\\}$ (exactly those
 with norm $1$).
 
 ### 11.3 Primes in Gaussian Integers
 
-**Theorem 11.3.** An element $\pi \in \mathbb{{'}Z{}'}[i]$ is prime if and only if one of the
+**Theorem 11.3.** An element $\pi \in \mathbb{Z}[i]$ is prime if and only if one of the
 following Holds:
 
 1. $\pi = u(1 + i)$ for some unit $u$ (up to associates, $\pi = 1 + i$With norm $2$).
 2. $\pi = u(a + bi)$ where $a^2 + b^2 = p$ for a prime $p \equiv 1 \pmod{4}$.
-3. $\pi = up$ where $p \equiv 3 \pmod{4}$ is a prime in $\mathbb{{'}Z{}'}$.
+3. $\pi = up$ where $p \equiv 3 \pmod{4}$ is a prime in $\mathbb{Z}$.
 
 _Proof._ If $N(\pi) = p$ where $p \equiv 1 \pmod{4}$ is prime, then $\pi$ is Gaussian prime. If
 $p \equiv 3 \pmod{4}$Then $p$ is Gaussian prime (since $p = (a + bi)(c + di)$ would give
@@ -1471,38 +1471,38 @@ Two squares if and only if $p = 2$ or $p \equiv 1 \pmod{4}$.
 
 _Proof._ For $p \equiv 1 \pmod{4}$: by quadratic reciprocity, $-1$ is a QR mod $p$So
 $a^2 \equiv -1 \pmod{p}$ for some $a$. Then $p \mid (a^2 + 1) = (a + i)(a - i)$ in
-$\mathbb{{'}Z{}'}[i]$. If $p$ were prime in $\mathbb{{'}Z{}'}[i]$It would divide $a + i$ or
-$a - i$But neither quotient is in $\mathbb{{'}Z{}'}[i]$. So $p = \alpha\beta$ with neither a unit,
+$\mathbb{Z}[i]$. If $p$ were prime in $\mathbb{Z}[i]$It would divide $a + i$ or
+$a - i$But neither quotient is in $\mathbb{Z}[i]$. So $p = \alpha\beta$ with neither a unit,
 giving $p^2 = N(p) = N(\alpha)N(\beta)$ So $N(\alpha) = N(\beta) = p$I.e., $p = a^2 + b^2$.
 $\blacksquare$
 
 ### 11.4 The Gaussian Integers Form a UFD
 
-**Theorem 11.5.** $\mathbb{{'}Z{}'}[i]$ is a Euclidean domain (with norm as the Euclidean function),
+**Theorem 11.5.** $\mathbb{Z}[i]$ is a Euclidean domain (with norm as the Euclidean function),
 hence A PID, hence a UFD.
 
-_Proof._ For $\alpha, \beta \in \mathbb{{'}Z{}'}[i]$ with $\beta \neq 0$Write
-$\alpha/\beta = s + ti$ With $s, t \in \mathbb{{'}Q{}'}$. Choose $m, n \in \mathbb{{'}Z{}'}$ with
+_Proof._ For $\alpha, \beta \in \mathbb{Z}[i]$ with $\beta \neq 0$Write
+$\alpha/\beta = s + ti$ With $s, t \in \mathbb{Q}$. Choose $m, n \in \mathbb{Z}$ with
 $|s - m| \leq 1/2$ and $|t - n| \leq 1/2$. Set $q = m + ni$ and $r = \alpha - \beta q$. Then
-$r \in \mathbb{{'}Z{}'}[i]$ and
-$N(r) = N(\beta) \cdot N(\alpha/\beta - q) = N(\beta)((s-m)^2 + (t-n)^2) \leq N(\beta) \cdot 1/2 \lt{} N(\beta)$.
-So $\mathbb{{'}Z{}'}[i]$ is Euclidean. $\blacksquare$
+$r \in \mathbb{Z}[i]$ and
+$N(r) = N(\beta) \cdot N(\alpha/\beta - q) = N(\beta)((s-m)^2 + (t-n)^2) \leq N(\beta) \cdot 1/2 \lt N(\beta)$.
+So $\mathbb{Z}[i]$ is Euclidean. $\blacksquare$
 
 ### 11.5 Worked Example
 
-**Problem.** Factor $5$ in $\mathbb{{'}Z{}'}[i]$.
+**Problem.** Factor $5$ in $\mathbb{Z}[i]$.
 
 _Solution._ $N(5) = 25$. We need $a^2 + b^2 = 5$Which gives $(a, b) = (1, 2)$ or $(2, 1)$. So
 $5 = (1 + 2i)(1 - 2i) = (2 + i)(2 - i)$. Note that $1 + 2i$ and $2 - i$ differ by a unit:
 $1 + 2i = -i(2 - i)$. So up to associates, $5 = (2 + i)(2 - i)$. $\blacksquare$
 
-**Problem.** Factor $13$ in $\mathbb{{'}Z{}'}[i]$ and verify that $13 = a^2 + b^2$.
+**Problem.** Factor $13$ in $\mathbb{Z}[i]$ and verify that $13 = a^2 + b^2$.
 
 <details>
 <summary>Solution</summary>
 
-Since $13 \equiv 1 \pmod{4}$It factors in $\mathbb{{'}Z{}'}[i]$. We need $a^2 + b^2 = 13$ with
-$a, b \in \mathbb{{'}Z{}'}$. Trying: $a^2 \leq 13$So $a \in \\{0, 1, 2, 3\\}$. $a = 2$:
+Since $13 \equiv 1 \pmod{4}$It factors in $\mathbb{Z}[i]$. We need $a^2 + b^2 = 13$ with
+$a, b \in \mathbb{Z}$. Trying: $a^2 \leq 13$So $a \in \\{0, 1, 2, 3\\}$. $a = 2$:
 $b^2 = 9$$b = 3$. So $13 = 2^2 + 3^2 = (2 + 3i)(2 - 3i)$.
 
 Verification: $(2 + 3i)(2 - 3i) = 4 + 9 = 13$. Both $2 + 3i$ and $2 - 3i$ are Gaussian primes Since
@@ -1516,9 +1516,9 @@ $N(2 + 3i) = 13$ is prime. $\blacksquare$
 some Unit $u \in \\{1, -1, i, -i\\}$. Associates have the same norm.
 
 **Proposition 11.6.** A Gaussian integer $\alpha$ is irreducible if and only if $N(\alpha)$ is
-either A prime in $\mathbb{{'}Z{}'}$ or the square of a prime in $\mathbb{{'}Z{}'}$.
+either A prime in $\mathbb{Z}$ or the square of a prime in $\mathbb{Z}$.
 
-_Proof._ If $N(\alpha) = p$ (prime in $\mathbb{{'}Z{}'}$) and $\alpha = \beta\gamma$Then
+_Proof._ If $N(\alpha) = p$ (prime in $\mathbb{Z}$) and $\alpha = \beta\gamma$Then
 $N(\alpha) = N(\beta)N(\gamma) = p$So one of $N(\beta), N(\gamma)$ equals $1$Making that Factor a
 unit. Conversely, if $\alpha$ is irreducible, then $N(\alpha)$ has no nontrivial Factorizations
 compatible with factorizations of $\alpha$. $\blacksquare$
@@ -1546,13 +1546,13 @@ $2 + 5i$: $N(2 + 5i) = 4 + 25 = 29$Which is prime. So $2 + 5i$ is **irreducible*
 
 ### 11.7 Division in Gaussian Integers
 
-**Proposition 11.7.** If $\alpha, \beta \in \mathbb{{'}Z{}'}[i]$ with $\beta \neq 0$Then there exist
-$\kappa, \rho \in \mathbb{{'}Z{}'}[i]$ such that $\alpha = \beta\kappa + \rho$ with
-$N(\rho) \lt{} N(\beta)$.
+**Proposition 11.7.** If $\alpha, \beta \in \mathbb{Z}[i]$ with $\beta \neq 0$Then there exist
+$\kappa, \rho \in \mathbb{Z}[i]$ such that $\alpha = \beta\kappa + \rho$ with
+$N(\rho) \lt N(\beta)$.
 
-This is the Euclidean algorithm for $\mathbb{{'}Z{}'}[i]$ (proved in Theorem 11.5).
+This is the Euclidean algorithm for $\mathbb{Z}[i]$ (proved in Theorem 11.5).
 
-**Problem.** Divide $11 + 3i$ by $4 - i$ in $\mathbb{{'}Z{}'}[i]$Finding quotient and remainder.
+**Problem.** Divide $11 + 3i$ by $4 - i$ in $\mathbb{Z}[i]$Finding quotient and remainder.
 
 <details>
 <summary>Solution</summary>
@@ -1563,7 +1563,7 @@ Round: $\kappa = 2 + 1i = 2 + i$.
 
 $\rho = (11 + 3i) - (4 - i)(2 + i) = (11 + 3i) - (8 + 4i - 2i - i^2) = (11 + 3i) - (9 + 2i) = 2 + i$.
 
-Check: $N(\rho) = N(2 + i) = 5 \lt{} N(4 - i) = 17$. $\blacksquare$
+Check: $N(\rho) = N(2 + i) = 5 \lt N(4 - i) = 17$. $\blacksquare$
 
 </details>
 
@@ -1571,7 +1571,7 @@ Check: $N(\rho) = N(2 + i) = 5 \lt{} N(4 - i) = 17$. $\blacksquare$
 
 ### 12.1 Multiplicative Functions
 
-**Definition.** An arithmetic function $f \colon \mathbb{{'}N{}'} \to \mathbb{{'}C{}'}$ is
+**Definition.** An arithmetic function $f \colon \mathbb{N} \to \mathbb{C}$ is
 **multiplicative** if $f(mn) = f(m)f(n)$ whenever $\gcd(m, n) = 1$. It is **completely
 multiplicative** if $f(mn) = f(m)f(n)$ for all $m, n$.
 
@@ -1613,7 +1613,7 @@ $\blacksquare$
 
 ### 12.3 The Möbius Function
 
-**Definition.** The **Möbius function** $\mu \colon \mathbb{{'}N{}'} \to \\{-1, 0, 1\\}$ is defined
+**Definition.** The **Möbius function** $\mu \colon \mathbb{N} \to \\{-1, 0, 1\\}$ is defined
 by:
 
 - $\mu(1) = 1$.
@@ -1644,8 +1644,8 @@ $$(f * g)(n) = \sum_{d \mid n} f(d) \cdot g\!\left(\frac{n}{d}\right)$$
 3. **Identity element:** The function
    $\varepsilon(n) = \begin{cases} 1 & n = 1 \\ 0 & n > 1 \end{cases}$ satisfies
    $f * \varepsilon = f$.
-4. **Möbius inversion:** $\mu$ is the convolution inverse of $\mathbf{{'}1{}'}$ (where
-   $\mathbf{{'}1{}'}(n) = 1$ for all $n$), i.e., $\mathbf{{'}1{}'} * \mu = \varepsilon$.
+4. **Möbius inversion:** $\mu$ is the convolution inverse of $\mathbf{1}$ (where
+   $\mathbf{1}(n) = 1$ for all $n$), i.e., $\mathbf{1} * \mu = \varepsilon$.
 
 _Proof of (1)._ $(f * g)(n) = \sum_{d \mid n} f(d)g(n/d)$. Setting $e = n/d$This equals
 $\sum_{e \mid n} f(n/e)g(e) = (g * f)(n)$. $\blacksquare$
@@ -1656,8 +1656,8 @@ $\sum_{e \mid n} f(n/e)g(e) = (g * f)(n)$. $\blacksquare$
 
 $$g(n) = \sum_{d \mid n} \mu(d) f(n/d)$$
 
-_Proof._ In terms of Dirichlet convolution: $f = g * \mathbf{{'}1{}'}$So
-$f * \mu = (g * \mathbf{{'}1{}'}) * \mu = g * (\mathbf{{'}1{}'} * \mu) = g * \varepsilon = g$. The
+_Proof._ In terms of Dirichlet convolution: $f = g * \mathbf{1}$So
+$f * \mu = (g * \mathbf{1}) * \mu = g * (\mathbf{1} * \mu) = g * \varepsilon = g$. The
 explicit form Follows by writing out the convolution:
 $\sum_{d \mid n} \mu(d) f(n/d) = \sum_{d \mid n} \mu(d) \sum_{e \mid (n/d)} g(e) = \sum_{e \mid n} g(e) \sum_{d \mid (n/e)} \mu(d)$.
 The inner sum is $1$ if $e = n$ and $0$ otherwise, so only $g(n)$ remains. $\blacksquare$
@@ -1766,17 +1766,17 @@ later explained by Deligne's proof of the Weil conjectures.
 
 **Theorem 13.1 (Wilson's Theorem).** $p$ is prime if and only if $(p - 1)! \equiv -1 \pmod{p}$.
 
-_Proof._ If $p$ is prime: in $\mathbb{{'}Z{}'}/p\mathbb{{'}Z{}'}$Each element pairs with its
+_Proof._ If $p$ is prime: in $\mathbb{Z}/p\mathbb{Z}$Each element pairs with its
 inverse. The only Self-inverse elements are $1$ and $p - 1$. So
 $(p-1)! \equiv 1 \cdot (p-1) \equiv -1 \pmod{p}$. Conversely, if $n$ is composite and $n > 4$Then
 $(n-1)! \equiv 0 \pmod{n}$ since $n$ has a proper Factor appearing in $(n-1)!$. $\blacksquare$
 
-### 13.2 The Ring $\mathbb{{'}Z{}'}/n\mathbb{{'}Z{}'}$
+### 13.2 The Ring $\mathbb{Z}/n\mathbb{Z}$
 
-**Theorem 13.2.** The ring $\mathbb{{'}Z{}'}/n\mathbb{{'}Z{}'}$ is a field if and only if $n$ is
+**Theorem 13.2.** The ring $\mathbb{Z}/n\mathbb{Z}$ is a field if and only if $n$ is
 prime.
 
-**Proposition 13.3.** $(\mathbb{{'}Z{}'}/n\mathbb{{'}Z{}'})^*$ has order $\phi(n)$ and is a group
+**Proposition 13.3.** $(\mathbb{Z}/n\mathbb{Z})^*$ has order $\phi(n)$ and is a group
 under Multiplication.
 
 ### 13.3 Dirichlet's Theorem on Primes in Arithmetic Progressions
@@ -1809,7 +1809,7 @@ $by = n - ax \geq 0$So $y \geq 0$. Thus all $n \geq (b-1)a = ab - a$ are represe
 To show $ab - a - b$ is not representable: if $ab - a - b = ax + by$ with $x, y \geq 0$Then
 $ab = a(x+1) + b(y+1)$So $b \mid a(x+1)$Hence $b \mid (x+1)$ (since $\gcd(a,b) = 1$). So
 $x + 1 \geq b$Giving $ax \geq a(b-1) = ab - a$. Then
-$by = ab - a - b - ax \leq ab - a - b - (ab - a) = -b \lt{} 0$ Contradicting $y \geq 0$.
+$by = ab - a - b - ax \leq ab - a - b - (ab - a) = -b \lt 0$ Contradicting $y \geq 0$.
 $\blacksquare$
 
 **Problem.** What is the largest amount of postage that cannot be made using 6-cent and 11-cent
@@ -1836,7 +1836,7 @@ $a^{\lambda(n)} \equiv 1 \pmod{n}$ for all $a$ with $\gcd(a, n) = 1$.
 
 For $n = p_1^{a_1} \cdots p_k^{a_k}$:
 
-$$\lambda(n) = \mathrm{lcm{}\!\left(\lambda(p_1^{a_1}), \ldots, \lambda(p_k^{a_k})\right)$$
+$$\lambda(n) = \mathrm{lcm\!\left(\lambda(p_1^{a_1}), \ldots, \lambda(p_k^{a_k})\right)$$
 
 Where $\lambda(2) = 1$$\lambda(4) = 2$$\lambda(2^k) = 2^{k-2}$ for $k \geq 3$And
 $\lambda(p^k) = (p-1)p^{k-1}$ for odd primes $p$.
@@ -1845,7 +1845,7 @@ $\lambda(p^k) = (p-1)p^{k-1}$ for odd primes $p$.
 precisely When $n = 1, 2, 4$$n = p^k$Or $n = 2p^k$ (where $p$ is an odd prime).
 
 _Intuition._ The Carmichael function gives the **exponent** of the group
-$(\mathbb{{'}Z{}'}/n\mathbb{{'}Z{}'})^*$ Which equals the lcm of the orders of all elements. Euler's
+$(\mathbb{Z}/n\mathbb{Z})^*$ Which equals the lcm of the orders of all elements. Euler's
 totient $\phi(n)$ gives the order of The group. The exponent always divides the order, with equality
 exactly when the group is cyclic (i.e., when a primitive root exists).
 
@@ -1856,7 +1856,7 @@ $a^{n-1} \equiv 1 \pmod{n}$ for all $\gcd(a, n) = 1$) if and only if:
 2. For every prime $p \mid n$$(p - 1) \mid (n - 1)$.
 
 _Proof._ If $n$ is squarefree with $n = p_1 \cdots p_k$Then
-$\lambda(n) = \mathrm{lcm{}(p_1 - 1, \ldots, p_k - 1)$. We need $\lambda(n) \mid (n - 1)$Which is
+$\lambda(n) = \mathrm{lcm(p_1 - 1, \ldots, p_k - 1)$. We need $\lambda(n) \mid (n - 1)$Which is
 equivalent to each $(p_i - 1) \mid (n - 1)$. $\blacksquare$
 
 **Example.** $561 = 3 \cdot 11 \cdot 17$. Check: $3 - 1 = 2 \mid 560$$11 - 1 = 10 \mid 560$
@@ -1914,20 +1914,20 @@ Modular forms, Galois representations).
 also prime.
 
 The largest known twin prime pair (as of 2026) contains numbers with over 400,000 digits. In 2013,
-Yitang Zhang proved that there exists some constant $N \lt{} 7 \times 10^7$ such that infinitely
+Yitang Zhang proved that there exists some constant $N \lt 7 \times 10^7$ such that infinitely
 many Prime pairs $(p, p + N)$ exist. This bound has since been improved to $N \leq 246$ by the
 Polymath project.
 
 **Theorem 14.1a (Brun, 1919).** The sum of the reciprocals of the twin primes converges:
 
-$$\sum_{\substack{p \mathrm{\ prime{} \\ p+2 \mathrm{\ prime{}}} \left(\frac{1}{p} + \frac{1}{p+2}\right) \lt{} \infty$$
+$$\sum_{\substack{p \mathrm{\ prime \\ p+2 \mathrm{\ prime}} \left(\frac{1}{p} + \frac{1}{p+2}\right) \lt \infty$$
 
 This is known as **Brun's theorem**. It establishes that the twin primes form a "thin" set, In
 contrast to the full set of primes (whose reciprocal sum diverges by Euler).
 
-### 14.2 The Ring $\mathbb{{'}Z{}'}[\sqrt{-5}]$
+### 14.2 The Ring $\mathbb{Z}[\sqrt{-5}]$
 
-**Example.** In $\mathbb{{'}Z{}'}[\sqrt{-5}]$Unique factorization fails:
+**Example.** In $\mathbb{Z}[\sqrt{-5}]$Unique factorization fails:
 
 $$6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})$$
 
@@ -1938,13 +1938,13 @@ Theory.
 ### 14.3 Quadratic Forms
 
 **Definition.** A **binary quadratic form** is $Q(x, y) = ax^2 + bxy + cy^2$ with
-$a, b, c \in \mathbb{{'}Z{}'}$. Its **discriminant** is $D = b^2 - 4ac$.
+$a, b, c \in \mathbb{Z}$. Its **discriminant** is $D = b^2 - 4ac$.
 
 Two forms are **equivalent** if one can be obtained from the other by a change of variables
 $(x, y) \mapsto (px + qy, rx + sy)$ with $ps - qr = 1$.
 
 **Theorem 14.2 (Gauss).** The number of equivalence classes of binary quadratic forms of
-Discriminant $D \lt{} 0$ is finite. The class number $h(D)$ is 1 precisely for
+Discriminant $D \lt 0$ is finite. The class number $h(D)$ is 1 precisely for
 $D \in \{-3, -4, -7, -8, -11, -19, -43, -67, -163\}$.
 
 _Remark._ The fact that $-163$ is the largest such $D$ was conjectured by Gauss and proved by
@@ -1952,14 +1952,14 @@ Heegner in 1952 (with later simplified proofs by Stark and Baker). This is the c
 number 1 problem**.
 
 **Proposition 14.2a.** A binary quadratic form $Q(x, y) = ax^2 + bxy + cy^2$ of discriminant
-$D \lt{} 0$ represents $n$ if and only if $D$ is a quadratic residue modulo $4n$.
+$D \lt 0$ represents $n$ if and only if $D$ is a quadratic residue modulo $4n$.
 
 ### 14.4 The Class Number and Unique Factorization
 
-The **class group** of a quadratic field $\mathbb{{'}Q{}'}(\sqrt{D})$ measures the failure of unique
+The **class group** of a quadratic field $\mathbb{Q}(\sqrt{D})$ measures the failure of unique
 Factorization in its ring of integers. The **class number** $h(D)$ is the order of this group.
 
-**Theorem 14.3.** Unique factorization holds in the ring of integers of $\mathbb{{'}Q{}'}(\sqrt{D})$
+**Theorem 14.3.** Unique factorization holds in the ring of integers of $\mathbb{Q}(\sqrt{D})$
 If and only if $h(D) = 1$.
 
 This connects the algebraic question of unique factorization to the analytic properties of the
@@ -2004,9 +2004,9 @@ Since $L_3 \equiv 0 \pmod{31}$$M_5 = 31$ is prime. $\blacksquare$
 **Conjecture (Masser--Oesterlé, 1985).** For every $\varepsilon > 0$There exists $K_\varepsilon > 0$
 Such that for all coprime positive integers $a, b, c$ with $a + b = c$:
 
-$$c \lt{} K_\varepsilon \cdot \mathrm{rad{}(abc)^{1 + \varepsilon}$$
+$$c \lt K_\varepsilon \cdot \mathrm{rad(abc)^{1 + \varepsilon}$$
 
-Where $\mathrm{rad{}(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct
+Where $\mathrm{rad(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct
 prime Factors).
 
 The abc conjecture is one of the most important open problems in number theory. It implies:
@@ -2018,9 +2018,9 @@ The abc conjecture is one of the most important open problems in number theory. 
 
 ### 14.7 The Collatz Conjecture
 
-**Conjecture (Collatz, 1937).** Define $T \colon \mathbb{{'}N{}'} \to \mathbb{{'}N{}'}$ by
+**Conjecture (Collatz, 1937).** Define $T \colon \mathbb{N} \to \mathbb{N}$ by
 
-$$T(n) = \begin{cases} n/2 & n \mathrm{\ even{} \\ 3n + 1 & n \mathrm{\ odd{} \end{cases}$$
+$$T(n) = \begin{cases} n/2 & n \mathrm{\ even \\ 3n + 1 & n \mathrm{\ odd \end{cases}$$
 
 For every positive integer $n$The sequence $n, T(n), T(T(n)), \ldots$ eventually reaches $1$.
 
@@ -2031,7 +2031,7 @@ For all starting values up to at least $2^{68}$But no general proof exists.
 
 **Problem.** Determine all representations of $n = 7$ as a sum of two squares.
 
-_Solution._ We need $a^2 + b^2 = 7$ with $a, b \in \mathbb{{'}Z{}'}$. Checking: $a^2 \leq 7$So
+_Solution._ We need $a^2 + b^2 = 7$ with $a, b \in \mathbb{Z}$. Checking: $a^2 \leq 7$So
 $a \in \\{0, 1, 2\\}$. For $a = 0$: $b^2 = 7$ (no). For $a = 1$: $b^2 = 6$ (no). For $a = 2$:
 $b^2 = 3$ (no). By symmetry, $a = -1, -2$ give the same. So $7$ cannot be written as a sum of two
 Squares.
@@ -2077,8 +2077,8 @@ $x^2 \equiv 2 \pmod{15}$ has no solution (checking mod $3$: $x^2 \equiv 2 \pmod{
 $a^{p-1} \equiv 1 \pmod{p}$ only when $\gcd(a, p) = 1$. The correct form for all $a$ is
 $a^p \equiv a \pmod{p}$. :::
 
-:::caution Common Pitfall Not every prime in $\mathbb{{'}Z{}'}$ remains prime in
-$\mathbb{{'}Z{}'}[i]$. Only Primes $p \equiv 3 \pmod{4}$ remain prime in $\mathbb{{'}Z{}'}[i]$.
+:::caution Common Pitfall Not every prime in $\mathbb{Z}$ remains prime in
+$\mathbb{Z}[i]$. Only Primes $p \equiv 3 \pmod{4}$ remain prime in $\mathbb{Z}[i]$.
 Primes $p \equiv 1 \pmod{4}$ factor as $p = (a + bi)(a - bi)$And $2 = (1 + i)^2 \cdot (-i)$. :::
 
 :::caution Common Pitfall The Euclidean algorithm computes $\gcd(a, b)$ for positive integers. When
@@ -2094,7 +2094,7 @@ Exists only for $n = 2$$n = 4$$n = p^k$Or $n = 2p^k$ where $p$ is an odd prime. 
 is no primitive root modulo $8$ or modulo $15$. :::
 
 :::caution Common Pitfall In the division algorithm $a = bq + r$The remainder satisfies
-$0 \leq r \lt{} b$ when $b > 0$. When $a$ is negative, the quotient $q$ is also negative (or zero).
+$0 \leq r \lt b$ when $b > 0$. When $a$ is negative, the quotient $q$ is also negative (or zero).
 For example, $-17 = 5 \cdot (-4) + 3$Not $-17 = 5 \cdot (-3) + (-2)$. :::
 
 :::caution Common Pitfall The Möbius function $\mu(n) = 0$ when $n$ has a repeated prime factor.
@@ -2109,7 +2109,7 @@ factors of $n$ separately. :::
 
 ### Problem 1 (Division Algorithm)
 
-Apply the division algorithm to write $-1000 = 37q + r$ with $0 \leq r \lt{} 37$. Find $q$ and $r$.
+Apply the division algorithm to write $-1000 = 37q + r$ with $0 \leq r \lt 37$. Find $q$ and $r$.
 
 <details>
 <summary>Solution</summary>
@@ -2123,15 +2123,15 @@ _If you get this wrong, revise:_ Section 1.1.
 
 ### Problem 2 (GCD and LCM)
 
-Compute $\gcd(1071, 462)$ and $\mathrm{lcm{}(1071, 462)$. Verify the identity
-$\gcd(a, b) \cdot \mathrm{lcm{}(a, b) = ab$.
+Compute $\gcd(1071, 462)$ and $\mathrm{lcm(1071, 462)$. Verify the identity
+$\gcd(a, b) \cdot \mathrm{lcm(a, b) = ab$.
 
 <details>
 <summary>Solution</summary>
 
 $1071 = 2 \cdot 462 + 147$$462 = 3 \cdot 147 + 21$$147 = 7 \cdot 21 + 0$. So $\gcd(1071, 462) = 21$.
 
-$\mathrm{lcm{}(1071, 462) = 1071 \cdot 462 / 21 = 1071 \cdot 22 = 23562$.
+$\mathrm{lcm(1071, 462) = 1071 \cdot 462 / 21 = 1071 \cdot 22 = 23562$.
 
 Check: $21 \cdot 23562 = 494802 = 1071 \cdot 462$. $\blacksquare$
 
@@ -2161,7 +2161,7 @@ _If you get this wrong, revise:_ Section 2.3.
 
 ### Problem 4 (Bézout's Identity)
 
-Prove that $\gcd(a, b) = 1$ if and only if there exist $x, y \in \mathbb{{'}Z{}'}$ with
+Prove that $\gcd(a, b) = 1$ if and only if there exist $x, y \in \mathbb{Z}$ with
 $ax + by = 1$.
 
 <details>
@@ -2372,12 +2372,12 @@ Find the multiplicative order of $2$ modulo $11$.
 <details>
 <summary>Solution</summary>
 
-$\phi(11) = 10$So $\mathrm{ord{}_{11}(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
+$\phi(11) = 10$So $\mathrm{ord_{11}(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
 
 $2^1 = 2 \not\equiv 1 \pmod{11}$. $2^2 = 4 \not\equiv 1 \pmod{11}$.
 $2^5 = 32 \equiv 10 \equiv -1 \not\equiv 1 \pmod{11}$. $2^{10} \equiv 1 \pmod{11}$ by Fermat.
 
-So $\mathrm{ord{}_{11}(2) = 10$Meaning $2$ is a primitive root modulo $11$. $\blacksquare$
+So $\mathrm{ord_{11}(2) = 10$Meaning $2$ is a primitive root modulo $11$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.1.
 
@@ -2458,7 +2458,7 @@ _If you get this wrong, revise:_ Section 8.6 (Second Supplement).
 ### Problem 19 (Continued Fractions)
 
 Find the continued fraction expansion of $e = [2; 1, 2, 1, 1, 4, 1, 1, 6, 1, \ldots]$. Compute the
-convergent $p_4/q_4$ and verify $|p_4/q_4 - e| \lt{} 1/q_4^2$.
+convergent $p_4/q_4$ and verify $|p_4/q_4 - e| \lt 1/q_4^2$.
 
 <details>
 <summary>Solution</summary>
@@ -2475,7 +2475,7 @@ $p_4 = 1 \cdot 11 + 8 = 19$$q_4 = 1 \cdot 4 + 3 = 7$.
 $p_4/q_4 = 19/7 \approx 2.714\ldots$
 
 $e \approx 2.718\ldots$So $|e - 19/7| \approx 0.004$. Check: $1/q_4^2 = 1/49 \approx 0.020$. Indeed
-$0.004 \lt{} 0.020$. $\blacksquare$
+$0.004 \lt 0.020$. $\blacksquare$
 
 _If you get this wrong, revise:_ Sections 9.3 and 9.7.
 
@@ -2488,14 +2488,14 @@ Let $f(n) = \sum_{d \mid n} \sigma(d)$. Find a closed-form expression for $f(n)$
 <details>
 <summary>Solution</summary>
 
-We have $f = \sigma * \mathbf{{'}1{}'}$. We know $\sigma = \mathrm{id{} * \mathbf{{'}1{}'}$ where
-$\mathrm{id{}(n) = n$. So
-$f = (\mathrm{id{} * \mathbf{{'}1{}'}) * \mathbf{{'}1{}'} = \mathrm{id{} * (\mathbf{{'}1{}'} * \mathbf{{'}1{}'})$.
+We have $f = \sigma * \mathbf{1}$. We know $\sigma = \mathrm{id * \mathbf{1}$ where
+$\mathrm{id(n) = n$. So
+$f = (\mathrm{id * \mathbf{1}) * \mathbf{1} = \mathrm{id * (\mathbf{1} * \mathbf{1})$.
 
-Now $(\mathbf{{'}1{}'} * \mathbf{{'}1{}'})(n) = \sum_{d \mid n} 1 \cdot 1 = \tau(n)$.
+Now $(\mathbf{1} * \mathbf{1})(n) = \sum_{d \mid n} 1 \cdot 1 = \tau(n)$.
 
 So $f(n) = \sum_{d \mid n} d \cdot \tau(n/d)$. This is the Dirichlet convolution
-$\mathrm{id{} * \tau$.
+$\mathrm{id * \tau$.
 
 For example, $f(6) = \sigma(1) + \sigma(2) + \sigma(3) + \sigma(6) = 1 + 3 + 4 + 12 = 20$. Check:
 $\sum_{d \mid 6} d \cdot \tau(6/d) = 1 \cdot \tau(6) + 2 \cdot \tau(3) + 3 \cdot \tau(2) + 6 \cdot \tau(1) = 1 \cdot 4 + 2 \cdot 2 + 3 \cdot 2 + 6 \cdot 1 = 4 + 4 + 6 + 6 = 20$.

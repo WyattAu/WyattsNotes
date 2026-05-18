@@ -83,7 +83,7 @@ $\blacksquare$
 ### 2.4 Properties
 
 - The distribution is symmetric when $p = 0.5$.
-- It is skewed left when $p \gt{} 0.5$ and skewed right when $p \lt{} 0.5$.
+- It is skewed left when $p \gt 0.5$ and skewed right when $p \lt 0.5$.
 - The mode is at $\lfloor(n+1)p\rfloor$.
 
 ### 2.5 Direct derivation of $E(X) = np$ from the PMF
@@ -168,12 +168,12 @@ $$P(a < X < b) = P\!\left(\frac◆LB◆a-\mu◆RB◆◆LB◆\sigma◆RB◆ < Z <
 
 ### 3.6 Normal approximation to Binomial
 
-For large $n$ with $np \gt{} 5$ and $n(1-p) \gt{} 5$:
+For large $n$ with $np \gt 5$ and $n(1-p) \gt 5$:
 
 $$B(n, p) \approx N(np, np(1-p))$$
 
 With **continuity correction**:
-$P(X \leq k) \approx P\!\left(Z \lt{} \frac◆LB◆k + 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
+$P(X \leq k) \approx P\!\left(Z \lt \frac◆LB◆k + 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
 
 :::warning Warning (Binomial) with a continuous one (Normal). Add or subtract 0.5 depending on the
 inequality Direction. :::
@@ -266,16 +266,16 @@ bursts, the Poisson model is not appropriate. :::
 
 ### 4.7 Poisson approximation to the Binomial
 
-**Practical rule.** When $n \gt{} 50$ and $p \lt{} 0.1$We may approximate $B(n, p)$ by
+**Practical rule.** When $n \gt 50$ and $p \lt 0.1$We may approximate $B(n, p)$ by
 $\mathrm{Po}(\lambda)$ where $\lambda = np$.
 
 **Justification.** The theoretical result in Section 4.2 shows that as $n \to \infty$ and $p \to 0$
 With $np = \lambda$ held constant, the binomial PMF converges pointwise to the Poisson PMF. The
-Conditions $n \gt{} 50$ and $p \lt{} 0.1$ are practical thresholds that ensure:
+Conditions $n \gt 50$ and $p \lt 0.1$ are practical thresholds that ensure:
 
 1. **$n$ is large enough** that the discrete binomial is well-approximated by a limit distribution.
 2. **$p$ is small enough** that the "rare event" assumption of the Poisson model is satisfied.
-3. **$\lambda = np$ is moderate** ( $0 \lt{} \lambda \lt{} 10$), so that neither distribution is
+3. **$\lambda = np$ is moderate** ( $0 \lt \lambda \lt 10$), so that neither distribution is
    heavily concentrated at a single point.
 
 The approximation improves as $n$ increases and $p$ decreases while $\lambda = np$ remains fixed.
@@ -377,7 +377,7 @@ Heights of men are normally distributed with mean 175 cm and standard deviation 
 
 <details>
 <summary>Solution 2</summary>
-$X \sim N(175, 64)$. $P(X \gt{} 185) = P\!\left(Z \gt{} \dfrac{185-175}{8}\right) = P(Z \gt{} 1.25) = 1 - \Phi(1.25) \approx 1 - 0.8944 = 0.1056$.
+$X \sim N(175, 64)$. $P(X \gt 185) = P\!\left(Z \gt \dfrac{185-175}{8}\right) = P(Z \gt 1.25) = 1 - \Phi(1.25) \approx 1 - 0.8944 = 0.1056$.
 
 **If you get this wrong, revise:** [The Normal Distribution](#3-the-normal-distribution) —
 Section 3.
@@ -395,7 +395,7 @@ $X \sim \mathrm{Po}(4.5)$.
 
 $P(X=6) = \dfrac{e^{-4.5}(4.5)^6}{6!} = \dfrac◆LB◆0.01111 \times 8303.77◆RB◆◆LB◆720◆RB◆ \approx 0.1281$.
 
-$P(X \gt{} 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} \approx 1 - 0.9804 = 0.0196$.
+$P(X \gt 8) = 1 - P(X \leq 8) = 1 - \sum_{k=0}^{8}\dfrac{e^{-4.5}(4.5)^k}{k!} \approx 1 - 0.9804 = 0.0196$.
 
 **If you get this wrong, revise:** [The Poisson Distribution](#4-the-poisson-distribution) —
 Section 4.
@@ -420,12 +420,12 @@ $P(X \leq 2) = e^{-4}\left(1 + 4 + \dfrac{16}{2}\right) = e^{-4}(1 + 4 + 8) = 13
 
 <details>
 <summary>Problem 5</summary>
-Find $c$ such that $P(-c \lt{} Z \lt{} c) = 0.95$ where $Z \sim N(0,1)$.
+Find $c$ such that $P(-c \lt Z \lt c) = 0.95$ where $Z \sim N(0,1)$.
 </details>
 
 <details>
 <summary>Solution 5</summary>
-$P(-c \lt{} Z \lt{} c) = 2\Phi(c) - 1 = 0.95 \implies \Phi(c) = 0.975$.
+$P(-c \lt Z \lt c) = 2\Phi(c) - 1 = 0.95 \implies \Phi(c) = 0.975$.
 
 From tables: $c \approx 1.96$.
 
@@ -462,9 +462,9 @@ A machine produces bolts with lengths $X \sim N(50, 0.04)$ cm. Bolts with length
 <summary>Solution 7</summary>
 $\sigma = \sqrt{0.04} = 0.2$.
 
-$P(X \lt{} 49.7) = P(Z \lt{} (49.7-50)/0.2) = P(Z \lt{} -1.5) = 0.0668$.
+$P(X \lt 49.7) = P(Z \lt (49.7-50)/0.2) = P(Z \lt -1.5) = 0.0668$.
 
-$P(X \gt{} 50.3) = P(Z \gt{} 1.5) = 0.0668$.
+$P(X \gt 50.3) = P(Z \gt 1.5) = 0.0668$.
 
 Proportion rejected $= 0.0668 + 0.0668 = 0.1336$ (13.36%).
 
@@ -492,14 +492,14 @@ Section 1.2.
 
 <details>
 <summary>Problem 9</summary>
-$X \sim B(200, 0.15)$. Use the normal approximation with continuity correction to approximate $P(X \gt{} 35)$.
+$X \sim B(200, 0.15)$. Use the normal approximation with continuity correction to approximate $P(X \gt 35)$.
 </details>
 
 <details>
 <summary>Solution 9</summary>
 $\mu = 200(0.15) = 30$$\sigma^2 = 200(0.15)(0.85) = 25.5$$\sigma \approx 5.05$.
 
-$P(X \gt{} 35) \approx P\!\left(Z \gt{} \dfrac{35.5 - 30}{5.05}\right) = P(Z \gt{} 1.089) \approx 1 - 0.8621 = 0.1379$.
+$P(X \gt 35) \approx P\!\left(Z \gt \dfrac{35.5 - 30}{5.05}\right) = P(Z \gt 1.089) \approx 1 - 0.8621 = 0.1379$.
 
 **If you get this wrong, revise:**
 [Normal Approximation to Binomial](#36-normal-approximation-to-binomial) — Section 3.6.
@@ -572,7 +572,7 @@ $X \sim B(80, 0.03)$. State whether the Poisson approximation is valid, giving r
 
 <details>
 <summary>Solution 13</summary>
-Check conditions: $n = 80 \gt{} 50$ and $p = 0.03 \lt{} 0.1$. Both conditions are satisfied, so the
+Check conditions: $n = 80 \gt 50$ and $p = 0.03 \lt 0.1$. Both conditions are satisfied, so the
 Poisson approximation is valid with $\lambda = np = 80 \times 0.03 = 2.4$.
 
 $X \approx \mathrm{Po}(2.4)$.
@@ -630,14 +630,14 @@ $X \sim B(120, 0.025)$. (a) Show that the Poisson approximation is appropriate. 
 
 <details>
 <summary>Solution 16</summary>
-(a) $n = 120 \gt{} 50$ and $p = 0.025 \lt{} 0.1$So the Poisson approximation is appropriate.
+(a) $n = 120 \gt 50$ and $p = 0.025 \lt 0.1$So the Poisson approximation is appropriate.
 $\lambda = np = 120 \times 0.025 = 3$.
 
 (b) $X \approx \mathrm{Po}(3)$.
 
 $$P(X = 5) = \frac◆LB◆e^{-3} \times 3^5◆RB◆◆LB◆5!◆RB◆ = \frac◆LB◆e^{-3} \times 243◆RB◆◆LB◆120◆RB◆ = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
 
-(c) For the normal approximation we need $np \gt{} 5$ and $n(1-p) \gt{} 5$. Here $np = 3 \lt{} 5$ So
+(c) For the normal approximation we need $np \gt 5$ and $n(1-p) \gt 5$. Here $np = 3 \lt 5$ So
 the normal approximation is not appropriate. The Poisson approximation is the correct choice Since
 $p$ is small.
 
@@ -649,7 +649,7 @@ $p$ is small.
 <details>
 <summary>Problem 17</summary>
 Temperatures in a city are modelled by $X \sim N(15, 9)$ in degrees Celsius. The temperature in
-Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$$\mathrm{Var}(F)$And $P(F \gt{} 68)$.
+Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$$\mathrm{Var}(F)$And $P(F \gt 68)$.
 </details>
 
 <details>
@@ -660,7 +660,7 @@ $\mathrm{Var}(F) = \left(\frac{9}{5}\right)^2 \times 9 = \frac{81}{25} \times 9 
 
 $\mathrm{SD}(F) = \sqrt{29.16} = 5.4$.
 
-$P(F \gt{} 68) = P\!\left(Z \gt{} \dfrac{68 - 59}{5.4}\right) = P(Z \gt{} 1.667) \approx 1 - 0.9522 = 0.0478$.
+$P(F \gt 68) = P\!\left(Z \gt \dfrac{68 - 59}{5.4}\right) = P(Z \gt 1.667) \approx 1 - 0.9522 = 0.0478$.
 
 **If you get this wrong, revise:** [Coding of Random Variables](#6-coding-of-random-variables) —
 Section 6.

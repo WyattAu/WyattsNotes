@@ -415,7 +415,7 @@ Requires integration over the spherical shell. :::
 ### Field Inside a Solid Sphere
 
 For a solid sphere of total mass $M$ and radius $R$ with uniform density, consider a point at
-Distance $r \lt{} R$ from the center. Only the enclosed mass contributes (the shell theorem makes
+Distance $r \lt R$ from the center. Only the enclosed mass contributes (the shell theorem makes
 The outer shell contribute zero):
 
 $$
@@ -439,7 +439,7 @@ $$
 \begin`\{aligned}`
  g(r) =
  \begin`\{cases}`
- \dfrac`\{GM}`{R^3}\, r & \mathrm{for } r \lt{} R \\[8pt]
+ \dfrac`\{GM}`{R^3}\, r & \mathrm{for } r \lt R \\[8pt]
  \dfrac`\{GM}`{r^2} & \mathrm{for } r \geq R
  \end`\{cases}`
 \end`\{aligned}`
@@ -455,8 +455,8 @@ Decreases as $1/r^2$.
 Outside a sphere, $g = GM/r^2$: large near $r = 0$Decreasing as $r^{-2}$Asymptotically Approaching
 zero. For a solid sphere of radius $R$:
 
-- **Interior** ($r \lt{} R$): $g$ increases linearly from $0$ to $g_{\max} = GM/R^2$.
-- **Exterior** ($r \gt{} R$): $g$ follows the inverse-square law.
+- **Interior** ($r \lt R$): $g$ increases linearly from $0$ to $g_{\max} = GM/R^2$.
+- **Exterior** ($r \gt R$): $g$ follows the inverse-square law.
 
 The maximum of $g$ occurs at the surface $r = R$.
 
@@ -652,11 +652,11 @@ By convention $E_p = 0$ at infinite separation, so $E_p$ is **always negative** 
 
 $$
 \begin`\{aligned}`
- E_p = -\frac`\{GMm}`{r} \lt{} 0 \quad \mathrm{for all finite } r
+ E_p = -\frac`\{GMm}`{r} \lt 0 \quad \mathrm{for all finite } r
 \end`\{aligned}`
 $$
 
-Moving outward ($r_2 \gt{} r_1$) gives positive $\Delta E_p$ since work is done against gravity. Do
+Moving outward ($r_2 \gt r_1$) gives positive $\Delta E_p$ since work is done against gravity. Do
 Not confuse this with the $mgh$ approximation (valid only for $h \ll R_{\mathrm{Earth}}$).
 
 ### Escape Velocity is Independent of the Escaping Object's Mass

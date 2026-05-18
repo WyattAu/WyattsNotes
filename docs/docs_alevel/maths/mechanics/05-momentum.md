@@ -130,7 +130,7 @@ $0 \leq e \leq 1$.
 
 - $e = 1$: perfectly elastic (kinetic energy conserved).
 - $e = 0$: perfectly inelastic (maximum energy loss, bodies stick together).
-- $0 \lt{} e \lt{} 1$: inelastic (some energy lost).
+- $0 \lt e \lt 1$: inelastic (some energy lost).
 
 ### 5.3 Energy loss in collisions
 
@@ -160,9 +160,9 @@ Increase in energy loss for nearly elastic collisions, but the loss grows rapidl
 $0 \leq e \leq 1$.
 
 **Proof of $e \geq 0$.** After collision, the two bodies must be separating (or at rest relative to
-Each other). If $u_1 \gt{} u_2$ (body 1 approaches body 2), then after collision we require
+Each other). If $u_1 \gt u_2$ (body 1 approaches body 2), then after collision we require
 $v_2 \geq v_1$ (body 2 moves away from body 1). Therefore $v_2 - v_1 \geq 0$ and
-$u_1 - u_2 \gt{} 0$So:
+$u_1 - u_2 \gt 0$So:
 
 $$e = \frac{v_2 - v_1}{u_1 - u_2} \geq 0$$
 
@@ -172,7 +172,7 @@ $\Delta\mathrm{KE} \geq 0$. From the energy loss formula in Section 5.3:
 
 $$\Delta\mathrm{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2) \geq 0$$
 
-Since $\frac{1}{2} \gt{} 0$$\frac{m_1m_2}{m_1+m_2} \gt{} 0$ (for positive masses), and
+Since $\frac{1}{2} \gt 0$$\frac{m_1m_2}{m_1+m_2} \gt 0$ (for positive masses), and
 $(u_1-u_2)^2 \geq 0$We must have:
 
 $$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
@@ -596,10 +596,10 @@ Taking the direction of $m$ as positive. $u_1 = u$$u_2 = -2u$.
 
 Momentum: $mu + 2m(-2u) = mv_1 + 2mv_2 \implies -3mu = m(v_1 + 2v_2) \implies v_1 + 2v_2 = -3u$.
 
-For them to move in the same direction after: $v_1, v_2 \gt{} 0$ (in the direction of $2mu$).
+For them to move in the same direction after: $v_1, v_2 \gt 0$ (in the direction of $2mu$).
 
-From $v_1 = -3u - 2v_2$: for $v_1 \gt{} 0$: $-3u \gt{} 2v_2$But $v_2 \gt{} 0$ implies
-$v_2 \lt{} -3u/2 \lt{} 0$. Contradiction.
+From $v_1 = -3u - 2v_2$: for $v_1 \gt 0$: $-3u \gt 2v_2$But $v_2 \gt 0$ implies
+$v_2 \lt -3u/2 \lt 0$. Contradiction.
 
 Let me reconsider: "same direction" means both in the direction of the $2m$ body.
 
@@ -607,7 +607,7 @@ Taking $2m$ direction as positive: $u_1 = -u$$u_2 = 2u$.
 
 Momentum: $-mu + 4mu = mv_1 + 2mv_2 \implies v_1 + 2v_2 = 3u$.
 
-Both move in positive direction: $v_1 \gt{} 0$$v_2 \gt{} 0$.
+Both move in positive direction: $v_1 \gt 0$$v_2 \gt 0$.
 
 $e = \dfrac{v_2 - v_1}{u_1 - u_2} = \dfrac{v_2 - v_1}{-u - 2u} = \dfrac{v_2 - v_1}{-3u} = \dfrac{v_1 - v_2}{3u}$.
 
@@ -615,41 +615,41 @@ From $v_1 = 3u - 2v_2$: $v_1 - v_2 = 3u - 3v_2 = 3(u - v_2)$.
 
 $e = \dfrac{3(u-v_2)}{3u} = \dfrac{u-v_2}{u} = 1 - \dfrac{v_2}{u}$.
 
-Since $v_2 \gt{} 0$: $e \lt{} 1$. Also from $v_1 \gt{} 0$: $3u \gt{} 2v_2 \implies v_2 \lt{} 1.5u$
-So $e \gt{} 1 - 1.5 = -0.5$. And since $v_2 \gt{} 0$$e \lt{} 1$.
+Since $v_2 \gt 0$: $e \lt 1$. Also from $v_1 \gt 0$: $3u \gt 2v_2 \implies v_2 \lt 1.5u$
+So $e \gt 1 - 1.5 = -0.5$. And since $v_2 \gt 0$$e \lt 1$.
 
-But we need both to move in the same direction. $v_2 \gt{} 0$ and
-$v_1 = 3u - 2v_2 \gt{} 0 \implies v_2 \lt{} 1.5u$.
+But we need both to move in the same direction. $v_2 \gt 0$ and
+$v_1 = 3u - 2v_2 \gt 0 \implies v_2 \lt 1.5u$.
 
 $e = (u - v_2)/u$. Max when $v_2 \to 0$: $e \to 1$. Min when $v_2 \to 1.5u$: $e \to -0.5$.
 
 Hmm, the question likely assumes a specific convention. The answer $e \leq 1/3$ arises when we
-Require $v_1 \lt{} v_2$ (so the $m$ body doesn't overtake the $2m$ body):
+Require $v_1 \lt v_2$ (so the $m$ body doesn't overtake the $2m$ body):
 
-$v_1 \lt{} v_2 \implies 3u - 2v_2 \lt{} v_2 \implies v_2 \gt{} 1.5u$... But then
-$v_1 = 3u - 2v_2 \lt{} 0$.
+$v_1 \lt v_2 \implies 3u - 2v_2 \lt v_2 \implies v_2 \gt 1.5u$... But then
+$v_1 = 3u - 2v_2 \lt 0$.
 
-Actually $e = (v_2 - v_1)/(u_1 - u_2) = (v_2 - v_1)/(-3u)$. For $v_1, v_2 \gt{} 0$ (same direction
+Actually $e = (v_2 - v_1)/(u_1 - u_2) = (v_2 - v_1)/(-3u)$. For $v_1, v_2 \gt 0$ (same direction
 As $2u$):
 
-$v_2 - v_1 \gt{} 0$ (needed for $e \gt{} 0$) and $u_1 - u_2 = -3u \lt{} 0$So
-$e = (v_2-v_1)/(-3u) \lt{} 0$ if $v_2 \gt{} v_1$. This gives $e \lt{} 0$ which isn't physical.
+$v_2 - v_1 \gt 0$ (needed for $e \gt 0$) and $u_1 - u_2 = -3u \lt 0$So
+$e = (v_2-v_1)/(-3u) \lt 0$ if $v_2 \gt v_1$. This gives $e \lt 0$ which isn't physical.
 
 Let me re-examine. With original convention (positive = direction of $m$ body before collision):
 
-$u_1 = u$$u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt{} 0$
-$v_2 \lt{} 0$.
+$u_1 = u$$u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt 0$
+$v_2 \lt 0$.
 
 $v_1 + 2v_2 = -3u$. $e = \dfrac{v_2 - v_1}{u - (-2u)} = \dfrac{v_2 - v_1}{3u}$.
 
-$v_2 - v_1 \gt{} 0$ (separation > approach since they separate), $e \gt{} 0$. ✓
+$v_2 - v_1 \gt 0$ (separation > approach since they separate), $e \gt 0$. ✓
 
 From $v_1 = -3u - 2v_2$: $v_2 - v_1 = v_2 + 3u + 2v_2 = 3v_2 + 3u = 3(u + v_2)$.
 
 $e = \dfrac{3(u+v_2)}{3u} = 1 + v_2/u$.
 
-For $v_2 \lt{} 0$: $e = 1 + v_2/u \lt{} 1$. ✓ For $v_1 \lt{} 0$:
-$-3u - 2v_2 \lt{} 0 \implies v_2 \gt{} -3u/2$So $e \gt{} 1 + (-3/2) = -1/2$. Since $e \geq 0$:
+For $v_2 \lt 0$: $e = 1 + v_2/u \lt 1$. ✓ For $v_1 \lt 0$:
+$-3u - 2v_2 \lt 0 \implies v_2 \gt -3u/2$So $e \gt 1 + (-3/2) = -1/2$. Since $e \geq 0$:
 $v_2 \geq -u$So $e \geq 0$.
 
 If the problem says $e \leq 1/3$There may be additional constraints. Given the complexity, the key
@@ -763,22 +763,22 @@ Section 8.
 
 <details>
 <summary>Problem 14</summary>
-Prove that the coefficient of restitution satisfies $e \leq 1$ by showing that $e \gt{} 1$ would imply the kinetic energy after collision exceeds the kinetic energy before collision, which violates the principle of conservation of energy.
+Prove that the coefficient of restitution satisfies $e \leq 1$ by showing that $e \gt 1$ would imply the kinetic energy after collision exceeds the kinetic energy before collision, which violates the principle of conservation of energy.
 </details>
 
 <details>
 <summary>Solution 14</summary>
-Suppose $e \gt{} 1$. From the energy loss formula:
+Suppose $e \gt 1$. From the energy loss formula:
 
 $$\Delta\mathrm{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2)$$
 
-If $e \gt{} 1$Then $e^2 \gt{} 1$ and $1 - e^2 \lt{} 0$.
+If $e \gt 1$Then $e^2 \gt 1$ and $1 - e^2 \lt 0$.
 
-Since $\frac{1}{2} \gt{} 0$$\frac{m_1m_2}{m_1+m_2} \gt{} 0$ (for positive masses), and
-$(u_1-u_2)^2 \geq 0$We get $\Delta\mathrm{KE} \lt{} 0$.
+Since $\frac{1}{2} \gt 0$$\frac{m_1m_2}{m_1+m_2} \gt 0$ (for positive masses), and
+$(u_1-u_2)^2 \geq 0$We get $\Delta\mathrm{KE} \lt 0$.
 
-$\Delta\mathrm{KE} \lt{} 0$ means
-$\mathrm{KE}_{\mathrm{after}} \gt{} \mathrm{KE}_{\mathrm{before}}$Which would require kinetic Energy
+$\Delta\mathrm{KE} \lt 0$ means
+$\mathrm{KE}_{\mathrm{after}} \gt \mathrm{KE}_{\mathrm{before}}$Which would require kinetic Energy
 to be created during the collision. This violates conservation of energy (no external work is Done
 during the collision).
 
@@ -874,7 +874,7 @@ The angle between $\mathbf{v}_B$ and the line of centres is $0$ (it moves along 
 Centres).
 
 So the angle between $\mathbf{v}_A$ and $\mathbf{v}_B$ is $\alpha$. For them to be perpendicular, we
-Need $\alpha = 90^\circ$But $\tan\alpha$ is finite for $0 \lt{} e \lt{} 1$.
+Need $\alpha = 90^\circ$But $\tan\alpha$ is finite for $0 \lt e \lt 1$.
 
 The claim that the spheres move at right angles is only true for $e = 1$ (perfectly elastic
 Collision). In that case $v_{A,\parallel} = 0$ and $\mathbf{v}_A = u\sin\theta$ (perpendicular to

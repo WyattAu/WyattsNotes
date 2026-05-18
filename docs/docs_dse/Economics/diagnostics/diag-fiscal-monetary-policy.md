@@ -383,7 +383,7 @@ The net effect depends on which effect dominates. For low-income workers, the in
 dominate (work more). For high-income workers with high target incomes, the substitution effect
 often dominates (work less).
 
-(c) Elasticity of labour supply $= \frac{{}\%\Delta H{}}{{}\%\Delta W{}}$. Percentage change in
+(c) Elasticity of labour supply $= \frac{\%\Delta H}{\%\Delta W}$. Percentage change in
 after-tax wage $= \frac{175 - 187.5}{187.5} = -6.67\%$.
 
 $\%\Delta H = -0.2 \times (-6.67\%) = 1.33\%$. Hours increase by $1.33\%$ to

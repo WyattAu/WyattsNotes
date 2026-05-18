@@ -28,7 +28,7 @@ boat.
 Angle with ground: $\tan \theta = \frac{9}{3} = 3$. $\theta = \arctan(3) \approx 71.6^\circ$.
 
 (c) The angle of depression from the cliff equals the angle of elevation from the boat: $35^\circ$.
-$\tan 35^\circ = \frac{\text{opposite{}}{\text{adjacent{}} = \frac{80}{d}$.
+$\tan 35^\circ = \frac{\text{opposite}{\text{adjacent} = \frac{80}{d}$.
 $d = \frac{80}{\tan 35^\circ} = \frac{80}{0.7002} \approx 114.3$ m.
 
 ### UT-2: Area and Volume
@@ -96,7 +96,7 @@ pyramid.
 **Solution:**
 
 (a) Volume
-$= \frac{1}{3} \times \text{base area{} \times \text{height{} = \frac{1}{3} \times 100 \times 12 = 400$
+$= \frac{1}{3} \times \text{base area \times \text{height = \frac{1}{3} \times 100 \times 12 = 400$
 cm$^3$.
 
 (b) Distance from centre of base to a corner $= \sqrt{5^2 + 5^2} = \sqrt{50} = 5\sqrt{2}$ cm. Slant
@@ -117,9 +117,9 @@ $= 100 + 4 \times 65 = 100 + 260 = 360$ cm$^2$.
 **Question:** Triangle ABC has vertices A(1, 2), B(5, 2), C(3, 6). (a) Describe the transformation
 that maps ABC to A'B'C' where A'(-1, -2), B'(-5, -2), C'(-3, -6). (b) Describe the transformation
 that maps ABC to A''(3, 4), B''(11, 4), C''(7, 12). (c) Vector
-$\mathbf{{'}a{}'} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ and vector
-$\mathbf{{'}b{}'} = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$. Calculate
-$\mathbf{{'}a{}'} + 2\mathbf{{'}b{}'}$ and the magnitude of the result. (d) If $\mathbf{{'}a{}'}$
+$\mathbf{a} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ and vector
+$\mathbf{b} = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$. Calculate
+$\mathbf{a} + 2\mathbf{b}$ and the magnitude of the result. (d) If $\mathbf{a}$
 represents a translation, describe its effect on point $(4, 7)$.
 
 **Solution:**
@@ -145,7 +145,7 @@ New position: $(-1+4, 0+4) = (3, 4) \checkmark$.
 This is an **enlargement with scale factor 2 about centre $(-1, 0)$**.
 
 (c)
-$\mathbf{{'}a{}'} + 2\mathbf{{'}b{}'} = \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -4 \\ 8 \end{pmatrix} = \begin{pmatrix} -1 \\ 7 \end{pmatrix}$.
+$\mathbf{a} + 2\mathbf{b} = \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -4 \\ 8 \end{pmatrix} = \begin{pmatrix} -1 \\ 7 \end{pmatrix}$.
 
 Magnitude $= \sqrt{(-1)^2 + 7^2} = \sqrt{1 + 49} = \sqrt{50} = 5\sqrt{2} \approx 7.07$.
 

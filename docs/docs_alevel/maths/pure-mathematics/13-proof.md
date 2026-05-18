@@ -161,10 +161,10 @@ To disprove a universal statement, it suffices to find **one** example where the
 
 ### 4.2 Examples
 
-**Claim.** "For all real $x$$x^2 \gt{} x$." Counterexample: $x = 0.5$Since $0.25 \not> 0.5$.
+**Claim.** "For all real $x$$x^2 \gt x$." Counterexample: $x = 0.5$Since $0.25 \not> 0.5$.
 
 **Claim.** "All quadratics have two distinct real roots." Counterexample: $x^2 + 1 = 0$ has no real
-Roots (discriminant $= -4 \lt{} 0$).
+Roots (discriminant $= -4 \lt 0$).
 
 **Claim.** "If $n$ is prime, then $2^n - 1$ is prime." Counterexample: $n = 11$ is prime, but
 $2^{11}-1 = 2047 = 23 \times 89$.
@@ -183,7 +183,7 @@ To prove a statement $P(n)$ for all integers $n \geq n_0$:
 4. **Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all $n \geq n_0$.
 
 :::info Info Non-empty set of positive integers has a least element. If $P(n_0)$ is true but some
-$P(m)$ with $m \gt{} n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least
+$P(m)$ with $m \gt n_0$ is false, then the set $\{m : P(m) \mathrm{ is false}\}$ has a least
 element, Contradicting the inductive step. :::
 
 ### 5.2 Sum of the first $n$ integers
@@ -263,30 +263,30 @@ _Step:_ $4^{k+1} - 1 = 4 \cdot 4^k - 1 = 4(3m+1)-1 = 12m+4-1 = 12m+3 = 3(4m+1)$.
 
 ### 5.5 Inequalities
 
-**Theorem.** $2^n \gt{} n$ for all $n \in \mathbb{N}$.
+**Theorem.** $2^n \gt n$ for all $n \in \mathbb{N}$.
 
 **Proof.**
 
-_Base case ($n=1$):_ $2 \gt{} 1$. ✓
+_Base case ($n=1$):_ $2 \gt 1$. ✓
 
-_Hypothesis:_ $2^k \gt{} k$.
+_Hypothesis:_ $2^k \gt k$.
 
-_Step:_ $2^{k+1} = 2 \cdot 2^k \gt{} 2k \geq k + 1$ (since $k \geq 1$ implies $k \geq 1$).
+_Step:_ $2^{k+1} = 2 \cdot 2^k \gt 2k \geq k + 1$ (since $k \geq 1$ implies $k \geq 1$).
 
-So $2^{k+1} \gt{} k + 1$. ✓ $\blacksquare$
+So $2^{k+1} \gt k + 1$. ✓ $\blacksquare$
 
-**Theorem.** $n! \gt{} 2^n$ for all $n \geq 4$.
+**Theorem.** $n! \gt 2^n$ for all $n \geq 4$.
 
 **Proof.**
 
-_Base case ($n=4$):_ $24 \gt{} 16$. ✓
+_Base case ($n=4$):_ $24 \gt 16$. ✓
 
-_Hypothesis:_ $k! \gt{} 2^k$ for $k \geq 4$.
+_Hypothesis:_ $k! \gt 2^k$ for $k \geq 4$.
 
 _Step:_
-$(k+1)! = (k+1) \cdot k! \gt{} (k+1) \cdot 2^k \geq 5 \cdot 2^k \gt{} 2 \cdot 2^k = 2^{k+1}$.
+$(k+1)! = (k+1) \cdot k! \gt (k+1) \cdot 2^k \geq 5 \cdot 2^k \gt 2 \cdot 2^k = 2^{k+1}$.
 
-Since $k \geq 4$We have $k+1 \geq 5 \gt{} 2$. ✓ $\blacksquare$
+Since $k \geq 4$We have $k+1 \geq 5 \gt 2$. ✓ $\blacksquare$
 
 <hr />
 
@@ -333,7 +333,7 @@ Prove by contradiction that there is no greatest even integer.
 <summary>Solution 2</summary>
 Suppose $N$ is the greatest even integer. Then $N = 2k$ for some $k \in \mathbb{Z}$.
 
-But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 \gt{} N$. This contradicts $N$ being the
+But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 \gt N$. This contradicts $N$ being the
 Greatest even integer. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.

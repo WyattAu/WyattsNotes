@@ -258,7 +258,7 @@ in 2023 was HK$25,000 instead, what would the real salary be and how does it com
 (a) Inflation rate
 $= \frac{CPI_{2023} - CPI_{2018}}{CPI_{2018}} \times 100\% = \frac{132 - 110}{110} \times 100\% = 20\%$.
 
-(b) Real salary $= \frac{{}\text{Nominal salary}{}}{CPI} \times 100$.
+(b) Real salary $= \frac{\text{Nominal salary}}{CPI} \times 100$.
 
 - 2018: Real salary $= \frac{20000}{110} \times 100 = HK\$18\,182$.
 - 2023: Real salary $= \frac{24000}{132} \times 100 = HK\$18\,182$.
@@ -269,7 +269,7 @@ unchanged. The 20% nominal increase exactly matched inflation.
 
 (d) With HK$25,000 in 2023: Real salary $= \frac{25000}{132} \times 100 = HK\$18\,939$.
 
-This is an increase of $\frac{{}18\,939 - 18182{}}{{}18\,182{}} \times 100\% = 4.2\%$ in real terms.
+This is an increase of $\frac{18\,939 - 18182}{18\,182} \times 100\% = 4.2\%$ in real terms.
 The worker's purchasing power has genuinely improved because the nominal salary increase (25%)
 exceeded inflation (20%).
 
@@ -357,11 +357,11 @@ $$k^{-0.6} = 0.35$$
 
 $$k = 0.35^{-1/0.6} = 0.35^{-1.667} = \frac{1}{0.35^{1.667}}$$
 
-$0.35^{1.667} = e^{{}1.667 \times \ln(0.35){}} = e^{{}1.667 \times (-1.0498){}} = e^{-1.7497} = 0.1739$.
+$0.35^{1.667} = e^{1.667 \times \ln(0.35)} = e^{1.667 \times (-1.0498)} = e^{-1.7497} = 0.1739$.
 
 $k^* = 1 / 0.1739 = 5.751$.
 
-$y^* = k^{0.4} = 5.751^{0.4} = e^{{}0.4 \times \ln(5.751){}} = e^{{}0.4 \times 1.7497{}} = e^{0.6999} = 2.014$.
+$y^* = k^{0.4} = 5.751^{0.4} = e^{0.4 \times \ln(5.751)} = e^{0.4 \times 1.7497} = e^{0.6999} = 2.014$.
 
 Steady-state output per worker $= 2.014$ (in efficiency units).
 
@@ -373,11 +373,11 @@ $$k^{-0.6} = 0.07/0.30 = 0.2333$$
 
 $$k = 0.2333^{-1.667} = \frac{1}{0.2333^{1.667}}$$
 
-$0.2333^{1.667} = e^{{}1.667 \times \ln(0.2333){}} = e^{{}1.667 \times (-1.4553){}} = e^{-2.4255} = 0.0885$.
+$0.2333^{1.667} = e^{1.667 \times \ln(0.2333)} = e^{1.667 \times (-1.4553)} = e^{-2.4255} = 0.0885$.
 
 $k^* = 1 / 0.0885 = 11.30$.
 
-$y^* = 11.30^{0.4} = e^{{}0.4 \times 2.4243{}} = e^{0.9697} = 2.637$.
+$y^* = 11.30^{0.4} = e^{0.4 \times 2.4243} = e^{0.9697} = 2.637$.
 
 Output per worker rises from 2.014 to 2.637 -- a 31% increase. But this is a **one-time level
 effect**, not a permanent increase in the growth rate.

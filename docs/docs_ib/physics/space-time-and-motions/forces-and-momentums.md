@@ -319,7 +319,7 @@ Justify your answer with a calculation.
 - $E_{k, \mathrm{initial}} = \frac{1}{2}(0.20)(10)^2 = 10.0$ J.
 - $E_{k, \mathrm{final}} = \frac{1}{2}(0.20)(4.0)^2 + \frac{1}{2}(0.30)(4.56)^2 = 1.6 + 3.12 = 4.72$
   J.
-- Since $E_{k, \mathrm{final}} \lt{} E_{k, \mathrm{initial}}$Kinetic energy was lost, and the
+- Since $E_{k, \mathrm{final}} \lt E_{k, \mathrm{initial}}$Kinetic energy was lost, and the
   collision was **inelastic**. **If you get this wrong, you should focus on:** Applying conservation
   of momentum as a vector equation (i.e., in component form), combining velocity components to find
   final speed and direction, and the definition of an elastic collision (conservation of kinetic
@@ -503,7 +503,7 @@ Incline, find the acceleration.
 **a) Check if block slides:** Component of gravity along the incline:
 $mg\sin 30^{\circ} = (4.0)(9.8)(0.5) = 19.6$ N. Maximum static friction:
 $f_{s,\max} = \mu_s mg\cos 30^{\circ} = (0.40)(4.0)(9.8)(0.866) = 13.6$ N. Since
-$mg\sin 30^{\circ} = 19.6$ N $\gt{} f_{s,\max} = 13.6$ N, the block **will slide**.
+$mg\sin 30^{\circ} = 19.6$ N $\gt f_{s,\max} = 13.6$ N, the block **will slide**.
 
 **b) With applied horizontal force of 20 N up the incline:** Resolve the horizontal force into
 Components parallel and perpendicular to the incline: $F_{\parallel} = 20\cos 30^{\circ} = 17.3$ N

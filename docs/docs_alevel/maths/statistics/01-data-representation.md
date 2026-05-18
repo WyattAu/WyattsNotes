@@ -48,7 +48,7 @@ $$\frac{dS}{da} = -2\sum x_i + 2na$$
 Setting $\dfrac{dS}{da} = 0$:
 $2na = 2\sum x_i \implies a = \dfrac◆LB◆\sum x_i◆RB◆◆LB◆n◆RB◆ = \bar{x}$.
 
-Check: $\dfrac{d^2S}{da^2} = 2n \gt{} 0$So this is a minimum. $\blacksquare$
+Check: $\dfrac{d^2S}{da^2} = 2n \gt 0$So this is a minimum. $\blacksquare$
 
 **Intuition.** The mean is the "centre of mass" of the data. It is the single value that best
 Represents all the data points in the sense of least squares — no other value produces a smaller
@@ -195,8 +195,8 @@ Since we lose information about the distribution within each class.
 
 Skewness measures the asymmetry of a distribution about its centre. A distribution is:
 
-- **Positively skewed** (right-skewed): the right tail is longer; mean $\gt{}$ median.
-- **Negatively skewed** (left-skewed): the left tail is longer; mean $\lt{}$ median.
+- **Positively skewed** (right-skewed): the right tail is longer; mean $\gt$ median.
+- **Negatively skewed** (left-skewed): the left tail is longer; mean $\lt$ median.
 - **Symmetric**: mean = median (and mode, for unimodal distributions).
 
 ### 6.2 Pearson's coefficient of skewness
@@ -211,8 +211,8 @@ $$S_2 = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$$
 
 **Interpretation:**
 
-- $S \gt{} 0$: positive skew (right tail longer).
-- $S \lt{} 0$: negative skew (left tail longer).
+- $S \gt 0$: positive skew (right tail longer).
+- $S \lt 0$: negative skew (left tail longer).
 - $S = 0$: symmetric distribution.
 
 :::info Info Useful when quartiles are already known and the standard deviation has not been
@@ -223,8 +223,8 @@ calculated. Both Give the same sign of skewness but may differ in magnitude. :::
 For a unimodal distribution:
 
 - **Symmetric**: mean = median = mode.
-- **Positively skewed**: mode $\lt{}$ median $\lt{}$ mean.
-- **Negatively skewed**: mean $\lt{}$ median $\lt{}$ mode.
+- **Positively skewed**: mode $\lt$ median $\lt$ mean.
+- **Negatively skewed**: mean $\lt$ median $\lt$ mode.
 
 The mean is pulled in the direction of the longer tail, while the mode remains at the peak and the
 Median lies between them.
@@ -256,7 +256,7 @@ The modified z-score for each observation is:
 
 $$M_i = \frac◆LB◆0.6745\left(x_i - \tilde{x}\right)◆RB◆◆LB◆\mathrm{MAD}◆RB◆$$
 
-An observation is flagged as an outlier if $|M_i| \gt{} 3.5$.
+An observation is flagged as an outlier if $|M_i| \gt 3.5$.
 
 :::tip Tip MAD, which are themselves resistant to outliers. The factor $0.6745$ is the
 $0.75$-quantile of the Standard normal distribution, so the modified z-score is on a comparable
@@ -291,8 +291,8 @@ the minimum and Maximum of the dataset. :::
 
 Compare the distances from $Q_2$ to each quartile:
 
-- $Q_3 - Q_2 \gt{} Q_2 - Q_1$: the upper half is more spread out, indicating **positive skew**.
-- $Q_3 - Q_2 \lt{} Q_2 - Q_1$: the lower half is more spread out, indicating **negative skew**.
+- $Q_3 - Q_2 \gt Q_2 - Q_1$: the upper half is more spread out, indicating **positive skew**.
+- $Q_3 - Q_2 \lt Q_2 - Q_1$: the lower half is more spread out, indicating **negative skew**.
 - $Q_3 - Q_2 \approx Q_2 - Q_1$: the distribution is approximately **symmetric**.
 
 Outliers on one side also indicate skewness in that direction.
@@ -388,16 +388,16 @@ Find the median from the following grouped frequency distribution:
 
 | Class                 | Frequency |
 | --------------------- | --------- |
-| $0 \lt{} x \le{} 10$  | 5         |
-| $10 \lt{} x \le{} 20$ | 12        |
-| $20 \lt{} x \le{} 30$ | 18        |
-| $30 \lt{} x \le{} 40$ | 8         |
-| $40 \lt{} x \le{} 50$ | 4         |
+| $0 \lt x \le 10$  | 5         |
+| $10 \lt x \le 20$ | 12        |
+| $20 \lt x \le 30$ | 18        |
+| $30 \lt x \le 40$ | 8         |
+| $40 \lt x \le 50$ | 4         |
 
 $n = 47$. The median position is $n/2 = 23.5$.
 
 Cumulative frequencies: 5, 17, 35, 43, 47. The 23.5th value falls in the class
-$20 \lt{} x \le{} 30$.
+$20 \lt x \le 30$.
 
 $$Q_2 = 20 + \left(23.5 - 17\right) \cdot \frac{10}{18} = 20 + 6.5 \cdot \frac{10}{18} = 20 + \frac{65}{18} \approx 23.6$$
 
@@ -607,7 +607,7 @@ $\sigma^2 = 1347/9 - 9.67^2 = 149.67 - 93.51 = 56.16$So $\sigma = 7.49$.
 Pearson's first coefficient:
 $$S_1 = \frac{3(9.67 - 7)}{7.49} = \frac◆LB◆3 \times 2.67◆RB◆◆LB◆7.49◆RB◆ = \frac{8.01}{7.49} \approx 1.07$$
 
-Since $S_1 \gt{} 0$The distribution is positively skewed. This is consistent with the right tail
+Since $S_1 \gt 0$The distribution is positively skewed. This is consistent with the right tail
 Produced by the value 28.
 
 **If you get this wrong, revise:** [Skewness](#6-skewness) — Section 6.
@@ -628,7 +628,7 @@ Upper fence $= Q_3 + 1.5 \times \mathrm{IQR} = 25 + 1.5 \times 13 = 25 + 19.5 = 
 
 Skewness: $Q_3 - Q_2 = 25 - 18 = 7$ and $Q_2 - Q_1 = 18 - 12 = 6$.
 
-Since $7 \gt{} 6$ (and there is an outlier at 42 on the upper side), the distribution is positively
+Since $7 \gt 6$ (and there is an outlier at 42 on the upper side), the distribution is positively
 Skewed, though only slightly so from the quartiles alone.
 
 **If you get this wrong, revise:**
@@ -680,11 +680,11 @@ Linear interpolation:
 
 | Class                 | Frequency |
 | --------------------- | --------- |
-| $10 \lt{} x \le{} 20$ | 8         |
-| $20 \lt{} x \le{} 30$ | 15        |
-| $30 \lt{} x \le{} 40$ | 22        |
-| $40 \lt{} x \le{} 50$ | 10        |
-| $50 \lt{} x \le{} 60$ | 5         |
+| $10 \lt x \le 20$ | 8         |
+| $20 \lt x \le 30$ | 15        |
+| $30 \lt x \le 40$ | 22        |
+| $40 \lt x \le 50$ | 10        |
+| $50 \lt x \le 60$ | 5         |
 
 </details>
 
@@ -693,15 +693,15 @@ Linear interpolation:
 $n = 60$.
 
 **Median** ($n/2 = 30$Th value). Cumulative frequencies: 8, 23, 45, 55, 60. The 30th value falls in
-The class $30 \lt{} x \le{} 40$.
+The class $30 \lt x \le 40$.
 
 $$Q_2 = 30 + \left(\frac{60}{2} - 23\right) \cdot \frac{10}{22} = 30 + (30 - 23) \cdot \frac{10}{22} = 30 + 7 \cdot \frac{10}{22} = 30 + \frac{70}{22} \approx 33.18$$
 
-**Lower quartile** ($n/4 = 15$Th value). The 15th value falls in $20 \lt{} x \le{} 30$.
+**Lower quartile** ($n/4 = 15$Th value). The 15th value falls in $20 \lt x \le 30$.
 
 $$Q_1 = 20 + \left(15 - 8\right) \cdot \frac{10}{15} = 20 + 7 \cdot \frac{10}{15} = 20 + \frac{70}{15} \approx 24.67$$
 
-**Upper quartile** ($3n/4 = 45$Th value). The 45th value falls in $30 \lt{} x \le{} 40$.
+**Upper quartile** ($3n/4 = 45$Th value). The 45th value falls in $30 \lt x \le 40$.
 
 $$Q_3 = 30 + \left(45 - 23\right) \cdot \frac{10}{22} = 30 + 22 \cdot \frac{10}{22} = 30 + 10 = 40$$
 
@@ -725,7 +725,7 @@ $\tilde{x} = 12$ (median). $\mathrm{MAD} = 4$.
 For $x = 48$:
 $$M = \frac{0.6745(48 - 12)}{4} = \frac◆LB◆0.6745 \times 36◆RB◆◆LB◆4◆RB◆ = \frac{24.282}{4} = 6.07$$
 
-Since $|M| = 6.07 \gt{} 3.5$The value 48 is classified as an outlier by the modified z-score Method.
+Since $|M| = 6.07 \gt 3.5$The value 48 is classified as an outlier by the modified z-score Method.
 
 **If you get this wrong, revise:** [Outliers in Depth](#7-outliers-in-depth) — Section 7.2.
 
@@ -733,7 +733,7 @@ Since $|M| = 6.07 \gt{} 3.5$The value 48 is classified as an outlier by the modi
 
 <details>
 <summary>Problem 16</summary>
-A grouped frequency distribution has class $50 \lt{} w \le{} 60$ with frequency 14. The cumulative
+A grouped frequency distribution has class $50 \lt w \le 60$ with frequency 14. The cumulative
 Frequency below this class is 32, and the total frequency is 80. Use linear interpolation to
 Estimate $Q_3$.
 </details>
@@ -742,7 +742,7 @@ Estimate $Q_3$.
 <summary>Solution 16</summary>
 $Q_3$ is at position $3n/4 = 3 \times 80 / 4 = 60$.
 
-The 60th value falls in the class $50 \lt{} w \le{} 60$.
+The 60th value falls in the class $50 \lt w \le 60$.
 
 $L = 50$$c_f = 32$$f = 14$$w = 10$.
 

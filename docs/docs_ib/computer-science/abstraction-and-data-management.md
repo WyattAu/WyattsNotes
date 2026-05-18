@@ -609,7 +609,7 @@ OUTPUT result
 | ---- | --------------------------- | ------- | ------------ | ------------------------------- |
 | 1    | `new BankAccount(..., 100)` | 100     | --           | Initial balance = 100           |
 | 2    | `acc.deposit(50)`           | 150     | --           | $100 + 50 = 150$                |
-| 3    | `acc.withdraw(200)`         | 150     | FALSE        | $200 \gt{} 150$Withdrawal fails |
+| 3    | `acc.withdraw(200)`         | 150     | FALSE        | $200 \gt 150$Withdrawal fails |
 | 4    | `acc.withdraw(100)`         | 50      | TRUE         | $100 \le 150$Succeeds           |
 | 5    | `acc.getBalance()`          | 50      | 50           | Returns current balance         |
 

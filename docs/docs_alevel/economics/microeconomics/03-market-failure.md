@@ -653,7 +653,7 @@ Solution.
 
 <details>
 <summary>Hint</summary>
-Each fisherman receives the full benefit of an additional fish caught (private benefit) but shares the cost of stock depletion with all 10 fishermen (1/10 of the social cost). This creates an incentive to overfish. Total catch $= 10 \times 150 = 1\,500 \gt{} 1\,000$ (unsustainable). Solutions: (1) privatisation (assign property rights to the lake), (2) regulation (catch quotas of 100 per fisherman), (3) tradable permits (each fisherman gets 100 permits, can trade), (4) Coase bargaining (fishermen agree to limit catches).
+Each fisherman receives the full benefit of an additional fish caught (private benefit) but shares the cost of stock depletion with all 10 fishermen (1/10 of the social cost). This creates an incentive to overfish. Total catch $= 10 \times 150 = 1\,500 \gt 1\,000$ (unsustainable). Solutions: (1) privatisation (assign property rights to the lake), (2) regulation (catch quotas of 100 per fisherman), (3) tradable permits (each fisherman gets 100 permits, can trade), (4) Coase bargaining (fishermen agree to limit catches).
 </details>
 
 **Problem 6.** Compare and contrast tradable pollution permits with a Pigouvian tax as methods of

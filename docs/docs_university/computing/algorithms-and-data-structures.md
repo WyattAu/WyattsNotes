@@ -404,8 +404,8 @@ Both avoid clustering better than simple modulo hashing when the input distribut
 
 ### 2.4 Trees
 
-**Binary Search Tree (BST).** For each node: left subtree values $\lt{}$ node value, right subtree
-values $\gt{}$ node value.
+**Binary Search Tree (BST).** For each node: left subtree values $\lt$ node value, right subtree
+values $\gt$ node value.
 
 - Search, insert, delete: $O(h)$ where $h$ is the height.
 - For a balanced BST, $h = O(\log n)$.
@@ -413,11 +413,11 @@ values $\gt{}$ node value.
 **Theorem 2.3.** The expected height of a randomly built BST with $n$ distinct keys is $O(\log n)$.
 
 _Proof._ Let $X_n$ be the height of a BST built from $n$ random keys. Let $Y_n = 2^{X_n}$. Then
-$\mathrm{E{}[Y_n] \leq \frac{1}{4} \sum_{i=0}^{n-1} \binom{n}{i} \mathrm{E{}[Y_i] \mathrm{E{}[Y_{n-1-i}] / n$.
+$\mathrm{E[Y_n] \leq \frac{1}{4} \sum_{i=0}^{n-1} \binom{n}{i} \mathrm{E[Y_i] \mathrm{E[Y_{n-1-i}] / n$.
 Using the indicator random variable technique,
-$\mathrm{E{}[Y_n] \leq \frac{c^{n+1}}{n^{3/2}} \sum_{i=0}^{n-1} \frac{i^{3/2}(n-1-i)^{3/2}}{c^i c^{n-1-i}} \leq c \cdot n^{3/2}$
+$\mathrm{E[Y_n] \leq \frac{c^{n+1}}{n^{3/2}} \sum_{i=0}^{n-1} \frac{i^{3/2}(n-1-i)^{3/2}}{c^i c^{n-1-i}} \leq c \cdot n^{3/2}$
 for some constant $c$. Taking logs gives
-$\mathrm{E{}[X_n] = \mathrm{E{}[\log Y_n] \leq \log \mathrm{E{}[Y_n] = O(\log n)$ by Jensen's
+$\mathrm{E[X_n] = \mathrm{E[\log Y_n] \leq \log \mathrm{E[Y_n] = O(\log n)$ by Jensen's
 inequality. $\blacksquare$
 
 #### 2.4.1 AVL Trees
@@ -453,7 +453,7 @@ _Proof._ Let $N(h)$ be the minimum number of nodes in an AVL tree of height $h$.
 $N(0) = 1$$N(1) = 2$And $N(h) = 1 + N(h-1) + N(h-2)$ for $h \geq 2$. This is the Fibonacci
 recurrence, giving $N(h) = F_{h+3} - 1$. Using $F_h = \frac{\phi^h - \hat{\phi}^h}{\sqrt{5}}$ where
 $\phi = \frac{1+\sqrt{5}}{2}$We get $N(h) > \phi^h / \sqrt{5} - 1$So
-$h \lt{} \log_\phi(\sqrt{5}(n + 1)) \approx 1.4404 \log_2(n + 1)$. $\blacksquare$
+$h \lt \log_\phi(\sqrt{5}(n + 1)) \approx 1.4404 \log_2(n + 1)$. $\blacksquare$
 
 **Corollary 2.5.** All AVL tree operations (search, insert, delete) run in $O(\log n)$ time.
 
@@ -794,15 +794,15 @@ A graph $G = (V, E)$ can be represented by:
 
 - **Adjacency matrix:** $A_{ij} = 1$ if $(i,j) \in E$. Space: $O(V^2)$. Edge lookup: $O(1)$.
 - **Adjacency list:** For each vertex, store a list of neighbours. Space: $O(V + E)$. Iterating over
-  neighbours: $O(\mathrm{deg{}(v))$.
+  neighbours: $O(\mathrm{deg(v))$.
 
 | Operation          | Adjacency Matrix | Adjacency List        |
 | ------------------ | ---------------- | --------------------- |
 | Space              | $O(V^2)$         | $O(V + E)$            |
-| Check edge $(u,v)$ | $O(1)$           | $O(\mathrm{deg{}(u))$ |
-| Iterate neighbours | $O(V)$           | $O(\mathrm{deg{}(v))$ |
+| Check edge $(u,v)$ | $O(1)$           | $O(\mathrm{deg(u))$ |
+| Iterate neighbours | $O(V)$           | $O(\mathrm{deg(v))$ |
 | Add edge           | $O(1)$           | $O(1)$                |
-| Remove edge        | $O(1)$           | $O(\mathrm{deg{}(u))$ |
+| Remove edge        | $O(1)$           | $O(\mathrm{deg(u))$ |
 
 :::caution Common Pitfall Choosing the wrong graph representation can make an algorithm
 asymptotically slower. Use adjacency matrices for dense graphs ($E \approx V^2$) and adjacency lists
@@ -883,7 +883,7 @@ QuickSort(A, lo, hi):
 ```
 
 **Partition (Lomuto):** Select the last element as pivot. Iterate through the array, maintaining
-that elements $A[\mathrm{lo{}..i]$ are $\leq$ pivot and $A[i+1..j-1]$ are $>$ pivot.
+that elements $A[\mathrm{lo..i]$ are $\leq$ pivot and $A[i+1..j-1]$ are $>$ pivot.
 
 **Theorem 3.5.** Quicksort runs in $O(n \log n)$ expected time and $O(n^2)$ worst-case time.
 
@@ -894,11 +894,11 @@ Let $X_{ij}$ be the indicator random variable that $z_i$ and $z_j$ are compared,
 $z_1, \ldots, z_n$ are the sorted elements. Since elements are compared only if one is an ancestor
 of the other in the recursion tree, and the pivot is chosen uniformly at random:
 
-$$\mathrm{E{}[X_{ij}] = \Pr(z_i \mathrm{~and~{} z_j \mathrm{~are~compared{}) = \frac{2}{j - i + 1}$$
+$$\mathrm{E[X_{ij}] = \Pr(z_i \mathrm{~and~ z_j \mathrm{~are~compared) = \frac{2}{j - i + 1}$$
 
 The total number of comparisons is $X = \sum_{i < j} X_{ij}$So:
 
-$$\mathrm{E{}[X] = \sum_{i=1}^{n-1} \sum_{j=i+1}^{n} \frac{2}{j - i + 1} \leq \sum_{k=1}^{n} n \cdot \frac{2}{k+1} = O(n \log n)$$
+$$\mathrm{E[X] = \sum_{i=1}^{n-1} \sum_{j=i+1}^{n} \frac{2}{j - i + 1} \leq \sum_{k=1}^{n} n \cdot \frac{2}{k+1} = O(n \log n)$$
 
 Worst case occurs when the pivot is always the smallest or largest element (e.g., already sorted
 Array with first-element pivot): $T(n) = T(n-1) + O(n) = O(n^2)$. $\blacksquare$
@@ -1141,8 +1141,8 @@ _Proof (time)._ Each vertex is coloured exactly once (from WHITE to GREY) and fi
 undirected, once for directed): $O(E)$. Total: $O(V + E)$. $\blacksquare$
 
 **Theorem 4.3 (Parenthesis Theorem).** In any DFS, for any two vertices $u$ and $v$Exactly one of
-the following holds: (1) $d[u] \lt{} d[v] \lt{} f[v] \lt{} f[u]$ (interval nesting), (2)
-$d[v] \lt{} d[u] \lt{} f[u] \lt{} f[v]$ (interval nesting), or (3) the intervals $[d[u], f[u]]$ and
+the following holds: (1) $d[u] \lt d[v] \lt f[v] \lt f[u]$ (interval nesting), (2)
+$d[v] \lt d[u] \lt f[u] \lt f[v]$ (interval nesting), or (3) the intervals $[d[u], f[u]]$ and
 $[d[v], f[v]]$ are disjoint.
 
 _Proof._ The DFS call stack forms a nesting of intervals. When we start visiting $v$ from $u$We must
@@ -1172,10 +1172,10 @@ edge $(u, v)$$u$ appears before $v$.
 **Theorem 4.5.** The reverse post-order of a DFS on a DAG produces a valid topological ordering.
 
 _Proof._ Suppose there is an edge $(u, v)$ but $u$ appears after $v$ in the ordering (i.e.,
-$f[u] \lt{} f[v]$). Since $(u, v)$ is an edge, when $u$ is being explored (coloured GREY), if $v$ is
-WHITE, then $v$ is discovered as a descendant of $u$So $f[v] \lt{} f[u]$Contradiction. If $v$ is
+$f[u] \lt f[v]$). Since $(u, v)$ is an edge, when $u$ is being explored (coloured GREY), if $v$ is
+WHITE, then $v$ is discovered as a descendant of $u$So $f[v] \lt f[u]$Contradiction. If $v$ is
 GREY, we have a back edge, implying a cycle, contradicting that the graph is acyclic. If $v$ is
-BLACK, then $f[v] \lt{} d[u] \lt{} f[u]$Contradicting $f[u] \lt{} f[v]$. $\blacksquare$
+BLACK, then $f[v] \lt d[u] \lt f[u]$Contradicting $f[u] \lt f[v]$. $\blacksquare$
 
 ### 4.4 Strongly Connected Components
 
@@ -1238,7 +1238,7 @@ $P$ from $s$ to $u$And let $(x, y)$ be the first edge on $P$ where $x \in S$ and
 $\delta(s, y) = \delta(s, x) + w(x, y) = d[x] + w(x, y)$ (by induction). When $x$ was added to
 $S$The edge $(x, y)$ was relaxed, so $d[y] \leq d[x] + w(x, y) = \delta(s, y)$. Since edge weights
 are non-negative, $\delta(s, y) \leq \delta(s, u)$. But
-$d[y] \leq \delta(s, y) \leq \delta(s, u) \lt{} d[u]$And $y$ is in $Q$Contradicting that $u$ has the
+$d[y] \leq \delta(s, y) \leq \delta(s, u) \lt d[u]$And $y$ is in $Q$Contradicting that $u$ has the
 minimum $d$-value in $Q$. $\blacksquare$
 
 **Theorem 4.8.** Dijkstra's algorithm with a binary heap runs in $O((V + E)\log V)$ time. With a
@@ -1367,7 +1367,7 @@ Initial: $d[A] = 0$Rest $\infty$.
 
 **Iteration 5:** $d[B] = -11$$d[C] = -14$$d[A] = -15$.
 
-**Check (iteration 6):** $(A,B)$: $-15 + 1 = -14 \lt{} -11$Can still relax. **Negative cycle
+**Check (iteration 6):** $(A,B)$: $-15 + 1 = -14 \lt -11$Can still relax. **Negative cycle
 detected!**
 
 </details>
@@ -1460,7 +1460,7 @@ belong To any MST.
 
 _Proof._ Let $C$ be a cycle and $e$ be the maximum-weight edge on $C$. Let $T$ be an MST. If
 $e \notin T$We are done. Otherwise, removing $e$ from $T$ disconnects it into two components. The
-rest of cycle $C$ must contain an edge $e' \neq e$ crossing this cut. Since $w(e') \lt{} w(e)$ (if
+rest of cycle $C$ must contain an edge $e' \neq e$ crossing this cut. Since $w(e') \lt w(e)$ (if
 $w(e') = w(e)$We can replace either), replacing $e$ with $e'$ gives a spanning tree of strictly
 smaller weight, contradicting the optimality of $T$. $\blacksquare$
 
@@ -1593,7 +1593,7 @@ knapsack of capacity $W$Maximise the total value without exceeding the capacity.
 
 **Recurrence:**
 
-$$dp[i][c] = \begin{cases} 0 & \mathrm{if {} i = 0 \mathrm{ or {} c = 0 \\ dp[i-1][c] & \mathrm{if {} w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm{if {} w_i \leq c \end{cases}$$
+$$dp[i][c] = \begin{cases} 0 & \mathrm{if  i = 0 \mathrm{ or  c = 0 \\ dp[i-1][c] & \mathrm{if  w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm{if  w_i \leq c \end{cases}$$
 
 **Time:** $O(nW)$. **Space:** $O(nW)$ (can be reduced to $O(W)$ with 1D array).
 
@@ -1631,7 +1631,7 @@ insertions, deletions, and substitutions to transform $s$ into $t$.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin{cases} j & \mathrm{if {} i = 0 \\ i & \mathrm{if {} j = 0 \\ dp[i-1][j-1] & \mathrm{if {} s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm{if {} s[i] \neq t[j] \end{cases}$$
+$$dp[i][j] = \begin{cases} j & \mathrm{if  i = 0 \\ i & \mathrm{if  j = 0 \\ dp[i-1][j-1] & \mathrm{if  s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm{if  s[i] \neq t[j] \end{cases}$$
 
 Where the three cases in the minimum are: delete from $s$Insert into $s$Substitute in $s$.
 
@@ -1669,7 +1669,7 @@ multiplications.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin{cases} 0 & \mathrm{if {} i = j \\ \min_{i \leq k < j} (dp[i][k] + dp[k+1][j] + p_{i-1} p_k p_j) & \mathrm{if {} i < j \end{cases}$$
+$$dp[i][j] = \begin{cases} 0 & \mathrm{if  i = j \\ \min_{i \leq k < j} (dp[i][k] + dp[k+1][j] + p_{i-1} p_k p_j) & \mathrm{if  i < j \end{cases}$$
 
 **Time:** $O(n^3)$. **Space:** $O(n^2)$.
 
@@ -1704,12 +1704,12 @@ Minimum: $dp[1][3] = 4500$Split at $k=2$: $(A_1(A_2 A_3))$.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin{cases} 0 & \mathrm{if {} i = 0 \mathrm{ or {} j = 0 \\ dp[i-1][j-1] + 1 & \mathrm{if {} x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm{if {} x_i \neq y_j \end{cases}$$
+$$dp[i][j] = \begin{cases} 0 & \mathrm{if  i = 0 \mathrm{ or  j = 0 \\ dp[i-1][j-1] + 1 & \mathrm{if  x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm{if  x_i \neq y_j \end{cases}$$
 
 **Time:** $O(mn)$. **Space:** $O(mn)$ (can be reduced to $O(\min(m,n))$ for the length only).
 
 _Proof of correctness._ If $x_i = y_j$Any LCS of $X[1..i]$ and $Y[1..j]$ must include $x_i$ So
-$\mathrm{LCS{} = 1 + \mathrm{LCS{}(X[1..i-1], Y[1..j-1])$. If $x_i \neq y_j$The LCS either Excludes
+$\mathrm{LCS = 1 + \mathrm{LCS(X[1..i-1], Y[1..j-1])$. If $x_i \neq y_j$The LCS either Excludes
 $x_i$ or excludes $y_j$Giving the max of the two subproblems. $\blacksquare$
 
 ### 5.9 Worked Example: Coin Change
@@ -1719,7 +1719,7 @@ number of coins needed.
 
 **Recurrence:**
 
-$$dp[c] = \begin{cases} 0 & \mathrm{if {} c = 0 \\ \min_{i: d_i \leq c}(dp[c - d_i] + 1) & \mathrm{if {} c > 0 \end{cases}$$
+$$dp[c] = \begin{cases} 0 & \mathrm{if  c = 0 \\ \min_{i: d_i \leq c}(dp[c - d_i] + 1) & \mathrm{if  c > 0 \end{cases}$$
 
 **Time:** $O(nM)$. **Space:** $O(M)$.
 
@@ -1755,7 +1755,7 @@ Solution: 2 quarters + 1 dime + 3 pennies = $25 + 25 + 10 + 1 + 1 + 1 = 63$. 6 c
 **Problem.** Given a sequence $a_1, \ldots, a_n$Find the length of the longest strictly increasing
 subsequence (not necessarily contiguous).
 
-**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt{} i \mathrm{~and~{} a_j \lt{} a_i\\}$With
+**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt i \mathrm{~and~ a_j \lt a_i\\}$With
 $dp[i] = 1$ if no such $j$ exists.
 
 **Time:** $O(n^2)$. **Space:** $O(n)$.
@@ -1809,7 +1809,7 @@ Transforms instances of $A$ into instances of $B$Preserving the answer.
 
 **Theorem 6.2 (Cook-Levin, 1971).** SAT is NP-complete.
 
-_Proof sketch._ We show that every problem in NP reduces to SAT. Let $L \in \mathrm{NP{}$. There
+_Proof sketch._ We show that every problem in NP reduces to SAT. Let $L \in \mathrm{NP$. There
 exists a polynomial-time non-deterministic Turing machine $M$ that decides $L$Running in time $p(n)$
 on inputs of length $n$. For an input $x$We construct a Boolean formula $\phi_x$ that is satisfiable
 if and only if $M$ accepts $x$.
@@ -1846,7 +1846,7 @@ Tour of total weight $\leq B$?
 
 To prove a problem $B$ is NP-complete:
 
-1. Show $B \in \mathrm{NP{}$ (polynomial-time verifiable certificate).
+1. Show $B \in \mathrm{NP$ (polynomial-time verifiable certificate).
 2. Show a known NP-complete problem $A$ reduces to $B$: $A \leq_p B$.
 
 **Example.** 3-SAT $\leq_p$ Vertex Cover: construct a graph from the 3-SAT formula where each
@@ -1872,8 +1872,8 @@ of clause $j$.
 number of variables and $m$ is the number of clauses.
 
 ($\Rightarrow$) If $\phi$ is satisfiable, include in the cover: for each variable, the literal
-vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm{true{}$$\bar{x}_1$ if
-$x_1 = \mathrm{false{}$). This covers all literal edges ($k$ vertices). For each clause triangle, at
+vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm{true$$\bar{x}_1$ if
+$x_1 = \mathrm{false$). This covers all literal edges ($k$ vertices). For each clause triangle, at
 least one literal in the clause is true, so the corresponding literal vertex covers one of the three
 edges from the triangle. Include the other two vertices of the triangle ($2m$ vertices total).
 
@@ -1904,18 +1904,18 @@ least $(1/\rho)$ times the optimal value.
 
 _Proof._ The algorithm selects a set $C$ of vertices. Each edge in the matching used by the
 algorithm contributes 2 vertices to $C$. Let $M^*$ be a maximum matching. Then
-$|C| = 2|M^*| \leq 2 \cdot |\mathrm{OPT{}|$Since OPT must contain at least one endpoint of every
+$|C| = 2|M^*| \leq 2 \cdot |\mathrm{OPT|$Since OPT must contain at least one endpoint of every
 edge in $M^*$ (and $M^*$ is maximum, so $|M^*| \geq$ the size of any matching). Therefore the
 approximation ratio is at most 2. $\blacksquare$
 
 **Theorem 6.4 (Metric TSP).** The Christofides algorithm is a $3/2$-approximation for TSP with the
 triangle inequality.
 
-_Proof._ The algorithm computes an MST ($\leq \mathrm{OPT{}$), finds a minimum-weight perfect
-matching $M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{OPT{}/2$), and
+_Proof._ The algorithm computes an MST ($\leq \mathrm{OPT$), finds a minimum-weight perfect
+matching $M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{OPT/2$), and
 combines them into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at
 most
-$\mathrm{MST{} + \lvert M \rvert \leq \mathrm{OPT{} + \mathrm{OPT{}/2 = \frac{3}{2}\mathrm{OPT{}$.
+$\mathrm{MST + \lvert M \rvert \leq \mathrm{OPT + \mathrm{OPT/2 = \frac{3}{2}\mathrm{OPT$.
 $\blacksquare$
 
 **Theorem 6.5 (Inapproximability).** Unless P = NP, TSP (general, without triangle inequality) has
@@ -1925,14 +1925,14 @@ _Proof sketch._ If a $c$-approximation existed for TSP, we could use it to solve
 cycle problem (which is NP-complete): given a graph $G$Construct a TSP instance with edge weight 1
 for existing edges and weight $cn + 1$ for non-edges. If the approximation returns a tour of weight
 $n$Then $G$ has a Hamiltonian cycle. Otherwise, the tour weight is at least
-$n - 1 + cn + 1 \gt{} cn$So the approximation ratio would exceed $c$Contradiction. $\blacksquare$
+$n - 1 + cn + 1 \gt cn$So the approximation ratio would exceed $c$Contradiction. $\blacksquare$
 
 **Theorem 6.6 (SET COVER).** The greedy algorithm for SET COVER is a $(\ln n + O(1))$-approximation,
 where $n$ is the size of the universe.
 
 _Proof sketch._ At each step, the greedy algorithm picks the set covering the most uncovered
 elements. Let $c_i$ be the cost of the $i$-th set picked, and let $n_i$ be the number of newly
-covered elements. Then $c_i / n_i \leq \mathrm{OPT{} / (n - \sum_{j \lt{} i} n_j)$ (otherwise OPT
+covered elements. Then $c_i / n_i \leq \mathrm{OPT / (n - \sum_{j \lt i} n_j)$ (otherwise OPT
 could not cover the remaining elements at lower cost). Summing gives the $\ln n + O(1)$ bound.
 $\blacksquare$
 
@@ -1974,7 +1974,7 @@ probability.
 probability $\epsilon^k$ by running it $k$ times and taking the majority vote (for decision problems
 with one-sided error) or the most frequent answer (for two-sided error).
 
-_Proof._ For one-sided error: $\Pr[\mathrm{all~{} k \mathrm{~runs~fail{}] = \epsilon^k$. For
+_Proof._ For one-sided error: $\Pr[\mathrm{all~ k \mathrm{~runs~fail] = \epsilon^k$. For
 two-sided error with majority vote: by the Chernoff bound, the probability that the majority is
 wrong decreases exponentially in $k$. $\blacksquare$
 
@@ -2048,17 +2048,17 @@ $\leq 4^{-k}$.
 
 #### 6.3.3 Hashing with Universal Hash Functions
 
-**Definition.** A family $\mathcal{{'}H{}'}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$
+**Definition.** A family $\mathcal{H}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$
 is **universal** if for any distinct
-$x, y \in U$$\Pr_{h \in \mathcal{{'}H{}'}}[h(x) = h(y)] \leq 1/m$.
+$x, y \in U$$\Pr_{h \in \mathcal{H}}[h(x) = h(y)] \leq 1/m$.
 
 **Theorem 6.8.** With a universal hash family and chaining, the expected number of collisions for
 any element is at most $n/m$.
 
 _Proof._ For a fixed element $x$Let $X_{iy}$ be the indicator that $h(x) = h(y_i)$ where
 $y_1, \ldots, y_n$ are the other $n-1$ elements. Then
-$\mathrm{E{}[X_{iy}] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation,
-the expected number of collisions is $\sum_i \mathrm{E{}[X_{iy}] \leq (n-1)/m$. $\blacksquare$
+$\mathrm{E[X_{iy}] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation,
+the expected number of collisions is $\sum_i \mathrm{E[X_{iy}] \leq (n-1)/m$. $\blacksquare$
 
 ### 6.4 Amortised Analysis (Detailed)
 
@@ -2125,9 +2125,9 @@ alternating directions).
 **Access Lemma.** The amortised cost of splaying a node $x$ in a splay tree with $n$ nodes is
 $O(\log n)$.
 
-_Proof sketch._ Define the potential as $\Phi(T) = \sum_{x \in T} \log \mathrm{size{}(x)$Where
-$\mathrm{size{}(x)$ is the number of nodes in the subtree rooted at $x$ (including $x$). Define the
-**rank** $r(x) = \log \mathrm{size{}(x)$.
+_Proof sketch._ Define the potential as $\Phi(T) = \sum_{x \in T} \log \mathrm{size(x)$Where
+$\mathrm{size(x)$ is the number of nodes in the subtree rooted at $x$ (including $x$). Define the
+**rank** $r(x) = \log \mathrm{size(x)$.
 
 The amortised cost of a splay step at node $x$ with parent $p$ and grandparent $g$ is
 $\hat{c} = 1 + r'(x) - r(x)$Where primes denote ranks after the step.
@@ -2137,7 +2137,7 @@ $\hat{c} = 1 + r'(x) - r(x)$Where primes denote ranks after the step.
 - **Zig-zag:** $\hat{c} = 2 + r'(x) - r(x) \leq 3(r'(x) - r(x))$.
 
 Summing over all splay steps:
-$\hat{c}_{\mathrm{total{}} \leq 1 + 3(r_{\mathrm{final{}}(x) - r_{\mathrm{initial{}}(x)) \leq 1 + 3 \log n = O(\log n)$.
+$\hat{c}_{\mathrm{total} \leq 1 + 3(r_{\mathrm{final}(x) - r_{\mathrm{initial}(x)) \leq 1 + 3 \log n = O(\log n)$.
 $\blacksquare$
 
 **Corollary.** A sequence of $m$ splay tree operations takes $O(m \log n)$ amortised time.

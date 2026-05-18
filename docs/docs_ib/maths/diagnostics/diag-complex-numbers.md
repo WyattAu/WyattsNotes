@@ -120,7 +120,7 @@ $$\frac{-5 + 12i}{1 - i} \cdot \frac{1 + i}{1 + i} = \frac{(-5 + 12i)(1 + i)}{1 
 
 $$= \frac{-5 + 7i - 12}{2} = \frac{-17 + 7i}{2} = -\frac{17}{2} + \frac{7}{2}i$$
 
-**(b)** Let $z = a + bi$ where $a, b \in \mathbb{{'}R{}'}$ and $(a, b) \neq (0, 0)$.
+**(b)** Let $z = a + bi$ where $a, b \in \mathbb{R}$ and $(a, b) \neq (0, 0)$.
 
 $$\frac{1}{\bar{z}} = \frac{1}{a - bi} \cdot \frac{a + bi}{a + bi} = \frac{a + bi}{a^2 + b^2} = \frac{a}{a^2 + b^2} + \frac{b}{a^2 + b^2}i$$
 

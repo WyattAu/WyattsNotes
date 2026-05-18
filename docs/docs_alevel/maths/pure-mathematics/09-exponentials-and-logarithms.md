@@ -91,7 +91,7 @@ Hence $\dfrac{d}{dx}e^x = e^x \cdot 1 = e^x$. $\blacksquare$
 
 ### 2.2 Derivative of $a^x$
 
-For a general base $a \gt{} 0$:
+For a general base $a \gt 0$:
 
 $$\frac{d}{dx}a^x = \frac{d}{dx}e^{x\ln a} = (\ln a)\, e^{x\ln a} = a^x \ln a$$
 
@@ -112,7 +112,7 @@ Are all governed by exponential functions.
 
 ### 3.1 Definition
 
-**Definition.** For $a \gt{} 0$$a \neq 1$The **logarithm** $\log_a x$ is the inverse function of
+**Definition.** For $a \gt 0$$a \neq 1$The **logarithm** $\log_a x$ is the inverse function of
 $a^x$:
 
 $$y = \log_a x \iff a^y = x$$
@@ -121,7 +121,7 @@ The **natural logarithm** is the logarithm with base $e$Written $\ln x = \log_e 
 
 ### 3.2 Proof that $a^{\log_a x} = x$ and $\log_a(a^x) = x$
 
-**Theorem.** For all $a \gt{} 0$$a \neq 1$And all $x \gt{} 0$:
+**Theorem.** For all $a \gt 0$$a \neq 1$And all $x \gt 0$:
 
 $$(\mathrm{i})\quad a^{\log_a x} = x \qquad (\mathrm{ii})\quad \log_a(a^x) = x$$
 
@@ -175,7 +175,7 @@ Therefore $\log_a(x^n) = pn = n\log_a x$. $\blacksquare$
 
 ## 5. Change of Base Formula
 
-**Theorem.** For all $a, b \gt{} 0$ with $a, b \neq 1$:
+**Theorem.** For all $a, b \gt 0$ with $a, b \neq 1$:
 
 $$\log_a b = \frac◆LB◆\ln b◆RB◆◆LB◆\ln a◆RB◆ = \frac◆LB◆\log_{10} b◆RB◆◆LB◆\log_{10} a◆RB◆$$
 
@@ -210,9 +210,9 @@ This means $\ln x$ is the signed area under the curve $y = 1/t$ from $t = 1$ to 
 From this definition, several properties follow immediately:
 
 - $\ln 1 = 0$ (the integral from 1 to 1 of any function is zero)
-- $\ln x \lt{} 0$ for $0 \lt{} x \lt{} 1$ (negative area when integrating backwards)
-- $\ln x \gt{} 0$ for $x \gt{} 1$ (positive area)
-- $\ln x$ is strictly increasing (the integrand $1/t \gt{} 0$)
+- $\ln x \lt 0$ for $0 \lt x \lt 1$ (negative area when integrating backwards)
+- $\ln x \gt 0$ for $x \gt 1$ (positive area)
+- $\ln x$ is strictly increasing (the integrand $1/t \gt 0$)
 
 ### 6.3 Derivative of $\ln x$
 
@@ -261,11 +261,11 @@ $$
 
 Sometimes we can use a substitution. For example, $e^{2x} + 3e^x - 4 = 0$.
 
-Let $u = e^x$ (note $u \gt{} 0$). Then $u^2 + 3u - 4 = 0$Giving $(u+4)(u-1) = 0$So $u = 1$
+Let $u = e^x$ (note $u \gt 0$). Then $u^2 + 3u - 4 = 0$Giving $(u+4)(u-1) = 0$So $u = 1$
 (rejecting $u = -4$). Hence $e^x = 1$Giving $x = 0$.
 
 :::warning When substituting $u = a^x$ or $u = \ln x$Always check the domain. For $u = a^x$ we Have
-$u \gt{} 0$; for $u = \ln x$ we have $x \gt{} 0$. Always reject invalid solutions. :::
+$u \gt 0$; for $u = \ln x$ we have $x \gt 0$. Always reject invalid solutions. :::
 
 <hr />
 
@@ -414,7 +414,7 @@ $$\log_2[(x+3)(x-1)] = 4 \implies (x+3)(x-1) = 16$$
 $$x^2 + 2x - 3 = 16 \implies x^2 + 2x - 19 = 0$$
 $$x = \frac◆LB◆-2 \pm \sqrt{4+76}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-2 \pm \sqrt{80}◆RB◆◆LB◆2◆RB◆ = -1 \pm 2\sqrt{5}$$
 
-Domain: $x \gt{} 1$So $x = -1 + 2\sqrt{5}$.
+Domain: $x \gt 1$So $x = -1 + 2\sqrt{5}$.
 
 **If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4.
 
@@ -441,7 +441,7 @@ Solve $5^{2x} - 6 \cdot 5^x + 5 = 0$.
 
 <details>
 <summary>Solution 5</summary>
-Let $u = 5^x$ ($u \gt{} 0$). Then $u^2 - 6u + 5 = 0$So $(u-1)(u-5) = 0$.
+Let $u = 5^x$ ($u \gt 0$). Then $u^2 - 6u + 5 = 0$So $(u-1)(u-5) = 0$.
 
 $u = 1$: $5^x = 1 \implies x = 0$. $u = 5$: $5^x = 5 \implies x = 1$.
 
@@ -492,7 +492,7 @@ Solve $\ln(3x-1) = \ln(x+2) + \ln 4$.
 <summary>Solution 8</summary>
 $$\ln(3x-1) = \ln[4(x+2)] \implies 3x - 1 = 4x + 8 \implies x = -9$$
 
-Check domain: $3(-9)-1 = -28 \lt{} 0$ and $-9+2 = -7 \lt{} 0$. Both logarithms undefined. **No
+Check domain: $3(-9)-1 = -28 \lt 0$ and $-9+2 = -7 \lt 0$. Both logarithms undefined. **No
 Solution.**
 
 **If you get this wrong, revise:** [Solving Exponential Equations](#7-solving-exponential-equations)
@@ -502,7 +502,7 @@ Solution.**
 
 <details>
 <summary>Problem 9</summary>
-Prove that $\log_a b \cdot \log_b a = 1$ for all $a, b \gt{} 0$$a, b \neq 1$.
+Prove that $\log_a b \cdot \log_b a = 1$ for all $a, b \gt 0$$a, b \neq 1$.
 </details>
 
 <details>
@@ -566,7 +566,7 @@ Given $\ln(x^2 + 1) = 2\ln x + \ln 5$Solve for $x$.
 $$\ln(x^2+1) = \ln(x^2) + \ln 5 = \ln(5x^2)$$
 $$x^2 + 1 = 5x^2 \implies 4x^2 = 1 \implies x^2 = \frac{1}{4} \implies x = \frac{1}{2}$$
 
-Reject $x = -1/2$ since $\ln x$ requires $x \gt{} 0$.
+Reject $x = -1/2$ since $\ln x$ requires $x \gt 0$.
 
 **If you get this wrong, revise:** [Laws of Logarithms](#4-laws-of-logarithms) — Section 4 and
 Domain restrictions.

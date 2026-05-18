@@ -285,7 +285,7 @@ The nucleus of an atom contains **protons** (positively charged, $+e$) and **neu
 - **Atomic number (proton number)** $Z$: the number of protons in the nucleus.
 - **Mass number (nucleon number)** $A$: the total number of protons and neutrons ($A = Z + N$).
 - **Neutron number** $N = A - Z$: the number of neutrons.
-- **Nuclide notation:** $\prescript{A}{}{Z}\mathrm{X}$Where X is the chemical symbol.
+- **Nuclide notation:** $\prescript{A}{Z}\mathrm{X}$Where X is the chemical symbol.
 - **Isotopes:** atoms of the same element with different numbers of neutrons (same $Z$Different
   $A$).
 - **Isobars:** nuclei with the same mass number but different proton number (same $A$Different $Z$).
@@ -312,9 +312,9 @@ are Three main types:
 
 **Alpha decay ($\alpha$):**
 
-An alpha particle ($\prescript{4}{}{2}\mathrm{He}$I.e., a helium-4 nucleus) is emitted:
+An alpha particle ($\prescript{4}{2}\mathrm{He}$I.e., a helium-4 nucleus) is emitted:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A-4}{}{Z-2}\mathrm{Y} + \prescript{4}{}{2}\mathrm{He}$$
+$$\prescript{A}{Z}\mathrm{X} \to \prescript{A-4}{Z-2}\mathrm{Y} + \prescript{4}{2}\mathrm{He}$$
 
 Alpha particles are highly ionising but have low penetration (stopped by a few centimetres of air or
 a Sheet of paper).
@@ -327,7 +327,7 @@ $$n \to p + e^- + \bar{\nu}_e$$
 
 The nuclear equation:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z+1}\mathrm{Y} + e^- + \bar{\nu}_e$$
+$$\prescript{A}{Z}\mathrm{X} \to \prescript{A}{Z+1}\mathrm{Y} + e^- + \bar{\nu}_e$$
 
 Mass number $A$ is conserved; proton number increases by 1. The antineutrino is required to conserve
 Energy and momentum (the continuous energy spectrum of beta particles led Pauli to propose its
@@ -341,7 +341,7 @@ $$p \to n + e^+ + \nu_e$$
 
 The nuclear equation:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z-1}\mathrm{Y} + e^+ + \nu_e$$
+$$\prescript{A}{Z}\mathrm{X} \to \prescript{A}{Z-1}\mathrm{Y} + e^+ + \nu_e$$
 
 Beta-plus decay requires the parent nucleus to have sufficient energy to create the positron mass.
 
@@ -350,14 +350,14 @@ Beta-plus decay requires the parent nucleus to have sufficient energy to create 
 After alpha or beta decay, the daughter nucleus is often left in an excited state. It returns to the
 Ground state by emitting a gamma photon:
 
-$$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
+$$\prescript{A}{Z}\mathrm{X}^* \to \prescript{A}{Z}\mathrm{X} + \gamma$$
 
 Gamma rays are highly penetrating but weakly ionising. They require thick lead or concrete for
 Shielding.
 
 | Property          | Alpha ($\alpha$)                        | Beta ($\beta$)      | Gamma ($\gamma$) |
 | ----------------- | --------------------------------------- | ------------------- | ---------------- |
-| Particle          | $\prescript{4}{}{2}\mathrm{He}$ nucleus | Electron / Positron | Photon           |
+| Particle          | $\prescript{4}{2}\mathrm{He}$ nucleus | Electron / Positron | Photon           |
 | Charge            | $+2e$                                   | $\pm e$             | 0                |
 | Ionising power    | High                                    | Moderate            | Low              |
 | Penetrating power | Low                                     | Moderate            | High             |
@@ -440,26 +440,26 @@ All nuclear reactions must satisfy the following conservation laws:
 Complete the following nuclear equations:
 
 (a)
-$\prescript{238}{}{92}\mathrm{U} \to \prescript{234}{}{90}\mathrm{Th} + \prescript{4}{}{2}\mathrm{He}$
+$\prescript{238}{92}\mathrm{U} \to \prescript{234}{90}\mathrm{Th} + \prescript{4}{2}\mathrm{He}$
 
 This is alpha decay. Check conservation: $A = 238 = 234 + 4$ and $Z = 92 = 90 + 2$.
 
-(b) $\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + e^- + \bar{\nu}_e$
+(b) $\prescript{14}{6}\mathrm{C} \to \prescript{14}{7}\mathrm{N} + e^- + \bar{\nu}_e$
 
 This is beta-minus decay. Check: $A = 14 = 14 + 0$ and $Z = 6 = 7 + (-1)$.
 
-(c) $\prescript{11}{}{6}\mathrm{C} \to \prescript{11}{}{5}\mathrm{B} + e^+ + \nu_e$
+(c) $\prescript{11}{6}\mathrm{C} \to \prescript{11}{5}\mathrm{B} + e^+ + \nu_e$
 
 This is beta-plus decay. Check: $A = 11 = 11 + 0$ and $Z = 6 = 5 + 1$.
 
 (d) Identify the unknown particle X in:
-$\prescript{14}{}{7}\mathrm{N} + \prescript{4}{}{2}\mathrm{He} \to \prescript{17}{}{8}\mathrm{O} + \mathrm{X}$
+$\prescript{14}{7}\mathrm{N} + \prescript{4}{2}\mathrm{He} \to \prescript{17}{8}\mathrm{O} + \mathrm{X}$
 
 Conservation of $A$: $14 + 4 = 17 + A_X \implies A_X = 1$
 
 Conservation of $Z$: $7 + 2 = 8 + Z_X \implies Z_X = 1$
 
-Therefore $\mathrm{X} = \prescript{1}{}{1}\mathrm{H}$ (a proton).
+Therefore $\mathrm{X} = \prescript{1}{1}\mathrm{H}$ (a proton).
 
 **If you get this wrong, revise:** Section 2.4.
 
@@ -485,24 +485,24 @@ $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$. This conversion factor appears in the
 **Binding energy per nucleon** is a measure of nuclear stability. Plotting binding energy per
 nucleon Against mass number gives the binding energy curve, which shows:
 
-- Very light nuclei (e.g., $\prescript{2}{}{1}\mathrm{H}$) have low binding energy per nucleon.
+- Very light nuclei (e.g., $\prescript{2}{1}\mathrm{H}$) have low binding energy per nucleon.
 - The curve peaks around $A \approx 56$ (iron-56 is the most stable nucleus).
 - Heavy nuclei (e.g., uranium) have lower binding energy per nucleon.
 
-The **most stable** nucleus is $\prescript{62}{}{28}\mathrm{Ni}$ or
-$\prescript{56}{}{26}\mathrm{Fe}$ With the highest binding energy per nucleon of approximately
+The **most stable** nucleus is $\prescript{62}{28}\mathrm{Ni}$ or
+$\prescript{56}{26}\mathrm{Fe}$ With the highest binding energy per nucleon of approximately
 $8.8\,\mathrm{MeV/nucleon}$.
 
 <details>
 <summary>Worked Example: Binding Energy of Helium-4</summary>
 
-Calculate the binding energy per nucleon of $\prescript{4}{}{2}\mathrm{He}$ (alpha particle).
+Calculate the binding energy per nucleon of $\prescript{4}{2}\mathrm{He}$ (alpha particle).
 
 Given masses:
 
 - $m_p = 1.00728\,\mathrm{u}$
 - $m_n = 1.00867\,\mathrm{u}$
-- $m(\prescript{4}{}{2}\mathrm{He}) = 4.00151\,\mathrm{u}$
+- $m(\prescript{4}{2}\mathrm{He}) = 4.00151\,\mathrm{u}$
 
 Mass defect:
 
@@ -530,7 +530,7 @@ energy per nucleon Than the parent nucleus.
 
 A typical fission reaction:
 
-$$\prescript{235}{}{92}\mathrm{U} + \prescript{1}{}{0}\mathrm{n} \to \prescript{236}{}{92}\mathrm{U}^* \to \prescript{141}{}{56}\mathrm{Ba} + \prescript{92}{}{36}\mathrm{Kr} + 3\prescript{1}{}{0}\mathrm{n}$$
+$$\prescript{235}{92}\mathrm{U} + \prescript{1}{0}\mathrm{n} \to \prescript{236}{92}\mathrm{U}^* \to \prescript{141}{56}\mathrm{Ba} + \prescript{92}{36}\mathrm{Kr} + 3\prescript{1}{0}\mathrm{n}$$
 
 Key features:
 
@@ -546,9 +546,9 @@ Fusion occurs because the product has a higher binding energy per nucleon than t
 
 Example fusion reactions:
 
-$$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 3.27\,\mathrm{MeV}$$
+$$\prescript{2}{1}\mathrm{H} + \prescript{2}{1}\mathrm{H} \to \prescript{3}{2}\mathrm{He} + \prescript{1}{0}\mathrm{n} + 3.27\,\mathrm{MeV}$$
 
-$$\prescript{2}{}{1}\mathrm{H} + \prescript{3}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 17.6\,\mathrm{MeV}$$
+$$\prescript{2}{1}\mathrm{H} + \prescript{3}{1}\mathrm{H} \to \prescript{4}{2}\mathrm{He} + \prescript{1}{0}\mathrm{n} + 17.6\,\mathrm{MeV}$$
 
 Fusion requires extremely high temperatures ($\sim 10^7\,\mathrm{K}$) to overcome the electrostatic
 Repulsion between the positively charged nuclei. At these temperatures, matter exists as a
@@ -565,14 +565,14 @@ Repulsion between the positively charged nuclei. At these temperatures, matter e
 <details>
 <summary>Worked Example: Energy from Fission</summary>
 
-Calculate the energy released when $\prescript{235}{}{92}\mathrm{U}$ undergoes fission to produce
-$\prescript{141}{}{56}\mathrm{Ba}$$\prescript{92}{}{36}\mathrm{Kr}$And 3 neutrons.
+Calculate the energy released when $\prescript{235}{92}\mathrm{U}$ undergoes fission to produce
+$\prescript{141}{56}\mathrm{Ba}$$\prescript{92}{36}\mathrm{Kr}$And 3 neutrons.
 
 Given masses:
 
-- $m(\prescript{235}{}{92}\mathrm{U}) = 235.044\,\mathrm{u}$
-- $m(\prescript{141}{}{56}\mathrm{Ba}) = 140.914\,\mathrm{u}$
-- $m(\prescript{92}{}{36}\mathrm{Kr}) = 91.926\,\mathrm{u}$
+- $m(\prescript{235}{92}\mathrm{U}) = 235.044\,\mathrm{u}$
+- $m(\prescript{141}{56}\mathrm{Ba}) = 140.914\,\mathrm{u}$
+- $m(\prescript{92}{36}\mathrm{Kr}) = 91.926\,\mathrm{u}$
 - $m_n = 1.009\,\mathrm{u}$
 
 Mass of reactants: $235.044 + 1.009 = 236.053\,\mathrm{u}$
@@ -698,13 +698,13 @@ on How momentum is shared with any recoiling nucleus).
 <details>
 <summary>Worked Example 4: Nuclear Binding Energy</summary>
 
-Calculate the binding energy per nucleon of $\prescript{56}{}{26}\mathrm{Fe}$.
+Calculate the binding energy per nucleon of $\prescript{56}{26}\mathrm{Fe}$.
 
 Given masses:
 
 - $m_p = 1.00728\,\mathrm{u}$
 - $m_n = 1.00867\,\mathrm{u}$
-- $m(\prescript{56}{}{26}\mathrm{Fe}) = 55.93493\,\mathrm{u}$
+- $m(\prescript{56}{26}\mathrm{Fe}) = 55.93493\,\mathrm{u}$
 
 Number of protons: $Z = 26$Number of neutrons: $N = 56 - 26 = 30$.
 
@@ -976,12 +976,12 @@ $$50 = 800 e^{-\lambda t} \implies t = \frac{\ln 16}{\lambda} = \frac{2.773}{4.1
 
 Complete the following nuclear equation and state the type of decay:
 
-$$\prescript{226}{}{88}\mathrm{Ra} \to \prescript{222}{}{86}\mathrm{Rn} + \prescript{A}{}{Z}\mathrm{X}$$
+$$\prescript{226}{88}\mathrm{Ra} \to \prescript{222}{86}\mathrm{Rn} + \prescript{A}{Z}\mathrm{X}$$
 
 Also calculate the energy released given the following masses:
-$m(\prescript{226}{}{88}\mathrm{Ra}) = 226.02540\,\mathrm{u}$
-$m(\prescript{222}{}{86}\mathrm{Rn}) = 222.01757\,\mathrm{u}$
-$m(\prescript{4}{}{2}\mathrm{He}) = 4.00260\,\mathrm{u}$.
+$m(\prescript{226}{88}\mathrm{Ra}) = 226.02540\,\mathrm{u}$
+$m(\prescript{222}{86}\mathrm{Rn}) = 222.01757\,\mathrm{u}$
+$m(\prescript{4}{2}\mathrm{He}) = 4.00260\,\mathrm{u}$.
 
 <details>
 <summary>Solution</summary>
@@ -990,7 +990,7 @@ Conservation of $A$: $226 = 222 + A \implies A = 4$
 
 Conservation of $Z$: $88 = 86 + Z \implies Z = 2$
 
-So $\mathrm{X} = \prescript{4}{}{2}\mathrm{He}$ (alpha particle). This is **alpha decay**.
+So $\mathrm{X} = \prescript{4}{2}\mathrm{He}$ (alpha particle). This is **alpha decay**.
 
 Mass defect:
 
@@ -1006,9 +1006,9 @@ $$E = 0.00523 \times 931.5 = 4.87\,\mathrm{MeV}$$
 
 ### Problem 9
 
-Calculate the binding energy per nucleon of lithium-7 ($\prescript{7}{}{3}\mathrm{Li}$).
+Calculate the binding energy per nucleon of lithium-7 ($\prescript{7}{3}\mathrm{Li}$).
 
-Given: $m(\prescript{7}{}{3}\mathrm{Li}) = 7.01600\,\mathrm{u}$$m_p = 1.00728\,\mathrm{u}$
+Given: $m(\prescript{7}{3}\mathrm{Li}) = 7.01600\,\mathrm{u}$$m_p = 1.00728\,\mathrm{u}$
 $m_n = 1.00867\,\mathrm{u}$.
 
 <details>
@@ -1036,17 +1036,17 @@ $$\frac{E_b}{A} = \frac{37.7}{7} = 5.39\,\mathrm{MeV/nucleon}$$
 
 ### Problem 10
 
-In a nuclear fusion reaction, two deuterium nuclei ($\prescript{2}{}{1}\mathrm{H}$) fuse to form
-Helium-3 ($\prescript{3}{}{2}\mathrm{He}$) and a neutron. Calculate the energy released.
+In a nuclear fusion reaction, two deuterium nuclei ($\prescript{2}{1}\mathrm{H}$) fuse to form
+Helium-3 ($\prescript{3}{2}\mathrm{He}$) and a neutron. Calculate the energy released.
 
-Given: $m(\prescript{2}{}{1}\mathrm{H}) = 2.01410\,\mathrm{u}$
-$m(\prescript{3}{}{2}\mathrm{He}) = 3.01603\,\mathrm{u}$ $m_n = 1.00867\,\mathrm{u}$.
+Given: $m(\prescript{2}{1}\mathrm{H}) = 2.01410\,\mathrm{u}$
+$m(\prescript{3}{2}\mathrm{He}) = 3.01603\,\mathrm{u}$ $m_n = 1.00867\,\mathrm{u}$.
 
 <details>
 <summary>Solution</summary>
 
 Reaction:
-$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n}$
+$\prescript{2}{1}\mathrm{H} + \prescript{2}{1}\mathrm{H} \to \prescript{3}{2}\mathrm{He} + \prescript{1}{0}\mathrm{n}$
 
 Mass of reactants: $2(2.01410) = 4.02820\,\mathrm{u}$
 

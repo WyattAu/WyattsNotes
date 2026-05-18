@@ -54,7 +54,7 @@ Positions at the end of the array.
 **Proof.** By induction on $i$.
 
 _Base case ($i = 0$)._ The inner loop compares each adjacent pair from index 0 to $n-2$. Whenever
-$A[j] \gt{} A[j+1]$They are swapped. This ensures the maximum element moves rightward through Every
+$A[j] \gt A[j+1]$They are swapped. This ensures the maximum element moves rightward through Every
 comparison until it reaches index $n-1$. ✓
 
 _Inductive step._ Assume after pass $i-1$The $i$ largest elements are at indices $n-i, \ldots, n-1$.
@@ -101,12 +101,12 @@ def insertion_sort(A):
 
 ### Correctness Proof
 
-**Theorem.** After the $i$-th iteration of the outer loop ($1 \leq i \lt{} n$), the subarray
+**Theorem.** After the $i$-th iteration of the outer loop ($1 \leq i \lt n$), the subarray
 $A[0..i]$ is sorted.
 
 **Proof.** By induction on $i$.
 
-_Base case ($i = 1$)._ $A[0..1]$ contains at most 2 elements. If $A[0] \gt{} A[1]$They are Swapped;
+_Base case ($i = 1$)._ $A[0..1]$ contains at most 2 elements. If $A[0] \gt A[1]$They are Swapped;
 otherwise, no change. Either way, $A[0..1]$ is sorted. ✓
 
 _Inductive step._ Assume $A[0..i-1]$ is sorted. We insert $A[i]$ (stored as `key`) by shifting
@@ -171,7 +171,7 @@ def merge(L, R):
 
 _Base case._ $n \leq 1$: the array is sorted. ✓
 
-_Inductive step._ Assume `merge_sort` correctly sorts arrays of size $\lt{} n$. For an array of size
+_Inductive step._ Assume `merge_sort` correctly sorts arrays of size $\lt n$. For an array of size
 $n$:
 
 1. Split into $L$ (size $\lfloor n/2 \rfloor$) and $R$ (size $\lceil n/2 \rceil$). By the inductive
@@ -206,7 +206,7 @@ $$T(n) = O(n \log n)$$
 ### Algorithm
 
 Select a **pivot** element, partition the array so that elements
-$\lt{} $ pivot are on the left and elements $\geq$ pivot are on the right, then recursively sort the
+$\lt $ pivot are on the left and elements $\geq$ pivot are on the right, then recursively sort the
 Two partitions.
 
 ```python
@@ -232,25 +232,25 @@ def partition(A, low, high):
 ### Correctness Proof
 
 **Theorem.** After `partition(A, low, high)`The pivot is at its final sorted position, all Elements
-to its left are $\lt{} $ pivot, and all elements to its right are $\geq$ pivot.
+to its left are $\lt $ pivot, and all elements to its right are $\geq$ pivot.
 
 **Proof.** The variable `i` tracks the boundary between elements
-$\lt{} $ pivot (indices `low..i`) and elements $\geq$ pivot (indices `i+1..j-1`). The loop
+$\lt $ pivot (indices `low..i`) and elements $\geq$ pivot (indices `i+1..j-1`). The loop
 Invariant:
 
 _At the start of each iteration with index `j`:_
 
-- $A[\mathrm{low}..i]$ contains only elements $\lt{} $ pivot
+- $A[\mathrm{low}..i]$ contains only elements $\lt $ pivot
 - $A[i+1..j-1]$ contains only elements $\geq$ pivot
 - $A[\mathrm{high}] = \mathrm{pivot}$ (unchanged)
 
-_Maintenance._ If $A[j] \lt{} \mathrm{pivot}$Increment $i$ and swap $A[i]$ with $A[j]$Extending The
-"$\lt{} $ pivot" region. If $A[j] \geq \mathrm{pivot}$Increment $j$ only, extending the "$\geq$
+_Maintenance._ If $A[j] \lt \mathrm{pivot}$Increment $i$ and swap $A[i]$ with $A[j]$Extending The
+"$\lt $ pivot" region. If $A[j] \geq \mathrm{pivot}$Increment $j$ only, extending the "$\geq$
 pivot" region.
 
 _Termination._ After the loop, swap $A[i+1]$ with $A[\mathrm{high}]$ (the pivot). Now:
 
-- $A[\mathrm{low}..i]$ all $\lt{} $ pivot
+- $A[\mathrm{low}..i]$ all $\lt $ pivot
 - $A[i+1] = \mathrm{pivot}$ (final position)
 - $A[i+2..\mathrm{high}]$ all $\geq$ pivot
 
@@ -395,7 +395,7 @@ Final: `[1, 1, 2, 3, 6, 8, 10]`
 <details>
 <summary>Answer</summary>
 
-Insertion sort inserts $A[i]$ into the sorted portion $A[0..i-1]$ by shifting elements $\gt{} A[i]$
+Insertion sort inserts $A[i]$ into the sorted portion $A[0..i-1]$ by shifting elements $\gt A[i]$
 One position right. The condition for shifting is `A[j] > key` (strictly greater). If
 $A[j] = \mathrm{key}$The element is **not** shifted, and `key` is placed **after** the equal
 Element. Therefore, equal elements maintain their relative input order. $\square$
@@ -414,7 +414,7 @@ Theoretically possible to sort 5 elements in 7 comparisons. However, this requir
 Balanced decision tree (each comparison splits the remaining possibilities roughly in half), which
 Is achievable by an optimal comparison-based sorting algorithm.
 
-Note: $2^6 = 64 \lt{} 120$So 6 comparisons are insufficient. The minimum is
+Note: $2^6 = 64 \lt 120$So 6 comparisons are insufficient. The minimum is
 $\lceil \log_2 120 \rceil = 7$ comparisons.
 
 </details>
@@ -427,7 +427,7 @@ Complexity?
 
 Insertion sort is preferred when:
 
-1. **The array is small** ( $n \lt{} 20$): the constant factors of insertion sort are smaller
+1. **The array is small** ( $n \lt 20$): the constant factors of insertion sort are smaller
 2. **The array is nearly sorted**: insertion sort runs in $O(n + d)$ where $d$ is the number of
    inversions
 3. **Memory is constrained**: insertion sort is in-place ($O(1)$ extra space) vs merge sort's $O(n)$
@@ -476,7 +476,7 @@ Therefore: $T(n) = \Theta(n \log n)$.
 <details>
 <summary>Answer</summary>
 
-An inversion is a pair $(i, j)$ with $i \lt{} j$ and $A[i] \gt{} A[j]$.
+An inversion is a pair $(i, j)$ with $i \lt j$ and $A[i] \gt A[j]$.
 
 (2, 1): 2 > 1 ✓ (4, 1): 4 > 1 ✓ (4, 3): 4 > 3 ✓
 
@@ -512,7 +512,7 @@ def merge_count(L, R):
     return result, inversions
 ```
 
-When $R[j] \lt{} L[i]$All elements $L[i], L[i+1], \ldots$ in the left half are greater than
+When $R[j] \lt L[i]$All elements $L[i], L[i+1], \ldots$ in the left half are greater than
 $R[j]$Contributing `len(L) - i` inversions.
 
 Total inversions = sum of inversions from all merge steps. Total time: $O(n \log n)$.

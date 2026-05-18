@@ -369,7 +369,7 @@ $$
 For a 1 TB dataset with 5% daily change rate:
 
 $$
-Total\_Storage = 4 \times 1 \mathrm{ TB{} + 28 \times 50 \mathrm{ GB{} = 4 \mathrm{ TB{} + 1.4 \mathrm{ TB{} = 5.4 \mathrm{ TB{}
+Total\_Storage = 4 \times 1 \mathrm{ TB + 28 \times 50 \mathrm{ GB = 4 \mathrm{ TB + 1.4 \mathrm{ TB = 5.4 \mathrm{ TB
 $$
 
 ### Synthetic Full Backup

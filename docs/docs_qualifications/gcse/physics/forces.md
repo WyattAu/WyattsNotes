@@ -67,15 +67,15 @@ Forces at angles: use a vector diagram (triangle or parallelogram of forces).
 **Worked Example.** Two forces of 30 N and 40 N act on an object at right angles. Find the magnitude
 Of the resultant force.
 
-$$F = \sqrt{30^2 + 40^2} = \sqrt{900 + 1600} = \sqrt{2500} = 50 \mathrm{ N{}$$
+$$F = \sqrt{30^2 + 40^2} = \sqrt{900 + 1600} = \sqrt{2500} = 50 \mathrm{ N$$
 
 ### 1.5 Resolving Vectors into Components (Higher Tier)
 
 Any vector can be resolved into two perpendicular components. For a force $F$ at angle $\theta$ to
 The horizontal:
 
-$$F_x = F\cos\theta \quad \mathrm{(horizontal component){}$$
-$$F_y = F\sin\theta \quad \mathrm{(vertical component){}$$
+$$F_x = F\cos\theta \quad \mathrm{(horizontal component)$$
+$$F_y = F\sin\theta \quad \mathrm{(vertical component)$$
 
 This technique is essential for inclined plane problems. Instead of working with forces at awkward
 Angles, you resolve every force into components parallel and perpendicular to the slope, then apply
@@ -115,11 +115,11 @@ Where $F$ is the resultant force (N), $m$ is mass (kg), and $a$ is acceleration 
 **Worked Example.** A 1200 kg car accelerates from rest at 2.5 m/s$^2$. Find the driving force
 (ignore friction).
 
-$$F = ma = 1200 \times 2.5 = 3000 \mathrm{ N{}$$
+$$F = ma = 1200 \times 2.5 = 3000 \mathrm{ N$$
 
 **Worked Example.** A resultant force of 45 N acts on a 5 kg object. Find the acceleration.
 
-$$a = \frac{F}{m} = \frac{45}{5} = 9 \mathrm{ m/s{}^2$$
+$$a = \frac{F}{m} = \frac{45}{5} = 9 \mathrm{ m/s^2$$
 
 ### 2.4 What $F = ma$ Really Means
 
@@ -188,8 +188,8 @@ Where $W$ is weight (N), $m$ is mass (kg), and $g$ is gravitational field streng
 
 **Worked Example.** An astronaut has a mass of 80 kg. Find their weight on Earth and on the Moon.
 
-$$W_{\mathrm{Earth{}} = 80 \times 9.8 = 784 \mathrm{ N{}$$
-$$W_{\mathrm{Moon{}} = 80 \times 1.6 = 128 \mathrm{ N{}$$
+$$W_{\mathrm{Earth} = 80 \times 9.8 = 784 \mathrm{ N$$
+$$W_{\mathrm{Moon} = 80 \times 1.6 = 128 \mathrm{ N$$
 
 ### 3.2 Why Mass and Weight Are Different
 
@@ -232,7 +232,7 @@ Drag increases with speed.
 
 For many objects at moderate speeds, drag is approximately proportional to the square of the speed:
 
-$$F_{\mathrm{drag{}} \propto v^2$$
+$$F_{\mathrm{drag} \propto v^2$$
 
 This means that doubling the speed quadruples the drag force. This quadratic dependence has enormous
 Practical consequences: the power required to overcome drag (and therefore the fuel consumption of a
@@ -244,7 +244,7 @@ When an object falls through a fluid:
 
 1. Initially, the only force is weight (downward). Acceleration = $g$.
 2. As speed increases, drag increases.
-3. The resultant force decreases: $F_{\mathrm{net{}} = W - D$.
+3. The resultant force decreases: $F_{\mathrm{net} = W - D$.
 4. Eventually, drag equals weight: $D = W$. The resultant force is zero, and acceleration is zero.
 5. The object continues at a constant speed called **terminal velocity**.
 
@@ -283,7 +283,7 @@ The acceleration-time graph shows:
 
 A skydiver of mass 80 kg jumps from a plane. At terminal velocity, the drag force equals the weight:
 
-$$D = mg = 80 \times 9.8 = 784 \mathrm{ N{}$$
+$$D = mg = 80 \times 9.8 = 784 \mathrm{ N$$
 
 After opening the parachute, the terminal velocity drops from about 55 m/s to about 5 m/s because
 The increased surface area produces much more drag at any given speed.
@@ -292,7 +292,7 @@ The increased surface area produces much more drag at any given speed.
 
 ### 5.1 Stopping Distance
 
-$$\mathrm{Stopping distance{} = \mathrm{thinking distance{} + \mathrm{braking distance{}$$
+$$\mathrm{Stopping distance = \mathrm{thinking distance + \mathrm{braking distance$$
 
 **Thinking distance:** The distance travelled during the driver's reaction time. Depends on:
 
@@ -326,8 +326,8 @@ Typical reaction time: 0.2 -- 0.9 seconds.
 **Worked Example.** A car is travelling at 20 m/s. The driver's reaction time is 0.5 s. The braking
 Distance is 32 m. Calculate the total stopping distance.
 
-$$\mathrm{Thinking distance{} = 20 \times 0.5 = 10 \mathrm{ m{}$$
-$$\mathrm{Stopping distance{} = 10 + 32 = 42 \mathrm{ m{}$$
+$$\mathrm{Thinking distance = 20 \times 0.5 = 10 \mathrm{ m$$
+$$\mathrm{Stopping distance = 10 + 32 = 42 \mathrm{ m$$
 
 ### 5.4 Factors Affecting Reaction Time
 
@@ -358,7 +358,7 @@ $$m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2$$
 **Worked Example.** A 2 kg trolley moving at 3 m/s collides with a stationary 1 kg trolley and they
 Stick together. Find the velocity after the collision.
 
-$$2 \times 3 + 1 \times 0 = (2 + 1) \times v$$ $$6 = 3v$$ $$v = 2 \mathrm{ m/s{}$$
+$$2 \times 3 + 1 \times 0 = (2 + 1) \times v$$ $$6 = 3v$$ $$v = 2 \mathrm{ m/s$$
 
 ### 6.3 Why Momentum Is Conserved
 
@@ -417,13 +417,13 @@ The line of action of the force (m).
 **Principle of moments:** For an object in equilibrium, the sum of clockwise moments equals the sum
 Of anticlockwise moments.
 
-$$\sum M_{\mathrm{clockwise{}} = \sum M_{\mathrm{anticlockwise{}}$$
+$$\sum M_{\mathrm{clockwise} = \sum M_{\mathrm{anticlockwise}$$
 
 **Worked Example.** A seesaw has a pivot at its centre. A child of mass 30 kg sits 2 m from the
 Pivot. Where must a child of mass 40 kg sit to balance the seesaw?
 
 $$30 \times 9.8 \times 2 = 40 \times 9.8 \times d$$ $$60 = 40d$$
-$$d = 1.5 \mathrm{ m from the pivot{}$$
+$$d = 1.5 \mathrm{ m from the pivot$$
 
 ### 7.2 Why the Distance Must Be Perpendicular
 
@@ -455,7 +455,7 @@ Faster but with less turning force (torque).
 
 The ratio of speeds is inversely proportional to the ratio of teeth:
 
-$$\frac{\mathrm{speed of gear {} B}{\mathrm{speed of gear {} A} = \frac{\mathrm{teeth on gear {} A}{\mathrm{teeth on gear {} B}$$
+$$\frac{\mathrm{speed of gear  B}{\mathrm{speed of gear  A} = \frac{\mathrm{teeth on gear  A}{\mathrm{teeth on gear  B}$$
 
 This is a consequence of conservation of energy: if the small gear rotates faster, it must exert
 Less torque, because $P = \tau \omega$ (power = torque times angular velocity), and the power
@@ -483,9 +483,9 @@ Where $k$ is the spring constant (N/m) and $e$ is the extension (m).
 ### 8.3 The Spring Constant and Energy Storage
 
 A stiffer spring (higher $k$) stores more energy for the same extension: $E = \frac{1}{2}ke^2$. Two
-Identical springs in parallel have twice the spring constant ($k_{\mathrm{total{}} = 2k$) and store
+Identical springs in parallel have twice the spring constant ($k_{\mathrm{total} = 2k$) and store
 Twice the energy for the same extension. Two identical springs in series have half the spring
-Constant ($k_{\mathrm{total{}} = \frac{k}{2}$).
+Constant ($k_{\mathrm{total} = \frac{k}{2}$).
 
 ### 8.4 Required Practical: Investigating Force and Extension
 
@@ -621,35 +621,35 @@ Is set by the friction between the tyres and the road.
 
 ## 11. Worked Example: Block on an Inclined Plane with Friction
 
-A $3 \mathrm{ kg{}$ block is placed on a rough plane inclined at $35^{\circ}$ to the horizontal. The
+A $3 \mathrm{ kg$ block is placed on a rough plane inclined at $35^{\circ}$ to the horizontal. The
 Coefficient of friction is $0.25$.
 
 **Part (a):** Does the block slide?
 
 Component of weight down the slope:
-$mg\sin\theta = 3 \times 9.8 \times \sin 35^{\circ} = 16.9 \mathrm{ N{}$.
+$mg\sin\theta = 3 \times 9.8 \times \sin 35^{\circ} = 16.9 \mathrm{ N$.
 
-Normal force: $N = mg\cos\theta = 3 \times 9.8 \times \cos 35^{\circ} = 24.1 \mathrm{ N{}$.
+Normal force: $N = mg\cos\theta = 3 \times 9.8 \times \cos 35^{\circ} = 24.1 \mathrm{ N$.
 
-Maximum static friction: $f_{\max} = \mu_s N = 0.25 \times 24.1 = 6.02 \mathrm{ N{}$.
+Maximum static friction: $f_{\max} = \mu_s N = 0.25 \times 24.1 = 6.02 \mathrm{ N$.
 
-Since $16.9 \mathrm{ N{} \gt 6.02 \mathrm{ N{}$The block slides.
+Since $16.9 \mathrm{ N \gt 6.02 \mathrm{ N$The block slides.
 
 **Part (b):** Find the acceleration.
 
 $$a = g(\sin\theta - \mu\cos\theta) = 9.8(\sin 35^{\circ} - 0.25\cos 35^{\circ})$$
 
-$$= 9.8(0.5736 - 0.25 \times 0.8192) = 9.8(0.5736 - 0.2048) = 9.8 \times 0.3688 = 3.61 \mathrm{ m/s{}^2$$
+$$= 9.8(0.5736 - 0.25 \times 0.8192) = 9.8(0.5736 - 0.2048) = 9.8 \times 0.3688 = 3.61 \mathrm{ m/s^2$$
 
 ## 12. Worked Example: Inelastic Collision with Kinetic Energy Loss
 
-Two trolleys collide on a frictionless track. Trolley A has mass $2 \mathrm{ kg{}$ and velocity
-$4 \mathrm{ m/s{}$ to the right. Trolley B has mass $3 \mathrm{ kg{}$ and velocity
-$2 \mathrm{ m/s{}$ to the Left. They stick together.
+Two trolleys collide on a frictionless track. Trolley A has mass $2 \mathrm{ kg$ and velocity
+$4 \mathrm{ m/s$ to the right. Trolley B has mass $3 \mathrm{ kg$ and velocity
+$2 \mathrm{ m/s$ to the Left. They stick together.
 
 **Step 1:** Choose a sign convention (right = positive).
 
-$$v_A = +4 \mathrm{ m/s{}, \qquad v_B = -2 \mathrm{ m/s{}$$
+$$v_A = +4 \mathrm{ m/s, \qquad v_B = -2 \mathrm{ m/s$$
 
 **Step 2:** Apply conservation of momentum.
 
@@ -659,15 +659,15 @@ $$2(4) + 3(-2) = (2 + 3) v_f$$
 
 $$8 - 6 = 5 v_f$$
 
-$$v_f = 0.4 \mathrm{ m/s to the right{}$$
+$$v_f = 0.4 \mathrm{ m/s to the right$$
 
 **Step 3:** Calculate kinetic energy before and after.
 
-$$E_{k,i} = \frac{1}{2}(2)(16) + \frac{1}{2}(3)(4) = 16 + 6 = 22 \mathrm{ J{}$$
+$$E_{k,i} = \frac{1}{2}(2)(16) + \frac{1}{2}(3)(4) = 16 + 6 = 22 \mathrm{ J$$
 
-$$E_{k,f} = \frac{1}{2}(5)(0.16) = 0.4 \mathrm{ J{}$$
+$$E_{k,f} = \frac{1}{2}(5)(0.16) = 0.4 \mathrm{ J$$
 
-**Kinetic energy lost:** $22 - 0.4 = 21.6 \mathrm{ J{}$ (transferred to thermal energy and sound).
+**Kinetic energy lost:** $22 - 0.4 = 21.6 \mathrm{ J$ (transferred to thermal energy and sound).
 
 This illustrates that perfectly inelastic collisions can lose a very large fraction of the initial
 Kinetic energy.
@@ -675,20 +675,20 @@ Kinetic energy.
 ## 13. Why Momentum Is Conserved: A Rigorous Argument
 
 Consider two objects colliding. During the collision, object A exerts a force
-$\vec{F}_{A \mathrm{ on {} B}$ on object B, and by Newton's third law, object B exerts an equal and
-Opposite force $\vec{F}_{B \mathrm{ on {} A} = -\vec{F}_{A \mathrm{ on {} B}$ on object A.
+$\vec{F}_{A \mathrm{ on  B}$ on object B, and by Newton's third law, object B exerts an equal and
+Opposite force $\vec{F}_{B \mathrm{ on  A} = -\vec{F}_{A \mathrm{ on  B}$ on object A.
 
 By Newton's second law:
 
-$$\vec{F}_{A \mathrm{ on {} B} = \frac{d\vec{p}_B}{dt}, \qquad \vec{F}_{B \mathrm{ on {} A} = \frac{d\vec{p}_A}{dt}$$
+$$\vec{F}_{A \mathrm{ on  B} = \frac{d\vec{p}_B}{dt}, \qquad \vec{F}_{B \mathrm{ on  A} = \frac{d\vec{p}_A}{dt}$$
 
 Adding these:
 
-$$\frac{d\vec{p}_A}{dt} + \frac{d\vec{p}_B}{dt} = \vec{F}_{B \mathrm{ on {} A} + \vec{F}_{A \mathrm{ on {} B} = 0$$
+$$\frac{d\vec{p}_A}{dt} + \frac{d\vec{p}_B}{dt} = \vec{F}_{B \mathrm{ on  A} + \vec{F}_{A \mathrm{ on  B} = 0$$
 
 $$\frac{d}{dt}(\vec{p}_A + \vec{p}_B) = 0$$
 
-$$\vec{p}_A + \vec{p}_B = \mathrm{constant{}$$
+$$\vec{p}_A + \vec{p}_B = \mathrm{constant$$
 
 This proof extends to any number of particles. Internal forces always cancel in pairs, so the total
 Momentum of a closed system is conserved. This is not a separate law -- it is a direct consequence
@@ -707,14 +707,14 @@ Of Newton's second and third laws.
 
 ## 15. Worked Example: Hydraulic Press
 
-A hydraulic press has a small piston of area $0.01 \mathrm{ m{}^2$ and a large piston of area
-$0.5 \mathrm{ m{}^2$. A force of 200 N is applied to the small piston.
+A hydraulic press has a small piston of area $0.01 \mathrm{ m^2$ and a large piston of area
+$0.5 \mathrm{ m^2$. A force of 200 N is applied to the small piston.
 
 By Pascal's principle, the pressure is the same throughout the fluid:
 
-$$P = \frac{F_1}{A_1} = \frac{200}{0.01} = 20000 \mathrm{ Pa{}$$
+$$P = \frac{F_1}{A_1} = \frac{200}{0.01} = 20000 \mathrm{ Pa$$
 
-$$F_2 = P \times A_2 = 20000 \times 0.5 = 10000 \mathrm{ N{}$$
+$$F_2 = P \times A_2 = 20000 \times 0.5 = 10000 \mathrm{ N$$
 
 The force is multiplied by a factor of $A_2/A_1 = 50$. However, by conservation of energy, the small
 Piston must move 50 times further than the large piston. The work input equals the work output
@@ -722,12 +722,12 @@ Piston must move 50 times further than the large piston. The work input equals t
 
 ## 16. Practice Questions (Additional)
 
-16. A car of mass 1000 kg travelling at $15 \mathrm{ m/s{}$ collides with a stationary car of mass
+16. A car of mass 1000 kg travelling at $15 \mathrm{ m/s$ collides with a stationary car of mass
     1500 kg. The bumpers lock and they move off together. Calculate their common velocity and the
     kinetic energy lost in the collision.
 
-17. A $2 \mathrm{ kg{}$ block is pushed up a $30^{\circ}$ incline with an initial speed of
-    $8 \mathrm{ m/s{}$. The coefficient of kinetic friction is $0.2$. Calculate how far up the
+17. A $2 \mathrm{ kg$ block is pushed up a $30^{\circ}$ incline with an initial speed of
+    $8 \mathrm{ m/s$. The coefficient of kinetic friction is $0.2$. Calculate how far up the
     incline the block travels before stopping and whether it slides back down.
 
 18. Explain why a passenger in a car feels thrown forward when the car brakes suddenly. Refer to
@@ -737,34 +737,34 @@ Piston must move 50 times further than the large piston. The work input equals t
     mark and a 5 N weight hangs from the 70 cm mark. Calculate where an additional 2 N weight must
     be hung to restore balance.
 
-20. A football is kicked from the ground at $20 \mathrm{ m/s{}$ at an angle of $35^{\circ}$ to the
+20. A football is kicked from the ground at $20 \mathrm{ m/s$ at an angle of $35^{\circ}$ to the
     horizontal. Calculate the maximum height, the time of flight, and the horizontal range. (Assume
-    $g = 9.8 \mathrm{ m/s{}^2$ and ignore air resistance.)
+    $g = 9.8 \mathrm{ m/s^2$ and ignore air resistance.)
 
 ## Practice Problems
 
 <details>
 <summary>Question 1: Resultant force and acceleration</summary>
 
-A $5 \mathrm{ kg{}$ object is acted on by two forces: $20 \mathrm{ N{}$ to the right and
-$8 \mathrm{ N{}$ to the left. Calculate the resultant force and the acceleration.
+A $5 \mathrm{ kg$ object is acted on by two forces: $20 \mathrm{ N$ to the right and
+$8 \mathrm{ N$ to the left. Calculate the resultant force and the acceleration.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-Resultant force $= 20 - 8 = 12 \mathrm{ N{}$ to the right.
+Resultant force $= 20 - 8 = 12 \mathrm{ N$ to the right.
 
-Acceleration $= F/m = 12/5 = 2.4 \mathrm{ m/s^2{}$ to the right.
+Acceleration $= F/m = 12/5 = 2.4 \mathrm{ m/s^2$ to the right.
 
 </details>
 
 <details>
 <summary>Question 2: Weight and mass on the Moon</summary>
 
-An astronaut has a mass of $80 \mathrm{ kg{}$ on Earth. The gravitational field strength on the Moon
-is $1.6 \mathrm{ N/kg{}$. Calculate (a) the astronaut's weight on Earth and (b) the astronaut's
+An astronaut has a mass of $80 \mathrm{ kg$ on Earth. The gravitational field strength on the Moon
+is $1.6 \mathrm{ N/kg$. Calculate (a) the astronaut's weight on Earth and (b) the astronaut's
 weight on the Moon.
 
 </details>
@@ -772,19 +772,19 @@ weight on the Moon.
 <details>
 <summary>Answer</summary>
 
-(a) $W = mg = 80 \times 9.8 = 784 \mathrm{ N{}$.
+(a) $W = mg = 80 \times 9.8 = 784 \mathrm{ N$.
 
-(b) $W = mg = 80 \times 1.6 = 128 \mathrm{ N{}$.
+(b) $W = mg = 80 \times 1.6 = 128 \mathrm{ N$.
 
-Mass remains the same ($80 \mathrm{ kg{}$) on both Earth and the Moon.
+Mass remains the same ($80 \mathrm{ kg$) on both Earth and the Moon.
 
 </details>
 
 <details>
 <summary>Question 3: Stopping distance</summary>
 
-A car travelling at $30 \mathrm{ m/s{}$ has a thinking distance of $21 \mathrm{ m{}$ and a braking
-distance of $54 \mathrm{ m{}$. Calculate the total stopping distance. Explain why the braking
+A car travelling at $30 \mathrm{ m/s$ has a thinking distance of $21 \mathrm{ m$ and a braking
+distance of $54 \mathrm{ m$. Calculate the total stopping distance. Explain why the braking
 distance increases much more rapidly than the thinking distance when speed doubles.
 
 </details>
@@ -792,7 +792,7 @@ distance increases much more rapidly than the thinking distance when speed doubl
 <details>
 <summary>Answer</summary>
 
-Total stopping distance $= 21 + 54 = 75 \mathrm{ m{}$.
+Total stopping distance $= 21 + 54 = 75 \mathrm{ m$.
 
 Thinking distance is proportional to speed ($d_t = vt$), so doubling speed doubles thinking
 distance. Braking distance is proportional to speed squared ($d_b \propto v^2$Since $KE \propto v^2$
@@ -804,18 +804,18 @@ dangerous.
 <details>
 <summary>Question 4: Hooke's Law</summary>
 
-A spring has a spring constant of $200 \mathrm{ N/m{}$. Calculate the extension when a
-$50 \mathrm{ N{}$ force is applied. Calculate the energy stored in the spring.
+A spring has a spring constant of $200 \mathrm{ N/m$. Calculate the extension when a
+$50 \mathrm{ N$ force is applied. Calculate the energy stored in the spring.
 
 </details>
 
 <details>
 <summary>Answer</summary>
 
-$F = ke$So $e = F/k = 50/200 = 0.25 \mathrm{ m{}$.
+$F = ke$So $e = F/k = 50/200 = 0.25 \mathrm{ m$.
 
 Energy stored
-$= \frac{1}{2}ke^2 = 0.5 \times 200 \times 0.25^2 = 0.5 \times 200 \times 0.0625 = 6.25 \mathrm{ J{}$.
+$= \frac{1}{2}ke^2 = 0.5 \times 200 \times 0.25^2 = 0.5 \times 200 \times 0.0625 = 6.25 \mathrm{ J$.
 
 </details>
 

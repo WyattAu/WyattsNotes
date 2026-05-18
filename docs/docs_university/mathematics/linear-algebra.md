@@ -16,29 +16,29 @@ slug: linear-algebra
 
 ### 1.1 Definition of a Vector Space
 
-A **vector space** over a field $F$ ( $\mathbb{{'}R{}'}$ or $\mathbb{{'}C{}'}$) is a set $V$
+A **vector space** over a field $F$ ( $\mathbb{R}$ or $\mathbb{C}$) is a set $V$
 equipped With two operations:
 
 1. **Vector addition**: $+ : V \times V \to V$
 2. **Scalar multiplication**: $\cdot : F \times V \to V$
 
-Satisfying the following axioms for all $\mathbf{{'}u{}'}, \mathbf{{'}v{}'}, \mathbf{{'}w{}'} \in V$
+Satisfying the following axioms for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$
 and all $\alpha, \beta \in F$:
 
-1. **Commutativity**: $\mathbf{{'}u{}'} + \mathbf{{'}v{}'} = \mathbf{{'}v{}'} + \mathbf{{'}u{}'}$
+1. **Commutativity**: $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
 2. **Associativity of addition**:
-   $(\mathbf{{'}u{}'} + \mathbf{{'}v{}'}) + \mathbf{{'}w{}'} = \mathbf{{'}u{}'} + (\mathbf{{'}v{}'} + \mathbf{{'}w{}'})$
-3. **Additive identity**: There exists $\mathbf{{'}0{}'} \in V$ such that
-   $\mathbf{{'}v{}'} + \mathbf{{'}0{}'} = \mathbf{{'}v{}'}$
-4. **Additive inverse**: For each $\mathbf{{'}v{}'}$There exists $-\mathbf{{'}v{}'}$ such that
-   $\mathbf{{'}v{}'} + (-\mathbf{{'}v{}'}) = \mathbf{{'}0{}'}$
+   $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$
+3. **Additive identity**: There exists $\mathbf{0} \in V$ such that
+   $\mathbf{v} + \mathbf{0} = \mathbf{v}$
+4. **Additive inverse**: For each $\mathbf{v}$There exists $-\mathbf{v}$ such that
+   $\mathbf{v} + (-\mathbf{v}) = \mathbf{0}$
 5. **Compatibility of scalar multiplication**:
-   $\alpha(\beta \mathbf{{'}v{}'}) = (\alpha\beta)\mathbf{{'}v{}'}$
-6. **Identity element of scalar multiplication**: $1 \cdot \mathbf{{'}v{}'} = \mathbf{{'}v{}'}$
+   $\alpha(\beta \mathbf{v}) = (\alpha\beta)\mathbf{v}$
+6. **Identity element of scalar multiplication**: $1 \cdot \mathbf{v} = \mathbf{v}$
 7. **Distributivity over vector addition**:
-   $\alpha(\mathbf{{'}u{}'} + \mathbf{{'}v{}'}) = \alpha\mathbf{{'}u{}'} + \alpha\mathbf{{'}v{}'}$
+   $\alpha(\mathbf{u} + \mathbf{v}) = \alpha\mathbf{u} + \alpha\mathbf{v}$
 8. **Distributivity over scalar addition**:
-   $(\alpha + \beta)\mathbf{{'}v{}'} = \alpha\mathbf{{'}v{}'} + \beta\mathbf{{'}v{}'}$
+   $(\alpha + \beta)\mathbf{v} = \alpha\mathbf{v} + \beta\mathbf{v}$
 
 _Intuition._ The abstract definition captures the algebraic structure shared by diverse objects:
 Geometric arrows, polynomials, functions, matrices. The axioms encode exactly what we need for
@@ -46,30 +46,30 @@ Linear combinations to behave reasonably.
 
 ### 1.2 Examples
 
-**Example 1.** $\mathbb{{'}R{}'}^n$ with component-wise addition and scalar multiplication is a
-vector space Over $\mathbb{{'}R{}'}$.
+**Example 1.** $\mathbb{R}^n$ with component-wise addition and scalar multiplication is a
+vector space Over $\mathbb{R}$.
 
-**Example 2.** The set $\mathcal{{'}P{}'}_n$ of all polynomials of degree at most $n$ with real
+**Example 2.** The set $\mathcal{P}_n$ of all polynomials of degree at most $n$ with real
 coefficients, With the usual polynomial addition and scalar multiplication, is a vector space over
-$\mathbb{{'}R{}'}$. Its dimension is $n + 1$With standard basis $\{1, x, x^2, \ldots, x^n\}$.
+$\mathbb{R}$. Its dimension is $n + 1$With standard basis $\{1, x, x^2, \ldots, x^n\}$.
 
 **Example 3.** The set $C[a,b]$ of all continuous real-valued functions on $[a,b]$With point-wise
-Addition and scalar multiplication, is a vector space over $\mathbb{{'}R{}'}$. This space is
+Addition and scalar multiplication, is a vector space over $\mathbb{R}$. This space is
 Infinite-dimensional.
 
-**Example 4.** The set $\mathcal{{'}M{}'}_{m \times n}(\mathbb{{'}R{}'})$ of all $m \times n$ real
-matrices is a Vector space over $\mathbb{{'}R{}'}$.
+**Example 4.** The set $\mathcal{M}_{m \times n}(\mathbb{R})$ of all $m \times n$ real
+matrices is a Vector space over $\mathbb{R}$.
 
-**Example 5 (Function spaces).** The set $\mathcal{{'}F{}'}(\mathbb{{'}R{}'}, \mathbb{{'}R{}'})$ of
-all functions $f : \mathbb{{'}R{}'} \to \mathbb{{'}R{}'}$ is a vector space over $\mathbb{{'}R{}'}$
+**Example 5 (Function spaces).** The set $\mathcal{F}(\mathbb{R}, \mathbb{R})$ of
+all functions $f : \mathbb{R} \to \mathbb{R}$ is a vector space over $\mathbb{R}$
 under point-wise addition $(f + g)(x) = f(x) + g(x)$ and scalar multiplication
-$(\alpha f)(x) = \alpha \cdot f(x)$. The spaces $C^k(\mathbb{{'}R{}'})$ of $k$-times continuously
+$(\alpha f)(x) = \alpha \cdot f(x)$. The spaces $C^k(\mathbb{R})$ of $k$-times continuously
 differentiable functions and $L^2[a,b]$ of square-integrable functions are important subspaces of
-$\mathcal{{'}F{}'}(\mathbb{{'}R{}'}, \mathbb{{'}R{}'})$.
+$\mathcal{F}(\mathbb{R}, \mathbb{R})$.
 
 **Example 6 (Sequence spaces).** The set $\ell^2$ of all real sequences $(a_1, a_2, a_3, \ldots)$
-With $\sum_{n=1}^{\infty} a_n^2 \lt{} \infty$ is a vector space over $\mathbb{{'}R{}'}$. This is the
-Infinite-dimensional analogue of $\mathbb{{'}R{}'}^n$ and is fundamental in functional analysis.
+With $\sum_{n=1}^{\infty} a_n^2 \lt \infty$ is a vector space over $\mathbb{R}$. This is the
+Infinite-dimensional analogue of $\mathbb{R}^n$ and is fundamental in functional analysis.
 
 ### 1.3 Subspaces
 
@@ -77,69 +77,69 @@ A **subspace** $W$ of a vector space $V$ is a subset $W \subseteq V$ that is its
 Under the same operations.
 
 **Theorem 1.1 (Subspace Criterion).** A non-empty subset $W \subseteq V$ is a subspace if and only
-If for all $\mathbf{{'}u{}'}, \mathbf{{'}v{}'} \in W$ and all $\alpha \in F$:
+If for all $\mathbf{u}, \mathbf{v} \in W$ and all $\alpha \in F$:
 
-1. $\mathbf{{'}u{}'} + \mathbf{{'}v{}'} \in W$ (closed under addition)
-2. $\alpha \mathbf{{'}u{}'} \in W$ (closed under scalar multiplication)
+1. $\mathbf{u} + \mathbf{v} \in W$ (closed under addition)
+2. $\alpha \mathbf{u} \in W$ (closed under scalar multiplication)
 
 _Proof._ If $W$ is a subspace, closure is immediate from the definition. Conversely, if $W$ is
-Non-empty and closed under both operations, pick $\mathbf{{'}u{}'} \in W$. Then
-$-\mathbf{{'}u{}'} = (-1)\mathbf{{'}u{}'} \in W$ By closure under scalar multiplication, and
-$\mathbf{{'}u{}'} + (-\mathbf{{'}u{}'}) = \mathbf{{'}0{}'} \in W$ by closure Under addition. The
+Non-empty and closed under both operations, pick $\mathbf{u} \in W$. Then
+$-\mathbf{u} = (-1)\mathbf{u} \in W$ By closure under scalar multiplication, and
+$\mathbf{u} + (-\mathbf{u}) = \mathbf{0} \in W$ by closure Under addition. The
 remaining axioms are inherited from $V$. $\blacksquare$
 
 **Proposition 1.2 (Closure under Linear Combinations).** If $W$ is a subspace of $V$Then $W$ is
 Closed under all finite linear combinations: for all
-$\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k \in W$ and All $\alpha_1, \ldots, \alpha_k \in F$
+$\mathbf{v}_1, \ldots, \mathbf{v}_k \in W$ and All $\alpha_1, \ldots, \alpha_k \in F$
 
-$$\alpha_1 \mathbf{{'}v{}'}_1 + \alpha_2 \mathbf{{'}v{}'}_2 + \cdots + \alpha_k \mathbf{{'}v{}'}_k \in W$$
+$$\alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 + \cdots + \alpha_k \mathbf{v}_k \in W$$
 
-_Proof._ We proceed by induction on $k$. For $k = 1$$\alpha_1 \mathbf{{'}v{}'}_1 \in W$ by closure
+_Proof._ We proceed by induction on $k$. For $k = 1$$\alpha_1 \mathbf{v}_1 \in W$ by closure
 under Scalar multiplication. Assume the result holds for $k - 1$ vectors. Then
 
-$$\alpha_1 \mathbf{{'}v{}'}_1 + \cdots + \alpha_k \mathbf{{'}v{}'}_k = (\alpha_1 \mathbf{{'}v{}'}_1 + \cdots + \alpha_{k-1} \mathbf{{'}v{}'}_{k-1}) + \alpha_k \mathbf{{'}v{}'}_k$$
+$$\alpha_1 \mathbf{v}_1 + \cdots + \alpha_k \mathbf{v}_k = (\alpha_1 \mathbf{v}_1 + \cdots + \alpha_{k-1} \mathbf{v}_{k-1}) + \alpha_k \mathbf{v}_k$$
 
 By the inductive hypothesis,
-$\alpha_1 \mathbf{{'}v{}'}_1 + \cdots + \alpha_{k-1} \mathbf{{'}v{}'}_{k-1} \in W$And
-$\alpha_k \mathbf{{'}v{}'}_k \in W$ by closure under scalar multiplication. Their sum is in $W$ by
+$\alpha_1 \mathbf{v}_1 + \cdots + \alpha_{k-1} \mathbf{v}_{k-1} \in W$And
+$\alpha_k \mathbf{v}_k \in W$ by closure under scalar multiplication. Their sum is in $W$ by
 Closure under addition. $\blacksquare$
 
 **Example 7.** The set of all solutions to the homogeneous equation
-$A\mathbf{{'}x{}'} = \mathbf{{'}0{}'}$ forms a Subspace of $\mathbb{{'}R{}'}^n$Called the **null
+$A\mathbf{x} = \mathbf{0}$ forms a Subspace of $\mathbb{R}^n$Called the **null
 space** of $A$.
 
 ### 1.4 Worked Example: Verifying Subspace Criteria
 
-**Problem.** Determine whether each of the following subsets of $\mathbb{{'}R{}'}^3$ is a subspace.
+**Problem.** Determine whether each of the following subsets of $\mathbb{R}^3$ is a subspace.
 
-(a) $W_1 = \{(x, y, z) \in \mathbb{{'}R{}'}^3 : x + 2y - z = 0\}$
+(a) $W_1 = \{(x, y, z) \in \mathbb{R}^3 : x + 2y - z = 0\}$
 
-(b) $W_2 = \{(x, y, z) \in \mathbb{{'}R{}'}^3 : x^2 + y^2 = 1\}$
+(b) $W_2 = \{(x, y, z) \in \mathbb{R}^3 : x^2 + y^2 = 1\}$
 
-(c) $W_3 = \{(x, y, z) \in \mathbb{{'}R{}'}^3 : x = 0 \mathrm{~and~{} y = z\}$
+(c) $W_3 = \{(x, y, z) \in \mathbb{R}^3 : x = 0 \mathrm{~and~ y = z\}$
 
 <details>
 <summary>Solution</summary>
 
-**(a)** Let $\mathbf{{'}u{}'} = (x_1, y_1, z_1)$ and $\mathbf{{'}v{}'} = (x_2, y_2, z_2)$ be in
+**(a)** Let $\mathbf{u} = (x_1, y_1, z_1)$ and $\mathbf{v} = (x_2, y_2, z_2)$ be in
 $W_1$So $x_1 + 2y_1 - z_1 = 0$ and $x_2 + 2y_2 - z_2 = 0$. Then
 
 $$(x_1 + x_2) + 2(y_1 + y_2) - (z_1 + z_2) = (x_1 + 2y_1 - z_1) + (x_2 + 2y_2 - z_2) = 0 + 0 = 0$$
 
-So $\mathbf{{'}u{}'} + \mathbf{{'}v{}'} \in W_1$. For $\alpha \in \mathbb{{'}R{}'}$
+So $\mathbf{u} + \mathbf{v} \in W_1$. For $\alpha \in \mathbb{R}$
 
 $$(\alpha x_1) + 2(\alpha y_1) - (\alpha z_1) = \alpha(x_1 + 2y_1 - z_1) = \alpha \cdot 0 = 0$$
 
-So $\alpha \mathbf{{'}u{}'} \in W_1$. Since $W_1$ is non-empty (e.g., $\mathbf{{'}0{}'} \in W_1$),
+So $\alpha \mathbf{u} \in W_1$. Since $W_1$ is non-empty (e.g., $\mathbf{0} \in W_1$),
 it is a subspace.
 
 **(b)** $W_2$ is not a subspace. For instance, $(1, 0, 0) \in W_2$ since $1^2 + 0^2 = 1$But
 $2 \cdot (1, 0, 0) = (2, 0, 0) \notin W_2$ since $2^2 + 0^2 = 4 \neq 1$. So $W_2$ is not closed
 Under scalar multiplication.
 
-**(c)** Let $\mathbf{{'}u{}'} = (0, a, a)$ and $\mathbf{{'}v{}'} = (0, b, b)$ be in $W_3$. Then
-$\mathbf{{'}u{}'} + \mathbf{{'}v{}'} = (0, a + b, a + b) \in W_3$ and
-$\alpha \mathbf{{'}u{}'} = (0, \alpha a, \alpha a) \in W_3$. Since $(0, 0, 0) \in W_3$It is a
+**(c)** Let $\mathbf{u} = (0, a, a)$ and $\mathbf{v} = (0, b, b)$ be in $W_3$. Then
+$\mathbf{u} + \mathbf{v} = (0, a + b, a + b) \in W_3$ and
+$\alpha \mathbf{u} = (0, \alpha a, \alpha a) \in W_3$. Since $(0, 0, 0) \in W_3$It is a
 non-empty subspace.
 
 $\blacksquare$
@@ -148,8 +148,8 @@ $\blacksquare$
 
 ### 1.5 Worked Example: Sum and Intersection of Subspaces
 
-**Problem.** Let $U = \{(x, y, z) \in \mathbb{{'}R{}'}^3 : z = 0\}$ (the $xy$-plane) and
-$W = \{(x, y, z) \in \mathbb{{'}R{}'}^3 : x = 0\}$ (the $yz$-plane). Find $U + W$ and $U \cap W$ And
+**Problem.** Let $U = \{(x, y, z) \in \mathbb{R}^3 : z = 0\}$ (the $xy$-plane) and
+$W = \{(x, y, z) \in \mathbb{R}^3 : x = 0\}$ (the $yz$-plane). Find $U + W$ and $U \cap W$ And
 verify the dimension formula.
 
 <details>
@@ -158,10 +158,10 @@ verify the dimension formula.
 $U$ has basis $\{(1, 0, 0), (0, 1, 0)\}$ and $\dim(U) = 2$. $W$ has basis $\{(0, 1, 0), (0, 0, 1)\}$
 and $\dim(W) = 2$.
 
-$U \cap W = \{(x, y, z) : z = 0 \mathrm{~and~{} x = 0\} = \{(0, y, 0) : y \in \mathbb{{'}R{}'}\}$
+$U \cap W = \{(x, y, z) : z = 0 \mathrm{~and~ x = 0\} = \{(0, y, 0) : y \in \mathbb{R}\}$
 Which has basis $\{(0, 1, 0)\}$ and dimension 1.
 
-$U + W = \mathrm{span{}\{(1,0,0), (0,1,0), (0,1,0), (0,0,1)\} = \mathrm{span{}\{(1,0,0), (0,1,0), (0,0,1)\} = \mathbb{{'}R{}'}^3$
+$U + W = \mathrm{span\{(1,0,0), (0,1,0), (0,1,0), (0,0,1)\} = \mathrm{span\{(1,0,0), (0,1,0), (0,0,1)\} = \mathbb{R}^3$
 So $\dim(U + W) = 3$.
 
 Verify: $\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W) = 2 + 2 - 1 = 3$. $\checkmark$
@@ -172,10 +172,10 @@ $\blacksquare$
 ### 1.6 Common Pitfalls
 
 - **The empty set is not a vector space.** The subspace criterion requires the subset to be
-  non-empty. The trivial subspace $\{\mathbf{{'}0{}'}\}$ is the smallest subspace of any vector
+  non-empty. The trivial subspace $\{\mathbf{0}\}$ is the smallest subspace of any vector
   space.
 - **Non-homogeneous conditions do not define subspaces.** The set of solutions to
-  $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ with $\mathbf{{'}b{}'} \neq \mathbf{{'}0{}'}$ is not a
+  $A\mathbf{x} = \mathbf{b}$ with $\mathbf{b} \neq \mathbf{0}$ is not a
   subspace (it is an affine subspace, or coset of the null space).
 - **Closure must hold for _all_ scalars.** A set that is closed under addition and multiplication by
   positive scalars is not necessarily a subspace; it must also be closed under multiplication by
@@ -188,56 +188,56 @@ $\blacksquare$
 ### 2.1 Linear Independence
 
 A set of vectors
-$\{\mathbf{{'}v{}'}_1, \mathbf{{'}v{}'}_2, \ldots, \mathbf{{'}v{}'}_k\} \subseteq V$ is **linearly
+$\{\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k\} \subseteq V$ is **linearly
 Independent** if the equation
 
-$$\alpha_1 \mathbf{{'}v{}'}_1 + \alpha_2 \mathbf{{'}v{}'}_2 + \cdots + \alpha_k \mathbf{{'}v{}'}_k = \mathbf{{'}0{}'}$$
+$$\alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 + \cdots + \alpha_k \mathbf{v}_k = \mathbf{0}$$
 
 Implies $\alpha_1 = \alpha_2 = \cdots = \alpha_k = 0$. Otherwise the set is **linearly dependent**.
 
 **Proposition 2.1 (Equivalent formulations).** The following are equivalent for vectors
-$\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k \in V$:
+$\mathbf{v}_1, \ldots, \mathbf{v}_k \in V$:
 
-1. $\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k\}$ is linearly independent.
-2. No $\mathbf{{'}v{}'}_j$ can be written as a linear combination of the remaining vectors.
-3. If $\sum_{i=1}^k \alpha_i \mathbf{{'}v{}'}_i = \sum_{i=1}^k \beta_i \mathbf{{'}v{}'}_i$Then
+1. $\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ is linearly independent.
+2. No $\mathbf{v}_j$ can be written as a linear combination of the remaining vectors.
+3. If $\sum_{i=1}^k \alpha_i \mathbf{v}_i = \sum_{i=1}^k \beta_i \mathbf{v}_i$Then
    $\alpha_i = \beta_i$ for all $i$.
 
 _Proof._ (1 $\Rightarrow$ 2): If
-$\mathbf{{'}v{}'}_j = \sum_{i \neq j} \alpha_i \mathbf{{'}v{}'}_i$Then
-$\sum_{i \neq j} \alpha_i \mathbf{{'}v{}'}_i - \mathbf{{'}v{}'}_j = \mathbf{{'}0{}'}$ gives a
+$\mathbf{v}_j = \sum_{i \neq j} \alpha_i \mathbf{v}_i$Then
+$\sum_{i \neq j} \alpha_i \mathbf{v}_i - \mathbf{v}_j = \mathbf{0}$ gives a
 non-trivial linear Dependence, contradicting (1).
 
-(2 $\Rightarrow$ 3): If $\sum (\alpha_i - \beta_i)\mathbf{{'}v{}'}_i = \mathbf{{'}0{}'}$Then by
+(2 $\Rightarrow$ 3): If $\sum (\alpha_i - \beta_i)\mathbf{v}_i = \mathbf{0}$Then by
 linear Independence (which follows from (2)), $\alpha_i = \beta_i$ for all $i$.
 
 (3 $\Rightarrow$ 1): If
-$\sum \alpha_i \mathbf{{'}v{}'}_i = \mathbf{{'}0{}'} = \sum 0 \cdot \mathbf{{'}v{}'}_i$ Then by (3),
+$\sum \alpha_i \mathbf{v}_i = \mathbf{0} = \sum 0 \cdot \mathbf{v}_i$ Then by (3),
 $\alpha_i = 0$ for all $i$. $\blacksquare$
 
 ### 2.2 Span
 
-The **span** of a set $S \subseteq V$Denoted $\mathrm{span{}(S)$Is the set of all finite linear
+The **span** of a set $S \subseteq V$Denoted $\mathrm{span(S)$Is the set of all finite linear
 Combinations of elements of $S$:
 
-$$\mathrm{span{}(S) = \left\{ \sum_{i=1}^k \alpha_i \mathbf{{'}v{}'}_i : k \in \mathbb{{'}N{}'},\, \alpha_i \in F,\, \mathbf{{'}v{}'}_i \in S \right\}$$
+$$\mathrm{span(S) = \left\{ \sum_{i=1}^k \alpha_i \mathbf{v}_i : k \in \mathbb{N},\, \alpha_i \in F,\, \mathbf{v}_i \in S \right\}$$
 
-**Proposition 2.2.** $\mathrm{span{}(S)$ is always a subspace of $V$. In fact, $\mathrm{span{}(S)$
+**Proposition 2.2.** $\mathrm{span(S)$ is always a subspace of $V$. In fact, $\mathrm{span(S)$
 is The smallest subspace containing $S$: if $W$ is any subspace with $S \subseteq W$Then
-$\mathrm{span{}(S) \subseteq W$.
+$\mathrm{span(S) \subseteq W$.
 
-_Proof._ $\mathrm{span{}(S)$ is non-empty since $\mathbf{{'}0{}'} = 0 \cdot \mathbf{{'}v{}'}$ for
-any $\mathbf{{'}v{}'} \in S$. Closure under addition and scalar multiplication follows directly from
+_Proof._ $\mathrm{span(S)$ is non-empty since $\mathbf{0} = 0 \cdot \mathbf{v}$ for
+any $\mathbf{v} \in S$. Closure under addition and scalar multiplication follows directly from
 the Definition of linear combinations. For minimality, any subspace $W$ containing $S$ must contain
 all Finite linear combinations of elements of $S$ by Proposition 1.2, so
-$\mathrm{span{}(S) \subseteq W$. $\blacksquare$
+$\mathrm{span(S) \subseteq W$. $\blacksquare$
 
 ### 2.3 Basis and Dimension
 
 A set $B \subseteq V$ is a **basis** for $V$ if:
 
 1. $B$ is linearly independent, and
-2. $\mathrm{span{}(B) = V$.
+2. $\mathrm{span(B) = V$.
 
 **Theorem 2.1.** Every vector space has a basis. All bases of a finite-dimensional vector space have
 The same number of elements.
@@ -246,45 +246,45 @@ The **dimension** of $V$Denoted $\dim(V)$Is the cardinality of any basis for $V$
 
 ### 2.4 Steinitz Exchange Lemma
 
-**Lemma 2.3 (Steinitz Exchange Lemma).** Let $\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_k\}$ be
-a linearly Independent set in $V$And let $\{\mathbf{{'}w{}'}_1, \ldots, \mathbf{{'}w{}'}_m\}$ be a
-spanning set for $V$. Then $k \leq m$And after relabelling the $\mathbf{{'}w{}'}_j$The set
+**Lemma 2.3 (Steinitz Exchange Lemma).** Let $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ be
+a linearly Independent set in $V$And let $\{\mathbf{w}_1, \ldots, \mathbf{w}_m\}$ be a
+spanning set for $V$. Then $k \leq m$And after relabelling the $\mathbf{w}_j$The set
 
-$$\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_k, \mathbf{{'}w{}'}_{k+1}, \ldots, \mathbf{{'}w{}'}_m\}$$
+$$\{\mathbf{u}_1, \ldots, \mathbf{u}_k, \mathbf{w}_{k+1}, \ldots, \mathbf{w}_m\}$$
 
 Also spans $V$.
 
 _Proof._ We proceed by induction on $k$. For $k = 0$ there is nothing to prove.
 
-Assume the result holds for $k - 1$. Since $\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_k\}$ is
-linearly Independent, $\mathbf{{'}u{}'}_k \neq \mathbf{{'}0{}'}$ and
-$\mathbf{{'}u{}'}_k \in \mathrm{span{}\{\mathbf{{'}w{}'}_1, \ldots, \mathbf{{'}w{}'}_m\}$ Since the
-$\mathbf{{'}w{}'}_j$ span $V$. Therefore
-$\mathbf{{'}u{}'}_k = \sum_{j=1}^m \alpha_j \mathbf{{'}w{}'}_j$ for some $\alpha_j \in F$And not all
+Assume the result holds for $k - 1$. Since $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ is
+linearly Independent, $\mathbf{u}_k \neq \mathbf{0}$ and
+$\mathbf{u}_k \in \mathrm{span\{\mathbf{w}_1, \ldots, \mathbf{w}_m\}$ Since the
+$\mathbf{w}_j$ span $V$. Therefore
+$\mathbf{u}_k = \sum_{j=1}^m \alpha_j \mathbf{w}_j$ for some $\alpha_j \in F$And not all
 $\alpha_j$ are zero.
 
 After relabelling, assume $\alpha_1 \neq 0$. Then
-$\mathbf{{'}w{}'}_1 = \alpha_1^{-1}(\mathbf{{'}u{}'}_k - \sum_{j=2}^m \alpha_j \mathbf{{'}w{}'}_j)$
+$\mathbf{w}_1 = \alpha_1^{-1}(\mathbf{u}_k - \sum_{j=2}^m \alpha_j \mathbf{w}_j)$
 So
-$\mathbf{{'}w{}'}_1 \in \mathrm{span{}\{\mathbf{{'}u{}'}_k, \mathbf{{'}w{}'}_2, \ldots, \mathbf{{'}w{}'}_m\}$.
+$\mathbf{w}_1 \in \mathrm{span\{\mathbf{u}_k, \mathbf{w}_2, \ldots, \mathbf{w}_m\}$.
 It follows that
 
-$$\mathrm{span{}\{\mathbf{{'}w{}'}_1, \ldots, \mathbf{{'}w{}'}_m\} = \mathrm{span{}\{\mathbf{{'}u{}'}_k, \mathbf{{'}w{}'}_2, \ldots, \mathbf{{'}w{}'}_m\} = V$$
+$$\mathrm{span\{\mathbf{w}_1, \ldots, \mathbf{w}_m\} = \mathrm{span\{\mathbf{u}_k, \mathbf{w}_2, \ldots, \mathbf{w}_m\} = V$$
 
-Now $\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_{k-1}\}$ is linearly independent and
-$\{\mathbf{{'}u{}'}_k, \mathbf{{'}w{}'}_2, \ldots, \mathbf{{'}w{}'}_m\}$ spans $V$. By the inductive
+Now $\{\mathbf{u}_1, \ldots, \mathbf{u}_{k-1}\}$ is linearly independent and
+$\{\mathbf{u}_k, \mathbf{w}_2, \ldots, \mathbf{w}_m\}$ spans $V$. By the inductive
 hypothesis, $k - 1 \leq m - 1$ (so $k \leq m$) and after relabelling,
-$\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_{k-1}, \mathbf{{'}w{}'}_k, \ldots, \mathbf{{'}w{}'}_m\}$
-spans $V$. Since $\mathbf{{'}u{}'}_k$ is already in this span, the full set
-$\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_k, \mathbf{{'}w{}'}_{k+1}, \ldots, \mathbf{{'}w{}'}_m\}$
+$\{\mathbf{u}_1, \ldots, \mathbf{u}_{k-1}, \mathbf{w}_k, \ldots, \mathbf{w}_m\}$
+spans $V$. Since $\mathbf{u}_k$ is already in this span, the full set
+$\{\mathbf{u}_1, \ldots, \mathbf{u}_k, \mathbf{w}_{k+1}, \ldots, \mathbf{w}_m\}$
 also spans $V$. $\blacksquare$
 
 **Theorem 2.4 (Dimension is Well-Defined).** If $V$ is finite-dimensional, then any two bases of $V$
 have the same number of elements.
 
-_Proof._ Let $\mathcal{{'}B{}'}_1$ and $\mathcal{{'}B{}'}_2$ be two bases with
-$\lvert\mathcal{{'}B{}'}_1\rvert = k$ and $\lvert\mathcal{{'}B{}'}_2\rvert = m$. Applying the
-Steinitz exchange lemma with $\mathcal{{'}B{}'}_1$ as the Independent set and $\mathcal{{'}B{}'}_2$
+_Proof._ Let $\mathcal{B}_1$ and $\mathcal{B}_2$ be two bases with
+$\lvert\mathcal{B}_1\rvert = k$ and $\lvert\mathcal{B}_2\rvert = m$. Applying the
+Steinitz exchange lemma with $\mathcal{B}_1$ as the Independent set and $\mathcal{B}_2$
 as the spanning set gives $k \leq m$. Swapping roles gives $m \leq k$. Hence $k = m$. $\blacksquare$
 
 ### 2.5 Dimension Formula
@@ -296,44 +296,44 @@ $$\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W)$$
 
 ### 2.6 Rank-Nullity Theorem
 
-**Theorem 2.6 (Rank-Nullity Theorem).** Let $A \in \mathcal{{'}M{}'}_{m \times n}(F)$. Then
+**Theorem 2.6 (Rank-Nullity Theorem).** Let $A \in \mathcal{M}_{m \times n}(F)$. Then
 
-$$\mathrm{rank{}(A) + \mathrm{nullity{}(A) = n$$
+$$\mathrm{rank(A) + \mathrm{nullity(A) = n$$
 
-Where $\mathrm{rank{}(A) = \dim(\mathrm{col{}(A))$ and
-$\mathrm{nullity{}(A) = \dim(\mathrm{null{}(A))$.
+Where $\mathrm{rank(A) = \dim(\mathrm{col(A))$ and
+$\mathrm{nullity(A) = \dim(\mathrm{null(A))$.
 
-_Proof._ Let $\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k\}$ be a basis for
-$\mathrm{null{}(A)$Where $k = \mathrm{nullity{}(A)$. Extend this to a basis
-$\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k, \mathbf{{'}v{}'}_{k+1}, \ldots, \mathbf{{'}v{}'}_n\}$
+_Proof._ Let $\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ be a basis for
+$\mathrm{null(A)$Where $k = \mathrm{nullity(A)$. Extend this to a basis
+$\{\mathbf{v}_1, \ldots, \mathbf{v}_k, \mathbf{v}_{k+1}, \ldots, \mathbf{v}_n\}$
 for $F^n$.
 
-We claim that $\{A\mathbf{{'}v{}'}_{k+1}, \ldots, A\mathbf{{'}v{}'}_n\}$ is a basis for
-$\mathrm{col{}(A)$.
+We claim that $\{A\mathbf{v}_{k+1}, \ldots, A\mathbf{v}_n\}$ is a basis for
+$\mathrm{col(A)$.
 
-_Spanning:_ For any $\mathbf{{'}y{}'} \in \mathrm{col{}(A)$There exists $\mathbf{{'}x{}'} \in F^n$
-With $\mathbf{{'}y{}'} = A\mathbf{{'}x{}'}$. Writing
-$\mathbf{{'}x{}'} = \sum_{i=1}^n \alpha_i \mathbf{{'}v{}'}_i$
+_Spanning:_ For any $\mathbf{y} \in \mathrm{col(A)$There exists $\mathbf{x} \in F^n$
+With $\mathbf{y} = A\mathbf{x}$. Writing
+$\mathbf{x} = \sum_{i=1}^n \alpha_i \mathbf{v}_i$
 
-$$\mathbf{{'}y{}'} = A\left(\sum_{i=1}^n \alpha_i \mathbf{{'}v{}'}_i\right) = \sum_{i=1}^n \alpha_i A\mathbf{{'}v{}'}_i = \sum_{i=k+1}^n \alpha_i A\mathbf{{'}v{}'}_i$$
+$$\mathbf{y} = A\left(\sum_{i=1}^n \alpha_i \mathbf{v}_i\right) = \sum_{i=1}^n \alpha_i A\mathbf{v}_i = \sum_{i=k+1}^n \alpha_i A\mathbf{v}_i$$
 
-Since $A\mathbf{{'}v{}'}_i = \mathbf{{'}0{}'}$ for $i \leq k$.
+Since $A\mathbf{v}_i = \mathbf{0}$ for $i \leq k$.
 
-_Linear independence:_ If $\sum_{i=k+1}^n \alpha_i A\mathbf{{'}v{}'}_i = \mathbf{{'}0{}'}$Then
-$A\left(\sum_{i=k+1}^n \alpha_i \mathbf{{'}v{}'}_i\right) = \mathbf{{'}0{}'}$So
-$\sum_{i=k+1}^n \alpha_i \mathbf{{'}v{}'}_i \in \mathrm{null{}(A)$. Since
-$\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k\}$ Is a basis for the null space,
-$\sum_{i=k+1}^n \alpha_i \mathbf{{'}v{}'}_i = \sum_{i=1}^k \beta_i \mathbf{{'}v{}'}_i$ For some
+_Linear independence:_ If $\sum_{i=k+1}^n \alpha_i A\mathbf{v}_i = \mathbf{0}$Then
+$A\left(\sum_{i=k+1}^n \alpha_i \mathbf{v}_i\right) = \mathbf{0}$So
+$\sum_{i=k+1}^n \alpha_i \mathbf{v}_i \in \mathrm{null(A)$. Since
+$\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ Is a basis for the null space,
+$\sum_{i=k+1}^n \alpha_i \mathbf{v}_i = \sum_{i=1}^k \beta_i \mathbf{v}_i$ For some
 $\beta_i$Giving
-$\sum_{i=1}^n (-\beta_i)\mathbf{{'}v{}'}_i + \sum_{i=k+1}^n \alpha_i \mathbf{{'}v{}'}_i = \mathbf{{'}0{}'}$.
+$\sum_{i=1}^n (-\beta_i)\mathbf{v}_i + \sum_{i=k+1}^n \alpha_i \mathbf{v}_i = \mathbf{0}$.
 By linear independence of the full basis, $\alpha_i = 0$ for all $i \geq k + 1$.
 
-Therefore $\mathrm{rank{}(A) = n - k = n - \mathrm{nullity{}(A)$. $\blacksquare$
+Therefore $\mathrm{rank(A) = n - k = n - \mathrm{nullity(A)$. $\blacksquare$
 
 ### 2.7 Worked Examples
 
 **Problem.** Find a basis for and the dimension of the subspace
-$W = \mathrm{span{}\{(1, 2, -1, 0), (3, 1, 0, 2), (-1, 3, -2, -2)\}$ of $\mathbb{{'}R{}'}^4$.
+$W = \mathrm{span\{(1, 2, -1, 0), (3, 1, 0, 2), (-1, 3, -2, -2)\}$ of $\mathbb{R}^4$.
 
 <details>
 <summary>Solution</summary>
@@ -362,37 +362,37 @@ $$\begin{pmatrix} 1 & 2 & 1 & -1 \\ 2 & 4 & 0 & 1 \\ 0 & 0 & 1 & 3 \end{pmatrix}
 
 This has pivots in columns 1, 3, and 4. The free variable is $x_2$. Setting $x_2 = t$ and
 Back-substituting: $x_4 = 0$$x_3 = 0$$x_1 = -2t$. The null space is
-$\{t(-2, 1, 0, 0) : t \in \mathbb{{'}R{}'}\}$With basis $\{(-2, 1, 0, 0)\}$ and dimension 1.
+$\{t(-2, 1, 0, 0) : t \in \mathbb{R}\}$With basis $\{(-2, 1, 0, 0)\}$ and dimension 1.
 $\blacksquare$
 
 </details>
 
 **Problem.** Determine whether the vectors
-$\mathbf{{'}v{}'}_1 = (1, 2, 3)$$\mathbf{{'}v{}'}_2 = (4, 5, 6)$$\mathbf{{'}v{}'}_3 = (7, 8, 9)$
-form a basis For $\mathbb{{'}R{}'}^3$.
+$\mathbf{v}_1 = (1, 2, 3)$$\mathbf{v}_2 = (4, 5, 6)$$\mathbf{v}_3 = (7, 8, 9)$
+form a basis For $\mathbb{R}^3$.
 
 <details>
 <summary>Solution</summary>
 
-Form the matrix $A = [\mathbf{{'}v{}'}_1 \mid \mathbf{{'}v{}'}_2 \mid \mathbf{{'}v{}'}_3]$ and
+Form the matrix $A = [\mathbf{v}_1 \mid \mathbf{v}_2 \mid \mathbf{v}_3]$ and
 compute Its determinant:
 
 $$\det(A) = 1(45 - 48) - 2(36 - 42) + 3(32 - 35) = -3 + 12 - 9 = 0$$
 
 Since $\det(A) = 0$The columns are linearly dependent, so
-$\{\mathbf{{'}v{}'}_1, \mathbf{{'}v{}'}_2, \mathbf{{'}v{}'}_3\}$ Is not a basis. In fact,
-$\mathbf{{'}v{}'}_3 - 2\mathbf{{'}v{}'}_2 + \mathbf{{'}v{}'}_1 = \mathbf{{'}0{}'}$.
+$\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ Is not a basis. In fact,
+$\mathbf{v}_3 - 2\mathbf{v}_2 + \mathbf{v}_1 = \mathbf{0}$.
 
 $\blacksquare$
 
 </details>
 
-:::tip To check if $n$ vectors in $\mathbb{{'}R{}'}^n$ form a basis, compute the determinant of the
+:::tip To check if $n$ vectors in $\mathbb{R}^n$ form a basis, compute the determinant of the
 matrix whose Columns are those vectors. If $\det \neq 0$They form a basis; if $\det = 0$They do not.
 :::
 
-**Problem.** Let $V = \mathcal{{'}P{}'}_3(\mathbb{{'}R{}'})$ (polynomials of degree at most 3). Find
-the dimension Of the subspace $W = \{p \in \mathcal{{'}P{}'}_3 : p(1) = p(-1) = 0\}$.
+**Problem.** Let $V = \mathcal{P}_3(\mathbb{R})$ (polynomials of degree at most 3). Find
+the dimension Of the subspace $W = \{p \in \mathcal{P}_3 : p(1) = p(-1) = 0\}$.
 
 <details>
 <summary>Solution</summary>
@@ -415,11 +415,11 @@ _If you get this wrong, revise: Section 2.7 (Worked Examples)._
 
 - **Linear independence of infinitely many vectors.** The definition only directly applies to finite
   subsets. A set $S$ is linearly independent if every finite subset of $S$ is linearly independent.
-- **Dimension and spanning.** A set of $n$ vectors in $\mathbb{{'}R{}'}^n$ that spans
-  $\mathbb{{'}R{}'}^n$ must be linearly independent (and hence a basis). Similarly, $n$ linearly
-  independent vectors in $\mathbb{{'}R{}'}^n$ must span $\mathbb{{'}R{}'}^n$.
-- **The empty set spans $\{\mathbf{{'}0{}'}\}$.** The span of the empty set is the trivial subspace,
-  and the empty set is a basis for $\{\mathbf{{'}0{}'}\}$. The dimension of the zero space is 0.
+- **Dimension and spanning.** A set of $n$ vectors in $\mathbb{R}^n$ that spans
+  $\mathbb{R}^n$ must be linearly independent (and hence a basis). Similarly, $n$ linearly
+  independent vectors in $\mathbb{R}^n$ must span $\mathbb{R}^n$.
+- **The empty set spans $\{\mathbf{0}\}$.** The span of the empty set is the trivial subspace,
+  and the empty set is a basis for $\{\mathbf{0}\}$. The dimension of the zero space is 0.
 
 ---
 
@@ -428,15 +428,15 @@ _If you get this wrong, revise: Section 2.7 (Worked Examples)._
 ### 3.1 Matrix Operations
 
 An $m \times n$ matrix $A$ over $F$ is a rectangular array of $mn$ elements from $F$Arranged in $m$
-rows and $n$ columns. The set of all such matrices is denoted $\mathcal{{'}M{}'}_{m \times n}(F)$.
+rows and $n$ columns. The set of all such matrices is denoted $\mathcal{M}_{m \times n}(F)$.
 
-**Addition.** For $A, B \in \mathcal{{'}M{}'}_{m \times n}(F)$$(A + B)_{ij} = A_{ij} + B_{ij}$.
+**Addition.** For $A, B \in \mathcal{M}_{m \times n}(F)$$(A + B)_{ij} = A_{ij} + B_{ij}$.
 
-**Scalar multiplication.** For $\alpha \in F$ and $A \in \mathcal{{'}M{}'}_{m \times n}(F)$
+**Scalar multiplication.** For $\alpha \in F$ and $A \in \mathcal{M}_{m \times n}(F)$
 $(\alpha A)_{ij} = \alpha A_{ij}$.
 
-**Matrix multiplication.** For $A \in \mathcal{{'}M{}'}_{m \times n}(F)$ and
-$B \in \mathcal{{'}M{}'}_{n \times p}(F)$ The product $AB \in \mathcal{{'}M{}'}_{m \times p}(F)$ is
+**Matrix multiplication.** For $A \in \mathcal{M}_{m \times n}(F)$ and
+$B \in \mathcal{M}_{n \times p}(F)$ The product $AB \in \mathcal{M}_{m \times p}(F)$ is
 defined by
 
 $$(AB)_{ij} = \sum_{k=1}^n A_{ik} B_{kj}$$
@@ -453,7 +453,7 @@ $\blacksquare$
 
 ### 3.2 Transpose
 
-The **transpose** of $A \in \mathcal{{'}M{}'}_{m \times n}(F)$Denoted $A^T$Is the $n \times m$
+The **transpose** of $A \in \mathcal{M}_{m \times n}(F)$Denoted $A^T$Is the $n \times m$
 matrix With $(A^T)_{ij} = A_{ji}$.
 
 **Properties of transpose:**
@@ -465,26 +465,26 @@ matrix With $(A^T)_{ij} = A_{ji}$.
 
 ### 3.3 Inverse Matrices
 
-A square matrix $A \in \mathcal{{'}M{}'}_{n \times n}(F)$ is **invertible** if there exists a matrix
-$A^{-1} \in \mathcal{{'}M{}'}_{n \times n}(F)$ such that
+A square matrix $A \in \mathcal{M}_{n \times n}(F)$ is **invertible** if there exists a matrix
+$A^{-1} \in \mathcal{M}_{n \times n}(F)$ such that
 
 $$AA^{-1} = A^{-1}A = I_n$$
 
-**Theorem 3.1.** The following are equivalent for $A \in \mathcal{{'}M{}'}_{n \times n}(F)$:
+**Theorem 3.1.** The following are equivalent for $A \in \mathcal{M}_{n \times n}(F)$:
 
 1. $A$ is invertible.
 2. $\det(A) \neq 0$.
 3. The columns of $A$ are linearly independent.
 4. The rows of $A$ are linearly independent.
-5. $\mathrm{rank{}(A) = n$.
-6. The equation $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ has a unique solution for every
-   $\mathbf{{'}b{}'}$.
-7. The only solution to $A\mathbf{{'}x{}'} = \mathbf{{'}0{}'}$ is
-   $\mathbf{{'}x{}'} = \mathbf{{'}0{}'}$.
+5. $\mathrm{rank(A) = n$.
+6. The equation $A\mathbf{x} = \mathbf{b}$ has a unique solution for every
+   $\mathbf{b}$.
+7. The only solution to $A\mathbf{x} = \mathbf{0}$ is
+   $\mathbf{x} = \mathbf{0}$.
 
 ### 3.4 Determinants
 
-The **determinant** is a function $\det : \mathcal{{'}M{}'}_{n \times n}(F) \to F$ defined
+The **determinant** is a function $\det : \mathcal{M}_{n \times n}(F) \to F$ defined
 recursively by **Laplace expansion** along the first row:
 
 $$\det(A) = \sum_{j=1}^n (-1)^{1+j} a_{1j} M_{1j}$$
@@ -497,14 +497,14 @@ for any fixed row $i$.
 
 ### 3.5 Properties of Determinants
 
-**Proposition 3.2 (Effect of Row Operations).** Let $A \in \mathcal{{'}M{}'}_{n \times n}(F)$.
+**Proposition 3.2 (Effect of Row Operations).** Let $A \in \mathcal{M}_{n \times n}(F)$.
 
 1. Swapping two rows of $A$ multiplies the determinant by $-1$.
 2. Multiplying a row of $A$ by $\alpha \in F$ multiplies the determinant by $\alpha$.
 3. Adding a multiple of one row to another leaves the determinant unchanged.
 
 _Proof._ (1) This follows from the antisymmetry of the Leibniz formula
-$\det(A) = \sum_{\sigma \in S_n} \mathrm{sgn{}(\sigma) \prod_{i=1}^n a_{i,\sigma(i)}$. Swapping two
+$\det(A) = \sum_{\sigma \in S_n} \mathrm{sgn(\sigma) \prod_{i=1}^n a_{i,\sigma(i)}$. Swapping two
 rows Changes the sign of every permutation, hence the sign of the sum.
 
 (2) Multiplying row $i$ by $\alpha$ multiplies every term in the Leibniz expansion by $\alpha$ Hence
@@ -512,13 +512,13 @@ $\det$ is multiplied by $\alpha$.
 
 (3) Adding $\alpha$ times row $j$ to row $i$ ($i \neq j$): by multilinearity in row $i$
 
-$$\det(\mathrm{new~{}A) = \det(A) + \alpha \cdot \det(\mathrm{matrix~with~rows~{}i\mathrm{~and~{}j\mathrm{~equal{})$$
+$$\det(\mathrm{new~A) = \det(A) + \alpha \cdot \det(\mathrm{matrix~with~rows~i\mathrm{~and~j\mathrm{~equal)$$
 
 A matrix with two equal rows has determinant 0 (by antisymmetry: swapping them leaves the matrix
 Unchanged but multiplies $\det$ by $-1$So $\det = -\det$Hence $\det = 0$). Therefore
-$\det(\mathrm{new~{}A) = \det(A)$. $\blacksquare$
+$\det(\mathrm{new~A) = \det(A)$. $\blacksquare$
 
-**Theorem 3.3 (Multiplicativity).** For $A, B \in \mathcal{{'}M{}'}_{n \times n}(F)$
+**Theorem 3.3 (Multiplicativity).** For $A, B \in \mathcal{M}_{n \times n}(F)$
 
 $$\det(AB) = \det(A)\det(B)$$
 
@@ -545,20 +545,20 @@ same effects on the determinant. $\blacksquare$
 
 ### 3.6 Adjugate and Inverse Formula
 
-**Definition.** The **adjugate** (or **adjoint**) of $A \in \mathcal{{'}M{}'}_{n \times n}(F)$ is
+**Definition.** The **adjugate** (or **adjoint**) of $A \in \mathcal{M}_{n \times n}(F)$ is
 
-$$\mathrm{adj{}(A) = (C_{ji})_{i,j=1}^n$$
+$$\mathrm{adj(A) = (C_{ji})_{i,j=1}^n$$
 
-Where $C_{ij}$ is the $(i,j)$-cofactor of $A$. That is, $\mathrm{adj{}(A)$ is the transpose of the
+Where $C_{ij}$ is the $(i,j)$-cofactor of $A$. That is, $\mathrm{adj(A)$ is the transpose of the
 Cofactor matrix.
 
-**Theorem 3.5.** For any $A \in \mathcal{{'}M{}'}_{n \times n}(F)$
+**Theorem 3.5.** For any $A \in \mathcal{M}_{n \times n}(F)$
 
-$$A \cdot \mathrm{adj{}(A) = \mathrm{adj{}(A) \cdot A = \det(A) \cdot I_n$$
+$$A \cdot \mathrm{adj(A) = \mathrm{adj(A) \cdot A = \det(A) \cdot I_n$$
 
-In particular, if $\det(A) \neq 0$Then $A^{-1} = \frac{1}{\det(A)} \mathrm{adj{}(A)$.
+In particular, if $\det(A) \neq 0$Then $A^{-1} = \frac{1}{\det(A)} \mathrm{adj(A)$.
 
-_Proof._ The $(i,j)$-entry of $A \cdot \mathrm{adj{}(A)$ is $\sum_{k=1}^n a_{ik} C_{jk}$. When
+_Proof._ The $(i,j)$-entry of $A \cdot \mathrm{adj(A)$ is $\sum_{k=1}^n a_{ik} C_{jk}$. When
 $i = j$This is $\sum_{k=1}^n a_{ik} C_{ik} = \det(A)$ (cofactor expansion along row $i$). When
 $i \neq j$This is the cofactor expansion of a matrix obtained from $A$ by replacing row $j$ With row
 $i$Which has two equal rows and hence determinant 0. $\blacksquare$
@@ -621,7 +621,7 @@ $\det(A) = 1 \cdot 4 - 2 \cdot 3 = -2 \neq 0$So $A$ is invertible.
 
 Cofactors: $C_{11} = 4$$C_{12} = -3$$C_{21} = -2$$C_{22} = 1$.
 
-$$\mathrm{adj{}(A) = \begin{pmatrix} 4 & -2 \\ -3 & 1 \end{pmatrix}$$
+$$\mathrm{adj(A) = \begin{pmatrix} 4 & -2 \\ -3 & 1 \end{pmatrix}$$
 
 $$A^{-1} = \frac{1}{-2}\begin{pmatrix} 4 & -2 \\ -3 & 1 \end{pmatrix} = \begin{pmatrix} -2 & 1 \\ 3/2 & -1/2 \end{pmatrix}$$
 
@@ -678,11 +678,11 @@ Only the product of diagonal entries. $\blacksquare$
 ### 4.1 Gaussian Elimination
 
 A system of $m$ linear equations in $n$ unknowns can be written as
-$A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$Where
-$A \in \mathcal{{'}M{}'}_{m \times n}(\mathbb{{'}R{}'})$$\mathbf{{'}x{}'} \in \mathbb{{'}R{}'}^n$And
-$\mathbf{{'}b{}'} \in \mathbb{{'}R{}'}^m$.
+$A\mathbf{x} = \mathbf{b}$Where
+$A \in \mathcal{M}_{m \times n}(\mathbb{R})$$\mathbf{x} \in \mathbb{R}^n$And
+$\mathbf{b} \in \mathbb{R}^m$.
 
-**Gaussian elimination** transforms the augmented matrix $[A \mid \mathbf{{'}b{}'}]$ into **row
+**Gaussian elimination** transforms the augmented matrix $[A \mid \mathbf{b}]$ into **row
 echelon Form** (REF) using elementary row operations:
 
 1. Swap two rows ($R_i \leftrightarrow R_j$).
@@ -705,25 +705,25 @@ Have the same RREF.
 
 ### 4.2 Existence and Uniqueness
 
-**Theorem 4.2 (Rouché--Capelli).** The system $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ is consistent
+**Theorem 4.2 (Rouché--Capelli).** The system $A\mathbf{x} = \mathbf{b}$ is consistent
 (has at least one Solution) if and only if
 
-$$\mathrm{rank{}(A) = \mathrm{rank{}([A \mid \mathbf{{'}b{}'}])$$
+$$\mathrm{rank(A) = \mathrm{rank([A \mid \mathbf{b}])$$
 
-If consistent, the solution set has $\dim(\mathrm{null{}(A))$ free parameters, where
-$\dim(\mathrm{null{}(A)) = n - \mathrm{rank{}(A)$.
+If consistent, the solution set has $\dim(\mathrm{null(A))$ free parameters, where
+$\dim(\mathrm{null(A)) = n - \mathrm{rank(A)$.
 
-_Proof._ Let the RREF of $[A \mid \mathbf{{'}b{}'}]$ have $r = \mathrm{rank{}(A)$ pivots in the
+_Proof._ Let the RREF of $[A \mid \mathbf{b}]$ have $r = \mathrm{rank(A)$ pivots in the
 coefficient Columns. The system is inconsistent if and only if the last non-zero row is
 $[0 \cdots 0 \mid 1]$ Which occurs precisely when the augmented column contains a pivot, i.e., when
-$\mathrm{rank{}([A \mid \mathbf{{'}b{}'}]) \gt{} r$.
+$\mathrm{rank([A \mid \mathbf{b}]) \gt r$.
 
 If consistent, the $r$ pivot variables are determined by the $n - r$ free variables, yielding
-$n - \mathrm{rank{}(A)$ degrees of freedom. $\blacksquare$
+$n - \mathrm{rank(A)$ degrees of freedom. $\blacksquare$
 
 ### 4.3 LU Decomposition
 
-An **LU decomposition** of $A \in \mathcal{{'}M{}'}_{n \times n}(\mathbb{{'}R{}'})$ writes $A = LU$
+An **LU decomposition** of $A \in \mathcal{M}_{n \times n}(\mathbb{R})$ writes $A = LU$
 where $L$ is Lower triangular with 1s on the diagonal, and $U$ is upper triangular.
 
 **Theorem 4.3.** If Gaussian elimination can be performed on $A$ without row exchanges, then $A$
@@ -753,8 +753,8 @@ Verify: $LU = \begin{pmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{pmatrix} 
 
 </details>
 
-To solve $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$First solve $L\mathbf{{'}y{}'} = \mathbf{{'}b{}'}$
-(forward substitution), Then $U\mathbf{{'}x{}'} = \mathbf{{'}y{}'}$ (back substitution).
+To solve $A\mathbf{x} = \mathbf{b}$First solve $L\mathbf{y} = \mathbf{b}$
+(forward substitution), Then $U\mathbf{x} = \mathbf{y}$ (back substitution).
 
 ### 4.4 Gaussian Elimination with Partial Pivoting
 
@@ -771,7 +771,7 @@ $$\begin{aligned} x_1 + 2x_2 + x_3 &= 5 \\ 3x_1 + x_2 - x_3 &= 2 \\ 2x_1 + 3x_2 
 
 Augmented matrix:
 
-$$[A \mid \mathbf{{'}b{}'}] = \begin{pmatrix} 1 & 2 & 1 & 5 \\ 3 & 1 & -1 & 2 \\ 2 & 3 & 4 & 11 \end{pmatrix}$$
+$$[A \mid \mathbf{b}] = \begin{pmatrix} 1 & 2 & 1 & 5 \\ 3 & 1 & -1 & 2 \\ 2 & 3 & 4 & 11 \end{pmatrix}$$
 
 **Step 1.** Column 1: largest entry is 3 in row 2. Swap $R_1 \leftrightarrow R_2$:
 
@@ -803,22 +803,22 @@ $x_1 = \frac{16}{7}$.
 
 ### 4.5 Least Squares Solutions
 
-When $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ is overdetermined (more equations than unknowns) and
-inconsistent, We seek $\mathbf{{'}x{}'}$ that minimises
-$\lVert A\mathbf{{'}x{}'} - \mathbf{{'}b{}'} \rVert^2$.
+When $A\mathbf{x} = \mathbf{b}$ is overdetermined (more equations than unknowns) and
+inconsistent, We seek $\mathbf{x}$ that minimises
+$\lVert A\mathbf{x} - \mathbf{b} \rVert^2$.
 
-**Theorem 4.4 (Normal Equations).** The least squares solution $\hat{\mathbf{{'}x{}'}}$ satisfies
+**Theorem 4.4 (Normal Equations).** The least squares solution $\hat{\mathbf{x}}$ satisfies
 
-$$A^T A \hat{\mathbf{{'}x{}'}} = A^T \mathbf{{'}b{}'}$$
+$$A^T A \hat{\mathbf{x}} = A^T \mathbf{b}$$
 
 If $A$ has full column rank, then $A^T A$ is invertible and
-$\hat{\mathbf{{'}x{}'}} = (A^T A)^{-1} A^T \mathbf{{'}b{}'}$.
+$\hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b}$.
 
-_Proof._ The error vector $\mathbf{{'}e{}'} = A\mathbf{{'}x{}'} - \mathbf{{'}b{}'}$ is minimised
-when $\mathbf{{'}e{}'} \perp \mathrm{col{}(A)$ I.e., when $A^T \mathbf{{'}e{}'} = \mathbf{{'}0{}'}$.
-This gives $A^T(A\mathbf{{'}x{}'} - \mathbf{{'}b{}'}) = \mathbf{{'}0{}'}$ Or
-$A^T A \mathbf{{'}x{}'} = A^T \mathbf{{'}b{}'}$. If $A$ has full column rank, then
-$\ker(A) = \{\mathbf{{'}0{}'}\}$ So $\ker(A^T A) = \ker(A) = \{\mathbf{{'}0{}'}\}$Meaning $A^T A$ is
+_Proof._ The error vector $\mathbf{e} = A\mathbf{x} - \mathbf{b}$ is minimised
+when $\mathbf{e} \perp \mathrm{col(A)$ I.e., when $A^T \mathbf{e} = \mathbf{0}$.
+This gives $A^T(A\mathbf{x} - \mathbf{b}) = \mathbf{0}$ Or
+$A^T A \mathbf{x} = A^T \mathbf{b}$. If $A$ has full column rank, then
+$\ker(A) = \{\mathbf{0}\}$ So $\ker(A^T A) = \ker(A) = \{\mathbf{0}\}$Meaning $A^T A$ is
 invertible. $\blacksquare$
 
 **Problem.** Find the least squares line $y = ax + b$ fitting the data points
@@ -829,14 +829,14 @@ $(1, 1)$$(2, 1)$$(3, 3)$.
 
 The system is
 $\begin{pmatrix} 1 & 1 \\ 2 & 1 \\ 3 & 1 \end{pmatrix}\begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \\ 3 \end{pmatrix}$
-I.e., $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ with
+I.e., $A\mathbf{x} = \mathbf{b}$ with
 $A = \begin{pmatrix} 1 & 1 \\ 2 & 1 \\ 3 & 1 \end{pmatrix}$
-$\mathbf{{'}x{}'} = (a, b)^T$$\mathbf{{'}b{}'} = (1, 1, 3)^T$.
+$\mathbf{x} = (a, b)^T$$\mathbf{b} = (1, 1, 3)^T$.
 
 Compute
 $A^T A = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 1 & 1 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 2 & 1 \\ 3 & 1 \end{pmatrix} = \begin{pmatrix} 14 & 6 \\ 6 & 3 \end{pmatrix}$.
 
-$A^T \mathbf{{'}b{}'} = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 1 & 1 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \\ 3 \end{pmatrix} = \begin{pmatrix} 12 \\ 5 \end{pmatrix}$.
+$A^T \mathbf{b} = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 1 & 1 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \\ 3 \end{pmatrix} = \begin{pmatrix} 12 \\ 5 \end{pmatrix}$.
 
 Solve
 $\begin{pmatrix} 14 & 6 \\ 6 & 3 \end{pmatrix}\begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} 12 \\ 5 \end{pmatrix}$:
@@ -845,7 +845,7 @@ $\det(A^T A) = 42 - 36 = 6$.
 
 $(A^T A)^{-1} = \frac{1}{6}\begin{pmatrix} 3 & -6 \\ -6 & 14 \end{pmatrix}$.
 
-$\hat{\mathbf{{'}x{}'}} = \frac{1}{6}\begin{pmatrix} 3 & -6 \\ -6 & 14 \end{pmatrix}\begin{pmatrix} 12 \\ 5 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 36 - 30 \\ -72 + 70 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 6 \\ -2 \end{pmatrix} = \begin{pmatrix} 1 \\ -1/3 \end{pmatrix}$.
+$\hat{\mathbf{x}} = \frac{1}{6}\begin{pmatrix} 3 & -6 \\ -6 & 14 \end{pmatrix}\begin{pmatrix} 12 \\ 5 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 36 - 30 \\ -72 + 70 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 6 \\ -2 \end{pmatrix} = \begin{pmatrix} 1 \\ -1/3 \end{pmatrix}$.
 
 The least squares line is $y = x - 1/3$. $\blacksquare$
 
@@ -883,12 +883,12 @@ $$\xrightarrow{R_3 - 2R_2} \begin{pmatrix} 1 & 2 & -1 & 3 & 1 \\ 0 & 0 & 1 & -1 
 Now the system is consistent. Pivots in columns 1 and 3; free variables are $x_2$ and $x_4$. From
 row 2: $x_3 = x_4$. From row 1: $x_1 = 1 - 2x_2 + x_3 - 3x_4 = 1 - 2x_2 - 2x_4$.
 
-Solution set: $\{(1 - 2s - 2t, s, t, t) : s, t \in \mathbb{{'}R{}'}\}$.
+Solution set: $\{(1 - 2s - 2t, s, t, t) : s, t \in \mathbb{R}\}$.
 
 In parametric form:
 $\begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} + s\begin{pmatrix} -2 \\ 1 \\ 0 \\ 0 \end{pmatrix} + t\begin{pmatrix} -2 \\ 0 \\ 1 \\ 1 \end{pmatrix}$.
 
-The solution space is a 2-dimensional affine subspace (a plane) in $\mathbb{{'}R{}'}^4$.
+The solution space is a 2-dimensional affine subspace (a plane) in $\mathbb{R}^4$.
 $\blacksquare$
 
 </details>
@@ -908,12 +908,12 @@ $\blacksquare$
 
 ### 5.1 Definitions
 
-Let $A \in \mathcal{{'}M{}'}_{n \times n}(F)$. A scalar $\lambda \in F$ is an **eigenvalue** of $A$
-if there Exists a non-zero vector $\mathbf{{'}v{}'} \in F^n$ such that
+Let $A \in \mathcal{M}_{n \times n}(F)$. A scalar $\lambda \in F$ is an **eigenvalue** of $A$
+if there Exists a non-zero vector $\mathbf{v} \in F^n$ such that
 
-$$A\mathbf{{'}v{}'} = \lambda \mathbf{{'}v{}'}$$
+$$A\mathbf{v} = \lambda \mathbf{v}$$
 
-The vector $\mathbf{{'}v{}'}$ is called an **eigenvector** corresponding to $\lambda$.
+The vector $\mathbf{v}$ is called an **eigenvector** corresponding to $\lambda$.
 
 The **eigenspace** corresponding to $\lambda$ is $E_\lambda = \ker(A - \lambda I)$. Its dimension is
 The **geometric multiplicity** of $\lambda$.
@@ -930,7 +930,7 @@ $p(\lambda) = (\\lambda - \\lambda_1)^{m_1}(\\lambda - \\lambda_2)^{m_2}\cdots(\
 With $\\lambda_1, \ldots, \\lambda_k$ distinct, then $m_i$ is the **algebraic multiplicity** of
 $\\lambda_i$.
 
-**Proposition 5.2.** For each eigenvalue $\lambda$$1 \leq \mathrm{dim{}(E_\lambda) \leq m_\lambda$
+**Proposition 5.2.** For each eigenvalue $\lambda$$1 \leq \mathrm{dim(E_\lambda) \leq m_\lambda$
 (geometric multiplicity does not exceed algebraic multiplicity).
 
 ### 5.3 Diagonalisation
@@ -940,7 +940,7 @@ Matrix $D$ such that
 
 $$A = PDP^{-1}$$
 
-**Theorem 5.3.** $A \in \mathcal{{'}M{}'}_{n \times n}(F)$ is diagonalisable (over $F$) if and only
+**Theorem 5.3.** $A \in \mathcal{M}_{n \times n}(F)$ is diagonalisable (over $F$) if and only
 if $A$ has $n$ linearly independent Eigenvectors (over $F$). Equivalently, the sum of the geometric
 multiplicities equals $n$.
 
@@ -957,9 +957,9 @@ If $p(\lambda) = \det(\lambda I - A)$Then $p(A) = 0$ (the zero matrix).
 
 _Proof sketch._ Let $p(\lambda) = \lambda^n + c_{n-1}\lambda^{n-1} + \cdots + c_1\lambda + c_0$. By
 the adjugate formula (Theorem 3.5),
-$(\lambda I - A) \cdot \mathrm{adj{}(\lambda I - A) = p(\lambda) \cdot I$. Each entry of
-$\mathrm{adj{}(\lambda I - A)$ is a polynomial in $\lambda$ of degree at most $n - 1$ So we can
-write $\mathrm{adj{}(\lambda I - A) = B_{n-1}\lambda^{n-1} + \cdots + B_1\lambda + B_0$ for Matrices
+$(\lambda I - A) \cdot \mathrm{adj(\lambda I - A) = p(\lambda) \cdot I$. Each entry of
+$\mathrm{adj(\lambda I - A)$ is a polynomial in $\lambda$ of degree at most $n - 1$ So we can
+write $\mathrm{adj(\lambda I - A) = B_{n-1}\lambda^{n-1} + \cdots + B_1\lambda + B_0$ for Matrices
 $B_i$. Multiplying out and comparing coefficients of $\lambda^k$:
 
 $$B_{n-1} = I, \quad B_{n-2} - AB_{n-1} = c_{n-1}I, \quad \ldots, \quad -AB_0 = c_0 I$$
@@ -975,7 +975,7 @@ But the left side telescopes to zero, so $p(A) = 0$. $\blacksquare$
 When a matrix is not diagonalisable, the Jordan normal form provides the next-best canonical
 Representation.
 
-**Theorem 5.6.** Let $A \in \mathcal{{'}M{}'}_{n \times n}(\mathbb{{'}C{}'})$. Then $A$ is similar
+**Theorem 5.6.** Let $A \in \mathcal{M}_{n \times n}(\mathbb{C})$. Then $A$ is similar
 to a block-diagonal Matrix
 
 $$J = \begin{pmatrix} J_1 & & \\ & \ddots & \\ & & J_k \end{pmatrix}$$
@@ -988,7 +988,7 @@ The Jordan form is unique up to permutation of the blocks.
 
 _Intuition._ Each Jordan block corresponds to one eigenvalue. The size of the block equals the
 Number of steps in the chain
-$\mathbf{{'}v{}'}, (A - \lambda I)\mathbf{{'}v{}'}, (A - \lambda I)^2\mathbf{{'}v{}'}, \ldots$ Of
+$\mathbf{v}, (A - \lambda I)\mathbf{v}, (A - \lambda I)^2\mathbf{v}, \ldots$ Of
 **generalised eigenvectors**. A diagonalisable matrix has all Jordan blocks of size $1 \times 1$.
 
 **Problem.** Find the Jordan normal form of
@@ -1015,7 +1015,7 @@ $$J = \begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$$
 
 ### 5.6 Spectral Theorem for Real Symmetric Matrices
 
-**Theorem 5.7 (Spectral Theorem).** If $A \in \mathcal{{'}M{}'}_{n \times n}(\mathbb{{'}R{}'})$ is
+**Theorem 5.7 (Spectral Theorem).** If $A \in \mathcal{M}_{n \times n}(\mathbb{R})$ is
 symmetric ($A = A^T$), then:
 
 1. All eigenvalues of $A$ are real.
@@ -1024,37 +1024,37 @@ symmetric ($A = A^T$), then:
 
 _Proof._ We prove (1) and then (2) and (3) by induction on $n$.
 
-**(1)** Let $\lambda \in \mathbb{{'}C{}'}$ be an eigenvalue with eigenvector
-$\mathbf{{'}v{}'} \in \mathbb{{'}C{}'}^n$ $\mathbf{{'}v{}'} \neq \mathbf{{'}0{}'}$. Then
+**(1)** Let $\lambda \in \mathbb{C}$ be an eigenvalue with eigenvector
+$\mathbf{v} \in \mathbb{C}^n$ $\mathbf{v} \neq \mathbf{0}$. Then
 
-$$\overline{\mathbf{{'}v{}'}}^T A \mathbf{{'}v{}'} = \overline{\mathbf{{'}v{}'}}^T (\lambda \mathbf{{'}v{}'}) = \lambda \overline{\mathbf{{'}v{}'}}^T \mathbf{{'}v{}'}$$
+$$\overline{\mathbf{v}}^T A \mathbf{v} = \overline{\mathbf{v}}^T (\lambda \mathbf{v}) = \lambda \overline{\mathbf{v}}^T \mathbf{v}$$
 
 Since $A = A^T$ and $A$ has real entries, $\overline{A} = A = A^T$So
 
-$$\overline{\mathbf{{'}v{}'}}^T A \mathbf{{'}v{}'} = (A\overline{\mathbf{{'}v{}'}})^T \mathbf{{'}v{}'} = (\overline{A\mathbf{{'}v{}'}})^T \mathbf{{'}v{}'} = (\overline{\lambda}\,\overline{\mathbf{{'}v{}'}})^T \mathbf{{'}v{}'} = \overline{\lambda}\,\overline{\mathbf{{'}v{}'}}^T \mathbf{{'}v{}'}$$
+$$\overline{\mathbf{v}}^T A \mathbf{v} = (A\overline{\mathbf{v}})^T \mathbf{v} = (\overline{A\mathbf{v}})^T \mathbf{v} = (\overline{\lambda}\,\overline{\mathbf{v}})^T \mathbf{v} = \overline{\lambda}\,\overline{\mathbf{v}}^T \mathbf{v}$$
 
-Therefore $(\lambda - \overline{\lambda})\overline{\mathbf{{'}v{}'}}^T\mathbf{{'}v{}'} = 0$. Since
-$\overline{\mathbf{{'}v{}'}}^T\mathbf{{'}v{}'} \gt{} 0$ We have $\lambda = \overline{\lambda}$So
-$\lambda \in \mathbb{{'}R{}'}$.
+Therefore $(\lambda - \overline{\lambda})\overline{\mathbf{v}}^T\mathbf{v} = 0$. Since
+$\overline{\mathbf{v}}^T\mathbf{v} \gt 0$ We have $\lambda = \overline{\lambda}$So
+$\lambda \in \mathbb{R}$.
 
 **(2) and (3)** By induction. For $n = 1$ the result is trivial. Assume it holds for
 $(n-1) \times (n-1)$ Symmetric matrices. Since all eigenvalues are real, $A$ has a real eigenvalue
-$\lambda_1$ with real Eigenvector $\mathbf{{'}v{}'}_1$. Normalise:
-$\mathbf{{'}q{}'}_1 = \mathbf{{'}v{}'}_1 / \lVert \mathbf{{'}v{}'}_1 \rVert$.
+$\lambda_1$ with real Eigenvector $\mathbf{v}_1$. Normalise:
+$\mathbf{q}_1 = \mathbf{v}_1 / \lVert \mathbf{v}_1 \rVert$.
 
 Let
-$W = \mathbf{{'}q{}'}_1^\perp = \{\mathbf{{'}w{}'} \in \mathbb{{'}R{}'}^n : \mathbf{{'}q{}'}_1^T \mathbf{{'}w{}'} = 0\}$.
-For any $\mathbf{{'}w{}'} \in W$:
+$W = \mathbf{q}_1^\perp = \{\mathbf{w} \in \mathbb{R}^n : \mathbf{q}_1^T \mathbf{w} = 0\}$.
+For any $\mathbf{w} \in W$:
 
-$$\mathbf{{'}q{}'}_1^T (A\mathbf{{'}w{}'}) = (A\mathbf{{'}q{}'}_1)^T \mathbf{{'}w{}'} = (\lambda_1 \mathbf{{'}q{}'}_1)^T \mathbf{{'}w{}'} = \lambda_1 \cdot 0 = 0$$
+$$\mathbf{q}_1^T (A\mathbf{w}) = (A\mathbf{q}_1)^T \mathbf{w} = (\lambda_1 \mathbf{q}_1)^T \mathbf{w} = \lambda_1 \cdot 0 = 0$$
 
-So $A\mathbf{{'}w{}'} \in W$. Therefore $A$ restricts to a symmetric linear map $A|_W : W \to W$ on
+So $A\mathbf{w} \in W$. Therefore $A$ restricts to a symmetric linear map $A|_W : W \to W$ on
 an $(n-1)$-dimensional space. By the inductive hypothesis, $W$ has an orthonormal basis
-$\{\mathbf{{'}q{}'}_2, \ldots, \mathbf{{'}q{}'}_n\}$ of eigenvectors of $A|_W$.
+$\{\mathbf{q}_2, \ldots, \mathbf{q}_n\}$ of eigenvectors of $A|_W$.
 
-Then $\{\mathbf{{'}q{}'}_1, \mathbf{{'}q{}'}_2, \ldots, \mathbf{{'}q{}'}_n\}$ is an orthonormal
-eigenbasis for $\mathbb{{'}R{}'}^n$ And $A = QDQ^T$ with
-$Q = [\mathbf{{'}q{}'}_1 \mid \cdots \mid \mathbf{{'}q{}'}_n]$. $\blacksquare$
+Then $\{\mathbf{q}_1, \mathbf{q}_2, \ldots, \mathbf{q}_n\}$ is an orthonormal
+eigenbasis for $\mathbb{R}^n$ And $A = QDQ^T$ with
+$Q = [\mathbf{q}_1 \mid \cdots \mid \mathbf{q}_n]$. $\blacksquare$
 
 ### 5.7 Worked Example: Full Diagonalisation
 
@@ -1073,13 +1073,13 @@ $$= \lambda^2 - 7\lambda + 10 = (\lambda - 5)(\lambda - 2)$$
 
 So the eigenvalues are $\lambda_1 = 5$ and $\lambda_2 = 2$.
 
-For $\lambda_1 = 5$: Solve $(A - 5I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$.
+For $\lambda_1 = 5$: Solve $(A - 5I)\mathbf{v} = \mathbf{0}$.
 
-$$\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\mathbf{{'}v{}'} = \mathbf{{'}0{}'} \implies -v_1 + v_2 = 0 \implies \mathbf{{'}v{}'} = t\begin{pmatrix} 1 \\ 1 \end{pmatrix}$$
+$$\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies -v_1 + v_2 = 0 \implies \mathbf{v} = t\begin{pmatrix} 1 \\ 1 \end{pmatrix}$$
 
-For $\lambda_2 = 2$: Solve $(A - 2I)\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$.
+For $\lambda_2 = 2$: Solve $(A - 2I)\mathbf{v} = \mathbf{0}$.
 
-$$\begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix}\mathbf{{'}v{}'} = \mathbf{{'}0{}'} \implies 2v_1 + v_2 = 0 \implies \mathbf{{'}v{}'} = t\begin{pmatrix} 1 \\ -2 \end{pmatrix}$$
+$$\begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 2v_1 + v_2 = 0 \implies \mathbf{v} = t\begin{pmatrix} 1 \\ -2 \end{pmatrix}$$
 
 Therefore $A = PDP^{-1}$ with
 
@@ -1147,22 +1147,22 @@ Eigenvalues: $\lambda_1 = 1$$\lambda_2 = 2$$\lambda_3 = 3$.
 
 For $\lambda_1 = 1$:
 $A - I = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix} \to \begin{pmatrix} 1 & 1 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$.
-Eigenspace: $\{(s, t, -s-t) : s, t \in \mathbb{{'}R{}'}\}$. An orthonormal basis:
-$\mathbf{{'}q{}'}_1 = \frac{1}{\sqrt{2}}(1, -1, 0)$$\mathbf{{'}q{}'}_2 = \frac{1}{\sqrt{6}}(1, 1, -2)$.
+Eigenspace: $\{(s, t, -s-t) : s, t \in \mathbb{R}\}$. An orthonormal basis:
+$\mathbf{q}_1 = \frac{1}{\sqrt{2}}(1, -1, 0)$$\mathbf{q}_2 = \frac{1}{\sqrt{6}}(1, 1, -2)$.
 
 For $\lambda_2 = 2$:
 $A - 2I = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{pmatrix} \to \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 0 \end{pmatrix}$.
-Eigenspace: $\{(-t, -t, t) : t \in \mathbb{{'}R{}'}\}$. Normalised:
-$\mathbf{{'}q{}'}_3 = \frac{1}{\sqrt{3}}(-1, -1, 1)$.
+Eigenspace: $\{(-t, -t, t) : t \in \mathbb{R}\}$. Normalised:
+$\mathbf{q}_3 = \frac{1}{\sqrt{3}}(-1, -1, 1)$.
 
 For $\lambda_3 = 3$:
 $A - 3I = \begin{pmatrix} -1 & 1 & 1 \\ 1 & -1 & 1 \\ 1 & 1 & -1 \end{pmatrix} \to \begin{pmatrix} 1 & -1 & -1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$.
-Eigenspace: $\{(s+t, s, t) : s, t \in \mathbb{{'}R{}'}\}$. Normalised:
-$\mathbf{{'}q{}'}_4 = \frac{1}{\sqrt{3}}(1, 1, 1)$.
+Eigenspace: $\{(s+t, s, t) : s, t \in \mathbb{R}\}$. Normalised:
+$\mathbf{q}_4 = \frac{1}{\sqrt{3}}(1, 1, 1)$.
 
 $A = QDQ^T$ where
 $Q = \frac{1}{\sqrt{6}}\begin{pmatrix} \sqrt{3} & 1 & -\sqrt{2} & \sqrt{2} \\ -\sqrt{3} & 1 & -\sqrt{2} & \sqrt{2} \\ 0 & -2 & \sqrt{2} & \sqrt{2} \end{pmatrix}$
-and $D = \mathrm{diag{}(1, 2, 3)$.
+and $D = \mathrm{diag(1, 2, 3)$.
 
 $\blacksquare$
 
@@ -1176,8 +1176,8 @@ $\blacksquare$
   $\det(A - \lambda I)$ and $\det(\lambda I - A)$ differ by a factor of $(-1)^n$ but have the same
   roots.
 - **Similarity preserves eigenvalues but not eigenvectors.** If $A = PBP^{-1}$ and
-  $B\mathbf{{'}v{}'} = \lambda\mathbf{{'}v{}'}$ then
-  $A(P\mathbf{{'}v{}'}) = \lambda(P\mathbf{{'}v{}'})$; the eigenvectors transform by $P$.
+  $B\mathbf{v} = \lambda\mathbf{v}$ then
+  $A(P\mathbf{v}) = \lambda(P\mathbf{v})$; the eigenvectors transform by $P$.
 
 ---
 
@@ -1188,76 +1188,76 @@ $\blacksquare$
 A **linear transformation** (or linear map) $T : V \to W$ between vector spaces $V$ and $W$ over $F$
 Is a function satisfying:
 
-1. $T(\mathbf{{'}u{}'} + \mathbf{{'}v{}'}) = T(\mathbf{{'}u{}'}) + T(\mathbf{{'}v{}'})$ for all
-   $\mathbf{{'}u{}'}, \mathbf{{'}v{}'} \in V$
-2. $T(\alpha \mathbf{{'}v{}'}) = \alpha T(\mathbf{{'}v{}'})$ for all
-   $\alpha \in F$$\mathbf{{'}v{}'} \in V$
+1. $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$ for all
+   $\mathbf{u}, \mathbf{v} \in V$
+2. $T(\alpha \mathbf{v}) = \alpha T(\mathbf{v})$ for all
+   $\alpha \in F$$\mathbf{v} \in V$
 
 Equivalently,
-$T(\alpha\mathbf{{'}u{}'} + \beta\mathbf{{'}v{}'}) = \alpha T(\mathbf{{'}u{}'}) + \beta T(\mathbf{{'}v{}'})$
-for all $\alpha, \beta \in F$ and $\mathbf{{'}u{}'}, \mathbf{{'}v{}'} \in V$.
+$T(\alpha\mathbf{u} + \beta\mathbf{v}) = \alpha T(\mathbf{u}) + \beta T(\mathbf{v})$
+for all $\alpha, \beta \in F$ and $\mathbf{u}, \mathbf{v} \in V$.
 
-The set of all linear transformations from $V$ to $W$ is denoted $\mathcal{{'}L{}'}(V, W)$.
+The set of all linear transformations from $V$ to $W$ is denoted $\mathcal{L}(V, W)$.
 
 **Proposition 6.1.** For any linear transformation $T$:
 
-1. $T(\mathbf{{'}0{}'}) = \mathbf{{'}0{}'}$.
-2. $T(-\mathbf{{'}v{}'}) = -T(\mathbf{{'}v{}'})$.
-3. $T\left(\sum_{i=1}^k \alpha_i \mathbf{{'}v{}'}_i\right) = \sum_{i=1}^k \alpha_i T(\mathbf{{'}v{}'}_i)$.
+1. $T(\mathbf{0}) = \mathbf{0}$.
+2. $T(-\mathbf{v}) = -T(\mathbf{v})$.
+3. $T\left(\sum_{i=1}^k \alpha_i \mathbf{v}_i\right) = \sum_{i=1}^k \alpha_i T(\mathbf{v}_i)$.
 
 _Proof._
-$T(\mathbf{{'}0{}'}) = T(0 \cdot \mathbf{{'}0{}'}) = 0 \cdot T(\mathbf{{'}0{}'}) = \mathbf{{'}0{}'}$.
-$T(-\mathbf{{'}v{}'}) = T((-1)\mathbf{{'}v{}'}) = (-1)T(\mathbf{{'}v{}'}) = -T(\mathbf{{'}v{}'})$.
+$T(\mathbf{0}) = T(0 \cdot \mathbf{0}) = 0 \cdot T(\mathbf{0}) = \mathbf{0}$.
+$T(-\mathbf{v}) = T((-1)\mathbf{v}) = (-1)T(\mathbf{v}) = -T(\mathbf{v})$.
 Property (3) follows by Induction. $\blacksquare$
 
 ### 6.2 Matrix Representation
 
 If $V$ and $W$ are finite-dimensional with bases
-$\mathcal{{'}B{}'}_V = \{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_n\}$ and
-$\mathcal{{'}B{}'}_W = \{\mathbf{{'}w{}'}_1, \ldots, \mathbf{{'}w{}'}_m\}$Then every
-$T \in \mathcal{{'}L{}'}(V, W)$ is Uniquely represented by a matrix
-$[T]_{\mathcal{{'}B{}'}_V}^{\mathcal{{'}B{}'}_W} \in \mathcal{{'}M{}'}_{m \times n}(F)$ Where the
-$j$-th column is the coordinate vector of $T(\mathbf{{'}v{}'}_j)$ with respect to
-$\mathcal{{'}B{}'}_W$.
+$\mathcal{B}_V = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ and
+$\mathcal{B}_W = \{\mathbf{w}_1, \ldots, \mathbf{w}_m\}$Then every
+$T \in \mathcal{L}(V, W)$ is Uniquely represented by a matrix
+$[T]_{\mathcal{B}_V}^{\mathcal{B}_W} \in \mathcal{M}_{m \times n}(F)$ Where the
+$j$-th column is the coordinate vector of $T(\mathbf{v}_j)$ with respect to
+$\mathcal{B}_W$.
 
 ### 6.3 Kernel and Image
 
 The **kernel** (null space) and **image** (range) of $T$ are:
 
-$$\ker(T) = \{\mathbf{{'}v{}'} \in V : T(\mathbf{{'}v{}'}) = \mathbf{{'}0{}'}\}$$
-$$\mathrm{im{}(T) = \{T(\mathbf{{'}v{}'}) : \mathbf{{'}v{}'} \in V\}$$
+$$\ker(T) = \{\mathbf{v} \in V : T(\mathbf{v}) = \mathbf{0}\}$$
+$$\mathrm{im(T) = \{T(\mathbf{v}) : \mathbf{v} \in V\}$$
 
-**Proposition 6.2.** $\ker(T)$ is a subspace of $V$ and $\mathrm{im{}(T)$ is a subspace of $W$.
+**Proposition 6.2.** $\ker(T)$ is a subspace of $V$ and $\mathrm{im(T)$ is a subspace of $W$.
 
 ### 6.4 Rank-Nullity Theorem for Linear Maps
 
-**Theorem 6.3 (Rank-Nullity).** For $T \in \mathcal{{'}L{}'}(V, W)$ with $V$ finite-dimensional:
+**Theorem 6.3 (Rank-Nullity).** For $T \in \mathcal{L}(V, W)$ with $V$ finite-dimensional:
 
-$$\dim(\ker(T)) + \dim(\mathrm{im{}(T)) = \dim(V)$$
+$$\dim(\ker(T)) + \dim(\mathrm{im(T)) = \dim(V)$$
 
-_Proof._ Let $\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_k\}$ be a basis for $\ker(T)$Where
+_Proof._ Let $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ be a basis for $\ker(T)$Where
 $k = \dim(\ker(T))$. Extend to a basis
-$\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_k, \mathbf{{'}u{}'}_{k+1}, \ldots, \mathbf{{'}u{}'}_n\}$
+$\{\mathbf{u}_1, \ldots, \mathbf{u}_k, \mathbf{u}_{k+1}, \ldots, \mathbf{u}_n\}$
 of $V$ Where $n = \dim(V)$.
 
-We claim $\{T(\mathbf{{'}u{}'}_{k+1}), \ldots, T(\mathbf{{'}u{}'}_n)\}$ is a basis for
-$\mathrm{im{}(T)$.
+We claim $\{T(\mathbf{u}_{k+1}), \ldots, T(\mathbf{u}_n)\}$ is a basis for
+$\mathrm{im(T)$.
 
-_Spanning:_ For any $\mathbf{{'}w{}'} \in \mathrm{im{}(T)$Write
-$\mathbf{{'}w{}'} = T(\mathbf{{'}v{}'})$ for some
-$\mathbf{{'}v{}'} = \sum_{i=1}^n \alpha_i \mathbf{{'}u{}'}_i \in V$. Then
+_Spanning:_ For any $\mathbf{w} \in \mathrm{im(T)$Write
+$\mathbf{w} = T(\mathbf{v})$ for some
+$\mathbf{v} = \sum_{i=1}^n \alpha_i \mathbf{u}_i \in V$. Then
 
-$$\mathbf{{'}w{}'} = T\left(\sum_{i=1}^n \alpha_i \mathbf{{'}u{}'}_i\right) = \sum_{i=1}^n \alpha_i T(\mathbf{{'}u{}'}_i) = \sum_{i=k+1}^n \alpha_i T(\mathbf{{'}u{}'}_i)$$
+$$\mathbf{w} = T\left(\sum_{i=1}^n \alpha_i \mathbf{u}_i\right) = \sum_{i=1}^n \alpha_i T(\mathbf{u}_i) = \sum_{i=k+1}^n \alpha_i T(\mathbf{u}_i)$$
 
-Since $T(\mathbf{{'}u{}'}_i) = \mathbf{{'}0{}'}$ for $i \leq k$.
+Since $T(\mathbf{u}_i) = \mathbf{0}$ for $i \leq k$.
 
-_Linear independence:_ If $\sum_{i=k+1}^n \alpha_i T(\mathbf{{'}u{}'}_i) = \mathbf{{'}0{}'}$Then
-$T\left(\sum_{i=k+1}^n \alpha_i \mathbf{{'}u{}'}_i\right) = \mathbf{{'}0{}'}$So
-$\sum_{i=k+1}^n \alpha_i \mathbf{{'}u{}'}_i \in \ker(T)$. Thus
-$\sum_{i=k+1}^n \alpha_i \mathbf{{'}u{}'}_i = \sum_{j=1}^k \beta_j \mathbf{{'}u{}'}_j$ For some
+_Linear independence:_ If $\sum_{i=k+1}^n \alpha_i T(\mathbf{u}_i) = \mathbf{0}$Then
+$T\left(\sum_{i=k+1}^n \alpha_i \mathbf{u}_i\right) = \mathbf{0}$So
+$\sum_{i=k+1}^n \alpha_i \mathbf{u}_i \in \ker(T)$. Thus
+$\sum_{i=k+1}^n \alpha_i \mathbf{u}_i = \sum_{j=1}^k \beta_j \mathbf{u}_j$ For some
 $\beta_j$. By linear independence of the full basis, all coefficients are zero.
 
-Therefore $\dim(\mathrm{im{}(T)) = n - k$Giving $\dim(\ker(T)) + \dim(\mathrm{im{}(T)) = n$.
+Therefore $\dim(\mathrm{im(T)) = n - k$Giving $\dim(\ker(T)) + \dim(\mathrm{im(T)) = n$.
 $\blacksquare$
 
 ### 6.5 Isomorphisms
@@ -1265,60 +1265,60 @@ $\blacksquare$
 A linear transformation $T : V \to W$ is an **isomorphism** if it is bijective. We write
 $V \cong W$.
 
-**Theorem 6.4.** $T$ is an isomorphism if and only if $\ker(T) = \{\mathbf{{'}0{}'}\}$ and
-$\mathrm{im{}(T) = W$.
+**Theorem 6.4.** $T$ is an isomorphism if and only if $\ker(T) = \{\mathbf{0}\}$ and
+$\mathrm{im(T) = W$.
 
-**Corollary 6.5.** If $\dim(V) = \dim(W) \lt{} \infty$Then $T$ is injective if and only if $T$ is
+**Corollary 6.5.** If $\dim(V) = \dim(W) \lt \infty$Then $T$ is injective if and only if $T$ is
 surjective.
 
-_Proof._ If $T$ is injective, $\ker(T) = \{\mathbf{{'}0{}'}\}$So
-$\dim(\mathrm{im{}(T)) = \dim(V) = \dim(W)$ Hence $\mathrm{im{}(T) = W$ (a subspace of full
+_Proof._ If $T$ is injective, $\ker(T) = \{\mathbf{0}\}$So
+$\dim(\mathrm{im(T)) = \dim(V) = \dim(W)$ Hence $\mathrm{im(T) = W$ (a subspace of full
 dimension equals the whole space). Conversely, If $T$ is surjective,
-$\dim(\mathrm{im{}(T)) = \dim(W) = \dim(V)$So $\dim(\ker(T)) = 0$Giving
-$\ker(T) = \{\mathbf{{'}0{}'}\}$. $\blacksquare$
+$\dim(\mathrm{im(T)) = \dim(W) = \dim(V)$So $\dim(\ker(T)) = 0$Giving
+$\ker(T) = \{\mathbf{0}\}$. $\blacksquare$
 
 ### 6.6 Change of Basis
 
-If $P$ is the change-of-basis matrix from basis $\mathcal{{'}B{}'}$ to basis
-$\mathcal{{'}B{}'}'$Then for a Linear transformation $T$ with matrix representations
-$[T]_{\mathcal{{'}B{}'}}$ and $[T]_{\mathcal{{'}B{}'}'}$:
+If $P$ is the change-of-basis matrix from basis $\mathcal{B}$ to basis
+$\mathcal{B}'$Then for a Linear transformation $T$ with matrix representations
+$[T]_{\mathcal{B}}$ and $[T]_{\mathcal{B}'}$:
 
-$$[T]_{\mathcal{{'}B{}'}'} = P^{-1}[T]_{\mathcal{{'}B{}'}} P$$
+$$[T]_{\mathcal{B}'} = P^{-1}[T]_{\mathcal{B}} P$$
 
 This is the **similarity transformation**. Similar matrices represent the same linear transformation
 In different bases and share the same eigenvalues, determinant, and trace.
 
 ### 6.7 Worked Example: Matrix of a Transformation with Change of Basis
 
-**Problem.** Let $T : \mathbb{{'}R{}'}^2 \to \mathbb{{'}R{}'}^2$ be defined by
-$T(x, y) = (2x + y, x + 2y)$. (a) Find $[T]_{\mathcal{{'}E{}'}}$ where $\mathcal{{'}E{}'}$ is the
-standard basis. (b) Find $[T]_{\mathcal{{'}B{}'}}$ where $\mathcal{{'}B{}'} = \{(1, 1), (1, -1)\}$.
-(c) Verify that $[T]_{\mathcal{{'}B{}'}} = P^{-1}[T]_{\mathcal{{'}E{}'}} P$.
+**Problem.** Let $T : \mathbb{R}^2 \to \mathbb{R}^2$ be defined by
+$T(x, y) = (2x + y, x + 2y)$. (a) Find $[T]_{\mathcal{E}}$ where $\mathcal{E}$ is the
+standard basis. (b) Find $[T]_{\mathcal{B}}$ where $\mathcal{B} = \{(1, 1), (1, -1)\}$.
+(c) Verify that $[T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}} P$.
 
 <details>
 <summary>Solution</summary>
 
 **(a)** $T(1, 0) = (2, 1)$ and $T(0, 1) = (1, 2)$So
 
-$$[T]_{\mathcal{{'}E{}'}} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
+$$[T]_{\mathcal{E}} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
 
-**(b)** Compute $T$ on the basis $\mathcal{{'}B{}'}$:
+**(b)** Compute $T$ on the basis $\mathcal{B}$:
 
 $T(1, 1) = (3, 3) = 3(1, 1) + 0(1, -1)$So coordinates are
-$\begin{pmatrix} 3 \\ 0 \end{pmatrix}_{\mathcal{{'}B{}'}}$.
+$\begin{pmatrix} 3 \\ 0 \end{pmatrix}_{\mathcal{B}}$.
 
 $T(1, -1) = (1, -1) = 0(1, 1) + 1(1, -1)$So coordinates are
-$\begin{pmatrix} 0 \\ 1 \end{pmatrix}_{\mathcal{{'}B{}'}}$.
+$\begin{pmatrix} 0 \\ 1 \end{pmatrix}_{\mathcal{B}}$.
 
-$$[T]_{\mathcal{{'}B{}'}} = \begin{pmatrix} 3 & 0 \\ 0 & 1 \end{pmatrix}$$
+$$[T]_{\mathcal{B}} = \begin{pmatrix} 3 & 0 \\ 0 & 1 \end{pmatrix}$$
 
-**(c)** The change-of-basis matrix from $\mathcal{{'}E{}'}$ to $\mathcal{{'}B{}'}$ is
+**(c)** The change-of-basis matrix from $\mathcal{E}$ to $\mathcal{B}$ is
 
 $$P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}, \quad P^{-1} = \begin{pmatrix} 1/2 & 1/2 \\ 1/2 & -1/2 \end{pmatrix}$$
 
-$$P^{-1}[T]_{\mathcal{{'}E{}'}} P = \begin{pmatrix} 1/2 & 1/2 \\ 1/2 & -1/2 \end{pmatrix}\begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$$
+$$P^{-1}[T]_{\mathcal{E}} P = \begin{pmatrix} 1/2 & 1/2 \\ 1/2 & -1/2 \end{pmatrix}\begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$$
 
-$= \begin{pmatrix} 3/2 & 3/2 \\ 1/2 & -1/2 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \begin{pmatrix} 3 & 0 \\ 0 & 1 \end{pmatrix} = [T]_{\mathcal{{'}B{}'}}$.
+$= \begin{pmatrix} 3/2 & 3/2 \\ 1/2 & -1/2 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \begin{pmatrix} 3 & 0 \\ 0 & 1 \end{pmatrix} = [T]_{\mathcal{B}}$.
 $\blacksquare$
 
 </details>
@@ -1328,25 +1328,25 @@ $\blacksquare$
 **Definition.** The **dual space** of a vector space $V$ over $F$Denoted $V^*$Is the space of all
 Linear functionals $f : V \to F$. Elements of $V^*$ are called **covectors**.
 
-**Proposition 6.6.** If $\dim(V) = n \lt{} \infty$Then $\dim(V^*) = n$.
+**Proposition 6.6.** If $\dim(V) = n \lt \infty$Then $\dim(V^*) = n$.
 
-_Proof._ Let $\{\mathbf{{'}e{}'}_1, \ldots, \mathbf{{'}e{}'}_n\}$ be a basis for $V$. Define the
+_Proof._ Let $\{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ be a basis for $V$. Define the
 **dual basis** $\{\varphi_1, \ldots, \varphi_n\} \subseteq V^*$ by
-$\varphi_i(\mathbf{{'}e{}'}_j) = \delta_{ij}$ (the Kronecker Delta). Each $\varphi_i$ is a
+$\varphi_i(\mathbf{e}_j) = \delta_{ij}$ (the Kronecker Delta). Each $\varphi_i$ is a
 well-defined linear functional since it is defined on a basis and Extended linearly. These are
-linearly independent: if $\sum c_i \varphi_i = 0$Then applying to $\mathbf{{'}e{}'}_j$ gives
-$c_j = 0$. They span $V^*$: for any $f \in V^*$$f = \sum_{i=1}^n f(\mathbf{{'}e{}'}_i)\varphi_i$.
+linearly independent: if $\sum c_i \varphi_i = 0$Then applying to $\mathbf{e}_j$ gives
+$c_j = 0$. They span $V^*$: for any $f \in V^*$$f = \sum_{i=1}^n f(\mathbf{e}_i)\varphi_i$.
 $\blacksquare$
 
 **Definition.** The **double dual** of $V$ is $V^{**} = (V^*)^*$.
 
 **Theorem 6.7.** If $V$ is finite-dimensional, the map $\Phi : V \to V^{**}$ defined by
-$\Phi(\mathbf{{'}v{}'})(f) = f(\mathbf{{'}v{}'})$ is a natural isomorphism.
+$\Phi(\mathbf{v})(f) = f(\mathbf{v})$ is a natural isomorphism.
 
-_Intuition._ The double dual "recovers" the original space. A vector $\mathbf{{'}v{}'}$ can be
-Identified with the functional on $V^*$ that evaluates each covector at $\mathbf{{'}v{}'}$.
+_Intuition._ The double dual "recovers" the original space. A vector $\mathbf{v}$ can be
+Identified with the functional on $V^*$ that evaluates each covector at $\mathbf{v}$.
 
-**Example.** For $V = \mathbb{{'}R{}'}^3$ with standard basis, the dual basis
+**Example.** For $V = \mathbb{R}^3$ with standard basis, the dual basis
 $\{\varphi_1, \varphi_2, \varphi_3\}$ Is given by $\varphi_i(x_1, x_2, x_3) = x_i$. The functional
 $f(x_1, x_2, x_3) = 3x_1 - 2x_2 + x_3$ Corresponds to the covector
 $3\varphi_1 - 2\varphi_2 + \varphi_3$ in $V^*$.
@@ -1358,7 +1358,7 @@ Isomorphism is a special feature of finite-dimensional spaces.
 
 **Definition.** For a subset $S \subseteq V$The **annihilator** of $S$ is
 
-$$S^0 = \{f \in V^* : f(s) = 0 \mathrm{~for~all~{} s \in S\}$$
+$$S^0 = \{f \in V^* : f(s) = 0 \mathrm{~for~all~ s \in S\}$$
 
 **Proposition 6.8.** $S^0$ is a subspace of $V^*$And if $W$ is a subspace of $V$ with
 $\dim(V) = n$Then $\dim(W^0) = n - \dim(W)$.
@@ -1368,10 +1368,10 @@ viewed as an element of $V^{**}$ via $\Phi$. Each $\ker(s)$ is a subspace of $V^
 Intersection of subspaces is a subspace.
 
 For the dimension: let $\dim(W) = k$ and extend a basis
-$\{\mathbf{{'}w{}'}_1, \ldots, \mathbf{{'}w{}'}_k\}$ Of $W$ to a basis
-$\{\mathbf{{'}w{}'}_1, \ldots, \mathbf{{'}w{}'}_k, \mathbf{{'}w{}'}_{k+1}, \ldots, \mathbf{{'}w{}'}_n\}$
+$\{\mathbf{w}_1, \ldots, \mathbf{w}_k\}$ Of $W$ to a basis
+$\{\mathbf{w}_1, \ldots, \mathbf{w}_k, \mathbf{w}_{k+1}, \ldots, \mathbf{w}_n\}$
 of $V$. Let $\{\varphi_1, \ldots, \varphi_n\}$ be the dual basis. Then $f \in W^0$ iff
-$f(\mathbf{{'}w{}'}_i) = 0$ For $i = 1, \ldots, k$. Writing $f = \sum c_j \varphi_j$We need
+$f(\mathbf{w}_i) = 0$ For $i = 1, \ldots, k$. Writing $f = \sum c_j \varphi_j$We need
 $c_i = 0$ for $i = 1, \ldots, k$. So $f = \sum_{j=k+1}^n c_j \varphi_j$Giving $\dim(W^0) = n - k$.
 $\blacksquare$
 
@@ -1381,21 +1381,21 @@ $\blacksquare$
 
 ### 7.1 Definition of an Inner Product
 
-An **inner product** on a vector space $V$ over $F$ (where $F = \mathbb{{'}R{}'}$ or
-$\mathbb{{'}C{}'}$) is a Function $\langle \cdot, \cdot \rangle : V \times V \to F$ satisfying:
+An **inner product** on a vector space $V$ over $F$ (where $F = \mathbb{R}$ or
+$\mathbb{C}$) is a Function $\langle \cdot, \cdot \rangle : V \times V \to F$ satisfying:
 
 1. **Conjugate symmetry**:
-   $\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle = \overline{\langle \mathbf{{'}v{}'}, \mathbf{{'}u{}'} \rangle}$
+   $\langle \mathbf{u}, \mathbf{v} \rangle = \overline{\langle \mathbf{v}, \mathbf{u} \rangle}$
 2. **Linearity in the first argument**:
-   $\langle \alpha\mathbf{{'}u{}'} + \beta\mathbf{{'}w{}'}, \mathbf{{'}v{}'} \rangle = \alpha\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle + \beta\langle \mathbf{{'}w{}'}, \mathbf{{'}v{}'} \rangle$
-3. **Positive definiteness**: $\langle \mathbf{{'}v{}'}, \mathbf{{'}v{}'} \rangle \geq 0$ with
-   equality iff $\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$
+   $\langle \alpha\mathbf{u} + \beta\mathbf{w}, \mathbf{v} \rangle = \alpha\langle \mathbf{u}, \mathbf{v} \rangle + \beta\langle \mathbf{w}, \mathbf{v} \rangle$
+3. **Positive definiteness**: $\langle \mathbf{v}, \mathbf{v} \rangle \geq 0$ with
+   equality iff $\mathbf{v} = \mathbf{0}$
 
 A vector space equipped with an inner product is called an **inner product space**.
 
-**Example.** The standard inner product on $\mathbb{{'}R{}'}^n$ is
-$\langle \mathbf{{'}x{}'}, \mathbf{{'}y{}'} \rangle = \sum_{i=1}^n x_i y_i$. On $\mathbb{{'}C{}'}^n$
-$\langle \mathbf{{'}x{}'}, \mathbf{{'}y{}'} \rangle = \sum_{i=1}^n x_i \overline{y_i}$.
+**Example.** The standard inner product on $\mathbb{R}^n$ is
+$\langle \mathbf{x}, \mathbf{y} \rangle = \sum_{i=1}^n x_i y_i$. On $\mathbb{C}^n$
+$\langle \mathbf{x}, \mathbf{y} \rangle = \sum_{i=1}^n x_i \overline{y_i}$.
 
 **Example.** On $C[a,b]$The $L^2$ inner product is $\langle f, g \rangle = \int_a^b f(x)g(x)\,dx$.
 
@@ -1403,140 +1403,140 @@ $\langle \mathbf{{'}x{}'}, \mathbf{{'}y{}'} \rangle = \sum_{i=1}^n x_i \overline
 
 Every inner product induces a **norm**:
 
-$$\lVert \mathbf{{'}v{}'} \rVert = \sqrt{\langle \mathbf{{'}v{}'}, \mathbf{{'}v{}'} \rangle}$$
+$$\lVert \mathbf{v} \rVert = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$$
 
-**Theorem 7.1 (Cauchy--Schwarz Inequality).** For all $\mathbf{{'}u{}'}, \mathbf{{'}v{}'} \in V$
+**Theorem 7.1 (Cauchy--Schwarz Inequality).** For all $\mathbf{u}, \mathbf{v} \in V$
 
-$$\lvert\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle\rvert \leq \lVert \mathbf{{'}u{}'} \rVert \, \lVert \mathbf{{'}v{}'} \rVert$$
+$$\lvert\langle \mathbf{u}, \mathbf{v} \rangle\rvert \leq \lVert \mathbf{u} \rVert \, \lVert \mathbf{v} \rVert$$
 
-With equality if and only if $\mathbf{{'}u{}'}$ and $\mathbf{{'}v{}'}$ are linearly dependent.
+With equality if and only if $\mathbf{u}$ and $\mathbf{v}$ are linearly dependent.
 
-_Proof._ If $\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$Both sides are 0 and the result holds. Assume
-$\mathbf{{'}v{}'} \neq \mathbf{{'}0{}'}$. For any $t \in \mathbb{{'}R{}'}$ (or $\mathbb{{'}C{}'}$),
+_Proof._ If $\mathbf{v} = \mathbf{0}$Both sides are 0 and the result holds. Assume
+$\mathbf{v} \neq \mathbf{0}$. For any $t \in \mathbb{R}$ (or $\mathbb{C}$),
 positive definiteness gives
 
-$$0 \leq \langle \mathbf{{'}u{}'} - t\mathbf{{'}v{}'}, \mathbf{{'}u{}'} - t\mathbf{{'}v{}'} \rangle = \langle \mathbf{{'}u{}'}, \mathbf{{'}u{}'} \rangle - t\langle \mathbf{{'}v{}'}, \mathbf{{'}u{}'} \rangle - \overline{t}\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle + \lvert t \rvert^2 \langle \mathbf{{'}v{}'}, \mathbf{{'}v{}'} \rangle$$
+$$0 \leq \langle \mathbf{u} - t\mathbf{v}, \mathbf{u} - t\mathbf{v} \rangle = \langle \mathbf{u}, \mathbf{u} \rangle - t\langle \mathbf{v}, \mathbf{u} \rangle - \overline{t}\langle \mathbf{u}, \mathbf{v} \rangle + \lvert t \rvert^2 \langle \mathbf{v}, \mathbf{v} \rangle$$
 
 Set
-$t = \frac{\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle}{\langle \mathbf{{'}v{}'}, \mathbf{{'}v{}'} \rangle}$
+$t = \frac{\langle \mathbf{u}, \mathbf{v} \rangle}{\langle \mathbf{v}, \mathbf{v} \rangle}$
 (the value that minimises the right side):
 
-$$0 \leq \lVert \mathbf{{'}u{}'} \rVert^2 - \frac{\lvert\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle\rvert^2}{\lVert \mathbf{{'}v{}'} \rVert^2}$$
+$$0 \leq \lVert \mathbf{u} \rVert^2 - \frac{\lvert\langle \mathbf{u}, \mathbf{v} \rangle\rvert^2}{\lVert \mathbf{v} \rVert^2}$$
 
 Rearranging:
-$\lvert\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle\rvert^2 \leq \lVert \mathbf{{'}u{}'} \rVert^2 \lVert \mathbf{{'}v{}'} \rVert^2$.
+$\lvert\langle \mathbf{u}, \mathbf{v} \rangle\rvert^2 \leq \lVert \mathbf{u} \rVert^2 \lVert \mathbf{v} \rVert^2$.
 Taking square roots gives the result. Equality holds iff
-$\mathbf{{'}u{}'} - t\mathbf{{'}v{}'} = \mathbf{{'}0{}'}$ I.e., $\mathbf{{'}u{}'}$ and
-$\mathbf{{'}v{}'}$ are linearly dependent. $\blacksquare$
+$\mathbf{u} - t\mathbf{v} = \mathbf{0}$ I.e., $\mathbf{u}$ and
+$\mathbf{v}$ are linearly dependent. $\blacksquare$
 
 **Theorem 7.2 (Triangle Inequality).**
 
-$$\lVert \mathbf{{'}u{}'} + \mathbf{{'}v{}'} \rVert \leq \lVert \mathbf{{'}u{}'} \rVert + \lVert \mathbf{{'}v{}'} \rVert$$
+$$\lVert \mathbf{u} + \mathbf{v} \rVert \leq \lVert \mathbf{u} \rVert + \lVert \mathbf{v} \rVert$$
 
 _Proof._
 
-$$\lVert \mathbf{{'}u{}'} + \mathbf{{'}v{}'} \rVert^2 = \langle \mathbf{{'}u{}'} + \mathbf{{'}v{}'}, \mathbf{{'}u{}'} + \mathbf{{'}v{}'} \rangle = \lVert \mathbf{{'}u{}'} \rVert^2 + 2\,\mathrm{Re{}\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle + \lVert \mathbf{{'}v{}'} \rVert^2$$
+$$\lVert \mathbf{u} + \mathbf{v} \rVert^2 = \langle \mathbf{u} + \mathbf{v}, \mathbf{u} + \mathbf{v} \rangle = \lVert \mathbf{u} \rVert^2 + 2\,\mathrm{Re\langle \mathbf{u}, \mathbf{v} \rangle + \lVert \mathbf{v} \rVert^2$$
 
 By Cauchy--Schwarz,
-$\mathrm{Re{}\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle \leq \lvert\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle\rvert \leq \lVert \mathbf{{'}u{}'} \rVert \lVert \mathbf{{'}v{}'} \rVert$So
+$\mathrm{Re\langle \mathbf{u}, \mathbf{v} \rangle \leq \lvert\langle \mathbf{u}, \mathbf{v} \rangle\rvert \leq \lVert \mathbf{u} \rVert \lVert \mathbf{v} \rVert$So
 
-$$\lVert \mathbf{{'}u{}'} + \mathbf{{'}v{}'} \rVert^2 \leq \lVert \mathbf{{'}u{}'} \rVert^2 + 2\lVert \mathbf{{'}u{}'} \rVert \lVert \mathbf{{'}v{}'} \rVert + \lVert \mathbf{{'}v{}'} \rVert^2 = (\lVert \mathbf{{'}u{}'} \rVert + \lVert \mathbf{{'}v{}'} \rVert)^2$$
+$$\lVert \mathbf{u} + \mathbf{v} \rVert^2 \leq \lVert \mathbf{u} \rVert^2 + 2\lVert \mathbf{u} \rVert \lVert \mathbf{v} \rVert + \lVert \mathbf{v} \rVert^2 = (\lVert \mathbf{u} \rVert + \lVert \mathbf{v} \rVert)^2$$
 
 Taking square roots gives the result. $\blacksquare$
 
 ### 7.3 Orthogonality
 
-Two vectors $\mathbf{{'}u{}'}, \mathbf{{'}v{}'}$ are **orthogonal** if
-$\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle = 0$. We write
-$\mathbf{{'}u{}'} \perp \mathbf{{'}v{}'}$.
+Two vectors $\mathbf{u}, \mathbf{v}$ are **orthogonal** if
+$\langle \mathbf{u}, \mathbf{v} \rangle = 0$. We write
+$\mathbf{u} \perp \mathbf{v}$.
 
 An **orthonormal set** $\{e_1, \ldots, e_k\}$ satisfies $\langle e_i, e_j \rangle = \delta_{ij}$.
 
-**Theorem 7.3 (Pythagorean Theorem).** If $\mathbf{{'}u{}'} \perp \mathbf{{'}v{}'}$Then
+**Theorem 7.3 (Pythagorean Theorem).** If $\mathbf{u} \perp \mathbf{v}$Then
 
-$$\lVert \mathbf{{'}u{}'} + \mathbf{{'}v{}'} \rVert^2 = \lVert \mathbf{{'}u{}'} \rVert^2 + \lVert \mathbf{{'}v{}'} \rVert^2$$
+$$\lVert \mathbf{u} + \mathbf{v} \rVert^2 = \lVert \mathbf{u} \rVert^2 + \lVert \mathbf{v} \rVert^2$$
 
 _Proof._
-$\lVert \mathbf{{'}u{}'} + \mathbf{{'}v{}'} \rVert^2 = \lVert \mathbf{{'}u{}'} \rVert^2 + 2\langle \mathbf{{'}u{}'}, \mathbf{{'}v{}'} \rangle + \lVert \mathbf{{'}v{}'} \rVert^2 = \lVert \mathbf{{'}u{}'} \rVert^2 + \lVert \mathbf{{'}v{}'} \rVert^2$.
+$\lVert \mathbf{u} + \mathbf{v} \rVert^2 = \lVert \mathbf{u} \rVert^2 + 2\langle \mathbf{u}, \mathbf{v} \rangle + \lVert \mathbf{v} \rVert^2 = \lVert \mathbf{u} \rVert^2 + \lVert \mathbf{v} \rVert^2$.
 $\blacksquare$
 
 **Proposition 7.4.** Every orthonormal set is linearly independent.
 
-_Proof._ If $\sum_{i=1}^k \alpha_i e_i = \mathbf{{'}0{}'}$Then taking the inner product with $e_j$:
-$\alpha_j = \langle \sum \alpha_i e_i, e_j \rangle = \langle \mathbf{{'}0{}'}, e_j \rangle = 0$ for
+_Proof._ If $\sum_{i=1}^k \alpha_i e_i = \mathbf{0}$Then taking the inner product with $e_j$:
+$\alpha_j = \langle \sum \alpha_i e_i, e_j \rangle = \langle \mathbf{0}, e_j \rangle = 0$ for
 each $j$. $\blacksquare$
 
 ### 7.4 Gram--Schmidt Process
 
 The **Gram--Schmidt process** converts a linearly independent set
-$\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_n\}$ into an orthonormal set $\{e_1, \ldots, e_n\}$:
+$\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ into an orthonormal set $\{e_1, \ldots, e_n\}$:
 
-$$\mathbf{{'}u{}'}_1 = \mathbf{{'}v{}'}_1, \quad e_1 = \frac{\mathbf{{'}u{}'}_1}{\lVert \mathbf{{'}u{}'}_1 \rVert}$$
+$$\mathbf{u}_1 = \mathbf{v}_1, \quad e_1 = \frac{\mathbf{u}_1}{\lVert \mathbf{u}_1 \rVert}$$
 
-$$\mathbf{{'}u{}'}_k = \mathbf{{'}v{}'}_k - \sum_{i=1}^{k-1} \langle \mathbf{{'}v{}'}_k, e_i \rangle e_i, \quad e_k = \frac{\mathbf{{'}u{}'}_k}{\lVert \mathbf{{'}u{}'}_k \rVert}$$
+$$\mathbf{u}_k = \mathbf{v}_k - \sum_{i=1}^{k-1} \langle \mathbf{v}_k, e_i \rangle e_i, \quad e_k = \frac{\mathbf{u}_k}{\lVert \mathbf{u}_k \rVert}$$
 
 **Proposition 7.5.** At each step,
-$\mathrm{span{}\{e_1, \ldots, e_k\} = \mathrm{span{}\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k\}$.
+$\mathrm{span\{e_1, \ldots, e_k\} = \mathrm{span\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$.
 
-_Proof._ By construction, $\mathbf{{'}u{}'}_k$ is $\mathbf{{'}v{}'}_k$ minus its projection onto
-$\mathrm{span{}\{e_1, \ldots, e_{k-1}\} = \mathrm{span{}\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_{k-1}\}$.
-So $\mathbf{{'}u{}'}_k \in \mathrm{span{}\{\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k\}$ and
-$\mathbf{{'}v{}'}_k = \mathbf{{'}u{}'}_k + \sum_{i=1}^{k-1}\langle \mathbf{{'}v{}'}_k, e_i \rangle e_i \in \mathrm{span{}\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_k\}$.
-Since each $e_i$ is a scalar multiple of $\mathbf{{'}u{}'}_i$The spans coincide. $\blacksquare$
+_Proof._ By construction, $\mathbf{u}_k$ is $\mathbf{v}_k$ minus its projection onto
+$\mathrm{span\{e_1, \ldots, e_{k-1}\} = \mathrm{span\{\mathbf{v}_1, \ldots, \mathbf{v}_{k-1}\}$.
+So $\mathbf{u}_k \in \mathrm{span\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ and
+$\mathbf{v}_k = \mathbf{u}_k + \sum_{i=1}^{k-1}\langle \mathbf{v}_k, e_i \rangle e_i \in \mathrm{span\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$.
+Since each $e_i$ is a scalar multiple of $\mathbf{u}_i$The spans coincide. $\blacksquare$
 
 ### 7.5 Orthogonal Projection
 
-The **orthogonal projection** of $\mathbf{{'}v{}'}$ onto a subspace $W$ with orthonormal basis
+The **orthogonal projection** of $\mathbf{v}$ onto a subspace $W$ with orthonormal basis
 $\{e_1, \ldots, e_k\}$ is
 
-$$\mathrm{proj{}_W(\mathbf{{'}v{}'}) = \sum_{i=1}^k \langle \mathbf{{'}v{}'}, e_i \rangle e_i$$
+$$\mathrm{proj_W(\mathbf{v}) = \sum_{i=1}^k \langle \mathbf{v}, e_i \rangle e_i$$
 
 **Theorem 7.6 (Best Approximation).** Among all vectors in $W$The orthogonal projection
-$\mathrm{proj{}_W(\mathbf{{'}v{}'})$ minimises the distance to $\mathbf{{'}v{}'}$:
+$\mathrm{proj_W(\mathbf{v})$ minimises the distance to $\mathbf{v}$:
 
-$$\lVert \mathbf{{'}v{}'} - \mathrm{proj{}_W(\mathbf{{'}v{}'}) \rVert \leq \lVert \mathbf{{'}v{}'} - \mathbf{{'}w{}'} \rVert \quad \mathrm{for~all~{} \mathbf{{'}w{}'} \in W$$
+$$\lVert \mathbf{v} - \mathrm{proj_W(\mathbf{v}) \rVert \leq \lVert \mathbf{v} - \mathbf{w} \rVert \quad \mathrm{for~all~ \mathbf{w} \in W$$
 
-_Proof._ For any $\mathbf{{'}w{}'} \in W$Write
-$\mathbf{{'}v{}'} - \mathbf{{'}w{}'} = (\mathbf{{'}v{}'} - \mathrm{proj{}_W(\mathbf{{'}v{}'})) + (\mathrm{proj{}_W(\mathbf{{'}v{}'}) - \mathbf{{'}w{}'})$.
+_Proof._ For any $\mathbf{w} \in W$Write
+$\mathbf{v} - \mathbf{w} = (\mathbf{v} - \mathrm{proj_W(\mathbf{v})) + (\mathrm{proj_W(\mathbf{v}) - \mathbf{w})$.
 The first term is orthogonal to $W$ (hence to the second term, which lies in $W$), so by the
 Pythagorean theorem:
 
-$$\lVert \mathbf{{'}v{}'} - \mathbf{{'}w{}'} \rVert^2 = \lVert \mathbf{{'}v{}'} - \mathrm{proj{}_W(\mathbf{{'}v{}'}) \rVert^2 + \lVert \mathrm{proj{}_W(\mathbf{{'}v{}'}) - \mathbf{{'}w{}'} \rVert^2 \geq \lVert \mathbf{{'}v{}'} - \mathrm{proj{}_W(\mathbf{{'}v{}'}) \rVert^2$$
+$$\lVert \mathbf{v} - \mathbf{w} \rVert^2 = \lVert \mathbf{v} - \mathrm{proj_W(\mathbf{v}) \rVert^2 + \lVert \mathrm{proj_W(\mathbf{v}) - \mathbf{w} \rVert^2 \geq \lVert \mathbf{v} - \mathrm{proj_W(\mathbf{v}) \rVert^2$$
 
-With equality iff $\mathbf{{'}w{}'} = \mathrm{proj{}_W(\mathbf{{'}v{}'})$. $\blacksquare$
+With equality iff $\mathbf{w} = \mathrm{proj_W(\mathbf{v})$. $\blacksquare$
 
 ### 7.6 Least Squares Approximation
 
 A fundamental application of orthogonal projection is fitting functions to data. Given a subspace
-$W$ of an inner product space $V$ and a target $\mathbf{{'}v{}'} \in V$The best approximation in $W$
-Is the orthogonal projection $\mathrm{proj{}_W(\mathbf{{'}v{}'})$.
+$W$ of an inner product space $V$ and a target $\mathbf{v} \in V$The best approximation in $W$
+Is the orthogonal projection $\mathrm{proj_W(\mathbf{v})$.
 
 ### 7.7 Worked Example: Gram--Schmidt
 
-**Problem.** Apply the Gram--Schmidt process to $\mathbf{{'}v{}'}_1 = (1, 1, 0)$
-$\mathbf{{'}v{}'}_2 = (1, 0, 1)$$\mathbf{{'}v{}'}_3 = (0, 1, 1)$ in $\mathbb{{'}R{}'}^3$ with the
+**Problem.** Apply the Gram--Schmidt process to $\mathbf{v}_1 = (1, 1, 0)$
+$\mathbf{v}_2 = (1, 0, 1)$$\mathbf{v}_3 = (0, 1, 1)$ in $\mathbb{R}^3$ with the
 standard inner Product.
 
 <details>
 <summary>Solution</summary>
 
-$\mathbf{{'}u{}'}_1 = \mathbf{{'}v{}'}_1 = (1, 1, 0)$$\lVert \mathbf{{'}u{}'}_1 \rVert = \sqrt{2}$$e_1 = \frac{1}{\sqrt{2}}(1, 1, 0)$.
+$\mathbf{u}_1 = \mathbf{v}_1 = (1, 1, 0)$$\lVert \mathbf{u}_1 \rVert = \sqrt{2}$$e_1 = \frac{1}{\sqrt{2}}(1, 1, 0)$.
 
-$\mathbf{{'}u{}'}_2 = \mathbf{{'}v{}'}_2 - \langle \mathbf{{'}v{}'}_2, e_1 \rangle e_1 = (1, 0, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0) = (1, 0, 1) - \frac{1}{2}(1, 1, 0) = (\frac{1}{2}, -\frac{1}{2}, 1)$
+$\mathbf{u}_2 = \mathbf{v}_2 - \langle \mathbf{v}_2, e_1 \rangle e_1 = (1, 0, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0) = (1, 0, 1) - \frac{1}{2}(1, 1, 0) = (\frac{1}{2}, -\frac{1}{2}, 1)$
 
-$\lVert \mathbf{{'}u{}'}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$$e_2 = \frac{1}{\sqrt{3/2}}(\frac{1}{2}, -\frac{1}{2}, 1) = \frac{1}{\sqrt{6}}(1, -1, 2)$.
+$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$$e_2 = \frac{1}{\sqrt{3/2}}(\frac{1}{2}, -\frac{1}{2}, 1) = \frac{1}{\sqrt{6}}(1, -1, 2)$.
 
-$\mathbf{{'}u{}'}_3 = \mathbf{{'}v{}'}_3 - \langle \mathbf{{'}v{}'}_3, e_1 \rangle e_1 - \langle \mathbf{{'}v{}'}_3, e_2 \rangle e_2$
+$\mathbf{u}_3 = \mathbf{v}_3 - \langle \mathbf{v}_3, e_1 \rangle e_1 - \langle \mathbf{v}_3, e_2 \rangle e_2$
 
-$\langle \mathbf{{'}v{}'}_3, e_1 \rangle = \frac{1}{\sqrt{2}}(0 + 1 + 0) = \frac{1}{\sqrt{2}}$
+$\langle \mathbf{v}_3, e_1 \rangle = \frac{1}{\sqrt{2}}(0 + 1 + 0) = \frac{1}{\sqrt{2}}$
 
-$\langle \mathbf{{'}v{}'}_3, e_2 \rangle = \frac{1}{\sqrt{6}}(0 - 1 + 2) = \frac{1}{\sqrt{6}}$
+$\langle \mathbf{v}_3, e_2 \rangle = \frac{1}{\sqrt{6}}(0 - 1 + 2) = \frac{1}{\sqrt{6}}$
 
-$\mathbf{{'}u{}'}_3 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0) - \frac{1}{\sqrt{6}} \cdot \frac{1}{\sqrt{6}}(1, -1, 2) = (0, 1, 1) - \frac{1}{2}(1, 1, 0) - \frac{1}{6}(1, -1, 2)$
+$\mathbf{u}_3 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0) - \frac{1}{\sqrt{6}} \cdot \frac{1}{\sqrt{6}}(1, -1, 2) = (0, 1, 1) - \frac{1}{2}(1, 1, 0) - \frac{1}{6}(1, -1, 2)$
 
 $= (-\frac{1}{2} - \frac{1}{6}, 1 - \frac{1}{2} + \frac{1}{6}, 1 - \frac{1}{3}) = (-\frac{2}{3}, \frac{2}{3}, \frac{2}{3})$
 
-$\lVert \mathbf{{'}u{}'}_3 \rVert = \sqrt{4/9 + 4/9 + 4/9} = \sqrt{4/3} = 2/\sqrt{3}$$e_3 = \frac{\sqrt{3}}{2}(-\frac{2}{3}, \frac{2}{3}, \frac{2}{3}) = \frac{1}{\sqrt{3}}(-1, 1, 1)$.
+$\lVert \mathbf{u}_3 \rVert = \sqrt{4/9 + 4/9 + 4/9} = \sqrt{4/3} = 2/\sqrt{3}$$e_3 = \frac{\sqrt{3}}{2}(-\frac{2}{3}, \frac{2}{3}, \frac{2}{3}) = \frac{1}{\sqrt{3}}(-1, 1, 1)$.
 
 **Verification:** $\langle e_1, e_2 \rangle = \frac{1}{\sqrt{12}}(1 - 1 + 0) = 0$. $\checkmark$
 $\langle e_1, e_3 \rangle = \frac{1}{\sqrt{6}}(-1 + 1 + 0) = 0$. $\checkmark$
@@ -1549,39 +1549,39 @@ $\blacksquare$
 </details>
 
 :::caution Common Pitfall The Gram--Schmidt process requires a linearly independent starting set. If
-the input vectors are Linearly dependent, one of the $\mathbf{{'}u{}'}_k$ will be the zero vector,
+the input vectors are Linearly dependent, one of the $\mathbf{u}_k$ will be the zero vector,
 and the process will fail (attempting to divide by zero in the normalisation step). :::
 
 ### 7.8 Worked Example: Orthogonal Projection onto a Plane
 
-**Problem.** Find the orthogonal projection of $\mathbf{{'}v{}'} = (3, -1, 2)$ onto the plane $W$
-spanned by $(1, 0, 1)$ and $(0, 1, 1)$ in $\mathbb{{'}R{}'}^3$ with the standard inner product. Also
-find the distance from $\mathbf{{'}v{}'}$ to $W$.
+**Problem.** Find the orthogonal projection of $\mathbf{v} = (3, -1, 2)$ onto the plane $W$
+spanned by $(1, 0, 1)$ and $(0, 1, 1)$ in $\mathbb{R}^3$ with the standard inner product. Also
+find the distance from $\mathbf{v}$ to $W$.
 
 <details>
 <summary>Solution</summary>
 
 First, apply Gram--Schmidt to obtain an orthonormal basis for $W$.
 
-$\mathbf{{'}u{}'}_1 = (1, 0, 1)$$\lVert \mathbf{{'}u{}'}_1 \rVert = \sqrt{2}$$e_1 = \frac{1}{\sqrt{2}}(1, 0, 1)$.
+$\mathbf{u}_1 = (1, 0, 1)$$\lVert \mathbf{u}_1 \rVert = \sqrt{2}$$e_1 = \frac{1}{\sqrt{2}}(1, 0, 1)$.
 
-$\mathbf{{'}u{}'}_2 = (0, 1, 1) - \langle (0,1,1), e_1 \rangle e_1 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 0, 1) = (0, 1, 1) - \frac{1}{2}(1, 0, 1) = (-\frac{1}{2}, 1, \frac{1}{2})$.
+$\mathbf{u}_2 = (0, 1, 1) - \langle (0,1,1), e_1 \rangle e_1 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 0, 1) = (0, 1, 1) - \frac{1}{2}(1, 0, 1) = (-\frac{1}{2}, 1, \frac{1}{2})$.
 
-$\lVert \mathbf{{'}u{}'}_2 \rVert = \sqrt{1/4 + 1 + 1/4} = \sqrt{3/2}$$e_2 = \frac{1}{\sqrt{6}}(-1, 2, 1)$.
+$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1 + 1/4} = \sqrt{3/2}$$e_2 = \frac{1}{\sqrt{6}}(-1, 2, 1)$.
 
 Now compute the projection:
 
-$\langle \mathbf{{'}v{}'}, e_1 \rangle = \frac{1}{\sqrt{2}}(3 + 0 + 2) = \frac{5}{\sqrt{2}}$
+$\langle \mathbf{v}, e_1 \rangle = \frac{1}{\sqrt{2}}(3 + 0 + 2) = \frac{5}{\sqrt{2}}$
 
-$\langle \mathbf{{'}v{}'}, e_2 \rangle = \frac{1}{\sqrt{6}}(-3 - 2 + 2) = \frac{-3}{\sqrt{6}}$
+$\langle \mathbf{v}, e_2 \rangle = \frac{1}{\sqrt{6}}(-3 - 2 + 2) = \frac{-3}{\sqrt{6}}$
 
-$\mathrm{proj{}_W(\mathbf{{'}v{}'}) = \frac{5}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 0, 1) + \frac{-3}{\sqrt{6}} \cdot \frac{1}{\sqrt{6}}(-1, 2, 1)$
+$\mathrm{proj_W(\mathbf{v}) = \frac{5}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 0, 1) + \frac{-3}{\sqrt{6}} \cdot \frac{1}{\sqrt{6}}(-1, 2, 1)$
 
 $= \frac{5}{2}(1, 0, 1) + \frac{-3}{6}(-1, 2, 1) = (\frac{5}{2}, 0, \frac{5}{2}) + (\frac{1}{2}, -1, -\frac{1}{2}) = (3, -1, 2)$
 
-The residual is $\mathbf{{'}v{}'} - \mathrm{proj{}_W(\mathbf{{'}v{}'}) = (0, 0, 0)$So the distance
-is 0. This means $\mathbf{{'}v{}'} \in W$ itself. Indeed,
-$\mathbf{{'}v{}'} = 3(1, 0, 1) - (0, 1, 1) \in \mathrm{span{}\{(1,0,1), (0,1,1)\}$. $\blacksquare$
+The residual is $\mathbf{v} - \mathrm{proj_W(\mathbf{v}) = (0, 0, 0)$So the distance
+is 0. This means $\mathbf{v} \in W$ itself. Indeed,
+$\mathbf{v} = 3(1, 0, 1) - (0, 1, 1) \in \mathrm{span\{(1,0,1), (0,1,1)\}$. $\blacksquare$
 
 </details>
 
@@ -1593,11 +1593,11 @@ That minimises $\int_0^1 (e^x - c)^2\,dx$.
 <details>
 <summary>Solution</summary>
 
-We want the orthogonal projection of $f(x) = e^x$ onto the subspace $W = \mathrm{span{}\{1\}$ in the
+We want the orthogonal projection of $f(x) = e^x$ onto the subspace $W = \mathrm{span\{1\}$ in the
 $L^2[0,1]$ inner product space. The orthonormal basis for $W$ is $e_1 = 1$ (since
 $\lVert 1 \rVert^2 = \int_0^1 1\,dx = 1$).
 
-$\mathrm{proj{}_W(f) = \langle f, 1 \rangle \cdot 1 = \left(\int_0^1 e^x\,dx\right) \cdot 1 = (e - 1) \cdot 1$
+$\mathrm{proj_W(f) = \langle f, 1 \rangle \cdot 1 = \left(\int_0^1 e^x\,dx\right) \cdot 1 = (e - 1) \cdot 1$
 
 So the best constant approximation is $c = e - 1 \approx 1.718$.
 
@@ -1615,9 +1615,9 @@ $\blacksquare$
   of norms. They are related (the triangle inequality follows from Cauchy--Schwarz) but distinct.
 - **Gram--Schmidt is numerically unstable.** For floating-point computation, modified Gram--Schmidt
   or Householder reflections are preferred.
-- **Orthogonal projection decomposes $\mathbf{{'}v{}'}$ uniquely.**
-  $\mathbf{{'}v{}'} = \mathrm{proj{}_W(\mathbf{{'}v{}'}) + \mathbf{{'}v{}'}^\perp$ where
-  $\mathbf{{'}v{}'}^\perp \in W^\perp$. This decomposition is unique and is called the **orthogonal
+- **Orthogonal projection decomposes $\mathbf{v}$ uniquely.**
+  $\mathbf{v} = \mathrm{proj_W(\mathbf{v}) + \mathbf{v}^\perp$ where
+  $\mathbf{v}^\perp \in W^\perp$. This decomposition is unique and is called the **orthogonal
   decomposition**.
 
 ---
@@ -1627,14 +1627,14 @@ $\blacksquare$
 ### 8.1 Existence of the SVD
 
 **Theorem 8.1 (Singular Value Decomposition).** Every matrix
-$A \in \mathcal{{'}M{}'}_{m \times n}(\mathbb{{'}R{}'})$ can be factored as
+$A \in \mathcal{M}_{m \times n}(\mathbb{R})$ can be factored as
 
 $$A = U \Sigma V^T$$
 
-Where $U \in \mathcal{{'}M{}'}_{m \times m}(\mathbb{{'}R{}'})$ is orthogonal,
-$V \in \mathcal{{'}M{}'}_{n \times n}(\mathbb{{'}R{}'})$ is orthogonal, and
-$\Sigma \in \mathcal{{'}M{}'}_{m \times n}(\mathbb{{'}R{}'})$ is diagonal with non-negative entries
-$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r \geq 0$ (where $r = \mathrm{rank{}(A)$).
+Where $U \in \mathcal{M}_{m \times m}(\mathbb{R})$ is orthogonal,
+$V \in \mathcal{M}_{n \times n}(\mathbb{R})$ is orthogonal, and
+$\Sigma \in \mathcal{M}_{m \times n}(\mathbb{R})$ is diagonal with non-negative entries
+$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r \geq 0$ (where $r = \mathrm{rank(A)$).
 
 The $\sigma_i$ are called the **singular values** of $A$. The columns of $U$ are the **left singular
 vectors**, and the columns of $V$ are the **right singular vectors**.
@@ -1642,36 +1642,36 @@ vectors**, and the columns of $V$ are the **right singular vectors**.
 _Proof._ The matrix $A^T A$ is an $n \times n$ symmetric positive semi-definite matrix, so by the
 spectral theorem it has $n$ real non-negative eigenvalues and an orthonormal eigenbasis. Let
 $\sigma_1^2, \sigma_2^2, \ldots, \sigma_n^2$ be these eigenvalues (some may be zero) with
-corresponding orthonormal eigenvectors $\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_n$ forming the
+corresponding orthonormal eigenvectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$ forming the
 columns of $V$.
 
-For each $i$ with $\sigma_i > 0$Define $\mathbf{{'}u{}'}_i = A\mathbf{{'}v{}'}_i / \sigma_i$. We
+For each $i$ with $\sigma_i > 0$Define $\mathbf{u}_i = A\mathbf{v}_i / \sigma_i$. We
 verify that these form an orthonormal set:
 
-$$\mathbf{{'}u{}'}_i^T \mathbf{{'}u{}'}_j = \frac{\mathbf{{'}v{}'}_i^T A^T A \mathbf{{'}v{}'}_j}{\sigma_i \sigma_j} = \frac{\sigma_j^2 \mathbf{{'}v{}'}_i^T \mathbf{{'}v{}'}_j}{\sigma_i \sigma_j} = \frac{\sigma_j^2}{\sigma_i \sigma_j} \delta_{ij} = \delta_{ij}$$
+$$\mathbf{u}_i^T \mathbf{u}_j = \frac{\mathbf{v}_i^T A^T A \mathbf{v}_j}{\sigma_i \sigma_j} = \frac{\sigma_j^2 \mathbf{v}_i^T \mathbf{v}_j}{\sigma_i \sigma_j} = \frac{\sigma_j^2}{\sigma_i \sigma_j} \delta_{ij} = \delta_{ij}$$
 
-Extend $\{\mathbf{{'}u{}'}_1, \ldots, \mathbf{{'}u{}'}_r\}$ to an orthonormal basis of
-$\mathbb{{'}R{}'}^m$ to form $U$. Then for any vector $\mathbf{{'}x{}'} \in \mathbb{{'}R{}'}^n$:
+Extend $\{\mathbf{u}_1, \ldots, \mathbf{u}_r\}$ to an orthonormal basis of
+$\mathbb{R}^m$ to form $U$. Then for any vector $\mathbf{x} \in \mathbb{R}^n$:
 
-$$A\mathbf{{'}x{}'} = A\left(\sum_{i=1}^{n} (\mathbf{{'}v{}'}_i^T \mathbf{{'}x{}'})\mathbf{{'}v{}'}_i\right) = \sum_{i=1}^{n} (\mathbf{{'}v{}'}_i^T \mathbf{{'}x{}'}) A\mathbf{{'}v{}'}_i = \sum_{i=1}^{r} \sigma_i (\mathbf{{'}v{}'}_i^T \mathbf{{'}x{}'}) \mathbf{{'}u{}'}_i = U \Sigma V^T \mathbf{{'}x{}'}$$
+$$A\mathbf{x} = A\left(\sum_{i=1}^{n} (\mathbf{v}_i^T \mathbf{x})\mathbf{v}_i\right) = \sum_{i=1}^{n} (\mathbf{v}_i^T \mathbf{x}) A\mathbf{v}_i = \sum_{i=1}^{r} \sigma_i (\mathbf{v}_i^T \mathbf{x}) \mathbf{u}_i = U \Sigma V^T \mathbf{x}$$
 
-Since this holds for all $\mathbf{{'}x{}'}$We have $A = U \Sigma V^T$. $\blacksquare$
+Since this holds for all $\mathbf{x}$We have $A = U \Sigma V^T$. $\blacksquare$
 
 ### 8.2 Relationship to Eigenvalues
 
 **Proposition 8.2.** The singular values of $A$ are the square roots of the eigenvalues of $A^T A$
 (equivalently, of $AA^T$). The non-zero singular values of $A$ and $A^T$ are identical.
 
-_Proof._ From the construction above, $A^T A \mathbf{{'}v{}'}_i = \sigma_i^2 \mathbf{{'}v{}'}_i$.
+_Proof._ From the construction above, $A^T A \mathbf{v}_i = \sigma_i^2 \mathbf{v}_i$.
 For $AA^T$:
 
-$$AA^T \mathbf{{'}u{}'}_i = \frac{A(A^T A)\mathbf{{'}v{}'}_i}{\sigma_i} = \frac{\sigma_i^2 A\mathbf{{'}v{}'}_i}{\sigma_i} = \sigma_i^2 \mathbf{{'}u{}'}_i$$
+$$AA^T \mathbf{u}_i = \frac{A(A^T A)\mathbf{v}_i}{\sigma_i} = \frac{\sigma_i^2 A\mathbf{v}_i}{\sigma_i} = \sigma_i^2 \mathbf{u}_i$$
 
-So $\mathbf{{'}u{}'}_i$ is an eigenvector of $AA^T$ with eigenvalue $\sigma_i^2$. The non-zero
+So $\mathbf{u}_i$ is an eigenvector of $AA^T$ with eigenvalue $\sigma_i^2$. The non-zero
 eigenvalues of $A^T A$ and $AA^T$ coincide (since if
-$A^T A \mathbf{{'}v{}'} = \lambda \mathbf{{'}v{}'}$ with $\lambda \neq 0$Then
-$AA^T(A\mathbf{{'}v{}'}) = A(A^T A \mathbf{{'}v{}'}) = \lambda(A\mathbf{{'}v{}'})$ and
-$A\mathbf{{'}v{}'} \neq \mathbf{{'}0{}'}$). $\blacksquare$
+$A^T A \mathbf{v} = \lambda \mathbf{v}$ with $\lambda \neq 0$Then
+$AA^T(A\mathbf{v}) = A(A^T A \mathbf{v}) = \lambda(A\mathbf{v})$ and
+$A\mathbf{v} \neq \mathbf{0}$). $\blacksquare$
 
 **Proposition 8.3.** If $A$ is symmetric with eigenvalues $\lambda_1, \ldots, \lambda_n$Then the
 singular values of $A$ are $|\lambda_1|, \ldots, |\lambda_n|$.
@@ -1681,16 +1681,16 @@ $\sqrt{\lambda_i^2} = |\lambda_i|$. $\blacksquare$
 
 ### 8.3 Geometric Interpretation
 
-The SVD decomposes the linear transformation $T : \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}^m$ into
+The SVD decomposes the linear transformation $T : \mathbb{R}^n \to \mathbb{R}^m$ into
 three steps:
 
-1. $V^T$ rotates (or reflects) $\mathbb{{'}R{}'}^n$ into a coordinate system aligned with the right
+1. $V^T$ rotates (or reflects) $\mathbb{R}^n$ into a coordinate system aligned with the right
    singular vectors.
 2. $\Sigma$ scales each axis by the corresponding singular value (and possibly drops dimensions
    where $\sigma_i = 0$).
 3. $U$ rotates (or reflects) the result into the coordinate system of the left singular vectors.
 
-**Unit circle image.** Under $A$The unit circle in $\mathbb{{'}R{}'}^2$ is mapped to an ellipse with
+**Unit circle image.** Under $A$The unit circle in $\mathbb{R}^2$ is mapped to an ellipse with
 semi-axes $\sigma_1$ and $\sigma_2$ aligned with the columns of $U$.
 
 ### 8.4 Low-Rank Approximation
@@ -1699,20 +1699,20 @@ semi-axes $\sigma_1$ and $\sigma_2$ aligned with the columns of $U$.
 $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > 0$. For any $k < r$The best rank-$k$
 approximation to $A$ (in both the Frobenius and spectral norms) is
 
-$$A_k = \sum_{i=1}^{k} \sigma_i \mathbf{{'}u{}'}_i \mathbf{{'}v{}'}_i^T = U_k \Sigma_k V_k^T$$
+$$A_k = \sum_{i=1}^{k} \sigma_i \mathbf{u}_i \mathbf{v}_i^T = U_k \Sigma_k V_k^T$$
 
 And the approximation error is
 
 $$\lVert A - A_k \rVert_F = \sqrt{\sigma_{k+1}^2 + \cdots + \sigma_r^2}, \qquad \lVert A - A_k \rVert_2 = \sigma_{k+1}$$
 
 _Proof (Frobenius norm)._ Any rank-$k$ matrix $B$ can be written in terms of an orthonormal basis of
-its column space. Let $W \in \mathcal{{'}M{}'}_{n \times k}(\mathbb{{'}R{}'})$ have orthonormal
+its column space. Let $W \in \mathcal{M}_{n \times k}(\mathbb{R})$ have orthonormal
 columns spanning the column space of $B$. Then $B = CW^T$ for some $C$And:
 
 $$\lVert A - B \rVert_F^2 = \lVert A(I - WW^T) \rVert_F^2 + \lVert (A - C)W^T \rVert_F^2 \geq \lVert A(I - WW^T) \rVert_F^2$$
 
 The minimum over $W$ is achieved when $W$ spans the subspace spanned by
-$\mathbf{{'}v{}'}_1, \ldots, \mathbf{{'}v{}'}_k$ (the top $k$ right singular vectors), giving:
+$\mathbf{v}_1, \ldots, \mathbf{v}_k$ (the top $k$ right singular vectors), giving:
 
 $$\lVert A - A_k \rVert_F^2 = \sum_{i=k+1}^{r} \sigma_i^2$$
 
@@ -1728,7 +1728,7 @@ $$A^+ = V \Sigma^+ U^T$$
 Where $\Sigma^+$ is obtained from $\Sigma$ by transposing and inverting each non-zero singular
 value:
 
-$$(\Sigma^+)_{ii} = \begin{cases} 1/\sigma_i & \text{if {} \sigma_i > 0 \\ 0 & \text{if {} \sigma_i = 0 \end{cases}$$
+$$(\Sigma^+)_{ii} = \begin{cases} 1/\sigma_i & \text{if  \sigma_i > 0 \\ 0 & \text{if  \sigma_i = 0 \end{cases}$$
 
 **Theorem 8.5.** The pseudoinverse satisfies the four Moore--Penrose conditions:
 
@@ -1744,16 +1744,16 @@ $$AA^+A = U \Sigma V^T V \Sigma^+ U^T U \Sigma V^T = U \Sigma \Sigma^+ \Sigma V^
 Since $\Sigma \Sigma^+ \Sigma = \Sigma$ (the non-zero singular values are preserved, zeros remain
 zero). The remaining conditions follow similarly. $\blacksquare$
 
-**Theorem 8.6 (Minimum-Norm Least Squares).** If $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ is
-inconsistent, then $\mathbf{{'}x{}'}^* = A^+\mathbf{{'}b{}'}$ is the least-squares solution of
+**Theorem 8.6 (Minimum-Norm Least Squares).** If $A\mathbf{x} = \mathbf{b}$ is
+inconsistent, then $\mathbf{x}^* = A^+\mathbf{b}$ is the least-squares solution of
 minimum norm.
 
-_Proof._ The least-squares solutions to $A\mathbf{{'}x{}'} \approx \mathbf{{'}b{}'}$ are
-$\mathbf{{'}x{}'} = A^+\mathbf{{'}b{}'} + (I - A^+A)\mathbf{{'}z{}'}$ for arbitrary
-$\mathbf{{'}z{}'}$. Since $(I - A^+A)\mathbf{{'}z{}'} \in \ker(A)$ and
-$A^+\mathbf{{'}b{}'} \in \mathrm{im{}(A^T)$These two components are orthogonal. The minimum-norm
-solution is obtained when $\mathbf{{'}z{}'} = \mathbf{{'}0{}'}$Giving
-$\mathbf{{'}x{}'}^* = A^+\mathbf{{'}b{}'}$. $\blacksquare$
+_Proof._ The least-squares solutions to $A\mathbf{x} \approx \mathbf{b}$ are
+$\mathbf{x} = A^+\mathbf{b} + (I - A^+A)\mathbf{z}$ for arbitrary
+$\mathbf{z}$. Since $(I - A^+A)\mathbf{z} \in \ker(A)$ and
+$A^+\mathbf{b} \in \mathrm{im(A^T)$These two components are orthogonal. The minimum-norm
+solution is obtained when $\mathbf{z} = \mathbf{0}$Giving
+$\mathbf{x}^* = A^+\mathbf{b}$. $\blacksquare$
 
 ### 8.6 Condition Number
 
@@ -1763,22 +1763,22 @@ $$\kappa(A) = \lVert A \rVert_2 \cdot \lVert A^+ \rVert_2 = \frac{\sigma_1}{\sig
 
 Where $\sigma_1$ is the largest and $\sigma_r$ is the smallest non-zero singular value.
 
-**Theorem 8.7 (Sensitivity of Linear Systems).** If $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ and
-$A(\mathbf{{'}x{}'} + \delta\mathbf{{'}x{}'}) = \mathbf{{'}b{}'} + \delta\mathbf{{'}b{}'}$Then
+**Theorem 8.7 (Sensitivity of Linear Systems).** If $A\mathbf{x} = \mathbf{b}$ and
+$A(\mathbf{x} + \delta\mathbf{x}) = \mathbf{b} + \delta\mathbf{b}$Then
 
-$$\frac{\lVert \delta\mathbf{{'}x{}'} \rVert}{\lVert \mathbf{{'}x{}'} \rVert} \leq \kappa(A) \cdot \frac{\lVert \delta\mathbf{{'}b{}'} \rVert}{\lVert \mathbf{{'}b{}'} \rVert}$$
+$$\frac{\lVert \delta\mathbf{x} \rVert}{\lVert \mathbf{x} \rVert} \leq \kappa(A) \cdot \frac{\lVert \delta\mathbf{b} \rVert}{\lVert \mathbf{b} \rVert}$$
 
-_Proof._ From $A\delta\mathbf{{'}x{}'} = \delta\mathbf{{'}b{}'}$:
-$\lVert \delta\mathbf{{'}x{}'} \rVert = \lVert A^{-1}\delta\mathbf{{'}b{}'} \rVert \leq \lVert A^{-1} \rVert \lVert \delta\mathbf{{'}b{}'} \rVert = \sigma_r^{-1} \lVert \delta\mathbf{{'}b{}'} \rVert$.
-From $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$:
-$\lVert \mathbf{{'}b{}'} \rVert = \lVert A\mathbf{{'}x{}'} \rVert \geq \sigma_1^{-1} \lVert \mathbf{{'}x{}'} \rVert$...
-Wait, $\lVert A\mathbf{{'}x{}'} \rVert \geq \sigma_r \lVert \mathbf{{'}x{}'} \rVert$ and
-$\lVert \mathbf{{'}b{}'} \rVert \leq \sigma_1 \lVert \mathbf{{'}x{}'} \rVert$. Combining:
-$\lVert \delta\mathbf{{'}x{}'} \rVert / \lVert \mathbf{{'}x{}'} \rVert \leq (\sigma_1 / \sigma_r)(\lVert \delta\mathbf{{'}b{}'} \rVert / \lVert \mathbf{{'}b{}'} \rVert)$.
+_Proof._ From $A\delta\mathbf{x} = \delta\mathbf{b}$:
+$\lVert \delta\mathbf{x} \rVert = \lVert A^{-1}\delta\mathbf{b} \rVert \leq \lVert A^{-1} \rVert \lVert \delta\mathbf{b} \rVert = \sigma_r^{-1} \lVert \delta\mathbf{b} \rVert$.
+From $A\mathbf{x} = \mathbf{b}$:
+$\lVert \mathbf{b} \rVert = \lVert A\mathbf{x} \rVert \geq \sigma_1^{-1} \lVert \mathbf{x} \rVert$...
+Wait, $\lVert A\mathbf{x} \rVert \geq \sigma_r \lVert \mathbf{x} \rVert$ and
+$\lVert \mathbf{b} \rVert \leq \sigma_1 \lVert \mathbf{x} \rVert$. Combining:
+$\lVert \delta\mathbf{x} \rVert / \lVert \mathbf{x} \rVert \leq (\sigma_1 / \sigma_r)(\lVert \delta\mathbf{b} \rVert / \lVert \mathbf{b} \rVert)$.
 $\blacksquare$
 
 A matrix with large condition number is **ill-conditioned**: small perturbations in
-$\mathbf{{'}b{}'}$ can cause large changes in $\mathbf{{'}x{}'}$.
+$\mathbf{b}$ can cause large changes in $\mathbf{x}$.
 
 ### 8.7 Worked Example: Computing the SVD
 
@@ -1796,22 +1796,22 @@ $\det\begin{pmatrix} 17 - \lambda & 4 \\ 4 & 17 - \lambda \end{pmatrix} = (17 - 
 So $\sigma_1^2 = 21$ and $\sigma_2^2 = 13$Giving $\sigma_1 = \sqrt{21}$$\sigma_2 = \sqrt{13}$.
 
 **Step 3:** Eigenvectors of $A^T A$. For $\lambda = 21$: $(17 - 21)v_1 + 4v_2 = 0$So $v_1 = v_2$.
-Normalised: $\mathbf{{'}v{}'}_1 = \frac{1}{\sqrt{2}}(1, 1)^T$.
+Normalised: $\mathbf{v}_1 = \frac{1}{\sqrt{2}}(1, 1)^T$.
 
 For $\lambda = 13$: $4v_1 + (17 - 13)v_2 = 0$So $v_1 = -v_2$. Normalised:
-$\mathbf{{'}v{}'}_2 = \frac{1}{\sqrt{2}}(1, -1)^T$.
+$\mathbf{v}_2 = \frac{1}{\sqrt{2}}(1, -1)^T$.
 
 $V = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$.
 
-**Step 4:** Compute $\mathbf{{'}u{}'}_i = A\mathbf{{'}v{}'}_i / \sigma_i$.
+**Step 4:** Compute $\mathbf{u}_i = A\mathbf{v}_i / \sigma_i$.
 
-$\mathbf{{'}u{}'}_1 = \frac{1}{\sqrt{21}} \cdot \frac{1}{\sqrt{2}}\begin{pmatrix} 3 & 2 \\ 2 & 3 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{42}}\begin{pmatrix} 5 \\ 5 \\ 0 \end{pmatrix} = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$.
+$\mathbf{u}_1 = \frac{1}{\sqrt{21}} \cdot \frac{1}{\sqrt{2}}\begin{pmatrix} 3 & 2 \\ 2 & 3 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \end{pmatrix} = \frac{1}{\sqrt{42}}\begin{pmatrix} 5 \\ 5 \\ 0 \end{pmatrix} = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$.
 
-$\mathbf{{'}u{}'}_2 = \frac{1}{\sqrt{13}} \cdot \frac{1}{\sqrt{2}}\begin{pmatrix} 3 & 2 \\ 2 & 3 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{1}{\sqrt{26}}\begin{pmatrix} 1 \\ -1 \\ 4 \end{pmatrix}$.
+$\mathbf{u}_2 = \frac{1}{\sqrt{13}} \cdot \frac{1}{\sqrt{2}}\begin{pmatrix} 3 & 2 \\ 2 & 3 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \frac{1}{\sqrt{26}}\begin{pmatrix} 1 \\ -1 \\ 4 \end{pmatrix}$.
 
-Since $A$ is $3 \times 2$We need a third left singular vector $\mathbf{{'}u{}'}_3$ orthogonal to
-$\mathbf{{'}u{}'}_1$ and $\mathbf{{'}u{}'}_2$. Compute
-$\mathbf{{'}u{}'}_3 = \mathbf{{'}u{}'}_1 \times \mathbf{{'}u{}'}_2 = \frac{1}{\sqrt{52}}(4, -4, -2) = \frac{1}{\sqrt{26}}(2, -2, -1)$.
+Since $A$ is $3 \times 2$We need a third left singular vector $\mathbf{u}_3$ orthogonal to
+$\mathbf{u}_1$ and $\mathbf{u}_2$. Compute
+$\mathbf{u}_3 = \mathbf{u}_1 \times \mathbf{u}_2 = \frac{1}{\sqrt{52}}(4, -4, -2) = \frac{1}{\sqrt{26}}(2, -2, -1)$.
 
 $$U = \begin{pmatrix} 1/\sqrt{2} & 1/\sqrt{26} & 2/\sqrt{26} \\ 1/\sqrt{2} & -1/\sqrt{26} & -2/\sqrt{26} \\ 0 & 4/\sqrt{26} & -1/\sqrt{26} \end{pmatrix}$$
 
@@ -1850,7 +1850,7 @@ recompute.
 
 $A^T A = \begin{pmatrix} 2 & 1 & 1 \\ 1 & 1 & 0 \\ 1 & 0 & 2 \end{pmatrix}$.
 
-$\mathrm{tr{}(A^T A) = 5$So $\lambda_1 + \lambda_2 + \lambda_3 = 5$.
+$\mathrm{tr(A^T A) = 5$So $\lambda_1 + \lambda_2 + \lambda_3 = 5$.
 
 $\det(A^T A) = 2(2) - 1(2) - 1(-1) = 4 - 2 + 1 = 3$.
 
@@ -1865,7 +1865,7 @@ By the trigonometric method for cubics or numerical approximation,
 $\lambda_1 \approx 3.35$$\lambda_2 \approx 1.35$$\lambda_3 \approx 0.30$.
 
 The best rank-1 approximation uses only $\sigma_1 = \sqrt{\lambda_1} \approx 1.83$ and its
-corresponding singular vectors, yielding $A_1 = \sigma_1 \mathbf{{'}u{}'}_1 \mathbf{{'}v{}'}_1^T$
+corresponding singular vectors, yielding $A_1 = \sigma_1 \mathbf{u}_1 \mathbf{v}_1^T$
 with error
 $\lVert A - A_1 \rVert_F = \sqrt{\lambda_2 + \lambda_3} \approx \sqrt{1.65} \approx 1.28$.
 $\blacksquare$
@@ -1894,9 +1894,9 @@ $\sigma_1 \approx 2.00005, \quad \sigma_2 \approx 0.0001$
 
 $\kappa(A) = \sigma_1 / \sigma_2 \approx 20000$.
 
-This means relative errors in $\mathbf{{'}b{}'}$ can be amplified by a factor of up to $20000$ in
-the solution $\mathbf{{'}x{}'}$. The matrix is nearly singular (the two rows are almost linearly
-dependent), and solving $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$ in floating-point arithmetic will
+This means relative errors in $\mathbf{b}$ can be amplified by a factor of up to $20000$ in
+the solution $\mathbf{x}$. The matrix is nearly singular (the two rows are almost linearly
+dependent), and solving $A\mathbf{x} = \mathbf{b}$ in floating-point arithmetic will
 lose approximately $\log_{10}(20000) \approx 4.3$ digits of precision. $\blacksquare$
 
 </details>
@@ -1909,7 +1909,7 @@ lose approximately $\log_{10}(20000) \approx 4.3$ digits of precision. $\blacksq
   can be any orthonormal basis of the eigenspace. The signs of singular vectors can also be flipped
   in pairs.
 - **The pseudoinverse equals the inverse only for square, full-rank matrices.** When $A$ is not full
-  rank, $A^+A \neq I$; instead, $A^+A$ is the orthogonal projection onto $\mathrm{im{}(A^T)$.
+  rank, $A^+A \neq I$; instead, $A^+A$ is the orthogonal projection onto $\mathrm{im(A^T)$.
 - **The SVD and eigendecomposition are different decompositions.** The SVD always exists for any
   matrix, but the eigendecomposition requires the matrix to be square. Even for symmetric matrices,
   the singular values are $|\lambda_i|$Not $\lambda_i$.
@@ -1918,14 +1918,14 @@ lose approximately $\log_{10}(20000) \approx 4.3$ digits of precision. $\blacksq
 
 ## 9. Problem Set
 
-**Problem 1.** Let $V = \mathbb{{'}R{}'}^3$ and
-$W = \{(x, y, z) \in \mathbb{{'}R{}'}^3 : x - y + z = 0\}$. Show that $W$ is a subspace of $V$ and
+**Problem 1.** Let $V = \mathbb{R}^3$ and
+$W = \{(x, y, z) \in \mathbb{R}^3 : x - y + z = 0\}$. Show that $W$ is a subspace of $V$ and
 find its dimension.
 
 <details>
 <summary>Solution</summary>
 
-$W$ is non-empty since $\mathbf{{'}0{}'} = (0, 0, 0) \in W$. If
+$W$ is non-empty since $\mathbf{0} = (0, 0, 0) \in W$. If
 $(x_1, y_1, z_1), (x_2, y_2, z_2) \in W$Then $(x_1 - y_1 + z_1) + (x_2 - y_2 + z_2) = 0 + 0 = 0$So
 their sum is in $W$. Similarly, $\alpha(x - y + z) = 0$ for any scalar $\alpha$. Hence $W$ is a
 subspace.
@@ -1937,8 +1937,8 @@ _If you get this wrong, revise: Section 1.3 (Subspace Criterion)._
 
 </details>
 
-**Problem 2.** Is the set $S = \{(x, y) \in \mathbb{{'}R{}'}^2 : xy = 0\}$ a subspace of
-$\mathbb{{'}R{}'}^2$?
+**Problem 2.** Is the set $S = \{(x, y) \in \mathbb{R}^2 : xy = 0\}$ a subspace of
+$\mathbb{R}^2$?
 
 <details>
 <summary>Solution</summary>
@@ -1951,7 +1951,7 @@ _If you get this wrong, revise: Section 1.3 (Subspace Criterion)._
 </details>
 
 **Problem 3.** Determine whether the set $\{1 - x, 1 + x, x^2\}$ is linearly independent in
-$\mathcal{{'}P{}'}_2(\mathbb{{'}R{}'})$.
+$\mathcal{P}_2(\mathbb{R})$.
 
 <details>
 <summary>Solution</summary>
@@ -1975,24 +1975,24 @@ Row-reduce $A$:
 
 $$\begin{pmatrix} 1 & 2 & 1 & 4 \\ 2 & 4 & 0 & 6 \\ 3 & 6 & 1 & 10 \end{pmatrix} \xrightarrow{R_2 - 2R_1, R_3 - 3R_1} \begin{pmatrix} 1 & 2 & 1 & 4 \\ 0 & 0 & -2 & -2 \\ 0 & 0 & -2 & -2 \end{pmatrix} \xrightarrow{R_3 - R_2} \begin{pmatrix} 1 & 2 & 1 & 4 \\ 0 & 0 & -2 & -2 \\ 0 & 0 & 0 & 0 \end{pmatrix}$$
 
-Pivots are in columns 1 and 3. A basis for $\mathrm{col{}(A)$ is $\{(1, 2, 3), (1, 0, 1)\}$ (the
-pivot columns of the original $A$). $\dim(\mathrm{col{}(A)) = 2$.
+Pivots are in columns 1 and 3. A basis for $\mathrm{col(A)$ is $\{(1, 2, 3), (1, 0, 1)\}$ (the
+pivot columns of the original $A$). $\dim(\mathrm{col(A)) = 2$.
 
 _If you get this wrong, revise: Section 2.7 (Worked Examples)._
 
 </details>
 
-**Problem 5.** Let $U = \mathrm{span{}\{(1, 0, 1), (0, 1, 1)\}$ and
-$W = \mathrm{span{}\{(1, 1, 0)\}$ in $\mathbb{{'}R{}'}^3$. Verify the dimension formula
+**Problem 5.** Let $U = \mathrm{span\{(1, 0, 1), (0, 1, 1)\}$ and
+$W = \mathrm{span\{(1, 1, 0)\}$ in $\mathbb{R}^3$. Verify the dimension formula
 $\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W)$.
 
 <details>
 <summary>Solution</summary>
 
 $\dim(U) = 2$ (the two spanning vectors are linearly independent), $\dim(W) = 1$. Since
-$\dim(U) + \dim(W) = 3 = \dim(\mathbb{{'}R{}'}^3)$We have $U + W = \mathbb{{'}R{}'}^3$So
+$\dim(U) + \dim(W) = 3 = \dim(\mathbb{R}^3)$We have $U + W = \mathbb{R}^3$So
 $\dim(U + W) = 3$. By the dimension formula: $\dim(U \cap W) = 2 + 1 - 3 = 0$So
-$U \cap W = \{\mathbf{{'}0{}'}\}$.
+$U \cap W = \{\mathbf{0}\}$.
 
 We can verify directly: if $a(1,0,1) + b(0,1,1) = c(1,1,0)$Then $a = c$$b = c$$a + b = 0$ Giving
 $c = 0$So only the zero vector is in the intersection.
@@ -2046,7 +2046,7 @@ $\det(A) = 2(3 - 0) - 0 + 1(1 - 0) = 6 + 1 = 7$.
 Cofactors: $C_{11} = +3$$C_{12} = -3$$C_{13} = +1$ $C_{21} = +1$$C_{22} = +6$$C_{23} = -2$
 $C_{31} = -1$$C_{32} = +1$$C_{33} = +2$
 
-$\mathrm{adj{}(A) = \begin{pmatrix} 3 & 1 & -1 \\ -3 & 6 & 1 \\ 1 & -2 & 2 \end{pmatrix}$
+$\mathrm{adj(A) = \begin{pmatrix} 3 & 1 & -1 \\ -3 & 6 & 1 \\ 1 & -2 & 2 \end{pmatrix}$
 
 $A^{-1} = \frac{1}{7}\begin{pmatrix} 3 & 1 & -1 \\ -3 & 6 & 1 \\ 1 & -2 & 2 \end{pmatrix}$
 
@@ -2082,10 +2082,10 @@ $$\begin{aligned} x + y + z &= 1 \\ 2x + 2y + 2z &= 3 \\ x - y + z &= 0 \end{ali
 <details>
 <summary>Solution</summary>
 
-$$[A \mid \mathbf{{'}b{}'}] = \begin{pmatrix} 1 & 1 & 1 & 1 \\ 2 & 2 & 2 & 3 \\ 1 & -1 & 1 & 0 \end{pmatrix} \xrightarrow{R_2 - 2R_1, R_3 - R_1} \begin{pmatrix} 1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 \\ 0 & -2 & 0 & -1 \end{pmatrix}$$
+$$[A \mid \mathbf{b}] = \begin{pmatrix} 1 & 1 & 1 & 1 \\ 2 & 2 & 2 & 3 \\ 1 & -1 & 1 & 0 \end{pmatrix} \xrightarrow{R_2 - 2R_1, R_3 - R_1} \begin{pmatrix} 1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 \\ 0 & -2 & 0 & -1 \end{pmatrix}$$
 
-$\mathrm{rank{}(A) = 2$ but $\mathrm{rank{}([A \mid \mathbf{{'}b{}'}]) = 3$ (the row $[0\ 0\ 0\ 1]$
-is Non-zero). Since $\mathrm{rank{}(A) \neq \mathrm{rank{}([A \mid \mathbf{{'}b{}'}])$The system is
+$\mathrm{rank(A) = 2$ but $\mathrm{rank([A \mid \mathbf{b}]) = 3$ (the row $[0\ 0\ 0\ 1]$
+is Non-zero). Since $\mathrm{rank(A) \neq \mathrm{rank([A \mid \mathbf{b}])$The system is
 inconsistent.
 
 _If you get this wrong, revise: Section 4.2 (Rouché--Capelli Theorem)._
@@ -2115,19 +2115,19 @@ _If you get this wrong, revise: Section 4.3 (LU Decomposition)._
 
 </details>
 
-**Problem 12.** Find the least squares solution to the system $A\mathbf{{'}x{}'} = \mathbf{{'}b{}'}$
+**Problem 12.** Find the least squares solution to the system $A\mathbf{x} = \mathbf{b}$
 where
 
-$$A = \begin{pmatrix} 1 & 0 \\ 1 & 1 \\ 1 & 2 \end{pmatrix}, \quad \mathbf{{'}b{}'} = \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}$$
+$$A = \begin{pmatrix} 1 & 0 \\ 1 & 1 \\ 1 & 2 \end{pmatrix}, \quad \mathbf{b} = \begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}$$
 
 <details>
 <summary>Solution</summary>
 
-$A^T A = \begin{pmatrix} 3 & 3 \\ 3 & 5 \end{pmatrix}$$A^T \mathbf{{'}b{}'} = \begin{pmatrix} 2 \\ 3 \end{pmatrix}$.
+$A^T A = \begin{pmatrix} 3 & 3 \\ 3 & 5 \end{pmatrix}$$A^T \mathbf{b} = \begin{pmatrix} 2 \\ 3 \end{pmatrix}$.
 
 $\det(A^T A) = 15 - 9 = 6$$(A^T A)^{-1} = \frac{1}{6}\begin{pmatrix} 5 & -3 \\ -3 & 3 \end{pmatrix}$
 
-$\hat{\mathbf{{'}x{}'}} = \frac{1}{6}\begin{pmatrix} 5 & -3 \\ -3 & 3 \end{pmatrix}\begin{pmatrix} 2 \\ 3 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 10 - 9 \\ -6 + 9 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} 1/6 \\ 1/2 \end{pmatrix}$
+$\hat{\mathbf{x}} = \frac{1}{6}\begin{pmatrix} 5 & -3 \\ -3 & 3 \end{pmatrix}\begin{pmatrix} 2 \\ 3 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 10 - 9 \\ -6 + 9 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} 1/6 \\ 1/2 \end{pmatrix}$
 
 The least squares solution is $a = 1/6$$b = 1/2$.
 
@@ -2201,7 +2201,7 @@ _If you get this wrong, revise: Section 5.4 (Cayley--Hamilton Theorem)._
 
 </details>
 
-**Problem 16.** Let $T : \mathbb{{'}R{}'}^3 \to \mathbb{{'}R{}'}^2$ be defined by
+**Problem 16.** Let $T : \mathbb{R}^3 \to \mathbb{R}^2$ be defined by
 $T(x, y, z) = (x + y, y + z)$. Find the matrix of $T$ with respect to the standard bases, and verify
 the rank-nullity theorem.
 
@@ -2210,23 +2210,23 @@ the rank-nullity theorem.
 
 $T(1, 0, 0) = (1, 0)$$T(0, 1, 0) = (1, 1)$$T(0, 0, 1) = (0, 1)$.
 
-$[T]_{\mathcal{{'}E{}'}} = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \end{pmatrix}$.
+$[T]_{\mathcal{E}} = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \end{pmatrix}$.
 
-$\ker(T) = \{(x, y, z) : x + y = 0, y + z = 0\} = \{(t, -t, t) : t \in \mathbb{{'}R{}'}\}$So
+$\ker(T) = \{(x, y, z) : x + y = 0, y + z = 0\} = \{(t, -t, t) : t \in \mathbb{R}\}$So
 $\dim(\ker(T)) = 1$.
 
-$\mathrm{im{}(T) = \mathrm{span{}\{(1, 0), (1, 1)\} = \mathbb{{'}R{}'}^2$So
-$\dim(\mathrm{im{}(T)) = 2$.
+$\mathrm{im(T) = \mathrm{span\{(1, 0), (1, 1)\} = \mathbb{R}^2$So
+$\dim(\mathrm{im(T)) = 2$.
 
-Verify: $\dim(\ker(T)) + \dim(\mathrm{im{}(T)) = 1 + 2 = 3 = \dim(\mathbb{{'}R{}'}^3)$.
+Verify: $\dim(\ker(T)) + \dim(\mathrm{im(T)) = 1 + 2 = 3 = \dim(\mathbb{R}^3)$.
 $\blacksquare$
 
 _If you get this wrong, revise: Section 6.4 (Rank-Nullity for Linear Maps)._
 
 </details>
 
-**Problem 17.** Let $V = \mathbb{{'}R{}'}^3$ with the standard inner product. Find the orthogonal
-projection Of $\mathbf{{'}v{}'} = (1, 2, 3)$ onto the plane $W$ defined by $x + y + z = 0$.
+**Problem 17.** Let $V = \mathbb{R}^3$ with the standard inner product. Find the orthogonal
+projection Of $\mathbf{v} = (1, 2, 3)$ onto the plane $W$ defined by $x + y + z = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -2235,18 +2235,18 @@ A basis for $W$: $\{(1, -1, 0), (1, 0, -1)\}$. Apply Gram--Schmidt:
 
 $e_1 = \frac{1}{\sqrt{2}}(1, -1, 0)$.
 
-$\mathbf{{'}u{}'}_2 = (1, 0, -1) - \langle (1, 0, -1), e_1 \rangle e_1 = (1, 0, -1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, -1, 0) = (\frac{1}{2}, \frac{1}{2}, -1)$.
+$\mathbf{u}_2 = (1, 0, -1) - \langle (1, 0, -1), e_1 \rangle e_1 = (1, 0, -1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, -1, 0) = (\frac{1}{2}, \frac{1}{2}, -1)$.
 
-$\lVert \mathbf{{'}u{}'}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$So
+$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$So
 $e_2 = \frac{1}{\sqrt{6}}(1, 1, -2)$.
 
-$\mathrm{proj{}_W(\mathbf{{'}v{}'}) = \langle (1,2,3), e_1 \rangle e_1 + \langle (1,2,3), e_2 \rangle e_2$
+$\mathrm{proj_W(\mathbf{v}) = \langle (1,2,3), e_1 \rangle e_1 + \langle (1,2,3), e_2 \rangle e_2$
 
 $\langle (1,2,3), e_1 \rangle = \frac{1}{\sqrt{2}}(1 - 2) = \frac{-1}{\sqrt{2}}$
 
 $\langle (1,2,3), e_2 \rangle = \frac{1}{\sqrt{6}}(1 + 2 - 6) = \frac{-3}{\sqrt{6}}$
 
-$\mathrm{proj{}_W(\mathbf{{'}v{}'}) = \frac{-1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, -1, 0) + \frac{-3}{\sqrt{6}} \cdot \frac{1}{\sqrt{6}}(1, 1, -2)$
+$\mathrm{proj_W(\mathbf{v}) = \frac{-1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, -1, 0) + \frac{-3}{\sqrt{6}} \cdot \frac{1}{\sqrt{6}}(1, 1, -2)$
 
 $= -\frac{1}{2}(1, -1, 0) - \frac{1}{2}(1, 1, -2) = (-1, 0, 1)$.
 
@@ -2256,29 +2256,29 @@ _If you get this wrong, revise: Section 7.5 (Orthogonal Projection)._
 
 </details>
 
-**Problem 18.** Prove the Cauchy--Schwarz inequality for $\mathbb{{'}R{}'}^n$ directly: for any
-nonzero $\mathbf{{'}x{}'}, \mathbf{{'}y{}'} \in \mathbb{{'}R{}'}^n$Show that
-$\lvert\mathbf{{'}x{}'} \cdot \mathbf{{'}y{}'}\rvert \leq \lVert \mathbf{{'}x{}'} \rVert \lVert \mathbf{{'}y{}'} \rVert$
+**Problem 18.** Prove the Cauchy--Schwarz inequality for $\mathbb{R}^n$ directly: for any
+nonzero $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$Show that
+$\lvert\mathbf{x} \cdot \mathbf{y}\rvert \leq \lVert \mathbf{x} \rVert \lVert \mathbf{y} \rVert$
 And determine when equality holds.
 
 <details>
 <summary>Solution</summary>
 
 Consider the function
-$f(t) = \lVert \mathbf{{'}x{}'} + t\mathbf{{'}y{}'} \rVert^2 = \lVert \mathbf{{'}x{}'} \rVert^2 + 2t(\mathbf{{'}x{}'} \cdot \mathbf{{'}y{}'}) + t^2 \lVert \mathbf{{'}y{}'} \rVert^2$.
+$f(t) = \lVert \mathbf{x} + t\mathbf{y} \rVert^2 = \lVert \mathbf{x} \rVert^2 + 2t(\mathbf{x} \cdot \mathbf{y}) + t^2 \lVert \mathbf{y} \rVert^2$.
 
-Since $f(t) \geq 0$ for all $t \in \mathbb{{'}R{}'}$This quadratic in $t$ has at most one real root,
+Since $f(t) \geq 0$ for all $t \in \mathbb{R}$This quadratic in $t$ has at most one real root,
 So its discriminant satisfies $\Delta \leq 0$:
 
-$4(\mathbf{{'}x{}'} \cdot \mathbf{{'}y{}'})^2 - 4\lVert \mathbf{{'}x{}'} \rVert^2 \lVert \mathbf{{'}y{}'} \rVert^2 \leq 0$
+$4(\mathbf{x} \cdot \mathbf{y})^2 - 4\lVert \mathbf{x} \rVert^2 \lVert \mathbf{y} \rVert^2 \leq 0$
 
 Therefore
-$(\mathbf{{'}x{}'} \cdot \mathbf{{'}y{}'})^2 \leq \lVert \mathbf{{'}x{}'} \rVert^2 \lVert \mathbf{{'}y{}'} \rVert^2$And
+$(\mathbf{x} \cdot \mathbf{y})^2 \leq \lVert \mathbf{x} \rVert^2 \lVert \mathbf{y} \rVert^2$And
 taking square roots gives the result.
 
 Equality holds iff $\Delta = 0$Which means $f(t)$ has a double root, i.e., there exists $t_0$ such
-that $\mathbf{{'}x{}'} + t_0 \mathbf{{'}y{}'} = \mathbf{{'}0{}'}$Meaning $\mathbf{{'}x{}'}$ and
-$\mathbf{{'}y{}'}$ are linearly dependent.
+that $\mathbf{x} + t_0 \mathbf{y} = \mathbf{0}$Meaning $\mathbf{x}$ and
+$\mathbf{y}$ are linearly dependent.
 
 _If you get this wrong, revise: Section 7.2 (Cauchy--Schwarz Inequality)._
 
@@ -2311,9 +2311,9 @@ _If you get this wrong, revise: Section 5.4 (Cayley--Hamilton Theorem)._
 </details>
 
 **Problem 20.** Let
-$T : \mathcal{{'}P{}'}_2(\mathbb{{'}R{}'}) \to \mathcal{{'}P{}'}_2(\mathbb{{'}R{}'})$ be defined by
+$T : \mathcal{P}_2(\mathbb{R}) \to \mathcal{P}_2(\mathbb{R})$ be defined by
 $T(p) = p'$ (the derivative). Find the matrix of $T$ with respect to the basis
-$\mathcal{{'}B{}'} = \{1, x, x^2\}$And determine $\ker(T)$ and $\mathrm{im{}(T)$.
+$\mathcal{B} = \{1, x, x^2\}$And determine $\ker(T)$ and $\mathrm{im(T)$.
 
 <details>
 <summary>Solution</summary>
@@ -2327,14 +2327,14 @@ $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$.
 $T(x^2) = 2x = 0 \cdot 1 + 2 \cdot x + 0 \cdot x^2$So coordinates are
 $\begin{pmatrix} 0 \\ 2 \\ 0 \end{pmatrix}$.
 
-$$[T]_{\mathcal{{'}B{}'}} = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 2 \\ 0 & 0 & 0 \end{pmatrix}$$
+$$[T]_{\mathcal{B}} = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 2 \\ 0 & 0 & 0 \end{pmatrix}$$
 
-$\ker(T) = \{p : p' = 0\} = \mathrm{span{}\{1\}$So $\dim(\ker(T)) = 1$.
+$\ker(T) = \{p : p' = 0\} = \mathrm{span\{1\}$So $\dim(\ker(T)) = 1$.
 
-$\mathrm{im{}(T) = \{p' : p \in \mathcal{{'}P{}'}_2\} = \mathrm{span{}\{1, x\}$So
-$\dim(\mathrm{im{}(T)) = 2$.
+$\mathrm{im(T) = \{p' : p \in \mathcal{P}_2\} = \mathrm{span\{1, x\}$So
+$\dim(\mathrm{im(T)) = 2$.
 
-Verify: $\dim(\ker(T)) + \dim(\mathrm{im{}(T)) = 1 + 2 = 3 = \dim(\mathcal{{'}P{}'}_2)$.
+Verify: $\dim(\ker(T)) + \dim(\mathrm{im(T)) = 1 + 2 = 3 = \dim(\mathcal{P}_2)$.
 $\blacksquare$
 
 _If you get this wrong, revise: Section 6.2 (Matrix Representation) and Section 6.4 (Rank-Nullity)._

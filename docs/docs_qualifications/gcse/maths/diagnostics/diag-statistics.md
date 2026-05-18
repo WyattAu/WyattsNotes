@@ -30,7 +30,7 @@ and estimate the median. (d) Explain why the mean is only an estimate.
 
 (a) Using midpoints: 10, 30, 50, 70, 90.
 
-$\text{Estimated mean{} = \frac{10 \times 4 + 30 \times 11 + 50 \times 18 + 70 \times 20 + 90 \times 7}{60}$
+$\text{Estimated mean = \frac{10 \times 4 + 30 \times 11 + 50 \times 18 + 70 \times 20 + 90 \times 7}{60}$
 
 $= \frac{40 + 330 + 900 + 1400 + 630}{60} = \frac{3300}{60} = 55$ marks.
 
@@ -70,7 +70,7 @@ approximately **158 cm**. Upper quartile (60th value): approximately **169 cm**.
 
 (c) Interquartile range $= 169 - 158 = 11$ cm.
 
-(d) An outlier is defined as a value more than $1.5 \times \text{IQR{}$ below Q1 or above Q3.
+(d) An outlier is defined as a value more than $1.5 \times \text{IQR$ below Q1 or above Q3.
 $1.5 \times 11 = 16.5$. Upper fence $= 169 + 16.5 = 185.5$ cm. $182 \lt 185.5$So 182 cm is **not**
 an outlier.
 
@@ -193,16 +193,16 @@ drawn without replacement, calculate the probability that exactly 2 are red.
 
 **Solution:**
 
-(a) Total counters $= r + b = n$. $P(\text{two red{}) = \frac{r(r-1)}{n(n-1)} = \frac{1}{6}$.
-$P(\text{two blue{}) = \frac{b(b-1)}{n(n-1)} = \frac{1}{3}$.
+(a) Total counters $= r + b = n$. $P(\text{two red) = \frac{r(r-1)}{n(n-1)} = \frac{1}{6}$.
+$P(\text{two blue) = \frac{b(b-1)}{n(n-1)} = \frac{1}{3}$.
 
-(b) From $P(\text{two red{})$: $6r(r-1) = n(n-1)$. From $P(\text{two blue{})$: $3b(b-1) = n(n-1)$.
+(b) From $P(\text{two red)$: $6r(r-1) = n(n-1)$. From $P(\text{two blue)$: $3b(b-1) = n(n-1)$.
 So $6r(r-1) = 3b(b-1)$Giving $2r(r-1) = b(b-1)$.
 
-Also: $\frac{1}{6} + \frac{1}{3} + P(\text{one of each{}) = 1$So
-$P(\text{one of each{}) = 1 - \frac{1}{6} - \frac{1}{3} = \frac{1}{2}$.
+Also: $\frac{1}{6} + \frac{1}{3} + P(\text{one of each) = 1$So
+$P(\text{one of each) = 1 - \frac{1}{6} - \frac{1}{3} = \frac{1}{2}$.
 
-$P(\text{one of each{}) = \frac{2rb}{n(n-1)} = \frac{1}{2}$.
+$P(\text{one of each) = \frac{2rb}{n(n-1)} = \frac{1}{2}$.
 
 From $6r(r-1) = n(n-1)$ and $\frac{2rb}{n(n-1)} = \frac{1}{2}$: $\frac{2rb}{6r(r-1)} = \frac{1}{2}$.
 $\frac{b}{3(r-1)} = \frac{1}{2}$. $2b = 3(r-1)$. $b = \frac{3r - 3}{2}$.
@@ -214,16 +214,16 @@ $8r(r-1) = (3r-3)(3r-5) = 9r^2 - 24r + 15$.
 
 $8r^2 - 8r = 9r^2 - 24r + 15$. $r^2 - 16r + 15 = 0$. $(r-1)(r-15) = 0$.
 
-$r = 15$ (since $r = 1$ gives $b = 0$But then $P(\text{two blue{}) = 0$Not $1/3$).
+$r = 15$ (since $r = 1$ gives $b = 0$But then $P(\text{two blue) = 0$Not $1/3$).
 
 $b = (45 - 3)/2 = 21$. Total $n = 36$.
 
 Check:
-$P(\text{two red{}) = \frac{15 \times 14}{36 \times 35} = \frac{210}{1260} = \frac{1}{6} \checkmark$.
-$P(\text{two blue{}) = \frac{21 \times 20}{36 \times 35} = \frac{420}{1260} = \frac{1}{3} \checkmark$.
+$P(\text{two red) = \frac{15 \times 14}{36 \times 35} = \frac{210}{1260} = \frac{1}{6} \checkmark$.
+$P(\text{two blue) = \frac{21 \times 20}{36 \times 35} = \frac{420}{1260} = \frac{1}{3} \checkmark$.
 
 (c)
-$P(\text{one of each{}) = \frac{15 \times 21}{36 \times 35} \times 2 = \frac{630}{1260} = \frac{1}{2}$.
+$P(\text{one of each) = \frac{15 \times 21}{36 \times 35} \times 2 = \frac{630}{1260} = \frac{1}{2}$.
 
 (d)
-$P(\text{exactly 2 red in 3{}) = \frac{\binom{15}{2} \times \binom{21}{1}}{\binom{36}{3}} = \frac{105 \times 21}{7140} = \frac{2205}{7140} = \frac{441}{1428} = \frac{147}{476} \approx 0.309$.
+$P(\text{exactly 2 red in 3) = \frac{\binom{15}{2} \times \binom{21}{1}}{\binom{36}{3}} = \frac{105 \times 21}{7140} = \frac{2205}{7140} = \frac{441}{1428} = \frac{147}{476} \approx 0.309$.

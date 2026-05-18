@@ -221,13 +221,13 @@ When asked to design an experiment, address:
 - **Independent:** length of pendulum, $L$ (varied from 0.20 m to 1.00 m in 0.10 m steps)
 - **Dependent:** period of oscillation, $T$ (measured by timing 20 oscillations with a digital
   stopwatch)
-- **Control:** mass of bob, amplitude of swing ($\lt{} 5^\circ$), string material
+- **Control:** mass of bob, amplitude of swing ($\lt 5^\circ$), string material
 
 **Method:**
 
 1. Set up a retort stand with a clamp. Attach a piece of inextensible string and a pendulum bob.
 2. Measure the length $L$ from the point of suspension to the centre of the bob using a metre rule.
-3. Displace the bob by a small angle ($\lt{} 5^\circ$) and release it.
+3. Displace the bob by a small angle ($\lt 5^\circ$) and release it.
 4. Time 20 complete oscillations using a digital stopwatch. Divide by 20 to find $T$.
 5. Repeat for each length. Take three readings at each length and calculate a mean $T$.
 6. Plot $T^2$ against $L$. The gradient is $4\pi^2/g$.

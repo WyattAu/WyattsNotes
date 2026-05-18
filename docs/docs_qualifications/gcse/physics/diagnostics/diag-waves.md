@@ -137,7 +137,7 @@ distance at a higher speed.
 1800 MHz. (a) Calculate the wavelength of the microwaves. (b) Calculate the time for a signal to
 travel from the phone to the tower. (c) The phone transmits at a power of 1 W. If the signal spreads
 out equally in all directions, calculate the intensity at the tower (assume the signal is captured
-by a receiver area of $0.5 \text{ m{}^2$). (d) Explain why microwave signals are used for mobile
+by a receiver area of $0.5 \text{ m^2$). (d) Explain why microwave signals are used for mobile
 communication rather than radio waves.
 
 **Solution:**
@@ -149,7 +149,7 @@ m.
 
 (c) Intensity at distance 5 km:
 $I = P/(4\pi r^2) = 1/(4\pi \times 25,000,000) = 1/314,159,265 = 3.18 \times 10^{-9}$ W/m$^2$. Power
-captured by $0.5 \text{ m{}^2$ receiver $= 3.18 \times 10^{-9} \times 0.5 = 1.59 \times 10^{-9}$ W
+captured by $0.5 \text{ m^2$ receiver $= 3.18 \times 10^{-9} \times 0.5 = 1.59 \times 10^{-9}$ W
 $= 1.59$ nW.
 
 (d) Microwaves offer a balance between range and data capacity: (1) Higher frequency than radio

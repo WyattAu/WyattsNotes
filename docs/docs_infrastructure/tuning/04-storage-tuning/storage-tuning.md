@@ -745,7 +745,7 @@ Every storage medium has a specified UBER — the probability of an unrecoverabl
 While these numbers seem reassuring, they compound in large-scale deployments:
 
 $$
-P(\mathrm{error in array{}) = 1 - (1 - UBER)^{N_{drives} \times N_{reads}}
+P(\mathrm{error in array) = 1 - (1 - UBER)^{N_{drives} \times N_{reads}}
 $$
 
 This is why ZFS checksumming is essential — it detects and corrects these errors that would
@@ -756,27 +756,27 @@ Otherwise cause silent data corruption.
 Wear leveling effectiveness determines SSD lifespan:
 
 $$
-\mathrm{Minimum Lifespan{} = \frac{\mathrm{Total Writes{}}{\mathrm{P/E Cycles{} \times \mathrm{Capacity{}}
+\mathrm{Minimum Lifespan = \frac{\mathrm{Total Writes}{\mathrm{P/E Cycles \times \mathrm{Capacity}
 $$
 
 For a 2 TB TLC SSD with 3,000 P/E cycles and a sustained write rate of 50 GB/day:
 
 $$
-\mathrm{Lifespan{} = \frac{3000 \times 2 \mathrm{ TB{}}{50 \mathrm{ GB/day{}} = 120,000 \mathrm{ days{} \approx 328 \mathrm{ years{}
+\mathrm{Lifespan = \frac{3000 \times 2 \mathrm{ TB}{50 \mathrm{ GB/day} = 120,000 \mathrm{ days \approx 328 \mathrm{ years
 $$
 
 In practice, write amplification (WAF 1.2–3.0) and real-world write patterns reduce this
 Significantly. A more realistic estimate with WAF of 2.0:
 
 $$
-\mathrm{Lifespan{} = \frac{3000 \times 2 \mathrm{ TB{}}{2.0 \times 50 \mathrm{ GB/day{}} \approx 164 \mathrm{ years{}
+\mathrm{Lifespan = \frac{3000 \times 2 \mathrm{ TB}{2.0 \times 50 \mathrm{ GB/day} \approx 164 \mathrm{ years
 $$
 
 Modern TLC SSDs are extremely durable for typical workloads. QLC SSDs (100–1,000 P/E cycles) are the
 Concern — at 500 P/E cycles and 50 GB/day with WAF 2.0:
 
 $$
-\mathrm{Lifespan{} = \frac{500 \times 2 \mathrm{ TB{}}{2.0 \times 50 \mathrm{ GB/day{}} \approx 27 \mathrm{ years{}
+\mathrm{Lifespan = \frac{500 \times 2 \mathrm{ TB}{2.0 \times 50 \mathrm{ GB/day} \approx 27 \mathrm{ years
 $$
 
 Still long for typical desktop use, but write-heavy workloads (video editing, VM images) can
@@ -814,7 +814,7 @@ The optimal L2ARC size depends on the ARC size and the working set:
 L2ARC metadata is stored in the ARC, consuming RAM proportional to the number of L2ARC entries:
 
 $$
-ARC_{metadata} \approx 70 \mathrm{ bytes{} \times \mathrm{L2ARC\_entries{}
+ARC_{metadata} \approx 70 \mathrm{ bytes \times \mathrm{L2ARC\_entries
 $$
 
 For a 1 TB L2ARC with 4 KB average block size, this is approximately 17.5 GB of ARC metadata. Ensure

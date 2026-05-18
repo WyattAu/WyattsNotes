@@ -358,7 +358,7 @@ $$\dbinom{8}{5} = \dbinom{8}{3} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1
 
 ## Common Pitfalls
 
-1. **Confusing permutations with combinations.** Use permutations (${}_nP_r$) when order matters
+1. **Confusing permutations with combinations.** Use permutations ($_nP_r$) when order matters
    (e.g. Arranging people in a line) and combinations ($\dbinom{n}{r}$) when order does not matter
    (e.g. Selecting a committee). Ask yourself: does swapping two selected items create a new
    outcome?

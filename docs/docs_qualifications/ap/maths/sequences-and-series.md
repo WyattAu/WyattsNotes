@@ -16,7 +16,7 @@ slug: sequences-and-series
 
 A **sequence** is an ordered list of numbers: $a_1, a_2, a_3, \ldots$. Formally, a sequence is a
 Function from the positive integers (or a subset thereof) to the real numbers:
-$a \colon \mathbb{{'}N{}'} \to \mathbb{{'}R{}'}$Written as $\{a_n\}_{n=1}^{\infty}$ or $\{a_n\}$.
+$a \colon \mathbb{N} \to \mathbb{R}$Written as $\{a_n\}_{n=1}^{\infty}$ or $\{a_n\}$.
 
 A sequence $\{a_n\}$ **converges** to a limit $L$ if:
 
@@ -241,7 +241,7 @@ $$
 If $f$ is continuous, positive, and decreasing on $[1, \infty)$And $a_n = f(n)$Then:
 
 $$
-\sum_{n=1}^{\infty} a_n \quad \mathrm{and{} \quad \int_1^{\infty} f(x)\, dx
+\sum_{n=1}^{\infty} a_n \quad \mathrm{and \quad \int_1^{\infty} f(x)\, dx
 $$
 
 Either both converge or both diverge.
@@ -509,11 +509,11 @@ Interval of convergence: $[0, 2)$.
 If $\displaystyle f(x) = \sum_{n=0}^{\infty} c_n(x-a)^n$ with radius $R$Then:
 
 $$
-F'(x) = \sum_{n=1}^{\infty} n c_n (x-a)^{n-1}, \quad \mathrm{same radius {} R
+F'(x) = \sum_{n=1}^{\infty} n c_n (x-a)^{n-1}, \quad \mathrm{same radius  R
 $$
 
 $$
-\int f(x)\, dx = C + \sum_{n=0}^{\infty} \frac{c_n (x-a)^{n+1}}{n+1}, \quad \mathrm{same radius {} R
+\int f(x)\, dx = C + \sum_{n=0}^{\infty} \frac{c_n (x-a)^{n+1}}{n+1}, \quad \mathrm{same radius  R
 $$
 
 Differentiation and integration of power series do not change the radius of convergence (though the

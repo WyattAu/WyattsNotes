@@ -148,9 +148,9 @@ _Base case ($d = 0$)._ $s$ is at distance 0 and is discovered at distance 0.
 
 _Inductive step._ Assume all vertices at distance $d$ are discovered at distance $d$. When a vertex
 $u$ at distance $d$ is dequeued, all unvisited neighbours $v$ are at distance at most $d + 1$ (by
-Edge relaxation). If $v$ were at distance $\lt{} d + 1$It would have been discovered earlier (by The
+Edge relaxation). If $v$ were at distance $\lt d + 1$It would have been discovered earlier (by The
 inductive hypothesis or a previous BFS level). So $v$ is at distance exactly $d + 1$ and is
-Discovered at that distance. No vertex can be discovered at distance $\gt{} d + 1$ through $u$ Since
+Discovered at that distance. No vertex can be discovered at distance $\gt d + 1$ through $u$ Since
 each edge adds exactly 1 to the path length. $\square$
 
 **Complexity:** $O(V + E)$ — each vertex is visited once, each edge is examined at most twice (once
@@ -232,12 +232,12 @@ $\mathrm{dist}[u] = d(s, u)$.
 _Base case._ $s$ is extracted first with $\mathrm{dist}[s] = 0 = d(s, s)$. ✓
 
 _Inductive step._ Let $u$ be the next vertex extracted. Assume for contradiction that
-$\mathrm{dist}[u] \gt{} d(s, u)$. Then there exists a shortest path $P$ from $s$ to $u$. Let $x$ be
+$\mathrm{dist}[u] \gt d(s, u)$. Then there exists a shortest path $P$ from $s$ to $u$. Let $x$ be
 The first vertex on $P$ not in $S$And let $y$ be the predecessor of $x$ on $P$ ($y \in S$). Then:
 
 $$\mathrm{dist}[x] \leq \mathrm{dist}[y] + w(y, x) = d(s, y) + w(y, x) = d(s, x) \leq d(s, u) < \mathrm{dist}[u]$$
 
-Since $\mathrm{dist}[x] \lt{} \mathrm{dist}[u]$$x$ would have been extracted from the priority Queue
+Since $\mathrm{dist}[x] \lt \mathrm{dist}[u]$$x$ would have been extracted from the priority Queue
 before $u$ — contradiction. Therefore $\mathrm{dist}[u] = d(s, u)$. $\square$
 
 **Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$

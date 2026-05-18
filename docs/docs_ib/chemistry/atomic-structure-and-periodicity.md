@@ -36,7 +36,7 @@ $$
 Where $N$ is the neutron number.
 
 **Definition.** A **nuclide** is a specific atom characterised by its atomic number, mass number,
-And energy state, denoted as $\prescript{A}{}{Z}\mathrm{X}$.
+And energy state, denoted as $\prescript{A}{Z}\mathrm{X}$.
 
 ### Isotopes
 
@@ -938,8 +938,8 @@ Molecule with one bromine atom shows an $\mathrm{M}$ and $\mathrm{M}+2$ peak in 
 
 Chlorobenzene ($\mathrm{C}_6\mathrm{H}_5\mathrm{Cl}$) shows:
 
-- $\mathrm{M}^+$ at $m/z = 112$ ($\mathrm{C}_6\mathrm{H}_5{}^{35}\mathrm{Cl}$)
-- $\mathrm{M}+2$ at $m/z = 114$ ($\mathrm{C}_6\mathrm{H}_5{}^{37}\mathrm{Cl}$)
+- $\mathrm{M}^+$ at $m/z = 112$ ($\mathrm{C}_6\mathrm{H}_5^{35}\mathrm{Cl}$)
+- $\mathrm{M}+2$ at $m/z = 114$ ($\mathrm{C}_6\mathrm{H}_5^{37}\mathrm{Cl}$)
 - Ratio of peak heights: approximately $3:1$
 
 :::

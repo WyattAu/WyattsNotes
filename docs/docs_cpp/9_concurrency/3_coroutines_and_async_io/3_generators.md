@@ -40,7 +40,7 @@ Are computed lazily on demand.
 The expression `co_yield expr` is defined by the standard as [N4950 §8.5.5]:
 
 $$
-\mathrm{co\_yield{} \; \mathrm{expr{} \;\equiv\; \mathrm{co\_await{} \; \mathrm{promise.yield\_value{}(\mathrm{expr{})
+\mathrm{co\_yield \; \mathrm{expr \;\equiv\; \mathrm{co\_await \; \mathrm{promise.yield\_value(\mathrm{expr)
 $$
 
 This means that `co_yield` requires the promise type to have a `yield_value` method that returns an
@@ -54,7 +54,7 @@ Iterator is advanced. This makes generators suitable for representing potentiall
 Sequences, large data pipelines, or expensive computations where only a prefix of the results is
 Needed.
 
-The memory usage of a generator is $\mathcal{{'}O{}'}(d)$ where $d$ is the depth of the coroutine's
+The memory usage of a generator is $\mathcal{O}(d)$ where $d$ is the depth of the coroutine's
 local Variable state that crosses a suspend point — constant and independent of the number of Values
 produced.
 
@@ -416,7 +416,7 @@ int main() {
 | Coroutine frame allocation | 1 heap allocation per `std::generator` creation  |
 | Frame size                 | ~100–300 bytes (depends on local variables)      |
 | Resume/suspend overhead    | ~10–50ns (comparable to a virtual function call) |
-| Memory usage (per element) | $\mathcal{{'}O{}'}(1)$ — no accumulation         |
+| Memory usage (per element) | $\mathcal{O}(1)$ — no accumulation         |
 | Cache behavior             | Poor if frame is large and accessed infrequently |
 
 :::warning Heap allocation. Every `std::generator` coroutine frame is heap-allocated. For

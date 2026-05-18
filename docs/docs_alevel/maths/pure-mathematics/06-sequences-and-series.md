@@ -241,7 +241,7 @@ $$\frac{a + b}{2} \geq \sqrt{ab}$$
 
 Equality holds if and only if $a = b$.
 
-_Proof._ Since $a, b \gt{} 0$Both $\sqrt{a}$ and $\sqrt{b}$ are real numbers. For any real number
+_Proof._ Since $a, b \gt 0$Both $\sqrt{a}$ and $\sqrt{b}$ are real numbers. For any real number
 $x$We have $x^2 \geq 0$. In particular:
 
 $$(\sqrt{a} - \sqrt{b})^2 \geq 0$$
@@ -266,7 +266,7 @@ Using the two-variable result as the base) is beyond A-level scope.
 
 <details>
 <summary>Example</summary>
-Find the minimum value of $x + \frac{4}{x}$ for $x \gt{} 0$.
+Find the minimum value of $x + \frac{4}{x}$ for $x \gt 0$.
 
 By AM-GM with $a = x$ and $b = \frac{4}{x}$ (both positive):
 
@@ -274,7 +274,7 @@ $$\frac◆LB◆x + \frac{4}{x}◆RB◆◆LB◆2◆RB◆ \geq \sqrt◆LB◆x \cdo
 
 So $x + \frac{4}{x} \geq 4$.
 
-Equality when $x = \frac{4}{x}$I.e., $x^2 = 4$So $x = 2$ (since $x \gt{} 0$).
+Equality when $x = \frac{4}{x}$I.e., $x^2 = 4$So $x = 2$ (since $x \gt 0$).
 
 Minimum value is 4, achieved at $x = 2$.
 
@@ -405,7 +405,7 @@ $$S_n = \frac{a - [a+(n-1)d]\,r^n}{1-r} + \frac{dr(1 - r^{n-1})}{(1-r)^2} \quad 
 
 ### 8.2 Sum to Infinity
 
-When $|r| \lt{} 1$Both $r^n \to 0$ and $r^{n-1} \to 0$ as $n \to \infty$:
+When $|r| \lt 1$Both $r^n \to 0$ and $r^{n-1} \to 0$ as $n \to \infty$:
 
 $$S_\infty = \frac{a}{1 - r} + \frac{dr}{(1-r)^2}$$
 
@@ -418,7 +418,7 @@ The sequence of discounted salaries is an arithmetic-geometric sequence:
 - AP part: $a = 30000$$d = 1500$
 - GP part: $r = 0.9$
 
-Since $|r| \lt{} 1$:
+Since $|r| \lt 1$:
 
 $$S_\infty = \frac{30000}{1 - 0.9} + \frac◆LB◆1500 \times 0.9◆RB◆◆LB◆(1 - 0.9)^2◆RB◆$$
 
@@ -694,12 +694,12 @@ This is the formula for $n + 1$. ✓ $\blacksquare$
 
 <hr />
 
-**Problem 11.** Given that $x \gt{} 0$Find the minimum value of $x^2 + \frac{9}{x^2}$ and state The
+**Problem 11.** Given that $x \gt 0$Find the minimum value of $x^2 + \frac{9}{x^2}$ and state The
 value of $x$ at which it occurs.
 
 <details>
 <summary>Solution</summary>
-By AM-GM with $a = x^2$ and $b = \frac{9}{x^2}$ (both positive since $x \gt{} 0$):
+By AM-GM with $a = x^2$ and $b = \frac{9}{x^2}$ (both positive since $x \gt 0$):
 
 $$\frac◆LB◆x^2 + \frac{9}{x^2}◆RB◆◆LB◆2◆RB◆ \geq \sqrt◆LB◆x^2 \cdot \frac{9}{x^2}◆RB◆ = \sqrt{9} = 3$$
 
@@ -752,7 +752,7 @@ Identify the components:
 - AP part: first term $a = 1$Common difference $d = 3$ (since $4 - 1 = 3$$7 - 4 = 3$Etc.)
 - GP part: common ratio $r = \frac{1}{2}$
 
-Since $|r| \lt{} 1$The sum to infinity converges:
+Since $|r| \lt 1$The sum to infinity converges:
 
 $$S_\infty = \frac{a}{1 - r} + \frac{dr}{(1-r)^2}$$
 

@@ -268,7 +268,7 @@ Water ($\rho = 1000 \mathrm{ kg m}^{-3}$).
 
 > **Exam Tip:** A common IB question asks whether an object will float or sink. Compare the average
 > density of the object to the density of the fluid. If
-> $\rho_{\mathrm{object}} \lt{} \rho_{\mathrm{fluid}}$It floats.
+> $\rho_{\mathrm{object}} \lt \rho_{\mathrm{fluid}}$It floats.
 
 ---
 

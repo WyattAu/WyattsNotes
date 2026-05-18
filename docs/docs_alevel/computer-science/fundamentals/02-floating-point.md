@@ -187,7 +187,7 @@ $$\mathrm{Absolute Error} = |x - \tilde{x}|$$
 
 $$\mathrm{Relative Error} = \frac◆LB◆|x - \tilde{x}|◆RB◆◆LB◆|x|◆RB◆$$
 
-**Machine epsilon** ($\epsilon$) is the smallest number such that $1 + \epsilon \gt{} 1$ in
+**Machine epsilon** ($\epsilon$) is the smallest number such that $1 + \epsilon \gt 1$ in
 Floating-point arithmetic. For IEEE 754 single precision,
 $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 
@@ -199,7 +199,7 @@ $\epsilon = 2^{-23} \approx 1.19 \times 10^{-7}$.
 4. **Accumulation error:** Errors compound over many operations
 
 :::warning Pitfall Never use `==` to compare floating-point numbers. Instead, check if
-$|a - b| \lt{} \epsilon$ for some tolerance. :::
+$|a - b| \lt \epsilon$ for some tolerance. :::
 
 <hr />
 
@@ -539,8 +539,8 @@ Arithmetic rules:
 
 | Operation                 | Result    |
 | ------------------------- | --------- |
-| $x / 0$ (for $x \gt{} 0$) | $+\infty$ |
-| $x / 0$ (for $x \lt{} 0$) | $-\infty$ |
+| $x / 0$ (for $x \gt 0$) | $+\infty$ |
+| $x / 0$ (for $x \lt 0$) | $-\infty$ |
 | $\infty + \infty$         | $+\infty$ |
 | $\infty - \infty$         | NaN       |
 | $\infty \times \infty$    | $+\infty$ |
@@ -715,7 +715,7 @@ def quadratic(a, b, c):
 
 **Problem: Catastrophic cancellation.** When $4ac$ is small compared to $b^2$The discriminant is
 Close to $b^2$. Then $\sqrt{b^2 - 4ac} \approx |b|$And one of the numerators becomes $-b + |b|$ or
-$-b - |b|$. If $b \gt{} 0$Then $-b + \sqrt{b^2 - 4ac}$ subtracts nearly equal numbers, losing
+$-b - |b|$. If $b \gt 0$Then $-b + \sqrt{b^2 - 4ac}$ subtracts nearly equal numbers, losing
 Precision.
 
 **Fix:** Compute one root with the standard formula and the other using the identity
@@ -745,7 +745,7 @@ To $1.0$Produces a result different from $1.0$? Explain why.
 <summary>Answer</summary>
 
 This is the definition of **machine epsilon**: the smallest $\epsilon$ such that
-$1 + \epsilon \gt{} 1$.
+$1 + \epsilon \gt 1$.
 
 In single precision, the mantissa has 23 bits. The value $1.0$ is represented as
 $1.000\ldots0 \times 2^0$. The next representable number is $1.000\ldots01 \times 2^0$Where the Last

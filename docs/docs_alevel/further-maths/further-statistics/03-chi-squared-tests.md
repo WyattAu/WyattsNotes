@@ -482,7 +482,7 @@ This reduces the test statistic, making it harder to reject $H_0$.
 ### 5.2 When to apply Yates' correction
 
 - Apply it to $2 \times 2$ contingency tables
-- It is most important when the total sample size is small ( $n \lt{} 40$) or when any expected
+- It is most important when the total sample size is small ( $n \lt 40$) or when any expected
   frequency is below 10
 - Some exam boards require it for all $2 \times 2$ tables; check the specific mark scheme
 - Do **not** apply it to tables larger than $2 \times 2$
@@ -516,7 +516,7 @@ $$= \frac{25 + 4 + 0 + 4 + 25 + 0}{20} = \frac{58}{20} = 2.9$$
 
 $\nu = 6 - 1 = 5$. Critical value: $\chi^2_{0.05,\,5} = 11.07$.
 
-Since $2.9 \lt{} 11.07$**do not reject** $H_0$. There is insufficient evidence that the die is
+Since $2.9 \lt 11.07$**do not reject** $H_0$. There is insufficient evidence that the die is
 Biased.
 
 ### 6.2 Goodness of fit: genetic ratios
@@ -538,7 +538,7 @@ $$\approx 0.056 + 0.007 + 1.500 + 1.620 = 3.183$$
 
 $\nu = 4 - 1 = 3$. Critical value: $\chi^2_{0.05,\,3} = 7.815$.
 
-Since $3.183 \lt{} 7.815$**do not reject** $H_0$. The data is consistent with the 9:3:3:1 ratio.
+Since $3.183 \lt 7.815$**do not reject** $H_0$. The data is consistent with the 9:3:3:1 ratio.
 
 ### 6.3 Test for independence: smoking and disease
 
@@ -737,7 +737,7 @@ $= \dfrac{144 + 4 + 0 + 16 + 16 + 100}{40} = \dfrac{280}{40} = 7.0$.
 
 $\nu = 5$. Critical value: $\chi^2_{0.05,\,5} = 11.07$.
 
-$7.0 \lt{} 11.07$: **do not reject** $H_0$.
+$7.0 \lt 11.07$: **do not reject** $H_0$.
 
 Contributions: face 1 contributes $144/40 = 3.6$Face 6 contributes $100/40 = 2.5$. These two faces
 Account for $6.1$ out of $7.0$ (87% of the statistic).
@@ -766,7 +766,7 @@ $\approx 1.251 + 0.241 + 0.188 + 0.570 + 0.079 = 2.329$
 
 $\nu = 5 - 1 - 1 = 3$. Critical value: $\chi^2_{0.05,\,3} = 7.815$.
 
-$2.329 \lt{} 7.815$: **do not reject** $H_0$.
+$2.329 \lt 7.815$: **do not reject** $H_0$.
 
 </details>
 
@@ -855,7 +855,7 @@ $H_0$: Data follows a normal distribution. $H_1$: Data does not follow a normal 
 
 Critical value: $\chi^2_{0.05,\,4} = 9.488$.
 
-$8.5 \lt{} 9.488$: **do not reject** $H_0$. Insufficient evidence to conclude the data is
+$8.5 \lt 9.488$: **do not reject** $H_0$. Insufficient evidence to conclude the data is
 Non-normal.
 
 The degrees of freedom calculation accounts for the fact that estimating parameters from the data

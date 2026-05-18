@@ -141,8 +141,8 @@ Tells you the direction of motion, and the **steepness** tells you the speed.
 - **Zero gradient (horizontal)**: particle is instantaneously at rest ($v = 0$). This may be a
   turning point.
 - **Negative gradient**: particle moves in the negative direction.
-- **Concave-up curve** ($\frac{d^2s}{dt^2} \gt{} 0$): acceleration is positive.
-- **Concave-down curve** ($\frac{d^2s}{dt^2} \lt{} 0$): acceleration is negative.
+- **Concave-up curve** ($\frac{d^2s}{dt^2} \gt 0$): acceleration is positive.
+- **Concave-down curve** ($\frac{d^2s}{dt^2} \lt 0$): acceleration is negative.
 
 A common mistake is assuming a particle is at rest only when $s = 0$. In fact, the particle is at
 Rest whenever the **gradient** is zero, regardless of the displacement value.
@@ -172,9 +172,9 @@ Given by $s = t^3 - 9t^2 + 24t$.
 The velocity is $v = ds/dt = 3t^2 - 18t + 24 = 3(t^2 - 6t + 8) = 3(t-2)(t-4)$.
 
 - $v = 0$ at $t = 2$ and $t = 4$: the particle is instantaneously at rest at these times.
-- For $0 \lt{} t \lt{} 2$: $v \gt{} 0$ (moving in positive direction).
-- For $2 \lt{} t \lt{} 4$: $v \lt{} 0$ (moving in negative direction — it has reversed).
-- For $t \gt{} 4$: $v \gt{} 0$ (moving in positive direction again).
+- For $0 \lt t \lt 2$: $v \gt 0$ (moving in positive direction).
+- For $2 \lt t \lt 4$: $v \lt 0$ (moving in negative direction — it has reversed).
+- For $t \gt 4$: $v \gt 0$ (moving in positive direction again).
 
 The acceleration is $a = dv/dt = 6t - 18 = 6(t - 3)$.
 
@@ -265,10 +265,10 @@ $$h = v\sin\theta \cdot t - \frac{1}{2}gt^2 \implies \frac{1}{2}gt^2 - v\sin\the
 
 $$t = \frac◆LB◆v\sin\theta \pm \sqrt{(v\sin\theta)^2 - 2gh}◆RB◆◆LB◆g◆RB◆$$
 
-- If $(v\sin\theta)^2 \gt{} 2gh$: two solutions — the projectile passes through height $h$ twice (on
+- If $(v\sin\theta)^2 \gt 2gh$: two solutions — the projectile passes through height $h$ twice (on
   the way up and on the way down).
 - If $(v\sin\theta)^2 = 2gh$: one solution — $h$ is the maximum height.
-- If $(v\sin\theta)^2 \lt{} 2gh$: no real solution — the projectile never reaches height $h$.
+- If $(v\sin\theta)^2 \lt 2gh$: no real solution — the projectile never reaches height $h$.
 
 ### 4.9 Projectiles launched from a height
 
@@ -281,7 +281,7 @@ $$\frac{1}{2}gt^2 - v\sin\theta \cdot t - H = 0$$
 
 $$t = \frac◆LB◆v\sin\theta + \sqrt{(v\sin\theta)^2 + 2gH}◆RB◆◆LB◆g◆RB◆$$
 
-(We take the positive root since $t \gt{} 0$.)
+(We take the positive root since $t \gt 0$.)
 
 The horizontal range is then $R = v\cos\theta \cdot t$.
 
@@ -474,7 +474,7 @@ Show that the maximum range of a projectile on level ground is achieved at $45^\
 <summary>Solution 6</summary>
 $R = \dfrac◆LB◆v^2 \sin 2\theta◆RB◆◆LB◆g◆RB◆$. To maximise: $\dfrac◆LB◆dR◆RB◆◆LB◆d\theta◆RB◆ = \dfrac◆LB◆2v^2 \cos 2\theta◆RB◆◆LB◆g◆RB◆ = 0 \implies \cos 2\theta = 0 \implies 2\theta = 90° \implies \theta = 45^\circ$.
 
-$\dfrac◆LB◆d^2R◆RB◆◆LB◆d\theta^2◆RB◆ = -\dfrac◆LB◆4v^2 \sin 2\theta◆RB◆◆LB◆g◆RB◆ \lt{} 0$ at
+$\dfrac◆LB◆d^2R◆RB◆◆LB◆d\theta^2◆RB◆ = -\dfrac◆LB◆4v^2 \sin 2\theta◆RB◆◆LB◆g◆RB◆ \lt 0$ at
 $\theta = 45^\circ$Confirming A maximum. $\blacksquare$
 
 **If you get this wrong, revise:** [Range](#46-range) — Section 4.6.
@@ -661,12 +661,12 @@ $2t^3 - 9t^2 + 12t - 5 = (t-1)(2t^2 - 7t + 5) = (t-1)(2t-5)(t-1) = (t-1)^2(2t-5)
 
 So $v = 0$ at $t = 1$ and $t = 2.5$.
 
-Check the sign of $v$: for $0 \lt{} t \lt{} 1$Test $t = 0.5$:
-$v = 0.25 - 2.25 + 6 - 5 = -1 \lt{} 0$. For $1 \lt{} t \lt{} 2.5$Test $t = 2$:
-$v = 16 - 36 + 24 - 5 = -1 \lt{} 0$. For $t \gt{} 2.5$Test $t = 3$:
-$v = 54 - 81 + 36 - 5 = 4 \gt{} 0$.
+Check the sign of $v$: for $0 \lt t \lt 1$Test $t = 0.5$:
+$v = 0.25 - 2.25 + 6 - 5 = -1 \lt 0$. For $1 \lt t \lt 2.5$Test $t = 2$:
+$v = 16 - 36 + 24 - 5 = -1 \lt 0$. For $t \gt 2.5$Test $t = 3$:
+$v = 54 - 81 + 36 - 5 = 4 \gt 0$.
 
-So $v \lt{} 0$ for $0 \lt{} t \lt{} 2.5$ and $v \gt{} 0$ for $t \gt{} 2.5$.
+So $v \lt 0$ for $0 \lt t \lt 2.5$ and $v \gt 0$ for $t \gt 2.5$.
 
 $s(2.5) = \int_0^{2.5} v\,dt = \left[\tfrac{1}{2}t^4 - 3t^3 + 6t^2 - 5t\right]_0^{2.5} = 19.531 - 46.875 + 37.5 - 12.5 = -2.344\,\mathrm{m}$.
 
@@ -731,7 +731,7 @@ $$\frac{v^2}{2} = -3s^2 + 32$$
 When $s = 1$:
 $v^2/2 = -3 + 32 = 29 \implies v^2 = 58 \implies v = \sqrt{58} \approx 7.62\,\mathrm{m/s}$.
 
-The particle is still moving in the positive direction ($v \gt{} 0$) since it has not yet reached
+The particle is still moving in the positive direction ($v \gt 0$) since it has not yet reached
 The turning point where $v = 0$ (which occurs at $s^2 = 32/3$I.e., $s \approx 3.27\,\mathrm{m}$).
 
 **If you get this wrong, revise:**
@@ -771,7 +771,7 @@ $Q$ starts at ground level ($y_Q = 0$) and must reach $y = H = u^2\sin^2\theta /
 For $Q$: $v_Q = w - gt$$y_Q = wt - \tfrac{1}{2}gt^2$Where $w$ is the projection speed.
 
 Collision at $y = H$ when $t = 0$ is impossible ($Q$ starts at $y = 0$). So collision must occur at
-Some $\Delta t \gt{} 0$ after $t_1$.
+Some $\Delta t \gt 0$ after $t_1$.
 
 At time $t_1 + \Delta t$:
 
@@ -787,7 +787,7 @@ $w = H/\Delta t$ for $\Delta t \to 0^+$But in practice we need a finite time.
 If we require collision at the highest point itself ($\Delta t \to 0$), then $w \to \infty$Which Is
 unphysical. The problem states they collide at some time after projection. Since no further
 Constraint is given, we take $w$ as a free parameter satisfying
-$w\,\Delta t = u^2\sin^2\theta / (2g)$ for some $\Delta t \gt{} 0$.
+$w\,\Delta t = u^2\sin^2\theta / (2g)$ for some $\Delta t \gt 0$.
 
 **If you get this wrong, revise:** [Projectiles](#4-projectiles) — Section 4.
 

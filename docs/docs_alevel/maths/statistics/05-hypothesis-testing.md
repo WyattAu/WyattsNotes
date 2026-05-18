@@ -37,7 +37,7 @@ Statistic, critical value/region, comparison, and conclusion in context. :::
 
 ### 1.2 One-tailed and two-tailed tests
 
-- **One-tailed:** $H_1: p \gt{} p_0$ (right-tailed) or $H_1: p \lt{} p_0$ (left-tailed).
+- **One-tailed:** $H_1: p \gt p_0$ (right-tailed) or $H_1: p \lt p_0$ (left-tailed).
 - **Two-tailed:** $H_1: p \neq p_0$.
 
 The choice depends on the research question. Use a one-tailed test only when you have a specific
@@ -121,7 +121,7 @@ Reduces Type I errors but increases Type II errors. You cannot eliminate both si
 
 Alternatively: 1–3. Same as above. 4. Calculate the **$p$-value**: the probability of obtaining a
 Result at least as extreme as the observed value, assuming $H_0$ is true. 5. If $p$-value
-$\lt{} \alpha$Reject $H_0$. Otherwise, do not reject $H_0$. 6. Conclude in context.
+$\lt \alpha$Reject $H_0$. Otherwise, do not reject $H_0$. 6. Conclude in context.
 
 <hr />
 
@@ -134,14 +134,14 @@ Whether the coin is biased towards heads.
 
 $X \sim B(20, p)$.
 
-$H_0: p = 0.5$$H_1: p \gt{} 0.5$. One-tailed, $\alpha = 0.05$.
+$H_0: p = 0.5$$H_1: p \gt 0.5$. One-tailed, $\alpha = 0.05$.
 
 Under $H_0$: $X \sim B(20, 0.5)$.
 
 Find $c$ such that $P(X \geq c) \leq 0.05$.
 
-$P(X \geq 14) = 1 - P(X \leq 13) \approx 0.0577 \gt{} 0.05$.
-$P(X \geq 15) = 1 - P(X \leq 14) \approx 0.0207 \lt{} 0.05$.
+$P(X \geq 14) = 1 - P(X \leq 13) \approx 0.0577 \gt 0.05$.
+$P(X \geq 15) = 1 - P(X \leq 14) \approx 0.0207 \lt 0.05$.
 
 Critical region: $X \geq 15$. Since $X = 15$ is in the critical region, we **reject** $H_0$.
 
@@ -156,15 +156,15 @@ There is sufficient evidence at the 5% level that the coin is biased towards hea
 **Example.** A machine fills bags with mean weight 500g. A sample of 30 bags gives $\bar{x} = 497$G.
 Test at the 5% level whether the mean weight has decreased, given $\sigma = 6$G.
 
-$H_0: \mu = 500$$H_1: \mu \lt{} 500$. $\alpha = 0.05$.
+$H_0: \mu = 500$$H_1: \mu \lt 500$. $\alpha = 0.05$.
 
 Under $H_0$: $\bar{X} \sim N(500, 6^2/30) = N(500, 1.2)$.
 
 $z = \dfrac◆LB◆497 - 500◆RB◆◆LB◆\sqrt{1.2}◆RB◆ = \dfrac{-3}{1.0954} = -2.739$.
 
-Critical value: $P(Z \lt{} -1.645) = 0.05$.
+Critical value: $P(Z \lt -1.645) = 0.05$.
 
-Since $-2.739 \lt{} -1.645$We reject $H_0$.
+Since $-2.739 \lt -1.645$We reject $H_0$.
 
 There is sufficient evidence that the mean weight has decreased.
 
@@ -203,7 +203,7 @@ Effect too weak). :::
 
 **Example.** Testing whether a new teaching method changes exam scores:
 
-- One-tailed ($H_1: \mu \gt{} \mu_0$): justified only if prior research strongly suggests the method
+- One-tailed ($H_1: \mu \gt \mu_0$): justified only if prior research strongly suggests the method
   improves scores, and you would not act on a decrease.
 - Two-tailed ($H_1: \mu \neq \mu_0$): appropriate if the method is new and could either help or
   harm, and either outcome matters.
@@ -221,11 +221,11 @@ This means the two-tailed test has a **higher bar** for each individual tail.
 
 **Example.** Standard normal test at $\alpha = 0.05$:
 
-- One-tailed ($H_1: \mu \gt{} \mu_0$): reject if $z \gt{} 1.645$.
-- Two-tailed ($H_1: \mu \neq \mu_0$): reject if $z \gt{} 1.960$ or $z \lt{} -1.960$.
+- One-tailed ($H_1: \mu \gt \mu_0$): reject if $z \gt 1.645$.
+- Two-tailed ($H_1: \mu \neq \mu_0$): reject if $z \gt 1.960$ or $z \lt -1.960$.
 
-An observed $z = 1.80$ is significant for the one-tailed test ($1.80 \gt{} 1.645$) but not for the
-Two-tailed test ($|1.80| \lt{} 1.960$).
+An observed $z = 1.80$ is significant for the one-tailed test ($1.80 \gt 1.645$) but not for the
+Two-tailed test ($|1.80| \lt 1.960$).
 
 :::info A two-tailed test at level $\alpha$ requires a more extreme test statistic than a one-tailed
 Test at the same $\alpha$Because the significance "budget" is split between two tails. A Two-tailed
@@ -246,7 +246,7 @@ However, a one-tailed test has **zero power** to detect an effect in the opposit
 When $n$ is sufficiently large, the binomial distribution $B(n, p)$ can be approximated by a normal
 Distribution. The standard conditions are:
 
-$$np \gt{} 5 \quad \mathrm{and} \quad n(1 - p) \gt{} 5$$
+$$np \gt 5 \quad \mathrm{and} \quad n(1 - p) \gt 5$$
 
 Under these conditions:
 
@@ -265,7 +265,7 @@ Since the binomial distribution is discrete and the normal distribution is conti
 
 - For $P(X \leq k)$Use $P\!\left(Z \leq \dfrac◆LB◆k + 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
 - For $P(X \geq k)$Use $P\!\left(Z \geq \dfrac◆LB◆k - 0.5 - np◆RB◆◆LB◆\sqrt{np(1-p)}◆RB◆\right)$.
-- For $P(X = k)$Use $P(k - 0.5 \lt{} X \lt{} k + 0.5)$ in the normal.
+- For $P(X = k)$Use $P(k - 0.5 \lt X \lt k + 0.5)$ in the normal.
 
 ### 9.3 Worked example
 
@@ -274,8 +274,8 @@ Take the bus. Test at the 5% level whether the proportion has changed.
 
 $X \sim B(120, p)$. $H_0: p = 0.4$$H_1: p \neq 0.4$. Two-tailed, $\alpha = 0.05$.
 
-Check conditions using $p_0 = 0.4$: $np_0 = 120 \times 0.4 = 48 \gt{} 5$ and
-$n(1 - p_0) = 120 \times 0.6 = 72 \gt{} 5$. Conditions satisfied.
+Check conditions using $p_0 = 0.4$: $np_0 = 120 \times 0.4 = 48 \gt 5$ and
+$n(1 - p_0) = 120 \times 0.6 = 72 \gt 5$. Conditions satisfied.
 
 Under $H_0$: $X \approx N(48, 28.8)$So $\sigma = \sqrt{28.8} \approx 5.367$.
 
@@ -283,7 +283,7 @@ Using continuity correction:
 
 $$z = \dfrac{58 - 0.5 - 48}{5.367} = \dfrac{9.5}{5.367} = 1.770$$
 
-Two-tailed critical values: $\pm 1.96$. Since $|1.770| \lt{} 1.96$**do not reject** $H_0$.
+Two-tailed critical values: $\pm 1.96$. Since $|1.770| \lt 1.96$**do not reject** $H_0$.
 
 There is insufficient evidence at the 5% level that the proportion of bus users has changed.
 
@@ -307,7 +307,7 @@ Refers to the long-run proportion of intervals (across many repeated samples) th
 
 ### 10.2 95% confidence interval for a population proportion
 
-For large $n$ where $n\hat{p} \gt{} 5$ and $n(1 - \hat{p}) \gt{} 5$The sample proportion $\hat{p}$
+For large $n$ where $n\hat{p} \gt 5$ and $n(1 - \hat{p}) \gt 5$The sample proportion $\hat{p}$
 Is approximately normal. The $100(1-\alpha)\%$ confidence interval for $p$ is:
 
 $$\hat{p} \pm z_{\alpha/2}\sqrt◆LB◆\dfrac{\hat{p}(1 - \hat{p})}{n}◆RB◆$$
@@ -352,7 +352,7 @@ Direction, so the $p$-value is doubled.
 
 ### 11.2 Decision rule
 
-- If $p\mathrm{-value} \lt{} \alpha$: reject $H_0$. The result is **statistically significant**.
+- If $p\mathrm{-value} \lt \alpha$: reject $H_0$. The result is **statistically significant**.
 - If $p\mathrm{-value} \geq \alpha$: do not reject $H_0$. The result is **not statistically
   significant**.
 
@@ -363,10 +363,10 @@ The smaller the $p$-value, the stronger the evidence against $H_0$:
 | $p$-value range           | Strength of evidence against $H_0$ |
 | ------------------------- | ---------------------------------- |
 | $p \geq 0.10$             | Little to no evidence              |
-| $0.05 \leq p \lt{} 0.10$  | Weak evidence                      |
-| $0.01 \leq p \lt{} 0.05$  | Moderate evidence                  |
-| $0.001 \leq p \lt{} 0.01$ | Strong evidence                    |
-| $p \lt{} 0.001$           | Very strong evidence               |
+| $0.05 \leq p \lt 0.10$  | Weak evidence                      |
+| $0.01 \leq p \lt 0.05$  | Moderate evidence                  |
+| $0.001 \leq p \lt 0.01$ | Strong evidence                    |
+| $p \lt 0.001$           | Very strong evidence               |
 
 ### 11.4 Common misinterpretations
 
@@ -390,9 +390,9 @@ Under $H_0$: $\bar{X} \sim N(50, 3^2/40) = N(50, 0.225)$.
 
 $$z = \dfrac◆LB◆50.8 - 50◆RB◆◆LB◆\sqrt{0.225}◆RB◆ = \dfrac{0.8}{0.4743} = 1.687$$
 
-$$p\mathrm{-value} = 2 \times P(Z \gt{} 1.687) = 2 \times (1 - 0.9542) = 0.0916$$
+$$p\mathrm{-value} = 2 \times P(Z \gt 1.687) = 2 \times (1 - 0.9542) = 0.0916$$
 
-Since $0.0916 \gt{} 0.05$We do not reject $H_0$ at the 5% level.
+Since $0.0916 \gt 0.05$We do not reject $H_0$ at the 5% level.
 
 **Interpretation:** If the true mean were 50 mm, there would be approximately a 9.2% chance of
 Observing a sample mean at least as far from 50 mm as 50.8 mm. This is not unusual enough to provide
@@ -416,7 +416,7 @@ $\sigma = \sqrt◆LB◆60 \times \frac{1}{6} \times \frac{5}{6}◆RB◆ = \sqrt{
 
 Using normal approximation: $z = \dfrac{16 - 10}{2.887} = 2.078$.
 
-Two-tailed: critical values $\pm 1.96$. $|2.078| \gt{} 1.96$So **reject** $H_0$.
+Two-tailed: critical values $\pm 1.96$. $|2.078| \gt 1.96$So **reject** $H_0$.
 
 There is evidence at the 5% level that the die is biased.
 
@@ -432,7 +432,7 @@ A manufacturer claims that 90% of their products pass quality control. In a samp
 
 <details>
 <summary>Solution 2</summary>
-$X \sim B(200, p)$. $H_0: p = 0.9$$H_1: p \lt{} 0.9$. Left-tailed, $\alpha = 0.05$.
+$X \sim B(200, p)$. $H_0: p = 0.9$$H_1: p \lt 0.9$. Left-tailed, $\alpha = 0.05$.
 
 $\hat{p} = 170/200 = 0.85$.
 
@@ -440,7 +440,7 @@ Under $H_0$: $\hat{p} \sim N(0.9, \frac◆LB◆0.9 \times 0.1◆RB◆◆LB◆200
 
 $z = \dfrac◆LB◆0.85 - 0.9◆RB◆◆LB◆\sqrt{0.00045}◆RB◆ = \dfrac{-0.05}{0.0212} = -2.358$.
 
-Critical value: $-1.645$. Since $-2.358 \lt{} -1.645$**reject** $H_0$.
+Critical value: $-1.645$. Since $-2.358 \lt -1.645$**reject** $H_0$.
 
 There is evidence that the proportion passing quality control is less than 90%.
 
@@ -468,15 +468,15 @@ Section 3.
 
 <details>
 <summary>Problem 4</summary>
-Find the critical region for a test of $H_0: p = 0.3$ vs $H_1: p \gt{} 0.3$ using $X \sim B(10, p)$ at the 5% level.
+Find the critical region for a test of $H_0: p = 0.3$ vs $H_1: p \gt 0.3$ using $X \sim B(10, p)$ at the 5% level.
 </details>
 
 <details>
 <summary>Solution 4</summary>
 Under $H_0$: $X \sim B(10, 0.3)$.
 
-$P(X \geq 6) = 1 - P(X \leq 5) = 1 - 0.9527 = 0.0473 \lt{} 0.05$.
-$P(X \geq 5) = 1 - P(X \leq 4) = 1 - 0.8497 = 0.1503 \gt{} 0.05$.
+$P(X \geq 6) = 1 - P(X \leq 5) = 1 - 0.9527 = 0.0473 \lt 0.05$.
+$P(X \geq 5) = 1 - P(X \leq 4) = 1 - 0.8497 = 0.1503 \gt 0.05$.
 
 Critical region: $X \geq 6$. Actual significance level: 4.73%.
 
@@ -491,13 +491,13 @@ The mean lifetime of a bulb is claimed to be 1000 hours. A sample of 50 bulbs gi
 
 <details>
 <summary>Solution 5</summary>
-$H_0: \mu = 1000$$H_1: \mu \lt{} 1000$. $\alpha = 0.01$.
+$H_0: \mu = 1000$$H_1: \mu \lt 1000$. $\alpha = 0.01$.
 
 $\bar{X} \sim N(1000, 40^2/50) = N(1000, 32)$ approximately.
 
 $z = \dfrac◆LB◆985 - 1000◆RB◆◆LB◆\sqrt{32}◆RB◆ = \dfrac{-15}{5.657} = -2.652$.
 
-Critical value at 1%: $-2.326$. Since $-2.652 \lt{} -2.326$**reject** $H_0$.
+Critical value at 1%: $-2.326$. Since $-2.652 \lt -2.326$**reject** $H_0$.
 
 There is evidence at the 1% level that the mean lifetime is less than 1000 hours.
 
@@ -517,8 +517,8 @@ Under $H_0$: $X \sim B(20, 0.5)$.
 
 For each tail, we need $P(X \leq c_L) \leq 0.05$ and $P(X \geq c_U) \leq 0.05$.
 
-Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$$P(X \leq 6) \approx 0.0577 \gt{} 0.05$. So $c_L = 5$.
-Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$$P(X \geq 14) \approx 0.0577 \gt{} 0.05$. So
+Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$$P(X \leq 6) \approx 0.0577 \gt 0.05$. So $c_L = 5$.
+Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$$P(X \geq 14) \approx 0.0577 \gt 0.05$. So
 $c_U = 15$.
 
 Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times 0.0207 = 0.0414$.
@@ -541,7 +541,7 @@ $\bar{X} \sim N(70, 12^2/25) = N(70, 5.76)$ approximately.
 
 $z = \dfrac◆LB◆66 - 70◆RB◆◆LB◆\sqrt{5.76}◆RB◆ = \dfrac{-4}{2.4} = -1.667$.
 
-Two-tailed critical values: $\pm 1.96$. $|-1.667| \lt{} 1.96$So **do not reject** $H_0$.
+Two-tailed critical values: $\pm 1.96$. $|-1.667| \lt 1.96$So **do not reject** $H_0$.
 
 There is insufficient evidence at the 5% level that the mean score differs from 70%.
 
@@ -557,14 +557,14 @@ A drug is effective for 60% of patients. After a new treatment, 18 out of 25 pat
 
 <details>
 <summary>Solution 8</summary>
-$X \sim B(25, p)$. $H_0: p = 0.6$$H_1: p \gt{} 0.6$. Right-tailed, $\alpha = 0.05$.
+$X \sim B(25, p)$. $H_0: p = 0.6$$H_1: p \gt 0.6$. Right-tailed, $\alpha = 0.05$.
 
 Under $H_0$: $X \sim B(25, 0.6)$.
 
-$P(X \geq 19) = 1 - P(X \leq 18) \approx 1 - 0.9264 = 0.0736 \gt{} 0.05$.
-$P(X \geq 20) = 1 - P(X \leq 19) \approx 1 - 0.9773 = 0.0227 \lt{} 0.05$.
+$P(X \geq 19) = 1 - P(X \leq 18) \approx 1 - 0.9264 = 0.0736 \gt 0.05$.
+$P(X \geq 20) = 1 - P(X \leq 19) \approx 1 - 0.9773 = 0.0227 \lt 0.05$.
 
-Critical region: $X \geq 20$. Since $X = 18 \lt{} 20$**do not reject** $H_0$.
+Critical region: $X \geq 20$. Since $X = 18 \lt 20$**do not reject** $H_0$.
 
 Insufficient evidence that the new treatment is more effective.
 
@@ -588,20 +588,20 @@ Failing to reject $H_0$ means the data is consistent with $H_0$ but does not pro
 
 <details>
 <summary>Problem 10</summary>
-For a test of $H_0: \mu = 50$ vs $H_1: \mu \gt{} 50$ at the 5% level with $\sigma = 4$ and $n = 16$Find the probability of a Type II error if the true mean is $\mu = 52$.
+For a test of $H_0: \mu = 50$ vs $H_1: \mu \gt 50$ at the 5% level with $\sigma = 4$ and $n = 16$Find the probability of a Type II error if the true mean is $\mu = 52$.
 </details>
 
 <details>
 <summary>Solution 10</summary>
 Under $H_0$: $\bar{X} \sim N(50, 16/16) = N(50, 1)$.
 
-Critical value: $P(Z \gt{} c) = 0.05 \implies c = 50 + 1.645(1) = 51.645$.
+Critical value: $P(Z \gt c) = 0.05 \implies c = 50 + 1.645(1) = 51.645$.
 
 Type II error = failing to reject $H_0$ when $\mu = 52$.
 
 $\bar{X} \sim N(52, 1)$ under the true distribution.
 
-$P(\bar{X} \lt{} 51.645 \mid \mu = 52) = P\!\left(Z \lt{} \dfrac{51.645 - 52}{1}\right) = P(Z \lt{} -0.355) \approx 0.3613$.
+$P(\bar{X} \lt 51.645 \mid \mu = 52) = P\!\left(Z \lt \dfrac{51.645 - 52}{1}\right) = P(Z \lt -0.355) \approx 0.3613$.
 
 So $\beta \approx 0.361$ and the power is $1 - \beta \approx 0.639$.
 
@@ -612,14 +612,14 @@ Section 3.
 
 <details>
 <summary>Problem 11</summary>
-A researcher tests whether a new drug changes recovery time. She uses a two-tailed test of $H_0: \mu = \mu_0$ vs $H_1: \mu \neq \mu_0$ at $\alpha = 0.05$ and obtains $z = 1.85$. (a) What is her conclusion? (b) If she had instead used a right-tailed test $H_1: \mu \gt{} \mu_0$ at the same level, would her conclusion change? Explain.
+A researcher tests whether a new drug changes recovery time. She uses a two-tailed test of $H_0: \mu = \mu_0$ vs $H_1: \mu \neq \mu_0$ at $\alpha = 0.05$ and obtains $z = 1.85$. (a) What is her conclusion? (b) If she had instead used a right-tailed test $H_1: \mu \gt \mu_0$ at the same level, would her conclusion change? Explain.
 </details>
 
 <details>
 <summary>Solution 11</summary>
-(a) Two-tailed test: critical values $\pm 1.96$. $|1.85| = 1.85 \lt{} 1.96$So **do not reject** $H_0$. There is insufficient evidence that recovery time has changed.
+(a) Two-tailed test: critical values $\pm 1.96$. $|1.85| = 1.85 \lt 1.96$So **do not reject** $H_0$. There is insufficient evidence that recovery time has changed.
 
-(b) One-tailed test: critical value $1.645$. Since $1.85 \gt{} 1.645$We **reject** $H_0$. There is
+(b) One-tailed test: critical value $1.645$. Since $1.85 \gt 1.645$We **reject** $H_0$. There is
 Sufficient evidence that recovery time has increased.
 
 The conclusion changes because a one-tailed test allocates the entire 5% significance level to one
@@ -640,8 +640,8 @@ A survey of 200 households in a town finds that 45 regularly recycle. The nation
 <summary>Solution 12</summary>
 $X \sim B(200, p)$. $H_0: p = 0.20$$H_1: p \neq 0.20$. Two-tailed, $\alpha = 0.05$.
 
-Check conditions using $p_0 = 0.20$: $np_0 = 200 \times 0.20 = 40 \gt{} 5$ and
-$n(1 - p_0) = 160 \gt{} 5$. Conditions satisfied.
+Check conditions using $p_0 = 0.20$: $np_0 = 200 \times 0.20 = 40 \gt 5$ and
+$n(1 - p_0) = 160 \gt 5$. Conditions satisfied.
 
 Under $H_0$: $X \approx N(40, 200 \times 0.20 \times 0.80) = N(40, 32)$
 $\sigma = \sqrt{32} \approx 5.657$.
@@ -650,7 +650,7 @@ Using continuity correction:
 
 $$z = \dfrac{45 - 0.5 - 40}{5.657} = \dfrac{4.5}{5.657} = 0.796$$
 
-Two-tailed critical values: $\pm 1.96$. $|0.796| \lt{} 1.96$So **do not reject** $H_0$.
+Two-tailed critical values: $\pm 1.96$. $|0.796| \lt 1.96$So **do not reject** $H_0$.
 
 There is insufficient evidence at the 5% level that the recycling rate differs from 20%.
 
@@ -668,8 +668,8 @@ In a random sample of 150 voters, 87 support a new policy. (a) Construct a 95% c
 <summary>Solution 13</summary>
 (a) $\hat{p} = 87/150 = 0.58$.
 
-Check: $n\hat{p} = 150 \times 0.58 = 87 \gt{} 5$ and
-$n(1 - \hat{p}) = 150 \times 0.42 = 63 \gt{} 5$.
+Check: $n\hat{p} = 150 \times 0.58 = 87 \gt 5$ and
+$n(1 - \hat{p}) = 150 \times 0.42 = 63 \gt 5$.
 
 $$95\%\mathrm{ CI} = 0.58 \pm 1.96\sqrt◆LB◆\dfrac{0.58 \times 0.42}{150}◆RB◆ = 0.58 \pm 1.96 \times 0.0403$$
 
@@ -704,7 +704,7 @@ $H_0$.
 
 <details>
 <summary>Problem 15</summary>
-A sample of 35 students has mean score 62.4 with known population standard deviation $\sigma = 8$. (a) Find the $p$-value for testing $H_0: \mu = 60$ vs $H_1: \mu \gt{} 60$. (b) State your conclusion at the 5% significance level and interpret the $p$-value.
+A sample of 35 students has mean score 62.4 with known population standard deviation $\sigma = 8$. (a) Find the $p$-value for testing $H_0: \mu = 60$ vs $H_1: \mu \gt 60$. (b) State your conclusion at the 5% significance level and interpret the $p$-value.
 </details>
 
 <details>
@@ -713,9 +713,9 @@ A sample of 35 students has mean score 62.4 with known population standard devia
 
 $$z = \dfrac◆LB◆62.4 - 60◆RB◆◆LB◆\sqrt{1.829}◆RB◆ = \dfrac{2.4}{1.352} = 1.775$$
 
-$$p\mathrm{-value} = P(Z \gt{} 1.775) = 1 - 0.9620 = 0.0380$$
+$$p\mathrm{-value} = P(Z \gt 1.775) = 1 - 0.9620 = 0.0380$$
 
-(b) Since $0.038 \lt{} 0.05$**reject** $H_0$ at the 5% level. There is sufficient evidence that The
+(b) Since $0.038 \lt 0.05$**reject** $H_0$ at the 5% level. There is sufficient evidence that The
 true mean score exceeds 60. The $p$-value of 0.038 means that if the true mean were 60, there Would
 be a 3.8% chance of observing a sample mean of 62.4 or higher. This provides moderate evidence
 Against $H_0$.
@@ -726,14 +726,14 @@ Against $H_0$.
 
 <details>
 <summary>Problem 16</summary>
-For a test of $H_0: \mu = 100$ vs $H_1: \mu \gt{} 100$ with $\sigma = 15$$n = 25$And $\alpha = 0.05$: (a) Find the critical value in terms of $\bar{x}$. (b) Find the probability of a Type II error and the power of the test if the true mean is $\mu = 108$. (c) How would the power change if $\alpha$ were increased to 0.10?
+For a test of $H_0: \mu = 100$ vs $H_1: \mu \gt 100$ with $\sigma = 15$$n = 25$And $\alpha = 0.05$: (a) Find the critical value in terms of $\bar{x}$. (b) Find the probability of a Type II error and the power of the test if the true mean is $\mu = 108$. (c) How would the power change if $\alpha$ were increased to 0.10?
 </details>
 
 <details>
 <summary>Solution 16</summary>
 (a) Under $H_0$: $\bar{X} \sim N(100, 15^2/25) = N(100, 9)$So $\sigma_{\bar{X}} = 3$.
 
-Critical value: $c = 100 + 1.645 \times 3 = 104.935$. Reject $H_0$ if $\bar{X} \gt{} 104.935$.
+Critical value: $c = 100 + 1.645 \times 3 = 104.935$. Reject $H_0$ if $\bar{X} \gt 104.935$.
 
 (b) Type II error when $\mu = 108$: $P(\bar{X} \leq 104.935 \mid \mu = 108)$.
 

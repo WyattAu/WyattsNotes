@@ -95,16 +95,16 @@ This demonstrates that most energy is lost at each trophic level.
 **Key processes:**
 
 1. **Photosynthesis:**
-   $\mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{} \to \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + \mathrm{O{}_2$
+   $\mathrm{CO_2 + \mathrm{H_2\mathrm{O \to \mathrm{C_6\mathrm{H_{12}\mathrm{O_6 + \mathrm{O_2$
 2. **Respiration:**
-   $\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + \mathrm{O{}_2 \to \mathrm{CO{}_2 + \mathrm{H{}_2\mathrm{O{} + \mathrm{energy{}$
-3. **Combustion:** burning fossil fuels releases $\mathrm{CO{}_2$.
-4. **Decomposition:** decomposers break down organic matter, releasing $\mathrm{CO{}_2$.
+   $\mathrm{C_6\mathrm{H_{12}\mathrm{O_6 + \mathrm{O_2 \to \mathrm{CO_2 + \mathrm{H_2\mathrm{O + \mathrm{energy$
+3. **Combustion:** burning fossil fuels releases $\mathrm{CO_2$.
+4. **Decomposition:** decomposers break down organic matter, releasing $\mathrm{CO_2$.
 
 Carbon is stored in:
 
-- Atmosphere (as $\mathrm{CO{}_2$)
-- Oceans (dissolved $\mathrm{CO{}_2$Carbonate rocks)
+- Atmosphere (as $\mathrm{CO_2$)
+- Oceans (dissolved $\mathrm{CO_2$Carbonate rocks)
 - Fossil fuels (coal, oil, natural gas)
 - Living organisms (biomass)
 
@@ -112,14 +112,14 @@ Carbon is stored in:
 
 **Key processes:**
 
-1. **Nitrogen fixation:** conversion of atmospheric $\mathrm{N{}_2$ to ammonia ($\mathrm{NH{}_3$).
+1. **Nitrogen fixation:** conversion of atmospheric $\mathrm{N_2$ to ammonia ($\mathrm{NH_3$).
 
 - By lightning (small amount).
 - By nitrogen-fixing bacteria (e.g., Rhizobium in root nodules of legumes).
 - By industrial process (Haber process).
 
-2. **Nitrification:** conversion of ammonia to nitrites ($\mathrm{NO{}_2^-$) and then nitrates
-   ($\mathrm{NO{}_3^-$).
+2. **Nitrification:** conversion of ammonia to nitrites ($\mathrm{NO_2^-$) and then nitrates
+   ($\mathrm{NO_3^-$).
 
 - By nitrifying bacteria (Nitrosomonas, Nitrobacter).
 
@@ -132,7 +132,7 @@ Carbon is stored in:
 6. **Decomposition:** decomposers break down dead organisms and waste, returning ammonia to the
    soil.
 
-7. **Denitrification:** conversion of nitrates back to $\mathrm{N{}_2$ gas.
+7. **Denitrification:** conversion of nitrates back to $\mathrm{N_2$ gas.
 
 - By denitrifying bacteria (in waterlogged, anaerobic soil).
 
@@ -183,7 +183,7 @@ Density).
 
 ### Pollution
 
-- **Air pollution:** $\mathrm{CO{}_2$$\mathrm{SO{}_2$$\mathrm{NO{}_x$Particulate matter.
+- **Air pollution:** $\mathrm{CO_2$$\mathrm{SO_2$$\mathrm{NO_x$Particulate matter.
 - **Water pollution:** sewage, fertilisers (eutrophication), heavy metals, oil spills.
 - **Soil pollution:** pesticides, herbicides, industrial waste.
 
@@ -206,14 +206,14 @@ Organisms. If the dissolved oxygen drops below about 5 mg/L, fish begin to die.
 ### Deforestation (OL/HL)
 
 - Loss of biodiversity.
-- Increased $\mathrm{CO{}_2$ (fewer trees for photosynthesis).
+- Increased $\mathrm{CO_2$ (fewer trees for photosynthesis).
 - Soil erosion.
 - Disruption of the water cycle.
 
 ### Climate Change (HL)
 
-- Enhanced greenhouse effect due to increased atmospheric $\mathrm{CO{}_2$$\mathrm{CH{}_4$
-  $\mathrm{N{}_2\mathrm{O{}$.
+- Enhanced greenhouse effect due to increased atmospheric $\mathrm{CO_2$$\mathrm{CH_4$
+  $\mathrm{N_2\mathrm{O$.
 - Rising global temperatures, sea level rise, extreme weather events.
 - Impact on ecosystems, agriculture, and human health.
 
@@ -233,7 +233,7 @@ Strategies for conservation include:
 
 **Quadrat sampling:** for plants and slow-moving animals in a uniform habitat.
 
-Place a quadrat ( $1\mathrm{ m{} \times 1\mathrm{ m{}$) randomly and count organisms. Repeat and
+Place a quadrat ( $1\mathrm{ m \times 1\mathrm{ m$) randomly and count organisms. Repeat and
 Calculate mean density.
 
 **Transect sampling:** study changes along an environmental gradient (e.g., from sea shore inland).
@@ -355,7 +355,7 @@ Specialist species (sphagnum moss, insectivorous plants such as sundews).
 
 **Threats:** Peat has been harvested for fuel and horticulture for centuries. Drainage for
 Agriculture destroys the waterlogged conditions needed for peat formation. When peat bogs are
-Drained, the stored carbon is released as $\mathrm{CO{}_2$Contributing to climate change.
+Drained, the stored carbon is released as $\mathrm{CO_2$Contributing to climate change.
 
 **Conservation:** Raised bogs and blanket bogs are protected under EU law (Habitats Directive).
 Rewetting drained bogs can restore their function as carbon stores. Bord na Mona (the Irish peat
@@ -379,22 +379,22 @@ Council).
 
 The nitrogen cycle involves the conversion of nitrogen between different chemical forms:
 
-1. **Nitrogen fixation:** Atmospheric $\mathrm{N{}_2$ (very unreactive due to the triple bond) is
-   converted to ammonia ($\mathrm{NH{}_3$) by nitrogen-fixing bacteria (Rhizobium in legume root
+1. **Nitrogen fixation:** Atmospheric $\mathrm{N_2$ (very unreactive due to the triple bond) is
+   converted to ammonia ($\mathrm{NH_3$) by nitrogen-fixing bacteria (Rhizobium in legume root
    nodules, Azotobacter in soil) or by lightning.
-2. **Nitrification:** Ammonia is converted to nitrites ($\mathrm{NO{}_2^-$) by Nitrosomonas, then to
-   nitrates ($\mathrm{NO{}_3^-$) by Nitrobacter. Nitrates are the form most absorbed by plants.
+2. **Nitrification:** Ammonia is converted to nitrites ($\mathrm{NO_2^-$) by Nitrosomonas, then to
+   nitrates ($\mathrm{NO_3^-$) by Nitrobacter. Nitrates are the form most absorbed by plants.
 3. **Assimilation:** Plants absorb nitrates through their roots and use them to make amino acids and
    proteins. Animals obtain nitrogen by eating plants or other animals.
 4. **Ammonification:** Decomposers break down proteins in dead organisms and urea in urine,
    releasing ammonia back into the soil.
-5. **Denitrification:** Denitrifying bacteria (Pseudomonas) convert nitrates back to $\mathrm{N{}_2$
+5. **Denitrification:** Denitrifying bacteria (Pseudomonas) convert nitrates back to $\mathrm{N_2$
    gas in waterlogged (anaerobic) soil. This removes nitrogen from the ecosystem and returns it to
    the atmosphere.
 
 **Why waterlogged soil reduces fertility:** In waterlogged soil, the lack of oxygen means that
 Denitrifying bacteria are active but nitrifying bacteria are not. Nitrates are converted to
-$\mathrm{N{}_2$ gas and lost to the atmosphere, while no new nitrates are produced. The soil becomes
+$\mathrm{N_2$ gas and lost to the atmosphere, while no new nitrates are produced. The soil becomes
 Nitrogen-deficient, reducing plant growth.
 
 ## Review: Population Growth Curves
@@ -500,7 +500,7 @@ Significant gaseous phase. It cycles mainly between the land and water.
 **Key processes:**
 
 1. **Weathering:** Phosphorus is released from rocks by chemical weathering (slow process).
-2. **Absorption:** Plants absorb phosphate ions ($\mathrm{PO{}_4^{3-}$) from the soil through their
+2. **Absorption:** Plants absorb phosphate ions ($\mathrm{PO_4^{3-}$) from the soil through their
    roots.
 3. **Feeding:** Animals obtain phosphorus by eating plants or other animals.
 4. **Decomposition:** Decomposers return phosphorus to the soil when organisms die.
@@ -528,11 +528,11 @@ The environmental quality of a habitat.
 
 **Air quality indicators:**
 
-- **Lichens:** Sensitive to sulphur dioxide ($\mathrm{SO{}_2$). Crustose lichens are the most
+- **Lichens:** Sensitive to sulphur dioxide ($\mathrm{SO_2$). Crustose lichens are the most
   tolerant; foliose lichens are moderately tolerant; fruticose lichens are the least tolerant. Areas
-  with high $\mathrm{SO{}_2$ pollution have few or no lichens.
+  with high $\mathrm{SO_2$ pollution have few or no lichens.
 - **Blackspot fungus on roses:** More common in areas with cleaner air (the fungus is sensitive to
-  $\mathrm{SO{}_2$).
+  $\mathrm{SO_2$).
 
 **Water quality indicators:**
 
@@ -595,7 +595,7 @@ EU law. These areas protect important habitats and species.
 
 A proposed wind farm development would be located on an area of blanket bog that is designated as a
 Special Area of Conservation. The wind farm would generate renewable energy (reducing
-$\mathrm{CO{}_2$ Emissions and helping to combat climate change) but would destroy the bog habitat
+$\mathrm{CO_2$ Emissions and helping to combat climate change) but would destroy the bog habitat
 and fragment the Populations of specialist bog species.
 
 This is an example of a conflict between two conservation goals: reducing carbon emissions and
@@ -611,7 +611,7 @@ When it is impractical to count every individual in a population, biologists use
    placed randomly, and organisms within it are counted. The population is estimated by multiplying
    the mean number per quadrat by the total area.
 
-   $$\mathrm{Estimated population{} = \frac{\mathrm{Mean number per quadrat{}}{\mathrm{Area of quadrat{}} \times \mathrm{Total area{}$$
+   $$\mathrm{Estimated population = \frac{\mathrm{Mean number per quadrat}{\mathrm{Area of quadrat} \times \mathrm{Total area$$
 
 2. **Mark-release-recapture (Lincoln index):** Used for mobile animals. Animals are captured,
    marked, released, and then a second sample is captured. The proportion of marked animals in the
@@ -662,25 +662,25 @@ Between the atmosphere, biosphere, oceans, and geosphere.
 
 **Key processes in the carbon cycle:**
 
-1. **Photosynthesis:** Plants and algae absorb $\mathrm{CO{}_2$ from the atmosphere and convert it
+1. **Photosynthesis:** Plants and algae absorb $\mathrm{CO_2$ from the atmosphere and convert it
    into organic molecules (glucose, carbohydrates, lipids, proteins). This removes carbon from the
    atmosphere.
 2. **Respiration:** All living organisms break down organic molecules to release energy, producing
-   $\mathrm{CO{}_2$ as a by-product. This returns carbon to the atmosphere.
+   $\mathrm{CO_2$ as a by-product. This returns carbon to the atmosphere.
 3. **Feeding:** Carbon is transferred between trophic levels when organisms consume other organisms.
-4. **Decomposition:** Decomposers break down dead organic matter, releasing $\mathrm{CO{}_2$ through
+4. **Decomposition:** Decomposers break down dead organic matter, releasing $\mathrm{CO_2$ through
    respiration. If decomposition occurs in anaerobic conditions (e.g., waterlogged soil or deep
    ocean sediments), carbon can be stored as fossil fuels over millions of years.
 5. **Combustion:** Burning fossil fuels (coal, oil, natural gas) and biomass releases stored carbon
-   as $\mathrm{CO{}_2$ back into the atmosphere.
-6. **Ocean absorption:** The oceans absorb approximately 25% of human $\mathrm{CO{}_2$ emissions.
-   Dissolved $\mathrm{CO{}_2$ forms carbonic acid, which can react to form bicarbonate and carbonate
+   as $\mathrm{CO_2$ back into the atmosphere.
+6. **Ocean absorption:** The oceans absorb approximately 25% of human $\mathrm{CO_2$ emissions.
+   Dissolved $\mathrm{CO_2$ forms carbonic acid, which can react to form bicarbonate and carbonate
    ions.
 
 **Human impact on the carbon cycle:**
 
 Since the Industrial Revolution, the burning of fossil fuels and deforestation have significantly
-Increased atmospheric $\mathrm{CO{}_2$ concentration from approximately 280 ppm to over 420 ppm.
+Increased atmospheric $\mathrm{CO_2$ concentration from approximately 280 ppm to over 420 ppm.
 This Enhanced greenhouse effect is the primary driver of current climate change.
 
 **Deforestation and the carbon cycle:**
@@ -688,21 +688,21 @@ This Enhanced greenhouse effect is the primary driver of current climate change.
 Trees store large amounts of carbon in their biomass (trunks, branches, roots). When forests are
 Cleared:
 
-- The stored carbon is released as $\mathrm{CO{}_2$ if the wood is burned or left to rot.
+- The stored carbon is released as $\mathrm{CO_2$ if the wood is burned or left to rot.
 - The loss of trees reduces the rate of photosynthesis, decreasing the rate at which
-  $\mathrm{CO{}_2$ is removed from the atmosphere.
-- Deforestation accounts for approximately 10-15% of global $\mathrm{CO{}_2$ emissions.
+  $\mathrm{CO_2$ is removed from the atmosphere.
+- Deforestation accounts for approximately 10-15% of global $\mathrm{CO_2$ emissions.
 
 **Worked Example: Calculating net carbon flux.**
 
-A forest absorbs 5000 tonnes of $\mathrm{CO{}_2$ per year through photosynthesis. The plants and
-Animals in the forest release 3000 tonnes of $\mathrm{CO{}_2$ per year through respiration.
+A forest absorbs 5000 tonnes of $\mathrm{CO_2$ per year through photosynthesis. The plants and
+Animals in the forest release 3000 tonnes of $\mathrm{CO_2$ per year through respiration.
 Decomposers Release 800 tonnes per year. What is the net carbon flux?
 
-$$\mathrm{Net flux{} = \mathrm{Photosynthesis{} - \mathrm{Respiration{} - \mathrm{Decomposition{}$$
-$$\mathrm{Net flux{} = 5000 - 3000 - 800 = 1200 \mathrm{ tonnes of {} \mathrm{CO{}_2 \mathrm{ absorbed per year{}$$
+$$\mathrm{Net flux = \mathrm{Photosynthesis - \mathrm{Respiration - \mathrm{Decomposition$$
+$$\mathrm{Net flux = 5000 - 3000 - 800 = 1200 \mathrm{ tonnes of  \mathrm{CO_2 \mathrm{ absorbed per year$$
 
-The forest is a net carbon sink, absorbing 1200 tonnes of $\mathrm{CO{}_2$ per year.
+The forest is a net carbon sink, absorbing 1200 tonnes of $\mathrm{CO_2$ per year.
 
 **Eutrophication:**
 

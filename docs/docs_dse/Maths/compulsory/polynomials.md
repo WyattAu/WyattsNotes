@@ -13,8 +13,8 @@ slug: polynomials
 ---
 
 A polynomial in one variable $x$ is an expression of the form
-$a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$Where $n \in \mathbb{{'}N{}'}_0$
-$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{{'}R{}'}$And $a_n \neq 0$. Polynomials and their manipulation
+$a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$Where $n \in \mathbb{N}_0$
+$a_n, a_{n-1}, \ldots, a_0 \in \mathbb{R}$And $a_n \neq 0$. Polynomials and their manipulation
 Form a core part of the DSE compulsory mathematics syllabus, with applications ranging from
 Algebraic identities to combinatorial coefficient extraction.
 
@@ -83,7 +83,7 @@ $$
 Where the **binomial coefficient** is
 
 $$
-\binom{n}{k} = {}_n C_k = \frac{n!}{k!(n-k)!}
+\binom{n}{k} = _n C_k = \frac{n!}{k!(n-k)!}
 $$
 
 This is known as the **Binomial Theorem**. See also
@@ -218,10 +218,10 @@ X^2 - x + 2 & 2x^3 + 3x^2 - 5x + 7 \\
  & 2x \\
  & 2x^3 - 2x^2 + 4x \\
  \cline{2-2}
- & \phantom{2x^3{}} 5x^2 - 9x + 7 \\
- & \phantom{2x^3{}} 5x^2 - 5x + 10 \\
+ & \phantom{2x^3} 5x^2 - 9x + 7 \\
+ & \phantom{2x^3} 5x^2 - 5x + 10 \\
  & \cline{2-2}
- & \phantom{2x^3{}} \phantom{5x^2{}} -4x - 3
+ & \phantom{2x^3} \phantom{5x^2} -4x - 3
 \end{array}
 $$
 
@@ -347,7 +347,7 @@ $$
 $$
 
 If the discriminant $\Delta = b^2 - 4ac < 0$The quadratic cannot be factorized over
-$\mathbb{{'}R{}'}$.
+$\mathbb{R}$.
 
 ### Factorization by the Factor Theorem
 

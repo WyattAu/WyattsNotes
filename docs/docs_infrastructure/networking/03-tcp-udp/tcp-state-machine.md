@@ -600,11 +600,11 @@ High-bandwidth, high-latency links, this severely limits throughput.
 
 The bandwidth-delay product determines the optimal window size:
 
-$\mathrm{BDP{} = \mathrm{bandwidth{} \times \mathrm{RTT{}$
+$\mathrm{BDP = \mathrm{bandwidth \times \mathrm{RTT$
 
 For a 10 Gbps link with 100ms RTT:
 
-$\mathrm{BDP{} = 10 \times 10^9 \times 0.1 = 10^9 \mathrm{ bits{} = 125,000,000 \mathrm{ bytes{}$
+$\mathrm{BDP = 10 \times 10^9 \times 0.1 = 10^9 \mathrm{ bits = 125,000,000 \mathrm{ bytes$
 
 The default 65,535-byte window is 1907x too small. Window scaling (a shift count in the option
 Field, up to 14 bits, meaning the window can be scaled up to $2^{30}$ bytes) solves this.

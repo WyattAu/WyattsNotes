@@ -190,9 +190,9 @@ $$n! = n \times (n-1) \times \cdots \times 2 \times 1, \quad 0! = 1$$
 
 The number of ways to arrange $n$ distinct objects in order:
 
-$${}^n P_r = \frac{n!}{(n - r)!}$$
+$$^n P_r = \frac{n!}{(n - r)!}$$
 
-When all $n$ objects are arranged: ${}^n P_n = n!$.
+When all $n$ objects are arranged: $^n P_n = n!$.
 
 ### Combinations
 
@@ -361,10 +361,10 @@ $\approx 20 + \dfrac{25 - 17}{18} \times 10 = 20 + \dfrac{80}{18} \approx 24.4$.
 
 **Worked Example: Full Regression Analysis with Prediction**
 
-A study records the temperature ($x$In $\mathrm{}^\circ C}$) and ice cream sales ($y$In USD) for 7
+A study records the temperature ($x$In $\mathrm^\circ C}$) and ice cream sales ($y$In USD) for 7
 days: $(18, 220)$$(22, 310)$$(25, 380)$$(28, 440)$$(31, 510)$$(34, 580)$$(20, 270)$. Find the
 regression line of $y$ on $x$The correlation coefficient, and predict sales at
-$30\mathrm{}^\circ C}$.
+$30\mathrm^\circ C}$.
 
 <details>
 <summary>Solution</summary>
@@ -392,7 +392,7 @@ There is a strong positive linear correlation.
 
 Prediction at $x = 30$: $\hat{y} = -173.4 + 22.0(30) = -173.4 + 660 = 486.6$ USD.
 
-Since $30\mathrm{}^\circ C}$ lies within the data range ($18$ to $34$), this is interpolation and
+Since $30\mathrm^\circ C}$ lies within the data range ($18$ to $34$), this is interpolation and
 Reliable.
 
 </details>
@@ -583,9 +583,9 @@ $R^2 = r^2 \approx 0.468$Meaning about 46.8% of the variation in $y$ is explaine
 model.
 
 **Problem 14:** For a 4-digit number, the first digit cannot be 0. The last digit must be even (0,
-2, 4). Case 1: Last digit is 0. First digit: 5 choices (1--5), middle two: ${}^4P_2 = 12$. Total:
+2, 4). Case 1: Last digit is 0. First digit: 5 choices (1--5), middle two: $^4P_2 = 12$. Total:
 $5 \times 12 = 60$. Case 2: Last digit is 2 or 4 (2 choices). First digit: 4 choices (1--5,
-excluding the one used for the last digit). Middle two: ${}^4P_2 = 12$. Total:
+excluding the one used for the last digit). Middle two: $^4P_2 = 12$. Total:
 $2 \times 4 \times 12 = 96$. Total: $60 + 96 = 156$.
 
 **Problem 15:**

@@ -141,7 +141,7 @@ We define **inflation** as a sustained increase in the general price level over 
 
 $$\mathrm{Inflation rate} = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%$$
 
-**Deflation**: a sustained _decrease_ in the general price level ($\pi \lt{} 0$). **Disinflation**:
+**Deflation**: a sustained _decrease_ in the general price level ($\pi \lt 0$). **Disinflation**:
 A _reduction_ in the rate of inflation (prices still rising, but more slowly).
 
 ### 2.2 Measuring Inflation
@@ -301,7 +301,7 @@ Discouraged workers, homemakers).
 
 | Type           | Cause                                                       | Remedy                                                |
 | -------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
-| **Cyclical**   | Insufficient aggregate demand ($Y \lt{} Y_{fe}$)            | Demand-side policy                                    |
+| **Cyclical**   | Insufficient aggregate demand ($Y \lt Y_{fe}$)            | Demand-side policy                                    |
 | **Structural** | Mismatch between skills/location of workers and jobs        | Retraining, geographical mobility, supply-side policy |
 | **Frictional** | Time taken to match workers with jobs (search, transitions) | Improve job information, reduce search costs          |
 | **Seasonal**   | Regular seasonal patterns (agriculture, tourism)            | Limited scope for policy                              |
@@ -517,7 +517,7 @@ $\Rightarrow$ demand-pull inflation.
 Friedman (1968) and Phelps (1967) argued that the Phillips curve is vertical in the long run at the
 Natural rate of unemployment.
 
-_Proof._ If the government tries to maintain $u \lt{} u^*$ through expansionary policy, inflation
+_Proof._ If the government tries to maintain $u \lt u^*$ through expansionary policy, inflation
 Rises. Initially, workers suffer from **money illusion** — they accept nominal wage increases not
 Realising prices are rising faster. Real wages fall, firms hire more. But eventually, workers update
 Their inflation expectations ($\pi^e$ rises). They demand higher nominal wages to compensate. Real

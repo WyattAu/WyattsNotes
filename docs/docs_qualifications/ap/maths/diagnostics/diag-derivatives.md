@@ -98,7 +98,7 @@ differentiable and explain why this does not contradict the MVT.
 
 **Solution:**
 
-(a) $f(x) = x^{1/3}$ is a root function, continuous on all of $\mathbb{{'}R{}'}$So it is continuous
+(a) $f(x) = x^{1/3}$ is a root function, continuous on all of $\mathbb{R}$So it is continuous
 on $[-1, 8]$.
 
 (b) $\dfrac{f(8) - f(-1)}{8 - (-1)} = \dfrac{2 - (-1)}{9} = \dfrac{3}{9} = \dfrac{1}{3}$.
@@ -151,13 +151,13 @@ Differentiating: $2x\dfrac{dx}{dt} + 2y\dfrac{dy}{dt} = 0$.
 
 When $x = 5$: $y = \sqrt{169 - 25} = 12$. Given $\dfrac{dx}{dt} = 2$:
 
-$$2(5)(2) + 2(12)\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{10}{24} = -\frac{5}{12} \text{ ft/s{}$$
+$$2(5)(2) + 2(12)\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{10}{24} = -\frac{5}{12} \text{ ft/s$$
 
 The negative sign confirms the top moves downward.
 
 (b) Area $A = \dfrac{1}{2}xy$. Differentiating:
 
-$$\frac{dA}{dt} = \frac{1}{2}\left(x\frac{dy}{dt} + y\frac{dx}{dt}\right) = \frac{1}{2}\left(5 \cdot \left(-\frac{5}{12}\right) + 12 \cdot 2\right) = \frac{1}{2}\left(-\frac{25}{12} + 24\right) = \frac{1}{2} \cdot \frac{263}{12} = \frac{263}{24} \text{ ft{}^2\text{/s{}$$
+$$\frac{dA}{dt} = \frac{1}{2}\left(x\frac{dy}{dt} + y\frac{dx}{dt}\right) = \frac{1}{2}\left(5 \cdot \left(-\frac{5}{12}\right) + 12 \cdot 2\right) = \frac{1}{2}\left(-\frac{25}{12} + 24\right) = \frac{1}{2} \cdot \frac{263}{12} = \frac{263}{24} \text{ ft^2\text{/s$$
 
 (c) The point $P$ has coordinates. The bottom of the ladder is at $(x, 0)$ and the top at $(0, y)$
 where $y = \sqrt{169 - x^2}$. The point $P$ is 5 feet from the top, so measured from the bottom it
@@ -167,11 +167,11 @@ $$P_x = x - \frac{8x}{13} = \frac{5x}{13}, \quad P_y = \frac{8y}{13} = \frac{8\s
 
 The curve starts when $x = 0$ (bottom at wall) and ends at $x = 5$.
 
-$$\text{Arc length{} = \int_0^5 \sqrt{\left(\frac{dP_x}{dx}\right)^2 + \left(\frac{dP_y}{dx}\right)^2} \, dx$$
+$$\text{Arc length = \int_0^5 \sqrt{\left(\frac{dP_x}{dx}\right)^2 + \left(\frac{dP_y}{dx}\right)^2} \, dx$$
 
 $$\frac{dP_x}{dx} = \frac{5}{13}, \quad \frac{dP_y}{dx} = \frac{8}{13} \cdot \frac{-x}{\sqrt{169-x^2}}$$
 
-$$\text{Arc length{} = \int_0^5 \sqrt{\frac{25}{169} + \frac{64x^2}{169(169-x^2)}} \, dx = \frac{1}{13}\int_0^5 \sqrt{\frac{25(169-x^2) + 64x^2}{169-x^2}} \, dx$$
+$$\text{Arc length = \int_0^5 \sqrt{\frac{25}{169} + \frac{64x^2}{169(169-x^2)}} \, dx = \frac{1}{13}\int_0^5 \sqrt{\frac{25(169-x^2) + 64x^2}{169-x^2}} \, dx$$
 
 $$= \frac{1}{13}\int_0^5 \sqrt{\frac{4225 - 25x^2 + 64x^2}{169-x^2}} \, dx = \frac{1}{13}\int_0^5 \sqrt{\frac{4225 + 39x^2}{169 - x^2}} \, dx$$
 
@@ -195,7 +195,7 @@ Area: $A(a) = 2a(4 - a^2) = 8a - 2a^3$ for $0 \lt a \lt 2$.
 
 $$A'(a) = 8 - 6a^2 = 0 \implies a^2 = \frac{4}{3} \implies a = \frac{2\sqrt{3}}{3}$$
 
-$$A''(a) = -12a \lt 0 \text{ for {} a > 0$$
+$$A''(a) = -12a \lt 0 \text{ for  a > 0$$
 
 Since $A''\!\left(\frac{2\sqrt{3}}{3}\right) = -12 \cdot \frac{2\sqrt{3}}{3} = -8\sqrt{3} \lt 0$This
 is a local maximum (and by endpoints, the global maximum on $[0, 2]$).
@@ -205,7 +205,7 @@ $A\!\left(\frac{2\sqrt{3}}{3}\right) = 2 \cdot \frac{2\sqrt{3}}{3}\left(4 - \fra
 
 The area between the curve and the rectangle (the two "caps"):
 
-$$\text{Uncovered area{} = 2\int_{\frac{2\sqrt{3}}{3}}^{2}(4 - x^2)\,dx = 2\left[4x - \frac{x^3}{3}\right]_{\frac{2\sqrt{3}}{3}}^{2}$$
+$$\text{Uncovered area = 2\int_{\frac{2\sqrt{3}}{3}}^{2}(4 - x^2)\,dx = 2\left[4x - \frac{x^3}{3}\right]_{\frac{2\sqrt{3}}{3}}^{2}$$
 
 $$= 2\left(\left(8 - \frac{8}{3}\right) - \left(\frac{8\sqrt{3}}{3} - \frac{8 \cdot 3\sqrt{3}}{81}\right)\right) = 2\left(\frac{16}{3} - \frac{8\sqrt{3}}{3} + \frac{8\sqrt{3}}{27}\right)$$
 

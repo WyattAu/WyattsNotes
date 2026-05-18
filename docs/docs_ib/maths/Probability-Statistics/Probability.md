@@ -739,7 +739,7 @@ $$
 The number of ways to arrange $r$ objects from $n$ distinct objects (order matters):
 
 $$
-{}^nP_r = \frac{n!}{(n-r)!}
+^nP_r = \frac{n!}{(n-r)!}
 $$
 
 ### Combinations
@@ -747,7 +747,7 @@ $$
 The number of ways to choose $r$ objects from $n$ distinct objects (order does not matter):
 
 $$
-{}^nC_r = \binom{n}{r} = \frac{n!}{r!(n-r)!}
+^nC_r = \binom{n}{r} = \frac{n!}{r!(n-r)!}
 $$
 
 :::info[Example]

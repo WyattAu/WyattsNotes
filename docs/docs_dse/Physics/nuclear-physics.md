@@ -36,10 +36,10 @@ Centre.
 
 ### Nuclear Notation
 
-**Definition.** Nuclear notation represents an atom as $\prescript{A}{}{Z}\mathrm{X}$ where $A$ is
+**Definition.** Nuclear notation represents an atom as $\prescript{A}{Z}\mathrm{X}$ where $A$ is
 The mass number (total nucleons), $Z$ is the atomic number (protons), and X is the chemical symbol.
 
-$$\prescript{A}{}{Z}\mathrm{X}$$
+$$\prescript{A}{Z}\mathrm{X}$$
 
 - $A = Z + N$ where $N$ is the neutron number
 - $Z$ determines the element (chemical identity)
@@ -47,11 +47,11 @@ $$\prescript{A}{}{Z}\mathrm{X}$$
 
 Examples:
 
-- $\prescript{235}{}{92}\mathrm{U}$: uranium-235 with 92 protons and 143 neutrons
-- $\prescript{1}{}{1}\mathrm{H}$: protium (the most common hydrogen isotope)
-- $\prescript{2}{}{1}\mathrm{H}$: deuterium (heavy hydrogen, one proton + one neutron)
-- $\prescript{3}{}{1}\mathrm{H}$: tritium (one proton + two neutrons, radioactive)
-- $\prescript{12}{}{6}\mathrm{C}$: carbon-12 (the standard for defining the atomic mass unit)
+- $\prescript{235}{92}\mathrm{U}$: uranium-235 with 92 protons and 143 neutrons
+- $\prescript{1}{1}\mathrm{H}$: protium (the most common hydrogen isotope)
+- $\prescript{2}{1}\mathrm{H}$: deuterium (heavy hydrogen, one proton + one neutron)
+- $\prescript{3}{1}\mathrm{H}$: tritium (one proton + two neutrons, radioactive)
+- $\prescript{12}{6}\mathrm{C}$: carbon-12 (the standard for defining the atomic mass unit)
 
 ### Isotopes, Isobars, and Isotones
 
@@ -66,10 +66,10 @@ Examples:
 
 Examples:
 
-- Isotopes: $\prescript{1}{}{1}\mathrm{H}$$\prescript{2}{}{1}\mathrm{H}$
-  $\prescript{3}{}{1}\mathrm{H}$
-- Isobars: $\prescript{40}{}{20}\mathrm{Ca}$ and $\prescript{40}{}{18}\mathrm{Ar}$
-- Isotones: $\prescript{14}{}{6}\mathrm{C}$ and $\prescript{15}{}{7}\mathrm{N}$ (both have $N = 8$)
+- Isotopes: $\prescript{1}{1}\mathrm{H}$$\prescript{2}{1}\mathrm{H}$
+  $\prescript{3}{1}\mathrm{H}$
+- Isobars: $\prescript{40}{20}\mathrm{Ca}$ and $\prescript{40}{18}\mathrm{Ar}$
+- Isotones: $\prescript{14}{6}\mathrm{C}$ and $\prescript{15}{7}\mathrm{N}$ (both have $N = 8$)
 
 :::info In DSE exams, isotopes share the same chemical symbol and chemical behaviour. Only nuclear
 Reactions can distinguish between isotopes of the same element. :::
@@ -91,7 +91,7 @@ Neutrons to provide additional strong force to counteract the increasing electro
 
 ### Worked Example: Nuclear Notation
 
-How many protons, neutrons, and nucleons are in $\prescript{238}{}{92}\mathrm{U}$?
+How many protons, neutrons, and nucleons are in $\prescript{238}{92}\mathrm{U}$?
 
 <summary>Solution</summary>
 
@@ -122,7 +122,7 @@ There are three main types of radiation emitted by radioactive nuclei:
 
 | Property                    | Alpha ($\alpha$)                                    | Beta-minus ($\beta^-$)                      | Beta-plus ($\beta^+$)                       | Gamma ($\gamma$)                            |
 | --------------------------- | --------------------------------------------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
-| **Nature**                  | Helium nucleus $\prescript{4}{}{2}\mathrm{He}^{2+}$ | Electron $e^-$                              | Positron $e^+$                              | Electromagnetic wave                        |
+| **Nature**                  | Helium nucleus $\prescript{4}{2}\mathrm{He}^{2+}$ | Electron $e^-$                              | Positron $e^+$                              | Electromagnetic wave                        |
 | **Charge**                  | $+2e$                                               | $-e$                                        | $+e$                                        | $0$                                         |
 | **Mass (u)**                | $4.0015$                                            | $0.00055$                                   | $0.00055$                                   | $0$                                         |
 | **Speed**                   | $\sim 5\%$ of $c$                                   | Up to $99\%$ of $c$                         | Up to $99\%$ of $c$                         | $c$ (speed of light)                        |
@@ -134,16 +134,16 @@ There are three main types of radiation emitted by radioactive nuclei:
 
 ### Alpha Decay
 
-In alpha decay, the nucleus emits an alpha particle ($\prescript{4}{}{2}\mathrm{He}$), reducing both
+In alpha decay, the nucleus emits an alpha particle ($\prescript{4}{2}\mathrm{He}$), reducing both
 $A$ by $4$ and $Z$ by $2$:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A-4}{}{Z-2}\mathrm{Y} + \prescript{4}{}{2}\mathrm{He}$$
+$$\prescript{A}{Z}\mathrm{X} \to \prescript{A-4}{Z-2}\mathrm{Y} + \prescript{4}{2}\mathrm{He}$$
 
 The daughter nucleus shifts two places to the left in the periodic table.
 
 Example (radium-226 decay):
 
-$$\prescript{226}{}{88}\mathrm{Ra} \to \prescript{222}{}{86}\mathrm{Rn} + \prescript{4}{}{2}\mathrm{He}$$
+$$\prescript{226}{88}\mathrm{Ra} \to \prescript{222}{86}\mathrm{Rn} + \prescript{4}{2}\mathrm{He}$$
 
 Alpha particles are emitted with a single characteristic energy (discrete spectrum) because the
 Transition is between two well-defined nuclear energy levels. Alpha decay occurs primarily in heavy
@@ -159,7 +159,7 @@ $$n \to p + e^- + \bar{\nu}_e$$
 
 The nuclear equation is:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z+1}\mathrm{Y} + e^- + \bar{\nu}_e$$
+$$\prescript{A}{Z}\mathrm{X} \to \prescript{A}{Z+1}\mathrm{Y} + e^- + \bar{\nu}_e$$
 
 The daughter nucleus shifts one place to the right in the periodic table. The mass number $A$ does
 Not change because a neutron is replaced by a proton.
@@ -181,7 +181,7 @@ $$p \to n + e^+ + \nu_e$$
 
 The nuclear equation is:
 
-$$\prescript{A}{}{Z}\mathrm{X} \to \prescript{A}{}{Z-1}\mathrm{Y} + e^+ + \nu_e$$
+$$\prescript{A}{Z}\mathrm{X} \to \prescript{A}{Z-1}\mathrm{Y} + e^+ + \nu_e$$
 
 Beta-plus decay occurs in proton-rich nuclei. The daughter nucleus shifts one place to the left in
 The periodic table.
@@ -194,14 +194,14 @@ $$m(\mathrm{parent}) \gt m(\mathrm{daughter}) + 2m_e$$
 The extra $m_e$ is required because the daughter has one fewer electron, so one orbital electron
 Must be emitted as well. If this condition is not met, **electron capture** may occur instead:
 
-$$\prescript{A}{}{Z}\mathrm{X} + e^- \to \prescript{A}{}{Z-1}\mathrm{Y} + \nu_e$$
+$$\prescript{A}{Z}\mathrm{X} + e^- \to \prescript{A}{Z-1}\mathrm{Y} + \nu_e$$
 
 ### Gamma Radiation
 
 Gamma rays are high-energy photons emitted when a nucleus transitions from an excited state to a
 Lower energy state:
 
-$$\prescript{A}{}{Z}\mathrm{X}^* \to \prescript{A}{}{Z}\mathrm{X} + \gamma$$
+$$\prescript{A}{Z}\mathrm{X}^* \to \prescript{A}{Z}\mathrm{X} + \gamma$$
 
 The asterisk denotes an excited nuclear state. Gamma emission does not change $A$ or $Z$. It follows
 alpha or beta decay when the daughter nucleus is left in an excited state.
@@ -227,7 +227,7 @@ equation. :::
 ### Worked Example: Balancing Decay Equations
 
 Complete the following decay equation:
-$\prescript{214}{}{84}\mathrm{Po} \to \prescript{210}{}{82}\mathrm{Pb} + \ ?$
+$\prescript{214}{84}\mathrm{Po} \to \prescript{210}{82}\mathrm{Pb} + \ ?$
 
 <summary>Solution</summary>
 
@@ -235,7 +235,7 @@ Check the nucleon number: $214 - 210 = 4$
 
 Check the proton number: $84 - 82 = 2$
 
-The missing particle has $A = 4$$Z = 2$Which is an alpha particle: $\prescript{4}{}{2}\mathrm{He}$
+The missing particle has $A = 4$$Z = 2$Which is an alpha particle: $\prescript{4}{2}\mathrm{He}$
 
 ---
 
@@ -435,7 +435,7 @@ The binding energy per nucleon curve is one of the most important graphs in nucl
 
 Key points:
 
-- Iron-56 ($\prescript{56}{}{26}\mathrm{Fe}$) has the highest binding energy per nucleon and is the
+- Iron-56 ($\prescript{56}{26}\mathrm{Fe}$) has the highest binding energy per nucleon and is the
   most stable nucleus
 - Energy is released when light nuclei **fuse** (move towards the peak from the left)
 - Energy is released when heavy nuclei **fission** (move towards the peak from the right)
@@ -448,7 +448,7 @@ Three) lighter nuclei, accompanied by the release of energy and two or three neu
 
 The most studied fission reaction is uranium-235:
 
-$$\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{236}{}{92}\mathrm{U}^* \to \prescript{141}{}{56}\mathrm{Ba} + \prescript{92}{}{36}\mathrm{Kr} + 3\prescript{1}{}{0}\mathrm{n} + \mathrm{energy}$$
+$$\prescript{1}{0}\mathrm{n} + \prescript{235}{92}\mathrm{U} \to \prescript{236}{92}\mathrm{U}^* \to \prescript{141}{56}\mathrm{Ba} + \prescript{92}{36}\mathrm{Kr} + 3\prescript{1}{0}\mathrm{n} + \mathrm{energy}$$
 
 The released neutrons can induce further fission reactions, creating a **chain reaction**.
 
@@ -513,9 +513,9 @@ Reactants (moving towards the peak of the binding energy curve).
 
 Example fusion reactions:
 
-$$\prescript{2}{}{1}\mathrm{H} + \prescript{2}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 3.27 \mathrm{ MeV}$$
+$$\prescript{2}{1}\mathrm{H} + \prescript{2}{1}\mathrm{H} \to \prescript{3}{2}\mathrm{He} + \prescript{1}{0}\mathrm{n} + 3.27 \mathrm{ MeV}$$
 
-$$\prescript{2}{}{1}\mathrm{H} + \prescript{3}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + \prescript{1}{}{0}\mathrm{n} + 17.6 \mathrm{ MeV}$$
+$$\prescript{2}{1}\mathrm{H} + \prescript{3}{1}\mathrm{H} \to \prescript{4}{2}\mathrm{He} + \prescript{1}{0}\mathrm{n} + 17.6 \mathrm{ MeV}$$
 
 #### Conditions for Fusion
 
@@ -535,16 +535,16 @@ Stars are powered by fusion. The main processes are:
 **Proton-proton (pp) chain** (dominant in stars like the Sun):
 
 Step 1:
-$\prescript{1}{}{1}\mathrm{H} + \prescript{1}{}{1}\mathrm{H} \to \prescript{2}{}{1}\mathrm{H} + e^+ + \nu_e + 0.42 \mathrm{ MeV}$
+$\prescript{1}{1}\mathrm{H} + \prescript{1}{1}\mathrm{H} \to \prescript{2}{1}\mathrm{H} + e^+ + \nu_e + 0.42 \mathrm{ MeV}$
 
 Step 2:
-$\prescript{2}{}{1}\mathrm{H} + \prescript{1}{}{1}\mathrm{H} \to \prescript{3}{}{2}\mathrm{He} + \gamma + 5.49 \mathrm{ MeV}$
+$\prescript{2}{1}\mathrm{H} + \prescript{1}{1}\mathrm{H} \to \prescript{3}{2}\mathrm{He} + \gamma + 5.49 \mathrm{ MeV}$
 
 Step 3:
-$\prescript{3}{}{2}\mathrm{He} + \prescript{3}{}{2}\mathrm{He} \to \prescript{4}{}{2}\mathrm{He} + 2\prescript{1}{}{1}\mathrm{H} + 12.86 \mathrm{ MeV}$
+$\prescript{3}{2}\mathrm{He} + \prescript{3}{2}\mathrm{He} \to \prescript{4}{2}\mathrm{He} + 2\prescript{1}{1}\mathrm{H} + 12.86 \mathrm{ MeV}$
 
 Net:
-$4\prescript{1}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He} + 2e^+ + 2\nu_e + 2\gamma + 26.7 \mathrm{ MeV}$
+$4\prescript{1}{1}\mathrm{H} \to \prescript{4}{2}\mathrm{He} + 2e^+ + 2\nu_e + 2\gamma + 26.7 \mathrm{ MeV}$
 
 **CNO cycle** (dominant in stars more massive than the Sun):
 
@@ -564,7 +564,7 @@ $$Q = (m_{\mathrm{reactants}} - m_{\mathrm{products}}) \times c^2$$
 
 For the D-T fusion reaction:
 
-$$Q = [m(\prescript{2}{}{1}\mathrm{H}) + m(\prescript{3}{}{1}\mathrm{H}) - m(\prescript{4}{}{2}\mathrm{He}) - m(\prescript{1}{}{0}\mathrm{n})]c^2 = 17.6 \mathrm{ MeV}$$
+$$Q = [m(\prescript{2}{1}\mathrm{H}) + m(\prescript{3}{1}\mathrm{H}) - m(\prescript{4}{2}\mathrm{He}) - m(\prescript{1}{0}\mathrm{n})]c^2 = 17.6 \mathrm{ MeV}$$
 
 :::info In DSE calculations, always convert masses to the same units (preferably u) before computing
 The Q-value. Use $1 \mathrm{ u} = 931.5 \mathrm{ MeV}/c^2$ for the energy conversion. Remember that
@@ -794,14 +794,14 @@ Carbon-14 dating is used to determine the age of organic materials up to about $
 
 **Principle:**
 
-- Carbon-14 ($\prescript{14}{}{6}\mathrm{C}$) is produced in the upper atmosphere by cosmic ray
+- Carbon-14 ($\prescript{14}{6}\mathrm{C}$) is produced in the upper atmosphere by cosmic ray
   neutrons interacting with nitrogen-14:
 
-  $$\prescript{1}{}{0}\mathrm{n} + \prescript{14}{}{7}\mathrm{N} \to \prescript{14}{}{6}\mathrm{C} + \prescript{1}{}{1}\mathrm{H}$$
+  $$\prescript{1}{0}\mathrm{n} + \prescript{14}{7}\mathrm{N} \to \prescript{14}{6}\mathrm{C} + \prescript{1}{1}\mathrm{H}$$
 
 - C-14 is radioactive and undergoes beta-minus decay with a half-life of $5730$ years:
 
-  $$\prescript{14}{}{6}\mathrm{C} \to \prescript{14}{}{7}\mathrm{N} + e^- + \bar{\nu}_e$$
+  $$\prescript{14}{6}\mathrm{C} \to \prescript{14}{7}\mathrm{N} + e^- + \bar{\nu}_e$$
 
 - Living organisms continuously exchange carbon with the environment, maintaining a constant ratio
   of C-14 to C-12 ($\sim 1.3 \times 10^{-12}$)
@@ -993,7 +993,7 @@ He-4 is $4.003$ u.
 
 **Decay equation:**
 
-$$\prescript{222}{}{86}\mathrm{Rn} \to \prescript{218}{}{84}\mathrm{Po} + \prescript{4}{}{2}\mathrm{He}$$
+$$\prescript{222}{86}\mathrm{Rn} \to \prescript{218}{84}\mathrm{Po} + \prescript{4}{2}\mathrm{He}$$
 
 **Energy released (Q-value):**
 
@@ -1044,7 +1044,7 @@ $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{1.155 \times 10^{-3}} = 600 \ma
 
 ### Worked Example 3: Binding Energy per Nucleon
 
-Calculate the binding energy per nucleon of helium-4 ($\prescript{4}{}{2}\mathrm{He}$).
+Calculate the binding energy per nucleon of helium-4 ($\prescript{4}{2}\mathrm{He}$).
 
 Given:
 
@@ -1222,7 +1222,7 @@ Still determine half-life from count rate measurements.
 
 | Confusion                      | Correct understanding                                        |
 | ------------------------------ | ------------------------------------------------------------ |
-| Alpha = helium-4 nucleus       | $\prescript{4}{}{2}\mathrm{He}^{2+}$ (not just "helium")     |
+| Alpha = helium-4 nucleus       | $\prescript{4}{2}\mathrm{He}^{2+}$ (not just "helium")     |
 | Beta-minus = electron          | Emitted from the nucleus (not an orbital electron)           |
 | Beta-plus = positron           | Not the same as beta-minus; emitted by proton-rich nuclei    |
 | Gamma = photon                 | No charge, no mass; travels at $c$                           |
@@ -1295,9 +1295,9 @@ When calculating mass defects and binding energies, be consistent with the masse
 For most DSE problems, atomic masses are given, and the calculation simplifies because the electron
 Masses cancel:
 
-$$\Delta m = Z \cdot m(\prescript{1}{}{1}\mathrm{H}) + N \cdot m_n - m(\prescript{A}{}{Z}\mathrm{X})$$
+$$\Delta m = Z \cdot m(\prescript{1}{1}\mathrm{H}) + N \cdot m_n - m(\prescript{A}{Z}\mathrm{X})$$
 
-Where $m(\prescript{1}{}{1}\mathrm{H})$ is the atomic mass of hydrogen (proton + electron).
+Where $m(\prescript{1}{1}\mathrm{H})$ is the atomic mass of hydrogen (proton + electron).
 
 :::warning Warning Atomic masses are provided. Mixing the two conventions will lead to incorrect
 results. When in Doubt, use atomic masses (the more common convention in exam questions) and note
@@ -1325,7 +1325,7 @@ Concentrated in a small volume of tissue.
 
 Complete the following beta-minus decay equation and identify the daughter nucleus:
 
-$\prescript{60}{}{27}\mathrm{Co} \to \ ? + e^- + \bar{\nu}_e$
+$\prescript{60}{27}\mathrm{Co} \to \ ? + e^- + \bar{\nu}_e$
 
 ### Details
 
@@ -1335,9 +1335,9 @@ In beta-minus decay, $Z$ increases by 1 while $A$ stays the same.
 
 Daughter nucleus: $A = 60$$Z = 27 + 1 = 28$
 
-$\prescript{60}{}{27}\mathrm{Co} \to \prescript{60}{}{28}\mathrm{Ni} + e^- + \bar{\nu}_e$
+$\prescript{60}{27}\mathrm{Co} \to \prescript{60}{28}\mathrm{Ni} + e^- + \bar{\nu}_e$
 
-The daughter is nickel-60 ($\prescript{60}{}{28}\mathrm{Ni}$).
+The daughter is nickel-60 ($\prescript{60}{28}\mathrm{Ni}$).
 
 _If you get this wrong, revise: Beta-minus decay — $Z$ increases by 1, $A$ stays the same._
 
@@ -1388,7 +1388,7 @@ Data._
 
 Calculate the Q-value of the fission reaction:
 
-$\prescript{1}{}{0}\mathrm{n} + \prescript{235}{}{92}\mathrm{U} \to \prescript{144}{}{56}\mathrm{Ba} + \prescript{89}{}{36}\mathrm{Kr} + 3\prescript{1}{}{0}\mathrm{n}$
+$\prescript{1}{0}\mathrm{n} + \prescript{235}{92}\mathrm{U} \to \prescript{144}{56}\mathrm{Ba} + \prescript{89}{36}\mathrm{Kr} + 3\prescript{1}{0}\mathrm{n}$
 
 Given: $m(\mathrm{n}) = 1.008665$ u, $m(\mathrm{U\mathrm{-}235}) = 235.043930$ u,
 $m(\mathrm{Ba\mathrm{-}144}) = 143.922953$ u, $m(\mathrm{Kr\mathrm{-}89}) = 88.917630$ u.
@@ -1408,12 +1408,12 @@ Including released neutrons._
 
 <summary>Problem 5: Comparing Binding Energies</summary>
 
-The binding energy per nucleon of deuterium ($\prescript{2}{}{1}\mathrm{H}$) is
-$1.11 \mathrm{ MeV/nucleon}$ And that of helium-4 ($\prescript{4}{}{2}\mathrm{He}$) is
+The binding energy per nucleon of deuterium ($\prescript{2}{1}\mathrm{H}$) is
+$1.11 \mathrm{ MeV/nucleon}$ And that of helium-4 ($\prescript{4}{2}\mathrm{He}$) is
 $7.07 \mathrm{ MeV/nucleon}$. Calculate The energy released when two deuterium nuclei fuse to form
 helium-4:
 
-$2\prescript{2}{}{1}\mathrm{H} \to \prescript{4}{}{2}\mathrm{He}$
+$2\prescript{2}{1}\mathrm{H} \to \prescript{4}{2}\mathrm{He}$
 
 <summary>Solution</summary>
 
@@ -1601,7 +1601,7 @@ over beta-plus decay for this isotope.
 
 <summary>Solution</summary>
 
-$$\prescript{7}{}{4}\mathrm{Be} + e^- \to \prescript{7}{}{3}\mathrm{Li} + \nu_e$$
+$$\prescript{7}{4}\mathrm{Be} + e^- \to \prescript{7}{3}\mathrm{Li} + \nu_e$$
 
 Electron capture is favoured because:
 

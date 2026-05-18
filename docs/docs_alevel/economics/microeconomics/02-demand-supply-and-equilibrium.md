@@ -116,7 +116,7 @@ First-order condition:
 
 $$\frac◆LB◆d\pi◆RB◆◆LB◆dQ◆RB◆ = P - C'(Q) = 0 \implies P = MC(Q)$$
 
-Where $MC(Q) = C'(Q)$ is marginal cost. Second-order condition requires $C''(Q) \gt{} 0$ (MC
+Where $MC(Q) = C'(Q)$ is marginal cost. Second-order condition requires $C''(Q) \gt 0$ (MC
 Rising). The **supply curve** of a competitive firm is the portion of its $MC$ curve above the
 Average variable cost (AVC) curve.
 
@@ -148,11 +148,11 @@ Equals quantity supplied:
 
 $$Q_D(P^*) = Q_S(P^*)$$
 
-**Stability proof.** Suppose price $P_1 \gt{} P^*$. Then $Q_S(P_1) \gt{} Q_D(P_1)$ — there is excess
+**Stability proof.** Suppose price $P_1 \gt P^*$. Then $Q_S(P_1) \gt Q_D(P_1)$ — there is excess
 Supply (a surplus). Unsold goods pile up, so firms cut prices. As price falls, quantity demanded
 Rises and quantity supplied falls until equilibrium is restored.
 
-Suppose price $P_2 \lt{} P^*$. Then $Q_D(P_2) \gt{} Q_S(P_2)$ — there is excess demand (a shortage).
+Suppose price $P_2 \lt P^*$. Then $Q_D(P_2) \gt Q_S(P_2)$ — there is excess demand (a shortage).
 Consumers bid up prices. As price rises, quantity supplied rises and quantity demanded falls until
 Equilibrium is restored.
 
@@ -184,7 +184,7 @@ We define the **price elasticity of demand** as:
 
 $$\mathrm{PED} = \frac◆LB◆\%\Delta Q_d◆RB◆◆LB◆\%\Delta P◆RB◆ = \frac◆LB◆\Delta Q_d / Q_d◆RB◆◆LB◆\Delta P / P◆RB◆ = \frac{P}{Q_d} \cdot \frac◆LB◆\Delta Q_d◆RB◆◆LB◆\Delta P◆RB◆$$
 
-Since the demand curve slopes downward, $\mathrm{PED} \lt{} 0$. We often state the _absolute value_
+Since the demand curve slopes downward, $\mathrm{PED} \lt 0$. We often state the _absolute value_
 $|\mathrm{PED}|$.
 
 **Classification:**
@@ -192,9 +192,9 @@ $|\mathrm{PED}|$.
 | Value                               | Description         | Interpretation               |
 | ----------------------------------- | ------------------- | ---------------------------- |
 | $\mathrm{PED} = 0$                  | Perfectly inelastic | Vertical demand curve        |
-| $0 \lt{} \mathrm{PED} \lt{} 1$      | Inelastic           | %$\Delta Q$ &lt; %$\Delta P$ |
+| $0 \lt \mathrm{PED} \lt 1$      | Inelastic           | %$\Delta Q$ &lt; %$\Delta P$ |
 | $\mathrm{PED} = 1$                  | Unit elastic        | %$\Delta Q$ = %$\Delta P$    |
-| $1 \lt{} \mathrm{PED} \lt{} \infty$ | Elastic             | %$\Delta Q$ &gt; %$\Delta P$ |
+| $1 \lt \mathrm{PED} \lt \infty$ | Elastic             | %$\Delta Q$ &gt; %$\Delta P$ |
 | $\mathrm{PED} = \infty$             | Perfectly elastic   | Horizontal demand curve      |
 
 ### 4.2 PED and Total Revenue
@@ -205,9 +205,9 @@ $$\frac{d(TR)}{dP} = Q + P \cdot \frac{dQ}{dP} = Q\left(1 + \frac{P}{Q} \cdot \f
 
 Since PED < 0:
 
-- If $|\mathrm{PED}| \gt{} 1$ (elastic): $\frac{d(TR)}{dP} \lt{} 0$. Price increase $\Rightarrow$
+- If $|\mathrm{PED}| \gt 1$ (elastic): $\frac{d(TR)}{dP} \lt 0$. Price increase $\Rightarrow$
   revenue _falls_.
-- If $|\mathrm{PED}| \lt{} 1$ (inelastic): $\frac{d(TR)}{dP} \gt{} 0$. Price increase $\Rightarrow$
+- If $|\mathrm{PED}| \lt 1$ (inelastic): $\frac{d(TR)}{dP} \gt 0$. Price increase $\Rightarrow$
   revenue _rises_.
 - If $|\mathrm{PED}| = 1$ (unit elastic): $\frac{d(TR)}{dP} = 0$. Revenue is _maximised_.
 
@@ -387,7 +387,7 @@ Evaluate this statement.
 
 <details>
 <summary>Hint</summary>
-False. A profit-maximising firm produces where $MR = MC$Not where $TR$ is maximised ($MR = 0$). Since $MC \gt{} 0$ (), the profit-maximising output is lower than the revenue-maximising output. Only if $MC = 0$ would the two coincide.
+False. A profit-maximising firm produces where $MR = MC$Not where $TR$ is maximised ($MR = 0$). Since $MC \gt 0$ (), the profit-maximising output is lower than the revenue-maximising output. Only if $MC = 0$ would the two coincide.
 </details>
 
 **Problem 9.** When the price of cinema tickets rises from £8 to £10, weekly attendance falls from
@@ -437,8 +437,8 @@ Equilibrium price and quantity, and verify stability.
 
 $Q^* = 200 - 4(18) = 200 - 72 = 128$.
 
-**Stability check.** At $P = 20 \gt{} P^*$: $Q_D = 120$$Q_S = 140$. Excess supply of $20$ units
-$\implies$ price falls. At $P = 15 \lt{} P^*$: $Q_D = 140$$Q_S = 110$. Excess demand of $30$ units
+**Stability check.** At $P = 20 \gt P^*$: $Q_D = 120$$Q_S = 140$. Excess supply of $20$ units
+$\implies$ price falls. At $P = 15 \lt P^*$: $Q_D = 140$$Q_S = 110$. Excess demand of $30$ units
 $\implies$ price rises. The equilibrium is stable. $\square$
 
 ### 8.2 Simultaneous Shifts in Demand and Supply
@@ -462,7 +462,7 @@ $P^*$ definitely increases. Quantity could increase or decrease depending on whi
 
 **Example.** "The price of coffee rises. Explain the effect on the market for tea."
 
-**Correct analysis.** Coffee and tea are substitutes ($\mathrm{XED} \gt{} 0$). A rise in the price
+**Correct analysis.** Coffee and tea are substitutes ($\mathrm{XED} \gt 0$). A rise in the price
 Of coffee shifts the demand curve for tea to the **right** (increase in demand for tea). At the
 Original price, there is now excess demand for tea. The price of tea rises, and the quantity of tea
 Traded increases. This is a **shift** in the demand curve, not a movement along it.
@@ -544,7 +544,7 @@ Calculate YED for each and classify the goods.
 $= \frac{(475-500)/487.5}{(33000-30000)/31500} = \frac{-0.0513}{0.0952} = -0.54$. Negative YED
 $\implies$ bus travel is an inferior good.
 
-Foreign holidays: YED $= \frac{(230-200)/215}{0.0952} = \frac{0.1395}{0.0952} = 1.47$. YED $\gt{} 1$
+Foreign holidays: YED $= \frac{(230-200)/215}{0.0952} = \frac{0.1395}{0.0952} = 1.47$. YED $\gt 1$
 $\implies$ foreign holidays are a luxury (normal good).
 
 ### 12.2 Using XED for Competition Policy
@@ -593,7 +593,7 @@ In quantity demanded and the effect on total revenue.
 
 <details>
 <summary>Hint</summary>
-$\%\Delta Q_d = \mathrm{PED} \times \%\Delta P = -0.4 \times 10 = -4\%$. Quantity falls by 4%. Since $|\mathrm{PED}| \lt{} 1$ (inelastic), revenue rises. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue increases by 5.6%.
+$\%\Delta Q_d = \mathrm{PED} \times \%\Delta P = -0.4 \times 10 = -4\%$. Quantity falls by 4%. Since $|\mathrm{PED}| \lt 1$ (inelastic), revenue rises. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue increases by 5.6%.
 </details>
 
 **Problem 3.** The government imposes a $£5$ per unit tax on a good with demand $Q_D = 100 - P$ and
@@ -610,7 +610,7 @@ Demand elastic or inelastic?
 
 <details>
 <summary>Hint</summary>
-Original quantity $= 200/10 = 20$. PED (midpoint) $= \frac{(15-20)/17.5}{(12-10)/11} = \frac{-0.286}{0.182} = -1.57$. $|\mathrm{PED}| \gt{} 1$So demand is elastic.
+Original quantity $= 200/10 = 20$. PED (midpoint) $= \frac{(15-20)/17.5}{(12-10)/11} = \frac{-0.286}{0.182} = -1.57$. $|\mathrm{PED}| \gt 1$So demand is elastic.
 </details>
 
 **Problem 5.** Demand for electric cars is $Q_D = 50 + 0.5Y - 3P$ where $Y$ is income. When $Y = 40$

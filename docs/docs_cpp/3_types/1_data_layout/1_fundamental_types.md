@@ -244,7 +244,7 @@ An IEEE 754 floating-point number encodes a signed value using three fields:
 
 The encoded value is:
 
-$$\mathrm{value{} = (-1)^{\mathrm{sign{}} \times 2^{(\mathrm{exponent{} - \mathrm{bias{})} \times (1.\mathrm{mantissa{})$$
+$$\mathrm{value = (-1)^{\mathrm{sign} \times 2^{(\mathrm{exponent - \mathrm{bias)} \times (1.\mathrm{mantissa)$$
 
 The implicit leading `1.` (the "hidden bit") is the key optimization of IEEE 754: since the mantissa
 Is normalized so the leading digit is always 1, it need not be stored.

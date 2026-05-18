@@ -61,10 +61,10 @@ inference is _modus ponens_: from $P \implies Q$ and $P$We deduce $Q$.
 
 **(a)** Negate the following statement:
 
-$$\forall \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{{'}R{}'}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \lt \varepsilon)$$
+$$\forall \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{R}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \lt \varepsilon)$$
 
 **(b)** A student writes the negation as
-"$\exists \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{{'}R{}'}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \geq \varepsilon)$".
+"$\exists \varepsilon \gt 0, \; \exists \delta \gt 0, \; \forall x \in \mathbb{R}, \; (0 \lt |x - a| \lt \delta) \implies (|f(x) - f(a)| \geq \varepsilon)$".
 Identify the errors.
 
 [Difficulty: hard. Tests correct negation of nested quantifiers and the implication.]
@@ -78,7 +78,7 @@ $$\neg(P \implies Q) = \neg(\neg P \vee Q) = P \wedge \neg Q$$
 
 So:
 
-$$\exists \varepsilon \gt 0, \; \forall \delta \gt 0, \; \exists x \in \mathbb{{'}R{}'}, \; (0 \lt |x - a| \lt \delta) \;\wedge\; (|f(x) - f(a)| \geq \varepsilon)$$
+$$\exists \varepsilon \gt 0, \; \forall \delta \gt 0, \; \exists x \in \mathbb{R}, \; (0 \lt |x - a| \lt \delta) \;\wedge\; (|f(x) - f(a)| \geq \varepsilon)$$
 
 **(b)** The student made two errors:
 
@@ -122,7 +122,7 @@ odd, $n^3 + 5n = 2(4k^3 + 6k^2 + 9k + 3)$ is always even. So $n^3 + 5n$ is even 
 $n$Not just even ones. The original statement is false, and the student's work inadvertently proves
 this.
 
-**(b)** The correct approach: since $n^3 + 5n$ is even for all $n \in \mathbb{{'}Z{}'}$ (as shown
+**(b)** The correct approach: since $n^3 + 5n$ is even for all $n \in \mathbb{Z}$ (as shown
 above), the statement "if $n^3 + 5n$ is even, then $n$ is even" is **false**. A counterexample is
 $n = 1$: $1 + 5 = 6$ is even, but $n = 1$ is odd.
 
@@ -137,7 +137,7 @@ $n = 1$: $1 + 5 = 6$ is even, but $n = 1$ is odd.
 **Question:**
 
 Prove by mathematical induction that $3^{2n} + 2^{n+2}$ is divisible by $7$ for all
-$n \in \mathbb{{'}N{}'}$.
+$n \in \mathbb{N}$.
 
 [Difficulty: hard. Combines proof by induction with number-theoretic divisibility.]
 
@@ -150,7 +150,7 @@ The correct statement should be $3^{2n+1} + 2^{n+2}$. Verification:
 $3^{2(1)+1} + 2^{1+2} = 27 + 8 = 35 = 7 \times 5$.
 
 **Corrected problem:** Prove that $3^{2n+1} + 2^{n+2}$ is divisible by $7$ for all
-$n \in \mathbb{{'}N{}'}$.
+$n \in \mathbb{N}$.
 
 **Base case ($n = 0$):** $3^1 + 2^2 = 3 + 4 = 7$Divisible by $7$. True.
 

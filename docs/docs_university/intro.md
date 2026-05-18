@@ -65,11 +65,11 @@ Admonitions where appropriate.
 
 | Symbol                                                                                     | Meaning                                           |
 | ------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| $\mathbb{{'}R{}'}, \mathbb{{'}C{}'}, \mathbb{{'}Z{}'}, \mathbb{{'}N{}'}, \mathbb{{'}Q{}'}$ | Real, complex, integer, natural, rational numbers |
+| $\mathbb{R}, \mathbb{C}, \mathbb{Z}, \mathbb{N}, \mathbb{Q}$ | Real, complex, integer, natural, rational numbers |
 | $\forall, \exists$                                                                         | Universal and existential quantifiers             |
 | $\implies, \iff$                                                                           | Implies, if and only if                           |
 | $\in, \subseteq$                                                                           | Element of, subset of                             |
-| $\mathbf{{'}v{}'}, \mathbf{{'}A{}'}$                                                       | Vectors and matrices (bold)                       |
+| $\mathbf{v}, \mathbf{A}$                                                       | Vectors and matrices (bold)                       |
 | $\lVert \cdot \rVert$                                                                      | Norm                                              |
 | $\langle \cdot, \cdot \rangle$                                                             | Inner product                                     |
 | $\nabla$                                                                                   | Gradient / del operator                           |

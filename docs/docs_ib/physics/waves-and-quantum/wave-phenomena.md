@@ -264,9 +264,9 @@ $589\,\mathrm{nm}$. Find the angles of the first two orders.
 
 $$d = \frac{1}{500 \times 10^3} = 2.0 \times 10^{-6}\,\mathrm{m}$$
 
-$$\sin\theta_1 = \frac{1 \times 589 \times 10^{-9}}{2.0 \times 10^{-6}} = 0.2945 \implies \theta_1 \approx 17.1\,{}^{\circ}$$
+$$\sin\theta_1 = \frac{1 \times 589 \times 10^{-9}}{2.0 \times 10^{-6}} = 0.2945 \implies \theta_1 \approx 17.1\,^{\circ}$$
 
-$$\sin\theta_2 = \frac{2 \times 589 \times 10^{-9}}{2.0 \times 10^{-6}} = 0.589 \implies \theta_2 \approx 36.1\,{}^{\circ}$$
+$$\sin\theta_2 = \frac{2 \times 589 \times 10^{-9}}{2.0 \times 10^{-6}} = 0.589 \implies \theta_2 \approx 36.1\,^{\circ}$$
 
 ### Applications
 
@@ -416,12 +416,12 @@ Polarisation direction:
 $$I = I_0\cos^2\theta$$
 
 **Example.** Unpolarised light passes through two polarising filters. The first is vertical; the
-Second is at $30\,{}^{\circ}$ to the vertical. What fraction of the original intensity emerges?
+Second is at $30\,^{\circ}$ to the vertical. What fraction of the original intensity emerges?
 
 After the first filter: $I_1 = \dfrac{I_0}{2}$ (half transmitted for unpolarised light).
 
 After the second filter (Malus's law):
-$I_2 = I_1\cos^2 30\,{}^{\circ} = \dfrac{I_0}{2} \cdot \dfrac{3}{4}
+$I_2 = I_1\cos^2 30\,^{\circ} = \dfrac{I_0}{2} \cdot \dfrac{3}{4}
 = \dfrac{3}{8}I_0$.
 
 ### Brewster's Angle
@@ -433,7 +433,7 @@ $$\tan\theta_B = \frac{n_2}{n_1}$$
 
 **Example.** Find Brewster's angle for light reflecting off water ($n = 1.33$).
 
-$$\theta_B = \arctan(1.33) \approx 53.1\,{}^{\circ}$$
+$$\theta_B = \arctan(1.33) \approx 53.1\,^{\circ}$$
 
 ---
 

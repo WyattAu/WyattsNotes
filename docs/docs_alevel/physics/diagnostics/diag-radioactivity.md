@@ -121,7 +121,7 @@ $2.0$. More time is needed.
 
 The isotope carbon-14 undergoes beta-minus decay to nitrogen-14:
 
-$${}^{14}_{\ 6}\text{C} \to {}^{14}_{\ 7}\text{N} + {}^{\ 0}_{-1}\text{e} + \bar{\nu}_e$$
+$$^{14}_{\ 6}\text{C} \to ^{14}_{\ 7}\text{N} + ^{\ 0}_{-1}\text{e} + \bar{\nu}_e$$
 
 The Q-value of the decay is $0.156\,\text{MeV}$.
 

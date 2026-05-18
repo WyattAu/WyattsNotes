@@ -73,7 +73,7 @@ circuit. Pulmonary circulation (heart $\to$ lungs $\to$ heart) and systemic circ
 body $\to$ heart). The heart re-pressurises the blood for each circuit, maintaining high pressure
 for efficient delivery to the body.
 
-(c) Cardiac output $= \text{heart rate{} \times \text{stroke volume{} = 72 \times 70 = 5040$ mL/min
+(c) Cardiac output $= \text{heart rate \times \text{stroke volume = 72 \times 70 = 5040$ mL/min
 $= 5.04$ L/min.
 
 (d) The left ventricle pumps blood to the entire body (systemic circulation) through the aorta,

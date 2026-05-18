@@ -85,7 +85,7 @@ $$C = E_{\mathrm{pub}}(M), \quad M = D_{\mathrm{priv}}(C)$$
 1. Choose two large primes $p$ and $q$
 2. Compute $n = p \times q$
 3. Compute $\phi(n) = (p-1)(q-1)$ (Euler's totient)
-4. Choose $e$ such that $1 \lt{} e \lt{} \phi(n)$ and $\gcd(e, \phi(n)) = 1$
+4. Choose $e$ such that $1 \lt e \lt \phi(n)$ and $\gcd(e, \phi(n)) = 1$
 5. Compute $d$ such that $d \cdot e \equiv 1 \pmod{\phi(n)}$
 
 Public key: $(e, n)$. Private key: $(d, n)$.
@@ -113,7 +113,7 @@ Therefore:
 $M^{ed} = M^{1 + k\phi(n)} = M \cdot (M^{\phi(n)})^k \equiv M \cdot 1^k \equiv M \pmod{n}$. ✓
 
 **Case 2:** $\gcd(M, n) \neq 1$. Since $n = pq$$M$ must be divisible by $p$ or $q$ (but not both,
-Since $M \lt{} n = pq$).
+Since $M \lt n = pq$).
 
 Without loss of generality, let $M \equiv 0 \pmod{p}$. Then $M^{ed} \equiv 0 \equiv M \pmod{p}$. ✓
 

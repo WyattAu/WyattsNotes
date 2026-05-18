@@ -16,10 +16,10 @@ slug: multivariable-calculus
 
 ### 1.1 Definition
 
-Let $f : D \subseteq \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}$. The **partial derivative** of $f$
-with respect to $x_i$ at $\mathbf{{'}a{}'} = (a_1, \ldots, a_n)$ is
+Let $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$. The **partial derivative** of $f$
+with respect to $x_i$ at $\mathbf{a} = (a_1, \ldots, a_n)$ is
 
-$$\frac{\partial f}{\partial x_i}(\mathbf{{'}a{}'}) = \lim_{h \to 0} \frac{f(a_1, \ldots, a_i + h, \ldots, a_n) - f(a_1, \ldots, a_n)}{h}$$
+$$\frac{\partial f}{\partial x_i}(\mathbf{a}) = \lim_{h \to 0} \frac{f(a_1, \ldots, a_i + h, \ldots, a_n) - f(a_1, \ldots, a_n)}{h}$$
 
 Provided the limit exists. This is the rate of change of $f$ in the direction of the $x_i$-axis,
 Holding all other variables fixed.
@@ -66,110 +66,110 @@ the mixed partials may differ.
 
 ### 1.3 Differentiability
 
-**Definition.** $f : D \subseteq \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}$ is **differentiable** at
-$\mathbf{{'}a{}'}$ if There exists a linear map $L : \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}$ such
+**Definition.** $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ is **differentiable** at
+$\mathbf{a}$ if There exists a linear map $L : \mathbb{R}^n \to \mathbb{R}$ such
 that
 
-$$\lim_{\mathbf{{'}h{}'} \to \mathbf{{'}0{}'}} \frac{f(\mathbf{{'}a{}'} + \mathbf{{'}h{}'}) - f(\mathbf{{'}a{}'}) - L(\mathbf{{'}h{}'})}{\lVert \mathbf{{'}h{}'} \rVert} = 0$$
+$$\lim_{\mathbf{h} \to \mathbf{0}} \frac{f(\mathbf{a} + \mathbf{h}) - f(\mathbf{a}) - L(\mathbf{h})}{\lVert \mathbf{h} \rVert} = 0$$
 
-When $f$ is differentiable at $\mathbf{{'}a{}'}$The linear map $L$ is given by the gradient.
+When $f$ is differentiable at $\mathbf{a}$The linear map $L$ is given by the gradient.
 
 _Remark._ Existence of all partial derivatives at a point does **not** imply differentiability at
 That point. The canonical counterexample is
 
-$$f(x,y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & \mathrm{if{}\ (x,y) \neq (0,0), \\ 0 & \mathrm{if{}\ (x,y) = (0,0). \end{cases}$$
+$$f(x,y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & \mathrm{if\ (x,y) \neq (0,0), \\ 0 & \mathrm{if\ (x,y) = (0,0). \end{cases}$$
 
 Both $f_x(0,0)$ and $f_y(0,0)$ exist (and equal $0$), yet $f$ is not even continuous at the origin,
 Hence not differentiable.
 
 ### 1.4 The Gradient
 
-The **gradient** of $f$ at $\mathbf{{'}a{}'}$ is
+The **gradient** of $f$ at $\mathbf{a}$ is
 
-$$\nabla f(\mathbf{{'}a{}'}) = \left(\frac{\partial f}{\partial x_1}(\mathbf{{'}a{}'}), \ldots, \frac{\partial f}{\partial x_n}(\mathbf{{'}a{}'})\right)$$
+$$\nabla f(\mathbf{a}) = \left(\frac{\partial f}{\partial x_1}(\mathbf{a}), \ldots, \frac{\partial f}{\partial x_n}(\mathbf{a})\right)$$
 
-The linear approximation of $f$ near $\mathbf{{'}a{}'}$ is
+The linear approximation of $f$ near $\mathbf{a}$ is
 
-$$f(\mathbf{{'}a{}'} + \mathbf{{'}h{}'}) \approx f(\mathbf{{'}a{}'}) + \nabla f(\mathbf{{'}a{}'}) \cdot \mathbf{{'}h{}'}$$
+$$f(\mathbf{a} + \mathbf{h}) \approx f(\mathbf{a}) + \nabla f(\mathbf{a}) \cdot \mathbf{h}$$
 
 **Theorem 1.2.** If all partial derivatives of $f$ exist and are continuous in a neighbourhood of
-$\mathbf{{'}a{}'}$Then $f$ is differentiable at $\mathbf{{'}a{}'}$.
+$\mathbf{a}$Then $f$ is differentiable at $\mathbf{a}$.
 
 _Remark._ Functions whose partial derivatives exist and are continuous on an open set $U$ are called
 $C^1(U)$. Theorem 1.2 says $C^1 \implies$ differentiable. The converse is false: there exist
 Differentiable functions whose partial derivatives are not continuous.
 
-**Proposition.** If $f$ is differentiable at $\mathbf{{'}a{}'}$Then $f$ is continuous at
-$\mathbf{{'}a{}'}$.
+**Proposition.** If $f$ is differentiable at $\mathbf{a}$Then $f$ is continuous at
+$\mathbf{a}$.
 
 _Proof._ From the definition of differentiability:
 
-$$f(\mathbf{{'}a{}'} + \mathbf{{'}h{}'}) - f(\mathbf{{'}a{}'}) = L(\mathbf{{'}h{}'}) + \varepsilon(\mathbf{{'}h{}'})\lVert \mathbf{{'}h{}'} \rVert$$
+$$f(\mathbf{a} + \mathbf{h}) - f(\mathbf{a}) = L(\mathbf{h}) + \varepsilon(\mathbf{h})\lVert \mathbf{h} \rVert$$
 
-Where $L$ is linear and $\varepsilon(\mathbf{{'}h{}'}) \to 0$ as
-$\mathbf{{'}h{}'} \to \mathbf{{'}0{}'}$. As $\mathbf{{'}h{}'} \to \mathbf{{'}0{}'}$ Both terms on
-the right vanish, so $f(\mathbf{{'}a{}'} + \mathbf{{'}h{}'}) \to f(\mathbf{{'}a{}'})$.
+Where $L$ is linear and $\varepsilon(\mathbf{h}) \to 0$ as
+$\mathbf{h} \to \mathbf{0}$. As $\mathbf{h} \to \mathbf{0}$ Both terms on
+the right vanish, so $f(\mathbf{a} + \mathbf{h}) \to f(\mathbf{a})$.
 $\blacksquare$
 
 ### 1.5 Directional Derivatives
 
-The **directional derivative** of $f$ at $\mathbf{{'}a{}'}$ in the direction of a unit vector
-$\mathbf{{'}u{}'}$ is
+The **directional derivative** of $f$ at $\mathbf{a}$ in the direction of a unit vector
+$\mathbf{u}$ is
 
-$$D_{\mathbf{{'}u{}'}} f(\mathbf{{'}a{}'}) = \lim_{h \to 0} \frac{f(\mathbf{{'}a{}'} + h\mathbf{{'}u{}'}) - f(\mathbf{{'}a{}'})}{h}$$
+$$D_{\mathbf{u}} f(\mathbf{a}) = \lim_{h \to 0} \frac{f(\mathbf{a} + h\mathbf{u}) - f(\mathbf{a})}{h}$$
 
-**Theorem 1.3.** If $f$ is differentiable at $\mathbf{{'}a{}'}$Then
+**Theorem 1.3.** If $f$ is differentiable at $\mathbf{a}$Then
 
-$$D_{\mathbf{{'}u{}'}} f(\mathbf{{'}a{}'}) = \nabla f(\mathbf{{'}a{}'}) \cdot \mathbf{{'}u{}'}$$
+$$D_{\mathbf{u}} f(\mathbf{a}) = \nabla f(\mathbf{a}) \cdot \mathbf{u}$$
 
-_Proof._ Since $f$ is differentiable at $\mathbf{{'}a{}'}$
+_Proof._ Since $f$ is differentiable at $\mathbf{a}$
 
-$$\frac{f(\mathbf{{'}a{}'} + h\mathbf{{'}u{}'}) - f(\mathbf{{'}a{}'})}{h} = \frac{\nabla f(\mathbf{{'}a{}'}) \cdot (h\mathbf{{'}u{}'}) + \varepsilon(h\mathbf{{'}u{}'}) \lVert h\mathbf{{'}u{}'} \rVert}{h}$$
+$$\frac{f(\mathbf{a} + h\mathbf{u}) - f(\mathbf{a})}{h} = \frac{\nabla f(\mathbf{a}) \cdot (h\mathbf{u}) + \varepsilon(h\mathbf{u}) \lVert h\mathbf{u} \rVert}{h}$$
 
-$$= \nabla f(\mathbf{{'}a{}'}) \cdot \mathbf{{'}u{}'} + \varepsilon(h\mathbf{{'}u{}'}) \lVert \mathbf{{'}u{}'} \rVert$$
+$$= \nabla f(\mathbf{a}) \cdot \mathbf{u} + \varepsilon(h\mathbf{u}) \lVert \mathbf{u} \rVert$$
 
-Where $\varepsilon(\mathbf{{'}h{}'}) \to 0$ as $\mathbf{{'}h{}'} \to \mathbf{{'}0{}'}$. Taking
+Where $\varepsilon(\mathbf{h}) \to 0$ as $\mathbf{h} \to \mathbf{0}$. Taking
 $h \to 0$ gives the result. $\blacksquare$
 
 **Corollary 1.4.** The gradient points in the direction of steepest ascent, and
 $\lVert \nabla f \rVert$ Is the rate of steepest ascent.
 
 _Proof._ By the Cauchy--Schwarz inequality,
-$\lvert \nabla f \cdot \mathbf{{'}u{}'} \rvert \leq \lVert \nabla f \rVert \cdot \lVert \mathbf{{'}u{}'} \rVert = \lVert \nabla f \rVert$
-With equality when $\mathbf{{'}u{}'}$ is parallel to $\nabla f$. $\blacksquare$
+$\lvert \nabla f \cdot \mathbf{u} \rvert \leq \lVert \nabla f \rVert \cdot \lVert \mathbf{u} \rVert = \lVert \nabla f \rVert$
+With equality when $\mathbf{u}$ is parallel to $\nabla f$. $\blacksquare$
 
 ### 1.6 Chain Rule
 
 **Theorem 1.5 (Multivariable Chain Rule).** If
-$\mathbf{{'}g{}'} : \mathbb{{'}R{}'}^m \to \mathbb{{'}R{}'}^n$ is Differentiable at
-$\mathbf{{'}a{}'}$ and $f : \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}$ is differentiable at
-$\mathbf{{'}g{}'}(\mathbf{{'}a{}'})$Then
+$\mathbf{g} : \mathbb{R}^m \to \mathbb{R}^n$ is Differentiable at
+$\mathbf{a}$ and $f : \mathbb{R}^n \to \mathbb{R}$ is differentiable at
+$\mathbf{g}(\mathbf{a})$Then
 
-$$\nabla (f \circ \mathbf{{'}g{}'})(\mathbf{{'}a{}'}) = J\mathbf{{'}g{}'}(\mathbf{{'}a{}'})^T \nabla f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'}))$$
+$$\nabla (f \circ \mathbf{g})(\mathbf{a}) = J\mathbf{g}(\mathbf{a})^T \nabla f(\mathbf{g}(\mathbf{a}))$$
 
-Where $J\mathbf{{'}g{}'}$ is the Jacobian matrix of $\mathbf{{'}g{}'}$.
+Where $J\mathbf{g}$ is the Jacobian matrix of $\mathbf{g}$.
 
-_Proof._ Write $h(t) = f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'} + t\mathbf{{'}v{}'}))$ for a fixed
-direction $\mathbf{{'}v{}'}$. Then
+_Proof._ Write $h(t) = f(\mathbf{g}(\mathbf{a} + t\mathbf{v}))$ for a fixed
+direction $\mathbf{v}$. Then
 
-$$\frac{h(t) - h(0)}{t} = \frac{f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'} + t\mathbf{{'}v{}'})) - f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'}))}{t}$$
+$$\frac{h(t) - h(0)}{t} = \frac{f(\mathbf{g}(\mathbf{a} + t\mathbf{v})) - f(\mathbf{g}(\mathbf{a}))}{t}$$
 
 Let
-$\mathbf{{'}k{}'} = \mathbf{{'}g{}'}(\mathbf{{'}a{}'} + t\mathbf{{'}v{}'}) - \mathbf{{'}g{}'}(\mathbf{{'}a{}'})$.
-By differentiability of $\mathbf{{'}g{}'}$
-$\mathbf{{'}k{}'} = J\mathbf{{'}g{}'}(\mathbf{{'}a{}'})(t\mathbf{{'}v{}'}) + o(t)$And
-$\mathbf{{'}k{}'} \to \mathbf{{'}0{}'}$ as $t \to 0$. By Differentiability of $f$:
+$\mathbf{k} = \mathbf{g}(\mathbf{a} + t\mathbf{v}) - \mathbf{g}(\mathbf{a})$.
+By differentiability of $\mathbf{g}$
+$\mathbf{k} = J\mathbf{g}(\mathbf{a})(t\mathbf{v}) + o(t)$And
+$\mathbf{k} \to \mathbf{0}$ as $t \to 0$. By Differentiability of $f$:
 
-$$f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'}) + \mathbf{{'}k{}'}) - f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'})) = \nabla f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'})) \cdot \mathbf{{'}k{}'} + o(\lVert \mathbf{{'}k{}'} \rVert)$$
+$$f(\mathbf{g}(\mathbf{a}) + \mathbf{k}) - f(\mathbf{g}(\mathbf{a})) = \nabla f(\mathbf{g}(\mathbf{a})) \cdot \mathbf{k} + o(\lVert \mathbf{k} \rVert)$$
 
-$$= \nabla f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'})) \cdot [J\mathbf{{'}g{}'}(\mathbf{{'}a{}'})(t\mathbf{{'}v{}'}) + o(t)] + o(t)$$
+$$= \nabla f(\mathbf{g}(\mathbf{a})) \cdot [J\mathbf{g}(\mathbf{a})(t\mathbf{v}) + o(t)] + o(t)$$
 
 Dividing by $t$ and taking $t \to 0$:
 
-$$h'(0) = \nabla f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'})) \cdot J\mathbf{{'}g{}'}(\mathbf{{'}a{}'})\mathbf{{'}v{}'} = [J\mathbf{{'}g{}'}(\mathbf{{'}a{}'})^T \nabla f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'}))] \cdot \mathbf{{'}v{}'}$$
+$$h'(0) = \nabla f(\mathbf{g}(\mathbf{a})) \cdot J\mathbf{g}(\mathbf{a})\mathbf{v} = [J\mathbf{g}(\mathbf{a})^T \nabla f(\mathbf{g}(\mathbf{a}))] \cdot \mathbf{v}$$
 
-Since $\mathbf{{'}v{}'}$ was arbitrary,
-$\nabla h(0) = J\mathbf{{'}g{}'}(\mathbf{{'}a{}'})^T \nabla f(\mathbf{{'}g{}'}(\mathbf{{'}a{}'}))$.
+Since $\mathbf{v}$ was arbitrary,
+$\nabla h(0) = J\mathbf{g}(\mathbf{a})^T \nabla f(\mathbf{g}(\mathbf{a}))$.
 $\blacksquare$
 
 ### 1.7 Chain Rule Worked Example
@@ -197,7 +197,7 @@ Both methods agree. $\blacksquare$
 ### 1.8 Worked Example
 
 **Problem.** Let $f(x, y) = x^2 y + \sin(xy)$. Compute $\nabla f$ and find the directional
-derivative At $(1, \pi)$ in the direction $\mathbf{{'}u{}'} = (1/\sqrt{2}, 1/\sqrt{2})$.
+derivative At $(1, \pi)$ in the direction $\mathbf{u} = (1/\sqrt{2}, 1/\sqrt{2})$.
 
 _Solution._
 
@@ -207,7 +207,7 @@ $\frac{\partial f}{\partial y} = x^2 + x\cos(xy)$
 
 $\nabla f(1, \pi) = (2\pi + \pi\cos(\pi), 1 + \cos(\pi)) = (2\pi - \pi, 1 - 1) = (\pi, 0)$
 
-$D_{\mathbf{{'}u{}'}} f(1, \pi) = \nabla f(1, \pi) \cdot \mathbf{{'}u{}'} = \pi \cdot \frac{1}{\sqrt{2}} + 0 = \frac{\pi}{\sqrt{2}}$
+$D_{\mathbf{u}} f(1, \pi) = \nabla f(1, \pi) \cdot \mathbf{u} = \pi \cdot \frac{1}{\sqrt{2}} + 0 = \frac{\pi}{\sqrt{2}}$
 $\blacksquare$
 
 ### 1.9 Additional Worked Examples
@@ -235,19 +235,19 @@ $\blacksquare$
 </details>
 
 **Problem.** Find the directional derivative of $f(x,y) = x^2 y^3$ at $(1, -1)$ in the direction of
-$\mathbf{{'}v{}'} = (3, -4)$.
+$\mathbf{v} = (3, -4)$.
 
 <details>
 <summary>Solution</summary>
 
-First normalise $\mathbf{{'}v{}'}$: $\lVert \mathbf{{'}v{}'} \rVert = \sqrt{9 + 16} = 5$So
-$\mathbf{{'}u{}'} = (3/5,\, -4/5)$.
+First normalise $\mathbf{v}$: $\lVert \mathbf{v} \rVert = \sqrt{9 + 16} = 5$So
+$\mathbf{u} = (3/5,\, -4/5)$.
 
 $$\nabla f = (2xy^3,\, 3x^2 y^2)$$
 
 $$\nabla f(1, -1) = (2 \cdot 1 \cdot (-1),\, 3 \cdot 1 \cdot 1) = (-2, 3)$$
 
-$$D_{\mathbf{{'}u{}'}} f(1, -1) = (-2)(3/5) + (3)(-4/5) = \frac{-6 - 12}{5} = -\frac{18}{5}$$
+$$D_{\mathbf{u}} f(1, -1) = (-2)(3/5) + (3)(-4/5) = \frac{-6 - 12}{5} = -\frac{18}{5}$$
 
 $\blacksquare$
 
@@ -267,7 +267,7 @@ $$F_x + F_z \cdot \frac{\partial z}{\partial x} = 0 \implies \frac{\partial z}{\
 Similarly, $\frac{\partial z}{\partial y} = -\frac{F_y}{F_z}$.
 
 **Proposition 1.6 (Implicit Function Theorem, special case).** If
-$F : \mathbb{{'}R{}'}^3 \to \mathbb{{'}R{}'}$ is $C^1$ and $F(a,b,c) = 0$ with
+$F : \mathbb{R}^3 \to \mathbb{R}$ is $C^1$ and $F(a,b,c) = 0$ with
 $F_z(a,b,c) \neq 0$Then there exist neighbourhoods $U$ of $(a,b)$ and $V$ of $c$ and a unique $C^1$
 function $\varphi : U \to V$ with $\varphi(a,b) = c$ and $F(x, y, \varphi(x,y)) = 0$ for all
 $(x,y) \in U$.
@@ -291,17 +291,17 @@ $\blacksquare$
 
 ### 1.11 Taylor's Theorem for Multivariable Functions
 
-**Theorem 1.7 (Taylor's Theorem).** Let $f : U \subseteq \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}$ be
-of class $C^{k+1}$ On an open convex set $U$And let $\mathbf{{'}a{}'} \in U$. Then for all
-$\mathbf{{'}x{}'} \in U$:
+**Theorem 1.7 (Taylor's Theorem).** Let $f : U \subseteq \mathbb{R}^n \to \mathbb{R}$ be
+of class $C^{k+1}$ On an open convex set $U$And let $\mathbf{a} \in U$. Then for all
+$\mathbf{x} \in U$:
 
-$$f(\mathbf{{'}x{}'}) = f(\mathbf{{'}a{}'}) + \nabla f(\mathbf{{'}a{}'}) \cdot (\mathbf{{'}x{}'} - \mathbf{{'}a{}'}) + \frac{1}{2!}(\mathbf{{'}x{}'} - \mathbf{{'}a{}'})^T H_f(\mathbf{{'}a{}'})(\mathbf{{'}x{}'} - \mathbf{{'}a{}'}) + \cdots + R_k$$
+$$f(\mathbf{x}) = f(\mathbf{a}) + \nabla f(\mathbf{a}) \cdot (\mathbf{x} - \mathbf{a}) + \frac{1}{2!}(\mathbf{x} - \mathbf{a})^T H_f(\mathbf{a})(\mathbf{x} - \mathbf{a}) + \cdots + R_k$$
 
 Where $H_f$ is the Hessian matrix and the remainder $R_k$ can be written in Lagrange form:
 
-$$R_k = \frac{1}{(k+1)!} \sum_{\lvert \alpha \rvert = k+1} \frac{(k+1)!}{\alpha!} D^{\alpha} f(\mathbf{{'}c{}'})\, (\mathbf{{'}x{}'} - \mathbf{{'}a{}'})^{\alpha}$$
+$$R_k = \frac{1}{(k+1)!} \sum_{\lvert \alpha \rvert = k+1} \frac{(k+1)!}{\alpha!} D^{\alpha} f(\mathbf{c})\, (\mathbf{x} - \mathbf{a})^{\alpha}$$
 
-For some $\mathbf{{'}c{}'}$ on the line segment joining $\mathbf{{'}a{}'}$ and $\mathbf{{'}x{}'}$.
+For some $\mathbf{c}$ on the line segment joining $\mathbf{a}$ and $\mathbf{x}$.
 
 For $n = 2$ and $k = 2$The second-order Taylor expansion is:
 
@@ -309,17 +309,17 @@ $$f(a+h, b+k) = f(a,b) + f_x h + f_y k + \frac{1}{2}\left(f_{xx} h^2 + 2f_{xy} h
 
 Where all partial derivatives are evaluated at $(a, b)$ and the remainder is
 
-$$R_2 = \frac{1}{6}\left(f_{xxx} h^3 + 3f_{xxy} h^2 k + 3f_{xyy} hk^2 + f_{yyy} k^3\right)\Big|_{\mathbf{{'}c{}'}}$$
+$$R_2 = \frac{1}{6}\left(f_{xxx} h^3 + 3f_{xxy} h^2 k + 3f_{xyy} hk^2 + f_{yyy} k^3\right)\Big|_{\mathbf{c}}$$
 
-_Proof (sketch)._ Define $\phi(t) = f(\mathbf{{'}a{}'} + t(\mathbf{{'}x{}'} - \mathbf{{'}a{}'}))$
+_Proof (sketch)._ Define $\phi(t) = f(\mathbf{a} + t(\mathbf{x} - \mathbf{a}))$
 for $t \in [0, 1]$. Apply the single-variable Taylor theorem to $\phi$ at $t = 0$:
 
 $$\phi(1) = \phi(0) + \phi'(0) + \frac{1}{2!}\phi''(0) + \cdots + \frac{1}{k!}\phi^{(k)}(0) + \frac{1}{(k+1)!}\phi^{(k+1)}(\tau)$$
 
 For some $\tau \in (0, 1)$. By the multivariable chain rule,
-$\phi'(t) = \nabla f(\mathbf{{'}a{}'} + t(\mathbf{{'}x{}'}-\mathbf{{'}a{}'})) \cdot (\mathbf{{'}x{}'}-\mathbf{{'}a{}'})$And
+$\phi'(t) = \nabla f(\mathbf{a} + t(\mathbf{x}-\mathbf{a})) \cdot (\mathbf{x}-\mathbf{a})$And
 higher Derivatives involve higher-order partial derivatives of $f$. Substituting
-$\mathbf{{'}c{}'} = \mathbf{{'}a{}'} + \tau(\mathbf{{'}x{}'}-\mathbf{{'}a{}'})$ yields the result.
+$\mathbf{c} = \mathbf{a} + \tau(\mathbf{x}-\mathbf{a})$ yields the result.
 $\blacksquare$
 
 ### 1.12 Common Pitfalls
@@ -334,9 +334,9 @@ $\blacksquare$
 - **Clairaut's theorem requires continuity.** Without continuity of the mixed partials, the equality
   $f_{xy} = f_{yx}$ can fail.
 - **Normalise the direction vector.** The formula
-  $D_{\mathbf{{'}u{}'}} f = \nabla f \cdot \mathbf{{'}u{}'}$ assumes
-  $\lVert \mathbf{{'}u{}'} \rVert = 1$. If the direction is given by a non-unit vector
-  $\mathbf{{'}v{}'}$Divide by $\lVert \mathbf{{'}v{}'} \rVert$ first. :::
+  $D_{\mathbf{u}} f = \nabla f \cdot \mathbf{u}$ assumes
+  $\lVert \mathbf{u} \rVert = 1$. If the direction is given by a non-unit vector
+  $\mathbf{v}$Divide by $\lVert \mathbf{v} \rVert$ first. :::
 
 ## 2. Multiple Integrals
 
@@ -366,7 +366,7 @@ $\int_a^b F(x)\, dx$. The Reversal of integration order follows by symmetry. $\b
 
 ### 2.2 General Regions
 
-For a general region $D$ in $\mathbb{{'}R{}'}^2$:
+For a general region $D$ in $\mathbb{R}^2$:
 
 - **Type I region**: $D = \\{(x,y) : a \leq x \leq b,\, g_1(x) \leq y \leq g_2(x)\\}$
 
@@ -437,7 +437,7 @@ $\blacksquare$
 
 ### 2.3 Triple Integrals
 
-Triple integrals extend to $\mathbb{{'}R{}'}^3$:
+Triple integrals extend to $\mathbb{R}^3$:
 
 $$\iiint_E f(x,y,z)\, dV = \iint_D \left(\int_{g_1(x,y)}^{g_2(x,y)} f(x,y,z)\, dz\right) dA$$
 
@@ -465,20 +465,20 @@ $\blacksquare$
 ### 2.4 Change of Variables
 
 **Theorem 2.2 (Change of Variables).** Let
-$T : D \subseteq \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}^n$ be a $C^1$ diffeomorphism with Jacobian
+$T : D \subseteq \mathbb{R}^n \to \mathbb{R}^n$ be a $C^1$ diffeomorphism with Jacobian
 determinant $J_T$. Then
 
-$$\int_{T(D)} f(\mathbf{{'}u{}'})\, d\mathbf{{'}u{}'} = \int_D f(T(\mathbf{{'}x{}'}))\, \lvert J_T(\mathbf{{'}x{}'})\rvert\, d\mathbf{{'}x{}'}$$
+$$\int_{T(D)} f(\mathbf{u})\, d\mathbf{u} = \int_D f(T(\mathbf{x}))\, \lvert J_T(\mathbf{x})\rvert\, d\mathbf{x}$$
 
 _Derivation of the Jacobian factor (for $n = 2$)._ Let $T(x, y) = (u(x,y),\, v(x,y))$ be a $C^1$
 Diffeomorphism. Partition $D$ into small rectangles $R_{ij}$ of area $\Delta x\, \Delta y$. The
 image $T(R_{ij})$ is approximately a parallelogram spanned by the vectors
 
-$$\mathbf{{'}a{}'} = T(x + \Delta x, y) - T(x, y) \approx \left(\frac{\partial u}{\partial x}\Delta x,\, \frac{\partial v}{\partial x}\Delta x\right)$$
+$$\mathbf{a} = T(x + \Delta x, y) - T(x, y) \approx \left(\frac{\partial u}{\partial x}\Delta x,\, \frac{\partial v}{\partial x}\Delta x\right)$$
 
-$$\mathbf{{'}b{}'} = T(x, y + \Delta y) - T(x, y) \approx \left(\frac{\partial u}{\partial y}\Delta y,\, \frac{\partial v}{\partial y}\Delta y\right)$$
+$$\mathbf{b} = T(x, y + \Delta y) - T(x, y) \approx \left(\frac{\partial u}{\partial y}\Delta y,\, \frac{\partial v}{\partial y}\Delta y\right)$$
 
-The area of this parallelogram is $\lvert \mathbf{{'}a{}'} \times \mathbf{{'}b{}'} \rvert$Which
+The area of this parallelogram is $\lvert \mathbf{a} \times \mathbf{b} \rvert$Which
 equals
 
 $$\left\lvert \frac{\partial u}{\partial x}\frac{\partial v}{\partial y} - \frac{\partial u}{\partial y}\frac{\partial v}{\partial x} \right\rvert \Delta x\, \Delta y = \lvert J_T \rvert\, \Delta x\, \Delta y$$
@@ -502,13 +502,13 @@ $$\iiint_E f(x,y,z)\, dV = \iiint_{E'} f(\rho\sin\phi\cos\theta, \rho\sin\phi\si
 
 ### 2.5 Coordinate System Worked Examples
 
-**Problem.** Evaluate $\iint_D e^{-(x^2+y^2)}\, dA$ where $D$ is the entire $\mathbb{{'}R{}'}^2$
+**Problem.** Evaluate $\iint_D e^{-(x^2+y^2)}\, dA$ where $D$ is the entire $\mathbb{R}^2$
 plane.
 
 <details>
 <summary>Solution</summary>
 
-Use polar coordinates. The region $D'$ is $0 \leq r \lt{} \infty$$0 \leq \theta \leq 2\pi$.
+Use polar coordinates. The region $D'$ is $0 \leq r \lt \infty$$0 \leq \theta \leq 2\pi$.
 
 $$\iint_D e^{-(x^2+y^2)}\, dA = \int_0^{2\pi} \int_0^{\infty} e^{-r^2}\, r\, dr\, d\theta$$
 
@@ -637,63 +637,63 @@ elementary Antiderivative with respect to $y$. Swapping the order was essential.
 
 ### 3.1 Vector Fields
 
-A **vector field** on $\mathbb{{'}R{}'}^n$ is a function
-$\mathbf{{'}F{}'} : D \subseteq \mathbb{{'}R{}'}^n \to \mathbb{{'}R{}'}^n$.
+A **vector field** on $\mathbb{R}^n$ is a function
+$\mathbf{F} : D \subseteq \mathbb{R}^n \to \mathbb{R}^n$.
 
-A vector field $\mathbf{{'}F{}'} = (P, Q, R)$ on $\mathbb{{'}R{}'}^3$ is **conservative** if there
-exists a scalar Potential $\phi$ such that $\mathbf{{'}F{}'} = \nabla \phi$.
+A vector field $\mathbf{F} = (P, Q, R)$ on $\mathbb{R}^3$ is **conservative** if there
+exists a scalar Potential $\phi$ such that $\mathbf{F} = \nabla \phi$.
 
-**Theorem 3.1.** $\mathbf{{'}F{}'}$ is conservative (on a connected domain) if and only if
-$\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$.
+**Theorem 3.1.** $\mathbf{F}$ is conservative (on a connected domain) if and only if
+$\nabla \times \mathbf{F} = \mathbf{0}$.
 
-_Proof._ ($\Rightarrow$) If $\mathbf{{'}F{}'} = \nabla \phi$ with $\phi \in C^2$Then by Clairaut's
+_Proof._ ($\Rightarrow$) If $\mathbf{F} = \nabla \phi$ with $\phi \in C^2$Then by Clairaut's
 theorem $f_{xy} = f_{yx}$Etc., which directly gives
-$\nabla \times (\nabla \phi) = \mathbf{{'}0{}'}$.
+$\nabla \times (\nabla \phi) = \mathbf{0}$.
 
-($\Leftarrow$) If $\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$ on a connected domain $D$Then
+($\Leftarrow$) If $\nabla \times \mathbf{F} = \mathbf{0}$ on a connected domain $D$Then
 for any Closed curve $C$ in $D$Stokes' theorem gives
-$\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \iint_S (\nabla \times \mathbf{{'}F{}'}) \cdot d\mathbf{{'}S{}'} = 0$.
+$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = 0$.
 This means line integrals are path-independent, so we can define
-$\phi(\mathbf{{'}x{}'}) = \int_{\mathbf{{'}x{}'}_0}^{\mathbf{{'}x{}'}} \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'}$
-(independent of path), And one verifies that $\nabla \phi = \mathbf{{'}F{}'}$. $\blacksquare$
+$\phi(\mathbf{x}) = \int_{\mathbf{x}_0}^{\mathbf{x}} \mathbf{F} \cdot d\mathbf{r}$
+(independent of path), And one verifies that $\nabla \phi = \mathbf{F}$. $\blacksquare$
 
 ### 3.2 Line Integrals
 
-**Definition.** The **line integral** of a vector field $\mathbf{{'}F{}'}$ along a curve $C$
-parameterised by $\mathbf{{'}r{}'}(t)$ for $a \leq t \leq b$ is
+**Definition.** The **line integral** of a vector field $\mathbf{F}$ along a curve $C$
+parameterised by $\mathbf{r}(t)$ for $a \leq t \leq b$ is
 
-$$\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \int_a^b \mathbf{{'}F{}'}(\mathbf{{'}r{}'}(t)) \cdot \mathbf{{'}r{}'}'(t)\, dt$$
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\, dt$$
 
-**Theorem 3.2 (Fundamental Theorem for Line Integrals).** If $\mathbf{{'}F{}'} = \nabla \phi$ and
+**Theorem 3.2 (Fundamental Theorem for Line Integrals).** If $\mathbf{F} = \nabla \phi$ and
 $C$ is a Piecewise smooth curve from $A$ to $B$Then
 
-$$\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \phi(B) - \phi(A)$$
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \phi(B) - \phi(A)$$
 
-_Proof._ Parameterise $C$ by $\mathbf{{'}r{}'}(t)$ for $t \in [a,b]$ with $\mathbf{{'}r{}'}(a) = A$
-$\mathbf{{'}r{}'}(b) = B$.
+_Proof._ Parameterise $C$ by $\mathbf{r}(t)$ for $t \in [a,b]$ with $\mathbf{r}(a) = A$
+$\mathbf{r}(b) = B$.
 
-$$\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \int_a^b \nabla \phi(\mathbf{{'}r{}'}(t)) \cdot \mathbf{{'}r{}'}'(t)\, dt = \int_a^b \frac{d}{dt}\left[\phi(\mathbf{{'}r{}'}(t))\right]\, dt = \phi(\mathbf{{'}r{}'}(b)) - \phi(\mathbf{{'}r{}'}(a)) = \phi(B) - \phi(A)$$
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \nabla \phi(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\, dt = \int_a^b \frac{d}{dt}\left[\phi(\mathbf{r}(t))\right]\, dt = \phi(\mathbf{r}(b)) - \phi(\mathbf{r}(a)) = \phi(B) - \phi(A)$$
 
 By the chain rule. $\blacksquare$
 
 **Corollary 3.3.** The line integral of a conservative field around any closed curve is zero.
 
-**Problem.** Evaluate $\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'}$ where
-$\mathbf{{'}F{}'} = (y,\, x + e^y,\, z + 1)$ and $C$ is the Curve
-$\mathbf{{'}r{}'}(t) = (t,\, t^2,\, t^3)$ for $0 \leq t \leq 1$.
+**Problem.** Evaluate $\int_C \mathbf{F} \cdot d\mathbf{r}$ where
+$\mathbf{F} = (y,\, x + e^y,\, z + 1)$ and $C$ is the Curve
+$\mathbf{r}(t) = (t,\, t^2,\, t^3)$ for $0 \leq t \leq 1$.
 
 <details>
 <summary>Solution</summary>
 
-First check if $\mathbf{{'}F{}'}$ is conservative. Compute the curl:
+First check if $\mathbf{F}$ is conservative. Compute the curl:
 
-$$(\nabla \times \mathbf{{'}F{}'})_x = \frac{\partial (z+1)}{\partial y} - \frac{\partial (x + e^y)}{\partial z} = 0 - 0 = 0$$
+$$(\nabla \times \mathbf{F})_x = \frac{\partial (z+1)}{\partial y} - \frac{\partial (x + e^y)}{\partial z} = 0 - 0 = 0$$
 
-$$(\nabla \times \mathbf{{'}F{}'})_y = \frac{\partial y}{\partial z} - \frac{\partial (z+1)}{\partial x} = 0 - 0 = 0$$
+$$(\nabla \times \mathbf{F})_y = \frac{\partial y}{\partial z} - \frac{\partial (z+1)}{\partial x} = 0 - 0 = 0$$
 
-$$(\nabla \times \mathbf{{'}F{}'})_z = \frac{\partial (x + e^y)}{\partial x} - \frac{\partial y}{\partial y} = 1 - 1 = 0$$
+$$(\nabla \times \mathbf{F})_z = \frac{\partial (x + e^y)}{\partial x} - \frac{\partial y}{\partial y} = 1 - 1 = 0$$
 
-Since $\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$$\mathbf{{'}F{}'}$ is conservative. Find
+Since $\nabla \times \mathbf{F} = \mathbf{0}$$\mathbf{F}$ is conservative. Find
 $\phi$:
 
 $$\frac{\partial \phi}{\partial x} = y \implies \phi = xy + g(y,z)$$
@@ -706,7 +706,7 @@ $$\phi(x,y,z) = xy + e^y + \frac{z^2}{2} + z$$
 
 Now apply the fundamental theorem:
 
-$$\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \phi(1, 1, 1) - \phi(0, 0, 0) = \left(1 + e + \frac{1}{2} + 1\right) - (1 + 1) = e + \frac{1}{2}$$
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \phi(1, 1, 1) - \phi(0, 0, 0) = \left(1 + e + \frac{1}{2} + 1\right) - (1 + 1) = e + \frac{1}{2}$$
 
 $\blacksquare$
 
@@ -761,36 +761,36 @@ $\blacksquare$
 
 ### 3.4 Curl and Divergence
 
-**Definition.** Let $\mathbf{{'}F{}'} = (P, Q, R)$ be a $C^1$ vector field on $\mathbb{{'}R{}'}^3$.
+**Definition.** Let $\mathbf{F} = (P, Q, R)$ be a $C^1$ vector field on $\mathbb{R}^3$.
 
-The **curl** of $\mathbf{{'}F{}'}$ is
+The **curl** of $\mathbf{F}$ is
 
-$$\nabla \times \mathbf{{'}F{}'} = \left(\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z},\, \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x},\, \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)$$
+$$\nabla \times \mathbf{F} = \left(\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z},\, \frac{\partial P}{\partial z} - \frac{\partial R}{\partial x},\, \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)$$
 
-The **divergence** of $\mathbf{{'}F{}'}$ is
+The **divergence** of $\mathbf{F}$ is
 
-$$\nabla \cdot \mathbf{{'}F{}'} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}$$
+$$\nabla \cdot \mathbf{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}$$
 
-_Physical interpretation._ If $\mathbf{{'}F{}'}$ represents the velocity field of a fluid:
+_Physical interpretation._ If $\mathbf{F}$ represents the velocity field of a fluid:
 
-- **Curl** $\nabla \times \mathbf{{'}F{}'}$ measures the local rotational tendency (vorticity) of
-  the fluid. At a point $\mathbf{{'}p{}'}$The component
-  $(\nabla \times \mathbf{{'}F{}'}) \cdot \mathbf{{'}n{}'}$ gives twice the angular velocity of a
-  small paddle wheel placed at $\mathbf{{'}p{}'}$ with axis along $\mathbf{{'}n{}'}$.
+- **Curl** $\nabla \times \mathbf{F}$ measures the local rotational tendency (vorticity) of
+  the fluid. At a point $\mathbf{p}$The component
+  $(\nabla \times \mathbf{F}) \cdot \mathbf{n}$ gives twice the angular velocity of a
+  small paddle wheel placed at $\mathbf{p}$ with axis along $\mathbf{n}$.
 
-- **Divergence** $\nabla \cdot \mathbf{{'}F{}'}$ measures the net rate of outward flux per unit
-  volume at a point. If $\nabla \cdot \mathbf{{'}F{}'} \gt{} 0$ at $\mathbf{{'}p{}'}$There is a net
-  source at $\mathbf{{'}p{}'}$; if $\nabla \cdot \mathbf{{'}F{}'} \lt{} 0$There is a net sink.
+- **Divergence** $\nabla \cdot \mathbf{F}$ measures the net rate of outward flux per unit
+  volume at a point. If $\nabla \cdot \mathbf{F} \gt 0$ at $\mathbf{p}$There is a net
+  source at $\mathbf{p}$; if $\nabla \cdot \mathbf{F} \lt 0$There is a net sink.
 
-**Proposition 3.5.** For any $C^2$ vector field $\mathbf{{'}F{}'}$:
+**Proposition 3.5.** For any $C^2$ vector field $\mathbf{F}$:
 
-$$\nabla \cdot (\nabla \times \mathbf{{'}F{}'}) = 0 \quad \mathrm{(div\ of\ curl\ is\ zero){}$$
+$$\nabla \cdot (\nabla \times \mathbf{F}) = 0 \quad \mathrm{(div\ of\ curl\ is\ zero)$$
 
-$$\nabla \times (\nabla \phi) = \mathbf{{'}0{}'} \quad \mathrm{(curl\ of\ gradient\ is\ zero){}$$
+$$\nabla \times (\nabla \phi) = \mathbf{0} \quad \mathrm{(curl\ of\ gradient\ is\ zero)$$
 
 _Proof._ Both follow from Clairaut's theorem on equality of mixed partials. For the first:
 
-$$\nabla \cdot (\nabla \times \mathbf{{'}F{}'}) = \frac{\partial}{\partial x}\left(\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z}\right) + \frac{\partial}{\partial y}\left(\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x}\right) + \frac{\partial}{\partial z}\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)$$
+$$\nabla \cdot (\nabla \times \mathbf{F}) = \frac{\partial}{\partial x}\left(\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z}\right) + \frac{\partial}{\partial y}\left(\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x}\right) + \frac{\partial}{\partial z}\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)$$
 
 Each pair cancels by Clairaut:
 $\frac{\partial^2 R}{\partial x\,\partial y} = \frac{\partial^2 R}{\partial y\,\partial x}$Etc.
@@ -799,55 +799,55 @@ $\blacksquare$
 ### 3.5 Stokes' Theorem
 
 **Theorem 3.6 (Stokes' Theorem).** Let $S$ be an oriented surface with piecewise smooth boundary
-curve $C$ (positively oriented). If $\mathbf{{'}F{}'}$ has continuous partial derivatives on an open
+curve $C$ (positively oriented). If $\mathbf{F}$ has continuous partial derivatives on an open
 set containing $S$Then
 
-$$\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \iint_S (\nabla \times \mathbf{{'}F{}'}) \cdot d\mathbf{{'}S{}'}$$
+$$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}$$
 
-Where $d\mathbf{{'}S{}'} = \mathbf{{'}n{}'}\, dS$ is the vector surface element with unit normal
-$\mathbf{{'}n{}'}$.
+Where $d\mathbf{S} = \mathbf{n}\, dS$ is the vector surface element with unit normal
+$\mathbf{n}$.
 
-_Proof (sketch)._ Parametrise $S$ by $\mathbf{{'}r{}'}(u,v)$ over a region $D$ in the $uv$-plane.
+_Proof (sketch)._ Parametrise $S$ by $\mathbf{r}(u,v)$ over a region $D$ in the $uv$-plane.
 The boundary $C$ of $S$ corresponds to the boundary $\partial D$ of $D$. The left-hand side becomes:
 
-$$\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \oint_{\partial D} \mathbf{{'}F{}'}(\mathbf{{'}r{}'}(u,v)) \cdot \left(\frac{\partial \mathbf{{'}r{}'}}{\partial u}\, du + \frac{\partial \mathbf{{'}r{}'}}{\partial v}\, dv\right)$$
+$$\oint_C \mathbf{F} \cdot d\mathbf{r} = \oint_{\partial D} \mathbf{F}(\mathbf{r}(u,v)) \cdot \left(\frac{\partial \mathbf{r}}{\partial u}\, du + \frac{\partial \mathbf{r}}{\partial v}\, dv\right)$$
 
-Define $\tilde{P}(u,v) = \mathbf{{'}F{}'}(\mathbf{{'}r{}'}(u,v)) \cdot \mathbf{{'}r{}'}_u$ and
-$\tilde{Q}(u,v) = \mathbf{{'}F{}'}(\mathbf{{'}r{}'}(u,v)) \cdot \mathbf{{'}r{}'}_v$. Applying
+Define $\tilde{P}(u,v) = \mathbf{F}(\mathbf{r}(u,v)) \cdot \mathbf{r}_u$ and
+$\tilde{Q}(u,v) = \mathbf{F}(\mathbf{r}(u,v)) \cdot \mathbf{r}_v$. Applying
 Green's theorem in the $uv$-plane:
 
 $$\oint_{\partial D} \tilde{P}\, du + \tilde{Q}\, dv = \iint_D \left(\frac{\partial \tilde{Q}}{\partial u} - \frac{\partial \tilde{P}}{\partial v}\right) du\, dv$$
 
 Expanding the partial derivatives and using the identity
-$\mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v = \mathbf{{'}n{}'}\, \lVert \mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v \rVert$One
+$\mathbf{r}_u \times \mathbf{r}_v = \mathbf{n}\, \lVert \mathbf{r}_u \times \mathbf{r}_v \rVert$One
 Verifies that the integrand equals
-$(\nabla \times \mathbf{{'}F{}'}) \cdot \mathbf{{'}n{}'}\, \lVert \mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v \rVert$
-Which gives $\iint_S (\nabla \times \mathbf{{'}F{}'}) \cdot d\mathbf{{'}S{}'}$. $\blacksquare$
+$(\nabla \times \mathbf{F}) \cdot \mathbf{n}\, \lVert \mathbf{r}_u \times \mathbf{r}_v \rVert$
+Which gives $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}$. $\blacksquare$
 
 _Remark._ Green's theorem is the special case of Stokes' theorem where $S$ is a planar region in
-$\mathbb{{'}R{}'}^2$.
+$\mathbb{R}^2$.
 
-**Problem.** Use Stokes' theorem to evaluate $\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'}$
-where $\mathbf{{'}F{}'} = (y^2,\, xz,\, x^2)$ and $C$ is the triangle with vertices
+**Problem.** Use Stokes' theorem to evaluate $\oint_C \mathbf{F} \cdot d\mathbf{r}$
+where $\mathbf{F} = (y^2,\, xz,\, x^2)$ and $C$ is the triangle with vertices
 $(1,0,0)$$(0,1,0)$ $(0,0,1)$ traversed counterclockwise when viewed from above.
 
 <details>
 <summary>Solution</summary>
 
-The triangle lies in the plane $x + y + z = 1$. Compute $\nabla \times \mathbf{{'}F{}'}$:
+The triangle lies in the plane $x + y + z = 1$. Compute $\nabla \times \mathbf{F}$:
 
-$$(\nabla \times \mathbf{{'}F{}'})_x = \frac{\partial (x^2)}{\partial y} - \frac{\partial (xz)}{\partial z} = 0 - x = -x$$
+$$(\nabla \times \mathbf{F})_x = \frac{\partial (x^2)}{\partial y} - \frac{\partial (xz)}{\partial z} = 0 - x = -x$$
 
-$$(\nabla \times \mathbf{{'}F{}'})_y = \frac{\partial (y^2)}{\partial z} - \frac{\partial (x^2)}{\partial x} = 0 - 2x = -2x$$
+$$(\nabla \times \mathbf{F})_y = \frac{\partial (y^2)}{\partial z} - \frac{\partial (x^2)}{\partial x} = 0 - 2x = -2x$$
 
-$$(\nabla \times \mathbf{{'}F{}'})_z = \frac{\partial (xz)}{\partial x} - \frac{\partial (y^2)}{\partial y} = z - 2y$$
+$$(\nabla \times \mathbf{F})_z = \frac{\partial (xz)}{\partial x} - \frac{\partial (y^2)}{\partial y} = z - 2y$$
 
-So $\nabla \times \mathbf{{'}F{}'} = (-x,\, -2x,\, z - 2y)$.
+So $\nabla \times \mathbf{F} = (-x,\, -2x,\, z - 2y)$.
 
 Parametrise the triangle in the $xy$-plane: $0 \leq x \leq 1$$0 \leq y \leq 1 - x$. On the plane
 $z = 1 - x - y$The surface element $dS = \sqrt{3}\, dx\, dy$.
 
-$$\iint_S (\nabla \times \mathbf{{'}F{}'}) \cdot d\mathbf{{'}S{}'} = \frac{1}{\sqrt{3}} \iint_S (-x - 2x + z - 2y)\, dS$$
+$$\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} = \frac{1}{\sqrt{3}} \iint_S (-x - 2x + z - 2y)\, dS$$
 
 On the plane: $-3x - 2y + z = -3x - 2y + 1 - x - y = -4x - 3y + 1$.
 
@@ -866,14 +866,14 @@ $\blacksquare$
 ### 3.6 Divergence Theorem
 
 **Theorem 3.7 (Divergence Theorem / Gauss's Theorem).** Let $E$ be a solid region bounded by a
-closed Surface $S$ with outward normal $\mathbf{{'}n{}'}$. If $\mathbf{{'}F{}'}$ has continuous
+closed Surface $S$ with outward normal $\mathbf{n}$. If $\mathbf{F}$ has continuous
 partial derivatives on an Open set containing $E$Then
 
-$$\iint_S \mathbf{{'}F{}'} \cdot d\mathbf{{'}S{}'} = \iiint_E \nabla \cdot \mathbf{{'}F{}'}\, dV$$
+$$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_E \nabla \cdot \mathbf{F}\, dV$$
 
 Where
-$\nabla \cdot \mathbf{{'}F{}'} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}$
-Is the divergence of $\mathbf{{'}F{}'}$.
+$\nabla \cdot \mathbf{F} = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}$
+Is the divergence of $\mathbf{F}$.
 
 _Proof (sketch for a Type I region)._ Assume $E$ is a Type I region:
 $E = \\{(x,y,z) : (x,y) \in D,\, g_1(x,y) \leq z \leq g_2(x,y)\\}$. The boundary consists of Bottom
@@ -881,32 +881,32 @@ surface $S_1$ (normal pointing downward), top surface $S_2$ (normal pointing upw
 lateral surface $S_3$ (where the normal is horizontal).
 
 We prove the result for the $R$-component, i.e.,
-$\iint_S R\, \mathbf{{'}k{}'} \cdot d\mathbf{{'}S{}'} = \iiint_E \frac{\partial R}{\partial z}\, dV$.
+$\iint_S R\, \mathbf{k} \cdot d\mathbf{S} = \iiint_E \frac{\partial R}{\partial z}\, dV$.
 
 The right-hand side:
 
 $$\iiint_E \frac{\partial R}{\partial z}\, dV = \iint_D \int_{g_1(x,y)}^{g_2(x,y)} \frac{\partial R}{\partial z}\, dz\, dA = \iint_D \left[R(x,y,g_2) - R(x,y,g_1)\right]\, dA$$
 
-On $S_2$ (top): $d\mathbf{{'}S{}'} = (-g_{2x}, -g_{2y}, 1)\, dA$ (upward), so
-$R\, \mathbf{{'}k{}'} \cdot d\mathbf{{'}S{}'} = R(x,y,g_2)\, dA$.
+On $S_2$ (top): $d\mathbf{S} = (-g_{2x}, -g_{2y}, 1)\, dA$ (upward), so
+$R\, \mathbf{k} \cdot d\mathbf{S} = R(x,y,g_2)\, dA$.
 
-On $S_1$ (bottom): $d\mathbf{{'}S{}'} = (g_{1x}, g_{1y}, -1)\, dA$ (downward), so
-$R\, \mathbf{{'}k{}'} \cdot d\mathbf{{'}S{}'} = -R(x,y,g_1)\, dA$.
+On $S_1$ (bottom): $d\mathbf{S} = (g_{1x}, g_{1y}, -1)\, dA$ (downward), so
+$R\, \mathbf{k} \cdot d\mathbf{S} = -R(x,y,g_1)\, dA$.
 
-On $S_3$: $\mathbf{{'}k{}'} \cdot \mathbf{{'}n{}'} = 0$ (the normal is horizontal), so
-$R\, \mathbf{{'}k{}'} \cdot d\mathbf{{'}S{}'} = 0$.
+On $S_3$: $\mathbf{k} \cdot \mathbf{n} = 0$ (the normal is horizontal), so
+$R\, \mathbf{k} \cdot d\mathbf{S} = 0$.
 
 Therefore
-$\iint_S R\, \mathbf{{'}k{}'} \cdot d\mathbf{{'}S{}'} = \iint_D [R(x,y,g_2) - R(x,y,g_1)]\, dA$Matching
+$\iint_S R\, \mathbf{k} \cdot d\mathbf{S} = \iint_D [R(x,y,g_2) - R(x,y,g_1)]\, dA$Matching
 the Volume integral. The $P$ and $Q$ components follow by an identical argument for Type II and Type
 III Regions. For general regions, decompose into finitely many regions of each type. $\blacksquare$
 
-**Worked Example.** Compute the flux of $\mathbf{{'}F{}'} = (x^3, y^3, z^3)$ through the unit sphere
+**Worked Example.** Compute the flux of $\mathbf{F} = (x^3, y^3, z^3)$ through the unit sphere
 $S$.
 
 _Solution._ By the divergence theorem:
 
-$$\nabla \cdot \mathbf{{'}F{}'} = 3x^2 + 3y^2 + 3z^2 = 3(x^2 + y^2 + z^2) = 3\rho^2$$
+$$\nabla \cdot \mathbf{F} = 3x^2 + 3y^2 + 3z^2 = 3(x^2 + y^2 + z^2) = 3\rho^2$$
 
 Using spherical coordinates:
 
@@ -916,7 +916,7 @@ $$= 3 \cdot 2\pi \cdot 2 \cdot \frac{1}{5} = \frac{12\pi}{5}$$
 
 $\blacksquare$
 
-**Problem.** Compute the flux of $\mathbf{{'}F{}'} = (x^2,\, y^2,\, z^2)$ outward through the
+**Problem.** Compute the flux of $\mathbf{F} = (x^2,\, y^2,\, z^2)$ outward through the
 surface of the Cylinder $x^2 + y^2 \leq 1$$0 \leq z \leq 2$.
 
 <details>
@@ -924,7 +924,7 @@ surface of the Cylinder $x^2 + y^2 \leq 1$$0 \leq z \leq 2$.
 
 By the divergence theorem:
 
-$$\nabla \cdot \mathbf{{'}F{}'} = 2x + 2y + 2z$$
+$$\nabla \cdot \mathbf{F} = 2x + 2y + 2z$$
 
 Use cylindrical coordinates. The region $E'$ is $0 \leq r \leq 1$$0 \leq \theta \leq 2\pi$
 $0 \leq z \leq 2$.
@@ -943,21 +943,21 @@ $\blacksquare$
 
 ### 3.7 Conservative Fields and Potential Functions
 
-**Definition.** A vector field $\mathbf{{'}F{}'}$ on a domain $D \subseteq \mathbb{{'}R{}'}^n$ is
-**conservative** if There exists a scalar function $\phi : D \to \mathbb{{'}R{}'}$ (called a
-**potential function**) such that $\mathbf{{'}F{}'} = \nabla \phi$.
+**Definition.** A vector field $\mathbf{F}$ on a domain $D \subseteq \mathbb{R}^n$ is
+**conservative** if There exists a scalar function $\phi : D \to \mathbb{R}$ (called a
+**potential function**) such that $\mathbf{F} = \nabla \phi$.
 
-**Proposition 3.8 (Equivalent conditions for conservative fields).** Let $\mathbf{{'}F{}'} = (P, Q)$
-be a $C^1$ vector field on a connected domain $D \subseteq \mathbb{{'}R{}'}^2$. The following are
+**Proposition 3.8 (Equivalent conditions for conservative fields).** Let $\mathbf{F} = (P, Q)$
+be a $C^1$ vector field on a connected domain $D \subseteq \mathbb{R}^2$. The following are
 equivalent:
 
-1. $\mathbf{{'}F{}'}$ is conservative: $\mathbf{{'}F{}'} = \nabla \phi$ for some $\phi$.
-2. $\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = 0$ for every closed curve $C$ in $D$.
-3. $\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'}$ is path-independent in $D$.
+1. $\mathbf{F}$ is conservative: $\mathbf{F} = \nabla \phi$ for some $\phi$.
+2. $\oint_C \mathbf{F} \cdot d\mathbf{r} = 0$ for every closed curve $C$ in $D$.
+3. $\int_C \mathbf{F} \cdot d\mathbf{r}$ is path-independent in $D$.
 4. $\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$ everywhere in $D$.
 
-**Procedure for finding a potential function.** Given $\mathbf{{'}F{}'} = (P, Q, R)$ with
-$\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$:
+**Procedure for finding a potential function.** Given $\mathbf{F} = (P, Q, R)$ with
+$\nabla \times \mathbf{F} = \mathbf{0}$:
 
 1. Integrate $P$ with respect to $x$: $\phi = \int P\, dx + g(y, z)$.
 2. Differentiate with respect to $y$ and set equal to $Q$ to determine $g_y$.
@@ -965,7 +965,7 @@ $\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$:
 4. Differentiate with respect to $z$ and set equal to $R$ to determine $h'(z)$.
 5. Integrate to find $h(z)$ and assemble $\phi$.
 
-**Problem.** Determine whether $\mathbf{{'}F{}'} = (2xy + z^2,\, x^2 + 2yz,\, 2xz + y^2)$ is
+**Problem.** Determine whether $\mathbf{F} = (2xy + z^2,\, x^2 + 2yz,\, 2xz + y^2)$ is
 conservative, And if so, find a potential function.
 
 <details>
@@ -973,13 +973,13 @@ conservative, And if so, find a potential function.
 
 Check the curl:
 
-$$(\nabla \times \mathbf{{'}F{}'})_x = \frac{\partial}{\partial y}(2xz + y^2) - \frac{\partial}{\partial z}(x^2 + 2yz) = 2y - 2y = 0$$
+$$(\nabla \times \mathbf{F})_x = \frac{\partial}{\partial y}(2xz + y^2) - \frac{\partial}{\partial z}(x^2 + 2yz) = 2y - 2y = 0$$
 
-$$(\nabla \times \mathbf{{'}F{}'})_y = \frac{\partial}{\partial z}(2xy + z^2) - \frac{\partial}{\partial x}(2xz + y^2) = 2z - 2z = 0$$
+$$(\nabla \times \mathbf{F})_y = \frac{\partial}{\partial z}(2xy + z^2) - \frac{\partial}{\partial x}(2xz + y^2) = 2z - 2z = 0$$
 
-$$(\nabla \times \mathbf{{'}F{}'})_z = \frac{\partial}{\partial x}(x^2 + 2yz) - \frac{\partial}{\partial y}(2xy + z^2) = 2x - 2x = 0$$
+$$(\nabla \times \mathbf{F})_z = \frac{\partial}{\partial x}(x^2 + 2yz) - \frac{\partial}{\partial y}(2xy + z^2) = 2x - 2x = 0$$
 
-Since $\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$$\mathbf{{'}F{}'}$ is conservative. Find
+Since $\nabla \times \mathbf{F} = \mathbf{0}$$\mathbf{F}$ is conservative. Find
 $\phi$:
 
 $$\frac{\partial \phi}{\partial x} = 2xy + z^2 \implies \phi = x^2 y + xz^2 + g(y,z)$$
@@ -1002,10 +1002,10 @@ Therefore $\phi(x,y,z) = x^2 y + xz^2 + y^2 z + C$. $\blacksquare$
   field has continuous partial derivatives on the region (including interior). If there are
   singularities inside the region, the theorems do not apply directly; the singularity must be
   handled separately.
-- ** connected domains.** The condition $\nabla \times \mathbf{{'}F{}'} = \mathbf{{'}0{}'}$
-  guarantees that $\mathbf{{'}F{}'}$ is conservative only on a connected domain. For example,
-  $\mathbf{{'}F{}'} = \frac{(-y, x)}{x^2 + y^2}$ has zero curl on
-  $\mathbb{{'}R{}'}^2 \setminus \\{(0,0)\\}$ but is not conservative there (the domain is not
+- ** connected domains.** The condition $\nabla \times \mathbf{F} = \mathbf{0}$
+  guarantees that $\mathbf{F}$ is conservative only on a connected domain. For example,
+  $\mathbf{F} = \frac{(-y, x)}{x^2 + y^2}$ has zero curl on
+  $\mathbb{R}^2 \setminus \\{(0,0)\\}$ but is not conservative there (the domain is not
   connected).
 - **Orientation.** Green's and Stokes' theorems require positive orientation (counterclockwise for
   planar curves, right-hand rule for surfaces). The divergence theorem requires the outward normal.
@@ -1020,13 +1020,13 @@ Circulation around a curve to the curl through the surface it bounds. The diverg
 The flux through a closed surface to the divergence inside the volume it encloses. Together, these
 Form the higher-dimensional analogues of the Fundamental Theorem of Calculus:
 
-$$\int_a^b f'(x)\, dx = f(b) - f(a) \quad \mathrm{(FTC){}$$
+$$\int_a^b f'(x)\, dx = f(b) - f(a) \quad \mathrm{(FTC)$$
 
-$$\int_C \nabla \phi \cdot d\mathbf{{'}r{}'} = \phi(B) - \phi(A) \quad \mathrm{(FTLI){}$$
+$$\int_C \nabla \phi \cdot d\mathbf{r} = \phi(B) - \phi(A) \quad \mathrm{(FTLI)$$
 
-$$\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \iint_S (\nabla \times \mathbf{{'}F{}'}) \cdot d\mathbf{{'}S{}'} \quad \mathrm{(Stokes){}$$
+$$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S} \quad \mathrm{(Stokes)$$
 
-$$\iint_S \mathbf{{'}F{}'} \cdot d\mathbf{{'}S{}'} = \iiint_E (\nabla \cdot \mathbf{{'}F{}'})\, dV \quad \mathrm{(Divergence){}$$
+$$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_E (\nabla \cdot \mathbf{F})\, dV \quad \mathrm{(Divergence)$$
 
 In each case, the integral of a "derivative" over a region equals the integral of the original
 function Over the boundary of that region. This is the **generalised Stokes' theorem**:
@@ -1041,10 +1041,10 @@ $(k-1)$-form, And $d\omega$ is its exterior derivative.
 ### 4.1 Local Extrema
 
 **Theorem 4.1 (First Derivative Test).** If $f$ has a local extremum at an interior point
-$\mathbf{{'}a{}'}$ And $\nabla f(\mathbf{{'}a{}'})$ exists, then
-$\nabla f(\mathbf{{'}a{}'}) = \mathbf{{'}0{}'}$.
+$\mathbf{a}$ And $\nabla f(\mathbf{a})$ exists, then
+$\nabla f(\mathbf{a}) = \mathbf{0}$.
 
-Points where $\nabla f = \mathbf{{'}0{}'}$ are called **critical points** (or stationary points).
+Points where $\nabla f = \mathbf{0}$ are called **critical points** (or stationary points).
 
 _Remark._ Not all critical points are extrema. A critical point can be a local minimum, local
 maximum, Or saddle point. The second derivative test (Section 4.2) distinguishes these cases.
@@ -1058,9 +1058,9 @@ $$D = f_{xx}(a,b) f_{yy}(a,b) - [f_{xy}(a,b)]^2$$
 
 Be the **Hessian determinant**. Then:
 
-- If $D \gt{} 0$ and $f_{xx}(a,b) \gt{} 0$: local minimum.
-- If $D \gt{} 0$ and $f_{xx}(a,b) \lt{} 0$: local maximum.
-- If $D \lt{} 0$: saddle point.
+- If $D \gt 0$ and $f_{xx}(a,b) \gt 0$: local minimum.
+- If $D \gt 0$ and $f_{xx}(a,b) \lt 0$: local maximum.
+- If $D \lt 0$: saddle point.
 - If $D = 0$: the test is inconclusive.
 
 _Proof._ By Taylor's theorem to second order, for small $h, k$:
@@ -1076,11 +1076,11 @@ Where $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{xy} & f_{yy} \end{pmatrix}$ is 
 
 By Sylvester's criterion for $2 \times 2$ symmetric matrices:
 
-- If $\det(H) = D \gt{} 0$ and $f_{xx} \gt{} 0$Then $H$ is positive definite, so $Q \gt{} 0$ for all
+- If $\det(H) = D \gt 0$ and $f_{xx} \gt 0$Then $H$ is positive definite, so $Q \gt 0$ for all
   $(h,k) \neq (0,0)$Giving a local minimum.
-- If $\det(H) = D \gt{} 0$ and $f_{xx} \lt{} 0$Then $H$ is negative definite, so $Q \lt{} 0$ for all
+- If $\det(H) = D \gt 0$ and $f_{xx} \lt 0$Then $H$ is negative definite, so $Q \lt 0$ for all
   $(h,k) \neq (0,0)$Giving a local maximum.
-- If $\det(H) = D \lt{} 0$Then $H$ is indefinite, so $Q$ takes both positive and negative values,
+- If $\det(H) = D \lt 0$Then $H$ is indefinite, so $Q$ takes both positive and negative values,
   giving a saddle point.
 
 When $D = 0$The quadratic form is degenerate and the sign is determined by higher-order terms.
@@ -1098,15 +1098,15 @@ More generally, for $k$ constraints $g_1 = 0, \ldots, g_k = 0$:
 $$\nabla f = \lambda_1 \nabla g_1 + \cdots + \lambda_k \nabla g_k$$
 
 _Proof (single constraint, geometric justification)._ Let $M = \\{(x,y,z) : g(x,y,z) = 0\\}$ be the
-constraint surface. If $f$ has a local extremum on $M$ at $\mathbf{{'}p{}'}$Then the directional
-derivative $D_{\mathbf{{'}v{}'}} f(\mathbf{{'}p{}'}) = 0$ for every tangent Vector
-$\mathbf{{'}v{}'}$ to $M$ at $\mathbf{{'}p{}'}$. Since
-$\nabla f(\mathbf{{'}p{}'}) \cdot \mathbf{{'}v{}'} = 0$ for all Such $\mathbf{{'}v{}'}$The gradient
-$\nabla f(\mathbf{{'}p{}'})$ must be orthogonal to the tangent space of $M$ At $\mathbf{{'}p{}'}$.
-But the tangent space of $M$ is orthogonal to $\nabla g(\mathbf{{'}p{}'})$ (by the implicit Function
-theorem). Therefore $\nabla f(\mathbf{{'}p{}'})$ must be parallel to
-$\nabla g(\mathbf{{'}p{}'})$I.e.,
-$\nabla f(\mathbf{{'}p{}'}) = \lambda\, \nabla g(\mathbf{{'}p{}'})$ for some scalar $\lambda$.
+constraint surface. If $f$ has a local extremum on $M$ at $\mathbf{p}$Then the directional
+derivative $D_{\mathbf{v}} f(\mathbf{p}) = 0$ for every tangent Vector
+$\mathbf{v}$ to $M$ at $\mathbf{p}$. Since
+$\nabla f(\mathbf{p}) \cdot \mathbf{v} = 0$ for all Such $\mathbf{v}$The gradient
+$\nabla f(\mathbf{p})$ must be orthogonal to the tangent space of $M$ At $\mathbf{p}$.
+But the tangent space of $M$ is orthogonal to $\nabla g(\mathbf{p})$ (by the implicit Function
+theorem). Therefore $\nabla f(\mathbf{p})$ must be parallel to
+$\nabla g(\mathbf{p})$I.e.,
+$\nabla f(\mathbf{p}) = \lambda\, \nabla g(\mathbf{p})$ for some scalar $\lambda$.
 $\blacksquare$
 
 ### 4.4 Worked Example
@@ -1156,12 +1156,12 @@ $x = 0$ or $x = \pm 1$.
 
 Second derivatives: $f_{xx} = 12x^2$$f_{yy} = 12y^2$$f_{xy} = -4$.
 
-At $(0,0)$: $D = 0 \cdot 0 - 16 = -16 \lt{} 0$. **Saddle point.**
+At $(0,0)$: $D = 0 \cdot 0 - 16 = -16 \lt 0$. **Saddle point.**
 
-At $(1,1)$: $D = 12 \cdot 12 - 16 = 144 - 16 = 128 \gt{} 0$ and $f_{xx} = 12 \gt{} 0$. **Local
+At $(1,1)$: $D = 12 \cdot 12 - 16 = 144 - 16 = 128 \gt 0$ and $f_{xx} = 12 \gt 0$. **Local
 minimum** with $f(1,1) = 1 + 1 - 4 = -2$.
 
-At $(-1,-1)$: $D = 12 \cdot 12 - 16 = 128 \gt{} 0$ and $f_{xx} = 12 \gt{} 0$. **Local minimum** with
+At $(-1,-1)$: $D = 12 \cdot 12 - 16 = 128 \gt 0$ and $f_{xx} = 12 \gt 0$. **Local minimum** with
 $f(-1,-1) = 1 + 1 - 4 = -2$. $\blacksquare$
 
 </details>
@@ -1186,9 +1186,9 @@ Substituting: $(x^2)^2 = x$So $x^4 - x = 0$Giving $x(x^3 - 1) = 0$So $x = 0$ or 
 
 Second derivatives: $f_{xx} = 6x$$f_{yy} = 6y$$f_{xy} = -3$.
 
-At $(0,0)$: $D = f_{xx} f_{yy} - f_{xy}^2 = 0 \cdot 0 - 9 = -9 \lt{} 0$. **Saddle point.**
+At $(0,0)$: $D = f_{xx} f_{yy} - f_{xy}^2 = 0 \cdot 0 - 9 = -9 \lt 0$. **Saddle point.**
 
-At $(1,1)$: $D = 6 \cdot 6 - 9 = 27 \gt{} 0$ and $f_{xx} = 6 \gt{} 0$. **Local minimum** with
+At $(1,1)$: $D = 6 \cdot 6 - 9 = 27 \gt 0$ and $f_{xx} = 6 \gt 0$. **Local minimum** with
 $f(1,1) = -1$. $\blacksquare$
 
 </details>
@@ -1247,7 +1247,7 @@ symmetric case.
 
 Therefore the only critical point is $(1/3, 1/3, 1/3)$Which gives $f = 1/27$.
 
-Since the constraint set is compact (intersection of a plane and a sphere in $\mathbb{{'}R{}'}^3$),
+Since the constraint set is compact (intersection of a plane and a sphere in $\mathbb{R}^3$),
 the Extreme value theorem guarantees both a maximum and minimum exist. The maximum of $xyz$ is
 $1/27$ at $(1/3, 1/3, 1/3)$. $\blacksquare$
 
@@ -1273,41 +1273,41 @@ $1/27$ at $(1/3, 1/3, 1/3)$. $\blacksquare$
 
 ### 5.1 Parametric Curves
 
-A **parametric curve** in $\mathbb{{'}R{}'}^3$ is a $C^1$ function
-$\mathbf{{'}r{}'} : [a, b] \to \mathbb{{'}R{}'}^3$ Written
-$\mathbf{{'}r{}'}(t) = (x(t),\, y(t),\, z(t))$.
+A **parametric curve** in $\mathbb{R}^3$ is a $C^1$ function
+$\mathbf{r} : [a, b] \to \mathbb{R}^3$ Written
+$\mathbf{r}(t) = (x(t),\, y(t),\, z(t))$.
 
-**Definition.** The **arc length** of $\mathbf{{'}r{}'}$ over $[a, b]$ is
+**Definition.** The **arc length** of $\mathbf{r}$ over $[a, b]$ is
 
-$$L = \int_a^b \lVert \mathbf{{'}r{}'}'(t) \rVert\, dt = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2}\, dt$$
+$$L = \int_a^b \lVert \mathbf{r}'(t) \rVert\, dt = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2}\, dt$$
 
 **Proposition 5.1.** The arc length function
-$s(t) = \int_a^t \lVert \mathbf{{'}r{}'}'(\tau) \rVert\, d\tau$ Satisfies
-$\frac{ds}{dt} = \lVert \mathbf{{'}r{}'}'(t) \rVert$And reparametrising by arc length gives a
-Unit-speed curve: $\lVert \frac{d\mathbf{{'}r{}'}}{ds} \rVert = 1$.
+$s(t) = \int_a^t \lVert \mathbf{r}'(\tau) \rVert\, d\tau$ Satisfies
+$\frac{ds}{dt} = \lVert \mathbf{r}'(t) \rVert$And reparametrising by arc length gives a
+Unit-speed curve: $\lVert \frac{d\mathbf{r}}{ds} \rVert = 1$.
 
 _Proof._ By the Fundamental Theorem of Calculus,
-$\frac{ds}{dt} = \lVert \mathbf{{'}r{}'}'(t) \rVert$. If we reparametrise by $s$I.e., write
-$\mathbf{{'}r{}'}(s) = \mathbf{{'}r{}'}(t(s))$Then by the chain rule
-$\frac{d\mathbf{{'}r{}'}}{ds} = \mathbf{{'}r{}'}'(t) \cdot \frac{dt}{ds}$So
-$\lVert \frac{d\mathbf{{'}r{}'}}{ds} \rVert = \lVert \mathbf{{'}r{}'}'(t) \rVert \cdot \left\lvert \frac{dt}{ds} \right\rvert = 1$.
+$\frac{ds}{dt} = \lVert \mathbf{r}'(t) \rVert$. If we reparametrise by $s$I.e., write
+$\mathbf{r}(s) = \mathbf{r}(t(s))$Then by the chain rule
+$\frac{d\mathbf{r}}{ds} = \mathbf{r}'(t) \cdot \frac{dt}{ds}$So
+$\lVert \frac{d\mathbf{r}}{ds} \rVert = \lVert \mathbf{r}'(t) \rVert \cdot \left\lvert \frac{dt}{ds} \right\rvert = 1$.
 $\blacksquare$
 
 **Problem.** Find the arc length of the curve
-$\mathbf{{'}r{}'}(t) = (e^t \cos t,\, e^t \sin t,\, e^t)$ for $0 \leq t \leq \ln 2$.
+$\mathbf{r}(t) = (e^t \cos t,\, e^t \sin t,\, e^t)$ for $0 \leq t \leq \ln 2$.
 
 <details>
 <summary>Solution</summary>
 
-$\mathbf{{'}r{}'}'(t) = (e^t \cos t - e^t \sin t,\, e^t \sin t + e^t \cos t,\, e^t)$
+$\mathbf{r}'(t) = (e^t \cos t - e^t \sin t,\, e^t \sin t + e^t \cos t,\, e^t)$
 
-$\lVert \mathbf{{'}r{}'}'(t) \rVert^2 = e^{2t}(\cos t - \sin t)^2 + e^{2t}(\sin t + \cos t)^2 + e^{2t}$
+$\lVert \mathbf{r}'(t) \rVert^2 = e^{2t}(\cos t - \sin t)^2 + e^{2t}(\sin t + \cos t)^2 + e^{2t}$
 
 $= e^{2t}[(\cos^2 t - 2\sin t \cos t + \sin^2 t) + (\sin^2 t + 2\sin t \cos t + \cos^2 t) + 1]$
 
 $= e^{2t}[1 + 1 + 1] = 3e^{2t}$
 
-$$\lVert \mathbf{{'}r{}'}'(t) \rVert = \sqrt{3}\, e^t$$
+$$\lVert \mathbf{r}'(t) \rVert = \sqrt{3}\, e^t$$
 
 $$L = \int_0^{\ln 2} \sqrt{3}\, e^t\, dt = \sqrt{3}\, [e^t]_0^{\ln 2} = \sqrt{3}(2 - 1) = \sqrt{3}$$
 
@@ -1315,14 +1315,14 @@ $\blacksquare$
 
 </details>
 
-**Problem.** Find the arc length of the helix $\mathbf{{'}r{}'}(t) = (\cos t,\, \sin t,\, t)$ for
+**Problem.** Find the arc length of the helix $\mathbf{r}(t) = (\cos t,\, \sin t,\, t)$ for
 $0 \leq t \leq 4\pi$.
 
 <details>
 <summary>Solution</summary>
 
-$\mathbf{{'}r{}'}'(t) = (-\sin t,\, \cos t,\, 1)$So
-$\lVert \mathbf{{'}r{}'}'(t) \rVert = \sqrt{\sin^2 t + \cos^2 t + 1} = \sqrt{2}$.
+$\mathbf{r}'(t) = (-\sin t,\, \cos t,\, 1)$So
+$\lVert \mathbf{r}'(t) \rVert = \sqrt{\sin^2 t + \cos^2 t + 1} = \sqrt{2}$.
 
 $$L = \int_0^{4\pi} \sqrt{2}\, dt = 4\sqrt{2}\,\pi$$
 
@@ -1332,46 +1332,46 @@ $\blacksquare$
 
 ### 5.2 Curvature and Torsion
 
-**Definition.** Let $\mathbf{{'}r{}'}(s)$ be a unit-speed curve
-($\lVert \mathbf{{'}r{}'}'(s) \rVert = 1$). Define:
+**Definition.** Let $\mathbf{r}(s)$ be a unit-speed curve
+($\lVert \mathbf{r}'(s) \rVert = 1$). Define:
 
-- **Unit tangent vector:** $\mathbf{{'}T{}'}(s) = \mathbf{{'}r{}'}'(s)$
+- **Unit tangent vector:** $\mathbf{T}(s) = \mathbf{r}'(s)$
 - **Curvature:**
-  $\kappa(s) = \lVert \mathbf{{'}T{}'}'(s) \rVert = \lVert \mathbf{{'}r{}'}''(s) \rVert$
+  $\kappa(s) = \lVert \mathbf{T}'(s) \rVert = \lVert \mathbf{r}''(s) \rVert$
 - **Principal normal:**
-  $\mathbf{{'}N{}'}(s) = \frac{\mathbf{{'}T{}'}'(s)}{\lVert \mathbf{{'}T{}'}'(s) \rVert}$ (when
+  $\mathbf{N}(s) = \frac{\mathbf{T}'(s)}{\lVert \mathbf{T}'(s) \rVert}$ (when
   $\kappa \neq 0$)
-- **Binormal:** $\mathbf{{'}B{}'}(s) = \mathbf{{'}T{}'}(s) \times \mathbf{{'}N{}'}(s)$
-- **Torsion:** $\tau(s) = -\mathbf{{'}B{}'}'(s) \cdot \mathbf{{'}N{}'}(s)$
+- **Binormal:** $\mathbf{B}(s) = \mathbf{T}(s) \times \mathbf{N}(s)$
+- **Torsion:** $\tau(s) = -\mathbf{B}'(s) \cdot \mathbf{N}(s)$
 
-The vectors $\mathbf{{'}T{}'}$$\mathbf{{'}N{}'}$$\mathbf{{'}B{}'}$ form the **Frenet--Serret
+The vectors $\mathbf{T}$$\mathbf{N}$$\mathbf{B}$ form the **Frenet--Serret
 frame**, an orthonormal Basis that moves with the curve.
 
 **Theorem 5.2 (Frenet--Serret Formulas).**
 
-$$\mathbf{{'}T{}'}' = \kappa\, \mathbf{{'}N{}'}, \quad \mathbf{{'}N{}'}' = -\kappa\, \mathbf{{'}T{}'} + \tau\, \mathbf{{'}B{}'}, \quad \mathbf{{'}B{}'}' = -\tau\, \mathbf{{'}N{}'}$$
+$$\mathbf{T}' = \kappa\, \mathbf{N}, \quad \mathbf{N}' = -\kappa\, \mathbf{T} + \tau\, \mathbf{B}, \quad \mathbf{B}' = -\tau\, \mathbf{N}$$
 
-_Proof._ Since $\mathbf{{'}T{}'}$ is a unit vector, $\mathbf{{'}T{}'} \cdot \mathbf{{'}T{}'} = 1$So
-$\mathbf{{'}T{}'}' \cdot \mathbf{{'}T{}'} = 0$. Therefore $\mathbf{{'}T{}'}'$ is orthogonal to
-$\mathbf{{'}T{}'}$So $\mathbf{{'}T{}'}'$ is parallel to $\mathbf{{'}N{}'}$ (when $\kappa \neq 0$).
-This gives $\mathbf{{'}T{}'}' = \kappa\,\mathbf{{'}N{}'}$.
+_Proof._ Since $\mathbf{T}$ is a unit vector, $\mathbf{T} \cdot \mathbf{T} = 1$So
+$\mathbf{T}' \cdot \mathbf{T} = 0$. Therefore $\mathbf{T}'$ is orthogonal to
+$\mathbf{T}$So $\mathbf{T}'$ is parallel to $\mathbf{N}$ (when $\kappa \neq 0$).
+This gives $\mathbf{T}' = \kappa\,\mathbf{N}$.
 
-Similarly, $\mathbf{{'}B{}'} = \mathbf{{'}T{}'} \times \mathbf{{'}N{}'}$ is a unit vector, so
-$\mathbf{{'}B{}'}' \cdot \mathbf{{'}B{}'} = 0$. Also $\mathbf{{'}B{}'} \cdot \mathbf{{'}T{}'} = 0$So
-$\mathbf{{'}B{}'}' \cdot \mathbf{{'}T{}'} + \mathbf{{'}B{}'} \cdot \mathbf{{'}T{}'}' = 0$ Giving
-$\mathbf{{'}B{}'}' \cdot \mathbf{{'}T{}'} = -\mathbf{{'}B{}'} \cdot \kappa\,\mathbf{{'}N{}'} = 0$.
-So $\mathbf{{'}B{}'}'$ is Parallel to $\mathbf{{'}N{}'}$Giving
-$\mathbf{{'}B{}'}' = -\tau\,\mathbf{{'}N{}'}$.
+Similarly, $\mathbf{B} = \mathbf{T} \times \mathbf{N}$ is a unit vector, so
+$\mathbf{B}' \cdot \mathbf{B} = 0$. Also $\mathbf{B} \cdot \mathbf{T} = 0$So
+$\mathbf{B}' \cdot \mathbf{T} + \mathbf{B} \cdot \mathbf{T}' = 0$ Giving
+$\mathbf{B}' \cdot \mathbf{T} = -\mathbf{B} \cdot \kappa\,\mathbf{N} = 0$.
+So $\mathbf{B}'$ is Parallel to $\mathbf{N}$Giving
+$\mathbf{B}' = -\tau\,\mathbf{N}$.
 
-For $\mathbf{{'}N{}'}'$: since $\{\mathbf{{'}T{}'}, \mathbf{{'}N{}'}, \mathbf{{'}B{}'}\}$ is an
+For $\mathbf{N}'$: since $\{\mathbf{T}, \mathbf{N}, \mathbf{B}\}$ is an
 orthonormal basis,
-$\mathbf{{'}N{}'}' = (\mathbf{{'}N{}'}' \cdot \mathbf{{'}T{}'})\,\mathbf{{'}T{}'} + (\mathbf{{'}N{}'}' \cdot \mathbf{{'}N{}'})\,\mathbf{{'}N{}'} + (\mathbf{{'}N{}'}' \cdot \mathbf{{'}B{}'})\,\mathbf{{'}B{}'}$.
-From $\mathbf{{'}N{}'} \cdot \mathbf{{'}T{}'} = 0$:
-$\mathbf{{'}N{}'}' \cdot \mathbf{{'}T{}'} = -\mathbf{{'}N{}'} \cdot \mathbf{{'}T{}'}' = -\kappa$.
-From $\mathbf{{'}N{}'} \cdot \mathbf{{'}N{}'} = 1$: $\mathbf{{'}N{}'}' \cdot \mathbf{{'}N{}'} = 0$.
-From $\mathbf{{'}N{}'} \cdot \mathbf{{'}B{}'} = 0$:
-$\mathbf{{'}N{}'}' \cdot \mathbf{{'}B{}'} = -\mathbf{{'}N{}'} \cdot \mathbf{{'}B{}'}' = \tau$. This
-gives $\mathbf{{'}N{}'}' = -\kappa\,\mathbf{{'}T{}'} + \tau\,\mathbf{{'}B{}'}$. $\blacksquare$
+$\mathbf{N}' = (\mathbf{N}' \cdot \mathbf{T})\,\mathbf{T} + (\mathbf{N}' \cdot \mathbf{N})\,\mathbf{N} + (\mathbf{N}' \cdot \mathbf{B})\,\mathbf{B}$.
+From $\mathbf{N} \cdot \mathbf{T} = 0$:
+$\mathbf{N}' \cdot \mathbf{T} = -\mathbf{N} \cdot \mathbf{T}' = -\kappa$.
+From $\mathbf{N} \cdot \mathbf{N} = 1$: $\mathbf{N}' \cdot \mathbf{N} = 0$.
+From $\mathbf{N} \cdot \mathbf{B} = 0$:
+$\mathbf{N}' \cdot \mathbf{B} = -\mathbf{N} \cdot \mathbf{B}' = \tau$. This
+gives $\mathbf{N}' = -\kappa\,\mathbf{T} + \tau\,\mathbf{B}$. $\blacksquare$
 
 _Intuition._ The curvature $\kappa$ measures how sharply the curve bends (deviation from a straight
 line). The torsion $\tau$ measures how sharply the curve twists out of the osculating plane
@@ -1379,33 +1379,33 @@ line). The torsion $\tau$ measures how sharply the curve twists out of the oscul
 
 For a curve parameterised by an arbitrary parameter $t$ (not necessarily unit-speed):
 
-$$\kappa = \frac{\lVert \mathbf{{'}r{}'}'(t) \times \mathbf{{'}r{}'}''(t) \rVert}{\lVert \mathbf{{'}r{}'}'(t) \rVert^3}$$
+$$\kappa = \frac{\lVert \mathbf{r}'(t) \times \mathbf{r}''(t) \rVert}{\lVert \mathbf{r}'(t) \rVert^3}$$
 
-$$\tau = \frac{[\mathbf{{'}r{}'}'(t) \times \mathbf{{'}r{}'}''(t)] \cdot \mathbf{{'}r{}'}^{\prime\prime\prime}(t)}{\lVert \mathbf{{'}r{}'}'(t) \times \mathbf{{'}r{}'}''(t) \rVert^2}$$
+$$\tau = \frac{[\mathbf{r}'(t) \times \mathbf{r}''(t)] \cdot \mathbf{r}^{\prime\prime\prime}(t)}{\lVert \mathbf{r}'(t) \times \mathbf{r}''(t) \rVert^2}$$
 
 **Problem.** Find the curvature and torsion of the helix
-$\mathbf{{'}r{}'}(t) = (a\cos t,\, a\sin t,\, bt)$ where $a, b \gt{} 0$.
+$\mathbf{r}(t) = (a\cos t,\, a\sin t,\, bt)$ where $a, b \gt 0$.
 
 <details>
 <summary>Solution</summary>
 
-$\mathbf{{'}r{}'}'(t) = (-a\sin t,\, a\cos t,\, b)$
+$\mathbf{r}'(t) = (-a\sin t,\, a\cos t,\, b)$
 
-$\mathbf{{'}r{}'}''(t) = (-a\cos t,\, -a\sin t,\, 0)$
+$\mathbf{r}''(t) = (-a\cos t,\, -a\sin t,\, 0)$
 
-$\mathbf{{'}r{}'}^{\prime\prime\prime}(t) = (a\sin t,\, -a\cos t,\, 0)$
+$\mathbf{r}^{\prime\prime\prime}(t) = (a\sin t,\, -a\cos t,\, 0)$
 
-$\lVert \mathbf{{'}r{}'}' \rVert = \sqrt{a^2 + b^2}$
+$\lVert \mathbf{r}' \rVert = \sqrt{a^2 + b^2}$
 
-$$\mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'' = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ -a\sin t & a\cos t & b \\ -a\cos t & -a\sin t & 0 \end{vmatrix} = (ab\sin t,\, -ab\cos t,\, a^2)$$
+$$\mathbf{r}' \times \mathbf{r}'' = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ -a\sin t & a\cos t & b \\ -a\cos t & -a\sin t & 0 \end{vmatrix} = (ab\sin t,\, -ab\cos t,\, a^2)$$
 
-$$\lVert \mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'' \rVert = \sqrt{a^2 b^2 + a^4} = a\sqrt{a^2 + b^2}$$
+$$\lVert \mathbf{r}' \times \mathbf{r}'' \rVert = \sqrt{a^2 b^2 + a^4} = a\sqrt{a^2 + b^2}$$
 
 $$\kappa = \frac{a\sqrt{a^2 + b^2}}{(a^2 + b^2)^{3/2}} = \frac{a}{a^2 + b^2}$$
 
 For the torsion:
 
-$$(\mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'') \cdot \mathbf{{'}r{}'}^{\prime\prime\prime} = ab\sin t \cdot a\sin t + (-ab\cos t)(-a\cos t) + a^2 \cdot 0 = a^2 b$$
+$$(\mathbf{r}' \times \mathbf{r}'') \cdot \mathbf{r}^{\prime\prime\prime} = ab\sin t \cdot a\sin t + (-ab\cos t)(-a\cos t) + a^2 \cdot 0 = a^2 b$$
 
 $$\tau = \frac{a^2 b}{a^2(a^2 + b^2)} = \frac{b}{a^2 + b^2}$$
 
@@ -1418,37 +1418,37 @@ _Remark._ The helix has constant curvature and constant torsion, reflecting its 
 ### 5.3 Parametric Surfaces
 
 A **parametric surface** is a $C^1$ map
-$\mathbf{{'}r{}'} : D \subseteq \mathbb{{'}R{}'}^2 \to \mathbb{{'}R{}'}^3$
-$\mathbf{{'}r{}'}(u, v) = (x(u,v),\, y(u,v),\, z(u,v))$.
+$\mathbf{r} : D \subseteq \mathbb{R}^2 \to \mathbb{R}^3$
+$\mathbf{r}(u, v) = (x(u,v),\, y(u,v),\, z(u,v))$.
 
-The **tangent plane** at $\mathbf{{'}r{}'}(u_0, v_0)$ is spanned by the tangent vectors
+The **tangent plane** at $\mathbf{r}(u_0, v_0)$ is spanned by the tangent vectors
 
-$$\mathbf{{'}r{}'}_u = \frac{\partial \mathbf{{'}r{}'}}{\partial u}, \quad \mathbf{{'}r{}'}_v = \frac{\partial \mathbf{{'}r{}'}}{\partial v}$$
+$$\mathbf{r}_u = \frac{\partial \mathbf{r}}{\partial u}, \quad \mathbf{r}_v = \frac{\partial \mathbf{r}}{\partial v}$$
 
 The **unit normal** to the surface is
 
-$$\mathbf{{'}n{}'} = \frac{\mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v}{\lVert \mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v \rVert}$$
+$$\mathbf{n} = \frac{\mathbf{r}_u \times \mathbf{r}_v}{\lVert \mathbf{r}_u \times \mathbf{r}_v \rVert}$$
 
 **Examples of parametric surfaces:**
 
 - **Sphere** (spherical coordinates):
-  $\mathbf{{'}r{}'}(\theta, \phi) = (\rho\sin\phi\cos\theta,\, \rho\sin\phi\sin\theta,\, \rho\cos\phi)$
-- **Cylinder:** $\mathbf{{'}r{}'}(\theta, z) = (r\cos\theta,\, r\sin\theta,\, z)$
-- **Graph of $z = f(x,y)$:** $\mathbf{{'}r{}'}(x, y) = (x,\, y,\, f(x,y))$
+  $\mathbf{r}(\theta, \phi) = (\rho\sin\phi\cos\theta,\, \rho\sin\phi\sin\theta,\, \rho\cos\phi)$
+- **Cylinder:** $\mathbf{r}(\theta, z) = (r\cos\theta,\, r\sin\theta,\, z)$
+- **Graph of $z = f(x,y)$:** $\mathbf{r}(x, y) = (x,\, y,\, f(x,y))$
 
 For the graph $z = f(x,y)$The normal is
-$\mathbf{{'}n{}'} = \frac{(-f_x,\, -f_y,\, 1)}{\sqrt{1 + f_x^2 + f_y^2}}$.
+$\mathbf{n} = \frac{(-f_x,\, -f_y,\, 1)}{\sqrt{1 + f_x^2 + f_y^2}}$.
 
 ### 5.4 Surface Area
 
-**Definition.** The area of a parametric surface $\mathbf{{'}r{}'} : D \to \mathbb{{'}R{}'}^3$ is
+**Definition.** The area of a parametric surface $\mathbf{r} : D \to \mathbb{R}^3$ is
 
-$$A(S) = \iint_D \lVert \mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v \rVert\, du\, dv$$
+$$A(S) = \iint_D \lVert \mathbf{r}_u \times \mathbf{r}_v \rVert\, du\, dv$$
 
 _Derivation._ Partition $D$ into small rectangles $D_{ij}$ of area $\Delta u\, \Delta v$. The image
-$\mathbf{{'}r{}'}(D_{ij})$ is approximately a parallelogram spanned by
-$\mathbf{{'}r{}'}_u\, \Delta u$ and $\mathbf{{'}r{}'}_v\, \Delta v$With area
-$\lVert \mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v \rVert\, \Delta u\, \Delta v$. Summing and
+$\mathbf{r}(D_{ij})$ is approximately a parallelogram spanned by
+$\mathbf{r}_u\, \Delta u$ and $\mathbf{r}_v\, \Delta v$With area
+$\lVert \mathbf{r}_u \times \mathbf{r}_v \rVert\, \Delta u\, \Delta v$. Summing and
 taking the limit gives the formula. $\blacksquare$
 
 **Problem.** Find the surface area of the part of the paraboloid $z = x^2 + y^2$ that lies below The
@@ -1457,13 +1457,13 @@ plane $z = 4$.
 <details>
 <summary>Solution</summary>
 
-Parametrise by $\mathbf{{'}r{}'}(x, y) = (x,\, y,\, x^2 + y^2)$ where $x^2 + y^2 \leq 4$.
+Parametrise by $\mathbf{r}(x, y) = (x,\, y,\, x^2 + y^2)$ where $x^2 + y^2 \leq 4$.
 
-$\mathbf{{'}r{}'}_x = (1,\, 0,\, 2x)$$\mathbf{{'}r{}'}_y = (0,\, 1,\, 2y)$.
+$\mathbf{r}_x = (1,\, 0,\, 2x)$$\mathbf{r}_y = (0,\, 1,\, 2y)$.
 
-$$\mathbf{{'}r{}'}_x \times \mathbf{{'}r{}'}_y = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 1 & 0 & 2x \\ 0 & 1 & 2y \end{vmatrix} = (-2x,\, -2y,\, 1)$$
+$$\mathbf{r}_x \times \mathbf{r}_y = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 0 & 2x \\ 0 & 1 & 2y \end{vmatrix} = (-2x,\, -2y,\, 1)$$
 
-$$\lVert \mathbf{{'}r{}'}_x \times \mathbf{{'}r{}'}_y \rVert = \sqrt{4x^2 + 4y^2 + 1}$$
+$$\lVert \mathbf{r}_x \times \mathbf{r}_y \rVert = \sqrt{4x^2 + 4y^2 + 1}$$
 
 $$A = \iint_{x^2+y^2 \leq 4} \sqrt{4x^2 + 4y^2 + 1}\, dx\, dy$$
 
@@ -1484,18 +1484,18 @@ $\blacksquare$
 **Definition (Scalar surface integral).** The integral of a scalar function $f$ over a parametric
 Surface $S$ is
 
-$$\iint_S f\, dS = \iint_D f(\mathbf{{'}r{}'}(u,v))\, \lVert \mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v \rVert\, du\, dv$$
+$$\iint_S f\, dS = \iint_D f(\mathbf{r}(u,v))\, \lVert \mathbf{r}_u \times \mathbf{r}_v \rVert\, du\, dv$$
 
-**Definition (Vector surface integral / flux).** The flux of a vector field $\mathbf{{'}F{}'}$
+**Definition (Vector surface integral / flux).** The flux of a vector field $\mathbf{F}$
 through an Oriented surface $S$ is
 
-$$\iint_S \mathbf{{'}F{}'} \cdot d\mathbf{{'}S{}'} = \iint_D \mathbf{{'}F{}'}(\mathbf{{'}r{}'}(u,v)) \cdot (\mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v)\, du\, dv$$
+$$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_D \mathbf{F}(\mathbf{r}(u,v)) \cdot (\mathbf{r}_u \times \mathbf{r}_v)\, du\, dv$$
 
 Where the orientation is determined by the choice of normal
-$\mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v$ vs. $\mathbf{{'}r{}'}_v \times \mathbf{{'}r{}'}_u$.
+$\mathbf{r}_u \times \mathbf{r}_v$ vs. $\mathbf{r}_v \times \mathbf{r}_u$.
 
-**Problem.** Evaluate $\iint_S \mathbf{{'}F{}'} \cdot d\mathbf{{'}S{}'}$ where
-$\mathbf{{'}F{}'} = (x,\, y,\, z^2)$ and $S$ is the hemisphere $x^2 + y^2 + z^2 = 4$$z \geq 0$With
+**Problem.** Evaluate $\iint_S \mathbf{F} \cdot d\mathbf{S}$ where
+$\mathbf{F} = (x,\, y,\, z^2)$ and $S$ is the hemisphere $x^2 + y^2 + z^2 = 4$$z \geq 0$With
 Upward orientation.
 
 <details>
@@ -1504,7 +1504,7 @@ Upward orientation.
 Use the divergence theorem on the closed hemisphere plus the disk at $z = 0$. Let $E$ be the solid
 hemisphere. Then:
 
-$$\iint_{\mathrm{closed{}\ S} \mathbf{{'}F{}'} \cdot d\mathbf{{'}S{}'} = \iiint_E \nabla \cdot \mathbf{{'}F{}'}\, dV = \iiint_E (1 + 1 + 2z)\, dV$$
+$$\iint_{\mathrm{closed\ S} \mathbf{F} \cdot d\mathbf{S} = \iiint_E \nabla \cdot \mathbf{F}\, dV = \iiint_E (1 + 1 + 2z)\, dV$$
 
 $$= 2V + 2\iiint_E z\, dV$$
 
@@ -1516,8 +1516,8 @@ $$\iiint_E z\, dV = \bar{z} \cdot V = \frac{3}{4} \cdot \frac{16\pi}{3} = 4\pi$$
 
 $$= 2 \cdot \frac{16\pi}{3} + 2 \cdot 4\pi = \frac{32\pi}{3} + 8\pi = \frac{56\pi}{3}$$
 
-The flux through the disk $z = 0$$x^2 + y^2 \leq 4$ (with downward normal $-\mathbf{{'}k{}'}$):
-$\iint_{\mathrm{disk{}} \mathbf{{'}F{}'} \cdot (-\mathbf{{'}k{}'})\, dS = \iint_{\mathrm{disk{}} 0\, dS = 0$.
+The flux through the disk $z = 0$$x^2 + y^2 \leq 4$ (with downward normal $-\mathbf{k}$):
+$\iint_{\mathrm{disk} \mathbf{F} \cdot (-\mathbf{k})\, dS = \iint_{\mathrm{disk} 0\, dS = 0$.
 
 So the flux through the hemisphere alone is $\frac{56\pi}{3}$. $\blacksquare$
 
@@ -1532,13 +1532,13 @@ First octant.
 Parametrise the surface. Solve for $z = 4 - 2x - 2y$ where $x \geq 0$$y \geq 0$$z \geq 0$ I.e.,
 $2x + 2y \leq 4$ or $x + y \leq 2$.
 
-$\mathbf{{'}r{}'}(x,y) = (x,\, y,\, 4 - 2x - 2y)$$D = \\{(x,y) : x \geq 0,\, y \geq 0,\, x + y \leq 2\\}$.
+$\mathbf{r}(x,y) = (x,\, y,\, 4 - 2x - 2y)$$D = \\{(x,y) : x \geq 0,\, y \geq 0,\, x + y \leq 2\\}$.
 
-$\mathbf{{'}r{}'}_x = (1,\, 0,\, -2)$$\mathbf{{'}r{}'}_y = (0,\, 1,\, -2)$.
+$\mathbf{r}_x = (1,\, 0,\, -2)$$\mathbf{r}_y = (0,\, 1,\, -2)$.
 
-$$\mathbf{{'}r{}'}_x \times \mathbf{{'}r{}'}_y = (2,\, 2,\, 1)$$
+$$\mathbf{r}_x \times \mathbf{r}_y = (2,\, 2,\, 1)$$
 
-$$\lVert \mathbf{{'}r{}'}_x \times \mathbf{{'}r{}'}_y \rVert = \sqrt{4 + 4 + 1} = 3$$
+$$\lVert \mathbf{r}_x \times \mathbf{r}_y \rVert = \sqrt{4 + 4 + 1} = 3$$
 
 $$\iint_S z\, dS = \iint_D (4 - 2x - 2y) \cdot 3\, dx\, dy = 3 \int_0^2 \int_0^{2-x} (4 - 2x - 2y)\, dy\, dx$$
 
@@ -1556,11 +1556,11 @@ $\blacksquare$
 
 - **Parameterisation domain.** Always verify that the parameterisation covers the entire surface and
   that the map is one-to-one (except possibly on the boundary).
-- **Normal orientation.** The cross product $\mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v$
+- **Normal orientation.** The cross product $\mathbf{r}_u \times \mathbf{r}_v$
   determines the orientation. Swapping the order changes the sign of the flux integral.
 - **Surface area vs. Flux.** Surface area uses
-  $\lVert \mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v \rVert$ (scalar), while flux uses
-  $\mathbf{{'}r{}'}_u \times \mathbf{{'}r{}'}_v$ (vector, oriented). :::
+  $\lVert \mathbf{r}_u \times \mathbf{r}_v \rVert$ (scalar), while flux uses
+  $\mathbf{r}_u \times \mathbf{r}_v$ (vector, oriented). :::
 
 ## 6. Problem Set
 
@@ -1612,19 +1612,19 @@ If you get this wrong, revise: Section 4.2 Second Derivative Test.
 ### Problem 3
 
 Find the directional derivative of $f(x,y) = e^x \cos y$ at $(0, \pi/2)$ in the direction
-$\mathbf{{'}v{}'} = (1, 1)$.
+$\mathbf{v} = (1, 1)$.
 
 <details>
 <summary>Solution</summary>
 
-Normalise: $\lVert \mathbf{{'}v{}'} \rVert = \sqrt{2}$So
-$\mathbf{{'}u{}'} = (1/\sqrt{2},\, 1/\sqrt{2})$.
+Normalise: $\lVert \mathbf{v} \rVert = \sqrt{2}$So
+$\mathbf{u} = (1/\sqrt{2},\, 1/\sqrt{2})$.
 
 $f_x = e^x \cos y$$f_y = -e^x \sin y$.
 
 $\nabla f(0, \pi/2) = (e^0 \cos(\pi/2),\, -e^0 \sin(\pi/2)) = (0, -1)$.
 
-$$D_{\mathbf{{'}u{}'}} f = (0, -1) \cdot (1/\sqrt{2},\, 1/\sqrt{2}) = -\frac{1}{\sqrt{2}}$$
+$$D_{\mathbf{u}} f = (0, -1) \cdot (1/\sqrt{2},\, 1/\sqrt{2}) = -\frac{1}{\sqrt{2}}$$
 
 If you get this wrong, revise: Section 1.5 Directional Derivatives.
 
@@ -1675,7 +1675,7 @@ Evaluate $\iint_D (x + y)\, dA$ where $D$ is bounded by $y = x$ and $y = x^2$.
 <summary>Solution</summary>
 
 The curves intersect when $x = x^2$I.e., $x(x-1) = 0$So $x = 0$ and $x = 1$. For $x \in (0,1)$
-$x^2 \lt{} x$So $D = \\{(x,y) : 0 \leq x \leq 1,\, x^2 \leq y \leq x\\}$.
+$x^2 \lt x$So $D = \\{(x,y) : 0 \leq x \leq 1,\, x^2 \leq y \leq x\\}$.
 
 $$\iint_D (x + y)\, dA = \int_0^1 \int_{x^2}^x (x + y)\, dy\, dx = \int_0^1 \left[xy + \frac{y^2}{2}\right]_{x^2}^x\, dx$$
 
@@ -1768,23 +1768,23 @@ If you get this wrong, revise: Section 3.3 Green's Theorem.
 
 ### Problem 11
 
-Compute the curl and divergence of $\mathbf{{'}F{}'} = (yz,\, xz,\, xy)$.
+Compute the curl and divergence of $\mathbf{F} = (yz,\, xz,\, xy)$.
 
 <details>
 <summary>Solution</summary>
 
 **Curl:**
 
-$$\nabla \times \mathbf{{'}F{}'} = \left(\frac{\partial (xy)}{\partial y} - \frac{\partial (xz)}{\partial z},\, \frac{\partial (yz)}{\partial z} - \frac{\partial (xy)}{\partial x},\, \frac{\partial (xz)}{\partial x} - \frac{\partial (yz)}{\partial y}\right)$$
+$$\nabla \times \mathbf{F} = \left(\frac{\partial (xy)}{\partial y} - \frac{\partial (xz)}{\partial z},\, \frac{\partial (yz)}{\partial z} - \frac{\partial (xy)}{\partial x},\, \frac{\partial (xz)}{\partial x} - \frac{\partial (yz)}{\partial y}\right)$$
 
-$$= (x - x,\, y - y,\, z - z) = \mathbf{{'}0{}'}$$
+$$= (x - x,\, y - y,\, z - z) = \mathbf{0}$$
 
 **Divergence:**
 
-$$\nabla \cdot \mathbf{{'}F{}'} = \frac{\partial (yz)}{\partial x} + \frac{\partial (xz)}{\partial y} + \frac{\partial (xy)}{\partial z} = 0 + 0 + 0 = 0$$
+$$\nabla \cdot \mathbf{F} = \frac{\partial (yz)}{\partial x} + \frac{\partial (xz)}{\partial y} + \frac{\partial (xy)}{\partial z} = 0 + 0 + 0 = 0$$
 
-Since the curl is zero and the domain is connected, $\mathbf{{'}F{}'}$ is conservative. Indeed,
-$\mathbf{{'}F{}'} = \nabla(xyz)$.
+Since the curl is zero and the domain is connected, $\mathbf{F}$ is conservative. Indeed,
+$\mathbf{F} = \nabla(xyz)$.
 
 If you get this wrong, revise: Section 3.4 Curl and Divergence.
 
@@ -1792,22 +1792,22 @@ If you get this wrong, revise: Section 3.4 Curl and Divergence.
 
 ### Problem 12
 
-Use Stokes' theorem to evaluate $\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'}$ where
-$\mathbf{{'}F{}'} = (2y,\, -z,\, x)$ and $C$ is the circle $x^2 + y^2 = 1$$z = 1$ Traversed
+Use Stokes' theorem to evaluate $\oint_C \mathbf{F} \cdot d\mathbf{r}$ where
+$\mathbf{F} = (2y,\, -z,\, x)$ and $C$ is the circle $x^2 + y^2 = 1$$z = 1$ Traversed
 counterclockwise when viewed from above.
 
 <details>
 <summary>Solution</summary>
 
-Take $S$ to be the disk $x^2 + y^2 \leq 1$$z = 1$ with upward normal $\mathbf{{'}n{}'} = (0, 0, 1)$.
+Take $S$ to be the disk $x^2 + y^2 \leq 1$$z = 1$ with upward normal $\mathbf{n} = (0, 0, 1)$.
 
-$$\nabla \times \mathbf{{'}F{}'} = \left(\frac{\partial x}{\partial y} - \frac{\partial (-z)}{\partial z},\, \frac{\partial (2y)}{\partial z} - \frac{\partial x}{\partial x},\, \frac{\partial (-z)}{\partial x} - \frac{\partial (2y)}{\partial y}\right)$$
+$$\nabla \times \mathbf{F} = \left(\frac{\partial x}{\partial y} - \frac{\partial (-z)}{\partial z},\, \frac{\partial (2y)}{\partial z} - \frac{\partial x}{\partial x},\, \frac{\partial (-z)}{\partial x} - \frac{\partial (2y)}{\partial y}\right)$$
 
 $$= (0 - (-1),\, 0 - 1,\, 0 - 2) = (1, -1, -2)$$
 
-$$(\nabla \times \mathbf{{'}F{}'}) \cdot \mathbf{{'}n{}'} = (1, -1, -2) \cdot (0, 0, 1) = -2$$
+$$(\nabla \times \mathbf{F}) \cdot \mathbf{n} = (1, -1, -2) \cdot (0, 0, 1) = -2$$
 
-$$\oint_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \iint_S (-2)\, dS = -2 \cdot \pi \cdot 1^2 = -2\pi$$
+$$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (-2)\, dS = -2 \cdot \pi \cdot 1^2 = -2\pi$$
 
 If you get this wrong, revise: Section 3.5 Stokes' Theorem.
 
@@ -1815,15 +1815,15 @@ If you get this wrong, revise: Section 3.5 Stokes' Theorem.
 
 ### Problem 13
 
-Use the divergence theorem to compute the flux of $\mathbf{{'}F{}'} = (x,\, y,\, z)$ through the
+Use the divergence theorem to compute the flux of $\mathbf{F} = (x,\, y,\, z)$ through the
 Surface of the cube $[0, 1]^3$.
 
 <details>
 <summary>Solution</summary>
 
-$$\nabla \cdot \mathbf{{'}F{}'} = \frac{\partial x}{\partial x} + \frac{\partial y}{\partial y} + \frac{\partial z}{\partial z} = 3$$
+$$\nabla \cdot \mathbf{F} = \frac{\partial x}{\partial x} + \frac{\partial y}{\partial y} + \frac{\partial z}{\partial z} = 3$$
 
-$$\iint_S \mathbf{{'}F{}'} \cdot d\mathbf{{'}S{}'} = \iiint_E 3\, dV = 3 \cdot 1^3 = 3$$
+$$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_E 3\, dV = 3 \cdot 1^3 = 3$$
 
 If you get this wrong, revise: Section 3.6 Divergence Theorem.
 
@@ -1831,12 +1831,12 @@ If you get this wrong, revise: Section 3.6 Divergence Theorem.
 
 ### Problem 14
 
-Find a potential function for $\mathbf{{'}F{}'} = (2x + y,\, x + 2z,\, 2y)$.
+Find a potential function for $\mathbf{F} = (2x + y,\, x + 2z,\, 2y)$.
 
 <details>
 <summary>Solution</summary>
 
-First check: $\nabla \times \mathbf{{'}F{}'} = (2 - 2,\, 0 - 0,\, 1 - 1) = \mathbf{{'}0{}'}$.
+First check: $\nabla \times \mathbf{F} = (2 - 2,\, 0 - 0,\, 1 - 1) = \mathbf{0}$.
 Conservative.
 
 $$\frac{\partial \phi}{\partial x} = 2x + y \implies \phi = x^2 + xy + g(y,z)$$
@@ -1859,14 +1859,14 @@ $x^2 + y^2 = 4$$0 \leq z \leq 3$.
 <details>
 <summary>Solution</summary>
 
-Parametrise the cylinder: $\mathbf{{'}r{}'}(\theta, z) = (2\cos\theta,\, 2\sin\theta,\, z)$ for
+Parametrise the cylinder: $\mathbf{r}(\theta, z) = (2\cos\theta,\, 2\sin\theta,\, z)$ for
 $0 \leq \theta \leq 2\pi$$0 \leq z \leq 3$.
 
-$\mathbf{{'}r{}'}_\theta = (-2\sin\theta,\, 2\cos\theta,\, 0)$$\mathbf{{'}r{}'}_z = (0,\, 0,\, 1)$.
+$\mathbf{r}_\theta = (-2\sin\theta,\, 2\cos\theta,\, 0)$$\mathbf{r}_z = (0,\, 0,\, 1)$.
 
-$$\mathbf{{'}r{}'}_\theta \times \mathbf{{'}r{}'}_z = (2\cos\theta,\, 2\sin\theta,\, 0)$$
+$$\mathbf{r}_\theta \times \mathbf{r}_z = (2\cos\theta,\, 2\sin\theta,\, 0)$$
 
-$$\lVert \mathbf{{'}r{}'}_\theta \times \mathbf{{'}r{}'}_z \rVert = \sqrt{4\cos^2\theta + 4\sin^2\theta} = 2$$
+$$\lVert \mathbf{r}_\theta \times \mathbf{r}_z \rVert = \sqrt{4\cos^2\theta + 4\sin^2\theta} = 2$$
 
 On $S$: $x^2 + y^2 = 4$.
 
@@ -1926,15 +1926,15 @@ If you get this wrong, revise: Section 4.3 Lagrange Multipliers.
 
 ### Problem 16
 
-Find the arc length of the curve $\mathbf{{'}r{}'}(t) = (t^2,\, 2t,\, \ln t)$ for $1 \leq t \leq e$.
+Find the arc length of the curve $\mathbf{r}(t) = (t^2,\, 2t,\, \ln t)$ for $1 \leq t \leq e$.
 
 <details>
 <summary>Solution</summary>
 
-$\mathbf{{'}r{}'}'(t) = (2t,\, 2,\, 1/t)$So
-$\lVert \mathbf{{'}r{}'}'(t) \rVert = \sqrt{4t^2 + 4 + 1/t^2}$.
+$\mathbf{r}'(t) = (2t,\, 2,\, 1/t)$So
+$\lVert \mathbf{r}'(t) \rVert = \sqrt{4t^2 + 4 + 1/t^2}$.
 
-Note: $4t^2 + 4 + t^{-2} = (2t + 1/t)^2$. So $\lVert \mathbf{{'}r{}'}' \rVert = 2t + 1/t$.
+Note: $4t^2 + 4 + t^{-2} = (2t + 1/t)^2$. So $\lVert \mathbf{r}' \rVert = 2t + 1/t$.
 
 $$L = \int_1^e \left(2t + \frac{1}{t}\right)\, dt = \left[t^2 + \ln t\right]_1^e = e^2 + 1 - 1 - 0 = e^2$$
 
@@ -1944,20 +1944,20 @@ If you get this wrong, revise: Section 5.1 Parametric Curves.
 
 ### Problem 17
 
-Find the curvature of $\mathbf{{'}r{}'}(t) = (t,\, t^2,\, t^3)$ at $t = 1$.
+Find the curvature of $\mathbf{r}(t) = (t,\, t^2,\, t^3)$ at $t = 1$.
 
 <details>
 <summary>Solution</summary>
 
-$\mathbf{{'}r{}'}'(t) = (1,\, 2t,\, 3t^2)$$\mathbf{{'}r{}'}''(t) = (0,\, 2,\, 6t)$.
+$\mathbf{r}'(t) = (1,\, 2t,\, 3t^2)$$\mathbf{r}''(t) = (0,\, 2,\, 6t)$.
 
-At $t = 1$: $\mathbf{{'}r{}'}' = (1, 2, 3)$$\mathbf{{'}r{}'}'' = (0, 2, 6)$.
+At $t = 1$: $\mathbf{r}' = (1, 2, 3)$$\mathbf{r}'' = (0, 2, 6)$.
 
-$\lVert \mathbf{{'}r{}'}' \rVert = \sqrt{1 + 4 + 9} = \sqrt{14}$.
+$\lVert \mathbf{r}' \rVert = \sqrt{1 + 4 + 9} = \sqrt{14}$.
 
-$$\mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'' = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 1 & 2 & 3 \\ 0 & 2 & 6 \end{vmatrix} = (12 - 6,\, -(6 - 0),\, 2 - 0) = (6, -6, 2)$$
+$$\mathbf{r}' \times \mathbf{r}'' = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 2 & 3 \\ 0 & 2 & 6 \end{vmatrix} = (12 - 6,\, -(6 - 0),\, 2 - 0) = (6, -6, 2)$$
 
-$$\lVert \mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'' \rVert = \sqrt{36 + 36 + 4} = \sqrt{76} = 2\sqrt{19}$$
+$$\lVert \mathbf{r}' \times \mathbf{r}'' \rVert = \sqrt{36 + 36 + 4} = \sqrt{76} = 2\sqrt{19}$$
 
 $$\kappa = \frac{2\sqrt{19}}{(\sqrt{14})^3} = \frac{2\sqrt{19}}{14\sqrt{14}} = \frac{\sqrt{266}}{98}$$
 
@@ -1988,15 +1988,15 @@ If you get this wrong, revise: Section 5.4 Surface Area.
 
 ### Problem 19
 
-Show that $\mathbf{{'}F{}'} = (ye^{xy} + 2x,\, xe^{xy} + 2y)$ is conservative and evaluate
-$\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'}$ where $C$ is any path from $(0, 0)$ to $(1, 1)$.
+Show that $\mathbf{F} = (ye^{xy} + 2x,\, xe^{xy} + 2y)$ is conservative and evaluate
+$\int_C \mathbf{F} \cdot d\mathbf{r}$ where $C$ is any path from $(0, 0)$ to $(1, 1)$.
 
 <details>
 <summary>Solution</summary>
 
 Check:
 $\frac{\partial P}{\partial y} = e^{xy} + xye^{xy}$$\frac{\partial Q}{\partial x} = e^{xy} + xye^{xy}$.
-These are equal, so $\mathbf{{'}F{}'}$ is conservative (on $\mathbb{{'}R{}'}^2$Which is connected).
+These are equal, so $\mathbf{F}$ is conservative (on $\mathbb{R}^2$Which is connected).
 
 Find $\phi$:
 
@@ -2006,7 +2006,7 @@ $$\frac{\partial \phi}{\partial y} = xe^{xy} + g'(y) = xe^{xy} + 2y \implies g'(
 
 $$\phi(x,y) = e^{xy} + x^2 + y^2$$
 
-$$\int_C \mathbf{{'}F{}'} \cdot d\mathbf{{'}r{}'} = \phi(1,1) - \phi(0,0) = (e + 1 + 1) - (1 + 0 + 0) = e + 1$$
+$$\int_C \mathbf{F} \cdot d\mathbf{r} = \phi(1,1) - \phi(0,0) = (e + 1 + 1) - (1 + 0 + 0) = e + 1$$
 
 If you get this wrong, revise: Section 3.2 Line Integrals and Section 3.7 Conservative Fields.
 
@@ -2014,22 +2014,22 @@ If you get this wrong, revise: Section 3.2 Line Integrals and Section 3.7 Conser
 
 ### Problem 22
 
-Compute the torsion of the curve $\mathbf{{'}r{}'}(t) = (\cosh t,\, \sinh t,\, t)$ at $t = 0$.
+Compute the torsion of the curve $\mathbf{r}(t) = (\cosh t,\, \sinh t,\, t)$ at $t = 0$.
 
 <details>
 <summary>Solution</summary>
 
-$\mathbf{{'}r{}'}'(t) = (\sinh t,\, \cosh t,\, 1)$$\mathbf{{'}r{}'}''(t) = (\cosh t,\, \sinh t,\, 0)$
-$\mathbf{{'}r{}'}^{\prime\prime\prime}(t) = (\sinh t,\, \cosh t,\, 0)$.
+$\mathbf{r}'(t) = (\sinh t,\, \cosh t,\, 1)$$\mathbf{r}''(t) = (\cosh t,\, \sinh t,\, 0)$
+$\mathbf{r}^{\prime\prime\prime}(t) = (\sinh t,\, \cosh t,\, 0)$.
 
-At $t = 0$: $\mathbf{{'}r{}'}' = (0, 1, 1)$$\mathbf{{'}r{}'}'' = (1, 0, 0)$
-$\mathbf{{'}r{}'}^{\prime\prime\prime} = (0, 1, 0)$.
+At $t = 0$: $\mathbf{r}' = (0, 1, 1)$$\mathbf{r}'' = (1, 0, 0)$
+$\mathbf{r}^{\prime\prime\prime} = (0, 1, 0)$.
 
-$$\mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'' = \begin{vmatrix} \mathbf{{'}i{}'} & \mathbf{{'}j{}'} & \mathbf{{'}k{}'} \\ 0 & 1 & 1 \\ 1 & 0 & 0 \end{vmatrix} = (0,\, 1,\, -1)$$
+$$\mathbf{r}' \times \mathbf{r}'' = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 0 & 1 & 1 \\ 1 & 0 & 0 \end{vmatrix} = (0,\, 1,\, -1)$$
 
-$$\lVert \mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'' \rVert = \sqrt{2}$$
+$$\lVert \mathbf{r}' \times \mathbf{r}'' \rVert = \sqrt{2}$$
 
-$$(\mathbf{{'}r{}'}' \times \mathbf{{'}r{}'}'') \cdot \mathbf{{'}r{}'}^{\prime\prime\prime} = 1$$
+$$(\mathbf{r}' \times \mathbf{r}'') \cdot \mathbf{r}^{\prime\prime\prime} = 1$$
 
 $$\tau = \frac{1}{(\sqrt{2})^2} = \frac{1}{2}$$
 

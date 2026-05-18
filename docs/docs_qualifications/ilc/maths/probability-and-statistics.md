@@ -117,7 +117,7 @@ So the coefficient is $280$.
 For an event $A$:
 
 $$
-P(A) = \frac{\mathrm{number of favourable outcomes{}}{\mathrm{total number of outcomes{}}
+P(A) = \frac{\mathrm{number of favourable outcomes}{\mathrm{total number of outcomes}
 $$
 
 Properties: $0 \leq P(A) \leq 1$ and $P(A') = 1 - P(A)$.
@@ -177,7 +177,7 @@ $$
 The probability both are red.
 
 $$
-P(\mathrm{both red{}) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}
+P(\mathrm{both red) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}
 $$
 
 **Example (HL) -- Bayes' theorem:** A test for a disease has 95% sensitivity (true positive rate)
@@ -198,7 +198,7 @@ Produces 20% with 1% defect rate. A randomly selected bolt is defective. What is
 Came from Machine B?
 
 $$
-P(B|\mathrm{def{}) = \frac{P(\mathrm{def{}|B)P(B)}{P(\mathrm{def{}|A)P(A) + P(\mathrm{def{}|B)P(B) + P(\mathrm{def{}|C)P(C)}
+P(B|\mathrm{def) = \frac{P(\mathrm{def|B)P(B)}{P(\mathrm{def|A)P(A) + P(\mathrm{def|B)P(B) + P(\mathrm{def|C)P(C)}
 $$
 
 $$
@@ -214,7 +214,7 @@ A probability tree diagram is useful for multi-stage experiments.
 There are $2^3 = 8$ equally likely outcomes. The favourable outcomes are HHT, HTH, THH.
 
 $$
-P(\mathrm{exactly 2 heads{}) = \frac{3}{8}
+P(\mathrm{exactly 2 heads) = \frac{3}{8}
 $$
 
 Alternatively using combinations:
@@ -249,20 +249,20 @@ $$
 **Variance:**
 
 $$
-\mathrm{Var{}(X) = E(X^2) - [E(X)]^2 = \sum x_i^2 p_i - [E(X)]^2
+\mathrm{Var(X) = E(X^2) - [E(X)]^2 = \sum x_i^2 p_i - [E(X)]^2
 $$
 
-**Standard deviation:** $\sigma = \sqrt{\mathrm{Var{}(X)}$.
+**Standard deviation:** $\sigma = \sqrt{\mathrm{Var(X)}$.
 
 **Properties:**
 
 - $E(aX + b) = aE(X) + b$
-- $\mathrm{Var{}(aX + b) = a^2\mathrm{Var{}(X)$
+- $\mathrm{Var(aX + b) = a^2\mathrm{Var(X)$
 
-**Proof of $\mathrm{Var{}(aX + b) = a^2\mathrm{Var{}(X)$:**
+**Proof of $\mathrm{Var(aX + b) = a^2\mathrm{Var(X)$:**
 
 $$
-\mathrm{Var{}(aX + b) = E[(aX + b)^2] - [E(aX + b)]^2
+\mathrm{Var(aX + b) = E[(aX + b)^2] - [E(aX + b)]^2
 $$
 
 $$
@@ -274,10 +274,10 @@ $$
 $$
 
 $$
-= a^2[E(X^2) - (E(X))^2] = a^2\mathrm{Var{}(X)
+= a^2[E(X^2) - (E(X))^2] = a^2\mathrm{Var(X)
 $$
 
-**Example (OL):** A fair die is rolled. Find $E(X)$ and $\mathrm{Var{}(X)$.
+**Example (OL):** A fair die is rolled. Find $E(X)$ and $\mathrm{Var(X)$.
 
 $$
 E(X) = \frac{1+2+3+4+5+6}{6} = \frac{21}{6} = 3.5
@@ -288,12 +288,12 @@ E(X^2) = \frac{1+4+9+16+25+36}{6} = \frac{91}{6}
 $$
 
 $$
-\mathrm{Var{}(X) = \frac{91}{6} - \frac{49}{4} = \frac{182 - 147}{12} = \frac{35}{12} \approx 2.917
+\mathrm{Var(X) = \frac{91}{6} - \frac{49}{4} = \frac{182 - 147}{12} = \frac{35}{12} \approx 2.917
 $$
 
 ### Binomial Distribution (HL)
 
-$X \sim \mathrm{Bin{}(n, p)$ where $n$ is the number of trials and $p$ is the probability of
+$X \sim \mathrm{Bin(n, p)$ where $n$ is the number of trials and $p$ is the probability of
 success.
 
 $$
@@ -301,12 +301,12 @@ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
 $$
 
 $$
-E(X) = np, \quad \mathrm{Var{}(X) = np(1-p)
+E(X) = np, \quad \mathrm{Var(X) = np(1-p)
 $$
 
 **Conditions:** fixed $n$Independent trials, two outcomes, constant $p$.
 
-**Proof that $E(X) = np$ for $X \sim \mathrm{Bin{}(n, p)$.** Let $X_i$ be the indicator variable for
+**Proof that $E(X) = np$ for $X \sim \mathrm{Bin(n, p)$.** Let $X_i$ be the indicator variable for
 Success on trial $i$ (so $X_i = 1$ with probability $p$$X_i = 0$ with probability $1-p$). Then
 $X = X_1 + X_2 + \cdots + X_n$ and $E(X_i) = p$So $E(X) = np$.
 
@@ -314,7 +314,7 @@ $X = X_1 + X_2 + \cdots + X_n$ and $E(X_i) = p$So $E(X) = np$.
 Every answer. Find the probability of getting exactly 5 correct.
 
 $$
-X \sim \mathrm{Bin{}(20, 0.25)
+X \sim \mathrm{Bin(20, 0.25)
 $$
 
 $$
@@ -323,7 +323,7 @@ $$
 
 ### Poisson Distribution (HL)
 
-$X \sim \mathrm{Po{}(\lambda)$ models the number of events occurring in a fixed interval when events
+$X \sim \mathrm{Po(\lambda)$ models the number of events occurring in a fixed interval when events
 Happen independently at a constant average rate $\lambda$.
 
 $$
@@ -331,7 +331,7 @@ P(X = k) = \frac{e^{-\lambda}\lambda^k}{k!}, \quad k = 0, 1, 2, \ldots
 $$
 
 $$
-E(X) = \lambda, \quad \mathrm{Var{}(X) = \lambda
+E(X) = \lambda, \quad \mathrm{Var(X) = \lambda
 $$
 
 **Conditions:** events occur independently, at a constant average rate, and singly (not in
@@ -341,7 +341,7 @@ Clusters).
 Receiving exactly 3 calls in a given minute.
 
 $$
-X \sim \mathrm{Po{}(4.5)
+X \sim \mathrm{Po(4.5)
 $$
 
 $$
@@ -380,7 +380,7 @@ $$
 When $np \ge 5$ and $n(1-p) \ge 5$:
 
 $$
-X \sim \mathrm{Bin{}(n, p) \approx N(np, np(1-p))
+X \sim \mathrm{Bin(n, p) \approx N(np, np(1-p))
 $$
 
 Apply a **continuity correction**:
@@ -407,9 +407,9 @@ A Bernoulli trial is a single experiment with two outcomes: success (probability
 
 ### Measures of Spread (OL/HL)
 
-**Range:** $\mathrm{Range{} = \mathrm{maximum{} - \mathrm{minimum{}$
+**Range:** $\mathrm{Range = \mathrm{maximum - \mathrm{minimum$
 
-**Interquartile range (IQR):** $\mathrm{IQR{} = Q_3 - Q_1$
+**Interquartile range (IQR):** $\mathrm{IQR = Q_3 - Q_1$
 
 **Standard deviation:**
 
@@ -439,13 +439,13 @@ $$
 
 A box plot displays five statistics: minimum, $Q_1$Median, $Q_3$Maximum.
 
-**Outlier:** A value below $Q_1 - 1.5 \times \mathrm{IQR{}$ or above
-$Q_3 + 1.5 \times \mathrm{IQR{}$.
+**Outlier:** A value below $Q_1 - 1.5 \times \mathrm{IQR$ or above
+$Q_3 + 1.5 \times \mathrm{IQR$.
 
 **Example (HL):** A data set has $Q_1 = 25$$Q_3 = 45$Minimum $= 10$Maximum $= 65$. Identify Any
 outliers.
 
-$\mathrm{IQR{} = 45 - 25 = 20$.
+$\mathrm{IQR = 45 - 25 = 20$.
 
 Lower fence: $25 - 1.5(20) = -5$. Since the minimum is $10 > -5$No low outliers.
 
@@ -642,14 +642,14 @@ Of the data (interpolation). Extrapolation beyond the data range is unreliable.
 3. A bag contains 3 red and 5 green balls. Two are drawn at random without replacement. Find the
    probability both are green.
 4. Find the mean, median, and mode of: 3, 5, 5, 7, 8, 9, 12.
-5. Given $E(X) = 4$ and $\mathrm{Var{}(X) = 9$Find $E(X^2)$.
+5. Given $E(X) = 4$ and $\mathrm{Var(X) = 9$Find $E(X^2)$.
 6. In a class of 35 students, 20 study maths, 15 study physics, and 8 study both. How many study
    neither?
 
 ### Higher Level
 
-1. $X \sim \mathrm{Bin{}(15, 0.3)$. Find $P(X \geq 10)$.
-2. Heights are normally distributed with $\mu = 170\mathrm{ cm{}$ and $\sigma = 8\mathrm{ cm{}$.
+1. $X \sim \mathrm{Bin(15, 0.3)$. Find $P(X \geq 10)$.
+2. Heights are normally distributed with $\mu = 170\mathrm{ cm$ and $\sigma = 8\mathrm{ cm$.
    Find the probability a randomly selected person is between 160 cm and 180 cm tall.
 3. A sample of 8 measurements has $\bar{x} = 23.4$ and $s = 2.1$. Test at the 5% level whether the
    population mean is 25.
@@ -658,24 +658,24 @@ Of the data (interpolation). Extrapolation beyond the data range is unreliable.
 5. Prove that $\binom{n}{r} = \binom{n}{n-r}$.
 6. A test for a disease has 99% sensitivity and 1% false positive rate. If 0.5% of the population
    has the disease, find the probability that a positive test result is a true positive.
-7. $X \sim \mathrm{Bin{}(80, 0.6)$. Use the normal approximation with continuity correction to
+7. $X \sim \mathrm{Bin(80, 0.6)$. Use the normal approximation with continuity correction to
    estimate $P(X \le 50)$.
 8. Find the number of ways to arrange the letters of the word "STATISTICS".
 9. A helpdesk receives an average of 3.2 emails per hour. Find the probability of receiving more
    than 5 emails in a given hour.
 10. A 95% confidence interval for a mean is $(12.3, 15.7)$ based on a sample of size $n = 25$. Find
     $\bar{x}$ and the margin of error.
-11. Prove that $\mathrm{Var{}(aX + b) = a^2\mathrm{Var{}(X)$.
+11. Prove that $\mathrm{Var(aX + b) = a^2\mathrm{Var(X)$.
 12. Two events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.5$And $P(A \cup B) = 0.7$. Determine
     whether $A$ and $B$ are independent.
 13. Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^8$.
 14. Explain the difference between Type I and Type II errors in hypothesis testing.
-15. $X \sim \mathrm{Po{}(2.5)$. Find $P(1 < X < 5)$.
+15. $X \sim \mathrm{Po(2.5)$. Find $P(1 < X < 5)$.
 16. A factory produces items with a defect rate of 5%. In a sample of 200 items, use the normal
     approximation to estimate the probability of finding more than 12 defective items.
 17. Prove Pascal's identity: $\binom{n}{r} = \binom{n-1}{r-1} + \binom{n-1}{r}$.
-18. A random variable $X$ has $E(X) = 5$ and $\mathrm{Var{}(X) = 4$. Find $E(3X - 2)$ and
-    $\mathrm{Var{}(3X - 2)$.
+18. A random variable $X$ has $E(X) = 5$ and $\mathrm{Var(X) = 4$. Find $E(3X - 2)$ and
+    $\mathrm{Var(3X - 2)$.
 19. Two dice are rolled. Find the probability that the sum is prime given that at least one die
     shows a 4.
 20. Explain why a high correlation coefficient does not necessarily mean that one variable causes
@@ -684,7 +684,7 @@ Of the data (interpolation). Extrapolation beyond the data range is unreliable.
 ### Extended Practice
 
 21. Prove that for any two events $A$ and $B$: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
-22. Find the expected value and variance of $X \sim \mathrm{Po{}(4)$.
+22. Find the expected value and variance of $X \sim \mathrm{Po(4)$.
 23. A sample of 50 students has a mean study time of 15.2 hours per week with standard deviation 4.3
     hours. Construct a 95% confidence interval for the population mean.
 24. Use the binomial expansion to find the first four terms of $(1 + x)^{10}$.
@@ -707,7 +707,7 @@ When $n$ is large, $p$ is small, and $np$ is moderate, the binomial distribution
 By a Poisson distribution with $\lambda = np$:
 
 $$
-\mathrm{Bin{}(n, p) \approx \mathrm{Po{}(np)
+\mathrm{Bin(n, p) \approx \mathrm{Po(np)
 $$
 
 This avoids calculating large binomial coefficients. As a rule of thumb, the approximation is good
@@ -738,11 +738,11 @@ If it mentions "out of $n$ trials," think Binomial. :::
 The three main distributions covered in this topic are connected:
 
 - **Binomial to Normal:** When $n$ is large and $p$ is not too close to 0 or 1,
-  $\mathrm{Bin{}(n,p) \approx N(np, np(1-p))$.
+  $\mathrm{Bin(n,p) \approx N(np, np(1-p))$.
 - **Binomial to Poisson:** When $n$ is large and $p$ is small,
-  $\mathrm{Bin{}(n,p) \approx \mathrm{Po{}(np)$.
+  $\mathrm{Bin(n,p) \approx \mathrm{Po(np)$.
 - **Poisson to Normal:** When $\lambda$ is large ( $\lambda > 15$),
-  $\mathrm{Po{}(\lambda) \approx N(\lambda, \lambda)$.
+  $\mathrm{Po(\lambda) \approx N(\lambda, \lambda)$.
 
 ### 8.7 Law of Large Numbers (HL - awareness)
 
@@ -750,7 +750,7 @@ The law of large numbers states that as the number of trials increases, the samp
 The expected value. Formally, for i.i.d. Random variables $X_1, X_2, \ldots$ with mean $\mu$:
 
 $$
-\bar{X}_n = \frac{X_1 + X_2 + \cdots + X_n}{n} \to \mu \mathrm{ as {} n \to \infty
+\bar{X}_n = \frac{X_1 + X_2 + \cdots + X_n}{n} \to \mu \mathrm{ as  n \to \infty
 $$
 
 This is why a coin tossed many times gives a proportion of heads close to 0.5, even if short

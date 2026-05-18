@@ -748,7 +748,7 @@ Quality (binning).
 The stock `V/F` curve defines voltage as a function of frequency. Curve Optimizer applies a negative
 Offset (undervolt) or positive offset (overvolt) at each frequency point:
 
-$$V_{actual}(f) = V_{stock}(f) + \mathrm{offset{}$$
+$$V_{actual}(f) = V_{stock}(f) + \mathrm{offset$$
 
 Where `offset` is in the range of -30 to +30 steps, with each step approximately equal to 5mV. So a
 `-20` step offset reduces voltage by roughly 100mV at every frequency point.

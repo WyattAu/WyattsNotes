@@ -21,12 +21,12 @@ Transformations.
 
 ### Natural Domain
 
-The **natural domain** of a function is the largest subset of $\mathbb{{'}R{}'}$ for which the
+The **natural domain** of a function is the largest subset of $\mathbb{R}$ for which the
 function Expression is defined. Restrictions arise from:
 
 | Restriction      | Condition              | Example                                                                         |
 | ---------------- | ---------------------- | ------------------------------------------------------------------------------- |
-| Division by zero | Denominator $\neq 0$   | $f(x) = \dfrac{1}{x - 2}$: $\mathrm{dom}(f) = \mathbb{{'}R{}'} \setminus \{2\}$ |
+| Division by zero | Denominator $\neq 0$   | $f(x) = \dfrac{1}{x - 2}$: $\mathrm{dom}(f) = \mathbb{R} \setminus \{2\}$ |
 | Even root        | Radicand $\geqslant 0$ | $f(x) = \sqrt{x - 3}$: $\mathrm{dom}(f) = [3, \infty)$                          |
 | Logarithm        | Argument $\gt 0$       | $f(x) = \ln(x + 1)$: $\mathrm{dom}(f) = (-1, \infty)$                           |
 
@@ -65,7 +65,7 @@ $$\mathrm{dom}(f \circ g) = \{x \in \mathrm{dom}(g) : g(x) \in \mathrm{dom}(f)\}
 
 Let $f(x) = \sqrt{x + 1}$ and $g(x) = x^2 - 4$. Find $\mathrm{dom}(f \circ g)$.
 
-$\mathrm{dom}(g) = \mathbb{{'}R{}'}$.
+$\mathrm{dom}(g) = \mathbb{R}$.
 
 $\mathrm{dom}(f) = [ -1, \infty)$So we need $g(x) \geqslant -1$I.e.,
 $x^2 - 4 \geqslant -1 \implies x^2 \geqslant 3$.
@@ -77,10 +77,10 @@ $$\mathrm{dom}(f \circ g) = (-\infty, -\sqrt{3}] \cup [\sqrt{3}, \infty)$$
 Let $f(x) = \dfrac{1}{x}$ and $g(x) = x + 1$. Find $f \circ g$$g \circ f$And their domains.
 
 $(f \circ g)(x) = f(g(x)) = f(x + 1) = \dfrac{1}{x + 1}$
-$\mathrm{dom} = \mathbb{{'}R{}'} \setminus \{-1\}$.
+$\mathrm{dom} = \mathbb{R} \setminus \{-1\}$.
 
 $(g \circ f)(x) = g(f(x)) = g\!\left(\dfrac{1}{x}\right) = \dfrac{1}{x} + 1$
-$\mathrm{dom} = \mathbb{{'}R{}'} \setminus \{0\}$.
+$\mathrm{dom} = \mathbb{R} \setminus \{0\}$.
 
 ---
 
@@ -113,7 +113,7 @@ $y(x + 1) = 2x - 3 \implies yx + y = 2x - 3 \implies yx - 2x = -3 - y \implies x
 
 $$x = \frac{-(y + 3)}{y - 2} = \frac{y + 3}{2 - y}$$
 
-Therefore $f^{-1}(x) = \dfrac{x + 3}{2 - x}$With domain $\mathbb{{'}R{}'} \setminus \{2\}$.
+Therefore $f^{-1}(x) = \dfrac{x + 3}{2 - x}$With domain $\mathbb{R} \setminus \{2\}$.
 
 ---
 
@@ -207,16 +207,16 @@ $f(-2) = (-2)^2 = 4$$f(0) = 2(0) + 1 = 1$$f(3) = 2(3) + 1 = 7$$f(5) = 10 - 5 = 5
 
 $(f \circ g)(x) = f(2x - 3) = \dfrac{2x - 3 + 2}{2x - 3 - 1} = \dfrac{2x - 1}{2x - 4}$.
 
-$\mathrm{dom}(g) = \mathbb{{'}R{}'}$. $\mathrm{dom}(f) = \mathbb{{'}R{}'} \setminus \{1\}$So
+$\mathrm{dom}(g) = \mathbb{R}$. $\mathrm{dom}(f) = \mathbb{R} \setminus \{1\}$So
 $g(x) \neq 1$: $2x - 3 \neq 1 \implies x \neq 2$. Also $2x - 4 \neq 0 \implies x \neq 2$.
-$\mathrm{dom}(f \circ g) = \mathbb{{'}R{}'} \setminus \{2\}$.
+$\mathrm{dom}(f \circ g) = \mathbb{R} \setminus \{2\}$.
 
 2. **Question:** Find $f^{-1}$ for $f(x) = \dfrac{3x + 1}{x - 2}$ ($x \neq 2$).
 
 Set $y = \dfrac{3x + 1}{x - 2}$. Then
 $y(x - 2) = 3x + 1 \implies yx - 2y = 3x + 1 \implies x(y - 3) = 2y + 1$.
 
-$f^{-1}(x) = \dfrac{2x + 1}{x - 3}$$\mathrm{dom}(f^{-1}) = \mathbb{{'}R{}'} \setminus \{3\}$.
+$f^{-1}(x) = \dfrac{2x + 1}{x - 3}$$\mathrm{dom}(f^{-1}) = \mathbb{R} \setminus \{3\}$.
 
 3. **Question:** Let $f(x) = x^2 - 4x + 3$ with domain $[1, \infty)$. Find $f^{-1}(0)$.
 
@@ -250,7 +250,7 @@ $f^{-1}(x) = -\sqrt{2 - x}$$\mathrm{dom}(f^{-1}) = (-\infty, 2]$.
 
 6. **Question:** Given $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + x + 1$Find $\mathrm{dom}(g \circ f)$.
 
-$\mathrm{dom}(f) = [1, \infty)$$\mathrm{dom}(g) = \mathbb{{'}R{}'}$.
+$\mathrm{dom}(f) = [1, \infty)$$\mathrm{dom}(g) = \mathbb{R}$.
 
 $(g \circ f)(x) = g(\sqrt{x - 1}) = (\sqrt{x - 1})^2 + \sqrt{x - 1} + 1 = x - 1 + \sqrt{x - 1} + 1 = x + \sqrt{x - 1}$.
 
@@ -259,7 +259,7 @@ Since $g$ has no domain restriction, $\mathrm{dom}(g \circ f) = \mathrm{dom}(f) 
 7. **Question:** Find the domain and range of $f(x) = \dfrac{1}{x^2 + 1}$.
 
 Domain: $x^2 + 1 \neq 0$ for all real $x$ (since $x^2 \geqslant 0$).
-$\mathrm{dom}(f) = \mathbb{{'}R{}'}$.
+$\mathrm{dom}(f) = \mathbb{R}$.
 
 Range: $x^2 + 1 \geqslant 1$So $0 \lt \dfrac{1}{x^2 + 1} \leqslant 1$. $\mathrm{range}(f) = (0, 1]$.
 
@@ -293,7 +293,7 @@ $\mathrm{dom}(g \circ f)$.
 <details>
 <summary>Solution</summary>
 
-$\mathrm{dom}(g) = [3, \infty)$. $\mathrm{dom}(f) = \mathbb{{'}R{}'} \setminus \{2\}$.
+$\mathrm{dom}(g) = [3, \infty)$. $\mathrm{dom}(f) = \mathbb{R} \setminus \{2\}$.
 
 **For $f \circ g$:** We need $g(x) \in \mathrm{dom}(f)$I.e., $\sqrt{x-3} \neq 2$.
 
@@ -382,13 +382,13 @@ domains.
 <details>
 <summary>Solution</summary>
 
-$\mathrm{dom}(g) = \mathbb{{'}R{}'}$$\mathrm{dom}(f) = (1, \infty)$.
+$\mathrm{dom}(g) = \mathbb{R}$$\mathrm{dom}(f) = (1, \infty)$.
 
 **$(f \circ g)(x) = f(g(x)) = \ln(x^2 + 1 - 1) = \ln(x^2)$.**
 
 Domain: need $g(x) \in \mathrm{dom}(f)$I.e., $x^2 + 1 \gt 1 \implies x^2 \gt 0 \implies x \neq 0$.
 
-$\mathrm{dom}(f \circ g) = \mathbb{{'}R{}'} \setminus \{0\}$.
+$\mathrm{dom}(f \circ g) = \mathbb{R} \setminus \{0\}$.
 
 **$(g \circ f)(x) = g(f(x)) = [\ln(x-1)]^2 + 1$.**
 
@@ -463,7 +463,7 @@ $(f \circ g)(x)$ and its domain.
 
 $$(f \circ g)(x) = f(\sqrt{x+2}) = \frac{2\sqrt{x+2} + 3}{\sqrt{x+2} - 1}$$
 
-$\mathrm{dom}(g) = [-2, \infty)$. $\mathrm{dom}(f) = \mathbb{{'}R{}'} \setminus \{1\}$.
+$\mathrm{dom}(g) = [-2, \infty)$. $\mathrm{dom}(f) = \mathbb{R} \setminus \{1\}$.
 
 Need $\sqrt{x+2} \neq 1 \implies x + 2 \neq 1 \implies x \neq -1$.
 
@@ -547,7 +547,7 @@ Domain: need $x + 1 \neq 0 \implies x \neq -1$And $\dfrac{1}{(x+1)^2} + 1 \neq 0
 Since $\dfrac{1}{(x+1)^2} \geq 0$ for all $x \neq -1$The second expression is always at least
 $1 > 0$.
 
-$\mathrm{dom}(f \circ g \circ f) = \mathbb{{'}R{}'} \setminus \{-1\}$.
+$\mathrm{dom}(f \circ g \circ f) = \mathbb{R} \setminus \{-1\}$.
 
 </details>
 
@@ -672,7 +672,7 @@ $\mathrm{dom}(g \circ f)$.
 <details>
 <summary>Solution</summary>
 
-$\mathrm{dom}(f) = (2, \infty)$ (need $x - 2 > 0$). $\mathrm{dom}(g) = \mathbb{{'}R{}'}$.
+$\mathrm{dom}(f) = (2, \infty)$ (need $x - 2 > 0$). $\mathrm{dom}(g) = \mathbb{R}$.
 
 **$f \circ g$:** Need $g(x) \in \mathrm{dom}(f)$I.e., $x^2 + 1 > 2 \implies x^2 > 1 \implies x < -1$
 or $x > 1$.
@@ -790,14 +790,14 @@ minimum at $\left(1,\; -1\right)$.
 
 </details>
 
-**DSE Practice 4.** Let $f(x) = x^3 - 3x$. Show that $f$ is not one-to-one on $\mathbb{{'}R{}'}$But
+**DSE Practice 4.** Let $f(x) = x^3 - 3x$. Show that $f$ is not one-to-one on $\mathbb{R}$But
 is one-to-one on $[1, \infty)$. Find $f^{-1}(0)$.
 
 <details>
 <summary>Solution</summary>
 
 $f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$. Since $f$ takes the same
-value at three different points, it is not one-to-one on $\mathbb{{'}R{}'}$.
+value at three different points, it is not one-to-one on $\mathbb{R}$.
 
 For $x \geq 1$: $f'(x) = 3x^2 - 3 = 3(x^2 - 1) \geq 0$ (with equality only at $x = 1$). So $f$ is
 strictly increasing on $[1, \infty)$ and hence one-to-one.
@@ -813,9 +813,9 @@ the domain of $h$.
 <details>
 <summary>Solution</summary>
 
-$\mathrm{dom}(f) = \mathbb{{'}R{}'}$$\mathrm{dom}(g) = \mathbb{{'}R{}'} \setminus \{1\}$.
+$\mathrm{dom}(f) = \mathbb{R}$$\mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$.
 
-$\mathrm{dom}(h) = \mathrm{dom}(f) \cap \mathrm{dom}(g) = \mathbb{{'}R{}'} \setminus \{1\}$.
+$\mathrm{dom}(h) = \mathrm{dom}(f) \cap \mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$.
 
 </details>
 

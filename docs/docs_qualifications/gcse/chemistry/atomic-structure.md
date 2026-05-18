@@ -36,34 +36,34 @@ Understand scattering experiments and the behaviour of matter.
 
 **Key relationships:**
 
-$$\mathrm{Atomic number{} (Z) = \mathrm{number of protons{}$$
-$$\mathrm{Mass number{} (A) = \mathrm{number of protons{} + \mathrm{number of neutrons{}$$
-$$\mathrm{In a neutral atom: number of protons{} = \mathrm{number of electrons{}$$
+$$\mathrm{Atomic number (Z) = \mathrm{number of protons$$
+$$\mathrm{Mass number (A) = \mathrm{number of protons + \mathrm{number of neutrons$$
+$$\mathrm{In a neutral atom: number of protons = \mathrm{number of electrons$$
 
 These three equations are foundational. The atomic number uniquely identifies an element: no two
 Elements share the same value of $Z$. The mass number, by contrast, can vary within a single element
 Because the number of neutrons is not fixed. This is the basis of isotopes.
 
 **Notation:** An atom of element X with mass number $A$ and atomic number $Z$ is written as
-$\prescript{A}{}{Z}\mathrm{X{}$.
+$\prescript{A}{Z}\mathrm{X$.
 
 **Worked Example.** An atom of sodium has 11 protons and 12 neutrons. State its atomic number, mass
 Number, and electron configuration.
 
-$$Z = 11, \quad A = 11 + 12 = 23$$ $$\mathrm{Electron configuration: {} 2, 8, 1$$
+$$Z = 11, \quad A = 11 + 12 = 23$$ $$\mathrm{Electron configuration:  2, 8, 1$$
 
 **Worked Example.** An atom has 9 protons, 10 neutrons, and 9 electrons. Identify the element and
 Write its full notation.
 
 The atomic number $Z = 9$Which is fluorine. The mass number $A = 9 + 10 = 19$. The notation is
-$\prescript{19}{}{9}\mathrm{F{}$. Since the number of protons equals the number of electrons, this
+$\prescript{19}{9}\mathrm{F$. Since the number of protons equals the number of electrons, this
 is a Neutral fluorine atom.
 
 **Worked Example.** An ion has 8 protons, 8 neutrons, and 10 electrons. Identify the ion and give
 Its charge.
 
 The element with 8 protons is oxygen ($Z = 8$). There are 10 electrons but only 8 protons, so the
-Ion carries a charge of $10 - 8 = 2-$. This is the oxide ion, $\mathrm{O{}^{2-}$. The mass number is
+Ion carries a charge of $10 - 8 = 2-$. This is the oxide ion, $\mathrm{O^{2-}$. The mass number is
 $A = 8 + 8 = 16$.
 
 ### 1.2 History of the Atom
@@ -160,19 +160,19 @@ Carbon-14 dating works precisely because 5730 years is on a comparable timescale
 The **half-life** ($t_{1/2}$) is the time taken for half of the radioactive nuclei in a sample to
 Decay. It is a constant for a given isotope and is independent of the amount of sample.
 
-$$\mathrm{After {} n \mathrm{ half-lives: {} \frac{1}{2^n} \mathrm{ of the original remains{}$$
+$$\mathrm{After  n \mathrm{ half-lives:  \frac{1}{2^n} \mathrm{ of the original remains$$
 
 **Worked Example.** A sample contains 80 g of iodine-131 (half-life = 8 days). How much remains
 After 32 days?
 
-$$n = \frac{32}{8} = 4 \mathrm{ half-lives{}$$
-$$\mathrm{Remaining{} = 80 \times \frac{1}{2^4} = 80 \times \frac{1}{16} = 5 \mathrm{ g{}$$
+$$n = \frac{32}{8} = 4 \mathrm{ half-lives$$
+$$\mathrm{Remaining = 80 \times \frac{1}{2^4} = 80 \times \frac{1}{16} = 5 \mathrm{ g$$
 
 **Worked Example.** A sample of cobalt-60 has an initial activity of 800 counts per minute. Its
 Half-life is 5.3 years. What is the activity after 15.9 years?
 
-$$n = \frac{15.9}{5.3} = 3 \mathrm{ half-lives{}$$
-$$\mathrm{Activity{} = 800 \times \frac{1}{2^3} = 800 \times \frac{1}{8} = 100 \mathrm{ counts/min{}$$
+$$n = \frac{15.9}{5.3} = 3 \mathrm{ half-lives$$
+$$\mathrm{Activity = 800 \times \frac{1}{2^3} = 800 \times \frac{1}{8} = 100 \mathrm{ counts/min$$
 
 **Worked Example.** A radioactive sample starts at 40 g. After 90 minutes, 5 g remain. Calculate the
 Half-life.
@@ -231,7 +231,7 @@ The sum of the first $n$ odd numbers equals $n^2$Which is a well-known result fr
 
 **Worked Example.** Write the electron configuration of calcium ($Z = 20$).
 
-$$\mathrm{Ca: {} 2, 8, 8, 2$$
+$$\mathrm{Ca:  2, 8, 8, 2$$
 
 Calcium has 20 electrons. The first three shells hold $2 + 8 + 8 = 18$ electrons, leaving 2 in the
 Fourth shell. This places calcium in group 2 (two outer electrons) and period 4 (four occupied
@@ -239,24 +239,24 @@ Shells).
 
 **Worked Example.** Write the electron configuration of phosphorus ($Z = 15$).
 
-$$\mathrm{P: {} 2, 8, 5$$
+$$\mathrm{P:  2, 8, 5$$
 
 **Worked Example.** Write the electron configuration of sulfur ($Z = 16$).
 
-$$\mathrm{S: {} 2, 8, 6$$
+$$\mathrm{S:  2, 8, 6$$
 
 Sulfur is two electrons short of a full outer shell, which explains why it readily gains two
 Electrons to form S$^{2-}$Achieving the stable configuration of argon.
 
 **Worked Example.** Write the electron configuration of argon ($Z = 18$).
 
-$$\mathrm{Ar: {} 2, 8, 8$$
+$$\mathrm{Ar:  2, 8, 8$$
 
 Argon has a full outer shell, which explains why it is chemically inert.
 
 **Worked Example.** Write the electron configuration of potassium ($Z = 19$).
 
-$$\mathrm{K: {} 2, 8, 8, 1$$
+$$\mathrm{K:  2, 8, 8, 1$$
 
 Potassium starts a new shell rather than filling the third shell to 18, because the fourth shell is
 Lower in energy once the third shell has 8 electrons.
@@ -285,21 +285,21 @@ When atoms gain or lose electrons to form ions, the electron configuration chang
 
 **Example:** Sodium ion (Na$^+$)
 
-$$\mathrm{Na: {} 2, 8, 1 \implies \mathrm{Na{}^+: 2, 8$$
+$$\mathrm{Na:  2, 8, 1 \implies \mathrm{Na^+: 2, 8$$
 
 The sodium ion has the same electron configuration as neon. This is why sodium forms a $1+$ ion: by
 Losing one electron, it achieves a full outer shell.
 
 **Example:** Oxide ion (O$^{2-}$)
 
-$$\mathrm{O: {} 2, 6 \implies \mathrm{O{}^{2-}: 2, 8$$
+$$\mathrm{O:  2, 6 \implies \mathrm{O^{2-}: 2, 8$$
 
 The oxide ion has the same electron configuration as neon. By gaining two electrons, oxygen achieves
 A full outer shell.
 
 **Example:** Calcium ion (Ca$^{2+}$)
 
-$$\mathrm{Ca: {} 2, 8, 8, 2 \implies \mathrm{Ca{}^{2+}: 2, 8, 8$$
+$$\mathrm{Ca:  2, 8, 8, 2 \implies \mathrm{Ca^{2+}: 2, 8, 8$$
 
 Calcium loses its two outer electrons to achieve the configuration of argon.
 
@@ -320,7 +320,7 @@ And group 7 non-metals readily gain one electron (high electron affinity, high r
 The **relative atomic mass** ($A_r$) of an element is the weighted mean mass of an atom of the
 Element relative to 1/12 the mass of a carbon-12 atom.
 
-$$A_r = \frac{\sum (\mathrm{isotope mass{} \times \mathrm{abundance{})}{\sum \mathrm{abundance{}}$$
+$$A_r = \frac{\sum (\mathrm{isotope mass \times \mathrm{abundance)}{\sum \mathrm{abundance}$$
 
 The word "weighted" is crucial. Relative atomic mass is not a simple average; it accounts for the
 Fact that some isotopes are much more abundant than others. A rare but heavy isotope contributes
@@ -416,27 +416,27 @@ their outer electron, lower ionisation energy means greater reactivity.
 
 **Reactions with water:**
 
-$$2\mathrm{Na{} + 2\mathrm{H{}_2\mathrm{O{} \to 2\mathrm{NaOH{} + \mathrm{H{}_2$$
+$$2\mathrm{Na + 2\mathrm{H_2\mathrm{O \to 2\mathrm{NaOH + \mathrm{H_2$$
 
 Lithium fizzes steadily; sodium melts and moves vigorously; potassium ignites with a lilac flame.
 
 **Reactions with chlorine:**
 
-$$2\mathrm{Na{} + \mathrm{Cl{}_2 \to 2\mathrm{NaCl{}$$
+$$2\mathrm{Na + \mathrm{Cl_2 \to 2\mathrm{NaCl$$
 
 These form **ionic compounds** called metal halides.
 
 **Worked Example.** Predict the products and write a balanced equation for the reaction of potassium
 With water.
 
-$$2\mathrm{K{} + 2\mathrm{H{}_2\mathrm{O{} \to 2\mathrm{KOH{} + \mathrm{H{}_2$$
+$$2\mathrm{K + 2\mathrm{H_2\mathrm{O \to 2\mathrm{KOH + \mathrm{H_2$$
 
 Potassium hydroxide and hydrogen gas are produced. The reaction is more vigorous than that of sodium
 Because potassium is more reactive.
 
 **Worked Example.** Write the balanced equation for lithium reacting with chlorine.
 
-$$2\mathrm{Li{} + \mathrm{Cl{}_2 \to 2\mathrm{LiCl{}$$
+$$2\mathrm{Li + \mathrm{Cl_2 \to 2\mathrm{LiCl$$
 
 ### 5.4 Group 7: The Halogens
 
@@ -456,18 +456,18 @@ Decreases. This makes the halogen less eager to accept an electron, hence less r
 **Displacement reactions:** A more reactive halogen displaces a less reactive halogen from its
 Compound.
 
-$$\mathrm{Cl{}_2 + 2\mathrm{KBr{} \to 2\mathrm{KCl{} + \mathrm{Br{}_2$$
+$$\mathrm{Cl_2 + 2\mathrm{KBr \to 2\mathrm{KCl + \mathrm{Br_2$$
 
 Chlorine displaces bromine from potassium bromide solution (chlorine is more reactive).
 
-Bromine cannot displace chlorine: $\mathrm{Br{}_2 + 2\mathrm{KCl{} \to$ no reaction.
+Bromine cannot displace chlorine: $\mathrm{Br_2 + 2\mathrm{KCl \to$ no reaction.
 
 **Worked Example.** Predict whether a reaction occurs when bromine is added to potassium iodide
 Solution.
 
 Bromine is more reactive than iodine, so it will displace iodine:
 
-$$\mathrm{Br{}_2 + 2\mathrm{KI{} \to 2\mathrm{KBr{} + \mathrm{I{}_2$$
+$$\mathrm{Br_2 + 2\mathrm{KI \to 2\mathrm{KBr + \mathrm{I_2$$
 
 The solution would turn brown as iodine is formed.
 
@@ -475,7 +475,7 @@ The solution would turn brown as iodine is formed.
 Solution.
 
 Chlorine is more reactive than fluorine is false -- fluorine is the most reactive halogen. So
-Chlorine cannot displace fluorine: $\mathrm{Cl{}_2 + 2\mathrm{KF{} \to$ no reaction.
+Chlorine cannot displace fluorine: $\mathrm{Cl_2 + 2\mathrm{KF \to$ no reaction.
 
 ### 5.5 Group 0: The Noble Gases
 
@@ -489,7 +489,7 @@ Atmosphere).
 
 The increasing boiling point down Group 0 is explained by increasing London dispersion forces as the
 Number of electrons increases. Helium ($A_r = 4$) has very weak intermolecular forces and boils at
-$-269^{\circ}\mathrm{C{}$Whereas xenon ($A_r = 131$) boils at $-108^{\circ}\mathrm{C{}$.
+$-269^{\circ}\mathrm{C$Whereas xenon ($A_r = 131$) boils at $-108^{\circ}\mathrm{C$.
 
 ### 5.6 Transition Metals
 
@@ -504,7 +504,7 @@ Properties:
 
 The variable oxidation states arise because transition metals have electrons in both the 4s and 3d
 Subshells, and electrons from both can be lost. Iron, for example, has the configuration
-$[\mathrm{Ar{}]\,4s^2 3d^6$. It can lose the two 4s electrons to form Fe$^{2+}$Or both 4s electrons
+$[\mathrm{Ar]\,4s^2 3d^6$. It can lose the two 4s electrons to form Fe$^{2+}$Or both 4s electrons
 And one 3d electron to form Fe$^{3+}$.
 
 ### 5.7 Comparing Group 1 Metals with Transition Metals
@@ -547,19 +547,19 @@ Bonding and reactivity.
 
 **Group 1 elements** lose 1 electron to form $1+$ ions:
 
-$$\mathrm{Na{} \to \mathrm{Na{}^+ + e^-$$
+$$\mathrm{Na \to \mathrm{Na^+ + e^-$$
 
 **Group 2 elements** lose 2 electrons to form $2+$ ions:
 
-$$\mathrm{Mg{} \to \mathrm{Mg{}^{2+} + 2e^-$$
+$$\mathrm{Mg \to \mathrm{Mg^{2+} + 2e^-$$
 
 **Group 6 elements** gain 2 electrons to form $2-$ ions:
 
-$$\mathrm{O{} + 2e^- \to \mathrm{O{}^{2-}$$
+$$\mathrm{O + 2e^- \to \mathrm{O^{2-}$$
 
 **Group 7 elements** gain 1 electron to form $1-$ ions:
 
-$$\mathrm{Cl{} + e^- \to \mathrm{Cl{}^-$$
+$$\mathrm{Cl + e^- \to \mathrm{Cl^-$$
 
 ### 6.3 Ionic Charges
 
@@ -576,12 +576,12 @@ The charge of an ion is determined by its group number:
 
 The pattern is clear: elements in groups 1--3 tend to lose electrons (forming positive ions whose
 Charge equals the group number), while elements in groups 5--7 tend to gain electrons (forming
-Negative ions whose charge equals $8 - \mathrm{group number{}$).
+Negative ions whose charge equals $8 - \mathrm{group number$).
 
 **Derivation of the charge rule:** For groups 1--3, the atom loses all of its outer electrons to
 Achieve a full outer shell. The charge equals the number of electrons lost, which equals the group
-Number. For groups 5--7, the atom gains $(8 - \mathrm{group number{})$ electrons to fill its outer
-Shell. The charge is the negative of this number: $-(8 - \mathrm{group number{})$.
+Number. For groups 5--7, the atom gains $(8 - \mathrm{group number)$ electrons to fill its outer
+Shell. The charge is the negative of this number: $-(8 - \mathrm{group number)$.
 
 ## 7. Higher Tier Content
 
@@ -590,7 +590,7 @@ Shell. The charge is the negative of this number: $-(8 - \mathrm{group number{})
 The **first ionisation energy** is the energy required to remove one electron from each atom in a
 Mole of gaseous atoms.
 
-$$\mathrm{X{}(g) \to \mathrm{X{}^+(g) + e^-$$
+$$\mathrm{X(g) \to \mathrm{X^+(g) + e^-$$
 
 **Trends across a period:** Ionisation energy generally increases because the nuclear charge
 Increases while the shielding remains roughly constant. The outer electron is more strongly
@@ -712,8 +712,8 @@ This matches copper ($A_r \approx 63.5$). The isotopes are Cu-63 and Cu-65.
 18. A sample of a radioactive isotope has an initial mass of 20 g. After 2 hours, 2.5 g remains.
     Calculate the half-life of the isotope.
 
-19. Explain why the boiling point of helium ($-269^{\circ}\mathrm{C{}$) is much lower than that of
-    radon ($-62^{\circ}\mathrm{C{}$).
+19. Explain why the boiling point of helium ($-269^{\circ}\mathrm{C$) is much lower than that of
+    radon ($-62^{\circ}\mathrm{C$).
 
 20. Write balanced equations for the reactions of: (a) lithium with water, (b) fluorine with
     potassium bromide solution, (c) calcium with oxygen.
@@ -733,16 +733,16 @@ what happens when sodium reacts with chlorine. Include the electron transfers in
 
 Sodium has one electron in its outer shell. It is highly reactive because it can lose this single
 outer electron to achieve a stable noble gas electron configuration (2, 8). When sodium reacts with
-chlorine, sodium loses its outer electron to form a $\mathrm{Na{}^+$ ion, and chlorine gains this
-electron to form a $\mathrm{Cl{}^-$ ion. The electrostatic attraction between these oppositely
-charged ions forms ionic bonds in sodium chloride ($\mathrm{NaCl{}$).
+chlorine, sodium loses its outer electron to form a $\mathrm{Na^+$ ion, and chlorine gains this
+electron to form a $\mathrm{Cl^-$ ion. The electrostatic attraction between these oppositely
+charged ions forms ionic bonds in sodium chloride ($\mathrm{NaCl$).
 
 </details>
 
 <details>
 <summary>Question 2: Relative atomic mass calculation</summary>
 
-Chlorine has two isotopes: $\mathrm{Cl{}$-35 (75.8% abundance) and $\mathrm{Cl{}$-37 (24.2%
+Chlorine has two isotopes: $\mathrm{Cl$-35 (75.8% abundance) and $\mathrm{Cl$-37 (24.2%
 abundance). Calculate the relative atomic mass of chlorine.
 
 </details>

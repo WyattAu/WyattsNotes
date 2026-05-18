@@ -195,7 +195,7 @@ $$\mathrm{factorial}(n+1) = (n+1) \times \mathrm{factorial}(n) = (n+1) \times n!
 **Theorem.** `factorial(n)` terminates for all $n \geq 0$.
 
 **Proof.** Define a **variant function** $V(n) = n$. Each recursive call decreases $V$ by 1:
-$V(n-1) = n - 1 \lt{} n = V(n)$. $V$ is a non-negative integer that strictly decreases. By the
+$V(n-1) = n - 1 \lt n = V(n)$. $V$ is a non-negative integer that strictly decreases. By the
 Well-ordering principle, $V$ must eventually reach a base case ($V = 0$ or $V = 1$). Therefore, the
 Recursion terminates. $\square$
 
@@ -213,7 +213,7 @@ $\phi = \frac◆LB◆1+\sqrt{5}◆RB◆◆LB◆2◆RB◆ \approx 1.618$ (the gol
 
 **Proof sketch.** The recurrence has characteristic equation $r^2 = r + 1$Giving roots $\phi$ and
 $\psi = \frac◆LB◆1-\sqrt{5}◆RB◆◆LB◆2◆RB◆$. The solution is $T(n) = A\phi^n + B\psi^n$. Since
-$|\psi| \lt{} 1$ $T(n) = \Theta(\phi^n)$. $\square$
+$|\psi| \lt 1$ $T(n) = \Theta(\phi^n)$. $\square$
 
 :::warning Warning Iteration for $O(n)$ time:
 
@@ -304,14 +304,14 @@ def sum_digits(n):
 
 **Correctness.** By induction on the number of digits $d$.
 
-Base case ($d = 1$): $n \lt{} 10$Returns $n$. Sum of digits = $n$. ✓
+Base case ($d = 1$): $n \lt 10$Returns $n$. Sum of digits = $n$. ✓
 
 Inductive step: Assume correct for all numbers with $\leq d$ digits. For a $(d+1)$-digit number $n$:
 $n \bmod 10$ gives the last digit, and $n // 10$ gives the remaining $d$ digits. By the inductive
 Hypothesis, `sum_digits(n // 10)` correctly sums those $d$ digits. Adding the last digit gives the
 Total sum. ✓
 
-**Termination:** Variant function $V(n) = n$. Each call: $V(n // 10) = \lfloor n/10 \rfloor \lt{} n$
+**Termination:** Variant function $V(n) = n$. Each call: $V(n // 10) = \lfloor n/10 \rfloor \lt n$
 For $n \geq 10$. ✓
 
 </details>
@@ -396,7 +396,7 @@ def is_palindrome(s):
 ```
 
 **Termination.** Variant function: $V(s) = \mathrm{len}(s)$. Each recursive call:
-$V(s[1:-1]) = \mathrm{len}(s) - 2 \lt{} V(s)$ for $\mathrm{len}(s) \geq 2$. Since $V$ is a
+$V(s[1:-1]) = \mathrm{len}(s) - 2 \lt V(s)$ for $\mathrm{len}(s) \geq 2$. Since $V$ is a
 Non-negative integer that strictly decreases, the function must reach a base case. ✓
 
 </details>
@@ -436,8 +436,8 @@ def gcd(a, b):
     return gcd(b, a % b)
 ```
 
-**Termination.** Variant: $V(a, b) = b$. Each call: $V(a, b) = b \gt{} a \bmod b = V(b, a \bmod b)$
-(for $b \gt{} 0$). Since $V$ is a non-negative integer that strictly decreases, the function reaches
+**Termination.** Variant: $V(a, b) = b$. Each call: $V(a, b) = b \gt a \bmod b = V(b, a \bmod b)$
+(for $b \gt 0$). Since $V$ is a non-negative integer that strictly decreases, the function reaches
 $b = 0$. ✓
 
 **Correctness.** We prove $\gcd(a, b) = \gcd(b, a \bmod b)$.
@@ -468,7 +468,7 @@ def countdown(n):
 **Bugs:**
 
 1. No base case — infinite recursion leading to stack overflow
-2. No guard against $n \lt{} 0$
+2. No guard against $n \lt 0$
 
 **Fixed version:**
 
@@ -785,7 +785,7 @@ Each recursive call either:
   `mid &gt;= low`$V' \leq V - 1$.
 - Calls with `mid + 1` as the new low:
   $V' = high - (mid + 1) + 1 = high - mid`. Since
- `mid \lt{}= high`$V' \leq V - 1$.
+ `mid \lt= high`$V' \leq V - 1$.
 
 In both recursive cases, $V$ strictly decreases. Since $V$ is a non-negative integer, the function
 Must eventually reach the base case. ✓

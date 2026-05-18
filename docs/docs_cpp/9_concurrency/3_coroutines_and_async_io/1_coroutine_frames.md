@@ -103,7 +103,7 @@ Separate stack. This is a deliberate design decision with important trade-offs.
 | Property                     | Stackless (C++)                                 | Stackful (e.g., Boost.Context, goroutines)         |
 | :--------------------------- | :---------------------------------------------- | :------------------------------------------------- |
 | Frame size                   | Fixed at compile time (known locals)            | Dynamic (grows/shrinks like a regular stack)       |
-| Memory per coroutine         | $\mathcal{{'}O{}'}(1)$ — hundreds of bytes      | $\mathcal{{'}O{}'}(n)$ — megabytes reserved        |
+| Memory per coroutine         | $\mathcal{O}(1)$ — hundreds of bytes      | $\mathcal{O}(n)$ — megabytes reserved        |
 | Allocation                   | Single heap allocation                          | Separate stack allocation                          |
 | Suspend inside callee        | No — only at explicit `co_await` points         | Yes — any function call can be a suspend point     |
 | Implementation cost          | Compiler transforms function into state machine | Context switching (save/restore registers + stack) |
@@ -197,7 +197,7 @@ Liveness analysis to minimize frame size [N4950 §9.5.4].
 The total frame size $S$ can be expressed as:
 
 $$
-S = \mathrm{sizeof{}(\mathrm{promise\_type{}) + \sum_{i \in \mathrm{live params{}} \mathrm{sizeof{}(p_i) + \sum_{j \in \mathrm{live locals{}} \mathrm{sizeof{}(l_j) + \mathrm{padding{}
+S = \mathrm{sizeof(\mathrm{promise\_type) + \sum_{i \in \mathrm{live params} \mathrm{sizeof(p_i) + \sum_{j \in \mathrm{live locals} \mathrm{sizeof(l_j) + \mathrm{padding
 $$
 
 ### Frame Size Analysis
@@ -248,20 +248,20 @@ Suspension point introduces a new state, and the coroutine transitions between s
 [N4950 §9.5.4]:
 
 $$
-\mathrm{States{} = \{S_0, S_1, \ldots, S_n, S_{\mathrm{done{}}\}
+\mathrm{States = \{S_0, S_1, \ldots, S_n, S_{\mathrm{done}\}
 $$
 
 Where $S_0$ is the initial state (before the first suspension point), $S_i$ corresponds to the
-$i$-th suspension point, and $S_{\mathrm{done{}}$ is the terminal state.
+$i$-th suspension point, and $S_{\mathrm{done}$ is the terminal state.
 
 The state machine for a coroutine with $n$ suspension points has the following transitions:
 
 $$
-S_i \xrightarrow{\mathrm{resume{}} S_{i+1} \quad \mathrm{for {} i \in \{0, \ldots, n-1\}
+S_i \xrightarrow{\mathrm{resume} S_{i+1} \quad \mathrm{for  i \in \{0, \ldots, n-1\}
 $$
 
 $$
-S_n \xrightarrow{\mathrm{resume{}} S_{\mathrm{done{}}
+S_n \xrightarrow{\mathrm{resume} S_{\mathrm{done}
 $$
 
 At each state, the state machine executes the code segment between the previous suspension point and
@@ -308,7 +308,7 @@ By default, the coroutine frame is **dynamically allocated** on the heap using t
 `operator new` [N4950 §9.5.4]. The compiler generates a call equivalent to:
 
 $$
-\mathrm{frame{} = ::\operatorname{new}\bigl(\mathrm{sizeof(frame){}\bigr)
+\mathrm{frame = ::\operatorname{new}\bigl(\mathrm{sizeof(frame)\bigr)
 $$
 
 There are two guaranteed elision scenarios where the compiler **may not** allocate on the heap
@@ -644,16 +644,16 @@ Coroutine-to-coroutine chaining prevents unbounded stack growth.
    `co_await`S the next.
 2. **Without symmetric transfer:** When $C_1$ `co_await`S $C_2$The `await_suspend` of $C_2$ calls
    `C_1.resume()` inside $C_2$'s suspension handler. This is a regular function call, which grows
-   the call stack by one frame. For $n$ coroutines, the stack grows by $\mathcal{{'}O{}'}(n)$
+   the call stack by one frame. For $n$ coroutines, the stack grows by $\mathcal{O}(n)$
    frames. For unbounded $n$This causes stack overflow.
 3. **With symmetric transfer:** When $C_1$ `co_await`S $C_2$`await_suspend` returns the handle of
    $C_2$. The compiler generates a tail call from $C_1$'s resume trampoline to $C_2$'s resume
    trampoline. A tail call reuses the current stack frame, so the stack depth is
-   $\mathcal{{'}O{}'}(1)$.
+   $\mathcal{O}(1)$.
 4. The C++ standard guarantees [N4950 §9.5.4] that when `await_suspend` returns a
    `coroutine_handle`The resumption is performed by returning the handle to the language runtime,
    which then calls `resume()` on it. This is equivalent to a tail call.
-5. Therefore, symmetric transfer bounds stack growth to $\mathcal{{'}O{}'}(1)$.
+5. Therefore, symmetric transfer bounds stack growth to $\mathcal{O}(1)$.
 
 $\square$
 

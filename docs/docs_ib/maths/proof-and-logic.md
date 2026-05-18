@@ -24,7 +24,7 @@ Neither.
 "7 is prime" is a proposition (true). "Solve for x" is not a proposition. "This sentence is false"
 Is not a proposition (it is paradoxical).
 
-The truth value of a proposition $P$ is denoted $\mathcal{{'}T{}'}(P) \in \{T, F\}$.
+The truth value of a proposition $P$ is denoted $\mathcal{T}(P) \in \{T, F\}$.
 
 ### 1.2 Logical Connectives
 
@@ -214,14 +214,14 @@ Backbone of epsilon-delta definitions in analysis.
 same sequence but With each quantifier flipped. :::
 
 <details>
-<summary>Worked Example: Negate $\forall n \in \mathbb{{'}Z{}'}^+, \; \exists p \mathrm{ prime}, \; p \gt n$</summary>
+<summary>Worked Example: Negate $\forall n \in \mathbb{Z}^+, \; \exists p \mathrm{ prime}, \; p \gt n$</summary>
 
 Step 1: Identify the structure — it is $\forall n, \; \exists p, \; P(n,p)$ where $P(n,p)$ is "$p$
 Is prime and $p \gt n$."
 
-Step 2: Negate — $\exists n \in \mathbb{{'}Z{}'}^+, \; \forall p \mathrm{ prime}, \; \neg(p \gt n)$
+Step 2: Negate — $\exists n \in \mathbb{Z}^+, \; \forall p \mathrm{ prime}, \; \neg(p \gt n)$
 
-Step 3: Simplify — $\exists n \in \mathbb{{'}Z{}'}^+, \; \forall p \mathrm{ prime}, \; p \le n$
+Step 3: Simplify — $\exists n \in \mathbb{Z}^+, \; \forall p \mathrm{ prime}, \; p \le n$
 
 Reading: "There exists a positive integer $n$ such that every prime $p$ satisfies $p \le n$." This
 Is false (there are infinitely many primes), so the original statement is true.
@@ -248,31 +248,31 @@ Algebraic manipulations.
 
 **Worked Example — If $n$ is odd, then $n^2$ is odd:**
 
-Assume $n$ is odd. By definition, $n = 2k + 1$ for some $k \in \mathbb{{'}Z{}'}$.
+Assume $n$ is odd. By definition, $n = 2k + 1$ for some $k \in \mathbb{Z}$.
 
 $$n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 
 Since $2k^2 + 2k$ is an integer (sum and product of integers), let
-$m = 2k^2 + 2k \in \mathbb{{'}Z{}'}$. Then $n^2 = 2m + 1$Which is odd by definition.
+$m = 2k^2 + 2k \in \mathbb{Z}$. Then $n^2 = 2m + 1$Which is odd by definition.
 
 Therefore, if $n$ is odd, then $n^2$ is odd.
 
 **Worked Example — The sum of two even numbers is even:**
 
-Let $a = 2m$ and $b = 2n$ for some $m, n \in \mathbb{{'}Z{}'}$.
+Let $a = 2m$ and $b = 2n$ for some $m, n \in \mathbb{Z}$.
 
 $$a + b = 2m + 2n = 2(m + n)$$
 
-Since $m + n \in \mathbb{{'}Z{}'}$We have $a + b = 2(m+n)$ is even.
+Since $m + n \in \mathbb{Z}$We have $a + b = 2(m+n)$ is even.
 
 <details>
 <summary>Exercise: Prove that the product of two odd numbers is odd.</summary>
 
-Let $a = 2m + 1$ and $b = 2n + 1$ for some $m, n \in \mathbb{{'}Z{}'}$.
+Let $a = 2m + 1$ and $b = 2n + 1$ for some $m, n \in \mathbb{Z}$.
 
 $a \cdot b = (2m+1)(2n+1) = 4mn + 2m + 2n + 1 = 2(2mn + m + n) + 1$
 
-Since $2mn + m + n \in \mathbb{{'}Z{}'}$The product is of the form $2k + 1$Hence odd.
+Since $2mn + m + n \in \mathbb{Z}$The product is of the form $2k + 1$Hence odd.
 
 </details>
 
@@ -296,7 +296,7 @@ Middle ($P \vee \neg P$ must be true). :::
 
 **Worked Example — $\sqrt{2}$ is irrational:**
 
-Assume $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{a}{b}$ where $a, b \in \mathbb{{'}Z{}'}^+$
+Assume $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{a}{b}$ where $a, b \in \mathbb{Z}^+$
 $\gcd(a, b) = 1$ (the fraction is in lowest terms).
 
 Squaring both sides: $2 = \frac{a^2}{b^2}$So $a^2 = 2b^2$.
@@ -304,7 +304,7 @@ Squaring both sides: $2 = \frac{a^2}{b^2}$So $a^2 = 2b^2$.
 Since $a^2 = 2b^2$We have $a^2$ is even. Therefore $a$ is even (by the lemma: if $a^2$ is even, Then
 $a$ is even — proved below).
 
-Write $a = 2k$ for some $k \in \mathbb{{'}Z{}'}^+$. Substituting:
+Write $a = 2k$ for some $k \in \mathbb{Z}^+$. Substituting:
 
 $(2k)^2 = 2b^2$So $4k^2 = 2b^2$So $b^2 = 2k^2$.
 
@@ -350,7 +350,7 @@ But the negation of the conclusion $\neg Q$ gives you something concrete to grab
 
 We prove the contrapositive: if $n$ is odd, then $n^2$ is odd.
 
-Assume $n$ is odd. Then $n = 2k + 1$ for some $k \in \mathbb{{'}Z{}'}$.
+Assume $n$ is odd. Then $n = 2k + 1$ for some $k \in \mathbb{Z}$.
 
 $n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$
 
@@ -366,11 +366,11 @@ the equivalent Statement. :::
 
 Contrapositive: If $n$ is even, then $3n + 2$ is even.
 
-Assume $n$ is even, so $n = 2k$ for some $k \in \mathbb{{'}Z{}'}$.
+Assume $n$ is even, so $n = 2k$ for some $k \in \mathbb{Z}$.
 
 $3n + 2 = 3(2k) + 2 = 6k + 2 = 2(3k + 1)$
 
-Since $3k + 1 \in \mathbb{{'}Z{}'}$$3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then $n$
+Since $3k + 1 \in \mathbb{Z}$$3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then $n$
 is Odd.
 
 </details>
@@ -378,7 +378,7 @@ is Odd.
 ### 2.4 Mathematical Induction
 
 Induction proves statements of the form $\forall n \ge n_0, \; P(n)$Where
-$n_0 \in \mathbb{{'}Z{}'}$.
+$n_0 \in \mathbb{Z}$.
 
 #### 2.4.1 Standard (Weak) Induction
 
@@ -558,7 +558,7 @@ A single counterexample is sufficient to disprove a universal statement.
 
 Counterexample: $2$ is prime and $2$ is even.
 
-**Worked Example — Disprove: "$n^2 - n + 41$ is prime for all $n \in \mathbb{{'}N{}'}$."**
+**Worked Example — Disprove: "$n^2 - n + 41$ is prime for all $n \in \mathbb{N}$."**
 
 When $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681$Which is composite ($41 \times 41$).
 
@@ -581,13 +581,13 @@ statement is false.
 
 This proof appeared in Section 2.2. Here we present it with full commentary on every logical step.
 
-**Theorem:** $\sqrt{2} \notin \mathbb{{'}Q{}'}$.
+**Theorem:** $\sqrt{2} \notin \mathbb{Q}$.
 
 **Proof:**
 
 We proceed by contradiction.
 
-Assume $\sqrt{2} \in \mathbb{{'}Q{}'}$. Then there exist coprime integers $a, b$ with $b \gt 0$ such
+Assume $\sqrt{2} \in \mathbb{Q}$. Then there exist coprime integers $a, b$ with $b \gt 0$ such
 that $\sqrt{2} = \frac{a}{b}$.
 
 The requirement that $\gcd(a, b) = 1$ is without loss of generality: any rational number can be
@@ -606,7 +606,7 @@ From (2): $b^2$ is even, so $b$ is even (same reasoning as above).
 
 But now $a$ and $b$ are both even, meaning $\gcd(a, b) \ge 2$Contradicting $\gcd(a, b) = 1$.
 
-This contradiction shows our assumption is false. Hence $\sqrt{2} \notin \mathbb{{'}Q{}'}$.
+This contradiction shows our assumption is false. Hence $\sqrt{2} \notin \mathbb{Q}$.
 $\blacksquare$
 
 ### 3.2 There Are Infinitely Many Primes
@@ -713,24 +713,24 @@ We proved this by contrapositive in Section 2.3. Here are additional divisibilit
 
 **Proof:**
 
-Since $a \mid b$There exists $m \in \mathbb{{'}Z{}'}$ such that $b = am$. Since $b \mid c$There
-exists $n \in \mathbb{{'}Z{}'}$ such that $c = bn$.
+Since $a \mid b$There exists $m \in \mathbb{Z}$ such that $b = am$. Since $b \mid c$There
+exists $n \in \mathbb{Z}$ such that $c = bn$.
 
 Therefore $c = bn = (am)n = a(mn)$.
 
-Since $mn \in \mathbb{{'}Z{}'}$We have $a \mid c$. $\blacksquare$
+Since $mn \in \mathbb{Z}$We have $a \mid c$. $\blacksquare$
 
 **Theorem:** If $d \mid a$ and $d \mid b$Then $d \mid (ax + by)$ for all
-$x, y \in \mathbb{{'}Z{}'}$.
+$x, y \in \mathbb{Z}$.
 
 **Proof:**
 
-Since $d \mid a$Write $a = dm$ for some $m \in \mathbb{{'}Z{}'}$. Since $d \mid b$Write $b = dn$ for
-Some $n \in \mathbb{{'}Z{}'}$.
+Since $d \mid a$Write $a = dm$ for some $m \in \mathbb{Z}$. Since $d \mid b$Write $b = dn$ for
+Some $n \in \mathbb{Z}$.
 
 $ax + by = (dm)x + (dn)y = d(mx + ny)$.
 
-Since $mx + ny \in \mathbb{{'}Z{}'}$$d \mid (ax + by)$. $\blacksquare$
+Since $mx + ny \in \mathbb{Z}$$d \mid (ax + by)$. $\blacksquare$
 
 :::note This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
 Called a **linear combination** of $a$ and $b$. The greatest common divisor $\gcd(a, b)$ can always
@@ -762,7 +762,7 @@ With equality when the vectors are proportional ($a_i = \lambda b_i$ for all $i$
 $\lambda$).
 
 The proof is beyond the scope of this note but uses the fact that $\sum (a_i x + b_i)^2 \ge 0$ for
-All $x \in \mathbb{{'}R{}'}$And a quadratic in $x$ that is always non-negative must have a
+All $x \in \mathbb{R}$And a quadratic in $x$ that is always non-negative must have a
 non-positive Discriminant.
 
 <details>
@@ -793,7 +793,7 @@ Substituting back gives the result.
 
 For integers $a, b, c$ with $a \ne 0$:
 
-**Definition:** $a \mid b$ (read "$a$ divides $b$") means there exists $k \in \mathbb{{'}Z{}'}$ such
+**Definition:** $a \mid b$ (read "$a$ divides $b$") means there exists $k \in \mathbb{Z}$ such
 that $b = ak$.
 
 **Key properties:**
@@ -805,8 +805,8 @@ that $b = ak$.
 
 **Proof of property 3:**
 
-$a \mid b$ implies $b = ma$ for some $m \in \mathbb{{'}Z{}'}$. $b \mid a$ implies $a = nb$ for some
-$n \in \mathbb{{'}Z{}'}$.
+$a \mid b$ implies $b = ma$ for some $m \in \mathbb{Z}$. $b \mid a$ implies $a = nb$ for some
+$n \in \mathbb{Z}$.
 
 Substituting: $a = n(ma) = (nm)a$So $(nm - 1)a = 0$. Since $a \ne 0$We have $nm = 1$.
 
@@ -817,7 +817,7 @@ If $m = 1$: $b = a$. If $m = -1$: $b = -a$. So $a = \pm b$. $\blacksquare$
 ### 4.2 Congruences and Modular Arithmetic
 
 **Definition:** $a \equiv b \pmod{n}$ means $n \mid (a - b)$I.e., $a - b = kn$ for some
-$k \in \mathbb{{'}Z{}'}$.
+$k \in \mathbb{Z}$.
 
 **Key properties of congruences:**
 
@@ -826,7 +826,7 @@ If $a \equiv b \pmod{n}$ and $c \equiv d \pmod{n}$Then:
 1. $a + c \equiv b + d \pmod{n}$
 2. $a - c \equiv b - d \pmod{n}$
 3. $ac \equiv bd \pmod{n}$
-4. $a^m \equiv b^m \pmod{n}$ for any $m \in \mathbb{{'}Z{}'}^+$
+4. $a^m \equiv b^m \pmod{n}$ for any $m \in \mathbb{Z}^+$
 
 **Proof of property 1:**
 
@@ -838,7 +838,7 @@ Therefore $n \mid [(a+c) - (b+d)]$So $a+c \equiv b+d \pmod{n}$. $\blacksquare$
 
 **Proof of property 3:**
 
-$a = b + kn$ and $c = d + ln$ for some $k, l \in \mathbb{{'}Z{}'}$.
+$a = b + kn$ and $c = d + ln$ for some $k, l \in \mathbb{Z}$.
 
 $ac = (b + kn)(d + ln) = bd + bln + dkn + kln^2 = bd + n(bl + dk + kln)$.
 
@@ -1239,7 +1239,7 @@ $n^2 \equiv 4 \equiv 1 \pmod{3}$. In either case $n^2 \not\equiv 0 \pmod{3}$So $
 **Exercise 5:** Counterexample: $x = 0.5$. Then $x^2 = 0.25 \not\gt 0.5$. Also $x = 0$:
 $0^2 = 0 \not\gt 0$.
 
-**Exercise 6:** $\exists x \in \mathbb{{'}R{}'}, \; \forall y \in \mathbb{{'}R{}'}, \; x + y \ne 0$.
+**Exercise 6:** $\exists x \in \mathbb{R}, \; \forall y \in \mathbb{R}, \; x + y \ne 0$.
 
 **Exercise 10:** $a \equiv b \pmod{m}$ means $m \mid (a-b)$. Since $n \mid m$ and $m \mid (a-b)$By
 Transitivity of divisibility, $n \mid (a-b)$. Therefore $a \equiv b \pmod{n}$.

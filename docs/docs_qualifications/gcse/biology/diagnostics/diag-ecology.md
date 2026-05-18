@@ -174,13 +174,13 @@ increases the greenhouse effect, trapping more heat and raising global temperatu
 (b) Percentage increase $= (420 - 280)/280 \times 100\% = 140/280 \times 100\% = 50\%$.
 
 (c) **Ocean acidification:** The oceans absorb about 30% of atmospheric CO$_2$. Dissolved CO$_2$
-reacts with water to form carbonic acid ($\text{H{}_2\text{CO{}_3$), which dissociates into hydrogen
-ions ($\text{H{}^+$) and bicarbonate ($\text{HCO{}_3^-$). The increased $\text{H{}^+$ concentration
+reacts with water to form carbonic acid ($\text{H_2\text{CO_3$), which dissociates into hydrogen
+ions ($\text{H^+$) and bicarbonate ($\text{HCO_3^-$). The increased $\text{H^+$ concentration
 lowers the ocean pH (makes it more acidic).
 
 **Effect on marine organisms:** Organisms with calcium carbonate shells (e.g., corals, molluscs,
 some plankton) are affected because the lower pH reduces the availability of carbonate ions
-($\text{CO{}_3^{2-}$), making it harder for them to build and maintain their shells. This weakens
+($\text{CO_3^{2-}$), making it harder for them to build and maintain their shells. This weakens
 the organisms and can lead to coral bleaching and death, threatening marine food webs.
 
 (d) Two consequences: (1) **Range shifts:** Species migrate towards the poles or to higher altitudes
@@ -194,7 +194,7 @@ supply.
 
 **Question:** A student investigates the distribution of daisies across a field using a quadrat. The
 field is 100 m $\times$ 50 m. (a) Describe how to use a quadrat and explain why random sampling is
-important. (b) The student places a $0.5 \text{ m{} \times 0.5 \text{ m{}$ quadrat at 10 random
+important. (b) The student places a $0.5 \text{ m \times 0.5 \text{ m$ quadrat at 10 random
 positions and counts: 3, 5, 7, 2, 4, 6, 8, 3, 5, 4 daisies. Calculate the mean number of daisies per
 quadrat and estimate the total population in the field. (c) Explain two ways to ensure the results
 are reliable. (d) The student also measures soil pH at each quadrat position and finds that daisies

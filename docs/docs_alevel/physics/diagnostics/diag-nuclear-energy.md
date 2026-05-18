@@ -15,18 +15,18 @@ hide_table_of_contents: true
 
 **Question:**
 
-The nucleus of helium-4 (${}^{4}_{2}\text{He}$) has the following data:
+The nucleus of helium-4 ($^{4}_{2}\text{He}$) has the following data:
 
 - Mass of proton $= 1.00728\,\text{u}$
 - Mass of neutron $= 1.00867\,\text{u}$
-- Mass of ${}^{4}_{2}\text{He}$ nucleus $= 4.00150\,\text{u}$
+- Mass of $^{4}_{2}\text{He}$ nucleus $= 4.00150\,\text{u}$
 
-(a) Calculate the mass defect of ${}^{4}_{2}\text{He}$ in unified atomic mass units and in
+(a) Calculate the mass defect of $^{4}_{2}\text{He}$ in unified atomic mass units and in
 MeV/c$^2$.
 
 (b) Calculate the binding energy per nucleon.
 
-(c) Explain why the binding energy per nucleon of ${}^{4}_{2}\text{He}$ is relatively high for a
+(c) Explain why the binding energy per nucleon of $^{4}_{2}\text{He}$ is relatively high for a
 light nucleus.
 
 Take $1\,\text{u} = 931.5\,\text{MeV}/c^2$.
@@ -43,12 +43,12 @@ In MeV/c$^2$: $\Delta m = 0.03040 \times 931.5 = 28.3\,\text{MeV}/c^2$
 
 Binding energy per nucleon $= 28.3/4 = 7.08\,\text{MeV}$
 
-(c) The binding energy per nucleon of ${}^{4}_{2}\text{He}$ ($7.08\,\text{MeV}$) is high for a light
+(c) The binding energy per nucleon of $^{4}_{2}\text{He}$ ($7.08\,\text{MeV}$) is high for a light
 nucleus because it has equal numbers of protons and neutrons (2 and 2), giving it enhanced stability
 due to the pairing effect. Nuclei with even numbers of both protons and neutrons (doubly magic) are
 particularly stable. The binding energy per nucleon curve shows a peak in the region of iron-56
-($8.8\,\text{MeV/nucleon}$), and ${}^{4}_{2}\text{He}$ is already approaching this value. The high
-binding energy per nucleon makes ${}^{4}_{2}\text{He}$ (alpha particles) very tightly bound, which
+($8.8\,\text{MeV/nucleon}$), and $^{4}_{2}\text{He}$ is already approaching this value. The high
+binding energy per nucleon makes $^{4}_{2}\text{He}$ (alpha particles) very tightly bound, which
 is why alpha decay is a common mode of radioactive decay.
 
 ---
@@ -59,18 +59,18 @@ is why alpha decay is a common mode of radioactive decay.
 
 A typical fission reaction is:
 
-$${}^{235}_{\ 92}\text{U} + {}^1_0\text{n} \to {}^{141}_{\ 56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3{}^1_0\text{n}$$
+$$^{235}_{\ 92}\text{U} + ^1_0\text{n} \to ^{141}_{\ 56}\text{Ba} + ^{92}_{36}\text{Kr} + 3^1_0\text{n}$$
 
 Masses:
 
-- ${}^{235}\text{U}$: $235.0439\,\text{u}$
-- ${}^{1}\text{n}$: $1.0087\,\text{u}$
-- ${}^{141}\text{Ba}$: $140.9139\,\text{u}$
-- ${}^{92}\text{Kr}$: $91.8973\,\text{u}$
+- $^{235}\text{U}$: $235.0439\,\text{u}$
+- $^{1}\text{n}$: $1.0087\,\text{u}$
+- $^{141}\text{Ba}$: $140.9139\,\text{u}$
+- $^{92}\text{Kr}$: $91.8973\,\text{u}$
 
 (a) Calculate the energy released per fission event.
 
-(b) Calculate the total energy released when $1.0\,\text{kg}$ of ${}^{235}\text{U}$ undergoes
+(b) Calculate the total energy released when $1.0\,\text{kg}$ of $^{235}\text{U}$ undergoes
 fission.
 
 (c) Compare this energy with the energy released by burning $1.0\,\text{kg}$ of coal (approximately
@@ -90,7 +90,7 @@ Mass defect: $\Delta m = 236.0526 - 235.8373 = 0.2153\,\text{u}$
 
 Energy released: $E = 0.2153 \times 931.5 = 200.6\,\text{MeV}$
 
-(b) Number of ${}^{235}\text{U}$ atoms in $1.0\,\text{kg}$:
+(b) Number of $^{235}\text{U}$ atoms in $1.0\,\text{kg}$:
 
 $$N = \frac◆LB◆1.0◆RB◆◆LB◆235.0439 \times 1.661 \times 10^{-27}◆RB◆ = \frac◆LB◆1.0◆RB◆◆LB◆3.904 \times 10^{-25}◆RB◆ = 2.561 \times 10^{24}$$
 
@@ -112,14 +112,14 @@ management and safety.
 
 The first step of the proton-proton chain in the Sun is:
 
-$$p + p \to {}^2_1\text{H} + e^+ + \nu_e + 0.42\,\text{MeV}$$
+$$p + p \to ^2_1\text{H} + e^+ + \nu_e + 0.42\,\text{MeV}$$
 
 The dominant overall reaction in the Sun is:
 
-$$4p \to {}^4_2\text{He} + 2e^+ + 2\nu_e + 26.7\,\text{MeV}$$
+$$4p \to ^4_2\text{He} + 2e^+ + 2\nu_e + 26.7\,\text{MeV}$$
 
 Masses:
-$m_p = 1.00728\,\text{u}$$m_{{}^{4}\text{He}} = 4.00150\,\text{u}$$m_{e^+} = 0.00055\,\text{u}$.
+$m_p = 1.00728\,\text{u}$$m_{^{4}\text{He}} = 4.00150\,\text{u}$$m_{e^+} = 0.00055\,\text{u}$.
 
 (a) Verify the Q-value of the overall reaction using mass data.
 
@@ -135,7 +135,7 @@ $1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$$c = 3.0
 
 (a) Initial mass: $4m_p = 4 \times 1.00728 = 4.02912\,\text{u}$
 
-Final mass: $m_{{}^{4}\text{He}} + 2m_{e^+} = 4.00150 + 2(0.00055) = 4.00260\,\text{u}$
+Final mass: $m_{^{4}\text{He}} + 2m_{e^+} = 4.00150 + 2(0.00055) = 4.00260\,\text{u}$
 
 Mass defect: $\Delta m = 4.02912 - 4.00260 = 0.02652\,\text{u}$
 
@@ -172,7 +172,7 @@ is $\dot{m} \times 0.007 = 4.2 \times 10^9\,\text{kg}\,\text{s}^{-1}$.
 
 **Question:**
 
-A nuclear reactor uses ${}^{235}\text{U}$ fuel. Each fission releases $200\,\text{MeV}$ of energy
+A nuclear reactor uses $^{235}\text{U}$ fuel. Each fission releases $200\,\text{MeV}$ of energy
 and produces on average $2.5$ neutrons. The reactor operates at a thermal power of
 $3000\,\text{MW}$.
 
@@ -209,7 +209,7 @@ withdrawn to absorb neutrons and control the reaction rate. Inserting rods reduc
 more neutrons reduces the multiplication factor); withdrawing rods increases $k$.
 
 The **moderator** (water, graphite, or heavy water) slows down fast neutrons from fission to thermal
-energies, where the fission cross-section of ${}^{235}\text{U}$ is much higher. Without a moderator,
+energies, where the fission cross-section of $^{235}\text{U}$ is much higher. Without a moderator,
 most neutrons would escape or be captured without causing further fission, and $k$ would be below 1.
 
 For stable operation at constant power, $k = 1$ exactly (critical state). This is maintained by a
@@ -224,25 +224,25 @@ broadening reduce $k$Providing automatic negative feedback.
 
 The following binding energies per nucleon are given:
 
-| Nucleus    | ${}^{56}\text{Fe}$ | ${}^{235}\text{U}$ | ${}^{2}\text{H}$ | ${}^{4}\text{He}$ | ${}^{12}\text{C}$ |
+| Nucleus    | $^{56}\text{Fe}$ | $^{235}\text{U}$ | $^{2}\text{H}$ | $^{4}\text{He}$ | $^{12}\text{C}$ |
 | ---------- | ------------------ | ------------------ | ---------------- | ----------------- | ----------------- |
 | BE/A (MeV) | 8.79               | 7.59               | 1.11             | 7.07              | 7.68              |
 
-(a) Calculate the energy released when a ${}^{235}\text{U}$ nucleus splits into two
-${}^{56}\text{Fe}$ nuclei (approximately).
+(a) Calculate the energy released when a $^{235}\text{U}$ nucleus splits into two
+$^{56}\text{Fe}$ nuclei (approximately).
 
-(b) Calculate the energy released when four ${}^{1}\text{H}$ nuclei fuse to form ${}^{4}\text{He}$.
+(b) Calculate the energy released when four $^{1}\text{H}$ nuclei fuse to form $^{4}\text{He}$.
 
 (c) Explain why fusion of very heavy nuclei and fission of very light nuclei do not release energy.
 
 **Solution:**
 
-(a) For ${}^{235}\text{U}$: total binding energy $= 235 \times 7.59 = 1783.7\,\text{MeV}$
+(a) For $^{235}\text{U}$: total binding energy $= 235 \times 7.59 = 1783.7\,\text{MeV}$
 
-The fission of ${}^{235}\text{U}$ does not directly produce two ${}^{56}\text{Fe}$ nuclei
+The fission of $^{235}\text{U}$ does not directly produce two $^{56}\text{Fe}$ nuclei
 ($2 \times 56 = 112$ nucleons, not $235$). Fission fragments are in the mass range 90--140. For a
 more realistic calculation, consider the approximate symmetric fission
-${}^{235}\text{U} \to {}^{118}\text{Pd} + {}^{117}\text{Pd} + n$:
+$^{235}\text{U} \to ^{118}\text{Pd} + ^{117}\text{Pd} + n$:
 
 Assuming the products have BE/A $\approx 8.5\,\text{MeV}$ (average for medium-mass nuclei):
 
@@ -256,23 +256,23 @@ This is consistent with the approximately $200\,\text{MeV}$ released per fission
 release comes from the increase in binding energy per nucleon (from $7.59$ to about
 $8.5\,\text{MeV/nucleon}$).
 
-(b) Four ${}^{1}\text{H}$ nuclei have essentially zero binding energy (single nucleons are unbound).
+(b) Four $^{1}\text{H}$ nuclei have essentially zero binding energy (single nucleons are unbound).
 
-For ${}^{4}\text{He}$: total binding energy $= 4 \times 7.07 = 28.28\,\text{MeV}$
+For $^{4}\text{He}$: total binding energy $= 4 \times 7.07 = 28.28\,\text{MeV}$
 
 Energy released $= 28.28 - 0 = 28.28\,\text{MeV}$
 
-This is the net energy from the pp chain first step through to ${}^{4}\text{He}$ formation.
+This is the net energy from the pp chain first step through to $^{4}\text{He}$ formation.
 
-(c) The binding energy per nucleon curve has a maximum around ${}^{56}\text{Fe}$
+(c) The binding energy per nucleon curve has a maximum around $^{56}\text{Fe}$
 ($8.79\,\text{MeV/nucleon}$). Nuclei to the left of the peak (light nuclei) can release energy by
 **fusion** (combining to form heavier nuclei with higher BE/A). Nuclei to the right of the peak
 (heavy nuclei) can release energy by **fission** (splitting into medium-mass nuclei with higher
 BE/A).
 
-Fusing very heavy nuclei (e.g., two ${}^{235}\text{U}$ nuclei) would produce a nucleus with BE/A
-lower than ${}^{235}\text{U}$ (beyond the peak), so energy would be **absorbed**, not released.
-Similarly, fission of very light nuclei (e.g., ${}^{4}\text{He}$) would produce nuclei with lower
+Fusing very heavy nuclei (e.g., two $^{235}\text{U}$ nuclei) would produce a nucleus with BE/A
+lower than $^{235}\text{U}$ (beyond the peak), so energy would be **absorbed**, not released.
+Similarly, fission of very light nuclei (e.g., $^{4}\text{He}$) would produce nuclei with lower
 BE/A, also absorbing energy.
 
 This is why energy release only occurs when moving toward the peak of the BE/A curve: fusion for
@@ -286,10 +286,10 @@ light nuclei, fission for heavy nuclei.
 
 The deuterium-tritium fusion reaction is:
 
-$${}^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \to {}^{4}_{2}\text{He} + {}^{1}_{0}\text{n} + 17.6\,\text{MeV}$$
+$$^{2}_{1}\text{H} + ^{3}_{1}\text{H} \to ^{4}_{2}\text{He} + ^{1}_{0}\text{n} + 17.6\,\text{MeV}$$
 
 Masses:
-${}^{2}\text{H} = 2.01410\,\text{u}$${}^{3}\text{H} = 3.01605\,\text{u}$${}^{4}\text{He} = 4.00260\,\text{u}$${}^{1}\text{n} = 1.00867\,\text{u}$.
+$^{2}\text{H} = 2.01410\,\text{u}$$^{3}\text{H} = 3.01605\,\text{u}$$^{4}\text{He} = 4.00260\,\text{u}$$^{1}\text{n} = 1.00867\,\text{u}$.
 
 (a) Verify the Q-value using mass data.
 

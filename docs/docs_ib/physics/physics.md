@@ -688,10 +688,10 @@ $200$ Bq.
 ### Worked Example: Nuclear Fission Energy (E.4, HL)
 
 The nuclear reaction
-$\;^{235}_{92}\mathrm{U} + {}^{1}_{0}\mathrm{n} \rightarrow {}^{141}_{56}\mathrm{Ba} + {}^{92}_{36}\mathrm{Kr} + 3\,{}^{1}_{0}\mathrm{n}$
-is a fission Event. Calculate the energy released. (Mass of $\;{}^{235}\mathrm{U} = 235.044$ u, Mass
-of $\;{}^{141}\mathrm{Ba} = 140.914$ u, Mass of $\;{}^{92}\mathrm{Kr} = 91.926$ u, Mass of
-$\;{}^{1}\mathrm{n} = 1.00867$ u, $1$ u $= 931.5$ MeV/$c^2$.)
+$\;^{235}_{92}\mathrm{U} + ^{1}_{0}\mathrm{n} \rightarrow ^{141}_{56}\mathrm{Ba} + ^{92}_{36}\mathrm{Kr} + 3\,^{1}_{0}\mathrm{n}$
+is a fission Event. Calculate the energy released. (Mass of $\;^{235}\mathrm{U} = 235.044$ u, Mass
+of $\;^{141}\mathrm{Ba} = 140.914$ u, Mass of $\;^{92}\mathrm{Kr} = 91.926$ u, Mass of
+$\;^{1}\mathrm{n} = 1.00867$ u, $1$ u $= 931.5$ MeV/$c^2$.)
 
 <details>
 <summary>Solution</summary>

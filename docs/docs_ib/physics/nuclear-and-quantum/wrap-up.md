@@ -161,9 +161,9 @@ Conditions.
 
 | Type       | Symbol                            | Charge | Mass (u) | Penetrating Power | Ionising Power | Stopped By            |
 | :--------- | :-------------------------------- | :----- | :------- | :---------------- | :------------- | :-------------------- |
-| Alpha      | $\alpha$ (${}^4_2\mathrm{He}$)    | +2e    | 4        | Low               | High           | Paper / few cm of air |
-| Beta-minus | $\beta^-$ (${}^0_{-1}\mathrm{e}$) | -1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
-| Beta-plus  | $\beta^+$ (${}^0_{+1}\mathrm{e}$) | +1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
+| Alpha      | $\alpha$ ($^4_2\mathrm{He}$)    | +2e    | 4        | Low               | High           | Paper / few cm of air |
+| Beta-minus | $\beta^-$ ($^0_{-1}\mathrm{e}$) | -1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
+| Beta-plus  | $\beta^+$ ($^0_{+1}\mathrm{e}$) | +1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
 | Gamma      | $\gamma$                          | 0      | 0        | High              | Low            | Several cm of lead    |
 
 ### Decay Equations
@@ -171,25 +171,25 @@ Conditions.
 **Alpha decay:** The nucleus emits a helium-4 nucleus (2 protons + 2 neutrons).
 
 $$
-{}^{A}_{Z}\mathrm{X} \rightarrow {}^{A-4}_{Z-2}\mathrm{Y} + {}^4_2\mathrm{He}
+^{A}_{Z}\mathrm{X} \rightarrow ^{A-4}_{Z-2}\mathrm{Y} + ^4_2\mathrm{He}
 $$
 
 **Beta-minus decay:** A neutron converts to a proton, emitting an electron and an antineutrino.
 
 $$
-{}^{A}_{Z}\mathrm{X} \rightarrow {}^{A}_{Z+1}\mathrm{Y} + {}^0_{-1}\mathrm{e} + \bar{\nu}_e
+^{A}_{Z}\mathrm{X} \rightarrow ^{A}_{Z+1}\mathrm{Y} + ^0_{-1}\mathrm{e} + \bar{\nu}_e
 $$
 
 **Beta-plus decay:** A proton converts to a neutron, emitting a positron and a neutrino.
 
 $$
-{}^{A}_{Z}\mathrm{X} \rightarrow {}^{A}_{Z-1}\mathrm{Y} + {}^0_{+1}\mathrm{e} + \nu_e
+^{A}_{Z}\mathrm{X} \rightarrow ^{A}_{Z-1}\mathrm{Y} + ^0_{+1}\mathrm{e} + \nu_e
 $$
 
 **Gamma emission:** An excited nucleus releases energy as a photon. No change in A or Z.
 
 $$
-{}^{A}_{Z}\mathrm{X}^* \rightarrow {}^{A}_{Z}\mathrm{X} + \gamma
+^{A}_{Z}\mathrm{X}^* \rightarrow ^{A}_{Z}\mathrm{X} + \gamma
 $$
 
 ---
@@ -302,7 +302,7 @@ $$
 \frac{E_b}{A} = \frac{\Delta m \cdot c^2}{A}
 $$
 
-- Iron-56 (${}^{56}_{26}\mathrm{Fe}$) has the highest binding energy per nucleon (~8.8 MeV/nucleon),
+- Iron-56 ($^{56}_{26}\mathrm{Fe}$) has the highest binding energy per nucleon (~8.8 MeV/nucleon),
   making it the most stable nucleus.
 - Light nuclei (A &lt; 56) can **increase** binding energy per nucleon through **fusion**.
 - Heavy nuclei (A &gt; 56) can **increase** binding energy per nucleon through **fission**.

@@ -92,11 +92,11 @@ P = 1 - 0.4 = 0.6
 $$
 
 $$
-P^2 = (0.6)^2 = 0.36 \implies 360 \mathrm{ individuals (AA){}
+P^2 = (0.6)^2 = 0.36 \implies 360 \mathrm{ individuals (AA)
 $$
 
 $$
-2pq = 2(0.6)(0.4) = 0.48 \implies 480 \mathrm{ individuals (Aa){}
+2pq = 2(0.6)(0.4) = 0.48 \implies 480 \mathrm{ individuals (Aa)
 $$
 
 Check: $360 + 480 + 160 = 1000$.
@@ -668,7 +668,7 @@ Estimating divergence times that complements the fossil record.
 If gene X in species A and species B differs by 60 nucleotide substitutions, and the estimated
 Mutation rate for gene X is 2 substitutions per million years, then:
 
-$$\mathrm{Time since divergence{} = \frac{60}{2 \times 2} = 15 \mathrm{ million years{}$$
+$$\mathrm{Time since divergence = \frac{60}{2 \times 2} = 15 \mathrm{ million years$$
 
 The factor of 2 accounts for the fact that substitutions have accumulated along both lineages since
 Divergence.
@@ -805,13 +805,13 @@ Million years. Estimate the time since these two species diverged from their com
 <summary>Answer</summary>
 
 First, calculate the substitution rate per base pair per million years:
-$$\mathrm{Rate{} = \frac{1 \mathrm{ substitution{}}{100 \mathrm{ base pairs{} \times 1 \mathrm{ million years{}} = 0.01 \mathrm{ substitutions/bp/Myr{}$$
+$$\mathrm{Rate = \frac{1 \mathrm{ substitution}{100 \mathrm{ base pairs \times 1 \mathrm{ million years} = 0.01 \mathrm{ substitutions/bp/Myr$$
 
 Total substitutions observed: 8 in 300 base pairs, so the substitution frequency per base pair is:
-$$\frac{8}{300} = 0.0267 \mathrm{ substitutions/bp{}$$
+$$\frac{8}{300} = 0.0267 \mathrm{ substitutions/bp$$
 
 Time since divergence (accounting for both lineages):
-$$\mathrm{Time{} = \frac{0.0267}{2 \times 0.01} = \frac{0.0267}{0.02} = 1.33 \mathrm{ million years{}$$
+$$\mathrm{Time = \frac{0.0267}{2 \times 0.01} = \frac{0.0267}{0.02} = 1.33 \mathrm{ million years$$
 
 The factor of 2 accounts for the fact that substitutions have accumulated along both lineages since
 Divergence. The two species diverged approximately 1.33 million years ago.
@@ -835,7 +835,7 @@ Count alleles in the founder population:
 
 $AA$: 2 copies of A $Aa$: 1 copy of A, 1 copy of a (three individuals: 3A + 3a) $aa$: 2 copies of a
 
-Total alleles: $5 \mathrm{ birds{} \times 2 = 10$ alleles.
+Total alleles: $5 \mathrm{ birds \times 2 = 10$ alleles.
 
 Number of A alleles: $2 + 3 = 5$. Number of a alleles: $3 + 2 = 5$.
 

@@ -75,7 +75,7 @@ def a_star(graph, source, goal, h):
 **Theorem.** A\* with an admissible heuristic finds an optimal path.
 
 **Proof.** When A* selects a goal node for expansion, its $g$-value is optimal. If not, there exists
-A suboptimal path to the goal with cost $g' \gt{} g^*$. Let $v$ be the first node on this suboptimal
+A suboptimal path to the goal with cost $g' \gt g^*$. Let $v$ be the first node on this suboptimal
 Path not yet expanded. By admissibility:
 $f(v) = g(v) + h(v) \leq g^* + h(v) \leq g^* + \mathrm{true}(v, \mathrm{goal}) \leq g^* + (g' - g(v)) = g'$.
 Since A\* expands the node with minimum $f$It would expand $v$ before the goal on the suboptimal
@@ -248,7 +248,7 @@ def floyd_warshall(graph):
 **Complexity:** $O(V^3)$ time, $O(V^2)$ space.
 
 **Handles:** Negative weights (but not negative cycles — detect by checking if
-$\mathrm{dist}[i][i] \lt{} 0$).
+$\mathrm{dist}[i][i] \lt 0$).
 
 <hr />
 
@@ -428,10 +428,10 @@ Near-optimal solutions.
 <summary>Answer</summary>
 
 After running Floyd-Warshall, check the diagonal of the distance matrix. If
-$\mathrm{dist}[i][i] \lt{} 0$ for any vertex $i$There exists a negative cycle through $i$.
+$\mathrm{dist}[i][i] \lt 0$ for any vertex $i$There exists a negative cycle through $i$.
 
 **Proof.** $\mathrm{dist}[i][i]$ represents the shortest path from $i$ back to $i$. If this is
-Negative, there exists a cycle with total weight $\lt{} 0$ through vertex $i$. This cycle can be
+Negative, there exists a cycle with total weight $\lt 0$ through vertex $i$. This cycle can be
 Traversed repeatedly to make the shortest path arbitrarily negative, meaning shortest paths are
 Undefined. $\square$
 

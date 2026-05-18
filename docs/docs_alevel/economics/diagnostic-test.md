@@ -73,7 +73,7 @@ The bus company's pricing strategy.
 <summary>Answer</summary>
 (a) $E_d = \frac◆LB◆\%\Delta Q◆RB◆◆LB◆\%\Delta P◆RB◆ = -0.4$. $\%\Delta Q = -0.4 \times 10\% = -4\%$. Quantity demanded falls by 4%.<br />
 (b) Total revenue = $P \times Q$. New $TR = 1.10P \times 0.96Q = 1.056PQ$. Revenue rises by 5.6%.<br />
-Since $|E_d| = 0.4 \lt{} 1$Demand is **inelastic**. A price increase raises total revenue. The bus company should raise fares to maximise revenue (though this ignores welfare and equity considerations).
+Since $|E_d| = 0.4 \lt 1$Demand is **inelastic**. A price increase raises total revenue. The bus company should raise fares to maximise revenue (though this ignores welfare and equity considerations).
 <i>Revision: [Demand, Supply, and Equilibrium](/docs/alevel/economics/microeconomics/demand-supply-and-equilibrium)</i>
 </details>
 
@@ -124,7 +124,7 @@ Cost. Explain the relationship between MC and AC.
 (a) $AC = TC/Q = 100/Q + 10 + Q$. Minimise: $\frac{dAC}{dQ} = -100/Q^2 + 1 = 0 \Rightarrow Q^2 = 100 \Rightarrow Q = 10$.<br />
 (b) $AC(10) = 100/10 + 10 + 10 = 30$. Minimum average cost = £30.<br />
 (c) $MC = dTC/dQ = 10 + 2Q$. Set $MC = AC$: $10 + 2Q = 100/Q + 10 + Q \Rightarrow 2Q = 100/Q + Q \Rightarrow Q = 100/Q \Rightarrow Q^2 = 100 \Rightarrow Q = 10$.<br />
-**Relationship**: MC cuts AC at its minimum point. When $MC \lt{} AC$AC is falling. When $MC \gt{} AC$AC is rising. This is a mathematical identity: $\frac{dAC}{dQ} = \frac{MC - AC}{Q}$.
+**Relationship**: MC cuts AC at its minimum point. When $MC \lt AC$AC is falling. When $MC \gt AC$AC is rising. This is a mathematical identity: $\frac{dAC}{dQ} = \frac{MC - AC}{Q}$.
 <i>Revision: [Theory of the Firm](/docs/alevel/economics/microeconomics/theory-of-the-firm)</i>
 </details>
 
@@ -148,7 +148,7 @@ Market power?
 <details>
 <summary>Answer</summary>
 **Perfect competition**: Free entry and exit. If existing firms earn supernormal profit, new firms enter → market supply increases → price falls → profit is competed away. If firms make losses, some exit → supply decreases → price rises → remaining firms break even. Long-run equilibrium: $P = AC_{min}$Zero economic profit.<br />
-**Monopolistic competition**: Despite product differentiation (downward-sloping demand), free entry and exit drive long-run profit to zero. If firms earn supernormal profit, new firms enter with similar but differentiated products → demand for each firm's product shifts left (consumers have more substitutes) → price falls until $P = AC$. The firm still produces where $MR = MC$ and charges $P \gt{} MC$ (some market power), but $P = AC$ (zero profit). Result: excess capacity — the firm produces less than the output that minimises AC.
+**Monopolistic competition**: Despite product differentiation (downward-sloping demand), free entry and exit drive long-run profit to zero. If firms earn supernormal profit, new firms enter with similar but differentiated products → demand for each firm's product shifts left (consumers have more substitutes) → price falls until $P = AC$. The firm still produces where $MR = MC$ and charges $P \gt MC$ (some market power), but $P = AC$ (zero profit). Result: excess capacity — the firm produces less than the output that minimises AC.
 <i>Revision: [Theory of the Firm](/docs/alevel/economics/microeconomics/theory-of-the-firm)</i>
 </details>
 
@@ -213,7 +213,7 @@ What conditions might a minimum wage actually increase employment (citing Card a
 
 <details>
 <summary>Answer</summary>
-Standard model: minimum wage $w_{min} \gt{} w^*$ → quantity of labour demanded falls, quantity supplied rises → unemployment $= Q_s - Q_d$. DWL = loss of mutually beneficial transactions between $Q_d$ and $Q_s$.<br />
+Standard model: minimum wage $w_{min} \gt w^*$ → quantity of labour demanded falls, quantity supplied rises → unemployment $= Q_s - Q_d$. DWL = loss of mutually beneficial transactions between $Q_d$ and $Q_s$.<br />
 Card & Krueger (1994): In a **monopsonistic labour market**, a moderate minimum wage can increase both wages and employment. The monopsonist already restricts employment below the competitive level. A minimum wage set between $w_{monopsony}$ and $w_{competitive}$ forces the firm closer to the competitive outcome, increasing employment. The key condition: the labour market must have monopsony power (few employers, imperfect information, mobility costs). Empirical evidence is mixed but suggests modest minimum wages have small negative or even positive employment effects.
 <i>Revision: [Labour Markets](/docs/alevel/economics/microeconomics/labour-markets) and [Theory of the Firm](/docs/alevel/economics/microeconomics/theory-of-the-firm)</i>
 </details>
@@ -223,7 +223,7 @@ Concepts of consumer surplus, deadweight loss, and dynamic efficiency.
 
 <details>
 <summary>Answer</summary>
-Static efficiency: monopoly charges $P \gt{} MC$Produces $Q \lt{} Q_c$Creates DWL, and reduces consumer surplus. By these measures, monopoly is worse.<br />
+Static efficiency: monopoly charges $P \gt MC$Produces $Q \lt Q_c$Creates DWL, and reduces consumer surplus. By these measures, monopoly is worse.<br />
 Dynamic efficiency: monopoly may invest more in R&D because (1) supernormal profits fund innovation, (2) the promise of monopoly power incentivises innovation (Schumpeter, 1942). If innovation creates new products or lowers costs, long-run consumer welfare may be higher under monopoly. Examples: pharmaceutical patents (high prices in short run, but new drugs developed).<br />
 Natural monopoly: where economies of scale are so large that one firm can supply the entire market at lowest cost (e.g., water, electricity grids). Competition would be wasteful (duplication of infrastructure). Regulation (price cap regulation, RPI-X) is needed rather than competition.<br />
 Conclusion: monopoly is statically inefficient but may be dynamically efficient and is appropriate for natural monopolies. Policy should regulate, not necessarily prevent, monopoly.
@@ -248,7 +248,7 @@ What conditions is the demand curve Giffen (upward-sloping)?
 <details>
 <summary>Answer</summary>
 For a normal good: price falls → substitution effect (+Q) and income effect (+Q) both increase quantity demanded → demand slopes downward.<br />
-For an inferior good: price falls → substitution effect (+Q) but income effect (−Q, because real income rises and demand for inferior goods falls). If $|SE| \gt{} |IE|$: demand still slopes downward. If $|IE| \gt{} |SE|$: demand slopes **upward** (Giffen good).<br />
+For an inferior good: price falls → substitution effect (+Q) but income effect (−Q, because real income rises and demand for inferior goods falls). If $|SE| \gt |IE|$: demand still slopes downward. If $|IE| \gt |SE|$: demand slopes **upward** (Giffen good).<br />
 Conditions for Giffen behaviour: (1) The good must be inferior (strong income effect). (2) The good must be a staple (large budget share, so the income effect is large). (3) No close substitutes (so substitution effect is small). Empirical evidence: very rare. Potentially observed with rice in poor Chinese provinces (Jensen & Miller, 2008) and potatoes during the Irish famine. Most "inferior goods" are not Giffen.
 <i>Revision: [Demand, Supply, and Equilibrium](/docs/alevel/economics/microeconomics/demand-supply-and-equilibrium)</i>
 </details>
@@ -305,7 +305,7 @@ Existence of frictional unemployment does not imply market failure.
 
 <details>
 <summary>Answer</summary>
-**Cyclical**: due to insufficient AD ($Y \lt{} Y^*$), rises during recessions, falls during booms.<br />
+**Cyclical**: due to insufficient AD ($Y \lt Y^*$), rises during recessions, falls during booms.<br />
 **Structural**: due to mismatch between workers' skills/locations and job requirements (technology change, deindustrialisation).<br />
 **Frictional**: short-term unemployment while workers search for new jobs (graduates, job-to-job transitions).<br />
 Frictional unemployment is not market failure because: (1) It is productive — workers search for the best match, improving allocative efficiency. (2) It is voluntary — workers choose to spend time searching rather than accepting the first available job. (3) Some frictional unemployment is necessary for dynamic efficiency (creative destruction — Schumpeter). (4) Policies to reduce frictional unemployment below the natural rate (e.g., banning job search) would worsen matching quality. The natural rate $u^* = u_{frictional} + u_{structural}$ is positive and efficient.
@@ -330,7 +330,7 @@ Imports induced by the spending increase.
 
 <details>
 <summary>Answer</summary>
-The paradox of thrift: if all households simultaneously increase saving (reduce consumption), AD falls → output falls (via multiplier) → total income falls → saving actually decreases. What is rational for the individual is collectively self-defeating. Formally: $\Delta S = MPS \times \Delta Y = MPS \times k \times \Delta C$. Since $k \gt{} 1$ and $\Delta C \lt{} 0$: $|\Delta S| \gt{} |\Delta C|$.<br />
+The paradox of thrift: if all households simultaneously increase saving (reduce consumption), AD falls → output falls (via multiplier) → total income falls → saving actually decreases. What is rational for the individual is collectively self-defeating. Formally: $\Delta S = MPS \times \Delta Y = MPS \times k \times \Delta C$. Since $k \gt 1$ and $\Delta C \lt 0$: $|\Delta S| \gt |\Delta C|$.<br />
 Conditions where it does NOT hold: (1) In a small open economy with a flexible exchange rate, increased saving reduces interest rates → currency depreciates → net exports rise → AD may not fall (the saving is channeled abroad and returns as export demand). (2) At full employment, if the economy is at $Y^*$Resources are reallocated from consumption to investment (Say's Law). (3) If saving finances productive investment (rather than hoarding), it may raise future output rather than reduce current output.
 <i>Revision: [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
@@ -342,7 +342,7 @@ On the price level?"
 <details>
 <summary>Answer</summary>
 **SR**: Consumer confidence rises → $C$ rises → AD shifts right → $Y$ rises above $Y^*$ (inflationary gap), $P$ rises.<br />
-**LR adjustment**: $Y \gt{} Y^*$ → unemployment falls below natural rate → labour market tightens → wages rise → firms' costs rise → SRAS shifts left → $Y$ returns to $Y^*$$P$ rises further.<br />
+**LR adjustment**: $Y \gt Y^*$ → unemployment falls below natural rate → labour market tightens → wages rise → firms' costs rise → SRAS shifts left → $Y$ returns to $Y^*$$P$ rises further.<br />
 **Final outcome**: $Y$ unchanged at $Y^*$ (long-run neutrality of demand shocks). $P$ is higher. The long-run price level is determined by the intersection of AD and the vertical LRAS, which depends on the money supply (if monetary policy accommodates the shock) or the initial position of AD. The key insight: demand shocks have no long-run effect on output, only on prices.
 <i>Revision: [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
@@ -390,7 +390,7 @@ To the concepts of crowding out, automatic stabilisers, and the debt-to-GDP rati
 
 <details>
 <summary>Answer</summary>
-Not always harmful: (1) **Counter-cyclical deficits** are desirable — they stabilise the economy (Keynesian view). During recessions, deficits automatically widen (automatic stabilisers), supporting AD. (2) If the deficit finances productive investment (infrastructure, education), it raises future GDP → the debt-to-GDP ratio may actually fall even with a deficit (if $g \gt{} r$). (3) In a deep recession with the ZLB binding, deficits have large multipliers and minimal crowding out. (4) Ricardian equivalence is incomplete — deficits do stimulate AD. Harmful when: (1) Structural deficits during booms crowd out private investment. (2) Persistent deficits lead to unsustainable debt dynamics ($r \gt{} g$). (3) Deficits finance current consumption (not investment) → no future growth benefit. (4) They create inflationary pressure at full employment.
+Not always harmful: (1) **Counter-cyclical deficits** are desirable — they stabilise the economy (Keynesian view). During recessions, deficits automatically widen (automatic stabilisers), supporting AD. (2) If the deficit finances productive investment (infrastructure, education), it raises future GDP → the debt-to-GDP ratio may actually fall even with a deficit (if $g \gt r$). (3) In a deep recession with the ZLB binding, deficits have large multipliers and minimal crowding out. (4) Ricardian equivalence is incomplete — deficits do stimulate AD. Harmful when: (1) Structural deficits during booms crowd out private investment. (2) Persistent deficits lead to unsustainable debt dynamics ($r \gt g$). (3) Deficits finance current consumption (not investment) → no future growth benefit. (4) They create inflationary pressure at full employment.
 <i>Revision: [Fiscal Policy](/docs/alevel/economics/macro/fiscal-policy)</i>
 </details>
 
@@ -426,7 +426,7 @@ Before improving it? How does the Marshall-Lerner condition relate to this?
 <summary>Answer</summary>
 **J-curve**: after a depreciation, the current account initially worsens (the downward part of the J) before improving (the upward part).<br />
 **Why**: In the short run, trade contracts are fixed in volume (signed months in advance), and consumers are slow to change habits. The depreciation raises the domestic currency cost of imports immediately (imported inflation) but export volumes take time to respond. Since import prices rise before export volumes increase, the trade balance worsens. Over 6–18 months, consumers find substitutes for dearer imports, foreign buyers respond to cheaper exports, and producers adjust — volumes change and the trade balance improves.<br />
-**Marshall-Lerner**: the CA improves when $|E_X| + |E_M| \gt{} 1$. In the short run, elasticities are low (contracts fixed) → condition may not hold → CA worsens. In the long run, elasticities rise → condition holds → CA improves. The J-curve is the dynamic manifestation of the Marshall-Lerner condition.
+**Marshall-Lerner**: the CA improves when $|E_X| + |E_M| \gt 1$. In the short run, elasticities are low (contracts fixed) → condition may not hold → CA worsens. In the long run, elasticities rise → condition holds → CA improves. The J-curve is the dynamic manifestation of the Marshall-Lerner condition.
 <i>Revision: [The International Economy](/docs/alevel/economics/macro/the-international-economy)</i>
 </details>
 

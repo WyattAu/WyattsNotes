@@ -448,11 +448,11 @@ $$
 \end{aligned}
 $$
 
-Where the vector $\mathbf{{'}n{}'} = (A, B, C)$ is a normal vector to the plane. The plane can also
+Where the vector $\mathbf{n} = (A, B, C)$ is a normal vector to the plane. The plane can also
 be Described in several forms:
 
 - **Point-normal form**: Given a point $P_0(x_0, y_0, z_0)$ on the plane and normal
-  $\mathbf{{'}n{}'} = (A, B, C)$:
+  $\mathbf{n} = (A, B, C)$:
 
 $$
 \begin{aligned}
@@ -473,9 +473,9 @@ $$
 
 #### Angle Between a Line and a Plane
 
-The angle $\phi$ between a line with direction vector $\mathbf{{'}d{}'} = (l, m, n)$ and a plane
-with Normal $\mathbf{{'}n{}'} = (A, B, C)$ is defined as the complement of the angle between
-$\mathbf{{'}d{}'}$ and $\mathbf{{'}n{}'}$:
+The angle $\phi$ between a line with direction vector $\mathbf{d} = (l, m, n)$ and a plane
+with Normal $\mathbf{n} = (A, B, C)$ is defined as the complement of the angle between
+$\mathbf{d}$ and $\mathbf{n}$:
 
 $$
 \begin{aligned}
@@ -485,8 +485,8 @@ $$
 
 #### Angle Between Two Planes
 
-The angle $\theta$ between two planes with normals $\mathbf{{'}n_1{}'} = (A_1, B_1, C_1)$ and
-$\mathbf{{'}n_2{}'} = (A_2, B_2, C_2)$ is:
+The angle $\theta$ between two planes with normals $\mathbf{n_1} = (A_1, B_1, C_1)$ and
+$\mathbf{n_2} = (A_2, B_2, C_2)$ is:
 
 $$
 \begin{aligned}
@@ -496,8 +496,8 @@ $$
 
 #### Angle Between Two Lines in 3D
 
-For two lines with direction vectors $\mathbf{{'}d_1{}'} = (l_1, m_1, n_1)$ and
-$\mathbf{{'}d_2{}'} = (l_2, m_2, n_2)$:
+For two lines with direction vectors $\mathbf{d_1} = (l_1, m_1, n_1)$ and
+$\mathbf{d_2} = (l_2, m_2, n_2)$:
 
 $$
 \begin{aligned}
@@ -519,7 +519,7 @@ $$
 <summary>Examples</summary>
 - Find the distance from $P(1, 2, -1)$ to the plane $2x - y + 2z + 3 = 0$: $d = \frac{|2(1) - 1(2) + 2(-1) + 3|}{\sqrt{4 + 1 + 4}} = \frac{|2 - 2 - 2 + 3|}{3} = \frac{1}{3}$.
 - Find the angle between the planes $x + y + z = 1$ and $2x - y + z = 0$: $\cos\theta = \frac{|1\cdot 2 + 1\cdot(-1) + 1\cdot 1|}{\sqrt{3}\sqrt{6}} = \frac{2}{3\sqrt{2}} = \frac{\sqrt{2}}{3}$. So $\theta = \arccos\left(\frac{\sqrt{2}}{3}\right) \approx 61.9^\circ$.
-- Find the equation of the plane through $(1, 0, 2)$$(0, 1, -1)$And $(2, 1, 1)$: direction vectors $\overrightarrow{AB} = (-1, 1, -3)$ and $\overrightarrow{AC} = (1, 1, -1)$. Cross product: $\overrightarrow{AB} \times \overrightarrow{AC} = (2, -4, -2)$So normal $\mathbf{{'}n{}'} = (1, -2, -1)$. The plane is $x - 2y - z = -1$.
+- Find the equation of the plane through $(1, 0, 2)$$(0, 1, -1)$And $(2, 1, 1)$: direction vectors $\overrightarrow{AB} = (-1, 1, -3)$ and $\overrightarrow{AC} = (1, 1, -1)$. Cross product: $\overrightarrow{AB} \times \overrightarrow{AC} = (2, -4, -2)$So normal $\mathbf{n} = (1, -2, -1)$. The plane is $x - 2y - z = -1$.
 
 ---
 
@@ -582,10 +582,10 @@ $x + y + z = 1$.
 </details>
 <summary>Answer</summary>
 
-- Direction vector of the line: $\mathbf{{'}d{}'} = (4-1, 5-2, 6-3) = (3, 3, 3)$Simplified to
+- Direction vector of the line: $\mathbf{d} = (4-1, 5-2, 6-3) = (3, 3, 3)$Simplified to
   $(1, 1, 1)$.
-- Normal of the plane: $\mathbf{{'}n{}'} = (1, 1, 1)$.
-- The angle $\alpha$ between $\mathbf{{'}d{}'}$ and $\mathbf{{'}n{}'}$:
+- Normal of the plane: $\mathbf{n} = (1, 1, 1)$.
+- The angle $\alpha$ between $\mathbf{d}$ and $\mathbf{n}$:
   $\cos\alpha = \frac{|1+1+1|}{\sqrt{3}\sqrt{3}} = \frac{3}{3} = 1$So $\alpha = 0^\circ$.
 - The angle $\phi$ between the line and the plane is the complement:
   $\phi = 90^\circ - 0^\circ = 90^\circ$.
@@ -783,13 +783,13 @@ $B(7, 8, 9)$.
 <details>
 <summary>Solution</summary>
 
-Direction vector of the line: $\mathbf{{'}d{}'} = (3, 3, 3)$Simplified to $(1, 1, 1)$.
+Direction vector of the line: $\mathbf{d} = (3, 3, 3)$Simplified to $(1, 1, 1)$.
 
 Vector $\overrightarrow{AP} = (1 - 4, 2 - 5, 3 - 6) = (-3, -3, -3)$.
 
-The cross product $\overrightarrow{AP} \times \mathbf{{'}d{}'} = (-3, -3, -3) \times (1, 1, 1)$.
+The cross product $\overrightarrow{AP} \times \mathbf{d} = (-3, -3, -3) \times (1, 1, 1)$.
 
-Since $\overrightarrow{AP}$ is parallel to $\mathbf{{'}d{}'}$ (one is $-3$ times the other), the
+Since $\overrightarrow{AP}$ is parallel to $\mathbf{d}$ (one is $-3$ times the other), the
 point $P$ lies on the line.
 
 The distance is $0$.
@@ -951,8 +951,8 @@ $AB = 6$.
 <details>
 <summary>Solution</summary>
 
-Normal to first plane: $\mathbf{{'}n_1{}'} = (2, -1, 2)$. Normal to second plane:
-$\mathbf{{'}n_2{}'} = (1, 2, -2)$.
+Normal to first plane: $\mathbf{n_1} = (2, -1, 2)$. Normal to second plane:
+$\mathbf{n_2} = (1, 2, -2)$.
 
 $$\cos\theta = \frac{|2(1) + (-1)(2) + 2(-2)|}{\sqrt{4 + 1 + 4} \cdot \sqrt{1 + 4 + 4}} = \frac{|2 - 2 - 4|}{3 \cdot 3} = \frac{4}{9}$$
 

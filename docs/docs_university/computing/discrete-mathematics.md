@@ -338,17 +338,17 @@ Checking validity is Co-NP-complete, not NP-complete. :::
 
 **Basic operations:**
 
-- Union: $A \cup B = \\{x : x \in A \mathrm{ or {} x \in B\\}$
-- Intersection: $A \cap B = \\{x : x \in A \mathrm{ and {} x \in B\\}$
-- Difference: $A \setminus B = \\{x : x \in A \mathrm{ and {} x \notin B\\}$
+- Union: $A \cup B = \\{x : x \in A \mathrm{ or  x \in B\\}$
+- Intersection: $A \cap B = \\{x : x \in A \mathrm{ and  x \in B\\}$
+- Difference: $A \setminus B = \\{x : x \in A \mathrm{ and  x \notin B\\}$
 - Complement: $A^c = U \setminus A$ (where $U$ is the universal set)
 
 **De Morgan's Laws:**
 
 $$(A \cup B)^c = A^c \cap B^c, \quad (A \cap B)^c = A^c \cup B^c$$
 
-**Power set:** $\mathcal{{'}P{}'}(A) = \\{B : B \subseteq A\\}$. If $|A| = n$Then
-$|\mathcal{{'}P{}'}(A)| = 2^n$.
+**Power set:** $\mathcal{P}(A) = \\{B : B \subseteq A\\}$. If $|A| = n$Then
+$|\mathcal{P}(A)| = 2^n$.
 
 ### 2.2 Relations
 
@@ -468,7 +468,7 @@ countable Is **uncountable**.
 
 _Proof._ The function $f : \mathbb{{'}N{}'} \to \mathbb{{'}Z{}'}$ defined by
 
-$$f(n) = \begin{cases} n/2 & \mathrm{if{}\; n\; \mathrm{is\; even{} \\ -(n+1)/2 & \mathrm{if{}\; n\; \mathrm{is\; odd{} \end{cases}$$
+$$f(n) = \begin{cases} n/2 & \mathrm{if\; n\; \mathrm{is\; even \\ -(n+1)/2 & \mathrm{if\; n\; \mathrm{is\; odd \end{cases}$$
 
 Is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
@@ -492,7 +492,7 @@ the expansion that does not end in all 9s to avoid dual representations).
 
 Define $s = 0.s_1 s_2 s_3 \ldots$ by
 
-$$s_i = \begin{cases} 5 & \mathrm{if{}\; d_{ii} \neq 5 \\ 6 & \mathrm{if{}\; d_{ii} = 5 \end{cases}$$
+$$s_i = \begin{cases} 5 & \mathrm{if\; d_{ii} \neq 5 \\ 6 & \mathrm{if\; d_{ii} = 5 \end{cases}$$
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$ So
 $s \notin \\{r_1, r_2, \ldots\\}$Contradicting the assumption that the list was complete. Therefore
@@ -773,11 +773,11 @@ Directly by stars and bars: $\binom{20 + 4 - 1}{4 - 1} = \binom{23}{3} = 1771$. 
 
 ### 4.5 The Pigeonhole Principle
 
-**Theorem 4.5 (Pigeonhole Principle).** If $n$ objects are placed into $k$ boxes and $n \gt{} k$Then
+**Theorem 4.5 (Pigeonhole Principle).** If $n$ objects are placed into $k$ boxes and $n \gt k$Then
 at Least one box contains at least $\lceil n/k \rceil$ objects.
 
 _Proof._ If every box contained at most $\lceil n/k \rceil - 1$ objects, the total would be at most
-$k(\lceil n/k \rceil - 1) \lt{} k \cdot n/k = n$Contradicting that there are $n$ objects.
+$k(\lceil n/k \rceil - 1) \lt k \cdot n/k = n$Contradicting that there are $n$ objects.
 $\blacksquare$
 
 **Worked Example.** In a class of 400 students, at least how many were born in the same month?
@@ -1446,7 +1446,7 @@ Therefore $T(n) = \Theta(n^2)$.
 There are $a^j$ subproblems, each of size $n/b^j$Each contributing $f(n/b^j)$ work. The tree has
 $\log_b n$ levels, with $a^{\log_b n} = n^{c_{\mathrm{crit{}}}$ leaves. The total work is
 
-$$T(n) = \Theta\!\left(n^{c_{\mathrm{crit{}}}\right) + \sum_{j=0}^{\log_b n - 1} a^j \, f(n/b^j)$$
+$$T(n) = \Theta\!\left(n^{c_{\mathrm{crit}}\right) + \sum_{j=0}^{\log_b n - 1} a^j \, f(n/b^j)$$
 
 - **Case 1:** $f(n) = O(n^c)$ with $c \lt c_{\mathrm{crit{}}$. The sum is dominated by the leaves,
   giving $T(n) = \Theta(n^{c_{\mathrm{crit{}}})$.

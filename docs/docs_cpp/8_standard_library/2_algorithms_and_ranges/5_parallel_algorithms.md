@@ -248,24 +248,24 @@ int main() {
 Evaluation order:
 
 $$
-\mathrm{accumulate{}([a_1, a_2, \ldots, a_n], init, op) = op(\ldots op(op(init, a_1), a_2) \ldots, a_n)
+\mathrm{accumulate([a_1, a_2, \ldots, a_n], init, op) = op(\ldots op(op(init, a_1), a_2) \ldots, a_n)
 $$
 
 `std::reduce` [N4950 §25.7.4] has **no guaranteed order** when used with parallel execution.
 Elements may be combined in any order and in any grouping:
 
 $$
-\mathrm{reduce{}([a_1, a_2, \ldots, a_n], init, op) = \mathrm{any binary tree of {} op \mathrm{ applications{}
+\mathrm{reduce([a_1, a_2, \ldots, a_n], init, op) = \mathrm{any binary tree of  op \mathrm{ applications
 $$
 
 This means `op` must be **commutative** and **associative** for well-defined results with `reduce`:
 
 $$
-Op(a, b) = op(b, a) \quad \mathrm{(commutative){}
+Op(a, b) = op(b, a) \quad \mathrm{(commutative)
 $$
 
 $$
-Op(op(a, b), c) = op(a, op(b, c)) \quad \mathrm{(associative){}
+Op(op(a, b), c) = op(a, op(b, c)) \quad \mathrm{(associative)
 $$
 
 ```cpp

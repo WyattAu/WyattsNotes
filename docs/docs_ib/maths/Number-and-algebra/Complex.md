@@ -14,7 +14,7 @@ Cartesian form complex numbers ($z$) are separated to real ($a$) and imaginary p
 
 $$
 \begin`\{aligned}`
- z = a + bi, \quad a,b \in \mathbb{{'}R{}'}
+ z = a + bi, \quad a,b \in \mathbb{R}
 \end`\{aligned}`
 $$
 
@@ -68,8 +68,8 @@ $$
  \theta = \arg(z) =
  \begin`\{cases}`
  \arctan \frac{b}{a} & a \neq 0\\
- \frac{\pi}{2} & a = 0, b \gt{} 0\\
- -\frac{\pi}{2} & a = 0, b \lt{} 0\\
+ \frac{\pi}{2} & a = 0, b \gt 0\\
+ -\frac{\pi}{2} & a = 0, b \lt 0\\
  \end`\{cases}`
 \end`\{aligned}`
 $$
@@ -407,7 +407,7 @@ $$
 Applying multiplication repeatedly:
 
 $$
-Z^n = r^n e^{in\theta}, \qquad n \in \mathbb{{'}Z{}'}
+Z^n = r^n e^{in\theta}, \qquad n \in \mathbb{Z}
 $$
 
 Therefore:
@@ -475,7 +475,7 @@ $$
 |z_1 - z_2| = \sqrt{(a-c)^2 + (b-d)^2}
 $$
 
-This is exactly the distance formula in $\mathbb{{'}R{}'}^2$.
+This is exactly the distance formula in $\mathbb{R}^2$.
 
 ### Midpoint of a Line Segment
 
@@ -527,7 +527,7 @@ $z_2$. The boundary $|z - z_1| = |z - z_2|$ is the perpendicular bisector.
 A line through $z_1$ and $z_2$ can be parameterised as:
 
 $$
-Z = z_1 + t(z_2 - z_1), \quad t \in \mathbb{{'}R{}'}
+Z = z_1 + t(z_2 - z_1), \quad t \in \mathbb{R}
 $$
 
 Equivalently, a line with equation $\mathrm{Re}(\bar{a}\, z) = c$ for some complex constant
@@ -627,9 +627,9 @@ $$
 $$
 
 So the result holds for $n = k + 1$. By induction, the theorem is true for all
-$n \in \mathbb{{'}N{}'}$.
+$n \in \mathbb{N}$.
 
-**Negative integers:** For $n = -m$ where $m \in \mathbb{{'}N{}'}$:
+**Negative integers:** For $n = -m$ where $m \in \mathbb{N}$:
 
 $$
 \left(re^{i\theta}\right)^{-m} = \frac{1}{\left(re^{i\theta}\right)^m} = \frac{1}{r^m e^{im\theta}} = r^{-m} e^{-im\theta} = r^n e^{in\theta}
@@ -793,7 +793,7 @@ $|z|$ is a real, non-negative scalar (the modulus), whereas $z$ is a complex num
 Differently under operations. For example:
 
 $$
-|z_1 + z_2| \neq |z_1| + |z_2| \quad \mathrm{}
+|z_1 + z_2| \neq |z_1| + |z_2| \quad \mathrm
 $$
 
 The triangle inequality gives $|z_1 + z_2| \leq |z_1| + |z_2|$With equality only when $z_1$ and
@@ -903,7 +903,7 @@ $$
 Find all complex numbers $z$ satisfying both $|z - 2| = 2$ and $\arg(z) = \pi/4$.
 
 **Solution:** The condition $\arg(z) = \pi/4$ means $z$ lies on the ray from the origin at
-$45^\circ$So $z = t(1 + i)$ for $t \gt{} 0$.
+$45^\circ$So $z = t(1 + i)$ for $t \gt 0$.
 
 Substituting into $|z - 2| = 2$:
 
@@ -918,7 +918,7 @@ $$
 \end`\{aligned}`
 $$
 
-Since $t \gt{} 0$We get $t = 2$. Therefore $z = 2(1 + i) = 2 + 2i$.
+Since $t \gt 0$We get $t = 2$. Therefore $z = 2(1 + i) = 2 + 2i$.
 
 </details>
 
@@ -953,7 +953,7 @@ The roots are $1 + 2i$ and $1 - 2i$Each with multiplicity 2.
 <summary>Problem 7: Proof Using Modulus Properties</summary>
 
 Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all
-$z_1, z_2 \in \mathbb{{'}C{}'}$.
+$z_1, z_2 \in \mathbb{C}$.
 
 **Solution:** Let $z_1 = a + bi$ and $z_2 = c + di$.
 
@@ -1033,7 +1033,7 @@ $$
 <details>
 <summary>Problem 10: Argument Equations</summary>
 
-Solve the equation $\arg(z - 1) = \arg(z + i)$ for $z \in \mathbb{{'}C{}'}$Where $z \neq 1$ and
+Solve the equation $\arg(z - 1) = \arg(z + i)$ for $z \in \mathbb{C}$Where $z \neq 1$ and
 $z \neq -i$.
 
 **Solution:** The condition $\arg(z - 1) = \arg(z + i)$ means the vectors from $1$ and from $-i$ to
@@ -1060,7 +1060,7 @@ $$
 
 Setting this to zero: $x - y - 1 = 0$I.e. $y = x - 1$.
 
-The solution set is $\{z = x + i(x - 1) : x \in \mathbb{{'}R{}'},\; z \neq 1,\; z \neq -i\}$.
+The solution set is $\{z = x + i(x - 1) : x \in \mathbb{R},\; z \neq 1,\; z \neq -i\}$.
 
 </details>
 

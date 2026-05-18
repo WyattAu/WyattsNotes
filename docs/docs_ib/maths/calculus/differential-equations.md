@@ -226,13 +226,13 @@ $k \gt 0$.
 
 Solution: $T(t) = T_{\mathrm{env}} + (T_0 - T_{\mathrm{env}})e^{-kt}$.
 
-**Example.** A body at $90\,{}^{\circ}\mathrm{C}$ is placed in a room at $20\,{}^{\circ}\mathrm{C}$.
-After $10$ minutes, its temperature is $60\,{}^{\circ}\mathrm{C}$. Find its temperature after $30$
+**Example.** A body at $90\,^{\circ}\mathrm{C}$ is placed in a room at $20\,^{\circ}\mathrm{C}$.
+After $10$ minutes, its temperature is $60\,^{\circ}\mathrm{C}$. Find its temperature after $30$
 minutes.
 
 $$60 = 20 + 70e^{-10k} \implies e^{-10k} = \frac{40}{70} = \frac{4}{7}$$
 
-$$T(30) = 20 + 70\left(\frac{4}{7}\right)^3 = 20 + 70 \cdot \frac{64}{343} = 20 + \frac{4480}{343} \approx 33.1\,{}^{\circ}\mathrm{C}$$
+$$T(30) = 20 + 70\left(\frac{4}{7}\right)^3 = 20 + 70 \cdot \frac{64}{343} = 20 + \frac{4480}{343} \approx 33.1\,^{\circ}\mathrm{C}$$
 
 ### Simple Harmonic Motion (SHM)
 
@@ -475,9 +475,9 @@ $$y = e^{2x}\!\left(\cos 3x + \frac{4}{3}\sin 3x\right)$$
 
 **Worked Example: Newton's Law of Cooling with Two Data Points**
 
-A cup of coffee at $85\,{}^{\circ}\mathrm{C}$ is placed in a room at $22\,{}^{\circ}\mathrm{C}$.
-After $5$ minutes the temperature is $70\,{}^{\circ}\mathrm{C}$And after $10$ minutes it is
-$60\,{}^{\circ}\mathrm{C}$. Find the temperature after $20$ minutes.
+A cup of coffee at $85\,^{\circ}\mathrm{C}$ is placed in a room at $22\,^{\circ}\mathrm{C}$.
+After $5$ minutes the temperature is $70\,^{\circ}\mathrm{C}$And after $10$ minutes it is
+$60\,^{\circ}\mathrm{C}$. Find the temperature after $20$ minutes.
 
 <details>
 <summary>Solution</summary>
@@ -494,7 +494,7 @@ Imprecision. Using the $10$-minute data point:
 
 $$e^{-10k} = \frac{38}{63} \implies -10k = \ln\!\left(\frac{38}{63}\right) \implies k = \frac{1}{10}\ln\!\left(\frac{63}{38}\right) \approx 0.0506$$
 
-$$T(20) = 22 + 63\left(\frac{38}{63}\right)^2 = 22 + \frac{1444}{63} \approx 22 + 22.92 = 44.9\,{}^{\circ}\mathrm{C}$$
+$$T(20) = 22 + 63\left(\frac{38}{63}\right)^2 = 22 + \frac{1444}{63} \approx 22 + 22.92 = 44.9\,^{\circ}\mathrm{C}$$
 
 </details>
 
@@ -588,9 +588,9 @@ Error: $|1.522 - 1.505| \approx 0.017$Roughly $1.1\%$.
 7. Solve $\dfrac{dy}{dx} = \dfrac{x^2 + 1}{2y}$ with $y(0) = 2$. Find the value of $y$ when $x = 2$.
 
 8. The temperature of an object follows Newton's law of cooling. It cools from
-   $95\,{}^{\circ}\mathrm{C}$ to $75\,{}^{\circ}\mathrm{C}$ in $15$ minutes in a room at
-   $20\,{}^{\circ}\mathrm{C}$. How long does it take to cool from $95\,{}^{\circ}\mathrm{C}$ to
-   $30\,{}^{\circ}\mathrm{C}$?
+   $95\,^{\circ}\mathrm{C}$ to $75\,^{\circ}\mathrm{C}$ in $15$ minutes in a room at
+   $20\,^{\circ}\mathrm{C}$. How long does it take to cool from $95\,^{\circ}\mathrm{C}$ to
+   $30\,^{\circ}\mathrm{C}$?
 
 ---
 

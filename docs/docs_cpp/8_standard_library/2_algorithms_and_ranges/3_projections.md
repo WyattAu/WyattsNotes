@@ -82,7 +82,7 @@ int main() {
 `std::ranges::sort` [N4950 §25.7.7] accepts an optional projection parameter. The signature is:
 
 $$
-\mathrm{sort{}(r, comp = \\{\\}, proj = \\{\\})
+\mathrm{sort(r, comp = \\{\\}, proj = \\{\\})
 $$
 
 Where `comp` compares the **projected** values, and `proj` maps each element to the value used for

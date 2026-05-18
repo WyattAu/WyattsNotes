@@ -290,10 +290,10 @@ struct Ambig<T* const> {};     // matches: T = const int
 ```
 
 **Proof of ambiguity.** Let $A$ = `const T*` and $B$ = `T* const`. Replace `T` in $A$ with a unique
-Type $U$: we get `const U*`. Does this match $B$ (`T* const`)? Yes, with $T = \mathrm{const {}
+Type $U$: we get `const U*`. Does this match $B$ (`T* const`)? Yes, with $T = \mathrm{const 
 U$.
 Now Replace `T` in $B$ with a unique type $V$: we get `V* const`. Does this match $A$ (`const T*`)?
-Yes, With $T = V \mathrm{ const{}$. Since $A$ matches $B$ **and** $B$ matches $A$Neither is strictly
+Yes, With $T = V \mathrm{ const$. Since $A$ matches $B$ **and** $B$ matches $A$Neither is strictly
 More specialized. The program is ill-formed.
 
 The fix is to provide a disambiguating specialization that is strictly more specialized than both:

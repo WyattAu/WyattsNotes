@@ -69,7 +69,7 @@ $$
 E = hf
 $$
 
-Where $h = 6.63 \times 10^{-34}\mathrm{ J s{}$ (Planck's constant) and $f$ is the frequency.
+Where $h = 6.63 \times 10^{-34}\mathrm{ J s$ (Planck's constant) and $f$ is the frequency.
 
 When a photon strikes the metal surface, it transfers all its energy to a single electron. The
 Electron uses some of this energy to escape the metal (overcoming the binding energy) and retains
@@ -125,20 +125,20 @@ $$
 A plot of $E_{k(\max)}$ versus $f$ yields a straight line with slope $h$ and intercept $-\phi$. This
 Is how Millikan experimentally determined Planck's constant in 1916, confirming Einstein's equation.
 
-**Example (HL):** Light of wavelength $400\mathrm{ nm{}$ is incident on a metal surface with work
-Function $2.0\mathrm{ eV{}$. Find the maximum kinetic energy of the emitted electrons and the
+**Example (HL):** Light of wavelength $400\mathrm{ nm$ is incident on a metal surface with work
+Function $2.0\mathrm{ eV$. Find the maximum kinetic energy of the emitted electrons and the
 stopping Voltage.
 
 $$
-E = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{400 \times 10^{-9}} = 4.97 \times 10^{-19}\mathrm{ J{} = 3.11\mathrm{ eV{}
+E = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{400 \times 10^{-9}} = 4.97 \times 10^{-19}\mathrm{ J = 3.11\mathrm{ eV
 $$
 
 $$
-E_{k(\max)} = 3.11 - 2.0 = 1.11\mathrm{ eV{}
+E_{k(\max)} = 3.11 - 2.0 = 1.11\mathrm{ eV
 $$
 
 $$
-V_s = \frac{1.11\mathrm{ eV{}}{e} = 1.11\mathrm{ V{}
+V_s = \frac{1.11\mathrm{ eV}{e} = 1.11\mathrm{ V
 $$
 
 ### Threshold Frequency and Wavelength (HL)
@@ -159,15 +159,15 @@ $$
 For wavelengths longer than $\lambda_0$ (i.e., frequencies below $f_0$), no photoelectric emission
 Occurs regardless of intensity.
 
-**Example (HL):** The work function of sodium is $2.28\mathrm{ eV{}$. Find the threshold frequency
+**Example (HL):** The work function of sodium is $2.28\mathrm{ eV$. Find the threshold frequency
 and Threshold wavelength.
 
 $$
-F_0 = \frac{\phi}{h} = \frac{2.28 \times 1.6 \times 10^{-19}}{6.63 \times 10^{-34}} = 5.50 \times 10^{14}\mathrm{ Hz{}
+F_0 = \frac{\phi}{h} = \frac{2.28 \times 1.6 \times 10^{-19}}{6.63 \times 10^{-34}} = 5.50 \times 10^{14}\mathrm{ Hz
 $$
 
 $$
-\lambda_0 = \frac{c}{f_0} = \frac{3 \times 10^8}{5.50 \times 10^{14}} = 5.45 \times 10^{-7}\mathrm{ m{} = 545\mathrm{ nm{}
+\lambda_0 = \frac{c}{f_0} = \frac{3 \times 10^8}{5.50 \times 10^{14}} = 5.45 \times 10^{-7}\mathrm{ m = 545\mathrm{ nm
 $$
 
 This is in the green region of the visible spectrum. Sodium can be photoelectrically excited by blue
@@ -179,10 +179,10 @@ If the frequency exceeds $f_0$The photocurrent (number of electrons per second) 
 Proportional to the light intensity. Intensity in the photon picture is:
 
 $$
-I = N_{\mathrm{photon{}} \times hf
+I = N_{\mathrm{photon} \times hf
 $$
 
-Where $N_{\mathrm{photon{}}$ is the number of photons per unit area per unit time. Doubling the
+Where $N_{\mathrm{photon}$ is the number of photons per unit area per unit time. Doubling the
 Intensity doubles the number of photons, which doubles the photocurrent, but each photon still
 Carries the same energy $hf$.
 
@@ -229,8 +229,8 @@ Struck by an alpha particle.
 Maximum Coulomb force on an alpha particle passing through a diffuse positive sphere would be much
 Smaller than what is needed to produce the observed large-angle deflections. Rutherford calculated
 That to produce a deflection of greater than $90^\circ$The alpha particle must encounter a
-concentrated Charge within a radius of approximately $10^{-14}\mathrm{ m{}$About four orders of
-magnitude smaller Than the known atomic radius ($\approx 10^{-10}\mathrm{ m{}$).
+concentrated Charge within a radius of approximately $10^{-14}\mathrm{ m$About four orders of
+magnitude smaller Than the known atomic radius ($\approx 10^{-10}\mathrm{ m$).
 
 ### The Stability Problem
 
@@ -318,10 +318,10 @@ $$
 Evaluating the constants gives:
 
 $$
-E_n = -\frac{13.6\mathrm{ eV{}}{n^2}
+E_n = -\frac{13.6\mathrm{ eV}{n^2}
 $$
 
-The ground state ($n = 1$) has energy $-13.6\mathrm{ eV{}$And the energy approaches zero as
+The ground state ($n = 1$) has energy $-13.6\mathrm{ eV$And the energy approaches zero as
 $n \to \infty$ (ionisation).
 
 ### Energy Levels of Hydrogen (HL)
@@ -329,13 +329,13 @@ $n \to \infty$ (ionisation).
 The energy of the $n$Th level:
 
 $$
-E_n = -\frac{13.6\mathrm{ eV{}}{n^2}
+E_n = -\frac{13.6\mathrm{ eV}{n^2}
 $$
 
 The energy of a photon emitted in a transition from level $n$ to level $m$ ($n \gt m$):
 
 $$
-\Delta E = 13.6\left(\frac{1}{m^2} - \frac{1}{n^2}\right)\mathrm{ eV{}
+\Delta E = 13.6\left(\frac{1}{m^2} - \frac{1}{n^2}\right)\mathrm{ eV
 $$
 
 ### Spectral Series of Hydrogen
@@ -350,7 +350,7 @@ The discrete spectral lines of hydrogen fall into series named after their disco
 | Brackett | $n \to 4$  | Infrared    |
 
 The Balmer series is the most well-known because its lines fall in the visible range. The H-alpha
-Line ($n = 3 \to 2$) at $656\mathrm{ nm{}$ is a distinctive red line often observed in astrophysics.
+Line ($n = 3 \to 2$) at $656\mathrm{ nm$ is a distinctive red line often observed in astrophysics.
 
 ### Ionisation Energy
 
@@ -358,27 +358,27 @@ The ionisation energy is the minimum energy required to remove an electron from 
 (transition from $n$ to $n = \infty$). For hydrogen:
 
 $$
-E_{\mathrm{ion{}} = 0 - (-13.6) = 13.6\mathrm{ eV{}
+E_{\mathrm{ion} = 0 - (-13.6) = 13.6\mathrm{ eV
 $$
 
 This corresponds to a photon of wavelength:
 
 $$
-\lambda = \frac{hc}{E_{\mathrm{ion{}}} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{13.6 \times 1.6 \times 10^{-19}} = 91.2\mathrm{ nm{}
+\lambda = \frac{hc}{E_{\mathrm{ion}} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{13.6 \times 1.6 \times 10^{-19}} = 91.2\mathrm{ nm
 $$
 
 This is in the far ultraviolet (Lyman limit). Any photon with wavelength shorter than
-$91.2\mathrm{ nm{}$ can ionise hydrogen.
+$91.2\mathrm{ nm$ can ionise hydrogen.
 
 **Example (HL):** Find the wavelength of light emitted when a hydrogen electron transitions from
 $n = 3$ to $n = 2$.
 
 $$
-\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{9}\right) = 13.6 \times \frac{5}{36} = 1.889\mathrm{ eV{}
+\Delta E = 13.6\left(\frac{1}{4} - \frac{1}{9}\right) = 13.6 \times \frac{5}{36} = 1.889\mathrm{ eV
 $$
 
 $$
-\lambda = \frac{hc}{\Delta E} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{1.889 \times 1.6 \times 10^{-19}} = \frac{1.989 \times 10^{-25}}{3.022 \times 10^{-19}} = 6.58 \times 10^{-7}\mathrm{ m{} = 658\mathrm{ nm{}
+\lambda = \frac{hc}{\Delta E} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{1.889 \times 1.6 \times 10^{-19}} = \frac{1.989 \times 10^{-25}}{3.022 \times 10^{-19}} = 6.58 \times 10^{-7}\mathrm{ m = 658\mathrm{ nm
 $$
 
 This is in the visible (red) region -- the H-alpha line of the Balmer series.
@@ -389,27 +389,27 @@ Energies emitted as the electron cascades to the ground state.
 Possible transitions: $4 \to 3$$4 \to 2$$4 \to 1$$3 \to 2$$3 \to 1$$2 \to 1$.
 
 $$
-\Delta E_{4\to3} = 13.6\left(\frac{1}{9} - \frac{1}{16}\right) = 13.6 \times \frac{7}{144} = 0.661\mathrm{ eV{}
+\Delta E_{4\to3} = 13.6\left(\frac{1}{9} - \frac{1}{16}\right) = 13.6 \times \frac{7}{144} = 0.661\mathrm{ eV
 $$
 
 $$
-\Delta E_{4\to2} = 13.6\left(\frac{1}{4} - \frac{1}{16}\right) = 13.6 \times \frac{3}{16} = 2.55\mathrm{ eV{}
+\Delta E_{4\to2} = 13.6\left(\frac{1}{4} - \frac{1}{16}\right) = 13.6 \times \frac{3}{16} = 2.55\mathrm{ eV
 $$
 
 $$
-\Delta E_{4\to1} = 13.6\left(1 - \frac{1}{16}\right) = 13.6 \times \frac{15}{16} = 12.75\mathrm{ eV{}
+\Delta E_{4\to1} = 13.6\left(1 - \frac{1}{16}\right) = 13.6 \times \frac{15}{16} = 12.75\mathrm{ eV
 $$
 
 $$
-\Delta E_{3\to2} = 1.889\mathrm{ eV{} \quad (\mathrm{calculated above{})
+\Delta E_{3\to2} = 1.889\mathrm{ eV \quad (\mathrm{calculated above)
 $$
 
 $$
-\Delta E_{3\to1} = 13.6\left(1 - \frac{1}{9}\right) = 13.6 \times \frac{8}{9} = 12.09\mathrm{ eV{}
+\Delta E_{3\to1} = 13.6\left(1 - \frac{1}{9}\right) = 13.6 \times \frac{8}{9} = 12.09\mathrm{ eV
 $$
 
 $$
-\Delta E_{2\to1} = 13.6\left(1 - \frac{1}{4}\right) = 13.6 \times \frac{3}{4} = 10.2\mathrm{ eV{}
+\Delta E_{2\to1} = 13.6\left(1 - \frac{1}{4}\right) = 13.6 \times \frac{3}{4} = 10.2\mathrm{ eV
 $$
 
 ### Limitations of the Bohr Model
@@ -442,10 +442,10 @@ Is why we do not observe wave behaviour in everyday life.
 
 ### Why de Broglie Wavelengths Are Not Observable for Macroscopic Objects
 
-Consider a cricket ball of mass $0.16\mathrm{ kg{}$ moving at $30\mathrm{ m/s{}$:
+Consider a cricket ball of mass $0.16\mathrm{ kg$ moving at $30\mathrm{ m/s$:
 
 $$
-\lambda = \frac{6.63 \times 10^{-34}}{0.16 \times 30} = 1.38 \times 10^{-34}\mathrm{ m{}
+\lambda = \frac{6.63 \times 10^{-34}}{0.16 \times 30} = 1.38 \times 10^{-34}\mathrm{ m
 $$
 
 This is about 20 orders of magnitude smaller than an atomic nucleus. No experiment can detect wave
@@ -489,14 +489,14 @@ Electron. This is a deep insight: quantisation arises from wave behaviour.
 Difference of 100 V.
 
 $$
-EV = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2eV}{m}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 100}{9.11 \times 10^{-31}}} = 5.93 \times 10^6\mathrm{ m/s{}
+EV = \frac{1}{2}mv^2 \implies v = \sqrt{\frac{2eV}{m}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 100}{9.11 \times 10^{-31}}} = 5.93 \times 10^6\mathrm{ m/s
 $$
 
 $$
-\lambda = \frac{6.63 \times 10^{-34}}{9.11 \times 10^{-31} \times 5.93 \times 10^6} = 1.23 \times 10^{-10}\mathrm{ m{} = 0.123\mathrm{ nm{}
+\lambda = \frac{6.63 \times 10^{-34}}{9.11 \times 10^{-31} \times 5.93 \times 10^6} = 1.23 \times 10^{-10}\mathrm{ m = 0.123\mathrm{ nm
 $$
 
-This is comparable to the spacing between atomic planes in a crystal ($\sim 0.2\mathrm{ nm{}$),
+This is comparable to the spacing between atomic planes in a crystal ($\sim 0.2\mathrm{ nm$),
 which Is why electron diffraction is observable.
 
 ### Heisenberg Uncertainty Principle (HL)
@@ -518,7 +518,7 @@ Spread in momentum, and vice versa.
 
 - Electrons in atoms cannot have well-defined orbits (as in the Bohr model). Instead, we describe
   them using probability distributions (orbitals).
-- An electron confined to a nucleus ($\Delta x \approx 10^{-14}\mathrm{ m{}$) would have a momentum
+- An electron confined to a nucleus ($\Delta x \approx 10^{-14}\mathrm{ m$) would have a momentum
   uncertainty far exceeding $mc$Implying relativistic speeds -- another argument against electrons
   existing inside the nucleus.
 
@@ -547,7 +547,7 @@ Force at those distances.
 - **Isobars** have the same $A$ but different $Z$.
 - **Isotones** have the same number of neutrons but different $Z$.
 
-Notation: an element $X$ with mass number $A$ and atomic number $Z$ is written ${}^{A}_{Z}X$.
+Notation: an element $X$ with mass number $A$ and atomic number $Z$ is written $^{A}_{Z}X$.
 
 ### Nuclear Forces
 
@@ -555,11 +555,11 @@ The strong nuclear force has several key properties:
 
 - It is attractive and very strong (about 100 times stronger than the electromagnetic force at
   nuclear distances).
-- It has a very short range, falling to near zero beyond about $3\mathrm{ fm{}$
-  ($3 \times 10^{-15}\mathrm{ m{}$).
+- It has a very short range, falling to near zero beyond about $3\mathrm{ fm$
+  ($3 \times 10^{-15}\mathrm{ m$).
 - It is charge-independent: it acts between any two nucleons (proton-proton, neutron-neutron, or
   proton-neutron).
-- At very short distances (less than about $0.5\mathrm{ fm{}$), it becomes repulsive, preventing the
+- At very short distances (less than about $0.5\mathrm{ fm$), it becomes repulsive, preventing the
   nucleus from collapsing to a point.
 
 The competition between the attractive strong force (short range) and the repulsive Coulomb force
@@ -572,20 +572,20 @@ The **mass defect** $\Delta m$ is the difference between the mass of the nucleus
 Masses of its individual nucleons:
 
 $$
-\Delta m = Zm_p + (A - Z)m_n - m_{\mathrm{nucleus{}}
+\Delta m = Zm_p + (A - Z)m_n - m_{\mathrm{nucleus}
 $$
 
-Where $m_p = 1.6726 \times 10^{-27}\mathrm{ kg{}$ is the proton mass and
-$m_n = 1.6749 \times 10^{-27}\mathrm{ kg{}$ is the neutron mass.
+Where $m_p = 1.6726 \times 10^{-27}\mathrm{ kg$ is the proton mass and
+$m_n = 1.6749 \times 10^{-27}\mathrm{ kg$ is the neutron mass.
 
 In practice, atomic masses (which include the mass of the electrons) are used, and the calculation
 Is simplified by noting that the electron masses cancel:
 
 $$
-\Delta m = Zm(\mathrm{{}^1H}) + (A - Z)m_n - m(\mathrm{atom{})
+\Delta m = Zm(\mathrm{^1H}) + (A - Z)m_n - m(\mathrm{atom)
 $$
 
-Where $m(\mathrm{{}^1H})$ is the mass of a hydrogen atom (proton plus electron).
+Where $m(\mathrm{^1H})$ is the mass of a hydrogen atom (proton plus electron).
 
 The binding energy is:
 
@@ -594,24 +594,24 @@ E_b = \Delta m \cdot c^2
 $$
 
 The binding energy per nucleon, $E_b/A$Indicates nuclear stability. A plot of $E_b/A$ versus $A$
-Shows that iron-56 has the highest binding energy per nucleon ($\approx 8.8\mathrm{ MeV/nucleon{}$).
+Shows that iron-56 has the highest binding energy per nucleon ($\approx 8.8\mathrm{ MeV/nucleon$).
 Nuclei with lower $A$ can gain stability by fusing (moving right on the curve), while nuclei with
 Higher $A$ can gain stability by fissioning (moving left).
 
-**Example (HL):** The atomic mass of helium-4 is $4.0026\mathrm{ u{}$. Find the binding energy per
-Nucleon. ($m(\mathrm{{}^1H}) = 1.0078\mathrm{ u{}$$m_n = 1.0087\mathrm{ u{}$
-$1\mathrm{ u{} = 931.5\mathrm{ MeV{}/c^2$).
+**Example (HL):** The atomic mass of helium-4 is $4.0026\mathrm{ u$. Find the binding energy per
+Nucleon. ($m(\mathrm{^1H}) = 1.0078\mathrm{ u$$m_n = 1.0087\mathrm{ u$
+$1\mathrm{ u = 931.5\mathrm{ MeV/c^2$).
 
 $$
-\Delta m = 2(1.0078) + 2(1.0087) - 4.0026 = 2.0156 + 2.0174 - 4.0026 = 0.0304\mathrm{ u{}
-$$
-
-$$
-E_b = 0.0304 \times 931.5 = 28.3\mathrm{ MeV{}
+\Delta m = 2(1.0078) + 2(1.0087) - 4.0026 = 2.0156 + 2.0174 - 4.0026 = 0.0304\mathrm{ u
 $$
 
 $$
-\frac{E_b}{A} = \frac{28.3}{4} = 7.08\mathrm{ MeV/nucleon{}
+E_b = 0.0304 \times 931.5 = 28.3\mathrm{ MeV
+$$
+
+$$
+\frac{E_b}{A} = \frac{28.3}{4} = 7.08\mathrm{ MeV/nucleon
 $$
 
 ### Radioactivity (OL/HL)
@@ -624,17 +624,17 @@ Types of decay:
 
 | Type             | Symbol                             | Change                                 | Penetrating Power    |
 | ---------------- | ---------------------------------- | -------------------------------------- | -------------------- |
-| Alpha decay      | $\alpha$ (${}^4_2\mathrm{He{}$)    | $Z$ decreases by 2, $A$ decreases by 4 | Low (paper)          |
-| Beta-minus decay | $\beta^-$ (${}^0_{-1}\mathrm{e{}$) | $Z$ increases by 1, $A$ unchanged      | Moderate (aluminium) |
+| Alpha decay      | $\alpha$ ($^4_2\mathrm{He$)    | $Z$ decreases by 2, $A$ decreases by 4 | Low (paper)          |
+| Beta-minus decay | $\beta^-$ ($^0_{-1}\mathrm{e$) | $Z$ increases by 1, $A$ unchanged      | Moderate (aluminium) |
 | Gamma decay      | $\gamma$                           | No change in $Z$ or $A$                | High (lead/concrete) |
 
 **Alpha decay** occurs mainly in heavy nuclei ($A \gt 150$). The emitted alpha particle is a
 Helium-4 nucleus. Example:
-${}^{238}_{92}\mathrm{U{} \to {}^{234}_{90}\mathrm{Th{} + {}^4_2\mathrm{He{}$.
+$^{238}_{92}\mathrm{U \to ^{234}_{90}\mathrm{Th + ^4_2\mathrm{He$.
 
 **Beta-minus decay** occurs when a neutron converts to a proton, emitting an electron and an
 Antineutrino: $n \to p + e^- + \bar{\nu}_e$. This process is mediated by the weak nuclear force.
-Example: ${}^{14}_{6}\mathrm{C{} \to {}^{14}_{7}\mathrm{N{} + {}^0_{-1}\mathrm{e{} + \bar{\nu}_e$.
+Example: $^{14}_{6}\mathrm{C \to ^{14}_{7}\mathrm{N + ^0_{-1}\mathrm{e + \bar{\nu}_e$.
 
 **Gamma decay** occurs when a nucleus in an excited state emits a high-energy photon to reach a
 Lower energy state. The nucleus remains the same isotope; only its energy changes.
@@ -683,7 +683,7 @@ $$
 A = \lambda N = -\frac{dN}{dt}
 $$
 
-Activity is measured in becquerels (Bq), where $1\mathrm{ Bq{} = 1\mathrm{ decay/s{}$.
+Activity is measured in becquerels (Bq), where $1\mathrm{ Bq = 1\mathrm{ decay/s$.
 
 ### Derivation of the Exponential Decay Law
 
@@ -731,14 +731,14 @@ So $1/8$ of the original sample remains.
 **Example (HL):** Cobalt-60 has a half-life of 5.27 years. Find its decay constant.
 
 $$
-\lambda = \frac{\ln 2}{5.27} = 0.1315\mathrm{ yr{}^{-1}
+\lambda = \frac{\ln 2}{5.27} = 0.1315\mathrm{ yr^{-1}
 $$
 
-**Example (HL):** A sample of iodine-131 ($t_{1/2} = 8.02\mathrm{ days{}$) initially has an activity
-of $400\mathrm{ Bq{}$. Find the activity after 30 days.
+**Example (HL):** A sample of iodine-131 ($t_{1/2} = 8.02\mathrm{ days$) initially has an activity
+of $400\mathrm{ Bq$. Find the activity after 30 days.
 
 $$
-A = A_0 e^{-\lambda t} = 400 \times e^{-\frac{\ln 2}{8.02} \times 30} = 400 \times e^{-2.59} = 400 \times 0.0749 = 30.0\mathrm{ Bq{}
+A = A_0 e^{-\lambda t} = 400 \times e^{-\frac{\ln 2}{8.02} \times 30} = 400 \times e^{-2.59} = 400 \times 0.0749 = 30.0\mathrm{ Bq
 $$
 
 ### Nuclear Reactions (HL)
@@ -749,7 +749,7 @@ Products include two (or sometimes three) lighter nuclei, additional neutrons (w
 Chain reaction), and energy.
 
 $$
-{}^{235}_{92}\mathrm{U{} + {}^1_0\mathrm{n{} \to {}^{141}_{56}\mathrm{Ba{} + {}^{92}_{36}\mathrm{Kr{} + 3{}^1_0\mathrm{n{} + \mathrm{energy{}
+^{235}_{92}\mathrm{U + ^1_0\mathrm{n \to ^{141}_{56}\mathrm{Ba + ^{92}_{36}\mathrm{Kr + 3^1_0\mathrm{n + \mathrm{energy
 $$
 
 The released neutrons can induce further fission events, creating a **chain reaction**. In a nuclear
@@ -761,24 +761,24 @@ Out.
 
 **Fusion:** Light nuclei combine to form a heavier nucleus, releasing energy because the product has
 Higher binding energy per nucleon. Fusion requires extremely high temperatures
-($\sim 10^7\mathrm{ K{}$) to overcome the Coulomb repulsion between the positively charged nuclei.
+($\sim 10^7\mathrm{ K$) to overcome the Coulomb repulsion between the positively charged nuclei.
 
 $$
-{}^2_1\mathrm{H{} + {}^3_1\mathrm{H{} \to {}^4_2\mathrm{He{} + {}^1_0\mathrm{n{} + \mathrm{energy{}
+^2_1\mathrm{H + ^3_1\mathrm{H \to ^4_2\mathrm{He + ^1_0\mathrm{n + \mathrm{energy
 $$
 
 Fusion is the process that powers stars. In the Sun, the proton-proton chain converts hydrogen to
-Helium, releasing approximately $26.7\mathrm{ MeV{}$ per helium-4 nucleus formed. Achieving
+Helium, releasing approximately $26.7\mathrm{ MeV$ per helium-4 nucleus formed. Achieving
 controlled Fusion on Earth remains an active area of research (e.g., tokamak reactors and laser
 fusion).
 
 ### Energy Released in Fission
 
-The energy released in a single fission event of U-235 is approximately $200\mathrm{ MeV{}$. This
+The energy released in a single fission event of U-235 is approximately $200\mathrm{ MeV$. This
 can Be estimated from the binding energy per nucleon: U-235 has about
-$7.6\mathrm{ MeV/nucleon{}$While The fission products have about $8.5\mathrm{ MeV/nucleon{}$. The
-difference of about $0.9\mathrm{ MeV/nucleon{}$ times 235 nucleons gives approximately
-$210\mathrm{ MeV{}$.
+$7.6\mathrm{ MeV/nucleon$While The fission products have about $8.5\mathrm{ MeV/nucleon$. The
+difference of about $0.9\mathrm{ MeV/nucleon$ times 235 nucleons gives approximately
+$210\mathrm{ MeV$.
 
 ### Background Radiation
 
@@ -817,11 +817,11 @@ We are constantly exposed to ionising radiation from natural and artificial sour
    half-lives elapsed. Do not confuse the number of half-lives with the time itself.
 5. **Alpha vs beta decay** -- alpha decreases $A$ by 4 and $Z$ by 2; beta-minus increases $Z$ by 1
    with no change in $A$.
-6. **Unit conversions** -- $1\mathrm{ eV{} = 1.6 \times 10^{-19}\mathrm{ J{}$. Always work in SI
+6. **Unit conversions** -- $1\mathrm{ eV = 1.6 \times 10^{-19}\mathrm{ J$. Always work in SI
    units (joules) for calculations involving $h$$c$And $m$And convert to eV at the end if needed.
 7. **Nuclear equations** -- always check conservation of $Z$ and $A$ on both sides.
 8. **De Broglie wavelength** -- use the relativistic momentum $p = \gamma mv$ for particles moving
-   at speeds approaching $c$. For electrons accelerated through less than about $10\mathrm{ kV{}$The
+   at speeds approaching $c$. For electrons accelerated through less than about $10\mathrm{ kV$The
    non-relativistic formula is accurate enough.
 
 ## Practice Questions
@@ -841,30 +841,30 @@ We are constantly exposed to ionising radiation from natural and artificial sour
 
 ### Higher Level
 
-1. Light of wavelength $300\mathrm{ nm{}$ is incident on a zinc surface
-   ($\phi = 3.63\mathrm{ eV{}$). Find the maximum kinetic energy of photoelectrons in eV. Will
+1. Light of wavelength $300\mathrm{ nm$ is incident on a zinc surface
+   ($\phi = 3.63\mathrm{ eV$). Find the maximum kinetic energy of photoelectrons in eV. Will
    photoelectrons be emitted?
-2. The work function of caesium is $1.95\mathrm{ eV{}$. Find the threshold frequency and threshold
-   wavelength. If light of wavelength $450\mathrm{ nm{}$ is incident on the surface, find the
+2. The work function of caesium is $1.95\mathrm{ eV$. Find the threshold frequency and threshold
+   wavelength. If light of wavelength $450\mathrm{ nm$ is incident on the surface, find the
    stopping voltage.
 3. Calculate the first three energy levels of hydrogen. Find the wavelength of the photon emitted
    for a transition from $n = 4$ to $n = 1$. In which spectral series does this line belong?
-4. Find the de Broglie wavelength of a neutron moving at $2 \times 10^4\mathrm{ m/s{}$
-   ($m_n = 1.675 \times 10^{-27}\mathrm{ kg{}$).
-5. The mass defect of helium-4 is $0.0304\mathrm{ u{}$ ($1\mathrm{ u{} = 931.5\mathrm{ MeV{}/c^2$).
+4. Find the de Broglie wavelength of a neutron moving at $2 \times 10^4\mathrm{ m/s$
+   ($m_n = 1.675 \times 10^{-27}\mathrm{ kg$).
+5. The mass defect of helium-4 is $0.0304\mathrm{ u$ ($1\mathrm{ u = 931.5\mathrm{ MeV/c^2$).
    Find the binding energy per nucleon.
-6. A sample of strontium-90 ($t_{1/2} = 28.8\mathrm{ years{}$) has an initial activity of
-   $1000\mathrm{ Bq{}$. Find the activity after 100 years and the time for the activity to fall to
-   $100\mathrm{ Bq{}$.
+6. A sample of strontium-90 ($t_{1/2} = 28.8\mathrm{ years$) has an initial activity of
+   $1000\mathrm{ Bq$. Find the activity after 100 years and the time for the activity to fall to
+   $100\mathrm{ Bq$.
 7. Carbon-14 has a half-life of 5730 years. A sample of ancient wood has a carbon-14 activity that
    is 25% of the activity of a living tree. Estimate the age of the wood.
 8. Explain why beta decay requires the existence of the neutrino. What conservation laws would be
    violated without it?
-9. A hydrogen atom absorbs a photon of wavelength $97.3\mathrm{ nm{}$. Determine the transition that
+9. A hydrogen atom absorbs a photon of wavelength $97.3\mathrm{ nm$. Determine the transition that
    occurred (initial and final energy levels).
-10. An electron is accelerated from rest through a potential difference of $200\mathrm{ V{}$. Find
+10. An electron is accelerated from rest through a potential difference of $200\mathrm{ V$. Find
     its de Broglie wavelength. Would this electron be suitable for diffraction by a crystal with
-    lattice spacing $0.25\mathrm{ nm{}$? Justify your answer.
+    lattice spacing $0.25\mathrm{ nm$? Justify your answer.
 
 ## Summary
 

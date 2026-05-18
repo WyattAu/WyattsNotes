@@ -266,9 +266,9 @@ Solve $\cos 2x = \cos x$ for $0 \le x \le \pi$.
 ### Worked Example: Vector Line Intersection (Topic 3, HL)
 
 Find the point of intersection of the lines
-$\mathbf{{'}r{}'}_1 = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} + \lambda\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$
+$\mathbf{r}_1 = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} + \lambda\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$
 and
-$\mathbf{{'}r{}'}_2 = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} + \mu\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$.
+$\mathbf{r}_2 = \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} + \mu\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}$.
 
 <details>
 <summary>Solution</summary>
@@ -438,7 +438,7 @@ If you get this wrong, revise: First and second derivative tests (Topic 5).
 - Let $y = \dfrac{3x + 2}{x - 1}$. Swap: $x = \dfrac{3y + 2}{y - 1}$.
 - $x(y - 1) = 3y + 2 \implies xy - x = 3y + 2 \implies xy - 3y = x + 2$
 - $y(x - 3) = x + 2 \implies f^{-1}(x) = \dfrac{x + 2}{x - 3}$
-- **Domain of $f^{-1}$:** $x \neq 3$ (i.e. $\mathbb{{'}R{}'} \setminus \\{3\\}$).
+- **Domain of $f^{-1}$:** $x \neq 3$ (i.e. $\mathbb{R} \setminus \\{3\\}$).
 
 If you get this wrong, revise: Finding inverse functions and domain restrictions (Topic 2).
 

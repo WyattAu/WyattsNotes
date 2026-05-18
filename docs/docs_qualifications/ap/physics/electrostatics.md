@@ -140,7 +140,7 @@ $$
 Gauss's law relates the electric flux through a closed surface to the enclosed charge:
 
 $$
-\oint_S \vec{E} \cdot d\vec{A} = \frac{Q_{\text{enc{}}}{\epsilon_0}
+\oint_S \vec{E} \cdot d\vec{A} = \frac{Q_{\text{enc}}{\epsilon_0}
 $$
 
 ### Choosing a Gaussian Surface
@@ -172,7 +172,7 @@ $$
 This is identical to a point charge.
 
 **Inside ($r < R$):** Only charge within radius $r$ is enclosed. If the charge density is uniform,
-$\rho = Q / (\tfrac{4}{3}\pi R^3)$So $Q_{\text{enc{}} = \rho \cdot \tfrac{4}{3}\pi r^3 = Q r^3/R^3$.
+$\rho = Q / (\tfrac{4}{3}\pi R^3)$So $Q_{\text{enc} = \rho \cdot \tfrac{4}{3}\pi r^3 = Q r^3/R^3$.
 
 $$
 E \cdot 4\pi r^2 = \frac{Qr^3}{\epsilon_0 R^3} \implies E = \frac{Qr}{4\pi\epsilon_0 R^3}
@@ -188,17 +188,17 @@ $$
 \oint \vec{E} \cdot d\vec{A} = E \cdot 2\pi r L = \frac{\lambda L}{\epsilon_0} \implies E = \frac{\lambda}{2\pi\epsilon_0 r}
 $$
 
-**Inside ($r < R$):** $Q_{\text{enc{}} = 0$So $E = 0$.
+**Inside ($r < R$):** $Q_{\text{enc} = 0$So $E = 0$.
 
 :::info[Example: Non-conducting sphere with non-uniform charge density]
 
 A sphere of radius $R$ has charge density $\rho(r) = \rho_0 (1 - r/R)$ for $0 \le r \le R$. Find $E$
 Inside and outside.
 
-$Q_{\text{enc{}}(r) = \int_0^r \rho(r') \cdot 4\pi r'^2\, dr' = 4\pi\rho_0 \int_0^r \left(r'^2 - \frac{r'^3}{R}\right) dr'$
+$Q_{\text{enc}(r) = \int_0^r \rho(r') \cdot 4\pi r'^2\, dr' = 4\pi\rho_0 \int_0^r \left(r'^2 - \frac{r'^3}{R}\right) dr'$
 
 $$
-Q_{\text{enc{}}(r) = 4\pi\rho_0 \left[\frac{r^3}{3} - \frac{r^4}{4R}\right]
+Q_{\text{enc}(r) = 4\pi\rho_0 \left[\frac{r^3}{3} - \frac{r^4}{4R}\right]
 $$
 
 Inside ($r \le R$):
@@ -208,7 +208,7 @@ E = \frac{\rho_0}{\epsilon_0}\left(\frac{r}{3} - \frac{r^2}{4R}\right)
 $$
 
 Outside ($r > R$): First find
-$Q_{\text{total{}} = 4\pi\rho_0 [R^3/3 - R^3/4] = 4\pi\rho_0 R^3/12 = \pi\rho_0 R^3/3$.
+$Q_{\text{total} = 4\pi\rho_0 [R^3/3 - R^3/4] = 4\pi\rho_0 R^3/12 = \pi\rho_0 R^3/3$.
 
 $$
 E = \frac{\pi\rho_0 R^3}{12\epsilon_0 r^2}
@@ -364,13 +364,13 @@ $$
 U_E = \frac{1}{2}\epsilon_0 E^2
 $$
 
-For a parallel plate capacitor: $U = \frac{1}{2}\epsilon_0 E^2 \cdot Ad = u_E \cdot \text{volume{}$.
+For a parallel plate capacitor: $U = \frac{1}{2}\epsilon_0 E^2 \cdot Ad = u_E \cdot \text{volume$.
 
 ### Capacitors in Combination
 
-**Series:** $\dfrac{1}{C_{\text{eq{}}} = \sum \dfrac{1}{C_i}$
+**Series:** $\dfrac{1}{C_{\text{eq}} = \sum \dfrac{1}{C_i}$
 
-**Parallel:** $C_{\text{eq{}} = \sum C_i$
+**Parallel:** $C_{\text{eq} = \sum C_i$
 
 ## Dielectrics
 
@@ -405,7 +405,7 @@ $$
 Gauss's law for $\vec{D}$:
 
 $$
-\oint \vec{D} \cdot d\vec{A} = Q_{\text{free, enc{}}
+\oint \vec{D} \cdot d\vec{A} = Q_{\text{free, enc}
 $$
 
 :::info[Example: Parallel plate capacitor with partial dielectric]
@@ -449,10 +449,10 @@ $$
 
 ## Practice Questions
 
-1. Three point charges $q_1 = 2\,\mu\text{C{}$$q_2 = -3\,\mu\text{C{}$$q_3 = 4\,\mu\text{C{}$ are
+1. Three point charges $q_1 = 2\,\mu\text{C$$q_2 = -3\,\mu\text{C$$q_3 = 4\,\mu\text{C$ are
    placed at the corners of an equilateral triangle of side 0.5 m. Find the net force on $q_1$.
 
-2. A uniformly charged rod of length $L = 2$ m carries charge $Q = 8\,\mu\text{C{}$. Find the
+2. A uniformly charged rod of length $L = 2$ m carries charge $Q = 8\,\mu\text{C$. Find the
    electric field at a point 1 m from one end along the perpendicular bisector of the rod.
 
 3. A solid insulating sphere of radius $R = 0.1$ m has charge density $\rho = 10^{-6}$ C/m$^3$. Find
@@ -464,7 +464,7 @@ $$
 5. A spherical capacitor has inner radius 2 cm and outer radius 5 cm. The space between is filled
    with a dielectric of $\kappa = 3$. Find the capacitance.
 
-6. A parallel plate capacitor with $C = 10\,\mu\text{F{}$ is charged to $100$ V. A dielectric with
+6. A parallel plate capacitor with $C = 10\,\mu\text{F$ is charged to $100$ V. A dielectric with
    $\kappa = 4$ is inserted while the battery remains connected. Find the new charge on the plates
    and the change in stored energy.
 
@@ -472,7 +472,7 @@ $$
    $b$ and outer radius $c$. The inner sphere has charge $+Q$ and the outer shell has charge $-2Q$.
    Find the electric field in all regions and the potential at $r = a$.
 
-8. Calculate the work required to bring four charges of $+1\,\mu\text{C{}$ from infinity to the
+8. Calculate the work required to bring four charges of $+1\,\mu\text{C$ from infinity to the
    corners of a square of side 1 m.
 
 <details>
@@ -489,15 +489,15 @@ cylinder.
 
 (a) Inside ($r < R$): Use a cylindrical Gaussian surface of radius $r$ and length $L$.
 
-$$Q_{\text{enc{}} = \int_0^r \rho(r') \cdot 2\pi r' L\, dr' = \frac{2\pi \rho_0 L}{R} \int_0^r r'^2\, dr' = \frac{2\pi \rho_0 L r^3}{3R}$$
+$$Q_{\text{enc} = \int_0^r \rho(r') \cdot 2\pi r' L\, dr' = \frac{2\pi \rho_0 L}{R} \int_0^r r'^2\, dr' = \frac{2\pi \rho_0 L r^3}{3R}$$
 
-$$E \cdot 2\pi r L = \frac{Q_{\text{enc{}}}{\epsilon_0} = \frac{2\pi \rho_0 r^3 L}{3R\epsilon_0}$$
+$$E \cdot 2\pi r L = \frac{Q_{\text{enc}}{\epsilon_0} = \frac{2\pi \rho_0 r^3 L}{3R\epsilon_0}$$
 
 $$E = \frac{\rho_0 r^2}{3R\epsilon_0}$$
 
 (b) Outside ($r > R$):
 
-$$Q_{\text{total{}} = \frac{2\pi \rho_0 R^3 L}{3R} = \frac{2\pi \rho_0 R^2 L}{3}$$
+$$Q_{\text{total} = \frac{2\pi \rho_0 R^3 L}{3R} = \frac{2\pi \rho_0 R^2 L}{3}$$
 
 $$E \cdot 2\pi r L = \frac{2\pi \rho_0 R^2 L}{3\epsilon_0}$$
 

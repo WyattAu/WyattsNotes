@@ -40,7 +40,7 @@ Where $F'(x) = f(x)$ and $C$ is the constant of integration. The symbol $\int$ i
 ### Definition
 
 A function $F$ is an antiderivative of $f$ on an interval $I$ if $F'(x) = f(x)$ for all $x \in I$.
-If $F$ is an antiderivative of $f$Then so is $F + C$ for any constant $C \in \mathbb{{'}R{}'}$.
+If $F$ is an antiderivative of $f$Then so is $F + C$ for any constant $C \in \mathbb{R}$.
 
 ### Basic Rules
 
@@ -54,7 +54,7 @@ $$
 
 #### Constant Multiple Rule
 
-For $k \in \mathbb{{'}R{}'}$:
+For $k \in \mathbb{R}$:
 
 $$
 \int k f(x)\,dx = k \int f(x)\,dx
@@ -552,7 +552,7 @@ $$
 \int_a^b [k f(x) + l g(x)]\,dx = k\int_a^b f(x)\,dx + l\int_a^b g(x)\,dx
 $$
 
-For constants $k, l \in \mathbb{{'}R{}'}$.
+For constants $k, l \in \mathbb{R}$.
 
 ### Reversal of Limits
 

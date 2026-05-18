@@ -334,12 +334,12 @@ Applies.
 - The **universal quantifier** "for all" (symbol $\forall$) asserts that a property holds for every
   element in a set.
 - Example: "For all integers $n$$n + 0 = n$."
-- In symbols: $\forall n \in \mathbb{{'}Z{}'},\; n + 0 = n$.
+- In symbols: $\forall n \in \mathbb{Z},\; n + 0 = n$.
 
 - The **existential quantifier** "there exists" (symbol $\exists$) asserts that a property holds for
   at least one element in a set.
 - Example: "There exists an integer $n$ such that $n^2 = 4$."
-- In symbols: $\exists n \in \mathbb{{'}Z{}'},\; n^2 = 4$.
+- In symbols: $\exists n \in \mathbb{Z},\; n^2 = 4$.
 
 A useful mnemonic: $\forall$ is an **upside-down A** (for "All"); $\exists$ is a **backwards E**
 (for "Exists").

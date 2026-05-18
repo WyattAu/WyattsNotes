@@ -2074,8 +2074,8 @@ prices, driven by structural shifts in global demand.
 During a super-cycle upswing:
 
 $$
-\text{ToT improve} \implies \text{Higher export revenue} \implies \text{{'}Higher government
-savings{}'} \implies \text{Higher investment}
+\text{ToT improve} \implies \text{Higher export revenue} \implies \text{Higher government
+savings} \implies \text{Higher investment}
 $$
 
 During a super-cycle downswing:

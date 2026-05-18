@@ -522,7 +522,7 @@ $$
 \end`\{aligned}`
 $$
 
-Where $n \in \mathbb{{'}Z{}'}$.
+Where $n \in \mathbb{Z}$.
 
 ### Worked Example: Basic Trig Equation
 
@@ -594,7 +594,7 @@ $$
 **Solution:**
 
 Since $\tan$ has period $\pi$$\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ for
-$n \in \mathbb{{'}Z{}'}$.
+$n \in \mathbb{Z}$.
 
 $$
 X = \frac{\pi}{8} + \frac{n\pi}{2}

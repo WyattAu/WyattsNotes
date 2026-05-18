@@ -139,9 +139,9 @@ The systematic approach:
 
 ## Nuclear Magnetic Resonance (NMR) Spectroscopy
 
-### Proton (${}^1\mathrm{H}$) NMR
+### Proton ($^1\mathrm{H}$) NMR
 
-${}^1\mathrm{H}$ NMR provides information about the hydrogen environments in a molecule. Each
+$^1\mathrm{H}$ NMR provides information about the hydrogen environments in a molecule. Each
 Chemically distinct hydrogen environment produces a separate signal.
 
 **Chemical shift ($\delta$):** Measured in parts per million (ppm) relative to tetramethylsilane
@@ -170,7 +170,7 @@ Producing that signal. Modern NMR spectrometers display the integration as a ste
 Peaks.
 
 **Spin-spin coupling (splitting):** Non-equivalent protons on adjacent carbons ( separated By three
-bonds, ${}^3J$ coupling) split each other's signals. The splitting pattern follows the $n+1$ rule: a
+bonds, $^3J$ coupling) split each other's signals. The splitting pattern follows the $n+1$ rule: a
 signal is split into $n+1$ peaks, where $n$ is the number of equivalent neighbouring Protons.
 
 | Neighbours ($n$) | Splitting | Peaks |
@@ -185,14 +185,14 @@ The coupling constant $J$ (in Hz) is the spacing between adjacent peaks in a mul
 Are chemically equivalent do not couple to each other. The OH proton in alcohols and the NH proton
 In amines often appear as broad singlets because of rapid proton exchange with trace water.
 
-### Carbon-13 (${}^{13}\mathrm{C}$) NMR
+### Carbon-13 ($^{13}\mathrm{C}$) NMR
 
-${}^{13}\mathrm{C}$ NMR detects carbon environments:
+$^{13}\mathrm{C}$ NMR detects carbon environments:
 
-- Natural abundance of ${}^{13}\mathrm{C}$ is only 1.1% (the vast majority is ${}^{12}\mathrm{C}$
+- Natural abundance of $^{13}\mathrm{C}$ is only 1.1% (the vast majority is $^{12}\mathrm{C}$
   which is NMR-inactive), so signals are weak.
 - **Proton-decoupled spectra:** Protons are simultaneously irradiated to remove all
-  ${}^{13}\mathrm{C}\mathrm{-}{}^1\mathrm{H}$ coupling. Each carbon environment gives a single peak
+  $^{13}\mathrm{C}\mathrm{-}^1\mathrm{H}$ coupling. Each carbon environment gives a single peak
   (no splitting).
 - Chemical shift range: $0$--$220\,\mathrm{ppm}$.
 - Carbonyl carbons ($\mathrm{C}=0$) appear at $160$--$220\,\mathrm{ppm}$.
@@ -357,10 +357,10 @@ The systematic approach to identifying an unknown organic compound:
 2. **Identify functional groups** from the IR spectrum (C=O, O--H, N--H, C=C,
    $\mathrm{C}\equiv\mathrm{N}$).
 
-3. **Determine the carbon skeleton** from the ${}^{13}\mathrm{C}$ NMR (number of carbon
+3. **Determine the carbon skeleton** from the $^{13}\mathrm{C}$ NMR (number of carbon
    environments, presence of carbonyl, aromatic, or alkene carbons).
 
-4. **Determine the hydrogen environments** from the ${}^1\mathrm{H}$ NMR (chemical shift,
+4. **Determine the hydrogen environments** from the $^1\mathrm{H}$ NMR (chemical shift,
    integration, splitting pattern). Piece together the connectivity.
 
 5. **Confirm the structure** by checking that the fragmentation pattern in the mass spectrum is
@@ -374,12 +374,12 @@ The systematic approach to identifying an unknown organic compound:
    that the $m/z$ value is consistent with the expected molecular mass and that isotopic patterns
    match the expected composition.
 
-2. **Counting signals vs protons in NMR.** The number of signals in ${}^1\mathrm{H}$ NMR equals the
+2. **Counting signals vs protons in NMR.** The number of signals in $^1\mathrm{H}$ NMR equals the
    number of hydrogen environments, not the number of protons. Integration gives the ratio of
    protons in each environment.
 
 3. **Ignoring coupling through more than three bonds.** , only protons on adjacent carbons
-   (three-bond coupling, ${}^3J$) split each other. Protons separated by four or more bonds do not
+   (three-bond coupling, $^3J$) split each other. Protons separated by four or more bonds do not
    show observable coupling.
 
 4. **Confusing IR absorption positions.** Memorise the key ranges: O--H
@@ -393,9 +393,9 @@ The systematic approach to identifying an unknown organic compound:
    sample causes OH and NH signals to disappear (exchange with deuterium) and a new signal for HOD
    appears. This is a useful diagnostic for identifying exchangeable protons.
 
-7. **Assuming ${}^{13}\mathrm{C}$ NMR integration is meaningful.** The peak areas in
-   proton-decoupled ${}^{13}\mathrm{C}$ NMR are not proportional to the number of carbons.
-   Integration data from ${}^{13}\mathrm{C}$ NMR should not be used for quantitative analysis.
+7. **Assuming $^{13}\mathrm{C}$ NMR integration is meaningful.** The peak areas in
+   proton-decoupled $^{13}\mathrm{C}$ NMR are not proportional to the number of carbons.
+   Integration data from $^{13}\mathrm{C}$ NMR should not be used for quantitative analysis.
 
 8. **Misassigning equivalent protons.** Protons that are related by symmetry or rapid rotation are
    chemically equivalent and give one signal. For example, the three methyl protons of
@@ -404,7 +404,7 @@ The systematic approach to identifying an unknown organic compound:
 
 ## NMR Spectroscopy in Greater Depth
 
-### ${}^1\mathrm{H}$ NMR: Chemical Shift Reference Table
+### $^1\mathrm{H}$ NMR: Chemical Shift Reference Table
 
 | Proton environment                    | $\delta$ range (ppm)    | Example                                  |
 | ------------------------------------- | ----------------------- | ---------------------------------------- |
@@ -437,15 +437,15 @@ protons are neighbours.
 
 | Coupling type                 | Typical $J$ (Hz)         |
 | ----------------------------- | ------------------------ |
-| Vicinal (geminal, ${}^2J$)    | $0$--$20$                |
-| Vicinal (three-bond, ${}^3J$) | $6$--$8$ (free rotation) |
+| Vicinal (geminal, $^2J$)    | $0$--$20$                |
+| Vicinal (three-bond, $^3J$) | $6$--$8$ (free rotation) |
 | Vicinal (alkene trans)        | $12$--$18$               |
 | Vicinal (alkene cis)          | $6$--$12$                |
 | Aromatic (ortho)              | $6$--$10$                |
 | Aromatic (meta)               | $1$--$3$                 |
 | Aromatic (para)               | $0$--$1$                 |
 
-### ${}^{13}\mathrm{C}$ NMR
+### $^{13}\mathrm{C}$ NMR
 
 - The chemical shift range is $0$--$220\,\mathrm{ppm}$.
 - Proton-decoupled spectra show one peak per carbon environment (no splitting).
@@ -465,18 +465,18 @@ An unknown compound has the following data:
 
 - Molecular formula: $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$
 - IR: $1740\,\mathrm{cm}^{-1}$ (strong), $2980\,\mathrm{cm}^{-1}$ (strong), no broad O--H
-- ${}^1\mathrm{H}$ NMR: $\delta\, 1.3$ (triplet, 3H), $\delta\, 2.0$ (singlet, 3H), $\delta\, 4.1$
+- $^1\mathrm{H}$ NMR: $\delta\, 1.3$ (triplet, 3H), $\delta\, 2.0$ (singlet, 3H), $\delta\, 4.1$
   (quartet, 2H)
-- ${}^{13}\mathrm{C}$ NMR: 4 peaks at $\delta\, 14$$21$$60$$171$
+- $^{13}\mathrm{C}$ NMR: 4 peaks at $\delta\, 14$$21$$60$$171$
 
 **Analysis:**
 
 1. Degree of unsaturation from $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$:
    $\text{DoU} = \frac{2(4) + 2 - 8}{2} = 1$. One double bond or ring.
 2. IR: $1740\,\mathrm{cm}^{-1}$ = C=O (ester), no broad O--H (not a carboxylic acid).
-3. ${}^{13}\mathrm{C}$ NMR: peak at 171 = carbonyl carbon (ester). Peak at 60 =
+3. $^{13}\mathrm{C}$ NMR: peak at 171 = carbonyl carbon (ester). Peak at 60 =
    $\mathrm{C}-\mathrm{O}$ (ester $\mathrm{CH}_2$). Peaks at 14 and 21 = two types of methyl.
-4. ${}^1\mathrm{H}$ NMR: quartet at 4.1 (2H) = $\mathrm{CH}_2$ adjacent to O. Triplet at 1.3 (3H) =
+4. $^1\mathrm{H}$ NMR: quartet at 4.1 (2H) = $\mathrm{CH}_2$ adjacent to O. Triplet at 1.3 (3H) =
    $\mathrm{CH}_3$ adjacent to $\mathrm{CH}_2$. Singlet at 2.0 (3H) = $\mathrm{CH}_3$ adjacent to
    carbonyl.
 
@@ -525,7 +525,7 @@ An unknown compound has the following analytical data:
 - Mass spectrum: molecular ion peak at $m/z = 88$Base peak at $m/z = 43$.
 - IR: strong absorption at $1700\,\mathrm{cm}^{-1}$Broad absorption at
   $2500$--$3300\,\mathrm{cm}^{-1}$.
-- ${}^1\mathrm{H}$ NMR: $\delta\, 1.2$ (triplet, 3H), $\delta\, 2.0$ (singlet, 3H), $\delta\, 2.3$
+- $^1\mathrm{H}$ NMR: $\delta\, 1.2$ (triplet, 3H), $\delta\, 2.0$ (singlet, 3H), $\delta\, 2.3$
   (quartet, 2H), $\delta\, 11.0$ (singlet, 1H).
 
 Identify the compound.
@@ -540,7 +540,7 @@ With one C=O).
 **IR:** $1700\,\mathrm{cm}^{-1}$ confirms C=O. Broad $2500$--$3300\,\mathrm{cm}^{-1}$ confirms
 Carboxylic acid O--H.
 
-**${}^1\mathrm{H}$ NMR:**
+**$^1\mathrm{H}$ NMR:**
 
 - $\delta\, 1.2$ (t, 3H): $-\mathrm{CH}_3$ adjacent to $-\mathrm{CH}_2-$.
 - $\delta\, 2.0$ (s, 3H): $-\mathrm{CH}_3$ adjacent to carbonyl ($-\mathrm{COCH}_3$).
@@ -581,7 +581,7 @@ Appears as a multiplet. The data given may represent a simplified spectrum.
 A compound with molecular formula $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ gives the following data:
 
 - IR: strong absorption at $1715\,\mathrm{cm}^{-1}$; no absorption above $3000\,\mathrm{cm}^{-1}$.
-- ${}^1\mathrm{H}$ NMR: $\delta\, 2.1$ (singlet, 3H), $\delta\, 2.5$ (singlet, 3H).
+- $^1\mathrm{H}$ NMR: $\delta\, 2.1$ (singlet, 3H), $\delta\, 2.5$ (singlet, 3H).
 - Mass spectrum: molecular ion at $m/z = 58$Base peak at $m/z = 43$.
 
 Identify the compound and explain each piece of evidence.
@@ -592,7 +592,7 @@ Identify the compound and explain each piece of evidence.
 $3000\,\mathrm{cm}^{-1}$ rules out O--H and N--H, eliminating alcohols, carboxylic acids, and
 amines. The compound is either an aldehyde or a ketone.
 
-**${}^1\mathrm{H}$ NMR:** Only two signals, both singlets, integrating to 3H each. No aldehyde
+**$^1\mathrm{H}$ NMR:** Only two signals, both singlets, integrating to 3H each. No aldehyde
 proton ($\delta\, 9\text{--}10$), so the compound is a ketone. Two methyl groups in different
 environments, each adjacent to the carbonyl (hence the low chemical shift of $\delta\, 2.1$ and
 $\delta\, 2.5$).
@@ -631,8 +631,8 @@ This problem illustrates the importance of cross-checking all data for consisten
 
 An unknown compound $\mathrm{C}_7\mathrm{H}_7\mathrm{Br}$ has the following NMR data:
 
-- ${}^1\mathrm{H}$ NMR: $\delta\, 2.3$ (s, 3H), $\delta\, 7.2$ (s, 2H), $\delta\, 7.4$ (d, 2H).
-- ${}^{13}\mathrm{C}$ NMR: 4 signals.
+- $^1\mathrm{H}$ NMR: $\delta\, 2.3$ (s, 3H), $\delta\, 7.2$ (s, 2H), $\delta\, 7.4$ (d, 2H).
+- $^{13}\mathrm{C}$ NMR: 4 signals.
 
 Identify the compound.
 
@@ -642,12 +642,12 @@ The molecular formula $\mathrm{C}_7\mathrm{H}_7\mathrm{Br}$ has a degree of unsa
 $2 - 7 + (7+1)/2 = 4$Strongly suggesting a benzene ring (one ring + three double bonds = 4 degrees
 of unsaturation).
 
-${}^1\mathrm{H}$ NMR: $\delta\, 2.3$ (s, 3H) is a methyl group attached to an aromatic ring
+$^1\mathrm{H}$ NMR: $\delta\, 2.3$ (s, 3H) is a methyl group attached to an aromatic ring
 ($\mathrm{Ar-CH}_3$). The signals at $\delta\, 7.2$ and $\delta\, 7.4$ are aromatic protons. The
 doublet at $\delta\, 7.4$ (2H) indicates a para-disubstituted pattern (two pairs of equivalent
 protons on the ring, each pair coupling to its neighbour).
 
-${}^{13}\mathrm{C}$ NMR: 4 signals. A benzene ring with two different substituents in para positions
+$^{13}\mathrm{C}$ NMR: 4 signals. A benzene ring with two different substituents in para positions
 would give 4 distinct carbon environments (2 pairs of equivalent aromatic carbons, plus the methyl
 carbon and the ipso carbon bonded to Br).
 
@@ -663,7 +663,7 @@ An unknown compound $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ gives the following dat
 
 - Mass spectrum: $M^+ = 58$Base peak at $m/z = 43$.
 - IR: $1715\,\mathrm{cm}^{-1}$ (strong), $3000\,\mathrm{cm}^{-1}$ (weak), no O--H.
-- ${}^1\mathrm{H}$ NMR: $\delta\, 1.1$ (d, 6H), $\delta\, 2.1$ (s, 3H), $\delta\, 2.5$ (septet, 1H).
+- $^1\mathrm{H}$ NMR: $\delta\, 1.1$ (d, 6H), $\delta\, 2.1$ (s, 3H), $\delta\, 2.5$ (septet, 1H).
 
 Identify the compound and explain each piece of data.
 
@@ -676,7 +676,7 @@ peak at 43 = $\mathrm{CH}_3\mathrm{CO}^+$ (acylium ion, common fragmentation of 
 **IR:** $1715\,\mathrm{cm}^{-1}$ = C=O (ketone). No broad O--H = not a carboxylic acid or alcohol.
 Weak band at $3000\,\mathrm{cm}^{-1}$ = C--H stretch.
 
-**${}^1\mathrm{H}$ NMR:**
+**$^1\mathrm{H}$ NMR:**
 
 - $\delta\, 2.1$ (s, 3H): $\mathrm{CH}_3$ adjacent to carbonyl (deshielded by the
   electron-withdrawing C=O).
@@ -785,13 +785,13 @@ Useful for comparison with reference spectra.
 
 ### NMR Spectroscopy: Advanced Interpretation
 
-**${}^1\mathrm{H}$ NMR Integration and Coupling:**
+**$^1\mathrm{H}$ NMR Integration and Coupling:**
 
 The area under each signal (integration) is proportional to the number of protons giving that
 signal. The n+1 rule predicts the splitting pattern: a proton signal is split into $n+1$ peaks by
 $n$ equivalent neighbouring protons.
 
-**Worked Example:** Analyse the ${}^1\mathrm{H}$ NMR spectrum of ethyl ethanoate
+**Worked Example:** Analyse the $^1\mathrm{H}$ NMR spectrum of ethyl ethanoate
 ($\mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3$).
 
 - $\delta\, 2.0$ (s, 3H): Methyl group directly attached to the carbonyl
@@ -805,9 +805,9 @@ $n$ equivalent neighbouring protons.
 - $\delta\, 1.3$ (t, 3H): $-\mathrm{CH}_3$ of the ethyl group. Triplet because it is coupled to the
   2 equivalent protons of the adjacent $-\mathrm{CH}_2-$ group ($n+1 = 2+1 = 3$).
 
-**${}^{13}\mathrm{C}$ NMR:**
+**$^{13}\mathrm{C}$ NMR:**
 
-${}^{13}\mathrm{C}$ NMR shows one signal for each chemically distinct carbon environment. The
+$^{13}\mathrm{C}$ NMR shows one signal for each chemically distinct carbon environment. The
 chemical shift range is $0$--$220\,\mathrm{ppm}$:
 
 | Carbon type           | Chemical shift (ppm) |
@@ -819,7 +819,7 @@ chemical shift range is $0$--$220\,\mathrm{ppm}$:
 | Aromatic C            | $110$--$160$         |
 | C=O (carbonyl)        | $160$--$220$         |
 
-**Worked Example:** The ${}^{13}\mathrm{C}$ NMR spectrum of ethyl ethanoate shows four signals:
+**Worked Example:** The $^{13}\mathrm{C}$ NMR spectrum of ethyl ethanoate shows four signals:
 $\delta\, 170$ (C=O), $\delta\, 60$ ($\mathrm{CH}_2\mathrm{O}$), $\delta\, 21$
 ($\mathrm{CH}_3\mathrm{CO}$), $\delta\, 14$ ($\mathrm{CH}_3$). Four signals correspond to four
 distinct carbon environments.
@@ -866,7 +866,7 @@ An unknown compound has the following spectroscopic data:
 - Molecular formula: $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$
 - IR: strong absorption at $1740\,\mathrm{cm}^{-1}$; broad absorption at
   $2500$--$3300\,\mathrm{cm}^{-1}$
-- ${}^1\mathrm{H}$ NMR: $\delta\, 11.0$ (s, 1H), $\delta\, 2.3$ (q, 2H), $\delta\, 1.1$ (t, 3H)
+- $^1\mathrm{H}$ NMR: $\delta\, 11.0$ (s, 1H), $\delta\, 2.3$ (q, 2H), $\delta\, 1.1$ (t, 3H)
 
 Identify the compound.
 
@@ -906,7 +906,7 @@ An organic compound $\mathrm{C}_7\mathrm{H}_8$ shows the following data:
 - Mass spec: M+ at $m/z = 92$ (base peak), M+1 at 7.7%, significant fragment at $m/z = 91$
 - IR: absorption at $3030\,\mathrm{cm}^{-1}$$1600$ and $1500\,\mathrm{cm}^{-1}$No absorption above
   $3100\,\mathrm{cm}^{-1}$
-- ${}^1\mathrm{H}$ NMR: $\delta\, 7.2$ (m, 5H), $\delta\, 2.3$ (s, 3H)
+- $^1\mathrm{H}$ NMR: $\delta\, 7.2$ (m, 5H), $\delta\, 2.3$ (s, 3H)
 
 Identify the compound.
 
@@ -952,7 +952,7 @@ completion.
 <details>
 <summary>Q2 (6 marks)</summary>
 
-The ${}^1\mathrm{H}$ NMR spectrum of a compound $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ shows three
+The $^1\mathrm{H}$ NMR spectrum of a compound $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ shows three
 signals: a triplet at $\delta\, 1.0$ (3H), a sextet at $\delta\, 2.4$ (2H), and a triplet at
 $\delta\, 9.8$ (1H). The IR spectrum shows a strong absorption at $1730\,\mathrm{cm}^{-1}$ and a
 weak pair at $2720$ and $2820\,\mathrm{cm}^{-1}$.

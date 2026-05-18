@@ -329,7 +329,7 @@ $$
 Where the **binomial coefficient** is:
 
 $$
-\binom{n}{k} = \frac{n!}{k!(n-k)!} = {}^nC_k
+\binom{n}{k} = \frac{n!}{k!(n-k)!} = ^nC_k
 $$
 
 ### Special Cases
@@ -394,7 +394,7 @@ Coefficient $= \dbinom{7}{3} \cdot 2^4 \cdot 3^3 = 35 \times 16 \times 27 = 1512
 
 ### Binomial Expansion for Negative or Fractional Powers
 
-For $|x| \lt 1$ and $n \in \mathbb{{'}Q{}'}$:
+For $|x| \lt 1$ and $n \in \mathbb{Q}$:
 
 $$
 (1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots

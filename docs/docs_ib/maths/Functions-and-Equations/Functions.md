@@ -215,7 +215,7 @@ Restricted.
 
 :::info[Example]
 
-$f(x) = x^2$ is not one-to-one on $\mathbb{{'}R{}'}$But $f: [0, \infty) \to [0, \infty)$ defined by
+$f(x) = x^2$ is not one-to-one on $\mathbb{R}$But $f: [0, \infty) \to [0, \infty)$ defined by
 $f(x) = x^2$ has inverse $f^{-1}(x) = \sqrt{x}$.
 
 :::
@@ -824,7 +824,7 @@ Continuous at $x = 2$.
 ### Question 6 (Paper 2 style)
 
 The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for
-$x \in \mathbb{{'}R{}'}$$x \neq 1$.
+$x \in \mathbb{R}$$x \neq 1$.
 
 **(a)** Find the inverse function $f^{-1}$.
 

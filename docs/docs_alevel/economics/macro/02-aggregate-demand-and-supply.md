@@ -208,7 +208,7 @@ From the SRAS equation $Y = Y^* + \alpha(P - P^e)$If expected prices $P^e$ rise 
 
 $$Y_{new} = Y^* + \alpha(P - (P^e + \Delta P^e)) = Y^* + \alpha(P - P^e) - \alpha \Delta P^e$$
 
-$$\Delta Y = -\alpha \Delta P^e \lt{} 0$$
+$$\Delta Y = -\alpha \Delta P^e \lt 0$$
 
 So an increase in expected inflation shifts SRAS left by $\alpha \cdot \Delta P^e$. This explains
 Why **inflation expectations are self-fulfilling**: if firms and workers expect higher prices, they

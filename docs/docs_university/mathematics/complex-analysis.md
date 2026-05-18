@@ -16,13 +16,13 @@ slug: complex-analysis
 
 ### 1.1 Definition and Arithmetic
 
-A **complex number** is $z = a + bi$ where $a, b \in \mathbb{{'}R{}'}$ and $i^2 = -1$. We call
-$a = \mathrm{Re{}(z)$ the real part and $b = \mathrm{Im{}(z)$ the imaginary part.
+A **complex number** is $z = a + bi$ where $a, b \in \mathbb{R}$ and $i^2 = -1$. We call
+$a = \mathrm{Re(z)$ the real part and $b = \mathrm{Im(z)$ the imaginary part.
 
 **Arithmetic:** $(a + bi) + (c + di) = (a + c) + (b + d)i$ and
 $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$.
 
-**Proposition 1.1 (Properties of Complex Arithmetic).** For all $z, w \in \mathbb{{'}C{}'}$:
+**Proposition 1.1 (Properties of Complex Arithmetic).** For all $z, w \in \mathbb{C}$:
 
 1. $z + w = w + z$ and $zw = wz$ (commutativity)
 2. $(z + w) + u = z + (w + u)$ and $(zw)u = z(wu)$ (associativity)
@@ -30,24 +30,24 @@ $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$.
 4. There exist additive identity $0$ and multiplicative identity $1$.
 5. Every $z \neq 0$ has a multiplicative inverse $\frac{1}{z} = \frac{\bar{z}}{|z|^2}$.
 
-_Remark._ The complex field $\mathbb{{'}C{}'}$ cannot be ordered: there is no total ordering on
-$\mathbb{{'}C{}'}$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any
+_Remark._ The complex field $\mathbb{C}$ cannot be ordered: there is no total ordering on
+$\mathbb{C}$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any
 such ordering.
 
 ### 1.2 The Complex Conjugate and Modulus
 
 **Definition.** The **complex conjugate** of $z = a + bi$ is $\bar{z} = a - bi$.
 
-**Proposition 1.2.** For all $z, w \in \mathbb{{'}C{}'}$:
+**Proposition 1.2.** For all $z, w \in \mathbb{C}$:
 
 1. $\overline{z + w} = \bar{z} + \bar{w}$ and $\overline{zw} = \bar{z}\bar{w}$
 2. $z\bar{z} = |z|^2$
-3. $z + \bar{z} = 2\,\mathrm{Re{}(z)$ and $z - \bar{z} = 2i\,\mathrm{Im{}(z)$
+3. $z + \bar{z} = 2\,\mathrm{Re(z)$ and $z - \bar{z} = 2i\,\mathrm{Im(z)$
 4. $\bar{\bar{z}} = z$
 
 **Definition.** The **modulus** (or absolute value) of $z = a + bi$ is $|z| = \sqrt{a^2 + b^2}$.
 
-**Proposition 1.3 (Modulus Properties).** For all $z, w \in \mathbb{{'}C{}'}$:
+**Proposition 1.3 (Modulus Properties).** For all $z, w \in \mathbb{C}$:
 
 1. $|z| \geq 0$ with equality iff $z = 0$
 2. $|zw| = |z||w|$
@@ -56,8 +56,8 @@ such ordering.
 
 _Proof of (3)._
 $|z + w|^2 = (z + w)(\bar{z} + \bar{w}) = |z|^2 + z\bar{w} + \bar{z}w + |w|^2
-= |z|^2 + 2\,\mathrm{Re{}(z\bar{w}) + |w|^2 \leq |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2$.
-The inequality follows from $\mathrm{Re{}(z\bar{w}) \leq |z\bar{w}| = |z||w|$. $\blacksquare$
+= |z|^2 + 2\,\mathrm{Re(z\bar{w}) + |w|^2 \leq |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2$.
+The inequality follows from $\mathrm{Re(z\bar{w}) \leq |z\bar{w}| = |z||w|$. $\blacksquare$
 
 ### 1.3 Polar Form
 
@@ -67,9 +67,9 @@ $$z = r(\cos\theta + i\sin\theta) = re^{i\theta}$$
 
 Where $r = |z| = \sqrt{a^2 + b^2}$ is the **modulus** and $\theta = \arg(z)$ is the **argument**.
 
-**Definition.** The **principal argument** $\mathrm{Arg{}(z)$ is the unique $\theta \in (-\pi, \pi]$
+**Definition.** The **principal argument** $\mathrm{Arg(z)$ is the unique $\theta \in (-\pi, \pi]$
 Such that $z = |z|e^{i\theta}$. The **argument** $\arg(z)$ is multi-valued:
-$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{{'}Z{}'}$.
+$\arg(z) = \mathrm{Arg(z) + 2\pi k$ for $k \in \mathbb{Z}$.
 
 **Proposition 1.4.** If $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$Then
 $z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$ and
@@ -84,7 +84,7 @@ $z_1/z_2 = (r_1/r_2)\, e^{i(\theta_1 - \theta_2)}$.
 
 $|z| = \sqrt{(-1)^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
 
-$\mathrm{Re{}(z) = -1 \lt{} 0$ and $\mathrm{Im{}(z) = \sqrt{3} \gt{} 0$So $z$ is in the second
+$\mathrm{Re(z) = -1 \lt 0$ and $\mathrm{Im(z) = \sqrt{3} \gt 0$So $z$ is in the second
 quadrant.
 
 $\theta = \arctan\!\left(\frac{\sqrt{3}}{-1}\right) = \frac{2\pi}{3}$ (adjusting to second
@@ -92,7 +92,7 @@ quadrant).
 
 Polar form: $z = 2\,e^{2\pi i/3}$.
 
-All arguments: $\arg(z) = \frac{2\pi}{3} + 2\pi k$ for $k \in \mathbb{{'}Z{}'}$.
+All arguments: $\arg(z) = \frac{2\pi}{3} + 2\pi k$ for $k \in \mathbb{Z}$.
 
 **Problem.** Convert $z = 3e^{-i\pi/4}$ to rectangular form.
 
@@ -122,7 +122,7 @@ $$(\cos\theta + i\sin\theta)^n = \cos(n\theta) + i\sin(n\theta)$$
 **Proposition 1.5.** De Moivre's theorem holds for all integers $n$Including negative values.
 
 _Proof._ For $n \geq 0$It follows by induction from the multiplication law
-$e^{i\alpha}e^{i\beta} = e^{i(\alpha + \beta)}$. For $n \lt{} 0$Write $n = -m$ with $m \gt{} 0$:
+$e^{i\alpha}e^{i\beta} = e^{i(\alpha + \beta)}$. For $n \lt 0$Write $n = -m$ with $m \gt 0$:
 $(\cos\theta + i\sin\theta)^n = \frac{1}{(\cos\theta + i\sin\theta)^m}
 = \frac{1}{\cos(m\theta) + i\sin(m\theta)} = \cos(-m\theta) + i\sin(-m\theta) = \cos(n\theta) + i\sin(n\theta)$.
 $\blacksquare$
@@ -153,7 +153,7 @@ $= 16\cos^5\theta - 20\cos^3\theta + 5\cos\theta$.
 
 **Problem.** Show that
 $\sum_{k=0}^{n-1} \cos(k\theta) = \frac{\sin(n\theta/2)}{\sin(\theta/2)}\cos\!\left(\frac{(n-1)\theta}{2}\right)$
-For $\theta \notin 2\pi\mathbb{{'}Z{}'}$.
+For $\theta \notin 2\pi\mathbb{Z}$.
 
 Consider $S = \sum_{k=0}^{n-1} e^{ik\theta} = \frac{1 - e^{in\theta}}{1 - e^{i\theta}}$ (geometric
 series with $r = e^{i\theta} \neq 1$).
@@ -167,15 +167,15 @@ Taking real parts gives the result.
 
 ### 1.5 Roots of Complex Numbers
 
-**Definition.** An $n$-th root of $w \in \mathbb{{'}C{}'}$ is a complex number $z$ such that
+**Definition.** An $n$-th root of $w \in \mathbb{C}$ is a complex number $z$ such that
 $z^n = w$.
 
-**Proposition 1.6.** Every non-zero $w \in \mathbb{{'}C{}'}$ has exactly $n$ distinct $n$-th roots.
+**Proposition 1.6.** Every non-zero $w \in \mathbb{C}$ has exactly $n$ distinct $n$-th roots.
 If $w = \rho\, e^{i\phi}$Then
 
 $$z_k = \rho^{1/n}\, e^{i(\phi + 2\pi k)/n}, \quad k = 0, 1, \ldots, n - 1$$
 
-Where $\rho^{1/n} \gt{} 0$ is the positive real $n$-th root of $\rho$.
+Where $\rho^{1/n} \gt 0$ is the positive real $n$-th root of $\rho$.
 
 _Proof._ If $z^n = w$Write $z = r\,e^{i\theta}$. Then $r^n e^{in\theta} = \rho\, e^{i\phi}$ So
 $r = \rho^{1/n}$ and $n\theta = \phi + 2\pi k$. For $k = 0, 1, \ldots, n-1$ these give distinct
@@ -233,7 +233,7 @@ ratio $\omega$.
 
 ### 2.1 Complex Functions
 
-A **complex function** is a function $f : D \subseteq \mathbb{{'}C{}'} \to \mathbb{{'}C{}'}$. We can
+A **complex function** is a function $f : D \subseteq \mathbb{C} \to \mathbb{C}$. We can
 write $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued functions.
 
 **Example.** $f(z) = z^2 = (x + iy)^2 = (x^2 - y^2) + i(2xy)$. Here $u = x^2 - y^2$ and $v = 2xy$.
@@ -244,10 +244,10 @@ write $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued 
 
 ### 2.2 Limits and Continuity
 
-The limit $\lim_{z \to z_0} f(z) = L$ means: for every $\varepsilon \gt{} 0$There exists
-$\delta \gt{} 0$ Such that $0 \lt{} |z - z_0| \lt{} \delta$ implies $|f(z) - L| \lt{} \varepsilon$.
+The limit $\lim_{z \to z_0} f(z) = L$ means: for every $\varepsilon \gt 0$There exists
+$\delta \gt 0$ Such that $0 \lt |z - z_0| \lt \delta$ implies $|f(z) - L| \lt \varepsilon$.
 
-Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb{{'}C{}'}$. This makes
+Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb{C}$. This makes
 limits More restrictive.
 
 **Proposition 2.1.** $\lim_{z \to z_0} f(z) = L$ if and only if
@@ -278,7 +278,7 @@ zero). If we define $f(1) = 2$Then $f$ becomes continuous at $z = 1$.
 
 $$f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$$
 
-Exists (and is independent of how $h \to 0$ in $\mathbb{{'}C{}'}$).
+Exists (and is independent of how $h \to 0$ in $\mathbb{C}$).
 
 _Remark._ The requirement that the limit be the same for all directions of approach of $h$ is what
 Makes complex differentiability far more restrictive than real differentiability.
@@ -286,8 +286,8 @@ Makes complex differentiability far more restrictive than real differentiability
 ### 2.4 Analytic Functions
 
 **Definition.** A function $f$ is **analytic** (or **holomorphic**) on an open set
-$U \subseteq \mathbb{{'}C{}'}$ if $f$ is differentiable at every point of $U$. A function that is
-analytic On all of $\mathbb{{'}C{}'}$ is called **entire**.
+$U \subseteq \mathbb{C}$ if $f$ is differentiable at every point of $U$. A function that is
+analytic On all of $\mathbb{C}$ is called **entire**.
 
 **Examples of entire functions:** $z^n$$e^z$$\sin z$$\cos z$Polynomials.
 
@@ -324,17 +324,17 @@ Single-valued functions, we must restrict the domain.
 Defined on a domain $D$ such that $g(z) \in f(z)$ for all $z \in D$.
 
 **The Complex Logarithm.** We define $\log z = \ln|z| + i\arg(z)$Which is multi-valued because
-$\arg(z) = \mathrm{Arg{}(z) + 2\pi k$ for $k \in \mathbb{{'}Z{}'}$. The **principal branch** is
+$\arg(z) = \mathrm{Arg(z) + 2\pi k$ for $k \in \mathbb{Z}$. The **principal branch** is
 
-$$\mathrm{Log{}\, z = \ln|z| + i\,\mathrm{Arg{}(z)$$
+$$\mathrm{Log\, z = \ln|z| + i\,\mathrm{Arg(z)$$
 
-Defined on $\mathbb{{'}C{}'} \setminus (-\infty, 0]$. The negative real axis is called the **branch
+Defined on $\mathbb{C} \setminus (-\infty, 0]$. The negative real axis is called the **branch
 cut**.
 
-**Proposition 2.2.** The principal branch $\mathrm{Log{}\, z$ is analytic on
-$\mathbb{{'}C{}'} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{Log{}\, z = \frac{1}{z}$.
+**Proposition 2.2.** The principal branch $\mathrm{Log\, z$ is analytic on
+$\mathbb{C} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{Log\, z = \frac{1}{z}$.
 
-**Complex Powers.** For $z, \alpha \in \mathbb{{'}C{}'}$ with $z \neq 0$:
+**Complex Powers.** For $z, \alpha \in \mathbb{C}$ with $z \neq 0$:
 
 $$z^\alpha = e^{\alpha \log z}$$
 
@@ -346,7 +346,7 @@ distinct values.
 
 **Problem.** Find all values of $(-1)^i$.
 
-$(-1)^i = e^{i \log(-1)} = e^{i(i\pi + 2\pi i k)} = e^{-\pi - 2\pi k}$ for $k \in \mathbb{{'}Z{}'}$.
+$(-1)^i = e^{i \log(-1)} = e^{i(i\pi + 2\pi i k)} = e^{-\pi - 2\pi k}$ for $k \in \mathbb{Z}$.
 
 These are all positive real numbers: $\ldots, e^{3\pi}, e^{\pi}, e^{-\pi}, e^{-3\pi}, \ldots$. The
 principal value (using the principal branch) is $e^{-\pi}$.
@@ -358,15 +358,15 @@ $i^{1/2} = e^{(1/2)\log i} = e^{(1/2)(i\pi/2 + 2\pi i k)} = e^{i\pi/4 + i\pi k}$
 For $k = 0$: $e^{i\pi/4} = \frac{\sqrt{2}}{2}(1 + i)$. For $k = 1$:
 $e^{i5\pi/4} = -\frac{\sqrt{2}}{2}(1 + i)$. These are the two square roots of $i$.
 
-**Problem.** Find the domain of analyticity of $f(z) = \mathrm{Log{}(z^2 + 1)$.
+**Problem.** Find the domain of analyticity of $f(z) = \mathrm{Log(z^2 + 1)$.
 
-$\mathrm{Log{}\, w$ is analytic on $\mathbb{{'}C{}'} \setminus (-\infty, 0]$So we need
+$\mathrm{Log\, w$ is analytic on $\mathbb{C} \setminus (-\infty, 0]$So we need
 $z^2 + 1 \notin (-\infty, 0]$.
 
 $z^2 + 1 \leq 0$ when $z^2 \leq -1$I.e., $z \in [-i, 0] \cup [0, i]$ (the imaginary axis Segment
 from $-i$ to $i$). Also $z^2 + 1 = 0$ at $z = \pm i$.
 
-Domain: $\mathbb{{'}C{}'} \setminus \{z : z = iy,\, y \in [-1, 1]\}$.
+Domain: $\mathbb{C} \setminus \{z : z = iy,\, y \in [-1, 1]\}$.
 
 </details>
 
@@ -379,11 +379,11 @@ $z = x + iy$Then
 
 $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
 
-_Proof._ Compute the limit along the real axis ($h \in \mathbb{{'}R{}'}$$h \to 0$):
+_Proof._ Compute the limit along the real axis ($h \in \mathbb{R}$$h \to 0$):
 
 $$f'(z) = \lim_{h \to 0} \frac{u(x+h, y) - u(x, y)}{h} + i\lim_{h \to 0} \frac{v(x+h, y) - v(x, y)}{h} = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
 
-Compute along the imaginary axis ($h = ik$$k \in \mathbb{{'}R{}'}$$k \to 0$):
+Compute along the imaginary axis ($h = ik$$k \in \mathbb{R}$$k \to 0$):
 
 $$f'(z) = \lim_{k \to 0} \frac{u(x, y+k) - u(x, y)}{ik} + i\lim_{k \to 0} \frac{v(x, y+k) - v(x, y)}{ik} = -i\frac{\partial u}{\partial y} + \frac{\partial v}{\partial y}$$
 
@@ -454,8 +454,8 @@ Harmonic conjugate: $v(x, y) = 3x^2 y - y^3 + C$.
 _Note:_ $f(z) = u + iv = x^3 - 3xy^2 + i(3x^2 y - y^3) = (x + iy)^3 = z^3$.
 
 **Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on
-$\mathbb{{'}R{}'}^2 \setminus \{0\}$ but Has no harmonic conjugate on
-$\mathbb{{'}R{}'}^2 \setminus \{0\}$.
+$\mathbb{R}^2 \setminus \{0\}$ but Has no harmonic conjugate on
+$\mathbb{R}^2 \setminus \{0\}$.
 
 $u_x = \frac{2x}{x^2 + y^2}$$u_{xx} = \frac{2(y^2 - x^2)}{(x^2 + y^2)^2}$.
 $u_y = \frac{2y}{x^2 + y^2}$$u_{yy} = \frac{2(x^2 - y^2)}{(x^2 + y^2)^2}$. $\Delta u = 0$.
@@ -465,7 +465,7 @@ However,
 $\oint_{|z|=1} (-u_y\, dx + u_x\, dy) = \oint_{|z|=1} \frac{-y\, dx + x\, dy}{x^2 + y^2}
 = \int_0^{2\pi} 1\, d\theta = 2\pi \neq 0$.
 
-Since $\mathbb{{'}R{}'}^2 \setminus \{0\}$ is not connected and this integral is non-zero, no
+Since $\mathbb{R}^2 \setminus \{0\}$ is not connected and this integral is non-zero, no
 Harmonic conjugate exists on this domain.
 
 </details>
@@ -497,7 +497,7 @@ CR: $u_x = \cos x \cosh y = v_y$ $\checkmark$ and $u_y = \sin x \sinh y = -v_x$ 
 
 $f'(z) = u_x + iv_x = \cos x \cosh y - i\sin x \sinh y = \cos z$. $\blacksquare$
 
-**Problem.** Show $f(z) = \frac{1}{z}$ satisfies CR on $\mathbb{{'}C{}'} \setminus \{0\}$.
+**Problem.** Show $f(z) = \frac{1}{z}$ satisfies CR on $\mathbb{C} \setminus \{0\}$.
 
 $\frac{1}{z} = \frac{\bar{z}}{|z|^2} = \frac{x - iy}{x^2 + y^2}$.
 
@@ -516,8 +516,8 @@ $f'(z) = u_x + iv_x = \frac{-(x^2 - y^2 + 2ixy)}{(x^2 + y^2)^2} = \frac{-1}{z^2}
 
 ### 4.1 Contours
 
-A **contour** (or piecewise smooth path) in $\mathbb{{'}C{}'}$ is a continuous function
-$\gamma : [a, b] \to \mathbb{{'}C{}'}$ that is differentiable except at finitely many points, with a
+A **contour** (or piecewise smooth path) in $\mathbb{C}$ is a continuous function
+$\gamma : [a, b] \to \mathbb{C}$ that is differentiable except at finitely many points, with a
 Continuous derivative everywhere it exists.
 
 A **simple closed contour** is a contour with $\gamma(a) = \gamma(b)$ and no other
@@ -606,7 +606,7 @@ Consistent. $\blacksquare$
 
 **Problem.** Use the ML inequality to show that
 $\lim_{R \to \infty} \int_{C_R} \frac{e^{iz}}{z}\, dz = 0$ Where $C_R$ is the upper semicircle
-$|z| = R$$\mathrm{Im{}(z) \geq 0$.
+$|z| = R$$\mathrm{Im(z) \geq 0$.
 
 On $C_R$: $z = Re^{i\theta}$$0 \leq \theta \leq \pi$.
 $|e^{iz}| = |e^{iR(\cos\theta + i\sin\theta)}| = e^{-R\sin\theta}$.
@@ -680,7 +680,7 @@ By the Cauchy-Riemann equations. $\blacksquare$
 
 ### 5.2 Connected Domains
 
-A domain $D \subseteq \mathbb{{'}C{}'}$ is ** connected** if every simple closed contour in $D$ can
+A domain $D \subseteq \mathbb{C}$ is ** connected** if every simple closed contour in $D$ can
 Be continuously shrunk to a point within $D$.
 
 **Cauchy's theorem may fail on multiply connected domains.** For example,
@@ -823,13 +823,13 @@ _Proof._ $1/f$ is entire and bounded by $1/M$So constant by Liouville. $\blacksq
 ### 6.5 Fundamental Theorem of Algebra
 
 **Theorem 6.7 (Fundamental Theorem of Algebra).** Every non-constant polynomial
-$p(z) \in \mathbb{{'}C{}'}[z]$ has a root in $\mathbb{{'}C{}'}$.
+$p(z) \in \mathbb{C}[z]$ has a root in $\mathbb{C}$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
 $|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
 constant, a contradiction. $\blacksquare$
 
-**Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb{{'}C{}'}$
+**Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb{C}$
 Counting multiplicities.
 
 ### 6.6 Worked Examples: Cauchy's Integral Formula
@@ -882,20 +882,20 @@ $= \frac{\pi i e^{-2}}{2} - \frac{\pi i e^2}{2} + 2\pi i e^2 = \frac{\pi i e^{-2
 
 ### 7.1 Taylor Series
 
-**Theorem 7.1.** If $f$ is analytic on $|z - z_0| \lt{} R$Then
+**Theorem 7.1.** If $f$ is analytic on $|z - z_0| \lt R$Then
 
 $$f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!}(z - z_0)^n$$
 
-And the series converges uniformly on compact subsets of $|z - z_0| \lt{} R$.
+And the series converges uniformly on compact subsets of $|z - z_0| \lt R$.
 
-_Proof._ For $|z - z_0| \lt{} r \lt{} R$Apply Cauchy's integral formula on $|\zeta - z_0| = r$:
+_Proof._ For $|z - z_0| \lt r \lt R$Apply Cauchy's integral formula on $|\zeta - z_0| = r$:
 
 $f(z) = \frac{1}{2\pi i}\int_{|\zeta - z_0| = r} \frac{f(\zeta)}{\zeta - z}\, d\zeta$
 
 Write
 $\frac{1}{\zeta - z} = \frac{1}{(\zeta - z_0) - (z - z_0)} = \frac{1}{\zeta - z_0} \cdot \frac{1}{1 - (z - z_0)/(\zeta - z_0)}$
 $= \sum_{n=0}^{\infty} \frac{(z - z_0)^n}{(\zeta - z_0)^{n+1}}$ (geometric series, convergent since
-$|z - z_0|/|\zeta - z_0| \lt{} 1$).
+$|z - z_0|/|\zeta - z_0| \lt 1$).
 
 Substituting and integrating term by term gives the Taylor series. $\blacksquare$
 
@@ -910,9 +910,9 @@ $$\sin z = \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n+1}}{(2n+1)!}$$
 
 $$\cos z = \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n}}{(2n)!}$$
 
-$$\frac{1}{1 - z} = \sum_{n=0}^{\infty} z^n, \quad |z| \lt{} 1$$
+$$\frac{1}{1 - z} = \sum_{n=0}^{\infty} z^n, \quad |z| \lt 1$$
 
-$$\ln(1 + z) = \sum_{n=1}^{\infty} \frac{(-1)^{n+1} z^n}{n}, \quad |z| \lt{} 1$$
+$$\ln(1 + z) = \sum_{n=1}^{\infty} \frac{(-1)^{n+1} z^n}{n}, \quad |z| \lt 1$$
 
 ### 7.3 Worked Examples: Taylor Series
 
@@ -921,7 +921,7 @@ $$\ln(1 + z) = \sum_{n=1}^{\infty} \frac{(-1)^{n+1} z^n}{n}, \quad |z| \lt{} 1$$
 
 **Problem.** Find the Taylor series of $f(z) = \frac{1}{z}$ centered at $z_0 = 1$.
 
-$\frac{1}{z} = \frac{1}{1 + (z - 1)} = \sum_{n=0}^{\infty} (-1)^n (z - 1)^n$ for $|z - 1| \lt{} 1$.
+$\frac{1}{z} = \frac{1}{1 + (z - 1)} = \sum_{n=0}^{\infty} (-1)^n (z - 1)^n$ for $|z - 1| \lt 1$.
 
 Radius of convergence: distance from $z_0 = 1$ to the singularity at $z = 0$Which is $1$.
 
@@ -929,7 +929,7 @@ Radius of convergence: distance from $z_0 = 1$ to the singularity at $z = 0$Whic
 
 $\frac{1}{(1-z)^2} = \frac{d}{dz}\left[\frac{1}{1 - z}\right] = \frac{d}{dz}\sum_{n=0}^{\infty} z^n
 = \sum_{n=1}^{\infty} nz^{n-1} = \sum_{n=0}^{\infty} (n+1)z^n$
-for $|z| \lt{} 1$.
+for $|z| \lt 1$.
 
 **Problem.** Find the Taylor series of $f(z) = e^z \sin z$ up to the $z^4$ term.
 
@@ -943,7 +943,7 @@ $= z + z^2 + z^3/2 + z^4/6 + \cdots - z^3/6 - z^4/6 + \cdots$ $= z + z^2 + z^3/3
 
 ### 7.4 Laurent Series
 
-**Theorem 7.2 (Laurent Series).** If $f$ is analytic on the annulus $r \lt{} |z - z_0| \lt{} R$ Then
+**Theorem 7.2 (Laurent Series).** If $f$ is analytic on the annulus $r \lt |z - z_0| \lt R$ Then
 
 $$f(z) = \sum_{n=-\infty}^{\infty} a_n(z - z_0)^n = \cdots + \frac{a_{-2}}{(z - z_0)^2} + \frac{a_{-1}}{z - z_0} + a_0 + a_1(z - z_0) + \cdots$$
 
@@ -968,24 +968,24 @@ Laurent expansions in different annuli.
 <details>
 <summary>Solution</summary>
 
-**Problem.** Find the Laurent series of $f(z) = \frac{1}{z(z-1)}$ in $0 \lt{} |z| \lt{} 1$.
+**Problem.** Find the Laurent series of $f(z) = \frac{1}{z(z-1)}$ in $0 \lt |z| \lt 1$.
 
 _Solution._ Using partial fractions: $\frac{1}{z(z-1)} = \frac{1}{z-1} - \frac{1}{z}$.
 
-In $|z| \lt{} 1$: $\frac{1}{z - 1} = -\frac{1}{1 - z} = -\sum_{n=0}^{\infty} z^n$.
+In $|z| \lt 1$: $\frac{1}{z - 1} = -\frac{1}{1 - z} = -\sum_{n=0}^{\infty} z^n$.
 
 So $f(z) = -\sum_{n=0}^{\infty} z^n - \frac{1}{z} = \cdots - z^2 - z - 1 - \frac{1}{z}$.
 
 The principal part is $-1/z$So $z = 0$ is a simple pole. $\blacksquare$
 
-**Problem.** Find the Laurent series of $f(z) = \frac{1}{z(z-1)}$ in $1 \lt{} |z| \lt{} \infty$.
+**Problem.** Find the Laurent series of $f(z) = \frac{1}{z(z-1)}$ in $1 \lt |z| \lt \infty$.
 
-In $|z| \gt{} 1$:
+In $|z| \gt 1$:
 $\frac{1}{z - 1} = \frac{1}{z} \cdot \frac{1}{1 - 1/z} = \sum_{n=2}^{\infty} z^{-n}$.
 
 $f(z) = \sum_{n=2}^{\infty} z^{-n} - \frac{1}{z} = \frac{1}{z^2} + \frac{1}{z^3} + \cdots$
 
-**Problem.** Find the Laurent series of $f(z) = \frac{e^z}{z^2}$ in $0 \lt{} |z| \lt{} \infty$.
+**Problem.** Find the Laurent series of $f(z) = \frac{e^z}{z^2}$ in $0 \lt |z| \lt \infty$.
 
 $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$So
 $f(z) = \sum_{n=0}^{\infty} \frac{z^{n-2}}{n!}
@@ -993,7 +993,7 @@ $f(z) = \sum_{n=0}^{\infty} \frac{z^{n-2}}{n!}
 
 Residue at $z = 0$: $a_{-1} = 1$.
 
-**Problem.** Find the Laurent series of $f(z) = \frac{1}{z^2(z - 3)}$ in $0 \lt{} |z| \lt{} 3$.
+**Problem.** Find the Laurent series of $f(z) = \frac{1}{z^2(z - 3)}$ in $0 \lt |z| \lt 3$.
 
 $\frac{1}{z - 3} = -\frac{1}{3}\sum_{n=0}^{\infty} \frac{z^n}{3^n}$.
 
@@ -1008,19 +1008,19 @@ Residue at $z = 0$: $a_{-1} = -\frac{1}{9}$.
 
 **Definition.** The **residue at infinity** of $f$ is defined as
 
-$$\mathrm{Res{}(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f(z)\, dz$$
+$$\mathrm{Res(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f(z)\, dz$$
 
 For sufficiently large $R$ (enclosing all finite singularities).
 
-**Proposition 7.4.** For a function $f$ with finitely many singularities in $\mathbb{{'}C{}'}$:
+**Proposition 7.4.** For a function $f$ with finitely many singularities in $\mathbb{C}$:
 
-$$\sum_{\mathrm{all\ finite\ {} z_k} \mathrm{Res{}(f, z_k) + \mathrm{Res{}(f, \infty) = 0$$
+$$\sum_{\mathrm{all\ finite\  z_k} \mathrm{Res(f, z_k) + \mathrm{Res(f, \infty) = 0$$
 
 _Proof._ By the residue theorem applied to $|z| = R$ enclosing all finite singularities:
 
-$\int_{|z|=R} f\, dz = 2\pi i \sum_{\mathrm{finite{}} \mathrm{Res{}(f, z_k)$.
+$\int_{|z|=R} f\, dz = 2\pi i \sum_{\mathrm{finite} \mathrm{Res(f, z_k)$.
 
-But $\mathrm{Res{}(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f\, dz$So the sum is zero.
+But $\mathrm{Res(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f\, dz$So the sum is zero.
 $\blacksquare$
 
 ## 8. Singularities and Residue Theory
@@ -1032,11 +1032,11 @@ $z_0$).
 
 **Classification by Laurent series:**
 
-1. **Removable singularity**: $a_n = 0$ for all $n \lt{} 0$. Can be removed by redefining
+1. **Removable singularity**: $a_n = 0$ for all $n \lt 0$. Can be removed by redefining
    $f(z_0) = a_0$.
-2. **Pole of order $m$**: $a_{-m} \neq 0$ and $a_n = 0$ for $n \lt{} -m$. The principal part is
+2. **Pole of order $m$**: $a_{-m} \neq 0$ and $a_n = 0$ for $n \lt -m$. The principal part is
    finite.
-3. **Essential singularity**: infinitely many non-zero $a_n$ with $n \lt{} 0$.
+3. **Essential singularity**: infinitely many non-zero $a_n$ with $n \lt 0$.
 
 **Proposition 8.1 (Riemann's Removable Singularity Theorem).** If $f$ is bounded near $z_0$Then
 $z_0$ is a removable singularity.
@@ -1086,7 +1086,7 @@ No negative powers, so $z = 0$ is a removable singularity with $f(0) = 1$.
 **Definition.** The **residue** of $f$ at an isolated singularity $z_0$ is the coefficient $a_{-1}$
 In the Laurent expansion:
 
-$$\mathrm{Res{}(f, z_0) = a_{-1} = \frac{1}{2\pi i}\int_\gamma f(z)\, dz$$
+$$\mathrm{Res(f, z_0) = a_{-1} = \frac{1}{2\pi i}\int_\gamma f(z)\, dz$$
 
 Where $\gamma$ is a small positively oriented circle around $z_0$.
 
@@ -1094,15 +1094,15 @@ Where $\gamma$ is a small positively oriented circle around $z_0$.
 
 **For a simple pole at $z_0$:**
 
-$$\mathrm{Res{}(f, z_0) = \lim_{z \to z_0} (z - z_0)f(z)$$
+$$\mathrm{Res(f, z_0) = \lim_{z \to z_0} (z - z_0)f(z)$$
 
 If $f = g/h$ where $g(z_0) \neq 0$$h(z_0) = 0$$h'(z_0) \neq 0$:
 
-$$\mathrm{Res{}(f, z_0) = \frac{g(z_0)}{h'(z_0)}$$
+$$\mathrm{Res(f, z_0) = \frac{g(z_0)}{h'(z_0)}$$
 
 **For a pole of order $m$ at $z_0$:**
 
-$$\mathrm{Res{}(f, z_0) = \frac{1}{(m-1)!}\lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}}\left[(z - z_0)^m f(z)\right]$$
+$$\mathrm{Res(f, z_0) = \frac{1}{(m-1)!}\lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}}\left[(z - z_0)^m f(z)\right]$$
 
 <details>
 <summary>Solution</summary>
@@ -1111,16 +1111,16 @@ $$\mathrm{Res{}(f, z_0) = \frac{1}{(m-1)!}\lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-
 
 $z^2 + 4z + 3 = (z + 1)(z + 3)$So simple poles at $z = -1$ and $z = -3$.
 
-At $z = -1$: $\mathrm{Res{} = \lim_{z \to -1} \frac{z}{z + 3} = \frac{-1}{2}$. At $z = -3$:
-$\mathrm{Res{} = \lim_{z \to -3} \frac{z}{z + 1} = \frac{-3}{-2} = \frac{3}{2}$.
+At $z = -1$: $\mathrm{Res = \lim_{z \to -1} \frac{z}{z + 3} = \frac{-1}{2}$. At $z = -3$:
+$\mathrm{Res = \lim_{z \to -3} \frac{z}{z + 1} = \frac{-3}{-2} = \frac{3}{2}$.
 
 **Problem.** Find the residue of $f(z) = \frac{e^z}{(z - 1)^2(z - 2)}$ at each pole.
 
 At $z = 1$ (pole of order $2$):
-$\mathrm{Res{} = \frac{d}{dz}\left[\frac{e^z}{z - 2}\right]_{z=1}
+$\mathrm{Res = \frac{d}{dz}\left[\frac{e^z}{z - 2}\right]_{z=1}
 = \frac{e^z(z - 2) - e^z}{(z-2)^2}\Big|_{z=1} = \frac{-e - e}{1} = -2e$.
 
-At $z = 2$ (simple pole): $\mathrm{Res{} = \frac{e^2}{(2-1)^2} = e^2$.
+At $z = 2$ (simple pole): $\mathrm{Res = \frac{e^2}{(2-1)^2} = e^2$.
 
 </details>
 
@@ -1130,12 +1130,12 @@ At $z = 2$ (simple pole): $\mathrm{Res{} = \frac{e^2}{(2-1)^2} = e^2$.
 Oriented contour $\gamma$ except for isolated singularities $z_1, z_2, \ldots, z_n$ inside $\gamma$
 Then
 
-$$\int_\gamma f(z)\, dz = 2\pi i \sum_{k=1}^{n} \mathrm{Res{}(f, z_k)$$
+$$\int_\gamma f(z)\, dz = 2\pi i \sum_{k=1}^{n} \mathrm{Res(f, z_k)$$
 
 _Proof._ For each singularity $z_k$Draw a small circle $\gamma_k$ around it. By Cauchy's theorem
 Applied to the multiply connected region between $\gamma$ and the $\gamma_k$:
 
-$\int_\gamma f\, dz = \sum_{k=1}^n \int_{\gamma_k} f\, dz = \sum_{k=1}^n 2\pi i \cdot \mathrm{Res{}(f, z_k)$.
+$\int_\gamma f\, dz = \sum_{k=1}^n \int_{\gamma_k} f\, dz = \sum_{k=1}^n 2\pi i \cdot \mathrm{Res(f, z_k)$.
 $\blacksquare$
 
 ### 8.6 Worked Examples: Residue Theorem
@@ -1147,10 +1147,10 @@ $\blacksquare$
 
 _Solution._ Singularities inside $\gamma$: $z = 0$ (simple pole) and $z = 1$ (pole of order $2$).
 
-At $z = 0$: $\mathrm{Res{} = \lim_{z \to 0} \frac{e^z}{(z-1)^2} = \frac{1}{(-1)^2} = 1$.
+At $z = 0$: $\mathrm{Res = \lim_{z \to 0} \frac{e^z}{(z-1)^2} = \frac{1}{(-1)^2} = 1$.
 
 At $z = 1$:
-$\mathrm{Res{}(f, 1) = \frac{d}{dz}\left[(z-1)^2 \cdot \frac{e^z}{z(z-1)^2}\right]_{z=1} = \frac{d}{dz}\left[\frac{e^z}{z}\right]_{z=1} = \frac{e^z \cdot z - e^z}{z^2}\Big|_{z=1} = \frac{e - e}{1} = 0$.
+$\mathrm{Res(f, 1) = \frac{d}{dz}\left[(z-1)^2 \cdot \frac{e^z}{z(z-1)^2}\right]_{z=1} = \frac{d}{dz}\left[\frac{e^z}{z}\right]_{z=1} = \frac{e^z \cdot z - e^z}{z^2}\Big|_{z=1} = \frac{e - e}{1} = 0$.
 
 $\int_\gamma f\, dz = 2\pi i(1 + 0) = 2\pi i$. $\blacksquare$
 
@@ -1159,7 +1159,7 @@ $\int_\gamma f\, dz = 2\pi i(1 + 0) = 2\pi i$. $\blacksquare$
 _Solution._ The poles are the fourth roots of $-1$: $z_k = e^{i\pi/4 + ik\pi/2}$ for
 $k = 0, 1, 2, 3$. All four lie inside $|z| = 2$.
 
-Each is a simple pole with $\mathrm{Res{}(f, z_k) = \frac{1}{4z_k^3}$. Since $z_k^4 = -1$:
+Each is a simple pole with $\mathrm{Res(f, z_k) = \frac{1}{4z_k^3}$. Since $z_k^4 = -1$:
 $z_k^{-3} = -z_k$So the sum equals $-\frac{1}{4}\sum z_k = 0$.
 
 $\int_\gamma \frac{dz}{z^4 + 1} = 2\pi i \cdot 0 = 0$. $\blacksquare$
@@ -1177,7 +1177,7 @@ Contour integration is a powerful tool for evaluating definite integrals.
 **Theorem 9.1.** If $f(x) = P(x)/Q(x)$ where $\deg(Q) \geq \deg(P) + 2$ and $Q$ has no real roots,
 Then
 
-$$\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i \sum_{\mathrm{Im{}(z_k) > 0} \mathrm{Res{}(f, z_k)$$
+$$\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i \sum_{\mathrm{Im(z_k) > 0} \mathrm{Res(f, z_k)$$
 
 Where the sum is over poles in the upper half-plane.
 
@@ -1193,7 +1193,7 @@ _Solution._ $f(z) = \frac{1}{z^2 + 1}$ has simple poles at $z = \pm i$.
 
 Only $z = i$ is in the upper half-plane.
 
-$\mathrm{Res{}\left(\frac{1}{z^2 + 1}, i\right) = \frac{1}{2z}\Big|_{z = i} = \frac{1}{2i}$.
+$\mathrm{Res\left(\frac{1}{z^2 + 1}, i\right) = \frac{1}{2z}\Big|_{z = i} = \frac{1}{2i}$.
 
 $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = 2\pi i \cdot \frac{1}{2i} = \pi$. $\blacksquare$
 
@@ -1216,10 +1216,10 @@ $\int_{|z|=1} \frac{dz}{iz\left(2 + \frac{z + 1/z}{2}\right)} = \int_{|z|=1} \fr
 
 Poles: $z^2 + 4z + 1 = 0 \Rightarrow z = -2 \pm \sqrt{3}$.
 
-$|z_1| = |-2 + \sqrt{3}| = 2 - \sqrt{3} \lt{} 1$ (inside).
-$|z_2| = |-2 - \sqrt{3}| = 2 + \sqrt{3} \gt{} 1$ (outside).
+$|z_1| = |-2 + \sqrt{3}| = 2 - \sqrt{3} \lt 1$ (inside).
+$|z_2| = |-2 - \sqrt{3}| = 2 + \sqrt{3} \gt 1$ (outside).
 
-$\mathrm{Res{}\left(\frac{1}{z^2 + 4z + 1}, z_1\right) = \frac{1}{2\sqrt{3}}$.
+$\mathrm{Res\left(\frac{1}{z^2 + 4z + 1}, z_1\right) = \frac{1}{2\sqrt{3}}$.
 
 $\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta} = \frac{2}{i} \cdot 2\pi i \cdot \frac{1}{2\sqrt{3}} = \frac{2\pi}{\sqrt{3}}$.
 $\blacksquare$
@@ -1227,11 +1227,11 @@ $\blacksquare$
 ### 9.6 Jordan's Lemma
 
 **Theorem 9.2 (Jordan's Lemma).** If $f(z) \to 0$ uniformly as $|z| \to \infty$ in the upper
-Half-plane and $a \gt{} 0$Then
+Half-plane and $a \gt 0$Then
 
 $$\lim_{R \to \infty} \int_{C_R} e^{iaz}f(z)\, dz = 0$$
 
-Where $C_R$ is the upper semicircle $|z| = R$$\mathrm{Im{}(z) \geq 0$.
+Where $C_R$ is the upper semicircle $|z| = R$$\mathrm{Im(z) \geq 0$.
 
 This allows evaluation of integrals of the form $\int_{-\infty}^{\infty} f(x)\cos(ax)\, dx$ and
 $\int_{-\infty}^{\infty} f(x)\sin(ax)\, dx$.
@@ -1244,20 +1244,20 @@ $\int_{-\infty}^{\infty} f(x)\sin(ax)\, dx$.
 **Problem.** Evaluate $\int_{-\infty}^{\infty} \frac{\cos x}{x^2 + 1}\, dx$.
 
 Consider
-$\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \mathrm{Res{}\!\left(\frac{e^{iz}}{z^2+1}, i\right)$.
+$\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \mathrm{Res\!\left(\frac{e^{iz}}{z^2+1}, i\right)$.
 
-$\mathrm{Res{}\!\left(\frac{e^{iz}}{z^2+1}, i\right) = \frac{e^{i \cdot i}}{2i} = \frac{e^{-1}}{2i}$.
+$\mathrm{Res\!\left(\frac{e^{iz}}{z^2+1}, i\right) = \frac{e^{i \cdot i}}{2i} = \frac{e^{-1}}{2i}$.
 
 $\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \frac{e^{-1}}{2i} = \frac{\pi}{e}$.
 
 Taking real parts: $\int_{-\infty}^{\infty} \frac{\cos x}{x^2 + 1}\, dx = \frac{\pi}{e}$.
 
-**Problem.** Evaluate $\int_{-\infty}^{\infty} \frac{x \sin x}{x^2 + a^2}\, dx$ for $a \gt{} 0$.
+**Problem.** Evaluate $\int_{-\infty}^{\infty} \frac{x \sin x}{x^2 + a^2}\, dx$ for $a \gt 0$.
 
 Consider $\int_{-\infty}^{\infty} \frac{z\, e^{iz}}{z^2 + a^2}\, dz$. Only $z = ia$ is in the upper
 half-plane.
 
-$\mathrm{Res{}\!\left(\frac{ze^{iz}}{z^2 + a^2}, ia\right) = \frac{ia \cdot e^{i \cdot ia}}{2ia} = \frac{e^{-a}}{2}$.
+$\mathrm{Res\!\left(\frac{ze^{iz}}{z^2 + a^2}, ia\right) = \frac{ia \cdot e^{i \cdot ia}}{2ia} = \frac{e^{-a}}{2}$.
 
 $\int_{-\infty}^{\infty} \frac{x\, e^{ix}}{x^2 + a^2}\, dx = 2\pi i \cdot \frac{e^{-a}}{2} = \pi i\, e^{-a}$.
 
@@ -1272,10 +1272,10 @@ $I = \frac{1}{2i}\int_{|z|=1} \frac{z^4 + 1}{z^2(2z + 1)(z + 2)}\, dz$.
 Poles inside $|z| = 1$: $z = 0$ (order $2$) and $z = -1/2$ (simple).
 
 At $z = 0$:
-$\mathrm{Res{} = \frac{d}{dz}\left[\frac{z^4 + 1}{(2z+1)(z+2)}\right]_{z=0}
+$\mathrm{Res = \frac{d}{dz}\left[\frac{z^4 + 1}{(2z+1)(z+2)}\right]_{z=0}
 = -\frac{5}{4}$.
 
-At $z = -1/2$: $\mathrm{Res{} = \frac{17/16}{3/4} = \frac{17}{12}$.
+At $z = -1/2$: $\mathrm{Res = \frac{17/16}{3/4} = \frac{17}{12}$.
 
 $I = \frac{1}{2i} \cdot 2\pi i \left(-\frac{5}{4} + \frac{17}{12}\right) = \frac{\pi}{6}$.
 
@@ -1285,12 +1285,12 @@ $I = \frac{1}{2i} \cdot 2\pi i \left(-\frac{5}{4} + \frac{17}{12}\right) = \frac
 
 For integrals where the integrand has poles on the real axis, we use the **Cauchy principal value**:
 
-$$\mathrm{PV{}\!\int_{-\infty}^{\infty} f(x)\, dx = \lim_{\varepsilon \to 0^+} \left(\int_{-\infty}^{a-\varepsilon} f(x)\, dx + \int_{a+\varepsilon}^{\infty} f(x)\, dx\right)$$
+$$\mathrm{PV\!\int_{-\infty}^{\infty} f(x)\, dx = \lim_{\varepsilon \to 0^+} \left(\int_{-\infty}^{a-\varepsilon} f(x)\, dx + \int_{a+\varepsilon}^{\infty} f(x)\, dx\right)$$
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Evaluate $\mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx$.
+**Problem.** Evaluate $\mathrm{PV\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx$.
 
 Consider $\oint_\gamma \frac{e^{iz}}{z}\, dz$ where $\gamma$ consists of $[-R, -\varepsilon]$
 $[\varepsilon, R]$ on the real axis, small upper semicircle $C_\varepsilon$ around $0$And large
@@ -1302,11 +1302,11 @@ On $C_R$: vanishes as $R \to \infty$ by Jordan's lemma. On $C_\varepsilon$ (inde
 $\int_{C_\varepsilon} \frac{e^{iz}}{z}\, dz \to -i\pi$ as $\varepsilon \to 0$ (half residue
 contribution).
 
-$0 = \mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx + (-i\pi)$.
+$0 = \mathrm{PV\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx + (-i\pi)$.
 
-$\mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx = i\pi$.
+$\mathrm{PV\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx = i\pi$.
 
-Taking imaginary parts: $\mathrm{PV{}\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx = \pi$.
+Taking imaginary parts: $\mathrm{PV\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx = \pi$.
 
 </details>
 
@@ -1320,7 +1320,7 @@ Mapping preserves angles (both magnitude and orientation) between curves.
 ### 10.2 Geometric Interpretation
 
 If $f'(z_0) = re^{i\theta}$Then near $z_0$ the mapping $f$ acts as a rotation by $\theta$ followed
-By a scaling by $r$. The Jacobian determinant is $|f'(z_0)|^2 \gt{} 0$So orientation is preserved.
+By a scaling by $r$. The Jacobian determinant is $|f'(z_0)|^2 \gt 0$So orientation is preserved.
 
 ### 10.3 Common Conformal Mappings
 
@@ -1365,9 +1365,9 @@ of $T(z) = z$).
 
 1. **Parabolic:** Exactly one fixed point. Conjugate to $w = z + k$.
 2. **Elliptic:** Two fixed points, $|T'(z_0)| = 1$. Conjugate to a rotation $w = e^{i\theta} z$.
-3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb{{'}R{}'}^+$$T'(z_0) \neq 1$. Conjugate to
+3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb{R}^+$$T'(z_0) \neq 1$. Conjugate to
    $w = kz$.
-4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb{{'}R{}'} \cup \{z : |z| = 1\}$.
+4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb{R} \cup \{z : |z| = 1\}$.
    Conjugate to $w = ke^{i\theta}z$.
 
 <details>
@@ -1382,7 +1382,7 @@ $T(z) = \frac{-idz + id}{dz + d} = \frac{i(1 - z)}{z + 1}$.
 
 **Problem.** Show that $T(z) = \frac{z - 1}{z + 1}$ maps the right half-plane to the unit disk.
 
-If $\mathrm{Re{}(z) \gt{} 0$Then $|z - 1| \lt{} |z + 1|$So $|T(z)| \lt{} 1$.
+If $\mathrm{Re(z) \gt 0$Then $|z - 1| \lt |z + 1|$So $|T(z)| \lt 1$.
 
 Check boundary: $T(i) = \frac{i - 1}{i + 1} = \frac{(i-1)(-i+1)}{(i+1)(-i+1)} = \frac{2}{2} = 1$.
 $|T(i)| = 1$. $\checkmark$
@@ -1400,11 +1400,11 @@ Both multipliers are real and positive (not equal to $1$), so $T$ is hyperbolic.
 ### 10.7 The Riemann Mapping Theorem
 
 **Theorem 10.5 (Riemann Mapping Theorem).** Let $U$ be a connected open proper subset of
-$\mathbb{{'}C{}'}$. Then there exists a bijective conformal map from $U$ onto the unit disk
-$\mathbb{{'}D{}'} = \{z : |z| \lt{} 1\}$.
+$\mathbb{C}$. Then there exists a bijective conformal map from $U$ onto the unit disk
+$\mathbb{D} = \{z : |z| \lt 1\}$.
 
 This is one of the most profound results in complex analysis, establishing that all connected
-Domains (other than $\mathbb{{'}C{}'}$ itself) are conformally equivalent.
+Domains (other than $\mathbb{C}$ itself) are conformally equivalent.
 
 _Remark._ The Riemann mapping theorem is an existence theorem; it does not provide an explicit
 Formula for the conformal map .
@@ -1422,7 +1422,7 @@ Constant. $\blacksquare$
 ### 11.2 The Fundamental Theorem of Algebra
 
 **Theorem 11.2 (Fundamental Theorem of Algebra).** Every non-constant polynomial
-$p(z) \in \mathbb{{'}C{}'}[z]$ has a root in $\mathbb{{'}C{}'}$.
+$p(z) \in \mathbb{C}[z]$ has a root in $\mathbb{C}$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
 $|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
@@ -1446,15 +1446,15 @@ modulus principle requires the non-vanishing hypothesis.
 
 ### 11.5 Schwarz Lemma
 
-**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{{'}D{}'} \to \mathbb{{'}D{}'}$ is analytic with
+**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{D} \to \mathbb{D}$ is analytic with
 $f(0) = 0$ Then
 
-$$|f(z)| \leq |z| \quad \mathrm{for\ all\ {} z \in \mathbb{{'}D{}'}$$
+$$|f(z)| \leq |z| \quad \mathrm{for\ all\  z \in \mathbb{D}$$
 
 And $|f'(0)| \leq 1$. Equality in either case implies $f(z) = e^{i\theta} z$ for some real $\theta$.
 
 _Proof._ Define $g(z) = f(z)/z$ for $z \neq 0$ and $g(0) = f'(0)$. Then $g$ is analytic on
-$\mathbb{{'}D{}'}$. For $|z| = r \lt{} 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum modulus
+$\mathbb{D}$. For $|z| = r \lt 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum modulus
 Principle, $|g(z)| \leq 1/r$ for $|z| \leq r$. Letting $r \to 1$: $|g(z)| \leq 1$So
 $|f(z)| \leq |z|$. Also $|f'(0)| = |g(0)| \leq 1$. If $|f'(0)| = 1$Then $|g|$ attains its maximum At
 an interior point, so $g$ is constant: $g(z) = e^{i\theta}$. $\blacksquare$
@@ -1474,36 +1474,36 @@ Multiplicities).
 ### 12.2 Rouché's Theorem
 
 **Theorem 12.2 (Rouché's Theorem).** If $f$ and $g$ are analytic inside and on a simple closed
-Contour $\gamma$And $|f(z)| \gt{} |g(z)|$ on $\gamma$Then $f$ and $f + g$ have the same number of
+Contour $\gamma$And $|f(z)| \gt |g(z)|$ on $\gamma$Then $f$ and $f + g$ have the same number of
 Zeros inside $\gamma$.
 
-_Proof._ On $\gamma$: $|g(z)/f(z)| \lt{} 1$. The function $h(z) = 1 + g(z)/f(z)$ satisfies
-$|h(z) - 1| \lt{} 1$ on $\gamma$So $h(\gamma)$ does not wind around $0$. By the argument principle
+_Proof._ On $\gamma$: $|g(z)/f(z)| \lt 1$. The function $h(z) = 1 + g(z)/f(z)$ satisfies
+$|h(z) - 1| \lt 1$ on $\gamma$So $h(\gamma)$ does not wind around $0$. By the argument principle
 Applied to $h$: $0 = N_h - P_h$Meaning $h$ has the same number of zeros and poles inside $\gamma$.
 But $h = (f + g)/f$So zeros of $h$ are zeros of $f + g$ and poles of $h$ are zeros of $f$. Therefore
 $f$ and $f + g$ have the same number of zeros. $\blacksquare$
 
 ### 12.3 Worked Example
 
-**Problem.** Show that $z^4 + 6z + 3$ has exactly one root in $|z| \lt{} 1$.
+**Problem.** Show that $z^4 + 6z + 3$ has exactly one root in $|z| \lt 1$.
 
-_Solution._ On $|z| = 1$: $|6z| = 6 \gt{} |z^4 + 3| \leq |z|^4 + 3 = 4$. By Rouché's theorem with
+_Solution._ On $|z| = 1$: $|6z| = 6 \gt |z^4 + 3| \leq |z|^4 + 3 = 4$. By Rouché's theorem with
 $f(z) = 6z$ and $g(z) = z^4 + 3$: $f + g = z^4 + 6z + 3$ has the same number of zeros in
-$|z| \lt{} 1$ as $f(z) = 6z$Which has exactly one zero (at $z = 0$). $\blacksquare$
+$|z| \lt 1$ as $f(z) = 6z$Which has exactly one zero (at $z = 0$). $\blacksquare$
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Show that all roots of $z^4 + z + 1 = 0$ satisfy $|z| \lt{} 2$.
+**Problem.** Show that all roots of $z^4 + z + 1 = 0$ satisfy $|z| \lt 2$.
 
-On $|z| = 2$: $|z^4| = 16 \gt{} |z + 1| \leq 3$. By Rouché with $f(z) = z^4$ and $g(z) = z + 1$:
-$z^4 + z + 1$ has $4$ zeros in $|z| \lt{} 2$ (same as $z^4$).
+On $|z| = 2$: $|z^4| = 16 \gt |z + 1| \leq 3$. By Rouché with $f(z) = z^4$ and $g(z) = z + 1$:
+$z^4 + z + 1$ has $4$ zeros in $|z| \lt 2$ (same as $z^4$).
 
-**Problem.** Show that $z^5 + 3z^2 + 1$ has exactly two roots in $|z| \lt{} 1$.
+**Problem.** Show that $z^5 + 3z^2 + 1$ has exactly two roots in $|z| \lt 1$.
 
-On $|z| = 1$: $|3z^2 + 1| \geq |3z^2| - |1| = 2 \gt{} |z^5| = 1$. By Rouché with $f(z) = 3z^2 + 1$
-and $g(z) = z^5$: $z^5 + 3z^2 + 1$ has the same number of zeros as $3z^2 + 1$ in $|z| \lt{} 1$.
-$3z^2 + 1 = 0 \Rightarrow z = \pm i/\sqrt{3}$Both in $|z| \lt{} 1$. So $2$ zeros.
+On $|z| = 1$: $|3z^2 + 1| \geq |3z^2| - |1| = 2 \gt |z^5| = 1$. By Rouché with $f(z) = 3z^2 + 1$
+and $g(z) = z^5$: $z^5 + 3z^2 + 1$ has the same number of zeros as $3z^2 + 1$ in $|z| \lt 1$.
+$3z^2 + 1 = 0 \Rightarrow z = \pm i/\sqrt{3}$Both in $|z| \lt 1$. So $2$ zeros.
 
 </details>
 
@@ -1520,7 +1520,7 @@ Continuation** of $f_1$.
 **Theorem 13.1 (Identity Theorem).** If $f$ and $g$ are analytic on a domain $D$ and agree on a set
 With a limit point in $D$Then $f = g$ on all of $D$.
 
-_Proof._ Let $E = \{z \in D : f^{(n)}(z) = g^{(n)}(z) \mathrm{\ for\ all\ {} n \geq 0\}$. $E$ is
+_Proof._ Let $E = \{z \in D : f^{(n)}(z) = g^{(n)}(z) \mathrm{\ for\ all\  n \geq 0\}$. $E$ is
 Non-empty (it contains the limit point by continuity of derivatives). $E$ is closed (by continuity).
 If $z_0 \in E$The Taylor series of $f$ and $g$ at $z_0$ coincide, so $f = g$ in a neighbourhood of
 $z_0$Giving $E$ open. Since $D$ is connected, $E = D$. $\blacksquare$
@@ -1541,7 +1541,7 @@ Differentiation. A common error is forgetting the $(m-1)!$ in the denominator or
 $(z - z_0)^m f(z)$ the wrong number of times. :::
 
 :::caution Common Pitfall The residue at infinity is
-$\mathrm{Res{}(f, \infty) = -\mathrm{Res{}(1/z^2 \cdot f(1/z), 0)$. It is NOT $f(\infty)$. For A
+$\mathrm{Res(f, \infty) = -\mathrm{Res(1/z^2 \cdot f(1/z), 0)$. It is NOT $f(\infty)$. For A
 function that is analytic everywhere in the finite plane except for finitely many singularities, The
 sum of all residues (including the residue at infinity) is zero. :::
 
@@ -1556,7 +1556,7 @@ No zeros in the domain. :::
 
 :::caution Common Pitfall The complex logarithm is multi-valued. When a problem asks for "logarithm"
 without specifying a branch, you must either compute all values or explicitly state which Branch you
-are using. The principal branch $\mathrm{Log{}\, z$ has a branch cut along $(-\infty, 0]$ And is
+are using. The principal branch $\mathrm{Log\, z$ has a branch cut along $(-\infty, 0]$ And is
 undefined on this cut. :::
 
 :::caution Common Pitfall When applying the ML inequality, make sure $M$ is a valid upper bound for
@@ -1572,7 +1572,7 @@ Express $z = -\sqrt{3} + i$ in polar form and find all values of $z^{1/3}$.
 <details>
 <summary>Solution</summary>
 
-$|z| = \sqrt{3 + 1} = 2$. Since $\mathrm{Re{}(z) \lt{} 0$ and $\mathrm{Im{}(z) \gt{} 0$:
+$|z| = \sqrt{3 + 1} = 2$. Since $\mathrm{Re(z) \lt 0$ and $\mathrm{Im(z) \gt 0$:
 $\arg(z) = \pi - \pi/6 = 5\pi/6$.
 
 $z = 2\,e^{5\pi i/6}$.
@@ -1615,7 +1615,7 @@ $f'(z)$.
 <summary>Solution</summary>
 
 $f(z) = 1/(z^2 + 1)$ is a rational function with denominator non-zero away from $\pm i$So $f$ Is
-analytic on $\mathbb{{'}C{}'} \setminus \{i, -i\}$.
+analytic on $\mathbb{C} \setminus \{i, -i\}$.
 
 By the quotient rule: $f'(z) = \frac{-2z}{(z^2 + 1)^2}$.
 
@@ -1693,8 +1693,8 @@ Evaluate $\oint_\gamma \frac{z + 1}{z^2 - z}\, dz$ where $\gamma$ is $|z| = 2$.
 $\frac{z + 1}{z^2 - z} = \frac{z + 1}{z(z - 1)}$. Simple poles at $z = 0$ and $z = 1$Both inside
 $|z| = 2$.
 
-At $z = 0$: $\mathrm{Res{} = \lim_{z \to 0} \frac{z + 1}{z - 1} = -1$. At $z = 1$:
-$\mathrm{Res{} = \lim_{z \to 1} \frac{z + 1}{z} = 2$.
+At $z = 0$: $\mathrm{Res = \lim_{z \to 0} \frac{z + 1}{z - 1} = -1$. At $z = 1$:
+$\mathrm{Res = \lim_{z \to 1} \frac{z + 1}{z} = 2$.
 
 $\oint_\gamma \frac{z + 1}{z^2 - z}\, dz = 2\pi i(-1 + 2) = 2\pi i$.
 
@@ -1712,8 +1712,8 @@ Classify all singularities of $f(z) = \frac{e^{1/z}}{z^2 + 1}$ and find all resi
 $z = 0$: $e^{1/z}$ has an essential singularity at $0$So $z = 0$ is an essential singularity of $f$.
 $z = i$: simple pole. $z = -i$: simple pole.
 
-At $z = i$: $\mathrm{Res{} = \frac{e^{1/i}}{2i} = \frac{e^{-i}}{2i}$. At $z = -i$:
-$\mathrm{Res{} = \frac{e^{1/(-i)}}{-2i} = \frac{e^{i}}{-2i}$.
+At $z = i$: $\mathrm{Res = \frac{e^{1/i}}{2i} = \frac{e^{-i}}{2i}$. At $z = -i$:
+$\mathrm{Res = \frac{e^{1/(-i)}}{-2i} = \frac{e^{i}}{-2i}$.
 
 At $z = 0$: find the coefficient of $1/z$ in $\frac{e^{1/z}}{z^2 + 1}$.
 $\frac{1}{z^2 + 1} = 1 - z^2 + z^4 - \cdots$ near $z = 0$. $e^{1/z} = 1 + 1/z + 1/(2z^2) + \cdots$.
@@ -1738,8 +1738,8 @@ $I = \int_{|z|=1} \frac{(z + z^{-1})/2}{5 + 4(z + z^{-1})/2} \cdot \frac{dz}{iz}
 
 Poles inside $|z| = 1$: $z = 0$ (simple) and $z = -1/2$ (simple).
 
-At $z = 0$: $\mathrm{Res{} = \frac{1}{(2 \cdot 0 + 1)(0 + 2)} = \frac{1}{2}$. At $z = -1/2$:
-$\mathrm{Res{} = \frac{1/4 + 1}{(-1/2)(-1 + 2)} = \frac{5/4}{-1/2} = -\frac{5}{2}$.
+At $z = 0$: $\mathrm{Res = \frac{1}{(2 \cdot 0 + 1)(0 + 2)} = \frac{1}{2}$. At $z = -1/2$:
+$\mathrm{Res = \frac{1/4 + 1}{(-1/2)(-1 + 2)} = \frac{5/4}{-1/2} = -\frac{5}{2}$.
 
 $I = \frac{1}{2i} \cdot 2\pi i\left(\frac{1}{2} - \frac{5}{2}\right) = \pi(-2) = -\frac{\pi}{3}$.
 
@@ -1757,8 +1757,8 @@ Evaluate $\int_{-\infty}^{\infty} \frac{dx}{(x^2 + 1)(x^2 + 4)}$.
 $f(z) = \frac{1}{(z^2 + 1)(z^2 + 4)}$. Poles in upper half-plane: $z = i$ (simple) and $z = 2i$
 (simple).
 
-At $z = i$: $\mathrm{Res{} = \frac{1}{(2i)(i^2 + 4)} = \frac{1}{2i \cdot 3} = \frac{1}{6i}$. At
-$z = 2i$: $\mathrm{Res{} = \frac{1}{(4i - 1)(4i)} = \frac{1}{4i(-3)} = -\frac{1}{12i}$.
+At $z = i$: $\mathrm{Res = \frac{1}{(2i)(i^2 + 4)} = \frac{1}{2i \cdot 3} = \frac{1}{6i}$. At
+$z = 2i$: $\mathrm{Res = \frac{1}{(4i - 1)(4i)} = \frac{1}{4i(-3)} = -\frac{1}{12i}$.
 
 $\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i\left(\frac{1}{6i} - \frac{1}{12i}\right) = 2\pi i \cdot \frac{1}{12i} = \frac{\pi}{6}$.
 
@@ -1777,7 +1777,7 @@ convergence.
 $\frac{z}{z^2 + 4} = \frac{z}{4} \cdot \frac{1}{1 + z^2/4} = \frac{z}{4}\sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{4^n}
 = \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n+1}}{4^{n+1}}$
 
-For $|z| \lt{} 2$. Radius of convergence: distance from $0$ to nearest singularity ($\pm 2i$), which
+For $|z| \lt 2$. Radius of convergence: distance from $0$ to nearest singularity ($\pm 2i$), which
 is $2$.
 
 _If you get this wrong, revise:_ Section 7.1 (Taylor Series).
@@ -1786,17 +1786,17 @@ _If you get this wrong, revise:_ Section 7.1 (Taylor Series).
 
 ### Problem 12
 
-Find the Laurent series of $f(z) = \frac{1}{(z - 1)(z - 2)}$ in the annulus $1 \lt{} |z| \lt{} 2$.
+Find the Laurent series of $f(z) = \frac{1}{(z - 1)(z - 2)}$ in the annulus $1 \lt |z| \lt 2$.
 
 <details>
 <summary>Solution</summary>
 
 $\frac{1}{(z-1)(z-2)} = \frac{1}{z - 2} - \frac{1}{z - 1}$.
 
-For $|z| \gt{} 1$:
+For $|z| \gt 1$:
 $\frac{1}{z - 1} = \frac{1}{z} \cdot \frac{1}{1 - 1/z} = \sum_{n=0}^{\infty} z^{-n-1}$.
 
-For $|z| \lt{} 2$:
+For $|z| \lt 2$:
 $\frac{1}{z - 2} = -\frac{1}{2} \cdot \frac{1}{1 - z/2} = -\sum_{n=0}^{\infty} \frac{z^n}{2^{n+1}}$.
 
 $f(z) = -\sum_{n=0}^{\infty} \frac{z^n}{2^{n+1}} - \sum_{n=0}^{\infty} z^{-n-1}$.
@@ -1807,17 +1807,17 @@ _If you get this wrong, revise:_ Section 7.4 (Laurent Series).
 
 ### Problem 13
 
-Using Rouché's theorem, determine the number of roots of $z^5 - 5z + 1 = 0$ in $|z| \lt{} 1$.
+Using Rouché's theorem, determine the number of roots of $z^5 - 5z + 1 = 0$ in $|z| \lt 1$.
 
 <details>
 <summary>Solution</summary>
 
-On $|z| = 1$: $|-5z| = 5 \gt{} |z^5 + 1| \leq 2$.
+On $|z| = 1$: $|-5z| = 5 \gt |z^5 + 1| \leq 2$.
 
 By Rouché with $f(z) = -5z$ and $g(z) = z^5 + 1$: $z^5 - 5z + 1$ has the same number of zeros In
-$|z| \lt{} 1$ as $-5z$Which has exactly one zero (at $z = 0$).
+$|z| \lt 1$ as $-5z$Which has exactly one zero (at $z = 0$).
 
-So exactly one root in $|z| \lt{} 1$.
+So exactly one root in $|z| \lt 1$.
 
 _If you get this wrong, revise:_ Section 12.2 (Rouché's Theorem).
 
@@ -1864,8 +1864,8 @@ Evaluate $\int_\gamma \frac{z^3}{z^2 + 1}\, dz$ where $\gamma$ is $|z| = 2$.
 
 $\frac{z^3}{z^2 + 1}$ has simple poles at $z = \pm i$Both inside $|z| = 2$.
 
-At $z = i$: $\mathrm{Res{} = \frac{i^3}{2i} = \frac{-i}{2i} = -\frac{1}{2}$. At $z = -i$:
-$\mathrm{Res{} = \frac{(-i)^3}{-2i} = \frac{i}{-2i} = -\frac{1}{2}$.
+At $z = i$: $\mathrm{Res = \frac{i^3}{2i} = \frac{-i}{2i} = -\frac{1}{2}$. At $z = -i$:
+$\mathrm{Res = \frac{(-i)^3}{-2i} = \frac{i}{-2i} = -\frac{1}{2}$.
 
 $\int_\gamma \frac{z^3}{z^2 + 1}\, dz = 2\pi i\left(-\frac{1}{2} - \frac{1}{2}\right) = -2\pi i$.
 
@@ -1888,7 +1888,7 @@ Consider $\int_{-\infty}^{\infty} \frac{e^{2ix}}{x^2 + 1}\, dx$.
 
 $f(z) = \frac{e^{2iz}}{z^2 + 1}$ has a simple pole at $z = i$ in the upper half-plane.
 
-$\mathrm{Res{}\!\left(\frac{e^{2iz}}{z^2 + 1}, i\right) = \frac{e^{2i \cdot i}}{2i} = \frac{e^{-2}}{2i}$.
+$\mathrm{Res\!\left(\frac{e^{2iz}}{z^2 + 1}, i\right) = \frac{e^{2i \cdot i}}{2i} = \frac{e^{-2}}{2i}$.
 
 $\int_{-\infty}^{\infty} \frac{e^{2ix}}{x^2 + 1}\, dx = 2\pi i \cdot \frac{e^{-2}}{2i} = \frac{\pi}{e^2}$.
 
@@ -1909,7 +1909,7 @@ $\sin z = z - z^3/6 + z^5/120 - \cdots$
 
 $f(z) = \frac{z - z^3/6 + z^5/120 - \cdots}{z^4} = \frac{1}{z^3} - \frac{1}{6z} + \frac{z}{120} - \cdots$
 
-The coefficient of $1/z$ is $-1/6$So $\mathrm{Res{}(f, 0) = -\frac{1}{6}$.
+The coefficient of $1/z$ is $-1/6$So $\mathrm{Res(f, 0) = -\frac{1}{6}$.
 
 _If you get this wrong, revise:_ Section 8.4 (Computing Residues).
 
@@ -1924,7 +1924,7 @@ Evaluate $\int_\gamma \frac{dz}{(z - 1)^2(z - 2)}$ where $\gamma$ is $|z - 1| = 
 
 Only $z = 1$ is inside $\gamma$ (a pole of order $2$). $z = 2$ is outside.
 
-$\mathrm{Res{}(f, 1) = \frac{d}{dz}\left[\frac{1}{z - 2}\right]_{z=1} = -\frac{1}{(z-2)^2}\Big|_{z=1} = -1$.
+$\mathrm{Res(f, 1) = \frac{d}{dz}\left[\frac{1}{z - 2}\right]_{z=1} = -\frac{1}{(z-2)^2}\Big|_{z=1} = -1$.
 
 $\int_\gamma f\, dz = 2\pi i \cdot (-1) = -2\pi i$.
 

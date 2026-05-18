@@ -57,7 +57,7 @@ Water is essential for life due to its unique properties:
 
 1. **Cohesion and adhesion:** H-bonds between water molecules (cohesion) and between water and other
    surfaces (adhesion). Enables capillary action and transpiration in plants.
-2. **High specific heat:** $4.18 \mathrm{ J/(g{}\cdot^\circ\mathrm{C){}$. Moderates temperature
+2. **High specific heat:** $4.18 \mathrm{ J/(g\cdot^\circ\mathrm{C)$. Moderates temperature
    changes.
 3. **High heat of vaporization:** Requires significant energy to evaporate. Provides cooling through
    sweating.
@@ -79,7 +79,7 @@ Water is essential for life due to its unique properties:
 ### pH and Buffers
 
 $$
-\mathrm{pH{} = -\log[\mathrm{H{}^+]
+\mathrm{pH = -\log[\mathrm{H^+]
 $$
 
 | pH      | Classification |
@@ -91,39 +91,39 @@ $$
 **Buffers** resist pH changes. The carbonic acid/bicarbonate buffer system in blood:
 
 $$
-\mathrm{H{}_2\mathrm{CO{}_3 \rightleftharpoons \mathrm{H{}^+ + \mathrm{HCO{}_3^-
+\mathrm{H_2\mathrm{CO_3 \rightleftharpoons \mathrm{H^+ + \mathrm{HCO_3^-
 $$
 
-When $[\mathrm{H{}^+]$ increases, the equilibrium shifts left, consuming excess $\mathrm{H{}^+$.
+When $[\mathrm{H^+]$ increases, the equilibrium shifts left, consuming excess $\mathrm{H^+$.
 
 **Worked Example: pH calculations.**
 
-A solution has $[\mathrm{H{}^+] = 1 \times 10^{-4}$ M.
+A solution has $[\mathrm{H^+] = 1 \times 10^{-4}$ M.
 
-$$\mathrm{pH{} = -\log(1 \times 10^{-4}) = 4$$
+$$\mathrm{pH = -\log(1 \times 10^{-4}) = 4$$
 
-If the solution is diluted by a factor of 10, $[\mathrm{H{}^+] = 1 \times 10^{-5}$ M, and
-$\mathrm{pH{} = 5$.
+If the solution is diluted by a factor of 10, $[\mathrm{H^+] = 1 \times 10^{-5}$ M, and
+$\mathrm{pH = 5$.
 
-A one-unit increase in pH represents a tenfold decrease in $[\mathrm{H{}^+]$.
+A one-unit increase in pH represents a tenfold decrease in $[\mathrm{H^+]$.
 
 **Worked Example: Buffer action.**
 
-During vigorous exercise, lactic acid is produced, releasing $\mathrm{H{}^+$ into the blood. Without
+During vigorous exercise, lactic acid is produced, releasing $\mathrm{H^+$ into the blood. Without
 The buffer system, blood pH would drop dangerously.
 
 The bicarbonate buffer system responds:
 
-$$\mathrm{H{}^+ + \mathrm{HCO{}_3^- \to \mathrm{H{}_2\mathrm{CO{}_3 \to \mathrm{H{}_2\mathrm{O{} + \mathrm{CO{}_2$$
+$$\mathrm{H^+ + \mathrm{HCO_3^- \to \mathrm{H_2\mathrm{CO_3 \to \mathrm{H_2\mathrm{O + \mathrm{CO_2$$
 
-The excess $\mathrm{H{}^+$ is consumed by reacting with $\mathrm{HCO{}_3^-$. The resulting
-$\mathrm{CO{}_2$ is removed by increased breathing rate. Blood pH is maintained close to 7.4.
+The excess $\mathrm{H^+$ is consumed by reacting with $\mathrm{HCO_3^-$. The resulting
+$\mathrm{CO_2$ is removed by increased breathing rate. Blood pH is maintained close to 7.4.
 
 ## Macromolecules (CED Unit 1)
 
 ### Carbohydrates
 
-**General formula:** $\mathrm{C{}_n(\mathrm{H{}_2\mathrm{O{})_n$
+**General formula:** $\mathrm{C_n(\mathrm{H_2\mathrm{O)_n$
 
 **Monomers:** Monosaccharides (glucose, fructose, galactose, ribose, deoxyribose).
 
@@ -186,7 +186,7 @@ A triglyceride consists of one glycerol molecule (a 3-carbon alcohol with three 
 Three fatty acid molecules (long hydrocarbon chains with a carboxyl group at one end) by three ester
 Bonds. Each ester bond is formed by a condensation reaction, releasing one water molecule.
 
-$$\mathrm{Glycerol{} + 3 \mathrm{ Fatty acids{} \to \mathrm{Triglyceride{} + 3 \mathrm{ H{}_2\mathrm{O{}$$
+$$\mathrm{Glycerol + 3 \mathrm{ Fatty acids \to \mathrm{Triglyceride + 3 \mathrm{ H_2\mathrm{O$$
 
 The long hydrocarbon tails are hydrophobic, making triglycerides insoluble in water. This makes them
 Ideal for energy storage because they do not affect the water potential of cells.
@@ -197,8 +197,8 @@ Ideal for energy storage because they do not affect the water potential of cells
 
 **Structure of an amino acid:** Central carbon ($\alpha$-carbon) bonded to:
 
-- Amino group ($\mathrm{NH{}_2$)
-- Carboxyl group ($\mathrm{COOH{}$)
+- Amino group ($\mathrm{NH_2$)
+- Carboxyl group ($\mathrm{COOH$)
 - Hydrogen atom
 - R group (side chain, varies)
 
@@ -247,7 +247,7 @@ Can cause the protein to unfold.
 - Antiparallel strands ($5' \to 3'$ and $3' \to 5'$)
 - Sugar-phosphate backbone on the outside, bases on the inside
 - Base pairing: A--T (2 H-bonds), G--C (3 H-bonds)
-- Chargaff's rules: $[\mathrm{A{}] = [\mathrm{T{}]$$[\mathrm{G{}] = [\mathrm{C{}]$
+- Chargaff's rules: $[\mathrm{A] = [\mathrm{T]$$[\mathrm{G] = [\mathrm{C]$
 
 **RNA:**
 
@@ -359,7 +359,7 @@ $$
 ATP (adenosine triphosphate) stores energy in its high-energy phosphate bonds.
 
 $$
-\mathrm{ATP{} \rightleftharpoons \mathrm{ADP{} + \mathrm{P{}_i + \mathrm{energy{} \quad (\Delta G \approx -30.5 \mathrm{ kJ/mol{})
+\mathrm{ATP \rightleftharpoons \mathrm{ADP + \mathrm{P_i + \mathrm{energy \quad (\Delta G \approx -30.5 \mathrm{ kJ/mol)
 $$
 
 ATP hydrolysis is exergonic and couples with endergonic reactions to drive them.
@@ -369,7 +369,7 @@ ATP hydrolysis is exergonic and couples with endergonic reactions to drive them.
 The energy released from ATP hydrolysis drives unfavorable reactions by coupling:
 
 $$
-\mathrm{Overall: {} \mathrm{ATP{} + \mathrm{Glucose{} \to \mathrm{ADP{} + \mathrm{Glucose-6-phosphate{} \quad (\Delta G \lt 0)
+\mathrm{Overall:  \mathrm{ATP + \mathrm{Glucose \to \mathrm{ADP + \mathrm{Glucose-6-phosphate \quad (\Delta G \lt 0)
 $$
 
 **Worked Example: Energy coupling in cells.**
@@ -377,7 +377,7 @@ $$
 The phosphorylation of glucose to glucose-6-phosphate has $\Delta G \approx +13.8$ kJ/mol
 (endergonic). ATP hydrolysis has $\Delta G \approx -30.5$ kJ/mol (exergonic). When coupled:
 
-$$\Delta G_{\mathrm{overall{}} = +13.8 + (-30.5) = -16.7 \mathrm{ kJ/mol{}$$
+$$\Delta G_{\mathrm{overall} = +13.8 + (-30.5) = -16.7 \mathrm{ kJ/mol$$
 
 The overall reaction is now exergonic (spontaneous), so the cell can phosphorylate glucose using the
 Energy from ATP hydrolysis.
@@ -422,10 +422,10 @@ Energy from ATP hydrolysis.
 
 7. Explain how ATP hydrolysis can drive an endergonic reaction.
 
-8. A researcher observes that an enzyme has maximum activity at pH 7.0 and $37^\circ\mathrm{C{}$.
+8. A researcher observes that an enzyme has maximum activity at pH 7.0 and $37^\circ\mathrm{C$.
    Explain what happens to the reaction rate if the pH is changed to 10.0 and why.
 
-9. Calculate the pH of a solution with $[\mathrm{H{}^+] = 2.5 \times 10^{-3}$ M.
+9. Calculate the pH of a solution with $[\mathrm{H^+] = 2.5 \times 10^{-3}$ M.
 
 10. A DNA molecule is found to be 24% cytosine. Using Chargaff's rules, determine the percentage of
     all four bases.
@@ -455,7 +455,7 @@ Energy from ATP hydrolysis.
     chains.
 
 20. A student measures enzyme activity at different temperatures and finds that the rate peaks at
-    $40^\circ\mathrm{C{}$ and drops to zero at $60^\circ\mathrm{C{}$. Explain these results with
+    $40^\circ\mathrm{C$ and drops to zero at $60^\circ\mathrm{C$. Explain these results with
     reference to protein structure.
 
 ## Review: Macromolecule Identification Tests
@@ -561,7 +561,7 @@ Their functions.
    strand (semiconservative replication).
 
 **Evidence for semiconservative replication:** The Meselson-Stahl experiment (1958) used heavy
-Nitrogen (${}^{15}\mathrm{N{}$) to label DNA. After one round of replication in ${}^{14}\mathrm{N{}$
+Nitrogen ($^{15}\mathrm{N$) to label DNA. After one round of replication in $^{14}\mathrm{N$
 Medium, all DNA molecules contained one heavy strand and one light strand (intermediate density),
 Ruling out conservative replication. After two rounds, both light and intermediate density DNA was
 Observed, confirming the semiconservative model.
@@ -603,7 +603,7 @@ Layers, which is essential for the function of cell membranes.
 ## Review: Carbohydrate Chemistry in Detail
 
 **Monosaccharides:** The simplest carbohydrates, with the general formula
-$\mathrm{C{}_n(\mathrm{H{}_2\mathrm{O{})_n$. Glucose ($\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6$)
+$\mathrm{C_n(\mathrm{H_2\mathrm{O)_n$. Glucose ($\mathrm{C_6\mathrm{H_{12}\mathrm{O_6$)
 exists In two isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the
 position Of the hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of
 the Ring; in $\beta$-glucose, it is above. This apparently small difference has enormous
@@ -645,8 +645,8 @@ Sugars and give a positive Benedict's test.
 Histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine).
 
 **Zwitterions:** At physiological pH (approximately 7.4), amino acids exist as zwitterions --
-Molecules with both a positive charge (on the amino group, $-\mathrm{NH{}_3^+$) and a negative
-charge (on the carboxyl group, $-\mathrm{COO{}^-$). The overall charge is neutral.
+Molecules with both a positive charge (on the amino group, $-\mathrm{NH_3^+$) and a negative
+charge (on the carboxyl group, $-\mathrm{COO^-$). The overall charge is neutral.
 
 **Peptide bond formation:** A condensation reaction between the carboxyl group of one amino acid and
 The amino group of another forms a peptide bond (covalent bond) and releases a water molecule. A
@@ -668,8 +668,8 @@ The inactive conformation, decreasing its activity.
 Increases the affinity of the other active sites for the substrate. This produces a sigmoidal
 (S-shaped) velocity-vs-substrate curve rather than the hyperbolic curve predicted by the
 Michaelis-Menten equation. Haemoglobin (which is not an enzyme but a transport protein) shows
-Cooperative binding of oxygen: binding of the first $\mathrm{O{}_2$ molecule increases the affinity
-For subsequent $\mathrm{O{}_2$ molecules.
+Cooperative binding of oxygen: binding of the first $\mathrm{O_2$ molecule increases the affinity
+For subsequent $\mathrm{O_2$ molecules.
 
 **Feedback inhibition:** A common form of metabolic regulation where the end product of a pathway
 Inhibits an enzyme early in the pathway. This prevents wasteful overproduction of the end product.
@@ -722,8 +722,8 @@ Of the molecule and how it reacts.
 | ---------------- | --------- | ----------------------------- | ----------------------------------------- |
 | Hydroxyl (-OH)   | -OH       | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds               |
 | Carbonyl (C=O)   | C=O       | Aldehydes, ketones, sugars    | Polar; reactive                           |
-| Carboxyl (-COOH) | -COOH     | Amino acids, fatty acids      | Acts as an acid; releases $\mathrm{H{}^+$ |
-| Amino (-NH$_2$)  | -NH$_2$   | Amino acids                   | Acts as a base; accepts $\mathrm{H{}^+$   |
+| Carboxyl (-COOH) | -COOH     | Amino acids, fatty acids      | Acts as an acid; releases $\mathrm{H^+$ |
+| Amino (-NH$_2$)  | -NH$_2$   | Amino acids                   | Acts as a base; accepts $\mathrm{H^+$   |
 | Phosphate        | -PO$_4$   | ATP, DNA, phospholipids       | Negative charge; energy transfer          |
 | Sulfhydryl (-SH) | -SH       | Cysteine (amino acid)         | Forms disulfide bridges in proteins       |
 
@@ -751,14 +751,14 @@ Strands together?
 <details>
 <summary>Answer</summary>
 
-By Chargaff's rules, $[\mathrm{A{}] = [\mathrm{T{}] = 18\%$.
+By Chargaff's rules, $[\mathrm{A] = [\mathrm{T] = 18\%$.
 
-Since $\mathrm{A{} + \mathrm{T{} + \mathrm{G{} + \mathrm{C{} = 100\%$:
-$\mathrm{G{} + \mathrm{C{} = 100 - 18 - 18 = 64\%$.
+Since $\mathrm{A + \mathrm{T + \mathrm{G + \mathrm{C = 100\%$:
+$\mathrm{G + \mathrm{C = 100 - 18 - 18 = 64\%$.
 
-By Chargaff's rules, $[\mathrm{G{}] = [\mathrm{C{}] = 64 / 2 = 32\%$.
+By Chargaff's rules, $[\mathrm{G] = [\mathrm{C] = 64 / 2 = 32\%$.
 
-So: $\mathrm{A{} = 18\%$$\mathrm{T{} = 18\%$$\mathrm{G{} = 32\%$$\mathrm{C{} = 32\%$.
+So: $\mathrm{A = 18\%$$\mathrm{T = 18\%$$\mathrm{G = 32\%$$\mathrm{C = 32\%$.
 
 Hydrogen bonds: A-T pairs have 2 H-bonds, G-C pairs have 3 H-bonds.
 
@@ -775,10 +775,10 @@ Total hydrogen bonds: $3,600 + 9,600 = 13,200$.
 <details>
 <summary>Question 2: Enzyme kinetics with an inhibitor</summary>
 
-An enzyme has $K_m = 4 \mathrm{ \mu M{}$ and $V_{\max} = 20 \mathrm{ \mu mol/min{}$. In the presence
-Of a competitive inhibitor at $8 \mathrm{ \mu M{}$The apparent $K_m$ increases to
-$12 \mathrm{ \mu M{}$. Calculate the reaction velocity at a substrate concentration of
-$6 \mathrm{ \mu M{}$ both with and without the inhibitor.
+An enzyme has $K_m = 4 \mathrm{ \mu M$ and $V_{\max} = 20 \mathrm{ \mu mol/min$. In the presence
+Of a competitive inhibitor at $8 \mathrm{ \mu M$The apparent $K_m$ increases to
+$12 \mathrm{ \mu M$. Calculate the reaction velocity at a substrate concentration of
+$6 \mathrm{ \mu M$ both with and without the inhibitor.
 
 </details>
 
@@ -786,24 +786,24 @@ $6 \mathrm{ \mu M{}$ both with and without the inhibitor.
 <summary>Answer</summary>
 
 Without inhibitor:
-$v = \frac{V_{\max}[S]}{K_m + [S]} = \frac{20 \times 6}{4 + 6} = \frac{120}{10} = 12 \mathrm{ \mu mol/min{}$.
+$v = \frac{V_{\max}[S]}{K_m + [S]} = \frac{20 \times 6}{4 + 6} = \frac{120}{10} = 12 \mathrm{ \mu mol/min$.
 
 With inhibitor:
-$v = \frac{V_{\max}[S]}{K_m^{app} + [S]} = \frac{20 \times 6}{12 + 6} = \frac{120}{18} = 6.67 \mathrm{ \mu mol/min{}$.
+$v = \frac{V_{\max}[S]}{K_m^{app} + [S]} = \frac{20 \times 6}{12 + 6} = \frac{120}{18} = 6.67 \mathrm{ \mu mol/min$.
 
-The competitive inhibitor reduces the reaction velocity from $12 \mathrm{ \mu mol/min{}$ to
-$6.67 \mathrm{ \mu mol/min{}$ at this substrate concentration. Note that $V_{\max}$ is unchanged; at
-Very high substrate concentrations, both velocities would approach $20 \mathrm{ \mu mol/min{}$.
+The competitive inhibitor reduces the reaction velocity from $12 \mathrm{ \mu mol/min$ to
+$6.67 \mathrm{ \mu mol/min$ at this substrate concentration. Note that $V_{\max}$ is unchanged; at
+Very high substrate concentrations, both velocities would approach $20 \mathrm{ \mu mol/min$.
 
 </details>
 
 <details>
 <summary>Question 3: pH and buffer calculations</summary>
 
-A buffer solution contains $0.10 \mathrm{ M{}$ acetic acid ($\mathrm{CH{}_3\mathrm{COOH{}$
-$\mathrm{p{}K_a = 4.76$) and $0.20 \mathrm{ M{}$ sodium acetate ($\mathrm{CH{}_3\mathrm{COO{}^-$).
-Calculate the pH of this buffer. If $0.01 \mathrm{ mol{}$ of $\mathrm{HCl{}$ is added to
-$1.0 \mathrm{ L{}$ of this buffer, what is the new pH?
+A buffer solution contains $0.10 \mathrm{ M$ acetic acid ($\mathrm{CH_3\mathrm{COOH$
+$\mathrm{pK_a = 4.76$) and $0.20 \mathrm{ M$ sodium acetate ($\mathrm{CH_3\mathrm{COO^-$).
+Calculate the pH of this buffer. If $0.01 \mathrm{ mol$ of $\mathrm{HCl$ is added to
+$1.0 \mathrm{ L$ of this buffer, what is the new pH?
 
 </details>
 
@@ -812,19 +812,19 @@ $1.0 \mathrm{ L{}$ of this buffer, what is the new pH?
 
 Using the Henderson-Hasselbalch equation:
 
-$\mathrm{pH{} = \mathrm{p{}K_a + \log\frac{[\mathrm{A{}^-]}{[\mathrm{HA{}]} = 4.76 + \log\frac{0.20}{0.10} = 4.76 + \log(2) = 4.76 + 0.301 = 5.06$.
+$\mathrm{pH = \mathrm{pK_a + \log\frac{[\mathrm{A^-]}{[\mathrm{HA]} = 4.76 + \log\frac{0.20}{0.10} = 4.76 + \log(2) = 4.76 + 0.301 = 5.06$.
 
-After adding $0.01 \mathrm{ mol{}$ of $\mathrm{HCl{}$ to $1.0 \mathrm{ L{}$:
+After adding $0.01 \mathrm{ mol$ of $\mathrm{HCl$ to $1.0 \mathrm{ L$:
 
-The $\mathrm{HCl{}$ reacts with the conjugate base:
-$\mathrm{CH{}_3\mathrm{COO{}^- + \mathrm{H{}^+ \to \mathrm{CH{}_3\mathrm{COOH{}$.
+The $\mathrm{HCl$ reacts with the conjugate base:
+$\mathrm{CH_3\mathrm{COO^- + \mathrm{H^+ \to \mathrm{CH_3\mathrm{COOH$.
 
-New $[\mathrm{CH{}_3\mathrm{COO{}^-] = 0.20 - 0.01 = 0.19 \mathrm{ M{}$.
+New $[\mathrm{CH_3\mathrm{COO^-] = 0.20 - 0.01 = 0.19 \mathrm{ M$.
 
-New $[\mathrm{CH{}_3\mathrm{COOH{}] = 0.10 + 0.01 = 0.11 \mathrm{ M{}$.
+New $[\mathrm{CH_3\mathrm{COOH] = 0.10 + 0.01 = 0.11 \mathrm{ M$.
 
 New
-$\mathrm{pH{} = 4.76 + \log\frac{0.19}{0.11} = 4.76 + \log(1.727) = 4.76 + 0.237 = 4.997 \approx 5.00$.
+$\mathrm{pH = 4.76 + \log\frac{0.19}{0.11} = 4.76 + \log(1.727) = 4.76 + 0.237 = 4.997 \approx 5.00$.
 
 The pH changed by only $0.06$ units, demonstrating the buffer's effectiveness.
 
@@ -834,8 +834,8 @@ The pH changed by only $0.06$ units, demonstrating the buffer's effectiveness.
 <summary>Question 4: Energy coupling and thermodynamics</summary>
 
 The phosphorylation of fructose-6-phosphate to fructose-1,6-bisphosphate has
-$\Delta G = +16.7 \mathrm{ kJ/mol{}$ under cellular conditions. ATP hydrolysis has
-$\Delta G = -30.5 \mathrm{ kJ/mol{}$. Calculate the overall $\Delta G$ when these reactions are
+$\Delta G = +16.7 \mathrm{ kJ/mol$ under cellular conditions. ATP hydrolysis has
+$\Delta G = -30.5 \mathrm{ kJ/mol$. Calculate the overall $\Delta G$ when these reactions are
 Coupled. Is the overall reaction spontaneous?
 
 </details>
@@ -843,12 +843,12 @@ Coupled. Is the overall reaction spontaneous?
 <details>
 <summary>Answer</summary>
 
-Overall $\Delta G = +16.7 + (-30.5) = -13.8 \mathrm{ kJ/mol{}$.
+Overall $\Delta G = +16.7 + (-30.5) = -13.8 \mathrm{ kJ/mol$.
 
 Since $\Delta G \lt 0$The overall coupled reaction is spontaneous. The energy released by ATP
-Hydrolysis ($-30.5 \mathrm{ kJ/mol{}$) more than compensates for the energy required for the
-Phosphorylation ($+16.7 \mathrm{ kJ/mol{}$). This is how phosphofructokinase drives the committed
-Step of glycolysis forward. The excess energy ($13.8 \mathrm{ kJ/mol{}$) is released as heat.
+Hydrolysis ($-30.5 \mathrm{ kJ/mol$) more than compensates for the energy required for the
+Phosphorylation ($+16.7 \mathrm{ kJ/mol$). This is how phosphofructokinase drives the committed
+Step of glycolysis forward. The excess energy ($13.8 \mathrm{ kJ/mol$) is released as heat.
 
 </details>
 
@@ -856,8 +856,8 @@ Step of glycolysis forward. The excess energy ($13.8 \mathrm{ kJ/mol{}$) is rele
 <summary>Question 5: Protein structure and denaturation</summary>
 
 A researcher discovers that a protein loses its biological activity when heated to
-$45^\circ\mathrm{C{}$But regains full activity when cooled back to $25^\circ\mathrm{C{}$. When
-Heated to $70^\circ\mathrm{C{}$The protein permanently loses activity even after cooling. Explain
+$45^\circ\mathrm{C$But regains full activity when cooled back to $25^\circ\mathrm{C$. When
+Heated to $70^\circ\mathrm{C$The protein permanently loses activity even after cooling. Explain
 These observations with reference to the levels of protein structure.
 
 </details>
@@ -865,13 +865,13 @@ These observations with reference to the levels of protein structure.
 <details>
 <summary>Answer</summary>
 
-At $45^\circ\mathrm{C{}$The protein undergoes reversible denaturation. The secondary and tertiary
+At $45^\circ\mathrm{C$The protein undergoes reversible denaturation. The secondary and tertiary
 Structures are disrupted (hydrogen bonds, hydrophobic interactions, and ionic bonds break), causing
 The protein to unfold and lose its active site shape. However, the primary structure (amino acid
 Sequence) remains intact. When cooled, these non-covalent interactions can re-form, allowing the
 Protein to refold into its native, functional conformation.
 
-At $70^\circ\mathrm{C{}$The denaturation is irreversible. At this higher temperature, the protein
+At $70^\circ\mathrm{C$The denaturation is irreversible. At this higher temperature, the protein
 May aggregate (unfolded proteins expose hydrophobic regions that stick together), or disulfide
 Bridges (covalent bonds) may be disrupted. Once aggregated or covalently damaged, the protein cannot
 Refold correctly upon cooling because the protein is trapped in incorrect, aggregated conformations.

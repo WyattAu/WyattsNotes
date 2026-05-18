@@ -22,7 +22,7 @@ Pointer mechanism, and the Empty Base Optimization (EBO).
 For a class with no virtual functions and no base classes, the memory layout is straightforward:
 Data members are laid out in declaration order with potential padding between them for alignment
 [N4950 §11.4.1]. Each non-static data member occupies
-$\lceil \mathrm{size{} / \mathrm{alignment{} \rceil \times \mathrm{alignment{}$ bytes.
+$\lceil \mathrm{size / \mathrm{alignment \rceil \times \mathrm{alignment$ bytes.
 
 ```cpp
 #include <cstddef>
@@ -56,7 +56,7 @@ int main() {
 The layout on a typical 64-bit System V ABI platform is:
 
 $$
-\mathrm{sizeof{}(\texttt{Simple}) = 1 + 3\mathrm{(pad){} + 4 + 1 + 3\mathrm{(pad){} + 8 = 24
+\mathrm{sizeof(\texttt{Simple}) = 1 + 3\mathrm{(pad) + 4 + 1 + 3\mathrm{(pad) + 8 = 24
 $$
 
 :::tip Standard Layout A class with no virtual functions, no non-static data members of reference

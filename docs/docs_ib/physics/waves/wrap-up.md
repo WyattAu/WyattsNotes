@@ -474,8 +474,8 @@ Less than $c$:
 
 $$\frac{\Delta\lambda}{\lambda} \approx \frac{v}{c}$$
 
-- **Redshift** ($\Delta\lambda \gt{} 0$): source moving away from observer
-- **Blueshift** ($\Delta\lambda \lt{} 0$): source moving towards observer
+- **Redshift** ($\Delta\lambda \gt 0$): source moving away from observer
+- **Blueshift** ($\Delta\lambda \lt 0$): source moving towards observer
 
 ### Worked Example: Ambulance Siren
 

@@ -220,7 +220,7 @@ Two fusion processes convert hydrogen to helium:
 1. **Proton--proton (pp) chain** --- dominant in stars with $T \lt 1.5 \times 10^7$ K (like the
    Sun):
 
-   $$4\,{}^{1}\mathrm{H} \rightarrow {}^{4}\mathrm{He} + 2e^+ + 2\nu_e + 2\gamma$$
+   $$4\,^{1}\mathrm{H} \rightarrow ^{4}\mathrm{He} + 2e^+ + 2\nu_e + 2\gamma$$
 
 Energy released per reaction: $\sim 26.7$ MeV.
 
@@ -240,8 +240,8 @@ And therefore exhausts its fuel much faster. More massive stars have **shorter**
 1. **Main sequence** --- hydrogen fuses to helium in the core ($\sim 10^{10}$ years for solar-mass
    stars).
 2. **Red giant** --- hydrogen shell burning causes the envelope to expand and cool. A helium flash
-   ignites helium fusion in the core (${}^{4}\mathrm{He}$ to ${}^{12}\mathrm{C}$ and
-   ${}^{16}\mathrm{O}$).
+   ignites helium fusion in the core ($^{4}\mathrm{He}$ to $^{12}\mathrm{C}$ and
+   $^{16}\mathrm{O}$).
 3. **Planetary nebula** --- the outer layers are gently ejected, exposing the hot core.
 4. **White dwarf** --- the remaining core ( $\sim 0.6\;M_\odot$), supported by **electron degeneracy
    pressure**. No fusion occurs; it slowly cools over billions of years.

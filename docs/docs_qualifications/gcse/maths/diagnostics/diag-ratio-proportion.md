@@ -32,11 +32,11 @@ $= 27 \times \frac{25}{9} = 3 \times 25 = 75$ cm$^2$.
 ### UT-2: Compound Measures
 
 **Question:** (a) A car travels 180 km in 2.5 hours. Calculate its average speed in km/h and m/s.
-(b) The density of aluminium is $2.7 \text{ g/cm{}^3$. Calculate the mass of an aluminium block
-measuring $5 \text{ cm{} \times 3 \text{ cm{} \times 10 \text{ cm{}$. (c) A pressure of
-$1500 \text{ N/m{}^2$ is exerted on an area of $0.8 \text{ m{}^2$. Calculate the force. (d) Water
-flows through a pipe at a rate of $0.5 \text{ m{}^3$/minute. How long does it take to fill a tank of
-volume $12 \text{ m{}^3$?
+(b) The density of aluminium is $2.7 \text{ g/cm^3$. Calculate the mass of an aluminium block
+measuring $5 \text{ cm \times 3 \text{ cm \times 10 \text{ cm$. (c) A pressure of
+$1500 \text{ N/m^2$ is exerted on an area of $0.8 \text{ m^2$. Calculate the force. (d) Water
+flows through a pipe at a rate of $0.5 \text{ m^3$/minute. How long does it take to fill a tank of
+volume $12 \text{ m^3$?
 
 **Solution:**
 
@@ -45,7 +45,7 @@ $72 \times \frac{1000}{3600} = 72 \times \frac{5}{18} = 20$ m/s.
 
 (b) Volume $= 5 \times 3 \times 10 = 150$ cm$^3$. Mass $= 2.7 \times 150 = 405$ g.
 
-(c) Force $= \text{Pressure{} \times \text{Area{} = 1500 \times 0.8 = 1200$ N.
+(c) Force $= \text{Pressure \times \text{Area = 1500 \times 0.8 = 1200$ N.
 
 (d) Time $= 12 / 0.5 = 24$ minutes.
 
@@ -102,7 +102,7 @@ $= 150 + 600 + 120 = 870$ m.
 ### IT-2: Density and Proportion in Context (with Geometry)
 
 **Question:** A solid metal cone has a base radius of 6 cm, height of 10 cm, and density of
-$8.5 \text{ g/cm{}^3$. (a) Calculate the volume and mass of the cone. (b) The cone is melted down
+$8.5 \text{ g/cm^3$. (a) Calculate the volume and mass of the cone. (b) The cone is melted down
 and recast into a sphere of the same metal. Calculate the radius of the sphere. (c) A second cone
 has the same mass but half the height. If the density is the same, what is the ratio of the radii of
 the two cones? (d) If the original cone is instead cut in half horizontally (at half its height),

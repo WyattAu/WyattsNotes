@@ -131,27 +131,27 @@ Movement of molecules against the concentration gradient using ATP and carrier p
 
 ### Osmosis and Water Potential (HL)
 
-Water potential ($\psi$) is measured in kilopascals (kPa). Pure water has $\psi = 0\mathrm{ kPa{}$.
+Water potential ($\psi$) is measured in kilopascals (kPa). Pure water has $\psi = 0\mathrm{ kPa$.
 
 - Solutions have negative water potential.
 - Water moves from high (less negative) to low (more negative) water potential.
 
-**Example (HL):** A cell with $\psi_{\mathrm{cell{}} = -500\mathrm{ kPa{}$ is placed in a solution
-with $\psi_{\mathrm{solution{}} = -300\mathrm{ kPa{}$. Water enters the cell (moves from -300 to
+**Example (HL):** A cell with $\psi_{\mathrm{cell} = -500\mathrm{ kPa$ is placed in a solution
+with $\psi_{\mathrm{solution} = -300\mathrm{ kPa$. Water enters the cell (moves from -300 to
 -500).
 
 **Worked Example: Predicting osmosis in plant cells.**
 
-A plant cell with $\psi_{\mathrm{cell{}} = -700$ kPa is placed in three different solutions:
+A plant cell with $\psi_{\mathrm{cell} = -700$ kPa is placed in three different solutions:
 
-(a) $\psi_{\mathrm{solution{}} = -200$ kPa (hypotonic): Water enters. The cell becomes turgid. The
+(a) $\psi_{\mathrm{solution} = -200$ kPa (hypotonic): Water enters. The cell becomes turgid. The
 cell Wall prevents bursting by exerting inward pressure (turgor pressure) that opposes further water
 Entry.
 
-(b) $\psi_{\mathrm{solution{}} = -700$ kPa (isotonic): No net water movement. The cell is in
+(b) $\psi_{\mathrm{solution} = -700$ kPa (isotonic): No net water movement. The cell is in
 Equilibrium with the solution.
 
-(c) $\psi_{\mathrm{solution{}} = -1000$ kPa (hypertonic): Water leaves the cell. The cell membrane
+(c) $\psi_{\mathrm{solution} = -1000$ kPa (hypertonic): Water leaves the cell. The cell membrane
 Pulls away from the cell wall (plasmolysis). The cell becomes flaccid.
 
 ## Cell Division
@@ -266,7 +266,7 @@ The rate is zero.
 ### Equation
 
 $$
-6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} \xrightarrow{\mathrm{light{}} \mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2
+6\mathrm{CO_2 + 6\mathrm{H_2\mathrm{O \xrightarrow{\mathrm{light} \mathrm{C_6\mathrm{H_{12}\mathrm{O_6 + 6\mathrm{O_2
 $$
 
 ### Light-Dependent Reactions (HL)
@@ -274,31 +274,31 @@ $$
 - Occur in the thylakoid membranes.
 - Light energy is absorbed by chlorophyll.
 - Water is split (photolysis):
-  $2\mathrm{H{}_2\mathrm{O{} \to 4\mathrm{H{}^+ + 4e^- + \mathrm{O{}_2$.
+  $2\mathrm{H_2\mathrm{O \to 4\mathrm{H^+ + 4e^- + \mathrm{O_2$.
 - ATP is produced (photophosphorylation).
 - NADP$^+$ is reduced to NADPH.
 
 ### Light-Independent Reactions (Calvin Cycle) (HL)
 
 - Occur in the stroma.
-- $\mathrm{CO{}_2$ is fixed by RuBisCO: $\mathrm{CO{}_2 + \mathrm{RuBP{} \to 2 \times \mathrm{GP{}$.
+- $\mathrm{CO_2$ is fixed by RuBisCO: $\mathrm{CO_2 + \mathrm{RuBP \to 2 \times \mathrm{GP$.
 - GP is reduced to GALP using ATP and NADPH.
 - GALP is used to make glucose and regenerate RuBP.
 
 ### Factors Affecting Photosynthesis (OL/HL)
 
 - Light intensity (increases rate until plateau).
-- $\mathrm{CO{}_2$ concentration (increases rate until plateau).
+- $\mathrm{CO_2$ concentration (increases rate until plateau).
 - Temperature (increases to optimum, then decreases).
 
 **Worked Example: Limiting factors in photosynthesis.**
 
 At low light intensity, light is the limiting factor. Increasing light increases the rate. At a
-Certain point, light is no longer limiting (another factor is). If $\mathrm{CO{}_2$ concentration is
+Certain point, light is no longer limiting (another factor is). If $\mathrm{CO_2$ concentration is
 Low, increasing light further will have no effect.
 
-At high $\mathrm{CO{}_2$ concentration, $\mathrm{CO{}_2$ is not limiting. If light is low,
-increasing $\mathrm{CO{}_2$ will have no effect.
+At high $\mathrm{CO_2$ concentration, $\mathrm{CO_2$ is not limiting. If light is low,
+increasing $\mathrm{CO_2$ will have no effect.
 
 This is an application of Blackman's law of limiting factors: at any given time, only one factor is
 Limiting.
@@ -308,17 +308,17 @@ Limiting.
 ### Aerobic Respiration
 
 $$
-\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 + 6\mathrm{O{}_2 \to 6\mathrm{CO{}_2 + 6\mathrm{H{}_2\mathrm{O{} + \mathrm{ATP{}
+\mathrm{C_6\mathrm{H_{12}\mathrm{O_6 + 6\mathrm{O_2 \to 6\mathrm{CO_2 + 6\mathrm{H_2\mathrm{O + \mathrm{ATP
 $$
 
 **Stages (HL):**
 
 1. **Glycolysis** (cytoplasm): glucose is split into 2 pyruvate. Net gain: 2 ATP, 2 NADH.
 
-2. **Link reaction** (mitochondrial matrix): pyruvate $\to$ acetyl-CoA. Produces $\mathrm{CO{}_2$
+2. **Link reaction** (mitochondrial matrix): pyruvate $\to$ acetyl-CoA. Produces $\mathrm{CO_2$
    and NADH.
 
-3. **Krebs cycle** (mitochondrial matrix): acetyl-CoA enters the cycle. Produces $\mathrm{CO{}_2$
+3. **Krebs cycle** (mitochondrial matrix): acetyl-CoA enters the cycle. Produces $\mathrm{CO_2$
    NADH, FADH$_2$And 2 ATP per glucose.
 
 4. **Electron transport chain** (inner mitochondrial membrane): NADH and FADH$_2$ donate electrons.
@@ -331,13 +331,13 @@ $$
 **In yeast (fermentation):**
 
 $$
-\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 \to 2\mathrm{C{}_2\mathrm{H{}_5\mathrm{OH{} + 2\mathrm{CO{}_2 + 2\mathrm{ATP{}
+\mathrm{C_6\mathrm{H_{12}\mathrm{O_6 \to 2\mathrm{C_2\mathrm{H_5\mathrm{OH + 2\mathrm{CO_2 + 2\mathrm{ATP
 $$
 
 **In muscle cells:**
 
 $$
-\mathrm{C{}_6\mathrm{H{}_{12}\mathrm{O{}_6 \to 2\mathrm{C{}_3\mathrm{H{}_6\mathrm{O{}_3 + 2\mathrm{ATP{}
+\mathrm{C_6\mathrm{H_{12}\mathrm{O_6 \to 2\mathrm{C_3\mathrm{H_6\mathrm{O_3 + 2\mathrm{ATP
 $$
 
 (Lactate is produced, causing muscle fatigue.)
@@ -348,7 +348,7 @@ $$
 | ------------- | --------------------------------------------- | ------------------ | -------------------------- |
 | Oxygen needed | Yes                                           | No                 | No                         |
 | Location      | Cytoplasm and mitochondria                    | Cytoplasm          | Cytoplasm                  |
-| Products      | $\mathrm{CO{}_2$ + $\mathrm{H{}_2\mathrm{O{}$ | Lactate            | Ethanol + $\mathrm{CO{}_2$ |
+| Products      | $\mathrm{CO_2$ + $\mathrm{H_2\mathrm{O$ | Lactate            | Ethanol + $\mathrm{CO_2$ |
 | ATP yield     | ~30-38 per glucose                            | 2 per glucose      | 2 per glucose              |
 | Efficiency    | High                                          | Low                | Low                        |
 
@@ -486,19 +486,19 @@ Of the cell. The vacuole would shrink and the cell membrane would pull away from
 ## Review: Photosynthesis -- The Light-Independent Reactions (Calvin Cycle)
 
 The Calvin cycle takes place in the stroma of the chloroplast and uses the products of the
-Light-dependent reactions (ATP and NADPH) to fix $\mathrm{CO{}_2$ into organic molecules.
+Light-dependent reactions (ATP and NADPH) to fix $\mathrm{CO_2$ into organic molecules.
 
 **Three phases:**
 
-1. **Carbon fixation:** RuBisCO catalyses the reaction between $\mathrm{CO{}_2$ and RuBP (a 5-carbon
+1. **Carbon fixation:** RuBisCO catalyses the reaction between $\mathrm{CO_2$ and RuBP (a 5-carbon
    compound) to produce two molecules of 3-PGA (3-phosphoglycerate, a 3-carbon compound).
 2. **Reduction:** 3-PGA is phosphorylated by ATP and then reduced by NADPH to produce G3P
    (glyceraldehyde-3-phosphate).
 3. **Regeneration:** Most G3P molecules are used to regenerate RuBP using ATP, so the cycle can
-   continue. For every 3 $\mathrm{CO{}_2$ fixed, 6 G3P are produced, but only 1 is a net gain. The
+   continue. For every 3 $\mathrm{CO_2$ fixed, 6 G3P are produced, but only 1 is a net gain. The
    other 5 are recycled.
 
-**To produce one glucose molecule:** 6 $\mathrm{CO{}_2$ must be fixed (the cycle turns 6 times),
+**To produce one glucose molecule:** 6 $\mathrm{CO_2$ must be fixed (the cycle turns 6 times),
 Consuming 18 ATP and 12 NADPH. Two G3P molecules combine to form one glucose.
 
 **Why the Calvin cycle depends on the light reactions:** Without ATP and NADPH from the
@@ -546,7 +546,7 @@ Majority of ATP.
 3. Ubiquinone carries electrons to Complex III (cytochrome bc1 complex). Electrons are passed to
    cytochrome c.
 4. Cytochrome c carries electrons to Complex IV (cytochrome c oxidase).
-5. Complex IV transfers electrons to the final electron acceptor, oxygen ($\mathrm{O{}_2$), which
+5. Complex IV transfers electrons to the final electron acceptor, oxygen ($\mathrm{O_2$), which
    combines with hydrogen ions to form water.
 
 **Chemiosmosis:** As electrons pass through Complexes I, III, and IV, protons are pumped from the
@@ -572,7 +572,7 @@ Due to proton leak across the inner membrane and the energy cost of transporting
 
 ## Review: Factors Affecting the Rate of Photosynthesis
 
-Photosynthesis is affected by three main factors: light intensity, $\mathrm{CO{}_2$ concentration,
+Photosynthesis is affected by three main factors: light intensity, $\mathrm{CO_2$ concentration,
 and Temperature. At any given time, the rate of photosynthesis is limited by whichever factor is in
 Shortest supply (Blackman's law of limiting factors).
 
@@ -580,17 +580,17 @@ Shortest supply (Blackman's law of limiting factors).
 
 - At low light intensity, the rate of photosynthesis increases linearly with increasing light.
 - As light intensity increases, the rate begins to level off (light is no longer the limiting
-  factor; another factor such as $\mathrm{CO{}_2$ concentration or temperature is limiting).
+  factor; another factor such as $\mathrm{CO_2$ concentration or temperature is limiting).
 - At very high light intensity, the rate may decrease due to photoinhibition (damage to chlorophyll
   and other photosynthetic pigments).
 
-**$\mathrm{CO{}_2$ concentration:**
+**$\mathrm{CO_2$ concentration:**
 
-- At low $\mathrm{CO{}_2$The rate of photosynthesis increases with increasing $\mathrm{CO{}_2$.
-- The rate levels off as $\mathrm{CO{}_2$ is no longer limiting (another factor such as light or
+- At low $\mathrm{CO_2$The rate of photosynthesis increases with increasing $\mathrm{CO_2$.
+- The rate levels off as $\mathrm{CO_2$ is no longer limiting (another factor such as light or
   temperature becomes limiting).
-- Very high $\mathrm{CO{}_2$ concentrations may reduce the rate of photosynthesis in some plants by
-  causing stomata to close, which limits $\mathrm{CO{}_2$ uptake and reduces transpirational
+- Very high $\mathrm{CO_2$ concentrations may reduce the rate of photosynthesis in some plants by
+  causing stomata to close, which limits $\mathrm{CO_2$ uptake and reduces transpirational
   cooling.
 
 **Temperature:**
@@ -605,28 +605,28 @@ Shortest supply (Blackman's law of limiting factors).
 **Worked Example: Interpreting a graph of photosynthesis rate.**
 
 A graph shows the rate of photosynthesis at different light intensities at two different
-$\mathrm{CO{}_2$ concentrations (low and high):
+$\mathrm{CO_2$ concentrations (low and high):
 
-At low $\mathrm{CO{}_2$The rate plateaus at a lower value than at high $\mathrm{CO{}_2$. This is
-because $\mathrm{CO{}_2$ becomes limiting at a lower light intensity when $\mathrm{CO{}_2$
-concentration is low. At high $\mathrm{CO{}_2$A higher light intensity is required before
-$\mathrm{CO{}_2$ becomes limiting, So the plateau is higher. This demonstrates that the factors
+At low $\mathrm{CO_2$The rate plateaus at a lower value than at high $\mathrm{CO_2$. This is
+because $\mathrm{CO_2$ becomes limiting at a lower light intensity when $\mathrm{CO_2$
+concentration is low. At high $\mathrm{CO_2$A higher light intensity is required before
+$\mathrm{CO_2$ becomes limiting, So the plateau is higher. This demonstrates that the factors
 interact: the level at which one factor Becomes limiting depends on the availability of the other
 factors.
 
 **The Calvin cycle in detail:**
 
 The Calvin cycle (light-independent reactions) occurs in the stroma of the chloroplast and uses the
-Products of the light-dependent reactions (ATP and NADPH) to fix $\mathrm{CO{}_2$ into organic
+Products of the light-dependent reactions (ATP and NADPH) to fix $\mathrm{CO_2$ into organic
 Molecules.
 
 **Stage 1 -- Carbon fixation:**
 
-$\mathrm{CO{}_2$ diffuses into the leaf through the stomata and enters the chloroplast. The enzyme
+$\mathrm{CO_2$ diffuses into the leaf through the stomata and enters the chloroplast. The enzyme
 RuBisCO (ribulose-1,5-bisphosphate carboxylase/oxygenase) catalyses the reaction between
-$\mathrm{CO{}_2$ and ribulose bisphosphate (RuBP, a 5-carbon compound):
+$\mathrm{CO_2$ and ribulose bisphosphate (RuBP, a 5-carbon compound):
 
-$$\mathrm{CO{}_2 + \mathrm{RuBP (5C){} \to 2 \times \mathrm{glycerate 3-phosphate (GP, 3C){}$$
+$$\mathrm{CO_2 + \mathrm{RuBP (5C) \to 2 \times \mathrm{glycerate 3-phosphate (GP, 3C)$$
 
 RuBisCO is the most abundant protein on Earth, but it is inefficient: it can also react with oxygen
 (photorespiration), which reduces the efficiency of photosynthesis, especially at high temperatures.
@@ -636,17 +636,17 @@ RuBisCO is the most abundant protein on Earth, but it is inefficient: it can als
 GP is reduced to triose phosphate (TP, also called glyceraldehyde-3-phosphate or G3P) using ATP and
 NADPH:
 
-$$\mathrm{GP{} + \mathrm{ATP{} + \mathrm{NADPH{} \to \mathrm{TP{} + \mathrm{NADP{}^+ + \mathrm{ADP{} + P_i$$
+$$\mathrm{GP + \mathrm{ATP + \mathrm{NADPH \to \mathrm{TP + \mathrm{NADP^+ + \mathrm{ADP + P_i$$
 
 **Stage 3 -- Regeneration of RuBP:**
 
-For every 3 molecules of $\mathrm{CO{}_2$ fixed, 6 molecules of TP are produced. Of these, 5 TP
+For every 3 molecules of $\mathrm{CO_2$ fixed, 6 molecules of TP are produced. Of these, 5 TP
 Molecules are used to regenerate 3 molecules of RuBP (using 3 ATP), and 1 TP molecule is the net
 Product that can be used to make glucose and other organic molecules.
 
-**Overall equation for the Calvin cycle (per 3 $\mathrm{CO{}_2$):**
+**Overall equation for the Calvin cycle (per 3 $\mathrm{CO_2$):**
 
-$$3\mathrm{CO{}_2 + 9\mathrm{ATP{} + 6\mathrm{NADPH{} \to \mathrm{TP (for glucose){} + 9\mathrm{ADP{} + 8P_i + 6\mathrm{NADP{}^+$$
+$$3\mathrm{CO_2 + 9\mathrm{ATP + 6\mathrm{NADPH \to \mathrm{TP (for glucose) + 9\mathrm{ADP + 8P_i + 6\mathrm{NADP^+$$
 
 **Uses of triose phosphate:**
 
@@ -657,10 +657,10 @@ $$3\mathrm{CO{}_2 + 9\mathrm{ATP{} + 6\mathrm{NADPH{} \to \mathrm{TP (for glucos
 
 **Factors affecting the rate of photosynthesis -- carbon dioxide concentration:**
 
-- Increasing $\mathrm{CO{}_2$ concentration increases the rate of photosynthesis because more
-  $\mathrm{CO{}_2$ is available for fixation by RuBisCO.
+- Increasing $\mathrm{CO_2$ concentration increases the rate of photosynthesis because more
+  $\mathrm{CO_2$ is available for fixation by RuBisCO.
 - The rate plateaus when another factor (light or temperature) becomes limiting.
-- Commercial glasshouse growers often supplement $\mathrm{CO{}_2$ to approximately 1000 ppm
+- Commercial glasshouse growers often supplement $\mathrm{CO_2$ to approximately 1000 ppm
   (compared to approximately 420 ppm in the atmosphere) to increase crop yields.
 
 **Leaf structure and its role in photosynthesis:**
@@ -671,19 +671,19 @@ Gas exchange:
 | Leaf structure     | Adaptation for photosynthesis                                     |
 | ------------------ | ----------------------------------------------------------------- |
 | Large surface area | Maximises light absorption                                        |
-| Thin               | Short diffusion distance for $\mathrm{CO{}_2$ and $\mathrm{O{}_2$ |
+| Thin               | Short diffusion distance for $\mathrm{CO_2$ and $\mathrm{O_2$ |
 | Waxy cuticle       | Prevents water loss by evaporation                                |
 | Palisade mesophyll | Cells packed with chloroplasts near the upper surface             |
 | Spongy mesophyll   | Air spaces allow gas diffusion                                    |
-| Stomata            | Pores for $\mathrm{CO{}_2$ entry and $\mathrm{O{}_2$ exit         |
+| Stomata            | Pores for $\mathrm{CO_2$ entry and $\mathrm{O_2$ exit         |
 | Xylem              | Transports water to the leaf                                      |
 | Phloem             | Transports sugars (products of photosynthesis) away               |
 
 **Gas exchange in the leaf:**
 
-$\mathrm{CO{}_2$ diffuses into the leaf through the stomata (pores on the lower surface), through
+$\mathrm{CO_2$ diffuses into the leaf through the stomata (pores on the lower surface), through
 the Air spaces in the spongy mesophyll, and into the palisade mesophyll cells, where it is used in
-the Calvin cycle. $\mathrm{O{}_2$ (a product of the light-dependent reactions) diffuses out by the
+the Calvin cycle. $\mathrm{O_2$ (a product of the light-dependent reactions) diffuses out by the
 reverse Path.
 
 The opening and closing of stomata is controlled by guard cells. When guard cells are turgid (full
@@ -697,8 +697,8 @@ Commercial growers manipulate environmental conditions to maximise crop yields:
 
 - **Temperature:** Maintained at the optimum for photosynthesis (approximately 25$\degree$C).
   Heating systems are used in winter, and ventilation or shading is used in summer.
-- **$\mathrm{CO{}_2$ concentration:** Supplemented to approximately 1000 ppm using $\mathrm{CO{}_2$
-  burners or compressed $\mathrm{CO{}_2$ delivery systems.
+- **$\mathrm{CO_2$ concentration:** Supplemented to approximately 1000 ppm using $\mathrm{CO_2$
+  burners or compressed $\mathrm{CO_2$ delivery systems.
 - **Light intensity:** Supplementary lighting is used during winter months to extend the photoperiod
   and increase the daily light integral.
 
@@ -713,7 +713,7 @@ Production at different light intensities.
 **Method:**
 
 1. Cut a piece of Elodea and place it in a test tube filled with water and sodium hydrogen carbonate
-   solution (to provide $\mathrm{CO{}_2$).
+   solution (to provide $\mathrm{CO_2$).
 2. Place the test tube at a set distance from a lamp.
 3. Count the number of oxygen bubbles produced per minute.
 4. Repeat at different distances from the lamp (varying light intensity).
@@ -723,7 +723,7 @@ Production at different light intensities.
 
 - At low light intensity, the rate of photosynthesis increases linearly with increasing light
   intensity (light is the limiting factor).
-- At higher light intensity, the rate begins to level off as another factor ($\mathrm{CO{}_2$ or
+- At higher light intensity, the rate begins to level off as another factor ($\mathrm{CO_2$ or
   temperature) becomes limiting.
 - The graph shows a characteristic curve that plateaus.
 
@@ -733,8 +733,8 @@ Production at different light intensities.
   gas in a gas syringe and measure the volume.
 - Heat from the lamp may affect the temperature. A heat filter (water bath) should be placed between
   the lamp and the plant.
-- The plant may deplete the $\mathrm{CO{}_2$ in the water. Using sodium hydrogen carbonate solution
-  ensures $\mathrm{CO{}_2$ is not limiting.
+- The plant may deplete the $\mathrm{CO_2$ in the water. Using sodium hydrogen carbonate solution
+  ensures $\mathrm{CO_2$ is not limiting.
 
 ## Summary
 

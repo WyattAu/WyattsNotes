@@ -25,12 +25,12 @@ Find the domain of $f \circ g$.
 
 We need the range of $g$ to fall within the domain of $f$.
 
-$\mathrm{dom}(g) = \\{x \in \mathbb{{'}R{}'} : x \neq -2\\}$.
+$\mathrm{dom}(g) = \\{x \in \mathbb{R} : x \neq -2\\}$.
 
-$\mathrm{ran}(g) = \\{y \in \mathbb{{'}R{}'} : y \neq 0\\}$ since $g(x) = \dfrac{1}{x+2}$ can take
+$\mathrm{ran}(g) = \\{y \in \mathbb{R} : y \neq 0\\}$ since $g(x) = \dfrac{1}{x+2}$ can take
 any non-zero real value.
 
-$\mathrm{dom}(f) = \\{x \in \mathbb{{'}R{}'} : x \geq 1\\}$.
+$\mathrm{dom}(f) = \\{x \in \mathbb{R} : x \geq 1\\}$.
 
 For $f \circ g$ to be defined, we need $g(x) \geq 1$:
 
@@ -111,7 +111,7 @@ the sign.
 
 **Question:**
 
-Let $f(x) = x^2 - 4x + 3$$x \in \mathbb{{'}R{}'}$.
+Let $f(x) = x^2 - 4x + 3$$x \in \mathbb{R}$.
 
 (a) Show that $f$ is not injective. (b) Restrict the domain so that $f^{-1}$ exists and find
 $f^{-1}(x)$.
@@ -156,7 +156,7 @@ Complete the square:
 
 $$= 4\left(x^2 + x\right) + 2 = 4\left(x + \tfrac{1}{2}\right)^2 - 1 + 2 = 4\left(x + \tfrac{1}{2}\right)^2 + 1$$
 
-Since $4\left(x + \tfrac{1}{2}\right)^2 \geq 0$ for all $x \in \mathbb{{'}R{}'}$:
+Since $4\left(x + \tfrac{1}{2}\right)^2 \geq 0$ for all $x \in \mathbb{R}$:
 
 $$\mathrm{ran}(g \circ f) = [1,\; \infty)$$
 
@@ -206,7 +206,7 @@ Let $f(x) = \log_2(x + 1)$$x > -1$. Find $f^{-1}(x)$ and solve $f(x) = f^{-1}(x)
 
 $y = \log_2(x + 1) \implies 2^y = x + 1 \implies x = 2^y - 1$.
 
-So $f^{-1}(x) = 2^x - 1$ with $\mathrm{dom}(f^{-1}) = \mathbb{{'}R{}'}$.
+So $f^{-1}(x) = 2^x - 1$ with $\mathrm{dom}(f^{-1}) = \mathbb{R}$.
 
 Solving $f(x) = f^{-1}(x)$:
 
@@ -271,7 +271,7 @@ Find the domain and range of $f(x) = \dfrac{2}{x^2 + 1}$.
 
 Domain: $x^2 + 1 \neq 0$ for all real $x$ (since $x^2 \geq 0$).
 
-$$\mathrm{dom}(f) = \mathbb{{'}R{}'}$$
+$$\mathrm{dom}(f) = \mathbb{R}$$
 
 Range: $x^2 + 1 \geq 1$ for all $x$So $0 < \dfrac{2}{x^2 + 1} \leq 2$.
 
@@ -403,7 +403,7 @@ Domain of $f \circ g$: we need $x - 4 \geq 0$I.e. $x \geq 4$.
 
 $$\mathrm{dom}(f \circ g) = [4,\; \infty)$$
 
-Note: $g(x) = x - 4$ is defined for all $x \in \mathbb{{'}R{}'}$But the range of $g$ must fall
+Note: $g(x) = x - 4$ is defined for all $x \in \mathbb{R}$But the range of $g$ must fall
 within the domain of $f$ (which is $[0, \infty)$), so $g(x) \geq 0 \implies x \geq 4$.
 
 ---
@@ -480,11 +480,11 @@ $$f^{-1}(x) = \frac{2x + 1}{3 - x}$$
 
 (b) $\mathrm{dom}(f^{-1}) = \mathrm{ran}(f)$. Since
 $f(x) = \dfrac{3x - 1}{x + 2} = 3 - \dfrac{7}{x + 2}$ and $\dfrac{7}{x+2}$ takes all non-zero real
-values, $\mathrm{ran}(f) = \mathbb{{'}R{}'} \setminus \{3\}$.
+values, $\mathrm{ran}(f) = \mathbb{R} \setminus \{3\}$.
 
-$\mathrm{dom}(f^{-1}) = \{x \in \mathbb{{'}R{}'} : x \neq 3\}$.
+$\mathrm{dom}(f^{-1}) = \{x \in \mathbb{R} : x \neq 3\}$.
 
-$\mathrm{ran}(f^{-1}) = \mathrm{dom}(f) = \{x \in \mathbb{{'}R{}'} : x \neq -2\}$.
+$\mathrm{ran}(f^{-1}) = \mathrm{dom}(f) = \{x \in \mathbb{R} : x \neq -2\}$.
 
 (c) $\dfrac{3x - 1}{x + 2} = x \implies 3x - 1 = x^2 + 2x \implies x^2 - x + 1 = 0$.
 
@@ -526,7 +526,7 @@ $f(x) = \dfrac{1}{5}$. (2 marks)
 
 (a) $x^2 - 4 \neq 0 \implies x \neq \pm 2$.
 
-$$\mathrm{dom}(f) = \{x \in \mathbb{{'}R{}'} : x \neq -2 \text{ and } x \neq 2\}$$
+$$\mathrm{dom}(f) = \{x \in \mathbb{R} : x \neq -2 \text{ and } x \neq 2\}$$
 
 (b) Let $y = \dfrac{1}{x^2 - 4}$. Then $x^2 - 4 = \dfrac{1}{y}$So
 $x^2 = 4 + \dfrac{1}{y} = \dfrac{4y + 1}{y}$.
@@ -554,10 +554,10 @@ Explain the relationship between $f$ and $g$. (1 mark)
 
 (a) $f \circ g(x) = f(\log_2 x) = 2^{\log_2 x} = x$For $x > 0$.
 
-(b) $g \circ f(x) = g(2^x) = \log_2(2^x) = x$For all $x \in \mathbb{{'}R{}'}$.
+(b) $g \circ f(x) = g(2^x) = \log_2(2^x) = x$For all $x \in \mathbb{R}$.
 
 (c) $f$ and $g$ are inverse functions of each other. $f \circ g = \mathrm{id}$ on $(0, \infty)$ and
-$g \circ f = \mathrm{id}$ on $\mathbb{{'}R{}'}$.
+$g \circ f = \mathrm{id}$ on $\mathbb{R}$.
 
 ---
 

@@ -51,7 +51,7 @@ A **prime** not close to a power of 2.
 
 $$h(k) = \lfloor m \cdot (k \cdot A \bmod 1) \rfloor$$
 
-Where $A$ is a constant $0 \lt{} A \lt{} 1$ (Knuth suggests
+Where $A$ is a constant $0 \lt A \lt 1$ (Knuth suggests
 $A = \frac◆LB◆\sqrt{5} - 1◆RB◆◆LB◆2◆RB◆ \approx 0.618$).
 
 **Advantage:** Works well with any value of $m$.
@@ -82,7 +82,7 @@ $h(k_1) = h(k_2)$.
 **Theorem (Pigeonhole Principle).** If a hash table has $m$ buckets and stores more than $m$ keys,
 At least one collision must occur.
 
-**Proof.** By the pigeonhole principle: $n$ keys mapped to $m$ buckets where $n \gt{} m$ means at
+**Proof.** By the pigeonhole principle: $n$ keys mapped to $m$ buckets where $n \gt m$ means at
 Least one bucket contains $\lceil n/m \rceil \geq 2$ keys. $\square$
 
 <hr />
@@ -221,7 +221,7 @@ $$h(k, i) = (h'(k) + c_1 i + c_2 i^2) \bmod m$$
 Eliminates primary clustering but may cause **secondary clustering** (keys with the same initial
 Hash follow the same probe sequence).
 
-**Theorem.** If the table size $m$ is prime and the load factor $\alpha \lt{} 0.5$Quadratic Probing
+**Theorem.** If the table size $m$ is prime and the load factor $\alpha \lt 0.5$Quadratic Probing
 will always find an empty slot.
 
 ### Double Hashing
@@ -265,7 +265,7 @@ Per insertion: $O(1)$. $\square$
 | Cache performance | Poor (pointers) | Good (contiguous) | Good             |
 | Clustering        | None            | Primary           | None             |
 | Delete            | $O(1)$          | Lazy deletion     | Lazy deletion    |
-| Load factor limit | No hard limit   | $\alpha \lt{} 1$  | $\alpha \lt{} 1$ |
+| Load factor limit | No hard limit   | $\alpha \lt 1$  | $\alpha \lt 1$ |
 
 :::info Board-specific
 
@@ -401,7 +401,7 @@ Repeating if $h_2(k)$ and $m$ are coprime.
 **Proof.** The probe sequence is: $h_1(k),\ h_1(k) + h_2(k),\ h_1(k) + 2h_2(k),\ \ldots \pmod m$.
 
 This is an arithmetic progression modulo $m$ with common difference $d = h_2(k)$. The sequence
-Visits distinct values as long as $d$ is coprime with $m$. If $\gcd(d, m) = g \gt{} 1$The sequence
+Visits distinct values as long as $d$ is coprime with $m$. If $\gcd(d, m) = g \gt 1$The sequence
 Cycles through only $m/g$ distinct values. When $\gcd(d, m) = 1$By the properties of modular
 Arithmetic, the sequence covers all $m$ residues before repeating. $\square$
 

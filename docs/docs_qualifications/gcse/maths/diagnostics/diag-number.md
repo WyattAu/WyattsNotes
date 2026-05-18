@@ -48,12 +48,12 @@ number.
 
 (a) $180 = 2^2 \times 3^2 \times 5$. $252 = 2^2 \times 3^2 \times 7$.
 
-(b) $\text{HCF{} = 2^2 \times 3^2 = 4 \times 9 = 36$.
-$\text{LCM{} = 2^2 \times 3^2 \times 5 \times 7 = 4 \times 9 \times 5 \times 7 = 1260$.
+(b) $\text{HCF = 2^2 \times 3^2 = 4 \times 9 = 36$.
+$\text{LCM = 2^2 \times 3^2 \times 5 \times 7 = 4 \times 9 \times 5 \times 7 = 1260$.
 
-(c) Time $= \text{LCM{}(12, 18, 30)$.
+(c) Time $= \text{LCM(12, 18, 30)$.
 $12 = 2^2 \times 3$$18 = 2 \times 3^2$$30 = 2 \times 3 \times 5$.
-$\text{LCM{} = 2^2 \times 3^2 \times 5 = 180$ minutes $= 3$ hours. They next all ring together at
+$\text{LCM = 2^2 \times 3^2 \times 5 = 180$ minutes $= 3$ hours. They next all ring together at
 **3:00 pm**.
 
 (d) A prime number has exactly two factors: 1 and itself. The number 1 has only one factor (itself).

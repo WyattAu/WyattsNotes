@@ -22,7 +22,7 @@ the properties of [exponential functions](functions#exponential-functions) and C
 
 ### Logarithmic Notation
 
-For $a \gt{} 0$$a \neq 1$And $x \gt{} 0$The logarithmic statement
+For $a \gt 0$$a \neq 1$And $x \gt 0$The logarithmic statement
 
 $$
 \log_a x = y
@@ -42,8 +42,8 @@ The two conditions on the base arise because:
 - If $a = 1$Then $1^y = 1$ for all $y$So no unique logarithm exists.
 - If $a \leq 0$Then $a^y$ is not defined for all real $y$ (e.g. $(-2)^{1/2}$ is not real).
 
-The condition $x \gt{} 0$ follows from the fact that $a^y \gt{} 0$ for all real $y$ when
-$a \gt{} 0$So the logarithm is only defined for positive arguments.
+The condition $x \gt 0$ follows from the fact that $a^y \gt 0$ for all real $y$ when
+$a \gt 0$So the logarithm is only defined for positive arguments.
 
 ### Special Cases
 
@@ -61,14 +61,14 @@ $$
 \log_a a^k = k \quad \mathrm{since } a^k = a^k
 $$
 
-Additionally, for any base $a \gt{} 0$ with $a \neq 1$:
+Additionally, for any base $a \gt 0$ with $a \neq 1$:
 
 $$
-A^{\log_a x} = x \quad (x \gt{} 0)
+A^{\log_a x} = x \quad (x \gt 0)
 $$
 
 $$
-\log_a(a^y) = y \quad (y \in \mathbb{{'}R{}'})
+\log_a(a^y) = y \quad (y \in \mathbb{R})
 $$
 
 These two identities express the fact that the logarithmic and exponential functions are
@@ -90,7 +90,7 @@ These two identities express the fact that the logarithmic and exponential funct
 ## Laws of Logarithms
 
 The following laws are essential for manipulating logarithmic expressions. In all cases,
-$a \gt{} 0$$a \neq 1$And the arguments of all logarithms are positive.
+$a \gt 0$$a \neq 1$And the arguments of all logarithms are positive.
 
 ### Product Rule
 
@@ -214,13 +214,13 @@ each other. This means their graphs are reflections of each other across the lin
 
 | Property      | $y = a^x$ (exponential)              | $y = \log_a x$ (logarithmic)         |
 | ------------- | ------------------------------------ | ------------------------------------ |
-| Domain        | $\mathbb{{'}R{}'}$                   | $(0, \infty)$                        |
-| Range         | $(0, \infty)$                        | $\mathbb{{'}R{}'}$                   |
+| Domain        | $\mathbb{R}$                   | $(0, \infty)$                        |
+| Range         | $(0, \infty)$                        | $\mathbb{R}$                   |
 | $x$-intercept | $(0, 1)$ (since $a^0 = 1$)           | $(1, 0)$ (since $\log_a 1 = 0$)      |
 | Asymptote     | Horizontal: $y = 0$                  | Vertical: $x = 0$                    |
-| Monotonicity  | Strictly increasing when $a \gt{} 1$ | Strictly increasing when $a \gt{} 1$ |
+| Monotonicity  | Strictly increasing when $a \gt 1$ | Strictly increasing when $a \gt 1$ |
 
-When $0 \lt{} a \lt{} 1$Both functions are strictly decreasing.
+When $0 \lt a \lt 1$Both functions are strictly decreasing.
 
 <details>
 <summary>Examples</summary>
@@ -250,7 +250,7 @@ To solve equations involving logarithms:
 ### Domain Restrictions
 
 Before solving, always identify the domain. For an equation containing $\log_a f(x)$We require
-$f(x) \gt{} 0$. Solutions that violate this condition are **extraneous** and must be discarded.
+$f(x) \gt 0$. Solutions that violate this condition are **extraneous** and must be discarded.
 
 ### Common Mistakes
 
@@ -264,21 +264,21 @@ $f(x) \gt{} 0$. Solutions that violate this condition are **extraneous** and mus
 
 **Example 1.** Solve $\log_3(x + 2) + \log_3(x - 6) = 3$.
 
-- Domain: $x + 2 \gt{} 0$ and $x - 6 \gt{} 0$So $x \gt{} 6$.
+- Domain: $x + 2 \gt 0$ and $x - 6 \gt 0$So $x \gt 6$.
 - Combine: $\log_3[(x+2)(x-6)] = 3$.
 - Convert: $(x+2)(x-6) = 3^3 = 27$.
 - Expand: $x^2 - 4x - 12 = 27$So $x^2 - 4x - 39 = 0$.
 - Quadratic formula:
   $x = \dfrac{4 \pm \sqrt{16 + 156}}{2} = \dfrac{4 \pm \sqrt{172}}{2} = 2 \pm \sqrt{43}$.
-- Since $x \gt{} 6$Only $x = 2 + \sqrt{43}$ is accepted.
+- Since $x \gt 6$Only $x = 2 + \sqrt{43}$ is accepted.
 
 **Example 2.** Solve $\log_2(x) - \log_2(x - 2) = 3$.
 
-- Domain: $x \gt{} 0$ and $x \gt{} 2$So $x \gt{} 2$.
+- Domain: $x \gt 0$ and $x \gt 2$So $x \gt 2$.
 - Quotient rule: $\log_2 \dfrac{x}{x-2} = 3$.
 - Convert: $\dfrac{x}{x-2} = 2^3 = 8$.
 - Solve: $x = 8x - 16$So $7x = 16$Hence $x = \dfrac{16}{7}$.
-- Check: $\dfrac{16}{7} \gt{} 2$ is satisfied.
+- Check: $\dfrac{16}{7} \gt 2$ is satisfied.
 </details>
 
 ---
@@ -323,10 +323,10 @@ Change of base formula to bring all logarithms to a common base.
 
 **Example 3.** Solve $4^{x} - 2^{x+1} - 3 = 0$.
 
-- Note $4^x = (2^2)^x = 2^{2x}$. Let $u = 2^x$ ($u \gt{} 0$).
+- Note $4^x = (2^2)^x = 2^{2x}$. Let $u = 2^x$ ($u \gt 0$).
 - Substitute: $u^2 - 2u - 3 = 0$.
 - Factor: $(u - 3)(u + 1) = 0$So $u = 3$ or $u = -1$.
-- Since $u \gt{} 0$Only $u = 3$Giving $2^x = 3$.
+- Since $u \gt 0$Only $u = 3$Giving $2^x = 3$.
 - Take $\log$: $x\log 2 = \log 3$So $x = \dfrac{\log 3}{\log 2}$.
 </details>
 
@@ -346,7 +346,7 @@ Where $[\mathrm{H}^+]$ is the concentration of hydrogen ions (in mol/L). A lower
 Concentration of hydrogen ions and therefore a more acidic solution.
 
 - A neutral solution (pure water) has $[\mathrm{H}^+] = 10^{-7}$ mol/L, giving $\mathrm{pH} = 7$.
-- Acidic solutions have $\mathrm{pH} \lt{} 7$; alkaline solutions have $\mathrm{pH} \gt{} 7$.
+- Acidic solutions have $\mathrm{pH} \lt 7$; alkaline solutions have $\mathrm{pH} \gt 7$.
 - The scale is logarithmic: a decrease of 1 in pH corresponds to a tenfold increase in
   $[\mathrm{H}^+]$.
 
@@ -422,9 +422,9 @@ Investment to double?
 
 Many natural processes follow exponential models:
 
-- **Growth:** $N(t) = N_0 \cdot a^t$ where $a \gt{} 1$ (e.g., population growth, bacterial
+- **Growth:** $N(t) = N_0 \cdot a^t$ where $a \gt 1$ (e.g., population growth, bacterial
   reproduction).
-- **Decay:** $N(t) = N_0 \cdot a^t$ where $0 \lt{} a \lt{} 1$ (e.g., radioactive decay, cooling).
+- **Decay:** $N(t) = N_0 \cdot a^t$ where $0 \lt a \lt 1$ (e.g., radioactive decay, cooling).
 
 The **half-life** $T$ of a decaying quantity is the time for the quantity to reduce to half its
 Initial value. For $N(t) = N_0 \cdot a^t$:
@@ -457,12 +457,12 @@ $M(t) = 500 \cdot (0.92)^t$ grams. Find the half-life.
 Inequalities involving logarithms require careful attention to the behaviour of the logarithmic
 Function, which depends on whether the base is greater than or less than 1.
 
-### Case 1: Base $a \gt{} 1$
+### Case 1: Base $a \gt 1$
 
 When $a > 1$$\log_a x$ is strictly increasing, so the inequality sign is **preserved**:
 
 $$
-\log_a x \gt{} \log_a y \iff x \gt{} y
+\log_a x \gt \log_a y \iff x \gt y
 $$
 
 ### Case 2: Base $0 \lt{} a \lt{} 1$

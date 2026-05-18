@@ -26,7 +26,7 @@ $$\lim_{x \to a}\bigl[f(x) \cdot g(x)\bigr] = L \cdot M$$
 
 $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}, \quad M \ne 0$$
 
-$$\lim_{x \to a} \bigl[f(x)\bigr]^n = L^n, \quad n \in \mathbb{{'}Z{}'}^{+}$$
+$$\lim_{x \to a} \bigl[f(x)\bigr]^n = L^n, \quad n \in \mathbb{Z}^{+}$$
 
 ### One-Sided Limits
 
@@ -96,7 +96,7 @@ $f(x) = |x|$ is continuous everywhere but not differentiable at $x = 0$.
 
 ### Differentiation Rules
 
-**Power rule.** For $n \in \mathbb{{'}R{}'}$:
+**Power rule.** For $n \in \mathbb{R}$:
 
 $$\frac{d}{dx}\bigl[x^n\bigr] = nx^{n-1}$$
 
@@ -477,7 +477,7 @@ Intervals of increase and decrease.
 <details>
 <summary>Solution</summary>
 
-**Domain.** All $x \in \mathbb{{'}R{}'}$ except $x = \pm 1$.
+**Domain.** All $x \in \mathbb{R}$ except $x = \pm 1$.
 
 **Intercepts.** $y$-intercept: $x = 0 \implies y = 4$. $x$-intercepts:
 $x^2 - 4 = 0 \implies x = \pm 2$.

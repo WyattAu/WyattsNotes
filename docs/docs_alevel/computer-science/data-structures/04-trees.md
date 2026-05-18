@@ -64,7 +64,7 @@ $\square$
 
 **Corollary.** The minimum height of a binary tree with $n$ nodes is $\lfloor \log_2 n \rfloor$.
 
-**Proof.** From the above, $n \leq 2^{h+1} - 1 \lt{} 2^{h+1}$So $h + 1 \gt{} \log_2 n$Giving
+**Proof.** From the above, $n \leq 2^{h+1} - 1 \lt 2^{h+1}$So $h + 1 \gt \log_2 n$Giving
 $h \geq \lceil \log_2(n+1) \rceil - 1 = \lfloor \log_2 n \rfloor$. $\square$
 
 ### Full, Complete, and Perfect Binary Trees
@@ -167,7 +167,7 @@ def bst_min(node):
 
 **Proof.** Cases 1 and 2 are trivial — removing a leaf or replacing with a single child maintains
 Ordering. For case 3: the in-order successor $s$ is the smallest key in the right subtree, so
-$s \gt{} \mathrm{root.key}$ and all keys in the left subtree are $\lt{} \mathrm{root.key} \lt{} s$.
+$s \gt \mathrm{root.key}$ and all keys in the left subtree are $\lt \mathrm{root.key} \lt s$.
 After replacing root's key with $s$'s key and deleting $s$ from the right subtree (which is case 1
 Or 2), the BST property holds. $\square$
 
@@ -218,8 +218,8 @@ def levelorder(root):
 **Theorem.** In-order traversal of a BST produces keys in ascending order.
 
 **Proof.** By structural induction. For a leaf, the in-order traversal outputs just the leaf's key.
-For an internal node with key $k$: in-order first traverses the left subtree (all keys $\lt{} k$ by
-BST property), then outputs $k$Then traverses the right subtree (all keys $\gt{} k$). By the
+For an internal node with key $k$: in-order first traverses the left subtree (all keys $\lt k$ by
+BST property), then outputs $k$Then traverses the right subtree (all keys $\gt k$). By the
 Inductive hypothesis, each subtree's output is sorted. Hence the full output is sorted. $\square$
 
 <summary>Example: Traversals of a BST</summary>
@@ -456,7 +456,7 @@ Node in its right subtree, assuming the node has a right child.
 <summary>Answer</summary>
 
 **Proof.** Let node $N$ have key $k$ and a right child $R$. By the BST property, all keys in $R$'s
-Subtree are $\gt{} k$. The in-order successor is the smallest key greater than $k$. In $R$'s
+Subtree are $\gt k$. The in-order successor is the smallest key greater than $k$. In $R$'s
 Subtree, the smallest key is found by always going left (since left children have smaller keys).
 Therefore, the in-order successor is the leftmost node in the right subtree. $\square$
 

@@ -119,7 +119,7 @@ Not be uniformly distributed. Always state the distribution assumption when disc
 
 ### The Master Theorem
 
-For recurrences of the form $T(n) = aT(n/b) + f(n)$ where $a \geq 1$$b \gt{} 1$:
+For recurrences of the form $T(n) = aT(n/b) + f(n)$ where $a \geq 1$$b \gt 1$:
 
 Let $c = \log_b a$. Compare $f(n)$ with $n^c$:
 
@@ -294,10 +294,10 @@ def mystery(n):
 <details>
 <summary>Answer</summary>
 
-Outer loop: $i$ takes values $1, 3, 9, 27, \ldots, 3^k \lt{} n$. Number of iterations:
+Outer loop: $i$ takes values $1, 3, 9, 27, \ldots, 3^k \lt n$. Number of iterations:
 $\lceil \log_3 n \rceil$.
 
-Inner loop: $j$ takes values $1, 2, 4, 8, \ldots, 2^m \lt{} n$. Number of iterations:
+Inner loop: $j$ takes values $1, 2, 4, 8, \ldots, 2^m \lt n$. Number of iterations:
 $\lceil \log_2 n \rceil$.
 
 Total: $O(\log_3 n \cdot \log_2 n) = O(\log^2 n)$.

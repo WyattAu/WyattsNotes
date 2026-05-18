@@ -434,7 +434,7 @@ $$\frac◆LB◆dR◆RB◆◆LB◆d\theta◆RB◆ = \frac{V^2}{g}\cdot 2\cos 2\th
 
 Second derivative check:
 
-$$\frac◆LB◆d^2R◆RB◆◆LB◆d\theta^2◆RB◆ = \frac{V^2}{g}\cdot(-4\sin 2\theta) \bigg|_{\theta = 45°} = \frac{V^2}{g}(-4) \lt{} 0 \quad \checkmark$$
+$$\frac◆LB◆d^2R◆RB◆◆LB◆d\theta^2◆RB◆ = \frac{V^2}{g}\cdot(-4\sin 2\theta) \bigg|_{\theta = 45°} = \frac{V^2}{g}(-4) \lt 0 \quad \checkmark$$
 
 So the maximum is confirmed. Substituting $\theta = 45^\circ$:
 

@@ -68,7 +68,7 @@ Each `std::promise` can produce at most **one** `std::future` via `get_future()`
 The relationship is:
 
 $$
-\mathrm{std::promise&lt;T&gt;{} \xrightarrow{\mathrm{get\_future(){}} \mathrm{std::future&lt;T&gt;{}
+\mathrm{std::promise&lt;T&gt; \xrightarrow{\mathrm{get\_future()} \mathrm{std::future&lt;T&gt;
 $$
 
 ## `std::async` for Launching Coroutines with Policy
@@ -95,7 +95,7 @@ Consumer (the code awaiting the result). They communicate through a **shared sta
 §33.6.4]:
 
 $$
-\underbrace{\mathrm{Producer{}}_{\mathrm{holds std::promise{}} \xrightarrow{\mathrm{shared state{}} \underbrace{\mathrm{Consumer{}}_{\mathrm{holds std::future{}}
+\underbrace{\mathrm{Producer}_{\mathrm{holds std::promise} \xrightarrow{\mathrm{shared state} \underbrace{\mathrm{Consumer}_{\mathrm{holds std::future}
 $$
 
 The shared state transitions through these phases:
@@ -278,7 +278,7 @@ This means that exceptions propagate through coroutine chains, just as they woul
 Synchronous call chains:
 
 $$
-\mathrm{inner throws{} \rightarrow \mathrm{inner.unhandled\_exception(){} \rightarrow \mathrm{outer.await\_resume() rethrows{}
+\mathrm{inner throws \rightarrow \mathrm{inner.unhandled\_exception() \rightarrow \mathrm{outer.await\_resume() rethrows
 $$
 
 ```cpp

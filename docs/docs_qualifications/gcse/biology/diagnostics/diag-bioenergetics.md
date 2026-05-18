@@ -14,14 +14,14 @@ hide_table_of_contents: true
 ### UT-1: Photosynthesis
 
 **Question:** (a) Write the balanced symbol equation for photosynthesis. (b) Explain how the
-structure of a leaf is adapted for photosynthesis. (c) A leaf with surface area $50 \text{ cm{}^2$
-absorbs $2.5 \text{ mg{}$ of CO$_2$ per hour. Calculate the rate of photosynthesis in mg
+structure of a leaf is adapted for photosynthesis. (c) A leaf with surface area $50 \text{ cm^2$
+absorbs $2.5 \text{ mg$ of CO$_2$ per hour. Calculate the rate of photosynthesis in mg
 CO$_2$/cm$^2$/hour. (d) Explain why most plants appear green.
 
 **Solution:**
 
 (a)
-$6\text{CO{}_2 + 6\text{H{}_2\text{O{} \xrightarrow{\text{light{}} \text{C{}_6\text{H{}_{12}\text{O{}_6 + 6\text{O{}_2$
+$6\text{CO_2 + 6\text{H_2\text{O \xrightarrow{\text{light} \text{C_6\text{H_{12}\text{O_6 + 6\text{O_2$
 
 (b) Leaf adaptations: (1) **Broad, flat shape** -- maximises surface area for light absorption. (2)
 **Thin** -- short diffusion distance for CO$_2$ and O$_2$. (3) **Waxy cuticle** -- reduces water

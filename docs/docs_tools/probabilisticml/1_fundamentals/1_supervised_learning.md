@@ -57,10 +57,10 @@ That corrsponse to the predicted class $f(x_n;\theta)$.
 
 Supervised learning applies to classfication through a model is trained by a dataset to generate a
 Decision tree. To measure the perforance of the classification, a common indicator is the
-Misclassification rate $\mathcal{{'}L{}'}$:
+Misclassification rate $\mathcal{L}$:
 
 $$
-\mathcal{{'}L{}'}(\theta) \triangleq \frac{1}{N}\sum^N_{n=1} B(y_n \neq f(x_n;\theta))
+\mathcal{L}(\theta) \triangleq \frac{1}{N}\sum^N_{n=1} B(y_n \neq f(x_n;\theta))
 $$
 
 Where $B(k)$ is a binary indicator function, with condition:
@@ -68,14 +68,14 @@ Where $B(k)$ is a binary indicator function, with condition:
 $$
 B(k) =
 \begin{dcases}
- 1 \quad \mathrm{if k is true{}\\
- 0 \quad \mathrm{if k is false{}
+ 1 \quad \mathrm{if k is true\\
+ 0 \quad \mathrm{if k is false
 \end{dcases}
 $$
 
 However, it maybe beneficial how non binary determination of misclassification as Some classes maybe
 more similar to each other presented in having common features, therefore to Guide the training
-process of the model, it maybe benefitial to use a asymmetric loss function $\mathcal{{'}l{}'}$
+process of the model, it maybe benefitial to use a asymmetric loss function $\mathcal{l}$
 
 ## Common Pitfalls
 

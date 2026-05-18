@@ -64,10 +64,10 @@ Starting from an initial guess $x_0$. If the sequence converges to $\alpha$Then 
 ### 2.2 Convergence condition
 
 **Theorem.** If $g$ is continuously differentiable near a fixed point $\alpha$ and
-$|g'(\alpha)| \lt{} 1$Then the iteration $x_{n+1} = g(x_n)$ converges to $\alpha$ for all starting
+$|g'(\alpha)| \lt 1$Then the iteration $x_{n+1} = g(x_n)$ converges to $\alpha$ for all starting
 Values sufficiently close to $\alpha$.
 
-If $|g'(\alpha)| \gt{} 1$The iteration diverges.
+If $|g'(\alpha)| \gt 1$The iteration diverges.
 
 **Proof (linear convergence).** Near $\alpha$By Taylor's theorem:
 
@@ -81,8 +81,8 @@ For $x_n$ close to $\alpha$:
 
 $$|x_{n+1} - \alpha| \approx |g'(\alpha)| \cdot |x_n - \alpha|$$
 
-If $|g'(\alpha)| \lt{} 1$Then $|x_{n+1} - \alpha| \lt{} |x_n - \alpha|$: the error shrinks, so the
-Iteration converges. If $|g'(\alpha)| \gt{} 1$The error grows and the iteration diverges.
+If $|g'(\alpha)| \lt 1$Then $|x_{n+1} - \alpha| \lt |x_n - \alpha|$: the error shrinks, so the
+Iteration converges. If $|g'(\alpha)| \gt 1$The error grows and the iteration diverges.
 $\blacksquare$
 
 ### 2.3 Rearrangement choices
@@ -92,13 +92,13 @@ Different rearrangements of $f(x) = 0$ give different $g(x)$And some converge wh
 **Example.** Solve $x^3 + x - 1 = 0$.
 
 - $g(x) = 1 - x^3$: $g'(x) = -3x^2$. Near the root $\alpha \approx 0.68$:
-  $|g'(\alpha)| \approx 1.39 \gt{} 1$. **Diverges.**
+  $|g'(\alpha)| \approx 1.39 \gt 1$. **Diverges.**
 - $g(x) = \sqrt[3]{1-x}$: $g'(x) = \dfrac{-1}{3(1-x)^{2/3}}$. Near $\alpha$:
-  $|g'(\alpha)| \approx 0.72 \lt{} 1$. **Converges.**
+  $|g'(\alpha)| \approx 0.72 \lt 1$. **Converges.**
 
 :::tip In exams, if a question asks you to show that a particular rearrangement converges, compute
-$g'(x)$ at the root and show $|g'(\alpha)| \lt{} 1$. If asked why a rearrangement fails, show
-$|g'(\alpha)| \gt{} 1$. :::
+$g'(x)$ at the root and show $|g'(\alpha)| \lt 1$. If asked why a rearrangement fails, show
+$|g'(\alpha)| \gt 1$. :::
 
 ### 2.4 Geometric interpretation
 
@@ -106,9 +106,9 @@ The fixed-point iteration $x_{n+1} = g(x_n)$ can be visualised using the cobweb 
 $y = g(x)$ and $y = x$. Starting from $x_0$ on the $x$-axis, go vertically to $y = g(x_0) = x_1$
 Then horizontally to $y = x$Then vertically to $y = g(x_1) = x_2$And so on.
 
-- If $0 \lt{} g'(\alpha) \lt{} 1$: the cobweb spirals inward (monotone convergence).
-- If $-1 \lt{} g'(\alpha) \lt{} 0$: the cobweb zigzags inward (oscillatory convergence).
-- If $|g'(\alpha)| \gt{} 1$: the cobweb spirals or zigzags outward (divergence).
+- If $0 \lt g'(\alpha) \lt 1$: the cobweb spirals inward (monotone convergence).
+- If $-1 \lt g'(\alpha) \lt 0$: the cobweb zigzags inward (oscillatory convergence).
+- If $|g'(\alpha)| \gt 1$: the cobweb spirals or zigzags outward (divergence).
 
 The closer $|g'(\alpha)|$ is to zero, the faster the convergence. When $g'(\alpha) = 0$The Iteration
 achieves quadratic convergence (similar to Newton-Raphson), since the leading error term In the
@@ -300,17 +300,17 @@ From the error formula, since $|f''(\eta)| \leq M$ for all $\eta \in [a,b]$:
 $$|E_T| \leq \frac{(b-a)^3}{12n^2}\,M$$
 
 This gives a **guaranteed** upper bound on the absolute error. If we require the error to satisfy
-$|E_T| \lt{} \varepsilon$We need:
+$|E_T| \lt \varepsilon$We need:
 
-$$n \gt{} \sqrt◆LB◆\frac{(b-a)^3\, M}{12\,\varepsilon}◆RB◆$$
+$$n \gt \sqrt◆LB◆\frac{(b-a)^3\, M}{12\,\varepsilon}◆RB◆$$
 
 **Example.** Approximate $\displaystyle\int_0^1 e^{-x^2}\,dx$ with the trapezium rule. Here
 $f(x) = e^{-x^2}$So $f'(x) = -2x\,e^{-x^2}$ and $f''(x) = (4x^2 - 2)e^{-x^2}$. On $[0,1]$:
 $|f''(x)| \leq 2$ (achieved at $x = 0$Where $f''(0) = -2$).
 
-For error $\lt{} 10^{-4}$:
+For error $\lt 10^{-4}$:
 
-$$n \gt{} \sqrt◆LB◆\frac{1^3 \times 2}{12 \times 10^{-4}}◆RB◆ = \sqrt◆LB◆\frac{2}{0.0012}◆RB◆ = \sqrt◆LB◆1666.\bar{6}◆RB◆ \approx 40.8$$
+$$n \gt \sqrt◆LB◆\frac{1^3 \times 2}{12 \times 10^{-4}}◆RB◆ = \sqrt◆LB◆\frac{2}{0.0012}◆RB◆ = \sqrt◆LB◆1666.\bar{6}◆RB◆ \approx 40.8$$
 
 So $n = 42$ strips suffice (rounding up to the nearest even number, which is convenient if one later
 Wishes to compare with Simpson's rule).
@@ -355,7 +355,7 @@ Number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$
 | -------------- | ----------- | ------------------ | ------------ |
 | Sign change    | N/A         | Continuous $f$     | Locates only |
 | Bisection      | Linear      | Sign change        | Slow         |
-| Fixed-point    | Linear      | $\|g'\| \lt{} 1$   | Moderate     |
+| Fixed-point    | Linear      | $\|g'\| \lt 1$   | Moderate     |
 | Newton-Raphson | Quadratic   | $f'(\alpha)\neq 0$ | Fast         |
 | Trapezium rule | $O(1/n^2)$  | Any $f$            | Integration  |
 | Simpson's rule | $O(1/n^4)$  | Even $n$ strips    | Integration  |
@@ -371,7 +371,7 @@ Always converges but slowly (halving the interval each step). No derivative need
 Initial bracketing before switching to a faster method.
 
 **Fixed-point iteration:** Use when the equation is rearranged into $x = g(x)$ and
-$|g'(\alpha)| \lt{} 1$ can be verified. Simple to implement but may converge slowly or diverge
+$|g'(\alpha)| \lt 1$ can be verified. Simple to implement but may converge slowly or diverge
 Entirely depending on the rearrangement. Different rearrangements of the same equation can give
 Radically different convergence behaviour.
 
@@ -415,7 +415,7 @@ Show that $x^3 - 2x - 5 = 0$ has a root in the interval $[2, 3]$.
 
 <details>
 <summary>Solution 1</summary>
-$f(x) = x^3 - 2x - 5$. $f(2) = 8-4-5 = -1 \lt{} 0$$f(3) = 27-6-5 = 16 \gt{} 0$.
+$f(x) = x^3 - 2x - 5$. $f(2) = 8-4-5 = -1 \lt 0$$f(3) = 27-6-5 = 16 \gt 0$.
 
 Since $f$ is continuous and changes sign on $[2,3]$By the sign change theorem there is a root in
 $(2,3)$.
@@ -451,9 +451,9 @@ Show that the iteration $x_{n+1} = \dfrac{x_n^3 + 5}{2}$ for solving $x^3 - 2x -
 $g(x) = \dfrac{x^3+5}{2}$$g'(x) = \dfrac{3x^2}{2}$.
 
 Near the root $\alpha \approx 2.09$:
-$g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac◆LB◆3 \times 4.37◆RB◆◆LB◆2◆RB◆ \approx 6.55 \gt{} 1$.
+$g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac◆LB◆3 \times 4.37◆RB◆◆LB◆2◆RB◆ \approx 6.55 \gt 1$.
 
-Since $|g'(\alpha)| \gt{} 1$The iteration diverges near $\alpha$.
+Since $|g'(\alpha)| \gt 1$The iteration diverges near $\alpha$.
 
 **If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
 
@@ -504,12 +504,12 @@ Let $f(x) = e^x - 3x$. $f'(x) = e^x - 3$.
 
 $f'(x) = 0 \implies x = \ln 3 \approx 1.099$.
 
-$f(\ln 3) = 3 - 3\ln 3 \approx 3 - 3.296 = -0.296 \lt{} 0$.
+$f(\ln 3) = 3 - 3\ln 3 \approx 3 - 3.296 = -0.296 \lt 0$.
 
-Since $f''(x) = e^x \gt{} 0$This is a global minimum. The minimum value is negative, and
+Since $f''(x) = e^x \gt 0$This is a global minimum. The minimum value is negative, and
 $f(x) \to \infty$ as $x \to \pm\infty$So $f(x) = 0$ has exactly two roots.
 
-$f(0) = 1 \gt{} 0$$f(1) = e-3 \lt{} 0$: root in $(0,1)$. $f(1) \lt{} 0$$f(2) = e^2-6 \gt{} 0$: Root
+$f(0) = 1 \gt 0$$f(1) = e-3 \lt 0$: root in $(0,1)$. $f(1) \lt 0$$f(2) = e^2-6 \gt 0$: Root
 in $(1,2)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
@@ -561,15 +561,15 @@ For the equation $x^3 + x - 3 = 0$Show that $x_{n+1} = \sqrt[3]{3 - x_n}$ conver
 
 <details>
 <summary>Solution 9</summary>
-$f(1) = -1 \lt{} 0$$f(1.2) = 1.728 + 1.2 - 3 = -0.072 \lt{} 0$$f(1.3) = 2.197 + 1.3 - 3 = 0.497 \gt{} 0$.
+$f(1) = -1 \lt 0$$f(1.2) = 1.728 + 1.2 - 3 = -0.072 \lt 0$$f(1.3) = 2.197 + 1.3 - 3 = 0.497 \gt 0$.
 
 Root near $\alpha \approx 1.21$.
 
 $g(x) = (3-x)^{1/3}$$g'(x) = -\dfrac{1}{3}(3-x)^{-2/3}$.
 
-$|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx \dfrac◆LB◆1◆RB◆◆LB◆3 \times 1.489◆RB◆ \approx 0.224 \lt{} 1$.
+$|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx \dfrac◆LB◆1◆RB◆◆LB◆3 \times 1.489◆RB◆ \approx 0.224 \lt 1$.
 
-Converges since $|g'(\alpha)| \lt{} 1$.
+Converges since $|g'(\alpha)| \lt 1$.
 
 **If you get this wrong, revise:** [Convergence Condition](#22-convergence-condition) — Section 2.2.
 
@@ -582,7 +582,7 @@ Explain why the sign change theorem does not guarantee a root of $f(x) = \dfrac{
 
 <details>
 <summary>Solution 10</summary>
-$f(1) = -1 \lt{} 0$ and $f(3) = 1 \gt{} 0$So there is a sign change. However, $f$ is **not continuous** on $[1,3]$ — it has a vertical asymptote at $x = 2$. The sign change theorem requires continuity, so it does not apply here. There is no root of $1/(x-2) = 0$.
+$f(1) = -1 \lt 0$ and $f(3) = 1 \gt 0$So there is a sign change. However, $f$ is **not continuous** on $[1,3]$ — it has a vertical asymptote at $x = 2$. The sign change theorem requires continuity, so it does not apply here. There is no root of $1/(x-2) = 0$.
 
 **If you get this wrong, revise:** [Limitations](#12-limitations) — Section 1.2.
 
@@ -675,15 +675,15 @@ $\alpha$.
 
 <details>
 <summary>Solution 13</summary>
-(a) $f(x) = e^{-x} - x$. $f(0.5) = e^{-0.5} - 0.5 \approx 0.6065 - 0.5 = 0.1065 \gt{} 0$.
-$f(0.7) = e^{-0.7} - 0.7 \approx 0.4966 - 0.7 = -0.2034 \lt{} 0$.
+(a) $f(x) = e^{-x} - x$. $f(0.5) = e^{-0.5} - 0.5 \approx 0.6065 - 0.5 = 0.1065 \gt 0$.
+$f(0.7) = e^{-0.7} - 0.7 \approx 0.4966 - 0.7 = -0.2034 \lt 0$.
 By the sign change theorem, $\alpha \in (0.5, 0.7)$.
 
 (b) $g_1(x) = e^{-x}$$g_1'(x) = -e^{-x}$. At $\alpha \approx 0.567$:
-$|g_1'(\alpha)| = e^{-\alpha} = \alpha \approx 0.567 \lt{} 1$. Converges.
+$|g_1'(\alpha)| = e^{-\alpha} = \alpha \approx 0.567 \lt 1$. Converges.
 
 (c) $g_2(x) = -\ln x$$g_2'(x) = -1/x$. At $\alpha \approx 0.567$:
-$|g_2'(\alpha)| = 1/\alpha \approx 1.763 \gt{} 1$. Diverges.
+$|g_2'(\alpha)| = 1/\alpha \approx 1.763 \gt 1$. Diverges.
 
 Both rearrangements solve the same equation, but only $x_{n+1} = e^{-x_n}$ converges near the root.
 
@@ -745,7 +745,7 @@ $$\mathrm{Approx} = \frac{0.5}{2}[0 + 2(0.7071) + 1] = 0.25 \times 2.4142 = 0.60
 On $(0, 1]$: $|f''(x)| = \frac{1}{4}x^{-3/2}$Which is unbounded as $x \to 0^+$. The error bound
 Requires $f''$ to be bounded on $[a,b]$But $f''(x) \to \infty$ as $x \to 0$.
 
-If we instead apply the bound on $[\varepsilon, 1]$ for small $\varepsilon \gt{} 0$:
+If we instead apply the bound on $[\varepsilon, 1]$ for small $\varepsilon \gt 0$:
 $M = \frac{1}{4}\varepsilon^{-3/2}$Which blows up as $\varepsilon \to 0$. This illustrates a
 Limitation of the error bound: it requires $f''$ to be bounded, which fails when $f$ has a vertical
 Tangent at an endpoint.
@@ -760,7 +760,7 @@ For the equation $\cos x = x$Let $g(x) = \cos x$.
 
 (a) Verify that a fixed point $\alpha$ exists in $(0, \pi/2)$.
 
-(b) Show that $|g'(\alpha)| \lt{} 1$And hence that the iteration $x_{n+1} = \cos x_n$ converges.
+(b) Show that $|g'(\alpha)| \lt 1$And hence that the iteration $x_{n+1} = \cos x_n$ converges.
 
 (c) Starting from $x_0 = 0.5$Find $x_3$ to 6 decimal places.
 
@@ -768,12 +768,12 @@ For the equation $\cos x = x$Let $g(x) = \cos x$.
 
 <details>
 <summary>Solution 16</summary>
-(a) $g(0) = \cos 0 = 1 \gt{} 0$ and $g(\pi/2) = \cos(\pi/2) = 0 \lt{} \pi/2$.
-Since $g$ is continuous and $g(x) - x$ changes sign on $(0, \pi/2)$ (check: $g(0) - 0 = 1 \gt{} 0$
-$g(\pi/2) - \pi/2 = -\pi/2 \lt{} 0$), a fixed point exists.
+(a) $g(0) = \cos 0 = 1 \gt 0$ and $g(\pi/2) = \cos(\pi/2) = 0 \lt \pi/2$.
+Since $g$ is continuous and $g(x) - x$ changes sign on $(0, \pi/2)$ (check: $g(0) - 0 = 1 \gt 0$
+$g(\pi/2) - \pi/2 = -\pi/2 \lt 0$), a fixed point exists.
 
 (b) $g'(x) = -\sin x$. At the fixed point $\alpha \approx 0.7391$:
-$|g'(\alpha)| = \sin(0.7391) \approx 0.6736 \lt{} 1$. Converges.
+$|g'(\alpha)| = \sin(0.7391) \approx 0.6736 \lt 1$. Converges.
 
 (c) $x_0 = 0.500000$ $x_1 = \cos(0.5) = 0.877583$ $x_2 = \cos(0.877583) = 0.639012$
 $x_3 = \cos(0.639012) = 0.802685$

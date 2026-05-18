@@ -530,7 +530,7 @@ A camera flash uses a capacitor to store energy and release it rapidly through a
 1. A battery slowly charges a capacitor ($C \approx 100$ -- $1000\,\mu$F) to a high voltage
    ($V \approx 300$ V) through a step-up converter circuit.
 2. When the shutter is triggered, the capacitor discharges through the flash tube in a time of order
-   $\tau = RC$Where $R$ is the resistance of the ionised gas (very small, $\lt{}$ 1 $\Omega$).
+   $\tau = RC$Where $R$ is the resistance of the ionised gas (very small, $\lt$ 1 $\Omega$).
 3. The rapid discharge ($\tau \approx 1$ ms) delivers a large pulse of power:
    $P = E/\tau \approx \frac{1}{2}CV^2 / \tau$.
 

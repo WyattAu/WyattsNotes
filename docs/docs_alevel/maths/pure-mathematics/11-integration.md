@@ -347,7 +347,7 @@ Let $u = x^2 + 3$$du = 2x\,dx$.
 
 $$\int \frac{2x}{x^2+3}\,dx = \int \frac{1}{u}\,du = \ln|u| + C = \ln(x^2+3) + C$$
 
-(Since $x^2+3 \gt{} 0$No absolute value needed.)
+(Since $x^2+3 \gt 0$No absolute value needed.)
 
 **If you get this wrong, revise:** [Integration by Substitution](#5-integration-by-substitution) —
 Section 5.

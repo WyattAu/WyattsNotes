@@ -21,7 +21,7 @@ slug: geometry-and-trigonometry
 The three primary trigonometric functions for an angle $\theta$ in a right-angled triangle are:
 
 $$
-\sin\theta = \frac{\mathrm{opposite{}}{\mathrm{hypotenuse{}}, \quad \cos\theta = \frac{\mathrm{adjacent{}}{\mathrm{hypotenuse{}}, \quad \tan\theta = \frac{\mathrm{opposite{}}{\mathrm{adjacent{}}
+\sin\theta = \frac{\mathrm{opposite}{\mathrm{hypotenuse}, \quad \cos\theta = \frac{\mathrm{adjacent}{\mathrm{hypotenuse}, \quad \tan\theta = \frac{\mathrm{opposite}{\mathrm{adjacent}
 $$
 
 On the unit circle (radius 1), the point at angle $\theta$ from the positive $x$-axis has
@@ -55,7 +55,7 @@ $$
 Angles can be measured in radians. One full revolution is $2\pi$ radians.
 
 $$
-\pi \mathrm{ radians{} = 180°
+\pi \mathrm{ radians = 180°
 $$
 
 **Why radians?** In calculus, the derivative formula $\frac{d}{dx}[\sin x] = \cos x$ holds only when
@@ -85,21 +85,21 @@ $$
 **Example:** Find the length of the arc and the area of the sector for a circle of radius 8 cm with
 An angle of $\dfrac{5\pi}{6}$ radians.
 
-Arc length: $s = 8 \times \dfrac{5\pi}{6} = \dfrac{20\pi}{3} \approx 20.94 \mathrm{ cm{}$.
+Arc length: $s = 8 \times \dfrac{5\pi}{6} = \dfrac{20\pi}{3} \approx 20.94 \mathrm{ cm$.
 
 Sector area:
-$A = \dfrac{1}{2} \times 64 \times \dfrac{5\pi}{6} = \dfrac{160\pi}{6} = \dfrac{80\pi}{3} \approx 83.78 \mathrm{ cm{}^2$.
+$A = \dfrac{1}{2} \times 64 \times \dfrac{5\pi}{6} = \dfrac{160\pi}{6} = \dfrac{80\pi}{3} \approx 83.78 \mathrm{ cm^2$.
 
-**Example:** A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm{}^2$. Find the
+**Example:** A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm^2$. Find the
 Perimeter of the sector.
 
 $$
 \frac{1}{2} \times 36 \times \theta = 24\pi \implies \theta = \frac{48\pi}{36} = \frac{4\pi}{3}
 $$
 
-Arc length: $s = 6 \times \frac{4\pi}{3} = 8\pi \mathrm{ cm{}$.
+Arc length: $s = 6 \times \frac{4\pi}{3} = 8\pi \mathrm{ cm$.
 
-Perimeter = $2r + s = 12 + 8\pi \mathrm{ cm{}$.
+Perimeter = $2r + s = 12 + 8\pi \mathrm{ cm$.
 
 ### Trigonometric Identities
 
@@ -346,7 +346,7 @@ $$
 $$
 
 $$
-A = \arcsin(0.6372) \approx 39.6° \quad \mathrm{or{} \quad A = 180° - 39.6° = 140.4°
+A = \arcsin(0.6372) \approx 39.6° \quad \mathrm{or \quad A = 180° - 39.6° = 140.4°
 $$
 
 Both values are valid since $A + B = 39.6° + 55° = 94.6° < 180^\circ$ and
@@ -395,11 +395,11 @@ $$
 $$
 
 Where $\tan\alpha = \dfrac{-\sqrt{3}}{2}$So
-$\alpha = -\arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx -0.714 \mathrm{ rad{}$.
+$\alpha = -\arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx -0.714 \mathrm{ rad$.
 
 Maximum value is $\sqrt{7}$Occurring when $\sin(\theta + \alpha) = 1$I.e.,
 $\theta + \alpha = \dfrac{\pi}{2}$So
-$\theta = \dfrac{\pi}{2} + \arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx 2.285 \mathrm{ rad{}$.
+$\theta = \dfrac{\pi}{2} + \arctan\left(\dfrac{\sqrt{3}}{2}\right) \approx 2.285 \mathrm{ rad$.
 
 **Example:** Express $5\sin\theta - 12\cos\theta$ in the form $R\sin(\theta - \alpha)$ and find its
 Maximum value.
@@ -555,7 +555,7 @@ $$
 
 $$(5x + 9)(x - 1) = 0$$
 
-$$x = -\frac{9}{5} \mathrm{ or {} x = 1$$
+$$x = -\frac{9}{5} \mathrm{ or  x = 1$$
 
 When $x = 1$: $y = 3$. When $x = -\dfrac{9}{5}$: $y = -\dfrac{13}{5}$.
 
@@ -587,19 +587,19 @@ $$
 
 ### Equations of Lines in 3D
 
-A line through point $\mathbf{{'}a{}'} = (a_1, a_2, a_3)$ with direction vector
-$\mathbf{{'}d{}'} = (d_1, d_2, d_3)$ has parametric equations:
+A line through point $\mathbf{a} = (a_1, a_2, a_3)$ with direction vector
+$\mathbf{d} = (d_1, d_2, d_3)$ has parametric equations:
 
 $$
 X = a_1 + td_1, \quad y = a_2 + td_2, \quad z = a_3 + td_3
 $$
 
-In vector form: $\mathbf{{'}r{}'} = \mathbf{{'}a{}'} + t\mathbf{{'}d{}'}$.
+In vector form: $\mathbf{r} = \mathbf{a} + t\mathbf{d}$.
 
 **Example:** Find the equation of the line through $(1, 2, -1)$ in the direction $(3, -1, 4)$.
 
 $$
-\mathbf{{'}r{}'} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix}
+\mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix}
 $$
 
 Parametrically: $x = 1 + 3t$$y = 2 - t$$z = -1 + 4t$.
@@ -615,9 +615,9 @@ Two lines in 3D can be:
 
 **Example:** Determine whether the following lines intersect:
 
-$L_1$: $\mathbf{{'}r{}'} = (1, 0, 2) + s(2, 1, -1)$
+$L_1$: $\mathbf{r} = (1, 0, 2) + s(2, 1, -1)$
 
-$L_2$: $\mathbf{{'}r{}'} = (3, 1, -1) + t(1, -1, 3)$
+$L_2$: $\mathbf{r} = (3, 1, -1) + t(1, -1, 3)$
 
 Equate coordinates:
 
@@ -634,27 +634,27 @@ Check (3): $2 - 1 = -1 + 0$I.e., $1 = -1$. This is false, so the lines are **ske
 
 ### Distance from a Point to a Line in 3D
 
-The shortest distance from point $P$ to the line through $A$ with direction $\mathbf{{'}d{}'}$ is:
+The shortest distance from point $P$ to the line through $A$ with direction $\mathbf{d}$ is:
 
 $$
-D = \frac{|\overrightarrow{AP} \times \mathbf{{'}d{}'}|}{|\mathbf{{'}d{}'}|}
+D = \frac{|\overrightarrow{AP} \times \mathbf{d}|}{|\mathbf{d}|}
 $$
 
 **Example:** Find the perpendicular distance from the point $(1, 2, 3)$ to the line
-$\mathbf{{'}r{}'} = (0, 1, -1) + t(2, -1, 3)$.
+$\mathbf{r} = (0, 1, -1) + t(2, -1, 3)$.
 
-$\overrightarrow{AP} = (1, 1, 4)$$\mathbf{{'}d{}'} = (2, -1, 3)$.
-
-$$
-\overrightarrow{AP} \times \mathbf{{'}d{}'} = \begin{pmatrix} 1 \cdot 3 - 4 \cdot (-1) \\ 4 \cdot 2 - 1 \cdot 3 \\ 1 \cdot (-1) - 1 \cdot 2 \end{pmatrix} = \begin{pmatrix} 7 \\ 5 \\ -3 \end{pmatrix}
-$$
+$\overrightarrow{AP} = (1, 1, 4)$$\mathbf{d} = (2, -1, 3)$.
 
 $$
-|\overrightarrow{AP} \times \mathbf{{'}d{}'}| = \sqrt{49 + 25 + 9} = \sqrt{83}
+\overrightarrow{AP} \times \mathbf{d} = \begin{pmatrix} 1 \cdot 3 - 4 \cdot (-1) \\ 4 \cdot 2 - 1 \cdot 3 \\ 1 \cdot (-1) - 1 \cdot 2 \end{pmatrix} = \begin{pmatrix} 7 \\ 5 \\ -3 \end{pmatrix}
 $$
 
 $$
-|\mathbf{{'}d{}'}| = \sqrt{4 + 1 + 9} = \sqrt{14}
+|\overrightarrow{AP} \times \mathbf{d}| = \sqrt{49 + 25 + 9} = \sqrt{83}
+$$
+
+$$
+|\mathbf{d}| = \sqrt{4 + 1 + 9} = \sqrt{14}
 $$
 
 $$
@@ -664,30 +664,30 @@ $$
 ### Distance Between Two Skew Lines
 
 The shortest distance between two skew lines
-$\mathbf{{'}r{}'}_1 = \mathbf{{'}a{}'}_1 + t\mathbf{{'}d{}'}_1$ and
-$\mathbf{{'}r{}'}_2 = \mathbf{{'}a{}'}_2 + s\mathbf{{'}d{}'}_2$ is:
+$\mathbf{r}_1 = \mathbf{a}_1 + t\mathbf{d}_1$ and
+$\mathbf{r}_2 = \mathbf{a}_2 + s\mathbf{d}_2$ is:
 
 $$
-D = \frac{|(\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1) \cdot (\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2)|}{|\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2|}
+D = \frac{|(\mathbf{a}_2 - \mathbf{a}_1) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)|}{|\mathbf{d}_1 \times \mathbf{d}_2|}
 $$
 
 **Example:** Find the shortest distance between the skew lines
-$\mathbf{{'}r{}'} = (1, 0, 0) + s(1, 2, 0)$ And $\mathbf{{'}r{}'} = (0, 0, 1) + t(0, 1, 1)$.
+$\mathbf{r} = (1, 0, 0) + s(1, 2, 0)$ And $\mathbf{r} = (0, 0, 1) + t(0, 1, 1)$.
 
-$\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1 = (-1, 0, 1)$.
+$\mathbf{a}_2 - \mathbf{a}_1 = (-1, 0, 1)$.
 
-$\mathbf{{'}d{}'}_1 = (1, 2, 0)$$\mathbf{{'}d{}'}_2 = (0, 1, 1)$.
-
-$$
-\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2 = \begin{pmatrix} 2 \cdot 1 - 0 \cdot 1 \\ 0 \cdot 0 - 1 \cdot 1 \\ 1 \cdot 1 - 2 \cdot 0 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}
-$$
+$\mathbf{d}_1 = (1, 2, 0)$$\mathbf{d}_2 = (0, 1, 1)$.
 
 $$
-(\mathbf{{'}a{}'}_2 - \mathbf{{'}a{}'}_1) \cdot (\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2) = (-1)(2) + 0(-1) + 1(1) = -1
+\mathbf{d}_1 \times \mathbf{d}_2 = \begin{pmatrix} 2 \cdot 1 - 0 \cdot 1 \\ 0 \cdot 0 - 1 \cdot 1 \\ 1 \cdot 1 - 2 \cdot 0 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}
 $$
 
 $$
-|\mathbf{{'}d{}'}_1 \times \mathbf{{'}d{}'}_2| = \sqrt{4 + 1 + 1} = \sqrt{6}
+(\mathbf{a}_2 - \mathbf{a}_1) \cdot (\mathbf{d}_1 \times \mathbf{d}_2) = (-1)(2) + 0(-1) + 1(1) = -1
+$$
+
+$$
+|\mathbf{d}_1 \times \mathbf{d}_2| = \sqrt{4 + 1 + 1} = \sqrt{6}
 $$
 
 $$
@@ -740,29 +740,29 @@ $$
 
 4. Find the equation of the tangent to $x^2 + y^2 + 4x - 6y + 9 = 0$ at the point $(-2, 3)$.
 
-5. A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm{}^2$. Find the perimeter of
+5. A sector of a circle of radius 6 cm has an area of $24\pi \mathrm{ cm^2$. Find the perimeter of
    the sector.
 
 6. Prove that $\sin 3\theta = 3\sin\theta - 4\sin^3\theta$.
 
-7. Determine whether the lines $\mathbf{{'}r{}'} = (1, 2, 0) + s(1, -1, 2)$ and
-   $\mathbf{{'}r{}'} = (3, 0, 4) + t(2, 1, -1)$ intersect, are parallel, or are skew.
+7. Determine whether the lines $\mathbf{r} = (1, 2, 0) + s(1, -1, 2)$ and
+   $\mathbf{r} = (3, 0, 4) + t(2, 1, -1)$ intersect, are parallel, or are skew.
 
 8. Find the minimum value of $3\cos x + 4\sin x$ and the smallest positive value of $x$ at which it
    occurs.
 
 9. Find the perpendicular distance from the point $(1, 2, 3)$ to the line
-   $\mathbf{{'}r{}'} = (0, 1, -1) + t(2, -1, 3)$.
+   $\mathbf{r} = (0, 1, -1) + t(2, -1, 3)$.
 
 10. In triangle $ABC$$a = 7$$b = 9$$B = 55^\circ$. Find angle $A$ (there may be two solutions).
 
 11. Solve $2\sin^2 x + 3\cos x - 3 = 0$ for $0 \le x \lt 2\pi$.
 
-12. Find the shortest distance between the skew lines $\mathbf{{'}r{}'} = (1, 0, 0) + s(1, 2, 0)$
-    and $\mathbf{{'}r{}'} = (0, 0, 1) + t(0, 1, 1)$.
+12. Find the shortest distance between the skew lines $\mathbf{r} = (1, 0, 0) + s(1, 2, 0)$
+    and $\mathbf{r} = (0, 0, 1) + t(0, 1, 1)$.
 
-13. Find the angle between the lines $\mathbf{{'}r{}'} = (0, 0, 0) + s(1, 2, -1)$ and
-    $\mathbf{{'}r{}'} = (1, 1, 0) + t(2, -1, 3)$.
+13. Find the angle between the lines $\mathbf{r} = (0, 0, 0) + s(1, 2, -1)$ and
+    $\mathbf{r} = (1, 1, 0) + t(2, -1, 3)$.
 
 14. Find the area of triangle $ABC$ given $a = 10$$b = 8$$c = 6$.
 

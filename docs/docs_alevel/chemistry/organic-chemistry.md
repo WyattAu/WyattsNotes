@@ -476,9 +476,9 @@ radical cation and an alkene.
 
 ### NMR Spectroscopy
 
-#### Proton (${}^1\mathrm{H}$) NMR
+#### Proton ($^1\mathrm{H}$) NMR
 
-${}^1\mathrm{H}$ NMR provides information about the hydrogen environments in a molecule.
+$^1\mathrm{H}$ NMR provides information about the hydrogen environments in a molecule.
 
 **Chemical shift ($\delta$):** The position of a signal, measured in ppm relative to TMS
 (tetramethylsilane, $\delta = 0$). Higher $\delta$ means greater deshielding.
@@ -509,11 +509,11 @@ peaks, where $n$ is the number of neighbouring protons.
 The coupling constant $J$ (in Hz) is the spacing between peaks in a multiplet. Equivalent protons do
 not couple to each other.
 
-#### Carbon-13 (${}^{13}\mathrm{C}$) NMR
+#### Carbon-13 ($^{13}\mathrm{C}$) NMR
 
-${}^{13}\mathrm{C}$ NMR detects carbon environments. Key differences from ${}^1\mathrm{H}$ NMR:
+$^{13}\mathrm{C}$ NMR detects carbon environments. Key differences from $^1\mathrm{H}$ NMR:
 
-- Natural abundance of ${}^{13}\mathrm{C}$ is only 1.1%, so signals are much weaker.
+- Natural abundance of $^{13}\mathrm{C}$ is only 1.1%, so signals are much weaker.
 - Proton decoupling is used, meaning each carbon environment gives a single peak (no splitting).
 - Chemical shift range is wider ($0\mathrm{--}220\,\mathrm{ppm}$).
 - $\mathrm{C}=0$ carbons appear at $160\mathrm{--}220\,\mathrm{ppm}$.
@@ -757,7 +757,7 @@ The recommended approach:
 2. **Elemental analysis:** Test for N (sodium fusion), halogens (AgNO$_3$ after fusion), S (lead
    acetate).
 3. **Melting/boiling point:** Compare with literature values.
-4. **Spectroscopy:** IR, MS, NMR (${}^1\mathrm{H}$ and ${}^{13}\mathrm{C}$).
+4. **Spectroscopy:** IR, MS, NMR ($^1\mathrm{H}$ and $^{13}\mathrm{C}$).
 5. **Chemical tests:** Use the table above for confirmation.
 6. **Functional group tests:** Tollens', Fehling's, 2,4-DNPH to distinguish aldehydes from ketones.
 
@@ -768,7 +768,7 @@ An unknown liquid A has the following properties:
 - Boiling point: $118^\circ\mathrm{C}$
 - IR: broad peak at $3200$--$3600\,\mathrm{cm}^{-1}$Strong peak at $1050\,\mathrm{cm}^{-1}$; no peak
   above $1700\,\mathrm{cm}^{-1}$
-- ${}^1\mathrm{H}$ NMR: $\delta$ 1.2 (t, 3H), $\delta$ 3.7 (q, 2H), $\delta$ 2.6 (s, 1H,
+- $^1\mathrm{H}$ NMR: $\delta$ 1.2 (t, 3H), $\delta$ 3.7 (q, 2H), $\delta$ 2.6 (s, 1H,
   exchangeable with $\mathrm{D}_2\mathrm{O}$)
 - Mass spectrum: molecular ion at $m/z = 46$
 
@@ -791,14 +791,14 @@ sodium metal ($\mathrm{H}_2$ gas evolved), negative Tollens' test (not an aldehy
 <summary>Problem 1</summary>
 
 Identify the compound with molecular formula $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$ whose
-${}^1\mathrm{H}$ NMR spectrum shows: $\delta$ 1.2 (triplet, 3H), $\delta$ 2.3 (quartet, 2H),
+$^1\mathrm{H}$ NMR spectrum shows: $\delta$ 1.2 (triplet, 3H), $\delta$ 2.3 (quartet, 2H),
 $\delta$ 3.6 (singlet, 3H), $\delta$ 11.0 (singlet, 1H). Its IR spectrum shows a broad absorption at
 $2500\mathrm{--}3300\,\mathrm{cm}^{-1}$ and a sharp peak at $1710\,\mathrm{cm}^{-1}$.
 
 **Solution:**
 
 The IR absorptions confirm a carboxylic acid ($\mathrm{O-H}$ broad, $\mathrm{C}=0$ at 1710). The
-${}^1\mathrm{H}$ NMR signals:
+$^1\mathrm{H}$ NMR signals:
 
 - $\delta$ 1.2 (t, 3H): $-\mathrm{CH}_3$ adjacent to $-\mathrm{CH}_2-$
 - $\delta$ 2.3 (q, 2H): $-\mathrm{CH}_2\mathrm{COOH}$ (quartet implies adjacent to $\mathrm{CH}_3$)

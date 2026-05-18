@@ -265,7 +265,7 @@ This gives two separate linear inequalities, each solved independently.
 ### Special Cases
 
 - If $c \leq 0$Then $|x| < c$ has no solution ($\varnothing$).
-- If $c < 0$Then $|x| > c$ is true for all real $x$ ($\mathbb{{'}R{}'}$).
+- If $c < 0$Then $|x| > c$ is true for all real $x$ ($\mathbb{R}$).
 - $|x| \geq a$ and $|x| \leq a$ follow the same patterns with non-strict inequality signs.
 
 </details>
@@ -300,7 +300,7 @@ $$
 3x - 6 \neq 0 \implies x \neq 2
 $$
 
-Solution: $\mathbb{{'}R{}'} \setminus \{2\}$.
+Solution: $\mathbb{R} \setminus \{2\}$.
 
 - Solve $|x^2 - 4| < 5$:
 
@@ -405,7 +405,7 @@ Factorize: $(x - 3)^2 \geq 0$.
 Since $(x - 3)^2 \geq 0$ for all real $x$ (a square is always non-negative), the solution is all
 Real numbers.
 
-Solution: $\mathbb{{'}R{}'}$.
+Solution: $\mathbb{R}$.
 
 3. **Question:** Find the range of $x$ for which $x^2 - 3x - 10 < 0$ and $2x + 1 > 0$ both hold.
 </details>

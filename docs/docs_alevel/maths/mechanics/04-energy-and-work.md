@@ -283,7 +283,7 @@ Damping dissipates it.
 River. The cord has natural length $25\,\mathrm{m}$ and stiffness $200\,\mathrm{N/m}$. Find the
 Lowest point reached ($g = 9.8\,\mathrm{m/s}^2$).
 
-At the lowest point, speed $= 0$. If the total distance fallen is $d$ (where $d \gt{} 25$ since the
+At the lowest point, speed $= 0$. If the total distance fallen is $d$ (where $d \gt 25$ since the
 Cord must be stretched):
 
 $$mgd = \frac{1}{2}k(d - 25)^2$$

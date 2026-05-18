@@ -835,12 +835,12 @@ for the transfer, assuming no packet loss and ignoring protocol overhead.
 <details>
 <summary>Answer</summary>
 
-Three-way handshake time: 1.5 round trips = $1.5 \times 40 = 60 \mathrm{ ms{}$.
+Three-way handshake time: 1.5 round trips = $1.5 \times 40 = 60 \mathrm{ ms$.
 
-Data transfer time: $50 \mathrm{ MB{} = 50 \times 8 = 400 \mathrm{ Mb{}$. Time =
-$400 / 100 = 4 \mathrm{ seconds{} = 4000 \mathrm{ ms{}$.
+Data transfer time: $50 \mathrm{ MB = 50 \times 8 = 400 \mathrm{ Mb$. Time =
+$400 / 100 = 4 \mathrm{ seconds = 4000 \mathrm{ ms$.
 
-Total time: $60 + 4000 = 4060 \mathrm{ ms{} \approx 4.06 \mathrm{ seconds{}$.
+Total time: $60 + 4000 = 4060 \mathrm{ ms \approx 4.06 \mathrm{ seconds$.
 
 Note: This is a simplified calculation. In practice, TCP slow start, window size limitations, and
 protocol overhead would increase the transfer time.

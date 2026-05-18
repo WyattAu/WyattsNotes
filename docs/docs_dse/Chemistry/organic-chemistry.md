@@ -122,7 +122,7 @@ For $\mathrm{C}_2\mathrm{H}_6\mathrm{O}$:
 | Property        | Trend / Value                                                                                               |
 | --------------- | ----------------------------------------------------------------------------------------------------------- |
 | Boiling point   | Increases with chain length (more van der Waals forces)                                                     |
-| State at r.t.p. | $\mathrm{C}_1$-$\mathrm{C}_4$: gas; $\mathrm{C}_5$-$\mathrm{C}_{17}$: liquid; $\gt{}\mathrm{C}_{17}$: solid |
+| State at r.t.p. | $\mathrm{C}_1$-$\mathrm{C}_4$: gas; $\mathrm{C}_5$-$\mathrm{C}_{17}$: liquid; $\gt\mathrm{C}_{17}$: solid |
 | Solubility      | Insoluble in water, soluble in organic solvents                                                             |
 | Density         | Less dense than water                                                                                       |
 

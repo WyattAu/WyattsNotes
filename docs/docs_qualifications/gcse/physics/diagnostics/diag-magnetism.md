@@ -174,11 +174,11 @@ why this force is needed.
 **Solution:**
 
 (a) As the coil leaves the field, the rate of change of area
-$= \text{width{} \times \text{speed{} = 0.1 \times 2 = 0.2 \text{ m{}^2/\text{s{}$. Rate of change
+$= \text{width \times \text{speed = 0.1 \times 2 = 0.2 \text{ m^2/\text{s$. Rate of change
 of flux $= B \times \frac{\Delta A}{\Delta t} = 0.5 \times 0.2 = 0.1$ Wb/s. EMF
 $= N \times \frac{\Delta \Phi}{\Delta t} = 50 \times 0.1 = 5$ V.
 
-(b) Current $= \text{EMF{}/R = 5/5 = 1$ A.
+(b) Current $= \text{EMF/R = 5/5 = 1$ A.
 
 (c) By Lenz's law, the induced current opposes the change causing it. The coil is being pulled out
 of the field, reducing the flux through it. The induced current creates a magnetic field that tries
@@ -191,7 +191,7 @@ motion (Fleming's left-hand rule confirms the force is to the left, opposing the
 experiences a force: $F = BIL = 0.5 \times 1 \times 0.15 = 0.075$ N per side. For 50 turns:
 $F = 50 \times 0.075 = 3.75$ N (per active side).
 
-Alternatively, from energy conservation: $P = \text{EMF{} \times I = 5 \times 1 = 5$ W. Force
+Alternatively, from energy conservation: $P = \text{EMF \times I = 5 \times 1 = 5$ W. Force
 $= P/v = 5/2 = 2.5$ N.
 
 This force opposes the motion (by Lenz's law). An equal and opposite external force of 2.5 N must be

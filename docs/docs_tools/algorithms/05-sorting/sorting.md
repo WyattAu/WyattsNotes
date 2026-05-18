@@ -482,8 +482,8 @@ Tim Peters for Python in 2002. It is the default sort in Python, Java (for objec
 3. **Merge runs:** Maintain a stack of run lengths. Merge runs when the top of the stack violates
    two invariants:
 
-- $|\mathrm{run{}_i| \gt |\mathrm{run{}_{i+1}| + |\mathrm{run{}_{i+2}|$
-- $|\mathrm{run{}_{i+1}| \gt |\mathrm{run{}_{i+2}|$
+- $|\mathrm{run_i| \gt |\mathrm{run_{i+1}| + |\mathrm{run_{i+2}|$
+- $|\mathrm{run_{i+1}| \gt |\mathrm{run_{i+2}|$
 
 ### Why TimSort Is Fast in Practice
 
