@@ -271,7 +271,11 @@ export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout title={`${siteConfig.title}`} description={siteConfig.tagline} noFooter>
+    <Layout
+      title={siteConfig.title}
+      description="Free, rigorous study notes for IB, A-Level, GCSE, AP, DSE, Scottish Highers, Irish LC, university STEM, and programming. Covers mathematics, physics, chemistry, biology, computer science, economics, and 10+ programming languages."
+      noFooter
+    >
       <header className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.heroLabel}>Educational reference for systems engineers</p>

@@ -142,15 +142,32 @@ export default function Root({ children }: { children: React.ReactNode }): React
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'EducationalOrganization',
-            name: "Wyatt's Notes",
-            url: 'https://wyattsnotes.wyattau.com',
-            description:
-              'Free, rigorous study notes for IB, A-Level, GCSE, AP, Scottish Highers, Irish LC, and computer science.',
-            author: {
-              '@type': 'Person',
-              name: 'Wyatt Au',
-            },
+            '@graph': [
+              {
+                '@type': 'WebSite',
+                name: "Wyatt's Notes",
+                url: 'https://wyattsnotes.wyattau.com',
+                description:
+                  'Free, rigorous study notes for IB, A-Level, GCSE, AP, DSE, Scottish Highers, Irish LC, university STEM, and programming.',
+                author: {
+                  '@type': 'Person',
+                  name: 'Wyatt Au',
+                },
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: {
+                    '@type': 'EntryPoint',
+                    urlTemplate: 'https://wyattsnotes.wyattau.com/search?q={search_term_string}',
+                  },
+                  'query-input': 'required name=search_term_string',
+                },
+              },
+              {
+                '@type': 'EducationalOrganization',
+                name: "Wyatt's Notes",
+                url: 'https://wyattsnotes.wyattau.com',
+              },
+            ],
           }),
         }}
       />
