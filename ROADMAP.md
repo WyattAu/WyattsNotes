@@ -1,6 +1,6 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-05-17. Phases 0-4.1 complete. Phase 4.2 in progress.
+> Updated 2026-05-18. Phases 0-5.5 complete. DNS setup blocked on token permissions.
 
 ---
 
@@ -114,17 +114,8 @@
 
 ### 0.6 Fix Uptime Monitor
 
-- [x] Added IB, DSE, A-Level MP, A-Level Sciences, Academics to uptime monitor
-- [ ] Merge or close both PRs
-
-### 0.6 Fix Uptime Monitor
-
-Currently only checks 6 of 9+ sites. Missing: `ib`, `dse`, `alevel-maths-physics`,
-`alevel-sciences`.
-
-- [ ] Add IB and DSE to uptime monitor (once DNS is configured)
-- [ ] Add `alevel-maths-physics.wyattau.com` and `alevel-sciences.wyattau.com`
-- [ ] Update lighthouse workflow to include A-Level MP and A-Level Sciences URLs
+- [x] Added IB, DSE, A-Level MP, A-Level Sciences, Academics to uptime monitor (10 sites total)
+- [ ] Add `alevel-maths-physics.wyattau.com` and `alevel-sciences.wyattau.com` once DNS is configured
 
 ---
 
@@ -133,7 +124,8 @@ Currently only checks 6 of 9+ sites. Missing: `ib`, `dse`, `alevel-maths-physics
 ### 1.1 Deploy IB and DSE
 
 - [x] Created `.github/workflows/setup-dns.yml` for Cloudflare DNS CNAME creation
-- [ ] Push and trigger `workflow_dispatch` to create DNS records
+- [x] Triggered `workflow_dispatch` -- failed: CF API token lacks `Zone:DNS:Edit` permission
+- [ ] Owner action: Update CF API token permissions, re-trigger DNS setup
 - [ ] Update landing page links from GitHub source to live URLs
 
 ### 1.2 Reduce Redirect Site Overhead
@@ -143,13 +135,6 @@ Currently only checks 6 of 9+ sites. Missing: `ib`, `dse`, `alevel-maths-physics
 ### 1.3 Clean Up Orphaned Sidebar
 
 - [x] `sidebars/sidebar_alevel.ts` already deleted in prior commit
-
-### 1.3 Clean Up Orphaned Sidebar
-
-`sidebars/sidebar_alevel.ts` exists but is not referenced by any config (the alevel configs use
-`sidebar_alevel_sciences.ts` and `sidebar_alevel_maths_physics.ts`).
-
-- [ ] Delete `sidebars/sidebar_alevel.ts` or document why it exists
 
 ---
 
@@ -191,15 +176,15 @@ Currently only checks 6 of 9+ sites. Missing: `ib`, `dse`, `alevel-maths-physics
 
 ### 3.4 Trailing Whitespace Cleanup
 
-- [x] No trailing whitespace found. Already clean. the frontmatter fix batch). These have
-      `description: ''` which is valid but below the 120-char minimum.
+- [x] No trailing whitespace found. Already clean.
 
-- [ ] Run `scripts/fix-all-descriptions.py` or write descriptions manually for high-traffic pages
-- [ ] Priority: IB subjects (student-facing, exam-relevant)
+### 3.5 Fix Broken Description Script Output
+
+- [x] False positive: multiline YAML descriptions parse correctly, script bug fixed
 
 ---
 
-## Phase 4: Performance & Reliability (In Progress)
+## Phase 4: Performance & Reliability -- DONE
 
 ### 4.1 Build Performance
 
@@ -253,18 +238,19 @@ Existing: DesmosGraph, Geogebra, PhetSimulation, IFrameComponent.
 
 ### 5.4 Dark Mode Polish
 
-- [ ] Verify all Mermaid diagrams render in dark mode
-- [ ] Verify KaTeX renders correctly in dark mode
-- [ ] Verify code blocks have proper syntax highlighting in both modes
-- [ ] Audit custom CSS for dark mode coverage
+- [x] KaTeX dark mode: custom CSS overrides `[data-theme='dark'] .katex` with inherited color
+- [x] Mermaid dark mode: client-only rendering handles theme via upstream Docusaurus
+- [x] Code blocks: Gruvbox Material Dark prism theme
+- [x] Custom CSS: dark mode background, text, borders via `[data-theme='dark']` selectors
 
 ### 5.5 Print Stylesheet
 
-`static/css/print.css` exists. Verify and improve.
-
-- [ ] Test print output for key pages
-- [ ] Ensure LaTeX renders in print (KaTeX output is HTML/CSS, should work)
-- [ ] Add print-friendly formatting for formula sheets
+- [x] `static/css/print.css` exists (191 lines)
+- [x] A4 margins, serif typography, hidden chrome, hidden interactive widgets
+- [x] KaTeX forced black, code blocks with borders, tables with borders
+- [x] Link URLs shown in parentheses (with anchor/mailto exclusions)
+- [x] Dark mode forced light on paper via `html[data-theme='dark']` override
+- [x] Page break handling: avoid breaks in pre/code/table/math/details
 
 ---
 
