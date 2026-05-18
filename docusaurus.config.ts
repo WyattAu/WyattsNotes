@@ -43,7 +43,10 @@ const config = {
   presets: sharedPresets,
 
   plugins: [
-    [require.resolve('./src/plugins/service-worker'), { enable: true, cacheId: 'wyattsnotes-main' }],
+    [
+      require.resolve('./src/plugins/service-worker'),
+      { enable: true, cacheId: 'wyattsnotes-main' },
+    ],
     require.resolve('./src/plugins/fix-mermaid-elk'),
     [
       '@docusaurus/plugin-content-blog',
