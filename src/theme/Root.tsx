@@ -134,6 +134,10 @@ export default function Root({ children }: { children: React.ReactNode }): React
     }
   }, []);
 
+  // Use the current page's origin so each sub-site claims its own URL in JSON-LD
+  const siteUrl =
+    typeof window !== 'undefined' ? window.location.origin : 'https://wyattsnotes.wyattau.com';
+
   return (
     <>
       {children}
@@ -146,7 +150,7 @@ export default function Root({ children }: { children: React.ReactNode }): React
               {
                 '@type': 'WebSite',
                 name: "Wyatt's Notes",
-                url: 'https://wyattsnotes.wyattau.com',
+                url: siteUrl,
                 description:
                   'Free, rigorous study notes for IB, A-Level, GCSE, AP, DSE, Scottish Highers, Irish LC, university STEM, and programming.',
                 author: {
@@ -157,7 +161,7 @@ export default function Root({ children }: { children: React.ReactNode }): React
                   '@type': 'SearchAction',
                   target: {
                     '@type': 'EntryPoint',
-                    urlTemplate: 'https://wyattsnotes.wyattau.com/search?q={search_term_string}',
+                    urlTemplate: `${siteUrl}/search?q={search_term_string}`,
                   },
                   'query-input': 'required name=search_term_string',
                 },
@@ -165,7 +169,7 @@ export default function Root({ children }: { children: React.ReactNode }): React
               {
                 '@type': 'EducationalOrganization',
                 name: "Wyatt's Notes",
-                url: 'https://wyattsnotes.wyattau.com',
+                url: siteUrl,
               },
             ],
           }),

@@ -295,7 +295,7 @@ export function sharedConfig(options: SharedConfigOptions) {
     projectName: 'WyattsNotes',
     trailingSlash: false,
     clientModules: sharedClientModules,
-    onBrokenLinks: 'warn',
+    onBrokenLinks: 'throw',
     ...sharedCompilationConfig,
     headTags: sharedHeadTags,
     i18n: sharedI18n,

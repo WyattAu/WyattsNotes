@@ -34,7 +34,7 @@ const config = {
   trailingSlash: false,
 
   clientModules: sharedClientModules,
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   ...sharedCompilationConfig,
 
   headTags: sharedHeadTags,
@@ -143,7 +143,7 @@ const config = {
             },
             {
               label: 'Scottish Highers',
-              href: 'https://qualifications.wyattau.com/docs/qualifications/scottish-highers',
+              href: 'https://qualifications.wyattau.com/docs/qualifications/highers/intro',
             },
             {
               label: 'Irish LC',

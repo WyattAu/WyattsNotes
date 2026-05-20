@@ -402,14 +402,14 @@ Deferred — content-authoring work, not infrastructure.
 | TD-018 | Build heap sizing needs per-config calibration (not just file count)           | Medium   | Low     | 4     | DONE    |
 | TD-019 | DSE `waves-and-optics.md` nuclear `<details>` strip (flatten script damage)    | High     | Low     | 0     | DONE    |
 | TD-020 | Multiline DesmosGraph in qualifications, IB, DSE maths (acorn errors)          | High     | Low     | 0     | DONE    |
-| TD-021 | Footer Scottish Highers URL mismatch (`/scottish-highers` vs `/highers/intro`) | High     | Trivial | 5     | OPEN    |
-| TD-022 | JSON-LD hardcoded to main site for all sub-sites (`Root.tsx`)                  | Medium   | Medium  | 5     | OPEN    |
+| TD-021 | Footer Scottish Highers URL mismatch (`/scottish-highers` vs `/highers/intro`) | High     | Trivial | 5     | DONE    |
+| TD-022 | JSON-LD hardcoded to main site for all sub-sites (`Root.tsx`)                  | Medium   | Medium  | 5     | DONE    |
 | TD-023 | No Google/Bing webmaster verification tags                                     | Medium   | Trivial | 5     | OPEN    |
-| TD-024 | No accessibility audit (WCAG compliance, keyboard nav, screen reader)          | High     | Medium  | 4     | OPEN    |
+| TD-024 | No accessibility audit (WCAG compliance, keyboard nav, screen reader)          | High     | Medium  | 4     | DONE    |
 | TD-025 | programming.wyattau.com slow load (0.988s vs ~0.1s others)                     | Low      | Low     | 4     | OPEN    |
-| TD-026 | `onBrokenLinks: 'warn'` should be `'throw'` for CI gate                        | Medium   | Trivial | 2     | OPEN    |
-| TD-027 | Landing page stats hardcoded, drift on content changes                         | Low      | Low     | 5     | OPEN    |
-| TD-028 | 887 unstaged doc files with prettier reformatting changes                      | Low      | Medium  | --    | OPEN    |
+| TD-026 | `onBrokenLinks: 'warn'` should be `'throw'` for CI gate                        | Medium   | Trivial | 2     | DONE    |
+| TD-027 | Landing page stats hardcoded, drift on content changes                         | Low      | Low     | 5     | DONE    |
+| TD-028 | 887 unstaged doc files with prettier/template content changes                  | Low      | Medium  | --    | OPEN    |
 
 ---
 
