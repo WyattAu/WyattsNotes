@@ -1386,8 +1386,13 @@ inflation target, triggering a gilt market crisis and forcing a policy reversal.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Using circular reasoning by assuming the conclusion when evaluating economic policy
+   effectiveness.
 
-## Summary
+2. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.
 
-<!-- TODO: Add a summary for this topic -->
+3. Stating that 'demand falls' without specifying whether it is a contraction (movement along) or a
+   decrease (shift) of the demand curve.
+
+4. Neglecting to consider the ceteris paribus assumption when analysing multi-variable economic
+   scenarios.

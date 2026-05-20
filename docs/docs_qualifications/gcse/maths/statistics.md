@@ -652,8 +652,8 @@ The area under a frequency polygon equals the total frequency (just like a histo
 10. The heights of 100 students are summarised in a cumulative frequency table. Explain how you
     would estimate the interquartile range from this table.
 
-11. A biased dice has $P(\mathrm{even) = 0.6$ and $P(\mathrm{odd) = 0.4$. It is rolled twice.
-    Find the probability that the sum is greater than 8.
+11. A biased dice has $P(\mathrm{even) = 0.6$ and $P(\mathrm{odd) = 0.4$. It is rolled twice. Find
+    the probability that the sum is greater than 8.
 
 12. Explain the difference between a histogram and a bar chart, and when each is most appropriate.
 
@@ -721,8 +721,16 @@ Draw a cumulative frequency curve and estimate the median and interquartile rang
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to statistics, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- measures of central tendency and spread
+- probability distributions (binomial, normal)
+- hypothesis testing
+- correlation and regression
+- sampling methods
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

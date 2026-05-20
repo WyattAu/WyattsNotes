@@ -859,8 +859,11 @@ and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-## Worked Examples
+2. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing $P(A|B)$ with $P(B|A)$ — these are related by Bayes' theorem but are not equal in
+   general.

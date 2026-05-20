@@ -956,8 +956,18 @@ $$\mathrm{pH} = -\log(5.83 \times 10^{-3}) = 2.23$$
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misapplying Le Chatelier's principle — it predicts the direction of change, not the extent.
 
-## Worked Examples
+2. Confusing $K_c$ and $K_p$ — $K_c$ uses concentrations; $K_p$ uses partial pressures, and they
+   only apply to their respective phases.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
+
+4. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
+   overall charge.
+
+5. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
+
+6. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.

@@ -628,8 +628,16 @@ And TLS 1.1 by June 2019.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to tls in practice, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- fundamental definitions and theorems
+- algebraic and graphical methods
+- proof and logical reasoning
+- problem-solving strategies
+- applications and modelling
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

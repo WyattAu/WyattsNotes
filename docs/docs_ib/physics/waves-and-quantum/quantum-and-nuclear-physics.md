@@ -950,12 +950,18 @@ Approximately $3.2\,\mathrm{kg}$ of $^{235}\mathrm{U}$ is consumed per day.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing atomic number (protons) with mass number (protons + neutrons).
 
-## Summary
+2. Forgetting that radioactive decay is random and spontaneous — it cannot be predicted for
+   individual nuclei.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misunderstanding that half-life is constant regardless of the initial amount of substance.
 
-## Worked Examples
+4. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
+
+6. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.

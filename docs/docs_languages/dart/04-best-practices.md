@@ -121,12 +121,13 @@ slug: practices
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Summary
+2. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-<!-- TODO: Add a summary for this topic -->
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.

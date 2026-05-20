@@ -175,9 +175,8 @@ This is equivalent to a reflection in the line $y = -x$.
 
 ### Invariant Points and Lines
 
-An **invariant point** satisfies $A\mathbf{x} = \mathbf{x}$I.e.
-$(A - I)\mathbf{x} = \mathbf{0}$. An **invariant line** is a line mapped to itself
-(points on the line may move along it).
+An **invariant point** satisfies $A\mathbf{x} = \mathbf{x}$I.e. $(A - I)\mathbf{x} = \mathbf{0}$. An
+**invariant line** is a line mapped to itself (points on the line may move along it).
 
 ---
 
@@ -261,12 +260,12 @@ $$(2 - \lambda)(\lambda^2 - 6\lambda + 8) = (2 - \lambda)(\lambda - 2)(\lambda -
 $\lambda_1 = 2$ (algebraic multiplicity 2), $\lambda_2 = 4$.
 
 For $\lambda = 2$: $(A - 2I)\mathbf{v} = \mathbf{0}$ gives
-$\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & -1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0}$
-So $v_2 = v_3$ with $v_1$ free. Two linearly independent eigenvectors:
-$\mathbf{v}_1 = (1, 0, 0)$ And $\mathbf{v}_2 = (0, 1, 1)$.
+$\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & -1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0}$ So
+$v_2 = v_3$ with $v_1$ free. Two linearly independent eigenvectors: $\mathbf{v}_1 = (1, 0, 0)$ And
+$\mathbf{v}_2 = (0, 1, 1)$.
 
-For $\lambda = 4$: $(A - 4I)\mathbf{v} = \mathbf{0}$ gives $-v_2 - v_3 = 0$ and
-$-v_1 = 0$ So $\mathbf{v}_3 = (0, 1, -1)$.
+For $\lambda = 4$: $(A - 4I)\mathbf{v} = \mathbf{0}$ gives $-v_2 - v_3 = 0$ and $-v_1 = 0$ So
+$\mathbf{v}_3 = (0, 1, -1)$.
 
 The matrix is diagonalisable:
 $P = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 1 & -1 \end{pmatrix}$
@@ -278,8 +277,8 @@ $D = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 4 \end{pmatrix}$.
 
 ### Augmented Matrix Method
 
-For a system of $m$ equations in $n$ unknowns, write the augmented matrix $[A | \mathbf{b}]$
-and apply Elementary row operations to reach row echelon form.
+For a system of $m$ equations in $n$ unknowns, write the augmented matrix $[A | \mathbf{b}]$ and
+apply Elementary row operations to reach row echelon form.
 
 **Elementary row operations:**
 
@@ -517,8 +516,8 @@ $\begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 
 Eigenvector: $\mathbf{v}_1 = \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
 
 For $\lambda_2 = 2$:
-$\begin{pmatrix} 1 & -1 \\ 2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies x = y$.
-Eigenvector: $\mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+$\begin{pmatrix} 1 & -1 \\ 2 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies x = y$. Eigenvector:
+$\mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 
 $$P = \begin{pmatrix} 1 & 1 \\ 2 & 1 \end{pmatrix}, \quad D = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}$$
 
@@ -564,8 +563,8 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
    positive signs.
 
 8. **Misidentifying invariant lines.** An invariant line is mapped to itself, but points on the line
-   may move. To find invariant lines, solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$
-   where $\lambda$ is an eigenvalue. Every eigenvector lies on an invariant line through the origin.
+   may move. To find invariant lines, solve $(A - \lambda I)\mathbf{v} = \mathbf{0}$ where $\lambda$
+   is an eigenvalue. Every eigenvector lies on an invariant line through the origin.
 
 ---
 
@@ -622,4 +621,16 @@ and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to matrices and linear
+transformations, including key theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- fundamental definitions and theorems
+- algebraic and graphical methods
+- proof and logical reasoning
+- problem-solving strategies
+- applications and modelling
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

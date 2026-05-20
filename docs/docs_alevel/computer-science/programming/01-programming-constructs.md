@@ -929,4 +929,16 @@ Now each call that omits `target` gets a fresh empty list.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of programming constructs, including underlying theory,
+practical implementation, and key applications.
+
+**Key concepts include:**
+
+- variables, data types, and control flow
+- functions and procedures
+- object-oriented programming
+- error handling and debugging
+- modular design
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

@@ -806,4 +806,11 @@ Deallocation of the entire pool.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with thread-local storage (tls), follow these steps:
+
+1. Identify the problem requirements and constraints
+2. Select the appropriate algorithm, data structure, or technique
+3. Implement the solution step by step
+4. Test with edge cases and verify correctness

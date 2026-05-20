@@ -1478,4 +1478,16 @@ For many species when other fruits are scarce).
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of ecology, including key concepts, experimental
+evidence, and real-world applications.
+
+**Key concepts include:**
+
+- ecosystems and food webs
+- nutrient cycles (carbon, nitrogen)
+- population dynamics
+- biodiversity and conservation
+- succession
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

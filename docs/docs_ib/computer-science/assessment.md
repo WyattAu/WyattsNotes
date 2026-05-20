@@ -347,12 +347,14 @@ Use this checklist to track your preparation:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Summary
+2. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-<!-- TODO: Add a summary for this topic -->
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.

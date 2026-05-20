@@ -998,4 +998,25 @@ try (FileChannel ch = FileChannel.open(Path.of("data.db"),
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Java ArrayList operations**
+
+Create an ArrayList, add elements, and iterate using a for-each loop.
+
+**Solution:**
+
+```java
+import java.util.ArrayList;
+
+public class Example {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Alice");
+        list.add("Bob");
+        list.add("Charlie");
+
+        for (String name : list) {
+            System.out.println(name);
+        }
+    }
+}
+```

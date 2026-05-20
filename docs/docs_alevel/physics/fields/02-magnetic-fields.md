@@ -857,12 +857,19 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing gravitational field strength $g$ with gravitational potential $V_g$ — one is force per
+   unit mass, the other is energy per unit mass.
 
-## Summary
+2. Forgetting that field lines point in the direction a positive test charge (or mass) would move.
 
-<!-- TODO: Add a summary for this topic -->
+3. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-## Worked Examples
+4. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
+
+6. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.

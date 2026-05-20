@@ -472,8 +472,7 @@ $$= \bigl[(j-1) + (j+1)\bigr] 2^j + 1 = 2j \cdot 2^j + 1 = j \cdot 2^{j+1} + 1$$
 
 $$= (j + 1 - 1) \cdot 2^{j+1} + 1$$
 
-This is the formula with $n = j + 1$. By induction, the result holds for all
-$n \in \mathbb{Z}^+$.
+This is the formula with $n = j + 1$. By induction, the result holds for all $n \in \mathbb{Z}^+$.
 
 </details>
 
@@ -576,4 +575,16 @@ Actual error: $|0.1823 - 0.18| = 0.0023$Which is within the bound.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to sequences and series,
+including key theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- arithmetic and geometric sequences
+- series and sigma notation
+- recurrence relations
+- convergence tests
+- mathematical induction
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

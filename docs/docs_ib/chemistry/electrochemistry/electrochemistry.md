@@ -1573,8 +1573,14 @@ $$2\mathrm{MnO}_4^- + 3\mathrm{SO}_3^{2-} + \mathrm{H}_2\mathrm{O} \to 2\mathrm{
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
 
-## Worked Examples
+2. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Forgetting to balance equations before performing calculations — always check that atoms and
+   charges balance on both sides.
+
+4. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
+   overall charge.

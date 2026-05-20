@@ -107,8 +107,7 @@ $$\mathrm{C_n\mathrm{H_{2n+2} + \frac{3n+1}{2}\mathrm{O_2 \to n\mathrm{CO_2 + (n
 
 **Example:** $\mathrm{CH_4 + 2\mathrm{O_2 \to \mathrm{CO_2 + 2\mathrm{H_2\mathrm{O$
 
-**Example:**
-$2\mathrm{C_4\mathrm{H_{10} + 13\mathrm{O_2 \to 8\mathrm{CO_2 + 10\mathrm{H_2\mathrm{O$
+**Example:** $2\mathrm{C_4\mathrm{H_{10} + 13\mathrm{O_2 \to 8\mathrm{CO_2 + 10\mathrm{H_2\mathrm{O$
 
 **Incomplete combustion** (limited oxygen) produces carbon monoxide (CO) and/or carbon (soot):
 
@@ -208,11 +207,10 @@ Alkanes do NOT decolourise bromine water (no double bond to react with).
 Alkenes undergo **addition reactions** because the double bond can open up, allowing new atoms to
 Bond to the carbon atoms.
 
-**Hydrogenation:** $\mathrm{C_2\mathrm{H_4 + \mathrm{H_2 \to \mathrm{C_2\mathrm{H_6$ (with
-nickel Catalyst)
+**Hydrogenation:** $\mathrm{C_2\mathrm{H_4 + \mathrm{H_2 \to \mathrm{C_2\mathrm{H_6$ (with nickel
+Catalyst)
 
-**Hydration:**
-$\mathrm{C_2\mathrm{H_4 + \mathrm{H_2\mathrm{O \to \mathrm{C_2\mathrm{H_5\mathrm{OH$
+**Hydration:** $\mathrm{C_2\mathrm{H_4 + \mathrm{H_2\mathrm{O \to \mathrm{C_2\mathrm{H_5\mathrm{OH$
 (with Phosphoric acid catalyst)
 
 **Reaction with steam:** This is used industrially to make ethanol.
@@ -521,14 +519,14 @@ Conditions, may contaminate recycling streams if mixed with conventional plastic
 
 ### 9.1 Reaction Types Summary
 
-| Reaction Type  | Description                          | Example                                                                                                                |
-| -------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| Combustion     | Burning in oxygen                    | $\mathrm{CH_4 + 2\mathrm{O_2 \to \mathrm{CO_2 + 2\mathrm{H_2\mathrm{O$                                       |
-| Addition       | Atoms added across C=C double bond   | $\mathrm{C_2\mathrm{H_4 + \mathrm{Br_2 \to \mathrm{C_2\mathrm{H_4\mathrm{Br_2$                             |
-| Substitution   | Atom replaced by another atom        | $\mathrm{CH_4 + \mathrm{Cl_2 \to \mathrm{CH_3\mathrm{Cl + \mathrm{HCl$                                       |
-| Polymerisation | Monomers join to form long chains    | $n\mathrm{C_2\mathrm{H_4 \to \mathrm{poly(ethene)$                                                               |
+| Reaction Type  | Description                          | Example                                                                                                |
+| -------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| Combustion     | Burning in oxygen                    | $\mathrm{CH_4 + 2\mathrm{O_2 \to \mathrm{CO_2 + 2\mathrm{H_2\mathrm{O$                                 |
+| Addition       | Atoms added across C=C double bond   | $\mathrm{C_2\mathrm{H_4 + \mathrm{Br_2 \to \mathrm{C_2\mathrm{H_4\mathrm{Br_2$                         |
+| Substitution   | Atom replaced by another atom        | $\mathrm{CH_4 + \mathrm{Cl_2 \to \mathrm{CH_3\mathrm{Cl + \mathrm{HCl$                                 |
+| Polymerisation | Monomers join to form long chains    | $n\mathrm{C_2\mathrm{H_4 \to \mathrm{poly(ethene)$                                                     |
 | Esterification | Acid + alcohol $\to$ ester + water   | $\mathrm{CH_3\mathrm{COOH + \mathrm{C_2\mathrm{H_5\mathrm{OH \to \mathrm{ester + \mathrm{H_2\mathrm{O$ |
-| Fermentation   | Sugar $\to$ ethanol + carbon dioxide | $\mathrm{C_6\mathrm{H_{12}\mathrm{O_6 \to 2\mathrm{C_2\mathrm{H_5\mathrm{OH + 2\mathrm{CO_2$             |
+| Fermentation   | Sugar $\to$ ethanol + carbon dioxide | $\mathrm{C_6\mathrm{H_{12}\mathrm{O_6 \to 2\mathrm{C_2\mathrm{H_5\mathrm{OH + 2\mathrm{CO_2$           |
 
 ## Common Pitfalls
 
@@ -818,4 +816,12 @@ inside and n outside).
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: pH calculation**
+
+Calculate the pH of a $0.050\,\text{mol\,dm}^{-3}$ solution of HCl.
+
+**Solution:**
+
+HCl is a strong acid, so $[\text{H}^+] = 0.050\,\text{mol\,dm}^{-3}$.
+
+$$\text{pH} = -\log_{10}[\text{H}^+] = -\log_{10}(0.050) = 1.30$$

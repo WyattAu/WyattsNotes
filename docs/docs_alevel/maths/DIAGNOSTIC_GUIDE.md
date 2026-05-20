@@ -381,3 +381,67 @@ achieving PASS on the majority of individual Unit tests.
 Copy this template into a personal notes file. Populate it as you complete each Diagnostic. Use one
 row per topic with columns: Unit Test, Integration Test, Notes, Date. All 24 topics are listed in
 the Coverage Map (Section 7).
+
+## Common Pitfalls
+
+- **Misdiagnosing weak areas by topic score alone.** A low score in Statistics may stem from poor
+  probability foundations, not statistical testing. **Fix:** Review individual question attempts to
+  identify whether errors are conceptual, procedural, or computational.
+
+- **Ignoring the diagnostic timing data.** Spending too long on early questions and rushing later
+  ones creates a false picture of ability. **Fix:** Use timed practice from the start; track
+  time-per-question to identify areas where fluency is lacking.
+
+- **Treating the diagnostic as a one-time event.** Skills degrade without practice; a single
+  diagnostic snapshot misses improvement and regression. **Fix:** Retake diagnostic tests at regular
+  intervals (monthly) and compare topic-level scores to track progress.
+
+## Worked Examples
+
+### Example 1: Identifying Weak Areas from Diagnostic Scores
+
+**Problem.** A student scores: Pure 65%, Mechanics 42%, Statistics 78%. Recommend a study priority
+plan.
+
+**Solution.** Rank by urgency: Mechanics (42%) → Pure (65%) → Statistics (78%).
+
+Priority 1 (Mechanics): review Newton's laws, connected particles, and moments. Allocate 50% of
+study time here.
+
+Priority 2 (Pure): focus on calculus techniques (integration by parts, trigonometric integrals) and
+proof by induction. Allocate 35% of study time.
+
+Priority 3 (Statistics): maintain with exam practice papers; focus on hypothesis testing wording.
+Allocate 15%.
+
+$\blacksquare$
+
+### Example 2: Diagnostic Question Analysis — Common Misconception
+
+**Problem.** A student answered: "$\int \sin^2 x\,dx = \frac{\sin^3 x}{3} + c$". Identify and
+correct the error.
+
+**Solution.** The student incorrectly applied the power rule to a composite function.
+
+Correct approach using the double-angle identity:
+
+$$\sin^2 x = \frac{1 - \cos 2x}{2}$$
+
+$$\int \sin^2 x\,dx = \int \frac{1 - \cos 2x}{2}\,dx = \frac{x}{2} - \frac{\sin 2x}{4} + c$$
+
+This error indicates the student needs to review trigonometric identities and integration
+techniques.
+
+$\blacksquare$
+
+## Summary
+
+- Diagnostic tests identify strengths and weaknesses across Pure, Mechanics, and Statistics before
+  exam preparation begins.
+- Topic-level analysis reveals specific areas needing targeted revision; always review individual
+  questions, not just total scores.
+- Common error patterns include: misapplying calculus rules, confusion between correlation and
+  causation, and incorrect force diagrams.
+- Use diagnostic results to create a prioritised study plan, allocating more time to weaker areas
+  while maintaining stronger ones.
+- Re-test regularly to measure progress and adjust the study plan accordingly.

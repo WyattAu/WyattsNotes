@@ -282,8 +282,8 @@ So $v = -x + C$And $y = x + \frac{1}{C - x}$.
 
 ### 2.13 Worked Example: Newton's Law of Cooling
 
-**Problem.** A body at $90\degree\mathrm{C$ is placed in a room at $20\degree\mathrm{C$. After
-10 Minutes, its temperature is $60\degree\mathrm{C$. When will it reach $30\degree\mathrm{C$?
+**Problem.** A body at $90\degree\mathrm{C$ is placed in a room at $20\degree\mathrm{C$. After 10
+Minutes, its temperature is $60\degree\mathrm{C$. When will it reach $30\degree\mathrm{C$?
 
 <details>
 <summary>Solution</summary>
@@ -750,11 +750,11 @@ $$x'' + 2\gamma x' + \omega_0^2 x = \frac{F(t)}{m}$$
 
 The homogeneous solution depends on the discriminant $\gamma^2 - \omega_0^2$:
 
-| Condition                   | Type        | Homogeneous Solution                                                                                  |
-| --------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
+| Condition                 | Type        | Homogeneous Solution                                                                                  |
+| ------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
 | $\gamma^2 \lt \omega_0^2$ | Underdamped | $e^{-\gamma t}(c_1 \cos(\omega_d t) + c_2 \sin(\omega_d t))$$\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ |
-| $\gamma^2 = \omega_0^2$     | Critical    | $e^{-\gamma t}(c_1 + c_2 t)$                                                                          |
-| $\gamma^2 > \omega_0^2$     | Overdamped  | $c_1 e^{r_1 t} + c_2 e^{r_2 t}$$r_{1,2} = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$                   |
+| $\gamma^2 = \omega_0^2$   | Critical    | $e^{-\gamma t}(c_1 + c_2 t)$                                                                          |
+| $\gamma^2 > \omega_0^2$   | Overdamped  | $c_1 e^{r_1 t} + c_2 e^{r_2 t}$$r_{1,2} = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$                   |
 
 ### 3.17 Common Pitfalls for Second-Order ODEs
 
@@ -840,8 +840,8 @@ So $\lambda$ is an eigenvalue of $A$ and $\mathbf{v}$ is the corresponding eigen
 $$\mathbf{x} = c_1 \mathbf{v}_1 e^{\lambda_1 t} + \cdots + c_n \mathbf{v}_n e^{\lambda_n t}$$
 
 **Case 2: $A$ has a repeated eigenvalue $\lambda$ with algebraic multiplicity $m$ and geometric
-Multiplicity $k \lt m$.** Include terms involving $t^j e^{\lambda t}$ where generalized
-Eigenvectors fill out the solution space.
+Multiplicity $k \lt m$.** Include terms involving $t^j e^{\lambda t}$ where generalized Eigenvectors
+fill out the solution space.
 
 **Case 3: Complex eigenvalues $\lambda = \alpha \pm i\beta$ with eigenvector
 $\mathbf{v} = \mathbf{a} \pm i\mathbf{b}$.** The real solutions are
@@ -852,16 +852,15 @@ $e^{\alpha t}(\mathbf{a}\sin(\beta t) + \mathbf{b}\cos(\beta t))$.
 
 **Definition.** $e^{At} = \sum_{k=0}^{\infty} \frac{A^k t^k}{k!}$.
 
-**Theorem 4.1.** The solution to $\mathbf{x}' = A\mathbf{x}$ with
-$\mathbf{x}(0) = \mathbf{x}_0$ is $\mathbf{x}(t) = e^{At}\mathbf{x}_0$.
+**Theorem 4.1.** The solution to $\mathbf{x}' = A\mathbf{x}$ with $\mathbf{x}(0) = \mathbf{x}_0$ is
+$\mathbf{x}(t) = e^{At}\mathbf{x}_0$.
 
 **Proposition 4.2.** If $A$ is diagonalizable as $A = PDP^{-1}$Then $e^{At} = Pe^{Dt}P^{-1}$ Where
 $e^{Dt} = \mathrm{diag(e^{\lambda_1 t}, \ldots, e^{\lambda_n t})$.
 
 ### 4.4 Worked Example: Distinct Real Eigenvalues
 
-**Problem.** Solve
-$\mathbf{x}' = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}\mathbf{x}$.
+**Problem.** Solve $\mathbf{x}' = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}\mathbf{x}$.
 
 _Solution._ Characteristic equation:
 $\det(A - \lambda I) = \lambda^2 + 3\lambda + 2 = (\lambda + 1)(\lambda + 2) = 0$. Eigenvalues:
@@ -880,8 +879,7 @@ $\blacksquare$
 
 ### 4.5 Worked Example: Complex Eigenvalues
 
-**Problem.** Solve
-$\mathbf{x}' = \begin{pmatrix} 0 & -2 \\ 1 & 0 \end{pmatrix}\mathbf{x}$.
+**Problem.** Solve $\mathbf{x}' = \begin{pmatrix} 0 & -2 \\ 1 & 0 \end{pmatrix}\mathbf{x}$.
 
 <details>
 <summary>Solution</summary>
@@ -908,8 +906,7 @@ $\blacksquare$
 
 ### 4.6 Worked Example: Repeated Eigenvalues
 
-**Problem.** Solve
-$\mathbf{x}' = \begin{pmatrix} 2 & 1 \\ -1 & 4 \end{pmatrix}\mathbf{x}$.
+**Problem.** Solve $\mathbf{x}' = \begin{pmatrix} 2 & 1 \\ -1 & 4 \end{pmatrix}\mathbf{x}$.
 
 <details>
 <summary>Solution</summary>
@@ -941,9 +938,8 @@ $\blacksquare$
 
 ### 4.7 Fundamental Matrix
 
-**Definition.** A **fundamental matrix** $\Phi(t)$ for the system
-$\mathbf{x}' = A\mathbf{x}$ is an $n \times n$ matrix whose columns form a fundamental
-set of solutions.
+**Definition.** A **fundamental matrix** $\Phi(t)$ for the system $\mathbf{x}' = A\mathbf{x}$ is an
+$n \times n$ matrix whose columns form a fundamental set of solutions.
 
 **Proposition 4.3.** $\Phi(t)$ satisfies $\Phi' = A\Phi$And the general solution is
 $\mathbf{x}(t) = \Phi(t)\mathbf{c}$ for $\mathbf{c} \in \mathbb{R}^n$.
@@ -971,17 +967,17 @@ _Proof of (4)._ From (3) with $s = -t$: $e^{At}e^{-At} = e^{A(t-t)} = e^0 = I$. 
 
 ### 4.9 Phase Portrait Analysis for 2D Systems
 
-For the linear system $\mathbf{x}' = A\mathbf{x}$ with $A$ a $2 \times 2$ matrix, the
-qualitative Behaviour near the origin is determined by the eigenvalues:
+For the linear system $\mathbf{x}' = A\mathbf{x}$ with $A$ a $2 \times 2$ matrix, the qualitative
+Behaviour near the origin is determined by the eigenvalues:
 
-| Eigenvalues                                   | Phase Portrait  | Stability             |
-| --------------------------------------------- | --------------- | --------------------- |
+| Eigenvalues                                 | Phase Portrait  | Stability             |
+| ------------------------------------------- | --------------- | --------------------- |
 | $\lambda_1, \lambda_2 \lt 0$Real, distinct  | Stable node     | Asymptotically stable |
-| $\lambda_1, \lambda_2 > 0$Real, distinct      | Unstable node   | Unstable              |
-| $\lambda_1 \lt 0 \lt \lambda_2$           | Saddle point    | Unstable              |
+| $\lambda_1, \lambda_2 > 0$Real, distinct    | Unstable node   | Unstable              |
+| $\lambda_1 \lt 0 \lt \lambda_2$             | Saddle point    | Unstable              |
 | $\lambda = \alpha \pm i\beta$$\alpha \lt 0$ | Stable spiral   | Asymptotically stable |
-| $\lambda = \alpha \pm i\beta$$\alpha > 0$     | Unstable spiral | Unstable              |
-| $\lambda = \pm i\beta$                        | Center          | (Marginally) stable   |
+| $\lambda = \alpha \pm i\beta$$\alpha > 0$   | Unstable spiral | Unstable              |
+| $\lambda = \pm i\beta$                      | Center          | (Marginally) stable   |
 
 _Remark._ The **trace-determinant plane** provides a convenient classification. Let
 $\tau = \mathrm{tr(A)$ and $\Delta = \det(A)$. The eigenvalues satisfy
@@ -997,8 +993,8 @@ Stability is determined by the sign of $\tau$: stable if $\tau \lt 0$Unstable if
 
 ### 4.10 Nonhomogeneous Systems
 
-For $\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)$If $\Phi(t)$ is a fundamental
-matrix for the Homogeneous system, the general solution is
+For $\mathbf{x}' = A\mathbf{x} + \mathbf{f}(t)$If $\Phi(t)$ is a fundamental matrix for the
+Homogeneous system, the general solution is
 
 $$\mathbf{x}(t) = \Phi(t)\mathbf{c} + \Phi(t)\int \Phi^{-1}(s)\mathbf{f}(s)\, ds$$
 
@@ -1036,13 +1032,12 @@ $|f(t)| \leq Me^{at}$ for some $M, a > 0$.
 
 ### 5.2 Basic Properties
 
-**Theorem 5.1 (Linearity).**
-$\mathcal{L}\{af + bg\} = a\mathcal{L}\{f\} + b\mathcal{L}\{g\}$.
+**Theorem 5.1 (Linearity).** $\mathcal{L}\{af + bg\} = a\mathcal{L}\{f\} + b\mathcal{L}\{g\}$.
 
 **Theorem 5.2 (First Shifting).** $\mathcal{L}\{e^{at}f(t)\} = F(s - a)$.
 
-**Theorem 5.3 (Second Shifting).** $\mathcal{L}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$Where $u_c(t)$
-is The unit step function.
+**Theorem 5.3 (Second Shifting).** $\mathcal{L}\{u_c(t)f(t - c)\} = e^{-cs}F(s)$Where $u_c(t)$ is
+The unit step function.
 
 **Theorem 5.4 (Derivative).** $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$.
 
@@ -1079,17 +1074,17 @@ Therefore $\mathcal{L}\{g(t)\} = F(s)/s$. $\blacksquare$
 ### 5.4 Common Laplace Transforms
 
 | $f(t)$           | $F(s) = \mathcal{L}\{f(t)\}$ |
-| ---------------- | ---------------------------------- |
-| $1$              | $1/s$                              |
-| $t^n$            | $n!/s^{n+1}$                       |
-| $e^{at}$         | $1/(s - a)$                        |
-| $t^n e^{at}$     | $n!/(s - a)^{n+1}$                 |
-| $\sin(bt)$       | $b/(s^2 + b^2)$                    |
-| $\cos(bt)$       | $s/(s^2 + b^2)$                    |
-| $e^{at}\sin(bt)$ | $b/((s-a)^2 + b^2)$                |
-| $e^{at}\cos(bt)$ | $(s-a)/((s-a)^2 + b^2)$            |
-| $u_c(t)$         | $e^{-cs}/s$                        |
-| $\delta(t - c)$  | $e^{-cs}$                          |
+| ---------------- | ---------------------------- |
+| $1$              | $1/s$                        |
+| $t^n$            | $n!/s^{n+1}$                 |
+| $e^{at}$         | $1/(s - a)$                  |
+| $t^n e^{at}$     | $n!/(s - a)^{n+1}$           |
+| $\sin(bt)$       | $b/(s^2 + b^2)$              |
+| $\cos(bt)$       | $s/(s^2 + b^2)$              |
+| $e^{at}\sin(bt)$ | $b/((s-a)^2 + b^2)$          |
+| $e^{at}\cos(bt)$ | $(s-a)/((s-a)^2 + b^2)$      |
+| $u_c(t)$         | $e^{-cs}/s$                  |
+| $\delta(t - c)$  | $e^{-cs}$                    |
 
 ### 5.5 Solving IVPs with Laplace Transforms
 
@@ -1145,8 +1140,7 @@ $f(t) = \frac{1}{4} - \frac{1}{4}\cos 2t$. $\blacksquare$
 </details>
 ### 5.7 Convolution Theorem
 
-**Theorem 5.8 (Convolution).** If $F(s) = \mathcal{L}\{f(t)\}$ and
-$G(s) = \mathcal{L}\{g(t)\}$ Then
+**Theorem 5.8 (Convolution).** If $F(s) = \mathcal{L}\{f(t)\}$ and $G(s) = \mathcal{L}\{g(t)\}$ Then
 
 $$\mathcal{L}\{f * g\} = F(s)G(s)$$
 
@@ -1338,9 +1332,8 @@ Bessel's equation of order $\nu$:
 
 $$x^2 y'' + xy' + (x^2 - \nu^2)y = 0$$
 
-For $\nu \notin \mathbb{Z}$The solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel functions of
-the First kind). For $\nu = n \in \mathbb{N}$The second solution is the Weber function
-$Y_n(x)$.
+For $\nu \notin \mathbb{Z}$The solutions are $J_\nu(x)$ and $J_{-\nu}(x)$ (Bessel functions of the
+First kind). For $\nu = n \in \mathbb{N}$The second solution is the Weber function $Y_n(x)$.
 
 ### 6.4b Worked Example: Higher-Order ODE
 
@@ -1822,8 +1815,8 @@ $\blacksquare$
 
 ### 8.16 Worked Example: D'Alembert's Solution
 
-**Problem.** Solve $u_{tt} = 4u_{xx}$ for $-\infty \lt x \lt \infty$ with $u(x, 0) = e^{-x^2}$
-and $u_t(x, 0) = 0$.
+**Problem.** Solve $u_{tt} = 4u_{xx}$ for $-\infty \lt x \lt \infty$ with $u(x, 0) = e^{-x^2}$ and
+$u_t(x, 0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1839,38 +1832,36 @@ This represents two Gaussian pulses traveling in opposite directions at speed 2.
 
 ### 9.1 Autonomous Systems
 
-For $\mathbf{x}' = \mathbf{f}(\mathbf{x})$A **critical point**
-$\mathbf{x}^*$ satisfies $\mathbf{f}(\mathbf{x}^*) = \mathbf{0}$.
+For $\mathbf{x}' = \mathbf{f}(\mathbf{x})$A **critical point** $\mathbf{x}^*$ satisfies
+$\mathbf{f}(\mathbf{x}^*) = \mathbf{0}$.
 
 ### 9.2 Linearization and Stability
 
-Let $A = J\mathbf{f}(\mathbf{x}^*)$ be the Jacobian at the critical point. The
-eigenvalues of $A$ Determine the local stability:
+Let $A = J\mathbf{f}(\mathbf{x}^*)$ be the Jacobian at the critical point. The eigenvalues of $A$
+Determine the local stability:
 
-| Eigenvalues of $A$                       | Type            | Stability             |
-| ---------------------------------------- | --------------- | --------------------- |
-| Both real, negative                      | Stable node     | Asymptotically stable |
-| Both real, positive                      | Unstable node   | Unstable              |
-| Real, opposite signs                     | Saddle point    | Unstable              |
+| Eigenvalues of $A$                   | Type            | Stability             |
+| ------------------------------------ | --------------- | --------------------- |
+| Both real, negative                  | Stable node     | Asymptotically stable |
+| Both real, positive                  | Unstable node   | Unstable              |
+| Real, opposite signs                 | Saddle point    | Unstable              |
 | Complex, $\mathrm{Re(\lambda) \lt 0$ | Stable spiral   | Asymptotically stable |
-| Complex, $\mathrm{Re(\lambda) > 0$     | Unstable spiral | Unstable              |
-| Purely imaginary                         | Center          | (Marginally) stable   |
+| Complex, $\mathrm{Re(\lambda) > 0$   | Unstable spiral | Unstable              |
+| Purely imaginary                     | Center          | (Marginally) stable   |
 
 ### 9.3 Lyapunov Stability
 
-**Definition.** A critical point $\mathbf{x}^*$ is **stable** if for every
-$\varepsilon > 0$There Exists $\delta > 0$ such that
-$\|\mathbf{x}(0) - \mathbf{x}^*\| \lt \delta$ implies
+**Definition.** A critical point $\mathbf{x}^*$ is **stable** if for every $\varepsilon > 0$There
+Exists $\delta > 0$ such that $\|\mathbf{x}(0) - \mathbf{x}^*\| \lt \delta$ implies
 $\|\mathbf{x}(t) - \mathbf{x}^*\| \lt \varepsilon$ for all $t > 0$.
 
 It is **asymptotically stable** if it is stable and $\mathbf{x}(t) \to \mathbf{x}^*$ as
 $t \to \infty$.
 
 **Theorem 9.1 (Lyapunov).** If there exists a continuously differentiable function $V$ (a **Lyapunov
-Function**) such that $V(\mathbf{x}^*) = 0$$V(\mathbf{x}) > 0$ for
-$\mathbf{x} \neq \mathbf{x}^*$ And $\dot{V} \leq 0$ in a neighbourhood of
-$\mathbf{x}^*$Then $\mathbf{x}^*$ is stable. If $\dot{V} \lt 0$ for
-$\mathbf{x} \neq \mathbf{x}^*$Then $\mathbf{x}^*$ is asymptotically stable.
+Function**) such that $V(\mathbf{x}^*) = 0$$V(\mathbf{x}) > 0$ for $\mathbf{x} \neq \mathbf{x}^*$
+And $\dot{V} \leq 0$ in a neighbourhood of $\mathbf{x}^*$Then $\mathbf{x}^*$ is stable. If
+$\dot{V} \lt 0$ for $\mathbf{x} \neq \mathbf{x}^*$Then $\mathbf{x}^*$ is asymptotically stable.
 
 ### 9.4 Worked Example: Linearization
 
@@ -1910,10 +1901,9 @@ Negative determinant: **saddle point** (unstable). $\blacksquare$
 
 ### 9.5 Phase Portraits for 2D Nonlinear Systems
 
-For the nonlinear system $\mathbf{x}' = \mathbf{f}(\mathbf{x})$The
-**Hartman-Grobman theorem** States that near a hyperbolic critical point (one where the Jacobian has
-no eigenvalues on the Imaginary axis), the nonlinear phase portrait is topologically equivalent to
-the linearized one.
+For the nonlinear system $\mathbf{x}' = \mathbf{f}(\mathbf{x})$The **Hartman-Grobman theorem**
+States that near a hyperbolic critical point (one where the Jacobian has no eigenvalues on the
+Imaginary axis), the nonlinear phase portrait is topologically equivalent to the linearized one.
 
 **Procedure for sketching phase portraits:**
 
@@ -2042,8 +2032,8 @@ This is not negative definite. Let us try $V(x, y) = \frac{x^4}{4} + \frac{y^4}{
 
 $\dot{V} = x^3(-x - y^3) + y^3(x^3 - y) = -x^4 - x^3 y^3 + x^3 y^3 - y^4 = -(x^4 + y^4)$.
 
-Since $\dot{V} = -(x^4 + y^4) \lt 0$ for $(x, y) \neq (0, 0)$The origin is asymptotically Stable
-by Lyapunov's theorem. $\blacksquare$
+Since $\dot{V} = -(x^4 + y^4) \lt 0$ for $(x, y) \neq (0, 0)$The origin is asymptotically Stable by
+Lyapunov's theorem. $\blacksquare$
 
 </details>
 
@@ -2071,8 +2061,8 @@ construct a trapping region. Define
 $L(x) = x^3/3 - x$ and write the system as $x' = y$$y' = -x - \mu L'(x) y$.
 
 The function $L(x)$ has zeros at $x = \pm 1$. For $\mu > 0$The damping is negative for
-$\lvert x \rvert \lt 1$ (energy input) and positive for $\lvert x \rvert > 1$ (energy
-Dissipation). This creates a unique stable limit cycle that passes through $x = \pm 1$.
+$\lvert x \rvert \lt 1$ (energy input) and positive for $\lvert x \rvert > 1$ (energy Dissipation).
+This creates a unique stable limit cycle that passes through $x = \pm 1$.
 
 A detailed proof requires constructing an annular region and applying the Poincaré-Bendixson Theorem
 (the inner boundary encloses the unstable origin; the outer boundary is chosen so that Trajectories
@@ -2374,8 +2364,7 @@ Solve $\mathbf{x}' = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\mathbf{x}$.
 
 _Solution._ $\det(A - \lambda I) = \lambda^2 + 1 = 0$. $\lambda = \pm i$.
 
-For $\lambda = i$:
-$\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{v} = \mathbf{0}$.
+For $\lambda = i$: $\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{v} = \mathbf{0}$.
 $-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$:
 $\mathbf{v} = \begin{pmatrix} 1 \\ -i \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
@@ -2527,4 +2516,45 @@ Portrait Analysis).
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Definite integration**
+
+Evaluate $\displaystyle\int_0^2 (3x^2 + 2x)\,dx$.
+
+**Solution:**
+
+$$\int (3x^2 + 2x)\,dx = x^3 + x^2 + c$$
+
+$$\left[x^3 + x^2\right]_0^2 = (8 + 4) - (0) = 12$$
+
+**Example 2: Integration by parts**
+
+Find $\displaystyle\int x e^{2x}\,dx$.
+
+**Solution:**
+
+Let $u = x \implies \frac{du}{dx} = 1$ and $\frac{dv}{dx} = e^{2x} \implies v = \frac{1}{2}e^{2x}$.
+
+$$\int x e^{2x}\,dx = x \cdot \frac{1}{2}e^{2x} - \int \frac{1}{2}e^{2x}\,dx = \frac{x e^{2x}}{2} - \frac{e^{2x}}{4} + c = \frac{e^{2x}(2x - 1)}{4} + c$$
+
+## Summary
+
+- First-order ODEs: separable ($\frac{dy}{dx} = g(x)h(y)$), linear (integrating factor
+  $\mu = e^{\int P\,dx}$), exact ($M\,dx + N\,dy = 0$ with $M_y = N_x$).
+- Second-order linear ODEs with constant coefficients: characteristic equation $ar^2 + br + c = 0$;
+  distinct real, repeated real, or complex roots.
+- Laplace transforms: convert ODEs to algebraic equations; $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$;
+  particularly useful for piecewise forcing functions.
+- Systems of ODEs: $\dot{\mathbf{x}} = A\mathbf{x}$ solved via eigenvalues and eigenvectors; phase
+  plane analysis for 2D systems.
+- PDEs: separation of variables for heat equation ($u_t = ku_{xx}$), wave equation
+  ($u_{tt} = c^2 u_{xx}$), and Laplace equation ($\nabla^2 u = 0$).
+
+## Cross-References
+
+| Topic                              | Site        | Link                                                                          |
+| ---------------------------------- | ----------- | ----------------------------------------------------------------------------- |
+| Real Analysis                      | WyattsNotes | [View](/docs/university/mathematics/real-analysis)                            |
+| Linear Algebra                     | WyattsNotes | [View](/docs/university/mathematics/linear-algebra)                           |
+| Multivariable Calculus             | WyattsNotes | [View](/docs/university/mathematics/multivariable-calculus)                   |
+| Complex Analysis                   | WyattsNotes | [View](/docs/university/mathematics/complex-analysis)                         |
+| Differential Equations — MIT 18.03 | MIT OCW     | [View](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/) |

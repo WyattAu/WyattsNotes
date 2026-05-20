@@ -16,9 +16,9 @@ slug: real-analysis
 
 ### 1.1 Field Axioms
 
-The real numbers $\mathbb{R}$ form a **complete ordered field**. The field axioms guarantee
-closure Under addition, subtraction, multiplication, and division (by non-zero elements), together
-with the Usual commutative, associative, and distributive laws.
+The real numbers $\mathbb{R}$ form a **complete ordered field**. The field axioms guarantee closure
+Under addition, subtraction, multiplication, and division (by non-zero elements), together with the
+Usual commutative, associative, and distributive laws.
 
 ### 1.2 Order and the Completeness Axiom
 
@@ -34,8 +34,8 @@ The order relation $\leq$ on $\mathbb{R}$ satisfies:
 The **completeness axiom** (also called the **least upper bound property**) is what distinguishes
 $\mathbb{R}$ from $\mathbb{Q}$:
 
-**Axiom (Completeness).** Every non-empty subset of $\mathbb{R}$ that is bounded above has a
-**least Upper bound** (supremum) in $\mathbb{R}$.
+**Axiom (Completeness).** Every non-empty subset of $\mathbb{R}$ that is bounded above has a **least
+Upper bound** (supremum) in $\mathbb{R}$.
 
 ### 1.3 Supremum and Infimum
 
@@ -58,36 +58,33 @@ Exists $s \in S$ such that $u - \varepsilon \lt s \leq u$.
 _Proof._ If no such $s$ existed, then $u - \varepsilon$ would be an upper bound of $S$ strictly less
 Than $u$Contradicting the definition of $\sup(S)$. $\blacksquare$
 
-**Example.** Let $S = \{x \in \mathbb{R} : x^2 \lt 2\}$. Then $\sup(S) = \sqrt{2}$. Note
-that $\sqrt{2}
-\notin \mathbb{Q}$, so $\mathbb{Q}$ does not satisfy the completeness
-axiom.
+**Example.** Let $S = \{x \in \mathbb{R} : x^2 \lt 2\}$. Then $\sup(S) = \sqrt{2}$. Note that
+$\sqrt{2}
+\notin \mathbb{Q}$, so $\mathbb{Q}$ does not satisfy the completeness axiom.
 
 ### 1.4 Archimedean Property
 
-**Theorem 1.1 (Archimedean Property).** For every $x \in \mathbb{R}$There exists
-$n \in \mathbb{N}$ Such that $n \gt x$.
+**Theorem 1.1 (Archimedean Property).** For every $x \in \mathbb{R}$There exists $n \in \mathbb{N}$
+Such that $n \gt x$.
 
-_Proof._ Suppose, for contradiction, that $\mathbb{N}$ is bounded above. By the completeness
-axiom, $s = \sup(\mathbb{N})$ exists in $\mathbb{R}$. Then $s - 1$ is not an upper bound
-for $\mathbb{N}$ So there exists $n \in \mathbb{N}$ with $n \gt s - 1$I.e.,
-$n + 1 \gt s$. But $n + 1 \in \mathbb{N}$ Contradicting that $s$ is an upper bound.
-$\blacksquare$
+_Proof._ Suppose, for contradiction, that $\mathbb{N}$ is bounded above. By the completeness axiom,
+$s = \sup(\mathbb{N})$ exists in $\mathbb{R}$. Then $s - 1$ is not an upper bound for $\mathbb{N}$
+So there exists $n \in \mathbb{N}$ with $n \gt s - 1$I.e., $n + 1 \gt s$. But $n + 1 \in \mathbb{N}$
+Contradicting that $s$ is an upper bound. $\blacksquare$
 
 **Corollary 1.2.** For every $\varepsilon > 0$There exists $n \in \mathbb{N}$ such that
 $1/n \lt \varepsilon$.
 
-_Proof._ By the Archimedean property, choose $n \in \mathbb{N}$ with $n \gt 1/\varepsilon$.
-Then $1/n \lt \varepsilon$. $\blacksquare$
+_Proof._ By the Archimedean property, choose $n \in \mathbb{N}$ with $n \gt 1/\varepsilon$. Then
+$1/n \lt \varepsilon$. $\blacksquare$
 
-**Corollary 1.3 (Density of $\mathbb{Q}$).** Between any two distinct real numbers
-$a \lt b$There Exists a rational number $q \in \mathbb{Q}$ with $a \lt q \lt b$.
+**Corollary 1.3 (Density of $\mathbb{Q}$).** Between any two distinct real numbers $a \lt b$There
+Exists a rational number $q \in \mathbb{Q}$ with $a \lt q \lt b$.
 
-_Proof._ Since $b - a > 0$By Corollary 1.2 there exists $n \in \mathbb{N}$ with
-$1/n \lt b - a$ So $1 \lt n(b - a) = nb - na$. Let
-$m = \lfloor na \rfloor + 1 \in \mathbb{Z}$. Then $m - 1 \leq na \lt m$ Giving
-$m \leq na + 1 \lt na + n(b - a) = nb$. Hence $a \lt m/n \lt b$And $m/n \in \mathbb{Q}$.
-$\blacksquare$
+_Proof._ Since $b - a > 0$By Corollary 1.2 there exists $n \in \mathbb{N}$ with $1/n \lt b - a$ So
+$1 \lt n(b - a) = nb - na$. Let $m = \lfloor na \rfloor + 1 \in \mathbb{Z}$. Then
+$m - 1 \leq na \lt m$ Giving $m \leq na + 1 \lt na + n(b - a) = nb$. Hence $a \lt m/n \lt b$And
+$m/n \in \mathbb{Q}$. $\blacksquare$
 
 ### 1.5 Properties of Supremum and Infimum
 
@@ -103,8 +100,8 @@ $a \in A$ And $b \in B$ with $a > \sup(A) - \varepsilon/2$ and $b > \sup(B) - \v
 $a + b > \sup(A) + \sup(B) - \varepsilon$So $\sup(A + B) \geq \sup(A) + \sup(B) - \varepsilon$.
 Since $\varepsilon > 0$ is arbitrary, $\sup(A + B) \geq \sup(A) + \sup(B)$. $\blacksquare$
 
-**Proposition 1.5.** For any non-empty bounded set
-$S \subseteq \mathbb{R}$$\inf(S) = -\sup(-S)$ Where $-S = \{-s : s \in S\}$.
+**Proposition 1.5.** For any non-empty bounded set $S \subseteq \mathbb{R}$$\inf(S) = -\sup(-S)$
+Where $-S = \{-s : s \in S\}$.
 
 _Proof._ Let $u = \sup(-S)$. Then $-s \leq u$ for all $s \in S$So $s \geq -u$ for all $s \in S$
 Meaning $-u$ is a lower bound for $S$. If $v$ is any lower bound for $S$Then $-v$ is an upper bound
@@ -126,20 +123,18 @@ odd-indexed term, $\inf(S) = -1$ (approached but not attained). $\blacksquare$
 
 ### 1.6 Construction of $\mathbb{R}$ via Dedekind Cuts
 
-_Remark._ The following outline shows how $\mathbb{R}$ can be constructed from
-$\mathbb{Q}$Making The completeness axiom a theorem rather than an axiom.
+_Remark._ The following outline shows how $\mathbb{R}$ can be constructed from $\mathbb{Q}$Making
+The completeness axiom a theorem rather than an axiom.
 
 **Definition (Dedekind Cut).** A **Dedekind cut** is a subset $\alpha \subseteq \mathbb{Q}$
 satisfying:
 
 1. $\alpha \neq \emptyset$ and $\alpha \neq \mathbb{Q}$
-2. If $p \in \alpha$ and $q \lt p$ (with $q \in \mathbb{Q}$), then $q \in \alpha$ (downward
-   closure)
+2. If $p \in \alpha$ and $q \lt p$ (with $q \in \mathbb{Q}$), then $q \in \alpha$ (downward closure)
 3. $\alpha$ has no greatest element: for every $p \in \alpha$There exists $q \in \alpha$ with
    $p \lt q$
 
-**Definition.** The set of real numbers $\mathbb{R}$ is defined as the set of all Dedekind
-cuts.
+**Definition.** The set of real numbers $\mathbb{R}$ is defined as the set of all Dedekind cuts.
 
 The order, addition, and multiplication are defined as follows:
 
@@ -150,14 +145,13 @@ The order, addition, and multiplication are defined as follows:
 
 Here $0^* = \{q \in \mathbb{Q} : q \lt 0\}$ represents the real number $0$.
 
-**Theorem.** With these definitions, $\mathbb{R}$ is a complete ordered field, and
-$\mathbb{Q}$ embeds Into $\mathbb{R}$ via
-$q \mapsto \{r \in \mathbb{Q} : r \lt q\}$.
+**Theorem.** With these definitions, $\mathbb{R}$ is a complete ordered field, and $\mathbb{Q}$
+embeds Into $\mathbb{R}$ via $q \mapsto \{r \in \mathbb{Q} : r \lt q\}$.
 
 _Proof (sketch)._ Verifying the field axioms and order axioms is lengthy but straightforward. The
-key Step is the completeness axiom: if $\mathcal{A}$ is a non-empty set of Dedekind cuts
-bounded above, Then $\alpha = \bigcup_{\beta \in \mathcal{A}} \beta$ is itself a Dedekind cut
-and $\alpha = \sup(\mathcal{A})$. $\blacksquare$
+key Step is the completeness axiom: if $\mathcal{A}$ is a non-empty set of Dedekind cuts bounded
+above, Then $\alpha = \bigcup_{\beta \in \mathcal{A}} \beta$ is itself a Dedekind cut and
+$\alpha = \sup(\mathcal{A})$. $\blacksquare$
 
 ### 1.7 Equivalences of Completeness
 
@@ -185,16 +179,15 @@ Extended to $\mathbb{R}$ for analysis.
 
 :::caution Common Pitfall The completeness axiom is often misstated as "every bounded set has a
 supremum." The set must be Non-empty. Also, completeness does not say every set has a maximum;
-$\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{N}\} = 1$Which
-belongs to the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$. :::
+$\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{N}\} = 1$Which belongs to
+the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$. :::
 
 ## 2. Sequences and Limits
 
 ### 2.1 Convergence
 
-A sequence $(a_n)_{n=1}^{\infty}$ in $\mathbb{R}$ **converges** to a limit
-$L \in \mathbb{R}$ if for Every $\varepsilon > 0$There exists $N \in \mathbb{N}$ such
-that
+A sequence $(a_n)_{n=1}^{\infty}$ in $\mathbb{R}$ **converges** to a limit $L \in \mathbb{R}$ if for
+Every $\varepsilon > 0$There exists $N \in \mathbb{N}$ such that
 
 $$|a_n - L| \lt \varepsilon \quad \mathrm{for\ all\  n \geq N$$
 
@@ -229,17 +222,17 @@ $\blacksquare$
 **Theorem 2.2 (Squeeze Theorem).** If $a_n \leq b_n \leq c_n$ for all $n$ and $a_n \to L$
 $c_n \to L$Then $b_n \to L$.
 
-**Theorem 2.3 (Monotone Convergence Theorem).** Every bounded monotone sequence in
-$\mathbb{R}$ converges. Specifically:
+**Theorem 2.3 (Monotone Convergence Theorem).** Every bounded monotone sequence in $\mathbb{R}$
+converges. Specifically:
 
 - Every bounded increasing sequence converges to its supremum.
 - Every bounded decreasing sequence converges to its infimum.
 
 _Proof._ Let $(a_n)$ be bounded and increasing. By the completeness axiom,
-$s = \sup\{a_n : n \in \mathbb{N}\}$ exists. Let $\varepsilon > 0$. By the approximation
-property, There exists $N$ such that $s - \varepsilon \lt a_N \leq s$. Since $(a_n)$ is
-increasing, $a_n \geq a_N > s - \varepsilon$ for all $n \geq N$. Also $a_n \leq s$ for all $n$.
-Hence $|a_n - s| \lt \varepsilon$ for all $n \geq N$. $\blacksquare$
+$s = \sup\{a_n : n \in \mathbb{N}\}$ exists. Let $\varepsilon > 0$. By the approximation property,
+There exists $N$ such that $s - \varepsilon \lt a_N \leq s$. Since $(a_n)$ is increasing,
+$a_n \geq a_N > s - \varepsilon$ for all $n \geq N$. Also $a_n \leq s$ for all $n$. Hence
+$|a_n - s| \lt \varepsilon$ for all $n \geq N$. $\blacksquare$
 
 ### 2.3 Cauchy Sequences
 
@@ -251,20 +244,20 @@ $$|a_n - a_m| \lt \varepsilon \quad \mathrm{for\ all\  m, n \geq N$$
 
 **Theorem 2.4.** Every convergent sequence is Cauchy.
 
-_Proof._ Let $a_n \to L$. Given $\varepsilon > 0$Choose $N$ such that
-$|a_n - L| \lt \varepsilon/2$ For all $n \geq N$. Then for $m, n \geq N$:
+_Proof._ Let $a_n \to L$. Given $\varepsilon > 0$Choose $N$ such that $|a_n - L| \lt \varepsilon/2$
+For all $n \geq N$. Then for $m, n \geq N$:
 $|a_n - a_m| \leq |a_n - L| + |a_m - L| \lt \varepsilon$. $\blacksquare$
 
-**Theorem 2.5 (Cauchy Completeness of $\mathbb{R}$).** Every Cauchy sequence in
-$\mathbb{R}$ converges.
+**Theorem 2.5 (Cauchy Completeness of $\mathbb{R}$).** Every Cauchy sequence in $\mathbb{R}$
+converges.
 
 _Proof._ Let $(a_n)$ be Cauchy. First, $(a_n)$ is bounded: choose $N$ with $|a_n - a_m| \lt 1$ for
 $m, n \geq N$. Then $|a_n| \leq |a_N| + 1$ for $n \geq N$. By the Bolzano-Weierstrass theorem
 (Theorem 2.6 below), $(a_n)$ has a convergent subsequence $(a_{n_k}) \to L$. We show $a_n \to L$.
 
-Given $\varepsilon > 0$Choose $N_1$ so that $|a_n - a_m| \lt \varepsilon/2$ for $m, n \geq N_1$
-And $K$ so that $|a_{n_k} - L| \lt \varepsilon/2$ for $k \geq K$. For $n \geq N_1$Choose
-$k \geq K$ with $n_k \geq N_1$ (possible since $n_k \to \infty$). Then
+Given $\varepsilon > 0$Choose $N_1$ so that $|a_n - a_m| \lt \varepsilon/2$ for $m, n \geq N_1$ And
+$K$ so that $|a_{n_k} - L| \lt \varepsilon/2$ for $k \geq K$. For $n \geq N_1$Choose $k \geq K$ with
+$n_k \geq N_1$ (possible since $n_k \to \infty$). Then
 
 $$|a_n - L| \leq |a_n - a_{n_k}| + |a_{n_k} - L| \lt \varepsilon/2 + \varepsilon/2 = \varepsilon$$
 
@@ -296,8 +289,8 @@ By the **Nested Interval Property** (which follows From completeness),
 $\bigcap_{k=0}^{\infty} I_k = \{c\}$ for some $c \in [A, B]$.
 
 Construct the subsequence inductively: pick $n_1$ with $a_{n_1} \in I_1$. Having chosen
-$n_1 \lt n_2 \lt \cdots \lt n_{k-1}$Pick $n_k > n_{k-1}$ with $a_{n_k} \in I_k$ (possible
-since $I_k$ contains infinitely many terms). Then $a_{n_k} \in I_k$ for all $k$So
+$n_1 \lt n_2 \lt \cdots \lt n_{k-1}$Pick $n_k > n_{k-1}$ with $a_{n_k} \in I_k$ (possible since
+$I_k$ contains infinitely many terms). Then $a_{n_k} \in I_k$ for all $k$So
 $|a_{n_k} - c| \leq \mathrm{length(I_k) \to 0$. Hence $a_{n_k} \to c$. $\blacksquare$
 
 ### 2.6 Limit Superior and Limit Inferior
@@ -409,10 +402,10 @@ $(L-2)(L+1) = 0$. Since $a_n \geq \sqrt{2} > 0$ for all $n$$L \geq 0$So $L = 2$.
 </details>
 
 :::caution Common Pitfall When computing $\limsup$ and $\liminf$Do not confuse them with $\sup$ and
-$\inf$ of the range $\{a_n : n \in \mathbb{N}\}$. The $\limsup$ depends on the _tail_ behavior
-of the sequence. For Example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$But
-$\sup\{a_n\} = 1$ and $\inf\{a_n\} = -1$ happen to agree in this case. However, for
-$a_n = 1/n$$\sup = 1$ but $\limsup = 0$. :::
+$\inf$ of the range $\{a_n : n \in \mathbb{N}\}$. The $\limsup$ depends on the _tail_ behavior of
+the sequence. For Example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$But $\sup\{a_n\} = 1$
+and $\inf\{a_n\} = -1$ happen to agree in this case. However, for $a_n = 1/n$$\sup = 1$ but
+$\limsup = 0$. :::
 
 ## 3. Series
 
@@ -432,8 +425,8 @@ Theorem, $\sum a_n$ converges if and only if $(S_N)$ is bounded above.
 - If $\sum a_n$ diverges, then $\sum b_n$ diverges.
 
 **Theorem 3.2 (Limit Comparison Test).** If $a_n > 0$$b_n > 0$And
-$\lim_{n \to \infty} a_n / b_n = L$ where $0 \lt L \lt \infty$Then $\sum a_n$ converges if and
-only if $\sum b_n$ converges.
+$\lim_{n \to \infty} a_n / b_n = L$ where $0 \lt L \lt \infty$Then $\sum a_n$ converges if and only
+if $\sum b_n$ converges.
 
 **Theorem 3.3 (Ratio Test).** If $\lim_{n \to \infty} |a_{n+1}/a_n| = L$Then:
 
@@ -447,8 +440,8 @@ only if $\sum b_n$ converges.
 - If $L > 1$$\sum a_n$ diverges.
 - If $L = 1$The test is inconclusive.
 
-_Proof._ If $L \lt 1$Choose $r$ with $L \lt r \lt 1$. By definition of $\limsup$There exists
-$N$ such that $\sqrt[n]{|a_n|} \lt r$ for all $n \geq N$I.e., $|a_n| \lt r^n$. Since $\sum r^n$
+_Proof._ If $L \lt 1$Choose $r$ with $L \lt r \lt 1$. By definition of $\limsup$There exists $N$
+such that $\sqrt[n]{|a_n|} \lt r$ for all $n \geq N$I.e., $|a_n| \lt r^n$. Since $\sum r^n$
 converges (geometric series with $r \lt 1$), the comparison test gives absolute convergence.
 
 If $L > 1$Then for infinitely many $n$: $\sqrt[n]{|a_n|} > 1$So $|a_n| > 1$. Hence $a_n \not\to 0$
@@ -532,13 +525,13 @@ converges iff $1 - p \lt 0$I.e., $p > 1$.
 $L \in \mathbb{R}$ (or $\pm\infty$), there exists a rearrangement
 $\sigma : \mathbb{N} \to \mathbb{N}$ such That $\sum_{n=1}^{\infty} a_{\sigma(n)} = L$.
 
-_Proof (outline)._ Let $P = \{n : a_n > 0\}$ and $N = \{n : a_n \lt 0\}$. Since $\sum a_n$
-converges Conditionally, both $\sum_{n \in P} a_n = +\infty$ and $\sum_{n \in N} a_n = -\infty$.
+_Proof (outline)._ Let $P = \{n : a_n > 0\}$ and $N = \{n : a_n \lt 0\}$. Since $\sum a_n$ converges
+Conditionally, both $\sum_{n \in P} a_n = +\infty$ and $\sum_{n \in N} a_n = -\infty$.
 
-To achieve sum $L \in \mathbb{R}$: take positive terms in order until the partial sum exceeds
-$L$ Then take negative terms until it falls below $L$Then positive terms again, and so on. Since
-both The positive and negative subseries diverge, this process can always continue. The terms tend
-to Zero (since the series converges), so the oscillations around $L$ shrink to zero. $\blacksquare$
+To achieve sum $L \in \mathbb{R}$: take positive terms in order until the partial sum exceeds $L$
+Then take negative terms until it falls below $L$Then positive terms again, and so on. Since both
+The positive and negative subseries diverge, this process can always continue. The terms tend to
+Zero (since the series converges), so the oscillations around $L$ shrink to zero. $\blacksquare$
 
 _Remark._ By contrast, every rearrangement of an absolutely convergent series converges to the same
 sum.
@@ -622,8 +615,8 @@ cases, try the comparison Test, integral test, or other methods. For example, $\
 
 ### 4.1 Limits of Functions
 
-Let $f : D \to \mathbb{R}$ where $D \subseteq \mathbb{R}$. We say
-$\lim_{x \to a} f(x) = L$ if for Every $\varepsilon > 0$There exists $\delta > 0$ such that
+Let $f : D \to \mathbb{R}$ where $D \subseteq \mathbb{R}$. We say $\lim_{x \to a} f(x) = L$ if for
+Every $\varepsilon > 0$There exists $\delta > 0$ such that
 
 $$0 \lt |x - a| \lt \delta \implies |f(x) - L| \lt \varepsilon$$
 
@@ -644,9 +637,9 @@ Classified as:
 - **Jump:** $\lim_{x \to a^-} f(x)$ and $\lim_{x \to a^+} f(x)$ both exist but are unequal.
 - **Essential (or infinite/oscillatory):** At least one one-sided limit does not exist.
 
-**Proposition 4.3.** Polynomials are continuous on $\mathbb{R}$. Rational functions
-$p(x)/q(x)$ are Continuous wherever $q(x) \neq 0$. The functions $\sin x$$\cos x$$e^x$$\ln x$ are
-continuous On their domains.
+**Proposition 4.3.** Polynomials are continuous on $\mathbb{R}$. Rational functions $p(x)/q(x)$ are
+Continuous wherever $q(x) \neq 0$. The functions $\sin x$$\cos x$$e^x$$\ln x$ are continuous On
+their domains.
 
 **Theorem 4.1 (Algebra of Continuous Functions).** If $f$ and $g$ are continuous at $a$Then $f+g$
 $f-g$$fg$And (where defined) $f/g$ are continuous at $a$.
@@ -679,12 +672,11 @@ Converging to $c$ whose image does not converge to $f(c)$.
 
 ### 4.3 Intermediate Value Theorem
 
-**Theorem 4.3 (IVT).** If $f : [a,b] \to \mathbb{R}$ is continuous and
-$f(a) \lt y \lt f(b)$ (or $f(b) \lt y \lt f(a)$), then there exists $c \in (a,b)$ such that
-$f(c) = y$.
+**Theorem 4.3 (IVT).** If $f : [a,b] \to \mathbb{R}$ is continuous and $f(a) \lt y \lt f(b)$ (or
+$f(b) \lt y \lt f(a)$), then there exists $c \in (a,b)$ such that $f(c) = y$.
 
-_Proof._ Assume $f(a) \lt y \lt f(b)$. Let $S = \{x \in [a,b] : f(x) \lt y\}$. Since $a \in S$
-$S$ is non-empty and bounded above by $b$. Let $c = \sup(S)$. We show $f(c) = y$.
+_Proof._ Assume $f(a) \lt y \lt f(b)$. Let $S = \{x \in [a,b] : f(x) \lt y\}$. Since $a \in S$ $S$
+is non-empty and bounded above by $b$. Let $c = \sup(S)$. We show $f(c) = y$.
 
 If $f(c) \lt y$Then by continuity at $c$There exists $\delta > 0$ such that $f(x) \lt y$ for
 $x \in (c - \delta, c + \delta)$. But then $c + \delta/2 \in S$Contradicting that $c = \sup(S)$.
@@ -704,20 +696,20 @@ $f(c) = \lim f(b_n) \geq y$So $f(c) = y$. $\blacksquare$
 
 ### 4.4 Extreme Value Theorem
 
-**Theorem 4.4 (EVT).** If $f : [a,b] \to \mathbb{R}$ is continuous, then $f$ attains its
-maximum and Minimum on $[a,b]$: there exist $c_1, c_2 \in [a,b]$ such that
-$f(c_1) \leq f(x) \leq f(c_2)$ for all $x \in [a,b]$.
+**Theorem 4.4 (EVT).** If $f : [a,b] \to \mathbb{R}$ is continuous, then $f$ attains its maximum and
+Minimum on $[a,b]$: there exist $c_1, c_2 \in [a,b]$ such that $f(c_1) \leq f(x) \leq f(c_2)$ for
+all $x \in [a,b]$.
 
-_Proof._ We first show $f$ is bounded. Suppose not; then for each $n \in \mathbb{N}$There
-exists $x_n \in [a,b]$ with $|f(x_n)| > n$. By Bolzano-Weierstrass, $(x_n)$ has a convergent
-subsequence $x_{n_k} \to c \in [a,b]$. By continuity, $f(x_{n_k}) \to f(c)$So $(f(x_{n_k}))$ is
-bounded. But $|f(x_{n_k})| > n_k \to \infty$A contradiction.
+_Proof._ We first show $f$ is bounded. Suppose not; then for each $n \in \mathbb{N}$There exists
+$x_n \in [a,b]$ with $|f(x_n)| > n$. By Bolzano-Weierstrass, $(x_n)$ has a convergent subsequence
+$x_{n_k} \to c \in [a,b]$. By continuity, $f(x_{n_k}) \to f(c)$So $(f(x_{n_k}))$ is bounded. But
+$|f(x_{n_k})| > n_k \to \infty$A contradiction.
 
 Now we show $f$ attains its supremum. Let $M = \sup\{f(x) : x \in [a,b]\}$. For each $n$Choose
 $x_n \in [a,b]$ with $f(x_n) > M - 1/n$. By Bolzano-Weierstrass, $(x_n)$ has a subsequence
 $x_{n_k} \to c \in [a,b]$. By continuity, $f(c) = \lim f(x_{n_k})$. Since
-$M - 1/n_k \lt f(x_{n_k}) \leq M$ for all $k$The squeeze theorem gives $f(c) = M$. The argument
-for the infimum is similar (consider $-f$). $\blacksquare$
+$M - 1/n_k \lt f(x_{n_k}) \leq M$ for all $k$The squeeze theorem gives $f(c) = M$. The argument for
+the infimum is similar (consider $-f$). $\blacksquare$
 
 ### 4.5 Uniform Continuity
 
@@ -731,8 +723,8 @@ point $a$; for uniform continuity, $\delta$ depends only on $\varepsilon$.
 
 ### 4.6 The Heine-Cantor Theorem
 
-**Theorem 4.5 (Heine-Cantor).** If $f : [a,b] \to \mathbb{R}$ is continuous on the closed,
-bounded Interval $[a,b]$Then $f$ is uniformly continuous on $[a,b]$.
+**Theorem 4.5 (Heine-Cantor).** If $f : [a,b] \to \mathbb{R}$ is continuous on the closed, bounded
+Interval $[a,b]$Then $f$ is uniformly continuous on $[a,b]$.
 
 _Proof._ Suppose $f$ is continuous on $[a,b]$ but not uniformly continuous. Then there exists
 $\varepsilon > 0$ such that for every $n \in \mathbb{N}$There exist $x_n, y_n \in [a,b]$ with
@@ -832,9 +824,8 @@ Heine-Cantor Theorem implies $f$ is uniformly continuous on $[0, 1]$. $\blacksqu
 <details>
 <summary>Worked Example: $\varepsilon$-$\delta$ proof that $f(x) = \sin x$ is continuous at every $a \in \mathbb{R}$</summary>
 
-_Solution._ We use the identity $|\sin u - \sin v| \leq |u - v|$ for all
-$u, v \in \mathbb{R}$. (Proof:
-$|\sin u - \sin v| = 2|\cos((u+v)/2)\sin((u-v)/2)| \leq 2|\sin((u-v)/2)| \leq |u - v|$ Using
+_Solution._ We use the identity $|\sin u - \sin v| \leq |u - v|$ for all $u, v \in \mathbb{R}$.
+(Proof: $|\sin u - \sin v| = 2|\cos((u+v)/2)\sin((u-v)/2)| \leq 2|\sin((u-v)/2)| \leq |u - v|$ Using
 $|\sin t| \leq |t|$ and $|\cos| \leq 1$.)
 
 Let $\varepsilon > 0$ and $a \in \mathbb{R}$. Choose $\delta = \varepsilon$. For
@@ -854,8 +845,8 @@ _Solution._ We use the inequality $|e^u - e^v| \leq e^{\max(u,v)} |u - v|$Which 
 Mean Value Theorem applied to $e^t$: $e^u - e^v = e^\xi (u - v)$ for some $\xi$ between $u$ and $v$
 So $|e^u - e^v| = e^\xi |u - v| \leq e^{\max(u,v)} |u - v|$.
 
-Let $\varepsilon > 0$ and $a \in \mathbb{R}$. Restrict to $|x - a| \lt 1$So $x \lt a + 1$
-and $e^{\max(x,a)} \leq e^{a+1}$. Choose $\delta = \min(1, \varepsilon / e^{a+1})$. For
+Let $\varepsilon > 0$ and $a \in \mathbb{R}$. Restrict to $|x - a| \lt 1$So $x \lt a + 1$ and
+$e^{\max(x,a)} \leq e^{a+1}$. Choose $\delta = \min(1, \varepsilon / e^{a+1})$. For
 $|x - a| \lt \delta$:
 
 $$|e^x - e^a| \leq e^{a+1} |x - a| \lt e^{a+1} \cdot \frac{\varepsilon}{e^{a+1}} = \varepsilon$$
@@ -910,8 +901,8 @@ $M = m$Then $f$ is constant and $f'(c) = 0$ for all $c \in (a,b)$. Otherwise, at
 $m$ is attained at some $c \in (a,b)$ (since $f(a) = f(b)$). By Fermat's theorem, $f'(c) = 0$.
 $\blacksquare$
 
-**Theorem 5.3 (Mean Value Theorem).** If $f : [a,b] \to \mathbb{R}$ is continuous on $[a,b]$
-and Differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
+**Theorem 5.3 (Mean Value Theorem).** If $f : [a,b] \to \mathbb{R}$ is continuous on $[a,b]$ and
+Differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
 
 $$f'(c) = \frac{f(b) - f(a)}{b - a}$$
 
@@ -923,8 +914,8 @@ $\blacksquare$
 
 **Corollary 5.5.** If $f'(x) > 0$ for all $x \in (a,b)$Then $f$ is strictly increasing on $[a,b]$.
 
-**Theorem 5.3a (Cauchy's Mean Value Theorem).** If $f, g : [a,b] \to \mathbb{R}$ are
-continuous on $[a,b]$ and differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
+**Theorem 5.3a (Cauchy's Mean Value Theorem).** If $f, g : [a,b] \to \mathbb{R}$ are continuous on
+$[a,b]$ and differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
 
 $$(f(b) - f(a))g'(c) = (g(b) - g(a))f'(c)$$
 
@@ -1024,14 +1015,14 @@ _Remark._ This means derivatives satisfy the intermediate value property even th
 Be continuous. For example, $f(x) = x^2 \sin(1/x)$ (with $f(0) = 0$) is differentiable everywhere,
 But $f'$ is not continuous at $0$.
 
-_Proof._ Assume without loss of generality that $f'(a) \lt y \lt f'(b)$. Define
-$g(x) = f(x) - yx$. Then $g$ is differentiable on $[a, b]$ with
+_Proof._ Assume without loss of generality that $f'(a) \lt y \lt f'(b)$. Define $g(x) = f(x) - yx$.
+Then $g$ is differentiable on $[a, b]$ with
 
 $$g'(a) = f'(a) - y \lt 0 \quad \mathrm{and \quad g'(b) = f'(b) - y > 0$$
 
-Since $g'(a) \lt 0$There exists $x_1 > a$ with $g(x_1) \lt g(a)$ (otherwise $g(x) \geq g(a)$ For
-$x$ near $a$Contradicting $g'(a) \lt 0$). Similarly, since $g'(b) > 0$There exists $x_2 \lt b$
-with $g(x_2) \lt g(b)$.
+Since $g'(a) \lt 0$There exists $x_1 > a$ with $g(x_1) \lt g(a)$ (otherwise $g(x) \geq g(a)$ For $x$
+near $a$Contradicting $g'(a) \lt 0$). Similarly, since $g'(b) > 0$There exists $x_2 \lt b$ with
+$g(x_2) \lt g(b)$.
 
 Therefore $g$ attains its minimum at some $c \in (a, b)$. By Fermat's theorem on interior extrema,
 $g'(c) = 0$So $f'(c) = y$. $\blacksquare$
@@ -1154,9 +1145,8 @@ The common value is denoted $\int_a^b f(x)\, dx$.
 
 ### 6.2 Integrability Criteria
 
-**Theorem 6.1 (Riemann Integrability Criterion).** A bounded function
-$f : [a,b] \to \mathbb{R}$ is Riemann integrable if and only if for every
-$\varepsilon > 0$There exists a partition $P$ such that
+**Theorem 6.1 (Riemann Integrability Criterion).** A bounded function $f : [a,b] \to \mathbb{R}$ is
+Riemann integrable if and only if for every $\varepsilon > 0$There exists a partition $P$ such that
 
 $$U(f,P) - L(f,P) \lt \varepsilon$$
 
@@ -1166,8 +1156,8 @@ _Proof._ Let $f$ be continuous on $[a,b]$. By the Heine-Cantor theorem, $f$ is u
 Given $\varepsilon > 0$Choose $\delta > 0$ such that $|x - y| \lt \delta$ implies
 $|f(x) - f(y)| \lt \varepsilon/(b-a)$.
 
-Let $P$ be any partition with $\|P\| \lt \delta$. On each subinterval $[x_{i-1}, x_i]$By the
-Extreme Value Theorem, $f$ attains its maximum $M_i$ and minimum $m_i$. By uniform continuity:
+Let $P$ be any partition with $\|P\| \lt \delta$. On each subinterval $[x_{i-1}, x_i]$By the Extreme
+Value Theorem, $f$ attains its maximum $M_i$ and minimum $m_i$. By uniform continuity:
 $M_i - m_i \lt \varepsilon/(b-a)$. Therefore:
 
 $$U(f,P) - L(f,P) = \sum_{i=1}^{n}(M_i - m_i)\Delta x_i \lt \frac{\varepsilon}{b-a} \sum_{i=1}^{n} \Delta x_i = \varepsilon$$
@@ -1201,17 +1191,16 @@ $\blacksquare$
 If $f$ and $g$ are integrable, then so are $|f|$$f^2$And $\max(f, g)$.
 
 **Theorem 6.4b (Lebesgue's Criterion for Riemann Integrability).** A bounded function
-$f : [a,b] \to \mathbb{R}$ Is Riemann integrable if and only if the set of its discontinuities
-has (Lebesgue) measure zero.
+$f : [a,b] \to \mathbb{R}$ Is Riemann integrable if and only if the set of its discontinuities has
+(Lebesgue) measure zero.
 
 _Remark._ A set has measure zero if it can be covered by countably many intervals of arbitrarily
 Small total length. In particular, every countable set has measure zero. This means:
 
 - Every continuous function is integrable (empty set of discontinuities).
 - Every function with countably many discontinuities is integrable (Theorem 6.4 is a special case).
-- The Dirichlet function $f(x) = 1$ for $x \in \mathbb{Q}$ and $f(x) = 0$ for
-  $x \notin \mathbb{Q}$ is discontinuous everywhere (set of discontinuities = $[a,b]$Measure
-  $> 0$), hence not integrable.
+- The Dirichlet function $f(x) = 1$ for $x \in \mathbb{Q}$ and $f(x) = 0$ for $x \notin \mathbb{Q}$
+  is discontinuous everywhere (set of discontinuities = $[a,b]$Measure $> 0$), hence not integrable.
 - Thomae's function $f(x) = 1/q$ if $x = p/q$ in lowest terms, and $f(x) = 0$ if $x$ is irrational,
   is continuous at every irrational and discontinuous at every rational. Since $\mathbb{Q}$ is
   countable (measure zero), Thomae's function is Riemann integrable, with $\int_0^1 f = 0$.
@@ -1236,8 +1225,8 @@ $$F(x) = \int_a^x f(t)\, dt$$
 
 Is differentiable on $(a,b)$ and $F'(x) = f(x)$.
 
-_Proof._ Let $h > 0$ (the case $h \lt 0$ is similar). By the Mean Value Theorem for Integrals
-(which follows from the EVT), there exists $\xi \in [x, x+h]$ such that
+_Proof._ Let $h > 0$ (the case $h \lt 0$ is similar). By the Mean Value Theorem for Integrals (which
+follows from the EVT), there exists $\xi \in [x, x+h]$ such that
 
 $$\frac{F(x+h) - F(x)}{h} = \frac{1}{h}\int_x^{x+h} f(t)\, dt = f(\xi)$$
 
@@ -1371,8 +1360,8 @@ _Solution._ The integrand $f(x) = 1/\sqrt{x}$ is unbounded as $x \to 0^+$. Compu
 
 $$\int_0^1 \frac{1}{\sqrt{x}}\, dx = \lim_{c \to 0^+} \int_c^1 x^{-1/2}\, dx = \lim_{c \to 0^+} \left[2\sqrt{x}\right]_c^1 = \lim_{c \to 0^+} (2 - 2\sqrt{c}) = 2$$
 
-The improper integral converges to $2$. Note that $\int_0^1 x^{-p}\, dx$ converges for $p \lt 1$
-and Diverges for $p \geq 1$. $\blacksquare$
+The improper integral converges to $2$. Note that $\int_0^1 x^{-p}\, dx$ converges for $p \lt 1$ and
+Diverges for $p \geq 1$. $\blacksquare$
 
 </details>
 
@@ -1423,8 +1412,8 @@ can change its value. :::
 Let $(f_n)$ be a sequence of functions defined on a set $E \subseteq \mathbb{R}$.
 
 **Definition.** $(f_n)$ **converges pointwise** to $f$ on $E$ if for every $x \in E$ and every
-$\varepsilon > 0$There exists $N \in \mathbb{N}$ (depending on both $x$ and $\varepsilon$)
-such that $|f_n(x) - f(x)| \lt \varepsilon$ for all $n \geq N$.
+$\varepsilon > 0$There exists $N \in \mathbb{N}$ (depending on both $x$ and $\varepsilon$) such that
+$|f_n(x) - f(x)| \lt \varepsilon$ for all $n \geq N$.
 
 **Example.** Let $f_n(x) = x^n$ on $E = [0, 1]$. For each $x \in [0, 1)$$f_n(x) = x^n \to 0$And
 $f_n(1) = 1$ for all $n$. So $f_n$ converges pointwise to
@@ -1436,8 +1425,7 @@ Note that each $f_n$ is continuous, but the pointwise limit $f$ is not continuou
 ### 7.2 Uniform Convergence
 
 **Definition.** $(f_n)$ **converges uniformly** to $f$ on $E$ if for every $\varepsilon > 0$There
-Exists $N \in \mathbb{N}$ (depending only on $\varepsilon$Not on $x$) such that for all
-$x \in E$:
+Exists $N \in \mathbb{N}$ (depending only on $\varepsilon$Not on $x$) such that for all $x \in E$:
 
 $$|f_n(x) - f(x)| \lt \varepsilon \quad \mathrm{for\ all\  n \geq N$$
 
@@ -1449,15 +1437,15 @@ Equivalently, $\sup_{x \in E} |f_n(x) - f(x)| \to 0$ as $n \to \infty$.
 $\sup_{x \in [0,1]} |f_n(x) - f(x)| = \sup_{x \in [0,1)} x^n = 1$ for all $n$ (since the supremum is
 Approached as $x \to 1^-$). This does not tend to $0$.
 
-However, on $[0, r]$ for any $r \lt 1$: $\sup_{x \in [0,r]} |x^n| = r^n \to 0$So the convergence
-Is uniform on $[0, r]$.
+However, on $[0, r]$ for any $r \lt 1$: $\sup_{x \in [0,r]} |x^n| = r^n \to 0$So the convergence Is
+uniform on $[0, r]$.
 
 ### 7.3 The Weierstrass M-Test
 
 **Theorem 7.1 (Weierstrass M-Test).** Let $(f_n)$ be a sequence of functions on $E$. If there exists
 a Sequence $(M_n)$ of non-negative real numbers such that $|f_n(x)| \leq M_n$ for all $x \in E$ and
-all $n$And $\sum_{n=1}^{\infty} M_n \lt \infty$Then $\sum_{n=1}^{\infty} f_n$ converges uniformly
-on $E$.
+all $n$And $\sum_{n=1}^{\infty} M_n \lt \infty$Then $\sum_{n=1}^{\infty} f_n$ converges uniformly on
+$E$.
 
 _Proof._ Let $S_n(x) = \sum_{k=1}^{n} f_k(x)$ and $T_n = \sum_{k=1}^{n} M_k$. Since $\sum M_k$
 converges, $(T_n)$ is a Cauchy sequence. Given $\varepsilon > 0$There exists $N$ such that for
@@ -1609,8 +1597,8 @@ _Solution._ Apply the ratio test to the coefficients:
 $\lim_{n \to \infty} \left|\frac{c_{n+1}}{c_n}\right|
 = \lim_{n \to \infty} \frac{n!}{(n+1)!} = \lim_{n \to \infty} \frac{1}{n+1} = 0$.
 
-So $R = \infty$ and the series converges for all $x \in \mathbb{R}$. This is the power series
-for $e^x$. By Theorem 7.4, the derivative of the sum equals
+So $R = \infty$ and the series converges for all $x \in \mathbb{R}$. This is the power series for
+$e^x$. By Theorem 7.4, the derivative of the sum equals
 $\sum_{n=1}^{\infty} \frac{n x^{n-1}}{n!}
 = \sum_{n=1}^{\infty} \frac{x^{n-1}}{(n-1)!} = \sum_{k=0}^{\infty} \frac{x^k}{k!} = e^x$,
 confirming That $e^x$ is its own derivative. $\blacksquare$
@@ -1771,8 +1759,8 @@ conditionally, or diverge?
 <details>
 <summary>Solution</summary>
 
-_Solution._ The absolute series is $\sum 1/n^{1/3}$Which is a $p$-series with $p = 1/3 \lt 1$ So
-it diverges. Hence the series does not converge absolutely.
+_Solution._ The absolute series is $\sum 1/n^{1/3}$Which is a $p$-series with $p = 1/3 \lt 1$ So it
+diverges. Hence the series does not converge absolutely.
 
 For conditional convergence, apply the alternating series test: $a_n = 1/n^{1/3}$ is positive,
 Decreasing, and $a_n \to 0$. Therefore $\sum (-1)^{n+1}/n^{1/3}$ converges.
@@ -1854,16 +1842,15 @@ _If you get this wrong, revise:_ Section 4.2 (Continuity), Section 4.7 (Worked E
 
 </details>
 
-**Problem 11.** Prove that $f(x) = x \sin(1/x)$ (with $f(0) = 0$) is continuous on
-$\mathbb{R}$ but not Uniformly continuous on $(0, 1)$. (Trick question --- see solution.)
+**Problem 11.** Prove that $f(x) = x \sin(1/x)$ (with $f(0) = 0$) is continuous on $\mathbb{R}$ but
+not Uniformly continuous on $(0, 1)$. (Trick question --- see solution.)
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ **Continuity at $0$:** Given $\varepsilon > 0$Choose $\delta = \varepsilon$. For
-$|x - 0| = |x| \lt \delta$: $|f(x) - f(0)| = |x \sin(1/x)| \leq |x| \lt \delta = \varepsilon$.
-So $f$ is continuous at $0$. For $x \neq 0$$f$ is a product of continuous functions, hence
-continuous.
+$|x - 0| = |x| \lt \delta$: $|f(x) - f(0)| = |x \sin(1/x)| \leq |x| \lt \delta = \varepsilon$. So
+$f$ is continuous at $0$. For $x \neq 0$$f$ is a product of continuous functions, hence continuous.
 
 **On uniform continuity:** Actually, $f(x) = x\sin(1/x)$ **is** uniformly continuous on $(0, 1)$!
 Here is why: $f$ extends continuously to $[0, 1]$ (define $f(0) = 0$). By the Heine-Cantor theorem
@@ -1934,16 +1921,15 @@ _If you get this wrong, revise:_ Section 6.1 (Definition), Section 6.5 (Worked E
 </details>
 
 **Problem 14b.** Show that the Dirichlet function
-$f(x) = \begin{cases} 1 & x \in \mathbb{Q} \\ 0 & x \notin \mathbb{Q} \end{cases}$ is
-not Riemann integrable on $[0, 1]$.
+$f(x) = \begin{cases} 1 & x \in \mathbb{Q} \\ 0 & x \notin \mathbb{Q} \end{cases}$ is not Riemann
+integrable on $[0, 1]$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ Every non-empty subinterval $[x_{i-1}, x_i]$ of any partition contains both rational and
-Irrational numbers (by density of $\mathbb{Q}$ and density of
-$\mathbb{R} \setminus \mathbb{Q}$). So $M_i = \sup f = 1$ and $m_i = \inf f = 0$ for
-every subinterval.
+Irrational numbers (by density of $\mathbb{Q}$ and density of $\mathbb{R} \setminus \mathbb{Q}$). So
+$M_i = \sup f = 1$ and $m_i = \inf f = 0$ for every subinterval.
 
 For any partition $P$: $U(f, P) = \sum 1 \cdot \Delta x_i = 1$ and
 $L(f, P) = \sum 0 \cdot \Delta x_i = 0$. Hence
@@ -2014,8 +2000,8 @@ $$\left|\frac{a_{n+1}}{a_n}\right| = \frac{(2(n+1))!}{((n+1)!)^2} \cdot \frac{(n
 
 $$= \frac{2(2n+1)}{n+1} \cdot |x| = \frac{4n + 2}{n + 1} \cdot |x| \to 4|x| \quad \mathrm{as\  n \to \infty$$
 
-The series converges when $4|x| \lt 1$I.e., $|x| \lt 1/4$And diverges when $4|x| > 1$. The
-radius of convergence is $R = 1/4$. $\blacksquare$
+The series converges when $4|x| \lt 1$I.e., $|x| \lt 1/4$And diverges when $4|x| > 1$. The radius of
+convergence is $R = 1/4$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.7 (Power Series), Section 3.2 (Ratio Test).
 
@@ -2101,8 +2087,67 @@ Abel's theorem.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
+
+2. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
+
+3. Confusing pointwise and uniform convergence — pointwise convergence does not guarantee uniform
+   convergence.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Epsilon-Delta Proof of Continuity
+
+**Problem.** Prove that $f(x) = 3x + 1$ is continuous at $x = 2$ using the $\varepsilon$-$\delta$
+definition.
+
+**Solution.** Let $\varepsilon > 0$. Choose $\delta = \varepsilon / 3$.
+
+If $0 < |x - 2| < \delta$, then:
+
+$$|f(x) - f(2)| = |3x + 1 - 7| = 3|x - 2| < 3 \cdot \frac{\varepsilon}{3} = \varepsilon$$
+
+Since for every $\varepsilon > 0$ we found $\delta > 0$ satisfying the condition, $f$ is continuous
+at $x = 2$.
+
+$\blacksquare$
+
+### Example 2: Convergence of a Sequence
+
+**Problem.** Prove that $a_n = \frac{2n+1}{n+3}$ converges and find its limit.
+
+**Solution.** Claim: $a_n \to 2$.
+
+$|a_n - 2| = \left|\frac{2n+1}{n+3} - 2\right| = \left|\frac{2n+1 - 2n - 6}{n+3}\right| = \frac{5}{n+3}$.
+
+For any $\varepsilon > 0$, choose $N > \frac{5}{\varepsilon} - 3$.
+
+For $n > N$: $|a_n - 2| = \frac{5}{n+3} < \frac{5}{N+3} < \varepsilon$.
+
+Therefore $a_n \to 2$ by definition.
+
+$\blacksquare$
+
+## Summary
+
+- Completeness of $\mathbb{R}$: every non-empty bounded-above set has a supremum; equivalent to the
+  monotone convergence theorem and Bolzano-Weierstrass.
+- Limits and continuity: $\varepsilon$-$\delta$ definition; sequential characterisation;
+  intermediate value theorem and extreme value theorem.
+- Differentiability: $f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$; mean value theorem; Taylor's
+  theorem with remainder.
+- Riemann integration: defined via upper and lower sums; fundamental theorem of calculus connects
+  integration and differentiation.
+- Sequences and series: tests for convergence (comparison, ratio, root, integral); absolute vs
+  conditional convergence; power series and radius of convergence.
+
+## Cross-References
+
+| Topic                      | Site        | Link                                                                 |
+| -------------------------- | ----------- | -------------------------------------------------------------------- |
+| Complex Analysis           | WyattsNotes | [View](/docs/university/mathematics/complex-analysis)                |
+| Linear Algebra             | WyattsNotes | [View](/docs/university/mathematics/linear-algebra)                  |
+| Multivariable Calculus     | WyattsNotes | [View](/docs/university/mathematics/multivariable-calculus)          |
+| Real Analysis — MIT 18.100 | MIT OCW     | [View](https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/) |

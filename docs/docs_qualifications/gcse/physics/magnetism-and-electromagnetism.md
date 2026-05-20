@@ -475,8 +475,8 @@ The magnetic field changes, not on the absolute magnitude of the field.
 ## 7. Worked Example: Transformer Power and Efficiency
 
 A step-down transformer converts $230 \mathrm{ V$ to $12 \mathrm{ V$. The primary coil has 920
-turns. A device connected to the secondary draws $5 \mathrm{ A$ at $12 \mathrm{ V$. The
-transformer is 95% Efficient.
+turns. A device connected to the secondary draws $5 \mathrm{ A$ at $12 \mathrm{ V$. The transformer
+is 95% Efficient.
 
 **Step 1:** Find the number of secondary turns.
 
@@ -510,8 +510,8 @@ Changes by $\Delta\Phi$ in time $\Delta t$The rate of change is $\Delta\Phi / \D
 Induced EMF is proportional to this rate. The negative sign (Lenz's law) indicates that the induced
 EMF opposes the change in flux.
 
-**Quantitative example:** A coil of 200 turns and area $0.02 \mathrm{ m^2$ is in a magnetic field
-of Flux density $0.5 \mathrm{ T$. The field is reduced to zero in $0.05 \mathrm{ s$.
+**Quantitative example:** A coil of 200 turns and area $0.02 \mathrm{ m^2$ is in a magnetic field of
+Flux density $0.5 \mathrm{ T$. The field is reduced to zero in $0.05 \mathrm{ s$.
 
 $$\Delta\Phi = BA = 0.5 \times 0.02 = 0.01 \mathrm{ Wb$$
 
@@ -528,9 +528,8 @@ Energy.
 
 ## 10. Worked Example: Force on a Wire at an Angle
 
-A wire of length $0.25 \mathrm{ m$ carries a current of $4 \mathrm{ A$ at an angle of
-$30^{\circ}$ to A magnetic field of flux density $0.6 \mathrm{ T$. Calculate the force on the
-wire.
+A wire of length $0.25 \mathrm{ m$ carries a current of $4 \mathrm{ A$ at an angle of $30^{\circ}$
+to A magnetic field of flux density $0.6 \mathrm{ T$. Calculate the force on the wire.
 
 $$F = BIl\sin\theta = 0.6 \times 4 \times 0.25 \times \sin 30^{\circ}$$
 
@@ -627,8 +626,8 @@ Magnetism despite the changing fields produced by the motor's coils.
 ## 16. Practice Questions (Additional)
 
 16. An electromagnet has 300 turns and carries a current of $3 \mathrm{ A$. The magnetic flux
-    density at its centre is $0.15 \mathrm{ T$. If the current is increased to $5 \mathrm{ A$
-    and the number of turns is increased to 600, calculate the new flux density.
+    density at its centre is $0.15 \mathrm{ T$. If the current is increased to $5 \mathrm{ A$ and
+    the number of turns is increased to 600, calculate the new flux density.
 
 17. Explain, with reference to Lenz's law, why a magnet dropped through a copper tube falls more
     slowly than through a plastic tube.
@@ -648,8 +647,8 @@ Magnetism despite the changing fields produced by the motor's coils.
     power stations to consumers. Include quantitative reasoning.
 
 22. A rectangular coil of 200 turns, dimensions $5 \mathrm{ cm \times 8 \mathrm{ cm$Rotates at
-    $40 \mathrm{ Hz$ in a magnetic field of flux density $0.5 \mathrm{ T$. Calculate (a) the
-    peak EMF and (b) the EMF when the coil makes an angle of $60^{\circ}$ with the field.
+    $40 \mathrm{ Hz$ in a magnetic field of flux density $0.5 \mathrm{ T$. Calculate (a) the peak
+    EMF and (b) the EMF when the coil makes an angle of $60^{\circ}$ with the field.
 
 23. Compare and contrast permanent magnets and electromagnets. Give two specific applications where
     each is preferred.
@@ -666,8 +665,7 @@ Magnetism despite the changing fields produced by the motor's coils.
 ### Example 26: Electromagnetic Induction Quantitative
 
 A coil of 200 turns is placed in a magnetic field. The magnetic flux through the coil changes from
-$0.02 \mathrm{ Wb$ to $0.08 \mathrm{ Wb$ in $0.05 \mathrm{ s$. Calculate the average EMF
-induced.
+$0.02 \mathrm{ Wb$ to $0.08 \mathrm{ Wb$ in $0.05 \mathrm{ s$. Calculate the average EMF induced.
 
 **Step 1: Calculate the change in flux linkage**
 
@@ -682,8 +680,8 @@ The magnitude is $240 \mathrm{ V$ (the minus sign indicates direction via Lenz's
 ### Example 27: National Grid Power Loss Comparison
 
 A power station generates $500 \mathrm{ MW$ of power. Compare the power loss in the transmission
-Cables if the power is transmitted at (a) $25 \mathrm{ kV$ and (b) $400 \mathrm{ kV$Given a
-cable Resistance of $2 \Omega$.
+Cables if the power is transmitted at (a) $25 \mathrm{ kV$ and (b) $400 \mathrm{ kV$Given a cable
+Resistance of $2 \Omega$.
 
 **Step 1: At $25 \mathrm{ kV$**
 
@@ -715,8 +713,8 @@ For domestic use. This is the fundamental reason the National Grid uses high-vol
 ### Example 28: Designing an Electromagnet
 
 Design an electromagnet that can lift a $5 \mathrm{ kg$ steel block. The electromagnet has a soft
-Iron core, 500 turns of wire, and operates from a $12 \mathrm{ V$ DC supply. Determine the
-required Current.
+Iron core, 500 turns of wire, and operates from a $12 \mathrm{ V$ DC supply. Determine the required
+Current.
 
 **Step 1: Force needed**
 
@@ -776,8 +774,8 @@ Change, it would create energy from nothing, violating the first law of thermody
     the secondary delivers $10 \mathrm{ A$ to a load.
 
 27. A wire carrying $5 \mathrm{ A$ is placed at right angles to a magnetic field of flux density
-    $0.3 \mathrm{ T$. The length of wire in the field is $0.15 \mathrm{ m$. Calculate the force
-    on the wire and state the direction using Fleming's left-hand rule.
+    $0.3 \mathrm{ T$. The length of wire in the field is $0.15 \mathrm{ m$. Calculate the force on
+    the wire and state the direction using Fleming's left-hand rule.
 
 28. Explain how a loudspeaker works, including the role of the permanent magnet, the coil, and the
     alternating current. Why does the cone vibrate at the frequency of the AC signal?
@@ -813,8 +811,8 @@ stationary because there is no change in magnetic flux, so no EMF is induced.
 <summary>Question 2: Transformer calculation</summary>
 
 A step-down transformer has 2000 turns on the primary coil and 100 turns on the secondary coil. The
-primary voltage is $240 \mathrm{ V$. Calculate the secondary voltage and explain why the
-transformer is described as step-down.
+primary voltage is $240 \mathrm{ V$. Calculate the secondary voltage and explain why the transformer
+is described as step-down.
 
 </details>
 
@@ -887,4 +885,16 @@ the electromagnet picks up and releases metal objects. (3) Relays in circuits.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of magnetism and electromagnetism, including the key
+equations, experimental methods, and applications relevant to the specification.
+
+**Key concepts include:**
+
+- gravitational fields and potential
+- electric fields and Coulomb's law
+- capacitance
+- magnetic fields and the motor effect
+- electromagnetic induction
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

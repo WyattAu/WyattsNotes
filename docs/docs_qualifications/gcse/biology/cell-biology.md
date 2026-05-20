@@ -39,10 +39,9 @@ And why plant cells have a fixed, rectangular shape while animal cells are flexi
 
 **The cell membrane as a gatekeeper.** The cell membrane is not a solid barrier; it is a dynamic
 Structure composed of a phospholipid bilayer with embedded proteins. Small, non-polar molecules
-(such as $\mathrm{O_2$ and $\mathrm{CO_2$) can diffuse directly through the lipid bilayer.
-Larger Or polar molecules (such as glucose and ions) require transport proteins to cross. This
-selective Permeability is essential for maintaining the internal conditions of the cell
-(homeostasis).
+(such as $\mathrm{O_2$ and $\mathrm{CO_2$) can diffuse directly through the lipid bilayer. Larger Or
+polar molecules (such as glucose and ions) require transport proteins to cross. This selective
+Permeability is essential for maintaining the internal conditions of the cell (homeostasis).
 
 **The nucleus as the control centre.** The nucleus contains the cell's DNA, which carries the
 Instructions for making every protein the cell needs. DNA is organised into structures called
@@ -400,8 +399,8 @@ Movement in either direction.
 - Occurs in both liquids and gases
 - Rate increases with: larger concentration gradient, higher temperature, larger surface area,
   shorter diffusion distance
-- Only works for small, non-polar molecules (e.g., $\mathrm{O_2$$\mathrm{CO_2$) and
-  lipid-soluble substances
+- Only works for small, non-polar molecules (e.g., $\mathrm{O_2$$\mathrm{CO_2$) and lipid-soluble
+  substances
 - Large or polar molecules (e.g., glucose, amino acids, ions) cannot diffuse through the lipid
   bilayer and require transport proteins (facilitated diffusion or active transport)
 
@@ -618,8 +617,8 @@ To estimate the size of a cell or organelle from a micrograph:
 3. Divide the field of view diameter by the number of cells.
 
 **Worked Example.** A student observes a cell under a microscope at $\times 400$ magnification. The
-Diameter of the field of view at this magnification is $0.5 \mathrm{ mm$. The student estimates
-That 10 cells fit across the diameter. Calculate the width of one cell in micrometres.
+Diameter of the field of view at this magnification is $0.5 \mathrm{ mm$. The student estimates That
+10 cells fit across the diameter. Calculate the width of one cell in micrometres.
 
 $$\mathrm{Width of one cell = \frac{0.5 \mathrm{ mm}{10} = 0.05 \mathrm{ mm = 50 \mathrm{ \mu m$$
 
@@ -753,8 +752,8 @@ Convert to micrometres: $0.012 \times 1000 = 12 \mathrm{ \mu m$.
 <summary>Question 2: Osmosis in plant cells</summary>
 
 A plant cell with a solute potential of $-500 \mathrm{ kPa$ and a pressure potential of
-$200 \mathrm{ kPa$ is placed in a solution with a water potential of $-100 \mathrm{ kPa$.
-Predict The direction of water movement and explain what will happen to the cell.
+$200 \mathrm{ kPa$ is placed in a solution with a water potential of $-100 \mathrm{ kPa$. Predict
+The direction of water movement and explain what will happen to the cell.
 
 </details>
 
@@ -832,8 +831,16 @@ Maintain a steep water potential gradient for osmosis.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of cell biology, including key concepts, experimental
+evidence, and real-world applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- cell structure (prokaryotic vs eukaryotic)
+- cell ultrastructure (organelles)
+- microscopy and resolution
+- cell division (mitosis and meiosis)
+- the cell cycle
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

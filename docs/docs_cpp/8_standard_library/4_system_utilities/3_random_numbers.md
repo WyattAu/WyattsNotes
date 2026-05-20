@@ -589,12 +589,12 @@ PRNG. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Not practising with past papers or exercises under timed conditions.
 
-## Summary
+2. Not making connections between different topics within the subject to build a coherent
+   understanding.
 
-<!-- TODO: Add a summary for this topic -->
+3. Memorising content without understanding the underlying principles — this leads to poor
+   application in unfamiliar contexts.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Ignoring feedback from marked work and failing to address recurring weaknesses.

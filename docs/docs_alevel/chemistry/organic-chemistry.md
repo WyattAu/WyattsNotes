@@ -768,8 +768,8 @@ An unknown liquid A has the following properties:
 - Boiling point: $118^\circ\mathrm{C}$
 - IR: broad peak at $3200$--$3600\,\mathrm{cm}^{-1}$Strong peak at $1050\,\mathrm{cm}^{-1}$; no peak
   above $1700\,\mathrm{cm}^{-1}$
-- $^1\mathrm{H}$ NMR: $\delta$ 1.2 (t, 3H), $\delta$ 3.7 (q, 2H), $\delta$ 2.6 (s, 1H,
-  exchangeable with $\mathrm{D}_2\mathrm{O}$)
+- $^1\mathrm{H}$ NMR: $\delta$ 1.2 (t, 3H), $\delta$ 3.7 (q, 2H), $\delta$ 2.6 (s, 1H, exchangeable
+  with $\mathrm{D}_2\mathrm{O}$)
 - Mass spectrum: molecular ion at $m/z = 46$
 
 **Analysis:**
@@ -791,8 +791,8 @@ sodium metal ($\mathrm{H}_2$ gas evolved), negative Tollens' test (not an aldehy
 <summary>Problem 1</summary>
 
 Identify the compound with molecular formula $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$ whose
-$^1\mathrm{H}$ NMR spectrum shows: $\delta$ 1.2 (triplet, 3H), $\delta$ 2.3 (quartet, 2H),
-$\delta$ 3.6 (singlet, 3H), $\delta$ 11.0 (singlet, 1H). Its IR spectrum shows a broad absorption at
+$^1\mathrm{H}$ NMR spectrum shows: $\delta$ 1.2 (triplet, 3H), $\delta$ 2.3 (quartet, 2H), $\delta$
+3.6 (singlet, 3H), $\delta$ 11.0 (singlet, 1H). Its IR spectrum shows a broad absorption at
 $2500\mathrm{--}3300\,\mathrm{cm}^{-1}$ and a sharp peak at $1710\,\mathrm{cm}^{-1}$.
 
 **Solution:**
@@ -916,8 +916,16 @@ self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of organic chemistry, including key reactions, underlying
+theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- homologous series and functional groups
+- nomenclature (IUPAC)
+- reaction mechanisms (SN1, SN2, electrophilic addition)
+- stereochemistry and chirality
+- spectroscopy (IR, NMR, mass spec)
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

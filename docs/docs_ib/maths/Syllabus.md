@@ -559,12 +559,7 @@ If you get this wrong, revise: Separable differential equations (HL, Topic 5).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Summary
-
-<!-- TODO: Add a summary for this topic -->
-
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+2. Cancelling terms instead of factors — $\frac{ab + ac}{a}$ simplifies to $b + c$, not $bc$.

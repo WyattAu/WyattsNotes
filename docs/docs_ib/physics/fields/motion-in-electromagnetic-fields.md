@@ -719,4 +719,13 @@ M $= 6.46$ cm.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Newton's second law**
+
+A $2.0\,\text{kg}$ object is pulled across a rough horizontal surface by a horizontal force of
+$15\,\text{N}$. The frictional force is $5.0\,\text{N}$. Calculate the acceleration.
+
+**Solution:**
+
+$$F_{\text{net}} = F_{\text{applied}} - F_{\text{friction}} = 15 - 5.0 = 10\,\text{N}$$
+
+$$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$

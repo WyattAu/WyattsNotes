@@ -417,8 +417,8 @@ $\mathrm{E[Y_n] \leq \frac{1}{4} \sum_{i=0}^{n-1} \binom{n}{i} \mathrm{E[Y_i] \m
 Using the indicator random variable technique,
 $\mathrm{E[Y_n] \leq \frac{c^{n+1}}{n^{3/2}} \sum_{i=0}^{n-1} \frac{i^{3/2}(n-1-i)^{3/2}}{c^i c^{n-1-i}} \leq c \cdot n^{3/2}$
 for some constant $c$. Taking logs gives
-$\mathrm{E[X_n] = \mathrm{E[\log Y_n] \leq \log \mathrm{E[Y_n] = O(\log n)$ by Jensen's
-inequality. $\blacksquare$
+$\mathrm{E[X_n] = \mathrm{E[\log Y_n] \leq \log \mathrm{E[Y_n] = O(\log n)$ by Jensen's inequality.
+$\blacksquare$
 
 #### 2.4.1 AVL Trees
 
@@ -796,12 +796,12 @@ A graph $G = (V, E)$ can be represented by:
 - **Adjacency list:** For each vertex, store a list of neighbours. Space: $O(V + E)$. Iterating over
   neighbours: $O(\mathrm{deg(v))$.
 
-| Operation          | Adjacency Matrix | Adjacency List        |
-| ------------------ | ---------------- | --------------------- |
-| Space              | $O(V^2)$         | $O(V + E)$            |
+| Operation          | Adjacency Matrix | Adjacency List      |
+| ------------------ | ---------------- | ------------------- |
+| Space              | $O(V^2)$         | $O(V + E)$          |
 | Check edge $(u,v)$ | $O(1)$           | $O(\mathrm{deg(u))$ |
 | Iterate neighbours | $O(V)$           | $O(\mathrm{deg(v))$ |
-| Add edge           | $O(1)$           | $O(1)$                |
+| Add edge           | $O(1)$           | $O(1)$              |
 | Remove edge        | $O(1)$           | $O(\mathrm{deg(u))$ |
 
 :::caution Common Pitfall Choosing the wrong graph representation can make an algorithm
@@ -1173,9 +1173,9 @@ edge $(u, v)$$u$ appears before $v$.
 
 _Proof._ Suppose there is an edge $(u, v)$ but $u$ appears after $v$ in the ordering (i.e.,
 $f[u] \lt f[v]$). Since $(u, v)$ is an edge, when $u$ is being explored (coloured GREY), if $v$ is
-WHITE, then $v$ is discovered as a descendant of $u$So $f[v] \lt f[u]$Contradiction. If $v$ is
-GREY, we have a back edge, implying a cycle, contradicting that the graph is acyclic. If $v$ is
-BLACK, then $f[v] \lt d[u] \lt f[u]$Contradicting $f[u] \lt f[v]$. $\blacksquare$
+WHITE, then $v$ is discovered as a descendant of $u$So $f[v] \lt f[u]$Contradiction. If $v$ is GREY,
+we have a back edge, implying a cycle, contradicting that the graph is acyclic. If $v$ is BLACK,
+then $f[v] \lt d[u] \lt f[u]$Contradicting $f[u] \lt f[v]$. $\blacksquare$
 
 ### 4.4 Strongly Connected Components
 
@@ -1755,8 +1755,8 @@ Solution: 2 quarters + 1 dime + 3 pennies = $25 + 25 + 10 + 1 + 1 + 1 = 63$. 6 c
 **Problem.** Given a sequence $a_1, \ldots, a_n$Find the length of the longest strictly increasing
 subsequence (not necessarily contiguous).
 
-**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt i \mathrm{~and~ a_j \lt a_i\\}$With
-$dp[i] = 1$ if no such $j$ exists.
+**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt i \mathrm{~and~ a_j \lt a_i\\}$With $dp[i] = 1$ if
+no such $j$ exists.
 
 **Time:** $O(n^2)$. **Space:** $O(n)$.
 
@@ -1904,17 +1904,16 @@ least $(1/\rho)$ times the optimal value.
 
 _Proof._ The algorithm selects a set $C$ of vertices. Each edge in the matching used by the
 algorithm contributes 2 vertices to $C$. Let $M^*$ be a maximum matching. Then
-$|C| = 2|M^*| \leq 2 \cdot |\mathrm{OPT|$Since OPT must contain at least one endpoint of every
-edge in $M^*$ (and $M^*$ is maximum, so $|M^*| \geq$ the size of any matching). Therefore the
+$|C| = 2|M^*| \leq 2 \cdot |\mathrm{OPT|$Since OPT must contain at least one endpoint of every edge
+in $M^*$ (and $M^*$ is maximum, so $|M^*| \geq$ the size of any matching). Therefore the
 approximation ratio is at most 2. $\blacksquare$
 
 **Theorem 6.4 (Metric TSP).** The Christofides algorithm is a $3/2$-approximation for TSP with the
 triangle inequality.
 
-_Proof._ The algorithm computes an MST ($\leq \mathrm{OPT$), finds a minimum-weight perfect
-matching $M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{OPT/2$), and
-combines them into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at
-most
+_Proof._ The algorithm computes an MST ($\leq \mathrm{OPT$), finds a minimum-weight perfect matching
+$M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{OPT/2$), and combines them
+into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at most
 $\mathrm{MST + \lvert M \rvert \leq \mathrm{OPT + \mathrm{OPT/2 = \frac{3}{2}\mathrm{OPT$.
 $\blacksquare$
 
@@ -1932,8 +1931,8 @@ where $n$ is the size of the universe.
 
 _Proof sketch._ At each step, the greedy algorithm picks the set covering the most uncovered
 elements. Let $c_i$ be the cost of the $i$-th set picked, and let $n_i$ be the number of newly
-covered elements. Then $c_i / n_i \leq \mathrm{OPT / (n - \sum_{j \lt i} n_j)$ (otherwise OPT
-could not cover the remaining elements at lower cost). Summing gives the $\ln n + O(1)$ bound.
+covered elements. Then $c_i / n_i \leq \mathrm{OPT / (n - \sum_{j \lt i} n_j)$ (otherwise OPT could
+not cover the remaining elements at lower cost). Summing gives the $\ln n + O(1)$ bound.
 $\blacksquare$
 
 <details>
@@ -1974,9 +1973,9 @@ probability.
 probability $\epsilon^k$ by running it $k$ times and taking the majority vote (for decision problems
 with one-sided error) or the most frequent answer (for two-sided error).
 
-_Proof._ For one-sided error: $\Pr[\mathrm{all~ k \mathrm{~runs~fail] = \epsilon^k$. For
-two-sided error with majority vote: by the Chernoff bound, the probability that the majority is
-wrong decreases exponentially in $k$. $\blacksquare$
+_Proof._ For one-sided error: $\Pr[\mathrm{all~ k \mathrm{~runs~fail] = \epsilon^k$. For two-sided
+error with majority vote: by the Chernoff bound, the probability that the majority is wrong
+decreases exponentially in $k$. $\blacksquare$
 
 #### 6.3.2 Randomised Select (Quickselect)
 
@@ -2048,17 +2047,16 @@ $\leq 4^{-k}$.
 
 #### 6.3.3 Hashing with Universal Hash Functions
 
-**Definition.** A family $\mathcal{H}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$
-is **universal** if for any distinct
-$x, y \in U$$\Pr_{h \in \mathcal{H}}[h(x) = h(y)] \leq 1/m$.
+**Definition.** A family $\mathcal{H}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$ is
+**universal** if for any distinct $x, y \in U$$\Pr_{h \in \mathcal{H}}[h(x) = h(y)] \leq 1/m$.
 
 **Theorem 6.8.** With a universal hash family and chaining, the expected number of collisions for
 any element is at most $n/m$.
 
 _Proof._ For a fixed element $x$Let $X_{iy}$ be the indicator that $h(x) = h(y_i)$ where
 $y_1, \ldots, y_n$ are the other $n-1$ elements. Then
-$\mathrm{E[X_{iy}] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation,
-the expected number of collisions is $\sum_i \mathrm{E[X_{iy}] \leq (n-1)/m$. $\blacksquare$
+$\mathrm{E[X_{iy}] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation, the
+expected number of collisions is $\sum_i \mathrm{E[X_{iy}] \leq (n-1)/m$. $\blacksquare$
 
 ### 6.4 Amortised Analysis (Detailed)
 
@@ -2223,8 +2221,72 @@ high probability (Karger's algorithm).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
+
+2. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
+
+3. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
+
+4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Merge Sort Trace
+
+**Problem.** Trace merge sort on the array `[38, 27, 43, 3, 9, 82, 10]`.
+
+**Solution.** Recursive splits and merges:
+
+```
+[38, 27, 43, 3, 9, 82, 10]
+→ [38, 27, 43] and [3, 9, 82, 10]
+→ [38] [27, 43]  and  [3, 9] [82, 10]
+→ [38] [27][43]  and  [3][9] [82][10]
+Merge: [27, 38, 43] and [3, 9, 10, 82]
+Final: [3, 9, 10, 27, 38, 43, 82]
+```
+
+Time: $O(n \log n)$ at every case. Space: $O(n)$ auxiliary.
+
+$\blacksquare$
+
+### Example 2: Binary Search on Sorted Array
+
+**Problem.** Search for 23 in the sorted array `[2, 5, 8, 12, 16, 23, 38, 56, 72, 91]`. Show each
+step.
+
+**Solution.** Low = 0, high = 9.
+
+- Step 1: mid = 4, `A[4]` = 16 < 23 → low = 5
+- Step 2: mid = 7, `A[7]` = 56 > 23 → high = 6
+- Step 3: mid = 5, `A[5]` = 23 = 23 → **found at index 5**
+
+3 comparisons. $O(\log n)$ worst case.
+
+$\blacksquare$
+
+## Summary
+
+- Big-O notation classifies growth rates: $O(1)$ < $O(\log n)$ < $O(n)$ < $O(n\log n)$ < $O(n^2)$ <
+  $O(2^n)$.
+- Sorting: merge sort and heap sort guarantee $O(n\log n)$; quick sort is $O(n^2)$ worst case but
+  $O(n\log n)$ average.
+- Fundamental data structures: arrays ($O(1)$ access), linked lists ($O(1)$ insert/delete), hash
+  tables ($O(1)$ average lookup), BSTs ($O(\log n)$ balanced).
+- Graph representations: adjacency matrix ($O(V^2)$ space) vs adjacency list ($O(V+E)$ space).
+- Algorithm design paradigms: divide-and-conquer, greedy, dynamic programming — choose based on
+  optimal substructure and overlapping subproblems.
+
+## Cross-References
+
+| Topic                    | Site        | Link                                                                            |
+| ------------------------ | ----------- | ------------------------------------------------------------------------------- |
+| Advanced Algorithms      | WyattsNotes | [View](/docs/university/computing/algorithms-advanced)                          |
+| Advanced Data Structures | WyattsNotes | [View](/docs/university/computing/data-structures-advanced)                     |
+| Discrete Mathematics     | WyattsNotes | [View](/docs/university/computing/discrete-mathematics)                         |
+| Theory of Computation    | WyattsNotes | [View](/docs/university/computing/theory-of-computation)                        |
+| Algorithms — MIT 6.006   | MIT OCW     | [View](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) |

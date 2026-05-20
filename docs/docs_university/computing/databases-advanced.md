@@ -351,13 +351,13 @@ of a secondary B+ tree index lookup is $\lceil R / (V(A, R) \cdot f_{rt}) \rceil
 
 ### 4.2 Join Algorithm Costs
 
-| Algorithm         | Cost                                                   | Best when                      |
-| ----------------- | ------------------------------------------------------ | ------------------------------ |
-| Nested-loop       | $B_r + B_r \cdot B_s$                                  | Small relations, no index      |
-| Block nested-loop | $B_r + \lceil B_r / M - 1 \rceil \cdot B_s$            | $M$ blocks of memory           |
+| Algorithm         | Cost                                                 | Best when                      |
+| ----------------- | ---------------------------------------------------- | ------------------------------ |
+| Nested-loop       | $B_r + B_r \cdot B_s$                                | Small relations, no index      |
+| Block nested-loop | $B_r + \lceil B_r / M - 1 \rceil \cdot B_s$          | $M$ blocks of memory           |
 | Index nested-loop | $B_r + R_r \cdot (\text{cost of index lookup on  S)$ | Index on join attribute of $S$ |
 | Sort-merge        | $B_r + B_s + \text{sort cost$                        | Both relations large           |
-| Hash join         | $3(B_r + B_s)$                                         | Equi-join, no order required   |
+| Hash join         | $3(B_r + B_s)$                                       | Equi-join, no order required   |
 
 Where $M$ is the number of available memory blocks.
 
@@ -392,10 +392,10 @@ memory. Cost: $3 \times 2000 + 3 \times 500 = 7500$.
 Sort-merge (7000) is slightly better than hash join (7500) here, but both are far superior to block
 nested-loop (22,000).
 
-If $R$ had an index on $A$: **Index nested-loop:** $B_s + R_s \times \text{cost per lookup$. If
-the index gives $O(1)$ lookup: $500 + 25000 \times 1 = 25500$ (worse, due to random I/O). If
-clustered index: $500 + 25000/100 = 750$ (much better, since each lookup reads a page with 100
-matching records on average).
+If $R$ had an index on $A$: **Index nested-loop:** $B_s + R_s \times \text{cost per lookup$. If the
+index gives $O(1)$ lookup: $500 + 25000 \times 1 = 25500$ (worse, due to random I/O). If clustered
+index: $500 + 25000/100 = 750$ (much better, since each lookup reads a page with 100 matching
+records on average).
 
 </details>
 
@@ -856,8 +856,8 @@ Serializable).
 
 **Validation types:**
 
-| Type                | Check                                                                           | Cost                               |
-| ------------------- | ------------------------------------------------------------------------------- | ---------------------------------- |
+| Type                | Check                                                                           | Cost                             |
+| ------------------- | ------------------------------------------------------------------------------- | -------------------------------- |
 | Backward validation | Check against committed transactions that finished after our read phase started | $O(\text{committed since start)$ |
 | Forward validation  | Check against active transactions that started before our validation phase      | $O(\text{currently active)$      |
 
@@ -874,7 +874,7 @@ overlapping transactions (reading/writing the same data), at most one commits.
 
 | Strategy           | Description                       | Hotspot risk                    |
 | ------------------ | --------------------------------- | ------------------------------- |
-| Hash partitioning  | $f(\text{key) \mod n$           | Low                             |
+| Hash partitioning  | $f(\text{key) \mod n$             | Low                             |
 | Range partitioning | Key ranges assigned to nodes      | High (skewed ranges)            |
 | Directory-based    | Lookup service maps keys to nodes | Low (directory is a bottleneck) |
 
@@ -986,11 +986,11 @@ $$\text{Cost = B_r + R_r \cdot (\text{cost per probe)$$
 
 Where $R_r$ is the number of records in $R$ and the cost per probe depends on the index:
 
-| Index type            | Cost per probe                                                 |
-| --------------------- | -------------------------------------------------------------- |
+| Index type            | Cost per probe                                             |
+| --------------------- | ---------------------------------------------------------- |
 | B+ tree (clustered)   | $\lceil h + \text{matching records / \text{fan-out \rceil$ |
-| B+ tree (unclustered) | $\lceil h + \text{matching records \rceil$                   |
-| Hash index            | $\approx 1.2$ (average)                                        |
+| B+ tree (unclustered) | $\lceil h + \text{matching records \rceil$                 |
+| Hash index            | $\approx 1.2$ (average)                                    |
 
 <details>
 <summary>Worked Example: Join Cost Comparison</summary>
@@ -1324,8 +1324,59 @@ If you get this wrong, revise: Section 5.1.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
+
+2. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+
+3. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
+
+4. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
+   molecular refers to individual molecules.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Query Optimisation — Choosing an Index
+
+**Problem.** Given a table `orders(id, customer_id, date, total)` with 1M rows, and the query
+`SELECT * FROM orders WHERE customer_id = 42 AND date > '2025-01-01'`, design optimal indexes.
+
+**Solution.** Option A: composite index on `(customer_id, date)`.
+
+The optimiser can use the index for both filters: equality on `customer_id` then range scan on
+`date`.
+
+```sql
+CREATE INDEX idx_orders_cust_date ON orders(customer_id, date);
+```
+
+Column order matters: equality columns first, then range columns.
+
+$\blacksquare$
+
+### Example 2: Serialisability — Conflict Serialisable Schedules
+
+**Problem.** Determine whether the following schedule is conflict-serialisable: $R_1(A)$, $W_2(A)$,
+$R_1(B)$, $W_2(B)$, $W_1(A)$, $W_1(B)$.
+
+**Solution.** Build precedence graph. Conflicts:
+
+- $R_1(A)$ and $W_2(A)$: $T_1 \to T_2$
+- $W_2(A)$ and $W_1(A)$: $T_2 \to T_1$
+
+Cycle detected: $T_1 \to T_2 \to T_1$. Not conflict-serialisable.
+
+$\blacksquare$
+
+## Summary
+
+- Query optimisation: cost-based optimisers estimate I/O and CPU costs; use statistics on column
+  cardinality and data distribution.
+- Indexing strategies: B+ tree indexes for range queries, hash indexes for equality, composite
+  indexes with column order matching query predicates.
+- Serialisability: conflict-serialisable iff precedence graph is acyclic; 2PL (two-phase locking)
+  guarantees serialisability.
+- Recovery: ARIES algorithm — write-ahead logging, steal/no-force buffer policy, redo/undo passes
+  after crash.
+- Distributed databases: CAP theorem — partition tolerance forces choice between consistency and
+  availability; eventual consistency models.

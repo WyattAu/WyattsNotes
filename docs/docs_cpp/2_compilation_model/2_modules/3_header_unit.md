@@ -76,9 +76,8 @@ The savings are:
 $$C_{\mathrm{include} - C_{\mathrm{header\_unit} = (n - 1)(P(H) + S(H) - D(H))$$
 
 Since $P(H) \gt D(H)$ for any non-trivial header, the savings grow linearly with the number of TUs.
-For a header like `&lt;vector&gt;` with $P(H) \approx 50\mathrm{ms$ and
-$D(H) \approx 5\mathrm{ms$ Across 100 TUs, the savings are approximately $4.5$ seconds per
-incremental build.
+For a header like `&lt;vector&gt;` with $P(H) \approx 50\mathrm{ms$ and $D(H) \approx 5\mathrm{ms$
+Across 100 TUs, the savings are approximately $4.5$ seconds per incremental build.
 
 ## 2. The Global Module Fragment (GMF)
 
@@ -723,8 +722,16 @@ Experimental support means that header unit-based projects may encounter IDE iss
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential concepts and techniques related to header units, including key
+principles and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and definitions
+- key principles and frameworks
+- practical applications
+- common techniques and methods
+- evaluation and critical analysis
+
+A thorough understanding of these concepts, combined with regular practice and review, is essential
+for mastery of this topic.

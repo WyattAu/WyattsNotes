@@ -518,8 +518,13 @@ standard interviews.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the approaches (biological, cognitive, behavioural, psychodynamic, humanistic) and
+   their key assumptions.
 
-## Worked Examples
+2. Failing to discuss ethical issues (informed consent, deception, debriefing, right to withdraw)
+   when evaluating studies.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing correlation and causation in psychological research evidence.
+
+4. Describing a study without evaluating its methodology (e.g., sample, controls, ecological
+   validity).

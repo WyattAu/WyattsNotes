@@ -487,8 +487,14 @@ Blanche can wash but she cannot wash away the past.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Worked Examples
+2. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
+
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.

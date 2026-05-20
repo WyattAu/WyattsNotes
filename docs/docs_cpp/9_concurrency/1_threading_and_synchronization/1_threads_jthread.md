@@ -561,8 +561,16 @@ void constructor_variants() {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the key events, causes, and consequences related to thread execution
+(std::jthread) and hardware mapping, including historical interpretations and evidence.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key events, dates, and figures
+- causes and consequences
+- historical interpretations and debates
+- source analysis and evaluation
+- thematic connections across periods
+
+The ability to construct well-supported, analytical arguments using a range of evidence is key to
+success in history.

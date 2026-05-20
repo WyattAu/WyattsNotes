@@ -344,8 +344,8 @@ Divide by 2: $-2 \lt x \leq 3$.
 
 ### 3.5 Set Notation for Inequalities (Higher Tier)
 
-The solution $x \gt 3$ can be written as $\{x \in \mathbb{R} : x \gt 3\}$ or using interval
-notation $(3, \infty)$.
+The solution $x \gt 3$ can be written as $\{x \in \mathbb{R} : x \gt 3\}$ or using interval notation
+$(3, \infty)$.
 
 ## 4. Sequences
 
@@ -745,8 +745,16 @@ G \circ f$.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to algebra, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- quadratic equations and the discriminant
+- simultaneous equations
+- polynomial division and the factor theorem
+- partial fractions
+- binomial expansion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

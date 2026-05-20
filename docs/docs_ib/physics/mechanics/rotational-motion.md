@@ -868,8 +868,13 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Worked Examples
+2. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
+
+4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.

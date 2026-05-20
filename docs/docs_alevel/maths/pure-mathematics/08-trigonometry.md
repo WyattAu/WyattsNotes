@@ -307,8 +307,8 @@ The $\pm$ in the sine and cosine half-angle formulas depends on the quadrant of
 $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ Not the quadrant of $\theta$ itself. Always determine which quadrant
 $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ lies in Before choosing the sign.
 
-| Quadrant of $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$                                     | $\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ | $\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ |
-| ------------------------------------------------------------------------------ | ---------------------------------- | ---------------------------------- |
+| Quadrant of $\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$                                 | $\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ | $\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$ |
+| -------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------- |
 | I: $0 \lt \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$      | $+$                                | $+$                                |
 | II: $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ \lt \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt \pi$   | $+$                                | $-$                                |
 | III: $\pi \lt \frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \lt \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$ | $-$                                | $-$                                |
@@ -890,12 +890,13 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-## Summary
+2. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.

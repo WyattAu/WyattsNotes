@@ -811,4 +811,11 @@ And the [comparative analysis](comparitives/chronicle-streetcar.md). :::
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Close textual analysis**
+
+When analysing texts for ib english assessment and analytical techniques, follow this approach:
+
+1. Select a relevant quotation from the text
+2. Identify the specific technique used (e.g., metaphor, enjambment, iambic pentameter)
+3. Analyse the effect of the technique on the reader
+4. Link the analysis to the text's broader themes or concerns

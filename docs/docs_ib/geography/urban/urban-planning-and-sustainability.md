@@ -250,12 +250,13 @@ For related topics, see [./urbanisation-trends-and-patterns](./urbanisation-tren
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Summary
+2. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.

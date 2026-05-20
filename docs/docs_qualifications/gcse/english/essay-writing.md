@@ -537,8 +537,16 @@ And structure, it would achieve the highest level.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the analytical frameworks and techniques relevant to essay writing for gcse
+english literature, including key terminology, approaches, and critical perspectives.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- close textual analysis
+- narrative voice and perspective
+- characterisation and motivation
+- thematic development
+- contextual and critical interpretation
+
+Developing a precise analytical vocabulary and practising close reading are essential for strong
+performance in this area.

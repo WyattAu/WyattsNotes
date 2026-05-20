@@ -362,12 +362,14 @@ $r_s = 1 - \dfrac◆LB◆6 \times 14◆RB◆◆LB◆8 \times 63◆RB◆ = 1 - \d
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-## Summary
+2. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-<!-- TODO: Add a summary for this topic -->
+3. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.

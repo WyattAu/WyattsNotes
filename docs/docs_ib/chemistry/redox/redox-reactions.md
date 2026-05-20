@@ -1002,8 +1002,16 @@ The OH$^-$ at the cathode is consumed by this acid.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of redox reactions, including key reactions, underlying
+theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- standard electrode potentials
+- electrochemical cells
+- electrolysis and Faraday's laws
+- corrosion and prevention
+- fuel cells
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

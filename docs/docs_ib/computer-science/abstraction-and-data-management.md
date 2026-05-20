@@ -605,13 +605,13 @@ OUTPUT result
 <details>
 <summary>Solution</summary>
 
-| Step | Operation                   | Balance | Return Value | Notes                           |
-| ---- | --------------------------- | ------- | ------------ | ------------------------------- |
-| 1    | `new BankAccount(..., 100)` | 100     | --           | Initial balance = 100           |
-| 2    | `acc.deposit(50)`           | 150     | --           | $100 + 50 = 150$                |
+| Step | Operation                   | Balance | Return Value | Notes                         |
+| ---- | --------------------------- | ------- | ------------ | ----------------------------- |
+| 1    | `new BankAccount(..., 100)` | 100     | --           | Initial balance = 100         |
+| 2    | `acc.deposit(50)`           | 150     | --           | $100 + 50 = 150$              |
 | 3    | `acc.withdraw(200)`         | 150     | FALSE        | $200 \gt 150$Withdrawal fails |
-| 4    | `acc.withdraw(100)`         | 50      | TRUE         | $100 \le 150$Succeeds           |
-| 5    | `acc.getBalance()`          | 50      | 50           | Returns current balance         |
+| 4    | `acc.withdraw(100)`         | 50      | TRUE         | $100 \le 150$Succeeds         |
+| 5    | `acc.getBalance()`          | 50      | 50           | Returns current balance       |
 
 **Outputs:** 50, TRUE
 
@@ -1628,4 +1628,16 @@ The `teacherID` foreign key in `Subject` enforces that each subject has exactly 
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of abstraction and data management, including underlying theory,
+practical implementation, and key applications.
+
+**Key concepts include:**
+
+- variables, data types, and control flow
+- functions and procedures
+- object-oriented programming
+- error handling and debugging
+- modular design
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

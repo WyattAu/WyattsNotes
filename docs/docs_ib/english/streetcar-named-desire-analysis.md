@@ -1243,12 +1243,12 @@ _Streetcar_ is a domestic tragedy that resolves through the failure of action.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Summary
+2. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.

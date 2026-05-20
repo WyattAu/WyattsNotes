@@ -34,8 +34,8 @@ Properties.
 
 ### Functional Groups (OL/HL)
 
-| Functional group   | Name            | Example                           |
-| ------------------ | --------------- | --------------------------------- |
+| Functional group   | Name            | Example                       |
+| ------------------ | --------------- | ----------------------------- |
 | C--C               | Alkane          | $\mathrm{CH_3\mathrm{CH_3$    |
 | C=C                | Alkene          | $\mathrm{CH_2=\mathrm{CH_2$   |
 | --OH               | Alcohol         | $\mathrm{CH_3\mathrm{OH$      |
@@ -324,9 +324,8 @@ Images.
 - They rotate plane-polarised light in opposite directions.
 - A racemic mixture is a 50:50 mixture of enantiomers and shows no optical activity.
 
-**Example (HL):** Butan-2-ol ($\mathrm{CH_3\mathrm{CH(OH)CH_2\mathrm{CH_3$) has a chiral
-carbon (carbon 2 has H, OH, $\mathrm{CH_3$$\mathrm{CH_2\mathrm{CH_3$). It exists as two
-optical isomers.
+**Example (HL):** Butan-2-ol ($\mathrm{CH_3\mathrm{CH(OH)CH_2\mathrm{CH_3$) has a chiral carbon
+(carbon 2 has H, OH, $\mathrm{CH_3$$\mathrm{CH_2\mathrm{CH_3$). It exists as two optical isomers.
 
 ## Common Pitfalls
 
@@ -341,8 +340,7 @@ optical isomers.
 
 ### Ordinary Level
 
-1. Name the following:
-   $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{OH$$\mathrm{CH_3\mathrm{COOH$
+1. Name the following: $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{OH$$\mathrm{CH_3\mathrm{COOH$
    $\mathrm{CH_3\mathrm{COCH_3$.
 2. Write the equation for the complete combustion of butane.
 3. Describe the test to distinguish between an aldehyde and a ketone.
@@ -355,8 +353,8 @@ optical isomers.
 3. Explain why butan-2-ol is optically active but butan-1-ol is not.
 4. Describe the free radical substitution mechanism for the reaction of methane with chlorine,
    including all three stages.
-5. A carboxylic acid with molecular formula $\mathrm{C_4\mathrm{H_8\mathrm{O_2$ has the
-   following NMR data. Identify the acid and explain your reasoning.
+5. A carboxylic acid with molecular formula $\mathrm{C_4\mathrm{H_8\mathrm{O_2$ has the following
+   NMR data. Identify the acid and explain your reasoning.
 
 ---
 
@@ -416,8 +414,8 @@ Placing the positive charge on the more substituted (more stable) carbon.
 
 ### Classification Recap
 
-| Type      | Structure                        | Example              |
-| --------- | -------------------------------- | -------------------- |
+| Type      | Structure                    | Example              |
+| --------- | ---------------------------- | -------------------- |
 | Primary   | R-$\mathrm{CH_2\mathrm{OH$   | Ethanol, propan-1-ol |
 | Secondary | $\mathrm{R_2$-$\mathrm{CHOH$ | Propan-2-ol          |
 | Tertiary  | $\mathrm{R_3$-$\mathrm{COH$  | 2-methylpropan-2-ol  |
@@ -496,13 +494,13 @@ Is stabilised by resonance delocalisation of the negative charge over two oxygen
 
 ### Reactions of Carboxylic Acids
 
-| Reagent                                 | Product                                                        | Type           |
-| --------------------------------------- | -------------------------------------------------------------- | -------------- |
-| $\mathrm{NaOH$                        | Carboxylate salt + water                                       | Neutralisation |
-| $\mathrm{Na$                          | Carboxylate salt + $\mathrm{H_2$                             | Redox          |
+| Reagent                             | Product                                                  | Type           |
+| ----------------------------------- | -------------------------------------------------------- | -------------- |
+| $\mathrm{NaOH$                      | Carboxylate salt + water                                 | Neutralisation |
+| $\mathrm{Na$                        | Carboxylate salt + $\mathrm{H_2$                         | Redox          |
 | $\mathrm{Na_2\mathrm{CO_3$          | Carboxylate salt + $\mathrm{CO_2 + \mathrm{H_2\mathrm{O$ | Acid-base      |
-| Alcohol + $\mathrm{H_2\mathrm{SO_4$ | Ester + water                                                  | Esterification |
-| $\mathrm{LiAlH_4$                     | Primary alcohol                                                | Reduction      |
+| Alcohol + $\mathrm{H_2\mathrm{SO_4$ | Ester + water                                            | Esterification |
+| $\mathrm{LiAlH_4$                   | Primary alcohol                                          | Reduction      |
 
 ---
 
@@ -549,13 +547,13 @@ Acid).
 **Worked Example 11 (HL):** Explain why butan-2-ol is optically active but butan-1-ol is not.
 
 Butan-2-ol ($\mathrm{CH_3\mathrm{CH(OH)CH_2\mathrm{CH_3$): Carbon-2 has four different groups
-($\mathrm{H$$\mathrm{OH$$\mathrm{CH_3$$\mathrm{CH_2\mathrm{CH_3$), making it a chiral
-centre. Two Enantiomers exist.
+($\mathrm{H$$\mathrm{OH$$\mathrm{CH_3$$\mathrm{CH_2\mathrm{CH_3$), making it a chiral centre. Two
+Enantiomers exist.
 
-Butan-1-ol ($\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{CH_2\mathrm{OH$): No carbon has
-four different Groups. Carbon-1 has
-$\mathrm{H$$\mathrm{H$$\mathrm{OH$$\mathrm{CH_2\mathrm{CH_2\mathrm{CH_3$ -- two Of the
-substituents are identical (two H atoms). Not chiral.
+Butan-1-ol ($\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{CH_2\mathrm{OH$): No carbon has four
+different Groups. Carbon-1 has
+$\mathrm{H$$\mathrm{H$$\mathrm{OH$$\mathrm{CH_2\mathrm{CH_2\mathrm{CH_3$ -- two Of the substituents
+are identical (two H atoms). Not chiral.
 
 ### E/Z Isomerism
 
@@ -566,8 +564,8 @@ Yes. Each carbon of the double bond has two different groups:
 - Left carbon: $\mathrm{CH_3$ and $\mathrm{H$
 - Right carbon: $\mathrm{CH_3$ and $\mathrm{H$
 
-(Z)-but-2-ene: both $\mathrm{CH_3$ groups on the same side. (E)-but-2-ene: $\mathrm{CH_3$ groups
-on Opposite sides.
+(Z)-but-2-ene: both $\mathrm{CH_3$ groups on the same side. (E)-but-2-ene: $\mathrm{CH_3$ groups on
+Opposite sides.
 
 But-1-ene does NOT exhibit E/Z isomerism because one carbon of the double bond has two identical
 Groups ($\mathrm{H$ and $\mathrm{H$).
@@ -592,19 +590,19 @@ Favours $\mathrm{CH_3\mathrm{Cl$).
 
 ## Summary Table: Key Organic Reactions
 
-| Reactant                  | Reagent                                 | Product               | Reaction type          |
-| ------------------------- | --------------------------------------- | --------------------- | ---------------------- |
-| Alkene                    | $\mathrm{Br_2$                        | Dibromoalkane         | Electrophilic addition |
-| Alkene                    | $\mathrm{HBr$                         | Bromoalkane           | Electrophilic addition |
-| Primary alcohol           | $[\mathrm{O]$Distil                   | Aldehyde              | Oxidation              |
-| Primary alcohol           | $[\mathrm{O]$Reflux                   | Carboxylic acid       | Oxidation              |
-| Secondary alcohol         | $[\mathrm{O]$                         | Ketone                | Oxidation              |
+| Reactant                  | Reagent                             | Product               | Reaction type          |
+| ------------------------- | ----------------------------------- | --------------------- | ---------------------- |
+| Alkene                    | $\mathrm{Br_2$                      | Dibromoalkane         | Electrophilic addition |
+| Alkene                    | $\mathrm{HBr$                       | Bromoalkane           | Electrophilic addition |
+| Primary alcohol           | $[\mathrm{O]$Distil                 | Aldehyde              | Oxidation              |
+| Primary alcohol           | $[\mathrm{O]$Reflux                 | Carboxylic acid       | Oxidation              |
+| Secondary alcohol         | $[\mathrm{O]$                       | Ketone                | Oxidation              |
 | Alcohol                   | $\mathrm{conc. H_2\mathrm{SO_4$Heat | Alkene                | Dehydration            |
 | Carboxylic acid + alcohol | $\mathrm{conc. H_2\mathrm{SO_4$     | Ester + water         | Esterification         |
-| Ester + NaOH              | Heat                                    | Carboxylate + alcohol | Saponification         |
-| Aldehyde                  | Tollens'                                | Silver mirror         | Oxidation (test)       |
-| Aldehyde                  | $\mathrm{NaBH_4$                      | Primary alcohol       | Reduction              |
-| Ketone                    | $\mathrm{NaBH_4$                      | Secondary alcohol     | Reduction              |
+| Ester + NaOH              | Heat                                | Carboxylate + alcohol | Saponification         |
+| Aldehyde                  | Tollens'                            | Silver mirror         | Oxidation (test)       |
+| Aldehyde                  | $\mathrm{NaBH_4$                    | Primary alcohol       | Reduction              |
+| Ketone                    | $\mathrm{NaBH_4$                    | Secondary alcohol     | Reduction              |
 
 ---
 
@@ -641,8 +639,8 @@ Favours $\mathrm{CH_3\mathrm{Cl$).
     sodium carbonate.
 14. Explain the difference between addition and condensation polymerisation, giving an example of
     each.
-15. A compound $\mathrm{C_3\mathrm{H_6\mathrm{O$ gives a positive Tollens' test and
-    decolourises bromine water. Suggest a structure and explain.
+15. A compound $\mathrm{C_3\mathrm{H_6\mathrm{O$ gives a positive Tollens' test and decolourises
+    bromine water. Suggest a structure and explain.
 
 ---
 
@@ -732,9 +730,29 @@ Three proton environments:
 
 1. $\mathrm{CH_3$ (3H): triplet at $\delta \approx 1.2$
 2. $\mathrm{CH_2$ (2H): quartet at $\delta \approx 3.7$
-3. $\mathrm{OH$ (1H): singlet at $\delta \approx 2.5$ (broad, exchanges with
-   $\mathrm{D_2\mathrm{O$)
+3. $\mathrm{OH$ (1H): singlet at $\delta \approx 2.5$ (broad, exchanges with $\mathrm{D_2\mathrm{O$)
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Mole calculation**
+
+Calculate the number of moles in $12.0\,\text{g}$ of $\text{NaOH}$ ($M_r = 40.0$).
+
+**Solution:**
+
+$$n = \frac{m}{M_r} = \frac{12.0}{40.0} = 0.300\,\text{mol}$$
+
+**Example 2: Reacting masses**
+
+$$\text{CaCO}_3 + 2\text{HCl} \rightarrow \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
+
+What mass of $\text{CaCl}_2$ is produced from $10.0\,\text{g}$ of $\text{CaCO}_3$?
+($M_r[\text{CaCO}_3] = 100$, $M_r[\text{CaCl}_2] = 111$)
+
+**Solution:**
+
+$$n(\text{CaCO}_3) = \frac{10.0}{100} = 0.100\,\text{mol}$$
+
+From the equation, ratio is $1:1$, so $n(\text{CaCl}_2) = 0.100\,\text{mol}$.
+
+$$m(\text{CaCl}_2) = 0.100 \times 111 = 11.1\,\text{g}$$

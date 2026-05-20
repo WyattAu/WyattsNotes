@@ -193,12 +193,13 @@ $ git switch temp-wip
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Summary
+2. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.

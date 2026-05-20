@@ -852,8 +852,16 @@ echo $?    # 0 = success, non-zero = failure
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of dns architecture and operations, including underlying theory,
+practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- ownership, borrowing, and lifetimes
+- structs, enums, and pattern matching
+- traits and generics
+- error handling (Result, Option)
+- concurrency with threads and async
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

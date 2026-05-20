@@ -497,17 +497,16 @@ Compute prefix function:
 - $\pi[3]$: $P[3] = \text{b$$P[1] = \text{b$. Match! $k = 2$. $\pi[3] = 2$.
 - $\pi[4]$: $P[4] = \text{a$$P[2] = \text{a$. Match! $k = 3$. $\pi[4] = 3$.
 - $\pi[5]$: $P[5] = \text{c$$P[3] = \text{b$. No match. $k = \pi[2] = 1$.
-  $P[1] = \text{b \neq \text{c$. $k = \pi[0] = 0$. $P[0] = \text{a \neq \text{c$.
-  $\pi[5] = 0$.
+  $P[1] = \text{b \neq \text{c$. $k = \pi[0] = 0$. $P[0] = \text{a \neq \text{c$. $\pi[5] = 0$.
 - $\pi[6]$: $P[6] = \text{a$$P[0] = \text{a$. Match! $k = 1$. $\pi[6] = 1$.
 
 $\pi = [0, 0, 1, 2, 3, 0, 1]$.
 
-Search in $T = \text{abababaca$: $i=0$: $T[0]=\text{a=P[0]$$k=1$. $i=1$:
-$T[1]=\text{b=P[1]$$k=2$. $i=2$: $T[2]=\text{a=P[2]$$k=3$. $i=3$: $T[3]=\text{b=P[3]$$k=4$.
-$i=4$: $T[4]=\text{a=P[4]$$k=5$. $i=5$: $T[5]=\text{b \neq P[5]=\text{c$. $k=\pi[4]=3$.
-$P[3]=\text{b=T[5]$$k=4$. $i=6$: $T[6]=\text{a=P[4]$$k=5$. $i=7$: $T[7]=\text{c=P[5]$$k=6$.
-$i=8$: $T[8]=\text{a=P[6]$$k=7=m$. Match at $8-7+1=2$.
+Search in $T = \text{abababaca$: $i=0$: $T[0]=\text{a=P[0]$$k=1$. $i=1$: $T[1]=\text{b=P[1]$$k=2$.
+$i=2$: $T[2]=\text{a=P[2]$$k=3$. $i=3$: $T[3]=\text{b=P[3]$$k=4$. $i=4$: $T[4]=\text{a=P[4]$$k=5$.
+$i=5$: $T[5]=\text{b \neq P[5]=\text{c$. $k=\pi[4]=3$. $P[3]=\text{b=T[5]$$k=4$. $i=6$:
+$T[6]=\text{a=P[4]$$k=5$. $i=7$: $T[7]=\text{c=P[5]$$k=6$. $i=8$: $T[8]=\text{a=P[6]$$k=7=m$. Match
+at $8-7+1=2$.
 
 Pattern found at position 2.
 
@@ -657,11 +656,11 @@ $\blacksquare$
 
 ### 5.5 Inapproximability
 
-**Theorem 5.4 (PCP Theorem).** Unless $\text{P = \text{NP$There is no polynomial-time algorithm
-that approximates MAX-3SAT to within any constant factor better than $7/8$.
+**Theorem 5.4 (PCP Theorem).** Unless $\text{P = \text{NP$There is no polynomial-time algorithm that
+approximates MAX-3SAT to within any constant factor better than $7/8$.
 
-**Theorem 5.5.** Unless $\text{P = \text{NP$TSP (without triangle inequality) cannot be
-approximated to within any polynomial factor.
+**Theorem 5.5.** Unless $\text{P = \text{NP$TSP (without triangle inequality) cannot be approximated
+to within any polynomial factor.
 
 ## 6. Randomised Algorithms
 
@@ -982,8 +981,8 @@ $i = 3$: $i > r = 1$. Set $l = r = 3$. Compare: $S[0] = \text{a \neq S[3] = \tex
 $Z[3] = 0$. $r = 2$.
 
 $i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text{a = S[4] = \text{a$$r = 5$.
-$S[1] = \text{a = S[5] = \text{a$$r = 6$. $S[2] = \text{b = S[6] = \text{b$$r = 7$.
-$r = n = 7$Stop. $Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
+$S[1] = \text{a = S[5] = \text{a$$r = 6$. $S[2] = \text{b = S[6] = \text{b$$r = 7$. $r = n = 7$Stop.
+$Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
 
 $i = 5$: $i = 5 \leq r = 6$. $k = i - l = 5 - 4 = 1$. $Z[k] = Z[1] = 1$.
 $r - i + 1 = 6 - 5 + 1 = 2$. $Z[k] = 1 < 2$So $Z[5] = 1$.
@@ -1626,8 +1625,64 @@ If you get this wrong, revise: Section 5.4.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
+
+2. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
+
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Dynamic Programming — Longest Common Subsequence
+
+**Problem.** Find the length of the LCS of `"ABCDGH"` and `"AEDFHR"`.
+
+**Solution.** Build DP table where `dp[i][j]` = LCS length of first $i$ chars of $X$ and first $j$
+chars of $Y$:
+
+```
+      ""  A  E  D  F  H  R
+  ""   0  0  0  0  0  0  0
+  A    0  1  1  1  1  1  1
+  B    0  1  1  1  1  1  1
+  C    0  1  1  1  1  1  1
+  D    0  1  1  2  2  2  2
+  G    0  1  1  2  2  2  2
+  H    0  1  1  2  2  3  3
+```
+
+LCS length = 3 (`"ADH"`). Time: $O(mn)$, space: $O(mn)$ (reducible to $O(\min(m,n))$).
+
+$\blacksquare$
+
+### Example 2: Amortised Analysis — Dynamic Array Doubling
+
+**Problem.** Show that inserting $n$ elements into a dynamic array that doubles in size has
+amortised $O(1)$ cost per insertion.
+
+**Solution.** Total cost for $n$ insertions: $n$ (each insert) + cost of resizes.
+
+Resizes occur at sizes 1, 2, 4, 8, ..., $2^{k}$ where $2^k \geq n$. Copy cost:
+$1 + 2 + 4 + \ldots + 2^k < 2n$.
+
+Total: $n + 2n = 3n$. Amortised: $\frac{3n}{n} = O(1)$ per insertion.
+
+$\blacksquare$
+
+## Summary
+
+- Dynamic programming: identify overlapping subproblems and optimal substructure; memoise or build
+  bottom-up tables.
+- Greedy algorithms: make locally optimal choices; prove correctness via exchange argument or
+  matroid property.
+- Amortised analysis: aggregate, accounting (tokens), and potential methods all show average $O(1)$
+  for sequences of operations.
+- Graph algorithms at scale: Dijkstra with Fibonacci heap ($O(V\log V + E)$), A\* with admissible
+  heuristics.
+- NP-completeness: reduce in polynomial time; SAT → 3-SAT → Clique → Vertex Cover are classic chain
+  reductions.

@@ -96,8 +96,7 @@ When the battery delivers current, the terminal voltage is less than the EMF.
 
 The current is the same through all resistors. The voltage divides proportionally to resistance.
 
-**Parallel:**
-$\dfrac{1}{R_{\text{eq}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots + \dfrac{1}{R_n}$
+**Parallel:** $\dfrac{1}{R_{\text{eq}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots + \dfrac{1}{R_n}$
 
 The voltage is the same across all resistors. The current divides inversely proportionally to
 Resistance.
@@ -130,10 +129,10 @@ This is conservation of energy.
 
 :::info[Example: Multi-loop circuit]
 
-A circuit has two batteries and three resistors. Battery 1 has $\mathcal{E}_1 = 12$ V with
-internal Resistance $r_1 = 1\,\Omega$. Battery 2 has $\mathcal{E}_2 = 6$ V with internal
-resistance $r_2 = 2\,\Omega$. Resistor $R_1 = 4\,\Omega$ is in series with Battery 1, and
-$R_2 = 3\,\Omega$ connects the two branches.
+A circuit has two batteries and three resistors. Battery 1 has $\mathcal{E}_1 = 12$ V with internal
+Resistance $r_1 = 1\,\Omega$. Battery 2 has $\mathcal{E}_2 = 6$ V with internal resistance
+$r_2 = 2\,\Omega$. Resistor $R_1 = 4\,\Omega$ is in series with Battery 1, and $R_2 = 3\,\Omega$
+connects the two branches.
 
 Assign loop currents $I_1$ (left loop, clockwise) and $I_2$ (right loop, clockwise).
 
@@ -269,9 +268,9 @@ During discharge, the capacitor retains $36.8\%$ of its charge after one time co
 
 :::info[Example: RC circuit with numerical values]
 
-A $5\,\mu\text{F$ capacitor is connected in series with a $200\,\text{k\Omega$ resistor and a
-$12$ V Battery. Find (a) the time constant, (b) the charge after 1 s, (c) the current after 1 s, and
-(d) the Time to reach 95% of maximum charge.
+A $5\,\mu\text{F$ capacitor is connected in series with a $200\,\text{k\Omega$ resistor and a $12$ V
+Battery. Find (a) the time constant, (b) the charge after 1 s, (c) the current after 1 s, and (d)
+the Time to reach 95% of maximum charge.
 
 (a) $\tau = RC = (200 \times 10^3)(5 \times 10^{-6}) = 1.0\,\text{s$
 
@@ -321,9 +320,9 @@ reduces the Voltage across the measured component.
 
 ## Common Pitfalls
 
-1. **Confusing EMF with terminal voltage.** $\mathcal{E} = V_{\text{terminal} + Ir$. When
-   the battery is delivering current, $V_{\text{terminal} < \mathcal{E}$. When the battery
-   is being charged, $V_{\text{terminal} > \mathcal{E}$.
+1. **Confusing EMF with terminal voltage.** $\mathcal{E} = V_{\text{terminal} + Ir$. When the
+   battery is delivering current, $V_{\text{terminal} < \mathcal{E}$. When the battery is being
+   charged, $V_{\text{terminal} > \mathcal{E}$.
 2. **Incorrect sign conventions in Kirchhoff's loop rule.** Be consistent: decide on a loop
    direction, then apply the sign rules rigorously. Crossing a resistor with the current gives
    $-IR$; against gives $+IR$.
@@ -331,8 +330,8 @@ reduces the Voltage across the measured component.
    current flows through both. Two elements are in parallel only if the same voltage is across both.
    When in doubt, redraw the circuit.
 4. **Forgetting that the time constant determines the rate, not the final values.** $\tau = RC$
-   controls how fast the capacitor charges or discharges. The final charge
-   $Q_{\max} = C\mathcal{E}$ depends only on $C$ and $\mathcal{E}$Not on $R$.
+   controls how fast the capacitor charges or discharges. The final charge $Q_{\max} = C\mathcal{E}$
+   depends only on $C$ and $\mathcal{E}$Not on $R$.
 5. **Assuming current through an open switch or no current through a capacitor at steady state.** At
    steady state (DC), a fully charged capacitor acts as an open circuit (no current through it), and
    an inductor acts as a short circuit.
@@ -345,8 +344,8 @@ reduces the Voltage across the measured component.
 
 ## Practice Questions
 
-1. A battery with $\mathcal{E} = 24$ V and internal resistance $r = 0.5\,\Omega$ is connected
-   to an external circuit of resistance $R = 11.5\,\Omega$. Find the terminal voltage and the power
+1. A battery with $\mathcal{E} = 24$ V and internal resistance $r = 0.5\,\Omega$ is connected to an
+   external circuit of resistance $R = 11.5\,\Omega$. Find the terminal voltage and the power
    dissipated in the external resistance.
 
 2. Three resistors $R_1 = 6\,\Omega$$R_2 = 12\,\Omega$$R_3 = 4\,\Omega$ are connected to a $12$ V
@@ -358,9 +357,9 @@ reduces the Voltage across the measured component.
    $R_1 = 2\,\Omega$$R_2 = 4\,\Omega$$R_3 = 6\,\Omega$. Battery 1 and $R_1$ are in the left branch;
    $R_3$ is the middle branch; Battery 2 and $R_2$ are in the right branch.
 
-4. A $2\,\mu\text{F$ capacitor in series with a $500\,\text{k\Omega$ resistor is connected to a
-   $20$ V battery at $t = 0$. Find (a) the charge and current at $t = 0.5$ s, (b) the energy stored
-   in the capacitor at $t = 2$ s, and (c) the total energy delivered by the battery.
+4. A $2\,\mu\text{F$ capacitor in series with a $500\,\text{k\Omega$ resistor is connected to a $20$
+   V battery at $t = 0$. Find (a) the charge and current at $t = 0.5$ s, (b) the energy stored in
+   the capacitor at $t = 2$ s, and (c) the total energy delivered by the battery.
 
 5. A $4\,\mu\text{F$ capacitor is charged to $100\,\mu\text{C$ and then disconnected. It is then
    connected across a $1\,\text{M\Omega$ resistor. Find (a) the initial current, (b) the charge
@@ -373,9 +372,9 @@ reduces the Voltage across the measured component.
 <summary>Question 7: AP Exam-Style -- RC circuit with a switch</summary>
 
 In the circuit shown, $R_1 = 10\,\text{k\Omega$$R_2 = 20\,\text{k\Omega$$C = 5\,\mu\text{F$And
-$\mathcal{E} = 30$ V. Switch S is closed at $t = 0$ with the capacitor initially uncharged.
-Find (a) the Initial current through the battery, (b) the current through the battery at steady
-state, (c) the charge On the capacitor at steady state, and (d) the time constant of the circuit.
+$\mathcal{E} = 30$ V. Switch S is closed at $t = 0$ with the capacitor initially uncharged. Find (a)
+the Initial current through the battery, (b) the current through the battery at steady state, (c)
+the charge On the capacitor at steady state, and (d) the time constant of the circuit.
 
 The circuit has the battery and $R_1$ in series, with $R_2$ and $C$ in parallel connected across
 $R_1$.
@@ -442,8 +441,16 @@ Conserved.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of circuits, including the key equations, experimental
+methods, and applications relevant to the specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- fundamental principles and equations
+- SI units and dimensional analysis
+- mathematical modelling of physical phenomena
+- experimental techniques and measurement
+- applications to real-world problems
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

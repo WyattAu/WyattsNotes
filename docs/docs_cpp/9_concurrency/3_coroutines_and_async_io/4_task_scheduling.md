@@ -247,8 +247,8 @@ Library patterns.
 - **`when_any(tasks...)`**: returns when **any** task completes, cancelling the rest. The result
   identifies which task finished first.
 
-The complexity of `when_all` for $n$ tasks is $\mathcal{O}(n)$ in terms of coroutine handles
-that Must be tracked and resumed.
+The complexity of `when_all` for $n$ tasks is $\mathcal{O}(n)$ in terms of coroutine handles that
+Must be tracked and resumed.
 
 ### `when_all` Implementation
 
@@ -653,8 +653,8 @@ Threads. It provides automatic load balancing without centralized coordination:
 The work-stealing algorithm has provably optimal time bounds: the expected execution time of a fully
 Strict (fork-join) computation with $P$ processors and work $T_1$ is
 $\mathcal{O}(T_1 / P +
-T_{\infty})$, where $T_{\infty}$ is the span (critical path length)
-[Blumofe And Leiserson, 1999].
+T_{\infty})$, where $T_{\infty}$ is the span (critical path length) [Blumofe
+And Leiserson, 1999].
 
 ```cpp
 #include <deque>
@@ -825,8 +825,16 @@ Computation cannot be cancelled until it reaches the next `co_await`.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential concepts and techniques related to task scheduling and executors,
+including key principles and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and definitions
+- key principles and frameworks
+- practical applications
+- common techniques and methods
+- evaluation and critical analysis
+
+A thorough understanding of these concepts, combined with regular practice and review, is essential
+for mastery of this topic.

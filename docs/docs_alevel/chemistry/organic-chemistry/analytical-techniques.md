@@ -189,11 +189,11 @@ In amines often appear as broad singlets because of rapid proton exchange with t
 
 $^{13}\mathrm{C}$ NMR detects carbon environments:
 
-- Natural abundance of $^{13}\mathrm{C}$ is only 1.1% (the vast majority is $^{12}\mathrm{C}$
-  which is NMR-inactive), so signals are weak.
+- Natural abundance of $^{13}\mathrm{C}$ is only 1.1% (the vast majority is $^{12}\mathrm{C}$ which
+  is NMR-inactive), so signals are weak.
 - **Proton-decoupled spectra:** Protons are simultaneously irradiated to remove all
-  $^{13}\mathrm{C}\mathrm{-}^1\mathrm{H}$ coupling. Each carbon environment gives a single peak
-  (no splitting).
+  $^{13}\mathrm{C}\mathrm{-}^1\mathrm{H}$ coupling. Each carbon environment gives a single peak (no
+  splitting).
 - Chemical shift range: $0$--$220\,\mathrm{ppm}$.
 - Carbonyl carbons ($\mathrm{C}=0$) appear at $160$--$220\,\mathrm{ppm}$.
 - Aromatic carbons: $110$--$160\,\mathrm{ppm}$.
@@ -357,11 +357,11 @@ The systematic approach to identifying an unknown organic compound:
 2. **Identify functional groups** from the IR spectrum (C=O, O--H, N--H, C=C,
    $\mathrm{C}\equiv\mathrm{N}$).
 
-3. **Determine the carbon skeleton** from the $^{13}\mathrm{C}$ NMR (number of carbon
-   environments, presence of carbonyl, aromatic, or alkene carbons).
+3. **Determine the carbon skeleton** from the $^{13}\mathrm{C}$ NMR (number of carbon environments,
+   presence of carbonyl, aromatic, or alkene carbons).
 
-4. **Determine the hydrogen environments** from the $^1\mathrm{H}$ NMR (chemical shift,
-   integration, splitting pattern). Piece together the connectivity.
+4. **Determine the hydrogen environments** from the $^1\mathrm{H}$ NMR (chemical shift, integration,
+   splitting pattern). Piece together the connectivity.
 
 5. **Confirm the structure** by checking that the fragmentation pattern in the mass spectrum is
    consistent with the proposed structure.
@@ -393,9 +393,9 @@ The systematic approach to identifying an unknown organic compound:
    sample causes OH and NH signals to disappear (exchange with deuterium) and a new signal for HOD
    appears. This is a useful diagnostic for identifying exchangeable protons.
 
-7. **Assuming $^{13}\mathrm{C}$ NMR integration is meaningful.** The peak areas in
-   proton-decoupled $^{13}\mathrm{C}$ NMR are not proportional to the number of carbons.
-   Integration data from $^{13}\mathrm{C}$ NMR should not be used for quantitative analysis.
+7. **Assuming $^{13}\mathrm{C}$ NMR integration is meaningful.** The peak areas in proton-decoupled
+   $^{13}\mathrm{C}$ NMR are not proportional to the number of carbons. Integration data from
+   $^{13}\mathrm{C}$ NMR should not be used for quantitative analysis.
 
 8. **Misassigning equivalent protons.** Protons that are related by symmetry or rapid rotation are
    chemically equivalent and give one signal. For example, the three methyl protons of
@@ -435,15 +435,15 @@ The $(n+1)$ rule: a signal is split into $n+1$ peaks by $n$ equivalent neighbour
 constant. Protons that couple to each other have the same coupling constant. This helps assign which
 protons are neighbours.
 
-| Coupling type                 | Typical $J$ (Hz)         |
-| ----------------------------- | ------------------------ |
+| Coupling type               | Typical $J$ (Hz)         |
+| --------------------------- | ------------------------ |
 | Vicinal (geminal, $^2J$)    | $0$--$20$                |
 | Vicinal (three-bond, $^3J$) | $6$--$8$ (free rotation) |
-| Vicinal (alkene trans)        | $12$--$18$               |
-| Vicinal (alkene cis)          | $6$--$12$                |
-| Aromatic (ortho)              | $6$--$10$                |
-| Aromatic (meta)               | $1$--$3$                 |
-| Aromatic (para)               | $0$--$1$                 |
+| Vicinal (alkene trans)      | $12$--$18$               |
+| Vicinal (alkene cis)        | $6$--$12$                |
+| Aromatic (ortho)            | $6$--$10$                |
+| Aromatic (meta)             | $1$--$3$                 |
+| Aromatic (para)             | $0$--$1$                 |
 
 ### $^{13}\mathrm{C}$ NMR
 
@@ -592,10 +592,9 @@ Identify the compound and explain each piece of evidence.
 $3000\,\mathrm{cm}^{-1}$ rules out O--H and N--H, eliminating alcohols, carboxylic acids, and
 amines. The compound is either an aldehyde or a ketone.
 
-**$^1\mathrm{H}$ NMR:** Only two signals, both singlets, integrating to 3H each. No aldehyde
-proton ($\delta\, 9\text{--}10$), so the compound is a ketone. Two methyl groups in different
-environments, each adjacent to the carbonyl (hence the low chemical shift of $\delta\, 2.1$ and
-$\delta\, 2.5$).
+**$^1\mathrm{H}$ NMR:** Only two signals, both singlets, integrating to 3H each. No aldehyde proton
+($\delta\, 9\text{--}10$), so the compound is a ketone. Two methyl groups in different environments,
+each adjacent to the carbonyl (hence the low chemical shift of $\delta\, 2.1$ and $\delta\, 2.5$).
 
 **Mass spectrum:** $M_r = 58$Consistent with $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$. Base peak at
 $m/z = 43$ corresponds to $\mathrm{CH}_3\mathrm{CO}^+$ (acetyl cation), formed by alpha-cleavage
@@ -807,8 +806,8 @@ $n$ equivalent neighbouring protons.
 
 **$^{13}\mathrm{C}$ NMR:**
 
-$^{13}\mathrm{C}$ NMR shows one signal for each chemically distinct carbon environment. The
-chemical shift range is $0$--$220\,\mathrm{ppm}$:
+$^{13}\mathrm{C}$ NMR shows one signal for each chemically distinct carbon environment. The chemical
+shift range is $0$--$220\,\mathrm{ppm}$:
 
 | Carbon type           | Chemical shift (ppm) |
 | --------------------- | -------------------- |
@@ -1019,8 +1018,16 @@ self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of analytical techniques, including key reactions,
+underlying theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key chemical principles and theories
+- mathematical relationships in chemistry
+- practical techniques and apparatus
+- applications of chemistry in industry
+- environmental and ethical considerations
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

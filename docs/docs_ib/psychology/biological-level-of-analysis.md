@@ -518,8 +518,12 @@ Research at the biological level of analysis raises several specific ethical con
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing correlation and causation in psychological research evidence.
 
-## Worked Examples
+2. Presenting theories without the supporting empirical evidence that led to their acceptance.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Stating that 'the results show' without considering whether the findings can be generalised
+   beyond the sample.
+
+4. Failing to discuss ethical issues (informed consent, deception, debriefing, right to withdraw)
+   when evaluating studies.

@@ -2312,12 +2312,12 @@ in shortest supply. At any given moment, only one factor limits the rate of phot
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Using anecdotal evidence or small sample sizes as though they constitute robust scientific data.
 
-## Summary
+2. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
+   change in tertiary structure.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing correlation with causation when evaluating experimental data and drawing conclusions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.

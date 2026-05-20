@@ -792,12 +792,13 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-## Summary
+2. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Rounding intermediate answers too early, which compounds errors in multi-step calculations.

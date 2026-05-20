@@ -851,12 +851,13 @@ Operation in a busy A&E department.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-## Summary
+2. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-<!-- TODO: Add a summary for this topic -->
+3. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.

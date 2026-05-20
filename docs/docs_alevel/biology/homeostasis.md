@@ -2265,12 +2265,11 @@ responses (drought, cold, salinity) and seed dormancy.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.
 
-## Summary
+2. Failing to link structure to function when describing biological molecules, cells, or organs.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing correlation with causation when evaluating experimental data and drawing conclusions.

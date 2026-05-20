@@ -425,8 +425,8 @@ Internal nodes has height at most $2 \log_2(n+1)$.
 
 **Proof sketch**: the shortest path from root to leaf has only black nodes (length = bh), and the
 Longest has alternating red-black (length = 2 \cdot bh). Since at least half the nodes on any
-Root-to-leaf path are black, the height $h \le 2 \cdot \mathrm{bh$. A tree with black-height $b$
-has At least $2^b - 1$ internal nodes, so $n \ge 2^{h/2} - 1$Giving $h \le 2 \log_2(n+1)$.
+Root-to-leaf path are black, the height $h \le 2 \cdot \mathrm{bh$. A tree with black-height $b$ has
+At least $2^b - 1$ internal nodes, so $n \ge 2^{h/2} - 1$Giving $h \le 2 \log_2(n+1)$.
 
 ### Node Definition
 
@@ -849,8 +849,8 @@ class SplayTree:
 ### Amortised Analysis
 
 The splay operation has amortised cost $O(\log n)$ using the **potential method**. Define the
-Potential of node $x$ with rank $r(x) = \lfloor \log_2(\mathrm{size(x)) \rfloor$. The amortised
-cost Of a splay is bounded by $1 + 3(r(\mathrm{root) - r(x)) = O(\log n)$.
+Potential of node $x$ with rank $r(x) = \lfloor \log_2(\mathrm{size(x)) \rfloor$. The amortised cost
+Of a splay is bounded by $1 + 3(r(\mathrm{root) - r(x)) = O(\log n)$.
 
 The **access lemma** states that the amortised cost of splaying node $x$ is at most
 $3(\log_2 n - \log_2(\mathrm{size(x))) + 1$Which means frequently accessed nodes move toward the
@@ -1119,8 +1119,16 @@ Iteration.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to binary search trees and
+balanced trees, including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- complex number arithmetic
+- Argand diagrams
+- modulus and argument
+- De Moivre's theorem
+- roots of complex numbers
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

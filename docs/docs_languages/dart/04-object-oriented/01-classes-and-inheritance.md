@@ -381,12 +381,13 @@ Syntactic sugar for static function calls. This means they cannot be used polymo
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Summary
+2. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).

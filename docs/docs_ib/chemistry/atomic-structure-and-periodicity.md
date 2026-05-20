@@ -1475,12 +1475,12 @@ For the A-Level treatment of this topic, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
 
-## Summary
+2. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
 
-<!-- TODO: Add a summary for this topic -->
+3. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.

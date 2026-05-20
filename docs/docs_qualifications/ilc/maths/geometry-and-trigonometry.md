@@ -233,8 +233,8 @@ The circle is $x^2 + y^2 - 4x - 4y = 0$With centre $(2, 2)$ and radius $\sqrt{4+
 
 For a right-angled triangle with angle $\theta$:
 
-| Ratio        | Definition                                        |
-| ------------ | ------------------------------------------------- |
+| Ratio        | Definition                                    |
+| ------------ | --------------------------------------------- |
 | $\sin\theta$ | $\frac{\mathrm{opposite}{\mathrm{hypotenuse}$ |
 | $\cos\theta$ | $\frac{\mathrm{adjacent}{\mathrm{hypotenuse}$ |
 | $\tan\theta$ | $\frac{\mathrm{opposite}{\mathrm{adjacent}$   |
@@ -572,13 +572,12 @@ $$
 \mathbf{a} \times \mathbf{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix}
 $$
 
-$|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$ gives
-the area of the Parallelogram spanned by $\mathbf{a}$ and $\mathbf{b}$.
+$|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$ gives the area of the
+Parallelogram spanned by $\mathbf{a}$ and $\mathbf{b}$.
 
-**Example (HL):** Given
-$\mathbf{a} = 2\mathbf{i} - \mathbf{j} + 3\mathbf{k}$ and
-$\mathbf{b} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$Find
-$\mathbf{a} \times \mathbf{b}$ and the Angle between them.
+**Example (HL):** Given $\mathbf{a} = 2\mathbf{i} - \mathbf{j} + 3\mathbf{k}$ and
+$\mathbf{b} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$Find $\mathbf{a} \times \mathbf{b}$ and the
+Angle between them.
 
 $$
 \mathbf{a} \times \mathbf{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 3 \\ 1 & 2 & -1 \end{vmatrix} = \mathbf{i}(1 - 6) - \mathbf{j}(-2 - 3) + \mathbf{k}(4 + 1) = -5\mathbf{i} + 5\mathbf{j} + 5\mathbf{k}
@@ -592,9 +591,8 @@ $\cos\theta = \frac{-3}{\sqrt{14}\sqrt{6}} = \frac{-3}{2\sqrt{21}}$.
 
 ### Scalar Triple Product (HL)
 
-The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ gives
-the volume of the Parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And
-$\mathbf{c}$.
+The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ gives the volume of the
+Parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
 
 $$
 \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}
@@ -602,8 +600,7 @@ $$
 
 If the scalar triple product is zero, the three vectors are coplanar.
 
-**Example (HL):** Determine whether the vectors
-$\mathbf{a} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$
+**Example (HL):** Determine whether the vectors $\mathbf{a} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$
 $\mathbf{b} = 3\mathbf{i} - \mathbf{j} + 2\mathbf{k}$
 $\mathbf{c} = 2\mathbf{i} + 3\mathbf{j} + \mathbf{k}$ are coplanar.
 
@@ -615,8 +612,7 @@ Since the scalar triple product is $-16 \neq 0$The vectors are not coplanar.
 
 ### Area of a Triangle Using Vectors (HL)
 
-The area of triangle $\triangle ABC$ with position vectors
-$\mathbf{a}$$\mathbf{b}$$\mathbf{c}$:
+The area of triangle $\triangle ABC$ with position vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$:
 
 $$
 \mathrm{Area = \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}|
@@ -725,9 +721,8 @@ Other point, contradicting that it is a tangent. Hence the tangent is perpendicu
 3. Solve $\cos 2\theta = \cos\theta$ for $0 \leq \theta \leq 2\pi$.
 4. Find the area of the triangle with vertices $(1, 2)$$(4, 6)$$(3, -1)$.
 5. Given $\mathbf{a} = 2\mathbf{i} - \mathbf{j} + 3\mathbf{k}$ and
-   $\mathbf{b} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$Find
-   $\mathbf{a} \times \mathbf{b}$ and the angle between $\mathbf{a}$ and
-   $\mathbf{b}$.
+   $\mathbf{b} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$Find $\mathbf{a} \times \mathbf{b}$ and the
+   angle between $\mathbf{a}$ and $\mathbf{b}$.
 6. Express $\cos 3\theta$ in terms of $\cos\theta$.
 7. Prove that $\sin(A+B)\sin(A-B) = \sin^2 A - \sin^2 B$.
 8. Find the equation of the tangent to the circle $x^2 + y^2 - 4x + 6y + 9 = 0$ at the point
@@ -743,13 +738,20 @@ Other point, contradicting that it is a tangent. Hence the tangent is perpendicu
 13. Solve $2\cos^2 x + \sin x = 2$ for $0 \le x \le 2\pi$.
 14. Find the equation of the circle passing through $(1, 0)$$(0, 1)$And $(2, 3)$.
 15. Determine whether the vectors $\mathbf{i} + \mathbf{j} + \mathbf{k}$
-    $2\mathbf{i} - \mathbf{j} + \mathbf{k}$And
-    $3\mathbf{i} + 4\mathbf{k}$ are coplanar.
+    $2\mathbf{i} - \mathbf{j} + \mathbf{k}$And $3\mathbf{i} + 4\mathbf{k}$ are coplanar.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to geometry and trigonometry,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- sine, cosine, and tangent functions
+- trigonometric identities
+- solving trigonometric equations
+- the sine and cosine rules
+- radian measure and arc length
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

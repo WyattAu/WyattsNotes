@@ -261,8 +261,8 @@ $$
 
 Sometimes we can use a substitution. For example, $e^{2x} + 3e^x - 4 = 0$.
 
-Let $u = e^x$ (note $u \gt 0$). Then $u^2 + 3u - 4 = 0$Giving $(u+4)(u-1) = 0$So $u = 1$
-(rejecting $u = -4$). Hence $e^x = 1$Giving $x = 0$.
+Let $u = e^x$ (note $u \gt 0$). Then $u^2 + 3u - 4 = 0$Giving $(u+4)(u-1) = 0$So $u = 1$ (rejecting
+$u = -4$). Hence $e^x = 1$Giving $x = 0$.
 
 :::warning When substituting $u = a^x$ or $u = \ln x$Always check the domain. For $u = a^x$ we Have
 $u \gt 0$; for $u = \ln x$ we have $x \gt 0$. Always reject invalid solutions. :::
@@ -606,12 +606,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.

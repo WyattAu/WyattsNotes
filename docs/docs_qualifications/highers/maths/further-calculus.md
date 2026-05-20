@@ -710,8 +710,16 @@ $$
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to further calculus, including
+key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- differentiation from first principles
+- product, quotient, and chain rules
+- integration techniques (by parts, substitution)
+- differential equations
+- applications to kinematics
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

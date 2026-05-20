@@ -1,0 +1,1645 @@
+---
+title: Money and Banking
+description:
+  'DSE Economics notes on money and banking covering functions of money, banking system, money
+  creation, central bank roles, and monetary policy transmission.'
+date: 2026-04-08T00:00:00.000Z
+tags: [DSE, Economics]
+categories: [DSE, Economics]
+slug: money-and-banking
+---
+
+## Functions of Money
+
+Money is anything that is generally accepted as a medium of exchange. It serves four key functions:
+
+### 1. Medium of Exchange
+
+Money eliminates the need for double coincidence of wants that exists in a barter system. In a
+Barter economy, for trade to occur, both parties must want what the other has. Money serves as an
+Intermediary that is universally accepted, making transactions far more efficient.
+
+Example: Instead of a baker needing to find a shoemaker who wants bread, the baker sells bread for
+Money and uses the money to buy shoes.
+
+### 2. Unit of Account (Measure of Value)
+
+Money provides a common measure of the value of all goods and services. It allows us to compare the
+Value of different goods and to keep financial records.
+
+Example: A laptop costs HKD 8,000 and a meal costs HKD 100. Money allows us to express both values
+In the same unit and compare them (the laptop is worth 80 meals).
+
+### 3. Store of Value
+
+Money allows people to save purchasing power for future use. Instead of consuming goods immediately,
+People can hold money and spend it later.
+
+However, money is not a perfect store of value during inflation, because its purchasing power
+Decreases as prices rise. Other stores of value include gold, property, stocks, and bonds.
+
+### 4. Standard of Deferred Payment
+
+Money allows debts to be contracted and repaid in the future. Borrowing and lending would be
+Extremely difficult in a barter system because the value of goods changes over time.
+
+Example: A bank lends HKD 500,000 to be repaid with interest over 20 years. Both parties agree on
+The value of the debt because it is denominated in money.
+
+---
+
+## Characteristics of Money
+
+For a substance to function effectively as money, it should possess the following characteristics:
+
+| Characteristic     | Description                                                                  | Example                                             |
+| ------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------- |
+| Acceptability      | Generally accepted by all as a medium of exchange                            | Legal tender status, government backing             |
+| Durability         | Does not deteriorate ; can withstand repeated use                            | Coins, banknotes (vs perishable goods like bananas) |
+| Portability        | Easy to carry and transfer; convenient for transactions                      | Banknotes, electronic money                         |
+| Divisibility       | Can be divided into smaller units for transactions of different sizes        | HKD 1, HKD 10, HKD 100, HKD 1000                    |
+| Homogeneity        | Each unit is identical in value to every other unit of the same denomination | Each HKD 100 note is worth the same                 |
+| Scarcity           | Supply is limited relative to demand; maintains value                        | Limited money supply by central bank                |
+| Stability of value | Relatively stable purchasing power over time                                 | Low inflation preserves value                       |
+
+### Types of Money
+
+**Commodity money:** Money whose value comes from the commodity of which it is made (e.g., gold
+Coins, cowrie shells, salt). The money has intrinsic value.
+
+**Fiat money:** Money that has no intrinsic value but is declared legal tender by the government
+(e.g., modern banknotes and coins). Its value comes from government decree and public acceptance.
+
+**Representative money:** Paper money backed by a commodity (e.g., gold certificates that could be
+Exchanged for gold). The US dollar was backed by gold until 1971.
+
+**Electronic money (digital money):** Money stored electronically and transferred through digital
+Systems (e.g., bank transfers, credit cards, mobile payments like Octopus, Alipay, WeChat Pay).
+
+---
+
+## Evolution of Money
+
+The evolution of money reflects the increasing complexity of economies:
+
+1. **Barter:** Direct exchange of goods and services (limited by double coincidence of wants)
+2. **Commodity money:** Gold, silver, cowrie shells used as a medium of exchange
+3. **Metallic money:** Standardised coins made of precious metals
+4. **Paper money:** Originally backed by gold; later became fiat money
+5. **Bank deposits:** Cheques and bank transfers
+6. **Electronic money:** Credit cards, debit cards, digital wallets
+7. **Cryptocurrencies:** Decentralised digital currencies (e.g., Bitcoin) -- not widely accepted as
+   money in most economies
+
+---
+
+## Types of Banks
+
+### Commercial Banks
+
+Commercial banks are profit-making institutions that provide banking services to the public and
+Businesses.
+
+**Functions of commercial banks:**
+
+1. **Accepting deposits:** Current accounts (demand deposits, low/no interest, accessible) and
+   savings accounts (time deposits, higher interest, less accessible)
+2. **Making loans and advances:** Lending to individuals and businesses at interest rates higher
+   than the rates paid on deposits. The difference between the lending rate and deposit rate is the
+   bank's profit margin (net interest margin).
+3. **Facilitating payments:** Cheques, electronic fund transfers, credit/debit card services
+4. **Foreign exchange services:** Buying and selling foreign currencies
+5. **Safe custody:** Providing safe deposit boxes for valuables
+6. **Financial advice:** Investment advice, wealth management
+7. **Credit creation:** Creating new money through the lending process (see below)
+
+### Central Bank
+
+The central bank is the government's bank and the banker's bank. It is responsible for managing the
+Country's money supply, interest rates, and financial stability.
+
+In Hong Kong, the de facto central bank is the **Hong Kong Monetary Authority (HKMA)**.
+
+**Functions of the central bank:**
+
+1. **Banker to the government:** Manages government accounts, handles government debt issuance, and
+   receives government revenue
+2. **Banker to commercial banks:** Holds reserves of commercial banks, acts as lender of last resort
+3. **Issue of currency:** Has the sole authority to issue banknotes (in HK, three commercial banks
+   also issue banknotes under HKMA supervision)
+4. **Monetary policy:** Controls the money supply and interest rates to achieve economic objectives
+   (price stability, full employment, economic growth)
+5. **Exchange rate management:** In HK, the HKMA maintains the Linked Exchange Rate System (USD/HKD
+   at approximately 7.8)
+6. **Financial stability:** Regulates and supervises banks to ensure the stability of the financial
+   system
+7. **Management of foreign reserves:** Holds and manages the country's foreign exchange reserves
+
+### Central Bank vs Commercial Bank
+
+| Feature                | Central Bank                              | Commercial Bank                                        |
+| ---------------------- | ----------------------------------------- | ------------------------------------------------------ |
+| Objective              | Public interest (stability, policy)       | Profit maximisation                                    |
+| Ownership              | Government                                | Private shareholders                                   |
+| Issues currency?       | Yes (or supervises issue)                 | No (except in HK, three banks issue under supervision) |
+| Regulates banks?       | Yes                                       | No                                                     |
+| Accepts deposits?      | Only from government and commercial banks | From the public and businesses                         |
+| Lender of last resort? | Yes                                       | No                                                     |
+| Sets monetary policy?  | Yes                                       | No                                                     |
+
+---
+
+## Money Creation by Commercial Banks
+
+### How Banks Create Money
+
+Commercial banks create money through the process of **credit creation** (also called **deposit
+Creation**). When a bank receives a deposit, it keeps only a fraction as reserves and lends out the
+Rest. The lent money eventually returns to the banking system as a new deposit, and the process
+Repeats.
+
+### The Money Multiplier
+
+The money multiplier (also called the credit multiplier or deposit multiplier) shows the maximum
+Potential expansion of the money supply from an initial deposit.
+
+**Key assumptions:**
+
+1. Banks lend out all excess reserves (no idle reserves)
+2. The public does not hold cash (all money is deposited in banks)
+3. There is only one type of deposit (simplified model)
+
+**Formula:**
+
+$$\mathrm{Money Multiplier} = \frac{1}{\mathrm{Required Reserve Ratio (rrr)}}$$
+
+Or equivalently:
+
+$$\mathrm{Maximum increase in deposits} = \frac{\mathrm{Initial deposit}}{\mathrm{Required reserve ratio}}$$
+
+**Example:**
+
+If the required reserve ratio is 10% (rrr = 0.1):
+
+$$\mathrm{Money multiplier} = \frac{1}{0.1} = 10$$
+
+An initial deposit of HKD 1,000 can potentially create:
+
+$$\mathrm{Maximum deposits} = \frac{1,000}{0.1} = 10,000$$
+
+**Step-by-step process:**
+
+| Round | New Deposit | Reserves (10%) | Loans (90%) |
+| ----- | ----------- | -------------- | ----------- |
+| 1     | 1,000       | 100            | 900         |
+| 2     | 900         | 90             | 810         |
+| 3     | 810         | 81             | 729         |
+| 4     | 729         | 72.9           | 656.1       |
+| ...   | ...         | ...            | ...         |
+| Total | 10,000      | 1,000          | 9,000       |
+
+The total increase in deposits forms a geometric series:
+
+$$\Delta D = 1,000 + 900 + 810 + 729 + \ldots = 1,000 \times \frac{1}{1 - 0.9} = \frac{1,000}{0.1} = 10,000$$
+
+<details>
+<summary>Worked Example: Money Creation Step by Step</summary>
+
+Suppose the required reserve ratio is 20% (rrr = 0.2). A customer deposits HKD 5,000 into Bank A.
+
+**Round 1:** Bank A keeps 1000 (20%) and lends out 4000. **Round 2:** The 4000 is deposited into
+Bank B. Bank B keeps 800 and lends out 3200. **Round 3:** The 3200 is deposited into Bank C. Bank C
+keeps 640 and lends out 2560.
+
+Money multiplier = `1/0.2 = 5`.
+
+Maximum increase in deposits = `5000 \times 5 = 25,000`.
+
+Total new loans = `25,000 - 5,000 = 20,000`.
+
+</details>
+
+### Factors Limiting Credit Creation
+
+The actual money created is less than the theoretical maximum because:
+
+1. **Cash leakages:** The public holds some cash outside the banking system (currency drain ratio)
+2. **Excess reserves:** Banks may choose to hold reserves above the required minimum (for liquidity)
+3. **Willing borrowers:** Banks can only lend if there are creditworthy borrowers who want to borrow
+4. **Willing lenders:** Banks may be cautious about lending (especially during economic downturns)
+
+With a currency drain ratio (c), the money multiplier becomes:
+
+$$m = \frac{1}{rrr + c}$$
+
+Where $c$ is the proportion of deposits held as cash by the public.
+
+**Example:** If rrr = 0.1 and c = 0.2 (the public holds 20% of deposits as cash):
+
+$$m = \frac{1}{0.1 + 0.2} = \frac{1}{0.3} = 3.33$$
+
+The money multiplier falls from 10 to 3.33 due to cash leakages.
+
+---
+
+## Money Supply
+
+### Definition
+
+The money supply is the total amount of money in circulation in an economy at a given time. It
+Includes both cash (currency) and bank deposits.
+
+### Measures of Money Supply
+
+Different measures of the money supply include different components:
+
+**M1 (Narrow Money):**
+
+$$M1 = \mathrm{Currency in circulation} + \mathrm{Demand deposits}$$
+
+- Currency in circulation: banknotes and coins held by the public
+- Demand deposits: current account balances that can be withdrawn on demand
+- M1 is the most liquid measure of money supply
+
+**M2 (Broad Money):**
+
+$$M2 = M1 + \mathrm{Savings deposits} + \mathrm{Time deposits}$$
+
+- Includes M1 plus less liquid deposits (savings accounts, fixed deposits)
+- Savings and time deposits cannot be withdrawn on demand without penalty (less liquid)
+- M2 is a broader measure that better reflects the total purchasing power in the economy
+
+### Liquidity
+
+Liquidity refers to the ease with which an asset can be converted into cash without significant loss
+Of value.
+
+| Asset            | Liquidity  |
+| ---------------- | ---------- |
+| Cash             | Highest    |
+| Current account  | Very high  |
+| Savings account  | High       |
+| Time deposit     | Medium     |
+| Government bonds | Medium     |
+| Stocks/shares    | Medium-low |
+| Real estate      | Low        |
+
+M1 contains the most liquid assets; M2 includes less liquid assets as well.
+
+---
+
+## Monetary Policy
+
+### Definition
+
+Monetary policy refers to the central bank's actions to control the money supply and interest rates
+In order to achieve macroeconomic objectives such as price stability, full employment, and
+Sustainable economic growth.
+
+### Tools of Monetary Policy
+
+#### 1. Discount Rate (Base Rate / Policy Rate)
+
+The discount rate (or base rate) is the interest rate at which the central bank lends to commercial
+Banks.
+
+**Mechanism:**
+
+- If the central bank **raises** the discount rate:
+- Borrowing from the central bank becomes more expensive for commercial banks
+- Commercial banks raise their own lending rates
+- Borrowing becomes more expensive for businesses and consumers
+- Consumption and investment decrease
+- Aggregate demand decreases
+- Inflation is reduced
+
+- If the central bank **lowers** the discount rate:
+- Borrowing becomes cheaper for commercial banks
+- Commercial banks lower their lending rates
+- Borrowing becomes cheaper for businesses and consumers
+- Consumption and investment increase
+- Aggregate demand increases
+- Economic growth is stimulated
+
+#### 2. Reserve Ratio (Required Reserve Ratio)
+
+The reserve ratio is the fraction of customer deposits that commercial banks are required to hold as
+Reserves (not lend out).
+
+**Mechanism:**
+
+- If the central bank **raises** the reserve ratio:
+- Banks must hold more reserves and can lend less
+- The money multiplier decreases
+- The money supply contracts
+- Interest rates tend to rise
+- Aggregate demand decreases
+
+- If the central bank **lowers** the reserve ratio:
+- Banks can lend out a larger proportion of deposits
+- The money multiplier increases
+- The money supply expands
+- Interest rates tend to fall
+- Aggregate demand increases
+
+**Example:** If the reserve ratio is raised from 10% to 20%:
+
+$$m_{\mathrm{old}} = \frac{1}{0.1} = 10$$
+
+$$m_{\mathrm{new}} = \frac{1}{0.2} = 5$$
+
+The money multiplier falls from 10 to 5, significantly reducing the potential for credit creation.
+
+<details>
+<summary>Worked Example: Reserve Ratio Change and Money Supply</summary>
+
+The central bank raises the reserve ratio from 10% to 25%. Total deposits in the banking system are
+HKD 500 billion, with banks holding exactly the required reserves.
+
+Old multiplier = `1/0.1 = 10`. New multiplier = `1/0.25 = 4`.
+
+Old required reserves = `500 \times 0.1 = 50` billion. New required reserves =
+`500 \times 0.25 = 125` billion.
+
+The banking system now has a reserve shortfall of `125 - 50 = 75` billion. Banks must reduce lending
+By `75 \times 4 = 300` billion (using the new multiplier). The money supply contracts by up to HKD
+300 billion.
+
+</details>
+
+#### 3. Open Market Operations (OMO)
+
+Open market operations involve the central bank buying or selling government securities (bonds) on
+The open market.
+
+**Buying government securities (expansionary):**
+
+- The central bank buys bonds from commercial banks or the public
+- The central bank pays for the bonds by crediting bank reserves
+- Bank reserves increase
+- Banks can lend more
+- The money supply expands
+- Interest rates fall
+- Aggregate demand increases
+
+**Selling government securities (contractionary):**
+
+- The central bank sells bonds to commercial banks or the public
+- Buyers pay by transferring money from their bank accounts to the central bank
+- Bank reserves decrease
+- Banks can lend less
+- The money supply contracts
+- Interest rates rise
+- Aggregate demand decreases
+
+### Expansionary vs Contractionary Monetary Policy
+
+|                | Expansionary Monetary Policy | Contractionary Monetary Policy      |
+| -------------- | ---------------------------- | ----------------------------------- |
+| Objective      | Stimulate the economy        | Reduce inflation                    |
+| Discount rate  | Lower                        | Raise                               |
+| Reserve ratio  | Lower                        | Raise                               |
+| OMO            | Buy government bonds         | Sell government bonds               |
+| Money supply   | Increase                     | Decrease                            |
+| Interest rates | Fall                         | Rise                                |
+| Effect on AD   | Increases                    | Decreases                           |
+| When used      | Recession, high unemployment | High inflation, overheating economy |
+
+---
+
+## The Hong Kong Monetary Authority (HKMA)
+
+### Linked Exchange Rate System (LERS)
+
+Hong Kong operates a Linked Exchange Rate System, pegging the Hong Kong dollar (HKD) to the US
+Dollar (USD) at a rate of approximately **7.8 HKD = 1 USD** (more precisely, the HKD trades within a
+Convertibility zone of 7.75 to 7.85).
+
+### How the LERS Works
+
+The HKMA maintains the peg through:
+
+1. **Currency Board mechanism:** Every HKD 7.8 in circulation must be fully backed by USD reserves.
+   The Monetary Base (notes and coins in circulation + banks' balances at the HKMA) is 100% backed
+   by foreign reserves.
+
+2. **Strong-side convertibility undertaking:** If the HKD strengthens to 7.75, the HKMA is obligated
+   to buy USD from licensed banks at 7.75, supplying HKD to the market and weakening the HKD.
+
+3. **Weak-side convertibility undertaking:** If the HKD weakens to 7.85, the HKMA is obligated to
+   sell USD to licensed banks at 7.85, absorbing HKD from the market and strengthening the HKD.
+
+### Implications of the LERS
+
+- Hong Kong has **no independent monetary policy** -- it must follow the monetary policy of the US
+  Federal Reserve (when the Fed raises rates, HK rates must also rise to maintain the peg)
+- The LERS provides **exchange rate stability**, which is important for Hong Kong as an
+  international financial centre and trading hub
+- Loss of the ability to use monetary policy for domestic objectives (e.g., cannot lower interest
+  rates independently during a local recession if the US is raising rates)
+
+### Functions of the HKMA
+
+1. Maintaining monetary and banking stability
+2. Maintaining the Linked Exchange Rate System
+3. Managing the Exchange Fund (Hong Kong's official reserves)
+4. Promoting the safety and soundness of the banking system
+5. Developing Hong Kong as an international financial centre
+6. Issuing coins (banknotes are issued by three commercial banks under HKMA supervision)
+
+---
+
+## Interest Rates
+
+### What Are Interest Rates?
+
+Interest is the price of borrowing money. The interest rate is the percentage of the principal (the
+Borrowed amount) that must be paid as interest per period ( per year).
+
+### Types of Interest Rates
+
+**Nominal interest rate:** The stated interest rate without adjustment for inflation.
+
+**Real interest rate:** The nominal interest rate adjusted for inflation.
+
+$$\mathrm{Real interest rate} \approx \mathrm{Nominal interest rate} - \mathrm{Inflation rate}$$
+
+More precisely (Fisher equation):
+
+$$(1 + r) = \frac{(1 + i)}{(1 + \pi)}$$
+
+Where $r$ = real interest rate, $i$ = nominal interest rate, $\pi$ = inflation rate.
+
+For small values of inflation:
+
+$$r \approx i - \pi$$
+
+**Example:** If the nominal interest rate is 5% and inflation is 2%:
+
+Real interest rate $\approx 5\% - 2\% = 3\%$
+
+### Determinants of Interest Rates
+
+1. **Central bank policy rate:** The base rate set by the central bank influences all other interest
+   rates in the economy
+2. **Demand for and supply of loanable funds:** Higher demand for borrowing pushes interest rates
+   up; higher supply of savings pushes rates down
+3. **Inflation expectations:** If lenders expect higher inflation, they demand higher nominal rates
+   to compensate
+4. **Risk premium:** Riskier borrowers pay higher interest rates to compensate for default risk
+5. **Duration:** Longer-term loans carry higher interest rates (term premium)
+
+### Effects of Interest Rate Changes
+
+| Interest Rate Change | Effect on Borrowers                                       | Effect on Savers                       | Effect on Exchange Rate                |
+| -------------------- | --------------------------------------------------------- | -------------------------------------- | -------------------------------------- |
+| Increase             | Borrowing more expensive; less consumption and investment | Higher returns on savings; more saving | Capital inflows; currency appreciates  |
+| Decrease             | Borrowing cheaper; more consumption and investment        | Lower returns; less saving             | Capital outflows; currency depreciates |
+
+---
+
+## Inflation Targeting
+
+### What Is Inflation Targeting?
+
+Inflation targeting is a monetary policy framework where the central bank announces a specific
+Inflation rate as its primary objective and adjusts monetary policy to achieve that target.
+
+Most major central banks target an inflation rate of approximately **2%** per year.
+
+### Why Target 2%?
+
+- Low and stable inflation promotes economic certainty and planning
+- 2% is high enough to avoid the risks of deflation (falling prices can lead to recession)
+- 2% is low enough to prevent the erosion of purchasing power
+
+### How Central Banks Target Inflation
+
+1. **Monitor inflation:** Track inflation indicators (CPI, core CPI)
+2. **Forecast inflation:** Use economic models to predict future inflation
+3. **Adjust policy:** If inflation is above target, use contractionary monetary policy. If below
+   target, use expansionary monetary policy.
+4. **Communicate:** communicate the target and policy decisions to manage expectations
+
+### Transmission Mechanism of Monetary Policy
+
+The process by which monetary policy affects the economy:
+
+1. Central bank changes the policy interest rate
+2. This affects market interest rates (lending rates, mortgage rates, bond yields)
+3. Changes in interest rates affect:
+
+- **Consumption:** Higher rates discourage borrowing for consumption (cars, houses)
+- **Investment:** Higher rates increase the cost of borrowing for firms; reduce expected returns on
+  investment projects
+- **Exchange rate:** Higher rates attract foreign capital, causing currency appreciation (exports
+  become more expensive, imports cheaper)
+- **Asset prices:** Higher rates reduce asset prices (bonds, stocks, property)
+- **Expectations:** Policy signals affect consumer and business confidence
+
+4. These changes affect aggregate demand (AD)
+5. Changes in AD affect output, employment, and ultimately inflation
+
+---
+
+## The Banking System and Financial Intermediation
+
+### Financial Intermediation
+
+Banks act as financial intermediaries -- they channel funds from savers (those with surplus funds)
+To borrowers (those who need funds).
+
+**Benefits of financial intermediation:**
+
+1. **Maturity transformation:** Banks borrow at short maturities (deposits can be withdrawn on
+   demand) and lend at long maturities (mortgages of 20-30 years). This allows savers to access
+   their funds while borrowers receive long-term financing.
+2. **Risk transformation:** Banks spread risk across many borrowers, reducing the risk to individual
+   savers.
+3. **Size transformation:** Banks pool many small deposits to make large loans that individual
+   savers could not provide.
+4. **Convenience:** Banks provide a convenient way to save and borrow.
+
+### The Balance Sheet of a Bank
+
+| Assets (Uses of Funds)                     | Liabilities (Sources of Funds)     |
+| ------------------------------------------ | ---------------------------------- |
+| Reserves (cash + deposits at central bank) | Demand deposits (current accounts) |
+| Loans and advances                         | Savings deposits                   |
+| Government securities                      | Time deposits                      |
+| Other securities                           | Borrowing from central bank        |
+| Physical assets (buildings, equipment)     | Shareholders' equity               |
+
+### Bank Runs and Deposit Insurance
+
+A **bank run** occurs when many depositors simultaneously attempt to withdraw their deposits,
+because they fear the bank may become insolvent. Since banks lend out most of their deposits
+(fractional reserve banking), they cannot pay all depositors at once.
+
+**Deposit insurance** protects depositors by guaranteeing that deposits up to a certain amount will
+Be repaid even if the bank fails. This reduces the incentive for bank runs.
+
+In Hong Kong, the Deposit Protection Scheme (DPS) covers deposits up to HKD 500,000 per depositor
+Per bank.
+
+---
+
+## Common Pitfalls
+
+1. **Confusing the money multiplier formula direction:** The money multiplier is the RECIPROCAL of
+   the reserve ratio. A higher reserve ratio means a LOWER money multiplier, not a higher one.
+
+   $$m = \frac{1}{rrr}$$
+
+If rrr = 0.2, then $m = 5$Not 0.2.
+
+2. **Stating that banks create money by printing notes:** Banks create money through LENDING, not by
+   printing currency. When a bank makes a loan, it creates a new deposit in the borrower's account.
+   This new deposit is new money.
+
+3. **Confusing M1 and M2:** M1 is narrow money (cash + demand deposits only). M2 is broad money
+   (M1 + savings + time deposits). M2 is always larger than M1.
+
+4. **Forgetting the assumptions of the money multiplier:** The theoretical maximum money multiplier
+   assumes no cash leakages, no excess reserves, and willing borrowers. In practice, the actual
+   money created is less than the theoretical maximum.
+
+5. **Confusing expansionary and contractionary open market operations:** When the central bank BUYS
+   bonds, it is expansionary (increases money supply). When it SELLS bonds, it is contractionary
+   (decreases money supply). Think: buying puts money INTO the banking system; selling takes money
+   OUT.
+
+6. **Stating that Hong Kong has an independent monetary policy:** Under the Linked Exchange Rate
+   System, Hong Kong's monetary policy is tied to that of the United States. The HKMA cannot
+   independently set interest rates.
+
+7. **Confusing real and nominal interest rates:** The nominal rate is what is stated; the real rate
+   adjusts for inflation. A 10% nominal rate with 8% inflation gives only a 2% real rate. Always use
+   real rates for economic decision-making.
+
+8. **Thinking the reserve ratio is the same as the cash ratio:** The reserve ratio is set by the
+   central bank (required reserves). The cash ratio (currency ratio) is the proportion of deposits
+   the public holds as cash rather than in bank accounts. Both affect the money multiplier, but they
+   are different concepts.
+
+---
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Money Multiplier</summary>
+
+Assume the required reserve ratio is 12.5%. A customer deposits HKD 8,000 into Bank A.
+
+(a) Calculate the maximum possible increase in the total money supply. (b) Calculate the maximum
+Total amount of new loans created in the entire banking system. (c) If the public holds 10% of any
+Increase in deposits as cash (currency drain ratio = 0.1), calculate the revised money multiplier
+And the new maximum increase in the money supply.
+
+(a) Money multiplier = $1 / 0.125 = 8$
+
+Maximum increase in money supply = $8,000 \times 8 = 64,000$
+
+(b) Maximum new loans = Maximum deposits - Initial deposit - Total reserves
+
+Total new deposits = 64,000 Initial deposit = 8,000 Total reserves = 8,000 (the initial deposit is
+Fully retained as reserves across the system)
+
+Maximum new loans = 64,000 - 8,000 = 56,000
+
+Alternatively: New loans = Initial deposit $\times$ (multiplier - 1) =
+$8,000 \times (8 - 1) = 56,000$
+
+(c) Revised money multiplier = $1 / (0.125 + 0.1) = 1 / 0.225 = 4.44$
+
+Maximum increase in money supply = $8,000 \times 4.44 = 35,556$
+
+The currency drain reduces the money multiplier from 8 to 4.44, and the maximum increase in money
+Supply falls from HKD 64,000 to approximately HKD 35,556.
+
+</details>
+
+<details>
+<summary>Question 2: Open Market Operations</summary>
+
+The central bank sells HKD 500 million worth of government bonds to commercial banks. Assume the
+Required reserve ratio is 10% and there are no cash leakages.
+
+(a) Calculate the change in bank reserves. (b) Calculate the maximum change in the money supply. (c)
+Is this an expansionary or contractionary policy? Explain.
+
+(a) When the central bank sells bonds to commercial banks, the banks pay by transferring reserves to
+The central bank.
+
+Change in bank reserves = -HKD 500 million (reserves decrease by HKD 500 million).
+
+(b) Money multiplier = $1 / 0.1 = 10$
+
+Maximum change in money supply = $-500 \times 10 = -5,000$ million
+
+The money supply contracts by a maximum of HKD 5,000 million (HKD 5 billion).
+
+(c) This is a contractionary monetary policy. By selling bonds, the central bank removes reserves
+From the banking system, reducing the ability of banks to create credit. The money supply contracts,
+Interest rates rise, and aggregate demand decreases. This policy would be used to combat inflation.
+
+</details>
+
+<details>
+<summary>Question 3: Reserve Ratio Change</summary>
+
+The central bank lowers the required reserve ratio from 20% to 10%. Currently, total deposits in the
+Banking system are HKD 100 billion and banks hold exactly the required reserves (no excess
+Reserves). Assume no cash leakages.
+
+(a) Calculate the money multiplier before and after the change. (b) Calculate the change in the
+Maximum possible money supply. (c) Explain why the central bank might make this change.
+
+(a)
+
+Before: $m = 1 / 0.2 = 5$
+
+After: $m = 1 / 0.1 = 10$
+
+(b) The current deposits of HKD 100 billion are based on some initial deposit. However, the question
+Asks about the change in the maximum possible money supply given the current level of deposits.
+
+Before the change, required reserves = $100 \times 0.2 = 20$ billion. Excess reserves = 0.
+
+After the change, required reserves = $100 \times 0.1 = 10$ billion. The previously required
+Reserves of 20 billion now include 10 billion of excess reserves (since only 10 billion is now
+Required).
+
+The 10 billion of excess reserves can now be lent out: Additional lending potential =
+$10 \times 10 = 100$ billion.
+
+So the maximum money supply increases by HKD 100 billion.
+
+(c) The central bank would lower the reserve ratio to implement expansionary monetary policy. This
+Would be appropriate during a recession or when economic growth is sluggish. By allowing banks to
+Lend more from their existing reserves, the money supply expands, interest rates fall, and aggregate
+Demand increases, stimulating economic activity and employment.
+
+</details>
+
+<details>
+<summary>Question 4: Interest Rate Calculation</summary>
+
+A bank offers a nominal interest rate of 6% per annum on a 1-year fixed deposit. If the inflation
+Rate during the year is 4%:
+
+(a) Calculate the real interest rate (approximate and exact). (b) If the inflation rate rises to 8%
+While the nominal rate stays at 6%, what happens to the real rate? Who benefits and who loses?
+
+(a) Approximate real interest rate: $r \approx i - \pi = 6\% - 4\% = 2\%$
+
+Exact real interest rate (Fisher equation):
+
+$$(1 + r) = \frac{(1 + 0.06)}{(1 + 0.04)} = \frac{1.06}{1.04} = 1.01923$$
+
+$$r = 1.01923 - 1 = 0.01923 = 1.923\%$$
+
+(b) With inflation at 8%:
+
+Approximate real rate = $6\% - 8\% = -2\%$
+
+The real interest rate becomes negative (-2%). This means savers are losing purchasing power despite
+Earning 6% nominal interest.
+
+**Borrowers benefit:** They are repaying loans in money that is worth less than when they borrowed
+It (the real value of their debt decreases).
+
+**Savers lose:** The interest they earn does not compensate for the erosion of purchasing power due
+To inflation. Their real return is negative.
+
+</details>
+
+<details>
+<summary>Question 5: Hong Kong's Linked Exchange Rate</summary>
+
+Explain how the HKMA maintains the Linked Exchange Rate System when there is downward pressure on
+The HKD (i.e., the HKD is weakening towards 7.85).
+
+When there is selling pressure on the HKD (more people selling HKD and buying USD), the exchange
+Rate tends to weaken (move from 7.80 towards 7.85).
+
+At the weak-side convertibility rate of 7.85:
+
+1. Licensed banks that have excess USD can sell USD to the HKMA at 7.85 HKD/USD.
+2. The HKMA buys USD and pays HKD to the banks.
+3. This removes HKD from circulation (the HKD paid to the HKMA is withdrawn from the banking
+   system).
+4. The reduction in the HKD money supply reduces liquidity in the banking system.
+5. Interbank interest rates (HIBOR) rise due to the reduced supply of HKD.
+6. Higher HKD interest rates attract capital inflows (investors seek higher returns).
+7. The increased demand for HKD pushes the exchange rate back towards 7.80.
+8. The convertibility undertaking is triggered at 7.85, so the HKD will not weaken beyond this
+   level.
+
+Additionally, the HKMA can use other tools:
+
+- Adjusting the Base Rate to influence HIBOR
+- Conducting open market operations to manage liquidity
+
+**Limitation:** Because the HKD is pegged to the USD, Hong Kong must import US monetary policy. When
+The US Federal Reserve raises interest rates, the HKMA must also tighten monetary policy, even if
+Hong Kong's economy is in a downturn.
+
+</details>
+
+<details>
+<summary>Question 6: Functions of Money Applied</summary>
+
+For each of the four functions of money, explain whether Bitcoin performs that function well or
+Poorly, with reasons.
+
+**Medium of exchange:** Bitcoin performs POORLY as a medium of exchange. It is not widely accepted
+By shops and businesses for everyday transactions. Only a limited number of merchants accept
+Bitcoin. Transaction processing times can be slow and fees can be high relative to traditional
+Payment methods.
+
+**Unit of account:** Bitcoin performs POORLY as a unit of account. Its price is highly volatile --
+It can change significantly within hours or days. Most goods and services are not priced in Bitcoin.
+A merchant cannot reliably set prices or keep accounts in Bitcoin because its value fluctuates too
+Much.
+
+**Store of value:** Bitcoin performs POORLY as a reliable store of value due to its extreme price
+Volatility. An asset whose value can halve or double within months is not a good store of value.
+While some investors hold Bitcoin as a speculative asset, its volatility makes it unreliable for
+Storing purchasing power over time. However, proponents argue its fixed supply (21 million cap)
+Could make it a long-term store of value.
+
+**Standard of deferred payment:** Bitcoin performs POORLY as a standard of deferred payment. Because
+Its value is highly volatile, neither borrowers nor lenders would want to denominate long-term
+Contracts in Bitcoin. A loan denominated in Bitcoin could become far more or far less expensive in
+Real terms due to price fluctuations, creating unacceptable risk for both parties.
+
+</details>
+
+<details>
+<summary>Question 7: Bank Balance Sheet</summary>
+
+Bank A has the following balance sheet (in millions of HKD):
+
+Assets:
+
+- Reserves: 200
+- Loans: 600
+- Securities: 200
+
+Liabilities:
+
+- Deposits: 1,000
+
+The required reserve ratio is 15%.
+
+(a) Does Bank A have excess reserves? If so, how much? (b) What is the maximum amount Bank A can
+Lend out? (c) If Bank A lends out its maximum, calculate the maximum total increase in the money
+Supply for the entire banking system.
+
+(a) Required reserves = $1,000 \times 0.15 = 150$ million
+
+Actual reserves = 200 million
+
+Excess reserves = $200 - 150 = 50$ million
+
+Yes, Bank A has 50 million in excess reserves.
+
+(b) Bank A can lend out its excess reserves of 50 million.
+
+(c) When Bank A lends out 50 million, this creates a new deposit of 50 million in another bank. That
+Bank must keep 15% in reserves and can lend out 85%. This process continues.
+
+Maximum increase in money supply = $50 \times \frac{1}{0.15} = 50 \times 6.67 = 333.33$ million
+
+So the maximum total increase in the money supply is approximately HKD 333.33 million.
+
+Note: The initial 50 million is already part of the money supply (it was created as a new deposit
+When the loan was made). The total increase in deposits throughout the banking system is 333.33
+Million, of which 50 million is the initial new loan/deposit and 283.33 million is the subsequent
+Credit creation.
+
+</details>
+
+<details>
+<summary>Question 8: Nominal vs Real Interest Rates</summary>
+
+A saver deposits HKD 100,000 in a 1-year fixed deposit at a nominal interest rate of 3% per annum.
+During the year, the inflation rate is 5%.
+
+(a) Calculate the nominal amount the saver receives at maturity. (b) Calculate the real interest
+Rate. (c) Has the saver gained or lost purchasing power? By how much?
+
+(a) Nominal amount at maturity = $100,000 \times (1 + 0.03) = 103,000$
+
+The saver receives HKD 103,000.
+
+(b) Real interest rate $\approx 3\% - 5\% = -2\%$
+
+Using the exact Fisher equation:
+
+$$(1 + r) = \frac{1.03}{1.05} = 0.98095$$
+
+$$r = -0.01905 = -1.905\%$$
+
+(c) The saver has LOST purchasing power. Although the nominal amount increased by HKD 3,000, the
+Purchasing power of HKD 103,000 after inflation is:
+
+$$\mathrm{Real value} = \frac{103,000}{1.05} = 98,095.24$$
+
+The saver's real purchasing power has fallen from HKD 100,000 to approximately HKD 98,095 -- a loss
+Of about HKD 1,905. The negative real interest rate means inflation has eroded the value of the
+Savings.
+
+</details>
+
+<details>
+<summary>Question 9: Credit Creation with Cash Leakages</summary>
+
+Bank B receives a new deposit of HKD 10,000. The required reserve ratio is 10%. The public holds
+Cash equal to 15% of any increase in deposits.
+
+(a) Calculate the effective money multiplier. (b) Calculate the maximum increase in the total money
+Supply. (c) Explain why the actual increase would likely be less than this maximum.
+
+(a) With cash leakages, the effective money multiplier is:
+
+$$m = \frac{1}{rrr + c} = \frac{1}{0.10 + 0.15} = \frac{1}{0.25} = 4$$
+
+(b) Maximum increase in money supply = $10,000 \times 4 = 40,000$
+
+(c) The actual increase would likely be less than HKD 40,000 because:
+
+- Banks may hold excess reserves above the required minimum (not lending out all excess reserves)
+- Not all borrowers may immediately deposit their loans into bank accounts (some may hold cash)
+- There may not be enough creditworthy borrowers who want to borrow
+- Banks may be unwilling to lend due to economic uncertainty or risk aversion
+
+</details>
+
+<details>
+<summary>Question 10: Monetary Policy Transmission</summary>
+
+The central bank decides to raise the base rate by 0.5 percentage points. Trace the transmission
+Mechanism and explain the likely effects on the economy, assuming the economy is currently operating
+Above full employment with rising inflation.
+
+1. **Interest rate channel:** Commercial banks raise their lending rates (mortgage rates, business
+   loan rates) in response to the higher base rate.
+
+2. **Borrowing and spending:** Higher lending rates make borrowing more expensive for households and
+   firms. Mortgage payments increase, reducing disposable income for homeowners. Firms face higher
+   costs of financing investment projects.
+
+3. **Consumption:** Households reduce consumption spending, particularly on big-ticket items
+   purchased with credit (houses, cars, durable goods). Saving becomes more attractive due to higher
+   deposit rates.
+
+4. **Investment:** Firms reduce investment spending because the cost of borrowing has increased and
+   the expected return on investment projects may not justify the higher interest costs. Some
+   marginal projects are cancelled.
+
+5. **Exchange rate:** Higher domestic interest rates attract foreign capital inflows (investors seek
+   higher returns). Increased demand for the domestic currency causes it to appreciate.
+
+6. **Net exports:** Currency appreciation makes exports more expensive for foreign buyers and
+   imports cheaper for domestic consumers. Export volumes fall and import volumes rise, reducing net
+   exports.
+
+7. **Asset prices:** Higher interest rates reduce the present value of future cash flows, leading to
+   lower asset prices (bond prices fall, stock prices may decline, property prices face downward
+   pressure).
+
+8. **Aggregate demand:** Consumption, investment, and net exports all decrease, shifting the
+   aggregate demand curve to the left.
+
+9. **Output and employment:** Real GDP growth slows and unemployment may rise slightly as firms
+   reduce production in response to lower demand.
+
+10. **Inflation:** Reduced aggregate demand eases upward pressure on prices. Inflation gradually
+    falls back towards the target level.
+
+Since the economy was operating above full employment with rising inflation, this contractionary
+Monetary policy is appropriate. It cools down an overheating economy and brings inflation under
+Control.
+
+</details>
+
+---
+
+## Problem Set
+
+### Problem 1: Money Multiplier with Cash Leakages
+
+The required reserve ratio is 8%. An initial deposit of HKD 20,000 is made. The public holds cash
+equal To 25% of deposits.
+
+(a) Calculate the effective money multiplier. (b) Calculate the maximum increase in the money
+supply. (c) Explain why this is less than the simple multiplier would suggest.
+
+<details>
+<summary>Solution</summary>
+
+(a) With cash leakages: `m = 1/(rrr + c) = 1/(0.08 + 0.25) = 1/0.33 = 3.03`.
+
+(b) Maximum increase = `20,000 \times 3.03 = 60,606`.
+
+(c) The simple multiplier (no leakages) = `1/0.08 = 12.5`Giving `250,000`. Cash leakages drain Money
+from the banking system at each round, reducing the base for further lending.
+
+</details>
+
+If you get this wrong, revise: [The Money Multiplier](#the-money-multiplier)
+
+### Problem 2: Open Market Operations Calculation
+
+The central bank buys HKD 300 million worth of government bonds from commercial banks. The required
+Reserve ratio is 5%.
+
+(a) What happens to bank reserves? (b) Calculate the maximum change in the money supply. (c) Is this
+Expansionary or contractionary?
+
+<details>
+<summary>Solution</summary>
+
+(a) Reserves increase by HKD 300 million (the central bank pays by crediting bank reserves).
+
+(b) Money multiplier = `1/0.05 = 20`. Maximum increase = `300 \times 20 = 6,000` million (HKD 6
+Billion).
+
+(c) **Expansionary** -- buying bonds injects reserves, expanding the money supply and lowering
+interest Rates.
+
+</details>
+
+If you get this wrong, revise: [Open Market Operations (OMO)](#open-market-operations-omo)
+
+### Problem 3: Real vs Nominal Interest Rates
+
+A bank offers 4% nominal interest on 1-year deposits. Inflation turns out to be 6%.
+
+(a) Calculate the real interest rate (approximate and exact). (b) Who benefits from this situation
+-- Borrowers or savers? (c) If a borrower takes a 1-year loan at 4% nominal, what is the real cost
+of the Loan?
+
+<details>
+<summary>Solution</summary>
+
+(a) Approximate: `r = 4\% - 6\% = -2\%`.
+
+Exact: `(1 + r) = 1.04/1.06 = 0.9811`So `r = -1.89\%`.
+
+(b) **Borrowers benefit.** They repay loans in money that is worth less than when they borrowed. The
+Real value of their debt falls.
+
+(c) The real cost of the loan is `-1.89\%`. The borrower effectively pays back less in real terms
+than They received. This is a transfer of purchasing power from savers to borrowers.
+
+</details>
+
+If you get this wrong, revise: [Interest Rates](#interest-rates)
+
+### Problem 4: Bank Balance Sheet and Lending
+
+Bank X has the following (HKD millions): Reserves = 150, Loans = 600, Securities = 250. Deposits
+= 900. The required reserve ratio is 12%.
+
+(a) Does the bank have excess reserves? (b) What is the maximum new loan the bank can make? (c) If
+the Bank makes this loan and it is deposited in Bank Y (which had no excess reserves), what is the
+maximum Total increase in the money supply for the whole system?
+
+<details>
+<summary>Solution</summary>
+
+(a) Required reserves = `900 \times 0.12 = 108`. Actual reserves = 150. Excess reserves =
+`150 - 108 = 42`.
+
+(b) Maximum new loan = 42 million.
+
+(c) The 42 million becomes a new deposit in Bank Y. Bank Y must keep `42 \times 0.12 = 5.04` and can
+Lend `36.96`. This process continues with multiplier `1/0.12 = 8.33`.
+
+Maximum total increase = `42 \times 8.33 = 350` million.
+
+</details>
+
+If you get this wrong, revise:
+[Money Creation by Commercial Banks](#money-creation-by-commercial-banks)
+
+### Problem 5: HKMA and the Linked Exchange Rate
+
+Explain what the HKMA would do if there is upward pressure on the HKD (the exchange rate moves
+towards 7.75). Trace the mechanism step by step.
+
+<details>
+<summary>Solution</summary>
+
+At the strong-side convertibility undertaking (7.75):
+
+1. Licensed banks sell USD to the HKMA at 7.75 HKD/USD
+2. The HKMA sells USD and receives HKD from the banks
+3. This **increases** the HKD money supply (HKD flows into the banking system)
+4. Increased HKD liquidity pushes interbank rates (HIBOR) **down**
+5. Lower HKD rates reduce the attractiveness of HKD assets to foreign investors
+6. Capital outflows reduce demand for HKD, easing the upward pressure
+7. The exchange rate moves back towards 7.80
+
+</details>
+
+If you get this wrong, revise:
+[The Hong Kong Monetary Authority (HKMA)](#the-hong-kong-monetary-authority-hkma)
+
+### Problem 6: Functions of Money — Bitcoin Evaluation
+
+Evaluate Bitcoin against each of the four functions of money. Is Bitcoin likely to replace
+Conventional money in the foreseeable future?
+
+<details>
+<summary>Solution</summary>
+
+**Medium of exchange:** Poor. Not widely accepted by merchants. Transaction processing can be slow
+And expensive.
+
+**Unit of account:** Poor. Extreme price volatility makes it impossible to set reliable prices or
+Maintain accounts in Bitcoin.
+
+**Store of value:** Poor. Price can halve or double within months. Not reliable for storing
+purchasing Power.
+
+**Standard of deferred payment:** Poor. No lender or borrower would denominate long-term contracts
+in A currency whose value is so unpredictable.
+
+**Conclusion:** Bitcoin does not perform the functions of money well. It functions more as a
+speculative Asset or store of value hedge than as money. It is unlikely to replace conventional
+money unless its Volatility decreases dramatically and acceptance increases significantly.
+
+</details>
+
+If you get this wrong, revise: [Functions of Money](#functions-of-money)
+
+### Problem 7: M1 vs M2
+
+An economy has the following (HKD billions): Currency in circulation = 400, Demand deposits = 800,
+Savings deposits = 1200, Time deposits = 600.
+
+(a) Calculate M1. (b) Calculate M2. (c) If people move HKD 200 billion from savings deposits to
+demand Deposits, what happens to M1 and M2?
+
+<details>
+<summary>Solution</summary>
+
+(a) M1 = Currency + Demand deposits = `400 + 800 = 1,200` billion.
+
+(b) M2 = M1 + Savings deposits + Time deposits = `1,200 + 1,200 + 600 = 3,000` billion.
+
+(c) Moving 200 from savings to demand deposits: M1 increases by 200 (to 1,400). M2 is unchanged
+(still 3,000) because both savings and demand deposits are components of M2.
+
+</details>
+
+If you get this wrong, revise: [Measures of Money Supply](#measures-of-money-supply)
+
+### Problem 8: Transmission Mechanism
+
+The central bank raises the base rate by 0.75 percentage points. The economy is experiencing rising
+Inflation. Explain the expected effects on consumption, investment, net exports, and inflation.
+
+<details>
+<summary>Solution</summary>
+
+**Consumption:** Higher lending rates make mortgages, car loans, and credit card borrowing more
+Expensive. Disposable income falls for variable-rate borrowers. Consumption decreases, especially
+for Big-ticket durables.
+
+**Investment:** Higher borrowing costs reduce the expected return on investment projects. Some
+marginal Projects become unprofitable and are cancelled. Business investment decreases.
+
+**Net exports:** Higher rates attract foreign capital, appreciating the currency. Exports become
+more Expensive for foreign buyers; imports become cheaper. Net exports decrease.
+
+**Inflation:** Reduced consumption, investment, and net exports all decrease aggregate demand. With
+Less demand-pull pressure, inflation gradually falls toward the target.
+
+</details>
+
+If you get this wrong, revise:
+[Transmission Mechanism of Monetary Policy](#transmission-mechanism-of-monetary-policy)
+
+---
+
+## Extended Problem Set: Advanced Money and Banking
+
+### Problem 9: Banking Crisis and Contagion
+
+Bank A has deposits of HK$500 billion, reserves of HK$40 billion, and loans of HK$460 billion. The
+required reserve ratio is 8%. Bank B has deposits of HK$300 billion, reserves of HK$30 billion, and
+loans of HK$270 billion. Bank A and Bank B are major counterparties in the interbank market.
+
+(a) Calculate each bank's actual reserve ratio, required reserves, and excess reserves. (b) A rumour
+causes depositors to withdraw HK$50 billion from Bank A. Calculate Bank A's new reserve ratio and
+explain whether it is solvent. (c) If Bank A sells HK$30 billion of its loans to Bank B at face
+value, can Bank B afford this purchase? What happens to Bank B's reserve ratio? (d) Explain how this
+scenario illustrates contagion risk and why the HKMA's lender of last resort function is important.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Bank A:** Actual reserve ratio $= 40/500 = 8\%$. Required reserves $= 0.08 \times 500 = 40$.
+Excess reserves $= 40 - 40 = 0$. Bank A has zero excess reserves and is fully loaned up.
+
+**Bank B:** Actual reserve ratio $= 30/300 = 10\%$. Required reserves $= 0.08 \times 300 = 24$.
+Excess reserves $= 30 - 24 = 6$ billion.
+
+(b) After HK$50B withdrawal: Deposits $= 450$. Reserves $= 40 - 50 = -10$.
+
+Bank A's reserves are negative -- it cannot meet the withdrawal. It must either: (i) borrow from the
+interbank market, (ii) sell assets (loans), or (iii) borrow from the HKMA as lender of last resort.
+Bank A is technically solvent (assets $= 460 + 40 = 500 >$ liabilities $= 500$) but illiquid (cannot
+meet short-term obligations).
+
+(c) If Bank A sells
+HK$30B of loans: it receives HK$30B in cash, raising reserves to $-10 + 30 = 20$. New deposits
+$= 450$. New reserve ratio $= 20/450 = 4.4\%$ (below the 8% requirement). Bank A still needs more
+liquidity.
+
+For Bank B: it pays HK$30B, reducing reserves to $30 - 30 = 0$. Deposits unchanged at 300. New
+reserve ratio $= 0/300 = 0\%$. Bank B now has zero reserves and cannot meet any withdrawals. The
+loan purchase has transmitted Bank A's liquidity crisis to Bank B.
+
+(d) This illustrates **contagion risk**: the failure or distress of one bank can spread to other
+banks through interbank connections. When Bank A sells assets to Bank B, it transfers its liquidity
+problem to Bank B. If Bank B cannot absorb the shock, it may also fail, spreading the crisis
+further.
+
+The HKMA's **lender of last resort** (LOLR) function is critical because: (i) it provides emergency
+liquidity to solvent but illiquid banks (like Bank A), preventing fire sales of assets at depressed
+prices; (ii) by lending to Bank A, the HKMA prevents the contagion from spreading to Bank B and the
+wider banking system; (iii) the mere existence of a LOLR reduces the likelihood of bank runs because
+depositors know the central bank stands behind the system. In Hong Kong, the HKMA operates a
+Discount Window for this purpose, and the Deposit Protection Scheme (covering up to HK$500,000 per
+depositor) provides additional confidence.
+
+</details>
+
+If you get this wrong, revise: [Banking System Stability](#banking-system-stability)
+
+### Problem 10: Interest Rate Risk and Bank Profitability
+
+A bank has the following balance sheet (in HK$ billion):
+
+| Assets                                | Liabilities                                |
+| ------------------------------------- | ------------------------------------------ |
+| Fixed-rate loans (5 years, 4%): 400   | Fixed-rate deposits (1 year, 2%): 300      |
+| Floating-rate loans (HIBOR + 2%): 200 | Floating-rate deposits (HIBOR + 0.5%): 250 |
+| Reserves (0%): 50                     | Equity: 100                                |
+
+HIBOR is currently 3%. The bank expects HIBOR to rise to 5% over the next year.
+
+(a) Calculate the bank's net interest margin (NIM) at the current HIBOR. (b) Calculate the bank's
+NIM if HIBOR rises to 5%. (c) Calculate the bank's duration gap and explain what it means for
+interest rate risk. (d) Suggest two strategies the bank could use to manage its interest rate risk.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Interest income:** Fixed-rate loans $= 400 \times 4\% = 16$. Floating-rate loans
+$= 200 \times (3\% + 2\%) = 200 \times 5\% = 10$. Total income $= 26$.
+
+**Interest expense:** Fixed-rate deposits $= 300 \times 2\% = 6$. Floating-rate deposits
+$= 250 \times (3\% + 0.5\%) = 250 \times 3.5\% = 8.75$. Total expense $= 14.75$.
+
+NIM $= (26 - 14.75) / 650 = 11.25 / 650 = 1.73\%$.
+
+(b) At HIBOR $= 5\%$:
+
+**Interest income:** Fixed-rate $= 16$ (unchanged). Floating-rate $= 200 \times (5\% + 2\%) = 14$.
+Total $= 30$.
+
+**Interest expense:** Fixed-rate $= 6$ (unchanged). Floating-rate
+$= 250 \times (5\% + 0.5\%) = 250 \times 5.5\% = 13.75$. Total $= 19.75$.
+
+NIM $= (30 - 19.75) / 650 = 10.25 / 650 = 1.58\%$.
+
+NIM falls from 1.73% to 1.58% because the bank's floating-rate liabilities reprice faster than its
+floating-rate assets, and the fixed-rate assets do not reprice at all. The bank is
+**asset-sensitive** with a negative duration gap.
+
+(c) The bank has more rate-sensitive liabilities
+(HK$250B floating + HK$300B fixed maturing in 1 year $=$
+HK$550B within 1 year) than rate-sensitive assets (HK$200B floating + HK$0B fixed maturing within 1 year $=$
+HK$200B within 1 year). The repricing gap is $200 - 550 = -\text{HK}\$350$ billion. This means when
+rates rise, the bank's interest expense rises faster than its interest income, compressing the NIM.
+
+(d) **Strategy 1 -- Interest rate swaps:** The bank can enter a receive-fixed, pay-floating interest
+rate swap on a notional amount of HK$350 billion. This converts some of its floating-rate
+liabilities to fixed-rate, reducing its negative repricing gap.
+
+**Strategy 2 -- Increase floating-rate lending:** The bank can issue more floating-rate loans (or
+convert some fixed-rate loans to floating) to increase its rate-sensitive assets. For example,
+offering mortgage products indexed to HIBOR rather than fixed rates.
+
+**Strategy 3 -- Lengthen deposit maturity:** The bank can offer higher rates on longer-term fixed
+deposits, reducing the amount of deposits that reprice quickly.
+
+</details>
+
+If you get this wrong, revise: [Bank Management](#bank-management)
+
+### Problem 11: Monetary Policy and Asset Price Bubbles
+
+The central bank observes that property prices have risen by 30% over the past two years while rent
+yields have fallen from 4% to 2.5%. The GDP deflator has risen by 6% over the same period. The base
+interest rate is 2%.
+
+(a) Calculate the real appreciation of property prices (inflation-adjusted). (b) Calculate the
+rental yield and explain what the declining yield suggests about market conditions. (c) Explain the
+dilemma for the central bank: should it raise interest rates to address the property bubble, even if
+general inflation is low? (d) Evaluate the use of macroprudential tools (e.g., loan-to-value ratio
+caps, stress testing) as an alternative to interest rate policy for addressing asset price bubbles.
+
+<details>
+<summary>Solution</summary>
+
+(a) Nominal property price increase $= 30\%$. General inflation $= 6\%$. Real appreciation
+$= \frac{1.30}{1.06} - 1 = 22.6\%$. Property prices have risen 22.6% in real terms over two years --
+approximately 10.7% per year in real terms.
+
+(b) Initial rental yield $= 4\%$. Current yield $= 2.5\%$. The rental yield has fallen by 37.5%
+relative. The declining yield (rising price-to-rent ratio) suggests that property prices are rising
+much faster than rents. This is a classic sign of a potential bubble: prices are being driven by
+speculative expectations of future price increases rather than fundamental rental value. If the
+yield falls below the cost of borrowing, the investment only makes sense if prices continue to rise.
+
+(c) **Dilemma:** Raising interest rates to cool the property market would also slow the broader
+economy. If general inflation is low (6% over two years $=$ 3% per year), the central bank may not
+have a mandate to raise rates. Using interest rates to target asset prices risks causing unnecessary
+economic damage. However, not acting risks a larger bubble and a more painful correction later (as
+Hong Kong experienced in 1997 and 2008).
+
+(d) **Macroprudential tools evaluation:**
+
+_Advantages over interest rate policy:_
+
+- **Targeted:** LTV caps and stress testing affect the property market directly without raising
+  borrowing costs for the rest of the economy.
+- **Flexible:** Can be tightened or loosened quickly in response to property market conditions.
+- **Address the root cause:** By limiting leverage in property purchases, macroprudential tools
+  reduce the fuel for speculative buying.
+
+_Disadvantages:_
+
+- **Regulatory arbitrage:** Buyers may find ways around the rules (e.g., using shell companies,
+  offshore borrowing).
+- **May not prevent all bubbles:** If buyers have sufficient cash (no leverage needed), LTV caps are
+  ineffective.
+- **Complexity:** Designing and enforcing macroprudential regulations requires significant
+  regulatory capacity.
+
+_Hong Kong context:_ The HKMA has extensively used macroprudential tools including LTV ratio caps
+(currently 50--60% for most residential mortgages), stamp duties (Special Stamp Duty, Buyer's Stamp
+Duty, Ad Valorem Stamp Duty), and stress testing requirements for banks. These measures have been
+partially effective in cooling speculative demand while allowing the HKMA to maintain interest rates
+aligned with the Fed.
+
+</details>
+
+If you get this wrong, revise: [Monetary Policy and Asset Prices](#monetary-policy-and-asset-prices)
+
+### Problem 12: Digital Currencies and the Future of Money
+
+Central banks worldwide are exploring Central Bank Digital Currencies (CBDCs). The HKMA has been
+researching the "e-HKD" since 2021.
+
+(a) Explain three differences between a CBDC and a cryptocurrency like Bitcoin. (b) Explain two
+potential benefits and two risks of introducing a CBDC in Hong Kong. (c) If the HKMA introduces an
+e-HKD that pays interest, how would this affect the demand for bank deposits? What implications does
+this have for the banking system? (d) Evaluate whether Hong Kong should introduce a CBDC given its
+existing efficient payment systems (Octopus, FPS, Faster Payment System).
+
+<details>
+<summary>Solution</summary>
+
+(a) **Three differences:**
+
+1. **Issuer:** A CBDC is issued and backed by the central bank (sovereign money). Bitcoin is issued
+   by a decentralised network with no backing.
+2. **Value stability:** A CBDC is denominated in the national currency and maintains stable value
+   (like cash). Bitcoin is highly volatile (its value fluctuates based on market sentiment).
+3. **Legal tender status:** A CBDC would have legal tender status, meaning it must be accepted as
+   payment for debts. Bitcoin has no legal tender status in Hong Kong.
+
+(b) **Benefits:** (i) Financial inclusion: unbanked individuals can access digital payments directly
+through the central bank. (ii) Payment efficiency: faster, cheaper cross-border payments compared to
+the current correspondent banking system. (iii) Monetary policy transmission: the interest rate on
+CBDC could serve as a direct monetary policy tool (a floor on interest rates).
+
+**Risks:** (i) Bank disintermediation: if consumers hold CBDC instead of bank deposits, banks lose a
+cheap funding source, reducing their ability to lend. (ii) Cybersecurity: a centralised digital
+currency system is a single point of failure; a successful cyberattack could be catastrophic. (iii)
+Privacy: CBDC transactions could be fully traceable by the government, raising surveillance
+concerns.
+
+(c) If the e-HKD pays interest (say 2%), and bank deposits pay less (say 1.5%), rational depositors
+would shift funds from banks to CBDC. This reduces bank deposits, forcing banks to raise deposit
+rates or find alternative funding (wholesale funding, which is more expensive). The result is higher
+lending rates, reduced credit availability, and potentially a contraction of the money supply
+through the deposit multiplier.
+
+The magnitude depends on the interest rate differential and the substitutability of CBDC for
+deposits. If the CBDC is designed with holding limits (e.g., maximum HK$100,000 per person), this
+limits the disintermediation effect.
+
+(d) **Evaluation:**
+
+Hong Kong already has efficient digital payment systems: the Octopus card (transit and retail), FPS
+(Faster Payment System for bank-to-bank transfers), and various mobile payment platforms. The
+marginal benefit of a CBDC in terms of payment efficiency is therefore relatively small.
+
+However, a CBDC could provide: (i) a common digital infrastructure that interoperates with all
+existing systems, (ii) programmable money for smart contracts and conditional payments (e.g.,
+government subsidies that can only be spent on designated goods), and (iii) a platform for
+cross-border payments with mainland China (connecting with the digital RMB).
+
+The decision should weigh the costs of implementation against these incremental benefits, while
+carefully managing the risks to financial stability.
+
+</details>
+
+If you get this wrong, revise: [Future of Money](#future-of-money)
+
+---
+
+## Additional Problems: DSE Exam-Style Money and Banking
+
+### Problem 13: Open Market Operations Step by Step
+
+The central bank wants to reduce the money supply by HK$400 billion. The required reserve ratio is
+10%. The banking system currently has zero excess reserves.
+
+(a) Calculate the required open market sale of government bonds. (b) Trace the first three rounds of
+the contraction process in a table. (c) How many rounds does it take for 95% of the total
+contraction to occur? (d) Explain why the actual contraction will be smaller than the theoretical
+maximum.
+
+<details>
+<summary>Solution</summary>
+
+(a) Money multiplier $= 1/0.10 = 10$. Required bond sale $= 400/10 = \text{HK}\$40$ billion.
+
+| (b) | Round | Deposits | Reserves | Loans |
+| --- | ----- | -------- | -------- | ----- |
+| 0   | -40   | -40      | 0        |
+| 1   | 0     | -36      | -36      |
+| 2   | -36   | -32.4    | -32.4    |
+| 3   | -32.4 | -29.16   | -29.16   |
+
+Total after 3 rounds: Deposits reduced by $40 + 36 + 32.4 = 108.4$ billion (of 400 total).
+
+(c) After $n$ rounds, the cumulative contraction
+$= 40 \times (1 + 0.9 + 0.9^2 + ... + 0.9^{n-1}) = 40 \times \frac{1 - 0.9^n}{1 - 0.9} = 400 \times (1 - 0.9^n)$.
+
+For 95%: $0.9^n = 0.05$. $n = \ln(0.05)/\ln(0.9) = -2.996/-0.1054 = 28.4$ rounds.
+
+It takes approximately 29 rounds for 95% of the contraction to occur.
+
+(d) The actual contraction will be smaller because: (i) banks may hold excess reserves (especially
+during uncertain times); (ii) the public may hold more cash (currency drain), reducing the deposit
+multiplier; (iii) some borrowers may not redeposit loans into the banking system; (iv) banks may be
+unwilling to reduce lending if loan demand is strong (they may sell other assets instead).
+
+</details>
+
+If you get this wrong, revise: [Open Market Operations](#open-market-operations)
+
+### Problem 14: Inflation Targeting and Central Bank Credibility
+
+A central bank has an inflation target of 2% with a tolerance band of $\pm 1\%$. Actual inflation
+has been 5% for the past two years. The public expects inflation to be 6% next year. The Phillips
+curve is $\pi = \pi^e - 0.5(u - 5) + s$Where $s$ is a supply shock (0 this year).
+
+(a) If the central bank wants to reduce inflation to 2%, calculate the required unemployment rate
+using the Phillips curve. (b) Calculate the sacrifice ratio (the cumulative unemployment cost of
+reducing inflation by 1 percentage point) if each percentage point of disinflation requires the
+unemployment rate to exceed the natural rate by 2 percentage points for one year. (c) Explain how
+central bank credibility can reduce the sacrifice ratio. (d) Evaluate the advantages and
+disadvantages of inflation targeting compared to exchange rate targeting for Hong Kong.
+
+<details>
+<summary>Solution</summary>
+
+(a) Target $\pi = 2\%$. With $\pi^e = 6\%$ and $s = 0$: $2 = 6 - 0.5(u - 5)$. $0.5(u - 5) = 4$.
+$u - 5 = 8$. $u = 13\%$.
+
+The central bank must engineer unemployment of 13% (8 percentage points above the natural rate of
+5%) for one year to reduce inflation to 2%. This is an extremely high cost.
+
+(b) Sacrifice ratio: reducing inflation from 5% to 2% requires a 3 percentage point reduction. If
+each 1pp reduction costs 2 percentage-point-years of excess unemployment: sacrifice ratio
+$= 2 \times 3 = 6$ percentage-point-years.
+
+Total cost $= 6$ percentage-point-years. If the labour force is 4 million, this represents
+$0.06 \times 4\,000\,000 \times 1 = 240\,000$ person-years of unemployment.
+
+(c) If the central bank is credible (the public believes it will achieve its target), $\pi^e$ falls.
+If $\pi^e = 2\%$ (instead of 6%): $2 = 2 - 0.5(u - 5)$. $u = 5\%$. No excess unemployment is needed!
+Credibility eliminates the sacrifice ratio entirely.
+
+In practice, credibility is built through: (i) a track record of meeting targets, (ii) central bank
+independence, (iii) transparent communication (forward guidance), and (iv) institutional commitment
+(legislated mandates).
+
+(d) **Inflation targeting vs exchange rate targeting for Hong Kong:**
+
+_Exchange rate targeting (current system -- Currency Board):_
+
+- Advantages: provides clear nominal anchor; eliminates exchange rate uncertainty for trade;
+  constrains monetary policy to be disciplined; has worked well for 40 years.
+- Disadvantages: no independent monetary policy; imports US monetary conditions (which may be
+  inappropriate for HK); cannot respond to domestic shocks; requires large reserve holdings.
+
+_Inflation targeting (hypothetical):_
+
+- Advantages: allows independent monetary policy; central bank can respond to domestic inflation and
+  output gaps; more flexible exchange rate could absorb external shocks.
+- Disadvantages: loss of exchange rate stability would increase transaction costs for trade (Hong
+  Kong's trade-to-GDP ratio > 300%); requires a track record of central bank credibility (which the
+  HKMA has not built in this domain); could trigger capital flight and a sharp depreciation during
+  the transition.
+
+**Conclusion:** For Hong Kong, the benefits of exchange rate stability (critical for an
+international financial centre and trade hub) outweigh the benefits of monetary independence. The
+Currency Board should be maintained, with fiscal policy and macroprudential tools used for domestic
+stabilisation.
+
+</details>
+
+If you get this wrong, revise: [Inflation Targeting](#inflation-targeting)
+
+### Problem 15: Financial Intermediation and Economic Development
+
+Country Y has an underdeveloped financial system: only 20% of the population has bank accounts, the
+stock market capitalisation is 5% of GDP, and most lending is to the government rather than the
+private sector. Country Z has a developed financial system: 90% bank account coverage, stock market
+capitalisation of 120% of GDP, and active venture capital and corporate bond markets.
+
+(a) Explain four channels through which financial development promotes economic growth. (b) If
+Country Y's savings rate is 15% of GDP and Country Z's is 30%, and both have the same production
+function $Y = K^{0.3}L^{0.7}$Calculate the steady-state GDP per capita ratio. (c) Explain why
+financial development may have diminishing returns at very high levels (financialisation risks). (d)
+Suggest three specific policies Country Y should implement to develop its financial system.
+
+<details>
+<summary>Solution</summary>
+
+(a) **Four channels:**
+
+1. **Capital mobilisation and allocation:** Financial intermediaries (banks, stock markets) pool
+   savings from many small savers and allocate them to the most productive investments. Without
+   financial markets, savings remain idle or are invested in low-return activities (e.g., gold, real
+   estate speculation).
+2. **Risk management:** Financial markets allow risk to be diversified (portfolio diversification,
+   insurance, hedging). This enables firms to undertake risky but high-return investments
+   (innovation, R&D) that they would not undertake without risk-sharing mechanisms.
+3. **Information production:** Banks and credit rating agencies produce information about borrowers'
+   creditworthiness, reducing adverse selection and moral hazard. This lowers the cost of capital
+   and improves the efficiency of lending.
+4. **Liquidity provision:** Financial markets allow savers to convert illiquid assets (long-term
+   investments) into liquid claims (bank deposits, tradable securities). This encourages saving by
+   reducing the liquidity risk of long-term investment.
+
+(b) In the Solow model, steady-state capital per worker is proportional to
+$(s/n)^{1/(1-\alpha)}$Where $s$ is the saving rate, $n$ is the population growth rate, and
+$\alpha = 0.3$.
+
+Steady-state $k^* \propto s^{1/0.7} = s^{1.429}$.
+
+GDP per capita ratio $= (s_Z / s_Y)^{1.429} = (30/15)^{1.429} = 2^{1.429} = 2.70$.
+
+Country Z's GDP per capita is approximately 2.7 times Country Y's, purely due to the higher saving
+rate enabled by financial development.
+
+(c) **Financialisation risks:** At very high levels of financial development, the financial sector
+may grow to a size that is disproportionate to the real economy. Risks include: (i) resources
+(especially talent) flowing to finance from more productive sectors (engineering, science); (ii)
+excessive leverage and asset price bubbles (as in the 2008 financial crisis); (iii) rent-seeking
+through financial engineering rather than productive investment; (iv) increased systemic risk from
+complex, interconnected financial products. The marginal benefit of additional financial development
+diminishes and may eventually turn negative.
+
+(d) **Policies for Country Y:**
+
+1. **Expand financial inclusion:** Use mobile banking technology to reach unbanked populations.
+   Implement simplified KYC (know-your-customer) procedures and microfinance products for low-income
+   households.
+2. **Develop capital markets:** Create a securities regulator, establish disclosure requirements,
+   and introduce corporate bond and equity markets. Start with government bonds to establish a yield
+   curve, then gradually introduce corporate securities.
+3. **Strengthen legal infrastructure:** Enforce property rights, contract law, and creditor rights.
+   Weak legal enforcement discourages lending because lenders cannot recover loans from defaulting
+   borrowers. Establish bankruptcy laws that balance debtor protection with creditor rights.
+4. **Promote competition:** Reduce barriers to entry for foreign banks (which bring expertise and
+   technology). Encourage fintech innovation (digital payments, peer-to-peer lending, robo-advisors)
+   to challenge incumbents.
+
+If you get this wrong, revise: [Financial Development](#financial-development)
+
+</details>
+
+## Summary
+
+<<<<<<< Updated upstream:docs/docs_dse/economics/8-money-and-banking/1_money-and-banking.md
+
+- Functions of money: medium of exchange, unit of account, store of value.
+- Money supply: M1 (cash + demand deposits), M2/M3 (broader measures).
+- Money creation: banks create money through fractional reserve lending; money multiplier
+  $= 1/\text{reserve ratio}$.
+- Central bank: controls monetary policy through interest rates, reserve requirements, and open
+  market operations.
+
+======= This topic covers the economic theories and principles related to money and banking,
+including key models, evidence, and policy implications.
+
+> > > > > > > Stashed changes:docs/docs_dse/Economics/money-and-banking.md
+
+**Key concepts include:**
+
+<<<<<<< Updated upstream:docs/docs_dse/economics/8-money-and-banking/1_money-and-banking.md
+
+### Example 1: Money multiplier
+
+**Problem.** The reserve ratio is $10\%$. A customer deposits $1000$ in a bank. Calculate the
+maximum possible increase in the money supply.
+
+**Solution.** Money multiplier $= 1/0.10 = 10$. Maximum increase $= 1000 \times 10 = 10\,000$.
+
+$\blacksquare$
+
+### Example 2: Functions of money
+
+**Problem.** Explain the three functions of money with examples.
+
+**Solution.** (1) Medium of exchange: money eliminates the need for barter (buying lunch with cash).
+(2) Unit of account: provides a common measure of value (prices in dollars). (3) Store of value: can
+be saved and used later (savings account).
+
+$\blacksquare$
+
+## Cross-References
+
+| Topic              | Site    | Link                                                                                            |
+| ------------------ | ------- | ----------------------------------------------------------------------------------------------- |
+| [Financial Sector] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/macro/03-the-financial-sector) |
+| [Financial Sector] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/8-money-and-banking/1_money-and-banking)      |
+
+=======
+
+- economic models and theories
+- data analysis and interpretation
+- policy evaluation
+- real-world applications
+- critical evaluation of economic arguments
+
+The ability to apply these theories to real-world data and evaluate policy decisions is central to
+success in this subject.
+
+> > > > > > > Stashed changes:docs/docs_dse/Economics/money-and-banking.md

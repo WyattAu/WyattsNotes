@@ -2043,12 +2043,14 @@ character due to resonance).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.
 
-## Summary
+2. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
+   molecular refers to individual molecules.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting to balance equations before performing calculations — always check that atoms and
+   charges balance on both sides.

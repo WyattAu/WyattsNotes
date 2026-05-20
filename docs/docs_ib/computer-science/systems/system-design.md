@@ -775,12 +775,13 @@ And lengths. Parameterized queries ensure user input is treated as data, never a
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Summary
+2. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.

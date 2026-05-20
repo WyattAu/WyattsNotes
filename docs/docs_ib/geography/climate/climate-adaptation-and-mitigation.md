@@ -249,12 +249,14 @@ For related topics, see [./atmospheric-systems](./atmospheric-systems) and
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Summary
+2. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).

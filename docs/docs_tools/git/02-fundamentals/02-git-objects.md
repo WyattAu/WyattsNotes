@@ -388,12 +388,18 @@ Use '--' to separate paths from revisions, like this:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing `git reset` and `git revert` — reset moves the branch pointer; revert creates a new
+   commit that undoes changes.
 
-## Summary
+2. Forgetting to pull before pushing when working collaboratively, leading to merge conflicts.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Worked Examples
+4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+6. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.

@@ -101,8 +101,8 @@ def insertion_sort(A):
 
 ### Correctness Proof
 
-**Theorem.** After the $i$-th iteration of the outer loop ($1 \leq i \lt n$), the subarray
-$A[0..i]$ is sorted.
+**Theorem.** After the $i$-th iteration of the outer loop ($1 \leq i \lt n$), the subarray $A[0..i]$
+is sorted.
 
 **Proof.** By induction on $i$.
 
@@ -235,8 +235,7 @@ def partition(A, low, high):
 to its left are $\lt $ pivot, and all elements to its right are $\geq$ pivot.
 
 **Proof.** The variable `i` tracks the boundary between elements
-$\lt $ pivot (indices `low..i`) and elements $\geq$ pivot (indices `i+1..j-1`). The loop
-Invariant:
+$\lt $ pivot (indices `low..i`) and elements $\geq$ pivot (indices `i+1..j-1`). The loop Invariant:
 
 _At the start of each iteration with index `j`:_
 
@@ -245,8 +244,8 @@ _At the start of each iteration with index `j`:_
 - $A[\mathrm{high}] = \mathrm{pivot}$ (unchanged)
 
 _Maintenance._ If $A[j] \lt \mathrm{pivot}$Increment $i$ and swap $A[i]$ with $A[j]$Extending The
-"$\lt $ pivot" region. If $A[j] \geq \mathrm{pivot}$Increment $j$ only, extending the "$\geq$
-pivot" region.
+"$\lt $ pivot" region. If $A[j] \geq \mathrm{pivot}$Increment $j$ only, extending the "$\geq$ pivot"
+region.
 
 _Termination._ After the loop, swap $A[i+1]$ with $A[\mathrm{high}]$ (the pivot). Now:
 
@@ -551,12 +550,18 @@ For revision on data structures used in sorting, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the best-case, average-case, and worst-case complexities of sorting algorithms.
 
-## Summary
+2. Forgetting that merge sort requires $O(n)$ additional space while quicksort can be done in-place.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Worked Examples
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+6. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.

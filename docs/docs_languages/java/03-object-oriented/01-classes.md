@@ -1450,8 +1450,13 @@ graph TD
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Worked Examples
+2. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.

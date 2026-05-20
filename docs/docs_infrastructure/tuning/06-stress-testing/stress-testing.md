@@ -874,8 +874,16 @@ When adding used hardware (CPU, RAM, GPU) to an existing system, run a focused b
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the psychological theories and research related to stress testing and validation,
+including key studies, methodologies, and evaluations.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key theories and studies
+- research methods and ethical considerations
+- applications to everyday life
+- critical evaluation of evidence
+- debates and approaches in psychology
+
+Critical evaluation of theories and evidence, using specific studies to support arguments, is
+essential for examination success.

@@ -18,8 +18,7 @@ slug: classical-mechanics
 
 1. **First Law (Inertia):** A body remains at rest or in uniform motion unless acted upon by a net
    force.
-2. **Second Law:** $\mathbf{F} = m\mathbf{a} = \dot{\mathbf{p}}$ where
-   $\mathbf{p} = m\mathbf{v}$.
+2. **Second Law:** $\mathbf{F} = m\mathbf{a} = \dot{\mathbf{p}}$ where $\mathbf{p} = m\mathbf{v}$.
 3. **Third Law:** For every action, there is an equal and opposite reaction.
 
 ### 1.2 Newton's Second Law in Various Coordinate Systems
@@ -89,18 +88,16 @@ _Proof._ Newton's second law for the $i$-th particle:
 
 $$\mathbf{F}_i^{(\mathrm{ext)} + \sum_{j \neq i} \mathbf{F}_{ij} = m_i \dot{\mathbf{v}}_i$$
 
-Where $\mathbf{F}_{ij}$ is the force on particle $i$ due to particle $j$. By Newton's third
-law, $\mathbf{F}_{ij} = -\mathbf{F}_{ji}$. Summing over all particles:
+Where $\mathbf{F}_{ij}$ is the force on particle $i$ due to particle $j$. By Newton's third law,
+$\mathbf{F}_{ij} = -\mathbf{F}_{ji}$. Summing over all particles:
 
 $$\sum_i \mathbf{F}_i^{(\mathrm{ext)} + \sum_i \sum_{j \neq i} \mathbf{F}_{ij} = \frac{d}{dt}\sum_i m_i \mathbf{v}_i$$
 
-The double sum vanishes by Newton's third law. Defining
-$\mathbf{P} = \sum_i m_i \mathbf{v}_i$:
+The double sum vanishes by Newton's third law. Defining $\mathbf{P} = \sum_i m_i \mathbf{v}_i$:
 
 $$\sum_i \mathbf{F}_i^{(\mathrm{ext)} = \dot{\mathbf{P}}$$
 
-If there are no external forces, $\dot{\mathbf{P}} = 0$ and $\mathbf{P}$ is constant.
-$\blacksquare$
+If there are no external forces, $\dot{\mathbf{P}} = 0$ and $\mathbf{P}$ is constant. $\blacksquare$
 
 **Corollary.** The centre of mass moves as if all external forces acted on a single particle of mass
 $M = \sum_i m_i$ located at the centre of mass:
@@ -120,8 +117,8 @@ $$W = \int m\mathbf{a} \cdot \mathbf{v}\, dt = \int m \frac{d\mathbf{v}}{dt} \cd
 $\blacksquare$
 
 **Definition.** A force is **conservative** if the work done is path-independent, equivalently
-$\nabla \times \mathbf{F} = \mathbf{0}$Equivalently $\mathbf{F} = -\nabla V$ for
-some scalar potential $V(\mathbf{r})$.
+$\nabla \times \mathbf{F} = \mathbf{0}$Equivalently $\mathbf{F} = -\nabla V$ for some scalar
+potential $V(\mathbf{r})$.
 
 **Theorem 1.3 (Conservation of Mechanical Energy).** If all forces are conservative, $E = T + V$ is
 conserved.
@@ -148,13 +145,12 @@ Summing over all particles:
 
 $$\dot{\mathbf{L}} = \sum_i \mathbf{r}_i \times \mathbf{F}_i^{(\mathrm{ext)} + \sum_i \sum_{j \neq i} \mathbf{r}_i \times \mathbf{F}_{ij}$$
 
-The double sum represents internal torques. For central internal forces ($\mathbf{F}_{ij}$
-parallel to $\mathbf{r}_i - \mathbf{r}_j$), the internal torques cancel in pairs. Hence:
+The double sum represents internal torques. For central internal forces ($\mathbf{F}_{ij}$ parallel
+to $\mathbf{r}_i - \mathbf{r}_j$), the internal torques cancel in pairs. Hence:
 
 $$\dot{\mathbf{L}} = \boldsymbol{\tau}^{(\mathrm{ext)}$$
 
-If $\boldsymbol{\tau}^{(\mathrm{ext)} = \mathbf{0}$Then
-$\mathbf{L} = \mathrm{const$. $\blacksquare$
+If $\boldsymbol{\tau}^{(\mathrm{ext)} = \mathbf{0}$Then $\mathbf{L} = \mathrm{const$. $\blacksquare$
 
 ### 1.8 The Rocket Equation
 
@@ -191,8 +187,8 @@ Where $\Delta t$ is the burn time.
 ### 1.9 Worked Example: Rocket in Free Space
 
 **Problem.** A rocket starts from rest with mass $m_0 = 1000\,\mathrm{kg$ and exhaust velocity
-$u_e = 3000\,\mathrm{m/s$. It burns fuel until its mass is $m_f = 400\,\mathrm{kg$. Find the
-final velocity.
+$u_e = 3000\,\mathrm{m/s$. It burns fuel until its mass is $m_f = 400\,\mathrm{kg$. Find the final
+velocity.
 
 <details>
 <summary>Solution</summary>
@@ -310,8 +306,8 @@ $\blacksquare$
 
 ### 2.5 Virtual Work and D'Alembert's Principle
 
-A **virtual displacement** $\delta \mathbf{r}_i$ is an infinitesimal change in position
-consistent with The constraints at a fixed instant in time ($\delta t = 0$).
+A **virtual displacement** $\delta \mathbf{r}_i$ is an infinitesimal change in position consistent
+with The constraints at a fixed instant in time ($\delta t = 0$).
 
 **Definition (Virtual Work).** The virtual work of the forces is:
 
@@ -328,14 +324,14 @@ Where $\mathbf{C}_i$ is the constraint force on particle $i$.
 virtual work of the applied forces vanishes for all virtual displacements consistent with the
 constraints.
 
-_Proof._ In static equilibrium, $\mathbf{F}_i + \mathbf{C}_i = \mathbf{0}$ for
-each particle. Therefore:
+_Proof._ In static equilibrium, $\mathbf{F}_i + \mathbf{C}_i = \mathbf{0}$ for each particle.
+Therefore:
 
 $$\sum_i (\mathbf{F}_i + \mathbf{C}_i) \cdot \delta\mathbf{r}_i = 0$$
 
 For ideal constraints, $\sum_i \mathbf{C}_i \cdot \delta\mathbf{r}_i = 0$So
-$\sum_i \mathbf{F}_i \cdot \delta\mathbf{r}_i = 0$. Conversely, if the virtual work of
-applied forces vanishes for all admissible virtual displacements, the system must be in equilibrium
+$\sum_i \mathbf{F}_i \cdot \delta\mathbf{r}_i = 0$. Conversely, if the virtual work of applied
+forces vanishes for all admissible virtual displacements, the system must be in equilibrium
 (otherwise one could choose a virtual displacement in the direction of net force to get non-zero
 work). $\blacksquare$
 
@@ -347,13 +343,12 @@ Where $\mathbf{F}_i$ includes both applied and constraint forces. For ideal cons
 Constraint forces do no virtual work, so only the applied forces contribute.
 
 _Proof._ D'Alembert's principle extends the principle of virtual work to dynamics by treating
-$-m_i \ddot{\mathbf{r}}_i$ as a "fictitious force" (the **inertia force**). Starting from
-Newton's second law $\mathbf{F}_i + \mathbf{C}_i = m_i \ddot{\mathbf{r}}_i$:
+$-m_i \ddot{\mathbf{r}}_i$ as a "fictitious force" (the **inertia force**). Starting from Newton's
+second law $\mathbf{F}_i + \mathbf{C}_i = m_i \ddot{\mathbf{r}}_i$:
 
 $$\sum_i (\mathbf{F}_i + \mathbf{C}_i - m_i\ddot{\mathbf{r}}_i) \cdot \delta\mathbf{r}_i = 0$$
 
-This is true. For ideal constraints
-$\sum_i \mathbf{C}_i \cdot \delta\mathbf{r}_i = 0$Giving:
+This is true. For ideal constraints $\sum_i \mathbf{C}_i \cdot \delta\mathbf{r}_i = 0$Giving:
 
 $$\sum_i (\mathbf{F}_i - m_i\ddot{\mathbf{r}}_i) \cdot \delta\mathbf{r}_i = 0$$
 
@@ -390,8 +385,8 @@ $\mathbf{F}_i^{(\mathrm{app)} = -\nabla_i V$So:
 $$\sum_i \mathbf{F}_i^{(\mathrm{app)} \cdot \delta\mathbf{r}_i = -\sum_i \nabla_i V \cdot \sum_j \frac{\partial \mathbf{r}_i}{\partial q_j}\delta q_j = -\sum_j \frac{\partial V}{\partial q_j}\delta q_j$$
 
 Defining the **generalised force**
-$Q_j = \sum_i \mathbf{F}_i \cdot \frac{\partial \mathbf{r}_i}{\partial q_j}$For
-conservative forces $Q_j = -\partial V/\partial q_j$.
+$Q_j = \sum_i \mathbf{F}_i \cdot \frac{\partial \mathbf{r}_i}{\partial q_j}$For conservative forces
+$Q_j = -\partial V/\partial q_j$.
 
 **Second term (inertia).** Using
 $\frac{\partial \dot{\mathbf{r}}_i}{\partial \dot{q}_j} = \frac{\partial \mathbf{r}_i}{\partial q_j}$
@@ -631,8 +626,8 @@ The multipliers $\lambda_a$ are proportional to the constraint forces.
 $$h = \sum_j \dot{q}_j \frac{\partial L}{\partial \dot{q}_j} - L$$
 
 **Theorem 3.5.** If $L$ does not depend explicitly on time, then $h$ is conserved. Furthermore, if
-the transformation $\mathbf{r}_i = \mathbf{r}_i(q)$ does not depend explicitly on time
-and $V$ is velocity-independent, then $h = T + V$ (the total energy).
+the transformation $\mathbf{r}_i = \mathbf{r}_i(q)$ does not depend explicitly on time and $V$ is
+velocity-independent, then $h = T + V$ (the total energy).
 
 _Proof._ Taking the total time derivative:
 
@@ -782,8 +777,8 @@ By the continuity equation in $2n$ dimensions:
 
 $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = 0$$
 
-Where $\mathbf{v} = (\dot{q}_1, \ldots, \dot{q}_n, \dot{p}_1, \ldots, \dot{p}_n)$ is the phase
-space velocity. Using Hamilton's equations:
+Where $\mathbf{v} = (\dot{q}_1, \ldots, \dot{q}_n, \dot{p}_1, \ldots, \dot{p}_n)$ is the phase space
+velocity. Using Hamilton's equations:
 
 $$\nabla \cdot \mathbf{v} = \sum_j \frac{\partial \dot{q}_j}{\partial q_j} + \sum_j \frac{\partial \dot{p}_j}{\partial p_j} = \sum_j \frac{\partial^2 H}{\partial q_j \partial p_j} - \sum_j \frac{\partial^2 H}{\partial p_j \partial q_j} = 0$$
 
@@ -1011,8 +1006,7 @@ By Noether's theorem:
 $$Q = p_x(-y) + p_y(x) - 0 = x\, p_y - y\, p_x = L_z$$
 
 This is the $z$-component of angular momentum. Full rotational invariance gives conservation of the
-entire angular momentum vector $\mathbf{L} = \mathbf{r} \times \mathbf{p}$.
-$\blacksquare$
+entire angular momentum vector $\mathbf{L} = \mathbf{r} \times \mathbf{p}$. $\blacksquare$
 
 </details>
 
@@ -1087,8 +1081,7 @@ The **centrifugal barrier**.
 
 $$E = \frac{1}{2}m\dot{r}^2 + V_{\mathrm{eff}(r)$$
 
-Since $E$ and $l$ are conserved, the radial motion is completely determined by
-$V_{\mathrm{eff}(r)$.
+Since $E$ and $l$ are conserved, the radial motion is completely determined by $V_{\mathrm{eff}(r)$.
 
 **Circular orbits** occur at radii $r_0$ where $V_{\mathrm{eff}'(r_0) = 0$:
 
@@ -1154,11 +1147,11 @@ $$e = \sqrt{1 + \frac{2El^2}{mk^2}}$$
 
 **Classification of orbits:**
 
-| Energy      | Eccentricity | Orbit Type                  |
-| ----------- | ------------ | --------------------------- |
-| $E \lt 0$ | $e \lt 1$  | Ellipse (bound)             |
-| $E = 0$     | $e = 1$      | Parabola (marginally bound) |
-| $E \gt 0$ | $e \gt 1$  | Hyperbola (unbound)         |
+| Energy    | Eccentricity | Orbit Type                  |
+| --------- | ------------ | --------------------------- |
+| $E \lt 0$ | $e \lt 1$    | Ellipse (bound)             |
+| $E = 0$   | $e = 1$      | Parabola (marginally bound) |
+| $E \gt 0$ | $e \gt 1$    | Hyperbola (unbound)         |
 
 **Bertrand's Theorem:** The only central potentials that give closed orbits for all bound states are
 $V(r) \propto 1/r$ (Kepler/Coulomb) and $V(r) \propto r^2$ (harmonic oscillator).
@@ -1269,14 +1262,12 @@ $\omega_\alpha^2$.
 **Theorem 7.1.** For a stable system, all normal mode frequencies are real and positive. The normal
 Modes are orthogonal with respect to both $\mathbf{T}$ and $\mathbf{V}$.
 
-_Proof._ Since $\mathbf{T}$ is positive definite, we can write
-$\mathbf{T} = \mathbf{L}\mathbf{L}^T$ (Cholesky decomposition). Defining
-$\boldsymbol{\xi} = \mathbf{L}^T\mathbf{a}$ and
-$\mathbf{W} = \mathbf{L}^{-1}\mathbf{V}\mathbf{L}^{-T}$The eigenvalue
-problem becomes $\mathbf{W}\boldsymbol{\xi} = \omega^2\boldsymbol{\xi}$. Since
-$\mathbf{W}$ is symmetric and $\mathbf{V}$ is positive definite, all eigenvalues
-$\omega^2$ are real and positive. Orthogonality follows from the symmetry of $\mathbf{W}$.
-$\blacksquare$
+_Proof._ Since $\mathbf{T}$ is positive definite, we can write $\mathbf{T} = \mathbf{L}\mathbf{L}^T$
+(Cholesky decomposition). Defining $\boldsymbol{\xi} = \mathbf{L}^T\mathbf{a}$ and
+$\mathbf{W} = \mathbf{L}^{-1}\mathbf{V}\mathbf{L}^{-T}$The eigenvalue problem becomes
+$\mathbf{W}\boldsymbol{\xi} = \omega^2\boldsymbol{\xi}$. Since $\mathbf{W}$ is symmetric and
+$\mathbf{V}$ is positive definite, all eigenvalues $\omega^2$ are real and positive. Orthogonality
+follows from the symmetry of $\mathbf{W}$. $\blacksquare$
 
 ### 7.4 Orthogonality of Normal Modes
 
@@ -1365,8 +1356,8 @@ $(\phi, \theta, \psi)$.
 
 ### 8.2 Angular Velocity and Euler Angles
 
-The angular velocity $\boldsymbol{\omega}$ in terms of the Euler angles ($z$-$x'$-$z''$
-convention) expressed in the body frame:
+The angular velocity $\boldsymbol{\omega}$ in terms of the Euler angles ($z$-$x'$-$z''$ convention)
+expressed in the body frame:
 
 $$\omega_1 = \dot{\phi}\sin\theta\sin\psi + \dot{\theta}\cos\psi$$
 
@@ -1388,15 +1379,15 @@ Where:
 
 $$I_{xx} = \sum_i m_i(y_i^2 + z_i^2), \quad I_{xy} = -\sum_i m_i x_i y_i, \quad \mathrm{etc.$$
 
-**Theorem 8.1 (Parallel Axis Theorem).** The inertia tensor about a point displaced by
-$\mathbf{a}$ from the centre of mass is:
+**Theorem 8.1 (Parallel Axis Theorem).** The inertia tensor about a point displaced by $\mathbf{a}$
+from the centre of mass is:
 
 $$I_{jk}' = I_{jk}^{(\mathrm{CM)} + M(a^2\delta_{jk} - a_j a_k)$$
 
 Where $M$ is the total mass.
 
-_Proof._ Writing $\mathbf{r}_i' = \mathbf{r}_i + \mathbf{a}$ where
-$\mathbf{r}_i$ is measured from the centre of mass:
+_Proof._ Writing $\mathbf{r}_i' = \mathbf{r}_i + \mathbf{a}$ where $\mathbf{r}_i$ is measured from
+the centre of mass:
 
 $$I_{jk}' = \sum_i m_i\left(\lvert\mathbf{r}_i'\rvert^2\delta_{jk} - r_i' r_{i',k}\right) = \sum_i m_i\left(\lvert\mathbf{r}_i + \mathbf{a}\rvert^2\delta_{jk} - (r_{i,j} + a_j)(r_{i,k} + a_k)\right)$$
 
@@ -1415,14 +1406,12 @@ In the principal axis frame, the inertia tensor is diagonal:
 
 $$\mathbf{I} = \begin{pmatrix} I_1 & 0 & 0 \\ 0 & I_2 & 0 \\ 0 & 0 & I_3 \end{pmatrix}$$
 
-Since $\mathbf{I}$ is a real symmetric matrix, the principal axes are always real and
-orthogonal.
+Since $\mathbf{I}$ is a real symmetric matrix, the principal axes are always real and orthogonal.
 
 ### 8.5 Euler's Equations of Motion
 
-**Theorem 8.2 (Euler's Equations).** For torque-free rotation
-($\boldsymbol{\tau} = \mathbf{0}$) about the centre of mass, the equations of motion in
-the body frame are:
+**Theorem 8.2 (Euler's Equations).** For torque-free rotation ($\boldsymbol{\tau} = \mathbf{0}$)
+about the centre of mass, the equations of motion in the body frame are:
 
 $$I_1\dot{\omega}_1 = (I_2 - I_3)\omega_2\omega_3$$
 
@@ -1430,8 +1419,8 @@ $$I_2\dot{\omega}_2 = (I_3 - I_1)\omega_3\omega_1$$
 
 $$I_3\dot{\omega}_3 = (I_1 - I_2)\omega_1\omega_2$$
 
-_Proof._ In the body frame, the angular momentum is
-$\mathbf{L} = \mathbf{I}\,\boldsymbol{\omega}$. The equation of motion is:
+_Proof._ In the body frame, the angular momentum is $\mathbf{L} = \mathbf{I}\,\boldsymbol{\omega}$.
+The equation of motion is:
 
 $$\left(\frac{d\mathbf{L}}{dt}\right)_{\mathrm{space} = \boldsymbol{\tau}$$
 
@@ -1440,8 +1429,8 @@ $\left(\frac{d\mathbf{L}}{dt}\right)_{\mathrm{space} = \left(\frac{d\mathbf{L}}{
 
 $$\mathbf{I}\,\dot{\boldsymbol{\omega}} + \boldsymbol{\omega} \times (\mathbf{I}\,\boldsymbol{\omega}) = \boldsymbol{\tau}$$
 
-In the principal axis frame with $\boldsymbol{\tau} = \mathbf{0}$This gives Euler's
-equations directly. $\blacksquare$
+In the principal axis frame with $\boldsymbol{\tau} = \mathbf{0}$This gives Euler's equations
+directly. $\blacksquare$
 
 ### 8.6 Stability of Torque-Free Rotation
 
@@ -1449,8 +1438,8 @@ equations directly. $\blacksquare$
 the largest or smallest principal moment of inertia, and unstable for the intermediate axis.
 
 _Proof._ Consider rotation primarily about the 1-axis:
-$\boldsymbol{\omega} = (\omega_1, \epsilon_2, \epsilon_3)$ where $\epsilon_2, \epsilon_3$ are
-small perturbations. From Euler's equations:
+$\boldsymbol{\omega} = (\omega_1, \epsilon_2, \epsilon_3)$ where $\epsilon_2, \epsilon_3$ are small
+perturbations. From Euler's equations:
 
 $$I_2\dot{\epsilon}_2 = (I_3 - I_1)\omega_1\epsilon_3, \quad I_3\dot{\epsilon}_3 = (I_1 - I_2)\omega_1\epsilon_2$$
 
@@ -1701,8 +1690,7 @@ $$L = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2) - \frac{1}{2}k(x^2 + y^2) - \lambda xy
 
 $$\mathbf{T} = m\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad \mathbf{V} = \begin{pmatrix} k & \lambda \\ \lambda & k \end{pmatrix}$$
 
-Secular equation:
-$\det(\mathbf{V} - \omega^2\mathbf{T}) = (k - m\omega^2)^2 - \lambda^2 = 0$
+Secular equation: $\det(\mathbf{V} - \omega^2\mathbf{T}) = (k - m\omega^2)^2 - \lambda^2 = 0$
 
 $$\omega_\pm^2 = \frac{k \pm \lambda}{m}$$
 
@@ -1800,8 +1788,8 @@ The canonical momentum:
 
 $$\mathbf{p} = \frac{\partial L}{\partial \dot{\mathbf{r}}} = m\dot{\mathbf{r}} + q\mathbf{A}$$
 
-Note: $\mathbf{p} \neq m\dot{\mathbf{r}}$; the canonical momentum differs from the
-mechanical momentum by $q\mathbf{A}$.
+Note: $\mathbf{p} \neq m\dot{\mathbf{r}}$; the canonical momentum differs from the mechanical
+momentum by $q\mathbf{A}$.
 
 The Hamiltonian:
 
@@ -1885,13 +1873,11 @@ an equivalent one-body problem and identify the reduced mass.
 <details>
 <summary>Solution</summary>
 
-The Lagrangian for two particles interacting via
-$V(\lvert\mathbf{r}_1 - \mathbf{r}_2\rvert)$:
+The Lagrangian for two particles interacting via $V(\lvert\mathbf{r}_1 - \mathbf{r}_2\rvert)$:
 
 $$L = \frac{1}{2}m_1\dot{\mathbf{r}}_1^2 + \frac{1}{2}m_2\dot{\mathbf{r}}_2^2 - V(\lvert\mathbf{r}_1 - \mathbf{r}_2\rvert)$$
 
-Introduce centre of mass
-$\mathbf{R} = (m_1\mathbf{r}_1 + m_2\mathbf{r}_2)/(m_1 + m_2)$ and relative
+Introduce centre of mass $\mathbf{R} = (m_1\mathbf{r}_1 + m_2\mathbf{r}_2)/(m_1 + m_2)$ and relative
 coordinate $\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2$.
 
 Then $\mathbf{r}_1 = \mathbf{R} + \frac{m_2}{M}\mathbf{r}$ and
@@ -2013,8 +1999,8 @@ force reduction).
 ### Problem 15
 
 A symmetric top ($I_1 = I_2$) with $I_3 = 2I_1$ has total angular momentum $L$ and spin $n$ about
-its symmetry axis. Show that the angular velocity vector $\boldsymbol{\omega}$ precesses
-around $\mathbf{L}$ and find the precession frequency.
+its symmetry axis. Show that the angular velocity vector $\boldsymbol{\omega}$ precesses around
+$\mathbf{L}$ and find the precession frequency.
 
 <details>
 <summary>Solution</summary>
@@ -2035,9 +2021,8 @@ $$\dot{\omega}_1 = -n\omega_2, \quad \dot{\omega}_2 = n\omega_1$$
 These describe circular motion in the $(\omega_1, \omega_2)$ plane with frequency $n$. The angular
 velocity vector precesses around the 3-axis (symmetry axis) with frequency $n$ in the body frame.
 
-In the space frame, $\mathbf{L}$ is fixed. The symmetry axis precesses around
-$\mathbf{L}$ with the **body cone** rolling on the **space cone**. The precession frequency in
-the space frame is:
+In the space frame, $\mathbf{L}$ is fixed. The symmetry axis precesses around $\mathbf{L}$ with the
+**body cone** rolling on the **space cone**. The precession frequency in the space frame is:
 
 $$\Omega_{\mathrm{space} = \frac{L}{I_1} = \frac{\sqrt{I_1^2(\omega_1^2 + \omega_2^2) + I_3^2\omega_3^2}}{I_1}$$
 
@@ -2507,8 +2492,7 @@ $$E = P^2/(2m), \quad S(x, P, t) = Px - \frac{P^2}{2m}t$$
 $$X = \frac{\partial S}{\partial P} = x - \frac{P}{m}t$$
 
 The new Hamiltonian $K = H + \partial S/\partial t = P^2/(2m) - P^2/(2m) = 0$. All momenta and
-energies are constant. The new coordinate evolves as $X = x_0 = \text{const$ (the initial
-position).
+energies are constant. The new coordinate evolves as $X = x_0 = \text{const$ (the initial position).
 
 The original coordinate: $x = X + Pt/m = x_0 + v_0 t$ (uniform motion). $\checkmark$
 
@@ -2518,8 +2502,8 @@ The original coordinate: $x = X + Pt/m = x_0 + v_0 t$ (uniform motion). $\checkm
 
 ### 12.1 Lagrangian Field Theory
 
-For a field $\phi(\mathbf{r}, t)$The Lagrangian density $\mathcal{L}$ replaces the
-discrete Lagrangian $L = \sum_i T_i - V_i$:
+For a field $\phi(\mathbf{r}, t)$The Lagrangian density $\mathcal{L}$ replaces the discrete
+Lagrangian $L = \sum_i T_i - V_i$:
 
 $$S = \int \mathcal{L}(\phi, \partial_\mu\phi)\,d^4x, \quad \delta S = 0 \implies \frac{\partial\mathcal{L}}{\partial\phi} - \partial_\mu\frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)} = 0$$
 
@@ -2543,12 +2527,12 @@ Every continuous symmetry of the action yields a conserved current:
 
 $$\partial_\mu j^\mu = 0 \implies Q = \int j^0\,d^3x = \text{const$$
 
-| Symmetry                                    | Conserved Quantity                                                                           |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Time translation                            | Energy $E = \int\mathcal{H}\,d^3x$                                                     |
-| Space translation                           | Momentum $\mathbf{P} = \int\boldsymbol{\pi}\,d^3x$                               |
+| Symmetry                                    | Conserved Quantity                                                         |
+| ------------------------------------------- | -------------------------------------------------------------------------- |
+| Time translation                            | Energy $E = \int\mathcal{H}\,d^3x$                                         |
+| Space translation                           | Momentum $\mathbf{P} = \int\boldsymbol{\pi}\,d^3x$                         |
 | Rotation                                    | Angular momentum $\mathbf{L} = \int\mathbf{r}\times\boldsymbol{\pi}\,d^3x$ |
-| Phase rotation ($\phi \to e^{i\alpha}\phi$) | Charge $Q$                                                                                   |
+| Phase rotation ($\phi \to e^{i\alpha}\phi$) | Charge $Q$                                                                 |
 
 For the complex Klein--Gordon field, the conserved current is:
 
@@ -2566,8 +2550,7 @@ The **canonical energy-momentum tensor** (symmetric, Belinfante):
 
 $$T^{\mu\nu} = \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\partial^\nu\phi - g^{\mu\nu}\mathcal{L}$$
 
-$T^{00} = \mathcal{H}$ (energy density), $T^{0i}$ (momentum density), $T^{ij}$ (stress
-tensor).
+$T^{00} = \mathcal{H}$ (energy density), $T^{0i}$ (momentum density), $T^{ij}$ (stress tensor).
 
 <details>
 <summary>Worked Example 12.1: Noether Current for the Klein--Gordon Field</summary>
@@ -2591,11 +2574,47 @@ By Noether's theorem: $\partial_\mu j^\mu = 0$And the conserved charge:
 
 $$Q = \int j^0\,d^3x = \int i(\phi^*\dot{\phi} - \dot{\phi}^*\phi)\,d^3x$$
 
-For a plane wave $\phi = e^{-i\omega t + i\mathbf{k}\cdot\mathbf{r}}$:
-$Q \propto 2\omega > 0$ (positive frequency modes have positive charge).
+For a plane wave $\phi = e^{-i\omega t + i\mathbf{k}\cdot\mathbf{r}}$: $Q \propto 2\omega > 0$
+(positive frequency modes have positive charge).
 
 </details>
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Kinematic calculation**
+
+A car accelerates uniformly from $5.0\,\text{m\,s}^{-1}$ to $25\,\text{m\,s}^{-1}$ in
+$4.0\,\text{s}$. Calculate the acceleration and the distance travelled.
+
+**Solution:**
+
+Using $v = u + at$:
+
+$$a = \frac{v - u}{t} = \frac{25 - 5.0}{4.0} = 5.0\,\text{m\,s}^{-2}$$
+
+Using $s = ut + \frac{1}{2}at^2$:
+
+$$s = (5.0)(4.0) + \frac{1}{2}(5.0)(4.0)^2 = 20 + 40 = 60\,\text{m}$$
+
+## Summary
+
+- Newtonian mechanics: $\mathbf{F} = m\mathbf{a}$ for point particles; extensions to systems via
+  centre of mass and momentum conservation.
+- Lagrangian mechanics: $L = T - V$; Euler-Lagrange equations
+  $\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i} = \frac{\partial L}{\partial q_i}$ generalise
+  Newton's laws to generalised coordinates.
+- Hamiltonian mechanics: $H = \sum p_i \dot{q}_i - L$; Hamilton's equations provide a symplectic
+  formulation suited to phase space analysis.
+- Central forces: Kepler's laws derived from $F = -k/r^2$; effective potential and reduced mass
+  simplify two-body problems.
+- Rigid body dynamics: moment of inertia tensor, angular momentum
+  $\mathbf{L} = I\boldsymbol{\omega}$, Euler's equations for torque-free precession.
+
+## Cross-References
+
+| Topic                          | Site        | Link                                                                      |
+| ------------------------------ | ----------- | ------------------------------------------------------------------------- |
+| Electromagnetism               | WyattsNotes | [View](/docs/university/physics/electromagnetism)                         |
+| Quantum Mechanics              | WyattsNotes | [View](/docs/university/physics/quantum-mechanics)                        |
+| Thermal Physics                | WyattsNotes | [View](/docs/university/physics/thermal-physics)                          |
+| Classical Mechanics — MIT 8.01 | MIT OCW     | [View](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) |

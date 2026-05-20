@@ -31,27 +31,25 @@ $$
 The entry in row $i$ and column $j$ is denoted $a_{ij}$. The set of all $m \times n$ real matrices
 Is written $\mathcal{M}_{m \times n}(\mathbb{R})$.
 
-A column vector in $\mathbb{R}^n$ is an $n \times 1$ matrix, and a row vector is a
-$1 \times n$ Matrix. When the dimensions are equal ($m = n$), the matrix is called **square**.
+A column vector in $\mathbb{R}^n$ is an $n \times 1$ matrix, and a row vector is a $1 \times n$
+Matrix. When the dimensions are equal ($m = n$), the matrix is called **square**.
 
 ### Matrix Addition and Scalar Multiplication
 
-**Addition.** If $A, B \in \mathcal{M}_{m \times n}(\mathbb{R})$Then $A + B$ is defined
-Entry-wise:
+**Addition.** If $A, B \in \mathcal{M}_{m \times n}(\mathbb{R})$Then $A + B$ is defined Entry-wise:
 
 $$
 (A + B)_`\{ij}` = a_`\{ij}` + b_`\{ij}`
 $$
 
-**Scalar multiplication.** For $k \in \mathbb{R}$ and
-$A \in \mathcal{M}_{m \times n}(\mathbb{R})$:
+**Scalar multiplication.** For $k \in \mathbb{R}$ and $A \in \mathcal{M}_{m \times n}(\mathbb{R})$:
 
 $$
 (kA)_`\{ij}` = k \cdot a_`\{ij}`
 $$
 
-These operations satisfy the following axioms (making
-$\mathcal{M}_{m \times n}(\mathbb{R})$ a Vector space over $\mathbb{R}$):
+These operations satisfy the following axioms (making $\mathcal{M}_{m \times n}(\mathbb{R})$ a
+Vector space over $\mathbb{R}$):
 
 - $A + B = B + A$ (commutativity)
 - $(A + B) + C = A + (B + C)$ (associativity)
@@ -107,8 +105,8 @@ $D = \mathrm{diag}(d_1, d_2, \ldots, d_n)$.
 
 ### Transpose of a Matrix
 
-The **transpose** of $A \in \mathcal{M}_{m \times n}(\mathbb{R})$Written $A^T$Is the
-$n \times m$ matrix obtained by interchanging rows and columns:
+The **transpose** of $A \in \mathcal{M}_{m \times n}(\mathbb{R})$Written $A^T$Is the $n \times m$
+matrix obtained by interchanging rows and columns:
 
 $$
 (A^T)_`\{ij}` = a_`\{ji}`
@@ -338,8 +336,8 @@ $$A^{-1} = \frac{1}{3}\begin{pmatrix} 1 & -1 & 1 \\ 1 & 2 & -2 \\ -1 & 1 & 2 \en
 ### Solving Systems of Linear Equations
 
 A system of $n$ linear equations in $n$ unknowns can be written in matrix form as
-$A\mathbf{x} = \mathbf{b}$Where $A$ is the coefficient matrix, $\mathbf{x}$ is the
-column vector Of unknowns, and $\mathbf{b}$ is the column vector of constants.
+$A\mathbf{x} = \mathbf{b}$Where $A$ is the coefficient matrix, $\mathbf{x}$ is the column vector Of
+unknowns, and $\mathbf{b}$ is the column vector of constants.
 
 If $A$ is invertible, the unique solution is:
 
@@ -386,10 +384,10 @@ So $x = \frac{11}{5}$ and $y = \frac{6}{5}$.
 
 ## 4. 2D Geometric Transformations
 
-Every linear transformation $T: \mathbb{R}^2 \to \mathbb{R}^2$ can be represented by a
-$2 \times 2$ Matrix $M$ such that $T(\mathbf{v}) = M\mathbf{v}$. The images of the
-standard basis vectors $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ and
-$\begin{pmatrix} 0 \\ 1 \end{pmatrix}$ form the columns Of $M$.
+Every linear transformation $T: \mathbb{R}^2 \to \mathbb{R}^2$ can be represented by a $2 \times 2$
+Matrix $M$ such that $T(\mathbf{v}) = M\mathbf{v}$. The images of the standard basis vectors
+$\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$ form the columns
+Of $M$.
 
 ### Reflections
 
@@ -544,15 +542,15 @@ individual inverses are applied in reverse order.
 ### Invariant Points and Invariant Lines
 
 An **invariant point** under transformation $M$ is a point $\mathbf{v}$ such that
-$M\mathbf{v} = \mathbf{v}$I.e. $(M - I)\mathbf{v} = \mathbf{0}$. The set of
-invariant points forms The null space of $M - I$.
+$M\mathbf{v} = \mathbf{v}$I.e. $(M - I)\mathbf{v} = \mathbf{0}$. The set of invariant points forms
+The null space of $M - I$.
 
 For any $2 \times 2$ transformation matrix, the origin is always invariant.
 
 An **invariant line** is a line that is mapped onto itself (though individual points on the line may
 Move along it). A line through the origin with direction vector $\mathbf{d}$ is invariant if
-$M\mathbf{d} = \lambda \mathbf{d}$ for some scalar $\lambda$Which means
-$\mathbf{d}$ is an Eigenvector of $M$.
+$M\mathbf{d} = \lambda \mathbf{d}$ for some scalar $\lambda$Which means $\mathbf{d}$ is an
+Eigenvector of $M$.
 
 A line is **point-wise invariant** (every point is fixed) if and only if every point on it is an
 Invariant point, meaning the line lies entirely in the null space of $M - I$.
@@ -685,8 +683,8 @@ For a $2 \times 2$ matrix with a repeated eigenvalue $\lambda$:
 
 For a $3 \times 3$ matrix, the characteristic equation is a cubic polynomial in $\lambda$. The cubic
 Can have three distinct real roots, one repeated and one distinct real root, or one real root and
-Two complex conjugate roots. Since the IB course works over $\mathbb{R}$Only real eigenvalues
-and Eigenvectors are considered.
+Two complex conjugate roots. Since the IB course works over $\mathbb{R}$Only real eigenvalues and
+Eigenvectors are considered.
 
 :::info[Examples]
 
@@ -777,8 +775,7 @@ Eigenvectors. This is guaranteed when $A$ has $n$ distinct eigenvalues.
 
 1. Find the eigenvalues by solving $\det(A - \lambda I) = 0$.
 2. Find a corresponding eigenvector for each eigenvalue.
-3. Form $P = \begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 \end{pmatrix}$ (eigenvectors as
-   columns).
+3. Form $P = \begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 \end{pmatrix}$ (eigenvectors as columns).
 4. Form $D = \begin{pmatrix} \lambda_1 & 0 \\ 0 & \lambda_2 \end{pmatrix}$.
 5. Verify: $A = PDP^{-1}$Or equivalently, $P^{-1}AP = D$.
 
@@ -850,8 +847,7 @@ Augmented matrix to row echelon form (REF) or reduced row echelon form (RREF).
 
 - If $\mathrm{rank}(A) = \mathrm{rank}([A \mid \mathbf{b}]) = n$: unique solution.
 - If $\mathrm{rank}(A) = \mathrm{rank}([A \mid \mathbf{b}]) \lt n$: infinitely many solutions.
-- If $\mathrm{rank}(A) \lt \mathrm{rank}([A \mid \mathbf{b}])$: no solution (inconsistent
-  system).
+- If $\mathrm{rank}(A) \lt \mathrm{rank}([A \mid \mathbf{b}])$: no solution (inconsistent system).
 
 :::info[Examples]
 
@@ -883,8 +879,8 @@ Solution: $(x, y, z) = (1, 1, 2)$.
 
 ### Cramer's Rule
 
-Cramer's rule provides an explicit formula for the solution of a system
-$A\mathbf{x} = \mathbf{b}$ When $A$ is an $n \times n$ invertible matrix.
+Cramer's rule provides an explicit formula for the solution of a system $A\mathbf{x} = \mathbf{b}$
+When $A$ is an $n \times n$ invertible matrix.
 
 **For a $2 \times 2$ system:**
 
@@ -892,8 +888,8 @@ $$
 X = \frac{\begin`\{vmatrix}` e & b \\ f & d \end`\{vmatrix}`}{\det(A)}, \qquad y = \frac{\begin`\{vmatrix}` a & e \\ c & f \end`\{vmatrix}`}{\det(A)}
 $$
 
-Where the numerator for $x$ replaces the first column of $A$ with $\mathbf{b}$And the
-numerator For $y$ replaces the second column.
+Where the numerator for $x$ replaces the first column of $A$ with $\mathbf{b}$And the numerator For
+$y$ replaces the second column.
 
 **General formula (Cramer's Rule):** For each variable $x_i$:
 
@@ -1007,8 +1003,8 @@ $$
 $$
 
 **Steady state.** A steady-state (stationary) vector $\mathbf{s}$ satisfies
-$\mathbf{s}P = \mathbf{s}$Or equivalently, $\mathbf{s}(P - I) = \mathbf{0}$.
-This means $\mathbf{s}$ is a left eigenvector of $P$ with eigenvalue $1$.
+$\mathbf{s}P = \mathbf{s}$Or equivalently, $\mathbf{s}(P - I) = \mathbf{0}$. This means $\mathbf{s}$
+is a left eigenvector of $P$ with eigenvalue $1$.
 
 For a regular Markov chain (one where some power of $P$ has all positive entries), the steady-state
 Distribution exists, is unique, and is independent of the initial state. The eigenvalue $1$ is
@@ -1100,8 +1096,7 @@ $$
 (Q\mathbf{u}) \cdot (Q\mathbf{v}) = \mathbf{u} \cdot \mathbf{v}
 $$
 
-In particular, $|Q\mathbf{v}| = |\mathbf{v}|$ and the angle between vectors is
-preserved.
+In particular, $|Q\mathbf{v}| = |\mathbf{v}|$ and the angle between vectors is preserved.
 
 **Orthogonal diagonalisation (spectral theorem).** A real symmetric matrix $A$ can always be
 Orthogonally diagonalised: $A = QDQ^T$ where $Q$ is orthogonal and $D$ is diagonal. This is a
@@ -1125,7 +1120,7 @@ That can be chosen orthonormal.
 | Rotation by $\theta$            | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$         |         |     |
 | Reflection in $y = x\tan\theta$ | $\begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}$ |         |     |
 | Cramer's rule                   | $x_i = \det(A_i)/\det(A)$                                                                   |         |     |
-| Steady state of Markov chain    | $\mathbf{s}P = \mathbf{s}$$\sum s_i = 1$                                        |         |     |
+| Steady state of Markov chain    | $\mathbf{s}P = \mathbf{s}$$\sum s_i = 1$                                                    |         |     |
 
 <details>
 <summary>Worked Example: Finding Eigenvalues and Eigenvectors</summary>
@@ -1375,8 +1370,8 @@ $P = \begin{pmatrix} 0.6 & 0.3 \\ 0.4 & 0.7 \end{pmatrix}$. Find the steady-stat
 <details>
 <summary>Solution</summary>
 
-Solve $\mathbf{s}P = \mathbf{s}$ where
-$\mathbf{s} = \begin{pmatrix} s_1 & s_2 \end{pmatrix}$ with $s_1 + s_2 = 1$.
+Solve $\mathbf{s}P = \mathbf{s}$ where $\mathbf{s} = \begin{pmatrix} s_1 & s_2 \end{pmatrix}$ with
+$s_1 + s_2 = 1$.
 
 From $\mathbf{s}P = \mathbf{s}$:
 
@@ -1464,8 +1459,7 @@ $$= \frac{1}{2}\begin{pmatrix} 1 & 81 \\ -1 & 81 \end{pmatrix}\begin{pmatrix} 1 
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+2. Assuming matrix multiplication is commutative — in general $AB \neq BA$.

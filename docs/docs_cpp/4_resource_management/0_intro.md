@@ -39,12 +39,12 @@ Covered in detail in Module 13. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Ignoring feedback from marked work and failing to address recurring weaknesses.
 
-## Summary
+2. Memorising content without understanding the underlying principles — this leads to poor
+   application in unfamiliar contexts.
 
-<!-- TODO: Add a summary for this topic -->
+3. Not making connections between different topics within the subject to build a coherent
+   understanding.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Not practising with past papers or exercises under timed conditions.

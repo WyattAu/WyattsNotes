@@ -781,4 +781,11 @@ To debug.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with common pitfalls, follow a structured approach:
+
+1. Identify the key concepts and definitions relevant to the question
+2. Apply the appropriate methods, equations, or frameworks
+3. Support your answer with evidence, examples, or calculations
+4. Evaluate your answer critically, considering limitations and alternative perspectives

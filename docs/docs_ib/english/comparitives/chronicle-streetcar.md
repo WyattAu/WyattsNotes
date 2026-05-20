@@ -630,12 +630,12 @@ Audience's understanding of the central themes?"
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Summary
+2. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-<!-- TODO: Add a summary for this topic -->
+3. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.

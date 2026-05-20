@@ -1109,12 +1109,12 @@ His reforms.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Failing to evaluate the reliability and provenance of sources before using them as evidence.
 
-## Summary
+2. Confusing causes, events, and consequences — be clear about chronological and causal
+   relationships.
 
-<!-- TODO: Add a summary for this topic -->
+3. Presenting facts without analysis — examiners want to see interpretation, not just description.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Presenting a one-sided argument without considering alternative interpretations or
+   counter-evidence.

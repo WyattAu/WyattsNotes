@@ -889,12 +889,13 @@ which may differ from the MST. These are different optimisation problems with di
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-## Summary
+2. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).

@@ -1251,12 +1251,12 @@ _mta-sts.example.com. IN TXT "v=STSv1; id=2026040901"
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Not making connections between different topics within the subject to build a coherent
+   understanding.
 
-## Summary
+2. Focusing only on content knowledge without developing exam technique and question-answering
+   skills.
 
-<!-- TODO: Add a summary for this topic -->
+3. Not practising with past papers or exercises under timed conditions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Ignoring feedback from marked work and failing to address recurring weaknesses.

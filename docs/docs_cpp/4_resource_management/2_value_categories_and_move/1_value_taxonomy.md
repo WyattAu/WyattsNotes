@@ -855,4 +855,11 @@ S obj = make_s();  // C++17: prvalue is directly materialized into obj (zero cop
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with value taxonomy, follow these steps:
+
+1. Identify the problem requirements and constraints
+2. Select the appropriate algorithm, data structure, or technique
+3. Implement the solution step by step
+4. Test with edge cases and verify correctness

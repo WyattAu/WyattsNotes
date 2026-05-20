@@ -355,13 +355,13 @@ $$\prescript{A}{Z}\mathrm{X}^* \to \prescript{A}{Z}\mathrm{X} + \gamma$$
 Gamma rays are highly penetrating but weakly ionising. They require thick lead or concrete for
 Shielding.
 
-| Property          | Alpha ($\alpha$)                        | Beta ($\beta$)      | Gamma ($\gamma$) |
-| ----------------- | --------------------------------------- | ------------------- | ---------------- |
+| Property          | Alpha ($\alpha$)                      | Beta ($\beta$)      | Gamma ($\gamma$) |
+| ----------------- | ------------------------------------- | ------------------- | ---------------- |
 | Particle          | $\prescript{4}{2}\mathrm{He}$ nucleus | Electron / Positron | Photon           |
-| Charge            | $+2e$                                   | $\pm e$             | 0                |
-| Ionising power    | High                                    | Moderate            | Low              |
-| Penetrating power | Low                                     | Moderate            | High             |
-| Stopped by        | Paper / few cm air                      | Aluminium           | Lead / concrete  |
+| Charge            | $+2e$                                 | $\pm e$             | 0                |
+| Ionising power    | High                                  | Moderate            | Low              |
+| Penetrating power | Low                                   | Moderate            | High             |
+| Stopped by        | Paper / few cm air                    | Aluminium           | Lead / concrete  |
 
 ### 2.3 Half-Life and Decay Constant
 
@@ -439,8 +439,7 @@ All nuclear reactions must satisfy the following conservation laws:
 
 Complete the following nuclear equations:
 
-(a)
-$\prescript{238}{92}\mathrm{U} \to \prescript{234}{90}\mathrm{Th} + \prescript{4}{2}\mathrm{He}$
+(a) $\prescript{238}{92}\mathrm{U} \to \prescript{234}{90}\mathrm{Th} + \prescript{4}{2}\mathrm{He}$
 
 This is alpha decay. Check conservation: $A = 238 = 234 + 4$ and $Z = 92 = 90 + 2$.
 
@@ -489,9 +488,8 @@ nucleon Against mass number gives the binding energy curve, which shows:
 - The curve peaks around $A \approx 56$ (iron-56 is the most stable nucleus).
 - Heavy nuclei (e.g., uranium) have lower binding energy per nucleon.
 
-The **most stable** nucleus is $\prescript{62}{28}\mathrm{Ni}$ or
-$\prescript{56}{26}\mathrm{Fe}$ With the highest binding energy per nucleon of approximately
-$8.8\,\mathrm{MeV/nucleon}$.
+The **most stable** nucleus is $\prescript{62}{28}\mathrm{Ni}$ or $\prescript{56}{26}\mathrm{Fe}$
+With the highest binding energy per nucleon of approximately $8.8\,\mathrm{MeV/nucleon}$.
 
 <details>
 <summary>Worked Example: Binding Energy of Helium-4</summary>
@@ -1124,4 +1122,17 @@ For the A-Level treatment of this topic, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing atomic number (protons) with mass number (protons + neutrons).
+
+2. Forgetting that radioactive decay is random and spontaneous — it cannot be predicted for
+   individual nuclei.
+
+3. Misunderstanding that half-life is constant regardless of the initial amount of substance.
+
+4. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
+
+5. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
+
+6. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.

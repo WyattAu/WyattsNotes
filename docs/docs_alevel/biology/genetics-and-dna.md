@@ -1988,12 +1988,16 @@ specific positions.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing genotype (genetic makeup) with phenotype (observable characteristics).
 
-## Summary
+2. Forgetting that a recessive allele can be present in a carrier without being expressed in the
+   phenotype.
 
-<!-- TODO: Add a summary for this topic -->
+3. Failing to link structure to function when describing biological molecules, cells, or organs.
 
-## Worked Examples
+4. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Using anecdotal evidence or small sample sizes as though they constitute robust scientific data.
+
+6. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').

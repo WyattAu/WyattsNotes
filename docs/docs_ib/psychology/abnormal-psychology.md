@@ -550,12 +550,13 @@ dimensional framework that organises psychopathology along a series of continuou
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Failing to discuss ethical issues (informed consent, deception, debriefing, right to withdraw)
+   when evaluating studies.
 
-## Summary
+2. Confusing correlation and causation in psychological research evidence.
 
-<!-- TODO: Add a summary for this topic -->
+3. Stating that 'the results show' without considering whether the findings can be generalised
+   beyond the sample.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing the approaches (biological, cognitive, behavioural, psychodynamic, humanistic) and
+   their key assumptions.

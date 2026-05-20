@@ -614,8 +614,16 @@ int main() {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to algebraic error handling —
+std::optional and std::variant, including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- quadratic equations and the discriminant
+- simultaneous equations
+- polynomial division and the factor theorem
+- partial fractions
+- binomial expansion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

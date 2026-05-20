@@ -56,8 +56,8 @@ $$Z = 11, \quad A = 11 + 12 = 23$$ $$\mathrm{Electron configuration:  2, 8, 1$$
 Write its full notation.
 
 The atomic number $Z = 9$Which is fluorine. The mass number $A = 9 + 10 = 19$. The notation is
-$\prescript{19}{9}\mathrm{F$. Since the number of protons equals the number of electrons, this
-is a Neutral fluorine atom.
+$\prescript{19}{9}\mathrm{F$. Since the number of protons equals the number of electrons, this is a
+Neutral fluorine atom.
 
 **Worked Example.** An ion has 8 protons, 8 neutrons, and 10 electrons. Identify the ion and give
 Its charge.
@@ -734,16 +734,16 @@ what happens when sodium reacts with chlorine. Include the electron transfers in
 Sodium has one electron in its outer shell. It is highly reactive because it can lose this single
 outer electron to achieve a stable noble gas electron configuration (2, 8). When sodium reacts with
 chlorine, sodium loses its outer electron to form a $\mathrm{Na^+$ ion, and chlorine gains this
-electron to form a $\mathrm{Cl^-$ ion. The electrostatic attraction between these oppositely
-charged ions forms ionic bonds in sodium chloride ($\mathrm{NaCl$).
+electron to form a $\mathrm{Cl^-$ ion. The electrostatic attraction between these oppositely charged
+ions forms ionic bonds in sodium chloride ($\mathrm{NaCl$).
 
 </details>
 
 <details>
 <summary>Question 2: Relative atomic mass calculation</summary>
 
-Chlorine has two isotopes: $\mathrm{Cl$-35 (75.8% abundance) and $\mathrm{Cl$-37 (24.2%
-abundance). Calculate the relative atomic mass of chlorine.
+Chlorine has two isotopes: $\mathrm{Cl$-35 (75.8% abundance) and $\mathrm{Cl$-37 (24.2% abundance).
+Calculate the relative atomic mass of chlorine.
 
 </details>
 
@@ -822,8 +822,16 @@ to attract an additional electron. Fluorine is more reactive than iodine.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of atomic structure, including key reactions, underlying
+theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key chemical principles and theories
+- mathematical relationships in chemistry
+- practical techniques and apparatus
+- applications of chemistry in industry
+- environmental and ethical considerations
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

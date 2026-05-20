@@ -240,8 +240,7 @@ And therefore exhausts its fuel much faster. More massive stars have **shorter**
 1. **Main sequence** --- hydrogen fuses to helium in the core ($\sim 10^{10}$ years for solar-mass
    stars).
 2. **Red giant** --- hydrogen shell burning causes the envelope to expand and cool. A helium flash
-   ignites helium fusion in the core ($^{4}\mathrm{He}$ to $^{12}\mathrm{C}$ and
-   $^{16}\mathrm{O}$).
+   ignites helium fusion in the core ($^{4}\mathrm{He}$ to $^{12}\mathrm{C}$ and $^{16}\mathrm{O}$).
 3. **Planetary nebula** --- the outer layers are gently ejected, exposing the hot core.
 4. **White dwarf** --- the remaining core ( $\sim 0.6\;M_\odot$), supported by **electron degeneracy
    pressure**. No fusion occurs; it slowly cools over billions of years.
@@ -813,12 +812,13 @@ Converting to megaparsecs: $d = 4.99 \times 10^{24}/(3.09 \times 10^{22}) = 161$
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-## Summary
+2. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-<!-- TODO: Add a summary for this topic -->
+3. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.

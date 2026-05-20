@@ -975,8 +975,14 @@ consumer goods at any given level of capital goods production.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Stating that 'demand falls' without specifying whether it is a contraction (movement along) or a
+   decrease (shift) of the demand curve.
 
-## Summary
+2. Confusing nominal and real values — always adjust for inflation when comparing monetary values
+   across time.
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting to consider the ceteris paribus assumption when analysing multi-variable economic
+   scenarios.
+
+4. Using circular reasoning by assuming the conclusion when evaluating economic policy
+   effectiveness.

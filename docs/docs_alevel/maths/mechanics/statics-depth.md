@@ -423,12 +423,13 @@ $T = \frac◆LB◆120 + 360◆RB◆◆LB◆6/\sqrt{13}◆RB◆ = \frac◆LB◆48
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Summary
+2. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.

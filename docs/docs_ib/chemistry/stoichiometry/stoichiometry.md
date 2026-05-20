@@ -1043,8 +1043,13 @@ For the A-Level treatment of this topic, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to balance equations before performing calculations — always check that atoms and
+   charges balance on both sides.
 
-## Worked Examples
+2. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
+   overall charge.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
+
+4. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.

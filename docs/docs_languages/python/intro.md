@@ -14,7 +14,46 @@ categories:
 
 ## Abstract
 
-This resource is created as a aggregation of best practices in Python.
+This resource is created as an aggregation of best practices in Python. It covers idiomatic Python
+patterns, the standard library, and common patterns used in data science, web development, and
+systems programming.
+
+## Topics Covered
+
+### Core Language
+
+- **Data types and structures** — `int`, `float`, `str`, `bool`, `list`, `tuple`, `dict`, `set`;
+  mutability and immutability
+- **Control flow** — `if`/`elif`/`else`, `for` loops (iterable-based), `while`, `break`/`continue`,
+  comprehensions (list, dict, set, generator)
+- **Functions** — positional and keyword arguments, `*args`/`**kwargs`, default arguments, lambdas,
+  decorators, closures
+- **Classes and OOP** — classes, instances, `__init__`, methods, class methods, static methods,
+  inheritance, `super()`, dunder methods, dataclasses
+- **Modules and packages** — `import`, `from ... import`, `__name__ == "__main__"`, package
+  structure, `pyproject.toml`
+
+### Standard Library
+
+- **`collections`** — `defaultdict`, `Counter`, `OrderedDict`, `namedtuple`, `deque`
+- **`itertools`** — `chain`, `product`, `permutations`, `combinations`, `groupby`
+- **`pathlib`** — modern path handling; prefer over `os.path`
+- **`typing`** — type hints, `Optional`, `Union`, `Generic`, `Protocol`, `Callable`
+- **`dataclasses`** — `@dataclass` for boilerplate-free class definitions
+- **`asyncio`** — async/await, coroutines, event loops, `asyncio.gather`
+
+### Best Practices
+
+- **PEP 8** — style guide; use `ruff` or `black` for formatting
+- **Type hints** — annotate all public functions; use `mypy` for static checking
+- **Error handling** — prefer specific exceptions; use `try`/`except`/`else`/`finally`; avoid bare
+  `except`
+- **Testing** — `pytest` fixtures, parametrised tests, mocking with `unittest.mock`
+- **Virtual environments** — `venv`, `uv`, `poetry`; always isolate project dependencies
+
+## Code Examples
+
+All code examples run under Python 3.12+ unless otherwise noted.
 
 <div className="godbolt-container">
  <iframe

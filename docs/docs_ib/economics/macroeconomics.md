@@ -3167,4 +3167,16 @@ New unemployment $= 7 - 2 = 5\%$ (the natural rate). The output gap is fully clo
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the economic theories and principles related to macroeconomics, including key
+models, evidence, and policy implications.
+
+**Key concepts include:**
+
+- aggregate demand and supply
+- fiscal and monetary policy
+- inflation and unemployment
+- economic growth and development
+- international trade and exchange rates
+
+The ability to apply these theories to real-world data and evaluate policy decisions is central to
+success in this subject.

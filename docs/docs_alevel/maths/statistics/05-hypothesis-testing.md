@@ -307,8 +307,8 @@ Refers to the long-run proportion of intervals (across many repeated samples) th
 
 ### 10.2 95% confidence interval for a population proportion
 
-For large $n$ where $n\hat{p} \gt 5$ and $n(1 - \hat{p}) \gt 5$The sample proportion $\hat{p}$
-Is approximately normal. The $100(1-\alpha)\%$ confidence interval for $p$ is:
+For large $n$ where $n\hat{p} \gt 5$ and $n(1 - \hat{p}) \gt 5$The sample proportion $\hat{p}$ Is
+approximately normal. The $100(1-\alpha)\%$ confidence interval for $p$ is:
 
 $$\hat{p} \pm z_{\alpha/2}\sqrt◆LB◆\dfrac{\hat{p}(1 - \hat{p})}{n}◆RB◆$$
 
@@ -360,9 +360,9 @@ Direction, so the $p$-value is doubled.
 
 The smaller the $p$-value, the stronger the evidence against $H_0$:
 
-| $p$-value range           | Strength of evidence against $H_0$ |
-| ------------------------- | ---------------------------------- |
-| $p \geq 0.10$             | Little to no evidence              |
+| $p$-value range         | Strength of evidence against $H_0$ |
+| ----------------------- | ---------------------------------- |
+| $p \geq 0.10$           | Little to no evidence              |
 | $0.05 \leq p \lt 0.10$  | Weak evidence                      |
 | $0.01 \leq p \lt 0.05$  | Moderate evidence                  |
 | $0.001 \leq p \lt 0.01$ | Strong evidence                    |
@@ -518,8 +518,7 @@ Under $H_0$: $X \sim B(20, 0.5)$.
 For each tail, we need $P(X \leq c_L) \leq 0.05$ and $P(X \geq c_U) \leq 0.05$.
 
 Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$$P(X \leq 6) \approx 0.0577 \gt 0.05$. So $c_L = 5$.
-Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$$P(X \geq 14) \approx 0.0577 \gt 0.05$. So
-$c_U = 15$.
+Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$$P(X \geq 14) \approx 0.0577 \gt 0.05$. So $c_U = 15$.
 
 Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times 0.0207 = 0.0414$.
 
@@ -668,8 +667,7 @@ In a random sample of 150 voters, 87 support a new policy. (a) Construct a 95% c
 <summary>Solution 13</summary>
 (a) $\hat{p} = 87/150 = 0.58$.
 
-Check: $n\hat{p} = 150 \times 0.58 = 87 \gt 5$ and
-$n(1 - \hat{p}) = 150 \times 0.42 = 63 \gt 5$.
+Check: $n\hat{p} = 150 \times 0.58 = 87 \gt 5$ and $n(1 - \hat{p}) = 150 \times 0.42 = 63 \gt 5$.
 
 $$95\%\mathrm{ CI} = 0.58 \pm 1.96\sqrt◆LB◆\dfrac{0.58 \times 0.42}{150}◆RB◆ = 0.58 \pm 1.96 \times 0.0403$$
 
@@ -776,12 +774,13 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Summary
+2. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-<!-- TODO: Add a summary for this topic -->
+3. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.

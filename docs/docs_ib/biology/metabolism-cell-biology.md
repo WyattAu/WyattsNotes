@@ -1522,4 +1522,16 @@ molecules: $150 \times 6.022 \times 10^{23} = 9.03 \times 10^{25}$ ATP molecules
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of metabolism and cell biology, including key concepts,
+experimental evidence, and real-world applications.
+
+**Key concepts include:**
+
+- cell structure (prokaryotic vs eukaryotic)
+- cell ultrastructure (organelles)
+- microscopy and resolution
+- cell division (mitosis and meiosis)
+- the cell cycle
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

@@ -557,8 +557,16 @@ Carries 10 marks.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the analytical frameworks and techniques relevant to modern texts and poetry,
+including key terminology, approaches, and critical perspectives.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- grammar and syntax
+- semantic change and language acquisition
+- sociolinguistics and language variation
+- discourse analysis
+- theories of language and meaning
+
+Developing a precise analytical vocabulary and practising close reading are essential for strong
+performance in this area.

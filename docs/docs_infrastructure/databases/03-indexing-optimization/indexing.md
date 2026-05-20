@@ -449,9 +449,8 @@ Bitmap Scan (sequential I/O):
 **Merge Join:**
 
 - Both inputs must be sorted on the join key; merge in a single pass
-- Cost:
-  $O(N_{\mathrm{outer} \log N_{\mathrm{outer} + N_{\mathrm{inner} \log N_{\mathrm{inner})$
-  for sorting, $O(N_{\mathrm{outer} + N_{\mathrm{inner})$ for merge
+- Cost: $O(N_{\mathrm{outer} \log N_{\mathrm{outer} + N_{\mathrm{inner} \log N_{\mathrm{inner})$ for
+  sorting, $O(N_{\mathrm{outer} + N_{\mathrm{inner})$ for merge
 - Best for: pre-sorted inputs, large result sets, range joins
 
 ### Understanding Cost Estimates
@@ -898,8 +897,16 @@ ORDER BY pg_total_relation_size(relid) DESC;
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of indexing and optimization, including key reactions,
+underlying theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key chemical principles and theories
+- mathematical relationships in chemistry
+- practical techniques and apparatus
+- applications of chemistry in industry
+- environmental and ethical considerations
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

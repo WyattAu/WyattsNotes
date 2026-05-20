@@ -223,8 +223,8 @@ Source).
   collected has a high sucrose concentration (up to 30%).
 - Ringing a stem (removing a ring of bark containing phloem) causes swelling above the ring as
   sugars accumulate. The tissue below the ring dies as it is cut off from its sugar supply.
-- Radioactive tracers ($^{14}\mathrm{C$ in $CO_2$) fed to leaves show movement of labelled
-  sugars to other parts of the plant through the phloem.
+- Radioactive tracers ($^{14}\mathrm{C$ in $CO_2$) fed to leaves show movement of labelled sugars to
+  other parts of the plant through the phloem.
 - Phloem sap always flows from source to sink, not in the reverse direction.
 
 **Limitations of the mass flow hypothesis:**
@@ -727,4 +727,17 @@ Lower water potential by osmosis across the selectively permeable cell membrane.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Comparing mitosis and meiosis**
+
+Compare mitosis and meiosis in terms of the number of divisions, daughter cells produced, and
+genetic variation.
+
+**Solution:**
+
+| Feature           | Mitosis                              | Meiosis                                     |
+| ----------------- | ------------------------------------ | ------------------------------------------- |
+| Divisions         | 1                                    | 2                                           |
+| Daughter cells    | 2                                    | 4                                           |
+| Chromosome number | Same as parent                       | Half of parent                              |
+| Genetic variation | No                                   | Yes (crossing over, independent assortment) |
+| Function          | Growth, repair, asexual reproduction | Production of gametes                       |

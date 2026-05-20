@@ -751,4 +751,16 @@ And sends the frame there.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of network fundamentals, including underlying theory, practical
+implementation, and key applications.
+
+**Key concepts include:**
+
+- TCP/IP and the OSI model
+- network topologies
+- protocols (HTTP, FTP, SMTP)
+- encryption and security
+- client-server and peer-to-peer
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

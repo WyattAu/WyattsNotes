@@ -233,12 +233,14 @@ Examination session and vary from session to session depending on the difficulty
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-## Summary
+2. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.

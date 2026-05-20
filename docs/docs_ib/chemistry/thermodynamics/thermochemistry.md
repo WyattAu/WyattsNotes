@@ -965,8 +965,14 @@ For the A-Level treatment of this topic, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.
 
-## Worked Examples
+2. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
+
+4. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.

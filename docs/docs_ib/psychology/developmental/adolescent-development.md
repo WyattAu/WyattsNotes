@@ -265,12 +265,12 @@ For an overview of developmental topics, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Making generalisations without supporting case study evidence — always reference specific
+   locations and data.
 
-## Summary
+2. Neglecting to consider multiple scales (local, regional, national, global) in geographical
+   analysis.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing weather and climate, or short-term events with long-term trends.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Failing to distinguish between primary and secondary data sources in geographical research.

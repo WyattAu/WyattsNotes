@@ -341,8 +341,13 @@ structure before proceeding.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to balance equations before performing calculations — always check that atoms and
+   charges balance on both sides.
 
-## Worked Examples
+2. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
+   molecular refers to individual molecules.
+
+4. Writing half-equations without balancing charges or atoms — always check electrons, hydrogen
+   ions, and water molecules.

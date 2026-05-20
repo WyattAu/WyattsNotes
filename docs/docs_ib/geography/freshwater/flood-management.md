@@ -279,12 +279,13 @@ For related topics, see [./drainage-basins-and-hydrology](./drainage-basins-and-
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Summary
+2. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.

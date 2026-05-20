@@ -79,8 +79,8 @@ Confirmed.
 :::info
 
 The domain of $f^{-1}$ equals the range of $f$And vice versa. A function has an inverse if and Only
-if it is a **bijection** (both one-to-one and onto). For functions
-$\mathbb{R} \to \mathbb{R}$ This means the function must be strictly monotone.
+if it is a **bijection** (both one-to-one and onto). For functions $\mathbb{R} \to \mathbb{R}$ This
+means the function must be strictly monotone.
 
 :::
 
@@ -453,9 +453,9 @@ $$
 Optimisation problems require you to express the quantity to be optimised as a function of a single
 Variable, then find the stationary points.
 
-**Example:** A rectangular box with a square base has a volume of $128 \mathrm{ cm^3$. The
-material For the base costs 5 pence per $\mathrm{cm^2$ and the material for the sides costs 3
-pence per $\mathrm{cm^2$. Find the dimensions that minimise the cost.
+**Example:** A rectangular box with a square base has a volume of $128 \mathrm{ cm^3$. The material
+For the base costs 5 pence per $\mathrm{cm^2$ and the material for the sides costs 3 pence per
+$\mathrm{cm^2$. Find the dimensions that minimise the cost.
 
 Let the base have side length $x$ cm and height $h$ cm.
 
@@ -739,8 +739,16 @@ $y^2 = x^2 + 3$Giving $y = \sqrt{x^2 + 3}$ (taking the positive root since $y = 
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to algebra and calculus,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- quadratic equations and the discriminant
+- simultaneous equations
+- polynomial division and the factor theorem
+- partial fractions
+- binomial expansion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

@@ -141,8 +141,8 @@ We define **inflation** as a sustained increase in the general price level over 
 
 $$\mathrm{Inflation rate} = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%$$
 
-**Deflation**: a sustained _decrease_ in the general price level ($\pi \lt 0$). **Disinflation**:
-A _reduction_ in the rate of inflation (prices still rising, but more slowly).
+**Deflation**: a sustained _decrease_ in the general price level ($\pi \lt 0$). **Disinflation**: A
+_reduction_ in the rate of inflation (prices still rising, but more slowly).
 
 ### 2.2 Measuring Inflation
 
@@ -301,7 +301,7 @@ Discouraged workers, homemakers).
 
 | Type           | Cause                                                       | Remedy                                                |
 | -------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
-| **Cyclical**   | Insufficient aggregate demand ($Y \lt Y_{fe}$)            | Demand-side policy                                    |
+| **Cyclical**   | Insufficient aggregate demand ($Y \lt Y_{fe}$)              | Demand-side policy                                    |
 | **Structural** | Mismatch between skills/location of workers and jobs        | Retraining, geographical mobility, supply-side policy |
 | **Frictional** | Time taken to match workers with jobs (search, transitions) | Improve job information, reduce search costs          |
 | **Seasonal**   | Regular seasonal patterns (agriculture, tourism)            | Limited scope for policy                              |
@@ -1364,8 +1364,14 @@ better on liveability indicators.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing a movement along a curve with a shift of the curve — movements are caused by price
+   changes; shifts by non-price determinants.
 
-## Summary
+2. Stating that 'demand falls' without specifying whether it is a contraction (movement along) or a
+   decrease (shift) of the demand curve.
 
-<!-- TODO: Add a summary for this topic -->
+3. Using circular reasoning by assuming the conclusion when evaluating economic policy
+   effectiveness.
+
+4. Confusing nominal and real values — always adjust for inflation when comparing monetary values
+   across time.

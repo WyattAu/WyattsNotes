@@ -878,8 +878,11 @@ and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-## Worked Examples
+2. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing the nth term formula $a_n$ with the sum formula $S_n$ — the sum is the cumulative total
+   of all terms.

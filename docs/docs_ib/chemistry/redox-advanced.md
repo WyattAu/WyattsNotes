@@ -903,4 +903,16 @@ $E_{\mathrm{cell}}^\circ = 1.23\;\mathrm{V}$And calculate the voltage efficiency
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of redox reactions (advanced), including key reactions,
+underlying theories, and practical applications.
+
+**Key concepts include:**
+
+- standard electrode potentials
+- electrochemical cells
+- electrolysis and Faraday's laws
+- corrosion and prevention
+- fuel cells
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

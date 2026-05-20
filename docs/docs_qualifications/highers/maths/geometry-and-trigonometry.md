@@ -663,16 +663,15 @@ $$
 
 ### Distance Between Two Skew Lines
 
-The shortest distance between two skew lines
-$\mathbf{r}_1 = \mathbf{a}_1 + t\mathbf{d}_1$ and
+The shortest distance between two skew lines $\mathbf{r}_1 = \mathbf{a}_1 + t\mathbf{d}_1$ and
 $\mathbf{r}_2 = \mathbf{a}_2 + s\mathbf{d}_2$ is:
 
 $$
 D = \frac{|(\mathbf{a}_2 - \mathbf{a}_1) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)|}{|\mathbf{d}_1 \times \mathbf{d}_2|}
 $$
 
-**Example:** Find the shortest distance between the skew lines
-$\mathbf{r} = (1, 0, 0) + s(1, 2, 0)$ And $\mathbf{r} = (0, 0, 1) + t(0, 1, 1)$.
+**Example:** Find the shortest distance between the skew lines $\mathbf{r} = (1, 0, 0) + s(1, 2, 0)$
+And $\mathbf{r} = (0, 0, 1) + t(0, 1, 1)$.
 
 $\mathbf{a}_2 - \mathbf{a}_1 = (-1, 0, 1)$.
 
@@ -758,8 +757,8 @@ $$
 
 11. Solve $2\sin^2 x + 3\cos x - 3 = 0$ for $0 \le x \lt 2\pi$.
 
-12. Find the shortest distance between the skew lines $\mathbf{r} = (1, 0, 0) + s(1, 2, 0)$
-    and $\mathbf{r} = (0, 0, 1) + t(0, 1, 1)$.
+12. Find the shortest distance between the skew lines $\mathbf{r} = (1, 0, 0) + s(1, 2, 0)$ and
+    $\mathbf{r} = (0, 0, 1) + t(0, 1, 1)$.
 
 13. Find the angle between the lines $\mathbf{r} = (0, 0, 0) + s(1, 2, -1)$ and
     $\mathbf{r} = (1, 1, 0) + t(2, -1, 3)$.
@@ -773,8 +772,16 @@ $$
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to geometry and trigonometry,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- sine, cosine, and tangent functions
+- trigonometric identities
+- solving trigonometric equations
+- the sine and cosine rules
+- radian measure and arc length
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

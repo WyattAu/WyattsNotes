@@ -236,12 +236,13 @@ At [../climate-change](../climate-change).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-## Summary
+2. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.

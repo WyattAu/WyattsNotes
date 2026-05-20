@@ -1139,12 +1139,13 @@ Example result:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
 
-## Summary
+2. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
+   molecular refers to individual molecules.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
+   overall charge.

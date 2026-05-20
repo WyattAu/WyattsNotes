@@ -694,12 +694,19 @@ The same energy.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing temperature with thermal energy — temperature is a measure of average kinetic energy,
+   not total energy.
 
-## Summary
+2. Forgetting that work done on a gas is positive when the gas is compressed ($W = p\Delta V$ with
+   sign convention).
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
 
-## Worked Examples
+4. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
+
+6. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.

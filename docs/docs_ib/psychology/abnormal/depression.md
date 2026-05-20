@@ -254,12 +254,12 @@ For an overview of abnormal psychology topics, see [Abnormal Psychology](../abno
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing correlation and causation in psychological research evidence.
 
-## Summary
+2. Stating that 'the results show' without considering whether the findings can be generalised
+   beyond the sample.
 
-<!-- TODO: Add a summary for this topic -->
+3. Presenting theories without the supporting empirical evidence that led to their acceptance.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Describing a study without evaluating its methodology (e.g., sample, controls, ecological
+   validity).

@@ -939,12 +939,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-## Summary
+2. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-<!-- TODO: Add a summary for this topic -->
+3. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.

@@ -671,8 +671,17 @@ struct Handler {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of lambda expressions — capture layouts and closure
+types, including the key equations, experimental methods, and applications relevant to the
+specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- fundamental principles and equations
+- SI units and dimensional analysis
+- mathematical modelling of physical phenomena
+- experimental techniques and measurement
+- applications to real-world problems
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

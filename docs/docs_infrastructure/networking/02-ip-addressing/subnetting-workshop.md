@@ -857,4 +857,16 @@ In standard networking, but only 251 in AWS (5 reserved, not 2). Always subtract
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential concepts and techniques related to subnetting workshop, including
+key principles and practical applications.
+
+**Key concepts include:**
+
+- core concepts and definitions
+- key principles and frameworks
+- practical applications
+- common techniques and methods
+- evaluation and critical analysis
+
+A thorough understanding of these concepts, combined with regular practice and review, is essential
+for mastery of this topic.

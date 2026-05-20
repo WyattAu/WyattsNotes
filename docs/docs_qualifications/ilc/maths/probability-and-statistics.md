@@ -293,8 +293,7 @@ $$
 
 ### Binomial Distribution (HL)
 
-$X \sim \mathrm{Bin(n, p)$ where $n$ is the number of trials and $p$ is the probability of
-success.
+$X \sim \mathrm{Bin(n, p)$ where $n$ is the number of trials and $p$ is the probability of success.
 
 $$
 P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
@@ -439,8 +438,7 @@ $$
 
 A box plot displays five statistics: minimum, $Q_1$Median, $Q_3$Maximum.
 
-**Outlier:** A value below $Q_1 - 1.5 \times \mathrm{IQR$ or above
-$Q_3 + 1.5 \times \mathrm{IQR$.
+**Outlier:** A value below $Q_1 - 1.5 \times \mathrm{IQR$ or above $Q_3 + 1.5 \times \mathrm{IQR$.
 
 **Example (HL):** A data set has $Q_1 = 25$$Q_3 = 45$Minimum $= 10$Maximum $= 65$. Identify Any
 outliers.
@@ -649,8 +647,8 @@ Of the data (interpolation). Extrapolation beyond the data range is unreliable.
 ### Higher Level
 
 1. $X \sim \mathrm{Bin(15, 0.3)$. Find $P(X \geq 10)$.
-2. Heights are normally distributed with $\mu = 170\mathrm{ cm$ and $\sigma = 8\mathrm{ cm$.
-   Find the probability a randomly selected person is between 160 cm and 180 cm tall.
+2. Heights are normally distributed with $\mu = 170\mathrm{ cm$ and $\sigma = 8\mathrm{ cm$. Find
+   the probability a randomly selected person is between 160 cm and 180 cm tall.
 3. A sample of 8 measurements has $\bar{x} = 23.4$ and $s = 2.1$. Test at the 5% level whether the
    population mean is 25.
 4. For the data set $\{(1,3), (2,5), (3,4), (4,7), (5,6)\}$Find the correlation coefficient $r$ and
@@ -758,8 +756,16 @@ Sequences may deviate significantly.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to probability and statistics,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- measures of central tendency and spread
+- probability distributions (binomial, normal)
+- hypothesis testing
+- correlation and regression
+- sampling methods
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

@@ -1043,12 +1043,13 @@ Of these mechanisms addresses a separate concern, and they compose without confl
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-## Summary
+2. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.

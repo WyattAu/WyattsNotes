@@ -703,11 +703,11 @@ Function $h_i$ maps an element to a row and column.
 
 ### Operations
 
-| Operation | Algorithm                                  | Time   | Error                      |
-| --------- | ------------------------------------------ | ------ | -------------------------- |
-| Increment | For each row $i$: `count[i][h_i(x)] += 1`  | $O(d)$ | N/A                        |
-| Estimate  | Return $\min_i \mathrm{count[i][h_i(x)]$ | $O(d)$ | $\le \mathrm{true count$ |
-| Space     | $d \times w$ counters                      | N/A    | N/A                        |
+| Operation | Algorithm                                 | Time   | Error                    |
+| --------- | ----------------------------------------- | ------ | ------------------------ |
+| Increment | For each row $i$: `count[i][h_i(x)] += 1` | $O(d)$ | N/A                      |
+| Estimate  | Return $\min_i \mathrm{count[i][h_i(x)]$  | $O(d)$ | $\le \mathrm{true count$ |
+| Space     | $d \times w$ counters                     | N/A    | N/A                      |
 
 The estimate is always an **overestimate**: $\hat{f}(x) \ge f(x)$ with high probability. The error
 Is bounded by $\epsilon \cdot N$ where $N$ is the total count and $\epsilon = e / w$.
@@ -952,8 +952,16 @@ And cannot substitute for another.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of hashing and hash tables, including underlying theory,
+practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Big O notation and complexity analysis
+- searching algorithms (binary, linear)
+- sorting algorithms (bubble, merge, quick)
+- graph algorithms (Dijkstra, BFS, DFS)
+- dynamic programming
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

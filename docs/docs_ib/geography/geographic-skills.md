@@ -417,12 +417,14 @@ productivity, drought conditions, and deforestation.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-<!-- TODO: Add a summary for this topic -->
+3. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.

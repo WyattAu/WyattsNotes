@@ -717,8 +717,16 @@ The analytical techniques described in this guide apply equally to prose and dra
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the analytical frameworks and techniques relevant to poetry analysis guide for ib
+english, including key terminology, approaches, and critical perspectives.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- grammar and syntax
+- semantic change and language acquisition
+- sociolinguistics and language variation
+- discourse analysis
+- theories of language and meaning
+
+Developing a precise analytical vocabulary and practising close reading are essential for strong
+performance in this area.

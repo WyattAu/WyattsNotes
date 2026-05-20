@@ -1372,8 +1372,17 @@ If you get this wrong, revise: First law of thermodynamics and thermodynamic pro
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of physics, including the key equations, experimental
+methods, and applications relevant to the specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Newton's laws of motion
+- kinematic equations
+- conservation of momentum
+- energy conservation
+- free-body diagrams
+- projectile motion
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

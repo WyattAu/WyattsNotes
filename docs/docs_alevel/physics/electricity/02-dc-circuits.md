@@ -775,12 +775,17 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing EMF and potential difference — EMF is the total energy per unit charge supplied; PD is
+   the energy per unit charge transferred to a component.
 
-## Summary
+2. Forgetting that ammeters are connected in series and voltmeters in parallel.
 
-<!-- TODO: Add a summary for this topic -->
+3. Incorrectly applying Kirchhoff's second law by missing components in a loop.
 
-## Worked Examples
+4. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
+
+6. Rounding intermediate answers too early, which compounds errors in multi-step calculations.

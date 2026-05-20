@@ -889,8 +889,11 @@ and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Worked Examples
+2. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing the sample mean $\bar{x}$ with the population mean $\mu$ — the former is a statistic,
+   the latter a parameter.

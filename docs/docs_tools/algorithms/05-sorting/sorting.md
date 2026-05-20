@@ -942,4 +942,13 @@ $\log_2(n!) \approx n \log_2 n - 1.443n$ even in the average case (for uniform r
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Trace of bubble sort**
+
+Trace the bubble sort algorithm on the array `[5, 1, 4, 2, 8]`.
+
+**Solution:**
+
+Pass 1: `[1, 4, 2, 5, 8]` — 4 swaps (5 bubbled right) Pass 2: `[1, 2, 4, 5, 8]` — 2 swaps Pass 3:
+`[1, 2, 4, 5, 8]` — 0 swaps (sorted, algorithm terminates)
+
+Time complexity: $O(n^2)$ worst case, $O(n)$ best case (already sorted with optimisation).

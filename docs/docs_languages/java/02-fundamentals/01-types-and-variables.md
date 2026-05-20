@@ -892,8 +892,13 @@ The Java type system reflects a series of deliberate tradeoffs:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-## Worked Examples
+2. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
+
+4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.

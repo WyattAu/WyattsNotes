@@ -661,9 +661,8 @@ $2t^3 - 9t^2 + 12t - 5 = (t-1)(2t^2 - 7t + 5) = (t-1)(2t-5)(t-1) = (t-1)^2(2t-5)
 
 So $v = 0$ at $t = 1$ and $t = 2.5$.
 
-Check the sign of $v$: for $0 \lt t \lt 1$Test $t = 0.5$:
-$v = 0.25 - 2.25 + 6 - 5 = -1 \lt 0$. For $1 \lt t \lt 2.5$Test $t = 2$:
-$v = 16 - 36 + 24 - 5 = -1 \lt 0$. For $t \gt 2.5$Test $t = 3$:
+Check the sign of $v$: for $0 \lt t \lt 1$Test $t = 0.5$: $v = 0.25 - 2.25 + 6 - 5 = -1 \lt 0$. For
+$1 \lt t \lt 2.5$Test $t = 2$: $v = 16 - 36 + 24 - 5 = -1 \lt 0$. For $t \gt 2.5$Test $t = 3$:
 $v = 54 - 81 + 36 - 5 = 4 \gt 0$.
 
 So $v \lt 0$ for $0 \lt t \lt 2.5$ and $v \gt 0$ for $t \gt 2.5$.
@@ -731,8 +730,8 @@ $$\frac{v^2}{2} = -3s^2 + 32$$
 When $s = 1$:
 $v^2/2 = -3 + 32 = 29 \implies v^2 = 58 \implies v = \sqrt{58} \approx 7.62\,\mathrm{m/s}$.
 
-The particle is still moving in the positive direction ($v \gt 0$) since it has not yet reached
-The turning point where $v = 0$ (which occurs at $s^2 = 32/3$I.e., $s \approx 3.27\,\mathrm{m}$).
+The particle is still moving in the positive direction ($v \gt 0$) since it has not yet reached The
+turning point where $v = 0$ (which occurs at $s^2 = 32/3$I.e., $s \approx 3.27\,\mathrm{m}$).
 
 **If you get this wrong, revise:**
 [Acceleration in Terms of Displacement](#53-acceleration-in-terms-of-displacement-or-velocity) —
@@ -811,12 +810,13 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-## Summary
+2. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-<!-- TODO: Add a summary for this topic -->
+3. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.

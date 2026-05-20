@@ -92,19 +92,19 @@ Affinity between enzyme and substrate.
 
 ### Organelles
 
-| Organelle       | Function                                                                          |
-| --------------- | --------------------------------------------------------------------------------- |
-| Nucleus         | DNA storage, transcription, mRNA processing                                       |
-| Nucleolus       | rRNA synthesis, ribosome assembly                                                 |
-| Rough ER        | Protein synthesis (ribosome-studded), folding, modification                       |
-| Smooth ER       | Lipid synthesis, detoxification, $\text{Ca^{2+}$ storage                        |
-| Golgi apparatus | Protein sorting, modification, packaging into vesicles                            |
-| Mitochondria    | Aerobic respiration, ATP production (chemiosmosis)                                |
-| Chloroplasts    | Photosynthesis (in plants and algae)                                              |
-| Lysosomes       | Intracellular digestion (hydrolytic enzymes at pH ~5)                             |
+| Organelle       | Function                                                                      |
+| --------------- | ----------------------------------------------------------------------------- |
+| Nucleus         | DNA storage, transcription, mRNA processing                                   |
+| Nucleolus       | rRNA synthesis, ribosome assembly                                             |
+| Rough ER        | Protein synthesis (ribosome-studded), folding, modification                   |
+| Smooth ER       | Lipid synthesis, detoxification, $\text{Ca^{2+}$ storage                      |
+| Golgi apparatus | Protein sorting, modification, packaging into vesicles                        |
+| Mitochondria    | Aerobic respiration, ATP production (chemiosmosis)                            |
+| Chloroplasts    | Photosynthesis (in plants and algae)                                          |
+| Lysosomes       | Intracellular digestion (hydrolytic enzymes at pH ~5)                         |
 | Peroxisomes     | Breakdown of fatty acids, detoxification of $\text{H_2\text{O_2$ via catalase |
-| Vacuoles        | Storage, turgor pressure (central vacuole in plants)                              |
-| Cytoskeleton    | Structural support, intracellular transport, cell division                        |
+| Vacuoles        | Storage, turgor pressure (central vacuole in plants)                          |
+| Cytoskeleton    | Structural support, intracellular transport, cell division                    |
 
 **Endosymbiotic theory:** Mitochondria and chloroplasts originated from prokaryotic endosymbionts.
 Evidence includes double membranes, own circular DNA, 70S ribosomes, and binary fission Replication.
@@ -482,14 +482,14 @@ Rates determines species number.
 | Cycle      | Reservoir                       | Key Processes                                           |
 | ---------- | ------------------------------- | ------------------------------------------------------- |
 | Carbon     | Atmosphere, ocean, fossil fuels | Photosynthesis, respiration, combustion, decomposition  |
-| Nitrogen   | Atmosphere ($\text{N_2$)      | Nitrogen fixation, nitrification, denitrification       |
+| Nitrogen   | Atmosphere ($\text{N_2$)        | Nitrogen fixation, nitrification, denitrification       |
 | Phosphorus | Rock, sediment                  | Weathering, absorption by plants, decomposition         |
 | Water      | Oceans, atmosphere, glaciers    | Evaporation, condensation, precipitation, transpiration |
 
-**Nitrogen cycle details:** Atmospheric $\text{N_2$ is fixed by nitrogen-fixing bacteria
-(Rhizobium in legume root nodules, cyanobacteria) or lightning into $\text{NH_3$ (ammonia).
-Nitrifying bacteria convert $\text{NH_3 \to \text{NO_2^- \to \text{NO_3^-$ (usable by plants).
-Denitrifying bacteria convert $\text{NO_3^- \to \text{N_2$ back to the atmosphere.
+**Nitrogen cycle details:** Atmospheric $\text{N_2$ is fixed by nitrogen-fixing bacteria (Rhizobium
+in legume root nodules, cyanobacteria) or lightning into $\text{NH_3$ (ammonia). Nitrifying bacteria
+convert $\text{NH_3 \to \text{NO_2^- \to \text{NO_3^-$ (usable by plants). Denitrifying bacteria
+convert $\text{NO_3^- \to \text{N_2$ back to the atmosphere.
 
 ### Common Pitfalls
 
@@ -543,12 +543,11 @@ substrate-level phosphorylation.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
-## Summary
+2. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').
 
-<!-- TODO: Add a summary for this topic -->
+3. Failing to link structure to function when describing biological molecules, cells, or organs.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing correlation with causation when evaluating experimental data and drawing conclusions.

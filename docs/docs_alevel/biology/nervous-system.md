@@ -2312,8 +2312,12 @@ so no light is detected.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing DNA replication (S phase) with transcription or translation — be clear about which
+   process is being described.
 
-## Worked Examples
+2. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
+   change in tertiary structure.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Forgetting to include control variables in experimental design, leading to invalid conclusions.
+
+4. Confusing correlation with causation when evaluating experimental data and drawing conclusions.

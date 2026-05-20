@@ -507,8 +507,13 @@ Research at the sociocultural level of analysis frequently uses the following me
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-## Worked Examples
+2. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
+
+4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.

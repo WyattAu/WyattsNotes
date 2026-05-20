@@ -272,8 +272,7 @@ The total Helmholtz free energy is:
 $$F = F_A + F_B = -N_A k_B T \ln\frac{e V_A}{N_A \lambda^3} - N_B k_B T \ln\frac{e V_B}{N_B \lambda^3}$$
 
 Where $\lambda = h/\sqrt{2\pi m k_B T}$ is the thermal de Broglie wavelength. At constant $T$
-$\lambda$ is constant, so minimising $F$ with respect to $V_A$ (with
-$V_B = V_{\mathrm{tot} -
+$\lambda$ is constant, so minimising $F$ with respect to $V_A$ (with $V_B = V_{\mathrm{tot} -
 V_A$):
 
 $$\frac{\partial F}{\partial V_A} = -\frac{N_A k_B T}{V_A} + \frac{N_B k_B T}{V_B} = 0$$
@@ -296,8 +295,8 @@ This is just mechanical equilibrium: $P_A = P_B$I.e., $N_A k_B T/V_A = N_B k_B T
 
 **Proof (for $G$).** Consider a system in contact with a reservoir at $T_0, P_0$. The total entropy
 Of system plus reservoir is $S_{\mathrm{tot} = S + S_R$. At equilibrium, $S_{\mathrm{tot}$ is
-Maximised, so $\delta S_{\mathrm{tot} \leq 0$ for any variation. Since $dS_R = \delta Q_R / T_0$
-And by energy conservation $\delta Q_R = -\delta Q = -(dU + P_0\,dV)$:
+Maximised, so $\delta S_{\mathrm{tot} \leq 0$ for any variation. Since $dS_R = \delta Q_R / T_0$ And
+by energy conservation $\delta Q_R = -\delta Q = -(dU + P_0\,dV)$:
 
 $$\delta S_{\mathrm{tot} = \delta S - \frac{1}{T_0}(dU + P_0\,dV) = -\frac{1}{T_0}\delta G \leq 0$$
 
@@ -426,8 +425,8 @@ The efficiency is:
 $$\eta = 1 - \frac{Q_c}{Q_h} = 1 - \frac{T_c}{T_h}$$
 
 **Derivation.** For the isothermal steps, $\Delta S_{\mathrm{hot} = Q_h/T_h$ and
-$\Delta S_{\mathrm{cold} = -Q_c/T_c$. Since entropy is a state function and the cycle returns to
-The initial state, $\Delta S_{\mathrm{total} = 0$So $Q_h/T_h = Q_c/T_c$. $\blacksquare$
+$\Delta S_{\mathrm{cold} = -Q_c/T_c$. Since entropy is a state function and the cycle returns to The
+initial state, $\Delta S_{\mathrm{total} = 0$So $Q_h/T_h = Q_c/T_c$. $\blacksquare$
 
 ### 4.2 Heat Pumps and Refrigerators
 
@@ -490,10 +489,10 @@ J.
 
 **Summary:**
 
-| Quantity                                | Value  |
-| --------------------------------------- | ------ |
-| $Q_h$ (absorbed)                        | 6915 J |
-| $Q_c$ (rejected)                        | 3458 J |
+| Quantity                              | Value  |
+| ------------------------------------- | ------ |
+| $Q_h$ (absorbed)                      | 6915 J |
+| $Q_c$ (rejected)                      | 3458 J |
 | $W_{\mathrm{net} = Q_h - Q_c$         | 3457 J |
 | $\eta = W_{\mathrm{net}/Q_h$          | 0.500  |
 | $\eta_{\mathrm{Carnot} = 1 - T_c/T_h$ | 0.500  |
@@ -533,8 +532,8 @@ Multiplier $\lambda$:
 
 $$\frac{\partial}{\partial p_j}\left[-\sum_i p_i \ln p_i - \lambda\left(\sum_i p_i - 1\right)\right] = -\ln p_j - 1 - \lambda = 0$$
 
-This gives $p_j = e^{-1-\lambda} = \mathrm{const$ for all $j$. The constraint $\sum_i p_i = 1$
-Then gives $p_i = 1/\Omega$. $\blacksquare$
+This gives $p_j = e^{-1-\lambda} = \mathrm{const$ for all $j$. The constraint $\sum_i p_i = 1$ Then
+gives $p_i = 1/\Omega$. $\blacksquare$
 
 **Derivation from Boltzmann.** For $N$ identical systems distributed among $\Omega$ equally probable
 Microstates, the most probable macrostate has $n_i = N/\Omega$ systems in each microstate. The
@@ -775,8 +774,8 @@ For a rigid rotor (diatomic molecule) with moment of inertia $I$:
 
 $$z_{\mathrm{rot} = \sum_{J=0}^{\infty} (2J + 1) e^{-\beta \hbar^2 J(J+1)/(2I)}$$
 
-At high temperature ($T \gg \Theta_{\mathrm{rot} = \hbar^2/(2Ik_B)$), the sum can be approximated
-By an integral:
+At high temperature ($T \gg \Theta_{\mathrm{rot} = \hbar^2/(2Ik_B)$), the sum can be approximated By
+an integral:
 
 $$z_{\mathrm{rot} \approx \frac{T}{\Theta_{\mathrm{rot}} = \frac{2Ik_B T}{\hbar^2}$$
 
@@ -947,8 +946,8 @@ The hard-sphere model being an approximation; real molecules have softer repulsi
 
 $$f(v)\,dv = 4\pi \left(\frac{m}{2\pi k_B T}\right)^{3/2} v^2 e^{-mv^2/(2k_B T)}\,dv$$
 
-**Proof.** In the canonical ensemble, the probability of a molecule having momentum
-$\mathbf{p}$ is Proportional to $e^{-\beta p^2/(2m)}$. The velocity distribution is:
+**Proof.** In the canonical ensemble, the probability of a molecule having momentum $\mathbf{p}$ is
+Proportional to $e^{-\beta p^2/(2m)}$. The velocity distribution is:
 
 $$P(\mathbf{v})\,d^3v = \left(\frac{m}{2\pi k_B T}\right)^{3/2} \exp\left(-\frac{mv^2}{2k_B T}\right)\,d^3v$$
 
@@ -1047,9 +1046,9 @@ $$\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}$$
 
 $$N_{\mathrm{ex} = \int_0^{\infty} \frac{g(\varepsilon)\,d\varepsilon}{e^{\beta\varepsilon} - 1} = V\left(\frac{mk_B T}{2\pi\hbar^2}\right)^{3/2} \zeta(3/2)$$
 
-This has a maximum value at $\mu = 0$. When $N \gt N_{\mathrm{ex}^{\mathrm{max}$The excess
-Particles must go to the ground state. Setting $N = N_{\mathrm{ex}^{\mathrm{max}$ at $T = T_c$
-Gives the critical temperature above. $\blacksquare$
+This has a maximum value at $\mu = 0$. When $N \gt N_{\mathrm{ex}^{\mathrm{max}$The excess Particles
+must go to the ground state. Setting $N = N_{\mathrm{ex}^{\mathrm{max}$ at $T = T_c$ Gives the
+critical temperature above. $\blacksquare$
 
 ### 10.5 Comparison of the Three Statistics
 
@@ -1985,8 +1984,8 @@ Sirius).
 <summary>Problem 20: Free energy and phase equilibrium</summary>
 
 **Problem.** The Gibbs free energy of a substance near its melting point is given by:
-$G_{\mathrm{solid} = -10000 + 30T$ J/mol and $G_{\mathrm{liquid} = -9500 + 25T$ J/mol (valid for
-$T$ near the melting point). Find $T_m$ and $L_f$.
+$G_{\mathrm{solid} = -10000 + 30T$ J/mol and $G_{\mathrm{liquid} = -9500 + 25T$ J/mol (valid for $T$
+near the melting point). Find $T_m$ and $L_f$.
 
 **Solution.** At the melting point, $G_{\mathrm{solid} = G_{\mathrm{liquid}$:
 
@@ -2032,8 +2031,8 @@ $$\frac{dS}{dt} = \frac{dS_e}{dt} + \frac{dS_i}{dt} \geq 0$$
 Where $dS_e/dt$ is the entropy exchange with the environment (can be positive or negative) and
 $dS_i/dt \geq 0$ is the **entropy production** rate (always non-negative).
 
-For coupled transport processes (heat flow $\mathbf{J}_q$ and particle flow
-$\mathbf{J}_n$ driven by $\nabla(1/T)$ and $-\nabla(\mu/T)$):
+For coupled transport processes (heat flow $\mathbf{J}_q$ and particle flow $\mathbf{J}_n$ driven by
+$\nabla(1/T)$ and $-\nabla(\mu/T)$):
 
 $$\frac{dS_i}{dt} = \int\left[\mathbf{J}_q \cdot \nabla\!\left(\frac{1}{T}\right) - \mathbf{J}_n \cdot \nabla\!\left(\frac{\mu}{T}\right)\right] dV \geq 0$$
 
@@ -2252,10 +2251,10 @@ physics.
    wrong cross-coefficients.
 
 2. **The relaxation time approximation is not exact:** Setting
-   $(\partial f/\partial t)_{\text{coll} = -(f - f_0)/\tau$ assumes a single relaxation time for
-   all processes. In reality, $\tau$ depends on velocity (energy), and different scattering
-   processes have different time scales. The approximation works well for order-of-magnitude
-   estimates but fails for quantitatively accurate transport predictions.
+   $(\partial f/\partial t)_{\text{coll} = -(f - f_0)/\tau$ assumes a single relaxation time for all
+   processes. In reality, $\tau$ depends on velocity (energy), and different scattering processes
+   have different time scales. The approximation works well for order-of-magnitude estimates but
+   fails for quantitatively accurate transport predictions.
 
 3. **Effusion vs. Hydrodynamic flow:** Effusion (molecular flow through a small hole) occurs when
    the hole diameter is much smaller than the mean free path ($d \ll \ell$Knudsen number $\gg 1$).
@@ -2467,4 +2466,35 @@ The correlation length exponent: $\xi \propto r_0^{-1/2}$Giving $\nu = 1/2$ (the
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Conservation of energy**
+
+A $0.50\,\text{kg}$ ball is dropped from a height of $20\,\text{m}$. Calculate its speed just before
+it hits the ground (ignore air resistance).
+
+**Solution:**
+
+Using conservation of energy: $mgh = \frac{1}{2}mv^2$
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} \approx 19.8\,\text{m\,s}^{-1}$$
+
+## Summary
+
+- Statistical ensembles: microcanonical (fixed $E$, $V$, $N$), canonical (fixed $T$, $V$, $N$;
+  partition function $Z = \sum e^{-\beta E_i}$), grand canonical (fixed $T$, $V$, $\mu$).
+- Partition function: $Z = \sum_i e^{-\beta E_i}$; all thermodynamic quantities derivable from $Z$
+  (e.g., $F = -kT \ln Z$, $U = -\partial \ln Z / \partial \beta$).
+- Classical vs quantum statistics: Maxwell-Boltzmann (distinguishable), Bose-Einstein (bosons,
+  $\mu < \epsilon_0$), Fermi-Dirac (fermions, Pauli exclusion).
+- Ideal gas: equation of state $PV = NkT$; Maxwell speed distribution; equipartition theorem gives
+  $U = \frac{f}{2}NkT$ for $f$ degrees of freedom.
+- Phase transitions and critical phenomena: order parameters, universality classes, Landau theory;
+  renormalisation group explains scaling behaviour near critical points.
+
+## Cross-References
+
+| Topic                             | Site        | Link                                                                         |
+| --------------------------------- | ----------- | ---------------------------------------------------------------------------- |
+| Thermal Physics                   | WyattsNotes | [View](/docs/university/physics/thermal-physics)                             |
+| Quantum Mechanics                 | WyattsNotes | [View](/docs/university/physics/quantum-mechanics)                           |
+| Classical Mechanics               | WyattsNotes | [View](/docs/university/physics/classical-mechanics)                         |
+| Statistical Mechanics — MIT 8.044 | MIT OCW     | [View](https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/) |

@@ -859,24 +859,21 @@ Create two binomial heaps and merge them.
 Heap $H_1$: insert 3, 7, 1.
 
 - Insert 3: $H_1 = \{B_0: 3\}$
-- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link:
-  $H_1 = \{B_1: \text{root  3, \text{child  7\}$
+- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text{root  3, \text{child  7\}$
 - Insert 1: $H_1 = \{B_1: (3,7)\} \cup \{B_0: 1\}$. No linking (different degrees).
   $H_1 = \{B_0: 1, B_1: (3,7)\}$
 
 Heap $H_2$: insert 5, 2.
 
 - Insert 5: $H_2 = \{B_0: 5\}$
-- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link:
-  $H_2 = \{B_1: \text{root  2, \text{child  5\}$
+- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text{root  2, \text{child  5\}$
 
 Merge $H_1$ and $H_2$: $\{B_0: 1, B_1: (3,7)\} \cup \{B_1: (2,5)\}$.
 
 Both have $B_1$ trees. Link them (root 2 < root 3, so 3 becomes child of 2): $B_2$: root 2,
 children: 3 (with child 7), 5.
 
-Final merged heap:
-$\{B_0: 1, B_2: \text{root  2, \text{children  [3, 5], \text{3's child  7\}$
+Final merged heap: $\{B_0: 1, B_2: \text{root  2, \text{children  [3, 5], \text{3's child  7\}$
 
 Minimum element: 1 (root of $B_0$).
 
@@ -962,8 +959,7 @@ $e$And $0$ otherwise.
 **Properties:**
 
 - Space: $O(nm)$.
-- The rank of $M$ over $\mathbb{R}$ is $n - c$ where $c$ is the number of connected
-  components.
+- The rank of $M$ over $\mathbb{R}$ is $n - c$ where $c$ is the number of connected components.
 - The number of spanning trees of $G$ equals any cofactor of $MM^T$ (Kirchhoff's matrix tree
   theorem).
 
@@ -973,8 +969,8 @@ Many graphs are not stored explicitly but defined by a rule or function. Example
 
 - **State space graphs:** Each vertex is a configuration; edges are valid transitions. Example: the
   15-puzzle has $16!/2 \approx 10^{13}$ states.
-- **Geometric graphs:** Vertices are points in $\mathbb{R}^d$; edges connect nearby points.
-  Example: Delaunay triangulation.
+- **Geometric graphs:** Vertices are points in $\mathbb{R}^d$; edges connect nearby points. Example:
+  Delaunay triangulation.
 - **Social networks:** Vertices are users; edges are friendships.
 
 **Implicit graph traversal** requires a successor function that generates neighbours on-the-fly,
@@ -1071,8 +1067,7 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 **Structure.** An augmented BST where:
 
 - In-order traversal of keys gives the intervals sorted by their left endpoint (or by midpoint).
-- Each node stores a key $x_{\mathrm{mid}$ (the median endpoint) and a max-endpoint for the
-  subtree.
+- Each node stores a key $x_{\mathrm{mid}$ (the median endpoint) and a max-endpoint for the subtree.
 
 **Query algorithm:** Starting at the root, compare $q$ with $x_{\mathrm{mid}$:
 
@@ -1207,8 +1202,8 @@ Update $A[3] += 5$: Update BIT[3] += 5 (BIT[3] = 9). Then BIT[4] += 5 (BIT[4] = 
 
 A **suffix array** $\mathrm{SA$ of a string $S$ of length $n$ is a permutation of
 $\{0, 1, \ldots, n-1\}$ such that
-$S[\mathrm{SA[0]..] < S[\mathrm{SA[1]..] < \cdots < S[\mathrm{SA[n-1]..]$ (lexicographic order
-of suffixes).
+$S[\mathrm{SA[0]..] < S[\mathrm{SA[1]..] < \cdots < S[\mathrm{SA[n-1]..]$ (lexicographic order of
+suffixes).
 
 **Construction:** The most efficient algorithm (SA-IS) constructs the suffix array in $O(n)$ time. A
 simpler approach uses radix sort on prefixes of length $1, 2, 4, 8, \ldots$ in $O(n \log^2 n)$ time.
@@ -1237,14 +1232,14 @@ $2n - 1$ edges.
 
 ### 6.3 LCP Arrays
 
-The **LCP (Longest Common Prefix) array** stores $\mathrm{LCP[i] =$ the length of the longest
-common prefix of suffixes $\mathrm{SA[i]$ and $\mathrm{SA[i-1]$.
+The **LCP (Longest Common Prefix) array** stores $\mathrm{LCP[i] =$ the length of the longest common
+prefix of suffixes $\mathrm{SA[i]$ and $\mathrm{SA[i-1]$.
 
 **Theorem 6.4 (Kasai).** The LCP array can be computed from the suffix array in $O(n)$ time.
 
 **Kasai's algorithm.** Uses the inverse suffix array $\mathrm{SA^{-1}[\mathrm{SA[i]] = i$ and
-processes suffixes in text order. When computing $\mathrm{LCP[\mathrm{SA^{-1}[j]]$The result is
-at least $\mathrm{LCP[\mathrm{SA^{-1}[j-1]] - 1$.
+processes suffixes in text order. When computing $\mathrm{LCP[\mathrm{SA^{-1}[j]]$The result is at
+least $\mathrm{LCP[\mathrm{SA^{-1}[j-1]] - 1$.
 
 <details>
 <summary>Worked Example: Suffix Array and LCP Array</summary>
@@ -1265,9 +1260,8 @@ Suffix array: $\mathrm{SA = [6, 5, 3, 1, 0, 4, 2]$
 
 LCP array (LCP with previous suffix): $\mathrm{LCP[0] = 0$ (undefined for first)
 $\mathrm{LCP[1] = 0$ (LCP("$", "a$") = 0) $\mathrm{LCP[2] = 1$ (LCP("a$", "ana$") = 1)
-$\mathrm{LCP[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm{LCP[4] = 0$ (LCP("anana$", "banana$")
-= 0) $\mathrm{LCP[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm{LCP[6] = 2$ (LCP("na$", "nana$")
-= 2)
+$\mathrm{LCP[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm{LCP[4] = 0$ (LCP("anana$", "banana$") = 0)
+$\mathrm{LCP[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm{LCP[6] = 2$ (LCP("na$", "nana$") = 2)
 
 LCP array: $[0, 0, 1, 3, 0, 0, 2]$
 
@@ -1298,13 +1292,13 @@ A good potential function satisfies:
 
 **Common potential functions:**
 
-| Data structure | Potential function $\Phi$                                            |
-| -------------- | -------------------------------------------------------------------- |
+| Data structure | Potential function $\Phi$                                        |
+| -------------- | ---------------------------------------------------------------- |
 | Dynamic array  | $\Phi = 2 \cdot \mathrm{num - \mathrm{size$ (credit per element) |
-| Binary counter | $\Phi =$ number of 1-bits                                            |
-| Stack          | $\Phi =$ number of elements                                          |
-| Splay tree     | $\Phi = \sum_x \log(\mathrm{size(x))$                              |
-| Union-Find     | $\Phi$ based on node levels                                          |
+| Binary counter | $\Phi =$ number of 1-bits                                        |
+| Stack          | $\Phi =$ number of elements                                      |
+| Splay tree     | $\Phi = \sum_x \log(\mathrm{size(x))$                            |
+| Union-Find     | $\Phi$ based on node levels                                      |
 
 ### 7.3 Limitations of Amortised Analysis
 
@@ -1471,8 +1465,8 @@ other children are **light children**.
 **Property.** Every root-to-leaf path has at most $O(\log n)$ light edges.
 
 _Proof._ When traversing a light edge from $u$ to its parent $p$The subtree size at least doubles:
-$|\text{subtree(p)| \geq 2 \cdot |\text{subtree(u)|$. Since the tree has $n$ nodes, there can be
-at most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
+$|\text{subtree(p)| \geq 2 \cdot |\text{subtree(u)|$. Since the tree has $n$ nodes, there can be at
+most $\log_2 n$ light edges on any root-to-leaf path. $\blacksquare$
 
 **Algorithm:**
 
@@ -1800,8 +1794,71 @@ If you get this wrong, revise: Section 6.3.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
+
+2. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+3. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
+
+4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: B-Tree Insertion
+
+**Problem.** Insert keys 10, 20, 5, 6, 12, 30, 7, 17 into an initially empty B-tree of order 3 (max
+2 keys per node).
+
+**Solution.** Build sequentially. When a node overflows (3 keys), split at the median and promote:
+
+```
+         [12, 20]
+       /    |     \
+   [5,6,7] [10] [17] [30]
+```
+
+Each node stays within $[\lceil m/2 \rceil - 1, m-1]$ keys. All leaves at the same depth.
+
+$\blacksquare$
+
+### Example 2: AVL Tree Rotation
+
+**Problem.** Insert 10, 20, 30 into an AVL tree and show the rotation required to restore balance.
+
+**Solution.** After inserting 10 → 20 → 30, the tree is right-heavy at root:
+
+```
+  10
+    \
+    20
+      \
+      30
+```
+
+Balance factor at 10 = $-2$ (right-heavy with right child right-heavy). Single left rotation:
+
+```
+    20
+   /  \
+  10   30
+```
+
+Balance restored. $O(\log n)$ guaranteed height.
+
+$\blacksquare$
+
+## Summary
+
+- B-trees: balanced multi-way trees optimised for disk I/O; all leaves at same depth; insertions may
+  cause node splits propagating upward.
+- AVL trees: height-balanced BSTs with balance factor $\in \{-1, 0, 1\}$; rebalance via single or
+  double rotations after insert/delete.
+- Red-black trees: relaxed balance with colour invariants; $O(\log n)$ operations with fewer
+  rotations than AVL on average.
+- Hash tables with open addressing: linear probing, quadratic probing, double hashing; load factor
+  $\alpha = n/m$ affects performance.
+- Skip lists: probabilistic balanced structure; $O(\log n)$ expected search/insert/delete with
+  simpler implementation than balanced trees.

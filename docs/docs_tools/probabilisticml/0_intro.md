@@ -28,8 +28,12 @@ Lean4 $\rightarrow$ Implementation in python with JAX.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Not making connections between different topics within the subject to build a coherent
+   understanding.
 
-## Worked Examples
+2. Focusing only on content knowledge without developing exam technique and question-answering
+   skills.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Ignoring feedback from marked work and failing to address recurring weaknesses.
+
+4. Not practising with past papers or exercises under timed conditions.

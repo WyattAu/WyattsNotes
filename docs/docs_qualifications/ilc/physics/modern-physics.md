@@ -126,8 +126,8 @@ A plot of $E_{k(\max)}$ versus $f$ yields a straight line with slope $h$ and int
 Is how Millikan experimentally determined Planck's constant in 1916, confirming Einstein's equation.
 
 **Example (HL):** Light of wavelength $400\mathrm{ nm$ is incident on a metal surface with work
-Function $2.0\mathrm{ eV$. Find the maximum kinetic energy of the emitted electrons and the
-stopping Voltage.
+Function $2.0\mathrm{ eV$. Find the maximum kinetic energy of the emitted electrons and the stopping
+Voltage.
 
 $$
 E = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34} \times 3 \times 10^8}{400 \times 10^{-9}} = 4.97 \times 10^{-19}\mathrm{ J = 3.11\mathrm{ eV
@@ -159,8 +159,8 @@ $$
 For wavelengths longer than $\lambda_0$ (i.e., frequencies below $f_0$), no photoelectric emission
 Occurs regardless of intensity.
 
-**Example (HL):** The work function of sodium is $2.28\mathrm{ eV$. Find the threshold frequency
-and Threshold wavelength.
+**Example (HL):** The work function of sodium is $2.28\mathrm{ eV$. Find the threshold frequency and
+Threshold wavelength.
 
 $$
 F_0 = \frac{\phi}{h} = \frac{2.28 \times 1.6 \times 10^{-19}}{6.63 \times 10^{-34}} = 5.50 \times 10^{14}\mathrm{ Hz
@@ -496,8 +496,8 @@ $$
 \lambda = \frac{6.63 \times 10^{-34}}{9.11 \times 10^{-31} \times 5.93 \times 10^6} = 1.23 \times 10^{-10}\mathrm{ m = 0.123\mathrm{ nm
 $$
 
-This is comparable to the spacing between atomic planes in a crystal ($\sim 0.2\mathrm{ nm$),
-which Is why electron diffraction is observable.
+This is comparable to the spacing between atomic planes in a crystal ($\sim 0.2\mathrm{ nm$), which
+Is why electron diffraction is observable.
 
 ### Heisenberg Uncertainty Principle (HL)
 
@@ -622,15 +622,14 @@ Probability per unit time.
 
 Types of decay:
 
-| Type             | Symbol                             | Change                                 | Penetrating Power    |
-| ---------------- | ---------------------------------- | -------------------------------------- | -------------------- |
+| Type             | Symbol                         | Change                                 | Penetrating Power    |
+| ---------------- | ------------------------------ | -------------------------------------- | -------------------- |
 | Alpha decay      | $\alpha$ ($^4_2\mathrm{He$)    | $Z$ decreases by 2, $A$ decreases by 4 | Low (paper)          |
 | Beta-minus decay | $\beta^-$ ($^0_{-1}\mathrm{e$) | $Z$ increases by 1, $A$ unchanged      | Moderate (aluminium) |
-| Gamma decay      | $\gamma$                           | No change in $Z$ or $A$                | High (lead/concrete) |
+| Gamma decay      | $\gamma$                       | No change in $Z$ or $A$                | High (lead/concrete) |
 
 **Alpha decay** occurs mainly in heavy nuclei ($A \gt 150$). The emitted alpha particle is a
-Helium-4 nucleus. Example:
-$^{238}_{92}\mathrm{U \to ^{234}_{90}\mathrm{Th + ^4_2\mathrm{He$.
+Helium-4 nucleus. Example: $^{238}_{92}\mathrm{U \to ^{234}_{90}\mathrm{Th + ^4_2\mathrm{He$.
 
 **Beta-minus decay** occurs when a neutron converts to a proton, emitting an electron and an
 Antineutrino: $n \to p + e^- + \bar{\nu}_e$. This process is mediated by the weak nuclear force.
@@ -768,17 +767,15 @@ $$
 $$
 
 Fusion is the process that powers stars. In the Sun, the proton-proton chain converts hydrogen to
-Helium, releasing approximately $26.7\mathrm{ MeV$ per helium-4 nucleus formed. Achieving
-controlled Fusion on Earth remains an active area of research (e.g., tokamak reactors and laser
-fusion).
+Helium, releasing approximately $26.7\mathrm{ MeV$ per helium-4 nucleus formed. Achieving controlled
+Fusion on Earth remains an active area of research (e.g., tokamak reactors and laser fusion).
 
 ### Energy Released in Fission
 
-The energy released in a single fission event of U-235 is approximately $200\mathrm{ MeV$. This
-can Be estimated from the binding energy per nucleon: U-235 has about
-$7.6\mathrm{ MeV/nucleon$While The fission products have about $8.5\mathrm{ MeV/nucleon$. The
-difference of about $0.9\mathrm{ MeV/nucleon$ times 235 nucleons gives approximately
-$210\mathrm{ MeV$.
+The energy released in a single fission event of U-235 is approximately $200\mathrm{ MeV$. This can
+Be estimated from the binding energy per nucleon: U-235 has about $7.6\mathrm{ MeV/nucleon$While The
+fission products have about $8.5\mathrm{ MeV/nucleon$. The difference of about
+$0.9\mathrm{ MeV/nucleon$ times 235 nucleons gives approximately $210\mathrm{ MeV$.
 
 ### Background Radiation
 
@@ -817,8 +814,8 @@ We are constantly exposed to ionising radiation from natural and artificial sour
    half-lives elapsed. Do not confuse the number of half-lives with the time itself.
 5. **Alpha vs beta decay** -- alpha decreases $A$ by 4 and $Z$ by 2; beta-minus increases $Z$ by 1
    with no change in $A$.
-6. **Unit conversions** -- $1\mathrm{ eV = 1.6 \times 10^{-19}\mathrm{ J$. Always work in SI
-   units (joules) for calculations involving $h$$c$And $m$And convert to eV at the end if needed.
+6. **Unit conversions** -- $1\mathrm{ eV = 1.6 \times 10^{-19}\mathrm{ J$. Always work in SI units
+   (joules) for calculations involving $h$$c$And $m$And convert to eV at the end if needed.
 7. **Nuclear equations** -- always check conservation of $Z$ and $A$ on both sides.
 8. **De Broglie wavelength** -- use the relativistic momentum $p = \gamma mv$ for particles moving
    at speeds approaching $c$. For electrons accelerated through less than about $10\mathrm{ kV$The
@@ -841,18 +838,17 @@ We are constantly exposed to ionising radiation from natural and artificial sour
 
 ### Higher Level
 
-1. Light of wavelength $300\mathrm{ nm$ is incident on a zinc surface
-   ($\phi = 3.63\mathrm{ eV$). Find the maximum kinetic energy of photoelectrons in eV. Will
-   photoelectrons be emitted?
+1. Light of wavelength $300\mathrm{ nm$ is incident on a zinc surface ($\phi = 3.63\mathrm{ eV$).
+   Find the maximum kinetic energy of photoelectrons in eV. Will photoelectrons be emitted?
 2. The work function of caesium is $1.95\mathrm{ eV$. Find the threshold frequency and threshold
-   wavelength. If light of wavelength $450\mathrm{ nm$ is incident on the surface, find the
-   stopping voltage.
+   wavelength. If light of wavelength $450\mathrm{ nm$ is incident on the surface, find the stopping
+   voltage.
 3. Calculate the first three energy levels of hydrogen. Find the wavelength of the photon emitted
    for a transition from $n = 4$ to $n = 1$. In which spectral series does this line belong?
 4. Find the de Broglie wavelength of a neutron moving at $2 \times 10^4\mathrm{ m/s$
    ($m_n = 1.675 \times 10^{-27}\mathrm{ kg$).
-5. The mass defect of helium-4 is $0.0304\mathrm{ u$ ($1\mathrm{ u = 931.5\mathrm{ MeV/c^2$).
-   Find the binding energy per nucleon.
+5. The mass defect of helium-4 is $0.0304\mathrm{ u$ ($1\mathrm{ u = 931.5\mathrm{ MeV/c^2$). Find
+   the binding energy per nucleon.
 6. A sample of strontium-90 ($t_{1/2} = 28.8\mathrm{ years$) has an initial activity of
    $1000\mathrm{ Bq$. Find the activity after 100 years and the time for the activity to fall to
    $100\mathrm{ Bq$.
@@ -862,14 +858,22 @@ We are constantly exposed to ionising radiation from natural and artificial sour
    violated without it?
 9. A hydrogen atom absorbs a photon of wavelength $97.3\mathrm{ nm$. Determine the transition that
    occurred (initial and final energy levels).
-10. An electron is accelerated from rest through a potential difference of $200\mathrm{ V$. Find
-    its de Broglie wavelength. Would this electron be suitable for diffraction by a crystal with
-    lattice spacing $0.25\mathrm{ nm$? Justify your answer.
+10. An electron is accelerated from rest through a potential difference of $200\mathrm{ V$. Find its
+    de Broglie wavelength. Would this electron be suitable for diffraction by a crystal with lattice
+    spacing $0.25\mathrm{ nm$? Justify your answer.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of modern physics, including the key equations,
+experimental methods, and applications relevant to the specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- radioactive decay and half-life
+- nuclear fission and fusion
+- mass-energy equivalence ($E = mc^2$)
+- binding energy
+- particle physics
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

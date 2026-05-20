@@ -1161,8 +1161,13 @@ the financing method (tax-funded vs debt-funded).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing a movement along a curve with a shift of the curve — movements are caused by price
+   changes; shifts by non-price determinants.
 
-## Summary
+2. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.
 
-<!-- TODO: Add a summary for this topic -->
+3. Using circular reasoning by assuming the conclusion when evaluating economic policy
+   effectiveness.
+
+4. Neglecting to consider the ceteris paribus assumption when analysing multi-variable economic
+   scenarios.

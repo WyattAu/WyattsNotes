@@ -915,8 +915,16 @@ print(d_json["timestamp"]) # "2025-01-15T00:00:00" (ISO string)
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of serialization and data formats, including underlying theory,
+practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Python data structures (lists, dicts, sets)
+- list comprehensions and generators
+- object-oriented Python
+- decorators and context managers
+- error handling with try/except
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

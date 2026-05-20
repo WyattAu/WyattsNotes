@@ -731,4 +731,16 @@ $\mathrm{Co}^{2+}$ is **paramagnetic** with three unpaired electrons.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of atomic theory, including key reactions, underlying
+theories, and practical applications.
+
+**Key concepts include:**
+
+- ionic, covalent, and metallic bonding
+- electronegativity and bond polarity
+- intermolecular forces
+- giant and simple molecular structures
+- VSEPR theory
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

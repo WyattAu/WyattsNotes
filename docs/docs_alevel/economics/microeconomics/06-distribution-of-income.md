@@ -1244,4 +1244,16 @@ level of UBI needed to replace existing benefits in developed countries is fisca
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the economic theories and principles related to distribution of income, including
+key models, evidence, and policy implications.
+
+**Key concepts include:**
+
+- economic models and theories
+- data analysis and interpretation
+- policy evaluation
+- real-world applications
+- critical evaluation of economic arguments
+
+The ability to apply these theories to real-world data and evaluate policy decisions is central to
+success in this subject.

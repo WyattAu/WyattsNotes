@@ -829,4 +829,16 @@ lattice and have greater freedom of movement (1 mark).
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of entropy and gibbs free energy, including the key
+equations, experimental methods, and applications relevant to the specification.
+
+**Key concepts include:**
+
+- fundamental principles and equations
+- SI units and dimensional analysis
+- mathematical modelling of physical phenomena
+- experimental techniques and measurement
+- applications to real-world problems
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

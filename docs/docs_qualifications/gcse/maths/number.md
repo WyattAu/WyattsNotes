@@ -24,12 +24,12 @@ slug: number
 The real numbers can be classified into several nested subsets. Understanding these classifications
 Is essential for working with the number system fluently.
 
-**Definition.** The set of **natural numbers** is $\mathbb{N} = \{1, 2, 3, \ldots\}$. The set
-of **integers** is $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$.
+**Definition.** The set of **natural numbers** is $\mathbb{N} = \{1, 2, 3, \ldots\}$. The set of
+**integers** is $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$.
 
-A **rational number** is any number that can be expressed as $\frac{p}{q}$ where
-$p \in \mathbb{Z}$ $q \in \mathbb{Z} \setminus \{0\}$And $p$ and $q$ have no common
-factors other than 1 (i.e. The Fraction is in its **lowest terms**).
+A **rational number** is any number that can be expressed as $\frac{p}{q}$ where $p \in \mathbb{Z}$
+$q \in \mathbb{Z} \setminus \{0\}$And $p$ and $q$ have no common factors other than 1 (i.e. The
+Fraction is in its **lowest terms**).
 
 An **irrational number** is a real number that cannot be expressed as a fraction of two integers.
 Key examples include $\sqrt{2}$$\pi$And $e$.
@@ -59,16 +59,16 @@ Identical in every case.
 
 **Proposition.** The sum of a rational and an irrational number is irrational.
 
-**Proof.** Let $r \in \mathbb{Q}$ and $s \notin \mathbb{Q}$. Suppose
-$r + s = q \in \mathbb{Q}$. Then $s = q - r \in \mathbb{Q}$ (since rationals are closed
-under subtraction), contradicting the Irrationality of $s$. $\blacksquare$
+**Proof.** Let $r \in \mathbb{Q}$ and $s \notin \mathbb{Q}$. Suppose $r + s = q \in \mathbb{Q}$.
+Then $s = q - r \in \mathbb{Q}$ (since rationals are closed under subtraction), contradicting the
+Irrationality of $s$. $\blacksquare$
 
 **Proposition.** The product of a non-zero rational and an irrational number is irrational.
 
 **Proof.** Let $r \in \mathbb{Q} \setminus \{0\}$ and $s \notin \mathbb{Q}$. Suppose
 $rs = q \in
-\mathbb{Q}$. Then $S = \frac{q}{r} \in \mathbb{Q}$ (since $R \neq 0$), a
-contradiction. $\blacksquare$
+\mathbb{Q}$. Then $S = \frac{q}{r} \in \mathbb{Q}$ (since $R \neq 0$), a contradiction.
+$\blacksquare$
 
 :::warning The product of two irrational numbers can be rational. For example,
 $\sqrt{2} \times \sqrt{2} = 2$. The sum of two irrational numbers can also be rational:
@@ -739,8 +739,16 @@ Since $k + 1$ is an integer, this is a multiple of 8. $\blacksquare$
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to number, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- arithmetic and geometric sequences
+- series and sigma notation
+- recurrence relations
+- convergence tests
+- mathematical induction
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

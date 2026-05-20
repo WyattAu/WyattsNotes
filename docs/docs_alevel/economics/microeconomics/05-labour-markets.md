@@ -1363,8 +1363,13 @@ may drive platforms underground or offshore, leaving workers with no protection 
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing nominal and real values — always adjust for inflation when comparing monetary values
+   across time.
 
-## Summary
+2. Forgetting to distinguish between short-run and long-run effects in macroeconomic analysis.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing a movement along a curve with a shift of the curve — movements are caused by price
+   changes; shifts by non-price determinants.
+
+4. Using circular reasoning by assuming the conclusion when evaluating economic policy
+   effectiveness.

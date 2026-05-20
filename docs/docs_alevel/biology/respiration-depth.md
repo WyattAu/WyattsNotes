@@ -2172,12 +2172,12 @@ is transported to the liver, converted back to glucose, and returned to the musc
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').
 
-## Summary
+2. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
+   change in tertiary structure.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Failing to link structure to function when describing biological molecules, cells, or organs.

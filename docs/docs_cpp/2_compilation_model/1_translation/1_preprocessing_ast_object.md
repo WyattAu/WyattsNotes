@@ -563,12 +563,13 @@ Writing it into the appropriate location in the machine code.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Memorising content without understanding the underlying principles — this leads to poor
+   application in unfamiliar contexts.
 
-## Summary
+2. Focusing only on content knowledge without developing exam technique and question-answering
+   skills.
 
-<!-- TODO: Add a summary for this topic -->
+3. Ignoring feedback from marked work and failing to address recurring weaknesses.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Not making connections between different topics within the subject to build a coherent
+   understanding.

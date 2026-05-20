@@ -1016,12 +1016,13 @@ Duality for molecules composed of 60 carbon atoms.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Summary
+2. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.

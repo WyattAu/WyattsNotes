@@ -286,12 +286,13 @@ Might combine:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-## Summary
+2. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
 
-<!-- TODO: Add a summary for this topic -->
+3. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.

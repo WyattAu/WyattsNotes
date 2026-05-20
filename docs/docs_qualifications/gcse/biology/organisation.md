@@ -75,14 +75,14 @@ has been denatured, it cannot recover its function.
 A student investigates the effect of temperature on amylase activity. The results are:
 
 | Temperature ($^{\circ}$C) | Time for starch to disappear (s) | Rate ($1/\mathrm{time$) ($\times 10^{-3}$ s$^{-1}$) |
-| ------------------------- | -------------------------------- | ----------------------------------------------------- |
-| 10                        | 300                              | 3.3                                                   |
-| 20                        | 120                              | 8.3                                                   |
-| 30                        | 60                               | 16.7                                                  |
-| 37                        | 40                               | 25.0                                                  |
-| 45                        | 55                               | 18.2                                                  |
-| 55                        | 120                              | 8.3                                                   |
-| 60                        | No reaction                      | 0                                                     |
+| ------------------------- | -------------------------------- | --------------------------------------------------- |
+| 10                        | 300                              | 3.3                                                 |
+| 20                        | 120                              | 8.3                                                 |
+| 30                        | 60                               | 16.7                                                |
+| 37                        | 40                               | 25.0                                                |
+| 45                        | 55                               | 18.2                                                |
+| 55                        | 120                              | 8.3                                                 |
+| 60                        | No reaction                      | 0                                                   |
 
 **Step-by-step analysis:**
 
@@ -759,14 +759,13 @@ $40^\circ\mathrm{C$ and then decreases rapidly. Explain the shape of the graph.
 <details>
 <summary>Answer</summary>
 
-From $10^\circ\mathrm{C$ to $40^\circ\mathrm{C$: increasing temperature increases the kinetic
-energy of enzyme and substrate molecules, leading to more frequent successful collisions and a
-higher rate of reaction.
+From $10^\circ\mathrm{C$ to $40^\circ\mathrm{C$: increasing temperature increases the kinetic energy
+of enzyme and substrate molecules, leading to more frequent successful collisions and a higher rate
+of reaction.
 
 Above $40^\circ\mathrm{C$: the enzyme denatures because the high temperature breaks the bonds
 maintaining its tertiary structure. The active site changes shape and can no longer bind the
-substrate, so the rate drops rapidly. The optimum temperature is approximately
-$40^\circ\mathrm{C$.
+substrate, so the rate drops rapidly. The optimum temperature is approximately $40^\circ\mathrm{C$.
 
 </details>
 
@@ -856,8 +855,16 @@ the information. This prevents tissue damage.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of organisation, including key concepts, experimental
+evidence, and real-world applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key biological principles and concepts
+- experimental methods and data analysis
+- applications of biology in medicine and industry
+- ethical considerations in biological research
+- the relationship between structure and function
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

@@ -1093,4 +1093,25 @@ self-marking and building a personal test matrix. :::
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Mole calculation**
+
+Calculate the number of moles in $12.0\,\text{g}$ of $\text{NaOH}$ ($M_r = 40.0$).
+
+**Solution:**
+
+$$n = \frac{m}{M_r} = \frac{12.0}{40.0} = 0.300\,\text{mol}$$
+
+**Example 2: Reacting masses**
+
+$$\text{CaCO}_3 + 2\text{HCl} \rightarrow \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
+
+What mass of $\text{CaCl}_2$ is produced from $10.0\,\text{g}$ of $\text{CaCO}_3$?
+($M_r[\text{CaCO}_3] = 100$, $M_r[\text{CaCl}_2] = 111$)
+
+**Solution:**
+
+$$n(\text{CaCO}_3) = \frac{10.0}{100} = 0.100\,\text{mol}$$
+
+From the equation, ratio is $1:1$, so $n(\text{CaCl}_2) = 0.100\,\text{mol}$.
+
+$$m(\text{CaCl}_2) = 0.100 \times 111 = 11.1\,\text{g}$$

@@ -31,8 +31,8 @@ $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$.
 5. Every $z \neq 0$ has a multiplicative inverse $\frac{1}{z} = \frac{\bar{z}}{|z|^2}$.
 
 _Remark._ The complex field $\mathbb{C}$ cannot be ordered: there is no total ordering on
-$\mathbb{C}$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any
-such ordering.
+$\mathbb{C}$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any such
+ordering.
 
 ### 1.2 The Complex Conjugate and Modulus
 
@@ -84,8 +84,7 @@ $z_1/z_2 = (r_1/r_2)\, e^{i(\theta_1 - \theta_2)}$.
 
 $|z| = \sqrt{(-1)^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
 
-$\mathrm{Re(z) = -1 \lt 0$ and $\mathrm{Im(z) = \sqrt{3} \gt 0$So $z$ is in the second
-quadrant.
+$\mathrm{Re(z) = -1 \lt 0$ and $\mathrm{Im(z) = \sqrt{3} \gt 0$So $z$ is in the second quadrant.
 
 $\theta = \arctan\!\left(\frac{\sqrt{3}}{-1}\right) = \frac{2\pi}{3}$ (adjusting to second
 quadrant).
@@ -167,11 +166,10 @@ Taking real parts gives the result.
 
 ### 1.5 Roots of Complex Numbers
 
-**Definition.** An $n$-th root of $w \in \mathbb{C}$ is a complex number $z$ such that
-$z^n = w$.
+**Definition.** An $n$-th root of $w \in \mathbb{C}$ is a complex number $z$ such that $z^n = w$.
 
-**Proposition 1.6.** Every non-zero $w \in \mathbb{C}$ has exactly $n$ distinct $n$-th roots.
-If $w = \rho\, e^{i\phi}$Then
+**Proposition 1.6.** Every non-zero $w \in \mathbb{C}$ has exactly $n$ distinct $n$-th roots. If
+$w = \rho\, e^{i\phi}$Then
 
 $$z_k = \rho^{1/n}\, e^{i(\phi + 2\pi k)/n}, \quad k = 0, 1, \ldots, n - 1$$
 
@@ -233,8 +231,8 @@ ratio $\omega$.
 
 ### 2.1 Complex Functions
 
-A **complex function** is a function $f : D \subseteq \mathbb{C} \to \mathbb{C}$. We can
-write $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued functions.
+A **complex function** is a function $f : D \subseteq \mathbb{C} \to \mathbb{C}$. We can write
+$f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued functions.
 
 **Example.** $f(z) = z^2 = (x + iy)^2 = (x^2 - y^2) + i(2xy)$. Here $u = x^2 - y^2$ and $v = 2xy$.
 
@@ -247,8 +245,8 @@ write $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued 
 The limit $\lim_{z \to z_0} f(z) = L$ means: for every $\varepsilon \gt 0$There exists
 $\delta \gt 0$ Such that $0 \lt |z - z_0| \lt \delta$ implies $|f(z) - L| \lt \varepsilon$.
 
-Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb{C}$. This makes
-limits More restrictive.
+Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb{C}$. This makes limits
+More restrictive.
 
 **Proposition 2.1.** $\lim_{z \to z_0} f(z) = L$ if and only if
 $\lim_{(x,y) \to (x_0, y_0)} u(x, y) = a$ And $\lim_{(x,y) \to (x_0, y_0)} v(x, y) = b$ where
@@ -286,8 +284,8 @@ Makes complex differentiability far more restrictive than real differentiability
 ### 2.4 Analytic Functions
 
 **Definition.** A function $f$ is **analytic** (or **holomorphic**) on an open set
-$U \subseteq \mathbb{C}$ if $f$ is differentiable at every point of $U$. A function that is
-analytic On all of $\mathbb{C}$ is called **entire**.
+$U \subseteq \mathbb{C}$ if $f$ is differentiable at every point of $U$. A function that is analytic
+On all of $\mathbb{C}$ is called **entire**.
 
 **Examples of entire functions:** $z^n$$e^z$$\sin z$$\cos z$Polynomials.
 
@@ -328,8 +326,7 @@ $\arg(z) = \mathrm{Arg(z) + 2\pi k$ for $k \in \mathbb{Z}$. The **principal bran
 
 $$\mathrm{Log\, z = \ln|z| + i\,\mathrm{Arg(z)$$
 
-Defined on $\mathbb{C} \setminus (-\infty, 0]$. The negative real axis is called the **branch
-cut**.
+Defined on $\mathbb{C} \setminus (-\infty, 0]$. The negative real axis is called the **branch cut**.
 
 **Proposition 2.2.** The principal branch $\mathrm{Log\, z$ is analytic on
 $\mathbb{C} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{Log\, z = \frac{1}{z}$.
@@ -453,9 +450,8 @@ Harmonic conjugate: $v(x, y) = 3x^2 y - y^3 + C$.
 
 _Note:_ $f(z) = u + iv = x^3 - 3xy^2 + i(3x^2 y - y^3) = (x + iy)^3 = z^3$.
 
-**Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on
-$\mathbb{R}^2 \setminus \{0\}$ but Has no harmonic conjugate on
-$\mathbb{R}^2 \setminus \{0\}$.
+**Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on $\mathbb{R}^2 \setminus \{0\}$ but
+Has no harmonic conjugate on $\mathbb{R}^2 \setminus \{0\}$.
 
 $u_x = \frac{2x}{x^2 + y^2}$$u_{xx} = \frac{2(y^2 - x^2)}{(x^2 + y^2)^2}$.
 $u_y = \frac{2y}{x^2 + y^2}$$u_{yy} = \frac{2(x^2 - y^2)}{(x^2 + y^2)^2}$. $\Delta u = 0$.
@@ -465,8 +461,8 @@ However,
 $\oint_{|z|=1} (-u_y\, dx + u_x\, dy) = \oint_{|z|=1} \frac{-y\, dx + x\, dy}{x^2 + y^2}
 = \int_0^{2\pi} 1\, d\theta = 2\pi \neq 0$.
 
-Since $\mathbb{R}^2 \setminus \{0\}$ is not connected and this integral is non-zero, no
-Harmonic conjugate exists on this domain.
+Since $\mathbb{R}^2 \setminus \{0\}$ is not connected and this integral is non-zero, no Harmonic
+conjugate exists on this domain.
 
 </details>
 
@@ -680,8 +676,8 @@ By the Cauchy-Riemann equations. $\blacksquare$
 
 ### 5.2 Connected Domains
 
-A domain $D \subseteq \mathbb{C}$ is ** connected** if every simple closed contour in $D$ can
-Be continuously shrunk to a point within $D$.
+A domain $D \subseteq \mathbb{C}$ is ** connected** if every simple closed contour in $D$ can Be
+continuously shrunk to a point within $D$.
 
 **Cauchy's theorem may fail on multiply connected domains.** For example,
 $\int_\gamma \frac{1}{z}\, dz = 2\pi i$ where $\gamma$ is the unit circle (traversing a region that
@@ -1367,8 +1363,8 @@ of $T(z) = z$).
 2. **Elliptic:** Two fixed points, $|T'(z_0)| = 1$. Conjugate to a rotation $w = e^{i\theta} z$.
 3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb{R}^+$$T'(z_0) \neq 1$. Conjugate to
    $w = kz$.
-4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb{R} \cup \{z : |z| = 1\}$.
-   Conjugate to $w = ke^{i\theta}z$.
+4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb{R} \cup \{z : |z| = 1\}$. Conjugate to
+   $w = ke^{i\theta}z$.
 
 <details>
 <summary>Solution</summary>
@@ -1446,18 +1442,18 @@ modulus principle requires the non-vanishing hypothesis.
 
 ### 11.5 Schwarz Lemma
 
-**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{D} \to \mathbb{D}$ is analytic with
-$f(0) = 0$ Then
+**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{D} \to \mathbb{D}$ is analytic with $f(0) = 0$
+Then
 
 $$|f(z)| \leq |z| \quad \mathrm{for\ all\  z \in \mathbb{D}$$
 
 And $|f'(0)| \leq 1$. Equality in either case implies $f(z) = e^{i\theta} z$ for some real $\theta$.
 
 _Proof._ Define $g(z) = f(z)/z$ for $z \neq 0$ and $g(0) = f'(0)$. Then $g$ is analytic on
-$\mathbb{D}$. For $|z| = r \lt 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum modulus
-Principle, $|g(z)| \leq 1/r$ for $|z| \leq r$. Letting $r \to 1$: $|g(z)| \leq 1$So
-$|f(z)| \leq |z|$. Also $|f'(0)| = |g(0)| \leq 1$. If $|f'(0)| = 1$Then $|g|$ attains its maximum At
-an interior point, so $g$ is constant: $g(z) = e^{i\theta}$. $\blacksquare$
+$\mathbb{D}$. For $|z| = r \lt 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum modulus Principle,
+$|g(z)| \leq 1/r$ for $|z| \leq r$. Letting $r \to 1$: $|g(z)| \leq 1$So $|f(z)| \leq |z|$. Also
+$|f'(0)| = |g(0)| \leq 1$. If $|f'(0)| = 1$Then $|g|$ attains its maximum At an interior point, so
+$g$ is constant: $g(z) = e^{i\theta}$. $\blacksquare$
 
 ## 12. Argument Principle and Rouché's Theorem
 
@@ -1488,8 +1484,8 @@ $f$ and $f + g$ have the same number of zeros. $\blacksquare$
 **Problem.** Show that $z^4 + 6z + 3$ has exactly one root in $|z| \lt 1$.
 
 _Solution._ On $|z| = 1$: $|6z| = 6 \gt |z^4 + 3| \leq |z|^4 + 3 = 4$. By Rouché's theorem with
-$f(z) = 6z$ and $g(z) = z^4 + 3$: $f + g = z^4 + 6z + 3$ has the same number of zeros in
-$|z| \lt 1$ as $f(z) = 6z$Which has exactly one zero (at $z = 0$). $\blacksquare$
+$f(z) = 6z$ and $g(z) = z^4 + 3$: $f + g = z^4 + 6z + 3$ has the same number of zeros in $|z| \lt 1$
+as $f(z) = 6z$Which has exactly one zero (at $z = 0$). $\blacksquare$
 
 <details>
 <summary>Solution</summary>
@@ -1501,8 +1497,8 @@ $z^4 + z + 1$ has $4$ zeros in $|z| \lt 2$ (same as $z^4$).
 
 **Problem.** Show that $z^5 + 3z^2 + 1$ has exactly two roots in $|z| \lt 1$.
 
-On $|z| = 1$: $|3z^2 + 1| \geq |3z^2| - |1| = 2 \gt |z^5| = 1$. By Rouché with $f(z) = 3z^2 + 1$
-and $g(z) = z^5$: $z^5 + 3z^2 + 1$ has the same number of zeros as $3z^2 + 1$ in $|z| \lt 1$.
+On $|z| = 1$: $|3z^2 + 1| \geq |3z^2| - |1| = 2 \gt |z^5| = 1$. By Rouché with $f(z) = 3z^2 + 1$ and
+$g(z) = z^5$: $z^5 + 3z^2 + 1$ has the same number of zeros as $3z^2 + 1$ in $|z| \lt 1$.
 $3z^2 + 1 = 0 \Rightarrow z = \pm i/\sqrt{3}$Both in $|z| \lt 1$. So $2$ zeros.
 
 </details>
@@ -1979,4 +1975,44 @@ _If you get this wrong, revise:_ Section 6.2 (Cauchy's Integral Formula for Deri
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Definite integration**
+
+Evaluate $\displaystyle\int_0^2 (3x^2 + 2x)\,dx$.
+
+**Solution:**
+
+$$\int (3x^2 + 2x)\,dx = x^3 + x^2 + c$$
+
+$$\left[x^3 + x^2\right]_0^2 = (8 + 4) - (0) = 12$$
+
+**Example 2: Integration by parts**
+
+Find $\displaystyle\int x e^{2x}\,dx$.
+
+**Solution:**
+
+Let $u = x \implies \frac{du}{dx} = 1$ and $\frac{dv}{dx} = e^{2x} \implies v = \frac{1}{2}e^{2x}$.
+
+$$\int x e^{2x}\,dx = x \cdot \frac{1}{2}e^{2x} - \int \frac{1}{2}e^{2x}\,dx = \frac{x e^{2x}}{2} - \frac{e^{2x}}{4} + c = \frac{e^{2x}(2x - 1)}{4} + c$$
+
+## Summary
+
+- Holomorphic functions: complex differentiable on an open set; Cauchy-Riemann equations
+  $u_x = v_y$, $u_y = -v_x$ are necessary conditions.
+- Cauchy's integral theorem: $\oint_\gamma f(z)\,dz = 0$ for $f$ holomorphic inside and on $\gamma$;
+  Cauchy's integral formula evaluates $f(a)$ and all derivatives via contour integrals.
+- Residue theorem: $\oint_\gamma f(z)\,dz = 2\pi i \sum \text{Res}(f, z_k)$; residues computed via
+  Laurent series coefficients.
+- Laurent series: generalises Taylor series to annular regions; classifies singularities as
+  removable, poles, or essential.
+- Conformal mappings: holomorphic functions with non-zero derivative preserve angles; applications
+  in fluid dynamics and electrostatics.
+
+## Cross-References
+
+| Topic                        | Site        | Link                                                                                     |
+| ---------------------------- | ----------- | ---------------------------------------------------------------------------------------- |
+| Real Analysis                | WyattsNotes | [View](/docs/university/mathematics/real-analysis)                                       |
+| Multivariable Calculus       | WyattsNotes | [View](/docs/university/mathematics/multivariable-calculus)                              |
+| Differential Equations       | WyattsNotes | [View](/docs/university/mathematics/differential-equations)                              |
+| Complex Analysis — MIT 18.04 | MIT OCW     | [View](https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-fall-2003/) |

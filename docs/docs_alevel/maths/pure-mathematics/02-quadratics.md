@@ -1064,12 +1064,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-## Summary
+2. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.

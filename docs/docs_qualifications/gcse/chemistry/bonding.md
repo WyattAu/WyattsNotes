@@ -178,11 +178,11 @@ $2852^{\circ}\mathrm{C$ while NaCl melts at only $801^{\circ}\mathrm{C$.
 ### 1.7 Comparison of Ionic Compound Properties
 
 | Compound    | Ion Charges | Melting Point ($^{\circ}\mathrm{C$) | Solubility in Water |
-| ----------- | ----------- | --------------------------------------- | ------------------- |
-| NaCl        | $+1, -1$    | 801                                     | Soluble             |
-| MgO         | $+2, -2$    | 2852                                    | Slightly soluble    |
-| CaCl$_2$    | $+2, -1$    | 772                                     | Soluble             |
-| Al$_2$O$_3$ | $+3, -2$    | 2072                                    | Insoluble           |
+| ----------- | ----------- | ----------------------------------- | ------------------- |
+| NaCl        | $+1, -1$    | 801                                 | Soluble             |
+| MgO         | $+2, -2$    | 2852                                | Slightly soluble    |
+| CaCl$_2$    | $+2, -1$    | 772                                 | Soluble             |
+| Al$_2$O$_3$ | $+3, -2$    | 2072                                | Insoluble           |
 
 The trend is clear: higher ionic charges produce stronger electrostatic attraction and higher
 Melting points. This is a direct consequence of Coulomb's law.
@@ -306,14 +306,14 @@ Properties. They are used in composite materials and electronics.
 
 ### 2.5 Comparison of Diamond and Graphite
 
-| Property                | Diamond                                   | Graphite                         |
-| ----------------------- | ----------------------------------------- | -------------------------------- |
-| Bonding                 | 4 covalent bonds per carbon               | 3 covalent bonds + 1 delocalised |
-| Structure               | Tetrahedral, 3D giant lattice             | Layers of hexagonal rings        |
-| Hardness                | Extremely hard                            | Soft and slippery                |
-| Electrical conductivity | Does not conduct                          | Conducts (delocalised electrons) |
+| Property                | Diamond                                 | Graphite                         |
+| ----------------------- | --------------------------------------- | -------------------------------- |
+| Bonding                 | 4 covalent bonds per carbon             | 3 covalent bonds + 1 delocalised |
+| Structure               | Tetrahedral, 3D giant lattice           | Layers of hexagonal rings        |
+| Hardness                | Extremely hard                          | Soft and slippery                |
+| Electrical conductivity | Does not conduct                        | Conducts (delocalised electrons) |
 | Melting point           | Very high ($\gt 3500^{\circ}\mathrm{C$) | Very high                        |
-| Uses                    | Cutting tools, jewellery                  | Pencils, lubricants, electrodes  |
+| Uses                    | Cutting tools, jewellery                | Pencils, lubricants, electrodes  |
 
 ### 2.6 Bond Polarity
 
@@ -660,16 +660,16 @@ Proportion of atoms are on the surface, available for catalysis or other reactio
 ### 6.5 Summary: Intermolecular Forces and Boiling Points
 
 | Substance | Molar Mass (g/mol) | IMF Type               | Boiling Point ($^{\circ}\mathrm{C$) |
-| --------- | ------------------ | ---------------------- | --------------------------------------- |
-| CH$_4$    | 16                 | London only            | -161                                    |
-| NH$_3$    | 17                 | Hydrogen bonding       | -33                                     |
-| H$_2$O    | 18                 | Hydrogen bonding       | 100                                     |
-| H$_2$S    | 34                 | Dipole-dipole + London | -60                                     |
-| HF        | 20                 | Hydrogen bonding       | 20                                      |
-| F$_2$     | 38                 | London only            | -188                                    |
-| Cl$_2$    | 71                 | London only            | -34                                     |
-| Br$_2$    | 160                | London only            | 59                                      |
-| I$_2$     | 254                | London only            | 184                                     |
+| --------- | ------------------ | ---------------------- | ----------------------------------- |
+| CH$_4$    | 16                 | London only            | -161                                |
+| NH$_3$    | 17                 | Hydrogen bonding       | -33                                 |
+| H$_2$O    | 18                 | Hydrogen bonding       | 100                                 |
+| H$_2$S    | 34                 | Dipole-dipole + London | -60                                 |
+| HF        | 20                 | Hydrogen bonding       | 20                                  |
+| F$_2$     | 38                 | London only            | -188                                |
+| Cl$_2$    | 71                 | London only            | -34                                 |
+| Br$_2$    | 160                | London only            | 59                                  |
+| I$_2$     | 254                | London only            | 184                                 |
 
 This table demonstrates two key principles: hydrogen bonding produces anomalously high boiling
 Points compared to London forces, and London forces increase with molar mass.
@@ -800,12 +800,12 @@ Draw dot-cross diagrams for (a) magnesium oxide ($\mathrm{MgO$) and (b) carbon d
 <summary>Answer</summary>
 
 (a) $\mathrm{MgO$: $\mathrm{Mg$ donates 2 electrons (shown as x) to $\mathrm{O$Forming
-$\mathrm{Mg^{2+}$ and $\mathrm{O^{2-}$. The diagram shows the oxide ion with 8 electrons (6 of
-its own + 2 from Mg) and the magnesium ion with none in its outer shell.
+$\mathrm{Mg^{2+}$ and $\mathrm{O^{2-}$. The diagram shows the oxide ion with 8 electrons (6 of its
+own + 2 from Mg) and the magnesium ion with none in its outer shell.
 
-(b) $\mathrm{CO_2$: $\mathrm{O=\mathrm{C=\mathrm{O$. Each oxygen shares 2 electron pairs
-with carbon (double bonds). Carbon shares 4 electrons total (2 with each oxygen), achieving a full
-outer shell of 8.
+(b) $\mathrm{CO_2$: $\mathrm{O=\mathrm{C=\mathrm{O$. Each oxygen shares 2 electron pairs with carbon
+(double bonds). Carbon shares 4 electrons total (2 with each oxygen), achieving a full outer shell
+of 8.
 
 </details>
 
@@ -827,16 +827,16 @@ Conducts when molten but not solid: in the solid state, ions are fixed in positi
 When molten, the lattice breaks down and ions are free to move, carrying charge.
 
 Dissolves in water: water molecules are polar. The $\delta^+$ hydrogen atoms are attracted to
-$\mathrm{Cl^-$ ions and the $\delta^-$ oxygen atoms to $\mathrm{Na^+$ ions, pulling ions away
-from the lattice.
+$\mathrm{Cl^-$ ions and the $\delta^-$ oxygen atoms to $\mathrm{Na^+$ ions, pulling ions away from
+the lattice.
 
 </details>
 
 <details>
 <summary>Question 4: Simple covalent molecules vs giant covalent structures</summary>
 
-Compare the structure and properties of methane ($\mathrm{CH_4$) and diamond. Explain why diamond
-is much harder and has a much higher melting point.
+Compare the structure and properties of methane ($\mathrm{CH_4$) and diamond. Explain why diamond is
+much harder and has a much higher melting point.
 
 </details>
 
@@ -877,8 +877,16 @@ of the same charge repel when forced to slide.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of bonding, including key reactions, underlying theories,
+and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- ionic, covalent, and metallic bonding
+- electronegativity and bond polarity
+- intermolecular forces
+- giant and simple molecular structures
+- VSEPR theory
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

@@ -778,4 +778,16 @@ self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of quantities and units, including the key equations,
+experimental methods, and applications relevant to the specification.
+
+**Key concepts include:**
+
+- fundamental principles and equations
+- SI units and dimensional analysis
+- mathematical modelling of physical phenomena
+- experimental techniques and measurement
+- applications to real-world problems
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

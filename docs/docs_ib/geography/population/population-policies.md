@@ -244,12 +244,13 @@ For related topics, see [./demographic-transition-model](./demographic-transitio
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-## Summary
+2. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.

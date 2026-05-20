@@ -892,4 +892,16 @@ self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of halogenoalkanes, including key reactions, underlying
+theories, and practical applications.
+
+**Key concepts include:**
+
+- homologous series and functional groups
+- nomenclature (IUPAC)
+- reaction mechanisms (SN1, SN2, electrophilic addition)
+- stereochemistry and chirality
+- spectroscopy (IR, NMR, mass spec)
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

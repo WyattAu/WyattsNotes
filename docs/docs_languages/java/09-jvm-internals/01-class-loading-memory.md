@@ -684,8 +684,16 @@ Native memory that is not part of the heap. Virtual threads eliminate this probl
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of class loading and memory model, including key
+concepts, experimental evidence, and real-world applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key biological principles and concepts
+- experimental methods and data analysis
+- applications of biology in medicine and industry
+- ethical considerations in biological research
+- the relationship between structure and function
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

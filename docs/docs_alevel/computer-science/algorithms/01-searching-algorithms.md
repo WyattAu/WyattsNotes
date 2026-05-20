@@ -98,14 +98,12 @@ $A[\mathrm{low}..\mathrm{high}] = A[0..n-1] = A$. If $x \in A$The invariant hold
 **Maintenance.** Three cases:
 
 1. $A[\mathrm{mid}] = x$: Return mid. Correct. ✓
-2. $A[\mathrm{mid}] \lt x$: Since $A$ is sorted,
-   $A[0..\mathrm{mid}] \leq A[\mathrm{mid}] \lt x$So $x \notin A[0..\mathrm{mid}]$. Setting
-   `low = mid + 1` restricts the search to $A[\mathrm{mid}+1..\mathrm{high}]$. If $x$ was in the old
-   range, it is in the new range.
-3. $A[\mathrm{mid}] \gt x$: Since $A$ is sorted,
-   $A[\mathrm{mid}..n-1] \geq A[\mathrm{mid}] \gt x$So $x \notin A[\mathrm{mid}..n-1]$. Setting
-   `high = mid - 1` restricts the search to $A[\mathrm{low}..\mathrm{mid}-1]$. If $x$ was in the old
-   range, it is in the new range.
+2. $A[\mathrm{mid}] \lt x$: Since $A$ is sorted, $A[0..\mathrm{mid}] \leq A[\mathrm{mid}] \lt x$So
+   $x \notin A[0..\mathrm{mid}]$. Setting `low = mid + 1` restricts the search to
+   $A[\mathrm{mid}+1..\mathrm{high}]$. If $x$ was in the old range, it is in the new range.
+3. $A[\mathrm{mid}] \gt x$: Since $A$ is sorted, $A[\mathrm{mid}..n-1] \geq A[\mathrm{mid}] \gt x$So
+   $x \notin A[\mathrm{mid}..n-1]$. Setting `high = mid - 1` restricts the search to
+   $A[\mathrm{low}..\mathrm{mid}-1]$. If $x$ was in the old range, it is in the new range.
 
 **Termination.** The loop terminates when `low > high`Meaning $A[\mathrm{low}..\mathrm{high}]$ is
 Empty. By the invariant, $x \notin A$. Return $-1$. ✓
@@ -118,8 +116,8 @@ $\square$
 
 **Proof.** At each iteration, the search range is halved. Starting with a range of size $n$After $k$
 iterations the range size is at most $\lceil n/2^k \rceil$. The algorithm terminates when the Range
-is empty, which happens when $n/2^k \lt 1$I.e., $k \gt \log_2 n$. Therefore, the maximum Number
-of iterations is $\lfloor \log_2 n \rfloor + 1 = O(\log n)$. $\square$
+is empty, which happens when $n/2^k \lt 1$I.e., $k \gt \log_2 n$. Therefore, the maximum Number of
+iterations is $\lfloor \log_2 n \rfloor + 1 = O(\log n)$. $\square$
 
 **Formal derivation.** Let $T(n)$ be the number of comparisons for an array of size $n$.
 
@@ -709,12 +707,19 @@ Sorted.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting that binary search requires a sorted array — applying it to unsorted data gives
+   incorrect results.
 
-## Summary
+2. Confusing the number of comparisons with the number of elements examined in binary search.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Worked Examples
+4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
+
+6. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.

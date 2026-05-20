@@ -15,6 +15,7 @@ slug: integrals
 ## Antiderivatives and Indefinite Integrals (CED Unit 6)
 
 An **antiderivative** of $f$ is a function $F$ such that $F' = f$. The **indefinite integral** is:
+
 <!-- prettier-ignore -->
 <DesmosGraph title="Definite Integral as Area Under a Curve" expressions={["\\int_{a}^{b} f(x) \\, dx"]} width={800} height={500} />
 Adjust the parameters in the graph above to explore the relationships between variables.
@@ -858,8 +859,16 @@ on self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to integrals, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- differentiation from first principles
+- product, quotient, and chain rules
+- integration techniques (by parts, substitution)
+- differential equations
+- applications to kinematics
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

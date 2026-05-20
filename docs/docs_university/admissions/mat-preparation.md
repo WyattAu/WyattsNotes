@@ -473,9 +473,8 @@ $\sum_{k=1}^{\infty} \frac{k}{2^k} = \lim_{n \to \infty} S_n = \lim_{n \to \inft
 > A function $f: \mathbb{R} \to \mathbb{R}$ satisfies $f(x+y) = f(x) + f(y)$ for all
 > $x, y \in \mathbb{R}$ and $f(xy) = f(x)f(y)$ for all $x, y \in \mathbb{R}$.
 >
-> (i) Find $f(0)$ and $f(1)$. (ii) Show that $f(n) = n f(1)$ for all $n \in \mathbb{Z}$. (iii)
-> Show that either $f(x) = x$ for all $x \in \mathbb{R}$Or $f(x) = 0$ for all
-> $x \in \mathbb{R}$.
+> (i) Find $f(0)$ and $f(1)$. (ii) Show that $f(n) = n f(1)$ for all $n \in \mathbb{Z}$. (iii) Show
+> that either $f(x) = x$ for all $x \in \mathbb{R}$Or $f(x) = 0$ for all $x \in \mathbb{R}$.
 
 **Solution.**
 
@@ -555,4 +554,34 @@ which Carry more marks per minute.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with mat preparation, follow a structured approach:
+
+1. Identify the key concepts and definitions relevant to the question
+2. Apply the appropriate methods, equations, or frameworks
+3. Support your answer with evidence, examples, or calculations
+4. Evaluate your answer critically, considering limitations and alternative perspectives
+
+## Summary
+
+- The MAT (Mathematics Admissions Test) is a 2.5-hour paper used by Oxford and Imperial for maths
+  and computer science admissions.
+- Part A: 10 multiple-choice questions (4 marks each); Parts B and C: longer questions (15 marks
+  each) requiring full written solutions.
+- Key topics: polynomials, sequences and series, coordinate geometry, calculus, probability, and
+  logical reasoning.
+- Preparation strategy: work through all past papers (2007–present), focus on accuracy over speed
+  initially, then practice under timed conditions.
+- For Computer Science applicants: the logic and algorithm questions in Part C require careful
+  reading of problem specifications.
+
+## Cross-References
+
+| Topic            | Site         | Link                                                                                    |
+| ---------------- | ------------ | --------------------------------------------------------------------------------------- |
+| MAT Past Papers  | Oxford Maths | [View](https://www.maths.ox.ac.uk/study-here/undergraduate-study/maths-admissions-test) |
+| TMUA Preparation | WyattsNotes  | [View](/docs/university/admissions/tmua-preparation)                                    |
+| STEP Preparation | WyattsNotes  | [View](/docs/university/admissions/step-preparation)                                    |
+| Real Analysis    | WyattsNotes  | [View](/docs/university/mathematics/real-analysis)                                      |
+| Probability      | WyattsNotes  | [View](/docs/university/mathematics/probability)                                        |

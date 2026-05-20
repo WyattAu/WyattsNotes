@@ -421,9 +421,9 @@ The mass spectrum of an element shows three peaks at $m/z = 52$54, and 56 with r
 $^{52}\mathrm{Cr}$$^{54}\mathrm{Cr}$And $^{56}\mathrm{Cr}$.
 
 (b) Chromium has four stable isotopes: $^{50}\mathrm{Cr}$ (4.3%), $^{52}\mathrm{Cr}$ (83.8%),
-$^{53}\mathrm{Cr}$ (9.5%), and $^{54}\mathrm{Cr}$ (2.4%). However, the data shows three peaks at
-52, 54, and 56, which is more consistent with iron ($\mathrm{Fe}$$Z = 26$): $^{54}\mathrm{Fe}$
-(5.8%), $^{56}\mathrm{Fe}$ (91.7%), $^{57}\mathrm{Fe}$ (2.1%), and $^{58}\mathrm{Fe}$ (0.3%).
+$^{53}\mathrm{Cr}$ (9.5%), and $^{54}\mathrm{Cr}$ (2.4%). However, the data shows three peaks at 52,
+54, and 56, which is more consistent with iron ($\mathrm{Fe}$$Z = 26$): $^{54}\mathrm{Fe}$ (5.8%),
+$^{56}\mathrm{Fe}$ (91.7%), $^{57}\mathrm{Fe}$ (2.1%), and $^{58}\mathrm{Fe}$ (0.3%).
 
 Re-examining: the $m/z$ values of 52, 54, 56 with the given abundances most closely match chromium:
 $^{52}\mathrm{Cr}$ ($A_r = 51.94$Abundance $\approx 83.8\%$), $^{53}\mathrm{Cr}$
@@ -944,8 +944,12 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
 
-## Worked Examples
+2. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
+   molecular refers to individual molecules.
+
+4. Forgetting to balance equations before performing calculations — always check that atoms and
+   charges balance on both sides.

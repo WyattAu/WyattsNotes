@@ -183,10 +183,9 @@ Where the **partition function** is
 
 $$Z = \sum_{i} e^{-E_i / (k_B T)}$$
 
-_Proof._ Consider the combined system (system + reservoir) with total energy $E_{\mathrm{tot}$.
-The probability of the system being in state $i$ is proportional to the number of reservoir
-microstates compatible with it, which is $\Omega_R(E_{\mathrm{tot} - E_i)$. Using
-$S_R = k_B \ln \Omega_R$:
+_Proof._ Consider the combined system (system + reservoir) with total energy $E_{\mathrm{tot}$. The
+probability of the system being in state $i$ is proportional to the number of reservoir microstates
+compatible with it, which is $\Omega_R(E_{\mathrm{tot} - E_i)$. Using $S_R = k_B \ln \Omega_R$:
 
 $$P_i \propto \Omega_R(E_{\mathrm{tot} - E_i) = \exp\left(\frac{S_R(E_{\mathrm{tot} - E_i)}{k_B}\right)$$
 
@@ -302,8 +301,7 @@ $$u(\nu, T) = \frac{8\pi h \nu^3}{c^3} \cdot \frac{1}{e^{h\nu/(k_BT)} - 1}$$
 
 $$j = \sigma T^4, \quad \sigma = \frac{\pi^2 k_B^4}{60 \hbar^3 c^2}$$
 
-**Wien's Displacement Law:** The peak frequency satisfies
-$\nu_{\mathrm{max} / T = \mathrm{const$.
+**Wien's Displacement Law:** The peak frequency satisfies $\nu_{\mathrm{max} / T = \mathrm{const$.
 
 ### 2.9 Worked Examples
 
@@ -446,8 +444,7 @@ Average particle number:
 
 $$\langle N \rangle = \frac{1}{\beta}\frac{\partial \ln \Xi}{\partial \mu} = \frac{V}{\lambda_{\mathrm{th}^3} e^{\beta \mu}$$
 
-Solving for the chemical potential:
-$\mu = k_BT \ln(\langle N \rangle \lambda_{\mathrm{th}^3 / V)$.
+Solving for the chemical potential: $\mu = k_BT \ln(\langle N \rangle \lambda_{\mathrm{th}^3 / V)$.
 
 Average energy (using
 $\langle E \rangle = -\partial \ln \Xi / \partial \beta + \mu \langle N \rangle / (k_BT)$):
@@ -855,8 +852,8 @@ faster molecules escape preferentially. $\blacksquare$
 
 - **Assuming the classical limit always applies.** Electrons in metals are degenerate ($T \ll T_F$)
   and must be treated with Fermi-Dirac statistics. Helium-4 at low temperatures exhibits
-  Bose-Einstein condensation and superfluidity. The classical limit
-  $n\lambda_{\mathrm{th}^3 \ll 1$ is violated in these cases.
+  Bose-Einstein condensation and superfluidity. The classical limit $n\lambda_{\mathrm{th}^3 \ll 1$
+  is violated in these cases.
 
 - **Confusing $\mu = 0$ for bosons with $\mu$ for fermions.** For bosons, $\mu \leq \varepsilon_0$
   and $\mu \to 0$ at BEC. For fermions, $\mu \approx \varepsilon_F$ at low temperatures and can be
@@ -1261,12 +1258,12 @@ $$C \sim -A\ln|T - T_c|$$
 For $J = 1$ (in units of $k_B$):
 
 | Lattice      | $z$ | $T_c^{\text{MF}$ |
-| ------------ | --- | ------------------ |
-| Linear chain | 2   | 2                  |
-| Square       | 4   | 4                  |
-| Simple cubic | 6   | 6                  |
-| BCC          | 8   | 8                  |
-| FCC          | 12  | 12                 |
+| ------------ | --- | ---------------- |
+| Linear chain | 2   | 2                |
+| Square       | 4   | 4                |
+| Simple cubic | 6   | 6                |
+| BCC          | 8   | 8                |
+| FCC          | 12  | 12               |
 
 Compare with the exact $T_c$: 1D has no transition, 2D square has
 $T_c \approx 2.269$3D (numerical) $T_c \approx 4.51$. Mean-field overestimates $T_c$ in all cases,
@@ -1693,9 +1690,8 @@ $$\frac{C_P}{C_V} = 1 + \frac{Nk_B}{5Nk_B/2} = 1 + \frac{2}{5} = \frac{7}{5} = 1
 
 5. **Classical vs. Quantum statistics**: At temperatures much higher than the degeneracy temperature
    $T_F$ (fermions) or $T_c$ (bosons), both Fermi--Dirac and Bose--Einstein distributions reduce to
-   the Maxwell--Boltzmann distribution. The quantum corrections are of order
-   $n\lambda_{\text{dB}^3$ where $\lambda_{\text{dB} = h/\sqrt{2\pi mk_BT}$ is the thermal de
-   Broglie wavelength.
+   the Maxwell--Boltzmann distribution. The quantum corrections are of order $n\lambda_{\text{dB}^3$
+   where $\lambda_{\text{dB} = h/\sqrt{2\pi mk_BT}$ is the thermal de Broglie wavelength.
 
 ## Problems
 
@@ -1817,8 +1813,7 @@ $$= 0.244 \times (1.193 \times 10^3)^3 \approx 0.244 \times 1.698 \times 10^9 \a
 <details>
 <summary>Problem 4: Chemical Equilibrium</summary>
 
-For the dissociation reaction $\text{H_2 \rightleftharpoons 2\text{H$The equilibrium constant
-is:
+For the dissociation reaction $\text{H_2 \rightleftharpoons 2\text{H$The equilibrium constant is:
 
 $$K(T) = \frac{n_H^2}{n_{H_2}} = \left(\frac{m_H k_B T}{2\pi\hbar^2}\right)^{3/2}\frac{(j_H + 1)^2}{2j_{H_2} + 1}\frac{1}{Z_{\text{rot}Z_{\text{vib}}e^{-D/(k_BT)}$$
 
@@ -1840,8 +1835,8 @@ m$^{-3}$.
 With rotational and vibrational partition functions at this temperature, $K \sim 10^{27}$ m$^{-3}$
 (very rough estimate).
 
-For a gas at $P = 1$ atm, $n_{\text{total} = P/(k_BT) \approx 2.4 \times 10^{25}$ m$^{-3}$.
-Setting $n_{H_2} \approx n_{\text{total}/2$:
+For a gas at $P = 1$ atm, $n_{\text{total} = P/(k_BT) \approx 2.4 \times 10^{25}$ m$^{-3}$. Setting
+$n_{H_2} \approx n_{\text{total}/2$:
 
 $$n_H = \sqrt{K \cdot n_{H_2}} \sim \sqrt{10^{27} \times 10^{25}} \sim 10^{26}$$
 
@@ -1974,8 +1969,8 @@ The excited fraction: $N_{\text{ex}/N = (T/T_c)^{3/2}$.
 
 ### 18.4 Landau Levels and Quantum Oscillations
 
-In a magnetic field $\mathbf{B} = B\hat{z}$The energy levels of a free electron gas become
-quantised into **Landau levels**:
+In a magnetic field $\mathbf{B} = B\hat{z}$The energy levels of a free electron gas become quantised
+into **Landau levels**:
 
 $$\epsilon_n = \left(n + \frac{1}{2}\right)\hbar\omega_c + \frac{\hbar^2 k_z^2}{2m_e}, \quad \omega_c = \frac{eB}{m_e}$$
 
@@ -2168,4 +2163,35 @@ restore the input tape.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Conservation of energy**
+
+A $0.50\,\text{kg}$ ball is dropped from a height of $20\,\text{m}$. Calculate its speed just before
+it hits the ground (ignore air resistance).
+
+**Solution:**
+
+Using conservation of energy: $mgh = \frac{1}{2}mv^2$
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} \approx 19.8\,\text{m\,s}^{-1}$$
+
+## Summary
+
+- Thermodynamic laws: zeroth (thermal equilibrium), first ($\Delta U = Q - W$), second (entropy
+  increases, $\Delta S \geq 0$ for isolated systems), third ($S \to 0$ as $T \to 0$ for perfect
+  crystals).
+- Entropy: $dS = dQ_{\text{rev}}/T$; statistical interpretation $S = k_B \ln \Omega$ (Boltzmann).
+- Thermodynamic potentials: enthalpy $H = U + PV$, Helmholtz $F = U - TS$, Gibbs $G = H - TS$;
+  minimise appropriate potential for given constraints.
+- Heat engines and efficiency: Carnot efficiency $\eta = 1 - T_C/T_H$ is the maximum for any engine
+  between two reservoirs.
+- Phase transitions: Clausius-Clapeyron equation $dP/dT = \Delta S/\Delta V$; first-order (latent
+  heat) vs continuous (critical point) transitions.
+
+## Cross-References
+
+| Topic                                    | Site        | Link                                                                         |
+| ---------------------------------------- | ----------- | ---------------------------------------------------------------------------- |
+| Classical Mechanics                      | WyattsNotes | [View](/docs/university/physics/classical-mechanics)                         |
+| Quantum Mechanics                        | WyattsNotes | [View](/docs/university/physics/quantum-mechanics)                           |
+| Thermodynamics and Statistical Mechanics | WyattsNotes | [View](/docs/university/physics/thermodynamics-and-statistical-mechanics)    |
+| Thermal Physics — MIT 8.044              | MIT OCW     | [View](https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/) |

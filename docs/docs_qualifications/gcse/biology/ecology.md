@@ -248,8 +248,8 @@ Carbon on Earth is fixed, but it moves between different stores (reservoirs).
 
 - **Photosynthesis:** Plants convert $\mathrm{CO_2$ into glucose. This is the main route by which
   carbon moves from the atmosphere into the biosphere.
-- **Dissolving in oceans:** $\mathrm{CO_2$ dissolves in seawater to form carbonic acid, which
-  reacts to form carbonate ions. The oceans are a massive carbon store.
+- **Dissolving in oceans:** $\mathrm{CO_2$ dissolves in seawater to form carbonic acid, which reacts
+  to form carbonate ions. The oceans are a massive carbon store.
 
 **Processes that return $\mathrm{CO_2$ to the atmosphere:**
 
@@ -257,8 +257,8 @@ Carbon on Earth is fixed, but it moves between different stores (reservoirs).
   plants, which respire 24 hours a day.
 - **Combustion:** Burning fossil fuels (coal, oil, natural gas) and biomass (wood, biofuels)
   releases $\mathrm{CO_2$ that was previously locked away.
-- **Decomposition:** Decomposers break down dead material and release $\mathrm{CO_2$ as a
-  by-product of their respiration.
+- **Decomposition:** Decomposers break down dead material and release $\mathrm{CO_2$ as a by-product
+  of their respiration.
 
 **Carbon stores:**
 
@@ -331,8 +331,8 @@ Optimum, the enzymes denature and decomposition slows.
 
 The nitrogen cycle describes how nitrogen is converted between different chemical forms and
 Circulates through the ecosystem. Nitrogen is essential for making amino acids and proteins, DNA,
-And other biomolecules, but most organisms cannot use atmospheric nitrogen ($\mathrm{N_2$)
-directly Because the triple bond between the two nitrogen atoms is very strong.
+And other biomolecules, but most organisms cannot use atmospheric nitrogen ($\mathrm{N_2$) directly
+Because the triple bond between the two nitrogen atoms is very strong.
 
 **Key processes:**
 
@@ -353,12 +353,12 @@ directly Because the triple bond between the two nitrogen atoms is very strong.
 
 **Summary table: nitrogen cycle bacteria.**
 
-| Process           | Bacteria                  | Conversion                                                 | Conditions        |
-| ----------------- | ------------------------- | ---------------------------------------------------------- | ----------------- |
-| Nitrogen fixation | Rhizobium, Azotobacter    | $\mathrm{N_2 \to \mathrm{NH_3$                         | Aerobic           |
+| Process           | Bacteria                  | Conversion                                           | Conditions        |
+| ----------------- | ------------------------- | ---------------------------------------------------- | ----------------- |
+| Nitrogen fixation | Rhizobium, Azotobacter    | $\mathrm{N_2 \to \mathrm{NH_3$                       | Aerobic           |
 | Nitrification     | Nitrosomonas, Nitrobacter | $\mathrm{NH_3 \to \mathrm{NO_2^- \to \mathrm{NO_3^-$ | Aerobic           |
-| Denitrification   | Pseudomonas, Thiobacillus | $\mathrm{NO_3^- \to \mathrm{N_2$                       | Anaerobic         |
-| Ammonification    | Various decomposers       | Organic N $\to \mathrm{NH_3$                             | Aerobic/anaerobic |
+| Denitrification   | Pseudomonas, Thiobacillus | $\mathrm{NO_3^- \to \mathrm{N_2$                     | Anaerobic         |
+| Ammonification    | Various decomposers       | Organic N $\to \mathrm{NH_3$                         | Aerobic/anaerobic |
 
 ## 4. Biodiversity and Human Impact
 
@@ -490,8 +490,8 @@ Atmosphere, causing the Earth's average temperature to rise. This is the **green
 - Rising sea levels (measured by tide gauges and satellite altimetry).
 - Melting ice caps and glaciers (measured by satellite imagery and ground surveys).
 - Increased frequency of extreme weather events (floods, droughts, heatwaves).
-- Increased atmospheric $\mathrm{CO_2$ concentration (measured at Mauna Loa Observatory since
-  1958; the Keeling Curve shows a steady increase from approximately 315 ppm to over 420 ppm).
+- Increased atmospheric $\mathrm{CO_2$ concentration (measured at Mauna Loa Observatory since 1958;
+  the Keeling Curve shows a steady increase from approximately 315 ppm to over 420 ppm).
 
 **Consequences:**
 
@@ -698,8 +698,8 @@ On the planet.
 **The problem:** When peat bogs are drained for agriculture (e.g., for palm oil plantations in
 Southeast Asia) or harvested for fuel, the peat is exposed to air. Aerobic decomposition resumes,
 And the stored carbon is released as $\mathrm{CO_2$. Drained tropical peatlands are estimated to
-Release approximately 1.5 billion tonnes of $\mathrm{CO_2$ per year, making them a major
-contributor To climate change.
+Release approximately 1.5 billion tonnes of $\mathrm{CO_2$ per year, making them a major contributor
+To climate change.
 
 **Conservation:** Protecting and restoring peat bogs is an important strategy for mitigating climate
 Change. Rewetting drained peatlands can stop the release of stored carbon and allow the bogs to
@@ -810,9 +810,8 @@ This process can take 100--200 years or more, depending on the climate and soil 
 <details>
 <summary>Question 1: Food chain calculations</summary>
 
-A food chain consists of grass $\to$ rabbit $\to$ fox. If the grass produces $10,000 \mathrm{ kJ$
-of energy, calculate the energy available to the fox, assuming $10\%$ efficiency at each trophic
-level.
+A food chain consists of grass $\to$ rabbit $\to$ fox. If the grass produces $10,000 \mathrm{ kJ$ of
+energy, calculate the energy available to the fox, assuming $10\%$ efficiency at each trophic level.
 
 </details>
 
@@ -825,8 +824,8 @@ Rabbit (primary consumer): $10,000 \times 0.10 = 1,000 \mathrm{ kJ$.
 
 Fox (secondary consumer): $1,000 \times 0.10 = 100 \mathrm{ kJ$.
 
-Only $100 \mathrm{ kJ$ of the original $10,000 \mathrm{ kJ$ is available to the fox. The
-remaining energy is lost through respiration, excretion, and as heat.
+Only $100 \mathrm{ kJ$ of the original $10,000 \mathrm{ kJ$ is available to the fox. The remaining
+energy is lost through respiration, excretion, and as heat.
 
 </details>
 
@@ -844,10 +843,10 @@ balance of carbon dioxide in the atmosphere.
 Decomposers break down dead organic matter, releasing $\mathrm{CO_2$ back into the atmosphere
 through respiration. This recycles carbon that was stored in organisms.
 
-Deforestation reduces the number of trees available to absorb $\mathrm{CO_2$ through
-photosynthesis. It also releases stored carbon (as $\mathrm{CO_2$) when trees are burned or
-decompose. This increases the net $\mathrm{CO_2$ in the atmosphere, contributing to the enhanced
-greenhouse effect and climate change.
+Deforestation reduces the number of trees available to absorb $\mathrm{CO_2$ through photosynthesis.
+It also releases stored carbon (as $\mathrm{CO_2$) when trees are burned or decompose. This
+increases the net $\mathrm{CO_2$ in the atmosphere, contributing to the enhanced greenhouse effect
+and climate change.
 
 </details>
 
@@ -855,8 +854,8 @@ greenhouse effect and climate change.
 <summary>Question 3: Quadrat sampling</summary>
 
 A student uses a $1 \mathrm{ m^2$ quadrat to estimate the population of daisies in a
-$50 \mathrm{ m \times 20 \mathrm{ m$ field. The quadrat is placed randomly 10 times, and the
-counts are: 3, 5, 2, 4, 6, 3, 4, 5, 2, 6. Estimate the total daisy population in the field.
+$50 \mathrm{ m \times 20 \mathrm{ m$ field. The quadrat is placed randomly 10 times, and the counts
+are: 3, 5, 2, 4, 6, 3, 4, 5, 2, 6. Estimate the total daisy population in the field.
 
 </details>
 
@@ -912,8 +911,16 @@ competition and allowing both species to coexist.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of ecology, including key concepts, experimental
+evidence, and real-world applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- ecosystems and food webs
+- nutrient cycles (carbon, nitrogen)
+- population dynamics
+- biodiversity and conservation
+- succession
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

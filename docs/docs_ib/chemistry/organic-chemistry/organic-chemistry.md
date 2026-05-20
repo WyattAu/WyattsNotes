@@ -969,8 +969,18 @@ $-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing structural isomers with stereoisomers — structural isomers have different bonding
+   arrangements; stereoisomers have the same connectivity.
 
-## Worked Examples
+2. Forgetting that primary alcohols can be oxidised to aldehydes then carboxylic acids, but
+   secondary alcohols only to ketones.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Forgetting to balance equations before performing calculations — always check that atoms and
+   charges balance on both sides.
+
+4. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.
+
+5. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+
+6. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.

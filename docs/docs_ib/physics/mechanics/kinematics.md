@@ -913,8 +913,14 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.
 
-## Worked Examples
+2. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
+
+4. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.

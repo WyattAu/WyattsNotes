@@ -603,12 +603,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-## Summary
+2. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-<!-- TODO: Add a summary for this topic -->
+3. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.

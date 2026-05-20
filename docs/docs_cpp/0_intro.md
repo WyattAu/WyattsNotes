@@ -113,12 +113,12 @@ Modification.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Summary
+2. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.

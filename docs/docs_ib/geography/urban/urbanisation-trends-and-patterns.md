@@ -251,12 +251,13 @@ At [../urban-environments](../urban-environments).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.

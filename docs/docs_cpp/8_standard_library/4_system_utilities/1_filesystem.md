@@ -604,12 +604,12 @@ void atomic_write(const fs::path& target, std::string_view content) {
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Memorising content without understanding the underlying principles — this leads to poor
+   application in unfamiliar contexts.
 
-## Summary
+2. Ignoring feedback from marked work and failing to address recurring weaknesses.
 
-<!-- TODO: Add a summary for this topic -->
+3. Focusing only on content knowledge without developing exam technique and question-answering
+   skills.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Not practising with past papers or exercises under timed conditions.

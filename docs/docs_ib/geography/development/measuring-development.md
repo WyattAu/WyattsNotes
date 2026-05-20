@@ -222,12 +222,14 @@ For related topics, see [./trade-and-aid](./trade-and-aid) and
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-## Summary
+2. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-<!-- TODO: Add a summary for this topic -->
+3. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.

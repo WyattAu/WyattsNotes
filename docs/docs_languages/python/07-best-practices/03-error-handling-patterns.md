@@ -841,8 +841,16 @@ finally:
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of error handling patterns, including underlying theory,
+practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and terminology
+- algorithms and computational thinking
+- practical implementation
+- security and ethical considerations
+- applications in the real world
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

@@ -619,8 +619,8 @@ The electrical energy arrow would be 40% as wide as the input arrow, and the was
 2. A 50 kg student climbs a flight of stairs 4 m high in 6 seconds. Calculate the gravitational
    potential energy gained and the power developed.
 
-3. A 500 g block of aluminium is heated from $20^{\circ}\mathrm{C$ to $120^{\circ}\mathrm{C$ by
-   a 200 W heater. How long does this take? (Specific heat capacity of aluminium = 900 J/(kg
+3. A 500 g block of aluminium is heated from $20^{\circ}\mathrm{C$ to $120^{\circ}\mathrm{C$ by a
+   200 W heater. How long does this take? (Specific heat capacity of aluminium = 900 J/(kg
    $^{\circ}$C).)
 
 4. A power station has an efficiency of 38%. It burns fuel at a rate of 500 kg per hour. If the fuel
@@ -659,9 +659,9 @@ The electrical energy arrow would be 40% as wide as the input arrow, and the was
     specific heat capacity 460 J/(kg $^{\circ}$C), calculate the temperature rise of the brakes.
 
 15. Calculate the energy required to convert 0.5 kg of ice at $-10^{\circ}\mathrm{C$ to water at
-    $50^{\circ}\mathrm{C$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific
-    latent heat of fusion of ice = $3.34 \times 10^5$ J/kg, specific heat capacity of water = 4200
-    J/(kg $^{\circ}$C).)
+    $50^{\circ}\mathrm{C$. (Specific heat capacity of ice = 2100 J/(kg $^{\circ}$C), specific latent
+    heat of fusion of ice = $3.34 \times 10^5$ J/kg, specific heat capacity of water = 4200 J/(kg
+    $^{\circ}$C).)
 
 ## 10. Worked Example: Multi-Stage Heating
 
@@ -789,10 +789,10 @@ Input goes directly into kinetic energy, producing a rapid temperature rise.
     vertically upward and then falls back down. Account for why the ball does not return to its
     original height.
 
-19. A student designs a solar water heater. The panel has an area of $2.5 \mathrm{ m^2$ and
-    receives solar radiation at $800 \mathrm{ W/m^2$. The efficiency of the panel is 35%. The
-    water flows through the panel at a rate of 0.02 kg/s. Calculate the temperature rise of the
-    water as it passes through the panel.
+19. A student designs a solar water heater. The panel has an area of $2.5 \mathrm{ m^2$ and receives
+    solar radiation at $800 \mathrm{ W/m^2$. The efficiency of the panel is 35%. The water flows
+    through the panel at a rate of 0.02 kg/s. Calculate the temperature rise of the water as it
+    passes through the panel.
 
 20. A bungee cord of natural length 20 m has spring constant 40 N/m. A jumper of mass 75 kg falls
     from a bridge. Find the maximum speed of the jumper during the fall. (Hint: the maximum speed
@@ -803,8 +803,8 @@ Input goes directly into kinetic energy, producing a rapid temperature rise.
 <details>
 <summary>Question 1: Gravitational potential energy</summary>
 
-A $60 \mathrm{ kg$ climber ascends a $15 \mathrm{ m$ cliff. Calculate the change in
-gravitational potential energy. Take $g = 9.8 \mathrm{ N/kg$.
+A $60 \mathrm{ kg$ climber ascends a $15 \mathrm{ m$ cliff. Calculate the change in gravitational
+potential energy. Take $g = 9.8 \mathrm{ N/kg$.
 
 </details>
 
@@ -818,8 +818,8 @@ $\Delta E_p = mgh = 60 \times 9.8 \times 15 = 8820 \mathrm{ J$.
 <details>
 <summary>Question 2: Kinetic energy and speed</summary>
 
-A car of mass $800 \mathrm{ kg$ is travelling at $20 \mathrm{ m/s$. Calculate its kinetic
-energy. If the brakes apply a force of $4000 \mathrm{ N$Calculate the stopping distance.
+A car of mass $800 \mathrm{ kg$ is travelling at $20 \mathrm{ m/s$. Calculate its kinetic energy. If
+the brakes apply a force of $4000 \mathrm{ N$Calculate the stopping distance.
 
 </details>
 
@@ -835,8 +835,8 @@ Work done by brakes = $F \times d = E_k$: $4000 \times d = 160,000$$d = 40 \math
 <details>
 <summary>Question 3: Conservation of energy on a roller coaster</summary>
 
-A roller coaster car starts from rest at the top of a hill $30 \mathrm{ m$ high. Calculate its
-speed at the bottom of the hill, assuming no energy is lost to friction.
+A roller coaster car starts from rest at the top of a hill $30 \mathrm{ m$ high. Calculate its speed
+at the bottom of the hill, assuming no energy is lost to friction.
 
 </details>
 
@@ -868,9 +868,8 @@ Calculate (a) the work done and (b) the power of the motor.
 <details>
 <summary>Question 5: Specific heat capacity</summary>
 
-$2.0 \mathrm{ kg$ of water is heated from $20^\circ\mathrm{C$ to $80^\circ\mathrm{C$. The
-specific heat capacity of water is $4200 \mathrm{ J/(kg\cdot^\circ C)$. Calculate the energy
-required.
+$2.0 \mathrm{ kg$ of water is heated from $20^\circ\mathrm{C$ to $80^\circ\mathrm{C$. The specific
+heat capacity of water is $4200 \mathrm{ J/(kg\cdot^\circ C)$. Calculate the energy required.
 
 </details>
 
@@ -883,4 +882,13 @@ $\Delta E = mc\Delta T = 2.0 \times 4200 \times (80 - 20) = 2.0 \times 4200 \tim
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Newton's second law**
+
+A $2.0\,\text{kg}$ object is pulled across a rough horizontal surface by a horizontal force of
+$15\,\text{N}$. The frictional force is $5.0\,\text{N}$. Calculate the acceleration.
+
+**Solution:**
+
+$$F_{\text{net}} = F_{\text{applied}} - F_{\text{friction}} = 15 - 5.0 = 10\,\text{N}$$
+
+$$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$

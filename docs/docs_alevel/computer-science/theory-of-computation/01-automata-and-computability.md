@@ -580,12 +580,13 @@ For revision on algorithms and complexity, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-## Summary
+2. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.

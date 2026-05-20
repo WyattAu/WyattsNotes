@@ -136,9 +136,8 @@ Water potential ($\psi$) is measured in kilopascals (kPa). Pure water has $\psi 
 - Solutions have negative water potential.
 - Water moves from high (less negative) to low (more negative) water potential.
 
-**Example (HL):** A cell with $\psi_{\mathrm{cell} = -500\mathrm{ kPa$ is placed in a solution
-with $\psi_{\mathrm{solution} = -300\mathrm{ kPa$. Water enters the cell (moves from -300 to
--500).
+**Example (HL):** A cell with $\psi_{\mathrm{cell} = -500\mathrm{ kPa$ is placed in a solution with
+$\psi_{\mathrm{solution} = -300\mathrm{ kPa$. Water enters the cell (moves from -300 to -500).
 
 **Worked Example: Predicting osmosis in plant cells.**
 
@@ -273,8 +272,7 @@ $$
 
 - Occur in the thylakoid membranes.
 - Light energy is absorbed by chlorophyll.
-- Water is split (photolysis):
-  $2\mathrm{H_2\mathrm{O \to 4\mathrm{H^+ + 4e^- + \mathrm{O_2$.
+- Water is split (photolysis): $2\mathrm{H_2\mathrm{O \to 4\mathrm{H^+ + 4e^- + \mathrm{O_2$.
 - ATP is produced (photophosphorylation).
 - NADP$^+$ is reduced to NADPH.
 
@@ -297,8 +295,8 @@ At low light intensity, light is the limiting factor. Increasing light increases
 Certain point, light is no longer limiting (another factor is). If $\mathrm{CO_2$ concentration is
 Low, increasing light further will have no effect.
 
-At high $\mathrm{CO_2$ concentration, $\mathrm{CO_2$ is not limiting. If light is low,
-increasing $\mathrm{CO_2$ will have no effect.
+At high $\mathrm{CO_2$ concentration, $\mathrm{CO_2$ is not limiting. If light is low, increasing
+$\mathrm{CO_2$ will have no effect.
 
 This is an application of Blackman's law of limiting factors: at any given time, only one factor is
 Limiting.
@@ -315,8 +313,8 @@ $$
 
 1. **Glycolysis** (cytoplasm): glucose is split into 2 pyruvate. Net gain: 2 ATP, 2 NADH.
 
-2. **Link reaction** (mitochondrial matrix): pyruvate $\to$ acetyl-CoA. Produces $\mathrm{CO_2$
-   and NADH.
+2. **Link reaction** (mitochondrial matrix): pyruvate $\to$ acetyl-CoA. Produces $\mathrm{CO_2$ and
+   NADH.
 
 3. **Krebs cycle** (mitochondrial matrix): acetyl-CoA enters the cycle. Produces $\mathrm{CO_2$
    NADH, FADH$_2$And 2 ATP per glucose.
@@ -344,13 +342,13 @@ $$
 
 **Worked Example: Comparing aerobic and anaerobic respiration.**
 
-| Feature       | Aerobic                                       | Anaerobic (muscle) | Anaerobic (yeast)          |
-| ------------- | --------------------------------------------- | ------------------ | -------------------------- |
-| Oxygen needed | Yes                                           | No                 | No                         |
-| Location      | Cytoplasm and mitochondria                    | Cytoplasm          | Cytoplasm                  |
+| Feature       | Aerobic                                 | Anaerobic (muscle) | Anaerobic (yeast)        |
+| ------------- | --------------------------------------- | ------------------ | ------------------------ |
+| Oxygen needed | Yes                                     | No                 | No                       |
+| Location      | Cytoplasm and mitochondria              | Cytoplasm          | Cytoplasm                |
 | Products      | $\mathrm{CO_2$ + $\mathrm{H_2\mathrm{O$ | Lactate            | Ethanol + $\mathrm{CO_2$ |
-| ATP yield     | ~30-38 per glucose                            | 2 per glucose      | 2 per glucose              |
-| Efficiency    | High                                          | Low                | Low                        |
+| ATP yield     | ~30-38 per glucose                      | 2 per glucose      | 2 per glucose            |
+| Efficiency    | High                                    | Low                | Low                      |
 
 Aerobic respiration produces much more ATP because glucose is completely oxidised. Anaerobic
 Respiration only partially breaks down glucose, so most of the energy remains locked in the products
@@ -572,8 +570,8 @@ Due to proton leak across the inner membrane and the energy cost of transporting
 
 ## Review: Factors Affecting the Rate of Photosynthesis
 
-Photosynthesis is affected by three main factors: light intensity, $\mathrm{CO_2$ concentration,
-and Temperature. At any given time, the rate of photosynthesis is limited by whichever factor is in
+Photosynthesis is affected by three main factors: light intensity, $\mathrm{CO_2$ concentration, and
+Temperature. At any given time, the rate of photosynthesis is limited by whichever factor is in
 Shortest supply (Blackman's law of limiting factors).
 
 **Light intensity:**
@@ -590,8 +588,7 @@ Shortest supply (Blackman's law of limiting factors).
 - The rate levels off as $\mathrm{CO_2$ is no longer limiting (another factor such as light or
   temperature becomes limiting).
 - Very high $\mathrm{CO_2$ concentrations may reduce the rate of photosynthesis in some plants by
-  causing stomata to close, which limits $\mathrm{CO_2$ uptake and reduces transpirational
-  cooling.
+  causing stomata to close, which limits $\mathrm{CO_2$ uptake and reduces transpirational cooling.
 
 **Temperature:**
 
@@ -607,12 +604,11 @@ Shortest supply (Blackman's law of limiting factors).
 A graph shows the rate of photosynthesis at different light intensities at two different
 $\mathrm{CO_2$ concentrations (low and high):
 
-At low $\mathrm{CO_2$The rate plateaus at a lower value than at high $\mathrm{CO_2$. This is
-because $\mathrm{CO_2$ becomes limiting at a lower light intensity when $\mathrm{CO_2$
-concentration is low. At high $\mathrm{CO_2$A higher light intensity is required before
-$\mathrm{CO_2$ becomes limiting, So the plateau is higher. This demonstrates that the factors
-interact: the level at which one factor Becomes limiting depends on the availability of the other
-factors.
+At low $\mathrm{CO_2$The rate plateaus at a lower value than at high $\mathrm{CO_2$. This is because
+$\mathrm{CO_2$ becomes limiting at a lower light intensity when $\mathrm{CO_2$ concentration is low.
+At high $\mathrm{CO_2$A higher light intensity is required before $\mathrm{CO_2$ becomes limiting,
+So the plateau is higher. This demonstrates that the factors interact: the level at which one factor
+Becomes limiting depends on the availability of the other factors.
 
 **The Calvin cycle in detail:**
 
@@ -660,31 +656,31 @@ $$3\mathrm{CO_2 + 9\mathrm{ATP + 6\mathrm{NADPH \to \mathrm{TP (for glucose) + 9
 - Increasing $\mathrm{CO_2$ concentration increases the rate of photosynthesis because more
   $\mathrm{CO_2$ is available for fixation by RuBisCO.
 - The rate plateaus when another factor (light or temperature) becomes limiting.
-- Commercial glasshouse growers often supplement $\mathrm{CO_2$ to approximately 1000 ppm
-  (compared to approximately 420 ppm in the atmosphere) to increase crop yields.
+- Commercial glasshouse growers often supplement $\mathrm{CO_2$ to approximately 1000 ppm (compared
+  to approximately 420 ppm in the atmosphere) to increase crop yields.
 
 **Leaf structure and its role in photosynthesis:**
 
 The leaf is the main photosynthetic organ. Its structure is adapted to maximise light absorption and
 Gas exchange:
 
-| Leaf structure     | Adaptation for photosynthesis                                     |
-| ------------------ | ----------------------------------------------------------------- |
-| Large surface area | Maximises light absorption                                        |
+| Leaf structure     | Adaptation for photosynthesis                                 |
+| ------------------ | ------------------------------------------------------------- |
+| Large surface area | Maximises light absorption                                    |
 | Thin               | Short diffusion distance for $\mathrm{CO_2$ and $\mathrm{O_2$ |
-| Waxy cuticle       | Prevents water loss by evaporation                                |
-| Palisade mesophyll | Cells packed with chloroplasts near the upper surface             |
-| Spongy mesophyll   | Air spaces allow gas diffusion                                    |
+| Waxy cuticle       | Prevents water loss by evaporation                            |
+| Palisade mesophyll | Cells packed with chloroplasts near the upper surface         |
+| Spongy mesophyll   | Air spaces allow gas diffusion                                |
 | Stomata            | Pores for $\mathrm{CO_2$ entry and $\mathrm{O_2$ exit         |
-| Xylem              | Transports water to the leaf                                      |
-| Phloem             | Transports sugars (products of photosynthesis) away               |
+| Xylem              | Transports water to the leaf                                  |
+| Phloem             | Transports sugars (products of photosynthesis) away           |
 
 **Gas exchange in the leaf:**
 
-$\mathrm{CO_2$ diffuses into the leaf through the stomata (pores on the lower surface), through
-the Air spaces in the spongy mesophyll, and into the palisade mesophyll cells, where it is used in
-the Calvin cycle. $\mathrm{O_2$ (a product of the light-dependent reactions) diffuses out by the
-reverse Path.
+$\mathrm{CO_2$ diffuses into the leaf through the stomata (pores on the lower surface), through the
+Air spaces in the spongy mesophyll, and into the palisade mesophyll cells, where it is used in the
+Calvin cycle. $\mathrm{O_2$ (a product of the light-dependent reactions) diffuses out by the reverse
+Path.
 
 The opening and closing of stomata is controlled by guard cells. When guard cells are turgid (full
 Of water), the stomata open; when they are flaccid (low water), the stomata close. This is a
@@ -738,4 +734,16 @@ Production at different light intensities.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of cell biology, including key concepts, experimental
+evidence, and real-world applications.
+
+**Key concepts include:**
+
+- cell structure (prokaryotic vs eukaryotic)
+- cell ultrastructure (organelles)
+- microscopy and resolution
+- cell division (mitosis and meiosis)
+- the cell cycle
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

@@ -1084,4 +1084,16 @@ $= \dfrac{1}{3}\begin{pmatrix}3125&32\\3125&-64\end{pmatrix}\begin{pmatrix}2&1\\
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to matrices and transformations
+(extended), including key theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- complex number arithmetic
+- Argand diagrams
+- modulus and argument
+- De Moivre's theorem
+- roots of complex numbers
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

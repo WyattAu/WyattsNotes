@@ -275,8 +275,8 @@ Conditions $n \gt 50$ and $p \lt 0.1$ are practical thresholds that ensure:
 
 1. **$n$ is large enough** that the discrete binomial is well-approximated by a limit distribution.
 2. **$p$ is small enough** that the "rare event" assumption of the Poisson model is satisfied.
-3. **$\lambda = np$ is moderate** ( $0 \lt \lambda \lt 10$), so that neither distribution is
-   heavily concentrated at a single point.
+3. **$\lambda = np$ is moderate** ( $0 \lt \lambda \lt 10$), so that neither distribution is heavily
+   concentrated at a single point.
 
 The approximation improves as $n$ increases and $p$ decreases while $\lambda = np$ remains fixed.
 
@@ -637,9 +637,9 @@ $\lambda = np = 120 \times 0.025 = 3$.
 
 $$P(X = 5) = \frac◆LB◆e^{-3} \times 3^5◆RB◆◆LB◆5!◆RB◆ = \frac◆LB◆e^{-3} \times 243◆RB◆◆LB◆120◆RB◆ = 2.025\,e^{-3} \approx 2.025 \times 0.0498 \approx 0.1008$$
 
-(c) For the normal approximation we need $np \gt 5$ and $n(1-p) \gt 5$. Here $np = 3 \lt 5$ So
-the normal approximation is not appropriate. The Poisson approximation is the correct choice Since
-$p$ is small.
+(c) For the normal approximation we need $np \gt 5$ and $n(1-p) \gt 5$. Here $np = 3 \lt 5$ So the
+normal approximation is not appropriate. The Poisson approximation is the correct choice Since $p$
+is small.
 
 **If you get this wrong, revise:**
 [Poisson approximation to the Binomial](#47-poisson-approximation-to-the-binomial) — Section 4.7.
@@ -685,12 +685,13 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).

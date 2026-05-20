@@ -283,8 +283,7 @@ _Base case ($n=4$):_ $24 \gt 16$. ✓
 
 _Hypothesis:_ $k! \gt 2^k$ for $k \geq 4$.
 
-_Step:_
-$(k+1)! = (k+1) \cdot k! \gt (k+1) \cdot 2^k \geq 5 \cdot 2^k \gt 2 \cdot 2^k = 2^{k+1}$.
+_Step:_ $(k+1)! = (k+1) \cdot k! \gt (k+1) \cdot 2^k \geq 5 \cdot 2^k \gt 2 \cdot 2^k = 2^{k+1}$.
 
 Since $k \geq 4$We have $k+1 \geq 5 \gt 2$. ✓ $\blacksquare$
 
@@ -333,8 +332,8 @@ Prove by contradiction that there is no greatest even integer.
 <summary>Solution 2</summary>
 Suppose $N$ is the greatest even integer. Then $N = 2k$ for some $k \in \mathbb{Z}$.
 
-But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 \gt N$. This contradicts $N$ being the
-Greatest even integer. $\blacksquare$
+But $N + 2 = 2k + 2 = 2(k+1)$ is also even, and $N+2 \gt N$. This contradicts $N$ being the Greatest
+even integer. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
 
@@ -548,12 +547,13 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-## Summary
+2. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.

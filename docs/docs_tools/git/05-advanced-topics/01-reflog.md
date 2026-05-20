@@ -215,12 +215,13 @@ reset, rebase, or amend something, the reflog is your first line of defense.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-## Summary
+2. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-<!-- TODO: Add a summary for this topic -->
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.

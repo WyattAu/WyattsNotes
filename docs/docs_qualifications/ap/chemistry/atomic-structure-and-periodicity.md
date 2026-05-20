@@ -44,9 +44,8 @@ Rutherford derived that the closest approach distance $d$ for a head-on collisio
 $$d = \frac{k \cdot Z_1 Z_2 e^2}{K}$$
 
 Where $K$ is the kinetic energy of the alpha particle. For $5.5 \mathrm{ MeV$ alpha particles on
-Gold, $d \approx 3 \times 10^{-14} \mathrm{ m$Which is much smaller than the atomic radius of
-About $10^{-10} \mathrm{ m$. This confirms that the nucleus is extremely small compared to the
-Atom.
+Gold, $d \approx 3 \times 10^{-14} \mathrm{ m$Which is much smaller than the atomic radius of About
+$10^{-10} \mathrm{ m$. This confirms that the nucleus is extremely small compared to the Atom.
 
 ### Subatomic Particles
 
@@ -352,8 +351,8 @@ More photons arrive per unit time) but not their maximum kinetic energy.
 
 ### Worked Example: Photoelectric Effect
 
-The work function of sodium is $2.28 \mathrm{ eV$. Calculate the maximum kinetic energy of
-Electrons ejected by light of wavelength $400 \mathrm{ nm$.
+The work function of sodium is $2.28 \mathrm{ eV$. Calculate the maximum kinetic energy of Electrons
+ejected by light of wavelength $400 \mathrm{ nm$.
 
 $$E = \frac{hc}{\lambda} = \frac{1240 \mathrm{ eV\cdot\mathrm{nm}{400 \mathrm{ nm} = 3.10 \mathrm{ eV$$
 
@@ -367,9 +366,9 @@ $$
 Z_{\mathrm{eff} = Z - S
 $$
 
-Where $Z$ is the atomic number and $S$ is the shielding constant. $Z_{\mathrm{eff}$ increases
-Across a period (less shielding, same number of shells) and stays roughly constant down a group
-(more shielding offsets more protons).
+Where $Z$ is the atomic number and $S$ is the shielding constant. $Z_{\mathrm{eff}$ increases Across
+a period (less shielding, same number of shells) and stays roughly constant down a group (more
+shielding offsets more protons).
 
 The concept of $Z_{\mathrm{eff}$ is the key to understanding all periodic trends. Across a period,
 $Z$ increases by one per element but the shielding increases very little (electrons in the same
@@ -446,8 +445,8 @@ Repulsion, allowing the remaining electrons to be pulled closer to the nucleus.
 Repulsion.
 
 **Isoelectronic series** (same number of electrons): ionic radius decreases with increasing nuclear
-Charge. For example: $\mathrm{O^{2-} \gt \mathrm{F^- \gt \mathrm{Na^+ \gt \mathrm{Mg^{2+}$
-(all Have 10 electrons, but nuclear charge increases from 8 to 12).
+Charge. For example: $\mathrm{O^{2-} \gt \mathrm{F^- \gt \mathrm{Na^+ \gt \mathrm{Mg^{2+}$ (all Have
+10 electrons, but nuclear charge increases from 8 to 12).
 
 ### Worked Example: Isoelectronic Radius Comparison
 
@@ -464,10 +463,10 @@ Order: $\mathrm{Mg^{2+} \lt \mathrm{Na^+ \lt \mathrm{F^- \lt \mathrm{O^{2-}$.
 The first five ionization energies of aluminium ($Z = 13$) are: 578, 1817, 2745, 11578, and 14842
 KJ/mol. Explain the pattern.
 
-Al: $[\mathrm{Ne]\,3s^2 3p^1$. The first three electrons are removed from the n=3 shell
-(relatively Easy). The large jump between the third (2745) and fourth (11578) IE occurs because the
-fourth Electron must be removed from the n=2 shell, which is much closer to the nucleus and less
-shielded. This confirms aluminium has three valence electrons (Group 13).
+Al: $[\mathrm{Ne]\,3s^2 3p^1$. The first three electrons are removed from the n=3 shell (relatively
+Easy). The large jump between the third (2745) and fourth (11578) IE occurs because the fourth
+Electron must be removed from the n=2 shell, which is much closer to the nucleus and less shielded.
+This confirms aluminium has three valence electrons (Group 13).
 
 ### Shielding and Penetration
 
@@ -508,8 +507,8 @@ With all electrons paired are **diamagnetic** (weakly repelled by a magnetic fie
 
 Determine the magnetic properties of $\mathrm{Cr^{3+}$.
 
-$\mathrm{Cr^{3+}$: $[\mathrm{Ar]\,3d^3$. Three unpaired electrons in the 3d subshell (one in
-each Of three orbitals, following Hund's rule). Therefore, $\mathrm{Cr^{3+}$ is paramagnetic.
+$\mathrm{Cr^{3+}$: $[\mathrm{Ar]\,3d^3$. Three unpaired electrons in the 3d subshell (one in each Of
+three orbitals, following Hund's rule). Therefore, $\mathrm{Cr^{3+}$ is paramagnetic.
 
 ### Worked Example: Predicting Magnetic Properties
 
@@ -517,9 +516,9 @@ Predict the magnetic properties of $\mathrm{Zn^{2+}$ and $\mathrm{Fe^{3+}$.
 
 $\mathrm{Zn^{2+}$: $[\mathrm{Ar]\,3d^{10}$. All 3d orbitals are fully paired. Diamagnetic.
 
-$\mathrm{Fe^{3+}$: $[\mathrm{Ar]\,3d^5$. Five unpaired electrons (one in each 3d orbital,
-Maximising parallel spins by Hund's rule). Paramagnetic, and strongly so because of the five
-Unpaired electrons.
+$\mathrm{Fe^{3+}$: $[\mathrm{Ar]\,3d^5$. Five unpaired electrons (one in each 3d orbital, Maximising
+parallel spins by Hund's rule). Paramagnetic, and strongly so because of the five Unpaired
+electrons.
 
 ## The d-Block and Valence Electrons (CED Unit 1)
 
@@ -529,8 +528,8 @@ For main group elements, valence electrons are those in the outermost s and p su
 Transition metals, the valence electrons include the outermost s electrons and the d electrons of
 The highest occupied d subshell.
 
-| Element | Configuration                  | Valence Electrons |
-| ------- | ------------------------------ | ----------------- |
+| Element | Configuration                | Valence Electrons |
+| ------- | ---------------------------- | ----------------- |
 | Sc      | $[\mathrm{Ar]\,4s^2 3d^1$    | 3                 |
 | Ti      | $[\mathrm{Ar]\,4s^2 3d^2$    | 4                 |
 | Fe      | $[\mathrm{Ar]\,4s^2 3d^6$    | 8                 |
@@ -558,9 +557,9 @@ $\mathrm{Fe^{2+}$: $[\mathrm{Ar]\,3d^6$ (remove 4s electrons).
 
 $\mathrm{Fe^{3+}$: $[\mathrm{Ar]\,3d^5$ (remove 4s and one 3d electron).
 
-$\mathrm{Fe^{3+}$ has a half-filled 3d subshell ($d^5$), which is particularly stable due to
-Maximum exchange energy (all five electrons have parallel spins). This explains why
-$\mathrm{Fe^{3+}$ is more common and more stable than $\mathrm{Fe^{2+}$ in many compounds.
+$\mathrm{Fe^{3+}$ has a half-filled 3d subshell ($d^5$), which is particularly stable due to Maximum
+exchange energy (all five electrons have parallel spins). This explains why $\mathrm{Fe^{3+}$ is
+more common and more stable than $\mathrm{Fe^{2+}$ in many compounds.
 
 ### Worked Example: Periodic Trend Prediction
 
@@ -575,9 +574,8 @@ Order: Na &lt; Al &lt; Cl &lt; Ar.
 
 ### Derivation: Ionization Energy Across a Period
 
-The first ionization energy generally increases across a period because $Z_{\mathrm{eff}$
-increases While the principal quantum number $n$ stays the same. The outermost electron is held more
-tightly.
+The first ionization energy generally increases across a period because $Z_{\mathrm{eff}$ increases
+While the principal quantum number $n$ stays the same. The outermost electron is held more tightly.
 
 The decrease from Group 2 to Group 13 occurs because the Group 13 electron enters a p subshell,
 Which is higher in energy and more effectively shielded than the s subshell of Group 2.
@@ -588,15 +586,15 @@ The increase in $Z_{\mathrm{eff}$.
 
 ## Summary Table: Periodic Trends Explained
 
-| Trend             | Direction                  | Explanation                                                         |
-| ----------------- | -------------------------- | ------------------------------------------------------------------- |
+| Trend             | Direction                  | Explanation                                                       |
+| ----------------- | -------------------------- | ----------------------------------------------------------------- |
 | Atomic radius     | Decreases L to R           | Increasing $Z_{\mathrm{eff}$ pulls electrons closer               |
-| Atomic radius     | Increases top to bottom    | Additional shells outweigh increased nuclear charge                 |
+| Atomic radius     | Increases top to bottom    | Additional shells outweigh increased nuclear charge               |
 | Ionization energy | Increases L to R           | Higher $Z_{\mathrm{eff}$ makes electrons harder to remove         |
-| Ionization energy | Decreases top to bottom    | Outer electrons are further from nucleus and more shielded          |
+| Ionization energy | Decreases top to bottom    | Outer electrons are further from nucleus and more shielded        |
 | Electron affinity | Generally increases L to R | Greater $Z_{\mathrm{eff}$ increases attraction for added electron |
 | Electronegativity | Increases L to R           | Greater $Z_{\mathrm{eff}$ increases pull on bonding electrons     |
-| Electronegativity | Decreases top to bottom    | Greater distance from nucleus reduces pull on bonding electrons     |
+| Electronegativity | Decreases top to bottom    | Greater distance from nucleus reduces pull on bonding electrons   |
 
 ## Common Pitfalls
 
@@ -650,8 +648,8 @@ The increase in $Z_{\mathrm{eff}$.
 10. Which element has the higher electronegativity, and why: P or Cl?
 
 11. For the isoelectronic series $\mathrm{N^{3-}$$\mathrm{O^{2-}$$\mathrm{F^-$
-    $\mathrm{Na^+$$\mathrm{Mg^{2+}$Arrange the ions in order of increasing radius and explain
-    the trend.
+    $\mathrm{Na^+$$\mathrm{Mg^{2+}$Arrange the ions in order of increasing radius and explain the
+    trend.
 
 12. Explain, in terms of effective nuclear charge, why atomic radius decreases across a period.
 
@@ -689,8 +687,8 @@ The increase in $Z_{\mathrm{eff}$.
 24. Explain why the atomic radius of gallium is nearly the same as that of aluminium, despite
     gallium being in the period below aluminium.
 
-25. Calculate the de Broglie wavelength of an electron travelling at
-    $2.0 \times 10^6 \mathrm{ m/s$. (Electron mass = $9.11 \times 10^{-31}$ kg.)
+25. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \mathrm{ m/s$.
+    (Electron mass = $9.11 \times 10^{-31}$ kg.)
 
 26. Explain why potassium has a lower first ionization energy than argon, despite having a higher
     nuclear charge.
@@ -850,4 +848,12 @@ This is why K has a larger atomic radius than Na despite similar $Z_{\mathrm{eff
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: pH calculation**
+
+Calculate the pH of a $0.050\,\text{mol\,dm}^{-3}$ solution of HCl.
+
+**Solution:**
+
+HCl is a strong acid, so $[\text{H}^+] = 0.050\,\text{mol\,dm}^{-3}$.
+
+$$\text{pH} = -\log_{10}[\text{H}^+] = -\log_{10}(0.050) = 1.30$$

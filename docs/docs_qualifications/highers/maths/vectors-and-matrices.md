@@ -20,9 +20,8 @@ slug: vectors-and-matrices
 
 A vector has both **magnitude** and **direction**. A scalar has only magnitude.
 
-A vector in 2D can be written as $\mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}$ or as
-the Column vector $(a_1, a_2)$. In 3D:
-$\mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}$.
+A vector in 2D can be written as $\mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \end{pmatrix}$ or as the
+Column vector $(a_1, a_2)$. In 3D: $\mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}$.
 
 **Magnitude (Modulus):**
 
@@ -43,8 +42,7 @@ $\mathbf{i} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$
 $\mathbf{j} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$
 $\mathbf{k} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
 
-Any vector in 3D can be written as
-$\mathbf{a} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$.
+Any vector in 3D can be written as $\mathbf{a} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$.
 
 **Example:** Find the unit vector in the direction of $\mathbf{a} = (3, -4)$.
 
@@ -62,8 +60,7 @@ $$
 \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} + \begin{pmatrix} b_1 \\ b_2 \end{pmatrix} = \begin{pmatrix} a_1 + b_1 \\ a_2 + b_2 \end{pmatrix}
 $$
 
-Vector addition is commutative
-($\mathbf{a} + \mathbf{b} = \mathbf{b} + \mathbf{a}$) and associative
+Vector addition is commutative ($\mathbf{a} + \mathbf{b} = \mathbf{b} + \mathbf{a}$) and associative
 ($( \mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})$).
 
 **Scalar Multiplication:**
@@ -83,8 +80,8 @@ $$
 
 Where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$.
 
-**Proof of the dot product formula.** By the cosine rule in the triangle formed by
-$\mathbf{a}$ $\mathbf{b}$And $\mathbf{a} - \mathbf{b}$:
+**Proof of the dot product formula.** By the cosine rule in the triangle formed by $\mathbf{a}$
+$\mathbf{b}$And $\mathbf{a} - \mathbf{b}$:
 
 $$
 |\mathbf{a} - \mathbf{b}|^2 = |\mathbf{a}|^2 + |\mathbf{b}|^2 - 2|\mathbf{a}||\mathbf{b}|\cos\theta
@@ -93,12 +90,10 @@ $$
 Expanding the left side:
 $(\mathbf{a} - \mathbf{b}) \cdot (\mathbf{a} - \mathbf{b}) = |\mathbf{a}|^2 - 2\mathbf{a} \cdot \mathbf{b} + |\mathbf{b}|^2$.
 
-Comparing:
-$-2\mathbf{a} \cdot \mathbf{b} = -2|\mathbf{a}||\mathbf{b}|\cos\theta$Hence
+Comparing: $-2\mathbf{a} \cdot \mathbf{b} = -2|\mathbf{a}||\mathbf{b}|\cos\theta$Hence
 $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$.
 
-**Example:** Find the angle between $\mathbf{a} = (2, 1, -1)$ and
-$\mathbf{b} = (1, -3, 2)$.
+**Example:** Find the angle between $\mathbf{a} = (2, 1, -1)$ and $\mathbf{b} = (1, -3, 2)$.
 
 $$
 \mathbf{a} \cdot \mathbf{b} = 2(1) + 1(-3) + (-1)(2) = 2 - 3 - 2 = -3
@@ -144,8 +139,8 @@ $$
 ### Properties of the Scalar Product
 
 - $\mathbf{a} \cdot \mathbf{a} = |\mathbf{a}|^2$
-- $\mathbf{a} \cdot \mathbf{b} = 0$ if and only if $\mathbf{a}$ is perpendicular
-  to $\mathbf{b}$ (for non-zero vectors)
+- $\mathbf{a} \cdot \mathbf{b} = 0$ if and only if $\mathbf{a}$ is perpendicular to $\mathbf{b}$
+  (for non-zero vectors)
 - $\mathbf{a} \cdot \mathbf{b} = \mathbf{b} \cdot \mathbf{a}$ (commutative)
 - $\mathbf{a} \cdot (\mathbf{b} + \mathbf{c}) = \mathbf{a} \cdot \mathbf{b} + \mathbf{a} \cdot \mathbf{c}$
   (distributive)
@@ -275,9 +270,8 @@ $$
 
 ### Solving Systems of Linear Equations
 
-A system $A\mathbf{x} = \mathbf{b}$ has solution
-$\mathbf{x} = A^{-1}\mathbf{b}$ (provided $A$ is Invertible). If $\det A = 0$The system
-has either no solutions or infinitely many solutions.
+A system $A\mathbf{x} = \mathbf{b}$ has solution $\mathbf{x} = A^{-1}\mathbf{b}$ (provided $A$ is
+Invertible). If $\det A = 0$The system has either no solutions or infinitely many solutions.
 
 **Example:** Solve the system:
 
@@ -334,8 +328,7 @@ This matrix represents an enlargement by scale factor 1 (i.e., the identity/no t
 
 ### Vector Product (Cross Product)
 
-The vector product of $\mathbf{a} = (a_1, a_2, a_3)$ and $\mathbf{b} = (b_1, b_2, b_3)$
-is:
+The vector product of $\mathbf{a} = (a_1, a_2, a_3)$ and $\mathbf{b} = (b_1, b_2, b_3)$ is:
 
 $$
 \mathbf{a} \times \mathbf{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} = \begin{pmatrix} a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3 \\ a_1 b_2 - a_2 b_1 \end{pmatrix}
@@ -343,20 +336,17 @@ $$
 
 **Properties:**
 
-- $\mathbf{a} \times \mathbf{b} = -(\mathbf{b} \times \mathbf{a})$
-  (anti-commutative)
+- $\mathbf{a} \times \mathbf{b} = -(\mathbf{b} \times \mathbf{a})$ (anti-commutative)
 - $|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$
-- $\mathbf{a} \times \mathbf{b}$ is perpendicular to both $\mathbf{a}$ and
-  $\mathbf{b}$
-- $\mathbf{a} \times \mathbf{b} = \mathbf{0}$ if $\mathbf{a}$ and
-  $\mathbf{b}$ are parallel
+- $\mathbf{a} \times \mathbf{b}$ is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$
+- $\mathbf{a} \times \mathbf{b} = \mathbf{0}$ if $\mathbf{a}$ and $\mathbf{b}$ are parallel
 
-**Geometric interpretation:** $|\mathbf{a} \times \mathbf{b}|$ is the area of the
-parallelogram with Sides $\mathbf{a}$ and $\mathbf{b}$. The area of the triangle is
+**Geometric interpretation:** $|\mathbf{a} \times \mathbf{b}|$ is the area of the parallelogram with
+Sides $\mathbf{a}$ and $\mathbf{b}$. The area of the triangle is
 $\frac{1}{2}|\mathbf{a} \times \mathbf{b}|$.
 
-**Example:** Find $\mathbf{a} \times \mathbf{b}$ where $\mathbf{a} = (1, 2, 3)$
-and $\mathbf{b} = (4, -1, 2)$.
+**Example:** Find $\mathbf{a} \times \mathbf{b}$ where $\mathbf{a} = (1, 2, 3)$ and
+$\mathbf{b} = (4, -1, 2)$.
 
 $$
 \mathbf{a} \times \mathbf{b} = \begin{pmatrix} (2)(2) - (3)(-1) \\ (3)(4) - (1)(2) \\ (1)(-1) - (2)(4) \end{pmatrix} = \begin{pmatrix} 4 + 3 \\ 12 - 2 \\ -1 - 8 \end{pmatrix} = \begin{pmatrix} 7 \\ 10 \\ -9 \end{pmatrix}
@@ -372,18 +362,17 @@ $$
 [\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})
 $$
 
-This equals the volume of the parallelepiped formed by vectors
-$\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
+This equals the volume of the parallelepiped formed by vectors $\mathbf{a}$$\mathbf{b}$And
+$\mathbf{c}$.
 
-The three vectors are coplanar if and only if
-$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = 0$.
+The three vectors are coplanar if and only if $[\mathbf{a}, \mathbf{b}, \mathbf{c}] = 0$.
 
 **Properties:**
 
 - $[\mathbf{a}, \mathbf{b}, \mathbf{c}] = [\mathbf{b}, \mathbf{c}, \mathbf{a}] = [\mathbf{c}, \mathbf{a}, \mathbf{b}]$
   (cyclic permutation)
-- $[\mathbf{a}, \mathbf{b}, \mathbf{c}] = -[\mathbf{b}, \mathbf{a}, \mathbf{c}]$
-  (swapping two vectors negates)
+- $[\mathbf{a}, \mathbf{b}, \mathbf{c}] = -[\mathbf{b}, \mathbf{a}, \mathbf{c}]$ (swapping two
+  vectors negates)
 
 **Example:** Show that the vectors $(1, 2, -1)$$(3, 1, 2)$And $(0, 5, -5)$ are coplanar.
 
@@ -395,8 +384,7 @@ $$
 \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 1(-15) + 2(-5) + (-1)(15) = -15 - 10 - 15 = -40
 $$
 
-Wait, that is not zero. Let me recompute.
-$\mathbf{b} = (3, 1, 2)$$\mathbf{c} = (0, 5, -5)$.
+Wait, that is not zero. Let me recompute. $\mathbf{b} = (3, 1, 2)$$\mathbf{c} = (0, 5, -5)$.
 
 $$
 \mathbf{b} \times \mathbf{c} = \begin{pmatrix} 1(-5) - 2(5) \\ 2(0) - 3(-5) \\ 3(5) - 1(0) \end{pmatrix} = \begin{pmatrix} -15 \\ 15 \\ 15 \end{pmatrix}
@@ -413,8 +401,8 @@ Confirmed coplanar. $\blacksquare$
 
 ### Lines and Planes in 3D
 
-**Equation of a plane:** $\mathbf{r} \cdot \mathbf{n} = d$Where $\mathbf{n}$ is
-the normal vector And $d$ is a constant.
+**Equation of a plane:** $\mathbf{r} \cdot \mathbf{n} = d$Where $\mathbf{n}$ is the normal vector
+And $d$ is a constant.
 
 In Cartesian form: $ax + by + cz = d$.
 
@@ -439,8 +427,8 @@ $$
 D = \frac{|\mathbf{n} \cdot \mathbf{r}_0 - d_0|}{|\mathbf{n}|}
 $$
 
-Where $\mathbf{r}_0$ is the position vector of the point and $d_0$ is the constant in the
-plane Equation.
+Where $\mathbf{r}_0$ is the position vector of the point and $d_0$ is the constant in the plane
+Equation.
 
 **Example:** Find the equation of the plane through $(1, 2, -1)$$(3, 0, 2)$And $(0, 1, 4)$.
 
@@ -550,8 +538,8 @@ $$
 
 ### Eigenvalues and Eigenvectors (Advanced Higher)
 
-A scalar $\lambda$ is an **eigenvalue** of $A$ if there exists a non-zero vector $\mathbf{v}$
-such That:
+A scalar $\lambda$ is an **eigenvalue** of $A$ if there exists a non-zero vector $\mathbf{v}$ such
+That:
 
 $$
 A\mathbf{v} = \lambda\mathbf{v}
@@ -618,12 +606,10 @@ $$
 
 $\lambda = 6$ or $\lambda = 3$.
 
-For $\lambda = 6$:
-$\begin{pmatrix} -1 & 2 \\ 1 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0}$Giving
+For $\lambda = 6$: $\begin{pmatrix} -1 & 2 \\ 1 & -2 \end{pmatrix}\mathbf{v} = \mathbf{0}$Giving
 $v_1 = 2v_2$. Eigenvector: $\begin{pmatrix} 2 \\ 1 \end{pmatrix}$.
 
-For $\lambda = 3$:
-$\begin{pmatrix} 2 & 2 \\ 1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0}$Giving
+For $\lambda = 3$: $\begin{pmatrix} 2 & 2 \\ 1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0}$Giving
 $v_1 = -v_2$. Eigenvector: $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 ### Diagonalisation (Advanced Higher)
@@ -651,9 +637,9 @@ as columns.
 3. **Dimension mismatch:** You can only multiply an $m \times n$ matrix by an $n \times p$ matrix.
    The "inner dimensions" must match.
 
-4. **Forgetting the determinant in the inverse:** The inverse is
-   $\dfrac{1}{\det A} \mathrm{adj(A)$ not just $\mathrm{adj(A)$. Forgetting the $1/\det A$
-   factor gives a wrong answer unless $\det A = 1$.
+4. **Forgetting the determinant in the inverse:** The inverse is $\dfrac{1}{\det A} \mathrm{adj(A)$
+   not just $\mathrm{adj(A)$. Forgetting the $1/\det A$ factor gives a wrong answer unless
+   $\det A = 1$.
 
 5. **Normal vector direction:** The normal to a plane can point in either direction; check
    consistency when computing angles. The angle between planes should be between $0$ and $\pi/2$.
@@ -662,8 +648,8 @@ as columns.
    eigenvector. Always state the direction, not a specific magnitude.
 
 7. **Sign errors in the cross product:** The cross product is anti-commutative:
-   $\mathbf{a} \times \mathbf{b} = -(\mathbf{b} \times \mathbf{a})$. Getting
-   the order wrong negates the result.
+   $\mathbf{a} \times \mathbf{b} = -(\mathbf{b} \times \mathbf{a})$. Getting the order wrong negates
+   the result.
 
 8. **Cofactor sign errors:** The cofactor $C_{ij}$ includes a factor of $(-1)^{i+j}$. For position
    $(2, 3)$This is $(-1)^5 = -1$. Getting the sign wrong invalidates the entire inverse.
@@ -677,14 +663,13 @@ as columns.
 ## Practice Questions
 
 1. Given $\mathbf{a} = (2, -1, 3)$ and $\mathbf{b} = (4, 2, -1)$Find
-   $\mathbf{a} \cdot \mathbf{b}$$|\mathbf{a}|$$|\mathbf{b}|$And the angle
-   between them.
+   $\mathbf{a} \cdot \mathbf{b}$$|\mathbf{a}|$$|\mathbf{b}|$And the angle between them.
 
 2. Find the equation of the plane containing the points $(1, 0, 2)$$(3, 1, -1)$And $(0, 2, 4)$.
 
 3. Calculate $\mathbf{a} \times \mathbf{b}$ for $\mathbf{a} = (1, 3, -2)$ and
-   $\mathbf{b} = (4, -1, 5)$. Verify that $\mathbf{a} \times \mathbf{b}$ is
-   perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
+   $\mathbf{b} = (4, -1, 5)$. Verify that $\mathbf{a} \times \mathbf{b}$ is perpendicular to both
+   $\mathbf{a}$ and $\mathbf{b}$.
 
 4. Find the eigenvalues and eigenvectors of $\begin{pmatrix} 5 & 2 \\ 1 & 4 \end{pmatrix}$.
 
@@ -723,8 +708,16 @@ $$2x + y - z = 8$$ $$x - y + 3z = 1$$ $$3x + 2y + z = 11$$
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to vectors and matrices,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- fundamental definitions and theorems
+- algebraic and graphical methods
+- proof and logical reasoning
+- problem-solving strategies
+- applications and modelling
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

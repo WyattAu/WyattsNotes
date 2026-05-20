@@ -594,9 +594,9 @@ EU law. These areas protect important habitats and species.
 **Worked Example: Evaluating a conservation strategy.**
 
 A proposed wind farm development would be located on an area of blanket bog that is designated as a
-Special Area of Conservation. The wind farm would generate renewable energy (reducing
-$\mathrm{CO_2$ Emissions and helping to combat climate change) but would destroy the bog habitat
-and fragment the Populations of specialist bog species.
+Special Area of Conservation. The wind farm would generate renewable energy (reducing $\mathrm{CO_2$
+Emissions and helping to combat climate change) but would destroy the bog habitat and fragment the
+Populations of specialist bog species.
 
 This is an example of a conflict between two conservation goals: reducing carbon emissions and
 Protecting biodiversity. An environmental impact assessment would be required to evaluate the
@@ -680,8 +680,8 @@ Between the atmosphere, biosphere, oceans, and geosphere.
 **Human impact on the carbon cycle:**
 
 Since the Industrial Revolution, the burning of fossil fuels and deforestation have significantly
-Increased atmospheric $\mathrm{CO_2$ concentration from approximately 280 ppm to over 420 ppm.
-This Enhanced greenhouse effect is the primary driver of current climate change.
+Increased atmospheric $\mathrm{CO_2$ concentration from approximately 280 ppm to over 420 ppm. This
+Enhanced greenhouse effect is the primary driver of current climate change.
 
 **Deforestation and the carbon cycle:**
 
@@ -689,8 +689,8 @@ Trees store large amounts of carbon in their biomass (trunks, branches, roots). 
 Cleared:
 
 - The stored carbon is released as $\mathrm{CO_2$ if the wood is burned or left to rot.
-- The loss of trees reduces the rate of photosynthesis, decreasing the rate at which
-  $\mathrm{CO_2$ is removed from the atmosphere.
+- The loss of trees reduces the rate of photosynthesis, decreasing the rate at which $\mathrm{CO_2$
+  is removed from the atmosphere.
 - Deforestation accounts for approximately 10-15% of global $\mathrm{CO_2$ emissions.
 
 **Worked Example: Calculating net carbon flux.**
@@ -733,8 +733,16 @@ Phosphates), leading to excessive growth of algae and subsequent oxygen depletio
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of ecology, including key concepts, experimental
+evidence, and real-world applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- ecosystems and food webs
+- nutrient cycles (carbon, nitrogen)
+- population dynamics
+- biodiversity and conservation
+- succession
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

@@ -363,8 +363,7 @@ $\approx 20 + \dfrac{25 - 17}{18} \times 10 = 20 + \dfrac{80}{18} \approx 24.4$.
 
 A study records the temperature ($x$In $\mathrm^\circ C}$) and ice cream sales ($y$In USD) for 7
 days: $(18, 220)$$(22, 310)$$(25, 380)$$(28, 440)$$(31, 510)$$(34, 580)$$(20, 270)$. Find the
-regression line of $y$ on $x$The correlation coefficient, and predict sales at
-$30\mathrm^\circ C}$.
+regression line of $y$ on $x$The correlation coefficient, and predict sales at $30\mathrm^\circ C}$.
 
 <details>
 <summary>Solution</summary>
@@ -617,4 +616,16 @@ Despite a positive test, there is only about a 61.5% chance the patient has the 
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to statistics, including key
+theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- measures of central tendency and spread
+- probability distributions (binomial, normal)
+- hypothesis testing
+- correlation and regression
+- sampling methods
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

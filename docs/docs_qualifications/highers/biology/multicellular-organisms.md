@@ -97,8 +97,8 @@ Embryonic stem cells and allows patient-specific therapies (using the patient's 
 - Synaptic terminals (release neurotransmitters)
 
 **Resting potential:** Approximately $-70 \mathrm{ mV$ inside the axon relative to outside.
-Maintained by the sodium-potassium pump ($3 \mathrm{ Na^+$ out, $2 \mathrm{ K^+$ in) and
-selective Permeability of the membrane.
+Maintained by the sodium-potassium pump ($3 \mathrm{ Na^+$ out, $2 \mathrm{ K^+$ in) and selective
+Permeability of the membrane.
 
 **Action potential:**
 
@@ -275,8 +275,8 @@ Lacteal (for fatty acids and glycerol).
 
 ## Common Pitfalls
 
-1. **Action potential direction:** Depolarisation is caused by $\mathrm{Na^+$ influx;
-   repolarisation by $\mathrm{K^+$ efflux.
+1. **Action potential direction:** Depolarisation is caused by $\mathrm{Na^+$ influx; repolarisation
+   by $\mathrm{K^+$ efflux.
 
 2. **Synapse transmission:** Neurotransmitters are released into the synaptic cleft, not directly
    into the next neurone.
@@ -306,8 +306,8 @@ Lacteal (for fatty acids and glycerol).
 
 3. Compare the nervous and endocrine systems as communication systems.
 
-4. A person has a stroke volume of $80 \mathrm{ mL$ and a heart rate of $65 \mathrm{ bpm$.
-   Calculate the cardiac output.
+4. A person has a stroke volume of $80 \mathrm{ mL$ and a heart rate of $65 \mathrm{ bpm$. Calculate
+   the cardiac output.
 
 5. Describe how insulin and glucagon work together to maintain blood glucose homeostasis.
 
@@ -461,9 +461,9 @@ And diffusion.
 
 **The loop of Henle:** Creates a concentration gradient in the medulla of the kidney. The descending
 Limb is permeable to water but not ions; water leaves by osmosis into the increasingly concentrated
-Medulla. The ascending limb is permeable to ions but not water; $\mathrm{Na^+$ and
-$\mathrm{Cl^-$ are Actively pumped out, making the medulla increasingly concentrated. This
-countercurrent multiplier Mechanism allows the kidney to produce concentrated urine.
+Medulla. The ascending limb is permeable to ions but not water; $\mathrm{Na^+$ and $\mathrm{Cl^-$
+are Actively pumped out, making the medulla increasingly concentrated. This countercurrent
+multiplier Mechanism allows the kidney to produce concentrated urine.
 
 **ADH (antidiuretic hormone):** Released by the posterior pituitary gland in response to increased
 Blood osmolarity (detected by osmoreceptors in the hypothalamus). ADH makes the collecting duct more
@@ -606,10 +606,10 @@ Accumulate at the site and release clotting factors. This triggers the clotting 
 
 **Worked Example: The importance of calcium ions in blood clotting.**
 
-Calcium ions ($\mathrm{Ca^{2+}$) are essential cofactors at multiple steps in the clotting
-cascade. Without calcium ions, thromboplastin cannot convert prothrombin to thrombin, and thrombin
-cannot Convert fibrinogen to fibrin. This is why calcium chelators (substances that bind and remove
-calcium Ions) such as EDTA are used as anticoagulants in blood collection tubes. Similarly, the
+Calcium ions ($\mathrm{Ca^{2+}$) are essential cofactors at multiple steps in the clotting cascade.
+Without calcium ions, thromboplastin cannot convert prothrombin to thrombin, and thrombin cannot
+Convert fibrinogen to fibrin. This is why calcium chelators (substances that bind and remove calcium
+Ions) such as EDTA are used as anticoagulants in blood collection tubes. Similarly, the
 Anticoagulant drug heparin works by enhancing the activity of antithrombin, which inactivates
 Thrombin, preventing fibrin formation.
 
@@ -720,4 +720,17 @@ Muscles use three sources of ATP during contraction:
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Comparing mitosis and meiosis**
+
+Compare mitosis and meiosis in terms of the number of divisions, daughter cells produced, and
+genetic variation.
+
+**Solution:**
+
+| Feature           | Mitosis                              | Meiosis                                     |
+| ----------------- | ------------------------------------ | ------------------------------------------- |
+| Divisions         | 1                                    | 2                                           |
+| Daughter cells    | 2                                    | 4                                           |
+| Chromosome number | Same as parent                       | Half of parent                              |
+| Genetic variation | No                                   | Yes (crossing over, independent assortment) |
+| Function          | Growth, repair, asexual reproduction | Production of gametes                       |

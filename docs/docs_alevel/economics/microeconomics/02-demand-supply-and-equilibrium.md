@@ -116,9 +116,9 @@ First-order condition:
 
 $$\frac◆LB◆d\pi◆RB◆◆LB◆dQ◆RB◆ = P - C'(Q) = 0 \implies P = MC(Q)$$
 
-Where $MC(Q) = C'(Q)$ is marginal cost. Second-order condition requires $C''(Q) \gt 0$ (MC
-Rising). The **supply curve** of a competitive firm is the portion of its $MC$ curve above the
-Average variable cost (AVC) curve.
+Where $MC(Q) = C'(Q)$ is marginal cost. Second-order condition requires $C''(Q) \gt 0$ (MC Rising).
+The **supply curve** of a competitive firm is the portion of its $MC$ curve above the Average
+variable cost (AVC) curve.
 
 $$Q_s(P) = MC^{-1}(P) \quad \mathrm{for } P \geq \min AVC$$
 
@@ -189,13 +189,13 @@ $|\mathrm{PED}|$.
 
 **Classification:**
 
-| Value                               | Description         | Interpretation               |
-| ----------------------------------- | ------------------- | ---------------------------- |
-| $\mathrm{PED} = 0$                  | Perfectly inelastic | Vertical demand curve        |
+| Value                           | Description         | Interpretation               |
+| ------------------------------- | ------------------- | ---------------------------- |
+| $\mathrm{PED} = 0$              | Perfectly inelastic | Vertical demand curve        |
 | $0 \lt \mathrm{PED} \lt 1$      | Inelastic           | %$\Delta Q$ &lt; %$\Delta P$ |
-| $\mathrm{PED} = 1$                  | Unit elastic        | %$\Delta Q$ = %$\Delta P$    |
+| $\mathrm{PED} = 1$              | Unit elastic        | %$\Delta Q$ = %$\Delta P$    |
 | $1 \lt \mathrm{PED} \lt \infty$ | Elastic             | %$\Delta Q$ &gt; %$\Delta P$ |
-| $\mathrm{PED} = \infty$             | Perfectly elastic   | Horizontal demand curve      |
+| $\mathrm{PED} = \infty$         | Perfectly elastic   | Horizontal demand curve      |
 
 ### 4.2 PED and Total Revenue
 
@@ -462,8 +462,8 @@ $P^*$ definitely increases. Quantity could increase or decrease depending on whi
 
 **Example.** "The price of coffee rises. Explain the effect on the market for tea."
 
-**Correct analysis.** Coffee and tea are substitutes ($\mathrm{XED} \gt 0$). A rise in the price
-Of coffee shifts the demand curve for tea to the **right** (increase in demand for tea). At the
+**Correct analysis.** Coffee and tea are substitutes ($\mathrm{XED} \gt 0$). A rise in the price Of
+coffee shifts the demand curve for tea to the **right** (increase in demand for tea). At the
 Original price, there is now excess demand for tea. The price of tea rises, and the quantity of tea
 Traded increases. This is a **shift** in the demand curve, not a movement along it.
 
@@ -1120,4 +1120,16 @@ way to help low-income renters without distorting the market.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of demand, supply and equilibrium, including key
+reactions, underlying theories, and practical applications.
+
+**Key concepts include:**
+
+- dynamic equilibrium and Le Chatelier's principle
+- the equilibrium constant $K_c$ and $K_p$
+- the Haber process
+- acid-base equilibria and pH
+- buffer solutions
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

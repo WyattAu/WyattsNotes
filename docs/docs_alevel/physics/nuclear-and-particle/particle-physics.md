@@ -494,12 +494,13 @@ m). The discrepancy suggests an experimental issue or different scattering geome
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Summary
+2. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.

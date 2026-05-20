@@ -124,14 +124,14 @@ $$
 
 A higher SNR means better signal quality. Typical Wi-Fi requirements:
 
-| SNR (dB)   | Quality     | Maximum MCS |
-| ---------- | ----------- | ----------- |
+| SNR (dB) | Quality     | Maximum MCS |
+| -------- | ----------- | ----------- |
 | $\lt$ 5  | Unusable    | --          |
-| 5 -- 10    | Very poor   | MCS 0-1     |
-| 10 -- 15   | Poor        | MCS 2-3     |
-| 15 -- 20   | Fair        | MCS 4-7     |
-| 20 -- 25   | Good        | MCS 8-15    |
-| 25 -- 40   | Excellent   | MCS 16-23   |
+| 5 -- 10  | Very poor   | MCS 0-1     |
+| 10 -- 15 | Poor        | MCS 2-3     |
+| 15 -- 20 | Fair        | MCS 4-7     |
+| 20 -- 25 | Good        | MCS 8-15    |
+| 25 -- 40 | Excellent   | MCS 16-23   |
 | $\gt$ 40 | Outstanding | Maximum     |
 
 **Signal-to-Interference-plus-Noise Ratio (SINR)** adds interference from other wireless devices to
@@ -502,13 +502,13 @@ Wi-Fi signal strength is measured in dBm (decibels relative to 1 milliwatt). Typ
 
 | Signal (dBm) | Quality    | Usability                          |
 | ------------ | ---------- | ---------------------------------- |
-| $\gt$ -30  | Excellent  | Unusually close to AP              |
+| $\gt$ -30    | Excellent  | Unusually close to AP              |
 | -30 to -50   | Excellent  | Optimal for all applications       |
 | -50 to -60   | Good       | Reliable for VoIP, video, data     |
 | -60 to -67   | Acceptable | Reliable for data, VoIP may suffer |
 | -67 to -70   | Weak       | Data only, video unreliable        |
 | -70 to -80   | Very weak  | Intermittent connectivity          |
-| $\lt$ -80  | Unusable   | Connection unlikely                |
+| $\lt$ -80    | Unusable   | Connection unlikely                |
 
 ### Interference Types
 
@@ -924,8 +924,16 @@ Opportunities.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential concepts and techniques related to wireless networking, including
+key principles and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and definitions
+- key principles and frameworks
+- practical applications
+- common techniques and methods
+- evaluation and critical analysis
+
+A thorough understanding of these concepts, combined with regular practice and review, is essential
+for mastery of this topic.

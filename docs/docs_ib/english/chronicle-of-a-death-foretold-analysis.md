@@ -985,12 +985,11 @@ Following pairings are especially productive:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Describing the content of a text without analysing the language techniques the writer uses.
 
-## Summary
+2. Summarising the plot instead of exploring themes, characterisation, or narrative structure.
 
-<!-- TODO: Add a summary for this topic -->
+3. Failing to embed quotations into analytical sentences — quotations should support your argument,
+   not stand alone.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Ignoring context — always consider the social, historical, and literary context of the text.

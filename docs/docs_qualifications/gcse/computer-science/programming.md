@@ -718,8 +718,16 @@ random.shuffle(deck)
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of programming, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- arrays and linked lists
+- stacks and queues
+- trees (binary, AVL, BST)
+- hash tables
+- graphs and their representations
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

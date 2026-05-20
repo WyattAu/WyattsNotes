@@ -52,8 +52,8 @@ $$M_r = 2(55.8) + 3(16.0) = 111.6 + 48.0 = 159.6$$
 In a balanced chemical equation, the total $M_r$ of reactants equals the total $M_r$ of products.
 This is a direct consequence of the conservation of mass.
 
-**Worked Example.** Verify that the equation $\mathrm{CaCO_3 \to \mathrm{CaO + \mathrm{CO_2$
-obeys the Law of conservation of mass.
+**Worked Example.** Verify that the equation $\mathrm{CaCO_3 \to \mathrm{CaO + \mathrm{CO_2$ obeys
+the Law of conservation of mass.
 
 $M_r(\mathrm{CaCO_3) = 100.1$$M_r(\mathrm{CaO) = 56.1$$M_r(\mathrm{CO_2) = 44.0$.
 
@@ -398,8 +398,8 @@ End up in the desired product.
 
 $$\mathrm{Atom economy = \frac{M_r \mathrm{ of desired product}{\sum M_r \mathrm{ of all products} \times 100\%$$
 
-**Worked Example.** For the reaction $\mathrm{CaCO_3 \to \mathrm{CaO + \mathrm{CO_2$Calculate
-the Atom economy if CaO is the desired product.
+**Worked Example.** For the reaction $\mathrm{CaCO_3 \to \mathrm{CaO + \mathrm{CO_2$Calculate the
+Atom economy if CaO is the desired product.
 
 $$\mathrm{Atom economy = \frac{56}{56 + 44} \times 100\% = \frac{56}{100} \times 100\% = 56\%$$
 
@@ -407,8 +407,8 @@ $$\mathrm{Atom economy = \frac{56}{56 + 44} \times 100\% = \frac{56}{100} \times
 Lower atom economy.
 
 **Worked Example.** For the reaction
-$\mathrm{CH_4 + \mathrm{H_2\mathrm{O \to \mathrm{CO + 3\mathrm{H_2$ Calculate the atom
-economy if H$_2$ is the desired product.
+$\mathrm{CH_4 + \mathrm{H_2\mathrm{O \to \mathrm{CO + 3\mathrm{H_2$ Calculate the atom economy if
+H$_2$ is the desired product.
 
 $$\mathrm{Atom economy = \frac{3 \times 2}{28 + 3 \times 2} = \frac{6}{34} \times 100\% = 17.6\%$$
 
@@ -416,8 +416,7 @@ This is a very low atom economy, meaning most of the mass of the reactants ends 
 (CO) rather than the desired product (H$_2$).
 
 **Worked Example.** Calculate the atom economy for the reaction of iron with copper(II) sulfate:
-$\mathrm{Fe + \mathrm{CuSO_4 \to \mathrm{FeSO_4 + \mathrm{Cu$Where copper is the desired
-product.
+$\mathrm{Fe + \mathrm{CuSO_4 \to \mathrm{FeSO_4 + \mathrm{Cu$Where copper is the desired product.
 
 $$\mathrm{Atom economy = \frac{63.5}{151.9 + 63.5} = \frac{63.5}{215.4} \times 100\% = 29.5\%$$
 
@@ -625,8 +624,8 @@ Since the yield exceeds 100%, this indicates experimental error -- likely the pr
    percentage yield.
 
 7. Calculate the atom economy for the reaction:
-   $\mathrm{CH_4 + \mathrm{H_2\mathrm{O \to \mathrm{CO + 3\mathrm{H_2$Where H$_2$ is the
-   desired product.
+   $\mathrm{CH_4 + \mathrm{H_2\mathrm{O \to \mathrm{CO + 3\mathrm{H_2$Where H$_2$ is the desired
+   product.
 
 8. A solution is made by dissolving 12 g of NaOH in water to make 500 cm$^3$ of solution. Calculate
    the concentration in mol/dm$^3$.
@@ -649,8 +648,8 @@ Since the yield exceeds 100%, this indicates experimental error -- likely the pr
     the chemical industry.
 
 15. 3.36 g of iron(III) oxide is reduced by carbon monoxide according to the equation:
-    $\mathrm{Fe_2\mathrm{O_3 + 3\mathrm{CO \to 2\mathrm{Fe + 3\mathrm{CO_2$. Calculate the
-    mass of iron produced and the volume of CO$_2$ released at RTP.
+    $\mathrm{Fe_2\mathrm{O_3 + 3\mathrm{CO \to 2\mathrm{Fe + 3\mathrm{CO_2$. Calculate the mass of
+    iron produced and the volume of CO$_2$ released at RTP.
 
 16. What volume of 0.5 mol/dm$^3$ sulfuric acid is needed to react completely with 10 g of sodium
     hydroxide?
@@ -691,8 +690,7 @@ Hydrogen produced occupies 1.22 dm$^3$ at RTP. Calculate the percentage purity o
 
 $$n(\mathrm{H_2) = \frac{1.22}{24} = 0.0508 \mathrm{ mol$$
 
-From $\mathrm{Mg + \mathrm{H_2\mathrm{SO_4 \to \mathrm{MgSO_4 + \mathrm{H_2$: mole ratio
-1:1.
+From $\mathrm{Mg + \mathrm{H_2\mathrm{SO_4 \to \mathrm{MgSO_4 + \mathrm{H_2$: mole ratio 1:1.
 
 $$m(\mathrm{Mg pure) = 0.0508 \times 24.3 = 1.23 \mathrm{ g$$
 
@@ -750,15 +748,15 @@ $$\mathrm{Percentage uncertainty = \frac{0.05}{22.50} \times 100\% = 0.22\%$$
 
 ## 11. Summary Table: Key Equations
 
-| Quantity                 | Equation                                                                   | Units      |
-| ------------------------ | -------------------------------------------------------------------------- | ---------- |
-| Moles from mass          | $n = m / M_r$                                                              | mol        |
-| Mass from moles          | $m = n \times M_r$                                                         | g          |
-| Moles from gas volume    | $n = V / 24$                                                               | mol        |
-| Gas volume from moles    | $V = n \times 24$                                                          | dm$^3$     |
-| Concentration            | $c = n / V$                                                                | mol/dm$^3$ |
-| Moles from concentration | $n = c \times V$                                                           | mol        |
-| Dilution                 | $c_1 V_1 = c_2 V_2$                                                        | various    |
+| Quantity                 | Equation                                                               | Units      |
+| ------------------------ | ---------------------------------------------------------------------- | ---------- |
+| Moles from mass          | $n = m / M_r$                                                          | mol        |
+| Mass from moles          | $m = n \times M_r$                                                     | g          |
+| Moles from gas volume    | $n = V / 24$                                                           | mol        |
+| Gas volume from moles    | $V = n \times 24$                                                      | dm$^3$     |
+| Concentration            | $c = n / V$                                                            | mol/dm$^3$ |
+| Moles from concentration | $n = c \times V$                                                       | mol        |
+| Dilution                 | $c_1 V_1 = c_2 V_2$                                                    | various    |
 | Percentage yield         | $\frac{\mathrm{actual}{\mathrm{theoretical} \times 100\%$              | %          |
 | Atom economy             | $\frac{M_r\mathrm{(desired)}{\sum M_r\mathrm{(products)} \times 100\%$ | %          |
 
@@ -809,9 +807,9 @@ $\mathrm{NaOH = \frac{0.00200}{25.0/1000} = \frac{0.00200}{0.0250} = 0.0800 \mat
 <details>
 <summary>Question 3: Limiting reactant</summary>
 
-$6.0 \mathrm{ g$ of magnesium reacts with $10.0 \mathrm{ g$ of hydrochloric acid
-($\mathrm{HCl$): $\mathrm{Mg + 2\mathrm{HCl \to \mathrm{MgCl_2 + \mathrm{H_2$. Identify
-the limiting reactant and calculate the mass of hydrogen produced.
+$6.0 \mathrm{ g$ of magnesium reacts with $10.0 \mathrm{ g$ of hydrochloric acid ($\mathrm{HCl$):
+$\mathrm{Mg + 2\mathrm{HCl \to \mathrm{MgCl_2 + \mathrm{H_2$. Identify the limiting reactant and
+calculate the mass of hydrogen produced.
 
 </details>
 
@@ -821,8 +819,8 @@ the limiting reactant and calculate the mass of hydrogen produced.
 Moles of $\mathrm{Mg = 6.0/24.3 = 0.247 \mathrm{ mol$. Moles of
 $\mathrm{HCl = 10.0/36.5 = 0.274 \mathrm{ mol$.
 
-Required $\mathrm{HCl = 2 \times 0.247 = 0.494 \mathrm{ mol$. Only $0.274 \mathrm{ mol$
-available, so $\mathrm{HCl$ is limiting.
+Required $\mathrm{HCl = 2 \times 0.247 = 0.494 \mathrm{ mol$. Only $0.274 \mathrm{ mol$ available,
+so $\mathrm{HCl$ is limiting.
 
 Moles of $\mathrm{H_2 = 0.274/2 = 0.137 \mathrm{ mol$. Mass of
 $\mathrm{H_2 = 0.137 \times 2.0 = 0.274 \mathrm{ g$.
@@ -874,4 +872,25 @@ Volume of $\mathrm{CO_2 = 0.050 \times 24.0 = 1.2 \mathrm{ dm^3$.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Mole calculation**
+
+Calculate the number of moles in $12.0\,\text{g}$ of $\text{NaOH}$ ($M_r = 40.0$).
+
+**Solution:**
+
+$$n = \frac{m}{M_r} = \frac{12.0}{40.0} = 0.300\,\text{mol}$$
+
+**Example 2: Reacting masses**
+
+$$\text{CaCO}_3 + 2\text{HCl} \rightarrow \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
+
+What mass of $\text{CaCl}_2$ is produced from $10.0\,\text{g}$ of $\text{CaCO}_3$?
+($M_r[\text{CaCO}_3] = 100$, $M_r[\text{CaCl}_2] = 111$)
+
+**Solution:**
+
+$$n(\text{CaCO}_3) = \frac{10.0}{100} = 0.100\,\text{mol}$$
+
+From the equation, ratio is $1:1$, so $n(\text{CaCl}_2) = 0.100\,\text{mol}$.
+
+$$m(\text{CaCl}_2) = 0.100 \times 111 = 11.1\,\text{g}$$

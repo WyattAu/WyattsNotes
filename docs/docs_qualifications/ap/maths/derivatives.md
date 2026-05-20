@@ -507,8 +507,8 @@ The negative sign confirms the top is sliding down.
 
 :::info[Example]
 
-A spherical balloon is inflated at a rate of $10 \mathrm{ cm^3/\mathrm{s$. How fast is the
-radius Increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
+A spherical balloon is inflated at a rate of $10 \mathrm{ cm^3/\mathrm{s$. How fast is the radius
+Increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 $$
 \frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}
@@ -732,8 +732,8 @@ The minimum value is $4$ at $x = 2$.
 
 :::info[Example]
 
-A rectangular box with a square base has volume $500 \mathrm{ cm^3$. The material for the base
-costs Twice as much as the material for the sides. Minimise the cost of the material.
+A rectangular box with a square base has volume $500 \mathrm{ cm^3$. The material for the base costs
+Twice as much as the material for the sides. Minimise the cost of the material.
 
 Let the base have side length $x$ cm and height $h$ cm. Let the cost per unit area of the sides be
 $c$. Then the base costs $2c$ per unit area.
@@ -810,8 +810,8 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 
 1. Find $\displaystyle\frac{dy}{dx}$ for $e^{xy} + y = x^2$ using implicit differentiation.
 
-2. A spherical balloon is inflated at a rate of $10 \mathrm{ cm^3/\mathrm{s$. How fast is the
-   radius increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
+2. A spherical balloon is inflated at a rate of $10 \mathrm{ cm^3/\mathrm{s$. How fast is the radius
+   increasing when the radius is 5 cm? ($V = \frac{4}{3}\pi r^3$)
 
 3. Find all critical points of $f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1$ and classify them using the
    second derivative test.
@@ -842,8 +842,8 @@ Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$
 14. Find the inflection points of $f(x) = x^4 - 6x^2 + 4$.
 
 15. A conical tank (vertex pointing down) has radius 5 ft at the top and height 10 ft. Water is
-    pumped in at 3 $\mathrm{ft^3/\mathrm{min$. How fast is the water level rising when the water
-    is 6 ft deep?
+    pumped in at 3 $\mathrm{ft^3/\mathrm{min$. How fast is the water level rising when the water is
+    6 ft deep?
 
 16. Find the dimensions of the rectangle of maximum area that can be inscribed in a semicircle of
     radius $r$.
@@ -919,8 +919,8 @@ answer.
 <details>
 <summary>Question 4: Optimisation with constraint</summary>
 
-A rectangular box with a square base and no top is to have a volume of $108 \mathrm{ cm^3$. Find
-the dimensions that minimise the surface area.
+A rectangular box with a square base and no top is to have a volume of $108 \mathrm{ cm^3$. Find the
+dimensions that minimise the surface area.
 
 </details>
 
@@ -979,8 +979,16 @@ on self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to derivatives, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- sine, cosine, and tangent functions
+- trigonometric identities
+- solving trigonometric equations
+- the sine and cosine rules
+- radian measure and arc length
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

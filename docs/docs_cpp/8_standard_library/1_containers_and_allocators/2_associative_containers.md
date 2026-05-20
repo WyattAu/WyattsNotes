@@ -42,8 +42,8 @@ A red-black tree is a self-balancing binary search tree with the following prope
 
 **Theorem.** A red-black tree with $n$ internal nodes has height $h \leq 2 \log_2(n + 1)$.
 
-**Proof.** Define the **black-height** $\mathrm{bh(x)$ of a node $x$ as the number of black nodes
-On any path from $x$ to a leaf (excluding $x$ itself). By property 5, this is well-defined.
+**Proof.** Define the **black-height** $\mathrm{bh(x)$ of a node $x$ as the number of black nodes On
+any path from $x$ to a leaf (excluding $x$ itself). By property 5, this is well-defined.
 
 **Claim:** A subtree rooted at any node $x$ contains at least $2^{\mathrm{bh(x)} - 1$ internal
 Nodes.
@@ -55,8 +55,8 @@ Nodes $= 2^0 - 1 = 1 - 1 = 0$. Holds.
 
 _Inductive step:_ Let $x$ have height $h \gt 0$ and children $a, b$. Each child has black-height
 Either $\mathrm{bh(x)$ (if the child is red) or $\mathrm{bh(x) - 1$ (if the child is black). In
-Either case, $\mathrm{bh(\mathrm{child) \geq \mathrm{bh(x) - 1$. By the inductive hypothesis,
-Each subtree has at least $2^{\mathrm{bh(x) - 1} - 1$ internal nodes. Therefore:
+Either case, $\mathrm{bh(\mathrm{child) \geq \mathrm{bh(x) - 1$. By the inductive hypothesis, Each
+subtree has at least $2^{\mathrm{bh(x) - 1} - 1$ internal nodes. Therefore:
 
 $$
 \mathrm{size(x) \geq \left(2^{\mathrm{bh(x) - 1} - 1\right) + \left(2^{\mathrm{bh(x) - 1} - 1\right) + 1 = 2^{\mathrm{bh(x)} - 1
@@ -735,12 +735,12 @@ For performance-critical code where ordered iteration is not needed, consider al
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-## Summary
+2. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-<!-- TODO: Add a summary for this topic -->
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.

@@ -1166,12 +1166,12 @@ Court), are the direct institutional descendants of Nuremberg.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Writing in the present tense about historical events — use the past tense consistently.
 
-## Summary
+2. Presenting a one-sided argument without considering alternative interpretations or
+   counter-evidence.
 
-<!-- TODO: Add a summary for this topic -->
+3. Failing to evaluate the reliability and provenance of sources before using them as evidence.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing causes, events, and consequences — be clear about chronological and causal
+   relationships.

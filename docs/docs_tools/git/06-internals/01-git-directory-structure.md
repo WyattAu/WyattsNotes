@@ -260,12 +260,11 @@ Always **back up** the `.git` directory before attempting recovery. Some operati
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
-## Summary
+2. Using anecdotal evidence or small sample sizes as though they constitute robust scientific data.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Failing to link structure to function when describing biological molecules, cells, or organs.

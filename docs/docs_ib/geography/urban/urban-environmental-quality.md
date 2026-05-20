@@ -244,12 +244,13 @@ At [../urban-environments](../urban-environments).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-## Summary
+2. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.

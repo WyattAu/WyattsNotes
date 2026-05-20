@@ -252,8 +252,8 @@ Assume $n$ is odd. By definition, $n = 2k + 1$ for some $k \in \mathbb{Z}$.
 
 $$n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 
-Since $2k^2 + 2k$ is an integer (sum and product of integers), let
-$m = 2k^2 + 2k \in \mathbb{Z}$. Then $n^2 = 2m + 1$Which is odd by definition.
+Since $2k^2 + 2k$ is an integer (sum and product of integers), let $m = 2k^2 + 2k \in \mathbb{Z}$.
+Then $n^2 = 2m + 1$Which is odd by definition.
 
 Therefore, if $n$ is odd, then $n^2$ is odd.
 
@@ -370,15 +370,14 @@ Assume $n$ is even, so $n = 2k$ for some $k \in \mathbb{Z}$.
 
 $3n + 2 = 3(2k) + 2 = 6k + 2 = 2(3k + 1)$
 
-Since $3k + 1 \in \mathbb{Z}$$3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then $n$
-is Odd.
+Since $3k + 1 \in \mathbb{Z}$$3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then $n$ is
+Odd.
 
 </details>
 
 ### 2.4 Mathematical Induction
 
-Induction proves statements of the form $\forall n \ge n_0, \; P(n)$Where
-$n_0 \in \mathbb{Z}$.
+Induction proves statements of the form $\forall n \ge n_0, \; P(n)$Where $n_0 \in \mathbb{Z}$.
 
 #### 2.4.1 Standard (Weak) Induction
 
@@ -587,8 +586,8 @@ This proof appeared in Section 2.2. Here we present it with full commentary on e
 
 We proceed by contradiction.
 
-Assume $\sqrt{2} \in \mathbb{Q}$. Then there exist coprime integers $a, b$ with $b \gt 0$ such
-that $\sqrt{2} = \frac{a}{b}$.
+Assume $\sqrt{2} \in \mathbb{Q}$. Then there exist coprime integers $a, b$ with $b \gt 0$ such that
+$\sqrt{2} = \frac{a}{b}$.
 
 The requirement that $\gcd(a, b) = 1$ is without loss of generality: any rational number can be
 Expressed as a fraction in lowest terms.
@@ -606,8 +605,7 @@ From (2): $b^2$ is even, so $b$ is even (same reasoning as above).
 
 But now $a$ and $b$ are both even, meaning $\gcd(a, b) \ge 2$Contradicting $\gcd(a, b) = 1$.
 
-This contradiction shows our assumption is false. Hence $\sqrt{2} \notin \mathbb{Q}$.
-$\blacksquare$
+This contradiction shows our assumption is false. Hence $\sqrt{2} \notin \mathbb{Q}$. $\blacksquare$
 
 ### 3.2 There Are Infinitely Many Primes
 
@@ -713,20 +711,19 @@ We proved this by contrapositive in Section 2.3. Here are additional divisibilit
 
 **Proof:**
 
-Since $a \mid b$There exists $m \in \mathbb{Z}$ such that $b = am$. Since $b \mid c$There
-exists $n \in \mathbb{Z}$ such that $c = bn$.
+Since $a \mid b$There exists $m \in \mathbb{Z}$ such that $b = am$. Since $b \mid c$There exists
+$n \in \mathbb{Z}$ such that $c = bn$.
 
 Therefore $c = bn = (am)n = a(mn)$.
 
 Since $mn \in \mathbb{Z}$We have $a \mid c$. $\blacksquare$
 
-**Theorem:** If $d \mid a$ and $d \mid b$Then $d \mid (ax + by)$ for all
-$x, y \in \mathbb{Z}$.
+**Theorem:** If $d \mid a$ and $d \mid b$Then $d \mid (ax + by)$ for all $x, y \in \mathbb{Z}$.
 
 **Proof:**
 
-Since $d \mid a$Write $a = dm$ for some $m \in \mathbb{Z}$. Since $d \mid b$Write $b = dn$ for
-Some $n \in \mathbb{Z}$.
+Since $d \mid a$Write $a = dm$ for some $m \in \mathbb{Z}$. Since $d \mid b$Write $b = dn$ for Some
+$n \in \mathbb{Z}$.
 
 $ax + by = (dm)x + (dn)y = d(mx + ny)$.
 
@@ -762,8 +759,8 @@ With equality when the vectors are proportional ($a_i = \lambda b_i$ for all $i$
 $\lambda$).
 
 The proof is beyond the scope of this note but uses the fact that $\sum (a_i x + b_i)^2 \ge 0$ for
-All $x \in \mathbb{R}$And a quadratic in $x$ that is always non-negative must have a
-non-positive Discriminant.
+All $x \in \mathbb{R}$And a quadratic in $x$ that is always non-negative must have a non-positive
+Discriminant.
 
 <details>
 <summary>Exercise: Prove the AM-GM inequality for three variables: $\frac{a+b+c}{3} \ge \sqrt[3]{abc}$ for $a, b, c \ge 0$.</summary>
@@ -793,8 +790,8 @@ Substituting back gives the result.
 
 For integers $a, b, c$ with $a \ne 0$:
 
-**Definition:** $a \mid b$ (read "$a$ divides $b$") means there exists $k \in \mathbb{Z}$ such
-that $b = ak$.
+**Definition:** $a \mid b$ (read "$a$ divides $b$") means there exists $k \in \mathbb{Z}$ such that
+$b = ak$.
 
 **Key properties:**
 
@@ -1260,4 +1257,14 @@ and building a personal test matrix. :::
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Logarithm laws**
+
+Solve $\log_3(x + 1) + \log_3(x - 1) = 2$.
+
+**Solution:**
+
+$$\log_3[(x+1)(x-1)] = 2$$
+
+$$(x+1)(x-1) = 3^2 = 9$$
+
+$$x^2 - 1 = 9 \implies x^2 = 10 \implies x = \sqrt{10}$$ (since $x > 1$)

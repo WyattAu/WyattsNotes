@@ -1074,8 +1074,14 @@ $$k_{320} = 3.494 \times 2.0 \times 10^{-3} = 6.99 \times 10^{-3}\mathrm{ s}^{-1
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Writing half-equations without balancing charges or atoms — always check electrons, hydrogen
+   ions, and water molecules.
 
-## Worked Examples
+2. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.
+
+4. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
+   molecular refers to individual molecules.

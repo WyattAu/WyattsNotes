@@ -10,8 +10,39 @@ sidebar_position: 1
 
 ## Abstract
 
-This resource is created as a aggregation of best practices in Java. If you are learning Java for a
-Specific course, please refer to the IB Computer Science notes on this site for JETS.
+This resource is created as an aggregation of best practices in Java. If you are learning Java for a
+specific course, please refer to the IB Computer Science notes on this site for JETS.
+
+## Topics Covered
+
+### Core Language
+
+- **Syntax and semantics** — primitive types, operators, control flow, arrays
+- **Object-oriented programming** — classes, objects, inheritance, polymorphism, interfaces,
+  abstract classes
+- **Exception handling** — checked vs. unchecked exceptions, `try`/`catch`/`finally`, custom
+  exceptions
+- **Generics** — type parameters, bounded types, wildcards, type erasure
+
+### Standard Library
+
+- **Collections Framework** — `List` (`ArrayList`, `LinkedList`), `Set` (`HashSet`, `TreeSet`),
+  `Map` (`HashMap`, `TreeMap`); choosing the right collection
+- **Streams API** — functional-style operations on collections: `filter`, `map`, `reduce`, `collect`
+- **I/O** — byte streams, character streams, buffered I/O, NIO
+- **Concurrency** — `Thread`, `Runnable`, `ExecutorService`, `synchronized`, `java.util.concurrent`
+
+### Best Practices
+
+- **Effective Java** items — favour composition over inheritance, program to interfaces, minimise
+  mutability
+- **Design patterns** — Singleton, Factory, Observer, Strategy, Builder
+- **Testing** — JUnit 5, test-driven development, mocking with Mockito
+- **Build tools** — Maven and Gradle project structures, dependency management
+
+## Code Examples
+
+All code examples compile under Java 17 (LTS) unless otherwise noted.
 
 <div className="godbolt-container">
  <iframe

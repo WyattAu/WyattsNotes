@@ -954,12 +954,53 @@ $$
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting the chain rule when integrating composite functions — look for an inner function and
+   its derivative.
 
-## Summary
+2. Confusing definite and indefinite integrals — definite integrals give a numerical value;
+   indefinite integrals give a family of functions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Incorrectly applying limits of integration after a substitution — remember to change the limits
+   to the new variable.
+
+4. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
+
+5. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Integration by Substitution
+
+**Problem.** Evaluate $\int_0^1 x\sqrt{1 + x^2}\,dx$.
+
+**Solution.** Let $u = 1 + x^2$, so $du = 2x\,dx$ and $x\,dx = \frac{du}{2}$.
+
+Limits: when $x = 0$, $u = 1$; when $x = 1$, $u = 2$.
+
+$$\int_1^2 \sqrt{u} \cdot \frac{du}{2} = \frac{1}{2} \left[\frac{2u^{3/2}}{3}\right]_1^2 = \frac{1}{3}(2^{3/2} - 1) = \frac{1}{3}(2\sqrt{2} - 1) \approx 0.609$$
+
+$\blacksquare$
+
+### Example 2: Volume of Revolution
+
+**Problem.** Find the volume generated when $y = \sqrt{x}$ from $x = 0$ to $x = 4$ is rotated $360°$
+about the $x$-axis.
+
+**Solution.**
+
+$$V = \pi \int_0^4 y^2\,dx = \pi \int_0^4 x\,dx = \pi \left[\frac{x^2}{2}\right]_0^4 = \pi \cdot 8 = 8\pi\;\text{units}^3$$
+
+$\blacksquare$
+
+## Summary
+
+- Definite integral: $\int_a^b f(x)\,dx$ represents the signed area under $f(x)$ between $a$ and
+  $b$.
+- Fundamental theorem of calculus: $\int_a^b f(x)\,dx = F(b) - F(a)$ where $F'(x) = f(x)$.
+- Techniques: substitution (reverse chain rule), integration by parts
+  ($\int u\,dv = uv - \int v\,du$), partial fractions.
+- Applications: area between curves, volumes of revolution ($V = \pi \int y^2\,dx$), kinematics
+  ($s = \int v\,dt$).
+- For improper integrals, take limits:
+  $\int_a^\infty f(x)\,dx = \lim_{b \to \infty} \int_a^b f(x)\,dx$.

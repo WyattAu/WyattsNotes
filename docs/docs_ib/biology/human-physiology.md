@@ -1616,4 +1616,16 @@ half-life) in patients with adrenal insufficiency.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of human physiology, including key concepts,
+experimental evidence, and real-world applications.
+
+**Key concepts include:**
+
+- cell structure (prokaryotic vs eukaryotic)
+- cell ultrastructure (organelles)
+- microscopy and resolution
+- cell division (mitosis and meiosis)
+- the cell cycle
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

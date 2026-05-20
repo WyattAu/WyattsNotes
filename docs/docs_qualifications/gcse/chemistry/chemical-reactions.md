@@ -59,8 +59,7 @@ $$2\mathrm{Al + 6\mathrm{HCl \to 2\mathrm{AlCl_3 + 3\mathrm{H_2$$
 
 **Worked Example.** Balance the combustion of ethane.
 
-Unbalanced:
-$\mathrm{C_2\mathrm{H_6 + \mathrm{O_2 \to \mathrm{CO_2 + \mathrm{H_2\mathrm{O$
+Unbalanced: $\mathrm{C_2\mathrm{H_6 + \mathrm{O_2 \to \mathrm{CO_2 + \mathrm{H_2\mathrm{O$
 
 $$2\mathrm{C_2\mathrm{H_6 + 7\mathrm{O_2 \to 4\mathrm{CO_2 + 6\mathrm{H_2\mathrm{O$$
 
@@ -118,8 +117,7 @@ Net ionic: $\mathrm{Ag^+\mathrm{(aq) + \mathrm{Cl^-\mathrm{(aq) \to \mathrm{AgCl
 
 **Worked Example.** Write the ionic equation for the reaction of zinc with copper(II) sulfate.
 
-Full:
-$\mathrm{Zn(s) + \mathrm{CuSO_4\mathrm{(aq) \to \mathrm{ZnSO_4\mathrm{(aq) + \mathrm{Cu(s)$
+Full: $\mathrm{Zn(s) + \mathrm{CuSO_4\mathrm{(aq) \to \mathrm{ZnSO_4\mathrm{(aq) + \mathrm{Cu(s)$
 
 Ionic:
 $\mathrm{Zn(s) + \mathrm{Cu^{2+}\mathrm{(aq) + \mathrm{SO_4^{2-}\mathrm{(aq) \to \mathrm{Zn^{2+}\mathrm{(aq) + \mathrm{SO_4^{2-}\mathrm{(aq) + \mathrm{Cu(s)$
@@ -292,8 +290,8 @@ Correct orientation) will increase the rate.
 
 **Temperature** has a particularly strong effect because it changes the distribution of molecular
 Energies. A small increase in temperature shifts a much larger fraction of molecules above the
-Activation energy threshold. The rate approximately doubles for every $10^{\circ}\mathrm{C$
-increase In temperature.
+Activation energy threshold. The rate approximately doubles for every $10^{\circ}\mathrm{C$ increase
+In temperature.
 
 **Surface area** matters for solid reactants. A lump of calcium carbonate has a small surface area,
 But the same mass as a powder has a much larger surface area. Since reactions occur at the surface,
@@ -450,8 +448,8 @@ $\to$ 2 moles of gas), so very high pressure is not economically justified.
 
 ### 4.6 Equilibrium Summary Table
 
-| Process         | Equation                                                             | Favourable Conditions                                 |
-| --------------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
+| Process         | Equation                                                       | Favourable Conditions                                 |
+| --------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
 | Haber process   | $\mathrm{N_2 + 3\mathrm{H_2 \rightleftharpoons 2\mathrm{NH_3$  | High pressure, moderate temp, iron catalyst           |
 | Contact process | $2\mathrm{SO_2 + \mathrm{O_2 \rightleftharpoons 2\mathrm{SO_3$ | Moderate pressure, moderate temp, V$_2$O$_5$ catalyst |
 
@@ -639,13 +637,13 @@ The cathode, a copper bar is the anode, and the electrolyte is copper(II) sulfat
 
 ### 7.1 Classification Table
 
-| Type                  | Description                                         | Example                                                                          |
-| --------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Type                  | Description                                         | Example                                                                |
+| --------------------- | --------------------------------------------------- | ---------------------------------------------------------------------- |
 | Combustion            | Burning in oxygen                                   | $\mathrm{CH_4 + 2\mathrm{O_2 \to \mathrm{CO_2 + 2\mathrm{H_2\mathrm{O$ |
-| Thermal decomposition | Breaking down with heat                             | $\mathrm{CaCO_3 \to \mathrm{CaO + \mathrm{CO_2$                            |
+| Thermal decomposition | Breaking down with heat                             | $\mathrm{CaCO_3 \to \mathrm{CaO + \mathrm{CO_2$                        |
 | Neutralisation        | Acid + base $\to$ salt + water                      | $\mathrm{HCl + \mathrm{NaOH \to \mathrm{NaCl + \mathrm{H_2\mathrm{O$   |
-| Displacement          | More reactive element displaces a less reactive one | $\mathrm{Zn + \mathrm{CuSO_4 \to \mathrm{ZnSO_4 + \mathrm{Cu$            |
-| Oxidation/reduction   | Transfer of electrons                               | $\mathrm{Fe^{2+} \to \mathrm{Fe^{3+} + e^-$                                  |
+| Displacement          | More reactive element displaces a less reactive one | $\mathrm{Zn + \mathrm{CuSO_4 \to \mathrm{ZnSO_4 + \mathrm{Cu$          |
+| Oxidation/reduction   | Transfer of electrons                               | $\mathrm{Fe^{2+} \to \mathrm{Fe^{3+} + e^-$                            |
 
 ### 7.2 Oxidation States
 
@@ -703,8 +701,7 @@ $2\mathrm{Cr + (-14) = -2$So $2\mathrm{Cr = +12$Giving Cr = $+6$.
    collision theory.
 
 4. State Le Chatelier's principle and use it to predict the effect of increasing pressure on the
-   equilibrium:
-   $\mathrm{N_2\mathrm{O_4\mathrm{(g) \rightleftharpoons 2\mathrm{NO_2\mathrm{(g)$.
+   equilibrium: $\mathrm{N_2\mathrm{O_4\mathrm{(g) \rightleftharpoons 2\mathrm{NO_2\mathrm{(g)$.
 
 5. Write the ionic equation for the reaction between zinc and copper(II) sulfate solution.
 
@@ -752,9 +749,8 @@ $2\mathrm{Cr + (-14) = -2$So $2\mathrm{Cr = +12$Giving Cr = $+6$.
 <details>
 <summary>Question 1: Balancing equations</summary>
 
-Balance the following chemical equations: (a)
-$\mathrm{Fe + \mathrm{O_2 \to \mathrm{Fe_2\mathrm{O_3$ (b)
-$\mathrm{Al + \mathrm{HCl \to \mathrm{AlCl_3 + \mathrm{H_2$ (c)
+Balance the following chemical equations: (a) $\mathrm{Fe + \mathrm{O_2 \to \mathrm{Fe_2\mathrm{O_3$
+(b) $\mathrm{Al + \mathrm{HCl \to \mathrm{AlCl_3 + \mathrm{H_2$ (c)
 $\mathrm{C_3\mathrm{H_8 + \mathrm{O_2 \to \mathrm{CO_2 + \mathrm{H_2\mathrm{O$
 
 </details>
@@ -803,14 +799,14 @@ Using the reactivity series: potassium, sodium, calcium, magnesium, aluminium, (
 (hydrogen), copper.
 
 Zinc: zinc is above iron in the reactivity series, so it will displace iron:
-$\mathrm{Zn + \mathrm{FeSO_4 \to \mathrm{ZnSO_4 + \mathrm{Fe$. The blue solution fades as
-iron is displaced.
+$\mathrm{Zn + \mathrm{FeSO_4 \to \mathrm{ZnSO_4 + \mathrm{Fe$. The blue solution fades as iron is
+displaced.
 
 Copper: copper is below iron, so no reaction occurs. Copper cannot displace iron.
 
 Magnesium: magnesium is above iron, so it displaces iron:
-$\mathrm{Mg + \mathrm{FeSO_4 \to \mathrm{MgSO_4 + \mathrm{Fe$. This reaction is more
-vigorous than zinc's because magnesium is more reactive.
+$\mathrm{Mg + \mathrm{FeSO_4 \to \mathrm{MgSO_4 + \mathrm{Fe$. This reaction is more vigorous than
+zinc's because magnesium is more reactive.
 
 </details>
 
@@ -826,8 +822,8 @@ describe how the temperature changes.
 <summary>Answer</summary>
 
 Exothermic: energy is released to the surroundings. Temperature increases. Example: combustion of
-methane -- the products ($\mathrm{CO_2$ and $\mathrm{H_2\mathrm{O$) have less chemical energy
-than the reactants.
+methane -- the products ($\mathrm{CO_2$ and $\mathrm{H_2\mathrm{O$) have less chemical energy than
+the reactants.
 
 Endothermic: energy is absorbed from the surroundings. Temperature decreases. Example: thermal
 decomposition of calcium carbonate -- energy is needed to break the bonds in $\mathrm{CaCO_3$.
@@ -861,4 +857,12 @@ reaction is faster.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: $K_c$ calculation**
+
+For the reaction $\text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g)$, at equilibrium
+the concentrations are $[\text{N}_2] = 0.50\,\text{mol\,dm}^{-3}$,
+$[\text{H}_2] = 1.50\,\text{mol\,dm}^{-3}$, $[\text{NH}_3] = 0.25\,\text{mol\,dm}^{-3}$.
+
+**Solution:**
+
+$$K_c = \frac{[\text{NH}_3]^2}{[\text{N}_2][\text{H}_2]^3} = \frac{(0.25)^2}{(0.50)(1.50)^3} = \frac{0.0625}{1.6875} \approx 0.0370\,\text{mol}^{-2}\,\text{dm}^6$$

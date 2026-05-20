@@ -722,8 +722,16 @@ Has no data members. This is the fundamental cost of runtime polymorphism.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to virtual functions and vtables,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- arithmetic and geometric sequences
+- series and sigma notation
+- recurrence relations
+- convergence tests
+- mathematical induction
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

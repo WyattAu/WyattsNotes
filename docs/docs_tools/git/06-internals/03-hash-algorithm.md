@@ -156,12 +156,12 @@ Outside the object store and tracks only a pointer.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').
 
-## Summary
+2. Using anecdotal evidence or small sample sizes as though they constitute robust scientific data.
 
-<!-- TODO: Add a summary for this topic -->
+3. Failing to link structure to function when describing biological molecules, cells, or organs.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.

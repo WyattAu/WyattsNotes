@@ -167,9 +167,9 @@ def bst_min(node):
 
 **Proof.** Cases 1 and 2 are trivial — removing a leaf or replacing with a single child maintains
 Ordering. For case 3: the in-order successor $s$ is the smallest key in the right subtree, so
-$s \gt \mathrm{root.key}$ and all keys in the left subtree are $\lt \mathrm{root.key} \lt s$.
-After replacing root's key with $s$'s key and deleting $s$ from the right subtree (which is case 1
-Or 2), the BST property holds. $\square$
+$s \gt \mathrm{root.key}$ and all keys in the left subtree are $\lt \mathrm{root.key} \lt s$. After
+replacing root's key with $s$'s key and deleting $s$ from the right subtree (which is case 1 Or 2),
+the BST property holds. $\square$
 
 <hr />
 
@@ -219,8 +219,8 @@ def levelorder(root):
 
 **Proof.** By structural induction. For a leaf, the in-order traversal outputs just the leaf's key.
 For an internal node with key $k$: in-order first traverses the left subtree (all keys $\lt k$ by
-BST property), then outputs $k$Then traverses the right subtree (all keys $\gt k$). By the
-Inductive hypothesis, each subtree's output is sorted. Hence the full output is sorted. $\square$
+BST property), then outputs $k$Then traverses the right subtree (all keys $\gt k$). By the Inductive
+hypothesis, each subtree's output is sorted. Hence the full output is sorted. $\square$
 
 <summary>Example: Traversals of a BST</summary>
 
@@ -456,9 +456,9 @@ Node in its right subtree, assuming the node has a right child.
 <summary>Answer</summary>
 
 **Proof.** Let node $N$ have key $k$ and a right child $R$. By the BST property, all keys in $R$'s
-Subtree are $\gt k$. The in-order successor is the smallest key greater than $k$. In $R$'s
-Subtree, the smallest key is found by always going left (since left children have smaller keys).
-Therefore, the in-order successor is the leftmost node in the right subtree. $\square$
+Subtree are $\gt k$. The in-order successor is the smallest key greater than $k$. In $R$'s Subtree,
+the smallest key is found by always going left (since left children have smaller keys). Therefore,
+the in-order successor is the leftmost node in the right subtree. $\square$
 
 **Problem 8.** A complete binary tree has 100 nodes. What is its height? How many leaves does it
 Have?
@@ -997,12 +997,14 @@ Height of the tree = **3**.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Summary
+2. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).

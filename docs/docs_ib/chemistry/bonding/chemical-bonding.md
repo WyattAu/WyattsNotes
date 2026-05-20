@@ -1193,8 +1193,14 @@ For the A-Level treatment of this topic, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.
 
-## Worked Examples
+2. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
+   overall charge.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
+   molecular refers to individual molecules.
+
+4. Writing half-equations without balancing charges or atoms — always check electrons, hydrogen
+   ions, and water molecules.

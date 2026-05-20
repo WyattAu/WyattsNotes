@@ -1157,4 +1157,18 @@ The lines intersect at $\boxed{(1,0,0)}$.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing position vectors with direction vectors — position vectors point from the origin.
+
+2. Forgetting that the scalar product gives a scalar, not a vector.
+
+3. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
+
+4. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
+
+5. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
+
+6. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.

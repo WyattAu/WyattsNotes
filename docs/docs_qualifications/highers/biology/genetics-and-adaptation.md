@@ -42,8 +42,8 @@ Sugar-phosphate backbones on the outside.
 **Semi-conservative replication:** Each new DNA molecule contains one original strand and one new
 Strand.
 
-**Meselson-Stahl experiment (1958):** Used heavy ($^{15}\mathrm{N$) and light
-($^{14}\mathrm{N$) Nitrogen to demonstrate semi-conservative replication.
+**Meselson-Stahl experiment (1958):** Used heavy ($^{15}\mathrm{N$) and light ($^{14}\mathrm{N$)
+Nitrogen to demonstrate semi-conservative replication.
 
 **Process:**
 
@@ -56,17 +56,16 @@ Strand.
 
 **Worked Example: The Meselson-Stahl experiment.**
 
-Bacteria are grown in medium containing $^{15}\mathrm{N$ (heavy nitrogen) for many generations.
-All Their DNA is heavy ($^{15}\mathrm{N/^{15}\mathrm{N$). They are then transferred to
-medium Containing $^{14}\mathrm{N$ (light nitrogen) and allowed to replicate once.
+Bacteria are grown in medium containing $^{15}\mathrm{N$ (heavy nitrogen) for many generations. All
+Their DNA is heavy ($^{15}\mathrm{N/^{15}\mathrm{N$). They are then transferred to medium Containing
+$^{14}\mathrm{N$ (light nitrogen) and allowed to replicate once.
 
 If replication is semi-conservative: each new DNA molecule contains one heavy strand and one light
-Strand ($^{15}\mathrm{N/^{14}\mathrm{N$). After one generation, all DNA is intermediate
-density.
+Strand ($^{15}\mathrm{N/^{14}\mathrm{N$). After one generation, all DNA is intermediate density.
 
 After two generations: 50% intermediate ($^{15}\mathrm{N/^{14}\mathrm{N$) and 50% light
-($^{14}\mathrm{N/^{14}\mathrm{N$). This is exactly what Meselson and Stahl observed,
-confirming Semi-conservative replication.
+($^{14}\mathrm{N/^{14}\mathrm{N$). This is exactly what Meselson and Stahl observed, confirming
+Semi-conservative replication.
 
 ### Protein Synthesis
 
@@ -167,11 +166,10 @@ A single recessive allele will be expressed.
 
 **Example:** Haemophilia is caused by a recessive allele on the X chromosome.
 
-If a carrier female ($\mathrm{X^H\mathrm{X^h$) marries a normal male
-($\mathrm{X^H\mathrm{Y$):
+If a carrier female ($\mathrm{X^H\mathrm{X^h$) marries a normal male ($\mathrm{X^H\mathrm{Y$):
 
-|                 | $\mathrm{X^H$                               | $\mathrm{Y$                                  |
-| --------------- | --------------------------------------------- | ---------------------------------------------- |
+|               | $\mathrm{X^H$                             | $\mathrm{Y$                                |
+| ------------- | ----------------------------------------- | ------------------------------------------ |
 | $\mathrm{X^H$ | $\mathrm{X^H\mathrm{X^H$ (normal female)  | $\mathrm{X^H\mathrm{Y$ (normal male)       |
 | $\mathrm{X^h$ | $\mathrm{X^H\mathrm{X^h$ (carrier female) | $\mathrm{X^h\mathrm{Y$ (haemophiliac male) |
 
@@ -187,8 +185,8 @@ Example: $\mathrm{CRCR$ (red) $\times$ $\mathrm{CWCW$ (white) $\to$ $\mathrm{CRC
 
 Example: Blood groups. $\mathrm{I^\mathrm{A\mathrm{I^\mathrm{B$ = blood group AB.
 
-**Multiple alleles:** More than two alleles for a gene (e.g., blood groups:
-$\mathrm{I^\mathrm{A$ $\mathrm{I^\mathrm{B$$i$).
+**Multiple alleles:** More than two alleles for a gene (e.g., blood groups: $\mathrm{I^\mathrm{A$
+$\mathrm{I^\mathrm{B$$i$).
 
 **Epistasis:** One gene affects the expression of another gene.
 
@@ -398,8 +396,8 @@ Genotype frequencies: $p^2 = 0.36$ (homozygous dominant), $2pq = 0.48$ (heterozy
 
 2. Explain how the lac operon allows E. Coli to regulate lactose metabolism.
 
-3. In a dihybrid cross between $\mathrm{RrYy \times \mathrm{rryy$Determine the expected
-   phenotype ratio and the probability of an offspring with the genotype $\mathrm{RrYy$.
+3. In a dihybrid cross between $\mathrm{RrYy \times \mathrm{rryy$Determine the expected phenotype
+   ratio and the probability of an offspring with the genotype $\mathrm{RrYy$.
 
 4. A population has 9% of individuals showing a recessive genetic disorder. Calculate the frequency
    of the carrier genotype.
@@ -695,8 +693,8 @@ Sequence itself.
 
 **DNA methylation:**
 
-- Methyl groups ($-\mathrm{CH_3$) are added to cytosine bases, particularly at CpG islands near
-  gene promoters.
+- Methyl groups ($-\mathrm{CH_3$) are added to cytosine bases, particularly at CpG islands near gene
+  promoters.
 - Methylation generally silences gene expression by preventing transcription factors from binding to
   the promoter.
 - Methylation patterns are inherited during cell division (maintained by DNA methyltransferase
@@ -771,8 +769,16 @@ A severe genetic disorder.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of genetics and adaptation, including key concepts,
+experimental evidence, and real-world applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Mendelian inheritance
+- gene expression and regulation
+- mutations and genetic variation
+- genetic engineering (PCR, gel electrophoresis)
+- genome projects
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

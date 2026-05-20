@@ -336,13 +336,12 @@ Matrices via partial trace), open quantum systems, and decoherence.
 
 ### 3.1 Wave Functions
 
-In the position representation, the state is described by a **wave function**
-$\psi(\mathbf{r}, t)$ Where $|\psi(\mathbf{r}, t)|^2$ is the probability density:
+In the position representation, the state is described by a **wave function** $\psi(\mathbf{r}, t)$
+Where $|\psi(\mathbf{r}, t)|^2$ is the probability density:
 
 $$P(\mathbf{r} \in [\mathbf{r}, \mathbf{r} + d\mathbf{r}]) = |\psi(\mathbf{r}, t)|^2\, d^3\mathbf{r}$$
 
-**Normalisation:**
-$\int_{-\infty}^{\infty} |\psi(\mathbf{r}, t)|^2\, d^3\mathbf{r} = 1$.
+**Normalisation:** $\int_{-\infty}^{\infty} |\psi(\mathbf{r}, t)|^2\, d^3\mathbf{r} = 1$.
 
 ### 3.2 Time-Dependent Schrodinger Equation
 
@@ -379,8 +378,8 @@ The **probability current density** is
 $$\mathbf{J} = \frac{\hbar}{2mi}(\psi^* \nabla\psi - \psi \nabla\psi^*)$$
 
 It satisfies the continuity equation:
-$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{J} = 0$ Expressing conservation
-of probability.
+$\frac{\partial |\psi|^2}{\partial t} + \nabla \cdot \mathbf{J} = 0$ Expressing conservation of
+probability.
 
 _Derivation of the continuity equation._ Start with the Schrodinger equation and its complex
 conjugate:
@@ -959,8 +958,8 @@ $$T = \frac{1}{1 + \dfrac{V_0^2}{4E(E + V_0)}\sin^2(2k_2 a)}$$
 **Resonances** occur when $2k_2 a = n\pi$ (integer multiples of $\pi$), giving $T = 1$: the well
 Becomes perfectly transparent.
 
-**Example 5.3.** A finite square well has $V_0 = 5\,\mathrm{eV$ and $2a = 1\,\mathrm{nm$.
-Estimate the Number of bound states for an electron.
+**Example 5.3.** A finite square well has $V_0 = 5\,\mathrm{eV$ and $2a = 1\,\mathrm{nm$. Estimate
+the Number of bound states for an electron.
 
 <details>
 <summary>Solution</summary>
@@ -1174,8 +1173,8 @@ $m_{\min} = -l$So $N = 2l$Meaning $2l$ must be a non-negative integer. Therefore
 $l = 0, 1/2, 1, 3/2, \ldots$ and $m$ takes $2l+1$ values from $-l$ to $l$. $\blacksquare$
 
 For orbital angular momentum (defined as
-$\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}}$), The wave function
-must be single-valued under a full rotation $\phi \to \phi + 2\pi$. This requires
+$\hat{\mathbf{L}} = \hat{\mathbf{r}} \times \hat{\mathbf{p}}$), The wave function must be
+single-valued under a full rotation $\phi \to \phi + 2\pi$. This requires
 $e^{im\phi} = e^{im(\phi+2\pi)}$So $m$ must be an integer, which restricts $l$ to integers.
 
 ### 6.4 Spherical Harmonics
@@ -1365,10 +1364,10 @@ $$\sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
 
 $$\sigma_x = \begin{pmatrix} a & b \\ b^* & -a \end{pmatrix}$$
 
-Where $a \in \mathbb{R}$ and $b \in \mathbb{C}$. From $\sigma_x^2 = I$:
-$a^2 + |b|^2 = 1$ and $2ab = 0$. Since $|b| \neq 0$ (otherwise $\sigma_x$ is diagonal and commutes
-with $\sigma_z$Violating $[\sigma_x, \sigma_z] \neq 0$), we have $a = 0$ and $|b| = 1$. Choosing
-$b = 1$ (by convention):
+Where $a \in \mathbb{R}$ and $b \in \mathbb{C}$. From $\sigma_x^2 = I$: $a^2 + |b|^2 = 1$ and
+$2ab = 0$. Since $|b| \neq 0$ (otherwise $\sigma_x$ is diagonal and commutes with
+$\sigma_z$Violating $[\sigma_x, \sigma_z] \neq 0$), we have $a = 0$ and $|b| = 1$. Choosing $b = 1$
+(by convention):
 
 $$\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$$
 
@@ -1386,8 +1385,8 @@ $\blacksquare$
 
 ### 7.4 Spin-1/2 in a Magnetic Field
 
-A particle with magnetic moment $\boldsymbol{\mu} = \gamma\mathbf{S}$ (where $\gamma$ is
-the Gyromagnetic ratio) in a magnetic field $\mathbf{B} = B_0\hat{z}$ has Hamiltonian:
+A particle with magnetic moment $\boldsymbol{\mu} = \gamma\mathbf{S}$ (where $\gamma$ is the
+Gyromagnetic ratio) in a magnetic field $\mathbf{B} = B_0\hat{z}$ has Hamiltonian:
 
 $$\hat{H} = -\boldsymbol{\mu}\cdot\mathbf{B} = -\gamma B_0\hat{S}_z = -\frac{\hbar\gamma B_0}{2}\sigma_z$$
 
@@ -1457,8 +1456,8 @@ Confirming the quantisation of angular momentum (spin-1/2 for the outer electron
 
 $$\mathbf{F} = \nabla(\boldsymbol{\mu}\cdot\mathbf{B})$$
 
-For a field $\mathbf{B} = B(z)\hat{z}$ with $\partial B_z/\partial z \neq 0$The $z$-component
-of force Is $F_z = \mu_z\,\partial B_z/\partial z$. Since $\mu_z = \gamma m_s\hbar$ and
+For a field $\mathbf{B} = B(z)\hat{z}$ with $\partial B_z/\partial z \neq 0$The $z$-component of
+force Is $F_z = \mu_z\,\partial B_z/\partial z$. Since $\mu_z = \gamma m_s\hbar$ and
 $m_s = \pm 1/2$:
 
 $$F_z = \pm\frac{\gamma\hbar}{2}\frac{\partial B_z}{\partial z}$$
@@ -1499,8 +1498,8 @@ For $\theta = 90°$ (i.e., measuring $S_x$): $P = 1/2$.
 
 ### 7.6 Addition of Angular Momenta
 
-Given two angular momenta $\hat{\mathbf{J}}_1$ and $\hat{\mathbf{J}}_2$ with quantum
-numbers $j_1, m_1$ and $j_2, m_2$Define the total
+Given two angular momenta $\hat{\mathbf{J}}_1$ and $\hat{\mathbf{J}}_2$ with quantum numbers
+$j_1, m_1$ and $j_2, m_2$Define the total
 $\hat{\mathbf{J}} = \hat{\mathbf{J}}_1 + \hat{\mathbf{J}}_2$.
 
 **Compatible observables:** $\hat{J}^2$$\hat{J}_z$$\hat{J}_1^2$$\hat{J}_2^2$ all commute. We label
@@ -1535,8 +1534,8 @@ $\hat{S}^2 = \hat{S}_1^2 + \hat{S}_2^2 + 2\hat{\mathbf{S}}_1\cdot\hat{\mathbf{S}
 
 $$\hat{\mathbf{S}}_1\cdot\hat{\mathbf{S}}_2 = \frac{1}{2}(\hat{S}^2 - \hat{S}_1^2 - \hat{S}_2^2)$$
 
-For the triplet: $\hat{\mathbf{S}}_1\cdot\hat{\mathbf{S}}_2 = \hbar^2/4$. For the
-singlet: $\hat{\mathbf{S}}_1\cdot\hat{\mathbf{S}}_2 = -3\hbar^2/4$.
+For the triplet: $\hat{\mathbf{S}}_1\cdot\hat{\mathbf{S}}_2 = \hbar^2/4$. For the singlet:
+$\hat{\mathbf{S}}_1\cdot\hat{\mathbf{S}}_2 = -3\hbar^2/4$.
 
 **Complete set of commuting observables (CSCO).** For a two-spin system, the set
 $\\{\hat{S}^2, \hat{S}_z, \hat{S}_1^2, \hat{S}_2^2\\}$ forms a CSCO: their simultaneous eigenstates
@@ -1804,8 +1803,8 @@ amplitudes. Hint: consider the Mach-Zehnder interferometer with phase shifters.
 
 **5.** (Continuity equation) Starting from the Schrodinger equation, derive the continuity equation
 $\partial|\psi|^2/\partial t + \nabla\cdot\mathbf{J} = 0$. Show that for a stationary state
-$\psi(\mathbf{r},t) = \phi(\mathbf{r})e^{-iEt/\hbar}$The probability current is
-time-independent. What does this imply about the probability distribution?
+$\psi(\mathbf{r},t) = \phi(\mathbf{r})e^{-iEt/\hbar}$The probability current is time-independent.
+What does this imply about the probability distribution?
 
 **6.** (Normalisation) Normalise the wave function $\psi(x) = N\,x(a-x)$ for $0 \lt x \lt a$ (and
 zero Otherwise). Find $\langle x \rangle$$\langle x^2 \rangle$And $\langle p^2 \rangle$.
@@ -1822,8 +1821,8 @@ symmetry.
 
 **9.** (Eigenvalue problem) Find the eigenvalues and normalised eigenvectors of the matrix
 $\hat{A} = \begin{pmatrix}3 & 1\\1 & 3\end{pmatrix}$. Verify that the eigenvectors are orthogonal
-And that they form a complete basis for $\mathbb{C}^2$. Generalise: what are the eigenvalues
-of $\begin{pmatrix}a & b\\b & a\end{pmatrix}$?
+And that they form a complete basis for $\mathbb{C}^2$. Generalise: what are the eigenvalues of
+$\begin{pmatrix}a & b\\b & a\end{pmatrix}$?
 
 **10.** (Infinite square well) A particle is in the ground state of an infinite square well of Width
 $L$. Suddenly, the well expands symmetrically to width $2L$ (the centre remains fixed). Find the
@@ -1955,8 +1954,8 @@ $$K_{1s,2s} \approx 0.032\ \text{Ry = 0.43\ \text{eV$$
 The singlet (parahelium) has energy $E = E_0 + J + K$And the triplet (orthohelium) has
 $E = E_0 + J - K$.
 
-The splitting: $E_{\text{singlet} - E_{\text{triplet} = 2K \approx 0.86$ eV. This is the
-exchange splitting.
+The splitting: $E_{\text{singlet} - E_{\text{triplet} = 2K \approx 0.86$ eV. This is the exchange
+splitting.
 
 The orthohelium $2^3S$ state is metastable: it cannot decay to the ground state by electric dipole
 transition (because $\Delta S = 0$ for E1 transitions, and the ground state is a singlet). Its
@@ -1994,8 +1993,7 @@ Hamiltonian:
 
 $$\hat{H} = -\frac{\hbar^2}{2m_e}\nabla^2 - \frac{e^2}{4\pi\varepsilon_0 r_A} - \frac{e^2}{4\pi\varepsilon_0 r_B} + \frac{e^2}{4\pi\varepsilon_0 R}$$
 
-**LCAO trial function:**
-$\psi_\pm = N_\pm[\psi_{1s}(\mathbf{r}_A) \pm \psi_{1s}(\mathbf{r}_B)]$
+**LCAO trial function:** $\psi_\pm = N_\pm[\psi_{1s}(\mathbf{r}_A) \pm \psi_{1s}(\mathbf{r}_B)]$
 
 The energies:
 
@@ -2041,9 +2039,9 @@ $$E = \left(\frac{121}{64} - \frac{121}{32}\right)\text{Ry = -\frac{121}{64}\tex
 The exact (non-relativistic) ground state energy is $-79.0$ eV, so the variational result is within
 2%.
 
-The effective charge $Z_{\text{eff} = 1.375 < 2$ reflects the screening of the nuclear charge by
-the other electron: each electron partially shields the nucleus from the other, reducing the
-effective charge from $Z = 2$ to $Z_{\text{eff} \approx 1.375$.
+The effective charge $Z_{\text{eff} = 1.375 < 2$ reflects the screening of the nuclear charge by the
+other electron: each electron partially shields the nucleus from the other, reducing the effective
+charge from $Z = 2$ to $Z_{\text{eff} \approx 1.375$.
 
 </details>
 
@@ -2111,8 +2109,8 @@ quantum electrodynamics.
 Consider the transition $3d \to 1s$ in hydrogen. Is this an allowed E1 transition?
 
 The matrix element involves the integral
-$\langle n'l'm'|\mathbf{r}|nlm\rangle = \langle 1,0,0|r_q|3,2,m\rangle$ where $r_q$ is a
-spherical tensor component.
+$\langle n'l'm'|\mathbf{r}|nlm\rangle = \langle 1,0,0|r_q|3,2,m\rangle$ where $r_q$ is a spherical
+tensor component.
 
 By the Wigner--Eckart theorem and parity selection rules:
 
@@ -2155,8 +2153,8 @@ For a weak potential, the scattering amplitude to first order is:
 
 $$f(\theta, \phi) \approx -\frac{m}{2\pi\hbar^2}\int e^{-i\mathbf{k}'\cdot\mathbf{r}'}V(\mathbf{r}')\,d^3r'$$
 
-Where $\mathbf{k}'$ is the scattered wave vector and
-$\mathbf{q} = \mathbf{k}' - \mathbf{k}$ is the momentum transfer.
+Where $\mathbf{k}'$ is the scattered wave vector and $\mathbf{q} = \mathbf{k}' - \mathbf{k}$ is the
+momentum transfer.
 
 For the Yukawa potential $V(r) = (V_0/r)e^{-\mu r}$:
 
@@ -2254,8 +2252,7 @@ to the kinetic energy associated with the length scale $a$.
 Lithium ($Z = 3$) has the electron configuration $1s^2 2s^1$. Using the variational method with
 $Z_{\text{eff}$ for the $1s$ electrons:
 
-(a) Calculate $Z_{\text{eff}$ for the $1s$ electrons, treating the $2s$ electron as a
-perturbation.
+(a) Calculate $Z_{\text{eff}$ for the $1s$ electrons, treating the $2s$ electron as a perturbation.
 
 (b) Calculate the ionisation energy (removing the $2s$ electron) and compare with the experimental
 value of 5.39 eV.
@@ -2418,13 +2415,13 @@ $E^{-1/2}$Consistent with the WKB exponential dependence.
 
 ### 14.1 The Hohenberg--Kohn Theorems
 
-**Theorem 1:** The ground-state electron density $n(\mathbf{r})$ uniquely determines the
-external potential $V_{\text{ext}(\mathbf{r})$ (up to an additive constant), and hence the
-full many-body Hamiltonian and all ground-state properties.
+**Theorem 1:** The ground-state electron density $n(\mathbf{r})$ uniquely determines the external
+potential $V_{\text{ext}(\mathbf{r})$ (up to an additive constant), and hence the full many-body
+Hamiltonian and all ground-state properties.
 
 **Theorem 2:** The ground-state energy is a functional of the density:
-$E[n] = F_{\text{HK}[n] + \int V_{\text{ext}(\mathbf{r})n(\mathbf{r})\,d^3r$And the
-variational principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{r})$.
+$E[n] = F_{\text{HK}[n] + \int V_{\text{ext}(\mathbf{r})n(\mathbf{r})\,d^3r$And the variational
+principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{r})$.
 
 ### 14.2 Kohn--Sham Equations
 
@@ -2445,8 +2442,7 @@ classical Hartree approximation.
 ### 14.3 Self-Interaction Error
 
 The Hartree potential includes the interaction of each electron with itself. This **self-interaction
-error** is not cancelled by the local density approximation (LDA) for $V_{\text{xc}$.
-Consequences:
+error** is not cancelled by the local density approximation (LDA) for $V_{\text{xc}$. Consequences:
 
 - Wrong asymptotic behaviour: $V_{\text{eff}(r \to \infty) \to -e^2/r$ (correct) vs.
   $V_{\text{eff} \to 0$ (LDA, wrong)
@@ -2483,4 +2479,45 @@ shell structure, no chemical bonding).
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: The wave equation**
+
+A wave has a frequency of $250\,\text{Hz}$ and a wavelength of $1.5\,\text{m}$. Calculate the wave
+speed.
+
+**Solution:**
+
+$$v = f\lambda = 250 \times 1.5 = 375\,\text{m\,s}^{-1}$$
+
+**Example 2: Standing waves**
+
+A string of length $0.80\,\text{m}$ vibrates at its fundamental frequency. If the wave speed on the
+string is $120\,\text{m\,s}^{-1}$, calculate the fundamental frequency.
+
+**Solution:**
+
+At the fundamental frequency, $L = \frac{\lambda}{2}$, so $\lambda = 2L = 1.6\,\text{m}$.
+
+$$f = \frac{v}{\lambda} = \frac{120}{1.6} = 75\,\text{Hz}$$
+
+## Summary
+
+- Wave function: $\Psi(x,t)$ describes quantum state; $|\Psi|^2$ gives probability density;
+  normalisation $\int |\Psi|^2\,dx = 1$.
+- Schrödinger equation: $i\hbar \frac{\partial \Psi}{\partial t} = \hat{H}\Psi$; time-independent
+  form $\hat{H}\psi = E\psi$ for stationary states.
+- Operators and observables: position $\hat{x} = x$, momentum
+  $\hat{p} = -i\hbar \partial/\partial x$; commutator $[\hat{x}, \hat{p}] = i\hbar$.
+- Angular momentum: $\hat{L}^2 Y_l^m = l(l+1)\hbar^2 Y_l^m$; spin is intrinsic angular momentum with
+  no classical analogue.
+- Approximation methods: time-independent perturbation theory
+  ($E_n \approx E_n^{(0)} + \langle n^{(0)}|V|n^{(0)}\rangle$); variational principle gives upper
+  bound on ground state energy.
+
+## Cross-References
+
+| Topic                        | Site        | Link                                                                    |
+| ---------------------------- | ----------- | ----------------------------------------------------------------------- |
+| Classical Mechanics          | WyattsNotes | [View](/docs/university/physics/classical-mechanics)                    |
+| Electromagnetism             | WyattsNotes | [View](/docs/university/physics/electromagnetism)                       |
+| Solid State Physics          | WyattsNotes | [View](/docs/university/physics/solid-state-physics)                    |
+| Quantum Mechanics — MIT 8.04 | MIT OCW     | [View](https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/) |

@@ -106,11 +106,11 @@ The cell membrane is described by the fluid mosaic model:
 
 **Passive Transport (no energy required):**
 
-| Type                  | Description                                                        | Examples                        |
-| --------------------- | ------------------------------------------------------------------ | ------------------------------- |
+| Type                  | Description                                                        | Examples                    |
+| --------------------- | ------------------------------------------------------------------ | --------------------------- |
 | Simple diffusion      | Movement from high to low concentration; small non-polar molecules | $\mathrm{O_2$$\mathrm{CO_2$ |
-| Facilitated diffusion | Via channel or carrier proteins; large or polar molecules          | Glucose, ions                   |
-| Osmosis               | Movement of water across a semi-permeable membrane                 | Water in cells                  |
+| Facilitated diffusion | Via channel or carrier proteins; large or polar molecules          | Glucose, ions               |
+| Osmosis               | Movement of water across a semi-permeable membrane                 | Water in cells              |
 
 **Active Transport (energy required):**
 
@@ -333,8 +333,8 @@ Magnification = $5000 / 10 = \times 500$.
 
 3. Explain how the fluid mosaic model accounts for the properties of the cell membrane.
 
-4. Calculate the magnification of a cell that appears $5 \mathrm{ mm$ wide in a micrograph when
-   the actual cell is $10 \mu\mathrm{m$ wide.
+4. Calculate the magnification of a cell that appears $5 \mathrm{ mm$ wide in a micrograph when the
+   actual cell is $10 \mu\mathrm{m$ wide.
 
 5. Describe what happens to an animal cell and a plant cell when placed in (a) a hypertonic solution
    and (b) a hypotonic solution.
@@ -494,15 +494,15 @@ Cell.
 
 ## Review: Summary Comparison of Transport Mechanisms
 
-| Mechanism             | Energy Required | Direction          | Mediator        | Example                             |
-| --------------------- | --------------- | ------------------ | --------------- | ----------------------------------- |
-| Simple diffusion      | No              | High to low conc.  | None            | $\mathrm{O_2$$\mathrm{CO_2$     |
-| Facilitated diffusion | No              | High to low conc.  | Channel/carrier | Glucose, $\mathrm{Na^+$           |
-| Osmosis               | No              | High to low $\psi$ | Aquaporins      | Water                               |
-| Active transport      | Yes (ATP)       | Low to high conc.  | Carrier protein | $\mathrm{Na^+/\mathrm{K^+$ pump |
-| Cotransport           | Yes (gradient)  | Low to high conc.  | Carrier protein | $\mathrm{Na^+$-glucose symporter  |
-| Exocytosis            | Yes (ATP)       | Out of cell        | Vesicles        | Hormone secretion                   |
-| Endocytosis           | Yes (ATP)       | Into cell          | Vesicles        | Phagocytosis                        |
+| Mechanism             | Energy Required | Direction          | Mediator        | Example                          |
+| --------------------- | --------------- | ------------------ | --------------- | -------------------------------- |
+| Simple diffusion      | No              | High to low conc.  | None            | $\mathrm{O_2$$\mathrm{CO_2$      |
+| Facilitated diffusion | No              | High to low conc.  | Channel/carrier | Glucose, $\mathrm{Na^+$          |
+| Osmosis               | No              | High to low $\psi$ | Aquaporins      | Water                            |
+| Active transport      | Yes (ATP)       | Low to high conc.  | Carrier protein | $\mathrm{Na^+/\mathrm{K^+$ pump  |
+| Cotransport           | Yes (gradient)  | Low to high conc.  | Carrier protein | $\mathrm{Na^+$-glucose symporter |
+| Exocytosis            | Yes (ATP)       | Out of cell        | Vesicles        | Hormone secretion                |
+| Endocytosis           | Yes (ATP)       | Into cell          | Vesicles        | Phagocytosis                     |
 
 ## Review: Plant Cell Adaptations
 
@@ -731,4 +731,17 @@ Proteins.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Comparing mitosis and meiosis**
+
+Compare mitosis and meiosis in terms of the number of divisions, daughter cells produced, and
+genetic variation.
+
+**Solution:**
+
+| Feature           | Mitosis                              | Meiosis                                     |
+| ----------------- | ------------------------------------ | ------------------------------------------- |
+| Divisions         | 1                                    | 2                                           |
+| Daughter cells    | 2                                    | 4                                           |
+| Chromosome number | Same as parent                       | Half of parent                              |
+| Genetic variation | No                                   | Yes (crossing over, independent assortment) |
+| Function          | Growth, repair, asexual reproduction | Production of gametes                       |

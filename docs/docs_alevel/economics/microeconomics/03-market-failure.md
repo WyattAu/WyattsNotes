@@ -1238,4 +1238,16 @@ impractical, non-market institutions can address information failure:
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the economic theories and principles related to market failure, including key
+models, evidence, and policy implications.
+
+**Key concepts include:**
+
+- economic models and theories
+- data analysis and interpretation
+- policy evaluation
+- real-world applications
+- critical evaluation of economic arguments
+
+The ability to apply these theories to real-world data and evaluate policy decisions is central to
+success in this subject.

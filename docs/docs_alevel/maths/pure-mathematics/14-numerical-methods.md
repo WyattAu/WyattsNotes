@@ -355,7 +355,7 @@ Number. Simpson's rule is exact for cubics (since the error depends on $f^{(4)}$
 | -------------- | ----------- | ------------------ | ------------ |
 | Sign change    | N/A         | Continuous $f$     | Locates only |
 | Bisection      | Linear      | Sign change        | Slow         |
-| Fixed-point    | Linear      | $\|g'\| \lt 1$   | Moderate     |
+| Fixed-point    | Linear      | $\|g'\| \lt 1$     | Moderate     |
 | Newton-Raphson | Quadratic   | $f'(\alpha)\neq 0$ | Fast         |
 | Trapezium rule | $O(1/n^2)$  | Any $f$            | Integration  |
 | Simpson's rule | $O(1/n^4)$  | Even $n$ strips    | Integration  |
@@ -509,8 +509,8 @@ $f(\ln 3) = 3 - 3\ln 3 \approx 3 - 3.296 = -0.296 \lt 0$.
 Since $f''(x) = e^x \gt 0$This is a global minimum. The minimum value is negative, and
 $f(x) \to \infty$ as $x \to \pm\infty$So $f(x) = 0$ has exactly two roots.
 
-$f(0) = 1 \gt 0$$f(1) = e-3 \lt 0$: root in $(0,1)$. $f(1) \lt 0$$f(2) = e^2-6 \gt 0$: Root
-in $(1,2)$.
+$f(0) = 1 \gt 0$$f(1) = e-3 \lt 0$: root in $(0,1)$. $f(1) \lt 0$$f(2) = e^2-6 \gt 0$: Root in
+$(1,2)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
 
@@ -845,12 +845,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.

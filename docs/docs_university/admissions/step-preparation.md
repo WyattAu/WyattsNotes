@@ -186,14 +186,12 @@ Where $A_k = a_1 + \cdots + a_k$.
 **Scalar product.**
 $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta = a_1b_1 + a_2b_2 + a_3b_3$.
 
-**Vector product.** $\mathbf{a} \times \mathbf{b}$ is perpendicular to both
-$\mathbf{a}$ and $\mathbf{b}$ With magnitude
-$|\mathbf{a}||\mathbf{b}|\sin\theta$.
+**Vector product.** $\mathbf{a} \times \mathbf{b}$ is perpendicular to both $\mathbf{a}$ and
+$\mathbf{b}$ With magnitude $|\mathbf{a}||\mathbf{b}|\sin\theta$.
 
 **Triple scalar product.**
-$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$
-Equals the signed volume of the parallelepiped spanned by
-$\mathbf{a}, \mathbf{b}, \mathbf{c}$.
+$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ Equals the
+signed volume of the parallelepiped spanned by $\mathbf{a}, \mathbf{b}, \mathbf{c}$.
 
 **Vector equation of a line.** $\mathbf{r} = \mathbf{a} + t\mathbf{d}$.
 
@@ -250,8 +248,8 @@ $$P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}$$
 
 $$\mathbb{E}(X) = \sum_i x_i p_i, \quad \text{Var(X) = \mathbb{E}(X^2) - [\mathbb{E}(X)]^2$$
 
-**Linearity of expectation.** $\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)$
-always, regardless of Independence.
+**Linearity of expectation.** $\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)$ always, regardless
+of Independence.
 
 ### 5.3 Common STEP Combinatorics Techniques
 
@@ -500,8 +498,8 @@ first Red ball itself). Therefore:
 
 $$\mathbb{E}(X) = \mathbb{E}(B_1) + 1 = \frac{n - r}{r + 1} + 1 = \frac{n - r + r + 1}{r + 1} = \frac{n + 1}{r + 1}$$
 
-**(ii)** For the variance, use a similar symmetry argument. We need $\mathbb{E}(B_1^2)$. The
-blue balls are distributed multinomially among $r + 1$ gaps with equal Probabilities $\frac{1}{r+1}$
+**(ii)** For the variance, use a similar symmetry argument. We need $\mathbb{E}(B_1^2)$. The blue
+balls are distributed multinomially among $r + 1$ gaps with equal Probabilities $\frac{1}{r+1}$
 each. For a multinomial distribution:
 
 $$\text{Var(B_1) = (n-r)\cdot\frac{1}{r+1}\cdot\frac{r}{r+1} = \frac{r(n-r)}{(r+1)^2}$$
@@ -590,4 +588,35 @@ Reserve the final 10 minutes to review your work. Check that:
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with step preparation, follow a structured approach:
+
+1. Identify the key concepts and definitions relevant to the question
+2. Apply the appropriate methods, equations, or frameworks
+3. Support your answer with evidence, examples, or calculations
+4. Evaluate your answer critically, considering limitations and alternative perspectives
+
+## Summary
+
+- STEP (Sixth Term Examination Paper) consists of STEP 2 and STEP 3, each a 3-hour paper with 12
+  questions (answer 6); used by Cambridge for maths offers.
+- STEP 2 covers A-Level Maths and Further Maths (AS content); STEP 3 covers full A-Level Further
+  Maths.
+- Questions require sustained reasoning, multi-step proofs, and the ability to connect different
+  areas of mathematics.
+- Effective preparation: start early (January of Year 13), work through STEP Foundation modules,
+  then full past papers under timed conditions.
+- Marking rewards clear explanation and correct reasoning, not just final answers; partial credit is
+  generous for good working.
+
+## Cross-References
+
+| Topic                      | Site                 | Link                                                                            |
+| -------------------------- | -------------------- | ------------------------------------------------------------------------------- |
+| STEP Past Papers           | Cambridge Assessment | [View](https://www.ocr.org.uk/qualifications/past-paper-finder/?step=1&qual=89) |
+| STEP Support Programme     | Cambridge            | [View](https://maths.org/step/)                                                 |
+| MAT Preparation            | WyattsNotes          | [View](/docs/university/admissions/mat-preparation)                             |
+| TMUA Preparation           | WyattsNotes          | [View](/docs/university/admissions/tmua-preparation)                            |
+| Calculus — Differentiation | WyattsNotes          | [View](/docs/ib/maths/calculus/differentiation-depth)                           |
+| Calculus — Integration     | WyattsNotes          | [View](/docs/ib/maths/calculus/integration-depth)                               |

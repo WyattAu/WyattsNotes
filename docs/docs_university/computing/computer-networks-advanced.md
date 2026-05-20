@@ -347,8 +347,7 @@ $$\text{Goodput = \text{Throughput \times \frac{\text{Application data}{\text{To
 
 $$\text{BDP = \text{Bandwidth \times \text{RTT$$
 
-For a 1 Gbps link with 50 ms RTT: $\text{BDP = 10^9 \times 0.05 = 50 \times 10^6$ bits $= 6.25$
-MB.
+For a 1 Gbps link with 50 ms RTT: $\text{BDP = 10^9 \times 0.05 = 50 \times 10^6$ bits $= 6.25$ MB.
 
 The TCP receive window must be at least the BDP for full utilisation.
 
@@ -1148,8 +1147,8 @@ Utilisation: $\rho = 10 / (4 \times 3) = 10/12 = 0.833$.
 
 Using the Erlang C formula:
 
-Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum factor$... This is
-complex to compute by hand. Let me use the simplified formula.
+Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum factor$... This is complex
+to compute by hand. Let me use the simplified formula.
 
 $a = \lambda / \mu = 10/3 = 3.333$.
 
@@ -1244,8 +1243,8 @@ $\text{MSS = 1460$ bytes $= 11680$ bits. $\text{RTT = 80$ ms $= 0.08$ s. $p = 0.
 
 $$\text{Throughput \approx \frac{1.22 \times 11680}{0.08 \times \sqrt{0.001}} = \frac{14249.6}{0.08 \times 0.03162} = \frac{14249.6}{0.002530} \approx 5\,632\,727 \text{ bits/s \approx 5.63 \text{ Mbps$$
 
-The BDP is $\text{BW \times \text{RTT = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits
-$\approx 54.9$ KB. The receive window must be at least this for full utilisation.
+The BDP is $\text{BW \times \text{RTT = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$
+KB. The receive window must be at least this for full utilisation.
 
 If you get this wrong, revise: Section 2.1.
 
@@ -1303,8 +1302,56 @@ If you get this wrong, revise: Section 1.2.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
+
+2. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
+
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Subnetting with VLSM
+
+**Problem.** You have network `192.168.1.0/24`. Create subnets for: 60 hosts, 28 hosts, 12 hosts,
+and 2 point-to-point links.
+
+**Solution.** Allocate largest first:
+
+- 60 hosts: need $2^6 = 64$ addresses → `/26` → `192.168.1.0/26` (hosts .1–.62)
+- 28 hosts: need $2^5 = 32$ → `/27` → `192.168.1.64/27` (hosts .65–.94)
+- 12 hosts: need $2^4 = 16$ → `/28` → `192.168.1.96/28` (hosts .97–.110)
+- 2 point-to-point: need $2^2 = 4$ → `/30` → `192.168.1.112/30` and `192.168.1.116/30`
+
+$\blacksquare$
+
+### Example 2: TCP Congestion Window Calculation
+
+**Problem.** A TCP connection starts with `cwnd = 1 MSS`. After 5 RTTs in slow start (no loss), what
+is `cwnd`? If loss occurs at RTT 6, what happens?
+
+**Solution.** Slow start doubles each RTT: $1 \to 2 \to 4 \to 8 \to 16$. After 5 RTTs,
+`cwnd = 16 MSS`.
+
+If loss at RTT 6 (triple duplicate ACK): `ssthresh = cwnd/2 = 8`, `cwnd = 1` (Tahoe) or
+`cwnd = ssthresh` (Reno fast recovery).
+
+$\blacksquare$
+
+## Summary
+
+- VLSM subnetting allocates variable-length prefixes to minimise wasted addresses; always allocate
+  the largest subnet first.
+- TCP congestion control: slow start (exponential growth), congestion avoidance (linear), fast
+  retransmit/recovery; threshold `ssthresh` halves on loss.
+- BGP path vector protocol exchanges reachability between autonomous systems; policy-based routing
+  influences path selection.
+- Software-defined networking decouples control plane from data plane; OpenFlow enables centralised
+  traffic engineering.
+- Network security: TLS 1.3 handshake, DNSSEC chain of trust, and zero-trust architectures replace
+  perimeter-based models.

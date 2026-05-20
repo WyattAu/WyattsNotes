@@ -22,13 +22,12 @@ A **probability space** is a triple $(\Omega, \mathcal{F}, P)$ where:
 - $\mathcal{F}$ is a **sigma-algebra** on $\Omega$.
 - $P : \mathcal{F} \to [0, 1]$ is a **probability measure**.
 
-**Definition.** A **sigma-algebra** $\mathcal{F}$ on $\Omega$ is a collection of subsets
-satisfying:
+**Definition.** A **sigma-algebra** $\mathcal{F}$ on $\Omega$ is a collection of subsets satisfying:
 
 1. $\Omega \in \mathcal{F}$.
 2. If $A \in \mathcal{F}$Then $A^c \in \mathcal{F}$ (closed under complementation).
-3. If $A_1, A_2, \ldots \in \mathcal{F}$Then
-   $\bigcup_{i=1}^{\infty} A_i \in \mathcal{F}$ (closed under countable unions).
+3. If $A_1, A_2, \ldots \in \mathcal{F}$Then $\bigcup_{i=1}^{\infty} A_i \in \mathcal{F}$ (closed
+   under countable unions).
 
 **Definition.** A **probability measure** $P$ satisfies:
 
@@ -109,8 +108,8 @@ So $A$$B$$C$ are pairwise independent but not mutually independent. $\blacksquar
 
 ### 2.1 Definition and Distribution Functions
 
-**Definition.** A **random variable** is a measurable function $X : \Omega \to \mathbb{R}$.
-The **cumulative distribution function (CDF)** of $X$ is
+**Definition.** A **random variable** is a measurable function $X : \Omega \to \mathbb{R}$. The
+**cumulative distribution function (CDF)** of $X$ is
 
 $$F_X(x) = P(X \leq x)$$
 
@@ -141,8 +140,7 @@ $$E[X] = \sum_{x} x\, p_X(x)$$
 
 Provided the sum converges absolutely.
 
-**Definition (Variance).** $\mathrm{Var(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where
-$\mu = E[X]$.
+**Definition (Variance).** $\mathrm{Var(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
 
 **Proposition 2.2 (Linearity of Expectation).** $E[aX + bY] = aE[X] + bE[Y]$ for any random
 variables $X$$Y$ and constants $a$$b$.
@@ -172,19 +170,19 @@ $$F_X(x) = \int_{-\infty}^{x} f_X(t)\, dt$$
 **Discrete distributions:**
 
 | Distribution       | PMF                             | $E[X]$    | $\mathrm{Var(X)$ |
-| ------------------ | ------------------------------- | --------- | ------------------ |
-| Bernoulli$(p)$     | $p^x(1-p)^{1-x}$$x \in \{0,1\}$ | $p$       | $p(1-p)$           |
-| Binomial$(n,p)$    | $\binom{n}{x}p^x(1-p)^{n-x}$    | $np$      | $np(1-p)$          |
-| Poisson$(\lambda)$ | $e^{-\lambda}\lambda^x / x!$    | $\lambda$ | $\lambda$          |
-| Geometric$(p)$     | $(1-p)^{x-1}p$$x \geq 1$        | $1/p$     | $(1-p)/p^2$        |
+| ------------------ | ------------------------------- | --------- | ---------------- |
+| Bernoulli$(p)$     | $p^x(1-p)^{1-x}$$x \in \{0,1\}$ | $p$       | $p(1-p)$         |
+| Binomial$(n,p)$    | $\binom{n}{x}p^x(1-p)^{n-x}$    | $np$      | $np(1-p)$        |
+| Poisson$(\lambda)$ | $e^{-\lambda}\lambda^x / x!$    | $\lambda$ | $\lambda$        |
+| Geometric$(p)$     | $(1-p)^{x-1}p$$x \geq 1$        | $1/p$     | $(1-p)/p^2$      |
 
 **Continuous distributions:**
 
 | Distribution           | PDF                                                     | $E[X]$      | $\mathrm{Var(X)$ |
-| ---------------------- | ------------------------------------------------------- | ----------- | ------------------ |
-| Uniform$(a,b)$         | $1/(b-a)$ on $[a,b]$                                    | $(a+b)/2$   | $(b-a)^2/12$       |
-| Exponential$(\lambda)$ | $\lambda e^{-\lambda x}$$x \geq 0$                      | $1/\lambda$ | $1/\lambda^2$      |
-| $N(\mu, \sigma^2)$     | $\frac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/(2\sigma^2)}$ | $\mu$       | $\sigma^2$         |
+| ---------------------- | ------------------------------------------------------- | ----------- | ---------------- |
+| Uniform$(a,b)$         | $1/(b-a)$ on $[a,b]$                                    | $(a+b)/2$   | $(b-a)^2/12$     |
+| Exponential$(\lambda)$ | $\lambda e^{-\lambda x}$$x \geq 0$                      | $1/\lambda$ | $1/\lambda^2$    |
+| $N(\mu, \sigma^2)$     | $\frac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/(2\sigma^2)}$ | $\mu$       | $\sigma^2$       |
 
 ### 2.5 The Normal Distribution
 
@@ -219,8 +217,8 @@ Furthermore, $E[X^n] = M_X^{(n)}(0)$.
 
 ### 2.7 Worked Examples
 
-**Problem.** Let $X \sim \mathrm{Poisson(3)$ and $Y \sim \mathrm{Poisson(5)$ be independent.
-Find the distribution of $X + Y$.
+**Problem.** Let $X \sim \mathrm{Poisson(3)$ and $Y \sim \mathrm{Poisson(5)$ be independent. Find
+the distribution of $X + Y$.
 
 <details>
 <summary>Solution</summary>
@@ -292,8 +290,8 @@ false.
 <summary>Worked Example: Uncorrelated but Dependent</summary>
 
 _Solution._ Let $X \sim N(0, 1)$ and $Y = X^2$. Then
-$\mathrm{Cov(X, Y) = E[X^3] - E[X]E[X^2] = 0 - 0 \cdot 1 = 0$ (since the third moment of a
-standard normal is 0).
+$\mathrm{Cov(X, Y) = E[X^3] - E[X]E[X^2] = 0 - 0 \cdot 1 = 0$ (since the third moment of a standard
+normal is 0).
 
 But $Y$ is completely determined by $X$So they are not independent. $\blacksquare$
 
@@ -448,8 +446,59 @@ MGF of $N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)$. $\blacksquare$
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+2. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
+
+3. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
+
+4. Confusing $P(A|B)$ with $P(B|A)$ — these are related by Bayes' theorem but are not equal in
+   general.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Law of Total Probability
+
+**Problem.** Factory A produces 60% of items and factory B produces 40%. Defect rates are 2% and 5%
+respectively. Find the probability a randomly selected item is defective.
+
+**Solution.**
+$P(D) = P(D|A)P(A) + P(D|B)P(B) = 0.02 \times 0.6 + 0.05 \times 0.4 = 0.012 + 0.020 = 0.032$.
+
+Given a defective item, $P(A|D) = \frac{0.012}{0.032} = 0.375$ (Bayes' theorem).
+
+$\blacksquare$
+
+### Example 2: Generating Functions
+
+**Problem.** A fair coin is tossed until the first head appears. Find the expected number of tosses
+using the probability generating function.
+
+**Solution.** $X \sim \text{Geo}(p = 0.5)$. $P(X = k) = 0.5^k$ for $k = 1, 2, \ldots$
+
+PGF: $G(s) = \sum_{k=1}^{\infty} 0.5^k s^k = \frac{0.5s}{1 - 0.5s}$.
+
+$E(X) = G'(1) = \frac{0.5}{(1-0.5)^2} = \frac{0.5}{0.25} = 2$.
+
+$\blacksquare$
+
+## Summary
+
+- Sample spaces, events, and sigma-algebras provide the rigorous foundation for probability theory.
+- Random variables: discrete (PMF) and continuous (PDF); CDF $F(x) = P(X \leq x)$.
+- Expectation: $E(X) = \sum x \cdot P(X=x)$ or $\int x f(x)\,dx$; linearity
+  $E(aX + bY) = aE(X) + bE(Y)$.
+- Variance: $\text{Var}(X) = E(X^2) - [E(X)]^2$; $\text{Var}(aX + b) = a^2\text{Var}(X)$.
+- Generating functions (PGF, MGF) encode distribution information; moments obtained by
+  differentiation at specific points.
+
+## Cross-References
+
+| Topic                          | Site        | Link                                                            |
+| ------------------------------ | ----------- | --------------------------------------------------------------- |
+| Probability and Statistics     | WyattsNotes | [View](/docs/university/mathematics/probability-and-statistics) |
+| Real Analysis                  | WyattsNotes | [View](/docs/university/mathematics/real-analysis)              |
+| Differential Equations         | WyattsNotes | [View](/docs/university/mathematics/differential-equations)     |
+| Probability — Harvard Stat 110 | Harvard     | [View](https://stat110.com/)                                    |

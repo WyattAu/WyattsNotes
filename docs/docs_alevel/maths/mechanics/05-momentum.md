@@ -615,8 +615,8 @@ From $v_1 = 3u - 2v_2$: $v_1 - v_2 = 3u - 3v_2 = 3(u - v_2)$.
 
 $e = \dfrac{3(u-v_2)}{3u} = \dfrac{u-v_2}{u} = 1 - \dfrac{v_2}{u}$.
 
-Since $v_2 \gt 0$: $e \lt 1$. Also from $v_1 \gt 0$: $3u \gt 2v_2 \implies v_2 \lt 1.5u$
-So $e \gt 1 - 1.5 = -0.5$. And since $v_2 \gt 0$$e \lt 1$.
+Since $v_2 \gt 0$: $e \lt 1$. Also from $v_1 \gt 0$: $3u \gt 2v_2 \implies v_2 \lt 1.5u$ So
+$e \gt 1 - 1.5 = -0.5$. And since $v_2 \gt 0$$e \lt 1$.
 
 But we need both to move in the same direction. $v_2 \gt 0$ and
 $v_1 = 3u - 2v_2 \gt 0 \implies v_2 \lt 1.5u$.
@@ -626,19 +626,17 @@ $e = (u - v_2)/u$. Max when $v_2 \to 0$: $e \to 1$. Min when $v_2 \to 1.5u$: $e 
 Hmm, the question likely assumes a specific convention. The answer $e \leq 1/3$ arises when we
 Require $v_1 \lt v_2$ (so the $m$ body doesn't overtake the $2m$ body):
 
-$v_1 \lt v_2 \implies 3u - 2v_2 \lt v_2 \implies v_2 \gt 1.5u$... But then
-$v_1 = 3u - 2v_2 \lt 0$.
+$v_1 \lt v_2 \implies 3u - 2v_2 \lt v_2 \implies v_2 \gt 1.5u$... But then $v_1 = 3u - 2v_2 \lt 0$.
 
-Actually $e = (v_2 - v_1)/(u_1 - u_2) = (v_2 - v_1)/(-3u)$. For $v_1, v_2 \gt 0$ (same direction
-As $2u$):
+Actually $e = (v_2 - v_1)/(u_1 - u_2) = (v_2 - v_1)/(-3u)$. For $v_1, v_2 \gt 0$ (same direction As
+$2u$):
 
-$v_2 - v_1 \gt 0$ (needed for $e \gt 0$) and $u_1 - u_2 = -3u \lt 0$So
-$e = (v_2-v_1)/(-3u) \lt 0$ if $v_2 \gt v_1$. This gives $e \lt 0$ which isn't physical.
+$v_2 - v_1 \gt 0$ (needed for $e \gt 0$) and $u_1 - u_2 = -3u \lt 0$So $e = (v_2-v_1)/(-3u) \lt 0$
+if $v_2 \gt v_1$. This gives $e \lt 0$ which isn't physical.
 
 Let me re-examine. With original convention (positive = direction of $m$ body before collision):
 
-$u_1 = u$$u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt 0$
-$v_2 \lt 0$.
+$u_1 = u$$u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt 0$ $v_2 \lt 0$.
 
 $v_1 + 2v_2 = -3u$. $e = \dfrac{v_2 - v_1}{u - (-2u)} = \dfrac{v_2 - v_1}{3u}$.
 
@@ -906,12 +904,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-## Summary
+2. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.

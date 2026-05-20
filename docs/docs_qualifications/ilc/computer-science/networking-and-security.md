@@ -755,4 +755,16 @@ When 192.168.1.2 sends a request to a web server:
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: SQL query**
+
+Given a table `Students(name, grade, score)`, write a query to find the average score for each
+grade.
+
+**Solution:**
+
+```sql
+SELECT grade, AVG(score) AS average_score
+FROM Students
+GROUP BY grade
+ORDER BY average_score DESC;
+```

@@ -848,8 +848,16 @@ Other system components. Always benchmark with realistic data and in a realistic
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of complexity analysis, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Big O notation and complexity analysis
+- searching algorithms (binary, linear)
+- sorting algorithms (bubble, merge, quick)
+- graph algorithms (Dijkstra, BFS, DFS)
+- dynamic programming
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

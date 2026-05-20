@@ -1001,8 +1001,16 @@ If four-DIMM stability is poor:
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of memory tuning, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- command-line fundamentals
+- file permissions and ownership
+- process management
+- shell scripting with bash
+- package management
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

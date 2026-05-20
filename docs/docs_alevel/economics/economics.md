@@ -249,12 +249,12 @@ When presented with economic data in an exam:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing nominal and real values — always adjust for inflation when comparing monetary values
+   across time.
 
-## Summary
+2. Forgetting to distinguish between short-run and long-run effects in macroeconomic analysis.
 
-<!-- TODO: Add a summary for this topic -->
+3. Using circular reasoning by assuming the conclusion when evaluating economic policy
+   effectiveness.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing equity (fairness) with efficiency in welfare economics discussions.

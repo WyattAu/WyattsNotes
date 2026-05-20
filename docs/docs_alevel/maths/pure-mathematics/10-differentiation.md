@@ -225,8 +225,8 @@ There are three types:
 
 | Type                | Condition                        | Shape   |
 | ------------------- | -------------------------------- | ------- |
-| Maximum             | $f'(a) = 0$$f''(a) \lt 0$      | $\cap$  |
-| Minimum             | $f'(a) = 0$$f''(a) \gt 0$      | $\cup$  |
+| Maximum             | $f'(a) = 0$$f''(a) \lt 0$        | $\cap$  |
+| Minimum             | $f'(a) = 0$$f''(a) \gt 0$        | $\cup$  |
 | Point of inflection | $f'(a) = 0$$f''(a) = 0$ (may be) | S-shape |
 
 ### 7.3 Proof of the second derivative test (Taylor expansion intuition)
@@ -287,11 +287,11 @@ $$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\mathrm{cm}^2\mathrm{/s}$$
 
 $f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$.
 
-For $x \gt 1$: $(x-1) \gt 0$ and $(x+1) \gt 0$So $f'(x) \gt 0$. Hence $f$ is strictly
-Increasing for $x \gt 1$.
+For $x \gt 1$: $(x-1) \gt 0$ and $(x+1) \gt 0$So $f'(x) \gt 0$. Hence $f$ is strictly Increasing for
+$x \gt 1$.
 
-:::tip Tip Inequality. When asked to "show that a function is increasing", verify that
-$f'(x) \gt 0$ (or $\geq 0$) on the given interval. :::
+:::tip Tip Inequality. When asked to "show that a function is increasing", verify that $f'(x) \gt 0$
+(or $\geq 0$) on the given interval. :::
 
 <hr />
 
@@ -360,9 +360,8 @@ $f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3)$.
 
 Stationary points at $x = 1$ and $x = 3$.
 
-$f''(x) = 6x - 12$. At $x = 1$: $f''(1) = -6 \lt 0$So **local maximum**.
-$f(1) = 1 - 6 + 9 + 1 = 5$. At $x = 3$: $f''(3) = 6 \gt 0$So **local minimum**.
-$f(3) = 27 - 54 + 27 + 1 = 1$.
+$f''(x) = 6x - 12$. At $x = 1$: $f''(1) = -6 \lt 0$So **local maximum**. $f(1) = 1 - 6 + 9 + 1 = 5$.
+At $x = 3$: $f''(3) = 6 \gt 0$So **local minimum**. $f(3) = 27 - 54 + 27 + 1 = 1$.
 
 **If you get this wrong, revise:**
 [Second Derivatives and Stationary Points](#7-second-derivatives-and-stationary-points) — Section 7.
@@ -477,8 +476,8 @@ For nature, check $\dfrac{d^2y}{dx^2}$ or the sign of $\dfrac{dy}{dx}$:
 Near $t = 1$: for $t = 0.5$$\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} \lt 0$; for
 $t = 2$$\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} \gt 0$. So $t=1$ is a **minimum**.
 
-Near $t = -1$: for $t = -2$$\dfrac{dy}{dx} \lt 0$; for $t = -0.5$$\dfrac{dy}{dx} \gt 0$. So
-$t=-1$ is a **minimum**.
+Near $t = -1$: for $t = -2$$\dfrac{dy}{dx} \lt 0$; for $t = -0.5$$\dfrac{dy}{dx} \gt 0$. So $t=-1$
+is a **minimum**.
 
 **If you get this wrong, revise:**
 [Differentiation of Parametric Equations](#11-differentiation-of-parametric-equations) — Section 11.
@@ -623,12 +622,18 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to use the chain rule for composite functions — identify the inner function first.
 
-## Summary
+2. Confusing the derivative of $\ln(x)$ with the derivative of $\log_a(x)$ — the latter requires the
+   change of base formula.
 
-<!-- TODO: Add a summary for this topic -->
+3. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-## Worked Examples
+4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+6. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.

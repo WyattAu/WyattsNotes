@@ -803,8 +803,8 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 5. Find the area under $y = 4x - x^2$ above the $x$-axis.
 6. Find the equation of the normal to $y = x^2 + 1$ at $x = 1$.
 7. Evaluate $\int \frac{3}{x}\,dx$ and hence evaluate $\int_1^4 \frac{3}{x}\,dx$.
-8. The radius of a sphere is increasing at $2\mathrm{ cm/s$. Find the rate of increase of the
-   volume when $r = 5\mathrm{ cm$.
+8. The radius of a sphere is increasing at $2\mathrm{ cm/s$. Find the rate of increase of the volume
+   when $r = 5\mathrm{ cm$.
 
 ### Higher Level
 
@@ -828,8 +828,16 @@ At $t = 9$: $V = (10 - 0.9)^2 = 9.1^2 = 82.81$ litres.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to calculus, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- differentiation from first principles
+- product, quotient, and chain rules
+- integration techniques (by parts, substitution)
+- differential equations
+- applications to kinematics
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

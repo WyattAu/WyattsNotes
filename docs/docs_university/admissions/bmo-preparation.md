@@ -216,14 +216,12 @@ $\frac{p - q}{r - s} \in i\mathbb{R}$.
 
 ### 5.3 Vectors
 
-**Dot product.**
-$\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$. Converts
+**Dot product.** $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$. Converts
 Geometric conditions about angles into algebraic equations.
 
-**Technique: vector proofs.** Assign position vectors
-$\mathbf{a}, \mathbf{b}, \mathbf{c}$ to Vertices and compute. For example, the
-centroid is $(\mathbf{a} + \mathbf{b} + \mathbf{c})/3$ And it lies on all three
-medians by symmetry.
+**Technique: vector proofs.** Assign position vectors $\mathbf{a}, \mathbf{b}, \mathbf{c}$ to
+Vertices and compute. For example, the centroid is $(\mathbf{a} + \mathbf{b} + \mathbf{c})/3$ And it
+lies on all three medians by symmetry.
 
 ---
 
@@ -281,8 +279,8 @@ Integers share the same residue. If these are $a$ and $b$Then $n \mid (a - b)$.
 
 ### Question 4 (Algebra: Functional Equations)
 
-> Find all functions $f : \mathbb{R} \to \mathbb{R}$ such that
-> $f(x^2 + y) = f(x)^2 + f(y)$ for all real $x, y$.
+> Find all functions $f : \mathbb{R} \to \mathbb{R}$ such that $f(x^2 + y) = f(x)^2 + f(y)$ for all
+> real $x, y$.
 
 **Solution.** Setting $x = 0$: $f(y) = f(0)^2 + f(y)$So $f(0) = 0$.
 
@@ -493,4 +491,34 @@ Minutes each). Spend the first 10--15 minutes reading all problems. Start with t
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with bmo preparation, follow a structured approach:
+
+1. Identify the key concepts and definitions relevant to the question
+2. Apply the appropriate methods, equations, or frameworks
+3. Support your answer with evidence, examples, or calculations
+4. Evaluate your answer critically, considering limitations and alternative perspectives
+
+## Summary
+
+- BMO Round 1 (3.5 hours, 6 problems) and Round 2 (3.5 hours, 4 problems) test proof-writing and
+  deep problem-solving across number theory, combinatorics, algebra, and geometry.
+- Key techniques: invariants and monovariants, pigeonhole principle, extremal arguments, induction
+  (strong and structural), and constructing counterexamples.
+- BMO1 problems are roughly at the level of national olympiads; BMO2 problems require greater
+  originality and proof rigour.
+- Study past papers systematically: attempt problems before reading solutions, and analyse official
+  solutions for technique.
+- Time management and clear proof presentation are as important as mathematical insight.
+
+## Cross-References
+
+| Topic                            | Site        | Link                                                        |
+| -------------------------------- | ----------- | ----------------------------------------------------------- |
+| UKMT BMO Past Papers             | UKMT        | [View](https://ukmt.org.uk/competition/bmo)                 |
+| Art of Problem Solving BMO Forum | AoPS        | [View](https://artofproblemsolving.com/community/c3240_bmo) |
+| STEP Preparation Guide           | WyattsNotes | [View](/docs/university/admissions/step-preparation)        |
+| MAT Preparation Guide            | WyattsNotes | [View](/docs/university/admissions/mat-preparation)         |
+| Number Theory                    | WyattsNotes | [View](/docs/university/mathematics/number-theory)          |
+| Abstract Algebra                 | WyattsNotes | [View](/docs/university/mathematics/abstract-algebra)       |

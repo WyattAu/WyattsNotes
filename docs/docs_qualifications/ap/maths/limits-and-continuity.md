@@ -484,8 +484,8 @@ The general approach is:
 1. Start with $|f(x) - L|$ and try to bound it in terms of $|x - a|$.
 2. If $f$ involves products, use the "restrict delta" technique: bound each factor separately.
 3. If $f$ involves roots, rationalise and use the fact that $\sqrt{x} + \sqrt{a} \ge \sqrt{a}$.
-4. Choose $\delta = \min(\mathrm{bound, \epsilon / \mathrm{constant)$ to handle both the
-   restriction and the $\epsilon$ requirement.
+4. Choose $\delta = \min(\mathrm{bound, \epsilon / \mathrm{constant)$ to handle both the restriction
+   and the $\epsilon$ requirement.
 
 ## Continuity (CED Unit 1)
 
@@ -947,8 +947,16 @@ on self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to limits and continuity,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- quadratic equations and the discriminant
+- simultaneous equations
+- polynomial division and the factor theorem
+- partial fractions
+- binomial expansion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

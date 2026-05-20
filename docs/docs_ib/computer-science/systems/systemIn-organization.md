@@ -877,12 +877,13 @@ Would likely require a hot standby configuration.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-## Summary
+2. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-<!-- TODO: Add a summary for this topic -->
+3. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).

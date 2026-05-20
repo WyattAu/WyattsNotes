@@ -376,12 +376,13 @@ Closes #42."
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
 
-## Summary
+2. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.

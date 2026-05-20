@@ -38,8 +38,8 @@ $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \quad \math
 
 $$\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} \quad \mathrm{(Ampere{-}Maxwell\ Law)}$$
 
-Where $\rho$ is the charge density, $\mathbf{J}$ is the current density, $\varepsilon_0$ is
-the permittivity Of free space, and $\mu_0$ is the permeability of free space.
+Where $\rho$ is the charge density, $\mathbf{J}$ is the current density, $\varepsilon_0$ is the
+permittivity Of free space, and $\mu_0$ is the permeability of free space.
 
 ### 1.2 Derivation from Integral to Differential Form
 
@@ -53,8 +53,7 @@ Since this holds for any volume $V$: $\nabla \cdot \mathbf{E} = \rho / \varepsil
 
 $$\oint_C \mathbf{E} \cdot d\mathbf{l} = \int_S (\nabla \times \mathbf{E}) \cdot d\mathbf{A} = -\int_S \frac{\partial \mathbf{B}}{\partial t} \cdot d\mathbf{A}$$
 
-Since this holds for any surface $S$:
-$\nabla \times \mathbf{E} = -\partial \mathbf{B}/\partial t$.
+Since this holds for any surface $S$: $\nabla \times \mathbf{E} = -\partial \mathbf{B}/\partial t$.
 
 **Gauss's Law for Magnetism.** By the divergence theorem:
 
@@ -82,23 +81,20 @@ This is the **continuity equation**, expressing conservation of charge.
 
 ### 1.4 Boundary Conditions at Interfaces
 
-At an interface between two linear media (labelled 1 and 2) with surface normal
-$\hat{\mathbf{n}}$ Pointing from 2 into 1, Maxwell's equations impose four boundary
-conditions.
+At an interface between two linear media (labelled 1 and 2) with surface normal $\hat{\mathbf{n}}$
+Pointing from 2 into 1, Maxwell's equations impose four boundary conditions.
 
-**Normal component of $\mathbf{D}$.** Apply Gauss's law for $\mathbf{D}$ to a thin
-pillbox Straddling the interface:
+**Normal component of $\mathbf{D}$.** Apply Gauss's law for $\mathbf{D}$ to a thin pillbox
+Straddling the interface:
 
 $$\oint \mathbf{D} \cdot d\mathbf{A} = \sigma_f A \implies D_{1n} - D_{2n} = \sigma_f$$
 
-**Tangential component of $\mathbf{E}$.** Apply Faraday's law to a rectangular loop
-Perpendicular to the interface. As the loop height $\Delta h \to 0$The flux through the Loop
-vanishes:
+**Tangential component of $\mathbf{E}$.** Apply Faraday's law to a rectangular loop Perpendicular to
+the interface. As the loop height $\Delta h \to 0$The flux through the Loop vanishes:
 
 $$\oint \mathbf{E} \cdot d\mathbf{l} = 0 \implies E_{1t} = E_{2t}$$
 
-In vector form:
-$\hat{\mathbf{n}} \times (\mathbf{E}_1 - \mathbf{E}_2) = \mathbf{0}$.
+In vector form: $\hat{\mathbf{n}} \times (\mathbf{E}_1 - \mathbf{E}_2) = \mathbf{0}$.
 
 **Normal component of $\mathbf{B}$.** Apply Gauss's law for $\mathbf{B}$ to a pillbox:
 
@@ -113,8 +109,8 @@ Where $\mathbf{K}_f$ is the free surface current density.
 
 **Summary** (no free charges or currents, $\sigma_f = 0$$\mathbf{K}_f = \mathbf{0}$):
 
-| Field              | Normal component                              | Tangential component                          |
-| ------------------ | --------------------------------------------- | --------------------------------------------- |
+| Field        | Normal component                              | Tangential component                          |
+| ------------ | --------------------------------------------- | --------------------------------------------- |
 | $\mathbf{E}$ | $\varepsilon_1 E_{1n} = \varepsilon_2 E_{2n}$ | $E_{1t} = E_{2t}$                             |
 | $\mathbf{D}$ | $D_{1n} = D_{2n}$                             | $D_{1t}/\varepsilon_1 = D_{2t}/\varepsilon_2$ |
 | $\mathbf{B}$ | $\mu_1 B_{1n} = \mu_2 B_{2n}$                 | $B_{1t}/\mu_1 = B_{2t}/\mu_2$                 |
@@ -122,9 +118,9 @@ Where $\mathbf{K}_f$ is the free surface current density.
 
 ### 1.5 Worked Example: Deriving the Electromagnetic Wave Equation
 
-**Problem.** Starting from Maxwell's equations in free space
-($\rho = 0$$\mathbf{J} = \mathbf{0}$), Derive the wave equations for $\mathbf{E}$
-and $\mathbf{B}$And show that the wave speed is $c = 1/\sqrt{\mu_0 \varepsilon_0}$.
+**Problem.** Starting from Maxwell's equations in free space ($\rho = 0$$\mathbf{J} = \mathbf{0}$),
+Derive the wave equations for $\mathbf{E}$ and $\mathbf{B}$And show that the wave speed is
+$c = 1/\sqrt{\mu_0 \varepsilon_0}$.
 
 <details>
 <summary>Solution</summary>
@@ -152,8 +148,7 @@ An identical calculation, taking the curl of the Ampere-Maxwell law, yields:
 $$\boxed{\nabla^2 \mathbf{B} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{B}}{\partial t^2}}$$
 
 Comparing with the standard wave equation
-$\nabla^2 \mathbf{F} = \frac{1}{v^2}\frac{\partial^2 \mathbf{F}}{\partial t^2}$ The wave
-speed is:
+$\nabla^2 \mathbf{F} = \frac{1}{v^2}\frac{\partial^2 \mathbf{F}}{\partial t^2}$ The wave speed is:
 
 $$c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \approx 2.998 \times 10^8\ \mathrm{m/s$$
 
@@ -189,8 +184,8 @@ The field is uniform and perpendicular to the plane, pointing away from positive
 
 **Example: Uniformly charged sphere** of radius $R$ with total charge $Q$.
 
-For $r \gt R$: $\mathbf{E} = \frac{Q}{4\pi\varepsilon_0 r^2} \hat{\mathbf{r}}$
-(identical to a point charge).
+For $r \gt R$: $\mathbf{E} = \frac{Q}{4\pi\varepsilon_0 r^2} \hat{\mathbf{r}}$ (identical to a point
+charge).
 
 For $r \lt R$: $E = \frac{Qr}{4\pi\varepsilon_0 R^3}$ (linear in $r$).
 
@@ -202,9 +197,9 @@ $\nabla \times \mathbf{E} = \mathbf{0}$).
 For a point charge: $V(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0} \frac{q}{r}$ (choosing
 $V(\infty) = 0$).
 
-**Theorem 2.1.** $\nabla \times \mathbf{E} = \mathbf{0}$ in electrostatics implies
-$\mathbf{E}$ is Conservative, so the line integral
-$\int_A^B \mathbf{E} \cdot d\mathbf{l} = V(A) - V(B)$ is Path-independent.
+**Theorem 2.1.** $\nabla \times \mathbf{E} = \mathbf{0}$ in electrostatics implies $\mathbf{E}$ is
+Conservative, so the line integral $\int_A^B \mathbf{E} \cdot d\mathbf{l} = V(A) - V(B)$ is
+Path-independent.
 
 ### 2.4 Poisson's and Laplace's Equations
 
@@ -243,8 +238,8 @@ $\blacksquare$
 
 **Example: Infinite line charge** with linear charge density $\lambda$.
 
-By cylindrical symmetry, $\mathbf{E}$ points radially outward and depends only on $r$. Choose
-a Gaussian cylinder of radius $r$ and length $L$:
+By cylindrical symmetry, $\mathbf{E}$ points radially outward and depends only on $r$. Choose a
+Gaussian cylinder of radius $r$ and length $L$:
 
 $$\oint \mathbf{E} \cdot d\mathbf{A} = E \cdot 2\pi r L = \frac{\lambda L}{\varepsilon_0}$$
 
@@ -255,8 +250,7 @@ $+\lambda$And an outer conducting shell of radius $b$ carries $-\lambda$.
 
 For $r \lt a$: $\mathbf{E} = \mathbf{0}$ (conductor interior).
 
-For $a \lt r \lt b$:
-$\mathbf{E} = \frac{\lambda}{2\pi\varepsilon_0 r}\,\hat{\mathbf{r}}$.
+For $a \lt r \lt b$: $\mathbf{E} = \frac{\lambda}{2\pi\varepsilon_0 r}\,\hat{\mathbf{r}}$.
 
 For $r \gt b$: $\mathbf{E} = \mathbf{0}$ (total enclosed charge is zero).
 
@@ -267,12 +261,11 @@ $$V(a) - V(b) = -\int_a^b \mathbf{E} \cdot d\mathbf{l} = \frac{\lambda}{2\pi\var
 ### 2.7 The Uniqueness Theorem
 
 **Theorem 2.3 (Uniqueness for Dirichlet conditions).** The solution to Poisson's equation
-$\nabla^2 V = -\rho/\varepsilon_0$ in a volume $\mathcal{V}$ is unique if $V$ is specified on
-the Boundary $\mathcal{S}$.
+$\nabla^2 V = -\rho/\varepsilon_0$ in a volume $\mathcal{V}$ is unique if $V$ is specified on the
+Boundary $\mathcal{S}$.
 
 _Proof._ Suppose $V_1$ and $V_2$ both satisfy Poisson's equation with the same boundary Conditions.
-Define $U = V_1 - V_2$. Then $\nabla^2 U = 0$ in $\mathcal{V}$ and $U = 0$ on
-$\mathcal{S}$.
+Define $U = V_1 - V_2$. Then $\nabla^2 U = 0$ in $\mathcal{V}$ and $U = 0$ on $\mathcal{S}$.
 
 Apply **Green's first identity** with $\phi = \psi = U$:
 
@@ -282,15 +275,15 @@ Since $\nabla^2 U = 0$ and $U = 0$ on $\mathcal{S}$:
 
 $$\int_{\mathcal{V}} \lvert\nabla U\rvert^2\, dV = 0$$
 
-Since the integrand is non-negative, $\nabla U = \mathbf{0}$ everywhere in
-$\mathcal{V}$So $U$ is Constant. With $U = 0$ on the boundary, $U = 0$ throughout
-$\mathcal{V}$. Hence $V_1 = V_2$. $\blacksquare$
+Since the integrand is non-negative, $\nabla U = \mathbf{0}$ everywhere in $\mathcal{V}$So $U$ is
+Constant. With $U = 0$ on the boundary, $U = 0$ throughout $\mathcal{V}$. Hence $V_1 = V_2$.
+$\blacksquare$
 
 **Theorem 2.4 (Uniqueness for Neumann conditions).** The solution is unique up to an additive
 Constant when $\partial V/\partial n$ is specified on $\mathcal{S}$.
 
-_Proof._ The same argument applies, but now $\partial U/\partial n = 0$ on $\mathcal{S}$ and
-the Right-hand side of Green's identity vanishes for a different reason. We again conclude
+_Proof._ The same argument applies, but now $\partial U/\partial n = 0$ on $\mathcal{S}$ and the
+Right-hand side of Green's identity vanishes for a different reason. We again conclude
 $\nabla U = \mathbf{0}$So $U$ is constant. $\blacksquare$
 
 ### 2.8 Method of Images
@@ -395,8 +388,8 @@ approximation. $\blacksquare$
 ### 2.10 Dielectrics
 
 **Polarization.** When an external field $\mathbf{E}$ is applied to a dielectric, the material
-Develops a **polarization** $\mathbf{P}$The dipole moment per unit volume. This produces
-**bound charges**:
+Develops a **polarization** $\mathbf{P}$The dipole moment per unit volume. This produces **bound
+charges**:
 
 $$\rho_b = -\nabla \cdot \mathbf{P}, \quad \sigma_b = \mathbf{P} \cdot \hat{\mathbf{n}}$$
 
@@ -408,8 +401,8 @@ Gauss's law in terms of $\mathbf{D}$:
 
 $$\nabla \cdot \mathbf{D} = \rho_f$$
 
-Where $\rho_f$ is the free charge density. This form is useful because $\mathbf{D}$ depends
-Only on free charges, not bound charges.
+Where $\rho_f$ is the free charge density. This form is useful because $\mathbf{D}$ depends Only on
+free charges, not bound charges.
 
 **Linear dielectrics.** For an isotropic linear dielectric:
 
@@ -425,8 +418,8 @@ $$D_{1n} = D_{2n} \implies \varepsilon_1 E_{1n} = \varepsilon_2 E_{2n}$$
 
 $$E_{1t} = E_{2t}$$
 
-The tangential component of $\mathbf{E}$ is continuous, but the normal component changes. The
-angles of the field with respect to the normal satisfy
+The tangential component of $\mathbf{E}$ is continuous, but the normal component changes. The angles
+of the field with respect to the normal satisfy
 $\varepsilon_1 \tan\theta_2 = \varepsilon_2 \tan\theta_1$.
 
 <details>
@@ -486,9 +479,8 @@ $$B = \mu_0 n I \quad \mathrm{(inside), \quad B = 0 \quad \mathrm{(outside)$$
 
 ### 3.3 Magnetic Vector Potential
 
-Since $\nabla \cdot \mathbf{B} = 0$We can write
-$\mathbf{B} = \nabla \times \mathbf{A}$Where $\mathbf{A}$ is the **magnetic vector
-potential**.
+Since $\nabla \cdot \mathbf{B} = 0$We can write $\mathbf{B} = \nabla \times \mathbf{A}$Where
+$\mathbf{A}$ is the **magnetic vector potential**.
 
 In the Coulomb gauge ($\nabla \cdot \mathbf{A} = 0$), the vector potential satisfies
 
@@ -505,8 +497,8 @@ $$\mathbf{A}(\mathbf{r}) = \frac{\mu_0}{4\pi} \int \frac{\mathbf{J}(\mathbf{r}')
 **Example: Toroid.** A toroid with $N$ turns carrying current $I$ has inner radius $a$ and outer
 Radius $b$.
 
-By symmetry, $\mathbf{B}$ is tangential and constant on circular Amperian loops inside the
-Toroid. For a loop of radius $r$ ($a \lt r \lt b$):
+By symmetry, $\mathbf{B}$ is tangential and constant on circular Amperian loops inside the Toroid.
+For a loop of radius $r$ ($a \lt r \lt b$):
 
 $$B \cdot 2\pi r = \mu_0 N I \implies B = \frac{\mu_0 N I}{2\pi r}$$
 
@@ -517,9 +509,8 @@ Unlike a solenoid, the field inside a toroid is _not_ uniform --- it varies as $
 **Example: Infinite current sheet.** A sheet in the $xy$-plane carries surface current density
 $\mathbf{K} = K\,\hat{\mathbf{x}}$.
 
-By symmetry, $\mathbf{B}$ is parallel to $\pm\hat{\mathbf{y}}$ and depends only on $z$.
-Choose a rectangular Amperian loop straddling the sheet with sides parallel to
-$\hat{\mathbf{y}}$:
+By symmetry, $\mathbf{B}$ is parallel to $\pm\hat{\mathbf{y}}$ and depends only on $z$. Choose a
+rectangular Amperian loop straddling the sheet with sides parallel to $\hat{\mathbf{y}}$:
 
 $$B \cdot 2L = \mu_0 K L \implies B = \frac{\mu_0 K}{2}$$
 
@@ -529,13 +520,12 @@ $$\mathbf{B} = \begin{cases} +\frac{\mu_0 K}{2}\,\hat{\mathbf{y}} & z \gt 0 \\[4
 
 ### 3.5 Magnetic Dipole Moment
 
-A current loop carrying current $I$ enclosing area $\mathbf{a}$ has **magnetic dipole
-moment**:
+A current loop carrying current $I$ enclosing area $\mathbf{a}$ has **magnetic dipole moment**:
 
 $$\mathbf{m} = I\mathbf{a}$$
 
-For a planar loop of $N$ turns: $\mathbf{m} = NIA\,\hat{\mathbf{n}}$Where $A$ is the
-area And $\hat{\mathbf{n}}$ is the unit normal given by the right-hand rule.
+For a planar loop of $N$ turns: $\mathbf{m} = NIA\,\hat{\mathbf{n}}$Where $A$ is the area And
+$\hat{\mathbf{n}}$ is the unit normal given by the right-hand rule.
 
 **Field of a magnetic dipole** (at position $\mathbf{r}$ from the dipole):
 
@@ -567,10 +557,8 @@ The component perpendicular to the axis cancels by symmetry. The axial component
 
 $$B_z = \oint dB\,\sin\alpha = \frac{\mu_0 I}{4\pi(R^2+z^2)}\frac{R}{\sqrt{R^2+z^2}}\oint dl = \frac{\mu_0 I R^2}{2(R^2+z^2)^{3/2}}$$
 
-For $z \gg R$:
-$B_z \approx \frac{\mu_0 I R^2}{2z^3} = \frac{\mu_0}{4\pi}\frac{2\mathbf{m}}{z^3}$ Which
-matches the dipole formula with $\mathbf{m} = I\pi R^2\,\hat{\mathbf{z}}$.
-$\blacksquare$
+For $z \gg R$: $B_z \approx \frac{\mu_0 I R^2}{2z^3} = \frac{\mu_0}{4\pi}\frac{2\mathbf{m}}{z^3}$
+Which matches the dipole formula with $\mathbf{m} = I\pi R^2\,\hat{\mathbf{z}}$. $\blacksquare$
 
 </details>
 
@@ -582,9 +570,9 @@ $\frac{\mathbf{r} - \mathbf{r}'}{|\mathbf{r}-\mathbf{r}'|^3} = -\nabla\frac{1}{|
 $$\mathbf{B}(\mathbf{r}) = \frac{\mu_0}{4\pi}\int \mathbf{J}(\mathbf{r}') \times \frac{(\mathbf{r}-\mathbf{r}')}{|\mathbf{r}-\mathbf{r}'|^3}\,d^3\mathbf{r}' = -\frac{\mu_0}{4\pi}\int \mathbf{J}(\mathbf{r}') \times \nabla\frac{1}{|\mathbf{r}-\mathbf{r}'|}\,d^3\mathbf{r}'$$
 
 Using the product rule
-$\mathbf{J} \times (\nabla f) = \nabla \times (f\mathbf{J}) - f(\nabla \times \mathbf{J})$
-And noting that $\nabla \times \mathbf{J}(\mathbf{r}') = 0$ (since $\mathbf{J}$
-depends on $\mathbf{r}'$Not $\mathbf{r}$):
+$\mathbf{J} \times (\nabla f) = \nabla \times (f\mathbf{J}) - f(\nabla \times \mathbf{J})$ And
+noting that $\nabla \times \mathbf{J}(\mathbf{r}') = 0$ (since $\mathbf{J}$ depends on
+$\mathbf{r}'$Not $\mathbf{r}$):
 
 $$\mathbf{B}(\mathbf{r}) = \frac{\mu_0}{4\pi}\nabla \times \int \frac{\mathbf{J}(\mathbf{r}')}{|\mathbf{r}-\mathbf{r}'|}\,d^3\mathbf{r}'$$
 
@@ -621,8 +609,8 @@ This matches the Ampere's law result. $\blacksquare$
 
 ### 3.7 Magnetization and the H Field
 
-**Magnetization.** The **magnetization** $\mathbf{M}$ is the magnetic dipole moment per unit
-volume. It produces **bound currents**:
+**Magnetization.** The **magnetization** $\mathbf{M}$ is the magnetic dipole moment per unit volume.
+It produces **bound currents**:
 
 $$\mathbf{J}_b = \nabla \times \mathbf{M}, \quad \mathbf{K}_b = \mathbf{M} \times \hat{\mathbf{n}}$$
 
@@ -657,8 +645,8 @@ Atomic dipoles align partially with the applied field. Examples: aluminium, plat
 **Ferromagnetic materials** ($\chi_m \gg 1$): Strongly attracted by magnetic fields. Exhibit
 **hysteresis**: the magnetization depends on the history of the applied field.
 
-The **hysteresis loop** traces $\mathbf{B}$ vs $\mathbf{H}$ as the external field
-cycles. Key Features:
+The **hysteresis loop** traces $\mathbf{B}$ vs $\mathbf{H}$ as the external field cycles. Key
+Features:
 
 - **Remanence** $B_r$: the residual field when $H = 0$.
 - **Coercivity** $H_c$: the field required to demagnetize the material.
@@ -667,11 +655,11 @@ cycles. Key Features:
 For soft ferromagnets (iron, nickel), $H_c$ is small and the hysteresis loop is narrow. For hard
 ferromagnets (permanent magnets), $H_c$ is large.
 
-:::caution Common Pitfall The magnetic field $\mathbf{B}$ is the fundamental quantity;
-$\mathbf{H}$ is an auxiliary field Convenient for problems with free currents. The names
-"magnetic field" and "magnetic field Intensity" vary across textbooks --- always check which symbol
-a given text associates with Which name. In this document, $\mathbf{B}$ is the magnetic field
-and $\mathbf{H}$ is the Auxiliary H field. :::
+:::caution Common Pitfall The magnetic field $\mathbf{B}$ is the fundamental quantity; $\mathbf{H}$
+is an auxiliary field Convenient for problems with free currents. The names "magnetic field" and
+"magnetic field Intensity" vary across textbooks --- always check which symbol a given text
+associates with Which name. In this document, $\mathbf{B}$ is the magnetic field and $\mathbf{H}$ is
+the Auxiliary H field. :::
 
 ## 4. Electrodynamics
 
@@ -692,8 +680,8 @@ The induced EMF: $\mathcal{E} = -\frac{d\Phi_B}{dt} = \pi R^2 B_0 \omega \sin(\o
 
 ### 4.2 Displacement Current
 
-Maxwell's key insight: Ampere's law $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$ is
-inconsistent with The continuity equation. Adding the **displacement current** term
+Maxwell's key insight: Ampere's law $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$ is inconsistent
+with The continuity equation. Adding the **displacement current** term
 $\mu_0 \varepsilon_0 \partial \mathbf{E}/\partial t$ Resolves this:
 
 $$\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}$$
@@ -732,8 +720,8 @@ geometry or position changes the flux.
 <summary>Example: Rod sliding on rails</summary>
 
 A conducting rod of length $L$ slides with velocity $v$ along two parallel rails connected by A
-resistor $R$In a uniform magnetic field $\mathbf{B} = B\,\hat{\mathbf{z}}$ perpendicular
-to The rail plane.
+resistor $R$In a uniform magnetic field $\mathbf{B} = B\,\hat{\mathbf{z}}$ perpendicular to The rail
+plane.
 
 The motional EMF:
 
@@ -755,8 +743,8 @@ $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$. Taking the divergence:
 
 $$\nabla \cdot (\nabla \times \mathbf{B}) = 0 = \mu_0 \nabla \cdot \mathbf{J}$$
 
-This requires $\nabla \cdot \mathbf{J} = 0$ at all times, which contradicts the continuity
-Equation $\nabla \cdot \mathbf{J} = -\partial\rho/\partial t$ whenever charge density changes.
+This requires $\nabla \cdot \mathbf{J} = 0$ at all times, which contradicts the continuity Equation
+$\nabla \cdot \mathbf{J} = -\partial\rho/\partial t$ whenever charge density changes.
 
 **Resolution.** Use Gauss's law to rewrite the continuity equation:
 
@@ -781,8 +769,8 @@ $\mathbf{J} = 0$ but $\partial\mathbf{E}/\partial t \neq 0$.
 <summary>Example: Loop falling through a magnetic field</summary>
 
 A rectangular loop of width $w$Height $\ell$And resistance $R$ falls vertically under Gravity
-through a region of uniform magnetic field $\mathbf{B} = B\,\hat{\mathbf{x}}$ confined
-To a horizontal strip of height $h$.
+through a region of uniform magnetic field $\mathbf{B} = B\,\hat{\mathbf{x}}$ confined To a
+horizontal strip of height $h$.
 
 As the loop enters the field (top edge in, bottom edge out), the flux is $\Phi_B = Bwx$ where $x$ is
 the distance the top edge has penetrated.
@@ -838,8 +826,7 @@ And $\nabla \cdot \mathbf{E} = 0$:
 
 $$\nabla^2 \mathbf{E} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2}$$
 
-Similarly:
-$\nabla^2 \mathbf{B} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{B}}{\partial t^2}$.
+Similarly: $\nabla^2 \mathbf{B} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{B}}{\partial t^2}$.
 
 These are **wave equations** with wave speed
 $c = 1/\sqrt{\mu_0 \varepsilon_0} \approx 3 \times 10^8$ m/s.
@@ -848,21 +835,20 @@ $c = 1/\sqrt{\mu_0 \varepsilon_0} \approx 3 \times 10^8$ m/s.
 
 **Theorem 5.1.** Electromagnetic waves in free space are:
 
-1. **Transverse**: $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to the direction of
-   propagation.
+1. **Transverse**: $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to the direction of propagation.
 2. **Mutually perpendicular**: $\mathbf{E} \perp \mathbf{B}$.
 3. **In phase**: $E = cB$ at every point.
 4. **Linearly polarised** (; other polarisations are superpositions).
 
 **Energy.** The energy density of an EM wave is $u = \frac{1}{2}(\varepsilon_0 E^2 + B^2/\mu_0)$.
 
-The **Poynting vector** $\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$
-represents the energy Flux (power per unit area).
+The **Poynting vector** $\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$ represents the
+energy Flux (power per unit area).
 
 ### 5.3 Worked Example
 
-**Problem.** Show that $\mathbf{E} = E_0 \cos(kz - \omega t)\,\hat{\mathbf{x}}$
-satisfies the wave Equation and find the associated $\mathbf{B}$ field.
+**Problem.** Show that $\mathbf{E} = E_0 \cos(kz - \omega t)\,\hat{\mathbf{x}}$ satisfies the wave
+Equation and find the associated $\mathbf{B}$ field.
 
 _Solution._
 $\nabla^2 \mathbf{E} = \frac{\partial^2 E_x}{\partial z^2}\hat{\mathbf{x}} = -k^2 E_0 \cos(kz - \omega t)\,\hat{\mathbf{x}}$.
@@ -871,8 +857,7 @@ $\frac{\partial^2 \mathbf{E}}{\partial t^2} = -\omega^2 E_0 \cos(kz - \omega t)\
 
 The wave equation requires $k^2 = \mu_0 \varepsilon_0 \omega^2$I.e., $\omega/k = c$.
 
-From Faraday's law:
-$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$.
+From Faraday's law: $\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$.
 
 $(\nabla \times \mathbf{E})_y = -\frac{\partial E_x}{\partial z} = k E_0 \sin(kz - \omega t)$
 
@@ -888,8 +873,7 @@ Poynting's theorem is the statement of energy conservation for electromagnetic f
 
 $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}, \quad \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}$$
 
-Compute
-$\mathbf{B} \cdot (\nabla \times \mathbf{E}) - \mathbf{E} \cdot (\nabla \times \mathbf{B})$:
+Compute $\mathbf{B} \cdot (\nabla \times \mathbf{E}) - \mathbf{E} \cdot (\nabla \times \mathbf{B})$:
 
 $$\mathbf{B} \cdot (\nabla \times \mathbf{E}) = -\mathbf{B} \cdot \frac{\partial \mathbf{B}}{\partial t} = -\frac{\partial}{\partial t}\left(\frac{B^2}{2}\right)$$
 
@@ -904,9 +888,8 @@ Dividing by $\mu_0$ and rearranging:
 
 $$\boxed{-\nabla \cdot \mathbf{S} = \mathbf{J} \cdot \mathbf{E} + \frac{\partial u}{\partial t}}$$
 
-Where $\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$ is the Poynting
-vector and $u = \frac{1}{2}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right)$ is the energy
-density.
+Where $\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$ is the Poynting vector and
+$u = \frac{1}{2}\left(\varepsilon_0 E^2 + \frac{B^2}{\mu_0}\right)$ is the energy density.
 
 **Interpretation:** The rate of energy leaving a volume equals the work done on charges plus The
 rate of increase of field energy. In integral form:
@@ -939,15 +922,15 @@ absorber. $\blacksquare$
 <details>
 <summary>Example: Polarization of EM waves</summary>
 
-**Linear polarization.** $\mathbf{E} = E_0\cos(kz - \omega t)\,\hat{\mathbf{x}}$. The
-field Oscillates in a fixed direction.
+**Linear polarization.** $\mathbf{E} = E_0\cos(kz - \omega t)\,\hat{\mathbf{x}}$. The field
+Oscillates in a fixed direction.
 
 **Circular polarization.** Two orthogonal linear polarizations with a phase difference of $\pi/2$:
 
 $$\mathbf{E} = E_0\cos(kz - \omega t)\,\hat{\mathbf{x}} \pm E_0\sin(kz - \omega t)\,\hat{\mathbf{y}}$$
 
-The tip of $\mathbf{E}$ traces a circle. The $+$ sign gives left-circular polarization (LCP)
-and the $-$ sign gives right-circular polarization (RCP).
+The tip of $\mathbf{E}$ traces a circle. The $+$ sign gives left-circular polarization (LCP) and the
+$-$ sign gives right-circular polarization (RCP).
 
 **Elliptical polarization.** The general case with arbitrary amplitudes and phase:
 
@@ -959,13 +942,13 @@ $\blacksquare$
 
 ### 5.6 EM Waves in Conductors
 
-In a conductor with conductivity $\sigma$Ohm's law gives
-$\mathbf{J} = \sigma\mathbf{E}$. Substituting into the Ampere-Maxwell law:
+In a conductor with conductivity $\sigma$Ohm's law gives $\mathbf{J} = \sigma\mathbf{E}$.
+Substituting into the Ampere-Maxwell law:
 
 $$\nabla \times \mathbf{B} = \mu_0\sigma\mathbf{E} + \mu_0\varepsilon_0\frac{\partial \mathbf{E}}{\partial t}$$
 
-For a monochromatic wave $\mathbf{E} = \mathbf{E}_0\,e^{-i\omega t}$This leads to a
-complex Wave number:
+For a monochromatic wave $\mathbf{E} = \mathbf{E}_0\,e^{-i\omega t}$This leads to a complex Wave
+number:
 
 $$\tilde{k}^2 = \mu_0\varepsilon_0\omega^2 + i\mu_0\sigma\omega$$
 
@@ -1042,8 +1025,8 @@ Kinematic quantity. :::
 
 An oscillating electric dipole is the simplest source of electromagnetic radiation.
 
-Consider a dipole $\mathbf{p}(t) = p_0\cos(\omega t)\,\hat{\mathbf{z}}$. In the
-**radiation zone** ($r \gg \lambda$), the fields are:
+Consider a dipole $\mathbf{p}(t) = p_0\cos(\omega t)\,\hat{\mathbf{z}}$. In the **radiation zone**
+($r \gg \lambda$), the fields are:
 
 $$\mathbf{E} = -\frac{\mu_0 p_0 \omega^2}{4\pi}\frac{\sin\theta}{r}\cos[\omega(t - r/c)]\,\hat{\boldsymbol{\theta}}$$
 
@@ -1100,15 +1083,15 @@ The potentials are not unique. The transformation
 
 $$V' = V - \frac{\partial \chi}{\partial t}, \quad \mathbf{A}' = \mathbf{A} + \nabla \chi$$
 
-For any scalar function $\chi(\mathbf{r}, t)$ leaves $\mathbf{E}$ and $\mathbf{B}$
-unchanged. This is a **gauge transformation**.
+For any scalar function $\chi(\mathbf{r}, t)$ leaves $\mathbf{E}$ and $\mathbf{B}$ unchanged. This
+is a **gauge transformation**.
 
 **Common gauges:**
 
 - **Coulomb gauge:** $\nabla \cdot \mathbf{A} = 0$. Useful in magnetostatics.
 - **Lorenz gauge:**
-  $\nabla \cdot \mathbf{A} + \mu_0 \varepsilon_0 \frac{\partial V}{\partial t} = 0$.
-  Simplifies the wave equations for $V$ and $\mathbf{A}$:
+  $\nabla \cdot \mathbf{A} + \mu_0 \varepsilon_0 \frac{\partial V}{\partial t} = 0$. Simplifies the
+  wave equations for $V$ and $\mathbf{A}$:
 
 $$\nabla^2 V - \mu_0 \varepsilon_0 \frac{\partial^2 V}{\partial t^2} = -\frac{\rho}{\varepsilon_0}$$
 
@@ -1120,8 +1103,8 @@ spelling is "Lorenz gauge." :::
 
 ### 6.3 Derivation of the Lorenz Gauge Condition
 
-Starting from the definitions $\mathbf{E} = -\nabla V - \partial\mathbf{A}/\partial t$
-and $\mathbf{B} = \nabla \times \mathbf{A}$Substitute into Gauss's law:
+Starting from the definitions $\mathbf{E} = -\nabla V - \partial\mathbf{A}/\partial t$ and
+$\mathbf{B} = \nabla \times \mathbf{A}$Substitute into Gauss's law:
 
 $$\nabla \cdot \mathbf{E} = -\nabla^2 V - \frac{\partial}{\partial t}(\nabla \cdot \mathbf{A}) = \frac{\rho}{\varepsilon_0}$$
 
@@ -1152,8 +1135,8 @@ $$\nabla^2 V - \mu_0\varepsilon_0\frac{\partial^2 V}{\partial t^2} = -\frac{\rho
 $$\nabla^2 \mathbf{A} - \mu_0\varepsilon_0\frac{\partial^2 \mathbf{A}}{\partial t^2} = -\mu_0\mathbf{J}$$
 
 Both $V$ and $\mathbf{A}$ satisfy wave equations with sources $\rho/\varepsilon_0$ and
-$\mu_0\mathbf{J}$ And both propagate at speed $c$. The Lorenz gauge makes manifest the
-relativistic covariance Of the theory (Section 7).
+$\mu_0\mathbf{J}$ And both propagate at speed $c$. The Lorenz gauge makes manifest the relativistic
+covariance Of the theory (Section 7).
 
 ### 6.4 Retarded Potentials
 
@@ -1167,8 +1150,8 @@ $$\mathbf{A}(\mathbf{r}, t) = \frac{\mu_0}{4\pi}\int \frac{\mathbf{J}(\mathbf{r}
 
 **Physical interpretation.** Information about changes in the source travels outward at speed $c$.
 The field at point $\mathbf{r}$ and time $t$ is determined by the source configuration at the
-Earlier time $t_r$ when a light signal would have left $\mathbf{r}'$ to arrive at
-$\mathbf{r}$ at Time $t$.
+Earlier time $t_r$ when a light signal would have left $\mathbf{r}'$ to arrive at $\mathbf{r}$ at
+Time $t$.
 
 <details>
 <summary>Verification that retarded potentials satisfy the wave equation</summary>
@@ -1184,9 +1167,8 @@ through $t_r$):
 
 $$\square^2 V = \frac{1}{4\pi\varepsilon_0}\int \left[\frac{\square^2[\rho]}{R}\right] d^3\mathbf{r}'$$
 
-The key identity is
-$\square^2(f(t_r)/R) = -4\pi f(t)\,\delta^3(\mathbf{r} - \mathbf{r}')$Which Follows from
-the fact that $\nabla^2(1/R) = -4\pi\delta^3(\mathbf{r} - \mathbf{r}')$ and that the
+The key identity is $\square^2(f(t_r)/R) = -4\pi f(t)\,\delta^3(\mathbf{r} - \mathbf{r}')$Which
+Follows from the fact that $\nabla^2(1/R) = -4\pi\delta^3(\mathbf{r} - \mathbf{r}')$ and that the
 Time derivatives cancel the $1/R$ propagation effects. Therefore:
 
 $$\square^2 V = -\frac{1}{\varepsilon_0}\int \rho(\mathbf{r}', t)\,\delta^3(\mathbf{r} - \mathbf{r}')\,d^3\mathbf{r}' = -\frac{\rho(\mathbf{r}, t)}{\varepsilon_0}$$
@@ -1197,9 +1179,8 @@ This confirms that $V$ satisfies the wave equation. $\blacksquare$
 
 ### 6.5 Lienard-Wiechert Potentials
 
-For a **moving point charge** $q$ following trajectory $\mathbf{r}_s(t)$The retarded
-potentials Cannot be evaluated naively because the retarded time $t_r$ satisfies a non-trivial
-equation:
+For a **moving point charge** $q$ following trajectory $\mathbf{r}_s(t)$The retarded potentials
+Cannot be evaluated naively because the retarded time $t_r$ satisfies a non-trivial equation:
 
 $$c(t - t_r) = \lvert\mathbf{r} - \mathbf{r}_s(t_r)\rvert$$
 
@@ -1207,10 +1188,8 @@ The **Lienard-Wiechert potentials** are the exact solutions:
 
 $$V(\mathbf{r}, t) = \frac{q}{4\pi\varepsilon_0}\frac{1}{(\kappa R)}\bigg|_{t_r}, \quad \mathbf{A}(\mathbf{r}, t) = \frac{q\mathbf{v}}{4\pi\varepsilon_0 c^2}\frac{1}{(\kappa R)}\bigg|_{t_r}$$
 
-Where
-$\mathbf{R} = \mathbf{r} - \mathbf{r}_s(t_r)$$R = \lvert\mathbf{R}\rvert$
-$\mathbf{v} = \dot{\mathbf{r}}_s(t_r)$And
-$\kappa = 1 - \hat{\mathbf{R}} \cdot \mathbf{v}/c$.
+Where $\mathbf{R} = \mathbf{r} - \mathbf{r}_s(t_r)$$R = \lvert\mathbf{R}\rvert$
+$\mathbf{v} = \dot{\mathbf{r}}_s(t_r)$And $\kappa = 1 - \hat{\mathbf{R}} \cdot \mathbf{v}/c$.
 
 The factor $\kappa$ corrects for the **Doppler effect**: when the charge moves toward the
 Observation point, the radiation is compressed (higher density of field lines).
@@ -1292,8 +1271,8 @@ $$\partial_\mu A^\mu = 0$$
 
 ### 7.3 The Electromagnetic Field Tensor
 
-The six components of $\mathbf{E}$ and $\mathbf{B}$ are unified in the **antisymmetric
-field Tensor** $F^{\mu\nu}$Defined by:
+The six components of $\mathbf{E}$ and $\mathbf{B}$ are unified in the **antisymmetric field
+Tensor** $F^{\mu\nu}$Defined by:
 
 $$F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$$
 
@@ -1317,9 +1296,8 @@ $\mathbf{E}/c \to -\mathbf{B}$$\mathbf{B} \to \mathbf{E}/c$.
 
 $$K^\mu = \frac{dp^\mu}{d\tau} = qF^{\mu\nu}U_\nu$$
 
-The spatial components reduce to
-$\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})$ And the time
-component gives the power equation $dE/dt = q\mathbf{E} \cdot \mathbf{v}$.
+The spatial components reduce to $\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})$ And the
+time component gives the power equation $dE/dt = q\mathbf{E} \cdot \mathbf{v}$.
 
 ### 7.4 Invariance of Maxwell's Equations
 
@@ -1352,8 +1330,8 @@ This is Gauss's law, using $c^2 = 1/(\mu_0\varepsilon_0)$. $\blacksquare$
 
 </details>
 
-**Field transformations.** Under a Lorentz boost with velocity
-$\mathbf{v} = v\,\hat{\mathbf{x}}$ The fields transform as:
+**Field transformations.** Under a Lorentz boost with velocity $\mathbf{v} = v\,\hat{\mathbf{x}}$
+The fields transform as:
 
 $$E'_x = E_x, \quad E'_y = \gamma(E_y - vB_z), \quad E'_z = \gamma(E_z + vB_y)$$
 
@@ -1368,18 +1346,16 @@ $$F_{\mu\nu}F^{\mu\nu} = 2\!\left(B^2 - \frac{E^2}{c^2}\right), \quad F_{\mu\nu}
 
 These invariants classify electromagnetic fields:
 
-- If $E^2 \gt c^2 B^2$ in some frame, there exists a frame where
-  $\mathbf{B} = \mathbf{0}$ (purely electric).
-- If $c^2 B^2 \gt E^2$There exists a frame where $\mathbf{E} = \mathbf{0}$ (purely
-  magnetic).
-- If $\mathbf{E} \cdot \mathbf{B} = 0$ and $E = cB$The field is a null field
-  (electromagnetic wave).
+- If $E^2 \gt c^2 B^2$ in some frame, there exists a frame where $\mathbf{B} = \mathbf{0}$ (purely
+  electric).
+- If $c^2 B^2 \gt E^2$There exists a frame where $\mathbf{E} = \mathbf{0}$ (purely magnetic).
+- If $\mathbf{E} \cdot \mathbf{B} = 0$ and $E = cB$The field is a null field (electromagnetic wave).
 
 ## 8. Problem Set
 
 **Problem 1.** Starting from Maxwell's equations in differential form, derive the continuity
-Equation $\nabla \cdot \mathbf{J} + \partial\rho/\partial t = 0$. Explain why this result
-Requires the displacement current term.
+Equation $\nabla \cdot \mathbf{J} + \partial\rho/\partial t = 0$. Explain why this result Requires
+the displacement current term.
 
 <details>
 <summary>Solution</summary>
@@ -1395,33 +1371,30 @@ $$0 = \mu_0\nabla \cdot \mathbf{J} + \mu_0\varepsilon_0\frac{\partial}{\partial 
 
 $$\nabla \cdot \mathbf{J} + \frac{\partial\rho}{\partial t} = 0$$
 
-Without the displacement current term, we would obtain $\nabla \cdot \mathbf{J} = 0$Which
-Violates charge conservation whenever $\partial\rho/\partial t \neq 0$ (e.g., inside a Charging
-capacitor).
+Without the displacement current term, we would obtain $\nabla \cdot \mathbf{J} = 0$Which Violates
+charge conservation whenever $\partial\rho/\partial t \neq 0$ (e.g., inside a Charging capacitor).
 
 _Cross-reference:_ Section 1.3, Section 4.5.
 
 </details>
 
 **Problem 2.** A point charge $q$ is placed at the centre of a dielectric sphere of radius $R$ And
-permittivity $\varepsilon$. Find $\mathbf{D}$$\mathbf{E}$And $\mathbf{P}$
-everywhere. Determine the bound surface charge density.
+permittivity $\varepsilon$. Find $\mathbf{D}$$\mathbf{E}$And $\mathbf{P}$ everywhere. Determine the
+bound surface charge density.
 
 <details>
 <summary>Solution</summary>
 
-By spherical symmetry, $\mathbf{D}$ is radial. Use Gauss's law for $\mathbf{D}$ with a
-Spherical Gaussian surface of radius $r$:
+By spherical symmetry, $\mathbf{D}$ is radial. Use Gauss's law for $\mathbf{D}$ with a Spherical
+Gaussian surface of radius $r$:
 
-For $r \lt R$:
-$D \cdot 4\pi r^2 = q \implies \mathbf{D} = \frac{q}{4\pi r^2}\,\hat{\mathbf{r}}$.
+For $r \lt R$: $D \cdot 4\pi r^2 = q \implies \mathbf{D} = \frac{q}{4\pi r^2}\,\hat{\mathbf{r}}$.
 
 $\mathbf{E}_{\mathrm{in} = \frac{\mathbf{D}}{\varepsilon} = \frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{r}}$.
 
 $\mathbf{P} = \varepsilon_0\chi_e\mathbf{E}_{\mathrm{in} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{r}}$.
 
-For $r \gt R$:
-$D \cdot 4\pi r^2 = q \implies \mathbf{D} = \frac{q}{4\pi r^2}\,\hat{\mathbf{r}}$.
+For $r \gt R$: $D \cdot 4\pi r^2 = q \implies \mathbf{D} = \frac{q}{4\pi r^2}\,\hat{\mathbf{r}}$.
 
 $\mathbf{E}_{\mathrm{out} = \frac{\mathbf{D}}{\varepsilon_0} = \frac{q}{4\pi\varepsilon_0 r^2}\,\hat{\mathbf{r}}$.
 
@@ -1431,8 +1404,8 @@ Bound surface charge:
 $\sigma_b = \mathbf{P}\cdot\hat{\mathbf{r}}\big|_{r=R} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon R^2}$.
 
 Bound volume charge:
-$\rho_b = -\nabla \cdot \mathbf{P} = -\frac{1}{r^2}\frac{\partial}{\partial r}(r^2 P_r) = 0$
-for $r \lt R$.
+$\rho_b = -\nabla \cdot \mathbf{P} = -\frac{1}{r^2}\frac{\partial}{\partial r}(r^2 P_r) = 0$ for
+$r \lt R$.
 
 _Cross-reference:_ Section 2.10.
 
@@ -1444,8 +1417,8 @@ density $\sigma$. Find the electric field everywhere.
 <details>
 <summary>Solution</summary>
 
-By cylindrical symmetry, $\mathbf{E}$ is radial and depends only on $r$. Use a Gaussian
-Cylinder of radius $r$ and length $L$.
+By cylindrical symmetry, $\mathbf{E}$ is radial and depends only on $r$. Use a Gaussian Cylinder of
+radius $r$ and length $L$.
 
 For $r \lt R$: no charge enclosed, so $\mathbf{E} = \mathbf{0}$.
 
@@ -1469,8 +1442,7 @@ Find $V(r)$ everywhere.
 <details>
 <summary>Solution</summary>
 
-By spherical symmetry, $\mathbf{E}$ is radial. Use Gauss's law with spherical Gaussian
-Surfaces.
+By spherical symmetry, $\mathbf{E}$ is radial. Use Gauss's law with spherical Gaussian Surfaces.
 
 $r \lt a$: $\mathbf{E} = \mathbf{0}$ (conductor interior), so $V = V_a$ (constant).
 
@@ -1483,9 +1455,8 @@ $b \lt r \lt c$: $\mathbf{E} = \mathbf{0}$ (conductor), so $V = V_b$ (constant).
 
 $V_b = \frac{Q}{4\pi\varepsilon_0}\!\left(\frac{1}{b} - \frac{1}{a}\right) + V_a$.
 
-$r \gt c$:
-$E \cdot 4\pi r^2 = (Q - Q)/\varepsilon_0 = 0 \implies \mathbf{E} = \mathbf{0}$So
-$V = 0$ (choosing $V(\infty) = 0$).
+$r \gt c$: $E \cdot 4\pi r^2 = (Q - Q)/\varepsilon_0 = 0 \implies \mathbf{E} = \mathbf{0}$So $V = 0$
+(choosing $V(\infty) = 0$).
 
 Since $V_c = 0$ and $V_c = V_b$ (same conductor), $V_b = 0$:
 
@@ -1534,15 +1505,15 @@ _Cross-reference:_ Section 2.4, Section 2.7.
 </details>
 
 **Problem 6.** Prove the uniqueness theorem for Neumann boundary conditions: the solution to
-$\nabla^2 V = -\rho/\varepsilon_0$ in a volume $\mathcal{V}$ is unique up to an additive
-Constant when $\partial V/\partial n$ is specified on $\mathcal{S}$.
+$\nabla^2 V = -\rho/\varepsilon_0$ in a volume $\mathcal{V}$ is unique up to an additive Constant
+when $\partial V/\partial n$ is specified on $\mathcal{S}$.
 
 <details>
 <summary>Solution</summary>
 
 Suppose $V_1$ and $V_2$ both satisfy Poisson's equation with the same Neumann boundary Condition
-$\partial V_1/\partial n = \partial V_2/\partial n$ on $\mathcal{S}$. Define $U = V_1 - V_2$.
-Then $\nabla^2 U = 0$ in $\mathcal{V}$ and $\partial U/\partial n = 0$ on $\mathcal{S}$.
+$\partial V_1/\partial n = \partial V_2/\partial n$ on $\mathcal{S}$. Define $U = V_1 - V_2$. Then
+$\nabla^2 U = 0$ in $\mathcal{V}$ and $\partial U/\partial n = 0$ on $\mathcal{S}$.
 
 Apply Green's first identity with $\phi = \psi = U$:
 
@@ -1607,8 +1578,7 @@ The dipole potential:
 
 $$V_1(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0}\frac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^2}$$
 
-In the $xy$-plane,
-$\hat{\mathbf{r}} = \cos\phi\,\hat{\mathbf{x}} + \sin\phi\,\hat{\mathbf{y}}$ So
+In the $xy$-plane, $\hat{\mathbf{r}} = \cos\phi\,\hat{\mathbf{x}} + \sin\phi\,\hat{\mathbf{y}}$ So
 $\mathbf{p}\cdot\hat{\mathbf{r}} = qd\,\hat{\mathbf{z}}\cdot\hat{\mathbf{r}} = 0$.
 
 Therefore $V_1 = 0$ in the $xy$-plane. The first non-zero contribution comes from the Quadrupole
@@ -1619,14 +1589,14 @@ _Cross-reference:_ Section 2.9.
 </details>
 
 **Problem 9.** A dielectric slab of permittivity $\varepsilon$ and thickness $d$ is inserted Between
-the plates of a parallel-plate capacitor with plate separation $D \gt d$ and plate Area
-$A$Carrying free charge $\pm Q$. Find the capacitance.
+the plates of a parallel-plate capacitor with plate separation $D \gt d$ and plate Area $A$Carrying
+free charge $\pm Q$. Find the capacitance.
 
 <details>
 <summary>Solution</summary>
 
-Let the plates be at $x = 0$ and $x = D$With the slab occupying $0 \lt x \lt d$. Since $Q$ is
-fixed, $D_n = \sigma_f = Q/A$ is the same in both regions.
+Let the plates be at $x = 0$ and $x = D$With the slab occupying $0 \lt x \lt d$. Since $Q$ is fixed,
+$D_n = \sigma_f = Q/A$ is the same in both regions.
 
 In the dielectric ($0 \lt x \lt d$): $E_1 = D/\varepsilon = Q/(\varepsilon A)$.
 
@@ -1655,8 +1625,7 @@ $I$ using the Biot-Savart law.
 
 By symmetry, each side contributes equally. Consider one side from $(a/2, -a/2, 0)$ to
 $(a/2, a/2, 0)$. For this side, $d\mathbf{l} = dy\,\hat{\mathbf{y}}$ and
-$\mathbf{r} = (a/2)\hat{\mathbf{x}} - y\hat{\mathbf{y}}$So
-$r = \sqrt{(a/2)^2 + y^2}$.
+$\mathbf{r} = (a/2)\hat{\mathbf{x}} - y\hat{\mathbf{y}}$So $r = \sqrt{(a/2)^2 + y^2}$.
 
 $$d\mathbf{B} = \frac{\mu_0 I}{4\pi}\frac{d\mathbf{l} \times \mathbf{r}}{r^3} = \frac{\mu_0 I}{4\pi}\frac{dy\,\hat{\mathbf{y}} \times [(a/2)\hat{\mathbf{x}} - y\hat{\mathbf{y}}]}{r^3}$$
 
@@ -1712,9 +1681,9 @@ dipole field for $z \gg R$.
 
 The magnetic dipole moment: $\mathbf{m} = I\pi R^2\,\hat{\mathbf{z}}$.
 
-From the Biot-Savart law, every element $d\mathbf{l}$ is perpendicular to
-$\hat{\mathbf{r}}$ So $d\mathbf{B} = \frac{\mu_0 I}{4\pi}\frac{dl}{R^2+z^2}$. By
-symmetry, only the axial component Survives:
+From the Biot-Savart law, every element $d\mathbf{l}$ is perpendicular to $\hat{\mathbf{r}}$ So
+$d\mathbf{B} = \frac{\mu_0 I}{4\pi}\frac{dl}{R^2+z^2}$. By symmetry, only the axial component
+Survives:
 
 $$B_z = \frac{\mu_0 I}{4\pi(R^2+z^2)}\frac{R}{\sqrt{R^2+z^2}} \cdot 2\pi R = \frac{\mu_0 I R^2}{2(R^2+z^2)^{3/2}}$$
 
@@ -1733,14 +1702,13 @@ _Cross-reference:_ Section 3.5.
 </details>
 
 **Problem 13.** A long straight wire along the $z$-axis carries current $I$. Find the vector
-Potential $\mathbf{A}$ and verify that $\nabla \times \mathbf{A}$ gives the correct
-$\mathbf{B}$.
+Potential $\mathbf{A}$ and verify that $\nabla \times \mathbf{A}$ gives the correct $\mathbf{B}$.
 
 <details>
 <summary>Solution</summary>
 
-By cylindrical symmetry, $\mathbf{A}$ can only depend on $s$ (the radial distance) and must
-Point along $\hat{\mathbf{z}}$ (parallel to the current).
+By cylindrical symmetry, $\mathbf{A}$ can only depend on $s$ (the radial distance) and must Point
+along $\hat{\mathbf{z}}$ (parallel to the current).
 
 $$\mathbf{A}(s) = -\frac{\mu_0 I}{2\pi}\ln\!\left(\frac{s}{s_0}\right)\hat{\mathbf{z}}$$
 
@@ -1761,9 +1729,9 @@ _Cross-reference:_ Section 3.3, Section 3.6.
 
 </details>
 
-**Problem 14.** An iron ring of mean radius $R = 10$ cm, cross-sectional area
-$A = 4\ \mathrm{cm^2$ And relative permeability $\mu_r = 500$ has $N = 200$ turns carrying current
-$I = 2$ A. Find $B$$H$$M$And the total flux through the ring.
+**Problem 14.** An iron ring of mean radius $R = 10$ cm, cross-sectional area $A = 4\ \mathrm{cm^2$
+And relative permeability $\mu_r = 500$ has $N = 200$ turns carrying current $I = 2$ A. Find
+$B$$H$$M$And the total flux through the ring.
 
 <details>
 <summary>Solution</summary>
@@ -1812,8 +1780,8 @@ _Cross-reference:_ Section 4.1, Section 4.4.
 </details>
 
 **Problem 16.** A plane electromagnetic wave in vacuum has
-$\mathbf{E} = 100\cos(kz - \omega t)\,\hat{\mathbf{x}}$ V/m. Find $B_0$The time-averaged
-intensity, and the radiation pressure on a perfectly absorbing Surface.
+$\mathbf{E} = 100\cos(kz - \omega t)\,\hat{\mathbf{x}}$ V/m. Find $B_0$The time-averaged intensity,
+and the radiation pressure on a perfectly absorbing Surface.
 
 <details>
 <summary>Solution</summary>
@@ -2004,8 +1972,7 @@ A non-relativistic charge $q$ undergoing acceleration $\mathbf{a}$ radiates powe
 
 $$P = \frac{q^2 a^2}{6\pi\varepsilon_0 c^3}$$
 
-For an oscillating dipole $\mathbf{p} = q\mathbf{d}\cos\omega t$ with acceleration
-$a = \omega^2 d$:
+For an oscillating dipole $\mathbf{p} = q\mathbf{d}\cos\omega t$ with acceleration $a = \omega^2 d$:
 
 $$P = \frac{q^2 \omega^4 d^2}{12\pi\varepsilon_0 c^3} = \frac{\omega^4 p_0^2}{12\pi\varepsilon_0 c^3}$$
 
@@ -2037,8 +2004,8 @@ The radiation pattern is toroidal (doughnut-shaped), with zero radiation along t
 
 ### 10.3 Relativistic Radiation: Liénard--Wiechert Potentials
 
-For a relativistic charge with velocity $\boldsymbol{\beta} = \mathbf{v}/c$ and
-acceleration $\dot{\boldsymbol{\beta}}$:
+For a relativistic charge with velocity $\boldsymbol{\beta} = \mathbf{v}/c$ and acceleration
+$\dot{\boldsymbol{\beta}}$:
 
 $$P = \frac{q^2}{6\pi\varepsilon_0 c}\gamma^6\left[(\dot{\boldsymbol{\beta}})^2 - (\boldsymbol{\beta} \times \dot{\boldsymbol{\beta}})^2\right]$$
 
@@ -2046,8 +2013,7 @@ For linear acceleration ($\boldsymbol{\beta} \parallel \dot{\boldsymbol{\beta}}$
 
 $$P = \frac{q^2}{6\pi\varepsilon_0 c}\gamma^6\dot{\beta}^2$$
 
-For circular acceleration ($\boldsymbol{\beta} \perp \dot{\boldsymbol{\beta}}$E.g.,
-synchrotron):
+For circular acceleration ($\boldsymbol{\beta} \perp \dot{\boldsymbol{\beta}}$E.g., synchrotron):
 
 $$P = \frac{q^2}{6\pi\varepsilon_0 c}\gamma^4\dot{\beta}^2 = \frac{q^2 c}{6\pi\varepsilon_0}\frac{\gamma^4}{R^2}$$
 
@@ -2112,8 +2078,7 @@ $$\phi(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0}\left[\frac{Q}{r} + \frac{\mathb
 
 **Monopole term:** $Q = \int \rho\, dV$ (total charge).
 
-**Dipole term:** $\mathbf{p} = \int \mathbf{r}'\,\rho(\mathbf{r}')\,dV'$ (electric
-dipole moment).
+**Dipole term:** $\mathbf{p} = \int \mathbf{r}'\,\rho(\mathbf{r}')\,dV'$ (electric dipole moment).
 
 **Quadrupole term:** $Q_{ij} = \int (3r'_ir'_j - r'^2\delta_{ij})\,\rho(\mathbf{r}')\,dV'$
 (traceless quadrupole tensor).
@@ -2128,16 +2093,15 @@ The scalar and vector potentials are not unique. The **gauge transformation**:
 
 $$\mathbf{A}' = \mathbf{A} + \nabla\chi, \quad \phi' = \phi - \frac{\partial\chi}{\partial t}$$
 
-Leaves $\mathbf{E}$ and $\mathbf{B}$ unchanged for any scalar function
-$\chi(\mathbf{r}, t)$.
+Leaves $\mathbf{E}$ and $\mathbf{B}$ unchanged for any scalar function $\chi(\mathbf{r}, t)$.
 
 **Common gauges:**
 
-| Gauge    | Condition                                                                          | Use                                |
-| -------- | ---------------------------------------------------------------------------------- | ---------------------------------- |
+| Gauge    | Condition                                                                    | Use                                |
+| -------- | ---------------------------------------------------------------------------- | ---------------------------------- |
 | Coulomb  | $\nabla \cdot \mathbf{A} = 0$                                                | Static problems, quantum mechanics |
 | Lorenz   | $\nabla \cdot \mathbf{A} + \frac{1}{c^2}\frac{\partial\phi}{\partial t} = 0$ | Relativistic problems, radiation   |
-| Temporal | $\phi = 0$                                                                         | Some scattering problems           |
+| Temporal | $\phi = 0$                                                                   | Some scattering problems           |
 
 In the Lorenz gauge, both $\mathbf{A}$ and $\phi$ satisfy wave equations with sources:
 
@@ -2192,12 +2156,11 @@ This is tiny compared to atmospheric pressure ($10^5$ Pa), but is significant fo
    $v_g < c$. Similarly, the refracted phase front in a prism can appear to move faster than $c$But
    the actual signal does not.
 
-2. **Gauge choice matters for potentials, not fields:** Different gauges give different
-   $\mathbf{A}$ and $\phi$ for the same $\mathbf{E}$ and $\mathbf{B}$. In quantum
-   mechanics, the Hamiltonian depends on the gauge, but all physical observables are
-   gauge-invariant. The Aharonov--Bohm effect shows that even in regions where
-   $\mathbf{E} = \mathbf{B} = 0$The vector potential $\mathbf{A}$ has measurable
-   physical effects.
+2. **Gauge choice matters for potentials, not fields:** Different gauges give different $\mathbf{A}$
+   and $\phi$ for the same $\mathbf{E}$ and $\mathbf{B}$. In quantum mechanics, the Hamiltonian
+   depends on the gauge, but all physical observables are gauge-invariant. The Aharonov--Bohm effect
+   shows that even in regions where $\mathbf{E} = \mathbf{B} = 0$The vector potential $\mathbf{A}$
+   has measurable physical effects.
 
 3. **Multipole expansion convergence:** The multipole expansion converges only outside a sphere that
    encloses all charges. Inside the charge distribution, the expansion diverges and must not be
@@ -2210,10 +2173,9 @@ This is tiny compared to atmospheric pressure ($10^5$ Pa), but is significant fo
    formula or radiation resistance in the near field.
 
 5. **Poynting vector is not unique:** The Poynting vector
-   $\mathbf{S} = \mathbf{E} \times \mathbf{H}$ is gauge-dependent and can be
-   nonzero even in static situations (e.g., a charged capacitor in a constant magnetic field). Only
-   the surface integral $\oint \mathbf{S} \cdot d\mathbf{a}$ (total power flow) is
-   physically meaningful.
+   $\mathbf{S} = \mathbf{E} \times \mathbf{H}$ is gauge-dependent and can be nonzero even in static
+   situations (e.g., a charged capacitor in a constant magnetic field). Only the surface integral
+   $\oint \mathbf{S} \cdot d\mathbf{a}$ (total power flow) is physically meaningful.
 
 ## Problems (Additional)
 
@@ -2246,9 +2208,9 @@ $$B_z = B_0\cos\!\left(\frac{\pi x}{a}\right)e^{i(\beta z - \omega t)}$$
 walls ($x = 0, a$) and maximum at the centre ($x = a/2$). The magnetic field forms closed loops in
 the $xz$-plane.
 
-(c) Surface current $\mathbf{K} = \hat{\mathbf{n}} \times \mathbf{H}$. On the
-broad walls ($y = 0, b$): $\mathbf{K}$ has components from $B_x$ and $B_z$With maximum at
-$x = a/2$ (where $\sin(\pi x/a) = 1$). The power loss per unit length is:
+(c) Surface current $\mathbf{K} = \hat{\mathbf{n}} \times \mathbf{H}$. On the broad walls
+($y = 0, b$): $\mathbf{K}$ has components from $B_x$ and $B_z$With maximum at $x = a/2$ (where
+$\sin(\pi x/a) = 1$). The power loss per unit length is:
 
 $$P_{\text{loss} = \frac{R_s}{2}\oint |\mathbf{K}|^2\, dl$$
 
@@ -2343,14 +2305,12 @@ $$E'_y = \gamma(E_y - vB_z), \quad B'_y = \gamma\!\left(B_y + \frac{v}{c^2}E_z\r
 
 $$E'_z = \gamma(E_z + vB_y), \quad B'_z = \gamma\!\left(B_z - \frac{v}{c^2}E_y\right)$$
 
-**Key insight:** $\mathbf{E}$ and $\mathbf{B}$ mix under Lorentz transformations. What
-appears as a pure electric field in one frame becomes a mixture of electric and magnetic fields in
-another. There is no frame-independent distinction between $\mathbf{E}$ and
-$\mathbf{B}$.
+**Key insight:** $\mathbf{E}$ and $\mathbf{B}$ mix under Lorentz transformations. What appears as a
+pure electric field in one frame becomes a mixture of electric and magnetic fields in another. There
+is no frame-independent distinction between $\mathbf{E}$ and $\mathbf{B}$.
 
-**Invariants:** $E^2 - c^2B^2$ and $\mathbf{E}\cdot\mathbf{B}$ are Lorentz invariants. A
-pure radiation field ($E = cB$$\mathbf{E}\perp\mathbf{B}$) satisfies both invariants
-being zero.
+**Invariants:** $E^2 - c^2B^2$ and $\mathbf{E}\cdot\mathbf{B}$ are Lorentz invariants. A pure
+radiation field ($E = cB$$\mathbf{E}\perp\mathbf{B}$) satisfies both invariants being zero.
 
 ### 12.3 Electromagnetic Field Momentum and Angular Momentum
 
@@ -2358,15 +2318,13 @@ being zero.
 
 $$\mathbf{g} = \frac{\mathbf{S}}{c^2} = \varepsilon_0\mathbf{E} \times \mathbf{B}$$
 
-**Field angular momentum:**
-$\mathbf{L} = \int \mathbf{r} \times \mathbf{g}\, d^3r$.
+**Field angular momentum:** $\mathbf{L} = \int \mathbf{r} \times \mathbf{g}\, d^3r$.
 
-**Conservation:**
-$\frac{d}{dt}\left(\mathbf{p}_{\text{mech} + \mathbf{p}_{\text{field}\right) = 0$.
+**Conservation:** $\frac{d}{dt}\left(\mathbf{p}_{\text{mech} + \mathbf{p}_{\text{field}\right) = 0$.
 
 For a charge and a magnetic monopole (if they exist), the field angular momentum
-$\mathbf{L} = -qg\hat{\mathbf{r}}/(4\pi)$ is quantised in units of $\hbar/2$Leading to
-the Dirac charge quantisation condition $eg = n\hbar/2$.
+$\mathbf{L} = -qg\hat{\mathbf{r}}/(4\pi)$ is quantised in units of $\hbar/2$Leading to the Dirac
+charge quantisation condition $eg = n\hbar/2$.
 
 <details>
 <summary>Worked Example 12.1: Fields of a Moving Point Charge</summary>
@@ -2378,14 +2336,13 @@ In a frame moving with velocity $v$ along the $x$-axis, the fields at the booste
 
 $$E'_y = \gamma\frac{qy'}{4\pi\varepsilon_0(r'^2 + \gamma^2 v^2 t'^2)^{3/2}}, \quad B'_z = -\frac{v}{c^2}E'_y$$
 
-At $t' = 0$: $\mathbf{E}'$ is still radial (from the instantaneous position) but with an
-enhanced transverse component by factor $\gamma$. The magnetic field is
-$\mathbf{B}' = -\mathbf{v} \times \mathbf{E}'/c^2$Circulating around the direction
-of motion.
+At $t' = 0$: $\mathbf{E}'$ is still radial (from the instantaneous position) but with an enhanced
+transverse component by factor $\gamma$. The magnetic field is
+$\mathbf{B}' = -\mathbf{v} \times \mathbf{E}'/c^2$Circulating around the direction of motion.
 
-The Poynting vector $\mathbf{S}' = \mathbf{E}' \times \mathbf{B}'/\mu_0$ is
-nonzero even for a uniformly moving charge (it points outward and forward, indicating energy flow in
-the direction of motion).
+The Poynting vector $\mathbf{S}' = \mathbf{E}' \times \mathbf{B}'/\mu_0$ is nonzero even for a
+uniformly moving charge (it points outward and forward, indicating energy flow in the direction of
+motion).
 
 For ultrarelativistic motion ($\gamma \gg 1$): the fields are concentrated in a thin disk of angular
 width $\sim 1/\gamma$ around the plane perpendicular to the motion. This is the basis of
@@ -2421,4 +2378,37 @@ wave has $\omega^2 = k^2 c_s^2/(1 + k^2\lambda_D^2)$ where $c_s = \sqrt{k_BT/m_i
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Conservation of energy**
+
+A $0.50\,\text{kg}$ ball is dropped from a height of $20\,\text{m}$. Calculate its speed just before
+it hits the ground (ignore air resistance).
+
+**Solution:**
+
+Using conservation of energy: $mgh = \frac{1}{2}mv^2$
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} \approx 19.8\,\text{m\,s}^{-1}$$
+
+## Summary
+
+- Electrostatics: Coulomb's law, Gauss's law
+  ($\oint \mathbf{E} \cdot d\mathbf{A} = Q/\varepsilon_0$), electric potential
+  $V = -\int \mathbf{E} \cdot d\mathbf{l}$.
+- Magnetostatics: Biot-Savart law, Ampère's law ($\oint \mathbf{B} \cdot d\mathbf{l} = \mu_0 I$),
+  magnetic vector potential.
+- Maxwell's equations unify electricity and magnetism:
+  $\nabla \times \mathbf{E} = -\partial \mathbf{B}/\partial t$,
+  $\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \partial \mathbf{E}/\partial t$.
+- Electromagnetic waves: $c = 1/\sqrt{\mu_0 \varepsilon_0}$; plane wave solutions; energy density
+  $u = \frac{1}{2}(\varepsilon_0 E^2 + B^2/\mu_0)$.
+- Electrodynamics: retarded potentials, radiation from accelerating charges, and the full Lorentz
+  force $\mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})$.
+
+## Cross-References
+
+| Topic                       | Site        | Link                                                                                       |
+| --------------------------- | ----------- | ------------------------------------------------------------------------------------------ |
+| Classical Mechanics         | WyattsNotes | [View](/docs/university/physics/classical-mechanics)                                       |
+| Quantum Mechanics           | WyattsNotes | [View](/docs/university/physics/quantum-mechanics)                                         |
+| Optics and Wave Physics     | WyattsNotes | [View](/docs/university/physics/optics-and-wave-physics)                                   |
+| Electromagnetism — MIT 8.02 | MIT OCW     | [View](https://ocw.mit.edu/courses/8-02sc-physics-ii-electricity-and-magnetism-fall-2010/) |

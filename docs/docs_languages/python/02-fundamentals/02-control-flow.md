@@ -1048,12 +1048,12 @@ Resource management.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-## Summary
+2. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.

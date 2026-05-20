@@ -119,11 +119,11 @@ Same way. Test one representative from each class.
 
 **Example:** A function accepts ages 0-120.
 
-| Equivalence class  | Range       | Test value |
-| ------------------ | ----------- | ---------- |
-| Valid              | $[0, 120]$  | 25         |
-| Invalid (too low)  | $\lt 0$   | -1         |
-| Invalid (too high) | $\gt 120$ | 150        |
+| Equivalence class  | Range      | Test value |
+| ------------------ | ---------- | ---------- |
+| Valid              | $[0, 120]$ | 25         |
+| Invalid (too low)  | $\lt 0$    | -1         |
+| Invalid (too high) | $\gt 120$  | 150        |
 
 ### Boundary Value Analysis
 
@@ -254,7 +254,7 @@ Using equivalence partitioning and boundary value analysis, identify all test ca
 | Teen               | $[13, 17]$     | 15         |
 | Adult              | $[18, 64]$     | 40         |
 | Senior             | $[65, \infty)$ | 70         |
-| Invalid (negative) | $\lt 0$      | -1         |
+| Invalid (negative) | $\lt 0$        | -1         |
 
 **Boundary value analysis:**
 
@@ -827,4 +827,16 @@ Pull request, and run the full suite nightly.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of testing, including underlying theory, practical
+implementation, and key applications.
+
+**Key concepts include:**
+
+- CPU architecture and the fetch-decode-execute cycle
+- memory hierarchy (cache, RAM, virtual)
+- input/output systems
+- operating systems and scheduling
+- interrupts and polling
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

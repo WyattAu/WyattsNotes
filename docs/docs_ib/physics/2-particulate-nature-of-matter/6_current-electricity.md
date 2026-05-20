@@ -1,0 +1,1572 @@
+title: Current Electricity tags:
+
+- IB
+- Physics slug: current-electricity description: 'Rigorous IB physics notes covering Current
+  Electricity. Includes definitions, derivations, worked examples, and exam-style problems.'
+
+date: 2024-01-01T00:00:00Z categories:
+
+- ib
+- ib-physics
+
+## 1. Electric Fields
+
+### 1.1 Coulomb's Law
+
+The electrostatic force between two point charges is governed by Coulomb's inverse-square law. The
+Magnitude of the force is directly proportional to the product of the charge magnitudes and
+Inversely proportional to the square of the separation distance:
+
+$$
+F = k\frac{|q_1||q_2|}{r^2}
+$$
+
+Where $k$ is Coulomb's constant, defined as:
+
+$$
+K = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9 \mathrm{ N m}^2 \mathrm{ C}^{-2}
+$$
+
+The permittivity of free space is
+$\varepsilon_0 = 8.85 \times 10^{-12} \mathrm{ C}^2 \mathrm{ N}^{-1} \mathrm{ m}^{-2}$.
+
+In vector form, the force exerted on $q_2$ by $q_1$ is:
+
+$$
+\vec{F}_{12} = k\frac{q_1 q_2}{r^2}\hat{r}_{12}
+$$
+
+Where $\hat{r}_{12}$ is the unit vector pointing from $q_1$ to $q_2$. Like charges produce a
+Repulsive force (positive $F$ along $\hat{r}_{12}$), and unlike charges produce an attractive force
+(negative $F$I.e. Anti-parallel to $\hat{r}_{12}$).
+
+:::info[Data Booklet Reference] Both forms appear in the IB data booklet:
+
+$$
+F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
+$$
+
+$$
+E = \frac{q}{4\pi\varepsilon_0 r^2}
+$$
+
+:::
+
+### 1.2 Electric Field Strength
+
+The electric field $\vec{E}$ at a point in space is defined as the electrostatic force per unit
+Positive test charge placed at that point:
+
+$$
+\vec{E} = \frac{\vec{F}}{q}
+$$
+
+The SI unit is $\mathrm{V m}^{-1}$ (equivalent to $\mathrm{N C}^{-1}$). For a point charge $Q$The
+Field at distance $r$ is:
+
+$$
+E = \frac{Q}{4\pi\varepsilon_0 r^2}
+$$
+
+This is an inverse-square radial field. Field lines point radially outward for positive source
+Charges and radially inward for negative source charges.
+
+### 1.3 Uniform Field Between Parallel Plates
+
+When two parallel conducting plates are separated by a distance $d$ and maintained at a potential
+Difference $V$The electric field between them is uniform:
+
+$$
+E = \frac{V}{d}
+$$
+
+This is exact for infinite plates and an excellent approximation when the plate separation is much
+Smaller than the plate dimensions. Field lines are parallel and equally spaced between the plates;
+They fringe at the edges.
+
+The direction of the field is from the positive plate to the negative plate. A positive test charge
+Placed in this field experiences a force $F = qE$ directed from positive to negative plate.
+
+<details>
+<summary>Worked Example: Electric Field Between Parallel Plates</summary>
+
+Two parallel plates are separated by $d = 3.0\,\mathrm{cm}$ with a potential difference of
+$600\,\mathrm{V}$. A proton ($q = 1.6 \times 10^{-19}\,\mathrm{C}$
+$m_p = 1.67 \times 10^{-27}\,\mathrm{kg}$) is placed at rest next to the positive plate.
+
+**Find the acceleration of the proton and the time to reach the negative plate.**
+
+Electric field:
+
+$$E = \frac{V}{d} = \frac{600}{0.030} = 2.0 \times 10^4\,\mathrm{V/m}$$
+
+Force on the proton:
+
+$$F = qE = (1.6 \times 10^{-19})(2.0 \times 10^4) = 3.2 \times 10^{-15}\,\mathrm{N}$$
+
+Acceleration:
+
+$$a = \frac{F}{m_p} = \frac{3.2 \times 10^{-15}}{1.67 \times 10^{-27}} = 1.92 \times 10^{12}\,\mathrm{m/s}^2$$
+
+Time to cross the gap (constant acceleration from rest):
+
+$$d = \frac{1}{2}at^2 \implies t = \sqrt{\frac{2d}{a}} = \sqrt{\frac{2(0.030)}{1.92 \times 10^{12}}} = 1.77 \times 10^{-8}\,\mathrm{s}$$
+
+The proton takes approximately $17.7\,\mathrm{ns}$ to cross the gap.
+
+</details>
+
+### 1.4 Motion of Charged Particles in Uniform Electric Fields
+
+Consider a charged particle of mass $m$ and charge $q$ entering a uniform electric field $E$
+Perpendicular to its initial velocity $v$. This is the electric-field analogue of projectile motion.
+
+The particle experiences a constant force perpendicular to its motion:
+
+$$
+F = qE \implies a = \frac`\{qE}`{m}
+$$
+
+Since the acceleration is perpendicular to the initial velocity, the motion decomposes into:
+
+**Parallel to plates** (no force, constant velocity):
+
+$$
+X = v \cdot t
+$$
+
+**Perpendicular to plates** (constant acceleration):
+
+$$
+Y = \frac{1}{2}\left(\frac`\{qE}`{m}\right)t^2
+$$
+
+Eliminating $t$ yields the parabolic trajectory:
+
+$$
+Y = \frac`\{qE}`{2mv^2}\,x^2
+$$
+
+The deflection angle upon exiting the field region is:
+
+$$
+\tan\theta = \frac{v_y}{v_x} = \frac`\{qEL}`{mv^2}
+$$
+
+Where $L$ is the length of the plates.
+
+:::tip[Electron vs Proton Deflection] For the same field and entry speed, a proton is deflected
+$m_p/m_e \approx 1836$ times less than an electron. The direction of deflection is opposite for
+Opposite charges. :::
+
+<details>
+<summary>Worked Example: Electron Deflection Between Parallel Plates</summary>
+
+An electron enters the region between two horizontal parallel plates at
+$v = 3.0 \times 10^7 \mathrm{ m/s}$ horizontally. The plates are $5.0\mathrm{ cm}$ long and
+$2.0\mathrm{ cm}$ apart, with a potential difference of $400\mathrm{ V}$ across them.
+
+**Find the vertical deflection at the point of exit.**
+
+The uniform electric field is:
+
+$$
+E = \frac{V}{d} = \frac{400}{0.020} = 2.0 \times 10^4 \mathrm{ V/m}
+$$
+
+Time between the plates:
+
+$$
+T = \frac{L}{v} = \frac{0.050}{3.0 \times 10^7} = 1.67 \times 10^{-9}\mathrm{ s}
+$$
+
+Vertical acceleration (note: the electron has charge $q = -1.6 \times 10^{-19}\mathrm{ C}$; it is
+Deflected toward the positive plate):
+
+$$
+A = \frac`\{eE}`{m_e} = \frac{(1.6 \times 10^{-19})(2.0 \times 10^4)}{9.11 \times 10^{-31}} = 3.51 \times 10^{15}\mathrm{ m/s}^2
+$$
+
+Vertical deflection:
+
+$$
+Y = \frac{1}{2}at^2 = \frac{1}{2}(3.51 \times 10^{15})(1.67 \times 10^{-9})^2 = 4.9 \times 10^{-3}\mathrm{ m} = 4.9\mathrm{ mm}
+$$
+
+The electron deflects $4.9\mathrm{ mm}$ toward the positive plate. Since $y = 4.9\mathrm{ mm}$ is
+Less than the half-separation of $10\mathrm{ mm}$The electron exits the plates without striking
+Them.
+
+</details>
+
+---
+
+## 2. Electric Current
+
+### 2.1 Defining Current
+
+Electric current is the rate of flow of charge through a cross-section of a conductor:
+
+$$
+I = \frac{\Delta Q}{\Delta t}
+$$
+
+The SI unit is the ampere ($\mathrm{A}$), where $1\mathrm{ A} = 1\mathrm{ C s}^{-1}$. Conventional
+Current flows from positive to negative terminal, opposite to the drift direction of electrons.
+
+### 2.2 Derivation of $I = nAev_d$
+
+This is a fundamental derivation that connects microscopic charge carrier behaviour to the
+Macroscopic observable we call current.
+
+Consider a cylindrical conductor of cross-sectional area $A$. The free electron number density is
+$n$ (number of free electrons per unit volume). Each electron carries charge
+$e = 1.60 \times 10^{-19}\mathrm{ C}$ and drifts with velocity $v_d$.
+
+In time $\Delta t$The volume swept by electrons crossing a given cross-section is:
+
+$$
+\mathrm{Volume} = A \cdot v_d \cdot \Delta t
+$$
+
+The number of free electrons in this volume:
+
+$$
+N = n \cdot A \cdot v_d \cdot \Delta t
+$$
+
+Total charge crossing the cross-section in $\Delta t$:
+
+$$
+\Delta Q = N \cdot e = nAev_d\,\Delta t
+$$
+
+Therefore:
+
+$$
+I = \frac{\Delta Q}{\Delta t} = nAev_d
+$$
+
+:::info[Typical Values] For copper, $n \approx 8.5 \times 10^{28}\mathrm{ m}^{-3}$. For a
+$1\mathrm{ mm}^2$ copper wire carrying $1\mathrm{ A}$The drift velocity is:
+
+$$
+V_d = \frac{I}`\{nAe}` = \frac{1.0}{(8.5 \times 10^{28})(10^{-6})(1.6 \times 10^{-19})} \approx 7.4 \times 10^{-5}\mathrm{ m/s}
+$$
+
+This is extraordinarily slow. The signal (the electric field) propagates at a significant fraction
+Of $c$But the electrons themselves crawl. :::
+
+<details>
+<summary>Worked Example: Drift Velocity in Aluminium</summary>
+
+An aluminium wire of diameter $0.50\mathrm{ mm}$ carries a current of $2.0\mathrm{ A}$. For
+Aluminium, the free electron density is $n = 6.0 \times 10^{28}\mathrm{ m}^{-3}$.
+
+Cross-sectional area:
+
+$$
+A = \pi r^2 = \pi(0.25 \times 10^{-3})^2 = 1.96 \times 10^{-7}\mathrm{ m}^2
+$$
+
+Drift velocity:
+
+$$
+V_d = \frac{I}`\{nAe}` = \frac{2.0}{(6.0 \times 10^{28})(1.96 \times 10^{-7})(1.6 \times 10^{-19})} = 1.06 \times 10^{-3}\mathrm{ m/s}
+$$
+
+The drift velocity is approximately $1.1\mathrm{ mm/s}$.
+
+</details>
+
+<details>
+<summary>Worked Example: Charge Flow and Current</summary>
+
+A lamp passes a current of $0.5\,\mathrm{A}$ for $2$ minutes.
+
+**Find the total charge that flows and the number of electrons transferred.**
+
+Total charge:
+
+$$Q = It = 0.5 \times 120 = 60\,\mathrm{C}$$
+
+Number of electrons:
+
+$$n_e = \frac{Q}{e} = \frac{60}{1.6 \times 10^{-19}} = 3.75 \times 10^{20}$$
+
+</details>
+
+### 2.3 Potential Difference and Electromotive Force
+
+**Potential difference** ($V$Or p.d.) is the energy transferred per unit charge between two points
+In a circuit:
+
+$$
+V = \frac{W}{Q}
+$$
+
+SI unit: volt ($\mathrm{V}$), where $1\mathrm{ V} = 1\mathrm{ J C}^{-1}$.
+
+**Electromotive force** ($\varepsilon$Or emf) is the energy converted from other forms to Electrical
+energy per unit charge by a source:
+
+$$
+\varepsilon = \frac{W}{Q}
+$$
+
+Although emf has the same unit as potential difference, they are physically distinct. Emf describes
+Energy conversion within the source (chemical to electrical, for instance), while p.d. Describes
+Energy transfer to components in the external circuit.
+
+---
+
+## 3. Resistance and Ohm's Law
+
+### 3.1 Ohm's Law
+
+For an ohmic conductor at constant temperature, the current through the conductor is directly
+Proportional to the potential difference across it:
+
+$$
+V = IR
+$$
+
+Where $R$ is the resistance measured in ohms ($\Omega$), with $1\,\Omega = 1\mathrm{ V A}^{-1}$.
+
+Ohm's law is an empirical relationship. It holds for metallic conductors at constant temperature. It
+Is not a universal law of nature — many materials and devices are non-ohmic.
+
+### 3.2 Resistivity
+
+The resistance of a uniform conductor depends on its geometry and the intrinsic property of the
+Material called resistivity ($\rho$):
+
+$$
+R = \rho\frac{L}{A}
+$$
+
+Where $L$ is the length and $A$ is the cross-sectional area. The SI unit of resistivity is
+$\Omega\,\mathrm{m}$.
+
+The inverse quantity is conductivity: $\sigma = 1/\rho$With SI unit $\mathrm{S m}^{-1}$ (siemens Per
+metre).
+
+:::info[Data Booklet Resistivity Values] Copper:
+$\rho \approx 1.7 \times 10^{-8}\,\Omega\,\mathrm{m}$. Nichrome (alloy):
+$\rho \approx 1.1 \times 10^{-6}\,\Omega\,\mathrm{m}$. Semiconductors: $\rho$ spans many orders of
+Magnitude. :::
+
+### 3.3 Factors Affecting Resistance
+
+**Temperature.** For metallic conductors, resistance increases approximately linearly with
+Temperature (for modest ranges):
+
+$$
+R_T = R_0[1 + \alpha(T - T_0)]
+$$
+
+Where $\alpha$ is the temperature coefficient of resistance. For copper,
+$\alpha \approx 3.9 \times 10^{-3}\mathrm{ K}^{-1}$. The physical mechanism is that lattice
+Vibrations (phonons) increase with temperature, scattering conduction electrons more frequently and
+Reducing their mean free path.
+
+For semiconductors, resistance decreases with temperature because more charge carriers are promoted
+Across the band gap into the conduction band.
+
+**Material.** Different materials have vastly different resistivities. Conductors
+($\rho \lt 10^{-4}\,\Omega\,\mathrm{m}$), semiconductors ($\rho$ between roughly $10^{-4}$ and
+$10^{6}\,\Omega\,\mathrm{m}$), and insulators ($\rho \gt 10^{6}\,\Omega\,\mathrm{m}$) form a
+Continuum.
+
+<details>
+<summary>Worked Example: Resistance and Resistivity</summary>
+
+A nichrome wire has length $2.5\,\mathrm{m}$ and diameter $0.40\,\mathrm{mm}$. The resistivity of
+Nichrome is $\rho = 1.1 \times 10^{-6}\,\Omega\,\mathrm{m}$.
+
+**Find the resistance of the wire.**
+
+Cross-sectional area:
+
+$$A = \frac{\pi d^2}{4} = \frac{\pi(0.40 \times 10^{-3})^2}{4} = 1.26 \times 10^{-7}\,\mathrm{m}^2$$
+
+Resistance:
+
+$$R = \rho\frac{L}{A} = (1.1 \times 10^{-6})\frac{2.5}{1.26 \times 10^{-7}} = 21.8\,\Omega$$
+
+**If the wire is stretched to twice its original length (keeping volume constant), what is the new
+Resistance?**
+
+When the wire is stretched, volume is conserved: $A_1 L_1 = A_2 L_2$. If $L_2 = 2L_1$Then
+$A_2 = A_1/2$.
+
+$$R_2 = \rho\frac{L_2}{A_2} = \rho\frac{2L_1}{A_1/2} = 4\rho\frac{L_1}{A_1} = 4R_1 = 87.2\,\Omega$$
+
+Doubling the length quadruples the resistance.
+
+</details>
+
+**Geometry.** Longer conductors have greater resistance (more scattering centres along the path).
+Thicker conductors have lower resistance (more parallel conduction channels).
+
+### 3.4 I-V Characteristics
+
+The I-V graph reveals whether a component is ohmic and provides insight into the underlying physics.
+
+**Ohmic conductors.** A straight line through the origin with constant slope $1/R$. Metallic wires
+At constant temperature behave this way.
+
+**Filament lamp.** The I-V curve is a steepening curve (non-linear). As current increases, the
+Filament heats up, increasing its resistance. At higher temperatures, the lattice vibrations
+Intensify, and the gradient of the I-V graph increases (more voltage needed per ampere). The curve
+Is symmetric about the origin.
+
+**Semiconductor diode.** The I-V curve is highly asymmetric. In forward bias (positive voltage
+Across the diode in the direction of easy current flow), negligible current flows until the
+Threshold voltage is reached (approximately $0.7\mathrm{ V}$ for silicon diodes), after which
+Current rises steeply. In reverse bias, only a tiny leakage current flows until breakdown occurs.
+
+**Thermistor.** An NTC (negative temperature coefficient) thermistor has a resistance that decreases
+As temperature increases. As more current flows, self-heating reduces resistance, so the I-V curve
+Is a shallowing curve (opposite behaviour to a filament lamp).
+
+**Light-dependent resistor (LDR).** Resistance decreases with increasing light intensity. More
+Photons promote more electrons into the conduction band, increasing the number of charge carriers.
+
+### 3.5 Common Pitfalls: Resistance
+
+A frequent error is assuming Ohm's law applies universally. Ohm's law is a property of specific
+Materials under specific conditions (constant temperature), not a fundamental law. A filament lamp
+Obeying $V = IR$ at every instant (with $R$ varying) does not satisfy Ohm's law, because Ohm's law
+Requires $R$ to be constant.
+
+Another pitfall is confusing resistance with resistivity. Resistance depends on both the material
+And the geometry; resistivity is an intrinsic property of the material alone.
+
+---
+
+## 4. Circuit Analysis
+
+<PhetSimulation simulationId="circuit-construction-kit-dc" title="Circuit Construction Kit: DC" />
+
+Build series and parallel circuits with resistors, light bulbs, and switches. Measure current and
+Voltage at different points to verify Kirchhoff's laws and Ohm's law.
+
+### 4.1 Series Circuits
+
+For components connected in series, the same current flows through each component. The total
+Resistance is the sum of individual resistances:
+
+$$
+R_{\mathrm{total}} = R_1 + R_2 + R_3 + \cdots
+$$
+
+The total p.d. Is distributed among components in proportion to their resistances:
+
+$$
+V_{\mathrm{total}} = V_1 + V_2 + V_3 + \cdots
+$$
+
+For two resistors in series, the voltage divider relationship gives:
+
+$$
+V_1 = V_{\mathrm{total}} \cdot \frac{R_1}{R_1 + R_2}
+$$
+
+### 4.2 Parallel Circuits
+
+For components connected in parallel, the p.d. Across each branch is the same. The reciprocal of the
+Total resistance equals the sum of reciprocals:
+
+$$
+\frac{1}{R_{\mathrm{total}}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots
+$$
+
+For two resistors in parallel:
+
+$$
+R_{\mathrm{total}} = \frac{R_1 R_2}{R_1 + R_2}
+$$
+
+The total current splits between branches in inverse proportion to their resistances:
+
+$$
+\frac{I_1}{I_2} = \frac{R_2}{R_1}
+$$
+
+<details>
+<summary>Worked Example: Parallel and Series Combinations</summary>
+
+A $6\,\Omega$ and a $12\,\Omega$ resistor are connected in parallel, and this combination is
+Connected in series with a $4\,\Omega$ resistor across a $24\,\mathrm{V}$ supply.
+
+**Find the total resistance, the current from the supply, and the p.d. Across each component.**
+
+Parallel combination:
+
+$$R_{\mathrm{par}} = \frac{6 \times 12}{6 + 12} = \frac{72}{18} = 4\,\Omega$$
+
+Total resistance:
+
+$$R_{\mathrm{total}} = R_{\mathrm{par}} + 4 = 4 + 4 = 8\,\Omega$$
+
+Current from the supply:
+
+$$I = \frac{V}{R_{\mathrm{total}}} = \frac{24}{8} = 3.0\,\mathrm{A}$$
+
+P.d. Across the series resistor:
+
+$$V_{\mathrm{series}} = IR = 3.0 \times 4 = 12\,\mathrm{V}$$
+
+P.d. Across the parallel combination (same as p.d. Across each parallel branch):
+
+$$V_{\mathrm{par}} = 24 - 12 = 12\,\mathrm{V}$$
+
+Current through the $6\,\Omega$ resistor: $I_6 = 12/6 = 2.0\,\mathrm{A}$
+
+Current through the $12\,\Omega$ resistor: $I_{12} = 12/12 = 1.0\,\mathrm{A}$
+
+Check: $I_6 + I_{12} = 2.0 + 1.0 = 3.0\,\mathrm{A}$ (matches supply current).
+
+</details>
+
+### 4.3 Kirchhoff's Laws
+
+Kirchhoff's two laws are conservation statements that allow systematic analysis of any circuit.
+
+**Kirchhoff's Current Law (KCL) — the Junction Rule.** The sum of currents entering any junction
+Equals the sum of currents leaving it. This is conservation of charge:
+
+$$
+\sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}
+$$
+
+**Kirchhoff's Voltage Law (KVL) — the Loop Rule.** The sum of all potential differences around any
+Closed loop is zero. This is conservation of energy:
+
+$$
+\sum V = 0
+$$
+
+When applying KVL, adopt a consistent sign convention. A common convention: assign a sign based on
+Whether you encounter a potential rise or drop as you traverse the loop. Emf is a rise (positive),
+And potential drops across resistors are negative.
+
+<details>
+<summary>Worked Example: Kirchhoff's Laws</summary>
+
+Consider a circuit with two cells and three resistors. Cell 1 has emf
+$\varepsilon_1 = 12\mathrm{ V}$ and cell 2 has emf $\varepsilon_2 = 6\mathrm{ V}$ (opposing). The
+Resistors are $R_1 = 4\,\Omega$$R_2 = 6\,\Omega$And $R_3 = 2\,\Omega$All in series with the Cells.
+
+Applying KVL around the single loop (travelling clockwise):
+
+$$
+\varepsilon_1 - \varepsilon_2 - IR_1 - IR_2 - IR_3 = 0
+$$
+
+$$
+12 - 6 - I(4) - I(6) - I(2) = 0
+$$
+
+$$
+6 = 12I
+$$
+
+$$
+I = 0.50\mathrm{ A}
+$$
+
+The p.d. Across each resistor: $V_1 = 2.0\mathrm{ V}$$V_2 = 3.0\mathrm{ V}$ $V_3 = 1.0\mathrm{ V}$.
+These sum to $6\mathrm{ V}$Which equals the net emf of $12 - 6 = 6\mathrm{ V}$Confirming energy
+conservation.
+
+</details>
+
+### 4.4 The Potential Divider
+
+A potential divider (or voltage divider) consists of two or more resistors in series across a
+Supply. The output voltage is tapped from the junction between resistors.
+
+For two resistors $R_1$ (upper) and $R_2$ (lower) across supply $V_{\mathrm{in}}$:
+
+$$
+V_{\mathrm{out}} = V_{\mathrm{in}} \cdot \frac{R_2}{R_1 + R_2}
+$$
+
+If $R_2$ is replaced by a variable component (thermistor, LDR), the output voltage becomes a
+Function of the physical quantity being sensed.
+
+**Sensing circuits.** An NTC thermistor in the lower position produces a p.d. That rises with
+Temperature (since $R_2$ falls, but more current flows, and the voltage drop across the upper fixed
+Resistor increases, so $V_{\mathrm{out}}$ measured across $R_2$ actually decreases). Careful
+Analysis is needed depending on which component the output is measured across.
+
+A common configuration places the variable resistor (e.g., thermistor) as $R_1$ and measures
+$V_{\mathrm{out}}$ across $R_2$ (fixed). As temperature rises, $R_1$ decreases, so more of
+$V_{\mathrm{in}}$ drops across $R_2$And $V_{\mathrm{out}}$ increases.
+
+<details>
+<summary>Worked Example: Potential Divider with Thermistor</summary>
+
+A potential divider consists of a $10\,\mathrm{k}\Omega$ fixed resistor ($R_1$) and an NTC
+thermistor ($R_2$) connected across a $9.0\,\mathrm{V}$ supply. The output is measured across the
+thermistor. At $20^\circ\mathrm{C}$The thermistor has resistance $5.0\,\mathrm{k}\Omega$; at
+$60^\circ\mathrm{C}$ Its resistance is $1.0\,\mathrm{k}\Omega$.
+
+**Find the output voltage at each temperature.**
+
+At $20^\circ\mathrm{C}$:
+
+$$V_{\mathrm{out}} = 9.0 \times \frac{5.0}{10 + 5.0} = 9.0 \times \frac{1}{3} = 3.0\,\mathrm{V}$$
+
+At $60^\circ\mathrm{C}$:
+
+$$V_{\mathrm{out}} = 9.0 \times \frac{1.0}{10 + 1.0} = 9.0 \times \frac{1}{11} \approx 0.82\,\mathrm{V}$$
+
+As temperature increases, the thermistor resistance drops and so does the output voltage across it.
+The p.d. Across the fixed resistor increases from $6.0\,\mathrm{V}$ to $8.18\,\mathrm{V}$.
+
+</details>
+
+### 4.5 Wheatstone Bridge
+
+The Wheatstone bridge is a null-detection arrangement of four resistors:
+
+$$
+\frac{R_1}{R_2} = \frac{R_3}{R_4}
+$$
+
+When this ratio is satisfied, no current flows through the galvanometer connected between the
+Junctions. This condition is used for precise resistance measurement.
+
+If three resistors are known and one is unknown, balance the bridge and solve:
+
+$$
+R_x = R_2 \cdot \frac{R_3}{R_1}
+$$
+
+The sensitivity of the bridge is greatest when all four arms have similar resistances.
+
+<details>
+<summary>Worked Example: Wheatstone Bridge</summary>
+
+A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 150\,\Omega$. The Unknown
+resistor $R_x$ is in the fourth arm. The galvanometer reads zero.
+
+At balance:
+
+$$
+\frac{R_1}{R_2} = \frac{R_3}{R_x}
+$$
+
+$$
+\frac{100}{200} = \frac{150}{R_x}
+$$
+
+$$
+R_x = \frac{200 \times 150}{100} = 300\,\Omega
+$$
+
+</details>
+
+### 4.6 Common Pitfalls: Circuit Analysis
+
+A common mistake when applying Kirchhoff's voltage law is inconsistent sign conventions. Always
+Define your traversal direction first, then apply signs consistently. Another error is forgetting
+That the voltage across parallel branches is identical, not the current.
+
+When analysing potential dividers, students often confuse which resistor the output is measured
+Across. Always identify the output terminals before calculating.
+
+---
+
+## 5. Internal Resistance
+
+### 5.1 EMF and Terminal Potential Difference
+
+A real cell has internal resistance $r$ due to the resistance of the electrolyte, electrodes, and
+Internal connections. The terminal p.d. ($V$) is less than the emf ($\varepsilon$) when current is
+Drawn:
+
+$$
+V = \varepsilon - Ir
+$$
+
+When no current flows (open circuit), $V = \varepsilon$. The terminal p.d. Decreases linearly with
+Increasing current.
+
+The "lost volts" is the p.d. Across the internal resistance: $V_{\mathrm{lost}} = Ir$.
+
+### 5.2 Measuring Internal Resistance
+
+**Method 1: Vary the external load.** Connect a variable resistor across the cell. Measure the
+Terminal p.d. $V$ and current $I$ for a range of load resistances. Plot $V$ against $I$.
+
+The graph is a straight line: $V = \varepsilon - Ir$.
+
+The y-intercept equals $\varepsilon$. The gradient equals $-r$ (so $r = |\mathrm{gradient}|$).
+
+The x-intercept gives the short-circuit current $I_{\mathrm{sc}} = \varepsilon / r$.
+
+**Method 2: Two-reading method.** Measure $V_1$ and $I_1$ for one load, and $V_2$ and $I_2$ for
+Another. Solve simultaneously:
+
+$$
+V_1 = \varepsilon - I_1 r
+$$
+
+$$
+V_2 = \varepsilon - I_2 r
+$$
+
+Subtracting: $V_1 - V_2 = (I_2 - I_1)r$Giving $r = (V_1 - V_2)/(I_2 - I_1)$.
+
+<details>
+<summary>Worked Example: Internal Resistance</summary>
+
+A cell with unknown emf and internal resistance is connected to a $4.0\,\Omega$ resistor. The
+Terminal p.d. Is measured as $5.8\mathrm{ V}$ and the current is $1.2\mathrm{ A}$.
+
+Using $V = \varepsilon - Ir$:
+
+$$
+\varepsilon = V + Ir = 5.8 + (1.2)r
+$$
+
+When the external resistor is changed to $9.0\,\Omega$The current becomes $0.65\mathrm{ A}$:
+
+$$
+V' = \varepsilon - I'r = (5.8 + 1.2r) - 0.65r = 5.8 + 0.55r
+$$
+
+But also $V' = I'R' = 0.65 \times 9.0 = 5.85\mathrm{ V}$:
+
+$$
+5.85 = 5.8 + 0.55r
+$$
+
+$$
+R = \frac{0.05}{0.55} = 0.091\,\Omega
+$$
+
+$$
+\varepsilon = 5.8 + 1.2(0.091) = 5.91\mathrm{ V}
+$$
+
+</details>
+
+### 5.3 Maximum Power Transfer Theorem
+
+The power delivered to the external load $R_L$ is:
+
+$$
+P = I^2 R_L = \left(\frac{\varepsilon}{R_L + r}\right)^2 R_L = \frac{\varepsilon^2 R_L}{(R_L + r)^2}
+$$
+
+To find the maximum, differentiate with respect to $R_L$ and set to zero:
+
+$$
+\frac`\{dP}`{dR_L} = \varepsilon^2 \frac{(R_L + r)^2 - 2R_L(R_L + r)}{(R_L + r)^4} = 0
+$$
+
+The numerator simplifies to $(R_L + r)(r - R_L)$Giving $R_L = r$.
+
+Maximum power is delivered to the load when the load resistance equals the internal resistance. At
+This condition:
+
+$$
+P_{\max} = \frac{\varepsilon^2}{4r}
+$$
+
+:::warning[Efficiency at Maximum Power] At $R_L = r$The efficiency is only 50% (half the power is
+Dissipated in the internal resistance). In power distribution systems, $R_L \gt r$ is preferred for
+Higher efficiency, even though less total power is delivered. :::
+
+### 5.4 Battery Configurations
+
+**Series.** Identical cells in series: total emf adds, total internal resistance adds.
+
+$$
+\varepsilon_{\mathrm{total}} = n\varepsilon, \quad r_{\mathrm{total}} = nr
+$$
+
+Where $n$ is the number of cells.
+
+**Parallel.** Identical cells in parallel: total emf equals that of one cell, total internal
+Resistance decreases.
+
+$$
+\varepsilon_{\mathrm{total}} = \varepsilon, \quad r_{\mathrm{total}} = \frac{r}{n}
+$$
+
+Parallel configuration provides the same voltage but can deliver $n$ times the current of a single
+Cell.
+
+**Mixed (series-parallel) banks.** For $n$ rows of $m$ cells each (all identical):
+
+$$
+\varepsilon_{\mathrm{total}} = m\varepsilon, \quad r_{\mathrm{total}} = \frac`\{mr}`{n}
+$$
+
+The configuration is chosen based on whether the load requires higher voltage (more cells in series)
+Or higher current capacity (more cells in parallel).
+
+<details>
+<summary>Worked Example: Battery Configurations</summary>
+
+Six identical cells, each with emf $1.5\,\mathrm{V}$ and internal resistance $0.5\,\Omega$Are
+Connected to a $3.0\,\Omega$ external load.
+
+**Compare the current when the cells are (a) all in series, (b) two rows of three in series.**
+
+**(a) All six in series:**
+
+$$\varepsilon_{\mathrm{total}} = 6(1.5) = 9.0\,\mathrm{V}, \quad r_{\mathrm{total}} = 6(0.5) = 3.0\,\Omega$$
+
+$$I = \frac{9.0}{3.0 + 3.0} = 1.5\,\mathrm{A}$$
+
+**(b) Two rows of three (3 series, 2 parallel):**
+
+$$\varepsilon_{\mathrm{total}} = 3(1.5) = 4.5\,\mathrm{V}, \quad r_{\mathrm{total}} = \frac{3(0.5)}{2} = 0.75\,\Omega$$
+
+$$I = \frac{4.5}{3.0 + 0.75} = \frac{4.5}{3.75} = 1.2\,\mathrm{A}$$
+
+The series arrangement delivers more current to this particular load because the higher voltage
+Outweighs the increased internal resistance.
+
+</details>
+
+---
+
+## 6. Power in Circuits
+
+### 6.1 Power Equations
+
+Electrical power is the rate of energy transfer:
+
+$$
+P = IV
+$$
+
+Using Ohm's law ($V = IR$), two equivalent forms follow:
+
+$$
+P = I^2 R
+$$
+
+$$
+P = \frac{V^2}{R}
+$$
+
+These are all algebraically equivalent for ohmic conductors. The form to use depends on what is held
+Constant in the problem. If current is constant (series circuit), use $P = I^2 R$. If voltage is
+Constant (parallel circuit), use $P = V^2/R$.
+
+### 6.2 Energy Dissipated
+
+The energy dissipated by a resistor over time $t$ is:
+
+$$
+E = Pt = IVt = I^2 Rt = \frac{V^2}{R}t
+$$
+
+This energy appears as thermal energy in the resistor (Joule heating).
+
+### 6.3 Power and Internal Resistance
+
+The total power output of a cell is:
+
+$$
+P_{\mathrm{total}} = \varepsilon I
+$$
+
+The power delivered to the external circuit:
+
+$$
+P_{\mathrm{ext}} = VI = I^2 R_L
+$$
+
+The power wasted in the internal resistance:
+
+$$
+P_{\mathrm{int}} = I^2 r
+$$
+
+Conservation of energy requires $P_{\mathrm{total}} = P_{\mathrm{ext}} + P_{\mathrm{int}}$.
+
+The efficiency of the cell:
+
+$$
+\eta = \frac{P_{\mathrm{ext}}}{P_{\mathrm{total}}} = \frac{R_L}{R_L + r}
+$$
+
+<details>
+<summary>Worked Example: Power Transfer</summary>
+
+A battery with emf $12\mathrm{ V}$ and internal resistance $2.0\,\Omega$ is connected to an external
+Resistor of $4.0\,\Omega$.
+
+Current:
+
+$$
+I = \frac{\varepsilon}{R_L + r} = \frac{12}{4.0 + 2.0} = 2.0\mathrm{ A}
+$$
+
+Power to external resistor:
+
+$$
+P_{\mathrm{ext}} = I^2 R_L = (2.0)^2(4.0) = 16\mathrm{ W}
+$$
+
+Power wasted internally:
+
+$$
+P_{\mathrm{int}} = I^2 r = (2.0)^2(2.0) = 8\mathrm{ W}
+$$
+
+Total power: $P_{\mathrm{total}} = 16 + 8 = 24\mathrm{ W}$.
+
+Check: $P_{\mathrm{total}} = \varepsilon I = 12 \times 2.0 = 24\mathrm{ W}$.
+
+Efficiency: $\eta = 4.0/(4.0 + 2.0) = 66.7\%$.
+
+</details>
+
+### 6.4 Common Pitfalls: Power
+
+A critical error is using $P = V^2/R$ when $V$ refers to the terminal p.d. Of a cell (which differs
+From the emf due to internal resistance) and $R$ refers to the external load. Always be explicit
+About which voltage and which resistance you are using. If the problem involves internal resistance,
+Track the terminal p.d. Separately from the emf.
+
+Another mistake is confusing power (rate of energy transfer, watts) with energy (joules). To find
+Total energy transferred, always multiply power by time.
+
+---
+
+## 7. Measuring Instruments
+
+### 7.1 Ideal vs Real Instruments
+
+**Ammeter.** Measures current. Connected in series with the component. An ideal ammeter has zero
+Resistance so it does not alter the current it measures. A real ammeter has a small but finite
+Resistance ( a fraction of an ohm for analogue, or a very small resistance for digital Meters based
+on shunt resistors).
+
+**Voltmeter.** Measures potential difference. Connected in parallel across the component. An ideal
+Voltmeter has infinite resistance so it draws no current from the circuit. A real voltmeter has a
+Large but finite resistance ( $10^4$ to $10^7\,\Omega$).
+
+### 7.2 Impact of Non-Ideal Instruments
+
+A non-ideal ammeter in series adds its resistance to the circuit, reducing the current below the
+True value. The measured current is:
+
+$$
+I_{\mathrm{measured}} = \frac{\varepsilon}{R + R_A + r}
+$$
+
+Which is less than the true current $I_{\mathrm{true}} = \varepsilon/(R + r)$.
+
+A non-ideal voltmeter in parallel acts as an additional current path, effectively reducing the
+Resistance of the component being measured. The equivalent resistance of the parallel combination
+Is:
+
+$$
+R_{\mathrm{eq}} = \frac{R \cdot R_V}{R + R_V}
+$$
+
+Which is always less than $R$. The measured p.d. Is lower than the true p.d.
+
+:::tip[Minimising Measurement Error] For ammeters: use instruments with the smallest possible
+Internal resistance. For voltmeters: use instruments with the largest possible internal resistance.
+A voltmeter is considered sufficiently ideal if $R_V \gt 100R$Where $R$ is the resistance across
+Which it is connected. :::
+
+### 7.3 Galvanometer as Ammeter and Voltmeter
+
+A galvanometer is a sensitive current-measuring device. A typical galvanometer might have a
+Full-scale deflection current $I_g = 100\,\mu\mathrm{A}$ and internal resistance $R_g = 50\,\Omega$.
+
+**Converting to ammeter.** A shunt resistor $R_s$ is connected in parallel to bypass excess current:
+
+$$
+R_s = \frac{I_g R_g}{I - I_g}
+$$
+
+For a galvanometer to measure up to $I = 1\mathrm{ A}$:
+$R_s = (100 \times 10^{-6} \times 50)/(1 - 100 \times 10^{-6}) \approx 5.0 \times 10^{-3}\,\Omega$.
+
+**Converting to voltmeter.** A multiplier resistor $R_m$ is connected in series to limit current:
+
+$$
+R_m = \frac{V}{I_g} - R_g
+$$
+
+For a galvanometer to measure up to $V = 10\mathrm{ V}$:
+$R_m = 10/(100 \times 10^{-6}) - 50 = 99950\,\Omega \approx 100\,\mathrm{k}\Omega$.
+
+<details>
+<summary>Worked Example: Converting a Galvanometer to an Ammeter</summary>
+
+A galvanometer has full-scale deflection current $I_g = 50\,\mu\mathrm{A}$ and internal resistance
+$R_g = 100\,\Omega$.
+
+**Find the shunt resistor needed for an ammeter measuring up to $5\,\mathrm{A}$.**
+
+Using the shunt resistor formula:
+
+$$R_s = \frac{I_g R_g}{I - I_g} = \frac{(50 \times 10^{-6})(100)}{5 - 50 \times 10^{-6}} \approx \frac{5.0 \times 10^{-3}}{5.0} = 1.0 \times 10^{-3}\,\Omega$$
+
+The shunt resistor is $1.0\,\mathrm{m}\Omega$ -- a very small resistance, as expected for an ammeter
+That must carry large currents while bypassing the sensitive galvanometer.
+
+</details>
+
+---
+
+## 8. Cells and Batteries: Deeper Analysis
+
+### 8.1 EMF as Energy per Charge
+
+The emf of a cell is the total energy converted per unit charge:
+
+$$
+\varepsilon = \frac{E_{\mathrm{chemical}}}{Q}
+$$
+
+For a cell that converts $E_{\mathrm{chemical}}$ joules of chemical energy when $Q$ coulombs of
+Charge flow, the emf is $\varepsilon = E_{\mathrm{chemical}}/Q$.
+
+A rechargeable cell can reverse this process: during charging, electrical energy is converted back
+To chemical energy. The charging voltage must exceed the emf to drive current through the cell
+Against its emf.
+
+### 8.2 Discharge Characteristics
+
+As a battery discharges, its emf gradually decreases and its internal resistance increases. This is
+Because the concentration of reactants decreases and reaction products accumulate, affecting the
+Electrochemistry at the electrodes.
+
+For a lead-acid battery, the emf drops from about $12.6\mathrm{ V}$ (fully charged) to approximately
+$11.9\mathrm{ V}$ (discharged), while internal resistance can increase by an order of magnitude.
+
+### 8.3 Combining Cells with Different EMFs
+
+When cells with different emfs are connected in parallel, current can circulate between them even
+With no external load. This is generally avoided in practice unless a diode is used to prevent
+Reverse current.
+
+For cells in series, the total emf is the algebraic sum (taking polarity into account), and the
+Total internal resistance is the sum of individual internal resistances regardless of polarity.
+
+---
+
+## 9. Systematic Circuit Analysis: A Framework
+
+When faced with an arbitrary circuit, apply the following systematic approach:
+
+1. Label all known and unknown quantities (currents, voltages, resistances, emfs).
+2. Assign current directions (if the actual direction is unknown, assume one; a negative result
+   indicates the current flows in the opposite direction).
+3. Apply KCL at each junction to write current equations.
+4. Apply KVL around each independent loop to write voltage equations.
+5. Solve the resulting system of simultaneous equations.
+
+This method works for any circuit topology, regardless of complexity.
+
+<details>
+<summary>Worked Example: Multi-Loop Circuit</summary>
+
+Two cells are connected in parallel across a common load. Cell 1 has
+$\varepsilon_1 = 12\mathrm{ V}$$r_1 = 1.0\,\Omega$. Cell 2 has $\varepsilon_2 = 10\mathrm{ V}$
+$r_2 = 2.0\,\Omega$. The load resistor is $R_L = 5.0\,\Omega$.
+
+Let $I_1$ be the current from cell 1, $I_2$ from cell 2, and $I_L$ through the load (all assumed
+Clockwise through the load).
+
+KCL at the top junction: $I_1 + I_2 = I_L$.
+
+KVL around loop 1 (cell 1, load): $\varepsilon_1 - I_1 r_1 - I_L R_L = 0$Giving
+$12 - I_1 - 5I_L = 0$So $I_1 = 12 - 5I_L$.
+
+KVL around loop 2 (cell 2, load): $\varepsilon_2 - I_2 r_2 - I_L R_L = 0$Giving
+$10 - 2I_2 - 5I_L = 0$So $I_2 = 5 - 2.5I_L$.
+
+Substituting into KCL: $(12 - 5I_L) + (5 - 2.5I_L) = I_L$.
+
+$$
+17 - 7.5I_L = I_L
+$$
+
+$$
+17 = 8.5I_L
+$$
+
+$$
+I_L = 2.0\mathrm{ A}
+$$
+
+Then $I_1 = 12 - 5(2.0) = 2.0\mathrm{ A}$ and $I_2 = 5 - 2.5(2.0) = 0\mathrm{ A}$.
+
+In this specific case, cell 2 contributes no current. The terminal p.d. Of cell 2 is
+$V_2 = \varepsilon_2 = 10\mathrm{ V}$ (no current, so no internal drop), which equals the terminal
+P.d. Of cell 1: $V_1 = 12 - 2.0(1.0) = 10\mathrm{ V}$. The p.d. Across the load is
+$V_L = I_L R_L = 2.0 \times 5.0 = 10\mathrm{ V}$. This is consistent.
+
+</details>
+
+---
+
+## 10. Resistivity Experiments
+
+### 10.1 Determining Resistivity Experimentally
+
+To determine the resistivity of a material:
+
+1. Measure the length $L$ of the wire with a metre rule.
+2. Measure the diameter with a micrometer screw gauge at several points and average to find
+   cross-sectional area $A = \pi d^2/4$.
+3. Connect the wire in a circuit with a variable resistor, ammeter, and voltmeter.
+4. Record $V$ and $I$ for a range of currents (keeping the current low to minimise heating).
+5. Calculate $R = V/I$ for each reading and average.
+6. Compute $\rho = RA/L$.
+
+### 10.2 Sources of Error
+
+Systematic errors include contact resistance at the clips (use four-terminal sensing for high
+Precision), the assumption of uniform wire diameter, and the ammeter/voltmeter resistance effects
+Discussed in Section 7.2.
+
+Random errors are reduced by taking multiple readings and averaging. Temperature control is
+Critical: even small temperature changes during the experiment alter resistivity.
+
+### 10.3 I-V Characteristic Experiments
+
+To obtain I-V characteristics:
+
+1. Connect the component in series with a variable resistor, ammeter, and power supply.
+2. Connect a voltmeter in parallel across the component.
+3. Vary the current and record corresponding $V$-$I$ pairs.
+4. Plot $I$ (y-axis) against $V$ (x-axis) — this is the IB convention.
+
+For a diode, use both forward and reverse bias. In forward bias, include a protective resistor in
+Series to prevent excessive current when the diode conducts.
+
+---
+
+## 11. Summary of Key Equations
+
+:::info[IB Physics Data Booklet — Topic 5] The following are the key equations for current
+Electricity found in the IB Physics data booklet:
+
+| Quantity                         | Equation                                                    |
+| -------------------------------- | ----------------------------------------------------------- |
+| Coulomb's law                    | $F = \dfrac{q_1 q_2}{4\pi\varepsilon_0 r^2}$                |
+| Electric field (point charge)    | $E = \dfrac{q}{4\pi\varepsilon_0 r^2}$                      |
+| Electric field (parallel plates) | $E = \dfrac{V}{d}$                                          |
+| Current (drift velocity)         | $I = nAev_d$                                                |
+| Ohm's law                        | $V = IR$                                                    |
+| Resistance and resistivity       | $R = \dfrac{\rho L}{A}$                                     |
+| Power                            | $P = IV = I^2R = \dfrac{V^2}{R}$                            |
+| Internal resistance              | $V = \varepsilon - Ir$                                      |
+| Potential divider                | $V_{\mathrm{out}} = V_{\mathrm{in}} \dfrac{R_2}{R_1 + R_2}$ |
+| Wheatstone bridge                | $\dfrac{R_1}{R_2} = \dfrac{R_3}{R_4}$                       |
+
+:::
+
+---
+
+## 12. Common Pitfalls: Consolidated
+
+**Sign conventions in KVL.** The single most common source of error in circuit problems. Define your
+Loop direction, assign $+$ to emf rises and $-$ to potential drops across resistors (or vice versa,
+As long as you are consistent), and stick to it.
+
+**Confusing emf with terminal p.d.** Emf is the open-circuit voltage. Terminal p.d. Is always less
+Than or equal to emf (for a cell supplying current). The difference is the "lost volts" $Ir$.
+
+**Assuming all conductors are ohmic.** Diodes, thermistors, LDRs, and filament lamps are all
+Non-ohmic. Ohm's law applies only to metallic conductors at constant temperature.
+
+**Drift velocity confusion.** Electrons drift slowly, but the electric field (and hence the signal)
+Propagates at near light speed. These are completely different phenomena.
+
+**Series vs parallel formulas.** In series, resistances add directly. In parallel, reciprocals add.
+Students frequently mix these up. A useful mnemonic: series is "additive" (path is single), parallel
+Is "reciprocal-additive" (paths multiply).
+
+**Power formula selection.** $P = I^2 R$ assumes current is held constant (series). $P = V^2/R$
+Assumes voltage is held constant (parallel). In circuits with internal resistance, neither may be
+Directly applicable without careful identification of the relevant $V$ and $I$.
+
+**Ammeter in parallel, voltmeter in series.** Connecting an ammeter in parallel creates a short
+Circuit through the ammeter (potentially damaging it). Connecting a voltmeter in series means the
+Circuit is effectively open (the voltmeter's high resistance blocks current). Always connect
+Ammeters in series and voltmeters in parallel.
+
+---
+
+## Problem Set
+
+### Problem 1
+
+Two point charges, $q_1 = +3.0\,\mathrm{nC}$ and $q_2 = -5.0\,\mathrm{nC}$Are separated by
+$0.10\,\mathrm{m}$ in a vacuum. Find the magnitude of the electrostatic force between them and state
+Whether it is attractive or repulsive.
+
+<details>
+<summary>Solution</summary>
+
+$$F = k\frac{|q_1||q_2|}{r^2} = (8.99 \times 10^9)\frac{(3.0 \times 10^{-9})(5.0 \times 10^{-9})}{(0.10)^2}$$
+
+$$F = (8.99 \times 10^9)\frac{1.5 \times 10^{-17}}{0.010} = 1.35 \times 10^{-5}\,\mathrm{N}$$
+
+The force is attractive (opposite charges).
+
+**If you get this wrong, revise:** Section 1.1 Coulomb's Law.
+
+</details>
+
+### Problem 2
+
+An electron ($m_e = 9.11 \times 10^{-31}\,\mathrm{kg}$$e = 1.6 \times 10^{-19}\,\mathrm{C}$) Is
+suspended stationary between two horizontal parallel plates. The plates are $8.0\,\mathrm{mm}$
+Apart. Find the potential difference across the plates.
+
+<details>
+<summary>Solution</summary>
+
+For the electron to be stationary, the electric force must balance the weight:
+
+$$eE = m_e g \implies E = \frac{m_e g}{e} = \frac{(9.11 \times 10^{-31})(9.81)}{1.6 \times 10^{-19}} = 5.59 \times 10^{-11}\,\mathrm{V/m}$$
+
+$$V = Ed = (5.59 \times 10^{-11})(8.0 \times 10^{-3}) = 4.47 \times 10^{-13}\,\mathrm{V}$$
+
+This is an extremely small voltage -- in practice, the electric force is far too weak to suspend an
+Electron against gravity.
+
+**If you get this wrong, revise:** Sections 1.3 and 1.4.
+
+</details>
+
+### Problem 3
+
+A copper wire of length $50\,\mathrm{m}$ and cross-sectional area $1.0\,\mathrm{mm}^2$ carries a
+Current of $3.0\,\mathrm{A}$. The resistivity of copper is $1.7 \times 10^{-8}\,\Omega\,\mathrm{m}$.
+Calculate the resistance of the wire, the p.d. Across it, and the drift velocity of the electrons
+($n = 8.5 \times 10^{28}\,\mathrm{m}^{-3}$).
+
+<details>
+<summary>Solution</summary>
+
+$$R = \rho\frac{L}{A} = (1.7 \times 10^{-8})\frac{50}{1.0 \times 10^{-6}} = 0.85\,\Omega$$
+
+$$V = IR = 3.0 \times 0.85 = 2.55\,\mathrm{V}$$
+
+$$v_d = \frac{I}{nAe} = \frac{3.0}{(8.5 \times 10^{28})(1.0 \times 10^{-6})(1.6 \times 10^{-19})} = 2.21 \times 10^{-4}\,\mathrm{m/s}$$
+
+The drift velocity is approximately $0.22\,\mathrm{mm/s}$.
+
+**If you get this wrong, revise:** Sections 2.2 and 3.2.
+
+</details>
+
+### Problem 4
+
+A cell with emf $12\,\mathrm{V}$ and internal resistance $0.50\,\Omega$ is connected to two
+$6.0\,\Omega$ resistors in parallel. Find the current through each resistor, the terminal p.d., and
+The power dissipated in the external circuit.
+
+<details>
+<summary>Solution</summary>
+
+External resistance:
+
+$$R_{\mathrm{ext}} = \frac{6.0 \times 6.0}{6.0 + 6.0} = 3.0\,\Omega$$
+
+Total current:
+
+$$I = \frac{\varepsilon}{R_{\mathrm{ext}} + r} = \frac{12}{3.0 + 0.50} = \frac{12}{3.5} \approx 3.43\,\mathrm{A}$$
+
+Terminal p.d.:
+
+$$V = \varepsilon - Ir = 12 - 3.43(0.50) = 10.29\,\mathrm{V}$$
+
+Current through each $6\,\Omega$ resistor (equal since they are identical):
+
+$$I_{\mathrm{each}} = \frac{I}{2} = 1.71\,\mathrm{A}$$
+
+Power in external circuit:
+
+$$P_{\mathrm{ext}} = I^2 R_{\mathrm{ext}} = (3.43)^2(3.0) = 35.3\,\mathrm{W}$$
+
+**If you get this wrong, revise:** Sections 4.2 and 5.1.
+
+</details>
+
+### Problem 5
+
+A battery of unknown emf $\varepsilon$ and internal resistance $r$ is connected to a variable
+Resistor. When the external resistance is $8.0\,\Omega$The current is $0.75\,\mathrm{A}$. When the
+External resistance is $18\,\Omega$The current is $0.40\,\mathrm{A}$. Find $\varepsilon$ and $r$.
+
+<details>
+<summary>Solution</summary>
+
+$$\varepsilon = I_1(R_1 + r) = 0.75(8.0 + r) = 6.0 + 0.75r$$
+
+$$\varepsilon = I_2(R_2 + r) = 0.40(18 + r) = 7.2 + 0.40r$$
+
+Setting equal:
+
+$$6.0 + 0.75r = 7.2 + 0.40r \implies 0.35r = 1.2 \implies r = 3.43\,\Omega$$
+
+$$\varepsilon = 6.0 + 0.75(3.43) = 8.57\,\mathrm{V}$$
+
+**If you get this wrong, revise:** Section 5.2.
+
+</details>
+
+### Problem 6
+
+A potential divider circuit consists of a $2000\,\Omega$ and a $3000\,\Omega$ resistor in series
+Across a $12\,\mathrm{V}$ supply. A voltmeter with resistance $10\,\mathrm{k}\Omega$ is connected
+Across the $3000\,\Omega$ resistor. Find the reading on the voltmeter.
+
+<details>
+<summary>Solution</summary>
+
+The voltmeter is in parallel with the $3000\,\Omega$ resistor:
+
+$$R_{\mathrm{parallel}} = \frac{3000 \times 10000}{3000 + 10000} = \frac{3.0 \times 10^7}{13000} = 2308\,\Omega$$
+
+Total circuit resistance:
+
+$$R_{\mathrm{total}} = 2000 + 2308 = 4308\,\Omega$$
+
+Current:
+
+$$I = \frac{12}{4308} = 2.79 \times 10^{-3}\,\mathrm{A}$$
+
+Voltmeter reading (p.d. Across parallel combination):
+
+$$V = IR_{\mathrm{parallel}} = (2.79 \times 10^{-3})(2308) = 6.43\,\mathrm{V}$$
+
+Without the voltmeter, the ideal reading would be $12 \times 3000/5000 = 7.20\,\mathrm{V}$. The
+non-ideal voltmeter loads the circuit and gives a Lower reading.
+
+**If you get this wrong, revise:** Sections 4.4 and 7.2.
+
+</details>
+
+### Problem 7
+
+Three identical cells, each with emf $6.0\,\mathrm{V}$ and internal resistance $1.0\,\Omega$Are
+Connected in series to a $7.0\,\Omega$ resistor. Calculate the total power output of the cells and
+The efficiency of power transfer to the external resistor.
+
+<details>
+<summary>Solution</summary>
+
+$$\varepsilon_{\mathrm{total}} = 3(6.0) = 18.0\,\mathrm{V}, \quad r_{\mathrm{total}} = 3(1.0) = 3.0\,\Omega$$
+
+$$I = \frac{18.0}{7.0 + 3.0} = 1.8\,\mathrm{A}$$
+
+Total power:
+
+$$P_{\mathrm{total}} = \varepsilon I = 18.0 \times 1.8 = 32.4\,\mathrm{W}$$
+
+Power to external resistor:
+
+$$P_{\mathrm{ext}} = I^2 R = (1.8)^2(7.0) = 22.7\,\mathrm{W}$$
+
+Efficiency:
+
+$$\eta = \frac{R}{R + r} = \frac{7.0}{7.0 + 3.0} = 70\%$$
+
+**If you get this wrong, revise:** Sections 5.4 and 6.3.
+
+</details>
+
+### Problem 8
+
+In a Wheatstone bridge, $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 50\,\Omega$. Find the Value
+of the unknown resistance $R_4$ for which the galvanometer reads zero. If $R_4$ is instead
+$120\,\Omega$In which direction does current flow through the galvanometer?
+
+<details>
+<summary>Solution</summary>
+
+At balance:
+
+$$\frac{R_1}{R_2} = \frac{R_3}{R_4} \implies \frac{100}{200} = \frac{50}{R_4} \implies R_4 = \frac{200 \times 50}{100} = 100\,\Omega$$
+
+If $R_4 = 120\,\Omega$The bridge is unbalanced. The ratio $R_3/R_4 = 50/120 = 0.417$ is less Than
+$R_1/R_2 = 0.5$So the p.d. At the $R_1$-$R_3$ junction is higher than at the $R_2$-$R_4$ junction.
+Current flows from the $R_1$-$R_3$ junction through the galvanometer to the $R_2$-$R_4$ junction.
+
+**If you get this wrong, revise:** Section 4.5.
+
+</details>
+
+### Problem 9
+
+A $200\,\mathrm{W}$ lamp is connected to a $240\,\mathrm{V}$ supply. A second identical lamp is
+Connected in parallel. Find the current drawn by each lamp and the total current from the supply.
+
+<details>
+<summary>Solution</summary>
+
+Resistance of each lamp:
+
+$$R = \frac{V^2}{P} = \frac{240^2}{200} = 288\,\Omega$$
+
+Current per lamp:
+
+$$I = \frac{V}{R} = \frac{240}{288} = 0.833\,\mathrm{A}$$
+
+Total current (two identical lamps in parallel):
+
+$$I_{\mathrm{total}} = 2 \times 0.833 = 1.67\,\mathrm{A}$$
+
+Total power: $P_{\mathrm{total}} = 2 \times 200 = 400\,\mathrm{W}$.
+
+Check: $P_{\mathrm{total}} = VI_{\mathrm{total}} = 240 \times 1.67 = 400\,\mathrm{W}$.
+
+**If you get this wrong, revise:** Sections 6.1 and 4.2.
+
+</details>
+
+### Problem 10
+
+A student connects a cell to a resistor and measures a terminal p.d. Of $4.5\,\mathrm{V}$ with a
+Current of $1.5\,\mathrm{A}$. The student then removes the resistor and measures the open-circuit
+P.d. As $5.4\,\mathrm{V}$. Calculate the internal resistance of the cell and the value of the
+External resistor.
+
+<details>
+<summary>Solution</summary>
+
+The open-circuit p.d. Equals the emf: $\varepsilon = 5.4\,\mathrm{V}$.
+
+Using $V = \varepsilon - Ir$:
+
+$$4.5 = 5.4 - 1.5r \implies 1.5r = 0.9 \implies r = 0.60\,\Omega$$
+
+External resistor:
+
+$$R = \frac{V}{I} = \frac{4.5}{1.5} = 3.0\,\Omega$$
+
+**If you get this wrong, revise:** Section 5.1.
+
+</details>
+
+### Problem 11
+
+A circuit contains two loops sharing a common branch. Loop 1 has a $10\,\mathrm{V}$ cell with
+Internal resistance $1.0\,\Omega$ and a $4.0\,\Omega$ resistor. Loop 2 has a $6.0\,\mathrm{V}$ cell
+(with polarity opposing the $10\,\mathrm{V}$ cell) with internal resistance $2.0\,\Omega$ and a
+$5.0\,\Omega$ resistor. The shared branch has a $3.0\,\Omega$ resistor. Use Kirchhoff's laws to find
+The current in the shared branch.
+
+<details>
+<summary>Solution</summary>
+
+Let $I_1$ flow clockwise in loop 1, $I_2$ flow clockwise in loop 2, and $I_3 = I_1 - I_2$ flow
+Through the shared $3.0\,\Omega$ resistor from top to bottom.
+
+KVL around loop 1:
+
+$$10 - I_1(1.0) - (I_1 - I_2)(3.0) - I_1(4.0) = 0 \implies 10 - 8I_1 + 3I_2 = 0 \implies 8I_1 - 3I_2 = 10$$
+
+KVL around loop 2:
+
+$$6 - I_2(2.0) - (I_2 - I_1)(3.0) - I_2(5.0) = 0 \implies 6 + 3I_1 - 10I_2 = 0 \implies 3I_1 - 10I_2 = -6$$
+
+From the first equation: $I_1 = (10 + 3I_2)/8$.
+
+Substituting into the second:
+
+$$3\frac{10 + 3I_2}{8} - 10I_2 = -6 \implies \frac{30 + 9I_2}{8} - 10I_2 = -6$$
+
+$$30 + 9I_2 - 80I_2 = -48 \implies -71I_2 = -78 \implies I_2 = 1.099\,\mathrm{A}$$
+
+$$I_1 = \frac{10 + 3(1.099)}{8} = \frac{13.30}{8} = 1.662\,\mathrm{A}$$
+
+$$I_3 = I_1 - I_2 = 1.662 - 1.099 = 0.563\,\mathrm{A}$$
+
+The current in the shared branch is approximately $0.56\,\mathrm{A}$.
+
+**If you get this wrong, revise:** Sections 4.3 and 9.
+
+</details>
+
+### Problem 12
+
+A tungsten filament has resistance $20\,\Omega$ at $20^\circ\mathrm{C}$. The temperature coefficient
+Of resistance for tungsten is $\alpha = 4.5 \times 10^{-3}\,\mathrm{K}^{-1}$. Find the resistance of
+The filament when operating at $2500^\circ\mathrm{C}$.
+
+<details>
+<summary>Solution</summary>
+
+$$R_T = R_0[1 + \alpha(T - T_0)] = 20[1 + (4.5 \times 10^{-3})(2500 - 20)]$$
+
+$$R_T = 20[1 + (4.5 \times 10^{-3})(2480)] = 20[1 + 11.16] = 20 \times 12.16 = 243.2\,\Omega$$
+
+The resistance increases by a factor of approximately 12, which is why filament lamps draw much more
+Current when first switched on (cold) than during normal operation.
+
+**If you get this wrong, revise:** Section 3.3.
+
+</details>
+
+---
+
+## Related Content at Other Levels
+
+- **A-Level Electricity:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
+- **DSE Electrical Circuits:**
+  [Electrical Circuits](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism)
+
+---
+
+:::tip Diagnostic Test Ready to test your understanding of **Current Electricity**? The
+[diagnostic test](/docs/ib/physics/diagnostics/diag-current-electricity) contains the hardest
+questions within the IB specification for this topic, each with a full worked solution.
+
+**Unit tests** probe edge cases and common misconceptions. **Integration tests** combine Current
+Electricity with other physics topics to test synthesis under exam conditions.
+
+See [Diagnostic Guide](/docs/ib/physics/diagnostics/diagnostic-guide) for instructions on
+self-marking and building a personal test matrix. :::
+
+## Worked Examples
+
+**Example 1: Newton's second law**
+
+A $2.0\,\text{kg}$ object is pulled across a rough horizontal surface by a horizontal force of
+$15\,\text{N}$. The frictional force is $5.0\,\text{N}$. Calculate the acceleration.
+
+**Solution:**
+
+$$F_{\text{net}} = F_{\text{applied}} - F_{\text{friction}} = 15 - 5.0 = 10\,\text{N}$$
+
+$$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$
+
+## Summary
+
+- $V = IR$; $P = IV = I^2R = V^2/R$; EMF = terminal PD $+ Ir$
+- Kirchhoff's current law (junctions) and voltage law (loops)
+- Series: same current, voltages add. Parallel: same voltage, currents add
+- Internal resistance reduces terminal PD under load
+
+## Cross-References
+
+| Topic         | Site    | Link                                                                                                       |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------- |
+| [Electricity] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/electricity/01-current-and-resistance) |
+| [Electricity] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/2-particulate-nature-of-matter/6_current-electricity)        |
+| [Electricity] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism/1_electrical-circuits)         |

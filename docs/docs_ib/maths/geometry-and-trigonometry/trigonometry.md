@@ -593,8 +593,7 @@ $$
 
 **Solution:**
 
-Since $\tan$ has period $\pi$$\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ for
-$n \in \mathbb{Z}$.
+Since $\tan$ has period $\pi$$\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ for $n \in \mathbb{Z}$.
 
 $$
 X = \frac{\pi}{8} + \frac{n\pi}{2}
@@ -950,8 +949,16 @@ and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to trigonometry, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- sine, cosine, and tangent functions
+- trigonometric identities
+- solving trigonometric equations
+- the sine and cosine rules
+- radian measure and arc length
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

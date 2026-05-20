@@ -597,8 +597,16 @@ Targets to link against `Catch2::Catch2WithMain` and remove the `CATCH_CONFIG_MA
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential concepts and techniques related to unit testing, including key
+principles and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and definitions
+- key principles and frameworks
+- practical applications
+- common techniques and methods
+- evaluation and critical analysis
+
+A thorough understanding of these concepts, combined with regular practice and review, is essential
+for mastery of this topic.

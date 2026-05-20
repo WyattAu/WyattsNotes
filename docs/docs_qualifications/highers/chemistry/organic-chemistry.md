@@ -18,24 +18,24 @@ slug: organic-chemistry
 
 ### Hydrocarbons
 
-**Alkanes:** Saturated hydrocarbons with the general formula $\mathrm{C_n\mathrm{H_{2n+2}$. All
-C-C Bonds are single. Names follow the IUPAC system.
+**Alkanes:** Saturated hydrocarbons with the general formula $\mathrm{C_n\mathrm{H_{2n+2}$. All C-C
+Bonds are single. Names follow the IUPAC system.
 
-**Alkenes:** Unsaturated hydrocarbons with the general formula $\mathrm{C_n\mathrm{H_{2n}$.
-Contain at Least one C=C double bond.
+**Alkenes:** Unsaturated hydrocarbons with the general formula $\mathrm{C_n\mathrm{H_{2n}$. Contain
+at Least one C=C double bond.
 
 **Alkynes:** Unsaturated hydrocarbons with the general formula $\mathrm{C_n\mathrm{H_{2n-2}$.
 Contain At least one C=C triple bond.
 
 ### Comparison of Hydrocarbons
 
-| Property        | Alkanes                           | Alkenes                           | Alkynes                           |
-| --------------- | --------------------------------- | --------------------------------- | --------------------------------- |
-| General formula | $\mathrm{C_n\mathrm{H_{2n+2}$ | $\mathrm{C_n\mathrm{H_{2n}$   | $\mathrm{C_n\mathrm{H_{2n-2}$ |
-| Bonding         | Single C-C only                   | At least one C=C                  | At least one C=C                  |
-| Reactivity      | Relatively unreactive             | Reactive (electrophilic addition) | Very reactive                     |
-| Test            | Burns with clean flame            | Decolourises bromine water        | Decolourises bromine water        |
-| Flammability    | Burns in air                      | Burns with smoky flame            | Burns with very smoky flame       |
+| Property        | Alkanes                       | Alkenes                           | Alkynes                       |
+| --------------- | ----------------------------- | --------------------------------- | ----------------------------- |
+| General formula | $\mathrm{C_n\mathrm{H_{2n+2}$ | $\mathrm{C_n\mathrm{H_{2n}$       | $\mathrm{C_n\mathrm{H_{2n-2}$ |
+| Bonding         | Single C-C only               | At least one C=C                  | At least one C=C              |
+| Reactivity      | Relatively unreactive         | Reactive (electrophilic addition) | Very reactive                 |
+| Test            | Burns with clean flame        | Decolourises bromine water        | Decolourises bromine water    |
+| Flammability    | Burns in air                  | Burns with smoky flame            | Burns with very smoky flame   |
 
 ### IUPAC Nomenclature
 
@@ -82,8 +82,8 @@ Name: **butan-2-one**.
 - **Functional group isomers:** Different functional groups (e.g.,
   $\mathrm{C_3\mathrm{H_6\mathrm{O$: propanal vs. Propanone)
 
-**Worked Example 4:** Draw the structural isomers of $\mathrm{C_4\mathrm{H_8\mathrm{O$ that
-are (a) Aldehydes, (b) ketones, (c) alcohols, (d) ethers.
+**Worked Example 4:** Draw the structural isomers of $\mathrm{C_4\mathrm{H_8\mathrm{O$ that are (a)
+Aldehydes, (b) ketones, (c) alcohols, (d) ethers.
 
 (a) Aldehydes: butanal ($\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{CHO$), 2-methylpropanal
 ($(\mathrm{CH_3)_2\mathrm{CHCHO$)
@@ -92,8 +92,8 @@ are (a) Aldehydes, (b) ketones, (c) alcohols, (d) ethers.
 
 (c) Alcohols: butan-1-ol, butan-2-ol, 2-methylpropan-1-ol, 2-methylpropan-2-ol
 
-(d) Ethers: ethoxyethane ($\mathrm{CH_3\mathrm{CH_2\mathrm{OCH_2\mathrm{CH_3$),
-1-methoxypropane, 2-methoxypropane
+(d) Ethers: ethoxyethane ($\mathrm{CH_3\mathrm{CH_2\mathrm{OCH_2\mathrm{CH_3$), 1-methoxypropane,
+2-methoxypropane
 
 **Stereoisomers** have the same structural formula but different spatial arrangement.
 
@@ -107,14 +107,14 @@ are (a) Aldehydes, (b) ketones, (c) alcohols, (d) ethers.
 
 ### Functional Groups
 
-| Class           | Functional Group               | Suffix    | Example          |
-| --------------- | ------------------------------ | --------- | ---------------- |
-| Alcohol         | $-\mathrm{OH$                | -ol       | Ethanol          |
-| Aldehyde        | $-\mathrm{CHO$               | -al       | Ethanal          |
+| Class           | Functional Group           | Suffix    | Example          |
+| --------------- | -------------------------- | --------- | ---------------- |
+| Alcohol         | $-\mathrm{OH$              | -ol       | Ethanol          |
+| Aldehyde        | $-\mathrm{CHO$             | -al       | Ethanal          |
 | Ketone          | $>\mathrm{C=\mathrm{O$     | -one      | Propanone        |
-| Carboxylic acid | $-\mathrm{COOH$              | -oic acid | Ethanoic acid    |
-| Ester           | $-\mathrm{COO-$              | -oate     | Methyl ethanoate |
-| Amine           | $-\mathrm{NH_2$              | -amine    | Ethanamine       |
+| Carboxylic acid | $-\mathrm{COOH$            | -oic acid | Ethanoic acid    |
+| Ester           | $-\mathrm{COO-$            | -oate     | Methyl ethanoate |
+| Amine           | $-\mathrm{NH_2$            | -amine    | Ethanamine       |
 | Halogenoalkane  | $-\mathrm{Cl, -\mathrm{Br$ | halogeno- | Chloroethane     |
 
 ### Reactions of Alkanes
@@ -182,8 +182,8 @@ $$\mathrm{CH_3\mathrm{CH=\mathrm{CH_2 + \mathrm{HBr \to \mathrm{CH_3\mathrm{CHBr
 
 $$\mathrm{CH_2=\mathrm{CH_2 + \mathrm{H_2\mathrm{O \xrightarrow{\mathrm{H^+} \mathrm{CH_3\mathrm{CH_2\mathrm{OH$$
 
-**Worked Example 7:** Write the mechanism for the addition of $\mathrm{Br_2$ to ethene, showing
-the Bromonium ion intermediate.
+**Worked Example 7:** Write the mechanism for the addition of $\mathrm{Br_2$ to ethene, showing the
+Bromonium ion intermediate.
 
 **Step 1:** The $\pi$ electrons of the C=C bond attack a bromine molecule, forming a bromonium ion
 Intermediate and a bromide ion.
@@ -281,12 +281,10 @@ The $\pi$ electrons in the C=C bond attack an electrophile, forming a carbocatio
 
 **Worked Example 9:** Addition of HBr to propene.
 
-Step 1:
-$\mathrm{CH_3\mathrm{CH=\mathrm{CH_2 + \mathrm{H^+ \to \mathrm{CH_3\mathrm{CH^+\mathrm{CH_3$
+Step 1: $\mathrm{CH_3\mathrm{CH=\mathrm{CH_2 + \mathrm{H^+ \to \mathrm{CH_3\mathrm{CH^+\mathrm{CH_3$
 (secondary carbocation, more stable)
 
-Step 2:
-$\mathrm{CH_3\mathrm{CH^+\mathrm{CH_3 + \mathrm{Br^- \to \mathrm{CH_3\mathrm{CHBrCH_3$
+Step 2: $\mathrm{CH_3\mathrm{CH^+\mathrm{CH_3 + \mathrm{Br^- \to \mathrm{CH_3\mathrm{CHBrCH_3$
 
 The minor product (1-bromopropane) forms from the less stable primary carbocation
 $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2^+$.
@@ -316,22 +314,22 @@ Positive charge.
 1-bromopropane.
 
 2-bromo-2-methylpropane is a tertiary halogenoalkane. In $S_N1$The rate-determining step is
-Formation of the carbocation. The tertiary carbocation $(\mathrm{CH_3)_3\mathrm{C^+$ is
-stabilised by Three methyl groups (+I effect), making it relatively easy to form. 1-bromopropane
-would form a Primary carbocation ($\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2^+$), which is much
-less stable. Therefore, 2-bromo-2-methylpropane reacts faster via $S_N1$.
+Formation of the carbocation. The tertiary carbocation $(\mathrm{CH_3)_3\mathrm{C^+$ is stabilised
+by Three methyl groups (+I effect), making it relatively easy to form. 1-bromopropane would form a
+Primary carbocation ($\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2^+$), which is much less stable.
+Therefore, 2-bromo-2-methylpropane reacts faster via $S_N1$.
 
 ### Comparison of $S_N1$ and $S_N2$
 
-| Feature                   | $S_N1$                                  | $S_N2$                          |
-| ------------------------- | --------------------------------------- | ------------------------------- |
-| Steps                     | Two (carbocation intermediate)          | One (concerted)                 |
-| Rate law                  | First order                             | Second order                    |
-| Stereochemistry           | Racemisation                            | Inversion                       |
-| Favoured substrate        | Tertiary                                | Primary                         |
+| Feature                   | $S_N1$                              | $S_N2$                        |
+| ------------------------- | ----------------------------------- | ----------------------------- |
+| Steps                     | Two (carbocation intermediate)      | One (concerted)               |
+| Rate law                  | First order                         | Second order                  |
+| Stereochemistry           | Racemisation                        | Inversion                     |
+| Favoured substrate        | Tertiary                            | Primary                       |
 | Favoured nucleophile      | Weak (e.g., $\mathrm{H_2\mathrm{O$) | Strong (e.g., $\mathrm{OH^-$) |
-| Carbocation rearrangement | Possible                                | Not applicable                  |
-| Solvent effect            | Favoured by polar protic                | Favoured by polar aprotic       |
+| Carbocation rearrangement | Possible                            | Not applicable                |
+| Solvent effect            | Favoured by polar protic            | Favoured by polar aprotic     |
 
 **Elimination (E1 and E2):**
 
@@ -362,13 +360,13 @@ Nylon and Kevlar are examples of polyamides.
 
 ### Comparison: Addition vs. Condensation Polymers
 
-| Feature          | Addition polymer            | Condensation polymer                              |
-| ---------------- | --------------------------- | ------------------------------------------------- |
-| Monomers         | Alkenes                     | Two different functional groups                   |
+| Feature          | Addition polymer            | Condensation polymer                          |
+| ---------------- | --------------------------- | --------------------------------------------- |
+| Monomers         | Alkenes                     | Two different functional groups               |
 | Byproduct        | None                        | Small molecule (e.g., $\mathrm{H_2\mathrm{O$) |
-| Bond formed      | C-C                         | Ester or amide                                    |
-| Example          | Polythene, PVC              | Nylon, polyester                                  |
-| Biodegradability | Generally not biodegradable | Can be biodegradable                              |
+| Bond formed      | C-C                         | Ester or amide                                |
+| Example          | Polythene, PVC              | Nylon, polyester                              |
+| Biodegradability | Generally not biodegradable | Can be biodegradable                          |
 
 ### Optical Activity
 
@@ -378,8 +376,8 @@ Requires a chiral centre (carbon with four different groups attached).
 - A **racemic mixture** is a 50:50 mixture of enantiomers (optically inactive)
 - Enantiomers have identical physical properties except for their effect on plane-polarised light
 
-**Worked Example 12:** Explain why $\mathrm{CH_3\mathrm{CH(\mathrm{OH)\mathrm{COOH$ is
-optically active, And draw both enantiomers.
+**Worked Example 12:** Explain why $\mathrm{CH_3\mathrm{CH(\mathrm{OH)\mathrm{COOH$ is optically
+active, And draw both enantiomers.
 
 Carbon-2 has four different groups attached: $\mathrm{H$$\mathrm{OH$$\mathrm{CH_3$And
 $\mathrm{COOH$. This makes it a chiral centre. The two enantiomers are non-superimposable mirror
@@ -414,8 +412,8 @@ Images that rotate plane-polarised light in opposite directions.
    $\mathrm{CH_3\mathrm{CH_2\mathrm{CH(\mathrm{CH_3)\mathrm{CH_2\mathrm{CH_2\mathrm{Cl$(b)
    $\mathrm{CH_3\mathrm{COCH_2\mathrm{CH_3$.
 
-2. Draw the structural isomers of $\mathrm{C_4\mathrm{H_8\mathrm{O$ that are (a) aldehydes,
-   (b) ketones, (c) alcohols, (d) ethers.
+2. Draw the structural isomers of $\mathrm{C_4\mathrm{H_8\mathrm{O$ that are (a) aldehydes, (b)
+   ketones, (c) alcohols, (d) ethers.
 
 3. Write the mechanism for the addition of $\mathrm{Br_2$ to ethene, showing the bromonium ion
    intermediate.
@@ -430,11 +428,11 @@ Images that rotate plane-polarised light in opposite directions.
 7. Draw the repeating unit of the polyester formed from benzene-1,4-dicarboxylic acid and
    ethane-1,2-diol.
 
-8. Explain why the compound $\mathrm{CH_3\mathrm{CH(\mathrm{OH)\mathrm{COOH$ is optically
-   active, and draw both enantiomers.
+8. Explain why the compound $\mathrm{CH_3\mathrm{CH(\mathrm{OH)\mathrm{COOH$ is optically active,
+   and draw both enantiomers.
 
-9. Describe the mechanism of the electrophilic addition of $\mathrm{Br_2$ to propene, explaining
-   why 1,2-dibromopropane is the major product.
+9. Describe the mechanism of the electrophilic addition of $\mathrm{Br_2$ to propene, explaining why
+   1,2-dibromopropane is the major product.
 
 10. Draw and name all structural isomers of $\mathrm{C_4\mathrm{H_9\mathrm{Cl$.
 
@@ -500,20 +498,20 @@ This example illustrates the limitations of certain synthetic routes at Higher l
 
 ### Functional Group Interconversion Summary
 
-| From            | To                | Reagent/Condition                            |
-| --------------- | ----------------- | -------------------------------------------- |
-| Alkene          | Alkane            | $\mathrm{H_2$Ni catalyst                   |
+| From            | To                | Reagent/Condition                        |
+| --------------- | ----------------- | ---------------------------------------- |
+| Alkene          | Alkane            | $\mathrm{H_2$Ni catalyst                 |
 | Alkene          | Haloalkane        | $\mathrm{HX$ or $\mathrm{X_2$            |
-| Alkene          | Alcohol           | $\mathrm{H_2\mathrm{O$$\mathrm{H^+$    |
-| Alcohol         | Aldehyde          | $[\mathrm{O]$Distillation                  |
-| Alcohol         | Carboxylic acid   | $[\mathrm{O]$Reflux                        |
+| Alkene          | Alcohol           | $\mathrm{H_2\mathrm{O$$\mathrm{H^+$      |
+| Alcohol         | Aldehyde          | $[\mathrm{O]$Distillation                |
+| Alcohol         | Carboxylic acid   | $[\mathrm{O]$Reflux                      |
 | Alcohol         | Alkene            | $\mathrm{conc. H_2\mathrm{SO_4$Heat      |
-| Haloalkane      | Alcohol           | $\mathrm{NaOH (aq)$                        |
-| Haloalkane      | Amine             | $\mathrm{NH_3$ (excess)                    |
+| Haloalkane      | Alcohol           | $\mathrm{NaOH (aq)$                      |
+| Haloalkane      | Amine             | $\mathrm{NH_3$ (excess)                  |
 | Carboxylic acid | Ester             | Alcohol, $\mathrm{conc. H_2\mathrm{SO_4$ |
-| Carboxylic acid | Salt              | Base / carbonate                             |
-| Aldehyde        | Primary alcohol   | $\mathrm{NaBH_4$                           |
-| Ketone          | Secondary alcohol | $\mathrm{NaBH_4$                           |
+| Carboxylic acid | Salt              | Base / carbonate                         |
+| Aldehyde        | Primary alcohol   | $\mathrm{NaBH_4$                         |
+| Ketone          | Secondary alcohol | $\mathrm{NaBH_4$                         |
 
 ---
 
@@ -637,8 +635,8 @@ To assign E/Z to alkenes:
 
 $$\mathrm{CH_3\mathrm{C(\mathrm{Br)=\mathrm{C(\mathrm{Cl)\mathrm{H$$
 
-On the left carbon: $\mathrm{Br$ (priority 1) vs. $\mathrm{CH_3$ (priority 2). On the right
-carbon: $\mathrm{Cl$ (priority 1) vs. $\mathrm{H$ (priority 2).
+On the left carbon: $\mathrm{Br$ (priority 1) vs. $\mathrm{CH_3$ (priority 2). On the right carbon:
+$\mathrm{Cl$ (priority 1) vs. $\mathrm{H$ (priority 2).
 
 If $\mathrm{Br$ and $\mathrm{Cl$ are on the same side: Z isomer. If on opposite sides: E isomer.
 
@@ -661,11 +659,11 @@ Cancelling dipoles.
 
 ### Classification and Reactivity
 
-| Type      | Structure                     | $S_N1$ or $S_N2$ | Reactivity with NaOH (aq) |
-| --------- | ----------------------------- | ---------------- | ------------------------- |
+| Type      | Structure                 | $S_N1$ or $S_N2$ | Reactivity with NaOH (aq) |
+| --------- | ------------------------- | ---------------- | ------------------------- |
 | Primary   | R-$\mathrm{CH_2\mathrm{X$ | $S_N2$           | Slow                      |
-| Secondary | R$_2$-$\mathrm{CHX$         | Both             | Moderate                  |
-| Tertiary  | R$_3$-$\mathrm{CX$          | $S_N1$           | Fast                      |
+| Secondary | R$_2$-$\mathrm{CHX$       | Both             | Moderate                  |
+| Tertiary  | R$_3$-$\mathrm{CX$        | $S_N1$           | Fast                      |
 
 ### Environmental Impact of Halogenoalkanes
 
@@ -680,12 +678,12 @@ $$\mathrm{ClO^\bullet + \mathrm{O \to \mathrm{Cl^\bullet + \mathrm{O_2$$
 
 ### Nucleophilic Substitution with Different Nucleophiles
 
-| Nucleophile                | Product        | Notes                                    |
-| -------------------------- | -------------- | ---------------------------------------- |
-| $\mathrm{OH^-$ (aq)      | Alcohol        | Hydrolysis                               |
-| $\mathrm{CN^-$           | Nitrile        | Extends carbon chain by one              |
-| $\mathrm{NH_3$ (excess)  | Primary amine  | Produces $\mathrm{NH_4^+$ as byproduct |
-| $\mathrm{H_2\mathrm{O$ | Alcohol (slow) | Acidic conditions needed                 |
+| Nucleophile             | Product        | Notes                                  |
+| ----------------------- | -------------- | -------------------------------------- |
+| $\mathrm{OH^-$ (aq)     | Alcohol        | Hydrolysis                             |
+| $\mathrm{CN^-$          | Nitrile        | Extends carbon chain by one            |
+| $\mathrm{NH_3$ (excess) | Primary amine  | Produces $\mathrm{NH_4^+$ as byproduct |
+| $\mathrm{H_2\mathrm{O$  | Alcohol (slow) | Acidic conditions needed               |
 
 **Worked Example 22:** Describe the reaction of 1-bromopropane with potassium cyanide and explain
 The importance of this reaction in organic synthesis.
@@ -700,24 +698,33 @@ Carboxylic acid, providing a route to chain-elongated compounds.
 
 ## Summary Table: Key Organic Reactions
 
-| Reactant          | Reagent                                  | Product               | Reaction type             |
-| ----------------- | ---------------------------------------- | --------------------- | ------------------------- |
-| Alkene            | $\mathrm{H_2$/Ni                       | Alkane                | Addition                  |
-| Alkene            | $\mathrm{HX$                           | Haloalkane            | Electrophilic addition    |
-| Alkene            | $\mathrm{X_2$                          | Dihaloalkane          | Electrophilic addition    |
-| Alkene            | $\mathrm{H_2\mathrm{O/\mathrm{H^+$ | Alcohol               | Electrophilic addition    |
-| Primary alcohol   | $[\mathrm{O]$Distil                    | Aldehyde              | Oxidation                 |
-| Primary alcohol   | $[\mathrm{O]$Reflux                    | Carboxylic acid       | Oxidation                 |
-| Secondary alcohol | $[\mathrm{O]$                          | Ketone                | Oxidation                 |
-| Alcohol           | $\mathrm{conc. H_2\mathrm{SO_4$Heat  | Alkene                | Elimination (dehydration) |
-| Alcohol + acid    | $\mathrm{conc. H_2\mathrm{SO_4$      | Ester                 | Esterification            |
-| Haloalkane        | $\mathrm{NaOH (aq)$                    | Alcohol               | Nucleophilic substitution |
-| Haloalkane        | $\mathrm{KCN$                          | Nitrile               | Nucleophilic substitution |
-| Carboxylic acid   | $\mathrm{NaOH$                         | Carboxylate salt      | Acid-base                 |
-| Ester             | $\mathrm{NaOH (aq)$                    | Carboxylate + alcohol | Base hydrolysis           |
-| Aldehyde          | $\mathrm{NaBH_4$                       | Primary alcohol       | Reduction                 |
-| Ketone            | $\mathrm{NaBH_4$                       | Secondary alcohol     | Reduction                 |
+| Reactant          | Reagent                             | Product               | Reaction type             |
+| ----------------- | ----------------------------------- | --------------------- | ------------------------- |
+| Alkene            | $\mathrm{H_2$/Ni                    | Alkane                | Addition                  |
+| Alkene            | $\mathrm{HX$                        | Haloalkane            | Electrophilic addition    |
+| Alkene            | $\mathrm{X_2$                       | Dihaloalkane          | Electrophilic addition    |
+| Alkene            | $\mathrm{H_2\mathrm{O/\mathrm{H^+$  | Alcohol               | Electrophilic addition    |
+| Primary alcohol   | $[\mathrm{O]$Distil                 | Aldehyde              | Oxidation                 |
+| Primary alcohol   | $[\mathrm{O]$Reflux                 | Carboxylic acid       | Oxidation                 |
+| Secondary alcohol | $[\mathrm{O]$                       | Ketone                | Oxidation                 |
+| Alcohol           | $\mathrm{conc. H_2\mathrm{SO_4$Heat | Alkene                | Elimination (dehydration) |
+| Alcohol + acid    | $\mathrm{conc. H_2\mathrm{SO_4$     | Ester                 | Esterification            |
+| Haloalkane        | $\mathrm{NaOH (aq)$                 | Alcohol               | Nucleophilic substitution |
+| Haloalkane        | $\mathrm{KCN$                       | Nitrile               | Nucleophilic substitution |
+| Carboxylic acid   | $\mathrm{NaOH$                      | Carboxylate salt      | Acid-base                 |
+| Ester             | $\mathrm{NaOH (aq)$                 | Carboxylate + alcohol | Base hydrolysis           |
+| Aldehyde          | $\mathrm{NaBH_4$                    | Primary alcohol       | Reduction                 |
+| Ketone            | $\mathrm{NaBH_4$                    | Secondary alcohol     | Reduction                 |
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Rate equation**
+
+The reaction $\text{A} + \text{B} \rightarrow \text{C}$ has rate equation
+$\text{rate} = k[\text{A}][\text{B}]^2$. When $[\text{A}] = 0.10\,\text{mol\,dm}^{-3}$ and
+$[\text{B}] = 0.20\,\text{mol\,dm}^{-3}$, the rate is
+$2.0 \times 10^{-3}\,\text{mol\,dm}^{-3}\text{s}^{-1}$. Calculate $k$.
+
+**Solution:**
+
+$$k = \frac{\text{rate}}{[\text{A}][\text{B}]^2} = \frac{2.0 \times 10^{-3}}{(0.10)(0.20)^2} = \frac{2.0 \times 10^{-3}}{4.0 \times 10^{-3}} = 0.50\,\text{mol}^{-2}\,\text{dm}^6\text{s}^{-1}$$

@@ -224,8 +224,13 @@ Single commit — straightforward revert.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Worked Examples
+2. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
+
+4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.

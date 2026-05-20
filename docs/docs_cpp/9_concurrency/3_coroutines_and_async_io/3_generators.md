@@ -54,8 +54,8 @@ Iterator is advanced. This makes generators suitable for representing potentiall
 Sequences, large data pipelines, or expensive computations where only a prefix of the results is
 Needed.
 
-The memory usage of a generator is $\mathcal{O}(d)$ where $d$ is the depth of the coroutine's
-local Variable state that crosses a suspend point — constant and independent of the number of Values
+The memory usage of a generator is $\mathcal{O}(d)$ where $d$ is the depth of the coroutine's local
+Variable state that crosses a suspend point — constant and independent of the number of Values
 produced.
 
 ## Comparison with Python Generators
@@ -416,7 +416,7 @@ int main() {
 | Coroutine frame allocation | 1 heap allocation per `std::generator` creation  |
 | Frame size                 | ~100–300 bytes (depends on local variables)      |
 | Resume/suspend overhead    | ~10–50ns (comparable to a virtual function call) |
-| Memory usage (per element) | $\mathcal{O}(1)$ — no accumulation         |
+| Memory usage (per element) | $\mathcal{O}(1)$ — no accumulation               |
 | Cache behavior             | Poor if frame is large and accessed infrequently |
 
 :::warning Heap allocation. Every `std::generator` coroutine frame is heap-allocated. For
@@ -513,8 +513,16 @@ int main() {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential concepts and techniques related to generators (std::generator),
+including key principles and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and definitions
+- key principles and frameworks
+- practical applications
+- common techniques and methods
+- evaluation and critical analysis
+
+A thorough understanding of these concepts, combined with regular practice and review, is essential
+for mastery of this topic.

@@ -135,8 +135,8 @@ _Proof._ For a bandlimited AWGN channel, the number of distinguishable signal le
 By the noise power. Let $\mathrm{SNR = S/N$ where $S$ is signal power and $N = N_0 H$ is noise
 Power. The number of distinguishable amplitude levels is proportional to $\sqrt{1 + \mathrm{SNR}$.
 With $\log_2$ levels per signal element and $2H$ signal elements per second (Nyquist), the maximum
-Error-free rate is
-$C = 2H \cdot \tfrac{1}{2}\log_2(1 + \mathrm{SNR) = H \log_2(1 + \mathrm{SNR)$. $\blacksquare$
+Error-free rate is $C = 2H \cdot \tfrac{1}{2}\log_2(1 + \mathrm{SNR) = H \log_2(1 + \mathrm{SNR)$.
+$\blacksquare$
 
 **Example.** A telephone line has $H = 3100$ Hz and $\mathrm{SNR = 3162$ (35 dB). Shannon limit:
 $C = 3100 \times \log_2(3163) \approx 34860$ bps.
@@ -577,13 +577,13 @@ Does not. $\blacksquare$
 
 **Switch forwarding methods.** A layer-2 switch can forward frames using two strategies:
 
-| Aspect             | Store-and-Forward                  | Cut-Through                          |
-| ------------------ | ---------------------------------- | ------------------------------------ |
-| Operation          | Receives entire frame first        | Reads destination MAC only           |
+| Aspect             | Store-and-Forward                | Cut-Through                        |
+| ------------------ | -------------------------------- | ---------------------------------- |
+| Operation          | Receives entire frame first      | Reads destination MAC only         |
 | Latency            | $L/R + d_{\mathrm{prop}$ per hop | $L_h/R + d_{\mathrm{prop}$ per hop |
-| Error detection    | Can check FCS before forward       | Cannot check FCS                     |
-| Memory requirement | Must buffer full frame             | Only needs header buffer             |
-| Use case           | General-purpose switching          | Low-latency environments             |
+| Error detection    | Can check FCS before forward     | Cannot check FCS                   |
+| Memory requirement | Must buffer full frame           | Only needs header buffer           |
+| Use case           | General-purpose switching        | Low-latency environments           |
 
 Where $L$ is the full frame length, $L_h$ is the header length (14 bytes for Ethernet), $R$ is the
 Link rate, and $d_{\mathrm{prop}$ is the propagation delay.
@@ -1067,8 +1067,8 @@ Client                        Server
   |      (wait 2*MSL)         |    Server: CLOSED
 ```
 
-**TIME_WAIT.** Client waits $2 \times \mathrm{MSL$ (Maximum Segment Lifetime, 60 s) Before
-closing. Ensures: (1) the last ACK reaches the server; (2) old segments have expired.
+**TIME_WAIT.** Client waits $2 \times \mathrm{MSL$ (Maximum Segment Lifetime, 60 s) Before closing.
+Ensures: (1) the last ACK reaches the server; (2) old segments have expired.
 
 **TCP state diagram** (state transitions):
 
@@ -1108,8 +1108,8 @@ TCP adapts its sending rate based on perceived network congestion.
 `ssthresh` or loss occurs.
 
 **Congestion avoidance.** When $\mathrm{cwnd \geq \mathrm{ssthresh$Increase `cwnd` by
-$\mathrm{MSS \times (\mathrm{MSS / \mathrm{cwnd)$ per ACK (linear growth, approximately 1 MSS
-Per RTT).
+$\mathrm{MSS \times (\mathrm{MSS / \mathrm{cwnd)$ per ACK (linear growth, approximately 1 MSS Per
+RTT).
 
 **Fast retransmit.** Three duplicate ACKs trigger immediate retransmission of the missing segment.
 
@@ -1184,8 +1184,8 @@ $$\mathrm{RTT_d = (1 - \beta)\,\mathrm{RTT_d + \beta\,|\mathrm{RTT_m - \mathrm{R
 
 $$\mathrm{RTO = \mathrm{RTT_s + 4 \cdot \mathrm{RTT_d$$
 
-Where $\mathrm{RTT_m$ = measured RTT, $\alpha = 1/8$$\beta = 1/4$. Initial RTO = 1 s; minimum RTO
-= 200 ms.
+Where $\mathrm{RTT_m$ = measured RTT, $\alpha = 1/8$$\beta = 1/4$. Initial RTO = 1 s; minimum RTO =
+200 ms.
 
 :::caution Common Pitfall Karn's algorithm: do not update RTT estimates for retransmitted segments.
 The ACK could correspond To either the original or the retransmission (retransmission ambiguity).
@@ -1194,14 +1194,13 @@ The ACK could correspond To either the original or the retransmission (retransmi
 <details>
 <summary>Worked Example: RTT Estimation</summary>
 
-Given: $\alpha = 1/8$$\beta = 1/4$Initial $\mathrm{RTT_s = 0$$\mathrm{RTT_d = 0$. Measured RTTs:
-220 ms, 240 ms, 230 ms, 260 ms, 250 ms.
+Given: $\alpha = 1/8$$\beta = 1/4$Initial $\mathrm{RTT_s = 0$$\mathrm{RTT_d = 0$. Measured RTTs: 220
+ms, 240 ms, 230 ms, 260 ms, 250 ms.
 
 **After measurement 1 (220 ms):**
 
 $\mathrm{RTT_s = (7/8)(0) + (1/8)(220) = 27.5$ ms
-$\mathrm{RTT_d = (3/4)(0) + (1/4)|220 - 27.5| = 48.125$ ms
-$\mathrm{RTO = 27.5 + 4(48.125) = 220$ ms
+$\mathrm{RTT_d = (3/4)(0) + (1/4)|220 - 27.5| = 48.125$ ms $\mathrm{RTO = 27.5 + 4(48.125) = 220$ ms
 
 **After measurement 2 (240 ms):**
 
@@ -1683,8 +1682,8 @@ Rate limiting, connection throttling.
    error-free data rate. If 64 signal levels are used with a Nyquist-based scheme, is the channel
    being used within its theoretical limit?
 
-3. **Nyquist vs Shannon.** A channel has $H = 3000$ Hz and $\mathrm{SNR = 31$ (about 15 dB). What
-   is the maximum number of signal levels $V$ that can be used reliably?
+3. **Nyquist vs Shannon.** A channel has $H = 3000$ Hz and $\mathrm{SNR = 31$ (about 15 dB). What is
+   the maximum number of signal levels $V$ that can be used reliably?
 
 4. **Hamming code.** Encode the data bits $d_1 d_2 d_3 d_4 = 0110$ using Hamming(7,4). If bit 5 of
    the transmitted codeword is flipped, show how the receiver detects and corrects the error.
@@ -1783,8 +1782,69 @@ _Hint:_ Total data = 630 KB = 5.04 Mb. Transmission time = 5.04 / 10 = 0.504 s.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
+
+2. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
+
+3. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+
+4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: IP Addressing and Subnet Mask
+
+**Problem.** Given IP `192.168.10.130` with subnet mask `255.255.255.192`, find the network address,
+broadcast address, and usable host range.
+
+**Solution.** Mask `/26` means 64 addresses per subnet.
+
+Network: `192.168.10.128` (IP AND mask = `130 AND 192 = 128`).
+
+Broadcast: `192.168.10.191` (network + 63).
+
+Usable hosts: `192.168.10.129` to `192.168.10.190` (62 hosts).
+
+$\blacksquare$
+
+### Example 2: CRC Error Detection
+
+**Problem.** Compute the CRC for data `11010011101100` using divisor `1011`.
+
+**Solution.** Append 3 zeros (divisor length − 1): `11010011101100000`.
+
+XOR division by `1011`:
+
+```
+11010011101100000 ÷ 1011
+→ remainder = 100
+```
+
+Transmitted frame: `11010011101100100`. Receiver divides by `1011`; remainder 0 → no error.
+
+$\blacksquare$
+
+## Summary
+
+- OSI 7-layer model: Physical → Data Link → Network → Transport → Session → Presentation →
+  Application.
+- TCP/IP model maps to 4 layers; TCP provides reliable, ordered delivery; UDP provides fast,
+  connectionless transport.
+- IP addressing: IPv4 uses 32-bit addresses with CIDR notation; subnet masks determine network vs
+  host portions.
+- DNS translates domain names to IP addresses using hierarchical, distributed resolution with
+  caching.
+- HTTP/HTTPS: request-response protocol; TLS provides encryption, authentication, and integrity at
+  the transport layer.
+
+## Cross-References
+
+| Topic                          | Site           | Link                                                          |
+| ------------------------------ | -------------- | ------------------------------------------------------------- |
+| Advanced Computer Networks     | WyattsNotes    | [View](/docs/university/computing/computer-networks-advanced) |
+| Operating Systems              | WyattsNotes    | [View](/docs/university/computing/operating-systems)          |
+| Databases                      | WyattsNotes    | [View](/docs/university/computing/databases)                  |
+| Computer Networking — Stanford | Stanford CS144 | [View](https://cs144.github.io/)                              |

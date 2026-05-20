@@ -159,12 +159,12 @@ Conditions.
 
 ### Types of Radiation
 
-| Type       | Symbol                            | Charge | Mass (u) | Penetrating Power | Ionising Power | Stopped By            |
-| :--------- | :-------------------------------- | :----- | :------- | :---------------- | :------------- | :-------------------- |
+| Type       | Symbol                          | Charge | Mass (u) | Penetrating Power | Ionising Power | Stopped By            |
+| :--------- | :------------------------------ | :----- | :------- | :---------------- | :------------- | :-------------------- |
 | Alpha      | $\alpha$ ($^4_2\mathrm{He}$)    | +2e    | 4        | Low               | High           | Paper / few cm of air |
 | Beta-minus | $\beta^-$ ($^0_{-1}\mathrm{e}$) | -1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
 | Beta-plus  | $\beta^+$ ($^0_{+1}\mathrm{e}$) | +1e    | ~0       | Medium            | Medium         | Few mm of aluminium   |
-| Gamma      | $\gamma$                          | 0      | 0        | High              | Low            | Several cm of lead    |
+| Gamma      | $\gamma$                        | 0      | 0        | High              | Low            | Several cm of lead    |
 
 ### Decay Equations
 
@@ -524,12 +524,13 @@ Diffraction is observable.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-## Summary
+2. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.

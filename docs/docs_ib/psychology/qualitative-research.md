@@ -346,12 +346,13 @@ Qualitative research reports include the following sections:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Presenting theories without the supporting empirical evidence that led to their acceptance.
 
-## Summary
+2. Stating that 'the results show' without considering whether the findings can be generalised
+   beyond the sample.
 
-<!-- TODO: Add a summary for this topic -->
+3. Failing to discuss ethical issues (informed consent, deception, debriefing, right to withdraw)
+   when evaluating studies.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Describing a study without evaluating its methodology (e.g., sample, controls, ecological
+   validity).

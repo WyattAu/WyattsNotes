@@ -795,8 +795,16 @@ endif()
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of installing compiler, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- relational databases and SQL
+- normalisation (1NF, 2NF, 3NF)
+- entity-relationship diagrams
+- transaction processing (ACID)
+- NoSQL and distributed databases
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

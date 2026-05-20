@@ -906,12 +906,13 @@ policies to shift SRAS right (and LRAS right from 500 to a higher level) would a
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Using circular reasoning by assuming the conclusion when evaluating economic policy
+   effectiveness.
 
-## Summary
+2. Stating that 'demand falls' without specifying whether it is a contraction (movement along) or a
+   decrease (shift) of the demand curve.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing a movement along a curve with a shift of the curve — movements are caused by price
+   changes; shifts by non-price determinants.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.

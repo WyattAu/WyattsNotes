@@ -724,12 +724,13 @@ The same file, and the owner can modify the ACL to add or revoke permissions at 
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Summary
+2. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.

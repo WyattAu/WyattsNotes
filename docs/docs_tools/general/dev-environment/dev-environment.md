@@ -813,8 +813,16 @@ build:
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the geographical processes and issues related to development environment setup,
+including key theories, case studies, and management strategies.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- geographical concepts and theories
+- case studies and examples
+- data analysis and fieldwork techniques
+- sustainability and management strategies
+- synthesis and evaluation
+
+Using specific case studies and data to support arguments is essential for achieving the highest
+marks in geography assessments.

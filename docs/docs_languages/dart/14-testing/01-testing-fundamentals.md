@@ -1396,8 +1396,16 @@ It as a floor, not a ceiling, and supplement it with code review of assertion qu
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of testing fundamentals, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- CPU architecture and the fetch-decode-execute cycle
+- memory hierarchy (cache, RAM, virtual)
+- input/output systems
+- operating systems and scheduling
+- interrupts and polling
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

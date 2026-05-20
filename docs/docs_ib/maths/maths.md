@@ -203,8 +203,7 @@ $\mathbf{b} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix}$.
 <details>
 <summary>Solution</summary>
 
-- **Dot product:**
-  $\mathbf{a} \cdot \mathbf{b} = (2)(4) + (3)(-1) + (-1)(2) = 8 - 3 - 2 = 3$
+- **Dot product:** $\mathbf{a} \cdot \mathbf{b} = (2)(4) + (3)(-1) + (-1)(2) = 8 - 3 - 2 = 3$
 - **Magnitudes:**
   $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$$\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
 - **Angle:**
@@ -806,12 +805,12 @@ If you get this wrong, revise: Exponential growth and separable differential equ
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-<!-- TODO: Add a summary for this topic -->
+3. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Cancelling terms instead of factors — $\frac{ab + ac}{a}$ simplifies to $b + c$, not $bc$.

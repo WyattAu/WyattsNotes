@@ -644,8 +644,8 @@ $$= 9.8(0.5736 - 0.25 \times 0.8192) = 9.8(0.5736 - 0.2048) = 9.8 \times 0.3688 
 ## 12. Worked Example: Inelastic Collision with Kinetic Energy Loss
 
 Two trolleys collide on a frictionless track. Trolley A has mass $2 \mathrm{ kg$ and velocity
-$4 \mathrm{ m/s$ to the right. Trolley B has mass $3 \mathrm{ kg$ and velocity
-$2 \mathrm{ m/s$ to the Left. They stick together.
+$4 \mathrm{ m/s$ to the right. Trolley B has mass $3 \mathrm{ kg$ and velocity $2 \mathrm{ m/s$ to
+the Left. They stick together.
 
 **Step 1:** Choose a sign convention (right = positive).
 
@@ -727,8 +727,8 @@ Piston must move 50 times further than the large piston. The work input equals t
     kinetic energy lost in the collision.
 
 17. A $2 \mathrm{ kg$ block is pushed up a $30^{\circ}$ incline with an initial speed of
-    $8 \mathrm{ m/s$. The coefficient of kinetic friction is $0.2$. Calculate how far up the
-    incline the block travels before stopping and whether it slides back down.
+    $8 \mathrm{ m/s$. The coefficient of kinetic friction is $0.2$. Calculate how far up the incline
+    the block travels before stopping and whether it slides back down.
 
 18. Explain why a passenger in a car feels thrown forward when the car brakes suddenly. Refer to
     Newton's laws in your answer.
@@ -746,8 +746,8 @@ Piston must move 50 times further than the large piston. The work input equals t
 <details>
 <summary>Question 1: Resultant force and acceleration</summary>
 
-A $5 \mathrm{ kg$ object is acted on by two forces: $20 \mathrm{ N$ to the right and
-$8 \mathrm{ N$ to the left. Calculate the resultant force and the acceleration.
+A $5 \mathrm{ kg$ object is acted on by two forces: $20 \mathrm{ N$ to the right and $8 \mathrm{ N$
+to the left. Calculate the resultant force and the acceleration.
 
 </details>
 
@@ -764,8 +764,8 @@ Acceleration $= F/m = 12/5 = 2.4 \mathrm{ m/s^2$ to the right.
 <summary>Question 2: Weight and mass on the Moon</summary>
 
 An astronaut has a mass of $80 \mathrm{ kg$ on Earth. The gravitational field strength on the Moon
-is $1.6 \mathrm{ N/kg$. Calculate (a) the astronaut's weight on Earth and (b) the astronaut's
-weight on the Moon.
+is $1.6 \mathrm{ N/kg$. Calculate (a) the astronaut's weight on Earth and (b) the astronaut's weight
+on the Moon.
 
 </details>
 
@@ -784,8 +784,8 @@ Mass remains the same ($80 \mathrm{ kg$) on both Earth and the Moon.
 <summary>Question 3: Stopping distance</summary>
 
 A car travelling at $30 \mathrm{ m/s$ has a thinking distance of $21 \mathrm{ m$ and a braking
-distance of $54 \mathrm{ m$. Calculate the total stopping distance. Explain why the braking
-distance increases much more rapidly than the thinking distance when speed doubles.
+distance of $54 \mathrm{ m$. Calculate the total stopping distance. Explain why the braking distance
+increases much more rapidly than the thinking distance when speed doubles.
 
 </details>
 
@@ -804,8 +804,8 @@ dangerous.
 <details>
 <summary>Question 4: Hooke's Law</summary>
 
-A spring has a spring constant of $200 \mathrm{ N/m$. Calculate the extension when a
-$50 \mathrm{ N$ force is applied. Calculate the energy stored in the spring.
+A spring has a spring constant of $200 \mathrm{ N/m$. Calculate the extension when a $50 \mathrm{ N$
+force is applied. Calculate the energy stored in the spring.
 
 </details>
 
@@ -841,4 +841,13 @@ At terminal velocity: weight $=$ drag. The skydiver is in equilibrium (Newton's 
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Newton's second law**
+
+A $2.0\,\text{kg}$ object is pulled across a rough horizontal surface by a horizontal force of
+$15\,\text{N}$. The frictional force is $5.0\,\text{N}$. Calculate the acceleration.
+
+**Solution:**
+
+$$F_{\text{net}} = F_{\text{applied}} - F_{\text{friction}} = 15 - 5.0 = 10\,\text{N}$$
+
+$$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$

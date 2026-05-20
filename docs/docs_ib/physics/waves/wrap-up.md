@@ -514,12 +514,14 @@ $$f' = f\left(\frac{v}{v + v_s}\right) = 800\left(\frac{343}{343 + 30}\right) = 
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-## Summary
+2. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.

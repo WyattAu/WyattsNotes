@@ -373,8 +373,16 @@ val config = Config().invoke {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of metaprogramming, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- variables, data types, and control flow
+- functions and procedures
+- object-oriented programming
+- error handling and debugging
+- modular design
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

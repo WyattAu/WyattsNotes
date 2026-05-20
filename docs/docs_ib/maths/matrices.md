@@ -139,8 +139,8 @@ Where $A_i$ is the matrix $A$ with column $i$ replaced by $\mathbf{b}$.
 ### Gaussian Elimination
 
 For larger systems, use elementary row operations to reduce the augmented matrix
-$[A \mid \mathbf{b}]$ to row echelon form, then solve by back-substitution. The three
-elementary Operations are:
+$[A \mid \mathbf{b}]$ to row echelon form, then solve by back-substitution. The three elementary
+Operations are:
 
 1. Swap two rows ($R_i \leftrightarrow R_j$)
 2. Multiply a row by a nonzero scalar ($R_i \to kR_i$)
@@ -190,9 +190,8 @@ $$\mathbf{v}' = B(A\mathbf{v}) = (BA)\mathbf{v}$$
 
 ### Invariant Points and Lines
 
-An **invariant point** satisfies $T\mathbf{v} = \mathbf{v}$I.e.
-$(T - I)\mathbf{v} = \mathbf{0}$. An **invariant line** is mapped to itself (points may
-move along the line).
+An **invariant point** satisfies $T\mathbf{v} = \mathbf{v}$I.e. $(T - I)\mathbf{v} = \mathbf{0}$. An
+**invariant line** is mapped to itself (points may move along the line).
 
 ---
 
@@ -205,14 +204,13 @@ Nonzero vector $\mathbf{v}$ (an **eigenvector**) such that:
 
 $$A\mathbf{v} = \lambda\mathbf{v}$$
 
-Geometrically, $A$ stretches or compresses the eigenvector $\mathbf{v}$ by factor $\lambda$
-without Changing its direction.
+Geometrically, $A$ stretches or compresses the eigenvector $\mathbf{v}$ by factor $\lambda$ without
+Changing its direction.
 
 ### Characteristic Equation
 
-Rearranging $A\mathbf{v} = \lambda\mathbf{v}$ gives
-$(A - \lambda I)\mathbf{v} = \mathbf{0}$. For a Nonzero solution $\mathbf{v}$We
-require:
+Rearranging $A\mathbf{v} = \lambda\mathbf{v}$ gives $(A - \lambda I)\mathbf{v} = \mathbf{0}$. For a
+Nonzero solution $\mathbf{v}$We require:
 
 $$\det(A - \lambda I) = 0$$
 
@@ -230,9 +228,8 @@ $$\lambda^2 - \mathrm{tr}(A)\,\lambda + \det(A) = 0$$
 
 ### Finding Eigenvectors
 
-For each eigenvalue $\lambda_i$Substitute into
-$(A - \lambda_i I)\mathbf{v} = \mathbf{0}$ and Solve for $\mathbf{v}$. The
-solution space is the **eigenspace** corresponding to $\lambda_i$.
+For each eigenvalue $\lambda_i$Substitute into $(A - \lambda_i I)\mathbf{v} = \mathbf{0}$ and Solve
+for $\mathbf{v}$. The solution space is the **eigenspace** corresponding to $\lambda_i$.
 
 ### Properties
 
@@ -514,8 +511,8 @@ $= \begin{pmatrix} 243 & 32 \\ 0 & -32 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 0 &
   original equations.
 
 - **Misidentifying eigenvectors.** For each eigenvalue, solve
-  $(A - \lambda I)\mathbf{v} = \mathbf{0}$. Substituting the eigenvalue into the
-  original matrix $A$ instead of $A - \lambda I$ is a common error.
+  $(A - \lambda I)\mathbf{v} = \mathbf{0}$. Substituting the eigenvalue into the original matrix $A$
+  instead of $A - \lambda I$ is a common error.
 
 - **Transformation composition order.** The matrix $BA$ represents "apply $A$ first, then $B$."
   Writing $AB$ when $B$ should be applied first is the single most common transformation error.
@@ -624,8 +621,7 @@ $\lambda = 3$. For $\lambda = 1$:
 $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 For $\lambda = 3$:
 $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
-Orthogonality check: $\mathbf{v}_1 \cdot \mathbf{v}_2 = 1 - 1 = 0$. Confirmed.
-$A = PDP^{-1}$ where
+Orthogonality check: $\mathbf{v}_1 \cdot \mathbf{v}_2 = 1 - 1 = 0$. Confirmed. $A = PDP^{-1}$ where
 $P = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$$D = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
 
 **Problem 15:**
@@ -654,4 +650,16 @@ For the A-Level Further Maths treatment of this topic, see
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to matrices, including key
+theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- fundamental definitions and theorems
+- algebraic and graphical methods
+- proof and logical reasoning
+- problem-solving strategies
+- applications and modelling
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

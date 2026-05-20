@@ -236,12 +236,12 @@ significantly speeding up `git clone``git fetch`And `git gc` on large repositori
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing DNA replication (S phase) with transcription or translation — be clear about which
+   process is being described.
 
-## Summary
+2. Failing to link structure to function when describing biological molecules, cells, or organs.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing correlation with causation when evaluating experimental data and drawing conclusions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.

@@ -554,4 +554,18 @@ Use the `nothrow` variant when exceptions are undesirable.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Stack operations**
+
+Trace the following operations on an empty stack: `push(5)`, `push(3)`, `pop()`, `push(8)`, `pop()`,
+`pop()`.
+
+**Solution:**
+
+| Operation | Stack (top → bottom) | Popped |
+| --------- | -------------------- | ------ |
+| push(5)   | [5]                  | —      |
+| push(3)   | [3, 5]               | —      |
+| pop()     | [5]                  | 3      |
+| push(8)   | [8, 5]               | —      |
+| pop()     | [5]                  | 8      |
+| pop()     | []                   | 5      |

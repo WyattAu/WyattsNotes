@@ -977,8 +977,16 @@ Relax the drop check. This is advanced and should be used only when you can prov
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of ownership and borrowing, including underlying theory,
+practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- ownership, borrowing, and lifetimes
+- structs, enums, and pattern matching
+- traits and generics
+- error handling (Result, Option)
+- concurrency with threads and async
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

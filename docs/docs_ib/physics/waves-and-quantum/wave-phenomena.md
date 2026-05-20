@@ -499,12 +499,17 @@ Single-slit diffraction envelope.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing wave speed, frequency, and wavelength — remember $v = f\lambda$ relates all three.
 
-## Summary
+2. Forgetting that waves transfer energy, not matter (except for matter waves in quantum mechanics).
 
-<!-- TODO: Add a summary for this topic -->
+3. Misidentifying nodes and antinodes in standing wave diagrams.
 
-## Worked Examples
+4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
+
+6. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.

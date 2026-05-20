@@ -263,15 +263,15 @@ Volume responses are large enough to outweigh the price changes:
 
 $$\Delta CA \approx \left(\frac◆LB◆E_X \cdot P_X \cdot X◆RB◆◆LB◆P_X \cdot X + e \cdot P_M^* \cdot M◆RB◆\right) \times \left(|E_X| + |E_M| - 1\right) \times \frac◆LB◆\Delta e◆RB◆◆LB◆e◆RB◆$$
 
-If $|E_X| + |E_M| \gt 1$: the volume effect dominates → $CA$ improves. If $|E_X| + |E_M| \lt 1$:
-The price effect dominates → $CA$ worsens (the country spends more on imports because they are more
+If $|E_X| + |E_M| \gt 1$: the volume effect dominates → $CA$ improves. If $|E_X| + |E_M| \lt 1$: The
+price effect dominates → $CA$ worsens (the country spends more on imports because they are more
 Expensive, without selling enough extra exports). $\blacksquare$
 
 ### 4.2 The J-Curve Effect
 
 In the short run, $|E_X|$ and $|E_M|$ are low because contracts are fixed, consumers are slow to
-Change habits, and production takes time to adjust. So $|E_X| + |E_M| \lt 1$ initially → the
-Current account **worsens** after a depreciation.
+Change habits, and production takes time to adjust. So $|E_X| + |E_M| \lt 1$ initially → the Current
+account **worsens** after a depreciation.
 
 Over time (6–18 months), elasticities increase as consumers find substitutes and firms adjust
 Production → $|E_X| + |E_M| \gt 1$ → the current account **improves**.
@@ -1159,8 +1159,13 @@ deterioration.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
-## Summary
+2. Confusing DNA replication (S phase) with transcription or translation — be clear about which
+   process is being described.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.
+
+4. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
+   change in tertiary structure.

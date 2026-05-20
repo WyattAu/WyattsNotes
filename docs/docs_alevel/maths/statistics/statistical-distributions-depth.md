@@ -325,12 +325,13 @@ $= \Phi(1.558) - \Phi(-0.866) = 0.9404 - 0.1931 = 0.7473$.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).

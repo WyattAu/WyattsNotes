@@ -291,10 +291,10 @@ struct Ambig<T* const> {};     // matches: T = const int
 
 **Proof of ambiguity.** Let $A$ = `const T*` and $B$ = `T* const`. Replace `T` in $A$ with a unique
 Type $U$: we get `const U*`. Does this match $B$ (`T* const`)? Yes, with $T = \mathrm{const 
-U$.
-Now Replace `T` in $B$ with a unique type $V$: we get `V* const`. Does this match $A$ (`const T*`)?
-Yes, With $T = V \mathrm{ const$. Since $A$ matches $B$ **and** $B$ matches $A$Neither is strictly
-More specialized. The program is ill-formed.
+U$. Now
+Replace `T` in $B$ with a unique type $V$: we get `V* const`. Does this match $A$ (`const T*`)? Yes,
+With $T = V \mathrm{ const$. Since $A$ matches $B$ **and** $B$ matches $A$Neither is strictly More
+specialized. The program is ill-formed.
 
 The fix is to provide a disambiguating specialization that is strictly more specialized than both:
 
@@ -849,8 +849,16 @@ int main() {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of explicit and partial specialization, including underlying
+theory, practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Big O notation and complexity analysis
+- searching algorithms (binary, linear)
+- sorting algorithms (bubble, merge, quick)
+- graph algorithms (Dijkstra, BFS, DFS)
+- dynamic programming
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

@@ -129,8 +129,7 @@ The CPU scheduler decides which process runs next from the set of ready processe
 - **CPU utilisation:** Keep the CPU busy ($\mathrm{utilisation = 1 - p$ where $p$ is the I/O wait
   probability).
 - **Throughput:** Number of processes completed per time unit.
-- **Turnaround time:**
-  $T_{\mathrm{turnaround} = T_{\mathrm{completion} - T_{\mathrm{arrival}$.
+- **Turnaround time:** $T_{\mathrm{turnaround} = T_{\mathrm{completion} - T_{\mathrm{arrival}$.
 - **Waiting time:** Time spent in the ready queue.
 - **Response time:** Time from submission to first response.
 
@@ -638,8 +637,8 @@ State.
 **Definitions:**
 
 - **Available:** Vector $A = (A_1, \ldots, A_m)$ of available instances of each resource type.
-- **Maximum:** Matrix $\mathrm{Max$ where $\mathrm{Max[i][j]$ is the maximum demand of process
-  $i$ for resource $j$.
+- **Maximum:** Matrix $\mathrm{Max$ where $\mathrm{Max[i][j]$ is the maximum demand of process $i$
+  for resource $j$.
 - **Allocation:** Matrix $\mathrm{Alloc$ where $\mathrm{Alloc[i][j]$ is the current allocation.
 - **Need:** $\mathrm{Need[i][j] = \mathrm{Max[i][j] - \mathrm{Alloc[i][j]$.
 
@@ -677,9 +676,9 @@ State.
 | $P_3$   | (2,1,1)    | (2,2,2) | (0,1,1) |
 | $P_4$   | (0,0,2)    | (4,3,3) | (4,3,1) |
 
-Safety check: $P_1$ has $\mathrm{Need = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release
-$(2,0,0)$New $A = (5,3,2)$. Then $P_3$: $\mathrm{Need = (0,1,1) \leq (5,3,2)$. Continuing, All
-processes can complete: system is **safe**.
+Safety check: $P_1$ has $\mathrm{Need = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release $(2,0,0)$New
+$A = (5,3,2)$. Then $P_3$: $\mathrm{Need = (0,1,1) \leq (5,3,2)$. Continuing, All processes can
+complete: system is **safe**.
 
 <details>
 <summary>Worked Example 4.1 — Banker's Algorithm Step-by-Step</summary>
@@ -908,8 +907,8 @@ Pages in RAM; the rest reside on disk (swap space).
 
 $$\mathrm{EAT = (1 - p) \times \mathrm{ma + p \times \mathrm{pf$$
 
-Where $p$ = page fault rate, $\mathrm{ma$ = memory access time, $\mathrm{pf$ = page fault
-service Time.
+Where $p$ = page fault rate, $\mathrm{ma$ = memory access time, $\mathrm{pf$ = page fault service
+Time.
 
 For $p = 0.001$$\mathrm{ma = 100$ ns, $\mathrm{pf = 8$ ms:
 
@@ -1312,8 +1311,8 @@ reliability, Or both.
 - RAID 6: $(n - 2)C$
 - RAID 10: $nC / 2$
 
-**Mean time to failure (MTTF).** If each disk has $\mathrm{MTTF_{\mathrm{disk}$ and the MTTR
-(mean time to repair) is $T_{\mathrm{repair}$:
+**Mean time to failure (MTTF).** If each disk has $\mathrm{MTTF_{\mathrm{disk}$ and the MTTR (mean
+time to repair) is $T_{\mathrm{repair}$:
 
 $$\mathrm{MTTF_{\mathrm{RAID\;5} \approx \frac{\mathrm{MTTF_{\mathrm{disk}^2}{n(n-1) \cdot T_{\mathrm{repair}}$$
 
@@ -1323,8 +1322,8 @@ Capacity, increasing the window of vulnerability.
 <details>
 <summary>Worked Example 6.2 — RAID Capacity and Reliability</summary>
 
-Eight 2 TiB disks. $\mathrm{MTTF_{\mathrm{disk} = 1.2 \times 10^6$ hours,
-$T_{\mathrm{repair} = 24$ hours.
+Eight 2 TiB disks. $\mathrm{MTTF_{\mathrm{disk} = 1.2 \times 10^6$ hours, $T_{\mathrm{repair} = 24$
+hours.
 
 _RAID 0:_ Capacity = $8 \times 2 = 16$ TiB. No fault tolerance. MTTF =
 $\mathrm{MTTF_{\mathrm{disk} / 8 = 150000$ hours.
@@ -2055,8 +2054,8 @@ Of 8 pages is added?
 
 **Solution.** (Revision: §5.8)
 
-Without $P_4$: total working set = $15 + 12 + 18 = 45 \gt 40$. Thrashing occurs. Only two
-Processes can run concurrently (e.g., $P_1 + P_2 = 27 \leq 40$Or $P_2 + P_3 = 30 \leq 40$).
+Without $P_4$: total working set = $15 + 12 + 18 = 45 \gt 40$. Thrashing occurs. Only two Processes
+can run concurrently (e.g., $P_1 + P_2 = 27 \leq 40$Or $P_2 + P_3 = 30 \leq 40$).
 
 With $P_4$: total = $15 + 12 + 18 + 8 = 53 \gt 40$. Even worse. Using working set admission, we
 Would run at most two processes. The best combination that fits is $P_1 + P_3 = 33$ or
@@ -2150,8 +2149,68 @@ by the overflow would fail the CFI check.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
+
+2. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
+
+3. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
+
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Process Scheduling — Round Robin
+
+**Problem.** Three processes arrive at time 0 with burst times: P1 = 24 ms, P2 = 3 ms, P3 = 3 ms.
+Calculate average waiting time with Round Robin (quantum = 4 ms).
+
+**Solution.** Execution order: P1(4), P2(3), P3(3), P1(4), P1(4), ..., P1(4).
+
+| Process | Finish Time | Wait Time |
+| ------- | ----------- | --------- |
+| P1      | 30          | 6         |
+| P2      | 7           | 4         |
+| P3      | 10          | 7         |
+
+Average waiting time = $\frac{6 + 4 + 7}{3} = 5.67$ ms.
+
+Compare with FCFS: P1 waits 0, P2 waits 24, P3 waits 27, average = 17 ms.
+
+$\blacksquare$
+
+### Example 2: Banker's Algorithm for Deadlock Avoidance
+
+**Problem.** System has 3 resource types (A=10, B=5, C=7). Current allocation and maximum need for
+processes P0, P1, P2 are given. Can P1 request (1,2,2)?
+
+**Solution.** Need for P1 = Maximum − Allocation = (1,2,2). Request (1,2,2) = Need, so valid.
+
+After granting: available = (4,2,3). P1 can finish (need 0,0,0 ≤ available 4,2,3) → release
+resources. P0 can then finish. Safe sequence exists. Request granted.
+
+$\blacksquare$
+
+## Summary
+
+- Process management: states (ready, running, waiting, terminated); context switching overhead; PCB
+  stores process state.
+- CPU scheduling algorithms: FCFS, SJF, Round Robin, Priority; trade-offs between throughput,
+  latency, and fairness.
+- Memory management: paging eliminates external fragmentation; virtual address → physical address
+  via page tables and TLB.
+- Deadlock: four necessary conditions; prevention, avoidance (Banker's algorithm), detection and
+  recovery strategies.
+- File systems: inodes store metadata; journaling (ext4) and copy-on-write (ZFS, Btrfs) improve
+  crash recovery.
+
+## Cross-References
+
+| Topic                          | Site        | Link                                                          |
+| ------------------------------ | ----------- | ------------------------------------------------------------- |
+| Advanced Operating Systems     | WyattsNotes | [View](/docs/university/computing/operating-systems-advanced) |
+| Computer Networks              | WyattsNotes | [View](/docs/university/computing/computer-networks)          |
+| Databases                      | WyattsNotes | [View](/docs/university/computing/databases)                  |
+| Operating Systems — MIT 6.S081 | MIT         | [View](https://pdos.csail.mit.edu/6.828/2021/schedule.html)   |

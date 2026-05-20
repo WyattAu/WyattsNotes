@@ -103,7 +103,7 @@ Separate stack. This is a deliberate design decision with important trade-offs.
 | Property                     | Stackless (C++)                                 | Stackful (e.g., Boost.Context, goroutines)         |
 | :--------------------------- | :---------------------------------------------- | :------------------------------------------------- |
 | Frame size                   | Fixed at compile time (known locals)            | Dynamic (grows/shrinks like a regular stack)       |
-| Memory per coroutine         | $\mathcal{O}(1)$ — hundreds of bytes      | $\mathcal{O}(n)$ — megabytes reserved        |
+| Memory per coroutine         | $\mathcal{O}(1)$ — hundreds of bytes            | $\mathcal{O}(n)$ — megabytes reserved              |
 | Allocation                   | Single heap allocation                          | Separate stack allocation                          |
 | Suspend inside callee        | No — only at explicit `co_await` points         | Yes — any function call can be a suspend point     |
 | Implementation cost          | Compiler transforms function into state machine | Context switching (save/restore registers + stack) |
@@ -644,12 +644,11 @@ Coroutine-to-coroutine chaining prevents unbounded stack growth.
    `co_await`S the next.
 2. **Without symmetric transfer:** When $C_1$ `co_await`S $C_2$The `await_suspend` of $C_2$ calls
    `C_1.resume()` inside $C_2$'s suspension handler. This is a regular function call, which grows
-   the call stack by one frame. For $n$ coroutines, the stack grows by $\mathcal{O}(n)$
-   frames. For unbounded $n$This causes stack overflow.
+   the call stack by one frame. For $n$ coroutines, the stack grows by $\mathcal{O}(n)$ frames. For
+   unbounded $n$This causes stack overflow.
 3. **With symmetric transfer:** When $C_1$ `co_await`S $C_2$`await_suspend` returns the handle of
    $C_2$. The compiler generates a tail call from $C_1$'s resume trampoline to $C_2$'s resume
-   trampoline. A tail call reuses the current stack frame, so the stack depth is
-   $\mathcal{O}(1)$.
+   trampoline. A tail call reuses the current stack frame, so the stack depth is $\mathcal{O}(1)$.
 4. The C++ standard guarantees [N4950 §9.5.4] that when `await_suspend` returns a
    `coroutine_handle`The resumption is performed by returning the handle to the language runtime,
    which then calls `resume()` on it. This is equivalent to a tail call.
@@ -753,8 +752,16 @@ int main() {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of stackless coroutine frames and heap allocation, including
+underlying theory, practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and terminology
+- algorithms and computational thinking
+- practical implementation
+- security and ethical considerations
+- applications in the real world
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

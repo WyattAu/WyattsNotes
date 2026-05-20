@@ -2292,8 +2292,13 @@ vitamin A) in the endosperm of the rice grain. It was developed to address vitam
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').
 
-## Summary
+2. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
+   change in tertiary structure.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.
+
+4. Confusing correlation with causation when evaluating experimental data and drawing conclusions.

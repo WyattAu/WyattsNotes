@@ -57,8 +57,7 @@ Water is essential for life due to its unique properties:
 
 1. **Cohesion and adhesion:** H-bonds between water molecules (cohesion) and between water and other
    surfaces (adhesion). Enables capillary action and transpiration in plants.
-2. **High specific heat:** $4.18 \mathrm{ J/(g\cdot^\circ\mathrm{C)$. Moderates temperature
-   changes.
+2. **High specific heat:** $4.18 \mathrm{ J/(g\cdot^\circ\mathrm{C)$. Moderates temperature changes.
 3. **High heat of vaporization:** Requires significant energy to evaporate. Provides cooling through
    sweating.
 4. **Lower density as a solid:** Ice floats, insulating aquatic environments.
@@ -561,10 +560,10 @@ Their functions.
    strand (semiconservative replication).
 
 **Evidence for semiconservative replication:** The Meselson-Stahl experiment (1958) used heavy
-Nitrogen ($^{15}\mathrm{N$) to label DNA. After one round of replication in $^{14}\mathrm{N$
-Medium, all DNA molecules contained one heavy strand and one light strand (intermediate density),
-Ruling out conservative replication. After two rounds, both light and intermediate density DNA was
-Observed, confirming the semiconservative model.
+Nitrogen ($^{15}\mathrm{N$) to label DNA. After one round of replication in $^{14}\mathrm{N$ Medium,
+all DNA molecules contained one heavy strand and one light strand (intermediate density), Ruling out
+conservative replication. After two rounds, both light and intermediate density DNA was Observed,
+confirming the semiconservative model.
 
 ## Review: Lipids and Cell Membrane Structure in Detail
 
@@ -603,12 +602,12 @@ Layers, which is essential for the function of cell membranes.
 ## Review: Carbohydrate Chemistry in Detail
 
 **Monosaccharides:** The simplest carbohydrates, with the general formula
-$\mathrm{C_n(\mathrm{H_2\mathrm{O)_n$. Glucose ($\mathrm{C_6\mathrm{H_{12}\mathrm{O_6$)
-exists In two isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the
-position Of the hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of
-the Ring; in $\beta$-glucose, it is above. This apparently small difference has enormous
-consequences: $\alpha$-glucose forms starch (digestible) and glycogen, while $\beta$-glucose forms
-cellulose (indigestible by most animals).
+$\mathrm{C_n(\mathrm{H_2\mathrm{O)_n$. Glucose ($\mathrm{C_6\mathrm{H_{12}\mathrm{O_6$) exists In
+two isomeric forms: alpha ($\alpha$) and beta ($\beta$) glucose. The difference is the position Of
+the hydroxyl (-OH) group on carbon 1. In $\alpha$-glucose, the -OH is below the plane of the Ring;
+in $\beta$-glucose, it is above. This apparently small difference has enormous consequences:
+$\alpha$-glucose forms starch (digestible) and glycogen, while $\beta$-glucose forms cellulose
+(indigestible by most animals).
 
 **Disaccharides:** Formed by condensation reactions between two monosaccharides:
 
@@ -645,8 +644,8 @@ Sugars and give a positive Benedict's test.
 Histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine).
 
 **Zwitterions:** At physiological pH (approximately 7.4), amino acids exist as zwitterions --
-Molecules with both a positive charge (on the amino group, $-\mathrm{NH_3^+$) and a negative
-charge (on the carboxyl group, $-\mathrm{COO^-$). The overall charge is neutral.
+Molecules with both a positive charge (on the amino group, $-\mathrm{NH_3^+$) and a negative charge
+(on the carboxyl group, $-\mathrm{COO^-$). The overall charge is neutral.
 
 **Peptide bond formation:** A condensation reaction between the carboxyl group of one amino acid and
 The amino group of another forms a peptide bond (covalent bond) and releases a water molecule. A
@@ -718,14 +717,14 @@ Preventing overheating.
 Functional groups are specific groups of atoms within molecules that determine the characteristics
 Of the molecule and how it reacts.
 
-| Functional Group | Structure | Found in                      | Properties                                |
-| ---------------- | --------- | ----------------------------- | ----------------------------------------- |
-| Hydroxyl (-OH)   | -OH       | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds               |
-| Carbonyl (C=O)   | C=O       | Aldehydes, ketones, sugars    | Polar; reactive                           |
+| Functional Group | Structure | Found in                      | Properties                              |
+| ---------------- | --------- | ----------------------------- | --------------------------------------- |
+| Hydroxyl (-OH)   | -OH       | Alcohols, sugars, amino acids | Polar; forms hydrogen bonds             |
+| Carbonyl (C=O)   | C=O       | Aldehydes, ketones, sugars    | Polar; reactive                         |
 | Carboxyl (-COOH) | -COOH     | Amino acids, fatty acids      | Acts as an acid; releases $\mathrm{H^+$ |
 | Amino (-NH$_2$)  | -NH$_2$   | Amino acids                   | Acts as a base; accepts $\mathrm{H^+$   |
-| Phosphate        | -PO$_4$   | ATP, DNA, phospholipids       | Negative charge; energy transfer          |
-| Sulfhydryl (-SH) | -SH       | Cysteine (amino acid)         | Forms disulfide bridges in proteins       |
+| Phosphate        | -PO$_4$   | ATP, DNA, phospholipids       | Negative charge; energy transfer        |
+| Sulfhydryl (-SH) | -SH       | Cysteine (amino acid)         | Forms disulfide bridges in proteins     |
 
 **Worked Example:** The role of functional groups in amino acid behaviour.
 
@@ -775,10 +774,10 @@ Total hydrogen bonds: $3,600 + 9,600 = 13,200$.
 <details>
 <summary>Question 2: Enzyme kinetics with an inhibitor</summary>
 
-An enzyme has $K_m = 4 \mathrm{ \mu M$ and $V_{\max} = 20 \mathrm{ \mu mol/min$. In the presence
-Of a competitive inhibitor at $8 \mathrm{ \mu M$The apparent $K_m$ increases to
-$12 \mathrm{ \mu M$. Calculate the reaction velocity at a substrate concentration of
-$6 \mathrm{ \mu M$ both with and without the inhibitor.
+An enzyme has $K_m = 4 \mathrm{ \mu M$ and $V_{\max} = 20 \mathrm{ \mu mol/min$. In the presence Of
+a competitive inhibitor at $8 \mathrm{ \mu M$The apparent $K_m$ increases to $12 \mathrm{ \mu M$.
+Calculate the reaction velocity at a substrate concentration of $6 \mathrm{ \mu M$ both with and
+without the inhibitor.
 
 </details>
 
@@ -801,9 +800,9 @@ Very high substrate concentrations, both velocities would approach $20 \mathrm{ 
 <summary>Question 3: pH and buffer calculations</summary>
 
 A buffer solution contains $0.10 \mathrm{ M$ acetic acid ($\mathrm{CH_3\mathrm{COOH$
-$\mathrm{pK_a = 4.76$) and $0.20 \mathrm{ M$ sodium acetate ($\mathrm{CH_3\mathrm{COO^-$).
-Calculate the pH of this buffer. If $0.01 \mathrm{ mol$ of $\mathrm{HCl$ is added to
-$1.0 \mathrm{ L$ of this buffer, what is the new pH?
+$\mathrm{pK_a = 4.76$) and $0.20 \mathrm{ M$ sodium acetate ($\mathrm{CH_3\mathrm{COO^-$). Calculate
+the pH of this buffer. If $0.01 \mathrm{ mol$ of $\mathrm{HCl$ is added to $1.0 \mathrm{ L$ of this
+buffer, what is the new pH?
 
 </details>
 
@@ -847,8 +846,8 @@ Overall $\Delta G = +16.7 + (-30.5) = -13.8 \mathrm{ kJ/mol$.
 
 Since $\Delta G \lt 0$The overall coupled reaction is spontaneous. The energy released by ATP
 Hydrolysis ($-30.5 \mathrm{ kJ/mol$) more than compensates for the energy required for the
-Phosphorylation ($+16.7 \mathrm{ kJ/mol$). This is how phosphofructokinase drives the committed
-Step of glycolysis forward. The excess energy ($13.8 \mathrm{ kJ/mol$) is released as heat.
+Phosphorylation ($+16.7 \mathrm{ kJ/mol$). This is how phosphofructokinase drives the committed Step
+of glycolysis forward. The excess energy ($13.8 \mathrm{ kJ/mol$) is released as heat.
 
 </details>
 
@@ -856,9 +855,9 @@ Step of glycolysis forward. The excess energy ($13.8 \mathrm{ kJ/mol$) is releas
 <summary>Question 5: Protein structure and denaturation</summary>
 
 A researcher discovers that a protein loses its biological activity when heated to
-$45^\circ\mathrm{C$But regains full activity when cooled back to $25^\circ\mathrm{C$. When
-Heated to $70^\circ\mathrm{C$The protein permanently loses activity even after cooling. Explain
-These observations with reference to the levels of protein structure.
+$45^\circ\mathrm{C$But regains full activity when cooled back to $25^\circ\mathrm{C$. When Heated to
+$70^\circ\mathrm{C$The protein permanently loses activity even after cooling. Explain These
+observations with reference to the levels of protein structure.
 
 </details>
 
@@ -871,19 +870,27 @@ The protein to unfold and lose its active site shape. However, the primary struc
 Sequence) remains intact. When cooled, these non-covalent interactions can re-form, allowing the
 Protein to refold into its native, functional conformation.
 
-At $70^\circ\mathrm{C$The denaturation is irreversible. At this higher temperature, the protein
-May aggregate (unfolded proteins expose hydrophobic regions that stick together), or disulfide
-Bridges (covalent bonds) may be disrupted. Once aggregated or covalently damaged, the protein cannot
-Refold correctly upon cooling because the protein is trapped in incorrect, aggregated conformations.
-The loss of disulfide bridges is particularly significant because these covalent cross-links cannot
+At $70^\circ\mathrm{C$The denaturation is irreversible. At this higher temperature, the protein May
+aggregate (unfolded proteins expose hydrophobic regions that stick together), or disulfide Bridges
+(covalent bonds) may be disrupted. Once aggregated or covalently damaged, the protein cannot Refold
+correctly upon cooling because the protein is trapped in incorrect, aggregated conformations. The
+loss of disulfide bridges is particularly significant because these covalent cross-links cannot
 Spontaneously re-form in the correct positions without chaperone proteins.
 
 </details>
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of chemistry of life, including key reactions, underlying
+theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- ionic, covalent, and metallic bonding
+- electronegativity and bond polarity
+- intermolecular forces
+- giant and simple molecular structures
+- VSEPR theory
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

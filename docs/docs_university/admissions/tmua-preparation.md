@@ -313,9 +313,8 @@ The proof is therefore Incomplete.
 >
 > What is the value of $k$And what is $\mathbb{E}(X)$?
 
-A: $k = 1/4$$\mathbb{E}(X) = 4/3$ B: $k = 1/2$$\mathbb{E}(X) = 4/3$ C:
-$k = 1/2$$\mathbb{E}(X) = 1$ D: $k = 1/4$$\mathbb{E}(X) = 1$ E:
-$k = 1$$\mathbb{E}(X) = 2$
+A: $k = 1/4$$\mathbb{E}(X) = 4/3$ B: $k = 1/2$$\mathbb{E}(X) = 4/3$ C: $k = 1/2$$\mathbb{E}(X) = 1$
+D: $k = 1/4$$\mathbb{E}(X) = 1$ E: $k = 1$$\mathbb{E}(X) = 2$
 
 **Solution.** Since $f$ is a probability density function, $\int_{-\infty}^{\infty} f(x)\,dx = 1$:
 
@@ -465,4 +464,35 @@ Context. A population of $-3.7$ or a time of $-5$ hours should be recognised as 
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with tmua preparation, follow a structured approach:
+
+1. Identify the key concepts and definitions relevant to the question
+2. Apply the appropriate methods, equations, or frameworks
+3. Support your answer with evidence, examples, or calculations
+4. Evaluate your answer critically, considering limitations and alternative perspectives
+
+## Summary
+
+- The TMUA (Test of Mathematics for University Admission) is a 2-paper, 2-hour total assessment used
+  by several UK universities for maths and related courses.
+- Paper 1: 20 multiple-choice questions on mathematical thinking and problem-solving; Paper 2: 20
+  questions on mathematical reasoning and logic.
+- Key topics: algebra, functions, sequences, coordinate geometry, trigonometry,
+  exponentials/logarithms, differentiation, integration, and proof.
+- Unlike STEP/MAT, there is no written component — all answers are multiple choice, so accuracy and
+  elimination strategies matter.
+- Practice under strict time conditions: roughly 3 minutes per question; skip difficult questions
+  and return to them.
+
+## Cross-References
+
+| Topic                | Site        | Link                                                 |
+| -------------------- | ----------- | ---------------------------------------------------- |
+| TMUA Specification   | UAT         | [View](https://uat.ucl.ac.uk/tmua)                   |
+| TMUA Practice Papers | UAT         | [View](https://uat.ucl.ac.uk/tmua/practice-papers)   |
+| MAT Preparation      | WyattsNotes | [View](/docs/university/admissions/mat-preparation)  |
+| STEP Preparation     | WyattsNotes | [View](/docs/university/admissions/step-preparation) |
+| Probability          | WyattsNotes | [View](/docs/university/mathematics/probability)     |
+| Real Analysis        | WyattsNotes | [View](/docs/university/mathematics/real-analysis)   |

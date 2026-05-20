@@ -14,13 +14,12 @@ A vector $\mathbf{a}$ in three-dimensional space with components $a_1, a_2, a_3$
 
 $$\mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$$
 
-Where $\mathbf{i}, \mathbf{j}, \mathbf{k}$ are the standard basis vectors along
-the $x$$y$And $z$ Axes respectively.
+Where $\mathbf{i}, \mathbf{j}, \mathbf{k}$ are the standard basis vectors along the $x$$y$And $z$
+Axes respectively.
 
 ### Vector Operations
 
-For $\mathbf{a} = (a_1, a_2, a_3)$ and $\mathbf{b} = (b_1, b_2, b_3)$And
-$\lambda \in \mathbb{R}$:
+For $\mathbf{a} = (a_1, a_2, a_3)$ and $\mathbf{b} = (b_1, b_2, b_3)$And $\lambda \in \mathbb{R}$:
 
 $$\mathbf{a} + \mathbf{b} = (a_1 + b_1,\, a_2 + b_2,\, a_3 + b_3)$$
 
@@ -53,17 +52,14 @@ Equivalently, in geometric form:
 
 $$\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$$
 
-Where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$
-($0 \le \theta \le \pi$).
+Where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$ ($0 \le \theta \le \pi$).
 
 ### Properties
 
-- **Commutative:**
-  $\mathbf{a} \cdot \mathbf{b} = \mathbf{b} \cdot \mathbf{a}$
+- **Commutative:** $\mathbf{a} \cdot \mathbf{b} = \mathbf{b} \cdot \mathbf{a}$
 - **Distributive:**
   $\mathbf{a} \cdot (\mathbf{b} + \mathbf{c}) = \mathbf{a} \cdot \mathbf{b} + \mathbf{a} \cdot \mathbf{c}$
-- **Bilinear:**
-  $\mathbf{a} \cdot (\lambda\mathbf{b}) = \lambda(\mathbf{a} \cdot \mathbf{b})$
+- **Bilinear:** $\mathbf{a} \cdot (\lambda\mathbf{b}) = \lambda(\mathbf{a} \cdot \mathbf{b})$
 - $\mathbf{a} \cdot \mathbf{a} = |\mathbf{a}|^2$
 - $\mathbf{i} \cdot \mathbf{i} = \mathbf{j} \cdot \mathbf{j} = \mathbf{k} \cdot \mathbf{k} = 1$
 - $\mathbf{i} \cdot \mathbf{j} = \mathbf{j} \cdot \mathbf{k} = \mathbf{k} \cdot \mathbf{i} = 0$
@@ -72,8 +68,7 @@ Where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$
 
 $$\cos\theta = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}||\mathbf{b}|}$$
 
-**Example.** Find the angle between $\mathbf{a} = (1, 2, -1)$ and
-$\mathbf{b} = (3, 1, 4)$.
+**Example.** Find the angle between $\mathbf{a} = (1, 2, -1)$ and $\mathbf{b} = (3, 1, 4)$.
 
 $$\mathbf{a} \cdot \mathbf{b} = 3 + 2 - 4 = 1$$
 
@@ -89,15 +84,13 @@ $$\mathbf{a} \cdot \mathbf{b} = 0$$
 
 **Example.** Find a vector perpendicular to both $(1, 2, 3)$ and $(4, 5, 6)$.
 
-We need $\mathbf{n} = (x, y, z)$ such that $x + 2y + 3z = 0$ and $4x + 5y + 6z = 0$. Let
-$z = t$:
+We need $\mathbf{n} = (x, y, z)$ such that $x + 2y + 3z = 0$ and $4x + 5y + 6z = 0$. Let $z = t$:
 
 $$x + 2y = -3t, \qquad 4x + 5y = -6t$$
 
 From the first: $x = -3t - 2y$. Substituting: $-12t - 8y + 5y = -6t \implies y = -2t$.
 
-$x = -3t + 4t = t$. So $\mathbf{n} = t(1, -2, 1)$. Taking $t = 1$:
-$\mathbf{n} = (1, -2, 1)$.
+$x = -3t + 4t = t$. So $\mathbf{n} = t(1, -2, 1)$. Taking $t = 1$: $\mathbf{n} = (1, -2, 1)$.
 
 ---
 
@@ -113,18 +106,17 @@ $$\mathbf{a} \times \mathbf{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \math
 
 $$|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$$
 
-The direction of $\mathbf{a} \times \mathbf{b}$ is **perpendicular to both**
-$\mathbf{a}$ and $\mathbf{b}$Given by the right-hand rule.
+The direction of $\mathbf{a} \times \mathbf{b}$ is **perpendicular to both** $\mathbf{a}$ and
+$\mathbf{b}$Given by the right-hand rule.
 
 ### Properties
 
-- **Anti-commutative:**
-  $\mathbf{a} \times \mathbf{b} = -(\mathbf{b} \times \mathbf{a})$
+- **Anti-commutative:** $\mathbf{a} \times \mathbf{b} = -(\mathbf{b} \times \mathbf{a})$
 - **Distributive over addition:**
   $\mathbf{a} \times (\mathbf{b} + \mathbf{c}) = \mathbf{a} \times \mathbf{b} + \mathbf{a} \times \mathbf{c}$
 - $\mathbf{a} \times \mathbf{a} = \mathbf{0}$
-- $\mathbf{a} \times \mathbf{b} = \mathbf{0}$ if and only if $\mathbf{a}$
-  and $\mathbf{b}$ are parallel (or one is zero)
+- $\mathbf{a} \times \mathbf{b} = \mathbf{0}$ if and only if $\mathbf{a}$ and $\mathbf{b}$ are
+  parallel (or one is zero)
 - $\mathbf{i} \times \mathbf{j} = \mathbf{k}$$\mathbf{j} \times \mathbf{k} = \mathbf{i}$$\mathbf{k} \times \mathbf{i} = \mathbf{j}$
 
 ### Area of a Parallelogram and Triangle
@@ -151,8 +143,7 @@ $$A = \frac{1}{2}\sqrt{36 + 9 + 4} = \frac{1}{2}\sqrt{49} = \frac{7}{2}$$
 
 ### Vector Form
 
-A line through point $A$ with position vector $\mathbf{a}$In the direction of vector
-$\mathbf{d}$:
+A line through point $A$ with position vector $\mathbf{a}$In the direction of vector $\mathbf{d}$:
 
 $$\mathbf{r} = \mathbf{a} + t\mathbf{d}, \qquad t \in \mathbb{R}$$
 
@@ -180,8 +171,7 @@ $$\mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} + t\begin{pmatrix} 3 \\
 
 ### Vector Form
 
-A plane through point $A$ with position vector $\mathbf{a}$ and normal vector
-$\mathbf{n}$:
+A plane through point $A$ with position vector $\mathbf{a}$ and normal vector $\mathbf{n}$:
 
 $$\mathbf{r} \cdot \mathbf{n} = \mathbf{a} \cdot \mathbf{n} = d$$
 
@@ -230,8 +220,8 @@ $$\cos\theta = \frac{|\mathbf{n}_1 \cdot \mathbf{n}_2|}{|\mathbf{n}_1||\mathbf{n
 
 ### Angle Between a Line and a Plane
 
-If a line has direction $\mathbf{d}$ and a plane has normal $\mathbf{n}$The angle $\phi$
-between the Line and the plane satisfies:
+If a line has direction $\mathbf{d}$ and a plane has normal $\mathbf{n}$The angle $\phi$ between the
+Line and the plane satisfies:
 
 $$\sin\phi = \frac{|\mathbf{d} \cdot \mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}$$
 
@@ -282,15 +272,14 @@ The **scalar triple product** is:
 
 $$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$$
 
-Its absolute value equals the volume of the parallelepiped spanned by
-$\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
+Its absolute value equals the volume of the parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And
+$\mathbf{c}$.
 
 $$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}$$
 
 ### Coplanarity Test
 
-Three vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are **coplanar** if and only
-if:
+Three vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are **coplanar** if and only if:
 
 $$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$$
 
@@ -317,8 +306,7 @@ The component of $\mathbf{a}$ perpendicular to $\mathbf{b}$ is:
 
 $$\mathbf{a}_{\perp} = \mathbf{a} - \mathrm{proj}_{\mathbf{b}}\,\mathbf{a}$$
 
-**Example.** Find the projection of $\mathbf{a} = (3, 1, -2)$ onto
-$\mathbf{b} = (1, 0, 2)$.
+**Example.** Find the projection of $\mathbf{a} = (3, 1, -2)$ onto $\mathbf{b} = (1, 0, 2)$.
 
 $$\mathbf{a} \cdot \mathbf{b} = 3 + 0 - 4 = -1, \qquad |\mathbf{b}|^2 = 1 + 4 = 5$$
 
@@ -352,14 +340,12 @@ $t = 0$So the intersection point is $(1, 2, 0)$.
 
 ### Plane-Plane Intersection
 
-Two planes $\mathbf{r} \cdot \mathbf{n}_1 = d_1$ and
-$\mathbf{r} \cdot \mathbf{n}_2 = d_2$ intersect In a line. The direction of this line is
-$\mathbf{d} = \mathbf{n}_1 \times \mathbf{n}_2$ (provided the Planes are not
-parallel).
+Two planes $\mathbf{r} \cdot \mathbf{n}_1 = d_1$ and $\mathbf{r} \cdot \mathbf{n}_2 = d_2$ intersect
+In a line. The direction of this line is $\mathbf{d} = \mathbf{n}_1 \times \mathbf{n}_2$ (provided
+the Planes are not parallel).
 
-If $\mathbf{n}_1$ and $\mathbf{n}_2$ are parallel (i.e.
-$\mathbf{n}_1 = k\mathbf{n}_2$), the planes Are either coincident (same plane) or
-parallel and distinct (no intersection).
+If $\mathbf{n}_1$ and $\mathbf{n}_2$ are parallel (i.e. $\mathbf{n}_1 = k\mathbf{n}_2$), the planes
+Are either coincident (same plane) or parallel and distinct (no intersection).
 
 ---
 
@@ -367,8 +353,7 @@ parallel and distinct (no intersection).
 
 ### Direction Cosines
 
-For a vector $\mathbf{a} = (a_1, a_2, a_3)$ with $|\mathbf{a}| \ne 0$The **direction
-cosines** are:
+For a vector $\mathbf{a} = (a_1, a_2, a_3)$ with $|\mathbf{a}| \ne 0$The **direction cosines** are:
 
 $$l = \cos\alpha = \frac{a_1}{|\mathbf{a}|}, \qquad m = \cos\beta = \frac{a_2}{|\mathbf{a}|}, \qquad n = \cos\gamma = \frac{a_3}{|\mathbf{a}|}$$
 
@@ -421,11 +406,11 @@ $$P' = 2F - P = \left(\dfrac{8}{3} - 1,\, \dfrac{11}{3} - 2,\, \dfrac{19}{3} - 3
 
 :::warning Warning
 
-The cross product is defined only in $\mathbb{R}^3$ (and $\mathbb{R}^7$). Do not attempt
-to compute Cross products in $\mathbb{R}^2$ directly. Also,
+The cross product is defined only in $\mathbb{R}^3$ (and $\mathbb{R}^7$). Do not attempt to compute
+Cross products in $\mathbb{R}^2$ directly. Also,
 $\mathbf{a} \times \mathbf{b} \ne \mathbf{b} \times
-\mathbf{a}$: the cross
-product is anti-commutative.
+\mathbf{a}$: the cross product is
+anti-commutative.
 
 :::
 
@@ -481,8 +466,7 @@ $$|\mathbf{d}| = \sqrt{9 + 1 + 4} = \sqrt{14}, \qquad |\mathbf{n}| = \sqrt{4 + 1
 
 $$\cos\alpha = \frac{1}{3\sqrt{14}} = \frac{\sqrt{14}}{42} \implies \alpha \approx 85.0\,^{\circ}$$
 
-The angle between the line and the plane is
-$\phi = 90\,^{\circ} - \alpha \approx 5.0\,^{\circ}$.
+The angle between the line and the plane is $\phi = 90\,^{\circ} - \alpha \approx 5.0\,^{\circ}$.
 
 </details>
 
@@ -505,8 +489,8 @@ $$D \approx 3.22$$
 
 **Worked Example: Volume of a Parallelepiped**
 
-Find the volume of the parallelepiped with adjacent edges represented by
-$\mathbf{a} = (1, 0, 2)$ $\mathbf{b} = (3, 1, -1)$And $\mathbf{c} = (2, -1, 1)$.
+Find the volume of the parallelepiped with adjacent edges represented by $\mathbf{a} = (1, 0, 2)$
+$\mathbf{b} = (3, 1, -1)$And $\mathbf{c} = (2, -1, 1)$.
 
 <details>
 <summary>Solution</summary>
@@ -517,8 +501,7 @@ First compute $\mathbf{b} \times \mathbf{c}$:
 
 $$\mathbf{b} \times \mathbf{c} = \begin{pmatrix} (1)(1) - (-1)(-1) \\ (-1)(2) - (3)(1) \\ (3)(-1) - (1)(2) \end{pmatrix} = \begin{pmatrix} 0 \\ -5 \\ -5 \end{pmatrix}$$
 
-Then
-$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (1)(0) + (0)(-5) + (2)(-5) = -10$.
+Then $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (1)(0) + (0)(-5) + (2)(-5) = -10$.
 
 Volume $= |-10| = 10$.
 
@@ -532,16 +515,16 @@ Volume $= |-10| = 10$.
 
 **Worked Example: Plane Through a Line Perpendicular to Another Plane**
 
-Find the equation of the plane that contains the line $\mathbf{r} = (1, 2, 3) + t(1, -1, 0)$
-and is Perpendicular to the plane $x + 2y - z = 7$.
+Find the equation of the plane that contains the line $\mathbf{r} = (1, 2, 3) + t(1, -1, 0)$ and is
+Perpendicular to the plane $x + 2y - z = 7$.
 
 <details>
 <summary>Solution</summary>
 
 The plane must contain the direction vector $\mathbf{d} = (1, -1, 0)$ of the given line.
 
-The plane is perpendicular to $x + 2y - z = 7$Whose normal is $\mathbf{n}_1 = (1, 2, -1)$.
-Since the Planes are perpendicular, $\mathbf{n}_1$ lies in the desired plane.
+The plane is perpendicular to $x + 2y - z = 7$Whose normal is $\mathbf{n}_1 = (1, 2, -1)$. Since the
+Planes are perpendicular, $\mathbf{n}_1$ lies in the desired plane.
 
 The desired plane has normal $\mathbf{n} = \mathbf{d} \times \mathbf{n}_1$:
 
@@ -560,15 +543,15 @@ $$x + y + 3z - 12 = 0$$
 ## Common Pitfalls
 
 1. **Confusing the angle between a line and a plane.** The formula
-   $\cos\theta = \dfrac{|\mathbf{d} \cdot \mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}$
-   gives the angle between the line direction and the **normal** to the plane. The angle between the
-   line and the plane itself is $90\,^{\circ} - \theta$.
+   $\cos\theta = \dfrac{|\mathbf{d} \cdot \mathbf{n}|}{|\mathbf{d}||\mathbf{n}|}$ gives the angle
+   between the line direction and the **normal** to the plane. The angle between the line and the
+   plane itself is $90\,^{\circ} - \theta$.
 
-2. **Cross product direction errors.** The cross product $\mathbf{a} \times \mathbf{b}$
-   follows the right-hand rule. Reversing the order gives
+2. **Cross product direction errors.** The cross product $\mathbf{a} \times \mathbf{b}$ follows the
+   right-hand rule. Reversing the order gives
    $\mathbf{b} \times \mathbf{a} = -(\mathbf{a} \times
- \mathbf{b})$. Always
-   check the sign when computing normals to planes.
+ \mathbf{b})$. Always check the sign when
+   computing normals to planes.
 
 3. **Incorrect distance formula.** The distance from point $(x_1, y_1, z_1)$ to the plane
    $ax + by + cz = d$ is $\dfrac{|ax_1 + by_1 + cz_1 - d|}{\sqrt{a^2 + b^2 + c^2}}$. Note the $-d$
@@ -587,16 +570,15 @@ $$x + y + 3z - 12 = 0$$
    the shadow), while the vector projection gives a vector. The scalar projection can be negative if
    the angle exceeds $90\,^{\circ}$.
 
-7. **Scalar triple product coplanarity test.** Three vectors
-   $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are coplanar if
-   $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$. A zero result means the
+7. **Scalar triple product coplanarity test.** Three vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$
+   are coplanar if $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$. A zero result means the
    volume of the parallelepiped is zero, confirming coplanarity.
 
 8. **Normal vector to a plane from two direction vectors.** If a plane contains direction vectors
-   $\mathbf{d}_1$ and $\mathbf{d}_2$The normal is
-   $\mathbf{d}_1 \times \mathbf{d}_2$. A common mistake is to use the dot product or to
-   use $\mathbf{d}_2 \times \mathbf{d}_1$ without recognising this gives the opposite
-   normal direction (which is still valid for the plane equation).
+   $\mathbf{d}_1$ and $\mathbf{d}_2$The normal is $\mathbf{d}_1 \times \mathbf{d}_2$. A common
+   mistake is to use the dot product or to use $\mathbf{d}_2 \times \mathbf{d}_1$ without
+   recognising this gives the opposite normal direction (which is still valid for the plane
+   equation).
 
 ---
 
@@ -609,8 +591,8 @@ $$x + y + 3z - 12 = 0$$
    from the origin to this plane.
 
 3. Two lines are given by $\mathbf{r}_1 = (0, 1, 2) + t(1, -1, 1)$ and
-   $\mathbf{r}_2 = (1, 0, -1) + s(2, 1, 0)$. Show that the lines are skew and find the
-   shortest distance between them.
+   $\mathbf{r}_2 = (1, 0, -1) + s(2, 1, 0)$. Show that the lines are skew and find the shortest
+   distance between them.
 
 4. Find the angle between the planes $x + y + z = 1$ and $2x - y + z = 3$.
 
@@ -623,8 +605,8 @@ $$x + y + 3z - 12 = 0$$
    $(0, 1, 2)$. Find the vector equation of this line and its intersection with the plane
    $2x + y - z = 1$.
 
-8. Find the projection of $\mathbf{a} = (4, -1, 3)$ onto $\mathbf{b} = (2, 1, -2)$.
-   Hence find the component of $\mathbf{a}$ perpendicular to $\mathbf{b}$.
+8. Find the projection of $\mathbf{a} = (4, -1, 3)$ onto $\mathbf{b} = (2, 1, -2)$. Hence find the
+   component of $\mathbf{a}$ perpendicular to $\mathbf{b}$.
 
 ---
 
@@ -651,4 +633,16 @@ and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to vectors in three dimensions,
+including key theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- quadratic equations and the discriminant
+- simultaneous equations
+- polynomial division and the factor theorem
+- partial fractions
+- binomial expansion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

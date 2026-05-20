@@ -531,14 +531,14 @@ class Trie:
 
 ### Trie vs Hash Set for Strings
 
-| Operation             | Trie                       | Hash Set               |
-| --------------------- | -------------------------- | ---------------------- |
-| Insert                | $O(k)$                     | $O(k)$                 |
-| Exact search          | $O(k)$                     | $O(k)$ average         |
-| Prefix search         | $O(k)$                     | $O(n \cdot k)$         |
+| Operation             | Trie                     | Hash Set               |
+| --------------------- | ------------------------ | ---------------------- |
+| Insert                | $O(k)$                   | $O(k)$                 |
+| Exact search          | $O(k)$                   | $O(k)$ average         |
+| Prefix search         | $O(k)$                   | $O(n \cdot k)$         |
 | Space                 | $O(\mathrm{total chars)$ | $O(n \cdot k)$         |
-| Min string prefix     | $O(k)$                     | Not supported          |
-| Longest common prefix | $O(k)$                     | Not directly supported |
+| Min string prefix     | $O(k)$                   | Not supported          |
+| Longest common prefix | $O(k)$                   | Not directly supported |
 
 Tries are the right choice when you need prefix-based operations: autocomplete, spell checking, IP
 Routing (longest prefix match), and word games.
@@ -596,10 +596,10 @@ class GraphMatrix:
             self.matrix[v][u] = weight
 ```
 
-| Representation   | Space      | Check edge $u$-$v$       | Iterate neighbours       | Sparse graph |
-| ---------------- | ---------- | ------------------------ | ------------------------ | ------------ |
+| Representation   | Space      | Check edge $u$-$v$     | Iterate neighbours     | Sparse graph |
+| ---------------- | ---------- | ---------------------- | ---------------------- | ------------ |
 | Adjacency list   | $O(V + E)$ | $O(\mathrm{degree(u))$ | $O(\mathrm{degree(u))$ | Efficient    |
-| Adjacency matrix | $O(V^2)$   | $O(1)$                   | $O(V)$                   | Wasteful     |
+| Adjacency matrix | $O(V^2)$   | $O(1)$                 | $O(V)$                 | Wasteful     |
 
 :::info
 
@@ -932,8 +932,16 @@ loop over all vertices.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to trees and graphs, including
+key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- complex number arithmetic
+- Argand diagrams
+- modulus and argument
+- De Moivre's theorem
+- roots of complex numbers
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

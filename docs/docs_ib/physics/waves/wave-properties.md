@@ -830,8 +830,16 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing wave speed, frequency, and wavelength — remember $v = f\lambda$ relates all three.
 
-## Worked Examples
+2. Forgetting that waves transfer energy, not matter (except for matter waves in quantum mechanics).
 
-<!-- TODO: Add worked examples for this topic -->
+3. Misidentifying nodes and antinodes in standing wave diagrams.
+
+4. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
+
+5. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
+
+6. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.

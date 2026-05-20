@@ -811,12 +811,14 @@ Covered. ✓
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.
 
-## Summary
+2. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.

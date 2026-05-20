@@ -1011,8 +1011,13 @@ uncertain and time-varying.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to distinguish between short-run and long-run effects in macroeconomic analysis.
 
-## Summary
+2. Confusing a movement along a curve with a shift of the curve — movements are caused by price
+   changes; shifts by non-price determinants.
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting to consider the ceteris paribus assumption when analysing multi-variable economic
+   scenarios.
+
+4. Confusing nominal and real values — always adjust for inflation when comparing monetary values
+   across time.

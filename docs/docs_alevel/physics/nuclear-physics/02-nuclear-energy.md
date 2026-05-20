@@ -273,8 +273,8 @@ De-excite. 2--3 are emitted per fission.
 That undergo beta decay to excited states above the neutron separation energy. Key precursors for
 U-235 thermal fission:
 
-| Precursor                         | Half-life | Yield per 100 fissions |
-| --------------------------------- | --------- | ---------------------- |
+| Precursor                       | Half-life | Yield per 100 fissions |
+| ------------------------------- | --------- | ---------------------- |
 | $\prescript{87}{35}\mathrm{Br}$ | 55.7 s    | 0.027                  |
 | $\prescript{137}{53}\mathrm{I}$ | 24.5 s    | 0.025                  |
 
@@ -388,11 +388,11 @@ Its energy in a single collision. $\square$
 
 **Consequences for moderator choice:**
 
-| Moderator                                  | $M/m_n$ | $\Delta E_{\max}/E$ | Collisions to thermalise |
-| ------------------------------------------ | ------- | ------------------- | ------------------------ |
+| Moderator                                | $M/m_n$ | $\Delta E_{\max}/E$ | Collisions to thermalise |
+| ---------------------------------------- | ------- | ------------------- | ------------------------ |
 | Hydrogen ($\prescript{1}{1}\mathrm{H}$)  | 1       | 1.000               | $\sim 18$                |
 | Deuterium ($\prescript{2}{1}\mathrm{H}$) | 2       | 0.889               | $\sim 25$                |
-| Carbon-12                                  | 12      | 0.284               | $\sim 115$               |
+| Carbon-12                                | 12      | 0.284               | $\sim 115$               |
 
 The average logarithmic energy decrement per collision is $\xi$And the number of collisions to
 Thermalise from $E_0 = 2$ MeV to $E_{\mathrm{th}} = 0.025$ eV is $n = \ln(E_0/E_{\mathrm{th}})/\xi$.
@@ -409,10 +409,10 @@ The **multiplication factor** is:
 
 $$k = \frac◆LB◆\mathrm{neutrons in generation } n + 1◆RB◆◆LB◆\mathrm{neutrons in generation } n◆RB◆$$
 
-| Regime        | Condition   | Behaviour                       |
-| ------------- | ----------- | ------------------------------- |
+| Regime        | Condition | Behaviour                       |
+| ------------- | --------- | ------------------------------- |
 | Subcritical   | $k \lt 1$ | Fission rate decreases          |
-| Critical      | $k = 1$     | Steady power (normal operation) |
+| Critical      | $k = 1$   | Steady power (normal operation) |
 | Supercritical | $k \gt 1$ | Power increases                 |
 
 The **effective** multiplication factor $k_{\mathrm{eff}}$ accounts for neutron leakage and non-fuel
@@ -956,12 +956,18 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing atomic number (protons) with mass number (protons + neutrons).
 
-## Summary
+2. Forgetting that radioactive decay is random and spontaneous — it cannot be predicted for
+   individual nuclei.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misunderstanding that half-life is constant regardless of the initial amount of substance.
 
-## Worked Examples
+4. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
+
+6. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.

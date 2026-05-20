@@ -510,8 +510,12 @@ Additional factors contributing to adolescent risk-taking include:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Failing to distinguish between primary and secondary data sources in geographical research.
 
-## Worked Examples
+2. Describing processes without explaining the underlying causes and mechanisms.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Neglecting to consider multiple scales (local, regional, national, global) in geographical
+   analysis.
+
+4. Making generalisations without supporting case study evidence — always reference specific
+   locations and data.

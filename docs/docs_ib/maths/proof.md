@@ -122,8 +122,8 @@ The statements $P \implies Q$ and $\neg Q \implies \neg P$ have identical truth 
 
 _Proof._ We prove the contrapositive: if $n$ is odd, then $n^2$ is odd.
 
-Let $n = 2k + 1$ for $k \in \mathbb{Z}$. Then $n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$Which is
-Odd. Therefore, if $n^2$ is even, $n$ must be even.
+Let $n = 2k + 1$ for $k \in \mathbb{Z}$. Then $n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$Which is Odd.
+Therefore, if $n^2$ is even, $n$ must be even.
 
 ---
 
@@ -202,8 +202,7 @@ _Counterexample._ $2$ is prime and even.
 
 **Claim.** "If $f$ is continuous, then $f$ is differentiable."
 
-_Counterexample._ $f(x) = |x|$ is continuous on $\mathbb{R}$ but not differentiable at
-$x = 0$.
+_Counterexample._ $f(x) = |x|$ is continuous on $\mathbb{R}$ but not differentiable at $x = 0$.
 
 **Claim.** "For all real numbers $x$$x^2 \gt x$."
 
@@ -341,8 +340,8 @@ Prove that if $a$ and $b$ are rational and $a + b\sqrt{2} = 0$Then $a = b = 0$.
 **Problem 1:** Let the three consecutive integers be $n, n+1, n+2$. Their sum is
 $n + (n+1) + (n+2) = 3n + 3 = 3(n+1)$Which is divisible by $3$ since $n+1 \in \mathbb{Z}$.
 
-**Problem 2:** Suppose $\sqrt{3} = a/b$ in lowest terms, $a, b \in \mathbb{Z}^+$. Then
-$a^2 = 3b^2$ So $a^2$ is divisible by $3$Hence $a$ is divisible by $3$. Write $a = 3k$:
+**Problem 2:** Suppose $\sqrt{3} = a/b$ in lowest terms, $a, b \in \mathbb{Z}^+$. Then $a^2 = 3b^2$
+So $a^2$ is divisible by $3$Hence $a$ is divisible by $3$. Write $a = 3k$:
 $9k^2 = 3b^2 \implies b^2 = 3k^2$So $b$ is divisible by $3$. Both $a$ and $b$ divisible by $3$
 Contradicts lowest terms.
 
@@ -583,9 +582,9 @@ Prove that $\log_2{5}$ is irrational.
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 11:** Suppose $\sqrt{2} + \sqrt{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{Z}^+$ in
-lowest Terms. Squaring: $5 + 2\sqrt{6} = a^2/b^2$So $\sqrt{6} = (a^2 - 5b^2)/(2b^2)$Which is
-rational. But $\sqrt{6}$ is irrational (proved earlier). Contradiction.
+**Problem 11:** Suppose $\sqrt{2} + \sqrt{3} = \dfrac{a}{b}$ with $a, b \in \mathbb{Z}^+$ in lowest
+Terms. Squaring: $5 + 2\sqrt{6} = a^2/b^2$So $\sqrt{6} = (a^2 - 5b^2)/(2b^2)$Which is rational. But
+$\sqrt{6}$ is irrational (proved earlier). Contradiction.
 
 **Problem 12:** Base case ($n = 1$): $\dfrac{1}{1 \cdot 2} = \dfrac{1}{2} = \dfrac{1}{1+1}$. True.
 Inductive hypothesis: $\displaystyle\sum_{i=1}^{k} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1}$. Inductive
@@ -594,8 +593,8 @@ $\displaystyle\sum_{i=1}^{k+1} \dfrac{1}{i(i+1)} = \dfrac{k}{k+1} + \dfrac{1}{(k
 This is the formula with $n = k + 1$.
 
 **Problem 13:** $a \mid b \implies b = ma$ and $b \mid a \implies a = nb$ for some
-$m, n \in \mathbb{Z}$. Substituting: $a = n(ma) = (nm)a$So $nm = 1$. Since $m, n$ are
-integers, either $m = n = 1$ (giving $a = b$) or $m = n = -1$ (giving $a = -b$).
+$m, n \in \mathbb{Z}$. Substituting: $a = n(ma) = (nm)a$So $nm = 1$. Since $m, n$ are integers,
+either $m = n = 1$ (giving $a = b$) or $m = n = -1$ (giving $a = -b$).
 
 **Problem 14:** Take $n = 41$: $41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 \times 43$Which is composite.
 Take $n = 42$: $42^2 + 42 + 41 = 1764 + 42 + 41 = 1847$. Check: $1847 = 43 \times 42.95 \ldots$.
@@ -611,8 +610,8 @@ $\displaystyle\sum_{i=1}^{k+1} 2^{i-1} = (2^k - 1) + 2^k = 2^{k+1} - 1$. This is
 $n = k + 1$.
 
 **Problem 16:** Contrapositive: if $a \mid b$Then $a \mid bc$. If $a \mid b$Then $b = ma$ for some
-$m \in \mathbb{Z}$So $bc = mac$Hence $a \mid bc$. This proves the contrapositive, hence the
-original statement.
+$m \in \mathbb{Z}$So $bc = mac$Hence $a \mid bc$. This proves the contrapositive, hence the original
+statement.
 
 **Problem 17:** Take $x = 0.5$ and $y = 0.5$. $\lfloor 0.5 + 0.5 \rfloor = \lfloor 1 \rfloor = 1$But
 $\lfloor 0.5 \rfloor + \lfloor 0.5 \rfloor = 0 + 0 = 0 \ne 1$.
@@ -639,4 +638,16 @@ For the A-Level treatment of this topic, see
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to proof, including key theorems,
+methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- fundamental definitions and theorems
+- algebraic and graphical methods
+- proof and logical reasoning
+- problem-solving strategies
+- applications and modelling
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

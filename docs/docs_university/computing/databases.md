@@ -767,8 +767,8 @@ $\\{\mathrm{StudentID, \mathrm{CourseID\\} \to \mathrm{Grade$.
 
 - Candidate key: $\\{\mathrm{StudentID, \mathrm{CourseID\\}$.
 - 1NF: satisfied (atomic values).
-- 2NF violation: $\mathrm{StudentID \to \mathrm{StudentName$ is a partial dependency (StudentID
-  is a proper subset of the key).
+- 2NF violation: $\mathrm{StudentID \to \mathrm{StudentName$ is a partial dependency (StudentID is a
+  proper subset of the key).
 - Decompose: `Student(StudentID, StudentName, Dept)` and `Enrolment(StudentID, CourseID, Grade)`.
   Both are in 3NF and BCNF.
 
@@ -777,9 +777,8 @@ $\\{\mathrm{Course, \mathrm{Time\\} \to \\{\mathrm{Instructor, \mathrm{Room\\}$
 $\mathrm{Instructor \to \mathrm{Room$.
 
 - Candidate key: $\\{\mathrm{Course, \mathrm{Time\\}$.
-- 3NF: $\mathrm{Instructor \to \mathrm{Room$ -- Instructor is not a superkey, but Room is not
-  prime. Wait -- Room is **not** prime (not in any candidate key). So this actually violates 3NF
-  too.
+- 3NF: $\mathrm{Instructor \to \mathrm{Room$ -- Instructor is not a superkey, but Room is not prime.
+  Wait -- Room is **not** prime (not in any candidate key). So this actually violates 3NF too.
 
 Let us correct: `CourseOffering(Course, Instructor, Textbook)` with FDs:
 $\mathrm{Course \to \mathrm{Instructor$ $\mathrm{Instructor \to \mathrm{Textbook$.
@@ -794,16 +793,13 @@ $\mathrm{Instructor \to \mathrm{Course$.
 
 - Candidate keys:
   $\\{\mathrm{Course, \mathrm{Student\\}$$\\{\mathrm{Instructor, \mathrm{Student\\}$.
-- 3NF check for $\mathrm{Instructor \to \mathrm{Course$: Instructor is not a superkey. But
-  Course **is** prime (in candidate key $\\{\mathrm{Course, \mathrm{Student\\}$). So 3NF is
-  satisfied.
-- BCNF check: $\mathrm{Instructor \to \mathrm{Course$ violates BCNF (Instructor is not a
-  superkey).
+- 3NF check for $\mathrm{Instructor \to \mathrm{Course$: Instructor is not a superkey. But Course
+  **is** prime (in candidate key $\\{\mathrm{Course, \mathrm{Student\\}$). So 3NF is satisfied.
+- BCNF check: $\mathrm{Instructor \to \mathrm{Course$ violates BCNF (Instructor is not a superkey).
 
 Decompose: `Teaches(Instructor, Course)` and `Attends(Instructor, Student)`. This is lossless
-($\mathrm{Instructor$ is common and $\mathrm{Instructor \to \mathrm{Course$ holds in
-`Teaches`). But the dependency $\\{\mathrm{Course, \mathrm{Student\\} \to \mathrm{Instructor$
-is Not preserved.
+($\mathrm{Instructor$ is common and $\mathrm{Instructor \to \mathrm{Course$ holds in `Teaches`). But
+the dependency $\\{\mathrm{Course, \mathrm{Student\\} \to \mathrm{Instructor$ is Not preserved.
 
 **Theorem 4.4.** Not every relation can be decomposed into BCNF while preserving dependencies. 3NF
 Is the strongest normal form guaranteeing dependency-preserving, lossless-join decomposition.
@@ -1121,11 +1117,11 @@ AND/OR for multi-criteria queries.
 
 **Bitwise operations for query evaluation:**
 
-| Query                   | Bitmap operation                                          |
-| ----------------------- | --------------------------------------------------------- |
+| Query                   | Bitmap operation                                      |
+| ----------------------- | ----------------------------------------------------- |
 | $A = v_1$ AND $B = v_2$ | $\mathrm{bitmap_{A,v_1}$ AND $\mathrm{bitmap_{B,v_2}$ |
 | $A = v_1$ OR $A = v_2$  | $\mathrm{bitmap_{A,v_1}$ OR $\mathrm{bitmap_{A,v_2}$  |
-| $A \neq v_1$            | NOT $\mathrm{bitmap_{A,v_1}$                            |
+| $A \neq v_1$            | NOT $\mathrm{bitmap_{A,v_1}$                          |
 
 **Compression.** For columns with many distinct values, run-length encoding (WAH or BBC) compresses
 Bitmaps effectively while still supporting bitwise operations.
@@ -1141,7 +1137,7 @@ buffer Pool has $B$ pages and each disk page access costs one I/O.
 | ----------------------- | --------------------------------------------------------- |
 | Full table scan         | $\lceil n_R / B \rceil$ (or $n_R$ if $B$ pages available) |
 | B+ tree equality search | $\log_f(n_R)$ leaf + 1 data page                          |
-| B+ tree range search    | $\log_f(n_R)$ leaf + $\lvert\mathrm{range pages\rvert$  |
+| B+ tree range search    | $\log_f(n_R)$ leaf + $\lvert\mathrm{range pages\rvert$    |
 | Hash equality search    | 1 (ideal)                                                 |
 
 Where $f$ is the fanout (average number of children per internal node).
@@ -1433,7 +1429,7 @@ $1 / V(A, R)$ where $V(A, R)$ is the number of distinct values of $A$ in $R$.
 | Predicate type              | Selectivity estimate                             |
 | --------------------------- | ------------------------------------------------ |
 | $A = v$                     | $1 / V(A, R)$                                    |
-| $A \gt v$                 | $(\max(A) - v) / (\max(A) - \min(A))$            |
+| $A \gt v$                   | $(\max(A) - v) / (\max(A) - \min(A))$            |
 | $A_1 = v_1 \land A_2 = v_2$ | $1 / V(A_1) \times 1 / V(A_2)$                   |
 | $A_1 = v_1 \lor A_2 = v_2$  | $1/V(A_1) + 1/V(A_2) - 1/(V(A_1) \times V(A_2))$ |
 
@@ -1704,8 +1700,8 @@ Updated in the background.
 | Leaderless    | Any node     | Any node    | Tunable (quorum reads/writes)                           |
 
 **Quorum-based consistency.** For a system with $N$ replicas, define write quorum $W$ and read
-quorum $R$ such that $W + R \gt N$. This guarantees that any read sees at least one replica with
-the Latest write.
+quorum $R$ such that $W + R \gt N$. This guarantees that any read sees at least one replica with the
+Latest write.
 
 ### 9.4 Consistency Models
 
@@ -1849,8 +1845,73 @@ reader returns the most recent version among the 3 responses.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
+   concentrations.
+
+2. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
+
+3. Forgetting to balance equations before performing calculations — always check that atoms and
+   charges balance on both sides.
+
+4. Assuming that a strong acid always has a lower pH than a weak acid without considering
+   concentration.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: SQL Joins and Aggregation
+
+**Problem.** Given tables `students(id, name, major)` and `grades(student_id, course, score)`, find
+the average score per major for courses with more than 5 enrolled students.
+
+**Solution.**
+
+```sql
+SELECT s.major, AVG(g.score) AS avg_score
+FROM students s
+JOIN grades g ON s.id = g.student_id
+GROUP BY s.major
+HAVING COUNT(DISTINCT g.student_id) > 5
+ORDER BY avg_score DESC;
+```
+
+The `HAVING` clause filters groups after aggregation, unlike `WHERE` which filters rows before.
+
+$\blacksquare$
+
+### Example 2: ER to Relational Mapping
+
+**Problem.** Map an ER diagram with entity `Student` (sid, name), entity `Course` (cid, title), and
+M:N relationship `Enrolls` with attribute `grade` to relational tables.
+
+**Solution.** Three tables:
+
+```sql
+Student(sid PK, name)
+Course(cid PK, title)
+Enrolls(sid FK, cid FK, grade, PRIMARY KEY (sid, cid))
+```
+
+The M:N relationship becomes its own table with foreign keys to both entities and a composite
+primary key.
+
+$\blacksquare$
+
+## Summary
+
+- Relational model: data stored in tables (relations) with attributes; keys (primary, foreign)
+  enforce integrity.
+- SQL fundamentals: `SELECT`, `JOIN` (inner, left, right, full), `GROUP BY`, `HAVING`, subqueries.
+- Normalisation: 1NF (atomic values), 2NF (no partial dependencies), 3NF (no transitive
+  dependencies), BCNF.
+- ACID properties: Atomicity, Consistency, Isolation, Durability — guarantee reliable transactions.
+- Indexing: B+ tree indexes speed up point and range queries; trade-off between query speed and
+  update overhead.
+
+## Cross-References
+
+| Topic                          | Site        | Link                                                                    |
+| ------------------------------ | ----------- | ----------------------------------------------------------------------- |
+| Advanced Databases             | WyattsNotes | [View](/docs/university/computing/databases-advanced)                   |
+| Advanced SQL                   | WyattsNotes | [View](/docs/infrastructure/databases/02-sql-fundamentals/advanced-sql) |
+| Algorithms and Data Structures | WyattsNotes | [View](/docs/university/computing/algorithms-and-data-structures)       |
+| Database Systems — CMU 15-445  | CMU         | [View](https://15445.courses.cs.cmu.edu/)                               |

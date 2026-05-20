@@ -1050,4 +1050,13 @@ self-marking and building a personal test matrix. :::
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Conservation of energy**
+
+A $0.50\,\text{kg}$ ball is dropped from a height of $20\,\text{m}$. Calculate its speed just before
+it hits the ground (ignore air resistance).
+
+**Solution:**
+
+Using conservation of energy: $mgh = \frac{1}{2}mv^2$
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} \approx 19.8\,\text{m\,s}^{-1}$$

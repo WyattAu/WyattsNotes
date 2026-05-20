@@ -895,8 +895,46 @@ and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to use the chain rule for composite functions — identify the inner function first.
+
+2. Confusing the derivative of $\ln(x)$ with the derivative of $\log_a(x)$ — the latter requires the
+   change of base formula.
+
+3. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
+
+4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+5. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Related Rates
+
+**Problem.** The radius of a circle increases at $3\;\text{cm/s}$. Find the rate of change of the
+area when $r = 5$ cm.
+
+**Solution.** $A = \pi r^2$. Differentiating with respect to $t$:
+
+$$\frac{dA}{dt} = 2\pi r \frac{dr}{dt} = 2\pi (5)(3) = 30\pi \approx 94.2\;\text{cm}^2/\text{s}$$
+
+$\blacksquare$
+
+### Example 2: Optimisation with Constraint
+
+**Problem.** A farmer has 100 m of fencing to enclose a rectangular area against a wall (no fencing
+needed on the wall side). Find the maximum area.
+
+**Solution.** Let the side parallel to the wall be $x$ and the two perpendicular sides be $y$.
+Constraint: $x + 2y = 100$, so $x = 100 - 2y$.
+
+Area: $A = xy = y(100 - 2y) = 100y - 2y^2$.
+
+$\frac{dA}{dy} = 100 - 4y = 0 \Rightarrow y = 25$.
+
+$x = 100 - 50 = 50$. Maximum area $= 50 \times 25 = 1250\;\text{m}^2$.
+
+Second derivative check: $\frac{d^2A}{dy^2} = -4 < 0$ (confirmed maximum).
+
+$\blacksquare$

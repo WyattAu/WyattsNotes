@@ -336,8 +336,7 @@ $$
 U = \frac{1}{2}LI^2
 $$
 
-**Derivation:** The power delivered to the inductor is $P = \mathcal{E}I = LI(dI/dt)$.
-Integrating:
+**Derivation:** The power delivered to the inductor is $P = \mathcal{E}I = LI(dI/dt)$. Integrating:
 
 $$
 U = \int_0^t P\, dt' = L\int_0^I I'\, dI' = \frac{1}{2}LI^2
@@ -443,11 +442,11 @@ $$
 
 The four Maxwell's equations unify electricity and magnetism:
 
-| Equation                    | Law                                                           | Integral Form                                                                               |
-| --------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Equation                    | Law                                                           | Integral Form                                                                             |
+| --------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Gauss's Law for Electricity | Electric charges produce electric fields                      | $\oint \vec{E} \cdot d\vec{A} = \dfrac{Q_{\text{enc}}{\epsilon_0}$                        |
-| Gauss's Law for Magnetism   | No magnetic monopoles                                         | $\oint \vec{B} \cdot d\vec{A} = 0$                                                          |
-| Faraday's Law               | Changing magnetic fields produce electric fields              | $\oint \vec{E} \cdot d\vec{l} = -\dfrac{d\Phi_B}{dt}$                                       |
+| Gauss's Law for Magnetism   | No magnetic monopoles                                         | $\oint \vec{B} \cdot d\vec{A} = 0$                                                        |
+| Faraday's Law               | Changing magnetic fields produce electric fields              | $\oint \vec{E} \cdot d\vec{l} = -\dfrac{d\Phi_B}{dt}$                                     |
 | Ampere-Maxwell Law          | Currents and changing electric fields produce magnetic fields | $\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc} + \mu_0\epsilon_0\dfrac{d\Phi_E}{dt}$ |
 
 ### The Displacement Current
@@ -544,8 +543,8 @@ This is the same as the field inside a wire of radius $R$ carrying current $I$.
    $t = 10$ ms.
 
 6. An LC circuit has $L = 25$ mH and $C = 40\,\mu\text{F$. The maximum charge on the capacitor is
-   $80\,\mu\text{C$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the
-   total energy in the circuit.
+   $80\,\mu\text{C$. Find (a) the oscillation frequency, (b) the maximum current, and (c) the total
+   energy in the circuit.
 
 <details>
 <summary>Question 7: AP Exam-Style -- Biot-Savart and Ampere combined</summary>
@@ -625,9 +624,9 @@ $$
 <summary>Question 9: AP Exam-Style -- RL circuit analysis</summary>
 
 An RL circuit with $R = 100\,\Omega$ and $L = 0.5$ H is connected to a DC source of
-$\mathcal{E} = 20$ V. At $t = 0$The switch is closed. (a) Derive the current as a function of
-time. (b) At what time is The current increasing at half its initial rate? (c) How much energy has
-been stored in the inductor When the current reaches 80% of its maximum value?
+$\mathcal{E} = 20$ V. At $t = 0$The switch is closed. (a) Derive the current as a function of time.
+(b) At what time is The current increasing at half its initial rate? (c) How much energy has been
+stored in the inductor When the current reaches 80% of its maximum value?
 
 </details>
 
@@ -638,8 +637,7 @@ been stored in the inductor When the current reaches 80% of its maximum value?
 
 Rearranging: $\frac{dI}{dt} = \frac{\mathcal{E}}{L} - \frac{R}{L}I$.
 
-Let $I_{\max} = \mathcal{E}/R = 20/100 = 0.2$ A and $\tau = L/R = 0.5/100 = 5 \times 10^{-3}$
-s.
+Let $I_{\max} = \mathcal{E}/R = 20/100 = 0.2$ A and $\tau = L/R = 0.5/100 = 5 \times 10^{-3}$ s.
 
 Solution: $I(t) = I_{\max}(1 - e^{-t/\tau}) = 0.2(1 - e^{-200t})$.
 
@@ -693,8 +691,16 @@ $$\frac{dE}{dt} = \frac{I_d}{\epsilon_0 \pi R^2} = \frac{3}{(8.854 \times 10^{-1
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of magnetism, including the key equations, experimental
+methods, and applications relevant to the specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- fundamental principles and equations
+- SI units and dimensional analysis
+- mathematical modelling of physical phenomena
+- experimental techniques and measurement
+- applications to real-world problems
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

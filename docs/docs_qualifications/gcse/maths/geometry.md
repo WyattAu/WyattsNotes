@@ -409,12 +409,12 @@ $ah + (b-a)h = bh - ah + ah
 
 ### 4.2 3D Shapes
 
-| Shape    | Volume                                            | Surface Area                                   |
-| -------- | ------------------------------------------------- | ---------------------------------------------- |
-| Cuboid   | $lwh$                                             | $2(lw + lh + wh)$                              |
-| Cylinder | $\pi r^2 h$                                       | $2\pi r^2 + 2\pi rh$                           |
-| Sphere   | $\frac{4}{3}\pi r^3$                              | $4\pi r^2$                                     |
-| Cone     | $\frac{1}{3}\pi r^2 h$                            | $\pi r l + \pi r^2$ (where $l$ = slant height) |
+| Shape    | Volume                                          | Surface Area                                   |
+| -------- | ----------------------------------------------- | ---------------------------------------------- |
+| Cuboid   | $lwh$                                           | $2(lw + lh + wh)$                              |
+| Cylinder | $\pi r^2 h$                                     | $2\pi r^2 + 2\pi rh$                           |
+| Sphere   | $\frac{4}{3}\pi r^3$                            | $4\pi r^2$                                     |
+| Cone     | $\frac{1}{3}\pi r^2 h$                          | $\pi r l + \pi r^2$ (where $l$ = slant height) |
 | Pyramid  | $\frac{1}{3} \times \mathrm{base area \times h$ | Base area + triangular faces                   |
 
 **Worked Example.** A cylinder has radius 5 cm and height 12 cm. Find its volume and total surface
@@ -481,8 +481,8 @@ $k\begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} ka \\ kb \end{pmatrix}$
 
 **Magnitude:** $\left|\begin{pmatrix} a \\ b \end{pmatrix}\right| = \sqrt{a^2 + b^2}$
 
-**Parallel vectors:** $\mathbf{a}$ and $\mathbf{b}$ are parallel if
-$\mathbf{a} = k\mathbf{b}$ for Some scalar $k$.
+**Parallel vectors:** $\mathbf{a}$ and $\mathbf{b}$ are parallel if $\mathbf{a} = k\mathbf{b}$ for
+Some scalar $k$.
 
 **Worked Example.** Points $A$$B$And $C$ have position vectors
 $\begin{pmatrix} 2 \\ 3 \end{pmatrix}$$\begin{pmatrix} 8 \\ 7 \end{pmatrix}$And
@@ -718,8 +718,16 @@ Height: $h = \sqrt{6^2 - (3\sqrt{2})^2} = \sqrt{36 - 18} = \sqrt{18} = 3\sqrt{2}
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to geometry, including key
+theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- sine, cosine, and tangent functions
+- trigonometric identities
+- solving trigonometric equations
+- the sine and cosine rules
+- radian measure and arc length
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

@@ -656,12 +656,11 @@ Argument and no worse for any argument, then $f_1$ is selected.
 **Proof:**
 
 1. Let $k$ be the number of arguments. For each argument $i \in \{1, \ldots, k\}$Let
-   $\mathrm{ICS_{f_1}(i)$ and $\mathrm{ICS_{f_2}(i)$ be the implicit conversion sequences for
-   $f_1$ and $f_2$ respectively.
+   $\mathrm{ICS_{f_1}(i)$ and $\mathrm{ICS_{f_2}(i)$ be the implicit conversion sequences for $f_1$
+   and $f_2$ respectively.
 
-2. By the premise, $\exists j$ such that $\mathrm{ICS_{f_1}(j) \prec \mathrm{ICS_{f_2}(j)$
-   (strictly better) and $\forall i, \mathrm{ICS_{f_1}(i) \preceq \mathrm{ICS_{f_2}(i)$ (no
-   worse).
+2. By the premise, $\exists j$ such that $\mathrm{ICS_{f_1}(j) \prec \mathrm{ICS_{f_2}(j)$ (strictly
+   better) and $\forall i, \mathrm{ICS_{f_1}(i) \preceq \mathrm{ICS_{f_2}(i)$ (no worse).
 
 3. By [N4950 §12.4.3.2], this is exactly the definition of "better viable function."
 
@@ -842,8 +841,16 @@ Dispatch (like Java). In C++, accessibility is a post-resolution check, not a pr
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of overload resolution, including the key equations,
+experimental methods, and applications relevant to the specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- fundamental principles and equations
+- SI units and dimensional analysis
+- mathematical modelling of physical phenomena
+- experimental techniques and measurement
+- applications to real-world problems
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

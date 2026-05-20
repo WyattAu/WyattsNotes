@@ -469,12 +469,13 @@ conditions and receive low prices for recovered materials.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Summary
+2. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.

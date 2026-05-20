@@ -972,12 +972,13 @@ Using classes.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
 
-## Summary
+2. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).

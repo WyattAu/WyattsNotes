@@ -123,10 +123,10 @@ $$f: X \to Y$$
 <details>
 <summary>Non-examples of functions</summary>
 
-- $f_1: \mathbb{R}^+ \to \mathbb{R},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two
-  values, $f_1$ is not a function.
-- $f_2: \mathbb{R} \to \mathbb{R},\; f_2(x) = \frac{1}{x}$ — At $x = 0$$f_2(0)$ is
-  undefined, so not every element of the domain is mapped. Redefine as
+- $f_1: \mathbb{R}^+ \to \mathbb{R},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two values, $f_1$ is
+  not a function.
+- $f_2: \mathbb{R} \to \mathbb{R},\; f_2(x) = \frac{1}{x}$ — At $x = 0$$f_2(0)$ is undefined, so not
+  every element of the domain is mapped. Redefine as
   $f_2: \mathbb{R} \setminus \{0\} \to \mathbb{R}$.
 - $f_3: \emptyset \to Y$ — Since no elements are in the domain, uniqueness is vacuously satisfied.
   This is a valid (empty) function.
@@ -291,8 +291,8 @@ $19.3125 \le A \lt 20.2125$.
 
 ## Sequences and Series
 
-A sequence is a function $f$ with domain $\mathbb{N}$ (or $\mathbb{N}_0$) and codomain
-$X$. Writing $u_n = f(n)$Every sequence is ordered by its index.
+A sequence is a function $f$ with domain $\mathbb{N}$ (or $\mathbb{N}_0$) and codomain $X$. Writing
+$u_n = f(n)$Every sequence is ordered by its index.
 
 $$f: \mathbb{N} \to X, \quad u_n = f(n), \; n \in \mathbb{N}$$
 
@@ -774,8 +774,8 @@ Find: (a) $A \cap B$(b) $A \cup B$(c) $A'$(d) $(A \cap B)'$(e) $|A \cup B|$.
 <details>
 <summary>Problem 2: Functions — bijectivity</summary>
 
-Let $f: \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = x^3 - x$. Determine whether $f$
-is Injective, surjective, or neither.
+Let $f: \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = x^3 - x$. Determine whether $f$ is
+Injective, surjective, or neither.
 
 **Solution.**
 
@@ -920,8 +920,16 @@ and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to number and algebra, including
+key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- quadratic equations and the discriminant
+- simultaneous equations
+- polynomial division and the factor theorem
+- partial fractions
+- binomial expansion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

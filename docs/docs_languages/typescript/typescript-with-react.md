@@ -815,8 +815,16 @@ interface Good {
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of typescript with react, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- type annotations and interfaces
+- generics and utility types
+- async/await and Promises
+- modules and namespaces
+- type guards and narrowing
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

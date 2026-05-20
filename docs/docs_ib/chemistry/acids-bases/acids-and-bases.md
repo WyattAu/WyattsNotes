@@ -1008,8 +1008,16 @@ Note: The second and third dissociations contribute negligible H$^+$ since $K_{a
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of acids and bases, including key reactions, underlying
+theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Brønsted-Lowry theory
+- strong and weak acids/bases
+- pH calculations
+- titration curves and indicators
+- hydrolysis of salts
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

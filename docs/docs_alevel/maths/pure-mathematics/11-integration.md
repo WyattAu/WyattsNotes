@@ -578,12 +578,20 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting the chain rule when integrating composite functions — look for an inner function and
+   its derivative.
 
-## Summary
+2. Confusing definite and indefinite integrals — definite integrals give a numerical value;
+   indefinite integrals give a family of functions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Incorrectly applying limits of integration after a substitution — remember to change the limits
+   to the new variable.
 
-## Worked Examples
+4. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
+
+6. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).

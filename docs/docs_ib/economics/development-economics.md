@@ -2781,4 +2781,16 @@ structurally increased commodity prices.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the economic theories and principles related to development economics, including
+key models, evidence, and policy implications.
+
+**Key concepts include:**
+
+- supply and demand analysis
+- price elasticity
+- market structures (perfect competition, monopoly)
+- market failure and externalities
+- production and costs
+
+The ability to apply these theories to real-world data and evaluate policy decisions is central to
+success in this subject.

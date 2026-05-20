@@ -201,13 +201,13 @@ Distinguished by wavelength (equivalently, frequency).
 
 | Region        | Wavelength Range | Typical Use                      |
 | ------------- | ---------------- | -------------------------------- |
-| Radio waves   | $\gt 1$ m      | Broadcasting, communication      |
+| Radio waves   | $\gt 1$ m        | Broadcasting, communication      |
 | Microwaves    | 1 mm – 1 m       | Cooking, satellite signals       |
 | Infrared      | 700 nm – 1 mm    | Thermal imaging, remote controls |
 | Visible light | 400 – 700 nm     | Human vision                     |
 | Ultraviolet   | 10 – 400 nm      | Sterilisation, fluorescence      |
 | X-rays        | 0.01 – 10 nm     | Medical imaging                  |
-| Gamma rays    | $\lt 0.01$ nm  | Cancer treatment, nuclear decay  |
+| Gamma rays    | $\lt 0.01$ nm    | Cancer treatment, nuclear decay  |
 
 All EM waves are produced by accelerating charges. In order of increasing frequency: radio
 (oscillating currents in aerials), microwave (klystrons/magnetrons), infrared/visible/UV (atomic
@@ -648,12 +648,16 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing wave speed, frequency, and wavelength — remember $v = f\lambda$ relates all three.
 
-## Summary
+2. Forgetting that waves transfer energy, not matter (except for matter waves in quantum mechanics).
 
-<!-- TODO: Add a summary for this topic -->
+3. Misidentifying nodes and antinodes in standing wave diagrams.
 
-## Worked Examples
+4. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
+
+6. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.

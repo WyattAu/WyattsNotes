@@ -415,8 +415,8 @@ Requires integration over the spherical shell. :::
 ### Field Inside a Solid Sphere
 
 For a solid sphere of total mass $M$ and radius $R$ with uniform density, consider a point at
-Distance $r \lt R$ from the center. Only the enclosed mass contributes (the shell theorem makes
-The outer shell contribute zero):
+Distance $r \lt R$ from the center. Only the enclosed mass contributes (the shell theorem makes The
+outer shell contribute zero):
 
 $$
 \begin`\{aligned}`
@@ -870,4 +870,16 @@ self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of gravitational fields, including the key equations,
+experimental methods, and applications relevant to the specification.
+
+**Key concepts include:**
+
+- gravitational fields and potential
+- electric fields and Coulomb's law
+- capacitance
+- magnetic fields and the motor effect
+- electromagnetic induction
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

@@ -983,8 +983,16 @@ Instead unless you specifically need the suffix tree structure.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to tries and string algorithms,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- complex number arithmetic
+- Argand diagrams
+- modulus and argument
+- De Moivre's theorem
+- roots of complex numbers
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

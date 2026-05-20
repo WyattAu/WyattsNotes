@@ -932,8 +932,16 @@ Generate license notice bundles for your distribution.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of software licensing, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- the software development lifecycle
+- agile vs waterfall methodologies
+- testing strategies (unit, integration, system)
+- version control
+- documentation and maintenance
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

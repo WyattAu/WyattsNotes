@@ -274,8 +274,7 @@ $$Q = \frac{1}{2} + \frac{0 + 0 + 1}{2} = \frac{1}{2} + \frac{1}{2} = 1 \quad \c
 ### 2.4 Parity Violation
 
 Parity transformation $P$ reverses the sign of all spatial coordinates:
-$\mathbf{x} \to -\mathbf{x}$. Under parity, polar vectors change sign while axial
-vectors do not.
+$\mathbf{x} \to -\mathbf{x}$. Under parity, polar vectors change sign while axial vectors do not.
 
 In 1956, Lee and Yang proposed that parity might not be conserved in weak interactions. This was
 Confirmed by the **Wu experiment** (1957), which measured the angular distribution of electrons
@@ -348,8 +347,8 @@ state), making it extremely suppressed: $\mathrm{BR(\pi^0 \to e^+e^-) \approx 6.
 | SU(3) gauge       | Colour charge      |
 
 **Proof (sketch).** Consider an infinitesimal transformation $x^\mu \to x^\mu + \delta x^\mu$
-$\phi \to \phi + \delta\phi$. If the action $S = \int \mathcal{L}\,d^4x$ is invariant, then
-the Current
+$\phi \to \phi + \delta\phi$. If the action $S = \int \mathcal{L}\,d^4x$ is invariant, then the
+Current
 $j^\mu = \frac{\partial \mathcal{L}}{\partial(\partial_\mu\phi)}\delta\phi -
 \mathcal{L}\delta x^\mu$
 satisfies $\partial_\mu j^\mu = 0$, yielding a conserved charge $Q = \int j^0\,d^3x$. $\blacksquare$
@@ -449,8 +448,8 @@ $$\mathcal{M}_u = \frac{e^2}{u}\,\bar{u}(p_4)\gamma^\mu u(p_1)\,\bar{u}(p_3)\gam
 And $t = (p_1 - p_3)^2$$u = (p_1 - p_4)^2$ are Mandelstam variables. The minus sign Is a consequence
 of Fermi-Dirac statistics and ensures the Pauli exclusion principle is Satisfied. When the two
 electrons scatter at $90^\circ$ in the CM frame, $t = u$ and the Two amplitudes cancel, giving
-$\mathcal{M} = 0$. This is the expected result: identical Fermions cannot be distinguished in
-the final state at $90^\circ$ scattering.
+$\mathcal{M} = 0$. This is the expected result: identical Fermions cannot be distinguished in the
+final state at $90^\circ$ scattering.
 
 </details>
 
@@ -510,10 +509,10 @@ Where $t = (p_1 - p_3)^2$ is the Mandelstam $t$ variable. The total amplitude is
 $$\mathcal{M} = \mathcal{M}_s - \mathcal{M}_t$$
 
 The minus sign arises from Fermi statistics (exchange of identical fermions in the Final state).
-When squaring, there is a cross term $\mathcal{M}_s\mathcal{M}_t^*$ That leads to
-interference between the two diagrams. This interference is destructive At small angles (forward
-scattering) and constructive at large angles, producing a Characteristic angular distribution that
-is essential for calibrating detectors at $e^+e^-$ colliders.
+When squaring, there is a cross term $\mathcal{M}_s\mathcal{M}_t^*$ That leads to interference
+between the two diagrams. This interference is destructive At small angles (forward scattering) and
+constructive at large angles, producing a Characteristic angular distribution that is essential for
+calibrating detectors at $e^+e^-$ colliders.
 
 </details>
 
@@ -700,12 +699,11 @@ Eight generators of SU(3), the Gell-Mann matrices $\lambda^a$ ($a = 1, \ldots, 8
 **Colour confinement:** All observable particles are colour singlets (SU(3) invariant). This is why
 Free quarks and gluons are not observed.
 
-**Quark colour states:** $q \in \mathbf{3}$ (triplet), $\bar{q} \in \bar{\mathbf{3}}$
-(antitriplet).
+**Quark colour states:** $q \in \mathbf{3}$ (triplet), $\bar{q} \in \bar{\mathbf{3}}$ (antitriplet).
 
 **Meson colour wavefunction:**
-$q\bar{q} \in \mathbf{3} \otimes \bar{\mathbf{3}} = \mathbf{8} \oplus \mathbf{1}$.
-The singlet $\mathbf{1}$ is the colour-neutral meson.
+$q\bar{q} \in \mathbf{3} \otimes \bar{\mathbf{3}} = \mathbf{8} \oplus \mathbf{1}$. The singlet
+$\mathbf{1}$ is the colour-neutral meson.
 
 **Baryon colour wavefunction:**
 $qqq \in \mathbf{3} \otimes \mathbf{3} \otimes \mathbf{3} = \mathbf{10} \oplus \mathbf{8} \oplus \mathbf{8} \oplus \mathbf{1}$.
@@ -748,8 +746,8 @@ $[T^a, T^b] = if^{abc}T^c$ and $\mathrm{Tr(T^a T^b) = \delta^{ab}/2$.
 <details>
 <summary>Example 5.1: Decomposing $3 \otimes \bar{3}$ (mesons)</summary>
 
-The tensor product $\mathbf{3} \otimes \bar{\mathbf{3}}$ can be decomposed using the
-Clebsch--Gordan series for SU(3):
+The tensor product $\mathbf{3} \otimes \bar{\mathbf{3}}$ can be decomposed using the Clebsch--Gordan
+series for SU(3):
 
 $$\mathbf{3} \otimes \bar{\mathbf{3}} = \mathbf{8} \oplus \mathbf{1}$$
 
@@ -784,8 +782,8 @@ $$= (\mathbf{10}_S \oplus \mathbf{8}_M) \oplus (\mathbf{8}_M \oplus \mathbf{1}_A
 
 $$= \mathbf{10} \oplus \mathbf{8} \oplus \mathbf{8} \oplus \mathbf{1}$$
 
-The completely antisymmetric singlet $\mathbf{1}_A$ is the colour wavefunction of all Baryons.
-In the full baryon wavefunction, the colour part is antisymmetric, so the Combined flavour $\otimes$
+The completely antisymmetric singlet $\mathbf{1}_A$ is the colour wavefunction of all Baryons. In
+the full baryon wavefunction, the colour part is antisymmetric, so the Combined flavour $\otimes$
 spin $\otimes$ space part must be symmetric (for ground-state Baryons, $L = 0$So the space part is
 symmetric).
 
@@ -1579,8 +1577,8 @@ $$\sin^2(12.5) \approx \sin^2(0.35) \approx 0.12$$
 
 And at the first oscillation maximum,
 $L/E = 2\pi/(\Delta m^2) = 2\pi/(2.5 \times 10^{-3}) \approx 2513$ km/GeV. For $E = 1$ GeV,
-$L_{\mathrm{osc} \approx 2513$ km, which is comparable to the Earth's diameter ($\sim 12\,700$
-km). The observed deficit is an average over many oscillations and energies, Giving roughly
+$L_{\mathrm{osc} \approx 2513$ km, which is comparable to the Earth's diameter ($\sim 12\,700$ km).
+The observed deficit is an average over many oscillations and energies, Giving roughly
 $\langle P\rangle \approx 1/2$ for maximal mixing, consistent with the Super-Kamiokande observation
 of approximately half the expected upward-going $\nu_\mu$ flux.
 
@@ -1662,8 +1660,7 @@ $$\mathrm{SU(3)_C \times \mathrm{SU(2)_L \times \mathrm{U(1)_Y \subset \mathrm{S
 
 **Charge quantisation in SU(5).** One of the elegant features of SU(5) is that it explains why
 Electric charge is quantised. In the SM, the values of the electric charges are inputs. In SU(5),
-Each generation of fermions fits into a $\bar{\mathbf{5}} \oplus \mathbf{10}$
-representation:
+Each generation of fermions fits into a $\bar{\mathbf{5}} \oplus \mathbf{10}$ representation:
 
 $$\bar{\mathbf{5}}: \quad \begin{pmatrix} \bar{d}_r \\ \bar{d}_g \\ \bar{d}_b \\ e^- \\ \nu_e \end{pmatrix}, \qquad \mathbf{10}: \quad \begin{pmatrix} 0 & u_r & u_g & u_b & \bar{e}^+ \\ -u_r & 0 & d_r & d_g & \bar{d}_b \\ -u_g & -d_r & 0 & d_b & \bar{d}_g \\ -u_b & -d_g & -d_b & 0 & \bar{d}_r \\ -e^+ & d_b & d_g & d_r & 0 \end{pmatrix}$$
 
@@ -1796,9 +1793,9 @@ $\Delta m^2_{21} = 7.5 \times 10^{-5}$ eV$^2$ and $\sin^2(2\theta_{12}) = 0.84$C
 oscillation probability $P(\nu_e \to \nu_\mu)$ at the distance $L = 1.5 \times 10^{11}$ m
 (Earth--Sun distance). Take $E_\nu = 0.3$ MeV. (Express $L$ and $E$ in natural units.)
 
-**Problem 17.** In the seesaw mechanism, if the Dirac mass is $m_D = m_{\mathrm{top} = 173$ GeV
-And the heavy Majorana mass is $M = 10^{14}$ GeV, calculate the resulting light neutrino mass.
-Compare this with the cosmological bound $\sum m_\nu \lt 0.12$ eV.
+**Problem 17.** In the seesaw mechanism, if the Dirac mass is $m_D = m_{\mathrm{top} = 173$ GeV And
+the heavy Majorana mass is $M = 10^{14}$ GeV, calculate the resulting light neutrino mass. Compare
+this with the cosmological bound $\sum m_\nu \lt 0.12$ eV.
 
 **Problem 18.** The $\Omega^-$ baryon ($sss$) was predicted by Gell-Mann in 1962 using the Decuplet
 equal-spacing rule. Given the masses $m_\Delta = 1232$ MeV, $m_{\Sigma^*} = 1385$ MeV, And
@@ -1915,10 +1912,9 @@ strength tensor.
   on fermion representations)
 
 **Strong CP problem.** QCD allows a term
-$\mathcal{L}_\theta = \theta\frac{g_s^2}{32\pi^2}F_{\mu\nu}^a\tilde{F}^{a\mu\nu}$ in the
-Lagrangian. This gives the neutron an electric dipole moment $d_n \propto \theta$But experiments
-find $d_n < 1.8 \times 10^{-26}\,e\cdot\text{cm$Implying $|\theta| < 10^{-10}$. Why is $\theta$ so
-small?
+$\mathcal{L}_\theta = \theta\frac{g_s^2}{32\pi^2}F_{\mu\nu}^a\tilde{F}^{a\mu\nu}$ in the Lagrangian.
+This gives the neutron an electric dipole moment $d_n \propto \theta$But experiments find
+$d_n < 1.8 \times 10^{-26}\,e\cdot\text{cm$Implying $|\theta| < 10^{-10}$. Why is $\theta$ so small?
 
 **Axion solution.** The Peccei--Quinn mechanism (1977) promotes $\theta$ to a dynamical field ---
 the **axion** $a(x)$. The axion potential has a minimum at $\theta_{\text{eff} = 0$Dynamically
@@ -2188,8 +2184,8 @@ $A_T = \pi(7.1\ \text{fm)^2$.
 **Solution:**
 
 (a) The transverse energy per unit rapidity is roughly
-$dE_T/dy \sim 1600 \times 0.5\ \text{GeV \sim 800$ GeV (each charged particle carries $\sim 0.5$
-GeV of $E_T$ on average).
+$dE_T/dy \sim 1600 \times 0.5\ \text{GeV \sim 800$ GeV (each charged particle carries $\sim 0.5$ GeV
+of $E_T$ on average).
 
 $$\epsilon = \frac{800\ \text{GeV}{(1\ \text{fm/c) \times \pi \times (7.1\ \text{fm)^2} = \frac{800 \times 1.602 \times 10^{-10}\ \text{J}{10^{-15}\,\text{s \times \pi \times 5.04 \times 10^{-30}\,\text{m^2}$$
 
@@ -2276,10 +2272,9 @@ new physics.
 
 **$B$-physics anomalies.** The LHCb experiment has observed several tensions in $B$-meson decays:
 
-- **$R_{K^{(*)}}$:** The ratio
-  $R_K = \text{BR(B^+ \to K^+\mu^+\mu^-)/\text{BR(B^+ \to K^+e^+e^-)$ is predicted to be 1 in
-  the SM (lepton universality). Measurements show $R_K = 0.846^{+0.044}_{-0.041}$ ($3.1\sigma$
-  deviation).
+- **$R_{K^{(*)}}$:** The ratio $R_K = \text{BR(B^+ \to K^+\mu^+\mu^-)/\text{BR(B^+ \to K^+e^+e^-)$
+  is predicted to be 1 in the SM (lepton universality). Measurements show
+  $R_K = 0.846^{+0.044}_{-0.041}$ ($3.1\sigma$ deviation).
 
 - **$b \to s\ell^+\ell^-$ angular observables:** The observable $P_5'$ shows a persistent deviation
   from SM predictions.
@@ -2332,4 +2327,35 @@ $$\alpha^{-1} = 137.035\,999\,166(15)$$
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Conservation of energy**
+
+A $0.50\,\text{kg}$ ball is dropped from a height of $20\,\text{m}$. Calculate its speed just before
+it hits the ground (ignore air resistance).
+
+**Solution:**
+
+Using conservation of energy: $mgh = \frac{1}{2}mv^2$
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} \approx 19.8\,\text{m\,s}^{-1}$$
+
+## Summary
+
+- Standard Model: quarks and leptons as fundamental fermions; gauge bosons (photon, $W^\pm$, $Z^0$,
+  gluon) mediate forces; Higgs boson gives mass via spontaneous symmetry breaking.
+- Particle accelerators: LHC collides protons at $\sqrt{s} = 13$ TeV; detectors (ATLAS, CMS) track
+  decay products and reconstruct events.
+- Cross sections and decay rates: Fermi's golden rule; branching ratios; resonances appear as peaks
+  in cross section vs energy.
+- Cosmology: Friedmann equations govern expansion; cosmic microwave background (CMB) at $T = 2.725$
+  K confirms Big Bang model.
+- Dark matter and dark energy: gravitational evidence (rotation curves, lensing); $\Lambda$CDM
+  model; cosmological constant $\Lambda$ drives accelerated expansion.
+
+## Cross-References
+
+| Topic                   | Site        | Link                                                       |
+| ----------------------- | ----------- | ---------------------------------------------------------- |
+| Quantum Mechanics       | WyattsNotes | [View](/docs/university/physics/quantum-mechanics)         |
+| Electromagnetism        | WyattsNotes | [View](/docs/university/physics/electromagnetism)          |
+| Solid State Physics     | WyattsNotes | [View](/docs/university/physics/solid-state-physics)       |
+| Particle Physics — CERN | CERN        | [View](https://home.cern/science/physics/particle-physics) |

@@ -806,8 +806,12 @@ Management strategies. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Using vague analytical terminology — be specific about the technique (e.g., 'sibilance' not
+   'sound effects').
 
-## Worked Examples
+2. Failing to embed quotations into analytical sentences — quotations should support your argument,
+   not stand alone.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Describing the content of a text without analysing the language techniques the writer uses.
+
+4. Ignoring context — always consider the social, historical, and literary context of the text.

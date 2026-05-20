@@ -449,11 +449,11 @@ $$
 
 ## Practice Questions
 
-1. Three point charges $q_1 = 2\,\mu\text{C$$q_2 = -3\,\mu\text{C$$q_3 = 4\,\mu\text{C$ are
-   placed at the corners of an equilateral triangle of side 0.5 m. Find the net force on $q_1$.
+1. Three point charges $q_1 = 2\,\mu\text{C$$q_2 = -3\,\mu\text{C$$q_3 = 4\,\mu\text{C$ are placed
+   at the corners of an equilateral triangle of side 0.5 m. Find the net force on $q_1$.
 
-2. A uniformly charged rod of length $L = 2$ m carries charge $Q = 8\,\mu\text{C$. Find the
-   electric field at a point 1 m from one end along the perpendicular bisector of the rod.
+2. A uniformly charged rod of length $L = 2$ m carries charge $Q = 8\,\mu\text{C$. Find the electric
+   field at a point 1 m from one end along the perpendicular bisector of the rod.
 
 3. A solid insulating sphere of radius $R = 0.1$ m has charge density $\rho = 10^{-6}$ C/m$^3$. Find
    the electric field at (a) $r = 0.05$ m and (b) $r = 0.2$ m from the center.
@@ -540,8 +540,16 @@ $$V = \frac{1}{4\pi\epsilon_0}\int \frac{dq}{R} = \frac{Q}{4\pi\epsilon_0 R}$$
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of electrostatics, including the key equations,
+experimental methods, and applications relevant to the specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- fundamental principles and equations
+- SI units and dimensional analysis
+- mathematical modelling of physical phenomena
+- experimental techniques and measurement
+- applications to real-world problems
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

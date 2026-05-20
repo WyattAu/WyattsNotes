@@ -19,9 +19,8 @@ The powers of $i$ are cyclic with period $4$: $i^n = i^{n \bmod 4}$.
 
 ### Motivation
 
-The equation $x^2 + 1 = 0$ has no real solutions. Extending $\mathbb{R}$ to include $i$ yields
-the Field of complex numbers, in which every polynomial has a root (the Fundamental Theorem of
-Algebra).
+The equation $x^2 + 1 = 0$ has no real solutions. Extending $\mathbb{R}$ to include $i$ yields the
+Field of complex numbers, in which every polynomial has a root (the Fundamental Theorem of Algebra).
 
 ---
 
@@ -542,8 +541,8 @@ Find all solutions to $z^4 + z^2 + 1 = 0$ and represent them on an Argand diagra
 <details>
 <summary>Problem 15</summary>
 
-Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$ for all
-$z_1, z_2 \in \mathbb{C}$ (parallelogram law).
+Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$ for all $z_1, z_2 \in \mathbb{C}$
+(parallelogram law).
 
 </details>
 
@@ -613,4 +612,16 @@ For the A-Level Further Maths treatment of this topic, see
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to complex numbers, including key
+theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- arithmetic and geometric sequences
+- series and sigma notation
+- recurrence relations
+- convergence tests
+- mathematical induction
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

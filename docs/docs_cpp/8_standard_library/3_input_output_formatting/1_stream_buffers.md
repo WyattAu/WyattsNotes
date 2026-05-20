@@ -616,12 +616,12 @@ void stream_state_demo() {
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Ignoring feedback from marked work and failing to address recurring weaknesses.
 
-## Summary
+2. Not practising with past papers or exercises under timed conditions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Focusing only on content knowledge without developing exam technique and question-answering
+   skills.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Not making connections between different topics within the subject to build a coherent
+   understanding.

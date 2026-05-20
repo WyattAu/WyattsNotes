@@ -245,12 +245,13 @@ For an overview of freshwater issues and management, see
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-## Summary
+2. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-<!-- TODO: Add a summary for this topic -->
+3. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Rounding too early in multi-step calculations — carry full precision through and round only the
+   final answer.

@@ -314,8 +314,8 @@ Friction always opposes **relative motion** (or the tendency to move). When sett
 
 ### 9.1 The Atwood machine
 
-Two masses $m_1$ and $m_2$ ($m_1 \gt m_2$) hang vertically from a light inextensible string
-Passing over a smooth, light pulley.
+Two masses $m_1$ and $m_2$ ($m_1 \gt m_2$) hang vertically from a light inextensible string Passing
+over a smooth, light pulley.
 
 **Equations of motion:**
 
@@ -359,9 +359,8 @@ Combined with $m_2 g - T = m_2 a$:
 
 $$a = \frac◆LB◆(m_2 - \mu m_1)g◆RB◆◆LB◆m_1 + m_2◆RB◆$$
 
-:::warning If $m_2 \lt \mu m_1$Then $a \lt 0$Meaning the system does not move. The friction
-Force is not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and
-$T = m_2 g$. :::
+:::warning If $m_2 \lt \mu m_1$Then $a \lt 0$Meaning the system does not move. The friction Force is
+not at its maximum; instead $F = m_2 g$ (friction balances the hanging weight) and $T = m_2 g$. :::
 
 ### 9.4 Two particles on inclined planes with a pulley
 
@@ -1022,12 +1021,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-## Summary
+2. Forgetting to include units in final answers, especially when working with derived units like
+   $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-<!-- TODO: Add a summary for this topic -->
+3. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.

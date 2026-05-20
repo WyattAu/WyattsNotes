@@ -574,8 +574,16 @@ Doing and how it does it. Every paragraph should develop this argument.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the analytical frameworks and techniques relevant to the 19th-century novel,
+including key terminology, approaches, and critical perspectives.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- key terminology and concepts
+- analytical frameworks
+- contextual knowledge
+- critical perspectives
+- comparative and evaluative skills
+
+Developing a precise analytical vocabulary and practising close reading are essential for strong
+performance in this area.

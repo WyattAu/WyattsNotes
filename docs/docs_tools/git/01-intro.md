@@ -214,12 +214,18 @@ This guide is organized into the following sections:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing `git reset` and `git revert` — reset moves the branch pointer; revert creates a new
+   commit that undoes changes.
 
-## Summary
+2. Forgetting to pull before pushing when working collaboratively, leading to merge conflicts.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Worked Examples
+4. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
+
+6. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.

@@ -845,8 +845,8 @@ The **Completely Fair Scheduler (CFS)** is the default process scheduler in Linu
    task's priority (niceness).
 2. CFS always picks the task with the smallest `vruntime`.
 3. The `vruntime` increment per tick is:
-   $\text{vruntime += \text{actual\_time \times \text{weight_0 / \text{weight$Where
-   $\text{weight$ depends on the nice value.
+   $\text{vruntime += \text{actual\_time \times \text{weight_0 / \text{weight$Where $\text{weight$
+   depends on the nice value.
 
 **Target latency.** CFS aims to give each task a fair share of CPU time within a "sched period"
 (target latency, 6 ms). If there are $n$ tasks, each gets $6/n$ ms per period.
@@ -1324,8 +1324,63 @@ If you get this wrong, revise: Section 3.4.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+2. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
+   applications.
+
+3. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
+
+4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Page Replacement — LRU Simulation
+
+**Problem.** A system has 3 page frames. Given the reference string
+`7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2`, calculate the number of page faults using LRU.
+
+**Solution.** Track frames and access times:
+
+| Ref | Frame 1 | Frame 2 | Frame 3 | Fault?        |
+| --- | ------- | ------- | ------- | ------------- |
+| 7   | 7       | —       | —       | Yes           |
+| 0   | 7       | 0       | —       | Yes           |
+| 1   | 7       | 0       | 1       | Yes           |
+| 2   | 2       | 0       | 1       | Yes (evict 7) |
+| 0   | 2       | 0       | 1       | No            |
+| 3   | 2       | 0       | 3       | Yes (evict 1) |
+| 0   | 2       | 0       | 3       | No            |
+| 4   | 4       | 0       | 3       | Yes (evict 2) |
+
+Total page faults: 9 (for the full string). Compare with optimal (Belady's): 7 faults.
+
+$\blacksquare$
+
+### Example 2: Dining Philosophers — Resource Hierarchy Solution
+
+**Problem.** Five philosophers share five chopsticks. Show how numbering chopsticks and always
+acquiring the lower-numbered one first prevents deadlock.
+
+**Solution.** Assign chopsticks numbers 1–5. Each philosopher picks up the lower-numbered chopstick
+first, then the higher.
+
+- P5 and P1 both try C1 first; only one succeeds, breaking the circular wait. No deadlock possible.
+
+$\blacksquare$
+
+## Summary
+
+- Page replacement: FIFO (Belady's anomaly), LRU (approximated by clock algorithm), optimal
+  (theoretical lower bound).
+- Deadlock conditions: mutual exclusion, hold-and-wait, no preemption, circular wait; prevention
+  breaks at least one condition.
+- Scheduling: CFS (Completely Fair Scheduler) in Linux uses red-black tree of virtual runtimes;
+  $O(1)$ pick, $O(\log n)$ insert.
+- Virtualisation: hypervisors (Type 1 bare-metal, Type 2 hosted); hardware support via Intel VT-x /
+  AMD-V extensions.
+- Distributed consensus: Raft and Paxos ensure fault-tolerant agreement; leader election and log
+  replication.

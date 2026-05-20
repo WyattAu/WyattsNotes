@@ -939,8 +939,16 @@ more vulnerable to extinction.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the biological principles of inheritance, variation, and evolution, including key
+concepts, experimental evidence, and real-world applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Mendelian inheritance
+- gene expression and regulation
+- mutations and genetic variation
+- genetic engineering (PCR, gel electrophoresis)
+- genome projects
+
+Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
+and evaluate experimental evidence critically.

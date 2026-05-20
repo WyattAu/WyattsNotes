@@ -1979,12 +1979,13 @@ For oxygen diffusing across the alveolar membrane:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Failing to link structure to function when describing biological molecules, cells, or organs.
 
-## Summary
+2. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').
 
-<!-- TODO: Add a summary for this topic -->
+3. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
+   incorrectly.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
+   change in tertiary structure.

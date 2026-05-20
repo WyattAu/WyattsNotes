@@ -606,12 +606,20 @@ $\square$
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing temperature with thermal energy — temperature is a measure of average kinetic energy,
+   not total energy.
 
-## Summary
+2. Forgetting that work done on a gas is positive when the gas is compressed ($W = p\Delta V$ with
+   sign convention).
 
-<!-- TODO: Add a summary for this topic -->
+3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
 
-## Worked Examples
+4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
+
+6. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.

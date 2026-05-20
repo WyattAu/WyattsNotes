@@ -26,10 +26,10 @@ Classical mechanics and statistical physics.
 Temperature is a measure of the average kinetic energy of the particles in a substance. Three scales
 Are commonly used:
 
-| Scale                            | Boiling point of water | Freezing point of water | Absolute zero |
-| -------------------------------- | ---------------------- | ----------------------- | ------------- |
+| Scale                          | Boiling point of water | Freezing point of water | Absolute zero |
+| ------------------------------ | ---------------------- | ----------------------- | ------------- |
 | Celsius ($^\circ\mathrm{C$)    | $100$                  | $0$                     | $-273.15$     |
-| Kelvin (K)                       | $373.15$               | $273.15$                | $0$           |
+| Kelvin (K)                     | $373.15$               | $273.15$                | $0$           |
 | Fahrenheit ($^\circ\mathrm{F$) | $212$                  | $32$                    | $-459.67$     |
 
 Conversion between Celsius and Kelvin:
@@ -174,9 +174,8 @@ Different temperature. By measuring the final equilibrium temperature, the unkno
 Capacity can be calculated.
 
 **Example (HL):** A $0.2\mathrm{ kg$ metal block is heated to $150^\circ\mathrm{C$ and placed in
-$0.5\mathrm{ kg$ Of water at $15^\circ\mathrm{C$. The final temperature is
-$20^\circ\mathrm{C$. Find the specific heat capacity of the metal. (Ignore calorimeter heat
-capacity.)
+$0.5\mathrm{ kg$ Of water at $15^\circ\mathrm{C$. The final temperature is $20^\circ\mathrm{C$. Find
+the specific heat capacity of the metal. (Ignore calorimeter heat capacity.)
 
 $$
 0.2 \times c \times (150 - 20) = 0.5 \times 4180 \times (20 - 15)
@@ -236,8 +235,8 @@ Note that $L_v$ is generally much larger than $L_f$ because completely separatin
 (boiling) requires overcoming all intermolecular forces, whereas melting only needs to disrupt the
 Ordered lattice while keeping molecules close together.
 
-**Example (OL):** How much energy is needed to convert 0.2 kg of ice at $0^\circ\mathrm{C$ to
-water at $0^\circ\mathrm{C$?
+**Example (OL):** How much energy is needed to convert 0.2 kg of ice at $0^\circ\mathrm{C$ to water
+at $0^\circ\mathrm{C$?
 
 $$
 Q = mL_f = 0.2 \times 3.34 \times 10^5 = 66800\mathrm{ J = 66.8\mathrm{ kJ
@@ -258,16 +257,15 @@ $$
 Q_{\mathrm{total} = Q_1 + Q_2 + Q_3 + Q_4 + Q_5
 $$
 
-**Example (HL):** How much energy is needed to convert 100 g of ice at $-10^\circ\mathrm{C$ to
-steam at $100^\circ\mathrm{C$?
+**Example (HL):** How much energy is needed to convert 100 g of ice at $-10^\circ\mathrm{C$ to steam
+at $100^\circ\mathrm{C$?
 
 1. Heat ice from $-10^\circ\mathrm{C$ to $0^\circ\mathrm{C$:
    $Q_1 = 0.1 \times 2100 \times 10 = 2100\mathrm{ J$.
 2. Melt ice at $0^\circ\mathrm{C$: $Q_2 = 0.1 \times 3.34 \times 10^5 = 33400\mathrm{ J$.
 3. Heat water from $0^\circ\mathrm{C$ to $100^\circ\mathrm{C$:
    $Q_3 = 0.1 \times 4180 \times 100 = 41800\mathrm{ J$.
-4. Vaporise water at $100^\circ\mathrm{C$:
-   $Q_4 = 0.1 \times 2.26 \times 10^6 = 226000\mathrm{ J$.
+4. Vaporise water at $100^\circ\mathrm{C$: $Q_4 = 0.1 \times 2.26 \times 10^6 = 226000\mathrm{ J$.
 
 $$
 Q_{\mathrm{total} = 2100 + 33400 + 41800 + 226000 = 303300\mathrm{ J \approx 303\mathrm{ kJ
@@ -312,8 +310,8 @@ $$
 Speed of the molecules. To maintain the same pressure (same force per unit area on the walls), the
 Gas must expand so that fewer molecules hit each unit area per unit time.
 
-Extrapolating Charles's law to $V = 0$ gives $T = 0\mathrm{ K$ (absolute zero). This is how
-absolute Zero was first estimated experimentally.
+Extrapolating Charles's law to $V = 0$ gives $T = 0\mathrm{ K$ (absolute zero). This is how absolute
+Zero was first estimated experimentally.
 
 ### Gay-Lussac's Law (OL/HL)
 
@@ -338,8 +336,8 @@ $$
 
 This reduces to each individual law when the appropriate variable is held constant.
 
-**Example (HL):** A gas occupies $3\mathrm{ m^3$ at $2 \times 10^5\mathrm{ Pa$ and
-$300\mathrm{ K$. Find its volume at $10^5\mathrm{ Pa$ and $400\mathrm{ K$.
+**Example (HL):** A gas occupies $3\mathrm{ m^3$ at $2 \times 10^5\mathrm{ Pa$ and $300\mathrm{ K$.
+Find its volume at $10^5\mathrm{ Pa$ and $400\mathrm{ K$.
 
 $$
 V_2 = \frac{p_1 V_1 T_2}{p_2 T_1} = \frac{2 \times 10^5 \times 3 \times 400}{10^5 \times 300} = 8\mathrm{ m^3
@@ -385,8 +383,8 @@ $$
 PV_m = RT
 $$
 
-At STP (standard temperature and pressure: $273.15\mathrm{ K$$1.013 \times 10^5\mathrm{ Pa$),
-one Mole of ideal gas occupies $22.4\mathrm{ L$.
+At STP (standard temperature and pressure: $273.15\mathrm{ K$$1.013 \times 10^5\mathrm{ Pa$), one
+Mole of ideal gas occupies $22.4\mathrm{ L$.
 
 **Example (HL):** Find the volume occupied by 2 mol of gas at $300\mathrm{ K$ and
 $1.01 \times 10^5\mathrm{ Pa$.
@@ -493,8 +491,8 @@ $$
 
 Where $M$ is the molar mass (kg/mol).
 
-Note: $c_{\mathrm{rms}$ is not the same as the average speed or the most probable speed. The
-Maxwell Distribution gives:
+Note: $c_{\mathrm{rms}$ is not the same as the average speed or the most probable speed. The Maxwell
+Distribution gives:
 
 - Most probable speed: $v_p = \sqrt{\frac{2k_BT}{m}}$
 - Average speed: $\bar{v} = \sqrt{\frac{8k_BT}{\pi m}}$
@@ -529,8 +527,8 @@ $$
 U = \frac{3}{2}Nk_BT = \frac{3}{2}nRT
 $$
 
-For a diatomic ideal gas (e.g., $\mathrm{N_2$$\mathrm{O_2$), rotational kinetic energy adds two
-more Degrees of freedom:
+For a diatomic ideal gas (e.g., $\mathrm{N_2$$\mathrm{O_2$), rotational kinetic energy adds two more
+Degrees of freedom:
 
 $$
 U = \frac{5}{2}nRT
@@ -669,9 +667,9 @@ $$
 \eta = 1 - \frac{300}{600} = 0.50 = 50\%
 $$
 
-**Example (HL):** A steam turbine receives steam at $500^\circ\mathrm{C$ and exhausts to a
-condenser at $30^\circ\mathrm{C$. Find the maximum Carnot efficiency and the minimum heat rejected
-per cycle if the turbine absorbs $5000\mathrm{ kJ$ per cycle.
+**Example (HL):** A steam turbine receives steam at $500^\circ\mathrm{C$ and exhausts to a condenser
+at $30^\circ\mathrm{C$. Find the maximum Carnot efficiency and the minimum heat rejected per cycle
+if the turbine absorbs $5000\mathrm{ kJ$ per cycle.
 
 $$
 T_H = 773\mathrm{ K, \quad T_C = 303\mathrm{ K
@@ -765,9 +763,8 @@ $$
 | Air                   | 0.026         |
 | Fibreglass insulation | 0.04          |
 
-**Example (HL):** A copper wall of thickness $5\mathrm{ mm$ and area $2\mathrm{ m^2$ has one
-face at $100^\circ\mathrm{C$ and the other at $20^\circ\mathrm{C$. Find the rate of heat
-conduction.
+**Example (HL):** A copper wall of thickness $5\mathrm{ mm$ and area $2\mathrm{ m^2$ has one face at
+$100^\circ\mathrm{C$ and the other at $20^\circ\mathrm{C$. Find the rate of heat conduction.
 
 $$
 \frac{dQ}{dt} = \frac{401 \times 2 \times (100 - 20)}{0.005} = \frac{64160}{0.005} = 1.28 \times 10^7\mathrm{ W
@@ -809,8 +806,8 @@ $$
 P = \varepsilon \sigma A T^4
 $$
 
-**Example (HL):** A spherical black body of radius $5\mathrm{ cm$ is at $500\mathrm{ K$. Find
-the Power radiated.
+**Example (HL):** A spherical black body of radius $5\mathrm{ cm$ is at $500\mathrm{ K$. Find the
+Power radiated.
 
 $$
 A = 4\pi r^2 = 4\pi(0.05)^2 = 0.0314\mathrm{ m^2
@@ -862,8 +859,7 @@ Surroundings, and heat up when colder.
 4. **First law of thermodynamics** -- $W$ is work done _by_ the system. Work done _on_ the system is
    negative $W$. Be consistent with sign conventions.
 5. **Ideal gas law** -- ensure the gas constant $R$ matches the units used.
-   $R = 8.314\mathrm{ J/(mol K)$ when $p$ is in Pa, $V$ in $\mathrm{m^3$$T$ in K, and $n$ in
-   mol.
+   $R = 8.314\mathrm{ J/(mol K)$ when $p$ is in Pa, $V$ in $\mathrm{m^3$$T$ in K, and $n$ in mol.
 6. **Carnot efficiency** -- temperatures must be in Kelvin. The formula $\eta = 1 - T_C/T_H$ gives
    the maximum possible efficiency; real engines are less efficient.
 7. **pV diagrams** -- work done by the gas equals the area under the curve. For a cycle, net work
@@ -875,11 +871,10 @@ Surroundings, and heat up when colder.
 
 ### Ordinary Level
 
-1. How much energy is needed to heat 5 kg of water from $15^\circ\mathrm{C$ to
-   $85^\circ\mathrm{C$?
+1. How much energy is needed to heat 5 kg of water from $15^\circ\mathrm{C$ to $85^\circ\mathrm{C$?
 2. How much energy is needed to melt 0.5 kg of ice at $0^\circ\mathrm{C$?
-3. A gas at $1.5 \times 10^5\mathrm{ Pa$ occupies $4\mathrm{ m^3$. If the volume is compressed
-   to $2\mathrm{ m^3$ at constant temperature, find the new pressure.
+3. A gas at $1.5 \times 10^5\mathrm{ Pa$ occupies $4\mathrm{ m^3$. If the volume is compressed to
+   $2\mathrm{ m^3$ at constant temperature, find the new pressure.
 4. Describe the three methods of heat transfer with an example of each.
 5. Explain the difference between heat and temperature.
 6. Convert $-40^\circ\mathrm{C$ to Kelvin and Fahrenheit. (Note: $-40^\circ\mathrm{C$ equals
@@ -897,12 +892,12 @@ Surroundings, and heat up when colder.
    much work is done per cycle and how much heat is rejected?
 5. A $150\mathrm{ g$ block of an unknown metal at $250^\circ\mathrm{C$ is dropped into
    $300\mathrm{ g$ of water at $20^\circ\mathrm{C$ in a calorimeter of heat capacity
-   $50\mathrm{ J/K$. The final temperature is $30^\circ\mathrm{C$. Find the specific heat
-   capacity of the metal.
-6. An ideal gas undergoes isothermal expansion from $2 \times 10^5\mathrm{ Pa$$0.01\mathrm{ m^3$
-   to $1 \times 10^5\mathrm{ Pa$. Find the final volume and the work done by the gas.
-7. A black body of surface area $0.1\mathrm{ m^2$ is at a temperature of $1500\mathrm{ K$. Find
-   the power radiated and the wavelength of peak emission.
+   $50\mathrm{ J/K$. The final temperature is $30^\circ\mathrm{C$. Find the specific heat capacity
+   of the metal.
+6. An ideal gas undergoes isothermal expansion from $2 \times 10^5\mathrm{ Pa$$0.01\mathrm{ m^3$ to
+   $1 \times 10^5\mathrm{ Pa$. Find the final volume and the work done by the gas.
+7. A black body of surface area $0.1\mathrm{ m^2$ is at a temperature of $1500\mathrm{ K$. Find the
+   power radiated and the wavelength of peak emission.
 8. Two moles of a monatomic ideal gas are heated at constant pressure from $300\mathrm{ K$ to
    $500\mathrm{ K$. Calculate the change in internal energy, the heat added, and the work done.
 9. A heat pump operates between an outdoor temperature of $5^\circ\mathrm{C$ and an indoor
@@ -914,8 +909,16 @@ Surroundings, and heat up when colder.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the fundamental principles of heat and thermodynamics, including the key
+equations, experimental methods, and applications relevant to the specification.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- specific heat capacity
+- latent heat
+- ideal gas laws
+- kinetic theory
+- thermodynamic processes
+
+A strong understanding of these principles, combined with regular practice of quantitative problems
+and past paper questions, is essential for success in examinations.

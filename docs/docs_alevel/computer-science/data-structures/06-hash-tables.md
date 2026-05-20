@@ -259,13 +259,13 @@ Per insertion: $O(1)$. $\square$
 
 ## 7. Comparison of Collision Resolution Methods
 
-| Property          | Chaining        | Linear Probing    | Double Hashing   |
-| ----------------- | --------------- | ----------------- | ---------------- |
-| Memory            | $O(n + m)$      | $O(m)$            | $O(m)$           |
-| Cache performance | Poor (pointers) | Good (contiguous) | Good             |
-| Clustering        | None            | Primary           | None             |
-| Delete            | $O(1)$          | Lazy deletion     | Lazy deletion    |
-| Load factor limit | No hard limit   | $\alpha \lt 1$  | $\alpha \lt 1$ |
+| Property          | Chaining        | Linear Probing    | Double Hashing |
+| ----------------- | --------------- | ----------------- | -------------- |
+| Memory            | $O(n + m)$      | $O(m)$            | $O(m)$         |
+| Cache performance | Poor (pointers) | Good (contiguous) | Good           |
+| Clustering        | None            | Primary           | None           |
+| Delete            | $O(1)$          | Lazy deletion     | Lazy deletion  |
+| Load factor limit | No hard limit   | $\alpha \lt 1$    | $\alpha \lt 1$ |
 
 :::info Board-specific
 
@@ -867,12 +867,19 @@ Available for insertion.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing hash tables with hash maps — the distinction relates to handling of key-value pairs vs
+   key-only storage.
 
-## Summary
+2. Forgetting to consider collision resolution strategies (chaining vs open addressing) and their
+   trade-offs.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Worked Examples
+4. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+6. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).

@@ -728,8 +728,8 @@ Hours.
 Genes D, E, and F are linked in the order D--E--F. A test cross of a trihybrid individual
 ($\mathrm{DEF/def$) produces the following offspring: $\mathrm{DEF = 400$$\mathrm{def = 380$
 $\mathrm{DEf = 60$$\mathrm{deF = 70$$\mathrm{Def = 20$$\mathrm{dEF = 30$
-$\mathrm{DeF = 15$$\mathrm{dEf = 25$. Calculate the recombination frequencies between each pair
-Of genes and draw the genetic map.
+$\mathrm{DeF = 15$$\mathrm{dEf = 25$. Calculate the recombination frequencies between each pair Of
+genes and draw the genetic map.
 
 </details>
 
@@ -817,8 +817,7 @@ The 12:3:1 ratio arises because:
 
 F2 genotypes:
 
-- White: $\mathrm{WWDD$$\mathrm{WWDd$$\mathrm{WWdd$$\mathrm{WwDD$$\mathrm{WwDd$
-  $\mathrm{Wwdd$
+- White: $\mathrm{WWDD$$\mathrm{WWDd$$\mathrm{WWdd$$\mathrm{WwDD$$\mathrm{WwDd$ $\mathrm{Wwdd$
 - Yellow disc: $\mathrm{wwDD$$\mathrm{wwDd$
 - Yellow sphere: $\mathrm{wwdd$
 
@@ -889,4 +888,22 @@ $(1/2)(1/2) = 1/4$. Combined: $1/4 \times 1/4 = 1/16$.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Monohybrid inheritance**
+
+In pea plants, tall (T) is dominant over dwarf (t). A heterozygous tall plant is crossed with a
+dwarf plant. Show the cross and state the expected phenotypic ratio.
+
+**Solution:**
+
+Parental genotypes: $\text{Tt} \times \text{tt}$
+
+Gametes: $\text{T}, \text{t}$ and $\text{t}, \text{t}$
+
+Punnett square:
+
+|     | T   | t   |
+| --- | --- | --- |
+| t   | Tt  | tt  |
+| t   | Tt  | tt  |
+
+Phenotypic ratio: **1 tall : 1 dwarf** (or 50% tall, 50% dwarf)

@@ -386,8 +386,8 @@ $$Q_1 = L + \left(\frac{n}{4} - c_f\right) \cdot \frac{w}{f}, \qquad Q_3 = L + \
 
 Find the median from the following grouped frequency distribution:
 
-| Class                 | Frequency |
-| --------------------- | --------- |
+| Class             | Frequency |
+| ----------------- | --------- |
 | $0 \lt x \le 10$  | 5         |
 | $10 \lt x \le 20$ | 12        |
 | $20 \lt x \le 30$ | 18        |
@@ -396,8 +396,7 @@ Find the median from the following grouped frequency distribution:
 
 $n = 47$. The median position is $n/2 = 23.5$.
 
-Cumulative frequencies: 5, 17, 35, 43, 47. The 23.5th value falls in the class
-$20 \lt x \le 30$.
+Cumulative frequencies: 5, 17, 35, 43, 47. The 23.5th value falls in the class $20 \lt x \le 30$.
 
 $$Q_2 = 20 + \left(23.5 - 17\right) \cdot \frac{10}{18} = 20 + 6.5 \cdot \frac{10}{18} = 20 + \frac{65}{18} \approx 23.6$$
 
@@ -678,8 +677,8 @@ Section 9.
 Estimate the median and interquartile range from the following grouped frequency distribution using
 Linear interpolation:
 
-| Class                 | Frequency |
-| --------------------- | --------- |
+| Class             | Frequency |
+| ----------------- | --------- |
 | $10 \lt x \le 20$ | 8         |
 | $20 \lt x \le 30$ | 15        |
 | $30 \lt x \le 40$ | 22        |
@@ -812,12 +811,14 @@ building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Summary
+2. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Losing marks by not showing sufficient working — always write out each step, especially in proof
+   questions.

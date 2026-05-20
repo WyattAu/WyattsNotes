@@ -96,12 +96,12 @@ discard water layer. Removes water-soluble impurities.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Ignoring feedback from marked work and failing to address recurring weaknesses.
 
-## Summary
+2. Focusing only on content knowledge without developing exam technique and question-answering
+   skills.
 
-<!-- TODO: Add a summary for this topic -->
+3. Not practising with past papers or exercises under timed conditions.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Memorising content without understanding the underlying principles — this leads to poor
+   application in unfamiliar contexts.

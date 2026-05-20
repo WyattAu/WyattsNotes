@@ -235,8 +235,7 @@ In minutes. Find the rate at which the volume is increasing when $t = 4$.
 
 Draw the tangent at $t = 4$ (or differentiate):
 
-$$\frac{dV}{dt} = 4t + 3$$
-$$\mathrm{At  t = 4: \frac{dV}{dt} = 16 + 3 = 19 \mathrm{ litres/minute$$
+$$\frac{dV}{dt} = 4t + 3$$ $$\mathrm{At  t = 4: \frac{dV}{dt} = 16 + 3 = 19 \mathrm{ litres/minute$$
 
 ## 4. Growth and Decay
 
@@ -279,11 +278,11 @@ $$t = \frac{\ln 0.5}{\ln 0.95} = \frac{-0.693}{-0.0513} \approx 13.5 \mathrm{ ye
 
 ### 5.1 Speed, Density, and Pressure
 
-| Measure  | Formula                                                       | Units            |
-| -------- | ------------------------------------------------------------- | ---------------- |
+| Measure  | Formula                                                 | Units            |
+| -------- | ------------------------------------------------------- | ---------------- |
 | Speed    | $\mathrm{speed = \frac{\mathrm{distance}{\mathrm{time}$ | m/s, km/h        |
-| Density  | $\rho = \frac{\mathrm{mass}{\mathrm{volume}$              | kg/m$^3$G/cm$^3$ |
-| Pressure | $P = \frac{\mathrm{force}{\mathrm{area}$                  | Pa (N/m$^2$)     |
+| Density  | $\rho = \frac{\mathrm{mass}{\mathrm{volume}$            | kg/m$^3$G/cm$^3$ |
+| Pressure | $P = \frac{\mathrm{force}{\mathrm{area}$                | Pa (N/m$^2$)     |
 
 **Worked Example.** A block of metal has mass 1.8 kg and volume 200 cm$^3$. Find its density in
 G/cm$^3$.
@@ -441,9 +440,8 @@ Volume $= \frac{1}{3}\pi \times 16 \times 9 = 48\pi \approx 150.80 \mathrm{ cm^3
 
 Mass $= 8.4 \times 150.80 \approx 1266.7 \mathrm{ g$.
 
-**Worked Example.** A cuboid measures
-$5 \mathrm{ cm \times 3 \mathrm{ cm \times 2 \mathrm{ cm$. It has Mass 180 g. Find its density
-in kg/m$^3$.
+**Worked Example.** A cuboid measures $5 \mathrm{ cm \times 3 \mathrm{ cm \times 2 \mathrm{ cm$. It
+has Mass 180 g. Find its density in kg/m$^3$.
 
 Volume $= 30 \mathrm{ cm^3 = 30 \times 10^{-6} \mathrm{ m^3$.
 
@@ -470,8 +468,8 @@ Density $= \frac{0.180}{30 \times 10^{-6}} = \frac{0.180}{0.00003} = 6000 \mathr
 
 ### 9.1 Compound Measures Summary
 
-| Measure  | Formula                            | Units            |
-| -------- | ---------------------------------- | ---------------- |
+| Measure  | Formula                          | Units            |
+| -------- | -------------------------------- | ---------------- |
 | Speed    | $\mathrm{speed = \frac{d}{t}$    | m/s, km/h        |
 | Density  | $\mathrm{density = \frac{m}{V}$  | kg/m$^3$G/cm$^3$ |
 | Pressure | $\mathrm{pressure = \frac{F}{A}$ | Pa (N/m$^2$)     |
@@ -517,16 +515,16 @@ equation is $y = 3x$.
 - A horizontal line means constant speed (zero acceleration).
 - Area below the time axis represents motion in the opposite direction.
 
-**Worked Example.** A car accelerates from rest at $2\mathrm{ m/s^2$ for 10 seconds, then travels
-at Constant speed for 20 seconds, then decelerates uniformly to rest in 5 seconds.
+**Worked Example.** A car accelerates from rest at $2\mathrm{ m/s^2$ for 10 seconds, then travels at
+Constant speed for 20 seconds, then decelerates uniformly to rest in 5 seconds.
 
 Acceleration phase: $v = 2 \times 10 = 20$ m/s. Distance = $\frac{1}{2} \times 20 \times 10 = 100$
 M.
 
 Constant speed phase: Distance = $20 \times 20 = 400$ m.
 
-Deceleration phase: $a = -20/5 = -4\mathrm{ m/s^2$. Distance =
-$\frac{1}{2} \times 20 \times 5 = 50$ M.
+Deceleration phase: $a = -20/5 = -4\mathrm{ m/s^2$. Distance = $\frac{1}{2} \times 20 \times 5 = 50$
+M.
 
 Total distance = $100 + 400 + 50 = 550$ m.
 
@@ -681,11 +679,9 @@ The compound interest earns EUR 15.25 more than simple interest over 3 years.
 
 #### 10.2 Percentage Change Calculations
 
-**Percentage increase:**
-$\frac{\mathrm{new - \mathrm{original}{\mathrm{original} \times 100\%$
+**Percentage increase:** $\frac{\mathrm{new - \mathrm{original}{\mathrm{original} \times 100\%$
 
-**Percentage decrease:**
-$\frac{\mathrm{original - \mathrm{new}{\mathrm{original} \times 100\%$
+**Percentage decrease:** $\frac{\mathrm{original - \mathrm{new}{\mathrm{original} \times 100\%$
 
 **Worked Example.** A shirt originally costs 40 pounds. It is reduced to 32 pounds in a sale. What
 Is the percentage decrease?
@@ -765,8 +761,16 @@ Return journey.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to ratio, proportion, and rates
+of change, including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- quadratic equations and the discriminant
+- simultaneous equations
+- polynomial division and the factor theorem
+- partial fractions
+- binomial expansion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

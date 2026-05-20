@@ -125,8 +125,8 @@ For example: $^{235}_{92}\mathrm{U}$ has 92 protons and 143 neutrons.
 
 Isotopes of an element have the same number of protons but different numbers of neutrons.
 
-| Isotope                          | Protons | Neutrons |
-| -------------------------------- | ------- | -------- |
+| Isotope                        | Protons | Neutrons |
+| ------------------------------ | ------- | -------- |
 | $^{1}_1\mathrm{H}$ (protium)   | 1       | 0        |
 | $^{2}_1\mathrm{H}$ (deuterium) | 1       | 1        |
 | $^{3}_1\mathrm{H}$ (tritium)   | 1       | 2        |
@@ -162,14 +162,14 @@ $$
 
 ### Types of Radiation
 
-| Property       | Alpha ($\alpha$)            | Beta ($\beta^-$)      | Gamma ($\gamma$) |
-| -------------- | --------------------------- | --------------------- | ---------------- |
+| Property       | Alpha ($\alpha$)          | Beta ($\beta^-$)      | Gamma ($\gamma$) |
+| -------------- | ------------------------- | --------------------- | ---------------- |
 | Particle       | $^4_2\mathrm{He}$ nucleus | Electron ($e^-$)      | Photon           |
-| Charge         | $+2e$                       | $-e$                  | $0$              |
-| Mass           | $4\mathrm{ u}$              | $\approx 0$           | $0$              |
-| Speed          | $\approx 0.05c$             | Up to $\approx 0.99c$ | $c$              |
-| Penetration    | Paper                       | Aluminium (few mm)    | Lead (few cm)    |
-| Ionising power | High                        | Medium                | Low              |
+| Charge         | $+2e$                     | $-e$                  | $0$              |
+| Mass           | $4\mathrm{ u}$            | $\approx 0$           | $0$              |
+| Speed          | $\approx 0.05c$           | Up to $\approx 0.99c$ | $c$              |
+| Penetration    | Paper                     | Aluminium (few mm)    | Lead (few cm)    |
+| Ionising power | High                      | Medium                | Low              |
 
 ### Alpha Decay
 
@@ -338,8 +338,8 @@ The binding energy per nucleon curve shows:
 - Heavy nuclei (beyond Fe-56): fission increases binding energy per nucleon (releases energy).
 - Iron-56 has the highest binding energy per nucleon (most stable nucleus).
 
-| Nucleus                   | Binding Energy per Nucleon (MeV) |
-| ------------------------- | -------------------------------- |
+| Nucleus                 | Binding Energy per Nucleon (MeV) |
+| ----------------------- | -------------------------------- |
 | $^2_1\mathrm{H}$        | 1.11                             |
 | $^4_2\mathrm{He}$       | 7.07                             |
 | $^{56}_{26}\mathrm{Fe}$ | 8.79                             |
@@ -825,8 +825,17 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing atomic number (protons) with mass number (protons + neutrons).
 
-## Worked Examples
+2. Forgetting that radioactive decay is random and spontaneous — it cannot be predicted for
+   individual nuclei.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Misunderstanding that half-life is constant regardless of the initial amount of substance.
+
+4. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
+
+5. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
+
+6. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.

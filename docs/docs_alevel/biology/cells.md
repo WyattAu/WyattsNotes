@@ -1966,8 +1966,12 @@ differential centrifugation.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing correlation with causation when evaluating experimental data and drawing conclusions.
 
-## Worked Examples
+2. Using anecdotal evidence or small sample sizes as though they constitute robust scientific data.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').
+
+4. Confusing DNA replication (S phase) with transcription or translation — be clear about which
+   process is being described.

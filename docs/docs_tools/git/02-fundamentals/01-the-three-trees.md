@@ -300,12 +300,12 @@ plumbing steps reveals exactly what happened.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
 
-## Summary
+2. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-<!-- TODO: Add a summary for this topic -->
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Neglecting to normalise database designs, leading to data redundancy and update anomalies.

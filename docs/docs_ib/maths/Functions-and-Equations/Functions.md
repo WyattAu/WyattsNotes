@@ -823,8 +823,7 @@ Continuous at $x = 2$.
 
 ### Question 6 (Paper 2 style)
 
-The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for
-$x \in \mathbb{R}$$x \neq 1$.
+The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for $x \in \mathbb{R}$$x \neq 1$.
 
 **(a)** Find the inverse function $f^{-1}$.
 
@@ -928,8 +927,11 @@ and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
+   using previous work.
 
-## Worked Examples
+2. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).

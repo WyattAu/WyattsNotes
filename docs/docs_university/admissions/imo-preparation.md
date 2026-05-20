@@ -243,8 +243,7 @@ Where $m = \deg P$ and $n = \deg Q$.
 
 **Technique: irreducibility.** Eisenstein's criterion: if
 $f(x) = a_n x^n + \cdots + a_0 \in \mathbb{Z}[x]$ And there exists a prime $p$ such that
-$p \nmid a_n$$p \mid a_i$ for $i < n$And $p^2 \nmid a_0$ Then $f$ is irreducible over
-$\mathbb{Q}$.
+$p \nmid a_n$$p \mid a_i$ for $i < n$And $p^2 \nmid a_0$ Then $f$ is irreducible over $\mathbb{Q}$.
 
 **Technique: roots of unity.** The $n$-th roots of unity are $\zeta_n^k = e^{2\pi i k/n}$ for
 $k = 0, 1, \ldots, n-1$. The cyclotomic polynomial
@@ -326,8 +325,8 @@ quadrilateral.
 
 ### 5.3 Complex Numbers in Geometry
 
-**Setup.** Place the circumcircle of $\triangle ABC$ on the unit circle in $\mathbb{C}$. Then
-the Vertices correspond to complex numbers $a, b, c$ with $|a| = |b| = |c| = 1$.
+**Setup.** Place the circumcircle of $\triangle ABC$ on the unit circle in $\mathbb{C}$. Then the
+Vertices correspond to complex numbers $a, b, c$ with $|a| = |b| = |c| = 1$.
 
 **Key formulas.** With $a, b, c$ on the unit circle ($\bar{a} = 1/a$Etc.):
 
@@ -549,33 +548,30 @@ Through $P$) always passes through the Miquel point $R$Which is fixed.
 > Prove that there exists a non-empty set $S$ of users such that every user in the network has an
 > even number of friends in $S$.
 
-**Solution.** We work over the field $\mathbb{F}_2$. Label the users $1, 2, \ldots, n$. For
-each User $i$Let $\mathbf{v}_i \in \mathbb{F}_2^n$ be the vector whose $j$-th coordinate
-is $1$ if Users $i$ and $j$ are friends, and $0$ otherwise (with $v_{ii} = 0$).
+**Solution.** We work over the field $\mathbb{F}_2$. Label the users $1, 2, \ldots, n$. For each
+User $i$Let $\mathbf{v}_i \in \mathbb{F}_2^n$ be the vector whose $j$-th coordinate is $1$ if Users
+$i$ and $j$ are friends, and $0$ otherwise (with $v_{ii} = 0$).
 
-A set $S$ corresponds to a vector $\mathbf{s} \in \mathbb{F}_2^n$ where $s_j = 1$ iff
-$j \in S$. The number of friends user $i$ has in $S$ (mod 2) is
-$\mathbf{v}_i \cdot \mathbf{s}$.
+A set $S$ corresponds to a vector $\mathbf{s} \in \mathbb{F}_2^n$ where $s_j = 1$ iff $j \in S$. The
+number of friends user $i$ has in $S$ (mod 2) is $\mathbf{v}_i \cdot \mathbf{s}$.
 
-We need $\mathbf{v}_i \cdot \mathbf{s} = 0$ for all $i$. Let $A$ be the $n \times n$
-adjacency Matrix (the $i$-th row is $\mathbf{v}_i$). The system is
-$A\mathbf{s} = \mathbf{0}$.
+We need $\mathbf{v}_i \cdot \mathbf{s} = 0$ for all $i$. Let $A$ be the $n \times n$ adjacency
+Matrix (the $i$-th row is $\mathbf{v}_i$). The system is $A\mathbf{s} = \mathbf{0}$.
 
-$A$ is symmetric with zero diagonal. The quadratic form
-$q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ Satisfies:
+$A$ is symmetric with zero diagonal. The quadratic form $q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$
+Satisfies:
 
 $$q(\mathbf{x}) = \sum_{i,j} A_{ij} x_i x_j = 2\sum_{i < j} A_{ij} x_i x_j + \sum_i A_{ii} x_i^2 = 0$$
 
-Since $2 = 0$ in $\mathbb{F}_2$ and $A_{ii} = 0$. So $q(\mathbf{x}) = 0$ for all
-$\mathbf{x}$.
+Since $2 = 0$ in $\mathbb{F}_2$ and $A_{ii} = 0$. So $q(\mathbf{x}) = 0$ for all $\mathbf{x}$.
 
-For a non-singular symmetric matrix over $\mathbb{F}_2$ of odd dimension $n$The associated
-Quadratic form cannot be identically zero (a non-degenerate quadratic form in odd dimension over
+For a non-singular symmetric matrix over $\mathbb{F}_2$ of odd dimension $n$The associated Quadratic
+form cannot be identically zero (a non-degenerate quadratic form in odd dimension over
 $\mathbb{F}_2$ must take non-zero values). Therefore $A$ is singular, meaning $\det(A) = 0$ in
 $\mathbb{F}_2$.
 
-The system $A\mathbf{s} = \mathbf{0}$ therefore has a non-trivial solution,
-corresponding to a Non-empty set $S$ with the desired property.
+The system $A\mathbf{s} = \mathbf{0}$ therefore has a non-trivial solution, corresponding to a
+Non-empty set $S$ with the desired property.
 
 ---
 
@@ -702,4 +698,35 @@ A complete IMO solution has the following structure:
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Applying key concepts**
+
+When working with imo preparation, follow a structured approach:
+
+1. Identify the key concepts and definitions relevant to the question
+2. Apply the appropriate methods, equations, or frameworks
+3. Support your answer with evidence, examples, or calculations
+4. Evaluate your answer critically, considering limitations and alternative perspectives
+
+## Summary
+
+- The IMO consists of 2 days, 3 problems per day, 4.5 hours each; problems span algebra,
+  combinatorics, geometry, and number theory.
+- IMO problems (Q3, Q6 especially) are among the hardest competition problems worldwide; Q1 and Q4
+  are more accessible entry points.
+- Preparation requires mastering: functional equations, advanced inequalities (Cauchy-Schwarz,
+  AM-GM, Jensen's), graph theory, projective and inversive geometry.
+- Training camps and mentorship (e.g., UKMT training groups, OTIS) are essential for exposure to
+  high-level problem styles.
+- A structured programme: 2–4 hours daily on past IMO/shortlist problems, weekly mock exams under
+  timed conditions.
+
+## Cross-References
+
+| Topic                             | Site        | Link                                                      |
+| --------------------------------- | ----------- | --------------------------------------------------------- |
+| IMO Official Problems & Solutions | IMO         | [View](https://www.imo-official.org/problems.aspx)        |
+| AoPS IMO Forum                    | AoPS        | [View](https://artofproblemsolving.com/community/c6h IMO) |
+| BMO Preparation                   | WyattsNotes | [View](/docs/university/admissions/bmo-preparation)       |
+| STEP Preparation                  | WyattsNotes | [View](/docs/university/admissions/step-preparation)      |
+| Abstract Algebra                  | WyattsNotes | [View](/docs/university/mathematics/abstract-algebra)     |
+| Real Analysis                     | WyattsNotes | [View](/docs/university/mathematics/real-analysis)        |

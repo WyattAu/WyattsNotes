@@ -1338,4 +1338,12 @@ and building a personal test matrix. :::
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Binomial expansion**
+
+Find the first three terms in the expansion of $(1 + 2x)^{10}$ in ascending powers of $x$.
+
+**Solution:**
+
+$$(1 + 2x)^{10} = \binom{10}{0}(1)^{10}(2x)^0 + \binom{10}{1}(1)^9(2x)^1 + \binom{10}{2}(1)^8(2x)^2$$
+
+$$= 1 + 10(2x) + 45(4x^2) = 1 + 20x + 180x^2$$

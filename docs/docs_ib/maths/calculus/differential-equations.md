@@ -475,8 +475,8 @@ $$y = e^{2x}\!\left(\cos 3x + \frac{4}{3}\sin 3x\right)$$
 
 **Worked Example: Newton's Law of Cooling with Two Data Points**
 
-A cup of coffee at $85\,^{\circ}\mathrm{C}$ is placed in a room at $22\,^{\circ}\mathrm{C}$.
-After $5$ minutes the temperature is $70\,^{\circ}\mathrm{C}$And after $10$ minutes it is
+A cup of coffee at $85\,^{\circ}\mathrm{C}$ is placed in a room at $22\,^{\circ}\mathrm{C}$. After
+$5$ minutes the temperature is $70\,^{\circ}\mathrm{C}$And after $10$ minutes it is
 $60\,^{\circ}\mathrm{C}$. Find the temperature after $20$ minutes.
 
 <details>
@@ -618,4 +618,16 @@ and building a personal test matrix. :::
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to differential equations,
+including key theorems, methods, and problem-solving approaches.
+
+**Key concepts include:**
+
+- kinematics (SUVAT equations)
+- dynamics and Newton's laws
+- moments and equilibrium
+- work, energy, and power
+- projectile motion
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

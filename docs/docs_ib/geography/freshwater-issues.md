@@ -421,12 +421,14 @@ management strategies in context.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
+   around.
 
-## Summary
+2. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
+   cannot be zero).
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting to check that solutions satisfy the original equation (especially with squaring both
+   sides or dividing by variables).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
+   conditions in definite integrals.

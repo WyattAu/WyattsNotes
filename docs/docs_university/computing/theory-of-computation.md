@@ -167,8 +167,7 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_0\})$$
 
 _Correctness._ By induction on input length. Base: $x = \varepsilon$$\mathrm{val(\varepsilon) = 0$
 DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm{val(x) \bmod 3$), Then
-reading $b$ moves to $q_{(2r+b) \bmod 3}$Which equals $q_{\mathrm{val(xb) \bmod 3}$.
-$\blacksquare$
+reading $b$ moves to $q_{(2r+b) \bmod 3}$Which equals $q_{\mathrm{val(xb) \bmod 3}$. $\blacksquare$
 
 </details>
 
@@ -199,8 +198,8 @@ $D = (Q', \Sigma, \delta', q_0', F')$ where:
 
 - $Q' = \mathcal{P}(Q)$ (each state of $D$ is a subset of states of $N$).
 - $q_0' = \varepsilon\mathrm{-closure(\{q_0\})$.
-- $\delta'(S, a) = \varepsilon\mathrm{-closure(\bigcup_{q \in S} \delta(q, a))$ for
-  $S \subseteq Q$ $a \in \Sigma$.
+- $\delta'(S, a) = \varepsilon\mathrm{-closure(\bigcup_{q \in S} \delta(q, a))$ for $S \subseteq Q$
+  $a \in \Sigma$.
 - $F' = \{S \subseteq Q : S \cap F \neq \emptyset\}$.
 
 Every string accepted by $N$ has some path through $N$'s states. The subset construction tracks
@@ -411,8 +410,8 @@ Decomposition $w = xyz$ satisfying (1) and (2) has some $i$ with $xy^iz \notin L
 **Example.** $L = \{0^n 1^n : n \geq 0\}$ is not regular.
 
 _Proof._ Assume $L$ is regular with pumping length $p$. Let $w = 0^p 1^p \in L$. By (2),
-$|xy| \leq p$So $y$ consists only of `0`S. Let $|y| = k \gt 0$. Then
-$xy^0 z = 0^{p-k} 1^p \notin L$ (since $p - k \neq p$). Contradiction. $\blacksquare$
+$|xy| \leq p$So $y$ consists only of `0`S. Let $|y| = k \gt 0$. Then $xy^0 z = 0^{p-k} 1^p \notin L$
+(since $p - k \neq p$). Contradiction. $\blacksquare$
 
 **Example.** $L = \{ww : w \in \{0,1\}^*\}$ is not regular.
 
@@ -854,8 +853,7 @@ Q_{\mathrm{reject})$ where:
 - $\delta : Q \times \Gamma \to Q \times \Gamma \times \{L, R\}$ is the transition function.
 - $q_0 \in Q$ is the start state.
 - $q_{\mathrm{accept} \in Q$ is the accept state.
-- $q_{\mathrm{reject} \in Q$ is the reject state
-  ($q_{\mathrm{accept} \neq q_{\mathrm{reject}$).
+- $q_{\mathrm{reject} \in Q$ is the reject state ($q_{\mathrm{accept} \neq q_{\mathrm{reject}$).
 
 The TM has an infinite tape (initially containing the input followed by blanks), a read/write head
 That moves left or right, and a finite control. At each step, based on the current state and symbol
@@ -1055,12 +1053,12 @@ $\blacksquare$
 
 **Additional decidable problems:**
 
-- $A_{\mathrm{REX} = \{\langle R, w \rangle : R \mathrm{ is a regex and  w \in L(R)\}$ — convert
-  $R$ to a DFA, then decide $A_{\mathrm{DFA}$.
+- $A_{\mathrm{REX} = \{\langle R, w \rangle : R \mathrm{ is a regex and  w \in L(R)\}$ — convert $R$
+  to a DFA, then decide $A_{\mathrm{DFA}$.
 - $E_{\mathrm{CFG} = \{\langle G \rangle : L(G) = \emptyset\}$ — test all derivations up to length
   $2^{|V|}$.
-- $\mathrm{INF_{\mathrm{CFL} = \{\langle G \rangle : L(G) \mathrm{ is infinite\}$ — check if
-  any variable has a self-embedding derivation.
+- $\mathrm{INF_{\mathrm{CFL} = \{\langle G \rangle : L(G) \mathrm{ is infinite\}$ — check if any
+  variable has a self-embedding derivation.
 
 ### 5.2 The Halting Problem
 
@@ -1090,8 +1088,8 @@ Therefore $H$ cannot exist. $\blacksquare$
 **Theorem 5.2a.** $\overline{A_{\mathrm{TM}}$ is not Turing-recognisable.
 
 _Proof._ If $\overline{A_{\mathrm{TM}}$ were Turing-recognisable, then since $A_{\mathrm{TM}$ is
-Also Turing-recognisable, $A_{\mathrm{TM}$ would be decidable (run both recognisers in parallel;
-one Must accept). But $A_{\mathrm{TM}$ is undecidable. Contradiction. $\blacksquare$
+Also Turing-recognisable, $A_{\mathrm{TM}$ would be decidable (run both recognisers in parallel; one
+Must accept). But $A_{\mathrm{TM}$ is undecidable. Contradiction. $\blacksquare$
 
 ### 5.3 Reductions and Undecidability
 
@@ -1107,12 +1105,12 @@ Computable, $A$ is decidable. $\blacksquare$
 
 **Applications.** Using reductions from $A_{\mathrm{TM}$We can prove many problems undecidable:
 
-| Language                           | Description                           | Reduction from     |
-| ---------------------------------- | ------------------------------------- | ------------------ |
+| Language                       | Description                         | Reduction from   |
+| ------------------------------ | ----------------------------------- | ---------------- |
 | $\mathrm{HALT_{\mathrm{TM}$    | $\{M, w : M \mathrm{ halts on  w\}$ | $A_{\mathrm{TM}$ |
-| $E_{\mathrm{TM}$                 | $\{M : L(M) = \emptyset\}$            | $A_{\mathrm{TM}$ |
+| $E_{\mathrm{TM}$               | $\{M : L(M) = \emptyset\}$          | $A_{\mathrm{TM}$ |
 | $\mathrm{REGULAR_{\mathrm{TM}$ | $\{M : L(M) \mathrm{ is regular\}$  | $A_{\mathrm{TM}$ |
-| $\mathrm{EQ_{\mathrm{TM}$      | $\{M_1, M_2 : L(M_1) = L(M_2)\}$      | $E_{\mathrm{TM}$ |
+| $\mathrm{EQ_{\mathrm{TM}$      | $\{M_1, M_2 : L(M_1) = L(M_2)\}$    | $E_{\mathrm{TM}$ |
 
 **Example reduction.** $A_{\mathrm{TM} \leq_m \mathrm{HALT_{\mathrm{TM}$.
 
@@ -1135,9 +1133,9 @@ Then $L(M_w) = \Sigma^*$ if $M$ accepts $w$And $L(M_w) = \emptyset$ if $M$ does 
 Therefore: $\langle M, w \rangle \in A_{\mathrm{TM}$ iff $L(M_w) \neq \emptyset$ Iff
 $\langle M_w \rangle \notin E_{\mathrm{TM}$.
 
-The reduction $f(\langle M, w \rangle) = \langle M_w \rangle$ is computable. So if
-$E_{\mathrm{TM}$ Were decidable, $\overline{E_{\mathrm{TM}}$ would be decidable, and hence
-$A_{\mathrm{TM}$ Would be decidable — contradiction. $\blacksquare$
+The reduction $f(\langle M, w \rangle) = \langle M_w \rangle$ is computable. So if $E_{\mathrm{TM}$
+Were decidable, $\overline{E_{\mathrm{TM}}$ would be decidable, and hence $A_{\mathrm{TM}$ Would be
+decidable — contradiction. $\blacksquare$
 
 </details>
 
@@ -1152,8 +1150,8 @@ _Proof._ Given $\langle M \rangle$Construct two TMs:
 Then $L(M) = \emptyset$ iff $L(M_1) = L(M_2)$.
 
 Therefore $\langle M \rangle \in E_{\mathrm{TM}$ iff
-$\langle M_1, M_2 \rangle \in \mathrm{EQ_{\mathrm{TM}$. If $\mathrm{EQ_{\mathrm{TM}$ were
-decidable, $E_{\mathrm{TM}$ would be decidable — contradiction. $\blacksquare$
+$\langle M_1, M_2 \rangle \in \mathrm{EQ_{\mathrm{TM}$. If $\mathrm{EQ_{\mathrm{TM}$ were decidable,
+$E_{\mathrm{TM}$ would be decidable — contradiction. $\blacksquare$
 
 </details>
 
@@ -1225,8 +1223,8 @@ Whose tiles encode the computation history of $M$ on $w$. The tiles are designed
 Sequence corresponds to a valid accepting computation: the first tile starts the computation, middle
 Tiles enforce that each configuration follows from the previous by a valid transition, and the last
 Tile allows termination only if an accept state is reached. Thus the PCP instance has a solution iff
-$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_{\mathrm{TM}$ would
-Be decidable — contradiction. $\blacksquare$
+$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_{\mathrm{TM}$ would Be
+decidable — contradiction. $\blacksquare$
 
 **Modified PCP (MPCP).** In the modified version, the first tile used must be tile 1. MPCP is also
 Undecidable, and the reduction from PCP to MPCP adds a "prefix" tile that forces tile 1 to be used
@@ -1371,8 +1369,8 @@ A language is **NP-hard** if condition (2) holds (it need not be in NP).
 
 _Proof (detailed sketch)._
 
-1. $\mathrm{SAT \in \mathrm{NP$: a satisfying assignment is a polynomial-size certificate that
-   can be verified in polynomial time.
+1. $\mathrm{SAT \in \mathrm{NP$: a satisfying assignment is a polynomial-size certificate that can
+   be verified in polynomial time.
 
 2. For any $L \in \mathrm{NP$There is a polynomial-time NTM $N$ that decides $L$ in time $n^k$ for
    some $k$. Given input $w$ of length $n$Construct a Boolean formula $\phi_{N,w}$ that is
@@ -1569,9 +1567,9 @@ $A \in \mathrm{NL$ is log-space reducible to $B$.
 
 **Theorem 6.8 (Immerman--Szelepcsényi, 1987).** $\mathrm{NL = \mathrm{coNL$.
 
-This is surprising because it is not known whether $\mathrm{NP = \mathrm{coNP$. The proof uses
-An inductive counting argument: given an NTM for $L$Construct an NTM for $\overline{L}$ that Counts
-the number of reachable configurations.
+This is surprising because it is not known whether $\mathrm{NP = \mathrm{coNP$. The proof uses An
+inductive counting argument: given an NTM for $L$Construct an NTM for $\overline{L}$ that Counts the
+number of reachable configurations.
 
 **PSPACE-completeness.** A language is PSPACE-complete if it is in PSPACE and every PSPACE problem
 Reduces to it. Key PSPACE-complete problems:
@@ -1600,10 +1598,10 @@ $\blacksquare$
 
 Evaluate $\phi = \forall x \exists y \, [(x \lor y) \land (\bar{x} \lor y)]$.
 
-- For $x = 0$: need $\exists y$ such that
-  $(0 \lor y) \land (1 \lor y) = y \land \mathrm{true = y$. So we need $y = 1$ (which exists).
-- For $x = 1$: need $\exists y$ such that
-  $(1 \lor y) \land (0 \lor y) = \mathrm{true \land y = y$. So we need $y = 1$ (which exists).
+- For $x = 0$: need $\exists y$ such that $(0 \lor y) \land (1 \lor y) = y \land \mathrm{true = y$.
+  So we need $y = 1$ (which exists).
+- For $x = 1$: need $\exists y$ such that $(1 \lor y) \land (0 \lor y) = \mathrm{true \land y = y$.
+  So we need $y = 1$ (which exists).
 
 Since both values of $x$ lead to a satisfying assignment for $y$$\phi$ is true.
 
@@ -1661,8 +1659,8 @@ Instance has a polynomial-time verifiable certificate.
 
 **Theorem 6.11.** If $\mathrm{NP \neq \mathrm{coNP$Then $\mathrm{P \neq \mathrm{NP$.
 
-_Proof._ If $\mathrm{P = \mathrm{NP$Then $\mathrm{P = \mathrm{coNP$ (since $\mathrm{P$ Is
-closed under complement), so $\mathrm{NP = \mathrm{coNP$. The contrapositive gives the Result.
+_Proof._ If $\mathrm{P = \mathrm{NP$Then $\mathrm{P = \mathrm{coNP$ (since $\mathrm{P$ Is closed
+under complement), so $\mathrm{NP = \mathrm{coNP$. The contrapositive gives the Result.
 $\blacksquare$
 
 **PSPACE.** The class of languages decidable in polynomial space:
@@ -1691,21 +1689,21 @@ $$\mathrm{L \subseteq \mathrm{NL \subseteq \mathrm{P \subseteq \mathrm{NP \subse
 
 $$\mathrm{P \subseteq \mathrm{NP \subseteq \mathrm{PH \subseteq \mathrm{PSPACE$$
 
-| Inclusion                                                           | Known to be proper? | Theorem used        |
-| ------------------------------------------------------------------- | ------------------- | ------------------- |
-| $\mathrm{Regular \subseteq \mathrm{CFL$                         | Yes                 | Pumping lemma       |
-| $\mathrm{CFL \subseteq \mathrm{Decidable$                       | Yes                 | CYK algorithm       |
+| Inclusion                                                     | Known to be proper? | Theorem used        |
+| ------------------------------------------------------------- | ------------------- | ------------------- |
+| $\mathrm{Regular \subseteq \mathrm{CFL$                       | Yes                 | Pumping lemma       |
+| $\mathrm{CFL \subseteq \mathrm{Decidable$                     | Yes                 | CYK algorithm       |
 | $\mathrm{Decidable \subseteq \mathrm{TM\mathrm{-recognisable$ | Yes                 | Diagonalisation     |
-| $\mathrm{P \subseteq \mathrm{EXPTIME$                           | Yes                 | Time hierarchy      |
-| $\mathrm{P \subseteq \mathrm{PSPACE$                            | Yes                 | Space hierarchy     |
-| $\mathrm{NP \subseteq \mathrm{PSPACE$                           | Yes                 | Savitch's corollary |
-| $\mathrm{L \subseteq \mathrm{NL$                                | Unknown             |                     |
-| $\mathrm{P \subseteq \mathrm{NP$                                | Unknown             | Open problem        |
-| $\mathrm{NP \subseteq \mathrm{coNP$                             | Unknown             | Open problem        |
+| $\mathrm{P \subseteq \mathrm{EXPTIME$                         | Yes                 | Time hierarchy      |
+| $\mathrm{P \subseteq \mathrm{PSPACE$                          | Yes                 | Space hierarchy     |
+| $\mathrm{NP \subseteq \mathrm{PSPACE$                         | Yes                 | Savitch's corollary |
+| $\mathrm{L \subseteq \mathrm{NL$                              | Unknown             |                     |
+| $\mathrm{P \subseteq \mathrm{NP$                              | Unknown             | Open problem        |
+| $\mathrm{NP \subseteq \mathrm{coNP$                           | Unknown             | Open problem        |
 
-Both inclusions $\mathrm{P \subseteq \mathrm{NP$ and $\mathrm{NP \subseteq \mathrm{PSPACE$
-are Known to be proper ($\mathrm{P \neq \mathrm{PSPACE$), but the status of $\mathrm{P$ vs.
-$\mathrm{NP$ remains open.
+Both inclusions $\mathrm{P \subseteq \mathrm{NP$ and $\mathrm{NP \subseteq \mathrm{PSPACE$ are Known
+to be proper ($\mathrm{P \neq \mathrm{PSPACE$), but the status of $\mathrm{P$ vs. $\mathrm{NP$
+remains open.
 
 :::caution Common Pitfall NP-completeness refers to **decision** problems. The optimisation versions
 (e.g., "find the shortest Tour") are NP-hard, not necessarily NP-complete. Also, "NP" stands for
@@ -1774,8 +1772,8 @@ describing the reduction construction.
 $\mathrm{CLIQUE$Describe a polynomial-time algorithm to find an actual clique of size $k$ (if one
 exists).
 
-**Problem 16.** Using Savitch's theorem, prove that $\mathrm{NL \subseteq \mathrm{P$. What is
-the time complexity of your algorithm?
+**Problem 16.** Using Savitch's theorem, prove that $\mathrm{NL \subseteq \mathrm{P$. What is the
+time complexity of your algorithm?
 
 **Problem 17.** Define the language $\mathrm{EXACT\mathrm{-CLIQUE = \{\langle G, k \rangle : G$
 $\mathrm{ has a clique of exactly size  k\}$. Show that $\mathrm{EXACT\mathrm{-CLIQUE$ is
@@ -1794,9 +1792,8 @@ regular using the pumping lemma. (b) Give a CFG for $L$ and prove it is correct.
 decidable? Justify.
 
 **Problem 20.** For each of the following languages, state the smallest complexity class (from
-$\mathrm{Regular$$\mathrm{CFL$$\mathrm{Decidable$$\mathrm{NP$
-$\mathrm{PSPACE$$\mathrm{EXPTIME$Or "undecidable") that is known to contain it. Justify each
-answer briefly.
+$\mathrm{Regular$$\mathrm{CFL$$\mathrm{Decidable$$\mathrm{NP$ $\mathrm{PSPACE$$\mathrm{EXPTIME$Or
+"undecidable") that is known to contain it. Justify each answer briefly.
 
 (a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm{ has a Hamiltonian cycle\}$
 (c) $\{\langle G, k \rangle : G \mathrm{ has a vertex cover of size  \leq k\}$ (d)
@@ -1824,12 +1821,11 @@ a string not in $L$.
 $L(M_1) \cap L(M_2) \neq \emptyset$ iff $M$ accepts $\varepsilon$ iff
 $\langle M \rangle \notin E_{\mathrm{TM}$ (after adjusting for the specific reduction).
 
-**Problem 13.** If $\mathrm{P = \mathrm{NP$Then for any $L \in \mathrm{NP$We have
-$L \in \mathrm{P$. Since $\mathrm{P$ is closed under complement,
-$\overline{L} \in \mathrm{P
-\subseteq \mathrm{NP$. So $\overline{L} \in \mathrm{NP$ for every
-$L \in \mathrm{NP$, meaning $\mathrm{NP \subseteq \mathrm{coNP$. By symmetry,
-$\mathrm{coNP \subseteq \mathrm{NP$.
+**Problem 13.** If $\mathrm{P = \mathrm{NP$Then for any $L \in \mathrm{NP$We have $L \in \mathrm{P$.
+Since $\mathrm{P$ is closed under complement, $\overline{L} \in \mathrm{P
+\subseteq \mathrm{NP$. So
+$\overline{L} \in \mathrm{NP$ for every $L \in \mathrm{NP$, meaning
+$\mathrm{NP \subseteq \mathrm{coNP$. By symmetry, $\mathrm{coNP \subseteq \mathrm{NP$.
 
 **Problem 19.** (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$$y$ is in the first $0^p$
 block. Pumping down gives $0^{p-k}1^p\#0^p1^p \notin L$. (b)
@@ -1842,8 +1838,67 @@ simulate for 100 steps). (e) PSPACE-complete (TQBF is PSPACE-complete).
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Neglecting to normalise database designs, leading to data redundancy and update anomalies.
+
+2. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
+   implementation in code.
+
+3. Writing pseudocode that is too language-specific rather than using standard algorithmic
+   constructs.
+
+4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: DFA Construction
+
+**Problem.** Design a DFA that accepts all binary strings over $\{0, 1\}$ where the number of 1s is
+divisible by 3.
+
+**Solution.** Three states: $q_0$ (0 mod 3, accept), $q_1$ (1 mod 3), $q_2$ (2 mod 3).
+
+- $\delta(q_0, 0) = q_0$, $\delta(q_0, 1) = q_1$
+- $\delta(q_1, 0) = q_1$, $\delta(q_1, 1) = q_2$
+- $\delta(q_2, 0) = q_2$, $\delta(q_2, 1) = q_0$
+
+Accept state: $\{q_0\}$. Strings like $\epsilon$, $111$, $01110$ are accepted.
+
+$\blacksquare$
+
+### Example 2: Reducing 3-SAT to Independent Set
+
+**Problem.** Show that Independent Set is NP-complete by reducing from 3-SAT.
+
+**Solution.** Given a 3-CNF formula with $k$ clauses, construct a graph:
+
+1. For each clause, create a triangle of 3 vertices (one per literal).
+2. Add edges between contradictory literals ($x_i$ and $\neg x_i$) across different clauses.
+
+The formula is satisfiable iff the graph has an independent set of size $k$ (pick one true literal
+per clause; no two contradict). Polynomial-time reduction, so Independent Set is NP-hard. Since it's
+also in NP, it's NP-complete.
+
+$\blacksquare$
+
+## Summary
+
+- Finite automata: DFA (deterministic, $O(n)$ recognition) and NFA (non-deterministic); equivalent
+  in power via subset construction ($2^n$ states worst case).
+- Regular expressions: describe regular languages; pumping lemma proves non-regularity for languages
+  like $\{a^n b^n : n \geq 0\}$.
+- Context-free grammars: pushdown automata add a stack; CFLs are closed under union but not
+  intersection or complement.
+- Turing machines: model general computation; Church-Turing thesis — any "effectively computable"
+  function is TM-computable.
+- Complexity: P (polynomial time), NP (polynomial verification), NP-complete (hardest in NP); P vs
+  NP remains open.
+
+## Cross-References
+
+| Topic                              | Site        | Link                                                                         |
+| ---------------------------------- | ----------- | ---------------------------------------------------------------------------- |
+| Discrete Mathematics               | WyattsNotes | [View](/docs/university/computing/discrete-mathematics)                      |
+| Algorithms and Data Structures     | WyattsNotes | [View](/docs/university/computing/algorithms-and-data-structures)            |
+| Advanced Algorithms                | WyattsNotes | [View](/docs/university/computing/algorithms-advanced)                       |
+| Theory of Computation — MIT 18.404 | MIT         | [View](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/) |

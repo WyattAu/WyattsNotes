@@ -575,8 +575,13 @@ Manual `stop_token` integration as shown above is the recommended approach. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Memorising content without understanding the underlying principles — this leads to poor
+   application in unfamiliar contexts.
 
-## Worked Examples
+2. Not practising with past papers or exercises under timed conditions.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Focusing only on content knowledge without developing exam technique and question-answering
+   skills.
+
+4. Not making connections between different topics within the subject to build a coherent
+   understanding.

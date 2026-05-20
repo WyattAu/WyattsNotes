@@ -1265,8 +1265,13 @@ limitations of price cap regulation when the X factor is set too generously.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.
 
-## Summary
+2. Stating that 'demand falls' without specifying whether it is a contraction (movement along) or a
+   decrease (shift) of the demand curve.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing nominal and real values — always adjust for inflation when comparing monetary values
+   across time.
+
+4. Confusing a movement along a curve with a shift of the curve — movements are caused by price
+   changes; shifts by non-price determinants.

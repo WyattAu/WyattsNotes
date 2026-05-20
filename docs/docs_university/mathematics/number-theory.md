@@ -23,8 +23,8 @@ _Proof._ Consider the set $S = \\{a - bk : k \in \mathbb{Z},\ a - bk \geq 0\\}$.
 non-empty (by the Archimedean property, choosing $k$ sufficiently negative). By the well-ordering
 principle, $S$ has a least element $r = a - bq$. If $r \geq b$Then $r - b = a - (q+1)b \in S$ with
 $r - b \lt r$Contradicting minimality. So $0 \leq r \lt b$. For uniqueness, if
-$a = bq_1 + r_1 = bq_2 + r_2$Then $b(q_1 - q_2) = r_2 - r_1$. Since $|r_2 - r_1| \lt b$We must
-Have $q_1 = q_2$ and $r_1 = r_2$. $\blacksquare$
+$a = bq_1 + r_1 = bq_2 + r_2$Then $b(q_1 - q_2) = r_2 - r_1$. Since $|r_2 - r_1| \lt b$We must Have
+$q_1 = q_2$ and $r_1 = r_2$. $\blacksquare$
 
 ### 1.2 Divisibility
 
@@ -74,15 +74,15 @@ $\blacksquare$
 
 ### 1.4 Uniqueness of the Greatest Common Divisor
 
-**Theorem 1.3.** Let $a, b \in \mathbb{Z}$Not both zero. The greatest common divisor of $a$
-and $b$ Exists and is unique.
+**Theorem 1.3.** Let $a, b \in \mathbb{Z}$Not both zero. The greatest common divisor of $a$ and $b$
+Exists and is unique.
 
-_Proof._ The set $D = \\{d \in \mathbb{N} : d \mid a \mathrm{\ and\  d \mid b\\}"$ is
-non-empty since $|a| \in D$ (if $a \neq 0$) or $|b| \in D$ (if $b \neq 0$). By the well-ordering
-principle, $D$ has A least element $g$. We claim $g = \gcd(a, b)$. By definition $g \mid a$ and
-$g \mid b$. If $c \mid a$ And $c \mid b$Then $c \leq |c| \leq g$ (since $g$ is the least positive
-common divisor). For Uniqueness: if $g_1$ and $g_2$ are both greatest common divisors, then
-$g_1 \mid g_2$ and $g_2 \mid g_1$ So $g_1 = g_2$ (since both are positive). $\blacksquare$
+_Proof._ The set $D = \\{d \in \mathbb{N} : d \mid a \mathrm{\ and\  d \mid b\\}"$ is non-empty
+since $|a| \in D$ (if $a \neq 0$) or $|b| \in D$ (if $b \neq 0$). By the well-ordering principle,
+$D$ has A least element $g$. We claim $g = \gcd(a, b)$. By definition $g \mid a$ and $g \mid b$. If
+$c \mid a$ And $c \mid b$Then $c \leq |c| \leq g$ (since $g$ is the least positive common divisor).
+For Uniqueness: if $g_1$ and $g_2$ are both greatest common divisors, then $g_1 \mid g_2$ and
+$g_2 \mid g_1$ So $g_1 = g_2$ (since both are positive). $\blacksquare$
 
 ### 1.5 Least Common Multiple
 
@@ -137,15 +137,15 @@ _Proof._ Let $S = \\{ax + by : x, y \in \mathbb{Z},\ ax + by > 0\\}$. By the wel
 principle, $S$ has a least element $d = ax_0 + by_0$. We show $d = \gcd(a, b)$. First, $d \mid a$:
 write $a = dq + r$ with $0 \leq r \lt d$. Then
 $r = a - dq = a - (ax_0 + by_0)q = a(1 - x_0 q) + b(-y_0 q)$. If $r > 0$Then $r \in S$ with
-$r \lt d$Contradicting minimality. So $r = 0$Giving $d \mid a$. Similarly $d \mid b$. For any
-Common divisor $c$ of $a$ and $b$: $c \mid (ax_0 + by_0) = d$So $c \leq d$. $\blacksquare$
+$r \lt d$Contradicting minimality. So $r = 0$Giving $d \mid a$. Similarly $d \mid b$. For any Common
+divisor $c$ of $a$ and $b$: $c \mid (ax_0 + by_0) = d$So $c \leq d$. $\blacksquare$
 
 ### 2.2 The Euclidean Algorithm
 
 To compute $\gcd(a, b)$ with $a \geq b > 0$:
 
-$$a = bq_1 + r_1, \quad 0 \lt r_1 \lt b$$ $$b = r_1 q_2 + r_2, \quad 0 \lt r_2 \lt r_1$$
-$$\vdots$$ $$r_{n-1} = r_n q_{n+1} + 0$$
+$$a = bq_1 + r_1, \quad 0 \lt r_1 \lt b$$ $$b = r_1 q_2 + r_2, \quad 0 \lt r_2 \lt r_1$$ $$\vdots$$
+$$r_{n-1} = r_n q_{n+1} + 0$$
 
 Then $\gcd(a, b) = r_n$. The algorithm terminates because $b > r_1 > r_2 > \cdots \geq 0$.
 
@@ -218,8 +218,8 @@ Integers $a$ and $b$ are **coprime** (or **relatively prime**) if $\gcd(a, b) = 
 **Proposition 2.3 (Euclid's Lemma).** If $p$ is prime and $p \mid ab$Then $p \mid a$ or $p \mid b$.
 
 _Proof._ If $p \nmid a$Then $\gcd(p, a) = 1$. By Bézout's identity, $1 = px + ay$ for some
-$x, y \in \mathbb{Z}$. Multiplying by $b$: $b = pbx + aby$. Since $p \mid aby$We get
-$p \mid b$. $\blacksquare$
+$x, y \in \mathbb{Z}$. Multiplying by $b$: $b = pbx + aby$. Since $p \mid aby$We get $p \mid b$.
+$\blacksquare$
 
 **Corollary 2.4.** If $p$ is prime and $p \mid a_1 a_2 \cdots a_n$Then $p \mid a_i$ for some $i$.
 
@@ -284,8 +284,7 @@ _Intuition._ Chebyshev proved $\pi(x) = O(x/\ln x)$ and $\pi(x) = \Omega(x/\ln x
 Of the binomial coefficient $\binom{2n}{n}$. The prime number theorem strengthens this to
 $\pi(x) \sim x/\ln x$.
 
-**Proposition 3.3b.** For $n \geq 2$The $n$-th prime $p_n$ satisfies
-$n \ln n \lt p_n \lt 2n \ln n$.
+**Proposition 3.3b.** For $n \geq 2$The $n$-th prime $p_n$ satisfies $n \ln n \lt p_n \lt 2n \ln n$.
 
 This follows from the prime number theorem and the estimate $\pi(x) \sim x/\ln x$.
 
@@ -313,9 +312,9 @@ $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Suppose $\sqrt{2} = a/b$ where $a, b \in \mathbb{N}$ with $\gcd(a, b) = 1$. Then $2b^2 = a^2$
-So $2 \mid a^2$Hence $2 \mid a$. Write $a = 2c$. Then $2b^2 = 4c^2$So $b^2 = 2c^2$Giving
-$2 \mid b^2$ and hence $2 \mid b$. But then $2 \mid \gcd(a, b) = 1$Contradiction. $\blacksquare$
+Suppose $\sqrt{2} = a/b$ where $a, b \in \mathbb{N}$ with $\gcd(a, b) = 1$. Then $2b^2 = a^2$ So
+$2 \mid a^2$Hence $2 \mid a$. Write $a = 2c$. Then $2b^2 = 4c^2$So $b^2 = 2c^2$Giving $2 \mid b^2$
+and hence $2 \mid b$. But then $2 \mid \gcd(a, b) = 1$Contradiction. $\blacksquare$
 
 </details>
 
@@ -440,9 +439,8 @@ $r_1 = r_2$ (since $|r_1 - r_2| \lt m$). $\blacksquare$
 
 _Proof of (2)._ $m \mid (a - b)$ and $d \mid m$So $d \mid (a - b)$. $\blacksquare$
 
-_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$So
-$\mathrm{lcm(m_1, \ldots, m_k) \mid (a-b)$ By definition of the lcm. Hence
-$a \equiv b \pmod{\mathrm{lcm(m_1, \ldots, m_k)}$. $\blacksquare$
+_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$So $\mathrm{lcm(m_1, \ldots, m_k) \mid (a-b)$
+By definition of the lcm. Hence $a \equiv b \pmod{\mathrm{lcm(m_1, \ldots, m_k)}$. $\blacksquare$
 
 **Proposition 4.6.** If $a \equiv b \pmod{m}$ and $f(x) = c_k x^k + \cdots + c_1 x + c_0$ is a
 Polynomial with integer coefficients, then $f(a) \equiv f(b) \pmod{m}$.
@@ -495,19 +493,18 @@ The last two digits of $7^{1947}$ are $43$. $\blacksquare$
 
 $$(p - 1)! \equiv -1 \pmod{p}$$
 
-_Proof._ ($\Rightarrow$) Suppose $p$ is prime. In $(\mathbb{Z}/p\mathbb{Z})^*$Every
-element $a$ has a Unique multiplicative inverse $a^{-1}$. The elements $1$ and $p - 1$ are
-**self-inverse** since $1 \cdot 1 \equiv 1$ and $(p-1)^2 = p^2 - 2p + 1 \equiv 1 \pmod{p}$. For
-$2 \leq a \leq p-2$We have $a \neq a^{-1}$ (if $a^2 \equiv 1$Then $p \mid (a-1)(a+1)$So
-$p \mid (a-1)$ or $p \mid (a+1)$ Giving $a \equiv 1$ or $a \equiv p-1$). Thus the elements
-$\\{2, 3, \ldots, p-2\\}$ pair up into $(p-3)/2$ pairs of mutually inverse elements. The product of
-all elements in each pair is $1$ modulo $p$So
+_Proof._ ($\Rightarrow$) Suppose $p$ is prime. In $(\mathbb{Z}/p\mathbb{Z})^*$Every element $a$ has
+a Unique multiplicative inverse $a^{-1}$. The elements $1$ and $p - 1$ are **self-inverse** since
+$1 \cdot 1 \equiv 1$ and $(p-1)^2 = p^2 - 2p + 1 \equiv 1 \pmod{p}$. For $2 \leq a \leq p-2$We have
+$a \neq a^{-1}$ (if $a^2 \equiv 1$Then $p \mid (a-1)(a+1)$So $p \mid (a-1)$ or $p \mid (a+1)$ Giving
+$a \equiv 1$ or $a \equiv p-1$). Thus the elements $\\{2, 3, \ldots, p-2\\}$ pair up into $(p-3)/2$
+pairs of mutually inverse elements. The product of all elements in each pair is $1$ modulo $p$So
 
 $$(p-1)! = 1 \cdot (p-1) \prod_{a=2}^{p-2} a \equiv 1 \cdot (p-1) \cdot 1^{(p-3)/2} \equiv -1 \pmod{p}$$
 
-($\Leftarrow$) If $n \geq 2$ is composite, then $n = ab$ with $1 \lt a \leq b \lt n$. If
-$a \neq b$ Both $a$ and $b$ appear in $(n-1)!$So $n \mid (n-1)!$ and $(n-1)! \equiv 0 \pmod{n}$. If
-$a = b$ (i.e., $n = a^2$), then $n > 4$ implies $a > 2$And both $a$ and $2a \lt a^2 = n$ appear in
+($\Leftarrow$) If $n \geq 2$ is composite, then $n = ab$ with $1 \lt a \leq b \lt n$. If $a \neq b$
+Both $a$ and $b$ appear in $(n-1)!$So $n \mid (n-1)!$ and $(n-1)! \equiv 0 \pmod{n}$. If $a = b$
+(i.e., $n = a^2$), then $n > 4$ implies $a > 2$And both $a$ and $2a \lt a^2 = n$ appear in
 $(n-1)!$So again $(n-1)! \equiv 0 \pmod{n}$. The case $n = 4$ gives
 $3! = 6 \equiv 2 \pmod{4} \neq -1$. $\blacksquare$
 
@@ -776,8 +773,8 @@ $ed \equiv 1 \pmod{\phi(n)}$ using the extended Euclidean algorithm.
 
 **Theorem 6.6.** RSA decryption is correct: $c^d \equiv m \pmod{n}$.
 
-_Proof._ Since $ed \equiv 1 \pmod{\phi(n)}$Write $ed = 1 + k\phi(n)$ for some
-$k \in \mathbb{Z}$. If $\gcd(m, n) = 1$Then
+_Proof._ Since $ed \equiv 1 \pmod{\phi(n)}$Write $ed = 1 + k\phi(n)$ for some $k \in \mathbb{Z}$. If
+$\gcd(m, n) = 1$Then
 $c^d \equiv m^{ed} = m^{1 + k\phi(n)} \equiv m \cdot (m^{\phi(n)})^k \equiv m \cdot 1^k \equiv m \pmod{n}$
 by Euler's theorem.
 
@@ -830,15 +827,14 @@ Generates the multiplicative group $(\mathbb{Z}/n\mathbb{Z})^*$.
 **Theorem 7.4.** A primitive root modulo $n$ exists if and only if $n = 2$$n = 4$$n = p^k$Or
 $n = 2p^k$ where $p$ is an odd prime and $k \geq 1$.
 
-_Intuition._ The multiplicative group $(\mathbb{Z}/n\mathbb{Z})^*$ is cyclic precisely
-for these Values of $n$. When the group is not cyclic (e.g., $n = 8$ where
-$(\mathbb{Z}/8\mathbb{Z})^* \cong C_2 \times C_2$), no single element can generate the
-entire group.
+_Intuition._ The multiplicative group $(\mathbb{Z}/n\mathbb{Z})^*$ is cyclic precisely for these
+Values of $n$. When the group is not cyclic (e.g., $n = 8$ where
+$(\mathbb{Z}/8\mathbb{Z})^* \cong C_2 \times C_2$), no single element can generate the entire group.
 
 **Proposition 7.4a.**
-$(\mathbb{Z}/n\mathbb{Z})^* \cong \prod_{i=1}^k (\mathbb{Z}/p_i^{a_i}\mathbb{Z})^*$
-Where $n = \prod p_i^{a_i}$ is the prime factorization. Each factor
-$(\mathbb{Z}/p^a\mathbb{Z})^*$ is cyclic for odd primes $p$.
+$(\mathbb{Z}/n\mathbb{Z})^* \cong \prod_{i=1}^k (\mathbb{Z}/p_i^{a_i}\mathbb{Z})^*$ Where
+$n = \prod p_i^{a_i}$ is the prime factorization. Each factor $(\mathbb{Z}/p^a\mathbb{Z})^*$ is
+cyclic for odd primes $p$.
 
 This decomposition explains why primitive roots exist only for the stated values: a product of
 Cyclic groups is cyclic if and only if the orders are pairwise coprime.
@@ -850,8 +846,8 @@ Modulo $n$.
 
 **Theorem 7.6.** Every prime $p$ has a primitive root.
 
-_Proof._ Let $\psi(d)$ denote the number of elements of $(\mathbb{Z}/p\mathbb{Z})^*$ of
-order Exactly $d$. The key facts are:
+_Proof._ Let $\psi(d)$ denote the number of elements of $(\mathbb{Z}/p\mathbb{Z})^*$ of order
+Exactly $d$. The key facts are:
 
 1. $\psi(d) \leq \phi(d)$ for all $d \mid (p-1)$.
 2. $\sum_{d \mid (p-1)} \psi(d) = p - 1 = \sum_{d \mid (p-1)} \phi(d)$.
@@ -865,13 +861,12 @@ $\psi(p - 1) = \phi(p - 1) > 0$So primitive roots exist. $\blacksquare$
 To test whether $g$ is a primitive root modulo $p$ (where $p$ is prime), it suffices to verify
 $g^{(p-1)/q} \not\equiv 1 \pmod{p}$ for every prime divisor $q$ of $p - 1$.
 
-**Proposition 7.7.** Let $p$ be prime and $g \in (\mathbb{Z}/p\mathbb{Z})^*$. Then $g$
-is a primitive Root modulo $p$ if and only if for every prime
+**Proposition 7.7.** Let $p$ be prime and $g \in (\mathbb{Z}/p\mathbb{Z})^*$. Then $g$ is a
+primitive Root modulo $p$ if and only if for every prime
 $q \mid (p - 1)$$g^{(p-1)/q} \not\equiv 1 \pmod{p}$.
 
-_Proof._ If $g$ is a primitive root, $\mathrm{ord_p(g) = p - 1$. If
-$g^{(p-1)/q} \equiv 1 \pmod{p}$ For some prime $q \mid (p-1)$Then
-$\mathrm{ord_p(g) \mid (p-1)/q \lt p-1$Contradiction.
+_Proof._ If $g$ is a primitive root, $\mathrm{ord_p(g) = p - 1$. If $g^{(p-1)/q} \equiv 1 \pmod{p}$
+For some prime $q \mid (p-1)$Then $\mathrm{ord_p(g) \mid (p-1)/q \lt p-1$Contradiction.
 
 Conversely, if $g$ is not a primitive root, let $d = \mathrm{ord_p(g) \lt p - 1$. Then
 $d \mid (p-1)$ So $(p-1)/d > 1$ has some prime factor $q$Meaning $q \mid (p-1)$ and
@@ -882,8 +877,8 @@ $d \mid (p-1)/q$. Then $g^{(p-1)/q} \equiv 1 \pmod{p}$Contradicting the hypothes
 <details>
 <summary>Solution</summary>
 
-$\phi(13) = 12$. We need elements of order $12$ in $(\mathbb{Z}/13\mathbb{Z})^*$. The
-prime divisors of $12$ are $2$ and $3$. We test $g^6$ and $g^4$.
+$\phi(13) = 12$. We need elements of order $12$ in $(\mathbb{Z}/13\mathbb{Z})^*$. The prime divisors
+of $12$ are $2$ and $3$. We test $g^6$ and $g^4$.
 
 $g = 2$: $2^4 = 16 \equiv 3 \not\equiv 1$$2^6 = 64 \equiv 12 \equiv -1 \not\equiv 1 \pmod{13}$. So
 $2$ is a primitive root.
@@ -904,10 +899,9 @@ By Theorem 7.5, there are $\phi(12) = 4$ primitive roots modulo $13$: $2, 6, 7, 
 
 ### 7.5 Index Calculus
 
-When a primitive root $g$ modulo $p$ is known, every element $a$ of
-$(\mathbb{Z}/p\mathbb{Z})^*$ Can be written uniquely as $a \equiv g^k \pmod{p}$ with
-$0 \leq k \lt p - 1$. The exponent $k$ Is called the **index** (or **discrete logarithm**) of $a$
-to base $g$Written $\mathrm{ind_g(a) = k$.
+When a primitive root $g$ modulo $p$ is known, every element $a$ of $(\mathbb{Z}/p\mathbb{Z})^*$ Can
+be written uniquely as $a \equiv g^k \pmod{p}$ with $0 \leq k \lt p - 1$. The exponent $k$ Is called
+the **index** (or **discrete logarithm**) of $a$ to base $g$Written $\mathrm{ind_g(a) = k$.
 
 **Proposition 7.8 (Properties of indices).** Let $g$ be a primitive root modulo $p$. For all
 $a, b \in (\mathbb{Z}/p\mathbb{Z})^*$:
@@ -919,8 +913,8 @@ $a, b \in (\mathbb{Z}/p\mathbb{Z})^*$:
 ### 7.6 The Discrete Logarithm Problem
 
 **Definition.** Given a prime $p$A primitive root $g$ modulo $p$And
-$a \in (\mathbb{Z}/p\mathbb{Z})^*$ The **discrete logarithm problem** (DLP) asks: find
-$k$ such that $g^k \equiv a \pmod{p}$.
+$a \in (\mathbb{Z}/p\mathbb{Z})^*$ The **discrete logarithm problem** (DLP) asks: find $k$ such that
+$g^k \equiv a \pmod{p}$.
 
 Unlike ordinary logarithms, no polynomial-time algorithm is known for the DLP. The best known
 Algorithms (baby-step giant-step, index calculus, number field sieve) run in subexponential time.
@@ -962,8 +956,7 @@ From $2^7 = 14 \pmod{19}$We get $\mathrm{ind_2(14) = 7$. $\blacksquare$
 Taking indices base $2$: $\mathrm{ind_2(6^x) = \mathrm{ind_2(11)$.
 $x \cdot \mathrm{ind_2(6) \equiv \mathrm{ind_2(11) \pmod{18}$.
 
-From the table: $\mathrm{ind_2(6) = 14$ and $\mathrm{ind_2(11) = 12$. So
-$14x \equiv 12 \pmod{18}$.
+From the table: $\mathrm{ind_2(6) = 14$ and $\mathrm{ind_2(11) = 12$. So $14x \equiv 12 \pmod{18}$.
 
 $\gcd(14, 18) = 2$ and $2 \mid 12$So solutions exist. Divide by $2$: $7x \equiv 6 \pmod{9}$.
 $7^{-1} \equiv 4 \pmod{9}$ (since $7 \cdot 4 = 28 \equiv 1$). So
@@ -1375,9 +1368,8 @@ Non-trivial integer solutions. If $(x_1, y_1)$ is the smallest positive solution
 Are given by $(x_n + y_n\sqrt{D}) = (x_1 + y_1\sqrt{D})^n$.
 
 _Proof._ The existence of a non-trivial solution follows from Dirichlet's unit theorem applied to
-$\mathbb{Z}[\sqrt{D}]$. The general solution follows from the fact that the group of units of
-norm $1$ in $\mathbb{Z}[\sqrt{D}]$ is cyclic and generated by the fundamental unit.
-$\blacksquare$
+$\mathbb{Z}[\sqrt{D}]$. The general solution follows from the fact that the group of units of norm
+$1$ in $\mathbb{Z}[\sqrt{D}]$ is cyclic and generated by the fundamental unit. $\blacksquare$
 
 **Problem.** Find all solutions to $x^2 - 2y^2 = 1$.
 
@@ -1438,9 +1430,9 @@ Estimates.
 
 ### 11.1 The Gaussian Integers
 
-**Definition.** The **Gaussian integers** are
-$\mathbb{Z}[i] = \\{a + bi : a, b \in \mathbb{Z}\\}$ Where $i = \sqrt{-1}$. They form a
-commutative ring with unity under the usual addition and Multiplication of complex numbers.
+**Definition.** The **Gaussian integers** are $\mathbb{Z}[i] = \\{a + bi : a, b \in \mathbb{Z}\\}$
+Where $i = \sqrt{-1}$. They form a commutative ring with unity under the usual addition and
+Multiplication of complex numbers.
 
 ### 11.2 Norm and Units
 
@@ -1449,13 +1441,13 @@ $N(\alpha) = a^2 + b^2 = \alpha \bar{\alpha}$.
 
 **Proposition 11.1.** $N(\alpha\beta) = N(\alpha)N(\beta)$.
 
-**Proposition 11.2.** The units of $\mathbb{Z}[i]$ are $\\{1, -1, i, -i\\}$ (exactly those
-with norm $1$).
+**Proposition 11.2.** The units of $\mathbb{Z}[i]$ are $\\{1, -1, i, -i\\}$ (exactly those with norm
+$1$).
 
 ### 11.3 Primes in Gaussian Integers
 
-**Theorem 11.3.** An element $\pi \in \mathbb{Z}[i]$ is prime if and only if one of the
-following Holds:
+**Theorem 11.3.** An element $\pi \in \mathbb{Z}[i]$ is prime if and only if one of the following
+Holds:
 
 1. $\pi = u(1 + i)$ for some unit $u$ (up to associates, $\pi = 1 + i$With norm $2$).
 2. $\pi = u(a + bi)$ where $a^2 + b^2 = p$ for a prime $p \equiv 1 \pmod{4}$.
@@ -1470,21 +1462,19 @@ $2 = (1 + i)(1 - i) = (1+i)^2 \cdot (-i)$So $1 + i$ is Gaussian prime with norm 
 Two squares if and only if $p = 2$ or $p \equiv 1 \pmod{4}$.
 
 _Proof._ For $p \equiv 1 \pmod{4}$: by quadratic reciprocity, $-1$ is a QR mod $p$So
-$a^2 \equiv -1 \pmod{p}$ for some $a$. Then $p \mid (a^2 + 1) = (a + i)(a - i)$ in
-$\mathbb{Z}[i]$. If $p$ were prime in $\mathbb{Z}[i]$It would divide $a + i$ or
-$a - i$But neither quotient is in $\mathbb{Z}[i]$. So $p = \alpha\beta$ with neither a unit,
-giving $p^2 = N(p) = N(\alpha)N(\beta)$ So $N(\alpha) = N(\beta) = p$I.e., $p = a^2 + b^2$.
-$\blacksquare$
+$a^2 \equiv -1 \pmod{p}$ for some $a$. Then $p \mid (a^2 + 1) = (a + i)(a - i)$ in $\mathbb{Z}[i]$.
+If $p$ were prime in $\mathbb{Z}[i]$It would divide $a + i$ or $a - i$But neither quotient is in
+$\mathbb{Z}[i]$. So $p = \alpha\beta$ with neither a unit, giving $p^2 = N(p) = N(\alpha)N(\beta)$
+So $N(\alpha) = N(\beta) = p$I.e., $p = a^2 + b^2$. $\blacksquare$
 
 ### 11.4 The Gaussian Integers Form a UFD
 
-**Theorem 11.5.** $\mathbb{Z}[i]$ is a Euclidean domain (with norm as the Euclidean function),
-hence A PID, hence a UFD.
+**Theorem 11.5.** $\mathbb{Z}[i]$ is a Euclidean domain (with norm as the Euclidean function), hence
+A PID, hence a UFD.
 
-_Proof._ For $\alpha, \beta \in \mathbb{Z}[i]$ with $\beta \neq 0$Write
-$\alpha/\beta = s + ti$ With $s, t \in \mathbb{Q}$. Choose $m, n \in \mathbb{Z}$ with
-$|s - m| \leq 1/2$ and $|t - n| \leq 1/2$. Set $q = m + ni$ and $r = \alpha - \beta q$. Then
-$r \in \mathbb{Z}[i]$ and
+_Proof._ For $\alpha, \beta \in \mathbb{Z}[i]$ with $\beta \neq 0$Write $\alpha/\beta = s + ti$ With
+$s, t \in \mathbb{Q}$. Choose $m, n \in \mathbb{Z}$ with $|s - m| \leq 1/2$ and $|t - n| \leq 1/2$.
+Set $q = m + ni$ and $r = \alpha - \beta q$. Then $r \in \mathbb{Z}[i]$ and
 $N(r) = N(\beta) \cdot N(\alpha/\beta - q) = N(\beta)((s-m)^2 + (t-n)^2) \leq N(\beta) \cdot 1/2 \lt N(\beta)$.
 So $\mathbb{Z}[i]$ is Euclidean. $\blacksquare$
 
@@ -1502,8 +1492,8 @@ $1 + 2i = -i(2 - i)$. So up to associates, $5 = (2 + i)(2 - i)$. $\blacksquare$
 <summary>Solution</summary>
 
 Since $13 \equiv 1 \pmod{4}$It factors in $\mathbb{Z}[i]$. We need $a^2 + b^2 = 13$ with
-$a, b \in \mathbb{Z}$. Trying: $a^2 \leq 13$So $a \in \\{0, 1, 2, 3\\}$. $a = 2$:
-$b^2 = 9$$b = 3$. So $13 = 2^2 + 3^2 = (2 + 3i)(2 - 3i)$.
+$a, b \in \mathbb{Z}$. Trying: $a^2 \leq 13$So $a \in \\{0, 1, 2, 3\\}$. $a = 2$: $b^2 = 9$$b = 3$.
+So $13 = 2^2 + 3^2 = (2 + 3i)(2 - 3i)$.
 
 Verification: $(2 + 3i)(2 - 3i) = 4 + 9 = 13$. Both $2 + 3i$ and $2 - 3i$ are Gaussian primes Since
 $N(2 + 3i) = 13$ is prime. $\blacksquare$
@@ -1571,9 +1561,9 @@ Check: $N(\rho) = N(2 + i) = 5 \lt N(4 - i) = 17$. $\blacksquare$
 
 ### 12.1 Multiplicative Functions
 
-**Definition.** An arithmetic function $f \colon \mathbb{N} \to \mathbb{C}$ is
-**multiplicative** if $f(mn) = f(m)f(n)$ whenever $\gcd(m, n) = 1$. It is **completely
-multiplicative** if $f(mn) = f(m)f(n)$ for all $m, n$.
+**Definition.** An arithmetic function $f \colon \mathbb{N} \to \mathbb{C}$ is **multiplicative** if
+$f(mn) = f(m)f(n)$ whenever $\gcd(m, n) = 1$. It is **completely multiplicative** if
+$f(mn) = f(m)f(n)$ for all $m, n$.
 
 **Proposition 12.1.** If $f$ is multiplicative and $n = p_1^{a_1} \cdots p_k^{a_k}$Then
 $f(n) = f(p_1^{a_1}) \cdots f(p_k^{a_k})$.
@@ -1613,8 +1603,7 @@ $\blacksquare$
 
 ### 12.3 The Möbius Function
 
-**Definition.** The **Möbius function** $\mu \colon \mathbb{N} \to \\{-1, 0, 1\\}$ is defined
-by:
+**Definition.** The **Möbius function** $\mu \colon \mathbb{N} \to \\{-1, 0, 1\\}$ is defined by:
 
 - $\mu(1) = 1$.
 - $\mu(n) = 0$ if $n$ is divisible by a square of a prime ($n$ is not **squarefree**).
@@ -1644,8 +1633,8 @@ $$(f * g)(n) = \sum_{d \mid n} f(d) \cdot g\!\left(\frac{n}{d}\right)$$
 3. **Identity element:** The function
    $\varepsilon(n) = \begin{cases} 1 & n = 1 \\ 0 & n > 1 \end{cases}$ satisfies
    $f * \varepsilon = f$.
-4. **Möbius inversion:** $\mu$ is the convolution inverse of $\mathbf{1}$ (where
-   $\mathbf{1}(n) = 1$ for all $n$), i.e., $\mathbf{1} * \mu = \varepsilon$.
+4. **Möbius inversion:** $\mu$ is the convolution inverse of $\mathbf{1}$ (where $\mathbf{1}(n) = 1$
+   for all $n$), i.e., $\mathbf{1} * \mu = \varepsilon$.
 
 _Proof of (1)._ $(f * g)(n) = \sum_{d \mid n} f(d)g(n/d)$. Setting $e = n/d$This equals
 $\sum_{e \mid n} f(n/e)g(e) = (g * f)(n)$. $\blacksquare$
@@ -1657,8 +1646,8 @@ $\sum_{e \mid n} f(n/e)g(e) = (g * f)(n)$. $\blacksquare$
 $$g(n) = \sum_{d \mid n} \mu(d) f(n/d)$$
 
 _Proof._ In terms of Dirichlet convolution: $f = g * \mathbf{1}$So
-$f * \mu = (g * \mathbf{1}) * \mu = g * (\mathbf{1} * \mu) = g * \varepsilon = g$. The
-explicit form Follows by writing out the convolution:
+$f * \mu = (g * \mathbf{1}) * \mu = g * (\mathbf{1} * \mu) = g * \varepsilon = g$. The explicit form
+Follows by writing out the convolution:
 $\sum_{d \mid n} \mu(d) f(n/d) = \sum_{d \mid n} \mu(d) \sum_{e \mid (n/d)} g(e) = \sum_{e \mid n} g(e) \sum_{d \mid (n/e)} \mu(d)$.
 The inner sum is $1$ if $e = n$ and $0$ otherwise, so only $g(n)$ remains. $\blacksquare$
 
@@ -1766,18 +1755,17 @@ later explained by Deligne's proof of the Weil conjectures.
 
 **Theorem 13.1 (Wilson's Theorem).** $p$ is prime if and only if $(p - 1)! \equiv -1 \pmod{p}$.
 
-_Proof._ If $p$ is prime: in $\mathbb{Z}/p\mathbb{Z}$Each element pairs with its
-inverse. The only Self-inverse elements are $1$ and $p - 1$. So
-$(p-1)! \equiv 1 \cdot (p-1) \equiv -1 \pmod{p}$. Conversely, if $n$ is composite and $n > 4$Then
-$(n-1)! \equiv 0 \pmod{n}$ since $n$ has a proper Factor appearing in $(n-1)!$. $\blacksquare$
+_Proof._ If $p$ is prime: in $\mathbb{Z}/p\mathbb{Z}$Each element pairs with its inverse. The only
+Self-inverse elements are $1$ and $p - 1$. So $(p-1)! \equiv 1 \cdot (p-1) \equiv -1 \pmod{p}$.
+Conversely, if $n$ is composite and $n > 4$Then $(n-1)! \equiv 0 \pmod{n}$ since $n$ has a proper
+Factor appearing in $(n-1)!$. $\blacksquare$
 
 ### 13.2 The Ring $\mathbb{Z}/n\mathbb{Z}$
 
-**Theorem 13.2.** The ring $\mathbb{Z}/n\mathbb{Z}$ is a field if and only if $n$ is
-prime.
+**Theorem 13.2.** The ring $\mathbb{Z}/n\mathbb{Z}$ is a field if and only if $n$ is prime.
 
-**Proposition 13.3.** $(\mathbb{Z}/n\mathbb{Z})^*$ has order $\phi(n)$ and is a group
-under Multiplication.
+**Proposition 13.3.** $(\mathbb{Z}/n\mathbb{Z})^*$ has order $\phi(n)$ and is a group under
+Multiplication.
 
 ### 13.3 Dirichlet's Theorem on Primes in Arithmetic Progressions
 
@@ -1845,9 +1833,9 @@ $\lambda(p^k) = (p-1)p^{k-1}$ for odd primes $p$.
 precisely When $n = 1, 2, 4$$n = p^k$Or $n = 2p^k$ (where $p$ is an odd prime).
 
 _Intuition._ The Carmichael function gives the **exponent** of the group
-$(\mathbb{Z}/n\mathbb{Z})^*$ Which equals the lcm of the orders of all elements. Euler's
-totient $\phi(n)$ gives the order of The group. The exponent always divides the order, with equality
-exactly when the group is cyclic (i.e., when a primitive root exists).
+$(\mathbb{Z}/n\mathbb{Z})^*$ Which equals the lcm of the orders of all elements. Euler's totient
+$\phi(n)$ gives the order of The group. The exponent always divides the order, with equality exactly
+when the group is cyclic (i.e., when a primitive root exists).
 
 **Theorem 13.7 (Korselt's Criterion).** $n$ is a **Carmichael number** (composite $n$ with
 $a^{n-1} \equiv 1 \pmod{n}$ for all $\gcd(a, n) = 1$) if and only if:
@@ -1914,9 +1902,9 @@ Modular forms, Galois representations).
 also prime.
 
 The largest known twin prime pair (as of 2026) contains numbers with over 400,000 digits. In 2013,
-Yitang Zhang proved that there exists some constant $N \lt 7 \times 10^7$ such that infinitely
-many Prime pairs $(p, p + N)$ exist. This bound has since been improved to $N \leq 246$ by the
-Polymath project.
+Yitang Zhang proved that there exists some constant $N \lt 7 \times 10^7$ such that infinitely many
+Prime pairs $(p, p + N)$ exist. This bound has since been improved to $N \leq 246$ by the Polymath
+project.
 
 **Theorem 14.1a (Brun, 1919).** The sum of the reciprocals of the twin primes converges:
 
@@ -1959,8 +1947,8 @@ $D \lt 0$ represents $n$ if and only if $D$ is a quadratic residue modulo $4n$.
 The **class group** of a quadratic field $\mathbb{Q}(\sqrt{D})$ measures the failure of unique
 Factorization in its ring of integers. The **class number** $h(D)$ is the order of this group.
 
-**Theorem 14.3.** Unique factorization holds in the ring of integers of $\mathbb{Q}(\sqrt{D})$
-If and only if $h(D) = 1$.
+**Theorem 14.3.** Unique factorization holds in the ring of integers of $\mathbb{Q}(\sqrt{D})$ If
+and only if $h(D) = 1$.
 
 This connects the algebraic question of unique factorization to the analytic properties of the
 Dedekind zeta function, via the class number formula:
@@ -2006,8 +1994,8 @@ Such that for all coprime positive integers $a, b, c$ with $a + b = c$:
 
 $$c \lt K_\varepsilon \cdot \mathrm{rad(abc)^{1 + \varepsilon}$$
 
-Where $\mathrm{rad(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct
-prime Factors).
+Where $\mathrm{rad(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct prime
+Factors).
 
 The abc conjecture is one of the most important open problems in number theory. It implies:
 
@@ -2077,9 +2065,9 @@ $x^2 \equiv 2 \pmod{15}$ has no solution (checking mod $3$: $x^2 \equiv 2 \pmod{
 $a^{p-1} \equiv 1 \pmod{p}$ only when $\gcd(a, p) = 1$. The correct form for all $a$ is
 $a^p \equiv a \pmod{p}$. :::
 
-:::caution Common Pitfall Not every prime in $\mathbb{Z}$ remains prime in
-$\mathbb{Z}[i]$. Only Primes $p \equiv 3 \pmod{4}$ remain prime in $\mathbb{Z}[i]$.
-Primes $p \equiv 1 \pmod{4}$ factor as $p = (a + bi)(a - bi)$And $2 = (1 + i)^2 \cdot (-i)$. :::
+:::caution Common Pitfall Not every prime in $\mathbb{Z}$ remains prime in $\mathbb{Z}[i]$. Only
+Primes $p \equiv 3 \pmod{4}$ remain prime in $\mathbb{Z}[i]$. Primes $p \equiv 1 \pmod{4}$ factor as
+$p = (a + bi)(a - bi)$And $2 = (1 + i)^2 \cdot (-i)$. :::
 
 :::caution Common Pitfall The Euclidean algorithm computes $\gcd(a, b)$ for positive integers. When
 Working with negative integers or polynomials, remember that $\gcd$ is defined up to a unit (sign
@@ -2161,8 +2149,7 @@ _If you get this wrong, revise:_ Section 2.3.
 
 ### Problem 4 (Bézout's Identity)
 
-Prove that $\gcd(a, b) = 1$ if and only if there exist $x, y \in \mathbb{Z}$ with
-$ax + by = 1$.
+Prove that $\gcd(a, b) = 1$ if and only if there exist $x, y \in \mathbb{Z}$ with $ax + by = 1$.
 
 <details>
 <summary>Solution</summary>
@@ -2507,4 +2494,48 @@ _If you get this wrong, revise:_ Sections 12.4 and 12.5.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Solving a quadratic equation**
+
+Solve $2x^2 - 7x + 3 = 0$.
+
+**Solution:**
+
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = \frac{7 \pm \sqrt{49 - 24}}{4} = \frac{7 \pm 5}{4}$$
+
+$$x = 3 \quad \text{or} \quad x = \frac{1}{2}$$
+
+**Example 2: Using the discriminant**
+
+Find the range of values of $k$ for which $x^2 + kx + 9 = 0$ has no real roots.
+
+**Solution:**
+
+For no real roots, the discriminant $b^2 - 4ac < 0$:
+
+$$k^2 - 36 < 0$$
+
+$$(k - 6)(k + 6) < 0$$
+
+$$-6 < k < 6$$
+
+## Summary
+
+- Divisibility and primes: fundamental theorem of arithmetic (unique prime factorisation); Euclid's
+  algorithm for $\gcd(a,b)$ and Bézout's identity.
+- Modular arithmetic: $a \equiv b \pmod{n}$ iff $n | (a-b)$; Fermat's little theorem:
+  $a^{p-1} \equiv 1 \pmod{p}$ for $\gcd(a,p)=1$.
+- Euler's totient function: $\phi(n)$ counts integers coprime to $n$; Euler's theorem generalises
+  Fermat's.
+- Chinese remainder theorem: simultaneous congruences with coprime moduli have a unique solution
+  modulo the product.
+- Diophantine equations: linear ($ax + by = c$ solvable iff $\gcd(a,b) | c$); Fermat's last theorem
+  and elliptic curves in modern research.
+
+## Cross-References
+
+| Topic                      | Site        | Link                                                                      |
+| -------------------------- | ----------- | ------------------------------------------------------------------------- |
+| Abstract Algebra           | WyattsNotes | [View](/docs/university/mathematics/abstract-algebra)                     |
+| Real Analysis              | WyattsNotes | [View](/docs/university/mathematics/real-analysis)                        |
+| BMO Preparation            | WyattsNotes | [View](/docs/university/admissions/bmo-preparation)                       |
+| Number Theory — MIT 18.781 | MIT OCW     | [View](https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/) |

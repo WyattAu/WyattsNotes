@@ -109,7 +109,7 @@ The key distinction from the Standard:
 
 > An entity that is the subject of an explicit instantiation declaration and that is also used other
 > than in an unevaluated operand is implicitly instantiated when the entity is odr-used [N4950 > > >
-> §13.9.2/6].
+> > §13.9.2/6].
 
 This means that an `extern template` declaration suppresses implicit instantiation **only for direct
 Uses**. If the template is used in a context that requires its definition (e.g., taking its address,
@@ -774,8 +774,16 @@ export template class DataBuffer<double>;
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of explicit instantiation and extern templates, including
+underlying theory, practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- core concepts and terminology
+- algorithms and computational thinking
+- practical implementation
+- security and ethical considerations
+- applications in the real world
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

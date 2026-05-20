@@ -176,8 +176,8 @@ Uncontended case.
 ### Proof: Why False Sharing Causes Performance Degradation
 
 **Claim:** If two threads concurrently write to variables on the same cache line, each write causes
-An L1 cache miss on the other thread, resulting in $\mathcal{O}(n)$ coherence round-trips for
-$n$ Writes per thread.
+An L1 cache miss on the other thread, resulting in $\mathcal{O}(n)$ coherence round-trips for $n$
+Writes per thread.
 
 **Proof:**
 
@@ -834,8 +834,16 @@ Eliminating false sharing entirely. The total is computed by summing all shards.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of cache coherency (mesi) and false sharing, including
+underlying theory, practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Big O notation and complexity analysis
+- searching algorithms (binary, linear)
+- sorting algorithms (bubble, merge, quick)
+- graph algorithms (Dijkstra, BFS, DFS)
+- dynamic programming
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

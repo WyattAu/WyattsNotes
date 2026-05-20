@@ -719,12 +719,14 @@ Eliminate human reaction time entirely.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.
 
-## Summary
+2. Misidentifying the system boundary when applying conservation laws — clearly define what is
+   included before writing equations.
 
-<!-- TODO: Add a summary for this topic -->
+3. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.

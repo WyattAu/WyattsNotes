@@ -757,8 +757,8 @@ sysctl net.ipv4.tcp_retries2            # 15 (retries for established connection
 
 4. **Misunderstanding `cwnd` and `rwnd`.** `cwnd` limits sending based on network congestion. `rwnd`
    limits sending based on receiver buffer space. Throughput is limited by
-   $\min(\mathrm{rwnd, \mathrm{cwnd) / \mathrm{RTT$. A full receiver buffer (`rwnd = 0`) stops
-   the sender even if the network is idle.
+   $\min(\mathrm{rwnd, \mathrm{cwnd) / \mathrm{RTT$. A full receiver buffer (`rwnd = 0`) stops the
+   sender even if the network is idle.
 
 5. **UDP without application-level reliability.** If your UDP application needs reliable delivery,
    you must implement acknowledgment, retransmission, and ordering yourself. QUIC is a transport
@@ -791,8 +791,16 @@ sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_QUICKACK, 1)
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of tcp and udp, including underlying theory, practical
+implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- Big O notation and complexity analysis
+- searching algorithms (binary, linear)
+- sorting algorithms (bubble, merge, quick)
+- graph algorithms (Dijkstra, BFS, DFS)
+- dynamic programming
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

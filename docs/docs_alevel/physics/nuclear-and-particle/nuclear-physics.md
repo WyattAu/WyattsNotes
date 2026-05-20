@@ -60,8 +60,8 @@ The nucleus contains **protons** and **neutrons** (collectively, **nucleons**).
 | Mass (u) | 1.00728 | 1.00867 | 0.00055         |
 | Location | Nucleus | Nucleus | Electron shells |
 
-**Notation.** A nuclide $\prescript{A}{Z}\mathrm{X}$ has mass number $A$ (total nucleons) and
-Atomic number $Z$ (protons). The neutron number is $N = A - Z$.
+**Notation.** A nuclide $\prescript{A}{Z}\mathrm{X}$ has mass number $A$ (total nucleons) and Atomic
+number $Z$ (protons). The neutron number is $N = A - Z$.
 
 **Isotopes** have the same $Z$ but different $N$ (hence different $A$). Isotopes have nearly
 Identical chemical properties but different nuclear properties (stability, half-life, decay mode).
@@ -114,10 +114,10 @@ $E_b/A = 28.3/4 = 7.08$ MeV per nucleon.
 The binding energy per nucleon plotted against mass number shows:
 
 - **Light nuclei** ($A \lt 20$): Low binding energy per nucleon, with peaks at
-  $\prescript{4}{2}\mathrm{He}$$\prescript{12}{6}\mathrm{C}$And $\prescript{16}{8}\mathrm{O}$
-  (magic numbers).
-- **Iron-56** ($\prescript{56}{26}\mathrm{Fe}$): Maximum binding energy per nucleon ($\sim 8.8$
-  MeV) — the most stable nucleus.
+  $\prescript{4}{2}\mathrm{He}$$\prescript{12}{6}\mathrm{C}$And $\prescript{16}{8}\mathrm{O}$ (magic
+  numbers).
+- **Iron-56** ($\prescript{56}{26}\mathrm{Fe}$): Maximum binding energy per nucleon ($\sim 8.8$ MeV)
+  — the most stable nucleus.
 - **Heavy nuclei** ($A \gt 60$): Gradually decreasing binding energy per nucleon.
 
 **Implications:**
@@ -231,8 +231,8 @@ $$\boxed{t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆\lambda◆RB◆}$$
 
 ### Mechanism
 
-A heavy nucleus ( $\prescript{235}_{92}\mathrm{U}$ or $\prescript{239}_{94}\mathrm{Pu}$) Absorbs
-a neutron, becoming unstable and splitting into two lighter nuclei (fission fragments) plus 2--3
+A heavy nucleus ( $\prescript{235}_{92}\mathrm{U}$ or $\prescript{239}_{94}\mathrm{Pu}$) Absorbs a
+neutron, becoming unstable and splitting into two lighter nuclei (fission fragments) plus 2--3
 neutrons and energy:
 
 $$\prescript{235}_{92}\mathrm{U} + \prescript{1}_{0}\mathrm{n} \to \prescript{236}_{92}\mathrm{U}^* \to \prescript{141}_{56}\mathrm{Ba} + \prescript{92}_{36}\mathrm{Kr} + 3\prescript{1}_{0}\mathrm{n} + \mathrm{energy}$$
@@ -421,12 +421,18 @@ $\lambda t = \ln 16 = 4\ln 2$. $t = 4\ln 2/\lambda = 4t_{1/2} = 4 \times 8.04 = 
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing atomic number (protons) with mass number (protons + neutrons).
 
-## Summary
+2. Forgetting that radioactive decay is random and spontaneous — it cannot be predicted for
+   individual nuclei.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misunderstanding that half-life is constant regardless of the initial amount of substance.
 
-## Worked Examples
+4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
+
+6. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
+   scenario.

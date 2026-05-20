@@ -16,8 +16,7 @@ slug: optics-and-wave-physics
 
 ### 1.1 Derivation from Maxwell's Equations
 
-In vacuum, with no sources ($\rho = 0$$\mathbf{J} = \mathbf{0}$), Maxwell's equations
-give:
+In vacuum, with no sources ($\rho = 0$$\mathbf{J} = \mathbf{0}$), Maxwell's equations give:
 
 $$\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2 \mathbf{E} = -\nabla^2 \mathbf{E}$$
 
@@ -80,9 +79,8 @@ It is convenient to write monochromatic waves as:
 
 $$\mathbf{E}(\mathbf{r}, t) = \mathrm{Re\left[\tilde{\mathbf{E}}\, e^{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}\right]$$
 
-Where $\tilde{\mathbf{E}}$ is the complex amplitude, $\mathbf{k}$ is the wave vector,
-and $\omega$ is The angular frequency. The dispersion relation is
-$\omega = ck = c|\mathbf{k}|$.
+Where $\tilde{\mathbf{E}}$ is the complex amplitude, $\mathbf{k}$ is the wave vector, and $\omega$
+is The angular frequency. The dispersion relation is $\omega = ck = c|\mathbf{k}|$.
 
 The wave vector satisfies $|\mathbf{k}| = 2\pi/\lambda$ and $\omega = 2\pi\nu$.
 
@@ -95,8 +93,8 @@ $$I = \frac{1}{2}c\varepsilon_0 |\tilde{E}|^2$$
 <summary>Worked Example: Complex amplitude and intensity</summary>
 
 **Problem.** A plane wave propagating in the $+z$ direction has complex amplitude
-$\tilde{\mathbf{E}} = (10 + 5i)\hat{\mathbf{x}}$ V/m in vacuum. Find the real electric
-field, the Intensity, and the phase of the wave relative to $\cos(kz - \omega t)$.
+$\tilde{\mathbf{E}} = (10 + 5i)\hat{\mathbf{x}}$ V/m in vacuum. Find the real electric field, the
+Intensity, and the phase of the wave relative to $\cos(kz - \omega t)$.
 
 **Solution.** $|\tilde{E}| = \sqrt{10^2 + 5^2} = \sqrt{125} \approx 11.18$ V/m. Phase:
 $\phi = \arctan(5/10) = 26.57°$.
@@ -294,35 +292,32 @@ velocity (front velocity) never Exceeds $c$. :::
 
 From Maxwell's equations, the following properties hold for plane EM waves:
 
-1. **Transversality:** $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to
-   $\mathbf{k}$ and to each other.
-2. **Orthogonality:** $\mathbf{E} \perp \mathbf{B}$And
-   $|\mathbf{E}| = c|\mathbf{B}|$.
+1. **Transversality:** $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to $\mathbf{k}$ and to each
+   other.
+2. **Orthogonality:** $\mathbf{E} \perp \mathbf{B}$And $|\mathbf{E}| = c|\mathbf{B}|$.
 3. **In-phase:** $\mathbf{E}$ and $\mathbf{B}$ oscillate in phase.
 4. **Dispersion relation:** $\omega = ck$ in vacuum.
 
 **Proof of transversality.** For a plane wave
-$\mathbf{E} = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}$
-Gauss's law gives $i\mathbf{k}\cdot\mathbf{E}_0 = 0$So
-$\mathbf{k} \perp \mathbf{E}_0$. Similarly From $\nabla \cdot \mathbf{B} = 0$:
-$\mathbf{k} \perp \mathbf{B}_0$. $\blacksquare$
+$\mathbf{E} = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}$ Gauss's law gives
+$i\mathbf{k}\cdot\mathbf{E}_0 = 0$So $\mathbf{k} \perp \mathbf{E}_0$. Similarly From
+$\nabla \cdot \mathbf{B} = 0$: $\mathbf{k} \perp \mathbf{B}_0$. $\blacksquare$
 
 **Proof of $|\mathbf{E}| = c|\mathbf{B}|$.** From Faraday's law for a plane wave:
-$\mathbf{k} \times \mathbf{E}_0 = \omega\mathbf{B}_0$. Taking magnitudes:
-$kE_0 = \omega B_0$So $E_0/B_0 = \omega/k = c$. $\blacksquare$
+$\mathbf{k} \times \mathbf{E}_0 = \omega\mathbf{B}_0$. Taking magnitudes: $kE_0 = \omega B_0$So
+$E_0/B_0 = \omega/k = c$. $\blacksquare$
 
 <details>
 <summary>Worked Example: Plane wave fields and intensity</summary>
 
 **Problem.** A plane wave in vacuum has
-$\mathbf{E} = (20\hat{\mathbf{x}} + 30\hat{\mathbf{y}})\cos(kz - \omega t)$ V/m
-with $\lambda = 500$ nm. Find $\mathbf{B}$The intensity, and describe the polarisation state.
+$\mathbf{E} = (20\hat{\mathbf{x}} + 30\hat{\mathbf{y}})\cos(kz - \omega t)$ V/m with $\lambda = 500$
+nm. Find $\mathbf{B}$The intensity, and describe the polarisation state.
 
 **Solution.** $|\mathbf{E}_0| = \sqrt{20^2 + 30^2} = \sqrt{1300} \approx 36.1$ V/m.
 $B_0 = E_0/c = 36.1/(3 \times 10^8) = 1.20 \times 10^{-7}$ T.
 
-Since $\mathbf{k} = k\hat{\mathbf{z}}$ and
-$\mathbf{B}_0 = \hat{\mathbf{k}} \times \mathbf{E}_0/c$:
+Since $\mathbf{k} = k\hat{\mathbf{z}}$ and $\mathbf{B}_0 = \hat{\mathbf{k}} \times \mathbf{E}_0/c$:
 $\mathbf{B} = (-20\hat{\mathbf{y}} + 30\hat{\mathbf{x}})B_0/E_0 \cdot \cos(kz - \omega t)/c$
 $= (30\hat{\mathbf{x}} - 20\hat{\mathbf{y}})(1/c)\cos(kz - \omega t)$ T.
 
@@ -330,9 +325,9 @@ Intensity:
 $I = \frac{1}{2}c\varepsilon_0 E_0^2 = \frac{1}{2}(3 \times 10^8)(8.854 \times 10^{-12})(1300) = 1.73$
 W/m$^2$.
 
-Polarisation: $\mathbf{E}_0$ has components along $\hat{\mathbf{x}}$ and
-$\hat{\mathbf{y}}$ with a Constant phase relationship ($\delta = 0$), so the wave is linearly
-polarised at angle $\theta = \arctan(30/20) = 56.3°$ from the $x$-axis.
+Polarisation: $\mathbf{E}_0$ has components along $\hat{\mathbf{x}}$ and $\hat{\mathbf{y}}$ with a
+Constant phase relationship ($\delta = 0$), so the wave is linearly polarised at angle
+$\theta = \arctan(30/20) = 56.3°$ from the $x$-axis.
 
 </details>
 
@@ -353,8 +348,8 @@ $$u = \frac{1}{2}\varepsilon_0 E^2 + \frac{1}{2\mu_0}B^2 = \varepsilon_0 E^2$$
 (the electric and magnetic contributions are equal for a plane wave). The intensity is related to
 The energy density by $I = uc$.
 
-**Radiation pressure.** For a perfectly absorbing surface: $P_{\mathrm{rad} = I/c$. For a
-perfectly Reflecting surface: $P_{\mathrm{rad} = 2I/c$.
+**Radiation pressure.** For a perfectly absorbing surface: $P_{\mathrm{rad} = I/c$. For a perfectly
+Reflecting surface: $P_{\mathrm{rad} = 2I/c$.
 
 <details>
 <summary>Worked Example: Radiation pressure from a laser</summary>
@@ -369,8 +364,7 @@ Radiation pressure (reflecting):
 $P_{\mathrm{rad} = 2I/c = 2(6.37 \times 10^3)/(3 \times 10^8) = 4.25 \times 10^{-5}$ Pa.
 
 Force:
-$F = P_{\mathrm{rad} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34 \times 10^{-11}$
-N.
+$F = P_{\mathrm{rad} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34 \times 10^{-11}$ N.
 
 </details>
 
@@ -405,18 +399,18 @@ At the front surface.
 
 (c) At normal incidence:
 $R = [(n_1 - n_2)/(n_1 + n_2)]^2 = [(1 - 1.5)/(1 + 1.5)]^2 = (0.5/2.5)^2 = 0.04$. Transmittance:
-$T = 1 - R = 0.96$. The intensity inside the glass is $I_{\mathrm{inside} = 0.96\,I_0$But the
-power per unit area Referenced to the vacuum intensity is
-$I_{\mathrm{inside} = (n_2/n_1)\,T\,I_0 = 1.5 \times 0.96 \times I_0 = 1.44\,I_0$ If we compare
-the electric field amplitudes squared times the respective impedances.
+$T = 1 - R = 0.96$. The intensity inside the glass is $I_{\mathrm{inside} = 0.96\,I_0$But the power
+per unit area Referenced to the vacuum intensity is
+$I_{\mathrm{inside} = (n_2/n_1)\,T\,I_0 = 1.5 \times 0.96 \times I_0 = 1.44\,I_0$ If we compare the
+electric field amplitudes squared times the respective impedances.
 
 </details>
 
 ### 2.4 Boundary Conditions and Snell's Law
 
-At a planar interface between two linear, isotropic media, the tangential components of
-$\mathbf{E}$ and $\mathbf{H}$ and the normal components of $\mathbf{D}$ and
-$\mathbf{B}$ are Continuous across the boundary.
+At a planar interface between two linear, isotropic media, the tangential components of $\mathbf{E}$
+and $\mathbf{H}$ and the normal components of $\mathbf{D}$ and $\mathbf{B}$ are Continuous across
+the boundary.
 
 Consider a plane wave incident from medium 1 ($n_1$) onto medium 2 ($n_2$), with the interface at
 $z = 0$ and the plane of incidence the $xz$-plane.
@@ -442,16 +436,15 @@ $k = n\omega/c$This yields Snell's law. $\blacksquare$
 Applying the boundary conditions for the tangential fields yields the **Fresnel equations** for the
 Amplitude reflection and transmission coefficients.
 
-**s-polarisation** ($\mathbf{E}$ perpendicular to the plane of incidence, along
-$\hat{\mathbf{y}}$): The tangential components of $\mathbf{E}$ and $\mathbf{H}$
-give:
+**s-polarisation** ($\mathbf{E}$ perpendicular to the plane of incidence, along $\hat{\mathbf{y}}$):
+The tangential components of $\mathbf{E}$ and $\mathbf{H}$ give:
 
 $$r_s = \frac{E_{0r}}{E_{0i}} = \frac{n_1\cos\theta_i - n_2\cos\theta_t}{n_1\cos\theta_i + n_2\cos\theta_t}$$
 
 $$t_s = \frac{E_{0t}}{E_{0i}} = \frac{2n_1\cos\theta_i}{n_1\cos\theta_i + n_2\cos\theta_t}$$
 
-**p-polarisation** ($\mathbf{E}$ parallel to the plane of incidence): The tangential
-components of $\mathbf{E}$ and $\mathbf{H}$ give:
+**p-polarisation** ($\mathbf{E}$ parallel to the plane of incidence): The tangential components of
+$\mathbf{E}$ and $\mathbf{H}$ give:
 
 $$r_p = \frac{E_{0r}}{E_{0i}} = \frac{n_2\cos\theta_i - n_1\cos\theta_t}{n_2\cos\theta_i + n_1\cos\theta_t}$$
 
@@ -623,9 +616,9 @@ $$2nt\cos\theta_t = m\lambda \quad \mathrm{(zero\ or\ two\ phase\ shifts)$$
 :::caution Common Pitfall Always count the number of $\pi$ phase shifts that occur upon reflection.
 A reflection from Low-to-high refractive index introduces a $\pi$ shift; high-to-low does not. For a
 soap film in Air, there is one $\pi$ shift (at the top surface). For a coating on glass
-($n_{\mathrm{coat} \lt n_{\mathrm{glass}$), there is also one shift. The conditions for
-constructive and destructive interference swap depending on whether the total number of shifts is
-odd or even. :::
+($n_{\mathrm{coat} \lt n_{\mathrm{glass}$), there is also one shift. The conditions for constructive
+and destructive interference swap depending on whether the total number of shifts is odd or even.
+:::
 
 <details>
 <summary>Worked Example: Anti-reflection coating design</summary>
@@ -763,8 +756,7 @@ Order number: $m = 2nd/\lambda = 2(1.00)(1.00 \times 10^{-3})/(500 \times 10^{-9
 Resolving power: $\mathcal{R} = m\mathcal{F} = 4000 \times 29.8 = 1.19 \times 10^5$.
 
 Minimum resolvable wavelength:
-$\delta\lambda = \lambda/\mathcal{R} = 500/1.19 \times 10^5 = 4.20 \times 10^{-3}$ nm $= 4.20$
-pm.
+$\delta\lambda = \lambda/\mathcal{R} = 500/1.19 \times 10^5 = 4.20 \times 10^{-3}$ nm $= 4.20$ pm.
 
 </details>
 
@@ -1084,8 +1076,8 @@ $$\Delta\phi = \frac{2\pi}{\lambda}(n_o - n_e)\,t$$
 Converts linear polarisation at $45°$ to the fast/slow axes into circular polarisation, and vice
 Versa.
 
-**Half-wave plate (HWP):** $\Delta\phi = \pi$So $t_{\mathrm{HWP} = \lambda/(2|n_o - n_e|)$.
-Rotates the plane of linear polarisation by $2\theta$Where $\theta$ is the angle between the Input
+**Half-wave plate (HWP):** $\Delta\phi = \pi$So $t_{\mathrm{HWP} = \lambda/(2|n_o - n_e|)$. Rotates
+the plane of linear polarisation by $2\theta$Where $\theta$ is the angle between the Input
 polarisation and the fast axis.
 
 :::caution Common Pitfall A quarter-wave plate only produces circular polarisation when the input
@@ -1218,13 +1210,12 @@ Scattered light is partially polarised. Light scattered at $90°$ to the inciden
 **completely linearly polarised** in the plane perpendicular to the scattering plane.
 
 **Proof.** Consider an incident unpolarised beam propagating along $\hat{\mathbf{z}}$. The
-$\mathbf{E}$-field oscillates in the $xy$-plane. An observer along $\hat{\mathbf{x}}$
-(scattering Angle $90°$) receives radiation from the accelerating electrons. The dipole radiation
-pattern of an Oscillator along $\hat{\mathbf{y}}$ has zero intensity along
-$\hat{\mathbf{y}}$ but maximum along $\hat{\mathbf{x}}$. The oscillator along
-$\hat{\mathbf{x}}$ radiates zero along its own axis. Thus The observer along
-$\hat{\mathbf{x}}$ sees only the $y$-component: the scattered light is Polarised along
-$\hat{\mathbf{y}}$. $\blacksquare$
+$\mathbf{E}$-field oscillates in the $xy$-plane. An observer along $\hat{\mathbf{x}}$ (scattering
+Angle $90°$) receives radiation from the accelerating electrons. The dipole radiation pattern of an
+Oscillator along $\hat{\mathbf{y}}$ has zero intensity along $\hat{\mathbf{y}}$ but maximum along
+$\hat{\mathbf{x}}$. The oscillator along $\hat{\mathbf{x}}$ radiates zero along its own axis. Thus
+The observer along $\hat{\mathbf{x}}$ sees only the $y$-component: the scattered light is Polarised
+along $\hat{\mathbf{y}}$. $\blacksquare$
 
 This explains why the sky is polarised at $90°$ from the sun and why polarising sunglasses reduce
 Glare from horizontal surfaces (Brewster's angle reflection from road/water).
@@ -1680,9 +1671,9 @@ $\alpha = d^2\omega/dk^2 = 2.0 \times 10^6$ m$^2$/s. Estimate the time required 
 double in spatial width after travelling a distance of 1.0 m.
 
 **4.** The electric field of a plane wave is
-$\mathbf{E} = (20\hat{\mathbf{x}} - 15\hat{\mathbf{y}})\cos(kz - \omega t)$ V/m in
-vacuum. Find the amplitude, the polarisation state (including the angle and handedness), and the
-time-averaged Intensity.
+$\mathbf{E} = (20\hat{\mathbf{x}} - 15\hat{\mathbf{y}})\cos(kz - \omega t)$ V/m in vacuum. Find the
+amplitude, the polarisation state (including the angle and handedness), and the time-averaged
+Intensity.
 
 **5.** Show that for normal incidence on a dielectric interface, the amplitude reflection and
 Transmission coefficients satisfy $t = 1 + r$. Prove this from the boundary conditions.
@@ -1898,8 +1889,8 @@ of width $a$ and spacing $d$.
 <details>
 <summary>Solution</summary>
 
-The transmittance of a single slit centred at $x = 0$ is
-$t_{\mathrm{slit}(x) = \mathrm{rect(x/a)$. The full grating is $N$ slits:
+The transmittance of a single slit centred at $x = 0$ is $t_{\mathrm{slit}(x) = \mathrm{rect(x/a)$.
+The full grating is $N$ slits:
 
 $$t(x) = \sum_{n=0}^{N-1} t_{\mathrm{slit}(x - nd) = t_{\mathrm{slit}(x) * \sum_{n=0}^{N-1} \delta(x - nd)$$
 
@@ -2366,8 +2357,8 @@ the waist contribution, valid for $z \gg z_R$).
 
 2. **The Abbe limit is not a fundamental limit:** Techniques such as STED (stimulated emission
    depletion), PALM (photoactivated localisation microscopy), and SIM (structured illumination
-   microscopy) can achieve resolutions well below the Abbe limit of $\lambda/(2\text{NA)$. The
-   2014 Nobel Prize in Chemistry was awarded for super-resolution microscopy.
+   microscopy) can achieve resolutions well below the Abbe limit of $\lambda/(2\text{NA)$. The 2014
+   Nobel Prize in Chemistry was awarded for super-resolution microscopy.
 
 3. **Gaussian beams do not have sharp edges:** Unlike geometrical optics rays, Gaussian beams have
    no well-defined edge. The beam radius $w$ is defined as the $1/e^2$ intensity radius
@@ -2427,8 +2418,8 @@ separation $d = 1$ mm, used at normal incidence with $\lambda = 500$ nm.
 **Solution:**
 
 (a) FSR in frequency:
-$\Delta\nu_{\text{FSR} = c/(2d) = 3 \times 10^8/(2 \times 10^{-3}) = 1.5 \times 10^{11}$ Hz
-$= 150$ GHz.
+$\Delta\nu_{\text{FSR} = c/(2d) = 3 \times 10^8/(2 \times 10^{-3}) = 1.5 \times 10^{11}$ Hz $= 150$
+GHz.
 
 FSR in wavelength:
 $\Delta\lambda_{\text{FSR} = \lambda^2/(2d) = (500 \times 10^{-9})^2/(2 \times 10^{-3}) = 1.25 \times 10^{-13}$
@@ -2482,7 +2473,7 @@ Techniques:
 | SFG                        | $\chi^{(2)}$ | $\omega_1 + \omega_2 \to \omega_3$                       |
 | Pockels effect             | $\chi^{(2)}$ | Linear electro-optic effect ($\Delta n \propto E$)       |
 | Optical Kerr effect        | $\chi^{(3)}$ | $n = n_0 + n_2 I$ (intensity-dependent refractive index) |
-| Self-focusing              | $\chi^{(3)}$ | Beam collapses when $P > P_{\text{cr}$                 |
+| Self-focusing              | $\chi^{(3)}$ | Beam collapses when $P > P_{\text{cr}$                   |
 | Two-photon absorption      | $\chi^{(3)}$ | Simultaneous absorption of two photons                   |
 | Stimulated Raman/Brillouin | $\chi^{(3)}$ | Inelastic scattering amplification                       |
 
@@ -2544,4 +2535,35 @@ Greenwood frequency $f_G \sim 100$ Hz.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+**Example 1: Conservation of energy**
+
+A $0.50\,\text{kg}$ ball is dropped from a height of $20\,\text{m}$. Calculate its speed just before
+it hits the ground (ignore air resistance).
+
+**Solution:**
+
+Using conservation of energy: $mgh = \frac{1}{2}mv^2$
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.81 \times 20} = \sqrt{392.4} \approx 19.8\,\text{m\,s}^{-1}$$
+
+## Summary
+
+- Wave equation: $\frac{\partial^2 u}{\partial t^2} = v^2 \nabla^2 u$; solutions include plane waves
+  and spherical waves.
+- Interference: coherent superposition; Young's double slit gives $\Delta y = \lambda D / d$; thin
+  film interference depends on optical path difference.
+- Diffraction: single slit intensity $I = I_0 \text{sinc}^2(\beta)$; diffraction grating resolves
+  wavelengths with $d \sin\theta = n\lambda$.
+- Polarisation: linear, circular, and elliptical; Brewster's angle; Malus's law
+  $I = I_0 \cos^2\theta$.
+- Optical instruments: resolution limited by diffraction (Rayleigh criterion
+  $\theta = 1.22\lambda/D$); aberrations corrected by lens design.
+
+## Cross-References
+
+| Topic               | Site        | Link                                                                                   |
+| ------------------- | ----------- | -------------------------------------------------------------------------------------- |
+| Electromagnetism    | WyattsNotes | [View](/docs/university/physics/electromagnetism)                                      |
+| Quantum Mechanics   | WyattsNotes | [View](/docs/university/physics/quantum-mechanics)                                     |
+| Classical Mechanics | WyattsNotes | [View](/docs/university/physics/classical-mechanics)                                   |
+| Optics — MIT 8.03   | MIT OCW     | [View](https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/) |

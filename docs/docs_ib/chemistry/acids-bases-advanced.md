@@ -827,4 +827,16 @@ A suitable indicator: phenolphthalein (8.3--10.0).
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of acids and bases (advanced), including key reactions,
+underlying theories, and practical applications.
+
+**Key concepts include:**
+
+- Brønsted-Lowry theory
+- strong and weak acids/bases
+- pH calculations
+- titration curves and indicators
+- hydrolysis of salts
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.

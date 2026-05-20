@@ -1986,8 +1986,12 @@ impossible to address with traditional field methods alone.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing correlation with causation when evaluating experimental data and drawing conclusions.
 
-## Summary
+2. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
+   change in tertiary structure.
 
-<!-- TODO: Add a summary for this topic -->
+3. Writing vague answers without specific biological terminology — use precise terms (e.g.,
+   'phospholipid bilayer' not 'membrane').
+
+4. Failing to link structure to function when describing biological molecules, cells, or organs.

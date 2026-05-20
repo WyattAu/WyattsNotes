@@ -23,8 +23,8 @@ $$
 N = \sum_{i=0}^{n-1} d_i \cdot b^i
 $$
 
-Each digit $d_i$ satisfies $0 \leq d_i \lt b$. The **most significant digit** (MSD) is $d_{n-1}$
-And the **least significant digit** (LSD) is $d_0$.
+Each digit $d_i$ satisfies $0 \leq d_i \lt b$. The **most significant digit** (MSD) is $d_{n-1}$ And
+the **least significant digit** (LSD) is $d_0$.
 
 The bases relevant to A Level Computer Science are:
 
@@ -685,12 +685,13 @@ Both inputs are negative and the result is negative, so no overflow.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
+   sorted input.
 
-## Summary
+2. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
+   necessarily tight.
 
-<!-- TODO: Add a summary for this topic -->
+3. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
+   data).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Neglecting to normalise database designs, leading to data redundancy and update anomalies.

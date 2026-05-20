@@ -704,8 +704,16 @@ Always prefer arrow syntax unless you deliberately need fall-through.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the core concepts of records, sealed classes, and pattern matching, including
+underlying theory, practical implementation, and key applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- OOP principles (encapsulation, inheritance, polymorphism)
+- collections framework
+- streams and lambda expressions
+- exception handling
+- the JVM and garbage collection
+
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

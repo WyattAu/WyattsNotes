@@ -123,12 +123,12 @@ The following pages are available:
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing correlation and causation in psychological research evidence.
 
-## Summary
+2. Confusing the approaches (biological, cognitive, behavioural, psychodynamic, humanistic) and
+   their key assumptions.
 
-<!-- TODO: Add a summary for this topic -->
+3. Describing a study without evaluating its methodology (e.g., sample, controls, ecological
+   validity).
 
-## Worked Examples
-
-<!-- TODO: Add worked examples for this topic -->
+4. Presenting theories without the supporting empirical evidence that led to their acceptance.

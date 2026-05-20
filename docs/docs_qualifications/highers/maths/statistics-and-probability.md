@@ -157,8 +157,8 @@ are **not** independent.
 
 **Example:** A medical test has a 95% true positive rate
 ($P(\mathrm{positive | \mathrm{disease) = 0.95$) and a 2% false positive rate
-($P(\mathrm{positive | \mathrm{no disease) = 0.02$). If 1% of the population has the condition,
-find $P(\mathrm{disease | \mathrm{positive)$.
+($P(\mathrm{positive | \mathrm{no disease) = 0.02$). If 1% of the population has the condition, find
+$P(\mathrm{disease | \mathrm{positive)$.
 
 Let $D$ = has disease, $+$ = tests positive.
 
@@ -653,8 +653,8 @@ Regression on $x$. The remaining 15% is due to other factors or random variation
 
 2. **Confusing $P(A | B)$ with $P(B | A)$:** These are not the same. A classic example:
    $P(\mathrm{disease | \mathrm{positive test)$ is much lower than
-   $P(\mathrm{positive test | \mathrm{disease)$ because the base rate of the disease matters.
-   Use Bayes' theorem if needed.
+   $P(\mathrm{positive test | \mathrm{disease)$ because the base rate of the disease matters. Use
+   Bayes' theorem if needed.
 
 3. **Forgetting continuity correction:** When approximating a discrete distribution (e.g., binomial)
    with a continuous one (normal), apply a continuity correction. Without it, your approximation can
@@ -741,8 +741,16 @@ Regression on $x$. The remaining 15% is due to other factors or random variation
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the mathematical techniques and concepts related to statistics and probability,
+including key theorems, methods, and problem-solving approaches.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- measures of central tendency and spread
+- probability distributions (binomial, normal)
+- hypothesis testing
+- correlation and regression
+- sampling methods
+
+Regular practice with a variety of question types is essential to build fluency and confidence in
+applying these mathematical techniques.

@@ -444,13 +444,13 @@ dominant radiological Hazard. :::
 :::info Info
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant ratio of
-$^{14}\mathrm{C}$ to $^{12}\mathrm{C}$. Cosmic rays produce neutrons in the upper atmosphere,
-Which react with nitrogen-14:
+$^{14}\mathrm{C}$ to $^{12}\mathrm{C}$. Cosmic rays produce neutrons in the upper atmosphere, Which
+react with nitrogen-14:
 
 $$^{14}\mathrm{N} + ^{1}\mathrm{n} \to ^{14}\mathrm{C} + ^{1}\mathrm{H}$$
 
-When an organism dies, this exchange stops and the $^{14}\mathrm{C}$ decays with a half-life of
-5730 years. The age of a sample is found from:
+When an organism dies, this exchange stops and the $^{14}\mathrm{C}$ decays with a half-life of 5730
+years. The age of a sample is found from:
 
 $$t = \frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆\ln\left(\frac{A_0}{A}\right) = \frac◆LB◆t_{1/2}◆RB◆◆LB◆\ln 2◆RB◆\ln\left(\frac{N_0}{N}\right)$$
 
@@ -458,10 +458,10 @@ Where $N_0/N$ is the ratio of current $^{14}\mathrm{C}$ content to that of a liv
 
 **Limitations:**
 
-- Effective range is approximately 50,000 years (beyond this, too few $^{14}\mathrm{C}$ atoms
-  remain for accurate measurement).
-- Assumes the atmospheric $^{14}\mathrm{C}$/$^{12}\mathrm{C}$ ratio has been constant.
-  Variations are corrected using calibration curves from tree-ring dating (dendrochronology).
+- Effective range is approximately 50,000 years (beyond this, too few $^{14}\mathrm{C}$ atoms remain
+  for accurate measurement).
+- Assumes the atmospheric $^{14}\mathrm{C}$/$^{12}\mathrm{C}$ ratio has been constant. Variations
+  are corrected using calibration curves from tree-ring dating (dendrochronology).
 - Contamination by modern carbon makes samples appear younger; contamination by old carbon makes
   them appear older.
 
@@ -469,8 +469,8 @@ Where $N_0/N$ is the ratio of current $^{14}\mathrm{C}$ content to that of a liv
 
 Radioactive isotopes are used both diagnostically and therapeutically:
 
-| Isotope               | Half-life   | Use                               | Reason                                                                         |
-| --------------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------------ |
+| Isotope             | Half-life   | Use                               | Reason                                                                         |
+| ------------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------------ |
 | $^{99m}\mathrm{Tc}$ | 6.0 hours   | Diagnostic imaging (gamma camera) | Emits gamma rays; short half-life limits patient dose                          |
 | $^{131}\mathrm{I}$  | 8.04 days   | Treatment of thyroid cancer       | Beta radiation destroys thyroid tissue; iodine selectively absorbed by thyroid |
 | $^{60}\mathrm{Co}$  | 5.27 years  | Radiotherapy (external beam)      | High-energy gamma rays for tumour destruction                                  |
@@ -505,15 +505,15 @@ Radiation hazards, while long-lived isotopes create lower but persistent contami
 ### Fukushima Daiichi (2011)
 
 The Fukushima disaster, triggered by a tsunami following the Tohoku earthquake, released significant
-Quantities of radioactive isotopes including $^{131}\mathrm{I}$$^{134}\mathrm{Cs}$
-($t_{1/2} = 2.06$ years), and $^{137}\mathrm{Cs}$.
+Quantities of radioactive isotopes including $^{131}\mathrm{I}$$^{134}\mathrm{Cs}$ ($t_{1/2} = 2.06$
+years), and $^{137}\mathrm{Cs}$.
 
 Key differences from Chernobyl:
 
 - Most radioactive material was released into the Pacific Ocean rather than the atmosphere, leading
   to rapid dilution of water-soluble isotopes.
-- $^{134}\mathrm{Cs}$ has a short half-life (2.06 years) and decayed rapidly;
-  $^{137}\mathrm{Cs}$ remains the primary long-term concern.
+- $^{134}\mathrm{Cs}$ has a short half-life (2.06 years) and decayed rapidly; $^{137}\mathrm{Cs}$
+  remains the primary long-term concern.
 - The disaster highlighted the importance of cooling systems for spent fuel and the vulnerability of
   nuclear plants to extreme natural events.
 
@@ -656,12 +656,18 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing atomic number (protons) with mass number (protons + neutrons).
 
-## Summary
+2. Forgetting that radioactive decay is random and spontaneous — it cannot be predicted for
+   individual nuclei.
 
-<!-- TODO: Add a summary for this topic -->
+3. Misunderstanding that half-life is constant regardless of the initial amount of substance.
 
-## Worked Examples
+4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
+   calculations.
 
-<!-- TODO: Add worked examples for this topic -->
+5. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
+
+6. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.

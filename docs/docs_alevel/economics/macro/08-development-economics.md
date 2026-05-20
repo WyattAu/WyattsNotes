@@ -1189,8 +1189,11 @@ approximately 20%.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Confusing equity (fairness) with efficiency in welfare economics discussions.
 
-## Summary
+2. Forgetting to distinguish between short-run and long-run effects in macroeconomic analysis.
 
-<!-- TODO: Add a summary for this topic -->
+3. Stating that 'demand falls' without specifying whether it is a contraction (movement along) or a
+   decrease (shift) of the demand curve.
+
+4. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.

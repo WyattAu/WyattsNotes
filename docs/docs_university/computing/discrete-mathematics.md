@@ -1770,8 +1770,59 @@ If you get this wrong, revise: Section 6.2 and Section 6.3.
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+2. Confusing the converse with the contrapositive — only the contrapositive is logically equivalent
+   to the original implication.
 
 ## Worked Examples
 
-<!-- TODO: Add worked examples for this topic -->
+### Example 1: Proof by Mathematical Induction
+
+**Problem.** Prove that $\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ for all $n \geq 1$.
+
+**Solution.** Base case ($n = 1$): LHS = 1, RHS = $\frac{1 \cdot 2 \cdot 3}{6} = 1$. ✓
+
+Inductive step: assume true for $n$. For $n+1$:
+
+$$\sum_{k=1}^{n+1} k^2 = \frac{n(n+1)(2n+1)}{6} + (n+1)^2 = \frac{n(n+1)(2n+1) + 6(n+1)^2}{6}$$
+
+$$= \frac{(n+1)(2n^2 + n + 6n + 6)}{6} = \frac{(n+1)(n+2)(2n+3)}{6}$$
+
+Which matches the formula with $n$ replaced by $n+1$. ✓
+
+$\blacksquare$
+
+### Example 2: Graph Colouring
+
+**Problem.** Find the chromatic number of the complete bipartite graph $K_{3,4}$ and a cycle $C_5$.
+
+**Solution.** $K_{3,4}$: bipartite graphs are 2-colourable. Assign colour 1 to the part of size 3
+and colour 2 to the part of size 4. $\chi(K_{3,4}) = 2$.
+
+$C_5$: odd cycle. Try 2 colours: impossible because odd length forces the first and last vertex to
+conflict. With 3 colours: colour vertices cyclically 1, 2, 3, 1, 2. $\chi(C_5) = 3$.
+
+$\blacksquare$
+
+## Summary
+
+- Logic: propositions, predicates, quantifiers ($\forall$, $\exists$); truth tables and inference
+  rules (modus ponens, resolution).
+- Set theory: unions, intersections, complements, power sets; cardinality of finite and infinite
+  sets (Cantor's diagonal argument).
+- Combinatorics: counting principles, permutations ($n!$), combinations ($\binom{n}{k}$),
+  inclusion-exclusion.
+- Graph theory: Euler/Hamilton paths, planarity (Euler's formula $V - E + F = 2$), graph colouring,
+  trees.
+- Proof techniques: direct, contrapositive, contradiction, induction (weak and strong); structural
+  induction for recursively defined objects.
+
+## Cross-References
+
+| Topic                             | Site        | Link                                                                                   |
+| --------------------------------- | ----------- | -------------------------------------------------------------------------------------- |
+| Theory of Computation             | WyattsNotes | [View](/docs/university/computing/theory-of-computation)                               |
+| Abstract Algebra                  | WyattsNotes | [View](/docs/university/mathematics/abstract-algebra)                                  |
+| Number Theory                     | WyattsNotes | [View](/docs/university/mathematics/number-theory)                                     |
+| Discrete Mathematics — MIT 6.042J | MIT OCW     | [View](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/) |

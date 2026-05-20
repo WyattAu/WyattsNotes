@@ -909,8 +909,13 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-<!-- TODO: Add common pitfalls for this topic -->
+1. Using the wrong equation from the data sheet — take time to read the full equation, including
+   conditions and variable definitions.
 
-## Worked Examples
+2. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
+   first.
 
-<!-- TODO: Add worked examples for this topic -->
+3. Confusing scalar and vector quantities — always check whether direction matters for the quantity
+   in question.
+
+4. Rounding intermediate answers too early, which compounds errors in multi-step calculations.

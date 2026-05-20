@@ -102,8 +102,7 @@ $$PV = nRT$$
 
 Where $R = 0.08206\;\mathrm{L\cdot atm/(mol\cdot K)$ or $R = 8.314\;\mathrm{J/(mol\cdot K)$.
 
-At STP ($273.15\;\mathrm{K$$1\;\mathrm{atm$), one mole of ideal gas occupies
-$22.4\;\mathrm{L$.
+At STP ($273.15\;\mathrm{K$$1\;\mathrm{atm$), one mole of ideal gas occupies $22.4\;\mathrm{L$.
 
 Dalton's law: $P_{\mathrm{total} = P_1 + P_2 + \cdots$And $P_i = \chi_i P_{\mathrm{total}$.
 
@@ -125,8 +124,8 @@ $$\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}$$
 
 $0.200\;\mathrm{g$ of $\mathrm{KClO_3$ decomposes:
 $2\mathrm{KClO_3(s) \to 2\mathrm{KCl(s) + 3\mathrm{O_2(g)$. Oxygen is collected over water at
-$25^\circ\mathrm{C$ and $0.980\;\mathrm{atm$. Vapour pressure of water = $23.8\;\mathrm{mmHg$.
-Find the volume of dry $\mathrm{O_2$.
+$25^\circ\mathrm{C$ and $0.980\;\mathrm{atm$. Vapour pressure of water = $23.8\;\mathrm{mmHg$. Find
+the volume of dry $\mathrm{O_2$.
 
 $$n_{\mathrm{O_2} = \frac{0.200}{122.55} \times \frac{3}{2} = 0.00245\;\mathrm{mol$$
 
@@ -183,8 +182,8 @@ For $a\mathrm{A + b\mathrm{B \rightleftharpoons c\mathrm{C + d\mathrm{D$:
 
 $$K_c = \frac{[\mathrm{C]^c[\mathrm{D]^d}{[\mathrm{A]^a[\mathrm{B]^b}, \qquad K_p = K_c(RT)^{\Delta n}$$
 
-Where $\Delta n = (\text{moles gaseous products) - (\text{moles gaseous reactants)$. Solids and
-pure liquids are omitted.
+Where $\Delta n = (\text{moles gaseous products) - (\text{moles gaseous reactants)$. Solids and pure
+liquids are omitted.
 
 The reaction quotient $Q$ uses current concentrations. If $Q < K$The reaction proceeds forward; if
 $Q > K$It proceeds in reverse.
@@ -201,11 +200,11 @@ ICE (Initial, Change, Equilibrium) tables calculate equilibrium concentrations s
 
 ### Worked Example
 
-For $\mathrm{H_2(g) + \mathrm{I_2(g) \rightleftharpoons 2\mathrm{HI(g)$$K_c = 50.5$. Starting
-with $1.00\;\mathrm{M$ each of $\mathrm{H_2$ and $\mathrm{I_2$:
+For $\mathrm{H_2(g) + \mathrm{I_2(g) \rightleftharpoons 2\mathrm{HI(g)$$K_c = 50.5$. Starting with
+$1.00\;\mathrm{M$ each of $\mathrm{H_2$ and $\mathrm{I_2$:
 
-| Species         | Initial | Change | Equilibrium |
-| --------------- | ------- | ------ | ----------- |
+| Species       | Initial | Change | Equilibrium |
+| ------------- | ------- | ------ | ----------- |
 | $\mathrm{H_2$ | 1.00    | $-x$   | $1.00 - x$  |
 | $\mathrm{I_2$ | 1.00    | $-x$   | $1.00 - x$  |
 | $\mathrm{HI$  | 0       | $+2x$  | $2x$        |
@@ -224,10 +223,10 @@ Orders $m$ and $n$ are determined experimentally, not from stoichiometric coeffi
 
 ### Integrated Rate Laws
 
-| Order | Integrated Law                                | Half-life              | Linear Plot               |
-| ----- | --------------------------------------------- | ---------------------- | ------------------------- |
+| Order | Integrated Law                            | Half-life            | Linear Plot             |
+| ----- | ----------------------------------------- | -------------------- | ----------------------- |
 | 0     | $[\mathrm{A] = -kt + [\mathrm{A]_0$       | $[\mathrm{A]_0/2k$   | $[\mathrm{A]$ vs $t$    |
-| 1     | $\ln[\mathrm{A] = -kt + \ln[\mathrm{A]_0$ | $0.693/k$              | $\ln[\mathrm{A]$ vs $t$ |
+| 1     | $\ln[\mathrm{A] = -kt + \ln[\mathrm{A]_0$ | $0.693/k$            | $\ln[\mathrm{A]$ vs $t$ |
 | 2     | $1/[\mathrm{A] = kt + 1/[\mathrm{A]_0$    | $1/(k[\mathrm{A]_0)$ | $1/[\mathrm{A]$ vs $t$  |
 
 ### Arrhenius Equation
@@ -245,8 +244,8 @@ equilibrium constant.
 
 ### Worked Example
 
-$k = 3.0 \times 10^{-3}\;\mathrm{s^{-1}$ at
-$300\;\mathrm{K$$k = 2.4 \times 10^{-2}\;\mathrm{s^{-1}$ at $350\;\mathrm{K$.
+$k = 3.0 \times 10^{-3}\;\mathrm{s^{-1}$ at $300\;\mathrm{K$$k = 2.4 \times 10^{-2}\;\mathrm{s^{-1}$
+at $350\;\mathrm{K$.
 
 $$\ln\frac{2.4 \times 10^{-2}}{3.0 \times 10^{-3}} = \frac{E_a}{8.314}\!\left(\frac{1}{300} - \frac{1}{350}\right)$$
 
@@ -328,9 +327,8 @@ A positive $E_{\mathrm{cell}^\circ$ indicates a spontaneous reaction ($\Delta G^
 
 ### Standard Reduction Potentials
 
-Measured relative to the standard hydrogen electrode (SHE), defined as
-$E^\circ = 0.00\;\mathrm{V$. More positive $E^\circ$ = stronger oxidising agent (greater tendency
-to be reduced).
+Measured relative to the standard hydrogen electrode (SHE), defined as $E^\circ = 0.00\;\mathrm{V$.
+More positive $E^\circ$ = stronger oxidising agent (greater tendency to be reduced).
 
 ### Nernst Equation
 
@@ -365,8 +363,8 @@ $$Q = \frac{[\mathrm{Zn^{2+}]}{[\mathrm{Cu^{2+}]} = \frac{0.10}{1.0} = 0.10$$
 
 $$E = 1.10 - \frac{0.0592}{2}\log(0.10) = 1.10 - (-0.0296) = 1.13\;\mathrm{V$$
 
-The lower product concentration ($\mathrm{Zn^{2+}$) drives the reaction further forward,
-increasing the cell potential.
+The lower product concentration ($\mathrm{Zn^{2+}$) drives the reaction further forward, increasing
+the cell potential.
 
 ### Electrolysis
 
@@ -374,8 +372,8 @@ In an electrolytic cell, electrical energy drives a nonspontaneous reaction. The
 the site of reduction, but it is the negative electrode (connected to the $-$ terminal of the power
 supply).
 
-Faraday's law: $1\;\mathrm{mol$ of electrons ($96485\;\mathrm{C$) reduces $1\;\mathrm{mol$ of
-a $+1$ cation, $0.5\;\mathrm{mol$ of a $+2$ cation, etc.
+Faraday's law: $1\;\mathrm{mol$ of electrons ($96485\;\mathrm{C$) reduces $1\;\mathrm{mol$ of a $+1$
+cation, $0.5\;\mathrm{mol$ of a $+2$ cation, etc.
 
 ## Common Pitfalls
 
@@ -400,8 +398,8 @@ a $+1$ cation, $0.5\;\mathrm{mol$ of a $+2$ cation, etc.
 11. **Forgetting to account for dilution** when mixing solutions before calculating concentrations
     in $K_{sp}$ or $Q$ problems.
 12. **Sign errors in electrochemistry.**
-    $E_{\mathrm{cell}^\circ = E_{\mathrm{cathode}^\circ - E_{\mathrm{anode}^\circ$. Subtract
-    the anode potential; do not add the more positive value.
+    $E_{\mathrm{cell}^\circ = E_{\mathrm{cathode}^\circ - E_{\mathrm{anode}^\circ$. Subtract the
+    anode potential; do not add the more positive value.
 13. **Reversing anode and cathode in electrolytic cells.** Oxidation still occurs at the anode, but
     the anode is connected to the positive terminal.
 14. **Using $n$ incorrectly in the Nernst equation.** $n$ is the moles of electrons transferred in
@@ -440,16 +438,16 @@ $$K_p = e^{-\Delta G^\circ/(RT)} = e^{-4812/(8.314 \times 298)} = e^{-1.943} = 0
 (c) At $\Delta G = 0$: $T = \Delta H^\circ / \Delta S^\circ = 57200 / 175.8 = 325.4\;\mathrm{K$.
 
 (d) Decreasing volume increases pressure. The system shifts toward fewer moles of gas (left, toward
-$\mathrm{N_2\mathrm{O_4$), decreasing $[\mathrm{NO_2]$. $K_p$ is unchanged (only temperature
-affects $K$).
+$\mathrm{N_2\mathrm{O_4$), decreasing $[\mathrm{NO_2]$. $K_p$ is unchanged (only temperature affects
+$K$).
 
 </details>
 
 <details>
 <summary>Question 2: Acid-base equilibrium and titration (FRQ)</summary>
 
-A $50.0\;\mathrm{mL$ sample of $0.100\;\mathrm{M$ $\mathrm{HCN$ ($K_a = 6.2 \times 10^{-10}$)
-is titrated with $0.100\;\mathrm{M$ $\mathrm{NaOH$.
+A $50.0\;\mathrm{mL$ sample of $0.100\;\mathrm{M$ $\mathrm{HCN$ ($K_a = 6.2 \times 10^{-10}$) is
+titrated with $0.100\;\mathrm{M$ $\mathrm{NaOH$.
 
 (a) Calculate the initial pH of the $\mathrm{HCN$ solution.
 
@@ -457,8 +455,8 @@ is titrated with $0.100\;\mathrm{M$ $\mathrm{NaOH$.
 
 (c) Calculate the pH at the equivalence point.
 
-(d) Which indicator would be most appropriate: phenolphthalein ($\mathrm{pK_a = 9.7$) or
-bromothymol blue ($\mathrm{pK_a = 7.0$)? Justify.
+(d) Which indicator would be most appropriate: phenolphthalein ($\mathrm{pK_a = 9.7$) or bromothymol
+blue ($\mathrm{pK_a = 7.0$)? Justify.
 
 </details>
 
@@ -473,9 +471,9 @@ $\mathrm{pH = -\log(7.87 \times 10^{-6}) = 5.10$.
 (b) At half-equivalence, $[\mathrm{HCN] = [\mathrm{CN^-]$. By Henderson-Hasselbalch:
 $\mathrm{pH = \mathrm{pK_a = -\log(6.2 \times 10^{-10}) = 9.21$.
 
-(c) At equivalence, all $\mathrm{HCN$ has been converted to $\mathrm{CN^-$. Moles of
-$\mathrm{CN^-$ = $0.100 \times 0.0500 = 0.00500\;\mathrm{mol$. Total volume =
-$100.0\;\mathrm{mL$. $[\mathrm{CN^-] = 0.0500\;\mathrm{M$.
+(c) At equivalence, all $\mathrm{HCN$ has been converted to $\mathrm{CN^-$. Moles of $\mathrm{CN^-$
+= $0.100 \times 0.0500 = 0.00500\;\mathrm{mol$. Total volume = $100.0\;\mathrm{mL$.
+$[\mathrm{CN^-] = 0.0500\;\mathrm{M$.
 
 $K_b = K_w / K_a = 1.0 \times 10^{-14} / 6.2 \times 10^{-10} = 1.61 \times 10^{-5}$.
 
@@ -483,9 +481,9 @@ $[\mathrm{OH^-] = \sqrt{K_b \cdot C_0} = \sqrt{(1.61 \times 10^{-5})(0.0500)} = 
 
 $\mathrm{pOH = 3.05$$\mathrm{pH = 14 - 3.05 = 10.95$.
 
-(d) Phenolphthalein ($\mathrm{pK_a = 9.7$) is appropriate because the equivalence point pH is
-10.95, which falls within the phenolphthalein transition range (approximately 8.2--10.0).
-Bromothymol blue transitions around pH 7, far from the equivalence point.
+(d) Phenolphthalein ($\mathrm{pK_a = 9.7$) is appropriate because the equivalence point pH is 10.95,
+which falls within the phenolphthalein transition range (approximately 8.2--10.0). Bromothymol blue
+transitions around pH 7, far from the equivalence point.
 
 </details>
 
@@ -513,8 +511,8 @@ $[\mathrm{Fe^{2+}] = 0.0010\;\mathrm{M$.
 <details>
 <summary>Answer</summary>
 
-(a) $\mathrm{Fe^{2+}$ has the less positive $E^\circ$So it is oxidised at the anode.
-$\mathrm{Ag^+$ is reduced at the cathode.
+(a) $\mathrm{Fe^{2+}$ has the less positive $E^\circ$So it is oxidised at the anode. $\mathrm{Ag^+$
+is reduced at the cathode.
 
 Oxidation (anode): $\mathrm{Fe^{2+}(aq) \to \mathrm{Fe^{3+}(aq) + e^-$
 
@@ -524,8 +522,7 @@ Net: $\mathrm{Fe^{2+}(aq) + \mathrm{Ag^+(aq) \to \mathrm{Fe^{3+}(aq) + \mathrm{A
 
 $E_{\mathrm{cell}^\circ = E_{\mathrm{cathode}^\circ - E_{\mathrm{anode}^\circ = 0.80 - 0.77 = 0.03\;\mathrm{V$
 
-(b)
-$\Delta G^\circ = -nFE^\circ = -(1)(96485)(0.03) = -2895\;\mathrm{J/mol = -2.9\;\mathrm{kJ/mol$
+(b) $\Delta G^\circ = -nFE^\circ = -(1)(96485)(0.03) = -2895\;\mathrm{J/mol = -2.9\;\mathrm{kJ/mol$
 
 (c) $K = e^{-\Delta G^\circ/(RT)} = e^{2895/(8.314 \times 298)} = e^{1.167} = 3.21$
 
@@ -542,8 +539,8 @@ $[\mathrm{Ag^+]$).
 <details>
 <summary>Question 4: Kinetics and mechanism (FRQ)</summary>
 
-The reaction $2\mathrm{NO(g) + \mathrm{Br_2(g) \to 2\mathrm{NOBr(g)$ has the experimental rate
-law $\mathrm{Rate = k[\mathrm{NO]^2[\mathrm{Br_2]$.
+The reaction $2\mathrm{NO(g) + \mathrm{Br_2(g) \to 2\mathrm{NOBr(g)$ has the experimental rate law
+$\mathrm{Rate = k[\mathrm{NO]^2[\mathrm{Br_2]$.
 
 (a) What is the overall order of the reaction?
 
@@ -580,8 +577,8 @@ This matches the experimental rate law with $k = k_2 K$.
 (c) The intermediate is $\mathrm{NOBr_2$ -- it is produced in step 1 and consumed in step 2, so it
 does not appear in the overall reaction.
 
-(d) Since the reaction is first order in $\mathrm{Br_2$Doubling $[\mathrm{Br_2]$ would double
-the rate (rate $\propto [\mathrm{Br_2]^1$).
+(d) Since the reaction is first order in $\mathrm{Br_2$Doubling $[\mathrm{Br_2]$ would double the
+rate (rate $\propto [\mathrm{Br_2]^1$).
 
 </details>
 
@@ -610,8 +607,8 @@ $\mathrm{pH > 7$.
 
 (A) is incorrect: catalysts do not change $K$.
 
-(B) is incorrect: $\mathrm{O_2$ has a bond order of 2. Its Lewis structure shows a double bond,
-and MO theory confirms bond order $= (8 - 4)/2 = 2$.
+(B) is incorrect: $\mathrm{O_2$ has a bond order of 2. Its Lewis structure shows a double bond, and
+MO theory confirms bond order $= (8 - 4)/2 = 2$.
 
 (C) is incorrect: $n$ in the Nernst equation is the moles of electrons transferred in the balanced
 redox equation.
@@ -620,8 +617,16 @@ redox equation.
 
 ## Summary
 
-<!-- TODO: Add a summary for this topic -->
+This topic covers the essential chemistry of ap chemistry review, including key reactions,
+underlying theories, and practical applications.
 
-## Worked Examples
+**Key concepts include:**
 
-<!-- TODO: Add worked examples for this topic -->
+- ionic, covalent, and metallic bonding
+- electronegativity and bond polarity
+- intermolecular forces
+- giant and simple molecular structures
+- VSEPR theory
+
+Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
+to unfamiliar contexts, particularly in calculation and practical questions.
