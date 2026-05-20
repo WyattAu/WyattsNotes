@@ -15,7 +15,7 @@ interface Subject {
 const subjects: Subject[] = [
   {
     name: 'IB Notes',
-    href: 'https://academics.wyattau.com/docs/ib/intro',
+    href: 'https://ib.wyattau.com/docs/ib/intro',
     tag: 'HL/SL',
   },
   {
@@ -23,7 +23,7 @@ const subjects: Subject[] = [
     href: 'https://alevel.wyattau.com/docs/alevel/intro',
     tag: 'A*',
   },
-  { name: 'DSE', href: 'https://academics.wyattau.com/docs/dse/intro', tag: 'HKDSE' },
+  { name: 'DSE', href: 'https://dse.wyattau.com/docs/dse/intro', tag: 'HKDSE' },
   {
     name: 'GCSE',
     href: 'https://qualifications.wyattau.com/docs/qualifications/gcse/intro',

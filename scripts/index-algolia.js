@@ -164,10 +164,7 @@ function extractContent(html, url, siteTags) {
     .trim();
 
   // Append extracted math expressions to content for searchability
-  const mathSuffix =
-    mathExpressions.length > 0
-      ? '\n\n' + mathExpressions.join(' ')
-      : '';
+  const mathSuffix = mathExpressions.length > 0 ? '\n\n' + mathExpressions.join(' ') : '';
 
   const hierarchy = { lvl0: '', lvl1: '', lvl2: '', lvl3: '', lvl4: '' };
   const headingRegex = /<h([1-5])[^>]*>([\s\S]*?)<\/h\1>/gi;

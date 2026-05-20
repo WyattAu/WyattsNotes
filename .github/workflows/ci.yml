@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main, staging]
   schedule:
-    - cron: '0 3 * * 0' # Weekly Sunday 03:00 UTC — full Algolia reindex
+    - cron: '0 3 * * 0' # Weekly Sunday 03:00 UTC
 
 jobs:
   validate:
@@ -76,10 +76,23 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Security audit skipped
-        run: |
-          echo "pnpm audit endpoint retired (HTTP 410). Security is validated by Dependabot."
-          echo "See: .github/dependabot.yml and https://github.com/WyattAu/WyattsNotes/security"
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run pnpm audit (high = fail)
+        run: pnpm audit --audit-level=high
 
   content-validation:
     name: Content Validation
@@ -137,29 +150,6 @@ jobs:
           args: --verbose --no-progress --config .lycheeignore 'docs/**/*.md' 'docs/**/*.mdx' '*.md'
           fail: true
           token: ${{ secrets.GITHUB_TOKEN }}
-
-  dependency-audit:
-    name: Dependency Audit
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Run pnpm audit (high = fail)
-        run: pnpm audit --audit-level=high
 
   lighthouse:
     name: Lighthouse CI
@@ -230,7 +220,9 @@ jobs:
     name: Update Algolia Search Index
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if:
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event.schedule !=
+      ''
     needs: [validate]
     steps:
       - name: Checkout repository
