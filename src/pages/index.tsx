@@ -2,8 +2,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Heading from '@theme/Heading';
 import Layout from '@theme/Layout';
-import fs from 'fs';
-import path from 'path';
 import React from 'react';
 import styles from './index.module.css';
 
@@ -265,76 +263,12 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-function collectMdFiles(dir: string, out: string[]): void {
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const full = path.join(dir, entry.name);
-
-    if (entry.isDirectory()) {
-      collectMdFiles(full, out);
-    } else if (entry.name.endsWith('.md')) {
-      out.push(full);
-    }
-  }
-}
-
-function formatLines(n: number): string {
-  if (n >= 1_000_000) {
-    return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`;
-  }
-
-  if (n >= 1_000) {
-    return `${Math.round(n / 1_000)}K`;
-  }
-
-  return String(n);
-}
-
-function computeStats(): { files: number; lines: string; subjects: number } {
-  const docsDir = path.join(__dirname, '..', '..', 'docs');
-
-  if (!fs.existsSync(docsDir)) {
-    return { files: 0, lines: '0', subjects: 0 };
-  }
-
-  let files = 0;
-  let lineCount = 0;
-  let subjects = 0;
-
-  for (const area of fs.readdirSync(docsDir, { withFileTypes: true })) {
-    if (!area.isDirectory() || !area.name.startsWith('docs_')) {
-      continue;
-    }
-
-    const areaPath = path.join(docsDir, area.name);
-    const seen = new Set<string>();
-
-    for (const subj of fs.readdirSync(areaPath, { withFileTypes: true })) {
-      if (!subj.isDirectory()) {
-        continue;
-      }
-
-      const key = subj.name.toLowerCase();
-
-      if (!seen.has(key)) {
-        seen.add(key);
-        subjects++;
-      }
-
-      const mdFiles: string[] = [];
-
-      collectMdFiles(path.join(areaPath, subj.name), mdFiles);
-      files += mdFiles.length;
-
-      for (const f of mdFiles) {
-        lineCount += fs.readFileSync(f, 'utf-8').split('\n').length;
-      }
-    }
-  }
-
-  return { files, lines: formatLines(lineCount), subjects };
-}
-
-const { files: totalFiles, lines: totalLines, subjects: totalSubjects } = computeStats();
+// TODO(TD-029): Replace with build-time computation via Docusaurus plugin
+// to auto-update on content changes. fs/path cannot be used in client bundle
+// (webpack 5 limitation). Values must be updated manually when docs change.
+const totalFiles = 1478;
+const totalLines = '751K';
+const totalSubjects = 30;
 
 export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();
