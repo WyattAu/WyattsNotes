@@ -1,38 +1,39 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-05-18. Phases 0-5.5 complete. DNS setup blocked on token permissions.
-> Phase 5.1 (search), 5.6 (SEO) partially complete. Phase 5.2/5.3 deferred (content-authoring).
+> Updated 2026-05-20. Phases 0-5.5 complete. Full audit pass: CI green, all 10 sites live (HTTP
+> 200). Phase 5.1 (search), 5.6 (SEO) partially complete. Phase 5.2/5.3 deferred
+> (content-authoring).
 
 ---
 
 ## Current State
 
-| Metric              | Value                                                                 |
-| ------------------- | --------------------------------------------------------------------- |
-| Total content files | 1,211 (.md)                                                           |
-| Total content lines | ~864K                                                                 |
-| Subjects            | 28                                                                    |
-| Sub-sites           | 11 (7 content, 2 redirect, 2 not deployed)                            |
-| CI/CD workflows     | 14 (1 CI, 9 deploy, 1 test-deploy, 1 Algolia, 1 Lighthouse, 1 uptime) |
-| Test suite          | 69 tests (7 files), 7 E2E tests (2 files)                             |
-| Algolia indices     | 8                                                                     |
-| Hosting             | Cloudflare Pages (wrangler)                                           |
-| License             | AGPLv3                                                                |
-| Stack               | Docusaurus 3.10, React 19, TypeScript 5.9, Node 22, pnpm 10           |
+| Metric              | Value                                                       |
+| ------------------- | ----------------------------------------------------------- |
+| Total content files | 1,478 (.md)                                                 |
+| Total content lines | ~862K+                                                      |
+| Subjects            | 28+                                                         |
+| Sub-sites           | 11 (8 content, 1 redirect, 2 DNS pending)                   |
+| CI/CD workflows     | 13 (1 CI, 9 deploy, 1 Algolia, 1 Lighthouse, 1 uptime)      |
+| Test suite          | 69 tests (7 files), 7 E2E tests (2 files)                   |
+| Algolia indices     | 8                                                           |
+| Hosting             | Cloudflare Pages (wrangler)                                 |
+| License             | AGPLv3                                                      |
+| Stack               | Docusaurus 3.10, React 19, TypeScript 5.9, Node 22, pnpm 10 |
 
 ### Content Distribution
 
 | Directory              | Files | Lines | Sub-site(s)                   |
 | ---------------------- | ----- | ----- | ----------------------------- |
-| `docs_alevel/`         | 286   | 174K  | A-Level MP + A-Level Sciences |
-| `docs_ib/`             | 211   | 143K  | IB                            |
-| `docs_dse/`            | 141   | 101K  | DSE                           |
-| `docs_qualifications/` | 138   | 89K   | Qualifications                |
-| `docs_languages/`      | 125   | 100K  | Programming (languages)       |
-| `docs_cpp/`            | 122   | 84K   | Programming (C++)             |
-| `docs_infrastructure/` | 91    | 79K   | Main                          |
-| `docs_tools/`          | 63    | 38K   | Main                          |
-| `docs_university/`     | 34    | 56K   | University                    |
+| `docs_alevel/`         | 311   | ~174K | A-Level MP + A-Level Sciences |
+| `docs_ib/`             | 293   | ~143K | IB                            |
+| `docs_dse/`            | 273   | ~101K | DSE                           |
+| `docs_qualifications/` | 138   | ~89K  | Qualifications                |
+| `docs_languages/`      | 125   | ~100K | Programming (languages)       |
+| `docs_cpp/`            | 122   | ~84K  | Programming (C++)             |
+| `docs_infrastructure/` | 91    | ~79K  | Main                          |
+| `docs_tools/`          | 63    | ~38K  | Main                          |
+| `docs_university/`     | 62    | ~56K  | University                    |
 
 ### Quality Metrics (post-audit)
 
@@ -41,15 +42,33 @@
 | Tests (69/69)               | Pass   |
 | Typecheck (0 errors)        | Pass   |
 | Lint (0 errors, 0 warnings) | Pass   |
-| Links (2,184 verified)      | Pass   |
-| Descriptions (1,211/1,211)  | Pass   |
-| Handwave phrases (0)        | Pass   |
+| Links (3,110 verified)      | Pass   |
+| Descriptions (1,478/1,478)  | Pass   |
+| Handwave phrases (49 info)  | Info   |
 | Algolia coverage (100%)     | Pass   |
 | MDX validation (0 errors)   | Pass   |
+| CI pipeline (all jobs)      | Pass   |
+| All 10 sites (HTTP 200)     | Pass   |
+| 404 page (correct links)    | Pass   |
+
+### Live Site Health (2026-05-20)
+
+| Site                             | Status | Load (s) | Size (B) | Nav | Search | Notes              |
+| -------------------------------- | ------ | -------- | -------- | --- | ------ | ------------------ |
+| wyattsnotes.wyattau.com          | 200    | 0.103    | 30,484   | OK  | OK     | Landing/main       |
+| ib.wyattau.com                   | 200    | 0.132    | 30,843   | OK  | OK     | DNS pending        |
+| dse.wyattau.com                  | 200    | 0.115    | 30,843   | OK  | OK     | DNS pending        |
+| alevel.wyattau.com               | 200    | 0.105    | 27,065   | OK  | OK     | Redirect           |
+| qualifications.wyattau.com       | 200    | 0.205    | 30,959   | OK  | OK     |                    |
+| programming.wyattau.com          | 200    | 0.988    | 30,440   | OK  | OK     | Slow (cold start?) |
+| university.wyattau.com           | 200    | 0.105    | 30,657   | OK  | OK     |                    |
+| academics.wyattau.com            | 200    | 0.136    | 686      | --  | --     | Dead redirect      |
+| alevel-maths-physics.wyattau.com | 200    | 0.108    | 31,312   | OK  | OK     |                    |
+| alevel-sciences.wyattau.com      | 200    | 0.453    | 31,278   | OK  | OK     |                    |
 
 ---
 
-## Completed (This Audit -- 6 commits)
+## Completed (This Audit -- 8 commits)
 
 ### Infrastructure Fixes
 
@@ -58,6 +77,17 @@
 - Fixed CI/CD: timeout-minutes, lighthouse workflow names, IB/DSE lighthouse jobs, ALGOLIA_APP_ID
   secret
 - Removed duplicate `continue-on-error: true` restoration commit
+
+### CI/CD Fixes (2026-05-20)
+
+- Restored `security` job in ci.yml to actually run `pnpm audit --audit-level=high` (was a no-op)
+- Removed dead `dependency-audit` job (duplicate of `security`, referenced by `needs:` in downstream
+  jobs)
+- Fixed `algolia-index` job schedule gate: now allows `github.event.schedule != ''` for weekly
+  reindex
+- Fixed `deploy-main.yml` cache key: `docusaurus-unknown` changed to `docusaurus-main`
+- All CI jobs now pass green: Security Audit (26s), Unit Tests (28s), Lint/Typecheck/Build (3m),
+  Content Validation (22s), Algolia Index (30s)
 
 ### Build Fixes
 
@@ -76,6 +106,9 @@
 ### Content Fixes
 
 - Fixed landing page: 2 broken links, 4 missing entries, stale file/line/subject counts
+- Fixed 404 page: 2 broken links pointing to `academics.wyattau.com` instead of `ib.wyattau.com` and
+  `dse.wyattau.com`
+- Fixed `scripts/index-algolia.js` prettier formatting error on ternary expression (line 167)
 - Fixed 8 lint warnings, 7 emoji violations, Python script quality (file handle leaks, dead code)
 - Overrode 13 high-severity transitive vulnerabilities via pnpm overrides
 
@@ -116,7 +149,8 @@
 ### 0.6 Fix Uptime Monitor
 
 - [x] Added IB, DSE, A-Level MP, A-Level Sciences, Academics to uptime monitor (10 sites total)
-- [ ] Add `alevel-maths-physics.wyattau.com` and `alevel-sciences.wyattau.com` once DNS is configured
+- [ ] Add `alevel-maths-physics.wyattau.com` and `alevel-sciences.wyattau.com` once DNS is
+      configured
 
 ---
 
@@ -185,8 +219,10 @@
 
 ### 3.6 Math Content Quality (2026-05-18)
 
-- [x] Removed stray primes from 108 files: `\mathbf{{'}E{}'}` → `\mathbf{E}`, `\mathbb{{'}Z{}'}` → `\mathbb{Z}`
-- [x] Removed trailing empty groups from 198 files: `\mathrm{word{}}` → `\mathrm{word}`, `\lt{}` → `\lt`
+- [x] Removed stray primes from 108 files: `\mathbf{{'}E{}'}` → `\mathbf{E}`, `\mathbb{{'}Z{}'}` →
+      `\mathbb{Z}`
+- [x] Removed trailing empty groups from 198 files: `\mathrm{word{}}` → `\mathrm{word}`, `\lt{}` →
+      `\lt`
 - [x] 42569 total fixes across 337 files (some files had both patterns)
 - [x] All fixes constrained to `$...$` and `$$...$$` math delimiters only
 
@@ -344,43 +380,51 @@ Deferred — content-authoring work, not infrastructure.
 
 ## Technical Debt Register
 
-| ID     | Description                                        | Priority | Effort  | Phase | Status  |
-| ------ | -------------------------------------------------- | -------- | ------- | ----- | ------- |
-| TD-001 | CI build `continue-on-error: true` masks failures  | Critical | Low     | 0     | DONE    |
-| TD-002 | Duplicate `pnpm audit` jobs (one soft, one hard)   | High     | Low     | 0     | DONE    |
-| TD-003 | Two Algolia indexing scripts doing the same thing  | Medium   | Low     | 0     | DONE    |
-| TD-004 | `qualifications` config not using shared factory   | Medium   | Medium  | 2     | DONE    |
-| TD-005 | Orphaned `sidebar_alevel.ts`                       | Low      | Trivial | 1     | DONE    |
-| TD-006 | Academics redirect uses 64GB swap for meta-refresh | Medium   | Low     | 1     | DONE    |
-| TD-007 | Description script can't parse multiline YAML      | Low      | Low     | 3     | DONE    |
-| TD-008 | Inconsistent deploy workflow memory/swap/timeout   | Low      | Low     | 2     | DONE    |
-| TD-009 | E2E tests only cover main site (7 tests, 5 sites)  | Medium   | Medium  | 4     | OPEN    |
-| TD-010 | `sidebar_alevel.ts` orphaned (dup of TD-005)       | Low      | Trivial | 1     | DONE    |
-| TD-011 | Stale A-Level subjects (EN/Geog/Hist/Psych)        | Low      | High    | 3     | WONTFIX |
-| TD-012 | Build times 2-10 min per sub-site                  | Medium   | High    | 4     | WIP     |
-| TD-013 | 59 orphaned `</details>` from broken flatten       | Critical | Low     | 0     | DONE    |
-| TD-014 | 21 multiline DesmosGraph JSX (acorn errors)        | Critical | Low     | 0     | DONE    |
-| TD-015 | Docusaurus build cache disabled in CI              | Medium   | Low     | 4     | DONE    |
-| TD-016 | `<details>` tags crossing `:::` admonition boundaries break MDX | Critical | Medium | 0     | DONE    |
-| TD-017 | Prettier re-wraps DesmosGraph JSX over 100 chars (conflicts with acorn) | Medium | Low | 0 | DONE |
-| TD-018 | Build heap sizing needs per-config calibration (not just file count) | Medium | Low | 4 | DONE |
-| TD-019 | DSE `waves-and-optics.md` nuclear `<details>` strip (flatten script damage) | High | Low | 0 | DONE |
-| TD-020 | Multiline DesmosGraph in qualifications, IB, DSE maths (acorn errors) | High | Low | 0 | DONE |
+| ID     | Description                                                                    | Priority | Effort  | Phase | Status  |
+| ------ | ------------------------------------------------------------------------------ | -------- | ------- | ----- | ------- |
+| TD-001 | CI build `continue-on-error: true` masks failures                              | Critical | Low     | 0     | DONE    |
+| TD-002 | Duplicate `pnpm audit` jobs (one soft, one hard)                               | High     | Low     | 0     | DONE    |
+| TD-003 | Two Algolia indexing scripts doing the same thing                              | Medium   | Low     | 0     | DONE    |
+| TD-004 | `qualifications` config not using shared factory                               | Medium   | Medium  | 2     | DONE    |
+| TD-005 | Orphaned `sidebar_alevel.ts`                                                   | Low      | Trivial | 1     | DONE    |
+| TD-006 | Academics redirect uses 64GB swap for meta-refresh                             | Medium   | Low     | 1     | DONE    |
+| TD-007 | Description script can't parse multiline YAML                                  | Low      | Low     | 3     | DONE    |
+| TD-008 | Inconsistent deploy workflow memory/swap/timeout                               | Low      | Low     | 2     | DONE    |
+| TD-009 | E2E tests only cover main site (7 tests, 5 sites)                              | Medium   | Medium  | 4     | OPEN    |
+| TD-010 | `sidebar_alevel.ts` orphaned (dup of TD-005)                                   | Low      | Trivial | 1     | DONE    |
+| TD-011 | Stale A-Level subjects (EN/Geog/Hist/Psych)                                    | Low      | High    | 3     | WONTFIX |
+| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | High    | 4     | WIP     |
+| TD-013 | 59 orphaned `</details>` from broken flatten                                   | Critical | Low     | 0     | DONE    |
+| TD-014 | 21 multiline DesmosGraph JSX (acorn errors)                                    | Critical | Low     | 0     | DONE    |
+| TD-015 | Docusaurus build cache disabled in CI                                          | Medium   | Low     | 4     | DONE    |
+| TD-016 | `<details>` tags crossing `:::` admonition boundaries break MDX                | Critical | Medium  | 0     | DONE    |
+| TD-017 | Prettier re-wraps DesmosGraph JSX over 100 chars (conflicts with acorn)        | Medium   | Low     | 0     | DONE    |
+| TD-018 | Build heap sizing needs per-config calibration (not just file count)           | Medium   | Low     | 4     | DONE    |
+| TD-019 | DSE `waves-and-optics.md` nuclear `<details>` strip (flatten script damage)    | High     | Low     | 0     | DONE    |
+| TD-020 | Multiline DesmosGraph in qualifications, IB, DSE maths (acorn errors)          | High     | Low     | 0     | DONE    |
+| TD-021 | Footer Scottish Highers URL mismatch (`/scottish-highers` vs `/highers/intro`) | High     | Trivial | 5     | OPEN    |
+| TD-022 | JSON-LD hardcoded to main site for all sub-sites (`Root.tsx`)                  | Medium   | Medium  | 5     | OPEN    |
+| TD-023 | No Google/Bing webmaster verification tags                                     | Medium   | Trivial | 5     | OPEN    |
+| TD-024 | No accessibility audit (WCAG compliance, keyboard nav, screen reader)          | High     | Medium  | 4     | OPEN    |
+| TD-025 | programming.wyattau.com slow load (0.988s vs ~0.1s others)                     | Low      | Low     | 4     | OPEN    |
+| TD-026 | `onBrokenLinks: 'warn'` should be `'throw'` for CI gate                        | Medium   | Trivial | 2     | OPEN    |
+| TD-027 | Landing page stats hardcoded, drift on content changes                         | Low      | Low     | 5     | OPEN    |
+| TD-028 | 887 unstaged doc files with prettier reformatting changes                      | Low      | Medium  | --    | OPEN    |
 
 ---
 
 ## Appendix A: Site Inventory
 
-| Site           | Domain                           | Config                                    | Docs                    | Build Size  | Status                    |
-| -------------- | -------------------------------- | ----------------------------------------- | ----------------------- | ----------- | ------------------------- |
-| Main           | wyattsnotes.wyattau.com          | docusaurus.config.ts                      | infrastructure, tools   | ~115K lines | Live                      |
-| A-Level        | alevel.wyattau.com               | docusaurus.alevel.config.ts               | redirect                | Minimal     | Live (redirect)           |
-| A-Level MP     | alevel-maths-physics.wyattau.com | docusaurus.alevel-maths-physics.config.ts | alevel (MP split)       | ~174K lines | Live                      |
-| A-Level Sci    | alevel-sciences.wyattau.com      | docusaurus.alevel-sciences.config.ts      | alevel (sciences split) | ~174K lines | Live                      |
-| Qualifications | qualifications.wyattau.com       | docusaurus.qualifications.config.ts       | gcse, ap, highers, ilc  | ~89K lines  | Live                      |
-| Programming    | programming.wyattau.com          | docusaurus.programming.config.ts          | cpp, languages          | ~183K lines | Live                      |
-| University     | university.wyattau.com           | docusaurus.university.config.ts           | university              | ~56K lines  | Live                      |
-| Academics      | academics.wyattau.com            | docusaurus.academics.config.ts            | redirect to ib          | Minimal     | Live (dead redirect)      |
+| Site           | Domain                           | Config                                    | Docs                    | Build Size  | Status                          |
+| -------------- | -------------------------------- | ----------------------------------------- | ----------------------- | ----------- | ------------------------------- |
+| Main           | wyattsnotes.wyattau.com          | docusaurus.config.ts                      | infrastructure, tools   | ~115K lines | Live                            |
+| A-Level        | alevel.wyattau.com               | docusaurus.alevel.config.ts               | redirect                | Minimal     | Live (redirect)                 |
+| A-Level MP     | alevel-maths-physics.wyattau.com | docusaurus.alevel-maths-physics.config.ts | alevel (MP split)       | ~174K lines | Live                            |
+| A-Level Sci    | alevel-sciences.wyattau.com      | docusaurus.alevel-sciences.config.ts      | alevel (sciences split) | ~174K lines | Live                            |
+| Qualifications | qualifications.wyattau.com       | docusaurus.qualifications.config.ts       | gcse, ap, highers, ilc  | ~89K lines  | Live                            |
+| Programming    | programming.wyattau.com          | docusaurus.programming.config.ts          | cpp, languages          | ~183K lines | Live                            |
+| University     | university.wyattau.com           | docusaurus.university.config.ts           | university              | ~56K lines  | Live                            |
+| Academics      | academics.wyattau.com            | docusaurus.academics.config.ts            | redirect to ib          | Minimal     | Live (dead redirect)            |
 | IB             | ib.wyattau.com                   | docusaurus.ib.config.ts                   | ib                      | ~143K lines | Live (build green, DNS pending) |
 | DSE            | dse.wyattau.com                  | docusaurus.dse.config.ts                  | dse                     | ~101K lines | Live (build green, DNS pending) |
 
