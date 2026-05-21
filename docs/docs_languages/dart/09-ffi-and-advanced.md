@@ -1742,3 +1742,77 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+### Example 1: FFI Binding to C strlen
+
+**Problem.** Use `dart:ffi` to call the C standard library `strlen` function from Dart.
+
+**Solution.**
+
+```dart
+import 'dart:ffi';
+import 'package:ffi/ffi.dart';
+
+typedef NativeStrlen = Uint32 Function(Pointer<Utf8> s);
+typedef DartStrlen = int Function(Pointer<Utf8> s);
+
+int myStrlen(String s) {
+  final dylib = DynamicLibrary.process();
+  final strlenPtr = dylib.lookup<NativeFunction<NativeStrlen>>('strlen');
+  final strlen = strlenPtr.asFunction<DartStrlen>();
+  final cstr = s.toNativeUtf8();
+  try {
+    return strlen(cstr);
+  } finally {
+    calloc.free(cstr);
+  }
+}
+```
+
+Key points: `lookup` finds the symbol in the dynamic library. `asFunction` converts the native
+function pointer to a Dart callable. Memory allocated with `toNativeUtf8()` must be freed manually.
+
+$\blacksquare$
+
+### Example 2: Null Safety with Late Initialization
+
+**Problem.** A controller is initialised asynchronously. Show how to use `late` safely with a
+fallback.
+
+**Solution.**
+
+```dart
+late final Database db;
+
+Future<void> init() async {
+  db = await Database.connect('path.db');
+}
+
+Future<List<User>> getUsers() async {
+  if (!db.isOpen) {
+    await init();
+  }
+  return db.query('SELECT * FROM users');
+}
+```
+
+The `late` keyword tells the compiler that `db` will be initialised before first use. The guard
+check in `getUsers` ensures the database is connected before querying. Using `late final` enforces
+single assignment.
+
+$\blacksquare$
+
+## Summary
+
+- Dart FFI (`dart:ffi`) bridges Dart code to C libraries: `DynamicLibrary.lookup` finds symbols,
+  `asFunction` wraps them.
+- Native types map to Dart types: `Int32` $\to$ `int`, `Double` $\to$ `double`, `Pointer<T>` $\to$
+  `Pointer<T>`.
+- Null safety is sound: `late` defers initialisation, `?` marks nullable types, `!` asserts
+  non-null.
+- Isolates provide concurrency without shared memory; `Compute` simplifies single-use isolate
+  spawning.
+- `dart:ffi` requires manual memory management: always `free` allocated native memory in a `finally`
+  block.

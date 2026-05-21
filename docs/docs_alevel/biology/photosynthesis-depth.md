@@ -2321,3 +2321,51 @@ in shortest supply. At any given moment, only one factor limits the rate of phot
 
 4. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
    incorrectly.
+
+## Worked Examples
+
+### Example 1: Calvin Cycle ATP/NADPH Budget
+
+**Problem.** A plant fixes $6\ \mathrm{CO_2}$ molecules in the Calvin cycle. Calculate the total
+number of ATP and NADPH molecules consumed, and the net product.
+
+**Solution.** Each $\mathrm{CO_2}$ requires 3 ATP and 2 NADPH.
+
+For 6 $\mathrm{CO_2}$: ATP $= 6 \times 3 = 18$. NADPH $= 6 \times 2 = 12$.
+
+Net product: 2 molecules of triose phosphate (G3P), which combine to form 1 molecule of glucose
+($\mathrm{C_6H_{12}O_6}$).
+
+$$6\mathrm{CO_2} + 18\ \mathrm{ATP} + 12\ \mathrm{NADPH} + 12\ \mathrm{H_2O} \to \mathrm{C_6H_{12}O_6} + 18\ \mathrm{ADP} + 18\ P_i + 12\ \mathrm{NADP^+}$$
+
+$\blacksquare$
+
+### Example 2: Inverse Square Law and Light Intensity
+
+**Problem.** A pondweed is placed $10\ \mathrm{cm}$ from a lamp and produces $42\ \mathrm{mm^3}$ of
+$\mathrm{O_2}$ per minute. Predict the rate at $30\ \mathrm{cm}$.
+
+**Solution.** Light intensity follows the inverse square law: $I \propto \frac{1}{d^2}$.
+
+At $d = 10$: relative intensity $= \frac{1}{100} = 0.01$.
+
+At $d = 30$: relative intensity $= \frac{1}{900}$.
+
+Ratio: $\frac{I_{30}}{I_{10}} = \frac{100}{900} = \frac{1}{9}$.
+
+Predicted rate at $30\ \mathrm{cm}$: $42 \times \frac{1}{9} \approx 4.7\ \mathrm{mm^3\ min^{-1}}$.
+
+$\blacksquare$
+
+## Summary
+
+- Photosynthesis converts light energy to chemical energy: light-dependent reactions (thylakoid)
+  produce ATP and NADPH; the Calvin cycle (stroma) fixes $\mathrm{CO_2}$.
+- The Calvin cycle requires 3 ATP and 2 NADPH per $\mathrm{CO_2}$ fixed; 6 turns produce one
+  glucose.
+- Limiting factors: light intensity, $\mathrm{CO_2}$ concentration, and temperature each limit the
+  rate in turn.
+- $\mathrm{C_4}$ plants concentrate $\mathrm{CO_2}$ spatially; CAM plants concentrate it temporally
+  to reduce photorespiration.
+- Chloroplast structure (grana, thylakoids, stroma) is adapted to maximise light absorption and
+  enzyme concentration.

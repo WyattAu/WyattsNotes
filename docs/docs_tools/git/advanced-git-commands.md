@@ -2278,3 +2278,74 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+### Example 1: Interactive Rebase to Squash Commits
+
+**Problem.** Squash the last 4 commits into a single commit with a combined message.
+
+**Solution.**
+
+```bash
+# Start interactive rebase for the last 4 commits
+git rebase -i HEAD~4
+```
+
+In the editor, change the last three `pick` lines to `squash`:
+
+```
+pick abc1234 First commit message
+squash def5678 Second commit message
+squash ghi9012 Third commit message
+squash jkl3456 Fourth commit message
+```
+
+Git opens a second editor to combine the commit messages. Save the combined message.
+
+```bash
+# If already pushed, force-push to update the remote
+git push --force-with-lease origin main
+```
+
+`--force-with-lease` is safer than `--force` because it rejects the push if someone else has pushed
+to the branch since your last pull.
+
+$\blacksquare$
+
+### Example 2: Cherry-Pick a Hotfix
+
+**Problem.** A critical bug fix was committed on the `develop` branch (commit `a1b2c3d`).
+Cherry-pick it into `main` without merging the entire branch.
+
+**Solution.**
+
+```bash
+# Switch to main
+git checkout main
+
+# Cherry-pick the specific commit
+git cherry-pick a1b2c3d
+
+# If there are conflicts, resolve them and continue
+git add .
+git cherry-pick --continue
+
+# Push the hotfix
+git push origin main
+```
+
+Cherry-pick creates a new commit on `main` with the same changes as `a1b2c3d` but a different commit
+hash. The original commit on `develop` is unaffected.
+
+$\blacksquare$
+
+## Summary
+
+- `git rebase -i` rewrites history: reorder, squash, edit, or drop commits. Avoid on shared
+  branches.
+- `git cherry-pick` applies a specific commit from one branch onto another; creates a new commit
+  hash.
+- `git replace` substitutes one object for another without rewriting history; useful for grafting.
+- `git bisect` uses binary search to find the commit that introduced a bug; $O(\log n)$ steps.
+- `git stash` temporarily shelves working directory changes; `git stash pop` restores them.

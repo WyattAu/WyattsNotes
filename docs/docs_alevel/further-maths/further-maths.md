@@ -113,3 +113,18 @@ Follow the sidebar order. Each topic page contains:
 
 4. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
    cannot be zero).
+
+### Study Strategy
+
+Master the pure core first — complex numbers and matrices are prerequisites for the applied modules.
+Practise full exam papers under timed conditions; Further Maths questions require chaining 3--4
+techniques in a single problem. Focus on proof questions: they carry high marks and require you to
+justify every step. Use the Further Pure modules as the backbone, then branch into Statistics or
+Mechanics based on your module route.
+
+### Key Formulae
+
+| Topic     | Formula                                                               |
+| --------- | --------------------------------------------------------------------- |
+| De Moivre | $(\\cos\\theta + i\\sin\\theta)^n = \\cos n\\theta + i\\sin n\\theta$ |
+| Maclaurin | $f(x) = f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + \\ldots$              |

@@ -1,1 +1,4 @@
-{ "label": "06 Stress Testing", "position": 1 }
+{
+  "label": "Stress Testing",
+  "position": 1
+}

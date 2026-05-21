@@ -26,7 +26,7 @@ and exam-style practice problems.
 IB subjects are assessed through a combination of external examinations and internal assessment
 (IA):
 
-- **External exams** — typically 2–3 papers per subject, taken in May or November
+- **External exams** — 2–3 papers per subject, taken in May or November
 - **Internal Assessment (IA)** — an individual exploration or project, marked internally and
   moderated by the IB
 - **Total marks** — each subject is graded 1–7, with 24–45 total points for the diploma (plus TOK
@@ -54,8 +54,8 @@ authoritative syllabus content.
    required.
 3. **Practise with past papers** — the IB publishes past examination papers ( Papers 1, 2, 3) with
    mark schemes. Use them under timed conditions.
-4. **Plan your IA early** — the Internal Assessment is a significant component (typically 20–25% of
-   the final grade). Choose a topic that genuinely interests you and start early.
+4. **Plan your IA early** — the Internal Assessment is a significant component (20–25% of the final
+   grade). Choose a topic that genuinely interests you and start early.
 5. **Build a revision timetable** — the IB is examined simultaneously across all subjects. Balance
    your revision to avoid neglecting any one subject.
 

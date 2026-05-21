@@ -2094,8 +2094,7 @@ Abel's theorem.
 - **Misusing the $\varepsilon$-$\delta$ definition.** The order of quantifiers matters: "for every
   $\varepsilon > 0$, there exists $\delta > 0$" — $\delta$ depends on $\varepsilon$ and the point,
   not the other way around. **Fix:** In proofs, choose $\delta$ after $\varepsilon$ is given;
-  $\delta$ typically depends on both $\varepsilon$ and $x_0$ (unless the function is uniformly
-  continuous).
+  $\delta$ depends on both $\varepsilon$ and $x_0$ (unless the function is uniformly continuous).
 - **Confusing pointwise and uniform convergence.** Pointwise: $\delta$ may depend on $x$. Uniform:
   $\delta$ works for all $x$ simultaneously. **Fix:** Uniform convergence implies pointwise
   convergence but not conversely; the Weierstrass M-test gives a sufficient condition for uniform

@@ -58,7 +58,7 @@ distributions, and hypothesis testing — the foundations of data-driven decisio
 - **Null and alternative hypotheses** — $H_0$ (no effect) vs. $H_1$ (effect exists); one-tailed vs.
   two-tailed
 - **Test statistics** — calculating from sample data and comparing to critical values
-- **Significance level** — typically $\alpha = 0.05$ or $0.01$; the probability of a Type I error
+- **Significance level** — $\alpha = 0.05$ or $0.01$; the probability of a Type I error
 - **$p$-values** — $P(\text{observing this or more extreme} \mid H_0)$; reject $H_0$ if $p$-value
   $< \alpha$
 - **Critical regions** — the set of values that lead to rejecting $H_0$

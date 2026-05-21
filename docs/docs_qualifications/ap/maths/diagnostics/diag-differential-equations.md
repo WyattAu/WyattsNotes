@@ -3,8 +3,13 @@ title: 'Differential Equations -- Diagnostic Tests'
 description:
   "Diagnostic tests targeting the hardest AP Calculus differential equation questions including
   separable equations, Euler's method, slope fields, logistic"
+date: 2026-04-14
+tags:
+  - ap
+  - ap-maths
+categories:
+  - ap-maths
 slug: diag-differential-equations
-hide_table_of_contents: true
 ---
 
 # Differential Equations — Diagnostic Tests
@@ -70,26 +75,26 @@ roughly quarters the error for Euler's method. Does your result confirm this? If
 (a) With $\Delta x = 0.5$Starting at $(0, 1)$:
 
 | Step | $x$ | $y$  | $y' = x + y$ | $y_{\text{new} = y + 0.5 \cdot y'$ |
-| ---- | --- | ---- | ------------ | ------------------------------------ |
-| 0    | 0   | 1    | 1            | 1.5                                  |
-| 1    | 0.5 | 1.5  | 2.0          | 2.5                                  |
-| 2    | 1.0 | 2.5  | 3.5          | 4.25                                 |
-| 3    | 1.5 | 4.25 | 5.75         | 7.125                                |
+| ---- | --- | ---- | ------------ | ---------------------------------- |
+| 0    | 0   | 1    | 1            | 1.5                                |
+| 1    | 0.5 | 1.5  | 2.0          | 2.5                                |
+| 2    | 1.0 | 2.5  | 3.5          | 4.25                               |
+| 3    | 1.5 | 4.25 | 5.75         | 7.125                              |
 
 Approximation: $y(2) \approx 7.125$.
 
 With $\Delta x = 0.25$Starting at $(0, 1)$:
 
 | Step | $x$  | $y$         | $y' = x + y$ | $y_{\text{new}$ |
-| ---- | ---- | ----------- | ------------ | ----------------- |
-| 0    | 0    | 1           | 1            | 1.25              |
-| 1    | 0.25 | 1.25        | 1.5          | 1.625             |
-| 2    | 0.5  | 1.625       | 2.125        | 2.15625           |
-| 3    | 0.75 | 2.15625     | 2.90625      | 2.8828125         |
-| 4    | 1.0  | 2.8828125   | 3.8828125    | 3.853515625       |
-| 5    | 1.25 | 3.853515625 | 5.103515625  | 5.129394531       |
-| 6    | 1.5  | 5.129394531 | 6.629394531  | 6.786743164       |
-| 7    | 1.75 | 6.786743164 | 8.536743164  | 8.920428955       |
+| ---- | ---- | ----------- | ------------ | --------------- |
+| 0    | 0    | 1           | 1            | 1.25            |
+| 1    | 0.25 | 1.25        | 1.5          | 1.625           |
+| 2    | 0.5  | 1.625       | 2.125        | 2.15625         |
+| 3    | 0.75 | 2.15625     | 2.90625      | 2.8828125       |
+| 4    | 1.0  | 2.8828125   | 3.8828125    | 3.853515625     |
+| 5    | 1.25 | 3.853515625 | 5.103515625  | 5.129394531     |
+| 6    | 1.5  | 5.129394531 | 6.629394531  | 6.786743164     |
+| 7    | 1.75 | 6.786743164 | 8.536743164  | 8.920428955     |
 
 Approximation: $y(2) \approx 8.920$.
 

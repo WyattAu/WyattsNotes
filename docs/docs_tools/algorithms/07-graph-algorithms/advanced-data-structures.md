@@ -1029,3 +1029,56 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+### Example 1: Segment Tree Range Sum Query
+
+**Problem.** Given array `[2, 5, 1, 4, 9, 3]`, build a segment tree and answer the range sum query
+for indices 1 to 4.
+
+**Solution.**
+
+```python
+tree = SegmentTree([2, 5, 1, 4, 9, 3])
+result = tree.query(1, 4)  # 5 + 1 + 4 + 9 = 19
+```
+
+The segment tree stores partial sums at each internal node. The query traverses at most $2\log n$
+nodes by combining complete segments and splitting partial ones.
+
+Time complexity: $O(\log n)$ per query, $O(n)$ to build.
+
+$\blacksquare$
+
+### Example 2: Lazy Propagation for Range Update
+
+**Problem.** Add 3 to all elements in range [1, 3] of the segment tree, then query the sum of range
+[0, 4].
+
+**Solution.**
+
+```python
+tree = SegmentTree([1, 2, 3, 4, 5, 6])
+tree.range_update(1, 3, 3)  # Add 3 to indices 1, 2, 3
+# Array is now [1, 5, 6, 7, 5, 6]
+result = tree.query(0, 4)    # 1 + 5 + 6 + 7 + 5 = 24
+```
+
+Lazy propagation defers updates: instead of updating $O(n)$ leaves, it stores pending operations in
+internal nodes. The lazy value is pushed down only when a child node is accessed.
+
+Time complexity: $O(\log n)$ per range update and per query.
+
+$\blacksquare$
+
+## Summary
+
+- Segment trees support $O(\log n)$ range queries and point updates on arrays.
+- Lazy propagation extends segment trees to $O(\log n)$ range updates by deferring operations.
+- Disjoint set union (Union-Find) with path compression and union by rank achieves near-$O(1)$
+  amortised operations.
+- Binary indexed trees (Fenwick trees) provide $O(\log n)$ prefix sum queries and point updates with
+  lower constant factors than segment trees.
+- Trie supports $O(L)$ insertion and lookup for strings of length $L$; used in autocomplete and IP
+  routing.

@@ -40,13 +40,13 @@ corrections. All content should be aligned to the current HKEAA syllabus specifi
 
 ## Exam Structure
 
-The HKDSE is typically taken at the end of Secondary 6 (Year 6). Each subject is assessed through a
+The HKDSE is taken at the end of Secondary 6 (Year 6). Each subject is assessed through a
 combination of public examinations and school-based assessments (SBA). Results are reported on a
 scale of **1 to 5\*\*\***, with 5\*\*\* being the highest.
 
 ### Key Dates
 
-- **SBA deadlines** — set by individual schools, typically Term 2 of Year 6
+- **SBA deadlines** — set by individual schools, Term 2 of Year 6
 - **Public examinations** — April to May each year
 - **Results release** — July
 

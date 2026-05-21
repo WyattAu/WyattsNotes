@@ -698,8 +698,8 @@ self-marking and building a personal test matrix. :::
 
 1. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-2. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+2. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 3. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.

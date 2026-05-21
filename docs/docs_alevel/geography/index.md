@@ -1,76 +1,69 @@
 ---
-sidebar_position: 1
 title: A-Level Geography
+date: 2026-05-21
+tags: [alevel, alevel-geography]
+categories: [alevel, geography]
 description:
-  'Rigorous A-Level geography notes covering A-Level Geography. Includes definitions, derivations,
-  worked examples, and exam-style problems.'
-date: 2026-05-12T00:00:00.000Z
-tags:
-  - Geography
-  - ALevel
+  Comprehensive A-Level Geography revision notes covering physical geography, human geography, and
+  fieldwork methodology.
 ---
 
 # A-Level Geography
 
-A-Level Geography bridges the physical and social sciences, examining how natural processes shape
-the Earth's surface and how human activities interact with those processes. This section covers the
-core physical and human geography topics, fieldwork methodology, and geographical skills required
-for the exam.
+This section contains comprehensive revision notes for A-Level Geography, aligned with the AQA
+specification. Content is organised into three core areas:
 
-## Topics Covered
+## Physical Geography
 
-### Physical Geography
+| Topic                                                                       | Description                                                                                |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Water and Carbon Cycles](./1-physical-geography/1_water-and-carbon-cycles) | Drainage basin hydrology, the water budget, the carbon cycle, and climate change feedbacks |
+| [Coastal Systems and Landscapes](./1-physical-geography/2_coastal-systems)  | Waves, erosion, transportation, deposition, landforms, and coastal management              |
+| [Glacial Systems and Landscapes](./1-physical-geography/3_glacial-systems)  | Glacial processes, erosional and depositional landforms, and periglacial environments      |
+| [Hazards](./1-physical-geography/4_hazards)                                 | Tectonic and atmospheric hazards, vulnerability, and risk management                       |
 
-- **Tectonic processes and hazards** — plate tectonics, earthquakes, volcanoes, tsunami formation
-  and impact
-- **Coastal systems and landscapes** — erosion, transportation, deposition, sea level change,
-  coastal management
-- **Water cycle and water insecurity** — the hydrological cycle, drainage basins, flooding, water
-  supply and conflict
-- **Carbon cycle and energy security** — carbon stores and fluxes, fossil fuels, renewable energy,
-  climate change
+## Human Geography
 
-### Human Geography
+| Topic                                                                                    | Description                                                        |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Changing Places](./2-human-geography/1_changing-places)                                 | Sense of place, endogenous and exogenous factors, and regeneration |
+| [Global Systems and Governance](./2-human-geography/2_global-systems)                    | Globalisation, trade, TNCs, global governance, and geopolitics     |
+| [Contemporary Urban Environments](./2-human-geography/3_contemporary-urban-environments) | Urbanisation, urban forms, segregation, and sustainable cities     |
+| [Population and the Environment](./2-human-geography/4_population-and-environment)       | Demographic transition, food security, energy, and health          |
 
-- **Globalisation** — economic, political, social, and cultural dimensions; winners and losers
-- **Regenerating places** — urban and rural regeneration, rebranding, stakeholder perspectives
-- **Superpowers** — geopolitical influence, economic power, changing global order
-- **Migration, identity, and sovereignty** — push/pull factors, nation states, borders, identity
+## Fieldwork
 
-### Geographical Skills
+| Topic                                                          | Description                                                              |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Fieldwork Methodology](./3-fieldwork/1_fieldwork-methodology) | Research design, data collection, statistical tests, GIS, and evaluation |
 
-- **Statistical analysis** — Spearman's rank, chi-squared, standard deviation, mean, median
-- **GIS and cartographic techniques** — interpreting OS maps, satellite imagery, GIS layers
-- **Fieldwork investigation** — designing enquiries, primary and secondary data collection, risk
-  assessment
-- **Data presentation and analysis** — graphs, maps, annotated diagrams, statistical tests
+## Exam Structure
+
+A-Level Geography is assessed through three written papers and a non-examined fieldwork assessment:
+
+- **Paper 1** (2 hours 30 minutes, 40%): Physical Geography — Water and Carbon Cycles, Coastal
+  Systems or Glacial Systems or Hazards (two of three)
+- **Paper 2** (2 hours 30 minutes, 40%): Human Geography — Changing Places, Global Systems,
+  Contemporary Urban Environments or Population and the Environment
+- **Paper 3** (2 hours, 20%): Geographical Debate — synoptic assessment drawing on content from both
+  physical and human geography
+- **Non-examined Assessment**: Fieldwork write-up (3,000–4,000 words), internally marked and
+  moderated
 
 ## Study Tips
 
-1. **Use specific case studies** — every argument needs real-world evidence. Know 2–3 detailed case
-   studies per topic (e.g., Tohoku 2011 for tectonics, Iceland for energy).
-2. **Practise 20-mark essays** — structure: define, explain, exemplify, evaluate. Use PEEL
-   paragraphs (Point, Evidence, Explain, Link).
-3. **Master statistical tests** — know when to use Spearman's rank (correlation) vs. chi-squared
-   (independence), and be able to calculate and interpret both.
-4. **Annotate maps and diagrams** — exam questions reward well-labelled, detailed sketches over
-   vague descriptions.
-5. **Link physical and human geography** — e.g., how climate change (physical) drives migration
-   (human). Synoptic links score high marks.
+1. **Use named case studies** — examiners reward specific, located examples with factual detail
+   rather than vague generalisations.
+2. **Know your AO weightings** — AO1 (knowledge), AO2 (application), AO3 (analysis), AO4 (skills).
+   Higher-mark questions require balanced analysis and evaluation.
+3. **Practise 20- and 33-mark essays** — plan before writing; embed case studies throughout rather
+   than bolted on at the end.
+4. **Master key terminology** — definitions are frequently tested directly in shorter-answer
+   questions.
+5. **Link physical and human processes** — synoptic links are essential for Paper 3 and strengthen
+   answers across all papers.
 
-## How to Use These Notes
+---
 
-Each section provides key concepts, case studies, statistical methods, and exam-style questions.
-Start with the topic areas you find most challenging, then build synoptic links across physical and
-human geography.
-
-:::note Content Under Development
-
-This section is under active development. Content will continue to be expanded with case studies and
-worked examples.
-
-:::
-
-Status: stub scope: Exam-aligned qualification content only. Subject to CONTENT_STANDARD.md Section
-12 (Prohibited Subjects as standalone topics). Expansion_criteria: Content must be aligned to
-A-Level exam specification. General humanities content not in scope.
+> **Source**: Content aligned with AQA Geography (7037) specification. Case studies drawn from
+> widely-used textbooks and publicly available data.

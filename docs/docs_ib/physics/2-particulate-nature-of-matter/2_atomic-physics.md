@@ -838,8 +838,8 @@ self-marking and building a personal test matrix. :::
 4. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
 
-5. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+5. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 6. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.

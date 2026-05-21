@@ -3,8 +3,13 @@ title: 'Limits and Continuity -- Diagnostic Tests'
 description:
   "Diagnostic tests targeting the hardest AP Calculus limits and continuity questions including
   epsilon-delta proofs, squeeze theorem, L'Hopital conditions, and"
+date: 2026-04-14
+tags:
+  - ap
+  - ap-maths
+categories:
+  - ap-maths
 slug: diag-limits-continuity
-hide_table_of_contents: true
 ---
 
 # Limits and Continuity — Diagnostic Tests

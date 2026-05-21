@@ -832,3 +832,88 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+### Example 1: Branded Type for Type-Safe IDs
+
+**Problem.** Create branded types for `UserId` and `OrderId` that prevent accidental mixing at
+compile time.
+
+**Solution.**
+
+```ts
+type Brand<T, B> = T & { readonly __brand: B };
+
+type UserId = Brand<string, 'UserId'>;
+type OrderId = Brand<string, 'OrderId'>;
+
+function createUserId(id: string): UserId {
+  return id as UserId;
+}
+
+function createOrderId(id: string): OrderId {
+  return id as OrderId;
+}
+
+function getUser(id: UserId): void {
+  /* ... */
+}
+
+const uid = createUserId('abc-123');
+const oid = createOrderId('xyz-456');
+
+getUser(uid); // OK
+getUser(oid); // Error: Argument of type 'OrderId' is not assignable to 'UserId'
+```
+
+The brand property (`__brand`) exists only at compile time. It is erased during JavaScript emission,
+so there is no runtime overhead.
+
+$\blacksquare$
+
+### Example 2: Recursive Conditional Type for Deep Readonly
+
+**Problem.** Implement `DeepReadonly<T>` that makes all nested properties readonly using recursive
+conditional types.
+
+**Solution.**
+
+```ts
+type DeepReadonly<T> = T extends Function
+  ? T
+  : T extends object
+    ? { readonly [K in keyof T]: DeepReadonly<T[K]> }
+    : T;
+
+interface Config {
+  host: string;
+  ports: { http: number; https: number };
+  features: string[];
+}
+
+type FrozenConfig = DeepReadonly<Config>;
+// Equivalent to:
+// {
+//   readonly host: string;
+//   readonly ports: { readonly http: number; readonly https: number };
+//   readonly features: readonly string[];
+// }
+```
+
+The conditional type recurses into objects while leaving primitives and functions untouched. Arrays
+become `readonly string[]` because `string[] extends object`.
+
+$\blacksquare$
+
+## Summary
+
+- Conditional types: `T extends U ? X : Y` enables type-level branching; distribution over unions is
+  automatic for naked type parameters.
+- Mapped types: `{ [K in keyof T]: F<T[K]> }` transform all properties; `as` clauses filter and
+  remap keys.
+- Template literal types: `` `${A}-${B}` `` create string types from unions, enabling type-safe
+  string manipulation.
+- Branded types encode semantic distinctions (e.g., `UserId` vs `OrderId`) without runtime cost.
+- Recursive type aliases (TypeScript 4.1+) enable deep utility types like `DeepReadonly`,
+  `DeepPartial`.

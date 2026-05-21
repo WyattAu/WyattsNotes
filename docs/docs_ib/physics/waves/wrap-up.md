@@ -523,5 +523,5 @@ $$f' = f\left(\frac{v}{v + v_s}\right) = 800\left(\frac{343}{343 + 30}\right) = 
 3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
 
-4. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+4. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.

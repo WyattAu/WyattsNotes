@@ -109,3 +109,18 @@ Interdependent.
 
 4. Writing pseudocode that is too language-specific rather than using standard algorithmic
    constructs.
+
+### Study Strategy
+
+1. **Enable `strict` mode immediately** — it catches the broadest class of errors and forces good
+   habits from the start.
+2. **Learn the type system first, the toolchain second** — structural typing, generics, and
+   conditional types are the core intellectual content.
+3. **Read declaration files (`.d.ts`)** from `@types/` packages to see how real-world APIs are
+   typed.
+4. **Practise type-level programming** — write your own utility types to internalise mapped types,
+   conditional types, and inference.
+5. **Use `tsconfig` strict flags** — enable `strictNullChecks`, `noUncheckedIndexedAccess`, and
+   `exactOptionalPropertyTypes` for maximum safety.
+6. **Avoid type assertions (`as`)** — prefer type guards and narrowing. Every `as` is a hole in the
+   type system that the compiler cannot verify.

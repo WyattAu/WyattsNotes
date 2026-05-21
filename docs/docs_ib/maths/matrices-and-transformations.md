@@ -1462,4 +1462,4 @@ $$= \frac{1}{2}\begin{pmatrix} 1 & 81 \\ -1 & 81 \end{pmatrix}\begin{pmatrix} 1 
 1. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
    cannot be zero).
 
-2. Assuming matrix multiplication is commutative — in general $AB \neq BA$.
+2. Assuming matrix multiplication is commutative — $AB \neq BA$.

@@ -1327,7 +1327,7 @@ If you get this wrong, revise: Section 5.1.
 1. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
    concentrations.
 
-2. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+2. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 3. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
 

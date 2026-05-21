@@ -477,3 +477,47 @@ Taking the positive root: $s_{\max} = 2 + \sqrt{6} \approx 4.45\;\mathrm{m}$.
 
 4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.
+
+## Worked Examples
+
+### Example 1: Projectile Launched from a Height
+
+**Problem.** A ball is thrown horizontally at $12\ \mathrm{m\,s^{-1}}$ from the top of a cliff
+$45\ \mathrm{m}$ high. Find the horizontal distance travelled before hitting the ground and the
+impact velocity.
+
+**Solution.** Vertical: $u_y = 0$, $s = -45$, $a = -g = -9.8$.
+
+$$-45 = 0 - \frac{1}{2}(9.8)t^2 \implies t = \sqrt{\frac{90}{9.8}} \approx 3.03\ \mathrm{s}$$
+
+Horizontal: $x = 12 \times 3.03 = 36.4\ \mathrm{m}$.
+
+Impact: $v_y = -9.8 \times 3.03 = -29.7\ \mathrm{m\,s^{-1}}$, $v_x = 12\ \mathrm{m\,s^{-1}}$.
+
+$$|\mathbf{v}| = \sqrt{144 + 882.1} \approx 31.9\ \mathrm{m\,s^{-1}}, \quad \theta = \arctan\!\left(\frac{29.7}{12}\right) \approx 68.0^\circ\text{ below horizontal}$$
+
+$\blacksquare$
+
+### Example 2: Variable Acceleration
+
+**Problem.** A particle moves with $a = 3t - 6\ \mathrm{m\,s^{-2}}$. At $t = 0$,
+$v = 8\ \mathrm{m\,s^{-1}}$ and $s = 0$. Find the distance travelled in the first 4 seconds.
+
+**Solution.** $v = \int (3t - 6)\,dt = \frac{3}{2}t^2 - 6t + C$. When $t = 0$: $C = 8$.
+
+$$v = \frac{3}{2}t^2 - 6t + 8$$
+
+Setting $v = 0$: $3t^2 - 12t + 16 = 0$. Discriminant $= 144 - 192 < 0$, so $v > 0$ for all $t$.
+
+$$s = \int_0^4 \!\left(\frac{3}{2}t^2 - 6t + 8\right)dt = \left[\frac{t^3}{2} - 3t^2 + 8t\right]_0^4 = 32 - 48 + 32 = 16\ \mathrm{m}$$
+
+$\blacksquare$
+
+## Summary
+
+- SUVAT equations apply only for constant acceleration; use calculus for variable acceleration.
+- Projectile motion: horizontal (constant velocity) and vertical (constant $g$) are independent.
+- Maximum range at $45^\circ$; complementary angles give equal range on level ground.
+- For variable acceleration: $v = \int a\,dt$, $s = \int v\,dt$; always check if the particle
+  changes direction.
+- Chain rule form: $a = v\frac{dv}{ds}$ is useful when acceleration depends on displacement.

@@ -853,5 +853,5 @@ self-marking and building a personal test matrix. :::
 3. Forgetting to include units in final answers, especially when working with derived units like
    $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
 
-4. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+4. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.

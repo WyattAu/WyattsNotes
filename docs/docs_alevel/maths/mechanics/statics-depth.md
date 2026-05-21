@@ -433,3 +433,62 @@ $T = \frac◆LB◆120 + 360◆RB◆◆LB◆6/\sqrt{13}◆RB◆ = \frac◆LB◆48
 
 4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.
+
+## Worked Examples
+
+### Example 1: Ladder with Wall Friction
+
+**Problem.** A uniform ladder of length $6\ \mathrm{m}$ and mass $18\ \mathrm{kg}$ leans against a
+rough vertical wall ($\mu = 0.25$) on rough horizontal ground ($\mu = 0.35$) at an angle of
+$60^\circ$ to the horizontal. Determine if the ladder is in equilibrium.
+
+**Solution.** Resolving vertically: $R_g + F_w = 18g = 176.4\ \mathrm{N}$.
+
+Resolving horizontally: $F_g = R_w$.
+
+Taking moments about the foot:
+$R_w \times 6\sin 60^\circ + F_w \times 6\cos 60^\circ = 18g \times 3\cos 60^\circ$.
+
+$$5.196 R_w + 3 F_w = 264.6$$
+
+At limiting equilibrium: $F_g = 0.35 R_g$ and $F_w = 0.25 R_w$.
+
+From vertical: $R_g + 0.25 R_w = 176.4$, so $R_g = 176.4 - 0.25 R_w$.
+
+From horizontal: $F_g = R_w$, so $0.35(176.4 - 0.25 R_w) = R_w$.
+
+$61.74 - 0.0875 R_w = R_w$, giving $R_w = \frac{61.74}{1.0875} = 56.77\ \mathrm{N}$.
+
+$F_g = 56.77\ \mathrm{N}$. Maximum ground friction:
+$0.35 \times (176.4 - 0.25 \times 56.77) = 0.35 \times 162.2 = 56.77\ \mathrm{N}$.
+
+The ladder is in limiting equilibrium.
+
+$\blacksquare$
+
+### Example 2: Centre of Mass of a Composite Lamina
+
+**Problem.** A uniform rectangular lamina $12\ \mathrm{cm} \times 8\ \mathrm{cm}$ has a circular
+disc of radius $3\ \mathrm{cm}$ removed, centred $4\ \mathrm{cm}$ from the left edge and
+$4\ \mathrm{cm}$ from the bottom. Find the centre of mass.
+
+**Solution.** Rectangle: area $= 96$, centre at $(6, 4)$.
+
+Circle: area $= 9\pi \approx 28.27$, centre at $(4, 4)$.
+
+Using negative mass for the hole:
+
+$$\bar{x} = \frac{96 \times 6 - 9\pi \times 4}{96 - 9\pi} = \frac{576 - 113.1}{67.73} = \frac{462.9}{67.73} \approx 6.83\ \mathrm{cm}$$
+
+By symmetry of the cut, $\bar{y} = 4\ \mathrm{cm}$.
+
+$\blacksquare$
+
+## Summary
+
+- Equilibrium requires $\sum F_x = 0$, $\sum F_y = 0$, and $\sum M = 0$ about any point.
+- Moments: $M = Fd$ where $d$ is the perpendicular distance from the pivot to the line of action.
+- Centre of mass of a system: $\bar{x} = \frac{\sum m_i x_i}{\sum m_i}$; use negative mass for
+  holes.
+- Ladder problems: take moments about the foot to eliminate two unknown forces.
+- Choose the pivot wisely to simplify the moment equation by eliminating unknown forces.

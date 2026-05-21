@@ -385,3 +385,51 @@ $\beta = P(X \leq 11 \mid p = 0.6) \approx 0.4044$.
 
 4. Rounding too early in multi-step calculations — carry full precision through and round only the
    final answer.
+
+## Worked Examples
+
+### Example 1: One-Tailed Binomial Test
+
+**Problem.** A coin is tossed 20 times and 15 heads are observed. Test at the 5% significance level
+whether the coin is biased towards heads.
+
+**Solution.** $H_0: p = 0.5$, $H_1: p > 0.5$. Under $H_0$: $X \sim B(20, 0.5)$.
+
+$P(X \geq 15) = P(X = 15) + P(X = 16) + \ldots + P(X = 20)$.
+
+$P(X \geq 15) = \binom{20}{15}(0.5)^{20} + \binom{20}{16}(0.5)^{20} + \ldots + \binom{20}{20}(0.5)^{20}$.
+
+$$P(X \geq 15) = (15504 + 4845 + 1140 + 190 + 20 + 1) \times (0.5)^{20} = 21700 \times 9.537 \times 10^{-7} \approx 0.0207$$
+
+Since $0.0207 < 0.05$, we reject $H_0$. There is significant evidence that the coin is biased
+towards heads.
+
+$\blacksquare$
+
+### Example 2: Normal Hypothesis Test for the Mean
+
+**Problem.** A machine fills packets with a mean weight of $500\ \mathrm{g}$ and standard deviation
+$12\ \mathrm{g}$. A sample of 36 packets has mean $503.5\ \mathrm{g}$. Test at the 1% level whether
+the mean has increased.
+
+**Solution.** $H_0: \mu = 500$, $H_1: \mu > 500$.
+
+Under $H_0$: $\bar{X} \sim N\!\left(500, \frac{144}{36}\right) = N(500, 4)$.
+
+Test statistic: $z = \frac{503.5 - 500}{\sqrt{4}} = \frac{3.5}{2} = 1.75$.
+
+One-tailed critical value at 1%: $z_{0.01} = 2.326$.
+
+Since $1.75 < 2.326$, we do not reject $H_0$. There is insufficient evidence that the mean has
+increased.
+
+$\blacksquare$
+
+## Summary
+
+- Hypothesis testing: state $H_0$ and $H_1$, choose significance level, calculate test statistic,
+  compare with critical value.
+- Type I error: rejecting $H_0$ when it is true (probability $= \alpha$).
+- Type II error: failing to reject $H_0$ when it is false (probability $= \beta$).
+- For binomial tests, use cumulative probabilities; for normal tests, use the $z$-score.
+- The critical region is the set of values that lead to rejection of $H_0$.

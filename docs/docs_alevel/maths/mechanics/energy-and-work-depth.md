@@ -509,3 +509,44 @@ Equilibrium position.
 
 4. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
+
+## Worked Examples
+
+### Example 1: Conservation of Energy with a Pendulum
+
+**Problem.** A pendulum bob of mass $0.8\ \mathrm{kg}$ is released from rest when the string (length
+$2\ \mathrm{m}$) makes an angle of $50^\circ$ with the vertical. Find the speed at the lowest point.
+
+**Solution.** Height above lowest point:
+$h = 2 - 2\cos 50^\circ = 2(1 - \cos 50^\circ) \approx 2(1 - 0.6428) = 0.714\ \mathrm{m}$.
+
+Conservation of energy: $mgh = \frac{1}{2}mv^2$.
+
+$$v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 0.714} = \sqrt{13.99} \approx 3.74\ \mathrm{m\,s^{-1}}$$
+
+$\blacksquare$
+
+### Example 2: Power on an Incline
+
+**Problem.** A car of mass $1200\ \mathrm{kg}$ climbs a hill inclined at $\sin^{-1}(0.1)$ at a
+constant speed of $25\ \mathrm{m\,s^{-1}}$. Resistance is $400\ \mathrm{N}$. Find the power
+developed by the engine.
+
+**Solution.** At constant speed, driving force $=$ resistance $+$ component of weight along slope.
+
+$$F = 400 + 1200g \times 0.1 = 400 + 1176 = 1576\ \mathrm{N}$$
+
+$$P = Fv = 1576 \times 25 = 39400\ \mathrm{W} \approx 39.4\ \mathrm{kW}$$
+
+$\blacksquare$
+
+## Summary
+
+- Work done: $W = Fs\cos\theta$; kinetic energy: $\mathrm{KE} = \frac{1}{2}mv^2$; gravitational PE:
+  $\mathrm{GPE} = mgh$.
+- Work-energy theorem: net work $=$ change in KE.
+- Conservation of energy: $\mathrm{KE} + \mathrm{GPE} + \mathrm{EPE} = \mathrm{constant}$ (no
+  friction).
+- Power: $P = Fv$; at maximum speed, driving force equals total resistance.
+- Elastic PE: $\mathrm{EPE} = \frac{1}{2}kx^2 = \frac{\lambda x^2}{2l}$ for springs and elastic
+  strings.

@@ -973,7 +973,7 @@ $$\mathrm{pH} = -\log(5.83 \times 10^{-3}) = 2.23$$
 5. Forgetting to balance equations before performing calculations — always check that atoms and
    charges balance on both sides.
 
-6. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+6. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 ## Cross-References
 

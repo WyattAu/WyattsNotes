@@ -1245,3 +1245,69 @@ theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+### Example 1: Running Total with Window Function
+
+**Problem.** Given a table `orders(order_id, customer_id, order_date, amount)`, calculate a running
+total of order amounts per customer ordered by date.
+
+**Solution.**
+
+```sql
+SELECT
+    order_id,
+    customer_id,
+    order_date,
+    amount,
+    SUM(amount) OVER (
+        PARTITION BY customer_id
+        ORDER BY order_date
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS running_total
+FROM orders
+ORDER BY customer_id, order_date;
+```
+
+The `PARTITION BY` resets the running total for each customer.
+`ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW` defines the frame from the first row in the
+partition to the current row.
+
+$\blacksquare$
+
+### Example 2: Ranking with Dense Rank
+
+**Problem.** Find the top 3 highest-paid employees in each department, handling ties.
+
+**Solution.**
+
+```sql
+WITH ranked AS (
+    SELECT
+        employee_id,
+        department_id,
+        salary,
+        DENSE_RANK() OVER (
+            PARTITION BY department_id
+            ORDER BY salary DESC
+        ) AS dr
+    FROM employees
+)
+SELECT * FROM ranked WHERE dr <= 3;
+```
+
+`DENSE_RANK()` assigns the same rank to ties without gaps (1, 1, 2, 3), unlike `RANK()` which would
+produce (1, 1, 3, 4).
+
+$\blacksquare$
+
+## Summary
+
+- Window functions compute values across related rows without collapsing the result set (unlike
+  `GROUP BY`).
+- The `OVER()` clause defines the window: `PARTITION BY` divides rows, `ORDER BY` sequences them,
+  and the frame clause bounds them.
+- `ROWS` vs `RANGE`: `ROWS` counts physical rows; `RANGE` uses logical value-based boundaries.
+- `LAG`, `LEAD`, `FIRST_VALUE`, `LAST_VALUE` provide positional access within a window frame.
+- Recursive CTEs enable hierarchical queries (org charts, bill-of-materials, tree traversal).

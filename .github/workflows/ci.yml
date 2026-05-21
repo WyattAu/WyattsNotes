@@ -111,6 +111,9 @@ jobs:
       - name: Check content depth tiers (informational)
         run: python3 scripts/check-depth-tiers.py || true
 
+      - name: Check content depth (mandatory)
+        run: python3 scripts/check-content-depth.py docs/
+
       - name: Check description quality
         run: python3 scripts/check-descriptions.py
 

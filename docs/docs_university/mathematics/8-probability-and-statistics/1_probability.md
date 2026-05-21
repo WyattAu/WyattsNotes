@@ -455,7 +455,7 @@ MGF of $N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)$. $\blacksquare$
   $\bar{X}_n \xrightarrow{d} N(\mu, \sigma^2/n)$ as $n \to \infty$.
 - **Confusing type I and type II errors.** Type I: rejecting $H_0$ when it is true ($\alpha$). Type
   II: failing to reject $H_0$ when it is false ($\beta$). **Fix:** Type I = false positive; Type II
-  = false negative. Decreasing one typically increases the other.
+  = false negative. Decreasing one increases the other.
 
 ## Worked Examples
 

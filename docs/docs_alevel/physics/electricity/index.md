@@ -69,8 +69,8 @@ power transmission and strong electromagnets in MRI machines.
 
 ## Study Tips
 
-1. **Draw circuit diagrams clearly** — use standard symbols, label all currents and voltages, and
-   indicate direction of conventional current.
+1. **Draw circuit diagrams** — use standard symbols, label all currents and voltages, and indicate
+   direction of conventional current.
 2. **Apply Kirchhoff's laws systematically** — choose a loop, go around consistently, and set up
    equations. Solve simultaneously.
 3. **Understand $I$-$V$ characteristics** — sketch and explain the curves for a resistor (linear),

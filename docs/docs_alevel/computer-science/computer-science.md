@@ -87,3 +87,39 @@ When finished, attempt the
 
 4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
    data).
+
+### Key Exam Board Differences
+
+| Aspect            | AQA                      | OCR (A)                | CIE (9618)                         |
+| ----------------- | ------------------------ | ---------------------- | ---------------------------------- |
+| NEA Language      | Any                      | Any (Python common)    | Python / Java / VB                 |
+| Paper 2 Focus     | Problem solving + coding | Computational thinking | Advanced programming + pre-release |
+| Marks for Working | Method marks available   | Show your reasoning    | Marks for structured answers       |
+| Calculators       | Not permitted            | Not permitted          | Permitted in Paper 3               |
+
+### Study Strategy
+
+1. **Start with fundamentals** (data representation, Boolean algebra) — these underpin every other
+   topic.
+2. **Trace algorithms by hand** on paper before coding them — exam questions test your ability to
+   follow execution, not write code.
+3. **Practise Big-O analysis** for every algorithm you learn; examiners expect you to derive, not
+   just state.
+4. **Build the NEA early** — the project is 20% of your grade and requires documentation, testing,
+   and evaluation.
+
+### Key Formulae
+
+| Topic          | Formula / Definition                             |
+| -------------- | ------------------------------------------------ |
+| Big-O (sorts)  | Merge sort: $O(n \log n)$; Bubble sort: $O(n^2)$ |
+| Floating point | $(-1)^S \times 1.M \times 2^{E-\text{bias}}$     |
+| Truth table    | $A \oplus B = A\bar{B} + \bar{A}B$               |
+| Huffman coding | Weighted path length $= \sum f_i \times d_i$     |
+| Hashing        | Load factor $= n/k$ (items/buckets)              |
+
+### Recommended Reading
+
+- "Computer Science: An Overview" by Brookshear for foundational breadth
+- "Introduction to Algorithms" (CLRS) for rigorous algorithm analysis
+- "Structure and Interpretation of Computer Programs" for programming depth

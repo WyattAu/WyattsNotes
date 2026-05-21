@@ -1,0 +1,859 @@
+---
+title: Forces
+description:
+  'Forces — 1. Force Diagrams and Vector Quantities; 1.1 Scalars and Vectors; 1.2 Why the
+  Distinction Matters; 1.3 Force Diagrams.'
+date: 2026-04-14
+tags:
+  - gcse
+  - gcse-physics
+categories:
+  - gcse-physics
+slug: 5-forces
+---
+
+## Forces
+
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel Paper 1 & 2 | OCR A Gateway P2 & P6 | WJEC P2 :::
+
+<PhetSimulation simulationId="forces-and-motion-basics" title="Forces and Motion: Basics" />
+
+Explore the simulation above to develop intuition for this topic.
+
+## 1. Force Diagrams and Vector Quantities
+
+### 1.1 Scalars and Vectors
+
+| Scalar (magnitude only) | Vector (magnitude and direction) |
+| ----------------------- | -------------------------------- |
+| Mass                    | Weight                           |
+| Speed                   | Velocity                         |
+| Distance                | Displacement                     |
+| Energy                  | Force                            |
+| Temperature             | Acceleration                     |
+| Time                    | Momentum                         |
+
+### 1.2 Why the Distinction Matters
+
+A scalar tells you "how much." A vector tells you "how much" and "which way." When you add two
+Scalars, you add their magnitudes: 3 kg + 5 kg = 8 kg. When you add two vectors, you must Account
+for direction: a 3 N force east plus a 5 N force west gives a 2 N force west, not an 8 N Force.
+Ignoring the vector nature of forces is the single most common source of error in mechanics
+Problems.
+
+### 1.3 Force Diagrams
+
+A **free body diagram** shows all the forces acting on a single object, drawn as arrows from the
+Centre of the object. The length of each arrow represents the magnitude of the force.
+
+**Rules:**
+
+- Show only forces acting ON the object
+- Forces should be drawn to scale
+- Use labelled arrows
+- Do not include forces exerted BY the object on other objects
+
+### 1.4 Resultant Forces
+
+The **resultant force** is the single force that has the same effect as all the forces acting
+Together.
+
+Forces in the same direction: add them.
+
+Forces in opposite directions: subtract the smaller from the larger.
+
+Forces at angles: use a vector diagram (triangle or parallelogram of forces).
+
+**Worked Example.** Two forces of 30 N and 40 N act on an object at right angles. Find the magnitude
+Of the resultant force.
+
+$$F = \sqrt{30^2 + 40^2} = \sqrt{900 + 1600} = \sqrt{2500} = 50 \mathrm{ N$$
+
+### 1.5 Resolving Vectors into Components (Higher Tier)
+
+Any vector can be resolved into two perpendicular components. For a force $F$ at angle $\theta$ to
+The horizontal:
+
+$$F_x = F\cos\theta \quad \mathrm{(horizontal component)$$
+$$F_y = F\sin\theta \quad \mathrm{(vertical component)$$
+
+This technique is essential for inclined plane problems. Instead of working with forces at awkward
+Angles, you resolve every force into components parallel and perpendicular to the slope, then apply
+Newton's second law to each direction independently.
+
+## 2. Newton's Laws of Motion
+
+### 2.1 Newton's First Law
+
+An object remains at rest or moves with constant velocity unless acted upon by a **resultant (net)
+Force**.
+
+This means:
+
+- If the resultant force is zero, the object does not accelerate
+- A stationary object stays stationary; a moving object continues at the same speed in the same
+  direction
+
+### 2.2 The Inertial Frame Caveat
+
+Newton's first law is only valid in an **inertial reference frame** -- a frame that is not itself
+Accelerating. If you are in a car that accelerates forward, you feel pushed back into your seat.
+There is no backward force acting on you; the feeling arises because the car (your reference frame)
+Is accelerating forward. In the car's non-inertial frame, Newton's first law appears to be violated.
+On Earth's surface, the frame is approximately inertial because the centripetal acceleration due to
+Earth's rotation is very small compared to $g$.
+
+### 2.3 Newton's Second Law
+
+The acceleration of an object is proportional to the resultant force and inversely proportional to
+Its mass:
+
+$$F = ma$$
+
+Where $F$ is the resultant force (N), $m$ is mass (kg), and $a$ is acceleration (m/s$^2$).
+
+**Worked Example.** A 1200 kg car accelerates from rest at 2.5 m/s$^2$. Find the driving force
+(ignore friction).
+
+$$F = ma = 1200 \times 2.5 = 3000 \mathrm{ N$$
+
+**Worked Example.** A resultant force of 45 N acts on a 5 kg object. Find the acceleration.
+
+$$a = \frac{F}{m} = \frac{45}{5} = 9 \mathrm{ m/s^2$$
+
+### 2.4 What $F = ma$ Really Means
+
+The equation $F = ma$ is a vector equation. In component form:
+
+$$\sum F_x = ma_x, \qquad \sum F_y = ma_y$$
+
+The acceleration is always in the _same direction_ as the resultant force. If the resultant force is
+Zero, the acceleration is zero (Newton's first law is a special case of the second). The mass $m$ is
+A scalar: it tells you how resistant the object is to acceleration. Doubling the mass halves the
+Acceleration for the same force.
+
+### 2.5 Newton's Third Law
+
+When two objects interact, they exert equal and opposite forces on each other.
+
+**Key features:**
+
+- The forces are equal in magnitude
+- The forces are opposite in direction
+- The forces act on **different** objects
+- The forces are of the same type (e.g. Both gravitational, both contact)
+
+**Example:** A book rests on a table. The book exerts a downward force on the table (its weight),
+And the table exerts an equal upward force on the book (the normal reaction). These are a Newton's
+Third law pair? No -- the normal reaction and weight are NOT a third law pair because they act on
+The SAME object. The true pairs are: Earth pulls book down / book pulls Earth up; book pushes table
+Down / table pushes book up.
+
+:::warning Newton's third law pairs always act on different objects. The normal reaction and weight
+Act on the same object, so they are NOT a third law pair. :::
+
+### 2.6 Identifying Third Law Pairs: A Systematic Method
+
+To identify the correct third law pair for any force, ask: "What other object is involved in this
+Interaction?" Then write both forces in the form "Object A exerts force on Object B" and "Object B
+Exerts force on Object A." Both forces must be the same type (gravitational, electromagnetic,
+Contact, etc.) and must be equal and opposite.
+
+- **Incorrect:** Weight of book (Earth on book) and normal reaction (table on book). Different
+  objects receive the force (book vs. Book), different types (gravitational vs. Contact).
+- **Correct:** Weight of book (Earth on book, gravitational, downward) and gravitational pull of
+  book on Earth (book on Earth, gravitational, upward). Same type, equal magnitude, opposite
+  direction, different objects.
+
+## 3. Weight, Mass, and Gravity
+
+### 3.1 Weight and Mass
+
+**Mass** is a measure of the amount of matter in an object. It is measured in kilograms (kg) and
+Does not change with location.
+
+**Weight** is the gravitational force acting on an object. It is measured in newtons (N) and depends
+On the gravitational field strength.
+
+$$W = mg$$
+
+Where $W$ is weight (N), $m$ is mass (kg), and $g$ is gravitational field strength (N/kg).
+
+| Location          | $g$ (N/kg) |
+| ----------------- | ---------- |
+| Earth's surface   | 9.8        |
+| Moon's surface    | 1.6        |
+| Mars' surface     | 3.7        |
+| Jupiter's surface | 24.8       |
+
+**Worked Example.** An astronaut has a mass of 80 kg. Find their weight on Earth and on the Moon.
+
+$$W_{\mathrm{Earth} = 80 \times 9.8 = 784 \mathrm{ N$$
+$$W_{\mathrm{Moon} = 80 \times 1.6 = 128 \mathrm{ N$$
+
+### 3.2 Why Mass and Weight Are Different
+
+Mass is an intrinsic property: it does not depend on where the object is. Weight is a force that
+Depends on the local gravitational field. An astronaut on the Moon has the same mass as on Earth but
+Only one-sixth the weight. If you were in deep space, far from any gravitational field, your mass
+Would be unchanged but your weight would be zero. You would still have inertia (resistance to
+Acceleration) even though you would be weightless.
+
+### 3.3 Centre of Mass
+
+The **centre of mass** is the single point through which the entire weight of an object can be
+Considered to act.
+
+For a uniform, regular solid, the centre of mass is at its geometric centre.
+
+**Finding the centre of mass of an irregular lamina:**
+
+1. Suspend the lamina from a point and let it hang freely.
+2. Hang a plumb line from the suspension point and draw a vertical line.
+3. Repeat from a different suspension point.
+4. The centre of mass is where the two lines intersect.
+
+### 3.4 Centre of Mass and Stability
+
+An object is stable if its centre of mass lies above its base. If the centre of mass moves outside
+The base, the object topples. This is why:
+
+- A wide-based object is harder to topple than a narrow-based one.
+- A low centre of mass makes an object more stable (double-decker buses have heavy engines at the
+  bottom).
+- A leaning object topples when the vertical line through its centre of mass falls outside its base.
+
+## 4. Terminal Velocity
+
+### 4.1 Drag and Air Resistance
+
+**Drag** is the resistive force experienced by an object moving through a fluid (liquid or gas).
+Drag increases with speed.
+
+For many objects at moderate speeds, drag is approximately proportional to the square of the speed:
+
+$$F_{\mathrm{drag} \propto v^2$$
+
+This means that doubling the speed quadruples the drag force. This quadratic dependence has enormous
+Practical consequences: the power required to overcome drag (and therefore the fuel consumption of a
+Vehicle) increases with the cube of the speed.
+
+### 4.2 Reaching Terminal Velocity
+
+When an object falls through a fluid:
+
+1. Initially, the only force is weight (downward). Acceleration = $g$.
+2. As speed increases, drag increases.
+3. The resultant force decreases: $F_{\mathrm{net} = W - D$.
+4. Eventually, drag equals weight: $D = W$. The resultant force is zero, and acceleration is zero.
+5. The object continues at a constant speed called **terminal velocity**.
+
+### 4.3 Why Terminal Velocity Is Not the Same as Maximum Speed
+
+Terminal velocity is the speed at which the drag force exactly equals the driving force (in free
+Fall, the weight). It is a _dynamic equilibrium_: the forces are balanced, so the acceleration is
+Zero, but the object is still moving. The word "terminal" does not mean the object stops; it means
+The speed stops increasing.
+
+### 4.4 Factors Affecting Terminal Velocity
+
+- **Mass:** Greater mass means greater weight, so higher terminal velocity
+- **Surface area:** Larger surface area means more drag, so lower terminal velocity
+- **Shape:** Streamlined objects experience less drag
+- **Fluid density:** Denser fluids provide more drag
+
+**Example:** A skydiver with a parachute has a much lower terminal velocity than without one,
+Because the parachute greatly increases the surface area.
+
+### 4.5 Terminal Velocity and Motion Graphs
+
+A velocity-time graph for an object falling through a fluid shows:
+
+- An initial linear region (constant acceleration, drag is negligible)
+- The curve gradually flattens as drag increases
+- The graph becomes horizontal at terminal velocity
+
+The acceleration-time graph shows:
+
+- Initial acceleration = $g$
+- Acceleration decreases to zero
+- The graph approaches the time axis asymptotically
+
+### 4.6 Worked Example: Skydiver
+
+A skydiver of mass 80 kg jumps from a plane. At terminal velocity, the drag force equals the weight:
+
+$$D = mg = 80 \times 9.8 = 784 \mathrm{ N$$
+
+After opening the parachute, the terminal velocity drops from about 55 m/s to about 5 m/s because
+The increased surface area produces much more drag at any given speed.
+
+## 5. Stopping Distances
+
+### 5.1 Stopping Distance
+
+$$\mathrm{Stopping distance = \mathrm{thinking distance + \mathrm{braking distance$$
+
+**Thinking distance:** The distance travelled during the driver's reaction time. Depends on:
+
+- Speed (directly proportional)
+- Reaction time (affected by tiredness, alcohol, drugs, distractions)
+
+**Braking distance:** The distance travelled while the brakes are applied. Depends on:
+
+- Speed (proportional to $v^2$)
+- Mass of the vehicle
+- Condition of brakes and tyres
+- Road conditions (wet, icy)
+- Gradient of the road
+
+### 5.2 Why Braking Distance Increases with the Square of Speed
+
+Using the work-energy theorem: the work done by the braking force equals the change in kinetic
+Energy.
+
+$$Fd = \frac{1}{2}mv^2$$
+
+For a given braking force $F$The braking distance $d = \frac{mv^2}{2F}$ is proportional to $v^2$.
+Doubling the speed quadruples the braking distance. Tripling the speed multiplies it by nine. This
+Is the single most important fact about road safety: small increases in speed produce very large
+Increases in stopping distance.
+
+### 5.3 Reaction Time
+
+Typical reaction time: 0.2 -- 0.9 seconds.
+
+**Worked Example.** A car is travelling at 20 m/s. The driver's reaction time is 0.5 s. The braking
+Distance is 32 m. Calculate the total stopping distance.
+
+$$\mathrm{Thinking distance = 20 \times 0.5 = 10 \mathrm{ m$$
+$$\mathrm{Stopping distance = 10 + 32 = 42 \mathrm{ m$$
+
+### 5.4 Factors Affecting Reaction Time
+
+- **Tiredness:** Reaction time increases significantly when fatigued. After 18 hours without sleep,
+  reaction time is comparable to a blood alcohol concentration of 0.05%.
+- **Alcohol:** Even small amounts of alcohol increase reaction time and impair judgement.
+- **Mobile phones:** Using a phone while driving increases reaction time by 30--50%.
+- **Drugs:** Both illegal drugs and certain medications can impair reaction time.
+- **Age:** Reaction time increases with age, particularly after 60.
+
+## 6. Momentum
+
+### 6.1 Definition
+
+**Momentum** is a vector quantity defined as:
+
+$$p = mv$$
+
+Where $p$ is momentum (kg m/s), $m$ is mass (kg), and $v$ is velocity (m/s).
+
+### 6.2 Conservation of Momentum
+
+In a closed system (no external forces), the total momentum before a collision equals the total
+Momentum after the collision.
+
+$$m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2$$
+
+**Worked Example.** A 2 kg trolley moving at 3 m/s collides with a stationary 1 kg trolley and they
+Stick together. Find the velocity after the collision.
+
+$$2 \times 3 + 1 \times 0 = (2 + 1) \times v$$ $$6 = 3v$$ $$v = 2 \mathrm{ m/s$$
+
+### 6.3 Why Momentum Is Conserved
+
+Newton's third law tells us that the forces between two colliding objects are equal and opposite.
+Since these forces act for the same duration, the impulses are equal and opposite, and therefore the
+Changes in momentum are equal and opposite. The total momentum of the system is unchanged. This is a
+Direct consequence of Newton's laws, not a separate assumption.
+
+### 6.4 Newton's Second Law and Momentum
+
+$$F = \frac{\Delta p}{\Delta t} = \frac{mv - mu}{t}$$
+
+This shows that force equals the rate of change of momentum. This form of Newton's second law is
+More general than $F = ma$ because it remains valid even when the mass changes (e.g., a rocket
+Expelling fuel).
+
+### 6.5 Impact Forces and Safety
+
+For a given change in momentum, increasing the impact time decreases the force:
+
+$$F = \frac{\Delta p}{\Delta t}$$
+
+**Safety features that increase impact time:**
+
+- Crumple zones in cars: the front of the car deforms during a crash, extending the stopping time
+  from perhaps 0.01 s to 0.1 s. Since the momentum change is the same, the average force on the
+  passengers is reduced by a factor of 10.
+- Seat belts (stretch slightly): distribute the decelerating force over a larger area of the body
+  and extend the stopping time.
+- Air bags: provide a cushion that increases the time over which the passenger decelerates.
+- Helmets and padding: increase the time over which an impact force acts.
+- Crash mats: same principle applied to gymnastics and playgrounds.
+
+### 6.6 Elastic and Inelastic Collisions (Higher Tier)
+
+**Elastic collision:** Both momentum and kinetic energy are conserved. Examples: collisions between
+Hard steel balls, collisions between gas molecules.
+
+**Inelastic collision:** Momentum is conserved but kinetic energy is not. Some kinetic energy is
+Transferred to thermal energy, sound, and deformation. Most real-world collisions are inelastic.
+
+**Perfectly inelastic collision:** The objects stick together after the collision. This maximises
+The kinetic energy lost.
+
+## 7. Moments, Levers, and Gears
+
+### 7.1 Moments
+
+A **moment** is the turning effect of a force:
+
+$$M = Fd$$
+
+Where $M$ is moment (Nm), $F$ is force (N), and $d$ is the perpendicular distance from the pivot to
+The line of action of the force (m).
+
+**Principle of moments:** For an object in equilibrium, the sum of clockwise moments equals the sum
+Of anticlockwise moments.
+
+$$\sum M_{\mathrm{clockwise} = \sum M_{\mathrm{anticlockwise}$$
+
+**Worked Example.** A seesaw has a pivot at its centre. A child of mass 30 kg sits 2 m from the
+Pivot. Where must a child of mass 40 kg sit to balance the seesaw?
+
+$$30 \times 9.8 \times 2 = 40 \times 9.8 \times d$$ $$60 = 40d$$
+$$d = 1.5 \mathrm{ m from the pivot$$
+
+### 7.2 Why the Distance Must Be Perpendicular
+
+The moment depends on the perpendicular distance from the pivot to the line of action of the force,
+Not the distance from the pivot to the point where the force is applied. If the force acts at an
+Angle, the effective moment arm is reduced. This is why pushing a door near the hinge requires much
+More force than pushing near the handle: the perpendicular distance is much smaller.
+
+### 7.3 Levers
+
+A **lever** is a simple machine that uses moments. A small force applied at a large distance from
+The pivot can balance (or overcome) a large force at a small distance.
+
+**Mechanical advantage** = load / effort = distance from effort to pivot / distance from load to
+Pivot.
+
+**Classes of lever:**
+
+| Class | Arrangement                 | Example                 |
+| ----- | --------------------------- | ----------------------- |
+| 1     | Pivot between effort & load | Seesaw, scissors        |
+| 2     | Load between pivot & effort | Wheelbarrow, nutcracker |
+| 3     | Effort between pivot & load | Tweezers, forearm       |
+
+### 7.4 Gears
+
+**Gears** transfer rotational motion. If a large gear drives a small gear, the small gear rotates
+Faster but with less turning force (torque).
+
+The ratio of speeds is inversely proportional to the ratio of teeth:
+
+$$\frac{\mathrm{speed of gear  B}{\mathrm{speed of gear  A} = \frac{\mathrm{teeth on gear  A}{\mathrm{teeth on gear  B}$$
+
+This is a consequence of conservation of energy: if the small gear rotates faster, it must exert
+Less torque, because $P = \tau \omega$ (power = torque times angular velocity), and the power
+Transmitted through the gears is (ideally) the same.
+
+## 8. Hooke's Law
+
+### 8.1 Statement
+
+**Hooke's law:** The extension of a spring is directly proportional to the force applied, provided
+The limit of proportionality is not exceeded.
+
+$$F = ke$$
+
+Where $k$ is the spring constant (N/m) and $e$ is the extension (m).
+
+### 8.2 Force-Extension Graph
+
+- The graph is a straight line through the origin up to the **limit of proportionality**
+- Beyond this point, the line curves: the spring no longer obeys Hooke's law
+- The gradient of the linear section equals the spring constant $k$
+- If the force is removed and the spring does not return to its original length, it has exceeded its
+  **elastic limit**
+
+### 8.3 The Spring Constant and Energy Storage
+
+A stiffer spring (higher $k$) stores more energy for the same extension: $E = \frac{1}{2}ke^2$. Two
+Identical springs in parallel have twice the spring constant ($k_{\mathrm{total} = 2k$) and store
+Twice the energy for the same extension. Two identical springs in series have half the spring
+Constant ($k_{\mathrm{total} = \frac{k}{2}$).
+
+### 8.4 Required Practical: Investigating Force and Extension
+
+**Method:**
+
+1. Measure the natural length of the spring.
+2. Add masses one at a time, recording the total mass and the new length.
+3. Calculate the extension for each mass.
+4. Plot a graph of force (weight = $mg$) against extension.
+5. The gradient gives the spring constant.
+
+**Sources of error:**
+
+- The spring may not return to its original length after large forces (exceeding the elastic limit).
+- Parallax error when reading the ruler.
+- The ruler may not be perfectly vertical.
+- The masses may swing, causing additional stretching.
+
+## 9. Pressure (Higher Tier)
+
+### 9.1 Definition
+
+Pressure is the force per unit area:
+
+$$P = \frac{F}{A}$$
+
+Where $P$ is pressure (pascals, Pa), $F$ is force (N), and $A$ is area (m$^2$).
+
+### 9.2 Pressure in Fluids
+
+The pressure in a fluid increases with depth:
+
+$$P = h\rho g$$
+
+Where $h$ is the depth, $\rho$ is the density of the fluid, and $g$ is gravitational field strength.
+
+This explains why dams are thicker at the bottom: the pressure from the water increases linearly
+With depth, so the base must withstand a much greater force than the top.
+
+### 9.3 Upthrust and Floating
+
+An object submerged in a fluid experiences an upward force called **upthrust** equal to the weight
+Of the fluid displaced. An object floats when its weight equals the upthrust. A steel ship floats
+Because its hull encloses a large volume of air, making its average density less than that of water.
+
+## Common Pitfalls
+
+- **Confusing mass and weight.** Mass is in kg (scalar); weight is in N (vector). Mass does not
+  change; weight depends on $g$.
+- **Drawing force arrows on the wrong object** in free body diagrams. Show forces on ONE object
+  only.
+- **Confusing Newton's third law pairs with balanced forces.** Third law pairs act on DIFFERENT
+  objects; balanced forces act on the SAME object.
+- **Forgetting that momentum is a vector.** Assign a positive direction and include signs.
+- **Using the wrong distance in moment calculations.** It must be the PERPENDICULAR distance from
+  the pivot.
+- **Stating that terminal velocity is when drag equals mass.** It is when drag equals WEIGHT.
+- **Including internal forces on a free body diagram.** Only show external forces acting on the
+  object.
+- **Writing $F = ma$ when the mass is changing** (e.g., a burning rocket). Use $F = \frac{dp}{dt}$
+  instead.
+- **Assuming friction always opposes motion.** Friction opposes relative motion (or the tendency
+  towards it). A block on a conveyor belt may be accelerated _by_ friction.
+- **Forgetting that the normal force is not always equal to $mg$.** On an inclined plane or in a
+  lift, the normal force is different.
+
+## Practice Questions
+
+1. A 1500 kg car travelling at 30 m/s decelerates uniformly to rest in 5 seconds. Calculate the
+   decelerating force.
+
+2. Explain, with reference to Newton's laws, why a passenger in a car is thrown forward when the car
+   stops suddenly.
+
+3. A 60 kg person stands on a bathroom scale in a lift. Calculate the reading on the scale when the
+   lift accelerates upward at 2 m/s$^2$.
+
+4. Two objects collide. Object A (mass 3 kg, velocity 4 m/s to the right) collides with object B
+   (mass 2 kg, velocity 3 m/s to the left). After the collision, A moves at 1 m/s to the left. Find
+   the velocity of B after the collision.
+
+5. A uniform metre rule is pivoted at the 30 cm mark. A 4 N weight hangs from the 10 cm mark. What
+   force must be applied at the 80 cm mark to balance the rule?
+
+6. Explain why a skydiver reaches terminal velocity. Describe what happens when they open their
+   parachute.
+
+7. A spring has a spring constant of 500 N/m. How much energy is stored when it is extended by 0.04
+   m?
+
+8. Calculate the thinking distance and braking distance for a car travelling at 30 m/s, given a
+   reaction time of 0.6 s and a deceleration of 6 m/s$^2$.
+
+9. A lever has an effort of 50 N applied 0.8 m from the pivot. What load can be lifted at 0.2 m from
+   the pivot?
+
+10. Explain how crumple zones reduce the force on passengers during a collision, using the concept
+    of momentum.
+
+11. A 5 kg block rests on a rough plane inclined at $30^{\circ}$ to the horizontal. The coefficient
+    of friction is 0.3. Determine whether the block slides, and if so, calculate its acceleration.
+
+12. A tennis ball of mass 0.06 kg is hit at 25 m/s. The racket is in contact with the ball for 0.005
+    s. Calculate the average force exerted on the ball.
+
+13. Two identical springs each have spring constant 200 N/m. Calculate the effective spring constant
+    when they are connected (a) in parallel and (b) in series.
+
+14. A hydraulic press has a small piston of area $0.01$ m$^2$ and a large piston of area $0.5$
+    m$^2$. If a force of 200 N is applied to the small piston, what force is exerted by the large
+    piston?
+
+15. Explain why a car tyre needs to be inflated to the correct pressure. Include reference to the
+    contact area between the tyre and the road.
+
+## 10. Derivation: Stopping Distance from the Work-Energy Theorem
+
+The relationship between braking distance and speed can be derived rigorously using the work-energy
+Theorem. When a vehicle brakes to a stop, the braking force does negative work equal to the change
+In kinetic energy:
+
+$$F d = \frac{1}{2}mv^2$$
+
+Solving for $d$:
+
+$$d = \frac{mv^2}{2F}$$
+
+This derivation reveals two key facts. First, for a given braking force $F$The braking distance is
+Proportional to $v^2$: doubling the speed quadruples the braking distance. Second, for a given
+Speed, the braking distance is inversely proportional to the braking force: better brakes (larger
+$F$) reduce the stopping distance, but the improvement is limited because the maximum braking force
+Is set by the friction between the tyres and the road.
+
+## 11. Worked Example: Block on an Inclined Plane with Friction
+
+A $3 \mathrm{ kg$ block is placed on a rough plane inclined at $35^{\circ}$ to the horizontal. The
+Coefficient of friction is $0.25$.
+
+**Part (a):** Does the block slide?
+
+Component of weight down the slope:
+$mg\sin\theta = 3 \times 9.8 \times \sin 35^{\circ} = 16.9 \mathrm{ N$.
+
+Normal force: $N = mg\cos\theta = 3 \times 9.8 \times \cos 35^{\circ} = 24.1 \mathrm{ N$.
+
+Maximum static friction: $f_{\max} = \mu_s N = 0.25 \times 24.1 = 6.02 \mathrm{ N$.
+
+Since $16.9 \mathrm{ N \gt 6.02 \mathrm{ N$The block slides.
+
+**Part (b):** Find the acceleration.
+
+$$a = g(\sin\theta - \mu\cos\theta) = 9.8(\sin 35^{\circ} - 0.25\cos 35^{\circ})$$
+
+$$= 9.8(0.5736 - 0.25 \times 0.8192) = 9.8(0.5736 - 0.2048) = 9.8 \times 0.3688 = 3.61 \mathrm{ m/s^2$$
+
+## 12. Worked Example: Inelastic Collision with Kinetic Energy Loss
+
+Two trolleys collide on a frictionless track. Trolley A has mass $2 \mathrm{ kg$ and velocity
+$4 \mathrm{ m/s$ to the right. Trolley B has mass $3 \mathrm{ kg$ and velocity $2 \mathrm{ m/s$ to
+the Left. They stick together.
+
+**Step 1:** Choose a sign convention (right = positive).
+
+$$v_A = +4 \mathrm{ m/s, \qquad v_B = -2 \mathrm{ m/s$$
+
+**Step 2:** Apply conservation of momentum.
+
+$$m_A v_A + m_B v_B = (m_A + m_B) v_f$$
+
+$$2(4) + 3(-2) = (2 + 3) v_f$$
+
+$$8 - 6 = 5 v_f$$
+
+$$v_f = 0.4 \mathrm{ m/s to the right$$
+
+**Step 3:** Calculate kinetic energy before and after.
+
+$$E_{k,i} = \frac{1}{2}(2)(16) + \frac{1}{2}(3)(4) = 16 + 6 = 22 \mathrm{ J$$
+
+$$E_{k,f} = \frac{1}{2}(5)(0.16) = 0.4 \mathrm{ J$$
+
+**Kinetic energy lost:** $22 - 0.4 = 21.6 \mathrm{ J$ (transferred to thermal energy and sound).
+
+This illustrates that perfectly inelastic collisions can lose a very large fraction of the initial
+Kinetic energy.
+
+## 13. Why Momentum Is Conserved: A Rigorous Argument
+
+Consider two objects colliding. During the collision, object A exerts a force
+$\vec{F}_{A \mathrm{ on  B}$ on object B, and by Newton's third law, object B exerts an equal and
+Opposite force $\vec{F}_{B \mathrm{ on  A} = -\vec{F}_{A \mathrm{ on  B}$ on object A.
+
+By Newton's second law:
+
+$$\vec{F}_{A \mathrm{ on  B} = \frac{d\vec{p}_B}{dt}, \qquad \vec{F}_{B \mathrm{ on  A} = \frac{d\vec{p}_A}{dt}$$
+
+Adding these:
+
+$$\frac{d\vec{p}_A}{dt} + \frac{d\vec{p}_B}{dt} = \vec{F}_{B \mathrm{ on  A} + \vec{F}_{A \mathrm{ on  B} = 0$$
+
+$$\frac{d}{dt}(\vec{p}_A + \vec{p}_B) = 0$$
+
+$$\vec{p}_A + \vec{p}_B = \mathrm{constant$$
+
+This proof extends to any number of particles. Internal forces always cancel in pairs, so the total
+Momentum of a closed system is conserved. This is not a separate law -- it is a direct consequence
+Of Newton's second and third laws.
+
+## 14. Summary Table: Types of Force
+
+| Force                 | Direction                          | Formula                            | Notes                                        |
+| --------------------- | ---------------------------------- | ---------------------------------- | -------------------------------------------- |
+| Weight                | Vertically downward                | $W = mg$                           | Always present near a gravitational field    |
+| Normal reaction       | Perpendicular to surface           | Adjusts to prevent penetration     | Not always equal to $mg$                     |
+| Friction              | Opposes relative motion            | $f \leq \mu N$                     | Static friction adjusts; kinetic is constant |
+| Tension               | Along the string, away from object | Equal throughout a massless string | Can only pull, never push                    |
+| Air resistance (drag) | Opposes motion through fluid       | $F_d \propto v^2$ at high speeds   | Increases with speed                         |
+| Upthrust              | Upward (in a fluid)                | Equals weight of fluid displaced   | Explains why objects float                   |
+
+## 15. Worked Example: Hydraulic Press
+
+A hydraulic press has a small piston of area $0.01 \mathrm{ m^2$ and a large piston of area
+$0.5 \mathrm{ m^2$. A force of 200 N is applied to the small piston.
+
+By Pascal's principle, the pressure is the same throughout the fluid:
+
+$$P = \frac{F_1}{A_1} = \frac{200}{0.01} = 20000 \mathrm{ Pa$$
+
+$$F_2 = P \times A_2 = 20000 \times 0.5 = 10000 \mathrm{ N$$
+
+The force is multiplied by a factor of $A_2/A_1 = 50$. However, by conservation of energy, the small
+Piston must move 50 times further than the large piston. The work input equals the work output
+(assuming no losses).
+
+## 16. Practice Questions (Additional)
+
+16. A car of mass 1000 kg travelling at $15 \mathrm{ m/s$ collides with a stationary car of mass
+    1500 kg. The bumpers lock and they move off together. Calculate their common velocity and the
+    kinetic energy lost in the collision.
+
+17. A $2 \mathrm{ kg$ block is pushed up a $30^{\circ}$ incline with an initial speed of
+    $8 \mathrm{ m/s$. The coefficient of kinetic friction is $0.2$. Calculate how far up the incline
+    the block travels before stopping and whether it slides back down.
+
+18. Explain why a passenger in a car feels thrown forward when the car brakes suddenly. Refer to
+    Newton's laws in your answer.
+
+19. A uniform metre rule is balanced on a pivot at the 40 cm mark. A 3 N weight hangs from the 10 cm
+    mark and a 5 N weight hangs from the 70 cm mark. Calculate where an additional 2 N weight must
+    be hung to restore balance.
+
+20. A football is kicked from the ground at $20 \mathrm{ m/s$ at an angle of $35^{\circ}$ to the
+    horizontal. Calculate the maximum height, the time of flight, and the horizontal range. (Assume
+    $g = 9.8 \mathrm{ m/s^2$ and ignore air resistance.)
+
+## Practice Problems
+
+<details>
+<summary>Question 1: Resultant force and acceleration</summary>
+
+A $5 \mathrm{ kg$ object is acted on by two forces: $20 \mathrm{ N$ to the right and $8 \mathrm{ N$
+to the left. Calculate the resultant force and the acceleration.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Resultant force $= 20 - 8 = 12 \mathrm{ N$ to the right.
+
+Acceleration $= F/m = 12/5 = 2.4 \mathrm{ m/s^2$ to the right.
+
+</details>
+
+<details>
+<summary>Question 2: Weight and mass on the Moon</summary>
+
+An astronaut has a mass of $80 \mathrm{ kg$ on Earth. The gravitational field strength on the Moon
+is $1.6 \mathrm{ N/kg$. Calculate (a) the astronaut's weight on Earth and (b) the astronaut's weight
+on the Moon.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+(a) $W = mg = 80 \times 9.8 = 784 \mathrm{ N$.
+
+(b) $W = mg = 80 \times 1.6 = 128 \mathrm{ N$.
+
+Mass remains the same ($80 \mathrm{ kg$) on both Earth and the Moon.
+
+</details>
+
+<details>
+<summary>Question 3: Stopping distance</summary>
+
+A car travelling at $30 \mathrm{ m/s$ has a thinking distance of $21 \mathrm{ m$ and a braking
+distance of $54 \mathrm{ m$. Calculate the total stopping distance. Explain why the braking distance
+increases much more rapidly than the thinking distance when speed doubles.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Total stopping distance $= 21 + 54 = 75 \mathrm{ m$.
+
+Thinking distance is proportional to speed ($d_t = vt$), so doubling speed doubles thinking
+distance. Braking distance is proportional to speed squared ($d_b \propto v^2$Since $KE \propto v^2$
+and $W = Fd$), so doubling speed quadruples the braking distance. This is why speeding is so
+dangerous.
+
+</details>
+
+<details>
+<summary>Question 4: Hooke's Law</summary>
+
+A spring has a spring constant of $200 \mathrm{ N/m$. Calculate the extension when a $50 \mathrm{ N$
+force is applied. Calculate the energy stored in the spring.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+$F = ke$So $e = F/k = 50/200 = 0.25 \mathrm{ m$.
+
+Energy stored
+$= \frac{1}{2}ke^2 = 0.5 \times 200 \times 0.25^2 = 0.5 \times 200 \times 0.0625 = 6.25 \mathrm{ J$.
+
+</details>
+
+<details>
+<summary>Question 5: Terminal velocity</summary>
+
+Explain why a skydiver reaches terminal velocity. Describe the forces acting on the skydiver at
+terminal velocity.
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+Initially, the skydiver accelerates downward due to gravity ($F = mg$). As speed increases, air
+resistance (drag) increases. Drag acts upward, opposing the motion. Eventually, the upward drag
+force equals the downward gravitational force, so the net force is zero and the skydiver stops
+accelerating. They continue at a constant speed called terminal velocity.
+
+At terminal velocity: weight $=$ drag. The skydiver is in equilibrium (Newton's first law).
+
+</details>
+
+## Worked Examples
+
+**Example 1: Newton's second law**
+
+A $2.0\,\text{kg}$ object is pulled across a rough horizontal surface by a horizontal force of
+$15\,\text{N}$. The frictional force is $5.0\,\text{N}$. Calculate the acceleration.
+
+**Solution:**
+
+$$F_{\text{net}} = F_{\text{applied}} - F_{\text{friction}} = 15 - 5.0 = 10\,\text{N}$$
+
+$$a = \frac{F_{\text{net}}}{m} = \frac{10}{2.0} = 5.0\,\text{m\,s}^{-2}$$
+
+## Summary
+
+This topic covers the key concepts of Forces for GCSE Physics. Focus on understanding the
+fundamental principles, practising with exam-style questions, and applying your knowledge to
+unfamiliar contexts.

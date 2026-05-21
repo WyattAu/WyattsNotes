@@ -368,3 +368,46 @@ $P = \dfrac{4}{15} \times \dfrac{6}{14} \times \dfrac{5}{13} \times 6 = \dfrac{7
 
 4. Losing marks by not showing sufficient working — always write out each step, especially in proof
    questions.
+
+## Worked Examples
+
+### Example 1: Bayes' Theorem
+
+**Problem.** A disease affects 1% of the population. A test has 95% sensitivity
+($P(\text{+}|\text{disease}) = 0.95$) and 90% specificity ($P(\text{-}|\text{no disease}) = 0.90$).
+Find the probability a person has the disease given a positive test.
+
+**Solution.** By Bayes' theorem:
+
+$$P(D|+) = \frac{P(+|D)P(D)}{P(+|D)P(D) + P(+|D^c)P(D^c)} = \frac{0.95 \times 0.01}{0.95 \times 0.01 + 0.10 \times 0.99}$$
+
+$$P(D|+) = \frac{0.0095}{0.0095 + 0.099} = \frac{0.0095}{0.1085} \approx 0.0876$$
+
+Despite the positive test, there is only an 8.8% chance of having the disease, due to the low
+prevalence.
+
+$\blacksquare$
+
+### Example 2: Conditional Probability and Tree Diagrams
+
+**Problem.** Bag A contains 4 red and 6 blue balls. Bag B contains 7 red and 3 blue balls. A fair
+die is rolled: if it shows 1 or 2, a ball is drawn from Bag A; otherwise from Bag B. Find the
+probability the ball is red, and the probability Bag A was chosen given the ball is red.
+
+**Solution.** $P(A) = \frac{2}{6} = \frac{1}{3}$, $P(B) = \frac{2}{3}$.
+
+$P(R|A) = \frac{4}{10} = 0.4$, $P(R|B) = \frac{7}{10} = 0.7$.
+
+$P(R) = P(R|A)P(A) + P(R|B)P(B) = 0.4 \times \frac{1}{3} + 0.7 \times \frac{2}{3} = \frac{0.4 + 1.4}{3} = \frac{1.8}{3} = 0.6$.
+
+$$P(A|R) = \frac{P(R|A)P(A)}{P(R)} = \frac{0.4 \times \frac{1}{3}}{0.6} = \frac{0.1333}{0.6} \approx 0.222$$
+
+$\blacksquare$
+
+## Summary
+
+- $P(A|B) = \frac{P(A \cap B)}{P(B)}$; multiplication rule: $P(A \cap B) = P(A|B)P(B)$.
+- Independence: $A$ and $B$ are independent iff $P(A \cap B) = P(A)P(B)$.
+- Bayes' theorem: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$ inverts conditional probabilities.
+- Total probability: $P(B) = \sum P(B|A_i)P(A_i)$ partitions the sample space.
+- Tree diagrams organise multi-stage probability calculations systematically.

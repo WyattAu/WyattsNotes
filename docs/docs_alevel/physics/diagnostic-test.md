@@ -493,5 +493,5 @@ $= -1/(RC) = -0.125$. $\tau = RC = 1/0.125 = 8.0$ s.
 
 3. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
 
-4. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+4. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.

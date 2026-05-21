@@ -63,7 +63,7 @@ for goodness of fit and independence.
 Every hypothesis test follows the same five-step structure:
 
 1. **State hypotheses** — $H_0$ (null: no effect/difference) and $H_1$ (alternative)
-2. **Choose significance level** — typically $\alpha = 0.05$ or $0.01$
+2. **Choose significance level** — $\alpha = 0.05$ or $0.01$
 3. **Calculate the test statistic** — using the appropriate distribution
 4. **Determine the critical region or $p$-value** — compare to $\alpha$
 5. **State the conclusion in context** — never just "reject $H_0$"; explain what this means for the

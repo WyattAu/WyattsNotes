@@ -438,7 +438,7 @@ Lower concentration of $\mathrm{H^+}$ ions than a strong acid of the same concen
 
 <<<<<<< Updated upstream:docs/docs_dse/chemistry/dse-chemistry.md
 
-1. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+1. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 2. Assuming that a strong acid always has a lower pH than a weak acid without considering
    concentration.

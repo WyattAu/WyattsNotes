@@ -1139,7 +1139,7 @@ Example result:
 
 ## Common Pitfalls
 
-1. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+1. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 2. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
    molecular refers to individual molecules.

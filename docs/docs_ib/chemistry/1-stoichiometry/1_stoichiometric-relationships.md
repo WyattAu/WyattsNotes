@@ -1051,7 +1051,7 @@ For the A-Level treatment of this topic, see
 2. Assuming that a strong acid always has a lower pH than a weak acid without considering
    concentration.
 
-3. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+3. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 4. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
 

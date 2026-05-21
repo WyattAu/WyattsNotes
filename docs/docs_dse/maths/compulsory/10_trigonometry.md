@@ -920,8 +920,8 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-- **Mixing up radians and degrees.** Always check which unit is required; DSE typically uses radians
-  in Paper 2.
+- **Mixing up radians and degrees.** Always check which unit is required; DSE uses radians in
+  Paper 2.
 
 - **Wrong sign in CAST diagram.** Each quadrant has specific signs: All, Sine, Tangent, Cosine.
 

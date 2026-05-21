@@ -2225,8 +2225,8 @@ high probability (Karger's algorithm).
 - **Confusing average and worst-case complexity.** Quicksort: average $O(n \log n)$, worst case
   $O(n^2)$. **Fix:** Always state which case; worst case is the guaranteed upper bound.
 - **Wrong BST deletion.** Deleting a node with two children requires finding the in-order successor
-  (or predecessor), not simply removing the node. **Fix:** Replace the node with its in-order
-  successor, then delete the successor from its original position.
+  (or predecessor), not removing the node. **Fix:** Replace the node with its in-order successor,
+  then delete the successor from its original position.
 - **Confusing amortised and worst-case analysis.** Amortised: average cost per operation over a
   sequence. Worst-case: maximum cost of a single operation. **Fix:** Dynamic array: $O(1)$ amortised
   append, $O(n)$ worst case (when resizing).

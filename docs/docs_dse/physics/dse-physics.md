@@ -635,8 +635,8 @@ If you get this wrong, revise: Optics / Curved Mirrors
 1. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.
 
-2. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+2. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
@@ -645,8 +645,8 @@ If you get this wrong, revise: Optics / Curved Mirrors
 5. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
 
-6. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+6. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 7. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.

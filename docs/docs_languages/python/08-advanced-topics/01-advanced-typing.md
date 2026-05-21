@@ -1153,3 +1153,91 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+### Example 1: Generic Protocol with Type Constraints
+
+**Problem.** Define a generic `Sorter` protocol that works with any comparable type, and implement a
+type-safe merge sort.
+
+**Solution.**
+
+```python
+from typing import Protocol, TypeVar, Sequence, list
+
+T = TypeVar('T')
+
+class Comparable(Protocol):
+    def __lt__(self, other: T, /) -> bool: ...
+    def __gt__(self, other: T, /) -> bool: ...
+
+CT = TypeVar('CT', bound=Comparable)
+
+def merge_sort(items: Sequence[CT]) -> list[CT]:
+    if len(items) <= 1:
+        return list(items)
+    mid = len(items) // 2
+    left = merge_sort(items[:mid])
+    right = merge_sort(items[mid:])
+    return merge(left, right)
+
+def merge(left: list[CT], right: list[CT]) -> list[CT]:
+    result: list[CT] = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+```
+
+The `Protocol` defines structural typing: any class with `__lt__` and `__gt__` satisfies
+`Comparable` without explicit inheritance. `TypeVar('CT', bound=Comparable)` constrains the generic
+to comparable types.
+
+$\blacksquare$
+
+### Example 2: Overload for Strict Type Narrowing
+
+**Problem.** Write a `first` function that returns `T` for non-empty sequences and `None` for empty
+ones, using `@overload` to express both return types.
+
+**Solution.**
+
+```python
+from typing import overload, Sequence, TypeVar
+
+T = TypeVar('T')
+
+@overload
+def first(seq: Sequence[T]) -> T: ...
+@overload
+def first(seq: Sequence[object]) -> T | None: ...
+
+def first(seq: Sequence[T]) -> T | None:
+    if not seq:
+        return None
+    return seq[0]
+```
+
+The type checker selects the first overload when it can prove the sequence is non-empty (e.g., after
+a length check), returning `T`. Otherwise it falls back to `T | None`.
+
+$\blacksquare$
+
+## Summary
+
+- `@overload` declares multiple signatures for one function; the implementation handles all cases at
+  runtime.
+- `Protocol` enables structural subtyping: classes satisfy a protocol by having the required
+  methods, without inheritance.
+- `TypeVar` with `bound` constrains generics; `TypeVarTuple` and `ParamSpec` handle variadic and
+  callable generics.
+- `TypeGuard` and `TypeIs` narrow types in conditional branches for the type checker.
+- `dataclass_transform` decorates functions that create dataclass-like classes from type hints.

@@ -1,1 +1,4 @@
-{ "label": "01 Zfs", "position": 1 }
+{
+  "label": "ZFS",
+  "position": 1
+}

@@ -122,3 +122,8 @@ Modification.
 
 4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
    applications.
+
+### Getting Started
+
+Read the modules in order. Each module builds on the previous one and assumes you have internalised
+the key results. Code examples can be edited live in the embedded Compiler Explorer iframe above.

@@ -5,9 +5,9 @@ description:
   'Rigorous qualification exam notes covering GCSE Notes. Includes definitions, derivations, worked
   examples, and exam-style problems.'
 tags:
-  - GCSE
+  - gcse
 categories:
-  - GCSE
+  - gcse
 slug: intro
 ---
 
@@ -46,15 +46,15 @@ Understand.
 
 ## Subjects
 
-- **[English Literature](english/gcse-english-literature)** -- Shakespeare, the 19th-century novel,
-  modern texts and poetry, and essay writing
-- **[Mathematics](maths/number)** -- Number, algebra, geometry, statistics, and ratio, proportion,
-  and rates of change
-- **[Physics](physics/energy)** -- Energy, forces, waves, electricity, and magnetism and
+- **[English Literature](english)** -- Shakespeare, the 19th-century novel, modern texts and poetry,
+  and essay writing
+- **[Mathematics](maths/1-number/1_number)** -- Number, algebra, geometry, statistics, and ratio,
+  proportion, and rates of change
+- **[Physics](physics/1-energy/1_energy)** -- Energy, forces, waves, electricity, and magnetism and
   electromagnetism
-- **[Chemistry](chemistry/atomic-structure)** -- Atomic structure, bonding, chemical reactions,
-  quantitative chemistry, and organic chemistry
-- **[Biology](biology/cell-biology)** -- Cell biology, organisation, bioenergetics, inheritance,
-  variation and evolution, and ecology
-- **[Computer Science](computer-science/algorithms)** -- Algorithms, programming, data
-  representation, computer systems, and networks
+- **[Chemistry](chemistry/1-atomic-structure/1_atomic-structure)** -- Atomic structure, bonding,
+  chemical reactions, quantitative chemistry, and organic chemistry
+- **[Biology](biology/1-cell-biology/1_cell-biology)** -- Cell biology, organisation, bioenergetics,
+  inheritance, variation and evolution, and ecology
+- **[Computer Science](computer-science/4-algorithms/4_algorithms)** -- Algorithms, programming,
+  data representation, computer systems, and networks

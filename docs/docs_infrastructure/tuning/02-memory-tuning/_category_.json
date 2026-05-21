@@ -1,1 +1,4 @@
-{ "label": "02 Memory Tuning", "position": 1 }
+{
+  "label": "Memory Tuning",
+  "position": 1
+}

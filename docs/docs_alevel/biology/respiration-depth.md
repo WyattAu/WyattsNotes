@@ -2181,3 +2181,48 @@ is transported to the liver, converted back to glucose, and returned to the musc
 3. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
 4. Failing to link structure to function when describing biological molecules, cells, or organs.
+
+## Worked Examples
+
+### Example 1: ATP Yield from a Fatty Acid
+
+**Problem.** Calculate the net ATP yield from the complete aerobic oxidation of one molecule of
+palmitic acid ($\mathrm{C_{16}H_{32}O_2}$).
+
+**Solution.** Palmitic acid undergoes activation (costs 2 ATP), then 7 rounds of $\beta$-oxidation
+producing 7 $\mathrm{FADH_2}$, 7 NADH, and 8 acetyl CoA.
+
+- 7 $\mathrm{FADH_2} \times 1.5 = 10.5$ ATP
+- 7 NADH $\times 2.5 = 17.5$ ATP
+- 8 acetyl CoA through Krebs cycle: $8 \times 10 = 80$ ATP (24 NADH, 8 $\mathrm{FADH_2}$, 8 GTP)
+- Activation cost: $-2$ ATP
+
+$$\text{Total} = 10.5 + 17.5 + 80 - 2 = 106\ \mathrm{ATP}$$
+
+$\blacksquare$
+
+### Example 2: Respirometer Calculation
+
+**Problem.** A respirometer with soda lime shows the manometer liquid moves $24\ \mathrm{mm}$ in 15
+minutes. The tube diameter is $1.0\ \mathrm{mm}$. Calculate the rate of $\mathrm{O_2}$ consumption
+in $\mathrm{cm^3\ min^{-1}}$.
+
+**Solution.** Cross-sectional area: $A = \pi r^2 = \pi \times (0.5)^2 = 0.785\ \mathrm{mm^2}$.
+
+Volume: $V = 0.785 \times 24 = 18.84\ \mathrm{mm^3} = 0.01884\ \mathrm{cm^3}$.
+
+$$\text{Rate} = \frac{0.01884}{15} = 0.00126\ \mathrm{cm^3\ min^{-1}}$$
+
+$\blacksquare$
+
+## Summary
+
+- Aerobic respiration yields approximately 30--32 ATP per glucose: glycolysis (2 net), link reaction
+  (5), Krebs cycle (20), oxidative phosphorylation (5 from glycolysis NADH included).
+- Oxidative phosphorylation uses the electron transport chain and chemiosmosis; oxygen is the final
+  electron acceptor.
+- Anaerobic respiration yields only 2 ATP per glucose; lactate fermentation (animals) or alcoholic
+  fermentation (yeast) regenerates $\mathrm{NAD^+}$.
+- The respiratory quotient ($\mathrm{RQ} = \mathrm{CO_2}/\mathrm{O_2}$) identifies the substrate:
+  carbohydrates $\approx 1.0$, lipids $\approx 0.7$, proteins $\approx 0.8$.
+- PFK is the key regulatory enzyme of glycolysis, inhibited by ATP and citrate, activated by AMP.

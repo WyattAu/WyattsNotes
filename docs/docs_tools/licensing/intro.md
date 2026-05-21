@@ -35,7 +35,7 @@ Software licensing exists on a spectrum defined by how much freedom the license 
 Users and what obligations it imposes in return:
 
 **Proprietary** — All rights reserved. The copyright holder grants limited, specific permissions (
-via an End User License Agreement, or EULA). No right to modify, redistribute, or in many Cases even
+via an End User License Agreement, or EULA). No right to modify, redistribute, or even
 reverse-engineer. The license can be revoked and is often restricted to a specific number Of users,
 machines, or use cases.
 

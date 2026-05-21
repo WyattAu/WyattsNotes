@@ -2204,3 +2204,50 @@ Where:
 
 6. Writing vague answers without specific biological terminology — use precise terms (e.g.,
    'phospholipid bilayer' not 'membrane').
+
+## Worked Examples
+
+### Example 1: Hardy-Weinberg with Selection
+
+**Problem.** In a population, the frequency of the recessive allele $a$ is $q = 0.3$. The genotype
+$aa$ has a selection coefficient of $s = 0.6$. Calculate the frequency of allele $a$ after one
+generation of selection.
+
+**Solution.** Genotype frequencies before selection: $p^2 = 0.49$ ($AA$), $2pq = 0.42$ ($Aa$),
+$q^2 = 0.09$ ($aa$).
+
+Fitness values: $w_{AA} = 1$, $w_{Aa} = 1$, $w_{aa} = 1 - 0.6 = 0.4$.
+
+Mean fitness: $\bar{w} = 0.49 + 0.42 + 0.09 \times 0.4 = 0.49 + 0.42 + 0.036 = 0.946$.
+
+New frequency of $a$:
+
+$$q' = \frac{q^2 \cdot w_{aa} + pq \cdot w_{Aa}}{\bar{w}} = \frac{0.09 \times 0.4 + 0.21}{0.946} = \frac{0.036 + 0.21}{0.946} = \frac{0.246}{0.946} = 0.260$$
+
+The frequency decreased from 0.3 to 0.260. $\blacksquare$
+
+### Example 2: Dihybrid Cross with Epistasis
+
+**Problem.** In sweet peas, flower colour requires both gene $C$ and gene $P$ to have at least one
+dominant allele for purple flowers. Two plants with genotype $CcPp$ are crossed. If 160 offspring
+are produced, how many are expected to be purple and how many white?
+
+**Solution.** This is supplementary epistasis with a 9:7 ratio.
+
+Purple ($C\_P\_$): $\frac{9}{16} \times 160 = 90$.
+
+White ($ccP\_$, $C\_pp$, $ccpp$): $\frac{7}{16} \times 160 = 70$.
+
+Ratio: **90 purple : 70 white**. $\blacksquare$
+
+## Summary
+
+- Epistasis produces modified dihybrid ratios (9:3:4, 12:3:1, 9:7, 15:1, 13:3) depending on how
+  genes interact.
+- Linked genes show excess parental phenotypes; recombination frequency $\approx$ map distance in
+  cM.
+- Hardy-Weinberg equilibrium: $p^2 + 2pq + q^2 = 1$ predicts genotype frequencies from allele
+  frequencies.
+- Selection against recessive alleles is slow because most copies are hidden in heterozygotes.
+- The chi-squared test compares observed and expected ratios to test for linkage or deviation from
+  H-W equilibrium.

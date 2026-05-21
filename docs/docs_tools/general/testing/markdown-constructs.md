@@ -77,3 +77,11 @@ $$
 3. Not practising with past papers or exercises under timed conditions.
 
 4. Ignoring feedback from marked work and failing to address recurring weaknesses.
+
+### Additional Math Examples
+
+Inline math: $E = mc^2$ and $\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$.
+
+Block math with aligned equations:
+
+$$\begin{aligned} \nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\ \nabla \cdot \mathbf{B} &= 0 \end{aligned}$$

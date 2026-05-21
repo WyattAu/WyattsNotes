@@ -981,6 +981,6 @@ $-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
 4. Assuming that a strong acid always has a lower pH than a weak acid without considering
    concentration.
 
-5. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+5. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 6. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.

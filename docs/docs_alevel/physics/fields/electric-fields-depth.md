@@ -453,8 +453,48 @@ C $= 263$ nC.
 4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.
 
-5. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+5. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 6. Forgetting to include units in final answers, especially when working with derived units like
    $\text{N}\,\text{kg}^{-1}\,\text{m}^2$.
+
+## Worked Examples
+
+### Example 1: Electric Field Between Parallel Plates
+
+**Problem.** Two parallel plates are separated by $5\ \mathrm{cm}$ and have a potential difference
+of $2000\ \mathrm{V}$ across them. Find the electric field strength and the force on an electron
+between the plates.
+
+**Solution.** $$E = \frac{V}{d} = \frac{2000}{0.05} = 40000\ \mathrm{V\,m^{-1}}$$
+
+Force on the electron:
+
+$$F = eE = 1.6 \times 10^{-19} \times 40000 = 6.4 \times 10^{-15}\ \mathrm{N}$$
+
+$\blacksquare$
+
+### Example 2: Coulomb's Law for Two Charges
+
+**Problem.** Two point charges $+3\ \mathrm{nC}$ and $-5\ \mathrm{nC}$ are separated by
+$10\ \mathrm{cm}$ in vacuum. Calculate the electrostatic force between them.
+
+**Solution.**
+$$F = \frac{1}{4\pi\varepsilon_0} \frac{|q_1 q_2|}{r^2} = \frac{8.99 \times 10^9 \times 3 \times 10^{-9} \times 5 \times 10^{-9}}{(0.1)^2}$$
+
+$$F = \frac{8.99 \times 10^9 \times 15 \times 10^{-18}}{0.01} = \frac{134.85 \times 10^{-9}}{0.01} = 1.35 \times 10^{-5}\ \mathrm{N}$$
+
+The force is attractive (opposite charges).
+
+$\blacksquare$
+
+## Summary
+
+- Coulomb's law: $F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}$; like charges repel, unlike attract.
+- Electric field strength: $E = \frac{F}{q}$; for a point charge
+  $E = \frac{Q}{4\pi\varepsilon_0 r^2}$.
+- Uniform field between parallel plates: $E = \frac{V}{d}$; equipotential lines are perpendicular to
+  field lines.
+- Electric potential: $V = \frac{Q}{4\pi\varepsilon_0 r}$; potential energy: $W = qV$.
+- $E = -\frac{dV}{dr}$; the electric field is the negative gradient of the potential.

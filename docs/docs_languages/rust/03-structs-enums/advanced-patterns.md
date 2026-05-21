@@ -1000,3 +1000,100 @@ theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+### Example 1: Newtype with Trait Implementation
+
+**Problem.** Create a `Celsius` newtype that prevents mixing with `Fahrenheit` and implements
+arithmetic operators.
+
+**Solution.**
+
+```rust
+#[derive(Debug, Clone, Copy)]
+struct Celsius(f64);
+
+impl Celsius {
+    fn from_fahrenheit(f: f64) -> Self {
+        Celsius((f - 32.0) * 5.0 / 9.0)
+    }
+
+    fn to_fahrenheit(self) -> f64 {
+        self.0 * 9.0 / 5.0 + 32.0
+    }
+}
+
+impl std::ops::Add for Celsius {
+    type Output = Self;
+    fn add(self, rhs: Self) -> Self::Output {
+        Celsius(self.0 + rhs.0)
+    }
+}
+
+impl std::ops::Mul<f64> for Celsius {
+    type Output = Self;
+    fn mul(self, rhs: f64) -> Self::Output {
+        Celsius(self.0 * rhs)
+    }
+}
+
+let boiling = Celsius(100.0);
+let freezing = Celsius::from_fahrenheit(32.0);
+let doubled = boiling * 2.0;
+assert_eq!(doubled.0, 200.0);
+```
+
+The newtype has zero runtime cost (the wrapper is optimised away) but the compiler rejects
+`Celsius + Fahrenheit` at the type level.
+
+$\blacksquare$
+
+### Example 2: Enum with Associated Data and Pattern Matching
+
+**Problem.** Implement a `Shape` enum that computes area using exhaustive pattern matching.
+
+**Solution.**
+
+```rust
+enum Shape {
+    Circle { radius: f64 },
+    Rectangle { width: f64, height: f64 },
+    Triangle { base: f64, height: f64 },
+}
+
+impl Shape {
+    fn area(&self) -> f64 {
+        match self {
+            Shape::Circle { radius } => std::f64::consts::PI * radius * radius,
+            Shape::Rectangle { width, height } => width * height,
+            Shape::Triangle { base, height } => 0.5 * base * height,
+        }
+    }
+}
+
+let shapes = [
+    Shape::Circle { radius: 3.0 },
+    Shape::Rectangle { width: 4.0, height: 5.0 },
+    Shape::Triangle { base: 6.0, height: 2.0 },
+];
+
+for shape in &shapes {
+    println!("Area: {:.2}", shape.area());
+}
+```
+
+The `match` is exhaustive: adding a new variant to `Shape` forces all match expressions to be
+updated, preventing missing-case bugs.
+
+$\blacksquare$
+
+## Summary
+
+- Newtype pattern wraps a type for type safety with zero runtime cost; implement `Deref` for
+  ergonomic access.
+- Enums with associated data model algebraic data types; exhaustive `match` prevents missing cases.
+- Builder pattern provides a fluent API for complex struct construction with optional fields.
+- `#[non_exhaustive]` prevents downstream crates from exhaustively matching on enums or struct
+  fields.
+- Type-state pattern moves validation to compile time by encoding state in generic type parameters.

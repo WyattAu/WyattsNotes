@@ -86,3 +86,47 @@ identify gaps.
 
 4. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
+
+### Key Exam Board Differences
+
+| Aspect          | AQA                                  | OCR (A)                       | CIE (9702)               |
+| --------------- | ------------------------------------ | ----------------------------- | ------------------------ |
+| Practical       | 12 required activities (endorsement) | Practical endorsement (PAGs)  | Paper 5 practical exam   |
+| Data Sheet      | Full formula booklet provided        | Full formula booklet provided | Limited formula list     |
+| Multiple Choice | Paper 1 (60 marks)                   | Paper 1 (70 marks)            | Paper 1 (40 marks)       |
+| Calculators     | Permitted in all papers              | Permitted in all papers       | Permitted except Paper 1 |
+
+### Key Formulae
+
+| Topic         | Formula                                     |
+| ------------- | ------------------------------------------- |
+| Kinematics    | $v^2 = u^2 + 2as$                           |
+| Force         | $F = ma$, Weight $W = mg$                   |
+| Energy        | $E_k = \frac{1}{2}mv^2$, $E_p = mgh$        |
+| Waves         | $v = f\lambda$, $T = \frac{1}{f}$           |
+| Coulomb       | $F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}$ |
+| Gravitational | $F = \frac{GMm}{r^2}$, $g = \frac{GM}{r^2}$ |
+
+### Study Strategy
+
+1. **Learn derivations** — examiners test whether you understand where formulae come from, not just
+   how to plug in numbers.
+2. **Show all working** — method marks are the majority of the total; a wrong answer with correct
+   method scores heavily.
+3. **Practise multi-step problems** — real exam questions chain 3--4 concepts together.
+4. **Master uncertainties** — every board tests error propagation and significant figures.
+5. **Draw diagrams** — a clear force diagram, circuit diagram, or ray diagram often earns marks
+   before any calculation.
+6. **Check your answer** — verify units, order of magnitude, and physical reasonableness.
+
+### Key Prefixes
+
+| Prefix | Symbol | Value      |
+| ------ | ------ | ---------- |
+| giga   | G      | $10^9$     |
+| mega   | M      | $10^6$     |
+| kilo   | k      | $10^3$     |
+| milli  | m      | $10^{-3}$  |
+| micro  | $\mu$  | $10^{-6}$  |
+| nano   | n      | $10^{-9}$  |
+| pico   | p      | $10^{-12}$ |

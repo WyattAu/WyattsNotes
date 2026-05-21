@@ -2288,7 +2288,7 @@ _If you get this wrong, revise: Section 6.2 (Matrix Representation) and Section 
 1. Forgetting to check that solutions satisfy the original equation (especially with squaring both
    sides or dividing by variables).
 
-2. Assuming matrix multiplication is commutative — in general $AB \neq BA$.
+2. Assuming matrix multiplication is commutative — $AB \neq BA$.
 
 ## Worked Examples
 

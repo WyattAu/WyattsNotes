@@ -628,8 +628,8 @@ self-marking and building a personal test matrix. :::
 
 ## Common Pitfalls
 
-1. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+1. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 2. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.

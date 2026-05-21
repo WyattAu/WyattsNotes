@@ -899,3 +899,82 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+### Example 1: Dijkstra's Algorithm with Priority Queue
+
+**Problem.** Find the shortest path from node 0 to all nodes in a weighted graph with 5 nodes and
+edges: `(0,1,4), (0,2,1), (1,3,1), (2,1,2), (2,3,5), (3,4,3)`.
+
+**Solution.**
+
+```python
+import heapq
+
+def dijkstra(n, edges, start):
+    adj = [[] for _ in range(n)]
+    for u, v, w in edges:
+        adj[u].append((v, w))
+    dist = [float('inf')] * n
+    dist[start] = 0
+    pq = [(0, start)]
+    while pq:
+        d, u = heapq.heappop(pq)
+        if d > dist[u]:
+            continue
+        for v, w in adj[u]:
+            if dist[u] + w < dist[v]:
+                dist[v] = dist[u] + w
+                heapq.heappush(pq, (dist[v], v))
+    return dist
+
+dist = dijkstra(5, [(0,1,4),(0,2,1),(1,3,1),(2,1,2),(2,3,5),(3,4,3)], 0)
+# dist = [0, 3, 1, 4, 7]
+```
+
+Path to node 4: $0 \to 2 \to 1 \to 3 \to 4$ with cost $1 + 2 + 1 + 3 = 7$.
+
+$\blacksquare$
+
+### Example 2: Topological Sort with Cycle Detection
+
+**Problem.** Given a directed graph, return a topological ordering or detect a cycle.
+
+**Solution.**
+
+```python
+def topological_sort(n, edges):
+    from collections import deque
+    adj = [[] for _ in range(n)]
+    indegree = [0] * n
+    for u, v in edges:
+        adj[u].append(v)
+        indegree[v] += 1
+    q = deque(i for i in range(n) if indegree[i] == 0)
+    order = []
+    while q:
+        u = q.popleft()
+        order.append(u)
+        for v in adj[u]:
+            indegree[v] -= 1
+            if indegree[v] == 0:
+                q.append(v)
+    if len(order) != n:
+        return None  # Cycle detected
+    return order
+```
+
+Kahn's algorithm processes nodes with zero in-degree in BFS order. If the output has fewer than $n$
+nodes, a cycle exists. Time complexity: $O(V + E)$.
+
+$\blacksquare$
+
+## Summary
+
+- Dijkstra's algorithm finds shortest paths in $O((V+E)\log V)$ with a priority queue; requires
+  non-negative weights.
+- Bellman-Ford handles negative weights in $O(VE)$ and detects negative cycles.
+- Floyd-Warshall computes all-pairs shortest paths in $O(V^3)$.
+- Topological sorting (Kahn's or DFS-based) orders DAG vertices; $O(V + E)$.
+- Strongly connected components: Kosaraju's or Tarjan's algorithm in $O(V + E)$.

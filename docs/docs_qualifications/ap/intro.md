@@ -5,9 +5,9 @@ description:
   'Rigorous qualification exam AP notes covering Introduction to AP Notes. Includes definitions,
   derivations, worked examples, and exam-style problems.'
 tags:
-  - AP
+  - ap
 categories:
-  - AP
+  - ap
 slug: intro
 ---
 
@@ -22,16 +22,18 @@ Exams are scored on a scale of 1 to 5, with most colleges granting credit for sc
 These notes align to the AP Course and Exam Descriptions (CEDs) and cover the following subjects:
 
 - **AP Calculus AB/BC** -- Limits, derivatives, integrals, differential equations, and sequences and
-  series (BC only). See [Limits and Continuity](maths/limits-and-continuity).
+  series (BC only). See
+  [Limits and Continuity](maths/1-limits-and-continuity/1_limits-and-continuity).
 - **AP Physics 1/2/C** -- Mechanics, electromagnetism, thermodynamics, fluids, and modern physics.
-  See [Kinematics](physics/kinematics).
+  See [Kinematics](physics/1-kinematics/1_kinematics).
 - **AP Chemistry** -- Atomic structure, bonding, stoichiometry, thermodynamics, kinetics, and
-  equilibrium. See [Atomic Structure and Periodicity](chemistry/atomic-structure-and-periodicity).
+  equilibrium. See
+  [Atomic Structure and Periodicity](chemistry/1-atomic-structure-and-periodicity/1_atomic-structure-and-periodicity).
 - **AP Biology** -- Biochemistry, cell biology, energetics, genetics, and evolution. See
-  [Chemistry of Life](biology/chemistry-of-life).
+  [Chemistry of Life](biology/1-chemistry-of-life/1_chemistry-of-life).
 - **AP Computer Science A/Principles** -- Programming in Java, algorithms, data structures,
   abstraction, and the internet. See
-  [Computational Thinking](computer-science/computational-thinking).
+  [Computational Thinking](computer-science/1-computational-thinking/1_computational-thinking).
 
 ## Exam Structure
 

@@ -1986,5 +1986,5 @@ $\blacksquare$
 
 5. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
 
-6. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+6. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
    > > > > > > > Stashed changes:docs/docs_dse/Chemistry/organic-chemistry.md

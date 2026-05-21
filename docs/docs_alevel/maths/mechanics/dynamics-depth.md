@@ -513,5 +513,58 @@ Loss of KE $= 166 - 144.4 = 21.6\;\mathrm{J}$
 3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
 
-4. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+4. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
+
+## Worked Examples
+
+### Example 1: Atwood Machine with Friction
+
+**Problem.** Two masses $m_1 = 5\ \mathrm{kg}$ and $m_2 = 3\ \mathrm{kg}$ are connected by a light
+inextensible string over a smooth pulley. The $5\ \mathrm{kg}$ mass rests on a rough horizontal
+surface ($\mu = 0.2$) and the $3\ \mathrm{kg}$ mass hangs vertically over the edge. Find the
+acceleration and tension.
+
+**Solution.** For the $3\ \mathrm{kg}$ mass (downward positive): $3g - T = 3a$.
+
+For the $5\ \mathrm{kg}$ mass: $R = 5g$, $F = \mu R = 0.2 \times 5g = 9.8\ \mathrm{N}$. So
+$T - 9.8 = 5a$.
+
+Adding: $3g - 9.8 = 8a$, giving
+$a = \frac{29.4 - 9.8}{8} = \frac{19.6}{8} = 2.45\ \mathrm{m\,s^{-2}}$.
+
+$T = 3(g - a) = 3(9.8 - 2.45) = 3 \times 7.35 = 22.05\ \mathrm{N}$.
+
+$\blacksquare$
+
+### Example 2: Oblique Collision with Restitution
+
+**Problem.** A ball of mass $2\ \mathrm{kg}$ moving at $10\ \mathrm{m\,s^{-1}}$ collides with a
+stationary ball of mass $3\ \mathrm{kg}$. The coefficient of restitution is $e = 0.8$. Find the
+velocities after collision and the kinetic energy lost.
+
+**Solution.** Conservation of momentum: $2(10) + 3(0) = 2v_1 + 3v_2$, so $20 = 2v_1 + 3v_2$.
+
+Restitution: $v_2 - v_1 = 0.8(10 - 0) = 8$, so $v_2 = v_1 + 8$.
+
+Substituting: $20 = 2v_1 + 3(v_1 + 8) = 5v_1 + 24$, giving $v_1 = -0.8\ \mathrm{m\,s^{-1}}$.
+
+$v_2 = -0.8 + 8 = 7.2\ \mathrm{m\,s^{-1}}$.
+
+Initial KE $= \frac{1}{2}(2)(100) = 100\ \mathrm{J}$. Final KE
+$= \frac{1}{2}(2)(0.64) + \frac{1}{2}(3)(51.84) = 0.64 + 77.76 = 78.4\ \mathrm{J}$.
+
+Energy lost $= 100 - 78.4 = 21.6\ \mathrm{J}$.
+
+$\blacksquare$
+
+## Summary
+
+- Newton's second law: $\mathbf{F} = m\mathbf{a}$; always draw a free-body diagram before writing
+  equations.
+- Connected particles share the same acceleration magnitude for inextensible strings; solve
+  simultaneous equations for each body.
+- Friction: $F \leq \mu R$ (static); $F = \mu R$ (sliding). Always check the direction of friction.
+- Conservation of momentum: $m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2$ applies when no external force
+  acts.
+- Impulse: $I = \Delta p = m(v - u)$; coefficient of restitution $e = \frac{v_2 - v_1}{u_1 - u_2}$.

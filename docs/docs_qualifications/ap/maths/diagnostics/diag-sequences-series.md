@@ -3,8 +3,13 @@ title: 'Sequences and Series -- Diagnostic Tests [BC Only]'
 description:
   'Diagnostic tests targeting the hardest AP Calculus BC sequence and series questions including
   convergence tests, Taylor series, power series, Lagrange error'
+date: 2026-04-14
+tags:
+  - ap
+  - ap-maths
+categories:
+  - ap-maths
 slug: diag-sequences-series
-hide_table_of_contents: true
 ---
 
 # Sequences and Series — Diagnostic Tests [BC Only]

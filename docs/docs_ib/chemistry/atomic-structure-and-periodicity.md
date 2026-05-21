@@ -1475,7 +1475,7 @@ For the A-Level treatment of this topic, see
 
 ## Common Pitfalls
 
-1. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+1. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 2. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
    concentrations.

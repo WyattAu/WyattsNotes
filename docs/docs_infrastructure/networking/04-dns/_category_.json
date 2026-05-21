@@ -1,1 +1,4 @@
-{ "label": "04 Dns", "position": 1 }
+{
+  "label": "DNS",
+  "position": 1
+}

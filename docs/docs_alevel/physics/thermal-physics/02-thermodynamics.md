@@ -621,5 +621,5 @@ $\square$
 5. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.
 
-6. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+6. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.

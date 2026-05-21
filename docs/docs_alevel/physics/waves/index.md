@@ -74,7 +74,7 @@ can be polarised — longitudinal waves (sound) cannot.
 ## Study Tips
 
 1. **Draw wave diagrams** — sketch displacement-distance and displacement-time graphs for transverse
-   and longitudinal waves. Label amplitude, wavelength, and period clearly.
+   and longitudinal waves. Label amplitude, wavelength, and period.
 2. **Understand coherence** — interference requires coherent sources (constant phase relationship).
    In exams, always mention this when describing interference experiments.
 3. **Practise fringe spacing calculations** — Young's double slit and diffraction grating problems

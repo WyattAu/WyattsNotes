@@ -965,8 +965,8 @@ For the A-Level treatment of this topic, see
 
 ## Common Pitfalls
 
-1. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+1. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 2. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.

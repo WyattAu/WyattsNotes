@@ -111,3 +111,19 @@ to identify your Weakest areas.
    final answer.
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+### Study Strategy
+
+Build pure maths fluency first — every applied question depends on algebraic and calculus technique.
+For statistics, define events and distributions before calculating. For mechanics, always draw a
+diagram and state your sign convention. Practise full papers under timed conditions and review every
+dropped mark. Use the diagnostic test to identify weak areas and focus revision on topics where
+marks are consistently lost.
+
+### Key Formulae
+
+| Topic                | Formula                                                 |
+| -------------------- | ------------------------------------------------------- |
+| Quadratic formula    | $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$             |
+| Chain rule           | $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$ |
+| Integration by parts | $\\int u\\,dv = uv - \\int v\\,du$                      |

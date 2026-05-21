@@ -490,8 +490,8 @@ m s$^{-1}$.
 
 2. Forgetting that field lines point in the direction a positive test charge (or mass) would move.
 
-3. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+3. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 4. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
@@ -500,3 +500,45 @@ m s$^{-1}$.
    conditions and variable definitions.
 
 6. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
+
+## Worked Examples
+
+### Example 1: Gravitational Field Strength at an Altitude
+
+**Problem.** Calculate the gravitational field strength at $300\ \mathrm{km}$ above the Earth's
+surface. (Earth mass $M = 5.97 \times 10^{24}\ \mathrm{kg}$, radius
+$R = 6.37 \times 10^6\ \mathrm{m}$, $G = 6.67 \times 10^{-11}\ \mathrm{N\,m^2\,kg^{-2}}$.)
+
+**Solution.** Distance from centre:
+$r = 6.37 \times 10^6 + 3 \times 10^5 = 6.67 \times 10^6\ \mathrm{m}$.
+
+$$g = \frac{GM}{r^2} = \frac{6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{(6.67 \times 10^6)^2} = \frac{3.982 \times 10^{14}}{4.449 \times 10^{13}} = 8.95\ \mathrm{m\,s^{-2}}$$
+
+This is about 91% of the surface value ($9.81\ \mathrm{m\,s^{-2}}$).
+
+$\blacksquare$
+
+### Example 2: Escape Velocity
+
+**Problem.** Derive and calculate the escape velocity from the surface of the Earth.
+
+**Solution.** At the surface, total energy:
+$E_k + E_p = \frac{1}{2}mv_{\mathrm{esc}}^2 - \frac{GMm}{R}$.
+
+At infinity: $E_k = 0$ and $E_p = 0$, so total energy $= 0$.
+
+$$\frac{1}{2}mv_{\mathrm{esc}}^2 = \frac{GMm}{R} \implies v_{\mathrm{esc}} = \sqrt{\frac{2GM}{R}}$$
+
+$$v_{\mathrm{esc}} = \sqrt{\frac{2 \times 6.67 \times 10^{-11} \times 5.97 \times 10^{24}}{6.37 \times 10^6}} = \sqrt{1.25 \times 10^8} \approx 11.2\ \mathrm{km\,s^{-1}}$$
+
+$\blacksquare$
+
+## Summary
+
+- Newton's law of gravitation: $F = \frac{GMm}{r^2}$; always attractive.
+- Gravitational field strength: $g = \frac{GM}{r^2}$; at the surface
+  $g \approx 9.81\ \mathrm{m\,s^{-2}}$.
+- Gravitational potential: $V = -\frac{GM}{r}$; work done to move mass $m$: $W = m\Delta V$.
+- Escape velocity: $v_{\mathrm{esc}} = \sqrt{\frac{2GM}{R}}$; for Earth
+  $\approx 11.2\ \mathrm{km\,s^{-1}}$.
+- Orbital velocity: $v = \sqrt{\frac{GM}{r}}$; $g = -\frac{dV}{dr}$ links field and potential.

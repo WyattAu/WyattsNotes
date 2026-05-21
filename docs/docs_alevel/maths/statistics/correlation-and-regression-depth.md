@@ -373,3 +373,69 @@ $r_s = 1 - \dfrac◆LB◆6 \times 14◆RB◆◆LB◆8 \times 63◆RB◆ = 1 - \d
 
 4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
    around.
+
+## Worked Examples
+
+### Example 1: PMCC and Regression Line
+
+**Problem.** Given the data:
+
+| $x$ | 1   | 2   | 3   | 4   | 5   |
+| --- | --- | --- | --- | --- | --- |
+| $y$ | 3   | 5   | 6   | 8   | 11  |
+
+Calculate the PMCC and the equation of the regression line of $y$ on $x$.
+
+**Solution.** $n = 5$, $\bar{x} = 3$, $\bar{y} = 6.6$.
+
+$\sum x_i y_i = 3 + 10 + 18 + 32 + 55 = 118$. $S_{xy} = 118 - 5(3)(6.6) = 118 - 99 = 19$.
+
+$\sum x_i^2 = 1 + 4 + 9 + 16 + 25 = 55$. $S_{xx} = 55 - 5(9) = 10$.
+
+$\sum y_i^2 = 9 + 25 + 36 + 64 + 121 = 255$. $S_{yy} = 255 - 5(43.56) = 255 - 217.8 = 37.2$.
+
+$$r = \frac{19}{\sqrt{10 \times 37.2}} = \frac{19}{19.29} \approx 0.985$$
+
+Regression: $b = \frac{19}{10} = 1.9$, $a = 6.6 - 1.9(3) = 0.9$.
+
+$$y = 0.9 + 1.9x$$
+
+$\blacksquare$
+
+### Example 2: Spearman's Rank with Ties
+
+**Problem.** Two judges score 5 contestants:
+
+| Contestant | A   | B   | C   | D   | E   |
+| ---------- | --- | --- | --- | --- | --- |
+| Judge 1    | 7   | 9   | 5   | 9   | 3   |
+| Judge 2    | 6   | 8   | 7   | 10  | 4   |
+
+Calculate Spearman's rank correlation coefficient.
+
+**Solution.** Judge 1 ranks: B and D tied at $\frac{3+4}{2} = 3.5$, so A=2, B=3.5, C=1, D=3.5, E=0
+(not possible). Actually: scores sorted: 3(E), 5(C), 7(A), 9(B), 9(D).
+
+Ranks: E=1, C=2, A=3, B=4.5, D=4.5.
+
+Judge 2 ranks: E=1, A=2, C=3, B=4, D=5.
+
+| $d_i$ | A   | B   | C   | D    | E   |
+| ----- | --- | --- | --- | ---- | --- |
+|       | 1   | 0.5 | -1  | -0.5 | 0   |
+
+$\sum d_i^2 = 1 + 0.25 + 1 + 0.25 + 0 = 2.5$.
+
+$$r_s = 1 - \frac{6 \times 2.5}{5 \times 24} = 1 - \frac{15}{120} = 1 - 0.125 = 0.875$$
+
+$\blacksquare$
+
+## Summary
+
+- PMCC: $r = \frac{S_{xy}}{\sqrt{S_{xx} S_{yy}}}$ measures linear correlation; $-1 \leq r \leq 1$.
+- Regression line of $y$ on $x$: $y = a + bx$ where $b = \frac{S_{xy}}{S_{xx}}$,
+  $a = \bar{y} - b\bar{x}$.
+- Spearman's rank: $r_s = 1 - \frac{6\sum d_i^2}{n(n^2-1)}$ measures monotonic correlation.
+- Residuals: $e_i = y_i - \hat{y}_i$; random scatter confirms linearity, curved pattern suggests
+  non-linearity.
+- Correlation does not imply causation; always inspect scatter diagrams before interpreting $r$.

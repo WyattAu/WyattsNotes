@@ -1030,3 +1030,75 @@ underlying theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+### Example 1: PostGIS Spatial Query
+
+**Problem.** Given a table `locations(id, name, geom)` with PostGIS geometry points, find all
+locations within 5 km of a given point.
+
+**Solution.**
+
+```sql
+SELECT name,
+       ST_Distance(
+           geom::geography,
+           ST_SetSRID(ST_MakePoint(-0.1276, 51.5074), 4326)::geography
+       ) AS distance_m
+FROM locations
+WHERE ST_DWithin(
+    geom::geography,
+    ST_SetSRID(ST_MakePoint(-0.1276, 51.5074), 4326)::geography,
+    5000
+)
+ORDER BY distance_m;
+```
+
+Casting to `geography` ensures distances are calculated on the spheroid (metres), not on a flat
+projection. `ST_DWithin` uses the spatial index for efficient lookup.
+
+$\blacksquare$
+
+### Example 2: Full-Text Search with tsvector
+
+**Problem.** Create a full-text search index on an `articles` table and query for documents matching
+"database optimisation".
+
+**Solution.**
+
+```sql
+-- Add a generated tsvector column
+ALTER TABLE articles
+ADD COLUMN search_vector tsvector
+GENERATED ALWAYS AS (
+    setweight(to_tsvector('english', coalesce(title, '')), 'A') ||
+    setweight(to_tsvector('english', coalesce(body, '')), 'B')
+) STORED;
+
+-- Create a GIN index
+CREATE INDEX idx_articles_search ON articles USING GIN (search_vector);
+
+-- Query with ranking
+SELECT title, ts_rank(search_vector, query) AS rank
+FROM articles, plainto_tsquery('english', 'database optimisation') query
+WHERE search_vector @@ query
+ORDER BY rank DESC
+LIMIT 10;
+```
+
+`setweight` prioritises title matches (weight A) over body matches (weight B). The GIN index enables
+sub-second lookups on large corpora.
+
+$\blacksquare$
+
+## Summary
+
+- PostgreSQL extensions run in-process: install with `CREATE EXTENSION`, verify with
+  `pg_available_extensions`.
+- PostGIS adds spatial types (`geometry`, `geography`), operators, and index support (GiST, SP-GiST)
+  for geospatial queries.
+- Full-text search: `tsvector` for documents, `tsquery` for queries, GIN index for performance.
+- `pg_trgm` enables trigram-based fuzzy matching with `%` operator and `similarity()` function.
+- JSONB operators (`->>`, `#>>`, `@>`, `?`) and GIN indexing enable semi-structured queries without
+  a fixed schema.

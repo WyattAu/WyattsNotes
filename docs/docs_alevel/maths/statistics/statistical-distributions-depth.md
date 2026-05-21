@@ -335,3 +335,44 @@ $= \Phi(1.558) - \Phi(-0.866) = 0.9404 - 0.1931 = 0.7473$.
 
 4. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
    cannot be zero).
+
+## Worked Examples
+
+### Example 1: Normal Approximation to the Binomial
+
+**Problem.** A fair coin is tossed 100 times. Use the normal approximation to estimate the
+probability of getting between 45 and 55 heads inclusive.
+
+**Solution.** $X \sim B(100, 0.5)$. $\mu = np = 50$, $\sigma^2 = np(1-p) = 25$, $\sigma = 5$.
+
+Continuity correction: $P(45 \leq X \leq 55) \approx P(44.5 < Y < 55.5)$ where $Y \sim N(50, 25)$.
+
+$$z_1 = \frac{44.5 - 50}{5} = -1.1, \quad z_2 = \frac{55.5 - 50}{5} = 1.1$$
+
+$$P(-1.1 < Z < 1.1) = \Phi(1.1) - \Phi(-1.1) = 2\Phi(1.1) - 1 = 2(0.8643) - 1 = 0.7286$$
+
+$\blacksquare$
+
+### Example 2: Poisson Distribution
+
+**Problem.** Calls arrive at a switchboard at an average rate of 4 per hour. Find the probability of
+exactly 6 calls in one hour and the probability of fewer than 3 calls.
+
+**Solution.** $X \sim \mathrm{Po}(4)$.
+
+$$P(X = 6) = \frac{e^{-4} \times 4^6}{6!} = \frac{0.01832 \times 4096}{720} = \frac{75.08}{720} \approx 0.1043$$
+
+$$P(X < 3) = P(X = 0) + P(X = 1) + P(X = 2) = e^{-4}(1 + 4 + 8) = 13e^{-4} \approx 0.2381$$
+
+$\blacksquare$
+
+## Summary
+
+- Binomial: $X \sim B(n, p)$, $P(X = x) = \binom{n}{x}p^x(1-p)^{n-x}$; models number of successes in
+  $n$ independent trials.
+- Normal: $X \sim N(\mu, \sigma^2)$; standardise with $Z = \frac{X - \mu}{\sigma}$; use $\Phi(z)$
+  tables.
+- Poisson: $X \sim \mathrm{Po}(\lambda)$, $P(X = x) = \frac{e^{-\lambda}\lambda^x}{x!}$; models rare
+  events in a fixed interval.
+- Normal approximates binomial when $np > 5$ and $n(1-p) > 5$; use continuity correction.
+- Poisson approximates binomial when $n$ is large and $p$ is small ($np = \lambda$).

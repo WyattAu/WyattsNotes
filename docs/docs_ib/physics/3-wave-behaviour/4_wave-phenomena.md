@@ -506,8 +506,8 @@ Single-slit diffraction envelope.
 
 3. Misidentifying nodes and antinodes in standing wave diagrams.
 
-4. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+4. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 5. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.

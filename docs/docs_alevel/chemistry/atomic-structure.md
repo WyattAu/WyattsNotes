@@ -946,7 +946,7 @@ self-marking and building a personal test matrix. :::
 
 1. Confusing enthalpy of formation with enthalpy of combustion, or using the wrong sign convention.
 
-2. Misidentifying the limiting reagent — compare mole ratios rather than simply comparing masses.
+2. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 3. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
    molecular refers to individual molecules.

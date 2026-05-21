@@ -3,6 +3,12 @@ title: AP Calculus Diagnostic Guide
 description:
   Comprehensive guide to using AP Calculus AB/BC diagnostic tests for self-assessment, topic mastery
   verification, and targeted study planning.
+date: 2026-04-14
+tags:
+  - ap
+  - ap-maths
+categories:
+  - ap-maths
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

@@ -1,83 +1,65 @@
 ---
-sidebar_position: 1
 title: A-Level English
-description:
-  'Rigorous A-Level English notes covering A-Level English. Includes definitions, derivations,
-  worked examples, and exam-style problems.'
-date: 2026-05-12T00:00:00.000Z
+date: 2026-01-15T00:00:00.000Z
 tags:
-  - English
-  - ALevel
+  - alevel
+  - alevel-english
+categories:
+  - alevel-english
+description:
+  Comprehensive A-Level English Literature and Language notes covering literary analysis, poetry,
+  prose, drama, Shakespeare, comparative analysis, and unseen texts.
+slug: alevel-english
 ---
 
 # A-Level English
 
-A-Level English develops your ability to analyse texts critically, construct persuasive arguments,
-and engage with literary theory. This section is organised around the core examined components:
-literary analysis, critical theory, comparative coursework, and unseen texts.
+A-Level English Literature and Language are core subjects that develop critical thinking, analytical
+writing, and deep engagement with texts across periods and genres.
 
-## Topics Covered
+## Topics
 
-### Literary Analysis
+| Section | Topic                                                             | Description                                                       |
+| ------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 1       | [Literary Analysis](/docs/alevel/english/literary-analysis)       | Close reading, critical approaches, and literary devices          |
+| 2       | [Poetry](/docs/alevel/english/poetry-analysis)                    | Form, meter, imagery, sound devices, and anthology study          |
+| 3       | [Prose](/docs/alevel/english/prose-analysis)                      | Narrative voice, character, setting, theme, and genre             |
+| 4       | [Drama](/docs/alevel/english/drama-analysis)                      | Stagecraft, dramatic structure, dialogue, and theatrical context  |
+| 5       | [Shakespeare](/docs/alevel/english/shakespeare)                   | Language, themes, historical context, and critical interpretation |
+| 6       | [Comparative Analysis](/docs/alevel/english/comparative-analysis) | Comparing texts thematically, structurally, and contextually      |
+| 7       | [Unseen Texts](/docs/alevel/english/unseen-text-analysis)         | Timed analysis strategies and annotation techniques               |
 
-- **Prose** — narrative voice, structure, characterisation, setting, symbolism, themes
-- **Poetry** — form, meter, rhyme, imagery, tone, persona, enjambment, caesura
-- **Drama** — stagecraft, dialogue, dramatic irony, soliloquy, acts and scenes, audience response
+## Exam Boards
 
-### Critical Theory
+A-Level English is offered by several exam boards, each with slightly different requirements:
 
-- **Structuralism** — analysing underlying structures and binary oppositions in texts
-- **Post-structuralism** — challenging fixed meanings, deconstruction
-- **Feminist criticism** — gender representation, power dynamics, the male gaze
-- **Post-colonial criticism** — colonial discourse, othering, hybridity, voice and agency
-- **Marxist criticism** — class, power, ideology, economic determinism in literature
+- **AQA** — Papers on literary genres, texts in shared contexts, and independent critical study
+- **OCR** — Components on drama and poetry, comparative and contextual study, and literature
+  post-1900
+- **Edexcel** — Papers on drama, poetry, prose, and coursework
+- **CCEA** — Components on Shakespeare, the novel, poetry, and unseen texts
 
-### Comparative Coursework
+While this guide is designed to support any board, always check your specific specification for set
+texts and assessment objectives.
 
-- **Independent critical study** — selecting texts, formulating a research question, critical
-  engagement
-- **Genre comparison** — identifying conventions, subversions, and cross-textual themes
-- **Academic writing** — structuring an argument, integrating critical sources, maintaining a clear
-  thesis
+## Assessment Objectives
 
-### Unseen Texts
+Most exam boards assess the following objectives (wording varies):
 
-- **Analytical frameworks** — systematic approaches to unfamiliar texts (form, language, structure,
-  context)
-- **Close reading techniques** — annotation strategies, identifying key features under time pressure
-- **Timed response planning** — structuring an essay in 45–60 minutes
-
-### Language and Linguistics
-
-- **Sociolinguistics** — language variation by region, class, gender, and context
-- **Language change** — historical evolution, standardisation, prescriptivism vs. descriptivism
-- **Discourse analysis** — analysing spoken and written language in social contexts
-
-## Study Tips
-
-1. **Annotate every text you study** — mark literary devices, structural features, and thematic
-   patterns. Your annotations become your revision notes.
-2. **Learn critical vocabulary** — use precise terminology (e.g., "free indirect discourse" rather
-   than "the narrator kind of becomes the character").
-3. **Practise unseen analysis weekly** — set a timer, read a previously unseen extract, and write a
-   full essay plan in 15 minutes.
-4. **Connect texts to contexts** — examiners reward responses that link textual features to
-   historical, social, and literary contexts.
-5. **Build a quotation bank** — memorise key quotations from set texts with brief analysis notes.
-   Aim for at least 5–6 per text.
+| AO  | Description                                                                                                              |
+| --- | ------------------------------------------------------------------------------------------------------------------------ |
+| AO1 | Articulate informed, personal, and creative responses to literary texts using associated concepts and terminology        |
+| AO2 | Analyse ways in which meanings are shaped in literary texts                                                              |
+| AO3 | Demonstrate understanding of the significance and influence of contexts in which literary texts are written and received |
+| AO4 | Explore connections across literary texts                                                                                |
+| AO5 | Explore literary texts informed by different interpretations                                                             |
 
 ## How to Use These Notes
 
-Each section provides analytical frameworks, worked examples of close reading, and exam-style essay
-plans. Use the critical theory pages to enrich your analysis of set texts.
-
-:::note Content Under Development
-
-This section is under active development. Topics will continue to be expanded with worked examples
-and exam-style questions.
-
-:::
-
-Status: stub scope: Exam-aligned qualification content only. Subject to CONTENT_STANDARD.md Section
-12 (Prohibited Subjects as standalone topics). Expansion_criteria: Content must be aligned to
-A-Level exam specification. General humanities content not in scope.
+1. **Build terminology early** — Learn the key terms in each section before attempting essays
+2. **Practise close reading** — Use the analytical frameworks on set texts and unseen passages
+3. **Connect context** — Always link literary analysis to historical, social, and biographical
+   context
+4. **Compare deliberately** — Use the comparative analysis section when preparing for comparison
+   questions
+5. **Timed practice** — Apply the unseen text strategies under exam conditions regularly

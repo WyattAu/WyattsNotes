@@ -1,1 +1,4 @@
-{ "label": "05 Network Security", "position": 1 }
+{
+  "label": "Network Security",
+  "position": 1
+}

@@ -742,8 +742,8 @@ self-marking and building a personal test matrix. :::
 2. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
    first.
 
-3. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+3. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.

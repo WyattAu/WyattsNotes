@@ -2109,7 +2109,7 @@ If you get this wrong, revise: Section 4.3 (MGFs) and Section 3.1 (Poisson Distr
   $\bar{X}_n \xrightarrow{d} N(\mu, \sigma^2/n)$ as $n \to \infty$.
 - **Confusing type I and type II errors.** Type I: rejecting $H_0$ when it is true ($\alpha$). Type
   II: failing to reject $H_0$ when it is false ($\beta$). **Fix:** Type I = false positive; Type II
-  = false negative. Decreasing one typically increases the other.
+  = false negative. Decreasing one increases the other.
 
 ## Worked Examples
 

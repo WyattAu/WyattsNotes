@@ -1,1 +1,4 @@
-{ "label": "03 Gpu Tuning", "position": 1 }
+{
+  "label": "GPU Tuning",
+  "position": 1
+}

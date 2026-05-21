@@ -447,3 +447,40 @@ Of the eddy currents and thus the power dissipated.
 
 6. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
+
+## Worked Examples
+
+### Example 1: Force on a Current-Carrying Wire
+
+**Problem.** A straight wire of length $0.3\ \mathrm{m}$ carries a current of $5\ \mathrm{A}$ at
+right angles to a uniform magnetic field of flux density $0.4\ \mathrm{T}$. Calculate the force on
+the wire.
+
+**Solution.** $$F = BIl = 0.4 \times 5 \times 0.3 = 0.6\ \mathrm{N}$$
+
+Direction: by Fleming's left-hand rule, the force is perpendicular to both the field and current.
+
+$\blacksquare$
+
+### Example 2: Charged Particle in a Magnetic Field
+
+**Problem.** An electron with speed $2 \times 10^6\ \mathrm{m\,s^{-1}}$ enters a uniform magnetic
+field of $0.05\ \mathrm{T}$ perpendicular to its velocity. Calculate the radius of its circular
+path. ($m_e = 9.11 \times 10^{-31}\ \mathrm{kg}$, $e = 1.6 \times 10^{-19}\ \mathrm{C}$.)
+
+**Solution.** The magnetic force provides the centripetal force:
+
+$$Bev = \frac{mv^2}{r} \implies r = \frac{mv}{Be}$$
+
+$$r = \frac{9.11 \times 10^{-31} \times 2 \times 10^6}{0.05 \times 1.6 \times 10^{-19}} = \frac{1.822 \times 10^{-24}}{8 \times 10^{-21}} = 2.28 \times 10^{-4}\ \mathrm{m} = 0.228\ \mathrm{mm}$$
+
+$\blacksquare$
+
+## Summary
+
+- Force on a current-carrying conductor: $F = BIl\sin\theta$; maximum when $\theta = 90^\circ$.
+- Force on a moving charge: $F = Bqv\sin\theta$; always perpendicular to velocity (no work done).
+- Circular motion in a magnetic field: $r = \frac{mv}{Bq}$; period $T = \frac{2\pi m}{Bq}$
+  (independent of speed).
+- Fleming's left-hand rule determines the direction of force on a current/charge in a field.
+- Magnetic flux: $\Phi = BA\cos\theta$; flux linkage for a coil: $N\Phi = BAN\cos\theta$.

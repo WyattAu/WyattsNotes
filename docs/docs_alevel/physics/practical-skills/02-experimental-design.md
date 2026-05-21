@@ -722,8 +722,8 @@ Eliminate human reaction time entirely.
 1. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
 
-2. Misidentifying the system boundary when applying conservation laws — clearly define what is
-   included before writing equations.
+2. Misidentifying the system boundary when applying conservation laws — define what is included
+   before writing equations.
 
 3. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.
