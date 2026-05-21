@@ -21,7 +21,7 @@ are comparing two poems from an anthology, two prose texts from different period
 its source material, you must demonstrate that you can identify meaningful connections and
 differences between texts and construct an argument about what those comparisons reveal.
 
-Comparison is not simply listing similarities and differences. It is using the relationship between
+Comparison is not merely listing similarities and differences. It is using the relationship between
 texts to build a more sophisticated argument than either text could support alone. Good comparative
 analysis shows how meaning is produced _in the space between texts_.
 

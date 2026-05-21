@@ -50,7 +50,7 @@ The atom, radioactivity, nuclear energy, the photoelectric effect, and particle 
 
 ## Study Tips
 
-Show all working clearly — SEC marks are awarded for correct method steps. Derive formulae from
+Show all working precisely — SEC marks are awarded for correct method steps. Derive formulae from
 first principles where possible. Pay close attention to definitions, which must be exact for full
 marks.
 
@@ -62,7 +62,7 @@ understanding.
 
 ### Assessment Structure
 
-The examination typically consists of a written paper testing knowledge, understanding, and
+The examination commonly consists of a written paper testing knowledge, understanding, and
 problem-solving across all topics. Coursework or project components may also contribute to the final
 grade, depending on the subject and level.
 

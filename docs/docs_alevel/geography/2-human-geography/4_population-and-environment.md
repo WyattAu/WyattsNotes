@@ -223,8 +223,8 @@ Four dimensions:
 
 **Sustainable approaches:**
 
-- **Organic farming**: Avoids synthetic inputs; promotes soil health and biodiversity. Yields are
-  typically 19–25% lower than conventional but may be more resilient.
+- **Organic farming**: Avoids synthetic inputs; promotes soil health and biodiversity. Yields are in
+  most cases 19–25% lower than conventional but may be more resilient.
 - **Agroforestry**: Integrating trees with crops and livestock; improves soil fertility,
   biodiversity, and carbon sequestration.
 - **Urban agriculture**: Rooftop gardens, vertical farms, and community allotments supplement food
@@ -359,7 +359,7 @@ agricultural production.
 3. **Treating food security purely as a production problem**: Food insecurity is often a problem of
    **access** and **distribution**, not just production. The world produces enough food for
    everyone, but poverty, conflict, and poor infrastructure prevent access. Famine is almost always
-   a political and economic failure, not simply a physical shortage.
+   a political and economic failure, not merely a physical shortage.
 
 ---
 

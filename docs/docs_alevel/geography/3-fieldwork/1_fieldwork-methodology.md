@@ -137,7 +137,8 @@ A good geographical investigation starts with a focused, manageable question or 
 
 **Sample size**: Larger samples are more representative but require more time and resources. A
 minimum of approximately 30 data points is generally recommended for statistical validity. For
-questionnaires, approximately 50–100 responses are typically adequate for A-Level investigations.
+questionnaires, approximately 50–100 responses are in most cases adequate for A-Level
+investigations.
 
 ---
 
@@ -161,8 +162,8 @@ questionnaires, approximately 50–100 responses are typically adequate for A-Le
 2. Calculate the difference (d) between each pair of ranks
 3. Square each difference (d²)
 4. Apply the formula: **ρ = 1 − (6 × Σd²) / (n × (n² − 1))**
-5. Compare the calculated value to the critical value at the appropriate significance level (usually
-   0.05)
+5. Compare the calculated value to the critical value at the appropriate significance level
+   (commonly 0.05) 0.05)
 6. If the calculated value exceeds the critical value, reject the null hypothesis — there is a
    significant correlation
 

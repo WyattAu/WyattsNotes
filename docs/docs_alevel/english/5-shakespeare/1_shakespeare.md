@@ -269,7 +269,7 @@ The metaphor of life as a "walking shadow" reduces human existence to a theatric
 own performance of power throughout the play. The imagery of the candle ("Out, out, brief candle")
 suggests both fragility and the possibility of deliberate extinguishment. Macbeth's earlier
 invocation of darkness ("Stars, hide your fires") is answered here by the recognition that the light
-of life is brief and easily snuffed out.
+of life is brief and readily snuffed out.
 
 The final image — "a tale told by an idiot, full of sound and fury, signifying nothing" — collapses
 the play's own language into meaninglessness. Macbeth, who has been manipulated by the witches'

@@ -135,8 +135,8 @@ surface temperature ≥ 26.5°C to a depth of at least 50 m).
 - Pre-existing weather disturbance (e.g., tropical wave)
 - High humidity in the lower to mid-troposphere
 
-**Structure**: A tropical storm has a clearly defined eye (calm, descending air) surrounded by the
-eye wall (strongest winds and heaviest rainfall). Spiral rain bands extend outward.
+**Structure**: A tropical storm has a well-defined eye (calm, descending air) surrounded by the eye
+wall (strongest winds and heaviest rainfall). Spiral rain bands extend outward.
 
 **Saffir-Simpson Hurricane Scale:**
 
@@ -330,8 +330,8 @@ most likely catastrophic disasters facing the US.
 
 2. **Attributing disaster impact solely to physical magnitude**: Students often explain high death
    tolls entirely by reference to earthquake magnitude or storm intensity. In reality, vulnerability
-   (poverty, governance, building quality) is usually a more significant determinant of impact than
-   the physical event itself.
+   (poverty, governance, building quality) is in most cases a more significant determinant of impact
+   than the physical event itself.
 
 3. **Describing response without evaluation**: Listing aid amounts or reconstruction efforts without
    evaluating their effectiveness. For example, Haiti received billions in aid but recovery was slow
@@ -358,7 +358,7 @@ There is strong evidence that economic development reduces vulnerability. The 20
 (M7.0) killed approximately 230,000 people, while the 2011 Christchurch earthquake in New Zealand
 (M6.2 — lower magnitude) killed 185. The contrast is largely attributable to differences in building
 quality: Haiti had no enforced building codes, whereas New Zealand has stringent seismic building
-standards. Japan, one of the most developed nations, experiences frequent earthquakes but typically
+standards. Japan, one of the most developed nations, experiences frequent earthquakes but commonly
 suffers relatively low death tolls due to earthquake-resistant construction, early warning systems,
 and high public awareness.
 
@@ -394,8 +394,8 @@ considering all these dimensions rather than reducing vulnerability to a single 
 Tropical storms require specific environmental conditions that are met only in certain parts of the
 world. First, sea surface temperatures must be at least 26.5°C to a depth of approximately 50 m.
 This provides the necessary thermal energy and moisture for storm development. Such temperatures are
-found only in tropical and subtropical oceans — typically between 5° and 30° north and south of the
-equator.
+found only in tropical and subtropical oceans — in most cases between 5° and 30° north and south of
+the equator.
 
 Second, the Coriolis effect must be strong enough to initiate and sustain cyclonic rotation. The
 Coriolis force is zero at the equator and increases with latitude, meaning tropical storms cannot

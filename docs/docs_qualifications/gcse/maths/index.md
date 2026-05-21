@@ -52,13 +52,13 @@ and organised by topic for easy navigation.
 
 ## Study Tips
 
-- Show all working clearly; method marks can save you even when the final answer is wrong
+- Show all working precisely; method marks can save you even when the final answer is wrong
 - Practise non-calculator arithmetic regularly — mental maths speed helps across every topic
 - Learn formulae that are not given on the formula sheet (e.g., quadratic formula, cosine rule, area
   of a trapezium)
 - Work through exam-style problems under timed conditions to build speed and identify weak areas
   early
-- Focus on the topics that carry the most marks — algebra and geometry typically account for a large
+- Focus on the topics that carry the most marks — algebra and geometry commonly account for a large
   share of the paper
 - Check your answers by estimating or using inverse operations; a quick sense-check catches many
   errors

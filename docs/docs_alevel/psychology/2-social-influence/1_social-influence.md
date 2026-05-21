@@ -45,7 +45,7 @@ influence, minority influence, and how these processes contribute to social chan
 
 ### Asch's Line Conformity Experiment (1951, 1955)
 
-**Aim:** To investigate the extent to which individuals conform to a clearly wrong majority.
+**Aim:** To investigate the extent to which individuals conform to a demonstrably wrong majority.
 
 **Procedure:** 123 male American university students were shown a standard line and three comparison
 lines. They had to say aloud which comparison line matched the standard. In the critical trials, 6–8
@@ -267,7 +267,7 @@ establish the universality of social influence processes and identifies cultural
    different types of conformity (compliance vs. internalisation).
 3. **Overstating dispositional explanations:** The authoritarian personality explains some
    obedience, but situational factors (proximity, uniform, location) are far more powerful.
-   Milgram's variations demonstrated this clearly. Do not reduce complex social behaviour to
+   Milgram's variations demonstrated this convincingly. Do not reduce complex social behaviour to
    personality traits alone.
 
 ## Worked Examples
@@ -389,7 +389,7 @@ Social influence research reveals the powerful effect of others on individual be
 
 - **Conformity** is driven by NSI (desire to be liked) and ISI (desire to be correct), producing
   compliance, identification, or internalisation.
-- **Asch** demonstrated that people conform to a clearly wrong majority (37% conformity rate),
+- **Asch** demonstrated that people conform to a demonstrably wrong majority (37% conformity rate),
   influenced by group size, unanimity, and task difficulty.
 - **Obedience** was powerfully demonstrated by Milgram (65% obeyed to 450V), influenced by
   proximity, location, and uniform. The agentic state explains obedience as a shift from personal

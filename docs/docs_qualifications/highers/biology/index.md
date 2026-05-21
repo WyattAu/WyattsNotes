@@ -62,7 +62,7 @@ understanding.
 
 ### Assessment Structure
 
-The examination typically consists of a written paper testing knowledge, understanding, and
+The examination commonly consists of a written paper testing knowledge, understanding, and
 problem-solving across all topics. Coursework or project components may also contribute to the final
 grade, depending on the subject and level.
 

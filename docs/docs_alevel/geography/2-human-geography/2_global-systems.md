@@ -24,24 +24,24 @@ challenges such as climate change.
 
 ## Key Concepts and Definitions
 
-| Term                                | Definition                                                                                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Globalisation**                   | The process by which the world is becoming increasingly interconnected through flows of goods, capital, people, information, and ideas     |
-| **Transnational corporation (TNC)** | A company that operates in more than one country, with headquarters typically in a developed nation and production in lower-cost locations |
-| **Foreign direct investment (FDI)** | Investment by a company or individual in one country into business interests in another country                                            |
-| **Free trade**                      | International trade without tariffs, quotas, or other restrictions                                                                         |
-| **Trade bloc**                      | A group of countries that have agreed to reduce or eliminate trade barriers between themselves (e.g., EU, ASEAN, NAFTA/USMCA)              |
-| **Global governance**               | The system of institutions, rules, and processes through which international affairs are managed                                           |
-| **Geopolitics**                     | The study of how geographical factors (location, resources, territory) influence political relationships and power between nations         |
-| **Hegemony**                        | Dominance of one state over others, economically, militarily, or culturally                                                                |
-| **Glocalisation**                   | The adaptation of global products or services to local markets and preferences                                                             |
-| **Outsourcing**                     | Contracting out business processes to external firms, often in other countries                                                             |
-| **Offshoring**                      | Relocating business processes from one country to another, typically to reduce costs                                                       |
-| **Remittances**                     | Money sent by migrants working abroad back to their home country                                                                           |
-| **Brain drain**                     | The emigration of highly trained or qualified people from a particular country                                                             |
-| **Core countries**                  | Wealthy, developed nations that dominate global economic and political systems                                                             |
-| **Periphery countries**             | Less developed nations that are economically dependent on core countries                                                                   |
-| **Semi-periphery**                  | Countries that are between core and periphery — industrialising but not yet dominant                                                       |
+| Term                                | Definition                                                                                                                                |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Globalisation**                   | The process by which the world is becoming increasingly interconnected through flows of goods, capital, people, information, and ideas    |
+| **Transnational corporation (TNC)** | A company that operates in more than one country, with headquarters commonly in a developed nation and production in lower-cost locations |
+| **Foreign direct investment (FDI)** | Investment by a company or individual in one country into business interests in another country                                           |
+| **Free trade**                      | International trade without tariffs, quotas, or other restrictions                                                                        |
+| **Trade bloc**                      | A group of countries that have agreed to reduce or eliminate trade barriers between themselves (e.g., EU, ASEAN, NAFTA/USMCA)             |
+| **Global governance**               | The system of institutions, rules, and processes through which international affairs are managed                                          |
+| **Geopolitics**                     | The study of how geographical factors (location, resources, territory) influence political relationships and power between nations        |
+| **Hegemony**                        | Dominance of one state over others, economically, militarily, or culturally                                                               |
+| **Glocalisation**                   | The adaptation of global products or services to local markets and preferences                                                            |
+| **Outsourcing**                     | Contracting out business processes to external firms, often in other countries                                                            |
+| **Offshoring**                      | Relocating business processes from one country to another, in most cases to reduce costs                                                  |
+| **Remittances**                     | Money sent by migrants working abroad back to their home country                                                                          |
+| **Brain drain**                     | The emigration of highly trained or qualified people from a particular country                                                            |
+| **Core countries**                  | Wealthy, developed nations that dominate global economic and political systems                                                            |
+| **Periphery countries**             | Less developed nations that are economically dependent on core countries                                                                  |
+| **Semi-periphery**                  | Countries that are between core and periphery — industrialising but not yet dominant                                                      |
 
 ---
 

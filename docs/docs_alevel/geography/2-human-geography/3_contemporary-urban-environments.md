@@ -157,7 +157,7 @@ white British and South Asian populations exceeds 60 at the ward level.
 
 ### The Urban Heat Island Effect
 
-Urban areas are typically 1–3°C warmer than surrounding rural areas, and in large cities the
+Urban areas are commonly 1–3°C warmer than surrounding rural areas, and in large cities the
 difference can exceed 10°C on calm, clear nights.
 
 **Causes:**
@@ -422,8 +422,8 @@ adds additional warmth. In dense urban areas, this can be equivalent to approxim
 additional energy input.
 
 The urban canyon effect — where tall buildings line narrow streets — traps long-wave radiation by
-reducing the sky view factor. Heat cannot escape easily to the upper atmosphere. Tall buildings also
-reduce wind speeds at street level, limiting convective cooling and ventilation.
+reducing the sky view factor. Heat cannot escape readily to the upper atmosphere. Tall buildings
+also reduce wind speeds at street level, limiting convective cooling and ventilation.
 
 Finally, urban air pollution creates a pollution dome that absorbs and re-radiates outgoing
 long-wave radiation, similar to a localised greenhouse effect. The combination of these factors

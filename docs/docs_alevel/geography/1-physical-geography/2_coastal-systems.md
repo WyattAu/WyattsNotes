@@ -51,7 +51,7 @@ of the sea.
 
 **Constructive waves** (low energy):
 
-- Long wavelength, low wave height (typically < 1 m)
+- Long wavelength, low wave height (in most cases < 1 m)
 - Low frequency (6–8 per minute)
 - Strong swash, weak backwash
 - Deposit material, building up beaches
@@ -189,13 +189,13 @@ subsidence compounds eustatic rise.
 
 ### Soft Engineering
 
-| Strategy              | Description                                    | Advantages                                        | Disadvantages                              |
-| --------------------- | ---------------------------------------------- | ------------------------------------------------- | ------------------------------------------ |
-| **Beach nourishment** | Adding sand/shingle to a beach                 | Natural appearance, maintains tourism             | Requires regular maintenance, expensive    |
-| **Beach reprofiling** | Reshaping the beach to a gentler gradient      | Reduces wave energy, cheap                        | Temporary, may need repeated after storms  |
-| **Dune regeneration** | Planting marram grass and building sand fences | Natural, creates habitats, cheap                  | Takes time, vulnerable to trampling        |
-| **Marsh creation**    | Allowing salt marsh to develop naturally       | Excellent wave energy absorber, high biodiversity | Requires land to be surrendered to the sea |
-| **Managed retreat**   | Allowing controlled flooding of low-value land | Cheaper than hard engineering, creates habitats   | Compensating landowners, loss of farmland  |
+| Strategy              | Description                                         | Advantages                                        | Disadvantages                              |
+| --------------------- | --------------------------------------------------- | ------------------------------------------------- | ------------------------------------------ |
+| **Beach nourishment** | Adding sand/shingle to a beach                      | Natural appearance, maintains tourism             | Requires regular maintenance, expensive    |
+| **Beach reprofiling** | Reshaping the beach to a gentler gradient           | Reduces wave energy, cheap                        | Temporary, may need repeated after storms  |
+| **Dune regeneration** | Planting marram grass and building sand fences      | Natural, creates habitats, cheap                  | Takes time, vulnerable to trampling        |
+| **Marsh creation**    | Allowing salt marsh to develop without intervention | Excellent wave energy absorber, high biodiversity | Requires land to be surrendered to the sea |
+| **Managed retreat**   | Allowing controlled flooding of low-value land      | Cheaper than hard engineering, creates habitats   | Compensating landowners, loss of farmland  |
 
 ### Shoreline Management Plans (SMPs)
 
@@ -273,7 +273,7 @@ intrusion into freshwater aquifers.
 
 ## Common Pitfalls
 
-1. **Describing landforms without explaining the process**: Simply naming a stack is insufficient.
+1. **Describing landforms without explaining the process**: Merely naming a stack is insufficient.
    You must explain the sequence: weakness → cave → arch → roof collapse → stack → stump, with named
    processes (hydraulic action, abrasion) at each stage.
 
@@ -297,14 +297,14 @@ intrusion into freshwater aquifers.
 **Answer:**
 
 Hard engineering strategies aim to resist coastal erosion through the construction of artificial
-structures. Sea walls, typically built from reinforced concrete, reflect wave energy and prevent
+structures. Sea walls, in most cases built from reinforced concrete, reflect wave energy and prevent
 erosion of the cliff behind. They are effective at protecting high-value assets in the short to
 medium term — for example, the sea wall at Scarborough has protected the town's spa and gardens for
 over a century. However, sea walls are extremely expensive (up to £10,000 per metre) and can create
 a false sense of security. Reflected wave energy can also scour the beach in front of the wall,
 ultimately undermining it.
 
-Groynes trap sediment moving by longshore drift, building up a wider beach that naturally absorbs
+Groynes trap sediment moving by longshore drift, building up a wider beach that inherently absorbs
 wave energy. This can be highly effective locally — the groynes at Mappleton on the Holderness Coast
 have successfully protected the village. However, they starve downdrift beaches of sediment,
 accelerating erosion elsewhere within the sediment cell. This is a significant limitation, as

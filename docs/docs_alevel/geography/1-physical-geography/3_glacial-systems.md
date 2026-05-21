@@ -38,7 +38,7 @@ land surface is currently covered by glaciers and ice sheets, but during the las
 | **Till**                 | Unsorted, unstratified glacial sediment deposited directly by ice                                                               |
 | **Erratic**              | A rock fragment transported by a glacier and deposited in an area of different lithology                                        |
 | **Drumlin**              | An elongated hill of till shaped by glacial flow, with a steep stoss end and gentle lee end                                     |
-| **Periglacial**          | Cold, non-glacial environments where freeze-thaw processes dominate, typically in regions of permafrost                         |
+| **Periglacial**          | Cold, non-glacial environments where freeze-thaw processes dominate, in most cases in regions of permafrost                     |
 | **Permafrost**           | Permanently frozen ground where temperatures remain below 0°C for at least two consecutive years                                |
 | **Active layer**         | The surface layer of ground above permafrost that thaws in summer and refreezes in winter                                       |
 
@@ -54,7 +54,7 @@ A glacier forms when **accumulation exceeds ablation** over successive years:
 2. Repeated melting and refreezing converts snow to **firn** (granular, partially compacted ice)
 3. Over decades, the weight of overlying snow compresses firn into dense glacial ice (density > 0.9
    g/cm³)
-4. When the ice reaches a critical thickness (typically > 50 m), it begins to flow under its own
+4. When the ice reaches a critical thickness (in most cases > 50 m), it begins to flow under its own
    weight
 
 The **glacier mass balance** describes the net change in glacier mass:
@@ -81,7 +81,7 @@ Glaciers move through three primary mechanisms:
 
 **Factors affecting the rate of movement:**
 
-- **Temperature**: Warmer ice deforms more easily; meltwater facilitates basal sliding
+- **Temperature**: Warmer ice deforms more readily; meltwater facilitates basal sliding
 - **Ice thickness**: Greater thickness increases pressure and therefore deformation rate
 - **Gradient**: Steeper slopes increase gravitational driving force
 - **Bedrock lithology**: Hard, smooth bedrock allows faster sliding; rough, uneven bedrock creates
@@ -116,8 +116,8 @@ Glaciers transport enormous volumes of debris:
 - **Meltwater transport**: Glacial meltwater transports fine sediment (glacial flour) downstream,
   often creating braided river channels
 
-**Deposition** occurs when the glacier loses kinetic energy — typically when it retreats, thins, or
-encounters a flattening of gradient. Glacial deposits (till) are characteristically:
+**Deposition** occurs when the glacier loses kinetic energy — in most cases when it retreats, thins,
+or encounters a flattening of gradient. Glacial deposits (till) are characteristically:
 
 - **Unsorted**: Mixed particle sizes from clay to boulders
 - **Unstratified**: No layering or bedding
@@ -174,7 +174,7 @@ Alaska, and high mountain areas.
   repeated frost heave sorts particles by size.
 - **Solifluction (gelifluction)**: The slow, downslope flow of water-saturated soil over impermeable
   permafrost. Occurs in the active layer during summer thaw. Produces lobate (tongue-shaped)
-  landforms on hillsides. Rates typically 1–5 cm per year.
+  landforms on hillsides. Rates are commonly 1–5 cm per year.
 - **Thermal contraction**: Cracking of the ground surface as temperatures drop and frozen ground
   contracts. Infilling of cracks by water or sand forms **ice wedges** or **sand wedges**.
 
@@ -205,7 +205,7 @@ Glacial landforms and deposits provide crucial evidence for understanding past c
 4. **Drumlins**: Their orientation indicates the direction of ice flow; their shape and distribution
    provide information about basal conditions and ice velocity.
 5. **Cirque floor altitude**: The altitude of corrie floors provides an approximation of the former
-   equilibrium line altitude (ELA). In the UK, cirque floors in Snowdonia are typically at
+   equilibrium line altitude (ELA). In the UK, cirque floors in Snowdonia are commonly at
    approximately 450–500 m, suggesting a lowering of the ELA by approximately 1,000 m during the
    last glacial maximum.
 
@@ -291,7 +291,7 @@ Monitoring Network (GLAMOS) reported that Swiss glaciers lost over 6% of their r
    erosion or U-shaped valleys to deposition. Always remember: erosion produces smooth, streamlined,
    or hollowed features; deposition produces accumulations of unsorted till or stratified outwash.
 
-2. **Describing glacial movement without explaining why it happens**: Simply stating "the glacier
+2. **Describing glacial movement without explaining why it happens**: Merely stating "the glacier
    moves" gains no credit. You must explain **how** — basal sliding (meltwater lubrication),
    internal deformation (ice crystal creep under pressure), or bed deformation — and the
    **conditions** required (warm-based vs. cold-based, thickness, gradient).
@@ -317,7 +317,7 @@ but glacial processes are the primary agents of modification. The pre-existing t
 the location, shape, and scale of glaciated features, while the glacier itself provides the erosive
 power.
 
-Pre-existing landscape features play a crucial role. Corries typically develop in pre-existing
+Pre-existing landscape features play a crucial role. Corries commonly develop in pre-existing
 hollows or depressions on north- or east-facing slopes where snow accumulates in the shade and is
 sheltered from prevailing winds. Without these initial hollows, glaciers may not nucleate.
 Similarly, U-shaped valleys develop from pre-existing V-shaped river valleys — the glacier exploits
@@ -346,7 +346,7 @@ transformation.
 **Answer:**
 
 A drumlin is an elongated, egg-shaped hill of glacial till formed beneath a moving glacier. Drumlins
-typically occur in groups called swarms, aligned parallel to the direction of ice flow.
+in most cases occur in groups called swarms, aligned parallel to the direction of ice flow.
 
 They form subglacially when the glacier encounters a pre-existing obstacle or irregularity in the
 bed topography. Till is deposited around this nucleus and then streamlined by the flowing ice. The
@@ -355,10 +355,10 @@ glacier compresses and deposits material; the lee (down-ice) end is gentle and t
 the ice extends and flows over the drumlin.
 
 The long axis of the drumlin is parallel to the direction of ice flow, making drumlins valuable
-indicators of former ice movement. The sediment is typically unsorted till, though some drumlins
-contain a core of bedrock or stratified sediment. Examples include the drumlin fields around
-Ribblehead in the Yorkshire Dales and the extensive drumlin swarms around Clew Bay in County Mayo,
-Ireland.
+indicators of former ice movement. The sediment is characteristically unsorted till, though some
+drumlins contain a core of bedrock or stratified sediment. Examples include the drumlin fields
+around Ribblehead in the Yorkshire Dales and the extensive drumlin swarms around Clew Bay in County
+Mayo, Ireland.
 
 ---
 

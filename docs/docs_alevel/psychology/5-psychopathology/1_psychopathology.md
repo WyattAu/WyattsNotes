@@ -199,8 +199,8 @@ professional. Highly distressing but can be effective in a single session.
 **Biological Treatment:**
 
 **Drug therapy:** SSRIs (e.g., fluoxetine/Prozac, sertraline) are the first-line treatment. They
-increase serotonin availability by blocking reuptake, enhancing mood and reducing anxiety. Typically
-take 3–4 months to reach full effect. If SSRIs are ineffective, tricyclic antidepressants (e.g.,
+increase serotonin availability by blocking reuptake, enhancing mood and reducing anxiety. Commonly
+taking 3–4 months to reach full effect. If SSRIs are ineffective, tricyclic antidepressants (e.g.,
 clomipramine) or benzodiazepines may be prescribed.
 
 **Combining drugs with CBT:** NICE guidelines recommend combining SSRI medication with CBT
@@ -302,7 +302,7 @@ Psychopathology research uses:
    processes. SD is gradual, uses an anxiety hierarchy, and relies on reciprocal inhibition.
    Flooding is immediate, intense, and relies on extinction. They have different ethical
    implications.
-3. **Oversimplifying biological explanations:** OCD is not simply "caused by a gene" or "caused by
+3. **Oversimplifying biological explanations:** OCD is not merely "caused by a gene" or "caused by
    low serotonin." The diathesis-stress model is more accurate — genetic vulnerability combined with
    environmental stress triggers the disorder. Always present a balanced view.
 
@@ -386,7 +386,7 @@ maintained through operant conditioning.
 
 According to the two-process model, a phobia is initially acquired through classical conditioning. A
 neutral stimulus (e.g., a dog) is paired with an unconditioned stimulus (e.g., being bitten) that
-naturally produces an unconditioned fear response. Through repeated association, the neutral
+inherently produces an unconditioned fear response. Through repeated association, the neutral
 stimulus becomes a conditioned stimulus, eliciting a conditioned fear response even in the absence
 of the unconditioned stimulus. Watson and Rayner's (1920) Little Albert study provided early
 evidence for this process — Albert was conditioned to fear a white rat by pairing it with a loud
@@ -430,7 +430,7 @@ be traced to a specific conditioning event. Öhman and Mineka (2001) found that 
 acquire phobias of evolutionarily relevant stimuli (snakes, spiders, heights) than of modern dangers
 (guns, electrical outlets), suggesting a biological preparedness that the behavioural model does not
 account for. Seligman (1971) called this **biological preparedness** — humans are biologically
-predisposed to learn certain fears more easily because they were adaptive in our evolutionary past.
+predisposed to learn certain fears more readily because they were adaptive in our evolutionary past.
 
 Additionally, the behavioural approach ignores cognitive factors. Many people with phobias have
 irrational beliefs about the feared stimulus (e.g., "If I see a spider it will jump on me and bite

@@ -56,7 +56,7 @@ Approaching an unseen text requires a specific mindset:
 2. **Selectivity** — You cannot write about everything. Choose the most significant features
 3. **Argument** — Even in unseen analysis, you need a thesis. What is this text doing and how?
 4. **Precision** — Focus on specific words and phrases, not vague generalisations
-5. **Organisation** — Structure your response clearly, even under time pressure
+5. **Organisation** — Structure your response precisely, even under time pressure
 
 ## Analytical Frameworks
 

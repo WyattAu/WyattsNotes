@@ -52,8 +52,8 @@ Problem decomposition, pattern recognition, abstraction, algorithm complexity, a
 ## Study Tips
 
 Practise coding regularly — the coursework project requires strong programming skills. Understand
-algorithms at the trace-table level. For theory, focus on being able to explain concepts clearly and
-precisely.
+algorithms at the trace-table level. For theory, focus on being able to explain concepts precisely
+and precisely.
 
 ## Exam Information
 
@@ -63,7 +63,7 @@ understanding.
 
 ### Assessment Structure
 
-The examination typically consists of a written paper testing knowledge, understanding, and
+The examination commonly consists of a written paper testing knowledge, understanding, and
 problem-solving across all topics. Coursework or project components may also contribute to the final
 grade, depending on the subject and level.
 

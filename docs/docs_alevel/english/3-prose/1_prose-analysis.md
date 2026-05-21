@@ -19,7 +19,7 @@ slug: prose-analysis
 Prose fiction — novels, novellas, and short stories — forms a major component of A-Level English
 Literature. Analysing prose requires you to examine how writers construct narrative worlds through
 choices about voice, character, setting, structure, and language. At A-Level, you are expected to
-move beyond simply understanding what happens in a text to exploring how meaning is shaped by
+move beyond merely understanding what happens in a text to exploring how meaning is shaped by
 narrative technique and how texts engage with their historical and cultural contexts.
 
 This section covers the essential elements of prose analysis with practical frameworks for
@@ -194,7 +194,7 @@ When approaching a prose text, work through these layers:
 1. **Deconstruct the question** — Identify the key terms and the focus
 2. **Decide on your argument** — What is your thesis? What will you prove?
 3. **Select 4-6 key moments** — Choose scenes or passages that best support your argument
-4. **Order your points** — Arrange paragraphs to build a coherent argument, not simply follow the
+4. **Order your points** — Arrange paragraphs to build a coherent argument, not merely follow the
    plot
 5. **Plan context integration** — Decide where contextual points will strengthen your analysis
 
@@ -222,7 +222,7 @@ to narrate this scene from X's perspective..."
 created by the writer.
 
 **Fix:** Always refer to the writer's choices. Instead of "Elizabeth is proud," write "Austen
-constructs Elizabeth as a character whose initial pride prevents her from seeing Darcy clearly."
+constructs Elizabeth as a character whose initial pride prevents her from seeing Darcy accurately."
 Characters are effects of language, not autonomous beings.
 
 ### Pitfall 3: Superficial Setting Description

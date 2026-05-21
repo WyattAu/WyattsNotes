@@ -195,7 +195,7 @@ principles and the idiographic for understanding individual experience.
 
 ### Gender Bias
 
-Gender bias occurs when research or theory treats one gender (usually male) as the norm and either
+Gender bias occurs when research or theory treats one gender (commonly male) as the norm and either
 ignores, misrepresents, or devalues the other.
 
 **Types of gender bias:**
@@ -436,7 +436,7 @@ nurture position.
 However, the nurture explanation is also incomplete. Not all phobias can be traced to a specific
 conditioning event, and some fears are much more common than others. Seligman (1971) proposed the
 concept of biological preparedness — humans are biologically predisposed to learn certain fears more
-easily because they were adaptive in our evolutionary past. Öhman and Mineka (2001) found that
+readily because they were adaptive in our evolutionary past. Öhman and Mineka (2001) found that
 people more readily acquire phobias of snakes and spiders than of guns and electrical outlets,
 despite the latter being more dangerous in modern life. This demonstrates that nature (evolutionary
 predisposition) interacts with nurture (learning experience) in the development of phobias.

@@ -42,9 +42,9 @@ and replication but may lack ecological validity.
 Participants are often unaware they are in a study, reducing demand characteristics, but extraneous
 variables are harder to control.
 
-**Natural experiments** exploit naturally occurring differences in the IV (e.g., comparing areas
-with different crime rates). The researcher cannot manipulate the IV. Useful when manipulation would
-be unethical or impractical.
+**Natural experiments** exploit pre-existing differences in the IV (e.g., comparing areas with
+different crime rates). The researcher cannot manipulate the IV. Useful when manipulation would be
+unethical or impractical.
 
 **Quasi-experiments** involve pre-existing groups (e.g., gender, age) where random allocation is
 impossible. The IV is not manipulated by the researcher.
@@ -336,7 +336,7 @@ the effect of the IV on the DV. This increases internal validity, allowing resea
 a cause-and-effect relationship between variables. For example, in Asch's (1951) line conformity
 experiments, the standardised line lengths and controlled confederate behaviour ensured that any
 conformity observed was due to the social pressure of the majority rather than other factors. This
-level of control is simply not possible in field or natural experiments.
+level of control is not possible in field or natural experiments.
 
 A further strength is replicability. Because laboratory experiments use standardised procedures,
 other researchers can repeat the study under identical conditions. This allows findings to be tested
@@ -353,7 +353,7 @@ aims and behave accordingly. For instance, in Milgram's original study, particip
 continued administering shocks because they guessed (correctly) that no real harm was being done,
 rather than because of genuine obedience to authority.
 
-Additionally, laboratory experiments often use unrepresentative samples, typically university
+Additionally, laboratory experiments often use unrepresentative samples, in most cases university
 students, which limits population validity. Henle and Hubble (1978) found that conformity rates
 varied significantly across cultures, suggesting that findings from Western, educated,
 industrialised, rich, and democratic (WEIRD) samples may not generalise universally. This is a
@@ -374,18 +374,18 @@ psychological research in your answer. [16 marks]
 
 A correlation is a statistical technique used to measure the strength and direction of a
 relationship between two co-variables. Unlike experiments, correlations do not involve manipulating
-an independent variable; instead, both variables are measured as they naturally occur. The
-correlation coefficient (r) ranges from −1 (perfect negative) to +1 (perfect positive), with 0
+an independent variable; instead, both variables are measured as they occur without manipulation.
+The correlation coefficient (r) ranges from −1 (perfect negative) to +1 (perfect positive), with 0
 indicating no relationship.
 
 One strength of correlations is that they allow researchers to study variables that would be
 unethical or impractical to manipulate experimentally. For example, investigating the relationship
 between childhood trauma and adult mental health would be unethical as an experiment, as researchers
 cannot ethically expose participants to trauma. A correlational design allows this relationship to
-be studied using naturally occurring data, providing valuable insights that can guide further
-research and intervention.
+be studied using pre-existing data, providing valuable insights that can guide further research and
+intervention.
 
-Correlations are also relatively quick and economical to conduct. They typically use secondary data
+Correlations are also relatively quick and economical to conduct. They commonly use secondary data
 that has already been collected, avoiding the need for complex experimental setups. Large datasets,
 such as those from longitudinal studies or government surveys, can be analysed for correlations
 without the time and cost of primary data collection. This makes correlations a practical starting

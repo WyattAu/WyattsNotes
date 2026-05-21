@@ -140,7 +140,7 @@ Useful for poetry and prose analysis:
 
 A strong analytical paragraph follows this structure:
 
-1. **Topic sentence** — State your point clearly, linking to the question
+1. **Topic sentence** — State your point precisely, linking to the question
 2. **Evidence** — Embed a short quotation or reference
 3. **Analysis** — Examine the language, form, or structure of the evidence
 4. **Effect** — Explain the impact on the reader and link to meaning
@@ -222,8 +222,7 @@ to textual analysis.
 
 **Fix:** Integrate context into every paragraph where it is relevant. Context should explain _why_ a
 writer made a particular choice or _how_ a contemporary audience would have received it. Use phrases
-like "In the context of..." and "Reflecting the period's concern with..." to embed context
-naturally.
+like "In the context of..." and "Reflecting the period's concern with..." to embed context fluently.
 
 ## Worked Examples
 

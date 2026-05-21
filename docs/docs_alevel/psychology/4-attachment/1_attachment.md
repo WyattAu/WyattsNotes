@@ -17,8 +17,8 @@ slug: attachment
 ## Introduction
 
 Attachment is the deep, enduring emotional bond that forms between a child and their primary
-caregiver, usually within the first year of life. This topic examines how attachments form, the
-different types of attachment, evolutionary explanations, the effects of deprivation and
+caregiver, in most cases within the first year of life. This topic examines how attachments form,
+the different types of attachment, evolutionary explanations, the effects of deprivation and
 institutionalisation, and how early attachment experiences influence later relationships.
 
 ## Key Concepts
@@ -28,12 +28,12 @@ institutionalisation, and how early attachment experiences influence later relat
 **Lorenz (1935) — Imprinting in geese:**
 
 **Procedure:** Lorenz divided a clutch of greylag goose eggs into two groups. One group hatched
-naturally with the mother goose; the other hatched in an incubator with Lorenz as the first moving
-object they saw.
+under normal conditions with the mother goose; the other hatched in an incubator with Lorenz as the
+first moving object they saw.
 
 **Findings:** The incubator-hatched goslings followed Lorenz everywhere and showed no recognition of
-their natural mother. The naturally hatched goslings followed their mother. This process, which
-Lorenz called **imprinting**, occurred within a brief, biologically determined **critical period**
+their natural mother. The goslings hatched by the mother followed her. This process, which Lorenz
+called **imprinting**, occurred within a brief, biologically determined **critical period**
 (approximately 13–16 hours after hatching).
 
 **Key principles:**
@@ -83,7 +83,7 @@ response to the stranger.
 
 | Type                        | Separation anxiety            | Reunion behaviour                      | Stranger anxiety                    | Proportion (US sample) |
 | --------------------------- | ----------------------------- | -------------------------------------- | ----------------------------------- | ---------------------- |
-| Secure (Type B)             | Distressed when parent leaves | Seeks contact and is easily comforted  | Wary but can be comforted by parent | ~66%                   |
+| Secure (Type B)             | Distressed when parent leaves | Seeks contact and is readily comforted | Wary but can be comforted by parent | ~66%                   |
 | Insecure-avoidant (Type A)  | Shows little distress         | Avoids or ignores parent on return     | Indifferent to stranger             | ~22%                   |
 | Insecure-resistant (Type C) | Very distressed               | Seeks and rejects contact (ambivalent) | Very fearful, cannot be comforted   | ~12%                   |
 
@@ -118,9 +118,9 @@ enhances survival.
    suffer irreversible long-term consequences. (Later research suggests a **sensitive period** is
    more accurate — attachment can form after this window, but it is more difficult.)
 
-4. **Monotropy:** Bowlby argued that the child forms one special, primary attachment (usually to the
-   mother), which is qualitatively different from other attachments. This primary attachment figure
-   provides a **secure base** from which the child explores the world.
+4. **Monotropy:** Bowlby argued that the child forms one special, primary attachment (in most cases
+   to the mother), which is qualitatively different from other attachments. This primary attachment
+   figure provides a **secure base** from which the child explores the world.
 
 5. **Internal working model:** The child's first attachment creates a template (internal working
    model) for all future relationships. A secure attachment leads to expectations that others are
@@ -355,7 +355,7 @@ A significant strength of Bowlby's theory is its strong evolutionary basis. The 
 is adaptive and enhances survival is consistent with the principles of natural selection. Lorenz's
 (1935) research on imprinting in geese supports the concept of an innate, biologically programmed
 attachment process. Harlow's (1958) research on rhesus monkeys further supports the idea that
-attachment is not simply based on feeding but involves a deeper, innate emotional bond.
+attachment is not merely based on feeding but involves a deeper, innate emotional bond.
 
 Furthermore, Bowlby's theory has had enormous practical impact. It led to changes in hospital
 policies, allowing parents to stay with their children during hospitalisation. It also influenced

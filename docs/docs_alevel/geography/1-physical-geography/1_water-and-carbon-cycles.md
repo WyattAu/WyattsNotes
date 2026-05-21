@@ -329,7 +329,7 @@ to store water and releasing it more rapidly into river channels. Conversely, da
 increases the surface water store within the reservoir, raising evaporation losses but also allowing
 regulated discharge downstream, which can reduce flood peaks in the short term.
 
-These modifications alter the balance of the water budget equation (P = Q + E ± ΔS), typically
+These modifications alter the balance of the water budget equation (P = Q + E ± ΔS), commonly
 increasing Q (runoff) at the expense of soil moisture and groundwater stores.
 
 ### Example 2: 6-Mark Question

@@ -43,7 +43,7 @@ behaviour, not unobservable mental processes.
 Learning through association. A neutral stimulus is repeatedly paired with an unconditioned stimulus
 until it becomes a conditioned stimulus that produces a conditioned response.
 
-Pavlov demonstrated this with dogs. The unconditioned stimulus (food) naturally produced an
+Pavlov demonstrated this with dogs. The unconditioned stimulus (food) inherently produced an
 unconditioned response (salivation). By repeatedly pairing a neutral stimulus (a bell) with food,
 the bell became a conditioned stimulus that produced salivation (conditioned response) even without
 food.
@@ -88,7 +88,7 @@ experience (as behaviourists argued) but also through observation and imitation 
 **Key assumptions:**
 
 - Behaviour is learned through observation and imitation of role models.
-- Mental (cognitive) processes are important — learning is not simply stimulus-response.
+- Mental (cognitive) processes are important — learning is not merely stimulus-response.
 - Mediational processes determine whether a behaviour is imitated.
 
 **Bandura's Bobo Doll Experiment (1961):**
@@ -393,7 +393,7 @@ Emphasises personal growth and potential.
 
 **Limitations:** Unscientific — concepts like self-actualisation are difficult to define and
 measure. Cultural bias — emphasis on individualism and personal achievement reflects Western values.
-Limited explanatory power — cannot easily explain severe mental disorders (e.g., schizophrenia).
+Limited explanatory power — cannot readily explain severe mental disorders (e.g., schizophrenia).
 
 ## Methodology
 
@@ -478,7 +478,7 @@ processes. It has led to effective treatments, particularly CBT, which is the tr
 for depression and anxiety disorders. Cognitive neuroscience has further strengthened the approach
 by providing objective evidence for the neural basis of cognitive processes. However, the cognitive
 approach is itself criticised for machine reductionism — the computer analogy ignores emotion,
-motivation, and social context. People are not simply information processors; they are emotional,
+motivation, and social context. People are not merely information processors; they are emotional,
 social beings whose thinking is influenced by feelings and relationships.
 
 Both approaches share a tendency towards determinism. Behaviourism proposes environmental

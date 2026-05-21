@@ -32,17 +32,17 @@ for approaching anthology study.
 Form refers to the overall shape and structure of a poem. Recognising form helps you understand what
 conventions a poet is working within or against.
 
-| Form               | Description                                 | Typical Features                                                                             |
-| ------------------ | ------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Sonnet             | 14-line poem, usually in iambic pentameter  | Shakespearean (ABAB CDCD EFEF GG) or Petrarchan (ABBAABBA CDECDE) rhyme scheme; volta (turn) |
-| Villanelle         | 19-line poem with repeating lines           | Five tercets and one quatrain; refrain repeats; rhyme scheme ABA ABA ABA ABA ABA ABAA        |
-| Ballad             | Narrative poem in short stanzas             | Quatrains, alternating tetrameter and trimeter, ABCB or ABAB rhyme                           |
-| Ode                | A lyric poem addressing a subject           | Elevated tone, irregular stanza length, serious subject matter                               |
-| Elegy              | A poem of mourning                          | Reflective tone, movement from grief to consolation                                          |
-| Blank verse        | Unrhymed iambic pentameter                  | Common in dramatic and narrative poetry                                                      |
-| Free verse         | No regular meter or rhyme                   | Line breaks and enjambment create rhythm                                                     |
-| Haiku              | Three-line poem with 5-7-5 syllable pattern | Emphasis on nature, season, and a single moment                                              |
-| Dramatic monologue | A poem spoken by a character                | Reveals personality through voice, implication, and subtext                                  |
+| Form               | Description                                      | Typical Features                                                                             |
+| ------------------ | ------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Sonnet             | 14-line poem, in most cases in iambic pentameter | Shakespearean (ABAB CDCD EFEF GG) or Petrarchan (ABBAABBA CDECDE) rhyme scheme; volta (turn) |
+| Villanelle         | 19-line poem with repeating lines                | Five tercets and one quatrain; refrain repeats; rhyme scheme ABA ABA ABA ABA ABA ABAA        |
+| Ballad             | Narrative poem in short stanzas                  | Quatrains, alternating tetrameter and trimeter, ABCB or ABAB rhyme                           |
+| Ode                | A lyric poem addressing a subject                | Elevated tone, irregular stanza length, serious subject matter                               |
+| Elegy              | A poem of mourning                               | Reflective tone, movement from grief to consolation                                          |
+| Blank verse        | Unrhymed iambic pentameter                       | Common in dramatic and narrative poetry                                                      |
+| Free verse         | No regular meter or rhyme                        | Line breaks and enjambment create rhythm                                                     |
+| Haiku              | Three-line poem with 5-7-5 syllable pattern      | Emphasis on nature, season, and a single moment                                              |
+| Dramatic monologue | A poem spoken by a character                     | Reveals personality through voice, implication, and subtext                                  |
 
 ### Meter and Rhythm
 

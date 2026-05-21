@@ -279,7 +279,7 @@ close proximity, suggesting the presence of pheromones (chemical signals) as an 
 However, this finding has been challenged by subsequent research (e.g., Yang and Schank, 2006).
 
 **Seasonal affective disorder (SAD):** A type of depression that follows a seasonal pattern,
-typically occurring in winter when daylight hours are short. Treated with phototherapy (bright light
+commonly occurring in winter when daylight hours are short. Treated with phototherapy (bright light
 exposure), supporting the role of the zeitgeber light in regulating mood and circadian rhythms.
 
 ## Key Studies
@@ -376,7 +376,7 @@ Biopsychology research uses:
    generate the rhythm; exogenous zeitgebers entrain it to the correct period.
 2. **Confusing Broca's and Wernicke's areas:** Broca's area (frontal lobe) = speech production
    (damage = slow, non-fluent speech). Wernicke's area (temporal lobe) = language comprehension
-   (damage = fluent but meaningless speech). Both are typically in the left hemisphere.
+   (damage = fluent but meaningless speech). Both are commonly in the left hemisphere.
 3. **Overstating brain scanning evidence:** fMRI shows correlations between brain activity and
    behaviour, not causation. Just because an area is active during a task does not mean it causes
    that behaviour. Always note this limitation.
@@ -489,9 +489,9 @@ day-night cycle. Other zeitgebers include social cues (mealtimes, work schedules
 exercise, and medication.
 
 A strength of the endogenous pacemaker explanation is its strong biological basis. The SCN has been
-clearly identified as the master clock through animal lesion studies (Morgan, 1995) and human case
-studies. Individuals with damage to the SCN or its neural pathways show disrupted circadian rhythms,
-supporting its causal role.
+conclusively identified as the master clock through animal lesion studies (Morgan, 1995) and human
+case studies. Individuals with damage to the SCN or its neural pathways show disrupted circadian
+rhythms, supporting its causal role.
 
 However, the entrainment process is not solely dependent on light. Other zeitgebers, such as social
 cues, mealtimes, and exercise, also play a role. In situations where light cues are unavailable
