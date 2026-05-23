@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+
 import React from 'react';
 
 import LayoutWrapper from './index';
@@ -10,6 +11,7 @@ describe('Layout (render)', () => {
         <div>test content</div>
       </LayoutWrapper>,
     );
+
     expect(container).toBeTruthy();
   });
 
@@ -20,6 +22,7 @@ describe('Layout (render)', () => {
       </LayoutWrapper>,
     );
     const layout = container.querySelector('[data-testid="Layout"]');
+
     expect(layout).toBeTruthy();
     expect(layout?.querySelector('[data-testid="child"]')).toBeTruthy();
   });
