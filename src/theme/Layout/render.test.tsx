@@ -2,6 +2,23 @@ import { render } from '@testing-library/react';
 
 import React from 'react';
 
+import { vi } from 'vitest';
+
+// Mock Docusaurus modules before importing the source
+vi.mock('@theme-original/Layout', () => ({
+  default: ({ children }: { children?: React.ReactNode }) => (
+    <div data-testid="Layout">{children}</div>
+  ),
+}));
+
+vi.mock('@docusaurus/ExecutionEnvironment', () => ({
+  default: { canUseDOM: true, canUseIntersectionObserver: true, canUseViewport: true },
+  canUseDOM: true,
+  canUseIntersectionObserver: true,
+  canUseViewport: true,
+}));
+
+// Import source AFTER mocks
 import LayoutWrapper from './index';
 
 describe('Layout (render)', () => {
@@ -35,6 +52,7 @@ describe('Layout (render)', () => {
     );
     // ReadingProgress renders empty when progress < 1 in jsdom
     // but the component should still be mounted
+
     expect(container).toBeTruthy();
   });
 });

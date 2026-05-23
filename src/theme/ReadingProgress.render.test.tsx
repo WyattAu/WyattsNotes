@@ -2,6 +2,17 @@ import { render } from '@testing-library/react';
 
 import React from 'react';
 
+import { vi } from 'vitest';
+
+// Mock Docusaurus modules before importing the source
+vi.mock('@docusaurus/ExecutionEnvironment', () => ({
+  default: { canUseDOM: true, canUseIntersectionObserver: true, canUseViewport: true },
+  canUseDOM: true,
+  canUseIntersectionObserver: true,
+  canUseViewport: true,
+}));
+
+// Import source AFTER mocks
 import ReadingProgress from './ReadingProgress';
 
 describe('ReadingProgress (render)', () => {
@@ -12,16 +23,13 @@ describe('ReadingProgress (render)', () => {
   });
 
   it('returns empty when progress is less than 1%', () => {
-    // scrollY is 0, docHeight likely 0 in jsdom
     const { container } = render(<ReadingProgress />);
-    // progress bar should not render when progress < 1
     const bar = container.querySelector('[role="progressbar"]');
 
     expect(bar).toBeNull();
   });
 
   it('renders progress bar when scrolled', () => {
-    // Mock scroll position
     Object.defineProperty(window, 'scrollY', { value: 500, writable: true });
 
     Object.defineProperty(document.documentElement, 'scrollHeight', {
@@ -36,7 +44,6 @@ describe('ReadingProgress (render)', () => {
 
     const { container } = render(<ReadingProgress />);
 
-    // Trigger scroll event
     window.dispatchEvent(new Event('scroll'));
 
     const bar = container.querySelector('[role="progressbar"]');

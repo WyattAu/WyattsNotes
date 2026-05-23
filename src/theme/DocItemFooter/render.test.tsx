@@ -2,6 +2,23 @@ import { render } from '@testing-library/react';
 
 import React from 'react';
 
+import { vi } from 'vitest';
+
+// Mock Docusaurus modules before importing the source
+vi.mock('@docusaurus/ExecutionEnvironment', () => ({
+  default: { canUseDOM: true, canUseIntersectionObserver: true, canUseViewport: true },
+  canUseDOM: true,
+  canUseIntersectionObserver: true,
+  canUseViewport: true,
+}));
+
+vi.mock('@theme-original/DocItemFooter', () => ({
+  default: ({ children }: { children?: React.ReactNode }) => (
+    <div data-testid="DocItemFooter">{children}</div>
+  ),
+}));
+
+// Import source AFTER mocks
 import DocItemFooterWrapper from './index';
 
 describe('DocItemFooter (render)', () => {
