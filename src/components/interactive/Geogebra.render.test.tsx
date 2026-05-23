@@ -43,8 +43,8 @@ describe('Geogebra (render)', () => {
   it('computes correct aspect padding', () => {
     const { container } = render(<Geogebra appletId="abc123" width={800} height={600} />);
 
-    const responsiveDiv = container.querySelector('[style*="padding-bottom"]') as HTMLElement;
-
-    expect(responsiveDiv.style.paddingBottom).toBe('75%');
+    const responsiveDiv = container.querySelector('[style*="padding-bottom"]');
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    expect(responsiveDiv!.style.paddingBottom).toBe('75%');
   });
 });

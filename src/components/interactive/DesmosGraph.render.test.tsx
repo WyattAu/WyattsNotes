@@ -31,9 +31,9 @@ describe('DesmosGraph (render)', () => {
       <DesmosGraph calculatorUrl="https://example.com" width={800} height={500} />,
     );
 
-    const responsiveDiv = container.querySelector('[style*="padding-bottom"]') as HTMLElement;
-
-    expect(responsiveDiv.style.paddingBottom).toBe('62.5%');
+    const responsiveDiv = container.querySelector('[style*="padding-bottom"]');
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    expect(responsiveDiv!.style.paddingBottom).toBe('62.5%');
   });
 
   it('renders title for iframe mode', () => {

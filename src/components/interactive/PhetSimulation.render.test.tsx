@@ -23,9 +23,9 @@ describe('PhetSimulation (render)', () => {
   it('applies custom dimensions in aspect padding', () => {
     const { container } = render(<PhetSimulation simulationId="test" width={800} height={400} />);
 
-    const responsiveDiv = container.querySelector('[style*="padding-bottom"]') as HTMLElement;
-
-    expect(responsiveDiv.style.paddingBottom).toBe('50%');
+    const responsiveDiv = container.querySelector('[style*="padding-bottom"]');
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    expect(responsiveDiv!.style.paddingBottom).toBe('50%');
   });
 
   it('has correct sandbox attribute', () => {
