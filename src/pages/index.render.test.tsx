@@ -12,15 +12,9 @@ vi.mock('@docusaurus/useDocusaurusContext', () => ({
 }));
 
 vi.mock('@docusaurus/Link', () => ({
-  default: ({
-    children,
-    to,
-    href,
-  }: {
-    children?: React.ReactNode;
-    to?: string;
-    href?: string;
-  }) => <a href={to || href}>{children}</a>,
+  default: ({ children, to, href }: { children?: React.ReactNode; to?: string; href?: string }) => (
+    <a href={to || href}>{children}</a>
+  ),
 }));
 
 vi.mock('@theme/Heading', () => ({
