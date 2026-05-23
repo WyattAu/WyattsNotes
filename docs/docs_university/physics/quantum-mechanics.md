@@ -1,8 +1,11 @@
 ---
 title: Quantum Mechanics
 description:
-  'University-level notes on Quantum Mechanics: 1. Historical Motivation; 1.1 Failures of Classical
-  Physics; 1.2 Key Experiments.'
+  'Comprehensive university-level notes on quantum mechanics covering historical motivation and
+  failures of classical physics, the postulates of quantum mechanics, the Schrodinger equation,
+  operators and observables, one-dimensional potential problems, angular momentum and the hydrogen
+  atom, spin, perturbation theory, scattering theory, the WKB approximation, and density functional
+  theory.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics

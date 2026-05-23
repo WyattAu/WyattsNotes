@@ -17,7 +17,7 @@ echo "[pre-commit] Running lint-staged (eslint --fix + prettier --write)..."
 npx lint-staged
 
 echo "[pre-commit] Running TypeScript typecheck..."
-npx tsc --noEmit
+NODE_OPTIONS="--max-old-space-size=8192" npx tsc --noEmit
 
 # --- Unit tests ---
 echo "[pre-commit] Running unit tests (vitest, timeout 120s)..."

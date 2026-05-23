@@ -1,8 +1,10 @@
 ---
 title: Classical Mechanics
 description:
-  "University-level notes on Classical Mechanics: 1. Newtonian Mechanics Review; 1.1 Newton's Laws;
-  1.2 Newton's Second Law in Various Coordinate Systems."
+  "Comprehensive university-level notes on classical mechanics covering Newtonian mechanics,
+  Lagrangian and Hamiltonian formulations, Noether's theorem, central force problems, rigid body
+  dynamics, small oscillations and normal modes, nonlinear dynamics and chaos, and an introduction
+  to classical field theory."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics

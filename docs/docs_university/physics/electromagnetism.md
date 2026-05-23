@@ -1,8 +1,10 @@
 ---
 title: Electromagnetism
 description:
-  "University-level notes on Electromagnetism: 1. Maxwell's Equations; 1.1 The Four Equations; 1.2
-  Derivation from Integral to Differential Form."
+  "Comprehensive university-level notes on electromagnetism covering Maxwell's equations in integral
+  and differential form, electrostatics, magnetostatics, electrodynamics, electromagnetic wave
+  propagation, gauge transformations, special relativity and its connection to electromagnetism,
+  radiation from accelerating charges, waveguides, and plasma physics."
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics

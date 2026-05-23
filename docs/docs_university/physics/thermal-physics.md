@@ -1,8 +1,10 @@
 ---
 title: Thermal Physics
 description:
-  'University-level notes on Thermal Physics: 1. The Laws of Thermodynamics; 1.1 Zeroth Law and
-  Temperature; 1.2 First Law; 1.3 Second Law and Entropy; 1.4 Third L'
+  'Comprehensive university-level notes on thermal physics covering the laws of thermodynamics,
+  statistical mechanics and ensemble theory, the grand canonical ensemble, Fermi-Dirac and
+  Bose-Einstein statistics, Fermi gases, Bose-Einstein condensation, the Ising model, phase
+  transitions, Landau theory, the fluctuation-dissipation theorem, and the Debye model of solids.'
 date: 2026-04-26T00:00:00.000Z
 tags:
   - Physics

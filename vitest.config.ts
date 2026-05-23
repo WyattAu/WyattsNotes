@@ -30,11 +30,16 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@theme-original': path.resolve(__dirname, 'src/__tests__/__mocks__/theme-original.tsx'),
-      '@theme': path.resolve(__dirname, 'src/__tests__/__mocks__/theme.ts'),
+      '@theme-original': path.resolve(__dirname, 'src/__tests__/__mocks__/theme-original'),
+      '@theme': path.resolve(__dirname, 'src/__tests__/__mocks__/theme'),
       '@docusaurus/ExecutionEnvironment': path.resolve(
         __dirname,
         'src/__tests__/__mocks__/ExecutionEnvironment.ts',
+      ),
+      '@docusaurus/Link': path.resolve(__dirname, 'src/__tests__/__mocks__/docusaurus/Link.tsx'),
+      '@docusaurus/useDocusaurusContext': path.resolve(
+        __dirname,
+        'src/__tests__/__mocks__/docusaurus/useDocusaurusContext.ts',
       ),
     },
   },
