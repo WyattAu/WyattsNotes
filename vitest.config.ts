@@ -3,6 +3,8 @@ import path from 'path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
+const mocksDir = path.resolve(__dirname, 'src/__tests__/__mocks__');
+
 export default defineConfig({
   plugins: [react()],
   test: {
@@ -35,36 +37,44 @@ export default defineConfig({
   },
   resolve: {
     alias: [
-      {
-        find: /^@theme-original\/(.*)$/,
-        replacement: path.resolve(__dirname, 'src/__tests__/__mocks__/theme-original/$1'),
-      },
-      {
-        find: /^@theme\/(.*)$/,
-        replacement: path.resolve(__dirname, 'src/__tests__/__mocks__/theme/$1'),
-      },
-      {
-        find: '@theme-original',
-        replacement: path.resolve(__dirname, 'src/__tests__/__mocks__/theme-original'),
-      },
-      {
-        find: '@theme',
-        replacement: path.resolve(__dirname, 'src/__tests__/__mocks__/theme'),
-      },
+      // Docusaurus module mocks (used by both test files and source files)
       {
         find: '@docusaurus/ExecutionEnvironment',
-        replacement: path.resolve(__dirname, 'src/__tests__/__mocks__/ExecutionEnvironment.ts'),
+        replacement: path.join(mocksDir, 'ExecutionEnvironment.ts'),
       },
       {
-        find: /^@docusaurus\/Link$/,
-        replacement: path.resolve(__dirname, 'src/__tests__/__mocks__/docusaurus/Link.tsx'),
+        find: '@docusaurus/Link',
+        replacement: path.join(mocksDir, 'docusaurus/Link.tsx'),
       },
       {
         find: '@docusaurus/useDocusaurusContext',
-        replacement: path.resolve(
-          __dirname,
-          'src/__tests__/__mocks__/docusaurus/useDocusaurusContext.ts',
-        ),
+        replacement: path.join(mocksDir, 'docusaurus/useDocusaurusContext.ts'),
+      },
+      // Docusaurus theme swizzle mocks
+      {
+        find: '@theme-original/Layout',
+        replacement: path.join(mocksDir, 'theme-original/Layout.tsx'),
+      },
+      {
+        find: '@theme-original/DocItemFooter',
+        replacement: path.join(mocksDir, 'theme-original/DocItemFooter.tsx'),
+      },
+      {
+        find: '@theme/Layout',
+        replacement: path.join(mocksDir, 'theme/Layout.tsx'),
+      },
+      {
+        find: '@theme/Heading',
+        replacement: path.join(mocksDir, 'theme/Heading.tsx'),
+      },
+      // Catch-all for @theme-original and @theme bare imports
+      {
+        find: '@theme-original',
+        replacement: path.join(mocksDir, 'theme-original'),
+      },
+      {
+        find: '@theme',
+        replacement: path.join(mocksDir, 'theme'),
       },
     ],
   },
