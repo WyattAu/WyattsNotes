@@ -32,8 +32,9 @@ describe('DesmosGraph (render)', () => {
     );
 
     const responsiveDiv = container.querySelector('[style*="padding-bottom"]');
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    expect(responsiveDiv!.style.paddingBottom).toBe('62.5%');
+
+    expect(responsiveDiv).toBeInTheDocument();
+    expect(responsiveDiv?.getAttribute('style')).toContain('padding-bottom: 62.5%');
   });
 
   it('renders title for iframe mode', () => {

@@ -44,7 +44,8 @@ describe('Geogebra (render)', () => {
     const { container } = render(<Geogebra appletId="abc123" width={800} height={600} />);
 
     const responsiveDiv = container.querySelector('[style*="padding-bottom"]');
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    expect(responsiveDiv!.style.paddingBottom).toBe('75%');
+
+    expect(responsiveDiv).toBeInTheDocument();
+    expect(responsiveDiv?.getAttribute('style')).toContain('padding-bottom: 75%');
   });
 });
