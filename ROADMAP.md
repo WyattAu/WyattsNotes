@@ -439,7 +439,7 @@
 | TD-028 | 887 unstaged doc files with prettier/template changes                          | Low      | OPEN    |
 | TD-029 | Landing page stats hardcoded (TODO comment)                                     | Low      | FIXED   |
 | TD-030 | 1,279 content files with empty descriptions                                    | Medium   | CLOSED (false alarm) |
-| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | OPEN    |
+| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | WIP (test.alias fails; vite cannot resolve phantom @docusaurus modules) |
 | TD-032 | Typecheck requires 8GB heap (NODE_OPTIONS=--max-old-space-size=8192)           | Low      | FIXED (2GB) |
 
 ---
