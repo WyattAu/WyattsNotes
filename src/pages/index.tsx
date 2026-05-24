@@ -263,12 +263,14 @@ const subjectGroups: SubjectGroup[] = [
   },
 ];
 
-// TODO(TD-029): Replace with build-time computation via Docusaurus plugin
-// to auto-update on content changes. fs/path cannot be used in client bundle
-// (webpack 5 limitation). Values must be updated manually when docs change.
-const totalFiles = 1478;
-const totalLines = '751K';
-const totalSubjects = 30;
+// NOTE: These totals are computed from the subjectGroups data above.
+// Update when subjects are added/removed.
+// Files: sum of all subject file counts = 1,211
+// Lines: sum of all subject line counts ≈ 862K
+// Subjects: count of subject entries = 27
+const totalFiles = 1211;
+const totalLines = '862K';
+const totalSubjects = 27;
 
 export default function Home(): React.ReactNode {
   const { siteConfig } = useDocusaurusContext();

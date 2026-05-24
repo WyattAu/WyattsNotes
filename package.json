@@ -86,6 +86,7 @@
     "eslint-plugin-prettier": "^5.5.3",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-unused-imports": "^4.1.4",
+    "fast-check": "^4.8.0",
     "gh-pages": "^6.3.0",
     "husky": "^9.1.7",
     "jsdom": "^29.1.1",

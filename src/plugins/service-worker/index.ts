@@ -48,6 +48,7 @@ export default function serviceWorkerPlugin(
         globIgnores: ['sw.js', 'sw.js.map'],
         skipWaiting: true,
         clientsClaim: true,
+        cleanupOutdatedCaches: true,
         cacheId,
         dontCacheBustURLsMatching: /\.[a-f0-9]{8}\./i,
         runtimeCaching: [
