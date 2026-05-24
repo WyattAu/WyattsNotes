@@ -39,6 +39,21 @@ jobs:
         id: build
         run: pnpm run build
 
+      - name: Report bundle sizes
+        if: always() && steps.build.outcome == 'success'
+        run: |
+          echo "## Bundle Sizes" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          for dir in build/build-*/; do
+            if [ -d "$dir" ]; then
+              site=$(basename "$dir" | sed 's/build-//')
+              js_size=$(find "$dir" -name '*.js' -exec cat {} + 2>/dev/null | wc -c || echo 0)
+              css_size=$(find "$dir" -name '*.css' -exec cat {} + 2>/dev/null | wc -c || echo 0)
+              total=$((js_size + css_size))
+              echo "- **${site}**: JS $((js_size / 1024)) KB, CSS $((css_size / 1024)) KB, Total $((total / 1024)) KB" >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done || true
+
       - name: Build timing
         if: always()
         run: |

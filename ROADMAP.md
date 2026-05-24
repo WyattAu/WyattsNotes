@@ -210,8 +210,9 @@
 - [x] robots.txt with all 8 subdomain sitemaps
 - [x] JSON-LD WebSite + EducationalOrganization schema
 - [x] DNS prefetch/preconnect for all external resources
+- [x] og:image and twitter:card social meta tags
 - [ ] Per-subdomain social card images
-- [ ] Google/Bing webmaster verification tags
+- [ ] Google/Bing webmaster verification tags (requires account registration)
 - [ ] HTTP 301 redirects for academics/alevel
 
 ---
@@ -369,7 +370,9 @@
 ### 10.2 Progressive Web App
 
 - [x] Service worker with Workbox generateSW
-- [ ] Add web app manifest
+- [x] Web app manifest (static/manifest.json)
+- [x] Apple touch icon for iOS
+- [x] og:image and twitter:card social meta tags
 - [ ] Add offline fallback page
 - [ ] Add push notification support (optional)
 
@@ -416,9 +419,10 @@
 
 ### 11.3 Performance
 
+- [x] Bundle size tracking in CI (per-site JS/CSS sizes in job summary)
 - [ ] Core Web Vitals optimization
 - [ ] Lighthouse score monitoring
-- [ ] Bundle size tracking
+- [ ] Bundle size regression alerts
 - [ ] Image optimization pipeline
 - [ ] Font loading optimization
 

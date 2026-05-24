@@ -111,6 +111,33 @@ export const sharedHeadTags: Config['headTags'] = [
   //   tagName: 'meta',
   //   attributes: { name: 'msvalidate.01', content: 'BING_VERIFICATION_CODE' },
   // },
+  // Web App Manifest (PWA)
+  {
+    tagName: 'link',
+    attributes: { rel: 'manifest', href: '/manifest.json' },
+  },
+  // Apple touch icon for iOS PWA
+  {
+    tagName: 'link',
+    attributes: { rel: 'apple-touch-icon', href: '/img/WyattsNotes/WyattsNotesLogo.png' },
+  },
+  // Open Graph / Social Card
+  {
+    tagName: 'meta',
+    attributes: { property: 'og:image', content: '/img/WyattsNotes/WyattsNotesSocialCard.png' },
+  },
+  {
+    tagName: 'meta',
+    attributes: { property: 'og:type', content: 'website' },
+  },
+  {
+    tagName: 'meta',
+    attributes: { name: 'twitter:card', content: 'summary_large_image' },
+  },
+  {
+    tagName: 'meta',
+    attributes: { name: 'twitter:image', content: '/img/WyattsNotes/WyattsNotesSocialCard.png' },
+  },
   {
     tagName: 'link',
     attributes: { rel: 'dns-prefetch', href: 'https://cdn.jsdelivr.net' },
