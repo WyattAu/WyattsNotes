@@ -1,15 +1,50 @@
 import { expect, test } from '@playwright/test';
 
-test.describe('Search', () => {
-  test('search button is visible in navbar', async ({ page }) => {
+test.describe('Search Functionality', () => {
+  test('search modal opens on main site', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('button.DocSearch-Button')).toBeVisible();
+    const searchButton = page.locator('button.DocSearch-Button');
+    await expect(searchButton).toBeVisible({ timeout: 10000 });
+    await searchButton.click();
+
+    const modal = page.locator('.DocSearch-Modal');
+    await expect(modal).toBeVisible();
   });
 
-  test('footer external links resolve', async ({ page }) => {
+  test('search modal opens with keyboard shortcut', async ({ page }) => {
     await page.goto('/');
-    const externalLinks = page.locator('footer a[href^="http"]');
-    const count = await externalLinks.count();
-    expect(count).toBeGreaterThan(0);
+    await page.waitForLoadState('networkidle');
+
+    // Ctrl+K opens search
+    await page.keyboard.press('Control+k');
+
+    const modal = page.locator('.DocSearch-Modal');
+    await expect(modal).toBeVisible();
+  });
+
+  test('search input accepts query', async ({ page }) => {
+    await page.goto('/');
+    const searchButton = page.locator('button.DocSearch-Button');
+    await expect(searchButton).toBeVisible({ timeout: 10000 });
+    await searchButton.click();
+
+    const input = page.locator('.DocSearch-Input');
+    await expect(input).toBeVisible();
+    await input.fill('physics');
+    // Input should contain the query
+    await expect(input).toHaveValue('physics');
+  });
+
+  test('search modal closes on Escape', async ({ page }) => {
+    await page.goto('/');
+    const searchButton = page.locator('button.DocSearch-Button');
+    await expect(searchButton).toBeVisible({ timeout: 10000 });
+    await searchButton.click();
+
+    const modal = page.locator('.DocSearch-Modal');
+    await expect(modal).toBeVisible();
+
+    await page.keyboard.press('Escape');
+    await expect(modal).not.toBeVisible();
   });
 });

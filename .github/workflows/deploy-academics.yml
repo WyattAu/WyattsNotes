@@ -7,6 +7,10 @@ on:
       - '.github/workflows/deploy-academics.yml'
   workflow_dispatch:
 
+concurrency:
+  group: deploy-academics-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     name: Deploy Academics Redirect

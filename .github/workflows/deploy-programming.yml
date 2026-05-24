@@ -17,6 +17,10 @@ on:
       - 'pnpm-lock.yaml'
   workflow_dispatch:
 
+concurrency:
+  group: deploy-programming-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     name: Build and Deploy Programming

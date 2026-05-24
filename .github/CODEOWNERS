@@ -1,0 +1,38 @@
+# CODEOWNERS - Review ownership for WyattsNotes monorepo
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything
+* @WyattAu
+
+# CI/CD and infrastructure
+/.github/ @WyattAu
+/scripts/ @WyattAu
+/docusaurus*.config.ts @WyattAu
+/docusaurus.shared.config.ts @WyattAu
+/package.json @WyattAu
+/pnpm-lock.yaml @WyattAu
+
+# Core framework code
+/src/ @WyattAu
+/sidebars/ @WyattAu
+/static/ @WyattAu
+
+# Site-specific content
+/docs/docs_infrastructure/ @WyattAu
+/docs/docs_tools/ @WyattAu
+/docs/docs_ib/ @WyattAu
+/docs/docs_dse/ @WyattAu
+/docs/docs_alevel/ @WyattAu
+/docs/docs_qualifications/ @WyattAu
+/docs/docs_cpp/ @WyattAu
+/docs/docs_languages/ @WyattAu
+/docs/docs_university/ @WyattAu
+
+# Tests
+/e2e/ @WyattAu
+/src/__tests__/ @WyattAu
+
+# Documentation and configuration
+/ROADMAP.md @WyattAu
+/CONTRIBUTING.md @WyattAu
+/.patterns/ @WyattAu

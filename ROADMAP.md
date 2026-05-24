@@ -228,7 +228,7 @@
 
 - [x] Added E2E tests for 7 sub-sites (IB, DSE, A-Level MP, A-Level Sciences, Qualifications, Programming, University)
 - [x] Added cross-site navigation tests (landing links, academics->IB redirect, alevel redirect)
-- [ ] Test search functionality across sites
+- [x] Added search functionality tests (modal open, keyboard shortcut, input, close)
 - [ ] Test service worker offline behavior
 
 ### 6.3 Property-Based Testing
@@ -277,8 +277,9 @@
 
 ### 7.3 Description Quality
 
-- [ ] Fix 1,279 files with empty/missing descriptions
-- [ ] Automate description generation from first paragraph
+- [x] All 1,370 content files have descriptions (verified 2026-05-24)
+- [x] Fixed 9 empty descriptions in university physics docs
+- [x] Created scripts/generate-descriptions.mjs for future use
 - [ ] Add CI gate for description quality on new files
 
 ---
@@ -318,14 +319,14 @@
 
 - [x] Dependabot config for npm and github-actions (weekly/monthly)
 - [x] Fixed duplicate npm entry in dependabot.yml
-- [ ] Add auto-merge for patch-level dependency updates
+- [x] Auto-merge workflow for patch-level dependency updates
 - [ ] Add vulnerability alerting to Slack/Discord
 
 ### 8.7 Deploy Optimization
 
 - [x] All 9 deploy workflows have path-based triggers
 - [x] Build cache enabled per workflow
-- [ ] Add concurrency groups to prevent parallel deploys
+- [x] Concurrency groups on all 9 deploy workflows (cancel-in-progress)
 - [ ] Add deployment notifications (success/failure)
 
 ---
@@ -337,7 +338,7 @@
 - [x] CONTRIBUTING.md exists (122 lines)
 - [x] Issue templates exist (bug report, feature request)
 - [x] PR templates exist (4 templates)
-- [ ] Add CODEOWNERS file for subject-area review
+- [x] CODEOWNERS file for subject-area review
 - [ ] Add content style guide reference in PR template
 - [ ] Create contribution FAQ
 
