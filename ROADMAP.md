@@ -428,8 +428,8 @@
 
 | ID     | Description                                                                    | Priority | Status  |
 | ------ | ------------------------------------------------------------------------------ | -------- | ------- |
-| TD-009 | E2E tests only cover main site                                                 | Medium   | OPEN    |
-| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | WIP     |
+| TD-009 | E2E tests only cover main site                                                 | Medium   | FIXED (7 sub-sites + cross-site + search) |
+| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | WIP    |
 | TD-023 | No Google/Bing webmaster verification tags                                     | Medium   | OPEN    |
 | TD-025 | programming.wyattau.com slow load (0.988s)                                     | Low      | OPEN    |
 | TD-028 | 887 unstaged doc files with prettier/template changes                          | Low      | OPEN    |
