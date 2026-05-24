@@ -24,3 +24,4 @@ __pycache__/
 src/__tests__/__mocks__/
 .tsbuildinfo
 coverage/
+.lighthouseci/
