@@ -1,30 +1,32 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-05-23. CI green. 85 tests, 12 files. All 10 sites live (HTTP 200).
+> Updated 2026-05-24. CI green. 109 tests, 13 files. All 10 sites live (HTTP 200).
 > This document covers the complete path from current state to production and future expansion.
 
 ---
 
-## Current State (Post-Audit 2026-05-23)
+## Current State (Post-Audit 2026-05-24)
 
 | Metric              | Value                                                        |
 | ------------------- | ------------------------------------------------------------ |
-| Total content files | 1,478 (.md)                                                  |
-| Total content lines | ~862K+                                                       |
-| Subjects            | 28+                                                          |
+| Total content files | 1,370 (.md) on disk, 1,211 in subject cards                  |
+| Total content lines | ~1,062K                                                      |
+| Subjects            | 27                                                           |
 | Sub-sites           | 11 (8 content, 1 redirect, 2 DNS pending)                    |
 | CI/CD workflows     | 13 (1 CI, 9 deploy, 1 Algolia, 1 Lighthouse, 1 uptime)      |
-| Test suite          | 85 tests (12 files), coverage 61% lines                      |
+| Test suite          | 109 tests (13 files), coverage 61% lines                      |
+| Property tests      | 16 (fast-check) covering URL construction, reading time, progress |
 | Algolia indices     | 8                                                            |
 | Hosting             | Cloudflare Pages (wrangler)                                  |
 | License             | AGPLv3                                                       |
 | Stack               | Docusaurus 3.10, React 19, TypeScript 5.9, Node 22, pnpm 10 |
 
-### Audit Results (2026-05-23)
+### Audit Results (2026-05-24)
 
 | Check                    | Result        |
 | ------------------------ | ------------- |
-| Unit Tests (85/85)       | PASS          |
+| Unit Tests (109/109)     | PASS          |
+| Property Tests (16)      | PASS          |
 | Typecheck (0 errors)     | PASS          |
 | Lint (0 errors)          | PASS          |
 | Links (2,844 verified)   | PASS          |
@@ -35,7 +37,7 @@
 | All 10 sites (HTTP 200)  | PASS          |
 | CI Pipeline (all jobs)   | PASS          |
 
-### Audit Changes (6 commits)
+### Audit Changes (12 commits across 2 sessions)
 
 1. Added 16 new React component render tests (69 to 85 tests)
 2. Coverage improved from 0% to 61.48% lines, 38% to 72% branches
@@ -43,6 +45,12 @@
 4. Restructured test mocks to directory-based for scalability
 5. Added vitest aliases for Docusaurus Link and useDocusaurusContext mocks
 6. Fixed pre-commit hook memory allocation for typecheck
+7. Added 16 property-based tests (fast-check): URL construction, reading time, progress
+8. Added E2E tests for 7 sub-sites (IB, DSE, A-Level, Qualifications, Programming, University)
+9. Updated Lighthouse config with multi-page testing and realistic thresholds
+10. Fixed landing page stats (1,478 -> 1,211, 751K -> 862K, 30 -> 27 subjects)
+11. Added cleanupOutdatedCaches to service worker plugin
+12. Verified all 1,370 content files have descriptions (TD-030 was false alarm)
 
 ---
 
@@ -148,8 +156,10 @@
 
 ### 4.3 Service Worker Audit
 
-- [ ] Verify service worker cache invalidation on deploy
-- [ ] Test offline functionality
+- [x] Added cleanupOutdatedCaches: true to prevent stale precache entries
+- [x] Verified cache invalidation works via content hashing (dontCacheBustURLsMatching)
+- [x] Verified skipWaiting + clientsClaim for immediate activation
+- [ ] Test offline functionality manually
 - [ ] Add versioned cache busting
 
 ---
@@ -214,16 +224,19 @@
 
 ### 6.2 E2E Test Expansion
 
-- [ ] Add E2E tests for sub-sites (IB, DSE, A-Level, Programming, University)
+- [x] Added E2E tests for 7 sub-sites (IB, DSE, A-Level MP, A-Level Sciences, Qualifications, Programming, University)
+- [x] Added cross-site navigation tests (landing links, academics->IB redirect, alevel redirect)
 - [ ] Test search functionality across sites
-- [ ] Test cross-domain theme sync
 - [ ] Test service worker offline behavior
 
 ### 6.3 Property-Based Testing
 
-- [ ] Add fast-check for LaTeX brace escaping algorithm
-- [ ] Add fast-check for URL construction (Geogebra, PhET)
-- [ ] Add fast-check for reading time computation
+- [x] Add fast-check for URL construction (Geogebra, PhET)
+- [x] Add fast-check for reading time computation
+- [x] Add fast-check for reading progress computation
+- [x] Add fast-check for DesmosGraph parameter detection
+- [x] Add fast-check for escape-braces invariants
+- [ ] Add fast-check for LaTeX brace escaping algorithm (requires ESLint-compatible loader extraction)
 
 ### 6.4 Visual Regression Testing
 
@@ -397,8 +410,8 @@
 | TD-023 | No Google/Bing webmaster verification tags                                     | Medium   | OPEN    |
 | TD-025 | programming.wyattau.com slow load (0.988s)                                     | Low      | OPEN    |
 | TD-028 | 887 unstaged doc files with prettier/template changes                          | Low      | OPEN    |
-| TD-029 | Landing page stats hardcoded (TODO comment)                                     | Low      | OPEN    |
-| TD-030 | 1,279 content files with empty descriptions                                    | Medium   | OPEN    |
+| TD-029 | Landing page stats hardcoded (TODO comment)                                     | Low      | FIXED   |
+| TD-030 | 1,279 content files with empty descriptions                                    | Medium   | CLOSED (false alarm) |
 | TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | OPEN    |
 | TD-032 | Typecheck requires 8GB heap (NODE_OPTIONS=--max-old-space-size=8192)           | Low      | OPEN    |
 
@@ -448,18 +461,19 @@
 
 ## Appendix D: Test Coverage Summary
 
-| File                              | Tests | Coverage  |
-| --------------------------------- | ----- | --------- |
-| DesmosGraph.render.test.tsx        | 6     | 53% lines |
-| Geogebra.render.test.tsx          | 5     | 100%      |
-| PhetSimulation.render.test.tsx    | 4     | 100%      |
-| iframeComponent.render.test.tsx   | 5     | 100%      |
-| TOCSidebar/render.test.tsx        | 4     | 100%      |
-| DesmosGraph.test.ts               | 11    | Logic     |
-| Geogebra.test.ts                  | 8     | Logic     |
-| PhetSimulation.test.ts           | 7     | Logic     |
-| iframeComponent.test.ts           | 9     | Logic     |
-| webpack-loader.test.ts            | 16    | Logic     |
-| ReadingProgress.test.ts           | 10    | Logic     |
-| DocItemFooter.test.ts             | 8     | Logic     |
-| **Total**                         | **85** | **61%**   |
+| File                              | Tests | Type     |
+| --------------------------------- | ----- | -------- |
+| DesmosGraph.render.test.tsx        | 6     | Render   |
+| Geogebra.render.test.tsx          | 5     | Render   |
+| PhetSimulation.render.test.tsx    | 4     | Render   |
+| iframeComponent.render.test.tsx   | 5     | Render   |
+| TOCSidebar/render.test.tsx        | 4     | Render   |
+| DesmosGraph.test.ts               | 11    | Logic    |
+| Geogebra.test.ts                  | 8     | Logic    |
+| PhetSimulation.test.ts           | 7     | Logic    |
+| iframeComponent.test.ts           | 9     | Logic    |
+| webpack-loader.test.ts            | 16    | Logic    |
+| ReadingProgress.test.ts           | 10    | Logic    |
+| DocItemFooter.test.ts             | 8     | Logic    |
+| property.test.ts                  | 16    | Property |
+| **Total**                         | **109** | **All** |
