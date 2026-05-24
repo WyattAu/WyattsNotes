@@ -25,7 +25,7 @@ Enforced via `lint-staged` on staged files:
 - ESLint
 - Unit tests (`vitest`)
 - MDX validation
-- Link checking (3,016 links, 0 broken)
+- Link checking (2,844+ links, 0 broken)
 - Depth tier validation
 - Description validation
 
