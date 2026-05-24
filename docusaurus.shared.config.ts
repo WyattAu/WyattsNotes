@@ -121,11 +121,7 @@ export const sharedHeadTags: Config['headTags'] = [
     tagName: 'link',
     attributes: { rel: 'apple-touch-icon', href: '/img/WyattsNotes/WyattsNotesLogo.png' },
   },
-  // Open Graph / Social Card
-  {
-    tagName: 'meta',
-    attributes: { property: 'og:image', content: '/img/WyattsNotes/WyattsNotesSocialCard.png' },
-  },
+  // Open Graph / Social Card (og:image and twitter:image set per-site in sharedConfig)
   {
     tagName: 'meta',
     attributes: { property: 'og:type', content: 'website' },
@@ -133,10 +129,6 @@ export const sharedHeadTags: Config['headTags'] = [
   {
     tagName: 'meta',
     attributes: { name: 'twitter:card', content: 'summary_large_image' },
-  },
-  {
-    tagName: 'meta',
-    attributes: { name: 'twitter:image', content: '/img/WyattsNotes/WyattsNotesSocialCard.png' },
   },
   {
     tagName: 'link',
@@ -314,6 +306,8 @@ export interface SharedConfigOptions {
   url: string;
   baseUrl?: string;
   algoliaIndexName: string;
+  /** Social card image path (e.g. '/img/social-cards/ib.png'). Defaults to generic card. */
+  socialCard?: string;
 }
 
 /**
@@ -335,7 +329,24 @@ export function sharedConfig(options: SharedConfigOptions) {
     clientModules: sharedClientModules,
     onBrokenLinks: 'throw',
     ...sharedCompilationConfig,
-    headTags: sharedHeadTags,
+    headTags: [
+      ...sharedHeadTags,
+      // Per-site social card images
+      {
+        tagName: 'meta',
+        attributes: {
+          property: 'og:image',
+          content: options.socialCard || '/img/WyattsNotes/WyattsNotesSocialCard.png',
+        },
+      },
+      {
+        tagName: 'meta',
+        attributes: {
+          name: 'twitter:image',
+          content: options.socialCard || '/img/WyattsNotes/WyattsNotesSocialCard.png',
+        },
+      },
+    ],
     i18n: sharedI18n,
     presets: sharedPresets,
     markdown: sharedMarkdownConfig,

@@ -24,6 +24,7 @@ const config = {
     tagline: 'HKDSE Biology, Chemistry, Economics, ICT, Maths, Physics',
     url: 'https://dse.wyattau.com',
     algoliaIndexName: 'wyattsnotes_dse',
+    socialCard: '/img/social-cards/dse.png',
   }),
 
   plugins: [

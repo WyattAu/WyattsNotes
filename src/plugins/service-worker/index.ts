@@ -44,13 +44,15 @@ export default function serviceWorkerPlugin(
       const { count, size } = await generateSW({
         swDest: path.join(outDir, 'sw.js'),
         globDirectory: outDir,
-        globPatterns: ['**/*.{js,css,woff2,woff,ttf,eot,png,jpg,jpeg,gif,webp,svg,ico}'],
+        globPatterns: ['**/*.{js,css,woff2,woff,ttf,eot,png,jpg,jpeg,gif,webp,svg,ico,html}'],
         globIgnores: ['sw.js', 'sw.js.map'],
         skipWaiting: true,
         clientsClaim: true,
         cleanupOutdatedCaches: true,
         cacheId,
         dontCacheBustURLsMatching: /\.[a-f0-9]{8}\./i,
+        navigateFallback: `${baseUrl}offline.html`,
+        navigateFallbackAllowlist: [/^\/(?!assets\/|img\/|sw\.js).*/],
         runtimeCaching: [
           {
             urlPattern: ({ sameOrigin, request }) => sameOrigin && request.mode === 'navigate',

@@ -37,7 +37,17 @@ const config = {
   onBrokenLinks: 'throw',
   ...sharedCompilationConfig,
 
-  headTags: sharedHeadTags,
+  headTags: [
+    ...sharedHeadTags,
+    {
+      tagName: 'meta',
+      attributes: { property: 'og:image', content: '/img/social-cards/main.png' },
+    },
+    {
+      tagName: 'meta',
+      attributes: { name: 'twitter:image', content: '/img/social-cards/main.png' },
+    },
+  ],
   i18n: sharedI18n,
 
   presets: sharedPresets,

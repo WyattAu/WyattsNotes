@@ -24,6 +24,7 @@ const config = {
     tagline: 'IB Maths, Physics, Chemistry, Biology, Computer Science, Economics',
     url: 'https://ib.wyattau.com',
     algoliaIndexName: 'wyattsnotes_ib',
+    socialCard: '/img/social-cards/ib.png',
   }),
 
   plugins: [

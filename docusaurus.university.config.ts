@@ -24,6 +24,7 @@ const config = {
     tagline: 'Mathematics, Physics, and Computing for Undergraduates',
     url: 'https://university.wyattau.com',
     algoliaIndexName: 'wyattsnotes_university',
+    socialCard: '/img/social-cards/university.png',
   }),
 
   plugins: [

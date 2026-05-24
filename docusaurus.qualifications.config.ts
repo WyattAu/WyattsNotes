@@ -23,6 +23,7 @@ const config = {
     tagline: 'GCSE, AP, Scottish Highers, Irish Leaving Certificate',
     url: 'https://qualifications.wyattau.com',
     algoliaIndexName: 'wyattsnotes_qualifications',
+    socialCard: '/img/social-cards/qualifications.png',
   }),
 
   plugins: [

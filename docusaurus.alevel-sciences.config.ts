@@ -23,6 +23,7 @@ const config = {
     tagline: 'A-Level Biology, Chemistry, Computer Science, Economics & More',
     url: 'https://alevel-sciences.wyattau.com',
     algoliaIndexName: 'wyattsnotes_alevel_sciences',
+    socialCard: '/img/social-cards/alevel-sciences.png',
   }),
 
   plugins: [

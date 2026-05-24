@@ -22,6 +22,7 @@ const config = {
     tagline: 'A-Level Maths, Further Maths & Physics',
     url: 'https://alevel-maths-physics.wyattau.com',
     algoliaIndexName: 'wyattsnotes_alevel_maths_physics',
+    socialCard: '/img/social-cards/alevel-mp.png',
   }),
 
   plugins: [

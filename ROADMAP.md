@@ -211,7 +211,7 @@
 - [x] JSON-LD WebSite + EducationalOrganization schema
 - [x] DNS prefetch/preconnect for all external resources
 - [x] og:image and twitter:card social meta tags
-- [ ] Per-subdomain social card images
+- [x] Per-site social card images (9 images generated with ImageMagick)
 - [ ] Google/Bing webmaster verification tags (requires account registration)
 - [ ] HTTP 301 redirects for academics/alevel
 
@@ -373,7 +373,7 @@
 - [x] Web app manifest (static/manifest.json)
 - [x] Apple touch icon for iOS
 - [x] og:image and twitter:card social meta tags
-- [ ] Add offline fallback page
+- [x] Offline fallback page (static/offline.html with navigateFallback)
 - [ ] Add push notification support (optional)
 
 ### 10.3 API and Integration

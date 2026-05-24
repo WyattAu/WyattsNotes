@@ -27,6 +27,7 @@ const config = {
     tagline: 'C++, Java, Python, Rust, Dart',
     url: 'https://programming.wyattau.com',
     algoliaIndexName: 'wyattsnotes_programming',
+    socialCard: '/img/social-cards/programming.png',
   }),
 
   presets: [
