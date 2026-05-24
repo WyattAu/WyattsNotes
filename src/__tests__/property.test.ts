@@ -162,42 +162,36 @@ describe('Property: DesmosGraph parameter detection', () => {
 
   it('x and y are never detected as parameters', () => {
     fc.assert(
-      fc.property(
-        fc.string({ minLength: 1, maxLength: 50 }),
-        (suffix) => {
-          const expr = `x${suffix}y`;
-          const params = new Set<string>();
-          let match: RegExpExecArray | null;
+      fc.property(fc.string({ minLength: 1, maxLength: 50 }), (suffix) => {
+        const expr = `x${suffix}y`;
+        const params = new Set<string>();
+        let match: RegExpExecArray | null;
 
-          paramRegex.lastIndex = 0;
-          while ((match = paramRegex.exec(expr)) !== null) {
-            params.add(match[1]);
-          }
+        paramRegex.lastIndex = 0;
+        while ((match = paramRegex.exec(expr)) !== null) {
+          params.add(match[1]);
+        }
 
-          expect(params.has('x')).toBe(false);
-          expect(params.has('y')).toBe(false);
-        },
-      ),
+        expect(params.has('x')).toBe(false);
+        expect(params.has('y')).toBe(false);
+      }),
     );
   });
 
   it('e is never detected as a parameter', () => {
     fc.assert(
-      fc.property(
-        fc.string({ minLength: 0, maxLength: 50 }),
-        (suffix) => {
-          const expr = `e${suffix}`;
-          const params = new Set<string>();
-          let match: RegExpExecArray | null;
+      fc.property(fc.string({ minLength: 0, maxLength: 50 }), (suffix) => {
+        const expr = `e${suffix}`;
+        const params = new Set<string>();
+        let match: RegExpExecArray | null;
 
-          paramRegex.lastIndex = 0;
-          while ((match = paramRegex.exec(expr)) !== null) {
-            params.add(match[1]);
-          }
+        paramRegex.lastIndex = 0;
+        while ((match = paramRegex.exec(expr)) !== null) {
+          params.add(match[1]);
+        }
 
-          expect(params.has('e')).toBe(false);
-        },
-      ),
+        expect(params.has('e')).toBe(false);
+      }),
     );
   });
 });
@@ -208,12 +202,15 @@ describe('Property: escape-jsx-braces webpack loader', () => {
 
   it('plain text without backslashes or braces is never modified', () => {
     fc.assert(
-      fc.property(fc.string({ maxLength: 200 }).filter((s) => !s.includes('\\')), (text) => {
-        // Simple check: text without \ or {} should be unchanged
-        const plain = text.replace(/[{}]/g, '');
+      fc.property(
+        fc.string({ maxLength: 200 }).filter((s) => !s.includes('\\')),
+        (text) => {
+          // Simple check: text without \ or {} should be unchanged
+          const plain = text.replace(/[{}]/g, '');
 
-        expect(plain).toBe(plain);
-      }),
+          expect(plain).toBe(plain);
+        },
+      ),
     );
   });
 
