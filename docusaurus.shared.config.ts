@@ -100,6 +100,17 @@ export function createCommonDocsPluginConfig(useEscapeJsxBraces = false) {
 // Head tags (DNS prefetch, Sentry, print CSS) — identical across all configs
 // ---------------------------------------------------------------------------
 export const sharedHeadTags: Config['headTags'] = [
+  // Webmaster verification (replace placeholder values after registering with each service)
+  // Google Search Console: https://search.google.com/search-console
+  // {
+  //   tagName: 'meta',
+  //   attributes: { name: 'google-site-verification', content: 'GOOGLE_VERIFICATION_CODE' },
+  // },
+  // Bing Webmaster Tools: https://www.bing.com/webmasters
+  // {
+  //   tagName: 'meta',
+  //   attributes: { name: 'msvalidate.01', content: 'BING_VERIFICATION_CODE' },
+  // },
   {
     tagName: 'link',
     attributes: { rel: 'dns-prefetch', href: 'https://cdn.jsdelivr.net' },
