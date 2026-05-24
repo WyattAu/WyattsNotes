@@ -13,12 +13,14 @@ vi.mock('@theme-original/DocItemFooter', () => ({
   ),
 }));
 
+// Import must come after vi.mock calls
 import DocItemFooterWrapper from './index';
 
 describe('DocItemFooter render', () => {
   it('renders reading time in document', async () => {
     // Create an article element with content
     const article = document.createElement('article');
+
     article.textContent = 'word '.repeat(300).trim();
     document.body.appendChild(article);
 
@@ -29,6 +31,7 @@ describe('DocItemFooter render', () => {
 
     // The reading time div should be in the document
     const readingTimeDiv = document.querySelector('div[style*="opacity"]');
+
     expect(readingTimeDiv).toBeTruthy();
 
     // Cleanup
@@ -42,6 +45,7 @@ describe('DocItemFooter render', () => {
 
     // No reading time should appear
     const readingTimeDiv = document.querySelector('div[style*="opacity"]');
+
     expect(readingTimeDiv).toBeFalsy();
   });
 });
