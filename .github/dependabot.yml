@@ -27,18 +27,3 @@ updates:
       - 'github-actions'
     commit-message:
       prefix: 'ci'
-
-  - package-ecosystem: 'npm'
-    directory: '/'
-    schedule:
-      interval: 'daily'
-    open-pull-requests-limit: 5
-    labels:
-      - 'security'
-      - 'dependencies'
-    commit-message:
-      prefix: 'fix(deps)'
-    target-branch: 'main'
-    allow:
-      - dependency-type: 'direct'
-      - dependency-type: 'indirect'

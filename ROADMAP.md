@@ -242,9 +242,10 @@
 
 ### 6.4 Visual Regression Testing
 
-- [ ] Add Playwright screenshot comparison for landing page
+- [x] Added Playwright visual regression test suite (landing, docs, sidebar, navbar)
+- [ ] Generate baseline snapshots on first run
 - [ ] Add screenshot comparison for 404 page
-- [ ] Add screenshot comparison for key doc pages
+- [ ] Add screenshot comparison for dark mode
 
 ---
 
@@ -312,6 +313,20 @@
 - [ ] Consider CDN cache optimization
 - [ ] Evaluate image optimization (WebP conversion)
 - [ ] Evaluate lazy loading for interactive components
+
+### 8.6 Supply Chain Monitoring
+
+- [x] Dependabot config for npm and github-actions (weekly/monthly)
+- [x] Fixed duplicate npm entry in dependabot.yml
+- [ ] Add auto-merge for patch-level dependency updates
+- [ ] Add vulnerability alerting to Slack/Discord
+
+### 8.7 Deploy Optimization
+
+- [x] All 9 deploy workflows have path-based triggers
+- [x] Build cache enabled per workflow
+- [ ] Add concurrency groups to prevent parallel deploys
+- [ ] Add deployment notifications (success/failure)
 
 ---
 
