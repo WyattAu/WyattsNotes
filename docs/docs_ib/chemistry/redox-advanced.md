@@ -893,9 +893,9 @@ $E_{\mathrm{cell}}^\circ = 1.23\;\mathrm{V}$And calculate the voltage efficiency
 ## If You Get These Wrong, Revise:
 
 - **Oxidation numbers and balancing redox equations** → Review
-  [./9-redox/redox-reactions](./9-redox/redox-reactions)
+  [./9-redox/1_redox-reactions](./9-redox/1_redox-reactions)
 - **Equilibrium and the equilibrium constant** → Review
-  [./7-equilibrium/equilibrium](./7-equilibrium/equilibrium)
+  [./7-equilibrium/1_equilibrium](./7-equilibrium/1_equilibrium)
 - **Thermodynamics and Gibbs free energy** → Review
   [./thermodynamics/thermochemistry](./thermodynamics/thermochemistry)
 - **Atomic structure and electron configurations** → Review [./atomic-theory](./atomic-theory)

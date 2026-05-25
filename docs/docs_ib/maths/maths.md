@@ -284,7 +284,7 @@ Heavily weighted topic in the examination and forms the basis for much of the HL
   Euler's method), Maclaurin series, and Taylor series. HL students also study kinematics using
   calculus in greater depth.
 
-> See [Integration notes](5-calculus/integration-depth).
+> See [Integration notes](5-calculus/4_integration).
 
 ### Worked Example: Differentiation -- Chain Rule (SL)
 

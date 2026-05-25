@@ -868,7 +868,7 @@ alone?
 - **Thermodynamics (energy changes in state transitions)** → Review
   [./thermodynamics/thermochemistry](./thermodynamics/thermochemistry)
 - **Stoichiometry and the mole concept** → Review
-  [./1-stoichiometry/stoichiometry](./1-stoichiometry/stoichiometry)
+  [./1-stoichiometry/1_stoichiometric-relationships](./1-stoichiometry/1_stoichiometric-relationships)
 - **Periodic trends affecting physical properties** → Review [./periodicity](./periodicity)
 
 ## Summary

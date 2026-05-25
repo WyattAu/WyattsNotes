@@ -818,9 +818,9 @@ A suitable indicator: phenolphthalein (8.3--10.0).
 ## If You Get These Wrong, Revise:
 
 - **Equilibrium principles (Le Chatelier, $K$ expressions)** → Review
-  [./7-equilibrium/equilibrium](./7-equilibrium/equilibrium)
+  [./7-equilibrium/1_equilibrium](./7-equilibrium/1_equilibrium)
 - **Stoichiometry and mole calculations** → Review
-  [./1-stoichiometry/stoichiometry](./1-stoichiometry/stoichiometry)
+  [./1-stoichiometry/1_stoichiometric-relationships](./1-stoichiometry/1_stoichiometric-relationships)
 - **Uncertainty propagation in titrations** → Review
   [./measurement-and-data-processing](./measurement-and-data-processing)
 - **Electron configurations and ion formation** → Review [./atomic-theory](./atomic-theory)

@@ -492,10 +492,10 @@ Between charged particles and masses.
 - **D.5 RLC Circuits and Kirchhoff's Laws:** Kirchhoff's junction and loop rules; capacitance;
   inductance; impedance in AC circuits; resonance in series and parallel RLC circuits.
 
-> See [Gravitational Fields](4-fields/gravitational-fields.md),
-> [Electric and Magnetic Fields](4-fields/electric-and-magnetic-fields.md),
-> [Motion in Electromagnetic Fields](4-fields/motion-in-electromagnetic-fields.md), and
-> [Induction](4-fields/Induction.md) for detailed notes.
+> See [Gravitational Fields](4-fields/1_gravitational-fields.md),
+> [Electric and Magnetic Fields](4-fields/2_electric-and-magnetic-fields.md),
+> [Motion in Electromagnetic Fields](4-fields/3_motion-in-electromagnetic-fields.md), and
+> [Induction](4-fields/4_induction.md) for detailed notes.
 
 ### Worked Example: Gravitational Field Strength (D.1)
 
