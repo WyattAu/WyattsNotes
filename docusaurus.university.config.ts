@@ -50,7 +50,8 @@ const config = {
         path: 'docs/docs_university/mathematics',
         routeBasePath: '/docs/mathematics',
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
-        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/mathematics/{dir}',
+        editUrl:
+          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/mathematics/{dir}',
         ...createCommonDocsPluginConfig(),
       },
     ],
@@ -61,7 +62,8 @@ const config = {
         path: 'docs/docs_university/physics',
         routeBasePath: '/docs/physics',
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
-        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/physics/{dir}',
+        editUrl:
+          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/physics/{dir}',
         ...createCommonDocsPluginConfig(),
       },
     ],
@@ -72,7 +74,8 @@ const config = {
         path: 'docs/docs_university/computing',
         routeBasePath: '/docs/computing',
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
-        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/computing/{dir}',
+        editUrl:
+          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/computing/{dir}',
         ...createCommonDocsPluginConfig(),
       },
     ],
@@ -83,7 +86,8 @@ const config = {
         path: 'docs/docs_university/admissions',
         routeBasePath: '/docs/admissions',
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
-        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/admissions/{dir}',
+        editUrl:
+          'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/admissions/{dir}',
         ...createCommonDocsPluginConfig(),
       },
     ],
