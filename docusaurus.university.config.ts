@@ -29,14 +29,61 @@ const config = {
 
   plugins: [
     ...sharedPlugins('wyattsnotes-university'),
+    // Split docs into separate plugins to avoid webpack "Invalid string length"
+    // error (V8 string limit ~512MB). Each plugin gets its own webpack chunk.
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'university',
+        id: 'university-intro',
         path: 'docs/docs_university',
         routeBasePath: '/docs',
+        include: ['intro.md'],
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
+        ...createCommonDocsPluginConfig(),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'university-maths',
+        path: 'docs/docs_university/mathematics',
+        routeBasePath: '/docs/mathematics',
+        sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/mathematics/{dir}',
+        ...createCommonDocsPluginConfig(),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'university-physics',
+        path: 'docs/docs_university/physics',
+        routeBasePath: '/docs/physics',
+        sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/physics/{dir}',
+        ...createCommonDocsPluginConfig(),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'university-computing',
+        path: 'docs/docs_university/computing',
+        routeBasePath: '/docs/computing',
+        sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/computing/{dir}',
+        ...createCommonDocsPluginConfig(),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'university-admissions',
+        path: 'docs/docs_university/admissions',
+        routeBasePath: '/docs/admissions',
+        sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+        editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/admissions/{dir}',
         ...createCommonDocsPluginConfig(),
       },
     ],
