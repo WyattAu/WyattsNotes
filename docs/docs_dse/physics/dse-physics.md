@@ -630,8 +630,6 @@ If you get this wrong, revise: Optics / Curved Mirrors
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/physics/dse-physics.md
-
 1. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.
 
@@ -641,16 +639,5 @@ If you get this wrong, revise: Optics / Curved Mirrors
 3. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
 
-4. # Using the wrong equation from the data sheet — take time to read the full equation, including conditions and variable definitions.
-5. Using the wrong equation from the data sheet — take time to read the full equation, including
+4. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
-
-6. Misidentifying the system boundary when applying conservation laws — define what is included
-   before writing equations.
-
-7. Confusing displacement with distance, or velocity with speed, particularly in graphs and
-   calculations.
-
-8. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
-   scenario.
-   > > > > > > > Stashed changes:docs/docs_dse/Physics/dse-physics.md

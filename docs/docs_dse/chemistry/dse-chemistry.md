@@ -436,8 +436,6 @@ Lower concentration of $\mathrm{H^+}$ ions than a strong acid of the same concen
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/dse-chemistry.md
-
 1. Misidentifying the limiting reagent — compare mole ratios rather than comparing masses.
 
 2. Assuming that a strong acid always has a lower pH than a weak acid without considering
@@ -446,16 +444,8 @@ Lower concentration of $\mathrm{H^+}$ ions than a strong acid of the same concen
 3. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
    concentrations.
 
-4. # Forgetting to balance equations before performing calculations — always check that atoms and charges balance on both sides.
-5. Forgetting to balance equations before performing calculations — always check that atoms and
+4. Forgetting to balance equations before performing calculations — always check that atoms and
    charges balance on both sides.
 
-6. Forgetting to convert between units (e.g., $\text{cm}^3$ to $\text{dm}^3$) when calculating
-   concentrations.
-
-7. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
+5. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
    overall charge.
-
-8. Assuming that a strong acid always has a lower pH than a weak acid without considering
-   concentration.
-   > > > > > > > Stashed changes:docs/docs_dse/Chemistry/dse-chemistry.md

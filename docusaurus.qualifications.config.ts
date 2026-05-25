@@ -26,6 +26,10 @@ const config = {
     socialCard: '/img/social-cards/qualifications.png',
   }),
 
+  // AP content has placeholder links to future pages
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
   plugins: [
     ...sharedPlugins('wyattsnotes-qualifications'),
     [

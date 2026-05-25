@@ -1886,8 +1886,6 @@ glycogenolysis when glucose is needed.
 
 ## Worked Examples
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/1-cell-biology/1_cell-biology-and-biochemistry.md
-
 ### Example 1: Calculating actual size
 
 **Problem.** A cell is $5 \mathrm{ cm}$ in a micrograph at magnification $\times 400$. Find the
@@ -1922,25 +1920,6 @@ $\blacksquare$
 | [Cell Biology] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/cells)                           |
 | [Cell Biology] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/1-cell-biology/1_cell-biology)                    |
 | [Cell Biology] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/1-cell-biology/1_cell-biology-and-biochemistry) |
-
-======= **Example 1: Mole calculation**
-
-Calculate the number of moles in $12.0\,\text{g}$ of $\text{NaOH}$ ($M_r = 40.0$).
-
-**Solution:**
-
-$$n = \frac{m}{M_r} = \frac{12.0}{40.0} = 0.300\,\text{mol}$$
-
-**Example 2: Reacting masses**
-
-$$\text{CaCO}_3 + 2\text{HCl} \rightarrow \text{CaCl}_2 + \text{H}_2\text{O} + \text{CO}_2$$
-
-What mass of $\text{CaCl}_2$ is produced from $10.0\,\text{g}$ of $\text{CaCO}_3$?
-($M_r[\text{CaCO}_3] = 100$, $M_r[\text{CaCl}_2] = 111$)
-
-**Solution:**
-
-$$n(\text{CaCO}_3) = \frac{10.0}{100} = 0.100\,\text{mol}$$
 
 From the equation, ratio is $1:1$, so $n(\text{CaCl}_2) = 0.100\,\text{mol}$.
 
