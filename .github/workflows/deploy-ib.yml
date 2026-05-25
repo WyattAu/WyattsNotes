@@ -57,7 +57,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --config docusaurus.ib.config.ts
         env:
-          NODE_OPTIONS: --max-old-space-size=11264
+          NODE_OPTIONS: --max-old-space-size=14336
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
