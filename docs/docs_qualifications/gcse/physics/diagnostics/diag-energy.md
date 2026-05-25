@@ -38,11 +38,11 @@ ball reaches a lower maximum height than predicted by the ideal calculation.
 ### UT-2: Specific Heat Capacity
 
 **Question:** (a) Define specific heat capacity and state its unit. (b) Calculate the energy needed
-to heat 2 kg of water from $20^\circ\text{C$ to $80^\circ\text{C$. (Specific heat capacity of
-water $= 4200 \text{ J/(kg ^\circ\text{C)$.) (c) A 0.5 kg metal block is heated from
-$25^\circ\text{C$ to $225^\circ\text{C$ using $45000$ J of energy. Calculate the specific heat
-capacity of the metal. (d) Explain why water has a much higher specific heat capacity than metals
-and why this is important for climate.
+to heat 2 kg of water from $20^\circ\text{C$ to $80^\circ\text{C$. (Specific heat capacity of water
+$= 4200 \text{ J/(kg ^\circ\text{C)$.) (c) A 0.5 kg metal block is heated from $25^\circ\text{C$ to
+$225^\circ\text{C$ using $45000$ J of energy. Calculate the specific heat capacity of the metal. (d)
+Explain why water has a much higher specific heat capacity than metals and why this is important for
+climate.
 
 **Solution:**
 
@@ -67,8 +67,8 @@ and makes water effective as a coolant in engines and nuclear reactors.
 **Question:** (a) Define efficiency. (b) A power station burns $5 \times 10^8$ J of chemical energy
 per second and produces $1.5 \times 10^8$ W of electrical power. Calculate the efficiency. (c)
 Explain why it is impossible for a machine to have 100% efficiency. (d) A heat engine operates
-between a hot reservoir at $500^\circ\text{C$ and a cold reservoir at $25^\circ\text{C$.
-Calculate the maximum theoretical efficiency.
+between a hot reservoir at $500^\circ\text{C$ and a cold reservoir at $25^\circ\text{C$. Calculate
+the maximum theoretical efficiency.
 
 **Solution:**
 
@@ -120,9 +120,9 @@ conserved.
 ### IT-2: Power and Cost Calculations (with Electricity)
 
 **Question:** A kettle rated at 2.2 kW is used to boil 1.5 kg of water from $18^\circ\text{C$ to
-$100^\circ\text{C$. (a) Calculate the energy needed to heat the water. (b) Calculate the time
-taken if the kettle is 85% efficient. (c) If electricity costs 28p per kWh, calculate the cost of
-boiling the water. (d) A microwave rated at 800 W takes 3 minutes to heat the same water to
+$100^\circ\text{C$. (a) Calculate the energy needed to heat the water. (b) Calculate the time taken
+if the kettle is 85% efficient. (c) If electricity costs 28p per kWh, calculate the cost of boiling
+the water. (d) A microwave rated at 800 W takes 3 minutes to heat the same water to
 $100^\circ\text{C$. Calculate the efficiency of the microwave and compare the cost.
 
 **Solution:**
@@ -135,8 +135,8 @@ $= \frac{607,765}{2200} = 276.3$ s $\approx 4.6$ minutes.
 (c) Energy in kWh $= 607,765 / 3,600,000 = 0.1688$ kWh. Cost $= 0.1688 \times 28 = 4.73$ p.
 
 (d) Microwave energy input $= 800 \times 180 = 144,000$ J. The useful energy required to heat 1.5 kg
-from $18^\circ\text{C$ to $100^\circ\text{C$ is 516.6 kJ, which exceeds the input of 144 kJ.
-This means the scenario as stated is physically impossible.
+from $18^\circ\text{C$ to $100^\circ\text{C$ is 516.6 kJ, which exceeds the input of 144 kJ. This
+means the scenario as stated is physically impossible.
 
 With a more realistic scenario: the microwave heats 0.3 kg from $18^\circ\text{C$ to
 $80^\circ\text{C$ in 3 minutes. $\Delta E = 0.3 \times 4200 \times 62 = 78,120$ J. Input
@@ -166,8 +166,8 @@ $A = \pi r^2$). (d) Explain why no energy resource is completely free of environ
 | Typical output       | 200--400 W per panel (residential)                               | 2--5 MW per turbine (utility scale)                |
 
 (b) Power
-$= \text{irradiance \times \text{area \times \text{efficiency = 800 \times 10 \times 0.18 = 1440$
-W $= 1.44$ kW.
+$= \text{irradiance \times \text{area \times \text{efficiency = 800 \times 10 \times 0.18 = 1440$ W
+$= 1.44$ kW.
 
 (c) $A = \pi \times 40^2 = 5026.5 \text{ m^2$.
 $P = \frac{1}{2} \times 1.2 \times 5026.5 \times 12^3 = 0.6 \times 5026.5 \times 1728 = 5,211,517$ W

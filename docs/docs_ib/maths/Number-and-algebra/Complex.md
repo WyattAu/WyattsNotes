@@ -626,8 +626,7 @@ $$
 \end`\{aligned}`
 $$
 
-So the result holds for $n = k + 1$. By induction, the theorem is true for all
-$n \in \mathbb{N}$.
+So the result holds for $n = k + 1$. By induction, the theorem is true for all $n \in \mathbb{N}$.
 
 **Negative integers:** For $n = -m$ where $m \in \mathbb{N}$:
 
@@ -952,8 +951,7 @@ The roots are $1 + 2i$ and $1 - 2i$Each with multiplicity 2.
 <details>
 <summary>Problem 7: Proof Using Modulus Properties</summary>
 
-Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all
-$z_1, z_2 \in \mathbb{C}$.
+Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2|z_1|^2 + 2|z_2|^2$ for all $z_1, z_2 \in \mathbb{C}$.
 
 **Solution:** Let $z_1 = a + bi$ and $z_2 = c + di$.
 

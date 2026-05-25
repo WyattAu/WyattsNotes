@@ -122,9 +122,9 @@ odd, $n^3 + 5n = 2(4k^3 + 6k^2 + 9k + 3)$ is always even. So $n^3 + 5n$ is even 
 $n$Not just even ones. The original statement is false, and the student's work inadvertently proves
 this.
 
-**(b)** The correct approach: since $n^3 + 5n$ is even for all $n \in \mathbb{Z}$ (as shown
-above), the statement "if $n^3 + 5n$ is even, then $n$ is even" is **false**. A counterexample is
-$n = 1$: $1 + 5 = 6$ is even, but $n = 1$ is odd.
+**(b)** The correct approach: since $n^3 + 5n$ is even for all $n \in \mathbb{Z}$ (as shown above),
+the statement "if $n^3 + 5n$ is even, then $n$ is even" is **false**. A counterexample is $n = 1$:
+$1 + 5 = 6$ is even, but $n = 1$ is odd.
 
 ---
 

@@ -109,6 +109,7 @@ The key distinction from the Standard:
 
 > An entity that is the subject of an explicit instantiation declaration and that is also used other
 > than in an unevaluated operand is implicitly instantiated when the entity is odr-used [N4950 > > >
+>
 > > §13.9.2/6].
 
 This means that an `extern template` declaration suppresses implicit instantiation **only for direct

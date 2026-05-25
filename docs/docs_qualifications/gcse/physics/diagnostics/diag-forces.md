@@ -86,9 +86,9 @@ $p = (1500 + 1000) \times v = 2500v$. Conservation of momentum: $2500v = 30,000$
 $= F/A = 588/0.04 = 14,700$ Pa $= 14.7$ kPa.
 
 (d) Pressure $= F/A$. Stiletto heels have a very small contact area (perhaps
-$1 \text{ cm^2 = 0.0001 \text{ m^2$), so the same weight (force) is distributed over a much
-smaller area, producing a much higher pressure. $P = 588/0.0001 = 5,880,000$ Pa $\approx 5.9$ MPa,
-compared to 14.7 kPa with flat shoes. This is why stiletto heels can damage wooden floors.
+$1 \text{ cm^2 = 0.0001 \text{ m^2$), so the same weight (force) is distributed over a much smaller
+area, producing a much higher pressure. $P = 588/0.0001 = 5,880,000$ Pa $\approx 5.9$ MPa, compared
+to 14.7 kPa with flat shoes. This is why stiletto heels can damage wooden floors.
 
 ---
 
@@ -158,8 +158,8 @@ instant of jumping).
 
 (b) As the skydiver accelerates, their speed increases. Air resistance (drag) increases with speed
 ($F_d \propto v^2$). As air resistance increases, the resultant downward force decreases
-($F_{\text{net} = W - F_d$), so acceleration decreases. The skydiver accelerates less and less
-until air resistance equals weight.
+($F_{\text{net} = W - F_d$), so acceleration decreases. The skydiver accelerates less and less until
+air resistance equals weight.
 
 (c) At terminal velocity: air resistance $=$ weight $= 80 \times 9.8 = 784$ N. The resultant force
 is zero and acceleration is zero.

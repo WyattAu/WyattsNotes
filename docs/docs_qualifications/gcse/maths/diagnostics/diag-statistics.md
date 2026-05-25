@@ -196,8 +196,8 @@ drawn without replacement, calculate the probability that exactly 2 are red.
 (a) Total counters $= r + b = n$. $P(\text{two red) = \frac{r(r-1)}{n(n-1)} = \frac{1}{6}$.
 $P(\text{two blue) = \frac{b(b-1)}{n(n-1)} = \frac{1}{3}$.
 
-(b) From $P(\text{two red)$: $6r(r-1) = n(n-1)$. From $P(\text{two blue)$: $3b(b-1) = n(n-1)$.
-So $6r(r-1) = 3b(b-1)$Giving $2r(r-1) = b(b-1)$.
+(b) From $P(\text{two red)$: $6r(r-1) = n(n-1)$. From $P(\text{two blue)$: $3b(b-1) = n(n-1)$. So
+$6r(r-1) = 3b(b-1)$Giving $2r(r-1) = b(b-1)$.
 
 Also: $\frac{1}{6} + \frac{1}{3} + P(\text{one of each) = 1$So
 $P(\text{one of each) = 1 - \frac{1}{6} - \frac{1}{3} = \frac{1}{2}$.

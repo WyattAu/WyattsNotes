@@ -116,8 +116,7 @@ The particle is at rest at $t = 1$ s and $t = 5$ s.
 
 **(b)** First, determine the sign of $v$ in each interval.
 
-For $0 \lt t \lt 1$: test $t = 0.5$$v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative
-direction).
+For $0 \lt t \lt 1$: test $t = 0.5$$v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative direction).
 
 For $1 \lt t \lt 5$: test $t = 3$$v = 18 - 9 - 5 = 4 \gt 0$ (moving in positive direction).
 
@@ -318,8 +317,7 @@ The negative sign means $B$ moves in the opposite direction to the defined posit
 initial direction. This is the same physical velocity as $\frac{5}{3}$ m/s in $A$'s initial
 direction, confirming the result is convention-independent.
 
-**(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt e \lt 1$The collision is
-**inelastic**.
+**(d)** Since $e = \frac{11}{24} \approx 0.458$ and $0 \lt e \lt 1$The collision is **inelastic**.
 
 $$\text{KE}_{\text{before}} = \frac{1}{2}(4)(25) + \frac{1}{2}(6)(9) = 50 + 27 = 77 \text{ J}$$
 

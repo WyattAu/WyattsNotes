@@ -35,8 +35,8 @@ skew lines.]
 
 **Solution:**
 
-**(a)** The direction vectors are $\mathbf{d}_1 = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$
-and $\mathbf{d}_2 = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$.
+**(a)** The direction vectors are $\mathbf{d}_1 = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$ and
+$\mathbf{d}_2 = \begin{pmatrix} 1 \\ -1 \\ 2 \end{pmatrix}$.
 
 These are not scalar multiples, so the lines are not parallel.
 
@@ -158,9 +158,8 @@ $$[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 2(10) + 1(-4
 $$V = \frac{16}{6} = \frac{8}{3}$$
 
 **(b)** The scalar triple product
-$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$
-equals the volume of the parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And
-$\mathbf{c}$.
+$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ equals the
+volume of the parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
 
 If the four points are coplanar, the three vectors
 $\overrightarrow{OA}$$\overrightarrow{OB}$$\overrightarrow{OC}$ all lie in the same plane, meaning
@@ -168,11 +167,10 @@ the parallelepiped they span has zero volume (it is flat). Therefore
 $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
 
 Conversely, if the scalar triple product is zero, then
-$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$Which means
-$\mathbf{a}$ is perpendicular to $\mathbf{b} \times \mathbf{c}$. Since
-$\mathbf{b} \times \mathbf{c}$ is perpendicular to the plane containing
-$\mathbf{b}$ and $\mathbf{c}$It follows that $\mathbf{a}$ lies in the same plane
-as $\mathbf{b}$ and $\mathbf{c}$. Hence the four points are coplanar.
+$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$Which means $\mathbf{a}$ is perpendicular to
+$\mathbf{b} \times \mathbf{c}$. Since $\mathbf{b} \times \mathbf{c}$ is perpendicular to the plane
+containing $\mathbf{b}$ and $\mathbf{c}$It follows that $\mathbf{a}$ lies in the same plane as
+$\mathbf{b}$ and $\mathbf{c}$. Hence the four points are coplanar.
 
 ---
 
@@ -218,8 +216,8 @@ $P'\!\left(\frac{41}{9}, \frac{11}{9}, \frac{23}{9}\right)$:
 Direction:
 $\begin{pmatrix} \frac{41}{9} - 1 \\ \frac{11}{9} - 3 \\ \frac{23}{9} + 1 \end{pmatrix} = \begin{pmatrix} \frac{32}{9} \\ -\frac{16}{9} \\ \frac{32}{9} \end{pmatrix} = \frac{16}{9}\begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$
 
-This is parallel to $\mathbf{n} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$Confirming $PP'$
-is perpendicular to $\Pi$.
+This is parallel to $\mathbf{n} = \begin{pmatrix} 2 \\ -1 \\ 2 \end{pmatrix}$Confirming $PP'$ is
+perpendicular to $\Pi$.
 
 Verify midpoint:
 $\frac{1}{2}\!\left[\begin{pmatrix} 1 \\ 3 \\ -1 \end{pmatrix} + \begin{pmatrix} \frac{41}{9} \\ \frac{11}{9} \\ \frac{23}{9} \end{pmatrix}\right] = \begin{pmatrix} \frac{25}{9} \\ \frac{19}{9} \\ \frac{7}{9} \end{pmatrix}$.

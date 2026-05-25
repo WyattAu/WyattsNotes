@@ -516,8 +516,7 @@ $$= \frac{25 + 4 + 0 + 4 + 25 + 0}{20} = \frac{58}{20} = 2.9$$
 
 $\nu = 6 - 1 = 5$. Critical value: $\chi^2_{0.05,\,5} = 11.07$.
 
-Since $2.9 \lt 11.07$**do not reject** $H_0$. There is insufficient evidence that the die is
-Biased.
+Since $2.9 \lt 11.07$**do not reject** $H_0$. There is insufficient evidence that the die is Biased.
 
 ### 6.2 Goodness of fit: genetic ratios
 
@@ -855,8 +854,7 @@ $H_0$: Data follows a normal distribution. $H_1$: Data does not follow a normal 
 
 Critical value: $\chi^2_{0.05,\,4} = 9.488$.
 
-$8.5 \lt 9.488$: **do not reject** $H_0$. Insufficient evidence to conclude the data is
-Non-normal.
+$8.5 \lt 9.488$: **do not reject** $H_0$. Insufficient evidence to conclude the data is Non-normal.
 
 The degrees of freedom calculation accounts for the fact that estimating parameters from the data
 Makes the fit appear better than it truly is. Each estimated parameter reduces the df by 1 because

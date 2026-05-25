@@ -109,8 +109,7 @@ factors $\frac{n(n-1)}{2!}$Not three. The correct coefficient is $\dfrac{3}{2}$N
 
 **Question:**
 
-Prove by mathematical induction that $7^n - 1$ is divisible by $6$ for all
-$n \in \mathbb{Z}^+$.
+Prove by mathematical induction that $7^n - 1$ is divisible by $6$ for all $n \in \mathbb{Z}^+$.
 
 A student presents the following proof:
 

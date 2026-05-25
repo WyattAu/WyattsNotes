@@ -174,8 +174,8 @@ why this force is needed.
 **Solution:**
 
 (a) As the coil leaves the field, the rate of change of area
-$= \text{width \times \text{speed = 0.1 \times 2 = 0.2 \text{ m^2/\text{s$. Rate of change
-of flux $= B \times \frac{\Delta A}{\Delta t} = 0.5 \times 0.2 = 0.1$ Wb/s. EMF
+$= \text{width \times \text{speed = 0.1 \times 2 = 0.2 \text{ m^2/\text{s$. Rate of change of flux
+$= B \times \frac{\Delta A}{\Delta t} = 0.5 \times 0.2 = 0.1$ Wb/s. EMF
 $= N \times \frac{\Delta \Phi}{\Delta t} = 50 \times 0.1 = 5$ V.
 
 (b) Current $= \text{EMF/R = 5/5 = 1$ A.

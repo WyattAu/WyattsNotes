@@ -21,13 +21,12 @@ The nucleus of helium-4 ($^{4}_{2}\text{He}$) has the following data:
 - Mass of neutron $= 1.00867\,\text{u}$
 - Mass of $^{4}_{2}\text{He}$ nucleus $= 4.00150\,\text{u}$
 
-(a) Calculate the mass defect of $^{4}_{2}\text{He}$ in unified atomic mass units and in
-MeV/c$^2$.
+(a) Calculate the mass defect of $^{4}_{2}\text{He}$ in unified atomic mass units and in MeV/c$^2$.
 
 (b) Calculate the binding energy per nucleon.
 
-(c) Explain why the binding energy per nucleon of $^{4}_{2}\text{He}$ is relatively high for a
-light nucleus.
+(c) Explain why the binding energy per nucleon of $^{4}_{2}\text{He}$ is relatively high for a light
+nucleus.
 
 Take $1\,\text{u} = 931.5\,\text{MeV}/c^2$.
 
@@ -48,8 +47,8 @@ nucleus because it has equal numbers of protons and neutrons (2 and 2), giving i
 due to the pairing effect. Nuclei with even numbers of both protons and neutrons (doubly magic) are
 particularly stable. The binding energy per nucleon curve shows a peak in the region of iron-56
 ($8.8\,\text{MeV/nucleon}$), and $^{4}_{2}\text{He}$ is already approaching this value. The high
-binding energy per nucleon makes $^{4}_{2}\text{He}$ (alpha particles) very tightly bound, which
-is why alpha decay is a common mode of radioactive decay.
+binding energy per nucleon makes $^{4}_{2}\text{He}$ (alpha particles) very tightly bound, which is
+why alpha decay is a common mode of radioactive decay.
 
 ---
 
@@ -70,8 +69,7 @@ Masses:
 
 (a) Calculate the energy released per fission event.
 
-(b) Calculate the total energy released when $1.0\,\text{kg}$ of $^{235}\text{U}$ undergoes
-fission.
+(b) Calculate the total energy released when $1.0\,\text{kg}$ of $^{235}\text{U}$ undergoes fission.
 
 (c) Compare this energy with the energy released by burning $1.0\,\text{kg}$ of coal (approximately
 $3.0 \times 10^7\,\text{J}$).
@@ -172,9 +170,8 @@ is $\dot{m} \times 0.007 = 4.2 \times 10^9\,\text{kg}\,\text{s}^{-1}$.
 
 **Question:**
 
-A nuclear reactor uses $^{235}\text{U}$ fuel. Each fission releases $200\,\text{MeV}$ of energy
-and produces on average $2.5$ neutrons. The reactor operates at a thermal power of
-$3000\,\text{MW}$.
+A nuclear reactor uses $^{235}\text{U}$ fuel. Each fission releases $200\,\text{MeV}$ of energy and
+produces on average $2.5$ neutrons. The reactor operates at a thermal power of $3000\,\text{MW}$.
 
 (a) Calculate the fission rate (fissions per second).
 
@@ -225,11 +222,11 @@ broadening reduce $k$Providing automatic negative feedback.
 The following binding energies per nucleon are given:
 
 | Nucleus    | $^{56}\text{Fe}$ | $^{235}\text{U}$ | $^{2}\text{H}$ | $^{4}\text{He}$ | $^{12}\text{C}$ |
-| ---------- | ------------------ | ------------------ | ---------------- | ----------------- | ----------------- |
-| BE/A (MeV) | 8.79               | 7.59               | 1.11             | 7.07              | 7.68              |
+| ---------- | ---------------- | ---------------- | -------------- | --------------- | --------------- |
+| BE/A (MeV) | 8.79             | 7.59             | 1.11           | 7.07            | 7.68            |
 
-(a) Calculate the energy released when a $^{235}\text{U}$ nucleus splits into two
-$^{56}\text{Fe}$ nuclei (approximately).
+(a) Calculate the energy released when a $^{235}\text{U}$ nucleus splits into two $^{56}\text{Fe}$
+nuclei (approximately).
 
 (b) Calculate the energy released when four $^{1}\text{H}$ nuclei fuse to form $^{4}\text{He}$.
 
@@ -270,10 +267,10 @@ This is the net energy from the pp chain first step through to $^{4}\text{He}$ f
 (heavy nuclei) can release energy by **fission** (splitting into medium-mass nuclei with higher
 BE/A).
 
-Fusing very heavy nuclei (e.g., two $^{235}\text{U}$ nuclei) would produce a nucleus with BE/A
-lower than $^{235}\text{U}$ (beyond the peak), so energy would be **absorbed**, not released.
-Similarly, fission of very light nuclei (e.g., $^{4}\text{He}$) would produce nuclei with lower
-BE/A, also absorbing energy.
+Fusing very heavy nuclei (e.g., two $^{235}\text{U}$ nuclei) would produce a nucleus with BE/A lower
+than $^{235}\text{U}$ (beyond the peak), so energy would be **absorbed**, not released. Similarly,
+fission of very light nuclei (e.g., $^{4}\text{He}$) would produce nuclei with lower BE/A, also
+absorbing energy.
 
 This is why energy release only occurs when moving toward the peak of the BE/A curve: fusion for
 light nuclei, fission for heavy nuclei.

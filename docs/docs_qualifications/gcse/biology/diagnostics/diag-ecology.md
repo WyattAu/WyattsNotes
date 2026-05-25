@@ -175,13 +175,13 @@ increases the greenhouse effect, trapping more heat and raising global temperatu
 
 (c) **Ocean acidification:** The oceans absorb about 30% of atmospheric CO$_2$. Dissolved CO$_2$
 reacts with water to form carbonic acid ($\text{H_2\text{CO_3$), which dissociates into hydrogen
-ions ($\text{H^+$) and bicarbonate ($\text{HCO_3^-$). The increased $\text{H^+$ concentration
-lowers the ocean pH (makes it more acidic).
+ions ($\text{H^+$) and bicarbonate ($\text{HCO_3^-$). The increased $\text{H^+$ concentration lowers
+the ocean pH (makes it more acidic).
 
 **Effect on marine organisms:** Organisms with calcium carbonate shells (e.g., corals, molluscs,
 some plankton) are affected because the lower pH reduces the availability of carbonate ions
-($\text{CO_3^{2-}$), making it harder for them to build and maintain their shells. This weakens
-the organisms and can lead to coral bleaching and death, threatening marine food webs.
+($\text{CO_3^{2-}$), making it harder for them to build and maintain their shells. This weakens the
+organisms and can lead to coral bleaching and death, threatening marine food webs.
 
 (d) Two consequences: (1) **Range shifts:** Species migrate towards the poles or to higher altitudes
 as temperatures rise, disrupting existing ecosystems and food webs. Species that cannot migrate

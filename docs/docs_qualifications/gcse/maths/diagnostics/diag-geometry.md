@@ -118,9 +118,9 @@ $= 100 + 4 \times 65 = 100 + 260 = 360$ cm$^2$.
 that maps ABC to A'B'C' where A'(-1, -2), B'(-5, -2), C'(-3, -6). (b) Describe the transformation
 that maps ABC to A''(3, 4), B''(11, 4), C''(7, 12). (c) Vector
 $\mathbf{a} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$ and vector
-$\mathbf{b} = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$. Calculate
-$\mathbf{a} + 2\mathbf{b}$ and the magnitude of the result. (d) If $\mathbf{a}$
-represents a translation, describe its effect on point $(4, 7)$.
+$\mathbf{b} = \begin{pmatrix} -2 \\ 4 \end{pmatrix}$. Calculate $\mathbf{a} + 2\mathbf{b}$ and the
+magnitude of the result. (d) If $\mathbf{a}$ represents a translation, describe its effect on point
+$(4, 7)$.
 
 **Solution:**
 
