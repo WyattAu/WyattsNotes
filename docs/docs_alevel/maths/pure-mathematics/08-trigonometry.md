@@ -260,9 +260,9 @@ Degrees. This is a very common exam error. :::
 
 **Theorem.** For all $\theta$:
 
-$$\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 - \cos\theta}{2}◆RB◆$$
+$$\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac◆LB◆1 - \cos\theta◆RB◆◆LB◆2◆RB◆◆RB◆$$
 
-$$\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 + \cos\theta}{2}◆RB◆$$
+$$\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac◆LB◆1 + \cos\theta◆RB◆◆LB◆2◆RB◆◆RB◆$$
 
 $$\tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\sin\theta◆RB◆◆LB◆1 + \cos\theta◆RB◆ = \frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆$$
 
@@ -274,7 +274,7 @@ $$\cos\theta = 1 - 2\sin^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆$$
 
 $$2\sin^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = 1 - \cos\theta$$
 
-$$\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 - \cos\theta}{2}◆RB◆ \quad \blacksquare$$
+$$\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac◆LB◆1 - \cos\theta◆RB◆◆LB◆2◆RB◆◆RB◆ \quad \blacksquare$$
 
 Similarly, from $\cos 2A = 2\cos^2 A - 1$:
 
@@ -282,7 +282,7 @@ $$\cos\theta = 2\cos^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ - 1$$
 
 $$2\cos^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = 1 + \cos\theta$$
 
-$$\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac{1 + \cos\theta}{2}◆RB◆ \quad \blacksquare$$
+$$\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \pm\sqrt◆LB◆\frac◆LB◆1 + \cos\theta◆RB◆◆LB◆2◆RB◆◆RB◆ \quad \blacksquare$$
 
 ### 7.2 Tangent Half-Angle Formulas
 
@@ -292,14 +292,14 @@ $$\tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\sin\theta◆R
 
 _Proof._ Using the double angle formulas:
 
-$$\frac◆LB◆\sin\theta◆RB◆◆LB◆1 + \cos\theta◆RB◆ = \frac◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆◆LB◆1 + (2\cos^2\frac{\theta}{2} - 1)◆RB◆ = \frac◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆◆LB◆2\cos^2\frac{\theta}{2}◆RB◆ = \frac◆LB◆\sin\frac{\theta}{2}◆RB◆◆LB◆\cos\frac{\theta}{2}◆RB◆ = \tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \quad \blacksquare$$
+$$\frac◆LB◆\sin\theta◆RB◆◆LB◆1 + \cos\theta◆RB◆ = \frac◆LB◆2\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆◆LB◆1 + (2\cos^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ - 1)◆RB◆ = \frac◆LB◆2\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆◆LB◆2\cos^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆ = \frac◆LB◆\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆◆LB◆\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆ = \tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \quad \blacksquare$$
 
 Similarly:
 
 $$\tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆$$
 
 _Proof._
-$\frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆ = \frac◆LB◆1 - (1 - 2\sin^2\frac{\theta}{2})◆RB◆◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆ = \frac◆LB◆2\sin^2\frac{\theta}{2}◆RB◆◆LB◆2\sin\frac{\theta}{2}\cos\frac{\theta}{2}◆RB◆ = \frac◆LB◆\sin\frac{\theta}{2}◆RB◆◆LB◆\cos\frac{\theta}{2}◆RB◆ = \tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \quad \blacksquare$
+$\frac◆LB◆1 - \cos\theta◆RB◆◆LB◆\sin\theta◆RB◆ = \frac◆LB◆1 - (1 - 2\sin^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆)◆RB◆◆LB◆2\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆ = \frac◆LB◆2\sin^2\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆◆LB◆2\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆ = \frac◆LB◆\sin\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆◆LB◆\cos\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆◆RB◆ = \tan\frac◆LB◆\theta◆RB◆◆LB◆2◆RB◆ \quad \blacksquare$
 
 ### 7.3 Sign Determination
 
@@ -321,7 +321,7 @@ Find the exact value of $\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆$.
 Since $0 \lt \frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ \lt \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$ (first quadrant),
 $\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ > 0$So we Take the positive root.
 
-$$\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ = \sqrt◆LB◆\frac{1 - \cos\frac{\pi}{4}}{2}◆RB◆ = \sqrt◆LB◆\frac{1 - \frac{\sqrt{2}}{2}}{2}◆RB◆ = \sqrt◆LB◆\frac{2 - \sqrt{2}}{4}◆RB◆ = \frac◆LB◆\sqrt{2 - \sqrt{2}}◆RB◆◆LB◆2◆RB◆$$
+$$\sin\frac◆LB◆\pi◆RB◆◆LB◆8◆RB◆ = \sqrt◆LB◆\frac◆LB◆1 - \cos\frac{\pi}{4}◆RB◆◆LB◆2◆RB◆◆RB◆ = \sqrt◆LB◆\frac◆LB◆1 - \frac{\sqrt{2}}{2}◆RB◆◆LB◆2◆RB◆◆RB◆ = \sqrt◆LB◆\frac◆LB◆2 - \sqrt{2}◆RB◆◆LB◆4◆RB◆◆RB◆ = \frac◆LB◆\sqrt◆LB◆2 - \sqrt{2}◆RB◆◆RB◆◆LB◆2◆RB◆$$
 
 </details>
 
@@ -728,7 +728,7 @@ $$= \frac◆LB◆\tan A + 1◆RB◆◆LB◆1 - \tan A◆RB◆$$
 
 From the tangent compound angle formula:
 
-$$\tan\!\left(A + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \frac◆LB◆\tan A + \tan\frac{\pi}{4}◆RB◆◆LB◆1 - \tan A \tan\frac{\pi}{4}◆RB◆ = \frac◆LB◆\tan A + 1◆RB◆◆LB◆1 - \tan A◆RB◆ \quad \blacksquare$$
+$$\tan\!\left(A + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \frac◆LB◆\tan A + \tan\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆◆RB◆◆LB◆1 - \tan A \tan\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆◆RB◆ = \frac◆LB◆\tan A + 1◆RB◆◆LB◆1 - \tan A◆RB◆ \quad \blacksquare$$
 
 </details>
 <b>If you get this wrong, revise:</b> [Compound angle formulas](#3-compound-angle-formulas)
@@ -763,17 +763,17 @@ $\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ > 0$.
 
 $$
 \begin{aligned}
-\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ &= \sqrt◆LB◆\frac{1 + \cos\frac{\pi}{6}}{2}◆RB◆ \\
-&= \sqrt◆LB◆\frac{1 + \frac{\sqrt{3}}{2}}{2}◆RB◆ \\
-&= \sqrt◆LB◆\frac{2 + \sqrt{3}}{4}◆RB◆ \\
-&= \frac◆LB◆\sqrt{2 + \sqrt{3}}◆RB◆◆LB◆2◆RB◆
+\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ &= \sqrt◆LB◆\frac◆LB◆1 + \cos\frac{\pi}{6}◆RB◆◆LB◆2◆RB◆◆RB◆ \\
+&= \sqrt◆LB◆\frac◆LB◆1 + \frac{\sqrt{3}}{2}◆RB◆◆LB◆2◆RB◆◆RB◆ \\
+&= \sqrt◆LB◆\frac◆LB◆2 + \sqrt{3}◆RB◆◆LB◆4◆RB◆◆RB◆ \\
+&= \frac◆LB◆\sqrt◆LB◆2 + \sqrt{3}◆RB◆◆RB◆◆LB◆2◆RB◆
 \end{aligned}
 $$
 
 This can also be verified using the compound angle formula:
 $\cos\frac◆LB◆\pi◆RB◆◆LB◆12◆RB◆ = \cos\!\left(\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆ - \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = \cos\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\cos\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + \sin\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\sin\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ = \frac◆LB◆\sqrt{6} + \sqrt{2}◆RB◆◆LB◆4◆RB◆$
 And one can check that
-$\dfrac◆LB◆\sqrt{2+\sqrt{3}}◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\sqrt{6}+\sqrt{2}◆RB◆◆LB◆4◆RB◆$.
+$\dfrac◆LB◆\sqrt◆LB◆2+\sqrt{3}◆RB◆◆RB◆◆LB◆2◆RB◆ = \dfrac◆LB◆\sqrt{6}+\sqrt{2}◆RB◆◆LB◆4◆RB◆$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Half-angle formulas](#7-half-angle-formulas)
