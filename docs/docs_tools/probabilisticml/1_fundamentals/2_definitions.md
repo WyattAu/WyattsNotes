@@ -25,7 +25,7 @@ $\mathcal{{'}P{}'}(S) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,
 
 ### Disjoint Sets
 
-A collection of sets $\{A_i\}_{i \in I}$ is pairwise disjoint if $A_i \cap A_j = \emptyset$ for all
+A collection of sets $\{A_i\}_◆LB◆i \in I◆RB◆$ is pairwise disjoint if $A_i \cap A_j = \emptyset$ for all
 $i \neq j$.
 
 ### Equivalence Relation
@@ -65,8 +65,8 @@ $\tau \subseteq \mathcal{{'}P{}'}(S)$), called open sets, satisfying:
 2. Finite intersection:
    $U_1, \dots, U_n \in \tau \implies \bigcap^n_{i=1} U_i \in \tau, n\in \mathbb{{'}N{}'}$
 
-3. Arbitrary union: If $\left\{U_\alpha\right\}_{\alpha \in A}$ is a collection of sets such that
-   $U_\alpha \in \tau$ for all $\alpha \in A$Then $\bigcup_{\alpha \in A} U_\alpha \in \tau$.
+3. Arbitrary union: If $\left\{U_\alpha\right\}_◆LB◆\alpha \in A◆RB◆$ is a collection of sets such that
+   $U_\alpha \in \tau$ for all $\alpha \in A$Then $\bigcup_◆LB◆\alpha \in A◆RB◆ U_\alpha \in \tau$.
 
 ### Topological Space
 
@@ -222,7 +222,7 @@ $\mathcal{{'}F{}'}$ satisfies:
    $A_1, A_2, \dots \in \mathcal{{'}F{}'} \implies \bigcup^\infty_{i=1} A_i \in \mathcal{{'}F{}'}$
 
 :::info Why condition 3 is necessary: Countable unions are required to handle limits, for example,
-when we analyze a sequence of events $\lim_{n\to \infty} A_n$Without closure under countable unions,
+when we analyze a sequence of events $\lim_◆LB◆n\to \infty◆RB◆ A_n$Without closure under countable unions,
 probabilities cannot be assign to limits of random variables. :::
 
 ### Sub-$\sigma$-algebra
@@ -248,7 +248,7 @@ $\sigma$-algebra containing $\mathcal{{'}C{}'}$. This is denoted:
 
 $$
 \begin{equation}
- \sigma(\mathcal{{'}C{}'}) = \bigcap \left\{\mathcal{{'}G{}'}:\mathcal{{'}C{}'} \subseteq \mathcal{{'}G{}'}, \mathcal{{'}G{}'} \mathrm{ is a $\sigma$-algebra on {}S \right\}
+ \sigma(\mathcal{{'}C{}'}) = \bigcap \left\{\mathcal{{'}G{}'}:\mathcal{{'}C{}'} \subseteq \mathcal{{'}G{}'}, \mathcal{{'}G{}'} \mathrm◆LB◆ is a $\sigma$-algebra on {}S \right\◆RB◆
 \end{equation}
 $$
 
@@ -354,7 +354,7 @@ pushforward becomes the law/induced distribution.
 _ML Context:_ In Generative Models (GANs/VAEs), the pushforward measure is the foundation of the
 **Generator**. If $z \sim \mathcal{{'}N{}'}(0, I)$ is a latent variable and $G_\theta$ is a neural
 network, the generated data distribution is exactly the pushforward measure
-${G_\theta}_\# \mathcal{{'}N{}'}(0, I)$.
+$◆LB◆G_\theta◆RB◆_\# \mathcal{{'}N{}'}(0, I)$.
 
 ### Product Measure
 
@@ -410,7 +410,7 @@ $$
 Where $| \cdot |$ denotes the **cardinality** (number of elements) of the set, not absolute value.
 
 :::info In statistical contexts, if $X_1, \dots, X_n$ are random elements, $\hat{P}_n$ becomes a
-RandomMeasure mapping $\omega \mapsto \frac{1}{n}\sum \delta_{X_i(\omega)}$. :::
+RandomMeasure mapping $\omega \mapsto \frac{1}{n}\sum \delta_◆LB◆X_i(\omega)◆RB◆$. :::
 
 ### Support of a Measure
 
@@ -476,7 +476,7 @@ or FDD).
 $J \subseteq K \subset T$The marginal of $\mu_K$ onto coordinates $J$ equals $\mu_J$:
 
 $$
-\mu_J(A) = \mu_K(A \times \mathbb{{'}R{}'}^{K \setminus J}), \quad \forall A \in \mathcal{{'}B{}'}(\mathbb{{'}R{}'}^J)
+\mu_J(A) = \mu_K(A \times \mathbb{{'}R{}'}^◆LB◆K \setminus J◆RB◆), \quad \forall A \in \mathcal{{'}B{}'}(\mathbb{{'}R{}'}^J)
 $$
 
 **Theorem:** If $\{\mu_J\}$ is a consistent family of finite-dimensional distributions, there exists
@@ -542,7 +542,7 @@ A finite collection of events $A_1, \dots, A_n \in \mathcal{{'}F{}'}$ is **mutua
 (or independent) if for every subset of indices $I \subseteq \{1, \dots, n\}$:
 
 $$
-P\left(\bigcap_{i\in I} A_i\right) = \prod_{i\in I}P(A_i)
+P\left(\bigcap_◆LB◆i\in I◆RB◆ A_i\right) = \prod_◆LB◆i\in I◆RB◆P(A_i)
 $$
 
 :::info **Terminology Note:** The term "marginal independence" is sometimes used to refer to
@@ -658,7 +658,7 @@ Given a sequence of random elements $X_1, \dots, X_n$If their joint law is the p
 marginal laws:
 
 $$
-P_{(X_1, \dots, X_n)} = P_{X_1} \otimes \dots \otimes P_{X_n}
+P_◆LB◆(X_1, \dots, X_n)◆RB◆ = P_{X_1} \otimes \dots \otimes P_{X_n}
 $$
 
 And all marginal laws are identical ($P_{X_1} = \dots = P_{X_n} = P_X$), then the sequence is
@@ -708,7 +708,7 @@ This is an integral constructed from $3$ steps:
 2. Non-negative Measurable Functions: For any $f: \Omega \rightarrow [0, \infty]$Defined as the
    supremum of integrals of simple functions bounded by f:
    $$
-   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \mathrm{ is simple{}\right\}
+   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \mathrm◆LB◆ is simple{}\right\◆RB◆
    $$
 3. General Measurable Functions: For a **measurable** function
    $f: \Omega \rightarrow \mathbb{{'}R{}'}$Decompose into positive and negative parts
@@ -738,7 +738,7 @@ $$
 If $X$ has a density $f_X$ with respect to Lebesgue measure $\lambda$This becomes:
 
 $$
-\mathbb{{'}E{}'}[X] = \int_{\mathbb{{'}R{}'}} x \cdot f_X(x) \, d\lambda(x)
+\mathbb{{'}E{}'}[X] = \int_◆LB◆\mathbb{{'}R{}'}◆RB◆ x \cdot f_X(x) \, d\lambda(x)
 $$
 
 ### Moments and Variance
@@ -793,7 +793,7 @@ _Properties:_
 ### Covariance Matrix
 
 For a random vector $\mathbf{{'}X{}'} \in \mathbb{{'}R{}'}^d$ with finite second moments, the
-covariance matrix $\Sigma \in \mathbb{{'}R{}'}^{d \times d}$ is defined as:
+covariance matrix $\Sigma \in \mathbb{{'}R{}'}^◆LB◆d \times d◆RB◆$ is defined as:
 
 $$
 \Sigma = \mathrm{Cov{}(\mathbf{{'}X{}'}) = \mathbb{{'}E{}'}\left[(\mathbf{{'}X{}'} - \mathbb{{'}E{}'}[\mathbf{{'}X{}'}])(\mathbf{{'}X{}'} - \mathbb{{'}E{}'}[\mathbf{{'}X{}'}])^\top\right]
@@ -845,7 +845,7 @@ $\sigma$-finite measure spaces. The Fubini-Tonelli Theorem states:
 1. Tonelli (non-negative measurable functions): If $f: \Omega_1 \times \Omega_2 \to [0,\infty]$ is
    measurable, then:
    $$
-   \int_{\Omega_1 \times \Omega_2} f d(\mu_1 \otimes \mu_2) = \int_{\Omega_1} \left(\int_{\Omega_2} f(x,y) d\mu_2 (y) \right)d\mu_1(x)
+   \int_◆LB◆\Omega_1 \times \Omega_2◆RB◆ f d(\mu_1 \otimes \mu_2) = \int_◆LB◆\Omega_1◆RB◆ \left(\int_◆LB◆\Omega_2◆RB◆ f(x,y) d\mu_2 (y) \right)d\mu_1(x)
    $$
 2. Fubini (integrable functions): If $f$ is integrable ($f \in L^1 (\mu_1 \otimes \mu_2)$), then the
    order of integration can be swapped, and the equality holds for the signed integral.
@@ -919,7 +919,7 @@ convex, rotation-invariant, and induces the familiar Euclidean geometry.
 
 ### Cauchy Sequence
 
-A sequence $(x_n)_{n \in \mathbb{{'}N{}'}}$ in a normed vector space $(V, \lVert \cdot \rVert)$ is a
+A sequence $(x_n)_◆LB◆n \in \mathbb{{'}N{}'}◆RB◆$ in a normed vector space $(V, \lVert \cdot \rVert)$ is a
 Cauchy sequence if $\forall \epsilon>0, \exists N \in \mathbb{{'}N{}'}$ such that
 $\forall n, m \geq N, \lVert x_n - x_m \rVert < \epsilon$.
 
@@ -943,7 +943,7 @@ An inner product space is a vector space $V$ over a field $\mathbb{{'}K{}'}$ ( $
 $\mathbb{{'}C{}'}$) equipped with an inner product
 $\langle \cdot, \cdot \rangle: V \times V \to \mathbb{{'}K{}'}$ satisfying:
 
-1. Conjugate Symmetry: $\langle x, y \rangle = \overline{\langle y, x \rangle}$ (symmetry for real
+1. Conjugate Symmetry: $\langle x, y \rangle = \overline◆LB◆\langle y, x \rangle◆RB◆$ (symmetry for real
    spaces: $\langle x, y \rangle = \langle y, x \rangle$).
 2. Linearity in first argument:
    $\langle ax + by, z \rangle = a\langle x, z \rangle + b\langle y, z \rangle$.
@@ -995,9 +995,9 @@ This is an integral constructed from:
    exists a sequence of simple functions $s_n$ converging to $X$ **pointwise $P$-almost everywhere**
    ($s_n \to X$ $P$-a.e.) such that:
    $$
-   \lim_{n \to \infty} \int_\Omega \lVert X-s_n\rVert dP = 0
+   \lim_◆LB◆n \to \infty◆RB◆ \int_\Omega \lVert X-s_n\rVert dP = 0
    $$
-3. The integral: $\mathbb{{'}E{}'}[X] = \lim_{n \to \infty} \int_\Omega s_n dP$
+3. The integral: $\mathbb{{'}E{}'}[X] = \lim_◆LB◆n \to \infty◆RB◆ \int_\Omega s_n dP$
 
 ### Kernel (Reproducing Kernel Hilbert Space context)
 
@@ -1047,7 +1047,7 @@ A sequence of random variables $X_n$ converges almost surely to $X$ if the event
 has a probability $0$:
 
 $$
-P\left(\left\{\omega \in \Omega: \lim_{n\rightarrow \infty} X_n (\omega) = X(\omega)\right\}\right)= 1
+P\left(\left\{\omega \in \Omega: \lim_◆LB◆n\rightarrow \infty◆RB◆ X_n (\omega) = X(\omega)\right\}\right)= 1
 $$
 
 ### Convergence In Probability
@@ -1057,7 +1057,7 @@ $(\Omega, \mathcal{{'}F{}'}, P)$Taking values in a metric space $(S, d)$. We say
 probability to $X$Denoted $X_n \xrightarrow{P} X$If for every $\epsilon > 0$:
 
 $$
-\lim_{n\rightarrow \infty} P\left(d(X_n(\omega), X(\omega)) > \epsilon \right) = 0
+\lim_◆LB◆n\rightarrow \infty◆RB◆ P\left(d(X_n(\omega), X(\omega)) > \epsilon \right) = 0
 $$
 
 :::warning **Crucial Distinction from Weak Convergence:** Convergence in probability requires $X_n$
@@ -1071,7 +1071,7 @@ Let $X_n, X$ be random elements in a metric space $S$. $X_n$ converges weakly to
 $X_n \xrightarrow{d} X$If for every bounded continuous function $f: S \rightarrow \mathbb{{'}R{}'}$:
 
 $$
-\lim_{n \rightarrow \infty} \mathbb{{'}E{}'}[f(X_n)] = \mathbb{{'}E{}'}[f(X)]
+\lim_◆LB◆n \rightarrow \infty◆RB◆ \mathbb{{'}E{}'}[f(X_n)] = \mathbb{{'}E{}'}[f(X)]
 $$
 
 ### Monotone Convergence Theorem (MCT)
@@ -1080,7 +1080,7 @@ If $\{f_n\}$ is a sequence of non-negative measurable functions such that $f_n \
 pointwise, then:
 
 $$
-\lim_{n \to \infty} \int f_n \, d\mu = \int f \, d\mu
+\lim_◆LB◆n \to \infty◆RB◆ \int f_n \, d\mu = \int f \, d\mu
 $$
 
 (This is a prerequisite for proving Fatou's Lemma and DCT).
@@ -1090,7 +1090,7 @@ $$
 Let $\{f_n\}$ be a sequence of non-negative measurable functions. Then:
 
 $$
-\int \liminf_{n \to \infty} f_n \, d\mu \leq \liminf_{n \to \infty} \int f_n \, d\mu
+\int \liminf_◆LB◆n \to \infty◆RB◆ f_n \, d\mu \leq \liminf_◆LB◆n \to \infty◆RB◆ \int f_n \, d\mu
 $$
 
 _Intuition:_ Fatou's Lemma provides a **one-sided bound** for the integral of a limit. The
@@ -1109,7 +1109,7 @@ function $g \in L^1(\mu)$ (the "dominating function") such that $|f_n(\omega)| \
 almost everywhere for all $n$Then $f$ is integrable and:
 
 $$
-\lim_{n \to \infty} \int_\Omega f_n \, d\mu = \int_\Omega f \, d\mu
+\lim_◆LB◆n \to \infty◆RB◆ \int_\Omega f_n \, d\mu = \int_\Omega f \, d\mu
 $$
 
 Justifies swapping limits and expectations. Essential for proving convergence of Stochastic Gradient
@@ -1132,11 +1132,11 @@ convergence ($X_n \xrightarrow{d} X$):
 
 For a random variable $X$ taking values in an inner product space ( $\mathbb{{'}R{}'}^d$ or a
 Hilbert space $\mathcal{{'}H{}'}$), the characteristic function is defined as: $$ \varphi_X(t) =
-\mathbb{{'}E{}'}\left[ e^{i \langle t, X \rangle} \right], \quad t \in \mathcal{{'}H{}'}
+\mathbb{{'}E{}'}\left[ e^◆LB◆i \langle t, X \rangle◆RB◆ \right], \quad t \in \mathcal{{'}H{}'}
 
 $$
 Where $\langle \cdot, \cdot \rangle$ denotes the inner product. For $\mathbb{{'}R{}'}^d$This
-reduces to $\varphi_X(t) = \mathbb{{'}E{}'}\left[ e^{i t^\top X} \right]$ with
+reduces to $\varphi_X(t) = \mathbb{{'}E{}'}\left[ e^◆LB◆i t^\top X◆RB◆ \right]$ with
 $t \in \mathbb{{'}R{}'}^d$.
 
 :::info **Generalization to Banach Spaces:** For a random variable $X$ taking values in a Banach
@@ -1190,7 +1190,7 @@ satisfies the ULLN if:
 
 $$
 
-\sup_{f \in \mathcal{{'}F{}'}} \left| \int f \, d\hat{P}_n - \int f \, dP \right| \xrightarrow{a.s.}
+\sup_◆LB◆f \in \mathcal{{'}F{}'}◆RB◆ \left| \int f \, d\hat{P}_n - \int f \, dP \right| \xrightarrow{a.s.}
 0
 
 $$
@@ -1209,7 +1209,7 @@ The **True Risk** (or expected risk) is the expected loss under the true data di
 
 $$
 
-\mathcal{{'}R{}'}(f) = \mathbb{{'}E{}'}_{(X,Y) \sim P}[\ell(f(X), Y)]
+\mathcal{{'}R{}'}(f) = \mathbb{{'}E{}'}_◆LB◆(X,Y) \sim P◆RB◆[\ell(f(X), Y)]
 
 $$
 
@@ -1218,12 +1218,12 @@ The **Empirical Risk** is the average loss over the observed training samples:
 
 $$
 
-\hat{\mathcal{{'}R{}'}}*n(f) = \frac{1}{n}\sum*{i=1}^n \ell(f(x_i), y_i)
+\hat◆LB◆\mathcal{{'}R{}'}◆RB◆*n(f) = \frac{1}{n}\sum*{i=1}^n \ell(f(x_i), y_i)
 
 $$
 
 _Connection to LLN:_ The Law of Large Numbers guarantees
-$\hat{\mathcal{{'}R{}'}}_n(f) \to \mathcal{{'}R{}'}(f)$ for a _fixed_ $f$. The ULLN extends
+$\hat◆LB◆\mathcal{{'}R{}'}◆RB◆_n(f) \to \mathcal{{'}R{}'}(f)$ for a _fixed_ $f$. The ULLN extends
 this to uniform convergence over a hypothesis class $\mathcal{{'}H{}'}$.
 
 ### Concentration Inequalities
@@ -1249,7 +1249,7 @@ differences condition:
 
 $$
 
-\sup*{x_1, \dots, x_n, x_i'} |f(x_1, \dots, x_n) - f(x_1, \dots, x*{i-1}, x\*i', x_{i+1}, \dots,
+\sup*◆LB◆x_1, \dots, x_n, x_i'◆RB◆ |f(x_1, \dots, x_n) - f(x_1, \dots, x*{i-1}, x\*i', x_{i+1}, \dots,
 x_n)| \leq c_i
 
 $$
@@ -1276,8 +1276,8 @@ sample. The **empirical Rademacher complexity** of $\mathcal{{'}F{}'}$ with resp
 
 $$
 
-\hat{\mathfrak{{'}R{}'}}*S(\mathcal{{'}F{}'}) = \mathbb{{'}E{}'}*\sigma\left[ \sup_{f \in
-\mathcal{{'}F{}'}} \frac{1}{n}\sum_{i=1}^n \sigma_i f(x_i) \right]
+\hat◆LB◆\mathfrak{{'}R{}'}◆RB◆*S(\mathcal{{'}F{}'}) = \mathbb{{'}E{}'}*\sigma\left[ \sup_◆LB◆f \in
+\mathcal{{'}F{}'}◆RB◆ \frac{1}{n}\sum_{i=1}^n \sigma_i f(x_i) \right]
 
 $$
 
@@ -1285,7 +1285,7 @@ Where $\sigma_1, \dots, \sigma_n$ are i.i.d. Rademacher random variables
 ($P(\sigma_i = +1) = P(\sigma_i = -1) = 1/2$).
 
 The **Rademacher complexity** of $\mathcal{{'}F{}'}$ is
-$\mathfrak{{'}R{}'}_n(\mathcal{{'}F{}'}) = \mathbb{{'}E{}'}_S[\hat{\mathfrak{{'}R{}'}}_S(\mathcal{{'}F{}'})]$.
+$\mathfrak{{'}R{}'}_n(\mathcal{{'}F{}'}) = \mathbb{{'}E{}'}_S[\hat◆LB◆\mathfrak{{'}R{}'}◆RB◆_S(\mathcal{{'}F{}'})]$.
 
 _Intuition:_ Measures the capacity of a function class to fit random noise. Higher complexity
 implies greater risk of overfitting.
@@ -1308,14 +1308,14 @@ classical foundation for structural risk minimization.
 
 ### Stochastic Process
 
-A **stochastic process** is a collection of random elements $\{X_t\}_{t \in T}$ indexed by a set $T$
+A **stochastic process** is a collection of random elements $\{X_t\}_◆LB◆t \in T◆RB◆$ indexed by a set $T$
 ( time, discrete or continuous), all defined on the same probability space
 $(\Omega, \mathcal{{'}F{}'}, P)$ and taking values in a measurable space
 $(S, \mathcal{{'}S{}'})$.
 
 ### Wiener Process (Brownian Motion)
 
-A stochastic process $\{W_t\}_{t \geq 0}$ is a **Wiener process** (or standard Brownian motion) if:
+A stochastic process $\{W_t\}_◆LB◆t \geq 0◆RB◆$ is a **Wiener process** (or standard Brownian motion) if:
 
 1. $W_0 = 0$ almost surely
 2. $W_t$ has independent increments: $W_t - W_s \perp W_u - W_v$ for disjoint intervals
@@ -1335,7 +1335,7 @@ Stein score $\nabla_x \log p_t(x)$ appears in the reverse-time SDE.
 
 ### Filtration
 
-A **filtration** $\{\mathcal{{'}F{}'}_t\}_{t \geq 0}$ is an increasing family of
+A **filtration** $\{\mathcal{{'}F{}'}_t\}_◆LB◆t \geq 0◆RB◆$ is an increasing family of
 $\sigma$-algebras indexed by time (discrete or continuous):
 
 
@@ -1354,7 +1354,7 @@ Markov decision processes), and sequential decision making.
 
 ### Adapted Process
 
-A stochastic process $\{X_t\}_{t \geq 0}$ is **adapted** to a filtration
+A stochastic process $\{X_t\}_◆LB◆t \geq 0◆RB◆$ is **adapted** to a filtration
 $\{\mathcal{{'}F{}'}_t\}$ if $X_t$ is $\mathcal{{'}F{}'}_t$-measurable for every $t$.
 Equivalently, the value of $X_t$ is fully determined by the information available at time $t$.
 
@@ -1363,7 +1363,7 @@ information in $\mathcal{{'}F{}'}_t$.
 
 ### Martingale
 
-A stochastic process $\{X_t\}_{t \geq 0}$ adapted to a filtration $\{\mathcal{{'}F{}'}_t\}$ is a
+A stochastic process $\{X_t\}_◆LB◆t \geq 0◆RB◆$ adapted to a filtration $\{\mathcal{{'}F{}'}_t\}$ is a
 **martingale** if:
 
 
@@ -1444,14 +1444,14 @@ Let $(S, \mathcal{{'}B{}'}(S))$ and $(T, \mathcal{{'}B{}'}(T))$ be Standard Bore
 Let $\mu$ be a probability measure on the product space $S \times T$And let $\nu$ be the marginal
 distribution of $\mu$ on $S$ (defined by $\nu(A) = \mu(A \times T)$).
 
-There exists a family of probability measures $\{\mu_x\}_{x \in S}$ on $T$Unique $\nu$-almost
+There exists a family of probability measures $\{\mu_x\}_◆LB◆x \in S◆RB◆$ on $T$Unique $\nu$-almost
 everywhere, such that for every bounded measurable function
 $f: S \times T \to \mathbb{{'}R{}'}$:
 
 
 $$
 
-\int_{S \times T} f(x, y) \, d\mu(x, y) = \int_S \left( \int_T f(x, y) \, d\mu_x(y) \right) d\nu(x)
+\int_◆LB◆S \times T◆RB◆ f(x, y) \, d\mu(x, y) = \int_S \left( \int_T f(x, y) \, d\mu_x(y) \right) d\nu(x)
 
 $$
 
@@ -1524,7 +1524,7 @@ Fréchet variance. Given the Regular Conditional Distribution $\kappa(\omega, \c
 
 $$
 
-\mu_{\mathcal{{'}G{}'}}(\omega) = \underset◆LB◆y \in S◆RB◆◆LB◆\arg\min◆RB◆ \int_S d^2(y, s) \, \kappa(\omega,
+\mu_◆LB◆\mathcal{{'}G{}'}◆RB◆(\omega) = \underset◆LB◆y \in S◆RB◆◆LB◆\arg\min◆RB◆ \int_S d^2(y, s) \, \kappa(\omega,
 ds)
 
 $$
@@ -1655,7 +1655,7 @@ $$
 
 _Properties:_
 
-- $\mathbb{{'}E{}'}_{x \sim P_\theta}[s(x; \theta)] = 0$ (under regularity conditions)
+- $\mathbb{{'}E{}'}_◆LB◆x \sim P_\theta◆RB◆[s(x; \theta)] = 0$ (under regularity conditions)
 - $\mathrm{Cov{}(s(x; \theta)) = \mathcal{{'}I{}'}(\theta)$ (Fisher Information Matrix)
 
 _Relevance:_ Essential for the REINFORCE algorithm in Reinforcement Learning and Fisher Information
@@ -1691,7 +1691,7 @@ For two probability measures $P$ and $Q$ on $(\Omega, \mathcal{{'}F{}'})$:
 
 $$
 
-\delta(P, Q) = \sup_{A \in \mathcal{{'}F{}'}} |P(A) - Q(A)|
+\delta(P, Q) = \sup_◆LB◆A \in \mathcal{{'}F{}'}◆RB◆ |P(A) - Q(A)|
 
 $$
 
@@ -1713,7 +1713,7 @@ $\mathcal{{'}I{}'}(\theta)$ is:
 
 $$
 
-\mathcal{{'}I{}'}(\theta)*{ij} = \mathbb{{'}E{}'}*{x \sim P\_\theta} \left[ \frac◆LB◆\partial◆RB◆◆LB◆\partial
+\mathcal{{'}I{}'}(\theta)*{ij} = \mathbb{{'}E{}'}*◆LB◆x \sim P\_\theta◆RB◆ \left[ \frac◆LB◆\partial◆RB◆◆LB◆\partial
 \theta_i◆RB◆ \log f(x; \theta) \cdot \frac◆LB◆\partial◆RB◆◆LB◆\partial \theta_j◆RB◆ \log f(x; \theta) \right]
 
 $$
@@ -1729,7 +1729,7 @@ to $P$:
 
 $$
 
-D*{KL}(P \| Q) = \int_S \log \left( \frac{dP}{dQ} \right) \, dP = \mathbb{{'}E{}'}*{x \sim P} \left[
+D*{KL}(P \| Q) = \int_S \log \left( \frac{dP}{dQ} \right) \, dP = \mathbb{{'}E{}'}*◆LB◆x \sim P◆RB◆ \left[
 \log \frac{dP}{dQ}(x) \right]
 
 $$
@@ -1769,8 +1769,8 @@ distribution.
 ### Chain Rule for KL Divergence
 
 Let $X, Y$ be random variables with joint distributions $P_{XY}$ and $Q_{XY}$. Assuming the joint
-distributions factorize as $P_{XY} = P_X P_{Y|X}$ and $Q_{XY} = Q_X Q_{Y|X}$Then: $$ D_{KL}(P_{XY}
-\| Q_{XY}) = D_{KL}(P*X \| Q_X) + \mathbb{E}_{x \sim P*X} [D_{KL}(P_{Y|X=x} \| Q_{Y|X=x})]
+distributions factorize as $P_{XY} = P_X P_◆LB◆Y|X◆RB◆$ and $Q_{XY} = Q_X Q_◆LB◆Y|X◆RB◆$Then: $$ D_{KL}(P_{XY}
+\| Q_{XY}) = D_{KL}(P_X \| Q_X) + \mathbb{E}_◆LB◆x \sim P_X◆RB◆ [D_{KL}(P_◆LB◆Y|X=x◆RB◆ \| Q_◆LB◆Y|X=x◆RB◆)]
 $$
 
 ### Mutual Information
@@ -1809,7 +1809,7 @@ The cross-entropy $H(P, Q)$ is **fundamentally defined** as the expected negativ
 under $P$:
 
 $$
-H(P, Q) \triangleq -\mathbb{{'}E{}'}_{x \sim P}[\log q(x)] = -\int p(x) \log q(x) \, d\lambda(x)
+H(P, Q) \triangleq -\mathbb{{'}E{}'}_◆LB◆x \sim P◆RB◆[\log q(x)] = -\int p(x) \log q(x) \, d\lambda(x)
 $$
 
 This decomposes into:
@@ -1839,7 +1839,7 @@ Given a distribution $P$ and a family of distributions $\mathcal{{'}Q{}'}$:
 **M-Projection (Moment Projection / Forward KL):**
 
 $$
-Q^*_{M} = \arg\min_{Q \in \mathcal{{'}Q{}'}} D_{KL}(P \| Q)
+Q^*_{M} = \arg\min_◆LB◆Q \in \mathcal{{'}Q{}'}◆RB◆ D_{KL}(P \| Q)
 $$
 
 - **Mass-covering behavior**: Since $P$ is in the numerator, wherever $P(x) > 0$$Q(x)$ must also be
@@ -1850,7 +1850,7 @@ $$
 **I-Projection (Information Projection / Reverse KL):**
 
 $$
-Q^*_{I} = \arg\min_{Q \in \mathcal{{'}Q{}'}} D_{KL}(Q \| P)
+Q^*_{I} = \arg\min_◆LB◆Q \in \mathcal{{'}Q{}'}◆RB◆ D_{KL}(Q \| P)
 $$
 
 - **Mode-seeking behavior**: Since $Q$ is in the numerator, wherever $P(x) \approx 0$$Q(x)$ must
@@ -1865,13 +1865,13 @@ For a latent variable model with observed data $x$Latent variables $z$And approx
 $q_\phi(z|x)$:
 
 $$
-\log p(x) \geq \mathbb{{'}E{}'}_{q_\phi(z|x)}[\log p(x,z)] - \mathbb{{'}E{}'}_{q_\phi(z|x)}[\log q_\phi(z|x)] = \mathcal{{'}L{}'}(\phi)
+\log p(x) \geq \mathbb{{'}E{}'}_◆LB◆q_\phi(z|x)◆RB◆[\log p(x,z)] - \mathbb{{'}E{}'}_◆LB◆q_\phi(z|x)◆RB◆[\log q_\phi(z|x)] = \mathcal{{'}L{}'}(\phi)
 $$
 
 Equivalently:
 
 $$
-\mathcal{{'}L{}'}(\phi) = \mathbb{{'}E{}'}_{q_\phi(z|x)}[\log p(x|z)] - D_{KL}(q_\phi(z|x) \| p(z))
+\mathcal{{'}L{}'}(\phi) = \mathbb{{'}E{}'}_◆LB◆q_\phi(z|x)◆RB◆[\log p(x|z)] - D_{KL}(q_\phi(z|x) \| p(z))
 $$
 
 _Relevance:_ Foundation of Variational Autoencoders (VAEs) and Variational Inference.
@@ -1880,14 +1880,14 @@ _Relevance:_ Foundation of Variational Autoencoders (VAEs) and Variational Infer
 
 ### Reparameterization Trick
 
-To compute gradients of expectations $\nabla_\phi \mathbb{{'}E{}'}_{z \sim q_\phi}[f(z)]$We cannot
+To compute gradients of expectations $\nabla_\phi \mathbb{{'}E{}'}_◆LB◆z \sim q_\phi◆RB◆[f(z)]$We cannot
 directly push the gradient through the distribution. The reparameterization trick rewrites the
 sampling process using a deterministic transformation:
 
 If $z = T_\phi(\epsilon)$ where $\epsilon \sim p(\epsilon)$ (a fixed, parameter-free distribution)
 and $T_\phi$ is a diffeomorphism, then by LOTUS:
 
-$$\nabla_\phi \mathbb{{'}E{}'}_{z \sim q_\phi}[f(z)] = \nabla_\phi \mathbb{{'}E{}'}_{\epsilon \sim p}[f(T_\phi(\epsilon))] = \mathbb{{'}E{}'}_{\epsilon \sim p}[\nabla_\phi f(T_\phi(\epsilon))]$$
+$$\nabla_\phi \mathbb{{'}E{}'}_◆LB◆z \sim q_\phi◆RB◆[f(z)] = \nabla_\phi \mathbb{{'}E{}'}_◆LB◆\epsilon \sim p◆RB◆[f(T_\phi(\epsilon))] = \mathbb{{'}E{}'}_◆LB◆\epsilon \sim p◆RB◆[\nabla_\phi f(T_\phi(\epsilon))]$$
 
 _Relevance:_ Foundation of VAE training and differentiable Monte Carlo estimation.
 
@@ -1895,11 +1895,11 @@ _Relevance:_ Foundation of VAE training and differentiable Monte Carlo estimatio
 
 Let $\mu, \nu \in \mathcal{{'}P{}'}(S)$ where $(S, d)$ is a Polish space. The $p$-Wasserstein
 distance is:
-$$W_p(\mu, \nu) = \left( \inf_{\gamma \in \Pi(\mu, \nu)} \int_{S \times S} d(x, y)^p \, d\gamma(x, y) \right)^{1/p}$$
+$$W_p(\mu, \nu) = \left( \inf_◆LB◆\gamma \in \Pi(\mu, \nu)◆RB◆ \int_◆LB◆S \times S◆RB◆ d(x, y)^p \, d\gamma(x, y) \right)^{1/p}$$
 Where $\Pi(\mu, \nu)$ is the set of joint distributions (couplings) with marginals $\mu$ and $\nu$.
 
 _Duality (for $p=1$):_ Via Kantorovich-Rubinstein,
-$W_1(\mu, \nu) = \sup \{ \mathbb{{'}E{}'}_\mu[f] - \mathbb{{'}E{}'}_\nu[f] : \lVert f \rVert_{\mathrm{Lip{}} \leq 1 \}$.
+$W_1(\mu, \nu) = \sup \{ \mathbb{{'}E{}'}_\mu[f] - \mathbb{{'}E{}'}_\nu[f] : \lVert f \rVert_◆LB◆\mathrm{Lip{}} \leq 1 \◆RB◆$.
 
 _Relevance:_ Foundation of Wasserstein GANs; provides meaningful gradients even when distributions
 have disjoint support.
@@ -1950,7 +1950,7 @@ Frequently used in generative modeling proofs to convert KL bounds into TV bound
 **tight** if for every $\epsilon > 0$There exists a compact set $K_\epsilon \subseteq S$ such that:
 
 $$
-\sup_{\mu \in \mathcal{{'}P{}'}} \mu(S \setminus K_\epsilon) < \epsilon
+\sup_◆LB◆\mu \in \mathcal{{'}P{}'}◆RB◆ \mu(S \setminus K_\epsilon) < \epsilon
 $$
 
 _Intuition:_ Tightness prevents probability mass from "escaping to infinity."
