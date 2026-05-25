@@ -870,52 +870,12 @@ $\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$.
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/2-stoichiometry/1_mole-concept-and-stoichiometry.md
-
-- Mole: $n = m/M$; gas volume at RTP: $V = n \times 24.0 \mathrm{ dm^3}$; concentration: $c = n/V$.
-- Limiting reagent: calculate moles, use ratios, identify the reagent that runs out first.
-- Percentage yield $= \frac{\text{actual}}{\text{theoretical}} \times 100\%$.
-- Empirical formula: convert % composition to moles, find simplest ratio.
-
-======= This topic covers the essential chemistry of chemistry - mole concept and stoichiometry,
 including key reactions, underlying theories, and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Chemistry/mole-concept-and-stoichiometry.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/2-stoichiometry/1_mole-concept-and-stoichiometry.md
-
-### Example 1: Limiting reagent
-
-**Problem.** $5.0 \mathrm{ g}$ of Zn reacts with $25 \mathrm{ cm^3}$ of $2.0 \mathrm{ mol/dm^3}$
-HCl. Find the volume of H$_2$ produced at RTP.
-
-**Solution.** $n(\text{Zn}) = 5.0/65.4 = 0.0765 \mathrm{ mol}$.
-$n(\text{HCl}) = 2.0 \times 0.025 = 0.050 \mathrm{ mol}$.
-$\text{Zn} + 2\text{HCl} \to \text{ZnCl}_2 + \text{H}_2$. HCl is limiting
-($0.050/2 = 0.025 \mathrm{ mol}$ Zn needed). $n(\text{H}_2) = 0.025 \mathrm{ mol}$. Volume
-$= 0.025 \times 24.0 = 0.60 \mathrm{ dm^3}$.
-
-$\blacksquare$
-
-### Example 2: Percentage composition
-
-**Problem.** Calculate the percentage by mass of water in CuSO$_4$·5H$_2$O ($M_r = 249.7$).
-
-**Solution.** $\%\text{H}_2\text{O} = \frac{5 \times 18.0}{249.7} \times 100\% = 36.0\%$.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic           | Site    | Link                                                                                                |
-| --------------- | ------- | --------------------------------------------------------------------------------------------------- |
-| [Stoichiometry] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/quantitative-chemistry)            |
-| [Stoichiometry] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/1-stoichiometry/1_stoichiometric-relationships)     |
-| [Stoichiometry] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/2-stoichiometry/1_mole-concept-and-stoichiometry) |
-
-=======
 
 - key chemical principles and theories
 - mathematical relationships in chemistry

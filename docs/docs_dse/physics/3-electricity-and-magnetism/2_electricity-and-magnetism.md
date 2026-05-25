@@ -1782,55 +1782,6 @@ $P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}
 
 ## Common Pitfalls
 
-<<<<<<< Updated
-upstream:docs/docs_dse/physics/3-electricity-and-magnetism/2_electricity-and-magnetism.md
-
-- **Confusing electric field and electric potential.** $E$ is a vector (force per unit charge); $V$
-  is a scalar (energy per unit charge). **Fix:** $E = -\frac{dV}{dx}$; field lines point from high
-  to low potential.
-- **Wrong direction for magnetic force.** Use Fleming's left-hand rule: first finger = field, second
-  finger = current, thumb = force. **Fix:** For negative charges, reverse the current direction
-  before applying the rule.
-- **Confusing magnetic flux and flux density.** Flux density $B$ is field strength (T); flux
-  $\Phi = BA\cos\theta$ (Wb). **Fix:** $B$ is measured in tesla; $\Phi$ is measured in weber.
-
-## Worked Examples
-
-### Example 1: Electric field between parallel plates
-
-**Problem.** Two parallel plates separated by $5 \mathrm{ mm}$ have a PD of $200 \mathrm{ V}$. Find
-the field strength and force on an electron.
-
-**Solution.** $E = \frac{V}{d} = \frac{200}{0.005} = 4.0 \times 10^4 \mathrm{ V/m}$.
-$F = eE = 1.6 \times 10^{-19} \times 4.0 \times 10^4 = 6.4 \times 10^{-15} \mathrm{ N}$.
-
-$\blacksquare$
-
-### Example 2: Magnetic force on a wire
-
-**Problem.** A wire carrying $5 \mathrm{ A}$ of length $0.2 \mathrm{ m}$ is perpendicular to a
-$0.3 \mathrm{ T}$ field. Find the force.
-
-**Solution.** $F = BIl = 0.3 \times 5 \times 0.2 = 0.3 \mathrm{ N}$.
-
-$\blacksquare$
-
-## Summary
-
-- Coulomb's law: $F = \frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}$; electric field $E = F/q$.
-- Electric potential: $V = \frac{1}{4\pi\varepsilon_0}\frac{q}{r}$; $E = -\frac{dV}{dr}$.
-- Magnetic force: $F = qvB\sin\theta$ (charge); $F = BIl\sin\theta$ (wire).
-- Faraday's law: induced EMF $= -N\frac{d\Phi}{dt}$.
-
-## Cross-References
-
-| Topic             | Site    | Link                                                                                                     |
-| ----------------- | ------- | -------------------------------------------------------------------------------------------------------- |
-| [Magnetic Fields] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/fields/02-magnetic-fields)           |
-| [Magnetic Fields] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/4-fields/2_electric-and-magnetic-fields)                   |
-| [Magnetic Fields] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism/2_electricity-and-magnetism) |
-
-=======
 
 1. Confusing EMF and potential difference — EMF is the total energy per unit charge supplied; PD is
    the energy per unit charge transferred to a component.

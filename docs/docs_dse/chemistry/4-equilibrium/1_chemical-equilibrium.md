@@ -912,43 +912,6 @@ $$K = e^{2.179} = 8.84$$
 
 ## Worked Examples
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/4-equilibrium/1_chemical-equilibrium.md
-
-### Example 1: Calculating $K_c$
-
-**Problem.** $1.0 \mathrm{ mol}$ H$_2$ and $1.0 \mathrm{ mol}$ I$_2$ in $2.0 \mathrm{ dm^3}$ at
-$450°\mathrm{C}$ reach equilibrium with $0.3 \mathrm{ mol}$ HI. Find $K_c$.
-
-**Solution.** Concentrations: $[\text{H}_2] = [\text{I}_2] = 0.35 \mathrm{ M}$,
-$[\text{HI}] = 0.15 \mathrm{ M}$. $K_c = \frac{(0.15)^2}{(0.175)(0.175)} = 0.735$.
-
-$\blacksquare$
-
-### Example 2: Le Chatelier's principle
-
-**Problem.** For the exothermic reaction N$_2$ + 3H$_2$ $\rightleftharpoons$ 2NH$_3$, state the
-effect of (a) increasing pressure, (b) increasing temperature.
-
-**Solution.** (a) Shifts right (fewer gas moles: 4 $\to$ 2). Yield increases. (b) Shifts left
-(endothermic direction favoured). Yield decreases.
-
-$\blacksquare$
-
-## Summary
-
-- $K_c = \frac{[\text{products}]}{[\text{reactants}]}$; $K_p = K_c(RT)^{\Delta n_g}$.
-- Le Chatelier's principle: the system opposes the change applied.
-- Only temperature changes alter $K$; catalysts speed up both directions equally.
-
-## Cross-References
-
-| Topic                  | Site    | Link                                                                                    |
-| ---------------------- | ------- | --------------------------------------------------------------------------------------- |
-| [Chemical Equilibrium] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/equilibrium)           |
-| [Chemical Equilibrium] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/7-equilibrium/1_equilibrium)            |
-| [Chemical Equilibrium] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/4-equilibrium/1_chemical-equilibrium) |
-
-======= **Example 1: Mole calculation**
 
 Calculate the number of moles in $12.0\,\text{g}$ of $\text{NaOH}$ ($M_r = 40.0$).
 

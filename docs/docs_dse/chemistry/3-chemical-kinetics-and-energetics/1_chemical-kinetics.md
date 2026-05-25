@@ -933,44 +933,6 @@ Powdering the solid increases surface area, further increasing the rate.
 
 ## Worked Examples
 
-<<<<<<< Updated
-upstream:docs/docs_dse/chemistry/3-chemical-kinetics-and-energetics/1_chemical-kinetics.md
-
-### Example 1: Rate law
-
-**Problem.** Data: $[A]=0.1,[B]=0.1$, rate $= 0.002$; $[A]=0.2,[B]=0.1$, rate $= 0.004$;
-$[A]=0.2,[B]=0.2$, rate $= 0.016$. Determine the rate law.
-
-**Solution.** Doubling $[A]$ doubles rate: order in $A = 1$. Doubling $[B]$ quadruples rate: order
-in $B = 2$. Rate $= k[A][B]^2$. $k = 0.002/(0.1 \times 0.01) = 2.0 \mathrm{ M^{-2}s^{-1}}$.
-
-$\blacksquare$
-
-### Example 2: Activation energy
-
-**Problem.** $k$ doubles from $300 \mathrm{ K}$ to $310 \mathrm{ K}$. Estimate $E_a$.
-
-**Solution.**
-$\ln 2 = \frac{E_a}{8.31}(\frac{1}{300} - \frac{1}{310}) \implies E_a = \frac{0.693 \times 8.31}{1.075 \times 10^{-4}} \approx 53.6 \mathrm{ kJ/mol}$.
-
-$\blacksquare$
-
-## Summary
-
-- Rate law: rate $= k[A]^m[B]^n$; orders determined experimentally.
-- First-order: $t_{1/2} = \ln 2/k$ (constant, independent of concentration).
-- Arrhenius equation: $k = Ae^{-E_a/(RT)}$; plot $\ln k$ vs $1/T$.
-- Catalysts lower $E_a$ without being consumed.
-
-## Cross-References
-
-| Topic               | Site    | Link                                                                                                      |
-| ------------------- | ------- | --------------------------------------------------------------------------------------------------------- |
-| [Chemical Kinetics] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/kinetics)                                |
-| [Chemical Kinetics] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/6-kinetics/1_chemical-kinetics)                           |
-| [Chemical Kinetics] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/3-chemical-kinetics-and-energetics/1_chemical-kinetics) |
-
-======= **Example 1: Rate equation**
 
 The reaction $\text{A} + \text{B} \rightarrow \text{C}$ has rate equation
 $\text{rate} = k[\text{A}][\text{B}]^2$. When $[\text{A}] = 0.10\,\text{mol\,dm}^{-3}$ and

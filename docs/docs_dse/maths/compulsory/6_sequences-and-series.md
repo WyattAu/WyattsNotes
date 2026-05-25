@@ -934,55 +934,12 @@ self-marking and building a personal test matrix. :::
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/maths/compulsory/6_sequences-and-series.md
-
-- Arithmetic sequence: $a_n = a + (n-1)d$; sum $S_n = \frac{n}{2}(2a + (n-1)d)$.
-- Geometric sequence: $a_n = ar^{n-1}$; finite sum $S_n = \frac{a(1-r^n)}{1-r}$ ($r \neq 1$).
-- Infinite geometric series converges iff $|r| < 1$: $S_\infty = \frac{a}{1-r}$.
-- Sigma notation: $\sum_{k=1}^{n} a_k = a_1 + a_2 + \cdots + a_n$.
-
-======= This topic covers the mathematical techniques and concepts related to sequences and series,
 including key theorems, methods, and problem-solving approaches.
 
 > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/sequences-and-series.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/maths/compulsory/6_sequences-and-series.md
-
-### Example 1: Arithmetic series application
-
-**Problem.** The 5th term of an arithmetic sequence is $14$ and the 12th term is $35$. Find the
-first term, the common difference, and the sum of the first $20$ terms.
-
-**Solution.** $a + 4d = 14$ and $a + 11d = 35$. Subtracting: $7d = 21 \implies d = 3$. Then
-$a = 14 - 12 = 2$.
-
-$$S_{20} = \frac{20}{2}(2a + 19d) = 10(4 + 57) = 610$$
-
-$\blacksquare$
-
-### Example 2: Infinite geometric series
-
-**Problem.** A geometric series has first term $3$ and sum to infinity $10$. Find the common ratio.
-
-**Solution.** $S_\infty = \frac{a}{1 - r} = \frac{3}{1-r} = 10$
-
-$$1 - r = \frac{3}{10} \implies r = \frac{7}{10}$$
-
-Since $|r| = 0.7 < 1$, the series converges. ✓
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                  | Site    | Link                                                                                                        |
-| ---------------------- | ------- | ----------------------------------------------------------------------------------------------------------- |
-| [Sequences and Series] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/06-sequences-and-series) |
-| [Sequences and Series] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/2-functions/2_sequences-and-series)                             |
-| [Sequences and Series] | DSE     | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/6_sequences-and-series)                            |
-
-=======
 
 - arithmetic and geometric sequences
 - series and sigma notation

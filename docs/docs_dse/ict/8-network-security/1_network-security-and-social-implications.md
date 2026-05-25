@@ -758,52 +758,12 @@ The doctor could also face disciplinary action from the medical regulatory body.
 
 ## Summary
 
-<<<<<<< Updated
-upstream:docs/docs_dse/ict/8-network-security/1_network-security-and-social-implications.md
-
-- Symmetric encryption (AES): fast, same key. Asymmetric (RSA): public/private key pair.
-- Threats: malware, phishing, SQL injection, DDoS, social engineering.
-- Defences: firewalls, antivirus, encryption, access control, user education.
-- Legal and ethical issues: data protection laws, privacy, intellectual property, computer misuse.
-
-======= This topic covers the core concepts of network security and social implications, including
 underlying theory, practical implementation, and key applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/network-security-and-social-implications.md
 
 **Key concepts include:**
 
-<<<<<<< Updated
-upstream:docs/docs_dse/ict/8-network-security/1_network-security-and-social-implications.md
-
-### Example 1: Asymmetric encryption
-
-**Problem.** Alice wants to send a confidential message to Bob. Explain how asymmetric encryption
-achieves this.
-
-**Solution.** Alice encrypts the message using Bob's public key. Only Bob's private key can decrypt
-it. Even if the encrypted message is intercepted, it cannot be read without Bob's private key.
-
-$\blacksquare$
-
-### Example 2: SQL injection prevention
-
-**Problem.** What is SQL injection and how can it be prevented?
-
-**Solution.** SQL injection: attacker inserts malicious SQL code through user input fields (e.g.,
-`' OR 1=1 --`). Prevention: (1) Input validation (whitelist allowed characters). (2) Parameterised
-queries / prepared statements. (3) Least-privilege database accounts.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic              | Site    | Link                                                                                                       |
-| ------------------ | ------- | ---------------------------------------------------------------------------------------------------------- |
-| [Network Security] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/networks/02-network-security)      |
-| [Network Security] | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/8-network-security/1_network-security-and-social-implications) |
-
-=======
 
 - Big O notation and complexity analysis
 - searching algorithms (binary, linear)

@@ -1239,49 +1239,12 @@ species, each adapted to a different ecological niche.
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/6-evolution/1_evolution.md
-
-- Evolution: change in allele frequency driven by natural selection.
-- Natural selection: variation exists; selection pressures favour advantageous alleles.
-- Speciation: allopatric (geographic isolation) and sympatric (within same area).
-- Evidence: fossil record, comparative anatomy, molecular biology, embryology.
-
-======= This topic covers the biological principles of evolution, including key concepts,
 experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/evolution.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/6-evolution/1_evolution.md
-
-### Example 1: Natural selection
-
-**Problem.** Dark beetles are better camouflaged on dark bark; birds preferentially eat light
-beetles. Describe the outcome.
-
-**Solution.** Dark beetles survive more $\to$ reproduce more $\to$ dark allele frequency increases
-$\to$ population becomes predominantly dark (directional selection).
-
-$\blacksquare$
-
-### Example 2: Allopatric speciation
-
-**Problem.** Explain allopatric speciation.
-
-**Solution.** Geographic barrier divides population $\to$ gene flow stops $\to$ different selection
-pressures and mutations accumulate $\to$ reproductive isolation $\to$ two species form.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic       | Site | Link                                                                                    |
-| ----------- | ---- | --------------------------------------------------------------------------------------- |
-| [Evolution] | IB   | [View](https://ib.wyattau.com/docs/ib/biology/5-evolution-and-biodiversity/1_evolution) |
-| [Evolution] | DSE  | [View](https://dse.wyattau.com/docs/dse/biology/6-evolution/1_evolution)                |
-
-=======
 
 - cell structure (prokaryotic vs eukaryotic)
 - cell ultrastructure (organelles)

@@ -1589,49 +1589,12 @@ PCR is a technique used to amplify a specific region of DNA in vitro (outside a 
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/3-genetics/1_genetics.md
-
-- Mendel's laws: segregation and independent assortment.
-- Monohybrid ratio: 3:1; dihybrid ratio: 9:3:3:1 (unlinked).
-- X-linked traits: affected males pass to all daughters (carriers), not sons.
-- Non-Mendelian: incomplete dominance, codominance, multiple alleles, linkage.
-
-======= This topic covers the biological principles of genetics, including key concepts,
 experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/genetics.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/3-genetics/1_genetics.md
-
-### Example 1: Incomplete dominance
-
-**Problem.** Red (RR) $\times$ white (rr) snapdragons give pink (Rr). Cross two pink.
-
-**Solution.** Rr $\times$ Rr: RR (red) : Rr (pink) : rr (white) $= 1 : 2 : 1$.
-
-$\blacksquare$
-
-### Example 2: X-linked inheritance
-
-**Problem.** Colour-blind man $\times$ carrier woman (father was colour-blind). Probability their
-son is colour-blind?
-
-**Solution.** X$^c$Y $\times$ X$^C$X$^c$. Sons: X$^C$Y (normal) or X$^c$Y (colour-blind).
-Probability $= 50\%$.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic      | Site    | Link                                                                             |
-| ---------- | ------- | -------------------------------------------------------------------------------- |
-| [Genetics] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/genetics-and-dna) |
-| [Genetics] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/3-genetics/1_genetics)             |
-| [Genetics] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/3-genetics/1_genetics)           |
-
-=======
 
 - Mendelian inheritance
 - gene expression and regulation

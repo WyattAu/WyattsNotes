@@ -1922,55 +1922,6 @@ $$\mathrm{Percentage\ yield} = \frac{4.8}{6.90} \times 100\% = 69.6\%$$
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/7-organic-chemistry/1_organic-chemistry.md
-
-- **Wrong IUPAC naming priority.** Principal functional group gets lowest locant; substituents
-  listed alphabetically. **Fix:** Number from the end nearest the principal functional group;
-  alphabetical order for substituents.
-- **Confusing nucleophilic and electrophilic substitution.** Benzene: electrophilic substitution;
-  haloalkanes: nucleophilic substitution. **Fix:** Benzene is electron-rich (attacks electrophiles);
-  haloalkanes have electron-deficient carbon (attacked by nucleophiles).
-- **Stereochemistry confusion.** A chiral centre has four different groups. **Fix:** Look for a
-  carbon with four different substituents to identify chirality.
-
-## Worked Examples
-
-### Example 1: IUPAC naming
-
-**Problem.** Name: CH$_3$CH(CH$_3$)CH$_2$CH$_2$OH.
-
-**Solution.** Longest chain with $-$OH: 4 carbons (butan-). $-$OH on C-1, methyl on C-2. Name:
-2-methylbutan-1-ol.
-
-$\blacksquare$
-
-### Example 2: Nucleophilic substitution
-
-**Problem.** Write the mechanism for CH$_3$CH$_2$Br + NaOH(aq).
-
-**Solution.** OH$^-$ attacks the electron-deficient carbon
-(S$_N$2). C–Br breaks heterolytically.
-CH$\_3$CH$\_2$Br + OH$^-$ $\to$ CH$_3$CH$_2$OH + Br$^-$.
-
-$\blacksquare$
-
-## Summary
-
-- IUPAC naming: longest chain, number from principal functional group, alphabetical substituents.
-- Reaction types: substitution (S$_N$1/S$\_N$2), elimination (E1/E2), addition (electrophilic),
-  polymerisation.
-- Benzene: delocalised $\pi$ system; undergoes electrophilic substitution to preserve aromaticity.
-- Chirality: carbon with four different groups creates optical isomers.
-
-## Cross-References
-
-| Topic               | Site    | Link                                                                                             |
-| ------------------- | ------- | ------------------------------------------------------------------------------------------------ |
-| [Organic Chemistry] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/organic-chemistry/introduction) |
-| [Organic Chemistry] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/10-organic-chemistry/1_organic-chemistry)        |
-| [Organic Chemistry] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/7-organic-chemistry/1_organic-chemistry)       |
-
-=======
 
 1. Confusing structural isomers with stereoisomers — structural isomers have different bonding
    arrangements; stereoisomers have the same connectivity.

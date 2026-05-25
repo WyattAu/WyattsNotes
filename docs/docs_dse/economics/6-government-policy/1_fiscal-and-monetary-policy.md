@@ -1384,52 +1384,12 @@ If you get this wrong, revise: [Supply-Side Policy](#supply-side-policy)
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/6-government-policy/1_fiscal-and-monetary-policy.md
-
-- Fiscal policy: government spending and taxation to influence aggregate demand.
-- Expansionary: lower taxes, higher spending (recession). Contractionary: higher taxes, lower
-  spending (inflation).
-- Monetary policy: central bank adjusts interest rates and money supply.
-- Policy limitations: time lags, crowding out, political constraints, globalisation effects.
-
-======= This topic covers the economic theories and principles related to fiscal and monetary
 policy, including key models, evidence, and policy implications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/fiscal-and-monetary-policy.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/6-government-policy/1_fiscal-and-monetary-policy.md
-
-### Example 1: Fiscal policy
-
-**Problem.** The economy is in recession with high unemployment. What fiscal policy should the
-government adopt?
-
-**Solution.** Expansionary fiscal policy: (1) increase government spending (e.g., infrastructure
-projects) to create jobs and boost AD. (2) Decrease taxes to increase disposable income and
-encourage consumption and investment.
-
-$\blacksquare$
-
-### Example 2: Monetary policy
-
-**Problem.** Inflation is above the target rate. What monetary policy action should the central bank
-take?
-
-**Solution.** Contractionary monetary policy: increase interest rates to reduce borrowing and
-spending, slowing aggregate demand and reducing inflationary pressure.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic               | Site    | Link                                                                                                |
-| ------------------- | ------- | --------------------------------------------------------------------------------------------------- |
-| [Government Policy] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/macro/04-fiscal-policy)            |
-| [Government Policy] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/6-government-policy/1_fiscal-and-monetary-policy) |
-
-=======
 
 - aggregate demand and supply
 - fiscal and monetary policy

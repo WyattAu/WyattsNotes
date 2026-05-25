@@ -846,42 +846,12 @@ To work correctly.
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/5-office-automation/1_office-automation.md
-
-- Spreadsheets: cell references (relative, absolute, mixed), formulas, functions (IF, VLOOKUP, SUM,
-  AVERAGE).
-- Charts: line (trends), bar (comparison), pie (proportions), scatter (correlation).
-- Database functions in spreadsheets: filtering, sorting, pivot tables.
-- Mail merge: combining a document template with a data source for personalised documents.
-
-======= This topic covers the essential concepts and techniques related to office automation and
 productivity, including key principles and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/office-automation-and-productivity.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/5-office-automation/1_office-automation.md
-
-### Example 1: Spreadsheet formula
-
-**Problem.** In cell D2, write a formula to calculate tax at 15% of income in B2, but only if income
-exceeds $10000$ (otherwise tax $= 0$).
-
-**Solution.** `=IF(B2>10000, B2*0.15, 0)`
-
-$\blacksquare$
-
-### Example 2: VLOOKUP
-
-**Problem.** A lookup table in A1:C5 has product codes in column A and prices in column C. Find the
-price for product code in cell E1.
-
-**Solution.** `=VLOOKUP(E1, A1:C5, 3, FALSE)`
-
-$\blacksquare$
-
-=======
 
 - core concepts and definitions
 - key principles and frameworks

@@ -1737,47 +1737,12 @@ $$2\mathrm{NH_3} + \mathrm{CO_2} \rightarrow \mathrm{CO(NH_2)_2} + \mathrm{H_2O}
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/4-human-physiology/1_human-physiology.md
-
-- Gas exchange: alveoli provide large surface area and steep concentration gradient.
-- O$_2$ transport: bound to haemoglobin; CO$_2$ as bicarbonate, carbamino compounds, and dissolved.
-- Cardiac output = HR $\times$ SV; double circulatory system (pulmonary + systemic).
-
-======= This topic covers the biological principles of human physiology, including key concepts,
 experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/human-physiology.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/4-human-physiology/1_human-physiology.md
-
-### Example 1: Cardiac output
-
-**Problem.** HR $= 72 \mathrm{ bpm}$, SV $= 70 \mathrm{ mL}$. Calculate cardiac output.
-
-**Solution.** CO $= 72 \times 70 = 5040 \mathrm{ mL/min} \approx 5.0 \mathrm{ L/min}$.
-
-$\blacksquare$
-
-### Example 2: Oxygen dissociation curve
-
-**Problem.** Why does the curve shift right in actively respiring tissues?
-
-**Solution.** Higher CO$_2$ lowers pH (Bohr effect), reducing haemoglobin's affinity for O$_2$ and
-promoting unloading where needed.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic              | Site    | Link                                                                                   |
-| ------------------ | ------- | -------------------------------------------------------------------------------------- |
-| [Human Physiology] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/homeostasis)            |
-| [Human Physiology] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/6-human-physiology/1_human-physiology)   |
-| [Human Physiology] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/4-human-physiology/1_human-physiology) |
-
-=======
 
 - the nervous system and synaptic transmission
 - the endocrine system and hormones

@@ -1587,51 +1587,12 @@ If you get this wrong, revise: [Financial Development](#financial-development)
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/8-money-and-banking/1_money-and-banking.md
-
-- Functions of money: medium of exchange, unit of account, store of value.
-- Money supply: M1 (cash + demand deposits), M2/M3 (broader measures).
-- Money creation: banks create money through fractional reserve lending; money multiplier
-  $= 1/\text{reserve ratio}$.
-- Central bank: controls monetary policy through interest rates, reserve requirements, and open
-  market operations.
-
-======= This topic covers the economic theories and principles related to money and banking,
 including key models, evidence, and policy implications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/money-and-banking.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/8-money-and-banking/1_money-and-banking.md
-
-### Example 1: Money multiplier
-
-**Problem.** The reserve ratio is $10\%$. A customer deposits $1000$ in a bank. Calculate the
-maximum possible increase in the money supply.
-
-**Solution.** Money multiplier $= 1/0.10 = 10$. Maximum increase $= 1000 \times 10 = 10\,000$.
-
-$\blacksquare$
-
-### Example 2: Functions of money
-
-**Problem.** Explain the three functions of money with examples.
-
-**Solution.** (1) Medium of exchange: money eliminates the need for barter (buying lunch with cash).
-(2) Unit of account: provides a common measure of value (prices in dollars). (3) Store of value: can
-be saved and used later (savings account).
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic              | Site    | Link                                                                                            |
-| ------------------ | ------- | ----------------------------------------------------------------------------------------------- |
-| [Financial Sector] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/macro/03-the-financial-sector) |
-| [Financial Sector] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/8-money-and-banking/1_money-and-banking)      |
-
-=======
 
 - economic models and theories
 - data analysis and interpretation

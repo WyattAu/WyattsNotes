@@ -952,50 +952,12 @@ Following factors are also critical:
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/2-computer-systems/1_computer-systems.md
-
-- CPU components: ALU, CU, registers (PC, MAR, MDR, IR, accumulator), buses.
-- Von Neumann architecture: shared memory; Harvard: separate instruction/data memories.
-- Performance factors: clock speed, word size, cache size, number of cores, pipeline depth.
-- Fetch-decode-execute cycle: the fundamental instruction processing loop.
-
-======= This topic covers the essential concepts and techniques related to fundamentals of computer
 systems, including key principles and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/computer-systems.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/2-computer-systems/1_computer-systems.md
-
-### Example 1: Fetch-decode-execute cycle
-
-**Problem.** Describe the fetch-decode-execute cycle.
-
-**Solution.** Fetch: PC sends address to memory via address bus; instruction copied to MDR via data
-bus; instruction moved to IR; PC incremented. Decode: control unit interprets the instruction.
-Execute: ALU performs the operation; results stored.
-
-$\blacksquare$
-
-### Example 2: Performance factors
-
-**Problem.** A processor has a clock speed of $3.0 \mathrm{ GHz}$ and executes an average of 2
-instructions per cycle. Calculate MIPS.
-
-**Solution.** MIPS $= 3.0 \times 10^9 \times 2 / 10^6 = 6000 \mathrm{ MIPS}$.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                   | Site    | Link                                                                                                           |
-| ----------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
-| [Computer Architecture] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/fundamentals/04-computer-architecture) |
-| [Computer Architecture] | IB      | [View](https://ib.wyattau.com/docs/ib/computer-science/2-computer-organization/1_computer-organization)        |
-| [Computer Architecture] | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/2-computer-systems/1_computer-systems)                             |
-
-=======
 
 - core concepts and definitions
 - key principles and frameworks

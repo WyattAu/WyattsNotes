@@ -1454,53 +1454,12 @@ If you get this wrong, revise: [Opportunity Cost](#opportunity-cost)
 
 ## Summary
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/1-basic-economic-concepts/1_basic-economic-concepts.md
-
-- Scarcity forces choice; opportunity cost is the value of the next best alternative forgone.
-- PPC illustrates scarcity, efficiency, and opportunity cost; points inside indicate inefficiency.
-- Specialisation and division of labour increase productivity but create interdependence.
-- Economic goods are scarce (positive price); free goods are abundant (zero price).
-
-======= This topic covers the economic theories and principles related to basic economic concepts,
 including key models, evidence, and policy implications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/basic-economic-concepts.md
 
 **Key concepts include:**
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/1-basic-economic-concepts/1_basic-economic-concepts.md
-
-### Example 1: Opportunity cost
-
-**Problem.** A student can spend 3 hours studying (exam preparation worth $5000 in future earnings)
-or working (earning $300). What is the opportunity cost of studying?
-
-**Solution.** The next best alternative is working ($300). The opportunity cost of studying is $300
-(the earnings forgone), not $5300.
-
-$\blacksquare$
-
-### Example 2: PPC analysis
-
-**Problem.** An economy produces only food and clothing. If all resources are used for food, it
-produces 100 units; for clothing, 50 units. A point inside the PPC shows 60 food and 20 clothing.
-What does this mean?
-
-**Solution.** The economy is operating inside the PPC, meaning resources are underutilised. It could
-produce more of one or both goods without sacrificing the other. This indicates inefficiency.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                  | Site    | Link                                                                                                     |
-| ---------------------- | ------- | -------------------------------------------------------------------------------------------------------- |
-| [The Economic Problem] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/microeconomics/01-the-economic-problem) |
-| [The Economic Problem] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/1-basic-economic-concepts/1_basic-economic-concepts)   |
-
-=======
 
 - economic models and theories
 - data analysis and interpretation

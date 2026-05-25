@@ -649,41 +649,6 @@ $\mathrm{C_3H_8O} = 60
 
 ## Worked Examples
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/7-organic-chemistry/2_carbon-chemistry.md
-
-### Example 1: Identifying the polymer
-
-**Problem.** Repeating unit: $[-\text{CH}_2-\text{CHCl}-]_n$. Identify the monomer and
-polymerisation type.
-
-**Solution.** Monomer: CH$_2$=CHCl (vinyl chloride). Type: addition polymerisation.
-
-$\blacksquare$
-
-### Example 2: Condensation polymer
-
-**Problem.** Write the equation for polyester formation from ethanedioic acid and ethane-1,2-diol.
-
-**Solution.**
-$n\,\text{HOOC-COOH} + n\,\text{HOCH}_2\text{CH}_2\text{OH} \to [-\text{OC-COOCH}_2\text{CH}_2\text{O}-]_n + 2n\,\text{H}_2\text{O}$.
-
-$\blacksquare$
-
-## Summary
-
-- Addition polymerisation: alkene monomers, no by-product, chain-growth mechanism.
-- Condensation polymerisation: monomers with two functional groups, releases small molecules.
-- Polyesters: dicarboxylic acid + diol; polyamides: dicarboxylic acid + diamine.
-- Environmental impact: non-biodegradable polymers cause pollution; recycling is important.
-
-## Cross-References
-
-| Topic                        | Site | Link                                                                                               |
-| ---------------------------- | ---- | -------------------------------------------------------------------------------------------------- |
-| [Advanced Organic Chemistry] | IB   | [View](https://ib.wyattau.com/docs/ib/chemistry/10-organic-chemistry/2_organic-chemistry-advanced) |
-| [Advanced Organic Chemistry] | DSE  | [View](https://dse.wyattau.com/docs/dse/chemistry/7-organic-chemistry/2_carbon-chemistry)          |
-
-======= **Example 1: Mole calculation**
 
 Calculate the number of moles in $12.0\,\text{g}$ of $\text{NaOH}$ ($M_r = 40.0$).
 

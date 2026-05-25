@@ -1352,58 +1352,6 @@ These factors combine to give helium the highest first ionisation energy of all 
 
 ## Common Pitfalls
 
-<<<<<<< Updated
-upstream:docs/docs_dse/chemistry/1-atomic-structure-and-bonding/1_atomic-structure-and-bonding.md
-
-- **Confusing atomic number, mass number, and relative atomic mass.** $Z$ = protons; $A$ = protons +
-  neutrons; $A_r$ is the weighted average. **Fix:** $A_r$ accounts for isotopic abundances; $A$ is
-  for a specific isotope.
-- **Wrong electron configuration for transition metal ions.** The $4s$ orbital fills before $3d$ but
-  loses electrons before $3d$ when forming ions. **Fix:** For ions: remove $4s$ electrons first.
-  Fe$^{2+}$: $[\text{Ar}]\,3d^6$.
-- **Confusing bond types.** Ionic: electron transfer (metal + non-metal). Covalent: electron sharing
-  (non-metal + non-metal). Metallic: delocalised electrons (metal + metal). **Fix:** Identify the
-  element types to predict the bonding.
-
-## Worked Examples
-
-### Example 1: Electron configuration of an ion
-
-**Problem.** Write the electron configuration of $\text{Fe}^{3+}$ ($Z = 26$).
-
-**Solution.** Neutral Fe: $[\text{Ar}]\,3d^6\,4s^2$. Remove two $4s$ and one $3d$:
-$\text{Fe}^{3+}: [\text{Ar}]\,3d^5$.
-
-$\blacksquare$
-
-### Example 2: Relative atomic mass
-
-**Problem.** Chlorine has isotopes $^{35}\text{Cl}$ (75.8%) and $^{37}\text{Cl}$ (24.2%). Calculate
-$A_r$.
-
-**Solution.** $A_r = \frac{35 \times 75.8 + 37 \times 24.2}{100} = 35.48$.
-
-$\blacksquare$
-
-## Summary
-
-- Atoms consist of protons, neutrons, and electrons; isotopes have the same $Z$ but different $N$.
-- Electron configuration follows the aufbau principle, Pauli exclusion principle, and Hund's rule.
-- Ionic bonding: electrostatic attraction between ions; covalent bonding: shared electron pairs.
-- Electronegativity differences determine bond character.
-
-## Cross-References
-
-| Topic              | Site    | Link                                                                                                             |
-| ------------------ | ------- | ---------------------------------------------------------------------------------------------------------------- |
-| [Atomic Structure] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/atomic-structure)                               |
-| [Atomic Structure] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/2-atomic-structure/1_atomic-theory)                              |
-| [Atomic Structure] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/1-atomic-structure-and-bonding/1_atomic-structure-and-bonding) |
-| [Chemical Bonding] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/bonding-and-structure)                          |
-| [Chemical Bonding] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/4-chemical-bonding/1_chemical-bonding)                           |
-| [Chemical Bonding] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/1-atomic-structure-and-bonding/1_atomic-structure-and-bonding) |
-
-=======
 
 1. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
    overall charge.

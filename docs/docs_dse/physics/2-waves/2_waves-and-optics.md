@@ -1369,59 +1369,6 @@ $$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/physics/2-waves/2_waves-and-optics.md
-
-- **Confusing refraction and diffraction.** Refraction is the bending of light at a boundary;
-  diffraction is the spreading around obstacles. **Fix:** Refraction involves a change in medium;
-  diffraction involves a gap comparable to the wavelength.
-- **Wrong sign convention for lens formula.** DSE uses the real-is-positive (New Cartesian)
-  convention. **Fix:** Use $\frac{1}{v} - \frac{1}{u} = \frac{1}{f}$ consistently with
-  real-is-positive convention.
-- **Forgetting that total internal reflection requires a denser-to-less-dense boundary.** TIR cannot
-  occur going from air to glass. **Fix:** TIR: $n_1 > n_2$ and
-  $\theta > \theta_c = \sin^{-1}(n_2/n_1)$.
-
-## Worked Examples
-
-### Example 1: Snell's law and critical angle
-
-**Problem.** Light travels from glass ($n = 1.5$) to air. Find the critical angle and determine
-whether a ray at $35°$ to the normal is totally internally reflected.
-
-**Solution.** $\theta_c = \sin^{-1}\left(\frac{1.0}{1.5}\right) = 41.8°$. Since $35° < 41.8°$, the
-ray is NOT totally internally reflected. By Snell's law:
-$1.5\sin 35° = \sin\theta_r \implies \theta_r = 59.3°$.
-
-$\blacksquare$
-
-### Example 2: Thin lens equation
-
-**Problem.** An object is placed $20 \mathrm{ cm}$ from a converging lens of focal length
-$15 \mathrm{ cm}$. Find the image position and magnification.
-
-**Solution.**
-$\frac{1}{v} = \frac{1}{15} - \frac{1}{-20} = \frac{1}{15} + \frac{1}{20} = \frac{7}{60} \implies v = \frac{60}{7} = 8.57 \mathrm{ cm}$.
-$m = \frac{v}{u} = \frac{60/7}{-20} = -\frac{3}{7}$ (inverted, diminished).
-
-$\blacksquare$
-
-## Summary
-
-- Snell's law: $n_1 \sin\theta_1 = n_2 \sin\theta_2$.
-- Critical angle: $\theta_c = \sin^{-1}(n_2/n_1)$ where $n_1 > n_2$; TIR occurs when
-  $\theta > \theta_c$.
-- Thin lens equation: $\frac{1}{v} - \frac{1}{u} = \frac{1}{f}$; magnification $m = v/u$.
-- Diffraction is significant when the gap size is comparable to the wavelength.
-
-## Cross-References
-
-| Topic                   | Site       | Link                                                                                                                   |
-| ----------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [Refraction and Optics] | A-Level    | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/waves/03-refraction-and-total-internal-reflection) |
-| [Refraction and Optics] | DSE        | [View](https://dse.wyattau.com/docs/dse/physics/2-waves/2_waves-and-optics)                                            |
-| [Refraction and Optics] | University | [View](https://university.wyattau.com/docs/physics/4-optics-and-waves/1_optics-and-wave-physics)                       |
-
-=======
 
 1. Confusing wave speed, frequency, and wavelength — remember $v = f\lambda$ relates all three.
 

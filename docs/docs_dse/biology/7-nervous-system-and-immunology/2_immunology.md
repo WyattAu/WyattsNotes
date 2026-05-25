@@ -1090,19 +1090,6 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/7-nervous-system-and-immunology/2_immunology.md
-
-- **Confusing antigens and antibodies.** Antigens are foreign molecules that trigger an immune
-  response; antibodies are proteins produced to bind specific antigens. **Fix:** Antigen $=$
-  triggers; Antibody $=$ responds. Each antibody is specific to one antigen.
-- **Confusing primary and secondary immune response.** Primary: slow, produces memory cells.
-  Secondary: fast, stronger, due to memory cells. **Fix:** Vaccination exploits the secondary
-  response by exposing the body to antigens without causing disease.
-- **Wrong phagocytosis understanding.** Phagocytes engulf and digest pathogens by endocytosis and
-  lysosomal enzymes. **Fix:** Phagocytosis is non-specific (innate immunity); it does not involve
-  antibodies or memory cells.
-
-=======
 
 1. Using anecdotal evidence or small sample sizes as though they constitute robust scientific data.
 
@@ -1111,44 +1098,6 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 2. Misinterpreting graphs by confusing the independent and dependent variables or reading scales
    incorrectly.
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/7-nervous-system-and-immunology/2_immunology.md
-
-- Innate immunity: physical barriers, phagocytosis, inflammation (non-specific, no memory).
-- Adaptive immunity: B cells (antibodies), T cells (cell-mediated); specific, with memory.
-- Primary response: slow, produces memory cells. Secondary response: fast, stronger.
-- Vaccination exploits memory cells for long-term immunity without causing disease.
-
-## Worked Examples
-
-### Example 1: Antibody production
-
-**Problem.** Describe the process of antibody production by B cells.
-
-**Solution.** Antigen binds to B cell receptor $\to$ B cell activated (with T helper cell) $\to$ B
-cell divides by mitosis (clonal expansion) $\to$ plasma cells produce antibodies; memory B cells
-formed for future response.
-
-$\blacksquare$
-
-### Example 2: Vaccination
-
-**Problem.** Explain how vaccination provides immunity.
-
-**Solution.** Vaccine introduces antigens (weakened/dead pathogen or specific antigen) $\to$ primary
-immune response produces memory cells $\to$ on subsequent exposure, memory cells trigger rapid
-secondary response $\to$ pathogen destroyed before symptoms develop.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic        | Site    | Link                                                                                          |
-| ------------ | ------- | --------------------------------------------------------------------------------------------- |
-| [Immunology] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/immunology)                    |
-| [Immunology] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/8-nervous-system-and-immunology/2_immunology)   |
-| [Immunology] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/7-nervous-system-and-immunology/2_immunology) |
-
-======= 3. Confusing DNA replication (S phase) with transcription or translation — be clear about
 which process is being described.
 
 4. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the

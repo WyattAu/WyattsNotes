@@ -1403,47 +1403,12 @@ Higher biodiversity generally leads to greater ecosystem stability:
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/2-ecology/2_biodiversity-and-conservation.md
-
-- Biodiversity: genetic, species, and ecosystem diversity; measured by Simpson's index.
-- Threats: habitat destruction, pollution, climate change, overexploitation, invasive species.
-- In situ conservation preferred; ex situ as backup.
-
-======= This topic covers the biological principles of biodiversity and conservation, including key
 concepts, experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/biodiversity-and-conservation.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/2-ecology/2_biodiversity-and-conservation.md
-
-### Example 1: Simpson's Diversity Index
-
-**Problem.** 3 species with abundances 50, 30, 20. Calculate $D = 1 - \sum p_i^2$.
-
-**Solution.** $N = 100$. $D = 1 - (0.25 + 0.09 + 0.04) = 0.62$.
-
-$\blacksquare$
-
-### Example 2: Conservation strategy
-
-**Problem.** Why is captive breeding alone insufficient?
-
-**Solution.** It doesn't address original threats (habitat loss, hunting). Without habitat
-restoration, reintroduced individuals won't survive. An integrated approach is essential.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                           | Site    | Link                                                                                                  |
-| ------------------------------- | ------- | ----------------------------------------------------------------------------------------------------- |
-| [Biodiversity and Conservation] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/biodiversity-classification-evolution) |
-| [Biodiversity and Conservation] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/5-evolution-and-biodiversity/1_evolution)               |
-| [Biodiversity and Conservation] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/2-ecology/2_biodiversity-and-conservation)            |
-
-=======
 
 - Mendelian inheritance
 - gene expression and regulation

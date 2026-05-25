@@ -1086,48 +1086,12 @@ During the fight-or-flight response, the adrenal medulla releases adrenaline, wh
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/4-human-physiology/3_homeostasis.md
-
-- Thermoregulation: hypothalamus as thermostat; negative feedback via skin and muscles.
-- Osmoregulation: osmoreceptors $\to$ ADH $\to$ collecting duct permeability.
-- Nephron: ultrafiltration $\to$ selective reabsorption $\to$ loop of Henlé $\to$ collecting duct.
-
-======= This topic covers the biological principles of homeostasis, including key concepts,
 experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/homeostasis.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/4-human-physiology/3_homeostasis.md
-
-### Example 1: Thermoregulation
-
-**Problem.** Describe responses when body temperature drops below $37°\mathrm{C}$.
-
-**Solution.** Hypothalamus activates heat conservation centre $\to$ vasoconstriction, shivering,
-piloerection, increased metabolic rate.
-
-$\blacksquare$
-
-### Example 2: Nephron function
-
-**Problem.** Why is glucose normally absent in urine?
-
-**Solution.** Glucose is filtered but all reabsorbed in the proximal tubule via co-transport with
-Na$^+$. If blood glucose exceeds the renal threshold ($\approx 9 \mathrm{ mmol/L}$), glucose appears
-in urine (glycosuria).
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic         | Site    | Link                                                                              |
-| ------------- | ------- | --------------------------------------------------------------------------------- |
-| [Homeostasis] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/homeostasis)       |
-| [Homeostasis] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/4-human-physiology/3_homeostasis) |
-
-=======
 
 - photosynthesis (light-dependent and independent)
 - transpiration and water transport

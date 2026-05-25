@@ -1178,54 +1178,6 @@ because the buffer system absorbs the added base. The buffer resists large pH ch
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/5-acids-bases/1_acids-bases-and-electrochemistry.md
-
-- **Confusing strong and concentrated.** Strong = fully dissociated; concentrated = high
-  concentration. These are independent. **Fix:** Strong vs weak refers to degree of dissociation;
-  concentrated vs dilute refers to concentration.
-- **Wrong pH for weak acids.** $[\text{H}^+] \neq [\text{HA}]$ for weak acids. **Fix:**
-  $[\text{H}^+] = \sqrt{K_a [\text{HA}]}$ for weak acids.
-- **Wrong half-equation balancing.** Electrons must balance; add H$^+$, OH$^-$, H$_2$O as needed.
-  **Fix:** Balance atoms, then O (add H$_2$O), then H (add H$^+$), then charge (add $e^-$).
-
-## Worked Examples
-
-### Example 1: pH of a weak acid
-
-**Problem.** Calculate the pH of $0.1 \mathrm{ M}$ ethanoic acid ($K_a = 1.8 \times 10^{-5}$).
-
-**Solution.**
-$[\text{H}^+] = \sqrt{K_a [\text{HA}]} = \sqrt{1.8 \times 10^{-6}} = 1.34 \times 10^{-3}$.
-$\text{pH} = -\log(1.34 \times 10^{-3}) = 2.87$.
-
-$\blacksquare$
-
-### Example 2: Cell EMF
-
-**Problem.** For Zn|Zn$^{2+}$||Cu$^{2+}$|Cu,
-$E^\circ(\text{Zn}^{2+}/\text{Zn}) = -0.76 \mathrm{ V}$,
-$E^\circ(\text{Cu}^{2+}/\text{Cu}) = +0.34 \mathrm{ V}$. Find cell EMF.
-
-**Solution.** $E^\circ_{\text{cell}} = 0.34 - (-0.76) = +1.10 \mathrm{ V}$.
-
-$\blacksquare$
-
-## Summary
-
-- pH $= -\log[\text{H}^+]$; pOH $= 14 -$ pH at 25°C.
-- Strong acids: $[\text{H}^+] = [\text{acid}]$; weak acids: $[\text{H}^+] = \sqrt{K_a[\text{HA}]}$.
-- Buffer: $\text{pH} = \text{p}K_a + \log\frac{[\text{A}^-]}{[\text{HA}]}$ (Henderson–Hasselbalch).
-- $E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}$.
-
-## Cross-References
-
-| Topic             | Site    | Link                                                                                                |
-| ----------------- | ------- | --------------------------------------------------------------------------------------------------- |
-| [Acids and Bases] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/acids-bases)                       |
-| [Acids and Bases] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/8-acids-and-bases/1_acids-and-bases)                |
-| [Acids and Bases] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/5-acids-bases/1_acids-bases-and-electrochemistry) |
-
-=======
 
 1. Assuming that a strong acid always has a lower pH than a weak acid without considering
    concentration.

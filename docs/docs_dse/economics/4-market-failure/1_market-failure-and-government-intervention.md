@@ -1342,53 +1342,12 @@ If you get this wrong, revise: [Information Asymmetry](#information-asymmetry)
 
 ## Summary
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/4-market-failure/1_market-failure-and-government-intervention.md
-
-- Externalities: costs/benefits affecting third parties not involved in the transaction.
-- Negative externality: overproduction; tax or regulation to reduce to social optimum.
-- Positive externality: underproduction; subsidy or provision to increase to social optimum.
-- Public goods: non-excludable and non-rival; market fails to provide (free-rider problem).
-
-======= This topic covers the core concepts of market failure and government intervention, including
 underlying theory, practical implementation, and key applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/market-failure-and-government-intervention.md
 
 **Key concepts include:**
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/4-market-failure/1_market-failure-and-government-intervention.md
-
-### Example 1: Negative externality
-
-**Problem.** A factory produces with MPC $= 10 + Q$ and MEC $= 5$. Market demand is $P = 50 - Q$.
-Find the socially optimal output.
-
-**Solution.** MSC $=$ MPC $+$ MEC $= 15 + Q$. Social optimum: MSC $=$ MB, i.e.
-$15 + Q = 50 - Q \implies 2Q = 35 \implies Q = 17.5$. Market output (MPC $=$ MB):
-$10 + Q = 50 - Q \implies Q = 20$. Overproduction by 2.5 units.
-
-$\blacksquare$
-
-### Example 2: Government intervention
-
-**Problem.** What government policies can correct a negative externality from pollution?
-
-**Solution.** (1) Pigouvian tax equal to the marginal external cost. (2) Regulation (emission
-standards). (3) Tradable pollution permits. (4) Subsidies for clean technology. Each internalises
-the externality differently.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic            | Site    | Link                                                                                                             |
-| ---------------- | ------- | ---------------------------------------------------------------------------------------------------------------- |
-| [Market Failure] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/microeconomics/03-market-failure)               |
-| [Market Failure] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/4-market-failure/1_market-failure-and-government-intervention) |
-
-=======
 
 - core concepts and terminology
 - algorithms and computational thinking

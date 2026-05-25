@@ -1061,67 +1061,12 @@ After POST processing, so the Back button returns to the form, not the POST requ
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/7-web-and-multimedia/1_web-development-and-multimedia.md
-
-- HTML: structure and content; CSS: presentation and layout; JavaScript: interactivity.
-- Image formats: JPEG (photos), PNG (graphics with transparency), GIF (animations), SVG (scalable).
-- Accessibility: alt text, colour contrast, keyboard navigation, semantic HTML.
-- Multimedia: video, audio, animation; consider file size and loading time.
-
-======= This topic covers the geographical processes and issues related to web development and
 multimedia, including key theories, case studies, and management strategies.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/web-development-and-multimedia.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/7-web-and-multimedia/1_web-development-and-multimedia.md
-
-### Example 1: HTML structure
-
-**Problem.** Write HTML for a simple page with a heading, paragraph, and a link.
-
-**Solution.**
-
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Welcome</h1>
-    <p>This is my first webpage.</p>
-    <a href="https://example.com">Visit Example</a>
-  </body>
-</html>
-```
-
-$\blacksquare$
-
-### Example 2: CSS styling
-
-**Problem.** Write CSS to make all `<h1>` elements blue and all `<p>` elements have a font size of
-16px.
-
-**Solution.**
-
-```css
-h1 {
-  color: blue;
-}
-p {
-  font-size: 16px;
-}
-```
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic              | Site    | Link                                                                                                  |
-| ------------------ | ------- | ----------------------------------------------------------------------------------------------------- |
-| [Web Technologies] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/networks/05-web-technologies) |
-| [Web Technologies] | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/7-web-and-multimedia/1_web-development-and-multimedia)    |
-
-=======
 
 - geographical concepts and theories
 - case studies and examples

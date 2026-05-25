@@ -1038,43 +1038,12 @@ Because they render more on projectors and screens, especially at larger sizes a
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/5-office-automation/2_office-applications.md
-
-- Word processing: styles, templates, mail merge, headers/footers, table of contents.
-- Databases: queries (select, criteria, sorting), reports, forms.
-- Presentations: minimal text, consistent design, relevant visuals, clear message.
-- Integrated use: linking data between applications (e.g., spreadsheet charts in reports).
-
-======= This topic covers the essential concepts and techniques related to office applications in
 depth, including key principles and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/office-applications-depth.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/5-office-automation/2_office-applications.md
-
-### Example 1: Database query design
-
-**Problem.** Design a query to find all customers in the "Technology" sector with revenue exceeding
-$1\,000\,000$.
-
-**Solution.** SQL: `SELECT * FROM Customers WHERE Sector = 'Technology' AND Revenue > 1000000;` Or
-in query design view: Sector = "Technology", Revenue > 1000000, both criteria on the same row (AND).
-
-$\blacksquare$
-
-### Example 2: Presentation best practices
-
-**Problem.** What are the key principles for an effective presentation?
-
-**Solution.** (1) Minimal text per slide. (2) Consistent fonts and colours. (3) High-contrast colour
-scheme. (4) Relevant images/charts. (5) Clear hierarchy of information. (6) Practice delivery
-timing.
-
-$\blacksquare$
-
-=======
 
 - core concepts and definitions
 - key principles and frameworks

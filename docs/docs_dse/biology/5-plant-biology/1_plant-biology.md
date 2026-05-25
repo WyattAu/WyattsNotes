@@ -1777,51 +1777,12 @@ in shortest supply (the **limiting factor**).
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/5-plant-biology/1_plant-biology.md
-
-- Xylem: water transport via transpiration pull; dead, hollow, lignified vessels.
-- Phloem: translocation of sucrose via mass flow (active loading at source).
-- Mineral ions: N (proteins), P (ATP), K (ion balance), Mg (chlorophyll).
-- Plant hormones: auxin (elongation, tropisms), gibberellin (stem growth), ethene (ripening).
-
-======= This topic covers the biological principles of plant biology, including key concepts,
 experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/plant-biology.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/5-plant-biology/1_plant-biology.md
-
-### Example 1: Transpiration rate
-
-**Problem.** A plant loses $0.5 \mathrm{ g}$ water in $30 \mathrm{ min}$ through
-$50 \mathrm{ cm^2}$. Calculate rate per hour per m$^2$.
-
-**Solution.** $0.5 \times 2 = 1.0 \mathrm{ g/h}$. Per m$^2$:
-$1.0 / 0.005 = 200 \mathrm{ g/(h \cdot m^2)}$.
-
-$\blacksquare$
-
-### Example 2: Mineral deficiency
-
-**Problem.** A plant has yellow leaves with green veins. Which mineral is deficient?
-
-**Solution.** Magnesium — a component of chlorophyll. Deficiency prevents chlorophyll synthesis,
-causing interveinal chlorosis.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic            | Site    | Link                                                                                 |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ |
-| [Plant Biology]  | IB      | [View](https://ib.wyattau.com/docs/ib/biology/7-plant-biology/1_plant-biology)       |
-| [Plant Biology]  | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/5-plant-biology/1_plant-biology)     |
-| [Photosynthesis] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/photosynthesis-depth) |
-| [Photosynthesis] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/5-plant-biology/1_plant-biology)     |
-
-=======
 
 - photosynthesis (light-dependent and independent)
 - transpiration and water transport

@@ -1348,50 +1348,12 @@ $$
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/1-data-representation/1_data-representation.md
-
-- Number systems: binary (base 2), denary (base 10), hexadecimal (base 16).
-- Two's complement: range $-2^{n-1}$ to $2^{n-1}-1$; invert and add 1 to negate.
-- Character encoding: ASCII (7-bit, 128 chars), Unicode (variable-length, all languages).
-- Image representation: pixels, colour depth, resolution; file size
-  $= \text{width} \times \text{height} \times \text{colour depth}$.
-
-======= This topic covers the essential concepts and techniques related to data representation,
 including key principles and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/data-representation.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/1-data-representation/1_data-representation.md
-
-### Example 1: Binary to denary conversion
-
-**Problem.** Convert $11010110_2$ to denary.
-
-**Solution.** $128 + 64 + 16 + 4 + 2 = 214$.
-
-$\blacksquare$
-
-### Example 2: Two's complement subtraction
-
-**Problem.** Calculate $45 - 67$ using 8-bit two's complement.
-
-**Solution.** $45 = 00101101_2$. $67 = 01000011_2$. $-67 = 10111101_2$ (invert and add 1).
-$00101101 + 10111101 = 11101010$. This is $-22$ in two's complement. ✓ ($45 - 67 = -22$)
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                             | Site    | Link                                                                                                                       |
-| --------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [Number Systems]                  | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/fundamentals/01-number-systems)                    |
-| [Number Systems]                  | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/1-data-representation/1_data-representation)                                   |
-| [Data Representation (Computing)] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/programming/03-data-representation-in-programming) |
-| [Data Representation (Computing)] | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/1-data-representation/1_data-representation)                                   |
-
-=======
 
 - core concepts and definitions
 - key principles and frameworks

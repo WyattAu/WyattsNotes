@@ -1260,20 +1260,6 @@ If you get this wrong, revise: [Price Controls and Welfare](#price-controls-and-
 
 ## Common Pitfalls
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/2-demand-supply-markets/1_demand-supply-and-markets.md
-
-- **Confusing movement along and shift of the demand curve.** A change in price causes movement
-  along; a change in non-price determinants shifts the curve. **Fix:** Price change: movement along.
-  Income, tastes, prices of related goods, expectations: shift.
-- **Wrong equilibrium interpretation.** Equilibrium is where quantity demanded equals quantity
-  supplied, not where demand equals supply. **Fix:** Equilibrium is at the intersection of the
-  demand and supply curves.
-- **Confusing normal and inferior goods.** For normal goods, demand increases with income. For
-  inferior goods, demand decreases with income. **Fix:** If income rises and demand falls, the good
-  is inferior (e.g., public transport vs taxis).
-
-=======
 
 1. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.
 
@@ -1282,44 +1268,6 @@ upstream:docs/docs_dse/economics/2-demand-supply-markets/1_demand-supply-and-mar
 2. Confusing a movement along a curve with a shift of the curve — movements are caused by price
    changes; shifts by non-price determinants.
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/2-demand-supply-markets/1_demand-supply-and-markets.md
-
-### Example 1: Equilibrium price
-
-**Problem.** Demand: $Q_d = 100 - 2P$. Supply: $Q_s = 20 + 3P$. Find equilibrium price and quantity.
-
-**Solution.** $100 - 2P = 20 + 3P \implies 80 = 5P \implies P = 16$. $Q = 100 - 32 = 68$.
-
-$\blacksquare$
-
-### Example 2: Price ceiling
-
-**Problem.** The government sets a price ceiling of $10$ below the equilibrium price of $16$.
-Describe the effect.
-
-**Solution.** At $P = 10$: $Q_d = 100 - 20 = 80$, $Q_s = 20 + 30 = 50$. Shortage of 30 units. The
-price ceiling creates excess demand (shortage).
-
-$\blacksquare$
-
-## Summary
-
-- Demand curve: downward sloping; supply curve: upward sloping.
-- Equilibrium: $Q_d = Q_s$; price below equilibrium creates shortage; above creates surplus.
-- Shifts in demand: income, tastes, prices of substitutes/complements, expectations, population.
-- Shifts in supply: costs of production, technology, number of sellers, expectations,
-  subsidies/taxes.
-
-## Cross-References
-
-| Topic            | Site    | Link                                                                                                              |
-| ---------------- | ------- | ----------------------------------------------------------------------------------------------------------------- |
-| [Microeconomics] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/microeconomics/02-demand-supply-and-equilibrium) |
-| [Microeconomics] | IB      | [View](https://ib.wyattau.com/docs/ib/economics/microeconomics)                                                   |
-| [Microeconomics] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/2-demand-supply-markets/1_demand-supply-and-markets)            |
-
-======= 3. Stating that 'demand falls' without specifying whether it is a contraction (movement
 along) or a decrease (shift) of the demand curve.
 
 4. Forgetting to distinguish between short-run and long-run effects in macroeconomic analysis.

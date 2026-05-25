@@ -881,44 +881,6 @@ $\Delta H = -5.936 / 0.100 = -59.4 \mathrm{ kJ/mol}$
 
 ## Worked Examples
 
-<<<<<<< Updated upstream:docs/docs_dse/chemistry/3-chemical-kinetics-and-energetics/2_energetics.md
-
-### Example 1: Hess's law
-
-**Problem.** $\text{C}(s) + \text{O}_2(g) \to \text{CO}_2(g)$, $\Delta H = -393.5 \mathrm{ kJ/mol}$.
-$\text{CO}(g) + \frac{1}{2}\text{O}_2(g) \to \text{CO}_2(g)$, $\Delta H = -283.0 \mathrm{ kJ/mol}$.
-Find $\Delta H$ for $\text{C}(s) + \frac{1}{2}\text{O}_2(g) \to \text{CO}(g)$.
-
-**Solution.** Subtract: $\Delta H = -393.5 - (-283.0) = -110.5 \mathrm{ kJ/mol}$.
-
-$\blacksquare$
-
-### Example 2: Calorimetry
-
-**Problem.** $50 \mathrm{ cm^3}$ of $1.0 \mathrm{ M}$ HCl is mixed with $50 \mathrm{ cm^3}$ of
-$1.0 \mathrm{ M}$ NaOH. Temperature rises by $6.8°\mathrm{C}$. Calculate $\Delta H$.
-
-**Solution.** $q = 100 \times 4.18 \times 6.8 = 2842 \mathrm{ J}$. $n = 0.050 \mathrm{ mol}$.
-$\Delta H = -2842/0.050 = -56.8 \mathrm{ kJ/mol}$.
-
-$\blacksquare$
-
-## Summary
-
-- Hess's law: $\Delta H$ is path-independent; use enthalpy cycles.
-- $\Delta H_r^\circ = \sum \Delta H_f^\circ(\text{products}) - \sum \Delta H_f^\circ(\text{reactants})$.
-- Bond enthalpies give average values; less accurate than $\Delta H_f^\circ$ data.
-- Calorimetry: $q = mc\Delta T$; $\Delta H = -q/n$.
-
-## Cross-References
-
-| Topic                        | Site    | Link                                                                                               |
-| ---------------------------- | ------- | -------------------------------------------------------------------------------------------------- |
-| [Thermodynamics (Chemistry)] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/thermodynamics)                   |
-| [Thermodynamics (Chemistry)] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/5-energetics/1_thermochemistry)                    |
-| [Thermodynamics (Chemistry)] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/3-chemical-kinetics-and-energetics/2_energetics) |
-
-======= **Example 1: Hess's law**
 
 Use the following data to calculate the enthalpy change for the reaction
 $\text{C}(s) + \frac{1}{2}\text{O}_2(g) \rightarrow \text{CO}(g)$:

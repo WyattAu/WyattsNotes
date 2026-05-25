@@ -1738,43 +1738,12 @@ under 35; decreasing to less than 5% for women over 42).
 
 ## Summary
 
-<<<<<<< Updated
-upstream:docs/docs_dse/biology/4-human-physiology/2_human-reproduction-and-homeostasis.md
-
-- Homeostasis: constant internal environment via negative feedback.
-- Blood glucose: insulin lowers, glucagon raises; controlled by pancreatic islets.
-- Menstrual cycle: FSH, LH, oestrogen, progesterone interact via feedback.
-- Kidney: ultrafiltration, selective reabsorption, ADH-controlled water reabsorption.
-
-======= This topic covers the biological principles of human reproduction and homeostasis, including
 key concepts, experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/human-reproduction-and-homeostasis.md
 
 **Key concepts include:**
 
-<<<<<<< Updated
-upstream:docs/docs_dse/biology/4-human-physiology/2_human-reproduction-and-homeostasis.md
-
-### Example 1: Blood glucose regulation
-
-**Problem.** Explain regulation after a carbohydrate-rich meal.
-
-**Solution.** Blood glucose rises $\to$ $\beta$ cells detect $\to$ insulin secreted $\to$ glucose
-uptake increases, glycogenesis in liver $\to$ glucose falls. Negative feedback.
-
-$\blacksquare$
-
-### Example 2: Osmoregulation
-
-**Problem.** Explain the role of ADH.
-
-**Solution.** Low blood water potential $\to$ osmoreceptors detect $\to$ more ADH released $\to$
-collecting duct walls more permeable $\to$ more water reabsorbed $\to$ concentrated urine.
-
-$\blacksquare$
-
-=======
 
 - Mendelian inheritance
 - gene expression and regulation

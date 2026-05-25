@@ -2000,17 +2000,6 @@ where the count rate is lower.
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/physics/5-nuclear-physics/1_nuclear-physics.md
-
-- **Confusing atomic number and mass number.** Atomic number $Z$ = protons; mass number $A$ =
-  protons + neutrons. **Fix:** Notation: $^A_Z X$; $A$ on top (mass), $Z$ on bottom (atomic).
-- **Wrong half-life interpretation.** After $n$ half-lives, the remaining fraction is $(1/2)^n$, not
-  $1/(2n)$. **Fix:** After 3 half-lives: $(1/2)^3 = 1/8$ remains, not $1/6$.
-- **Ignoring mass-energy equivalence.** The mass defect $\Delta m$ converts to energy by
-  $E = \Delta m \cdot c^2$. **Fix:** Check total mass of products vs reactants; any difference is
-  released/absorbed energy.
-
-=======
 
 1. Confusing atomic number (protons) with mass number (protons + neutrons).
 
@@ -2019,22 +2008,6 @@ where the count rate is lower.
 2. Forgetting that radioactive decay is random and spontaneous — it cannot be predicted for
    individual nuclei.
 
-<<<<<<< Updated upstream:docs/docs_dse/physics/5-nuclear-physics/1_nuclear-physics.md
-
-- Nuclear notation: $^A_Z X$; isotopes have same $Z$ but different $A$.
-- Radioactive decay: activity $A = \lambda N$; half-life $t_{1/2} = \frac{\ln 2}{\lambda}$.
-- $E = mc^2$: mass defect converts to binding energy; fusion for $A < 56$, fission for $A > 56$.
-- Background radiation is always present; subtract it when measuring activity.
-
-## Cross-References
-
-| Topic             | Site    | Link                                                                                                       |
-| ----------------- | ------- | ---------------------------------------------------------------------------------------------------------- |
-| [Nuclear Physics] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/nuclear-physics/01-radioactivity)      |
-| [Nuclear Physics] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/5-nuclear-and-quantum-physics/1_quantum-and-nuclear-physics) |
-| [Nuclear Physics] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/5-nuclear-physics/1_nuclear-physics)                       |
-
-======= 3. Misunderstanding that half-life is constant regardless of the initial amount of
 substance.
 
 4. Forgetting to include units in final answers, especially when working with derived units like

@@ -1683,58 +1683,6 @@ Minimum coefficient of static friction: $\mu_s = 0.51$.
 
 ## Common Pitfalls
 
-<<<<<<< Updated upstream:docs/docs_dse/physics/1-mechanics/2_mechanics-depth.md
-
-- **Ignoring rotational inertia.** When analysing rolling without slipping, both translational and
-  rotational kinetic energy must be considered. **Fix:** Total KE
-  $= \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2$, and use the rolling condition $v = r\omega$.
-- **Wrong axis for moment of inertia.** The moment of inertia depends on the axis of rotation;
-  $I_{\text{centre}} \neq I_{\text{edge}}$. **Fix:** Use the parallel axis theorem:
-  $I = I_{\text{cm}} + Md^2$.
-- **Confusing angular and linear quantities.** Angular acceleration $\alpha$ relates to torque by
-  $\tau = I\alpha$, not $F = m\alpha$. **Fix:** $\tau = I\alpha$ is the rotational analogue of
-  $F = ma$.
-
-## Worked Examples
-
-### Example 1: Moment of inertia
-
-**Problem.** Find the moment of inertia of a uniform rod of mass $M$ and length $L$ about an axis
-through one end, perpendicular to the rod.
-
-**Solution.** $I_{\text{cm}} = \frac{1}{12}ML^2$ about the centre. By the parallel axis theorem with
-$d = L/2$:
-$$I = \frac{1}{12}ML^2 + M\left(\frac{L}{2}\right)^2 = \frac{1}{12}ML^2 + \frac{1}{4}ML^2 = \frac{1}{3}ML^2$$
-
-$\blacksquare$
-
-### Example 2: Rolling down an incline
-
-**Problem.** A solid sphere of mass $2 \mathrm{ kg}$ and radius $0.1 \mathrm{ m}$ rolls without
-slipping down a $30°$ incline from rest. Find the acceleration.
-
-**Solution.** $I = \frac{2}{5}Mr^2$. Acceleration:
-$a = \frac{g\sin\theta}{1 + I/(Mr^2)} = \frac{9.81 \times 0.5}{1 + 2/5} = \frac{4.905}{1.4} = 3.50 \mathrm{ m/s}^2$.
-
-$\blacksquare$
-
-## Summary
-
-- Moment of inertia measures resistance to angular acceleration: $\tau = I\alpha$.
-- Parallel axis theorem: $I = I_{\text{cm}} + Md^2$.
-- Rolling without slipping: $v = r\omega$, $a = r\alpha$; total KE
-  $= \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2$.
-- Angular momentum $L = I\omega$ is conserved when net external torque is zero.
-
-## Cross-References
-
-| Topic                 | Site    | Link                                                                                       |
-| --------------------- | ------- | ------------------------------------------------------------------------------------------ |
-| [Forces and Dynamics] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/mechanics/03-dynamics) |
-| [Forces and Dynamics] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/1-space-time-and-motion/2_dynamics)          |
-| [Forces and Dynamics] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/1-mechanics/2_mechanics-depth)             |
-
-=======
 
 1. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.

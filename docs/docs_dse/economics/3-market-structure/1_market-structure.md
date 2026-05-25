@@ -1946,48 +1946,12 @@ If you get this wrong, revise:
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/3-market-structure/1_market-structure.md
-
-- Perfect competition: many firms, homogeneous products, price takers, zero long-run profit.
-- Monopoly: single firm, unique product, price maker, barriers to entry, long-run profit possible.
-- Monopolistic competition: many firms, differentiated products, low barriers, zero long-run profit.
-- Oligopoly: few firms, interdependent decisions, barriers to entry, potential for collusion.
-
-======= This topic covers the economic theories and principles related to market structure and
 theory of the firm, including key models, evidence, and policy implications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/market-structure-and-theory-of-the-firm.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/3-market-structure/1_market-structure.md
-
-### Example 1: Profit maximisation
-
-**Problem.** A firm has MC $= 2Q$ and MR $= 20 - 2Q$. Find the profit-maximising output.
-
-**Solution.** MC $=$ MR: $2Q = 20 - 2Q \implies 4Q = 20 \implies Q = 5$.
-
-$\blacksquare$
-
-### Example 2: Market structure identification
-
-**Problem.** A market has many firms selling slightly different products with low barriers to entry.
-Identify the market structure.
-
-**Solution.** Monopolistic competition — many firms, differentiated products, low barriers to entry
-(e.g., restaurants, hair salons).
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                | Site    | Link                                                                                                   |
-| -------------------- | ------- | ------------------------------------------------------------------------------------------------------ |
-| [Theory of the Firm] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/microeconomics/04-theory-of-the-firm) |
-| [Theory of the Firm] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/3-market-structure/1_market-structure)               |
-
-=======
 
 - economic models and theories
 - data analysis and interpretation

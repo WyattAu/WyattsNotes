@@ -976,60 +976,6 @@ $f(x) = 2x^2 - 3x + 5$.
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/maths/compulsory/1_functions.md
-
-- A function assigns exactly one output to each input; check injectivity (one-to-one), surjectivity
-  (onto), and bijectivity.
-- The domain of $f \circ g$ requires both $x \in \mathrm{dom}(g)$ and $g(x) \in \mathrm{dom}(f)$.
-- The inverse $f^{-1}$ exists iff $f$ is bijective; find it by swapping $x$ and $y$ and solving.
-- Graph transformations follow a specific order: horizontal shift $\to$ horizontal stretch $\to$
-  reflection $\to$ vertical stretch $\to$ vertical shift.
-- Even functions satisfy $f(-x) = f(x)$; odd functions satisfy $f(-x) = -f(x)$.
-
-## Worked Examples
-
-### Example 1: Composite function domain
-
-**Problem.** Given $f(x) = \sqrt{x - 1}$ and $g(x) = \dfrac{2}{x - 3}$, find
-$\mathrm{dom}(f \circ g)$.
-
-**Solution.** We require both $x \in \mathrm{dom}(g)$ and $g(x) \in \mathrm{dom}(f)$.
-
-1. $\mathrm{dom}(g) = \mathbb{R} \setminus \{3\}$, so $x \neq 3$.
-2. $\mathrm{dom}(f) = [1, \infty)$, so $g(x) \geq 1$, i.e. $\dfrac{2}{x - 3} \geq 1$.
-
-Case 1: $x > 3$. Then $2 \geq x - 3$, giving $x \leq 5$. Combined with $x > 3$: $3 < x \leq 5$.
-
-Case 2: $x < 3$. Then $2 \leq x - 3$, giving $x \geq 5$, which contradicts $x < 3$. No solution.
-
-Therefore $\mathrm{dom}(f \circ g) = (3,\, 5]$.
-
-$\blacksquare$
-
-### Example 2: Finding an inverse function
-
-**Problem.** $f(x) = \dfrac{3x + 2}{x - 1}$ for $x \neq 1$. Find $f^{-1}$ and state its domain and
-range.
-
-**Solution.** Set $y = \dfrac{3x + 2}{x - 1}$.
-
-$y(x - 1) = 3x + 2 \implies yx - y = 3x + 2 \implies yx - 3x = y + 2 \implies x(y - 3) = y + 2$
-
-$$f^{-1}(x) = \frac{x + 2}{x - 3}, \quad \mathrm{dom}(f^{-1}) = \mathbb{R} \setminus \{3\}$$
-
-$\mathrm{range}(f^{-1}) = \mathrm{dom}(f) = \mathbb{R} \setminus \{1\}$.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic       | Site    | Link                                                                                             |
-| ----------- | ------- | ------------------------------------------------------------------------------------------------ |
-| [Functions] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/05-functions) |
-| [Functions] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/2-functions/1_functions)                             |
-| [Functions] | DSE     | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/1_functions)                            |
-
-======= This topic covers the mathematical techniques and concepts related to functions, including
 key theorems, methods, and problem-solving approaches.
 
 **Key concepts include:**

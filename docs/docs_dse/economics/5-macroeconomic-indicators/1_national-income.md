@@ -1574,15 +1574,6 @@ If you get this wrong, revise: [Green GDP and Sustainability](#green-gdp-and-sus
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/5-macroeconomic-indicators/1_national-income.md
-
-- GDP: total market value of all final goods and services produced within a country in a given
-  period.
-- Real GDP adjusts for inflation; nominal GDP does not.
-- GDP excludes: non-market activities, transfer payments, second-hand sales, intermediate goods.
-- Limitations: does not measure well-being, inequality, or environmental degradation.
-
-======= This topic covers the economic theories and principles related to national income and
 macroeconomic indicators, including key models, evidence, and policy implications.
 
 > > > > > > > Stashed
@@ -1590,36 +1581,6 @@ macroeconomic indicators, including key models, evidence, and policy implication
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/economics/5-macroeconomic-indicators/1_national-income.md
-
-### Example 1: GDP calculation
-
-**Problem.** An economy produces: bread (final, $500$), flour for bread (intermediate, $200$), cakes
-(final, $300$). Calculate GDP.
-
-**Solution.** GDP = final goods only $= 500 + 300 = 800$. Flour is an intermediate good used in
-bread production and is excluded.
-
-$\blacksquare$
-
-### Example 2: Real GDP
-
-**Problem.** Nominal GDP is $1000$ billion and the GDP deflator is $125$ (base year $= 100$). Find
-real GDP.
-
-**Solution.** Real GDP $= 1000 / 1.25 = 800$ billion.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic            | Site    | Link                                                                                                 |
-| ---------------- | ------- | ---------------------------------------------------------------------------------------------------- |
-| [Macroeconomics] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/macro/01-macroeconomic-performance) |
-| [Macroeconomics] | IB      | [View](https://ib.wyattau.com/docs/ib/economics/macroeconomics)                                      |
-| [Macroeconomics] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/5-macroeconomic-indicators/1_national-income)      |
-
-=======
 
 - aggregate demand and supply
 - fiscal and monetary policy

@@ -1568,54 +1568,12 @@ If you get this wrong, revise: [Development Strategies](#development-strategies)
 
 ## Summary
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/7-international-trade/1_international-trade-and-finance.md
-
-- Comparative advantage: trade based on lower opportunity cost, not absolute cost.
-- Terms of trade: ratio of export prices to import prices; improvement means more imports per unit
-  of exports.
-- Exchange rate: depreciation boosts exports and reduces imports (improves trade balance).
-- Trade barriers: tariffs, quotas, subsidies; protectionism vs free trade arguments.
-
-======= This topic covers the biological principles of international trade and finance, including
 key concepts, experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/international-trade-and-finance.md
 
 **Key concepts include:**
 
-<<<<<<< Updated
-upstream:docs/docs_dse/economics/7-international-trade/1_international-trade-and-finance.md
-
-### Example 1: Comparative advantage
-
-**Problem.** Country A can produce 10 cars or 5 trucks per worker. Country B can produce 6 cars or 6
-trucks per worker. Should they trade?
-
-**Solution.** Opportunity cost: A — 1 car $= 0.5$ trucks, 1 truck $= 2$ cars. B — 1 car $= 1$ truck,
-1 truck $= 1$ car. A has comparative advantage in cars (lower opportunity cost: 0.5 vs 1 truck). B
-has comparative advantage in trucks. Both gain from trade by specialising and trading.
-
-$\blacksquare$
-
-### Example 2: Exchange rate
-
-**Problem.** The HKD/USD rate falls from 7.8 to 7.5. What happens to HK exports to the US?
-
-**Solution.** HKD depreciates (fewer HKD per USD). HK goods become cheaper for US buyers. HK exports
-to the US increase.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                     | Site    | Link                                                                                                       |
-| ------------------------- | ------- | ---------------------------------------------------------------------------------------------------------- |
-| [International Economics] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/economics/macro/06-the-international-economy)       |
-| [International Economics] | IB      | [View](https://ib.wyattau.com/docs/ib/economics/international-economics)                                   |
-| [International Economics] | DSE     | [View](https://dse.wyattau.com/docs/dse/economics/7-international-trade/1_international-trade-and-finance) |
-
-=======
 
 - key biological principles and concepts
 - experimental methods and data analysis

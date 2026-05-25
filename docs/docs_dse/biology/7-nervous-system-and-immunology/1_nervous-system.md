@@ -1085,50 +1085,12 @@ LTP is the cellular basis of learning and memory:
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/7-nervous-system-and-immunology/1_nervous-system.md
-
-- Sensory neurons: receptor $\to$ CNS. Motor neurons: CNS $\to$ effector. Relay: within CNS.
-- Resting potential $\approx -70 \mathrm{ mV}$; action potential peaks at $+40 \mathrm{ mV}$.
-- Synaptic transmission: neurotransmitter release, diffusion, receptor binding.
-- Refractory period ensures one-way transmission and limits maximum firing rate.
-
-======= This topic covers the biological principles of nervous system, including key concepts,
 experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/nervous-system.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/7-nervous-system-and-immunology/1_nervous-system.md
-
-### Example 1: Reflex arc
-
-**Problem.** Describe the pathway when touching a hot object.
-
-**Solution.** Pain receptors $\to$ sensory neuron $\to$ relay neuron in spinal cord $\to$ motor
-neuron $\to$ effector muscle (withdraw hand).
-
-$\blacksquare$
-
-### Example 2: Synaptic transmission
-
-**Problem.** Explain how a nerve impulse crosses a synapse.
-
-**Solution.** Action potential arrives $\to$ Ca$^{2+}$ enters presynaptic membrane $\to$
-neurotransmitter released into synaptic cleft $\to$ binds to receptors on postsynaptic membrane
-$\to$ new action potential initiated.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic            | Site    | Link                                                                                              |
-| ---------------- | ------- | ------------------------------------------------------------------------------------------------- |
-| [Nervous System] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/nervous-system)                    |
-| [Nervous System] | IB      | [View](https://ib.wyattau.com/docs/ib/biology/8-nervous-system-and-immunology/1_nervous-system)   |
-| [Nervous System] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/7-nervous-system-and-immunology/1_nervous-system) |
-
-=======
 
 - key biological principles and concepts
 - experimental methods and data analysis

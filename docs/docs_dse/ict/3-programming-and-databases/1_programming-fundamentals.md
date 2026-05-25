@@ -1043,58 +1043,12 @@ END
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/3-programming-and-databases/1_programming-fundamentals.md
-
-- Variables: named storage locations with data types; must be initialised before use.
-- Control structures: sequence, selection (if/else), iteration (for, while, repeat).
-- Arrays: indexed data structures for storing multiple values of the same type.
-- Procedures (no return value) vs functions (return a value); parameters by value vs reference.
-
-======= This topic covers the core concepts of programming fundamentals, including underlying
 theory, practical implementation, and key applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/programming-fundamentals.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/3-programming-and-databases/1_programming-fundamentals.md
-
-### Example 1: Trace a loop
-
-**Problem.** What is the output of: `total = 0; for i = 1 to 5: total = total + i`?
-
-**Solution.** After each iteration: $i=1 \to 1$, $i=2 \to 3$, $i=3 \to 6$, $i=4 \to 10$,
-$i=5 \to 15$. Output: $15$.
-
-$\blacksquare$
-
-### Example 2: Array processing
-
-**Problem.** An array contains $[3, 7, 2, 9, 1]$. Write pseudocode to find the maximum value.
-
-**Solution.**
-
-```
-max = array[0]
-FOR i = 1 TO length(array) - 1
-    IF array[i] > max THEN max = array[i]
-NEXT i
-OUTPUT max
-```
-
-Output: $9$.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                    | Site    | Link                                                                                                           |
-| ------------------------ | ------- | -------------------------------------------------------------------------------------------------------------- |
-| [Programming Constructs] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/programming/01-programming-constructs) |
-| [Programming Constructs] | IB      | [View](https://ib.wyattau.com/docs/ib/computer-science/7-control/1_programming-fundamentals)                   |
-| [Programming Constructs] | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/3-programming-and-databases/1_programming-fundamentals)            |
-
-=======
 
 - Big O notation and complexity analysis
 - searching algorithms (binary, linear)

@@ -1534,48 +1534,12 @@ contamination of cultures and protect the operator from potentially pathogenic o
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/5-plant-biology/2_microorganisms-and-biotechnology.md
-
-- Bacteria: prokaryotes. Viruses: non-living. Fungi: eukaryotic.
-- Biotechnology: uses microorganisms to produce useful products.
-- Batch fermentation: closed system, distinct phases. Continuous: open system, steady state.
-- Genetic modification: recombinant DNA for human protein production.
-
-======= This topic covers the biological principles of microorganisms and biotechnology, including
 key concepts, experimental evidence, and real-world applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/microorganisms-and-biotechnology.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/biology/5-plant-biology/2_microorganisms-and-biotechnology.md
-
-### Example 1: Growth curve
-
-**Problem.** Describe the four phases of bacterial growth.
-
-**Solution.** 1. Lag: adapting, synthesising enzymes. 2. Log: rapid cell division. 3. Stationary:
-growth = death rate. 4. Decline: death exceeds growth.
-
-$\blacksquare$
-
-### Example 2: GM insulin production
-
-**Problem.** Outline the steps for producing human insulin in bacteria.
-
-**Solution.** Isolate insulin gene $\to$ insert into plasmid vector $\to$ transform E. coli $\to$
-culture in fermenter $\to$ extract and purify insulin.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic           | Site    | Link                                                                                                |
-| --------------- | ------- | --------------------------------------------------------------------------------------------------- |
-| [Biotechnology] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/biology/biotechnology)                       |
-| [Biotechnology] | DSE     | [View](https://dse.wyattau.com/docs/dse/biology/5-plant-biology/2_microorganisms-and-biotechnology) |
-
-=======
 
 - Mendelian inheritance
 - gene expression and regulation

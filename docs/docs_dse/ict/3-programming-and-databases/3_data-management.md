@@ -730,51 +730,12 @@ easy-to-use Privacy dashboard.
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/3-programming-and-databases/3_data-management.md
-
-- Data validation: range, type, length, format, presence, lookup checks.
-- Data verification: double entry, visual check — ensures accuracy of data entry.
-- Hashing: one-way function producing fixed-length output; used for integrity and password storage.
-- Encryption: reversible (with key); hashing: irreversible.
-
-======= This topic covers the essential concepts and techniques related to data management,
 including key principles and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/data-management.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/3-programming-and-databases/3_data-management.md
-
-### Example 1: Data validation
-
-**Problem.** For a field "Age" (must be 0–120, integer), which validation checks are appropriate?
-
-**Solution.** (1) Type check: must be integer. (2) Range check: $0 \leq \text{Age} \leq 120$. (3)
-Presence check: must not be empty.
-
-$\blacksquare$
-
-### Example 2: Hashing
-
-**Problem.** Explain how hashing protects password data in a database.
-
-**Solution.** Passwords are hashed (not stored in plaintext). When a user logs in, the entered
-password is hashed and compared with the stored hash. Even if the database is compromised, the
-original passwords cannot be recovered from the hashes.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic       | Site       | Link                                                                                                       |
-| ----------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
-| [Databases] | A-Level    | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/databases/01-relational-databases) |
-| [Databases] | IB         | [View](https://ib.wyattau.com/docs/ib/computer-science/6-resource-management/1_databases)                  |
-| [Databases] | DSE        | [View](https://dse.wyattau.com/docs/dse/ict/3-programming-and-databases/3_data-management)                 |
-| [Databases] | University | [View](https://university.wyattau.com/docs/computing/4-databases/1_databases)                              |
-
-=======
 
 - core concepts and definitions
 - key principles and frameworks

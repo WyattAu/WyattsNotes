@@ -1015,53 +1015,12 @@ Internet -- Modem -- Router -- Central Switch
 
 ## Summary
 
-<<<<<<< Updated
-upstream:docs/docs_dse/ict/4-networking-and-internet/1_internet-and-data-communications.md
-
-- OSI model: 7 layers from Physical to Application; TCP/IP model: 4 layers.
-- TCP: reliable, connection-oriented. UDP: fast, connectionless.
-- IP addressing: IPv4 (32-bit) and IPv6 (128-bit); private vs public addresses.
-- MAC address: physical address (48-bit); IP address: logical address (32/128-bit).
-
-======= This topic covers the essential concepts and techniques related to internet and data
 communications, including key principles and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/internet-and-data-communications.md
 
 **Key concepts include:**
 
-<<<<<<< Updated
-upstream:docs/docs_dse/ict/4-networking-and-internet/1_internet-and-data-communications.md
-
-### Example 1: Subnet calculation
-
-**Problem.** A network has IP address 192.168.1.0 with subnet mask 255.255.255.192. How many subnets
-and hosts per subnet?
-
-**Solution.** Mask 255.255.255.192 = /26. Borrowed bits: $26 - 24 = 2$. Subnets: $2^2 = 4$. Host
-bits: $32 - 26 = 6$. Hosts per subnet: $2^6 - 2 = 62$.
-
-$\blacksquare$
-
-### Example 2: Protocol stack
-
-**Problem.** Match each protocol to the correct OSI layer: HTTP, TCP, IP, Ethernet.
-
-**Solution.** HTTP: Application (Layer 7). TCP: Transport (Layer 4). IP: Network (Layer 3).
-Ethernet: Data Link (Layer 2).
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic      | Site       | Link                                                                                                      |
-| ---------- | ---------- | --------------------------------------------------------------------------------------------------------- |
-| [Networks] | A-Level    | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/networks/01-network-fundamentals) |
-| [Networks] | IB         | [View](https://ib.wyattau.com/docs/ib/computer-science/3-networks/1_networks)                             |
-| [Networks] | DSE        | [View](https://dse.wyattau.com/docs/dse/ict/4-networking-and-internet/1_internet-and-data-communications) |
-| [Networks] | University | [View](https://university.wyattau.com/docs/computing/3-computer-networks/1_computer-networks)             |
-
-=======
 
 - core concepts and definitions
 - key principles and frameworks

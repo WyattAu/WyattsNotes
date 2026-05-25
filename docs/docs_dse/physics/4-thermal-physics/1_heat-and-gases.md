@@ -1846,45 +1846,6 @@ $$T_f = 22.2^\circ\mathrm{C}$
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/physics/4-thermal-physics/1_heat-and-gases.md
-
-- Heat: $Q = mc\Delta T$; latent heat: $Q = mL$ (no temperature change during phase transition).
-- Ideal gas law: $PV = nRT$; $R = 8.31 \mathrm{ J/(mol\cdot K)}$.
-- Boyle's law: $PV = \text{const}$ ($T$ const); Charles's law: $V/T = \text{const}$ ($P$ const).
-- Internal energy of an ideal gas depends only on temperature.
-
-## Worked Examples
-
-### Example 1: Specific heat capacity
-
-**Problem.** A $2 \mathrm{ kg}$ aluminium block ($c = 900 \mathrm{ J/(kg\cdot K)}$) is heated from
-$25°\mathrm{C}$ to $85°\mathrm{C}$. Find the energy required.
-
-**Solution.** $Q = mc\Delta T = 2 \times 900 \times 60 = 108\,000 \mathrm{ J} = 108 \mathrm{ kJ}$.
-
-$\blacksquare$
-
-### Example 2: Ideal gas law
-
-**Problem.** A gas occupies $0.5 \mathrm{ m^3}$ at $300 \mathrm{ K}$ and
-$1.0 \times 10^5 \mathrm{ Pa}$. It is compressed to $0.2 \mathrm{ m^3}$ at constant temperature.
-Find the new pressure.
-
-**Solution.** Boyle's law:
-$P_2 = \frac{P_1 V_1}{V_2} = \frac{1.0 \times 10^5 \times 0.5}{0.2} = 2.5 \times 10^5 \mathrm{ Pa}$.
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic             | Site       | Link                                                                                                       |
-| ----------------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
-| [Thermal Physics] | A-Level    | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/thermal-physics/01-thermal-properties) |
-| [Thermal Physics] | IB         | [View](https://ib.wyattau.com/docs/ib/physics/2-particulate-nature-of-matter/1_thermodynamics)             |
-| [Thermal Physics] | DSE        | [View](https://dse.wyattau.com/docs/dse/physics/4-thermal-physics/1_heat-and-gases)                        |
-| [Thermal Physics] | University | [View](https://university.wyattau.com/docs/physics/2-thermal-physics/1_thermal-physics)                    |
-
-======= This topic covers the fundamental principles of heat and gases, including the key equations,
 experimental methods, and applications relevant to the specification.
 
 **Key concepts include:**

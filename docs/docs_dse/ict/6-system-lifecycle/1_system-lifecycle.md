@@ -743,51 +743,12 @@ and then switch completely. This limits risk without the burden of full parallel
 
 ## Summary
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/6-system-lifecycle/1_system-lifecycle.md
-
-- SDLC phases: analysis, design, implementation, testing, installation, maintenance.
-- Methodologies: waterfall (sequential), agile (iterative), spiral (risk-driven).
-- Feasibility study: technical, economic, operational, schedule, legal feasibility.
-- Testing: unit, integration, system, acceptance; continuous throughout development.
-
-======= This topic covers the essential concepts and techniques related to system lifecycle,
 including key principles and practical applications.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/system-lifecycle.md
 
 **Key concepts include:**
 
-<<<<<<< Updated upstream:docs/docs_dse/ict/6-system-lifecycle/1_system-lifecycle.md
-
-### Example 1: System lifecycle phases
-
-**Problem.** List and briefly describe the phases of the system lifecycle.
-
-**Solution.** (1) Analysis: investigate current system, define requirements. (2) Design: specify
-architecture, data structures, interfaces. (3) Implementation: write code, build hardware. (4)
-Testing: verify system meets requirements. (5) Installation: deploy the system. (6) Maintenance: fix
-bugs, add features.
-
-$\blacksquare$
-
-### Example 2: Feasibility study
-
-**Problem.** What factors are considered in a feasibility study?
-
-**Solution.** (1) Technical: can it be built? (2) Economic: is it cost-effective? (3) Operational:
-will users accept it? (4) Schedule: can it be delivered on time? (5) Legal: any regulatory
-constraints?
-
-$\blacksquare$
-
-## Cross-References
-
-| Topic                            | Site    | Link                                                                                                                            |
-| -------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Software Development Lifecycle] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/software-engineering/01-software-development-lifecycle) |
-| [Software Development Lifecycle] | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/6-system-lifecycle/1_system-lifecycle)                                              |
-
-=======
 
 - core concepts and definitions
 - key principles and frameworks
