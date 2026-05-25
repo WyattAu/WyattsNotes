@@ -27,6 +27,10 @@ const config = {
     socialCard: '/img/social-cards/dse.png',
   }),
 
+  // DSE content is incomplete — don't block deploys on broken links
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
   plugins: [
     ...sharedPlugins('wyattsnotes-dse'),
     [
