@@ -100,5 +100,3 @@ Before starting revision, take the diagnostic tests to identify your strengths a
 5. **Evaluation skills:** For 7--8 mark questions, always include both analysis and evaluation. Use
    phrases like "however," "on the other hand," " on," "in the short run vs long run," and "this
    assumes." Acknowledging limitations and counterarguments earns evaluation marks.
-
-</details>
