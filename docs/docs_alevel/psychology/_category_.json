@@ -1,8 +1,4 @@
 {
   "label": "A-Level Psychology",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Comprehensive A-Level Psychology notes covering research methods, social influence, memory, attachment, psychopathology, approaches, biopsychology, and issues and debates."
-  }
+  "position": 2
 }
