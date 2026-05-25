@@ -48,12 +48,15 @@ module.exports = function escapeJsxBraces() {
       // Step 2: Restore placeholders — the webpack loader (or source preprocessing)
       // replaced { and } inside math contexts with private-use-area characters
       // to prevent MDX from parsing them as JSX expressions.
-      // Support both old (multi-char) and new (single-char) placeholder formats.
+      // Support both old (multi-char) and new (single-char) placeholder formats,
+      // as well as diamond placeholders (U+25C6) used by the preprocessing script.
       node.value = node.value
         .replace(/\u29C3LB\u29C4/g, '{')
         .replace(/\u29C3RB\u29C4/g, '}')
         .replace(/\uE000/g, '{')
-        .replace(/\uE001/g, '}');
+        .replace(/\uE001/g, '}')
+        .replace(/\u25C6LB\u25C6/g, '{')
+        .replace(/\u25C6RB\u25C6/g, '}');
     });
   };
 };

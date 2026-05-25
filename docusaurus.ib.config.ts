@@ -27,6 +27,10 @@ const config = {
     socialCard: '/img/social-cards/ib.png',
   }),
 
+  // IB cross-subject links use directory paths that don't match Docusaurus slugs
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
   plugins: [
     ...sharedPlugins('wyattsnotes-ib'),
     [
