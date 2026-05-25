@@ -224,10 +224,10 @@ Examination session and vary from session to session depending on the difficulty
 - [Simple Harmonic Motion](waves/simple_harmonic_motion.md)
 - [Waves Wrap Up](waves/wrap-up.md)
 - **Theme D: Fields**
-- [Electric and Magnetic Fields](fields/electric-and-magnetic-fields.md)
-- [Gravitational Fields](fields/gravitational-fields.md)
-- [Electromagnetic Induction](fields/Induction.md)
-- [Motion in Electromagnetic Fields](fields/motion-in-electromagnetic-fields.md)
+- [Electric and Magnetic Fields](4-fields/electric-and-magnetic-fields.md)
+- [Gravitational Fields](4-fields/gravitational-fields.md)
+- [Electromagnetic Induction](4-fields/Induction.md)
+- [Motion in Electromagnetic Fields](4-fields/motion-in-electromagnetic-fields.md)
 - **Theme E: Nuclear and Quantum Physics**
 - [Nuclear and Quantum Wrap Up](nuclear-and-quantum/wrap-up.md)
 

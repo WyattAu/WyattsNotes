@@ -373,11 +373,11 @@ Manipulation.
   sequences, sigma notation, binomial theorem
 - [Complex Numbers](Number-and-algebra/Complex.md) -- complex numbers in Cartesian, polar, and Euler
   form; De Moivre's theorem; roots of polynomials
-- [Trigonometry](geometry-and-trigonometry/trigonometry.md) -- trigonometric functions, identities,
+- [Trigonometry](3-geometry-and-trigonometry/trigonometry.md) -- trigonometric functions, identities,
   sine and cosine rules
-- [Vectors](geometry-and-trigonometry/vectors.md) -- vector operations, scalar and cross products,
+- [Vectors](3-geometry-and-trigonometry/vectors.md) -- vector operations, scalar and cross products,
   lines and planes
-- [Integration](calculus/integration-depth) -- antiderivatives, definite integration, area,
+- [Integration](5-calculus/integration-depth) -- antiderivatives, definite integration, area,
   integration techniques
 - [Logic (Discrete Maths)](Discrete-maths/logic.md) -- propositional logic, truth tables, proof
 - [Maths Index](maths.md) -- overview of all mathematics notes

@@ -159,8 +159,8 @@ Identities, and an introduction to vector geometry.
   dimensions, and further trigonometric identities. HL students also study the reciprocal
   trigonometric functions and the inverse trigonometric functions in greater depth.
 
-> See [Vectors notes](geometry-and-trigonometry/vectors.md) and
-> [Trigonometry notes](geometry-and-trigonometry/trigonometry.md).
+> See [Vectors notes](3-geometry-and-trigonometry/vectors.md) and
+> [Trigonometry notes](3-geometry-and-trigonometry/trigonometry.md).
 
 ### Worked Example: Sine and Cosine Rules (SL)
 
@@ -284,7 +284,7 @@ Heavily weighted topic in the examination and forms the basis for much of the HL
   Euler's method), Maclaurin series, and Taylor series. HL students also study kinematics using
   calculus in greater depth.
 
-> See [Integration notes](calculus/integration-depth).
+> See [Integration notes](5-calculus/integration-depth).
 
 ### Worked Example: Differentiation -- Chain Rule (SL)
 

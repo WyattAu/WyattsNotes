@@ -297,7 +297,7 @@ Work.
 
 - [Computer Organization](computers/computer-organizations.md) -- processor architecture, memory,
   and instruction cycle
-- [Networks](networks/networks.md) -- network models, protocols, and data transmission
+- [Networks](3-networks/networks.md) -- network models, protocols, and data transmission
 - [System Design](systems/system-design.md) -- system planning, stakeholder analysis, and design
   methodologies
 - [System in Organization](systems/systemIn-organization.md) -- systems in context, integration, and
