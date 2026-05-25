@@ -2231,11 +2231,11 @@ from trade are possible. Trade requires differing opportunity costs.
 A country imports 1,000 units at a world price of $10. A $2 tariff reduces imports to 800 units and
 raises the domestic price to $12.
 
-- Government revenue: $2 \times 800 = \$1{,}600$
+- Government revenue: $2 \times 800 = \$1,600$
 - Consumer surplus loss: area of trapezoid
-  $= \frac{1}{2} \times (1{,}000 + 800) \times 2 = \$1{,}800$
+  $= \frac{1}{2} \times (1,000 + 800) \times 2 = \$1,800$
 - Producer surplus gain: area of triangle above supply curve $= \$150$
-- Deadweight loss: $\$1{,}800 - \$1{,}600 - \$150 = \$50$ (consumption distortion + production
+- Deadweight loss: $\$1,800 - \$1,600 - \$150 = \$50$ (consumption distortion + production
   distortion)
 
 ### Example 3: Trade Creation vs Trade Diversion

@@ -122,9 +122,9 @@ units.
 $$\text{PED} = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\frac{400-500}{500} \times 100}{\frac{12-10}{10} \times 100} = \frac{-20\%}{+20\%} = -1.0$$
 
 Demand is unit elastic ($|\text{PED}| = 1$). Total revenue remains unchanged:
-$10 \times 500 = \$5{,}000$ and $12 \times 400 = \$4{,}800$.
+$10 \times 500 = \$5,000$ and $12 \times 400 = \$4,800$.
 
-Wait — actually $\$5{,}000 \neq \$4{,}800$, which means the PED calculated using the initial-point
+Wait — actually $\$5,000 \neq \$4,800$, which means the PED calculated using the initial-point
 method gives $-1.0$ but the revenue changed. Using the midpoint method:
 
 $$\text{PED} = \frac{\frac{400-500}{(400+500)/2}}{\frac{12-10}{(12+10)/2}} = \frac{-100/450}{2/11} = \frac{-0.222}{0.182} \approx -1.22$$
@@ -133,7 +133,7 @@ Demand is price elastic, consistent with the fall in total revenue.
 
 ### Example 2: Income Elasticity
 
-When income rises from $30{,}000 to $35{,}000, a household's purchases of fresh vegetables increase
+When income rises from $30,000 to $35,000, a household's purchases of fresh vegetables increase
 from 200 to 230 kg/year, and purchases of instant noodles fall from 150 to 120 packets/year.
 
 $$\text{YED}_{\text{vegetables}} = \frac{\frac{30}{200}}{\frac{5000}{30000}} = \frac{0.15}{0.167} \approx 0.90$$

@@ -602,11 +602,11 @@ $$5X + 2(2.5X) = 100 \implies 10X = 100 \implies X^* = 10, \quad Y^* = 25$$
 
 ### Example 1: Shift in Demand
 
-The market for electric vehicles (EVs) is initially in equilibrium at price $40{,}000 and quantity
-100{,}000. A government subsidy for EV purchases shifts demand rightward. The new equilibrium is
-$45{,}000 and 150{,}000 units.
+The market for electric vehicles (EVs) is initially in equilibrium at price $40,000 and quantity
+100,000. A government subsidy for EV purchases shifts demand rightward. The new equilibrium is
+$45,000 and 150,000 units.
 
-- The increase in equilibrium price ($+\$5{,}000$) and quantity ($+50{,}000$) is consistent with a
+- The increase in equilibrium price ($+\$5,000$) and quantity ($+50,000$) is consistent with a
   rightward demand shift
 - Consumer surplus increases if the demand shift is driven by a change in tastes/preferences, but
   the effect depends on the magnitude of the shift relative to the price increase

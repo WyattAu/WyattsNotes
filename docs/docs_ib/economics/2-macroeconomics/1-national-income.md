@@ -396,17 +396,17 @@ Significantly.
 Country X has the following data (in $ billions): $C = 800$, $I = 200$, $G = 300$, $X = 150$,
 $M = 180$.
 
-$$GDP = C + I + G + (X - M) = 800 + 200 + 300 + (150 - 180) = 1{,}270$$
+$$GDP = C + I + G + (X - M) = 800 + 200 + 300 + (150 - 180) = 1,270$$
 
 Net exports are negative ($-30$), indicating a trade deficit.
 
 ### Example 2: Real GDP and the GDP Deflator
 
-Nominal GDP in 2024 is $2{,}000$ billion. The GDP deflator is 125 (base year = 2020).
+Nominal GDP in 2024 is $2,000$ billion. The GDP deflator is 125 (base year = 2020).
 
-$$\text{Real GDP} = \frac{2{,}000}{125} \times 100 = 1{,}600 \text{ billion}$$
+$$\text{Real GDP} = \frac{2,000}{125} \times 100 = 1,600 \text{ billion}$$
 
-Real GDP ($1{,}600$ billion) is lower than nominal GDP ($2{,}000$ billion), indicating that prices
+Real GDP ($1,600$ billion) is lower than nominal GDP ($2,000$ billion), indicating that prices
 have risen by 25% since the base year.
 
 ## Summary

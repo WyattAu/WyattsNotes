@@ -653,10 +653,10 @@ the externality.
 
 ### Example 2: Public Good Provision
 
-A lighthouse costs $1{,}000{,}000$ to build and provides $50$ of benefit to each of $30{,}000$ ships
-per year ($1{,}500{,}000$ total benefit). No private firm will build it because ships cannot be
+A lighthouse costs $1,000,000$ to build and provides $50$ of benefit to each of $30,000$ ships
+per year ($1,500,000$ total benefit). No private firm will build it because ships cannot be
 excluded from using the light (non-excludable). Government provision is necessary because total
-benefit ($1{,}500{,}000$) exceeds cost ($1{,}000{,}000$).
+benefit ($1,500,000$) exceeds cost ($1,000,000$).
 
 ## Summary
 

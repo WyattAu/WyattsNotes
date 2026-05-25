@@ -663,7 +663,7 @@ Since $f(x) = \dfrac{3x^2}{8}$ is increasing on $[0, 2]$The mode is $x = 2$.
 | ----------------------- | ----------------------------------------- |
 | Addition rule           | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
 | Conditional probability | $P(A\|B) = \dfrac{P(A \cap B)}{P(B)}$     |
-| Bayes' theorem          | $P(A\|B) = \dfrac{P(B\|                   |
+| Bayes' theorem          | $P(A\|B) = \dfrac{P(B\|A) \cdot P(A)}{P(B)}$ |
 | Standardisation         | $Z = \dfrac{X - \mu}{\sigma}$             |
 
 :::tip[Exam Strategy]
