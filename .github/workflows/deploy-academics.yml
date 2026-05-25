@@ -38,6 +38,8 @@ jobs:
           </body>
           </html>
           HTMLEOF
+          # Cloudflare Pages _redirects for 301 (SEO-friendly)
+          echo "/* https://ib.wyattau.com/:splat 301" > build/_redirects
 
       - uses: actions/setup-node@v6
         with:

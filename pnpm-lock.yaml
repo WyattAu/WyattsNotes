@@ -187,6 +187,9 @@ importers:
       prettier-plugin-organize-imports:
         specifier: ^4.1.0
         version: 4.3.0(prettier@3.6.2)(typescript@5.9.3)
+      speed-measure-webpack-plugin:
+        specifier: ^1.6.0
+        version: 1.6.0(webpack@5.106.2)
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.14
@@ -8029,6 +8032,12 @@ packages:
   spdy@4.0.2:
     resolution: {integrity: sha512-r46gZQZQV+Kl9oItvl1JZZqJKGr+oEkB08A6BzkiR7593/7IbtuncXHd2YoYeTsG4157ZssMu9KYvUHLcjcDoA==}
     engines: {node: '>=6.0.0'}
+
+  speed-measure-webpack-plugin@1.6.0:
+    resolution: {integrity: sha512-hz09hUQeP74zHZOLtSJwpVsuLy8EWxuyGiMVZ2tuvIQcMlL5mGrmbe8RKvrVV5geRkxms9JusQuIBt0UnB0XFw==}
+    engines: {node: '>=6.0.0'}
+    peerDependencies:
+      webpack: ^1 || ^2 || ^3 || ^4 || ^5
 
   speedline-core@1.4.3:
     resolution: {integrity: sha512-DI7/OuAUD+GMpR6dmu8lliO2Wg5zfeh+/xsdyJZCzd8o5JgFUjCeLsBDuZjIQJdwXS3J0L/uZYrELKYqx+PXog==}
@@ -19191,6 +19200,11 @@ snapshots:
       spdy-transport: 3.0.0
     transitivePeerDependencies:
       - supports-color
+
+  speed-measure-webpack-plugin@1.6.0(webpack@5.106.2):
+    dependencies:
+      chalk: 4.1.2
+      webpack: 5.106.2
 
   speedline-core@1.4.3:
     dependencies:
