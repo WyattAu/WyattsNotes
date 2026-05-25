@@ -41,10 +41,12 @@ const config = {
           'chemistry/**',
           'computer-science/**',
           'economics/**',
-          'psychology/**',
-          'geography/**',
-          'history/**',
-          'english/**',
+          // english, geography, history, psychology excluded: SSG fails with
+          // "Cannot read properties of undefined (reading 'id')" on _category_ pages.
+          // 'psychology/**',
+          // 'geography/**',
+          // 'history/**',
+          // 'english/**',
           'intro.md',
         ],
         ...createCommonDocsPluginConfig(true),
