@@ -177,9 +177,9 @@ first-order partial derivatives:
 
 $$
 \mathbf{{'}J{}'}_T(x) = \begin{pmatrix}
-\frac{\partial T_1}{\partial x_1}(x) & \cdots & \frac{\partial T_1}{\partial x_d}(x) \\
+\frac◆LB◆\partial T_1◆RB◆◆LB◆\partial x_1◆RB◆(x) & \cdots & \frac◆LB◆\partial T_1◆RB◆◆LB◆\partial x_d◆RB◆(x) \\
 \vdots & \ddots & \vdots \\
-\frac{\partial T_d}{\partial x_1}(x) & \cdots & \frac{\partial T_d}{\partial x_d}(x)
+\frac◆LB◆\partial T_d◆RB◆◆LB◆\partial x_1◆RB◆(x) & \cdots & \frac◆LB◆\partial T_d◆RB◆◆LB◆\partial x_d◆RB◆(x)
 \end{pmatrix}
 $$
 
@@ -383,7 +383,7 @@ $$
 \nu(A) = \int_A f d\mu
 $$
 
-The function $f$ is called the Radon-Nikodym derivative and is denoted $f = \frac{d\nu}{d\mu}$.
+The function $f$ is called the Radon-Nikodym derivative and is denoted $f = \frac◆LB◆d\nu◆RB◆◆LB◆d\mu◆RB◆$.
 
 ### Dirac Measure
 
@@ -404,7 +404,7 @@ Let $(S, \mathcal{{'}F{}'})$ be a measurable space and $x_1, \dots, x_n \in S$ b
 observations. The empirical measure $\hat{P}_n$ is defined as:
 
 $$
-\hat{P}_n(A) = \frac{1}{n} \sum_{i=1}^n \delta_{x_i}(A) = \frac{ | \{i : x_i \in A\} | }{n}, \quad \forall A \in \mathcal{{'}F{}'}
+\hat{P}_n(A) = \frac{1}{n} \sum_{i=1}^n \delta_{x_i}(A) = \frac◆LB◆ | \{i : x_i \in A\} | ◆RB◆◆LB◆n◆RB◆, \quad \forall A \in \mathcal{{'}F{}'}
 $$
 
 Where $| \cdot |$ denotes the **cardinality** (number of elements) of the set, not absolute value.
@@ -533,7 +533,7 @@ For events $A, B \in \mathcal{{'}F{}'}, P(B) > 0$The conditional probability of 
 defined as the normalized measure of the intersection:
 
 $$
-P(A|B) \triangleq \frac{P(A\cap B)}{P(B)}, \quad P(B) \in (0, 1]
+P(A|B) \triangleq \frac◆LB◆P(A\cap B)◆RB◆◆LB◆P(B)◆RB◆, \quad P(B) \in (0, 1]
 $$
 
 ### Mutual Independence
@@ -619,7 +619,7 @@ $$
 ### Probability Density Function
 
 If $P_X \ll \lambda$The probability density function would be the Radon-Nikodym derivative
-$f=\frac{d P_X}{d \lambda}$Satisfying:
+$f=\frac◆LB◆d P_X◆RB◆◆LB◆d \lambda◆RB◆$Satisfying:
 
 $$
 \begin{equation}
@@ -874,7 +874,7 @@ $$
 Let $X$ be a non-negative random variable and $a > 0$. Then:
 
 $$
-P(X \geq a) \leq \frac{\mathbb{{'}E{}'}[X]}{a}
+P(X \geq a) \leq \frac◆LB◆\mathbb{{'}E{}'}[X]◆RB◆◆LB◆a◆RB◆
 $$
 
 ### Chebyshev's Inequality
@@ -906,7 +906,7 @@ _Note:_ Every normed space induces a metric $d(x,y) = \lVert x - y \rVert$.
 On $\mathbb{{'}R{}'}^d$The **Euclidean norm** (or $\ell^2$-norm) is defined as:
 
 $$
-\lVert x \rVert_2 = \sqrt{\sum_{i=1}^d x_i^2} = \sqrt{\langle x, x \rangle}
+\lVert x \rVert_2 = \sqrt◆LB◆\sum_{i=1}^d x_i^2◆RB◆ = \sqrt◆LB◆\langle x, x \rangle◆RB◆
 $$
 
 Where $\langle \cdot, \cdot \rangle$ denotes the standard dot product. The Euclidean norm is the
@@ -952,7 +952,7 @@ $\langle \cdot, \cdot \rangle: V \times V \to \mathbb{{'}K{}'}$ satisfying:
 By conjugate symmetry, the inner product is **conjugate linear** (anti-linear) in the second
 argument for complex spaces: $\langle x, ay \rangle = \bar{a}\langle x, y \rangle$.
 
-The inner product induces a norm: $\lVert x \rVert = \sqrt{\langle x, x \rangle}$.
+The inner product induces a norm: $\lVert x \rVert = \sqrt◆LB◆\langle x, x \rangle◆RB◆$.
 
 ### Hilbert Space
 
@@ -1235,7 +1235,7 @@ $a_i \leq X_i \leq b_i$. Then for any $t > 0$:
 $$
 
 P\left( \left| \frac{1}{n}\sum*{i=1}^n X_i - \mathbb{{'}E{}'}\left[\frac{1}{n}\sum*{i=1}^n
-X\*i\right] \right| \geq t \right) \leq 2\exp\left(-\frac{2n^2t^2}{\sum_{i=1}^n(b_i - a_i)^2}\right)
+X\*i\right] \right| \geq t \right) \leq 2\exp\left(-\frac◆LB◆2n^2t^2◆RB◆◆LB◆\sum_{i=1}^n(b_i - a_i)^2◆RB◆\right)
 
 $$
 
@@ -1260,7 +1260,7 @@ Then for any $t > 0$:
 $$
 
 P(|f(X\*1, \dots, X*n) - \mathbb{{'}E{}'}[f(X_1, \dots, X_n)]| \geq t) \leq
-2\exp\left(-\frac{2t^2}{\sum*{i=1}^n c_i^2}\right)
+2\exp\left(-\frac◆LB◆2t^2◆RB◆◆LB◆\sum*{i=1}^n c_i^2◆RB◆\right)
 
 $$
 
@@ -1524,7 +1524,7 @@ Fréchet variance. Given the Regular Conditional Distribution $\kappa(\omega, \c
 
 $$
 
-\mu_{\mathcal{{'}G{}'}}(\omega) = \underset{y \in S}{\arg\min} \int_S d^2(y, s) \, \kappa(\omega,
+\mu_{\mathcal{{'}G{}'}}(\omega) = \underset◆LB◆y \in S◆RB◆◆LB◆\arg\min◆RB◆ \int_S d^2(y, s) \, \kappa(\omega,
 ds)
 
 $$
@@ -1596,14 +1596,14 @@ $\forall \theta \in \Theta, P_\theta \ll \lambda$.
 ### Likelihood Function
 
 Given a dominated model with reference measure $\lambda$The density
-$f_\theta = \frac{dP_\theta}{d\lambda}$ exists. For a fixed observation $s \in S$The likelihood
+$f_\theta = \frac◆LB◆dP_\theta◆RB◆◆LB◆d\lambda◆RB◆$ exists. For a fixed observation $s \in S$The likelihood
 function $L_s: \Theta \rightarrow [0, \infty)$ is defined by:
 
 
 $$
 
 \begin{equation} L*s(\theta) = f*\theta(s), \quad \mathrm{where {} f*\theta =
-\frac{dP*\theta}{d\lambda} \end{equation}
+\frac◆LB◆dP*\theta◆RB◆◆LB◆d\lambda◆RB◆ \end{equation}
 
 $$
 
@@ -1617,8 +1617,8 @@ derivative:
 
 $$
 
-\frac{d\Pi(\cdot | x)}{d\Pi}(\theta) = \frac{p(x | \theta)}{\int\_\Theta p(x | \theta') \,
-d\Pi(\theta')}
+\frac◆LB◆d\Pi(\cdot | x)◆RB◆◆LB◆d\Pi◆RB◆(\theta) = \frac◆LB◆p(x | \theta)◆RB◆◆LB◆\int\_\Theta p(x | \theta') \,
+d\Pi(\theta')◆RB◆
 
 $$
 
@@ -1627,11 +1627,11 @@ Equivalently, in measure notation:
 
 $$
 
-\Pi(d\theta | x) = \frac{p(x | \theta)}{\int\_\Theta p(x | \theta') \, \Pi(d\theta')} \Pi(d\theta)
+\Pi(d\theta | x) = \frac◆LB◆p(x | \theta)◆RB◆◆LB◆\int\_\Theta p(x | \theta') \, \Pi(d\theta')◆RB◆ \Pi(d\theta)
 
 $$
 
-Where $p(x | \theta) = \frac{dP_\theta}{d\lambda}(x)$ is the likelihood density with respect to a
+Where $p(x | \theta) = \frac◆LB◆dP_\theta◆RB◆◆LB◆d\lambda◆RB◆(x)$ is the likelihood density with respect to a
 reference measure $\lambda$.
 
 _Requirements:_ The denominator (marginal likelihood / evidence) must be finite and non-zero for the
@@ -1713,8 +1713,8 @@ $\mathcal{{'}I{}'}(\theta)$ is:
 
 $$
 
-\mathcal{{'}I{}'}(\theta)*{ij} = \mathbb{{'}E{}'}*{x \sim P\_\theta} \left[ \frac{\partial}{\partial
-\theta_i} \log f(x; \theta) \cdot \frac{\partial}{\partial \theta_j} \log f(x; \theta) \right]
+\mathcal{{'}I{}'}(\theta)*{ij} = \mathbb{{'}E{}'}*{x \sim P\_\theta} \left[ \frac◆LB◆\partial◆RB◆◆LB◆\partial
+\theta_i◆RB◆ \log f(x; \theta) \cdot \frac◆LB◆\partial◆RB◆◆LB◆\partial \theta_j◆RB◆ \log f(x; \theta) \right]
 
 $$
 
@@ -1936,7 +1936,7 @@ _Relevance:_ Foundation of Score-Based Generative Modeling and denoising score m
 Pinsker's Inequality bounds the Total Variation distance using KL divergence:
 
 $$
-\delta(P, Q) \leq \sqrt{\frac{1}{2} D_{KL}(P \| Q)}
+\delta(P, Q) \leq \sqrt◆LB◆\frac{1}{2} D_{KL}(P \| Q)◆RB◆
 $$
 
 Where $\delta(P, Q)$ is the Total Variation distance and $D_{KL}(P \| Q)$ is the KL divergence.
@@ -1975,7 +1975,7 @@ Where $W_t$ is a Wiener process and $\nabla_x \log p(x)$ is the Stein score.
 _Discretization (Unadjusted Langevin Algorithm):_
 
 $$
-X_{t+1} = x_t + \eta \nabla_x \log p(x_t) + \sqrt{2\eta} \, \epsilon_t, \quad \epsilon_t \sim \mathcal{{'}N{}'}(0, I)
+X_{t+1} = x_t + \eta \nabla_x \log p(x_t) + \sqrt◆LB◆2\eta◆RB◆ \, \epsilon_t, \quad \epsilon_t \sim \mathcal{{'}N{}'}(0, I)
 $$
 
 _Relevance:_ Under appropriate conditions, the stationary distribution of Langevin Dynamics is
