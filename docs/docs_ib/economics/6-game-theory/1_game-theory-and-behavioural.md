@@ -1,6 +1,6 @@
 ---
 title: Game Theory and Behavioural Economics
-description: 'IB Economics — game theory, Nash equilibrium, prisoner's dilemma, behavioural economics, heuristics, biases, nudge theory, auctions.'
+description: "IB Economics — game theory, Nash equilibrium, prisoner's dilemma, behavioural economics, heuristics, biases, nudge theory, auctions."
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]
