@@ -40,7 +40,7 @@ const config = {
         include: ['intro.md'],
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
-        ...createCommonDocsPluginConfig(),
+        ...createCommonDocsPluginConfig(true),
       },
     ],
     [
@@ -52,7 +52,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
         editUrl:
           'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/mathematics/{dir}',
-        ...createCommonDocsPluginConfig(),
+        ...createCommonDocsPluginConfig(true),
       },
     ],
     [
@@ -64,7 +64,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
         editUrl:
           'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/physics/{dir}',
-        ...createCommonDocsPluginConfig(),
+        ...createCommonDocsPluginConfig(true),
       },
     ],
     [
@@ -76,7 +76,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
         editUrl:
           'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/computing/{dir}',
-        ...createCommonDocsPluginConfig(),
+        ...createCommonDocsPluginConfig(true),
       },
     ],
     [
@@ -88,7 +88,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
         editUrl:
           'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/admissions/{dir}',
-        ...createCommonDocsPluginConfig(),
+        ...createCommonDocsPluginConfig(true),
       },
     ],
   ],

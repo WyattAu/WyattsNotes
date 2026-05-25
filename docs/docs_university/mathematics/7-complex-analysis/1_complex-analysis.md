@@ -16,38 +16,38 @@ slug: complex-analysis
 
 ### 1.1 Definition and Arithmetic
 
-A **complex number** is $z = a + bi$ where $a, b \in \mathbb{R}$ and $i^2 = -1$. We call
-$a = \mathrm{Re(z)$ the real part and $b = \mathrm{Im(z)$ the imaginary part.
+A **complex number** is $z = a + bi$ where $a, b \in \mathbb◆LB◆R◆RB◆$ and $i^2 = -1$. We call
+$a = \mathrm◆LB◆Re(z)$ the real part and $b = \mathrm◆LB◆Im(z)$ the imaginary part.
 
 **Arithmetic:** $(a + bi) + (c + di) = (a + c) + (b + d)i$ and
 $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$.
 
-**Proposition 1.1 (Properties of Complex Arithmetic).** For all $z, w \in \mathbb{C}$:
+**Proposition 1.1 (Properties of Complex Arithmetic).** For all $z, w \in \mathbb◆LB◆C◆RB◆$:
 
 1. $z + w = w + z$ and $zw = wz$ (commutativity)
 2. $(z + w) + u = z + (w + u)$ and $(zw)u = z(wu)$ (associativity)
 3. $z(w + u) = zw + zu$ (distributivity)
 4. There exist additive identity $0$ and multiplicative identity $1$.
-5. Every $z \neq 0$ has a multiplicative inverse $\frac{1}{z} = \frac{\bar{z}}{|z|^2}$.
+5. Every $z \neq 0$ has a multiplicative inverse $\frac◆LB◆1◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆\bar◆LB◆z◆RB◆◆RB◆◆LB◆|z|^2◆RB◆$.
 
-_Remark._ The complex field $\mathbb{C}$ cannot be ordered: there is no total ordering on
-$\mathbb{C}$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any such
+_Remark._ The complex field $\mathbb◆LB◆C◆RB◆$ cannot be ordered: there is no total ordering on
+$\mathbb◆LB◆C◆RB◆$ Compatible with the field operations. In particular, $i^2 = -1$ precludes any such
 ordering.
 
 ### 1.2 The Complex Conjugate and Modulus
 
-**Definition.** The **complex conjugate** of $z = a + bi$ is $\bar{z} = a - bi$.
+**Definition.** The **complex conjugate** of $z = a + bi$ is $\bar◆LB◆z◆RB◆ = a - bi$.
 
-**Proposition 1.2.** For all $z, w \in \mathbb{C}$:
+**Proposition 1.2.** For all $z, w \in \mathbb◆LB◆C◆RB◆$:
 
-1. $\overline{z + w} = \bar{z} + \bar{w}$ and $\overline{zw} = \bar{z}\bar{w}$
-2. $z\bar{z} = |z|^2$
-3. $z + \bar{z} = 2\,\mathrm{Re(z)$ and $z - \bar{z} = 2i\,\mathrm{Im(z)$
-4. $\bar{\bar{z}} = z$
+1. $\overline◆LB◆z + w◆RB◆ = \bar◆LB◆z◆RB◆ + \bar◆LB◆w◆RB◆$ and $\overline◆LB◆zw◆RB◆ = \bar◆LB◆z◆RB◆\bar◆LB◆w◆RB◆$
+2. $z\bar◆LB◆z◆RB◆ = |z|^2$
+3. $z + \bar◆LB◆z◆RB◆ = 2\,\mathrm◆LB◆Re(z)$ and $z - \bar◆LB◆z◆RB◆ = 2i\,\mathrm◆LB◆Im(z)$
+4. $\bar◆LB◆\bar◆LB◆z◆RB◆◆RB◆ = z$
 
-**Definition.** The **modulus** (or absolute value) of $z = a + bi$ is $|z| = \sqrt{a^2 + b^2}$.
+**Definition.** The **modulus** (or absolute value) of $z = a + bi$ is $|z| = \sqrt◆LB◆a^2 + b^2◆RB◆$.
 
-**Proposition 1.3 (Modulus Properties).** For all $z, w \in \mathbb{C}$:
+**Proposition 1.3 (Modulus Properties).** For all $z, w \in \mathbb◆LB◆C◆RB◆$:
 
 1. $|z| \geq 0$ with equality iff $z = 0$
 2. $|zw| = |z||w|$
@@ -55,83 +55,83 @@ ordering.
 4. $\bigl||z| - |w|\bigr| \leq |z - w|$ (reverse triangle inequality)
 
 _Proof of (3)._
-$|z + w|^2 = (z + w)(\bar{z} + \bar{w}) = |z|^2 + z\bar{w} + \bar{z}w + |w|^2
-= |z|^2 + 2\,\mathrm{Re(z\bar{w}) + |w|^2 \leq |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2$.
-The inequality follows from $\mathrm{Re(z\bar{w}) \leq |z\bar{w}| = |z||w|$. $\blacksquare$
+$|z + w|^2 = (z + w)(\bar◆LB◆z◆RB◆ + \bar◆LB◆w◆RB◆) = |z|^2 + z\bar◆LB◆w◆RB◆ + \bar◆LB◆z◆RB◆w + |w|^2
+= |z|^2 + 2\,\mathrm◆LB◆Re(z\bar◆LB◆w◆RB◆) + |w|^2 \leq |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2$.
+The inequality follows from $\mathrm◆LB◆Re(z\bar◆LB◆w◆RB◆) \leq |z\bar◆LB◆w◆RB◆| = |z||w|$. $\blacksquare$
 
 ### 1.3 Polar Form
 
 Every non-zero complex number can be written in **polar form**:
 
-$$z = r(\cos\theta + i\sin\theta) = re^{i\theta}$$
+$$z = r(\cos\theta + i\sin\theta) = re^◆LB◆i\theta◆RB◆$$
 
-Where $r = |z| = \sqrt{a^2 + b^2}$ is the **modulus** and $\theta = \arg(z)$ is the **argument**.
+Where $r = |z| = \sqrt◆LB◆a^2 + b^2◆RB◆$ is the **modulus** and $\theta = \arg(z)$ is the **argument**.
 
-**Definition.** The **principal argument** $\mathrm{Arg(z)$ is the unique $\theta \in (-\pi, \pi]$
-Such that $z = |z|e^{i\theta}$. The **argument** $\arg(z)$ is multi-valued:
-$\arg(z) = \mathrm{Arg(z) + 2\pi k$ for $k \in \mathbb{Z}$.
+**Definition.** The **principal argument** $\mathrm◆LB◆Arg(z)$ is the unique $\theta \in (-\pi, \pi]$
+Such that $z = |z|e^◆LB◆i\theta◆RB◆$. The **argument** $\arg(z)$ is multi-valued:
+$\arg(z) = \mathrm◆LB◆Arg(z) + 2\pi k$ for $k \in \mathbb◆LB◆Z◆RB◆$.
 
-**Proposition 1.4.** If $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$Then
-$z_1 z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$ and
-$z_1/z_2 = (r_1/r_2)\, e^{i(\theta_1 - \theta_2)}$.
+**Proposition 1.4.** If $z_1 = r_1 e^◆LB◆i\theta_1◆RB◆$ and $z_2 = r_2 e^◆LB◆i\theta_2◆RB◆$Then
+$z_1 z_2 = r_1 r_2 e^◆LB◆i(\theta_1 + \theta_2)◆RB◆$ and
+$z_1/z_2 = (r_1/r_2)\, e^◆LB◆i(\theta_1 - \theta_2)◆RB◆$.
 
 #### Worked Examples: Polar Form Conversions
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Convert $z = -1 + \sqrt{3}\,i$ to polar form and find all arguments.
+**Problem.** Convert $z = -1 + \sqrt◆LB◆3◆RB◆\,i$ to polar form and find all arguments.
 
-$|z| = \sqrt{(-1)^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
+$|z| = \sqrt◆LB◆(-1)^2 + (\sqrt◆LB◆3◆RB◆)^2◆RB◆ = \sqrt◆LB◆1 + 3◆RB◆ = 2$.
 
-$\mathrm{Re(z) = -1 \lt 0$ and $\mathrm{Im(z) = \sqrt{3} \gt 0$So $z$ is in the second quadrant.
+$\mathrm◆LB◆Re(z) = -1 \lt 0$ and $\mathrm◆LB◆Im(z) = \sqrt◆LB◆3◆RB◆ \gt 0$So $z$ is in the second quadrant.
 
-$\theta = \arctan\!\left(\frac{\sqrt{3}}{-1}\right) = \frac{2\pi}{3}$ (adjusting to second
+$\theta = \arctan\!\left(\frac◆LB◆\sqrt◆LB◆3◆RB◆◆RB◆◆LB◆-1◆RB◆\right) = \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆$ (adjusting to second
 quadrant).
 
-Polar form: $z = 2\,e^{2\pi i/3}$.
+Polar form: $z = 2\,e^◆LB◆2\pi i/3◆RB◆$.
 
-All arguments: $\arg(z) = \frac{2\pi}{3} + 2\pi k$ for $k \in \mathbb{Z}$.
+All arguments: $\arg(z) = \frac◆LB◆2\pi◆RB◆◆LB◆3◆RB◆ + 2\pi k$ for $k \in \mathbb◆LB◆Z◆RB◆$.
 
-**Problem.** Convert $z = 3e^{-i\pi/4}$ to rectangular form.
+**Problem.** Convert $z = 3e^◆LB◆-i\pi/4◆RB◆$ to rectangular form.
 
-$z = 3\left(\cos\!\left(-\frac{\pi}{4}\right) + i\sin\!\left(-\frac{\pi}{4}\right)\right)
-= 3\left(\frac{\sqrt{2}}{2} - i\,\frac{\sqrt{2}}{2}\right) = \frac{3\sqrt{2}}{2} - \frac{3\sqrt{2}}{2}\,i$.
+$z = 3\left(\cos\!\left(-\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) + i\sin\!\left(-\frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right)\right)
+= 3\left(\frac◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆◆LB◆2◆RB◆ - i\,\frac◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆◆LB◆2◆RB◆\right) = \frac◆LB◆3\sqrt◆LB◆2◆RB◆◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆3\sqrt◆LB◆2◆RB◆◆RB◆◆LB◆2◆RB◆\,i$.
 
 **Problem.** Express $z = -3 - 4i$ in polar form.
 
-$|z| = \sqrt{9 + 16} = 5$.
+$|z| = \sqrt◆LB◆9 + 16◆RB◆ = 5$.
 
 Both real and imaginary parts are negative, so $z$ is in the third quadrant.
 
 $\theta = \arctan(4/3) + \pi = \pi + \arctan(4/3)$.
 
-$z = 5\,e^{i(\pi + \arctan(4/3))}$.
+$z = 5\,e^◆LB◆i(\pi + \arctan(4/3))◆RB◆$.
 
 </details>
 
 ### 1.4 Euler's Formula and De Moivre's Theorem
 
-**Euler's formula:** $e^{i\theta} = \cos\theta + i\sin\theta$.
+**Euler's formula:** $e^◆LB◆i\theta◆RB◆ = \cos\theta + i\sin\theta$.
 
-**De Moivre's theorem:** $(e^{i\theta})^n = e^{in\theta}$So
+**De Moivre's theorem:** $(e^◆LB◆i\theta◆RB◆)^n = e^◆LB◆in\theta◆RB◆$So
 
 $$(\cos\theta + i\sin\theta)^n = \cos(n\theta) + i\sin(n\theta)$$
 
 **Proposition 1.5.** De Moivre's theorem holds for all integers $n$Including negative values.
 
 _Proof._ For $n \geq 0$It follows by induction from the multiplication law
-$e^{i\alpha}e^{i\beta} = e^{i(\alpha + \beta)}$. For $n \lt 0$Write $n = -m$ with $m \gt 0$:
-$(\cos\theta + i\sin\theta)^n = \frac{1}{(\cos\theta + i\sin\theta)^m}
-= \frac{1}{\cos(m\theta) + i\sin(m\theta)} = \cos(-m\theta) + i\sin(-m\theta) = \cos(n\theta) + i\sin(n\theta)$.
+$e^◆LB◆i\alpha◆RB◆e^◆LB◆i\beta◆RB◆ = e^◆LB◆i(\alpha + \beta)◆RB◆$. For $n \lt 0$Write $n = -m$ with $m \gt 0$:
+$(\cos\theta + i\sin\theta)^n = \frac◆LB◆1◆RB◆◆LB◆(\cos\theta + i\sin\theta)^m◆RB◆
+= \frac◆LB◆1◆RB◆◆LB◆\cos(m\theta) + i\sin(m\theta)◆RB◆ = \cos(-m\theta) + i\sin(-m\theta) = \cos(n\theta) + i\sin(n\theta)$.
 $\blacksquare$
 
 #### Applications of De Moivre's Theorem
 
-**Example.** Compute $(1 + i)^{20}$.
+**Example.** Compute $(1 + i)^◆LB◆20◆RB◆$.
 
-$1 + i = \sqrt{2}\,e^{i\pi/4}$So
-$(1 + i)^{20} = (\sqrt{2})^{20}\, e^{20\pi i/4} = 2^{10}\, e^{5\pi i} = 1024\,e^{\pi i} = -1024$.
+$1 + i = \sqrt◆LB◆2◆RB◆\,e^◆LB◆i\pi/4◆RB◆$So
+$(1 + i)^◆LB◆20◆RB◆ = (\sqrt◆LB◆2◆RB◆)^◆LB◆20◆RB◆\, e^◆LB◆20\pi i/4◆RB◆ = 2^◆LB◆10◆RB◆\, e^◆LB◆5\pi i◆RB◆ = 1024\,e^◆LB◆\pi i◆RB◆ = -1024$.
 
 <details>
 <summary>Solution</summary>
@@ -151,14 +151,14 @@ $= \cos^5\theta - 10\cos^3\theta + 10\cos^5\theta + 5\cos\theta - 10\cos^3\theta
 $= 16\cos^5\theta - 20\cos^3\theta + 5\cos\theta$.
 
 **Problem.** Show that
-$\sum_{k=0}^{n-1} \cos(k\theta) = \frac{\sin(n\theta/2)}{\sin(\theta/2)}\cos\!\left(\frac{(n-1)\theta}{2}\right)$
-For $\theta \notin 2\pi\mathbb{Z}$.
+$\sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ \cos(k\theta) = \frac◆LB◆\sin(n\theta/2)◆RB◆◆LB◆\sin(\theta/2)◆RB◆\cos\!\left(\frac◆LB◆(n-1)\theta◆RB◆◆LB◆2◆RB◆\right)$
+For $\theta \notin 2\pi\mathbb◆LB◆Z◆RB◆$.
 
-Consider $S = \sum_{k=0}^{n-1} e^{ik\theta} = \frac{1 - e^{in\theta}}{1 - e^{i\theta}}$ (geometric
-series with $r = e^{i\theta} \neq 1$).
+Consider $S = \sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ e^◆LB◆ik\theta◆RB◆ = \frac◆LB◆1 - e^◆LB◆in\theta◆RB◆◆RB◆◆LB◆1 - e^◆LB◆i\theta◆RB◆◆RB◆$ (geometric
+series with $r = e^◆LB◆i\theta◆RB◆ \neq 1$).
 
-$S = \frac{e^{in\theta/2}(e^{-in\theta/2} - e^{in\theta/2})}{e^{i\theta/2}(e^{-i\theta/2} - e^{i\theta/2})}
-= e^{i(n-1)\theta/2} \cdot \frac{\sin(n\theta/2)}{\sin(\theta/2)}$.
+$S = \frac◆LB◆e^◆LB◆in\theta/2◆RB◆(e^◆LB◆-in\theta/2◆RB◆ - e^◆LB◆in\theta/2◆RB◆)◆RB◆◆LB◆e^◆LB◆i\theta/2◆RB◆(e^◆LB◆-i\theta/2◆RB◆ - e^◆LB◆i\theta/2◆RB◆)◆RB◆
+= e^◆LB◆i(n-1)\theta/2◆RB◆ \cdot \frac◆LB◆\sin(n\theta/2)◆RB◆◆LB◆\sin(\theta/2)◆RB◆$.
 
 Taking real parts gives the result.
 
@@ -166,36 +166,36 @@ Taking real parts gives the result.
 
 ### 1.5 Roots of Complex Numbers
 
-**Definition.** An $n$-th root of $w \in \mathbb{C}$ is a complex number $z$ such that $z^n = w$.
+**Definition.** An $n$-th root of $w \in \mathbb◆LB◆C◆RB◆$ is a complex number $z$ such that $z^n = w$.
 
-**Proposition 1.6.** Every non-zero $w \in \mathbb{C}$ has exactly $n$ distinct $n$-th roots. If
-$w = \rho\, e^{i\phi}$Then
+**Proposition 1.6.** Every non-zero $w \in \mathbb◆LB◆C◆RB◆$ has exactly $n$ distinct $n$-th roots. If
+$w = \rho\, e^◆LB◆i\phi◆RB◆$Then
 
-$$z_k = \rho^{1/n}\, e^{i(\phi + 2\pi k)/n}, \quad k = 0, 1, \ldots, n - 1$$
+$$z_k = \rho^◆LB◆1/n◆RB◆\, e^◆LB◆i(\phi + 2\pi k)/n◆RB◆, \quad k = 0, 1, \ldots, n - 1$$
 
-Where $\rho^{1/n} \gt 0$ is the positive real $n$-th root of $\rho$.
+Where $\rho^◆LB◆1/n◆RB◆ \gt 0$ is the positive real $n$-th root of $\rho$.
 
-_Proof._ If $z^n = w$Write $z = r\,e^{i\theta}$. Then $r^n e^{in\theta} = \rho\, e^{i\phi}$ So
-$r = \rho^{1/n}$ and $n\theta = \phi + 2\pi k$. For $k = 0, 1, \ldots, n-1$ these give distinct
+_Proof._ If $z^n = w$Write $z = r\,e^◆LB◆i\theta◆RB◆$. Then $r^n e^◆LB◆in\theta◆RB◆ = \rho\, e^◆LB◆i\phi◆RB◆$ So
+$r = \rho^◆LB◆1/n◆RB◆$ and $n\theta = \phi + 2\pi k$. For $k = 0, 1, \ldots, n-1$ these give distinct
 Values of $\theta$; for $k \geq n$ they repeat. $\blacksquare$
 
-_Remark._ The $n$-th roots of $w$ lie equally spaced on a circle of radius $\rho^{1/n}$Forming a
+_Remark._ The $n$-th roots of $w$ lie equally spaced on a circle of radius $\rho^◆LB◆1/n◆RB◆$Forming a
 Regular $n$-gon.
 
 ### 1.6 Roots of Unity
 
 The $n$-th roots of unity are the solutions of $z^n = 1$:
 
-$$z_k = e^{2\pi i k / n}, \quad k = 0, 1, \ldots, n - 1$$
+$$z_k = e^◆LB◆2\pi i k / n◆RB◆, \quad k = 0, 1, \ldots, n - 1$$
 
 They form a regular $n$-gon on the unit circle in the complex plane.
 
-**Proposition 1.7.** If $\omega = e^{2\pi i/n}$ is a primitive $n$-th root of unity, then
-$\sum_{k=0}^{n-1} \omega^k = 0$ and $\sum_{k=0}^{n-1} \omega^{jk} = 0$ for any $j$ not divisible by
+**Proposition 1.7.** If $\omega = e^◆LB◆2\pi i/n◆RB◆$ is a primitive $n$-th root of unity, then
+$\sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ \omega^k = 0$ and $\sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ \omega^◆LB◆jk◆RB◆ = 0$ for any $j$ not divisible by
 $n$.
 
 _Proof._ The sum
-$\sum_{k=0}^{n-1} \omega^k = \frac{1 - \omega^n}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0$
+$\sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ \omega^k = \frac◆LB◆1 - \omega^n◆RB◆◆LB◆1 - \omega◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆1 - \omega◆RB◆ = 0$
 Provided $\omega \neq 1$. For $j$ not divisible by $n$$\omega^j$ is a non-trivial root of unity, So
 the same argument applies. $\blacksquare$
 
@@ -204,25 +204,25 @@ the same argument applies. $\blacksquare$
 
 **Problem.** Find all cube roots of $-8$.
 
-$-8 = 8\,e^{i\pi}$. The cube roots are:
-$z_k = 8^{1/3}\, e^{i(\pi + 2\pi k)/3} = 2\, e^{i(\pi + 2\pi k)/3}$ for $k = 0, 1, 2$.
+$-8 = 8\,e^◆LB◆i\pi◆RB◆$. The cube roots are:
+$z_k = 8^◆LB◆1/3◆RB◆\, e^◆LB◆i(\pi + 2\pi k)/3◆RB◆ = 2\, e^◆LB◆i(\pi + 2\pi k)/3◆RB◆$ for $k = 0, 1, 2$.
 
-$z_0 = 2\,e^{i\pi/3} = 2\left(\frac{1}{2} + i\,\frac{\sqrt{3}}{2}\right) = 1 + i\sqrt{3}$.
-$z_1 = 2\,e^{i\pi} = -2$.
-$z_2 = 2\,e^{i5\pi/3} = 2\left(\frac{1}{2} - i\,\frac{\sqrt{3}}{2}\right) = 1 - i\sqrt{3}$.
+$z_0 = 2\,e^◆LB◆i\pi/3◆RB◆ = 2\left(\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ + i\,\frac◆LB◆\sqrt◆LB◆3◆RB◆◆RB◆◆LB◆2◆RB◆\right) = 1 + i\sqrt◆LB◆3◆RB◆$.
+$z_1 = 2\,e^◆LB◆i\pi◆RB◆ = -2$.
+$z_2 = 2\,e^◆LB◆i5\pi/3◆RB◆ = 2\left(\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ - i\,\frac◆LB◆\sqrt◆LB◆3◆RB◆◆RB◆◆LB◆2◆RB◆\right) = 1 - i\sqrt◆LB◆3◆RB◆$.
 
 **Problem.** Find all fourth roots of $z = 16i$.
 
-$16i = 16\,e^{i\pi/2}$. The fourth roots are:
-$z_k = 16^{1/4}\, e^{i(\pi/2 + 2\pi k)/4} = 2\, e^{i(\pi/8 + \pi k/2)}$ for $k = 0, 1, 2, 3$.
+$16i = 16\,e^◆LB◆i\pi/2◆RB◆$. The fourth roots are:
+$z_k = 16^◆LB◆1/4◆RB◆\, e^◆LB◆i(\pi/2 + 2\pi k)/4◆RB◆ = 2\, e^◆LB◆i(\pi/8 + \pi k/2)◆RB◆$ for $k = 0, 1, 2, 3$.
 
-$z_0 = 2\,e^{i\pi/8}$$z_1 = 2\,e^{i5\pi/8}$$z_2 = 2\,e^{i9\pi/8}$$z_3 = 2\,e^{i13\pi/8}$.
+$z_0 = 2\,e^◆LB◆i\pi/8◆RB◆$$z_1 = 2\,e^◆LB◆i5\pi/8◆RB◆$$z_2 = 2\,e^◆LB◆i9\pi/8◆RB◆$$z_3 = 2\,e^◆LB◆i13\pi/8◆RB◆$.
 
 **Problem.** Show that the $n$-th roots of any non-zero $w$ are in geometric progression.
 
 The roots are
-$z_k = \rho^{1/n}\, e^{i(\phi + 2\pi k)/n} = z_0 \cdot \left(e^{2\pi i/n}\right)^k = z_0 \cdot \omega^k$
-Where $\omega = e^{2\pi i/n}$ is a primitive $n$-th root of unity. This is a geometric sequence With
+$z_k = \rho^◆LB◆1/n◆RB◆\, e^◆LB◆i(\phi + 2\pi k)/n◆RB◆ = z_0 \cdot \left(e^◆LB◆2\pi i/n◆RB◆\right)^k = z_0 \cdot \omega^k$
+Where $\omega = e^◆LB◆2\pi i/n◆RB◆$ is a primitive $n$-th root of unity. This is a geometric sequence With
 ratio $\omega$.
 
 </details>
@@ -231,39 +231,39 @@ ratio $\omega$.
 
 ### 2.1 Complex Functions
 
-A **complex function** is a function $f : D \subseteq \mathbb{C} \to \mathbb{C}$. We can write
+A **complex function** is a function $f : D \subseteq \mathbb◆LB◆C◆RB◆ \to \mathbb◆LB◆C◆RB◆$. We can write
 $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$ and $u, v$ are real-valued functions.
 
 **Example.** $f(z) = z^2 = (x + iy)^2 = (x^2 - y^2) + i(2xy)$. Here $u = x^2 - y^2$ and $v = 2xy$.
 
-**Example.** $f(z) = \bar{z} = x - iy$. Here $u = x$ and $v = -y$.
+**Example.** $f(z) = \bar◆LB◆z◆RB◆ = x - iy$. Here $u = x$ and $v = -y$.
 
 **Example.** $f(z) = |z|^2 = x^2 + y^2$. Here $u = x^2 + y^2$ and $v = 0$.
 
 ### 2.2 Limits and Continuity
 
-The limit $\lim_{z \to z_0} f(z) = L$ means: for every $\varepsilon \gt 0$There exists
+The limit $\lim_◆LB◆z \to z_0◆RB◆ f(z) = L$ means: for every $\varepsilon \gt 0$There exists
 $\delta \gt 0$ Such that $0 \lt |z - z_0| \lt \delta$ implies $|f(z) - L| \lt \varepsilon$.
 
-Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb{C}$. This makes limits
+Unlike the real case, $z$ can approach $z_0$ from any direction in $\mathbb◆LB◆C◆RB◆$. This makes limits
 More restrictive.
 
-**Proposition 2.1.** $\lim_{z \to z_0} f(z) = L$ if and only if
-$\lim_{(x,y) \to (x_0, y_0)} u(x, y) = a$ And $\lim_{(x,y) \to (x_0, y_0)} v(x, y) = b$ where
+**Proposition 2.1.** $\lim_◆LB◆z \to z_0◆RB◆ f(z) = L$ if and only if
+$\lim_◆LB◆(x,y) \to (x_0, y_0)◆RB◆ u(x, y) = a$ And $\lim_◆LB◆(x,y) \to (x_0, y_0)◆RB◆ v(x, y) = b$ where
 $L = a + bi$.
 
-**Definition.** $f$ is **continuous** at $z_0$ if $\lim_{z \to z_0} f(z) = f(z_0)$.
+**Definition.** $f$ is **continuous** at $z_0$ if $\lim_◆LB◆z \to z_0◆RB◆ f(z) = f(z_0)$.
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Show that $\lim_{z \to 0} \frac{\bar{z}}{z}$ does not exist.
+**Problem.** Show that $\lim_◆LB◆z \to 0◆RB◆ \frac◆LB◆\bar◆LB◆z◆RB◆◆RB◆◆LB◆z◆RB◆$ does not exist.
 
-Let $z = re^{i\theta}$. Then $\frac{\bar{z}}{z} = e^{-2i\theta}$. As $z \to 0$ along different Rays
+Let $z = re^◆LB◆i\theta◆RB◆$. Then $\frac◆LB◆\bar◆LB◆z◆RB◆◆RB◆◆LB◆z◆RB◆ = e^◆LB◆-2i\theta◆RB◆$. As $z \to 0$ along different Rays
 ($\theta = 0, \pi/2, \pi/4$Etc.), the ratio takes different values ($1, -1, -i$Etc.). Since the
 limit depends on the direction of approach, it does not exist.
 
-**Problem.** Determine whether $f(z) = \frac{z^2 - 1}{z - 1}$ is continuous at $z = 1$.
+**Problem.** Determine whether $f(z) = \frac◆LB◆z^2 - 1◆RB◆◆LB◆z - 1◆RB◆$ is continuous at $z = 1$.
 
 For $z \neq 1$: $f(z) = z + 1$. The limit as $z \to 1$ is $2$But $f(1)$ is undefined (division by
 zero). If we define $f(1) = 2$Then $f$ becomes continuous at $z = 1$.
@@ -274,9 +274,9 @@ zero). If we define $f(1) = 2$Then $f$ becomes continuous at $z = 1$.
 
 **Definition.** $f$ is **differentiable** at $z_0$ if
 
-$$f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$$
+$$f'(z_0) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆f(z_0 + h) - f(z_0)◆RB◆◆LB◆h◆RB◆$$
 
-Exists (and is independent of how $h \to 0$ in $\mathbb{C}$).
+Exists (and is independent of how $h \to 0$ in $\mathbb◆LB◆C◆RB◆$).
 
 _Remark._ The requirement that the limit be the same for all directions of approach of $h$ is what
 Makes complex differentiability far more restrictive than real differentiability.
@@ -284,12 +284,12 @@ Makes complex differentiability far more restrictive than real differentiability
 ### 2.4 Analytic Functions
 
 **Definition.** A function $f$ is **analytic** (or **holomorphic**) on an open set
-$U \subseteq \mathbb{C}$ if $f$ is differentiable at every point of $U$. A function that is analytic
-On all of $\mathbb{C}$ is called **entire**.
+$U \subseteq \mathbb◆LB◆C◆RB◆$ if $f$ is differentiable at every point of $U$. A function that is analytic
+On all of $\mathbb◆LB◆C◆RB◆$ is called **entire**.
 
 **Examples of entire functions:** $z^n$$e^z$$\sin z$$\cos z$Polynomials.
 
-**Example of a non-analytic function:** $f(z) = \bar{z}$ is nowhere differentiable (except at
+**Example of a non-analytic function:** $f(z) = \bar◆LB◆z◆RB◆$ is nowhere differentiable (except at
 $z = 0$ if we define it, but still not analytic there).
 
 <details>
@@ -301,14 +301,14 @@ $f(z) = x^2 + y^2$So $u = x^2 + y^2$ and $v = 0$. $u_x = 2x$$u_y = 2y$$v_x = 0$$
 Cauchy-Riemann equations require $2x = 0$ and $2y = 0$So $x = y = 0$. Thus $f$ satisfies CR only at
 $z = 0$.
 
-At $z = 0$: $f'(0) = \lim_{h \to 0} \frac{|h|^2}{h} = \lim_{h \to 0} \bar{h} = 0$So $f$ is
+At $z = 0$: $f'(0) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆|h|^2◆RB◆◆LB◆h◆RB◆ = \lim_◆LB◆h \to 0◆RB◆ \bar◆LB◆h◆RB◆ = 0$So $f$ is
 Differentiable at $0$ but not analytic anywhere (no neighbourhood of $0$ is analytic).
 
-**Problem.** Show that $f(z) = z\bar{z} + z$ is differentiable only at $z = 0$.
+**Problem.** Show that $f(z) = z\bar◆LB◆z◆RB◆ + z$ is differentiable only at $z = 0$.
 
 $f(z) = |z|^2 + z = (x^2 + y^2 + x) + iy$. $u_x = 2x + 1$$u_y = 2y$$v_x = 0$$v_y = 1$. CR equations:
 $2x + 1 = 1 \Rightarrow x = 0$And $2y = 0 \Rightarrow y = 0$. At $(0, 0)$:
-$f'(0) = \lim_{h \to 0} \frac{h\bar{h} + h}{h} = \lim_{h \to 0} (\bar{h} + 1) = 1$. So $f$ is
+$f'(0) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆h\bar◆LB◆h◆RB◆ + h◆RB◆◆LB◆h◆RB◆ = \lim_◆LB◆h \to 0◆RB◆ (\bar◆LB◆h◆RB◆ + 1) = 1$. So $f$ is
 differentiable at $z = 0$ only, hence nowhere analytic.
 
 </details>
@@ -322,18 +322,18 @@ Single-valued functions, we must restrict the domain.
 Defined on a domain $D$ such that $g(z) \in f(z)$ for all $z \in D$.
 
 **The Complex Logarithm.** We define $\log z = \ln|z| + i\arg(z)$Which is multi-valued because
-$\arg(z) = \mathrm{Arg(z) + 2\pi k$ for $k \in \mathbb{Z}$. The **principal branch** is
+$\arg(z) = \mathrm◆LB◆Arg(z) + 2\pi k$ for $k \in \mathbb◆LB◆Z◆RB◆$. The **principal branch** is
 
-$$\mathrm{Log\, z = \ln|z| + i\,\mathrm{Arg(z)$$
+$$\mathrm◆LB◆Log\, z = \ln|z| + i\,\mathrm◆LB◆Arg(z)$$
 
-Defined on $\mathbb{C} \setminus (-\infty, 0]$. The negative real axis is called the **branch cut**.
+Defined on $\mathbb◆LB◆C◆RB◆ \setminus (-\infty, 0]$. The negative real axis is called the **branch cut**.
 
-**Proposition 2.2.** The principal branch $\mathrm{Log\, z$ is analytic on
-$\mathbb{C} \setminus (-\infty, 0]$ and $\frac{d}{dz}\,\mathrm{Log\, z = \frac{1}{z}$.
+**Proposition 2.2.** The principal branch $\mathrm◆LB◆Log\, z$ is analytic on
+$\mathbb◆LB◆C◆RB◆ \setminus (-\infty, 0]$ and $\frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\,\mathrm◆LB◆Log\, z = \frac◆LB◆1◆RB◆◆LB◆z◆RB◆$.
 
-**Complex Powers.** For $z, \alpha \in \mathbb{C}$ with $z \neq 0$:
+**Complex Powers.** For $z, \alpha \in \mathbb◆LB◆C◆RB◆$ with $z \neq 0$:
 
-$$z^\alpha = e^{\alpha \log z}$$
+$$z^\alpha = e^◆LB◆\alpha \log z◆RB◆$$
 
 This is multi-valued . When $\alpha$ is rational with reduced form $p/q$There are exactly $q$
 distinct values.
@@ -343,27 +343,27 @@ distinct values.
 
 **Problem.** Find all values of $(-1)^i$.
 
-$(-1)^i = e^{i \log(-1)} = e^{i(i\pi + 2\pi i k)} = e^{-\pi - 2\pi k}$ for $k \in \mathbb{Z}$.
+$(-1)^i = e^◆LB◆i \log(-1)◆RB◆ = e^◆LB◆i(i\pi + 2\pi i k)◆RB◆ = e^◆LB◆-\pi - 2\pi k◆RB◆$ for $k \in \mathbb◆LB◆Z◆RB◆$.
 
-These are all positive real numbers: $\ldots, e^{3\pi}, e^{\pi}, e^{-\pi}, e^{-3\pi}, \ldots$. The
-principal value (using the principal branch) is $e^{-\pi}$.
+These are all positive real numbers: $\ldots, e^◆LB◆3\pi◆RB◆, e^◆LB◆\pi◆RB◆, e^◆LB◆-\pi◆RB◆, e^◆LB◆-3\pi◆RB◆, \ldots$. The
+principal value (using the principal branch) is $e^◆LB◆-\pi◆RB◆$.
 
-**Problem.** Find all values of $i^{1/2}$.
+**Problem.** Find all values of $i^◆LB◆1/2◆RB◆$.
 
-$i^{1/2} = e^{(1/2)\log i} = e^{(1/2)(i\pi/2 + 2\pi i k)} = e^{i\pi/4 + i\pi k}$.
+$i^◆LB◆1/2◆RB◆ = e^◆LB◆(1/2)\log i◆RB◆ = e^◆LB◆(1/2)(i\pi/2 + 2\pi i k)◆RB◆ = e^◆LB◆i\pi/4 + i\pi k◆RB◆$.
 
-For $k = 0$: $e^{i\pi/4} = \frac{\sqrt{2}}{2}(1 + i)$. For $k = 1$:
-$e^{i5\pi/4} = -\frac{\sqrt{2}}{2}(1 + i)$. These are the two square roots of $i$.
+For $k = 0$: $e^◆LB◆i\pi/4◆RB◆ = \frac◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆◆LB◆2◆RB◆(1 + i)$. For $k = 1$:
+$e^◆LB◆i5\pi/4◆RB◆ = -\frac◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆◆LB◆2◆RB◆(1 + i)$. These are the two square roots of $i$.
 
-**Problem.** Find the domain of analyticity of $f(z) = \mathrm{Log(z^2 + 1)$.
+**Problem.** Find the domain of analyticity of $f(z) = \mathrm◆LB◆Log(z^2 + 1)$.
 
-$\mathrm{Log\, w$ is analytic on $\mathbb{C} \setminus (-\infty, 0]$So we need
+$\mathrm◆LB◆Log\, w$ is analytic on $\mathbb◆LB◆C◆RB◆ \setminus (-\infty, 0]$So we need
 $z^2 + 1 \notin (-\infty, 0]$.
 
 $z^2 + 1 \leq 0$ when $z^2 \leq -1$I.e., $z \in [-i, 0] \cup [0, i]$ (the imaginary axis Segment
 from $-i$ to $i$). Also $z^2 + 1 = 0$ at $z = \pm i$.
 
-Domain: $\mathbb{C} \setminus \{z : z = iy,\, y \in [-1, 1]\}$.
+Domain: $\mathbb◆LB◆C◆RB◆ \setminus \{z : z = iy,\, y \in [-1, 1]\}$.
 
 </details>
 
@@ -374,18 +374,18 @@ Domain: $\mathbb{C} \setminus \{z : z = iy,\, y \in [-1, 1]\}$.
 **Theorem 3.1 (Cauchy-Riemann Equations).** If $f(z) = u(x, y) + iv(x, y)$ is differentiable at
 $z = x + iy$Then
 
-$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
+$$\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ = \frac◆LB◆\partial v◆RB◆◆LB◆\partial y◆RB◆, \quad \frac◆LB◆\partial u◆RB◆◆LB◆\partial y◆RB◆ = -\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆$$
 
-_Proof._ Compute the limit along the real axis ($h \in \mathbb{R}$$h \to 0$):
+_Proof._ Compute the limit along the real axis ($h \in \mathbb◆LB◆R◆RB◆$$h \to 0$):
 
-$$f'(z) = \lim_{h \to 0} \frac{u(x+h, y) - u(x, y)}{h} + i\lim_{h \to 0} \frac{v(x+h, y) - v(x, y)}{h} = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
+$$f'(z) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆u(x+h, y) - u(x, y)◆RB◆◆LB◆h◆RB◆ + i\lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆v(x+h, y) - v(x, y)◆RB◆◆LB◆h◆RB◆ = \frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ + i\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆$$
 
-Compute along the imaginary axis ($h = ik$$k \in \mathbb{R}$$k \to 0$):
+Compute along the imaginary axis ($h = ik$$k \in \mathbb◆LB◆R◆RB◆$$k \to 0$):
 
-$$f'(z) = \lim_{k \to 0} \frac{u(x, y+k) - u(x, y)}{ik} + i\lim_{k \to 0} \frac{v(x, y+k) - v(x, y)}{ik} = -i\frac{\partial u}{\partial y} + \frac{\partial v}{\partial y}$$
+$$f'(z) = \lim_◆LB◆k \to 0◆RB◆ \frac◆LB◆u(x, y+k) - u(x, y)◆RB◆◆LB◆ik◆RB◆ + i\lim_◆LB◆k \to 0◆RB◆ \frac◆LB◆v(x, y+k) - v(x, y)◆RB◆◆LB◆ik◆RB◆ = -i\frac◆LB◆\partial u◆RB◆◆LB◆\partial y◆RB◆ + \frac◆LB◆\partial v◆RB◆◆LB◆\partial y◆RB◆$$
 
-Equating real and imaginary parts: $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$
-And $\frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y}$. $\blacksquare$
+Equating real and imaginary parts: $\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ = \frac◆LB◆\partial v◆RB◆◆LB◆\partial y◆RB◆$
+And $\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆ = -\frac◆LB◆\partial u◆RB◆◆LB◆\partial y◆RB◆$. $\blacksquare$
 
 ### 3.2 Sufficiency Condition
 
@@ -400,11 +400,11 @@ $v(x + \Delta x, y + \Delta y) - v(x, y) = v_x\,\Delta x + v_y\,\Delta y + \vare
 
 Where $\varepsilon_1, \varepsilon_2 = o(|\Delta z|)$. Therefore
 
-$\frac{f(z + \Delta z) - f(z)}{\Delta z} = \frac{(u_x + iv_x)\Delta x + (u_y + iv_y)\Delta y + \varepsilon_1 + i\varepsilon_2}{\Delta x + i\Delta y}$
+$\frac◆LB◆f(z + \Delta z) - f(z)◆RB◆◆LB◆\Delta z◆RB◆ = \frac◆LB◆(u_x + iv_x)\Delta x + (u_y + iv_y)\Delta y + \varepsilon_1 + i\varepsilon_2◆RB◆◆LB◆\Delta x + i\Delta y◆RB◆$
 
 By CR: $u_y + iv_y = -v_x + iu_x = i(u_x + iv_x)$. Substituting:
 
-$= (u_x + iv_x)\frac{\Delta x + i\Delta y}{\Delta x + i\Delta y} + \frac{o(|\Delta z|)}{\Delta z} \to u_x + iv_x$
+$= (u_x + iv_x)\frac◆LB◆\Delta x + i\Delta y◆RB◆◆LB◆\Delta x + i\Delta y◆RB◆ + \frac◆LB◆o(|\Delta z|)◆RB◆◆LB◆\Delta z◆RB◆ \to u_x + iv_x$
 
 As $\Delta z \to 0$. $\blacksquare$
 
@@ -412,18 +412,18 @@ As $\Delta z \to 0$. $\blacksquare$
 
 When the Cauchy-Riemann equations hold:
 
-$$f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x} = \frac{\partial v}{\partial y} - i\frac{\partial u}{\partial y}$$
+$$f'(z) = \frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ + i\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆ = \frac◆LB◆\partial v◆RB◆◆LB◆\partial y◆RB◆ - i\frac◆LB◆\partial u◆RB◆◆LB◆\partial y◆RB◆$$
 
 ### 3.4 Harmonic Functions
 
-**Definition.** A real-valued function $\phi(x, y)$ is **harmonic** if $\phi_{xx} + \phi_{yy} = 0$
+**Definition.** A real-valued function $\phi(x, y)$ is **harmonic** if $\phi_◆LB◆xx◆RB◆ + \phi_◆LB◆yy◆RB◆ = 0$
 (Laplace's equation).
 
 **Proposition 3.3.** If $f = u + iv$ is analytic, then $u$ and $v$ are harmonic.
 
 _Proof._ From the Cauchy-Riemann equations: $u_x = v_y$ and $u_y = -v_x$. Differentiating:
-$u_{xx} = v_{yx}$ and $u_{yy} = -v_{xy}$. By equality of mixed partials,
-$u_{xx} + u_{yy} = v_{yx} - v_{xy} = 0$. Similarly for $v$. $\blacksquare$
+$u_◆LB◆xx◆RB◆ = v_◆LB◆yx◆RB◆$ and $u_◆LB◆yy◆RB◆ = -v_◆LB◆xy◆RB◆$. By equality of mixed partials,
+$u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = v_◆LB◆yx◆RB◆ - v_◆LB◆xy◆RB◆ = 0$. Similarly for $v$. $\blacksquare$
 
 **Definition.** If $u$ and $v$ are harmonic on $U$ and satisfy the Cauchy-Riemann equations, then
 $v$ is the **harmonic conjugate** of $u$.
@@ -431,8 +431,8 @@ $v$ is the **harmonic conjugate** of $u$.
 **Proposition 3.4.** If $U$ is a connected domain and $u$ is harmonic on $U$Then $u$ has A harmonic
 conjugate on $U$Unique up to an additive constant.
 
-_Proof._ Define $v(x, y) = \int_{(x_0, y_0)}^{(x, y)} (-u_y\, dx + u_x\, dy)$. The integrand is
-closed (since $(-u_y)_y = -u_{yy} = u_{xx} = (u_x)_x$) and since $U$ is Connected, $v$ is
+_Proof._ Define $v(x, y) = \int_◆LB◆(x_0, y_0)◆RB◆^◆LB◆(x, y)◆RB◆ (-u_y\, dx + u_x\, dy)$. The integrand is
+closed (since $(-u_y)_y = -u_◆LB◆yy◆RB◆ = u_◆LB◆xx◆RB◆ = (u_x)_x$) and since $U$ is Connected, $v$ is
 well-defined (path-independent) by Green's theorem. Then $v_x = -u_y$ and $v_y = u_x$Which are the
 CR equations. $\blacksquare$
 
@@ -441,7 +441,7 @@ CR equations. $\blacksquare$
 
 **Problem.** Find the harmonic conjugate of $u(x, y) = x^3 - 3xy^2$.
 
-Verify $u$ is harmonic: $u_{xx} = 6x$$u_{yy} = -6x$So $u_{xx} + u_{yy} = 0$. $\checkmark$
+Verify $u$ is harmonic: $u_◆LB◆xx◆RB◆ = 6x$$u_◆LB◆yy◆RB◆ = -6x$So $u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = 0$. $\checkmark$
 
 By CR: $v_y = u_x = 3x^2 - 3y^2$So $v = 3x^2 y - y^3 + g(x)$. Also $v_x = -u_y = 6xy$So
 $6xy = 6xy + g'(x)$Giving $g'(x) = 0$So $g(x) = C$.
@@ -450,18 +450,18 @@ Harmonic conjugate: $v(x, y) = 3x^2 y - y^3 + C$.
 
 _Note:_ $f(z) = u + iv = x^3 - 3xy^2 + i(3x^2 y - y^3) = (x + iy)^3 = z^3$.
 
-**Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on $\mathbb{R}^2 \setminus \{0\}$ but
-Has no harmonic conjugate on $\mathbb{R}^2 \setminus \{0\}$.
+**Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on $\mathbb◆LB◆R◆RB◆^2 \setminus \{0\}$ but
+Has no harmonic conjugate on $\mathbb◆LB◆R◆RB◆^2 \setminus \{0\}$.
 
-$u_x = \frac{2x}{x^2 + y^2}$$u_{xx} = \frac{2(y^2 - x^2)}{(x^2 + y^2)^2}$.
-$u_y = \frac{2y}{x^2 + y^2}$$u_{yy} = \frac{2(x^2 - y^2)}{(x^2 + y^2)^2}$. $\Delta u = 0$.
+$u_x = \frac◆LB◆2x◆RB◆◆LB◆x^2 + y^2◆RB◆$$u_◆LB◆xx◆RB◆ = \frac◆LB◆2(y^2 - x^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$.
+$u_y = \frac◆LB◆2y◆RB◆◆LB◆x^2 + y^2◆RB◆$$u_◆LB◆yy◆RB◆ = \frac◆LB◆2(x^2 - y^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. $\Delta u = 0$.
 $\checkmark$
 
 However,
-$\oint_{|z|=1} (-u_y\, dx + u_x\, dy) = \oint_{|z|=1} \frac{-y\, dx + x\, dy}{x^2 + y^2}
-= \int_0^{2\pi} 1\, d\theta = 2\pi \neq 0$.
+$\oint_◆LB◆|z|=1◆RB◆ (-u_y\, dx + u_x\, dy) = \oint_◆LB◆|z|=1◆RB◆ \frac◆LB◆-y\, dx + x\, dy◆RB◆◆LB◆x^2 + y^2◆RB◆
+= \int_0^◆LB◆2\pi◆RB◆ 1\, d\theta = 2\pi \neq 0$.
 
-Since $\mathbb{R}^2 \setminus \{0\}$ is not connected and this integral is non-zero, no Harmonic
+Since $\mathbb◆LB◆R◆RB◆^2 \setminus \{0\}$ is not connected and this integral is non-zero, no Harmonic
 conjugate exists on this domain.
 
 </details>
@@ -473,7 +473,7 @@ conjugate exists on this domain.
 
 **Problem.** Verify that $f(z) = e^z$ satisfies the Cauchy-Riemann equations and find $f'(z)$.
 
-_Solution._ $e^z = e^{x+iy} = e^x(\cos y + i\sin y)$. So $u = e^x \cos y$ and $v = e^x \sin y$.
+_Solution._ $e^z = e^◆LB◆x+iy◆RB◆ = e^x(\cos y + i\sin y)$. So $u = e^x \cos y$ and $v = e^x \sin y$.
 
 $u_x = e^x \cos y$$u_y = -e^x \sin y$$v_x = e^x \sin y$$v_y = e^x \cos y$.
 
@@ -493,18 +493,18 @@ CR: $u_x = \cos x \cosh y = v_y$ $\checkmark$ and $u_y = \sin x \sinh y = -v_x$ 
 
 $f'(z) = u_x + iv_x = \cos x \cosh y - i\sin x \sinh y = \cos z$. $\blacksquare$
 
-**Problem.** Show $f(z) = \frac{1}{z}$ satisfies CR on $\mathbb{C} \setminus \{0\}$.
+**Problem.** Show $f(z) = \frac◆LB◆1◆RB◆◆LB◆z◆RB◆$ satisfies CR on $\mathbb◆LB◆C◆RB◆ \setminus \{0\}$.
 
-$\frac{1}{z} = \frac{\bar{z}}{|z|^2} = \frac{x - iy}{x^2 + y^2}$.
+$\frac◆LB◆1◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆\bar◆LB◆z◆RB◆◆RB◆◆LB◆|z|^2◆RB◆ = \frac◆LB◆x - iy◆RB◆◆LB◆x^2 + y^2◆RB◆$.
 
-$u = \frac{x}{x^2 + y^2}$$v = \frac{-y}{x^2 + y^2}$.
+$u = \frac◆LB◆x◆RB◆◆LB◆x^2 + y^2◆RB◆$$v = \frac◆LB◆-y◆RB◆◆LB◆x^2 + y^2◆RB◆$.
 
-$u_x = \frac{y^2 - x^2}{(x^2 + y^2)^2}$$v_y = \frac{y^2 - x^2}{(x^2 + y^2)^2}$. So $u_x = v_y$.
+$u_x = \frac◆LB◆y^2 - x^2◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$$v_y = \frac◆LB◆y^2 - x^2◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. So $u_x = v_y$.
 $\checkmark$
 
-$u_y = \frac{-2xy}{(x^2 + y^2)^2}$$v_x = \frac{2xy}{(x^2 + y^2)^2}$. So $u_y = -v_x$. $\checkmark$
+$u_y = \frac◆LB◆-2xy◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$$v_x = \frac◆LB◆2xy◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. So $u_y = -v_x$. $\checkmark$
 
-$f'(z) = u_x + iv_x = \frac{-(x^2 - y^2 + 2ixy)}{(x^2 + y^2)^2} = \frac{-1}{z^2}$. $\blacksquare$
+$f'(z) = u_x + iv_x = \frac◆LB◆-(x^2 - y^2 + 2ixy)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆ = \frac◆LB◆-1◆RB◆◆LB◆z^2◆RB◆$. $\blacksquare$
 
 </details>
 
@@ -512,8 +512,8 @@ $f'(z) = u_x + iv_x = \frac{-(x^2 - y^2 + 2ixy)}{(x^2 + y^2)^2} = \frac{-1}{z^2}
 
 ### 4.1 Contours
 
-A **contour** (or piecewise smooth path) in $\mathbb{C}$ is a continuous function
-$\gamma : [a, b] \to \mathbb{C}$ that is differentiable except at finitely many points, with a
+A **contour** (or piecewise smooth path) in $\mathbb◆LB◆C◆RB◆$ is a continuous function
+$\gamma : [a, b] \to \mathbb◆LB◆C◆RB◆$ that is differentiable except at finitely many points, with a
 Continuous derivative everywhere it exists.
 
 A **simple closed contour** is a contour with $\gamma(a) = \gamma(b)$ and no other
@@ -523,7 +523,7 @@ Self-intersections.
 
 **Definition.** For a contour $\gamma$ and a continuous function $f$ on $\gamma$:
 
-$$\int_{\gamma} f(z)\, dz = \int_a^b f(\gamma(t))\gamma'(t)\, dt$$
+$$\int_◆LB◆\gamma◆RB◆ f(z)\, dz = \int_a^b f(\gamma(t))\gamma'(t)\, dt$$
 
 ### 4.3 Basic Properties
 
@@ -533,11 +533,11 @@ $$\int_\gamma (af + bg)\, dz = a\int_\gamma f\, dz + b\int_\gamma g\, dz$$
 
 **Proposition 4.2.** Reversing orientation changes the sign:
 
-$$\int_{-\gamma} f\, dz = -\int_\gamma f\, dz$$
+$$\int_◆LB◆-\gamma◆RB◆ f\, dz = -\int_\gamma f\, dz$$
 
 **Proposition 4.3.** Additivity over contours:
 
-$$\int_{\gamma_1 + \gamma_2} f\, dz = \int_{\gamma_1} f\, dz + \int_{\gamma_2} f\, dz$$
+$$\int_◆LB◆\gamma_1 + \gamma_2◆RB◆ f\, dz = \int_◆LB◆\gamma_1◆RB◆ f\, dz + \int_◆LB◆\gamma_2◆RB◆ f\, dz$$
 
 ### 4.4 ML Inequality
 
@@ -560,37 +560,37 @@ $\blacksquare$
 
 _Solution._ Parameterize $\gamma(t) = t(1 + i)$ for $0 \leq t \leq 1$. Then $\gamma'(t) = 1 + i$.
 
-$\int_\gamma z^2\, dz = \int_0^1 (t(1+i))^2 (1+i)\, dt = (1+i)^3 \int_0^1 t^2\, dt = (1+i)^3 \cdot \frac{1}{3}$
+$\int_\gamma z^2\, dz = \int_0^1 (t(1+i))^2 (1+i)\, dt = (1+i)^3 \int_0^1 t^2\, dt = (1+i)^3 \cdot \frac◆LB◆1◆RB◆◆LB◆3◆RB◆$
 
 $(1+i)^3 = (1+i)(1+i)^2 = (1+i)(2i) = 2i + 2i^2 = 2i - 2 = -2 + 2i$.
 
-$\int_\gamma z^2\, dz = \frac{-2 + 2i}{3}$. $\blacksquare$
+$\int_\gamma z^2\, dz = \frac◆LB◆-2 + 2i◆RB◆◆LB◆3◆RB◆$. $\blacksquare$
 
-**Problem.** Evaluate $\int_\gamma \bar{z}\, dz$ where $\gamma$ is the unit circle traversed once
+**Problem.** Evaluate $\int_\gamma \bar◆LB◆z◆RB◆\, dz$ where $\gamma$ is the unit circle traversed once
 Counterclockwise.
 
-$\gamma(t) = e^{it}$$0 \leq t \leq 2\pi$$\gamma'(t) = ie^{it}$. $\bar{z} = e^{-it}$ on $\gamma$.
+$\gamma(t) = e^◆LB◆it◆RB◆$$0 \leq t \leq 2\pi$$\gamma'(t) = ie^◆LB◆it◆RB◆$. $\bar◆LB◆z◆RB◆ = e^◆LB◆-it◆RB◆$ on $\gamma$.
 
-$\int_\gamma \bar{z}\, dz = \int_0^{2\pi} e^{-it} \cdot ie^{it}\, dt = \int_0^{2\pi} i\, dt = 2\pi i$.
+$\int_\gamma \bar◆LB◆z◆RB◆\, dz = \int_0^◆LB◆2\pi◆RB◆ e^◆LB◆-it◆RB◆ \cdot ie^◆LB◆it◆RB◆\, dt = \int_0^◆LB◆2\pi◆RB◆ i\, dt = 2\pi i$.
 
-_Note:_ Since $\bar{z}$ is not analytic, this result is non-zero, as expected.
+_Note:_ Since $\bar◆LB◆z◆RB◆$ is not analytic, this result is non-zero, as expected.
 
-**Problem.** Evaluate $\int_\gamma \frac{dz}{z}$ where $\gamma$ is the upper semicircle
-$z = e^{i\theta}$$0 \leq \theta \leq \pi$.
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z◆RB◆$ where $\gamma$ is the upper semicircle
+$z = e^◆LB◆i\theta◆RB◆$$0 \leq \theta \leq \pi$.
 
-$\int_0^\pi \frac{ie^{i\theta}}{e^{i\theta}}\, d\theta = \int_0^\pi i\, d\theta = i\pi$.
+$\int_0^\pi \frac◆LB◆ie^◆LB◆i\theta◆RB◆◆RB◆◆LB◆e^◆LB◆i\theta◆RB◆◆RB◆\, d\theta = \int_0^\pi i\, d\theta = i\pi$.
 
 **Problem.** Evaluate $\int_\gamma z\, dz$ where $\gamma$ consists of the line segment from $0$ to
 $1$ followed by the line segment from $1$ to $1 + i$.
 
-$\gamma_1(t) = t$$0 \leq t \leq 1$: $\int_0^1 t \cdot 1\, dt = \frac{1}{2}$.
+$\gamma_1(t) = t$$0 \leq t \leq 1$: $\int_0^1 t \cdot 1\, dt = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
 
 $\gamma_2(t) = 1 + it$$0 \leq t \leq 1$:
-$\int_0^1 (1 + it) \cdot i\, dt = \int_0^1 (i - t)\, dt = i - \frac{1}{2}$.
+$\int_0^1 (1 + it) \cdot i\, dt = \int_0^1 (i - t)\, dt = i - \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
 
-Total: $\frac{1}{2} + i - \frac{1}{2} = i$.
+Total: $\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ + i - \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ = i$.
 
-Check: Since $z$ is entire, the integral from $0$ to $1 + i$ is $\frac{1}{2}(1+i)^2 = i$.
+Check: Since $z$ is entire, the integral from $0$ to $1 + i$ is $\frac◆LB◆1◆RB◆◆LB◆2◆RB◆(1+i)^2 = i$.
 Consistent. $\blacksquare$
 
 </details>
@@ -601,28 +601,28 @@ Consistent. $\blacksquare$
 <summary>Solution</summary>
 
 **Problem.** Use the ML inequality to show that
-$\lim_{R \to \infty} \int_{C_R} \frac{e^{iz}}{z}\, dz = 0$ Where $C_R$ is the upper semicircle
-$|z| = R$$\mathrm{Im(z) \geq 0$.
+$\lim_◆LB◆R \to \infty◆RB◆ \int_◆LB◆C_R◆RB◆ \frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z◆RB◆\, dz = 0$ Where $C_R$ is the upper semicircle
+$|z| = R$$\mathrm◆LB◆Im(z) \geq 0$.
 
-On $C_R$: $z = Re^{i\theta}$$0 \leq \theta \leq \pi$.
-$|e^{iz}| = |e^{iR(\cos\theta + i\sin\theta)}| = e^{-R\sin\theta}$.
+On $C_R$: $z = Re^◆LB◆i\theta◆RB◆$$0 \leq \theta \leq \pi$.
+$|e^◆LB◆iz◆RB◆| = |e^◆LB◆iR(\cos\theta + i\sin\theta)◆RB◆| = e^◆LB◆-R\sin\theta◆RB◆$.
 
-$\left|\int_{C_R} \frac{e^{iz}}{z}\, dz\right| \leq \int_0^\pi \frac{e^{-R\sin\theta}}{R} \cdot R\, d\theta
-= \int_0^\pi e^{-R\sin\theta}\, d\theta$.
+$\left|\int_◆LB◆C_R◆RB◆ \frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z◆RB◆\, dz\right| \leq \int_0^\pi \frac◆LB◆e^◆LB◆-R\sin\theta◆RB◆◆RB◆◆LB◆R◆RB◆ \cdot R\, d\theta
+= \int_0^\pi e^◆LB◆-R\sin\theta◆RB◆\, d\theta$.
 
-By Jordan's inequality $\sin\theta \geq \frac{2\theta}{\pi}$ for $\theta \in [0, \pi/2]$:
+By Jordan's inequality $\sin\theta \geq \frac◆LB◆2\theta◆RB◆◆LB◆\pi◆RB◆$ for $\theta \in [0, \pi/2]$:
 
-$\leq 2\int_0^{\pi/2} e^{-2R\theta/\pi}\, d\theta = \frac{\pi}{R}(1 - e^{-R}) \to 0$ as
+$\leq 2\int_0^◆LB◆\pi/2◆RB◆ e^◆LB◆-2R\theta/\pi◆RB◆\, d\theta = \frac◆LB◆\pi◆RB◆◆LB◆R◆RB◆(1 - e^◆LB◆-R◆RB◆) \to 0$ as
 $R \to \infty$. $\blacksquare$
 
-**Problem.** Bound $\left|\int_\gamma \frac{dz}{z^2 + 4}\right|$ where $\gamma$ is $|z| = 3$.
+**Problem.** Bound $\left|\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z^2 + 4◆RB◆\right|$ where $\gamma$ is $|z| = 3$.
 
 On $\gamma$: $|z^2 + 4| \geq |z|^2 - 4 = 9 - 4 = 5$ (reverse triangle inequality). So
-$\left|\frac{1}{z^2 + 4}\right| \leq \frac{1}{5}$.
+$\left|\frac◆LB◆1◆RB◆◆LB◆z^2 + 4◆RB◆\right| \leq \frac◆LB◆1◆RB◆◆LB◆5◆RB◆$.
 
 Length of $\gamma$: $L = 2\pi \cdot 3 = 6\pi$.
 
-$\left|\int_\gamma \frac{dz}{z^2 + 4}\right| \leq \frac{1}{5} \cdot 6\pi = \frac{6\pi}{5}$.
+$\left|\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z^2 + 4◆RB◆\right| \leq \frac◆LB◆1◆RB◆◆LB◆5◆RB◆ \cdot 6\pi = \frac◆LB◆6\pi◆RB◆◆LB◆5◆RB◆$.
 
 </details>
 
@@ -647,11 +647,11 @@ $\sin(\pi + i) = \sin\pi\cosh 1 + i\cos\pi\sinh 1 = -i\sinh 1$.
 
 So the integral equals $-i\sinh 1$.
 
-**Problem.** Evaluate $\int_\gamma e^{2z}\, dz$ where $\gamma$ is any path from $1$ to $i$.
+**Problem.** Evaluate $\int_\gamma e^◆LB◆2z◆RB◆\, dz$ where $\gamma$ is any path from $1$ to $i$.
 
-Antiderivative: $\frac{1}{2}e^{2z}$.
+Antiderivative: $\frac◆LB◆1◆RB◆◆LB◆2◆RB◆e^◆LB◆2z◆RB◆$.
 
-$\int_\gamma e^{2z}\, dz = \frac{1}{2}(e^{2i} - e^{2})$.
+$\int_\gamma e^◆LB◆2z◆RB◆\, dz = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(e^◆LB◆2i◆RB◆ - e^◆LB◆2◆RB◆)$.
 
 </details>
 
@@ -676,17 +676,17 @@ By the Cauchy-Riemann equations. $\blacksquare$
 
 ### 5.2 Connected Domains
 
-A domain $D \subseteq \mathbb{C}$ is ** connected** if every simple closed contour in $D$ can Be
+A domain $D \subseteq \mathbb◆LB◆C◆RB◆$ is ** connected** if every simple closed contour in $D$ can Be
 continuously shrunk to a point within $D$.
 
 **Cauchy's theorem may fail on multiply connected domains.** For example,
-$\int_\gamma \frac{1}{z}\, dz = 2\pi i$ where $\gamma$ is the unit circle (traversing a region that
+$\int_\gamma \frac◆LB◆1◆RB◆◆LB◆z◆RB◆\, dz = 2\pi i$ where $\gamma$ is the unit circle (traversing a region that
 Excludes the singularity at $z = 0$).
 
 ### 5.3 Path Independence
 
 **Corollary 5.2.** If $f$ is analytic on a connected domain $D$Then the integral
-$\int_{z_0}^{z_1} f(z)\, dz$ is independent of the path from $z_0$ to $z_1$ in $D$.
+$\int_◆LB◆z_0◆RB◆^◆LB◆z_1◆RB◆ f(z)\, dz$ is independent of the path from $z_0$ to $z_1$ in $D$.
 
 ### 5.4 Antiderivatives
 
@@ -704,7 +704,7 @@ $\gamma, \gamma_1, \ldots, \gamma_n$ where $\gamma_1, \ldots, \gamma_n$ Lie in t
 $\gamma$ and the region between $\gamma$ and the $\gamma_k$ is contained in $D$ And all contours are
 positively oriented, then
 
-$$\int_\gamma f(z)\, dz = \sum_{k=1}^n \int_{\gamma_k} f(z)\, dz$$
+$$\int_\gamma f(z)\, dz = \sum_◆LB◆k=1◆RB◆^n \int_◆LB◆\gamma_k◆RB◆ f(z)\, dz$$
 
 ### 5.6 Deformation of Contours
 
@@ -712,7 +712,7 @@ $$\int_\gamma f(z)\, dz = \sum_{k=1}^n \int_{\gamma_k} f(z)\, dz$$
 Closed contours $\gamma_1$ and $\gamma_2$ where one can be continuously deformed into the other
 Within the domain of analyticity of $f$Then
 
-$$\int_{\gamma_1} f(z)\, dz = \int_{\gamma_2} f(z)\, dz$$
+$$\int_◆LB◆\gamma_1◆RB◆ f(z)\, dz = \int_◆LB◆\gamma_2◆RB◆ f(z)\, dz$$
 
 _Proof._ This follows directly from Theorem 5.4 applied to the region between $\gamma_1$ and
 $\gamma_2$. $\blacksquare$
@@ -723,27 +723,27 @@ _Remark._ This theorem is enormously useful: we can replace a complicated contou
 <details>
 <summary>Solution</summary>
 
-**Problem.** Evaluate $\int_\gamma \frac{dz}{z - 2}$ where $\gamma$ is the ellipse
-$\frac{x^2}{4} + \frac{y^2}{9} = 1$.
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z - 2◆RB◆$ where $\gamma$ is the ellipse
+$\frac◆LB◆x^2◆RB◆◆LB◆4◆RB◆ + \frac◆LB◆y^2◆RB◆◆LB◆9◆RB◆ = 1$.
 
-Since $z = 2$ is inside the ellipse and $\frac{1}{z - 2}$ is analytic everywhere else, By
+Since $z = 2$ is inside the ellipse and $\frac◆LB◆1◆RB◆◆LB◆z - 2◆RB◆$ is analytic everywhere else, By
 deformation of contours we can replace $\gamma$ with a small circle around $z = 2$:
 
-$\int_\gamma \frac{dz}{z - 2} = 2\pi i$.
+$\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z - 2◆RB◆ = 2\pi i$.
 
-**Problem.** Evaluate $\int_\gamma \frac{e^z}{z}\, dz$ where $\gamma$ is the square with vertices
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆e^z◆RB◆◆LB◆z◆RB◆\, dz$ where $\gamma$ is the square with vertices
 $\pm 2 \pm 2i$.
 
-$\frac{e^z}{z}$ is analytic on and inside $\gamma$ except at $z = 0$. By deformation:
-$\int_\gamma \frac{e^z}{z}\, dz = \int_{|z|=r} \frac{e^z}{z}\, dz = 2\pi i \cdot e^0 = 2\pi i$.
+$\frac◆LB◆e^z◆RB◆◆LB◆z◆RB◆$ is analytic on and inside $\gamma$ except at $z = 0$. By deformation:
+$\int_\gamma \frac◆LB◆e^z◆RB◆◆LB◆z◆RB◆\, dz = \int_◆LB◆|z|=r◆RB◆ \frac◆LB◆e^z◆RB◆◆LB◆z◆RB◆\, dz = 2\pi i \cdot e^0 = 2\pi i$.
 
-**Problem.** Evaluate $\int_\gamma \frac{dz}{z^2 - 1}$ where $\gamma$ is $|z| = 2$.
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z^2 - 1◆RB◆$ where $\gamma$ is $|z| = 2$.
 
-$\frac{1}{z^2 - 1} = \frac{1}{2}\left(\frac{1}{z-1} - \frac{1}{z+1}\right)$.
+$\frac◆LB◆1◆RB◆◆LB◆z^2 - 1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\left(\frac◆LB◆1◆RB◆◆LB◆z-1◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆z+1◆RB◆\right)$.
 
 Both $z = \pm 1$ are inside $|z| = 2$.
 
-$\int_\gamma \frac{dz}{z^2 - 1} = \frac{1}{2}(2\pi i - 2\pi i) = 0$.
+$\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z^2 - 1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(2\pi i - 2\pi i) = 0$.
 
 </details>
 
@@ -754,35 +754,35 @@ $\int_\gamma \frac{dz}{z^2 - 1} = \frac{1}{2}(2\pi i - 2\pi i) = 0$.
 **Theorem 6.1 (Cauchy's Integral Formula).** If $f$ is analytic on a connected domain Containing a
 simple closed positively oriented contour $\gamma$And $z_0$ is inside $\gamma$Then
 
-$$f(z_0) = \frac{1}{2\pi i}\int_\gamma \frac{f(z)}{z - z_0}\, dz$$
+$$f(z_0) = \frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆z - z_0◆RB◆\, dz$$
 
 _Proof._ Let $\gamma_\varepsilon$ be a small circle of radius $\varepsilon$ around $z_0$. Since
-$\frac{f(z)}{z - z_0}$ is analytic on the region between $\gamma$ and $\gamma_\varepsilon$
+$\frac◆LB◆f(z)◆RB◆◆LB◆z - z_0◆RB◆$ is analytic on the region between $\gamma$ and $\gamma_\varepsilon$
 
-$\int_\gamma \frac{f(z)}{z - z_0}\, dz = \int_{\gamma_\varepsilon} \frac{f(z)}{z - z_0}\, dz$
+$\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆z - z_0◆RB◆\, dz = \int_◆LB◆\gamma_\varepsilon◆RB◆ \frac◆LB◆f(z)◆RB◆◆LB◆z - z_0◆RB◆\, dz$
 
 On $\gamma_\varepsilon$: $f(z) = f(z_0) + (z - z_0)f'(\zeta)$ for some $\zeta$ between $z$ and
 $z_0$.
 
-$= \int_{\gamma_\varepsilon} \frac{f(z_0)}{z - z_0}\, dz + \int_{\gamma_\varepsilon} f'(\zeta)\, dz = f(z_0) \cdot 2\pi i + 0$
+$= \int_◆LB◆\gamma_\varepsilon◆RB◆ \frac◆LB◆f(z_0)◆RB◆◆LB◆z - z_0◆RB◆\, dz + \int_◆LB◆\gamma_\varepsilon◆RB◆ f'(\zeta)\, dz = f(z_0) \cdot 2\pi i + 0$
 
-Since $\int_{\gamma_\varepsilon} \frac{dz}{z - z_0} = 2\pi i$ (parameterize
-$z = z_0 + \varepsilon e^{i\theta}$) and $\int_{\gamma_\varepsilon} f'(\zeta)\, dz \to 0$ as
+Since $\int_◆LB◆\gamma_\varepsilon◆RB◆ \frac◆LB◆dz◆RB◆◆LB◆z - z_0◆RB◆ = 2\pi i$ (parameterize
+$z = z_0 + \varepsilon e^◆LB◆i\theta◆RB◆$) and $\int_◆LB◆\gamma_\varepsilon◆RB◆ f'(\zeta)\, dz \to 0$ as
 $\varepsilon \to 0$ by the ML inequality. $\blacksquare$
 
 ### 6.2 Derivatives
 
 **Theorem 6.2 (Cauchy's Integral Formula for Derivatives).** Under the same conditions,
 
-$$f^{(n)}(z_0) = \frac{n!}{2\pi i}\int_\gamma \frac{f(z)}{(z - z_0)^{n+1}}\, dz$$
+$$f^◆LB◆(n)◆RB◆(z_0) = \frac◆LB◆n!◆RB◆◆LB◆2\pi i◆RB◆\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆(z - z_0)^◆LB◆n+1◆RB◆◆RB◆\, dz$$
 
 _Proof._ We proceed by induction. The base case $n = 0$ is Theorem 6.1. For the inductive step,
 Assume the formula holds for $n$. Using the difference quotient:
 
-$f^{(n+1)}(z_0) = \lim_{h \to 0} \frac{f^{(n)}(z_0 + h) - f^{(n)}(z_0)}{h}
-= \lim_{h \to 0} \frac{n!}{2\pi i}\int_\gamma \frac{1}{h}\left[\frac{f(z)}{(z - z_0 - h)^{n+1}} - \frac{f(z)}{(z - z_0)^{n+1}}\right] dz$
+$f^◆LB◆(n+1)◆RB◆(z_0) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆f^◆LB◆(n)◆RB◆(z_0 + h) - f^◆LB◆(n)◆RB◆(z_0)◆RB◆◆LB◆h◆RB◆
+= \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆n!◆RB◆◆LB◆2\pi i◆RB◆\int_\gamma \frac◆LB◆1◆RB◆◆LB◆h◆RB◆\left[\frac◆LB◆f(z)◆RB◆◆LB◆(z - z_0 - h)^◆LB◆n+1◆RB◆◆RB◆ - \frac◆LB◆f(z)◆RB◆◆LB◆(z - z_0)^◆LB◆n+1◆RB◆◆RB◆\right] dz$
 
-$= \frac{(n+1)!}{2\pi i}\int_\gamma \frac{f(z)}{(z - z_0)^{n+2}}\, dz$
+$= \frac◆LB◆(n+1)!◆RB◆◆LB◆2\pi i◆RB◆\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆(z - z_0)^◆LB◆n+2◆RB◆◆RB◆\, dz$
 
 Where we justified passing the limit inside the integral by uniform convergence of the integrand On
 compact subsets. $\blacksquare$
@@ -796,11 +796,11 @@ This is remarkable: a single complex derivative implies the existence of all der
 **Corollary 6.4 (Cauchy's Estimates).** If $f$ is analytic on and inside a circle $|z - z_0| = R$
 And $|f(z)| \leq M$ on the circle, then
 
-$$|f^{(n)}(z_0)| \leq \frac{n!M}{R^n}$$
+$$|f^◆LB◆(n)◆RB◆(z_0)| \leq \frac◆LB◆n!M◆RB◆◆LB◆R^n◆RB◆$$
 
 _Proof._ From the integral formula:
-$|f^{(n)}(z_0)| = \frac{n!}{2\pi}\left|\int_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^{n+1}}\, dz\right|
-\leq \frac{n!}{2\pi} \cdot \frac{M}{R^{n+1}} \cdot 2\pi R = \frac{n!M}{R^n}$.
+$|f^◆LB◆(n)◆RB◆(z_0)| = \frac◆LB◆n!◆RB◆◆LB◆2\pi◆RB◆\left|\int_◆LB◆|z-z_0|=R◆RB◆ \frac◆LB◆f(z)◆RB◆◆LB◆(z-z_0)^◆LB◆n+1◆RB◆◆RB◆\, dz\right|
+\leq \frac◆LB◆n!◆RB◆◆LB◆2\pi◆RB◆ \cdot \frac◆LB◆M◆RB◆◆LB◆R^◆LB◆n+1◆RB◆◆RB◆ \cdot 2\pi R = \frac◆LB◆n!M◆RB◆◆LB◆R^n◆RB◆$.
 $\blacksquare$
 
 ### 6.4 Liouville's Theorem
@@ -808,7 +808,7 @@ $\blacksquare$
 **Theorem 6.5 (Liouville's Theorem).** Every bounded entire function is constant.
 
 _Proof._ If $|f(z)| \leq M$ for all $z$Then by Cauchy's estimates with $R$ arbitrarily large:
-$|f'(z_0)| \leq \frac{M}{R} \to 0$ as $R \to \infty$. So $f'(z) = 0$ for all $z$Meaning $f$ is
+$|f'(z_0)| \leq \frac◆LB◆M◆RB◆◆LB◆R◆RB◆ \to 0$ as $R \to \infty$. So $f'(z) = 0$ for all $z$Meaning $f$ is
 Constant. $\blacksquare$
 
 **Corollary 6.6.** If $f$ is entire and $|f(z)| \geq M$ for all $z$ (bounded away from zero), then
@@ -819,13 +819,13 @@ _Proof._ $1/f$ is entire and bounded by $1/M$So constant by Liouville. $\blacksq
 ### 6.5 Fundamental Theorem of Algebra
 
 **Theorem 6.7 (Fundamental Theorem of Algebra).** Every non-constant polynomial
-$p(z) \in \mathbb{C}[z]$ has a root in $\mathbb{C}$.
+$p(z) \in \mathbb◆LB◆C◆RB◆[z]$ has a root in $\mathbb◆LB◆C◆RB◆$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
 $|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
 constant, a contradiction. $\blacksquare$
 
-**Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb{C}$
+**Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb◆LB◆C◆RB◆$
 Counting multiplicities.
 
 ### 6.6 Worked Examples: Cauchy's Integral Formula
@@ -833,44 +833,44 @@ Counting multiplicities.
 <details>
 <summary>Solution</summary>
 
-**Problem.** Evaluate $\int_\gamma \frac{e^z}{z - 1}\, dz$ where $\gamma$ is $|z| = 2$.
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆e^z◆RB◆◆LB◆z - 1◆RB◆\, dz$ where $\gamma$ is $|z| = 2$.
 
-_Solution._ The function $\frac{e^z}{z - 1}$ has a singularity at $z = 1$Which lies inside $\gamma$.
+_Solution._ The function $\frac◆LB◆e^z◆RB◆◆LB◆z - 1◆RB◆$ has a singularity at $z = 1$Which lies inside $\gamma$.
 By Cauchy's integral formula with $f(z) = e^z$ and $z_0 = 1$:
 
-$\int_\gamma \frac{e^z}{z - 1}\, dz = 2\pi i \cdot f(1) = 2\pi i \cdot e^1 = 2\pi i e$.
+$\int_\gamma \frac◆LB◆e^z◆RB◆◆LB◆z - 1◆RB◆\, dz = 2\pi i \cdot f(1) = 2\pi i \cdot e^1 = 2\pi i e$.
 $\blacksquare$
 
-**Problem.** Evaluate $\int_\gamma \frac{z^2 + 1}{(z - i)^3}\, dz$ where $\gamma$ is $|z| = 2$.
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆z^2 + 1◆RB◆◆LB◆(z - i)^3◆RB◆\, dz$ where $\gamma$ is $|z| = 2$.
 
 By Cauchy's formula for derivatives with $f(z) = z^2 + 1$ and $z_0 = i$:
 
-$\int_\gamma \frac{f(z)}{(z - i)^3}\, dz = \frac{2\pi i}{2!}\,f''(i)$.
+$\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆(z - i)^3◆RB◆\, dz = \frac◆LB◆2\pi i◆RB◆◆LB◆2!◆RB◆\,f''(i)$.
 
 $f'(z) = 2z$$f''(z) = 2$. So $f''(i) = 2$.
 
-$\int_\gamma \frac{z^2 + 1}{(z - i)^3}\, dz = \frac{2\pi i}{2} \cdot 2 = 2\pi i$. $\blacksquare$
+$\int_\gamma \frac◆LB◆z^2 + 1◆RB◆◆LB◆(z - i)^3◆RB◆\, dz = \frac◆LB◆2\pi i◆RB◆◆LB◆2◆RB◆ \cdot 2 = 2\pi i$. $\blacksquare$
 
-**Problem.** Evaluate $\int_\gamma \frac{\sin z}{z(z - \pi)}\, dz$ where $\gamma$ is $|z| = 4$.
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆\sin z◆RB◆◆LB◆z(z - \pi)◆RB◆\, dz$ where $\gamma$ is $|z| = 4$.
 
 Singularities inside $\gamma$: $z = 0$ and $z = \pi$.
 
-$\frac{\sin z}{z(z - \pi)} = \frac{1}{\pi}\left(\frac{\sin z}{z - \pi} - \frac{\sin z}{z}\right)$.
+$\frac◆LB◆\sin z◆RB◆◆LB◆z(z - \pi)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\pi◆RB◆\left(\frac◆LB◆\sin z◆RB◆◆LB◆z - \pi◆RB◆ - \frac◆LB◆\sin z◆RB◆◆LB◆z◆RB◆\right)$.
 
-At $z = 0$: by CIF, $\int_\gamma \frac{\sin z}{z}\, dz = 2\pi i \cdot \sin(0) = 0$. At $z = \pi$: by
-CIF, $\int_\gamma \frac{\sin z}{z - \pi}\, dz = 2\pi i \cdot \sin(\pi) = 0$.
+At $z = 0$: by CIF, $\int_\gamma \frac◆LB◆\sin z◆RB◆◆LB◆z◆RB◆\, dz = 2\pi i \cdot \sin(0) = 0$. At $z = \pi$: by
+CIF, $\int_\gamma \frac◆LB◆\sin z◆RB◆◆LB◆z - \pi◆RB◆\, dz = 2\pi i \cdot \sin(\pi) = 0$.
 
-$\int_\gamma \frac{\sin z}{z(z - \pi)}\, dz = \frac{1}{\pi}(0 - 0) = 0$.
+$\int_\gamma \frac◆LB◆\sin z◆RB◆◆LB◆z(z - \pi)◆RB◆\, dz = \frac◆LB◆1◆RB◆◆LB◆\pi◆RB◆(0 - 0) = 0$.
 
-**Problem.** Evaluate $\int_\gamma \frac{e^{2z}}{(z - 1)^2(z + 1)}\, dz$ where $\gamma$ is
+**Problem.** Evaluate $\int_\gamma \frac◆LB◆e^◆LB◆2z◆RB◆◆RB◆◆LB◆(z - 1)^2(z + 1)◆RB◆\, dz$ where $\gamma$ is
 $|z| = 3$.
 
 By partial fractions:
-$\frac{1}{(z-1)^2(z+1)} = \frac{1/4}{z+1} - \frac{1/4}{z-1} + \frac{1/2}{(z-1)^2}$.
+$\frac◆LB◆1◆RB◆◆LB◆(z-1)^2(z+1)◆RB◆ = \frac◆LB◆1/4◆RB◆◆LB◆z+1◆RB◆ - \frac◆LB◆1/4◆RB◆◆LB◆z-1◆RB◆ + \frac◆LB◆1/2◆RB◆◆LB◆(z-1)^2◆RB◆$.
 
-$\int_\gamma \frac{e^{2z}}{(z-1)^2(z+1)}\, dz = \frac{1}{4} \cdot 2\pi i \cdot e^{-2} - \frac{1}{4} \cdot 2\pi i \cdot e^2 + \frac{1}{2} \cdot \frac{2\pi i}{1!} \cdot 2e^2$
+$\int_\gamma \frac◆LB◆e^◆LB◆2z◆RB◆◆RB◆◆LB◆(z-1)^2(z+1)◆RB◆\, dz = \frac◆LB◆1◆RB◆◆LB◆4◆RB◆ \cdot 2\pi i \cdot e^◆LB◆-2◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆4◆RB◆ \cdot 2\pi i \cdot e^2 + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ \cdot \frac◆LB◆2\pi i◆RB◆◆LB◆1!◆RB◆ \cdot 2e^2$
 
-$= \frac{\pi i e^{-2}}{2} - \frac{\pi i e^2}{2} + 2\pi i e^2 = \frac{\pi i e^{-2}}{2} + \frac{3\pi i e^2}{2}$.
+$= \frac◆LB◆\pi i e^◆LB◆-2◆RB◆◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\pi i e^2◆RB◆◆LB◆2◆RB◆ + 2\pi i e^2 = \frac◆LB◆\pi i e^◆LB◆-2◆RB◆◆RB◆◆LB◆2◆RB◆ + \frac◆LB◆3\pi i e^2◆RB◆◆LB◆2◆RB◆$.
 
 </details>
 
@@ -880,17 +880,17 @@ $= \frac{\pi i e^{-2}}{2} - \frac{\pi i e^2}{2} + 2\pi i e^2 = \frac{\pi i e^{-2
 
 **Theorem 7.1.** If $f$ is analytic on $|z - z_0| \lt R$Then
 
-$$f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!}(z - z_0)^n$$
+$$f(z) = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆f^◆LB◆(n)◆RB◆(z_0)◆RB◆◆LB◆n!◆RB◆(z - z_0)^n$$
 
 And the series converges uniformly on compact subsets of $|z - z_0| \lt R$.
 
 _Proof._ For $|z - z_0| \lt r \lt R$Apply Cauchy's integral formula on $|\zeta - z_0| = r$:
 
-$f(z) = \frac{1}{2\pi i}\int_{|\zeta - z_0| = r} \frac{f(\zeta)}{\zeta - z}\, d\zeta$
+$f(z) = \frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_◆LB◆|\zeta - z_0| = r◆RB◆ \frac◆LB◆f(\zeta)◆RB◆◆LB◆\zeta - z◆RB◆\, d\zeta$
 
 Write
-$\frac{1}{\zeta - z} = \frac{1}{(\zeta - z_0) - (z - z_0)} = \frac{1}{\zeta - z_0} \cdot \frac{1}{1 - (z - z_0)/(\zeta - z_0)}$
-$= \sum_{n=0}^{\infty} \frac{(z - z_0)^n}{(\zeta - z_0)^{n+1}}$ (geometric series, convergent since
+$\frac◆LB◆1◆RB◆◆LB◆\zeta - z◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆(\zeta - z_0) - (z - z_0)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\zeta - z_0◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆1 - (z - z_0)/(\zeta - z_0)◆RB◆$
+$= \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(z - z_0)^n◆RB◆◆LB◆(\zeta - z_0)^◆LB◆n+1◆RB◆◆RB◆$ (geometric series, convergent since
 $|z - z_0|/|\zeta - z_0| \lt 1$).
 
 Substituting and integrating term by term gives the Taylor series. $\blacksquare$
@@ -900,31 +900,31 @@ $f$.
 
 ### 7.2 Common Taylor Series
 
-$$e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!} = 1 + z + \frac{z^2}{2!} + \cdots$$
+$$e^z = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z^n◆RB◆◆LB◆n!◆RB◆ = 1 + z + \frac◆LB◆z^2◆RB◆◆LB◆2!◆RB◆ + \cdots$$
 
-$$\sin z = \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n+1}}{(2n+1)!}$$
+$$\sin z = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^n z^◆LB◆2n+1◆RB◆◆RB◆◆LB◆(2n+1)!◆RB◆$$
 
-$$\cos z = \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n}}{(2n)!}$$
+$$\cos z = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^n z^◆LB◆2n◆RB◆◆RB◆◆LB◆(2n)!◆RB◆$$
 
-$$\frac{1}{1 - z} = \sum_{n=0}^{\infty} z^n, \quad |z| \lt 1$$
+$$\frac◆LB◆1◆RB◆◆LB◆1 - z◆RB◆ = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ z^n, \quad |z| \lt 1$$
 
-$$\ln(1 + z) = \sum_{n=1}^{\infty} \frac{(-1)^{n+1} z^n}{n}, \quad |z| \lt 1$$
+$$\ln(1 + z) = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^◆LB◆n+1◆RB◆ z^n◆RB◆◆LB◆n◆RB◆, \quad |z| \lt 1$$
 
 ### 7.3 Worked Examples: Taylor Series
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Find the Taylor series of $f(z) = \frac{1}{z}$ centered at $z_0 = 1$.
+**Problem.** Find the Taylor series of $f(z) = \frac◆LB◆1◆RB◆◆LB◆z◆RB◆$ centered at $z_0 = 1$.
 
-$\frac{1}{z} = \frac{1}{1 + (z - 1)} = \sum_{n=0}^{\infty} (-1)^n (z - 1)^n$ for $|z - 1| \lt 1$.
+$\frac◆LB◆1◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆1 + (z - 1)◆RB◆ = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ (-1)^n (z - 1)^n$ for $|z - 1| \lt 1$.
 
 Radius of convergence: distance from $z_0 = 1$ to the singularity at $z = 0$Which is $1$.
 
-**Problem.** Find the Taylor series of $f(z) = \frac{1}{(1 - z)^2}$ centered at $z_0 = 0$.
+**Problem.** Find the Taylor series of $f(z) = \frac◆LB◆1◆RB◆◆LB◆(1 - z)^2◆RB◆$ centered at $z_0 = 0$.
 
-$\frac{1}{(1-z)^2} = \frac{d}{dz}\left[\frac{1}{1 - z}\right] = \frac{d}{dz}\sum_{n=0}^{\infty} z^n
-= \sum_{n=1}^{\infty} nz^{n-1} = \sum_{n=0}^{\infty} (n+1)z^n$
+$\frac◆LB◆1◆RB◆◆LB◆(1-z)^2◆RB◆ = \frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\left[\frac◆LB◆1◆RB◆◆LB◆1 - z◆RB◆\right] = \frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ z^n
+= \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ nz^◆LB◆n-1◆RB◆ = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ (n+1)z^n$
 for $|z| \lt 1$.
 
 **Problem.** Find the Taylor series of $f(z) = e^z \sin z$ up to the $z^4$ term.
@@ -941,16 +941,16 @@ $= z + z^2 + z^3/2 + z^4/6 + \cdots - z^3/6 - z^4/6 + \cdots$ $= z + z^2 + z^3/3
 
 **Theorem 7.2 (Laurent Series).** If $f$ is analytic on the annulus $r \lt |z - z_0| \lt R$ Then
 
-$$f(z) = \sum_{n=-\infty}^{\infty} a_n(z - z_0)^n = \cdots + \frac{a_{-2}}{(z - z_0)^2} + \frac{a_{-1}}{z - z_0} + a_0 + a_1(z - z_0) + \cdots$$
+$$f(z) = \sum_◆LB◆n=-\infty◆RB◆^◆LB◆\infty◆RB◆ a_n(z - z_0)^n = \cdots + \frac◆LB◆a_◆LB◆-2◆RB◆◆RB◆◆LB◆(z - z_0)^2◆RB◆ + \frac◆LB◆a_◆LB◆-1◆RB◆◆RB◆◆LB◆z - z_0◆RB◆ + a_0 + a_1(z - z_0) + \cdots$$
 
 Where
 
-$$a_n = \frac{1}{2\pi i}\int_\gamma \frac{f(z)}{(z - z_0)^{n+1}}\, dz$$
+$$a_n = \frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆(z - z_0)^◆LB◆n+1◆RB◆◆RB◆\, dz$$
 
 For any simple closed contour $\gamma$ in the annulus encircling $z_0$.
 
-The **principal part** is $\sum_{n=-\infty}^{-1} a_n(z - z_0)^n$ (negative powers). The **analytic
-Part** is $\sum_{n=0}^{\infty} a_n(z - z_0)^n$ (non-negative powers).
+The **principal part** is $\sum_◆LB◆n=-\infty◆RB◆^◆LB◆-1◆RB◆ a_n(z - z_0)^n$ (negative powers). The **analytic
+Part** is $\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ a_n(z - z_0)^n$ (non-negative powers).
 
 ### 7.5 Classification of Laurent Series
 
@@ -964,39 +964,39 @@ Laurent expansions in different annuli.
 <details>
 <summary>Solution</summary>
 
-**Problem.** Find the Laurent series of $f(z) = \frac{1}{z(z-1)}$ in $0 \lt |z| \lt 1$.
+**Problem.** Find the Laurent series of $f(z) = \frac◆LB◆1◆RB◆◆LB◆z(z-1)◆RB◆$ in $0 \lt |z| \lt 1$.
 
-_Solution._ Using partial fractions: $\frac{1}{z(z-1)} = \frac{1}{z-1} - \frac{1}{z}$.
+_Solution._ Using partial fractions: $\frac◆LB◆1◆RB◆◆LB◆z(z-1)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆z-1◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆z◆RB◆$.
 
-In $|z| \lt 1$: $\frac{1}{z - 1} = -\frac{1}{1 - z} = -\sum_{n=0}^{\infty} z^n$.
+In $|z| \lt 1$: $\frac◆LB◆1◆RB◆◆LB◆z - 1◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆1 - z◆RB◆ = -\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ z^n$.
 
-So $f(z) = -\sum_{n=0}^{\infty} z^n - \frac{1}{z} = \cdots - z^2 - z - 1 - \frac{1}{z}$.
+So $f(z) = -\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ z^n - \frac◆LB◆1◆RB◆◆LB◆z◆RB◆ = \cdots - z^2 - z - 1 - \frac◆LB◆1◆RB◆◆LB◆z◆RB◆$.
 
 The principal part is $-1/z$So $z = 0$ is a simple pole. $\blacksquare$
 
-**Problem.** Find the Laurent series of $f(z) = \frac{1}{z(z-1)}$ in $1 \lt |z| \lt \infty$.
+**Problem.** Find the Laurent series of $f(z) = \frac◆LB◆1◆RB◆◆LB◆z(z-1)◆RB◆$ in $1 \lt |z| \lt \infty$.
 
 In $|z| \gt 1$:
-$\frac{1}{z - 1} = \frac{1}{z} \cdot \frac{1}{1 - 1/z} = \sum_{n=2}^{\infty} z^{-n}$.
+$\frac◆LB◆1◆RB◆◆LB◆z - 1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆z◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆1 - 1/z◆RB◆ = \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ z^◆LB◆-n◆RB◆$.
 
-$f(z) = \sum_{n=2}^{\infty} z^{-n} - \frac{1}{z} = \frac{1}{z^2} + \frac{1}{z^3} + \cdots$
+$f(z) = \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ z^◆LB◆-n◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆z^2◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆z^3◆RB◆ + \cdots$
 
-**Problem.** Find the Laurent series of $f(z) = \frac{e^z}{z^2}$ in $0 \lt |z| \lt \infty$.
+**Problem.** Find the Laurent series of $f(z) = \frac◆LB◆e^z◆RB◆◆LB◆z^2◆RB◆$ in $0 \lt |z| \lt \infty$.
 
-$e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$So
-$f(z) = \sum_{n=0}^{\infty} \frac{z^{n-2}}{n!}
-= \frac{1}{z^2} + \frac{1}{z} + \frac{1}{2} + \frac{z}{6} + \cdots$
+$e^z = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z^n◆RB◆◆LB◆n!◆RB◆$So
+$f(z) = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z^◆LB◆n-2◆RB◆◆RB◆◆LB◆n!◆RB◆
+= \frac◆LB◆1◆RB◆◆LB◆z^2◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆z◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ + \frac◆LB◆z◆RB◆◆LB◆6◆RB◆ + \cdots$
 
-Residue at $z = 0$: $a_{-1} = 1$.
+Residue at $z = 0$: $a_◆LB◆-1◆RB◆ = 1$.
 
-**Problem.** Find the Laurent series of $f(z) = \frac{1}{z^2(z - 3)}$ in $0 \lt |z| \lt 3$.
+**Problem.** Find the Laurent series of $f(z) = \frac◆LB◆1◆RB◆◆LB◆z^2(z - 3)◆RB◆$ in $0 \lt |z| \lt 3$.
 
-$\frac{1}{z - 3} = -\frac{1}{3}\sum_{n=0}^{\infty} \frac{z^n}{3^n}$.
+$\frac◆LB◆1◆RB◆◆LB◆z - 3◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆3◆RB◆\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z^n◆RB◆◆LB◆3^n◆RB◆$.
 
-$f(z) = -\sum_{n=0}^{\infty} \frac{z^{n-2}}{3^{n+1}}
-= -\frac{1}{3z^2} - \frac{1}{9z} - \frac{1}{27} - \frac{z}{81} - \cdots$
+$f(z) = -\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z^◆LB◆n-2◆RB◆◆RB◆◆LB◆3^◆LB◆n+1◆RB◆◆RB◆
+= -\frac◆LB◆1◆RB◆◆LB◆3z^2◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆9z◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆27◆RB◆ - \frac◆LB◆z◆RB◆◆LB◆81◆RB◆ - \cdots$
 
-Residue at $z = 0$: $a_{-1} = -\frac{1}{9}$.
+Residue at $z = 0$: $a_◆LB◆-1◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆9◆RB◆$.
 
 </details>
 
@@ -1004,19 +1004,19 @@ Residue at $z = 0$: $a_{-1} = -\frac{1}{9}$.
 
 **Definition.** The **residue at infinity** of $f$ is defined as
 
-$$\mathrm{Res(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f(z)\, dz$$
+$$\mathrm◆LB◆Res(f, \infty) = -\frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_◆LB◆|z|=R◆RB◆ f(z)\, dz$$
 
 For sufficiently large $R$ (enclosing all finite singularities).
 
-**Proposition 7.4.** For a function $f$ with finitely many singularities in $\mathbb{C}$:
+**Proposition 7.4.** For a function $f$ with finitely many singularities in $\mathbb◆LB◆C◆RB◆$:
 
-$$\sum_{\mathrm{all\ finite\  z_k} \mathrm{Res(f, z_k) + \mathrm{Res(f, \infty) = 0$$
+$$\sum_◆LB◆\mathrm◆LB◆all\ finite\  z_k◆RB◆ \mathrm◆LB◆Res(f, z_k) + \mathrm◆LB◆Res(f, \infty) = 0$$
 
 _Proof._ By the residue theorem applied to $|z| = R$ enclosing all finite singularities:
 
-$\int_{|z|=R} f\, dz = 2\pi i \sum_{\mathrm{finite} \mathrm{Res(f, z_k)$.
+$\int_◆LB◆|z|=R◆RB◆ f\, dz = 2\pi i \sum_◆LB◆\mathrm◆LB◆finite◆RB◆ \mathrm◆LB◆Res(f, z_k)$.
 
-But $\mathrm{Res(f, \infty) = -\frac{1}{2\pi i}\int_{|z|=R} f\, dz$So the sum is zero.
+But $\mathrm◆LB◆Res(f, \infty) = -\frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_◆LB◆|z|=R◆RB◆ f\, dz$So the sum is zero.
 $\blacksquare$
 
 ## 8. Singularities and Residue Theory
@@ -1030,14 +1030,14 @@ $z_0$).
 
 1. **Removable singularity**: $a_n = 0$ for all $n \lt 0$. Can be removed by redefining
    $f(z_0) = a_0$.
-2. **Pole of order $m$**: $a_{-m} \neq 0$ and $a_n = 0$ for $n \lt -m$. The principal part is
+2. **Pole of order $m$**: $a_◆LB◆-m◆RB◆ \neq 0$ and $a_n = 0$ for $n \lt -m$. The principal part is
    finite.
 3. **Essential singularity**: infinitely many non-zero $a_n$ with $n \lt 0$.
 
 **Proposition 8.1 (Riemann's Removable Singularity Theorem).** If $f$ is bounded near $z_0$Then
 $z_0$ is a removable singularity.
 
-**Proposition 8.2.** $z_0$ is a pole of order $m$ if and only if $\lim_{z \to z_0} (z - z_0)^m f(z)$
+**Proposition 8.2.** $z_0$ is a pole of order $m$ if and only if $\lim_◆LB◆z \to z_0◆RB◆ (z - z_0)^m f(z)$
 Exists and is non-zero.
 
 **Theorem 8.3 (Casorati-Weierstrass).** If $z_0$ is an essential singularity of $f$Then $f$ takes
@@ -1048,30 +1048,30 @@ Values arbitrarily close to any complex number in every neighbourhood of $z_0$.
 <details>
 <summary>Solution</summary>
 
-**Problem.** Classify the singularities of $f(z) = \frac{\sin z}{z}$.
+**Problem.** Classify the singularities of $f(z) = \frac◆LB◆\sin z◆RB◆◆LB◆z◆RB◆$.
 
 $z = 0$: $\sin z = z - z^3/6 + \cdots$So $f(z) = 1 - z^2/6 + \cdots$. No negative powers, so $z = 0$
 is a removable singularity. $f(0) = 1$ by continuity.
 
-**Problem.** Classify the singularities of $f(z) = \frac{e^z - 1}{z^2}$.
+**Problem.** Classify the singularities of $f(z) = \frac◆LB◆e^z - 1◆RB◆◆LB◆z^2◆RB◆$.
 
-$z = 0$: $e^z - 1 = z + z^2/2 + \cdots$So $f(z) = \frac{1}{z} + \frac{1}{2} + \cdots$. Principal
+$z = 0$: $e^z - 1 = z + z^2/2 + \cdots$So $f(z) = \frac◆LB◆1◆RB◆◆LB◆z◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ + \cdots$. Principal
 part is $1/z$So $z = 0$ is a simple pole with residue $1$.
 
-**Problem.** Classify the singularity of $f(z) = e^{1/z}$ at $z = 0$.
+**Problem.** Classify the singularity of $f(z) = e^◆LB◆1/z◆RB◆$ at $z = 0$.
 
-$e^{1/z} = \sum_{n=0}^{\infty} \frac{1}{n!\, z^n} = 1 + \frac{1}{z} + \frac{1}{2z^2} + \cdots$
+$e^◆LB◆1/z◆RB◆ = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n!\, z^n◆RB◆ = 1 + \frac◆LB◆1◆RB◆◆LB◆z◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆2z^2◆RB◆ + \cdots$
 
 Infinitely many negative powers $\Rightarrow$ $z = 0$ is an essential singularity.
 
-**Problem.** Classify the singularities of $f(z) = \frac{z + 1}{z^3(z^2 + 1)}$.
+**Problem.** Classify the singularities of $f(z) = \frac◆LB◆z + 1◆RB◆◆LB◆z^3(z^2 + 1)◆RB◆$.
 
 $z = 0$: pole of order $3$. $z = i$: simple pole. $z = -i$: simple pole.
 
-**Problem.** Determine the type of singularity of $f(z) = \frac{z}{\sin z}$ at $z = 0$.
+**Problem.** Determine the type of singularity of $f(z) = \frac◆LB◆z◆RB◆◆LB◆\sin z◆RB◆$ at $z = 0$.
 
-$\sin z = z - z^3/6 + \cdots$So $f(z) = \frac{1}{1 - z^2/6 + \cdots}
-= 1 + \frac{z^2}{6} + \cdots$.
+$\sin z = z - z^3/6 + \cdots$So $f(z) = \frac◆LB◆1◆RB◆◆LB◆1 - z^2/6 + \cdots◆RB◆
+= 1 + \frac◆LB◆z^2◆RB◆◆LB◆6◆RB◆ + \cdots$.
 
 No negative powers, so $z = 0$ is a removable singularity with $f(0) = 1$.
 
@@ -1079,10 +1079,10 @@ No negative powers, so $z = 0$ is a removable singularity with $f(0) = 1$.
 
 ### 8.3 Definition of the Residue
 
-**Definition.** The **residue** of $f$ at an isolated singularity $z_0$ is the coefficient $a_{-1}$
+**Definition.** The **residue** of $f$ at an isolated singularity $z_0$ is the coefficient $a_◆LB◆-1◆RB◆$
 In the Laurent expansion:
 
-$$\mathrm{Res(f, z_0) = a_{-1} = \frac{1}{2\pi i}\int_\gamma f(z)\, dz$$
+$$\mathrm◆LB◆Res(f, z_0) = a_◆LB◆-1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_\gamma f(z)\, dz$$
 
 Where $\gamma$ is a small positively oriented circle around $z_0$.
 
@@ -1090,33 +1090,33 @@ Where $\gamma$ is a small positively oriented circle around $z_0$.
 
 **For a simple pole at $z_0$:**
 
-$$\mathrm{Res(f, z_0) = \lim_{z \to z_0} (z - z_0)f(z)$$
+$$\mathrm◆LB◆Res(f, z_0) = \lim_◆LB◆z \to z_0◆RB◆ (z - z_0)f(z)$$
 
 If $f = g/h$ where $g(z_0) \neq 0$$h(z_0) = 0$$h'(z_0) \neq 0$:
 
-$$\mathrm{Res(f, z_0) = \frac{g(z_0)}{h'(z_0)}$$
+$$\mathrm◆LB◆Res(f, z_0) = \frac◆LB◆g(z_0)◆RB◆◆LB◆h'(z_0)◆RB◆$$
 
 **For a pole of order $m$ at $z_0$:**
 
-$$\mathrm{Res(f, z_0) = \frac{1}{(m-1)!}\lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}}\left[(z - z_0)^m f(z)\right]$$
+$$\mathrm◆LB◆Res(f, z_0) = \frac◆LB◆1◆RB◆◆LB◆(m-1)!◆RB◆\lim_◆LB◆z \to z_0◆RB◆ \frac◆LB◆d^◆LB◆m-1◆RB◆◆RB◆◆LB◆dz^◆LB◆m-1◆RB◆◆RB◆\left[(z - z_0)^m f(z)\right]$$
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Find the residue of $f(z) = \frac{z}{z^2 + 4z + 3}$ at each pole.
+**Problem.** Find the residue of $f(z) = \frac◆LB◆z◆RB◆◆LB◆z^2 + 4z + 3◆RB◆$ at each pole.
 
 $z^2 + 4z + 3 = (z + 1)(z + 3)$So simple poles at $z = -1$ and $z = -3$.
 
-At $z = -1$: $\mathrm{Res = \lim_{z \to -1} \frac{z}{z + 3} = \frac{-1}{2}$. At $z = -3$:
-$\mathrm{Res = \lim_{z \to -3} \frac{z}{z + 1} = \frac{-3}{-2} = \frac{3}{2}$.
+At $z = -1$: $\mathrm◆LB◆Res = \lim_◆LB◆z \to -1◆RB◆ \frac◆LB◆z◆RB◆◆LB◆z + 3◆RB◆ = \frac◆LB◆-1◆RB◆◆LB◆2◆RB◆$. At $z = -3$:
+$\mathrm◆LB◆Res = \lim_◆LB◆z \to -3◆RB◆ \frac◆LB◆z◆RB◆◆LB◆z + 1◆RB◆ = \frac◆LB◆-3◆RB◆◆LB◆-2◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆2◆RB◆$.
 
-**Problem.** Find the residue of $f(z) = \frac{e^z}{(z - 1)^2(z - 2)}$ at each pole.
+**Problem.** Find the residue of $f(z) = \frac◆LB◆e^z◆RB◆◆LB◆(z - 1)^2(z - 2)◆RB◆$ at each pole.
 
 At $z = 1$ (pole of order $2$):
-$\mathrm{Res = \frac{d}{dz}\left[\frac{e^z}{z - 2}\right]_{z=1}
-= \frac{e^z(z - 2) - e^z}{(z-2)^2}\Big|_{z=1} = \frac{-e - e}{1} = -2e$.
+$\mathrm◆LB◆Res = \frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\left[\frac◆LB◆e^z◆RB◆◆LB◆z - 2◆RB◆\right]_◆LB◆z=1◆RB◆
+= \frac◆LB◆e^z(z - 2) - e^z◆RB◆◆LB◆(z-2)^2◆RB◆\Big|_◆LB◆z=1◆RB◆ = \frac◆LB◆-e - e◆RB◆◆LB◆1◆RB◆ = -2e$.
 
-At $z = 2$ (simple pole): $\mathrm{Res = \frac{e^2}{(2-1)^2} = e^2$.
+At $z = 2$ (simple pole): $\mathrm◆LB◆Res = \frac◆LB◆e^2◆RB◆◆LB◆(2-1)^2◆RB◆ = e^2$.
 
 </details>
 
@@ -1126,12 +1126,12 @@ At $z = 2$ (simple pole): $\mathrm{Res = \frac{e^2}{(2-1)^2} = e^2$.
 Oriented contour $\gamma$ except for isolated singularities $z_1, z_2, \ldots, z_n$ inside $\gamma$
 Then
 
-$$\int_\gamma f(z)\, dz = 2\pi i \sum_{k=1}^{n} \mathrm{Res(f, z_k)$$
+$$\int_\gamma f(z)\, dz = 2\pi i \sum_◆LB◆k=1◆RB◆^◆LB◆n◆RB◆ \mathrm◆LB◆Res(f, z_k)$$
 
 _Proof._ For each singularity $z_k$Draw a small circle $\gamma_k$ around it. By Cauchy's theorem
 Applied to the multiply connected region between $\gamma$ and the $\gamma_k$:
 
-$\int_\gamma f\, dz = \sum_{k=1}^n \int_{\gamma_k} f\, dz = \sum_{k=1}^n 2\pi i \cdot \mathrm{Res(f, z_k)$.
+$\int_\gamma f\, dz = \sum_◆LB◆k=1◆RB◆^n \int_◆LB◆\gamma_k◆RB◆ f\, dz = \sum_◆LB◆k=1◆RB◆^n 2\pi i \cdot \mathrm◆LB◆Res(f, z_k)$.
 $\blacksquare$
 
 ### 8.6 Worked Examples: Residue Theorem
@@ -1139,26 +1139,26 @@ $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-**Problem 1.** Evaluate $\int_\gamma \frac{e^z}{z(z-1)^2}\, dz$ where $\gamma$ is $|z| = 2$.
+**Problem 1.** Evaluate $\int_\gamma \frac◆LB◆e^z◆RB◆◆LB◆z(z-1)^2◆RB◆\, dz$ where $\gamma$ is $|z| = 2$.
 
 _Solution._ Singularities inside $\gamma$: $z = 0$ (simple pole) and $z = 1$ (pole of order $2$).
 
-At $z = 0$: $\mathrm{Res = \lim_{z \to 0} \frac{e^z}{(z-1)^2} = \frac{1}{(-1)^2} = 1$.
+At $z = 0$: $\mathrm◆LB◆Res = \lim_◆LB◆z \to 0◆RB◆ \frac◆LB◆e^z◆RB◆◆LB◆(z-1)^2◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆(-1)^2◆RB◆ = 1$.
 
 At $z = 1$:
-$\mathrm{Res(f, 1) = \frac{d}{dz}\left[(z-1)^2 \cdot \frac{e^z}{z(z-1)^2}\right]_{z=1} = \frac{d}{dz}\left[\frac{e^z}{z}\right]_{z=1} = \frac{e^z \cdot z - e^z}{z^2}\Big|_{z=1} = \frac{e - e}{1} = 0$.
+$\mathrm◆LB◆Res(f, 1) = \frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\left[(z-1)^2 \cdot \frac◆LB◆e^z◆RB◆◆LB◆z(z-1)^2◆RB◆\right]_◆LB◆z=1◆RB◆ = \frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\left[\frac◆LB◆e^z◆RB◆◆LB◆z◆RB◆\right]_◆LB◆z=1◆RB◆ = \frac◆LB◆e^z \cdot z - e^z◆RB◆◆LB◆z^2◆RB◆\Big|_◆LB◆z=1◆RB◆ = \frac◆LB◆e - e◆RB◆◆LB◆1◆RB◆ = 0$.
 
 $\int_\gamma f\, dz = 2\pi i(1 + 0) = 2\pi i$. $\blacksquare$
 
-**Problem 2.** Evaluate $\int_\gamma \frac{1}{z^4 + 1}\, dz$ where $\gamma$ is $|z| = 2$.
+**Problem 2.** Evaluate $\int_\gamma \frac◆LB◆1◆RB◆◆LB◆z^4 + 1◆RB◆\, dz$ where $\gamma$ is $|z| = 2$.
 
-_Solution._ The poles are the fourth roots of $-1$: $z_k = e^{i\pi/4 + ik\pi/2}$ for
+_Solution._ The poles are the fourth roots of $-1$: $z_k = e^◆LB◆i\pi/4 + ik\pi/2◆RB◆$ for
 $k = 0, 1, 2, 3$. All four lie inside $|z| = 2$.
 
-Each is a simple pole with $\mathrm{Res(f, z_k) = \frac{1}{4z_k^3}$. Since $z_k^4 = -1$:
-$z_k^{-3} = -z_k$So the sum equals $-\frac{1}{4}\sum z_k = 0$.
+Each is a simple pole with $\mathrm◆LB◆Res(f, z_k) = \frac◆LB◆1◆RB◆◆LB◆4z_k^3◆RB◆$. Since $z_k^4 = -1$:
+$z_k^◆LB◆-3◆RB◆ = -z_k$So the sum equals $-\frac◆LB◆1◆RB◆◆LB◆4◆RB◆\sum z_k = 0$.
 
-$\int_\gamma \frac{dz}{z^4 + 1} = 2\pi i \cdot 0 = 0$. $\blacksquare$
+$\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z^4 + 1◆RB◆ = 2\pi i \cdot 0 = 0$. $\blacksquare$
 
 </details>
 
@@ -1173,7 +1173,7 @@ Contour integration is a powerful tool for evaluating definite integrals.
 **Theorem 9.1.** If $f(x) = P(x)/Q(x)$ where $\deg(Q) \geq \deg(P) + 2$ and $Q$ has no real roots,
 Then
 
-$$\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i \sum_{\mathrm{Im(z_k) > 0} \mathrm{Res(f, z_k)$$
+$$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\, dx = 2\pi i \sum_◆LB◆\mathrm◆LB◆Im(z_k) > 0◆RB◆ \mathrm◆LB◆Res(f, z_k)$$
 
 Where the sum is over poles in the upper half-plane.
 
@@ -1183,41 +1183,41 @@ The semicircle vanishes (since $|f(z)| \leq M/R^2$ and the length is $\pi R$). $
 
 ### 9.3 Worked Example
 
-**Problem.** Evaluate $\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1}$.
+**Problem.** Evaluate $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆dx◆RB◆◆LB◆x^2 + 1◆RB◆$.
 
-_Solution._ $f(z) = \frac{1}{z^2 + 1}$ has simple poles at $z = \pm i$.
+_Solution._ $f(z) = \frac◆LB◆1◆RB◆◆LB◆z^2 + 1◆RB◆$ has simple poles at $z = \pm i$.
 
 Only $z = i$ is in the upper half-plane.
 
-$\mathrm{Res\left(\frac{1}{z^2 + 1}, i\right) = \frac{1}{2z}\Big|_{z = i} = \frac{1}{2i}$.
+$\mathrm◆LB◆Res\left(\frac◆LB◆1◆RB◆◆LB◆z^2 + 1◆RB◆, i\right) = \frac◆LB◆1◆RB◆◆LB◆2z◆RB◆\Big|_◆LB◆z = i◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆$.
 
-$\int_{-\infty}^{\infty} \frac{dx}{x^2 + 1} = 2\pi i \cdot \frac{1}{2i} = \pi$. $\blacksquare$
+$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆dx◆RB◆◆LB◆x^2 + 1◆RB◆ = 2\pi i \cdot \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆ = \pi$. $\blacksquare$
 
 ### 9.4 Integrals Involving Trigonometric Functions
 
-For integrals of the form $\int_0^{2\pi} R(\cos\theta, \sin\theta)\, d\theta$Substitute
-$z = e^{i\theta}$So $dz = iz\, d\theta$$\cos\theta = \frac{z + z^{-1}}{2}$
-$\sin\theta = \frac{z - z^{-1}}{2i}$.
+For integrals of the form $\int_0^◆LB◆2\pi◆RB◆ R(\cos\theta, \sin\theta)\, d\theta$Substitute
+$z = e^◆LB◆i\theta◆RB◆$So $dz = iz\, d\theta$$\cos\theta = \frac◆LB◆z + z^◆LB◆-1◆RB◆◆RB◆◆LB◆2◆RB◆$
+$\sin\theta = \frac◆LB◆z - z^◆LB◆-1◆RB◆◆RB◆◆LB◆2i◆RB◆$.
 
-The integral becomes $\int_{|z|=1} f(z)\, dz$ where $f(z)$ is a rational function.
+The integral becomes $\int_◆LB◆|z|=1◆RB◆ f(z)\, dz$ where $f(z)$ is a rational function.
 
 ### 9.5 Worked Example
 
-**Problem.** Evaluate $\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta}$.
+**Problem.** Evaluate $\int_0^◆LB◆2\pi◆RB◆ \frac◆LB◆d\theta◆RB◆◆LB◆2 + \cos\theta◆RB◆$.
 
-_Solution._ Substitute $z = e^{i\theta}$: $d\theta = \frac{dz}{iz}$
-$\cos\theta = \frac{z + 1/z}{2}$.
+_Solution._ Substitute $z = e^◆LB◆i\theta◆RB◆$: $d\theta = \frac◆LB◆dz◆RB◆◆LB◆iz◆RB◆$
+$\cos\theta = \frac◆LB◆z + 1/z◆RB◆◆LB◆2◆RB◆$.
 
-$\int_{|z|=1} \frac{dz}{iz\left(2 + \frac{z + 1/z}{2}\right)} = \int_{|z|=1} \frac{2\, dz}{i(z^2 + 4z + 1)}$
+$\int_◆LB◆|z|=1◆RB◆ \frac◆LB◆dz◆RB◆◆LB◆iz\left(2 + \frac◆LB◆z + 1/z◆RB◆◆LB◆2◆RB◆\right)◆RB◆ = \int_◆LB◆|z|=1◆RB◆ \frac◆LB◆2\, dz◆RB◆◆LB◆i(z^2 + 4z + 1)◆RB◆$
 
-Poles: $z^2 + 4z + 1 = 0 \Rightarrow z = -2 \pm \sqrt{3}$.
+Poles: $z^2 + 4z + 1 = 0 \Rightarrow z = -2 \pm \sqrt◆LB◆3◆RB◆$.
 
-$|z_1| = |-2 + \sqrt{3}| = 2 - \sqrt{3} \lt 1$ (inside).
-$|z_2| = |-2 - \sqrt{3}| = 2 + \sqrt{3} \gt 1$ (outside).
+$|z_1| = |-2 + \sqrt◆LB◆3◆RB◆| = 2 - \sqrt◆LB◆3◆RB◆ \lt 1$ (inside).
+$|z_2| = |-2 - \sqrt◆LB◆3◆RB◆| = 2 + \sqrt◆LB◆3◆RB◆ \gt 1$ (outside).
 
-$\mathrm{Res\left(\frac{1}{z^2 + 4z + 1}, z_1\right) = \frac{1}{2\sqrt{3}}$.
+$\mathrm◆LB◆Res\left(\frac◆LB◆1◆RB◆◆LB◆z^2 + 4z + 1◆RB◆, z_1\right) = \frac◆LB◆1◆RB◆◆LB◆2\sqrt◆LB◆3◆RB◆◆RB◆$.
 
-$\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta} = \frac{2}{i} \cdot 2\pi i \cdot \frac{1}{2\sqrt{3}} = \frac{2\pi}{\sqrt{3}}$.
+$\int_0^◆LB◆2\pi◆RB◆ \frac◆LB◆d\theta◆RB◆◆LB◆2 + \cos\theta◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆i◆RB◆ \cdot 2\pi i \cdot \frac◆LB◆1◆RB◆◆LB◆2\sqrt◆LB◆3◆RB◆◆RB◆ = \frac◆LB◆2\pi◆RB◆◆LB◆\sqrt◆LB◆3◆RB◆◆RB◆$.
 $\blacksquare$
 
 ### 9.6 Jordan's Lemma
@@ -1225,55 +1225,55 @@ $\blacksquare$
 **Theorem 9.2 (Jordan's Lemma).** If $f(z) \to 0$ uniformly as $|z| \to \infty$ in the upper
 Half-plane and $a \gt 0$Then
 
-$$\lim_{R \to \infty} \int_{C_R} e^{iaz}f(z)\, dz = 0$$
+$$\lim_◆LB◆R \to \infty◆RB◆ \int_◆LB◆C_R◆RB◆ e^◆LB◆iaz◆RB◆f(z)\, dz = 0$$
 
-Where $C_R$ is the upper semicircle $|z| = R$$\mathrm{Im(z) \geq 0$.
+Where $C_R$ is the upper semicircle $|z| = R$$\mathrm◆LB◆Im(z) \geq 0$.
 
-This allows evaluation of integrals of the form $\int_{-\infty}^{\infty} f(x)\cos(ax)\, dx$ and
-$\int_{-\infty}^{\infty} f(x)\sin(ax)\, dx$.
+This allows evaluation of integrals of the form $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\cos(ax)\, dx$ and
+$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\sin(ax)\, dx$.
 
 ### 9.7 Fourier-Type Integrals
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Evaluate $\int_{-\infty}^{\infty} \frac{\cos x}{x^2 + 1}\, dx$.
+**Problem.** Evaluate $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆\cos x◆RB◆◆LB◆x^2 + 1◆RB◆\, dx$.
 
 Consider
-$\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \mathrm{Res\!\left(\frac{e^{iz}}{z^2+1}, i\right)$.
+$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆e^◆LB◆ix◆RB◆◆RB◆◆LB◆x^2 + 1◆RB◆\, dx = 2\pi i \cdot \mathrm◆LB◆Res\!\left(\frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z^2+1◆RB◆, i\right)$.
 
-$\mathrm{Res\!\left(\frac{e^{iz}}{z^2+1}, i\right) = \frac{e^{i \cdot i}}{2i} = \frac{e^{-1}}{2i}$.
+$\mathrm◆LB◆Res\!\left(\frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z^2+1◆RB◆, i\right) = \frac◆LB◆e^◆LB◆i \cdot i◆RB◆◆RB◆◆LB◆2i◆RB◆ = \frac◆LB◆e^◆LB◆-1◆RB◆◆RB◆◆LB◆2i◆RB◆$.
 
-$\int_{-\infty}^{\infty} \frac{e^{ix}}{x^2 + 1}\, dx = 2\pi i \cdot \frac{e^{-1}}{2i} = \frac{\pi}{e}$.
+$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆e^◆LB◆ix◆RB◆◆RB◆◆LB◆x^2 + 1◆RB◆\, dx = 2\pi i \cdot \frac◆LB◆e^◆LB◆-1◆RB◆◆RB◆◆LB◆2i◆RB◆ = \frac◆LB◆\pi◆RB◆◆LB◆e◆RB◆$.
 
-Taking real parts: $\int_{-\infty}^{\infty} \frac{\cos x}{x^2 + 1}\, dx = \frac{\pi}{e}$.
+Taking real parts: $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆\cos x◆RB◆◆LB◆x^2 + 1◆RB◆\, dx = \frac◆LB◆\pi◆RB◆◆LB◆e◆RB◆$.
 
-**Problem.** Evaluate $\int_{-\infty}^{\infty} \frac{x \sin x}{x^2 + a^2}\, dx$ for $a \gt 0$.
+**Problem.** Evaluate $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆x \sin x◆RB◆◆LB◆x^2 + a^2◆RB◆\, dx$ for $a \gt 0$.
 
-Consider $\int_{-\infty}^{\infty} \frac{z\, e^{iz}}{z^2 + a^2}\, dz$. Only $z = ia$ is in the upper
+Consider $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z\, e^◆LB◆iz◆RB◆◆RB◆◆LB◆z^2 + a^2◆RB◆\, dz$. Only $z = ia$ is in the upper
 half-plane.
 
-$\mathrm{Res\!\left(\frac{ze^{iz}}{z^2 + a^2}, ia\right) = \frac{ia \cdot e^{i \cdot ia}}{2ia} = \frac{e^{-a}}{2}$.
+$\mathrm◆LB◆Res\!\left(\frac◆LB◆ze^◆LB◆iz◆RB◆◆RB◆◆LB◆z^2 + a^2◆RB◆, ia\right) = \frac◆LB◆ia \cdot e^◆LB◆i \cdot ia◆RB◆◆RB◆◆LB◆2ia◆RB◆ = \frac◆LB◆e^◆LB◆-a◆RB◆◆RB◆◆LB◆2◆RB◆$.
 
-$\int_{-\infty}^{\infty} \frac{x\, e^{ix}}{x^2 + a^2}\, dx = 2\pi i \cdot \frac{e^{-a}}{2} = \pi i\, e^{-a}$.
+$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆x\, e^◆LB◆ix◆RB◆◆RB◆◆LB◆x^2 + a^2◆RB◆\, dx = 2\pi i \cdot \frac◆LB◆e^◆LB◆-a◆RB◆◆RB◆◆LB◆2◆RB◆ = \pi i\, e^◆LB◆-a◆RB◆$.
 
-Taking imaginary parts: $\int_{-\infty}^{\infty} \frac{x \sin x}{x^2 + a^2}\, dx = \pi\, e^{-a}$.
+Taking imaginary parts: $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆x \sin x◆RB◆◆LB◆x^2 + a^2◆RB◆\, dx = \pi\, e^◆LB◆-a◆RB◆$.
 
-**Problem.** Evaluate $\int_0^{2\pi} \frac{\cos 2\theta}{5 + 4\cos\theta}\, d\theta$.
+**Problem.** Evaluate $\int_0^◆LB◆2\pi◆RB◆ \frac◆LB◆\cos 2\theta◆RB◆◆LB◆5 + 4\cos\theta◆RB◆\, d\theta$.
 
-Substitute $z = e^{i\theta}$: $\cos\theta = (z + z^{-1})/2$$\cos 2\theta = (z^2 + z^{-2})/2$.
+Substitute $z = e^◆LB◆i\theta◆RB◆$: $\cos\theta = (z + z^◆LB◆-1◆RB◆)/2$$\cos 2\theta = (z^2 + z^◆LB◆-2◆RB◆)/2$.
 
-$I = \frac{1}{2i}\int_{|z|=1} \frac{z^4 + 1}{z^2(2z + 1)(z + 2)}\, dz$.
+$I = \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆\int_◆LB◆|z|=1◆RB◆ \frac◆LB◆z^4 + 1◆RB◆◆LB◆z^2(2z + 1)(z + 2)◆RB◆\, dz$.
 
 Poles inside $|z| = 1$: $z = 0$ (order $2$) and $z = -1/2$ (simple).
 
 At $z = 0$:
-$\mathrm{Res = \frac{d}{dz}\left[\frac{z^4 + 1}{(2z+1)(z+2)}\right]_{z=0}
-= -\frac{5}{4}$.
+$\mathrm◆LB◆Res = \frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\left[\frac◆LB◆z^4 + 1◆RB◆◆LB◆(2z+1)(z+2)◆RB◆\right]_◆LB◆z=0◆RB◆
+= -\frac◆LB◆5◆RB◆◆LB◆4◆RB◆$.
 
-At $z = -1/2$: $\mathrm{Res = \frac{17/16}{3/4} = \frac{17}{12}$.
+At $z = -1/2$: $\mathrm◆LB◆Res = \frac◆LB◆17/16◆RB◆◆LB◆3/4◆RB◆ = \frac◆LB◆17◆RB◆◆LB◆12◆RB◆$.
 
-$I = \frac{1}{2i} \cdot 2\pi i \left(-\frac{5}{4} + \frac{17}{12}\right) = \frac{\pi}{6}$.
+$I = \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆ \cdot 2\pi i \left(-\frac◆LB◆5◆RB◆◆LB◆4◆RB◆ + \frac◆LB◆17◆RB◆◆LB◆12◆RB◆\right) = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$.
 
 </details>
 
@@ -1281,28 +1281,28 @@ $I = \frac{1}{2i} \cdot 2\pi i \left(-\frac{5}{4} + \frac{17}{12}\right) = \frac
 
 For integrals where the integrand has poles on the real axis, we use the **Cauchy principal value**:
 
-$$\mathrm{PV\!\int_{-\infty}^{\infty} f(x)\, dx = \lim_{\varepsilon \to 0^+} \left(\int_{-\infty}^{a-\varepsilon} f(x)\, dx + \int_{a+\varepsilon}^{\infty} f(x)\, dx\right)$$
+$$\mathrm◆LB◆PV\!\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\, dx = \lim_◆LB◆\varepsilon \to 0^+◆RB◆ \left(\int_◆LB◆-\infty◆RB◆^◆LB◆a-\varepsilon◆RB◆ f(x)\, dx + \int_◆LB◆a+\varepsilon◆RB◆^◆LB◆\infty◆RB◆ f(x)\, dx\right)$$
 
 <details>
 <summary>Solution</summary>
 
-**Problem.** Evaluate $\mathrm{PV\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx$.
+**Problem.** Evaluate $\mathrm◆LB◆PV\!\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\, dx$.
 
-Consider $\oint_\gamma \frac{e^{iz}}{z}\, dz$ where $\gamma$ consists of $[-R, -\varepsilon]$
+Consider $\oint_\gamma \frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z◆RB◆\, dz$ where $\gamma$ consists of $[-R, -\varepsilon]$
 $[\varepsilon, R]$ on the real axis, small upper semicircle $C_\varepsilon$ around $0$And large
 Upper semicircle $C_R$.
 
 No poles inside the contour, so the integral is $0$.
 
 On $C_R$: vanishes as $R \to \infty$ by Jordan's lemma. On $C_\varepsilon$ (indenting above):
-$\int_{C_\varepsilon} \frac{e^{iz}}{z}\, dz \to -i\pi$ as $\varepsilon \to 0$ (half residue
+$\int_◆LB◆C_\varepsilon◆RB◆ \frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z◆RB◆\, dz \to -i\pi$ as $\varepsilon \to 0$ (half residue
 contribution).
 
-$0 = \mathrm{PV\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx + (-i\pi)$.
+$0 = \mathrm◆LB◆PV\!\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆e^◆LB◆ix◆RB◆◆RB◆◆LB◆x◆RB◆\, dx + (-i\pi)$.
 
-$\mathrm{PV\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx = i\pi$.
+$\mathrm◆LB◆PV\!\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆e^◆LB◆ix◆RB◆◆RB◆◆LB◆x◆RB◆\, dx = i\pi$.
 
-Taking imaginary parts: $\mathrm{PV\!\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx = \pi$.
+Taking imaginary parts: $\mathrm◆LB◆PV\!\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\, dx = \pi$.
 
 </details>
 
@@ -1315,7 +1315,7 @@ Mapping preserves angles (both magnitude and orientation) between curves.
 
 ### 10.2 Geometric Interpretation
 
-If $f'(z_0) = re^{i\theta}$Then near $z_0$ the mapping $f$ acts as a rotation by $\theta$ followed
+If $f'(z_0) = re^◆LB◆i\theta◆RB◆$Then near $z_0$ the mapping $f$ acts as a rotation by $\theta$ followed
 By a scaling by $r$. The Jacobian determinant is $|f'(z_0)|^2 \gt 0$So orientation is preserved.
 
 ### 10.3 Common Conformal Mappings
@@ -1326,13 +1326,13 @@ By a scaling by $r$. The Jacobian determinant is $|f'(z_0)|^2 \gt 0$So orientati
 | $w = 1/z$                        | Inversion in the unit circle         |
 | $w = z^2$                        | Squaring (doubles angles)            |
 | $w = e^z$                        | Exponential (maps strips to sectors) |
-| $w = \frac{z - a}{1 - \bar{a}z}$ | Möbius (maps disk to disk)           |
+| $w = \frac◆LB◆z - a◆RB◆◆LB◆1 - \bar◆LB◆a◆RB◆z◆RB◆$ | Möbius (maps disk to disk)           |
 
 ### 10.4 Möbius Transformations
 
 A **Möbius transformation** (or linear fractional transformation) is
 
-$$T(z) = \frac{az + b}{cz + d}, \quad ad - bc \neq 0$$
+$$T(z) = \frac◆LB◆az + b◆RB◆◆LB◆cz + d◆RB◆, \quad ad - bc \neq 0$$
 
 **Proposition 10.1.** Möbius transformations are conformal (where defined) and map circles and lines
 To circles and lines.
@@ -1344,7 +1344,7 @@ $T(z_2) = w_2$$T(z_3) = w_3$.
 
 **Definition.** The **cross-ratio** of four distinct points $z_1, z_2, z_3, z_4$ is
 
-$$(z_1, z_2, z_3, z_4) = \frac{(z_1 - z_3)(z_2 - z_4)}{(z_1 - z_4)(z_2 - z_3)}$$
+$$(z_1, z_2, z_3, z_4) = \frac◆LB◆(z_1 - z_3)(z_2 - z_4)◆RB◆◆LB◆(z_1 - z_4)(z_2 - z_3)◆RB◆$$
 
 **Proposition 10.3.** The cross-ratio is invariant under Möbius transformations:
 $(Tz_1, Tz_2, Tz_3, Tz_4) = (z_1, z_2, z_3, z_4)$.
@@ -1352,42 +1352,42 @@ $(Tz_1, Tz_2, Tz_3, Tz_4) = (z_1, z_2, z_3, z_4)$.
 **Proposition 10.4.** The unique Möbius transformation sending $z_1 \mapsto 0$$z_2 \mapsto 1$
 $z_3 \mapsto \infty$ is
 
-$$T(z) = \frac{(z - z_1)(z_2 - z_3)}{(z - z_3)(z_2 - z_1)}$$
+$$T(z) = \frac◆LB◆(z - z_1)(z_2 - z_3)◆RB◆◆LB◆(z - z_3)(z_2 - z_1)◆RB◆$$
 
 ### 10.6 Classification of Möbius Transformations
 
-A Möbius transformation $T(z) = \frac{az + b}{cz + d}$ is classified by its fixed points (solutions
+A Möbius transformation $T(z) = \frac◆LB◆az + b◆RB◆◆LB◆cz + d◆RB◆$ is classified by its fixed points (solutions
 of $T(z) = z$).
 
 1. **Parabolic:** Exactly one fixed point. Conjugate to $w = z + k$.
-2. **Elliptic:** Two fixed points, $|T'(z_0)| = 1$. Conjugate to a rotation $w = e^{i\theta} z$.
-3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb{R}^+$$T'(z_0) \neq 1$. Conjugate to
+2. **Elliptic:** Two fixed points, $|T'(z_0)| = 1$. Conjugate to a rotation $w = e^◆LB◆i\theta◆RB◆ z$.
+3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb◆LB◆R◆RB◆^+$$T'(z_0) \neq 1$. Conjugate to
    $w = kz$.
-4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb{R} \cup \{z : |z| = 1\}$. Conjugate to
-   $w = ke^{i\theta}z$.
+4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb◆LB◆R◆RB◆ \cup \{z : |z| = 1\}$. Conjugate to
+   $w = ke^◆LB◆i\theta◆RB◆z$.
 
 <details>
 <summary>Solution</summary>
 
 **Problem.** Find the Möbius transformation mapping $0 \mapsto i$$1 \mapsto 0$$\infty \mapsto -i$.
 
-$T(z) = \frac{az + b}{cz + d}$ with $T(0) = i \Rightarrow b/d = i \Rightarrow b = id$.
+$T(z) = \frac◆LB◆az + b◆RB◆◆LB◆cz + d◆RB◆$ with $T(0) = i \Rightarrow b/d = i \Rightarrow b = id$.
 $T(1) = 0 \Rightarrow a = -b = -id$. $T(\infty) = -i \Rightarrow a/c = -i \Rightarrow c = d$.
 
-$T(z) = \frac{-idz + id}{dz + d} = \frac{i(1 - z)}{z + 1}$.
+$T(z) = \frac◆LB◆-idz + id◆RB◆◆LB◆dz + d◆RB◆ = \frac◆LB◆i(1 - z)◆RB◆◆LB◆z + 1◆RB◆$.
 
-**Problem.** Show that $T(z) = \frac{z - 1}{z + 1}$ maps the right half-plane to the unit disk.
+**Problem.** Show that $T(z) = \frac◆LB◆z - 1◆RB◆◆LB◆z + 1◆RB◆$ maps the right half-plane to the unit disk.
 
-If $\mathrm{Re(z) \gt 0$Then $|z - 1| \lt |z + 1|$So $|T(z)| \lt 1$.
+If $\mathrm◆LB◆Re(z) \gt 0$Then $|z - 1| \lt |z + 1|$So $|T(z)| \lt 1$.
 
-Check boundary: $T(i) = \frac{i - 1}{i + 1} = \frac{(i-1)(-i+1)}{(i+1)(-i+1)} = \frac{2}{2} = 1$.
+Check boundary: $T(i) = \frac◆LB◆i - 1◆RB◆◆LB◆i + 1◆RB◆ = \frac◆LB◆(i-1)(-i+1)◆RB◆◆LB◆(i+1)(-i+1)◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆2◆RB◆ = 1$.
 $|T(i)| = 1$. $\checkmark$
 
-**Problem.** Classify $T(z) = \frac{2z + 1}{z + 2}$.
+**Problem.** Classify $T(z) = \frac◆LB◆2z + 1◆RB◆◆LB◆z + 2◆RB◆$.
 
-Fixed points: $z = \frac{2z + 1}{z + 2} \Rightarrow z^2 = 1 \Rightarrow z = \pm 1$.
+Fixed points: $z = \frac◆LB◆2z + 1◆RB◆◆LB◆z + 2◆RB◆ \Rightarrow z^2 = 1 \Rightarrow z = \pm 1$.
 
-$T'(z) = \frac{3}{(z + 2)^2}$. $T'(1) = 1/3$$T'(-1) = 3$.
+$T'(z) = \frac◆LB◆3◆RB◆◆LB◆(z + 2)^2◆RB◆$. $T'(1) = 1/3$$T'(-1) = 3$.
 
 Both multipliers are real and positive (not equal to $1$), so $T$ is hyperbolic.
 
@@ -1396,11 +1396,11 @@ Both multipliers are real and positive (not equal to $1$), so $T$ is hyperbolic.
 ### 10.7 The Riemann Mapping Theorem
 
 **Theorem 10.5 (Riemann Mapping Theorem).** Let $U$ be a connected open proper subset of
-$\mathbb{C}$. Then there exists a bijective conformal map from $U$ onto the unit disk
-$\mathbb{D} = \{z : |z| \lt 1\}$.
+$\mathbb◆LB◆C◆RB◆$. Then there exists a bijective conformal map from $U$ onto the unit disk
+$\mathbb◆LB◆D◆RB◆ = \{z : |z| \lt 1\}$.
 
 This is one of the most profound results in complex analysis, establishing that all connected
-Domains (other than $\mathbb{C}$ itself) are conformally equivalent.
+Domains (other than $\mathbb◆LB◆C◆RB◆$ itself) are conformally equivalent.
 
 _Remark._ The Riemann mapping theorem is an existence theorem; it does not provide an explicit
 Formula for the conformal map .
@@ -1412,13 +1412,13 @@ Formula for the conformal map .
 **Theorem 11.1 (Liouville's Theorem).** Every bounded entire function is constant.
 
 _Proof._ If $|f(z)| \leq M$ for all $z$Then by Cauchy's estimates with $R$ arbitrarily large:
-$|f'(z_0)| \leq \frac{M}{R} \to 0$ as $R \to \infty$. So $f'(z) = 0$ for all $z$Meaning $f$ is
+$|f'(z_0)| \leq \frac◆LB◆M◆RB◆◆LB◆R◆RB◆ \to 0$ as $R \to \infty$. So $f'(z) = 0$ for all $z$Meaning $f$ is
 Constant. $\blacksquare$
 
 ### 11.2 The Fundamental Theorem of Algebra
 
 **Theorem 11.2 (Fundamental Theorem of Algebra).** Every non-constant polynomial
-$p(z) \in \mathbb{C}[z]$ has a root in $\mathbb{C}$.
+$p(z) \in \mathbb◆LB◆C◆RB◆[z]$ has a root in $\mathbb◆LB◆C◆RB◆$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
 $|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
@@ -1430,30 +1430,30 @@ constant, a contradiction. $\blacksquare$
 Then $|f|$ has no local maximum in $D$.
 
 **Corollary 11.4.** If $f$ is analytic on a bounded domain $D$ and continuous on
-$\bar{D} = D \cup \partial D$Then $|f|$ attains its maximum on $\partial D$.
+$\bar◆LB◆D◆RB◆ = D \cup \partial D$Then $|f|$ attains its maximum on $\partial D$.
 
 ### 11.4 Minimum Modulus Principle
 
 **Theorem 11.5 (Minimum Modulus Principle).** If $f$ is analytic and non-zero on a bounded domain
-$D$ And continuous on $\bar{D}$Then $|f|$ attains its minimum on $\partial D$.
+$D$ And continuous on $\bar◆LB◆D◆RB◆$Then $|f|$ attains its minimum on $\partial D$.
 
 _Remark._ If $f$ has zeros in $D$Then $|f|$ attains its minimum of $0$ at those zeros. The minimum
 modulus principle requires the non-vanishing hypothesis.
 
 ### 11.5 Schwarz Lemma
 
-**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb{D} \to \mathbb{D}$ is analytic with $f(0) = 0$
+**Theorem 11.6 (Schwarz Lemma).** If $f : \mathbb◆LB◆D◆RB◆ \to \mathbb◆LB◆D◆RB◆$ is analytic with $f(0) = 0$
 Then
 
-$$|f(z)| \leq |z| \quad \mathrm{for\ all\  z \in \mathbb{D}$$
+$$|f(z)| \leq |z| \quad \mathrm◆LB◆for\ all\  z \in \mathbb◆LB◆D◆RB◆$$
 
-And $|f'(0)| \leq 1$. Equality in either case implies $f(z) = e^{i\theta} z$ for some real $\theta$.
+And $|f'(0)| \leq 1$. Equality in either case implies $f(z) = e^◆LB◆i\theta◆RB◆ z$ for some real $\theta$.
 
 _Proof._ Define $g(z) = f(z)/z$ for $z \neq 0$ and $g(0) = f'(0)$. Then $g$ is analytic on
-$\mathbb{D}$. For $|z| = r \lt 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum modulus Principle,
+$\mathbb◆LB◆D◆RB◆$. For $|z| = r \lt 1$: $|g(z)| = |f(z)|/|z| \leq 1/r$. By the maximum modulus Principle,
 $|g(z)| \leq 1/r$ for $|z| \leq r$. Letting $r \to 1$: $|g(z)| \leq 1$So $|f(z)| \leq |z|$. Also
 $|f'(0)| = |g(0)| \leq 1$. If $|f'(0)| = 1$Then $|g|$ attains its maximum At an interior point, so
-$g$ is constant: $g(z) = e^{i\theta}$. $\blacksquare$
+$g$ is constant: $g(z) = e^◆LB◆i\theta◆RB◆$. $\blacksquare$
 
 ## 12. Argument Principle and Rouché's Theorem
 
@@ -1462,7 +1462,7 @@ $g$ is constant: $g(z) = e^{i\theta}$. $\blacksquare$
 **Theorem 12.1 (Argument Principle).** If $f$ is meromorphic inside and on a simple closed contour
 $\gamma$ with no zeros or poles on $\gamma$Then
 
-$$\frac{1}{2\pi i}\int_\gamma \frac{f'(z)}{f(z)}\, dz = N - P$$
+$$\frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_\gamma \frac◆LB◆f'(z)◆RB◆◆LB◆f(z)◆RB◆\, dz = N - P$$
 
 Where $N$ is the number of zeros and $P$ is the number of poles of $f$ inside $\gamma$ (counting
 Multiplicities).
@@ -1499,7 +1499,7 @@ $z^4 + z + 1$ has $4$ zeros in $|z| \lt 2$ (same as $z^4$).
 
 On $|z| = 1$: $|3z^2 + 1| \geq |3z^2| - |1| = 2 \gt |z^5| = 1$. By Rouché with $f(z) = 3z^2 + 1$ and
 $g(z) = z^5$: $z^5 + 3z^2 + 1$ has the same number of zeros as $3z^2 + 1$ in $|z| \lt 1$.
-$3z^2 + 1 = 0 \Rightarrow z = \pm i/\sqrt{3}$Both in $|z| \lt 1$. So $2$ zeros.
+$3z^2 + 1 = 0 \Rightarrow z = \pm i/\sqrt◆LB◆3◆RB◆$Both in $|z| \lt 1$. So $2$ zeros.
 
 </details>
 
@@ -1516,7 +1516,7 @@ Continuation** of $f_1$.
 **Theorem 13.1 (Identity Theorem).** If $f$ and $g$ are analytic on a domain $D$ and agree on a set
 With a limit point in $D$Then $f = g$ on all of $D$.
 
-_Proof._ Let $E = \{z \in D : f^{(n)}(z) = g^{(n)}(z) \mathrm{\ for\ all\  n \geq 0\}$. $E$ is
+_Proof._ Let $E = \{z \in D : f^◆LB◆(n)◆RB◆(z) = g^◆LB◆(n)◆RB◆(z) \mathrm◆LB◆\ for\ all\  n \geq 0\}$. $E$ is
 Non-empty (it contains the limit point by continuity of derivatives). $E$ is closed (by continuity).
 If $z_0 \in E$The Taylor series of $f$ and $g$ at $z_0$ coincide, so $f = g$ in a neighbourhood of
 $z_0$Giving $E$ open. Since $D$ is connected, $E = D$. $\blacksquare$
@@ -1530,14 +1530,14 @@ But is not differentiable there. :::
 
 :::caution Common Pitfall Cauchy's theorem requires a connected domain. On a multiply Connected
 domain, the integral of an analytic function around a closed contour may be non-zero. The Classic
-example is $\oint_{|z|=1} dz/z = 2\pi i$. :::
+example is $\oint_◆LB◆|z|=1◆RB◆ dz/z = 2\pi i$. :::
 
 :::caution Common Pitfall When computing residues at poles of order $m \geq 2$The formula involves
 Differentiation. A common error is forgetting the $(m-1)!$ in the denominator or differentiating
 $(z - z_0)^m f(z)$ the wrong number of times. :::
 
 :::caution Common Pitfall The residue at infinity is
-$\mathrm{Res(f, \infty) = -\mathrm{Res(1/z^2 \cdot f(1/z), 0)$. It is NOT $f(\infty)$. For A
+$\mathrm◆LB◆Res(f, \infty) = -\mathrm◆LB◆Res(1/z^2 \cdot f(1/z), 0)$. It is NOT $f(\infty)$. For A
 function that is analytic everywhere in the finite plane except for finitely many singularities, The
 sum of all residues (including the residue at infinity) is zero. :::
 
@@ -1552,7 +1552,7 @@ No zeros in the domain. :::
 
 :::caution Common Pitfall The complex logarithm is multi-valued. When a problem asks for "logarithm"
 without specifying a branch, you must either compute all values or explicitly state which Branch you
-are using. The principal branch $\mathrm{Log\, z$ has a branch cut along $(-\infty, 0]$ And is
+are using. The principal branch $\mathrm◆LB◆Log\, z$ has a branch cut along $(-\infty, 0]$ And is
 undefined on this cut. :::
 
 :::caution Common Pitfall When applying the ML inequality, make sure $M$ is a valid upper bound for
@@ -1563,19 +1563,19 @@ $L$ must be the arc length of the contour, not a diameter or radius. :::
 
 ### Problem 1
 
-Express $z = -\sqrt{3} + i$ in polar form and find all values of $z^{1/3}$.
+Express $z = -\sqrt◆LB◆3◆RB◆ + i$ in polar form and find all values of $z^◆LB◆1/3◆RB◆$.
 
 <details>
 <summary>Solution</summary>
 
-$|z| = \sqrt{3 + 1} = 2$. Since $\mathrm{Re(z) \lt 0$ and $\mathrm{Im(z) \gt 0$:
+$|z| = \sqrt◆LB◆3 + 1◆RB◆ = 2$. Since $\mathrm◆LB◆Re(z) \lt 0$ and $\mathrm◆LB◆Im(z) \gt 0$:
 $\arg(z) = \pi - \pi/6 = 5\pi/6$.
 
-$z = 2\,e^{5\pi i/6}$.
+$z = 2\,e^◆LB◆5\pi i/6◆RB◆$.
 
-$z^{1/3} = 2^{1/3}\, e^{(5\pi/6 + 2\pi k)/3}$ for $k = 0, 1, 2$.
+$z^◆LB◆1/3◆RB◆ = 2^◆LB◆1/3◆RB◆\, e^◆LB◆(5\pi/6 + 2\pi k)/3◆RB◆$ for $k = 0, 1, 2$.
 
-$z_0 = 2^{1/3}\, e^{5\pi i/18}$$z_1 = 2^{1/3}\, e^{17\pi i/18}$$z_2 = 2^{1/3}\, e^{29\pi i/18}$.
+$z_0 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆5\pi i/18◆RB◆$$z_1 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆17\pi i/18◆RB◆$$z_2 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆29\pi i/18◆RB◆$.
 
 _If you get this wrong, revise:_ Section 1.5 (Roots of Complex Numbers).
 
@@ -1583,7 +1583,7 @@ _If you get this wrong, revise:_ Section 1.5 (Roots of Complex Numbers).
 
 ### Problem 2
 
-Let $f(z) = z^2 + \bar{z}^2$. Find where $f$ is differentiable and where it is analytic.
+Let $f(z) = z^2 + \bar◆LB◆z◆RB◆^2$. Find where $f$ is differentiable and where it is analytic.
 
 <details>
 <summary>Solution</summary>
@@ -1604,19 +1604,19 @@ _If you get this wrong, revise:_ Sections 2.4 and 3.1 (Analyticity and Cauchy-Ri
 
 ### Problem 3
 
-Verify that $f(z) = \frac{1}{z^2 + 1}$ satisfies the Cauchy-Riemann equations on its domain and Find
+Verify that $f(z) = \frac◆LB◆1◆RB◆◆LB◆z^2 + 1◆RB◆$ satisfies the Cauchy-Riemann equations on its domain and Find
 $f'(z)$.
 
 <details>
 <summary>Solution</summary>
 
 $f(z) = 1/(z^2 + 1)$ is a rational function with denominator non-zero away from $\pm i$So $f$ Is
-analytic on $\mathbb{C} \setminus \{i, -i\}$.
+analytic on $\mathbb◆LB◆C◆RB◆ \setminus \{i, -i\}$.
 
-By the quotient rule: $f'(z) = \frac{-2z}{(z^2 + 1)^2}$.
+By the quotient rule: $f'(z) = \frac◆LB◆-2z◆RB◆◆LB◆(z^2 + 1)^2◆RB◆$.
 
-Verify via CR at $z = 1$: $u = \frac{x^2 - y^2 + 1}{(x^2 - y^2 + 1)^2 + 4x^2y^2}$
-$v = \frac{-2xy}{(x^2 - y^2 + 1)^2 + 4x^2y^2}$.
+Verify via CR at $z = 1$: $u = \frac◆LB◆x^2 - y^2 + 1◆RB◆◆LB◆(x^2 - y^2 + 1)^2 + 4x^2y^2◆RB◆$
+$v = \frac◆LB◆-2xy◆RB◆◆LB◆(x^2 - y^2 + 1)^2 + 4x^2y^2◆RB◆$.
 
 $u_x(1, 0) = -1/2 = f'(1)$. $\checkmark$
 
@@ -1631,7 +1631,7 @@ Show that $u(x, y) = x^3 - 3xy^2 + 3x^2 - 3y^2$ is harmonic and find its harmoni
 <details>
 <summary>Solution</summary>
 
-$u_{xx} = 6x + 6$$u_{yy} = -6x - 6$. $\Delta u = 0$. $\checkmark$
+$u_◆LB◆xx◆RB◆ = 6x + 6$$u_◆LB◆yy◆RB◆ = -6x - 6$. $\Delta u = 0$. $\checkmark$
 
 By CR: $v_y = u_x = 3x^2 - 3y^2 + 6x$. $v = 3x^2 y - y^3 + 6xy + g(x)$.
 
@@ -1655,7 +1655,7 @@ $z = 1$ to $z = -1$.
 
 Since $z^2 + 2z$ is entire, the integral is path-independent. Let $F(z) = z^3/3 + z^2$.
 
-$\int_\gamma (z^2 + 2z)\, dz = F(-1) - F(1) = \frac{2}{3} - \frac{4}{3} = -\frac{2}{3}$.
+$\int_\gamma (z^2 + 2z)\, dz = F(-1) - F(1) = \frac◆LB◆2◆RB◆◆LB◆3◆RB◆ - \frac◆LB◆4◆RB◆◆LB◆3◆RB◆ = -\frac◆LB◆2◆RB◆◆LB◆3◆RB◆$.
 
 _If you get this wrong, revise:_ Sections 4.5 and 4.7 (Contour Integrals).
 
@@ -1663,7 +1663,7 @@ _If you get this wrong, revise:_ Sections 4.5 and 4.7 (Contour Integrals).
 
 ### Problem 6
 
-Use the ML inequality to bound $\left|\int_\gamma \frac{e^z}{z - 2}\, dz\right|$ where $\gamma$ Is
+Use the ML inequality to bound $\left|\int_\gamma \frac◆LB◆e^z◆RB◆◆LB◆z - 2◆RB◆\, dz\right|$ where $\gamma$ Is
 the circle $|z| = 1$.
 
 <details>
@@ -1671,9 +1671,9 @@ the circle $|z| = 1$.
 
 On $\gamma$: $|z| = 1$So $|e^z| \leq e$ and $|z - 2| \geq 1$.
 
-$\left|\frac{e^z}{z - 2}\right| \leq e$. $L = 2\pi$.
+$\left|\frac◆LB◆e^z◆RB◆◆LB◆z - 2◆RB◆\right| \leq e$. $L = 2\pi$.
 
-$\left|\int_\gamma \frac{e^z}{z - 2}\, dz\right| \leq 2\pi e$.
+$\left|\int_\gamma \frac◆LB◆e^z◆RB◆◆LB◆z - 2◆RB◆\, dz\right| \leq 2\pi e$.
 
 _If you get this wrong, revise:_ Section 4.6 (ML Inequality).
 
@@ -1681,18 +1681,18 @@ _If you get this wrong, revise:_ Section 4.6 (ML Inequality).
 
 ### Problem 7
 
-Evaluate $\oint_\gamma \frac{z + 1}{z^2 - z}\, dz$ where $\gamma$ is $|z| = 2$.
+Evaluate $\oint_\gamma \frac◆LB◆z + 1◆RB◆◆LB◆z^2 - z◆RB◆\, dz$ where $\gamma$ is $|z| = 2$.
 
 <details>
 <summary>Solution</summary>
 
-$\frac{z + 1}{z^2 - z} = \frac{z + 1}{z(z - 1)}$. Simple poles at $z = 0$ and $z = 1$Both inside
+$\frac◆LB◆z + 1◆RB◆◆LB◆z^2 - z◆RB◆ = \frac◆LB◆z + 1◆RB◆◆LB◆z(z - 1)◆RB◆$. Simple poles at $z = 0$ and $z = 1$Both inside
 $|z| = 2$.
 
-At $z = 0$: $\mathrm{Res = \lim_{z \to 0} \frac{z + 1}{z - 1} = -1$. At $z = 1$:
-$\mathrm{Res = \lim_{z \to 1} \frac{z + 1}{z} = 2$.
+At $z = 0$: $\mathrm◆LB◆Res = \lim_◆LB◆z \to 0◆RB◆ \frac◆LB◆z + 1◆RB◆◆LB◆z - 1◆RB◆ = -1$. At $z = 1$:
+$\mathrm◆LB◆Res = \lim_◆LB◆z \to 1◆RB◆ \frac◆LB◆z + 1◆RB◆◆LB◆z◆RB◆ = 2$.
 
-$\oint_\gamma \frac{z + 1}{z^2 - z}\, dz = 2\pi i(-1 + 2) = 2\pi i$.
+$\oint_\gamma \frac◆LB◆z + 1◆RB◆◆LB◆z^2 - z◆RB◆\, dz = 2\pi i(-1 + 2) = 2\pi i$.
 
 _If you get this wrong, revise:_ Sections 8.4 and 8.5 (Residues).
 
@@ -1700,19 +1700,19 @@ _If you get this wrong, revise:_ Sections 8.4 and 8.5 (Residues).
 
 ### Problem 8
 
-Classify all singularities of $f(z) = \frac{e^{1/z}}{z^2 + 1}$ and find all residues.
+Classify all singularities of $f(z) = \frac◆LB◆e^◆LB◆1/z◆RB◆◆RB◆◆LB◆z^2 + 1◆RB◆$ and find all residues.
 
 <details>
 <summary>Solution</summary>
 
-$z = 0$: $e^{1/z}$ has an essential singularity at $0$So $z = 0$ is an essential singularity of $f$.
+$z = 0$: $e^◆LB◆1/z◆RB◆$ has an essential singularity at $0$So $z = 0$ is an essential singularity of $f$.
 $z = i$: simple pole. $z = -i$: simple pole.
 
-At $z = i$: $\mathrm{Res = \frac{e^{1/i}}{2i} = \frac{e^{-i}}{2i}$. At $z = -i$:
-$\mathrm{Res = \frac{e^{1/(-i)}}{-2i} = \frac{e^{i}}{-2i}$.
+At $z = i$: $\mathrm◆LB◆Res = \frac◆LB◆e^◆LB◆1/i◆RB◆◆RB◆◆LB◆2i◆RB◆ = \frac◆LB◆e^◆LB◆-i◆RB◆◆RB◆◆LB◆2i◆RB◆$. At $z = -i$:
+$\mathrm◆LB◆Res = \frac◆LB◆e^◆LB◆1/(-i)◆RB◆◆RB◆◆LB◆-2i◆RB◆ = \frac◆LB◆e^◆LB◆i◆RB◆◆RB◆◆LB◆-2i◆RB◆$.
 
-At $z = 0$: find the coefficient of $1/z$ in $\frac{e^{1/z}}{z^2 + 1}$.
-$\frac{1}{z^2 + 1} = 1 - z^2 + z^4 - \cdots$ near $z = 0$. $e^{1/z} = 1 + 1/z + 1/(2z^2) + \cdots$.
+At $z = 0$: find the coefficient of $1/z$ in $\frac◆LB◆e^◆LB◆1/z◆RB◆◆RB◆◆LB◆z^2 + 1◆RB◆$.
+$\frac◆LB◆1◆RB◆◆LB◆z^2 + 1◆RB◆ = 1 - z^2 + z^4 - \cdots$ near $z = 0$. $e^◆LB◆1/z◆RB◆ = 1 + 1/z + 1/(2z^2) + \cdots$.
 The $1/z$ coefficient in the product: from $1 \cdot 1/z = 1/z$Giving residue $1$.
 
 _If you get this wrong, revise:_ Sections 8.1 and 8.4 (Singularities and Residues).
@@ -1721,23 +1721,23 @@ _If you get this wrong, revise:_ Sections 8.1 and 8.4 (Singularities and Residue
 
 ### Problem 9
 
-Evaluate $\int_0^{2\pi} \frac{\cos\theta}{5 + 4\cos\theta}\, d\theta$.
+Evaluate $\int_0^◆LB◆2\pi◆RB◆ \frac◆LB◆\cos\theta◆RB◆◆LB◆5 + 4\cos\theta◆RB◆\, d\theta$.
 
 <details>
 <summary>Solution</summary>
 
-Substitute $z = e^{i\theta}$:
+Substitute $z = e^◆LB◆i\theta◆RB◆$:
 
-$I = \int_{|z|=1} \frac{(z + z^{-1})/2}{5 + 4(z + z^{-1})/2} \cdot \frac{dz}{iz}
-= \frac{1}{2i}\int_{|z|=1} \frac{z^2 + 1}{z(2z^2 + 5z + 2)}\, dz
-= \frac{1}{2i}\int_{|z|=1} \frac{z^2 + 1}{z(2z + 1)(z + 2)}\, dz$.
+$I = \int_◆LB◆|z|=1◆RB◆ \frac◆LB◆(z + z^◆LB◆-1◆RB◆)/2◆RB◆◆LB◆5 + 4(z + z^◆LB◆-1◆RB◆)/2◆RB◆ \cdot \frac◆LB◆dz◆RB◆◆LB◆iz◆RB◆
+= \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆\int_◆LB◆|z|=1◆RB◆ \frac◆LB◆z^2 + 1◆RB◆◆LB◆z(2z^2 + 5z + 2)◆RB◆\, dz
+= \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆\int_◆LB◆|z|=1◆RB◆ \frac◆LB◆z^2 + 1◆RB◆◆LB◆z(2z + 1)(z + 2)◆RB◆\, dz$.
 
 Poles inside $|z| = 1$: $z = 0$ (simple) and $z = -1/2$ (simple).
 
-At $z = 0$: $\mathrm{Res = \frac{1}{(2 \cdot 0 + 1)(0 + 2)} = \frac{1}{2}$. At $z = -1/2$:
-$\mathrm{Res = \frac{1/4 + 1}{(-1/2)(-1 + 2)} = \frac{5/4}{-1/2} = -\frac{5}{2}$.
+At $z = 0$: $\mathrm◆LB◆Res = \frac◆LB◆1◆RB◆◆LB◆(2 \cdot 0 + 1)(0 + 2)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$. At $z = -1/2$:
+$\mathrm◆LB◆Res = \frac◆LB◆1/4 + 1◆RB◆◆LB◆(-1/2)(-1 + 2)◆RB◆ = \frac◆LB◆5/4◆RB◆◆LB◆-1/2◆RB◆ = -\frac◆LB◆5◆RB◆◆LB◆2◆RB◆$.
 
-$I = \frac{1}{2i} \cdot 2\pi i\left(\frac{1}{2} - \frac{5}{2}\right) = \pi(-2) = -\frac{\pi}{3}$.
+$I = \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆ \cdot 2\pi i\left(\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆5◆RB◆◆LB◆2◆RB◆\right) = \pi(-2) = -\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
 
 _If you get this wrong, revise:_ Section 9.4 (Trigonometric Integrals).
 
@@ -1745,18 +1745,18 @@ _If you get this wrong, revise:_ Section 9.4 (Trigonometric Integrals).
 
 ### Problem 10
 
-Evaluate $\int_{-\infty}^{\infty} \frac{dx}{(x^2 + 1)(x^2 + 4)}$.
+Evaluate $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆dx◆RB◆◆LB◆(x^2 + 1)(x^2 + 4)◆RB◆$.
 
 <details>
 <summary>Solution</summary>
 
-$f(z) = \frac{1}{(z^2 + 1)(z^2 + 4)}$. Poles in upper half-plane: $z = i$ (simple) and $z = 2i$
+$f(z) = \frac◆LB◆1◆RB◆◆LB◆(z^2 + 1)(z^2 + 4)◆RB◆$. Poles in upper half-plane: $z = i$ (simple) and $z = 2i$
 (simple).
 
-At $z = i$: $\mathrm{Res = \frac{1}{(2i)(i^2 + 4)} = \frac{1}{2i \cdot 3} = \frac{1}{6i}$. At
-$z = 2i$: $\mathrm{Res = \frac{1}{(4i - 1)(4i)} = \frac{1}{4i(-3)} = -\frac{1}{12i}$.
+At $z = i$: $\mathrm◆LB◆Res = \frac◆LB◆1◆RB◆◆LB◆(2i)(i^2 + 4)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2i \cdot 3◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆6i◆RB◆$. At
+$z = 2i$: $\mathrm◆LB◆Res = \frac◆LB◆1◆RB◆◆LB◆(4i - 1)(4i)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆4i(-3)◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆12i◆RB◆$.
 
-$\int_{-\infty}^{\infty} f(x)\, dx = 2\pi i\left(\frac{1}{6i} - \frac{1}{12i}\right) = 2\pi i \cdot \frac{1}{12i} = \frac{\pi}{6}$.
+$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\, dx = 2\pi i\left(\frac◆LB◆1◆RB◆◆LB◆6i◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆12i◆RB◆\right) = 2\pi i \cdot \frac◆LB◆1◆RB◆◆LB◆12i◆RB◆ = \frac◆LB◆\pi◆RB◆◆LB◆6◆RB◆$.
 
 _If you get this wrong, revise:_ Section 9.2 (Rational Function Integrals).
 
@@ -1764,14 +1764,14 @@ _If you get this wrong, revise:_ Section 9.2 (Rational Function Integrals).
 
 ### Problem 11
 
-Find the Taylor series of $f(z) = \frac{z}{z^2 + 4}$ centered at $z_0 = 0$ and state the radius Of
+Find the Taylor series of $f(z) = \frac◆LB◆z◆RB◆◆LB◆z^2 + 4◆RB◆$ centered at $z_0 = 0$ and state the radius Of
 convergence.
 
 <details>
 <summary>Solution</summary>
 
-$\frac{z}{z^2 + 4} = \frac{z}{4} \cdot \frac{1}{1 + z^2/4} = \frac{z}{4}\sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{4^n}
-= \sum_{n=0}^{\infty} \frac{(-1)^n z^{2n+1}}{4^{n+1}}$
+$\frac◆LB◆z◆RB◆◆LB◆z^2 + 4◆RB◆ = \frac◆LB◆z◆RB◆◆LB◆4◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆1 + z^2/4◆RB◆ = \frac◆LB◆z◆RB◆◆LB◆4◆RB◆\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ (-1)^n \frac◆LB◆z^◆LB◆2n◆RB◆◆RB◆◆LB◆4^n◆RB◆
+= \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^n z^◆LB◆2n+1◆RB◆◆RB◆◆LB◆4^◆LB◆n+1◆RB◆◆RB◆$
 
 For $|z| \lt 2$. Radius of convergence: distance from $0$ to nearest singularity ($\pm 2i$), which
 is $2$.
@@ -1782,20 +1782,20 @@ _If you get this wrong, revise:_ Section 7.1 (Taylor Series).
 
 ### Problem 12
 
-Find the Laurent series of $f(z) = \frac{1}{(z - 1)(z - 2)}$ in the annulus $1 \lt |z| \lt 2$.
+Find the Laurent series of $f(z) = \frac◆LB◆1◆RB◆◆LB◆(z - 1)(z - 2)◆RB◆$ in the annulus $1 \lt |z| \lt 2$.
 
 <details>
 <summary>Solution</summary>
 
-$\frac{1}{(z-1)(z-2)} = \frac{1}{z - 2} - \frac{1}{z - 1}$.
+$\frac◆LB◆1◆RB◆◆LB◆(z-1)(z-2)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆z - 2◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆z - 1◆RB◆$.
 
 For $|z| \gt 1$:
-$\frac{1}{z - 1} = \frac{1}{z} \cdot \frac{1}{1 - 1/z} = \sum_{n=0}^{\infty} z^{-n-1}$.
+$\frac◆LB◆1◆RB◆◆LB◆z - 1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆z◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆1 - 1/z◆RB◆ = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ z^◆LB◆-n-1◆RB◆$.
 
 For $|z| \lt 2$:
-$\frac{1}{z - 2} = -\frac{1}{2} \cdot \frac{1}{1 - z/2} = -\sum_{n=0}^{\infty} \frac{z^n}{2^{n+1}}$.
+$\frac◆LB◆1◆RB◆◆LB◆z - 2◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆1 - z/2◆RB◆ = -\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z^n◆RB◆◆LB◆2^◆LB◆n+1◆RB◆◆RB◆$.
 
-$f(z) = -\sum_{n=0}^{\infty} \frac{z^n}{2^{n+1}} - \sum_{n=0}^{\infty} z^{-n-1}$.
+$f(z) = -\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆z^n◆RB◆◆LB◆2^◆LB◆n+1◆RB◆◆RB◆ - \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ z^◆LB◆-n-1◆RB◆$.
 
 _If you get this wrong, revise:_ Section 7.4 (Laurent Series).
 
@@ -1826,26 +1826,26 @@ Find the Möbius transformation that maps $1 \mapsto 0$$i \mapsto 1$$-1 \mapsto 
 <details>
 <summary>Solution</summary>
 
-$T(z) = \frac{(z - 1)(i - (-1))}{(z - (-1))(i - 1)} = \frac{(z - 1)(i + 1)}{(z + 1)(i - 1)}$.
+$T(z) = \frac◆LB◆(z - 1)(i - (-1))◆RB◆◆LB◆(z - (-1))(i - 1)◆RB◆ = \frac◆LB◆(z - 1)(i + 1)◆RB◆◆LB◆(z + 1)(i - 1)◆RB◆$.
 
 Simplify:
-$\frac{i + 1}{i - 1} = \frac{(i+1)(-i-1)}{(i-1)(-i-1)} = \frac{-i^2 - 2i - 1}{-i^2 + 1} = \frac{-2i}{2} = -i$.
+$\frac◆LB◆i + 1◆RB◆◆LB◆i - 1◆RB◆ = \frac◆LB◆(i+1)(-i-1)◆RB◆◆LB◆(i-1)(-i-1)◆RB◆ = \frac◆LB◆-i^2 - 2i - 1◆RB◆◆LB◆-i^2 + 1◆RB◆ = \frac◆LB◆-2i◆RB◆◆LB◆2◆RB◆ = -i$.
 
-$T(z) = -i \cdot \frac{z - 1}{z + 1}$.
+$T(z) = -i \cdot \frac◆LB◆z - 1◆RB◆◆LB◆z + 1◆RB◆$.
 
-Verify: $T(1) = 0$ $\checkmark$$T(i) = -i \cdot \frac{i-1}{i+1} = -i \cdot (-i) = -1$.
+Verify: $T(1) = 0$ $\checkmark$$T(i) = -i \cdot \frac◆LB◆i-1◆RB◆◆LB◆i+1◆RB◆ = -i \cdot (-i) = -1$.
 
 That gives $-1$Not $1$. Let me recompute.
 
-$T(z) = \frac{(z - z_1)(z_2 - z_3)}{(z - z_3)(z_2 - z_1)}$ with $z_1 = 1$$z_2 = i$$z_3 = -1$.
+$T(z) = \frac◆LB◆(z - z_1)(z_2 - z_3)◆RB◆◆LB◆(z - z_3)(z_2 - z_1)◆RB◆$ with $z_1 = 1$$z_2 = i$$z_3 = -1$.
 
-$T(z) = \frac{(z - 1)(i + 1)}{(z + 1)(i - 1)}$.
+$T(z) = \frac◆LB◆(z - 1)(i + 1)◆RB◆◆LB◆(z + 1)(i - 1)◆RB◆$.
 
-$T(i) = \frac{(i - 1)(i + 1)}{(i + 1)(i - 1)} = 1$. $\checkmark$
+$T(i) = \frac◆LB◆(i - 1)(i + 1)◆RB◆◆LB◆(i + 1)(i - 1)◆RB◆ = 1$. $\checkmark$
 
 $T(1) = 0$. $\checkmark$. $T(-1) = \infty$. $\checkmark$.
 
-So $T(z) = \frac{(z - 1)(i + 1)}{(z + 1)(i - 1)}$.
+So $T(z) = \frac◆LB◆(z - 1)(i + 1)◆RB◆◆LB◆(z + 1)(i - 1)◆RB◆$.
 
 _If you get this wrong, revise:_ Section 10.5 (Cross-Ratio).
 
@@ -1853,20 +1853,20 @@ _If you get this wrong, revise:_ Section 10.5 (Cross-Ratio).
 
 ### Problem 15
 
-Evaluate $\int_\gamma \frac{z^3}{z^2 + 1}\, dz$ where $\gamma$ is $|z| = 2$.
+Evaluate $\int_\gamma \frac◆LB◆z^3◆RB◆◆LB◆z^2 + 1◆RB◆\, dz$ where $\gamma$ is $|z| = 2$.
 
 <details>
 <summary>Solution</summary>
 
-$\frac{z^3}{z^2 + 1}$ has simple poles at $z = \pm i$Both inside $|z| = 2$.
+$\frac◆LB◆z^3◆RB◆◆LB◆z^2 + 1◆RB◆$ has simple poles at $z = \pm i$Both inside $|z| = 2$.
 
-At $z = i$: $\mathrm{Res = \frac{i^3}{2i} = \frac{-i}{2i} = -\frac{1}{2}$. At $z = -i$:
-$\mathrm{Res = \frac{(-i)^3}{-2i} = \frac{i}{-2i} = -\frac{1}{2}$.
+At $z = i$: $\mathrm◆LB◆Res = \frac◆LB◆i^3◆RB◆◆LB◆2i◆RB◆ = \frac◆LB◆-i◆RB◆◆LB◆2i◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆2◆RB◆$. At $z = -i$:
+$\mathrm◆LB◆Res = \frac◆LB◆(-i)^3◆RB◆◆LB◆-2i◆RB◆ = \frac◆LB◆i◆RB◆◆LB◆-2i◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
 
-$\int_\gamma \frac{z^3}{z^2 + 1}\, dz = 2\pi i\left(-\frac{1}{2} - \frac{1}{2}\right) = -2\pi i$.
+$\int_\gamma \frac◆LB◆z^3◆RB◆◆LB◆z^2 + 1◆RB◆\, dz = 2\pi i\left(-\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right) = -2\pi i$.
 
-Alternatively: $\frac{z^3}{z^2 + 1} = z - \frac{z}{z^2 + 1}$. $\int_\gamma z\, dz = 0$ (entire), and
-$\int_\gamma \frac{z}{z^2 + 1}\, dz = 2\pi i(1/2 + 1/2) = 2\pi i$. So the integral equals
+Alternatively: $\frac◆LB◆z^3◆RB◆◆LB◆z^2 + 1◆RB◆ = z - \frac◆LB◆z◆RB◆◆LB◆z^2 + 1◆RB◆$. $\int_\gamma z\, dz = 0$ (entire), and
+$\int_\gamma \frac◆LB◆z◆RB◆◆LB◆z^2 + 1◆RB◆\, dz = 2\pi i(1/2 + 1/2) = 2\pi i$. So the integral equals
 $0 - 2\pi i = -2\pi i$. $\checkmark$
 
 _If you get this wrong, revise:_ Sections 8.4 and 8.5 (Residues).
@@ -1875,20 +1875,20 @@ _If you get this wrong, revise:_ Sections 8.4 and 8.5 (Residues).
 
 ### Problem 16
 
-Show that $\int_{-\infty}^{\infty} \frac{\cos 2x}{x^2 + 1}\, dx = \frac{\pi}{e^2}$.
+Show that $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆\cos 2x◆RB◆◆LB◆x^2 + 1◆RB◆\, dx = \frac◆LB◆\pi◆RB◆◆LB◆e^2◆RB◆$.
 
 <details>
 <summary>Solution</summary>
 
-Consider $\int_{-\infty}^{\infty} \frac{e^{2ix}}{x^2 + 1}\, dx$.
+Consider $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆e^◆LB◆2ix◆RB◆◆RB◆◆LB◆x^2 + 1◆RB◆\, dx$.
 
-$f(z) = \frac{e^{2iz}}{z^2 + 1}$ has a simple pole at $z = i$ in the upper half-plane.
+$f(z) = \frac◆LB◆e^◆LB◆2iz◆RB◆◆RB◆◆LB◆z^2 + 1◆RB◆$ has a simple pole at $z = i$ in the upper half-plane.
 
-$\mathrm{Res\!\left(\frac{e^{2iz}}{z^2 + 1}, i\right) = \frac{e^{2i \cdot i}}{2i} = \frac{e^{-2}}{2i}$.
+$\mathrm◆LB◆Res\!\left(\frac◆LB◆e^◆LB◆2iz◆RB◆◆RB◆◆LB◆z^2 + 1◆RB◆, i\right) = \frac◆LB◆e^◆LB◆2i \cdot i◆RB◆◆RB◆◆LB◆2i◆RB◆ = \frac◆LB◆e^◆LB◆-2◆RB◆◆RB◆◆LB◆2i◆RB◆$.
 
-$\int_{-\infty}^{\infty} \frac{e^{2ix}}{x^2 + 1}\, dx = 2\pi i \cdot \frac{e^{-2}}{2i} = \frac{\pi}{e^2}$.
+$\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆e^◆LB◆2ix◆RB◆◆RB◆◆LB◆x^2 + 1◆RB◆\, dx = 2\pi i \cdot \frac◆LB◆e^◆LB◆-2◆RB◆◆RB◆◆LB◆2i◆RB◆ = \frac◆LB◆\pi◆RB◆◆LB◆e^2◆RB◆$.
 
-Taking real parts: $\int_{-\infty}^{\infty} \frac{\cos 2x}{x^2 + 1}\, dx = \frac{\pi}{e^2}$.
+Taking real parts: $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆\cos 2x◆RB◆◆LB◆x^2 + 1◆RB◆\, dx = \frac◆LB◆\pi◆RB◆◆LB◆e^2◆RB◆$.
 
 _If you get this wrong, revise:_ Section 9.7 (Fourier-Type Integrals).
 
@@ -1896,16 +1896,16 @@ _If you get this wrong, revise:_ Section 9.7 (Fourier-Type Integrals).
 
 ### Problem 17
 
-Find the residue of $f(z) = \frac{\sin z}{z^4}$ at $z = 0$.
+Find the residue of $f(z) = \frac◆LB◆\sin z◆RB◆◆LB◆z^4◆RB◆$ at $z = 0$.
 
 <details>
 <summary>Solution</summary>
 
 $\sin z = z - z^3/6 + z^5/120 - \cdots$
 
-$f(z) = \frac{z - z^3/6 + z^5/120 - \cdots}{z^4} = \frac{1}{z^3} - \frac{1}{6z} + \frac{z}{120} - \cdots$
+$f(z) = \frac◆LB◆z - z^3/6 + z^5/120 - \cdots◆RB◆◆LB◆z^4◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆z^3◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆6z◆RB◆ + \frac◆LB◆z◆RB◆◆LB◆120◆RB◆ - \cdots$
 
-The coefficient of $1/z$ is $-1/6$So $\mathrm{Res(f, 0) = -\frac{1}{6}$.
+The coefficient of $1/z$ is $-1/6$So $\mathrm◆LB◆Res(f, 0) = -\frac◆LB◆1◆RB◆◆LB◆6◆RB◆$.
 
 _If you get this wrong, revise:_ Section 8.4 (Computing Residues).
 
@@ -1913,14 +1913,14 @@ _If you get this wrong, revise:_ Section 8.4 (Computing Residues).
 
 ### Problem 18
 
-Evaluate $\int_\gamma \frac{dz}{(z - 1)^2(z - 2)}$ where $\gamma$ is $|z - 1| = 1/2$.
+Evaluate $\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆(z - 1)^2(z - 2)◆RB◆$ where $\gamma$ is $|z - 1| = 1/2$.
 
 <details>
 <summary>Solution</summary>
 
 Only $z = 1$ is inside $\gamma$ (a pole of order $2$). $z = 2$ is outside.
 
-$\mathrm{Res(f, 1) = \frac{d}{dz}\left[\frac{1}{z - 2}\right]_{z=1} = -\frac{1}{(z-2)^2}\Big|_{z=1} = -1$.
+$\mathrm◆LB◆Res(f, 1) = \frac◆LB◆d◆RB◆◆LB◆dz◆RB◆\left[\frac◆LB◆1◆RB◆◆LB◆z - 2◆RB◆\right]_◆LB◆z=1◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆(z-2)^2◆RB◆\Big|_◆LB◆z=1◆RB◆ = -1$.
 
 $\int_\gamma f\, dz = 2\pi i \cdot (-1) = -2\pi i$.
 
@@ -1930,7 +1930,7 @@ _If you get this wrong, revise:_ Section 6.2 (CIF for Derivatives) and 8.4 (Resi
 
 ### Problem 19
 
-Use the Cauchy-Riemann equations to show that $f(z) = |z|^2 + 2\bar{z}$ is differentiable at Exactly
+Use the Cauchy-Riemann equations to show that $f(z) = |z|^2 + 2\bar◆LB◆z◆RB◆$ is differentiable at Exactly
 one point and find $f'(z)$ there.
 
 <details>
@@ -1952,14 +1952,14 @@ _If you get this wrong, revise:_ Section 3.1 (Cauchy-Riemann Equations).
 
 ### Problem 20
 
-Evaluate $\int_\gamma \frac{e^z \sin z}{(z - \pi)^3}\, dz$ where $\gamma$ is $|z| = 4$.
+Evaluate $\int_\gamma \frac◆LB◆e^z \sin z◆RB◆◆LB◆(z - \pi)^3◆RB◆\, dz$ where $\gamma$ is $|z| = 4$.
 
 <details>
 <summary>Solution</summary>
 
 Only $z = \pi$ is inside $\gamma$ (a pole of order $3$).
 
-By CIF for derivatives: $\int_\gamma \frac{f(z)}{(z - \pi)^3}\, dz = \frac{2\pi i}{2!}\,f''(\pi)$
+By CIF for derivatives: $\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆(z - \pi)^3◆RB◆\, dz = \frac◆LB◆2\pi i◆RB◆◆LB◆2!◆RB◆\,f''(\pi)$
 Where $f(z) = e^z \sin z$.
 
 $f'(z) = e^z \sin z + e^z \cos z = e^z(\sin z + \cos z)$.
@@ -1967,7 +1967,7 @@ $f''(z) = e^z(\sin z + \cos z) + e^z(\cos z - \sin z) = 2e^z \cos z$.
 
 $f''(\pi) = 2e^\pi \cos\pi = -2e^\pi$.
 
-$\int_\gamma \frac{e^z \sin z}{(z - \pi)^3}\, dz = \pi i \cdot (-2e^\pi) = -2\pi i\, e^\pi$.
+$\int_\gamma \frac◆LB◆e^z \sin z◆RB◆◆LB◆(z - \pi)^3◆RB◆\, dz = \pi i \cdot (-2e^\pi) = -2\pi i\, e^\pi$.
 
 _If you get this wrong, revise:_ Section 6.2 (Cauchy's Integral Formula for Derivatives).
 
@@ -1977,25 +1977,25 @@ _If you get this wrong, revise:_ Section 6.2 (Cauchy's Integral Formula for Deri
 
 ### Example 1: Complex integration
 
-**Problem.** Evaluate $\oint_{|z|=2} \frac{e^z}{z - 1} \, dz$.
+**Problem.** Evaluate $\oint_◆LB◆|z|=2◆RB◆ \frac◆LB◆e^z◆RB◆◆LB◆z - 1◆RB◆ \, dz$.
 
 **Solution.** The integrand has a simple pole at $z = 1$ with residue $e^1 = e$. By Cauchy's residue
-theorem: $$\oint_{|z|=2} \frac{e^z}{z - 1} \, dz = 2\pi i \cdot e = 2\pi e i.$$
+theorem: $$\oint_◆LB◆|z|=2◆RB◆ \frac◆LB◆e^z◆RB◆◆LB◆z - 1◆RB◆ \, dz = 2\pi i \cdot e = 2\pi e i.$$
 
 $\blacksquare$
 
 ### Example 2: Taylor series
 
-**Problem.** Find the Taylor series of $f(z) = \frac{1}{z}$ about $z_0 = 1$.
+**Problem.** Find the Taylor series of $f(z) = \frac◆LB◆1◆RB◆◆LB◆z◆RB◆$ about $z_0 = 1$.
 
-**Solution.** $f(z) = \frac{1}{1 + (z-1)} = \sum_{n=0}^{\infty} (-1)^n(z-1)^n$ for $|z - 1| < 1$.
+**Solution.** $f(z) = \frac◆LB◆1◆RB◆◆LB◆1 + (z-1)◆RB◆ = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ (-1)^n(z-1)^n$ for $|z - 1| < 1$.
 
 $\blacksquare$
 
 ## Common Pitfalls
 
-- **Confusing complex conjugate and complex inverse.** $\bar{z} = a - bi$;
-  $z^{-1} = \bar{z}/|z|^2 = (a - bi)/(a^2 + b^2)$. **Fix:** The conjugate is NOT the inverse; the
+- **Confusing complex conjugate and complex inverse.** $\bar◆LB◆z◆RB◆ = a - bi$;
+  $z^◆LB◆-1◆RB◆ = \bar◆LB◆z◆RB◆/|z|^2 = (a - bi)/(a^2 + b^2)$. **Fix:** The conjugate is NOT the inverse; the
   inverse involves division by $|z|^2$.
 - **Wrong branch of the logarithm.** $\log z = \ln|z| + i(\arg z + 2k\pi)$ is multi-valued; the
   principal branch restricts $\arg z \in (-\pi, \pi]$. **Fix:** Always specify the branch when
@@ -2007,7 +2007,7 @@ $\blacksquare$
 
 - Cauchy-Riemann equations: $u_x = v_y$, $u_y = -v_x$; necessary condition for analyticity.
 - Cauchy's integral theorem: $\oint_\gamma f(z)\, dz = 0$ for $f$ analytic on and inside $\gamma$.
-- Residue theorem: $\oint_\gamma f(z)\, dz = 2\pi i \sum \text{Res}(f, z_k)$.
+- Residue theorem: $\oint_\gamma f(z)\, dz = 2\pi i \sum \text◆LB◆Res◆RB◆(f, z_k)$.
 - Taylor and Laurent series: power series representations; Laurent series include negative powers
   for singularities.
 

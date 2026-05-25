@@ -16,29 +16,29 @@ slug: optics-and-wave-physics
 
 ### 1.1 Derivation from Maxwell's Equations
 
-In vacuum, with no sources ($\rho = 0$$\mathbf{J} = \mathbf{0}$), Maxwell's equations give:
+In vacuum, with no sources ($\rho = 0$$\mathbf◆LB◆J◆RB◆ = \mathbf◆LB◆0◆RB◆$), Maxwell's equations give:
 
-$$\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2 \mathbf{E} = -\nabla^2 \mathbf{E}$$
+$$\nabla \times (\nabla \times \mathbf◆LB◆E◆RB◆) = \nabla(\nabla \cdot \mathbf◆LB◆E◆RB◆) - \nabla^2 \mathbf◆LB◆E◆RB◆ = -\nabla^2 \mathbf◆LB◆E◆RB◆$$
 
-From Faraday's law: $\nabla \times \mathbf{E} = -\partial \mathbf{B}/\partial t$So:
+From Faraday's law: $\nabla \times \mathbf◆LB◆E◆RB◆ = -\partial \mathbf◆LB◆B◆RB◆/\partial t$So:
 
-$$\nabla \times \left(-\frac{\partial \mathbf{B}}{\partial t}\right) = -\frac{\partial}{\partial t}(\nabla \times \mathbf{B}) = -\mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2}$$
+$$\nabla \times \left(-\frac◆LB◆\partial \mathbf◆LB◆B◆RB◆◆RB◆◆LB◆\partial t◆RB◆\right) = -\frac◆LB◆\partial◆RB◆◆LB◆\partial t◆RB◆(\nabla \times \mathbf◆LB◆B◆RB◆) = -\mu_0 \varepsilon_0 \frac◆LB◆\partial^2 \mathbf◆LB◆E◆RB◆◆RB◆◆LB◆\partial t^2◆RB◆$$
 
 Hence:
 
-$$\nabla^2 \mathbf{E} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2}$$
+$$\nabla^2 \mathbf◆LB◆E◆RB◆ = \mu_0 \varepsilon_0 \frac◆LB◆\partial^2 \mathbf◆LB◆E◆RB◆◆RB◆◆LB◆\partial t^2◆RB◆$$
 
-This is the **electromagnetic wave equation** with wave speed $c = 1/\sqrt{\mu_0 \varepsilon_0}$.
+This is the **electromagnetic wave equation** with wave speed $c = 1/\sqrt◆LB◆\mu_0 \varepsilon_0◆RB◆$.
 
-The same equation holds for $\mathbf{B}$:
+The same equation holds for $\mathbf◆LB◆B◆RB◆$:
 
-$$\nabla^2 \mathbf{B} = \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{B}}{\partial t^2}$$
+$$\nabla^2 \mathbf◆LB◆B◆RB◆ = \mu_0 \varepsilon_0 \frac◆LB◆\partial^2 \mathbf◆LB◆B◆RB◆◆RB◆◆LB◆\partial t^2◆RB◆$$
 
 ### 1.2 General Solutions
 
 The one-dimensional wave equation:
 
-$$\frac{\partial^2 u}{\partial x^2} = \frac{1}{v^2}\frac{\partial^2 u}{\partial t^2}$$
+$$\frac◆LB◆\partial^2 u◆RB◆◆LB◆\partial x^2◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆v^2◆RB◆\frac◆LB◆\partial^2 u◆RB◆◆LB◆\partial t^2◆RB◆$$
 
 Has the general solution (d'Alembert's solution):
 
@@ -60,7 +60,7 @@ $\partial^2 y/\partial t^2 = 100\,\partial^2 y/\partial x^2$. Verify that
 $y(x,t) = 0.03\sin(5x - 50t)$ is a solution. Find the wave speed, wavelength, frequency, and
 propagation direction.
 
-**Solution.** The wave speed is $v = \sqrt{100} = 10$ m/s. Comparing with the standard form
+**Solution.** The wave speed is $v = \sqrt◆LB◆100◆RB◆ = 10$ m/s. Comparing with the standard form
 $y = A\sin(kx - \omega t)$: $A = 0.03$ m, $k = 5$ rad/m, $\omega = 50$ rad/s.
 
 Verification: $\partial^2 y/\partial x^2 = -25 \times 0.03\sin(5x - 50t)$ and
@@ -77,32 +77,32 @@ propagation in the $+x$ direction.
 
 It is convenient to write monochromatic waves as:
 
-$$\mathbf{E}(\mathbf{r}, t) = \mathrm{Re\left[\tilde{\mathbf{E}}\, e^{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}\right]$$
+$$\mathbf◆LB◆E◆RB◆(\mathbf◆LB◆r◆RB◆, t) = \mathrm◆LB◆Re\left[\tilde◆LB◆\mathbf◆LB◆E◆RB◆◆RB◆\, e^◆LB◆i(\mathbf◆LB◆k◆RB◆\cdot\mathbf◆LB◆r◆RB◆ - \omega t)◆RB◆\right]$$
 
-Where $\tilde{\mathbf{E}}$ is the complex amplitude, $\mathbf{k}$ is the wave vector, and $\omega$
-is The angular frequency. The dispersion relation is $\omega = ck = c|\mathbf{k}|$.
+Where $\tilde◆LB◆\mathbf◆LB◆E◆RB◆◆RB◆$ is the complex amplitude, $\mathbf◆LB◆k◆RB◆$ is the wave vector, and $\omega$
+is The angular frequency. The dispersion relation is $\omega = ck = c|\mathbf◆LB◆k◆RB◆|$.
 
-The wave vector satisfies $|\mathbf{k}| = 2\pi/\lambda$ and $\omega = 2\pi\nu$.
+The wave vector satisfies $|\mathbf◆LB◆k◆RB◆| = 2\pi/\lambda$ and $\omega = 2\pi\nu$.
 
 When computing intensities, the complex representation simplifies the algebra. For a plane wave with
-Complex amplitude $\tilde{E}$:
+Complex amplitude $\tilde◆LB◆E◆RB◆$:
 
-$$I = \frac{1}{2}c\varepsilon_0 |\tilde{E}|^2$$
+$$I = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆c\varepsilon_0 |\tilde◆LB◆E◆RB◆|^2$$
 
 <details>
 <summary>Worked Example: Complex amplitude and intensity</summary>
 
 **Problem.** A plane wave propagating in the $+z$ direction has complex amplitude
-$\tilde{\mathbf{E}} = (10 + 5i)\hat{\mathbf{x}}$ V/m in vacuum. Find the real electric field, the
+$\tilde◆LB◆\mathbf◆LB◆E◆RB◆◆RB◆ = (10 + 5i)\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆$ V/m in vacuum. Find the real electric field, the
 Intensity, and the phase of the wave relative to $\cos(kz - \omega t)$.
 
-**Solution.** $|\tilde{E}| = \sqrt{10^2 + 5^2} = \sqrt{125} \approx 11.18$ V/m. Phase:
+**Solution.** $|\tilde◆LB◆E◆RB◆| = \sqrt◆LB◆10^2 + 5^2◆RB◆ = \sqrt◆LB◆125◆RB◆ \approx 11.18$ V/m. Phase:
 $\phi = \arctan(5/10) = 26.57°$.
 
-Real field: $\mathbf{E}(z,t) = 11.18\cos(kz - \omega t + 26.57°)\,\hat{\mathbf{x}}$ V/m.
+Real field: $\mathbf◆LB◆E◆RB◆(z,t) = 11.18\cos(kz - \omega t + 26.57°)\,\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆$ V/m.
 
 Intensity:
-$I = \frac{1}{2}c\varepsilon_0 |\tilde{E}|^2 = \frac{1}{2}(3 \times 10^8)(8.854 \times 10^{-12})(125) = 0.166$
+$I = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆c\varepsilon_0 |\tilde◆LB◆E◆RB◆|^2 = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(3 \times 10^8)(8.854 \times 10^◆LB◆-12◆RB◆)(125) = 0.166$
 W/m$^2$.
 
 </details>
@@ -114,7 +114,7 @@ Produces a **standing wave**. Consider:
 
 $$u_1 = A\sin(kx - \omega t), \quad u_2 = A\sin(kx + \omega t)$$
 
-Using the identity $\sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}$:
+Using the identity $\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
 
 $$u(x,t) = 2A\sin(kx)\cos(\omega t)$$
 
@@ -129,17 +129,17 @@ This is a standing wave with the following properties:
 **Standing waves on a string of length $L$ fixed at both ends.** The boundary conditions
 $u(0,t) = 0$ And $u(L,t) = 0$ require $\sin(kL) = 0$So:
 
-$$k_n L = n\pi \implies \lambda_n = \frac{2L}{n}, \quad f_n = \frac{nv}{2L}, \quad n = 1, 2, 3, \ldots$$
+$$k_n L = n\pi \implies \lambda_n = \frac◆LB◆2L◆RB◆◆LB◆n◆RB◆, \quad f_n = \frac◆LB◆nv◆RB◆◆LB◆2L◆RB◆, \quad n = 1, 2, 3, \ldots$$
 
 The allowed frequencies are integer multiples of the **fundamental frequency** $f_1 = v/(2L)$. The
 general solution is a superposition of all normal modes:
 
-$$u(x,t) = \sum_{n=1}^{\infty} \left(A_n \sin k_n x \cos \omega_n t + B_n \sin k_n x \sin \omega_n t\right)$$
+$$u(x,t) = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \left(A_n \sin k_n x \cos \omega_n t + B_n \sin k_n x \sin \omega_n t\right)$$
 
 **Standing waves on a string fixed at one end ($x = 0$) and free at the other ($x = L$).** The free
-end requires $\partial u/\partial x|_{x=L} = 0$Giving $\cos(kL) = 0$So:
+end requires $\partial u/\partial x|_◆LB◆x=L◆RB◆ = 0$Giving $\cos(kL) = 0$So:
 
-$$k_n L = (n + 1/2)\pi \implies f_n = \frac{(2n+1)v}{4L}, \quad n = 0, 1, 2, \ldots$$
+$$k_n L = (n + 1/2)\pi \implies f_n = \frac◆LB◆(2n+1)v◆RB◆◆LB◆4L◆RB◆, \quad n = 0, 1, 2, \ldots$$
 
 Only odd harmonics are present. A pipe open at one end and closed at the other behaves analogously
 For sound waves.
@@ -163,40 +163,40 @@ $x = 0, 0.217, 0.433, 0.650$ m (the endpoints and two interior nodes).
 ### 1.5 Energy Transport by Waves
 
 For a transverse wave on a string of linear mass density $\mu$ under tension $T$With
-$v = \sqrt{T/\mu}$:
+$v = \sqrt◆LB◆T/\mu◆RB◆$:
 
 **Kinetic energy** of an element $dx$:
 
-$$dK = \frac{1}{2}\mu\,dx\left(\frac{\partial u}{\partial t}\right)^2$$
+$$dK = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\mu\,dx\left(\frac◆LB◆\partial u◆RB◆◆LB◆\partial t◆RB◆\right)^2$$
 
 **Potential energy** (from stretching the string):
 
-$$dU = \frac{1}{2}T\,dx\left(\frac{\partial u}{\partial x}\right)^2$$
+$$dU = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆T\,dx\left(\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆\right)^2$$
 
 **Proof that kinetic and potential energies are equal.** For a rightward-travelling wave
 $u = f(x - vt)$:
 
-$$\frac{\partial u}{\partial t} = -vf'(x - vt) = -v\frac{\partial u}{\partial x}$$
+$$\frac◆LB◆\partial u◆RB◆◆LB◆\partial t◆RB◆ = -vf'(x - vt) = -v\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆$$
 
 Since $v^2 = T/\mu$ (i.e., $T = \mu v^2$):
 
-$$dU = \frac{1}{2}\mu v^2\left(\frac{\partial u}{\partial x}\right)^2 = \frac{1}{2}\mu\left(\frac{\partial u}{\partial t}\right)^2 = dK \quad \blacksquare$$
+$$dU = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\mu v^2\left(\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆\right)^2 = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\mu\left(\frac◆LB◆\partial u◆RB◆◆LB◆\partial t◆RB◆\right)^2 = dK \quad \blacksquare$$
 
 The total energy density (energy per unit length) is:
 
-$$\frac{dE}{dx} = dK + dU = \mu\left(\frac{\partial u}{\partial t}\right)^2$$
+$$\frac◆LB◆dE◆RB◆◆LB◆dx◆RB◆ = dK + dU = \mu\left(\frac◆LB◆\partial u◆RB◆◆LB◆\partial t◆RB◆\right)^2$$
 
 **Energy flux (power):** The rate of energy transport past a point is:
 
-$$P = -T\frac{\partial u}{\partial x}\frac{\partial u}{\partial t} = \mu v\left(\frac{\partial u}{\partial t}\right)^2$$
+$$P = -T\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆\frac◆LB◆\partial u◆RB◆◆LB◆\partial t◆RB◆ = \mu v\left(\frac◆LB◆\partial u◆RB◆◆LB◆\partial t◆RB◆\right)^2$$
 
 For a sinusoidal wave $u = A\sin(kx - \omega t)$The time-averaged power is:
 
-$$\langle P \rangle = \frac{1}{2}\mu v \omega^2 A^2$$
+$$\langle P \rangle = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\mu v \omega^2 A^2$$
 
 The **intensity** (power per unit area, generalising to 3D) is:
 
-$$I = \frac{1}{2}\rho v \omega^2 A^2$$
+$$I = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\rho v \omega^2 A^2$$
 
 Where $\rho$ is the mass density of the medium.
 
@@ -208,17 +208,17 @@ A sinusoidal wave of amplitude 5.0 mm and frequency 200 Hz propagates along it. 
 Speed, (b) the average power, and (c) the intensity (power per unit cross-sectional area).
 
 **Solution.** Cross-sectional area:
-$A_{\mathrm{wire} = \pi(0.5 \times 10^{-3})^2 = 7.85 \times 10^{-7}$ m$^2$. Linear density:
-$\mu = \rho A_{\mathrm{wire} = 7800 \times 7.85 \times 10^{-7} = 6.12 \times 10^{-3}$ kg/m.
+$A_◆LB◆\mathrm◆LB◆wire◆RB◆ = \pi(0.5 \times 10^◆LB◆-3◆RB◆)^2 = 7.85 \times 10^◆LB◆-7◆RB◆$ m$^2$. Linear density:
+$\mu = \rho A_◆LB◆\mathrm◆LB◆wire◆RB◆ = 7800 \times 7.85 \times 10^◆LB◆-7◆RB◆ = 6.12 \times 10^◆LB◆-3◆RB◆$ kg/m.
 
-(a) $v = \sqrt{T/\mu} = \sqrt{500/(6.12 \times 10^{-3})} = \sqrt{8.17 \times 10^4} = 286$ m/s.
+(a) $v = \sqrt◆LB◆T/\mu◆RB◆ = \sqrt◆LB◆500/(6.12 \times 10^◆LB◆-3◆RB◆)◆RB◆ = \sqrt◆LB◆8.17 \times 10^4◆RB◆ = 286$ m/s.
 
 (b) $\omega = 2\pi \times 200 = 1257$ rad/s.
-$\langle P \rangle = \frac{1}{2}\mu v \omega^2 A^2 = \frac{1}{2}(6.12 \times 10^{-3})(286)(1257)^2(5.0 \times 10^{-3})^2$
-$= \frac{1}{2}(6.12 \times 10^{-3})(286)(1.58 \times 10^6)(2.5 \times 10^{-5}) = 34.7$ W.
+$\langle P \rangle = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\mu v \omega^2 A^2 = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(6.12 \times 10^◆LB◆-3◆RB◆)(286)(1257)^2(5.0 \times 10^◆LB◆-3◆RB◆)^2$
+$= \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(6.12 \times 10^◆LB◆-3◆RB◆)(286)(1.58 \times 10^6)(2.5 \times 10^◆LB◆-5◆RB◆) = 34.7$ W.
 
 (c) Intensity:
-$I = \langle P \rangle/A_{\mathrm{wire} = 34.7/(7.85 \times 10^{-7}) = 4.42 \times 10^7$ W/m$^2$.
+$I = \langle P \rangle/A_◆LB◆\mathrm◆LB◆wire◆RB◆ = 34.7/(7.85 \times 10^◆LB◆-7◆RB◆) = 4.42 \times 10^7$ W/m$^2$.
 
 </details>
 
@@ -227,22 +227,22 @@ $I = \langle P \rangle/A_{\mathrm{wire} = 34.7/(7.85 \times 10^{-7}) = 4.42 \tim
 A real wave is never perfectly monochromatic. A **wave packet** is a superposition of plane waves
 With a narrow range of frequencies and wave vectors:
 
-$$\psi(x,t) = \int_{-\infty}^{\infty} A(k)\, e^{i(kx - \omega(k)t)}\,dk$$
+$$\psi(x,t) = \int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ A(k)\, e^◆LB◆i(kx - \omega(k)t)◆RB◆\,dk$$
 
 Where $A(k)$ is the spectral amplitude, peaked around $k_0$ with width $\Delta k$.
 
 Expanding the dispersion relation around $k_0$:
 
-$$\omega(k) \approx \omega_0 + v_g(k - k_0) + \frac{1}{2}\alpha(k - k_0)^2$$
+$$\omega(k) \approx \omega_0 + v_g(k - k_0) + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\alpha(k - k_0)^2$$
 
-Where $v_g = \left.d\omega/dk\right|_{k_0}$ is the **group velocity** and $\alpha = d^2\omega/dk^2$
+Where $v_g = \left.d\omega/dk\right|_◆LB◆k_0◆RB◆$ is the **group velocity** and $\alpha = d^2\omega/dk^2$
 is the **group velocity dispersion** (GVD).
 
 Substituting and carrying out the Gaussian integral (for a Gaussian envelope $A(k)$):
 
-$$|\psi(x,t)|^2 \propto \exp\left(-\frac{(x - v_g t)^2}{2\sigma_x^2(t)}\right)$$
+$$|\psi(x,t)|^2 \propto \exp\left(-\frac◆LB◆(x - v_g t)^2◆RB◆◆LB◆2\sigma_x^2(t)◆RB◆\right)$$
 
-Where $\sigma_x(t) = \sigma_x(0)\sqrt{1 + (\alpha t / 2\sigma_x^2(0))^2}$.
+Where $\sigma_x(t) = \sigma_x(0)\sqrt◆LB◆1 + (\alpha t / 2\sigma_x^2(0))^2◆RB◆$.
 
 The envelope moves at $v_g$While individual wave crests move at the **phase velocity**
 $v_p = \omega/k$. The packet **broadens** over time due to GVD.
@@ -272,10 +272,10 @@ m/s.
 (b) Group velocity:
 $v_g = d\omega/dk = 2\alpha k_0 = 2 \times 5.0 \times 10^3 \times 200 = 2.0 \times 10^6$ m/s.
 
-(c) GVD: $\alpha_{\mathrm{GVD} = d^2\omega/dk^2 = 2\alpha = 1.0 \times 10^4$ m$^2$/s. The packet
-width doubles when $1 + (\alpha_{\mathrm{GVD}\, t / 2\sigma_0^2)^2 = 4$:
-$\alpha_{\mathrm{GVD}\, t / 2\sigma_0^2 = \sqrt{3}$
-$t = 2\sigma_0^2\sqrt{3}/\alpha_{\mathrm{GVD} = 2(10^{-4})(1.732)/(10^4) = 3.46 \times 10^{-8}$ s
+(c) GVD: $\alpha_◆LB◆\mathrm◆LB◆GVD◆RB◆ = d^2\omega/dk^2 = 2\alpha = 1.0 \times 10^4$ m$^2$/s. The packet
+width doubles when $1 + (\alpha_◆LB◆\mathrm◆LB◆GVD◆RB◆\, t / 2\sigma_0^2)^2 = 4$:
+$\alpha_◆LB◆\mathrm◆LB◆GVD◆RB◆\, t / 2\sigma_0^2 = \sqrt◆LB◆3◆RB◆$
+$t = 2\sigma_0^2\sqrt◆LB◆3◆RB◆/\alpha_◆LB◆\mathrm◆LB◆GVD◆RB◆ = 2(10^◆LB◆-4◆RB◆)(1.732)/(10^4) = 3.46 \times 10^◆LB◆-8◆RB◆$ s
 $= 34.6$ ns.
 
 </details>
@@ -292,40 +292,40 @@ velocity (front velocity) never Exceeds $c$. :::
 
 From Maxwell's equations, the following properties hold for plane EM waves:
 
-1. **Transversality:** $\mathbf{E}$ and $\mathbf{B}$ are perpendicular to $\mathbf{k}$ and to each
+1. **Transversality:** $\mathbf◆LB◆E◆RB◆$ and $\mathbf◆LB◆B◆RB◆$ are perpendicular to $\mathbf◆LB◆k◆RB◆$ and to each
    other.
-2. **Orthogonality:** $\mathbf{E} \perp \mathbf{B}$And $|\mathbf{E}| = c|\mathbf{B}|$.
-3. **In-phase:** $\mathbf{E}$ and $\mathbf{B}$ oscillate in phase.
+2. **Orthogonality:** $\mathbf◆LB◆E◆RB◆ \perp \mathbf◆LB◆B◆RB◆$And $|\mathbf◆LB◆E◆RB◆| = c|\mathbf◆LB◆B◆RB◆|$.
+3. **In-phase:** $\mathbf◆LB◆E◆RB◆$ and $\mathbf◆LB◆B◆RB◆$ oscillate in phase.
 4. **Dispersion relation:** $\omega = ck$ in vacuum.
 
 **Proof of transversality.** For a plane wave
-$\mathbf{E} = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}$ Gauss's law gives
-$i\mathbf{k}\cdot\mathbf{E}_0 = 0$So $\mathbf{k} \perp \mathbf{E}_0$. Similarly From
-$\nabla \cdot \mathbf{B} = 0$: $\mathbf{k} \perp \mathbf{B}_0$. $\blacksquare$
+$\mathbf◆LB◆E◆RB◆ = \mathbf◆LB◆E◆RB◆_0 e^◆LB◆i(\mathbf◆LB◆k◆RB◆\cdot\mathbf◆LB◆r◆RB◆ - \omega t)◆RB◆$ Gauss's law gives
+$i\mathbf◆LB◆k◆RB◆\cdot\mathbf◆LB◆E◆RB◆_0 = 0$So $\mathbf◆LB◆k◆RB◆ \perp \mathbf◆LB◆E◆RB◆_0$. Similarly From
+$\nabla \cdot \mathbf◆LB◆B◆RB◆ = 0$: $\mathbf◆LB◆k◆RB◆ \perp \mathbf◆LB◆B◆RB◆_0$. $\blacksquare$
 
-**Proof of $|\mathbf{E}| = c|\mathbf{B}|$.** From Faraday's law for a plane wave:
-$\mathbf{k} \times \mathbf{E}_0 = \omega\mathbf{B}_0$. Taking magnitudes: $kE_0 = \omega B_0$So
+**Proof of $|\mathbf◆LB◆E◆RB◆| = c|\mathbf◆LB◆B◆RB◆|$.** From Faraday's law for a plane wave:
+$\mathbf◆LB◆k◆RB◆ \times \mathbf◆LB◆E◆RB◆_0 = \omega\mathbf◆LB◆B◆RB◆_0$. Taking magnitudes: $kE_0 = \omega B_0$So
 $E_0/B_0 = \omega/k = c$. $\blacksquare$
 
 <details>
 <summary>Worked Example: Plane wave fields and intensity</summary>
 
 **Problem.** A plane wave in vacuum has
-$\mathbf{E} = (20\hat{\mathbf{x}} + 30\hat{\mathbf{y}})\cos(kz - \omega t)$ V/m with $\lambda = 500$
-nm. Find $\mathbf{B}$The intensity, and describe the polarisation state.
+$\mathbf◆LB◆E◆RB◆ = (20\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆ + 30\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆)\cos(kz - \omega t)$ V/m with $\lambda = 500$
+nm. Find $\mathbf◆LB◆B◆RB◆$The intensity, and describe the polarisation state.
 
-**Solution.** $|\mathbf{E}_0| = \sqrt{20^2 + 30^2} = \sqrt{1300} \approx 36.1$ V/m.
-$B_0 = E_0/c = 36.1/(3 \times 10^8) = 1.20 \times 10^{-7}$ T.
+**Solution.** $|\mathbf◆LB◆E◆RB◆_0| = \sqrt◆LB◆20^2 + 30^2◆RB◆ = \sqrt◆LB◆1300◆RB◆ \approx 36.1$ V/m.
+$B_0 = E_0/c = 36.1/(3 \times 10^8) = 1.20 \times 10^◆LB◆-7◆RB◆$ T.
 
-Since $\mathbf{k} = k\hat{\mathbf{z}}$ and $\mathbf{B}_0 = \hat{\mathbf{k}} \times \mathbf{E}_0/c$:
-$\mathbf{B} = (-20\hat{\mathbf{y}} + 30\hat{\mathbf{x}})B_0/E_0 \cdot \cos(kz - \omega t)/c$
-$= (30\hat{\mathbf{x}} - 20\hat{\mathbf{y}})(1/c)\cos(kz - \omega t)$ T.
+Since $\mathbf◆LB◆k◆RB◆ = k\hat◆LB◆\mathbf◆LB◆z◆RB◆◆RB◆$ and $\mathbf◆LB◆B◆RB◆_0 = \hat◆LB◆\mathbf◆LB◆k◆RB◆◆RB◆ \times \mathbf◆LB◆E◆RB◆_0/c$:
+$\mathbf◆LB◆B◆RB◆ = (-20\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆ + 30\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆)B_0/E_0 \cdot \cos(kz - \omega t)/c$
+$= (30\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆ - 20\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆)(1/c)\cos(kz - \omega t)$ T.
 
 Intensity:
-$I = \frac{1}{2}c\varepsilon_0 E_0^2 = \frac{1}{2}(3 \times 10^8)(8.854 \times 10^{-12})(1300) = 1.73$
+$I = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆c\varepsilon_0 E_0^2 = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(3 \times 10^8)(8.854 \times 10^◆LB◆-12◆RB◆)(1300) = 1.73$
 W/m$^2$.
 
-Polarisation: $\mathbf{E}_0$ has components along $\hat{\mathbf{x}}$ and $\hat{\mathbf{y}}$ with a
+Polarisation: $\mathbf◆LB◆E◆RB◆_0$ has components along $\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆$ and $\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆$ with a
 Constant phase relationship ($\delta = 0$), so the wave is linearly polarised at angle
 $\theta = \arctan(30/20) = 56.3°$ from the $x$-axis.
 
@@ -335,21 +335,21 @@ $\theta = \arctan(30/20) = 56.3°$ from the $x$-axis.
 
 The **Poynting vector**:
 
-$$\mathbf{S} = \frac{1}{\mu_0}\mathbf{E} \times \mathbf{B}$$
+$$\mathbf◆LB◆S◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\mu_0◆RB◆\mathbf◆LB◆E◆RB◆ \times \mathbf◆LB◆B◆RB◆$$
 
 Represents the energy flux (W/m$^2$). The time-averaged intensity for a plane wave:
 
-$$I = \langle S \rangle = \frac{1}{2}c\varepsilon_0 E_0^2$$
+$$I = \langle S \rangle = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆c\varepsilon_0 E_0^2$$
 
 The energy density of an EM field is:
 
-$$u = \frac{1}{2}\varepsilon_0 E^2 + \frac{1}{2\mu_0}B^2 = \varepsilon_0 E^2$$
+$$u = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\varepsilon_0 E^2 + \frac◆LB◆1◆RB◆◆LB◆2\mu_0◆RB◆B^2 = \varepsilon_0 E^2$$
 
 (the electric and magnetic contributions are equal for a plane wave). The intensity is related to
 The energy density by $I = uc$.
 
-**Radiation pressure.** For a perfectly absorbing surface: $P_{\mathrm{rad} = I/c$. For a perfectly
-Reflecting surface: $P_{\mathrm{rad} = 2I/c$.
+**Radiation pressure.** For a perfectly absorbing surface: $P_◆LB◆\mathrm◆LB◆rad◆RB◆ = I/c$. For a perfectly
+Reflecting surface: $P_◆LB◆\mathrm◆LB◆rad◆RB◆ = 2I/c$.
 
 <details>
 <summary>Worked Example: Radiation pressure from a laser</summary>
@@ -357,14 +357,14 @@ Reflecting surface: $P_{\mathrm{rad} = 2I/c$.
 **Problem.** A 5 mW laser beam ($\lambda = 632.8$ nm) is normally incident on a perfectly reflecting
 Mirror. The beam has a diameter of 1 mm. Find the radiation pressure and the force on the mirror.
 
-**Solution.** Beam area: $A = \pi(0.5 \times 10^{-3})^2 = 7.85 \times 10^{-7}$ m$^2$. Intensity:
-$I = P/A = 5 \times 10^{-3}/(7.85 \times 10^{-7}) = 6.37 \times 10^3$ W/m$^2$.
+**Solution.** Beam area: $A = \pi(0.5 \times 10^◆LB◆-3◆RB◆)^2 = 7.85 \times 10^◆LB◆-7◆RB◆$ m$^2$. Intensity:
+$I = P/A = 5 \times 10^◆LB◆-3◆RB◆/(7.85 \times 10^◆LB◆-7◆RB◆) = 6.37 \times 10^3$ W/m$^2$.
 
 Radiation pressure (reflecting):
-$P_{\mathrm{rad} = 2I/c = 2(6.37 \times 10^3)/(3 \times 10^8) = 4.25 \times 10^{-5}$ Pa.
+$P_◆LB◆\mathrm◆LB◆rad◆RB◆ = 2I/c = 2(6.37 \times 10^3)/(3 \times 10^8) = 4.25 \times 10^◆LB◆-5◆RB◆$ Pa.
 
 Force:
-$F = P_{\mathrm{rad} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34 \times 10^{-11}$ N.
+$F = P_◆LB◆\mathrm◆LB◆rad◆RB◆ \cdot A = (4.25 \times 10^◆LB◆-5◆RB◆)(7.85 \times 10^◆LB◆-7◆RB◆) = 3.34 \times 10^◆LB◆-11◆RB◆$ N.
 
 </details>
 
@@ -372,13 +372,13 @@ $F = P_{\mathrm{rad} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34
 
 In a linear, isotropic, non-magnetic medium with refractive index $n$:
 
-$$v = \frac{c}{n}, \quad \mathbf{k} = n\frac{\omega}{c}\hat{\mathbf{k}}$$
+$$v = \frac◆LB◆c◆RB◆◆LB◆n◆RB◆, \quad \mathbf◆LB◆k◆RB◆ = n\frac◆LB◆\omega◆RB◆◆LB◆c◆RB◆\hat◆LB◆\mathbf◆LB◆k◆RB◆◆RB◆$$
 
 The index of refraction is related to the relative permittivity and permeability:
 
-$$n = \sqrt{\varepsilon_r \mu_r}$$
+$$n = \sqrt◆LB◆\varepsilon_r \mu_r◆RB◆$$
 
-For non-magnetic materials ($\mu_r \approx 1$): $n \approx \sqrt{\varepsilon_r}$.
+For non-magnetic materials ($\mu_r \approx 1$): $n \approx \sqrt◆LB◆\varepsilon_r◆RB◆$.
 
 The wavelength inside a medium of refractive index $n$ is $\lambda_n = \lambda_0/n$Where $\lambda_0$
 Is the vacuum wavelength. The frequency remains unchanged across the boundary.
@@ -395,21 +395,21 @@ At the front surface.
 
 (a) $\lambda_n = \lambda_0/n = 600/1.50 = 400$ nm. $v = c/n = 2.0 \times 10^8$ m/s.
 
-(b) $f = c/\lambda_0 = (3 \times 10^8)/(600 \times 10^{-9}) = 5.0 \times 10^{14}$ Hz (unchanged).
+(b) $f = c/\lambda_0 = (3 \times 10^8)/(600 \times 10^◆LB◆-9◆RB◆) = 5.0 \times 10^◆LB◆14◆RB◆$ Hz (unchanged).
 
 (c) At normal incidence:
 $R = [(n_1 - n_2)/(n_1 + n_2)]^2 = [(1 - 1.5)/(1 + 1.5)]^2 = (0.5/2.5)^2 = 0.04$. Transmittance:
-$T = 1 - R = 0.96$. The intensity inside the glass is $I_{\mathrm{inside} = 0.96\,I_0$But the power
+$T = 1 - R = 0.96$. The intensity inside the glass is $I_◆LB◆\mathrm◆LB◆inside◆RB◆ = 0.96\,I_0$But the power
 per unit area Referenced to the vacuum intensity is
-$I_{\mathrm{inside} = (n_2/n_1)\,T\,I_0 = 1.5 \times 0.96 \times I_0 = 1.44\,I_0$ If we compare the
+$I_◆LB◆\mathrm◆LB◆inside◆RB◆ = (n_2/n_1)\,T\,I_0 = 1.5 \times 0.96 \times I_0 = 1.44\,I_0$ If we compare the
 electric field amplitudes squared times the respective impedances.
 
 </details>
 
 ### 2.4 Boundary Conditions and Snell's Law
 
-At a planar interface between two linear, isotropic media, the tangential components of $\mathbf{E}$
-and $\mathbf{H}$ and the normal components of $\mathbf{D}$ and $\mathbf{B}$ are Continuous across
+At a planar interface between two linear, isotropic media, the tangential components of $\mathbf◆LB◆E◆RB◆$
+and $\mathbf◆LB◆H◆RB◆$ and the normal components of $\mathbf◆LB◆D◆RB◆$ and $\mathbf◆LB◆B◆RB◆$ are Continuous across
 the boundary.
 
 Consider a plane wave incident from medium 1 ($n_1$) onto medium 2 ($n_2$), with the interface at
@@ -425,10 +425,10 @@ $n_1\sin\theta_i = n_2\sin\theta_t$ (**Snell's law**).
 
 **Proof.** The incident, reflected, and transmitted fields are:
 
-$$E_i \propto e^{i(k_{1x}x + k_{1z}z - \omega t)}, \quad E_r \propto e^{i(k_{1x}'x + k_{1z}'z - \omega t)}, \quad E_t \propto e^{i(k_{2x}x + k_{2z}z - \omega t)}$$
+$$E_i \propto e^◆LB◆i(k_◆LB◆1x◆RB◆x + k_◆LB◆1z◆RB◆z - \omega t)◆RB◆, \quad E_r \propto e^◆LB◆i(k_◆LB◆1x◆RB◆'x + k_◆LB◆1z◆RB◆'z - \omega t)◆RB◆, \quad E_t \propto e^◆LB◆i(k_◆LB◆2x◆RB◆x + k_◆LB◆2z◆RB◆z - \omega t)◆RB◆$$
 
 At $z = 0$The tangential field must be continuous for all $x$ and $t$:
-$k_{1x} = k_{1x}' = k_{2x}$I.e., $k_1\sin\theta_i = k_1\sin\theta_r = k_2\sin\theta_t$. Since
+$k_◆LB◆1x◆RB◆ = k_◆LB◆1x◆RB◆' = k_◆LB◆2x◆RB◆$I.e., $k_1\sin\theta_i = k_1\sin\theta_r = k_2\sin\theta_t$. Since
 $k = n\omega/c$This yields Snell's law. $\blacksquare$
 
 ### 2.5 Fresnel Equations
@@ -436,25 +436,25 @@ $k = n\omega/c$This yields Snell's law. $\blacksquare$
 Applying the boundary conditions for the tangential fields yields the **Fresnel equations** for the
 Amplitude reflection and transmission coefficients.
 
-**s-polarisation** ($\mathbf{E}$ perpendicular to the plane of incidence, along $\hat{\mathbf{y}}$):
-The tangential components of $\mathbf{E}$ and $\mathbf{H}$ give:
+**s-polarisation** ($\mathbf◆LB◆E◆RB◆$ perpendicular to the plane of incidence, along $\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆$):
+The tangential components of $\mathbf◆LB◆E◆RB◆$ and $\mathbf◆LB◆H◆RB◆$ give:
 
-$$r_s = \frac{E_{0r}}{E_{0i}} = \frac{n_1\cos\theta_i - n_2\cos\theta_t}{n_1\cos\theta_i + n_2\cos\theta_t}$$
+$$r_s = \frac◆LB◆E_◆LB◆0r◆RB◆◆RB◆◆LB◆E_◆LB◆0i◆RB◆◆RB◆ = \frac◆LB◆n_1\cos\theta_i - n_2\cos\theta_t◆RB◆◆LB◆n_1\cos\theta_i + n_2\cos\theta_t◆RB◆$$
 
-$$t_s = \frac{E_{0t}}{E_{0i}} = \frac{2n_1\cos\theta_i}{n_1\cos\theta_i + n_2\cos\theta_t}$$
+$$t_s = \frac◆LB◆E_◆LB◆0t◆RB◆◆RB◆◆LB◆E_◆LB◆0i◆RB◆◆RB◆ = \frac◆LB◆2n_1\cos\theta_i◆RB◆◆LB◆n_1\cos\theta_i + n_2\cos\theta_t◆RB◆$$
 
-**p-polarisation** ($\mathbf{E}$ parallel to the plane of incidence): The tangential components of
-$\mathbf{E}$ and $\mathbf{H}$ give:
+**p-polarisation** ($\mathbf◆LB◆E◆RB◆$ parallel to the plane of incidence): The tangential components of
+$\mathbf◆LB◆E◆RB◆$ and $\mathbf◆LB◆H◆RB◆$ give:
 
-$$r_p = \frac{E_{0r}}{E_{0i}} = \frac{n_2\cos\theta_i - n_1\cos\theta_t}{n_2\cos\theta_i + n_1\cos\theta_t}$$
+$$r_p = \frac◆LB◆E_◆LB◆0r◆RB◆◆RB◆◆LB◆E_◆LB◆0i◆RB◆◆RB◆ = \frac◆LB◆n_2\cos\theta_i - n_1\cos\theta_t◆RB◆◆LB◆n_2\cos\theta_i + n_1\cos\theta_t◆RB◆$$
 
-$$t_p = \frac{E_{0t}}{E_{0i}} = \frac{2n_1\cos\theta_i}{n_2\cos\theta_i + n_1\cos\theta_t}$$
+$$t_p = \frac◆LB◆E_◆LB◆0t◆RB◆◆RB◆◆LB◆E_◆LB◆0i◆RB◆◆RB◆ = \frac◆LB◆2n_1\cos\theta_i◆RB◆◆LB◆n_2\cos\theta_i + n_1\cos\theta_t◆RB◆$$
 
 **Reflectance and transmittance** (energy fractions):
 
-$$R_s = |r_s|^2, \quad T_s = \frac{n_2\cos\theta_t}{n_1\cos\theta_i}|t_s|^2, \quad R_s + T_s = 1$$
+$$R_s = |r_s|^2, \quad T_s = \frac◆LB◆n_2\cos\theta_t◆RB◆◆LB◆n_1\cos\theta_i◆RB◆|t_s|^2, \quad R_s + T_s = 1$$
 
-$$R_p = |r_p|^2, \quad T_p = \frac{n_2\cos\theta_t}{n_1\cos\theta_i}|t_p|^2, \quad R_p + T_p = 1$$
+$$R_p = |r_p|^2, \quad T_p = \frac◆LB◆n_2\cos\theta_t◆RB◆◆LB◆n_1\cos\theta_i◆RB◆|t_p|^2, \quad R_p + T_p = 1$$
 
 At **normal incidence** ($\theta_i = 0$): $r_s = r_p = (n_1 - n_2)/(n_1 + n_2)$ and
 $R = [(n_1 - n_2)/(n_1 + n_2)]^2$.
@@ -468,11 +468,11 @@ $\theta_i = 30°$. Calculate $r_s$$r_p$$R_s$And $R_p$.
 **Solution.** From Snell's law: $\sin\theta_t = \sin 30°/1.50 = 0.333$So $\theta_t = 19.47°$.
 $\cos\theta_i = \cos 30° = 0.866$$\cos\theta_t = \cos 19.47° = 0.943$.
 
-$r_s = \frac{1.00 \times 0.866 - 1.50 \times 0.943}{1.00 \times 0.866 + 1.50 \times 0.943} = \frac{0.866 - 1.414}{0.866 + 1.414} = \frac{-0.549}{2.280} = -0.241$
+$r_s = \frac◆LB◆1.00 \times 0.866 - 1.50 \times 0.943◆RB◆◆LB◆1.00 \times 0.866 + 1.50 \times 0.943◆RB◆ = \frac◆LB◆0.866 - 1.414◆RB◆◆LB◆0.866 + 1.414◆RB◆ = \frac◆LB◆-0.549◆RB◆◆LB◆2.280◆RB◆ = -0.241$
 
 $R_s = r_s^2 = 0.0580$
 
-$r_p = \frac{1.50 \times 0.866 - 1.00 \times 0.943}{1.50 \times 0.866 + 1.00 \times 0.943} = \frac{1.299 - 0.943}{1.299 + 0.943} = \frac{0.356}{2.242} = 0.159$
+$r_p = \frac◆LB◆1.50 \times 0.866 - 1.00 \times 0.943◆RB◆◆LB◆1.50 \times 0.866 + 1.00 \times 0.943◆RB◆ = \frac◆LB◆1.299 - 0.943◆RB◆◆LB◆1.299 + 0.943◆RB◆ = \frac◆LB◆0.356◆RB◆◆LB◆2.242◆RB◆ = 0.159$
 
 $R_p = r_p^2 = 0.0252$
 
@@ -492,19 +492,19 @@ Interchangeable. :::
 When light travels from a denser to a rarer medium ($n_1 \gt n_2$) and the angle of incidence
 Exceeds the **critical angle**:
 
-$$\theta_c = \arcsin\!\left(\frac{n_2}{n_1}\right)$$
+$$\theta_c = \arcsin\!\left(\frac◆LB◆n_2◆RB◆◆LB◆n_1◆RB◆\right)$$
 
 Snell's law gives $\sin\theta_t = (n_1/n_2)\sin\theta_i \gt 1$So $\theta_t$ becomes complex. Writing
-$\cos\theta_t = i\sqrt{\sin^2\theta_t - 1}$The Fresnel coefficients become complex with
+$\cos\theta_t = i\sqrt◆LB◆\sin^2\theta_t - 1◆RB◆$The Fresnel coefficients become complex with
 $|r_s|^2 = |r_p|^2 = 1$: all energy is reflected.
 
 The transmitted field becomes an **evanescent wave**:
 
-$$E_t \propto e^{-\kappa z}\, e^{i(k_x x - \omega t)}$$
+$$E_t \propto e^◆LB◆-\kappa z◆RB◆\, e^◆LB◆i(k_x x - \omega t)◆RB◆$$
 
 Where:
 
-$$\kappa = k_0\sqrt{n_1^2\sin^2\theta_i - n_2^2}, \quad k_x = k_0 n_1\sin\theta_i$$
+$$\kappa = k_0\sqrt◆LB◆n_1^2\sin^2\theta_i - n_2^2◆RB◆, \quad k_x = k_0 n_1\sin\theta_i$$
 
 The field decays exponentially with penetration depth $\delta = 1/\kappa$ into the second medium,
 But propagates without loss along the interface. No net energy is transported across the boundary
@@ -526,15 +526,15 @@ constant along the interface.
 
 (a) $\theta_c = \arcsin(n_2/n_1) = \arcsin(1/1.50) = 41.8°$. Since $50° \gt 41.8°$TIR occurs.
 
-(b) $\kappa = k_0\sqrt{n_1^2\sin^2\theta_i - n_2^2}$
-$= \frac{2\pi}{\lambda}\sqrt{(1.50)^2\sin^2 50° - 1.00^2}$
-$= \frac{2\pi}{500 \times 10^{-9}}\sqrt{2.25 \times 0.587 - 1.00}$
-$= (1.257 \times 10^7)\sqrt{0.320}$ $= (1.257 \times 10^7)(0.566) = 7.11 \times 10^6$ m$^{-1}$
+(b) $\kappa = k_0\sqrt◆LB◆n_1^2\sin^2\theta_i - n_2^2◆RB◆$
+$= \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\sqrt◆LB◆(1.50)^2\sin^2 50° - 1.00^2◆RB◆$
+$= \frac◆LB◆2\pi◆RB◆◆LB◆500 \times 10^◆LB◆-9◆RB◆◆RB◆\sqrt◆LB◆2.25 \times 0.587 - 1.00◆RB◆$
+$= (1.257 \times 10^7)\sqrt◆LB◆0.320◆RB◆$ $= (1.257 \times 10^7)(0.566) = 7.11 \times 10^6$ m$^◆LB◆-1◆RB◆$
 
-Penetration depth: $\delta = 1/\kappa = 1.41 \times 10^{-7}$ m $= 141$ nm.
+Penetration depth: $\delta = 1/\kappa = 1.41 \times 10^◆LB◆-7◆RB◆$ m $= 141$ nm.
 
-(c) $k_x = k_0 n_1\sin\theta_i = (2\pi/(500 \times 10^{-9}))(1.50)(0.766) = 1.44 \times 10^7$
-m$^{-1}$.
+(c) $k_x = k_0 n_1\sin\theta_i = (2\pi/(500 \times 10^◆LB◆-9◆RB◆))(1.50)(0.766) = 1.44 \times 10^7$
+m$^◆LB◆-1◆RB◆$.
 
 </details>
 
@@ -545,11 +545,11 @@ m$^{-1}$.
 When two or more waves overlap, the resultant displacement is the sum of the individual
 displacements. For two coherent waves with amplitudes $E_1$ and $E_2$:
 
-$$E = E_1 + E_2 = E_0 \cos(\mathbf{k}\cdot\mathbf{r} - \omega t + \phi_1) + E_0 \cos(\mathbf{k}\cdot\mathbf{r} - \omega t + \phi_2)$$
+$$E = E_1 + E_2 = E_0 \cos(\mathbf◆LB◆k◆RB◆\cdot\mathbf◆LB◆r◆RB◆ - \omega t + \phi_1) + E_0 \cos(\mathbf◆LB◆k◆RB◆\cdot\mathbf◆LB◆r◆RB◆ - \omega t + \phi_2)$$
 
 The time-averaged intensity is:
 
-$$I = I_1 + I_2 + 2\sqrt{I_1 I_2}\cos\Delta\phi$$
+$$I = I_1 + I_2 + 2\sqrt◆LB◆I_1 I_2◆RB◆\cos\Delta\phi$$
 
 Where $\Delta\phi = \phi_2 - \phi_1$ is the phase difference.
 
@@ -564,7 +564,7 @@ $$d\sin\theta = m\lambda, \quad m = 0, \pm 1, \pm 2, \ldots$$
 
 **Condition for dark fringes (destructive interference):**
 
-$$d\sin\theta = \left(m + \frac{1}{2}\right)\lambda, \quad m = 0, \pm 1, \pm 2, \ldots$$
+$$d\sin\theta = \left(m + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right)\lambda, \quad m = 0, \pm 1, \pm 2, \ldots$$
 
 **Derivation.** The path difference between the two slits is $\Delta = d\sin\theta$. Constructive
 Interference occurs when $\Delta = m\lambda$ (phase difference $2m\pi$), and destructive when
@@ -572,7 +572,7 @@ $\Delta = (m + 1/2)\lambda$ (phase difference $(2m+1)\pi$). $\blacksquare$
 
 The fringe spacing on the screen:
 
-$$\Delta y = \frac{\lambda L}{d}$$
+$$\Delta y = \frac◆LB◆\lambda L◆RB◆◆LB◆d◆RB◆$$
 
 <details>
 <summary>Worked Example: Double-slit fringe calculation</summary>
@@ -584,15 +584,15 @@ Visible within the central diffraction maximum (slit width $a = 0.020$ mm).
 
 **Solution.**
 
-(a) $\Delta y = \lambda L/d = (550 \times 10^{-9})(2.0)/(0.10 \times 10^{-3}) = 11.0 \times 10^{-3}$
+(a) $\Delta y = \lambda L/d = (550 \times 10^◆LB◆-9◆RB◆)(2.0)/(0.10 \times 10^◆LB◆-3◆RB◆) = 11.0 \times 10^◆LB◆-3◆RB◆$
 m $= 11.0$ mm.
 
 (b)
-$d\sin\theta_3 = 3\lambda \implies \sin\theta_3 = 3(550 \times 10^{-9})/(0.10 \times 10^{-3}) = 0.0165$
+$d\sin\theta_3 = 3\lambda \implies \sin\theta_3 = 3(550 \times 10^◆LB◆-9◆RB◆)/(0.10 \times 10^◆LB◆-3◆RB◆) = 0.0165$
 $\theta_3 = 0.945°$.
 
 (c) The diffraction envelope has its first minimum at
-$\sin\theta = \lambda/a = 550/20 = 27.5 \times 10^{-3}$ Corresponding to interference order
+$\sin\theta = \lambda/a = 550/20 = 27.5 \times 10^◆LB◆-3◆RB◆$ Corresponding to interference order
 $m = d\sin\theta/\lambda = (d/a) = 0.10/0.020 = 5$. Missing orders at $m = \pm 5, \pm 10, \ldots$.
 Visible bright fringes: $m = 0, \pm 1, \pm 2, \pm 3, \pm 4$ Giving 9 bright fringes within the
 central maximum.
@@ -609,14 +609,14 @@ Between the wave reflected from the top surface and the wave reflected from the 
 A phase shift of $\pi$ occurs upon reflection from a medium of higher refractive index. The
 condition For constructive interference (bright reflection) is:
 
-$$2nt\cos\theta_t = \left(m + \frac{1}{2}\right)\lambda \quad \mathrm{(one\ phase\ shift)$$
+$$2nt\cos\theta_t = \left(m + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right)\lambda \quad \mathrm◆LB◆(one\ phase\ shift)$$
 
-$$2nt\cos\theta_t = m\lambda \quad \mathrm{(zero\ or\ two\ phase\ shifts)$$
+$$2nt\cos\theta_t = m\lambda \quad \mathrm◆LB◆(zero\ or\ two\ phase\ shifts)$$
 
 :::caution Common Pitfall Always count the number of $\pi$ phase shifts that occur upon reflection.
 A reflection from Low-to-high refractive index introduces a $\pi$ shift; high-to-low does not. For a
 soap film in Air, there is one $\pi$ shift (at the top surface). For a coating on glass
-($n_{\mathrm{coat} \lt n_{\mathrm{glass}$), there is also one shift. The conditions for constructive
+($n_◆LB◆\mathrm◆LB◆coat◆RB◆ \lt n_◆LB◆\mathrm◆LB◆glass◆RB◆$), there is also one shift. The conditions for constructive
 and destructive interference swap depending on whether the total number of shifts is odd or even.
 :::
 
@@ -624,7 +624,7 @@ and destructive interference swap depending on whether the total number of shift
 <summary>Worked Example: Anti-reflection coating design</summary>
 
 **Problem.** Magnesium fluoride ($n = 1.38$) is used as an anti-reflection coating on a glass lens
-($n_{\mathrm{glass} = 1.52$). Find the minimum coating thickness for destructive interference in
+($n_◆LB◆\mathrm◆LB◆glass◆RB◆ = 1.52$). Find the minimum coating thickness for destructive interference in
 Reflected light at $\lambda = 550$ nm (normal incidence).
 
 **Solution.** At the air-coating interface (low to high $n$): $\pi$ phase shift. At the
@@ -677,7 +677,7 @@ displaced, 2000 fringes cross a reference point. How far was the mirror moved?
 **Solution.** Each fringe corresponds to a path difference change of $\lambda$. Moving the mirror by
 $\Delta d$ changes the path difference by $2\Delta d$:
 
-$m = 2\Delta d/\lambda \implies \Delta d = m\lambda/2 = 2000 \times 632.8 \times 10^{-9}/2 = 6.328 \times 10^{-4}$
+$m = 2\Delta d/\lambda \implies \Delta d = m\lambda/2 = 2000 \times 632.8 \times 10^◆LB◆-9◆RB◆/2 = 6.328 \times 10^◆LB◆-4◆RB◆$
 m $= 0.633$ mm.
 
 </details>
@@ -686,25 +686,25 @@ m $= 0.633$ mm.
 
 The **fringe visibility** (or contrast) quantifies the sharpness of interference fringes:
 
-$$\mathcal{V} = \frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}}$$
+$$\mathcal◆LB◆V◆RB◆ = \frac◆LB◆I_◆LB◆\max◆RB◆ - I_◆LB◆\min◆RB◆◆RB◆◆LB◆I_◆LB◆\max◆RB◆ + I_◆LB◆\min◆RB◆◆RB◆$$
 
 For two-beam interference with intensities $I_1$$I_2$ and degree of temporal coherence $|\gamma|$:
 
-$$\mathcal{V} = \frac{2\sqrt{I_1 I_2}}{I_1 + I_2}\,|\gamma(\tau)|$$
+$$\mathcal◆LB◆V◆RB◆ = \frac◆LB◆2\sqrt◆LB◆I_1 I_2◆RB◆◆RB◆◆LB◆I_1 + I_2◆RB◆\,|\gamma(\tau)|$$
 
-For equal intensities ($I_1 = I_2$): $\mathcal{V} = |\gamma(\tau)|$.
+For equal intensities ($I_1 = I_2$): $\mathcal◆LB◆V◆RB◆ = |\gamma(\tau)|$.
 
 The coherence function decays with path difference. For a Gaussian spectral profile of width
 $\Delta\lambda$:
 
-$$|\gamma(\tau)| = \exp\!\left[-\pi\left(\frac{\Delta\lambda \cdot \Delta x}{\lambda^2}\right)^2\right]$$
+$$|\gamma(\tau)| = \exp\!\left[-\pi\left(\frac◆LB◆\Delta\lambda \cdot \Delta x◆RB◆◆LB◆\lambda^2◆RB◆\right)^2\right]$$
 
 Where $\Delta x = c\tau$ is the path difference. Fringes become unresolvable when
 $\Delta x \approx \lambda^2/\Delta\lambda = L_c$The **coherence length**.
 
 **Implication for interferometry.** To observe interference fringes, the path difference between The
 two arms must satisfy $\Delta x \ll L_c$. A sodium lamp ($\Delta\lambda \approx 0.6$ nm at
-$\lambda = 589$ nm) gives $L_c \approx 0.58$ mm. A HeNe laser ($\Delta\lambda \approx 10^{-6}$ nm)
+$\lambda = 589$ nm) gives $L_c \approx 0.58$ mm. A HeNe laser ($\Delta\lambda \approx 10^◆LB◆-6◆RB◆$ nm)
 Gives $L_c \approx 350$ m — fringes are visible over enormous path differences.
 
 ### 3.6 Multiple-Beam Interference: The Fabry-Perot Etalon
@@ -716,7 +716,7 @@ Peaks.
 For a lossless etalon with reflectance $R$ and transmittance $T = 1 - R$Illuminated at angle
 $\theta$ inside a medium of refractive index $n$:
 
-$$\frac{I_T}{I_0} = \frac{T^2}{(1 - R)^2 + 4R\sin^2(\delta/2)} = \frac{1}{1 + F\sin^2(\delta/2)}$$
+$$\frac◆LB◆I_T◆RB◆◆LB◆I_0◆RB◆ = \frac◆LB◆T^2◆RB◆◆LB◆(1 - R)^2 + 4R\sin^2(\delta/2)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆1 + F\sin^2(\delta/2)◆RB◆$$
 
 Where $\delta = (4\pi/\lambda)\,nd\cos\theta$ is the round-trip phase and $F = 4R/(1-R)^2$ is the
 **coefficient of finesse**.
@@ -726,17 +726,17 @@ $2nd\cos\theta = m\lambda$.
 
 **Finesse:**
 
-$$\mathcal{F} = \frac{\pi\sqrt{F}}{2} = \frac{\pi\sqrt{R}}{1 - R}$$
+$$\mathcal◆LB◆F◆RB◆ = \frac◆LB◆\pi\sqrt◆LB◆F◆RB◆◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆\pi\sqrt◆LB◆R◆RB◆◆RB◆◆LB◆1 - R◆RB◆$$
 
 The finesse determines the sharpness of the peaks: higher $R$ gives sharper peaks.
 
 **Free spectral range** (frequency spacing between adjacent peaks):
 
-$$\Delta\nu_{\mathrm{FSR} = \frac{c}{2nd}$$
+$$\Delta\nu_◆LB◆\mathrm◆LB◆FSR◆RB◆ = \frac◆LB◆c◆RB◆◆LB◆2nd◆RB◆$$
 
 **Resolving power:**
 
-$$\mathcal{R} = \frac{\lambda}{\delta\lambda} = m\mathcal{F}$$
+$$\mathcal◆LB◆R◆RB◆ = \frac◆LB◆\lambda◆RB◆◆LB◆\delta\lambda◆RB◆ = m\mathcal◆LB◆F◆RB◆$$
 
 <details>
 <summary>Worked Example: Fabry-Perot resolving power</summary>
@@ -745,18 +745,18 @@ $$\mathcal{R} = \frac{\lambda}{\delta\lambda} = m\mathcal{F}$$
 And reflectance $R = 0.90$. Find the finesse, free spectral range, and minimum resolvable wavelength
 Difference at $\lambda = 500$ nm (normal incidence).
 
-**Solution.** Finesse: $\mathcal{F} = \pi\sqrt{0.90}/(1 - 0.90) = \pi(0.949)/0.10 = 29.8$.
+**Solution.** Finesse: $\mathcal◆LB◆F◆RB◆ = \pi\sqrt◆LB◆0.90◆RB◆/(1 - 0.90) = \pi(0.949)/0.10 = 29.8$.
 
 Free spectral range:
-$\Delta\nu_{\mathrm{FSR} = c/(2nd) = (3 \times 10^8)/(2 \times 1.00 \times 10^{-3}) = 1.50 \times 10^{11}$
+$\Delta\nu_◆LB◆\mathrm◆LB◆FSR◆RB◆ = c/(2nd) = (3 \times 10^8)/(2 \times 1.00 \times 10^◆LB◆-3◆RB◆) = 1.50 \times 10^◆LB◆11◆RB◆$
 Hz.
 
-Order number: $m = 2nd/\lambda = 2(1.00)(1.00 \times 10^{-3})/(500 \times 10^{-9}) = 4000$.
+Order number: $m = 2nd/\lambda = 2(1.00)(1.00 \times 10^◆LB◆-3◆RB◆)/(500 \times 10^◆LB◆-9◆RB◆) = 4000$.
 
-Resolving power: $\mathcal{R} = m\mathcal{F} = 4000 \times 29.8 = 1.19 \times 10^5$.
+Resolving power: $\mathcal◆LB◆R◆RB◆ = m\mathcal◆LB◆F◆RB◆ = 4000 \times 29.8 = 1.19 \times 10^5$.
 
 Minimum resolvable wavelength:
-$\delta\lambda = \lambda/\mathcal{R} = 500/1.19 \times 10^5 = 4.20 \times 10^{-3}$ nm $= 4.20$ pm.
+$\delta\lambda = \lambda/\mathcal◆LB◆R◆RB◆ = 500/1.19 \times 10^5 = 4.20 \times 10^◆LB◆-3◆RB◆$ nm $= 4.20$ pm.
 
 </details>
 
@@ -769,7 +769,7 @@ the Envelope of these wavelets, accounting for both amplitude and phase.
 
 **Kirchhoff diffraction integral.** The field at point $P$ due to an aperture in a screen is:
 
-$$E(P) = \frac{i}{\lambda}\iint_{\mathrm{aperture} E(Q)\,\frac{e^{-ikr}}{r}\cos\theta\,dS$$
+$$E(P) = \frac◆LB◆i◆RB◆◆LB◆\lambda◆RB◆\iint_◆LB◆\mathrm◆LB◆aperture◆RB◆ E(Q)\,\frac◆LB◆e^◆LB◆-ikr◆RB◆◆RB◆◆LB◆r◆RB◆\cos\theta\,dS$$
 
 Where $E(Q)$ is the field at the aperture point $Q$$r$ is the distance from $Q$ to $P$And $\theta$
 Is the angle between the normal to the aperture and the direction to $P$. The obliquity factor
@@ -783,18 +783,18 @@ A slit of width $a$ is illuminated by plane waves of wavelength $\lambda$.
 
 **Intensity distribution (Fraunhofer diffraction):**
 
-$$I(\theta) = I_0 \left(\frac{\sin\alpha}{\alpha}\right)^2$$
+$$I(\theta) = I_0 \left(\frac◆LB◆\sin\alpha◆RB◆◆LB◆\alpha◆RB◆\right)^2$$
 
-Where $\alpha = \frac{\pi a \sin\theta}{\lambda}$.
+Where $\alpha = \frac◆LB◆\pi a \sin\theta◆RB◆◆LB◆\lambda◆RB◆$.
 
 **Derivation.** Divide the slit into infinitesimal elements of width $dy$ at position $y$. Each
 Element contributes a wavelet. The field at angle $\theta$ on a distant screen:
 
-$$E(\theta) = \int_{-a/2}^{a/2} E_0\, e^{iky\sin\theta}\,dy = E_0 \frac{\sin\left(\frac{ka\sin\theta}{2}\right)}{\frac{k\sin\theta}{2}} = E_0 a \frac{\sin\alpha}{\alpha}$$
+$$E(\theta) = \int_◆LB◆-a/2◆RB◆^◆LB◆a/2◆RB◆ E_0\, e^◆LB◆iky\sin\theta◆RB◆\,dy = E_0 \frac◆LB◆\sin\left(\frac◆LB◆ka\sin\theta◆RB◆◆LB◆2◆RB◆\right)◆RB◆◆LB◆\frac◆LB◆k\sin\theta◆RB◆◆LB◆2◆RB◆◆RB◆ = E_0 a \frac◆LB◆\sin\alpha◆RB◆◆LB◆\alpha◆RB◆$$
 
 Where $\alpha = ka\sin\theta/2 = \pi a\sin\theta/\lambda$. Since $I \propto |E|^2$:
 
-$$I(\theta) = I_0 \left(\frac{\sin\alpha}{\alpha}\right)^2$$
+$$I(\theta) = I_0 \left(\frac◆LB◆\sin\alpha◆RB◆◆LB◆\alpha◆RB◆\right)^2$$
 
 $\blacksquare$
 
@@ -816,11 +816,11 @@ Relative to the central maximum.
 **Solution.**
 
 (a) First minimum at
-$\sin\theta_1 = \lambda/a = 580 \times 10^{-9}/(0.10 \times 10^{-3}) = 5.80 \times 10^{-3}$ So
+$\sin\theta_1 = \lambda/a = 580 \times 10^◆LB◆-9◆RB◆/(0.10 \times 10^◆LB◆-3◆RB◆) = 5.80 \times 10^◆LB◆-3◆RB◆$ So
 $\theta_1 = 0.332°$. Angular width of central maximum: $2\theta_1 = 0.664°$.
 
-(b) $\alpha = \pi a\sin\theta/\lambda = \pi(0.10 \times 10^{-3})\sin(0.50°)/(580 \times 10^{-9})$
-$= \pi(0.10 \times 10^{-3})(8.73 \times 10^{-3})/(580 \times 10^{-9}) = \pi(1.505) = 4.73$.
+(b) $\alpha = \pi a\sin\theta/\lambda = \pi(0.10 \times 10^◆LB◆-3◆RB◆)\sin(0.50°)/(580 \times 10^◆LB◆-9◆RB◆)$
+$= \pi(0.10 \times 10^◆LB◆-3◆RB◆)(8.73 \times 10^◆LB◆-3◆RB◆)/(580 \times 10^◆LB◆-9◆RB◆) = \pi(1.505) = 4.73$.
 
 $I/I_0 = (\sin\alpha/\alpha)^2 = (\sin 4.73/4.73)^2 = (-0.9998/4.73)^2 = (0.2114)^2 = 0.0447$.
 
@@ -838,7 +838,7 @@ one full wavelength between them. :::
 
 Combining single-slit diffraction and double-slit interference:
 
-$$I(\theta) = I_0 \left(\frac{\sin\alpha}{\alpha}\right)^2 \cos^2\beta$$
+$$I(\theta) = I_0 \left(\frac◆LB◆\sin\alpha◆RB◆◆LB◆\alpha◆RB◆\right)^2 \cos^2\beta$$
 
 Where $\alpha = \pi a\sin\theta/\lambda$ (diffraction envelope) and
 $\beta = \pi d\sin\theta/\lambda$ (interference fringes).
@@ -869,14 +869,14 @@ central envelope.
 
 A grating with $N$ slits, each of width $a$Separated by distance $d$:
 
-$$I(\theta) = I_0 \left(\frac{\sin\alpha}{\alpha}\right)^2 \left(\frac{\sin N\beta}{\sin\beta}\right)^2$$
+$$I(\theta) = I_0 \left(\frac◆LB◆\sin\alpha◆RB◆◆LB◆\alpha◆RB◆\right)^2 \left(\frac◆LB◆\sin N\beta◆RB◆◆LB◆\sin\beta◆RB◆\right)^2$$
 
 **Principal maxima:** $d\sin\theta = m\lambda$ ($m = 0, \pm 1, \pm 2, \ldots$).
 
 The angular width of a principal maximum is $\Delta\theta = \lambda/(Nd\cos\theta)$. The **resolving
 power** of a grating is:
 
-$$R = \frac{\lambda}{\Delta\lambda} = mN$$
+$$R = \frac◆LB◆\lambda◆RB◆◆LB◆\Delta\lambda◆RB◆ = mN$$
 
 Where $N$ is the total number of illuminated slits.
 
@@ -887,7 +887,7 @@ Where $N$ is the total number of illuminated slits.
 the first order and the minimum resolvable wavelength difference at $\lambda = 600$ nm.
 
 **Solution.** Total number of slits: $N = 5000 \times 5.0 = 25000$. Slit spacing: $d = 1/5000$ cm
-$= 2.00 \times 10^{-6}$ m $= 2.00$ $\mu$M.
+$= 2.00 \times 10^◆LB◆-6◆RB◆$ m $= 2.00$ $\mu$M.
 
 Resolving power: $R = mN = 1 \times 25000 = 25000$.
 
@@ -900,7 +900,7 @@ Minimum resolvable wavelength difference: $\delta\lambda = \lambda/R = 600/25000
 Two point sources are just resolvable when the central maximum of one coincides with the first
 minimum Of the other:
 
-$$\theta_{\mathrm{min} = 1.22\frac{\lambda}{D}$$
+$$\theta_◆LB◆\mathrm◆LB◆min◆RB◆ = 1.22\frac◆LB◆\lambda◆RB◆◆LB◆D◆RB◆$$
 
 Where $D$ is the aperture diameter (for a circular aperture).
 
@@ -917,7 +917,7 @@ Produces patterns that depend on the distance.
 
 For a circular aperture of diameter $D$The Fraunhofer diffraction pattern is an **Airy pattern**:
 
-$$I(\theta) = I_0 \left[\frac{2J_1(\beta)}{\beta}\right]^2$$
+$$I(\theta) = I_0 \left[\frac◆LB◆2J_1(\beta)◆RB◆◆LB◆\beta◆RB◆\right]^2$$
 
 Where $\beta = \pi D \sin\theta / \lambda$ and $J_1$ is the first-order Bessel function of the first
 Kind.
@@ -925,18 +925,18 @@ Kind.
 **Derivation.** The field in the Fraunhofer limit is the Fourier transform of the circular aperture
 Function $t(r) = 1$ for $r \leq D/2$ and $0$ otherwise. In polar coordinates:
 
-$$E(\theta) \propto \int_0^{D/2} J_0(kr\sin\theta)\, r\,dr = \frac{D}{2}\frac{J_1(\beta)}{\beta}$$
+$$E(\theta) \propto \int_0^◆LB◆D/2◆RB◆ J_0(kr\sin\theta)\, r\,dr = \frac◆LB◆D◆RB◆◆LB◆2◆RB◆\frac◆LB◆J_1(\beta)◆RB◆◆LB◆\beta◆RB◆$$
 
 Where we used the identity $\int_0^a J_0(\rho r)\,r\,dr = aJ_1(\rho a)/\rho$. Since
 $I \propto |E|^2$ The result follows. $\blacksquare$
 
 The first zero of $J_1(\beta)$ is at $\beta = 1.22\pi$Giving:
 
-$$\sin\theta_1 = 1.22\frac{\lambda}{D}$$
+$$\sin\theta_1 = 1.22\frac◆LB◆\lambda◆RB◆◆LB◆D◆RB◆$$
 
 The bright central disk (the **Airy disk**) subtends an angle:
 
-$$\theta_{\mathrm{Airy} = 1.22\frac{\lambda}{D}$$
+$$\theta_◆LB◆\mathrm◆LB◆Airy◆RB◆ = 1.22\frac◆LB◆\lambda◆RB◆◆LB◆D◆RB◆$$
 
 This is the basis of the **Rayleigh criterion** for resolving power of circular apertures
 (telescopes, Microscopes, the eye). Approximately 84% of the total transmitted power falls within
@@ -950,9 +950,9 @@ At $\lambda = 550$ nm. Two stars are separated by $0.50''$ (arcseconds). Can thi
 Them?
 
 **Solution.** Angular resolution:
-$\theta_{\min} = 1.22\lambda/D = 1.22(550 \times 10^{-9})/(0.150) = 4.47 \times 10^{-6}$ rad.
+$\theta_◆LB◆\min◆RB◆ = 1.22\lambda/D = 1.22(550 \times 10^◆LB◆-9◆RB◆)/(0.150) = 4.47 \times 10^◆LB◆-6◆RB◆$ rad.
 
-Convert to arcseconds: $4.47 \times 10^{-6} \times (180/\pi) \times 3600 = 0.923''$.
+Convert to arcseconds: $4.47 \times 10^◆LB◆-6◆RB◆ \times (180/\pi) \times 3600 = 0.923''$.
 
 Since $0.50'' \lt 0.923''$The telescope cannot resolve these two stars — they would appear as a
 Single blurred source.
@@ -964,7 +964,7 @@ Single blurred source.
 The Fraunhofer diffraction integral has a deep connection with Fourier analysis. For an aperture
 With transmission function $t(x, y)$The far-field diffraction pattern is:
 
-$$E(\theta_x, \theta_y) \propto \iint t(x,y)\, e^{-i(k_x x + k_y y)}\,dx\,dy$$
+$$E(\theta_x, \theta_y) \propto \iint t(x,y)\, e^◆LB◆-i(k_x x + k_y y)◆RB◆\,dx\,dy$$
 
 Where $k_x = k\sin\theta_x$ and $k_y = k\sin\theta_y$. This is precisely the **two-dimensional
 Fourier transform** of $t(x,y)$Evaluated at spatial frequencies $k_x/(2\pi)$ and $k_y/(2\pi)$.
@@ -978,8 +978,8 @@ Fourier transform** of $t(x,y)$Evaluated at spatial frequencies $k_x/(2\pi)$ and
 3. Spatial filtering: by placing masks in the Fourier plane, one can selectively remove or enhance
    spatial frequency components, modifying the image (the basis of optical image processing).
 
-**Example.** A single slit of width $a$ has aperture function $t(x) = \mathrm{rect(x/a)$. Its
-Fourier Transform is $\mathrm{sinc(\pi a \sin\theta/\lambda)$Directly giving the single-slit
+**Example.** A single slit of width $a$ has aperture function $t(x) = \mathrm◆LB◆rect(x/a)$. Its
+Fourier Transform is $\mathrm◆LB◆sinc(\pi a \sin\theta/\lambda)$Directly giving the single-slit
 diffraction Pattern. A periodic grating has sharp peaks in the Fourier transform (the diffraction
 orders), each Corresponding to a spatial harmonic of the grating.
 
@@ -1005,13 +1005,13 @@ Phase variations are converted to intensity variations, making transparent struc
 optics To predict the diffraction pattern and identify the missing orders.
 
 **Solution.** The aperture function is
-$t(x) = \mathrm{rect(x/a) * [\delta(x - 3a/2) + \delta(x + 3a/2)]$ I.e., the convolution of a
+$t(x) = \mathrm◆LB◆rect(x/a) * [\delta(x - 3a/2) + \delta(x + 3a/2)]$ I.e., the convolution of a
 single-slit function with two delta functions.
 
 By the convolution theorem, the Fourier transform is the product of a sinc function (single slit)
 and $\cos(\pi d \sin\theta/\lambda)$ (two-point interference):
 
-$E(\theta) \propto \mathrm{sinc(\pi a\sin\theta/\lambda) \cdot \cos(\pi \cdot 3a \sin\theta/\lambda)$
+$E(\theta) \propto \mathrm◆LB◆sinc(\pi a\sin\theta/\lambda) \cdot \cos(\pi \cdot 3a \sin\theta/\lambda)$
 
 The sinc envelope has zeros at $a\sin\theta = m\lambda$. The cosine fringes have maxima at
 $3a\sin\theta = m\lambda$. Missing orders when $3a\sin\theta = 3\lambda$ coincides with
@@ -1026,13 +1026,13 @@ $d/a = 3$ as the ratio for missing orders.
 
 For a plane wave propagating in the $z$-direction:
 
-$$\mathbf{E} = E_{0x}\cos(kz - \omega t)\,\hat{\mathbf{x}} + E_{0y}\cos(kz - \omega t + \delta)\,\hat{\mathbf{y}}$$
+$$\mathbf◆LB◆E◆RB◆ = E_◆LB◆0x◆RB◆\cos(kz - \omega t)\,\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆ + E_◆LB◆0y◆RB◆\cos(kz - \omega t + \delta)\,\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆$$
 
 - **Linear polarization:** $\delta = 0$ or $\delta = \pi$. The E-field oscillates along a fixed
   line.
-- **Circular polarization:** $E_{0x} = E_{0y}$ and $\delta = \pm\pi/2$. Right-handed
+- **Circular polarization:** $E_◆LB◆0x◆RB◆ = E_◆LB◆0y◆RB◆$ and $\delta = \pm\pi/2$. Right-handed
   ($\delta = -\pi/2$) or left-handed ($\delta = +\pi/2$).
-- **Elliptical polarization:** General case. The tip of $\mathbf{E}$ traces an ellipse.
+- **Elliptical polarization:** General case. The tip of $\mathbf◆LB◆E◆RB◆$ traces an ellipse.
 
 ### 5.2 Malus's Law
 
@@ -1041,7 +1041,7 @@ Polarisation direction:
 
 $$I = I_0 \cos^2\theta$$
 
-**Proof.** The component of $\mathbf{E}$ along the polariser axis is $E\cos\theta$. Since
+**Proof.** The component of $\mathbf◆LB◆E◆RB◆$ along the polariser axis is $E\cos\theta$. Since
 $I \propto E^2$: $I = I_0 \cos^2\theta$. $\blacksquare$
 
 <details>
@@ -1070,13 +1070,13 @@ Birefringent crystals (e.g., calcite) have two refractive indices: $n_o$ (ordina
 A **wave plate** of thickness $t$ introduces a relative phase shift between the two polarisation
 Components:
 
-$$\Delta\phi = \frac{2\pi}{\lambda}(n_o - n_e)\,t$$
+$$\Delta\phi = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆(n_o - n_e)\,t$$
 
-**Quarter-wave plate (QWP):** $\Delta\phi = \pi/2$So $t_{\mathrm{QWP} = \lambda/(4|n_o - n_e|)$.
+**Quarter-wave plate (QWP):** $\Delta\phi = \pi/2$So $t_◆LB◆\mathrm◆LB◆QWP◆RB◆ = \lambda/(4|n_o - n_e|)$.
 Converts linear polarisation at $45°$ to the fast/slow axes into circular polarisation, and vice
 Versa.
 
-**Half-wave plate (HWP):** $\Delta\phi = \pi$So $t_{\mathrm{HWP} = \lambda/(2|n_o - n_e|)$. Rotates
+**Half-wave plate (HWP):** $\Delta\phi = \pi$So $t_◆LB◆\mathrm◆LB◆HWP◆RB◆ = \lambda/(2|n_o - n_e|)$. Rotates
 the plane of linear polarisation by $2\theta$Where $\theta$ is the angle between the Input
 polarisation and the fast axis.
 
@@ -1095,7 +1095,7 @@ QWP, describe the output polarisation.
 **Solution.**
 
 (a) Minimum thickness:
-$t = \lambda/(4|n_o - n_e|) = 589 \times 10^{-9}/(4 \times 0.172) = 8.56 \times 10^{-7}$ m $= 856$
+$t = \lambda/(4|n_o - n_e|) = 589 \times 10^◆LB◆-9◆RB◆/(4 \times 0.172) = 8.56 \times 10^◆LB◆-7◆RB◆$ m $= 856$
 nm.
 
 (b) The components along the fast and slow axes are: $E_f = E_0\cos 30° = 0.866\,E_0$ and
@@ -1109,7 +1109,7 @@ amplitudes ($0.866 \neq 0.500$), So the output is **elliptically polarised** (no
 Certain materials (sugars, quartz) rotate the plane of linearly polarised light. The specific
 Rotation is:
 
-$$[\alpha] = \frac{\theta}{c \cdot l}$$
+$$[\alpha] = \frac◆LB◆\theta◆RB◆◆LB◆c \cdot l◆RB◆$$
 
 Where $\theta$ is the rotation angle, $c$ is the concentration, and $l$ is the path length.
 
@@ -1117,7 +1117,7 @@ Optical activity arises from the helical structure of molecules, which gives dif
 Indices for left- and right-circularly polarised light (circular birefringence). If $n_L$ and $n_R$
 Are the refractive indices for left and right circular polarisation:
 
-$$\theta = \frac{\pi l}{\lambda}(n_L - n_R)$$
+$$\theta = \frac◆LB◆\pi l◆RB◆◆LB◆\lambda◆RB◆(n_L - n_R)$$
 
 Optical activity is **reciprocal**: if the beam is reflected back through the medium, the rotation
 Is cancelled.
@@ -1126,16 +1126,16 @@ Is cancelled.
 
 At the **Brewster angle** $\theta_B$The reflected beam for p-polarised light vanishes ($r_p = 0$):
 
-$$\tan\theta_B = \frac{n_2}{n_1}$$
+$$\tan\theta_B = \frac◆LB◆n_2◆RB◆◆LB◆n_1◆RB◆$$
 
 **Proof.** Setting $r_p = 0$ requires $n_2\cos\theta_i = n_1\cos\theta_t$. Using Snell's law
 $n_1\sin\theta_i = n_2\sin\theta_t$:
 
-$$\frac{\cos\theta_i}{\sin\theta_i} = \frac{\cos\theta_t}{\sin\theta_t} \implies \cot\theta_i = \cot\theta_t \implies \theta_i = \theta_t'$$
+$$\frac◆LB◆\cos\theta_i◆RB◆◆LB◆\sin\theta_i◆RB◆ = \frac◆LB◆\cos\theta_t◆RB◆◆LB◆\sin\theta_t◆RB◆ \implies \cot\theta_i = \cot\theta_t \implies \theta_i = \theta_t'$$
 
 Where $\theta_t' = 90° - \theta_t$. This gives $\theta_i + \theta_t = 90°$So:
 
-$$\tan\theta_i = \frac{n_2}{n_1} \quad \blacksquare$$
+$$\tan\theta_i = \frac◆LB◆n_2◆RB◆◆LB◆n_1◆RB◆ \quad \blacksquare$$
 
 At Brewster's angle, the reflected beam is purely s-polarised, and the reflected and refracted beams
 Are perpendicular ($\theta_B + \theta_t = 90°$). This principle is used in Brewster windows and
@@ -1154,13 +1154,13 @@ light?
 
 The reflected light is purely s-polarised. The reflectance for s-polarisation at $\theta_B$:
 $\theta_t = 90° - 56.3° = 33.7°$.
-$r_s = \frac{n_1\cos\theta_B - n_2\cos\theta_t}{n_1\cos\theta_B + n_2\cos\theta_t} = \frac{\cos 56.3° - 1.50\cos 33.7°}{\cos 56.3° + 1.50\cos 33.7°} = \frac{0.555 - 1.50 \times 0.832}{0.555 + 1.50 \times 0.832} = \frac{0.555 - 1.248}{0.555 + 1.248} = \frac{-0.693}{1.803} = -0.384$
+$r_s = \frac◆LB◆n_1\cos\theta_B - n_2\cos\theta_t◆RB◆◆LB◆n_1\cos\theta_B + n_2\cos\theta_t◆RB◆ = \frac◆LB◆\cos 56.3° - 1.50\cos 33.7°◆RB◆◆LB◆\cos 56.3° + 1.50\cos 33.7°◆RB◆ = \frac◆LB◆0.555 - 1.50 \times 0.832◆RB◆◆LB◆0.555 + 1.50 \times 0.832◆RB◆ = \frac◆LB◆0.555 - 1.248◆RB◆◆LB◆0.555 + 1.248◆RB◆ = \frac◆LB◆-0.693◆RB◆◆LB◆1.803◆RB◆ = -0.384$
 
 $R_s = (-0.384)^2 = 0.148$.
 
 The incident unpolarised light has equal s and p components ($I_s = I_p = I_0/2$). Only the s
 Component is reflected:
-$I_{\mathrm{reflected} = R_s \times I_0/2 = 0.148 \times I_0/2 = 0.074\,I_0$.
+$I_◆LB◆\mathrm◆LB◆reflected◆RB◆ = R_s \times I_0/2 = 0.148 \times I_0/2 = 0.074\,I_0$.
 
 The reflected light is 100% s-polarised with intensity $0.074\,I_0$ (about 7.4% of the incident).
 
@@ -1168,7 +1168,7 @@ The reflected light is 100% s-polarised with intensity $0.074\,I_0$ (about 7.4% 
 
 ### 5.6 Faraday Rotation
 
-In a magneto-optical material with a magnetic field $\mathbf{B}$ applied along the propagation
+In a magneto-optical material with a magnetic field $\mathbf◆LB◆B◆RB◆$ applied along the propagation
 Direction, the plane of polarisation rotates by:
 
 $$\theta_F = V B l$$
@@ -1209,13 +1209,13 @@ When light is scattered by particles much smaller than the wavelength (Rayleigh 
 Scattered light is partially polarised. Light scattered at $90°$ to the incident direction is
 **completely linearly polarised** in the plane perpendicular to the scattering plane.
 
-**Proof.** Consider an incident unpolarised beam propagating along $\hat{\mathbf{z}}$. The
-$\mathbf{E}$-field oscillates in the $xy$-plane. An observer along $\hat{\mathbf{x}}$ (scattering
+**Proof.** Consider an incident unpolarised beam propagating along $\hat◆LB◆\mathbf◆LB◆z◆RB◆◆RB◆$. The
+$\mathbf◆LB◆E◆RB◆$-field oscillates in the $xy$-plane. An observer along $\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆$ (scattering
 Angle $90°$) receives radiation from the accelerating electrons. The dipole radiation pattern of an
-Oscillator along $\hat{\mathbf{y}}$ has zero intensity along $\hat{\mathbf{y}}$ but maximum along
-$\hat{\mathbf{x}}$. The oscillator along $\hat{\mathbf{x}}$ radiates zero along its own axis. Thus
-The observer along $\hat{\mathbf{x}}$ sees only the $y$-component: the scattered light is Polarised
-along $\hat{\mathbf{y}}$. $\blacksquare$
+Oscillator along $\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆$ has zero intensity along $\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆$ but maximum along
+$\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆$. The oscillator along $\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆$ radiates zero along its own axis. Thus
+The observer along $\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆$ sees only the $y$-component: the scattered light is Polarised
+along $\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆$. $\blacksquare$
 
 This explains why the sky is polarised at $90°$ from the sun and why polarising sunglasses reduce
 Glare from horizontal surfaces (Brewster's angle reflection from road/water).
@@ -1232,11 +1232,11 @@ Glare from horizontal surfaces (Brewster's angle reflection from road/water).
 **Derivation of Snell's law from Fermat's principle.** The optical path length from point $A$ in
 Medium 1 to point $B$ in medium 2 via a point on the interface at $x$ is:
 
-$$\Lambda(x) = n_1\sqrt{a^2 + x^2} + n_2\sqrt{b^2 + (d - x)^2}$$
+$$\Lambda(x) = n_1\sqrt◆LB◆a^2 + x^2◆RB◆ + n_2\sqrt◆LB◆b^2 + (d - x)^2◆RB◆$$
 
 Setting $d\Lambda/dx = 0$:
 
-$$n_1 \frac{x}{\sqrt{a^2 + x^2}} = n_2 \frac{d - x}{\sqrt{b^2 + (d-x)^2}}$$
+$$n_1 \frac◆LB◆x◆RB◆◆LB◆\sqrt◆LB◆a^2 + x^2◆RB◆◆RB◆ = n_2 \frac◆LB◆d - x◆RB◆◆LB◆\sqrt◆LB◆b^2 + (d-x)^2◆RB◆◆RB◆$$
 
 Which gives $n_1 \sin\theta_1 = n_2 \sin\theta_2$. $\blacksquare$
 
@@ -1245,17 +1245,17 @@ Which gives $n_1 \sin\theta_1 = n_2 \sin\theta_2$. $\blacksquare$
 When light travels from a denser to a rarer medium ($n_1 \gt n_2$), total internal reflection occurs
 When $\theta_1 \geq \theta_c$ where:
 
-$$\sin\theta_c = \frac{n_2}{n_1}$$
+$$\sin\theta_c = \frac◆LB◆n_2◆RB◆◆LB◆n_1◆RB◆$$
 
 **Evanescent wave.** Beyond the critical angle, the transmitted field decays exponentially:
 
-$$E_t \propto e^{-\kappa x}$$
+$$E_t \propto e^◆LB◆-\kappa x◆RB◆$$
 
-Where $\kappa = \frac{2\pi}{\lambda}\sqrt{n_1^2 \sin^2\theta_1 - n_2^2}$.
+Where $\kappa = \frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\sqrt◆LB◆n_1^2 \sin^2\theta_1 - n_2^2◆RB◆$.
 
 ### 6.3 The Thin Lens Equation
 
-$$\frac{1}{s} + \frac{1}{s'} = \frac{1}{f}$$
+$$\frac◆LB◆1◆RB◆◆LB◆s◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆s'◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆f◆RB◆$$
 
 Where $s$ is the object distance, $s'$ is the image distance, and $f$ is the focal length.
 
@@ -1264,7 +1264,7 @@ $f \gt 0$ For converging lenses, $f \lt 0$ for diverging.
 
 **Magnification:**
 
-$$M = -\frac{s'}{s}$$
+$$M = -\frac◆LB◆s'◆RB◆◆LB◆s◆RB◆$$
 
 Negative $M$ indicates an inverted image.
 
@@ -1272,29 +1272,29 @@ Negative $M$ indicates an inverted image.
 
 For a thin lens with radii of curvature $R_1$ and $R_2$:
 
-$$\frac{1}{f} = (n - 1)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$$
+$$\frac◆LB◆1◆RB◆◆LB◆f◆RB◆ = (n - 1)\left(\frac◆LB◆1◆RB◆◆LB◆R_1◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆R_2◆RB◆\right)$$
 
 ### 6.5 Matrix Optics (Ray Transfer Matrix)
 
-A paraxial ray is described by a vector $\begin{pmatrix} y \\ \theta \end{pmatrix}$ where $y$ is the
+A paraxial ray is described by a vector $\begin◆LB◆pmatrix◆RB◆ y \\ \theta \end◆LB◆pmatrix◆RB◆$ where $y$ is the
 Height and $\theta$ is the angle with the optical axis.
 
 **Free space propagation** by distance $d$:
 
-$$M_{\mathrm{prop} = \begin{pmatrix} 1 & d \\ 0 & 1 \end{pmatrix}$$
+$$M_◆LB◆\mathrm◆LB◆prop◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 & d \\ 0 & 1 \end◆LB◆pmatrix◆RB◆$$
 
 **Thin lens** of focal length $f$:
 
-$$M_{\mathrm{lens} = \begin{pmatrix} 1 & 0 \\ -1/f & 1 \end{pmatrix}$$
+$$M_◆LB◆\mathrm◆LB◆lens◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 & 0 \\ -1/f & 1 \end◆LB◆pmatrix◆RB◆$$
 
 **System matrix:** The overall transformation is the product of individual matrices (applied in
-Reverse order): $M_{\mathrm{sys} = M_n \cdots M_2 M_1$.
+Reverse order): $M_◆LB◆\mathrm◆LB◆sys◆RB◆ = M_n \cdots M_2 M_1$.
 
 ### 6.6 Mirror Equation
 
 For a spherical mirror of radius $R$ (with $R \gt 0$ for concave, $R \lt 0$ for convex):
 
-$$\frac{1}{s} + \frac{1}{s'} = \frac{2}{R}$$
+$$\frac◆LB◆1◆RB◆◆LB◆s◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆s'◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆R◆RB◆$$
 
 The focal length is $f = R/2$. The magnification is $M = -s'/s$ (negative for inverted images).
 
@@ -1302,7 +1302,7 @@ The focal length is $f = R/2$. The magnification is $M = -s'/s$ (negative for in
 At height $y$ reflects such that $\theta_i = \theta_r$. In the paraxial approximation ($y \ll R$),
 Applying the law of reflection and the small-angle approximation $\sin\theta \approx \theta$:
 
-$$\frac{h}{s} + \frac{h'}{s'} = \frac{2y}{R}$$
+$$\frac◆LB◆h◆RB◆◆LB◆s◆RB◆ + \frac◆LB◆h'◆RB◆◆LB◆s'◆RB◆ = \frac◆LB◆2y◆RB◆◆LB◆R◆RB◆$$
 
 Dividing through by $y$ and using $h/s = y/s$$h'/s' = y/s'$ (paraxial rays) yields the mirror
 Equation. $\blacksquare$
@@ -1328,18 +1328,18 @@ Image height: $h' = Mh = -4.0 \times 2.0 = -8.0$ cm (inverted, magnified by 4$\t
 
 **Magnifying glass.** Angular magnification when the image is at the near point $D$:
 
-$$M = 1 + \frac{D}{f}$$
+$$M = 1 + \frac◆LB◆D◆RB◆◆LB◆f◆RB◆$$
 
 **Compound microscope.** Total magnification:
 
-$$M_{\mathrm{total} = -\frac{L}{f_o} \cdot \frac{D}{f_e}$$
+$$M_◆LB◆\mathrm◆LB◆total◆RB◆ = -\frac◆LB◆L◆RB◆◆LB◆f_o◆RB◆ \cdot \frac◆LB◆D◆RB◆◆LB◆f_e◆RB◆$$
 
 Where $L$ is the tube length, $f_o$ is the objective focal length, and $f_e$ is the eyepiece focal
 Length.
 
 **Refracting telescope.** Angular magnification:
 
-$$M = -\frac{f_o}{f_e}$$
+$$M = -\frac◆LB◆f_o◆RB◆◆LB◆f_e◆RB◆$$
 
 For large magnification, the objective should have a long focal length and the eyepiece a short one.
 The length of the telescope tube is approximately $f_o + f_e$.
@@ -1359,7 +1359,7 @@ at the near point ($D = 250$ mm).
 
 Eyepiece magnification (image at near point): $M_e = 1 + D/f_e = 1 + 250/25 = 11$.
 
-Total magnification: $M_{\mathrm{total} = M_o \times M_e = -40 \times 11 = -440$.
+Total magnification: $M_◆LB◆\mathrm◆LB◆total◆RB◆ = M_o \times M_e = -40 \times 11 = -440$.
 
 The negative sign indicates the image is inverted.
 
@@ -1372,7 +1372,7 @@ The negative sign indicates the image is inverted.
 In the Fraunhofer limit, the diffraction pattern is the **Fourier transform** of the aperture
 function:
 
-$$E(\theta_x, \theta_y) \propto \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} t(x,y)\, e^{-i(k_x x + k_y y)}\,dx\,dy$$
+$$E(\theta_x, \theta_y) \propto \int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ t(x,y)\, e^◆LB◆-i(k_x x + k_y y)◆RB◆\,dx\,dy$$
 
 Where $t(x, y)$ is the transmission function of the aperture, and $k_x = k\sin\theta_x$
 $k_y = k\sin\theta_y$.
@@ -1385,7 +1385,7 @@ Plane, performing an optical Fourier transform.
 If the aperture is a product $t(x, y) = t_1(x, y) \cdot t_2(x, y)$The diffraction pattern is the
 Convolution of their individual transforms:
 
-$$\mathcal{F}\{t_1 \cdot t_2\} = \mathcal{F}\{t_1\} * \mathcal{F}\{t_2\}$$
+$$\mathcal◆LB◆F◆RB◆\{t_1 \cdot t_2\} = \mathcal◆LB◆F◆RB◆\{t_1\} * \mathcal◆LB◆F◆RB◆\{t_2\}$$
 
 Where $*$ denotes convolution. This explains, for example, why the double-slit pattern with finite
 Slit width is the product of a sinc function (single slit) and a cosine-squared (double slit).
@@ -1398,9 +1398,9 @@ Fall outside the lens aperture.
 
 The **minimum resolvable spatial frequency** is:
 
-$$f_{\mathrm{max} = \frac{2\mathrm{NA}{\lambda}$$
+$$f_◆LB◆\mathrm◆LB◆max◆RB◆ = \frac◆LB◆2\mathrm◆LB◆NA◆RB◆◆LB◆\lambda◆RB◆$$
 
-Where $\mathrm{NA = n\sin\theta_{\mathrm{max}$ is the numerical aperture.
+Where $\mathrm◆LB◆NA = n\sin\theta_◆LB◆\mathrm◆LB◆max◆RB◆$ is the numerical aperture.
 
 ## 8. Coherence
 
@@ -1412,10 +1412,10 @@ Where $\mathrm{NA = n\sin\theta_{\mathrm{max}$ is the numerical aperture.
 
 For a source with spectral width $\Delta\nu$:
 
-$$\tau_c \approx \frac{1}{\Delta\nu}, \quad L_c \approx \frac{c}{\Delta\nu} = \frac{\lambda^2}{\Delta\lambda}$$
+$$\tau_c \approx \frac◆LB◆1◆RB◆◆LB◆\Delta\nu◆RB◆, \quad L_c \approx \frac◆LB◆c◆RB◆◆LB◆\Delta\nu◆RB◆ = \frac◆LB◆\lambda^2◆RB◆◆LB◆\Delta\lambda◆RB◆$$
 
 A sodium lamp ($\Delta\lambda \approx 0.6$ nm at $\lambda = 589$ nm) has $L_c \approx 0.6$ mm. A
-laser ($\Delta\lambda \approx 10^{-6}$ nm) has $L_c \approx 300$ m.
+laser ($\Delta\lambda \approx 10^◆LB◆-6◆RB◆$ nm) has $L_c \approx 300$ m.
 
 <details>
 <summary>Worked Example: Coherence length and fringe visibility</summary>
@@ -1428,13 +1428,13 @@ before they Wash out?
 **Solution.**
 
 (a)
-$L_c = \lambda^2/\Delta\lambda = (546.1 \times 10^{-9})^2/(0.025 \times 10^{-9}) = 1.19 \times 10^{-2}$
+$L_c = \lambda^2/\Delta\lambda = (546.1 \times 10^◆LB◆-9◆RB◆)^2/(0.025 \times 10^◆LB◆-9◆RB◆) = 1.19 \times 10^◆LB◆-2◆RB◆$
 m $= 11.9$ mm.
 
 (b) For a Gaussian spectrum, visibility drops to $1/e$ when $\Delta x = L_c = 11.9$ mm.
 
 (c) The number of fringes:
-$N_{\mathrm{fringes} = L_c/\lambda = (11.9 \times 10^{-3})/(546.1 \times 10^{-9}) = 2.18 \times 10^4$.
+$N_◆LB◆\mathrm◆LB◆fringes◆RB◆ = L_c/\lambda = (11.9 \times 10^◆LB◆-3◆RB◆)/(546.1 \times 10^◆LB◆-9◆RB◆) = 2.18 \times 10^4$.
 Over 20000 fringes are visible — a large number, but far fewer than for a laser.
 
 </details>
@@ -1446,14 +1446,14 @@ Incoherent source is given by the Fourier transform of the source intensity dist
 
 For a circular source of angular diameter $\theta_s$The transverse coherence length is:
 
-$$l_c \approx \frac{1.22\lambda}{\theta_s}$$
+$$l_c \approx \frac◆LB◆1.22\lambda◆RB◆◆LB◆\theta_s◆RB◆$$
 
 ### 8.3 Michelson Stellar Interferometer
 
 Two separated mirrors direct light from a distant star into a single telescope. Fringes are observed
 When the mirror separation $d$ satisfies:
 
-$$d \lt \frac{1.22\lambda}{\theta_s}$$
+$$d \lt \frac◆LB◆1.22\lambda◆RB◆◆LB◆\theta_s◆RB◆$$
 
 The first disappearance of fringes gives the angular diameter of the star:
 $\theta_s = 1.22\lambda/d$.
@@ -1462,15 +1462,15 @@ $\theta_s = 1.22\lambda/d$.
 
 ### 9.1 Stimulated Emission
 
-Einstein's coefficients: $A_{21}$ (spontaneous emission), $B_{21}$ (stimulated emission), $B_{12}$
+Einstein's coefficients: $A_◆LB◆21◆RB◆$ (spontaneous emission), $B_◆LB◆21◆RB◆$ (stimulated emission), $B_◆LB◆12◆RB◆$
 (absorption).
 
 At thermal equilibrium:
 
-$$A_{21} + B_{21}\rho(\omega) = B_{12}\rho(\omega) \cdot \frac{g_1}{g_2} e^{\hbar\omega/(k_B T)}$$
+$$A_◆LB◆21◆RB◆ + B_◆LB◆21◆RB◆\rho(\omega) = B_◆LB◆12◆RB◆\rho(\omega) \cdot \frac◆LB◆g_1◆RB◆◆LB◆g_2◆RB◆ e^◆LB◆\hbar\omega/(k_B T)◆RB◆$$
 
-The relations $B_{21} = B_{12}$ (for non-degenerate levels) and
-$A_{21}/B_{21} = \hbar\omega^3 n^3/(\pi^2 c^3)$ Follow from detailed balance with the Planck
+The relations $B_◆LB◆21◆RB◆ = B_◆LB◆12◆RB◆$ (for non-degenerate levels) and
+$A_◆LB◆21◆RB◆/B_◆LB◆21◆RB◆ = \hbar\omega^3 n^3/(\pi^2 c^3)$ Follow from detailed balance with the Planck
 distribution.
 
 ### 9.2 Population Inversion
@@ -1485,27 +1485,27 @@ This cannot be achieved in a two-level system at thermal equilibrium. A **three-
 
 A Fabry-Perot cavity of length $L$ supports longitudinal modes at frequencies:
 
-$$\nu_m = m\frac{c}{2nL}, \quad m = 1, 2, 3, \ldots$$
+$$\nu_m = m\frac◆LB◆c◆RB◆◆LB◆2nL◆RB◆, \quad m = 1, 2, 3, \ldots$$
 
 The mode spacing (free spectral range):
 
-$$\Delta\nu = \frac{c}{2nL}$$
+$$\Delta\nu = \frac◆LB◆c◆RB◆◆LB◆2nL◆RB◆$$
 
 For a cavity with mirrors of reflectivity $R$The **finesse** is:
 
-$$\mathcal{F} = \frac{\pi\sqrt{R}}{1 - R}$$
+$$\mathcal◆LB◆F◆RB◆ = \frac◆LB◆\pi\sqrt◆LB◆R◆RB◆◆RB◆◆LB◆1 - R◆RB◆$$
 
 ### 9.4 Gaussian Beams
 
-The fundamental TEM$_{00}$ mode of a laser cavity is a Gaussian beam:
+The fundamental TEM$_◆LB◆00◆RB◆$ mode of a laser cavity is a Gaussian beam:
 
-$$E(r, z) = E_0 \frac{w_0}{w(z)} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left(-ikz - ik\frac{r^2}{2R(z)} + i\zeta(z)\right)$$
+$$E(r, z) = E_0 \frac◆LB◆w_0◆RB◆◆LB◆w(z)◆RB◆ \exp\left(-\frac◆LB◆r^2◆RB◆◆LB◆w(z)^2◆RB◆\right) \exp\left(-ikz - ik\frac◆LB◆r^2◆RB◆◆LB◆2R(z)◆RB◆ + i\zeta(z)\right)$$
 
 Where:
 
 - **Beam waist:** $w_0$ (minimum spot size).
 - **Rayleigh range:** $z_R = \pi w_0^2 / \lambda$.
-- **Beam radius:** $w(z) = w_0\sqrt{1 + (z/z_R)^2}$.
+- **Beam radius:** $w(z) = w_0\sqrt◆LB◆1 + (z/z_R)^2◆RB◆$.
 - **Radius of curvature:** $R(z) = z[1 + (z_R/z)^2]$.
 - **Gouy phase:** $\zeta(z) = \arctan(z/z_R)$.
 
@@ -1522,15 +1522,15 @@ For an incident wave with amplitude $E_i$The **reflection and transmission coeff
 
 **s-polarisation** (perpendicular to the plane of incidence):
 
-$$r_s = \frac{n_1\cos\theta_i - n_2\cos\theta_t}{n_1\cos\theta_i + n_2\cos\theta_t}, \quad t_s = \frac{2n_1\cos\theta_i}{n_1\cos\theta_i + n_2\cos\theta_t}$$
+$$r_s = \frac◆LB◆n_1\cos\theta_i - n_2\cos\theta_t◆RB◆◆LB◆n_1\cos\theta_i + n_2\cos\theta_t◆RB◆, \quad t_s = \frac◆LB◆2n_1\cos\theta_i◆RB◆◆LB◆n_1\cos\theta_i + n_2\cos\theta_t◆RB◆$$
 
 **p-polarisation** (parallel to the plane of incidence):
 
-$$r_p = \frac{n_2\cos\theta_i - n_1\cos\theta_t}{n_2\cos\theta_i + n_1\cos\theta_t}, \quad t_p = \frac{2n_1\cos\theta_i}{n_2\cos\theta_i + n_1\cos\theta_t}$$
+$$r_p = \frac◆LB◆n_2\cos\theta_i - n_1\cos\theta_t◆RB◆◆LB◆n_2\cos\theta_i + n_1\cos\theta_t◆RB◆, \quad t_p = \frac◆LB◆2n_1\cos\theta_i◆RB◆◆LB◆n_2\cos\theta_i + n_1\cos\theta_t◆RB◆$$
 
 **Reflectance and transmittance** (energy fractions):
 
-$$R = |r|^2, \quad T = \frac{n_2\cos\theta_t}{n_1\cos\theta_i}|t|^2$$
+$$R = |r|^2, \quad T = \frac◆LB◆n_2\cos\theta_t◆RB◆◆LB◆n_1\cos\theta_i◆RB◆|t|^2$$
 
 With $R + T = 1$ (energy conservation).
 
@@ -1539,12 +1539,12 @@ With $R + T = 1$ (energy conservation).
 At the **Brewster angle** $\theta_B$The reflected beam for p-polarised light has zero amplitude:
 $r_p = 0$:
 
-$$\tan\theta_B = \frac{n_2}{n_1}$$
+$$\tan\theta_B = \frac◆LB◆n_2◆RB◆◆LB◆n_1◆RB◆$$
 
 **Proof.** Setting $r_p = 0$: $n_2\cos\theta_i = n_1\cos\theta_t$. Using Snell's law
 $n_1\sin\theta_i = n_2\sin\theta_t$:
 
-$$\frac{\cos\theta_i}{\sin\theta_i} = \frac{\cos\theta_t}{\sin\theta_t}$$
+$$\frac◆LB◆\cos\theta_i◆RB◆◆LB◆\sin\theta_i◆RB◆ = \frac◆LB◆\cos\theta_t◆RB◆◆LB◆\sin\theta_t◆RB◆$$
 
 $$\cot\theta_i = \cot\theta_t \implies \theta_i + \theta_t = 90^\circ$$
 
@@ -1556,13 +1556,13 @@ Filters work at specific angles for reflected glare.
 ### 10.3 Total Internal Reflection and the Evanescent Wave
 
 When $n_1 \gt n_2$ and $\theta_i \gt \theta_c = \arcsin(n_2/n_1)$$\sin\theta_t \gt 1$So
-$\cos\theta_t = i\sqrt{\sin^2\theta_t - 1}$ becomes imaginary.
+$\cos\theta_t = i\sqrt◆LB◆\sin^2\theta_t - 1◆RB◆$ becomes imaginary.
 
 The transmitted field becomes an **evanescent wave**:
 
-$$E_t \propto e^{-\kappa x}\, e^{i(k_z z - \omega t)}$$
+$$E_t \propto e^◆LB◆-\kappa x◆RB◆\, e^◆LB◆i(k_z z - \omega t)◆RB◆$$
 
-Where $\kappa = k_0\sqrt{n_1^2\sin^2\theta_i - n_2^2}$ and $k_z = k_0 n_1\sin\theta_i$.
+Where $\kappa = k_0\sqrt◆LB◆n_1^2\sin^2\theta_i - n_2^2◆RB◆$ and $k_z = k_0 n_1\sin\theta_i$.
 
 The field decays exponentially with penetration depth $\delta = 1/\kappa$ but propagates along the
 Interface. No energy is transported into the second medium: $R = 1$.
@@ -1576,9 +1576,9 @@ The interface, energy can tunnel across the gap (analogous to quantum tunnelling
 
 The refractive index varies with frequency:
 
-$$n(\omega) = 1 + \frac{Ne^2}{2m_e\varepsilon_0} \sum_j \frac{f_j}{\omega_{0j}^2 - \omega^2 - i\gamma_j\omega}$$
+$$n(\omega) = 1 + \frac◆LB◆Ne^2◆RB◆◆LB◆2m_e\varepsilon_0◆RB◆ \sum_j \frac◆LB◆f_j◆RB◆◆LB◆\omega_◆LB◆0j◆RB◆^2 - \omega^2 - i\gamma_j\omega◆RB◆$$
 
-Where $N$ is the electron density, $f_j$ are oscillator strengths, $\omega_{0j}$ are resonance
+Where $N$ is the electron density, $f_j$ are oscillator strengths, $\omega_◆LB◆0j◆RB◆$ are resonance
 Frequencies, and $\gamma_j$ are damping constants.
 
 - **Normal dispersion** ($dn/d\lambda \lt 0$): away from resonances, $n$ decreases with increasing
@@ -1597,18 +1597,18 @@ Even become negative, but this does not violate causality (signal velocity remai
 
 Starting from the Lorentz oscillator model for a single resonance:
 
-$$n^2(\omega) = 1 + \frac{Ne^2}{m_e\varepsilon_0}\frac{1}{\omega_0^2 - \omega^2 - i\gamma\omega}$$
+$$n^2(\omega) = 1 + \frac◆LB◆Ne^2◆RB◆◆LB◆m_e\varepsilon_0◆RB◆\frac◆LB◆1◆RB◆◆LB◆\omega_0^2 - \omega^2 - i\gamma\omega◆RB◆$$
 
-The real part $n(\omega) = \mathrm{Re\sqrt{\epsilon(\omega)}$ gives the refractive index. The
+The real part $n(\omega) = \mathrm◆LB◆Re\sqrt◆LB◆\epsilon(\omega)◆RB◆$ gives the refractive index. The
 Imaginary part gives absorption:
 
-$$\alpha_{\mathrm{abs} = \frac{2\omega}{c}\,\mathrm{Im\, n(\omega)$$
+$$\alpha_◆LB◆\mathrm◆LB◆abs◆RB◆ = \frac◆LB◆2\omega◆RB◆◆LB◆c◆RB◆\,\mathrm◆LB◆Im\, n(\omega)$$
 
 **Worked example.** For X-rays ($\omega \gg \omega_0$):
 
-$$n \approx 1 - \frac{Ne^2}{2m_e\varepsilon_0\omega^2} = 1 - \frac{\omega_p^2}{2\omega^2}$$
+$$n \approx 1 - \frac◆LB◆Ne^2◆RB◆◆LB◆2m_e\varepsilon_0\omega^2◆RB◆ = 1 - \frac◆LB◆\omega_p^2◆RB◆◆LB◆2\omega^2◆RB◆$$
 
-Where $\omega_p = \sqrt{Ne^2/(m_e\varepsilon_0)}$ is the plasma frequency. Since $n \lt 1$X-rays
+Where $\omega_p = \sqrt◆LB◆Ne^2/(m_e\varepsilon_0)◆RB◆$ is the plasma frequency. Since $n \lt 1$X-rays
 Undergo total external reflection at grazing incidence.
 
 ### 11.4 Chromatic Aberration
@@ -1622,9 +1622,9 @@ $$\Delta f = f(\lambda_1) - f(\lambda_2)$$
 Different dispersive powers are combined to cancel chromatic aberration at two wavelengths. The
 Condition is:
 
-$$\frac{\omega_1}{f_1} + \frac{\omega_2}{f_2} = 0$$
+$$\frac◆LB◆\omega_1◆RB◆◆LB◆f_1◆RB◆ + \frac◆LB◆\omega_2◆RB◆◆LB◆f_2◆RB◆ = 0$$
 
-Where $\omega_i = (n_{i,F} - n_{i,C})/(n_{i,d} - 1)$ is the Abbe number for glass $i$.
+Where $\omega_i = (n_◆LB◆i,F◆RB◆ - n_◆LB◆i,C◆RB◆)/(n_◆LB◆i,d◆RB◆ - 1)$ is the Abbe number for glass $i$.
 
 ## 12. Optical Fibres
 
@@ -1635,24 +1635,24 @@ An optical fibre consists of a core (refractive index $n_1$) surrounded by a cla
 
 The **numerical aperture:**
 
-$$\mathrm{NA = \sin\theta_{\mathrm{max} = \sqrt{n_1^2 - n_2^2}$$
+$$\mathrm◆LB◆NA = \sin\theta_◆LB◆\mathrm◆LB◆max◆RB◆ = \sqrt◆LB◆n_1^2 - n_2^2◆RB◆$$
 
-Where $\theta_{\mathrm{max}$ is the maximum acceptance angle for light entering the fibre.
+Where $\theta_◆LB◆\mathrm◆LB◆max◆RB◆$ is the maximum acceptance angle for light entering the fibre.
 
 ### 12.2 Modes in Optical Fibres
 
 The number of modes supported depends on the **V-number:**
 
-$$V = \frac{2\pi a}{\lambda}\mathrm{NA$$
+$$V = \frac◆LB◆2\pi a◆RB◆◆LB◆\lambda◆RB◆\mathrm◆LB◆NA$$
 
 Where $a$ is the core radius.
 
-- **Single-mode fibre:** $V \lt 2.405$. Only the fundamental HE$_{11}$ mode propagates.
+- **Single-mode fibre:** $V \lt 2.405$. Only the fundamental HE$_◆LB◆11◆RB◆$ mode propagates.
 - **Multimode fibre:** $V \gt 2.405$. Multiple modes propagate, causing modal dispersion.
 
 ### 12.3 Attenuation
 
-Fibre attenuation is dominated by Rayleigh scattering ($\propto \lambda^{-4}$) and infrared
+Fibre attenuation is dominated by Rayleigh scattering ($\propto \lambda^◆LB◆-4◆RB◆$) and infrared
 absorption Peaks. The minimum attenuation for silica fibre is $\sim 0.2$ dB/km at
 $\lambda \approx 1550$ nm.
 
@@ -1661,17 +1661,17 @@ $\lambda \approx 1550$ nm.
 **1.** A string of length $L = 1.20$ m is fixed at both ends and has wave speed $v = 240$ m/s. Find
 the fundamental frequency and the frequencies of the first three harmonics.
 
-**2.** Show that $u(x,t) = A e^{i(kx-\omega t)} + B e^{-i(kx+\omega t)}$ satisfies the 1D wave
+**2.** Show that $u(x,t) = A e^◆LB◆i(kx-\omega t)◆RB◆ + B e^◆LB◆-i(kx+\omega t)◆RB◆$ satisfies the 1D wave
 Equation $\partial^2 u/\partial x^2 = (1/v^2)\partial^2 u/\partial t^2$. Identify the physical
 Meaning of each term and find the condition on $\omega$ and $k$.
 
-**3.** A wave packet in a dispersive medium has central angular frequency $\omega_0 = 10^{15}$ rad/s
-And bandwidth $\Delta\omega = 10^{12}$ rad/s. The group velocity dispersion is
+**3.** A wave packet in a dispersive medium has central angular frequency $\omega_0 = 10^◆LB◆15◆RB◆$ rad/s
+And bandwidth $\Delta\omega = 10^◆LB◆12◆RB◆$ rad/s. The group velocity dispersion is
 $\alpha = d^2\omega/dk^2 = 2.0 \times 10^6$ m$^2$/s. Estimate the time required for the packet To
 double in spatial width after travelling a distance of 1.0 m.
 
 **4.** The electric field of a plane wave is
-$\mathbf{E} = (20\hat{\mathbf{x}} - 15\hat{\mathbf{y}})\cos(kz - \omega t)$ V/m in vacuum. Find the
+$\mathbf◆LB◆E◆RB◆ = (20\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆ - 15\hat◆LB◆\mathbf◆LB◆y◆RB◆◆RB◆)\cos(kz - \omega t)$ V/m in vacuum. Find the
 amplitude, the polarisation state (including the angle and handedness), and the time-averaged
 Intensity.
 
@@ -1739,48 +1739,48 @@ Using the thin lens equation applied twice.
 **Solution 1.** $f_1 = v/(2L) = 240/(2 \times 1.20) = 100$ Hz. The harmonics are $f_n = nf_1$:
 $f_1 = 100$ Hz, $f_2 = 200$ Hz, $f_3 = 300$ Hz.
 
-**Solution 2.** $\partial^2 u/\partial x^2 = -k^2(Ae^{i(kx-\omega t)} + Be^{-i(kx+\omega t)})$ and
-$\partial^2 u/\partial t^2 = -\omega^2(Ae^{i(kx-\omega t)} + Be^{-i(kx+\omega t)})$. The wave
+**Solution 2.** $\partial^2 u/\partial x^2 = -k^2(Ae^◆LB◆i(kx-\omega t)◆RB◆ + Be^◆LB◆-i(kx+\omega t)◆RB◆)$ and
+$\partial^2 u/\partial t^2 = -\omega^2(Ae^◆LB◆i(kx-\omega t)◆RB◆ + Be^◆LB◆-i(kx+\omega t)◆RB◆)$. The wave
 Equation requires $k^2 = \omega^2/v^2$I.e., $\omega = \pm vk$. The first term is a wave Travelling
 in the $+x$ direction; the second is a wave travelling in the $-x$ direction.
 
 **Solution 3.** Group velocity: $v_g = d\omega/dk \approx \Delta\omega/\Delta k$. Initial spatial
 Width: $\sigma_0 \approx 1/\Delta k = 1/(\Delta\omega/v_g)$. The packet doubles when
-$1 + (\alpha t/(2\sigma_0^2))^2 = 4$Giving $t = 2\sigma_0\sqrt{3}/\alpha$. Using
+$1 + (\alpha t/(2\sigma_0^2))^2 = 4$Giving $t = 2\sigma_0\sqrt◆LB◆3◆RB◆/\alpha$. Using
 $\sigma_0 = v_g/\Delta\omega$ and $v_g = \omega_0/k_0$ with $k_0 = \omega_0/c$ (assuming
-$v_g \approx c$ for Estimation): $\sigma_0 \approx 3 \times 10^8/10^{12} = 3 \times 10^{-4}$ m.
-$t = 2(3 \times 10^{-4})(\sqrt{3})/(2 \times 10^6) = 5.2 \times 10^{-10}$ s. Time to travel 1 m:
-$\sim 3.3 \times 10^{-9}$ s $\gg t$So the packet doubles well before reaching 1 m.
+$v_g \approx c$ for Estimation): $\sigma_0 \approx 3 \times 10^8/10^◆LB◆12◆RB◆ = 3 \times 10^◆LB◆-4◆RB◆$ m.
+$t = 2(3 \times 10^◆LB◆-4◆RB◆)(\sqrt◆LB◆3◆RB◆)/(2 \times 10^6) = 5.2 \times 10^◆LB◆-10◆RB◆$ s. Time to travel 1 m:
+$\sim 3.3 \times 10^◆LB◆-9◆RB◆$ s $\gg t$So the packet doubles well before reaching 1 m.
 
 **Solution 5.** At normal incidence, $\theta_i = \theta_t = 0$ and
 $r_s = r_p = (n_1 - n_2)/(n_1 + n_2)$. Boundary condition on tangential $E$: $E_0(1 + r) = E_0 t$So
 $t = 1 + r$. $\blacksquare$
 
 **Solution 8.**
-$y_5 = 5\lambda L/d \implies \lambda = y_5 d/(5L) = (8.2 \times 10^{-3})(0.50 \times 10^{-3})/(5 \times 1.5) = 5.47 \times 10^{-7}$
+$y_5 = 5\lambda L/d \implies \lambda = y_5 d/(5L) = (8.2 \times 10^◆LB◆-3◆RB◆)(0.50 \times 10^◆LB◆-3◆RB◆)/(5 \times 1.5) = 5.47 \times 10^◆LB◆-7◆RB◆$
 m $= 547$ nm.
 
 **Solution 9.** Thickness: $t = \lambda/(4n) = 550/(4 \times 1.38) = 99.6$ nm. Uncoated reflectance:
 $R = [(1 - 1.52)/(1 + 1.52)]^2 = (0.52/2.52)^2 = 0.0426 = 4.26\%$.
 
 **Solution 10.** (a)
-$\Delta d = m\lambda/2 = 1000 \times 589 \times 10^{-9}/2 = 2.945 \times 10^{-4}$ m $= 0.295$ mm.
+$\Delta d = m\lambda/2 = 1000 \times 589 \times 10^◆LB◆-9◆RB◆/2 = 2.945 \times 10^◆LB◆-4◆RB◆$ m $= 0.295$ mm.
 (b) Fringes are visible for path difference
-$\Delta x \lt L_c = \lambda^2/\Delta\lambda = (589 \times 10^{-9})^2/(0.6 \times 10^{-9}) = 5.78 \times 10^{-4}$
+$\Delta x \lt L_c = \lambda^2/\Delta\lambda = (589 \times 10^◆LB◆-9◆RB◆)^2/(0.6 \times 10^◆LB◆-9◆RB◆) = 5.78 \times 10^◆LB◆-4◆RB◆$
 m $= 0.578$ mm. Since the path difference is $2\Delta d$The mirror can move up to
 $\Delta d = L_c/2 = 0.289$ mm before fringes wash out. Note that 1000 fringes correspond to
 $\Delta d = 0.295$ mm, which slightly exceeds $L_c/2$ — the outermost fringes would already be
 fading.
 
-**Solution 11.** $\mathcal{F} = \pi\sqrt{0.85}/(1 - 0.85) = 19.3$.
-$\Delta\nu_{\mathrm{FSR} = c/(2nd) = 3 \times 10^8/(2 \times 0.5 \times 10^{-3}) = 3 \times 10^{11}$
-Hz. $m = 2nd/\lambda = 2000$. $\mathcal{R} = m\mathcal{F} = 38600$.
-$\delta\lambda = \lambda/\mathcal{R} = 500/38600 = 0.0130$ nm.
+**Solution 11.** $\mathcal◆LB◆F◆RB◆ = \pi\sqrt◆LB◆0.85◆RB◆/(1 - 0.85) = 19.3$.
+$\Delta\nu_◆LB◆\mathrm◆LB◆FSR◆RB◆ = c/(2nd) = 3 \times 10^8/(2 \times 0.5 \times 10^◆LB◆-3◆RB◆) = 3 \times 10^◆LB◆11◆RB◆$
+Hz. $m = 2nd/\lambda = 2000$. $\mathcal◆LB◆R◆RB◆ = m\mathcal◆LB◆F◆RB◆ = 38600$.
+$\delta\lambda = \lambda/\mathcal◆LB◆R◆RB◆ = 500/38600 = 0.0130$ nm.
 
 **Solution 14.**
-$\theta_{\min} = 1.22\lambda/D = 1.22(500 \times 10^{-9})/2.4 = 2.54 \times 10^{-7}$ rad
+$\theta_◆LB◆\min◆RB◆ = 1.22\lambda/D = 1.22(500 \times 10^◆LB◆-9◆RB◆)/2.4 = 2.54 \times 10^◆LB◆-7◆RB◆$ rad
 $= 0.0527''$. The ground-based $D = 8$ m telescope has a diffraction limit of
-$1.22(500 \times 10^{-9})/8 = 7.63 \times 10^{-8}$ rad $= 0.0158''$But atmospheric seeing of $1.0''$
+$1.22(500 \times 10^◆LB◆-9◆RB◆)/8 = 7.63 \times 10^◆LB◆-8◆RB◆$ rad $= 0.0158''$But atmospheric seeing of $1.0''$
 degrades this by a factor of $\sim 63$. Hubble, being above the atmosphere, achieves its
 diffraction-limited $0.053''$ resolution, far surpassing the ground-based telescope's effective
 resolution.
@@ -1794,10 +1794,10 @@ s-polarised.
 **Solution 15.**
 $I = (I_0/2)\cos^2\theta = I_0/8 \implies \cos^2\theta = 1/4 \implies \theta = 60°$.
 
-**Solution 4.** $E_0 = \sqrt{20^2 + (-15)^2} = 25$ V/m. Polarisation angle from $x$-axis:
+**Solution 4.** $E_0 = \sqrt◆LB◆20^2 + (-15)^2◆RB◆ = 25$ V/m. Polarisation angle from $x$-axis:
 $\theta = \arctan(-15/20) = -36.9°$ (below the $x$-axis). The field has $\delta = 0$ (no phase
 difference between components), so it is linearly polarised.
-$I = \frac{1}{2}c\varepsilon_0 E_0^2 = \frac{1}{2}(3 \times 10^8)(8.854 \times 10^{-12})(625) = 0.830$
+$I = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆c\varepsilon_0 E_0^2 = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(3 \times 10^8)(8.854 \times 10^◆LB◆-12◆RB◆)(625) = 0.830$
 W/m$^2$.
 
 **Solution 6.** (a) $R = [(1.33 - 1.50)/(1.33 + 1.50)]^2 = (0.17/2.83)^2 = 0.00361 = 0.361\%$. (b)
@@ -1805,16 +1805,16 @@ $\sin\theta_t = 1.33\sin 45°/1.50 = 0.627$$\theta_t = 38.8°$.
 $r_s = (1.33\cos 45° - 1.50\cos 38.8°)/(1.33\cos 45° + 1.50\cos 38.8°) = (0.940 - 1.170)/(0.940 + 1.170) = -0.109$.
 $R_s = 0.0119$.
 $r_p = (1.50\cos 45° - 1.33\cos 38.8°)/(1.50\cos 45° + 1.33\cos 38.8°) = (1.061 - 1.038)/(1.061 + 1.038) = 0.011$.
-$R_p = 1.2 \times 10^{-4}$. (c) $\theta_B = \arctan(1.50/1.33) = 48.4°$. The reflected light is most
+$R_p = 1.2 \times 10^◆LB◆-4◆RB◆$. (c) $\theta_B = \arctan(1.50/1.33) = 48.4°$. The reflected light is most
 strongly polarised at $\theta_B$.
 
 **Solution 7.** $\theta_c = \arcsin(1.46/1.48) = 80.6°$.
-$\mathrm{NA = \sqrt{1.48^2 - 1.46^2} = \sqrt{2.190 - 2.132} = \sqrt{0.0588} = 0.242$.
-$\theta_{\max} = \arcsin(0.242) = 14.0°$.
+$\mathrm◆LB◆NA = \sqrt◆LB◆1.48^2 - 1.46^2◆RB◆ = \sqrt◆LB◆2.190 - 2.132◆RB◆ = \sqrt◆LB◆0.0588◆RB◆ = 0.242$.
+$\theta_◆LB◆\max◆RB◆ = \arcsin(0.242) = 14.0°$.
 
 **Solution 12.** (a) First minimum at
-$\sin\theta_1 = \lambda/a = 633 \times 10^{-9}/(5.0 \times 10^{-5}) = 1.266 \times 10^{-2}$$\theta_1 = 0.726°$.
-Central maximum width on screen: $2y_1 \approx 2L\theta_1 = 2(3.0)(1.266 \times 10^{-2}) = 7.60$ cm.
+$\sin\theta_1 = \lambda/a = 633 \times 10^◆LB◆-9◆RB◆/(5.0 \times 10^◆LB◆-5◆RB◆) = 1.266 \times 10^◆LB◆-2◆RB◆$$\theta_1 = 0.726°$.
+Central maximum width on screen: $2y_1 \approx 2L\theta_1 = 2(3.0)(1.266 \times 10^◆LB◆-2◆RB◆) = 7.60$ cm.
 (b) Second secondary maximum near $\alpha \approx 5\pi/2 = 7.854$.
 $I/I_0 = (\sin 7.854/7.854)^2 = (1/7.854)^2 = 0.0162$About 1.6% of $I_0$.
 
@@ -1831,12 +1831,12 @@ Second lens), $s_2' = f_2 = -15$ cm. The final image is virtual, 15 cm to the le
 Lens.
 
 Matrix method:
-$M_{\mathrm{sys} = M_{\mathrm{lens_2} \cdot M_{\mathrm{prop} \cdot M_{\mathrm{lens_1}$
-$= \begin{pmatrix} 1 & 0 \\ 1/15 & 1 \end{pmatrix} \begin{pmatrix} 1 & 60 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ -1/20 & 1 \end{pmatrix}$
-$= \begin{pmatrix} 1 & 0 \\ 1/15 & 1 \end{pmatrix} \begin{pmatrix} 1 & 60 \\ -1/20 & 1 \end{pmatrix}$
-$= \begin{pmatrix} 1 & 60 \\ 1/15 - 1/20 & 5 \end{pmatrix} = \begin{pmatrix} 1 & 60 \\ 1/60 & 5 \end{pmatrix}$.
+$M_◆LB◆\mathrm◆LB◆sys◆RB◆ = M_◆LB◆\mathrm◆LB◆lens_2◆RB◆ \cdot M_◆LB◆\mathrm◆LB◆prop◆RB◆ \cdot M_◆LB◆\mathrm◆LB◆lens_1◆RB◆$
+$= \begin◆LB◆pmatrix◆RB◆ 1 & 0 \\ 1/15 & 1 \end◆LB◆pmatrix◆RB◆ \begin◆LB◆pmatrix◆RB◆ 1 & 60 \\ 0 & 1 \end◆LB◆pmatrix◆RB◆ \begin◆LB◆pmatrix◆RB◆ 1 & 0 \\ -1/20 & 1 \end◆LB◆pmatrix◆RB◆$
+$= \begin◆LB◆pmatrix◆RB◆ 1 & 0 \\ 1/15 & 1 \end◆LB◆pmatrix◆RB◆ \begin◆LB◆pmatrix◆RB◆ 1 & 60 \\ -1/20 & 1 \end◆LB◆pmatrix◆RB◆$
+$= \begin◆LB◆pmatrix◆RB◆ 1 & 60 \\ 1/15 - 1/20 & 5 \end◆LB◆pmatrix◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 & 60 \\ 1/60 & 5 \end◆LB◆pmatrix◆RB◆$.
 
-From the matrix $\begin{pmatrix} A & B \\ C & D \end{pmatrix}$: $s' = -A/C = -1/(1/60) = -60$ cm
+From the matrix $\begin◆LB◆pmatrix◆RB◆ A & B \\ C & D \end◆LB◆pmatrix◆RB◆$: $s' = -A/C = -1/(1/60) = -60$ cm
 (measured From the second lens, so 60 cm to the left, but this is the object distance for a virtual
 object). The Effective focal length: $-1/C = -60$ cm. The image forms where parallel output rays
 converge: at $f_2 = -15$ cm. Total magnification:
@@ -1851,22 +1851,22 @@ $M = A - s'C = 1 - (-15)(1/60) = 1 + 1/4 = 5/4 = 1.25$ (upright, slightly magnif
 The Fraunhofer diffraction pattern of an aperture with transmittance function $t(x, y)$ illuminated
 by a plane wave is proportional to the 2D Fourier transform of the aperture function:
 
-$$E(u, v) \propto \iint t(x,y)\, e^{-2\pi i(ux + vy)}\, dx\, dy = \mathcal{F}\{t(x,y)\}(u, v)$$
+$$E(u, v) \propto \iint t(x,y)\, e^◆LB◆-2\pi i(ux + vy)◆RB◆\, dx\, dy = \mathcal◆LB◆F◆RB◆\{t(x,y)\}(u, v)$$
 
 Where $u = \sin\theta_x/\lambda$ and $v = \sin\theta_y/\lambda$ are the spatial frequencies.
 
 **Theorem 10.1.** The intensity in the Fraunhofer diffraction pattern is
 
-$$I(u,v) = I_0\,|\tilde{t}(u,v)|^2$$
+$$I(u,v) = I_0\,|\tilde◆LB◆t◆RB◆(u,v)|^2$$
 
-Where $\tilde{t}(u,v) = \mathcal{F}\{t(x,y)\}(u,v)$ is the Fourier transform of the aperture
+Where $\tilde◆LB◆t◆RB◆(u,v) = \mathcal◆LB◆F◆RB◆\{t(x,y)\}(u,v)$ is the Fourier transform of the aperture
 function.
 
 _Proof._ The Huygens-Fresnel principle in the far field gives:
 
-$$E(x',y') = \frac{e^{ikr}}{i\lambda r}\iint t(x,y)\, e^{-ik(xx' + yy')/r}\, dx\, dy$$
+$$E(x',y') = \frac◆LB◆e^◆LB◆ikr◆RB◆◆RB◆◆LB◆i\lambda r◆RB◆\iint t(x,y)\, e^◆LB◆-ik(xx' + yy')/r◆RB◆\, dx\, dy$$
 
-In the far field, $r \approx D$ and the phase factor $e^{-ik(xx' + yy')/r}$ is exactly the kernel of
+In the far field, $r \approx D$ and the phase factor $e^◆LB◆-ik(xx' + yy')/r◆RB◆$ is exactly the kernel of
 the Fourier transform. $\blacksquare$
 
 ### 10.2 Convolution Theorem for Diffraction
@@ -1874,12 +1874,12 @@ the Fourier transform. $\blacksquare$
 **Theorem 10.2 (Convolution theorem).** If an aperture function is the convolution
 $t = t_1 * t_2$The diffraction pattern is the product of the individual diffraction patterns:
 
-$$\mathcal{F}\{t_1 * t_2\} = \mathcal{F}\{t_1\} \cdot \mathcal{F}\{t_2\}$$
+$$\mathcal◆LB◆F◆RB◆\{t_1 * t_2\} = \mathcal◆LB◆F◆RB◆\{t_1\} \cdot \mathcal◆LB◆F◆RB◆\{t_2\}$$
 
 **Corollary.** If an aperture is the product $t = t_1 \cdot t_2$The diffraction pattern is the
 convolution of the individual patterns:
 
-$$\mathcal{F}\{t_1 \cdot t_2\} = \mathcal{F}\{t_1\} * \mathcal{F}\{t_2\}$$
+$$\mathcal◆LB◆F◆RB◆\{t_1 \cdot t_2\} = \mathcal◆LB◆F◆RB◆\{t_1\} * \mathcal◆LB◆F◆RB◆\{t_2\}$$
 
 ### 10.3 Worked Example: Diffraction Grating via Fourier Transform
 
@@ -1889,20 +1889,20 @@ of width $a$ and spacing $d$.
 <details>
 <summary>Solution</summary>
 
-The transmittance of a single slit centred at $x = 0$ is $t_{\mathrm{slit}(x) = \mathrm{rect(x/a)$.
+The transmittance of a single slit centred at $x = 0$ is $t_◆LB◆\mathrm◆LB◆slit◆RB◆(x) = \mathrm◆LB◆rect(x/a)$.
 The full grating is $N$ slits:
 
-$$t(x) = \sum_{n=0}^{N-1} t_{\mathrm{slit}(x - nd) = t_{\mathrm{slit}(x) * \sum_{n=0}^{N-1} \delta(x - nd)$$
+$$t(x) = \sum_◆LB◆n=0◆RB◆^◆LB◆N-1◆RB◆ t_◆LB◆\mathrm◆LB◆slit◆RB◆(x - nd) = t_◆LB◆\mathrm◆LB◆slit◆RB◆(x) * \sum_◆LB◆n=0◆RB◆^◆LB◆N-1◆RB◆ \delta(x - nd)$$
 
 The Fourier transform is:
 
-$$\tilde{t}(u) = \mathcal{F}\{t_{\mathrm{slit}\} \cdot \mathcal{F}\left\{\sum_{n=0}^{N-1}\delta(x - nd)\right\}$$
+$$\tilde◆LB◆t◆RB◆(u) = \mathcal◆LB◆F◆RB◆\{t_◆LB◆\mathrm◆LB◆slit◆RB◆\} \cdot \mathcal◆LB◆F◆RB◆\left\{\sum_◆LB◆n=0◆RB◆^◆LB◆N-1◆RB◆\delta(x - nd)\right\}$$
 
-$$= a\,\mathrm{sinc(\pi a u) \cdot \sum_{n=0}^{N-1} e^{-2\pi i n d u} = a\,\mathrm{sinc(\pi a u) \cdot \frac{\sin(N\pi d u)}{\sin(\pi d u)}$$
+$$= a\,\mathrm◆LB◆sinc(\pi a u) \cdot \sum_◆LB◆n=0◆RB◆^◆LB◆N-1◆RB◆ e^◆LB◆-2\pi i n d u◆RB◆ = a\,\mathrm◆LB◆sinc(\pi a u) \cdot \frac◆LB◆\sin(N\pi d u)◆RB◆◆LB◆\sin(\pi d u)◆RB◆$$
 
 The intensity is:
 
-$$I(u) = I_0\,a^2\,\mathrm{sinc^2(\pi a u)\,\frac{\sin^2(N\pi d u)}{\sin^2(\pi d u)}$$
+$$I(u) = I_0\,a^2\,\mathrm◆LB◆sinc^2(\pi a u)\,\frac◆LB◆\sin^2(N\pi d u)◆RB◆◆LB◆\sin^2(\pi d u)◆RB◆$$
 
 The first factor is the single-slit envelope; the second is the $N$-slit interference pattern.
 Principal maxima occur at $du = m$ (integer $m$), giving the grating equation
@@ -1922,23 +1922,23 @@ $\blacksquare$
 The aperture function is $t(r) = 1$ for $r \leq a$ and $t(r) = 0$ for $r > a$. By circular symmetry,
 the Fourier transform in polar coordinates is:
 
-$$\tilde{t}(q) = 2\pi\int_0^a J_0(2\pi q r)\, r\, dr$$
+$$\tilde◆LB◆t◆RB◆(q) = 2\pi\int_0^a J_0(2\pi q r)\, r\, dr$$
 
 Where $J_0$ is the Bessel function of the first kind and $q = \sin\theta/\lambda$ is the radial
 spatial frequency. Using the identity:
 
-$$\int_0^a J_0(2\pi q r)\, r\, dr = \frac{a}{2\pi q}J_1(2\pi q a)$$
+$$\int_0^a J_0(2\pi q r)\, r\, dr = \frac◆LB◆a◆RB◆◆LB◆2\pi q◆RB◆J_1(2\pi q a)$$
 
-$$\tilde{t}(q) = \pi a^2 \cdot \frac{2J_1(\alpha)}{\alpha}$$
+$$\tilde◆LB◆t◆RB◆(q) = \pi a^2 \cdot \frac◆LB◆2J_1(\alpha)◆RB◆◆LB◆\alpha◆RB◆$$
 
 Where $\alpha = 2\pi a q = 2\pi a\sin\theta/\lambda$. The intensity is:
 
-$$I(\theta) = I_0\left(\frac{2J_1(\alpha)}{\alpha}\right)^2$$
+$$I(\theta) = I_0\left(\frac◆LB◆2J_1(\alpha)◆RB◆◆LB◆\alpha◆RB◆\right)^2$$
 
 This is the **Airy pattern**. The first zero occurs at $\alpha = 3.832$Giving the angular radius of
 the first dark ring:
 
-$$\sin\theta_1 = 1.22\,\frac{\lambda}{d}$$
+$$\sin\theta_1 = 1.22\,\frac◆LB◆\lambda◆RB◆◆LB◆d◆RB◆$$
 
 Where $d = 2a$ is the diameter.
 
@@ -1955,11 +1955,11 @@ $\blacksquare$
 A source has finite **temporal coherence** if the emitted light has a finite bandwidth $\Delta\nu$.
 The **coherence time** is
 
-$$\tau_c \sim \frac{1}{\Delta\nu}$$
+$$\tau_c \sim \frac◆LB◆1◆RB◆◆LB◆\Delta\nu◆RB◆$$
 
 And the **coherence length** is
 
-$$L_c = c\,\tau_c \sim \frac{c}{\Delta\nu} = \frac{\lambda^2}{\Delta\lambda}$$
+$$L_c = c\,\tau_c \sim \frac◆LB◆c◆RB◆◆LB◆\Delta\nu◆RB◆ = \frac◆LB◆\lambda^2◆RB◆◆LB◆\Delta\lambda◆RB◆$$
 
 For a Michelson interferometer, fringes are visible only when the path difference is less than
 $L_c$.
@@ -1969,7 +1969,7 @@ $L_c$.
 The **spatial coherence** of a source is characterised by the **coherence area** $A_c$. For a
 circular source of angular radius $\Delta\theta$:
 
-$$A_c \approx \frac{\lambda^2}{\pi(\Delta\theta)^2}$$
+$$A_c \approx \frac◆LB◆\lambda^2◆RB◆◆LB◆\pi(\Delta\theta)^2◆RB◆$$
 
 The van Cittert-Zernike theorem states that the spatial coherence of an incoherent source is given
 by the Fourier transform of the source intensity distribution.
@@ -1977,7 +1977,7 @@ by the Fourier transform of the source intensity distribution.
 **Theorem 11.1 (van Cittert-Zernike).** The mutual coherence function of a quasi-monochromatic
 incoherent source with intensity distribution $I(\xi, \eta)$ is
 
-$$\Gamma(\Delta x, \Delta y) = \iint I(\xi, \eta)\, e^{-2\pi i(\xi\,\Delta x + \eta\,\Delta y)/(\lambda z)}\, d\xi\, d\eta$$
+$$\Gamma(\Delta x, \Delta y) = \iint I(\xi, \eta)\, e^◆LB◆-2\pi i(\xi\,\Delta x + \eta\,\Delta y)/(\lambda z)◆RB◆\, d\xi\, d\eta$$
 
 This is proportional to the Fourier transform of $I(\xi, \eta)$.
 
@@ -1990,11 +1990,11 @@ fringes are visible in a Michelson interferometer.
 <details>
 <summary>Solution</summary>
 
-$$L_c = \frac{\lambda^2}{\Delta\lambda} = \frac{(589 \times 10^{-9})^2}{0.6 \times 10^{-9}} = \frac{3.47 \times 10^{-13}}{6 \times 10^{-10}} \approx 5.78 \times 10^{-4}\,\mathrm{m \approx 0.578\,\mathrm{mm$$
+$$L_c = \frac◆LB◆\lambda^2◆RB◆◆LB◆\Delta\lambda◆RB◆ = \frac◆LB◆(589 \times 10^◆LB◆-9◆RB◆)^2◆RB◆◆LB◆0.6 \times 10^◆LB◆-9◆RB◆◆RB◆ = \frac◆LB◆3.47 \times 10^◆LB◆-13◆RB◆◆RB◆◆LB◆6 \times 10^◆LB◆-10◆RB◆◆RB◆ \approx 5.78 \times 10^◆LB◆-4◆RB◆\,\mathrm◆LB◆m \approx 0.578\,\mathrm◆LB◆mm$$
 
-For a He-Ne laser ($\lambda = 632.8$ nm, $\Delta\lambda \sim 10^{-6}$ nm):
+For a He-Ne laser ($\lambda = 632.8$ nm, $\Delta\lambda \sim 10^◆LB◆-6◆RB◆$ nm):
 
-$$L_c = \frac{(632.8 \times 10^{-9})^2}{10^{-15}} \approx 400\,\mathrm{m$$
+$$L_c = \frac◆LB◆(632.8 \times 10^◆LB◆-9◆RB◆)^2◆RB◆◆LB◆10^◆LB◆-15◆RB◆◆RB◆ \approx 400\,\mathrm◆LB◆m$$
 
 The enormous coherence length of the laser is why it produces sharp fringes over very large path
 differences. $\blacksquare$
@@ -2010,12 +2010,12 @@ differences. $\blacksquare$
 **Fresnel diffraction** (near-field): the observation screen is close enough that the curvature of
 the wavefronts matters. The Fresnel diffraction integral is:
 
-$$E(P) = \frac{i}{\lambda}\iint \frac{E(Q)}{r_{QP}}\, e^{ikr_{QP}}\, dS$$
+$$E(P) = \frac◆LB◆i◆RB◆◆LB◆\lambda◆RB◆\iint \frac◆LB◆E(Q)◆RB◆◆LB◆r_◆LB◆QP◆RB◆◆RB◆\, e^◆LB◆ikr_◆LB◆QP◆RB◆◆RB◆\, dS$$
 
 **Fraunhofer diffraction** (far-field): the observation screen is far enough that the phase
 variation across the aperture can be approximated as linear. This occurs when:
 
-$$R \gg \frac{a^2}{\lambda}$$
+$$R \gg \frac◆LB◆a^2◆RB◆◆LB◆\lambda◆RB◆$$
 
 Where $a$ is the aperture size and $R$ is the distance to the screen.
 
@@ -2024,7 +2024,7 @@ Where $a$ is the aperture size and $R$ is the distance to the screen.
 For a point $P$ at distance $R$ from an aperture, the **Fresnel zones** are annular regions where
 the path length from $P$ differs by $\lambda/2$. The $n$-th Fresnel zone has inner radius:
 
-$$r_n = \sqrt{n\lambda R + \frac{n^2\lambda^2}{4}} \approx \sqrt{n\lambda R}$$
+$$r_n = \sqrt◆LB◆n\lambda R + \frac◆LB◆n^2\lambda^2◆RB◆◆LB◆4◆RB◆◆RB◆ \approx \sqrt◆LB◆n\lambda R◆RB◆$$
 
 **Zone plate.** A Fresnel zone plate blocks alternate zones, producing a focused beam. It acts as a
 lens with focal length $f = r_1^2/\lambda$.
@@ -2033,9 +2033,9 @@ lens with focal length $f = r_1^2/\lambda$.
 
 For a semi-infinite plane ($x > 0$), the Fresnel integral gives the intensity at a point $P$:
 
-$$I(P) = \frac{I_0}{2}\left[\left(C(u) + \frac{1}{2}\right)^2 + \left(S(u) + \frac{1}{2}\right)^2\right]$$
+$$I(P) = \frac◆LB◆I_0◆RB◆◆LB◆2◆RB◆\left[\left(C(u) + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right)^2 + \left(S(u) + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right)^2\right]$$
 
-Where $C(u)$ and $S(u)$ are the Fresnel integrals and $u = x\sqrt{2/(\lambda R)}$ is the Fresnel
+Where $C(u)$ and $S(u)$ are the Fresnel integrals and $u = x\sqrt◆LB◆2/(\lambda R)◆RB◆$ is the Fresnel
 number. At the geometric shadow edge ($u = 0$): $I/I_0 = 1/4$ (not zero!), demonstrating the failure
 of geometric optics.
 
@@ -2047,33 +2047,33 @@ of geometric optics.
 
 The **Jones vector** represents the polarisation state of a monochromatic plane wave:
 
-$$\mathbf{E} = \begin{pmatrix} E_x \\ E_y \end{pmatrix} = \begin{pmatrix} A_x\,e^{i\delta_x} \\ A_y\,e^{i\delta_y} \end{pmatrix}$$
+$$\mathbf◆LB◆E◆RB◆ = \begin◆LB◆pmatrix◆RB◆ E_x \\ E_y \end◆LB◆pmatrix◆RB◆ = \begin◆LB◆pmatrix◆RB◆ A_x\,e^◆LB◆i\delta_x◆RB◆ \\ A_y\,e^◆LB◆i\delta_y◆RB◆ \end◆LB◆pmatrix◆RB◆$$
 
 Optical elements are represented by $2 \times 2$ matrices:
 
 - **Linear polariser** at angle $\theta$:
-  $\mathbf{P}(\theta) = \begin{pmatrix}\cos^2\theta & \sin\theta\cos\theta \\ \sin\theta\cos\theta & \sin^2\theta\end{pmatrix}$
+  $\mathbf◆LB◆P◆RB◆(\theta) = \begin◆LB◆pmatrix◆RB◆\cos^2\theta & \sin\theta\cos\theta \\ \sin\theta\cos\theta & \sin^2\theta\end◆LB◆pmatrix◆RB◆$
 
 - **Quarter-wave plate** (fast axis horizontal, retardation $\pi/2$):
-  $\mathbf{Q} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi/2}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & i\end{pmatrix}$
+  $\mathbf◆LB◆Q◆RB◆ = \begin◆LB◆pmatrix◆RB◆1 & 0 \\ 0 & e^◆LB◆i\pi/2◆RB◆\end◆LB◆pmatrix◆RB◆ = \begin◆LB◆pmatrix◆RB◆1 & 0 \\ 0 & i\end◆LB◆pmatrix◆RB◆$
 
 - **Half-wave plate** (retardation $\pi$):
-  $\mathbf{H} = \begin{pmatrix}1 & 0 \\ 0 & e^{i\pi}\end{pmatrix} = \begin{pmatrix}1 & 0 \\ 0 & -1\end{pmatrix}$
+  $\mathbf◆LB◆H◆RB◆ = \begin◆LB◆pmatrix◆RB◆1 & 0 \\ 0 & e^◆LB◆i\pi◆RB◆\end◆LB◆pmatrix◆RB◆ = \begin◆LB◆pmatrix◆RB◆1 & 0 \\ 0 & -1\end◆LB◆pmatrix◆RB◆$
 
 **Theorem 13.1.** The output of a sequence of optical elements is the product of their Jones
 matrices applied to the input Jones vector:
 
-$$\mathbf{E}_{\mathrm{out} = \mathbf{M}_n \cdots \mathbf{M}_2\,\mathbf{M}_1\,\mathbf{E}_{\mathrm{in}$$
+$$\mathbf◆LB◆E◆RB◆_◆LB◆\mathrm◆LB◆out◆RB◆ = \mathbf◆LB◆M◆RB◆_n \cdots \mathbf◆LB◆M◆RB◆_2\,\mathbf◆LB◆M◆RB◆_1\,\mathbf◆LB◆E◆RB◆_◆LB◆\mathrm◆LB◆in◆RB◆$$
 
 ### 13.2 Stokes Parameters
 
 For partially polarised light, the **Stokes parameters** are:
 
-$$S_0 = |E_x|^2 + |E_y|^2, \quad S_1 = |E_x|^2 - |E_y|^2, \quad S_2 = 2\,\mathrm{Re(E_x E_y^*), \quad S_3 = 2\,\mathrm{Im(E_x E_y^*)$$
+$$S_0 = |E_x|^2 + |E_y|^2, \quad S_1 = |E_x|^2 - |E_y|^2, \quad S_2 = 2\,\mathrm◆LB◆Re(E_x E_y^*), \quad S_3 = 2\,\mathrm◆LB◆Im(E_x E_y^*)$$
 
 The **degree of polarisation** is
 
-$$P = \frac{\sqrt{S_1^2 + S_2^2 + S_3^2}}{S_0}$$
+$$P = \frac◆LB◆\sqrt◆LB◆S_1^2 + S_2^2 + S_3^2◆RB◆◆RB◆◆LB◆S_0◆RB◆$$
 
 For fully polarised light: $P = 1$. For unpolarised light: $S_1 = S_2 = S_3 = 0$.
 
@@ -2092,11 +2092,11 @@ $R_s = ((n_1\cos\theta_i - n_2\cos\theta_t)/(n_1\cos\theta_i + n_2\cos\theta_t))
 For one interface, the transmitted $p$-intensity is $T_p = 1$ and the transmitted $s$-intensity is
 $T_s = 1 - R_s$. After $N$ interfaces:
 
-$$I_p^{(N)} = I_0/2, \quad I_s^{(N)} = (I_0/2)(1 - R_s)^N$$
+$$I_p^◆LB◆(N)◆RB◆ = I_0/2, \quad I_s^◆LB◆(N)◆RB◆ = (I_0/2)(1 - R_s)^N$$
 
 The degree of polarisation:
 
-$$P = \frac{I_p^{(N)} - I_s^{(N)}}{I_p^{(N)} + I_s^{(N)}} = \frac{1 - (1 - R_s)^N}{1 + (1 - R_s)^N}$$
+$$P = \frac◆LB◆I_p^◆LB◆(N)◆RB◆ - I_s^◆LB◆(N)◆RB◆◆RB◆◆LB◆I_p^◆LB◆(N)◆RB◆ + I_s^◆LB◆(N)◆RB◆◆RB◆ = \frac◆LB◆1 - (1 - R_s)^N◆RB◆◆LB◆1 + (1 - R_s)^N◆RB◆$$
 
 For $N \to \infty$: $P \to 1$. This is the principle behind "pile-of-plates" polarisers. For glass
 ($n = 1.5$) at $\theta_B \approx 56.3°$:
@@ -2136,13 +2136,13 @@ $\blacksquare$
 In the Fraunhofer (far-field) limit, the diffraction pattern of an aperture with transmission
 function $t(x, y)$ is the Fourier transform:
 
-$$U(x', y') = \frac{e^{ikz}}{i\lambda z}\,e^{ik(x'^2 + y'^2)/(2z)}\iint t(x, y)\,e^{-ik(xx' + yy')/z}\,dx\,dy$$
+$$U(x', y') = \frac◆LB◆e^◆LB◆ikz◆RB◆◆RB◆◆LB◆i\lambda z◆RB◆\,e^◆LB◆ik(x'^2 + y'^2)/(2z)◆RB◆\iint t(x, y)\,e^◆LB◆-ik(xx' + yy')/z◆RB◆\,dx\,dy$$
 
 Where $(x', y')$ are coordinates in the observation plane at distance $z$ from the aperture.
 
 Defining spatial frequencies $f_x = x'/(\lambda z)$$f_y = y'/(\lambda z)$:
 
-$$U(f_x, f_y) \propto \mathcal{F}\{t(x,y)\}(f_x, f_y)$$
+$$U(f_x, f_y) \propto \mathcal◆LB◆F◆RB◆\{t(x,y)\}(f_x, f_y)$$
 
 This correspondence between diffraction and Fourier transforms is the foundation of Fourier optics
 and has profound implications for image processing and optical information processing.
@@ -2155,14 +2155,14 @@ focal plane), and the eyepiece (or tube lens) performs the inverse transform.
 
 **Resolution limit:** The finest spatial frequency that can pass through the objective is:
 
-$$f_{\max} = \frac{\text{NA}{\lambda}$$
+$$f_◆LB◆\max◆RB◆ = \frac◆LB◆\text◆LB◆NA◆RB◆◆LB◆\lambda◆RB◆$$
 
-Where $\text{NA = n\sin\theta$ is the numerical aperture. The minimum resolvable distance (Abbe
+Where $\text◆LB◆NA = n\sin\theta$ is the numerical aperture. The minimum resolvable distance (Abbe
 limit):
 
-$$d_{\min} = \frac{\lambda}{2\,\text{NA}$$
+$$d_◆LB◆\min◆RB◆ = \frac◆LB◆\lambda◆RB◆◆LB◆2\,\text◆LB◆NA◆RB◆$$
 
-For green light ($\lambda = 550$ nm) and NA = 1.4 (oil immersion): $d_{\min} \approx 196$ nm.
+For green light ($\lambda = 550$ nm) and NA = 1.4 (oil immersion): $d_◆LB◆\min◆RB◆ \approx 196$ nm.
 
 ### 15.3 Spatial Filtering
 
@@ -2180,11 +2180,11 @@ mask (spatial filter) in this plane modifies the image:
 
 A diffraction grating with $N$ slits of width $a$ and spacing $d$ has transmission function:
 
-$$t(x) = \sum_{n=0}^{N-1}\text{rect\!\left(\frac{x - nd}{a}\right)$$
+$$t(x) = \sum_◆LB◆n=0◆RB◆^◆LB◆N-1◆RB◆\text◆LB◆rect\!\left(\frac◆LB◆x - nd◆RB◆◆LB◆a◆RB◆\right)$$
 
 The Fraunhofer pattern is:
 
-$$I(\theta) = I_0\left(\frac{\sin\alpha}{\alpha}\right)^2\left(\frac{\sin N\beta}{\sin\beta}\right)^2$$
+$$I(\theta) = I_0\left(\frac◆LB◆\sin\alpha◆RB◆◆LB◆\alpha◆RB◆\right)^2\left(\frac◆LB◆\sin N\beta◆RB◆◆LB◆\sin\beta◆RB◆\right)^2$$
 
 Where $\alpha = \pi a\sin\theta/\lambda$ (single-slit envelope) and
 $\beta = \pi d\sin\theta/\lambda$ (multi-slit interference).
@@ -2210,7 +2210,7 @@ The resolving power: $R = mN = m \times 5$.
 
 For a quasi-monochromatic source with bandwidth $\Delta\omega$:
 
-$$\tau_c \sim \frac{2\pi}{\Delta\omega} = \frac{1}{\Delta\nu}$$
+$$\tau_c \sim \frac◆LB◆2\pi◆RB◆◆LB◆\Delta\omega◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\Delta\nu◆RB◆$$
 
 The **coherence length**: $l_c = c\tau_c = \lambda^2/\Delta\lambda$.
 
@@ -2219,7 +2219,7 @@ The **coherence length**: $l_c = c\tau_c = \lambda^2/\Delta\lambda$.
 | White light      | $\sim 300$ nm     | $\sim 1.5\,\mu$M |
 | Na D line        | $\sim 0.6$ nm     | $\sim 0.5$ mm    |
 | He-Ne laser      | $\sim 0.002$ nm   | $\sim 20$ cm     |
-| Stabilised laser | $\sim 10^{-6}$ nm | $\sim 400$ km    |
+| Stabilised laser | $\sim 10^◆LB◆-6◆RB◆$ nm | $\sim 400$ km    |
 
 ### 16.2 Spatial Coherence
 
@@ -2227,7 +2227,7 @@ The **coherence length**: $l_c = c\tau_c = \lambda^2/\Delta\lambda$.
 time. The **van Cittert--Zernike theorem** states that the spatial coherence of light from an
 extended incoherent source is given by the Fourier transform of the source intensity distribution:
 
-$$\gamma(\Delta x) = \frac{\iint I(\xi, \eta)\,e^{-ik(\xi\Delta x)/(R)}\,d\xi\,d\eta}{\iint I(\xi, \eta)\,d\xi\,d\eta}$$
+$$\gamma(\Delta x) = \frac◆LB◆\iint I(\xi, \eta)\,e^◆LB◆-ik(\xi\Delta x)/(R)◆RB◆\,d\xi\,d\eta◆RB◆◆LB◆\iint I(\xi, \eta)\,d\xi\,d\eta◆RB◆$$
 
 Where $I(\xi, \eta)$ is the source intensity distribution and $R$ is the distance to the source.
 
@@ -2235,20 +2235,20 @@ Where $I(\xi, \eta)$ is the source intensity distribution and $R$ is the distanc
 of starlight, from which the angular diameter of the star can be determined. The first fringe
 visibility minimum occurs at:
 
-$$d = \frac{0.61\lambda}{\alpha}$$
+$$d = \frac◆LB◆0.61\lambda◆RB◆◆LB◆\alpha◆RB◆$$
 
 Where $\alpha$ is the angular diameter and $d$ is the aperture separation.
 
 ### 16.3 Degree of Coherence
 
-The **complex degree of coherence** $\gamma_{12}(\tau)$ between fields at points 1 and 2 with time
+The **complex degree of coherence** $\gamma_◆LB◆12◆RB◆(\tau)$ between fields at points 1 and 2 with time
 delay $\tau$:
 
-$$\gamma_{12}(\tau) = \frac{\langle E_1^*(t)E_2(t+\tau)\rangle}{\sqrt{\langle|E_1|^2\rangle\langle|E_2|^2\rangle}}$$
+$$\gamma_◆LB◆12◆RB◆(\tau) = \frac◆LB◆\langle E_1^*(t)E_2(t+\tau)\rangle◆RB◆◆LB◆\sqrt◆LB◆\langle|E_1|^2\rangle\langle|E_2|^2\rangle◆RB◆◆RB◆$$
 
-This satisfies $0 \leq |\gamma_{12}| \leq 1$. The **visibility** of interference fringes is:
+This satisfies $0 \leq |\gamma_◆LB◆12◆RB◆| \leq 1$. The **visibility** of interference fringes is:
 
-$$V = \frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}} = |\gamma_{12}|$$
+$$V = \frac◆LB◆I_◆LB◆\max◆RB◆ - I_◆LB◆\min◆RB◆◆RB◆◆LB◆I_◆LB◆\max◆RB◆ + I_◆LB◆\min◆RB◆◆RB◆ = |\gamma_◆LB◆12◆RB◆|$$
 
 <details>
 <summary>Worked Example 16.1: Double-Slit with Extended Source</summary>
@@ -2258,20 +2258,20 @@ separation $d$).
 
 By the van Cittert--Zernike theorem, the spatial coherence at the slits is:
 
-$$|\gamma| = \left|\frac{\sin(\pi wd/(\lambda D))}{\pi wd/(\lambda D)}\right|$$
+$$|\gamma| = \left|\frac◆LB◆\sin(\pi wd/(\lambda D))◆RB◆◆LB◆\pi wd/(\lambda D)◆RB◆\right|$$
 
 The fringe visibility vanishes when $\pi wd/(\lambda D) = \pi$I.e., $d = \lambda D/w$.
 
 For a candle flame ($w \approx 1$ mm) at $D = 1$ m with $\lambda = 550$ nm:
 
-$$d_{\text{max} = \frac{550 \times 10^{-9} \times 1}{10^{-3}} = 5.5 \times 10^{-4}\,\text{m = 0.55\,\text{mm$$
+$$d_◆LB◆\text◆LB◆max◆RB◆ = \frac◆LB◆550 \times 10^◆LB◆-9◆RB◆ \times 1◆RB◆◆LB◆10^◆LB◆-3◆RB◆◆RB◆ = 5.5 \times 10^◆LB◆-4◆RB◆\,\text◆LB◆m = 0.55\,\text◆LB◆mm$$
 
-Beyond this slit separation, the fringes wash out. For a star ($w \sim 10^8$ km, $D \sim 10^{14}$
+Beyond this slit separation, the fringes wash out. For a star ($w \sim 10^8$ km, $D \sim 10^◆LB◆14◆RB◆$
 km):
 
-$$d_{\text{max} = \frac{550 \times 10^{-9} \times 10^{17}}{10^{11}} = 550\,\text{m$$
+$$d_◆LB◆\text◆LB◆max◆RB◆ = \frac◆LB◆550 \times 10^◆LB◆-9◆RB◆ \times 10^◆LB◆17◆RB◆◆RB◆◆LB◆10^◆LB◆11◆RB◆◆RB◆ = 550\,\text◆LB◆m$$
 
-This is the basis of the Michelson stellar interferometer: by measuring $d_{\text{max}$The stellar
+This is the basis of the Michelson stellar interferometer: by measuring $d_◆LB◆\text◆LB◆max◆RB◆$The stellar
 diameter is determined.
 
 </details>
@@ -2290,14 +2290,14 @@ A laser requires three conditions:
 
 **Threshold condition:** The gain per round trip must exceed the losses:
 
-$$R_1 R_2\,e^{2gL} \geq 1$$
+$$R_1 R_2\,e^◆LB◆2gL◆RB◆ \geq 1$$
 
 Where $R_1, R_2$ are mirror reflectivities, $g$ is the gain coefficient, and $L$ is the cavity
 length.
 
 The threshold gain:
 
-$$g_{\text{th} = -\frac{1}{2L}\ln(R_1 R_2) = \alpha_i + \alpha_m$$
+$$g_◆LB◆\text◆LB◆th◆RB◆ = -\frac◆LB◆1◆RB◆◆LB◆2L◆RB◆\ln(R_1 R_2) = \alpha_i + \alpha_m$$
 
 Where $\alpha_i$ is the internal loss and $\alpha_m = -\ln(R_1 R_2)/(2L)$ is the mirror loss.
 
@@ -2315,15 +2315,15 @@ Where $\alpha_i$ is the internal loss and $\alpha_m = -\ln(R_1 R_2)/(2L)$ is the
 
 ### 17.3 Gaussian Beam Optics
 
-The fundamental mode ($\text{TEM_{00}$) of a laser cavity is a **Gaussian beam**:
+The fundamental mode ($\text◆LB◆TEM_◆LB◆00◆RB◆$) of a laser cavity is a **Gaussian beam**:
 
-$$E(r, z) = E_0\frac{w_0}{w(z)}\exp\!\left(-\frac{r^2}{w(z)^2}\right)\exp\!\left(-i\left[kz + \frac{kr^2}{2R(z)} - \zeta(z)\right]\right)$$
+$$E(r, z) = E_0\frac◆LB◆w_0◆RB◆◆LB◆w(z)◆RB◆\exp\!\left(-\frac◆LB◆r^2◆RB◆◆LB◆w(z)^2◆RB◆\right)\exp\!\left(-i\left[kz + \frac◆LB◆kr^2◆RB◆◆LB◆2R(z)◆RB◆ - \zeta(z)\right]\right)$$
 
 **Beam parameters:**
 
 - **Beam waist:** $w_0$ (minimum spot size)
 - **Rayleigh range:** $z_R = \pi w_0^2/\lambda$
-- **Beam radius:** $w(z) = w_0\sqrt{1 + (z/z_R)^2}$
+- **Beam radius:** $w(z) = w_0\sqrt◆LB◆1 + (z/z_R)^2◆RB◆$
 - **Radius of curvature:** $R(z) = z[1 + (z_R/z)^2]$
 - **Divergence angle:** $\theta = \lambda/(\pi w_0)$
 
@@ -2333,14 +2333,14 @@ $$E(r, z) = E_0\frac{w_0}{w(z)}\exp\!\left(-\frac{r^2}{w(z)^2}\right)\exp\!\left
 A He-Ne laser ($\lambda = 632.8$ nm) has a beam waist $w_0 = 0.3$ mm.
 
 (a) Rayleigh range:
-$z_R = \pi(0.3 \times 10^{-3})^2/(632.8 \times 10^{-9}) = \pi \times 9 \times 10^{-8}/6.328 \times 10^{-7} = 0.447$
+$z_R = \pi(0.3 \times 10^◆LB◆-3◆RB◆)^2/(632.8 \times 10^◆LB◆-9◆RB◆) = \pi \times 9 \times 10^◆LB◆-8◆RB◆/6.328 \times 10^◆LB◆-7◆RB◆ = 0.447$
 m.
 
 (b) Beam radius at $z = 2$ m:
-$w = 0.3\sqrt{1 + (2/0.447)^2} = 0.3\sqrt{1 + 20.0} = 0.3 \times 4.58 = 1.37$ mm.
+$w = 0.3\sqrt◆LB◆1 + (2/0.447)^2◆RB◆ = 0.3\sqrt◆LB◆1 + 20.0◆RB◆ = 0.3 \times 4.58 = 1.37$ mm.
 
 (c) Divergence:
-$\theta = 632.8 \times 10^{-9}/(\pi \times 0.3 \times 10^{-3}) = 6.71 \times 10^{-4}$ rad $= 0.67$
+$\theta = 632.8 \times 10^◆LB◆-9◆RB◆/(\pi \times 0.3 \times 10^◆LB◆-3◆RB◆) = 6.71 \times 10^◆LB◆-4◆RB◆$ rad $= 0.67$
 mrad.
 
 At a distance of 1 km, the beam radius would be $w \approx \theta \times 1000 = 0.67$ m (ignoring
@@ -2357,12 +2357,12 @@ the waist contribution, valid for $z \gg z_R$).
 
 2. **The Abbe limit is not a fundamental limit:** Techniques such as STED (stimulated emission
    depletion), PALM (photoactivated localisation microscopy), and SIM (structured illumination
-   microscopy) can achieve resolutions well below the Abbe limit of $\lambda/(2\text{NA)$. The 2014
+   microscopy) can achieve resolutions well below the Abbe limit of $\lambda/(2\text◆LB◆NA)$. The 2014
    Nobel Prize in Chemistry was awarded for super-resolution microscopy.
 
 3. **Gaussian beams do not have sharp edges:** Unlike geometrical optics rays, Gaussian beams have
    no well-defined edge. The beam radius $w$ is defined as the $1/e^2$ intensity radius
-   ($\sim 86.5\%$ of the peak). The power contained within $w$ is $1 - e^{-2} \approx 86.5\%$ of the
+   ($\sim 86.5\%$ of the peak). The power contained within $w$ is $1 - e^◆LB◆-2◆RB◆ \approx 86.5\%$ of the
    total, not 100%.
 
 4. **Spatial filtering with a pinhole:** A pinhole of diameter $d$ in the focal plane of a lens acts
@@ -2391,10 +2391,10 @@ nm.
 
 **Solution:**
 
-(a) $\theta_{\min} = 1.22\lambda/D = 1.22 \times 550 \times 10^{-9}/2.4 = 2.80 \times 10^{-7}$ rad
+(a) $\theta_◆LB◆\min◆RB◆ = 1.22\lambda/D = 1.22 \times 550 \times 10^◆LB◆-9◆RB◆/2.4 = 2.80 \times 10^◆LB◆-7◆RB◆$ rad
 $= 0.058$ arcsec.
 
-(b) $s = \theta_{\min} \times d = 2.80 \times 10^{-7} \times 3.844 \times 10^8 = 107.6$ m
+(b) $s = \theta_◆LB◆\min◆RB◆ \times d = 2.80 \times 10^◆LB◆-7◆RB◆ \times 3.844 \times 10^8 = 107.6$ m
 $\approx 108$ m.
 
 (c) Atmospheric seeing $\sim 0.5$ arcsec is about 8.6 times worse than Hubble's diffraction limit.
@@ -2411,29 +2411,29 @@ separation $d = 1$ mm, used at normal incidence with $\lambda = 500$ nm.
 
 (a) Calculate the free spectral range (FSR) in frequency and wavelength.
 
-(b) Calculate the finesse $\mathcal{F}$.
+(b) Calculate the finesse $\mathcal◆LB◆F◆RB◆$.
 
 (c) What is the minimum resolvable wavelength difference?
 
 **Solution:**
 
 (a) FSR in frequency:
-$\Delta\nu_{\text{FSR} = c/(2d) = 3 \times 10^8/(2 \times 10^{-3}) = 1.5 \times 10^{11}$ Hz $= 150$
+$\Delta\nu_◆LB◆\text◆LB◆FSR◆RB◆ = c/(2d) = 3 \times 10^8/(2 \times 10^◆LB◆-3◆RB◆) = 1.5 \times 10^◆LB◆11◆RB◆$ Hz $= 150$
 GHz.
 
 FSR in wavelength:
-$\Delta\lambda_{\text{FSR} = \lambda^2/(2d) = (500 \times 10^{-9})^2/(2 \times 10^{-3}) = 1.25 \times 10^{-13}$
+$\Delta\lambda_◆LB◆\text◆LB◆FSR◆RB◆ = \lambda^2/(2d) = (500 \times 10^◆LB◆-9◆RB◆)^2/(2 \times 10^◆LB◆-3◆RB◆) = 1.25 \times 10^◆LB◆-13◆RB◆$
 m $= 0.125$ nm.
 
 (b) Finesse:
-$\mathcal{F} = \pi\sqrt{R}/(1 - R) = \pi\sqrt{0.8}/(1 - 0.8) = \pi \times 0.894/0.2 = 14.1$.
+$\mathcal◆LB◆F◆RB◆ = \pi\sqrt◆LB◆R◆RB◆/(1 - R) = \pi\sqrt◆LB◆0.8◆RB◆/(1 - 0.8) = \pi \times 0.894/0.2 = 14.1$.
 
 (c) Minimum resolvable wavelength difference (resolution):
 
-$$\delta\lambda = \frac{\Delta\lambda_{\text{FSR}}{\mathcal{F}} = \frac{0.125}{14.1}\ \text{nm = 0.0089\ \text{nm = 8.9\ \text{pm$$
+$$\delta\lambda = \frac◆LB◆\Delta\lambda_◆LB◆\text◆LB◆FSR◆RB◆◆RB◆◆LB◆\mathcal◆LB◆F◆RB◆◆RB◆ = \frac◆LB◆0.125◆RB◆◆LB◆14.1◆RB◆\ \text◆LB◆nm = 0.0089\ \text◆LB◆nm = 8.9\ \text◆LB◆pm$$
 
 This corresponds to a resolving power
-$\mathcal{R} = \lambda/\delta\lambda = 500/0.0089 \approx 56\,000$.
+$\mathcal◆LB◆R◆RB◆ = \lambda/\delta\lambda = 500/0.0089 \approx 56\,000$.
 
 </details>
 
@@ -2443,19 +2443,19 @@ $\mathcal{R} = \lambda/\delta\lambda = 500/0.0089 \approx 56\,000$.
 
 When the electric field is strong (e.g., laser), the polarisation develops nonlinear terms:
 
-$$P = \varepsilon_0(\chi^{(1)}E + \chi^{(2)}E^2 + \chi^{(3)}E^3 + \cdots)$$
+$$P = \varepsilon_0(\chi^◆LB◆(1)◆RB◆E + \chi^◆LB◆(2)◆RB◆E^2 + \chi^◆LB◆(3)◆RB◆E^3 + \cdots)$$
 
-The second-order susceptibility $\chi^{(2)}$ is nonzero only in non-centrosymmetric media. The
-third-order $\chi^{(3)}$ exists in all media.
+The second-order susceptibility $\chi^◆LB◆(2)◆RB◆$ is nonzero only in non-centrosymmetric media. The
+third-order $\chi^◆LB◆(3)◆RB◆$ exists in all media.
 
 ### 18.2 Second Harmonic Generation (SHG)
 
 A beam of frequency $\omega$ generates light at $2\omega$. The intensity of the second harmonic:
 
-$$I_{2\omega} = \frac{2\omega^2 d_{\text{eff}^2 I_\omega^2 L^2}{n_\omega^2 n_{2\omega} c^3 \varepsilon_0}\,\text{sinc^2\!\left(\frac{\Delta k\,L}{2}\right)$$
+$$I_◆LB◆2\omega◆RB◆ = \frac◆LB◆2\omega^2 d_◆LB◆\text◆LB◆eff◆RB◆^2 I_\omega^2 L^2◆RB◆◆LB◆n_\omega^2 n_◆LB◆2\omega◆RB◆ c^3 \varepsilon_0◆RB◆\,\text◆LB◆sinc^2\!\left(\frac◆LB◆\Delta k\,L◆RB◆◆LB◆2◆RB◆\right)$$
 
-Where $d_{\text{eff} = \chi^{(2)}/2$ is the effective nonlinear coefficient and
-$\Delta k = k_{2\omega} - 2k_\omega$ is the phase mismatch.
+Where $d_◆LB◆\text◆LB◆eff◆RB◆ = \chi^◆LB◆(2)◆RB◆/2$ is the effective nonlinear coefficient and
+$\Delta k = k_◆LB◆2\omega◆RB◆ - 2k_\omega$ is the phase mismatch.
 
 **Phase matching:** Maximum conversion occurs when $\Delta k = 0$ (momentum conservation).
 Techniques:
@@ -2463,19 +2463,19 @@ Techniques:
 - **Birefringent phase matching:** Exploit the different refractive indices for ordinary and
   extraordinary polarisations.
 - **Quasi-phase matching:** Periodically pole the nonlinear crystal to reverse the sign of
-  $\chi^{(2)}$ every coherence length $\pi/\Delta k$.
+  $\chi^◆LB◆(2)◆RB◆$ every coherence length $\pi/\Delta k$.
 
 ### 18.3 Other Nonlinear Processes
 
 | Process                    | Order        | Description                                              |
 | -------------------------- | ------------ | -------------------------------------------------------- |
-| SHG                        | $\chi^{(2)}$ | $\omega + \omega \to 2\omega$                            |
-| SFG                        | $\chi^{(2)}$ | $\omega_1 + \omega_2 \to \omega_3$                       |
-| Pockels effect             | $\chi^{(2)}$ | Linear electro-optic effect ($\Delta n \propto E$)       |
-| Optical Kerr effect        | $\chi^{(3)}$ | $n = n_0 + n_2 I$ (intensity-dependent refractive index) |
-| Self-focusing              | $\chi^{(3)}$ | Beam collapses when $P > P_{\text{cr}$                   |
-| Two-photon absorption      | $\chi^{(3)}$ | Simultaneous absorption of two photons                   |
-| Stimulated Raman/Brillouin | $\chi^{(3)}$ | Inelastic scattering amplification                       |
+| SHG                        | $\chi^◆LB◆(2)◆RB◆$ | $\omega + \omega \to 2\omega$                            |
+| SFG                        | $\chi^◆LB◆(2)◆RB◆$ | $\omega_1 + \omega_2 \to \omega_3$                       |
+| Pockels effect             | $\chi^◆LB◆(2)◆RB◆$ | Linear electro-optic effect ($\Delta n \propto E$)       |
+| Optical Kerr effect        | $\chi^◆LB◆(3)◆RB◆$ | $n = n_0 + n_2 I$ (intensity-dependent refractive index) |
+| Self-focusing              | $\chi^◆LB◆(3)◆RB◆$ | Beam collapses when $P > P_◆LB◆\text◆LB◆cr◆RB◆$                   |
+| Two-photon absorption      | $\chi^◆LB◆(3)◆RB◆$ | Simultaneous absorption of two photons                   |
+| Stimulated Raman/Brillouin | $\chi^◆LB◆(3)◆RB◆$ | Inelastic scattering amplification                       |
 
 **Self-phase modulation:** The Kerr effect causes $\Delta n = n_2 I$ which broadens the spectrum of
 ultrashort pulses. Combined with dispersion, this leads to **soliton** formation in optical fibres
@@ -2488,18 +2488,18 @@ Beta-barium borate (BBO) is a common nonlinear crystal for SHG of 800 nm Ti:sapp
 
 The relevant refractive indices at $\lambda = 800$ nm ($\omega$) and $\lambda = 400$ nm ($2\omega$):
 
-$n_o(800\,\text{nm) = 1.6549$$n_e(800\,\text{nm) = 1.5425$ (at $\theta = 29.2°$)
+$n_o(800\,\text◆LB◆nm) = 1.6549$$n_e(800\,\text◆LB◆nm) = 1.5425$ (at $\theta = 29.2°$)
 
-$n_o(400\,\text{nm) = 1.7030$$n_e(400\,\text{nm) = 1.5665$ (at $\theta = 29.2°$)
+$n_o(400\,\text◆LB◆nm) = 1.7030$$n_e(400\,\text◆LB◆nm) = 1.5665$ (at $\theta = 29.2°$)
 
 For Type I phase matching ($o + o \to e$): $n_e(2\omega, \theta) = n_o(\omega)$.
 
 Using Sellmeier equations, the phase matching angle is found to be
-$\theta_{\text{PM} \approx 29.2°$.
+$\theta_◆LB◆\text◆LB◆PM◆RB◆ \approx 29.2°$.
 
 The coherence length without phase matching:
 
-$$\ell_c = \frac{\pi}{\Delta k} = \frac{\lambda}{4(n_e^{2\omega} - n_o^{\omega})}$$
+$$\ell_c = \frac◆LB◆\pi◆RB◆◆LB◆\Delta k◆RB◆ = \frac◆LB◆\lambda◆RB◆◆LB◆4(n_e^◆LB◆2\omega◆RB◆ - n_o^◆LB◆\omega◆RB◆)◆RB◆$$
 
 For typical values: $\ell_c \sim 5$ $\mu$M. A 1 mm crystal is $\sim 200$ coherence lengths long, so
 phase matching is essential.
@@ -2507,7 +2507,7 @@ phase matching is essential.
 The conversion efficiency for perfect phase matching with a 10 mm crystal at $I_\omega = 100$
 MW/cm$^2$:
 
-$$\eta \approx \frac{8\pi^2 \times (2.0 \times 10^{-12})^2 \times 10^{-4} \times 10^{10}}{(1.6)^3 \times (400 \times 10^{-9})^2 \times 3 \times 10^8 \times 8.85 \times 10^{-12}} \approx 15\%$$
+$$\eta \approx \frac◆LB◆8\pi^2 \times (2.0 \times 10^◆LB◆-12◆RB◆)^2 \times 10^◆LB◆-4◆RB◆ \times 10^◆LB◆10◆RB◆◆RB◆◆LB◆(1.6)^3 \times (400 \times 10^◆LB◆-9◆RB◆)^2 \times 3 \times 10^8 \times 8.85 \times 10^◆LB◆-12◆RB◆◆RB◆ \approx 15\%$$
 
 </details>
 
@@ -2518,7 +2518,7 @@ $$\eta \approx \frac{8\pi^2 \times (2.0 \times 10^{-12})^2 \times 10^{-4} \times
 **Compressed sensing** (Candes, Tao, Donoho, 2006) shows that signals that are **sparse** in some
 basis can be reconstructed from far fewer measurements than Nyquist sampling requires:
 
-$$\hat{\mathbf{x}} = \arg\min_{\mathbf{x}} \|\mathbf{x}\|_1 \quad \text{subject to  \mathbf{y} = \Phi\mathbf{x}$$
+$$\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆ = \arg\min_◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆ \|\mathbf◆LB◆x◆RB◆\|_1 \quad \text◆LB◆subject to  \mathbf◆LB◆y◆RB◆ = \Phi\mathbf◆LB◆x◆RB◆$$
 
 Where $\Phi$ is the measurement matrix and $|\cdot|_1$ is the $L^1$ norm promoting sparsity.
 
@@ -2527,9 +2527,9 @@ Where $\Phi$ is the measurement matrix and $|\cdot|_1$ is the $L^1$ norm promoti
 **Atmospheric turbulence** causes phase distortions in astronomical images. **Adaptive optics (AO)**
 corrects these in real time using a deformable mirror. The Strehl ratio:
 
-$$S = \exp\left[-\left(\frac{2\pi}{\lambda}\right)^2\langle\Delta\phi^2\rangle\right]$$
+$$S = \exp\left[-\left(\frac◆LB◆2\pi◆RB◆◆LB◆\lambda◆RB◆\right)^2\langle\Delta\phi^2\rangle\right]$$
 
-For diffraction-limited imaging ($S > 0.8$): $\Delta\phi_{\text{rms} < \lambda/14$. On an 8 m
+For diffraction-limited imaging ($S > 0.8$): $\Delta\phi_◆LB◆\text◆LB◆rms◆RB◆ < \lambda/14$. On an 8 m
 telescope at visible wavelengths, the deformable mirror must update at $>500$ Hz to track the
 Greenwood frequency $f_G \sim 100$ Hz.
 
@@ -2537,14 +2537,14 @@ Greenwood frequency $f_G \sim 100$ Hz.
 
 ### Example 1: Thin film interference
 
-**Problem.** A soap film ($n = 1.33$) of thickness $300 \mathrm{ nm}$ is illuminated by white light.
+**Problem.** A soap film ($n = 1.33$) of thickness $300 \mathrm◆LB◆ nm◆RB◆$ is illuminated by white light.
 Which wavelength is constructively reflected?
 
 **Solution.** Phase change at the front surface (air to soap); no phase change at the back (soap to
-air). Constructive: $2nd = (m + \frac{1}{2})\lambda$.
-$2(1.33)(300 \times 10^{-9}) = (m + 1/2)\lambda$. For $m = 0$:
-$\lambda = 4 \times 1.33 \times 300 = 1596 \mathrm{ nm}$ (infrared). $m = 1$:
-$\lambda = 1596/3 = 532 \mathrm{ nm}$ (green, visible).
+air). Constructive: $2nd = (m + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆)\lambda$.
+$2(1.33)(300 \times 10^◆LB◆-9◆RB◆) = (m + 1/2)\lambda$. For $m = 0$:
+$\lambda = 4 \times 1.33 \times 300 = 1596 \mathrm◆LB◆ nm◆RB◆$ (infrared). $m = 1$:
+$\lambda = 1596/3 = 532 \mathrm◆LB◆ nm◆RB◆$ (green, visible).
 
 $\blacksquare$
 

@@ -76,9 +76,9 @@ Assignment). Two systematic methods ensure no assignment is missed.
 
 **Method 1: Binary counting.** Treat the first variable as the most significant bit. Enumerate all
 Binary $n$-tuples from $(0, \ldots, 0)$ to $(1, \ldots, 1)$. The first variable changes most slowly
-(only every $2^{n-1}$ rows), while the last variable alternates every row.
+(only every $2^◆LB◆n-1◆RB◆$ rows), while the last variable alternates every row.
 
-**Method 2: Recursive splitting.** For $n$ variables, the table splits into two blocks of $2^{n-1}$
+**Method 2: Recursive splitting.** For $n$ variables, the table splits into two blocks of $2^◆LB◆n-1◆RB◆$
 Rows: the top block has the first variable as $T$The bottom as $F$. Recurse on the remaining $n - 1$
 variables within each block.
 
@@ -338,17 +338,17 @@ Checking validity is Co-NP-complete, not NP-complete. :::
 
 **Basic operations:**
 
-- Union: $A \cup B = \\{x : x \in A \mathrm{ or  x \in B\\}$
-- Intersection: $A \cap B = \\{x : x \in A \mathrm{ and  x \in B\\}$
-- Difference: $A \setminus B = \\{x : x \in A \mathrm{ and  x \notin B\\}$
+- Union: $A \cup B = \\{x : x \in A \mathrm◆LB◆ or  x \in B\\}$
+- Intersection: $A \cap B = \\{x : x \in A \mathrm◆LB◆ and  x \in B\\}$
+- Difference: $A \setminus B = \\{x : x \in A \mathrm◆LB◆ and  x \notin B\\}$
 - Complement: $A^c = U \setminus A$ (where $U$ is the universal set)
 
 **De Morgan's Laws:**
 
 $$(A \cup B)^c = A^c \cap B^c, \quad (A \cap B)^c = A^c \cup B^c$$
 
-**Power set:** $\mathcal{P}(A) = \\{B : B \subseteq A\\}$. If $|A| = n$Then
-$|\mathcal{P}(A)| = 2^n$.
+**Power set:** $\mathcal◆LB◆P◆RB◆(A) = \\{B : B \subseteq A\\}$. If $|A| = n$Then
+$|\mathcal◆LB◆P◆RB◆(A)| = 2^n$.
 
 ### 2.2 Relations
 
@@ -468,7 +468,7 @@ countable Is **uncountable**.
 
 _Proof._ The function $f : \mathbb{{'}N{}'} \to \mathbb{{'}Z{}'}$ defined by
 
-$$f(n) = \begin{cases} n/2 & \mathrm{if\; n\; \mathrm{is\; even \\ -(n+1)/2 & \mathrm{if\; n\; \mathrm{is\; odd \end{cases}$$
+$$f(n) = \begin◆LB◆cases◆RB◆ n/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; even \\ -(n+1)/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; odd \end◆LB◆cases◆RB◆$$
 
 Is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
@@ -492,7 +492,7 @@ the expansion that does not end in all 9s to avoid dual representations).
 
 Define $s = 0.s_1 s_2 s_3 \ldots$ by
 
-$$s_i = \begin{cases} 5 & \mathrm{if\; d_{ii} \neq 5 \\ 6 & \mathrm{if\; d_{ii} = 5 \end{cases}$$
+$$s_i = \begin◆LB◆cases◆RB◆ 5 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ \neq 5 \\ 6 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ = 5 \end◆LB◆cases◆RB◆$$
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$ So
 $s \notin \\{r_1, r_2, \ldots\\}$Contradicting the assumption that the list was complete. Therefore
@@ -516,7 +516,7 @@ $\blacksquare$
 
 Let $a = p/q$ and $b = r/s$ where $p, q, r, s \in \mathbb{{'}Z{}'}$ and $q, s \neq 0$. Then
 
-$$a + b = \frac{p}{q} + \frac{r}{s} = \frac{ps + rq}{qs}$$
+$$a + b = \frac◆LB◆p◆RB◆◆LB◆q◆RB◆ + \frac◆LB◆r◆RB◆◆LB◆s◆RB◆ = \frac◆LB◆ps + rq◆RB◆◆LB◆qs◆RB◆$$
 
 Since $ps + rq \in \mathbb{{'}Z{}'}$ and $qs \in \mathbb{{'}Z{}'} \setminus \\{0\\}$The sum $a + b$
 is rational. $\blacksquare$
@@ -580,7 +580,7 @@ _Proof._ Base case: $n = 1$: $1 = 1 \cdot 2 / 2$. True.
 
 Inductive step: Assume $\sum_{i=1}^{k} i = k(k+1)/2$. Then
 
-$$\sum_{i=1}^{k+1} i = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$$
+$$\sum_◆LB◆i=1◆RB◆^◆LB◆k+1◆RB◆ i = \frac◆LB◆k(k+1)◆RB◆◆LB◆2◆RB◆ + (k+1) = \frac◆LB◆k(k+1) + 2(k+1)◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆(k+1)(k+2)◆RB◆◆LB◆2◆RB◆$$
 
 $\blacksquare$
 
@@ -612,7 +612,7 @@ _Base case:_ $n = 0$: $2^0 = 1 = 2^{0+1} - 1$. ✓
 
 _Inductive step:_ Assume $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then
 
-$$\sum_{i=0}^{k+1} 2^i = 2^{k+1} - 1 + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$$
+$$\sum_◆LB◆i=0◆RB◆^◆LB◆k+1◆RB◆ 2^i = 2^◆LB◆k+1◆RB◆ - 1 + 2^◆LB◆k+1◆RB◆ = 2 \cdot 2^◆LB◆k+1◆RB◆ - 1 = 2^◆LB◆k+2◆RB◆ - 1$$
 
 $\blacksquare$
 
@@ -656,7 +656,7 @@ Powers of 2.
 Let $S$ be the set of positive integers that _cannot_ be written as a sum of distinct powers of 2.
 Suppose $S \neq \emptyset$. By WOP, $S$ has a least element $m$.
 
-Let $2^k$ be the largest power of 2 not exceeding $m$ (so $2^k \leq m \lt 2^{k+1}$). Then
+Let $2^k$ be the largest power of 2 not exceeding $m$ (so $2^k \leq m \lt 2^◆LB◆k+1◆RB◆$). Then
 $m - 2^k \geq 0$ and $m - 2^k \lt 2^k$. If $m - 2^k = 0$Then $m = 2^k$ is a single power of 2,
 Contradicting $m \in S$. If $m - 2^k \gt 0$Then $m - 2^k \lt m$So $m - 2^k \notin S$ (by minimality
 Of $m$). Hence $m - 2^k$ is a sum of distinct powers of 2, all of which are $\lt 2^k$. Adding $2^k$
@@ -679,17 +679,17 @@ then $A$ and $B$ together can be done in $mn$ ways.
 
 **Permutations:** $P(n, r) = n! / (n-r)!$ -- ordered arrangements of $r$ items from $n$.
 
-**Combinations:** $\binom{n}{r} = \frac{n!}{r!(n-r)!}$ -- unordered selections of $r$ items from
+**Combinations:** $\binom◆LB◆n◆RB◆◆LB◆r◆RB◆ = \frac◆LB◆n!◆RB◆◆LB◆r!(n-r)!◆RB◆$ -- unordered selections of $r$ items from
 $n$.
 
 **Theorem 4.1 (Binomial Theorem).**
 
 $$(x + y)^n = \sum_{r=0}^{n} \binom{n}{r} x^{n-r} y^r$$
 
-**Theorem 4.2 (Pascal's Identity).** $\binom{n}{r} = \binom{n-1}{r} + \binom{n-1}{r-1}$
+**Theorem 4.2 (Pascal's Identity).** $\binom◆LB◆n◆RB◆◆LB◆r◆RB◆ = \binom◆LB◆n-1◆RB◆◆LB◆r◆RB◆ + \binom◆LB◆n-1◆RB◆◆LB◆r-1◆RB◆$
 
-_Proof._ Every $r$-subset of $\\{1, \ldots, n\\}$ either contains $n$ (giving $\binom{n-1}{r-1}$
-ways To choose the remaining $r-1$) or does not contain $n$ (giving $\binom{n-1}{r}$ ways to choose
+_Proof._ Every $r$-subset of $\\{1, \ldots, n\\}$ either contains $n$ (giving $\binom◆LB◆n-1◆RB◆◆LB◆r-1◆RB◆$
+ways To choose the remaining $r-1$) or does not contain $n$ (giving $\binom◆LB◆n-1◆RB◆◆LB◆r◆RB◆$ ways to choose
 all $r$ From $\\{1, \ldots, n-1\\}$). $\blacksquare$
 
 ### 4.3 Inclusion-Exclusion Principle
@@ -703,7 +703,7 @@ $|A_1| + |A_2|$ counts elements in $A_1 \cap A_2$ twice, so we subtract $|A_1 \c
 $|A_1 \cup A_2| = |A_1| + |A_2| - |A_1 \cap A_2|$.
 
 For the general case, an element in exactly $t$ of the sets is counted
-$\binom{t}{1} - \binom{t}{2} + \binom{t}{3} - \cdots = 1 - (1-1)^t = 1$ time, which is correct.
+$\binom◆LB◆t◆RB◆◆LB◆1◆RB◆ - \binom◆LB◆t◆RB◆◆LB◆2◆RB◆ + \binom◆LB◆t◆RB◆◆LB◆3◆RB◆ - \cdots = 1 - (1-1)^t = 1$ time, which is correct.
 $\blacksquare$
 
 **Worked Example.** How many integers from 1 to 1000 are not divisible by 2, 3, or 5?
@@ -747,10 +747,10 @@ Divisible by 3 or 7 but **not** by 5: $214 - 43 = 171$. $\blacksquare$
 ### 4.4 Stars and Bars
 
 **Theorem 4.4.** The number of ways to distribute $n$ identical objects into $k$ distinct bins is
-$\binom{n + k - 1}{k - 1}$.
+$\binom◆LB◆n + k - 1◆RB◆◆LB◆k - 1◆RB◆$.
 
 _Proof._ The problem is equivalent to placing $k - 1$ dividers among $n$ objects, giving
-$\binom{n + k - 1}{n} = \binom{n + k - 1}{k - 1}$ arrangements. $\blacksquare$
+$\binom◆LB◆n + k - 1◆RB◆◆LB◆n◆RB◆ = \binom◆LB◆n + k - 1◆RB◆◆LB◆k - 1◆RB◆$ arrangements. $\blacksquare$
 
 **Worked Example.** How many solutions does $x_1 + x_2 + x_3 = 15$ have with $x_i \geq 1$?
 
@@ -758,7 +758,7 @@ $\binom{n + k - 1}{n} = \binom{n + k - 1}{k - 1}$ arrangements. $\blacksquare$
 <summary>Solution</summary>
 
 Substitute $y_i = x_i - 1 \geq 0$. Then $y_1 + y_2 + y_3 = 15 - 3 = 12$ with $y_i \geq 0$. By stars
-and bars: $\binom{12 + 3 - 1}{3 - 1} = \binom{14}{2} = 91$. $\blacksquare$
+and bars: $\binom◆LB◆12 + 3 - 1◆RB◆◆LB◆3 - 1◆RB◆ = \binom◆LB◆14◆RB◆◆LB◆2◆RB◆ = 91$. $\blacksquare$
 
 </details>
 
@@ -767,7 +767,7 @@ and bars: $\binom{12 + 3 - 1}{3 - 1} = \binom{14}{2} = 91$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Directly by stars and bars: $\binom{20 + 4 - 1}{4 - 1} = \binom{23}{3} = 1771$. $\blacksquare$
+Directly by stars and bars: $\binom◆LB◆20 + 4 - 1◆RB◆◆LB◆4 - 1◆RB◆ = \binom◆LB◆23◆RB◆◆LB◆3◆RB◆ = 1771$. $\blacksquare$
 
 </details>
 
@@ -865,7 +865,7 @@ Pigeonhole principle, at least two people have the same count. $\blacksquare$
 
 The $n$-th **Catalan number** is
 
-$$C_n = \frac{1}{n+1}\binom{2n}{n} = \frac{(2n)!}{(n+1)!\,n!}$$
+$$C_n = \frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆\binom◆LB◆2n◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆(2n)!◆RB◆◆LB◆(n+1)!\,n!◆RB◆$$
 
 The first few values: $C_0 = 1$$C_1 = 1$$C_2 = 2$$C_3 = 5$$C_4 = 14$$C_5 = 42$.
 
@@ -887,7 +887,7 @@ $$C_n = \sum_{i=0}^{n-1} C_i \, C_{n-1-i}$$
 
 The five valid sequences are: $((()))$$(()())$$(())()$$()(())$$()()()$.
 
-Checking: $C_3 = \frac{1}{4}\binom{6}{3} = \frac{1}{4} \cdot 20 = 5$. ✓
+Checking: $C_3 = \frac◆LB◆1◆RB◆◆LB◆4◆RB◆\binom◆LB◆6◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆4◆RB◆ \cdot 20 = 5$. ✓
 
 </details>
 
@@ -901,16 +901,16 @@ $$G(x) = \sum_{n=0}^{\infty} a_n x^n$$
 
 | Sequence $a_n$   | Generating function $G(x)$ |
 | ---------------- | -------------------------- |
-| $1$              | $\dfrac{1}{1-x}$           |
-| $r^n$            | $\dfrac{1}{1 - rx}$        |
-| $\binom{n+k}{k}$ | $\dfrac{1}{(1-x)^{k+1}}$   |
-| $n$              | $\dfrac{x}{(1-x)^2}$       |
-| $n^2$            | $\dfrac{x(1+x)}{(1-x)^3}$  |
+| $1$              | $\dfrac◆LB◆1◆RB◆◆LB◆1-x◆RB◆$           |
+| $r^n$            | $\dfrac◆LB◆1◆RB◆◆LB◆1 - rx◆RB◆$        |
+| $\binom◆LB◆n+k◆RB◆◆LB◆k◆RB◆$ | $\dfrac◆LB◆1◆RB◆◆LB◆(1-x)^◆LB◆k+1◆RB◆◆RB◆$   |
+| $n$              | $\dfrac◆LB◆x◆RB◆◆LB◆(1-x)^2◆RB◆$       |
+| $n^2$            | $\dfrac◆LB◆x(1+x)◆RB◆◆LB◆(1-x)^3◆RB◆$  |
 
 **Key operations.** If $A(x)$ generates $\\{a_n\\}$ and $B(x)$ generates $\\{b_n\\}$:
 
 - $A(x) + B(x)$ generates $\\{a_n + b_n\\}$ (choice between types).
-- $A(x) \cdot B(x)$ generates $\\{c_n\\}$ where $c_n = \sum_{i=0}^{n} a_i b_{n-i}$ (combining two
+- $A(x) \cdot B(x)$ generates $\\{c_n\\}$ where $c_n = \sum_◆LB◆i=0◆RB◆^◆LB◆n◆RB◆ a_i b_◆LB◆n-i◆RB◆$ (combining two
   choices).
 
 **Worked Example.** Find the number of ways to select $n$ coins from unlimited supplies of 1p, 2p,
@@ -994,23 +994,23 @@ $\blacksquare$
 
 **Corollary 5.7.** $K_5$ and $K_{3,3}$ are not planar.
 
-_Proof._ $K_5$ has $V = 5$$E = 10$But $10 \gt 3(5) - 6 = 9$. For $K_{3,3}$$V = 6$$E = 9$. Since
-$K_{3,3}$ has no triangles, every face has at least 4 edges, giving $4F \leq 2E$So
+_Proof._ $K_5$ has $V = 5$$E = 10$But $10 \gt 3(5) - 6 = 9$. For $K_◆LB◆3,3◆RB◆$$V = 6$$E = 9$. Since
+$K_◆LB◆3,3◆RB◆$ has no triangles, every face has at least 4 edges, giving $4F \leq 2E$So
 $F \leq E/2 = 4.5$. But $V - E + F = 2$ gives $F = 2 - 6 + 9 = 5 \gt 4.5$. Contradiction.
 $\blacksquare$
 
 **Theorem 5.8 (Kuratowski's Theorem).** A graph is planar if and only if it does not contain a
-Subdivision of $K_5$ or $K_{3,3}$ as a subgraph.
+Subdivision of $K_5$ or $K_◆LB◆3,3◆RB◆$ as a subgraph.
 
 A **subdivision** of an edge $uv$ replaces $uv$ with a path $u$--$w$--$v$ through a new vertex $w$.
 A graph $H$ is a subdivision of $G$ if $H$ can be obtained from $G$ by subdividing edges.
 
-**Worked Example.** Show that $K_{3,3}$ is not planar using Euler's formula.
+**Worked Example.** Show that $K_◆LB◆3,3◆RB◆$ is not planar using Euler's formula.
 
 <details>
 <summary>Solution</summary>
 
-$K_{3,3}$ has $V = 6$ vertices and $E = 9$ edges. It is bipartite (partition sizes 3 and 3), so it
+$K_◆LB◆3,3◆RB◆$ has $V = 6$ vertices and $E = 9$ edges. It is bipartite (partition sizes 3 and 3), so it
 Contains no triangles. Every face in a planar embedding must therefore be bounded by at least 4
 edges, Giving $4F \leq 2E$I.e., $F \leq 9/2 = 4.5$.
 
@@ -1208,7 +1208,7 @@ Adding $xy$ Gives the desired matching.
 
 _Case 2:_ There exists a nonempty proper $T \subsetneq X$ with $|N(T)| = |T|$. Match $T$ to $N(T)$
 By the induction hypothesis. In $G'' = G - (T \cup N(T))$For any $S \subseteq X \setminus T$
-$N_{G''}(S) = N_G(S \cup T) \setminus N(T)$So
+$N_◆LB◆G''◆RB◆(S) = N_G(S \cup T) \setminus N(T)$So
 
 $$|N_{G''}(S)| = |N_G(S \cup T)| - |N(T)| \geq |S \cup T| - |T| = |S|$$
 
@@ -1293,11 +1293,11 @@ $$r^k + c_1 r^{k-1} + \cdots + c_k = 0$$
 $a_n = A_1 r_1^n + \cdots + A_k r_k^n$.
 
 **Case 2 (repeated roots).** If $r$ has multiplicity $m$The contribution is
-$(A_1 + A_2 n + \cdots + A_m n^{m-1}) r^n$.
+$(A_1 + A_2 n + \cdots + A_m n^◆LB◆m-1◆RB◆) r^n$.
 
 ### 6.3 Worked Example
 
-**Problem.** Solve $a_n = 5a_{n-1} - 6a_{n-2}$ with $a_0 = 1$$a_1 = 4$.
+**Problem.** Solve $a_n = 5a_◆LB◆n-1◆RB◆ - 6a_◆LB◆n-2◆RB◆$ with $a_0 = 1$$a_1 = 4$.
 
 _Solution._ Characteristic equation: $r^2 - 5r + 6 = 0$Giving $r_1 = 2$$r_2 = 3$.
 
@@ -1336,16 +1336,16 @@ Generating functions can solve recurrences by converting them to algebraic equat
 extracting coefficients.
 
 **Worked Example.** Use generating functions to solve the Fibonacci recurrence
-$F_n = F_{n-1} + F_{n-2}$ With $F_0 = 0$$F_1 = 1$.
+$F_n = F_◆LB◆n-1◆RB◆ + F_◆LB◆n-2◆RB◆$ With $F_0 = 0$$F_1 = 1$.
 
 <details>
 <summary>Solution</summary>
 
 Let $G(x) = \sum_{n=0}^{\infty} F_n x^n$.
 
-$$G(x) = x + \sum_{n=2}^{\infty} (F_{n-1} + F_{n-2}) x^n = x + x(G(x) - F_0) + x^2 G(x) = x + xG(x) + x^2 G(x)$$
+$$G(x) = x + \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ (F_◆LB◆n-1◆RB◆ + F_◆LB◆n-2◆RB◆) x^n = x + x(G(x) - F_0) + x^2 G(x) = x + xG(x) + x^2 G(x)$$
 
-$$G(x)(1 - x - x^2) = x \implies G(x) = \frac{x}{1 - x - x^2}$$
+$$G(x)(1 - x - x^2) = x \implies G(x) = \frac◆LB◆x◆RB◆◆LB◆1 - x - x^2◆RB◆$$
 
 Factor: $1 - x - x^2 = (1 - \alpha x)(1 - \beta x)$ where $\alpha = (1 + \sqrt{5})/2$ and
 $\beta = (1 - \sqrt{5})/2$.
@@ -1363,16 +1363,16 @@ $F_n = \frac{1}{\sqrt{5}}(\alpha^n - \beta^n)$ (Binet's formula). $\blacksquare$
 
 Let $G(x) = \sum_{n=0}^{\infty} a_n x^n$.
 
-$$G(x) = \sum_{n=1}^{\infty} (2a_{n-1} + 1) x^n = 2x G(x) + \sum_{n=1}^{\infty} x^n = 2x G(x) + \frac{x}{1-x}$$
+$$G(x) = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ (2a_◆LB◆n-1◆RB◆ + 1) x^n = 2x G(x) + \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ x^n = 2x G(x) + \frac◆LB◆x◆RB◆◆LB◆1-x◆RB◆$$
 
-$$(1 - 2x) G(x) = \frac{x}{1-x} \implies G(x) = \frac{x}{(1-x)(1-2x)}$$
+$$(1 - 2x) G(x) = \frac◆LB◆x◆RB◆◆LB◆1-x◆RB◆ \implies G(x) = \frac◆LB◆x◆RB◆◆LB◆(1-x)(1-2x)◆RB◆$$
 
 Partial fractions: $\frac{x}{(1-x)(1-2x)} = \frac{A}{1-x} + \frac{B}{1-2x}$.
 
 $x = A(1-2x) + B(1-x)$. Setting $x = 0$: $A + B = 0$So $B = -A$. Setting $x = 1$: $1 = -A$So
 $A = -1$$B = 1$.
 
-$G(x) = \frac{1}{1-2x} - \frac{1}{1-x}$Giving $a_n = 2^n - 1$. $\blacksquare$
+$G(x) = \frac◆LB◆1◆RB◆◆LB◆1-2x◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆1-x◆RB◆$Giving $a_n = 2^n - 1$. $\blacksquare$
 
 </details>
 
@@ -1446,7 +1446,7 @@ Therefore $T(n) = \Theta(n^2)$.
 There are $a^j$ subproblems, each of size $n/b^j$Each contributing $f(n/b^j)$ work. The tree has
 $\log_b n$ levels, with $a^{\log_b n} = n^{c_{\mathrm{crit{}}}$ leaves. The total work is
 
-$$T(n) = \Theta\!\left(n^{c_{\mathrm{crit}}\right) + \sum_{j=0}^{\log_b n - 1} a^j \, f(n/b^j)$$
+$$T(n) = \Theta\!\left(n^◆LB◆c_◆LB◆\mathrm◆LB◆crit◆RB◆◆RB◆\right) + \sum_◆LB◆j=0◆RB◆^◆LB◆\log_b n - 1◆RB◆ a^j \, f(n/b^j)$$
 
 - **Case 1:** $f(n) = O(n^c)$ with $c \lt c_{\mathrm{crit{}}$. The sum is dominated by the leaves,
   giving $T(n) = \Theta(n^{c_{\mathrm{crit{}}})$.
@@ -1623,7 +1623,7 @@ _Base case:_ $n = 0$: $2^0 = 1 = 2^1 - 1$. ✓
 
 _Inductive step:_ Assume $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then
 
-$$\sum_{i=0}^{k+1} 2^i = (2^{k+1} - 1) + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$$
+$$\sum_◆LB◆i=0◆RB◆^◆LB◆k+1◆RB◆ 2^i = (2^◆LB◆k+1◆RB◆ - 1) + 2^◆LB◆k+1◆RB◆ = 2 \cdot 2^◆LB◆k+1◆RB◆ - 1 = 2^◆LB◆k+2◆RB◆ - 1$$
 
 $\blacksquare$
 
@@ -1751,7 +1751,7 @@ If you get this wrong, revise: Section 5.7.
 
 </details>
 
-**Problem 20.** Solve $a_n = 3a_{n-1} - 2a_{n-2}$ with $a_0 = 0$$a_1 = 1$.
+**Problem 20.** Solve $a_n = 3a_◆LB◆n-1◆RB◆ - 2a_◆LB◆n-2◆RB◆$ with $a_0 = 0$$a_1 = 1$.
 
 <details>
 <summary>Solution</summary>

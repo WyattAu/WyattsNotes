@@ -142,19 +142,19 @@ games).
 inversely proportional to the period.
 
 **Theorem 1.2 (Liu and Layland, 1973).** A set of $n$ periodic tasks with utilisation
-$U = \sum_{i=1}^{n} C_i / T_i \leq n(2^{1/n} - 1)$ is schedulable under RMS, where $C_i$ is the
+$U = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ C_i / T_i \leq n(2^◆LB◆1/n◆RB◆ - 1)$ is schedulable under RMS, where $C_i$ is the
 computation time and $T_i$ is the period of task $i$.
 
 _Proof (sufficiency)._ The critical instant for a task occurs when it is released simultaneously
 with all higher-priority tasks. The worst-case response time of task $i$ is
-$R_i = C_i + \sum_{j \in hp(i)} \lceil R_i / T_j \rceil \cdot C_j$. For $n$ tasks with equal
-utilisation $U_i = C_i/T_i$The bound $n(2^{1/n} - 1)$ is derived by considering the maximum
+$R_i = C_i + \sum_◆LB◆j \in hp(i)◆RB◆ \lceil R_i / T_j \rceil \cdot C_j$. For $n$ tasks with equal
+utilisation $U_i = C_i/T_i$The bound $n(2^◆LB◆1/n◆RB◆ - 1)$ is derived by considering the maximum
 interference from higher-priority tasks at the critical instant. As $n \to \infty$This bound
 approaches $\ln 2 \approx 0.693$. $\blacksquare$
 
 **Utilisation bounds for RMS:**
 
-| $n$      | Bound $n(2^{1/n} - 1)$ |
+| $n$      | Bound $n(2^◆LB◆1/n◆RB◆ - 1)$ |
 | -------- | ---------------------- |
 | 1        | 1.000                  |
 | 2        | 0.828                  |
@@ -184,7 +184,7 @@ Three periodic tasks:
 
 Total utilisation: $U = 0.4 + 0.2 + 0.15 = 0.75$.
 
-RMS bound for $n = 3$: $3(2^{1/3} - 1) \approx 3(1.260 - 1) = 3 \times 0.260 = 0.779$.
+RMS bound for $n = 3$: $3(2^◆LB◆1/3◆RB◆ - 1) \approx 3(1.260 - 1) = 3 \times 0.260 = 0.779$.
 
 Since $0.75 \leq 0.779$The task set is schedulable by RMS (sufficient condition).
 
@@ -230,7 +230,7 @@ All deadlines satisfied.
 </details>
 
 :::caution Common Pitfall The RMS utilisation bound is a **sufficient** condition, not necessary. A
-task set with $U > n(2^{1/n} - 1)$ may still be schedulable under RMS. The response time analysis
+task set with $U > n(2^◆LB◆1/n◆RB◆ - 1)$ may still be schedulable under RMS. The response time analysis
 (RTA) provides a necessary and sufficient test but is more complex to compute. :::
 
 ## 2. Advanced Memory Management
@@ -254,12 +254,12 @@ table. For a sparse address space using only $k$ pages, the two-level table uses
 
 _Proof._ The page directory is one page (4 KB, holding 1024 entries of 4 bytes each). Each page
 table is also one page. With $k$ page tables actually used (one per 4 MB region that has any mapped
-pages), the total memory is $4(1 + k)$ KB. A flat page table always uses $2^{20} \times 4$ bytes = 4
+pages), the total memory is $4(1 + k)$ KB. A flat page table always uses $2^◆LB◆20◆RB◆ \times 4$ bytes = 4
 MB. $\blacksquare$
 
 **Four-level page tables (x86-64).** 64-bit virtual addresses use 4 levels of page tables (PML4,
 PDP, PD, PT) with 9 bits per level and 12 bits of offset, supporting 48-bit virtual addresses
-($2^{48} = 256$ TB).
+($2^◆LB◆48◆RB◆ = 256$ TB).
 
 ### 2.2 Inverted Page Tables
 
@@ -278,7 +278,7 @@ Under demand paging with a **local replacement policy** (each process gets a fix
 frames), the **working set model** defines the set of pages a process needs within a time window
 $\Delta$:
 
-$$W(t, \Delta) = \{\text{pages referenced by the process in  [t - \Delta, t]\}$$
+$$W(t, \Delta) = \{\text◆LB◆pages referenced by the process in  [t - \Delta, t]\}$$
 
 **Theorem 2.2 (Working Set Theorem).** A process with working set size $|W|$ needs at least $|W|$
 frames to avoid thrashing. If allocated fewer frames, the page fault rate increases dramatically.
@@ -508,7 +508,7 @@ for new writes.
 **Cost-benefit model for segment selection:** Clean the segment with the highest ratio of dead
 blocks to live blocks (most benefit for least cost):
 
-$$\text{benefit(s) = \frac{\text{dead(s)}{1 - u(s)}$$
+$$\text◆LB◆benefit(s) = \frac◆LB◆\text◆LB◆dead(s)◆RB◆◆LB◆1 - u(s)◆RB◆$$
 
 Where $u(s)$ is the utilisation of segment $s$.
 
@@ -845,7 +845,7 @@ The **Completely Fair Scheduler (CFS)** is the default process scheduler in Linu
    task's priority (niceness).
 2. CFS always picks the task with the smallest `vruntime`.
 3. The `vruntime` increment per tick is:
-   $\text{vruntime += \text{actual\_time \times \text{weight_0 / \text{weight$Where $\text{weight$
+   $\text◆LB◆vruntime += \text◆LB◆actual\_time \times \text◆LB◆weight_0 / \text◆LB◆weight$Where $\text◆LB◆weight$
    depends on the nice value.
 
 **Target latency.** CFS aims to give each task a fair share of CPU time within a "sched period"
@@ -1136,7 +1136,7 @@ The Banker's algorithm avoids deadlock by only granting a request if the resulti
 (there exists a sequence that allows all processes to complete).
 
 **Safe state.** A state is safe if there exists a sequence
-$\langle P_{i_1}, P_{i_2}, \ldots, P_{i_n} \rangle$ such that each process can run to completion
+$\langle P_◆LB◆i_1◆RB◆, P_◆LB◆i_2◆RB◆, \ldots, P_◆LB◆i_n◆RB◆ \rangle$ such that each process can run to completion
 with the available resources.
 
 <details>
@@ -1275,7 +1275,7 @@ RAID-Z. What happens when a single disk fails in a RAID-Z1 configuration?
 <details>
 <summary>Solution to Problem 12</summary>
 
-Block size = 1 KB = $2^{10}$ bytes. Pointer size = 4 bytes.
+Block size = 1 KB = $2^◆LB◆10◆RB◆$ bytes. Pointer size = 4 bytes.
 
 Pointers per block: $1024 / 4 = 256$.
 

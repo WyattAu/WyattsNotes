@@ -40,11 +40,11 @@ A **language** $L$ over $\Sigma$ is any subset of $\Sigma^*$. The empty language
 
 **Operations on languages:**
 
-- Union: $L_1 \cup L_2 = \{w : w \in L_1 \mathrm{ or  w \in L_2\}$.
-- Intersection: $L_1 \cap L_2 = \{w : w \in L_1 \mathrm{ and  w \in L_2\}$.
+- Union: $L_1 \cup L_2 = \{w : w \in L_1 \mathrm◆LB◆ or  w \in L_2\}$.
+- Intersection: $L_1 \cap L_2 = \{w : w \in L_1 \mathrm◆LB◆ and  w \in L_2\}$.
 - Concatenation: $L_1 \cdot L_2 = \{w_1 w_2 : w_1 \in L_1, w_2 \in L_2\}$.
 - Kleene star: $L^* = \{\varepsilon\} \cup L \cup L^2 \cup \cdots$.
-- Complement: $\overline{L} = \Sigma^* \setminus L$.
+- Complement: $\overline◆LB◆L◆RB◆ = \Sigma^* \setminus L$.
 
 ### 1.3 Examples of Formal Languages
 
@@ -53,14 +53,14 @@ complexity class.
 
 **Finite languages** (always regular):
 
-- $L_1 = \{\mathrm{true, \mathrm{false\}$ — the set of Boolean literals.
+- $L_1 = \{\mathrm◆LB◆true, \mathrm◆LB◆false\}$ — the set of Boolean literals.
 - $L_2 = \{w \in \{0,1\}^* : |w| \leq 3\}$ — all binary strings of length at most 3.
 
 **Regular languages** (decidable by finite automata):
 
-- $L_3 = \{w \in \{0,1\}^* : w \mathrm{ contains the substring  101\}$.
-- $L_4 = \{w \in \{0,1\}^* : w \mathrm{ has an even number of  1\mathrm{s\}$.
-- $L_5 = \{w \in \{0,1\}^* : w \mathrm{ interpreted in binary is divisible by  3\}$.
+- $L_3 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains the substring  101\}$.
+- $L_4 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ has an even number of  1\mathrm◆LB◆s\}$.
+- $L_5 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ interpreted in binary is divisible by  3\}$.
 
 **Context-free but not regular:**
 
@@ -71,16 +71,16 @@ complexity class.
 **Decidable but not context-free:**
 
 - $L_9 = \{a^n b^n c^n : n \geq 0\}$.
-- $L_{10} = \{\langle G \rangle : G \mathrm{ is a connected undirected graph\}$.
+- $L_◆LB◆10◆RB◆ = \{\langle G \rangle : G \mathrm◆LB◆ is a connected undirected graph\}$.
 
 **Undecidable (Turing-recognisable):**
 
-- $A_{\mathrm{TM} = \{\langle M, w \rangle : M \mathrm{ accepts  w\}$ — the acceptance problem.
-- $\mathrm{HALT_{\mathrm{TM} = \{\langle M, w \rangle : M \mathrm{ halts on  w\}$.
+- $A_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ accepts  w\}$ — the acceptance problem.
+- $\mathrm◆LB◆HALT_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ halts on  w\}$.
 
 **Not even Turing-recognisable:**
 
-- $\overline{A_{\mathrm{TM}}$ — the complement of the acceptance problem.
+- $\overline◆LB◆A_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$ — the complement of the acceptance problem.
 
 This hierarchy illustrates the central theme of the course: as we move to more expressive language
 Classes, the corresponding machines become more powerful, but certain properties (decidability,
@@ -95,8 +95,8 @@ is **countable**.
 **Theorem 1.1.** The set of all languages over a non-empty alphabet $\Sigma$ is uncountable.
 
 _Proof._ The set $\Sigma^*$ is countable (enumerate strings by length, then lexicographically). The
-set of all languages is $\mathcal{P}(\Sigma^*)$Which is uncountable by Cantor's theorem (since
-$|\mathcal{P}(S)| \gt |S|$ for any set $S$). $\blacksquare$
+set of all languages is $\mathcal◆LB◆P◆RB◆(\Sigma^*)$Which is uncountable by Cantor's theorem (since
+$|\mathcal◆LB◆P◆RB◆(S)| \gt |S|$ for any set $S$). $\blacksquare$
 
 **Theorem 1.2.** The set of all Turing machines is countable.
 
@@ -113,7 +113,7 @@ Turing-recognisable languages is a countable subset of the uncountable set of al
 uses diagonalisation: assume the Set of all languages is countable, list them as
 $L_1, L_2, L_3, \ldots$And construct a language $D$ that differs from each $L_i$ on the $i$-th
 string. Then $D$ is not in the list — contradiction. This technique reappears in the
-.../1-number-and-algebra/3_proof-and-logic of undecidability of $A*{\mathrm{TM}$ (Section 5.2).
+.../1-number-and-algebra/3_proof-and-logic of undecidability of $A*◆LB◆\mathrm◆LB◆TM◆RB◆$ (Section 5.2).
 
 ## 2. Regular Languages
 
@@ -142,7 +142,7 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_2\})$$
 
 A **nondeterministic finite automaton (NFA)** allows multiple transitions from a state on the same
 Symbol, and $\varepsilon$-transitions (transitions without consuming input). Formally,
-$\delta : Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal{P}(Q)$.
+$\delta : Q \times (\Sigma \cup \{\varepsilon\}) \to \mathcal◆LB◆P◆RB◆(Q)$.
 
 $M$ accepts $w$ if there exists some path of transitions consuming $w$ that ends in a state in $F$.
 
@@ -166,9 +166,9 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_0\})$$
 | $q_1$ | $q_2$              | $q_0$              |
 | $q_2$ | $q_1$              | $q_2$              |
 
-_Correctness._ By induction on input length. Base: $x = \varepsilon$$\mathrm{val(\varepsilon) = 0$
-DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm{val(x) \bmod 3$), Then
-reading $b$ moves to $q_{(2r+b) \bmod 3}$Which equals $q_{\mathrm{val(xb) \bmod 3}$. $\blacksquare$
+_Correctness._ By induction on input length. Base: $x = \varepsilon$$\mathrm◆LB◆val(\varepsilon) = 0$
+DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm◆LB◆val(x) \bmod 3$), Then
+reading $b$ moves to $q_◆LB◆(2r+b) \bmod 3◆RB◆$Which equals $q_◆LB◆\mathrm◆LB◆val(xb) \bmod 3◆RB◆$. $\blacksquare$
 
 </details>
 
@@ -197,9 +197,9 @@ $q_0$ or move to $q_1$.
 _Proof (subset construction)._ Given NFA $N = (Q, \Sigma, \delta, q_0, F)$Construct DFA
 $D = (Q', \Sigma, \delta', q_0', F')$ where:
 
-- $Q' = \mathcal{P}(Q)$ (each state of $D$ is a subset of states of $N$).
-- $q_0' = \varepsilon\mathrm{-closure(\{q_0\})$.
-- $\delta'(S, a) = \varepsilon\mathrm{-closure(\bigcup_{q \in S} \delta(q, a))$ for $S \subseteq Q$
+- $Q' = \mathcal◆LB◆P◆RB◆(Q)$ (each state of $D$ is a subset of states of $N$).
+- $q_0' = \varepsilon\mathrm◆LB◆-closure(\{q_0\})$.
+- $\delta'(S, a) = \varepsilon\mathrm◆LB◆-closure(\bigcup_◆LB◆q \in S◆RB◆ \delta(q, a))$ for $S \subseteq Q$
   $a \in \Sigma$.
 - $F' = \{S \subseteq Q : S \cap F \neq \emptyset\}$.
 
@@ -307,16 +307,16 @@ _Proof._ By structural induction on $R$.
   $L(N_R) = \{a\} = L(a)$.
 
 - **Inductive cases:**
-- $R = R_1 \cup R_2$: By IH, $L(N_{R_1}) = L(R_1)$ and $L(N_{R_2}) = L(R_2)$. Thompson adds a new
-  start $s$ and accept $f$ with $\varepsilon$-transitions to the start states of $N_{R_1}$ and
-  $N_{R_2}$And $\varepsilon$-transitions from their accept states to $f$. Any accepting path goes
+- $R = R_1 \cup R_2$: By IH, $L(N_◆LB◆R_1◆RB◆) = L(R_1)$ and $L(N_◆LB◆R_2◆RB◆) = L(R_2)$. Thompson adds a new
+  start $s$ and accept $f$ with $\varepsilon$-transitions to the start states of $N_◆LB◆R_1◆RB◆$ and
+  $N_◆LB◆R_2◆RB◆$And $\varepsilon$-transitions from their accept states to $f$. Any accepting path goes
   through exactly one sub-NFA, so $L(N_R) = L(R_1) \cup L(R_2) = L(R)$.
-- $R = R_1 \cdot R_2$: Thompson connects the accept state of $N_{R_1}$ to the start state of
-  $N_{R_2}$ via $\varepsilon$-transitions. A string $w \in L(N_R)$ iff $w = w_1 w_2$ where
-  $w_1 \in L(N_{R_1})$ and $w_2 \in L(N_{R_2})$I.e., $w \in L(R_1) \cdot L(R_2) = L(R)$.
+- $R = R_1 \cdot R_2$: Thompson connects the accept state of $N_◆LB◆R_1◆RB◆$ to the start state of
+  $N_◆LB◆R_2◆RB◆$ via $\varepsilon$-transitions. A string $w \in L(N_R)$ iff $w = w_1 w_2$ where
+  $w_1 \in L(N_◆LB◆R_1◆RB◆)$ and $w_2 \in L(N_◆LB◆R_2◆RB◆)$I.e., $w \in L(R_1) \cdot L(R_2) = L(R)$.
 - $R = R_1^*$: Thompson adds a new start $s$ and accept $f$With $\varepsilon$-transitions from $s$
-  to $f$ (allowing zero repetitions) and from $s$ to the start of $N_{R_1}$And from the accept of
-  $N_{R_1}$ back to $s$. Any accepting path corresponds to zero or more traversals of $N_{R_1}$So
+  to $f$ (allowing zero repetitions) and from $s$ to the start of $N_◆LB◆R_1◆RB◆$And from the accept of
+  $N_◆LB◆R_1◆RB◆$ back to $s$. Any accepting path corresponds to zero or more traversals of $N_◆LB◆R_1◆RB◆$So
   $L(N_R) = L(R_1)^* = L(R)$.
 
 In all cases, the number of states added is a constant per operator, so $|N_R| = O(|R|)$.
@@ -348,7 +348,7 @@ That contains at least one string in $L$.
 
 **(3) $\Rightarrow$ (1):** Suppose $\equiv_L$ has finitely many equivalence classes
 $C_1, \ldots, C_k$. Construct a DFA with one state per equivalence class, start state
-$[x]_{\equiv_L}$ for $x = \varepsilon$ Transition $\delta'([x], a) = [xa]$And accept states = those
+$[x]_◆LB◆\equiv_L◆RB◆$ for $x = \varepsilon$ Transition $\delta'([x], a) = [xa]$And accept states = those
 classes contained in $L$. This DFA is Well-defined because $\equiv_L$ is a right congruence: if
 $x \equiv_L y$Then $xa \equiv_L ya$ for all $a \in \Sigma$. $\blacksquare$
 
@@ -411,20 +411,20 @@ Decomposition $w = xyz$ satisfying (1) and (2) has some $i$ with $xy^iz \notin L
 **Example.** $L = \{0^n 1^n : n \geq 0\}$ is not regular.
 
 _Proof._ Assume $L$ is regular with pumping length $p$. Let $w = 0^p 1^p \in L$. By (2),
-$|xy| \leq p$So $y$ consists only of `0`S. Let $|y| = k \gt 0$. Then $xy^0 z = 0^{p-k} 1^p \notin L$
+$|xy| \leq p$So $y$ consists only of `0`S. Let $|y| = k \gt 0$. Then $xy^0 z = 0^◆LB◆p-k◆RB◆ 1^p \notin L$
 (since $p - k \neq p$). Contradiction. $\blacksquare$
 
 **Example.** $L = \{ww : w \in \{0,1\}^*\}$ is not regular.
 
 _Proof._ Assume pumping length $p$. Let $w = 0^p 1 0^p 1 \in L$. Since $|xy| \leq p$$y = 0^k$ for
-Some $k \gt 0$. Then $xy^0 z = 0^{p-k} 1 0^p 1 \notin L$ (the two halves have different lengths).
+Some $k \gt 0$. Then $xy^0 z = 0^◆LB◆p-k◆RB◆ 1 0^p 1 \notin L$ (the two halves have different lengths).
 $\blacksquare$
 
 **Example.** $L = \{0^n 1^m : n \neq m\}$ is not regular.
 
 _Proof._ Assume $L$ is regular with pumping length $p$. Since regular languages are closed under
-Complement, $\overline{L} = \{0^n 1^m : n = m\} \cup \{w : w \notin 0^* 1^*\}$ would also be
-regular. Then $\overline{L} \cap 0^* 1^* = \{0^n 1^n : n \geq 0\}$ would be regular (since $0^* 1^*$
+Complement, $\overline◆LB◆L◆RB◆ = \{0^n 1^m : n = m\} \cup \{w : w \notin 0^* 1^*\}$ would also be
+regular. Then $\overline◆LB◆L◆RB◆ \cap 0^* 1^* = \{0^n 1^n : n \geq 0\}$ would be regular (since $0^* 1^*$
 is regular And regular languages are closed under intersection). But $\{0^n 1^n : n \geq 0\}$ is not
 regular — Contradiction. $\blacksquare$
 
@@ -434,17 +434,17 @@ regular — Contradiction. $\blacksquare$
 Let $L = \{w \in \{0,1\}^* : n_0(w) = n_1(w)\}$.
 
 _Proof._ Assume $L$ is regular with pumping length $p$. Let $w = 0^p 1^p \in L$. By (2),
-$|xy| \leq p$So $y = 0^k$ for some $k \geq 1$. Then $xy^0z = 0^{p-k}1^p$Which has $p - k$ zeros and
+$|xy| \leq p$So $y = 0^k$ for some $k \geq 1$. Then $xy^0z = 0^◆LB◆p-k◆RB◆1^p$Which has $p - k$ zeros and
 $p$ ones. Since $k \geq 1$ $p - k \neq p$So $xy^0z \notin L$. Contradiction. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: $L = \{a^{n!} : n \geq 0\}$ is not regular</summary>
+<summary>Worked Example: $L = \{a^◆LB◆n!◆RB◆ : n \geq 0\}$ is not regular</summary>
 
-_Proof._ Assume pumping length $p$. Let $w = a^{p!} \in L$ with $|w| = p! \geq p$. By (2),
+_Proof._ Assume pumping length $p$. Let $w = a^◆LB◆p!◆RB◆ \in L$ with $|w| = p! \geq p$. By (2),
 $|xy| \leq p$So $y = a^k$ for some $1 \leq k \leq p$. Choose $i = (p! + k) / k = p!/k + 1$ (an
-integer since $k \leq p$). Then $xy^iz = a^{p! + (i-1)k} = a^{p! + p!} = a^{2 \cdot p!}$. But
+integer since $k \leq p$). Then $xy^iz = a^◆LB◆p! + (i-1)k◆RB◆ = a^◆LB◆p! + p!◆RB◆ = a^◆LB◆2 \cdot p!◆RB◆$. But
 $2 \cdot p!$ is not a factorial for $p \geq 2$ (since $(p+1)! / (p!)^2 = (p+1)/p! \lt 1$ for
 $p \geq 3$ And $2 \cdot 2! = 4 \neq n!$ for any $n$). Hence $xy^iz \notin L$. $\blacksquare$
 
@@ -468,7 +468,7 @@ Regular languages are closed under:
 | Concatenation        | NFA concatenation construction          |
 | Kleene star          | NFA star construction                   |
 | Reversal             | Reverse all transitions, swap start/F   |
-| Difference           | $A \cap \overline{B}$                   |
+| Difference           | $A \cap \overline◆LB◆B◆RB◆$                   |
 | Homomorphism         | Apply the homomorphism to each symbol   |
 | Inverse homomorphism | Pre-image construction                  |
 
@@ -514,7 +514,7 @@ $$S \to 0S0 \mid 1S1 \mid 0 \mid 1 \mid \varepsilon$$
 $$S \to aSb \mid T, \quad T \to aTc \mid \varepsilon$$
 
 The variable $S$ generates the $a^i b^i$ part, and $T$ generates the $a^k c^k$ part. Since
-$S \Rightarrow^* a^i S b^i \Rightarrow a^i T b^i \Rightarrow^* a^{i+k} c^k b^i$The total number Of
+$S \Rightarrow^* a^i S b^i \Rightarrow a^i T b^i \Rightarrow^* a^◆LB◆i+k◆RB◆ c^k b^i$The total number Of
 `b`S and `c`S equals the total number of `a`S.
 
 **Example.** CFG for strings with equal numbers of `0`S and `1`S:
@@ -531,16 +531,16 @@ $$S \to aAb \mid bAa \mid aSa \mid bSb \mid a \mid b, \quad A \to aAa \mid aAb \
 Here $S$ generates non-palindromes and $A$ generates arbitrary strings of length $\geq 1$.
 
 <details>
-<summary>Worked Example: CFG for $\{a^i b^j : 2i = j \mathrm{ or  2j = i\}$</summary>
+<summary>Worked Example: CFG for $\{a^i b^j : 2i = j \mathrm◆LB◆ or  2j = i\}$</summary>
 
 $$S \to S_1 \mid S_2, \quad S_1 \to aS_1bb \mid \varepsilon, \quad S_2 \to aaS_2b \mid \varepsilon$$
 
-$S_1$ generates $\{a^i b^{2i}\}$ and $S_2$ generates $\{a^{2j} b^j\}$. Their union is the desired
+$S_1$ generates $\{a^i b^◆LB◆2i◆RB◆\}$ and $S_2$ generates $\{a^◆LB◆2j◆RB◆ b^j\}$. Their union is the desired
 Language.
 
 _Proof of correctness for $S_1$._ By induction:
-$S_1 \Rightarrow^n a^n S_1 b^{2n} \Rightarrow a^n b^{2n}$. So $L(S_1) = \{a^n b^{2n} : n \geq 0\}$.
-Similarly $L(S_2) = \{a^{2n} b^n : n \geq 0\}$. Hence $L(S) = L(S_1) \cup L(S_2)$Which is exactly
+$S_1 \Rightarrow^n a^n S_1 b^◆LB◆2n◆RB◆ \Rightarrow a^n b^◆LB◆2n◆RB◆$. So $L(S_1) = \{a^n b^◆LB◆2n◆RB◆ : n \geq 0\}$.
+Similarly $L(S_2) = \{a^◆LB◆2n◆RB◆ b^n : n \geq 0\}$. Hence $L(S) = L(S_1) \cup L(S_2)$Which is exactly
 the target language. $\blacksquare$
 
 </details>
@@ -558,14 +558,14 @@ A **parse tree** (derivation tree) for a string $w$ according to grammar $G$ is 
 A CFG is **ambiguous** if some string in its language has two or more distinct parse trees
 (equivalently, Two or more leftmost derivations or two or more rightmost derivations).
 
-**Example (ambiguous).** $S \to S + S \mid S \times S \mid \mathrm{id$. The string
-$\mathrm{id + \mathrm{id \times \mathrm{id$ has two parse trees: $S + (S \times S)$ and
+**Example (ambiguous).** $S \to S + S \mid S \times S \mid \mathrm◆LB◆id$. The string
+$\mathrm◆LB◆id + \mathrm◆LB◆id \times \mathrm◆LB◆id$ has two parse trees: $S + (S \times S)$ and
 $(S + S) \times S$.
 
 **Removing ambiguity.** Some ambiguous grammars can be made unambiguous by rewriting the productions
 To enforce a particular evaluation order. For the arithmetic expression grammar:
 
-$$E \to E + T \mid T, \quad T \to T \times F \mid F, \quad F \to (E) \mid \mathrm{id$$
+$$E \to E + T \mid T, \quad T \to T \times F \mid F, \quad F \to (E) \mid \mathrm◆LB◆id$$
 
 This grammar is unambiguous and enforces the standard precedence ($\times$ before $+$) and left
 Associativity.
@@ -580,13 +580,13 @@ $n$ that $a^n b^n$ has exactly one parse tree.
 
 Base ($n = 1$): $ab$ has only the parse tree using $S \to ab$.
 
-Inductive step: $a^{n+1} b^{n+1}$ must use $S \to aSb$ (the rule $S \to ab$ produces only Strings of
+Inductive step: $a^◆LB◆n+1◆RB◆ b^◆LB◆n+1◆RB◆$ must use $S \to aSb$ (the rule $S \to ab$ produces only Strings of
 length 2). The inner $S$ must derive $a^n b^n$Which by IH has a unique parse tree. Hence
-$a^{n+1} b^{n+1}$ has exactly one parse tree. $\blacksquare$
+$a^◆LB◆n+1◆RB◆ b^◆LB◆n+1◆RB◆$ has exactly one parse tree. $\blacksquare$
 
 </details>
 
-**Example.** $L = \{a^i b^j c^k : i = j \mathrm{ or  j = k\}$ is inherently ambiguous. (Proof
+**Example.** $L = \{a^i b^j c^k : i = j \mathrm◆LB◆ or  j = k\}$ is inherently ambiguous. (Proof
 omitted; Any grammar must have two competing mechanisms for the two conditions, and these
 Interfere.)
 
@@ -657,7 +657,7 @@ A **pushdown automaton (PDA)** is a 6-tuple $M = (Q, \Sigma, \Gamma, \delta, q_0
 - $Q$ is a finite set of states.
 - $\Sigma$ is the input alphabet.
 - $\Gamma$ is the stack alphabet.
-- $\delta : Q \times (\Sigma \cup \{\varepsilon\}) \times (\Gamma \cup \{\varepsilon\}) \to \mathcal{P}(Q \times (\Gamma \cup \{\varepsilon\}))$
+- $\delta : Q \times (\Sigma \cup \{\varepsilon\}) \times (\Gamma \cup \{\varepsilon\}) \to \mathcal◆LB◆P◆RB◆(Q \times (\Gamma \cup \{\varepsilon\}))$
   is the transition function.
 - $q_0 \in Q$ is the start state.
 - $F \subseteq Q$ is the set of accepting states.
@@ -804,7 +804,7 @@ variables that can derive the substring $w_i w_{i+1} \cdots w_j$.
 
 1. **Base case** ($j = 1$): $T[i, i] = \{A : A \to w_i \mathrm{ is a rule in  G\}$.
 2. **Recursive case** ($j \gt 1$): For each split $k$ with $i \leq k \lt j$:
-   $$T[i, j] \mathrel{{:}{=}} T[i, j] \cup \{A : A \to BC \in R, B \in T[i, k], C \in T[k+1, j]\}$$
+   $$T[i, j] \mathrel◆LB◆◆LB◆:◆RB◆◆LB◆=◆RB◆◆RB◆ T[i, j] \cup \{A : A \to BC \in R, B \in T[i, k], C \in T[k+1, j]\}$$
 3. **Answer:** $w \in L(G)$ iff $S \in T[1, n]$.
 
 _Proof of correctness._ In CNF, every derivation of a string of length $\ell$ involves exactly
@@ -845,8 +845,8 @@ and $C \to a$.
 ### 4.1 Definition
 
 A **Turing machine (TM)** is a 7-tuple
-$M = (Q, \Sigma, \Gamma, \delta, q_0, q_{\mathrm{accept},
-Q_{\mathrm{reject})$ where:
+$M = (Q, \Sigma, \Gamma, \delta, q_0, q_◆LB◆\mathrm◆LB◆accept◆RB◆,
+Q_◆LB◆\mathrm◆LB◆reject◆RB◆)$ where:
 
 - $Q$ is a finite set of states.
 - $\Sigma$ is the input alphabet (does not contain the blank symbol $\sqcup$).
@@ -1169,7 +1169,7 @@ $M_0$ with $L(M_0) \in P$ and a TM $M_1$ with $L(M_1) \notin P$. Given an arbitr
 $w$Construct $M_w$ that on input $x$: first simulates $M$ on $w$Then simulates $M_0$ on $x$. If $M$
 accepts $w$Then $L(M_w) = L(M_0) \in P$; if $M$ does not accept $w$$L(M_w) = \emptyset$. If
 $\emptyset \notin P$Then $M_w \in P$ iff $M$ accepts $w$So deciding $P$ would decide
-$A_{\mathrm{TM}$. The case $\emptyset \in P$ is similar. $\blacksquare$
+$A_◆LB◆\mathrm◆LB◆TM◆RB◆$. The case $\emptyset \in P$ is similar. $\blacksquare$
 
 **Corollary.** The following are undecidable: "Does $M$ accept at least one string?", "Is $L(M)$
 Finite?", "Is $L(M)$ regular?", "Is $L(M)$ context-free?"
@@ -1189,7 +1189,7 @@ That:
 $$\alpha_{i_1} \alpha_{i_2} \cdots \alpha_{i_m} = \beta_{i_1} \beta_{i_2} \cdots \beta_{i_m}$$
 
 The **PCP language** is
-$\mathrm{PCP = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm{ have a solution\}$.
+$\mathrm◆LB◆PCP = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm◆LB◆ have a solution\}$.
 
 **Example.** $\alpha = (a, ab, bba)$$\beta = (ba, aa, bb)$. The sequence $(2, 1, 1, 3)$ gives
 $ab \cdot a \cdot a \cdot bba = abaabba$ and $aa \cdot ba \cdot ba \cdot bb = aabababb$ — not equal.
@@ -1219,12 +1219,12 @@ Not equal. Finding solutions to PCP instances can be very difficult — there is
 
 **Theorem 5.6.** PCP is undecidable.
 
-_Proof (sketch)._ Reduce from $A_{\mathrm{TM}$. Given TM $M$ and input $w$Construct a PCP instance
+_Proof (sketch)._ Reduce from $A_◆LB◆\mathrm◆LB◆TM◆RB◆$. Given TM $M$ and input $w$Construct a PCP instance
 Whose tiles encode the computation history of $M$ on $w$. The tiles are designed so that a matching
 Sequence corresponds to a valid accepting computation: the first tile starts the computation, middle
 Tiles enforce that each configuration follows from the previous by a valid transition, and the last
 Tile allows termination only if an accept state is reached. Thus the PCP instance has a solution iff
-$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_{\mathrm{TM}$ would Be
+$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_◆LB◆\mathrm◆LB◆TM◆RB◆$ would Be
 decidable — contradiction. $\blacksquare$
 
 **Modified PCP (MPCP).** In the modified version, the first tile used must be tile 1. MPCP is also
@@ -1238,12 +1238,12 @@ $O \subseteq \Sigma^*$. In addition to its ordinary transitions, $M^O$ may enter
 state," write a string $q$ on a query tape, and enter an "answer state" where the tape Contains `1`
 if $q \in O$ and `0` if $q \notin O$. The oracle answers in one step.
 
-**Definition.** $A^O = \{w : M^O \mathrm{ accepts  w\}$ for a fixed oracle TM $M$ and oracle $O$.
+**Definition.** $A^O = \{w : M^O \mathrm◆LB◆ accepts  w\}$ for a fixed oracle TM $M$ and oracle $O$.
 
 **Theorem 5.7.** There exists an oracle $A$ such that $P^A \neq NP^A$And an oracle $B$ such That
 $P^B = NP^B$.
 
-This result (Baker--Gill--Solovay, 1975) shows that resolving $P \stackrel{?}{=} NP$ will require
+This result (Baker--Gill--Solovay, 1975) shows that resolving $P \stackrel◆LB◆?◆RB◆◆LB◆=◆RB◆ NP$ will require
 Non-relativising techniques — .../1-number-and-algebra/3_proof-and-logic methods that do not carry
 over in the presence of oracles.
 
@@ -1254,8 +1254,8 @@ $$A' = \{\langle M^A, w \rangle : M^A \mathrm{ accepts  w\}$$
 **Theorem 5.8.** $A' \not\leq_T A$ (i.e., $A'$ is strictly more difficult than $A$ under Turing
 Reductions).
 
-The arithmetical hierarchy is defined by iterating the jump: $\emptyset^{(0)} = \emptyset$
-$\emptyset^{(n+1)} = (\emptyset^{(n)})'$. Each jump produces a strictly more difficult problem,
+The arithmetical hierarchy is defined by iterating the jump: $\emptyset^◆LB◆(0)◆RB◆ = \emptyset$
+$\emptyset^◆LB◆(n+1)◆RB◆ = (\emptyset^◆LB◆(n)◆RB◆)'$. Each jump produces a strictly more difficult problem,
 Yielding an infinite hierarchy of undecidability.
 
 :::caution Common Pitfall A common mistake when using reductions is confusing the direction. To
@@ -1305,7 +1305,7 @@ $\mathrm{NTIME(t(n)) = \{L : L \mathrm{ is decided by a nondeterministic TM in  
 
 ### 6.2 The Class P
 
-$$\mathrm{P = \bigcup_{k \geq 1} \mathrm{TIME(n^k)$$
+$$\mathrm◆LB◆P = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆TIME(n^k)$$
 
 $\mathrm{P$ is the class of languages decidable in polynomial time by a deterministic TM. This
 Captures the notion of "efficiently solvable."
@@ -1320,12 +1320,12 @@ Captures the notion of "efficiently solvable."
 
 ### 6.3 The Class NP
 
-$$\mathrm{NP = \bigcup_{k \geq 1} \mathrm{NTIME(n^k)$$
+$$\mathrm◆LB◆NP = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆NTIME(n^k)$$
 
 **Equivalent definition.** A language $L$ is in NP if there exists a polynomial-time verifier $V$
 And a polynomial $p$ such that:
 
-$$L = \{w : \exists c \mathrm{ with  |c| \leq p(|w|) \mathrm{ and  V(w, c) = \mathrm{accept\}$$
+$$L = \{w : \exists c \mathrm◆LB◆ with  |c| \leq p(|w|) \mathrm◆LB◆ and  V(w, c) = \mathrm◆LB◆accept\}$$
 
 The string $c$ is called a **certificate** (or witness).
 
@@ -1512,13 +1512,13 @@ Equal sum?
 
 **Reduction chain:**
 
-$$\mathrm{SAT \to \mathrm{3\mathrm{-SAT} \to \mathrm{VertexCover \to \mathrm{Clique$$
+$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆VertexCover \to \mathrm◆LB◆Clique$$
 
-$$\mathrm{SAT \to \mathrm{3\mathrm{-SAT} \to \mathrm{HamiltonianPath$$
+$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆HamiltonianPath$$
 
-$$\mathrm{SAT \to \mathrm{3\mathrm{-SAT} \to \mathrm{SubsetSum \to \mathrm{Partition$$
+$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$$
 
-$$\mathrm{SAT \to \mathrm{3\mathrm{-SAT} \to \mathrm{SubsetSum \to \mathrm{Partition$$
+$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$$
 
 <details>
 <summary>Worked Example: Reducing 3-SAT to Independent Set</summary>
@@ -1616,10 +1616,10 @@ Quantifiers.
 
 **Definition.** Define the classes $\Sigma_k^P$ and $\Pi_k^P$ inductively:
 
-- $\Sigma_0^P = \Pi_0^P = \mathrm{P$.
-- $\Sigma_{k+1}^P = \mathrm{NP^{\Sigma_k^P}$ (NP with a $\Sigma_k^P$ oracle).
-- $\Pi_{k+1}^P} = \mathrm{coNP^{\Sigma_k^P}$ (coNP with a $\Sigma_k^P$ oracle).
-- $\mathrm{PH = \bigcup_{k \geq 0} \Sigma_k^P$.
+- $\Sigma_0^P = \Pi_0^P = \mathrm◆LB◆P$.
+- $\Sigma_◆LB◆k+1◆RB◆^P = \mathrm◆LB◆NP^◆LB◆\Sigma_k^P◆RB◆$ (NP with a $\Sigma_k^P$ oracle).
+- $\Pi_◆LB◆k+1◆RB◆^P◆RB◆ = \mathrm◆LB◆coNP^◆LB◆\Sigma_k^P◆RB◆$ (coNP with a $\Sigma_k^P$ oracle).
+- $\mathrm◆LB◆PH = \bigcup_◆LB◆k \geq 0◆RB◆ \Sigma_k^P$.
 
 **Equivalent characterisation.** A language $L$ is in $\Sigma_k^P$ iff there exist polynomial-time
 Computable relations $R$ and polynomials $p$ such that:
@@ -1630,8 +1630,8 @@ Where each $|y_i| \leq p(|x|)$ and the quantifiers alternate, starting with $\ex
 
 **Examples:**
 
-- $\Sigma_1^P = \mathrm{NP$: "there exists a certificate."
-- $\Pi_1^P = \mathrm{coNP$: "for all certificates."
+- $\Sigma_1^P = \mathrm◆LB◆NP$: "there exists a certificate."
+- $\Pi_1^P = \mathrm◆LB◆coNP$: "for all certificates."
 - $\Sigma_2^P$ contains problems like "does there exist a strategy for player 1 such that for all
   strategies of player 2, player 1 wins?" (for polynomial-size games).
 - $\Pi_2^P$ contains the complement of such problems.
@@ -1640,14 +1640,14 @@ Where each $|y_i| \leq p(|x|)$ and the quantifiers alternate, starting with $\ex
 
 $$\mathrm{P \subseteq \mathrm{NP \subseteq \Sigma_2^P \subseteq \Sigma_3^P \subseteq \cdots \subseteq \mathrm{PH \subseteq \mathrm{PSPACE$$
 
-**Theorem 6.10.** If $\Sigma_k^P = \Sigma_{k+1}^P$ for some $k$Then $\mathrm{PH = \Sigma_k^P$ (the
+**Theorem 6.10.** If $\Sigma_k^P = \Sigma_◆LB◆k+1◆RB◆^P$ for some $k$Then $\mathrm◆LB◆PH = \Sigma_k^P$ (the
 polynomial hierarchy collapses to level $k$).
 
-_Proof._ If $\Sigma_k^P = \Sigma_{k+1}^P = \mathrm{NP^{\Sigma_k^P}$Then the $\Sigma_k^P$ oracle
-Provides no additional power. By induction, $\Sigma_{k+i}^P = \Sigma_k^P$ for all $i \geq 0$ So
-$\mathrm{PH = \Sigma_k^P$. $\blacksquare$
+_Proof._ If $\Sigma_k^P = \Sigma_◆LB◆k+1◆RB◆^P = \mathrm◆LB◆NP^◆LB◆\Sigma_k^P◆RB◆$Then the $\Sigma_k^P$ oracle
+Provides no additional power. By induction, $\Sigma_◆LB◆k+i◆RB◆^P = \Sigma_k^P$ for all $i \geq 0$ So
+$\mathrm◆LB◆PH = \Sigma_k^P$. $\blacksquare$
 
-It is widely believed that $\mathrm{PH$ does not collapse.
+It is widely believed that $\mathrm◆LB◆PH$ does not collapse.
 
 ### 6.8 Beyond NP
 
@@ -1655,22 +1655,22 @@ It is widely believed that $\mathrm{PH$ does not collapse.
 Instance has a polynomial-time verifiable certificate.
 
 - Example: "Is this formula a tautology?" (the certificate for "no" would be a failing assignment).
-- $\mathrm{P \subseteq \mathrm{NP \cap \mathrm{coNP$.
-- It is unknown whether $\mathrm{NP = \mathrm{coNP$. If $\mathrm{P = \mathrm{NP$Then
-  $\mathrm{NP = \mathrm{coNP$.
+- $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP \cap \mathrm◆LB◆coNP$.
+- It is unknown whether $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$. If $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then
+  $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$.
 
-**Theorem 6.11.** If $\mathrm{NP \neq \mathrm{coNP$Then $\mathrm{P \neq \mathrm{NP$.
+**Theorem 6.11.** If $\mathrm◆LB◆NP \neq \mathrm◆LB◆coNP$Then $\mathrm◆LB◆P \neq \mathrm◆LB◆NP$.
 
-_Proof._ If $\mathrm{P = \mathrm{NP$Then $\mathrm{P = \mathrm{coNP$ (since $\mathrm{P$ Is closed
-under complement), so $\mathrm{NP = \mathrm{coNP$. The contrapositive gives the Result.
+_Proof._ If $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then $\mathrm◆LB◆P = \mathrm◆LB◆coNP$ (since $\mathrm◆LB◆P$ Is closed
+under complement), so $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$. The contrapositive gives the Result.
 $\blacksquare$
 
 **PSPACE.** The class of languages decidable in polynomial space:
 
 $$\mathrm{PSPACE = \bigcup_{k \geq 1} \mathrm{SPACE(n^k)$$
 
-- $\mathrm{P \subseteq \mathrm{NP \subseteq \mathrm{PSPACE$.
-- $\mathrm{P \neq \mathrm{PSPACE$ (space hierarchy theorem).
+- $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE$.
+- $\mathrm◆LB◆P \neq \mathrm◆LB◆PSPACE$ (space hierarchy theorem).
 - PSPACE-complete problems: TQBF, generalised geography, determining the winner of a position in
   certain games.
 
@@ -1678,8 +1678,8 @@ $$\mathrm{PSPACE = \bigcup_{k \geq 1} \mathrm{SPACE(n^k)$$
 
 $$\mathrm{EXPTIME = \bigcup_{k \geq 1} \mathrm{TIME(2^{n^k})$$
 
-- $\mathrm{P \subseteq \mathrm{NP \subseteq \mathrm{PSPACE \subseteq \mathrm{EXPTIME$.
-- $\mathrm{P \neq \mathrm{EXPTIME$ (time hierarchy theorem).
+- $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE \subseteq \mathrm◆LB◆EXPTIME$.
+- $\mathrm◆LB◆P \neq \mathrm◆LB◆EXPTIME$ (time hierarchy theorem).
 - EXPTIME-complete problems: Generalised chess, Go (on sufficiently large boards), determining the
   winner of a two-player game with exponential game tree.
 
@@ -1693,18 +1693,18 @@ $$\mathrm{P \subseteq \mathrm{NP \subseteq \mathrm{PH \subseteq \mathrm{PSPACE$$
 
 | Inclusion                                                     | Known to be proper? | Theorem used        |
 | ------------------------------------------------------------- | ------------------- | ------------------- |
-| $\mathrm{Regular \subseteq \mathrm{CFL$                       | Yes                 | Pumping lemma       |
-| $\mathrm{CFL \subseteq \mathrm{Decidable$                     | Yes                 | CYK algorithm       |
-| $\mathrm{Decidable \subseteq \mathrm{TM\mathrm{-recognisable$ | Yes                 | Diagonalisation     |
-| $\mathrm{P \subseteq \mathrm{EXPTIME$                         | Yes                 | Time hierarchy      |
-| $\mathrm{P \subseteq \mathrm{PSPACE$                          | Yes                 | Space hierarchy     |
-| $\mathrm{NP \subseteq \mathrm{PSPACE$                         | Yes                 | Savitch's corollary |
-| $\mathrm{L \subseteq \mathrm{NL$                              | Unknown             |                     |
-| $\mathrm{P \subseteq \mathrm{NP$                              | Unknown             | Open problem        |
-| $\mathrm{NP \subseteq \mathrm{coNP$                           | Unknown             | Open problem        |
+| $\mathrm◆LB◆Regular \subseteq \mathrm◆LB◆CFL$                       | Yes                 | Pumping lemma       |
+| $\mathrm◆LB◆CFL \subseteq \mathrm◆LB◆Decidable$                     | Yes                 | CYK algorithm       |
+| $\mathrm◆LB◆Decidable \subseteq \mathrm◆LB◆TM\mathrm◆LB◆-recognisable$ | Yes                 | Diagonalisation     |
+| $\mathrm◆LB◆P \subseteq \mathrm◆LB◆EXPTIME$                         | Yes                 | Time hierarchy      |
+| $\mathrm◆LB◆P \subseteq \mathrm◆LB◆PSPACE$                          | Yes                 | Space hierarchy     |
+| $\mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE$                         | Yes                 | Savitch's corollary |
+| $\mathrm◆LB◆L \subseteq \mathrm◆LB◆NL$                              | Unknown             |                     |
+| $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP$                              | Unknown             | Open problem        |
+| $\mathrm◆LB◆NP \subseteq \mathrm◆LB◆coNP$                           | Unknown             | Open problem        |
 
-Both inclusions $\mathrm{P \subseteq \mathrm{NP$ and $\mathrm{NP \subseteq \mathrm{PSPACE$ are Known
-to be proper ($\mathrm{P \neq \mathrm{PSPACE$), but the status of $\mathrm{P$ vs. $\mathrm{NP$
+Both inclusions $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP$ and $\mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE$ are Known
+to be proper ($\mathrm◆LB◆P \neq \mathrm◆LB◆PSPACE$), but the status of $\mathrm◆LB◆P$ vs. $\mathrm◆LB◆NP$
 remains open.
 
 :::caution Common Pitfall NP-completeness refers to **decision** problems. The optimisation versions
@@ -1723,11 +1723,11 @@ undecidable). :::
 Length is a multiple of 3. Prove your DFA is correct.
 
 **Problem 2.** Let
-$L = \{w \in \{0,1\}^* : w \mathrm{ contains an even number of  0\mathrm{s and
-\mathrm{ ends with  1\}$.
+$L = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains an even number of  0\mathrm◆LB◆s and
+\mathrm◆LB◆ ends with  1\}$.
 Give a DFA with the minimum number of states for $L$.
 
-**Problem 3.** Use the Myhill-Nerode theorem to prove that $L = \{0^n 1^{2n} : n \geq 0\}$ is not
+**Problem 3.** Use the Myhill-Nerode theorem to prove that $L = \{0^n 1^◆LB◆2n◆RB◆ : n \geq 0\}$ is not
 regular.
 
 **Problem 4.** Prove or disprove: if $L_1 \cdot L_2$ is regular, then both $L_1$ and $L_2$ are
@@ -1749,14 +1749,14 @@ PDA and explain why it is correct.
 
 ### 7.3 Turing Machines and Decidability
 
-**Problem 9.** Design a TM that decides the language $L = \{0^{2^n} : n \geq 0\}$. Describe the
+**Problem 9.** Design a TM that decides the language $L = \{0^◆LB◆2^n◆RB◆ : n \geq 0\}$. Describe the
 algorithm and prove it always halts.
 
 **Problem 10.** Prove that the language
 $L = \{\langle M_1, M_2 \rangle : L(M_1) \cap L(M_2) \neq \emptyset\}$ is undecidable.
 
 **Problem 11.** Use Rice's theorem to prove that
-$L = \{\langle M \rangle : L(M) \mathrm{ contains at least two strings\}$ is undecidable. Explain
+$L = \{\langle M \rangle : L(M) \mathrm◆LB◆ contains at least two strings\}$ is undecidable. Explain
 why Rice's theorem applies.
 
 **Problem 12.** Show that the PCP instance with $\alpha = (01, 0, 1)$ and $\beta = (0, 10, 01)$ Has
@@ -1764,27 +1764,27 @@ a solution by finding one, or prove it has no solution.
 
 ### 7.4 Complexity Theory
 
-**Problem 13.** Show that if $\mathrm{P = \mathrm{NP$Then $\mathrm{NP = \mathrm{coNP$.
+**Problem 13.** Show that if $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$.
 
 **Problem 14.** A **3-colouring** of a graph $G = (V, E)$ is a function $c : V \to \{1, 2, 3\}$ Such
 that $c(u) \neq c(v)$ for every edge $(u, v) \in E$. Show that 3-SAT $\leq_p$ 3-Colouring By
 describing the reduction construction.
 
-**Problem 15.** Prove that $\mathrm{CLIQUE$ is self-reducible: given an oracle for
-$\mathrm{CLIQUE$Describe a polynomial-time algorithm to find an actual clique of size $k$ (if one
+**Problem 15.** Prove that $\mathrm◆LB◆CLIQUE$ is self-reducible: given an oracle for
+$\mathrm◆LB◆CLIQUE$Describe a polynomial-time algorithm to find an actual clique of size $k$ (if one
 exists).
 
-**Problem 16.** Using Savitch's theorem, prove that $\mathrm{NL \subseteq \mathrm{P$. What is the
+**Problem 16.** Using Savitch's theorem, prove that $\mathrm◆LB◆NL \subseteq \mathrm◆LB◆P$. What is the
 time complexity of your algorithm?
 
-**Problem 17.** Define the language $\mathrm{EXACT\mathrm{-CLIQUE = \{\langle G, k \rangle : G$
-$\mathrm{ has a clique of exactly size  k\}$. Show that $\mathrm{EXACT\mathrm{-CLIQUE$ is
+**Problem 17.** Define the language $\mathrm◆LB◆EXACT\mathrm◆LB◆-CLIQUE = \{\langle G, k \rangle : G$
+$\mathrm◆LB◆ has a clique of exactly size  k\}$. Show that $\mathrm◆LB◆EXACT\mathrm◆LB◆-CLIQUE$ is
 NP-complete.
 
 **Problem 18.** A language $L$ is in **DP** (difference of two NP sets) if there exist
-$L_1, L_2 \in \mathrm{NP$ such that $L = L_1 \cap \overline{L_2}$. Show that
-$\mathrm{SAT\mathrm{-UNSAT = \{\langle \phi, \psi \rangle : \phi \in \mathrm{SAT \mathrm{ and 
-\psi \notin \mathrm{SAT\}$
+$L_1, L_2 \in \mathrm◆LB◆NP$ such that $L = L_1 \cap \overline◆LB◆L_2◆RB◆$. Show that
+$\mathrm◆LB◆SAT\mathrm◆LB◆-UNSAT = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT \mathrm◆LB◆ and 
+\psi \notin \mathrm◆LB◆SAT\}$
 is in DP. Is DP contained in $\Sigma_2^P$? Justify.
 
 ### 7.5 Comprehensive
@@ -1794,21 +1794,21 @@ regular using the pumping lemma. (b) Give a CFG for $L$ and prove it is correct.
 decidable? Justify.
 
 **Problem 20.** For each of the following languages, state the smallest complexity class (from
-$\mathrm{Regular$$\mathrm{CFL$$\mathrm{Decidable$$\mathrm{NP$ $\mathrm{PSPACE$$\mathrm{EXPTIME$Or
+$\mathrm◆LB◆Regular$$\mathrm{CFL$$\mathrm◆LB◆Decidable$$\mathrm{NP$ $\mathrm{PSPACE$$\mathrm◆LB◆EXPTIME$Or
 "undecidable") that is known to contain it. Justify each answer briefly.
 
-(a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm{ has a Hamiltonian cycle\}$
-(c) $\{\langle G, k \rangle : G \mathrm{ has a vertex cover of size  \leq k\}$ (d)
-$\{\langle M \rangle : M \mathrm{ runs for at most  100 \mathrm{ steps on  \varepsilon\}$ (e)
-$\{\langle \phi \rangle : \phi \mathrm{ is a true quantified Boolean formula\}$
+(a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm◆LB◆ has a Hamiltonian cycle\}$
+(c) $\{\langle G, k \rangle : G \mathrm◆LB◆ has a vertex cover of size  \leq k\}$ (d)
+$\{\langle M \rangle : M \mathrm◆LB◆ runs for at most  100 \mathrm◆LB◆ steps on  \varepsilon\}$ (e)
+$\{\langle \phi \rangle : \phi \mathrm◆LB◆ is a true quantified Boolean formula\}$
 
 ### 7.6 Selected Solutions and Hints
 
-**Problem 1.** States $q_0, q_1, q_2$ with transitions $\delta(q_i, a) = q_{(i+1) \bmod 3}$ for All
+**Problem 1.** States $q_0, q_1, q_2$ with transitions $\delta(q_i, a) = q_◆LB◆(i+1) \bmod 3◆RB◆$ for All
 $a \in \{0, 1\}$. Accept state: $q_0$. Proof by induction on the number of symbols read.
 
 **Problem 3.** The strings $0^1, 0^2, 0^3, \ldots$ are pairwise distinguishable: for $i \lt j$ The
-suffix $1^{2i}$ distinguishes $0^i$ from $0^j$ since $0^i 1^{2i} \in L$ but $0^j 1^{2i} \notin L$
+suffix $1^◆LB◆2i◆RB◆$ distinguishes $0^i$ from $0^j$ since $0^i 1^◆LB◆2i◆RB◆ \in L$ but $0^j 1^◆LB◆2i◆RB◆ \notin L$
 (because $2i \neq 2j$).
 
 **Problem 4.** Dis.../1-number-and-algebra/3_proof-and-logic: let $L_1 = \{0^n 1^n : n \geq 0\}$
@@ -1819,16 +1819,16 @@ $L_1$ is not.
 $vxy$ cannot span all four blocks. Case analysis shows that pumping any valid Decomposition produces
 a string not in $L$.
 
-**Problem 10.** Reduce from $E_{\mathrm{TM}$. Given $\langle M \rangle$Construct two TMs $M_1$
+**Problem 10.** Reduce from $E_◆LB◆\mathrm◆LB◆TM◆RB◆$. Given $\langle M \rangle$Construct two TMs $M_1$
 (accepts $\varepsilon$ only) and $M_2$ (accepts what $M$ accepts). Then
 $L(M_1) \cap L(M_2) \neq \emptyset$ iff $M$ accepts $\varepsilon$ iff
-$\langle M \rangle \notin E_{\mathrm{TM}$ (after adjusting for the specific reduction).
+$\langle M \rangle \notin E_◆LB◆\mathrm◆LB◆TM◆RB◆$ (after adjusting for the specific reduction).
 
-**Problem 13.** If $\mathrm{P = \mathrm{NP$Then for any $L \in \mathrm{NP$We have $L \in \mathrm{P$.
-Since $\mathrm{P$ is closed under complement, $\overline{L} \in \mathrm{P
-\subseteq \mathrm{NP$. So
-$\overline{L} \in \mathrm{NP$ for every $L \in \mathrm{NP$, meaning
-$\mathrm{NP \subseteq \mathrm{coNP$. By symmetry, $\mathrm{coNP \subseteq \mathrm{NP$.
+**Problem 13.** If $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then for any $L \in \mathrm◆LB◆NP$We have $L \in \mathrm◆LB◆P$.
+Since $\mathrm◆LB◆P$ is closed under complement, $\overline◆LB◆L◆RB◆ \in \mathrm◆LB◆P
+\subseteq \mathrm◆LB◆NP$. So
+$\overline◆LB◆L◆RB◆ \in \mathrm◆LB◆NP$ for every $L \in \mathrm◆LB◆NP$, meaning
+$\mathrm◆LB◆NP \subseteq \mathrm◆LB◆coNP$. By symmetry, $\mathrm◆LB◆coNP \subseteq \mathrm◆LB◆NP$.
 
 **Problem 19.** (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$$y$ is in the first $0^p$
 block. Pumping down gives $0^{p-k}1^p\#0^p1^p \notin L$. (b)

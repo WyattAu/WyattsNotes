@@ -118,14 +118,14 @@ attributes).
 
 Relational algebra provides a formal query language based on operations on relations.
 
-**Selection** $\sigma_{\theta}(R)$: Return tuples from $R$ satisfying condition $\theta$.
+**Selection** $\sigma_◆LB◆\theta◆RB◆(R)$: Return tuples from $R$ satisfying condition $\theta$.
 
-$$\sigma_{\mathrm{dept = \mathrm{'CS'}(\mathrm{Student)$$
+$$\sigma_◆LB◆\mathrm◆LB◆dept = \mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Student)$$
 
-**Projection** $\pi_{A_1, \ldots, A_k}(R)$: Return a relation containing only attributes
+**Projection** $\pi_◆LB◆A_1, \ldots, A_k◆RB◆(R)$: Return a relation containing only attributes
 $A_1, \ldots, A_k$.
 
-$$\pi_{\mathrm{name, \mathrm{gpa}(\mathrm{Student)$$
+$$\pi_◆LB◆\mathrm◆LB◆name, \mathrm◆LB◆gpa◆RB◆(\mathrm◆LB◆Student)$$
 
 **Union** $R \cup S$: All tuples in $R$ or $S$ (both must be union-compatible: same arity and
 Attribute domains).
@@ -134,33 +134,33 @@ Attribute domains).
 
 **Cartesian product** $R \times S$: All pairs $(r, s)$ where $r \in R$ and $s \in S$.
 
-**Rename** $\rho_{x}(R)$: Rename relation $R$ to $x$.
+**Rename** $\rho_◆LB◆x◆RB◆(R)$: Rename relation $R$ to $x$.
 
 **Natural join** $R \bowtie S$: Combine tuples from $R$ and $S$ that agree on all common attributes.
 
-$$R \bowtie S = \pi_{R \cup S}(\sigma_{R.\mathrm{common = S.\mathrm{common}(R \times S))$$
+$$R \bowtie S = \pi_◆LB◆R \cup S◆RB◆(\sigma_◆LB◆R.\mathrm◆LB◆common = S.\mathrm◆LB◆common◆RB◆(R \times S))$$
 
-**Theta join** $R \bowtie_{\theta} S$: $\sigma_{\theta}(R \times S)$.
+**Theta join** $R \bowtie_◆LB◆\theta◆RB◆ S$: $\sigma_◆LB◆\theta◆RB◆(R \times S)$.
 
-**Equi-join** $R \bowtie_{R.A = S.B} S$: A theta join where $\theta$ is an equality on specific
+**Equi-join** $R \bowtie_◆LB◆R.A = S.B◆RB◆ S$: A theta join where $\theta$ is an equality on specific
 Attributes. Keeps both join columns.
 
-**Left outer join** $R \bowtie_{\mathrm{left} S$: All tuples from $R$Matched with $S$ where
+**Left outer join** $R \bowtie_◆LB◆\mathrm◆LB◆left◆RB◆ S$: All tuples from $R$Matched with $S$ where
 possible; `NULL`-padded otherwise.
 
-**Right outer join** $R \bowtie_{\mathrm{right} S$: All tuples from $S$Matched with $R$.
+**Right outer join** $R \bowtie_◆LB◆\mathrm◆LB◆right◆RB◆ S$: All tuples from $S$Matched with $R$.
 
-**Full outer join** $R \bowtie_{\mathrm{full} S$: All tuples from both $R$ and $S$.
+**Full outer join** $R \bowtie_◆LB◆\mathrm◆LB◆full◆RB◆ S$: All tuples from both $R$ and $S$.
 
-**Division** $R \div S$: Tuples $t$ in $\pi_{R-S}(R)$ such that for every tuple
+**Division** $R \div S$: Tuples $t$ in $\pi_◆LB◆R-S◆RB◆(R)$ such that for every tuple
 $s \in S$$(t, s)
 \in R$.
 
-$$R \div S = \pi_{R-S}(R) - \pi_{R-S}\Bigl(\bigl(\pi_{R-S}(R) \times S\bigr) - R\Bigr)$$
+$$R \div S = \pi_◆LB◆R-S◆RB◆(R) - \pi_◆LB◆R-S◆RB◆\Bigl(\bigl(\pi_◆LB◆R-S◆RB◆(R) \times S\bigr) - R\Bigr)$$
 
 **Example.** Find students who have taken **all** courses:
 
-$$\pi_{\mathrm{sid, \mathrm{cid}(\mathrm{Takes) \div \pi_{\mathrm{cid}(\mathrm{Course)$$
+$$\pi_◆LB◆\mathrm◆LB◆sid, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes) \div \pi_◆LB◆\mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Course)$$
 
 <details>
 <summary>Worked Example 2.1: Complex Relational Algebra Query</summary>
@@ -172,23 +172,23 @@ department.
 
 **Step 1.** Get CS course IDs:
 
-$$C_{\mathrm{CS} = \pi_{\mathrm{cid}\bigl(\sigma_{\mathrm{dept = \mathrm{'CS'}(\mathrm{Course)\bigr)$$
+$$C_◆LB◆\mathrm◆LB◆CS◆RB◆ = \pi_◆LB◆\mathrm◆LB◆cid◆RB◆\bigl(\sigma_◆LB◆\mathrm◆LB◆dept = \mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course)\bigr)$$
 
 **Step 2.** Get student-course pairs from enrolments:
 
-$$T = \pi_{\mathrm{sid, \mathrm{cid}(\mathrm{Takes)$$
+$$T = \pi_◆LB◆\mathrm◆LB◆sid, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes)$$
 
 **Step 3.** Students who have taken all CS courses (division):
 
-$$S_{\mathrm{all} = T \div C_{\mathrm{CS}$$
+$$S_◆LB◆\mathrm◆LB◆all◆RB◆ = T \div C_◆LB◆\mathrm◆LB◆CS◆RB◆$$
 
 **Step 4.** Get names:
 
-$$\pi_{\mathrm{name}(S_{\mathrm{all} \bowtie \mathrm{Student)$$
+$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆(S_◆LB◆\mathrm◆LB◆all◆RB◆ \bowtie \mathrm◆LB◆Student)$$
 
 **Combined:**
 
-$$\pi_{\mathrm{name}\Bigl(\bigl(\pi_{\mathrm{sid, \mathrm{cid}(\mathrm{Takes) \div \pi_{\mathrm{cid}(\sigma_{\mathrm{dept=\mathrm{'CS'}(\mathrm{Course))\bigr) \bowtie \mathrm{Student\Bigr)$$
+$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆\Bigl(\bigl(\pi_◆LB◆\mathrm◆LB◆sid, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes) \div \pi_◆LB◆\mathrm◆LB◆cid◆RB◆(\sigma_◆LB◆\mathrm◆LB◆dept=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course))\bigr) \bowtie \mathrm◆LB◆Student\Bigr)$$
 
 </details>
 
@@ -200,11 +200,11 @@ have Taken no CS courses (count should be 0).
 
 **Step 1.** Filter enrolments to CS courses:
 
-$$E_{\mathrm{CS} = \pi_{\mathrm{sid, \mathrm{cid}\bigl(\mathrm{Takes \bowtie \sigma_{\mathrm{dept=\mathrm{'CS'}(\mathrm{Course)\bigr)$$
+$$E_◆LB◆\mathrm◆LB◆CS◆RB◆ = \pi_◆LB◆\mathrm◆LB◆sid, \mathrm◆LB◆cid◆RB◆\bigl(\mathrm◆LB◆Takes \bowtie \sigma_◆LB◆\mathrm◆LB◆dept=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course)\bigr)$$
 
 **Step 2.** Left outer join with Student to include those with no CS courses:
 
-$$\mathrm{Result = \mathrm{Student \bowtie_{\mathrm{left} E_{\mathrm{CS}$$
+$$\mathrm◆LB◆Result = \mathrm◆LB◆Student \bowtie_◆LB◆\mathrm◆LB◆left◆RB◆ E_◆LB◆\mathrm◆LB◆CS◆RB◆$$
 
 Note: aggregation over outer join results handles `NULL` values (they are excluded from `COUNT`).
 
@@ -225,18 +225,18 @@ GROUP BY S.sid, S.name;
 **Tuple relational calculus.** A query has the form $\\{t \mid P(t)\\}$ where $t$ is a tuple
 variable And $P$ is a well-formed formula. The formula is built from:
 
-- Atoms: $t \in R$ (tuple $t$ is in relation $R$), $t[A] \mathbin{\mathrm{op} s[A]$ (comparison),
-  $t[A] \mathbin{\mathrm{op} c$ (comparison with constant), where
-  $\mathrm{op \in \\{=, \neq, \lt, \gt, \le, \ge\\}$.
+- Atoms: $t \in R$ (tuple $t$ is in relation $R$), $t[A] \mathbin◆LB◆\mathrm◆LB◆op◆RB◆ s[A]$ (comparison),
+  $t[A] \mathbin◆LB◆\mathrm◆LB◆op◆RB◆ c$ (comparison with constant), where
+  $\mathrm◆LB◆op \in \\{=, \neq, \lt, \gt, \le, \ge\\}$.
 - Logical connectives: $\land$ (and), $\lor$ (or), $\lnot$ (not).
 - Quantifiers: $\exists t$ (there exists), $\forall t$ (for all).
 
-$$\{t \mid \exists s \in \mathrm{Takes(t[\mathrm{name] = s[\mathrm{name] \land s[\mathrm{grade] = \mathrm{'A')\}$$
+$$\{t \mid \exists s \in \mathrm◆LB◆Takes(t[\mathrm◆LB◆name] = s[\mathrm◆LB◆name] \land s[\mathrm◆LB◆grade] = \mathrm◆LB◆'A')\}$$
 
 **Domain relational calculus.** Variables range over individual attribute domains (not entire
 tuples). A query has the form $\\{\langle x_1, \ldots, x_k \rangle \mid P(x_1, \ldots, x_k)\\}$.
 
-$$\{ \langle n \rangle \mid \exists s, g \;(\mathrm{Takes(s, \mathrm{'CS101', g) \land \mathrm{Student(s, n, \ldots) \land g = \mathrm{'A')\}$$
+$$\{ \langle n \rangle \mid \exists s, g \;(\mathrm◆LB◆Takes(s, \mathrm◆LB◆'CS101', g) \land \mathrm◆LB◆Student(s, n, \ldots) \land g = \mathrm◆LB◆'A')\}$$
 
 **Safety.** A calculus expression is **safe** if it yields a finite relation. The expression
 $\\{t \mid \lnot(t \in R)\\}$ is unsafe (it includes every tuple not in $R$An infinite set). We
@@ -252,11 +252,11 @@ Equally expressive: every query expressible in one is expressible in the other.
 
 Using tuple relational calculus:
 
-$$\{t \mid t \in \mathrm{Student \land \lnot \exists s \in \mathrm{Takes\bigl(s[\mathrm{sid] = t[\mathrm{sid] \land \exists c \in \mathrm{Course(c[\mathrm{cid] = s[\mathrm{cid] \land c[\mathrm{dept] = \mathrm{'CS')\bigr)\}$$
+$$\{t \mid t \in \mathrm◆LB◆Student \land \lnot \exists s \in \mathrm◆LB◆Takes\bigl(s[\mathrm◆LB◆sid] = t[\mathrm◆LB◆sid] \land \exists c \in \mathrm◆LB◆Course(c[\mathrm◆LB◆cid] = s[\mathrm◆LB◆cid] \land c[\mathrm◆LB◆dept] = \mathrm◆LB◆'CS')\bigr)\}$$
 
 **Translation to relational algebra:**
 
-$$\pi_{\mathrm{name}(\mathrm{Student) - \pi_{\mathrm{name}(\mathrm{Student \bowtie \mathrm{Takes \bowtie \sigma_{\mathrm{dept=\mathrm{'CS'}(\mathrm{Course))$$
+$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆(\mathrm◆LB◆Student) - \pi_◆LB◆\mathrm◆LB◆name◆RB◆(\mathrm◆LB◆Student \bowtie \mathrm◆LB◆Takes \bowtie \sigma_◆LB◆\mathrm◆LB◆dept=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course))$$
 
 </details>
 
@@ -266,31 +266,31 @@ The following rules allow the optimiser to transform queries without changing th
 rule States that two expressions produce the same relation for any input relations.
 
 **Rule 1 (Cascade of selections).**
-$\sigma_{\theta_1 \land \theta_2}(R) \equiv \sigma_{\theta_1}(\sigma_{\theta_2}(R))$.
+$\sigma_◆LB◆\theta_1 \land \theta_2◆RB◆(R) \equiv \sigma_◆LB◆\theta_1◆RB◆(\sigma_◆LB◆\theta_2◆RB◆(R))$.
 
 _Proof._ A tuple satisfies $\theta_1 \land \theta_2$ if and only if it satisfies both $\theta_1$ and
-$\theta_2$. Applying $\sigma_{\theta_2}$ first removes tuples failing $\theta_2$; then
-$\sigma_{\theta_1}$ removes tuples failing $\theta_1$ among the remainder. The result is exactly the
+$\theta_2$. Applying $\sigma_◆LB◆\theta_2◆RB◆$ first removes tuples failing $\theta_2$; then
+$\sigma_◆LB◆\theta_1◆RB◆$ removes tuples failing $\theta_1$ among the remainder. The result is exactly the
 Tuples satisfying both conditions. $\blacksquare$
 
 **Rule 2 (Commutativity of selections).**
-$\sigma_{\theta_1}(\sigma_{\theta_2}(R)) \equiv \sigma_{\theta_2}(\sigma_{\theta_1}(R))$.
+$\sigma_◆LB◆\theta_1◆RB◆(\sigma_◆LB◆\theta_2◆RB◆(R)) \equiv \sigma_◆LB◆\theta_2◆RB◆(\sigma_◆LB◆\theta_1◆RB◆(R))$.
 
 _Proof._ Immediate from the commutativity of logical conjunction
 ($\theta_1 \land \theta_2 \equiv
 \theta_2 \land \theta_1$). $\blacksquare$
 
 **Rule 3 (Selection pushdown through cross product).** If $\theta$ involves only attributes of $R$
-Then $\sigma_{\theta}(R \times S) \equiv \sigma_{\theta}(R) \times S$.
+Then $\sigma_◆LB◆\theta◆RB◆(R \times S) \equiv \sigma_◆LB◆\theta◆RB◆(R) \times S$.
 
 _Proof._ For each pair $(r, s)$ with $r \in R$ and $s \in S$The condition $\theta$ depends only on
 $r$. Filtering $(r, s)$ by $\theta$ on $R \times S$ is equivalent to first filtering $R$ by $\theta$
 And then forming the cross product, since $s$ does not affect the result of $\theta$. $\blacksquare$
 
 **Rule 4 (Selection pushdown through join).** If $\theta$ involves only attributes of $R$Then
-$\sigma_{\theta}(R \bowtie S) \equiv \sigma_{\theta}(R) \bowtie S$.
+$\sigma_◆LB◆\theta◆RB◆(R \bowtie S) \equiv \sigma_◆LB◆\theta◆RB◆(R) \bowtie S$.
 
-_Proof._ The join $R \bowtie S$ combines matching pairs from $R$ and $S$. Applying $\sigma_{\theta}$
+_Proof._ The join $R \bowtie S$ combines matching pairs from $R$ and $S$. Applying $\sigma_◆LB◆\theta◆RB◆$
 After the join filters these pairs by $\theta$ on $R$'s attributes. Filtering $R$ first removes
 Non-matching $R$-tuples before the join, yielding the same final set of pairs. $\blacksquare$
 
@@ -305,7 +305,7 @@ _Proof._ Both expressions produce tuples from $R \times S \times T$ that agree o
 Shared by any pair of the three relations. $\blacksquare$
 
 **Rule 7 (Projection pushdown).** If $L_1 \subseteq L_2$ and $L_2$ includes all attributes used in
-Join conditions, then $\pi_{L_1}(R \bowtie S) \equiv \pi_{L_1}(\pi_{L_2}(R) \bowtie \pi_{L_2}(S))$.
+Join conditions, then $\pi_◆LB◆L_1◆RB◆(R \bowtie S) \equiv \pi_◆LB◆L_1◆RB◆(\pi_◆LB◆L_2◆RB◆(R) \bowtie \pi_◆LB◆L_2◆RB◆(S))$.
 
 _Proof._ Projecting after the join retains only attributes in $L_1$. Since $L_2$ includes all
 Attributes needed for the join, performing the join on projected versions of $R$ and $S$ yields the
@@ -738,7 +738,7 @@ A decomposition of $R$ into $R_1, R_2, \ldots, R_k$ must satisfy:
 **Theorem 4.3 (Lossless-join test).** A decomposition of $R$ into $R_1, R_2$ is lossless if and Only
 if $R_1 \cap R_2 \to R_1$ or $R_1 \cap R_2 \to R_2$.
 
-_Proof._ Let $r$ be an instance of $R$ and let $r_1 = \pi_{R_1}(r)$$r_2 = \pi_{R_2}(r)$. We must
+_Proof._ Let $r$ be an instance of $R$ and let $r_1 = \pi_◆LB◆R_1◆RB◆(r)$$r_2 = \pi_◆LB◆R_2◆RB◆(r)$. We must
 Show $r = r_1 \bowtie r_2$ under the given condition. Since $r_1$ and $r_2$ are projections of $r$
 Every tuple in $r_1 \bowtie r_2$ agrees with some tuple of $r$ on every attribute. It suffices to
 show That no spurious tuple is produced. Suppose $(t_1, t_2) \in r_1 \bowtie r_2$ where
@@ -752,7 +752,7 @@ Similarly $t'[R_2] = t_2[R_2]$. Thus $(t_1, t_2)$ corresponds to a real tuple $t
 spurious tuple exists. $\blacksquare$
 
 **Dependency preservation.** Let $F$ be the set of FDs for $R$. The decomposition $R_1, \ldots, R_k$
-Preserves dependencies if the **closure** of $\bigcup_{i=1}^{k} F_i^+$ (where $F_i$ is the
+Preserves dependencies if the **closure** of $\bigcup_◆LB◆i=1◆RB◆^◆LB◆k◆RB◆ F_i^+$ (where $F_i$ is the
 restriction Of $F$ to $R_i$) equals $F^+$. In practice, we check that every FD in a minimal cover of
 $F$ can be Tested within a single $R_i$.
 
@@ -762,44 +762,44 @@ DBMS can verify relevant FDs locally without joining all decomposed relations.
 ### 4.4 Normalisation Examples
 
 **Example 1.** `Enrolment(StudentID, CourseID, StudentName, Dept, Grade)` with FDs:
-$\mathrm{StudentID \to \mathrm{StudentName$$\mathrm{StudentID \to \mathrm{Dept$
-$\\{\mathrm{StudentID, \mathrm{CourseID\\} \to \mathrm{Grade$.
+$\mathrm◆LB◆StudentID \to \mathrm◆LB◆StudentName$$\mathrm◆LB◆StudentID \to \mathrm◆LB◆Dept$
+$\\{\mathrm◆LB◆StudentID, \mathrm◆LB◆CourseID\\} \to \mathrm◆LB◆Grade$.
 
-- Candidate key: $\\{\mathrm{StudentID, \mathrm{CourseID\\}$.
+- Candidate key: $\\{\mathrm◆LB◆StudentID, \mathrm◆LB◆CourseID\\}$.
 - 1NF: satisfied (atomic values).
-- 2NF violation: $\mathrm{StudentID \to \mathrm{StudentName$ is a partial dependency (StudentID is a
+- 2NF violation: $\mathrm◆LB◆StudentID \to \mathrm◆LB◆StudentName$ is a partial dependency (StudentID is a
   proper subset of the key).
 - Decompose: `Student(StudentID, StudentName, Dept)` and `Enrolment(StudentID, CourseID, Grade)`.
   Both are in 3NF and BCNF.
 
 **Example 2 (3NF but not BCNF).** `CourseOffering(Course, Instructor, Room, Time)` with FDs:
-$\\{\mathrm{Course, \mathrm{Time\\} \to \\{\mathrm{Instructor, \mathrm{Room\\}$
-$\mathrm{Instructor \to \mathrm{Room$.
+$\\{\mathrm◆LB◆Course, \mathrm◆LB◆Time\\} \to \\{\mathrm◆LB◆Instructor, \mathrm◆LB◆Room\\}$
+$\mathrm◆LB◆Instructor \to \mathrm◆LB◆Room$.
 
-- Candidate key: $\\{\mathrm{Course, \mathrm{Time\\}$.
-- 3NF: $\mathrm{Instructor \to \mathrm{Room$ -- Instructor is not a superkey, but Room is not prime.
+- Candidate key: $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Time\\}$.
+- 3NF: $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Room$ -- Instructor is not a superkey, but Room is not prime.
   Wait -- Room is **not** prime (not in any candidate key). So this actually violates 3NF too.
 
 Let us correct: `CourseOffering(Course, Instructor, Textbook)` with FDs:
-$\mathrm{Course \to \mathrm{Instructor$ $\mathrm{Instructor \to \mathrm{Textbook$.
+$\mathrm◆LB◆Course \to \mathrm◆LB◆Instructor$ $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Textbook$.
 
-- Candidate key: $\\{\mathrm{Course\\}$ (since Course determines everything transitively).
-- 3NF: $\mathrm{Instructor \to \mathrm{Textbook$. Instructor is not a superkey. Textbook is not
+- Candidate key: $\\{\mathrm◆LB◆Course\\}$ (since Course determines everything transitively).
+- 3NF: $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Textbook$. Instructor is not a superkey. Textbook is not
   prime. Violates 3NF.
 
 Better example. `Class(Course, Instructor, Student)` with FDs:
-$\\{\mathrm{Course, \mathrm{Student\\} \to \mathrm{Instructor$
-$\mathrm{Instructor \to \mathrm{Course$.
+$\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\} \to \mathrm◆LB◆Instructor$
+$\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$.
 
 - Candidate keys:
-  $\\{\mathrm{Course, \mathrm{Student\\}$$\\{\mathrm{Instructor, \mathrm{Student\\}$.
-- 3NF check for $\mathrm{Instructor \to \mathrm{Course$: Instructor is not a superkey. But Course
-  **is** prime (in candidate key $\\{\mathrm{Course, \mathrm{Student\\}$). So 3NF is satisfied.
-- BCNF check: $\mathrm{Instructor \to \mathrm{Course$ violates BCNF (Instructor is not a superkey).
+  $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$$\\{\mathrm◆LB◆Instructor, \mathrm◆LB◆Student\\}$.
+- 3NF check for $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$: Instructor is not a superkey. But Course
+  **is** prime (in candidate key $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$). So 3NF is satisfied.
+- BCNF check: $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$ violates BCNF (Instructor is not a superkey).
 
 Decompose: `Teaches(Instructor, Course)` and `Attends(Instructor, Student)`. This is lossless
-($\mathrm{Instructor$ is common and $\mathrm{Instructor \to \mathrm{Course$ holds in `Teaches`). But
-the dependency $\\{\mathrm{Course, \mathrm{Student\\} \to \mathrm{Instructor$ is Not preserved.
+($\mathrm◆LB◆Instructor$ is common and $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$ holds in `Teaches`). But
+the dependency $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\} \to \mathrm◆LB◆Instructor$ is Not preserved.
 
 **Theorem 4.4.** Not every relation can be decomposed into BCNF while preserving dependencies. 3NF
 Is the strongest normal form guaranteeing dependency-preserving, lossless-join decomposition.
@@ -845,23 +845,23 @@ $ED^+ \cap R_2 = \\{A, D, E\\}
 \neq R_2$, $ED$ is not a superkey.
 
 But wait -- there are no other non-trivial FDs in $R_2$. The only one is $ED \to A$Which violates
-BCNF. Decompose: $R_{2a} = \\{E, D, A\\}$ and
-$R_{2b} = \\{A, C, D, E\\} \setminus \\{E, D, A\\} =
+BCNF. Decompose: $R_◆LB◆2a◆RB◆ = \\{E, D, A\\}$ and
+$R_◆LB◆2b◆RB◆ = \\{A, C, D, E\\} \setminus \\{E, D, A\\} =
 \\{C\\}$.
 
 Hmm, $\\{C\\}$ alone is a relation with no non-trivial FDs, so it is in BCNF.
-$R_{2a} = \\{E, D, A\\}$ With $ED \to A$: $ED$ is a superkey (it determines all three attributes).
+$R_◆LB◆2a◆RB◆ = \\{E, D, A\\}$ With $ED \to A$: $ED$ is a superkey (it determines all three attributes).
 BCNF.
 
-**Final decomposition:** $R_1 = \\{A, B\\}$$R_{2a} = \\{A, D, E\\}$$R_{2b} = \\{C\\}$.
+**Final decomposition:** $R_1 = \\{A, B\\}$$R_◆LB◆2a◆RB◆ = \\{A, D, E\\}$$R_◆LB◆2b◆RB◆ = \\{C\\}$.
 
-**Lossless check:** $R_1 \cap R_{2a} = \\{A\\}$$A \to B$ (from $F$), so $R_1 \bowtie R_{2a}$ is
-lossless. $R_{2a} \cap R_{2b} = \varnothing$... This is problematic. $R_{2b} = \\{C\\}$ shares no
+**Lossless check:** $R_1 \cap R_◆LB◆2a◆RB◆ = \\{A\\}$$A \to B$ (from $F$), so $R_1 \bowtie R_◆LB◆2a◆RB◆$ is
+lossless. $R_◆LB◆2a◆RB◆ \cap R_◆LB◆2b◆RB◆ = \varnothing$... This is problematic. $R_◆LB◆2b◆RB◆ = \\{C\\}$ shares no
 attributes with The others.
 
 The issue is that $C$ is a "dangling" attribute. This is correct -- $C$ appears only in the key $BC$
 Of the original relation but is not functionally determined by anything except the full key. The
-Decomposition is technically correct but $R_{2b} = \\{C\\}$ by itself cannot be joined losslessly
+Decomposition is technically correct but $R_◆LB◆2b◆RB◆ = \\{C\\}$ by itself cannot be joined losslessly
 with The others.
 
 This illustrates a limitation of BCNF decomposition: it may produce a relation with no common
@@ -906,8 +906,8 @@ Decompose into $R_1 = X \cup Y$ and $R_2 = R - Y$. The decomposition is lossless
 **Relation:** `CourseInstructor(Course, Instructor, Textbook)` where each course can have multiple
 Instructors and multiple textbooks, independently.
 
-MVDs: $\mathrm{Course \twoheadrightarrow \mathrm{Instructor$
-$\mathrm{Course \twoheadrightarrow \mathrm{Textbook$.
+MVDs: $\mathrm◆LB◆Course \twoheadrightarrow \mathrm◆LB◆Instructor$
+$\mathrm◆LB◆Course \twoheadrightarrow \mathrm◆LB◆Textbook$.
 
 **Sample data:**
 
@@ -920,13 +920,13 @@ $\mathrm{Course \twoheadrightarrow \mathrm{Textbook$.
 
 The redundancy is clear: each instructor-textbook pair is repeated for each course.
 
-**4NF check:** $\mathrm{Course \twoheadrightarrow \mathrm{Instructor$ is non-trivial, and
-$\mathrm{Course$ is not a superkey. Violates 4NF.
+**4NF check:** $\mathrm◆LB◆Course \twoheadrightarrow \mathrm◆LB◆Instructor$ is non-trivial, and
+$\mathrm◆LB◆Course$ is not a superkey. Violates 4NF.
 
 **Decompose:**
 
-- `CI(Course, Instructor)` with MVD $\mathrm{Course \twoheadrightarrow \mathrm{Instructor$
-- `CT(Course, Textbook)` with MVD $\mathrm{Course \twoheadrightarrow \mathrm{Textbook$
+- `CI(Course, Instructor)` with MVD $\mathrm◆LB◆Course \twoheadrightarrow \mathrm◆LB◆Instructor$
+- `CT(Course, Textbook)` with MVD $\mathrm◆LB◆Course \twoheadrightarrow \mathrm◆LB◆Textbook$
 
 Both are in 4NF (the determining attribute `Course` is a candidate key in each).
 
@@ -1119,9 +1119,9 @@ AND/OR for multi-criteria queries.
 
 | Query                   | Bitmap operation                                      |
 | ----------------------- | ----------------------------------------------------- |
-| $A = v_1$ AND $B = v_2$ | $\mathrm{bitmap_{A,v_1}$ AND $\mathrm{bitmap_{B,v_2}$ |
-| $A = v_1$ OR $A = v_2$  | $\mathrm{bitmap_{A,v_1}$ OR $\mathrm{bitmap_{A,v_2}$  |
-| $A \neq v_1$            | NOT $\mathrm{bitmap_{A,v_1}$                          |
+| $A = v_1$ AND $B = v_2$ | $\mathrm◆LB◆bitmap_◆LB◆A,v_1◆RB◆$ AND $\mathrm◆LB◆bitmap_◆LB◆B,v_2◆RB◆$ |
+| $A = v_1$ OR $A = v_2$  | $\mathrm◆LB◆bitmap_◆LB◆A,v_1◆RB◆$ OR $\mathrm◆LB◆bitmap_◆LB◆A,v_2◆RB◆$  |
+| $A \neq v_1$            | NOT $\mathrm◆LB◆bitmap_◆LB◆A,v_1◆RB◆$                          |
 
 **Compression.** For columns with many distinct values, run-length encoding (WAH or BBC) compresses
 Bitmaps effectively while still supporting bitwise operations.
@@ -1137,7 +1137,7 @@ buffer Pool has $B$ pages and each disk page access costs one I/O.
 | ----------------------- | --------------------------------------------------------- |
 | Full table scan         | $\lceil n_R / B \rceil$ (or $n_R$ if $B$ pages available) |
 | B+ tree equality search | $\log_f(n_R)$ leaf + 1 data page                          |
-| B+ tree range search    | $\log_f(n_R)$ leaf + $\lvert\mathrm{range pages\rvert$    |
+| B+ tree range search    | $\log_f(n_R)$ leaf + $\lvert\mathrm◆LB◆range pages\rvert$    |
 | Hash equality search    | 1 (ideal)                                                 |
 
 Where $f$ is the fanout (average number of children per internal node).
@@ -1147,7 +1147,7 @@ Where $f$ is the fanout (average number of children per internal node).
 | Algorithm         | Cost                                                      |
 | ----------------- | --------------------------------------------------------- |
 | Block nested-loop | $n_R + \lceil n_R/(B-2)\rceil \cdot n_S$                  |
-| Sort-merge        | $2n_R \log_{B-1}(n_R) + 2n_S \log_{B-1}(n_S) + n_R + n_S$ |
+| Sort-merge        | $2n_R \log_◆LB◆B-1◆RB◆(n_R) + 2n_S \log_◆LB◆B-1◆RB◆(n_S) + n_R + n_S$ |
 | Hash join         | $3(n_R + n_S)$ (if build relation fits in $B$ pages)      |
 
 <details>
@@ -1411,7 +1411,7 @@ with a Midpoint insertion strategy to avoid scan pollution.
 
 ### 7.1 Query Processing Pipeline
 
-$$\mathrm{SQL \xrightarrow{\mathrm{parse} \mathrm{AST \xrightarrow{\mathrm{rewrite} \mathrm{Logical plan \xrightarrow{\mathrm{optimise} \mathrm{Physical plan \xrightarrow{\mathrm{execute} \mathrm{Result$$
+$$\mathrm◆LB◆SQL \xrightarrow◆LB◆\mathrm◆LB◆parse◆RB◆ \mathrm◆LB◆AST \xrightarrow◆LB◆\mathrm◆LB◆rewrite◆RB◆ \mathrm◆LB◆Logical plan \xrightarrow◆LB◆\mathrm◆LB◆optimise◆RB◆ \mathrm◆LB◆Physical plan \xrightarrow◆LB◆\mathrm◆LB◆execute◆RB◆ \mathrm◆LB◆Result$$
 
 ### 7.2 Cost-Based Optimisation
 
@@ -1423,7 +1423,7 @@ Dominates.
 **Catalog statistics:** Table cardinality ($n$), attribute value cardinality, number of distinct
 Values, histogram of value distribution, index information.
 
-**Selectivity estimation.** For a predicate $\sigma_{A = v}(R)$The selectivity is approximately
+**Selectivity estimation.** For a predicate $\sigma_◆LB◆A = v◆RB◆(R)$The selectivity is approximately
 $1 / V(A, R)$ where $V(A, R)$ is the number of distinct values of $A$ in $R$.
 
 | Predicate type              | Selectivity estimate                             |
@@ -1437,31 +1437,31 @@ $1 / V(A, R)$ where $V(A, R)$ is the number of distinct values of $A$ in $R$.
 
 **Nested-loop join.** For each tuple in $R$Scan all of $S$.
 
-$$\mathrm{Cost = n_R \cdot n_S \mathrm{ page accesses (worst case)$$
+$$\mathrm◆LB◆Cost = n_R \cdot n_S \mathrm◆LB◆ page accesses (worst case)$$
 
 If one relation fits in memory, buffer it and scan the other: cost = $n_R + n_S$.
 
 **Block nested-loop join.** Use $B$ buffer pages. Load blocks of $R$ into $B - 2$ buffers, scan $S$
 With the remaining buffer.
 
-$$\mathrm{Cost = n_R + \lceil n_R / (B - 2) \rceil \cdot n_S$$
+$$\mathrm◆LB◆Cost = n_R + \lceil n_R / (B - 2) \rceil \cdot n_S$$
 
 **Sort-merge join.** Sort both relations on the join attribute, then merge.
 
-$$\mathrm{Cost = 2 \cdot n_R \cdot \log_{B-1}(n_R) + 2 \cdot n_S \cdot \log_{B-1}(n_S) + n_R + n_S$$
+$$\mathrm◆LB◆Cost = 2 \cdot n_R \cdot \log_◆LB◆B-1◆RB◆(n_R) + 2 \cdot n_S \cdot \log_◆LB◆B-1◆RB◆(n_S) + n_R + n_S$$
 
 Efficient for large relations, especially when both are already sorted.
 
 **Hash join.** Build a hash table on the smaller relation (build phase), then probe with the larger
 (probe phase).
 
-$$\mathrm{Cost = 3 \cdot (n_R + n_S) \mathrm{ (if build relation fits in memory)$$
+$$\mathrm◆LB◆Cost = 3 \cdot (n_R + n_S) \mathrm◆LB◆ (if build relation fits in memory)$$
 
 Best for equi-joins when one relation fits in memory.
 
 **Index nested-loop join.** For each tuple in $R$Use an index on $S$ to find matching tuples.
 
-$$\mathrm{Cost = n_R \cdot (\mathrm{index lookup cost)$$
+$$\mathrm◆LB◆Cost = n_R \cdot (\mathrm◆LB◆index lookup cost)$$
 
 Efficient if $S$ has an index on the join attribute and $n_R$ is small.
 
@@ -1762,7 +1762,7 @@ reader returns the most recent version among the 3 responses.
    $\\{D\\}^+$.
 
 5. Given `R(A, B, C)` with tuples $\\{(1,2,3), (1,2,4), (1,3,5), (2,2,3), (2,3,4)\\}$ and `S(B, C)`
-   with tuples $\\{(2,3), (3,5)\\}$: (a) Compute $\sigma_{B=2}(R)$. (b) Compute $R \bowtie S$. (c)
+   with tuples $\\{(2,3), (3,5)\\}$: (a) Compute $\sigma_◆LB◆B=2◆RB◆(R)$. (b) Compute $R \bowtie S$. (c)
    Compute $R \div S$.
 
 6. Express the following query in relational algebra: "Find the names of students who have enrolled

@@ -19,14 +19,14 @@ slug: databases-advanced
 Beyond the basic operations (selection, projection, join, etc.), extended relational algebra
 includes:
 
-**Grouping and aggregation:** $\gamma_{F}(R)$ where $F$ is a list of aggregate functions and
+**Grouping and aggregation:** $\gamma_◆LB◆F◆RB◆(R)$ where $F$ is a list of aggregate functions and
 grouping attributes.
 
-$$\gamma_{\text{dept, \text{AVG(salary) \to \text{avg\_sal}(\text{Employee)$$
+$$\gamma_◆LB◆\text◆LB◆dept, \text◆LB◆AVG(salary) \to \text◆LB◆avg\_sal◆RB◆(\text◆LB◆Employee)$$
 
 **Generalised projection:** Allows arithmetic expressions in the projection list.
 
-$$\pi_{\text{name, \text{salary \times 12 \to \text{annual}(\text{Employee)$$
+$$\pi_◆LB◆\text◆LB◆name, \text◆LB◆salary \times 12 \to \text◆LB◆annual◆RB◆(\text◆LB◆Employee)$$
 
 **Outer join:** Preserves unmatched tuples from one or both relations.
 
@@ -41,7 +41,7 @@ Datalog.
 
 **Theorem 1.1.** Division can be expressed using basic relational algebra:
 
-$$R \div S = \pi_{A}(R) - \pi_{A}\left(\pi_{A}(R) \times S - R\right)$$
+$$R \div S = \pi_◆LB◆A◆RB◆(R) - \pi_◆LB◆A◆RB◆\left(\pi_◆LB◆A◆RB◆(R) \times S - R\right)$$
 
 Where $A$ is the set of attributes of $R$ not in $S$.
 
@@ -60,24 +60,24 @@ $(t, s) \notin R$. This means for every $s \in S$$(t, s) \in R$So $t \in R \div 
 Find students who have taken **all** courses offered by the CS department.
 
 $R$ = (student, course) pairs from Enrolment. $S$ = courses offered by CS department:
-$\pi_{\text{course}(\sigma_{\text{dept=\text{'CS'}(\text{Course))$.
+$\pi_◆LB◆\text◆LB◆course◆RB◆(\sigma_◆LB◆\text◆LB◆dept=\text◆LB◆'CS'◆RB◆(\text◆LB◆Course))$.
 
 $R \div S$ gives the students enrolled in every CS course.
 
 Example:
-$R = \{(\text{Alice, \text{CS101), (\text{Alice, \text{CS201), (\text{Bob, \text{CS101), (\text{Carol, \text{CS101), (\text{Carol, \text{CS201)\}$
+$R = \{(\text◆LB◆Alice, \text◆LB◆CS101), (\text◆LB◆Alice, \text◆LB◆CS201), (\text◆LB◆Bob, \text◆LB◆CS101), (\text◆LB◆Carol, \text◆LB◆CS101), (\text◆LB◆Carol, \text◆LB◆CS201)\}$
 
-$S = \{\text{CS101, \text{CS201\}$
+$S = \{\text◆LB◆CS101, \text◆LB◆CS201\}$
 
-$\pi_A(R) = \{\text{Alice, \text{Bob, \text{Carol\}$
+$\pi_A(R) = \{\text◆LB◆Alice, \text◆LB◆Bob, \text◆LB◆Carol\}$
 
-$\pi_A(R) \times S = \{(\text{Alice, \text{CS101), (\text{Alice, \text{CS201), (\text{Bob, \text{CS101), (\text{Bob, \text{CS201), (\text{Carol, \text{CS101), (\text{Carol, \text{CS201)\}$
+$\pi_A(R) \times S = \{(\text◆LB◆Alice, \text◆LB◆CS101), (\text◆LB◆Alice, \text◆LB◆CS201), (\text◆LB◆Bob, \text◆LB◆CS101), (\text◆LB◆Bob, \text◆LB◆CS201), (\text◆LB◆Carol, \text◆LB◆CS101), (\text◆LB◆Carol, \text◆LB◆CS201)\}$
 
-$\pi_A(R) \times S - R = \{(\text{Bob, \text{CS201)\}$
+$\pi_A(R) \times S - R = \{(\text◆LB◆Bob, \text◆LB◆CS201)\}$
 
-$\pi_A(\pi_A(R) \times S - R) = \{\text{Bob\}$
+$\pi_A(\pi_A(R) \times S - R) = \{\text◆LB◆Bob\}$
 
-$R \div S = \{\text{Alice, \text{Carol\} - \{\text{Bob\} = \{\text{Alice, \text{Carol\}$
+$R \div S = \{\text◆LB◆Alice, \text◆LB◆Carol\} - \{\text◆LB◆Bob\} = \{\text◆LB◆Alice, \text◆LB◆Carol\}$
 
 Alice and Carol have taken all CS courses. Bob has not taken CS201.
 
@@ -97,9 +97,9 @@ equivalences.
 3. **Join reordering:** $R \bowtie S = S \bowtie R$ (commutativity);
    $(R \bowtie S) \bowtie T = R \bowtie (S \bowtie T)$ (associativity).
 4. **Selection splitting:**
-   $\sigma_{\theta_1 \wedge \theta_2}(R) = \sigma_{\theta_1}(\sigma_{\theta_2}(R))$.
+   $\sigma_◆LB◆\theta_1 \wedge \theta_2◆RB◆(R) = \sigma_◆LB◆\theta_1◆RB◆(\sigma_◆LB◆\theta_2◆RB◆(R))$.
 5. **Cascade of selections:**
-   $\sigma_{\theta_1}(\sigma_{\theta_2}(R)) = \sigma_{\theta_1 \wedge \theta_2}(R)$.
+   $\sigma_◆LB◆\theta_1◆RB◆(\sigma_◆LB◆\theta_2◆RB◆(R)) = \sigma_◆LB◆\theta_1 \wedge \theta_2◆RB◆(R)$.
 
 **Theorem 1.2.** Selection pushdown is always beneficial: $\sigma_\theta(R \bowtie S)$ with $\theta$
 on $R$ costs $O(|R \bowtie S|)$ without pushdown but
@@ -137,7 +137,7 @@ FUNCTION(args) OVER (
 
 **Frame specification:**
 
-$$\text{ROWS | RANGE BETWEEN frame_start AND frame_end$$
+$$\text◆LB◆ROWS | RANGE BETWEEN frame_start AND frame_end$$
 
 | Frame unit            | Meaning                                                  |
 | --------------------- | -------------------------------------------------------- |
@@ -289,8 +289,8 @@ Neither (course, teacher) nor (course, textbook) is a superkey. Therefore, the r
 
 **Decomposition:**
 
-- $R_1$(course, teacher): $\{(\text{CS101, \text{Smith), (\text{CS101, \text{Jones)\}$
-- $R_2$(course, textbook): $\{(\text{CS101, \text{Knuth), (\text{CS101, \text{Cormen)\}$
+- $R_1$(course, teacher): $\{(\text◆LB◆CS101, \text◆LB◆Smith), (\text◆LB◆CS101, \text◆LB◆Jones)\}$
+- $R_2$(course, textbook): $\{(\text◆LB◆CS101, \text◆LB◆Knuth), (\text◆LB◆CS101, \text◆LB◆Cormen)\}$
 
 This avoids the redundancy: adding a new teacher only requires adding one row to $R_1$Not $n$ rows
 (one per textbook).
@@ -335,19 +335,19 @@ The optimiser estimates the cost of each query plan and chooses the cheapest one
 | $R$       |        | Number of records                                 |
 | $V(A, R)$ |        | Number of distinct values of attribute $A$ in $R$ |
 | $bfr$     |        | Blocking factor (records per block)               |
-| $f_{rt}$  |        | Fan-out of internal nodes of a B+ tree            |
+| $f_◆LB◆rt◆RB◆$  |        | Fan-out of internal nodes of a B+ tree            |
 
 **Cost estimates for selection:**
 
 | Selection type                   | Cost (blocks)                                    |
 | -------------------------------- | ------------------------------------------------ |
 | Primary key equality (B+ tree)   | $h + 1$ (tree height + leaf)                     |
-| Secondary key equality (B+ tree) | $h + \lceil n / f_{rt} \rceil$                   |
+| Secondary key equality (B+ tree) | $h + \lceil n / f_◆LB◆rt◆RB◆ \rceil$                   |
 | Linear scan                      | $\lceil R / bfr \rceil$                          |
 | Comparison on sorted file        | $\lceil \log_2 B \rceil + \lceil s / bfr \rceil$ |
 
-**Theorem 4.1.** For a selection $\sigma_{A=v}(R)$ with $V(A, R)$ distinct values, the expected cost
-of a secondary B+ tree index lookup is $\lceil R / (V(A, R) \cdot f_{rt}) \rceil + h + 1$.
+**Theorem 4.1.** For a selection $\sigma_◆LB◆A=v◆RB◆(R)$ with $V(A, R)$ distinct values, the expected cost
+of a secondary B+ tree index lookup is $\lceil R / (V(A, R) \cdot f_◆LB◆rt◆RB◆) \rceil + h + 1$.
 
 ### 4.2 Join Algorithm Costs
 
@@ -355,13 +355,13 @@ of a secondary B+ tree index lookup is $\lceil R / (V(A, R) \cdot f_{rt}) \rceil
 | ----------------- | ---------------------------------------------------- | ------------------------------ |
 | Nested-loop       | $B_r + B_r \cdot B_s$                                | Small relations, no index      |
 | Block nested-loop | $B_r + \lceil B_r / M - 1 \rceil \cdot B_s$          | $M$ blocks of memory           |
-| Index nested-loop | $B_r + R_r \cdot (\text{cost of index lookup on  S)$ | Index on join attribute of $S$ |
-| Sort-merge        | $B_r + B_s + \text{sort cost$                        | Both relations large           |
+| Index nested-loop | $B_r + R_r \cdot (\text◆LB◆cost of index lookup on  S)$ | Index on join attribute of $S$ |
+| Sort-merge        | $B_r + B_s + \text◆LB◆sort cost$                        | Both relations large           |
 | Hash join         | $3(B_r + B_s)$                                       | Equi-join, no order required   |
 
 Where $M$ is the number of available memory blocks.
 
-**Sort-merge join cost:** $O(B_r \log_{M-1} B_r + B_s \log_{M-1} B_s + B_r + B_s)$.
+**Sort-merge join cost:** $O(B_r \log_◆LB◆M-1◆RB◆ B_r + B_s \log_◆LB◆M-1◆RB◆ B_s + B_r + B_s)$.
 
 **Hash join cost:** Build phase: scan $R$ and build hash table ($B_r$ blocks read + written). Probe
 phase: scan $S$ and probe ($B_s$ blocks read). Total: approximately $3(B_r + B_s)$ (reading +
@@ -378,13 +378,13 @@ $B_r + \lceil B_r / (M-1) \rceil \cdot B_s = 2000 + \lceil 2000 / 51 \rceil \cdo
 blocks.
 
 **Sort-merge:** Sort $R$: $2 \times 2000 \times \lceil \log_2(2000/51) \rceil / 51$... More
-precisely, $O(B_r \log_{M-1} B_r) = O(2000 \log_{51} 2000) \approx O(2000 \times 1.88) = O(3760)$.
-Sort $S$: $O(500 \log_{51} 500) \approx O(500 \times 1.46) = O(730)$. Merge: $2000 + 500 = 2500$.
+precisely, $O(B_r \log_◆LB◆M-1◆RB◆ B_r) = O(2000 \log_◆LB◆51◆RB◆ 2000) \approx O(2000 \times 1.88) = O(3760)$.
+Sort $S$: $O(500 \log_◆LB◆51◆RB◆ 500) \approx O(500 \times 1.46) = O(730)$. Merge: $2000 + 500 = 2500$.
 Total: $\approx 7000$ blocks.
 
 **Hash join:** $3(2000 + 500) = 7500$ blocks. But we need $M \geq \lceil \min(B_r, B_s) \rceil$...
-Actually, we need $M \geq \sqrt{B_r + B_s}$ for the single-pass hash join.
-$\sqrt{2500} = 50 \leq 52 = M$. So single-pass hash join works.
+Actually, we need $M \geq \sqrt◆LB◆B_r + B_s◆RB◆$ for the single-pass hash join.
+$\sqrt◆LB◆2500◆RB◆ = 50 \leq 52 = M$. So single-pass hash join works.
 
 **Hybrid hash join:** Partition $R$ into $\lceil 2000/50 \rceil = 40$ partitions, each fitting in
 memory. Cost: $3 \times 2000 + 3 \times 500 = 7500$.
@@ -392,7 +392,7 @@ memory. Cost: $3 \times 2000 + 3 \times 500 = 7500$.
 Sort-merge (7000) is slightly better than hash join (7500) here, but both are far superior to block
 nested-loop (22,000).
 
-If $R$ had an index on $A$: **Index nested-loop:** $B_s + R_s \times \text{cost per lookup$. If the
+If $R$ had an index on $A$: **Index nested-loop:** $B_s + R_s \times \text◆LB◆cost per lookup$. If the
 index gives $O(1)$ lookup: $500 + 25000 \times 1 = 25500$ (worse, due to random I/O). If clustered
 index: $500 + 25000/100 = 750$ (much better, since each lookup reads a page with 100 matching
 records on average).
@@ -656,7 +656,7 @@ $1000000 / 64 \approx 15625$ operations.
 **Encoded bitmap indexes.** For high-cardinality columns, use compression techniques:
 
 - **WAH (Word-Aligned Hybrid):** Run-length encoding with word-aligned literals.
-- **Roaring bitmaps:** Split the 32-bit value range into containers of $2^{16}$ values. Each
+- **Roaring bitmaps:** Split the 32-bit value range into containers of $2^◆LB◆16◆RB◆$ values. Each
   container is either a bitmap (if dense) or a sorted array (if sparse).
 
 ### 10.2 Hash Index Variants
@@ -684,7 +684,7 @@ bounding rectangle (MBR) covering all its children.
 **Operations:**
 
 - **Search:** Starting at the root, check if the query rectangle overlaps the node's MBR. If so,
-  recurse into children. $O(n^{1-1/d} + k)$ where $d$ is the number of dimensions.
+  recurse into children. $O(n^◆LB◆1-1/d◆RB◆ + k)$ where $d$ is the number of dimensions.
 - **Insert:** Find the leaf whose MBR needs the least enlargement. Split if overflow.
 - **Delete:** Find the leaf, remove the entry, condense the tree.
 
@@ -859,8 +859,8 @@ Serializable).
 
 | Type                | Check                                                                           | Cost                             |
 | ------------------- | ------------------------------------------------------------------------------- | -------------------------------- |
-| Backward validation | Check against committed transactions that finished after our read phase started | $O(\text{committed since start)$ |
-| Forward validation  | Check against active transactions that started before our validation phase      | $O(\text{currently active)$      |
+| Backward validation | Check against committed transactions that finished after our read phase started | $O(\text◆LB◆committed since start)$ |
+| Forward validation  | Check against active transactions that started before our validation phase      | $O(\text◆LB◆currently active)$      |
 
 **Theorem 12.1.** OCC is serialisable if the validation phase ensures that for every pair of
 overlapping transactions (reading/writing the same data), at most one commits.
@@ -875,11 +875,11 @@ overlapping transactions (reading/writing the same data), at most one commits.
 
 | Strategy           | Description                       | Hotspot risk                    |
 | ------------------ | --------------------------------- | ------------------------------- |
-| Hash partitioning  | $f(\text{key) \mod n$             | Low                             |
+| Hash partitioning  | $f(\text◆LB◆key) \mod n$             | Low                             |
 | Range partitioning | Key ranges assigned to nodes      | High (skewed ranges)            |
 | Directory-based    | Lookup service maps keys to nodes | Low (directory is a bottleneck) |
 
-**Consistent hashing.** Nodes and keys are placed on a hash ring (e.g., $0$ to $2^{128} - 1$). Each
+**Consistent hashing.** Nodes and keys are placed on a hash ring (e.g., $0$ to $2^◆LB◆128◆RB◆ - 1$). Each
 key is assigned to the first node clockwise. Virtual nodes (replicas on the ring) improve balance.
 
 **Theorem 14.1.** With $n$ real nodes and $k$ virtual nodes per real node, the expected ratio of the
@@ -915,7 +915,7 @@ necessarily real-time order).
 
 **Consistency model hierarchy:**
 
-$$\text{Linearisable \subset \text{Sequential \subset \text{Causal \subset \text{Eventual$$
+$$\text◆LB◆Linearisable \subset \text◆LB◆Sequential \subset \text◆LB◆Causal \subset \text◆LB◆Eventual$$
 
 <details>
 <summary>Worked Example: Consistency Anomalies</summary>
@@ -952,13 +952,13 @@ sort.
 
 **External merge sort cost for relation $R$ with $B$ blocks and $M$ memory blocks:**
 
-$$\text{Sort(R) = 2B \left(1 + \lceil \log_{M-1} \lceil B / M \rceil \rceil \right)$$
+$$\text◆LB◆Sort(R) = 2B \left(1 + \lceil \log_◆LB◆M-1◆RB◆ \lceil B / M \rceil \rceil \right)$$
 
 **Phase 2: Merge.** Both sorted relations are scanned simultaneously, outputting matching pairs.
 
 **Merge cost:** $B_r + B_s$ (one pass over each sorted relation).
 
-**Total sort-merge join cost:** $\text{Sort(R) + \text{Sort(S) + B_r + B_s$.
+**Total sort-merge join cost:** $\text◆LB◆Sort(R) + \text◆LB◆Sort(S) + B_r + B_s$.
 
 ### 15.2 Hash Join Details
 
@@ -983,14 +983,14 @@ and the partition of $R$ fits in memory for each partition.
 
 For each tuple in $R$Look up matching tuples in $S$ using an index on the join attribute.
 
-$$\text{Cost = B_r + R_r \cdot (\text{cost per probe)$$
+$$\text◆LB◆Cost = B_r + R_r \cdot (\text◆LB◆cost per probe)$$
 
 Where $R_r$ is the number of records in $R$ and the cost per probe depends on the index:
 
 | Index type            | Cost per probe                                             |
 | --------------------- | ---------------------------------------------------------- |
-| B+ tree (clustered)   | $\lceil h + \text{matching records / \text{fan-out \rceil$ |
-| B+ tree (unclustered) | $\lceil h + \text{matching records \rceil$                 |
+| B+ tree (clustered)   | $\lceil h + \text◆LB◆matching records / \text◆LB◆fan-out \rceil$ |
+| B+ tree (unclustered) | $\lceil h + \text◆LB◆matching records \rceil$                 |
 | Hash index            | $\approx 1.2$ (average)                                    |
 
 <details>
@@ -1003,16 +1003,16 @@ Equi-join on $R.A = S.B$. $S$ has a clustered B+ tree index on $B$ (height 3, fa
 $B_r + \lceil B_r / (M-1) \rceil \cdot B_s = 10000 + \lceil 10000/100 \rceil \cdot 5000 = 10000 + 100 \times 5000 = 510,000$
 blocks.
 
-**Sort-merge:** Sort $R$: $2 \times 10000 \times (1 + \lceil \log_{100} 100 \rceil) = 40000$. Sort
-$S$: $2 \times 5000 \times (1 + \lceil \log_{100} 50 \rceil) = 20000$. Merge:
+**Sort-merge:** Sort $R$: $2 \times 10000 \times (1 + \lceil \log_◆LB◆100◆RB◆ 100 \rceil) = 40000$. Sort
+$S$: $2 \times 5000 \times (1 + \lceil \log_◆LB◆100◆RB◆ 50 \rceil) = 20000$. Merge:
 $10000 + 5000 = 15000$. Total: $75,000$ blocks.
 
-**Hash join:** $3(10000 + 5000) = 45,000$ blocks. Check: need $M \geq \sqrt{15000} \approx 122$. We
+**Hash join:** $3(10000 + 5000) = 45,000$ blocks. Check: need $M \geq \sqrt◆LB◆15000◆RB◆ \approx 122$. We
 have 101 < 122. Need graceful hash join. Cost: $3 \times 15000 = 45,000$ plus partition overhead.
 Still best.
 
 **Index nested-loop:**
-$B_r + R_r \times \text{probe cost = 10000 + 500000 \times (3 + \text{matching records per probe / 100)$.
+$B_r + R_r \times \text◆LB◆probe cost = 10000 + 500000 \times (3 + \text◆LB◆matching records per probe / 100)$.
 If the average matching records per probe is 2 (500000/250000 = 2): cost =
 $10000 + 500000 \times 3.02 = 1,520,000$ blocks. Much worse due to random I/O.
 
@@ -1155,7 +1155,7 @@ taken all courses offered by the department in which they are majoring." Assume 
 Student(name, dept), Course(cname, dept), Enrolment(name, cname).
 
 **Problem 2.** Prove the equivalence:
-$\sigma_{\theta_1 \wedge \theta_2}(R \bowtie S) = \sigma_{\theta_1}(R) \bowtie \sigma_{\theta_2}(S)$
+$\sigma_◆LB◆\theta_1 \wedge \theta_2◆RB◆(R \bowtie S) = \sigma_◆LB◆\theta_1◆RB◆(R) \bowtie \sigma_◆LB◆\theta_2◆RB◆(S)$
 when $\theta_1$ involves only attributes of $R$ and $\theta_2$ involves only attributes of $S$.
 
 **Problem 3.** Given relations $R(A, B)$ and $S(B, C)$ with $|R| = 10\,000$ records (100 blocks),
@@ -1283,18 +1283,18 @@ Keys of $R_2$: $\{BE, CE\}$.
 
 $E \to A$ violates BCNF. Decompose $R_2$ into:
 
-- $R_{2a}(E, A)$ with $E \to A$ (BCNF, key = $E$)
-- $R_{2b}(B, C, E)$ with restricted FDs: $BE \to C$$CE \to B$... Wait, $BE \to C$ comes from
-  $AB \to C$ restricted to $\{B, C, E\}$: we lose the dependency since $A$ is not in $R_{2b}$.
+- $R_◆LB◆2a◆RB◆(E, A)$ with $E \to A$ (BCNF, key = $E$)
+- $R_◆LB◆2b◆RB◆(B, C, E)$ with restricted FDs: $BE \to C$$CE \to B$... Wait, $BE \to C$ comes from
+  $AB \to C$ restricted to $\{B, C, E\}$: we lose the dependency since $A$ is not in $R_◆LB◆2b◆RB◆$.
 
-Actually, $AB \to C$ restricted to $R_{2b}(B, C, E)$: the LHS is $AB$ but $A \notin R_{2b}$So this
-FD is lost. The only remaining FDs in $R_{2b}$ are trivial. So $R_{2b}$ is in BCNF with key $BE$ (or
+Actually, $AB \to C$ restricted to $R_◆LB◆2b◆RB◆(B, C, E)$: the LHS is $AB$ but $A \notin R_◆LB◆2b◆RB◆$So this
+FD is lost. The only remaining FDs in $R_◆LB◆2b◆RB◆$ are trivial. So $R_◆LB◆2b◆RB◆$ is in BCNF with key $BE$ (or
 $CE$).
 
-**BCNF decomposition:** $R_1(C, D)$$R_{2a}(E, A)$$R_{2b}(B, C, E)$.
+**BCNF decomposition:** $R_1(C, D)$$R_◆LB◆2a◆RB◆(E, A)$$R_◆LB◆2b◆RB◆(B, C, E)$.
 
 **Dependency preservation:** $C \to D$ is preserved (in $R_1$). $E \to A$ is preserved (in
-$R_{2a}$). $AB \to C$ is NOT preserved (lost in the decomposition). $D \to E$ is NOT preserved
+$R_◆LB◆2a◆RB◆$). $AB \to C$ is NOT preserved (lost in the decomposition). $D \to E$ is NOT preserved
 (lost).
 
 So the decomposition is NOT dependency-preserving.

@@ -162,10 +162,10 @@ A company has been allocated the network 172.16.0.0/16. It needs to create subne
 
 **Subnet allocation:**
 
-Total addresses: $2^{16} = 65536$.
+Total addresses: $2^◆LB◆16◆RB◆ = 65536$.
 
 Headquarters: 16000 hosts needs $\lceil \log_2(16002) \rceil = 15$ bits for hosts, so $/17$
-($32 - 15 = 17$). But 16000 < $2^{14} = 16384$So $/18$ suffices (16382 usable hosts). Allocate
+($32 - 15 = 17$). But 16000 < $2^◆LB◆14◆RB◆ = 16384$So $/18$ suffices (16382 usable hosts). Allocate
 172.16.0.0/18.
 
 Data centres: 8000 hosts needs $\lceil \log_2(8002) \rceil = 14$ bits, so $/18$ suffices. Allocate
@@ -218,16 +218,16 @@ TCP uses an **additive-increase multiplicative-decrease (AIMD)** algorithm for c
 
 **Theorem 2.1 (TCP throughput).** The average throughput of TCP Reno is approximately:
 
-$$\text{Throughput \approx \frac{1.22 \cdot \text{MSS}{\text{RTT \cdot \sqrt{p}}$$
+$$\text◆LB◆Throughput \approx \frac◆LB◆1.22 \cdot \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT \cdot \sqrt◆LB◆p◆RB◆◆RB◆$$
 
 Where $p$ is the packet loss rate.
 
 _Proof (outline)._ TCP oscillates between cwnd $= W/2$ and cwnd $= W$Where $W$ is the window size at
-which loss occurs. The area under the AIMD sawtooth is approximately $\frac{3}{8} W^2$ (the integral
+which loss occurs. The area under the AIMD sawtooth is approximately $\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2$ (the integral
 of the linear increase from $W/2$ to $W$). The number of packets sent per cycle is
-$\frac{3}{8} W^2$. The cycle length is $W/2$ RTTs. The loss rate is approximately
-$1/(\frac{3}{8} W^2)$ (one loss per cycle). So $W \approx \sqrt{8/(3p)}$. The throughput is
-$\frac{3}{8} W^2 / (\frac{W}{2} \cdot \text{RTT) = \frac{3W}{4 \cdot \text{RTT} \approx \frac{1.22 \cdot \text{MSS}{\text{RTT \cdot \sqrt{p}}$.
+$\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2$. The cycle length is $W/2$ RTTs. The loss rate is approximately
+$1/(\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2)$ (one loss per cycle). So $W \approx \sqrt◆LB◆8/(3p)◆RB◆$. The throughput is
+$\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2 / (\frac◆LB◆W◆RB◆◆LB◆2◆RB◆ \cdot \text◆LB◆RTT) = \frac◆LB◆3W◆RB◆◆LB◆4 \cdot \text◆LB◆RTT◆RB◆ \approx \frac◆LB◆1.22 \cdot \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT \cdot \sqrt◆LB◆p◆RB◆◆RB◆$.
 $\blacksquare$
 
 ### 2.2 TCP Variants
@@ -242,12 +242,12 @@ $\blacksquare$
 
 **TCP Cubic.** Replaces the linear increase with a cubic function:
 
-$$\text{cwnd(t) = W_{\max} + \beta \cdot \left(\frac{t}{K}\right)^3 - (W_{\max} - \text{cwnd_{\text{low})$$
+$$\text◆LB◆cwnd(t) = W_◆LB◆\max◆RB◆ + \beta \cdot \left(\frac◆LB◆t◆RB◆◆LB◆K◆RB◆\right)^3 - (W_◆LB◆\max◆RB◆ - \text◆LB◆cwnd_◆LB◆\text◆LB◆low◆RB◆)$$
 
-Where $W_{\max}$ is the window size at the last loss event,
-$K = \sqrt[3]{W_{\max} \cdot \beta / C}$$\beta = 0.4$And $C = 0.4$.
+Where $W_◆LB◆\max◆RB◆$ is the window size at the last loss event,
+$K = \sqrt[3]◆LB◆W_◆LB◆\max◆RB◆ \cdot \beta / C◆RB◆$$\beta = 0.4$And $C = 0.4$.
 
-The cubic function grows slowly near $W_{\max}$ (probing) and rapidly far from it (quick recovery),
+The cubic function grows slowly near $W_◆LB◆\max◆RB◆$ (probing) and rapidly far from it (quick recovery),
 making it suitable for high-BDP (bandwidth-delay product) networks.
 
 **TCP BBR (Bottleneck Bandwidth and Round-trip propagation time).** Instead of using packet loss as
@@ -309,7 +309,7 @@ server.
 
 _Proof._ By Little's Law ($L = \lambda W$) and the properties of the geometric distribution of the
 number in system. The probability of $n$ in system is $(1 - \rho) \rho^n$. The expected value is
-$\sum_{n=0}^{\infty} n(1-\rho)\rho^n = \rho/(1-\rho)$. $\blacksquare$
+$\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ n(1-\rho)\rho^n = \rho/(1-\rho)$. $\blacksquare$
 
 **Little's Law.** For any stable system: $L = \lambda W$Where $L$ is the long-term average number of
 customers in the system, $\lambda$ is the arrival rate, and $W$ is the average time a customer
@@ -341,13 +341,13 @@ This illustrates the dramatic effect of high utilisation on queueing delays.
 **Throughput:** Total data delivered per unit time (including retransmissions). **Goodput:** Useful
 application data delivered per unit time (excluding headers, retransmissions).
 
-$$\text{Goodput = \text{Throughput \times \frac{\text{Application data}{\text{Total bytes transferred} \times (1 - \text{loss rate)$$
+$$\text◆LB◆Goodput = \text◆LB◆Throughput \times \frac◆LB◆\text◆LB◆Application data◆RB◆◆LB◆\text◆LB◆Total bytes transferred◆RB◆ \times (1 - \text◆LB◆loss rate)$$
 
 **Bandwidth-Delay Product (BDP):** The amount of data "in flight" (sent but not yet acknowledged):
 
-$$\text{BDP = \text{Bandwidth \times \text{RTT$$
+$$\text◆LB◆BDP = \text◆LB◆Bandwidth \times \text◆LB◆RTT$$
 
-For a 1 Gbps link with 50 ms RTT: $\text{BDP = 10^9 \times 0.05 = 50 \times 10^6$ bits $= 6.25$ MB.
+For a 1 Gbps link with 50 ms RTT: $\text◆LB◆BDP = 10^9 \times 0.05 = 50 \times 10^6$ bits $= 6.25$ MB.
 
 The TCP receive window must be at least the BDP for full utilisation.
 
@@ -365,8 +365,8 @@ interval of length $t$.
 **Theorem 3.2.** For an arrival curve $\alpha(t) = \sigma + \rho t$ and a service curve
 $\beta(t) = R(t - T)^+$ with $R > \rho$:
 
-- **Maximum delay bound:** $d_{\max} = T + \sigma / R$.
-- **Maximum backlog bound:** $b_{\max} = \sigma + \rho T$.
+- **Maximum delay bound:** $d_◆LB◆\max◆RB◆ = T + \sigma / R$.
+- **Maximum backlog bound:** $b_◆LB◆\max◆RB◆ = \sigma + \rho T$.
 
 ## 4. Advanced Application Layer
 
@@ -764,9 +764,9 @@ mitigates this: the AP's CTS is heard by both stations.
 **Theorem 10.1.** The throughput of Wi-Fi under saturation (always a packet to send) with $n$
 stations is approximately:
 
-$$S \approx \frac{P_s \cdot P_{tr} \cdot E[p]}{(1 - P_{tr})\sigma + P_{tr}P_s T_s + P_{tr}(1 - P_s)T_c}$$
+$$S \approx \frac◆LB◆P_s \cdot P_◆LB◆tr◆RB◆ \cdot E[p]◆RB◆◆LB◆(1 - P_◆LB◆tr◆RB◆)\sigma + P_◆LB◆tr◆RB◆P_s T_s + P_◆LB◆tr◆RB◆(1 - P_s)T_c◆RB◆$$
 
-Where $P_{tr}$ is the probability that at least one station transmits, $P_s$ is the probability of
+Where $P_◆LB◆tr◆RB◆$ is the probability that at least one station transmits, $P_s$ is the probability of
 exactly one transmission, $T_s$ is the time for a successful transmission, $T_c$ is the time for a
 collision, $\sigma$ is the slot time, and $E[p]$ is the average payload size.
 
@@ -964,7 +964,7 @@ application.
 | `net.ipv4.tcp_wmem`            | 4096 16384 4194304 | 4096 65536 16777216 | TCP send buffer min/default/max             |
 
 **Theorem 13.1.** The TCP receive window must be at least the BDP for full link utilisation. For a
-10 Gbps link with 80 ms RTT: BDP = $10^{10} \times 0.08 = 800$ Mb $= 100$ MB. The default Linux
+10 Gbps link with 80 ms RTT: BDP = $10^◆LB◆10◆RB◆ \times 0.08 = 800$ Mb $= 100$ MB. The default Linux
 receive buffer (6 MB) is far too small.
 
 ### 13.2 Bufferbloat
@@ -1131,11 +1131,11 @@ per server).
 
 **Erlang C formula** (probability that an arriving customer must wait):
 
-$$P(\text{wait) = \frac{(c\rho)^c}{c!(1 - \rho)} \cdot \frac{1}{\sum_{k=0}^{c-1} \frac{(c\rho)^k}{k!} + \frac{(c\rho)^c}{c!(1-\rho)}}$$
+$$P(\text◆LB◆wait) = \frac◆LB◆(c\rho)^c◆RB◆◆LB◆c!(1 - \rho)◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sum_◆LB◆k=0◆RB◆^◆LB◆c-1◆RB◆ \frac◆LB◆(c\rho)^k◆RB◆◆LB◆k!◆RB◆ + \frac◆LB◆(c\rho)^c◆RB◆◆LB◆c!(1-\rho)◆RB◆◆RB◆$$
 
 **Average number in queue:**
 
-$$L_q = \frac{P(\text{wait) \cdot \rho}{1 - \rho}$$
+$$L_q = \frac◆LB◆P(\text◆LB◆wait) \cdot \rho◆RB◆◆LB◆1 - \rho◆RB◆$$
 
 <details>
 <summary>Worked Example: M/M/c Queue for Server Farm</summary>
@@ -1147,20 +1147,20 @@ Utilisation: $\rho = 10 / (4 \times 3) = 10/12 = 0.833$.
 
 Using the Erlang C formula:
 
-Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum factor$... This is complex
+Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text◆LB◆sum factor$... This is complex
 to compute by hand. Let me use the simplified formula.
 
 $a = \lambda / \mu = 10/3 = 3.333$.
 
-$$P_0 = \left[\sum_{k=0}^{3} \frac{a^k}{k!} + \frac{a^4}{4!(1-\rho)}\right]^{-1}$$
+$$P_0 = \left[\sum_◆LB◆k=0◆RB◆^◆LB◆3◆RB◆ \frac◆LB◆a^k◆RB◆◆LB◆k!◆RB◆ + \frac◆LB◆a^4◆RB◆◆LB◆4!(1-\rho)◆RB◆\right]^◆LB◆-1◆RB◆$$
 
-$= [1 + 3.333 + 5.556 + 6.173 + \frac{123.46}{24 \times 0.167}]^{-1}$
-$= [1 + 3.333 + 5.556 + 6.173 + 30.77]^{-1}$ $= [46.83]^{-1} = 0.0214$
+$= [1 + 3.333 + 5.556 + 6.173 + \frac◆LB◆123.46◆RB◆◆LB◆24 \times 0.167◆RB◆]^◆LB◆-1◆RB◆$
+$= [1 + 3.333 + 5.556 + 6.173 + 30.77]^◆LB◆-1◆RB◆$ $= [46.83]^◆LB◆-1◆RB◆ = 0.0214$
 
-$P(\text{wait) = \frac{a^4}{4!(1-\rho)} \cdot P_0 = 30.77 \times 0.0214 = 0.658$
+$P(\text◆LB◆wait) = \frac◆LB◆a^4◆RB◆◆LB◆4!(1-\rho)◆RB◆ \cdot P_0 = 30.77 \times 0.0214 = 0.658$
 
 $65.8\%$ of requests must wait. Average queue length:
-$L_q = \frac{0.658 \times 0.833}{1 - 0.833} = \frac{0.548}{0.167} = 3.28$ requests.
+$L_q = \frac◆LB◆0.658 \times 0.833◆RB◆◆LB◆1 - 0.833◆RB◆ = \frac◆LB◆0.548◆RB◆◆LB◆0.167◆RB◆ = 3.28$ requests.
 
 Average waiting time: $W_q = L_q / \lambda = 3.28 / 10 = 0.328$ seconds.
 
@@ -1237,13 +1237,13 @@ exceeds 20 packets. (Hint: $P(n \geq k) = \rho^k$.)
 
 Using the TCP Reno throughput formula:
 
-$$\text{Throughput \approx \frac{1.22 \times \text{MSS}{\text{RTT \times \sqrt{p}}$$
+$$\text◆LB◆Throughput \approx \frac◆LB◆1.22 \times \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT \times \sqrt◆LB◆p◆RB◆◆RB◆$$
 
-$\text{MSS = 1460$ bytes $= 11680$ bits. $\text{RTT = 80$ ms $= 0.08$ s. $p = 0.001$.
+$\text◆LB◆MSS = 1460$ bytes $= 11680$ bits. $\text◆LB◆RTT = 80$ ms $= 0.08$ s. $p = 0.001$.
 
-$$\text{Throughput \approx \frac{1.22 \times 11680}{0.08 \times \sqrt{0.001}} = \frac{14249.6}{0.08 \times 0.03162} = \frac{14249.6}{0.002530} \approx 5\,632\,727 \text{ bits/s \approx 5.63 \text{ Mbps$$
+$$\text◆LB◆Throughput \approx \frac◆LB◆1.22 \times 11680◆RB◆◆LB◆0.08 \times \sqrt◆LB◆0.001◆RB◆◆RB◆ = \frac◆LB◆14249.6◆RB◆◆LB◆0.08 \times 0.03162◆RB◆ = \frac◆LB◆14249.6◆RB◆◆LB◆0.002530◆RB◆ \approx 5\,632\,727 \text◆LB◆ bits/s \approx 5.63 \text◆LB◆ Mbps$$
 
-The BDP is $\text{BW \times \text{RTT = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$
+The BDP is $\text◆LB◆BW \times \text◆LB◆RTT = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$
 KB. The receive window must be at least this for full utilisation.
 
 If you get this wrong, revise: Section 2.1.
@@ -1258,9 +1258,9 @@ Service curve: $\beta(t) = 1000(t - 0.01)^+$ (rate $R = 1000$ bits/s, latency $T
 
 Since $R > \rho$ ($1000 > 500$), the system is stable.
 
-**Maximum delay bound:** $d_{\max} = T + \sigma / R = 0.01 + 5000 / 1000 = 0.01 + 5 = 5.01$ seconds.
+**Maximum delay bound:** $d_◆LB◆\max◆RB◆ = T + \sigma / R = 0.01 + 5000 / 1000 = 0.01 + 5 = 5.01$ seconds.
 
-**Maximum backlog bound:** $b_{\max} = \sigma + \rho T = 5000 + 500 \times 0.01 = 5000 + 5 = 5005$
+**Maximum backlog bound:** $b_◆LB◆\max◆RB◆ = \sigma + \rho T = 5000 + 500 \times 0.01 = 5000 + 5 = 5005$
 bits.
 
 The backlog is dominated by the burst ($\sigma = 5000$ bits). The latency contribution to the
