@@ -107,5 +107,23 @@ module.exports = function escapeJsxBraces() {
         .replace(/\u25C6LB\u25C6/g, '{')
         .replace(/\u25C6RB\u25C6/g, '}');
     });
+
+    // Also restore placeholders in math nodes (inlineMath and math).
+    // The remark-math plugin parses $...$ as inlineMath and $$...$$ as math.
+    // These nodes have a 'value' property with the raw LaTeX content.
+    // The preprocessing script replaces braces inside math blocks with
+    // diamond placeholders to prevent MDX from parsing them as JSX.
+    // We must restore them before KaTeX processes the math server-side.
+    visit(tree, ['math', 'inlineMath'], (node) => {
+      if (typeof node.value === 'string') {
+        node.value = node.value
+          .replace(/\u29C3LB\u29C4/g, '{')
+          .replace(/\u29C3RB\u29C4/g, '}')
+          .replace(/\uE000/g, '{')
+          .replace(/\uE001/g, '}')
+          .replace(/\u25C6LB\u25C6/g, '{')
+          .replace(/\u25C6RB\u25C6/g, '}');
+      }
+    });
   };
 };
