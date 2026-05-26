@@ -65,6 +65,9 @@ jobs:
           GENERATE_SOURCEMAP: 'false'
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
 
+      - name: Remove SSR bundle (Cloudflare Pages static-only, 25 MiB file limit)
+        run: rm -rf build/__server
+
       - name: Install wrangler
         run: pnpm add -D wrangler
 
