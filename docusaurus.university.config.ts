@@ -2,7 +2,7 @@
 // Docusaurus config for the University sub-site.
 // Build: pnpm run build -- --config docusaurus.university.config.ts
 // Contains: Mathematics, Physics, Computing (university-level)
-// Total: ~4K lines across 1 docs plugin.
+// Total: ~61K lines across 5 docs plugins + intro.
 
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -26,6 +26,11 @@ const config = {
     algoliaIndexName: 'wyattsnotes_university',
     socialCard: '/img/social-cards/university.png',
   }),
+
+  // Enable faster build: rspack bundler, SSG worker threads, SWC loader, MDX cross-compiler cache
+  future: {
+    faster: true,
+  },
 
   plugins: [
     ...sharedPlugins('wyattsnotes-university'),
