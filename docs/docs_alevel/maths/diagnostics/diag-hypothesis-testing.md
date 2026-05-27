@@ -70,7 +70,7 @@ $$c = 500 - 1.6449 \times 0.125 = 500 - 0.2056 = 499.794$$
 **(c)** For the two-tailed test at the 5% level, each tail has significance
 $\frac{0.05}{2} = 0.025$.
 
-$H_0: \mu = 500$$H_1: \mu \neq 500$.
+$H_0: \mu = 500$, $H_1: \mu \neq 500$.
 
 Lower critical value:
 
@@ -422,7 +422,7 @@ $H_0: \lambda = 8$ (mean number of vehicles per interval is 8)
 
 $H_1: \lambda \lt 8$ (mean has decreased)
 
-Under $H_0$: $\bar{X} \approx N(8, 0.4)$$\sigma = \sqrt{0.4} \approx 0.6325$.
+Under $H_0$: $\bar{X} \approx N(8, 0.4)$, $\sigma = \sqrt{0.4} \approx 0.6325$.
 
 $$z = \frac{6.7 - 8}{0.6325} = \frac{-1.3}{0.6325} = -2.056$$
 
@@ -436,7 +436,7 @@ traffic light system has reduced the mean number of vehicles per 10-second inter
 **(d)** The total count is $T = 134$.
 
 Under $H_0$: $T \sim \text{Po}(160)$Approximated by
-$N(160, 160)$$\sigma = \sqrt{160} \approx 12.649$.
+$N(160, 160)$, $\sigma = \sqrt{160} \approx 12.649$.
 
 With continuity correction (since $T$ is discrete and we want $\mathrm{P}(T \leq 134)$):
 
@@ -478,7 +478,7 @@ test power.]
 
 **Solution:**
 
-**(a)** $H_0: \mu = 500$$H_1: \mu \lt 500$.
+**(a)** $H_0: \mu = 500$, $H_1: \mu \lt 500$.
 
 Under $H_0$:
 $\bar{X} \sim N\left(500, \frac{40^2}{36}\right) = N(500, \frac{1600}{36}) = N(500, 44.44)$.
@@ -648,7 +648,7 @@ This prediction might not be reliable because:
    assumes all other factors are at their average values, which may not be the case for any specific
    individual.
 
-**(d)** $H_0: \rho = 0$$H_1: \rho \lt 0$.
+**(d)** $H_0: \rho = 0$, $H_1: \rho \lt 0$.
 
 Test statistic: $r = -0.31$.
 
@@ -661,15 +661,15 @@ correlation.
 
 **Comparison:**
 
-Study 1 ($n = 15$$r = -0.52$): Stronger correlation but smaller sample. The p-value is small but not
+Study 1 ($n = 15$, $r = -0.52$): Stronger correlation but smaller sample. The p-value is small but not
 extremely so, because with only 15 observations, a correlation of $-0.52$ could plausibly occur by
 chance with moderate probability.
 
-Study 2 ($n = 40$$r = -0.31$): Weaker correlation but larger sample. Despite the weaker correlation,
+Study 2 ($n = 40$, $r = -0.31$): Weaker correlation but larger sample. Despite the weaker correlation,
 the larger sample provides more evidence against $H_0$And the p-value may be comparable or even
 smaller.
 
-The relationship between $r$$n$And the p-value is governed by the test statistic
+The relationship between $r$, $n$And the p-value is governed by the test statistic
 $t = r\sqrt◆LB◆\frac{n-2}{1-r^2}◆RB◆$Which follows a $t$-distribution with $n-2$ degrees of freedom
 under $H_0$.
 

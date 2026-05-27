@@ -38,7 +38,7 @@ $b_1 = \dfrac{1}{1 - 1}$ is **undefined** (division by zero). So the series is n
 starting from $n = 1$.
 
 Start from $n = 2$ instead:
-$b_2 = \dfrac{1}{\sqrt{2} + 1} \approx 0.414$$b_3 = \dfrac{1}{\sqrt{3} - 1} \approx 1.366$$b_4 = \dfrac{1}{2 + 1} \approx 0.333$.
+$b_2 = \dfrac{1}{\sqrt{2} + 1} \approx 0.414$, $b_3 = \dfrac{1}{\sqrt{3} - 1} \approx 1.366$, $b_4 = \dfrac{1}{2 + 1} \approx 0.333$.
 
 Since $b_3 > b_2$The sequence $\{b_n\}$ is **not decreasing**, so the alternating series test does
 not apply.
@@ -230,7 +230,7 @@ are needed to approximate the sum to within $0.001$.
 Let $f(x) = \dfrac{1}{x(\ln x)^p}$ for $x \geq 2$. This is positive, continuous, and decreasing for
 $x \geq 2$ (when $p > 0$).
 
-Let $u = \ln x$$du = \dfrac{dx}{x}$:
+Let $u = \ln x$, $du = \dfrac{dx}{x}$:
 
 $$\int_2^{\infty}\frac{dx}{x(\ln x)^p} = \int_{\ln 2}^{\infty}\frac{du}{u^p}$$
 

@@ -829,7 +829,7 @@ Initial $[\mathrm{N}_2\mathrm{O}_4] = 1.00 / 2.00 = 0.500\mathrm{ mol/L}$
 | Change      | $-0.100$                   | $+0.200$        |
 | Equilibrium | $0.400$                    | $0.200$         |
 
-Since $[\mathrm{NO}_2]_{\mathrm{eq}} = 0.200\mathrm{ mol/L}$ and it increases by $2x$$x = 0.100$.
+Since $[\mathrm{NO}_2]_{\mathrm{eq}} = 0.200\mathrm{ mol/L}$ and it increases by $2x$, $x = 0.100$.
 
 $$K_c = \frac{[\mathrm{NO}_2]^2}{[\mathrm{N}_2\mathrm{O}_4]} = \frac{(0.200)^2}{0.400} = \frac{0.0400}{0.400} = 0.100$$
 
@@ -924,7 +924,7 @@ $$s^3 = \frac{1.7 \times 10^{-5}}{4} = 4.25 \times 10^{-6}$$
 
 $$s = 1.62 \times 10^{-2}\mathrm{ mol/L}$$
 
-(b) In $0.10\mathrm{ M}$ $\mathrm{NaCl}$$[\mathrm{Cl}^-]_{\mathrm{initial}} = 0.10\mathrm{ M}$:
+(b) In $0.10\mathrm{ M}$ $\mathrm{NaCl}$, $[\mathrm{Cl}^-]_{\mathrm{initial}} = 0.10\mathrm{ M}$:
 
 $$K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{Cl}^-]^2 = s \times (0.10 + 2s)^2 \approx s \times (0.10)^2$$
 

@@ -312,7 +312,7 @@ In parallel)
    resistance $0.85 \Omega$. Calculate the resistivity of the material.
 
 2. Find the current through each resistor in a circuit with a $24 \mathrm{ V$ battery connected to
-   $3 \Omega$$6 \Omega$And $12 \Omega$ resistors all in parallel.
+   $3 \Omega$, $6 \Omega$And $12 \Omega$ resistors all in parallel.
 
 3. A battery of EMF $15 \mathrm{ V$ and internal resistance $1.2 \Omega$ is connected to an external
    circuit. The terminal PD is $13.8 \mathrm{ V$. Find the current and external resistance.
@@ -324,10 +324,10 @@ In parallel)
    $33 \mathrm{ k\Omega$ resistor. Find the time constant and the charge remaining after
    $15 \mathrm{ s$.
 
-6. Three resistors of $4 \Omega$$6 \Omega$And $12 \Omega$ are connected to a $12 \mathrm{ V$
+6. Three resistors of $4 \Omega$, $6 \Omega$And $12 \Omega$ are connected to a $12 \mathrm{ V$
    battery. Find the total resistance and current if (a) all are in series, (b) all are in parallel.
 
-7. A lamp rated $60 \mathrm{ W$$240 \mathrm{ V$ is connected to a $200 \mathrm{ V$ supply. Calculate
+7. A lamp rated $60 \mathrm{ W$, $240 \mathrm{ V$ is connected to a $200 \mathrm{ V$ supply. Calculate
    the actual power dissipated, assuming the resistance of the lamp is constant.
 
 8. A $470 \mu\mathrm{F$ capacitor stores $0.5 \mathrm{ J$ of energy. Find the voltage across it and
@@ -460,7 +460,7 @@ Check: $8.25 + 3.75 = 12 \mathrm{ V$. Correct.
 Design a circuit that turns on a fan when the temperature exceeds $30^{\circ}\mathrm{C$. Use a
 $9 \mathrm{ V$ supply, a $10 \mathrm{ k\Omega$ fixed resistor, and an NTC thermistor with the
 Following characteristics: $R = 20 \mathrm{ k\Omega$ at $20^{\circ}\mathrm{C$
-$R = 10 \mathrm{ k\Omega$ at $30^{\circ}\mathrm{C$$R = 5 \mathrm{ k\Omega$ at $40^{\circ}\mathrm{C$.
+$R = 10 \mathrm{ k\Omega$ at $30^{\circ}\mathrm{C$, $R = 5 \mathrm{ k\Omega$ at $40^{\circ}\mathrm{C$.
 
 Place the thermistor as $R_2$ (top of the divider). The output voltage across the thermistor is:
 
@@ -479,15 +479,15 @@ $4.5 \mathrm{ V$ would switch on the fan when the temperature exceeds $30^{\circ
 
 | Topic               | Formula                                          | Variables                  | Notes                         |
 | ------------------- | ------------------------------------------------ | -------------------------- | ----------------------------- |
-| Current             | $I = Q/t$                                        | $Q$$t$                     | $I = nAve$ for drift velocity |
-| Ohm's law           | $V = IR$                                         | $V$$I$$R$                  | Only for ohmic conductors     |
-| Resistivity         | $R = \rho L / A$                                 | $\rho$$L$$A$               | $\rho$ depends on temperature |
-| Power               | $P = IV = I^2R = V^2/R$                          | $V$$I$$R$                  | Three equivalent forms        |
-| Internal resistance | $V = \varepsilon - Ir$                           | $\varepsilon$$I$$r$        | Terminal PD                   |
-| Capacitance         | $C = Q/V$                                        | $Q$$V$                     | Unit: farad                   |
-| Capacitor energy    | $E = \frac{1}{2}CV^2$                            | $C$$V$                     | Three equivalent forms        |
-| RC time constant    | $\tau = RC$                                      | $R$$C$                     | 63.2% charge in one $\tau$    |
-| Potential divider   | $V_{\mathrm{out} = V_{\mathrm{in} R_2/(R_1+R_2)$ | $V_{\mathrm{in}$$R_1$$R_2$ | For sensing circuits          |
+| Current             | $I = Q/t$                                        | $Q$, $t$                     | $I = nAve$ for drift velocity |
+| Ohm's law           | $V = IR$                                         | $V$, $I$, $R$                  | Only for ohmic conductors     |
+| Resistivity         | $R = \rho L / A$                                 | $\rho$, $L$, $A$               | $\rho$ depends on temperature |
+| Power               | $P = IV = I^2R = V^2/R$                          | $V$, $I$, $R$                  | Three equivalent forms        |
+| Internal resistance | $V = \varepsilon - Ir$                           | $\varepsilon$, $I$, $r$        | Terminal PD                   |
+| Capacitance         | $C = Q/V$                                        | $Q$, $V$                     | Unit: farad                   |
+| Capacitor energy    | $E = \frac{1}{2}CV^2$                            | $C$, $V$                     | Three equivalent forms        |
+| RC time constant    | $\tau = RC$                                      | $R$, $C$                     | 63.2% charge in one $\tau$    |
+| Potential divider   | $V_{\mathrm{out} = V_{\mathrm{in} R_2/(R_1+R_2)$ | $V_{\mathrm{in}$, $R_1$, $R_2$ | For sensing circuits          |
 
 ## 16. Practice Questions (Additional)
 
@@ -603,7 +603,7 @@ The current leads the voltage by $32.5^\circ$.
 
 ### Example 23: Wheatstone Bridge Analysis
 
-A Wheatstone bridge has the following resistors: $P = 100 \Omega$$Q = 200 \Omega$
+A Wheatstone bridge has the following resistors: $P = 100 \Omega$, $Q = 200 \Omega$
 $R = 150 \Omega$And $S$ is unknown. A galvanometer of negligible resistance is connected between The
 junction of $P$ and $Q$ and the junction of $R$ and $S$. The bridge is balanced when
 $S = 300 \Omega$. Verify this and calculate the current through each resistor when a $12 \mathrm{ V$
@@ -667,12 +667,12 @@ When $I = 0$ (open circuit), $V = \mathcal{E}$. As current increases, $V$ decrea
     fall to $5 \mathrm{ V$And (c) the energy dissipated in the resistor during the complete
     discharge.
 
-22. Three resistors of $10 \Omega$$20 \Omega$And $30 \Omega$ are connected to a $24 \mathrm{ V$
+22. Three resistors of $10 \Omega$, $20 \Omega$And $30 \Omega$ are connected to a $24 \mathrm{ V$
     battery with internal resistance $1 \Omega$. Find the current and power delivered for each
     possible connection arrangement (all series, all parallel, and series-parallel combinations).
 
-23. An AC circuit has $R = 80 \Omega$$X_L = 100 \Omega$And $X_C = 40 \Omega$ in series with a
-    $230 \mathrm{ V$$50 \mathrm{ Hz$ supply. Calculate the impedance, current, power factor, and
+23. An AC circuit has $R = 80 \Omega$, $X_L = 100 \Omega$And $X_C = 40 \Omega$ in series with a
+    $230 \mathrm{ V$, $50 \mathrm{ Hz$ supply. Calculate the impedance, current, power factor, and
     true power dissipated.
 
 24. Design a potential divider using a $9 \mathrm{ V$ battery and two resistors to produce an output
@@ -804,7 +804,7 @@ The speed of light.
     each, and the energy lost.
 
 28. An AC circuit has a $60 \Omega$ resistor and a $0.1 \mathrm{ H$ inductor in series with a
-    $230 \mathrm{ V$$50 \mathrm{ Hz$ supply. Calculate the reactance of the inductor, the impedance,
+    $230 \mathrm{ V$, $50 \mathrm{ Hz$ supply. Calculate the reactance of the inductor, the impedance,
     the current, the power factor, and the phase angle.
 
 29. A potential divider circuit uses a $10 \mathrm{ k\Omega$ variable resistor and an LDR. In

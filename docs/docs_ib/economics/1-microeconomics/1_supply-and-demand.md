@@ -574,7 +574,7 @@ When the price of a good changes, the total effect on quantity demanded can be d
 
 **Numerical example:**
 
-A consumer has income $M = 100$$P_X = 5$$P_Y = 2$. The consumer's utility function is
+A consumer has income $M = 100$, $P_X = 5$, $P_Y = 2$. The consumer's utility function is
 $U = X^{0.5} \cdot Y^{0.5}$.
 
 Budget constraint: $5X + 2Y = 100$

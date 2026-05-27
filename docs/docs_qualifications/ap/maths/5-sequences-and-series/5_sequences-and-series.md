@@ -160,7 +160,7 @@ $$
 S_n = \frac{a(1 - r^n)}{1 - r}
 $$
 
-When $|r| \lt 1$$r^n \to 0$So $S_n \to \frac{a}{1 - r}$.
+When $|r| \lt 1$, $r^n \to 0$So $S_n \to \frac{a}{1 - r}$.
 
 :::info[Example]
 
@@ -323,7 +323,7 @@ Since $0 \lt 1 \lt \infty$Both series converge by the limit comparison test.
 
 Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{3n + 1}{n^3 - 2}$ converges.
 
-For large $n$$\frac{3n+1}{n^3-2} \approx \frac{3n}{n^3} = \frac{3}{n^2}$.
+For large $n$, $\frac{3n+1}{n^3-2} \approx \frac{3n}{n^3} = \frac{3}{n^2}$.
 
 Compare with $\sum \frac{1}{n^2}$:
 
@@ -747,13 +747,13 @@ approximate $\ln(1.1)$.
 
 $f(0) = \ln(1) = 0$.
 
-$f'(x) = \frac{1}{1+x}$$f'(0) = 1$.
+$f'(x) = \frac{1}{1+x}$, $f'(0) = 1$.
 
-$f''(x) = \frac{-1}{(1+x)^2}$$f''(0) = -1$.
+$f''(x) = \frac{-1}{(1+x)^2}$, $f''(0) = -1$.
 
-$f'''(x) = \frac{2}{(1+x)^3}$$f'''(0) = 2$.
+$f'''(x) = \frac{2}{(1+x)^3}$, $f'''(0) = 2$.
 
-$f^{(4)}(x) = \frac{-6}{(1+x)^4}$$f^{(4)}(0) = -6$.
+$f^{(4)}(x) = \frac{-6}{(1+x)^4}$, $f^{(4)}(0) = -6$.
 
 Maclaurin series: $\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots$
 

@@ -158,7 +158,7 @@ Externalities (strategic industry for defence), explain how this affects the wel
 
 With quota of 30: $Q_d - Q_s = 30$. $150 - 0.5P - (0.5P - 25) = 30$. $175 - P = 30$. $P = \$145$.
 
-$Q_d = 150 - 72.5 = 77.5$$Q_s = 72.5 - 25 = 47.5$. Imports $= 77.5 - 47.5 = 30$.
+$Q_d = 150 - 72.5 = 77.5$, $Q_s = 72.5 - 25 = 47.5$. Imports $= 77.5 - 47.5 = 30$.
 
 (b) CS loss (using the area method):
 

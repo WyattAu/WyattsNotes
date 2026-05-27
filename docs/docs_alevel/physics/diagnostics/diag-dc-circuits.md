@@ -125,11 +125,11 @@ junction:
 
 $$I_1 + I_2 = I_R$$
 
-Apply Kirchhoff's voltage law to the left loop ($\varepsilon_1$$r_1$$R$):
+Apply Kirchhoff's voltage law to the left loop ($\varepsilon_1$, $r_1$, $R$):
 
 $$\varepsilon_1 - I_1 r_1 - I_R R = 0 \Rightarrow 10.0 - I_1 - 5I_R = 0 \quad (1)$$
 
-Apply Kirchhoff's voltage law to the right loop ($\varepsilon_2$$r_2$$R$):
+Apply Kirchhoff's voltage law to the right loop ($\varepsilon_2$, $r_2$, $R$):
 
 $$\varepsilon_2 - I_2 r_2 - I_R R = 0 \Rightarrow 6.0 - 2I_2 - 5I_R = 0 \quad (2)$$
 
@@ -261,7 +261,7 @@ with $R_2 = 10\,\Omega$.
 
 $$R_{\text{Th}} = \frac◆LB◆6 \times 10◆RB◆◆LB◆6 + 10◆RB◆ = \frac{60}{16} = 3.75\,\Omega$$
 
-Thevenin equivalent: $V_{\text{Th}} = 15\,\text{V}$$R_{\text{Th}} = 3.75\,\Omega$.
+Thevenin equivalent: $V_{\text{Th}} = 15\,\text{V}$, $R_{\text{Th}} = 3.75\,\Omega$.
 
 (b) Current through $R_3$:
 

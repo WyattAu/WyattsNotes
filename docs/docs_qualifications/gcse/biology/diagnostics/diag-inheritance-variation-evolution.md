@@ -183,7 +183,7 @@ now separate species.
 (b) Using the Hardy-Weinberg principle: $p + q = 1$Where $p$ is the dominant allele frequency and
 $q$ is the recessive allele frequency.
 
-Population A: $p = 0.3$$q = 1 - 0.3 = 0.7$. Population B: $p = 0.7$$q = 1 - 0.7 = 0.3$.
+Population A: $p = 0.3$, $q = 1 - 0.3 = 0.7$. Population B: $p = 0.7$, $q = 1 - 0.7 = 0.3$.
 
 (c) **Genetic drift** is the random change in allele frequencies due to chance events, particularly
 significant in small populations. In a small isolated population: (1) A random event (natural

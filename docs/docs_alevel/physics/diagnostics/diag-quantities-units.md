@@ -23,7 +23,7 @@ $$F_D = k \, r^n \, v^m \, \rho^p \, \eta^q$$
 Where $k$ is a dimensionless constant.
 
 Given that dynamic viscosity $\eta$ has dimensions $\text{M}\text{L}^{-1}\text{T}^{-1}$Use
-dimensional analysis to find the values of $n$$m$$p$And $q$ such that the equation is dimensionally
+dimensional analysis to find the values of $n$, $m$, $p$And $q$ such that the equation is dimensionally
 consistent. Express the resulting formula with $n$ as the subject.
 
 **Solution:**
@@ -63,11 +63,11 @@ Substituting into the length equation:
 
 $$1 = n + (2 - q) - 3(1 - q) - q$$ $$1 = n + 2 - q - 3 + 3q - q$$ $$1 = n - 1 + q$$ $$n = 2 - q$$
 
-So the exponents in terms of $q$ are: $n = 2 - q$$m = 2 - q$$p = 1 - q$.
+So the exponents in terms of $q$ are: $n = 2 - q$, $m = 2 - q$, $p = 1 - q$.
 
-For the standard Stokes' drag ($q = 1$): $n = 1$$m = 1$$p = 0$Giving $F_D = k r v \eta$.
+For the standard Stokes' drag ($q = 1$): $n = 1$, $m = 1$, $p = 0$Giving $F_D = k r v \eta$.
 
-For high Reynolds number drag ($q = 0$): $n = 2$$m = 2$$p = 1$Giving $F_D = k r^2 v^2 \rho$.
+For high Reynolds number drag ($q = 0$): $n = 2$, $m = 2$, $p = 1$Giving $F_D = k r^2 v^2 \rho$.
 
 ---
 
@@ -129,7 +129,7 @@ $l$Though it would be the appropriate method if the goal were to determine $g$ f
 
 A student uses a digital voltmeter (rated accuracy $\pm 0.5\%$ of reading $+ 2$ in the last digit)
 to measure the EMF of a cell. They record the following readings over several trials:
-$1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$.
+$1.52\,\text{V}$, $1.52\,\text{V}$, $1.52\,\text{V}$, $1.52\,\text{V}$, $1.52\,\text{V}$.
 
 (a) Identify the sources of systematic and random uncertainty in this measurement.
 
@@ -137,7 +137,7 @@ $1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$$1.52\,\text{V}$
 number of significant figures.
 
 (c) The student then uses an analogue voltmeter with the same accuracy specification but observes
-readings of $1.52\,\text{V}$$1.53\,\text{V}$$1.51\,\text{V}$$1.52\,\text{V}$$1.54\,\text{V}$.
+readings of $1.52\,\text{V}$, $1.53\,\text{V}$, $1.51\,\text{V}$, $1.52\,\text{V}$, $1.54\,\text{V}$.
 Explain why the random uncertainty has changed while the systematic uncertainty has not.
 
 **Solution:**
@@ -222,7 +222,7 @@ rest through a light gate at a measured distance $d$ below the release point. Th
 the speed $v$ of the ball as it passes through. The relationship is $v^2 = 2gd$So $g = v^2/(2d)$.
 
 The student records:
-$d = (1.500 \pm 0.003)\,\text{m}$$v = (5.40 \pm 0.05)\,\text{m}\,\text{s}^{-1}$.
+$d = (1.500 \pm 0.003)\,\text{m}$, $v = (5.40 \pm 0.05)\,\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate $g$ and its absolute uncertainty.
 

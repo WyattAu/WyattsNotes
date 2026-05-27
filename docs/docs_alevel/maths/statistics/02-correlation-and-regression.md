@@ -278,14 +278,14 @@ The original data.
 
 <details>
 <summary>Problem 1</summary>
-Calculate the PMCC for the data: $(1,2)$$(2,3)$$(3,5)$$(4,4)$$(5,7)$.
+Calculate the PMCC for the data: $(1,2)$, $(2,3)$, $(3,5)$, $(4,4)$, $(5,7)$.
 </details>
 
 <details>
 <summary>Solution 1</summary>
-$n=5$$\bar{x}=3$$\bar{y}=4.2$.
+$n=5$, $\bar{x}=3$, $\bar{y}=4.2$.
 
-$\sum x^2 = 55$$\sum y^2 = 103$$\sum xy = 74$.
+$\sum x^2 = 55$, $\sum y^2 = 103$, $\sum xy = 74$.
 
 $S_{xx} = 55 - 5(9) = 10$. $S_{yy} = 103 - 5(17.64) = 103 - 88.2 = 14.8$.
 $S_{xy} = 74 - 5(3)(4.2) = 74 - 63 = 11$.
@@ -385,7 +385,7 @@ Correlation does not imply causation. Both ice cream sales and drowning deaths a
 
 <details>
 <summary>Problem 7</summary>
-Given $S_{xx} = 80$$S_{yy} = 200$And $S_{xy} = 100$Find $r$$b$ (gradient of $y$ on $x$), and the proportion of variance in $y$ explained by $x$.
+Given $S_{xx} = 80$, $S_{yy} = 200$And $S_{xy} = 100$Find $r$, $b$ (gradient of $y$ on $x$), and the proportion of variance in $y$ explained by $x$.
 </details>
 
 <details>
@@ -491,7 +491,7 @@ Consistent assessment standards.
 
 <details>
 <summary>Problem 12</summary>
-A medical researcher collects data on blood pressure ($x$ mmHg) and cholesterol level ($y$ mg/dL) for 12 patients. She finds $\bar{x} = 132$$\bar{y} = 218$$S_{xx} = 3600$$S_{yy} = 28900$$S_{xy} = 8100$.
+A medical researcher collects data on blood pressure ($x$ mmHg) and cholesterol level ($y$ mg/dL) for 12 patients. She finds $\bar{x} = 132$, $\bar{y} = 218$, $S_{xx} = 3600$, $S_{yy} = 28900$, $S_{xy} = 8100$.
 
 (a) Calculate the PMCC and interpret it. (b) Find the regression line of $y$ on $x$. (c) Predict the
 Cholesterol level for a patient with blood pressure of 150 mmHg. Comment on the reliability.

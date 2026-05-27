@@ -156,7 +156,7 @@ Magnesium is oxidised ($\mathrm{Mg} \to \mathrm{Mg^{2+}} + 2e^-$) and copper(II)
 
 ### Metals Above Carbon in the Reactivity Series
 
-Metals more reactive than carbon ($\mathrm{K}$$\mathrm{Na}$$\mathrm{Ca}$$\mathrm{Mg}$ $\mathrm{Al}$)
+Metals more reactive than carbon ($\mathrm{K}$, $\mathrm{Na}$, $\mathrm{Ca}$, $\mathrm{Mg}$ $\mathrm{Al}$)
 are extracted by **electrolysis** of their molten compounds ( chlorides or Oxides).
 
 **Example: Extraction of aluminium from $\mathrm{Al_2O_3}$ (Hall-Heroult process)**
@@ -170,7 +170,7 @@ are extracted by **electrolysis** of their molten compounds ( chlorides or Oxide
 
 ### Metals Below Carbon in the Reactivity Series
 
-Metals less reactive than carbon ($\mathrm{Zn}$$\mathrm{Fe}$$\mathrm{Sn}$$\mathrm{Pb}$
+Metals less reactive than carbon ($\mathrm{Zn}$, $\mathrm{Fe}$, $\mathrm{Sn}$, $\mathrm{Pb}$
 $\mathrm{Cu}$) are extracted by **reduction with carbon** in a blast furnace.
 
 **Example: Extraction of iron from $\mathrm{Fe_2O_3}$**
@@ -276,17 +276,17 @@ Discharged. The product at each electrode depends on the relative reactivity of 
 
 **At the cathode (reduction):**
 
-- If the metal is more reactive than hydrogen ($\mathrm{K}$$\mathrm{Na}$$\mathrm{Ca}$
-  $\mathrm{Mg}$$\mathrm{Al}$$\mathrm{Zn}$): hydrogen gas is produced.
+- If the metal is more reactive than hydrogen ($\mathrm{K}$, $\mathrm{Na}$, $\mathrm{Ca}$
+  $\mathrm{Mg}$, $\mathrm{Al}$, $\mathrm{Zn}$): hydrogen gas is produced.
   $$2\mathrm{H_2O} + 2e^- \to \mathrm{H_2} + 2\mathrm{OH^-}$$
-- If the metal is less reactive than hydrogen ($\mathrm{Cu}$$\mathrm{Ag}$$\mathrm{Au}$): the metal
+- If the metal is less reactive than hydrogen ($\mathrm{Cu}$, $\mathrm{Ag}$, $\mathrm{Au}$): the metal
   is produced. $$\mathrm{Cu^{2+}} + 2e^- \to \mathrm{Cu}$$
 
 **At the anode (oxidation):**
 
-- If the anion is a halide ($\mathrm{Cl^-}$$\mathrm{Br^-}$$\mathrm{I^-}$): the halogen is produced.
+- If the anion is a halide ($\mathrm{Cl^-}$, $\mathrm{Br^-}$, $\mathrm{I^-}$): the halogen is produced.
   $$2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$$
-- If the anion is anything else ($\mathrm{SO_4^{2-}}$$\mathrm{NO_3^-}$): oxygen gas is produced.
+- If the anion is anything else ($\mathrm{SO_4^{2-}}$, $\mathrm{NO_3^-}$): oxygen gas is produced.
   $$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$ (or equivalently:
   $2\mathrm{H_2O} \to \mathrm{O_2} + 4\mathrm{H^+} + 4e^-$)
 
@@ -365,7 +365,7 @@ At the cathode: $\mathrm{Ag^+} + e^- \to \mathrm{Ag}$ (silver deposits on the ob
   cell, the anode is positive; in a galvanic cell, the anode is negative (electrons flow from anode
   to cathode).
 - Forgetting that $2 \times F$ electrons are needed to deposit 1 mole of a divalent metal (e.g.,
-  $\mathrm{Cu^{2+}}$$\mathrm{Zn^{2+}}$). Always check the ion's charge.
+  $\mathrm{Cu^{2+}}$, $\mathrm{Zn^{2+}}$). Always check the ion's charge.
 - Applying the wrong rule for discharge at the anode in aqueous electrolysis. Halides are discharged
   in preference to hydroxide; other anions result in oxygen production.
 - Assuming the most reactive metal is always deposited at the cathode. In aqueous solution, if the

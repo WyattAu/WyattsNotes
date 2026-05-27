@@ -399,7 +399,7 @@ Movement in either direction.
 - Occurs in both liquids and gases
 - Rate increases with: larger concentration gradient, higher temperature, larger surface area,
   shorter diffusion distance
-- Only works for small, non-polar molecules (e.g., $\mathrm{O_2$$\mathrm{CO_2$) and lipid-soluble
+- Only works for small, non-polar molecules (e.g., $\mathrm{O_2$, $\mathrm{CO_2$) and lipid-soluble
   substances
 - Large or polar molecules (e.g., glucose, amino acids, ions) cannot diffuse through the lipid
   bilayer and require transport proteins (facilitated diffusion or active transport)

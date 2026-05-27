@@ -217,7 +217,7 @@ Maximum acceleration: $a_{\max} = A\omega^2 = 0.05 \times 250 = 12.5\,\text{m}\,
 
 **Question:**
 
-A mass-spring system has $m = 0.50\,\text{kg}$$k = 50\,\text{N}\,\text{m}^{-1}$And is subject to a
+A mass-spring system has $m = 0.50\,\text{kg}$, $k = 50\,\text{N}\,\text{m}^{-1}$And is subject to a
 damping force $F_d = -bv$ where $b = 0.50\,\text{N}\,\text{s}\,\text{m}^{-1}$. A driving force
 $F = F_0\cos(\omega_d t)$ is applied.
 

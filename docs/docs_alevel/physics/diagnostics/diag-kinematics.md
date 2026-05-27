@@ -175,7 +175,7 @@ Take $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 
-(a) Using $v^2 = u^2 + 2as$ with $v = 0$$u = 18.0$$a = -9.81$:
+(a) Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 18.0$, $a = -9.81$:
 
 $$0 = 18.0^2 - 2(9.81)s \Rightarrow s = \frac{324}{19.62} = 16.52\,\text{m}$$
 

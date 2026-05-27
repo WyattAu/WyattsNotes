@@ -152,7 +152,7 @@ Using $\sin^2 2x = \dfrac{1 - \cos 4x}{2}$:
 
 $$= \frac{1}{8}\int_0^{\pi/2}(1 - \cos 4x)\,dx = \frac{1}{8}\left[x - \frac{\sin 4x}{4}\right]_0^{\pi/2} = \frac{1}{8} \cdot \frac{\pi}{2} = \frac{\pi}{16}$$
 
-**(b)** With $u = \sin x$$du = \cos x\,dx$When $x = 0$: $u = 0$When $x = \frac{\pi}{2}$: $u = 1$:
+**(b)** With $u = \sin x$, $du = \cos x\,dx$When $x = 0$: $u = 0$When $x = \frac{\pi}{2}$: $u = 1$:
 
 $$\int_0^{\pi/2} \sin^2 x\cos^2 x\,dx = \int_0^1 u^2(1 - u^2)\,du = \int_0^1 (u^2 - u^4)\,du$$
 

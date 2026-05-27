@@ -20,7 +20,7 @@ $$
 \lim_{x \to a} f(x) = L
 $$
 
-This means that as $x$ gets arbitrarily close to $a$$f(x)$ gets arbitrarily close to $L$.
+This means that as $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily close to $L$.
 
 ### Left-Hand and Right-Hand Limits
 
@@ -276,7 +276,7 @@ $$
 
 :::warning[Exam Tip]
 
-The IB formula booklet provides the derivatives of $\sin x$$\cos x$$\tan x$$e^x$And $\ln x$.
+The IB formula booklet provides the derivatives of $\sin x$, $\cos x$, $\tan x$, $e^x$And $\ln x$.
 Memorise the derivatives of the reciprocal trig functions and inverse trig functions as they may not
 Be in all booklets.
 
@@ -606,7 +606,7 @@ $$
 \frac{d^2A}{dx^2} = -2 \lt 0 \implies \mathrm{maximum}
 $$
 
-So $x = 25\mathrm{ cm}$$y = 25\mathrm{ cm}$. The rectangle is a square with area
+So $x = 25\mathrm{ cm}$, $y = 25\mathrm{ cm}$. The rectangle is a square with area
 $625\mathrm{ cm}^2$.
 
 :::
@@ -827,7 +827,7 @@ Let $f(x) = \dfrac{x}{x^2 + 1}$.
 
 **(a)** Find $f'(x)$.
 
-Using the quotient rule with $u = x$$v = x^2 + 1$:
+Using the quotient rule with $u = x$, $v = x^2 + 1$:
 
 $$
 F'(x) = \frac{(x^2+1)(1) - x(2x)}{(x^2+1)^2} = \frac{1 - x^2}{(x^2+1)^2}
@@ -870,8 +870,8 @@ The denominator $x^2 + 1 \neq 0$ for all real $x$So there are no vertical asympt
 | Normal gradient        | $-\dfrac{1}{f'(a)}$                                         |
 | Increasing             | $f'(x) \gt 0$                                               |
 | Decreasing             | $f'(x) \lt 0$                                               |
-| Local max              | $f'(a) = 0$$f''(a) \lt 0$                                   |
-| Local min              | $f'(a) = 0$$f''(a) \gt 0$                                   |
+| Local max              | $f'(a) = 0$, $f''(a) \lt 0$                                   |
+| Local min              | $f'(a) = 0$, $f''(a) \gt 0$                                   |
 
 :::tip[Exam Strategy]
 

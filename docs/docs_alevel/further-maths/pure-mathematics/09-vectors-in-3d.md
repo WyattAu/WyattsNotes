@@ -57,7 +57,7 @@ A vector in 3D is written as a column vector or in component form:
 
 $$\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$$
 
-Where $\mathbf{i}$$\mathbf{j}$$\mathbf{k}$ are unit vectors along the $x$-, $y$-, $z$-axes.
+Where $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$ are unit vectors along the $x$-, $y$-, $z$-axes.
 
 ### 2.2 Position vectors and displacement
 
@@ -77,7 +77,7 @@ $$|\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$$
 
 $$\cos\alpha = \frac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\beta = \frac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\gamma = \frac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
 
-Where $\alpha$$\beta$$\gamma$ are the angles $\mathbf{a}$ makes with the $x$-, $y$-, $z$-axes.
+Where $\alpha$, $\beta$, $\gamma$ are the angles $\mathbf{a}$ makes with the $x$-, $y$-, $z$-axes.
 
 $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
@@ -160,7 +160,7 @@ $\mathbf{b}$And its direction is given by the right-hand rule.
   zero)
 - $\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b} + \mathbf{a}\times\mathbf{c}$
   (distributive)
-- $\mathbf{i}\times\mathbf{j} = \mathbf{k}$$\mathbf{j}\times\mathbf{k} = \mathbf{i}$
+- $\mathbf{i}\times\mathbf{j} = \mathbf{k}$, $\mathbf{j}\times\mathbf{k} = \mathbf{i}$
   $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
 :::warning warning $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is
@@ -206,7 +206,7 @@ $\mathbf{r}_2 = \mathbf{a}_2 + \mu\mathbf{d}_2$:
 $\mathbf{r}_1 = \begin{pmatrix}1\\2\\0\end{pmatrix} + \lambda\begin{pmatrix}1\\-1\\2\end{pmatrix}$
 And $\mathbf{r}_2 = \begin{pmatrix}3\\1\\4\end{pmatrix} + \mu\begin{pmatrix}2\\1\\-1\end{pmatrix}$.
 
-Equating: $1+\lambda = 3+2\mu$$2-\lambda = 1+\mu$$2\lambda = 4-\mu$.
+Equating: $1+\lambda = 3+2\mu$, $2-\lambda = 1+\mu$, $2\lambda = 4-\mu$.
 
 From equation 2: $\lambda = 1 - \mu$. From equation 1:
 $1+(1-\mu) = 3+2\mu \implies 2-\mu = 3+2\mu \implies -3\mu = 1 \implies \mu = -1/3$ $\lambda = 4/3$.
@@ -235,11 +235,11 @@ $$\boxed{ax + by + cz = d}$$
 
 ### 6.3 Finding the normal to a plane
 
-Given three points $A$$B$$C$ on the plane, the normal is
+Given three points $A$, $B$, $C$ on the plane, the normal is
 
 $$\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC}$$
 
-**Example.** Find the equation of the plane through $A(1,0,2)$$B(3,1,0)$$C(0,2,1)$.
+**Example.** Find the equation of the plane through $A(1,0,2)$, $B(3,1,0)$, $C(0,2,1)$.
 
 $\overrightarrow{AB} = \begin{pmatrix}2\\1\\-2\end{pmatrix}$
 $\overrightarrow{AC} = \begin{pmatrix}-1\\2\\-1\end{pmatrix}$.
@@ -317,7 +317,7 @@ $D = \dfrac◆LB◆|2(1)-1(2)+2(3)-5|◆RB◆◆LB◆\sqrt{4+1+4}◆RB◆ = \dfr
 
 ### 8.1 Definition
 
-**Definition.** The **scalar triple product** of vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ is
+**Definition.** The **scalar triple product** of vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ is
 
 $$\boxed{[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})}$$
 
@@ -329,7 +329,7 @@ $$\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = \begin{vmatrix}a_1 & a_2 & a_3\\
 
 ### Proof that the scalar triple product equals the volume of the parallelepiped
 
-The parallelepiped with edges $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ has base area
+The parallelepiped with edges $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ has base area
 $|\mathbf{b}\times\mathbf{c}|$ (from Section 4.3).
 
 The height is the component of $\mathbf{a}$ perpendicular to the base, which is the projection of
@@ -353,10 +353,10 @@ $\square$
   (cyclic permutation)
 - $\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = -\mathbf{a}\cdot(\mathbf{c}\times\mathbf{b})$
   (swapping two vectors changes sign)
-- $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are
+- $[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = 0$ if and only if $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ are
   coplanar
 
-:::info info $C$$D$ are coplanar, then
+:::info info $C$, $D$ are coplanar, then
 $\overrightarrow{AB}\cdot(\overrightarrow{AC}\times\overrightarrow{AD}) = 0$. :::
 
 <hr />
@@ -416,7 +416,7 @@ $\mathbf{b}\cdot(\mathbf{a}\times\mathbf{b}) = 1(-10)+4(7)+(-2)(9) = -10+28-18 =
 <details>
 <summary>Problem 2</summary>
 
-Find the equation of the plane through $A(1, 2, 0)$$B(0, 1, 3)$$C(2, -1, 1)$.
+Find the equation of the plane through $A(1, 2, 0)$, $B(0, 1, 3)$, $C(2, -1, 1)$.
 
 </details>
 
@@ -518,8 +518,8 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 <details>
 <summary>Solution 6</summary>
 
-$\mathbf{n}_1 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$$|\mathbf{n}_1| = \sqrt{6}$.
-$\mathbf{n}_2 = \begin{pmatrix}1\\1\\2\end{pmatrix}$$|\mathbf{n}_2| = \sqrt{6}$.
+$\mathbf{n}_1 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$, $|\mathbf{n}_1| = \sqrt{6}$.
+$\mathbf{n}_2 = \begin{pmatrix}1\\1\\2\end{pmatrix}$, $|\mathbf{n}_2| = \sqrt{6}$.
 
 $\cos\theta = \dfrac◆LB◆|2-1+2|◆RB◆◆LB◆\sqrt{6}\cdot\sqrt{6}◆RB◆ = \dfrac{3}{6} = \dfrac{1}{2}$.
 
@@ -533,7 +533,7 @@ Section 6.4.
 <details>
 <summary>Problem 7</summary>
 
-Show that the points $A(1, 2, 3)$$B(3, 1, 2)$$C(2, 3, 1)$$D(0, 4, 4)$ are coplanar.
+Show that the points $A(1, 2, 3)$, $B(3, 1, 2)$, $C(2, 3, 1)$, $D(0, 4, 4)$ are coplanar.
 
 </details>
 
@@ -580,7 +580,7 @@ $\mathbf{n}_2 = \begin{pmatrix}2\\-1\\1\end{pmatrix}$.
 Direction:
 $\mathbf{d} = \mathbf{n}_1\times\mathbf{n}_2 = \begin{pmatrix}(1)(1)-(1)(-1)\\(1)(2)-(1)(1)\\(1)(-1)-(1)(2)\end{pmatrix} = \begin{pmatrix}2\\1\\-3\end{pmatrix}$.
 
-Set $z = 0$: $x + y = 6$ and $2x - y = 3$. Adding: $3x = 9 \implies x = 3$$y = 3$.
+Set $z = 0$: $x + y = 6$ and $2x - y = 3$. Adding: $3x = 9 \implies x = 3$, $y = 3$.
 
 Point: $(3, 3, 0)$.
 
@@ -674,7 +674,7 @@ Check: the midpoint of $Q$ and $Q'$ is $(2, 2, 2)$Which satisfies $2+2+2 = 6$. C
 **Problem.** Find the acute angle between the line $\mathbf{r} = (1, -1, 2) + \lambda(3, 0, -1)$ and
 The plane $x - 2y + 2z = 5$.
 
-**Solution.** $\mathbf{d} = (3, 0, -1)$$\mathbf{n} = (1, -2, 2)$.
+**Solution.** $\mathbf{d} = (3, 0, -1)$, $\mathbf{n} = (1, -2, 2)$.
 
 $$\sin\phi = \frac◆LB◆|\mathbf{d}\cdot\mathbf{n}|◆RB◆◆LB◆|\mathbf{d}||\mathbf{n}|◆RB◆ = \frac◆LB◆|3 + 0 - 2|◆RB◆◆LB◆\sqrt{10}\sqrt{9}◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{10}◆RB◆$$
 
@@ -682,10 +682,10 @@ $$\phi = \arcsin\!\left(\frac◆LB◆1◆RB◆◆LB◆3\sqrt{10}◆RB◆\right) 
 
 ### Example 11.3: Volume of a tetrahedron using the scalar triple product
 
-**Problem.** Find the volume of the tetrahedron with vertices $O(0,0,0)$$A(1,0,0)$$B(0,2,0)$
+**Problem.** Find the volume of the tetrahedron with vertices $O(0,0,0)$, $A(1,0,0)$, $B(0,2,0)$
 $C(0,0,3)$.
 
-**Solution.** $\overrightarrow{OA} = (1,0,0)$$\overrightarrow{OB} = (0,2,0)$
+**Solution.** $\overrightarrow{OA} = (1,0,0)$, $\overrightarrow{OB} = (0,2,0)$
 $\overrightarrow{OC} = (0,0,3)$.
 
 $$V = |\overrightarrow{OA}\cdot(\overrightarrow{OB}\times\overrightarrow{OC})| = \left|\begin{vmatrix}1&0&0\\0&2&0\\0&0&3\end{vmatrix}\right| = |6| = 6$$
@@ -697,7 +697,7 @@ This equals $\frac{1}{6} \times 1 \times 2 \times 3 = 1$Confirming the standard 
 **Problem.** Find the shortest distance between the lines
 $\mathbf{r}_1 = (1, 0, 0) + \lambda(1, 1, 0)$ and $\mathbf{r}_2 = (0, 1, 0) + \mu(0, 1, 1)$.
 
-**Solution.** $\mathbf{d}_1 = (1, 1, 0)$$\mathbf{d}_2 = (0, 1, 1)$.
+**Solution.** $\mathbf{d}_1 = (1, 1, 0)$, $\mathbf{d}_2 = (0, 1, 1)$.
 
 These are not parallel (not scalar multiples), so the lines are either intersecting or skew.
 
@@ -710,9 +710,9 @@ Consistent! The lines intersect, so the shortest distance is $0$.
 
 ### Example 11.5: Finding the equation of a plane from three points
 
-**Problem.** Find the equation of the plane through $P(1, 1, 0)$$Q(2, 0, 1)$$R(0, 1, 1)$.
+**Problem.** Find the equation of the plane through $P(1, 1, 0)$, $Q(2, 0, 1)$, $R(0, 1, 1)$.
 
-**Solution.** $\overrightarrow{PQ} = (1, -1, 1)$$\overrightarrow{PR} = (-1, 0, 1)$.
+**Solution.** $\overrightarrow{PQ} = (1, -1, 1)$, $\overrightarrow{PR} = (-1, 0, 1)$.
 
 $$\mathbf{n} = \overrightarrow{PQ}\times\overrightarrow{PR} = \begin{pmatrix}(-1)(1) - (1)(0)\\(1)(-1) - (1)(1)\\(1)(0) - (-1)(-1)\end{pmatrix} = \begin{pmatrix}-1\\-2\\-1\end{pmatrix}$$
 
@@ -722,10 +722,10 @@ Equation: $-x - 2y - z = -3$I.e., $\boxed{x + 2y + z = 3}$.
 
 ### Example 11.6: Verifying coplanarity
 
-**Problem.** Determine whether the points $A(1, 0, 1)$$B(2, 1, 3)$$C(3, 1, 4)$$D(0, -1, -1)$ Are
+**Problem.** Determine whether the points $A(1, 0, 1)$, $B(2, 1, 3)$, $C(3, 1, 4)$, $D(0, -1, -1)$ Are
 coplanar.
 
-**Solution.** $\overrightarrow{AB} = (1, 1, 2)$$\overrightarrow{AC} = (2, 1, 3)$
+**Solution.** $\overrightarrow{AB} = (1, 1, 2)$, $\overrightarrow{AC} = (2, 1, 3)$
 $\overrightarrow{AD} = (-1, -1, -2)$.
 
 $$\overrightarrow{AB}\times\overrightarrow{AC} = \begin{pmatrix}(1)(3)-(2)(1)\\(2)(2)-(1)(3)\\(1)(1)-(1)(2)\end{pmatrix} = \begin{pmatrix}1\\1\\-1\end{pmatrix}$$
@@ -802,7 +802,7 @@ Find the shortest distance between $L_1$ and $L_2$.
 <details>
 <summary>Solution</summary>
 
-$\mathbf{d}_1 = (2,-1,1)$$\mathbf{d}_2 = (1,-1,-1)$.
+$\mathbf{d}_1 = (2,-1,1)$, $\mathbf{d}_2 = (1,-1,-1)$.
 
 $\mathbf{d}_1\times\mathbf{d}_2 = \begin{pmatrix}(-1)(-1)-(1)(-1)\\(1)(1)-(2)(-1)\\(2)(-1)-(-1)(1)\end{pmatrix} = \begin{pmatrix}2\\3\\-3\end{pmatrix}$
 
@@ -818,7 +818,7 @@ $D = \dfrac◆LB◆|-5|◆RB◆◆LB◆\sqrt{22}◆RB◆ = \dfrac◆LB◆5◆RB�
 
 ### Question 12
 
-Find the volume of the parallelepiped with edges $\mathbf{a} = (2, 0, 1)$$\mathbf{b} = (1, 3, 0)$
+Find the volume of the parallelepiped with edges $\mathbf{a} = (2, 0, 1)$, $\mathbf{b} = (1, 3, 0)$
 $\mathbf{c} = (0, -1, 2)$.
 
 <details>
@@ -942,13 +942,13 @@ Representations of curves.
 
 ### Question 16
 
-Find the equation of the plane that passes through the points $A(1,0,0)$$B(0,1,0)$$C(0,0,1)$ and
+Find the equation of the plane that passes through the points $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$ and
 Verify that $D(1/3, 1/3, 1/3)$ lies on it.
 
 <details>
 <summary>Solution</summary>
 
-$\overrightarrow{AB} = (-1,1,0)$$\overrightarrow{AC} = (-1,0,1)$.
+$\overrightarrow{AB} = (-1,1,0)$, $\overrightarrow{AC} = (-1,0,1)$.
 
 $\mathbf{n} = \overrightarrow{AB}\times\overrightarrow{AC} = (1,1,1)$.
 
@@ -969,7 +969,7 @@ $\mathbf{a}\times(\mathbf{b}\times\mathbf{c}) = \mathbf{b}(\mathbf{a}\cdot\mathb
 <details>
 <summary>Solution</summary>
 
-Let $\mathbf{a} = (a_1,a_2,a_3)$$\mathbf{b} = (b_1,b_2,b_3)$$\mathbf{c} = (c_1,c_2,c_3)$.
+Let $\mathbf{a} = (a_1,a_2,a_3)$, $\mathbf{b} = (b_1,b_2,b_3)$, $\mathbf{c} = (c_1,c_2,c_3)$.
 
 $\mathbf{b}\times\mathbf{c} = (b_2c_3-b_3c_2,\; b_3c_1-b_1c_3,\; b_1c_2-b_2c_1)$.
 
@@ -995,9 +995,9 @@ $\mathbf{r}_2 = (0,0,1)+\mu(0,1,1)$. Determine whether they intersect, are paral
 <details>
 <summary>Solution</summary>
 
-$\mathbf{d}_1 = (1,0,-1)$$\mathbf{d}_2 = (0,1,1)$. Not parallel (not scalar multiples).
+$\mathbf{d}_1 = (1,0,-1)$, $\mathbf{d}_2 = (0,1,1)$. Not parallel (not scalar multiples).
 
-For intersection: $\lambda = 0$$1 = \mu$$-\lambda = 1+\mu$.
+For intersection: $\lambda = 0$, $1 = \mu$, $-\lambda = 1+\mu$.
 
 From $\lambda = 0$: $1 = \mu$ and $0 = 1+1 = 2$. Contradiction.
 
@@ -1057,7 +1057,7 @@ Find the angle between the planes $2x - y + z = 3$ and $x + y + 2z = 1$.
 <details>
 <summary>Solution</summary>
 
-$\mathbf{n}_1 = (2,-1,1)$$\mathbf{n}_2 = (1,1,2)$.
+$\mathbf{n}_1 = (2,-1,1)$, $\mathbf{n}_2 = (1,1,2)$.
 
 $\cos\theta = \dfrac◆LB◆|2-1+2|◆RB◆◆LB◆\sqrt{6}\sqrt{6}◆RB◆ = \dfrac{3}{6} = \dfrac{1}{2}$.
 
@@ -1147,7 +1147,7 @@ $\mathbf{r}_2 = (0,1,0)+\mu(1,-1,0)$ intersect and find the point of intersectio
 <details>
 <summary>Solution</summary>
 
-$1+\lambda = \mu$$\lambda = 1-\mu$$\lambda = 0$.
+$1+\lambda = \mu$, $\lambda = 1-\mu$, $\lambda = 0$.
 
 From $\lambda = 0$: $\mu = 1$. Check: $1 = 1$ ✓, $0 = 0$ ✓, $0 = 0$ ✓.
 

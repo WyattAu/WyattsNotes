@@ -106,7 +106,7 @@ non-parallel directions).]
 
 **(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$ (since
 $\frac{2}{1} \neq \frac{-1}{a}$ for $a = -\frac{1}{2}$And checking: at
-$a = -\frac{1}{2}$$\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never
+$a = -\frac{1}{2}$, $\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never
 parallel.
 
 For intersection, there exist $s, t$ such that:
@@ -128,7 +128,7 @@ $\begin{pmatrix} 1+6 \\ 2-3 \\ 3+3 \end{pmatrix} = \begin{pmatrix} 7 \\ -1 \\ 6 
 **(b)** For $a = 3$: the lines are not parallel ($\mathbf{d}_1$ and $\mathbf{d}_2$ not
 proportional). Check for intersection:
 
-$t = 2s - 3$$s = 3$$t = 3$ (from first and third equations).
+$t = 2s - 3$, $s = 3$, $t = 3$ (from first and third equations).
 
 Second equation: $2 - 3 = 1 + 3(3) = 10$Giving $-1 = 10$Which is false.
 
@@ -193,7 +193,7 @@ To find a point on both planes, set $z = 0$:
 
 $2x - y = 5$ and $x + 2y = 3$. Solving: from the first, $y = 2x - 5$.
 
-$x + 2(2x - 5) = 3 \implies 5x = 13 \implies x = \frac{13}{5}$$y = \frac{1}{5}$.
+$x + 2(2x - 5) = 3 \implies 5x = 13 \implies x = \frac{13}{5}$, $y = \frac{1}{5}$.
 
 Point: $\left(\frac{13}{5}, \frac{1}{5}, 0\right)$.
 
@@ -219,9 +219,9 @@ cosine formula.
 
 **Question:**
 
-Points $A$$B$$C$ lie on a circle. In a coordinate system, $A = (1, 2)$$B = (5, 4)$And $C = (3, 8)$.
+Points $A$, $B$, $C$ lie on a circle. In a coordinate system, $A = (1, 2)$, $B = (5, 4)$And $C = (3, 8)$.
 
-**(a)** Using vectors, find the centre and radius of the circle passing through $A$$B$And $C$.
+**(a)** Using vectors, find the centre and radius of the circle passing through $A$, $B$And $C$.
 
 **(b)** A point $D$ has position vector $\mathbf{d} = \begin{pmatrix} 7 \\ 6 \end{pmatrix}$. Use the
 scalar product to determine whether $D$ lies inside, on, or outside the circle.
@@ -234,7 +234,7 @@ applies vector dot products for point location.]
 
 **Solution:**
 
-**(a)** The centre $O$ of the circle is equidistant from $A$$B$And $C$. It lies on the perpendicular
+**(a)** The centre $O$ of the circle is equidistant from $A$, $B$And $C$. It lies on the perpendicular
 bisectors of $AB$ and $AC$.
 
 Midpoint of $AB$: $M_{AB} = \left(\frac{1+5}{2}, \frac{2+4}{2}\right) = (3, 3)$.
@@ -257,7 +257,7 @@ Setting equal: $3 + s = 2 + 3t$ and $3 - 2s = 5 - t$.
 
 From the second: $t = 2 + 2s$. Substituting into the first: $3 + s = 2 + 3(2+2s) = 8 + 6s$.
 
-$-5s = 5 \implies s = -1$$t = 0$.
+$-5s = 5 \implies s = -1$, $t = 0$.
 
 Centre:
 $O = \begin{pmatrix} 3 + (-1) \\ 3 - 2(-1) \end{pmatrix} = \begin{pmatrix} 2 \\ 5 \end{pmatrix}$.
@@ -266,7 +266,7 @@ Radius: $\lvert\overrightarrow{OA}\rvert = \sqrt{(1-2)^2 + (2-5)^2} = \sqrt{1+9}
 
 **(b)** $\lvert\overrightarrow{OD}\rvert = \sqrt{(7-2)^2 + (6-5)^2} = \sqrt{25+1} = \sqrt{26}$.
 
-Since $\sqrt{26} \gt \sqrt{10}$$D$ lies outside the circle.
+Since $\sqrt{26} \gt \sqrt{10}$, $D$ lies outside the circle.
 
 **(c)** The tangent at $A$ is perpendicular to the radius $OA$.
 
@@ -369,8 +369,8 @@ position vector and midpoint reasoning.]
 
 **Solution:**
 
-**(a)** Let the parallelogram have vertices $A$$B$$C$$D$ with position vectors
-$\mathbf{a}$$\mathbf{b}$$\mathbf{c}$$\mathbf{d}$.
+**(a)** Let the parallelogram have vertices $A$, $B$, $C$, $D$ with position vectors
+$\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$, $\mathbf{d}$.
 
 Since $ABCD$ is a parallelogram, $\overrightarrow{AB} = \overrightarrow{DC}$:
 
@@ -384,7 +384,7 @@ Since $\mathbf{a} + \mathbf{c} = \mathbf{b} + \mathbf{d}$These midpoints coincid
 diagonals bisect each other.
 
 **(b)** Let the vertices of triangle $ABC$ have position vectors
-$\mathbf{a}$$\mathbf{b}$$\mathbf{c}$.
+$\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$.
 
 The midpoint of $BC$ has position vector $\frac◆LB◆\mathbf{b}+\mathbf{c}◆RB◆◆LB◆2◆RB◆$.
 
@@ -410,7 +410,7 @@ the ratio $AG:GM_{BC} = 2:1$.
 
 **(c)** The midpoint of $PQ$: position vector $\frac◆LB◆\mathbf{p}+\mathbf{q}◆RB◆◆LB◆2◆RB◆$.
 
-For triangle $ABC$ with vertices at position vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$:
+For triangle $ABC$ with vertices at position vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$:
 
 Midpoint of $AB$: $M = \frac◆LB◆\mathbf{a}+\mathbf{b}◆RB◆◆LB◆2◆RB◆$. Midpoint of $AC$:
 $N = \frac◆LB◆\mathbf{a}+\mathbf{c}◆RB◆◆LB◆2◆RB◆$.

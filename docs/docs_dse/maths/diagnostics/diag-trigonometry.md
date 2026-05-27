@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-In triangle $ABC$$AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of
+In triangle $ABC$, $AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of
 $\angle ABC$.
 
 **Solution:**
@@ -26,7 +26,7 @@ By the sine rule:
 
 $$\frac{\sin \angle ABC}{AC} = \frac{\sin 30°}{BC}$$
 
-We need $AC$ first. We only have $AB$$BC$And $\angle A$ -- this is the SSA (ambiguous) case.
+We need $AC$ first. We only have $AB$, $BC$And $\angle A$ -- this is the SSA (ambiguous) case.
 
 Using the sine rule: $\dfrac{\sin C}{8} = \dfrac{\sin 30°}{6}$
 
@@ -46,7 +46,7 @@ This is the ambiguous case of the sine rule. A common mistake is giving only the
 
 **Question:**
 
-In triangle $PQR$$PQ = 5$$QR = 7$$PR = 8$. Find $\angle PQR$.
+In triangle $PQR$, $PQ = 5$, $QR = 7$, $PR = 8$. Find $\angle PQR$.
 
 **Solution:**
 
@@ -92,7 +92,7 @@ Solution: $x = 30°,\; 90°,\; 150°,\; 270°$.
 
 **Question:**
 
-In the cuboid $ABCDEFGH$ where $AB = 4$$BC = 3$$CG = 5$. Find the angle between the diagonal $AG$
+In the cuboid $ABCDEFGH$ where $AB = 4$, $BC = 3$, $CG = 5$. Find the angle between the diagonal $AG$
 and the base $ABCD$.
 
 **Solution:**
@@ -137,8 +137,8 @@ $$\frac{1 - \cos 2x}{\sin 2x} = \frac{1 - (1 - 2\sin^2 x)}{2\sin x \cos x} = \fr
 **Question:**
 
 Three points
-$A(\cos\theta,\; \sin\theta)$$B(\cos 3\theta,\; \sin 3\theta)$$C(\cos 5\theta,\; \sin 5\theta)$ lie
-on the unit circle. Show that $A$$B$$C$ are collinear when $\theta = 36°$.
+$A(\cos\theta,\; \sin\theta)$, $B(\cos 3\theta,\; \sin 3\theta)$, $C(\cos 5\theta,\; \sin 5\theta)$ lie
+on the unit circle. Show that $A$, $B$, $C$ are collinear when $\theta = 36°$.
 
 **Solution:**
 
@@ -160,13 +160,13 @@ Substituting:
 
 $$\frac{1}{2}\left|-2\cos\theta \cos 4\theta \sin\theta + 2\cos 3\theta \cos 3\theta \sin 2\theta - 2\cos 5\theta \cos 2\theta \sin\theta\right|$$
 
-At $\theta = 36°$: $\theta = 36°$$3\theta = 108°$$5\theta = 180°$.
+At $\theta = 36°$: $\theta = 36°$, $3\theta = 108°$, $5\theta = 180°$.
 
-$A = (\cos 36°,\; \sin 36°)$$B = (\cos 108°,\; \sin 108°)$$C = (-1,\; 0)$.
+$A = (\cos 36°,\; \sin 36°)$, $B = (\cos 108°,\; \sin 108°)$, $C = (-1,\; 0)$.
 
 Slope $AB = \dfrac{\sin 108° - \sin 36°}{\cos 108° - \cos 36°}$
 
-$\sin 108° = \cos 18°$$\cos 108° = -\sin 18°$.
+$\sin 108° = \cos 18°$, $\cos 108° = -\sin 18°$.
 
 Slope
 $AC = \dfrac{0 - \sin 36°}{-1 - \cos 36°} = \dfrac{-\sin 36°}{-1 - \cos 36°} = \dfrac{\sin 36°}{1 + \cos 36°}$
@@ -247,7 +247,7 @@ $$\angle VMO = \arctan\left(\frac{4}{3}\right) \approx 53.1°$$
 
 **Question:**
 
-In triangle $ABC$$\angle A = 45°$$\angle B = 60°$And $a = 8$ cm. Find the length of side $c$.
+In triangle $ABC$, $\angle A = 45°$, $\angle B = 60°$And $a = 8$ cm. Find the length of side $c$.
 
 **Solution:**
 
@@ -265,7 +265,7 @@ $$c = \frac{a \sin C}{\sin A} = \frac{8 \sin 75°}{\sin 45°} = \frac{8 \times 0
 
 **Question:**
 
-In triangle $PQR$$PQ = 5$ cm, $QR = 7$ cm, $PR = 10$ cm. Find the largest angle.
+In triangle $PQR$, $PQ = 5$ cm, $QR = 7$ cm, $PR = 10$ cm. Find the largest angle.
 
 **Solution:**
 
@@ -321,7 +321,7 @@ Solution: $x = 0°,\; 120°,\; 240°$.
 
 **Question:**
 
-In triangle $ABC$$AB = 12$ cm, $AC = 10$ cm, and $\angle BAC = 65°$. Find the area.
+In triangle $ABC$, $AB = 12$ cm, $AC = 10$ cm, and $\angle BAC = 65°$. Find the area.
 
 **Solution:**
 
@@ -431,7 +431,7 @@ $$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \t
 
 ### DSE-1
 
-In triangle $ABC$$a = 8$ cm, $b = 6$ cm, and $\angle A = 70°$.
+In triangle $ABC$, $a = 8$ cm, $b = 6$ cm, and $\angle A = 70°$.
 
 (a) Find $\angle B$. Give your answer correct to 1 decimal place. (3 marks) (b) Find the area of
 triangle $ABC$. (2 marks) (c) Find the length of the altitude from $C$ to $AB$. (2 marks)
@@ -487,7 +487,7 @@ Solution: $x = 60°,\; 120°,\; 240°,\; 300°$.
 ### DSE-3
 
 A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of
-elevation of $P$ is $32°$. From another point $B$$50$ m from $A$ on the opposite side of the tower,
+elevation of $P$ is $32°$. From another point $B$, $50$ m from $A$ on the opposite side of the tower,
 the angle of elevation of $P$ is $24°$. Find the height of the tower. (5 marks)
 
 **Solution:**
@@ -539,9 +539,9 @@ is the midpoint of $CD$. Find $\angle AEF$. (5 marks)
 
 **Solution:**
 
-Place $A$ at the origin: $A = (0, 0)$$B = (6, 0)$$C = (6, 6)$$D = (0, 6)$.
+Place $A$ at the origin: $A = (0, 0)$, $B = (6, 0)$, $C = (6, 6)$, $D = (0, 6)$.
 
-$E = (6, 2)$$F = (3, 6)$.
+$E = (6, 2)$, $F = (3, 6)$.
 
 $$AE = \sqrt{6^2 + 2^2} = \sqrt{40} = 2\sqrt{10}$$
 

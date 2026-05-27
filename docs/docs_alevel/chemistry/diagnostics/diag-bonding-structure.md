@@ -16,7 +16,7 @@ hide_table_of_contents: true
 **Question:**
 
 (a) Draw the Lewis structures and predict the shapes and bond angles of
-$\text{XeF}_4$$\text{BrF}_3$And $\text{ICl}_4^-$.
+$\text{XeF}_4$, $\text{BrF}_3$And $\text{ICl}_4^-$.
 
 (b) Explain why the bond angle in $\text{NH}_3$ ($107^\circ$) is greater than in
 $\text{H}_2\text{O}$ ($104.5^\circ$), even though both molecules have four electron domains around
@@ -67,15 +67,15 @@ H--N--H angle to $107^\circ$.
 
 Explain the following observations:
 
-(a) Ethanol ($\text{C}_2\text{H}_5\text{OH}$$M_r = 46$) boils at $78\,^\circ\text{C}$While dimethyl
-ether ($\text{CH}_3\text{OCH}_3$$M_r = 46$) boils at $-24\,^\circ\text{C}$Despite having the same
+(a) Ethanol ($\text{C}_2\text{H}_5\text{OH}$, $M_r = 46$) boils at $78\,^\circ\text{C}$While dimethyl
+ether ($\text{CH}_3\text{OCH}_3$, $M_r = 46$) boils at $-24\,^\circ\text{C}$Despite having the same
 molecular formula and molar mass.
 
 (b) $\text{HF}$ ($M_r = 20$) boils at $20\,^\circ\text{C}$While $\text{HCl}$ ($M_r = 36.5$) boils at
 $-85\,^\circ\text{C}$Despite $\text{HCl}$ having greater van der Waals forces.
 
 (c) Water ($\text{H}_2\text{O}$) has a higher boiling point ($100\,^\circ\text{C}$) than hydrogen
-sulphide ($\text{H}_2\text{S}$$-60\,^\circ\text{C}$), but the boiling points of $\text{HCl}$
+sulphide ($\text{H}_2\text{S}$, $-60\,^\circ\text{C}$), but the boiling points of $\text{HCl}$
 ($-85\,^\circ\text{C}$) and $\text{HBr}$ ($-67\,^\circ\text{C}$) increase down Group 17 as expected.
 
 **Solution:**
@@ -101,7 +101,7 @@ For $\text{HCl}$ and $\text{HBr}$Neither can form significant hydrogen bonding (
 electronegative, and the H--Cl bond is not polar enough). Therefore, the normal trend of increasing
 boiling point with increasing $M_r$ (due to stronger van der Waals forces from more electrons and
 larger electron clouds) applies. The hydrogen bonding anomaly only applies to
-$\text{HF}$$\text{H}_2\text{O}$And $\text{NH}_3$ in Period 2.
+$\text{HF}$, $\text{H}_2\text{O}$And $\text{NH}_3$ in Period 2.
 
 ---
 
@@ -198,7 +198,7 @@ makes glucose highly hydrophilic despite its size.
 **Question:**
 
 Consider the following molecules:
-$\text{CH}_3\text{Cl}$$\text{CH}_2\text{Cl}_2$$\text{CHCl}_3$$\text{CCl}_4$.
+$\text{CH}_3\text{Cl}$, $\text{CH}_2\text{Cl}_2$, $\text{CHCl}_3$, $\text{CCl}_4$.
 
 (a) For each molecule, state whether it is polar or non-polar, explaining your reasoning with
 reference to molecular shape and bond polarity.

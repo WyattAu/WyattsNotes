@@ -590,7 +590,7 @@ The galvanometer deflection $\theta$ is proportional to $Q$:
 
 $$\theta = kQ = kCV$$
 
-Where $k$ is the galvanometer constant. By measuring $\theta$ for a known $V$$C$ can be determined
+Where $k$ is the galvanometer constant. By measuring $\theta$ for a known $V$, $C$ can be determined
 If $k$ is calibrated using a standard capacitor.
 
 ### Method 3: Capacitance Bridge

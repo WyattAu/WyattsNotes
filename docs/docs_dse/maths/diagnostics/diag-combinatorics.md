@@ -74,7 +74,7 @@ Find the coefficient of $x^5$ in the expansion of $(2x - 3)^8$.
 
 The general term in $(a + b)^n$ is $\dbinom{n}{r} a^{n-r} b^r$.
 
-Here, $a = 2x$$b = -3$$n = 8$:
+Here, $a = 2x$, $b = -3$, $n = 8$:
 
 $$T_{r+1} = \dbinom{8}{r}(2x)^{8-r}(-3)^r$$
 
@@ -181,7 +181,7 @@ $6(n - 2) = (n-1)(n-2)$
 
 If $n \neq 2$: $6 = n - 1 \implies n = 7$.
 
-Check $n = 7$: $\dbinom{7}{1} = 7$$\dbinom{7}{2} = 21$$\dbinom{7}{3} = 35$.
+Check $n = 7$: $\dbinom{7}{1} = 7$, $\dbinom{7}{2} = 21$, $\dbinom{7}{3} = 35$.
 
 $2(21) = 42 = 7 + 35 = 42$. Yes.
 
@@ -440,7 +440,7 @@ range of values of $x$ for which the expansion is valid. (5 marks)
 
 **Solution:**
 
-Using the generalised binomial theorem with $n = \dfrac{1}{2}$$a = 1$$b = -3x$:
+Using the generalised binomial theorem with $n = \dfrac{1}{2}$, $a = 1$, $b = -3x$:
 
 $$(1 - 3x)^{1/2} = 1 + \frac{1}{2}(-3x) + \frac{\frac{1}{2} \times \left(-\frac{1}{2}\right)}{2!}(-3x)^2 + \frac{\frac{1}{2}\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)}{3!}(-3x)^3 + \cdots$$
 

@@ -74,7 +74,7 @@ For the product: $\frac{p-1}{p} > 0$. This is satisfied when $p > 1$ or $p < 0$.
 Both conditions simultaneously: $-1 < p < 0$.
 
 But we also need $\Delta \geq 0$. For $-1 < p < 0$Checking $\Delta = -3p^2 + 6p + 1$: at
-$p = -1$$\Delta = -3-6+1 = -8 < 0$; at $p = 0$$\Delta = 1 > 0$. The discriminant is zero at
+$p = -1$, $\Delta = -3-6+1 = -8 < 0$; at $p = 0$, $\Delta = 1 > 0$. The discriminant is zero at
 $p = 1 - 2\sqrt{3}/3 \approx -0.155$.
 
 So for positive roots, we need $1 - 2\sqrt{3}/3 \leq p < 0$ (approximately $-0.155 \leq p < 0$).
@@ -123,10 +123,10 @@ So $u = 0$ or $u = 2$ (both valid since $u \geq 0$).
 
 $$y = 2u - u^2 = -(u^2 - 2u) = -(u-1)^2 + 1$$
 
-This is a downward-opening parabola in $u$ with vertex at $u = 1$. Since $u \geq 0$$u = 1$ is
+This is a downward-opening parabola in $u$ with vertex at $u = 1$. Since $u \geq 0$, $u = 1$ is
 attainable.
 
-At $u = 1$: $x = 0$$y = 1$.
+At $u = 1$: $x = 0$, $y = 1$.
 
 The maximum value of $y$ on $C$ is $\boxed{1}$Occurring at the point $(0, 1)$.
 
@@ -345,7 +345,7 @@ $y = x^2 - 4x + 1$:
 | 3   | -2  |
 | 4   | 1   |
 
-Points of intersection: $(0, 1)$$(1, -2)$$(3, -2)$$(4, 1)$.
+Points of intersection: $(0, 1)$, $(1, -2)$, $(3, -2)$, $(4, 1)$.
 
 **(c)** The region $R$ bounded by $C_1$ and $C_2$ between $x = 0$ and $x = 4$.
 
@@ -409,7 +409,7 @@ analysis.]
 
 Fencing used: $2x + y = 60$So $y = 60 - 2x$.
 
-$$A = xy = x(60 - 2x) = 60x - 2x^2$$
+$, $A = xy = x(60 - 2x) = 60x - 2x^2$, $
 
 The stated formula $A = 30x - \frac{3}{2}x^2$ does not match. The correct expression is
 $A = 60x - 2x^2$.
@@ -434,13 +434,13 @@ m$^2$.
 **(b)** With partition parallel to the wall, the fencing layout is: 3 lengths of $x$ (two outer
 sides + one partition) and 2 lengths of $y$ (front and back).
 
-$$3x + 2y = 60 \implies y = 30 - \frac{3}{2}x$$
+$, $3x + 2y = 60 \implies y = 30 - \frac{3}{2}x$, $
 
-$$A = xy = x\left(30 - \frac{3}{2}x\right) = 30x - \frac{3}{2}x^2$$
+$, $A = xy = x\left(30 - \frac{3}{2}x\right) = 30x - \frac{3}{2}x^2$, $
 
 This is a downward-opening quadratic with vertex at:
 
-$$x = \frac◆LB◆-30◆RB◆◆LB◆2 \cdot (-3/2)◆RB◆ = \frac{30}{3} = 10$$
+$, $x = \frac◆LB◆-30◆RB◆◆LB◆2 \cdot (-3/2)◆RB◆ = \frac{30}{3} = 10$, $
 
 At $x = 10$: $y = 30 - 15 = 15$. $A_{\max} = 10 \times 15 = 150$ m$^2$.
 

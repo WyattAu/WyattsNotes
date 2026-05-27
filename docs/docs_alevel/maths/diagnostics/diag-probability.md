@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-Events $A$ and $B$ are such that $\mathrm{P}(A) = 0.4$$\mathrm{P}(B) = 0.5$And
+Events $A$ and $B$ are such that $\mathrm{P}(A) = 0.4$, $\mathrm{P}(B) = 0.5$And
 $\mathrm{P}(A \cap B) = 0.1$.
 
 **(a)** Determine whether $A$ and $B$ are mutually exclusive. Justify your answer.
@@ -47,7 +47,7 @@ $$\mathrm{P}(A) \times \mathrm{P}(B) = 0.4 \times 0.5 = 0.20$$
 But $\mathrm{P}(A \cap B) = 0.1 \neq 0.20$So $A$ and $B$ are **not independent**.
 
 **(c)** Let $C$ and $D$ be events with
-$\mathrm{P}(C) = 0.3$$\mathrm{P}(D) = 0.4$$\mathrm{P}(C \cap D) = 0.15$.
+$\mathrm{P}(C) = 0.3$, $\mathrm{P}(D) = 0.4$, $\mathrm{P}(C \cap D) = 0.15$.
 
 Not mutually exclusive: $\mathrm{P}(C \cap D) = 0.15 \neq 0$.
 
@@ -313,7 +313,7 @@ $$\mathrm{Var}(X) = \mathrm{Var}\left(\sum_{i=1}^{n} X_i\right) = \sum_{i=1}^{n}
 Note: This step requires independence. If the trials were dependent, we would need to add covariance
 terms, and the result would not simplify to $np(1-p)$.
 
-**(c)** For a fair coin: $n = 20$$p = 0.5$.
+**(c)** For a fair coin: $n = 20$, $p = 0.5$.
 
 $$\mathrm{E}(X) = 20 \times 0.5 = 10$$
 
@@ -432,7 +432,7 @@ are **negatively dependent**: knowing $B$ occurred makes $A$ less likely.
 Computing for different values of $k$:
 
 For $k = 7$:
-$\mathrm{P}(A \cap B) = \frac{11}{36} \approx 0.306$$\mathrm{P}(A) \cdot \mathrm{P}(B) = \frac{5}{16} = 0.3125$.
+$\mathrm{P}(A \cap B) = \frac{11}{36} \approx 0.306$, $\mathrm{P}(A) \cdot \mathrm{P}(B) = \frac{5}{16} = 0.3125$.
 So $\mathrm{P}(A \cap B) \lt \mathrm{P}(A) \cdot \mathrm{P}(B)$.
 
 For $k = 6$: $\mathrm{P}(A) = \frac{21}{36}$. We need $\mathrm{P}(A \cap B)$. Outcomes with sum
@@ -480,7 +480,7 @@ shows a prime slightly decreases the probability of a large sum. This is because
 
 $$\mathrm{P}(A \cup B) = \mathrm{P}(A) + \mathrm{P}(B) - \mathrm{P}(A \cap B)$$
 
-**(b)** Hence prove that for three events $A$$B$And $C$:
+**(b)** Hence prove that for three events $A$, $B$And $C$:
 
 $$\mathrm{P}(A \cup B \cup C) = \mathrm{P}(A) + \mathrm{P}(B) + \mathrm{P}(C) - \mathrm{P}(A \cap B) - \mathrm{P}(A \cap C) - \mathrm{P}(B \cap C) + \mathrm{P}(A \cap B \cap C)$$
 
@@ -560,9 +560,9 @@ Venn diagram:
 
 Let $M$ = studies Mathematics, $P$ = studies Physics, $C$ = studies Chemistry.
 
-$\mathrm{P}(M) = \frac{18}{40}$$\mathrm{P}(P) = \frac{15}{40}$$\mathrm{P}(C) = \frac{12}{40}$
+$\mathrm{P}(M) = \frac{18}{40}$, $\mathrm{P}(P) = \frac{15}{40}$, $\mathrm{P}(C) = \frac{12}{40}$
 
-$\mathrm{P}(M \cap P) = \frac{7}{40}$$\mathrm{P}(M \cap C) = \frac{5}{40}$$\mathrm{P}(P \cap C) = \frac{4}{40}$
+$\mathrm{P}(M \cap P) = \frac{7}{40}$, $\mathrm{P}(M \cap C) = \frac{5}{40}$, $\mathrm{P}(P \cap C) = \frac{4}{40}$
 
 $\mathrm{P}(M \cap P \cap C) = \frac{2}{40}$
 
@@ -584,7 +584,7 @@ $$\mathrm{P}(A) + \mathrm{P}(B) = \mathrm{P}(A) + \mathrm{P}(B) - \mathrm{P}(A \
 This gives $\mathrm{P}(A \cap B) = 0$Meaning $A$ and $B$ are **mutually exclusive**, not
 independent.
 
-Counterexample: Let $\mathrm{P}(A) = 0.3$$\mathrm{P}(B) = 0.2$$\mathrm{P}(A \cap B) = 0$. Then
+Counterexample: Let $\mathrm{P}(A) = 0.3$, $\mathrm{P}(B) = 0.2$, $\mathrm{P}(A \cap B) = 0$. Then
 $\mathrm{P}(A \cup B) = 0.5 = 0.3 + 0.2$. But for independence we need
 $\mathrm{P}(A \cap B) = 0.3 \times 0.2 = 0.06 \neq 0$. The events are mutually exclusive but not
 independent.

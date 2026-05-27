@@ -116,11 +116,11 @@ The particle is at rest at $t = 1$ s and $t = 5$ s.
 
 **(b)** First, determine the sign of $v$ in each interval.
 
-For $0 \lt t \lt 1$: test $t = 0.5$$v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative direction).
+For $0 \lt t \lt 1$: test $t = 0.5$, $v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative direction).
 
-For $1 \lt t \lt 5$: test $t = 3$$v = 18 - 9 - 5 = 4 \gt 0$ (moving in positive direction).
+For $1 \lt t \lt 5$: test $t = 3$, $v = 18 - 9 - 5 = 4 \gt 0$ (moving in positive direction).
 
-For $t \gt 5$: test $t = 6$$v = 36 - 36 - 5 = -5 \lt 0$ (moving in negative direction).
+For $t \gt 5$: test $t = 6$, $v = 36 - 36 - 5 = -5 \lt 0$ (moving in negative direction).
 
 The particle reverses direction at $t = 1$ and $t = 5$. Total distance requires integrating
 $\lvert v \rvert$Which means splitting at the turning points and taking the magnitude of each
@@ -262,7 +262,7 @@ $$dt = \frac◆LB◆dv◆RB◆◆LB◆\frac{P}{mv} - \frac{R}{m}◆RB◆ = \frac
 
 $$t = \int_{5}^{15} \frac{mv}{P - Rv}\,dv = 800\int_{5}^{15} \frac{v}{40000 - 200v}\,dv$$
 
-Let $u = 40000 - 200v$$du = -200\,dv$$dv = -\frac{du}{200}$$v = \frac{40000 - u}{200}$:
+Let $u = 40000 - 200v$, $du = -200\,dv$, $dv = -\frac{du}{200}$, $v = \frac{40000 - u}{200}$:
 
 $$t = 800\int \frac{(40000 - u)/200}{u} \cdot \left(-\frac{du}{200}\right) = 800 \times \frac{-1}{40000}\int \frac{40000 - u}{u}\,du$$
 

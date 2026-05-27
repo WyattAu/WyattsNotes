@@ -136,7 +136,7 @@ The enthalpy change when one mole of a substance is completely burned in excess 
 standard conditions.
 
 - Combustion reactions are always exothermic ($\Delta H_c^\circ \lt 0$).
-- The products must be in their standard states ($\mathrm{CO}_2(g)$$\mathrm{H}_2\mathrm{O}(l)$Etc.).
+- The products must be in their standard states ($\mathrm{CO}_2(g)$, $\mathrm{H}_2\mathrm{O}(l)$Etc.).
 
 ### Standard Enthalpy of Atomisation ($\Delta H_\mathrm{at}^\circ$)
 
@@ -225,7 +225,7 @@ Where:
 
 - $N_A$ is Avogadro's constant
 - $M$ is the Madelung constant (depends on the lattice geometry)
-- $z^+$$z^-$ are the ion charges
+- $z^+$, $z^-$ are the ion charges
 - $e$ is the elementary charge
 - $\varepsilon_0$ is the permittivity of free space
 - $r_0$ is the sum of the ionic radii
@@ -289,7 +289,7 @@ $$
 $$
 
 Given:
-$S^\circ(\mathrm{CaCO}_3) = 92.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{CaO}) = 38.1\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{CO}_2) = 213.7\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$S^\circ(\mathrm{CaCO}_3) = 92.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $S^\circ(\mathrm{CaO}) = 38.1\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $S^\circ(\mathrm{CO}_2) = 213.7\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta S^\circ = (38.1 + 213.7) - 92.9 = 251.8 - 92.9 = +158.9\,\mathrm{J\,mol^{-1}\,K^{-1}}
@@ -359,7 +359,7 @@ $$
 \mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)
 $$
 
-$\Delta H^\circ = +178\,\mathrm{kJ/mol}$$\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +178\,\mathrm{kJ/mol}$, $\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 At what temperature does the reaction become spontaneous?
 
@@ -367,7 +367,7 @@ $$
 \Delta G^\circ = 0 \implies T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆178 \times 10^3◆RB◆◆LB◆160◆RB◆ = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
 $$
 
-Above $1113\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
+Above $1113\,\mathrm{K}$, $\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
 
 ### Gibbs-Helmholtz Equation
 
@@ -550,7 +550,7 @@ $$
 $$
 
 Using mean bond enthalpies:
-$\mathrm{N}\equiv\mathrm{N} = 945\,\mathrm{kJ/mol}$$\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$$\mathrm{N}-\mathrm{H} = 391\,\mathrm{kJ/mol}$.
+$\mathrm{N}\equiv\mathrm{N} = 945\,\mathrm{kJ/mol}$, $\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$, $\mathrm{N}-\mathrm{H} = 391\,\mathrm{kJ/mol}$.
 
 $$
 \text{Bonds broken} = 1 \times \mathrm{N}\equiv\mathrm{N} + 3 \times \mathrm{H}-\mathrm{H} = 945 + 3(436) = 2253\,\mathrm{kJ/mol}
@@ -582,8 +582,8 @@ $$
 ### Factors Affecting Lattice Enthalpy
 
 1. **Ionic charge:** Higher charge $\to$ stronger electrostatic attraction $\to$ more exothermic
-   lattice enthalpy. $\mathrm{MgO}$ ($\mathrm{Mg}^{2+}$$\mathrm{O}^{2-}$) has a much more exothermic
-   lattice enthalpy than $\mathrm{NaCl}$ ($\mathrm{Na}^+$$\mathrm{Cl}^-$).
+   lattice enthalpy. $\mathrm{MgO}$ ($\mathrm{Mg}^{2+}$, $\mathrm{O}^{2-}$) has a much more exothermic
+   lattice enthalpy than $\mathrm{NaCl}$ ($\mathrm{Na}^+$, $\mathrm{Cl}^-$).
 2. **Ionic radius:** Smaller ions $\to$ shorter internuclear distance $\to$ stronger attraction
    $\to$ more exothermic lattice enthalpy. $\mathrm{LiF}$ has a more exothermic lattice enthalpy
    than $\mathrm{NaF}$ because $\mathrm{Li}^+$ is smaller than $\mathrm{Na}^+$.
@@ -663,7 +663,7 @@ $$
 $$
 
 Given:
-$\Delta H^\circ = -114\,\mathrm{kJ/mol}$$\Delta S^\circ = -146\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = -114\,\mathrm{kJ/mol}$, $\Delta S^\circ = -146\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 Is the reaction spontaneous?
 
@@ -705,7 +705,7 @@ $$
 $$
 
 Bond enthalpies:
-$\mathrm{C}\equiv\mathrm{C} = 839\,\mathrm{kJ/mol}$$\mathrm{C}-\mathrm{C} = 347\,\mathrm{kJ/mol}$$\mathrm{C}-\mathrm{H} = 413\,\mathrm{kJ/mol}$$\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$.
+$\mathrm{C}\equiv\mathrm{C} = 839\,\mathrm{kJ/mol}$, $\mathrm{C}-\mathrm{C} = 347\,\mathrm{kJ/mol}$, $\mathrm{C}-\mathrm{H} = 413\,\mathrm{kJ/mol}$, $\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$.
 
 **Solution:**
 
@@ -754,7 +754,7 @@ $$
 T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆176 \times 10^3◆RB◆◆LB◆285◆RB◆ = 618\,\mathrm{K} = 345^\circ\mathrm{C}
 $$
 
-Above $618\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
+Above $618\,\mathrm{K}$, $\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
 
 (c) Assumptions: (i) $\Delta H^\circ$ and $\Delta S^\circ$ are constant over the temperature range
 (they are not strictly constant but vary little for most reactions). (ii) The reaction is at
@@ -868,7 +868,7 @@ $$\ln K_c = \frac◆LB◆5400◆RB◆◆LB◆8.314 \times 298◆RB◆ = \frac{54
 
 $$K_c = e^{2.179} = 8.84$$
 
-Since $\Delta G^\circ < 0$$K > 1$Confirming the reaction is spontaneous and products are favoured at
+Since $\Delta G^\circ < 0$, $K > 1$Confirming the reaction is spontaneous and products are favoured at
 equilibrium.
 
 **Worked Example:** Calculate the temperature at which $\Delta G = 0$ for the reaction
@@ -880,8 +880,8 @@ At $\Delta G = 0$: $0 = \Delta H^\circ - T\Delta S^\circ$
 
 $$T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{57200}{175.8} = 325\,\mathrm{K}$$
 
-Below $325\,\mathrm{K}$$\Delta G < 0$ and the forward reaction is spontaneous. Above
-$325\,\mathrm{K}$$\Delta G > 0$ and the reverse reaction is spontaneous. At $325\,\mathrm{K}$The
+Below $325\,\mathrm{K}$, $\Delta G < 0$ and the forward reaction is spontaneous. Above
+$325\,\mathrm{K}$, $\Delta G > 0$ and the reverse reaction is spontaneous. At $325\,\mathrm{K}$The
 system is at equilibrium ($K = 1$).
 
 ### Entropy Calculations
@@ -890,7 +890,7 @@ system is at equilibrium ($K = 1$).
 $\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$.
 
 $S^\circ$ values:
-$\mathrm{CaCO}_3(s) = 92.9\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}}$$\mathrm{CaO}(s) = 38.1\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$$\mathrm{CO}_2(g) = 213.7\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$.
+$\mathrm{CaCO}_3(s) = 92.9\,\mathrm{J\,K^{-1}\,\mathrm{mol}^{-1}}$, $\mathrm{CaO}(s) = 38.1\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$, $\mathrm{CO}_2(g) = 213.7\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}}$.
 
 $$\Delta S^\circ = S^\circ(\mathrm{CaO}) + S^\circ(\mathrm{CO}_2) - S^\circ(\mathrm{CaCO}_3)$$
 
@@ -905,9 +905,9 @@ $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l)$.
 
 Given data:
 
-- $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$$\Delta H = -393.5\,\mathrm{kJ/mol}$
-- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$$\Delta H = -285.8\,\mathrm{kJ/mol}$
-- $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$$\Delta H = -1367\,\mathrm{kJ/mol}$
+- $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$, $\Delta H = -393.5\,\mathrm{kJ/mol}$
+- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -285.8\,\mathrm{kJ/mol}$
+- $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -1367\,\mathrm{kJ/mol}$
 
 By Hess's Law:
 
@@ -924,7 +924,7 @@ thermodynamically feasible at $1500\,\mathrm{K}$?
 
 $$\mathrm{TiO}_2(s) + 2\mathrm{C}(s) \to \mathrm{Ti}(s) + 2\mathrm{CO}(g)$$
 
-$\Delta H^\circ = +877\,\mathrm{kJ/mol}$$\Delta S^\circ = +193\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
+$\Delta H^\circ = +877\,\mathrm{kJ/mol}$, $\Delta S^\circ = +193\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
 
 $$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = 877000 - 1500 \times 193 = 877000 - 289500 = 587500\,\mathrm{J/mol} = +588\,\mathrm{kJ/mol}$$
 
@@ -968,7 +968,7 @@ different ions (1 mark).
 
 For the reaction $\mathrm{A}(g) + 2\mathrm{B}(g) \to \mathrm{C}(g) + \mathrm{D}(g)$:
 
-$\Delta H^\circ = -85\,\mathrm{kJ/mol}$$\Delta S^\circ = -120\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
+$\Delta H^\circ = -85\,\mathrm{kJ/mol}$, $\Delta S^\circ = -120\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
 
 (a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$. (2 marks)
 
@@ -988,7 +988,7 @@ $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -85000 - 298 \times (-120) 
 
 (c) $\Delta G^\circ = 0$:
 $T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac{-85000}{-120} = 708\,\mathrm{K}$ (1
-mark). Above $708\,\mathrm{K}$$\Delta G^\circ > 0$ and the reaction is non-spontaneous (1 mark).
+mark). Above $708\,\mathrm{K}$, $\Delta G^\circ > 0$ and the reaction is non-spontaneous (1 mark).
 
 (d) 3 moles of gas on the left, 2 moles on the right. Increasing pressure favours the side with
 fewer moles (products), shifting the equilibrium to the right (1 mark).

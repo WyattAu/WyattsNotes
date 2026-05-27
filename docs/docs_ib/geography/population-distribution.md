@@ -404,7 +404,7 @@ $$P(t) = P_0 \cdot r^t$$
 $$F(t) = F_0 + k \cdot t$$
 
 Where $r \gt 1$ is the geometric growth rate and $k$ is the arithmetic increment. For sufficiently
-large $t$$P(t) \gt F(t)$.
+large $t$, $P(t) \gt F(t)$.
 
 ### Criticisms of Malthus
 

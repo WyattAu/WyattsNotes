@@ -245,7 +245,7 @@ $$
 
 **Evaluate $\int_0^2 \frac{x}{x^2 + 1}\,dx$**
 
-Let $u = x^2 + 1$$du = 2x\,dx$. When $x = 0$$u = 1$; when $x = 2$$u = 5$.
+Let $u = x^2 + 1$, $du = 2x\,dx$. When $x = 0$, $u = 1$; when $x = 2$, $u = 5$.
 
 $$
 \int_0^2 \frac{x}{x^2 + 1}\,dx = \frac{1}{2}\int_1^5 \frac{1}{u}\,du = \frac{1}{2}\Big[\ln|u|\Big]_1^5 = \frac{1}{2}\ln 5
@@ -279,7 +279,7 @@ Alternative to repeated application of the formula.
  <summary>Expand</summary>
  **Find $\int x e^x\,dx$**
 
-Let $u = x$$dv = e^x\,dx$. Then $du = dx$ and $v = e^x$.
+Let $u = x$, $dv = e^x\,dx$. Then $du = dx$ and $v = e^x$.
 
 $$
 \int x e^x\,dx = xe^x - \int e^x\,dx = xe^x - e^x + C = (x - 1)e^x + C
@@ -289,13 +289,13 @@ $$
 
 Apply integration by parts twice.
 
-First: $u = x^2$$dv = \sin x\,dx$So $du = 2x\,dx$$v = -\cos x$.
+First: $u = x^2$, $dv = \sin x\,dx$So $du = 2x\,dx$, $v = -\cos x$.
 
 $$
 \int x^2 \sin x\,dx = -x^2 \cos x + 2\int x \cos x\,dx
 $$
 
-Second: $u = x$$dv = \cos x\,dx$So $du = dx$$v = \sin x$.
+Second: $u = x$, $dv = \cos x\,dx$So $du = dx$, $v = \sin x$.
 
 $$
 \begin`\{aligned}`
@@ -397,7 +397,7 @@ $$
 \end`\{aligned}`
 $$
 
-(using $u = \cos x$$du = -\sin x\,dx$ for the second integral)
+(using $u = \cos x$, $du = -\sin x\,dx$ for the second integral)
 
 </details>
 :::
@@ -432,7 +432,7 @@ Where the curves are expressed as $x = f(y)$ and $x = g(y)$.
  <summary>Expand</summary>
  **Find the area between $y = x^2$ and $y = 2x$.**
 
-Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$$2x \geq x^2$.
+Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$, $2x \geq x^2$.
 
 $$
 A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
@@ -443,7 +443,7 @@ $$
 
 ### 4.2 Volumes of Revolution
 
-When a region bounded by $y = f(x)$The $x$-axis, and the lines $x = a$$x = b$ is revolved about The
+When a region bounded by $y = f(x)$The $x$-axis, and the lines $x = a$, $x = b$ is revolved about The
 $x$-axis, the volume of the solid of revolution is:
 
 $$
@@ -501,7 +501,7 @@ $$
 S(t) = \int v(t)\,dt + s_0
 $$
 
-Where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$$s_0$ are Initial
+Where $a(t)$ is acceleration, $v(t)$ is velocity, $s(t)$ is displacement, and $v_0$, $s_0$ are Initial
 conditions.
 
 **Key relationships:**
@@ -704,7 +704,7 @@ The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} <
 
 <details>
  <summary>Find $\int \frac{x^3 + 2x}{\sqrt{x^2 + 1}}\,dx$</summary>
- Let $u = x^2 + 1$$du = 2x\,dx$. Note that
+ Let $u = x^2 + 1$, $du = 2x\,dx$. Note that
 $x^3 + 2x = x(x^2 + 1) + x = xu + \frac{u - 1}{2} + \frac{1}{2}$.
 
 Alternatively, split:
@@ -728,7 +728,7 @@ $$
 
 <details>
  <summary>Evaluate $\int_0^{\pi/2} x\sin x\,dx$</summary>
- Integration by parts: $u = x$$dv = \sin x\,dx$So $du = dx$$v = -\cos x$.
+ Integration by parts: $u = x$, $dv = \sin x\,dx$So $du = dx$, $v = -\cos x$.
 
 $$
 \begin`\{aligned}`
@@ -762,7 +762,7 @@ $$
 :::info[Problem 4]
 
 <details>
- <summary>Find the volume of revolution when the region bounded by $y = \ln x$$x = e$And the $x$-axis is rotated about the $x$-axis.</summary>
+ <summary>Find the volume of revolution when the region bounded by $y = \ln x$, $x = e$And the $x$-axis is rotated about the $x$-axis.</summary>
  The curve $y = \ln x$ meets the $x$-axis at $x = 1$.
 
 $$
@@ -771,7 +771,7 @@ V &= \pi \int_1^e (\ln x)^2\,dx
 \end`\{aligned}`
 $$
 
-Integration by parts with $u = (\ln x)^2$$dv = dx$: $du = \dfrac{2\ln x}{x}\,dx$$v = x$.
+Integration by parts with $u = (\ln x)^2$, $dv = dx$: $du = \dfrac{2\ln x}{x}\,dx$, $v = x$.
 
 $$
 \begin`\{aligned}`
@@ -779,7 +779,7 @@ $$
 \end`\{aligned}`
 $$
 
-Apply parts again for $\int \ln x\,dx$: $u = \ln x$$dv = dx$So $\int \ln x\,dx = x\ln x - x$.
+Apply parts again for $\int \ln x\,dx$: $u = \ln x$, $dv = dx$So $\int \ln x\,dx = x\ln x - x$.
 
 $$
 \begin`\{aligned}`
@@ -851,7 +851,7 @@ $$
 
 <details>
  <summary>Determine whether $\displaystyle\int_2^{\infty} \frac{1}{x(\ln x)^2}\,dx$ converges, and evaluate if it does.</summary>
- Let $u = \ln x$$du = \dfrac{1}{x}\,dx$. When $x = 2$$u = \ln 2$; when $x \to \infty$
+ Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$. When $x = 2$, $u = \ln 2$; when $x \to \infty$
 $u \to \infty$.
 
 $$
@@ -880,7 +880,7 @@ Partial fractions: $\dfrac{1}{(x-1)(x+1)} = \dfrac{A}{x-1} + \dfrac{B}{x+1}$
 
 $1 = A(x+1) + B(x-1)$
 
-$x = 1$: $A = \dfrac{1}{2}$$x = -1$: $B = -\dfrac{1}{2}$
+$x = 1$: $A = \dfrac{1}{2}$, $x = -1$: $B = -\dfrac{1}{2}$
 
 $$
 \begin`\{aligned}`
@@ -896,7 +896,7 @@ $$
 
 <details>
  <summary>Evaluate $\int_0^1 \frac{e^x}{1 + e^x}\,dx$.</summary>
- Let $u = 1 + e^x$$du = e^x\,dx$. When $x = 0$$u = 2$; when $x = 1$$u = 1 + e$.
+ Let $u = 1 + e^x$, $du = e^x\,dx$. When $x = 0$, $u = 2$; when $x = 1$, $u = 1 + e$.
 
 $$
 \int_0^1 \frac{e^x}{1 + e^x}\,dx = \int_2^{1+e} \frac{1}{u}\,du = \Big[\ln u\Big]_2^{1+e} = \ln(1 + e) - \ln 2
@@ -911,13 +911,13 @@ $$
  <summary>Find $\int e^x \cos x\,dx$ using integration by parts twice.</summary>
  Let $I = \displaystyle\int e^x \cos x\,dx$.
 
-First application: $u = e^x$$dv = \cos x\,dx$So $du = e^x\,dx$$v = \sin x$.
+First application: $u = e^x$, $dv = \cos x\,dx$So $du = e^x\,dx$, $v = \sin x$.
 
 $$
 I = e^x \sin x - \int e^x \sin x\,dx
 $$
 
-Second application on $\int e^x \sin x\,dx$: $u = e^x$$dv = \sin x\,dx$So $du = e^x\,dx$
+Second application on $\int e^x \sin x\,dx$: $u = e^x$, $dv = \sin x\,dx$So $du = e^x\,dx$
 $v = -\cos x$.
 
 $$

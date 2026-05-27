@@ -178,7 +178,7 @@ Antigens.
 ### Multiple Alleles
 
 More than two alleles exist for a gene in the population. Example: ABO blood group has three
-Alleles: $I^A$$I^B$And $i$.
+Alleles: $I^A$, $I^B$And $i$.
 
 | Genotype             | Blood Type       |
 | -------------------- | ---------------- |
@@ -308,8 +308,8 @@ With abnormal chromosome numbers.
 11. **Assuming the dominant phenotype always means homozygous dominant.** A dominant phenotype can
     be either homozygous dominant or heterozygous -- a test cross is needed to determine which.
 12. **Confusing genotype and allele frequencies.** Genotype frequencies refer to proportions of
-    specific genotypes (e.g., $p^2$$2pq$$q^2$); allele frequencies refer to proportions of specific
-    alleles (e.g., $p$$q$).
+    specific genotypes (e.g., $p^2$, $2pq$, $q^2$); allele frequencies refer to proportions of specific
+    alleles (e.g., $p$, $q$).
 13. **Thinking crossing over occurs at every chiasma.** A chiasma is the visible result of crossing
     over; not all chiasmata result in recombination of every gene between them.
 
@@ -726,9 +726,9 @@ Hours.
 <summary>Question 1: Three-point cross and gene mapping</summary>
 
 Genes D, E, and F are linked in the order D--E--F. A test cross of a trihybrid individual
-($\mathrm{DEF/def$) produces the following offspring: $\mathrm{DEF = 400$$\mathrm{def = 380$
-$\mathrm{DEf = 60$$\mathrm{deF = 70$$\mathrm{Def = 20$$\mathrm{dEF = 30$
-$\mathrm{DeF = 15$$\mathrm{dEf = 25$. Calculate the recombination frequencies between each pair Of
+($\mathrm{DEF/def$) produces the following offspring: $\mathrm{DEF = 400$, $\mathrm{def = 380$
+$\mathrm{DEf = 60$, $\mathrm{deF = 70$, $\mathrm{Def = 20$, $\mathrm{dEF = 30$
+$\mathrm{DeF = 15$, $\mathrm{dEf = 25$. Calculate the recombination frequencies between each pair Of
 genes and draw the genetic map.
 
 </details>
@@ -777,9 +777,9 @@ Cystic fibrosis allele be after one generation of selection?
 
 Current frequency: $q^2 = 1/2500 = 0.0004$So $q = 0.02$ and $p = 0.98$.
 
-Genotype frequencies before selection: $p^2 = 0.9604$$2pq = 0.0392$$q^2 = 0.0004$.
+Genotype frequencies before selection: $p^2 = 0.9604$, $2pq = 0.0392$, $q^2 = 0.0004$.
 
-Fitness values: $w_{AA} = 1$$w_{Aa} = 1$$w_{aa} = 0$.
+Fitness values: $w_{AA} = 1$, $w_{Aa} = 1$, $w_{aa} = 0$.
 
 Mean fitness: $\bar{w} = p^2(1) + 2pq(1) + q^2(0) = 0.9604 + 0.0392 = 0.9996$.
 
@@ -817,8 +817,8 @@ The 12:3:1 ratio arises because:
 
 F2 genotypes:
 
-- White: $\mathrm{WWDD$$\mathrm{WWDd$$\mathrm{WWdd$$\mathrm{WwDD$$\mathrm{WwDd$ $\mathrm{Wwdd$
-- Yellow disc: $\mathrm{wwDD$$\mathrm{wwDd$
+- White: $\mathrm{WWDD$, $\mathrm{WWDd$, $\mathrm{WWdd$, $\mathrm{WwDD$, $\mathrm{WwDd$ $\mathrm{Wwdd$
+- Yellow disc: $\mathrm{wwDD$, $\mathrm{wwDd$
 - Yellow sphere: $\mathrm{wwdd$
 
 The W gene is epistatic to the D gene. When the dominant W allele is present, the D gene's

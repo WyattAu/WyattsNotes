@@ -768,8 +768,8 @@ Sucrose is unloaded from the sieve tube by:
 
 ### Mechanisms of Ion Uptake
 
-Roots absorb mineral ions ($\mathrm{NO}_3^-$$\mathrm{NH}_4^+$$\mathrm{K}^+$
-$\mathrm{Ca}^{2+}$$\mathrm{Mg}^{2+}$$\mathrm{PO}_4^{3-}$$\mathrm{SO}_4^{2-}$) from the Soil
+Roots absorb mineral ions ($\mathrm{NO}_3^-$, $\mathrm{NH}_4^+$, $\mathrm{K}^+$
+$\mathrm{Ca}^{2+}$, $\mathrm{Mg}^{2+}$, $\mathrm{PO}_4^{3-}$, $\mathrm{SO}_4^{2-}$) from the Soil
 solution.
 
 **Active transport**: most mineral ions are absorbed against their concentration gradient by:
@@ -1071,7 +1071,7 @@ bidirectional, Unlike xylem transport.
 5. The pressure difference between source (high) and sink (low) maintains the flow.
 
 (b) $\Pi = iCRT$Where $i = 1$ (sucrose does not ionise), $C = 0.5\;\mathrm{mol/L}$
-$R = 8.314\;\mathrm{J/(mol \cdot K)}$$T = 298\;\mathrm{K}$.
+$R = 8.314\;\mathrm{J/(mol \cdot K)}$, $T = 298\;\mathrm{K}$.
 
 $\Pi = 1 \times 0.5 \times 8.314 \times 298 = 1238\;\mathrm{kPa} = 12.4\;\mathrm{atm}$.
 

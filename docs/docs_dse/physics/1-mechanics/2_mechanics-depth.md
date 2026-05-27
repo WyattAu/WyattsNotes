@@ -412,9 +412,9 @@ Neglecting friction.
 
 <summary>Solution</summary>
 
-At `A`: $E_k = 0$$E_p = 500 \times 9.81 \times 20 = 98100 \mathrm{ J}$
+At `A`: $E_k = 0$, $E_p = 500 \times 9.81 \times 20 = 98100 \mathrm{ J}$
 
-At `B`: $E_k = \frac{1}{2}(500)v^2$$E_p = 500 \times 9.81 \times 5 = 24525 \mathrm{ J}$
+At `B`: $E_k = \frac{1}{2}(500)v^2$, $E_p = 500 \times 9.81 \times 5 = 24525 \mathrm{ J}$
 
 By conservation of energy:
 
@@ -1409,7 +1409,7 @@ Stopwatch.
 1. Set up the track so a single trolley moves at constant velocity (friction compensated).
 2. Measure the mass of each trolley: $m_1$ and $m_2$.
 3. Launch trolley 1 towards stationary trolley 2. Use light gates to measure velocities before
-   ($u_1$$u_2 = 0$) and after ($v_1$$v_2$) the collision.
+   ($u_1$, $u_2 = 0$) and after ($v_1$, $v_2$) the collision.
 4. Calculate total momentum before: $p_{\mathrm{before}} = m_1 u_1 + m_2 u_2$
 5. Calculate total momentum after: $p_{\mathrm{after}} = m_1 v_1 + m_2 v_2$
 6. Compare $p_{\mathrm{before}}$ and $p_{\mathrm{after}}$. They should be approximately equal.
@@ -1664,7 +1664,7 @@ $$f(\tan\theta\sin\theta + \cos\theta) = \frac{mv^2}{r} - mg\tan\theta$$
 
 $$f = \frac{m(v^2/r - g\tan\theta)}{\tan\theta\sin\theta + \cos\theta}$$
 
-$v^2/r = 625/50 = 12.5$$g\tan\theta = 9.81 \times 0.4663 = 4.575$
+$v^2/r = 625/50 = 12.5$, $g\tan\theta = 9.81 \times 0.4663 = 4.575$
 
 Numerator: $1500(12.5 - 4.575) = 1500 \times 7.925 = 11888$
 

@@ -436,7 +436,7 @@ Intervals depend on shorter ones).
 
 ### Matrix Chain Multiplication
 
-Given a chain of matrices with dimensions $d_0 \times d_1$$d_1 \times d_2$..., $d_{n-1} \times
+Given a chain of matrices with dimensions $d_0 \times d_1$, $d_1 \times d_2$..., $d_{n-1} \times
 D_n$,
 find the minimum number of scalar multiplications to compute the product.
 

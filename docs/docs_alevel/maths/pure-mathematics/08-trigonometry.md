@@ -403,7 +403,7 @@ Standard trigonometric equation.
 <summary>Example: Solving an equation</summary>
 Solve $\sin\theta + \cos\theta = 1$ for $0 \leq \theta \lt 2\pi$.
 
-$R = \sqrt{1 + 1} = \sqrt{2}$$\alpha = \arctan 1 = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
+$R = \sqrt{1 + 1} = \sqrt{2}$, $\alpha = \arctan 1 = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
 $$\sqrt{2}\sin\!\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆\right) = 1$$
 
@@ -431,8 +431,8 @@ The logical error of assuming what you are trying to prove.
 
 ### 9.2 Strategy 2: Express Everything in Sine and Cosine
 
-Replace $\tan$$\sec$$\csc$$\cot$ with their definitions in terms of $\sin$ and $\cos$:
-$\tan\theta = \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆$$\sec\theta = \frac◆LB◆1◆RB◆◆LB◆\cos\theta◆RB◆$Etc.
+Replace $\tan$, $\sec$, $\csc$, $\cot$ with their definitions in terms of $\sin$ and $\cos$:
+$\tan\theta = \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆$, $\sec\theta = \frac◆LB◆1◆RB◆◆LB◆\cos\theta◆RB◆$Etc.
 
 ### 9.3 Strategy 3: Use Known Identities
 
@@ -830,7 +830,7 @@ $$
 
 <details>
 <summary>Solution</summary>
-$R = \sqrt{1 + 3} = 2$$\alpha = \arctan\sqrt{3} = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
+$R = \sqrt{1 + 3} = 2$, $\alpha = \arctan\sqrt{3} = \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆$.
 
 $$2\sin\!\left(\theta + \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) = 1$$
 

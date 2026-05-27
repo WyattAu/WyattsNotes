@@ -41,7 +41,7 @@ meaning the area under the curve is infinite.
 **Question:** (a) Find the volume generated when the curve $y = \sqrt{x}$ is rotated $2\pi$ radians
 about the $x$-axis between $x = 0$ and $x = 4$. (b) Find the volume generated when $x = y^2$ (for
 $y \ge 0$) is rotated about the $y$-axis between $y = 0$ and $y = 2$. (c) The region bounded by
-$y = x^2$$y = 0$And $x = 1$ is rotated about the $y$-axis. Calculate the volume using the shell
+$y = x^2$, $y = 0$And $x = 1$ is rotated about the $y$-axis. Calculate the volume using the shell
 method: $V = 2\pi\int_a^b xy\,dx$.
 
 **Solution:**
@@ -57,21 +57,21 @@ $V = 2\pi\int_0^1 x \cdot x^2\,dx = 2\pi\int_0^1 x^3\,dx = 2\pi\left[\frac{x^4}{
 
 ### UT-3: Parametric Differentiation
 
-**Question:** A curve is given parametrically by $x = t^2 + 1$$y = t^3 - t$. (a) Find
+**Question:** A curve is given parametrically by $x = t^2 + 1$, $y = t^3 - t$. (a) Find
 $\frac{dy}{dx}$ in terms of $t$. (b) Find the coordinates of the stationary points. (c) Find
 $\frac{d^2y}{dx^2}$ and determine the nature of each stationary point. (d) Find the equation of the
 normal to the curve at the point where $t = 2$.
 
 **Solution:**
 
-(a) $\frac{dx}{dt} = 2t$$\frac{dy}{dt} = 3t^2 - 1$. $\frac{dy}{dx} = \frac{3t^2 - 1}{2t}$.
+(a) $\frac{dx}{dt} = 2t$, $\frac{dy}{dt} = 3t^2 - 1$. $\frac{dy}{dx} = \frac{3t^2 - 1}{2t}$.
 
-(b) Stationary points: $\frac{dy}{dx} = 0$So $3t^2 - 1 = 0$$t = \pm\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$.
+(b) Stationary points: $\frac{dy}{dx} = 0$So $3t^2 - 1 = 0$, $t = \pm\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$.
 
 $t = \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$x = \frac{4}{3}$$y = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
+$x = \frac{4}{3}$, $y = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
 $t = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$x = \frac{4}{3}$$y = -\frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
+$x = \frac{4}{3}$, $y = -\frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
 
 (c)
 $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{3t^2-1}{2t}\right) \Big/ \frac{dx}{dt} = \frac◆LB◆6t \cdot 2t - (3t^2-1) \cdot 2◆RB◆◆LB◆4t^2◆RB◆ \Big/ 2t = \frac{12t^2 - 6t^2 + 2}{4t^2} \cdot \frac{1}{2t} = \frac{6t^2 + 2}{8t^3}$.
@@ -84,7 +84,7 @@ At $t = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
 $\frac{d^2y}{dx^2} = \frac◆LB◆6/3 + 2◆RB◆◆LB◆8/(-3\sqrt{3})◆RB◆ = -\frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆ \lt 0$:
 **maximum**.
 
-(d) At $t = 2$: $x = 5$$y = 6$. $\frac{dy}{dx} = \frac{12-1}{4} = \frac{11}{4}$.
+(d) At $t = 2$: $x = 5$, $y = 6$. $\frac{dy}{dx} = \frac{12-1}{4} = \frac{11}{4}$.
 
 Normal gradient $= -\frac{4}{11}$. Equation: $y - 6 = -\frac{4}{11}(x - 5)$I.e.,
 $11y - 66 = -4x + 20$So $4x + 11y = 86$.
@@ -129,7 +129,7 @@ $\int_0^{\infty} xe^{-x}\,dx$.
 
 **Solution:**
 
-(a) $u = x$$dv = \sin x\,dx$. $du = dx$$v = -\cos x$.
+(a) $u = x$, $dv = \sin x\,dx$. $du = dx$, $v = -\cos x$.
 $\int_0^{\pi/2} x\sin x\,dx = [-x\cos x]_0^{\pi/2} + \int_0^{\pi/2} \cos x\,dx = 0 + [\sin x]_0^{\pi/2} = 1$.
 
 (b) $e^{-x^2} = 1 - x^2 + \frac{x^4}{2} - \frac{x^6}{6} + \cdots$
@@ -140,7 +140,7 @@ $= 0.1 - 0.000333 + 0.000001 - 0.0000000024 = 0.099668 \approx 0.0997$.
 (c) $\frac{1}{x^2 - 9} = \frac{1}{(x-3)(x+3)} = \frac{1/6}{x-3} - \frac{1/6}{x+3}$.
 $\int = \frac{1}{6}\ln|x-3| - \frac{1}{6}\ln|x+3| + C = \frac{1}{6}\ln\left|\frac{x-3}{x+3}\right| + C$.
 
-(d) Integration by parts: $u = x$$dv = e^{-x}\,dx$. $du = dx$$v = -e^{-x}$.
+(d) Integration by parts: $u = x$, $dv = e^{-x}\,dx$. $du = dx$, $v = -e^{-x}$.
 $\int_0^{\infty} xe^{-x}\,dx = [-xe^{-x}]_0^{\infty} + \int_0^{\infty} e^{-x}\,dx = 0 + [-e^{-x}]_0^{\infty} = 0 + 1 = 1$.
 
 (This is the gamma function $\Gamma(2) = 1! = 1$.)
@@ -149,7 +149,7 @@ $\int_0^{\infty} xe^{-x}\,dx = [-xe^{-x}]_0^{\infty} + \int_0^{\infty} e^{-x}\,d
 
 **Question:** (a) Find the arc length of the curve $y = \frac{2}{3}x^{3/2}$ from $x = 0$ to $x = 3$.
 (b) Find the surface area generated when this curve is rotated about the $x$-axis. (c) A curve is
-given by $x = 2\cos\theta$$y = 2\sin\theta$. Find the arc length for one complete revolution
+given by $x = 2\cos\theta$, $y = 2\sin\theta$. Find the arc length for one complete revolution
 ($0 \le \theta \le 2\pi$). (d) Explain why the arc length formula involves
 $\sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆$.
 
@@ -162,7 +162,7 @@ $s = \int_0^3 \sqrt{1 + x}\,dx = \left[\frac{2}{3}(1+x)^{3/2}\right]_0^3 = \frac
 (b) Surface area
 $= 2\pi\int_0^3 y\sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆\,dx = 2\pi\int_0^3 \frac{2}{3}x^{3/2}\sqrt{1+x}\,dx$.
 
-Let $u = 1 + x$$du = dx$$x = u - 1$: $= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\int_1^4 (u-1)^{3/2}u^{1/2}\,du$.
+Let $u = 1 + x$, $du = dx$, $x = u - 1$: $= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\int_1^4 (u-1)^{3/2}u^{1/2}\,du$.
 
 This integral requires expanding $(u-1)^{3/2} = u^{3/2} - 3u^{1/2} + 3u^{-1/2} - u^{-3/2}$Then
 multiplying by $u^{1/2}$ and integrating term by term.
@@ -173,7 +173,7 @@ $= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆\left[\left(\frac{64}{3} - 24 + 12 
 
 $= \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆(21 - 12 + 9 - 1.5 - 1.386) = \frac◆LB◆4\pi◆RB◆◆LB◆3◆RB◆(15.114) = 63.3$.
 
-(c) $\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = -2\sin\theta$$\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 2\cos\theta$.
+(c) $\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = -2\sin\theta$, $\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 2\cos\theta$.
 $\sqrt◆LB◆(-2\sin\theta)^2 + (2\cos\theta)^2◆RB◆ = \sqrt{4} = 2$.
 $s = \int_0^{2\pi} 2\,d\theta = 4\pi$. This is a circle of radius 2, so circumference
 $= 2\pi(2) = 4\pi$.

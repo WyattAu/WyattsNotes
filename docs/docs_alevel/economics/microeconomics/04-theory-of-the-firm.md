@@ -238,14 +238,14 @@ Group with lower $|\mathrm{PED}|$ pays higher price.
 <details>
 <summary>Example: Third-Degree Price Discrimination</summary>
 A cinema charges £12 for adults and £6 for students. Adult demand: $P_A = 20 - Q_A$Student demand:
-$P_S = 14 - Q_S$$MC = 2$.
+$P_S = 14 - Q_S$, $MC = 2$.
 
-Adult MR: $MR_A = 20 - 2Q_A$. Set $MR_A = MC$: $20 - 2Q_A = 2 \Rightarrow Q_A = 9$$P_A = 11$.
-Student MR: $MR_S = 14 - 2Q_S$. Set $MR_S = MC$: $14 - 2Q_S = 2 \Rightarrow Q_S = 6$$P_S = 8$.
+Adult MR: $MR_A = 20 - 2Q_A$. Set $MR_A = MC$: $20 - 2Q_A = 2 \Rightarrow Q_A = 9$, $P_A = 11$.
+Student MR: $MR_S = 14 - 2Q_S$. Set $MR_S = MC$: $14 - 2Q_S = 2 \Rightarrow Q_S = 6$, $P_S = 8$.
 
 Without discrimination (single price, aggregate demand): total demand
 $Q = Q_A + Q_S = (20 - P) + (14 - P) = 34 - 2P$So $P = 17 - Q/2$. $MR = 17 - Q$. Set
-$MR = 2 \Rightarrow Q = 15$$P = 9.50$.
+$MR = 2 \Rightarrow Q = 15$, $P = 9.50$.
 
 With discrimination: revenue = $11 \times 9 + 8 \times 6 = 99 + 48 = 147$. Without:
 $9.50 \times 15 = 142.50$. Discrimination increases profit.
@@ -523,7 +523,7 @@ Understanding of sunk costs as the key barrier to contestability. :::
 | **Barriers to entry**     | None                     | Very high            | Low                       | High                       |
 | **Price**                 | Taker                    | Maker                | Maker                     | Maker (interdependent)     |
 | **Demand curve**          | Perfectly elastic ($P$)  | Market demand        | Downward-sloping          | Downward-sloping (kinked?) |
-| **Equilibrium**           | $P = MC = AC_{min}$      | $MR = MC$$P > MC$    | $P = AC$$P > MC$          | $MR = MC$$P > MC$          |
+| **Equilibrium**           | $P = MC = AC_{min}$      | $MR = MC$, $P > MC$    | $P = AC$, $P > MC$          | $MR = MC$, $P > MC$          |
 | **LR profit**             | Zero (normal)            | Supernormal          | Zero (normal)             | Possibly supernormal       |
 | **Allocative efficiency** | Yes ($P = MC$)           | No ($P > MC$)        | No ($P > MC$)             | No ($P > MC$)              |
 | **Productive efficiency** | Yes ($P = AC_{min}$)     | No                   | No (excess capacity)      | No                         |
@@ -627,7 +627,7 @@ Market price?
 
 <details>
 <summary>Hint</summary>
-LR equilibrium: $P = MC = AC_{min}$. $MC = 2 + 2Q$$AC = 50/Q + 2 + Q$. Set $MC = AC$: $2 + 2Q = 50/Q + 2 + Q \Rightarrow Q = 50/Q \Rightarrow Q = \sqrt{50} \approx 7.07$. $AC_{min} = 50/7.07 + 2 + 7.07 \approx 16.14$. $P^* = 16.14$. Market demand: $Q_D = 500 - 161.4 = 338.6$. Number of firms: $338.6 / 7.07 \approx 47.9 \approx 48$ firms.
+LR equilibrium: $P = MC = AC_{min}$. $MC = 2 + 2Q$, $AC = 50/Q + 2 + Q$. Set $MC = AC$: $2 + 2Q = 50/Q + 2 + Q \Rightarrow Q = 50/Q \Rightarrow Q = \sqrt{50} \approx 7.07$. $AC_{min} = 50/7.07 + 2 + 7.07 \approx 16.14$. $P^* = 16.14$. Market demand: $Q_D = 500 - 161.4 = 338.6$. Number of firms: $338.6 / 7.07 \approx 47.9 \approx 48$ firms.
 </details>
 
 **Problem 3.** A monopolist faces demand $P = 100 - 2Q$ and has total cost $TC = 50 + 10Q + Q^2$.
@@ -636,7 +636,7 @@ Competitive outcome.
 
 <details>
 <summary>Hint</summary>
-$MR = 100 - 4Q$. $MC = 10 + 2Q$. Set $MR = MC$: $100 - 4Q = 10 + 2Q \Rightarrow Q_m = 15$$P_m = 70$. Profit $= 70 \times 15 - (50 + 150 + 225) = 1050 - 425 = 625$. Competitive: $P = MC \Rightarrow 100 - 2Q = 10 + 2Q \Rightarrow Q_c = 22.5$$P_c = 55$. DWL $= \frac{1}{2}(70 - 55)(22.5 - 15) = \frac{1}{2}(15)(7.5) = 56.25$.
+$MR = 100 - 4Q$. $MC = 10 + 2Q$. Set $MR = MC$: $100 - 4Q = 10 + 2Q \Rightarrow Q_m = 15$, $P_m = 70$. Profit $= 70 \times 15 - (50 + 150 + 225) = 1050 - 425 = 625$. Competitive: $P = MC \Rightarrow 100 - 2Q = 10 + 2Q \Rightarrow Q_c = 22.5$, $P_c = 55$. DWL $= \frac{1}{2}(70 - 55)(22.5 - 15) = \frac{1}{2}(15)(7.5) = 56.25$.
 </details>
 
 **Problem 4.** A monopolist can identify two groups of consumers. Group 1 has demand
@@ -646,7 +646,7 @@ Discrimination. Compare total profit with the single-price monopoly outcome.
 
 <details>
 <summary>Hint</summary>
-$MR_1 = 24 - 2Q_1 = 2 \Rightarrow Q_1 = 11$$P_1 = 13$. $MR_2 = 16 - 2Q_2 = 2 \Rightarrow Q_2 = 7$$P_2 = 9$. Profit $= 13(11) + 9(7) - 40 - 2(18) = 143 + 63 - 40 - 36 = 130$. Without discrimination: aggregate $P = 24 - Q_1 = 16 - Q_2$ for $P \leq 16$So $Q = Q_1 + Q_2 = (24 - P) + (16 - P) = 40 - 2P$$P = 20 - Q/2$. $MR = 20 - Q = 2 \Rightarrow Q = 18$$P = 11$. Profit $= 11(18) - 40 - 36 = 198 - 76 = 122$. Discrimination yields higher profit (£130 vs £122).
+$MR_1 = 24 - 2Q_1 = 2 \Rightarrow Q_1 = 11$, $P_1 = 13$. $MR_2 = 16 - 2Q_2 = 2 \Rightarrow Q_2 = 7$, $P_2 = 9$. Profit $= 13(11) + 9(7) - 40 - 2(18) = 143 + 63 - 40 - 36 = 130$. Without discrimination: aggregate $P = 24 - Q_1 = 16 - Q_2$ for $P \leq 16$So $Q = Q_1 + Q_2 = (24 - P) + (16 - P) = 40 - 2P$, $P = 20 - Q/2$. $MR = 20 - Q = 2 \Rightarrow Q = 18$, $P = 11$. Profit $= 11(18) - 40 - 36 = 198 - 76 = 122$. Discrimination yields higher profit (£130 vs £122).
 </details>
 
 **Problem 5.** In a monopolistically competitive market, each firm has demand $P = 40 - Q$ and cost
@@ -654,7 +654,7 @@ $TC = 100 + 10Q + Q^2$. Find the long-run equilibrium price, quantity, and the e
 
 <details>
 <summary>Hint</summary>
-SR: $MR = 40 - 2Q = MC = 10 + 2Q \Rightarrow 3Q = 30 \Rightarrow Q = 10$$P = 30$. Profit $= 300 - (100 + 100 + 100) = 0$ (already in LR equilibrium). $AC_{min}$: $AC = 100/Q + 10 + Q$. $AC' = -100/Q^2 + 1 = 0 \Rightarrow Q_{MES} = 10$. Since $Q = Q_{MES}$There is no excess capacity in this specific case. For excess capacity to arise, the demand curve must be tangent to AC at a point where $Q < Q_{MES}$.
+SR: $MR = 40 - 2Q = MC = 10 + 2Q \Rightarrow 3Q = 30 \Rightarrow Q = 10$, $P = 30$. Profit $= 300 - (100 + 100 + 100) = 0$ (already in LR equilibrium). $AC_{min}$: $AC = 100/Q + 10 + Q$. $AC' = -100/Q^2 + 1 = 0 \Rightarrow Q_{MES} = 10$. Since $Q = Q_{MES}$There is no excess capacity in this specific case. For excess capacity to arise, the demand curve must be tangent to AC at a point where $Q < Q_{MES}$.
 </details>
 
 **Problem 6.** Two duopolists, Firm A and Firm B, face market demand $P = 100 - Q_A - Q_B$. Both
@@ -663,7 +663,7 @@ Given), find the Nash equilibrium outputs, price, and profit for each firm.
 
 <details>
 <summary>Hint</summary>
-Firm A's reaction function: $\pi_A = (100 - Q_A - Q_B)Q_A - 10Q_A$. FOC: $100 - 2Q_A - Q_B - 10 = 0 \Rightarrow Q_A = 45 - Q_B/2$. By symmetry: $Q_B = 45 - Q_A/2$. Solving: $Q_A = 45 - (45 - Q_A/2)/2 = 45 - 22.5 + Q_A/4 \Rightarrow 3Q_A/4 = 22.5 \Rightarrow Q_A = 30$$Q_B = 30$. $P = 40$. $\pi_A = \pi_B = 30 \times 30 = 900$. Compare with collusion: $Q = 45$$P = 55$Profit each = $55 \times 22.5 - 10 \times 22.5 = 1012.5$.
+Firm A's reaction function: $\pi_A = (100 - Q_A - Q_B)Q_A - 10Q_A$. FOC: $100 - 2Q_A - Q_B - 10 = 0 \Rightarrow Q_A = 45 - Q_B/2$. By symmetry: $Q_B = 45 - Q_A/2$. Solving: $Q_A = 45 - (45 - Q_A/2)/2 = 45 - 22.5 + Q_A/4 \Rightarrow 3Q_A/4 = 22.5 \Rightarrow Q_A = 30$, $Q_B = 30$. $P = 40$. $\pi_A = \pi_B = 30 \times 30 = 900$. Compare with collusion: $Q = 45$, $P = 55$Profit each = $55 \times 22.5 - 10 \times 22.5 = 1012.5$.
 </details>
 
 **Problem 7.** A natural monopoly has total cost $TC = 200 + 20Q$ and faces demand $P = 100 - Q$.
@@ -672,7 +672,7 @@ Outcome under average cost pricing. (d) Evaluate the trade-offs.
 
 <details>
 <summary>Hint</summary>
-(a) Monopoly: $MR = 100 - 2Q = MC = 20 \Rightarrow Q_m = 40$$P_m = 60$. Profit $= 2400 - 1000 = 1400$. (b) Allocative efficiency: $P = MC \Rightarrow 100 - Q = 20 \Rightarrow Q = 80$$P = 20$. Loss $= 1600 - 1800 = -200$ (subsidy needed). (c) AC pricing: $P = AC \Rightarrow 100 - Q = 200/Q + 20 \Rightarrow Q(80 - Q) = 200 \Rightarrow 80Q - Q^2 - 200 = 0 \Rightarrow Q \approx 2.56$ or $Q \approx 77.4$. Valid: $Q \approx 77.4$$P \approx 22.6$. Zero profit. (d) Trade-off: monopoly maximises profit but has DWL; MC pricing is efficient but requires subsidy; AC pricing is a compromise.
+(a) Monopoly: $MR = 100 - 2Q = MC = 20 \Rightarrow Q_m = 40$, $P_m = 60$. Profit $= 2400 - 1000 = 1400$. (b) Allocative efficiency: $P = MC \Rightarrow 100 - Q = 20 \Rightarrow Q = 80$, $P = 20$. Loss $= 1600 - 1800 = -200$ (subsidy needed). (c) AC pricing: $P = AC \Rightarrow 100 - Q = 200/Q + 20 \Rightarrow Q(80 - Q) = 200 \Rightarrow 80Q - Q^2 - 200 = 0 \Rightarrow Q \approx 2.56$ or $Q \approx 77.4$. Valid: $Q \approx 77.4$, $P \approx 22.6$. Zero profit. (d) Trade-off: monopoly maximises profit but has DWL; MC pricing is efficient but requires subsidy; AC pricing is a compromise.
 </details>
 
 **Problem 8.** "Monopolies are always harmful to consumer welfare." Evaluate this statement with
@@ -706,7 +706,7 @@ Profitable? What are the welfare implications?
 
 <details>
 <summary>Hint</summary>
-Without advertising: $MR = 50 - 2Q = 10 + 2Q \Rightarrow Q = 10$$P = 40$. Profit $= 400 - 400 = 0$ (LR equilibrium). With advertising: $MR = 60 - 2Q = 10 + 2Q \Rightarrow Q = 12.5$$P = 47.5$. Profit $= 593.75 - 456.25 - 50 = 87.5$. Advertising is profitable. Welfare: output increases from 10 to 12.5 (closer to social optimum), but consumers face higher price. The advertising itself may be a wasteful arms race (if all firms advertise, demand shifts back).
+Without advertising: $MR = 50 - 2Q = 10 + 2Q \Rightarrow Q = 10$, $P = 40$. Profit $= 400 - 400 = 0$ (LR equilibrium). With advertising: $MR = 60 - 2Q = 10 + 2Q \Rightarrow Q = 12.5$, $P = 47.5$. Profit $= 593.75 - 456.25 - 50 = 87.5$. Advertising is profitable. Welfare: output increases from 10 to 12.5 (closer to social optimum), but consumers face higher price. The advertising itself may be a wasteful arms race (if all firms advertise, demand shifts back).
 </details>
 
 **Problem 12.** Evaluate the argument that "the best policy towards monopoly is to break it up into
@@ -852,16 +852,16 @@ A monopolist has two markets. Market 1: $P_1 = 50 - Q_1$. Market 2: $P_2 = 30 - 
 $TC = 100 + 2(Q_1 + Q_2)$.
 
 **Third-degree price discrimination:** Market 1:
-$MR_1 = 50 - 2Q_1 = 2 \Rightarrow Q_1 = 24$$P_1 = 26$.
+$MR_1 = 50 - 2Q_1 = 2 \Rightarrow Q_1 = 24$, $P_1 = 26$.
 $\pi_1 = 26 \times 24 - 100 - 48 = 624 - 148 = \pounds 476$.
 
-Market 2: $MR_2 = 30 - Q_2 = 2 \Rightarrow Q_2 = 28$$P_2 = 16$.
+Market 2: $MR_2 = 30 - Q_2 = 2 \Rightarrow Q_2 = 28$, $P_2 = 16$.
 $\pi_2 = 16 \times 28 - 56 - 100 = 448 - 156 = \pounds 292$.
 
 Total profit with discrimination: $476 + 292 = \pounds 768$.
 
 **Single-price monopoly:** Total demand: for
-$P \leq 30$$Q = Q_1 + Q_2 = (50 - P) + (60 - 2P) = 110 - 3P$. For $30 < P \leq 50$$Q = 50 - P$ (only
+$P \leq 30$, $Q = Q_1 + Q_2 = (50 - P) + (60 - 2P) = 110 - 3P$. For $30 < P \leq 50$, $Q = 50 - P$ (only
 Market 1 is active).
 
 At $P = 30$: $Q = 110 - 90 = 20$. $MR = 110/3 - 2Q/3$ (for $Q \leq 20$). Set $MR = MC$:
@@ -869,7 +869,7 @@ $110/3 - 2Q/3 = 2 \Rightarrow 110 - 2Q = 6 \Rightarrow Q = 52$.
 
 But $Q = 52$ is only valid if $P \leq 30$: $P = 110/3 - 52/3 = 58/3 = 19.33 \leq 30$. Valid.
 
-Single-price: $Q = 52$$P = 19.33$.
+Single-price: $Q = 52$, $P = 19.33$.
 $\pi = 19.33 \times 52 - 100 - 104 = 1005.16 - 204 = \pounds 801.16$.
 
 In this case, single pricing yields higher profit than discrimination because the aggregation
@@ -952,14 +952,14 @@ profit under discrimination and compare with single-price profit.
 <details>
 <summary>Full Mark Scheme</summary>
 **(a) Discriminatory pricing (6 marks).**
-Adults: $MR_A = 20 - 2Q_A = 2 \Rightarrow Q_A = 9$$P_A = 11$.
-Students: $MR_S = 12 - 2Q_S = 2 \Rightarrow Q_S = 5$$P_S = 7$.
+Adults: $MR_A = 20 - 2Q_A = 2 \Rightarrow Q_A = 9$, $P_A = 11$.
+Students: $MR_S = 12 - 2Q_S = 2 \Rightarrow Q_S = 5$, $P_S = 7$.
 Profit from adults: $11 \times 9 - 2 \times 9 = 99 - 18 = 81$.
 Profit from students: $7 \times 5 - 2 \times 5 = 35 - 10 = 25$.
 Total profit with discrimination: $81 + 25 = \pounds 106$.
 
 **(b) Single-price comparison (6 marks).** Total demand: for
-$P \leq 12$$Q = (20 - P) + (12 - P) = 32 - 2P$. For $12 < P \leq 20$$Q = 20 - P$.
+$P \leq 12$, $Q = (20 - P) + (12 - P) = 32 - 2P$. For $12 < P \leq 20$, $Q = 20 - P$.
 
 Aggregate MR: $MR = 16 - Q$ (for $Q \leq 8$). Set $MR = 2$: $16 - Q = 2 \Rightarrow Q = 14$.
 $P = 16 - 14/2 = 9$. Check: $Q = 32 - 2(9) = 14$. Valid (both groups active). Single-price profit:
@@ -982,7 +982,7 @@ supply: $q = P - 10$ for $P \geq 10$. Market supply: $Q_S = 100(P - 10) = 100P -
 
 $150 - Q = 100P - 1000 \Rightarrow 150 - (100P - 1000) = 100P - 1000 \Rightarrow 1150 = 200P - 1000$.
 
-Wait: $Q_D = 150 - P$$Q_S = 100P - 1000$.
+Wait: $Q_D = 150 - P$, $Q_S = 100P - 1000$.
 $150 - P = 100P - 1000 \Rightarrow 1150 = 101P \Rightarrow P = 11.39$. $Q = 150 - 11.39 = 138.61$.
 Each firm: $q = 11.39 - 10 = 1.39$.
 
@@ -1006,9 +1006,9 @@ significant fixed costs (GBP 100 per firm).
 ### 12.2 Monopoly with Two-Part Tariff
 
 **Example.** A monopolist serves identical consumers, each with demand $P = 50 - Q$. The
-monopolist's $MC = 10$$FC = 0$.
+monopolist's $MC = 10$, $FC = 0$.
 
-**Single-price monopoly:** $MR = 50 - 2Q = 10 \Rightarrow Q = 20$$P = 40$. Profit per consumer
+**Single-price monopoly:** $MR = 50 - 2Q = 10 \Rightarrow Q = 20$, $P = 40$. Profit per consumer
 $= (40 - 10)(20) = 600$. CS per consumer $= \frac{1}{2}(50 - 40)(20) = 100$.
 
 **Two-part tariff:** The monopolist charges a fixed fee $F$ (entry fee) plus a per-unit price $p$.
@@ -1046,10 +1046,10 @@ $P = 100 - q_1 - (45 - 0.5q_1) = 55 - 0.5q_1$. $MR_1 = 55 - q_1 = 10 \Rightarrow
 
 **Firm 2's output:** $q_2 = 45 - 0.5(45) = 22.5$.
 
-**Results:** $Q = 67.5$$P = 32.5$. $\pi_1 = (32.5 - 10)(45) = 1012.5$.
+**Results:** $Q = 67.5$, $P = 32.5$. $\pi_1 = (32.5 - 10)(45) = 1012.5$.
 $\pi_2 = (32.5 - 10)(22.5) = 506.25$.
 
-**Comparison with Cournot (same costs):** Cournot: $q_1 = q_2 = 30$$P = 40$$\pi_1 = \pi_2 = 900$.
+**Comparison with Cournot (same costs):** Cournot: $q_1 = q_2 = 30$, $P = 40$, $\pi_1 = \pi_2 = 900$.
 
 **First-mover advantage:** The leader earns 1012.5 vs 900 in Cournot (12.5% more). The follower
 earns 506.25 vs 900 (43.7% less). The Stackelberg leader exploits its ability to commit to output
@@ -1122,7 +1122,7 @@ firms, stable demand, and transparent pricing.
 
 **Derive all cost curves:**
 
-- $FC = 1000$$VC = 50Q + 5Q^2$
+- $FC = 1000$, $VC = 50Q + 5Q^2$
 - $MC = 50 + 10Q$
 - $ATC = 1000/Q + 50 + 5Q$
 - $AVC = 50 + 5Q$
@@ -1164,7 +1164,7 @@ firms without inefficiency. This is characteristic of a competitive market struc
 $TC = 200 + 10Q + Q^2$.
 
 **Short-run profit maximisation:** $P = 50 - 0.5Q$. $MR = 50 - Q$. $MC = 10 + 2Q$. $MR = MC$:
-$50 - Q = 10 + 2Q \Rightarrow 40 = 3Q \Rightarrow Q = 13.33$$P = 43.33$.
+$50 - Q = 10 + 2Q \Rightarrow 40 = 3Q \Rightarrow Q = 13.33$, $P = 43.33$.
 $ATC = 200/13.33 + 10 + 13.33 = 15 + 10 + 13.33 = 38.33$. Profit $= (43.33 - 38.33)(13.33) = 66.67$.
 
 The firm makes positive economic profit. In the long run, new firms enter, shifting this firm's
@@ -1175,8 +1175,8 @@ $50 - 0.5Q = 200/Q + 10 + Q \Rightarrow 40 - 1.5Q = 200/Q \Rightarrow 40Q - 1.5Q
 $1.5Q^2 - 40Q + 200 = 0 \Rightarrow Q = \frac◆LB◆40 \pm \sqrt{1600 - 1200}◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆40 \pm 20◆RB◆◆LB◆3◆RB◆$.
 $Q = 20$ or $Q = 6.67$.
 
-At $Q = 20$: $P = 40$$ATC = 200/20 + 10 + 20 = 40$. $P = ATC$. Profit $= 0$. At $Q = 6.67$:
-$P = 46.67$$ATC = 200/6.67 + 10 + 6.67 = 46.67$. $P = ATC$. Profit $= 0$.
+At $Q = 20$: $P = 40$, $ATC = 200/20 + 10 + 20 = 40$. $P = ATC$. Profit $= 0$. At $Q = 6.67$:
+$P = 46.67$, $ATC = 200/6.67 + 10 + 6.67 = 46.67$. $P = ATC$. Profit $= 0$.
 
 Both solutions give zero profit, but the relevant one depends on the direction of the demand shift.
 With entry, demand shifts left, so the equilibrium moves from $Q = 13.33$ to the lower output.
@@ -1202,7 +1202,7 @@ diversity.
 
 **Example.** A water company is a natural monopoly. $TC = 500 + 20Q$. Demand: $P = 100 - Q$.
 
-**Unregulated:** $MR = 100 - 2Q = 20 \Rightarrow Q = 40$$P = 60$. Profit
+**Unregulated:** $MR = 100 - 2Q = 20 \Rightarrow Q = 40$, $P = 60$. Profit
 $= (60 - 20)(40) - 500 = 1100$.
 
 **Price cap regulation (RPI-X):** The regulator sets maximum price $P_{cap} = 40$.
@@ -1217,8 +1217,8 @@ $TR - TC = 50 \Rightarrow P \times Q - 500 - 20Q = 50$. With $Q = 100 - P$:
 $P(100 - P) - 500 - 20(100 - P) = 50$.
 $100P - P^2 - 500 - 2000 + 20P = 50 \Rightarrow -P^2 + 120P - 2550 = 0 \Rightarrow P^2 - 120P + 2550 = 0$.
 $P = \frac◆LB◆120 \pm \sqrt{14400 - 10200}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆120 \pm 64.8◆RB◆◆LB◆2◆RB◆$.
-$P = 92.4$ or $P = 27.6$. $P = 27.6$$Q = 72.4$. This is close to the allocatively efficient outcome
-($P = MC = 20$$Q = 80$).
+$P = 92.4$ or $P = 27.6$. $P = 27.6$, $Q = 72.4$. This is close to the allocatively efficient outcome
+($P = MC = 20$, $Q = 80$).
 
 **Comparison:**
 

@@ -73,7 +73,7 @@ has 2 decimal places, so $[\text{H}^+]$ should have 2 s.f.: $3.5 \times 10^{-4}\
 ### UT-3: Graphical Analysis and Best-Fit Line
 
 **Question:** In an experiment to determine the molar mass of an unknown gas, a student measures the
-mass of gas at different pressures (constant $T$$V$). The data should follow $m = \frac{PMV}{RT}$.
+mass of gas at different pressures (constant $T$, $V$). The data should follow $m = \frac{PMV}{RT}$.
 The student plots $m$ vs $P$ and obtains a gradient of $0.0445\ \text{g kPa}^{-1}$. If
 $V = 250\ \text{cm}^3$ and $T = 298\ \text{K}$Calculate the molar mass. Identify whether the student
 should force the line through the origin and explain why.
@@ -168,7 +168,7 @@ $A = e^{25.0} = 7.20 \times 10^{10}$ (with units depending on the reaction order
 
 Uncertainty in $A$: The intercept uncertainty is $\pm 0.5$. Since $A = e^{\text{intercept}}$:
 
-$A_{\max} = e^{25.5} = 1.18 \times 10^{11}$$A_{\min} = e^{24.5} = 4.39 \times 10^{10}$
+$A_{\max} = e^{25.5} = 1.18 \times 10^{11}$, $A_{\min} = e^{24.5} = 4.39 \times 10^{10}$
 
 $\Delta A = \frac{1.18 \times 10^{11} - 4.39 \times 10^{10}}{2} = 3.71 \times 10^{10}$
 
@@ -185,7 +185,7 @@ determined more precisely than $A$ from Arrhenius plots.
 
 **Question:** A student measures $K_c$ for the reaction
 $\text{N}_2\text{O}_4 \rightleftharpoons 2\text{NO}_2$ five times and obtains:
-$4.2 \times 10^{-3}$$4.8 \times 10^{-3}$$4.5 \times 10^{-3}$$4.1 \times 10^{-3}$$4.6 \times 10^{-3}$.
+$4.2 \times 10^{-3}$, $4.8 \times 10^{-3}$, $4.5 \times 10^{-3}$, $4.1 \times 10^{-3}$, $4.6 \times 10^{-3}$.
 Calculate the mean, standard deviation, and 95% confidence interval. The literature value is
 $4.6 \times 10^{-3}$. Does the experimental value agree with the literature value?
 

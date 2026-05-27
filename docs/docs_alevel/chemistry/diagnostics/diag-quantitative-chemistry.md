@@ -79,7 +79,7 @@ $72.0\,\text{cm}^3$.
 
 (a) Calculate the molar mass of the gas. ($R = 8.31\,\text{J K}^{-1}\text{ mol}^{-1}$)
 
-(b) The gas is known to be one of: $\text{N}_2$$\text{O}_2$$\text{CO}$$\text{NO}_2$Or
+(b) The gas is known to be one of: $\text{N}_2$, $\text{O}_2$, $\text{CO}$, $\text{NO}_2$Or
 $\text{C}_3\text{H}_8$. Identify the gas.
 
 **Solution:**
@@ -150,7 +150,7 @@ Note: The low atom economy is because $\text{H}_2\text{SO}_4$ is regenerated (it
 sides), so in practice the $\text{H}_2\text{SO}_4$ acts as a catalyst and is recycled, making the
 effective atom economy much higher in industrial processes.
 
-(c) $M_r(\text{C}_2\text{H}_4) = 28.0$$M_r(\text{C}_2\text{H}_5\text{OH}) = 46.0$
+(c) $M_r(\text{C}_2\text{H}_4) = 28.0$, $M_r(\text{C}_2\text{H}_5\text{OH}) = 46.0$
 
 Theoretical mass of ethanol from $28.0\,\text{kg}$ ethene (1:1 stoichiometry):
 
@@ -211,7 +211,7 @@ $$M = \frac◆LB◆0.120◆RB◆◆LB◆1.613 \times 10^{-3}◆RB◆ = 74.4\,\te
 
 The measured molar mass of $74.4\,\text{g mol}^{-1}$ is closest to **$\text{C}_5\text{H}_{12}$**
 (pentane, $M_r = 72.1\,\text{g mol}^{-1}$). Comparing with nearby hydrocarbons:
-$\text{C}_4\text{H}_{10} = 58$$\text{C}_5\text{H}_{12} = 72$$\text{C}_6\text{H}_{14} = 86$. The
+$\text{C}_4\text{H}_{10} = 58$, $\text{C}_5\text{H}_{12} = 72$, $\text{C}_6\text{H}_{14} = 86$. The
 molecular formula is **$\text{C}_5\text{H}_{12}$** (pentane). The small discrepancy ($74.4$ vs
 $72.1$) arises from rounding in the experimental data.
 
@@ -350,7 +350,7 @@ starting material is lost.
 #### UT-5: Ideal Gas Equation Unit Consistency
 
 **Question:** A student calculates the volume of gas produced using $V = nRT/p$ with
-$n = 0.050\,\mathrm{mol}$$R = 8.314$$T = 298$And $p = 100$. They obtain $V = 123.7$. Identify the
+$n = 0.050\,\mathrm{mol}$, $R = 8.314$, $T = 298$And $p = 100$. They obtain $V = 123.7$. Identify the
 error and give the correct answer in $\mathrm{cm}^3$.
 
 **Solution:**

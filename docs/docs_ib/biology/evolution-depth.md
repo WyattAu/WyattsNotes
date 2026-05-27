@@ -394,7 +394,7 @@ $$\sum_{i=1}^{n} p_i = 1$$
 
 The expected frequency of homozygote $p_i^2$ and heterozygote $2p_ip_j$ for all pairs.
 
-**Example**: ABO blood group with three alleles ($I^A$$I^B$$i$): $$p_{I^A} + p_{I^B} + p_i = 1$$
+**Example**: ABO blood group with three alleles ($I^A$, $I^B$, $i$): $$p_{I^A} + p_{I^B} + p_i = 1$$
 $$f(I^AI^A) = p_{I^A}^2, \quad f(I^AI^B) = 2p_{I^A}p_{I^B}, \quad f(I^Ai) = 2p_{I^A}p_i, \quad \ldots$$
 
 ### Effects of Evolutionary Forces on Hardy-Weinberg
@@ -461,7 +461,7 @@ genotype has $w = 1.0$.
 **Selection coefficient ($s$)**: the reduction in fitness of a genotype relative to the fittest:
 $w = 1 - s$.
 
-**Example**: if the fitness of genotypes $AA$$Aa$And $aa$ are $1.0$$1.0$And $0.8$: $s = 0.2$ for the
+**Example**: if the fitness of genotypes $AA$, $Aa$And $aa$ are $1.0$, $1.0$And $0.8$: $s = 0.2$ for the
 $aa$ genotype. The selection acts against the $aa$ homozygote.
 
 **Rate of change of a deleterious allele under selection:**
@@ -587,7 +587,7 @@ Antibiotic resistance provides a clear, observable example of evolution by natur
 
 In a population of $10000$ plants, flower colour is controlled by a single gene with two alleles:
 $R$ (red, dominant) and $r$ (white, recessive). The current genotype frequencies are:
-$f(RR) = 0.49$$f(Rr) = 0.42$$f(rr) = 0.09$. A disease selectively kills white-flowered Plants ($rr$)
+$f(RR) = 0.49$, $f(Rr) = 0.42$, $f(rr) = 0.09$. A disease selectively kills white-flowered Plants ($rr$)
 with $50\%$ mortality ($w_{rr} = 0.5$), while red-flowered plants are unaffected
 ($w_{RR} = w_{Rr} = 1.0$). Calculate the allele frequencies after one generation of selection.
 
@@ -779,7 +779,7 @@ frequency of the $c$ allele after many generations.
 **Current equilibrium** ($w_{cc} = 0$Lethal): $q^2 = 1/2500$So $q = 1/50 = 0.02$. $p = 0.98$.
 Carrier frequency: $2pq = 2 \times 0.98 \times 0.02 = 0.0392 \approx 1/25.5$.
 
-**New equilibrium** ($w_{CC} = 1.0$$w_{Cc} = 1.0$$w_{cc} = 0.5$): At equilibrium, the frequency of
+**New equilibrium** ($w_{CC} = 1.0$, $w_{Cc} = 1.0$, $w_{cc} = 0.5$): At equilibrium, the frequency of
 the $c$ allele is maintained by the balance between mutation (introducing $c$) and selection
 (removing $c$). With $w_{cc} = 0.5$:
 
@@ -849,7 +849,7 @@ provide a more robust argument for evolution than any single type alone.
 <summary>Problem 2: Data Analysis -- Hardy-Weinberg and Selection</summary>
 
 In a population of $2000$ snails, shell colour is controlled by two alleles: $B$ (brown, Dominant)
-and $b$ (yellow, recessive). The observed numbers are: $B B = 720$$Bb = 960$$bb = 320$. (a)
+and $b$ (yellow, recessive). The observed numbers are: $B B = 720$, $Bb = 960$, $bb = 320$. (a)
 Calculate the allele frequencies. (b) Test whether the population is in Hardy-Weinberg Equilibrium
 using the chi-squared test ($p = 0.05$Critical value for $1$ df $= 3.84$). (c) If thrushes
 selectively prey on yellow snails ($bb$) with $40\%$ mortality while brown snails Are unaffected,
@@ -919,7 +919,7 @@ Frequency of $d$ to drop below $0.5$?
 <details>
 <summary>Solution</summary>
 
-(a) Before selection: $p = 0.2$$q = 0.8$. $P(DD) = p^2 = 0.04$ $P(Dd) = 2pq = 0.32$
+(a) Before selection: $p = 0.2$, $q = 0.8$. $P(DD) = p^2 = 0.04$ $P(Dd) = 2pq = 0.32$
 $P(dd) = q^2 = 0.64$
 
 (b) Relative fitness ($w$):
@@ -937,7 +937,7 @@ $= \frac{0.384 + 0.16}{0.744} = \frac{0.544}{0.744} = 0.731$
 
 $p' = 1 - q' = 0.269$
 
-After one generation: $p = 0.269$$q = 0.731$.
+After one generation: $p = 0.269$, $q = 0.731$.
 
 (d) We need to track $q$ over successive generations. Using the recurrence relation:
 $q' = \frac{q^2(1-s) + pq}{\bar{w}}$ where $\bar{w} = 1 - sq^2$.
@@ -948,16 +948,16 @@ $\Delta q \approx -\frac{spq^2}{1 - sq^2}$
 This is slow when $q$ is small (because most $d$ alleles are hidden in heterozygotes). Let me
 compute Successively:
 
-Gen 0: $q = 0.8$$p = 0.2$$\bar{w} = 1 - 0.4(0.64) = 0.744$
+Gen 0: $q = 0.8$, $p = 0.2$, $\bar{w} = 1 - 0.4(0.64) = 0.744$
 $q' = (0.64 \times 0.6 + 0.16)/0.744 = 0.544/0.744 = 0.731$
 
-Gen 1: $q = 0.731$$p = 0.269$$\bar{w} = 1 - 0.4(0.534) = 0.786$
+Gen 1: $q = 0.731$, $p = 0.269$, $\bar{w} = 1 - 0.4(0.534) = 0.786$
 $q' = (0.534 \times 0.6 + 0.269 \times 0.731)/0.786 = (0.321 + 0.197)/0.786 = 0.518/0.786 = 0.659$
 
-Gen 2: $q = 0.659$$\bar{w} = 1 - 0.4(0.434) = 0.826$
+Gen 2: $q = 0.659$, $\bar{w} = 1 - 0.4(0.434) = 0.826$
 $q' = (0.434 \times 0.6 + 0.341 \times 0.659)/0.826 = (0.261 + 0.225)/0.826 = 0.486/0.826 = 0.588$
 
-Gen 3: $q = 0.588$$\bar{w} = 1 - 0.4(0.346) = 0.862$
+Gen 3: $q = 0.588$, $\bar{w} = 1 - 0.4(0.346) = 0.862$
 $q' = (0.346 \times 0.6 + 0.412 \times 0.588)/0.862 = (0.208 + 0.242)/0.862 = 0.450/0.862 = 0.522$
 
 So after approximately $4$ generations, $q < 0.5$.
@@ -978,7 +978,7 @@ Explain why Genetic drift has a stronger effect in small populations.
 
 (b) For a population with equal sex ratio:
 $N_e = \frac{4N_m N_f}{N_m + N_f} = \frac{4 \times 10 \times 10}{10 + 10} = \frac{400}{20} = 20$.
-(Since $N_m = N_f$$N_e = N = 20$.)
+(Since $N_m = N_f$, $N_e = N = 20$.)
 
 (c) Heterozygosity declines each generation by a factor of $(1 - \frac{1}{2N_e})$:
 $H_t = H_0 \times (1 - \frac{1}{2N_e})^t = 0.42 \times (1 - \frac{1}{40})^5 = 0.42 \times (0.975)^5$
@@ -1118,7 +1118,7 @@ However, this calculation assumes the bottleneck survivors are a perfectly rando
 Unlikely. In practice, the founder effect during bottlenecks can dramatically change allele
 frequencies Or eliminate alleles. The key point is that rare alleles (low frequency) are much more
 likely to be lost Than common alleles. If $B$ had frequency
-$0.01$$P(\text{loss}) = 0.99^{100} \approx 0.366$ ($37\%$).
+$0.01$, $P(\text{loss}) = 0.99^{100} \approx 0.366$ ($37\%$).
 
 (b) The bottleneck reduces the number of alleles in the population because many alleles present in
 the Original $10\,000$ individuals are not represented among the $50$ survivors. When the population
@@ -1269,7 +1269,7 @@ $\hat{q} = \frac{s_{GG}}{s_{GG} + s_{gg}} = \frac{0.238}{0.238 + 0.921} = \frac{
 
 The equilibrium frequency of $G$ is $\hat{p} = 1 - 0.205 = 0.795$.
 
-At equilibrium, $P(GG) = 0.632$$P(Gg) = 0.326$$P(gg) = 0.042$.
+At equilibrium, $P(GG) = 0.632$, $P(Gg) = 0.326$, $P(gg) = 0.042$.
 
 This is analogous to sickle-cell allele maintenance in malaria-endemic regions: $HbS$ heterozygotes
 have Malaria resistance, while both homozygotes have reduced fitness (normal homozygotes:
@@ -1360,13 +1360,13 @@ accelerating as $q$ Decreases, then slowing again as $p$ approaches $1$.]
 (b) For selection against a recessive with fitness $w_{mm} = 1 - s$ and $w_{MM} = w_{Mm} = 1$:
 $q' = \frac{q(1 - sq)}{1 - sq^2}$
 
-Using year 0: $q = 0.90$$q^2 = 0.81$. Year 10: $q = 0.20$. Over 10 years (approximately 5
+Using year 0: $q = 0.90$, $q^2 = 0.81$. Year 10: $q = 0.20$. Over 10 years (approximately 5
 generations if the generation time is 2 years):
 
 This is complex to solve analytically. Using the approximate formula for one generation:
 $\Delta q \approx -sq^2(1-q)$
 
-From year 0 to 2: $\Delta q = 0.90 - 0.75 = 0.15$$q \approx 0.90$.
+From year 0 to 2: $\Delta q = 0.90 - 0.75 = 0.15$, $q \approx 0.90$.
 $0.15 \approx s \times 0.81 \times 0.10 = 0.081s$So $s \approx 1.85$.
 
 This is greater than 1, which is impossible. This suggests the selection is very strong (near-lethal
@@ -1381,7 +1381,7 @@ With $s \approx 0.5$ and 10 generations, the trajectory approximately matches th
 Value of $s$ depends on the number of generations, but the selection is strong.
 
 (c) After pollution reduction, the selective advantage reverses: light-coloured ($mm$) butterflies
-are now Better camouflaged on light bark, while melanic ($MM$$Mm$) butterflies are more visible to
+are now Better camouflaged on light bark, while melanic ($MM$, $Mm$) butterflies are more visible to
 predators. The frequency of $M$ would decrease (and $m$ would increase) as selection now acts
 against the melanic Phenotype. This is exactly what was observed with the peppered moth (_Biston
 betularia_) in England After the Clean Air Acts of the 1950s--1970s.
@@ -1687,7 +1687,7 @@ original ancestor.
 $\frac{50\;\mathrm{kg} - 5\;\mathrm{kg}}{10 \times 10^6\;\mathrm{years}} = \frac{45}{10^7} = 4.5 \times 10^{-6}\;\mathrm{kg/year} = 4.5\;\mathrm{mg/year}$.
 
 (b) $M_t = M_0 e^{rt}$: $50 = 5 e^{10r}$. $e^{10r} = 10$So
-$10r = \ln(10) = 2.303$$r = 0.230\;\mathrm{Ma}^{-1}$.
+$10r = \ln(10) = 2.303$, $r = 0.230\;\mathrm{Ma}^{-1}$.
 
 (c) After $20\;\mathrm{Ma}$:
 $M = 5 e^{0.230 \times 20} = 5 e^{4.605} = 5 \times 100 = 500\;\mathrm{kg}$.

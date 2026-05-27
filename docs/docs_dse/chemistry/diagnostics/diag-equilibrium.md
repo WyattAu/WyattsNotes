@@ -21,7 +21,7 @@ $$N_{2}(g) + 3H_{2}(g) \rightleftharpoons 2NH_{3}(g)$$
 and allowed to reach equilibrium at a certain temperature. At equilibrium, 0.40 mol of $NH_{3}$ was
 present.
 
-(a) Calculate the equilibrium concentrations of $N_{2}$$H_{2}$And $NH_{3}$. [2 marks]
+(a) Calculate the equilibrium concentrations of $N_{2}$, $H_{2}$And $NH_{3}$. [2 marks]
 
 (b) Calculate the equilibrium constant $K_{c}$ for this reaction at this temperature. [3 marks]
 
@@ -131,7 +131,7 @@ pressure**. [3 marks]
 **Worked Solution**
 
 (a) At **constant volume**, adding an inert gas increases the **total pressure** but does **not**
-change the partial pressures of $PCl_{5}$$PCl_{3}$Or $Cl_{2}$. Since the equilibrium depends on
+change the partial pressures of $PCl_{5}$, $PCl_{3}$Or $Cl_{2}$. Since the equilibrium depends on
 partial pressures (or concentrations), the **equilibrium position does not shift**.
 
 Reason: $P_{\text{total}}$ increases, but the mole fractions and hence partial pressures of the
@@ -195,7 +195,7 @@ $$K_{p} = \frac{(P_{NO_{2}})^{2}}{P_{N_{2}O_{4}}} = \frac{(0.667)^{2}}{0.333} = 
 
 (d) Let $\alpha$ be the new degree of dissociation at $P = 2.00$ atm.
 
-$n(N_{2}O_{4}) = 1 - \alpha$$n(NO_{2}) = 2\alpha$Total $= 1 + \alpha$
+$n(N_{2}O_{4}) = 1 - \alpha$, $n(NO_{2}) = 2\alpha$Total $= 1 + \alpha$
 
 $$P(N_{2}O_{4}) = \frac{1 - \alpha}{1 + \alpha} \times 2.00$$
 
@@ -282,7 +282,7 @@ $$H_{2}(g) + I_{2}(g) \rightleftharpoons 2HI(g)$$
 $K_{c} = 49.0$ at a certain temperature. 2.00 mol of $HI$ is placed in a 1.0 dm$^{3}$ container and
 allowed to reach equilibrium.
 
-(a) Calculate the equilibrium concentrations of $H_{2}$$I_{2}$And $HI$. [5 marks]
+(a) Calculate the equilibrium concentrations of $H_{2}$, $I_{2}$And $HI$. [5 marks]
 
 (b) At equilibrium, an additional 1.00 mol of $I_{2}$ is added to the container. Calculate the new
 equilibrium concentrations after the system re-equilibrates. [4 marks]
@@ -293,11 +293,11 @@ equilibrium concentrations after the system re-equilibrates. [4 marks]
 
 **Worked Solution**
 
-(a) Initial: $[HI] = 2.00$ mol/dm$^{3}$$[H_{2}] = [I_{2}] = 0$.
+(a) Initial: $[HI] = 2.00$ mol/dm$^{3}$, $[H_{2}] = [I_{2}] = 0$.
 
 Let $x$ mol/dm$^{3}$ of $HI$ dissociate.
 
-At equilibrium: $[HI] = 2.00 - 2x$$[H_{2}] = x$$[I_{2}] = x$.
+At equilibrium: $[HI] = 2.00 - 2x$, $[H_{2}] = x$, $[I_{2}] = x$.
 
 $$K_{c} = \frac{[HI]^{2}}{[H_{2}][I_{2}]} = \frac{(2.00 - 2x)^{2}}{x^{2}} = 49.0$$
 
@@ -320,7 +320,7 @@ $[I_{2}]_{\text{new initial}} = 0.222 + 1.00 = 1.222$ mol/dm$^{3}$.
 The equilibrium shifts left to partially consume the added $I_{2}$. Let $y$ mol/dm$^{3}$ of $H_{2}$
 react with $I_{2}$.
 
-New equilibrium: $[H_{2}] = 0.222 - y$$[I_{2}] = 1.222 - y$$[HI] = 1.556 + 2y$.
+New equilibrium: $[H_{2}] = 0.222 - y$, $[I_{2}] = 1.222 - y$, $[HI] = 1.556 + 2y$.
 
 $$K_{c} = \frac{(1.556 + 2y)^{2}}{(0.222 - y)(1.222 - y)} = 49.0$$
 

@@ -58,7 +58,7 @@ $$
 $$
 
 Common strong acids:
-$\mathrm{HCl}$$\mathrm{HBr}$$\mathrm{HI}$$\mathrm{HNO}_3$$\mathrm{H}_2\mathrm{SO}_4$ (first
+$\mathrm{HCl}$, $\mathrm{HBr}$, $\mathrm{HI}$, $\mathrm{HNO}_3$, $\mathrm{H}_2\mathrm{SO}_4$ (first
 dissociation), $\mathrm{HClO}_4$.
 
 For a strong monoprotic acid of concentration $c$: $[\mathrm{H}^+] = c$.
@@ -75,16 +75,16 @@ The position of equilibrium lies to the left. The degree of dissociation $\alpha
 acid molecules that dissociate. For weak acids, $\alpha \ll 1$.
 
 Common weak acids:
-$\mathrm{CH}_3\mathrm{COOH}$$\mathrm{HCOOH}$$\mathrm{HCN}$$\mathrm{H}_2\mathrm{CO}_3$$\mathrm{NH}_4^+$.
+$\mathrm{CH}_3\mathrm{COOH}$, $\mathrm{HCOOH}$, $\mathrm{HCN}$, $\mathrm{H}_2\mathrm{CO}_3$, $\mathrm{NH}_4^+$.
 
 ### Strong Bases
 
-Common strong bases: Group 1 hydroxides ($\mathrm{NaOH}$$\mathrm{KOH}$), $\mathrm{Ba(OH)}_2$And
+Common strong bases: Group 1 hydroxides ($\mathrm{NaOH}$, $\mathrm{KOH}$), $\mathrm{Ba(OH)}_2$And
 $\mathrm{Ca(OH)}_2$ (sparingly soluble but fully dissociated).
 
 ### Weak Bases
 
-Common weak bases: $\mathrm{NH}_3$Amines, $\mathrm{CO}_3^{2-}$$\mathrm{HCO}_3^-$.
+Common weak bases: $\mathrm{NH}_3$Amines, $\mathrm{CO}_3^{2-}$, $\mathrm{HCO}_3^-$.
 
 ## The pH Scale
 
@@ -125,7 +125,7 @@ At $25^\circ\mathrm{C}$: $K_w = 1.0 \times 10^{-14}\,\mathrm{mol^2\,dm^{-6}}$.
 Since $[\mathrm{H}^+] = [\mathrm{OH}^-]$ in pure water:
 $[\mathrm{H}^+] = \sqrt{K_w} = 1.0 \times 10^{-7}\,\mathrm{mol/dm}^3$.
 
-$K_w$ is temperature-dependent. At $50^\circ\mathrm{C}$$K_w = 5.5 \times 10^{-14}$So neutral
+$K_w$ is temperature-dependent. At $50^\circ\mathrm{C}$, $K_w = 5.5 \times 10^{-14}$So neutral
 $\mathrm{pH} = 6.63$. The solution is still neutral ($[\mathrm{H}^+] = [\mathrm{OH}^-]$) but the pH
 is lower because $K_w$ has increased.
 
@@ -429,7 +429,7 @@ weak base.
    titration curve at the equivalence point.
 
 4. **Forgetting that $K_w$ changes with temperature.** At temperatures other than
-   $25^\circ\mathrm{C}$$\mathrm{p}K_w \ne 14$So $\mathrm{pH} + \mathrm{pOH} \ne 14$.
+   $25^\circ\mathrm{C}$, $\mathrm{p}K_w \ne 14$So $\mathrm{pH} + \mathrm{pOH} \ne 14$.
 
 5. **Adding strong acid/base to a buffer in quantities exceeding its capacity.** The buffer can only
    resist small additions; large additions will overwhelm it.
@@ -550,7 +550,7 @@ PH change = $4.76 - 4.49 = 0.27$ units. The buffer resists the pH change effecti
 For comparison, adding the same amount of $\mathrm{HCl}$ to $25.0\,\mathrm{cm}^3$ of pure water
 would give:
 
-$[\mathrm{H}^+] = 5.0 \times 10^{-4} / 0.0300 = 0.0167\,\mathrm{mol/dm}^3$$\mathrm{pH} = 1.78$
+$[\mathrm{H}^+] = 5.0 \times 10^{-4} / 0.0300 = 0.0167\,\mathrm{mol/dm}^3$, $\mathrm{pH} = 1.78$
 
 A change from pH 7.00 to pH 1.78 -- 5.22 units. The buffer reduces the pH change by a factor of
 approximately 19.
@@ -1108,7 +1108,7 @@ Sulfuric acid ($\mathrm{H}_2\mathrm{SO}_4$) is a diprotic acid:
 - First dissociation: complete
   ($\mathrm{H}_2\mathrm{SO}_4 \to \mathrm{H}^+ + \mathrm{HSO}_4^-$Strong acid).
 - Second dissociation: partial
-  ($\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$$K_{a2} = 1.02 \times 10^{-2}$).
+  ($\mathrm{HSO}_4^- \rightleftharpoons \mathrm{H}^+ + \mathrm{SO}_4^{2-}$, $K_{a2} = 1.02 \times 10^{-2}$).
 
 **Worked Example:** Calculate the pH of $0.050\,\mathrm{mol\,dm^{-3}}$ $\mathrm{H}_2\mathrm{SO}_4$.
 
@@ -1119,7 +1119,7 @@ For the second dissociation: let $x$ be the additional $[\mathrm{H}^+]$ from $\m
 
 $$K_{a2} = \frac{(0.050 + x)(x)}{0.050 - x} = 1.02 \times 10^{-2}$$
 
-Approximation: $0.050 + x \approx 0.050$$0.050 - x \approx 0.050$:
+Approximation: $0.050 + x \approx 0.050$, $0.050 - x \approx 0.050$:
 
 $$x = 1.02 \times 10^{-2} = 0.0102\,\mathrm{mol\,dm^{-3}}$$
 
@@ -1204,8 +1204,8 @@ $$\mathrm{pH} = 4.76 + \log\frac{0.0090}{0.0110} = 4.76 + \log(0.818) = 4.76 - 0
 <summary>Q3 (5 marks)</summary>
 
 Define the term $\mathrm{p}K_a$. Explain why the $\mathrm{p}K_a$ of chloroethanoic acid
-($\mathrm{CH}_2\mathrm{ClCOOH}$$\mathrm{p}K_a = 2.86$) is lower than that of ethanoic acid
-($\mathrm{CH}_3\mathrm{COOH}$$\mathrm{p}K_a = 4.76$).
+($\mathrm{CH}_2\mathrm{ClCOOH}$, $\mathrm{p}K_a = 2.86$) is lower than that of ethanoic acid
+($\mathrm{CH}_3\mathrm{COOH}$, $\mathrm{p}K_a = 4.76$).
 
 **Mark Scheme:**
 

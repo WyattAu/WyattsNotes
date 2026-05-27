@@ -188,7 +188,7 @@ $$\boxed{\varepsilon = \varepsilon_0\sin(\omega t)}$$
 Where the peak e.m.f. Is $\varepsilon_0 = NBA\omega$.
 
 The output is sinusoidal with the same frequency as the rotation. The peak e.m.f. Is proportional to
-$N$$B$$A$And $\omega$.
+$N$, $B$, $A$And $\omega$.
 
 ## 8. Transformers
 

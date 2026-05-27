@@ -74,7 +74,7 @@ $$\mathrm{dom}(f \circ g) = (-\infty, -\sqrt{3}] \cup [\sqrt{3}, \infty)$$
 
 ### Worked Example 3
 
-Let $f(x) = \dfrac{1}{x}$ and $g(x) = x + 1$. Find $f \circ g$$g \circ f$And their domains.
+Let $f(x) = \dfrac{1}{x}$ and $g(x) = x + 1$. Find $f \circ g$, $g \circ f$And their domains.
 
 $(f \circ g)(x) = f(g(x)) = f(x + 1) = \dfrac{1}{x + 1}$
 $\mathrm{dom} = \mathbb{R} \setminus \{-1\}$.
@@ -169,9 +169,9 @@ A piecewise function is defined by different expressions on different intervals 
 
 $$f(x) = \begin{cases} x^2 & \mathrm{if } x \lt 0 \\ 2x + 1 & \mathrm{if } 0 \leqslant x \leqslant 3 \\ 10 - x & \mathrm{if } x \gt 3 \end{cases}$$
 
-Find $f(-2)$$f(0)$$f(3)$And $f(5)$.
+Find $f(-2)$, $f(0)$, $f(3)$And $f(5)$.
 
-$f(-2) = (-2)^2 = 4$$f(0) = 2(0) + 1 = 1$$f(3) = 2(3) + 1 = 7$$f(5) = 10 - 5 = 5$.
+$f(-2) = (-2)^2 = 4$, $f(0) = 2(0) + 1 = 1$, $f(3) = 2(3) + 1 = 7$, $f(5) = 10 - 5 = 5$.
 
 ---
 
@@ -216,7 +216,7 @@ $\mathrm{dom}(f \circ g) = \mathbb{R} \setminus \{2\}$.
 Set $y = \dfrac{3x + 1}{x - 2}$. Then
 $y(x - 2) = 3x + 1 \implies yx - 2y = 3x + 1 \implies x(y - 3) = 2y + 1$.
 
-$f^{-1}(x) = \dfrac{2x + 1}{x - 3}$$\mathrm{dom}(f^{-1}) = \mathbb{R} \setminus \{3\}$.
+$f^{-1}(x) = \dfrac{2x + 1}{x - 3}$, $\mathrm{dom}(f^{-1}) = \mathbb{R} \setminus \{3\}$.
 
 3. **Question:** Let $f(x) = x^2 - 4x + 3$ with domain $[1, \infty)$. Find $f^{-1}(0)$.
 
@@ -224,7 +224,7 @@ First find $f^{-1}$. Set $y = (x - 2)^2 - 1$. Since domain is $[1, \infty)$Range
 
 $(x - 2)^2 = y + 1 \implies x - 2 = \sqrt{y + 1}$ (positive root since $x \geqslant 1$).
 
-$f^{-1}(x) = 2 + \sqrt{x + 1}$$\mathrm{dom}(f^{-1}) = [-1, \infty)$.
+$f^{-1}(x) = 2 + \sqrt{x + 1}$, $\mathrm{dom}(f^{-1}) = [-1, \infty)$.
 
 $f^{-1}(0) = 2 + \sqrt{0 + 1} = 2 + 1 = 3$.
 
@@ -233,9 +233,9 @@ Verification: $f(3) = 9 - 12 + 3 = 0$. Confirmed.
 4. **Question:** The graph of $y = f(x)$ has a minimum at $(1, -2)$ and passes through $(0, 3)$.
    Find the corresponding points on $y = 3f(2x) + 1$.
 
-$(1, -2) \to$ set $2x = 1 \implies x = 0.5$$y = 3(-2) + 1 = -5$. Point: $(0.5, -5)$.
+$(1, -2) \to$ set $2x = 1 \implies x = 0.5$, $y = 3(-2) + 1 = -5$. Point: $(0.5, -5)$.
 
-$(0, 3) \to$ set $2x = 0 \implies x = 0$$y = 3(3) + 1 = 10$. Point: $(0, 10)$.
+$(0, 3) \to$ set $2x = 0 \implies x = 0$, $y = 3(3) + 1 = 10$. Point: $(0, 10)$.
 
 5. **Question:** A function $f$ is defined by $f(x) = 2 - x^2$ for $x \leqslant 0$. State the range
    of $f$ and find $f^{-1}$.
@@ -246,11 +246,11 @@ $f(x) \to -\infty$. Range: $(-\infty, 2]$.
 Set $y = 2 - x^2 \implies x^2 = 2 - y \implies x = -\sqrt{2 - y}$ (negative root since
 $x \leqslant 0$).
 
-$f^{-1}(x) = -\sqrt{2 - x}$$\mathrm{dom}(f^{-1}) = (-\infty, 2]$.
+$f^{-1}(x) = -\sqrt{2 - x}$, $\mathrm{dom}(f^{-1}) = (-\infty, 2]$.
 
 6. **Question:** Given $f(x) = \sqrt{x - 1}$ and $g(x) = x^2 + x + 1$Find $\mathrm{dom}(g \circ f)$.
 
-$\mathrm{dom}(f) = [1, \infty)$$\mathrm{dom}(g) = \mathbb{R}$.
+$\mathrm{dom}(f) = [1, \infty)$, $\mathrm{dom}(g) = \mathbb{R}$.
 
 $(g \circ f)(x) = g(\sqrt{x - 1}) = (\sqrt{x - 1})^2 + \sqrt{x - 1} + 1 = x - 1 + \sqrt{x - 1} + 1 = x + \sqrt{x - 1}$.
 
@@ -342,7 +342,7 @@ $$x = 2 + \sqrt{\frac{y+3}{2}}$$
 
 $$f^{-1}(x) = 2 + \sqrt{\frac{x+3}{2}}$$
 
-$\mathrm{dom}(f^{-1}) = [-3, \infty)$$\mathrm{range}(f^{-1}) = [2, \infty)$.
+$\mathrm{dom}(f^{-1}) = [-3, \infty)$, $\mathrm{range}(f^{-1}) = [2, \infty)$.
 
 Verification: $f^{-1}(f(3)) = f^{-1}(-1) = 2 + \sqrt{1} = 3$. Correct.
 
@@ -375,13 +375,13 @@ Corresponding point: $\left(\dfrac{8}{3},\; 3\right)$. This is the minimum of th
 
 **Worked Example 11: Composite with logarithm**
 
-Let $f(x) = \ln(x - 1)$ and $g(x) = x^2 + 1$. Find $(f \circ g)(x)$$(g \circ f)(x)$And their
+Let $f(x) = \ln(x - 1)$ and $g(x) = x^2 + 1$. Find $(f \circ g)(x)$, $(g \circ f)(x)$And their
 domains.
 
 <details>
 <summary>Solution</summary>
 
-$\mathrm{dom}(g) = \mathbb{R}$$\mathrm{dom}(f) = (1, \infty)$.
+$\mathrm{dom}(g) = \mathbb{R}$, $\mathrm{dom}(f) = (1, \infty)$.
 
 **$(f \circ g)(x) = f(g(x)) = \ln(x^2 + 1 - 1) = \ln(x^2)$.**
 
@@ -501,9 +501,9 @@ $\Delta = 1 - 4 = -3 \lt 0$. No real solutions.
 <details>
 <summary>Solution</summary>
 
-$f(x) = (x+2)^2 - 4$. Since $x \geq -2$ and the vertex is at $x = -2$$f$ is strictly increasing.
+$f(x) = (x+2)^2 - 4$. Since $x \geq -2$ and the vertex is at $x = -2$, $f$ is strictly increasing.
 
-Range: $[-4, \infty)$. Since $5 \geq -4$$f^{-1}(5)$ exists.
+Range: $[-4, \infty)$. Since $5 \geq -4$, $f^{-1}(5)$ exists.
 
 Set $(x+2)^2 - 4 = 5 \implies (x+2)^2 = 9 \implies x + 2 = 3$ (positive root).
 
@@ -691,7 +691,7 @@ Let $f(x) = \dfrac{2x}{x - 3}$ for $x > 3$. Find $f^{-1}$.
 <details>
 <summary>Solution</summary>
 
-First, check one-to-one: $f(x) = 2 + \dfrac{6}{x - 3}$. For $x > 3$$x - 3 > 0$So
+First, check one-to-one: $f(x) = 2 + \dfrac{6}{x - 3}$. For $x > 3$, $x - 3 > 0$So
 $\dfrac{6}{x-3} > 0$ and is strictly decreasing. Therefore $f$ is strictly decreasing and hence
 one-to-one on $(3, \infty)$.
 
@@ -705,7 +705,7 @@ $$f^{-1}(x) = \frac{3x}{x - 2}$$
 
 To find the domain of $f^{-1}$: since $\mathrm{range}(f)$ must equal $\mathrm{dom}(f^{-1})$.
 
-As $x \to 3^+$$f(x) \to +\infty$. As $x \to +\infty$$f(x) \to 2^+$.
+As $x \to 3^+$, $f(x) \to +\infty$. As $x \to +\infty$, $f(x) \to 2^+$.
 
 $\mathrm{range}(f) = (2, \infty)$So $\mathrm{dom}(f^{-1}) = (2, \infty)$.
 
@@ -720,7 +720,7 @@ Determine whether $f(x) = \dfrac{x}{x^2 + 1}$ is even, odd, or neither.
 
 $$f(-x) = \frac{-x}{(-x)^2 + 1} = \frac{-x}{x^2 + 1} = -f(x)$$
 
-Since $f(-x) = -f(x)$ for all real $x$$f$ is an odd function.
+Since $f(-x) = -f(x)$ for all real $x$, $f$ is an odd function.
 
 </details>
 
@@ -736,7 +736,7 @@ $x^2 + x + 1 = \left(x + \dfrac{1}{2}\right)^2 + \dfrac{3}{4} > 0$ for all $x$:
 
 $$y(x^2 + x + 1) = x^2 - x + 1 \implies (y - 1)x^2 + (y + 1)x + (y - 1) = 0$$
 
-For real $x$$\Delta \geq 0$:
+For real $x$, $\Delta \geq 0$:
 
 $$(y + 1)^2 - 4(y - 1)^2 \geq 0 \implies (y + 1 - 2y + 2)(y + 1 + 2y - 2) \geq 0$$
 
@@ -795,7 +795,7 @@ one-to-one on $[1, \infty)$. Find $f^{-1}(0)$.
 <details>
 <summary>Solution</summary>
 
-$f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$. Since $f$ takes the same
+$f(0) = 0$, $f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$, $f(-\sqrt{3}) = 0$. Since $f$ takes the same
 value at three different points, it is not one-to-one on $\mathbb{R}$.
 
 For $x \geq 1$: $f'(x) = 3x^2 - 3 = 3(x^2 - 1) \geq 0$ (with equality only at $x = 1$). So $f$ is
@@ -812,7 +812,7 @@ the domain of $h$.
 <details>
 <summary>Solution</summary>
 
-$\mathrm{dom}(f) = \mathbb{R}$$\mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$.
+$\mathrm{dom}(f) = \mathbb{R}$, $\mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$.
 
 $\mathrm{dom}(h) = \mathrm{dom}(f) \cap \mathrm{dom}(g) = \mathbb{R} \setminus \{1\}$.
 

@@ -119,9 +119,9 @@ The IQR is resistant to outliers since it ignores the most extreme $50\%$ of dat
 <details>
 <summary>Examples</summary>
 - Dataset: $\{3, 5, 7, 8, 12, 14, 18, 20, 25\}$ ($n=9$Odd).
- - Lower half: $\{3, 5, 7, 8\}$$Q_1 = \frac{5+7}{2} = 6$.
+ - Lower half: $\{3, 5, 7, 8\}$, $Q_1 = \frac{5+7}{2} = 6$.
  - $Q_2 = 12$.
- - Upper half: $\{14, 18, 20, 25\}$$Q_3 = \frac{18+20}{2} = 19$.
+ - Upper half: $\{14, 18, 20, 25\}$, $Q_3 = \frac{18+20}{2} = 19$.
  - IQR $= 19 - 6 = 13$.
 
 ### Variance
@@ -185,7 +185,7 @@ Variance for comparing spread.
 
 <details>
 <summary>Examples</summary>
-- Following the previous example: $\sigma = \sqrt{4} = 2$$s = \sqrt{\frac{32}{7}} \approx 2.14$.
+- Following the previous example: $\sigma = \sqrt{4} = 2$, $s = \sqrt{\frac{32}{7}} \approx 2.14$.
 - Two machines produce rods of length $10$ cm. Machine A has $\sigma = 0.1$ cm, Machine B has $\sigma = 0.5$ cm. Machine A is more precise.
 
 ## Grouped Data
@@ -237,7 +237,7 @@ This method simplifies calculation by working with small integer values of $d_i$
 | 60 -- 69       | 10    | 64.5             | $1$   | $10$      |
 | 70 -- 79       | 4     | 74.5             | $2$   | $8$       |
 
-Here $A = 54.5$$h = 10$.
+Here $A = 54.5$, $h = 10$.
 
 $$
 \begin{aligned}
@@ -325,8 +325,8 @@ The between-group variation caused by the difference in means.
 
 </details>
 <summary>Examples</summary>
-- Group A: $n_1 = 6$$\bar{x}_1 = 10$$\sigma_1^2 = 4$.
-- Group B: $n_2 = 4$$\bar{x}_2 = 20$$\sigma_2^2 = 9$.
+- Group A: $n_1 = 6$, $\bar{x}_1 = 10$, $\sigma_1^2 = 4$.
+- Group B: $n_2 = 4$, $\bar{x}_2 = 20$, $\sigma_2^2 = 9$.
 
 Combined mean: $\bar{x}_c = \frac{6(10)+4(20)}{10} = 14$.
 
@@ -361,7 +361,7 @@ A larger CV indicates greater relative dispersion.
 ### Box-and-Whisker Plots
 
 A **box-and-whisker plot** is a standardised graphical display of the five-number summary: minimum,
-$Q_1$$Q_2$ (median), $Q_3$And maximum.
+$Q_1$, $Q_2$ (median), $Q_3$And maximum.
 
 **Construction:**
 
@@ -376,8 +376,8 @@ $Q_1 - 1.5 \times \mathrm{IQR}$ or above $Q_3 + 1.5 \times \mathrm{IQR}$.
 <summary>Examples</summary>
 - Dataset: $\{5, 8, 12, 15, 18, 20, 24, 28, 35, 42, 58\}$ ($n=11$).
  - $Q_2 = 18$.
- - Lower half: $\{5, 8, 12, 15, 18\}$$Q_1 = 12$.
- - Upper half: $\{18, 20, 24, 28, 35, 42, 58\}$$Q_3 = 28$.
+ - Lower half: $\{5, 8, 12, 15, 18\}$, $Q_1 = 12$.
+ - Upper half: $\{18, 20, 24, 28, 35, 42, 58\}$, $Q_3 = 28$.
  - IQR $= 28 - 12 = 16$.
  - Lower fence: $12 - 1.5(16) = -12$.
  - Upper fence: $28 + 1.5(16) = 52$.
@@ -424,16 +424,16 @@ Transformed dataset $Y = \dfrac{X - 20}{6}$.
 
 <details>
 <summary>Answer</summary>
-- Class marks: $14.5, 24.5, 34.5, 44.5, 54.5$. Let $A = 34.5$$h = 10$.
+- Class marks: $14.5, 24.5, 34.5, 44.5, 54.5$. Let $A = 34.5$, $h = 10$.
 - $d_i$: $-2, -1, 0, 1, 2$.
-- $\sum f_i = 50$$\sum f_i d_i = 5(-2) + 12(-1) + 18(0) + 10(1) + 5(2) = -10 + (-12) + 0 + 10 + 10 = -2$.
+- $\sum f_i = 50$, $\sum f_i d_i = 5(-2) + 12(-1) + 18(0) + 10(1) + 5(2) = -10 + (-12) + 0 + 10 + 10 = -2$.
 - $\bar{x} = 34.5 + \frac{-2}{50} \times 10 = 34.5 - 0.4 = 34.1$.
 - $\sum f_i d_i^2 = 5(4) + 12(1) + 18(0) + 10(1) + 5(4) = 20 + 12 + 0 + 10 + 20 = 62$.
 - $\sigma_d^2 = \frac{62}{50} - \left(\frac{-2}{50}\right)^2 = 1.24 - 0.0016 = 1.2384$.
 - $\sigma^2 = 1.2384 \times 10^2 = 123.84$. So $\sigma = \sqrt{123.84} \approx 11.13$.
 
-4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$$\bar{x}_1 = 72$ $\sigma_1 = 8$).
-Class B ($n_2 = 20$$\bar{x}_2 = 80$$\sigma_2 = 6$). Find the combined mean and Combined standard
+4. **Question:** Two classes sat the same test. Class A ($n_1 = 30$, $\bar{x}_1 = 72$ $\sigma_1 = 8$).
+Class B ($n_2 = 20$, $\bar{x}_2 = 80$, $\sigma_2 = 6$). Find the combined mean and Combined standard
 deviation.
 </details>
 <summary>Answer</summary>
@@ -460,8 +460,8 @@ Outliers.
 - Sorted: $\{780, 790, 795, 800, 805, 810, 815, 820, 830, 855\}$.
 - Range $= 855 - 780 = 75$.
 - $Q_2 = \frac{805+810}{2} = 807.5$.
-- Lower half: $\{780, 790, 795, 800, 805\}$$Q_1 = 795$.
-- Upper half: $\{810, 815, 820, 830, 855\}$$Q_3 = 820$.
+- Lower half: $\{780, 790, 795, 800, 805\}$, $Q_1 = 795$.
+- Upper half: $\{810, 815, 820, 830, 855\}$, $Q_3 = 820$.
 - IQR $= 820 - 795 = 25$.
 - Lower fence: $795 - 1.5(25) = 757.5$. Upper fence: $820 + 1.5(25) = 857.5$.
 - No outliers (all values lie within $[757.5, 857.5]$).
@@ -522,7 +522,7 @@ Estimate the median weight from the cumulative frequency distribution.
   \end{aligned}
   $$
 
-10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$$\sum x_i^2$ The
+10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$, $\sum x_i^2$ The
 mean, and the population variance. Verify your variance using both the definition formula and The
 computational formula.
 </details>
@@ -568,7 +568,7 @@ Variance.
 </details>
 <summary>Answer</summary>
 
-- Original: $\bar{x} = 0$$\sigma^2 = 25$$n = 6$.
+- Original: $\bar{x} = 0$, $\sigma^2 = 25$, $n = 6$.
 - $\sum x_i = 0$So $\sum x_i^2 = n\sigma^2 + \frac{(\sum x_i)^2}{n} = 6(25) + 0 = 150$.
 - After removing $10$: new sum $= 0 - 10 = -10$New $n' = 5$.
 - New mean: $\bar{x}' = \frac{-10}{5} = -2$.
@@ -603,7 +603,7 @@ For ./4-statistics-and-probability/2_statistics problems in DSE Paper 1:
    $\sigma^2 = \dfrac{\sum x_i^2}{n} - \bar{x}^2$ and show both terms.
 3. For grouped data, show the class marks and the coding method in a table.
 4. For the coding method, state the assumed mean $A$ and class width $h$.
-5. For box plots, label all five values (min, $Q_1$$Q_2$$Q_3$Max).
+5. For box plots, label all five values (min, $Q_1$, $Q_2$, $Q_3$Max).
 
 ### Significant Figures
 
@@ -670,22 +670,22 @@ If the data is symmetric around 6: try $\{4, 5, 6, 7, 8\}$.
 
 Sum $= 30$. $\sum x_i^2 = 16 + 25 + 36 + 49 + 64 = 190 \neq 200$.
 
-Try $\{2, 6, 6, 6, 10\}$: sum $= 30$$\sum x_i^2 = 4 + 36 + 36 + 36 + 100 = 212 \neq 200$.
+Try $\{2, 6, 6, 6, 10\}$: sum $= 30$, $\sum x_i^2 = 4 + 36 + 36 + 36 + 100 = 212 \neq 200$.
 
-Try $\{4, 4, 6, 8, 8\}$: sum $= 30$$\sum x_i^2 = 16 + 16 + 36 + 64 + 64 = 196 \neq 200$.
+Try $\{4, 4, 6, 8, 8\}$: sum $= 30$, $\sum x_i^2 = 16 + 16 + 36 + 64 + 64 = 196 \neq 200$.
 
-Try $\{3, 5, 7, 7, 8\}$: sum $= 30$$\sum x_i^2 = 9 + 25 + 49 + 49 + 64 = 196 \neq 200$.
+Try $\{3, 5, 7, 7, 8\}$: sum $= 30$, $\sum x_i^2 = 9 + 25 + 49 + 49 + 64 = 196 \neq 200$.
 
-Try $\{4, 4, 8, 6, 8\}$: sum $= 30$$\sum x_i^2 = 16 + 16 + 64 + 36 + 64 = 196$.
+Try $\{4, 4, 8, 6, 8\}$: sum $= 30$, $\sum x_i^2 = 16 + 16 + 64 + 36 + 64 = 196$.
 
-Try $\{2, 6, 6, 8, 8\}$: sum $= 30$$\sum x_i^2 = 4 + 36 + 36 + 64 + 64 = 204$.
+Try $\{2, 6, 6, 8, 8\}$: sum $= 30$, $\sum x_i^2 = 4 + 36 + 36 + 64 + 64 = 204$.
 
-Try $\{4, 6, 6, 6, 8\}$: sum $= 30$$\sum x_i^2 = 16 + 36 + 36 + 36 + 64 = 188$.
+Try $\{4, 6, 6, 6, 8\}$: sum $= 30$, $\sum x_i^2 = 16 + 36 + 36 + 36 + 64 = 188$.
 
 There may be no solution with 5 positive integers. Let me try $\{2, 5, 7, 7, 9\}$: sum
-$= 30$$\sum x_i^2 = 4 + 25 + 49 + 49 + 81 = 208$.
+$= 30$, $\sum x_i^2 = 4 + 25 + 49 + 49 + 81 = 208$.
 
-$\{3, 5, 6, 8, 8\}$: sum $= 30$$\sum x_i^2 = 9 + 25 + 36 + 64 + 64 = 198$.
+$\{3, 5, 6, 8, 8\}$: sum $= 30$, $\sum x_i^2 = 9 + 25 + 36 + 64 + 64 = 198$.
 
 $\{4, 5, 6, 7, 8\}$: $\sum x_i^2 = 190$. Need 200. The deficit is 10. If we change 5 to 6 and 6 to
 5: $\{4, 6, 5, 7, 8\}$: same sum of squares.
@@ -713,9 +713,9 @@ For the frequency distribution below, find the standard deviation using the assu
 <details>
 <summary>Solution</summary>
 
-Class marks: $7$$12$$17$$22$$27$. $A = 17$$h = 5$.
+Class marks: $7$, $12$, $17$, $22$, $27$. $A = 17$, $h = 5$.
 
-$d_i$: $-2$$-1$$0$$1$$2$.
+$d_i$: $-2$, $-1$, $0$, $1$, $2$.
 
 | $f_i$ | $d_i$ | $f_id_i$ | $f_id_i^2$ |
 | ----- | ----- | -------- | ---------- |
@@ -725,7 +725,7 @@ $d_i$: $-2$$-1$$0$$1$$2$.
 | 5     | 1     | 5        | 5          |
 | 3     | 2     | 6        | 12         |
 
-$n = 30$$\sum f_id_i = -2$$\sum f_id_i^2 = 36$.
+$n = 30$, $\sum f_id_i = -2$, $\sum f_id_i^2 = 36$.
 
 $\bar{d} = \dfrac{-2}{30} = -\dfrac{1}{15}$.
 
@@ -742,7 +742,7 @@ $\sigma = \sqrt{\dfrac{269}{9}} = \dfrac{\sqrt{269}}{3} \approx 5.47$.
 ## DSE Exam-Style Questions
 
 **DSE Practice 1.** Two groups of students took the same test. Group A:
-$n_1 = 40$$\bar{x}_1 = 65$$\sigma_1 = 8$. Group B: $n_2 = 60$$\bar{x}_2 = 72$$\sigma_2 = 10$. Find
+$n_1 = 40$, $\bar{x}_1 = 65$, $\sigma_1 = 8$. Group B: $n_2 = 60$, $\bar{x}_2 = 72$, $\sigma_2 = 10$. Find
 the overall mean and standard deviation.
 
 <details>
@@ -839,11 +839,11 @@ Estimate the mean and standard deviation.
 <details>
 <summary>Solution</summary>
 
-Class marks: $9.5$$29.5$$49.5$$69.5$$89.5$. Class widths: 20, 20, 20, 20, 21.
+Class marks: $9.5$, $29.5$, $49.5$, $69.5$, $89.5$. Class widths: 20, 20, 20, 20, 21.
 
-For the coding method with equal class widths (using width 20): $A = 49.5$$h = 20$.
+For the coding method with equal class widths (using width 20): $A = 49.5$, $h = 20$.
 
-$d_i$: $-2$$-1$$0$$1$$2$ (approximately; the last class has width 21).
+$d_i$: $-2$, $-1$, $0$, $1$, $2$ (approximately; the last class has width 21).
 
 Using approximate equal widths:
 
@@ -855,7 +855,7 @@ Using approximate equal widths:
 | 14    | 69.5  | 1     | 14       | 14         |
 | 5     | 89.5  | 2     | 10       | 20         |
 
-$n = 55$$\sum f_id_i = 6$$\sum f_id_i^2 = 60$.
+$n = 55$, $\sum f_id_i = 6$, $\sum f_id_i^2 = 60$.
 
 $\bar{x} = 49.5 + \dfrac{6}{55} \times 20 = 49.5 + 2.18 = 51.68 \approx 51.7$.
 

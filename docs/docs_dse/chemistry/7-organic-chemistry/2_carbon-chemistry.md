@@ -174,7 +174,7 @@ A homologous series is a family of organic compounds with:
 | $\mathrm{\gt C = O}$         | Ketone          | -one            | $\mathrm{CH_3COCH_3}$   |
 | $-\mathrm{COO}-$             | Ester           | -oate           | $\mathrm{CH_3COOCH_3}$  |
 | $-\mathrm{NH_2}$             | Amine           | -amine          | $\mathrm{CH_3NH_2}$     |
-| $-\mathrm{Cl}$$-\mathrm{Br}$ | Halide          | chloro-, bromo- | $\mathrm{CH_3Cl}$       |
+| $-\mathrm{Cl}$, $-\mathrm{Br}$ | Halide          | chloro-, bromo- | $\mathrm{CH_3Cl}$       |
 
 ---
 

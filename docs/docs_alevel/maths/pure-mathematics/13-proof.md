@@ -90,7 +90,7 @@ $\blacksquare$
 
 **Theorem.** $\sqrt{2}$ is irrational.
 
-**Proof.** Suppose $\sqrt{2} = \dfrac{a}{b}$ where $a, b \in \mathbb{Z}$$b \neq 0$And
+**Proof.** Suppose $\sqrt{2} = \dfrac{a}{b}$ where $a, b \in \mathbb{Z}$, $b \neq 0$And
 $\gcd(a,b) = 1$ (the fraction is in lowest terms).
 
 $$2 = \frac{a^2}{b^2} \implies a^2 = 2b^2$$
@@ -134,7 +134,7 @@ So not all primes less than 10 are odd. The claim is **false**. The counterexamp
 
 ### 3.3 Example: sum of two squares
 
-**Claim.** For all integers $n$ with $1 \leq n \leq 5$$n^2 + (n+1)^2$ is odd.
+**Claim.** For all integers $n$ with $1 \leq n \leq 5$, $n^2 + (n+1)^2$ is odd.
 
 **Proof.** Check each case:
 
@@ -161,7 +161,7 @@ To disprove a universal statement, it suffices to find **one** example where the
 
 ### 4.2 Examples
 
-**Claim.** "For all real $x$$x^2 \gt x$." Counterexample: $x = 0.5$Since $0.25 \not> 0.5$.
+**Claim.** "For all real $x$, $x^2 \gt x$." Counterexample: $x = 0.5$Since $0.25 \not> 0.5$.
 
 **Claim.** "All quadratics have two distinct real roots." Counterexample: $x^2 + 1 = 0$ has no real
 Roots (discriminant $= -4 \lt 0$).
@@ -375,7 +375,7 @@ Prove that $\sqrt{3}$ is irrational.
 
 <details>
 <summary>Solution 4</summary>
-Suppose $\sqrt{3} = a/b$ in lowest terms with $a, b \in \mathbb{Z}^+$$\gcd(a,b) = 1$.
+Suppose $\sqrt{3} = a/b$ in lowest terms with $a, b \in \mathbb{Z}^+$, $\gcd(a,b) = 1$.
 
 $3 = a^2/b^2 \implies a^2 = 3b^2$So $3 \mid a^2$Hence $3 \mid a$. Write $a = 3k$.
 
@@ -390,7 +390,7 @@ But $\gcd(a,b) \geq 3$Contradicting $\gcd(a,b) = 1$. $\blacksquare$
 
 <details>
 <summary>Problem 5</summary>
-Disprove by counterexample: "For all real $x$$\sin(2x) = 2\sin x$."
+Disprove by counterexample: "For all real $x$, $\sin(2x) = 2\sin x$."
 </details>
 
 <details>
@@ -430,7 +430,7 @@ Prove by contradiction that $\log_3 5$ is irrational.
 
 <details>
 <summary>Solution 7</summary>
-Suppose $\log_3 5 = a/b$ where $a, b \in \mathbb{Z}^+$$\gcd(a,b)=1$.
+Suppose $\log_3 5 = a/b$ where $a, b \in \mathbb{Z}^+$, $\gcd(a,b)=1$.
 
 $3^{a/b} = 5 \implies 3^a = 5^b$.
 
@@ -489,12 +489,12 @@ Prove that if $a^2 + b^2 = c^2$ for integers $a, b, c$Then at least one of $a, b
 
 <details>
 <summary>Solution 10</summary>
-Proof by contradiction. Suppose both $a$ and $b$ are odd. Write $a = 2m+1$$b = 2n+1$.
+Proof by contradiction. Suppose both $a$ and $b$ are odd. Write $a = 2m+1$, $b = 2n+1$.
 
 $$a^2 + b^2 = (2m+1)^2 + (2n+1)^2 = 4m^2+4m+1 + 4n^2+4n+1 = 2(2m^2+2m+2n^2+2n+1)$$
 
 This is even but not divisible by 4. So $c^2$ is even but not divisible by 4, meaning $c$ is even
-(if $c = 2p$$c^2 = 4p^2$Which IS divisible by 4). Contradiction. $\blacksquare$
+(if $c = 2p$, $c^2 = 4p^2$Which IS divisible by 4). Contradiction. $\blacksquare$
 
 **If you get this wrong, revise:** [Proof by Contradiction](#2-proof-by-contradiction) — Section 2.
 

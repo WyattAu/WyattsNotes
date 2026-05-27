@@ -236,7 +236,7 @@ A population has allele frequencies $p = 0.8$ ($A$) and $q = 0.2$ ($a$). The rec
 
 Genotype frequencies: $p^2 = 0.64$ ($AA$), $2pq = 0.32$ ($Aa$), $q^2 = 0.04$ ($aa$).
 
-Fitness: $w_{AA} = 1$$w_{Aa} = 1$$w_{aa} = 1 - s = 0.5$.
+Fitness: $w_{AA} = 1$, $w_{Aa} = 1$, $w_{aa} = 1 - s = 0.5$.
 
 Mean fitness: $\bar{w} = p^2 \cdot 1 + 2pq \cdot 1 + q^2 \cdot 0.5 = 0.64 + 0.32 + 0.02 = 0.98$.
 
@@ -258,7 +258,7 @@ $$\sigma_q = \sqrt◆LB◆\frac{pq}{2N}◆RB◆$$
 
 Where $N$ is the effective population size.
 
-**Worked Example.** In a population of $N = 100$ with $p = 0.5$$q = 0.5$:
+**Worked Example.** In a population of $N = 100$ with $p = 0.5$, $q = 0.5$:
 
 $$\sigma_q = \sqrt◆LB◆\frac{0.5 \times 0.5}{2 \times 100}◆RB◆ = \sqrt◆LB◆\frac{0.25}{200}◆RB◆ = \sqrt{0.00125} = 0.0354$$
 
@@ -693,8 +693,8 @@ $$\text{Expected DCO frequency} = \text{RF}_{AB} \times \text{RF}_{BC}$$
 
 $$\text{Interference} = 1 - \text{Coincidence}$$
 
-**Worked Example.** Three genes ($A$$B$$C$) are mapped.
-$\text{RF}_{AB} = 15\%$$\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
+**Worked Example.** Three genes ($A$, $B$, $C$) are mapped.
+$\text{RF}_{AB} = 15\%$, $\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
 
 Expected DCO $= 0.15 \times 0.10 = 0.015 = 1.5\%$.
 
@@ -755,17 +755,17 @@ proportion of offspring contributed by that genotype compared to the most fit ge
 Selection against a recessive allele is inefficient when the allele is rare because most copies of
 the recessive allele are "hidden" in heterozygotes, where they are not exposed to selection.
 
-**Worked Example.** A population has genotype frequencies: $AA = 0.64$$Aa = 0.32$$aa = 0.04$. The
+**Worked Example.** A population has genotype frequencies: $AA = 0.64$, $Aa = 0.32$, $aa = 0.04$. The
 $aa$ genotype has a fitness of 0 (lethal recessive). What is the allele frequency of $a$ after one
 generation of selection?
 
-Before selection: $p = 0.64 + \frac{0.32}{2} = 0.80$$q = 0.04 + \frac{0.32}{2} = 0.20$.
+Before selection: $p = 0.64 + \frac{0.32}{2} = 0.80$, $q = 0.04 + \frac{0.32}{2} = 0.20$.
 
 After selection (all $aa$ die): the surviving population consists of $AA$ (0.64) and $Aa$ (0.32),
 total $= 0.96$.
 
 Relative frequencies after selection:
-$AA = \frac{0.64}{0.96} = 0.667$$Aa = \frac{0.32}{0.96} = 0.333$.
+$AA = \frac{0.64}{0.96} = 0.667$, $Aa = \frac{0.32}{0.96} = 0.333$.
 
 New allele frequency: $q' = \frac{0.333}{2} = 0.167$.
 
@@ -812,7 +812,7 @@ reproductively isolated.
 
 ### 12.1 The ABO Blood Group System
 
-The ABO blood group is determined by a single gene ($I$) with three alleles: $I^A$$I^B$And $i$.
+The ABO blood group is determined by a single gene ($I$) with three alleles: $I^A$, $I^B$And $i$.
 
 | Genotype             | Blood Group | Antigens on RBC | Antibodies in Plasma |
 | -------------------- | ----------- | --------------- | -------------------- |
@@ -1032,7 +1032,7 @@ The excess of parental types and deficiency of recombinant types indicate linkag
 Some genes have more than two alleles in the population. The Hardy-Weinberg principle can be
 extended to multiple alleles.
 
-**Worked Example: ABO blood groups.** The alleles are $I^A$$I^B$And $i$With frequencies $p$$q$And
+**Worked Example: ABO blood groups.** The alleles are $I^A$, $I^B$And $i$With frequencies $p$, $q$And
 $r$ respectively, where $p + q + r = 1$.
 
 Genotype frequencies: $p^2$ ($I^A I^A$), $q^2$ ($I^B I^B$), $r^2$ ($ii$), $2pq$ ($I^A I^B$), $2pr$
@@ -1147,7 +1147,7 @@ approximately:
 
 $$\Delta q \approx \frac{-spq^2}{1 - sq^2}$$
 
-**Worked Example.** $p = 0.60$$q = 0.40$$s = 0.10$.
+**Worked Example.** $p = 0.60$, $q = 0.40$, $s = 0.10$.
 
 $\Delta q \approx \frac◆LB◆-0.10 \times 0.60 \times 0.16◆RB◆◆LB◆1 - 0.10 \times 0.16◆RB◆ = \frac{-0.0096}{0.984} = -0.0098$.
 
@@ -1373,7 +1373,7 @@ The frequency of the recessive allele decreases by approximately 0.0125 per gene
 diversity is lost. The surviving population is not representative of the original population.
 
 **Example:** A population of 100,000 is reduced to 10 individuals by a natural disaster. If the
-original population had 3 alleles at a locus with frequencies $p = 0.6$$q = 0.3$$r = 0.1$After the
+original population had 3 alleles at a locus with frequencies $p = 0.6$, $q = 0.3$, $r = 0.1$After the
 bottleneck some alleles may be lost entirely (especially rare alleles like $r$).
 
 **Probability of allele loss in a bottleneck:** the probability that an allele with frequency $q$ is

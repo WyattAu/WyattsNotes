@@ -80,7 +80,7 @@ $$S_{yy} = \sum(y_i - \bar{y})^2 = \sum y_i^2 - n\bar{y}^2$$
 - $r = -1$: perfect negative linear correlation.
 - $r = 0$: no linear correlation (but there may be a non-linear relationship).
 - $r$ is independent of the units of measurement.
-- $r$ is unchanged if both variables are transformed linearly ($x' = ax + b$$y' = cy + d$ with
+- $r$ is unchanged if both variables are transformed linearly ($x' = ax + b$, $y' = cy + d$ with
   $a, c \gt 0$).
 
 ### 2.3 Proof that $|r| \leq 1$
@@ -103,15 +103,15 @@ $$r^2 = \frac{S_{xy}^2}{S_{xx}\,S_{yy}} \leq 1 \implies |r| \leq 1 \quad \blacks
 | --- | --- | --- | --- | --- | --- |
 | $y$ | 3   | 5   | 4   | 7   | 9   |
 
-$n = 5$$\bar{x} = 6$$\bar{y} = 5.6$.
+$n = 5$, $\bar{x} = 6$, $\bar{y} = 5.6$.
 
 $\sum x_i y_i = 6 + 20 + 24 + 56 + 90 = 196$
 
 $S_{xy} = 196 - 5(6)(5.6) = 196 - 168 = 28$
 
-$\sum x_i^2 = 4 + 16 + 36 + 64 + 100 = 220$$S_{xx} = 220 - 5(36) = 40$
+$\sum x_i^2 = 4 + 16 + 36 + 64 + 100 = 220$, $S_{xx} = 220 - 5(36) = 40$
 
-$\sum y_i^2 = 9 + 25 + 16 + 49 + 81 = 180$$S_{yy} = 180 - 5(31.36) = 180 - 156.8 = 23.2$
+$\sum y_i^2 = 9 + 25 + 16 + 49 + 81 = 180$, $S_{yy} = 180 - 5(31.36) = 180 - 156.8 = 23.2$
 
 $$r = \frac◆LB◆28◆RB◆◆LB◆\sqrt{40 \times 23.2}◆RB◆ = \frac◆LB◆28◆RB◆◆LB◆\sqrt{928}◆RB◆ = \frac{28}{30.46} \approx 0.919$$
 
@@ -310,7 +310,7 @@ Find the PMCC for the data: (1, 2), (2, 3), (3, 5), (4, 4), (5, 7), (6, 8).
 <details>
 <summary>Solution</summary>
 
-$n = 6$$\bar{x} = 3.5$$\bar{y} = 4.833$.
+$n = 6$, $\bar{x} = 3.5$, $\bar{y} = 4.833$.
 
 $S_{xx} = 1 + 0.25 + 0.25 + 0.25 + 2.25 + 6.25 = 17.5$.
 
@@ -332,7 +332,7 @@ When $x = 7$.
 <details>
 <summary>Solution</summary>
 
-$b = \dfrac{20.5}{17.5} = 1.171$$a = 4.833 - 1.171(3.5) = 4.833 - 4.100 = 0.734$.
+$b = \dfrac{20.5}{17.5} = 1.171$, $a = 4.833 - 1.171(3.5) = 4.833 - 4.100 = 0.734$.
 
 $y = 0.734 + 1.171x$.
 

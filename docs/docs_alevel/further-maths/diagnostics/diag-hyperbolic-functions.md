@@ -84,7 +84,7 @@ $\int_0^1 \frac◆LB◆1 + \cosh 2x◆RB◆◆LB◆2◆RB◆\,dx = \frac{1}{2}\l
 
 (b) $\int \text{sech}^2 x\,dx = \tanh x + C$.
 
-(c) $x = 2\sinh u$$dx = 2\cosh u\,du$. $\sqrt{x^2+4} = 2\cosh u$.
+(c) $x = 2\sinh u$, $dx = 2\cosh u\,du$. $\sqrt{x^2+4} = 2\cosh u$.
 $\int \frac◆LB◆2\cosh u◆RB◆◆LB◆2\cosh u◆RB◆\,du = \int 1\,du = u + C = \text{arcsinh}\frac{x}{2} + C = \ln\left(\frac{x}{2} + \sqrt◆LB◆\frac{x^2}{4}+1◆RB◆\right) + C$.
 
 (d)
@@ -111,7 +111,7 @@ $\frac{d}{dx}\text{cosech}\,x = \frac{-2(e^x + e^{-x})}{(e^x - e^{-x})^2} = \fra
 (d)
 $\int_0^{\ln 2} \text{sech}\,x\,dx = \int_0^{\ln 2} \frac{2}{e^x + e^{-x}}\,dx = \int_0^{\ln 2} \frac{2e^x}{e^{2x} + 1}\,dx$.
 
-Let $u = e^x$: $du = e^x\,dx$$dx = du/u$.
+Let $u = e^x$: $du = e^x\,dx$, $dx = du/u$.
 $= \int_1^2 \frac{2}{u^2+1}\,du = 2[\arctan u]_1^2 = 2(\arctan 2 - \pi/4)$.
 
 ### IT-3: Hyperbolic Functions and DEs (with Differential Equations)

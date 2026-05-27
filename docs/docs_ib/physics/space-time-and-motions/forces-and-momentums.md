@@ -680,7 +680,7 @@ $I_{\mathrm{disc}} = \frac{1}{2}(100)(2.0)^2 = 200$ kg m$^2$.
 $I_{\mathrm{person, initial}} = mr^2 = (60)(2.0)^2 = 240$ kg m$^2$. $I_{\mathrm{person, final}} = 0$
 (at the center, $r = 0$).
 
-$I_i = 200 + 240 = 440$ kg m$^2$$\omega_i = 1.5$ rad/s. $I_f = 200 + 0 = 200$ kg m$^2$.
+$I_i = 200 + 240 = 440$ kg m$^2$, $\omega_i = 1.5$ rad/s. $I_f = 200 + 0 = 200$ kg m$^2$.
 
 Conservation: $I_i\omega_i = I_f\omega_f \implies (440)(1.5) = 200\omega_f$.
 $\omega_f = \frac{660}{200} = 3.3$ rad/s.

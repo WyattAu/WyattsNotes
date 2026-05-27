@@ -119,7 +119,7 @@ density maximum between the bonded atoms.
 ### Sigma ($\sigma$) and Pi ($\pi$) Bonds
 
 A **sigma bond** is formed by end-on (head-on) overlap of atomic orbitals along the internuclear
-axis. Sigma bonds can arise from $s$-$s$$s$-$p$Or $p$-$p$ overlap. All single bonds are sigma bonds.
+axis. Sigma bonds can arise from $s$-$s$, $s$-$p$Or $p$-$p$ overlap. All single bonds are sigma bonds.
 
 A **pi bond** is formed by sideways overlap of parallel $p$ orbitals above and below the
 internuclear axis. Pi bonds are weaker than sigma bonds because the sideways overlap is less
@@ -229,12 +229,12 @@ hydrogen bonds.
 ### Hydrogen Bonding
 
 Hydrogen bonding is a special, strong type of dipole-dipole interaction that occurs when hydrogen is
-covalently bonded to a highly electronegative atom ($\mathrm{N}$$\mathrm{O}$Or $\mathrm{F}$). The
+covalently bonded to a highly electronegative atom ($\mathrm{N}$, $\mathrm{O}$Or $\mathrm{F}$). The
 conditions are:
 
-1. Hydrogen bonded to $\mathrm{N}$$\mathrm{O}$Or $\mathrm{F}$.
+1. Hydrogen bonded to $\mathrm{N}$, $\mathrm{O}$Or $\mathrm{F}$.
 2. The hydrogen has a large partial positive charge ($\delta^+$).
-3. A lone pair on a nearby $\mathrm{N}$$\mathrm{O}$Or $\mathrm{F}$ atom interacts with the
+3. A lone pair on a nearby $\mathrm{N}$, $\mathrm{O}$Or $\mathrm{F}$ atom interacts with the
    $\delta^+$ hydrogen.
 
 Hydrogen bonds are approximately 10-40 kJ/mol, compared with 2-5 kJ/mol for typical dipole-dipole
@@ -266,14 +266,14 @@ that atom than bonding pairs, which are shared between two atoms.
 
 | Electron domains | Bonding pairs | Lone pairs | Geometry             | Bond angle                    | Example                                  |
 | ---------------- | ------------- | ---------- | -------------------- | ----------------------------- | ---------------------------------------- |
-| 2                | 2             | 0          | Linear               | $180^\circ$                   | $\mathrm{BeCl}_2$$\mathrm{CO}_2$         |
-| 3                | 3             | 0          | Trigonal planar      | $120^\circ$                   | $\mathrm{BF}_3$$\mathrm{NO}_3^-$         |
+| 2                | 2             | 0          | Linear               | $180^\circ$                   | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$         |
+| 3                | 3             | 0          | Trigonal planar      | $120^\circ$                   | $\mathrm{BF}_3$, $\mathrm{NO}_3^-$         |
 | 3                | 2             | 1          | Bent (angular)       | $\lt 120^\circ$               | $\mathrm{SO}_2$ ($\approx 119^\circ$)    |
-| 4                | 4             | 0          | Tetrahedral          | $109.5^\circ$                 | $\mathrm{CH}_4$$\mathrm{NH}_4^+$         |
+| 4                | 4             | 0          | Tetrahedral          | $109.5^\circ$                 | $\mathrm{CH}_4$, $\mathrm{NH}_4^+$         |
 | 4                | 3             | 1          | Trigonal pyramidal   | $\lt 109.5^\circ$             | $\mathrm{NH}_3$ ($107^\circ$)            |
 | 4                | 2             | 2          | Bent (angular)       | $\lt 109.5^\circ$             | $\mathrm{H}_2\mathrm{O}$ ($104.5^\circ$) |
-| 5                | 5             | 0          | Trigonal bipyramidal | $120^\circ$$90^\circ$         | $\mathrm{PCl}_5$                         |
-| 5                | 4             | 1          | See-saw              | $\lt 90^\circ$$\lt 120^\circ$ | $\mathrm{SF}_4$                          |
+| 5                | 5             | 0          | Trigonal bipyramidal | $120^\circ$, $90^\circ$         | $\mathrm{PCl}_5$                         |
+| 5                | 4             | 1          | See-saw              | $\lt 90^\circ$, $\lt 120^\circ$ | $\mathrm{SF}_4$                          |
 | 5                | 3             | 2          | T-shaped             | $\lt 90^\circ$                | $\mathrm{ClF}_3$                         |
 | 5                | 2             | 3          | Linear               | $180^\circ$                   | $\mathrm{XeF}_2$                         |
 | 6                | 6             | 0          | Octahedral           | $90^\circ$                    | $\mathrm{SF}_6$                          |
@@ -388,7 +388,7 @@ $$
 <summary>Example 3: Explaining boiling point trends</summary>
 
 Arrange in order of increasing boiling point:
-$\mathrm{CH}_4$$\mathrm{CH}_3\mathrm{Cl}$$\mathrm{CH}_3\mathrm{OH}$$\mathrm{CH}_3\mathrm{NH}_2$.
+$\mathrm{CH}_4$, $\mathrm{CH}_3\mathrm{Cl}$, $\mathrm{CH}_3\mathrm{OH}$, $\mathrm{CH}_3\mathrm{NH}_2$.
 
 $\mathrm{CH}_4 \lt \mathrm{CH}_3\mathrm{Cl} \lt \mathrm{CH}_3\mathrm{NH}_2 \lt \mathrm{CH}_3\mathrm{OH}$
 
@@ -480,7 +480,7 @@ $$
 
 Where $q$ is the magnitude of the partial charge and $d$ is the distance between the charges. Dipole
 moments are measured in Debye (D). For comparison:
-$\mu(\mathrm{HCl}) = 1.08\,\mathrm{D}$$\mu(\mathrm{HF}) = 1.82\,\mathrm{D}$$\mu(\mathrm{H}_2\mathrm{O}) = 1.85\,\mathrm{D}$.
+$\mu(\mathrm{HCl}) = 1.08\,\mathrm{D}$, $\mu(\mathrm{HF}) = 1.82\,\mathrm{D}$, $\mu(\mathrm{H}_2\mathrm{O}) = 1.85\,\mathrm{D}$.
 
 A molecule has a net dipole moment only if the individual bond dipoles do not cancel by symmetry.
 This is why $\mathrm{CO}_2$ (linear, two equal and opposite dipoles) is non-polar but
@@ -572,7 +572,7 @@ repeating pattern, held together by strong electrostatic attraction in all direc
 
 | Structure         | Coordination number | Example                       | Description                                             |
 | ----------------- | ------------------- | ----------------------------- | ------------------------------------------------------- |
-| NaCl (rock salt)  | 6:6                 | $\mathrm{NaCl}$$\mathrm{MgO}$ | Octahedral coordination; face-centred cubic arrangement |
+| NaCl (rock salt)  | 6:6                 | $\mathrm{NaCl}$, $\mathrm{MgO}$ | Octahedral coordination; face-centred cubic arrangement |
 | CsCl              | 8:8                 | $\mathrm{CsCl}$               | Cubic coordination; body-centred arrangement            |
 | ZnS (zinc blende) | 4:4                 | $\mathrm{ZnS}$                | Tetrahedral coordination                                |
 
@@ -639,16 +639,16 @@ silicon atoms, forming a giant covalent structure similar to diamond.
 
 | Electron pairs | Bonding pairs | Lone pairs | Geometry             | Bond angle            | Example                                  |
 | -------------- | ------------- | ---------- | -------------------- | --------------------- | ---------------------------------------- |
-| 2              | 2             | 0          | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$$\mathrm{CO}_2$         |
-| 3              | 3             | 0          | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$$\mathrm{NO}_3^-$         |
-| 3              | 2             | 1          | Bent/V-shaped        | $<120^\circ$          | $\mathrm{SO}_2$$\mathrm{SnCl}_2$         |
-| 4              | 4             | 0          | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$$\mathrm{NH}_4^+$         |
+| 2              | 2             | 0          | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$         |
+| 3              | 3             | 0          | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$, $\mathrm{NO}_3^-$         |
+| 3              | 2             | 1          | Bent/V-shaped        | $<120^\circ$          | $\mathrm{SO}_2$, $\mathrm{SnCl}_2$         |
+| 4              | 4             | 0          | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$, $\mathrm{NH}_4^+$         |
 | 4              | 3             | 1          | Trigonal pyramidal   | $<109.5^\circ$        | $\mathrm{NH}_3$ ($107^\circ$)            |
 | 4              | 2             | 2          | Bent/V-shaped        | $<109.5^\circ$        | $\mathrm{H}_2\mathrm{O}$ ($104.5^\circ$) |
-| 5              | 5             | 0          | Trigonal bipyramidal | $90^\circ$$120^\circ$ | $\mathrm{PCl}_5$                         |
+| 5              | 5             | 0          | Trigonal bipyramidal | $90^\circ$, $120^\circ$ | $\mathrm{PCl}_5$                         |
 | 5              | 4             | 1          | Seesaw               | --                    | $\mathrm{SF}_4$                          |
 | 5              | 3             | 2          | T-shaped             | $90^\circ$            | $\mathrm{ClF}_3$                         |
-| 5              | 2             | 3          | Linear               | $180^\circ$           | $\mathrm{XeF}_2$$\mathrm{I}_3^-$         |
+| 5              | 2             | 3          | Linear               | $180^\circ$           | $\mathrm{XeF}_2$, $\mathrm{I}_3^-$         |
 | 6              | 6             | 0          | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                          |
 | 6              | 5             | 1          | Square pyramidal     | $<90^\circ$           | $\mathrm{BrF}_5$                         |
 | 6              | 4             | 2          | Square planar        | $90^\circ$            | $\mathrm{XeF}_4$                         |
@@ -728,7 +728,7 @@ energy to overcome, giving it a much higher boiling point than expected from its
 $\mathrm{PH}_3$ cannot form hydrogen bonds (P is not electronegative enough, and P--H bonds are not
 polar enough), so it relies on dipole-dipole forces and London forces only. $\mathrm{CH}_4$ is
 non-polar and relies on London forces only. Between $\mathrm{PH}_3$ and
-$\mathrm{CH}_4$$\mathrm{PH}_3$ has a higher boiling point because it has more electrons (stronger
+$\mathrm{CH}_4$, $\mathrm{PH}_3$ has a higher boiling point because it has more electrons (stronger
 London forces) and additional dipole-dipole interactions.
 
 </details>
@@ -741,7 +741,7 @@ London forces) and additional dipole-dipole interactions.
 | ------------------- | ---------------------------- | ---------------------------------- | --------------------------------------------- |
 | London (dispersion) | $0.1$--$40$                  | Non-directional                    | All molecules                                 |
 | Dipole-dipole       | $3$--$5$                     | Between partial charges            | $\mathrm{CH}_3\mathrm{Cl}$                    |
-| Hydrogen bonding    | $5$--$40$                    | Along H-bond axis (linear)         | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$       |
+| Hydrogen bonding    | $5$--$40$                    | Along H-bond axis (linear)         | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$       |
 | Ion-dipole          | $5$--$50$                    | Between ion and partial charge     | $\mathrm{Na}^+$ with $\mathrm{H}_2\mathrm{O}$ |
 | Ionic bonding       | $200$--$4000$                | Between ions in lattice            | $\mathrm{NaCl}$                               |
 | Covalent (single)   | $200$--$400$                 | Directional (along bond axis)      | $\mathrm{C}-\mathrm{C}$                       |
@@ -775,10 +775,10 @@ The Pauling electronegativity scale:
 
 | Electron domains | Lone pairs | Bonding pairs | Shape                                    | Example                                 |
 | ---------------- | ---------- | ------------- | ---------------------------------------- | --------------------------------------- |
-| 3                | 1          | 2             | Bent ($\approx 104.5^\circ$)             | $\mathrm{H}_2\mathrm{O}$$\mathrm{SO}_2$ |
+| 3                | 1          | 2             | Bent ($\approx 104.5^\circ$)             | $\mathrm{H}_2\mathrm{O}$, $\mathrm{SO}_2$ |
 | 4                | 2          | 2             | Bent ($\approx 104.5^\circ$)             | $\mathrm{H}_2\mathrm{S}$                |
 | 4                | 1          | 3             | Trigonal pyramidal ($\approx 107^\circ$) | $\mathrm{NH}_3}$                        |
-| 5                | 2          | 3             | T-shaped ($\approx 90^\circ$$180^\circ$) | $\mathrm{ClF}_3$                        |
+| 5                | 2          | 3             | T-shaped ($\approx 90^\circ$, $180^\circ$) | $\mathrm{ClF}_3$                        |
 | 5                | 1          | 4             | See-saw                                  | $\mathrm{SF}_4$                         |
 | 6                | 2          | 4             | Square planar                            | $\mathrm{XeF}_4$                        |
 | 6                | 1          | 5             | Square pyramidal                         | $\mathrm{BrF}_5$                        |
@@ -790,10 +790,10 @@ compresses the bond angles in molecules with lone pairs.
 
 | Hybridisation | Geometry             | Bond angle            | Example                                                  |
 | ------------- | -------------------- | --------------------- | -------------------------------------------------------- |
-| $sp$          | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$$\mathrm{CO}_2$                         |
-| $sp^2$        | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3}$$\mathrm{C}_6\mathrm{H}_6$               |
-| $sp^3$        | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4}$$\mathrm{NH}_3}$$\mathrm{H}_2\mathrm{O}$ |
-| $sp^3d$       | Trigonal bipyramidal | $90^\circ$$120^\circ$ | $\mathrm{PCl}_5}$                                        |
+| $sp$          | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$                         |
+| $sp^2$        | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3}$, $\mathrm{C}_6\mathrm{H}_6$               |
+| $sp^3$        | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4}$, $\mathrm{NH}_3}$, $\mathrm{H}_2\mathrm{O}$ |
+| $sp^3d$       | Trigonal bipyramidal | $90^\circ$, $120^\circ$ | $\mathrm{PCl}_5}$                                        |
 | $sp^3d^2$     | Octahedral           | $90^\circ$            | $\mathrm{SF}_6}$                                         |
 
 ### Metallic Bonding and Properties

@@ -66,7 +66,7 @@ $$
 \mathrm{Units of } K_c = (\mathrm{mol/dm}^3)^{(c+d)-(a+b)}
 $$
 
-If $(c+d) = (a+b)$$K_c$ is dimensionless.
+If $(c+d) = (a+b)$, $K_c$ is dimensionless.
 
 | Reaction                                                                       | Units of $K_c$            |
 | ------------------------------------------------------------------------------ | ------------------------- |
@@ -124,7 +124,7 @@ The units depend on the stoichiometry. If $\Delta n_g = (c+d) - (a+b)$ is the ch
 of moles of gas:
 
 - $\Delta n_g = 0$: $K_p$ is dimensionless.
-- $\Delta n_g = 1$: units of pressure ($\mathrm{atm}$$\mathrm{kPa}$Etc.).
+- $\Delta n_g = 1$: units of pressure ($\mathrm{atm}$, $\mathrm{kPa}$Etc.).
 - $\Delta n_g = -2$: units of $\mathrm{pressure}^{-2}$.
 
 **Note:** The numerical value of $K_p$ depends on the units of pressure used. Always state the
@@ -149,7 +149,7 @@ $$
 $n_\mathrm{total} = 0.80 + 0.40 + 1.20 = 2.40\,\mathrm{mol}$
 
 Mole fractions:
-$x(\mathrm{SO}_2) = 0.80/2.40 = 0.333$$x(\mathrm{O}_2) = 0.40/2.40 = 0.167$$x(\mathrm{SO}_3) = 1.20/2.40 = 0.500$.
+$x(\mathrm{SO}_2) = 0.80/2.40 = 0.333$, $x(\mathrm{O}_2) = 0.40/2.40 = 0.167$, $x(\mathrm{SO}_3) = 1.20/2.40 = 0.500$.
 
 Partial pressures ($p_i = x_i \times 200$):
 
@@ -200,7 +200,7 @@ $$
 This is analogous to the Arrhenius equation (see [Chemical Kinetics](./chemical-kinetics)).
 
 **Worked Example.** For the reaction
-$\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$$\Delta H^\circ = +58.0\,\mathrm{kJ/mol}$
+$\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$, $\Delta H^\circ = +58.0\,\mathrm{kJ/mol}$
 and $K_p = 0.115$ at $298\,\mathrm{K}$. Calculate $K_p$ at $350\,\mathrm{K}$.
 
 $$
@@ -233,7 +233,7 @@ $$
 Where $\Delta n_g$ is the change in the number of moles of gas (products minus reactants).
 
 **Worked Example.** For $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$ at
-$500\,\mathrm{K}$$K_c = 6.0 \times 10^{-2}\,\mathrm{mol^{-2}\,dm^6}$. Calculate $K_p$.
+$500\,\mathrm{K}$, $K_c = 6.0 \times 10^{-2}\,\mathrm{mol^{-2}\,dm^6}$. Calculate $K_p$.
 
 $\Delta n_g = 2 - (1 + 3) = -2$.
 
@@ -241,7 +241,7 @@ $$
 K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2} = \frac◆LB◆6.0 \times 10^{-2}◆RB◆◆LB◆(8.314 \times 500)^2◆RB◆ = \frac{0.060}{(4157)^2} = \frac◆LB◆0.060◆RB◆◆LB◆1.728 \times 10^7◆RB◆ = 3.5 \times 10^{-9}\,\mathrm{Pa^{-2}}
 $$
 
-Note: if $K_c$ is in $\mathrm{mol/dm^3}$$R$ must be in consistent units. Alternatively, work in
+Note: if $K_c$ is in $\mathrm{mol/dm^3}$, $R$ must be in consistent units. Alternatively, work in
 $\mathrm{atm}$: $R = 0.0821\,\mathrm{dm^3\,atm\,mol^{-1}\,K^{-1}}$.
 
 $$
@@ -321,7 +321,7 @@ $$
 $$
 
 Let $s$ = solubility in $\mathrm{mol/dm}^3$. At equilibrium:
-$[\mathrm{Pb}^{2+}] = s$$[\mathrm{I}^-] = 2s$.
+$[\mathrm{Pb}^{2+}] = s$, $[\mathrm{I}^-] = 2s$.
 
 $$
 K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = s(2s)^2 = 4s^3
@@ -374,7 +374,7 @@ The solubility is reduced by a factor of approximately $10^4$.
 
 5. **Reversing $K$ incorrectly.** If a reaction is reversed,
    $K_\mathrm{new} = 1/K_\mathrm{original}$. If the stoichiometry is multiplied by
-   $n$$K_\mathrm{new} = K_\mathrm{original}^n$.
+   $n$, $K_\mathrm{new} = K_\mathrm{original}^n$.
 
 6. **Using concentration units incorrectly in $K_p$.** $K_p$ uses partial pressures (atm, Pa, or
    bar). Partial pressure $p_i = x_i \times p_\mathrm{total}$Where $x_i$ is the mole fraction.
@@ -440,7 +440,7 @@ extracted by:
 
 **(a)** $K = \frac◆LB◆c_\mathrm{ether}◆RB◆◆LB◆c_\mathrm{water}◆RB◆ = 4.0$
 
-Let $x$ = mass extracted. $c_\mathrm{ether} = x/100$$c_\mathrm{water} = (5.0 - x)/100$.
+Let $x$ = mass extracted. $c_\mathrm{ether} = x/100$, $c_\mathrm{water} = (5.0 - x)/100$.
 
 $$
 4.0 = \frac{x/100}{(5.0 - x)/100} = \frac{x}{5.0 - x}
@@ -505,11 +505,11 @@ $5.00\,\mathrm{dm}^3$ vessel, calculate the equilibrium concentrations.
 **Solution:**
 
 Initial concentrations:
-$[\mathrm{H}_2] = [\mathrm{I}_2] = 0.200/5.00 = 0.0400\,\mathrm{mol/dm}^3$$[\mathrm{HI}] = 0$.
+$[\mathrm{H}_2] = [\mathrm{I}_2] = 0.200/5.00 = 0.0400\,\mathrm{mol/dm}^3$, $[\mathrm{HI}] = 0$.
 
 Let $x$ = concentration of $\mathrm{H}_2$ reacted.
 
-At equilibrium: $[\mathrm{H}_2] = 0.0400 - x$$[\mathrm{I}_2] = 0.0400 - x$$[\mathrm{HI}] = 2x$.
+At equilibrium: $[\mathrm{H}_2] = 0.0400 - x$, $[\mathrm{I}_2] = 0.0400 - x$, $[\mathrm{HI}] = 2x$.
 
 $$
 K_c = \frac{(2x)^2}{(0.0400 - x)^2} = 50.0
@@ -531,7 +531,7 @@ $$
 X = 0.0312\,\mathrm{mol/dm}^3
 $$
 
-$[\mathrm{H}_2] = [\mathrm{I}_2] = 0.0088\,\mathrm{mol/dm}^3$$[\mathrm{HI}] = 0.0624\,\mathrm{mol/dm}^3$.
+$[\mathrm{H}_2] = [\mathrm{I}_2] = 0.0088\,\mathrm{mol/dm}^3$, $[\mathrm{HI}] = 0.0624\,\mathrm{mol/dm}^3$.
 
 </details>
 
@@ -620,7 +620,7 @@ $$
 $x = 256.7$ or $x = 155.9$. Since $p(\mathrm{PCl}_3) = 200 - x$ must be positive,
 $x = 155.9\,\mathrm{kPa}$.
 
-$p(\mathrm{PCl}_5) = 155.9\,\mathrm{kPa}$$p(\mathrm{PCl}_3) = p(\mathrm{Cl}_2) = 44.1\,\mathrm{kPa}$.
+$p(\mathrm{PCl}_5) = 155.9\,\mathrm{kPa}$, $p(\mathrm{PCl}_3) = p(\mathrm{Cl}_2) = 44.1\,\mathrm{kPa}$.
 
 Check: $K_p = (44.1)^2 / 155.9 = 1945 / 155.9 = 12.5\,\mathrm{kPa}$. Correct.
 
@@ -637,7 +637,7 @@ $K_{sp}(\mathrm{CaF}_2) = 3.9 \times 10^{-11}$.
 
 (a) In pure water: $\mathrm{CaF}_2(s) \rightleftharpoons \mathrm{Ca}^{2+}(aq) + 2\mathrm{F}^-(aq)$
 
-Let $s$ = solubility. $[\mathrm{Ca}^{2+}] = s$$[\mathrm{F}^-] = 2s$.
+Let $s$ = solubility. $[\mathrm{Ca}^{2+}] = s$, $[\mathrm{F}^-] = 2s$.
 
 $$
 K_{sp} = s(2s)^2 = 4s^3 = 3.9 \times 10^{-11}
@@ -699,7 +699,7 @@ equation: $\ln(K_2/K_1) = -(\Delta H/R)(1/T_2 - 1/T_1)$.
 
 (c) Let $x$ = moles of $\mathrm{N}_2\mathrm{O}_4$ dissociated.
 
-At equilibrium: $n(\mathrm{N}_2\mathrm{O}_4) = 1.00 - x$$n(\mathrm{NO}_2) = 2x$Total moles
+At equilibrium: $n(\mathrm{N}_2\mathrm{O}_4) = 1.00 - x$, $n(\mathrm{NO}_2) = 2x$Total moles
 $= 1.00 + x$.
 
 Total pressure: use $pV = nRT$:
@@ -709,7 +709,7 @@ P_\mathrm{total} = \frac{(1.00 + x)RT}{V} = \frac◆LB◆(1.00 + x) \times 8.314
 $$
 
 Partial pressures:
-$p(\mathrm{N}_2\mathrm{O}_4) = \frac{1.00 - x}{1.00 + x} \times p_\mathrm{total}$$p(\mathrm{NO}_2) = \frac{2x}{1.00 + x} \times p_\mathrm{total}$.
+$p(\mathrm{N}_2\mathrm{O}_4) = \frac{1.00 - x}{1.00 + x} \times p_\mathrm{total}$, $p(\mathrm{NO}_2) = \frac{2x}{1.00 + x} \times p_\mathrm{total}$.
 
 $$
 K_p = \frac◆LB◆p(\mathrm{NO}_2)^2◆RB◆◆LB◆p(\mathrm{N}_2\mathrm{O}_4)◆RB◆ = \frac{(2x)^2}{(1.00 - x)(1.00 + x)} \times p_\mathrm{total} = \frac{4x^2}{1 - x^2} \times p_\mathrm{total}
@@ -735,7 +735,7 @@ $$
 X \approx 0.108\,\mathrm{mol}
 $$
 
-$n(\mathrm{NO}_2) = 2 \times 0.108 = 0.217\,\mathrm{mol}$$n(\mathrm{N}_2\mathrm{O}_4) = 0.892\,\mathrm{mol}$.
+$n(\mathrm{NO}_2) = 2 \times 0.108 = 0.217\,\mathrm{mol}$, $n(\mathrm{N}_2\mathrm{O}_4) = 0.892\,\mathrm{mol}$.
 
 $p(\mathrm{NO}_2) = \frac{0.217}{1.108} \times 247700(1.108) = 0.217 \times 247700 = 53751\,\mathrm{Pa} = 0.531\,\mathrm{atm}$
 
@@ -762,7 +762,7 @@ Initially, let $p(\mathrm{N}_2\mathrm{O}_4) = 1.00\,\mathrm{atm}$ and
 $p(\mathrm{NO}_2) = 0.339\,\mathrm{atm}$ (satisfying $K_p = (0.339)^2/1.00 = 0.115$).
 
 When the volume is halved, all partial pressures double instantly:
-$p(\mathrm{N}_2\mathrm{O}_4) = 2.00\,\mathrm{atm}$$p(\mathrm{NO}_2) = 0.678\,\mathrm{atm}$.
+$p(\mathrm{N}_2\mathrm{O}_4) = 2.00\,\mathrm{atm}$, $p(\mathrm{NO}_2) = 0.678\,\mathrm{atm}$.
 
 The reaction quotient: $Q_p = (0.678)^2 / 2.00 = 0.230 > K_p$.
 
@@ -773,7 +773,7 @@ fewer gas molecules.
 **Worked Example: Effect of temperature on equilibrium composition.**
 
 For
-$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$$\Delta H = -92\,\mathrm{kJ/mol}$.
+$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$, $\Delta H = -92\,\mathrm{kJ/mol}$.
 
 At $400^\circ\mathrm{C}$: $K_p = 6.2 \times 10^{-4}\,\mathrm{atm}^{-2}$. At $500^\circ\mathrm{C}$:
 $K_p = 4.5 \times 10^{-6}\,\mathrm{atm}^{-2}$.
@@ -797,14 +797,14 @@ not appear in the $K_c$ or $K_p$ expression.
 
 $$K_p = p(\mathrm{CO}_2)$$
 
-At $900^\circ\mathrm{C}$$K_p = 1.04\,\mathrm{atm}$. This means that in a closed container,
+At $900^\circ\mathrm{C}$, $K_p = 1.04\,\mathrm{atm}$. This means that in a closed container,
 $\mathrm{CaCO}_3$ decomposes until the partial pressure of $\mathrm{CO}_2$ reaches
 $1.04\,\mathrm{atm}$At which point equilibrium is established.
 
 ### Industrial Application: Haber Process Equilibrium Analysis
 
 **Reaction:**
-$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$$\Delta H = -92\,\mathrm{kJ/mol}$
+$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$, $\Delta H = -92\,\mathrm{kJ/mol}$
 
 | Condition             | Effect on equilibrium                 | Effect on rate                        | Industrial choice                                                    |
 | --------------------- | ------------------------------------- | ------------------------------------- | -------------------------------------------------------------------- |
@@ -846,7 +846,7 @@ $0.010\,\mathrm{mol\,dm^{-3}}$ $\mathrm{Na}_2\mathrm{SO}_4$?
 
 After mixing, concentrations are halved:
 
-$[\mathrm{Ba}^{2+}] = 0.0050\,\mathrm{mol\,dm^{-3}}$$[\mathrm{SO}_4^{2-}] = 0.0050\,\mathrm{mol\,dm^{-3}}$
+$[\mathrm{Ba}^{2+}] = 0.0050\,\mathrm{mol\,dm^{-3}}$, $[\mathrm{SO}_4^{2-}] = 0.0050\,\mathrm{mol\,dm^{-3}}$
 
 $$Q = [\mathrm{Ba}^{2+}][\mathrm{SO}_4^{2-}] = (0.0050)^2 = 2.5 \times 10^{-5}$$
 
@@ -887,7 +887,7 @@ colorimetry) is proportional to its concentration.
 Nitrogen and hydrogen react to form ammonia:
 $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$.
 
-At $500^\circ\mathrm{C}$$K_p = 6.0 \times 10^{-3}\,\mathrm{atm}^{-2}$. A mixture of
+At $500^\circ\mathrm{C}$, $K_p = 6.0 \times 10^{-3}\,\mathrm{atm}^{-2}$. A mixture of
 $1.0\,\mathrm{mol}$ $\mathrm{N}_2$ and $3.0\,\mathrm{mol}$ $\mathrm{H}_2$ is allowed to reach
 equilibrium at a total pressure of $200\,\mathrm{atm}$. Calculate the equilibrium mole fraction of
 ammonia.
@@ -896,12 +896,12 @@ ammonia.
 
 Let $x$ be the moles of $\mathrm{N}_2$ reacted.
 
-Equilibrium moles: $\mathrm{N}_2 = 1.0 - x$$\mathrm{H}_2 = 3.0 - 3x$$\mathrm{NH}_3 = 2x$
+Equilibrium moles: $\mathrm{N}_2 = 1.0 - x$, $\mathrm{H}_2 = 3.0 - 3x$, $\mathrm{NH}_3 = 2x$
 
 Total moles = $4.0 - 2x$
 
 Mole fractions:
-$y(\mathrm{N}_2) = \frac{1-x}{4-2x}$$y(\mathrm{H}_2) = \frac{3-3x}{4-2x}$$y(\mathrm{NH}_3) = \frac{2x}{4-2x}$
+$y(\mathrm{N}_2) = \frac{1-x}{4-2x}$, $y(\mathrm{H}_2) = \frac{3-3x}{4-2x}$, $y(\mathrm{NH}_3) = \frac{2x}{4-2x}$
 
 Partial pressures: $p_i = y_i \times P_\mathrm{total}$
 
@@ -911,7 +911,7 @@ This simplifies to:
 
 $$K_p = \frac◆LB◆4x^2(4-2x)^2◆RB◆◆LB◆(1-x)(3-3x)^3 \times 200^2◆RB◆$$
 
-Assuming $x$ is small (5% approximation): $4 - 2x \approx 4$$1 - x \approx 1$$3 - 3x \approx 3$:
+Assuming $x$ is small (5% approximation): $4 - 2x \approx 4$, $1 - x \approx 1$, $3 - 3x \approx 3$:
 
 $$6.0 \times 10^{-3} = \frac◆LB◆4x^2 \times 16◆RB◆◆LB◆1 \times 27 \times 40000◆RB◆ = \frac{64x^2}{1080000}$$
 
@@ -968,7 +968,7 @@ reach equilibrium. $0.667\,\mathrm{mol}$ of ethyl ethanoate is formed at equilib
 **Mark Scheme:**
 
 (a) Equilibrium moles:
-$\mathrm{CH}_3\mathrm{COOH} = 1.00 - 0.667 = 0.333\,\mathrm{mol}$$\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} = 0.333\,\mathrm{mol}$$\mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 = 0.667\,\mathrm{mol}$$\mathrm{H}_2\mathrm{O} = 0.667\,\mathrm{mol}$.
+$\mathrm{CH}_3\mathrm{COOH} = 1.00 - 0.667 = 0.333\,\mathrm{mol}$, $\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} = 0.333\,\mathrm{mol}$, $\mathrm{CH}_3\mathrm{COOCH}_2\mathrm{CH}_3 = 0.667\,\mathrm{mol}$, $\mathrm{H}_2\mathrm{O} = 0.667\,\mathrm{mol}$.
 
 Since all species are in the same volume (cancels in $K_c$):
 
@@ -1001,7 +1001,7 @@ Calculation (3 marks):
 
 $$\mathrm{PbI}_2(s) \rightleftharpoons \mathrm{Pb}^{2+}(aq) + 2\mathrm{I}^-(aq)$$
 
-If $s$ is the solubility: $[\mathrm{Pb}^{2+}] = s$$[\mathrm{I}^-] = 2s$
+If $s$ is the solubility: $[\mathrm{Pb}^{2+}] = s$, $[\mathrm{I}^-] = 2s$
 
 $$K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = s \times (2s)^2 = 4s^3$$
 

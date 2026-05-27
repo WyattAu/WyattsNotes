@@ -21,7 +21,7 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 **(a)** Show that $f(x) = 0$ has exactly one real root.
 
-**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$$x_2$And $x_3$.
+**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$, $x_2$And $x_3$.
 Describe the behaviour of the iteration.
 
 **(c)** Explain why the iteration fails to converge, referring to the value of $f'(x_0)$ and the
@@ -48,15 +48,15 @@ one real root.
 
 **(b)** $f'(x) = 3x^2 - 2$. Newton-Raphson: $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$.
 
-$x_0 = 0$: $f(0) = 2$$f'(0) = -2$.
+$x_0 = 0$: $f(0) = 2$, $f'(0) = -2$.
 
 $$x_1 = 0 - \frac{2}{-2} = 1$$
 
-$x_1 = 1$: $f(1) = 1$$f'(1) = 1$.
+$x_1 = 1$: $f(1) = 1$, $f'(1) = 1$.
 
 $$x_2 = 1 - \frac{1}{1} = 0$$
 
-$x_2 = 0$: $f(0) = 2$$f'(0) = -2$.
+$x_2 = 0$: $f(0) = 2$, $f'(0) = -2$.
 
 $$x_3 = 0 - \frac{2}{-2} = 1$$
 
@@ -75,7 +75,7 @@ with $f \approx 0.91 \gt 0$Creating a barrier that the iteration cannot cross.
 **(d)** Any $x_0 \lt -\sqrt{2/3} \approx -0.816$ will converge, since on this interval $f$ is
 strictly decreasing (and hence $f$ and $f'$ have useful properties for convergence).
 
-For example, $x_0 = -2$: $f(-2) = -2$$f'(-2) = 10$.
+For example, $x_0 = -2$: $f(-2) = -2$, $f'(-2) = 10$.
 
 $$x_1 = -2 - \frac{-2}{10} = -2 + 0.2 = -1.8$$
 
@@ -95,7 +95,7 @@ $g(x) = \frac{1}{2}(x + \frac{3}{x})$.
 **(a)** Show that the equation $x = g(x)$ is equivalent to $x^2 = 3$And hence state the positive
 root $\alpha$.
 
-**(b)** Compute $x_1$$x_2$$x_3$ starting from $x_0 = 2$.
+**(b)** Compute $x_1$, $x_2$, $x_3$ starting from $x_0 = 2$.
 
 **(c)** Verify the convergence criterion $\lvert g'(\alpha) \rvert \lt 1$ at the root.
 
@@ -195,7 +195,7 @@ $$\text{Percentage error} = \frac◆LB◆\lvert 1.8194 - 1.8856 \rvert◆RB◆�
 **(d)** The error bound:
 $\lvert E \rvert \leq \frac{(b-a)^3}{12n^2}\max_{[a,b]}\lvert f''(x) \rvert$.
 
-$f''(x) = -\frac{1}{4}x^{-3/2}$. On $(0, 2]$$f''(x)$ is unbounded as $x \to 0^+$.
+$f''(x) = -\frac{1}{4}x^{-3/2}$. On $(0, 2]$, $f''(x)$ is unbounded as $x \to 0^+$.
 
 The maximum of $\lvert f''(x) \rvert$ on $[0, 2]$ does not exist (it diverges). The error bound
 formula is not directly applicable because $f''$ is unbounded at $x = 0$.
@@ -367,7 +367,7 @@ $x_n \approx 0.73909$.
 
 To 5 decimal places: $\alpha \approx 0.73909$.
 
-**(c)** $g(x) = \cos x$$g'(x) = -\sin x$.
+**(c)** $g(x) = \cos x$, $g'(x) = -\sin x$.
 
 At the root $\alpha \approx 0.739$:
 $\lvert g'(\alpha) \rvert = \lvert -\sin(0.739) \rvert \approx \sin(0.739) \approx 0.674$.
@@ -375,9 +375,9 @@ $\lvert g'(\alpha) \rvert = \lvert -\sin(0.739) \rvert \approx \sin(0.739) \appr
 Since $\lvert g'(\alpha) \rvert \approx 0.674 \lt 1$The fixed-point iteration converges (linearly,
 since $0 \lt \lvert g'(\alpha) \rvert \lt 1$).
 
-**(d)** Newton-Raphson: $f(x) = \cos x - x$$f'(x) = -\sin x - 1$.
+**(d)** Newton-Raphson: $f(x) = \cos x - x$, $f'(x) = -\sin x - 1$.
 
-$x_0 = 0.5$: $f(0.5) = \cos 0.5 - 0.5 \approx 0.37758$$f'(0.5) = -\sin 0.5 - 1 \approx -1.47943$.
+$x_0 = 0.5$: $f(0.5) = \cos 0.5 - 0.5 \approx 0.37758$, $f'(0.5) = -\sin 0.5 - 1 \approx -1.47943$.
 
 $$x_1 = 0.5 - \frac{0.37758}{-1.47943} \approx 0.5 + 0.25521 = 0.75521$$
 
@@ -414,7 +414,7 @@ integral, and error analysis via concavity.]
 
 **Solution:**
 
-**(a)** $n = 4$$h = 0.25$.
+**(a)** $n = 4$, $h = 0.25$.
 
 | $x$        | 0   | 0.25                          | 0.5                         | 0.75                          | 1                        |
 | ---------- | --- | ----------------------------- | --------------------------- | ----------------------------- | ------------------------ |
@@ -424,7 +424,7 @@ $$T_4 = \frac{0.25}{2}[1 + 2(0.93941 + 0.77880 + 0.56978) + 0.36788]$$
 
 $$= 0.125[1 + 4.57598 + 0.36788] = 0.125 \times 5.94386 = 0.74298$$
 
-**(b)** $n = 8$$h = 0.125$.
+**(b)** $n = 8$, $h = 0.125$.
 
 | $x$        | 0   | 0.125   | 0.25    | 0.375   | 0.5     | 0.625   | 0.75    | 0.875   | 1       |
 | ---------- | --- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |

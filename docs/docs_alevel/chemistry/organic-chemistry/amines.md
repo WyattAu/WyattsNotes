@@ -181,7 +181,7 @@ Introduction of substituents that cannot be directly attached by electrophilic s
 | $\mathrm{HBF}_4$Heat        | Fluorobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{BF}_4^- \xrightarrow{\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{F} + \mathrm{N}_2 + \mathrm{BF}_3$                        |
 | $\mathrm{H}_3\mathrm{PO}_2$ | Benzene       | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{H}_3\mathrm{PO}_2 + \mathrm{H}_2\mathrm{O} \to \mathrm{C}_6\mathrm{H}_6 + \mathrm{N}_2 + \mathrm{H}_3\mathrm{PO}_3$ |
 | $\mathrm{CuCN}$             | Benzonitrile  | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+ + \mathrm{CuCN} \to \mathrm{C}_6\mathrm{H}_5\mathrm{CN} + \mathrm{N}_2$                                                       |
-| $\mathrm{CuCl}$$\Delta$     | Chlorobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^- \xrightarrow{\mathrm{CuCl},\,\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{Cl} + \mathrm{N}_2$                         |
+| $\mathrm{CuCl}$, $\Delta$     | Chlorobenzene | $\mathrm{C}_6\mathrm{H}_5\mathrm{N}_2^+\mathrm{Cl}^- \xrightarrow{\mathrm{CuCl},\,\Delta} \mathrm{C}_6\mathrm{H}_5\mathrm{Cl} + \mathrm{N}_2$                         |
 
 **Coupling reactions:** Diazonium salts react with phenols and aromatic amines to form azo compounds
 ($-\mathrm{N}=\mathrm{N}-$). These are intensely coloured and are used as dyes.
@@ -287,7 +287,7 @@ neutral organic compounds.
 
 ### Hinsberg Test
 
-The Hinsberg test distinguishes between $1^\circ$$2^\circ$And $3^\circ$ amines using
+The Hinsberg test distinguishes between $1^\circ$, $2^\circ$And $3^\circ$ amines using
 benzenesulphonyl chloride:
 
 | Amine type            | Observation with $\mathrm{C}_6\mathrm{H}_5\mathrm{SO}_2\mathrm{Cl}$             |

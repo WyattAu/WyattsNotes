@@ -88,7 +88,7 @@ Which matches the formula for $n = k+1$. $\blacksquare$
 <summary>Example</summary>
 Find the 20th term of the sequence $3, 7, 11, 15, \ldots$
 
-Here $a_1 = 3$$d = 4$. So $a_{20} = 3 + 19 \times 4 = 3 + 76 = 79$.
+Here $a_1 = 3$, $d = 4$. So $a_{20} = 3 + 19 \times 4 = 3 + 76 = 79$.
 
 </details>
 <summary>Example</summary>
@@ -150,7 +150,7 @@ Substituting $a_n = a_1 + (n-1)d$ gives the second form. $\blacksquare$
 
 ### Sum of the First $n$ Positive Integers
 
-Setting $a_1 = 1$$d = 1$$a_n = n$:
+Setting $a_1 = 1$, $d = 1$, $a_n = n$:
 
 $$
 \sum_{k=1}^{n} k = \frac{n(n+1)}{2}
@@ -166,7 +166,7 @@ $S_{100} = \frac{100 \times 101}{2} = 5050$.
 <summary>Example</summary>
 Find the sum of the arithmetic series $2 + 5 + 8 + \cdots + 89$.
 
-$a_1 = 2$$d = 3$. Find $n$: $a_n = 2 + (n-1)3 = 89 \implies 3(n-1) = 87 \implies n = 30$.
+$a_1 = 2$, $d = 3$. Find $n$: $a_n = 2 + (n-1)3 = 89 \implies 3(n-1) = 87 \implies n = 30$.
 
 $S_{30} = \frac{30}{2}(2 + 89) = 15 \times 91 = 1365$.
 
@@ -208,7 +208,7 @@ $\blacksquare$
 <summary>Example</summary>
 Find the 8th term of $3, -6, 12, -24, \ldots$
 
-$a_1 = 3$$r = -2$. $a_8 = 3(-2)^7 = 3(-128) = -384$.
+$a_1 = 3$, $r = -2$. $a_8 = 3(-2)^7 = 3(-128) = -384$.
 
 </details>
 <summary>Example</summary>
@@ -277,7 +277,7 @@ Express $0.\overline{37}$ as a fraction.
 
 $0.\overline{37} = 0.37 + 0.0037 + 0.000037 + \cdots$
 
-This is a geometric series with $a = 0.37$$r = 0.01$.
+This is a geometric series with $a = 0.37$, $r = 0.01$.
 
 $S_\infty = \frac{0.37}{1 - 0.01} = \frac{0.37}{0.99} = \frac{37}{99}$.
 
@@ -394,7 +394,7 @@ Set $L = \frac{1}{2}\left(L + \frac{16}{L}\right)$.
 
 $2L = L + \frac{16}{L} \implies L = \frac{16}{L} \implies L^2 = 16$.
 
-Since $a_n \gt 0$ for all $n$$L = 4$.
+Since $a_n \gt 0$ for all $n$, $L = 4$.
 
 This is the Babylonian method for computing $\sqrt{16} = 4$.
 
@@ -404,7 +404,7 @@ A sequence is defined by $a_{n+1} = \sqrt{2 + a_n}$ with $a_1 = \sqrt{2}$. Assum
 
 $L = \sqrt{2 + L} \implies L^2 = 2 + L \implies L^2 - L - 2 = 0 \implies (L-2)(L+1) = 0$.
 
-Since $a_n \gt 0$$L = 2$.
+Since $a_n \gt 0$, $L = 2$.
 
 ---
 
@@ -444,7 +444,7 @@ Since $a_n \gt 0$$L = 2$.
 <summary>Answer</summary>
 - This is a two-part problem. First, an arithmetic series to find the total saved, then a geometric sequence for the compound interest.
 - **Part 1: Calculate total savings (Arithmetic Series)**
- - The deposits are an arithmetic sequence with $a_1 = 1200$$d = 300$And $n=5$ years of deposits.
+ - The deposits are an arithmetic sequence with $a_1 = 1200$, $d = 300$And $n=5$ years of deposits.
  - The total amount deposited is the sum of the series, $S_5$.
  - First, find the deposit in the 5th year: $a_5 = a_1 + (5-1)d = 1200 + 4(300) = 2400$.
  - Now, find the sum: $S_5 = \frac{n}{2}(a_1 + a_5) = \frac{5}{2}(1200 + 2400) = 2.5(3600) = \mathrm{USD } 9,000$.
@@ -475,7 +475,7 @@ Sequence application).
 - The amount just before the $(n+1)$-th dose is $0.5 \cdot Q_n$.
 - The amount just after the $(n+1)$-th dose is $Q_{n+1} = 0.5 \cdot Q_n + 10$.
 - To find the limiting amount (steady state), we assume the sequence converges to a limit $L$.
-- As $n \to \infty$$Q_{n+1} \to L$ and $Q_n \to L$.
+- As $n \to \infty$, $Q_{n+1} \to L$ and $Q_n \to L$.
   $$ L = 0.5L + 10 $$
   $$ 0.5L = 10 $$
   $$ L = \frac{10}{0.5} = 20 \mathrm{ mg} $$
@@ -672,7 +672,7 @@ Geometric series.
  - Since all three conditions are met, the series converges by the Alternating Series Test.
 - **Part 2: Show divergence of the series of absolute values.**
  - We need to test the series $\sum_{n=2}^{\infty} \left| \frac{(-1)^n}{\sqrt{n} \ln(n)} \right| = \sum_{n=2}^{\infty} \frac{1}{\sqrt{n} \ln(n)}$.
- - We can use the Direct Comparison Test. We know that for $n \gt e$$\ln(n) \lt \sqrt{n}$.
+ - We can use the Direct Comparison Test. We know that for $n \gt e$, $\ln(n) \lt \sqrt{n}$.
  - Therefore, $\sqrt{n}\ln(n) \lt \sqrt{n}\sqrt{n} = n$.
  - This implies $\frac{1}{\sqrt{n}\ln(n)} \gt \frac{1}{n}$ for $n$ large enough.
  - We are comparing our series to the harmonic series $\sum \frac{1}{n}$Which diverges.
@@ -724,7 +724,7 @@ AST).
 - This is the Babylonian method for finding a square root.
 - **Part 1: Find the limit.**
  - Assume the sequence converges to a limit $L$. Since all terms will be positive, $L$ must be positive.
- - As $n \to \infty$$a_{n+1} \to L$ and $a_n \to L$.
+ - As $n \to \infty$, $a_{n+1} \to L$ and $a_n \to L$.
  - Substitute $L$ into the recurrence relation:
     - $$ L = \frac{1}{2}\left(L + \frac{9}{L}\right) $$
  - Solve for $L$:
@@ -806,7 +806,7 @@ The terms are not consecutive.
 - **Part 2: Sum of the bank's bonuses.**
  - The bonuses form an arithmetic sequence: 1, 2, 3, ..., 24.
  - We need to find the sum of this arithmetic series, $S_{24}$.
- - $a_1 = 1$$a_{24} = 24$$n=24$.
+ - $a_1 = 1$, $a_{24} = 24$, $n=24$.
  - $S_{24} = \frac{n}{2}(a_1 + a_n) = \frac{24}{2}(1 + 24) = 12(25) = \mathrm{USD } 300$.
 - **Part 3: Total amount.**
  - Total Amount = Total Deposits + Total Bonuses
@@ -827,7 +827,7 @@ Parts and recognizing how to apply the formula for the sum of a simple arithmeti
  - Therefore, the sum of the first series is $e^2$.
 - **Part 2: Find the sum of the second series.**
  - Let $S = \sum_{n=2}^{\infty} \frac{2^n}{(n-1)!}$. This series is not in a standard form. We need to manipulate the index to make it match a known series.
- - Let $k = n-1$. When $n=2$$k=1$. As $n \to \infty$$k \to \infty$. Also, $n = k+1$.
+ - Let $k = n-1$. When $n=2$, $k=1$. As $n \to \infty$, $k \to \infty$. Also, $n = k+1$.
  - Substitute these into the sum:
     - $$ S = \sum_{k=1}^{\infty} \frac{2^{k+1}}{k!} = \sum_{k=1}^{\infty} \frac{2 \cdot 2^k}{k!} = 2 \sum_{k=1}^{\infty} \frac{2^k}{k!} $$
  - Now, the sum $\sum_{k=1}^{\infty} \frac{2^k}{k!}$ is almost $e^2$.
@@ -871,7 +871,7 @@ Change the starting and ending indices of a sum to match a known formula.
  - Write out the term: $a_n = \frac{n \cdot n \cdot n \cdots n}{1 \cdot 2 \cdot 3 \cdots n} = \left(\frac{n}{1}\right) \left(\frac{n}{2}\right) \cdots \left(\frac{n}{n}\right)$.
  - Each factor $(\frac{n}{k})$ is $\ge 1$. The first factor is $n$.
  - So, $a_n = \frac{n}{1} \cdot (\mathrm{product of terms } \ge 1) \ge n$.
- - As $n \to \infty$$a_n \to \infty$ because $a_n \ge n$.
+ - As $n \to \infty$, $a_n \to \infty$ because $a_n \ge n$.
  - Since $\lim_{n\to\infty} a_n \ne 0$The series diverges by the Test for Divergence.
 - **Method 2: Ratio Test**
   - $$ L = \lim_{n\to\infty} \left| \frac{(n+1)^{n+1}}{(n+1)!} \cdot \frac{n!}{n^n} \right| = \lim_{n\to\infty} \frac{(n+1)^{n+1}}{(n+1)n!} \cdot \frac{n!}{n^n} $$

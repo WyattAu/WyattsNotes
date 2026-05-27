@@ -85,9 +85,9 @@ water. This arrangement creates a hydrophobic core in the centre of the bilayer.
 
 The membrane is partially permeable because:
 
-- **Small non-polar molecules** (e.g. $O_{2}$$CO_{2}$Lipid-soluble steroid hormones) can diffuse
+- **Small non-polar molecules** (e.g. $O_{2}$, $CO_{2}$Lipid-soluble steroid hormones) can diffuse
   directly through the hydrophobic core.
-- **Large polar molecules** (e.g. Glucose), **ions** (e.g. $Na^{+}$$Cl^{-}$), and **charged
+- **Large polar molecules** (e.g. Glucose), **ions** (e.g. $Na^{+}$, $Cl^{-}$), and **charged
   molecules** cannot pass through the hydrophobic region and require transport proteins or vesicles.
 
 (b) Two roles of cholesterol:

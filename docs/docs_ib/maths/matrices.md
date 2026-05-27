@@ -14,7 +14,7 @@ An $m \times n$ matrix $A$ is a rectangular array of real numbers with $m$ rows 
 
 $$A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}$$
 
-The entry in row $i$ and column $j$ is $a_{ij}$. When $m = n$$A$ is a **square matrix** of order
+The entry in row $i$ and column $j$ is $a_{ij}$. When $m = n$, $A$ is a **square matrix** of order
 $n$.
 
 The **identity matrix** $I_n$ is the $n \times n$ matrix with $1$S on the diagonal and $0$S
@@ -114,7 +114,7 @@ Of the submatrix obtained by deleting row $i$ and column $j$).
 - $(A^{-1})^{-1} = A$
 - $(AB)^{-1} = B^{-1}A^{-1}$
 - $(A^T)^{-1} = (A^{-1})^T$
-- $(\lambda A)^{-1} = \dfrac{1}{\lambda} A^{-1}$$\lambda \ne 0$
+- $(\lambda A)^{-1} = \dfrac{1}{\lambda} A^{-1}$, $\lambda \ne 0$
 
 ---
 
@@ -351,7 +351,7 @@ Cofactors:
 $C_{11} = 1, C_{12} = -5, C_{13} = -2, C_{21} = -2, C_{22} = 1, C_{23} = 4, C_{31} = -2, C_{32} = 1, C_{33} = -5$.
 $A^{-1} = \dfrac{1}{-9}\begin{pmatrix} 1 & 2 & -2 \\ -5 & 1 & 1 \\ -2 & 4 & -5 \end{pmatrix} = \begin{pmatrix} -1/9 & -2/9 & 2/9 \\ 5/9 & -1/9 & -1/9 \\ 2/9 & -4/9 & 5/9 \end{pmatrix}$.
 
-**Problem 3:** $A = \begin{pmatrix} 1 & 2 \\ 3 & 7 \end{pmatrix}$$\det(A) = 7 - 6 = 1$.
+**Problem 3:** $A = \begin{pmatrix} 1 & 2 \\ 3 & 7 \end{pmatrix}$, $\det(A) = 7 - 6 = 1$.
 $A^{-1} = \begin{pmatrix} 7 & -2 \\ -3 & 1 \end{pmatrix}$.
 $\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 7 & -2 \\ -3 & 1 \end{pmatrix}\begin{pmatrix} 5 \\ 18 \end{pmatrix} = \begin{pmatrix} 35 - 36 \\ -15 + 18 \end{pmatrix} = \begin{pmatrix} -1 \\ 3 \end{pmatrix}$.
 So $x = -1, y = 3$.
@@ -387,11 +387,11 @@ $$\det(A) = 2\begin{vmatrix} 3 & -1 \\ 1 & 2 \end{vmatrix} - 1\begin{vmatrix} 1 
 
 **Step 2: Compute the cofactor matrix.**
 
-$C_{11} = +\begin{vmatrix} 3 & -1 \\ 1 & 2 \end{vmatrix} = 7$$C_{12} = -\begin{vmatrix} 1 & -1 \\ 0 & 2 \end{vmatrix} = -2$$C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
+$C_{11} = +\begin{vmatrix} 3 & -1 \\ 1 & 2 \end{vmatrix} = 7$, $C_{12} = -\begin{vmatrix} 1 & -1 \\ 0 & 2 \end{vmatrix} = -2$, $C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
 
-$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$$C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$$C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
+$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$, $C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$, $C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
 
-$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & -1 \end{vmatrix} = -1$$C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & -1 \end{vmatrix} = 2$$C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
+$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & -1 \end{vmatrix} = -1$, $C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & -1 \end{vmatrix} = 2$, $C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
 
 Cofactor matrix: $\begin{pmatrix} 7 & -2 & 1 \\ -2 & 4 & -2 \\ -1 & 2 & 5 \end{pmatrix}$.
 
@@ -450,7 +450,7 @@ $R_1 \leftrightarrow R_2$:
 
 $$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 2 & 1 & -1 & | & 3 \\ 3 & 2 & 1 & | & 1 \end{pmatrix}$$
 
-$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - 3R_1$:
+$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$:
 
 $$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 0 & 3 & -5 & | & -9 \\ 0 & 5 & -5 & | & -17 \end{pmatrix}$$
 
@@ -470,7 +470,7 @@ $y - \dfrac{5}{3}\!\left(-\dfrac{3}{10}\right) = -3 \implies y + \dfrac{1}{2} = 
 $R_1$:
 $x - \left(-\dfrac{7}{2}\right) + 2\!\left(-\dfrac{3}{10}\right) = 6 \implies x + \dfrac{7}{2} - \dfrac{3}{5} = 6 \implies x = 6 - \dfrac{29}{10} = \dfrac{31}{10}$.
 
-Solution: $x = \dfrac{31}{10}$$y = -\dfrac{7}{2}$$z = -\dfrac{3}{10}$.
+Solution: $x = \dfrac{31}{10}$, $y = -\dfrac{7}{2}$, $z = -\dfrac{3}{10}$.
 
 </details>
 
@@ -489,7 +489,7 @@ $(A - 3I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 0 & 1 \\ 0 & -1 \end{p
 For $\lambda_2 = 2$:
 $(A - 2I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
-$P = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$$D = \begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$.
+$P = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$, $D = \begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$.
 
 $P^{-1} = \dfrac{1}{-1}\begin{pmatrix} -1 & -1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 0 & -1 \end{pmatrix}$.
 
@@ -553,7 +553,7 @@ $n$.
 <details>
 <summary>Problem 12</summary>
 
-Use Cramer's rule to solve: $3x + 2y - z = 4$$x - y + 3z = 5$$2x + y + z = 3$.
+Use Cramer's rule to solve: $3x + 2y - z = 4$, $x - y + 3z = 5$, $2x + y + z = 3$.
 
 </details>
 
@@ -586,7 +586,7 @@ $$x + 2y + kz = 1$$ $$2x + ky + 2z = 2$$ $$kx + 2y + z = 3$$
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 9:** $AB = \begin{pmatrix} 2 & 3 \\ 4 & 5 \end{pmatrix}$$\det(AB) = 10 - 12 = -2$.
+**Problem 9:** $AB = \begin{pmatrix} 2 & 3 \\ 4 & 5 \end{pmatrix}$, $\det(AB) = 10 - 12 = -2$.
 $(AB)^{-1} = \dfrac{1}{-2}\begin{pmatrix} 5 & -3 \\ -4 & 2 \end{pmatrix} = \begin{pmatrix} -5/2 & 3/2 \\ 2 & -1 \end{pmatrix}$.
 $A^{-1} = \dfrac{1}{-2}\begin{pmatrix} 4 & -2 \\ -3 & 1 \end{pmatrix} = \begin{pmatrix} -2 & 1 \\ 3/2 & -1/2 \end{pmatrix}$.
 $B^{-1} = \dfrac{1}{1}\begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ -1 & 0 \end{pmatrix}$.
@@ -595,20 +595,20 @@ Verified: $(AB)^{-1} = B^{-1}A^{-1}$.
 
 **Problem 10:** Invariant points:
 $(T - I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 2x + y = 0$
-and $y = 0$So $x = 0$$y = 0$. Only the origin is invariant. For invariant lines $y = mx + c$:
+and $y = 0$So $x = 0$, $y = 0$. Only the origin is invariant. For invariant lines $y = mx + c$:
 $T\begin{pmatrix} x \\ mx + c \end{pmatrix}$ must lie on $y = mx + c$. This gives conditions leading
 to the invariant line $y = 0$ (the $x$-axis is mapped to itself).
 
 **Problem 11:** $A$ is an upper triangular matrix with $1$S on the diagonal. This represents a shear
 Transformation. For any
-$n$$A^n = \begin{pmatrix} 1 & 0 & 2n \\ 0 & 1 & -n \\ 0 & 0 & 1 \end{pmatrix}$Which Can be verified
+$n$, $A^n = \begin{pmatrix} 1 & 0 & 2n \\ 0 & 1 & -n \\ 0 & 0 & 1 \end{pmatrix}$Which Can be verified
 by induction.
 
 **Problem 12:** $\det(A) = 3(-1 - 3) - 2(1 - 6) + (-1)(1 - (-2k)) = -12 + 10 - 1 + 2k = 2k - 3$.
-$A_x = \begin{pmatrix} 4 & 2 & -1 \\ 5 & -1 & 3 \\ 3 & 1 & 1 \end{pmatrix}$$\det(A_x) = 4(-1-3) - 2(5-9) + (-1)(5+3) = -16 + 8 - 8 = -16$.
-$A_y = \begin{pmatrix} 3 & 4 & -1 \\ 1 & 5 & 3 \\ 2 & 3 & 1 \end{pmatrix}$$\det(A_y) = 3(5-9) - 4(1-6) + (-1)(3-10) = -12 + 20 + 7 = 15$.
-$A_z = \begin{pmatrix} 3 & 2 & 4 \\ 1 & -1 & 5 \\ 2 & 1 & 3 \end{pmatrix}$$\det(A_z) = 3(-3-5) - 2(3-10) + 4(1+2) = -24 + 14 + 12 = 2$.
-$x = -16/(2k-3)$$y = 15/(2k-3)$$z = 2/(2k-3)$.
+$A_x = \begin{pmatrix} 4 & 2 & -1 \\ 5 & -1 & 3 \\ 3 & 1 & 1 \end{pmatrix}$, $\det(A_x) = 4(-1-3) - 2(5-9) + (-1)(5+3) = -16 + 8 - 8 = -16$.
+$A_y = \begin{pmatrix} 3 & 4 & -1 \\ 1 & 5 & 3 \\ 2 & 3 & 1 \end{pmatrix}$, $\det(A_y) = 3(5-9) - 4(1-6) + (-1)(3-10) = -12 + 20 + 7 = 15$.
+$A_z = \begin{pmatrix} 3 & 2 & 4 \\ 1 & -1 & 5 \\ 2 & 1 & 3 \end{pmatrix}$, $\det(A_z) = 3(-3-5) - 2(3-10) + 4(1+2) = -24 + 14 + 12 = 2$.
+$x = -16/(2k-3)$, $y = 15/(2k-3)$, $z = 2/(2k-3)$.
 
 **Problem 13:** Enlargement by $2$: $E = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}$. Rotation by
 $45^\circ$:
@@ -622,7 +622,7 @@ $\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \m
 For $\lambda = 3$:
 $\begin{pmatrix} -1 & 1 \\ 1 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 Orthogonality check: $\mathbf{v}_1 \cdot \mathbf{v}_2 = 1 - 1 = 0$. Confirmed. $A = PDP^{-1}$ where
-$P = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$$D = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
+$P = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$, $D = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
 
 **Problem 15:**
 $\det(A) = 1(k - 4) - 2(2 - 2k) + k(4 - k^2) = k - 4 - 4 + 4k + 4k - k^3 = -k^3 + 9k - 8$. Factor:

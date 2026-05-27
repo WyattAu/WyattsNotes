@@ -702,11 +702,11 @@ Rate?
 (a) Net benefits each year: Year 0: $-500$Year 1: $+50$Year 2: $+100$Year 3: $+150$ Year 4:
 $+200$Year 5: $+250$.
 
-$$\text{NPV} = -500 + \frac{50}{1.08} + \frac{100}{1.08^2} + \frac{150}{1.08^3} + \frac{200}{1.08^4} + \frac{250}{1.08^5}$$
+$, $\text{NPV} = -500 + \frac{50}{1.08} + \frac{100}{1.08^2} + \frac{150}{1.08^3} + \frac{200}{1.08^4} + \frac{250}{1.08^5}$, $
 
-$$\text{NPV} = -500 + 46.30 + 85.73 + 119.07 + 147.01 + 170.15$$
+$, $\text{NPV} = -500 + 46.30 + 85.73 + 119.07 + 147.01 + 170.15$, $
 
-$$\text{NPV} = -500 + 568.26 = \$68.26 \text{ million}$$
+$, $\text{NPV} = -500 + 568.26 = \$68.26 \text{ million}$$
 
 (b) Since NPV $> 0$ (`USD 68.26` million), the project should be undertaken.
 
@@ -716,7 +716,7 @@ $$\text{NPV} = -500 + \frac{50}{1.12} + \frac{100}{1.12^2} + \frac{150}{1.12^3} 
 
 $$\text{NPV} = -500 + 44.64 + 79.72 + 106.77 + 127.10 + 141.86$$
 
-$$\text{NPV} = -500 + 500.09 = \$0.09 \text{ million}$$
+$$\text{NPV} = -500 + 500.09 = \$0.09 \text{ million}$, $
 
 At $12\%$The NPV is approximately zero (borderline). The decision is sensitive to the discount rate:
 At $8\%$ the project is viable; at $12\%$ it barely breaks even. This highlights the Importance of
@@ -757,19 +757,19 @@ Recalculate The Gini coefficient and comment.
 
 (b) Using the trapezoidal method:
 
-$$G = 1 - \sum (p_i - p_{i-1})(L_i + L_{i-1})$$
+$, $G = 1 - \sum (p_i - p_{i-1})(L_i + L_{i-1})$, $
 
-$$G = 1 - [0.2 \times (0 + 0.05) + 0.2 \times (0.05 + 0.15) + 0.2 \times (0.15 + 0.30) + 0.2 \times (0.30 + 0.50) + 0.2 \times (0.50 + 1.00)]$$
+$, $G = 1 - [0.2 \times (0 + 0.05) + 0.2 \times (0.05 + 0.15) + 0.2 \times (0.15 + 0.30) + 0.2 \times (0.30 + 0.50) + 0.2 \times (0.50 + 1.00)]$, $
 
-$$G = 1 - [0.01 + 0.04 + 0.09 + 0.16 + 0.30] = 1 - 0.60 = 0.40$$
+$, $G = 1 - [0.01 + 0.04 + 0.09 + 0.16 + 0.30] = 1 - 0.60 = 0.40$, $
 
 (c) After redistribution: bottom quintile share rises from $5\%$ to $15\%$; top quintile falls from
 $50\%$ to $40\%$.
 
 New cumulative shares: $0, 15, 25, 40, 60, 100$.
 
-$$G = 1 - [0.2 \times 15 + 0.2 \times 40 + 0.2 \times 65 + 0.2 \times 100 + 0.2 \times 160] / 100$$
-$$G = 1 - [3 + 8 + 13 + 20 + 32] / 100 = 1 - 0.76 = 0.24$$
+$, $G = 1 - [0.2 \times 15 + 0.2 \times 40 + 0.2 \times 65 + 0.2 \times 100 + 0.2 \times 160] / 100$, $
+$, $G = 1 - [3 + 8 + 13 + 20 + 32] / 100 = 1 - 0.76 = 0.24$, $
 
 The Gini coefficient falls from $0.40$ to $0.24$A significant reduction in inequality. This
 Demonstrates the powerful redistributive potential of targeted transfers.
@@ -997,15 +997,15 @@ $= \$174\,300$.
 
 ### Present Value with Uneven Cash Flows
 
-$$PV = \sum_{t=0}^{T} \frac{CF_t}{(1 + r)^t}$$
+$, $PV = \sum_{t=0}^{T} \frac{CF_t}{(1 + r)^t}$, $
 
 **Worked example:** A project requires an initial investment of `USD 10,000` and generates the
 following Cash flows: Year 1: `USD 2,000`Year 2: `USD 4,000`Year 3: `USD 5,000`Year 4: `USD 3,000`.
 Discount rate $= 8\%$.
 
-$$PV = -10\,000 + \frac{2\,000}{1.08} + \frac{4\,000}{1.08^2} + \frac{5\,000}{1.08^3} + \frac{3\,000}{1.08^4}$$
+$, $PV = -10\,000 + \frac{2\,000}{1.08} + \frac{4\,000}{1.08^2} + \frac{5\,000}{1.08^3} + \frac{3\,000}{1.08^4}$, $
 
-$$PV = -10\,000 + 1851.9 + 3429.4 + 3969.2 + 2205.1 = -10\,000 + 11\,455.6 = \$1455.6$$
+$, $PV = -10\,000 + 1851.9 + 3429.4 + 3969.2 + 2205.1 = -10\,000 + 11\,455.6 = \$1455.6$$
 
 NPV $> 0$So the project is viable.
 
@@ -1130,45 +1130,45 @@ $$Y = C + I + G + X - M$$
 
 Substituting $C = a + b(Y - T)$$T = tY + T_0$And $M = mY + M_0$:
 
-$$Y = a + b(Y - tY - T_0) + I + G + X - mY - M_0$$
+$, $Y = a + b(Y - tY - T_0) + I + G + X - mY - M_0$, $
 
-$$Y = a + bY - btY - bT_0 + I + G + X - mY - M_0$$
+$, $Y = a + bY - btY - bT_0 + I + G + X - mY - M_0$, $
 
-$$Y - bY + btY + mY = a - bT_0 + I + G + X - M_0$$
+$, $Y - bY + btY + mY = a - bT_0 + I + G + X - M_0$, $
 
-$$Y(1 - b + bt + m) = A_0$$
+$, $Y(1 - b + bt + m) = A_0$, $
 
 Where $A_0 = a - bT_0 + I + G + X - M_0$ is autonomous expenditure.
 
-$$Y^* = \frac{A_0}{1 - b(1 - t) + m}$$
+$, $Y^* = \frac{A_0}{1 - b(1 - t) + m}$, $
 
 ### Multiplier Relationships
 
 **Government spending multiplier:**
 
-$$\frac{\partial Y}{\partial G} = \frac{1}{1 - b(1 - t) + m}$$
+$, $\frac{\partial Y}{\partial G} = \frac{1}{1 - b(1 - t) + m}$, $
 
 **Lump-sum tax multiplier:**
 
-$$\frac{\partial Y}{\partial T_0} = \frac{-b}{1 - b(1 - t) + m}$$
+$, $\frac{\partial Y}{\partial T_0} = \frac{-b}{1 - b(1 - t) + m}$, $
 
 **Transfer payment multiplier:**
 
-$$\frac{\partial Y}{\partial TR} = \frac{b}{1 - b(1 - t) + m}$$
+$, $\frac{\partial Y}{\partial TR} = \frac{b}{1 - b(1 - t) + m}$, $
 
 Note: the transfer payment multiplier has the same magnitude as the tax multiplier but opposite
 Sign. Transfers increase disposable income, stimulating consumption.
 
 **Export multiplier:**
 
-$$\frac{\partial Y}{\partial X} = \frac{1}{1 - b(1 - t) + m}$$
+$, $\frac{\partial Y}{\partial X} = \frac{1}{1 - b(1 - t) + m}$, $
 
 The export multiplier equals the government spending multiplier because both are direct injections
 Into aggregate expenditure.
 
 **Proportional tax rate multiplier:**
 
-$$\frac{\partial Y}{\partial t} = \frac{-bY}{1 - b(1 - t) + m}$$
+$, $\frac{\partial Y}{\partial t} = \frac{-bY}{1 - b(1 - t) + m}$, $
 
 An increase in the proportional tax rate reduces equilibrium income. The effect is proportional to
 Current income $Y$Making it path-dependent.
@@ -2298,7 +2298,7 @@ positively correlated, and we are attributing some of the effect of sleep to stu
 
 ### The Multiple Regression Model
 
-$$Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \cdots + \beta_k X_{ki} + \epsilon_i$$
+$, $Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \cdots + \beta_k X_{ki} + \epsilon_i$, $
 
 The OLS estimators minimise
 $\sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_{1i} - \cdots - \hat{\beta}_k X_{ki})^2$.
@@ -2307,13 +2307,13 @@ $\sum_{i=1}^{n} (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_{1i} - \cdots - \hat{\bet
 
 **t-test for individual coefficients:**
 
-$$t = \frac{\hat{\beta}_j - 0}{\text{SE}(\hat{\beta}_j)}$$
+$, $t = \frac{\hat{\beta}_j - 0}{\text{SE}(\hat{\beta}_j)}$, $
 
 If $|t| > t_{\text{critical}}$Reject $H_0: \beta_j = 0$ at the chosen significance level.
 
 **F-test for overall significance:**
 
-$$F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR}/k}{\text{SSE}/(n-k-1)}$$
+$, $F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR}/k}{\text{SSE}/(n-k-1)}$, $
 
 If $F > F_{\text{critical}}(k, n-k-1)$Reject $H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0$.
 
@@ -2329,7 +2329,7 @@ individual effect of each variable.
    multicollinearity
 2. **Variance Inflation Factor (VIF):**
 
-$$\text{VIF}_j = \frac{1}{1 - R_j^2}$$
+$, $\text{VIF}_j = \frac{1}{1 - R_j^2}$, $
 
 Where $R_j^2$ is the $R^2$ from regressing $X_j$ on all other independent variables.
 $\text{VIF} > 10$ indicates severe multicollinearity.

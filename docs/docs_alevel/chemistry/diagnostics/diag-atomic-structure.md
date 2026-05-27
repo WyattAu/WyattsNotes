@@ -202,7 +202,7 @@ then relaxes back to the ground state.
 directly from $n = 4$ to $n = 2$. Use $E_n = -1312/n^2\,\text{kJ mol}^{-1}$.
 
 (b) Calculate the wavelength of this photon in nm. Use
-$c = 3.00 \times 10^8\,\text{m s}^{-1}$$h = 6.63 \times 10^{-34}\,\text{J s}$$N_A = 6.02 \times 10^{23}\,\text{mol}^{-1}$.
+$c = 3.00 \times 10^8\,\text{m s}^{-1}$, $h = 6.63 \times 10^{-34}\,\text{J s}$, $N_A = 6.02 \times 10^{23}\,\text{mol}^{-1}$.
 
 (c) Identify the region of the electromagnetic spectrum in which this photon lies, and explain why
 the transition from $n = 4$ to $n = 1$ produces a photon in a different region.
@@ -271,7 +271,7 @@ $\text{Ar} \lt \text{P} \lt \text{S} \lt \text{Cl} \lt \text{Si} \lt \text{Na} \
 (b) The pattern reflects the changing types of bonding and structure across Period 3:
 
 - **Na, Mg, Al**: Giant metallic structures. Melting points increase Na $\lt$ Mg $\lt$ Al due to
-  increasing ionic charge ($+$$2+$$3+$) and decreasing ionic radius, leading to stronger metallic
+  increasing ionic charge ($+$, $2+$, $3+$) and decreasing ionic radius, leading to stronger metallic
   bonding.
 - **Si**: Giant covalent (macromolecular) structure with a continuous network of strong covalent
   bonds in all directions. Each Si atom forms four strong covalent bonds, requiring enormous energy
@@ -293,7 +293,7 @@ because the extra electrons can move freely through the lattice.
 
 #### UT-4: Ionisation Energy Calculation
 
-**Question:** The first three ionisation energies of aluminium are $578$$1817$And
+**Question:** The first three ionisation energies of aluminium are $578$, $1817$And
 $2745\,\mathrm{kJ\,mol^{-1}}$. Explain why the second ionisation energy is so much larger than the
 first, and why the third is larger still but the jump from second to third is smaller than from
 first to second.
@@ -328,7 +328,7 @@ $$10.81 = 10.00x + 11.00(1-x) = 10.00x + 11.00 - 11.00x = 11.00 - x$$
 
 $$x = 11.00 - 10.81 = 0.19$$
 
-$\mathrm{^{10}B}$: $19.0\%$$\mathrm{^{11}B}$: $81.0\%$
+$\mathrm{^{10}B}$: $19.0\%$, $\mathrm{^{11}B}$: $81.0\%$
 
 #### IT-4: Periodic Trends and Thermodynamics
 

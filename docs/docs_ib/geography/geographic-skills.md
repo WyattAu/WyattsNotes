@@ -401,7 +401,7 @@ light, infrared, microwave) reflected or emitted by Earth's surface and atmosphe
 | Flood monitoring                       | Sentinel-1 (SAR)           | Mapping flood extent using synthetic aperture radar, which penetrates cloud cover                           |
 | Sea surface temperature                | MODIS, NOAA AVHRR          | Monitoring ocean currents, upwelling, coral bleaching                                                       |
 | Glacier monitoring                     | Landsat, ASTER             | Tracking glacier extent, mass balance, and retreat rates                                                    |
-| Air quality                            | Sentinel-5P (TROPOMI)      | Monitoring atmospheric concentrations of $\mathrm{NO_2}$$\mathrm{SO_2}$$\mathrm{O_3}$And particulate matter |
+| Air quality                            | Sentinel-5P (TROPOMI)      | Monitoring atmospheric concentrations of $\mathrm{NO_2}$, $\mathrm{SO_2}$, $\mathrm{O_3}$And particulate matter |
 
 ### Normalised Difference Vegetation Index (NDVI)
 

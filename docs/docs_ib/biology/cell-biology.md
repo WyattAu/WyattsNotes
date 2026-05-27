@@ -107,7 +107,7 @@ Membrane is a dynamic, two-dimensional fluid of phospholipids in which proteins 
 #### Simple Diffusion
 
 Passive movement of molecules from a region of higher concentration to lower concentration, down the
-Concentration gradient. Only small, non-polar molecules ($\mathrm{O}_2$$\mathrm{CO}_2$Steroid
+Concentration gradient. Only small, non-polar molecules ($\mathrm{O}_2$, $\mathrm{CO}_2$Steroid
 Hormones) diffuse directly through the bilayer.
 
 **Fick's Law:**
@@ -361,7 +361,7 @@ Surface-area-to-volume ratio. Explain why cells are generally small.
 <details>
 <summary>Answer</summary>
 
-For a sphere: $A = 4\pi r^2$$V = \frac{4}{3}\pi r^3$.
+For a sphere: $A = 4\pi r^2$, $V = \frac{4}{3}\pi r^3$.
 
 $A = 4\pi(5)^2 = 100\pi \approx 314\;\mathrm{\mu m}^2$
 
@@ -837,8 +837,8 @@ The fluidity of the cell membrane depends on:
 
 **Integral (transmembrane) proteins:**
 
-- **Channel proteins**: form hydrophilic pores for specific ions ($\mathrm{Na}^+$$\mathrm{K}^+$
-  $\mathrm{Ca}^{2+}$$\mathrm{Cl}^-$). Can be gated (voltage-gated, ligand-gated, mechanically-gated)
+- **Channel proteins**: form hydrophilic pores for specific ions ($\mathrm{Na}^+$, $\mathrm{K}^+$
+  $\mathrm{Ca}^{2+}$, $\mathrm{Cl}^-$). Can be gated (voltage-gated, ligand-gated, mechanically-gated)
   or ungated (leak channels).
 - **Carrier proteins (transporters)**: undergo conformational change to shuttle substances across.
   Include uniporters, symporters (co-transport in same direction), and antiporters (co-transport in
@@ -878,9 +878,9 @@ The process of breaking open cells and separating organelles by differential cen
    organelle structure) using a homogeniser or sonication.
 2. **Differential centrifugation**:
 
-- Low speed ($1000\;\mathrm{g}$$10\;\mathrm{min}$): nuclei and unbroken cells pellet.
-- Medium speed ($10000\;\mathrm{g}$$20\;\mathrm{min}$): mitochondria, lysosomes, peroxisomes pellet.
-- High speed ($100000\;\mathrm{g}$$60\;\mathrm{min}$): ribosomes, microsomes (ER fragments) pellet.
+- Low speed ($1000\;\mathrm{g}$, $10\;\mathrm{min}$): nuclei and unbroken cells pellet.
+- Medium speed ($10000\;\mathrm{g}$, $20\;\mathrm{min}$): mitochondria, lysosomes, peroxisomes pellet.
+- High speed ($100000\;\mathrm{g}$, $60\;\mathrm{min}$): ribosomes, microsomes (ER fragments) pellet.
 - Supernatant: cytosol (soluble proteins and enzymes).
 
 ### Microscopy Techniques
@@ -1406,7 +1406,7 @@ prenylation, Myristoylation). Examples: alkaline phosphatase (GPI-anchored), Ras
 
 | Type                       | Direction         | Energy         | Carrier                    | Example                                                                               |
 | -------------------------- | ----------------- | -------------- | -------------------------- | ------------------------------------------------------------------------------------- |
-| Simple diffusion           | High to low conc. | None (passive) | None                       | $\mathrm{O}_2$$\mathrm{CO}_2$Ethanol, steroid hormones                                |
+| Simple diffusion           | High to low conc. | None (passive) | None                       | $\mathrm{O}_2$, $\mathrm{CO}_2$Ethanol, steroid hormones                                |
 | Facilitated diffusion      | High to low conc. | None (passive) | Channel or carrier protein | Glucose (via GLUT transporters), $\mathrm{Na}^+$ (via leak channels)                  |
 | Primary active transport   | Low to high conc. | ATP            | Pump protein               | $\mathrm{Na}^+/K^+$ pump, $\mathrm{Ca}^{2+}$ pump, $\mathrm{H}^+/K^+$ pump            |
 | Secondary active transport | Low to high conc. | Ion gradient   | Symporter or antiporter    | $\mathrm{Na}^+$/glucose symporter (SGLT1), $\mathrm{Na}^+/\mathrm{Ca}^{2+}$ exchanger |
@@ -1459,10 +1459,10 @@ $$V_m = \frac{RT}{F}\ln\frac{P_{\mathrm{Na}}[\mathrm{Na}^+]_{out} + P_{\mathrm{K
 
 At $37^\circ\mathrm{C}$ ($RT/F = 26.7\;\mathrm{mV}$), with:
 
-- $[\mathrm{Na}^+]_{out} = 145\;\mathrm{mM}$$[\mathrm{Na}^+]_{in} = 12\;\mathrm{mM}$
-- $[\mathrm{K}^+]_{out} = 4\;\mathrm{mM}$$[\mathrm{K}^+]_{in} = 155\;\mathrm{mM}$
-- $[\mathrm{Cl}^-]_{out} = 110\;\mathrm{mM}$$[\mathrm{Cl}^-]_{in} = 4\;\mathrm{mM}$
-- $P_{\mathrm{Na}} = 0.04$$P_{\mathrm{K}} = 1.0$$P_{\mathrm{Cl}} = 0.45$
+- $[\mathrm{Na}^+]_{out} = 145\;\mathrm{mM}$, $[\mathrm{Na}^+]_{in} = 12\;\mathrm{mM}$
+- $[\mathrm{K}^+]_{out} = 4\;\mathrm{mM}$, $[\mathrm{K}^+]_{in} = 155\;\mathrm{mM}$
+- $[\mathrm{Cl}^-]_{out} = 110\;\mathrm{mM}$, $[\mathrm{Cl}^-]_{in} = 4\;\mathrm{mM}$
+- $P_{\mathrm{Na}} = 0.04$, $P_{\mathrm{K}} = 1.0$, $P_{\mathrm{Cl}} = 0.45$
 
 Calculate the resting membrane potential.
 

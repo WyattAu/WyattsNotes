@@ -168,7 +168,7 @@ In component form:
 
 $$\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} + \lambda\begin{pmatrix} d_1 \\ d_2 \\ d_3 \end{pmatrix}$$
 
-This gives parametric equations: $x = a_1 + \lambda d_1$$y = a_2 + \lambda d_2$
+This gives parametric equations: $x = a_1 + \lambda d_1$, $y = a_2 + \lambda d_2$
 $z = a_3 + \lambda d_3$.
 
 ### Cartesian (Symmetric) Form
@@ -320,7 +320,7 @@ Find the vector equation of the line through $A(1, -2, 3)$ and $B(4, 1, -1)$.
 <details>
 <summary>Problem 3</summary>
 
-Find the Cartesian equation of the plane through $(1, 0, 2)$$(3, -1, 1)$And $(2, 1, -1)$.
+Find the Cartesian equation of the plane through $(1, 0, 2)$, $(3, -1, 1)$And $(2, 1, -1)$.
 
 </details>
 
@@ -334,7 +334,7 @@ Find the distance from the point $P(3, 1, -2)$ to the plane $2x - y + 3z = 4$.
 <details>
 <summary>Problem 5</summary>
 
-Find the area of the triangle with vertices $A(1, 2, 3)$$B(4, 1, 0)$$C(2, -1, 5)$.
+Find the area of the triangle with vertices $A(1, 2, 3)$, $B(4, 1, 0)$, $C(2, -1, 5)$.
 
 </details>
 
@@ -379,10 +379,10 @@ Plane: $4(x - 1) + 4(y - 0) + 3(z - 2) = 0$I.e. $4x + 4y + 3z = 10$.
 **Problem 4:**
 $D = \dfrac{|2(3) - 1(1) + 3(-2) - 4|}{\sqrt{4 + 1 + 9}} = \dfrac{|6 - 1 - 6 - 4|}{\sqrt{14}} = \dfrac{5}{\sqrt{14}}$
 
-**Problem 5:** $\overrightarrow{AB} = (3, -1, -3)$$\overrightarrow{AC} = (1, -3, 2)$. Area
+**Problem 5:** $\overrightarrow{AB} = (3, -1, -3)$, $\overrightarrow{AC} = (1, -3, 2)$. Area
 $= \dfrac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}| = \dfrac{1}{2}|(-11, -9, -8)| = \dfrac{\sqrt{121 + 81 + 64}}{2} = \dfrac{\sqrt{266}}{2}$.
 
-**Problem 7:** Substituting $x = 1 + 3t$$y = 2 - t$$z = -1 + 2t$ into $x + 2y - z = 5$:
+**Problem 7:** Substituting $x = 1 + 3t$, $y = 2 - t$, $z = -1 + 2t$ into $x + 2y - z = 5$:
 $(1 + 3t) + 2(2 - t) - (-1 + 2t) = 5 \implies 6 - t = 5 \implies t = 1$. Intersection point:
 $(4, 1, 1)$.
 
@@ -434,7 +434,7 @@ The shortest distance between two skew lines is given by:
 
 $$d = \frac{|(\mathbf{a}_2 - \mathbf{a}_1) \cdot (\mathbf{d}_1 \times \mathbf{d}_2)|}{|\mathbf{d}_1 \times \mathbf{d}_2|}$$
 
-$\mathbf{a}_2 - \mathbf{a}_1 = (1, -1, 0)$$\mathbf{d}_1 = (1, 2, 3)$$\mathbf{d}_2 = (2, 3, 4)$.
+$\mathbf{a}_2 - \mathbf{a}_1 = (1, -1, 0)$, $\mathbf{d}_1 = (1, 2, 3)$, $\mathbf{d}_2 = (2, 3, 4)$.
 
 $\mathbf{d}_1 \times \mathbf{d}_2 = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 2 & 3 \\ 2 & 3 & 4 \end{vmatrix} = (8 - 9)\,\mathbf{i} - (4 - 6)\,\mathbf{j} + (3 - 4)\,\mathbf{k} = (-1, 2, -1)$
 
@@ -448,7 +448,7 @@ $$d = \frac{|-3|}{\sqrt{6}} = \frac{3}{\sqrt{6}} = \frac{\sqrt{6}}{2}$$
 
 **Worked Example: Plane Through Three Points with Verification**
 
-Find the Cartesian equation of the plane through $A(2, 1, -1)$$B(0, 3, 2)$$C(1, -1, 1)$And verify
+Find the Cartesian equation of the plane through $A(2, 1, -1)$, $B(0, 3, 2)$, $C(1, -1, 1)$And verify
 That all three points satisfy the equation.
 
 <details>
@@ -490,7 +490,7 @@ $$\mathbf{d} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 1 & -
 
 To find a point on the line, set $z = 0$:
 
-$x + y = 3$ and $2x - y = 1$. Adding: $3x = 4 \implies x = 4/3$$y = 3 - 4/3 = 5/3$.
+$x + y = 3$ and $2x - y = 1$. Adding: $3x = 4 \implies x = 4/3$, $y = 3 - 4/3 = 5/3$.
 
 A point on the line is $\left(\dfrac{4}{3}, \dfrac{5}{3}, 0\right)$.
 
@@ -547,7 +547,7 @@ $\mathbf{b}$ perpendicular to $\mathbf{a}$.
 <summary>Problem 10</summary>
 
 Find the volume of the parallelepiped with edges $\overrightarrow{OA} = (1, 2, 3)$
-$\overrightarrow{OB} = (4, -1, 0)$$\overrightarrow{OC} = (2, 1, -2)$.
+$\overrightarrow{OB} = (4, -1, 0)$, $\overrightarrow{OC} = (2, 1, -2)$.
 
 </details>
 
@@ -562,7 +562,7 @@ $2x - y + z = 5$.
 <details>
 <summary>Problem 12</summary>
 
-Points $A(1, 2, 0)$$B(3, 1, 4)$$C(0, -1, 2)$$D(2, 0, 6)$ are given. Show that $\overrightarrow{AB}$
+Points $A(1, 2, 0)$, $B(3, 1, 4)$, $C(0, -1, 2)$, $D(2, 0, 6)$ are given. Show that $\overrightarrow{AB}$
 Is parallel to $\overrightarrow{CD}$ and find the distance between the parallel lines $AB$ and $CD$.
 
 </details>
@@ -587,7 +587,7 @@ Acute angle between the lines.
 <details>
 <summary>Problem 15</summary>
 
-A pyramid has a square base $ABCD$ with $A = (0, 0, 0)$$B = (4, 0, 0)$$C = (4, 4, 0)$
+A pyramid has a square base $ABCD$ with $A = (0, 0, 0)$, $B = (4, 0, 0)$, $C = (4, 4, 0)$
 $D = (0, 4, 0)$And apex $V = (2, 2, 6)$. Find the angle between the face $VAB$ and the base $ABCD$.
 
 </details>
@@ -605,14 +605,14 @@ $\mathbf{b} \times \mathbf{c} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathb
 $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 1(2) + 2(8) + 3(6) = 2 + 16 + 18 = 36$.
 $V = |36| = 36$.
 
-**Problem 11:** $\mathbf{d} = (1, 3, 1)$$\mathbf{n} = (2, -1, 1)$.
+**Problem 11:** $\mathbf{d} = (1, 3, 1)$, $\mathbf{n} = (2, -1, 1)$.
 $\sin\alpha = \dfrac{|(1)(2) + (3)(-1) + (1)(1)|}{|(1,3,1)||(2,-1,1)|} = \dfrac{|2 - 3 + 1|}{\sqrt{11}\cdot\sqrt{6}} = \dfrac{0}{\sqrt{66}} = 0$.
 The angle is $0^\circ$Meaning the line is parallel to (lies in) the plane. Verification: the point
 $(1, 0, -2)$ lies on the line and $2(1) - 0 + (-2) = 0 \ne 5$So the line is parallel to but not In
 the plane.
 
-**Problem 12:** $\overrightarrow{AB} = (2, -1, 4)$$\overrightarrow{CD} = (2, 1, 4)$. These are not
-Parallel (not scalar multiples). Rechecking: $D = (2, 0, 6)$$C = (0, -1, 2)$So
+**Problem 12:** $\overrightarrow{AB} = (2, -1, 4)$, $\overrightarrow{CD} = (2, 1, 4)$. These are not
+Parallel (not scalar multiples). Rechecking: $D = (2, 0, 6)$, $C = (0, -1, 2)$So
 $\overrightarrow{CD} = (2 - 0, 0 - (-1), 6 - 2) = (2, 1, 4)$. Since $(2, -1, 4)$ and $(2, 1, 4)$ Are
 not multiples, the lines are not parallel. The problem statement cannot be verified as stated.
 
@@ -629,7 +629,7 @@ $R$: $0 - 1 + (-1) = -2 \ne 8$. No single plane is equidistant from $P$ $Q$ and 
 unless $R$ lies on the perpendicular bisector. Since $R$ does not satisfy $x - y + z = 8$The problem
 has no solution.
 
-**Problem 14:** Equating: $2 + \lambda = 4 + 2\mu$$-1 + 2\lambda = -5 - \mu$$3 - \lambda = 5 + \mu$.
+**Problem 14:** Equating: $2 + \lambda = 4 + 2\mu$, $-1 + 2\lambda = -5 - \mu$, $3 - \lambda = 5 + \mu$.
 From equation 1: $\lambda = 2 + 2\mu$. From equation 3:
 $3 - (2 + 2\mu) = 5 + \mu \implies 1 - 2\mu = 5 + \mu \implies -3\mu = 4 \implies \mu = -4/3$.
 $\lambda = 2 + 2(-4/3) = -2/3$. Check equation 2: $-1 + 2(-2/3) = -1 - 4/3 = -7/3$. RHS:
@@ -637,7 +637,7 @@ $-5 - (-4/3) = -5 + 4/3 = -11/3$. Since $-7/3 \ne -11/3$The lines do not actuall
 problem as stated is incorrect.
 
 **Problem 15:** Face $VAB$ has normal $\overrightarrow{VA} \times \overrightarrow{VB}$.
-$\overrightarrow{VA} = (-2, -2, -6)$$\overrightarrow{VB} = (2, -2, -6)$.
+$\overrightarrow{VA} = (-2, -2, -6)$, $\overrightarrow{VB} = (2, -2, -6)$.
 $\overrightarrow{VA} \times \overrightarrow{VB} = (12 - 12, -(12 - 12), 4 - (-4)) = (0, 0, 8)$.
 Normal to $VAB$: $(0, 0, 1)$ (simplified). Normal to base: $(0, 0, 1)$. The angle between the face
 and the base: $\cos\theta = \dfrac{|(0)(0) + (0)(0) + (1)(1)|}{1 \cdot 1} = 1$So $\theta = 0^\circ$.

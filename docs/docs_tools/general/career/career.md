@@ -819,7 +819,7 @@ ANNUAL_REFRESH=0.10  # 10% annual refresh
 
 # Current value (if fully vested)
 TOTAL_VALUE=$(echo "$SHARES * ($CURRENT_PRICE - $STRIKE_PRICE)" | bc)
-echo "Total equity value: \$$TOTAL_VALUE"
+echo "Total equity value: \$, $TOTAL_VALUE"
 
 # Per-year value (ignoring refresh)
 YEARLY_VALUE=$(echo "$TOTAL_VALUE / $VESTING_YEARS" | bc)

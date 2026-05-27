@@ -271,7 +271,7 @@ $$p + q = 1$$
 
 $$p^2 + 2pq + q^2 = 1$$
 
-Where $p^2$ = frequency of genotype $AA$$2pq$ = frequency of genotype $Aa$$q^2$ = frequency of
+Where $p^2$ = frequency of genotype $AA$, $2pq$ = frequency of genotype $Aa$, $q^2$ = frequency of
 Genotype $aa$.
 
 **Conditions for Hardy-Weinberg equilibrium:**
@@ -395,14 +395,14 @@ combined With fossil evidence.
 ### 7.1 Multiple Alleles
 
 When a gene has more than two alleles, the Hardy-Weinberg principle is extended. For three alleles
-with Frequencies $p$$q$And $r$:
+with Frequencies $p$, $q$And $r$:
 
 $$p + q + r = 1$$
 
 $$p^2 + q^2 + r^2 + 2pq + 2pr + 2qr = 1$$
 
-**Worked Example.** The ABO blood group system has three alleles: $I^A$$I^B$And $i$. Their
-frequencies In a population are $p = 0.3$$q = 0.1$$r = 0.6$.
+**Worked Example.** The ABO blood group system has three alleles: $I^A$, $I^B$And $i$. Their
+frequencies In a population are $p = 0.3$, $q = 0.1$, $r = 0.6$.
 
 Genotype frequencies:
 
@@ -436,7 +436,7 @@ The number of allele frequencies estimated from the data. For a two-allele syste
 $q$ Are estimated: $\mathrm{df} = 3 - 1 - 1 = 1$.
 
 **Worked Example.** In a population of 1000, the observed genotypes for a two-allele system are:
-$AA = 420$$Aa = 400$$aa = 180$.
+$AA = 420$, $Aa = 400$, $aa = 180$.
 
 Step 1: Calculate allele frequencies from observed data.
 
@@ -641,7 +641,7 @@ Relationships.
 <details>
 <summary>Problem 7</summary>
 A population of 1000 individuals of a flowering plant has the following genotype frequencies for a
-Gene with two alleles ($F$ and $f$): $FF = 490$$Ff = 420$$ff = 90$. (a) Calculate the allele
+Gene with two alleles ($F$ and $f$): $FF = 490$, $Ff = 420$, $ff = 90$. (a) Calculate the allele
 Frequencies. (b) Use the chi-squared test to determine whether the population is in Hardy-Weinberg
 Equilibrium. (c) Suggest a possible biological explanation if the population is not in equilibrium.
 
@@ -950,7 +950,7 @@ years:
 | 1    | 360  | 480  | 160  | 1000  | 0.60      | 0.40      |
 | 2    | 324  | 432  | 144  | 900   | 0.60      | 0.40      |
 
-The allele frequencies have not changed ($p = 0.60$$q = 0.40$ in both years). The population appears
+The allele frequencies have not changed ($p = 0.60$, $q = 0.40$ in both years). The population appears
 to be in Hardy-Weinberg equilibrium.
 
 **Chi-squared test:** expected values in Year 2 based on H-W: $p^2 \times 900 = 324$ ($BB$),
@@ -1539,7 +1539,7 @@ Where $S$ = number of species; $A$ = area; $c$ and $z$ are constants ($z$ is 0.2
 **Implication:** if a habitat is reduced in size by 90%, the number of species will be reduced by
 approximately 50%. This is why habitat loss is the single greatest threat to biodiversity.
 
-**Example:** if a forest of $100\ \mathrm{km^2}$ contains 500 species ($c = 100$$z = 0.35$):
+**Example:** if a forest of $100\ \mathrm{km^2}$ contains 500 species ($c = 100$, $z = 0.35$):
 
 $$S_1 = 100 \times 100^{0.35} = 100 \times 22.4 = 2240$$
 
@@ -1606,7 +1606,7 @@ Degrees of freedom = $n_1 + n_2 - 2$.
 
 **Example:** Soil pH is measured in two fields.
 
-Field A: $\bar{x}_1 = 6.2$$s_1 = 0.8$$n_1 = 10$. Field B: $\bar{x}_2 = 5.1$$s_2 = 0.7$$n_2 = 10$.
+Field A: $\bar{x}_1 = 6.2$, $s_1 = 0.8$, $n_1 = 10$. Field B: $\bar{x}_2 = 5.1$, $s_2 = 0.7$, $n_2 = 10$.
 
 $$t = \frac◆LB◆|6.2 - 5.1|◆RB◆◆LB◆\sqrt{\frac{0.64}{10} + \frac{0.49}{10}}◆RB◆ = \frac◆LB◆1.1◆RB◆◆LB◆\sqrt{0.113}◆RB◆ = \frac{1.1}{0.336} = 3.27$$
 

@@ -481,8 +481,8 @@ When comparing two box plots:
 - Compare the ranges
 - Comment on skewness (if the median is closer to $Q_1$ or $Q_3$)
 
-**Worked Example.** Class A has median 65, $Q_1 = 50$$Q_3 = 75$. Class B has median 60,
-$Q_1 = 45$$Q_3 = 70$.
+**Worked Example.** Class A has median 65, $Q_1 = 50$, $Q_3 = 75$. Class B has median 60,
+$Q_1 = 45$, $Q_3 = 70$.
 
 Class A has a higher median (65 vs 60), so on average they scored better. Class A also has a
 Narrower IQR ($75 - 50 = 25$ vs $70 - 45 = 25$), so both classes have the same spread by this
@@ -523,7 +523,7 @@ Independent (because $P(A \cap B) = 0 \neq P(A) \times P(B)$ when both are posit
 
 **Example.** A card is drawn from a standard 52-card deck. Let $A$ be "the card is a heart" and $B$
 Be "the card is a king". These events are NOT mutually exclusive (the king of hearts is both), but
-They ARE independent: $P(A) = 13/52 = 1/4$$P(B) = 4/52 = 1/13$And
+They ARE independent: $P(A) = 13/52 = 1/4$, $P(B) = 4/52 = 1/13$And
 $P(A \cap B) = 1/52 = (1/4)(1/13)$.
 
 ### 9.2 Why the Standard Deviation Uses Squared Differences
@@ -576,11 +576,11 @@ Tree diagrams are useful for visualising multi-stage experiments where events ar
 **Worked Example.** A bag contains 4 red and 6 blue counters. Two counters are drawn without
 Replacement. Find the probability that both are the same colour.
 
-First draw: $P(\mathrm{red) = 4/10 = 0.4$$P(\mathrm{blue) = 6/10 = 0.6$.
+First draw: $P(\mathrm{red) = 4/10 = 0.4$, $P(\mathrm{blue) = 6/10 = 0.6$.
 
-Second draw (if first was red): $P(\mathrm{red) = 3/9 = 1/3$$P(\mathrm{blue) = 6/9 = 2/3$.
+Second draw (if first was red): $P(\mathrm{red) = 3/9 = 1/3$, $P(\mathrm{blue) = 6/9 = 2/3$.
 
-Second draw (if first was blue): $P(\mathrm{red) = 4/9$$P(\mathrm{blue) = 5/9$.
+Second draw (if first was blue): $P(\mathrm{red) = 4/9$, $P(\mathrm{blue) = 5/9$.
 
 $$
 P(\mathrm{both red) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}
@@ -628,7 +628,7 @@ The area under a frequency polygon equals the total frequency (just like a histo
 1. The mean of six numbers is 12. When one number is removed, the mean of the remaining five is 10.
    Find the removed number.
 
-2. A grouped frequency table has classes $0 \leq x \lt 20$$20 \leq x \lt 40$$40 \leq x \lt 60$
+2. A grouped frequency table has classes $0 \leq x \lt 20$, $20 \leq x \lt 40$, $40 \leq x \lt 60$
    $60 \leq x \lt 80$. Explain why an estimated mean calculated from this table is only an
    approximation.
 
@@ -646,7 +646,7 @@ The area under a frequency polygon equals the total frequency (just like a histo
 
 8. A histogram has a bar of width 4 and height 3.5. What frequency does this bar represent?
 
-9. Two events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And $P(A \cup B) = 0.8$. Are $A$ and
+9. Two events $A$ and $B$ are such that $P(A) = 0.6$, $P(B) = 0.5$And $P(A \cup B) = 0.8$. Are $A$ and
    $B$ independent? Justify your answer.
 
 10. The heights of 100 students are summarised in a cumulative frequency table. Explain how you
@@ -663,7 +663,7 @@ The area under a frequency polygon equals the total frequency (just like a histo
 14. Two classes took the same test. Class A: median 55, IQR 20. Class B: median 52, IQR 30. Compare
     the performance of the two classes.
 
-15. In a Venn diagram for events $A$ and $B$$P(A) = 0.7$$P(B) = 0.5$And $P(A \mid B) = 0.6$. Find
+15. In a Venn diagram for events $A$ and $B$, $P(A) = 0.7$, $P(B) = 0.5$And $P(A \mid B) = 0.6$. Find
     $P(A \cap B)$ and $P(A \cup B)$.
 
 16. A fair coin is tossed 5 times. Find the probability of getting at least 3 heads.

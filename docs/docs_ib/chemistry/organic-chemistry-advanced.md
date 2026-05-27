@@ -388,11 +388,11 @@ The carbocation intermediate is stable.
 An unknown compound has molecular formula $\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$. Its IR spectrum
 Shows a broad peak at $3000\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. Its
 $\mathrm{^1H}$ NMR spectrum shows: $\delta\ 1.2\ (d,\ 3\mathrm{H})$
-$\delta\ 4.1\ (q,\ 1\mathrm{H})$$\delta\ 11.0\ (s,\ 1\mathrm{H})$And a singlet at $\delta\ 2.0$ That
+$\delta\ 4.1\ (q,\ 1\mathrm{H})$, $\delta\ 11.0\ (s,\ 1\mathrm{H})$And a singlet at $\delta\ 2.0$ That
 integrates to $1\mathrm{H}$.
 
 Wait — the formula only has 6 H. Let me correct: $\delta\ 1.2\ (d,\ 3\mathrm{H})$
-$\delta\ 2.5\ (q,\ 2\mathrm{H})$$\delta\ 11.5\ (s,\ 1\mathrm{H})$. Identify the compound.
+$\delta\ 2.5\ (q,\ 2\mathrm{H})$, $\delta\ 11.5\ (s,\ 1\mathrm{H})$. Identify the compound.
 
 **Solution:**
 
@@ -428,7 +428,7 @@ Repeating unit: $-\mathrm{OCH_2CH_2CH_2OOCCH_2CH_2CO}-$
 
 A compound $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$ shows the following spectra. IR: strong peak at
 $1700\mathrm{ cm}^{-1}$No broad O--H. $\mathrm{^1H}$ NMR: $\delta\ 1.0\ (t,\ 3\mathrm{H})$
-$\delta\ 1.6\ (m,\ 2\mathrm{H})$$\delta\ 2.1\ (s,\ 3\mathrm{H})$ $\delta\ 2.3\ (t,\ 2\mathrm{H})$.
+$\delta\ 1.6\ (m,\ 2\mathrm{H})$, $\delta\ 2.1\ (s,\ 3\mathrm{H})$ $\delta\ 2.3\ (t,\ 2\mathrm{H})$.
 Identify the compound.
 
 **Solution:**
@@ -496,7 +496,7 @@ Assign the absolute configuration (R or S) to the stereocentre in $\mathrm{CH_3C
 
 **Step 1: Identify the stereocentre.**
 
-Carbon-2 is bonded to four different groups: $-\mathrm{H}$$-\mathrm{Cl}$$-\mathrm{CH_3}$
+Carbon-2 is bonded to four different groups: $-\mathrm{H}$, $-\mathrm{Cl}$, $-\mathrm{CH_3}$
 $-\mathrm{CH_2CH_3}$.
 
 **Step 2: Assign CIP priorities.**
@@ -583,7 +583,7 @@ The repeating unit has lost 4 H and 2 O relative to the monomers (two ester link
 A compound $\mathrm{C}_8\mathrm{H}_8\mathrm{O}$ has the following spectra. IR:
 $3060\mathrm{ cm}^{-1}$ (medium), $1690\mathrm{ cm}^{-1}$ (strong), $1600\mathrm{ cm}^{-1}$
 (medium), $1580\mathrm{ cm}^{-1}$ (medium), $750\mathrm{ cm}^{-1}$ (strong). $^{1}\mathrm{H}$ NMR:
-$\delta\ 7.5$--$7.9\ (m,\ 5\mathrm{H})$$\delta\ 3.9\ (s,\ 2\mathrm{H})$. MS: $\mathrm{M}^+ = 120$.
+$\delta\ 7.5$--$7.9\ (m,\ 5\mathrm{H})$, $\delta\ 3.9\ (s,\ 2\mathrm{H})$. MS: $\mathrm{M}^+ = 120$.
 Identify the compound.
 
 <details>
@@ -600,7 +600,7 @@ DBE = 5 is consistent with a benzene ring (DBE = 4) plus one additional unsatura
 - $3060\mathrm{ cm}^{-1}$: aromatic C--H stretch (above $3000\mathrm{ cm}^{-1}$ confirms sp2 C--H).
 - $1690\mathrm{ cm}^{-1}$: C=O stretch (slightly below $1700$Suggesting conjugation with the
   aromatic ring).
-- $1600$$1580\mathrm{ cm}^{-1}$: aromatic C=C stretches.
+- $1600$, $1580\mathrm{ cm}^{-1}$: aromatic C=C stretches.
 - $750\mathrm{ cm}^{-1}$: mono-substituted benzene (ortho-disubstituted shows near
   $750\mathrm{ cm}^{-1}$But combined with other evidence, this suggests a single substituent on the
   benzene ring).
@@ -731,7 +731,7 @@ Product: propan-2-ol ($\mathrm{CH_3CH(OH)CH_3}$). Minor elimination product: pro
 
 2. A compound $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ shows IR absorptions at $1720\mathrm{ cm}^{-1}$
    (strong) and $2720\mathrm{ cm}^{-1}$ (weak). $^{1}\mathrm{H}$ NMR:
-   $\delta\ 1.2\ (d,\ 3\mathrm{H})$$\delta\ 2.5\ (q,\ 1\mathrm{H})$
+   $\delta\ 1.2\ (d,\ 3\mathrm{H})$, $\delta\ 2.5\ (q,\ 1\mathrm{H})$
    $\delta\ 9.7\ (d,\ 1\mathrm{H})$. Identify the compound and explain the splitting pattern of the
    signal at $\delta\ 9.7$. **[Medium]**
 
@@ -744,9 +744,9 @@ Product: propan-2-ol ($\mathrm{CH_3CH(OH)CH_3}$). Minor elimination product: pro
    predominantly 2-methylpropene. Reference the relevant mechanisms in your answer. **[Hard]**
 
 5. A compound $\mathrm{C}_9\mathrm{H}_{10}\mathrm{O}$ has the following spectra. IR:
-   $3050\mathrm{ cm}^{-1}$$1700\mathrm{ cm}^{-1}$$1600$$1580$$1470\mathrm{ cm}^{-1}$
+   $3050\mathrm{ cm}^{-1}$, $1700\mathrm{ cm}^{-1}$, $1600$, $1580$, $1470\mathrm{ cm}^{-1}$
    $690\mathrm{ cm}^{-1}$. $^{1}\mathrm{H}$ NMR: $\delta\ 2.6\ (s,\ 3\mathrm{H})$
-   $\delta\ 7.5$--$8.0\ (m,\ 5\mathrm{H})$$\delta\ 9.9\ (s,\ 2\mathrm{H})$. MS:
+   $\delta\ 7.5$--$8.0\ (m,\ 5\mathrm{H})$, $\delta\ 9.9\ (s,\ 2\mathrm{H})$. MS:
    $\mathrm{M}^+ = 134$. Identify the compound. **[Hard]**
 
 6. (a) Assign the CIP priority to each group on the stereocentre of 3-bromopentan-2-ol. (b)
@@ -759,8 +759,8 @@ Product: propan-2-ol ($\mathrm{CH_3CH(OH)CH_3}$). Minor elimination product: pro
 
 8. Deduce the structure of a compound $\mathrm{C}_7\mathrm{H}_{14}\mathrm{O}$ given: IR:
    $3400\mathrm{ cm}^{-1}$ (broad), $2950\mathrm{ cm}^{-1}$ (sharp), no C=O absorption.
-   $^{1}\mathrm{H}$ NMR: $\delta\ 0.9\ (t,\ 6\mathrm{H})$$\delta\ 1.4\ (m,\ 4\mathrm{H})$
-   $\delta\ 1.6\ (s,\ 2\mathrm{H})$$\delta\ 2.4\ (t,\ 2\mathrm{H})$. The signal at $\delta\ 1.6$
+   $^{1}\mathrm{H}$ NMR: $\delta\ 0.9\ (t,\ 6\mathrm{H})$, $\delta\ 1.4\ (m,\ 4\mathrm{H})$
+   $\delta\ 1.6\ (s,\ 2\mathrm{H})$, $\delta\ 2.4\ (t,\ 2\mathrm{H})$. The signal at $\delta\ 1.6$
    disappears upon $\mathrm{D}_2\mathrm{O}$ addition. **[Hard]**
 
 ---

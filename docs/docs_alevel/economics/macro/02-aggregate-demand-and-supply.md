@@ -268,15 +268,15 @@ $$\mathrm{Long-run equilibrium: } AD = SRAS = LRAS \mathrm{ at } (Y^*, P_{LR})$$
 **Positive demand shock** (e.g., increase in consumer confidence):
 
 1. AD shifts right
-2. SR: $Y \uparrow$$P \uparrow$
-3. LR: wages adjust $\Rightarrow$ SRAS shifts left $\Rightarrow$ $Y$ returns to $Y^*$$P$ rises
+2. SR: $Y \uparrow$, $P \uparrow$
+3. LR: wages adjust $\Rightarrow$ SRAS shifts left $\Rightarrow$ $Y$ returns to $Y^*$, $P$ rises
    further
 
 **Negative demand shock** (e.g., financial crisis):
 
 1. AD shifts left
-2. SR: $Y \downarrow$$P \downarrow$
-3. LR: wages adjust $\Rightarrow$ SRAS shifts right $\Rightarrow$ $Y$ returns to $Y^*$$P$ falls
+2. SR: $Y \downarrow$, $P \downarrow$
+3. LR: wages adjust $\Rightarrow$ SRAS shifts right $\Rightarrow$ $Y$ returns to $Y^*$, $P$ falls
    further
 
 ### 3.4 Supply-Side Shocks
@@ -284,7 +284,7 @@ $$\mathrm{Long-run equilibrium: } AD = SRAS = LRAS \mathrm{ at } (Y^*, P_{LR})$$
 **Negative supply shock** (e.g., oil price increase):
 
 1. SRAS shifts left
-2. $Y \downarrow$$P \uparrow$ (stagflation — simultaneous rise in inflation and fall in output)
+2. $Y \downarrow$, $P \uparrow$ (stagflation — simultaneous rise in inflation and fall in output)
 
 This is the worst outcome for policymakers because the standard tools are contradictory:
 Expansionary policy to raise output worsens inflation; contractionary policy to reduce inflation
@@ -494,7 +494,7 @@ The price of oil. Why is this particularly problematic for policymakers?
 
 <details>
 <summary>Hint</summary>
-SR: SRAS shifts left $\Rightarrow Y$ falls, $P$ rises (stagflation). LR: high unemployment puts downward pressure on wages $\Rightarrow$ SRAS shifts right $\Rightarrow Y$ returns to $Y^*$$P$ returns to original level. Problematic because in the short run, expansionary policy (AD shift right) would raise $Y$ but worsen inflation, while contractionary policy would reduce inflation but worsen the recession. Policymakers face a difficult trade-off.
+SR: SRAS shifts left $\Rightarrow Y$ falls, $P$ rises (stagflation). LR: high unemployment puts downward pressure on wages $\Rightarrow$ SRAS shifts right $\Rightarrow Y$ returns to $Y^*$, $P$ returns to original level. Problematic because in the short run, expansionary policy (AD shift right) would raise $Y$ but worsen inflation, while contractionary policy would reduce inflation but worsen the recession. Policymakers face a difficult trade-off.
 </details>
 
 **Problem 4.** Prove the paradox of thrift. Assume MPC = 0.8, full-employment income = £1,000bn, and
@@ -528,7 +528,7 @@ Process.
 
 <details>
 <summary>Hint</summary>
-$1000 - 2P = -500 + 5P \Rightarrow 1500 = 7P \Rightarrow P = 214.3$$Y = 571.4$. Output gap $= 1000 - 571.4 = 428.6$ (recessionary gap). LR: high unemployment $\Rightarrow$ wages fall $\Rightarrow$ SRAS shifts right (parallel shift). New SRAS: $Y = -500 + \delta + 5P$ where $\delta$ is chosen so that $Y^* = 1000$ at the new equilibrium. At $Y = 1000$: $P = 0$ from AD, which is unrealistic. In practice, the SRAS shifts right until it intersects AD at $Y^* = 1000$. From AD: $1000 = 1000 - 2P \Rightarrow P = 0$. The model breaks down at extreme values, but the mechanism is correct conceptually.
+$1000 - 2P = -500 + 5P \Rightarrow 1500 = 7P \Rightarrow P = 214.3$, $Y = 571.4$. Output gap $= 1000 - 571.4 = 428.6$ (recessionary gap). LR: high unemployment $\Rightarrow$ wages fall $\Rightarrow$ SRAS shifts right (parallel shift). New SRAS: $Y = -500 + \delta + 5P$ where $\delta$ is chosen so that $Y^* = 1000$ at the new equilibrium. At $Y = 1000$: $P = 0$ from AD, which is unrealistic. In practice, the SRAS shifts right until it intersects AD at $Y^* = 1000$. From AD: $1000 = 1000 - 2P \Rightarrow P = 0$. The model breaks down at extreme values, but the mechanism is correct conceptually.
 </details>
 
 **Problem 8.** Explain the accelerator effect. Why might a small slowdown in GDP growth cause a
@@ -544,7 +544,7 @@ Using the AD/AS model and the concept of crowding out.
 
 <details>
 <summary>Hint</summary>
-SR: AD shifts right $\Rightarrow Y \uparrow$$P \uparrow$. LR: if the economy was below $Y^*$The increase in $Y$ is sustainable. If the economy was at or near $Y^*$SRAS shifts left as wages rise, returning $Y$ to $Y^*$ with only higher prices. Crowding out: increased government borrowing raises interest rates, reducing private investment $\Rightarrow$ AD may not shift by the full amount of the spending increase. The net effect on growth depends on: (1) the size of the output gap, (2) the multiplier, (3) the degree of crowding out.
+SR: AD shifts right $\Rightarrow Y \uparrow$, $P \uparrow$. LR: if the economy was below $Y^*$The increase in $Y$ is sustainable. If the economy was at or near $Y^*$SRAS shifts left as wages rise, returning $Y$ to $Y^*$ with only higher prices. Crowding out: increased government borrowing raises interest rates, reducing private investment $\Rightarrow$ AD may not shift by the full amount of the spending increase. The net effect on growth depends on: (1) the size of the output gap, (2) the multiplier, (3) the degree of crowding out.
 </details>
 
 **Problem 10.** Compare and contrast demand-pull and cost-push inflation using AD/AS diagrams.
@@ -552,7 +552,7 @@ Explain why central banks respond differently to each type.
 
 <details>
 <summary>Hint</summary>
-Demand-pull: AD shifts right $\Rightarrow P \uparrow$$Y \uparrow$. Central bank raises interest rates to reduce AD and bring it back. Cost-push: SRAS shifts left $\Rightarrow P \uparrow$$Y \downarrow$. Raising interest rates (reducing AD further) would worsen the recession. Central banks face a dilemma: accommodating the shock (leaving rates) accepts higher inflation; fighting it (raising rates) deepens the recession. The appropriate response depends on whether the shock is temporary (best to look through it) or permanent (may need to tighten).
+Demand-pull: AD shifts right $\Rightarrow P \uparrow$, $Y \uparrow$. Central bank raises interest rates to reduce AD and bring it back. Cost-push: SRAS shifts left $\Rightarrow P \uparrow$, $Y \downarrow$. Raising interest rates (reducing AD further) would worsen the recession. Central banks face a dilemma: accommodating the shock (leaving rates) accepts higher inflation; fighting it (raising rates) deepens the recession. The appropriate response depends on whether the shock is temporary (best to look through it) or permanent (may need to tighten).
 </details>
 
 **Problem 11.** A small open economy with a high marginal propensity to import (MPM = 0.4) is
@@ -561,7 +561,7 @@ Policy compared with a larger, more closed economy (MPM = 0.1).
 
 <details>
 <summary>Hint</summary>
-Small open economy: $k = 1/(MPS + MPT + 0.4)$. If $MPS = 0.1$$MPT = 0.1$: $k = 1/0.6 = 1.67$. Large closed economy: $k = 1/(0.1 + 0.1 + 0.1) = 3.33$. The small open economy's multiplier is half as large. Much of the fiscal stimulus leaks abroad through imports (the foreign country benefits more). Fiscal policy is less effective in small open economies, which is why they rely more on monetary policy and exchange rate adjustments.
+Small open economy: $k = 1/(MPS + MPT + 0.4)$. If $MPS = 0.1$, $MPT = 0.1$: $k = 1/0.6 = 1.67$. Large closed economy: $k = 1/(0.1 + 0.1 + 0.1) = 3.33$. The small open economy's multiplier is half as large. Much of the fiscal stimulus leaks abroad through imports (the foreign country benefits more). Fiscal policy is less effective in small open economies, which is why they rely more on monetary policy and exchange rate adjustments.
 </details>
 
 **Problem 12.** Using the multiplier-accelerator model, explain how an economy might experience a
@@ -578,9 +578,9 @@ And the price level. Evaluate the extent to which the initial boost to output is
 
 <details>
 <summary>Hint</summary>
-SR: AD shifts right $\Rightarrow Y \uparrow$$P \uparrow$Employment rises as firms hire more
+SR: AD shifts right $\Rightarrow Y \uparrow$, $P \uparrow$Employment rises as firms hire more
 Workers to meet increased demand. LR: as $Y > Y^*$The labour market tightens, wages rise, SRAS
-Shifts left $\Rightarrow Y$ returns to $Y^*$$P$ rises further, employment returns to the natural
+Shifts left $\Rightarrow Y$ returns to $Y^*$, $P$ rises further, employment returns to the natural
 Rate. Evaluation: the initial boost is temporary. Sustainability depends on whether the confidence
 Shock also stimulates investment (shifting LRAS right). If higher confidence leads to more capital
 Accumulation, $Y^*$ could increase permanently. However, if the shock is purely demand-driven with
@@ -688,34 +688,34 @@ Demands, creating a wage-price spiral.
 $Y^* = 500$.
 
 **Step 1: Initial equilibrium.**
-$800 - 4P = 2P - 200 \Rightarrow 1000 = 6P \Rightarrow P = 166.67$$Y = 133.33$.
+$800 - 4P = 2P - 200 \Rightarrow 1000 = 6P \Rightarrow P = 166.67$, $Y = 133.33$.
 
 This is a deep recessionary gap: $500 - 133.33 = 366.67$.
 
 **Step 2: Positive demand shock (AD shifts right by 200).** New AD: $Y = 1000 - 4P$.
-$1000 - 4P = 2P - 200 \Rightarrow 1200 = 6P \Rightarrow P = 200$$Y = 200$.
+$1000 - 4P = 2P - 200 \Rightarrow 1200 = 6P \Rightarrow P = 200$, $Y = 200$.
 
 Still below $Y^* = 500$But the output gap has narrowed.
 
 **Step 3: AD shifts right by 600 (to reach potential output).** New AD: $Y = 1400 - 4P$.
-$1400 - 4P = 2P - 200 \Rightarrow 1600 = 6P \Rightarrow P = 266.67$$Y = 333.33$. Still a gap. The AD
+$1400 - 4P = 2P - 200 \Rightarrow 1600 = 6P \Rightarrow P = 266.67$, $Y = 333.33$. Still a gap. The AD
 curve intersects SRAS at a price of 266.67 with $Y = 333.33$.
 
 Wait -- let me recalculate. At $Y = 500$: $500 = 1400 - 4P \Rightarrow P = 225$.
 $SRAS: 500 = 2(225) - 200 = 250$. This does not work -- $500 \neq 250$. The AD and SRAS do not
-intersect at $Y = 500$ because the SRAS intercept ($P = 100$$Y = 0$) is too low. This means the
+intersect at $Y = 500$ because the SRAS intercept ($P = 100$, $Y = 0$) is too low. This means the
 economy cannot reach $Y^*$ through AD shifts alone -- supply-side policy is needed to shift SRAS
 right.
 
 **Step 4: Supply-side policy (SRAS shifts right by 250).** New SRAS: $Y = 2P - 450$.
-$1400 - 4P = 2P - 450 \Rightarrow 1850 = 6P \Rightarrow P = 308.33$$Y = 166.67$. Still not enough.
+$1400 - 4P = 2P - 450 \Rightarrow 1850 = 6P \Rightarrow P = 308.33$, $Y = 166.67$. Still not enough.
 
 Let me reconsider with better numbers. Let SRAS shift to: $Y = 2P - 50$.
-$1400 - 4P = 2P - 50 \Rightarrow 1450 = 6P \Rightarrow P = 241.67$$Y = 433.33$. Closer.
+$1400 - 4P = 2P - 50 \Rightarrow 1450 = 6P \Rightarrow P = 241.67$, $Y = 433.33$. Closer.
 
-New SRAS: $Y = 2P$. $1400 - 4P = 2P \Rightarrow 1400 = 6P \Rightarrow P = 233.33$$Y = 466.67$.
+New SRAS: $Y = 2P$. $1400 - 4P = 2P \Rightarrow 1400 = 6P \Rightarrow P = 233.33$, $Y = 466.67$.
 
-New SRAS: $Y = 2P + 50$. $1400 - 4P = 2P + 50 \Rightarrow 1350 = 6P \Rightarrow P = 225$$Y = 500$.
+New SRAS: $Y = 2P + 50$. $1400 - 4P = 2P + 50 \Rightarrow 1350 = 6P \Rightarrow P = 225$, $Y = 500$.
 The output gap is closed.
 
 This demonstrates that demand-side policy alone was insufficient; supply-side policy was also
@@ -727,11 +727,11 @@ needed.
 Original SRAS: $Y = 3P - 300$. Original AD: $Y = 1200 - 6P$.
 
 **Original equilibrium:**
-$1200 - 6P = 3P - 300 \Rightarrow 1500 = 9P \Rightarrow P = 166.67$$Y = 600 = Y^*$. Confirmed at
+$1200 - 6P = 3P - 300 \Rightarrow 1500 = 9P \Rightarrow P = 166.67$, $Y = 600 = Y^*$. Confirmed at
 full employment.
 
 **Negative supply shock: SRAS shifts left by 150.** New SRAS: $Y = 3P - 450$.
-$1200 - 6P = 3P - 450 \Rightarrow 1650 = 9P \Rightarrow P = 183.33$$Y = 100$.
+$1200 - 6P = 3P - 450 \Rightarrow 1650 = 9P \Rightarrow P = 183.33$, $Y = 100$.
 
 The economy has moved from $Y = 600$ to $Y = 100$ -- a devastating recession. Simultaneously, the
 price level has risen from 166.67 to 183.33 -- this is stagflation (rising inflation with falling
@@ -788,9 +788,9 @@ promoting long-run economic growth." Evaluate this statement using the AD/AS fra
 
 **Analysis of demand-side policies (10 marks):**
 
-- Demand-side policies shift AD right (fiscal: $G \uparrow$$T \downarrow$; monetary:
+- Demand-side policies shift AD right (fiscal: $G \uparrow$, $T \downarrow$; monetary:
   $r \downarrow$).
-- Short-run effect: $Y \uparrow$$P \uparrow$. Effective for closing a recessionary output gap.
+- Short-run effect: $Y \uparrow$, $P \uparrow$. Effective for closing a recessionary output gap.
 - Long-run effect: SRAS shifts left (wages adjust upward), returning $Y$ to $Y^*$. Only the price
   level changes permanently.
 - No permanent effect on the growth RATE -- only on the LEVEL of output.
@@ -817,7 +817,7 @@ output gap. (c) Calculate the size of the AD shift needed.
 <details>
 <summary>Full Mark Scheme</summary>
 **(a) Short-run equilibrium (3 marks).**
-$900 - 3P = 4P - 300 \Rightarrow 1200 = 7P \Rightarrow P = 171.43$$Y = 385.71$.
+$900 - 3P = 4P - 300 \Rightarrow 1200 = 7P \Rightarrow P = 171.43$, $Y = 385.71$.
 
 **(b) Policy (3 marks).** Output gap $= 500 - 385.71 = 114.29$. The economy has a recessionary gap.
 Expansionary fiscal or monetary policy is needed to shift AD right to intersect SRAS at $Y = 500$.
@@ -827,7 +827,7 @@ In the long run, supply-side policies to shift LRAS right would also be benefici
 $500 = 4P - 300 \Rightarrow P = 200$. AD must pass through $(200, 500)$. New AD: $Y = a - 3P$. At
 $(200, 500)$: $500 = a - 600 \Rightarrow a = 1100$. New AD: $Y = 1100 - 3P$. Original AD had
 intercept 900. The AD curve must shift right by $1100 - 900 = 200$ at every price level.
-Alternatively: required $\Delta Y = 114.29$. With multiplier $k$$\Delta A = 114.29/k$.
+Alternatively: required $\Delta Y = 114.29$. With multiplier $k$, $\Delta A = 114.29/k$.
 
 </details>
 
@@ -836,7 +836,7 @@ Alternatively: required $\Delta Y = 114.29$. With multiplier $k$$\Delta A = 114.
 ### 10.1 The Keynesian Cross: Full Numerical Analysis
 
 **Example.** Planned aggregate expenditure: $AE = C + I + G + NX$.
-$C = 100 + 0.75Y_d$$T = 50 + 0.2Y$$I = 200$$G = 250$$NX = 50 - 0.1Y$.
+$C = 100 + 0.75Y_d$, $T = 50 + 0.2Y$, $I = 200$, $G = 250$, $NX = 50 - 0.1Y$.
 
 **Equilibrium condition:** $Y = AE$.
 
@@ -887,7 +887,7 @@ on how investment responds to the change in income.
 **Example.** An economy at full employment ($Y^* = 1000$) is hit by an oil price shock.
 
 **Initial equilibrium:** AD: $Y = 1200 - 2P$SRAS: $Y = 4P - 400$LRAS: $Y = 1000$.
-$1200 - 2P = 4P - 400 \Rightarrow 1600 = 6P \Rightarrow P = 266.67$$Y = 666.67$.
+$1200 - 2P = 4P - 400 \Rightarrow 1600 = 6P \Rightarrow P = 266.67$, $Y = 666.67$.
 
 Wait, this is not at full employment. Let me adjust. Let me find SRAS that passes through
 $Y = 1000$: $1000 = 4P - 400 \Rightarrow P = 350$. AD at $Y = 1000$:
@@ -896,30 +896,30 @@ $1000 = 1200 - 2P \Rightarrow P = 100$.
 These do not agree. Let me construct a consistent model.
 
 AD: $Y = 1400 - 2P$. SRAS: $Y = 3P - 500$.
-$1400 - 2P = 3P - 500 \Rightarrow 1900 = 5P \Rightarrow P = 380$$Y = 640$. Not at full employment.
+$1400 - 2P = 3P - 500 \Rightarrow 1900 = 5P \Rightarrow P = 380$, $Y = 640$. Not at full employment.
 Let me set LRAS at 640.
 
 Actually, let me just choose numbers that work:
 
 AD: $Y = 1600 - 2P$. SRAS: $Y = 2P - 200$. LRAS: $Y^* = 600$.
-$1600 - 2P = 2P - 200 \Rightarrow 1800 = 4P \Rightarrow P = 450$$Y = 700$. Output gap:
+$1600 - 2P = 2P - 200 \Rightarrow 1800 = 4P \Rightarrow P = 450$, $Y = 700$. Output gap:
 $700 - 600 = 100$ (inflationary gap).
 
 Let me try again with full employment:
 
 AD: $Y = 1000 - P$. SRAS: $Y = 2P - 400$. LRAS: $Y^* = 500$.
-$1000 - P = 2P - 400 \Rightarrow 1400 = 3P \Rightarrow P = 466.67$$Y = 533.33$. Close to full
+$1000 - P = 2P - 400 \Rightarrow 1400 = 3P \Rightarrow P = 466.67$, $Y = 533.33$. Close to full
 employment. Let me accept this and proceed.
 
 **Oil price shock: SRAS shifts left by 150.** New SRAS: $Y = 2P - 550$.
-$1000 - P = 2P - 550 \Rightarrow 1550 = 3P \Rightarrow P = 516.67$$Y = 483.33$.
+$1000 - P = 2P - 550 \Rightarrow 1550 = 3P \Rightarrow P = 516.67$, $Y = 483.33$.
 
 Output has fallen from 533.33 to 483.33 (-50). Price level has risen from 466.67 to 516.67 (+50).
 This is stagflation.
 
 **Policy option 1: Do nothing (classical approach).** High unemployment puts downward pressure on
 wages. SRAS gradually shifts right back to its original position. After several years, the economy
-returns to $Y = 533.33$$P = 466.67$ (or even lower, as deflation occurs). The cost: several years of
+returns to $Y = 533.33$, $P = 466.67$ (or even lower, as deflation occurs). The cost: several years of
 unemployment and lost output.
 
 **Policy option 2: Expansionary fiscal policy (shift AD right).** AD shifts right to restore output
@@ -930,7 +930,7 @@ Wait, I need AD to intersect the new SRAS at $Y = 533.33$: $533.33 = a - P$ and
 $533.33 = 2P - 550 \Rightarrow P = 541.67$. $a = 533.33 + 541.67 = 1075$. New AD: $Y = 1075 - P$. AD
 has shifted right by 75.
 
-New equilibrium: $Y = 533.33$$P = 541.67$. Output is restored, but the price level is HIGHER (541.67
+New equilibrium: $Y = 533.33$, $P = 541.67$. Output is restored, but the price level is HIGHER (541.67
 vs 466.67 before the shock). The fiscal expansion has traded output for inflation.
 
 **Policy option 3: Expansionary monetary policy.** Similar to option 2: lower interest rates shift
@@ -1045,17 +1045,17 @@ In reality, the cycles are damped by:
 **Shock 1: Oil price doubles (from USD 60 to USD 120 per barrel).**
 
 Initial equilibrium: AD: $Y = 800 - P$SRAS: $Y = 2P - 200$LRAS: $Y^* = 450$.
-$800 - P = 2P - 200 \Rightarrow P = 333.33$$Y = 466.67$.
+$800 - P = 2P - 200 \Rightarrow P = 333.33$, $Y = 466.67$.
 
 SRAS shifts left by 100 (higher production costs). New SRAS: $Y = 2P - 300$.
-$800 - P = 2P - 300 \Rightarrow P = 366.67$$Y = 433.33$.
+$800 - P = 2P - 300 \Rightarrow P = 366.67$, $Y = 433.33$.
 
 Output has fallen (433 vs 467) and prices have risen (367 vs 333). This is stagflation.
 
 **Shock 2: Workers demand higher wages to compensate for higher prices.**
 
 Wages rise, shifting SRAS further left by 50. New SRAS: $Y = 2P - 350$.
-$800 - P = 2P - 350 \Rightarrow P = 383.33$$Y = 416.67$.
+$800 - P = 2P - 350 \Rightarrow P = 383.33$, $Y = 416.67$.
 
 Another round of stagflation: output falls further, prices rise further.
 
@@ -1140,7 +1140,7 @@ increases.
 
 **Step 2: Multiplier effect.** The initial increase in $G$ generates additional rounds of spending
 via the multiplier: $\Delta Y = k \Delta G$ where $k = \frac{1}{1 - MPC(1-t) + MPM}$. With UK
-parameters ($MPC \approx 0.6$$t \approx 0.25$$MPM \approx 0.3$): $k \approx 1.18$. The multiplier is
+parameters ($MPC \approx 0.6$, $t \approx 0.25$, $MPM \approx 0.3$): $k \approx 1.18$. The multiplier is
 small because of high import leakage.
 
 **Step 3: Short-run outcome.** Real GDP rises and the price level rises (demand-pull inflation). The

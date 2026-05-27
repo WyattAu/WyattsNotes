@@ -765,7 +765,7 @@ $\mathrm{KCl}$) and polar molecules (sugars, amino acids, many proteins). This e
 - Transport of dissolved substances in blood (glucose, amino acids, urea, hormones, ions).
 - Nutrient uptake from soil by root hairs (mineral ions dissolved in soil water).
 
-**Non-polar molecules** (lipids, steroid hormones, $\mathrm{O}_2$$\mathrm{CO}_2$) are poorly Soluble
+**Non-polar molecules** (lipids, steroid hormones, $\mathrm{O}_2$, $\mathrm{CO}_2$) are poorly Soluble
 in water and require transport proteins or carriers (e.g., lipoproteins for cholesterol).
 
 ### Water Density and Ice Formation
@@ -1162,7 +1162,7 @@ amino acids.
 **Worked Example: Competitive and Non-Competitive Inhibition Graphically**
 
 An enzyme has $K_m = 5.0\;\mathrm{mM}$ and $V_{max} = 100\;\mathrm{\mu mol/min}$. A competitive
-Inhibitor at $2.0\;\mathrm{mM}$ gives $K_m^{app} = 15.0\;\mathrm{mM}$$V_{max}^{app} = 100$. A
+Inhibitor at $2.0\;\mathrm{mM}$ gives $K_m^{app} = 15.0\;\mathrm{mM}$, $V_{max}^{app} = 100$. A
 non-competitive inhibitor at $5.0\;\mathrm{mM}$ gives $K_m^{app} = 5.0\;\mathrm{mM}$
 $V_{max}^{app} = 50$. (a) Sketch the Michaelis-Menten curves for all three conditions. (b) Calculate
 The initial velocity ($v$) at $[S] = 5.0\;\mathrm{mM}$ for each condition. (c) Calculate the
@@ -1306,7 +1306,7 @@ Temperatures, peptide bonds may also break.
 protonated (or basic groups deprotonated), disrupting ionic bonds and salt bridges. This changes the
 charge Distribution, causing unfolding.
 
-**Heavy metals** (e.g., $\mathrm{Hg}^{2+}$$\mathrm{Pb}^{2+}$$\mathrm{Ag}^+$): bind to sulfhydryl
+**Heavy metals** (e.g., $\mathrm{Hg}^{2+}$, $\mathrm{Pb}^{2+}$, $\mathrm{Ag}^+$): bind to sulfhydryl
 Groups ($-\mathrm{SH}$) of cysteine residues, forming strong covalent or coordination bonds that
 disrupt Disulphide bridges and the active site geometry of enzymes. Heavy metals can also bind to
 carboxyl and Amino groups, disrupting ionic bonds.
@@ -1470,14 +1470,14 @@ PCR amplifies a specific DNA sequence exponentially. Components:
 
 **Three-step cycle** (repeated $25$--$35$ times):
 
-1. **Denaturation** ($94$--$98^\circ\mathrm{C}$$30\;\mathrm{s}$): hydrogen bonds break, separating
+1. **Denaturation** ($94$--$98^\circ\mathrm{C}$, $30\;\mathrm{s}$): hydrogen bonds break, separating
    the double-stranded DNA into single strands.
 
-2. **Annealing** ($50$--$65^\circ\mathrm{C}$$30\;\mathrm{s}$): primers hybridise (bind) to their
+2. **Annealing** ($50$--$65^\circ\mathrm{C}$, $30\;\mathrm{s}$): primers hybridise (bind) to their
    complementary sequences on the single-stranded template. The annealing temperature depends on the
    primer sequences ( $3$--$5^\circ\mathrm{C}$ below the primer $T_m$).
 
-3. **Extension** ($72^\circ\mathrm{C}$$1\;\mathrm{min/kb}$): Taq polymerase extends the primers,
+3. **Extension** ($72^\circ\mathrm{C}$, $1\;\mathrm{min/kb}$): Taq polymerase extends the primers,
    synthesising new DNA strands complementary to the template.
 
 **Result**: after $n$ cycles, $2^n$ copies of the target are produced (plus the original template).
@@ -1534,7 +1534,7 @@ $1500$). Disease allele: single fragment of $3001\;\mathrm{bp}$ (3000 bp gene + 
 
 - If the patient is homozygous normal: 2 bands at $1500\;\mathrm{bp}$.
 - If the patient is homozygous disease: 1 band at $3001\;\mathrm{bp}$.
-- If the patient is heterozygous: 3 bands at $3001$$1500$And $1500\;\mathrm{bp}$.
+- If the patient is heterozygous: 3 bands at $3001$, $1500$And $1500\;\mathrm{bp}$.
 
 This is a simple form of RFLP analysis. In practice, PCR amplification of the region followed by
 Restriction digestion (PCR-RFLP) is more commonly used for diagnostic testing, as it requires less

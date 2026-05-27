@@ -133,7 +133,7 @@ significance.
 
 (a) For Hooke's law to apply, force must be proportional to extension (constant gradient).
 
-Checking ratios: $F/x = 1.0/15 = 0.067$$2.0/35 = 0.057$$3.0/60 = 0.050$$4.0/90 = 0.044$
+Checking ratios: $F/x = 1.0/15 = 0.067$, $2.0/35 = 0.057$, $3.0/60 = 0.050$, $4.0/90 = 0.044$
 
 The ratio decreases, so the rubber band **does not obey Hooke's law** at any point during loading.
 The spring constant (gradient) continuously decreases, meaning the rubber becomes easier to stretch
@@ -300,7 +300,7 @@ $$U = \int_0^L u(y) \times A\,dy = \frac{A}{2E}\int_0^L (\rho g y)^2\,dy = \frac
 
 $$= \frac◆LB◆1.0 \times 10^{-6} \times (7800)^2 \times (9.81)^2 \times 1000◆RB◆◆LB◆6 \times 2.0 \times 10^{11}◆RB◆$$
 
-Where $7800^2 = 6.084 \times 10^7$$9.81^2 = 96.24$$L^3 = 1000$:
+Where $7800^2 = 6.084 \times 10^7$, $9.81^2 = 96.24$, $L^3 = 1000$:
 
 $$= \frac◆LB◆1.0 \times 10^{-6} \times 6.084 \times 10^7 \times 96.24 \times 10^3◆RB◆◆LB◆6 \times 2.0 \times 10^{11}◆RB◆ = \frac◆LB◆5.855 \times 10^6◆RB◆◆LB◆1.2 \times 10^{12}◆RB◆ = 4.879 \times 10^{-6}\,\text{J}$$
 

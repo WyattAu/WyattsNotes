@@ -276,7 +276,7 @@ $\blacksquare$
 
 ### $u$-Substitution
 
-If $\displaystyle\int f(g(x)) \cdot g'(x)\, dx$Let $u = g(x)$$du = g'(x)\, dx$:
+If $\displaystyle\int f(g(x)) \cdot g'(x)\, dx$Let $u = g(x)$, $du = g'(x)\, dx$:
 
 $$
 \int f(u)\, du = F(u) + C = F(g(x)) + C
@@ -289,7 +289,7 @@ Spot $f(g(x))$ and $g'(x)$Set $u = g(x)$.
 
 Evaluate $\displaystyle\int 2x e^{x^2}\, dx$.
 
-Let $u = x^2$$du = 2x\, dx$:
+Let $u = x^2$, $du = 2x\, dx$:
 
 $$
 \int 2x e^{x^2}\, dx = \int e^u\, du = e^u + C = e^{x^2} + C
@@ -301,7 +301,7 @@ $$
 
 Evaluate $\displaystyle\int \frac{x}{x^2 + 1}\, dx$.
 
-Let $u = x^2 + 1$$du = 2x\, dx$Giving $\frac{1}{2}du = x\, dx$:
+Let $u = x^2 + 1$, $du = 2x\, dx$Giving $\frac{1}{2}du = x\, dx$:
 
 $$
 \int \frac{x}{x^2 + 1}\, dx = \frac{1}{2}\int \frac{1}{u}\, du = \frac{1}{2}\ln|u| + C = \frac{1}{2}\ln(x^2 + 1) + C
@@ -313,7 +313,7 @@ $$
 
 Evaluate $\displaystyle\int \frac{\ln x}{x}\, dx$.
 
-Let $u = \ln x$$du = \frac{1}{x}\, dx$:
+Let $u = \ln x$, $du = \frac{1}{x}\, dx$:
 
 $$
 \int \frac{\ln x}{x}\, dx = \int u\, du = \frac{u^2}{2} + C = \frac{(\ln x)^2}{2} + C
@@ -333,7 +333,7 @@ $$
 
 Evaluate $\displaystyle\int_0^1 x\sqrt{1 + x^2}\, dx$.
 
-Let $u = 1 + x^2$$du = 2x\, dx$. When $x = 0$$u = 1$. When $x = 1, u = 2$.
+Let $u = 1 + x^2$, $du = 2x\, dx$. When $x = 0$, $u = 1$. When $x = 1, u = 2$.
 
 $$
 \int_0^1 x\sqrt{1 + x^2}\, dx = \frac{1}{2}\int_1^2 \sqrt{u}\, du = \frac{1}{2}\left[\frac{2u^{3/2}}{3}\right]_1^2 = \frac{1}{3}(2\sqrt{2} - 1)
@@ -345,7 +345,7 @@ $$
 
 Evaluate $\displaystyle\int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx$.
 
-Let $u = 1 + x^2$$du = 2x\, dx$. When $x = 0$$u = 1$. When $x = 1$$u = 2$.
+Let $u = 1 + x^2$, $du = 2x\, dx$. When $x = 0$, $u = 1$. When $x = 1$, $u = 2$.
 
 $$
 \int_0^1 \frac{2x}{\sqrt{1 + x^2}}\, dx = \int_1^2 u^{-1/2}\, du = \left[2\sqrt{u}\right]_1^2 = 2\sqrt{2} - 2
@@ -367,14 +367,14 @@ Parts to reduce their degree.
 
 **Tabular integration (DI method).** For integrals of the form $\displaystyle\int f(x)g(x)\, dx$
 Where $f(x)$ is a polynomial and $g(x)$ has an repeatable derivative pattern, use a table. Label
-columns D (derivatives of $f$) and I (integrals of $g$), alternating signs $+$$-$$+$$-$. The result
+columns D (derivatives of $f$) and I (integrals of $g$), alternating signs $+$, $-$, $+$, $-$. The result
 is the sum of diagonal products.
 
 :::info[Example]
 
 Evaluate $\displaystyle\int x e^x\, dx$.
 
-Let $u = x$$dv = e^x\, dx$. Then $du = dx$$v = e^x$.
+Let $u = x$, $dv = e^x\, dx$. Then $du = dx$, $v = e^x$.
 
 $$
 \int x e^x\, dx = xe^x - \int e^x\, dx = xe^x - e^x + C = e^x(x - 1) + C
@@ -386,14 +386,14 @@ $$
 
 Evaluate $\displaystyle\int x^2 e^x\, dx$.
 
-Let $u = x^2$$dv = e^x\, dx$. Then $du = 2x\, dx$$v = e^x$.
+Let $u = x^2$, $dv = e^x\, dx$. Then $du = 2x\, dx$, $v = e^x$.
 
 $$
 = x^2 e^x - \int 2x e^x\, dx
 $$
 
-Apply integration by parts again for $\int 2x e^x\, dx$. Let $u = 2x$$dv = e^x\, dx$
-$du = 2\, dx$$v = e^x$:
+Apply integration by parts again for $\int 2x e^x\, dx$. Let $u = 2x$, $dv = e^x\, dx$
+$du = 2\, dx$, $v = e^x$:
 
 $$
 \int 2x e^x\, dx = 2xe^x - 2e^x + C
@@ -421,7 +421,7 @@ Result: $x^2 e^x - 2xe^x + 2e^x = e^x(x^2 - 2x + 2)$. Confirmed.
 
 Evaluate $\displaystyle\int \ln x\, dx$.
 
-Let $u = \ln x$$dv = dx$. Then $du = \frac{1}{x}dx$$v = x$.
+Let $u = \ln x$, $dv = dx$. Then $du = \frac{1}{x}dx$, $v = x$.
 
 $$
 \int \ln x\, dx = x\ln x - \int x \cdot \frac{1}{x}\, dx = x\ln x - x + C
@@ -433,7 +433,7 @@ $$
 
 Evaluate $\displaystyle\int_0^{\pi/2} x\sin x\, dx$.
 
-Let $u = x$$dv = \sin x\, dx$$du = dx$$v = -\cos x$.
+Let $u = x$, $dv = \sin x\, dx$, $du = dx$, $v = -\cos x$.
 
 $$
 = [-x\cos x]_0^{\pi/2} - \int_0^{\pi/2} (-\cos x)\, dx = \left(0 + \frac{\pi}{2}\cos 0\right) - [-\sin x]_0^{\pi/2} = \frac{\pi}{2} - 1
@@ -508,7 +508,7 @@ $$
 
 Evaluate $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx$.
 
-Let $u = x^2$$du = 2x\, dx$:
+Let $u = x^2$, $du = 2x\, dx$:
 
 $$
 \int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}\int_0^{\infty} e^{-u}\, du = \frac{1}{2}\left[-e^{-u}\right]_0^{\infty} = \frac{1}{2}(0 + 1) = \frac{1}{2}
@@ -555,7 +555,7 @@ Find the area between $y = x^2$ and $y = 2x$.
 
 Find intersections: $x^2 = 2x$So $x^2 - 2x = 0$Giving $x = 0$ and $x = 2$.
 
-Between $x = 0$ and $x = 2$$2x \ge x^2$.
+Between $x = 0$ and $x = 2$, $2x \ge x^2$.
 
 $$
 A = \int_0^2 (2x - x^2)\, dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
@@ -588,7 +588,7 @@ Of rotation. Use the shell method when integrating parallel to the axis of rotat
 
 :::info[Example]
 
-Find the volume of the solid obtained by rotating $y = \sqrt{x}$$y = 0$$x = 4$ about the $x$-axis.
+Find the volume of the solid obtained by rotating $y = \sqrt{x}$, $y = 0$, $x = 4$ about the $x$-axis.
 
 Using the disk method:
 
@@ -613,8 +613,8 @@ $$
 
 :::info[Example]
 
-Find the volume of the solid obtained by rotating the region bounded by $y = e^{-x}$$y = 0$
-$x = 0$$x = 1$ about the $x$-axis.
+Find the volume of the solid obtained by rotating the region bounded by $y = e^{-x}$, $y = 0$
+$x = 0$, $x = 1$ about the $x$-axis.
 
 Using the disk method:
 
@@ -662,7 +662,7 @@ $$
 L = \int_0^3 \sqrt{1 + x}\, dx
 $$
 
-Let $u = 1 + x$$du = dx$:
+Let $u = 1 + x$, $du = dx$:
 
 $$
 L = \int_1^4 \sqrt{u}\, du = \left[\frac{2u^{3/2}}{3}\right]_1^4 = \frac{2}{3}(8 - 1) = \frac{14}{3}
@@ -707,7 +707,7 @@ $$
 
 4. Find the area between $y = x^2$ and $y = 2x$.
 
-5. Find the volume of the solid obtained by rotating the region bounded by $y = x^2$$y = 0$ $x = 1$
+5. Find the volume of the solid obtained by rotating the region bounded by $y = x^2$, $y = 0$ $x = 1$
    about the $y$-axis. (Use the shell method.)
 
 6. Determine whether $\displaystyle\int_0^{\infty} e^{-x}\, dx$ converges, and find its value if it
@@ -723,7 +723,7 @@ $$
 
 11. Evaluate $\displaystyle\int_1^e \frac{\ln x}{x}\, dx$.
 
-12. Find the volume when the region bounded by $y = e^{-x}$$y = 0$$x = 0$$x = 1$ is rotated about
+12. Find the volume when the region bounded by $y = e^{-x}$, $y = 0$, $x = 0$, $x = 1$ is rotated about
     the $x$-axis.
 
 13. Evaluate $\displaystyle\int_0^1 \frac{1}{1 + x^2}\, dx$ and explain the result geometrically.
@@ -770,7 +770,7 @@ Evaluate $\displaystyle\int \frac{x^2}{\sqrt{9 - x^2}} \, dx$.
 <details>
 <summary>Answer</summary>
 
-Let $x = 3\sin\theta$$dx = 3\cos\theta \, d\theta$$\sqrt{9 - x^2} = 3\cos\theta$.
+Let $x = 3\sin\theta$, $dx = 3\cos\theta \, d\theta$, $\sqrt{9 - x^2} = 3\cos\theta$.
 
 $= \int \frac{9\sin^2\theta}{3\cos\theta} \cdot 3\cos\theta \, d\theta = 9\int \sin^2\theta \, d\theta = 9\int \frac{1 - \cos 2\theta}{2} \, d\theta$
 
@@ -792,9 +792,9 @@ Find the area enclosed by the curves $y = x^2$ and $y = 2x + 3$.
 <details>
 <summary>Answer</summary>
 
-Intersection: $x^2 = 2x + 3$$x^2 - 2x - 3 = 0$$(x-3)(x+1) = 0$. $x = -1$ and $x = 3$.
+Intersection: $x^2 = 2x + 3$, $x^2 - 2x - 3 = 0$, $(x-3)(x+1) = 0$. $x = -1$ and $x = 3$.
 
-On $[-1, 3]$$2x + 3 \ge x^2$.
+On $[-1, 3]$, $2x + 3 \ge x^2$.
 
 Area $= \int_{-1}^{3} [(2x + 3) - x^2] \, dx = \left[x^2 + 3x - \frac{x^3}{3}\right]_{-1}^{3}$
 
@@ -830,7 +830,7 @@ The integral converges if and only if $p \gt 1$With value $\frac{1}{p-1}$.
 <details>
 <summary>Question 5: Volume of revolution</summary>
 
-Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$$y = 0$And $x = 4$ about
+Find the volume obtained by rotating the region bounded by $y = \sqrt{x}$, $y = 0$And $x = 4$ about
 the x-axis.
 
 </details>

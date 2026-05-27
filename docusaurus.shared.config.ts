@@ -75,10 +75,13 @@ export function createRemarkPluginsConfig(useEscapeJsxBraces = false) {
   const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
 
   return {
-    beforeDefaultRemarkPlugins: useEscapeJsxBraces
-      ? [remarkGridTable, escapeJsxBraces]
-      : [remarkGridTable],
-    remarkPlugins: [remarkMath, remarkCodeSnippets],
+    beforeDefaultRemarkPlugins: [remarkGridTable],
+    // remarkMath MUST run before escape-jsx-braces so that math/inlineMath
+    // nodes exist in the AST when the brace-escaping plugin processes them.
+    // The plugin restores diamond placeholders in math node values before KaTeX.
+    remarkPlugins: useEscapeJsxBraces
+      ? [remarkMath, escapeJsxBraces, remarkCodeSnippets]
+      : [remarkMath, remarkCodeSnippets],
   };
 }
 

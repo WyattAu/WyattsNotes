@@ -182,7 +182,7 @@ $$
 \Delta G^\circ = -RT\ln K
 $$
 
-Where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$$T$ is in Kelvin, and $K$ is the equilibrium Constant
+Where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $T$ is in Kelvin, and $K$ is the equilibrium Constant
 (dimensionless, using activities).
 
 This equation is one of the most powerful in chemistry because it connects thermodynamic data to
@@ -200,7 +200,7 @@ $$
 \mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)
 $$
 
-$\Delta H^\circ = -92\,\mathrm{kJ/mol}$$\Delta S^\circ = -199\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = -92\,\mathrm{kJ/mol}$, $\Delta S^\circ = -199\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta G^\circ = -92000 - 298 \times (-199) = -92000 + 59302 = -32698\,\mathrm{J/mol} = -32.7\,\mathrm{kJ/mol}
@@ -244,13 +244,13 @@ $$
 \mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)
 $$
 
-$\Delta H^\circ = +178\,\mathrm{kJ/mol}$$\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +178\,\mathrm{kJ/mol}$, $\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 T = \frac◆LB◆178 \times 10^3◆RB◆◆LB◆160◆RB◆ = 1113\,\mathrm{K} = 840^\circ\mathrm{C}
 $$
 
-Above $1113\,\mathrm{K}$$\Delta G^\circ \lt 0$ and decomposition is spontaneous. In a lime kiln,
+Above $1113\,\mathrm{K}$, $\Delta G^\circ \lt 0$ and decomposition is spontaneous. In a lime kiln,
 Temperatures of approximately $900$--$1000^\circ\mathrm{C}$ are used to ensure thermodynamic
 Feasibility while maintaining a practical rate.
 
@@ -297,7 +297,7 @@ Chatelier's principle and the Gibbs equation:
 - **Low temperature** favours the forward reaction (exothermic). But low temperature gives a slow
   rate.
 - **High pressure** favours the forward reaction (fewer gas moles on the product side).
-- **Compromise:** $450^\circ\mathrm{C}$$200\,\mathrm{atm}$With an iron catalyst.
+- **Compromise:** $450^\circ\mathrm{C}$, $200\,\mathrm{atm}$With an iron catalyst.
 
 ### The Contact Process
 
@@ -305,8 +305,8 @@ $$
 2\mathrm{SO}_2(g) + \mathrm{O}_2(g) \rightleftharpoons 2\mathrm{SO}_3(g) \quad \Delta H^\circ = -198\,\mathrm{kJ/mol}
 $$
 
-$\Delta H^\circ \lt 0$$\Delta S^\circ \lt 0$ (3 moles to 2 moles). Low temperature favours the
-Product but slows the rate. Industrial conditions: $450^\circ\mathrm{C}$$1$--$2\,\mathrm{atm}$
+$\Delta H^\circ \lt 0$, $\Delta S^\circ \lt 0$ (3 moles to 2 moles). Low temperature favours the
+Product but slows the rate. Industrial conditions: $450^\circ\mathrm{C}$, $1$--$2\,\mathrm{atm}$
 $\mathrm{V}_2\mathrm{O}_5$ catalyst.
 
 ### Extraction of Iron
@@ -349,7 +349,7 @@ Moles of gas products, but the solid is consumed). At the blast furnace temperat
 
 For the reaction $\mathrm{C}(s) + \mathrm{H}_2\mathrm{O}(g) \to \mathrm{CO}(g) + \mathrm{H}_2(g)$:
 
-$\Delta H^\circ = +131\,\mathrm{kJ/mol}$$\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +131\,\mathrm{kJ/mol}$, $\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$. Is the reaction spontaneous? (b) At what
 Temperature does the reaction become spontaneous? (c) Calculate $K$ at $1000\,\mathrm{K}$.
@@ -417,7 +417,7 @@ enthalpy cost of breaking the hydrogen-bonded lattice.
 For the reaction $2\mathrm{NO}_2(g) \rightleftharpoons \mathrm{N}_2\mathrm{O}_4(g)$ at
 $298\,\mathrm{K}$:
 
-$\Delta H^\circ = -57.2\,\mathrm{kJ/mol}$$\Delta S^\circ = -175.8\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = -57.2\,\mathrm{kJ/mol}$, $\Delta S^\circ = -175.8\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $\Delta G^\circ$ and $K_p$ at $298\,\mathrm{K}$. (b) At what temperature does
 $K_p = 1$? (c) Explain qualitatively whether increasing temperature increases or decreases the yield
@@ -498,7 +498,7 @@ $$
 $$
 
 $S^\circ$ values:
-$\mathrm{CH}_4(g) = 186.3$$\mathrm{O}_2(g) = 205.1$$\mathrm{CO}_2(g) = 213.7$$\mathrm{H}_2\mathrm{O}(l) = 69.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\mathrm{CH}_4(g) = 186.3$, $\mathrm{O}_2(g) = 205.1$, $\mathrm{CO}_2(g) = 213.7$, $\mathrm{H}_2\mathrm{O}(l) = 69.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta S^\circ = [213.7 + 2(69.9)] - [186.3 + 2(205.1)] = 353.5 - 596.5 = -243.0\,\mathrm{J\,mol^{-1}\,K^{-1}}
@@ -601,7 +601,7 @@ $$
 \mathrm{Ag}_2\mathrm{CO}_3(s) \to \mathrm{Ag}_2\mathrm{O}(s) + \mathrm{CO}_2(g)
 $$
 
-$\Delta H^\circ = +82\,\mathrm{kJ/mol}$$\Delta S^\circ = +170\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +82\,\mathrm{kJ/mol}$, $\Delta S^\circ = +170\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 $$
 \Delta G^\circ = 82000 - 500 \times 170 = 82000 - 85000 = -3000\,\mathrm{J/mol}
@@ -732,7 +732,7 @@ proceeds to the right until equilibrium is reached).
 
 | Industrial Process                         | Reaction                                                           | $\Delta H^\circ$ (kJ/mol) | $\Delta S^\circ$ (J/mol/K) | $T_\text{threshold}$ (K)                                              |
 | ------------------------------------------ | ------------------------------------------------------------------ | ------------------------- | -------------------------- | --------------------------------------------------------------------- |
-| Haber process                              | $\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$                  | $-92$                     | $-199$                     | Not applicable ($\Delta H < 0$$\Delta S < 0$: spontaneous at low $T$) |
+| Haber process                              | $\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$                  | $-92$                     | $-199$                     | Not applicable ($\Delta H < 0$, $\Delta S < 0$: spontaneous at low $T$) |
 | Contact process                            | $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$                 | $-198$                    | $-190$                     | Not applicable                                                        |
 | Thermal decomposition of $\mathrm{CaCO}_3$ | $\mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$                 | $+178$                    | $+161$                     | $1106$                                                                |
 | Roasting of $\mathrm{ZnS}$                 | $2\mathrm{ZnS} + 3\mathrm{O}_2 \to 2\mathrm{ZnO} + 2\mathrm{SO}_2$ | $-880$                    | $+100$                     | Spontaneous at all $T$                                                |
@@ -744,7 +744,7 @@ proceeds to the right until equilibrium is reached).
 
 For the reaction $\mathrm{C}(s) + \mathrm{H}_2\mathrm{O}(g) \to \mathrm{CO}(g) + \mathrm{H}_2(g)$:
 
-$\Delta H^\circ = +131\,\mathrm{kJ/mol}$$\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = +131\,\mathrm{kJ/mol}$, $\Delta S^\circ = +134\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$ and state whether the reaction is feasible. (3
 marks)
@@ -773,7 +773,7 @@ Explain why the entropy change for the reaction
 $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ is positive, and calculate
 $\Delta S^\circ$ given the following standard entropies:
 
-$S^\circ(\mathrm{N}_2\mathrm{O}_4) = 304\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{NO}_2) = 240\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$S^\circ(\mathrm{N}_2\mathrm{O}_4) = 304\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $S^\circ(\mathrm{NO}_2) = 240\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 **Mark Scheme:**
 

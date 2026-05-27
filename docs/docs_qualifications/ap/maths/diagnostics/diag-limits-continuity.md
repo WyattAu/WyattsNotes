@@ -202,7 +202,7 @@ $|\pi\sin(\pi x)| \leq \pi \approx 3.14$ and $3x^2 + 2 \geq 2$We have
 $g'(x) \geq 2 - 3.14 = -1.14$Which does not prove positivity.
 
 Let us check directly:
-$g'(0) = 2$$g'(1) = 3 + 2 - 0 = 5$$g'(0.5) = 0.75 + 2 - \pi \approx 2.75 - 3.14 = -0.39$.
+$g'(0) = 2$, $g'(1) = 3 + 2 - 0 = 5$, $g'(0.5) = 0.75 + 2 - \pi \approx 2.75 - 3.14 = -0.39$.
 
 Since $g'$ changes sign, $g$ is not strictly increasing on all of $[0, 2]$So Rolle's theorem alone
 cannot guarantee uniqueness on this interval. The IVT guarantees at least one root, but uniqueness
@@ -233,7 +233,7 @@ Right-hand derivative:
 
 $$f'_{+}(2) = \lim_{h \to 0^+} \frac{f(2+h) - f(2)}{h} = \lim_{h \to 0^+} \frac{((2+h)^2 - 4) - 0}{h} = \lim_{h \to 0^+} \frac{4h + h^2}{h} = \lim_{h \to 0^+}(4 + h) = 4$$
 
-Since $f'_{-}(2) = -4 \neq 4 = f'_{+}(2)$$f$ is **not differentiable** at $x = 2$.
+Since $f'_{-}(2) = -4 \neq 4 = f'_{+}(2)$, $f$ is **not differentiable** at $x = 2$.
 
 **At $x = -2$:**
 
@@ -245,7 +245,7 @@ Right-hand derivative:
 
 $$f'_{+}(-2) = \lim_{h \to 0^+} \frac{f(-2+h) - f(-2)}{h} = \lim_{h \to 0^+} \frac{(4 - (-2+h)^2) - 0}{h} = \lim_{h \to 0^+} \frac{4h - h^2}{h} = 4$$
 
-Since $-4 \neq 4$$f$ is **not differentiable** at $x = -2$ either.
+Since $-4 \neq 4$, $f$ is **not differentiable** at $x = -2$ either.
 
 $f$ is continuous at both points ($f(2) = f(-2) = 0$ and the limits equal the function value),
 confirming that continuity does not imply differentiability. The discontinuity of $f'$ at

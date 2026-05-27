@@ -258,8 +258,8 @@ Compare to the critical value at the appropriate degrees of freedom
 
 **Worked Example: Hardy-Weinberg with multiple alleles.**
 
-The ABO blood group system has three alleles: $I^A$$I^B$And $i$. In a population, the allele
-Frequencies are $p$$q$And $r$ respectively, with $p + q + r = 1$.
+The ABO blood group system has three alleles: $I^A$, $I^B$And $i$. In a population, the allele
+Frequencies are $p$, $q$And $r$ respectively, with $p + q + r = 1$.
 
 Genotype frequencies are:
 
@@ -633,7 +633,7 @@ Genotypes preferentially mate with each other).
 
 Using the chi-squared test:
 
-$$\chi^2 = \frac{(400-250)^2}{250} + \frac{(200-500)^2}{500} + \frac{(400-250)^2}{250} = \frac{22500}{250} + \frac{90000}{500} + \frac{22500}{250} = 90 + 180 + 90 = 360$$
+$, $\chi^2 = \frac{(400-250)^2}{250} + \frac{(200-500)^2}{500} + \frac{(400-250)^2}{250} = \frac{22500}{250} + \frac{90000}{500} + \frac{22500}{250} = 90 + 180 + 90 = 360$, $
 
 Degrees of freedom = $3 - 1 = 2$. Critical value at 5% for 2 df = 5.991.
 

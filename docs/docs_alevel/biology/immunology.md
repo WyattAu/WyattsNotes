@@ -884,7 +884,7 @@ clonal expansion.
 
 The antibody molecule has several structural domains:
 
-- **Variable domain ($V_H$$V_L$)**: at the N-terminus of each chain; contains the antigen-binding
+- **Variable domain ($V_H$, $V_L$)**: at the N-terminus of each chain; contains the antigen-binding
   site (complementarity-determining regions, CDRs). The amino acid sequence varies between
   antibodies, determining specificity.
 - **Constant domain ($C_H$1--3, $C_L$)**: at the C-terminus; the amino acid sequence is the same

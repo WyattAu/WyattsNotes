@@ -366,7 +366,7 @@ Carbons.
 
 ### Solvent Peaks
 
-Deuterated solvents are used (e.g., $\mathrm{CDCl}_3$$\mathrm{D}_2\mathrm{O}$). Residual proton
+Deuterated solvents are used (e.g., $\mathrm{CDCl}_3$, $\mathrm{D}_2\mathrm{O}$). Residual proton
 Peaks appear at known positions:
 
 | Solvent                      | Residual $\mathrm{^1H}$ $\delta$ (ppm) |
@@ -401,7 +401,7 @@ Peaks appear at known positions:
 
 A compound has molecular ion $\mathrm{M}^+ = 88$. IR shows a strong broad peak at
 $3000$--$2500\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. $\mathrm{^1H}$ NMR:
-$\delta\ 1.2\ (t,\ 3\mathrm{H})$$\delta\ 2.6\ (q,\ 2\mathrm{H})$ $\delta\ 11.0\ (s,\ 1\mathrm{H})$.
+$\delta\ 1.2\ (t,\ 3\mathrm{H})$, $\delta\ 2.6\ (q,\ 2\mathrm{H})$ $\delta\ 11.0\ (s,\ 1\mathrm{H})$.
 
 - M = 88; IR suggests carboxylic acid (broad O--H and C=O).
 - $\mathrm{^1H}$ NMR: 3 environments. Quartet + triplet suggests an ethyl group
@@ -411,11 +411,11 @@ $\delta\ 1.2\ (t,\ 3\mathrm{H})$$\delta\ 2.6\ (q,\ 2\mathrm{H})$ $\delta\ 11.0\ 
   to re-evaluate.
 - With $\mathrm{M} = 88$: try $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$.
   $\mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{COOH}$ (butanoic acid) has M = 88. NMR:
-  $\delta\ 0.9\ (t,\ 3\mathrm{H})$$\delta\ 1.6\ (sextet,\ 2\mathrm{H})$
-  $\delta\ 2.3\ (t,\ 2\mathrm{H})$$\delta\ 11.0\ (s,\ 1\mathrm{H})$.
+  $\delta\ 0.9\ (t,\ 3\mathrm{H})$, $\delta\ 1.6\ (sextet,\ 2\mathrm{H})$
+  $\delta\ 2.3\ (t,\ 2\mathrm{H})$, $\delta\ 11.0\ (s,\ 1\mathrm{H})$.
 
 The original triplet/quartet pattern is consistent with an ethyl ester, not a carboxylic acid.
-Consider ethyl methanoate ($\mathrm{HCOOCH}_2\mathrm{CH}_3$$M = 74$) — still a mismatch. The Correct
+Consider ethyl methanoate ($\mathrm{HCOOCH}_2\mathrm{CH}_3$, $M = 74$) — still a mismatch. The Correct
 answer is $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_3$ (methyl propanoate, $M = 74$) — but M = 88 is
 $\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOCH}_2\mathrm{CH}_3$ (ethyl propanoate, $M = 102$). This
 illustrates the iterative nature of spectral analysis.
@@ -488,7 +488,7 @@ The compound is propanoic acid.
 <summary>Problem 3</summary>
 
 A compound $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$ shows the following $\mathrm{^1H}$ NMR spectrum:
-$\delta\ 1.2\ (d,\ 6\mathrm{H})$$\delta\ 2.1\ (s,\ 3\mathrm{H})$
+$\delta\ 1.2\ (d,\ 6\mathrm{H})$, $\delta\ 2.1\ (s,\ 3\mathrm{H})$
 $\delta\ 3.6\ (septet,\ 1\mathrm{H})$. Identify the compound.
 
 **Solution:**
@@ -503,13 +503,13 @@ $\delta\ 3.6\ (septet,\ 1\mathrm{H})$. Identify the compound.
 Check: $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$ — this does not match
 $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. Reconsider: $\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_3$
 (butan-2-one) has $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$. But its NMR would show
-$\delta\ 1.0\ (t,\ 3\mathrm{H})$$\delta\ 2.1\ (s,\ 3\mathrm{H})$ $\delta\ 2.4\ (q,\ 2\mathrm{H})$.
+$\delta\ 1.0\ (t,\ 3\mathrm{H})$, $\delta\ 2.1\ (s,\ 3\mathrm{H})$ $\delta\ 2.4\ (q,\ 2\mathrm{H})$.
 The septet pattern does not match.
 
 The correct answer is: the formula must be $\mathrm{C}_5\mathrm{H}_{12}\mathrm{O}$ for an isopropyl
 Group with a $\mathrm{CH}_3$. If restricted to $\mathrm{C}_4\mathrm{H}_8\mathrm{O}$Re-examine:
 2-methylpropanal, $\mathrm{(CH}_3)_2\mathrm{CHCHO}$Has the correct formula. Its NMR:
-$\delta\ 1.1\ (d,\ 6\mathrm{H})$$\delta\ 2.4\ (septet,\ 1\mathrm{H})$
+$\delta\ 1.1\ (d,\ 6\mathrm{H})$, $\delta\ 2.4\ (septet,\ 1\mathrm{H})$
 $\delta\ 9.7\ (s,\ 1\mathrm{H})$. The singlet at $\delta\ 2.1$ does not match.
 
 This problem demonstrates the importance of checking the molecular formula against the proposed
@@ -632,7 +632,7 @@ $\mathrm{C}_6\mathrm{H}_6$.
 An unknown compound has $\mathrm{M}^+ = 88$. IR: strong broad peak at
 $2500$--$3300\mathrm{ cm}^{-1}$Strong peak at $1715\mathrm{ cm}^{-1}$And a C--O stretch at
 $1050\mathrm{ cm}^{-1}$. $^{1}\mathrm{H}$ NMR: $\delta\ 0.9\ (t,\ 3\mathrm{H})$
-$\delta\ 1.6\ (sextet,\ 2\mathrm{H})$$\delta\ 2.3\ (t,\ 2\mathrm{H})$
+$\delta\ 1.6\ (sextet,\ 2\mathrm{H})$, $\delta\ 2.3\ (t,\ 2\mathrm{H})$
 $\delta\ 11.0\ (s,\ 1\mathrm{H})$. $^{13}\mathrm{C}$ NMR: 4 signals. Identify the compound.
 
 <details>
@@ -752,7 +752,7 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
   add absolute uncertainties. For multiplication/division, add percentage uncertainties. Applying
   the wrong rule gives a quantitatively incorrect result.
 
-- **Including constants in uncertainty calculations**: $\pi$$R$$N_A$And other defined constants have
+- **Including constants in uncertainty calculations**: $\pi$, $R$, $N_A$And other defined constants have
   no uncertainty. Do not include them in percentage uncertainty propagation. Only measured
   quantities contribute.
 
@@ -800,19 +800,19 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
    a small M+2 peak. Deduce the structure and explain each piece of spectral evidence. **[Hard]**
 
 3. A compound $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}_2$ has the following $^{1}\mathrm{H}$ NMR
-   spectrum: $\delta\ 1.2\ (d,\ 6\mathrm{H})$$\delta\ 2.0\ (s,\ 3\mathrm{H})$
-   $\delta\ 4.1\ (septet,\ 1\mathrm{H})$$\delta\ 11.5\ (s,\ 1\mathrm{H})$. IR shows a broad peak at
+   spectrum: $\delta\ 1.2\ (d,\ 6\mathrm{H})$, $\delta\ 2.0\ (s,\ 3\mathrm{H})$
+   $\delta\ 4.1\ (septet,\ 1\mathrm{H})$, $\delta\ 11.5\ (s,\ 1\mathrm{H})$. IR shows a broad peak at
    $3000\mathrm{ cm}^{-1}$ and a strong peak at $1710\mathrm{ cm}^{-1}$. Identify the compound and
    explain the splitting pattern. **[Hard]**
 
 4. A student performs an experiment to determine $K_c$ for a reaction and obtains the following
-   values in three trials: $4.2 \times 10^{-2}$$3.8 \times 10^{-2}$$4.5 \times 10^{-2}$. (a)
+   values in three trials: $4.2 \times 10^{-2}$, $3.8 \times 10^{-2}$, $4.5 \times 10^{-2}$. (a)
    Calculate the mean and standard deviation. (b) Express the result as mean $\pm$ uncertainty. (c)
    Is the spread of results consistent with random error only? **[Medium]**
 
 5. The mass spectrum of a compound shows the molecular ion at $m/z\ 94$ (base peak) and a prominent
    fragment at $m/z\ 77$. The IR spectrum shows absorptions at $3050\mathrm{ cm}^{-1}$
-   $1600\mathrm{ cm}^{-1}$$1500\mathrm{ cm}^{-1}$And $750\mathrm{ cm}^{-1}$. Deduce the structure of
+   $1600\mathrm{ cm}^{-1}$, $1500\mathrm{ cm}^{-1}$And $750\mathrm{ cm}^{-1}$. Deduce the structure of
    the compound and explain the fragmentation. **[Medium]**
 
 6. In a colorimetry experiment, a student measures the absorbance of five standard solutions and
@@ -826,7 +826,7 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
    operations. **[Easy]**
 
 8. A $^{13}\mathrm{C}$ NMR spectrum of a compound $\mathrm{C}_8\mathrm{H}_{10}$ shows 5 signals. The
-   $^{1}\mathrm{H}$ NMR shows: $\delta\ 2.3\ (s,\ 3\mathrm{H})$$\delta\ 7.1$--$7.4$
+   $^{1}\mathrm{H}$ NMR shows: $\delta\ 2.3\ (s,\ 3\mathrm{H})$, $\delta\ 7.1$--$7.4$
    $(m,\ 7\mathrm{H})$. Identify the compound. Explain why the aromatic region shows a multiplet
    rather than distinct signals. **[Hard]**
 

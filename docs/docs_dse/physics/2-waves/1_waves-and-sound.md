@@ -210,7 +210,7 @@ $$f_3 = 3f_1 = 300 \mathrm{ Hz}$$
 
 $$f_5 = 5f_1 = 500 \mathrm{ Hz}$$
 
-The resonant frequencies are $100 \mathrm{ Hz}$$300 \mathrm{ Hz}$And $500 \mathrm{ Hz}$.
+The resonant frequencies are $100 \mathrm{ Hz}$, $300 \mathrm{ Hz}$And $500 \mathrm{ Hz}$.
 
 ---
 
@@ -353,7 +353,7 @@ $$E = hf = 6.63 \times 10^{-34} \times 5.64 \times 10^{14} = 3.74 \times 10^{-19
 | Constructive interference | Path difference $= n\lambda$        | Waves in phase                       |
 | Destructive interference  | Path difference $= (n+1/2)\lambda$  | Waves in antiphase                   |
 | Standing waves (string)   | $f_n = nv/(2L)$                     | All harmonics                        |
-| Standing waves (pipe)     | $f_n = nv/(4L)$$n$ odd              | Odd harmonics only                   |
+| Standing waves (pipe)     | $f_n = nv/(4L)$, $n$ odd              | Odd harmonics only                   |
 | Sound intensity           | $I = P/(4\pi r^2)$                  | Inverse square law                   |
 | Intensity level           | $\beta = 10\log(I/I_0)$             | Decibels                             |
 | EM spectrum               | $c = f\lambda$                      | All EM waves at speed $c$            |
@@ -996,7 +996,7 @@ open end. The boundary conditions require that an odd number of quarter-waveleng
 $L = (2n - 1)\lambda/4$ for $n = 1, 2, 3, \ldots$. Even harmonics would require a Node at the open
 end or an antinode at the closed end, which violates the boundary conditions.
 
-(d) $T_1 = 20 + 273 = 293 \mathrm{ K}$$T_2 = 30 + 273 = 303 \mathrm{ K}$.
+(d) $T_1 = 20 + 273 = 293 \mathrm{ K}$, $T_2 = 30 + 273 = 303 \mathrm{ K}$.
 
 $$\frac{v_2}{v_1} = \sqrt{\frac{T_2}{T_1}} = \sqrt{\frac{303}{293}} = \sqrt{1.0341} = 1.0169$$
 
@@ -1024,7 +1024,7 @@ Where $\gamma = C_p/C_v$ is the ratio of specific heats (adibatic index). Theref
 
 $$v = \sqrt{\frac{\gamma P}{\rho}} = \sqrt{\frac{\gamma RT}{M}}$$
 
-For air at $20^\circ\mathrm{C}$ ($293 \mathrm{ K}$), $\gamma = 1.4$$M = 0.029 \mathrm{ kg/mol}$:
+For air at $20^\circ\mathrm{C}$ ($293 \mathrm{ K}$), $\gamma = 1.4$, $M = 0.029 \mathrm{ kg/mol}$:
 
 $$v = \sqrt{\frac{1.4 \times 8.31 \times 293}{0.029}} = \sqrt{\frac{3407}{0.029}} = \sqrt{117483} = 343 \mathrm{ m/s}$$
 

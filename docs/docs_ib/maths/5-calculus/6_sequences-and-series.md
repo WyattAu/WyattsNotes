@@ -47,7 +47,7 @@ Adding: $2S_n = n(a_1 + a_n)$Hence $S_n = \dfrac{n}{2}(a_1 + a_n)$.
 
 **Example.** Find the sum of the first 50 positive odd numbers.
 
-$a_1 = 1$$d = 2$$a_{50} = 1 + 49 \cdot 2 = 99$.
+$a_1 = 1$, $d = 2$, $a_{50} = 1 + 49 \cdot 2 = 99$.
 
 $$S_{50} = \frac{50}{2}(1 + 99) = 2500$$
 
@@ -100,7 +100,7 @@ $$S_{\infty} = \frac{7/10}{1 - 1/10} = \frac{7/10}{9/10} = \frac{7}{9}$$
 
 **Example.** Evaluate $\displaystyle\sum_{n=0}^{\infty} \frac{3}{4^n}$.
 
-$a_1 = 3$$r = \dfrac{1}{4}$.
+$a_1 = 3$, $r = \dfrac{1}{4}$.
 
 $$S_{\infty} = \frac{3}{1 - 1/4} = \frac{3}{3/4} = 4$$
 

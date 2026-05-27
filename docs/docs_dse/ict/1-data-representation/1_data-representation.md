@@ -210,7 +210,7 @@ Step 1: Convert 6.625 to binary.
 
 Integer part: $6 = 110$
 
-Fractional part: $0.625 \times 2 = 1.25 \to 1$$0.25 \times 2 = 0.5 \to 0$ $0.5 \times 2 = 1.0 \to 1$
+Fractional part: $0.625 \times 2 = 1.25 \to 1$, $0.25 \times 2 = 0.5 \to 0$ $0.5 \times 2 = 1.0 \to 1$
 
 So $6.625_{10} = 110.101_2$
 
@@ -1096,7 +1096,7 @@ Answer:
 
 (a) $3 \times 64 + 4 \times 8 + 5 = 192 + 32 + 5 = 229_{10}$
 
-Binary: $3 = 011$$4 = 100$$5 = 101$. So $345_8 = 011100101_2 = 11100101_2$
+Binary: $3 = 011$, $4 = 100$, $5 = 101$. So $345_8 = 011100101_2 = 11100101_2$
 
 (b) Two's complement of $01101011$: invert $\to 10010100$Add $1 \to 10010101$
 

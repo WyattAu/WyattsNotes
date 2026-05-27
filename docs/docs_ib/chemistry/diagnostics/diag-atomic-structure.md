@@ -32,11 +32,11 @@ minimises electron-electron repulsion. In Cr, promoting one $4s$ electron to $3d
 
 ### UT-2: Quantum Numbers and Orbital Maximums
 
-**Question:** State the four quantum numbers ($n$$\ell$$m_\ell$$m_s$) for each electron in a $2p^4$
+**Question:** State the four quantum numbers ($n$, $\ell$, $m_\ell$, $m_s$) for each electron in a $2p^4$
 configuration. How many electrons maximum can occupy the $n = 3$ shell, and why?
 
 **Solution:** The $2p$ subshell has
-$n = 2$$\ell = 1$$m_\ell \in \{-1, 0, +1\}$$m_s = \pm \tfrac{1}{2}$. With four electrons, applying
+$n = 2$, $\ell = 1$, $m_\ell \in \{-1, 0, +1\}$, $m_s = \pm \tfrac{1}{2}$. With four electrons, applying
 Hund's rule (maximum multiplicity first):
 
 | Electron | $n$ | $\ell$ | $m_\ell$ | $m_s$           |
@@ -68,7 +68,7 @@ $$-1.997x = 35.453 - 36.966 = -1.513$$
 
 $$x = \frac{1.513}{1.997} = 0.7576$$
 
-$^{35}\text{Cl}$: $75.8\%$$^{37}\text{Cl}$: $24.2\%$.
+$^{35}\text{Cl}$: $75.8\%$, $^{37}\text{Cl}$: $24.2\%$.
 
 ## Integration Tests
 
@@ -128,7 +128,7 @@ $\Delta E = \frac{hc \times 0.5 \times 10^{-9}}{(434.0 \times 10^{-9})^2} = \fra
 
 **Question:** Sodium ($Z = 11$) readily forms $\text{Na}^+$Whereas neon ($Z = 10$) is chemically
 inert. Use electron configuration and ionisation energy data to explain this difference. The first
-three ionisation energies of sodium are $496$$4562$And $6912\ \text{kJ mol}^{-1}$. What do these
+three ionisation energies of sodium are $496$, $4562$And $6912\ \text{kJ mol}^{-1}$. What do these
 values reveal about the stability of the $\text{Na}^+$ ion?
 
 **Solution:** Na: $[Ne]\, 3s^1$. Ne: $1s^2\, 2s^2\, 2p^6 = [Ne]$.

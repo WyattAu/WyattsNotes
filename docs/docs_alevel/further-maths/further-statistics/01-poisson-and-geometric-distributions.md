@@ -137,7 +137,7 @@ The procedure mirrors binomial hypothesis testing:
 **Example.** A call centre receives an average of 3.2 calls per minute. In a particular minute, 7
 Calls are received. Test at the 5% significance level whether the rate has increased.
 
-$X \sim \mathrm{Po}(3.2)$. $H_0: \lambda = 3.2$$H_1: \lambda > 3.2$.
+$X \sim \mathrm{Po}(3.2)$. $H_0: \lambda = 3.2$, $H_1: \lambda > 3.2$.
 
 $P(X \geq 7) = 1 - P(X \leq 6) = 1 - 0.9554 = 0.0446 < 0.05$.
 
@@ -252,7 +252,7 @@ $$P(X \leq r) = 1 - q^r = 1 - (1-p)^r$$
 **Example.** A bag contains red and blue balls. The probability of drawing a red ball is $p$. In an
 Experiment, the first red ball is drawn on the 10th draw. Test at the 5% level whether $p = 0.3$.
 
-$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$$H_1: p < 0.3$ (the ball took longer than expected, so $p$
+$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so $p$
 may be smaller).
 
 $p\mathrm{-value} = P(X \geq 10) = (1-0.3)^{10-1} = 0.7^9 \approx 0.0404 < 0.05$.
@@ -365,7 +365,7 @@ The number of emails received per hour follows $\mathrm{Po}(8)$. Find the probab
 <summary>Solution 4</summary>
 $X \sim \mathrm{Po}(8)$. $P(6 \leq X \leq 12) = P(X \leq 12) - P(X \leq 5)$.
 
-$P(X \leq 12) \approx 0.9362$$P(X \leq 5) \approx 0.1912$.
+$P(X \leq 12) \approx 0.9362$, $P(X \leq 5) \approx 0.1912$.
 
 $P(6 \leq X \leq 12) \approx 0.9362 - 0.1912 = 0.7450$.
 
@@ -450,7 +450,7 @@ The number of accidents per week at a junction follows $\mathrm{Po}(3)$. After n
 
 <details>
 <summary>Solution 9</summary>
-$X \sim \mathrm{Po}(3)$. $H_0: \lambda = 3$$H_1: \lambda > 3$. $\alpha = 0.05$.
+$X \sim \mathrm{Po}(3)$. $H_0: \lambda = 3$, $H_1: \lambda > 3$. $\alpha = 0.05$.
 
 $p\mathrm{-value} = P(X \geq 8) = 1 - P(X \leq 7) = 1 - 0.9881 = 0.0119 < 0.05$.
 
@@ -670,7 +670,7 @@ A coin is tossed until the first head appears. The probability of heads is $p$.
 <details>
 <summary>Solution</summary>
 
-**(a)** $X \sim \mathrm{Geo}(p)$: $E(X) = 1/p$$\mathrm{Var}(X) = (1-p)/p^2$.
+**(a)** $X \sim \mathrm{Geo}(p)$: $E(X) = 1/p$, $\mathrm{Var}(X) = (1-p)/p^2$.
 
 **(b)** $P(X \text{ is even}) = P(X = 2) + P(X = 4) + P(X = 6) + \cdots$
 
@@ -777,7 +777,7 @@ $$P(X > 20) = 1 - P(X \leq 20) = 1 - \sum_{k=0}^{20} \frac◆LB◆e^{-16} \cdot 
 
 $$P(X > 4 \mid X > 2) = P(X > 2) = (1-0.3)^2 = 0.49$$
 
-Verification: $P(X > 4) = 0.7^4 = 0.2401$$P(X > 2) = 0.49$.
+Verification: $P(X > 4) = 0.7^4 = 0.2401$, $P(X > 2) = 0.49$.
 $P(X>4 \mid X>2) = \dfrac{0.2401}{0.49} = 0.49$. ✓
 
 ### Example 8.4: Poisson hypothesis testing
@@ -867,7 +867,7 @@ $$P(X = 5) = \frac◆LB◆e^{-6} \cdot 6^5◆RB◆◆LB◆120◆RB◆ = \frac◆
 
 ### Question 9
 
-**Prove that** for $X \sim \mathrm{Po}(\lambda)$$E(X) = \lambda$.
+**Prove that** for $X \sim \mathrm{Po}(\lambda)$, $E(X) = \lambda$.
 
 <details>
 <summary>Solution</summary>
@@ -957,7 +957,7 @@ $P(X > 10) = 1 - P(X \leq 10) = 1 - \sum_{k=0}^{10}\dfrac◆LB◆e^{-8} \cdot 8^
 
 ### Question 12
 
-**Prove that** for $X \sim \mathrm{Po}(\lambda)$$\mathrm{Var}(X) = \lambda$.
+**Prove that** for $X \sim \mathrm{Po}(\lambda)$, $\mathrm{Var}(X) = \lambda$.
 
 <details>
 <summary>Solution</summary>
@@ -1063,7 +1063,7 @@ The number of trials until the $r$-th success follows $\mathrm{NegBin}(r, p)$:
 
 $$P(X = n) = \binom{n-1}{r-1}p^r(1-p)^{n-r} \quad \text{for } n = r, r+1, \ldots$$
 
-$E(X) = \dfrac{r}{p}$$\mathrm{Var}(X) = \dfrac{r(1-p)}{p^2}$.
+$E(X) = \dfrac{r}{p}$, $\mathrm{Var}(X) = \dfrac{r(1-p)}{p^2}$.
 
 The geometric distribution is $\mathrm{NegBin}(1, p)$.
 

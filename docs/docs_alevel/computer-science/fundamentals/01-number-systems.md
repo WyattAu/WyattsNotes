@@ -123,7 +123,7 @@ Replace each hex digit with its 4-bit binary equivalent.
 <details>
 <summary>Example: Convert $3F7_{16}$ to binary</summary>
 
-$3 = 0011$$F = 1111$$7 = 0111$
+$3 = 0011$, $F = 1111$, $7 = 0111$
 
 Result: $001111110111_2 = 11111110111_2$
 
@@ -171,7 +171,7 @@ $C_i$ is a Boolean function of $\{A_0, B_0, \ldots, A_{i-1}, B_{i-1}\}$ only. $\
        1 0 0 0 1
 ```
 
-$1011_2 = 11_{10}$$0110_2 = 6_{10}$$10001_2 = 17_{10}$. Correct. ✓
+$1011_2 = 11_{10}$, $0110_2 = 6_{10}$, $10001_2 = 17_{10}$. Correct. ✓
 
 </details>
 
@@ -265,7 +265,7 @@ No overflow (negative + positive never overflows).
 <details>
 <summary>Example: Overflow — Add $6$ and $5$ in 4-bit two's complement</summary>
 
-$6 = 0110_2$$5 = 0101_2$
+$6 = 0110_2$, $5 = 0101_2$
 
 ```
   Carry: 0 1 1 0 0

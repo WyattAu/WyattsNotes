@@ -177,21 +177,21 @@ Occupies an equatorial position. Molecular shape: see-saw. Hybridisation: $sp^3d
 ### sp Hybridisation
 
 Two hybrid orbitals, linear geometry ($180^\circ$). Example:
-$\mathrm{BeCl_2$$\mathrm{C_2\mathrm{H_2$.
+$\mathrm{BeCl_2$, $\mathrm{C_2\mathrm{H_2$.
 
 ### sp2 Hybridisation
 
 Three hybrid orbitals, trigonal planar ($120^\circ$). Example:
-$\mathrm{BF_3$$\mathrm{C_2\mathrm{H_4$.
+$\mathrm{BF_3$, $\mathrm{C_2\mathrm{H_4$.
 
 ### sp3 Hybridisation
 
-Four hybrid orbitals, tetrahedral ($109.5^\circ$). Example: $\mathrm{CH_4$$\mathrm{NH_3$
+Four hybrid orbitals, tetrahedral ($109.5^\circ$). Example: $\mathrm{CH_4$, $\mathrm{NH_3$
 $\mathrm{H_2\mathrm{O$.
 
 ### sp3d Hybridisation
 
-Five hybrid orbitals, trigonal bipyramidal. Example: $\mathrm{PCl_5$$\mathrm{SF_4$.
+Five hybrid orbitals, trigonal bipyramidal. Example: $\mathrm{PCl_5$, $\mathrm{SF_4$.
 
 ### sp3d2 Hybridisation
 
@@ -658,7 +658,7 @@ Order of vapour pressure (decreasing): London forces > dipole-dipole > hydrogen 
 | Electrical conductivity | Molten/aqueous              | None                                                  | Graphite only     | Good                        |
 | Solubility              | Polar solvents              | Non-polar solvents                                    | Insoluble         | Insoluble                   |
 | Hardness                | Hard, brittle               | Soft                                                  | Very hard         | Malleable                   |
-| Examples                | $\mathrm{NaCl$$\mathrm{MgO$ | $\mathrm{H_2\mathrm{O$$\mathrm{CO_2$                  | Diamond, graphite | $\mathrm{Fe$$\mathrm{Cu$    |
+| Examples                | $\mathrm{NaCl$, $\mathrm{MgO$ | $\mathrm{H_2\mathrm{O$, $\mathrm{CO_2$                  | Diamond, graphite | $\mathrm{Fe$, $\mathrm{Cu$    |
 
 ---
 
@@ -713,7 +713,7 @@ In reality, all four S-O bonds are equivalent due to resonance.
 22. Explain the trend in boiling points for the noble gases and relate this to intermolecular
     forces.
 
-23. Use MO theory to determine the bond order of $\mathrm{F_2$$\mathrm{O_2$And $\mathrm{N_2$. How
+23. Use MO theory to determine the bond order of $\mathrm{F_2$, $\mathrm{O_2$And $\mathrm{N_2$. How
     does bond order relate to bond length and bond strength?
 
 24. Describe how the properties of graphite make it useful as a lubricant and as an electrode

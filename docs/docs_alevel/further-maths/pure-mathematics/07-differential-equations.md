@@ -146,7 +146,7 @@ $\square$
 
 Solve $\dfrac{dy}{dx} + \dfrac{2}{x}\,y = x^2$ for $x > 0$.
 
-Here $P(x) = \dfrac{2}{x}$$Q(x) = x^2$.
+Here $P(x) = \dfrac{2}{x}$, $Q(x) = x^2$.
 
 $$\mu = e^{\int 2/x\,dx} = e^{2\ln x} = x^2$$
 
@@ -162,7 +162,7 @@ $$\boxed{y = \frac{x^3}{5} + \frac{C}{x^2}}$$
 
 Solve $\dfrac{dy}{dx} - 3y = e^{2x}$Given $y(0) = 1$.
 
-$P(x) = -3$$Q(x) = e^{2x}$.
+$P(x) = -3$, $Q(x) = e^{2x}$.
 
 $$\mu = e^{\int -3\,dx} = e^{-3x}$$
 
@@ -189,7 +189,7 @@ Always choose the simplest antiderivative. :::
 
 $$a\frac{d^2y}{dx^2} + b\frac{dy}{dx} + cy = f(x)$$
 
-Where $a$$b$$c$ are constants with $a \neq 0$.
+Where $a$, $b$, $c$ are constants with $a \neq 0$.
 
 The equation is **homogeneous** when $f(x) = 0$:
 
@@ -342,7 +342,7 @@ $$\boxed{y = A\cos x + B\sin x - \frac{1}{2}x\cos x}$$
 
 CF: $m^2 - 4m + 4 = 0 \implies (m-2)^2 = 0$. $y_h = (A + Bx)e^{2x}$.
 
-PI: Try $y_p = px + q$. $y_p' = p$$y_p'' = 0$.
+PI: Try $y_p = px + q$. $y_p' = p$, $y_p'' = 0$.
 
 $0 - 4p + 4(px + q) = 3x + 2$. $4px + (4q - 4p) = 3x + 2$.
 
@@ -384,7 +384,7 @@ $$\boxed{T = T_a + (T_0 - T_a)e^{-kt}}$$
 **Example.** A cup of tea at $90°C$ is placed in a room at $20°C$. After 10 minutes the temperature
 Is $60°C$. Find the temperature after 20 minutes.
 
-$T_0 = 90$$T_a = 20$. $T(10) = 60$:
+$T_0 = 90$, $T_a = 20$. $T(10) = 60$:
 
 $60 = 20 + 70e^{-10k} \implies e^{-10k} = \dfrac{40}{70} = \dfrac{4}{7} \implies k = \dfrac{1}{10}\ln\dfrac{7}{4}$.
 
@@ -434,13 +434,13 @@ Root. Similarly for $y_2$.
 The Wronskian is
 $W = y_1 y_2' - y_1' y_2 = m_2 e^{(m_1+m_2)x} - m_1 e^{(m_1+m_2)x} = (m_2 - m_1)e^{(m_1+m_2)x} \neq 0$.
 
-Since $W \neq 0$$y_1$ and $y_2$ are linearly independent, so $y = Ae^{m_1 x} + Be^{m_2 x}$ is the
+Since $W \neq 0$, $y_1$ and $y_2$ are linearly independent, so $y = Ae^{m_1 x} + Be^{m_2 x}$ is the
 General solution.
 
 **Case 2 ($m$ repeated).** $y_1 = e^{mx}$ is one solution. We need a second linearly independent
 Solution. Try $y_2 = xe^{mx}$.
 
-$y_2' = e^{mx}(1 + mx)$$y_2'' = e^{mx}(2m + m^2 x)$.
+$y_2' = e^{mx}(1 + mx)$, $y_2'' = e^{mx}(2m + m^2 x)$.
 
 $ay_2'' + by_2' + cy_2 = e^{mx}\left[a(2m + m^2 x) + b(1 + mx) + cx\right]$
 
@@ -492,7 +492,7 @@ Solve $\dfrac{dy}{dx} + \dfrac{3}{x}\,y = x^2$ for $x > 0$Given $y(1) = 0$.
 <details>
 <summary>Solution 2</summary>
 
-$P(x) = 3/x$$Q(x) = x^2$.
+$P(x) = 3/x$, $Q(x) = x^2$.
 
 $\mu = e^{\int 3/x\,dx} = e^{3\ln x} = x^3$.
 
@@ -523,7 +523,7 @@ Solve $y'' - 6y' + 9y = 0$ given $y(0) = 1$ and $y'(0) = 0$.
 
 Auxiliary: $m^2 - 6m + 9 = 0 \implies (m-3)^2 = 0 \implies m = 3$ (repeated).
 
-$y = (A + Bx)e^{3x}$$y' = (B + 3A + 3Bx)e^{3x}$.
+$y = (A + Bx)e^{3x}$, $y' = (B + 3A + 3Bx)e^{3x}$.
 
 $y(0) = 1$: $A = 1$. $y'(0) = 0$: $B + 3 = 0 \implies B = -3$.
 
@@ -545,7 +545,7 @@ Solve $y'' + 4y' + 13y = 0$.
 
 Auxiliary: $m^2 + 4m + 13 = 0 \implies m = \dfrac◆LB◆-4 \pm \sqrt{16-52}◆RB◆◆LB◆2◆RB◆ = -2 \pm 3i$.
 
-$\alpha = -2$$\beta = 3$.
+$\alpha = -2$, $\beta = 3$.
 
 $\boxed{y = e^{-2x}(A\cos 3x + B\sin 3x)}$.
 
@@ -567,7 +567,7 @@ CF: $m^2 - 1 = 0 \implies m = \pm 1$. $y_h = Ae^x + Be^{-x}$.
 
 PI: $f(x) = 2e^x$. Since $e^x$ appears in the CF, try $y_p = cxe^x$.
 
-$y_p' = c(1+x)e^x$$y_p'' = c(2+x)e^x$.
+$y_p' = c(1+x)e^x$, $y_p'' = c(2+x)e^x$.
 
 $y_p'' - y_p = c(2+x)e^x - cxe^x = 2ce^x = 2e^x \implies c = 1$.
 
@@ -590,13 +590,13 @@ Find the general solution of $y'' + 2y' + y = x^2$.
 
 CF: $m^2 + 2m + 1 = 0 \implies (m+1)^2 = 0$. $y_h = (A + Bx)e^{-x}$.
 
-PI: Try $y_p = px^2 + qx + r$. $y_p' = 2px + q$$y_p'' = 2p$.
+PI: Try $y_p = px^2 + qx + r$. $y_p' = 2px + q$, $y_p'' = 2p$.
 
 $(2p) + 2(2px + q) + (px^2 + qx + r) = x^2$.
 
 $px^2 + (4p+q)x + (2p+2q+r) = x^2$.
 
-$p = 1$$4 + q = 0 \implies q = -4$$2 - 8 + r = 0 \implies r = 6$.
+$p = 1$, $4 + q = 0 \implies q = -4$, $2 - 8 + r = 0 \implies r = 6$.
 
 $\boxed{y = (A + Bx)e^{-x} + x^2 - 4x + 6}$.
 
@@ -616,7 +616,7 @@ Cool to $40°C$?
 <details>
 <summary>Solution 7</summary>
 
-Newton's law: $T = 20 + 60e^{-kt}$ (since $T_0 = 80$$T_a = 20$).
+Newton's law: $T = 20 + 60e^{-kt}$ (since $T_0 = 80$, $T_a = 20$).
 
 $T(10) = 60$: $60 = 20 + 60e^{-10k} \implies e^{-10k} = \dfrac{2}{3}$.
 
@@ -677,7 +677,7 @@ $y_p'' = (-6c\sin 3x + 6d\cos 3x) + x(-9c\cos 3x - 9d\sin 3x)$
 
 $y_p'' + 9y_p = -6c\sin 3x + 6d\cos 3x = 6\cos 3x$.
 
-$d = 1$$c = 0$.
+$d = 1$, $c = 0$.
 
 $\boxed{y = A\cos 3x + B\sin 3x + x\sin 3x}$.
 
@@ -696,7 +696,7 @@ Solve $\dfrac{dy}{dx} - \dfrac{y}{x} = x^2$ for $x > 0$Given $y(1) = 3$.
 <details>
 <summary>Solution 10</summary>
 
-$P(x) = -1/x$$Q(x) = x^2$.
+$P(x) = -1/x$, $Q(x) = x^2$.
 
 $\mu = e^{\int -1/x\,dx} = e^{-\ln x} = \dfrac{1}{x}$.
 
@@ -773,7 +773,7 @@ $$\arctan\!\left(\frac{y}{x}\right) - \frac{1}{2}\ln\!\left(1+\frac{y^2}{x^2}\ri
 
 ### Example 8.4: Coupled first-order ODEs
 
-**Problem.** Solve $\dfrac{dx}{dt} = 3x + 2y$$\dfrac{dy}{dt} = -5x - y$.
+**Problem.** Solve $\dfrac{dx}{dt} = 3x + 2y$, $\dfrac{dy}{dt} = -5x - y$.
 
 **Solution.** From the second equation: $y = \dfrac{1}{2}\!\left(\dfrac{dx}{dt} - 3x\right)$.
 
@@ -838,7 +838,7 @@ $y_p'' = -C\sin x + D\cos x + (-C\sin x + D\cos x) + x(-C\cos x - D\sin x) = 2(-
 
 $y_p'' + y_p = 2(-C\sin x + D\cos x) = 2\cos x$.
 
-$D = 1$$C = 0$. So $y_p = x\sin x$.
+$D = 1$, $C = 0$. So $y_p = x\sin x$.
 
 $\boxed{y = A\cos x + B\sin x + x\sin x}$
 
@@ -1042,7 +1042,7 @@ Have zero, one, or multiple solutions, unlike IVPs which (for linear ODEs) have 
 
 ### 14.4 Phase portraits
 
-For autonomous 2D systems $\dot{x} = f(x,y)$$\dot{y} = g(x,y)$The phase portrait shows Trajectories
+For autonomous 2D systems $\dot{x} = f(x,y)$, $\dot{y} = g(x,y)$The phase portrait shows Trajectories
 in the $xy$-plane. Key features:
 
 - Fixed points: where $\dot{x} = \dot{y} = 0$

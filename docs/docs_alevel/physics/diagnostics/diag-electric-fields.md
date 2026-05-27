@@ -171,7 +171,7 @@ the particle to be in equilibrium.
 horizontal plates separated by $8.0\,\text{mm}$ with a potential difference of $3000\,\text{V}$.
 Calculate the charge on the drop and express it in terms of the elementary charge.
 
-Take $e = 1.60 \times 10^{-19}\,\text{C}$$g = 9.81\,\text{m}\,\text{s}^{-2}$.
+Take $e = 1.60 \times 10^{-19}\,\text{C}$, $g = 9.81\,\text{m}\,\text{s}^{-2}$.
 
 **Solution:**
 

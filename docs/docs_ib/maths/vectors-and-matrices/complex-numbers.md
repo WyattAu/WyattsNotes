@@ -36,7 +36,7 @@ The conjugate of $z = a + bi$ is $\bar{z} = a - bi$.
 - $z\bar{z} = a^2 + b^2 = |z|^2$
 - $\overline{z_1 + z_2} = \bar{z}_1 + \bar{z}_2$
 - $\overline{z_1 z_2} = \bar{z}_1 \bar{z}_2$
-- $z + \bar{z} = 2\mathrm{Re}(z)$$z - \bar{z} = 2i\,\mathrm{Im}(z)$
+- $z + \bar{z} = 2\mathrm{Re}(z)$, $z - \bar{z} = 2i\,\mathrm{Im}(z)$
 
 ### Modulus and Argument
 
@@ -66,9 +66,9 @@ Where $r = |z|$ and $\theta = \arg(z)$.
 
 ### Conversion
 
-- **Cartesian to polar:** $r = \sqrt{a^2 + b^2}$$\theta = \arctan\!\left(\dfrac{b}{a}\right)$
+- **Cartesian to polar:** $r = \sqrt{a^2 + b^2}$, $\theta = \arctan\!\left(\dfrac{b}{a}\right)$
   (adjusting for quadrant).
-- **Polar to Cartesian:** $a = r\cos\theta$$b = r\sin\theta$.
+- **Polar to Cartesian:** $a = r\cos\theta$, $b = r\sin\theta$.
 
 **Example.** Express $z = 1 + i\sqrt{3}$ in polar form.
 
@@ -88,7 +88,7 @@ Multiplication: moduli multiply, arguments add. Division: moduli divide, argumen
 
 **Example.** Compute $\dfrac{1 + i}{\sqrt{3} - i}$.
 
-$1 + i = \sqrt{2}\,e^{i\pi/4}$$\sqrt{3} - i = 2\,e^{-i\pi/6}$.
+$1 + i = \sqrt{2}\,e^{i\pi/4}$, $\sqrt{3} - i = 2\,e^{-i\pi/6}$.
 
 $$\frac{1 + i}{\sqrt{3} - i} = \frac{\sqrt{2}}{2}\, e^{i(\pi/4 + \pi/6)} = \frac{\sqrt{2}}{2}\, e^{i5\pi/12}$$
 
@@ -201,7 +201,7 @@ Setting $\theta = \pi$:
 
 $$e^{i\pi} + 1 = 0$$
 
-This elegantly relates five fundamental constants: $e$$i$$\pi$$1$And $0$.
+This elegantly relates five fundamental constants: $e$, $i$, $\pi$, $1$And $0$.
 
 ### Connections Between Exponential and Trigonometric Functions
 
@@ -329,7 +329,7 @@ A function satisfying these equations at every point of an open set is called **
 
 **Example.** $f(z) = z^2 = (x + iy)^2 = (x^2 - y^2) + i(2xy)$.
 
-$u = x^2 - y^2$$v = 2xy$.
+$u = x^2 - y^2$, $v = 2xy$.
 
 $\dfrac{\partial u}{\partial x} = 2x = \dfrac{\partial v}{\partial y}$ and
 $\dfrac{\partial u}{\partial y} = -2y = -\dfrac{\partial v}{\partial x}$. The Cauchy-Riemann
@@ -397,7 +397,7 @@ $z^3 = 1 = e^{2k\pi i}$ for $k = 0, 1, 2$.
 
 $$z_k = e^{2k\pi i/3}, \qquad k = 0, 1, 2$$
 
-$z_0 = 1$$z_1 = e^{2\pi i/3} = -\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i$$z_2 = e^{4\pi i/3} = -\dfrac{1}{2} - \dfrac{\sqrt{3}}{2}i$.
+$z_0 = 1$, $z_1 = e^{2\pi i/3} = -\dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i$, $z_2 = e^{4\pi i/3} = -\dfrac{1}{2} - \dfrac{\sqrt{3}}{2}i$.
 
 These are the **cube roots of unity**, forming an equilateral triangle on the unit circle.
 
@@ -488,7 +488,7 @@ $$|w| = 4, \qquad \arg(w) = -\frac{2\pi}{3}$$
 
 $$z = \pm 2\, e^{-i\pi/3} = \pm\left(1 - i\sqrt{3}\right)$$
 
-The four roots are $1 + i\sqrt{3}$$-1 - i\sqrt{3}$$1 - i\sqrt{3}$$-1 + i\sqrt{3}$.
+The four roots are $1 + i\sqrt{3}$, $-1 - i\sqrt{3}$, $1 - i\sqrt{3}$, $-1 + i\sqrt{3}$.
 
 </details>
 

@@ -74,12 +74,12 @@ double bond:** $-\text{Cl}$ (priority 1, highest atomic number) vs $-\text{CH}_2
 - **E isomer:** Higher priority groups on opposite sides
 
 (b) Lactic acid ($\text{CH}_3\text{CH}(\text{OH})\text{COOH}$) has a **chiral centre** at the second
-carbon. This carbon is bonded to four different groups: $-\text{H}$$-\text{OH}$$-\text{CH}_3$And
+carbon. This carbon is bonded to four different groups: $-\text{H}$, $-\text{OH}$, $-\text{CH}_3$And
 $-\text{COOH}$. A chiral centre (asymmetric carbon) gives rise to two non-superimposable mirror
 images (enantiomers).
 
 Ethanoic acid ($\text{CH}_3\text{COOH}$) has no chiral centre. The carbonyl carbon is bonded to
-$-\text{CH}_3$$=\text{O}$And $-\text{OH}$ (three different groups, but with the double bond, it is
+$-\text{CH}_3$, $=\text{O}$And $-\text{OH}$ (three different groups, but with the double bond, it is
 not $sp^3$ hybridised and cannot be a chiral centre). The methyl carbon is bonded to three hydrogens
 and one carbon (not four different groups).
 

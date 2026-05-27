@@ -174,7 +174,7 @@ Therefore $\int f(g(x))g'(x)\,dx = F(g(x)) + C$. $\blacksquare$
 
 **Example.** Find $\displaystyle\int 2x\sqrt{x^2+1}\,dx$.
 
-Let $u = x^2 + 1$$du = 2x\,dx$.
+Let $u = x^2 + 1$, $du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
@@ -185,7 +185,7 @@ $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2
 For a definite integral, you can either:
 
 - Substitute back to $x$ before evaluating, or
-- Change the limits: when $x = a$$u = g(a)$; when $x = b$$u = g(b)$.
+- Change the limits: when $x = a$, $u = g(a)$; when $x = b$, $u = g(b)$.
 
 <hr />
 
@@ -216,7 +216,7 @@ From the leftmost category that appears.
 
 **Example.** Find $\displaystyle\int x e^x\,dx$.
 
-Let $u = x$$dv = e^x\,dx$. Then $du = dx$$v = e^x$.
+Let $u = x$, $dv = e^x\,dx$. Then $du = dx$, $v = e^x$.
 
 $$\int x e^x\,dx = x e^x - \int e^x\,dx = x e^x - e^x + C = e^x(x-1) + C$$
 
@@ -226,7 +226,7 @@ Integration by parts can produce **reduction formulas** relating $I_n$ to $I_{n-
 
 **Example.** Find a reduction formula for $I_n = \displaystyle\int x^n e^x\,dx$.
 
-Let $u = x^n$$dv = e^x\,dx$. Then $du = nx^{n-1}\,dx$$v = e^x$.
+Let $u = x^n$, $dv = e^x\,dx$. Then $du = nx^{n-1}\,dx$, $v = e^x$.
 
 $$I_n = x^n e^x - n\int x^{n-1} e^x\,dx = x^n e^x - nI_{n-1}$$
 
@@ -343,7 +343,7 @@ Find $\displaystyle\int \frac{2x}{x^2+3}\,dx$.
 
 <details>
 <summary>Solution 3</summary>
-Let $u = x^2 + 3$$du = 2x\,dx$.
+Let $u = x^2 + 3$, $du = 2x\,dx$.
 
 $$\int \frac{2x}{x^2+3}\,dx = \int \frac{1}{u}\,du = \ln|u| + C = \ln(x^2+3) + C$$
 
@@ -361,7 +361,7 @@ Evaluate $\displaystyle\int_0^{\pi/2} x\sin x\,dx$.
 
 <details>
 <summary>Solution 4</summary>
-Integration by parts: $u = x$$dv = \sin x\,dx$. Then $du = dx$$v = -\cos x$.
+Integration by parts: $u = x$, $dv = \sin x\,dx$. Then $du = dx$, $v = -\cos x$.
 
 $$\int x\sin x\,dx = -x\cos x + \int \cos x\,dx = -x\cos x + \sin x + C$$
 
@@ -378,7 +378,7 @@ Use the trapezium rule with 4 strips to approximate $\displaystyle\int_0^2 \frac
 
 <details>
 <summary>Solution 5</summary>
-$h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$$y_1 = 1/(1+0.25) = 0.8$$y_2 = 1/(1+1) = 0.5$$y_3 = 1/(1+2.25) \approx 0.3077$$y_4 = 1/5 = 0.2$.
+$h = \dfrac{2-0}{4} = 0.5$. Values: $y_0 = 1$, $y_1 = 1/(1+0.25) = 0.8$, $y_2 = 1/(1+1) = 0.5$, $y_3 = 1/(1+2.25) \approx 0.3077$, $y_4 = 1/5 = 0.2$.
 
 $$\mathrm{Approx} = \frac{0.5}{2}\left[1 + 2(0.8) + 2(0.5) + 2(0.3077) + 0.2\right] = 0.25[1 + 1.6 + 1.0 + 0.6154 + 0.2] = 0.25 \times 4.4154 \approx 1.104$$
 
@@ -414,7 +414,7 @@ Find a reduction formula for $I_n = \displaystyle\int_0^{\pi/2} \sin^n x\,dx$ fo
 <summary>Solution 7</summary>
 $I_n = \int_0^{\pi/2}\sin^{n-1}x \cdot \sin x\,dx$.
 
-Let $u = \sin^{n-1}x$$dv = \sin x\,dx$. $du = (n-1)\sin^{n-2}x\cos x\,dx$$v = -\cos x$.
+Let $u = \sin^{n-1}x$, $dv = \sin x\,dx$. $du = (n-1)\sin^{n-2}x\cos x\,dx$, $v = -\cos x$.
 
 $$I_n = \left[-\sin^{n-1}x\cos x\right]_0^{\pi/2} + (n-1)\int_0^{\pi/2}\sin^{n-2}x\cos^2 x\,dx$$
 
@@ -458,11 +458,11 @@ Find $\displaystyle\int e^{2x}\cos x\,dx$.
 <summary>Solution 9</summary>
 Apply integration by parts twice. Let $I = \int e^{2x}\cos x\,dx$.
 
-First: $u = e^{2x}$$dv = \cos x\,dx$. $du = 2e^{2x}\,dx$$v = \sin x$.
+First: $u = e^{2x}$, $dv = \cos x\,dx$. $du = 2e^{2x}\,dx$, $v = \sin x$.
 
 $I = e^{2x}\sin x - 2\int e^{2x}\sin x\,dx$.
 
-Second: $u = e^{2x}$$dv = \sin x\,dx$. $du = 2e^{2x}\,dx$$v = -\cos x$.
+Second: $u = e^{2x}$, $dv = \sin x\,dx$. $du = 2e^{2x}\,dx$, $v = -\cos x$.
 
 $\int e^{2x}\sin x\,dx = -e^{2x}\cos x + 2\int e^{2x}\cos x\,dx = -e^{2x}\cos x + 2I$.
 
@@ -483,7 +483,7 @@ Evaluate $\displaystyle\int_1^e \frac◆LB◆\ln x◆RB◆◆LB◆x◆RB◆\,dx$
 
 <details>
 <summary>Solution 10</summary>
-Let $u = \ln x$$du = \dfrac{1}{x}\,dx$.
+Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$.
 
 $$\int \frac◆LB◆\ln x◆RB◆◆LB◆x◆RB◆\,dx = \int u\,du = \frac{u^2}{2} + C = \frac◆LB◆(\ln x)^2◆RB◆◆LB◆2◆RB◆ + C$$
 
@@ -496,7 +496,7 @@ Section 5.
 
 <details>
 <summary>Problem 11</summary>
-The curve $C$ has parametric equations $x = t^2$$y = 2t$ for $0 \leq t \leq 3$. Find the area under $C$.
+The curve $C$ has parametric equations $x = t^2$, $y = 2t$ for $0 \leq t \leq 3$. Find the area under $C$.
 </details>
 
 <details>

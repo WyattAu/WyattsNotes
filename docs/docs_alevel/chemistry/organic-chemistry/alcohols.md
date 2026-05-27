@@ -233,7 +233,7 @@ functional class. The following summary shows the key transformations:
 | Aldehyde                | Distillation with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (primary alcohol only) |
 | Carboxylic acid         | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (primary alcohol only)       |
 | Ketone                  | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$ (secondary alcohol)          |
-| Halogenoalkane          | $\mathrm{PBr}_3$$\mathrm{SOCl}_2$Or conc. $\mathrm{HBr}$                                   |
+| Halogenoalkane          | $\mathrm{PBr}_3$, $\mathrm{SOCl}_2$Or conc. $\mathrm{HBr}$                                   |
 | Ester                   | Carboxylic acid + concentrated $\mathrm{H}_2\mathrm{SO}_4$                                 |
 | Ether                   | Williamson ether synthesis (deprotonation with Na, then $\mathrm{R}'\mathrm{Br}$)          |
 

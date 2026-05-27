@@ -301,7 +301,7 @@ $$
 \mathrm{mol O_2 = \frac{40.0}{32.00} = 1.250
 $$
 
-Divide by coefficients: $\mathrm{NH_3: 1.468/4 = 0.367$$\mathrm{O_2: 1.250/5 = 0.250$.
+Divide by coefficients: $\mathrm{NH_3: 1.468/4 = 0.367$, $\mathrm{O_2: 1.250/5 = 0.250$.
 
 $\mathrm{O_2$ is limiting.
 
@@ -452,7 +452,7 @@ For an ideal gas: $P_i = \chi_i \cdot P_{\mathrm{total}$Where $\chi_i$ is the mo
 
 ### STP
 
-Standard Temperature and Pressure: $T = 273.15 \mathrm{ K$$P = 1 \mathrm{ atm$.
+Standard Temperature and Pressure: $T = 273.15 \mathrm{ K$, $P = 1 \mathrm{ atm$.
 
 At STP, one mole of ideal gas occupies $22.4 \mathrm{ L$.
 
@@ -487,13 +487,13 @@ Or using molar volume at STP: $V = 0.0612 \times 22.4 = 1.37 \mathrm{ L$.
 
 ### Derivation: The Ideal Gas Law from Empirical Laws
 
-Boyle's law: $PV = k_1$ (at constant $T$$n$). Charles's law: $V/T = k_2$ (at constant $P$$n$).
-Avogadro's law: $V/n = k_3$ (at constant $P$$T$). Combining all three: $PV/(nT) = k = R$Giving
+Boyle's law: $PV = k_1$ (at constant $T$, $n$). Charles's law: $V/T = k_2$ (at constant $P$, $n$).
+Avogadro's law: $V/n = k_3$ (at constant $P$, $T$). Combining all three: $PV/(nT) = k = R$Giving
 $PV = nRT$.
 
 ### Derivation: Molar Volume at STP
 
-At STP ($T = 273.15 \mathrm{ K$$P = 1.00 \mathrm{ atm$):
+At STP ($T = 273.15 \mathrm{ K$, $P = 1.00 \mathrm{ atm$):
 
 $$V = \frac{nRT}{P} = \frac{(1.00)(0.08206)(273.15)}{1.00} = 22.4 \mathrm{ L$$
 
@@ -527,25 +527,25 @@ $$V = \frac{nRT}{P} = \frac{(0.00245)(0.08206)(298)}{0.949} = 0.0630 \mathrm{ L 
 
 | Soluble                                     | Exceptions                                                        |
 | ------------------------------------------- | ----------------------------------------------------------------- |
-| $\mathrm{Na^+$$\mathrm{K^+$$\mathrm{NH_4^+$ | None                                                              |
+| $\mathrm{Na^+$, $\mathrm{K^+$, $\mathrm{NH_4^+$ | None                                                              |
 | Nitrates ($\mathrm{NO_3^-$)                 | None                                                              |
 | Acetates ($\mathrm{CH_3\mathrm{COO^-$)      | None                                                              |
-| Chlorides ($\mathrm{Cl^-$)                  | $\mathrm{Ag^+$$\mathrm{Pb^{2+}$$\mathrm{Hg_2^{2+}$                |
-| Sulfates ($\mathrm{SO_4^{2-}$)              | $\mathrm{Ba^{2+}$$\mathrm{Pb^{2+}$$\mathrm{Ca^{2+}$$\mathrm{Ag^+$ |
+| Chlorides ($\mathrm{Cl^-$)                  | $\mathrm{Ag^+$, $\mathrm{Pb^{2+}$, $\mathrm{Hg_2^{2+}$                |
+| Sulfates ($\mathrm{SO_4^{2-}$)              | $\mathrm{Ba^{2+}$, $\mathrm{Pb^{2+}$, $\mathrm{Ca^{2+}$, $\mathrm{Ag^+$ |
 
 | Insoluble                        | Exceptions                                                                    |
 | -------------------------------- | ----------------------------------------------------------------------------- |
-| Hydroxides ($\mathrm{OH^-$)      | $\mathrm{Na^+$$\mathrm{K^+$$\mathrm{Ba^{2+}$$\mathrm{Ca^{2+}$ (slightly)      |
-| Carbonates ($\mathrm{CO_3^{2-}$) | $\mathrm{Na^+$$\mathrm{K^+$$\mathrm{NH_4^+$                                   |
-| Phosphates ($\mathrm{PO_4^{3-}$) | $\mathrm{Na^+$$\mathrm{K^+$$\mathrm{NH_4^+$                                   |
-| Sulfides ($\mathrm{S^{2-}$)      | $\mathrm{Na^+$$\mathrm{K^+$$\mathrm{NH_4^+$$\mathrm{Ca^{2+}$$\mathrm{Ba^{2+}$ |
+| Hydroxides ($\mathrm{OH^-$)      | $\mathrm{Na^+$, $\mathrm{K^+$, $\mathrm{Ba^{2+}$, $\mathrm{Ca^{2+}$ (slightly)      |
+| Carbonates ($\mathrm{CO_3^{2-}$) | $\mathrm{Na^+$, $\mathrm{K^+$, $\mathrm{NH_4^+$                                   |
+| Phosphates ($\mathrm{PO_4^{3-}$) | $\mathrm{Na^+$, $\mathrm{K^+$, $\mathrm{NH_4^+$                                   |
+| Sulfides ($\mathrm{S^{2-}$)      | $\mathrm{Na^+$, $\mathrm{K^+$, $\mathrm{NH_4^+$, $\mathrm{Ca^{2+}$, $\mathrm{Ba^{2+}$ |
 
 ### Strong Acids and Bases
 
-**Strong acids:** $\mathrm{HCl$$\mathrm{HBr$$\mathrm{HI$$\mathrm{HNO_3$
-$\mathrm{H_2\mathrm{SO_4$$\mathrm{HClO_4$.
+**Strong acids:** $\mathrm{HCl$, $\mathrm{HBr$, $\mathrm{HI$, $\mathrm{HNO_3$
+$\mathrm{H_2\mathrm{SO_4$, $\mathrm{HClO_4$.
 
-**Strong bases:** Group 1 hydroxides, $\mathrm{Ca(OH)_2$$\mathrm{Sr(OH)_2$$\mathrm{Ba(OH)_2$.
+**Strong bases:** Group 1 hydroxides, $\mathrm{Ca(OH)_2$, $\mathrm{Sr(OH)_2$, $\mathrm{Ba(OH)_2$.
 
 Only strong electrolytes are split into ions in the complete ionic equation. Weak acids and bases
 Are written as intact molecules.

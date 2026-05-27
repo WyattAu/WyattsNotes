@@ -828,7 +828,7 @@ the brakes apply a force of $4000 \mathrm{ N$Calculate the stopping distance.
 
 $E_k = \frac{1}{2}mv^2 = 0.5 \times 800 \times 400 = 160,000 \mathrm{ J$.
 
-Work done by brakes = $F \times d = E_k$: $4000 \times d = 160,000$$d = 40 \mathrm{ m$.
+Work done by brakes = $F \times d = E_k$: $4000 \times d = 160,000$, $d = 40 \mathrm{ m$.
 
 </details>
 

@@ -59,7 +59,7 @@ In $ClF_{3}$:
 
 **Question**
 
-Consider the following molecules: $CF_{4}$$CH_{2}F_{2}$$CHF_{3}$.
+Consider the following molecules: $CF_{4}$, $CH_{2}F_{2}$, $CHF_{3}$.
 
 (a) For each molecule, determine whether the $C-F$ bond is polar. [1 mark]
 
@@ -102,13 +102,13 @@ $CH_{2}F_{2}$ more than compensate, giving it a significantly higher boiling poi
 **Question**
 
 (a) Explain why ammonia ($NH_{3}$) has a higher boiling point ($-33\degree C$) than phosphine
-($PH_{3}$$-88\degree C$), despite phosphine having a higher molar mass. [3 marks]
+($PH_{3}$, $-88\degree C$), despite phosphine having a higher molar mass. [3 marks]
 
 (b) A student claims that hydrogen bonding exists between molecules of hydrogen chloride ($HCl$).
 Evaluate this claim. [2 marks]
 
 (c) Explain why water ($H_{2}O$) has a significantly higher boiling point ($100\degree C$) than
-hydrogen sulphide ($H_{2}S$$-60\degree C$), even though both are Group 16 hydrides. [3 marks]
+hydrogen sulphide ($H_{2}S$, $-60\degree C$), even though both are Group 16 hydrides. [3 marks]
 
 ---
 
@@ -125,8 +125,8 @@ $PH_{3}$ cannot form hydrogen bonds because phosphorus is **not sufficiently ele
 hydrogen bonding in $NH_{3}$ far outweighs the stronger London forces in $PH_{3}$.
 
 (b) The claim is **incorrect**. Although $HCl$ has a polar $H-Cl$ bond, **hydrogen bonding only
-occurs when hydrogen is bonded to fluorine, oxygen, or nitrogen** ($F$$O$$N$). Chlorine is not
-electronegative enough ($EN = 3.0$ vs $F = 4.0$$O = 3.5$$N = 3.0$ -- actually $N = 3.0$ is
+occurs when hydrogen is bonded to fluorine, oxygen, or nitrogen** ($F$, $O$, $N$). Chlorine is not
+electronegative enough ($EN = 3.0$ vs $F = 4.0$, $O = 3.5$, $N = 3.0$ -- actually $N = 3.0$ is
 borderline, but nitrogen's small size allows orbital overlap; chlorine is too large). $HCl$ has
 dipole-dipole interactions and London dispersion forces only.
 

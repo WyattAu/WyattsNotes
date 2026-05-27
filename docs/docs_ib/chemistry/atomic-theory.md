@@ -133,7 +133,7 @@ Each electron is described by four quantum numbers:
 | Magnetic  | $m_l$  | Orbital orientation  | $-l, \ldots, 0, \ldots, +l$  |
 | Spin      | $m_s$  | Spin direction       | $+\frac{1}{2}, -\frac{1}{2}$ |
 
-Subshell notation: $l = 0 \to s$$l = 1 \to p$$l = 2 \to d$$l = 3 \to f$.
+Subshell notation: $l = 0 \to s$, $l = 1 \to p$, $l = 2 \to d$, $l = 3 \to f$.
 
 ### Aufbau Principle
 
@@ -227,7 +227,7 @@ $$
 
 :::info[Example]
 
-For the $3p$ orbital ($n = 3$$l = 1$):
+For the $3p$ orbital ($n = 3$, $l = 1$):
 
 - Total nodes $= 2$
 - Angular nodes $= 1$ (the nodal plane through the nucleus)
@@ -322,7 +322,7 @@ This reveals the number of valence electrons.
 
 :::info[Example — Silicon ($Z = 14$)]
 
-$IE_1 = 787$$IE_2 = 1577$$IE_3 = 3228$$IE_4 = 4356$$IE_5 = 16091\mathrm{ kJ/mol}$
+$IE_1 = 787$, $IE_2 = 1577$, $IE_3 = 3228$, $IE_4 = 4356$, $IE_5 = 16091\mathrm{ kJ/mol}$
 
 The large jump from $IE_4$ to $IE_5$ indicates 4 valence electrons, consistent with silicon
 ($[\mathrm{Ne}]\, 3s^2\, 3p^2$).
@@ -425,8 +425,8 @@ In energy. Therefore, upon ionization, the $4s$ electrons (now at higher energy)
 <details>
 <summary>Problem 2</summary>
 
-The first five ionization energies of an element are (in $\mathrm{kJ/mol}$): $578$$1817$$2745$
-$11577$$14842$. Identify the element and explain your reasoning.
+The first five ionization energies of an element are (in $\mathrm{kJ/mol}$): $578$, $1817$, $2745$
+$11577$, $14842$. Identify the element and explain your reasoning.
 
 **Solution:**
 
@@ -434,7 +434,7 @@ The large jump occurs between $IE_3$ and $IE_4$ (from $2745$ to $11577\mathrm{ k
 That the first three electrons are valence electrons and the fourth is from an inner shell. This
 Corresponds to a Group 13 element with three valence electrons.
 
-$IE_1 = 578\mathrm{ kJ/mol}$ matches aluminium ($\mathrm{Al}$$Z = 13$Configuration
+$IE_1 = 578\mathrm{ kJ/mol}$ matches aluminium ($\mathrm{Al}$, $Z = 13$Configuration
 $[\mathrm{Ne}]\, 3s^2\, 3p^1$).
 
 </details>
@@ -479,7 +479,7 @@ Hund's rule), so it is strongly paramagnetic.
 
 **Worked Example: Full electron configuration and quantum numbers**
 
-Write the full electron configuration of vanadium ($\mathrm{V}$$Z = 23$). State the four quantum
+Write the full electron configuration of vanadium ($\mathrm{V}$, $Z = 23$). State the four quantum
 Numbers for each of the five valence electrons.
 
 <details>
@@ -511,8 +511,8 @@ Principle. The three $3d$ electrons have parallel spins, maximising exchange ene
 
 **Worked Example: Identifying an element from successive ionization energies**
 
-The first five ionization energies of an element are (in $\mathrm{kJ/mol}$): $578$$1817$$2745$
-$11577$$14842$. Identify the element and justify your reasoning.
+The first five ionization energies of an element are (in $\mathrm{kJ/mol}$): $578$, $1817$, $2745$
+$11577$, $14842$. Identify the element and justify your reasoning.
 
 <details>
 <summary>Solution</summary>
@@ -530,7 +530,7 @@ An inner shell. This corresponds to a Group 13 element.
 
 **Step 3: Identify the element.**
 
-$IE_1 = 578\mathrm{ kJ/mol}$ matches aluminium ($\mathrm{Al}$$Z = 13$Configuration
+$IE_1 = 578\mathrm{ kJ/mol}$ matches aluminium ($\mathrm{Al}$, $Z = 13$Configuration
 $[\mathrm{Ne}]\, 3s^2\, 3p^1$).
 
 **Step 4: Verify.**
@@ -686,8 +686,8 @@ $\mathrm{Co}^{2+}$ is **paramagnetic** with three unpaired electrons.
    unpaired electrons and state whether the ion is paramagnetic or diamagnetic. Explain why
    $\mathrm{Fe}^{3+}$ is more stable than $\mathrm{Fe}^{2+}$ in many compounds. **[Medium]**
 
-2. The first five ionization energies of an element are: $IE_1 = 1090$$IE_2 = 2353$
-   $IE_3 = 4621$$IE_4 = 6223$$IE_5 = 37831\mathrm{ kJ/mol}$. (a) Identify the element. (b) Write the
+2. The first five ionization energies of an element are: $IE_1 = 1090$, $IE_2 = 2353$
+   $IE_3 = 4621$, $IE_4 = 6223$, $IE_5 = 37831\mathrm{ kJ/mol}$. (a) Identify the element. (b) Write the
    equation for the process corresponding to $IE_5$. (c) Explain the large jump between $IE_4$ and
    $IE_5$. **[Medium]**
 
@@ -704,19 +704,19 @@ $\mathrm{Co}^{2+}$ is **paramagnetic** with three unpaired electrons.
    expected $[\mathrm{Ar}]\, 4s^2\, 3d^4$. Reference exchange energy and subshell stability in your
    explanation. Why does this exception not extend to elements beyond copper? **[Medium]**
 
-6. The first four ionization energies of an element are: $738$$1451$$7733$$10541\mathrm{ kJ/mol}$.
+6. The first four ionization energies of an element are: $738$, $1451$, $7733$, $10541\mathrm{ kJ/mol}$.
    (a) Identify the element. (b) Write the equation for the process corresponding to $IE_3$. (c)
    Explain why $IE_3$ is so much larger than $IE_2$. (d) Would you expect this element to form a
    $+2$ or $+3$ ion more readily? Justify. **[Easy]**
 
 7. Calculate the de Broglie wavelength of an electron traveling at $2.0 \times 10^6\mathrm{ m/s}$.
-   ($h = 6.626 \times 10^{-34}\mathrm{ J \cdot s}$$m_e = 9.109 \times 10^{-31}\mathrm{ kg}$). Is
+   ($h = 6.626 \times 10^{-34}\mathrm{ J \cdot s}$, $m_e = 9.109 \times 10^{-31}\mathrm{ kg}$). Is
    this wavelength consistent with wave-like behavior on the atomic scale (comparable to bond
    lengths of $\sim 100\mathrm{ pm}$)? **[Medium]**
 
 8. State whether each of the following sets of quantum numbers is permitted or not permitted. If not
-   permitted, explain why. (a) $n=2$$l=2$$m_l=0$$m_s=+\tfrac{1}{2}$ (b) $n=3$$l=1$ $m_l=-1$$m_s=0$
-   (c) $n=4$$l=3$$m_l=-3$$m_s=-\tfrac{1}{2}$ (d) $n=1$$l=0$$m_l=1$ $m_s=+\tfrac{1}{2}$ **[Easy]**
+   permitted, explain why. (a) $n=2$, $l=2$, $m_l=0$, $m_s=+\tfrac{1}{2}$ (b) $n=3$, $l=1$ $m_l=-1$, $m_s=0$
+   (c) $n=4$, $l=3$, $m_l=-3$, $m_s=-\tfrac{1}{2}$ (d) $n=1$, $l=0$, $m_l=1$ $m_s=+\tfrac{1}{2}$ **[Easy]**
 
 ---
 

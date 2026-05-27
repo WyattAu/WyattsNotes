@@ -38,19 +38,19 @@ $$z_k = 16^{1/4} \cdot e^{i(\pi + 2k\pi)/4} = 2e^{i(2k+1)\pi/4}, \quad k = 0, 1,
 **(b)**
 
 - $k = 0$:
-  $z_0 = 2e^{i\pi/4} = 2\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right) = \sqrt{2} + i\sqrt{2}$$\arg = \frac{\pi}{4}$
+  $z_0 = 2e^{i\pi/4} = 2\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right) = \sqrt{2} + i\sqrt{2}$, $\arg = \frac{\pi}{4}$
 - $k = 1$:
-  $z_1 = 2e^{i3\pi/4} = 2\left(\cos\frac{3\pi}{4} + i\sin\frac{3\pi}{4}\right) = -\sqrt{2} + i\sqrt{2}$$\arg = \frac{3\pi}{4}$
+  $z_1 = 2e^{i3\pi/4} = 2\left(\cos\frac{3\pi}{4} + i\sin\frac{3\pi}{4}\right) = -\sqrt{2} + i\sqrt{2}$, $\arg = \frac{3\pi}{4}$
 - $k = 2$:
-  $z_2 = 2e^{i5\pi/4} = 2\left(\cos\frac{5\pi}{4} + i\sin\frac{5\pi}{4}\right) = -\sqrt{2} - i\sqrt{2}$$\arg = -\frac{3\pi}{4}$
+  $z_2 = 2e^{i5\pi/4} = 2\left(\cos\frac{5\pi}{4} + i\sin\frac{5\pi}{4}\right) = -\sqrt{2} - i\sqrt{2}$, $\arg = -\frac{3\pi}{4}$
 - $k = 3$:
-  $z_3 = 2e^{i7\pi/4} = 2\left(\cos\frac{7\pi}{4} + i\sin\frac{7\pi}{4}\right) = \sqrt{2} - i\sqrt{2}$$\arg = -\frac{\pi}{4}$
+  $z_3 = 2e^{i7\pi/4} = 2\left(\cos\frac{7\pi}{4} + i\sin\frac{7\pi}{4}\right) = \sqrt{2} - i\sqrt{2}$, $\arg = -\frac{\pi}{4}$
 
 Note: $\frac{5\pi}{4}$ is normalised to $-\frac{3\pi}{4}$And $\frac{7\pi}{4}$ is normalised to
 $-\frac{\pi}{4}$To satisfy the principal argument range $(-\pi, \pi]$.
 
 **(c)** The student is correct that the arguments differ by $\frac{\pi}{2}$. Starting from
-$\frac{\pi}{4}$: $\frac{3\pi}{4}$$\frac{5\pi}{4}$$\frac{7\pi}{4}$. These are the correct arguments
+$\frac{\pi}{4}$: $\frac{3\pi}{4}$, $\frac{5\pi}{4}$, $\frac{7\pi}{4}$. These are the correct arguments
 before normalisation. The student's method works, but they must remember to normalise arguments
 outside $(-\pi, \pi]$ to the principal range.
 
@@ -104,7 +104,7 @@ Modulus: $|z| = \sqrt{(-1)^2 + (-\sqrt{3})^2} = \sqrt{1 + 3} = 2$.
 
 **(a)** Simplify $\dfrac{(2 + 3i)^2}{1 - i}$Giving your answer in the form $a + bi$.
 
-**(b)** Prove that for any non-zero complex number $z$$\left|z + \dfrac{1}{\bar{z}}\right| \geq 2$.
+**(b)** Prove that for any non-zero complex number $z$, $\left|z + \dfrac{1}{\bar{z}}\right| \geq 2$.
 
 [Difficulty: hard. Tests rationalisation with complex conjugate and modulus inequality proof.]
 
@@ -173,9 +173,9 @@ $$\cos 3\theta = 4\cos^3\theta - 3\cos\theta$$
 
 $$\cos^3\theta = \frac{1}{4}\cos 3\theta + \frac{3}{4}\cos\theta$$
 
-**(b)** Note that $\frac{\pi}{9}$$\frac{5\pi}{9}$And $\frac{7\pi}{9}$ are the three distinct
+**(b)** Note that $\frac{\pi}{9}$, $\frac{5\pi}{9}$And $\frac{7\pi}{9}$ are the three distinct
 solutions to $\cos 3\theta = \cos\frac{\pi}{3} = \frac{1}{2}$Since
-$3 \cdot \frac{\pi}{9} = \frac{\pi}{3}$$3 \cdot \frac{5\pi}{9} = \frac{5\pi}{3}$And
+$3 \cdot \frac{\pi}{9} = \frac{\pi}{3}$, $3 \cdot \frac{5\pi}{9} = \frac{5\pi}{3}$And
 $3 \cdot \frac{7\pi}{9} = \frac{7\pi}{3} = \frac{\pi}{3} - 2\pi$.
 
 So $\cos 3\theta = \frac{1}{2}$ for all three angles. Using the identity:
@@ -186,7 +186,7 @@ Summing over the three values:
 
 $$\sum \cos^3\theta = \sum \frac{1}{8} + \frac{3}{4}\sum \cos\theta = \frac{3}{8} + \frac{3}{4}\sum \cos\theta$$
 
-The values $\cos\frac{\pi}{9}$$\cos\frac{5\pi}{9}$$\cos\frac{7\pi}{9}$ are the three roots of
+The values $\cos\frac{\pi}{9}$, $\cos\frac{5\pi}{9}$, $\cos\frac{7\pi}{9}$ are the three roots of
 $4\cos^3\theta - 3\cos\theta - \frac{1}{2} = 0$I.e., $8x^3 - 6x - 1 = 0$. By Vieta's formula, the
 sum of the roots is zero (coefficient of $x^2$ is $0$).
 
@@ -225,6 +225,6 @@ $$R^2 = \begin{pmatrix} \cos\frac{4\pi}{3} & -\sin\frac{4\pi}{3} \\ \sin\frac{4\
 
 $R^3 = I$ (the identity matrix), since rotating by $2\pi$ returns to the original position.
 
-The connection: $\omega = e^{2\pi i/3}$ corresponds to $R$$\omega^2 = e^{4\pi i/3}$ corresponds to
+The connection: $\omega = e^{2\pi i/3}$ corresponds to $R$, $\omega^2 = e^{4\pi i/3}$ corresponds to
 $R^2$And $\omega^3 = 1$ corresponds to $R^3 = I$. The cube roots of unity $\{1, \omega, \omega^2\}$
 correspond to the matrices $\{I, R, R^2\}$.

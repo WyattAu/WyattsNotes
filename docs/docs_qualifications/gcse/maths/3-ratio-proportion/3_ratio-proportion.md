@@ -146,7 +146,7 @@ $y$ is directly proportional to $x^2$: $y = kx^2$.
 
 $y$ is inversely proportional to $\sqrt{x}$: $y = \frac{k}{\sqrt{x}}$.
 
-**Worked Example.** $y$ is directly proportional to $x^3$. When $x = 2$$y = 24$. Find $y$ when
+**Worked Example.** $y$ is directly proportional to $x^3$. When $x = 2$, $y = 24$. Find $y$ when
 $x = 5$.
 
 $$24 = 8k \implies k = 3$$ $$y = 3 \times 125 = 375$$
@@ -304,7 +304,7 @@ $$F = P \times A = 5000 \times 0.04 = 200 \mathrm{ N$$
 | ------------------------ | ------------------------ |
 | 1 km = 1000 m            | $\times 1000$            |
 | 1 m = 100 cm             | $\times 100$             |
-| 1 hour = 60 min = 3600 s | $\times 60$$\times 3600$ |
+| 1 hour = 60 min = 3600 s | $\times 60$, $\times 3600$ |
 | 1 litre = 1000 cm$^3$    | $\times 1000$            |
 | 1 kg = 1000 g            | $\times 1000$            |
 
@@ -427,7 +427,7 @@ $4(3b/2 + 15) = 5(b + 15)$.
 
 $6b + 60 = 5b + 75$.
 
-$b = 15$$a = 22.5$.
+$b = 15$, $a = 22.5$.
 
 Verify: $22.5 : 15 = 3 : 2$. After adding 15: $37.5 : 30 = 5 : 4$. $\checkmark$
 
@@ -496,7 +496,7 @@ Density $= \frac{0.180}{30 \times 10^{-6}} = \frac{0.180}{0.00003} = 6000 \mathr
 | --- | --- | --- | --- |
 | $y$ | 6   | 12  | 24  |
 
-Check $y/x$: $6/2 = 3$$12/4 = 3$$24/8 = 3$. Constant, so $y$ is directly proportional to $x$. The
+Check $y/x$: $6/2 = 3$, $12/4 = 3$, $24/8 = 3$. Constant, so $y$ is directly proportional to $x$. The
 equation is $y = 3x$.
 
 ### 9.3 Graphical Interpretation of Rates
@@ -581,7 +581,7 @@ $3 \times 1.15 = 3.45$ euros. Net: $575 - 3.45 = 571.55$ euros.
 
 2. The ratio of $A$ to $B$ is $5 : 2$ and $B$ to $C$ is $3 : 4$. Find $A : B : C$.
 
-3. $y$ is inversely proportional to $x^2$. When $x = 3$$y = 12$. Find $y$ when $x = 6$.
+3. $y$ is inversely proportional to $x^2$. When $x = 3$, $y = 12$. Find $y$ when $x = 6$.
 
 4. A car travels 45 km in 30 minutes, then 60 km in 45 minutes. Calculate the average speed for the
    whole journey.
@@ -609,7 +609,7 @@ $3 \times 1.15 = 3.45$ euros. Net: $575 - 3.45 = 571.55$ euros.
 12. Water flows from a tap at a rate of 0.5 litres per second. How long does it take to fill a tank
     of volume 450 litres?
 
-13. $y$ is directly proportional to $x^n$. When $x = 2$$y = 24$. When $x = 4$$y = 192$. Find the
+13. $y$ is directly proportional to $x^n$. When $x = 2$, $y = 24$. When $x = 4$, $y = 192$. Find the
     value of $n$.
 
 14. The ratio of boys to girls in a school is $3 : 5$. If there are 240 more girls than boys, how
@@ -622,7 +622,7 @@ $3 \times 1.15 = 3.45$ euros. Net: $575 - 3.45 = 571.55$ euros.
 
 16. The ratio of the interior angles of a triangle is $2 : 3 : 4$. Find the size of each angle.
 
-17. $y$ is directly proportional to $\sqrt{x}$. When $x = 9$$y = 18$. Find $y$ when $x = 25$.
+17. $y$ is directly proportional to $\sqrt{x}$. When $x = 9$, $y = 18$. Find $y$ when $x = 25$.
 
 18. A train travels at 120 km/h for 45 minutes, then at 80 km/h for 1 hour 15 minutes. Calculate the
     average speed for the entire journey.

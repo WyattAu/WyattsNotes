@@ -557,7 +557,7 @@ And potential drops across resistors are negative.
 
 Consider a circuit with two cells and three resistors. Cell 1 has emf
 $\varepsilon_1 = 12\mathrm{ V}$ and cell 2 has emf $\varepsilon_2 = 6\mathrm{ V}$ (opposing). The
-Resistors are $R_1 = 4\,\Omega$$R_2 = 6\,\Omega$And $R_3 = 2\,\Omega$All in series with the Cells.
+Resistors are $R_1 = 4\,\Omega$, $R_2 = 6\,\Omega$And $R_3 = 2\,\Omega$All in series with the Cells.
 
 Applying KVL around the single loop (travelling clockwise):
 
@@ -577,7 +577,7 @@ $$
 I = 0.50\mathrm{ A}
 $$
 
-The p.d. Across each resistor: $V_1 = 2.0\mathrm{ V}$$V_2 = 3.0\mathrm{ V}$ $V_3 = 1.0\mathrm{ V}$.
+The p.d. Across each resistor: $V_1 = 2.0\mathrm{ V}$, $V_2 = 3.0\mathrm{ V}$ $V_3 = 1.0\mathrm{ V}$.
 These sum to $6\mathrm{ V}$Which equals the net emf of $12 - 6 = 6\mathrm{ V}$Confirming energy
 conservation.
 
@@ -651,7 +651,7 @@ The sensitivity of the bridge is greatest when all four arms have similar resist
 <details>
 <summary>Worked Example: Wheatstone Bridge</summary>
 
-A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 150\,\Omega$. The Unknown
+A Wheatstone bridge has $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$And $R_3 = 150\,\Omega$. The Unknown
 resistor $R_x$ is in the fourth arm. The galvanometer reads zero.
 
 At balance:
@@ -1080,7 +1080,7 @@ This method works for any circuit topology, regardless of complexity.
 <summary>Worked Example: Multi-Loop Circuit</summary>
 
 Two cells are connected in parallel across a common load. Cell 1 has
-$\varepsilon_1 = 12\mathrm{ V}$$r_1 = 1.0\,\Omega$. Cell 2 has $\varepsilon_2 = 10\mathrm{ V}$
+$\varepsilon_1 = 12\mathrm{ V}$, $r_1 = 1.0\,\Omega$. Cell 2 has $\varepsilon_2 = 10\mathrm{ V}$
 $r_2 = 2.0\,\Omega$. The load resistor is $R_L = 5.0\,\Omega$.
 
 Let $I_1$ be the current from cell 1, $I_2$ from cell 2, and $I_L$ through the load (all assumed
@@ -1231,7 +1231,7 @@ The force is attractive (opposite charges).
 
 ### Problem 2
 
-An electron ($m_e = 9.11 \times 10^{-31}\,\mathrm{kg}$$e = 1.6 \times 10^{-19}\,\mathrm{C}$) Is
+An electron ($m_e = 9.11 \times 10^{-31}\,\mathrm{kg}$, $e = 1.6 \times 10^{-19}\,\mathrm{C}$) Is
 suspended stationary between two horizontal parallel plates. The plates are $8.0\,\mathrm{mm}$
 Apart. Find the potential difference across the plates.
 
@@ -1392,7 +1392,7 @@ $$\eta = \frac{R}{R + r} = \frac{7.0}{7.0 + 3.0} = 70\%$$
 
 ### Problem 8
 
-In a Wheatstone bridge, $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$And $R_3 = 50\,\Omega$. Find the Value
+In a Wheatstone bridge, $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$And $R_3 = 50\,\Omega$. Find the Value
 of the unknown resistance $R_4$ for which the galvanometer reads zero. If $R_4$ is instead
 $120\,\Omega$In which direction does current flow through the galvanometer?
 

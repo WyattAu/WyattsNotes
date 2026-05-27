@@ -272,7 +272,7 @@ A car of mass $1200$ kg accelerates from rest to $25$ m s$^{-1}$ in $8.0$ s. Cal
 
 (b) $P = \frac◆LB◆\Delta E_k◆RB◆◆LB◆\Delta t◆RB◆ = \frac{375\,000}{8.0} = 46\,900$ W $= 46.9$ kW.
 
-(c) $P = Fv_{\mathrm{avg}}$$v_{\mathrm{avg}} = 12.5$ m s$^{-1}$. $F = 46\,900/12.5 = 3750$ N.
+(c) $P = Fv_{\mathrm{avg}}$, $v_{\mathrm{avg}} = 12.5$ m s$^{-1}$. $F = 46\,900/12.5 = 3750$ N.
 Alternatively, $F = ma = 1200 \times 25/8 = 3750$ N.
 
 <b>If you get this wrong, revise:</b> [Kinetic Energy](#2-kinetic-energy) and
@@ -516,7 +516,7 @@ Maximum speed of the car (terminal velocity), (b) the power at this speed.
 
 **Answer.** (a) At maximum speed, driving force equals resistive force: $3000 = 300 + 2v^2$.
 
-$2v^2 = 2700$$v^2 = 1350$$v = 36.7$ m s$^{-1} \approx 132$ km h$^{-1}$.
+$2v^2 = 2700$, $v^2 = 1350$, $v = 36.7$ m s$^{-1} \approx 132$ km h$^{-1}$.
 
 (b) $P = Fv = 3000 \times 36.7 = 110\,100$ W $= 110$ kW.
 

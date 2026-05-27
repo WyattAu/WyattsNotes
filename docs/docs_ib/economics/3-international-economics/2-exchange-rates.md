@@ -346,7 +346,7 @@ $$\implies \text{Currency crisis} \implies \text{Banking crisis} \implies \text{
 
 The EUR/USD rate moves from 1.10 to 1.20. The euro has appreciated by:
 
-$$\frac{1.20 - 1.10}{1.10} \times 100 = 9.09\%$$
+$, $\frac{1.20 - 1.10}{1.10} \times 100 = 9.09\%$, $
 
 European exports become 9.09% more expensive for US buyers. European imports from the US become
 cheaper.

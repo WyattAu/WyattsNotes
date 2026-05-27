@@ -148,7 +148,7 @@ Shift binary point right 3 positions: $1.01 \times 2^{-3}$
 
 The normalised form is $1.01 \times 2^{-3}$.
 
-In IEEE 754: $e = -3$$E = -3 + 127 = 124 = 01111100_2$.
+In IEEE 754: $e = -3$, $E = -3 + 127 = 124 = 01111100_2$.
 
 </details>
 
@@ -225,7 +225,7 @@ Note: CIE uses an **explicit** leading 0 (not the hidden 1 of IEEE 754).
 <details>
 <summary>Example: Decode CIE 8-bit `0 1010 110`</summary>
 
-$S = 0$ (positive) $E = 1010_2 = 10$$e = 10 - 8 = 2$ $M = 110$
+$S = 0$ (positive) $E = 1010_2 = 10$, $e = 10 - 8 = 2$ $M = 110$
 
 Value: $+0.110_2 \times 2^2 = 0.75 \times 4 = 3.0_{10}$
 
@@ -275,7 +275,7 @@ Convert to binary, normalise, determine sign, exponent (with bias 127), and mant
 
 $14.25_{10} = 1110.01_2 = 1.11001 \times 2^3$
 
-$S = 1$$E = 3 + 127 = 130 = 10000010_2$$M = 11001000000000000000000$
+$S = 1$, $E = 3 + 127 = 130 = 10000010_2$, $M = 11001000000000000000000$
 
 Binary: `1 10000010 11001000000000000000000`
 
@@ -297,7 +297,7 @@ Convert hex to binary, split into sign, exponent, mantissa fields.
 
 `BF800000` = `10111111 10000000 00000000 00000000`
 
-$S = 1$$E = 01111111_2 = 127$$e = 0$$M = 000\ldots0$
+$S = 1$, $E = 01111111_2 = 127$, $e = 0$, $M = 000\ldots0$
 
 Value: $-1.0 \times 2^0 = -1.0$
 
@@ -309,7 +309,7 @@ Zero?
 <details>
 <summary>Hint</summary>
 
-Check the special values table: $E = 0$$M = 0$.
+Check the special values table: $E = 0$, $M = 0$.
 
 </details>
 
@@ -338,7 +338,7 @@ Convert to binary, express as $0.MMM \times 2^{e}$ with bias 8.
 
 $9.75 = 1001.11_2 = 0.100111 \times 2^4$
 
-$S = 0$$E = 4 + 8 = 12 = 1100_2$$M = 100$ (truncate)
+$S = 0$, $E = 4 + 8 = 12 = 1100_2$, $M = 100$ (truncate)
 
 Result: `0 1100 100`
 
@@ -359,7 +359,7 @@ Write $0.2$ as a fraction in lowest terms. Apply the same argument used for $0.1
 $0.2 = \frac{2}{10} = \frac{1}{5}$
 
 For a finite binary expansion, the denominator must divide a power of 2 when the fraction is in
-Lowest terms. Since $5$ is prime and does not divide any power of $2$$1/5$ has no finite binary
+Lowest terms. Since $5$ is prime and does not divide any power of $2$, $1/5$ has no finite binary
 Representation. $\square$
 
 </details>
@@ -425,7 +425,7 @@ Count the combinations of sign, exponent, and mantissa for each category.
 Normalised: Exponent $E$ ranges from 1 to 254 (254 values). Mantissa $M$ has $2^{23}$ values. Sign
 Has 2 values. Total: $2 \times 254 \times 2^{23} = 4,261,412,864$.
 
-Denormalised: $E = 0$$M \neq 0$. Total: $2 \times (2^{23} - 1) = 16,777,214$.
+Denormalised: $E = 0$, $M \neq 0$. Total: $2 \times (2^{23} - 1) = 16,777,214$.
 
 </details>
 
@@ -445,7 +445,7 @@ Think about the precision of single-precision float relative to the magnitude of
 Single precision has approximately 7 decimal digits of precision. When $a = 10^7$The smallest
 Representable difference between consecutive floats near $a$ is approximately
 $a \times \epsilon \approx 10^7 \times 10^{-7} = 1$. Since $b = 10^{-8}$ is much smaller than the
-Gap between representable numbers near $a$$a + b$ rounds to $a$ itself. Then $a - a = 0$.
+Gap between representable numbers near $a$, $a + b$ rounds to $a$ itself. Then $a - a = 0$.
 
 This is an example of **cancellation error** combined with **limited precision**.
 
@@ -524,7 +524,7 @@ IEEE 754 has both $+0$ and $-0$:
 
 They compare equal (`+0 == -0` is true), but their sign bits differ. This matters for:
 
-- Division: $1 / +0 = +\infty$$1 / -0 = -\infty$
+- Division: $1 / +0 = +\infty$, $1 / -0 = -\infty$
 - Square root: $\sqrt{-0} = -0$
 - Complex arithmetic where the sign of zero indicates direction
 

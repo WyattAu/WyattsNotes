@@ -120,7 +120,7 @@ equal in magnitude but opposite in direction (the Lagrange point L1). Calculate 
 point from the centre of the Earth.
 
 Take:
-$G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \times 10^{24}\,\text{kg}$$M_M = 7.35 \times 10^{22}\,\text{kg}$$R_M = 1.74 \times 10^6\,\text{m}$Earth-Moon
+$G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$, $M_E = 5.97 \times 10^{24}\,\text{kg}$, $M_M = 7.35 \times 10^{22}\,\text{kg}$, $R_M = 1.74 \times 10^6\,\text{m}$Earth-Moon
 distance $= 3.84 \times 10^8\,\text{m}$.
 
 **Solution:**
@@ -178,7 +178,7 @@ radius. Calculate the ratio of their orbital speeds and the ratio of their total
 mass.
 
 Take
-$G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \times 10^{24}\,\text{kg}$$R_E = 6.37 \times 10^6\,\text{m}$.
+$G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$, $M_E = 5.97 \times 10^{24}\,\text{kg}$, $R_E = 6.37 \times 10^6\,\text{m}$.
 
 **Solution:**
 

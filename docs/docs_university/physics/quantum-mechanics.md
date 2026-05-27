@@ -633,7 +633,7 @@ $\blacksquare$
 ### 4.4 Proof of the Generalised Uncertainty Principle
 
 **Theorem 4.5 (Robertson-Schrodinger inequality).** For any state $|\psi\rangle$ and observables
-$\hat◆LB◆A◆RB◆$$\hat◆LB◆B◆RB◆$:
+$\hat◆LB◆A◆RB◆$, $\hat◆LB◆B◆RB◆$:
 
 $$\sigma_A^2\,\sigma_B^2 \geq \frac◆LB◆1◆RB◆◆LB◆4◆RB◆|\langle[\hat◆LB◆A◆RB◆, \hat◆LB◆B◆RB◆]\rangle|^2 + \frac◆LB◆1◆RB◆◆LB◆4◆RB◆\langle\{\Delta\hat◆LB◆A◆RB◆, \Delta\hat◆LB◆B◆RB◆\}\rangle^2$$
 
@@ -844,7 +844,7 @@ The eigenfunctions involve Hermite polynomials $H_n$:
 
 $$\phi_n(x) = \left(\frac◆LB◆m\omega◆RB◆◆LB◆\pi\hbar◆RB◆\right)^◆LB◆1/4◆RB◆ \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2^n n!◆RB◆◆RB◆ H_n\!\left(\sqrt◆LB◆\frac◆LB◆m\omega◆RB◆◆LB◆\hbar◆RB◆◆RB◆\,x\right) e^◆LB◆-m\omega x^2/(2\hbar)◆RB◆$$
 
-The first few Hermite polynomials are $H_0(\xi) = 1$$H_1(\xi) = 2\xi$$H_2(\xi) = 4\xi^2 - 2$.
+The first few Hermite polynomials are $H_0(\xi) = 1$, $H_1(\xi) = 2\xi$, $H_2(\xi) = 4\xi^2 - 2$.
 
 **Example 5.1.** Using the ladder operators, find $\phi_1(x)$ from $\phi_0(x)$.
 
@@ -1260,7 +1260,7 @@ radius.
 
 #### 6.5.3 Expectation Values for the Ground State
 
-**Example 6.1.** Calculate $\langle r \rangle$$\langle r^2 \rangle$And $\langle 1/r \rangle$ for the
+**Example 6.1.** Calculate $\langle r \rangle$, $\langle r^2 \rangle$And $\langle 1/r \rangle$ for the
 Hydrogen ground state.
 
 <details>
@@ -1379,8 +1379,8 @@ $$\sigma_x = \begin◆LB◆pmatrix◆RB◆ 0 & 1 \\ 1 & 0 \end◆LB◆pmatrix◆
 $$\sigma_x\sigma_y - \sigma_y\sigma_x = 2i\sigma_z$$
 
 Writing $\sigma_y = \begin◆LB◆pmatrix◆RB◆ c & d \\ d^* & -c \end◆LB◆pmatrix◆RB◆$ and imposing
-$\sigma_y^2 = I$$\sigma_y^\dagger = \sigma_y$ And the commutation relation, we find
-$c = 0$$|d| = 1$And the commutator gives $d - d^* = 2i$ So $d = i$:
+$\sigma_y^2 = I$, $\sigma_y^\dagger = \sigma_y$ And the commutation relation, we find
+$c = 0$, $|d| = 1$And the commutator gives $d - d^* = 2i$ So $d = i$:
 
 $$\sigma_y = \begin◆LB◆pmatrix◆RB◆ 0 & -i \\ i & 0 \end◆LB◆pmatrix◆RB◆$$
 
@@ -1505,7 +1505,7 @@ Given two angular momenta $\hat◆LB◆\mathbf◆LB◆J◆RB◆◆RB◆_1$ and $
 $j_1, m_1$ and $j_2, m_2$Define the total
 $\hat◆LB◆\mathbf◆LB◆J◆RB◆◆RB◆ = \hat◆LB◆\mathbf◆LB◆J◆RB◆◆RB◆_1 + \hat◆LB◆\mathbf◆LB◆J◆RB◆◆RB◆_2$.
 
-**Compatible observables:** $\hat◆LB◆J◆RB◆^2$$\hat◆LB◆J◆RB◆_z$$\hat◆LB◆J◆RB◆_1^2$$\hat◆LB◆J◆RB◆_2^2$ all commute. We label
+**Compatible observables:** $\hat◆LB◆J◆RB◆^2$, $\hat◆LB◆J◆RB◆_z$, $\hat◆LB◆J◆RB◆_1^2$, $\hat◆LB◆J◆RB◆_2^2$ all commute. We label
 Simultaneous eigenstates as $|j_1, j_2; j, m\rangle$.
 
 **Clebsch-Gordan decomposition.** The total angular momentum quantum numbers range over:
@@ -1810,7 +1810,7 @@ $\psi(\mathbf◆LB◆r◆RB◆,t) = \phi(\mathbf◆LB◆r◆RB◆)e^◆LB◆-iEt
 What does this imply about the probability distribution?
 
 **6.** (Normalisation) Normalise the wave function $\psi(x) = N\,x(a-x)$ for $0 \lt x \lt a$ (and
-zero Otherwise). Find $\langle x \rangle$$\langle x^2 \rangle$And $\langle p^2 \rangle$.
+zero Otherwise). Find $\langle x \rangle$, $\langle x^2 \rangle$And $\langle p^2 \rangle$.
 
 **7.** (Hermitian operators) Prove that the momentum operator $\hat◆LB◆p◆RB◆ = -i\hbar\,d/dx$ is Hermitian
 On the space of wave functions that vanish at infinity. What boundary conditions are required? Show
@@ -1818,7 +1818,7 @@ by counterexample that $\hat◆LB◆p◆RB◆$ is not Hermitian if the boundary 
 
 **8.** (Uncertainty principle) For the harmonic oscillator ground state
 $\psi_0(x) = (m\omega/\pi\hbar)^◆LB◆1/4◆RB◆e^◆LB◆-m\omega x^2/(2\hbar)◆RB◆$Calculate $\langle x \rangle$
-$\langle x^2 \rangle$$\langle p \rangle$$\langle p^2 \rangle$And verify that
+$\langle x^2 \rangle$, $\langle p \rangle$, $\langle p^2 \rangle$And verify that
 $\sigma_x\,\sigma_p = \hbar/2$. Also show that $\langle x \rangle = \langle p \rangle = 0$ by
 symmetry.
 
@@ -1834,7 +1834,7 @@ probability that it is found in the first excited state.
 
 **11.** (Harmonic oscillator) Using the ladder operators, compute $\langle x^2 \rangle$
 $\langle p^2 \rangle$And $\langle x^4 \rangle$ for the state $|n\rangle$ of the harmonic Oscillator.
-Express your answers in terms of $n$$m$$\omega$And $\hbar$.
+Express your answers in terms of $n$, $m$, $\omega$And $\hbar$.
 
 **12.** (Delta potential) A particle of mass $m$ and energy $E \gt 0$ is incident on the potential
 $V(x) = \alpha[\delta(x+a) + \delta(x-a)]$. Find the transmission coefficient. In the limit
@@ -1848,7 +1848,7 @@ decay of a typical heavy nucleus and comment on the exponential dependence on ba
 Raising/lowering operators, prove that $[\hat◆LB◆L◆RB◆^2, \hat◆LB◆L◆RB◆_\pm] = 0$. Then show that
 $\hat◆LB◆L◆RB◆_+|l,l\rangle = 0$ and hence derive the normalisation constant for $\hat◆LB◆L◆RB◆_+|l,m\rangle$.
 
-**15.** (Hydrogen atom) Calculate $\langle r \rangle$$\langle r^2 \rangle$And $\langle 1/r \rangle$
+**15.** (Hydrogen atom) Calculate $\langle r \rangle$, $\langle r^2 \rangle$And $\langle 1/r \rangle$
 for the hydrogen atom ground state $\psi_◆LB◆100◆RB◆$. Compare $\langle r \rangle$ With the Bohr radius
 $a_0$. Use the virial theorem to relate $\langle T \rangle$ and $\langle V \rangle$ for The Coulomb
 potential.
@@ -2085,7 +2085,7 @@ $$\langle f|\hat◆LB◆\mathbf◆LB◆d◆RB◆◆RB◆|i\rangle = -e\langle f|
 For hydrogen-like atoms, the selection rules are:
 
 - $\Delta l = \pm 1$ (parity change required)
-- $\Delta m = 0, \pm 1$ (for $z$$x \pm iy$ polarisation respectively)
+- $\Delta m = 0, \pm 1$ (for $z$, $x \pm iy$ polarisation respectively)
 - $\Delta n$ unrestricted
 
 The transition rate for $2p \to 1s$ in hydrogen:
@@ -2325,7 +2325,7 @@ As $|E| \to 0$: $\kappa' \to 0$So $\kappa\cot(\kappa a) \to 0$Giving $\kappa a =
 threshold for the first bound state).
 
 (c) The scattering length $a_s = -\lim_◆LB◆k \to 0◆RB◆(\delta_0/k)$. As
-$\kappa a \to \pi/2$$\tan(\kappa a) \to \infty$So:
+$\kappa a \to \pi/2$, $\tan(\kappa a) \to \infty$So:
 
 $$\delta_0 \approx -ka + \arctan(\infty) = -ka + \pi/2$$
 

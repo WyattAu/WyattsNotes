@@ -100,7 +100,7 @@ actual Volume of goods and services that the average income can buy in each coun
 - Assuming that fiscal policy is always effective. Crowding out, time lags, and the size of the
   multiplier all limit its impact.
 - Confusing a movement along the AD curve (caused by a change in the price level) with a shift of
-  the AD curve (caused by changes in $C$$I$$G$Or $X - M$).
+  the AD curve (caused by changes in $C$, $I$, $G$Or $X - M$).
 - Treating the Phillips Curve as a policy menu. The short-run trade-off does not exist in the long
   run.
 - Forgetting that the LRAS curve is vertical. In the long run, demand-side policies only affect the
@@ -130,7 +130,7 @@ Investment $= \$1100$, Government spending $= \$1500$Exports $= \$800$, Imports 
 
 (a) $GDP = C + I + G + (X - M) = 4200 + 1100 + 1500 + (800 - 950)$
 
-$$GDP = 4200 + 1100 + 1500 + (-150) = \$6650 \text{ billion}$$
+$, $GDP = 4200 + 1100 + 1500 + (-150) = \$6650 \text{ billion}$$
 
 Net exports $= X - M = 800 - 950 = -\$150$ billion (a trade deficit).
 

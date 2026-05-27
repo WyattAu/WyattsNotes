@@ -273,7 +273,7 @@ Result: $g = 9.75 \pm 0.24$ m s$^{-2}$.
 
 <details>
 <summary>Problem 5</summary>
-A quantity $y$ is calculated as $y = ax^3/b$ where $a = 4.0 \pm 0.2$$b = 2.0 \pm 0.1$And
+A quantity $y$ is calculated as $y = ax^3/b$ where $a = 4.0 \pm 0.2$, $b = 2.0 \pm 0.1$And
 $x = 3.0 \pm 0.1$. Calculate $y$ and its percentage uncertainty.
 
 **Answer.** $y = 4.0 \times 27 / 2.0 = 54.0$.
@@ -546,7 +546,7 @@ $\rho = \pi(5.2 \times 10^{-4})^2 \times 8.5 / (4 \times 1.200) = \pi \times 2.7
 $\Omega$ m.
 
 Fractional uncertainties: $2(\Delta d/d) = 2(0.01/0.52) = 0.0385$ (for $d^2$),
-$\Delta R/R = 0.2/8.5 = 0.0235$$\Delta L/L = 0.005/1.200 = 0.0042$.
+$\Delta R/R = 0.2/8.5 = 0.0235$, $\Delta L/L = 0.005/1.200 = 0.0042$.
 
 Total fractional uncertainty: $0.0385 + 0.0235 + 0.0042 = 0.0662 = 6.6\%$.
 
@@ -564,7 +564,7 @@ In an experiment to determine the specific heat capacity $c$ of a metal, a stude
 
 **Answer.** $c = 1250 / (0.150 \times 12.5) = 1250 / 1.875 = 667$ J kg$^{-1}$ K$^{-1}$.
 
-Fractional uncertainties: $\Delta E/E = 30/1250 = 0.024$$\Delta m/m = 0.005/0.150 = 0.033$
+Fractional uncertainties: $\Delta E/E = 30/1250 = 0.024$, $\Delta m/m = 0.005/0.150 = 0.033$
 $\Delta T/\Delta T = 0.5/12.5 = 0.040$.
 
 Total fractional uncertainty: $0.024 + 0.033 + 0.040 = 0.097 = 9.7\%$.
@@ -579,7 +579,7 @@ Result: $c = 670 \pm 70$ J kg$^{-1}$ K$^{-1}$ (9.7%).
 
 <details>
 <summary>Problem 4</summary>
-A digital thermometer displays $22.7$ °C. What is the absolute uncertainty in this reading? A student takes three readings: $22.7$$22.8$$22.7$ °C. What is the best estimate of the temperature and its uncertainty?
+A digital thermometer displays $22.7$ °C. What is the absolute uncertainty in this reading? A student takes three readings: $22.7$, $22.8$, $22.7$ °C. What is the best estimate of the temperature and its uncertainty?
 
 **Answer.** For a single digital reading, the absolute uncertainty is the smallest division:
 $\pm 0.1$ °C.
@@ -597,9 +597,9 @@ Uncertainty is dominated by the instrument resolution. The best estimate is $22.
 
 <details>
 <summary>Problem 5</summary>
-A graph of $\ln V$ against $t$ gives a gradient of $-0.025 \pm 0.002$ s$^{-1}$ and a $y$-intercept of $2.30 \pm 0.05$. The relationship is $\ln V = -kt + \ln V_0$. Determine $k$$V_0$And their uncertainties.
+A graph of $\ln V$ against $t$ gives a gradient of $-0.025 \pm 0.002$ s$^{-1}$ and a $y$-intercept of $2.30 \pm 0.05$. The relationship is $\ln V = -kt + \ln V_0$. Determine $k$, $V_0$And their uncertainties.
 
-**Answer.** From the gradient: $k = 0.025$ s$^{-1}$$\Delta k = 0.002$ s$^{-1}$. Result:
+**Answer.** From the gradient: $k = 0.025$ s$^{-1}$, $\Delta k = 0.002$ s$^{-1}$. Result:
 $k = 0.025 \pm 0.002$ s$^{-1}$.
 
 From the intercept: $\ln V_0 = 2.30$So $V_0 = e^{2.30} = 9.97 \approx 10.0$.
@@ -616,7 +616,7 @@ Result: $V_0 = 10.0 \pm 0.5$ (arbitrary units).
 
 <details>
 <summary>Problem 6</summary>
-A student determines the refractive index $n$ of glass by measuring the critical angle $\theta_c$. Five measurements of $\theta_c$ are: $41.5^\circ$$42.0^\circ$$41.8^\circ$$42.2^\circ$$41.6^\circ$. Using $n = 1/\sin\theta_c$Calculate $n$ and its uncertainty.
+A student determines the refractive index $n$ of glass by measuring the critical angle $\theta_c$. Five measurements of $\theta_c$ are: $41.5^\circ$, $42.0^\circ$, $41.8^\circ$, $42.2^\circ$, $41.6^\circ$. Using $n = 1/\sin\theta_c$Calculate $n$ and its uncertainty.
 
 **Answer.** Mean $\theta_c = (41.5 + 42.0 + 41.8 + 42.2 + 41.6)/5 = 41.82^\circ$. Range
 $= 42.2 - 41.5 = 0.7^\circ$. $\Delta\theta_c = 0.35^\circ$.

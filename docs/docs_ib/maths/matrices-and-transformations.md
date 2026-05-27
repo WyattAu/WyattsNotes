@@ -309,11 +309,11 @@ $$\det(A) = 2\begin{vmatrix} 1 & 1 \\ 0 & 1 \end{vmatrix} - 1\begin{vmatrix} 0 &
 
 **Step 2:** Compute cofactors:
 
-$C_{11} = +\begin{vmatrix} 1 & 1 \\ 0 & 1 \end{vmatrix} = 1$$C_{12} = -\begin{vmatrix} 0 & 1 \\ 1 & 1 \end{vmatrix} = 1$$C_{13} = +\begin{vmatrix} 0 & 1 \\ 1 & 0 \end{vmatrix} = -1$
+$C_{11} = +\begin{vmatrix} 1 & 1 \\ 0 & 1 \end{vmatrix} = 1$, $C_{12} = -\begin{vmatrix} 0 & 1 \\ 1 & 1 \end{vmatrix} = 1$, $C_{13} = +\begin{vmatrix} 0 & 1 \\ 1 & 0 \end{vmatrix} = -1$
 
-$C_{21} = -\begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = -1$$C_{22} = +\begin{vmatrix} 2 & 0 \\ 1 & 1 \end{vmatrix} = 2$$C_{23} = -\begin{vmatrix} 2 & 1 \\ 1 & 0 \end{vmatrix} = 1$
+$C_{21} = -\begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = -1$, $C_{22} = +\begin{vmatrix} 2 & 0 \\ 1 & 1 \end{vmatrix} = 2$, $C_{23} = -\begin{vmatrix} 2 & 1 \\ 1 & 0 \end{vmatrix} = 1$
 
-$C_{31} = +\begin{vmatrix} 1 & 0 \\ 1 & 1 \end{vmatrix} = 1$$C_{32} = -\begin{vmatrix} 2 & 0 \\ 0 & 1 \end{vmatrix} = -2$$C_{33} = +\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = 2$
+$C_{31} = +\begin{vmatrix} 1 & 0 \\ 1 & 1 \end{vmatrix} = 1$, $C_{32} = -\begin{vmatrix} 2 & 0 \\ 0 & 1 \end{vmatrix} = -2$, $C_{33} = +\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = 2$
 
 Cofactor matrix: $\begin{pmatrix} 1 & 1 & -1 \\ -1 & 2 & 1 \\ 1 & -2 & 2 \end{pmatrix}$
 
@@ -711,13 +711,13 @@ $\lambda_1 = 3$ (algebraic multiplicity 1), $\lambda_2 = 2$ (algebraic multiplic
 
 $\begin{pmatrix} -1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & -1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$
 
-$-v_1 = 0$$v_3 = 0$$v_2$ is free. Eigenvector: $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$.
+$-v_1 = 0$, $v_3 = 0$, $v_2$ is free. Eigenvector: $\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$.
 
 **Eigenvector for $\lambda_2 = 2$:**
 
 $\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$
 
-$v_2 + v_3 = 0$$v_3 = -v_2$And $v_1$ is free. Two linearly independent eigenvectors:
+$v_2 + v_3 = 0$, $v_3 = -v_2$And $v_1$ is free. Two linearly independent eigenvectors:
 $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}$.
 
 Since the geometric multiplicity of $\lambda_2 = 2$ equals its algebraic multiplicity (both $= 2$),
@@ -801,7 +801,7 @@ Into computing three matrix products, which is dramatically more efficient.
 
 **Find $A^5$ where** $A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}$
 
-From the previous example: $\lambda_1 = 5$$\lambda_2 = 2$
+From the previous example: $\lambda_1 = 5$, $\lambda_2 = 2$
 $\mathbf{v}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$
 $\mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 
@@ -856,13 +856,13 @@ Augmented matrix to row echelon form (REF) or reduced row echelon form (RREF).
 
 **Solve the system:**
 
-$x + 2y + z = 5$$2x + 5y + 3z = 13$$x + 3y + 3z = 10$
+$x + 2y + z = 5$, $2x + 5y + 3z = 13$, $x + 3y + 3z = 10$
 
 Augmented matrix:
 
 $\begin{pmatrix} 1 & 2 & 1 & \mid & 5 \\ 2 & 5 & 3 & \mid & 13 \\ 1 & 3 & 3 & \mid & 10 \end{pmatrix}$
 
-$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - R_1$:
+$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - R_1$:
 
 $\begin{pmatrix} 1 & 2 & 1 & \mid & 5 \\ 0 & 1 & 1 & \mid & 3 \\ 0 & 1 & 2 & \mid & 5 \end{pmatrix}$
 
@@ -870,7 +870,7 @@ $R_3 \to R_3 - R_2$:
 
 $\begin{pmatrix} 1 & 2 & 1 & \mid & 5 \\ 0 & 1 & 1 & \mid & 3 \\ 0 & 0 & 1 & \mid & 2 \end{pmatrix}$
 
-Back-substitution: $z = 2$$y + z = 3 \Rightarrow y = 1$$x + 2(1) + 2 = 5 \Rightarrow x = 1$.
+Back-substitution: $z = 2$, $y + z = 3 \Rightarrow y = 1$, $x + 2(1) + 2 = 5 \Rightarrow x = 1$.
 
 Solution: $(x, y, z) = (1, 1, 2)$.
 
@@ -914,7 +914,7 @@ Encrypt blocks of text. It demonstrates a direct application of matrices in cryp
 
 **Encryption procedure:**
 
-1. Convert each letter to a number: $A = 0$$B = 1$$\ldots$$Z = 25$.
+1. Convert each letter to a number: $A = 0$, $B = 1$, $\ldots$, $Z = 25$.
 2. Group the plaintext into blocks of size $n$ (matching the dimension of the key matrix).
 3. Multiply each block (as a column vector) by the $n \times n$ key matrix $K$ modulo 26.
 4. Convert the resulting numbers back to letters.
@@ -937,7 +937,7 @@ $\gcd(\det(K), 26) = 1$).
 
 $K = \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix}$
 
-Convert to numbers: $H = 7$$E = 4$$L = 11$$P = 15$.
+Convert to numbers: $H = 7$, $E = 4$, $L = 11$, $P = 15$.
 
 Block 1: $\begin{pmatrix} 7 \\ 4 \end{pmatrix}$Block 2: $\begin{pmatrix} 11 \\ 15 \end{pmatrix}$
 
@@ -949,7 +949,7 @@ Modulo 26: $\begin{pmatrix} 15 \\ 15 \end{pmatrix}$Which gives "PP".
 Block 2:
 $\begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} 11 \\ 15 \end{pmatrix} = \begin{pmatrix} 33 + 75 \\ 11 + 30 \end{pmatrix} = \begin{pmatrix} 108 \\ 41 \end{pmatrix}$
 
-Modulo 26: $108 \bmod 26 = 4$$41 \bmod 26 = 15$Giving $\begin{pmatrix} 4 \\ 15 \end{pmatrix}$ Which
+Modulo 26: $108 \bmod 26 = 4$, $41 \bmod 26 = 15$Giving $\begin{pmatrix} 4 \\ 15 \end{pmatrix}$ Which
 is "EP".
 
 Ciphertext: "PPEP"
@@ -1041,7 +1041,7 @@ $\det(P - \lambda I) = (0.7 - \lambda)(0.6 - \lambda) - 0.12 = \lambda^2 - 1.3\l
 
 $(\lambda - 1)(\lambda - 0.3) = 0$
 
-$\lambda_1 = 1$$\lambda_2 = 0.3$. Since $|\lambda_2| \lt 1$As $k \to \infty$ the term
+$\lambda_1 = 1$, $\lambda_2 = 0.3$. Since $|\lambda_2| \lt 1$As $k \to \infty$ the term
 $\lambda_2^k \to 0$ and the system converges to the eigenvector for $\lambda_1 = 1$.
 
 </details>
@@ -1120,7 +1120,7 @@ That can be chosen orthonormal.
 | Rotation by $\theta$            | $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$         |         |     |
 | Reflection in $y = x\tan\theta$ | $\begin{pmatrix} \cos 2\theta & \sin 2\theta \\ \sin 2\theta & -\cos 2\theta \end{pmatrix}$ |         |     |
 | Cramer's rule                   | $x_i = \det(A_i)/\det(A)$                                                                   |         |     |
-| Steady state of Markov chain    | $\mathbf{s}P = \mathbf{s}$$\sum s_i = 1$                                                    |         |     |
+| Steady state of Markov chain    | $\mathbf{s}P = \mathbf{s}$, $\sum s_i = 1$                                                    |         |     |
 
 <details>
 <summary>Worked Example: Finding Eigenvalues and Eigenvectors</summary>
@@ -1133,7 +1133,7 @@ $$\det(A - \lambda I) = (5 - \lambda)^2 - 9 = \lambda^2 - 10\lambda + 16 = 0$$
 
 $$(\lambda - 2)(\lambda - 8) = 0$$
 
-$\lambda_1 = 2$$\lambda_2 = 8$.
+$\lambda_1 = 2$, $\lambda_2 = 8$.
 
 **Eigenvector for $\lambda_1 = 2$:**
 
@@ -1277,7 +1277,7 @@ $$y = \frac{\det\begin{pmatrix} 3 & 5 & -1 \\ 1 & 1 & 2 \\ 2 & 4 & 1 \end{pmatri
 
 $$z = \frac{\det\begin{pmatrix} 3 & 2 & 5 \\ 1 & -1 & 1 \\ 2 & 1 & 4 \end{pmatrix}}{-6} = \frac{3(-4-1) - 2(4-2) + 5(1+2)}{-6} = \frac{-15-4+15}{-6} = \frac{-4}{-6} = \frac{2}{3}$$
 
-Solution: $x = 1$$y = \frac{4}{3}$$z = \frac{2}{3}$.
+Solution: $x = 1$, $y = \frac{4}{3}$, $z = \frac{2}{3}$.
 
 **If you get this wrong, revise:** Cramer's Rule section.
 
@@ -1296,7 +1296,7 @@ $$\det(A - \lambda I) = (3 - \lambda)(-\lambda) - (-2)(1) = \lambda^2 - 3\lambda
 
 $$(\lambda - 1)(\lambda - 2) = 0$$
 
-$\lambda_1 = 1$$\lambda_2 = 2$.
+$\lambda_1 = 1$, $\lambda_2 = 2$.
 
 **Eigenvector for $\lambda_1 = 1$:**
 
@@ -1324,7 +1324,7 @@ $y$-axis with scale factor $3$. Find the single matrix and describe its effect o
 
 $$M = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}$$
 
-The unit square (area = 1) is mapped to a rectangle with vertices $(0,0)$$(2,0)$$(2,3)$$(0,3)$. The
+The unit square (area = 1) is mapped to a rectangle with vertices $(0,0)$, $(2,0)$, $(2,3)$, $(0,3)$. The
 new area is $6$.
 
 Area scale factor: $|\det(M)| = 6$.
@@ -1377,7 +1377,7 @@ From $\mathbf{s}P = \mathbf{s}$:
 
 $0.6s_1 + 0.4s_2 = s_1 \implies -0.4s_1 + 0.4s_2 = 0 \implies s_1 = s_2$
 
-With $s_1 + s_2 = 1$: $s_1 = 0.5$$s_2 = 0.5$.
+With $s_1 + s_2 = 1$: $s_1 = 0.5$, $s_2 = 0.5$.
 
 Steady state: $\begin{pmatrix} 0.5 & 0.5 \end{pmatrix}$.
 

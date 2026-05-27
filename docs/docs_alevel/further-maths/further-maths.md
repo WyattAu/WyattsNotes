@@ -56,7 +56,7 @@ STEM courses:
 - **Further calculus** — integration by parts (repeated), inverse trigonometric integration, volumes
   of revolution, parametric differentiation
 - **Polar coordinates** — conversion, sketching curves, area enclosed by polar curves
-- **Hyperbolic functions** — definitions, identities, calculus with $\sinh$$\cosh$$\tanh$
+- **Hyperbolic functions** — definitions, identities, calculus with $\sinh$, $\cosh$, $\tanh$
 - **Differential equations** — first-order (separable, integrating factor), second-order linear with
   constant coefficients
 - **Maclaurin and Taylor series** — expansion, convergence, standard series

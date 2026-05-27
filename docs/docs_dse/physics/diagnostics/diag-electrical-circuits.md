@@ -16,7 +16,7 @@ hide_table_of_contents: true
 **Question:**
 
 In the circuit shown, three cells with EMFs $E_1 = 12$ V, $E_2 = 6$ V, and $E_3 = 4$ V are connected
-with resistors $R_1 = 4$ $\Omega$$R_2 = 6$ $\Omega$And $R_3 = 2$ $\Omega$. Cell $E_1$ is in series
+with resistors $R_1 = 4$ $\Omega$, $R_2 = 6$ $\Omega$And $R_3 = 2$ $\Omega$. Cell $E_1$ is in series
 with $R_1$Cell $E_2$ is in series with $R_2$And $R_3$ is the shared branch connecting the junctions.
 $E_1$ and $E_2$ have their positive terminals facing the same junction (opposing each other). $E_3$
 is in the shared branch with its positive terminal facing the $E_1$ side. All cells have negligible
@@ -32,7 +32,7 @@ $E_2$ side.
 
 $$I_1 + I_2 = I_3 \quad \text{--- (1)}$$
 
-**KVL for Loop 1** (through $E_1$$R_1$$R_3$$E_3$):
+**KVL for Loop 1** (through $E_1$, $R_1$, $R_3$, $E_3$):
 
 $$E_1 - I_1 R_1 - I_3 R_3 - E_3 = 0$$
 
@@ -40,7 +40,7 @@ $$12 - 4I_1 - 2I_3 - 4 = 0$$
 
 $$8 - 4I_1 - 2I_3 = 0 \quad \text{--- (2)}$$
 
-**KVL for Loop 2** (through $E_2$$R_2$$R_3$$E_3$):
+**KVL for Loop 2** (through $E_2$, $R_2$, $R_3$, $E_3$):
 
 $$E_2 - I_2 R_2 - I_3 R_3 - E_3 = 0$$
 
@@ -241,7 +241,7 @@ its EMF is much lower).
 
 **Question:**
 
-A Wheatstone bridge has the following resistances: $P = 100$ $\Omega$$Q = 200$ $\Omega$$R = 150$
+A Wheatstone bridge has the following resistances: $P = 100$ $\Omega$, $Q = 200$ $\Omega$, $R = 150$
 $\Omega$And the unknown resistance $S$. A galvanometer of resistance $50$ $\Omega$ is connected
 between the junction of $P$ and $Q$ and the junction of $R$ and $S$. A battery of EMF $6$ V
 (negligible internal resistance) is connected across the bridge. The galvanometer shows zero

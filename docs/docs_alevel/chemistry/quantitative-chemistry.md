@@ -41,9 +41,9 @@ Where $m$ is the mass in grams.
 
 ### Molar Volume of Gases
 
-At standard temperature and pressure (STP: $0^\circ\mathrm{C}$$1\,\mathrm{atm}$), one mole of any
+At standard temperature and pressure (STP: $0^\circ\mathrm{C}$, $1\,\mathrm{atm}$), one mole of any
 ideal gas occupies $22.4\,\mathrm{dm}^3$. At room temperature and pressure (RTP:
-$25^\circ\mathrm{C}$$1\,\mathrm{atm}$), one mole occupies $24.0\,\mathrm{dm}^3$.
+$25^\circ\mathrm{C}$, $1\,\mathrm{atm}$), one mole occupies $24.0\,\mathrm{dm}^3$.
 
 $$
 N = \frac{V}{V_m}
@@ -181,7 +181,7 @@ $$
 C_1 V_1 = c_2 V_2
 $$
 
-Where $c_1$$V_1$ are the initial concentration and volume, and $c_2$$V_2$ are the final.
+Where $c_1$, $V_1$ are the initial concentration and volume, and $c_2$, $V_2$ are the final.
 
 ## Titrations
 
@@ -398,7 +398,7 @@ $$
 
 **Worked Example.** Estimate the enthalpy of combustion of $\mathrm{CH}_4$ using bond enthalpies
 ($\mathrm{kJ/mol}$):
-$\mathrm{C-H} = 413$$\mathrm{O}=\mathrm{O} = 498$$\mathrm{C}=\mathrm{O} = 805$$\mathrm{O-H} = 464$.
+$\mathrm{C-H} = 413$, $\mathrm{O}=\mathrm{O} = 498$, $\mathrm{C}=\mathrm{O} = 805$, $\mathrm{O-H} = 464$.
 
 $$
 \mathrm{CH}_4 + 2\mathrm{O}_2 \to \mathrm{CO}_2 + 2\mathrm{H}_2\mathrm{O}
@@ -486,7 +486,7 @@ $$
 $$
 
 Given bond enthalpies ($\mathrm{kJ/mol}$):
-$\mathrm{N}\equiv\mathrm{N} = 945$$\mathrm{H-H} = 436$$\mathrm{N-H} = 391$.
+$\mathrm{N}\equiv\mathrm{N} = 945$, $\mathrm{H-H} = 436$, $\mathrm{N-H} = 391$.
 
 **Solution:**
 
@@ -753,10 +753,10 @@ The formula is $\mathrm{BaCl}_2\cdot2\mathrm{H}_2\mathrm{O}$.
 
 ### Molar Volume
 
-At room temperature and pressure ($25^\circ\mathrm{C}$$100\,\mathrm{kPa}$), one mole of any ideal
+At room temperature and pressure ($25^\circ\mathrm{C}$, $100\,\mathrm{kPa}$), one mole of any ideal
 gas occupies approximately $24.0\,\mathrm{dm}^3$.
 
-At standard temperature and pressure ($0^\circ\mathrm{C}$$100\,\mathrm{kPa}$), one mole occupies
+At standard temperature and pressure ($0^\circ\mathrm{C}$, $100\,\mathrm{kPa}$), one mole occupies
 approximately $22.7\,\mathrm{dm}^3$.
 
 ### Using the Ideal Gas Equation
@@ -769,7 +769,7 @@ Where $p$ is pressure ($\mathrm{Pa}$), $V$ is volume ($\mathrm{m}^3$), $n$ is mo
 $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$And $T$ is temperature ($\mathrm{K}$).
 
 **Unit conversions:**
-$1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$100\,\mathrm{kPa} = 10^5\,\mathrm{Pa}$.
+$1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$, $100\,\mathrm{kPa} = 10^5\,\mathrm{Pa}$.
 
 ### Worked Example
 
@@ -994,9 +994,9 @@ advantage of addition reactions in green chemistry.
    significant figures as the least precise measurement. If a mass is given as $2.5\,\mathrm{g}$ (2
    s.f.), the answer should be to 2 s.f.
 
-5. **Ideal gas equation units:** $p$ must be in pascals ($\mathrm{Pa}$), $V$ in $\mathrm{m}^3$$n$ in
+5. **Ideal gas equation units:** $p$ must be in pascals ($\mathrm{Pa}$), $V$ in $\mathrm{m}^3$, $n$ in
    mol, $T$ in $\mathrm{K}$. Common conversions:
-   $1\,\mathrm{atm} = 101325\,\mathrm{Pa}$$1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$1\,\mathrm{cm}^3 = 10^{-6}\,\mathrm{m}^3$.
+   $1\,\mathrm{atm} = 101325\,\mathrm{Pa}$, $1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$, $1\,\mathrm{cm}^3 = 10^{-6}\,\mathrm{m}^3$.
 
 ## Exam-Style Questions with Full Mark Schemes
 
@@ -1021,7 +1021,7 @@ answer to 3 s.f.).
 
 $2.00\,\mathrm{g}$ of impure calcium carbonate reacts with excess hydrochloric acid, producing
 $480\,\mathrm{cm}^3$ of $\mathrm{CO}_2$ at room temperature and pressure
-($101\,\mathrm{kPa}$$298\,\mathrm{K}$).
+($101\,\mathrm{kPa}$, $298\,\mathrm{K}$).
 
 (a) Calculate the percentage purity of the calcium carbonate. (4 marks)
 

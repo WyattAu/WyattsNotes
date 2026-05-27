@@ -153,7 +153,7 @@ Let $S = \\{1, 2, 3, 4, 5, 6\\}$ with uniform probability. Let $A = \\{1, 2\\}$ 
 $B = \\{1, 2, 3, 4\\}$.
 
 - $A \subseteq B$: confirmed since every element of $A$ is in $B$.
-- $P(A) = \frac{2}{6} = \frac{1}{3}$$P(B) = \frac{4}{6} = \frac{2}{3}$.
+- $P(A) = \frac{2}{6} = \frac{1}{3}$, $P(B) = \frac{4}{6} = \frac{2}{3}$.
 - $P(A) \leq P(B)$: $\frac{1}{3} \leq \frac{2}{3}$. $\checkmark$
 
 ## Addition Rule
@@ -436,7 +436,7 @@ Probability is unchanged from the unconditional one.
 ### Complement Independence
 
 **Theorem.** If $A$ and $B$ are independent, then each of the following pairs is also independent:
-$A$ and $B'$$A'$ and $B$$A'$ and $B'$.
+$A$ and $B'$, $A'$ and $B$, $A'$ and $B'$.
 
 _Proof._ We show $A$ and $B'$ are independent. The others follow by identical reasoning.
 
@@ -454,12 +454,12 @@ $$
 
 Two fair coins are tossed. Let $A$ = "first coin is heads" and $B$ = "second coin is tails".
 
-- $P(A) = \frac{1}{2}$$P(B) = \frac{1}{2}$$P(A \cap B) = \frac{1}{4}$.
+- $P(A) = \frac{1}{2}$, $P(B) = \frac{1}{2}$, $P(A \cap B) = \frac{1}{4}$.
 - $P(A) \cdot P(B) = \frac{1}{4} = P(A \cap B)$. Independent. $\checkmark$
 
 Now $A'$ = "first coin is tails" and $B'$ = "second coin is heads":
 
-- $P(A') = \frac{1}{2}$$P(B') = \frac{1}{2}$
+- $P(A') = \frac{1}{2}$, $P(B') = \frac{1}{2}$
   $P(A' \cap B') = P(\mathrm{tails, heads}) = \frac{1}{4}$.
 - $P(A') \cdot P(B') = \frac{1}{4} = P(A' \cap B')$. Independent. $\checkmark$
 
@@ -485,7 +485,7 @@ Least one event has probability zero.
 A fair coin is tossed 3 times. Let $A$ = "all three tosses are heads" and $B$ = "the first toss is
 Tails".
 
-- $P(A) = \frac{1}{8}$$P(B) = \frac{1}{2}$.
+- $P(A) = \frac{1}{8}$, $P(B) = \frac{1}{2}$.
 - $A \cap B = \emptyset$ (cannot have all heads if the first is tails), so $P(A \cap B) = 0$.
 - Check independence:
   $P(A) \cdot P(B) = \frac{1}{8} \times \frac{1}{2} = \frac{1}{16} \neq 0 = P(A \cap B)$.
@@ -735,7 +735,7 @@ Neither. A student is chosen at random. Find the probability that the student pl
 
 Let $B$ = plays basketball, $F$ = plays football.
 
-- $P(B) = \frac{30}{50} = \frac{3}{5}$$P(F) = \frac{25}{50} = \frac{1}{2}$.
+- $P(B) = \frac{30}{50} = \frac{3}{5}$, $P(F) = \frac{25}{50} = \frac{1}{2}$.
 - 10 play neither, so 40 play at least one: $P(B \cup F) = \frac{40}{50} = \frac{4}{5}$.
 
 By the addition rule:
@@ -773,7 +773,7 @@ $$
 \end{aligned}
 $$
 
-4. **Question:** Events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.5$And $P(A \mid B) = 0.4$.
+4. **Question:** Events $A$ and $B$ are such that $P(A) = 0.6$, $P(B) = 0.5$And $P(A \mid B) = 0.4$.
 Find $P(A \cup B)$.
 </details>
 <summary>Answer</summary>
@@ -817,7 +817,7 @@ $$
 \end{aligned}
 $$
 
-6. **Question:** Two events $A$ and $B$ satisfy $P(A) = \frac{1}{3}$$P(B) = \frac{1}{4}$And
+6. **Question:** Two events $A$ and $B$ satisfy $P(A) = \frac{1}{3}$, $P(B) = \frac{1}{4}$And
 $P(A \cup B) = \frac{5}{12}$. Determine whether $A$ and $B$ are independent.
 </details>
 <summary>Answer</summary>
@@ -914,7 +914,7 @@ For comparison, the unconditional probability: $P(A) = \frac{5}{36}$ (pairs
 $(2,6), (3,5), (4,4), (5,3), (6,2)$). Conditioning on the first die being $\geq$ 3 eliminates
 $(2,6)$Reducing the count from 5 to 4.
 
-11. **Question:** $A$$B$And $C$ are three events with $P(A) = P(B) = P(C) = \frac{1}{3}$
+11. **Question:** $A$, $B$And $C$ are three events with $P(A) = P(B) = P(C) = \frac{1}{3}$
 $P(A \cap B) = P(A \cap C) = P(B \cap C) = \frac{1}{6}$And $P(A \cap B \cap C) = \frac{1}{12}$. Find
 $P(A \cup B \cup C)$.
 <details>
@@ -939,7 +939,7 @@ $P(\mathrm{condition} \mid \mathrm{positive})$.
 
 - Sensitivity: $P(+ \mid C) = 0.90$.
 - Specificity: $P(- \mid C') = 0.95$So $P(+ \mid C') = 1 - 0.95 = 0.05$.
-- Prevalence: $P(C) = 0.01$$P(C') = 0.99$.
+- Prevalence: $P(C) = 0.01$, $P(C') = 0.99$.
 
 By Bayes' theorem:
 

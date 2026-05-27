@@ -50,7 +50,7 @@ Derived from them.
 
 $$P(A \cup A') = P(A) + P(A') = P(\Omega) = 1 \implies P(A') = 1 - P(A). \quad \blacksquare$$
 
-**Corollary.** For any event $A$$P(\emptyset) = 0$.
+**Corollary.** For any event $A$, $P(\emptyset) = 0$.
 
 **Proof.** $P(\emptyset) = P(\Omega') = 1 - P(\Omega) = 1 - 1 = 0$. $\blacksquare$
 
@@ -63,7 +63,7 @@ $P(B) = P(A) + P(B \cap A') \geq P(A)$ since $P(B \cap A') \geq 0$. $\blacksquar
 
 **Theorem.** $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
 
-**Proof.** $A \cup B$ can be partitioned into three disjoint sets: $A \cap B'$$A \cap B$And
+**Proof.** $A \cup B$ can be partitioned into three disjoint sets: $A \cap B'$, $A \cap B$And
 $A' \cap B$.
 
 $$P(A \cup B) = P(A \cap B') + P(A \cap B) + P(A' \cap B)$$
@@ -76,7 +76,7 @@ $$P(A \cup B) = [P(A) - P(A \cap B)] + P(A \cap B) + [P(B) - P(A \cap B)] = P(A)
 
 For mutually exclusive events ($A \cap B = \emptyset$): $P(A \cup B) = P(A) + P(B)$.
 
-**Corollary (Boole's inequality).** For any events $A$ and $B$$P(A \cup B) \leq P(A) + P(B)$.
+**Corollary (Boole's inequality).** For any events $A$ and $B$, $P(A \cup B) \leq P(A) + P(B)$.
 
 **Proof.** Since $P(A \cap B) \geq 0$We have
 $P(A \cup B) = P(A) + P(B) - P(A \cap B) \leq P(A) + P(B)$. $\blacksquare$
@@ -193,7 +193,7 @@ $(A_i, A_j)$ with $i \neq j$ is independent.
 :::warning Mutual independence is a **stronger** condition than pairwise independence. Pairwise
 Independence does not imply mutual independence. For example, with two independent coin tosses, let
 $A$ = "first toss is heads", $B$ = "second toss is heads", $C$ = "both tosses are the same". Then
-$A$$B$$C$ are pairwise independent but not mutually independent since
+$A$, $B$, $C$ are pairwise independent but not mutually independent since
 $P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$. :::
 
 <hr />
@@ -204,7 +204,7 @@ $P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$. :::
 
 Venn diagrams represent events as regions. Useful for visualising:
 
-- $A \cup B$$A \cap B$$A'$
+- $A \cup B$, $A \cap B$, $A'$
 - Relationships between events
 - Applying the addition rule
 
@@ -245,7 +245,7 @@ $P(A) = \dfrac◆LB◆|A|◆RB◆◆LB◆|\Omega|◆RB◆ = \dfrac◆LB◆\mathr
 
 ### 8.1 Inclusion-exclusion principle
 
-**Theorem (Inclusion-Exclusion for three events).** For events $A$$B$$C$:
+**Theorem (Inclusion-Exclusion for three events).** For events $A$, $B$, $C$:
 
 $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$
 
@@ -264,7 +264,7 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(B \cap C) - P(A \cap B) - P(A \cap
 
 ### 8.2 De Morgan's laws for three events
 
-**Theorem.** For events $A$$B$$C$:
+**Theorem.** For events $A$, $B$, $C$:
 
 $$(A \cup B \cup C)' = A' \cap B' \cap C'$$
 
@@ -452,7 +452,7 @@ concentrated around the Centre. :::
 
 <details>
 <summary>Problem 1</summary>
-Events $A$ and $B$ are such that $P(A) = 0.4$$P(B) = 0.5$And $P(A \cup B) = 0.7$. Find $P(A \cap B)$ and $P(A|B)$.
+Events $A$ and $B$ are such that $P(A) = 0.4$, $P(B) = 0.5$And $P(A \cup B) = 0.7$. Find $P(A \cap B)$ and $P(A|B)$.
 </details>
 
 <details>
@@ -474,7 +474,7 @@ A disease affects 1% of a population. A test is 99% accurate (both sensitivity a
 <summary>Solution 2</summary>
 Let $D$ = has disease, $T^+$ = tests positive.
 
-$P(D) = 0.01$$P(T^+|D) = 0.99$$P(T^+|D') = 0.01$.
+$P(D) = 0.01$, $P(T^+|D) = 0.99$, $P(T^+|D') = 0.01$.
 
 By the law of total probability:
 $P(T^+) = P(T^+|D)P(D) + P(T^+|D')P(D') = 0.99(0.01) + 0.01(0.99) = 0.0099 + 0.0099 = 0.0198$.
@@ -522,7 +522,7 @@ $P = 24/84 = 2/7$.
 
 <details>
 <summary>Problem 5</summary>
-Events $A$$B$$C$ are such that $P(A) = 0.3$$P(B) = 0.4$$P(C) = 0.5$$P(A \cap B) = 0.1$$P(A \cap C) = 0.15$$P(B \cap C) = 0.2$And $P(A \cap B \cap C) = 0.05$. Find $P(A \cup B \cup C)$.
+Events $A$, $B$, $C$ are such that $P(A) = 0.3$, $P(B) = 0.4$, $P(C) = 0.5$, $P(A \cap B) = 0.1$, $P(A \cap C) = 0.15$, $P(B \cap C) = 0.2$And $P(A \cap B \cap C) = 0.05$. Find $P(A \cup B \cup C)$.
 </details>
 
 <details>
@@ -559,9 +559,9 @@ A fair die is rolled. Let $A$ = "even number" and $B$ = "number greater than 3".
 
 <details>
 <summary>Solution 7</summary>
-$A = \{2, 4, 6\}$$B = \{4, 5, 6\}$$A \cap B = \{4, 6\}$.
+$A = \{2, 4, 6\}$, $B = \{4, 5, 6\}$, $A \cap B = \{4, 6\}$.
 
-$P(A) = 3/6 = 1/2$$P(B) = 3/6 = 1/2$$P(A \cap B) = 2/6 = 1/3$.
+$P(A) = 3/6 = 1/2$, $P(B) = 3/6 = 1/2$, $P(A \cap B) = 2/6 = 1/3$.
 
 $P(A)P(B) = 1/4 \neq 1/3 = P(A \cap B)$. So $A$ and $B$ are **not** independent.
 
@@ -576,7 +576,7 @@ In a school, 60% of students study Maths, 40% study Physics, and 25% study both.
 
 <details>
 <summary>Solution 8</summary>
-$P(M) = 0.6$$P(P) = 0.4$$P(M \cap P) = 0.25$.
+$P(M) = 0.6$, $P(P) = 0.4$, $P(M \cap P) = 0.25$.
 
 $P(M|P) = P(M \cap P)/P(P) = 0.25/0.4 = 0.625$.
 
@@ -721,7 +721,7 @@ In a survey, 70% of people like tea, 50% like coffee, and 35% like both. A perso
 
 <details>
 <summary>Solution 16</summary>
-$P(T) = 0.7$$P(C) = 0.5$$P(T \cap C) = 0.35$.
+$P(T) = 0.7$, $P(C) = 0.5$, $P(T \cap C) = 0.35$.
 
 $P(T \cup C) = P(T) + P(C) - P(T \cap C) = 0.7 + 0.5 - 0.35 = 0.85$.
 
@@ -749,7 +749,7 @@ $$P(A) = 1 - P(A') = 1 - \left(\frac{1}{2}\right)^5 = 1 - \frac{1}{32} = \frac{3
 
 <details>
 <summary>Problem 18</summary>
-Two events $A$ and $B$ satisfy $P(A) = 0.6$$P(B|A) = 0.4$And $P(B|A') = 0.7$. Find $P(B)$$P(A|B)$And determine whether $A$ and $B$ are independent.
+Two events $A$ and $B$ satisfy $P(A) = 0.6$, $P(B|A) = 0.4$And $P(B|A') = 0.7$. Find $P(B)$, $P(A|B)$And determine whether $A$ and $B$ are independent.
 </details>
 
 <details>
@@ -772,7 +772,7 @@ Check independence: $P(A)P(B) = 0.6 \times 0.52 = 0.312 \neq 0.24 = P(A \cap B)$
 
 <details>
 <summary>Problem 19</summary>
-A discrete random variable $X$ has CDF $F(x) = 0$ for $x \lt 0$$F(x) = x/4$ for $0 \leq x \lt 1$$F(x) = 1/2$ for $1 \leq x \lt 2$$F(x) = 3/4$ for $2 \leq x \lt 3$And $F(x) = 1$ for $x \geq 3$. Find the PMF of $X$ and verify it sums to 1.
+A discrete random variable $X$ has CDF $F(x) = 0$ for $x \lt 0$, $F(x) = x/4$ for $0 \leq x \lt 1$, $F(x) = 1/2$ for $1 \leq x \lt 2$, $F(x) = 3/4$ for $2 \leq x \lt 3$And $F(x) = 1$ for $x \geq 3$. Find the PMF of $X$ and verify it sums to 1.
 </details>
 
 <details>
@@ -809,7 +809,7 @@ Section 10.
 
 <details>
 <summary>Problem 20</summary>
-Three machines $M_1$$M_2$$M_3$ produce items with proportions 50%, 30%, 20%. Their defect rates are 2%, 3%, 5% respectively. An item is found to be defective. Find the probability it was produced by $M_3$.
+Three machines $M_1$, $M_2$, $M_3$ produce items with proportions 50%, 30%, 20%. Their defect rates are 2%, 3%, 5% respectively. An item is found to be defective. Find the probability it was produced by $M_3$.
 </details>
 
 <details>

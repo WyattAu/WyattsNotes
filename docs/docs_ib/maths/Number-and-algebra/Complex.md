@@ -115,7 +115,7 @@ $$
 E^{i\pi} + 1 = 0
 $$
 
-This identity links five fundamental constants: $e$$i$$\pi$$1$And $0$.
+This identity links five fundamental constants: $e$, $i$, $\pi$, $1$And $0$.
 
 ## Operations on Complex Numbers
 
@@ -322,7 +322,7 @@ Pairs**. That is, if $a + bi$ is a root, then $a - bi$ is also a root.
 
 ### Worked Example: Finding a Polynomial from Roots
 
-**Problem:** A cubic polynomial has real coefficients and roots $2$$1 + i$And $1 - i$. Find the
+**Problem:** A cubic polynomial has real coefficients and roots $2$, $1 + i$And $1 - i$. Find the
 Polynomial.
 
 **Solution:**
@@ -689,7 +689,7 @@ The five roots are $0,\; \pm\frac{1}{2} \pm i\frac{\sqrt{3}}{2}$.
 
 ### Worked Example: Geometric Problem on the Argand Diagram
 
-**Problem:** The points $A$$B$$C$ on the Argand diagram represent $z_A = 1 + i$$z_B = 5 + 3i$ And
+**Problem:** The points $A$, $B$, $C$ on the Argand diagram represent $z_A = 1 + i$, $z_B = 5 + 3i$ And
 $z_C = 3 + 7i$. Show that triangle $ABC$ is isosceles and find its area.
 
 **Solution:**
@@ -1010,7 +1010,7 @@ $$
 <details>
 <summary>Problem 9: Area of a Triangle on the Argand Diagram</summary>
 
-The vertices of a triangle on the Argand diagram are $z_1 = 0$$z_2 = 4 + 2i$And $z_3 = 1 + 5i$. Find
+The vertices of a triangle on the Argand diagram are $z_1 = 0$, $z_2 = 4 + 2i$And $z_3 = 1 + 5i$. Find
 the area of the triangle.
 
 **Solution:** Using the determinant formula for the area of a triangle with vertices at complex

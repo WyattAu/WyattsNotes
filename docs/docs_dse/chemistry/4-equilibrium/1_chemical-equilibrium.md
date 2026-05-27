@@ -289,7 +289,7 @@ $$Q_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b} \quad 
 **Worked example 6:** For
 $\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \rightleftharpoons 2\mathrm{NH}_{3(g)}$
 $K_c = 0.500 \mathrm{ (mol/dm}^3)^{-2}$ at a certain temperature. In a 2.00 dm$^3$ flask,
-$[\mathrm{N}_2] = 1.00$$[\mathrm{H}_2] = 1.00$$[\mathrm{NH}_3] = 0.500$ mol/dm$^3$. Will more
+$[\mathrm{N}_2] = 1.00$, $[\mathrm{H}_2] = 1.00$, $[\mathrm{NH}_3] = 0.500$ mol/dm$^3$. Will more
 $\mathrm{NH}_3$ form or will it decompose?
 
 <details>
@@ -315,7 +315,7 @@ $$\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \rightleftharpoons 2\mathrm{NH}_{3(g)} 
 | ----------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
 | Temperature | 400--500$^\circ$C                                                        | Compromise: lower T favours yield but slows rate                        |
 | Pressure    | 150--250 atm                                                             | High pressure favours yield (fewer gas moles on right) but is expensive |
-| Catalyst    | Iron (promoted with $\mathrm{K}_2\mathrm{O}$$\mathrm{Al}_2\mathrm{O}_3$) | Increases rate without affecting equilibrium                            |
+| Catalyst    | Iron (promoted with $\mathrm{K}_2\mathrm{O}$, $\mathrm{Al}_2\mathrm{O}_3$) | Increases rate without affecting equilibrium                            |
 | Recycle     | Unreacted $\mathrm{N}_2$ and $\mathrm{H}_2$ are recycled                 | Improves overall yield despite low single-pass conversion               |
 
 ### Le Chatelier's Principle Applied
@@ -476,7 +476,7 @@ $$x = 0.0290$$
 
 Check: $0.500 - 0.029 = 0.471$ (94%, good). $1.50 - 0.087 = 1.413$ (94%, good).
 
-$[\mathrm{N}_2] = 0.471$$[\mathrm{H}_2] = 1.413$$[\mathrm{NH}_3] = 0.0581$
+$[\mathrm{N}_2] = 0.471$, $[\mathrm{H}_2] = 1.413$, $[\mathrm{NH}_3] = 0.0581$
 
 $K_c = (0.0581)^2 / (0.471 \times 1.413^3) = 0.00338 / (0.471 \times 2.821) = 0.00338 / 1.329 = 0.00254$
 
@@ -492,7 +492,7 @@ $$4x^2 = 1.6875 \times 10^{-3}$$
 
 $$x = 0.02054$$
 
-$[\mathrm{N}_2] = 0.479$$[\mathrm{H}_2] = 1.438$$[\mathrm{NH}_3] = 0.0411$
+$[\mathrm{N}_2] = 0.479$, $[\mathrm{H}_2] = 1.438$, $[\mathrm{NH}_3] = 0.0411$
 
 Check:
 $K_c = (0.0411)^2 / (0.479 \times 1.438^3) = 0.00169 / (0.479 \times 2.972) = 0.00169 / 1.424 = 0.00119$
@@ -523,7 +523,7 @@ $$K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2}$$
 If $\Delta n = 0$Then $K_p = K_c$.
 
 **Worked example 8:** For
-$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$$K_c = 50.0$ at 700 K.
+$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$, $K_c = 50.0$ at 700 K.
 Calculate $K_p$.
 
 <details>
@@ -533,7 +533,7 @@ $\Delta n = 2 - (1 + 1) = 0$
 
 $K_p = K_c(RT)^0 = K_c = 50.0$
 
-When $\Delta n = 0$$K_p = K_c$ with no units.
+When $\Delta n = 0$, $K_p = K_c$ with no units.
 
 </details>
 
@@ -815,7 +815,7 @@ When a disturbance is applied to an equilibrium system, the system shifts to par
 Change. The new equilibrium can be estimated using $K_c$.
 
 **Worked example 9:** For
-$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$$K_c = 49.0$ at a
+$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$, $K_c = 49.0$ at a
 Certain temperature. At equilibrium, $[\mathrm{H}_2] = [\mathrm{I}_2] = 0.100$ and
 $[\mathrm{HI}] = 0.700$ mol/dm$^3$. If 0.200 mol/dm$^3$ of $\mathrm{HI}$ is suddenly added, what are
 The new equilibrium concentrations?
@@ -825,7 +825,7 @@ The new equilibrium concentrations?
 
 After adding HI but before the system responds:
 
-$[\mathrm{H}_2] = 0.100$$[\mathrm{I}_2] = 0.100$$[\mathrm{HI}] = 0.700 + 0.200 = 0.900$
+$[\mathrm{H}_2] = 0.100$, $[\mathrm{I}_2] = 0.100$, $[\mathrm{HI}] = 0.700 + 0.200 = 0.900$
 
 $Q_c = \dfrac{(0.900)^2}{(0.100)(0.100)} = \dfrac{0.810}{0.0100} = 81.0$
 

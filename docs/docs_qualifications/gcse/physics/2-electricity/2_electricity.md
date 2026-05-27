@@ -699,7 +699,7 @@ heater or Improving insulation can significantly reduce costs. :::
 
 ### Example 27: Parallel Circuit with Multiple Branches
 
-Three resistors of $100 \Omega$$200 \Omega$And $300 \Omega$ are connected in parallel across a
+Three resistors of $100 \Omega$, $200 \Omega$And $300 \Omega$ are connected in parallel across a
 $12 \mathrm{ V$ battery. Calculate the current through each resistor, the total current, and the
 Total resistance.
 

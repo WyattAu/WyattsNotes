@@ -52,7 +52,7 @@ $\det(\mathbf{M}) = 0$ would mean.
 $\det(\mathbf{M}) = 1\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} - 2\begin{vmatrix} 0 & 3 \\ 2 & 1 \end{vmatrix} + 0 = 1(1 - 0) - 2(0 - 6) = 1 + 12 = 13$.
 
 (b) Cofactors:
-$C_{11} = 1$$C_{12} = 6$$C_{13} = -2$$C_{21} = -2$$C_{22} = 1$$C_{23} = 4$$C_{31} = 6$$C_{32} = -3$$C_{33} = 1$.
+$C_{11} = 1$, $C_{12} = 6$, $C_{13} = -2$, $C_{21} = -2$, $C_{22} = 1$, $C_{23} = 4$, $C_{31} = 6$, $C_{32} = -3$, $C_{33} = 1$.
 
 $\mathbf{M}^{-1} = \frac{1}{13}\begin{pmatrix} 1 & -2 & 6 \\ 6 & 1 & -3 \\ -2 & 4 & 1 \end{pmatrix}$.
 
@@ -76,15 +76,15 @@ eigenvalues to calculate $\mathbf{A}^5$.
 
 (a)
 $\det(\mathbf{A} - \lambda\mathbf{I}) = \begin{vmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{vmatrix} = (4-\lambda)(3-\lambda) - 2 = \lambda^2 - 7\lambda + 10 = 0$.
-$(\lambda - 5)(\lambda - 2) = 0$. Eigenvalues: $\lambda_1 = 5$$\lambda_2 = 2$.
+$(\lambda - 5)(\lambda - 2) = 0$. Eigenvalues: $\lambda_1 = 5$, $\lambda_2 = 2$.
 
 (b) For $\lambda = 5$: $(\mathbf{A} - 5\mathbf{I})\mathbf{v} = \mathbf{0}$.
 $\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{0}$.
-$-x + y = 0$$y = x$. Eigenvector: $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
+$-x + y = 0$, $y = x$. Eigenvector: $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 
 For $\lambda = 2$: $(\mathbf{A} - 2\mathbf{I})\mathbf{v} = \mathbf{0}$.
 $\begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{0}$.
-$2x + y = 0$$y = -2x$. Eigenvector: $\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
+$2x + y = 0$, $y = -2x$. Eigenvector: $\begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
 
 (c) $\mathbf{P} = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}$. $\det(\mathbf{P}) = -3$.
 $\mathbf{P}^{-1} = \frac{1}{-3}\begin{pmatrix} -2 & -1 \\ -1 & 1 \end{pmatrix} = \frac{1}{3}\begin{pmatrix} 2 & 1 \\ 1 & -1 \end{pmatrix}$.
@@ -133,7 +133,7 @@ orientation: positive $=$ orientation preserved (rotation), negative $=$ orienta
 
 ### IT-2: Systems of Linear Equations (with Complex Numbers)
 
-**Question:** Solve the system: $x + 2y + z = 4$$2x - y + 3z = 9$$x + y + z = 5$. (a) Write in
+**Question:** Solve the system: $x + 2y + z = 4$, $2x - y + 3z = 9$, $x + y + z = 5$. (a) Write in
 matrix form $\mathbf{A}\mathbf{x} = \mathbf{b}$. (b) Calculate $\det(\mathbf{A})$. (c) Find
 $\mathbf{A}^{-1}$ and solve for $\mathbf{x}$. (d) Explain what would happen if
 $\det(\mathbf{A}) = 0$.
@@ -146,13 +146,13 @@ $\begin{pmatrix} 1 & 2 & 1 \\ 2 & -1 & 3 \\ 1 & 1 & 1 \end{pmatrix}\begin{pmatri
 (b) $\det(\mathbf{A}) = 1(-1 - 3) - 2(2 - 3) + 1(2 + 1) = -4 + 2 + 3 = 1$.
 
 (c) Cofactors:
-$C_{11} = -4$$C_{12} = 1$$C_{13} = 3$$C_{21} = -1$$C_{22} = 0$$C_{23} = 1$$C_{31} = 7$$C_{32} = -1$$C_{33} = -5$.
+$C_{11} = -4$, $C_{12} = 1$, $C_{13} = 3$, $C_{21} = -1$, $C_{22} = 0$, $C_{23} = 1$, $C_{31} = 7$, $C_{32} = -1$, $C_{33} = -5$.
 
 $\mathbf{A}^{-1} = \begin{pmatrix} -4 & -1 & 7 \\ 1 & 0 & -1 \\ 3 & 1 & -5 \end{pmatrix}$.
 
 $\mathbf{x} = \mathbf{A}^{-1}\begin{pmatrix} 4 \\ 9 \\ 5 \end{pmatrix} = \begin{pmatrix} -16 - 9 + 35 \\ 4 + 0 - 5 \\ 12 + 9 - 25 \end{pmatrix} = \begin{pmatrix} 10 \\ -1 \\ -4 \end{pmatrix}$.
 
-$x = 10$$y = -1$$z = -4$. Verification: $10 - 2 - 4 = 4 \checkmark$; $20 + 1 - 12 = 9 \checkmark$;
+$x = 10$, $y = -1$, $z = -4$. Verification: $10 - 2 - 4 = 4 \checkmark$; $20 + 1 - 12 = 9 \checkmark$;
 $10 - 1 - 4 = 5 \checkmark$.
 
 (d) If $\det(\mathbf{A}) = 0$The matrix is singular and $\mathbf{A}^{-1}$ does not exist. This means
@@ -171,7 +171,7 @@ the long-term behaviour of the solution.
 **Solution:**
 
 (a) $\det(\mathbf{A} - \lambda\mathbf{I}) = (2-\lambda)^2 - 1 = \lambda^2 - 4\lambda + 3 = 0$.
-$\lambda_1 = 3$$\lambda_2 = 1$.
+$\lambda_1 = 3$, $\lambda_2 = 1$.
 
 $\lambda = 3$: eigenvector $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$. $\lambda = 1$: eigenvector
 $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
@@ -180,7 +180,7 @@ $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 $\mathbf{x}(t) = c_1 e^{3t}\begin{pmatrix} 1 \\ 1 \end{pmatrix} + c_2 e^{t}\begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 $\mathbf{x}(0) = c_1\begin{pmatrix} 1 \\ 1 \end{pmatrix} + c_2\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$.
-$c_1 + c_2 = 3$ and $c_1 - c_2 = 1$. Solving: $c_1 = 2$$c_2 = 1$.
+$c_1 + c_2 = 3$ and $c_1 - c_2 = 1$. Solving: $c_1 = 2$, $c_2 = 1$.
 
 $\mathbf{x}(t) = 2e^{3t}\begin{pmatrix} 1 \\ 1 \end{pmatrix} + e^{t}\begin{pmatrix} 1 \\ -1 \end{pmatrix} = \begin{pmatrix} 2e^{3t} + e^t \\ 2e^{3t} - e^t \end{pmatrix}$.
 

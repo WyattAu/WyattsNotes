@@ -19,7 +19,7 @@ A quadratic equation in $x$ has the general form:
 
 $$ax^2 + bx + c = 0, \quad a \neq 0$$
 
-Where $a$$b$And $c$ are real constants.
+Where $a$, $b$And $c$ are real constants.
 
 ### The Quadratic Formula
 
@@ -100,7 +100,7 @@ The graph of $f(x) = ax^2 + bx + c$ is a parabola.
 <DesmosGraph title="Quadratic Function Explorer" expressions={["ax^2+bx+c", "-b/(2a)"]} width={800}
 Height={500} />
 
-Adjust the sliders to see how $a$$b$And $c$ affect the shape, vertex, and roots of the parabola.
+Adjust the sliders to see how $a$, $b$And $c$ affect the shape, vertex, and roots of the parabola.
 
 ### Key Features
 
@@ -134,7 +134,7 @@ $x$-intercepts: $(1, 0)$ and $(3, 0)$.
 
 ## Quadratic Inequalities
 
-To solve $ax^2 + bx + c \gt 0$ (or $\lt$$\geqslant$$\leqslant$):
+To solve $ax^2 + bx + c \gt 0$ (or $\lt$, $\geqslant$, $\leqslant$):
 
 1. Find the roots of $ax^2 + bx + c = 0$.
 2. Sketch the parabola using the sign of $a$.
@@ -288,9 +288,9 @@ $\Delta = 0$I.e., $ad = bc$.
 By Vieta: $\alpha + \beta = k$ and $\alpha\beta = k + 3$. So $\alpha\beta = \alpha + \beta + 3$
 Giving $\alpha\beta - \alpha - \beta = 3$Or $(\alpha - 1)(\beta - 1) = 4$.
 
-Factor pairs of 4: $(1,4)$$(2,2)$$(4,1)$$(-1,-4)$$(-2,-2)$$(-4,-1)$.
+Factor pairs of 4: $(1,4)$, $(2,2)$, $(4,1)$, $(-1,-4)$, $(-2,-2)$, $(-4,-1)$.
 
-These give $(\alpha, \beta) = (2,5)$$(3,3)$$(5,2)$$(0,-3)$$(-1,-1)$$(-3,0)$.
+These give $(\alpha, \beta) = (2,5)$, $(3,3)$, $(5,2)$, $(0,-3)$, $(-1,-1)$, $(-3,0)$.
 
 Corresponding $k$ values: $7, 6, 7, -3, -2, -3$. Integer values of $k$: $\{-3, -2, 6, 7\}$.
 
@@ -539,7 +539,7 @@ $$y(x^2 + x + 1) = x^2 - x + 1 \implies yx^2 + yx + y = x^2 - x + 1$$
 
 $$(y - 1)x^2 + (y + 1)x + (y - 1) = 0$$
 
-For real $x$$\Delta \geq 0$:
+For real $x$, $\Delta \geq 0$:
 
 $$(y+1)^2 - 4(y-1)^2 \geq 0$$
 
@@ -566,13 +566,13 @@ $$100 - 2(\alpha\beta)^2 = 82 \implies 2(\alpha\beta)^2 = 18 \implies (\alpha\be
 **Case $\alpha\beta = 3$:**
 $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 10 \implies (\alpha + \beta)^2 - 6 = 10 \implies (\alpha + \beta)^2 = 16 \implies \alpha + \beta = \pm 4$.
 
-So $p = -(\alpha + \beta) = \pm 4$$q = \alpha\beta = 3$. Two quadratics: $x^2 + 4x + 3 = 0$ and
+So $p = -(\alpha + \beta) = \pm 4$, $q = \alpha\beta = 3$. Two quadratics: $x^2 + 4x + 3 = 0$ and
 $x^2 - 4x + 3 = 0$.
 
 **Case $\alpha\beta = -3$:**
 $(\alpha + \beta)^2 - 2(-3) = 10 \implies (\alpha + \beta)^2 = 4 \implies \alpha + \beta = \pm 2$.
 
-So $p = \mp 2$$q = -3$. Two quadratics: $x^2 + 2x - 3 = 0$ and $x^2 - 2x - 3 = 0$.
+So $p = \mp 2$, $q = -3$. Two quadratics: $x^2 + 2x - 3 = 0$ and $x^2 - 2x - 3 = 0$.
 
 All four pairs are valid solutions.
 
@@ -616,7 +616,7 @@ For quadratic problems in DSE Paper 1, examiners expect:
 ### Significant Figures
 
 Unless the question states otherwise, give final answers to 3 significant figures. Exact forms
-(e.g., $\sqrt{3}$$\dfrac{5}{2}$) are preferred and should not be converted to decimals unless asked.
+(e.g., $\sqrt{3}$, $\dfrac{5}{2}$) are preferred and should not be converted to decimals unless asked.
 
 ### Common DSE Question Types
 
@@ -756,7 +756,7 @@ $$\alpha\beta = q = 3$$
 
 $$(\alpha - \beta)^2 = (\alpha + \beta)^2 - 4\alpha\beta \implies 16 = p^2 - 12 \implies p^2 = 28 \implies p = \pm 2\sqrt{7}$$
 
-Answer: $q = 3$$p = 2\sqrt{7}$ or $p = -2\sqrt{7}$.
+Answer: $q = 3$, $p = 2\sqrt{7}$ or $p = -2\sqrt{7}$.
 
 </details>
 
@@ -770,7 +770,7 @@ roots are $\dfrac{1}{\alpha + 1}$ and $\dfrac{1}{\beta + 1}$.
 <details>
 <summary>Solution</summary>
 
-$\alpha + \beta = \dfrac{3}{2}$$\alpha\beta = -2$.
+$\alpha + \beta = \dfrac{3}{2}$, $\alpha\beta = -2$.
 
 New sum:
 $\dfrac{1}{\alpha + 1} + \dfrac{1}{\beta + 1} = \dfrac{\alpha + \beta + 2}{\alpha\beta + \alpha + \beta + 1} = \dfrac{3/2 + 2}{-2 + 3/2 + 1} = \dfrac{7/2}{1/2} = 7$.
@@ -801,7 +801,7 @@ Combining all three conditions: $-5 < k < -1$.
 
 </details>
 
-**DSE Practice 3.** Prove that for all real $x$$x^2 - 2x + 3 > 0$.
+**DSE Practice 3.** Prove that for all real $x$, $x^2 - 2x + 3 > 0$.
 
 <details>
 <summary>Solution</summary>
@@ -836,7 +836,7 @@ $\alpha^4 + \beta^4$ without solving the equation.
 <details>
 <summary>Solution</summary>
 
-$\alpha + \beta = 4$$\alpha\beta = 1$.
+$\alpha + \beta = 4$, $\alpha\beta = 1$.
 
 $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 16 - 2 = 14$.
 

@@ -87,7 +87,7 @@ $$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\exp\!\left(-\fr
 
 - The distribution is symmetric about $x = \mu$.
 - The mean, median, and mode are all equal to $\mu$.
-- $E(X) = \mu$$\mathrm{Var}(X) = \sigma^2$.
+- $E(X) = \mu$, $\mathrm{Var}(X) = \sigma^2$.
 - Approximately 68% of data lies within $\mu \pm \sigma$.
 - Approximately 95% of data lies within $\mu \pm 2\sigma$.
 - Approximately 99.7% of data lies within $\mu \pm 3\sigma$.
@@ -142,7 +142,7 @@ The approximation is reasonable when $np \gt 5$ and $n(1-p) \gt 5$.
 
 **Problem.** $X \sim B(80, 0.45)$. Use a normal approximation to find $P(X \gt 35)$.
 
-$\mu = 80 \times 0.45 = 36$$\sigma^2 = 80 \times 0.45 \times 0.55 = 19.8$$\sigma = 4.45$.
+$\mu = 80 \times 0.45 = 36$, $\sigma^2 = 80 \times 0.45 \times 0.55 = 19.8$, $\sigma = 4.45$.
 
 $X \approx N(36, 19.8)$.
 
@@ -262,7 +262,7 @@ $X$.
 
 (c) Mode $\approx (n+1)p = 16 \times 0.35 = 5.6$So check $r = 5$ and $r = 6$.
 
-$P(X = 5) \approx 0.2123$$P(X = 6) \approx 0.2186$. The mode is $X = 6$.
+$P(X = 5) \approx 0.2123$, $P(X = 6) \approx 0.2186$. The mode is $X = 6$.
 
 </details>
 
@@ -311,7 +311,7 @@ Sixes is between 8 and 14 inclusive.
 <summary>Solution</summary>
 
 $X \sim B(60, 1/6)$.
-$\mu = 10$$\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
+$\mu = 10$, $\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
 
 $\sigma \approx 2.887$.
 

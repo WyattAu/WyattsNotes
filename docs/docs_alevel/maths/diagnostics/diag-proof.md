@@ -30,15 +30,15 @@ argument that "if $p^2$ is even then $p$ is even."]
 **Solution:**
 
 **(a)** Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$ where
-$p, q \in \mathbb{Z}$$q \neq 0$And $\gcd(p, q) = 1$ (i.e. The fraction is in its lowest terms).
+$p, q \in \mathbb{Z}$, $q \neq 0$And $\gcd(p, q) = 1$ (i.e. The fraction is in its lowest terms).
 
 Squaring: $2 = \frac{p^2}{q^2}$So $p^2 = 2q^2$.
 
-Since $p^2 = 2q^2$$p^2$ is even. Since the square of an odd number is odd, $p$ must be even.
+Since $p^2 = 2q^2$, $p^2$ is even. Since the square of an odd number is odd, $p$ must be even.
 
 Write $p = 2k$ for some integer $k$. Then $(2k)^2 = 2q^2$So $4k^2 = 2q^2$Giving $q^2 = 2k^2$.
 
-Since $q^2 = 2k^2$$q^2$ is even, and by the same argument, $q$ is even.
+Since $q^2 = 2k^2$, $q^2$ is even, and by the same argument, $q$ is even.
 
 So both $p$ and $q$ are even, contradicting $\gcd(p, q) = 1$.
 
@@ -248,7 +248,7 @@ So $a_{k+1} \lt 3$. By induction, $a_n \lt 3$ for all $n \geq 1$.
 
 **(b)** Let $Q(n)$ be "$a_n \leq a_{n+1}$".
 
-**Base case ($n = 1$):** $a_1 = 2$$a_2 = \frac{5}{2} = 2.5$. $2 \leq 2.5$. True.
+**Base case ($n = 1$):** $a_1 = 2$, $a_2 = \frac{5}{2} = 2.5$. $2 \leq 2.5$. True.
 
 **Inductive step:** Assume $a_k \leq a_{k+1}$ for some $k \geq 1$. We need $a_{k+1} \leq a_{k+2}$.
 
@@ -309,7 +309,7 @@ Therefore $f$ is injective.
 $x = 0$.
 
 $f'(x) \geq 0$ means $f$ is non-decreasing. To show strict monotonicity: for any $a \lt b$ with
-$a \neq 0$$f'(x) = 3x^2 \gt 0$ on $(a, b)$ (since $x = 0$ is a single point), so by the Mean Value
+$a \neq 0$, $f'(x) = 3x^2 \gt 0$ on $(a, b)$ (since $x = 0$ is a single point), so by the Mean Value
 Theorem, $f(b) - f(a) = f'(c)(b-a) \gt 0$ for some $c \in (a, b)$.
 
 If $a \lt 0 \lt b$: $f(a) = a^3 \lt 0 \lt b^3 = f(b)$.

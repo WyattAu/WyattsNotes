@@ -66,7 +66,7 @@ Examples:
 
 Examples:
 
-- Isotopes: $\prescript{1}{1}\mathrm{H}$$\prescript{2}{1}\mathrm{H}$ $\prescript{3}{1}\mathrm{H}$
+- Isotopes: $\prescript{1}{1}\mathrm{H}$, $\prescript{2}{1}\mathrm{H}$ $\prescript{3}{1}\mathrm{H}$
 - Isobars: $\prescript{40}{20}\mathrm{Ca}$ and $\prescript{40}{18}\mathrm{Ar}$
 - Isotones: $\prescript{14}{6}\mathrm{C}$ and $\prescript{15}{7}\mathrm{N}$ (both have $N = 8$)
 
@@ -234,7 +234,7 @@ Check the nucleon number: $214 - 210 = 4$
 
 Check the proton number: $84 - 82 = 2$
 
-The missing particle has $A = 4$$Z = 2$Which is an alpha particle: $\prescript{4}{2}\mathrm{He}$
+The missing particle has $A = 4$, $Z = 2$Which is an alpha particle: $\prescript{4}{2}\mathrm{He}$
 
 ---
 
@@ -694,7 +694,7 @@ Ionisation can damage biological tissue through several mechanisms:
 
 1. **Direct ionisation:** Radiation directly ionises DNA molecules, causing strand breaks
 2. **Indirect ionisation:** Radiation ionises water molecules (the most abundant molecule in the
-   body), producing reactive free radicals ($\mathrm{OH}^*$$\mathrm{H}^*$) that attack DNA
+   body), producing reactive free radicals ($\mathrm{OH}^*$, $\mathrm{H}^*$) that attack DNA
 
 Types of DNA damage:
 
@@ -1332,7 +1332,7 @@ $\prescript{60}{27}\mathrm{Co} \to \ ? + e^- + \bar{\nu}_e$
 
 In beta-minus decay, $Z$ increases by 1 while $A$ stays the same.
 
-Daughter nucleus: $A = 60$$Z = 27 + 1 = 28$
+Daughter nucleus: $A = 60$, $Z = 27 + 1 = 28$
 
 $\prescript{60}{27}\mathrm{Co} \to \prescript{60}{28}\mathrm{Ni} + e^- + \bar{\nu}_e$
 
@@ -1671,7 +1671,7 @@ $$A = A_0 e^{-\lambda t}$$
 
 ### Derivation: Half-Life Relation
 
-At $t = t_{1/2}$$N = N_0/2$:
+At $t = t_{1/2}$, $N = N_0/2$:
 
 $$\frac{N_0}{2} = N_0 e^{-\lambda t_{1/2}}$$
 

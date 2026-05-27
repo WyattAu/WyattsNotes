@@ -21,13 +21,13 @@ deadweight loss of the externality. Explain how a Pigouvian tax could correct th
 **Solution:**
 
 (a) Market equilibrium (private costs only):
-$100 - Q = 20 + Q$$80 = 2Q$$Q_m = 40$$P_m = \pounds 60$.
+$100 - Q = 20 + Q$, $80 = 2Q$, $Q_m = 40$, $P_m = \pounds 60$.
 
 (b) Social optimum: Marginal Social Cost
 $= \text{MPC} + \text{MEC} = (20 + Q) + (10 + 0.5Q) = 30 + 1.5Q$.
 
 Set MSC $=$ MSB (demand):
-$30 + 1.5Q = 100 - Q$$70 = 2.5Q$$Q_{\text{opt}} = 28$$P_{\text{opt}} = 100 - 28 = \pounds 72$.
+$30 + 1.5Q = 100 - Q$, $70 = 2.5Q$, $Q_{\text{opt}} = 28$, $P_{\text{opt}} = 100 - 28 = \pounds 72$.
 
 (c) Deadweight loss:
 $\text{DWL} = \frac{1}{2} \times (Q_m - Q_{\text{opt}}) \times (\text{MSC at } Q_m - \text{MSB at } Q_m)$.
@@ -43,7 +43,7 @@ $\text{MEC at } Q_{\text{opt}} = 28$: $10 + 0.5(28) = \pounds 24$.
 A per-unit tax of $\pounds 24$ would shift the private supply curve up to:
 $P = (20 + 24) + Q = 44 + Q$.
 
-New equilibrium: $100 - Q = 44 + Q$$56 = 2Q$$Q = 28$$P = \pounds 72$. This matches the social
+New equilibrium: $100 - Q = 44 + Q$, $56 = 2Q$, $Q = 28$, $P = \pounds 72$. This matches the social
 optimum.
 
 ---
@@ -89,15 +89,15 @@ $P = 20 + Q$ with $\text{MEC} = 15$ (constant).
 
 **Solution:**
 
-Market equilibrium: $80 - Q = 20 + Q$$Q_m = 30$$P_m = \pounds 50$.
+Market equilibrium: $80 - Q = 20 + Q$, $Q_m = 30$, $P_m = \pounds 50$.
 
 Social optimum with constant MEC $= 15$: MSC $= (20 + Q) + 15 = 35 + Q$.
 
-$35 + Q = 80 - Q$$45 = 2Q$$Q_{\text{opt}} = 22.5$$P_{\text{opt}} = 80 - 22.5 = \pounds 57.50$.
+$35 + Q = 80 - Q$, $45 = 2Q$, $Q_{\text{opt}} = 22.5$, $P_{\text{opt}} = 80 - 22.5 = \pounds 57.50$.
 
 **Pigouvian tax of $\pounds 15$:** New supply $P = 35 + Q$.
 
-$80 - Q = 35 + Q$$Q_t = 22.5$$P_{\text{buyer}} = \pounds 57.50$.
+$80 - Q = 35 + Q$, $Q_t = 22.5$, $P_{\text{buyer}} = \pounds 57.50$.
 
 This achieves the social optimum. DWL with tax $= 0$ (the tax perfectly corrects the externality).
 
@@ -127,19 +127,19 @@ Discuss the equity implications of relying on a subsidy versus free provision.
 
 **Solution:**
 
-(a) Market equilibrium: $50 - 0.1Q = 10 + 0.1Q$$40 = 0.2Q$$Q_m = 200$ (thousand),
+(a) Market equilibrium: $50 - 0.1Q = 10 + 0.1Q$, $40 = 0.2Q$, $Q_m = 200$ (thousand),
 $P_m = \pounds 30$.
 
 (b) Social optimum: $\text{MSB} = (50 - 0.1Q) + 8 = 58 - 0.1Q$. Set $\text{MSB} = \text{MSC}$:
 
-$58 - 0.1Q = 10 + 0.1Q$$48 = 0.2Q$$Q_{\text{opt}} = 240$ (thousand),
+$58 - 0.1Q = 10 + 0.1Q$, $48 = 0.2Q$, $Q_{\text{opt}} = 240$ (thousand),
 $P_{\text{opt}} = 58 - 24 = \pounds 34$.
 
 (c) Subsidy $= \text{MEB} = \pounds 8$ per student place.
 
 With $\pounds 8$ subsidy: effective supply $= 10 + 0.1Q - 8 = 2 + 0.1Q$.
 
-$50 - 0.1Q = 2 + 0.1Q$$48 = 0.2Q$$Q = 240$. Confirms the social optimum.
+$50 - 0.1Q = 2 + 0.1Q$, $48 = 0.2Q$, $Q = 240$. Confirms the social optimum.
 
 **Equity implications:** A subsidy preserves market provision but lowers the price to students.
 However, lower-income students may still be unable to afford education even with the subsidy,
@@ -213,12 +213,12 @@ $Q_d = (800 - 500)/0.5 = 600$. $Q_s = (500 - 200)/0.5 = 600$.
 
 Domestic supply equals demand at world price, so imports $= 0$.
 
-Wait, let me recalculate: $Q_d = 2(800 - 500) = 600$$Q_s = 2(500 - 200) = 600$. At $\pounds 500$The
+Wait, let me recalculate: $Q_d = 2(800 - 500) = 600$, $Q_s = 2(500 - 200) = 600$. At $\pounds 500$The
 domestic market is in equilibrium with no trade.
 
 Let me reconsider with a lower world price. Let world price $= \pounds 400$:
 
-$Q_d = 2(800 - 400) = 800$$Q_s = 2(400 - 200) = 400$. Imports $= 800 - 400 = 400$.
+$Q_d = 2(800 - 400) = 800$, $Q_s = 2(400 - 200) = 400$. Imports $= 800 - 400 = 400$.
 
 With carbon tax of $\pounds 50$: domestic producers face higher costs. New supply $P = 250 + 0.5Q$
 (shifted up by 50).
@@ -255,10 +255,10 @@ revenue, and total welfare.
 **Solution:**
 
 (a) Market equilibrium:
-$P = MC \Rightarrow 500 - Q = 50 + 2Q \Rightarrow 450 = 3Q \Rightarrow Q = 150$$P = 350$.
+$P = MC \Rightarrow 500 - Q = 50 + 2Q \Rightarrow 450 = 3Q \Rightarrow Q = 150$, $P = 350$.
 
 (b) Social optimum:
-$MSB = MSC \Rightarrow 500 - Q = 50 + 2Q + Q = 50 + 3Q \Rightarrow 450 = 4Q \Rightarrow Q = 112.5$$P = 387.5$.
+$MSB = MSC \Rightarrow 500 - Q = 50 + 2Q + Q = 50 + 3Q \Rightarrow 450 = 4Q \Rightarrow Q = 112.5$, $P = 387.5$.
 
 (c) Pigouvian tax: $t = MEC$ at socially optimal output $= 112.5$ per unit.
 
@@ -327,13 +327,13 @@ efficient? Explain.
 **Solution:**
 
 (a) Market equilibrium: $1000 - 5P = 2(P - 40) = 2P - 80$.
-$1000 - 5P = 2P - 80 \Rightarrow 1080 = 7P \Rightarrow P = 154.29$$Q = 228.57$.
+$1000 - 5P = 2P - 80 \Rightarrow 1080 = 7P \Rightarrow P = 154.29$, $Q = 228.57$.
 
 Wait, let me use demand in $Q$ form. $P = 200 - 0.2Q$ (from $Q_D = 1000 - 5P$).
-$200 - 0.2Q = 40 + 0.5Q \Rightarrow 160 = 0.7Q \Rightarrow Q = 228.57$$P = 154.29$.
+$200 - 0.2Q = 40 + 0.5Q \Rightarrow 160 = 0.7Q \Rightarrow Q = 228.57$, $P = 154.29$.
 
 Social optimum: $MSB = MPB + MEB = (200 - 0.2Q) + 20 = 220 - 0.2Q$. $MSB = MSC$:
-$220 - 0.2Q = 40 + 0.5Q \Rightarrow 180 = 0.7Q \Rightarrow Q = 257.14$$P_{MSB} = 220 - 0.2(257.14) = 168.57$.
+$220 - 0.2Q = 40 + 0.5Q \Rightarrow 180 = 0.7Q \Rightarrow Q = 257.14$, $P_{MSB} = 220 - 0.2(257.14) = 168.57$.
 
 (b) DWL: area between MSB and MSC from $Q = 228.57$ to $Q = 257.14$. At $Q = 228.57$:
 $MSB = 220 - 0.2(228.57) = 174.29$. $MSC = 40 + 0.5(228.57) = 154.29$. At $Q = 257.14$:
@@ -366,7 +366,7 @@ failure (conversion) compared to the original market failure.
 
 **Solution:**
 
-(a) $1000 - 5P = 4P - 200 \Rightarrow 1200 = 9P \Rightarrow P = 133.33$$Q = 333.33$.
+(a) $1000 - 5P = 4P - 200 \Rightarrow 1200 = 9P \Rightarrow P = 133.33$, $Q = 333.33$.
 
 (b) At $P = 100$: $Q_D = 1000 - 500 = 500$. $Q_S = 400 - 200 = 200$. Shortage $= 500 - 200 = 300$
 units. DWL $= \frac{1}{2}(133.33 - 100)(333.33 - 200) = \frac{1}{2}(33.33)(133.33) = 2222.0$.

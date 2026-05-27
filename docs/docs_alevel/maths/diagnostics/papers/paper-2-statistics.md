@@ -191,7 +191,7 @@ class width of the 35--60 minute class inflates its frequency.
 
 ### Q2 — Solution
 
-**(a)** We need $\sum x$$\sum y$$\sum x^2$$\sum y^2$$\sum xy$.
+**(a)** We need $\sum x$, $\sum y$, $\sum x^2$, $\sum y^2$, $\sum xy$.
 
 $$\sum x = 15 + 22 + 30 + 35 + 42 + 55 + 68 = 267$$
 

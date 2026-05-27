@@ -33,7 +33,7 @@ $$\frac{dy}{dx} = 2\sin(u) \cdot \cos(u) \cdot \frac{du}{dx} = \sin(2u) \cdot e^
 $$\frac{dy}{dx} = 6x \, e^{3x^2+1} \sin\!\left(2e^{3x^2+1}\right)$$
 
 For $\dfrac{d^2y}{dx^2}$Apply the product rule to $6x \cdot e^{3x^2+1} \cdot \sin(2e^{3x^2+1})$. Let
-$A = 6x$$B = e^{3x^2+1}$$C = \sin(2e^{3x^2+1})$. Then:
+$A = 6x$, $B = e^{3x^2+1}$, $C = \sin(2e^{3x^2+1})$. Then:
 
 $$\frac{d^2y}{dx^2} = A'BC + AB'C + ABC'$$
 

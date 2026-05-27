@@ -450,7 +450,7 @@ Lamination). The insulation between laminations prevents currents from flowing a
 **Problem:** A conducting disc of radius $R$ and thickness $t$ rotates at angular velocity $\omega$
 In a uniform magnetic field $B$ perpendicular to the disc. Show that the power dissipated by eddy
 Currents scales as $P \propto B^2\omega^2 R^4 t / \rho$And evaluate for $R = 0.15\mathrm{ m}$
-$t = 5.0\mathrm{ mm}$$\omega = 300\mathrm{ rad s}^{-1}$$B = 0.80\mathrm{ T}$
+$t = 5.0\mathrm{ mm}$, $\omega = 300\mathrm{ rad s}^{-1}$, $B = 0.80\mathrm{ T}$
 $\rho = 1.7 \times 10^{-8}\,\Omega\mathrm{m}$.
 
 **Solution:**

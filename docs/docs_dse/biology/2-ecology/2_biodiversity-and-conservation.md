@@ -448,7 +448,7 @@ Population growth drives:
 
 ### Climate Change
 
-Burning fossil fuels releases $\mathrm{CO}_2$$\mathrm{CH}_4$ (methane), and $\mathrm{N}_2\mathrm{O}$
+Burning fossil fuels releases $\mathrm{CO}_2$, $\mathrm{CH}_4$ (methane), and $\mathrm{N}_2\mathrm{O}$
 (nitrous oxide) -- greenhouse gases that trap infrared radiation, Increasing global temperatures.
 
 **Consequences for biodiversity:**

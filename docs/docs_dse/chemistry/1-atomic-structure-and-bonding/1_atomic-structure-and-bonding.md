@@ -245,7 +245,7 @@ Pulled towards the more electronegative atom, creating a **polar bond** with a d
 
 Use electronegativity values to predict the bond polarity of (a) $\mathrm{H_2O}$(b)
 $\mathrm{CCl_4}$And (c) $\mathrm{KBr}$. Given:
-$\mathrm{H} = 2.1$$\mathrm{O} = 3.5$$\mathrm{C} = 2.5$$\mathrm{Cl} = 3.0$$\mathrm{K} = 0.8$$\mathrm{Br} = 2.8$.
+$\mathrm{H} = 2.1$, $\mathrm{O} = 3.5$, $\mathrm{C} = 2.5$, $\mathrm{Cl} = 3.0$, $\mathrm{K} = 0.8$, $\mathrm{Br} = 2.8$.
 
 <details>
 <summary>Solution</summary>
@@ -272,7 +272,7 @@ Possible.
 
 | Electron Pairs    | Shape                | Bond Angle            | Example                          |
 | ----------------- | -------------------- | --------------------- | -------------------------------- |
-| 2 bonding pairs   | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$$\mathrm{CO}_2$ |
+| 2 bonding pairs   | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$ |
 | 3 bonding pairs   | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$                  |
 | 2 bonding, 1 lone | Bent                 | $\lt 120^\circ$       | $\mathrm{SO}_2$                  |
 | 4 bonding pairs   | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$                  |
@@ -299,7 +299,7 @@ The bond angle is approximately $107^\circ$ (less than $109.5^\circ$ due to lone
 
 ### Simple Molecular vs Giant Covalent Structures
 
-**Simple molecular** (e.g., $\mathrm{H}_2\mathrm{O}$$\mathrm{CO}_2$$\mathrm{I}_2$):
+**Simple molecular** (e.g., $\mathrm{H}_2\mathrm{O}$, $\mathrm{CO}_2$, $\mathrm{I}_2$):
 
 - Low melting and boiling points (weak intermolecular forces between molecules)
 - Do not conduct electricity
@@ -361,7 +361,7 @@ A special, strong type of dipole-dipole interaction that occurs when:
 
 Conditions: H bonded to N, O, or F, and interacting with another N, O, or F.
 
-Examples: $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$HF, DNA base pairing.
+Examples: $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$HF, DNA base pairing.
 
 ### Effect of Intermolecular Forces on Properties
 
@@ -673,17 +673,17 @@ Atomic radius decreases across the period because increasing nuclear charge pull
 | ---------------------------------- | --- | --- | --- | ---- | --- | --- | ---- | ---- |
 | Melting point ($^\circ\mathrm{C}$) | 98  | 650 | 660 | 1410 | 44  | 115 | -101 | -189 |
 
-- $\mathrm{Na}$$\mathrm{Mg}$$\mathrm{Al}$: Metallic bonding, increasing strength (more delocalised
+- $\mathrm{Na}$, $\mathrm{Mg}$, $\mathrm{Al}$: Metallic bonding, increasing strength (more delocalised
   electrons)
 - $\mathrm{Si}$: Giant covalent structure, very high melting point
-- $\mathrm{P}$$\mathrm{S}$$\mathrm{Cl}$$\mathrm{Ar}$: Simple molecular, weak van der Waals forces
+- $\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Simple molecular, weak van der Waals forces
 
 ### Electrical Conductivity
 
-- $\mathrm{Na}$$\mathrm{Mg}$$\mathrm{Al}$: Good conductors (metallic bonding with delocalised
+- $\mathrm{Na}$, $\mathrm{Mg}$, $\mathrm{Al}$: Good conductors (metallic bonding with delocalised
   electrons)
 - $\mathrm{Si}$: Semiconductor (conductivity increases with temperature)
-- $\mathrm{P}$$\mathrm{S}$$\mathrm{Cl}$$\mathrm{Ar}$: Non-conductors (no mobile charge carriers)
+- $\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Non-conductors (no mobile charge carriers)
 
 ---
 
@@ -833,9 +833,9 @@ Equivalent in energy and suitable for bonding.
 
 | Hybridisation | Geometry             | Bond Angle            | Example                                     |
 | ------------- | -------------------- | --------------------- | ------------------------------------------- |
-| $sp$          | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$$\mathrm{C}_2\mathrm{H}_2$ |
-| $sp^2$        | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$$\mathrm{C}_2\mathrm{H}_4$   |
-| $sp^3$        | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$$\mathrm{NH}_3$              |
+| $sp$          | Linear               | $180^\circ$           | $\mathrm{BeCl}_2$, $\mathrm{C}_2\mathrm{H}_2$ |
+| $sp^2$        | Trigonal planar      | $120^\circ$           | $\mathrm{BF}_3$, $\mathrm{C}_2\mathrm{H}_4$   |
+| $sp^3$        | Tetrahedral          | $109.5^\circ$         | $\mathrm{CH}_4$, $\mathrm{NH}_3$              |
 | $sp^3d$       | Trigonal bipyramidal | $90^\circ, 120^\circ$ | $\mathrm{PCl}_5$                            |
 | $sp^3d^2$     | Octahedral           | $90^\circ$            | $\mathrm{SF}_6$                             |
 
@@ -1057,7 +1057,7 @@ mass.
 
 $$\mathrm{N_2} + 3\mathrm{H_2} \to 2\mathrm{NH_3}$$
 
-Given: $\mathrm{N \equiv N} = 945$$\mathrm{H - H} = 436$$\mathrm{N - H} = 391 \mathrm{ kJ/mol}$.
+Given: $\mathrm{N \equiv N} = 945$, $\mathrm{H - H} = 436$, $\mathrm{N - H} = 391 \mathrm{ kJ/mol}$.
 
 _If you get this wrong, revise: Bond Enthalpy_
 
@@ -1099,14 +1099,14 @@ _If you get this wrong, revise: Trends Across Period 3_
 <details>
 <summary>Solution</summary>
 
-$\mathrm{Na}$$\mathrm{Mg}$$\mathrm{Al}$: Good conductors due to metallic bonding with delocalised
+$\mathrm{Na}$, $\mathrm{Mg}$, $\mathrm{Al}$: Good conductors due to metallic bonding with delocalised
 electrons. Conductivity increases from $\mathrm{Na}$ to $\mathrm{Al}$ as more delocalised electrons
 per atom are available.
 
 $\mathrm{Si}$: Semiconductor; conductivity is much lower than metals but increases with temperature
 as more electrons are promoted to the conduction band.
 
-$\mathrm{P}$$\mathrm{S}$$\mathrm{Cl}$$\mathrm{Ar}$: Non-conductors. They are simple molecular or
+$\mathrm{P}$, $\mathrm{S}$, $\mathrm{Cl}$, $\mathrm{Ar}$: Non-conductors. They are simple molecular or
 monatomic species with no mobile charge carriers.
 
 </details>
@@ -1183,11 +1183,11 @@ _If you get this wrong, revise: Ionisation Energy_
 **First ionisation energy** is the energy required to remove one mole of electrons from one mole of
 gaseous atoms.
 
-Sodium ($Z = 11$$[\mathrm{Ne}]\, 3s^1$) has its outermost electron in the 3s subshell, which is
+Sodium ($Z = 11$, $[\mathrm{Ne}]\, 3s^1$) has its outermost electron in the 3s subshell, which is
 further from the nucleus and well-shielded by the neon core. The electron is relatively easy to
 remove.
 
-Neon ($Z = 10$$1s^2\, 2s^2\, 2p^6$) has a stable noble gas configuration with a full outer shell.
+Neon ($Z = 10$, $1s^2\, 2s^2\, 2p^6$) has a stable noble gas configuration with a full outer shell.
 All electrons are in the n=2 shell, closer to the nucleus with less shielding. Removing an electron
 from a stable, fully-occupied shell requires significantly more energy.
 
@@ -1310,8 +1310,8 @@ Any two of the above.
 **Problem 20:** Calculate the enthalpy change for the reaction
 $\mathrm{NH_3} + \mathrm{HCl} \to \mathrm{NH_4Cl}$ using bond enthalpies.
 
-Given: $\mathrm{N - H} = 391$$\mathrm{H - Cl} = 432$$\mathrm{N - H}$ (in $\mathrm{NH_4^+}$)
-$\approx 391$$\mathrm{Cl^-}$ (ionic) -- treat $\mathrm{NH_4Cl}$ as ionic, so bond enthalpies are not
+Given: $\mathrm{N - H} = 391$, $\mathrm{H - Cl} = 432$, $\mathrm{N - H}$ (in $\mathrm{NH_4^+}$)
+$\approx 391$, $\mathrm{Cl^-}$ (ionic) -- treat $\mathrm{NH_4Cl}$ as ionic, so bond enthalpies are not
 directly applicable. Instead, state why bond enthalpies give a poor estimate for this reaction.
 
 _If you get this wrong, revise: Bond Enthalpy and Ionic Bonding_

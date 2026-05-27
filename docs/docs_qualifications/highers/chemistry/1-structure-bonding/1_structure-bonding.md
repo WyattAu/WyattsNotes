@@ -82,7 +82,7 @@ Positive metal ions in a "sea" of delocalised electrons.
 | Electrical conductivity | Molten/dissolved only | None                        | Graphite only            | Good                     |
 | Solubility in water     | Generally soluble     | Generally insoluble         | Insoluble                | Insoluble                |
 | Hardness                | Hard, brittle         | Soft                        | Very hard                | Malleable                |
-| Example                 | $\mathrm{NaCl$        | $\mathrm{H_2\mathrm{O$      | Diamond, $\mathrm{SiO_2$ | $\mathrm{Fe$$\mathrm{Cu$ |
+| Example                 | $\mathrm{NaCl$        | $\mathrm{H_2\mathrm{O$      | Diamond, $\mathrm{SiO_2$ | $\mathrm{Fe$, $\mathrm{Cu$ |
 
 ### Electronegativity and Bond Polarity
 
@@ -179,7 +179,7 @@ $\mathrm{Cl_2$ < $\mathrm{Br_2$ < $\mathrm{I_2$).
 
 - Between polar molecules
 - Stronger than London forces
-- Examples: $\mathrm{HCl$$\mathrm{SO_2$
+- Examples: $\mathrm{HCl$, $\mathrm{SO_2$
 
 **Hydrogen bonding:**
 
@@ -319,15 +319,15 @@ Net ionic equation: $\mathrm{Zn(s) + 2\mathrm{H^+(aq) \to \mathrm{Zn^{2+}(aq) + 
 
 **Worked Example 11:** Determine the oxidation states in $\mathrm{KMnO_4$.
 
-$\mathrm{K = +1$$\mathrm{O = -2$So $\mathrm{Mn + 1 + 4(-2) = 0$Giving $\mathrm{Mn = +7$.
+$\mathrm{K = +1$, $\mathrm{O = -2$So $\mathrm{Mn + 1 + 4(-2) = 0$Giving $\mathrm{Mn = +7$.
 
 **Worked Example 12:** Determine the oxidation states of each element in $\mathrm{H_2\mathrm{O_2$
 and $\mathrm{Na_2\mathrm{Cr_2\mathrm{O_7$.
 
-$\mathrm{H_2\mathrm{O_2$: $\mathrm{H = +1$$2(+1) + 2(\mathrm{O) = 0$So $\mathrm{O = -1$. This is a
+$\mathrm{H_2\mathrm{O_2$: $\mathrm{H = +1$, $2(+1) + 2(\mathrm{O) = 0$So $\mathrm{O = -1$. This is a
 Peroxide where oxygen has an unusual oxidation state of $-1$.
 
-$\mathrm{Na_2\mathrm{Cr_2\mathrm{O_7$: $\mathrm{Na = +1$$\mathrm{O = -2$.
+$\mathrm{Na_2\mathrm{Cr_2\mathrm{O_7$: $\mathrm{Na = +1$, $\mathrm{O = -2$.
 $2(+1) + 2(\mathrm{Cr) + 7(-2) = 0$So $2(\mathrm{Cr) = 12$Giving $\mathrm{Cr = +6$.
 
 ### Redox Reactions
@@ -368,7 +368,7 @@ Left charge: $-2 + 2 = 0$. Right charge: $2(+3) + 3(-2) = 0$. Balanced.
 | Element   | Common oxidation states                | Notes                                         |
 | --------- | -------------------------------------- | --------------------------------------------- |
 | Hydrogen  | $+1$ (most compounds), $-1$ (hydrides) |                                               |
-| Oxygen    | $-2$$-1$ (peroxides)                   | $+2$ in $\mathrm{OF_2$                        |
+| Oxygen    | $-2$, $-1$ (peroxides)                   | $+2$ in $\mathrm{OF_2$                        |
 | Nitrogen  | $-3$ to $+5$                           | Most variable after transition metals         |
 | Sulfur    | $-2$ to $+6$                           |                                               |
 | Chlorine  | $-1$ to $+7$                           | $-1$ most common                              |
@@ -386,7 +386,7 @@ Left charge: $-2 + 2 = 0$. Right charge: $2(+3) + 3(-2) = 0$. Balanced.
    angles below the ideal values.
 
 3. **Bond polarity vs. Molecular polarity:** A molecule can have polar bonds but be non-polar
-   overall (e.g., $\mathrm{CCl_4$$\mathrm{CO_2$).
+   overall (e.g., $\mathrm{CCl_4$, $\mathrm{CO_2$).
 
 4. **Using average bond enthalpies:** These give approximate values only. They are less accurate
    when bonds are in different molecular environments.
@@ -450,8 +450,8 @@ Gaseous ions. It is always exothermic (negative) and indicates the strength of i
 **Factors affecting lattice energy:**
 
 - Ionic charge: Higher charges produce stronger attraction and more exothermic lattice energy.
-  $\mathrm{MgO$ ($\mathrm{Mg^{2+}$$\mathrm{O^{2-}$) has a much more exothermic lattice energy than
-  $\mathrm{NaCl$ ($\mathrm{Na^+$$\mathrm{Cl^-$).
+  $\mathrm{MgO$ ($\mathrm{Mg^{2+}$, $\mathrm{O^{2-}$) has a much more exothermic lattice energy than
+  $\mathrm{NaCl$ ($\mathrm{Na^+$, $\mathrm{Cl^-$).
 - Ionic radius: Smaller ions can approach more closely, increasing the attraction. $\mathrm{NaF$ has
   a more exothermic lattice energy than $\mathrm{NaCl$.
 
@@ -573,7 +573,7 @@ polar.
 - $\Delta H_{\mathrm{at}(\mathrm{O) = +248 \mathrm{ kJ/mol$
 - $\mathrm{IE_1(\mathrm{Mg) = +738 \mathrm{ kJ/mol$
   $\mathrm{IE_2(\mathrm{Mg) = +1451 \mathrm{ kJ/mol$
-- $\mathrm{EA_1(\mathrm{O) = -141 \mathrm{ kJ/mol$$\mathrm{EA_2(\mathrm{O) = +798 \mathrm{ kJ/mol$
+- $\mathrm{EA_1(\mathrm{O) = -141 \mathrm{ kJ/mol$, $\mathrm{EA_2(\mathrm{O) = +798 \mathrm{ kJ/mol$
 - $\Delta H_f(\mathrm{MgO) = -602 \mathrm{ kJ/mol$
 
 14. Explain why $\mathrm{BeCl_2$ is covalent while $\mathrm{CaCl_2$ is ionic, using Fajans' Rules.
@@ -582,7 +582,7 @@ polar.
     $\mathrm{N_2 + 3\mathrm{H_2 \to 2\mathrm{NH_3$.
 
 16. Predict and explain the trend in boiling points for the hydrogen halides $\mathrm{HF$
-    $\mathrm{HCl$$\mathrm{HBr$$\mathrm{HI$.
+    $\mathrm{HCl$, $\mathrm{HBr$, $\mathrm{HI$.
 
 17. Balance the following redox equation in basic solution:
     $\mathrm{MnO_4^- + \mathrm{Br^- \to \mathrm{MnO_2 + \mathrm{BrO_3^-$.
@@ -723,11 +723,11 @@ Charge: $-1 + 5(-1) + 6(+1) = 0$ left, $0$ right. Balanced.
 
 | Bonding type      | Bond strength (kJ/mol) | Melting point | Conductivity    | Typical examples                                          |
 | ----------------- | ---------------------- | ------------- | --------------- | --------------------------------------------------------- |
-| Ionic             | 600-4000               | High          | Molten/solution | $\mathrm{NaCl$$\mathrm{MgO$                               |
-| Covalent (simple) | 150-400                | Low           | None            | $\mathrm{H_2\mathrm{O$$\mathrm{CO_2$                      |
+| Ionic             | 600-4000               | High          | Molten/solution | $\mathrm{NaCl$, $\mathrm{MgO$                               |
+| Covalent (simple) | 150-400                | Low           | None            | $\mathrm{H_2\mathrm{O$, $\mathrm{CO_2$                      |
 | Covalent (giant)  | 350-400                | Very high     | Graphite only   | Diamond, $\mathrm{SiO_2$                                  |
-| Metallic          | 100-500                | Moderate-high | Good            | $\mathrm{Fe$$\mathrm{Cu$                                  |
-| Hydrogen bonds    | 5-40                   | --            | --              | Between molecules of $\mathrm{H_2\mathrm{O$$\mathrm{NH_3$ |
+| Metallic          | 100-500                | Moderate-high | Good            | $\mathrm{Fe$, $\mathrm{Cu$                                  |
+| Hydrogen bonds    | 5-40                   | --            | --              | Between molecules of $\mathrm{H_2\mathrm{O$, $\mathrm{NH_3$ |
 
 ## Worked Examples
 

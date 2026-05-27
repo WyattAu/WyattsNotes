@@ -27,7 +27,7 @@ In another species by donating electrons (it is itself oxidized).
 Rules for assigning oxidation states:
 
 1. The oxidation state of an element in its standard state is zero (e.g., $\mathrm{O}_2$
-   $\mathrm{Fe}$$\mathrm{Cl}_2$).
+   $\mathrm{Fe}$, $\mathrm{Cl}_2$).
 2. For a monatomic ion, the oxidation state equals the charge (e.g., $\mathrm{Na}^+$ is $+1$
    $\mathrm{O}^{2-}$ is $-2$).
 3. Oxygen is $-2$Except in peroxides ($-1$) and with fluorine ($+2$).
@@ -245,7 +245,7 @@ Circuit.
 The salt bridge prevents charge buildup in each half-cell. Without it, the cell would quickly stop
 Functioning as excess charge accumulates. The ions in the salt bridge migrate to neutralize charge:
 
-- Anions ($\mathrm{NO}_3^-$$\mathrm{Cl}^-$) migrate toward the anode (to balance $\mathrm{M}^{n+}$
+- Anions ($\mathrm{NO}_3^-$, $\mathrm{Cl}^-$) migrate toward the anode (to balance $\mathrm{M}^{n+}$
   produced).
 - Cations ($\mathrm{K}^+$) migrate toward the cathode (to balance the loss of $\mathrm{M}^{n+}$
   consumed).
@@ -269,7 +269,7 @@ Conventions:
 - A single vertical line $\mid$ represents a phase boundary.
 - A double vertical line $\parallel$ represents the salt bridge.
 - If there are multiple species in the same phase, they are separated by commas.
-- Inert electrodes (e.g., $\mathrm{Pt}$$\mathrm{C}$) are included when the half-cell does not
+- Inert electrodes (e.g., $\mathrm{Pt}$, $\mathrm{C}$) are included when the half-cell does not
   involve a solid metal.
 
 **Example:** $\mathrm{Zn}\mathrm{-Cu}$ Daniell cell:
@@ -301,8 +301,8 @@ $$
 **Example:** Calculate $E^\circ_{\mathrm{cell}}$ for
 $\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Cu}^{2+}(aq) \mid \mathrm{Cu}(s)$:
 
-- Cathode (reduction): $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$E^\circ = +0.34\mathrm{ V}$
-- Anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-$$E^\circ = -0.76\mathrm{ V}$
+- Cathode (reduction): $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$, $E^\circ = +0.34\mathrm{ V}$
+- Anode (oxidation): $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-$, $E^\circ = -0.76\mathrm{ V}$
 
 $$
 E^\circ_{\mathrm{cell}} = 0.34 - (-0.76) = +1.10\mathrm{ V}
@@ -387,9 +387,9 @@ Depends on the **relative ease of discharge** (electrode potential and overpoten
 
 | Cation present                                                                 | Species discharged                                  | Reason                                                          |
 | ------------------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------------------- |
-| Group 1 ($\mathrm{Li}^+$$\mathrm{Na}^+$$\mathrm{K}^+$)                         | $\mathrm{H}_2\mathrm{O}$ (producing $\mathrm{H}_2$) | These cations are very hard to reduce ($E^\circ$ very negative) |
-| Group 2 ($\mathrm{Mg}^{2+}$$\mathrm{Ca}^{2+}$)                                 | $\mathrm{H}_2\mathrm{O}$ (producing $\mathrm{H}_2$) | Still too hard to reduce in aqueous solution                    |
-| Transition metals and below ($\mathrm{Cu}^{2+}$$\mathrm{Ag}^+$$\mathrm{Au}^+$) | Metal cation                                        | These are easier to reduce than water                           |
+| Group 1 ($\mathrm{Li}^+$, $\mathrm{Na}^+$, $\mathrm{K}^+$)                         | $\mathrm{H}_2\mathrm{O}$ (producing $\mathrm{H}_2$) | These cations are very hard to reduce ($E^\circ$ very negative) |
+| Group 2 ($\mathrm{Mg}^{2+}$, $\mathrm{Ca}^{2+}$)                                 | $\mathrm{H}_2\mathrm{O}$ (producing $\mathrm{H}_2$) | Still too hard to reduce in aqueous solution                    |
+| Transition metals and below ($\mathrm{Cu}^{2+}$, $\mathrm{Ag}^+$, $\mathrm{Au}^+$) | Metal cation                                        | These are easier to reduce than water                           |
 
 The reduction of water at the cathode:
 
@@ -401,8 +401,8 @@ $$
 
 | Anion present                                             | Species discharged                                    | Reason                                               |
 | --------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
-| Halides ($\mathrm{Cl}^-$$\mathrm{Br}^-$$\mathrm{I}^-$)    | Halide ion (except with concentrated $\mathrm{Cl}^-$) | Easier to oxidize than water (except $\mathrm{F}^-$) |
-| $\mathrm{SO}_4^{2-}$$\mathrm{NO}_3^-$$\mathrm{CO}_3^{2-}$ | $\mathrm{H}_2\mathrm{O}$ (producing $\mathrm{O}_2$)   | These anions are not discharged in aqueous solution  |
+| Halides ($\mathrm{Cl}^-$, $\mathrm{Br}^-$, $\mathrm{I}^-$)    | Halide ion (except with concentrated $\mathrm{Cl}^-$) | Easier to oxidize than water (except $\mathrm{F}^-$) |
+| $\mathrm{SO}_4^{2-}$, $\mathrm{NO}_3^-$, $\mathrm{CO}_3^{2-}$ | $\mathrm{H}_2\mathrm{O}$ (producing $\mathrm{O}_2$)   | These anions are not discharged in aqueous solution  |
 
 The oxidation of water at the anode:
 
@@ -797,7 +797,7 @@ $$
 N_e = \frac{Q}{F} = \frac{6750}{96500} = 0.06995\mathrm{ mol of } e^-
 $$
 
-For $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$n = 2$:
+For $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$, $n = 2$:
 
 $$
 N(\mathrm{Cu}) = \frac{n_e}{2} = \frac{0.06995}{2} = 0.03498\mathrm{ mol}
@@ -814,7 +814,7 @@ $$
 N(\mathrm{Al}) = \frac{5.00}{26.98} = 0.1853\mathrm{ mol}
 $$
 
-For $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$$n = 3$:
+For $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$, $n = 3$:
 
 $$
 N_e = 3 \times 0.1853 = 0.5559\mathrm{ mol of } e^-
@@ -839,7 +839,7 @@ $$
 N_e = \frac{9000}{96500} = 0.09326\mathrm{ mol of } e^-
 $$
 
-For $2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$$n = 2$:
+For $2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$, $n = 2$:
 
 $$
 N(\mathrm{Cl}_2) = \frac{0.09326}{2} = 0.04663\mathrm{ mol}
@@ -853,8 +853,8 @@ $$
 
 Always convert time to seconds before calculating charge. Always check whether the question gives
 Volume conditions (STP, RTP, or specific T and P). The IB data booklet uses
-$22.7\mathrm{ dm}^3\mathrm{/mol}$ at STP ($273\mathrm{ K}$$100\mathrm{ kPa}$) and
-$24.0\mathrm{ dm}^3\mathrm{/mol}$ at RTP ($298\mathrm{ K}$$100\mathrm{ kPa}$).
+$22.7\mathrm{ dm}^3\mathrm{/mol}$ at STP ($273\mathrm{ K}$, $100\mathrm{ kPa}$) and
+$24.0\mathrm{ dm}^3\mathrm{/mol}$ at RTP ($298\mathrm{ K}$, $100\mathrm{ kPa}$).
 
 :::
 
@@ -1254,7 +1254,7 @@ Marks)
 **(a)** $E^\circ_{\mathrm{cell}} = 0.80 - (-0.25) = +1.05\mathrm{ V}$
 
 **(b)** Overall reaction:
-$\mathrm{Ni}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Ni}^{2+}(aq) + 2\mathrm{Ag}(s)$$n = 2$
+$\mathrm{Ni}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Ni}^{2+}(aq) + 2\mathrm{Ag}(s)$, $n = 2$
 
 $$
 Q = \frac{[\mathrm{Ni}^{2+}]}{[\mathrm{Ag}^+]^2} = \frac{0.010}{(1.0)^2} = 0.010
@@ -1313,7 +1313,7 @@ $$
 \mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)
 $$
 
-$\Delta H^\circ = -286\mathrm{ kJ/mol}$$\Delta G^\circ = -237\mathrm{ kJ/mol}$
+$\Delta H^\circ = -286\mathrm{ kJ/mol}$, $\Delta G^\circ = -237\mathrm{ kJ/mol}$
 
 **(a)** Calculate the standard cell potential. (2 marks)
 
@@ -1429,18 +1429,18 @@ $E^\circ_{\mathrm{cell}}$.
 <details>
 <summary>Answer</summary>
 
-(a) Cathode (reduction): $\mathrm{Fe}^{3+} + e^- \to \mathrm{Fe}^{2+}$$E^\circ = +0.77\mathrm{ V}$
+(a) Cathode (reduction): $\mathrm{Fe}^{3+} + e^- \to \mathrm{Fe}^{2+}$, $E^\circ = +0.77\mathrm{ V}$
 
-Anode (oxidation): $2\mathrm{I}^- \to \mathrm{I}_2 + 2e^-$$E^\circ = +0.54\mathrm{ V}$
+Anode (oxidation): $2\mathrm{I}^- \to \mathrm{I}_2 + 2e^-$, $E^\circ = +0.54\mathrm{ V}$
 
 $$E^\circ_{\mathrm{cell}} = 0.77 - 0.54 = +0.23\mathrm{ V}$$
 
 Since $E^\circ_{\mathrm{cell}} \gt 0$Yes, $\mathrm{Fe}^{3+}$ will spontaneously oxidise
 $\mathrm{I}^-$.
 
-(b) Cathode (reduction): $\mathrm{Br}_2 + 2e^- \to 2\mathrm{Br}^-$$E^\circ = +1.07\mathrm{ V}$
+(b) Cathode (reduction): $\mathrm{Br}_2 + 2e^- \to 2\mathrm{Br}^-$, $E^\circ = +1.07\mathrm{ V}$
 
-Anode (oxidation): $\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$$E^\circ = +0.77\mathrm{ V}$
+Anode (oxidation): $\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$, $E^\circ = +0.77\mathrm{ V}$
 
 $$E^\circ_{\mathrm{cell}} = 1.07 - 0.77 = +0.30\mathrm{ V}$$
 
@@ -1527,7 +1527,7 @@ $$Q = It = 5.00 \times 2.00 \times 3600 = 36000\mathrm{ C}$$
 
 $$n_e = \frac{Q}{F} = \frac{36000}{96500} = 0.373\mathrm{ mol of } e^-$$
 
-For $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$$n = 3$:
+For $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$, $n = 3$:
 
 $$n(\mathrm{Al}) = \frac{n_e}{3} = \frac{0.373}{3} = 0.124\mathrm{ mol}$$
 

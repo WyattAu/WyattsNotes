@@ -50,7 +50,7 @@ inflation rate? (b) In the long run, with adaptive expectations, what happens to
 
 **Solution:**
 
-(a) With $u = 3\%$$\pi^e = 3\%$$x = 0$:
+(a) With $u = 3\%$, $\pi^e = 3\%$, $x = 0$:
 
 $\pi = 3 - 3(3 - 5) + 0 = 3 - 3(-2) = 3 + 6 = 9\%$.
 
@@ -263,7 +263,7 @@ improving it -- the full benefits may take 1--2 years to materialise.
 ## Section 3: Extended Macroeconomic Policy Practice
 
 **UT-4 (Extension).** An economy has the following data:
-$C = 200 + 0.8Y_d$$I = 150$$G = 250$$T = 0.25Y$$X = 100$$M = 50 + 0.15Y$. (a) Calculate equilibrium
+$C = 200 + 0.8Y_d$, $I = 150$, $G = 250$, $T = 0.25Y$, $X = 100$, $M = 50 + 0.15Y$. (a) Calculate equilibrium
 GDP. (b) Calculate the government spending multiplier and the tax multiplier. (c) The government
 increases spending by 20 while simultaneously increasing the tax rate to 30%. Calculate the new
 equilibrium. (d) Calculate the change in the government budget balance.
@@ -302,10 +302,10 @@ inflationary gap?
 
 **Solution:**
 
-(a) $600 - 2P = 4P - 200 \Rightarrow 800 = 6P \Rightarrow P = 133.33$$Y = 333.33$. Output gap:
+(a) $600 - 2P = 4P - 200 \Rightarrow 800 = 6P \Rightarrow P = 133.33$, $Y = 333.33$. Output gap:
 $500 - 333.33 = 166.67$ (recessionary gap).
 
-(b) With new SRAS: $600 - 2P = 4P - 280 \Rightarrow 880 = 6P \Rightarrow P = 146.67$$Y = 306.67$.
+(b) With new SRAS: $600 - 2P = 4P - 280 \Rightarrow 880 = 6P \Rightarrow P = 146.67$, $Y = 306.67$.
 Output gap: $500 - 306.67 = 193.33$ (larger recessionary gap!). The positive supply shock actually
 worsened the recessionary gap in the short run because it reduced the price level, which (through
 the real balance effect) could further reduce AD. But in this model, AD is fixed, so the lower price
@@ -327,12 +327,12 @@ incorrectly.
 
 A rightward shift by 80 means: new SRAS $= 4P - 200 + 80 = 4P - 120$.
 
-Let me redo: $600 - 2P = 4P - 120 \Rightarrow 720 = 6P \Rightarrow P = 120$$Y = 600 - 240 = 360$.
+Let me redo: $600 - 2P = 4P - 120 \Rightarrow 720 = 6P \Rightarrow P = 120$, $Y = 600 - 240 = 360$.
 Output has increased from 333.33 to 360 (correct for a rightward SRAS shift). Output gap:
 $500 - 360 = 140$ (smaller recessionary gap).
 
 (c) Combined shocks: new AD $Y = 500 - 2P$New SRAS $Y = 4P - 120$.
-$500 - 2P = 4P - 120 \Rightarrow 620 = 6P \Rightarrow P = 103.33$$Y = 500 - 206.67 = 293.33$.
+$500 - 2P = 4P - 120 \Rightarrow 620 = 6P \Rightarrow P = 103.33$, $Y = 500 - 206.67 = 293.33$.
 
 (d) Output gap: $500 - 293.33 = 206.67$ (large recessionary gap). The negative AD shock dominates,
 pushing output well below potential. The positive supply shock partially offset the price level
@@ -363,7 +363,7 @@ $(0.04 - 0.05) \times 90 = p \Rightarrow -0.01 \times 90 = p \Rightarrow p = -0.
 The debt-stabilising primary balance is a SURPLUS of 0.9% of GDP ($\pounds 18\text{bn}$). Since the
 current primary balance is a DEFICIT of 1.4%, the debt ratio is rising.
 
-(c) Year-by-year debt ratio evolution ($b_0 = 90\%$$p = -1.4\%$$r - g_{nominal} = -1\%$):
+(c) Year-by-year debt ratio evolution ($b_0 = 90\%$, $p = -1.4\%$, $r - g_{nominal} = -1\%$):
 $b_{t+1} = (1 - 0.01)b_t - (-1.4) = 0.99b_t + 1.4$. $b_1 = 0.99(90) + 1.4 = 89.1 + 1.4 = 90.5$.
 $b_2 = 0.99(90.5) + 1.4 = 89.6 + 1.4 = 91.0$. $b_3 = 0.99(91.0) + 1.4 = 90.1 + 1.4 = 91.5$.
 $b_4 = 0.99(91.5) + 1.4 = 90.6 + 1.4 = 92.0$. $b_5 = 0.99(92.0) + 1.4 = 91.1 + 1.4 = 92.5$.

@@ -81,7 +81,7 @@ $$|z| = \sqrt{a^2 + b^2}$$
 
 - $|z| \ge 0$With equality iff $z = 0$
 - $|z_1 z_2| = |z_1|\,|z_2|$
-- $\left|\dfrac{z_1}{z_2}\right| = \dfrac{|z_1|}{|z_2|}$$z_2 \ne 0$
+- $\left|\dfrac{z_1}{z_2}\right| = \dfrac{|z_1|}{|z_2|}$, $z_2 \ne 0$
 - $|z_1 + z_2| \le |z_1| + |z_2|$ (triangle inequality)
 
 ### Argument
@@ -320,7 +320,7 @@ Solve $z^2 + (2 + 4i)z + (-1 + 6i) = 0$.
 <details>
 <summary>Problem 7</summary>
 
-Prove that for any complex number $z$$z + \bar{z} = 2\mathrm{Re}(z)$ and
+Prove that for any complex number $z$, $z + \bar{z} = 2\mathrm{Re}(z)$ and
 $z - \bar{z} = 2i\,\mathrm{Im}(z)$.
 
 </details>
@@ -328,7 +328,7 @@ $z - \bar{z} = 2i\,\mathrm{Im}(z)$.
 <details>
 <summary>Problem 8</summary>
 
-The complex numbers $z_1$ and $z_2$ satisfy $|z_1| = 3$$|z_2| = 5$And $|z_1 - z_2| = 7$. Find
+The complex numbers $z_1$ and $z_2$ satisfy $|z_1| = 3$, $|z_2| = 5$And $|z_1 - z_2| = 7$. Find
 $|z_1 + z_2|$.
 
 </details>
@@ -343,7 +343,7 @@ $z^5 = 2^5\,\mathrm{cis}(-5\pi/3) = 32\,\mathrm{cis}(\pi/3) = 32\!\left(\dfrac{1
 **Problem 2:** $-8i = 8\,\mathrm{cis}(-\pi/2) = 8\,\mathrm{cis}(3\pi/2)$.
 $z_k = 8^{1/3}\,\mathrm{cis}\!\left(\dfrac{3\pi/2 + 2k\pi}{3}\right) = 2\,\mathrm{cis}\!\left(\dfrac{\pi}{2} + \dfrac{2k\pi}{3}\right)$
 For $k = 0, 1, 2$. $z_0 = 2\,\mathrm{cis}(\pi/2) = 2i$
-$z_1 = 2\,\mathrm{cis}(7\pi/6) = -\sqrt{3} - i$$z_2 = 2\,\mathrm{cis}(11\pi/6) = \sqrt{3} - i$.
+$z_1 = 2\,\mathrm{cis}(7\pi/6) = -\sqrt{3} - i$, $z_2 = 2\,\mathrm{cis}(11\pi/6) = \sqrt{3} - i$.
 
 **Problem 3:** By De Moivre: $\cos 4\theta + i\sin 4\theta = (\cos\theta + i\sin\theta)^4$.
 Expanding by binomial theorem:
@@ -549,13 +549,13 @@ Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$ for all $z_1, 
 <details>
 <summary>Answers to Additional Problems</summary>
 
-**Problem 9:** $|z| = 5$$|w| = \sqrt{5}$. $|z^2 w| = |z|^2|w| = 25\sqrt{5}$.
-$\arg(z) = \arctan(4/3)$$\arg(w) = \arctan(-2)$. $\arg(z^2 w) = 2\arctan(4/3) + \arctan(-2)$. Since
+**Problem 9:** $|z| = 5$, $|w| = \sqrt{5}$. $|z^2 w| = |z|^2|w| = 25\sqrt{5}$.
+$\arg(z) = \arctan(4/3)$, $\arg(w) = \arctan(-2)$. $\arg(z^2 w) = 2\arctan(4/3) + \arctan(-2)$. Since
 $z^2 = (3+4i)^2 = -7 + 24i$ and $z^2 w = (-7+24i)(1-2i) = -7 + 14i + 24i + 48 = 41 + 38i$.
 $|z^2 w| = \sqrt{41^2 + 38^2} = \sqrt{1681 + 1444} = \sqrt{3125} = 25\sqrt{5}$. Confirmed.
 $\arg(z^2 w) = \arctan(38/41) \approx 0.747\;\mathrm{rad}$.
 
-**Problem 10:** Let $z = x + yi$ with $x \gt 0$$y \gt 0$ (since $\arg(z) = \pi/4$), and $y = x$.
+**Problem 10:** Let $z = x + yi$ with $x \gt 0$, $y \gt 0$ (since $\arg(z) = \pi/4$), and $y = x$.
 $|z - 2i|^2 = x^2 + (x-2)^2 = 2x^2 - 4x + 4$. $|z + 4|^2 = (x+4)^2 + x^2 = 2x^2 + 8x + 16$. Setting
 equal: $2x^2 - 4x + 4 = 2x^2 + 8x + 16 \implies -12x = 12 \implies x = -1$. But $x \gt 0$ is
 required. This gives no solution in the principal argument range. Rechecking:

@@ -33,7 +33,7 @@ Follows from:
 
 ### 1.2 Deriving Individual Demand from Utility Maximisation
 
-Consider a consumer with utility function $U(x, y)$ facing prices $P_x$$P_y$ and income $M$. The
+Consider a consumer with utility function $U(x, y)$ facing prices $P_x$, $P_y$ and income $M$. The
 Consumer solves:
 
 $$
@@ -322,12 +322,12 @@ CIE Uses the point elasticity formula. Check your board's preference. :::
 ## 7. Problem Set
 
 **Problem 1.** A consumer has utility $U(x, y) = x^{0.5}y^{0.5}$Income $M = 100$And faces prices
-$P_x = 4$$P_y = 2$. Derive the demand functions for $x$ and $y$. What happens to demand for $x$ if
+$P_x = 4$, $P_y = 2$. Derive the demand functions for $x$ and $y$. What happens to demand for $x$ if
 $P_x$ rises to 5?
 
 <details>
 <summary>Hint</summary>
-Set up MRS = price ratio: $\frac{y}{x} = \frac{P_x}{P_y} = 2$So $y = 2x$. Substitute into budget constraint: $4x + 2(2x) = 100 \Rightarrow 8x = 100 \Rightarrow x = 12.5$$y = 25$. General demand: $x = \frac{M}{2P_x}$$y = \frac{M}{2P_y}$. At $P_x = 5$: $x = 10$.
+Set up MRS = price ratio: $\frac{y}{x} = \frac{P_x}{P_y} = 2$So $y = 2x$. Substitute into budget constraint: $4x + 2(2x) = 100 \Rightarrow 8x = 100 \Rightarrow x = 12.5$, $y = 25$. General demand: $x = \frac{M}{2P_x}$, $y = \frac{M}{2P_y}$. At $P_x = 5$: $x = 10$.
 </details>
 
 **Problem 2.** The market demand for good $X$ is $Q_D = 100 - 2P$ and market supply is
@@ -336,7 +336,7 @@ Surplus at equilibrium.
 
 <details>
 <summary>Hint</summary>
-$100 - 2P = 20 + 3P \Rightarrow 80 = 5P \Rightarrow P^* = 16$$Q^* = 68$. CS = $\int_0^{68} [50 - Q/2 - 16] \, dQ = \int_0^{68} [34 - Q/2] \, dQ = [34Q - Q^2/4]_0^{68} = 2312 - 1156 = 1156$. PS = $\int_0^{68} [16 - (Q - 20)/3] \, dQ = \int_0^{68} [22/3 - Q/3] \, dQ = [22Q/3 - Q^2/6]_0^{68} = 498.67 - 770.67 = \ldots$ Recalculate: inverse supply $P = (Q - 20)/3 + 0 = (Q-20)/3$. PS = $\int_0^{68} [16 - (Q-20)/3] dQ = \int_0^{68} [16 - Q/3 + 20/3] dQ = \int_0^{68} [68/3 - Q/3] dQ = [68Q/3 - Q^2/6]_0^{68} = 1541.33 - 770.67 = 770.67$.
+$100 - 2P = 20 + 3P \Rightarrow 80 = 5P \Rightarrow P^* = 16$, $Q^* = 68$. CS = $\int_0^{68} [50 - Q/2 - 16] \, dQ = \int_0^{68} [34 - Q/2] \, dQ = [34Q - Q^2/4]_0^{68} = 2312 - 1156 = 1156$. PS = $\int_0^{68} [16 - (Q - 20)/3] \, dQ = \int_0^{68} [22/3 - Q/3] \, dQ = [22Q/3 - Q^2/6]_0^{68} = 498.67 - 770.67 = \ldots$ Recalculate: inverse supply $P = (Q - 20)/3 + 0 = (Q-20)/3$. PS = $\int_0^{68} [16 - (Q-20)/3] dQ = \int_0^{68} [16 - Q/3 + 20/3] dQ = \int_0^{68} [68/3 - Q/3] dQ = [68Q/3 - Q^2/6]_0^{68} = 1541.33 - 770.67 = 770.67$.
 </details>
 
 **Problem 3.** A linear demand curve passes through points $(P, Q) = (10, 50)$ and
@@ -345,7 +345,7 @@ Is $|\mathrm{PED}| = 1$?
 
 <details>
 <summary>Hint</summary>
-Demand equation: slope $= \frac{30-50}{20-10} = -2$So $Q = 70 - 2P$. At $(10, 50)$: PED $= \frac{10}{50} \times (-2) = -0.4$ (inelastic). At $(20, 30)$: PED $= \frac{20}{30} \times (-2) = -1.33$ (elastic). Midpoint: $Q = 35$$P = 17.5$: PED $= \frac{17.5}{35} \times (-2) = -1$.
+Demand equation: slope $= \frac{30-50}{20-10} = -2$So $Q = 70 - 2P$. At $(10, 50)$: PED $= \frac{10}{50} \times (-2) = -0.4$ (inelastic). At $(20, 30)$: PED $= \frac{20}{30} \times (-2) = -1.33$ (elastic). Midpoint: $Q = 35$, $P = 17.5$: PED $= \frac{17.5}{35} \times (-2) = -1$.
 </details>
 
 **Problem 4.** The price of good $A$ rises from £5 to £7, causing quantity demanded of good $B$ to
@@ -379,7 +379,7 @@ The market price is £25, how much will the firm produce?
 
 <details>
 <summary>Hint</summary>
-$MC = dTC/dQ = 10 + Q$. Supply curve: $P = MC$ for $P \geq AVC$. $AVC = 10 + 0.5Q$$\min AVC = 10$ at $Q = 0$. So supply: $Q = P - 10$ for $P \geq 10$. At $P = 25$: $Q = 15$.
+$MC = dTC/dQ = 10 + Q$. Supply curve: $P = MC$ for $P \geq AVC$. $AVC = 10 + 0.5Q$, $\min AVC = 10$ at $Q = 0$. So supply: $Q = P - 10$ for $P \geq 10$. At $P = 25$: $Q = 15$.
 </details>
 
 **Problem 8.** "A firm should always produce at the level where total revenue is maximised."
@@ -411,11 +411,11 @@ Cigarettes have inelastic demand (few substitutes, addictive). (a) Price rises s
 
 **Problem 11.** Two goods have demand curves $Q_A = 50 - P_A + 0.5P_B$ and $Q_B = 80 - 2P_B + P_A$.
 Calculate the cross-price elasticity of demand for good $B$ with respect to the price of $A$ when
-$P_A = 20$$P_B = 10$.
+$P_A = 20$, $P_B = 10$.
 
 <details>
 <summary>Hint</summary>
-$\mathrm{XED}_{BA} = \frac◆LB◆\partial Q_B / \partial P_A \times P_A◆RB◆◆LB◆Q_B◆RB◆$. $\partial Q_B / \partial P_A = 1$. At $P_A = 20$$P_B = 10$: $Q_B = 80 - 20 + 20 = 80$. XED $= 1 \times 20/80 = 0.25$. Positive, so $A$ and $B$ are weak substitutes.
+$\mathrm{XED}_{BA} = \frac◆LB◆\partial Q_B / \partial P_A \times P_A◆RB◆◆LB◆Q_B◆RB◆$. $\partial Q_B / \partial P_A = 1$. At $P_A = 20$, $P_B = 10$: $Q_B = 80 - 20 + 20 = 80$. XED $= 1 \times 20/80 = 0.25$. Positive, so $A$ and $B$ are weak substitutes.
 </details>
 
 **Problem 12.** Evaluate the usefulness of elasticity concepts for government policymakers. In your
@@ -437,8 +437,8 @@ Equilibrium price and quantity, and verify stability.
 
 $Q^* = 200 - 4(18) = 200 - 72 = 128$.
 
-**Stability check.** At $P = 20 \gt P^*$: $Q_D = 120$$Q_S = 140$. Excess supply of $20$ units
-$\implies$ price falls. At $P = 15 \lt P^*$: $Q_D = 140$$Q_S = 110$. Excess demand of $30$ units
+**Stability check.** At $P = 20 \gt P^*$: $Q_D = 120$, $Q_S = 140$. Excess supply of $20$ units
+$\implies$ price falls. At $P = 15 \lt P^*$: $Q_D = 140$, $Q_S = 110$. Excess demand of $30$ units
 $\implies$ price rises. The equilibrium is stable. $\square$
 
 ### 8.2 Simultaneous Shifts in Demand and Supply
@@ -484,7 +484,7 @@ Along the curve with a shift.
 **Example.** Demand: $Q_D = 100 - 2P$. Supply: $Q_S = 10 + 3P$. Calculate consumer surplus, producer
 Surplus, and total surplus at equilibrium.
 
-**Answer.** Equilibrium: $100 - 2P = 10 + 3P \implies 90 = 5P \implies P^* = 18$$Q^* = 64$.
+**Answer.** Equilibrium: $100 - 2P = 10 + 3P \implies 90 = 5P \implies P^* = 18$, $Q^* = 64$.
 
 Inverse demand: $P = 50 - Q/2$ (choke price $= 50$). Inverse supply: $P = (Q - 10)/3$.
 
@@ -516,7 +516,7 @@ The more inelastic side bears a greater share of the tax burden.
 **Example.** Demand: $Q_D = 150 - P$. Supply: $Q_S = 2P - 30$. A specific tax of $t = 10$ per unit
 Is imposed.
 
-**Answer.** Original equilibrium: $150 - P = 2P - 30 \implies P^* = 60$$Q^* = 90$.
+**Answer.** Original equilibrium: $150 - P = 2P - 30 \implies P^* = 60$, $Q^* = 90$.
 
 With tax, supply shifts: $P_s = P_d - 10$. New supply: $Q_S = 2(P_d - 10) - 30 = 2P_d - 50$.
 
@@ -585,7 +585,7 @@ Change in $P^*$ and $Q^*$.
 
 <details>
 <summary>Hint</summary>
-Original: $80 - P = 2P - 20 \implies P^* = 33.3$$Q^* = 46.7$. New demand: $Q_D' = 100 - P$. New equilibrium: $100 - P = 2P - 20 \implies P^* = 40$$Q^* = 60$. $\Delta P^* = 6.7$$\Delta Q^* = 13.3$.
+Original: $80 - P = 2P - 20 \implies P^* = 33.3$, $Q^* = 46.7$. New demand: $Q_D' = 100 - P$. New equilibrium: $100 - P = 2P - 20 \implies P^* = 40$, $Q^* = 60$. $\Delta P^* = 6.7$, $\Delta Q^* = 13.3$.
 </details>
 
 **Problem 2.** A good has PED $= -0.4$. If the price rises by 10%, calculate the percentage change
@@ -601,7 +601,7 @@ Supply $Q_S = 3P - 20$. Calculate the tax incidence and deadweight loss.
 
 <details>
 <summary>Hint</summary>
-Original: $P^* = 30$$Q^* = 70$. With tax: $Q_S = 3(P_d - 5) - 20 = 3P_d - 35$. New: $100 - P_d = 3P_d - 35 \implies P_d = 33.75$. $P_s = 28.75$. $Q^* = 66.25$. Consumer burden: $3.75$Producer burden: $1.25$. Ratio $= 3$. DWL $= \frac{1}{2} \times 5 \times 3.75 = 9.375$.
+Original: $P^* = 30$, $Q^* = 70$. With tax: $Q_S = 3(P_d - 5) - 20 = 3P_d - 35$. New: $100 - P_d = 3P_d - 35 \implies P_d = 33.75$. $P_s = 28.75$. $Q^* = 66.25$. Consumer burden: $3.75$Producer burden: $1.25$. Ratio $= 3$. DWL $= \frac{1}{2} \times 5 \times 3.75 = 9.375$.
 </details>
 
 **Problem 4.** A consumer spends $£200$ per month on good $X$ at a price of $£10$. When the price
@@ -696,10 +696,10 @@ loss.
 <details>
 <summary>Full Mark Scheme</summary>
 **(a) New equilibrium (4 marks).**
-Original equilibrium: $200 - 4P = 4P - 40 \Rightarrow 240 = 8P \Rightarrow P^* = 30$$Q^* = 80$.
+Original equilibrium: $200 - 4P = 4P - 40 \Rightarrow 240 = 8P \Rightarrow P^* = 30$, $Q^* = 80$.
 
 With tax: supply shifts to $Q_S = 4(P_d - 8) - 40 = 4P_d - 72$.
-$200 - 4P_d = 4P_d - 72 \Rightarrow 272 = 8P_d \Rightarrow P_d = 34$$Q = 64$. $P_s = 34 - 8 = 26$.
+$200 - 4P_d = 4P_d - 72 \Rightarrow 272 = 8P_d \Rightarrow P_d = 34$, $Q = 64$. $P_s = 34 - 8 = 26$.
 
 **(b) Tax incidence (4 marks).** Consumer burden: $P_d - P^* = 34 - 30 = \text{GBP } 4$ (out of 8).
 Producer burden: $P^* - P_s = 30 - 26 = \text{GBP } 4$ (out of 8). Ratio: $1:1$ (equal burden
@@ -760,19 +760,19 @@ consumer surplus. (c) Evaluate whether the price ceiling benefits consumers over
 <details>
 <summary>Full Mark Scheme</summary>
 **(a) Shortage (4 marks).**
-At $P_c = 5$: $Q_D = 100 - 8(5) = 60$$Q_S = 4(5) - 20 = 0$.
+At $P_c = 5$: $Q_D = 100 - 8(5) = 60$, $Q_S = 4(5) - 20 = 0$.
 The supply is zero at $P = 5$ (below the supply curve intercept of $P = 5$ where $Q_S = 0$).
 Actually, supply intercept: $4P - 20 = 0 \Rightarrow P = 5$. So $Q_S = 0$ at the ceiling price.
 Shortage $= 60 - 0 = 60$ units. The market completely dries up.
 
 Wait, let me reconsider. The supply curve $Q_S = 4P - 20$ has intercept at $P = 5$. So at
-$P_c = 5$$Q_S = 0$. This means the price ceiling is set exactly at the supply intercept, so the
+$P_c = 5$, $Q_S = 0$. This means the price ceiling is set exactly at the supply intercept, so the
 market ceases to function.
 
-For a more interesting case, set $P_c = 7$: $Q_D = 100 - 8(7) = 44$$Q_S = 4(7) - 20 = 8$. Shortage
+For a more interesting case, set $P_c = 7$: $Q_D = 100 - 8(7) = 44$, $Q_S = 4(7) - 20 = 8$. Shortage
 $= 44 - 8 = 36$ units.
 
-**(b) Change in consumer surplus (4 marks).** Original CS: at $P^* = 10$$Q^* = 100 - 80 = 20$. Choke
+**(b) Change in consumer surplus (4 marks).** Original CS: at $P^* = 10$, $Q^* = 100 - 80 = 20$. Choke
 price $= 100/8 = 12.5$.
 $\text{CS}_{orig} = \int_0^{20} [(12.5 - Q/8) - 10]\,dQ = \int_0^{20} [2.5 - Q/8]\,dQ = [2.5Q - Q^2/16]_0^{20} = 50 - 25 = 25$.
 
@@ -812,7 +812,7 @@ function is $U = F^{0.5}C^{0.5}$ (Cobb-Douglas).
 Set $MRS = P_F/P_C$: $C/F = 5/10 = 0.5 \Rightarrow C = 0.5F$.
 
 Substitute into budget constraint:
-$5F + 10(0.5F) = 100 \Rightarrow 5F + 5F = 100 \Rightarrow F = 10$$C = 5$.
+$5F + 10(0.5F) = 100 \Rightarrow 5F + 5F = 100 \Rightarrow F = 10$, $C = 5$.
 
 **Utility:** $U = (10)^{0.5}(5)^{0.5} = \sqrt{50} = 7.07$.
 
@@ -820,7 +820,7 @@ $5F + 10(0.5F) = 100 \Rightarrow 5F + 5F = 100 \Rightarrow F = 10$$C = 5$.
 
 New budget constraint: $8F + 10C = 100 \Rightarrow F = 12.5 - 1.25C$.
 $MRS = P_F/P_C = 8/10 = 0.8 \Rightarrow C = 0.8F$.
-$8F + 10(0.8F) = 100 \Rightarrow 16F = 100 \Rightarrow F = 6.25$$C = 5$.
+$8F + 10(0.8F) = 100 \Rightarrow 16F = 100 \Rightarrow F = 6.25$, $C = 5$.
 
 **Substitution and income effects:**
 
@@ -842,7 +842,7 @@ same direction: less food is consumed when the price rises.
 $Q_D = 500 - 2P$. Supply: $Q_S = 3P - 100$. The guaranteed price is $\pounds 120$ per tonne.
 
 **Free market equilibrium:**
-$500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$$Q = 260$.
+$500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$, $Q = 260$.
 
 Interesting -- the guaranteed price equals the market equilibrium price. Let me use a lower
 guaranteed price to make the example meaningful.
@@ -850,7 +850,7 @@ guaranteed price to make the example meaningful.
 Actually, the guaranteed price is ABOVE the market equilibrium. Let me recalculate with the
 guaranteed price at 140.
 
-**Free market:** $P = 120$$Q = 260$ (as above).
+**Free market:** $P = 120$, $Q = 260$ (as above).
 
 **With price floor at 140:** $Q_D = 500 - 280 = 220$. $Q_S = 420 - 100 = 320$. Excess supply:
 $320 - 220 = 100$ tonnes. The government must buy 100 tonnes.
@@ -884,7 +884,7 @@ supply: $Q_P = 4P_P - 200$. The cross-price elasticity between petrol and electr
 $+0.3$. EV demand: $Q_E = 200 + 0.5P_P$ (EV demand increases when petrol price rises).
 
 **Initial petrol equilibrium:**
-$1000 - 5P_P = 4P_P - 200 \Rightarrow 1200 = 9P_P \Rightarrow P_P = 133.33$$Q_P = 333.33$.
+$1000 - 5P_P = 4P_P - 200 \Rightarrow 1200 = 9P_P \Rightarrow P_P = 133.33$, $Q_P = 333.33$.
 
 **Tax of GBP 20 per litre on petrol:** $Q_P = 4(P_P - 20) - 200 = 4P_P - 280$.
 $1000 - 5P_P = 4P_P - 280 \Rightarrow 1280 = 9P_P \Rightarrow P_P = 142.22$. Consumers pay 142.22.
@@ -914,7 +914,7 @@ large net social benefit through the EV switching channel, far exceeding the DWL
 $P = 5000 - 0.5Q$. Supply: $P = 2000 + 0.3Q$. The subsidy is GBP 500 per panel.
 
 **Without subsidy:**
-$5000 - 0.5Q = 2000 + 0.3Q \Rightarrow 3000 = 0.8Q \Rightarrow Q = 3750$$P = 3125$.
+$5000 - 0.5Q = 2000 + 0.3Q \Rightarrow 3000 = 0.8Q \Rightarrow Q = 3750$, $P = 3125$.
 
 **With subsidy:** Supply shifts down: $P = 1500 + 0.3Q$.
 $5000 - 0.5Q = 1500 + 0.3Q \Rightarrow 3500 = 0.8Q \Rightarrow Q = 4375$.
@@ -959,7 +959,7 @@ government imposes: (1) a specific tax of GBP 5 per pack, (2) a price floor of G
 maximum production quota of 40 packs.
 
 **Step 1: Free market equilibrium.**
-$200 - 4P = 6P - 80 \Rightarrow 280 = 10P \Rightarrow P = 28$$Q = 88$.
+$200 - 4P = 6P - 80 \Rightarrow 280 = 10P \Rightarrow P = 28$, $Q = 88$.
 
 **Step 2: With tax only.** $Q_S = 6(P - 5) - 80 = 6P - 110$.
 $200 - 4P = 6P - 110 \Rightarrow 310 = 10P \Rightarrow P = 31$ (consumer price). Producer
@@ -967,7 +967,7 @@ receives 26. $Q = 200 - 124 = 76$.
 
 **Step 3: With tax AND price floor of 30.** The price floor of 30 is BELOW the consumer price with
 tax (31), so the price floor is NOT binding. The equilibrium is the same as Step 2:
-$P = 31$$Q = 76$.
+$P = 31$, $Q = 76$.
 
 If the price floor were 35: consumers pay 35. $Q_D = 200 - 140 = 60$. $Q_S$ at producer price
 $= 35 - 5 = 30$: $Q_S = 6(30) - 80 = 100$. Excess supply $= 100 - 60 = 40$. The government would
@@ -1012,7 +1012,7 @@ market from adjusting along the supply curve.
 per tonne. Demand: $Q_D = 1000 - 2P$. Supply: $Q_S = 3P - 200$.
 
 **Free market equilibrium:**
-$1000 - 2P = 3P - 200 \Rightarrow 1200 = 5P \Rightarrow P = 240$$Q = 520$.
+$1000 - 2P = 3P - 200 \Rightarrow 1200 = 5P \Rightarrow P = 240$, $Q = 520$.
 
 Since the target price (200) is BELOW the market price (240), the buffer stock is irrelevant -- the
 market price is already above the target. The government does not need to intervene.
@@ -1025,13 +1025,13 @@ and stores them.
 cost $= 2000$.
 
 **If a bad harvest reduces supply:** New supply $Q_S = 2P - 100$. New equilibrium:
-$1000 - 2P = 2P - 100 \Rightarrow 1100 = 4P \Rightarrow P = 275$$Q = 450$. The market price (275) is
+$1000 - 2P = 2P - 100 \Rightarrow 1100 = 4P \Rightarrow P = 275$, $Q = 450$. The market price (275) is
 still below the target (280), so the government releases some stocks. Government releases: enough to
-push price to 280. At $P = 280$: $Q_D = 440$$Q_S = 460$. Excess supply of 20. The government does
+push price to 280. At $P = 280$: $Q_D = 440$, $Q_S = 460$. Excess supply of 20. The government does
 NOT need to release stocks (supply exceeds demand even at the target price).
 
-**If supply falls further:** $Q_S = P$. $1000 - 2P = P \Rightarrow P = 333.33$$Q = 333.33$. Market
-price (333.33) is above target (280). The government sells stocks: $Q_D(280) = 440$$Q_S(280) = 80$.
+**If supply falls further:** $Q_S = P$. $1000 - 2P = P \Rightarrow P = 333.33$, $Q = 333.33$. Market
+price (333.33) is above target (280). The government sells stocks: $Q_D(280) = 440$, $Q_S(280) = 80$.
 Shortage $= 360$. The government sells 360 tonnes from its buffer stock.
 
 Revenue from sales: $280 \times 360 = 100\,800$.
@@ -1066,21 +1066,21 @@ to direct income support for farmers.
 rent is GBP 1,500/month. Demand: $Q_D = 2000 - P$ (where P is monthly rent). Supply:
 $Q_S = P - 500$.
 
-**Free market:** $2000 - P = P - 500 \Rightarrow 2500 = 2P \Rightarrow P = 1250$$Q = 750$.
+**Free market:** $2000 - P = P - 500 \Rightarrow 2500 = 2P \Rightarrow P = 1250$, $Q = 750$.
 
 Wait, the free market rent is given as 1500 but the equilibrium gives 1250. Let me adjust the
 functions.
 
 Demand: $Q_D = 3000 - P$. Supply: $Q_S = P - 1500$.
-$3000 - P = P - 1500 \Rightarrow 4500 = 2P \Rightarrow P = 2250$$Q = 750$.
+$3000 - P = P - 1500 \Rightarrow 4500 = 2P \Rightarrow P = 2250$, $Q = 750$.
 
 Hmm, still not matching. Let me just use the given free market equilibrium:
 
-At free market: $P = 1500$$Q = 750$. Demand: $Q_D = a - bP$. $750 = a - 1500b$. Supply:
+At free market: $P = 1500$, $Q = 750$. Demand: $Q_D = a - bP$. $750 = a - 1500b$. Supply:
 $Q_S = cP - d$. $750 = 1500c - d$.
 
-Let me use: $Q_D = 2000 - 0.833P$$Q_S = P - 750$. At $P = 1500$:
-$Q_D = 750.5 \approx 750$$Q_S = 750$. Good enough.
+Let me use: $Q_D = 2000 - 0.833P$, $Q_S = P - 750$. At $P = 1500$:
+$Q_D = 750.5 \approx 750$, $Q_S = 750$. Good enough.
 
 **With rent control at P = 1000:** $Q_D = 2000 - 833 = 1167$. $Q_S = 1000 - 750 = 250$. Shortage
 $= 1167 - 250 = 917$ apartments.

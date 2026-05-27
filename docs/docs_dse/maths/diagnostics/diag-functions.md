@@ -56,7 +56,7 @@ Therefore $\mathrm{dom}(f \circ g) = (-2,\; -1]$.
 
 **Question:**
 
-Let $f(x) = \dfrac{2x + 3}{x - 1}$$x \neq 1$. Which of the following equals $f^{-1}(5)$?
+Let $f(x) = \dfrac{2x + 3}{x - 1}$, $x \neq 1$. Which of the following equals $f^{-1}(5)$?
 
 $$\text{(A)}\; \frac{1}{f(5)} \qquad \text{(B)}\; f(5) \qquad \text{(C)}\; \text{Neither}$$
 
@@ -111,14 +111,14 @@ the sign.
 
 **Question:**
 
-Let $f(x) = x^2 - 4x + 3$$x \in \mathbb{R}$.
+Let $f(x) = x^2 - 4x + 3$, $x \in \mathbb{R}$.
 
 (a) Show that $f$ is not injective. (b) Restrict the domain so that $f^{-1}$ exists and find
 $f^{-1}(x)$.
 
 **Solution:**
 
-(a) $f(0) = 3$ and $f(4) = 3$. Since $f(0) = f(4)$ but $0 \neq 4$$f$ is not injective.
+(a) $f(0) = 3$ and $f(4) = 3$. Since $f(0) = f(4)$ but $0 \neq 4$, $f$ is not injective.
 
 (b) We need to restrict to a domain where $f$ is strictly monotonic.
 
@@ -171,7 +171,7 @@ $$\mathrm{ran}(g \circ f) = [1,\; \infty)$$
 **Question:**
 
 Let $f(x) = ax^2 + bx + c$ where $a > 0$. The function $f$ has a minimum value of $-5$ at $x = 3$.
-Given that $f(1) = 3$Find $a$$b$And $c$And hence find the range of $f^{-1}$.
+Given that $f(1) = 3$Find $a$, $b$And $c$And hence find the range of $f^{-1}$.
 
 **Solution:**
 
@@ -187,7 +187,7 @@ $$4a - 5 = 3 \implies a = 2$$
 
 So $f(x) = 2(x - 3)^2 - 5 = 2x^2 - 12x + 13$.
 
-Therefore $a = 2$$b = -12$$c = 13$.
+Therefore $a = 2$, $b = -12$, $c = 13$.
 
 Since $f$ has minimum value $-5$ and opens upward, $\mathrm{ran}(f) = [-5,\; \infty)$.
 
@@ -200,7 +200,7 @@ restricted domain where $f$ is injective, to the right of the vertex).
 
 **Question:**
 
-Let $f(x) = \log_2(x + 1)$$x > -1$. Find $f^{-1}(x)$ and solve $f(x) = f^{-1}(x)$.
+Let $f(x) = \log_2(x + 1)$, $x > -1$. Find $f^{-1}(x)$ and solve $f(x) = f^{-1}(x)$.
 
 **Solution:**
 
@@ -232,8 +232,8 @@ The solutions are $x = 0$ and $x = 1$.
 
 **Question:**
 
-The function $f(x) = \dfrac{k}{x}$$x > 0$Represents a rectangular hyperbola. The line $y = mx + c$
-is tangent to the curve at the point $(2,\; 4)$. Find $k$$m$And $c$.
+The function $f(x) = \dfrac{k}{x}$, $x > 0$Represents a rectangular hyperbola. The line $y = mx + c$
+is tangent to the curve at the point $(2,\; 4)$. Find $k$, $m$And $c$.
 
 **Solution:**
 
@@ -255,7 +255,7 @@ So $m = -2$.
 
 From equation (1): $c = 4 - 2(-2) = 8$.
 
-Therefore $k = 8$$m = -2$$c = 8$And the tangent line is $y = -2x + 8$.
+Therefore $k = 8$, $m = -2$, $c = 8$And the tangent line is $y = -2x + 8$.
 
 ---
 
@@ -357,7 +357,7 @@ $(2, 5) \to (3, 7)$ and $(3, 1) \to (4, 3)$.
 Define
 $f(x) = \begin{cases} x^2 & \text{if } x < 0 \\ 2x + 1 & \text{if } 0 \leq x \leq 3 \\ 7 & \text{if } x > 3 \end{cases}$.
 
-Find $f(-2)$$f(0)$$f(3)$And $f(5)$.
+Find $f(-2)$, $f(0)$, $f(3)$And $f(5)$.
 
 **Solution:**
 
@@ -461,7 +461,7 @@ Since $f(a) = f(b) \implies a = b$The function is **injective**.
 
 ### DSE-1
 
-Let $f(x) = \dfrac{3x - 1}{x + 2}$$x \neq -2$.
+Let $f(x) = \dfrac{3x - 1}{x + 2}$, $x \neq -2$.
 
 (a) Find $f^{-1}(x)$. (3 marks) (b) Find the domain and range of $f^{-1}$. (2 marks) (c) Solve
 $f(x) = x$. (3 marks)
@@ -563,7 +563,7 @@ $g \circ f = \mathrm{id}$ on $\mathbb{R}$.
 
 ### DSE-5
 
-The graph of $y = f(x)$ is shown. It passes through $(-2, 0)$$(0, 4)$$(2, 0)$And has a maximum at
+The graph of $y = f(x)$ is shown. It passes through $(-2, 0)$, $(0, 4)$, $(2, 0)$And has a maximum at
 $(0, 4)$.
 
 (a) Sketch the graph of $y = f(x + 1)$. (2 marks) (b) Sketch the graph of $y = f(-x)$. (2 marks) (c)
@@ -572,10 +572,10 @@ in words. (2 marks)
 
 **Solution:**
 
-(a) $y = f(x + 1)$ shifts the graph left by 1 unit. New key points: $(-3, 0)$$(-1, 4)$$(1, 0)$.
+(a) $y = f(x + 1)$ shifts the graph left by 1 unit. New key points: $(-3, 0)$, $(-1, 4)$, $(1, 0)$.
 Maximum at $(-1, 4)$.
 
-(b) $y = f(-x)$ reflects the graph in the $y$-axis. New key points: $(2, 0)$$(0, 4)$$(-2, 0)$.
+(b) $y = f(-x)$ reflects the graph in the $y$-axis. New key points: $(2, 0)$, $(0, 4)$, $(-2, 0)$.
 Maximum at $(0, 4)$.
 
 (c) $y = -f(x) + 2$: reflect in the $x$-axis (all $y$-values change sign), then translate up by 2

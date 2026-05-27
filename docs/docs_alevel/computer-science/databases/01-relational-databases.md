@@ -216,7 +216,7 @@ Department, not directly on student_id.)
 
 ### Boyce-Codd Normal Form (BCNF)
 
-**Definition:** A relation is in BCNF if, for every non-trivial functional dependency $A \to B$$A$
+**Definition:** A relation is in BCNF if, for every non-trivial functional dependency $A \to B$, $A$
 Is a **superkey**.
 
 Every relation in BCNF is also in 3NF, but not every 3NF relation is in BCNF.
@@ -419,12 +419,12 @@ HAVING COUNT(*) > 5        -- Filter groups
 
 - 3NF: For every non-trivial dependency $A \to B$Either $A$ is a superkey, or $B$ is a prime
   attribute (part of some candidate key).
-- BCNF: For every non-trivial dependency $A \to B$$A$ is a superkey.
+- BCNF: For every non-trivial dependency $A \to B$, $A$ is a superkey.
 
 BCNF is strictly stronger than 3NF: BCNF requires $A$ to be a superkey for ALL non-trivial
 Dependencies, while 3NF allows exceptions where $B$ is a prime attribute.
 
-If a relation is in BCNF, then for every $A \to B$$A$ is a superkey. This satisfies the 3NF
+If a relation is in BCNF, then for every $A \to B$, $A$ is a superkey. This satisfies the 3NF
 condition (since $A$ being a superkey is one of the two 3NF conditions). Therefore, BCNF ⊆ 3NF.
 $\square$
 

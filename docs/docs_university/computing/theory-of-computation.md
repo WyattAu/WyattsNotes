@@ -165,7 +165,7 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_0\})$$
 | $q_1$ | $q_2$              | $q_0$              |
 | $q_2$ | $q_1$              | $q_2$              |
 
-_Correctness._ By induction on input length. Base: $x = \varepsilon$$\mathrm◆LB◆val(\varepsilon) = 0$
+_Correctness._ By induction on input length. Base: $x = \varepsilon$, $\mathrm◆LB◆val(\varepsilon) = 0$
 DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm◆LB◆val(x) \bmod 3$), Then
 reading $b$ moves to $q_◆LB◆(2r+b) \bmod 3◆RB◆$Which equals $q_◆LB◆\mathrm◆LB◆val(xb) \bmod 3◆RB◆$. $\blacksquare$
 
@@ -214,7 +214,7 @@ of Regular languages.
 
 Convert the NFA from the "strings ending in `01`" example to a DFA via the subset construction.
 
-NFA states: $\{q_0, q_1, q_2\}$$\Sigma = \{0, 1\}$$F = \{q_2\}$No $\varepsilon$-transitions.
+NFA states: $\{q_0, q_1, q_2\}$, $\Sigma = \{0, 1\}$, $F = \{q_2\}$No $\varepsilon$-transitions.
 
 Start state: $\{q_0\}$.
 
@@ -224,7 +224,7 @@ Start state: $\{q_0\}$.
 | $\{q_0, q_1\}$ | $\{q_0, q_1\}$      | $\{q_0, q_2\}$      | No      |
 | $\{q_0, q_2\}$ | $\{q_0, q_1\}$      | $\{q_0\}$           | Yes     |
 
-The DFA has 3 reachable states. $\{q_1\}$$\{q_2\}$And $\{q_1, q_2\}$ are unreachable.
+The DFA has 3 reachable states. $\{q_1\}$, $\{q_2\}$And $\{q_1, q_2\}$ are unreachable.
 
 </details>
 
@@ -233,7 +233,7 @@ The DFA has 3 reachable states. $\{q_1\}$$\{q_2\}$And $\{q_1, q_2\}$ are unreach
 **Definition.** Regular expressions over $\Sigma$ are defined inductively:
 
 1. $\emptyset$ (empty set), $\varepsilon$ (empty string), and $a$ for each $a \in \Sigma$ are regex.
-2. If $R_1$ and $R_2$ are regex, then $(R_1 \cup R_2)$$(R_1 \cdot R_2)$And $(R_1^*)$ are regex.
+2. If $R_1$ and $R_2$ are regex, then $(R_1 \cup R_2)$, $(R_1 \cdot R_2)$And $(R_1^*)$ are regex.
 3. Nothing else is a regex.
 
 **Shorthand:** $R^+$ means $R \cdot R^*$. $R?$ means $(R \cup \varepsilon)$.
@@ -275,7 +275,7 @@ _Proof (sketch)._
 
 **Regex to NFA:** Induction on the structure of the regex.
 
-- Base cases: $\emptyset$$\varepsilon$$a$ each have trivial NFAs.
+- Base cases: $\emptyset$, $\varepsilon$, $a$ each have trivial NFAs.
 - Union: Combine two NFAs with a new start state and $\varepsilon$-transitions to each.
 - Concatenation: Connect the accept states of the first NFA to the start state of the second via
   $\varepsilon$-transitions.
@@ -338,7 +338,7 @@ _Proof of Theorem 2.4._
 **(1) $\Rightarrow$ (2):** Let $D = (Q, \Sigma, \delta, q_0, F)$ be a DFA for $L$. Define $x \sim y$
 iff $\delta^*(q_0, x) = \delta^*(q_0, y)$ (i.e., $D$ reaches the same state on $x$ and $y$). Then
 $\sim$ has at most $|Q|$ equivalence classes. We show $\sim = \equiv_L$. If $x \sim y$Then for All
-$z$$\delta^*(q_0, xz) = \delta^*(q_0, yz)$So $xz \in L$ iff $yz \in L$Meaning $x \equiv_L y$.
+$z$, $\delta^*(q_0, xz) = \delta^*(q_0, yz)$So $xz \in L$ iff $yz \in L$Meaning $x \equiv_L y$.
 Conversely, if $x \not\equiv_L y$There exists $z$ with $xz \in L$ and $yz \notin L$ (or vice versa),
 so $\delta^*(q_0, xz) \neq \delta^*(q_0, yz)$Hence $x \not\sim y$.
 
@@ -391,7 +391,7 @@ This algorithm runs in $O(n^2 k)$ time where $n$ is the number of states and $k 
 ### 2.6 Pumping Lemma for Regular Languages
 
 **Theorem 2.6 (Pumping Lemma).** If $L$ is regular, then there exists a constant $p$ (the pumping
-Length) such that for every string $w \in L$ with $|w| \geq p$$w$ can be decomposed as $w = xyz$
+Length) such that for every string $w \in L$ with $|w| \geq p$, $w$ can be decomposed as $w = xyz$
 satisfying:
 
 1. $|y| \gt 0$ (the pumped part is non-empty).
@@ -415,7 +415,7 @@ $|xy| \leq p$So $y$ consists only of `0`S. Let $|y| = k \gt 0$. Then $xy^0 z = 0
 
 **Example.** $L = \{ww : w \in \{0,1\}^*\}$ is not regular.
 
-_Proof._ Assume pumping length $p$. Let $w = 0^p 1 0^p 1 \in L$. Since $|xy| \leq p$$y = 0^k$ for
+_Proof._ Assume pumping length $p$. Let $w = 0^p 1 0^p 1 \in L$. Since $|xy| \leq p$, $y = 0^k$ for
 Some $k \gt 0$. Then $xy^0 z = 0^◆LB◆p-k◆RB◆ 1 0^p 1 \notin L$ (the two halves have different lengths).
 $\blacksquare$
 
@@ -666,7 +666,7 @@ $\varepsilon$-moves (without consuming input or changing the stack).
 
 **Example.** PDA for $L = \{a^n b^n : n \geq 0\}$:
 
-1. Push a marker $\$$ onto the stack.
+1. Push a marker $\$, $ onto the stack.
 2. For each `a`Push `X` onto the stack.
 3. For each `b`Pop `X` from the stack.
 4. Accept if the stack is empty (just the marker) and all input is consumed.
@@ -803,7 +803,7 @@ variables that can derive the substring $w_i w_{i+1} \cdots w_j$.
 
 1. **Base case** ($j = 1$): $T[i, i] = \{A : A \to w_i \mathrm{ is a rule in  G\}$.
 2. **Recursive case** ($j \gt 1$): For each split $k$ with $i \leq k \lt j$:
-   $$T[i, j] \mathrel◆LB◆◆LB◆:◆RB◆◆LB◆=◆RB◆◆RB◆ T[i, j] \cup \{A : A \to BC \in R, B \in T[i, k], C \in T[k+1, j]\}$$
+   $, $T[i, j] \mathrel◆LB◆◆LB◆:◆RB◆◆LB◆=◆RB◆◆RB◆ T[i, j] \cup \{A : A \to BC \in R, B \in T[i, k], C \in T[k+1, j]\}$, $
 3. **Answer:** $w \in L(G)$ iff $S \in T[1, n]$.
 
 _Proof of correctness._ In CNF, every derivation of a string of length $\ell$ involves exactly
@@ -1303,7 +1303,7 @@ $\mathrm{NTIME(t(n)) = \{L : L \mathrm{ is decided by a nondeterministic TM in  
 
 ### 6.2 The Class P
 
-$$\mathrm◆LB◆P = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆TIME(n^k)$$
+$, $\mathrm◆LB◆P = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆TIME(n^k)$, $
 
 $\mathrm{P$ is the class of languages decidable in polynomial time by a deterministic TM. This
 Captures the notion of "efficiently solvable."
@@ -1318,12 +1318,12 @@ Captures the notion of "efficiently solvable."
 
 ### 6.3 The Class NP
 
-$$\mathrm◆LB◆NP = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆NTIME(n^k)$$
+$, $\mathrm◆LB◆NP = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆NTIME(n^k)$, $
 
 **Equivalent definition.** A language $L$ is in NP if there exists a polynomial-time verifier $V$
 And a polynomial $p$ such that:
 
-$$L = \{w : \exists c \mathrm◆LB◆ with  |c| \leq p(|w|) \mathrm◆LB◆ and  V(w, c) = \mathrm◆LB◆accept\}$$
+$, $L = \{w : \exists c \mathrm◆LB◆ with  |c| \leq p(|w|) \mathrm◆LB◆ and  V(w, c) = \mathrm◆LB◆accept\}$, $
 
 The string $c$ is called a **certificate** (or witness).
 
@@ -1510,13 +1510,13 @@ Equal sum?
 
 **Reduction chain:**
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆VertexCover \to \mathrm◆LB◆Clique$$
+$, $\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆VertexCover \to \mathrm◆LB◆Clique$, $
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆HamiltonianPath$$
+$, $\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆HamiltonianPath$, $
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$$
+$, $\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$, $
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$$
+$, $\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$, $
 
 <details>
 <summary>Worked Example: Reducing 3-SAT to Independent Set</summary>

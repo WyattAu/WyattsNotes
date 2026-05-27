@@ -621,7 +621,7 @@ $$y^* = \left(\frac◆LB◆s◆RB◆◆LB◆n + \delta◆RB◆\right)^{\frac◆L
 
 ### 11.3 Worked Example: Solow Model Calculations
 
-**Example.** A country has $\alpha = 0.3$$s = 0.2$$n = 0.02$$\delta = 0.05$.
+**Example.** A country has $\alpha = 0.3$, $s = 0.2$, $n = 0.02$, $\delta = 0.05$.
 
 **Steady-state capital per worker:**
 $$k^* = \left(\frac{0.2}{0.02 + 0.05}\right)^{\frac{1}{0.7}} = \left(\frac{0.2}{0.07}\right)^{1.4286} = (2.857)^{1.4286}$$
@@ -976,7 +976,7 @@ Year 1: $K = 20$ (for 10 workers). Industrial wage = 300. Hire until $MPL = 300$
 impossible ($L$ would be negative). This doesn't work.
 
 **Simpler approach:** Let industrial output $= A \times K^{0.3}L^{0.7}$ with $A = 1$. Initial
-$K = 100$$L = 10$. Output $= 100^{0.3} \times 10^{0.7} = 3.98 \times 5.01 = 19.94$.
+$K = 100$, $L = 10$. Output $= 100^{0.3} \times 10^{0.7} = 3.98 \times 5.01 = 19.94$.
 $MPL = 0.7 \times 19.94 / 10 = 1.40$. Industrial wage $= 1.5 \times 0.2 = 0.3$ (if agricultural MPL
 = 0.2). Since $MPL = 1.40 > 0.3$The industrial sector wants to hire more workers.
 
@@ -1064,7 +1064,7 @@ above subsistence).
 
 **Low-income trap:** If $Y_0 < Y^*$Savings rate = 5%. Steady state:
 $k^* = (0.05 / 0.05)^{1/0.7} = 1$. $y^* = 1^{0.3} = 1$. $Y^*_{trap} = 1 \times L = L$. (Using
-$\delta = 0.05$$n = 0$.)
+$\delta = 0.05$, $n = 0$.)
 
 This gives $y^* = (s/(\delta + n))^{0.3/(1-0.3)} = (0.05/0.05)^{0.429} = 1$. The economy is trapped
 at $y = 1$Which is below the threshold $Y^* = 100$.

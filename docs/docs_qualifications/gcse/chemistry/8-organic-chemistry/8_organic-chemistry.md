@@ -644,7 +644,7 @@ Monomer. (b) Draw the displayed formula of the monomer. (c) Name the polymer.
 
 **Worked Example.** Write the equation for the polymerisation of but-2-ene and name the polymer.
 
-$$n\mathrm{CH_3\mathrm{CH=\mathrm{CHCH_3 \to \mathrm{(-CH(CH_3\mathrm{)-CH_2\mathrm{-)_n$$
+$, $n\mathrm{CH_3\mathrm{CH=\mathrm{CHCH_3 \to \mathrm{(-CH(CH_3\mathrm{)-CH_2\mathrm{-)_n$, $
 
 The polymer is poly(but-2-ene), also called polybutene.
 
@@ -671,7 +671,7 @@ Identify the other product.
 Atom balance: C: $14 - 8 = 6$H: $30 - 18 = 12$. The other product is C$_6$H$_{12}$Which is
 Cyclohexane.
 
-$$\mathrm{C_{14}\mathrm{H_{30} \to \mathrm{C_8\mathrm{H_{18} + \mathrm{C_6\mathrm{H_{12}$$
+$, $\mathrm{C_{14}\mathrm{H_{30} \to \mathrm{C_8\mathrm{H_{18} + \mathrm{C_6\mathrm{H_{12}$, $
 
 **Worked Example.** Explain why the product of cracking always contains at least one alkene.
 
@@ -824,7 +824,7 @@ Calculate the pH of a $0.050\,\text{mol\,dm}^{-3}$ solution of HCl.
 
 HCl is a strong acid, so $[\text{H}^+] = 0.050\,\text{mol\,dm}^{-3}$.
 
-$$\text{pH} = -\log_{10}[\text{H}^+] = -\log_{10}(0.050) = 1.30$$
+$, $\text{pH} = -\log_{10}[\text{H}^+] = -\log_{10}(0.050) = 1.30$, $
 
 ## Summary
 

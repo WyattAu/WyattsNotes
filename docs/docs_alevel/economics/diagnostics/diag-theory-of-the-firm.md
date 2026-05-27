@@ -23,7 +23,7 @@ maximum profit, (c) the shut-down price, (d) the output at which average cost is
 
 $\text{MC} = \frac◆LB◆d\text{TC}◆RB◆◆LB◆dQ◆RB◆ = 20 + 4Q$.
 
-$20 + 4Q = 80$$4Q = 60$$Q^* = 15$.
+$20 + 4Q = 80$, $4Q = 60$, $Q^* = 15$.
 
 (b) Profit $= \text{TR} - \text{TC}$.
 
@@ -36,7 +36,7 @@ $\pi = 1200 - 950 = \pounds 250$.
 (c) Shut-down price: the firm shuts down if $P \lt \text{AVC}$ at the output where
 $\text{MC} = \text{AVC}$ (minimum of AVC).
 
-$\text{TVC} = 20Q + 2Q^2$$\text{AVC} = 20 + 2Q$.
+$\text{TVC} = 20Q + 2Q^2$, $\text{AVC} = 20 + 2Q$.
 
 Minimum AVC: $\frac◆LB◆d(\text{AVC})◆RB◆◆LB◆dQ◆RB◆ = 2 \neq 0$. Actually, since AVC is linear with a
 positive slope, the minimum is at $Q = 0$: $\text{AVC}_{\min} = 20$.
@@ -44,19 +44,19 @@ positive slope, the minimum is at $Q = 0$: $\text{AVC}_{\min} = 20$.
 Wait -- $\text{AVC} = \frac◆LB◆\text{TVC}◆RB◆◆LB◆Q◆RB◆ = 20 + 2Q$Which increases with $Q$. The
 minimum is at $Q = 0$Where $\text{AVC} = 20$. So the shut-down price is $\pounds 20$.
 
-Alternatively, $\text{AVC} = \text{MC}$: $20 + 2Q = 20 + 4Q$Which gives $Q = 0$$\text{AVC} = 20$.
+Alternatively, $\text{AVC} = \text{MC}$: $20 + 2Q = 20 + 4Q$Which gives $Q = 0$, $\text{AVC} = 20$.
 Shut-down price $= \pounds 20$.
 
 (d) Minimum AC: $\text{AC} = \frac{200 + 20Q + 2Q^2}{Q} = \frac{200}{Q} + 20 + 2Q$.
 
-$\frac◆LB◆d(\text{AC})◆RB◆◆LB◆dQ◆RB◆ = -\frac{200}{Q^2} + 2 = 0$So $Q^2 = 100$$Q = 10$.
+$\frac◆LB◆d(\text{AC})◆RB◆◆LB◆dQ◆RB◆ = -\frac{200}{Q^2} + 2 = 0$So $Q^2 = 100$, $Q = 10$.
 
 $\text{AC}_{\min} = \frac{200}{10} + 20 + 20 = 20 + 20 + 20 = \pounds 40$.
 
 At $Q = 10$: $\text{MC} = 20 + 4(10) = 60$. Note that $\text{MC} \neq \text{AC}$ at minimum AC for
 this cost function because AC includes a fixed cost component. Actually, the condition for minimum
 AC is that MC passes through AC at its minimum. Let me verify:
-$\text{MC}(10) = 60$$\text{AC}(10) = 40$. These are not equal -- this seems wrong.
+$\text{MC}(10) = 60$, $\text{AC}(10) = 40$. These are not equal -- this seems wrong.
 
 Let me recheck: $\text{AC} = 200/Q + 20 + 2Q$. At $Q = 10$: $\text{AC} = 20 + 20 + 20 = 40$.
 $\text{MC}(10) = 20 + 40 = 60$.
@@ -96,7 +96,7 @@ monopoly profit, (c) the deadweight loss compared to perfect competition, (d) th
 (a) $\text{MR} = 120 - 4Q$ (double the slope of demand). $\text{MC} = 10 + 2Q$.
 
 $\text{MR} = \text{MC}$:
-$120 - 4Q = 10 + 2Q$$110 = 6Q$$Q_m = 18.33$$P_m = 120 - 2(18.33) = \pounds 83.33$.
+$120 - 4Q = 10 + 2Q$, $110 = 6Q$, $Q_m = 18.33$, $P_m = 120 - 2(18.33) = \pounds 83.33$.
 
 (b) Profit $= \text{TR} - \text{TC}$.
 
@@ -107,7 +107,7 @@ $\text{TC} = 50 + 10(18.33) + (18.33)^2 = 50 + 183.3 + 336.0 = 569.3$.
 $\pi = 1527.2 - 569.3 = \pounds 957.9 \approx \pounds 958$.
 
 (c) Competitive outcome:
-$P = \text{MC}$$120 - 2Q = 10 + 2Q$$110 = 4Q$$Q_c = 27.5$$P_c = 120 - 55 = \pounds 65$.
+$P = \text{MC}$, $120 - 2Q = 10 + 2Q$, $110 = 4Q$, $Q_c = 27.5$, $P_c = 120 - 55 = \pounds 65$.
 
 $\text{DWL} = \frac{1}{2}(P_m - \text{MC at } Q_m)(Q_c - Q_m) = \frac{1}{2}(83.33 - 46.67)(27.5 - 18.33)$
 
@@ -184,9 +184,9 @@ $\text{MRP}_L = 5(10 - L) = 50 - 5L$.
 
 (b) Profit-maximising labour hire: $\text{MRP}_L = w$.
 
-$50 - 5L = 30$$5L = 20$$L = 4$ workers.
+$50 - 5L = 30$, $5L = 20$, $L = 4$ workers.
 
-(c) At $w = 20$: $50 - 5L = 20$$5L = 30$$L = 6$ workers.
+(c) At $w = 20$: $50 - 5L = 20$, $5L = 30$, $L = 6$ workers.
 
 The labour demand curve is the downward-sloping portion of $\text{MRP}_L$ because:
 
@@ -212,15 +212,15 @@ optimal pricing. Discuss the regulatory trade-off.
 
 **Solution:**
 
-(a) Profit maximisation: $\text{MR} = 200 - 4Q$$\text{MC} = 50$.
+(a) Profit maximisation: $\text{MR} = 200 - 4Q$, $\text{MC} = 50$.
 
-$200 - 4Q = 50$$Q_m = 37.5$$P_m = 200 - 75 = \pounds 125$.
+$200 - 4Q = 50$, $Q_m = 37.5$, $P_m = 200 - 75 = \pounds 125$.
 
 Profit $= 125 \times 37.5 - (1000 + 50 \times 37.5) = 4687.5 - 2875 = \pounds 1812.5$.
 
 (b) Socially optimal (allocatively efficient): $P = \text{MC}$.
 
-$200 - 2Q = 50$$Q_{\text{opt}} = 75$$P_{\text{opt}} = \pounds 50$.
+$200 - 2Q = 50$, $Q_{\text{opt}} = 75$, $P_{\text{opt}} = \pounds 50$.
 
 Profit at social optimum: $50 \times 75 - (1000 + 3750) = 3750 - 4750 = -\pounds 1000$ (loss).
 
@@ -228,15 +228,15 @@ Profit at social optimum: $50 \times 75 - (1000 + 3750) = 3750 - 4750 = -\pounds
 
 $\text{AC} = \frac{1000}{Q} + 50$. $P = 200 - 2Q$.
 
-$200 - 2Q = \frac{1000}{Q} + 50$$150 - 2Q = \frac{1000}{Q}$$150Q - 2Q^2 = 1000$.
+$200 - 2Q = \frac{1000}{Q} + 50$, $150 - 2Q = \frac{1000}{Q}$, $150Q - 2Q^2 = 1000$.
 
-$2Q^2 - 150Q + 1000 = 0$$Q^2 - 75Q + 500 = 0$.
+$2Q^2 - 150Q + 1000 = 0$, $Q^2 - 75Q + 500 = 0$.
 
 $Q = \frac◆LB◆75 \pm \sqrt{5625 - 2000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆75 \pm 60.1◆RB◆◆LB◆2◆RB◆$.
 
 $Q = 67.6$ (taking the feasible root). $P = 200 - 2(67.6) = \pounds 64.8$.
 
-(d) Subsidy for socially optimal pricing: the firm loses $\pounds 1000$ at $P = 50$$Q = 75$. The
+(d) Subsidy for socially optimal pricing: the firm loses $\pounds 1000$ at $P = 50$, $Q = 75$. The
 government must provide a subsidy of $\pounds 1000$ to keep the firm in operation.
 
 **Regulatory trade-off:**
@@ -274,13 +274,13 @@ By symmetry: $Q_F = 60 - Q_H/2$.
 
 Solving simultaneously: $Q_H = 60 - (60 - Q_H/2)/2 = 60 - 30 + Q_H/4 = 30 + Q_H/4$.
 
-$3Q_H/4 = 30$$Q_H = 40$. By symmetry, $Q_F = 40$.
+$3Q_H/4 = 30$, $Q_H = 40$. By symmetry, $Q_F = 40$.
 
-Total output $= 80$$P = 160 - 80 = \pounds 80$.
+Total output $= 80$, $P = 160 - 80 = \pounds 80$.
 
 $\pi_H = (80 - 40)(40) = \pounds 1600$. $\pi_F = \pounds 1600$.
 
-(b) **Cartel (monopoly):** $Q_{\text{total}}$: $\text{MR} = 160 - 2Q = 40$$Q = 60$$P = \pounds 100$.
+(b) **Cartel (monopoly):** $Q_{\text{total}}$: $\text{MR} = 160 - 2Q = 40$, $Q = 60$, $P = \pounds 100$.
 
 Total profit $= (100 - 40)(60) = \pounds 3600$. If split equally: each firm produces 30 units and
 earns $\pounds 1800$.
@@ -289,7 +289,7 @@ earns $\pounds 1800$.
 
 Firm H's demand: $P = 160 - (Q_H + 30) = 130 - Q_H$.
 
-$\text{MR}_H = 130 - 2Q_H = 40$$Q_H = 45$.
+$\text{MR}_H = 130 - 2Q_H = 40$, $Q_H = 45$.
 
 $P = 130 - 45 = \pounds 85$.
 
@@ -342,16 +342,16 @@ average cost pricing regulation. (d) Compare the deadweight loss under each regi
 **Solution:**
 
 (a) Unregulated monopoly: $MR = 50 - 2Q$. $MC = 10$. $MR = MC$:
-$50 - 2Q = 10 \Rightarrow Q = 20$$P = 30$. Profit: $TR = 600$$TC = 200 + 200 = 400$. $\pi = 200$.
+$50 - 2Q = 10 \Rightarrow Q = 20$, $P = 30$. Profit: $TR = 600$, $TC = 200 + 200 = 400$. $\pi = 200$.
 
-(b) Marginal cost pricing: $P = MC \Rightarrow 50 - Q = 10 \Rightarrow Q = 40$$P = 10$. Revenue
+(b) Marginal cost pricing: $P = MC \Rightarrow 50 - Q = 10 \Rightarrow Q = 40$, $P = 10$. Revenue
 $= 400$. $TC = 200 + 400 = 600$. Profit $= -200$ (loss). The firm cannot survive at this price
 without a subsidy of 200. This is the allocatively efficient outcome.
 
 (c) Average cost pricing: $P = AC \Rightarrow 50 - Q = 200/Q + 10$.
 $50 - Q = 200/Q + 10 \Rightarrow 40 - Q = 200/Q \Rightarrow 40Q - Q^2 = 200 \Rightarrow Q^2 - 40Q + 200 = 0$.
 $Q = \frac◆LB◆40 \pm \sqrt{1600 - 800}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆40 \pm 28.28◆RB◆◆LB◆2◆RB◆$. Taking
-the lower root: $Q = 5.86$$P = 44.14$. Taking the higher root: $Q = 34.14$$P = 15.86$.
+the lower root: $Q = 5.86$, $P = 44.14$. Taking the higher root: $Q = 34.14$, $P = 15.86$.
 
 The relevant solution is $Q = 34.14$ (higher output, lower price). Let me verify:
 $AC = 200/34.14 + 10 = 5.86 + 10 = 15.86 = P$. Confirmed.
@@ -376,15 +376,15 @@ profitable?
 
 **Solution:**
 
-(a) Adults: $MR_A = 20 - 0.2Q_A = 4 \Rightarrow Q_A = 80$$P_A = 12$. Students:
-$MR_S = 12 - 0.2Q_S = 4 \Rightarrow Q_S = 40$$P_S = 8$.
+(a) Adults: $MR_A = 20 - 0.2Q_A = 4 \Rightarrow Q_A = 80$, $P_A = 12$. Students:
+$MR_S = 12 - 0.2Q_S = 4 \Rightarrow Q_S = 40$, $P_S = 8$.
 
 (b) Total $Q = 120$. $TR = 12 \times 80 + 8 \times 40 = 960 + 320 = 1280$.
 $TC = 500 + 4 \times 120 = 980$. Profit $= 300$.
 
 (c) Aggregate demand: $Q = Q_A + Q_S = (200 - 10P_A) + (120 - 10P_S)$. At a single price $P$:
 $Q = 320 - 20P$ for $P \leq 12$. $P = 16 - 0.05Q$ for $Q \leq 120$.
-$MR = 16 - 0.1Q = 4 \Rightarrow Q = 120$$P = 10$.
+$MR = 16 - 0.1Q = 4 \Rightarrow Q = 120$, $P = 10$.
 
 Wait -- let me check. At $P = 10$: $Q_A = 200 - 100 = 100$. $Q_S = 120 - 100 = 20$. Total $= 120$.
 Correct.
@@ -413,7 +413,7 @@ contestable monopoly. (d) What conditions must hold for the market to be contest
 
 **Solution:**
 
-(a) Monopoly: $MR = 200 - 2Q = 40 \Rightarrow Q = 80$$P = 120$. Profit
+(a) Monopoly: $MR = 200 - 2Q = 40 \Rightarrow Q = 80$, $P = 120$. Profit
 $= (120 - 40)(80) - 1000 = 5400$.
 
 (b) Under contestability, the threat of entry forces the incumbent to charge a price low enough that

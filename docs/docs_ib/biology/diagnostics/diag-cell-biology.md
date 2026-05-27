@@ -70,7 +70,7 @@ structure allows sequential processing steps in an assembly-line fashion.
 ### UT-3: Fluid Mosaic Model and Membrane Transport
 
 **Question:** Describe the fluid mosaic model of membrane structure. Explain why small non-polar
-molecules (e.g., $\text{O}_2$$\text{CO}_2$) can diffuse across the membrane , while ions (e.g.,
+molecules (e.g., $\text{O}_2$, $\text{CO}_2$) can diffuse across the membrane , while ions (e.g.,
 $\text{Na}^+$) require transport proteins. Include the roles of cholesterol and integral proteins.
 
 **Solution:**

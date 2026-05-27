@@ -32,9 +32,9 @@ choosing the wrong assignment.]
 **(a)** By LIATE (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential), $\ln x$ is
 prioritised for $u$.
 
-Set $u = \ln x$$\frac{dv}{dx} = x^3$.
+Set $u = \ln x$, $\frac{dv}{dx} = x^3$.
 
-$du = \frac{1}{x}\, dx$$v = \frac{x^4}{4}$.
+$du = \frac{1}{x}\, dx$, $v = \frac{x^4}{4}$.
 
 $$\int x^3 \ln x\, dx = \frac{x^4}{4}\ln x - \int \frac{x^4}{4} \cdot \frac{1}{x}\, dx$$
 
@@ -101,7 +101,7 @@ versus when back-substitution rescues the answer, and lower-limit negligence.]
 
 **Solution:**
 
-**(a)** $u = 1 + x^2$$du = 2x\, dx$So $x\, dx = \frac{1}{2}\, du$.
+**(a)** $u = 1 + x^2$, $du = 2x\, dx$So $x\, dx = \frac{1}{2}\, du$.
 
 When $x = 0$: $u = 1$. When $x = 1$: $u = 2$.
 
@@ -231,17 +231,17 @@ $$= \int_0^3 t\sqrt{t^2 - 4t + 8}\, dt$$
 
 Completing the square: $t^2 - 4t + 8 = (t-2)^2 + 4$.
 
-Use the substitution $u = t^2 - 4t + 8$$du = (2t - 4)\, dt$.
+Use the substitution $u = t^2 - 4t + 8$, $du = (2t - 4)\, dt$.
 
 Then $t\, dt = \frac{du + 4\, dt}{2}$Which is not directly useful. Instead, write:
 
 $$\int_0^3 t\sqrt{(t-2)^2 + 4}\, dt$$
 
-Let $w = t - 2$So $t = w + 2$$dt = dw$. When $t = 0$: $w = -2$. When $t = 3$: $w = 1$.
+Let $w = t - 2$So $t = w + 2$, $dt = dw$. When $t = 0$: $w = -2$. When $t = 3$: $w = 1$.
 
 $$= \int_{-2}^{1} (w+2)\sqrt{w^2 + 4}\, dw = \int_{-2}^{1} w\sqrt{w^2+4}\, dw + 2\int_{-2}^{1}\sqrt{w^2+4}\, dw$$
 
-First integral: substitute $u = w^2 + 4$$du = 2w\, dw$.
+First integral: substitute $u = w^2 + 4$, $du = 2w\, dw$.
 
 $$\int_{-2}^{1} w\sqrt{w^2+4}\, dw = \frac{1}{2}\int_{8}^{5}\sqrt{u}\, du = \frac{1}{2}\left[\frac{2}{3}u^{3/2}\right]_8^5 = \frac{1}{3}(5\sqrt{5} - 16\sqrt{2})$$
 

@@ -106,20 +106,20 @@ kWh. Calculate (a) the total input power to the motor, (b) the total electrical 
 
 **(a) Useful power output (lifting the load):**
 
-$$P_{\text{useful}} = \frac{mgh}{t} = \frac{500 \times 9.81 \times 12}{30} = \frac{58860}{30} = 1962 \text{ W}$$
+$, $P_{\text{useful}} = \frac{mgh}{t} = \frac{500 \times 9.81 \times 12}{30} = \frac{58860}{30} = 1962 \text{ W}$, $
 
 Overall efficiency:
 $\eta_{\text{total}} = \eta_{\text{motor}} \times \eta_{\text{gearbox}} = 0.85 \times 0.92 = 0.782$
 
-$$P_{\text{input}} = \frac{P_{\text{useful}}}{\eta_{\text{total}}} = \frac{1962}{0.782} = 2509 \text{ W} = 2.51 \text{ kW}$$
+$, $P_{\text{input}} = \frac{P_{\text{useful}}}{\eta_{\text{total}}} = \frac{1962}{0.782} = 2509 \text{ W} = 2.51 \text{ kW}$, $
 
 **(b) Electrical energy consumed:**
 
-$$E = P_{\text{input}} \times t = 2.51 \times \frac{30}{3600} = 0.0209 \text{ kWh}$$
+$, $E = P_{\text{input}} \times t = 2.51 \times \frac{30}{3600} = 0.0209 \text{ kWh}$, $
 
 **(c) Cost:**
 
-$$\text{Cost} = 0.0209 \times 0.15 = \$0.00314$$
+$, $\text{Cost} = 0.0209 \times 0.15 = \$0.00314$$
 
 **Key misconception:** When machines are connected in series, the overall efficiency is the PRODUCT
 of individual efficiencies, not the sum or average. Also, efficiency $=$ useful output / total

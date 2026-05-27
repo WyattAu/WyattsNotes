@@ -14,7 +14,7 @@ hide_table_of_contents: true
 ### UT-1: Scalar and Vector Products
 
 **Question:**
-$\mathbf{a} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$$\mathbf{b} = \begin{pmatrix} 1 \\ 3 \\ 2 \end{pmatrix}$.
+$\mathbf{a} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 1 \\ 3 \\ 2 \end{pmatrix}$.
 (a) Calculate $\mathbf{a} \cdot \mathbf{b}$. (b) Calculate $\mathbf{a} \times \mathbf{b}$. (c) Find
 the angle between $\mathbf{a}$ and $\mathbf{b}$. (d) Verify that $\mathbf{a} \times \mathbf{b}$ is
 perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
@@ -36,14 +36,14 @@ $\mathbf{b} \cdot (\mathbf{a} \times \mathbf{b}) = 1(5) + 3(-5) + 2(5) = 5 - 15 
 
 ### UT-2: Equation of a Plane
 
-**Question:** A plane passes through points $A(1, 0, 2)$$B(3, 1, -1)$And $C(0, 2, 1)$. (a) Find the
+**Question:** A plane passes through points $A(1, 0, 2)$, $B(3, 1, -1)$And $C(0, 2, 1)$. (a) Find the
 normal vector to the plane. (b) Find the Cartesian equation of the plane. (c) Find the distance from
 the origin to the plane. (d) Determine whether the point $D(1, 1, 1)$ lies on the plane.
 
 **Solution:**
 
 (a)
-$\overrightarrow{AB} = \begin{pmatrix} 2 \\ 1 \\ -3 \end{pmatrix}$$\overrightarrow{AC} = \begin{pmatrix} -1 \\ 2 \\ -1 \end{pmatrix}$.
+$\overrightarrow{AB} = \begin{pmatrix} 2 \\ 1 \\ -3 \end{pmatrix}$, $\overrightarrow{AC} = \begin{pmatrix} -1 \\ 2 \\ -1 \end{pmatrix}$.
 $\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} 1(-1) - (-3)(2) \\ (-3)(-1) - 2(-1) \\ 2(2) - 1(-1) \end{pmatrix} = \begin{pmatrix} 5 \\ 5 \\ 5 \end{pmatrix}$.
 
 (b) Using $A(1,0,2)$: $5(x-1) + 5(y-0) + 5(z-2) = 0$. Simplifying: $x + y + z = 3$.
@@ -56,10 +56,10 @@ $= \frac◆LB◆|0 + 0 + 0 - 3|◆RB◆◆LB◆\sqrt{1+1+1}◆RB◆ = \frac◆LB
 ### UT-3: Volume of a Parallelepiped
 
 **Question:**
-$\mathbf{a} = \begin{pmatrix} 3 \\ 0 \\ -1 \end{pmatrix}$$\mathbf{b} = \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$$\mathbf{c} = \begin{pmatrix} 0 \\ -1 \\ 4 \end{pmatrix}$.
+$\mathbf{a} = \begin{pmatrix} 3 \\ 0 \\ -1 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$, $\mathbf{c} = \begin{pmatrix} 0 \\ -1 \\ 4 \end{pmatrix}$.
 (a) Calculate the scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$. (b) What
 does the sign tell you? (c) Calculate the volume of the parallelepiped formed by
-$\mathbf{a}$$\mathbf{b}$$\mathbf{c}$. (d) Calculate the area of the parallelogram formed by
+$\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$. (d) Calculate the area of the parallelogram formed by
 $\mathbf{a}$ and $\mathbf{b}$.
 
 **Solution:**
@@ -68,7 +68,7 @@ $\mathbf{a}$ and $\mathbf{b}$.
 $\mathbf{b} \times \mathbf{c} = \begin{pmatrix} 2(4) - 1(-1) \\ 1(0) - 1(4) \\ 1(-1) - 2(0) \end{pmatrix} = \begin{pmatrix} 9 \\ -4 \\ -1 \end{pmatrix}$.
 $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 3(9) + 0(-4) + (-1)(-1) = 27 + 0 + 1 = 28$.
 
-(b) The positive sign indicates that $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ form a right-handed set
+(b) The positive sign indicates that $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ form a right-handed set
 (in that order).
 
 (c) Volume $= |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| = 28$ cubic units.
@@ -95,10 +95,10 @@ $2x - y + 2z = 1$.
 
 (a)
 $\mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}$I.e.,
-$x = 1+2t$$y = 2-t$$z = -1+3t$.
+$x = 1+2t$, $y = 2-t$, $z = -1+3t$.
 
 (b) Substituting into the plane: $2(1+2t) - (0+t) + (1-t) = 5$. $2 + 4t - t + 1 - t = 5$.
-$2t = 2$$t = 1$. Point: $\begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix}$.
+$2t = 2$, $t = 1$. Point: $\begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix}$.
 
 (c) Distance
 $= \frac◆LB◆|3 + 1 + 2(-2) - 4|◆RB◆◆LB◆\sqrt{1+1+4}◆RB◆ = \frac◆LB◆|3 + 1 - 4 - 4|◆RB◆◆LB◆\sqrt{6}◆RB◆ = \frac◆LB◆4◆RB◆◆LB◆\sqrt{6}◆RB◆ = \frac◆LB◆2\sqrt{6}◆RB◆◆LB◆3◆RB◆$.
@@ -110,16 +110,16 @@ $\theta = \arccos(4/9) \approx 63.6^\circ$.
 
 ### IT-2: Vectors and Geometry (with Polar Coordinates)
 
-**Question:** Points $A$$B$$C$ have position vectors
-$\mathbf{a} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$$\mathbf{b} = \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix}$$\mathbf{c} = \begin{pmatrix} 0 \\ 1 \\ 4 \end{pmatrix}$.
+**Question:** Points $A$, $B$, $C$ have position vectors
+$\mathbf{a} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 2 \\ 3 \\ 1 \end{pmatrix}$, $\mathbf{c} = \begin{pmatrix} 0 \\ 1 \\ 4 \end{pmatrix}$.
 (a) Calculate the area of triangle $ABC$. (b) Find the Cartesian equation of the plane through
-$A$$B$$C$. (c) Find the acute angle between $\overrightarrow{AB}$ and $\overrightarrow{AC}$. (d)
+$A$, $B$, $C$. (c) Find the acute angle between $\overrightarrow{AB}$ and $\overrightarrow{AC}$. (d)
 Find the volume of the tetrahedron $OABC$ where $O$ is the origin.
 
 **Solution:**
 
 (a)
-$\overrightarrow{AB} = \begin{pmatrix} 1 \\ 3 \\ 1 \end{pmatrix}$$\overrightarrow{AC} = \begin{pmatrix} -1 \\ 1 \\ 4 \end{pmatrix}$.
+$\overrightarrow{AB} = \begin{pmatrix} 1 \\ 3 \\ 1 \end{pmatrix}$, $\overrightarrow{AC} = \begin{pmatrix} -1 \\ 1 \\ 4 \end{pmatrix}$.
 $\overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} 12 - 1 \\ 4 + 1 \\ 1 + 3 \end{pmatrix} = \begin{pmatrix} 11 \\ 5 \\ 4 \end{pmatrix}$.
 Area $= \frac{1}{2}\sqrt{121 + 25 + 16} = \frac{1}{2}\sqrt{162} = \frac◆LB◆9\sqrt{2}◆RB◆◆LB◆2◆RB◆$.
 

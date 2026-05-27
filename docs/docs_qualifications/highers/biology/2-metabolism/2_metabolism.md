@@ -112,7 +112,7 @@ An enzyme has the following rates at different substrate concentrations:
 
 At very high [S], $v$ approaches $V_{\max} \approx 8$ $\mu$Mol/min.
 
-At $v = V_{\max}/2 = 4$$[S] = K_m \approx 5$ mM.
+At $v = V_{\max}/2 = 4$, $[S] = K_m \approx 5$ mM.
 
 So $K_m = 5$ mM and $V_{\max} = 8$ $\mu$Mol/min.
 
@@ -519,7 +519,7 @@ Nephrons.
   the increasingly concentrated medulla. The filtrate becomes more concentrated.
 - **Thin ascending limb:** Impermeable to water. $\mathrm{Na^+$ and $\mathrm{Cl^-$ diffuse out
   passively.
-- **Thick ascending limb:** Actively pumps out $\mathrm{Na^+$$\mathrm{K^+$And $\mathrm{Cl^-$.
+- **Thick ascending limb:** Actively pumps out $\mathrm{Na^+$, $\mathrm{K^+$And $\mathrm{Cl^-$.
   Impermeable to water. The medulla becomes increasingly concentrated from cortex to papilla
   (approximately 300 mOsm at the cortex to 1200 mOsm at the papilla).
 

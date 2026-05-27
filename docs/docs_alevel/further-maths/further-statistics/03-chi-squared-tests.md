@@ -278,7 +278,7 @@ In a $2 \times 2$ contingency table, the observed frequencies are: Row 1: 30, 20
 <summary>Solution 2</summary>
 Row totals: 50, 50. Column totals: 45, 55. Grand total: 100.
 
-Expected: $E_{11} = 50(45)/100 = 22.5$$E_{12} = 50(55)/100 = 27.5$$E_{21} = 22.5$ $E_{22} = 27.5$.
+Expected: $E_{11} = 50(45)/100 = 22.5$, $E_{12} = 50(55)/100 = 27.5$, $E_{21} = 22.5$ $E_{22} = 27.5$.
 
 $\chi^2 = \dfrac{(30-22.5)^2}{22.5} + \dfrac{(20-27.5)^2}{27.5} + \dfrac{(15-22.5)^2}{22.5} + \dfrac{(35-27.5)^2}{27.5}$
 
@@ -328,7 +328,7 @@ $P(3) = \dfrac{1.7^3}{6}e^{-1.7} \approx 0.1496 \to E = 11.97$
 $P(4) = \dfrac{1.7^4}{24}e^{-1.7} \approx 0.0636 \to E = 5.09$
 $P(\geq 5) = 1 - 0.9705 \approx 0.0295 \to E = 2.36$.
 
-Merge $\geq 4$: $O = 8$$E = 5.09+2.36 = 7.45$.
+Merge $\geq 4$: $O = 8$, $E = 5.09+2.36 = 7.45$.
 
 After merging: categories 0, 1, 2, 3, $\geq 4$ with $O$: 15, 25, 20, 12, 8 and $E$: 14.62, 24.85,
 21.12, 11.97, 7.45.
@@ -525,7 +525,7 @@ The observed counts are 115, 38, 30, 17. Test at the 5% level.
 
 $H_0$: The 9:3:3:1 ratio holds. $H_1$: The ratio does not hold.
 
-Expected: $E_1 = 200(9/16) = 112.5$$E_2 = 200(3/16) = 37.5$$E_3 = 37.5$ $E_4 = 200(1/16) = 12.5$.
+Expected: $E_1 = 200(9/16) = 112.5$, $E_2 = 200(3/16) = 37.5$, $E_3 = 37.5$ $E_4 = 200(1/16) = 12.5$.
 
 All $E_i \geq 5$. $\checkmark$
 
@@ -556,9 +556,9 @@ $H_0$: Smoking and disease are independent. $H_1$: They are not independent.
 
 Expected frequencies:
 
-$E_{11} = 100(75)/300 = 25$$E_{12} = 100(225)/300 = 75$.
+$E_{11} = 100(75)/300 = 25$, $E_{12} = 100(225)/300 = 75$.
 
-$E_{21} = 200(75)/300 = 50$$E_{22} = 200(225)/300 = 150$.
+$E_{21} = 200(75)/300 = 50$, $E_{22} = 200(225)/300 = 150$.
 
 All $E_i \geq 5$. $\checkmark$
 
@@ -597,7 +597,7 @@ $$\nu = (\mathrm{number of categories after merging}) - 1 - (\mathrm{parameters 
 | Binomial (known $n$Known $p$)    | 0                    | $n - 1$       |
 | Binomial (known $n$Estimate $p$) | 1                    | $n - 2$       |
 | Poisson (estimate $\lambda$)     | 1                    | $n - 2$       |
-| Normal (estimate $\mu$$\sigma$)  | 2                    | $n - 3$       |
+| Normal (estimate $\mu$, $\sigma$)  | 2                    | $n - 3$       |
 
 ### 7.2 Test for independence
 
@@ -757,7 +757,7 @@ $P(3) = 1.983^3/6 \times 0.1379 \approx 0.1792 \to E = 21.50$
 $P(4) = 1.983^4/24 \times 0.1379 \approx 0.0888 \to E = 10.66$
 $P(\geq 5) = 1 - 0.9484 \approx 0.0516 \to E = 6.19$
 
-Merge $\geq 4$: $O = 18$$E = 10.66 + 6.19 = 16.85$. All $E \geq 5$.
+Merge $\geq 4$: $O = 18$, $E = 10.66 + 6.19 = 16.85$. All $E \geq 5$.
 
 $\chi^2 = \dfrac{(12-16.55)^2}{16.55} + \dfrac{(30-32.81)^2}{32.81} + \dfrac{(35-32.53)^2}{32.53} + \dfrac{(25-21.50)^2}{21.50} + \dfrac{(18-16.85)^2}{16.85}$
 
@@ -786,16 +786,16 @@ Expected: $E_{ij} = (\mathrm{row } i \mathrm{ total})(\mathrm{column } j \mathrm
 
 $E_{44} = 50 \times 85/400 = 10.625$. All $E \geq 5$. $\checkmark$
 
-$E_{11} = 100(115)/400 = 28.75$$E_{12} = 27.5$$E_{13} = 22.5$$E_{14} = 21.25$.
-$E_{21} = 125(115)/400 = 35.9375$$E_{22} = 34.375$$E_{23} = 28.125$$E_{24} = 26.5625$.
-$E_{31} = 125(115)/400 = 35.9375$$E_{32} = 34.375$$E_{33} = 28.125$$E_{34} = 26.5625$.
-$E_{41} = 50(115)/400 = 14.375$$E_{42} = 13.75$$E_{43} = 11.25$$E_{44} = 10.625$.
+$E_{11} = 100(115)/400 = 28.75$, $E_{12} = 27.5$, $E_{13} = 22.5$, $E_{14} = 21.25$.
+$E_{21} = 125(115)/400 = 35.9375$, $E_{22} = 34.375$, $E_{23} = 28.125$, $E_{24} = 26.5625$.
+$E_{31} = 125(115)/400 = 35.9375$, $E_{32} = 34.375$, $E_{33} = 28.125$, $E_{34} = 26.5625$.
+$E_{41} = 50(115)/400 = 14.375$, $E_{42} = 13.75$, $E_{43} = 11.25$, $E_{44} = 10.625$.
 
 $$\chi^2 = \sum_{i=1}^{4}\sum_{j=1}^{4}\frac{(O_{ij} - E_{ij})^2}{E_{ij}}$$
 
 Key contributions: $\dfrac{(20-28.75)^2}{28.75} \approx 2.66$
-$\dfrac{(45-21.25)^2}{21.25} \approx 26.53$$\dfrac{(10-26.5625)^2}{26.5625} \approx 10.33$
-$\dfrac{(45-35.9375)^2}{35.9375} \approx 2.28$$\dfrac{(40-28.125)^2}{28.125} \approx 5.01$
+$\dfrac{(45-21.25)^2}{21.25} \approx 26.53$, $\dfrac{(10-26.5625)^2}{26.5625} \approx 10.33$
+$\dfrac{(45-35.9375)^2}{35.9375} \approx 2.28$, $\dfrac{(40-28.125)^2}{28.125} \approx 5.01$
 $\dfrac{(10-26.5625)^2}{26.5625} \approx 10.33$.
 
 $\chi^2 \approx 2.66 + 0.91 + 0.69 + 26.53 + 1.04 + 1.03 + 0.39 + 0.54 + 2.28 + 2.23 + 0.60 + 1.26 + 10.33 \approx 48.5$.
@@ -827,7 +827,7 @@ Df, but the merged categories also tend to reduce the test statistic.
 
 Row totals: 50, 50. Column totals: 40, 60. Grand total: 100.
 
-Expected: $E_{11} = 50(40)/100 = 20$$E_{12} = 30$$E_{21} = 20$$E_{22} = 30$.
+Expected: $E_{11} = 50(40)/100 = 20$, $E_{12} = 30$, $E_{21} = 20$, $E_{22} = 30$.
 
 Uncorrected:
 
@@ -908,8 +908,8 @@ Total: 300.
 
 Expected values: $E_{ij} = \dfrac◆LB◆R_i \times C_j◆RB◆◆LB◆300◆RB◆$.
 
-$E_{11} = \dfrac◆LB◆70 \times 80◆RB◆◆LB◆300◆RB◆ = 18.67$$E_{12} = 28$$E_{13} = 23.33$
-$E_{21} = 29.33$$E_{22} = 44$$E_{23} = 36.67$$E_{31} = 32$$E_{32} = 48$$E_{33} = 40$.
+$E_{11} = \dfrac◆LB◆70 \times 80◆RB◆◆LB◆300◆RB◆ = 18.67$, $E_{12} = 28$, $E_{13} = 23.33$
+$E_{21} = 29.33$, $E_{22} = 44$, $E_{23} = 36.67$, $E_{31} = 32$, $E_{32} = 48$, $E_{33} = 40$.
 
 $$\chi^2 = \frac{(40-18.67)^2}{18.67} + \frac{(20-28)^2}{28} + \frac{(10-23.33)^2}{23.33} + \frac{(30-29.33)^2}{29.33} + \frac{(60-44)^2}{44} + \frac{(20-36.67)^2}{36.67} + \frac{(10-32)^2}{32} + \frac{(40-48)^2}{48} + \frac{(70-40)^2}{40}$$
 
@@ -936,7 +936,7 @@ With Yates' correction:
 
 $$\chi^2 = \sum \frac◆LB◆(|O_i - E_i| - 0.5)^2◆RB◆◆LB◆E_i◆RB◆$$
 
-$E_{11} = E_{12} = 47.5$$E_{21} = E_{22} = 47.5$.
+$E_{11} = E_{12} = 47.5$, $E_{21} = E_{22} = 47.5$.
 
 $$\chi^2 = \frac◆LB◆(|40-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆ + \frac◆LB◆(|60-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆ + \frac◆LB◆(|55-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆ + \frac◆LB◆(|45-47.5|-0.5)^2◆RB◆◆LB◆47.5◆RB◆$$
 
@@ -978,8 +978,8 @@ For $\mathrm{Geo}(p)$: $E(X) = \dfrac{1-p}{p} = 0.98 \implies p = \dfrac{1}{1.98
 
 Expected: $P(X=k) = p(1-p)^k = 0.505 \times 0.495^k$.
 
-$E_0 = 200 \times 0.505 = 101$$E_1 = 200 \times 0.250 = 50$$E_2 = 200 \times 0.124 = 24.8$
-$E_3 = 200 \times 0.061 = 12.3$$E_{\geq 4} = 200 - 101 - 50 - 24.8 - 12.3 = 11.9$.
+$E_0 = 200 \times 0.505 = 101$, $E_1 = 200 \times 0.250 = 50$, $E_2 = 200 \times 0.124 = 24.8$
+$E_3 = 200 \times 0.061 = 12.3$, $E_{\geq 4} = 200 - 101 - 50 - 24.8 - 12.3 = 11.9$.
 
 All $E_i \geq 5$So no merging needed.
 
@@ -1015,7 +1015,7 @@ Observed table:
 | North | 180 | 120    |
 | South | 90  | 110    |
 
-Expected: $E_{11} = \dfrac◆LB◆270 \times 300◆RB◆◆LB◆500◆RB◆ = 162$$E_{12} = 138$$E_{21} = 108$
+Expected: $E_{11} = \dfrac◆LB◆270 \times 300◆RB◆◆LB◆500◆RB◆ = 162$, $E_{12} = 138$, $E_{21} = 108$
 $E_{22} = 92$.
 
 $$\chi^2 = \frac{324}{162} + \frac{324}{138} + \frac{324}{108} + \frac{324}{92} \approx 2.00 + 2.35 + 3.00 + 3.52 = 10.87$$
@@ -1116,7 +1116,7 @@ Hypothesis testing relies on understanding significance levels, $p$-values, and 
 
 | Test Type         | Degrees of Freedom | Conditions                                 |
 | ----------------- | ------------------ | ------------------------------------------ |
-| Goodness-of-fit   | $\nu = k - 1 - m$  | All $E_i \geq 5$$m$ = estimated parameters |
+| Goodness-of-fit   | $\nu = k - 1 - m$  | All $E_i \geq 5$, $m$ = estimated parameters |
 | Independence      | $\nu = (r-1)(c-1)$ | All $E_i \geq 5$                           |
 | Yates' correction | $\nu = 1$          | Only for 2×2 tables                        |
 
@@ -1308,7 +1308,7 @@ The approximate $p$-value.
 
 $\nu = 8 - 1 - 1 = 6$.
 
-From chi-squared tables: $\chi^2_{6,0.05} = 12.59$$\chi^2_{6,0.10} = 10.64$.
+From chi-squared tables: $\chi^2_{6,0.05} = 12.59$, $\chi^2_{6,0.10} = 10.64$.
 
 $10.64 < 11.3 < 12.59$So $0.05 < p < 0.10$.
 

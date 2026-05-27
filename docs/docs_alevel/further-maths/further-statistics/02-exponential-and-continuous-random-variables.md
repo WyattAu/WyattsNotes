@@ -58,7 +58,7 @@ $$F(x) = P(X \leq x) = \int_{-\infty}^{x}f(t)\,dt$$
 
 Properties:
 
-- $F(-\infty) = 0$$F(\infty) = 1$
+- $F(-\infty) = 0$, $F(\infty) = 1$
 - $F$ is non-decreasing
 - $f(x) = F'(x)$ where $F$ is differentiable
 - $P(a < X \leq b) = F(b) - F(a)$
@@ -123,9 +123,9 @@ E(X) &= \int_0^{\infty}x\cdot\lambda e^{-\lambda x}\,dx
 \end{aligned}
 $$
 
-Using integration by parts with $u = x$$dv = \lambda e^{-\lambda x}\,dx$:
+Using integration by parts with $u = x$, $dv = \lambda e^{-\lambda x}\,dx$:
 
-$du = dx$$v = -e^{-\lambda x}$.
+$du = dx$, $v = -e^{-\lambda x}$.
 
 $$
 \begin{aligned}
@@ -145,9 +145,9 @@ First compute $E(X^2)$:
 
 $$E(X^2) = \int_0^{\infty}x^2\cdot\lambda e^{-\lambda x}\,dx$$
 
-Integration by parts twice with $u = x^2$$dv = \lambda e^{-\lambda x}\,dx$:
+Integration by parts twice with $u = x^2$, $dv = \lambda e^{-\lambda x}\,dx$:
 
-$du = 2x\,dx$$v = -e^{-\lambda x}$.
+$du = 2x\,dx$, $v = -e^{-\lambda x}$.
 
 $$
 \begin{aligned}
@@ -211,7 +211,7 @@ $x_{0.5} = -\dfrac◆LB◆\ln(0.5)◆RB◆◆LB◆\lambda◆RB◆ = \dfrac◆LB�
 
 ### 3.1 Finding probabilities
 
-**Example.** $X \sim \mathrm{Exp}(0.5)$. Find $P(X > 3)$$P(1 < X < 4)$And the median.
+**Example.** $X \sim \mathrm{Exp}(0.5)$. Find $P(X > 3)$, $P(1 < X < 4)$And the median.
 
 $P(X > 3) = e^{-0.5 \times 3} = e^{-1.5} \approx 0.2231$.
 
@@ -266,7 +266,7 @@ $|z| = 3.48 > 1.96$So reject $H_0$.
 
 <details>
 <summary>Problem 1</summary>
-$X \sim \mathrm{Exp}(2)$. Find $P(X > 1)$$P(0.5 < X < 2)$And the 90th percentile.
+$X \sim \mathrm{Exp}(2)$. Find $P(X > 1)$, $P(0.5 < X < 2)$And the 90th percentile.
 </details>
 
 <details>
@@ -284,7 +284,7 @@ $F(x) = 0.9 \implies 1 - e^{-2x} = 0.9 \implies x = -\dfrac◆LB◆\ln(0.1)◆RB
 
 <details>
 <summary>Problem 2</summary>
-A continuous random variable $X$ has PDF $f(x) = \dfrac{3x^2}{8}$ for $0 \leq x \leq 2$. Find $E(X)$$\mathrm{Var}(X)$And the median.
+A continuous random variable $X$ has PDF $f(x) = \dfrac{3x^2}{8}$ for $0 \leq x \leq 2$. Find $E(X)$, $\mathrm{Var}(X)$And the median.
 </details>
 
 <details>
@@ -342,7 +342,7 @@ $X$ has PDF $f(x) = \dfrac{1}{2}x$ for $0 \leq x \leq 2$. Find the CDF, $E(X)$An
 
 <details>
 <summary>Solution 5</summary>
-CDF: $F(x) = \int_0^x \dfrac{t}{2}\,dt = \dfrac{x^2}{4}$ for $0 \leq x \leq 2$. $F(x) = 0$ for $x < 0$$F(x) = 1$ for $x > 2$.
+CDF: $F(x) = \int_0^x \dfrac{t}{2}\,dt = \dfrac{x^2}{4}$ for $0 \leq x \leq 2$. $F(x) = 0$ for $x < 0$, $F(x) = 1$ for $x > 2$.
 
 $E(X) = \int_0^2 x\cdot\dfrac{x}{2}\,dx = \dfrac{1}{2}\left[\dfrac{x^3}{3}\right]_0^2 = \dfrac{4}{3}$.
 
@@ -396,7 +396,7 @@ Prove that $E(X) = 1/\lambda$ for $X \sim \mathrm{Exp}(\lambda)$Using integratio
 <summary>Solution 8</summary>
 $E(X) = \int_0^{\infty}x\lambda e^{-\lambda x}\,dx$.
 
-Let $u = x$$dv = \lambda e^{-\lambda x}\,dx$So $du = dx$$v = -e^{-\lambda x}$.
+Let $u = x$, $dv = \lambda e^{-\lambda x}\,dx$So $du = dx$, $v = -e^{-\lambda x}$.
 
 $E(X) = \left[-xe^{-\lambda x}\right]_0^{\infty} + \int_0^{\infty}e^{-\lambda x}\,dx = 0 + \left[-\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆e^{-\lambda x}\right]_0^{\infty} = \dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$.
 $\blacksquare$
@@ -426,7 +426,7 @@ Section 2.6.
 
 <details>
 <summary>Problem 10</summary>
-$X$ has PDF $f(x) = 4x^3$ for $0 \leq x \leq 1$. Find $P(X > 0.5)$$E(X)$$\mathrm{Var}(X)$And the mode.
+$X$ has PDF $f(x) = 4x^3$ for $0 \leq x \leq 1$. Find $P(X > 0.5)$, $E(X)$, $\mathrm{Var}(X)$And the mode.
 </details>
 
 <details>
@@ -669,7 +669,7 @@ $F(x) = 0.8 \implies 1 - e^{-0.602x} = 0.8 \implies e^{-0.602x} = 0.2 \implies x
 </details>
 
 <details>
-<summary>Q2. A continuous random variable $X$ has PDF $f(x) = kx(4-x)$ for $0 \leq x \leq 4$. Find $k$$E(X)$$\mathrm{Var}(X)$And the median.</summary>
+<summary>Q2. A continuous random variable $X$ has PDF $f(x) = kx(4-x)$ for $0 \leq x \leq 4$. Find $k$, $E(X)$, $\mathrm{Var}(X)$And the median.</summary>
 
 $\int_0^4 kx(4-x)\,dx = k\int_0^4 (4x - x^2)\,dx = k\left[2x^2 - \dfrac{x^3}{3}\right]_0^4 = k(32 - 64/3) = k(32/3) = 1 \implies k = 3/32$.
 
@@ -735,10 +735,10 @@ Of the individual rates.
 </details>
 
 <details>
-<summary>Q6. A random variable $X$ has PDF $f(x) = \dfrac{2x}{9}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$$\mathrm{Var}(X)$The median, and $P(1 \lt X \lt 2)$.</summary>
+<summary>Q6. A random variable $X$ has PDF $f(x) = \dfrac{2x}{9}$ for $0 \leq x \leq 3$. Find the CDF, $E(X)$, $\mathrm{Var}(X)$The median, and $P(1 \lt X \lt 2)$.</summary>
 
 CDF: $F(x) = \int_0^x \dfrac{2t}{9}\,dt = \dfrac{x^2}{9}$ for $0 \leq x \leq 3$. $F(x) = 0$ for
-$x \lt 0$$F(x) = 1$ for $x > 3$.
+$x \lt 0$, $F(x) = 1$ for $x > 3$.
 
 $E(X) = \int_0^3 x \cdot \dfrac{2x}{9}\,dx = \dfrac{2}{9}\left[\dfrac{x^3}{3}\right]_0^3 = \dfrac{2}{9} \times 9 = 2$.
 
@@ -815,7 +815,7 @@ $P(1 < X < 3) = F(3) - F(1) = \left(\dfrac{27}{16} - \dfrac{27}{32}\right) - \le
 **Problem.** $X_1, X_2, \ldots, X_{50}$ are independent, each following $\mathrm{Exp}(0.1)$.
 Approximate $P(\overline{X} > 12)$.
 
-**Solution.** $E(X_i) = 10$$\mathrm{Var}(X_i) = 100$. $E(\overline{X}) = 10$
+**Solution.** $E(X_i) = 10$, $\mathrm{Var}(X_i) = 100$. $E(\overline{X}) = 10$
 $\mathrm{Var}(\overline{X}) = \dfrac{100}{50} = 2$.
 
 By the CLT, $\overline{X} \approx N(10, 2)$ approximately.
@@ -915,7 +915,7 @@ $P(T > 0.75) = e^{-4 \times 0.75} = e^{-3} \approx \boxed{0.0498}$.
 ### Question 9
 
 $X$ is a continuous random variable with PDF $f(x) = \dfrac{3}{4}(2x - x^2)$ for $0 \leq x \leq 2$.
-Find $E(X)$$\mathrm{Var}(X)$And the median.
+Find $E(X)$, $\mathrm{Var}(X)$And the median.
 
 <details>
 <summary>Solution</summary>
@@ -971,8 +971,8 @@ Distribution. See
 
 | Distribution            | PDF                                | $E(X)$                           | $\mathrm{Var}(X)$                  |
 | ----------------------- | ---------------------------------- | -------------------------------- | ---------------------------------- |
-| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$$x \geq 0$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆$ |
-| $\mathrm{U}(a,b)$       | $\dfrac{1}{b-a}$$a \leq x \leq b$  | $\dfrac{a+b}{2}$                 | $\dfrac{(b-a)^2}{12}$              |
+| $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆$ |
+| $\mathrm{U}(a,b)$       | $\dfrac{1}{b-a}$, $a \leq x \leq b$  | $\dfrac{a+b}{2}$                 | $\dfrac{(b-a)^2}{12}$              |
 
 | Property   | Exponential                          | Uniform            |
 | ---------- | ------------------------------------ | ------------------ |
@@ -1006,7 +1006,7 @@ $e^{-0.002m} = 0.5 \implies m = \dfrac◆LB◆\ln 2◆RB◆◆LB◆0.002◆RB◆
 
 ### Question 12
 
-**Prove that** for $X \sim \mathrm{U}(a,b)$$\mathrm{Var}(X) = \dfrac{(b-a)^2}{12}$.
+**Prove that** for $X \sim \mathrm{U}(a,b)$, $\mathrm{Var}(X) = \dfrac{(b-a)^2}{12}$.
 
 <details>
 <summary>Solution</summary>

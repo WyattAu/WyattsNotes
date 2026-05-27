@@ -74,9 +74,9 @@ Where $u$ = initial velocity, $v$ = final velocity, $s$ = displacement, $t$ = ti
 
 ### Choosing the Right Equation
 
-Each equation relates a different subset of the five variables ($u$$v$$a$$s$$t$). The Variable that
-does _not_ appear tells you when to use that equation. If you know $u$$a$And $s$ And need $v$Use
-$v^2 = u^2 + 2as$ (it does not contain $t$). If you know $u$$v$And $t$ and Need $s$Use
+Each equation relates a different subset of the five variables ($u$, $v$, $a$, $s$, $t$). The Variable that
+does _not_ appear tells you when to use that equation. If you know $u$, $a$And $s$ And need $v$Use
+$v^2 = u^2 + 2as$ (it does not contain $t$). If you know $u$, $v$And $t$ and Need $s$Use
 $s = \frac{1}{2}(u+v)t$ (it does not contain $a$).
 
 **Example:** A car accelerates uniformly from $10 \mathrm{ m/s$ to $30 \mathrm{ m/s$ over a distance
@@ -524,19 +524,19 @@ The ball to just complete the circle, we need $v_t = \sqrt{gL} = \sqrt{11.76} = 
 
 | Topic             | Formula                    | Variables               | Conditions              |
 | ----------------- | -------------------------- | ----------------------- | ----------------------- |
-| Kinematics        | $v = u + at$               | $u$$v$$a$$t$            | Constant acceleration   |
-| Kinematics        | $v^2 = u^2 + 2as$          | $u$$v$$a$$s$            | Constant acceleration   |
-| Projectile range  | $R = u^2\sin 2\theta / g$  | $u$$\theta$$g$          | Launch = landing height |
-| Newton's 2nd law  | $F = ma$                   | $F$$m$$a$               | Vector equation         |
-| Weight            | $W = mg$                   | $m$$g$                  | Near surface            |
-| Friction          | $f = \mu N$                | $\mu$$N$                | Sliding                 |
-| Work              | $W = Fs\cos\theta$         | $F$$s$$\theta$          | Constant force          |
-| Kinetic energy    | $E_k = \frac{1}{2}mv^2$    | $m$$v$                  | Always positive         |
-| Potential energy  | $E_p = mgh$                | $m$$g$$h$               | Near surface            |
-| Power             | $P = Fv$                   | $F$$v$                  | Constant velocity       |
-| Momentum          | $p = mv$                   | $m$$v$                  | Vector                  |
-| Impulse           | $J = F\Delta t = \Delta p$ | $F$$\Delta t$$\Delta p$ | --                      |
-| Centripetal force | $F = mv^2/r$               | $m$$v$$r$               | Uniform circular motion |
+| Kinematics        | $v = u + at$               | $u$, $v$, $a$, $t$            | Constant acceleration   |
+| Kinematics        | $v^2 = u^2 + 2as$          | $u$, $v$, $a$, $s$            | Constant acceleration   |
+| Projectile range  | $R = u^2\sin 2\theta / g$  | $u$, $\theta$, $g$          | Launch = landing height |
+| Newton's 2nd law  | $F = ma$                   | $F$, $m$, $a$               | Vector equation         |
+| Weight            | $W = mg$                   | $m$, $g$                  | Near surface            |
+| Friction          | $f = \mu N$                | $\mu$, $N$                | Sliding                 |
+| Work              | $W = Fs\cos\theta$         | $F$, $s$, $\theta$          | Constant force          |
+| Kinetic energy    | $E_k = \frac{1}{2}mv^2$    | $m$, $v$                  | Always positive         |
+| Potential energy  | $E_p = mgh$                | $m$, $g$, $h$               | Near surface            |
+| Power             | $P = Fv$                   | $F$, $v$                  | Constant velocity       |
+| Momentum          | $p = mv$                   | $m$, $v$                  | Vector                  |
+| Impulse           | $J = F\Delta t = \Delta p$ | $F$, $\Delta t$, $\Delta p$ | --                      |
+| Centripetal force | $F = mv^2/r$               | $m$, $v$, $r$               | Uniform circular motion |
 
 ## 16. Practice Questions (Additional)
 
@@ -687,7 +687,7 @@ The system remains stationary. :::
 
 ### Pitfall 6: Using Kinematic Equations for Non-Constant Acceleration
 
-The standard kinematic equations ($v = u + at$$s = ut + \frac{1}{2}at^2$Etc.) assume _constant_
+The standard kinematic equations ($v = u + at$, $s = ut + \frac{1}{2}at^2$Etc.) assume _constant_
 Acceleration. For variable acceleration, you must use calculus:
 
 $$a = \frac{dv}{dt}, \quad v = \frac{ds}{dt}, \quad a = v\frac{dv}{ds}$$

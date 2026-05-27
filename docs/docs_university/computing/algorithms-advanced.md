@@ -103,15 +103,15 @@ $O(VE^2)$. $\blacksquare$
 Find the maximum flow from $s$ to $t$ in the following network:
 
 Edges with capacities:
-$s \xrightarrow◆LB◆10◆RB◆ a$$s \xrightarrow◆LB◆8◆RB◆ b$$a \xrightarrow◆LB◆5◆RB◆ b$$a \xrightarrow◆LB◆7◆RB◆ c$$a \xrightarrow◆LB◆8◆RB◆ t$$b \xrightarrow◆LB◆10◆RB◆ c$$b \xrightarrow◆LB◆4◆RB◆ t$$c \xrightarrow◆LB◆6◆RB◆ t$.
+$s \xrightarrow◆LB◆10◆RB◆ a$, $s \xrightarrow◆LB◆8◆RB◆ b$, $a \xrightarrow◆LB◆5◆RB◆ b$, $a \xrightarrow◆LB◆7◆RB◆ c$, $a \xrightarrow◆LB◆8◆RB◆ t$, $b \xrightarrow◆LB◆10◆RB◆ c$, $b \xrightarrow◆LB◆4◆RB◆ t$, $c \xrightarrow◆LB◆6◆RB◆ t$.
 
 _Iteration 1:_ BFS finds $s \to a \to t$. Bottleneck = 8. Push 8. Residual:
-$s \xrightarrow◆LB◆2◆RB◆ a$$a \xrightarrow◆LB◆8◆RB◆ t$ becomes $a \xrightarrow◆LB◆0◆RB◆ t$ (saturated). Reverse
+$s \xrightarrow◆LB◆2◆RB◆ a$, $a \xrightarrow◆LB◆8◆RB◆ t$ becomes $a \xrightarrow◆LB◆0◆RB◆ t$ (saturated). Reverse
 $t \xrightarrow◆LB◆8◆RB◆ a$. Flow: $|f| = 8$.
 
 _Iteration 2:_ BFS finds $s \to a \to c \to t$. Bottleneck = $\min(2, 7, 6) = 2$. Push 2. Residual:
-$s \xrightarrow◆LB◆0◆RB◆ a$ (saturated), $a \xrightarrow◆LB◆5◆RB◆ c$$c \xrightarrow◆LB◆4◆RB◆ t$. Reverse edges:
-$c \xrightarrow◆LB◆2◆RB◆ a$$t \xrightarrow◆LB◆2◆RB◆ c$. Flow: $|f| = 10$.
+$s \xrightarrow◆LB◆0◆RB◆ a$ (saturated), $a \xrightarrow◆LB◆5◆RB◆ c$, $c \xrightarrow◆LB◆4◆RB◆ t$. Reverse edges:
+$c \xrightarrow◆LB◆2◆RB◆ a$, $t \xrightarrow◆LB◆2◆RB◆ c$. Flow: $|f| = 10$.
 
 _Iteration 3:_ BFS from $s$: $s \xrightarrow◆LB◆8◆RB◆ b$. From $b$: $b \xrightarrow◆LB◆5◆RB◆ a$ (reverse,
 residual 5 from $a \xrightarrow◆LB◆5◆RB◆ b$... Wait, let me track the residual graph more carefully).
@@ -125,23 +125,23 @@ $a \to b$ (5), $a \to c$ (7), $a \to t$ (8), $b \to c$ (10), $b \to t$ (4), $c \
 
 **Augmentation 1:** BFS shortest path: $s \to a \to t$. Residual capacity = $\min(10, 8) = 8$.
 
-Flow after: $f(s,a) = 8$$f(a,t) = 8$. Residual: $s \xrightarrow◆LB◆2◆RB◆ a$$a \xrightarrow◆LB◆8◆RB◆ t$ (0,
-saturated). Reverse: $a \xrightarrow◆LB◆8◆RB◆ s$$t \xrightarrow◆LB◆8◆RB◆ a$.
+Flow after: $f(s,a) = 8$, $f(a,t) = 8$. Residual: $s \xrightarrow◆LB◆2◆RB◆ a$, $a \xrightarrow◆LB◆8◆RB◆ t$ (0,
+saturated). Reverse: $a \xrightarrow◆LB◆8◆RB◆ s$, $t \xrightarrow◆LB◆8◆RB◆ a$.
 
 **Augmentation 2:** BFS: $s \to b \to t$. Residual = $\min(8, 4) = 4$.
 
-Flow after: $f(s,b) = 4$$f(b,t) = 4$. Residual: $s \xrightarrow◆LB◆4◆RB◆ b$$b \xrightarrow◆LB◆0◆RB◆ t$. Reverse:
-$b \xrightarrow◆LB◆4◆RB◆ s$$t \xrightarrow◆LB◆4◆RB◆ b$.
+Flow after: $f(s,b) = 4$, $f(b,t) = 4$. Residual: $s \xrightarrow◆LB◆4◆RB◆ b$, $b \xrightarrow◆LB◆0◆RB◆ t$. Reverse:
+$b \xrightarrow◆LB◆4◆RB◆ s$, $t \xrightarrow◆LB◆4◆RB◆ b$.
 
 **Augmentation 3:** BFS: $s \to b \to c \to t$. Residual = $\min(4, 10, 6) = 4$.
 
-Flow: $f(s,b) = 8$$f(b,c) = 4$$f(c,t) = 4$. Residual: $s \xrightarrow◆LB◆0◆RB◆ b$.
-$b \xrightarrow◆LB◆6◆RB◆ c$$c \xrightarrow◆LB◆2◆RB◆ t$. Reverse: $c \xrightarrow◆LB◆4◆RB◆ b$$t \xrightarrow◆LB◆4◆RB◆ c$.
+Flow: $f(s,b) = 8$, $f(b,c) = 4$, $f(c,t) = 4$. Residual: $s \xrightarrow◆LB◆0◆RB◆ b$.
+$b \xrightarrow◆LB◆6◆RB◆ c$, $c \xrightarrow◆LB◆2◆RB◆ t$. Reverse: $c \xrightarrow◆LB◆4◆RB◆ b$, $t \xrightarrow◆LB◆4◆RB◆ c$.
 
 **Augmentation 4:** BFS: $s \to a \to b \to c \to t$. Residual = $\min(2, 5, 6, 2) = 2$.
 
-Flow: $f(s,a) = 10$$f(a,b) = 2$$f(b,c) = 6$$f(c,t) = 6$. Residual: $s \xrightarrow◆LB◆0◆RB◆ a$.
-$a \xrightarrow◆LB◆3◆RB◆ b$$a \xrightarrow◆LB◆7◆RB◆ c$. $b \xrightarrow◆LB◆4◆RB◆ c$. $c \xrightarrow◆LB◆0◆RB◆ t$.
+Flow: $f(s,a) = 10$, $f(a,b) = 2$, $f(b,c) = 6$, $f(c,t) = 6$. Residual: $s \xrightarrow◆LB◆0◆RB◆ a$.
+$a \xrightarrow◆LB◆3◆RB◆ b$, $a \xrightarrow◆LB◆7◆RB◆ c$. $b \xrightarrow◆LB◆4◆RB◆ c$. $c \xrightarrow◆LB◆0◆RB◆ t$.
 
 **Augmentation 5:** BFS from $s$: $s$ has no outgoing edges with residual capacity. Wait, $s \to a$
 has 0 residual, $s \to b$ has 0 residual. But we have reverse edges!
@@ -157,7 +157,7 @@ So there is no augmenting path. The algorithm terminates.
 
 **Maximum flow value:** $|f| = f(s,a) + f(s,b) = 10 + 8 = 18$.
 
-**Verify with min-cut:** The set $S = \{s\}$$T = V \setminus S$. Cut capacity =
+**Verify with min-cut:** The set $S = \{s\}$, $T = V \setminus S$. Cut capacity =
 $c(s,a) + c(s,b) = 10 + 8 = 18$. Since the flow equals the cut, it is maximum.
 
 But wait, let me verify the flow conservation at each node:
@@ -173,7 +173,7 @@ Maximum flow = 18.
 ### 1.4 Applications of Maximum Flow
 
 **Bipartite matching.** Given a bipartite graph with partitions $L$ and $R$Create a flow network:
-source $s$ connected to all $u \in L$ with capacity 1, all edges $(u, v)$ with $u \in L$$v \in R$
+source $s$ connected to all $u \in L$ with capacity 1, all edges $(u, v)$ with $u \in L$, $v \in R$
 have capacity 1, all $v \in R$ connected to sink $t$ with capacity 1. Maximum flow = maximum
 matching.
 
@@ -222,7 +222,7 @@ maximum cost.
 
 Network with costs (shown as capacity/cost):
 
-$s \xrightarrow◆LB◆3/2◆RB◆ a$$s \xrightarrow◆LB◆2/3◆RB◆ b$$a \xrightarrow◆LB◆2/1◆RB◆ b$$a \xrightarrow◆LB◆3/4◆RB◆ t$$b \xrightarrow◆LB◆1/2◆RB◆ t$$b \xrightarrow◆LB◆2/1◆RB◆ t$.
+$s \xrightarrow◆LB◆3/2◆RB◆ a$, $s \xrightarrow◆LB◆2/3◆RB◆ b$, $a \xrightarrow◆LB◆2/1◆RB◆ b$, $a \xrightarrow◆LB◆3/4◆RB◆ t$, $b \xrightarrow◆LB◆1/2◆RB◆ t$, $b \xrightarrow◆LB◆2/1◆RB◆ t$.
 
 Find minimum cost flow of value 4.
 
@@ -246,7 +246,7 @@ $\min(1, 3) = 1$. Push 1. Cost: $13 + 6 = 19$.
 
 Total flow = $2 + 1 + 1 = 4$. Total cost = 19.
 
-Flow assignment: $f(s,a) = 3$$f(s,b) = 1$$f(a,b) = 2$$f(a,t) = 1$$f(b,t) = 3$ (1 on first edge, 2 on
+Flow assignment: $f(s,a) = 3$, $f(s,b) = 1$, $f(a,b) = 2$, $f(a,t) = 1$, $f(b,t) = 3$ (1 on first edge, 2 on
 second).
 
 Verify: inflow at $s$ = $3 + 1 = 4$ = outflow at $t$ = $1 + 3 = 4$. ✓ Node $a$: inflow = 3, outflow
@@ -349,8 +349,8 @@ computed in $O(n^2)$ time by restricting the search range for the root.
 <details>
 <summary>Worked Example: Optimal BST</summary>
 
-Keys: $k_1 = 1$$k_2 = 2$$k_3 = 3$. Probabilities: $p_1 = 0.3$$p_2 = 0.2$$p_3 = 0.1$. Dummy
-probabilities: $q_0 = 0.1$$q_1 = 0.1$$q_2 = 0.1$$q_3 = 0.1$.
+Keys: $k_1 = 1$, $k_2 = 2$, $k_3 = 3$. Probabilities: $p_1 = 0.3$, $p_2 = 0.2$, $p_3 = 0.1$. Dummy
+probabilities: $q_0 = 0.1$, $q_1 = 0.1$, $q_2 = 0.1$, $q_3 = 0.1$.
 
 Compute $w(i, j)$:
 
@@ -398,7 +398,7 @@ $$dp[S][i] = \text◆LB◆minimum cost to visit all cities in  S \text◆LB◆ s
 
 $$dp[S][i] = \min_◆LB◆j \in S, j \neq i◆RB◆ \{dp[S \setminus \{i\}][j] + \text◆LB◆dist(j, i)\}$$
 
-**Base case:** $dp[\{0\}][0] = 0$$dp[S][i] = \infty$ for $i \notin S$.
+**Base case:** $dp[\{0\}][0] = 0$, $dp[S][i] = \infty$ for $i \notin S$.
 
 **Answer:** $\min_i \{dp[\{0, 1, \ldots, n-1\}][i] + \text◆LB◆dist(i, 0)\}$.
 
@@ -492,20 +492,20 @@ Pattern: $P = \text◆LB◆ababaca$Text: $T = \text◆LB◆abababaca$.
 Compute prefix function:
 
 - $\pi[0] = 0$ ("a", no proper prefix = suffix)
-- $\pi[1]$: $P[1] = \text◆LB◆b$$P[0] = \text◆LB◆a$. No match. $\pi[1] = 0$.
-- $\pi[2]$: $P[2] = \text◆LB◆a$$P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[2] = 1$.
-- $\pi[3]$: $P[3] = \text◆LB◆b$$P[1] = \text◆LB◆b$. Match! $k = 2$. $\pi[3] = 2$.
-- $\pi[4]$: $P[4] = \text◆LB◆a$$P[2] = \text◆LB◆a$. Match! $k = 3$. $\pi[4] = 3$.
-- $\pi[5]$: $P[5] = \text◆LB◆c$$P[3] = \text◆LB◆b$. No match. $k = \pi[2] = 1$.
+- $\pi[1]$: $P[1] = \text◆LB◆b$, $P[0] = \text◆LB◆a$. No match. $\pi[1] = 0$.
+- $\pi[2]$: $P[2] = \text◆LB◆a$, $P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[2] = 1$.
+- $\pi[3]$: $P[3] = \text◆LB◆b$, $P[1] = \text◆LB◆b$. Match! $k = 2$. $\pi[3] = 2$.
+- $\pi[4]$: $P[4] = \text◆LB◆a$, $P[2] = \text◆LB◆a$. Match! $k = 3$. $\pi[4] = 3$.
+- $\pi[5]$: $P[5] = \text◆LB◆c$, $P[3] = \text◆LB◆b$. No match. $k = \pi[2] = 1$.
   $P[1] = \text◆LB◆b \neq \text◆LB◆c$. $k = \pi[0] = 0$. $P[0] = \text◆LB◆a \neq \text◆LB◆c$. $\pi[5] = 0$.
-- $\pi[6]$: $P[6] = \text◆LB◆a$$P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[6] = 1$.
+- $\pi[6]$: $P[6] = \text◆LB◆a$, $P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[6] = 1$.
 
 $\pi = [0, 0, 1, 2, 3, 0, 1]$.
 
-Search in $T = \text◆LB◆abababaca$: $i=0$: $T[0]=\text◆LB◆a=P[0]$$k=1$. $i=1$: $T[1]=\text◆LB◆b=P[1]$$k=2$.
-$i=2$: $T[2]=\text◆LB◆a=P[2]$$k=3$. $i=3$: $T[3]=\text◆LB◆b=P[3]$$k=4$. $i=4$: $T[4]=\text◆LB◆a=P[4]$$k=5$.
-$i=5$: $T[5]=\text◆LB◆b \neq P[5]=\text◆LB◆c$. $k=\pi[4]=3$. $P[3]=\text◆LB◆b=T[5]$$k=4$. $i=6$:
-$T[6]=\text◆LB◆a=P[4]$$k=5$. $i=7$: $T[7]=\text◆LB◆c=P[5]$$k=6$. $i=8$: $T[8]=\text◆LB◆a=P[6]$$k=7=m$. Match
+Search in $T = \text◆LB◆abababaca$: $i=0$: $T[0]=\text◆LB◆a=P[0]$, $k=1$. $i=1$: $T[1]=\text◆LB◆b=P[1]$, $k=2$.
+$i=2$: $T[2]=\text◆LB◆a=P[2]$, $k=3$. $i=3$: $T[3]=\text◆LB◆b=P[3]$, $k=4$. $i=4$: $T[4]=\text◆LB◆a=P[4]$, $k=5$.
+$i=5$: $T[5]=\text◆LB◆b \neq P[5]=\text◆LB◆c$. $k=\pi[4]=3$. $P[3]=\text◆LB◆b=T[5]$, $k=4$. $i=6$:
+$T[6]=\text◆LB◆a=P[4]$, $k=5$. $i=7$: $T[7]=\text◆LB◆c=P[5]$, $k=6$. $i=8$: $T[8]=\text◆LB◆a=P[6]$, $k=7=m$. Match
 at $8-7+1=2$.
 
 Pattern found at position 2.
@@ -764,9 +764,9 @@ amortised. Total: $O(V \log V + E)$. $\blacksquare$
 <summary>Worked Example: Prim's Algorithm Step by Step</summary>
 
 Graph with 5 vertices and weighted edges:
-$A \xrightarrow◆LB◆4◆RB◆ B$$A \xrightarrow◆LB◆1◆RB◆ C$$B \xrightarrow◆LB◆2◆RB◆ C$$B \xrightarrow◆LB◆5◆RB◆ D$$C \xrightarrow◆LB◆8◆RB◆ D$$C \xrightarrow◆LB◆7◆RB◆ E$$D \xrightarrow◆LB◆3◆RB◆ E$$A \xrightarrow◆LB◆6◆RB◆ E$.
+$A \xrightarrow◆LB◆4◆RB◆ B$, $A \xrightarrow◆LB◆1◆RB◆ C$, $B \xrightarrow◆LB◆2◆RB◆ C$, $B \xrightarrow◆LB◆5◆RB◆ D$, $C \xrightarrow◆LB◆8◆RB◆ D$, $C \xrightarrow◆LB◆7◆RB◆ E$, $D \xrightarrow◆LB◆3◆RB◆ E$, $A \xrightarrow◆LB◆6◆RB◆ E$.
 
-Start at vertex $A$. Key values: $A = 0$$B = \infty$$C = \infty$$D = \infty$$E = \infty$.
+Start at vertex $A$. Key values: $A = 0$, $B = \infty$, $C = \infty$, $D = \infty$, $E = \infty$.
 
 **Step 1:** Extract $A$ (key = 0). Update neighbours:
 
@@ -774,7 +774,7 @@ Start at vertex $A$. Key values: $A = 0$$B = \infty$$C = \infty$$D = \infty$$E =
 - $C$: $\min(\infty, 1) = 1$Parent = $A$.
 - $E$: $\min(\infty, 6) = 6$Parent = $A$.
 
-Keys: $B=4$$C=1$$D=\infty$$E=6$. MST edges: $\{(A,C)\}$.
+Keys: $B=4$, $C=1$, $D=\infty$, $E=6$. MST edges: $\{(A,C)\}$.
 
 **Step 2:** Extract $C$ (key = 1). Update neighbours:
 
@@ -782,13 +782,13 @@ Keys: $B=4$$C=1$$D=\infty$$E=6$. MST edges: $\{(A,C)\}$.
 - $D$: $\min(\infty, 8) = 8$Parent = $C$.
 - $E$: $\min(6, 7) = 6$Parent stays $A$.
 
-Keys: $B=2$$D=8$$E=6$. MST edges: $\{(A,C), (C,B)\}$.
+Keys: $B=2$, $D=8$, $E=6$. MST edges: $\{(A,C), (C,B)\}$.
 
 **Step 3:** Extract $B$ (key = 2). Update neighbours:
 
 - $D$: $\min(8, 5) = 5$Parent = $B$. (Update!)
 
-Keys: $D=5$$E=6$. MST edges: $\{(A,C), (C,B), (B,D)\}$.
+Keys: $D=5$, $E=6$. MST edges: $\{(A,C), (C,B), (B,D)\}$.
 
 **Step 4:** Extract $D$ (key = 5). Update neighbours:
 
@@ -892,7 +892,7 @@ DFS from $A$:
 - lowlink[$A$] = 0 = index[$A$] = 0. Root! Pop SCC: $C, B, A$.
 - SCC 3: $\{A, B, C\}$.
 
-SCCs: $\{A, B, C\}$$\{D, E, F\}$$\{G, H\}$.
+SCCs: $\{A, B, C\}$, $\{D, E, F\}$, $\{G, H\}$.
 
 </details>
 
@@ -967,7 +967,7 @@ most $n$ times, the total number of comparisons is $O(n)$. $\blacksquare$
 <details>
 <summary>Worked Example: Z-Algorithm</summary>
 
-String: $S = \text◆LB◆aabcaab$$n = 7$.
+String: $S = \text◆LB◆aabcaab$, $n = 7$.
 
 $Z[0]$ is undefined (the entire string matches itself).
 
@@ -980,8 +980,8 @@ immediately. $Z[2] = 0$. $r = 1$.
 $i = 3$: $i > r = 1$. Set $l = r = 3$. Compare: $S[0] = \text◆LB◆a \neq S[3] = \text◆LB◆c$Stop.
 $Z[3] = 0$. $r = 2$.
 
-$i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text◆LB◆a = S[4] = \text◆LB◆a$$r = 5$.
-$S[1] = \text◆LB◆a = S[5] = \text◆LB◆a$$r = 6$. $S[2] = \text◆LB◆b = S[6] = \text◆LB◆b$$r = 7$. $r = n = 7$Stop.
+$i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text◆LB◆a = S[4] = \text◆LB◆a$, $r = 5$.
+$S[1] = \text◆LB◆a = S[5] = \text◆LB◆a$, $r = 6$. $S[2] = \text◆LB◆b = S[6] = \text◆LB◆b$, $r = 7$. $r = n = 7$Stop.
 $Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
 
 $i = 5$: $i = 5 \leq r = 6$. $k = i - l = 5 - 4 = 1$. $Z[k] = Z[1] = 1$.
@@ -992,7 +992,7 @@ $Z[k] = 0 < r - i + 1 = 1$So $Z[6] = 0$.
 
 $Z = [\_, 1, 0, 0, 3, 1, 0]$.
 
-Pattern matching: To find pattern $P$ in text $T$, compute the Z-array of $P + \$$\ $ + T$ and look
+Pattern matching: To find pattern $P$ in text $T$, compute the Z-array of $P + \$, $\ $ + T$ and look
 for $Z$ values equal to $|P|$.
 
 </details>
@@ -1056,7 +1056,7 @@ _Proof._ 3-SAT is in NP. To show NP-hardness, reduce from SAT. Given a clause $C
 literals, introduce new variables $y_1, \ldots, y_{k-3}$ and replace
 $C = (l_1 \lor l_2 \lor \cdots \lor l_k)$ with:
 
-$$(l_1 \lor l_2 \lor y_1) \land (\neg y_1 \lor l_3 \lor y_2) \land (\neg y_2 \lor l_4 \lor y_3) \land \cdots \land (\neg y_◆LB◆k-3◆RB◆ \lor l_◆LB◆k-1◆RB◆ \lor l_k)$$
+$, $(l_1 \lor l_2 \lor y_1) \land (\neg y_1 \lor l_3 \lor y_2) \land (\neg y_2 \lor l_4 \lor y_3) \land \cdots \land (\neg y_◆LB◆k-3◆RB◆ \lor l_◆LB◆k-1◆RB◆ \lor l_k)$, $
 
 This is satisfiable iff the original clause is satisfiable. The reduction is polynomial.
 $\blacksquare$
@@ -1156,7 +1156,7 @@ Given a string $S$ of length $n$Find the length of the longest subsequence that 
 
 **Recurrence:**
 
-$$dp[i][j] = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if ◆LB◆◆RB◆ i = j \\ 2 + dp[i+1][j-1] & \text◆LB◆if ◆LB◆◆RB◆ S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text◆LB◆if ◆LB◆◆RB◆ S[i] \neq S[j] \end◆LB◆cases◆RB◆$$
+$, $dp[i][j] = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if ◆LB◆◆RB◆ i = j \\ 2 + dp[i+1][j-1] & \text◆LB◆if ◆LB◆◆RB◆ S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text◆LB◆if ◆LB◆◆RB◆ S[i] \neq S[j] \end◆LB◆cases◆RB◆$, $
 
 **Running time:** $O(n^2)$Space $O(n^2)$ (or $O(n)$ with optimisation).
 
@@ -1492,7 +1492,7 @@ assigned.
 
 **Problem 5.** Solve the TSP for 5 cities with the following distance matrix using bitmask DP:
 
-$$D = \begin◆LB◆pmatrix◆RB◆ 0 & 3 & 1 & 5 & 2 \\ 3 & 0 & 6 & 4 & 3 \\ 1 & 6 & 0 & 2 & 1 \\ 5 & 4 & 2 & 0 & 7 \\ 2 & 3 & 1 & 7 & 0 \end◆LB◆pmatrix◆RB◆$$
+$, $D = \begin◆LB◆pmatrix◆RB◆ 0 & 3 & 1 & 5 & 2 \\ 3 & 0 & 6 & 4 & 3 \\ 1 & 6 & 0 & 2 & 1 \\ 5 & 4 & 2 & 0 & 7 \\ 2 & 3 & 1 & 7 & 0 \end◆LB◆pmatrix◆RB◆$, $
 
 **Problem 6.** Given $n$ jobs with start times, finish times, and profits, find the maximum profit
 subset of non-overlapping jobs. Jobs: (1, 3, 50), (2, 5, 10), (4, 6, 40), (6, 9, 70), (5, 7, 30),

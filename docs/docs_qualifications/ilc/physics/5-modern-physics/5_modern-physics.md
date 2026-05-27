@@ -386,7 +386,7 @@ This is in the visible (red) region -- the H-alpha line of the Balmer series.
 **Example (HL):** An electron in a hydrogen atom is in the $n = 4$ state. Find all possible photon
 Energies emitted as the electron cascades to the ground state.
 
-Possible transitions: $4 \to 3$$4 \to 2$$4 \to 1$$3 \to 2$$3 \to 1$$2 \to 1$.
+Possible transitions: $4 \to 3$, $4 \to 2$, $4 \to 1$, $3 \to 2$, $3 \to 1$, $2 \to 1$.
 
 $$
 \Delta E_{4\to3} = 13.6\left(\frac{1}{9} - \frac{1}{16}\right) = 13.6 \times \frac{7}{144} = 0.661\mathrm{ eV
@@ -599,7 +599,7 @@ Nuclei with lower $A$ can gain stability by fusing (moving right on the curve), 
 Higher $A$ can gain stability by fissioning (moving left).
 
 **Example (HL):** The atomic mass of helium-4 is $4.0026\mathrm{ u$. Find the binding energy per
-Nucleon. ($m(\mathrm{^1H}) = 1.0078\mathrm{ u$$m_n = 1.0087\mathrm{ u$
+Nucleon. ($m(\mathrm{^1H}) = 1.0078\mathrm{ u$, $m_n = 1.0087\mathrm{ u$
 $1\mathrm{ u = 931.5\mathrm{ MeV/c^2$).
 
 $$
@@ -703,7 +703,7 @@ $$
 \ln N = -\lambda t + C
 $$
 
-At $t = 0$$N = N_0$So $C = \ln N_0$:
+At $t = 0$, $N = N_0$So $C = \ln N_0$:
 
 $$
 \ln\left(\frac{N}{N_0}\right) = -\lambda t
@@ -819,7 +819,7 @@ See the examples integrated throughout the sections above.
 5. **Alpha vs beta decay** -- alpha decreases $A$ by 4 and $Z$ by 2; beta-minus increases $Z$ by 1
    with no change in $A$.
 6. **Unit conversions** -- $1\mathrm{ eV = 1.6 \times 10^{-19}\mathrm{ J$. Always work in SI units
-   (joules) for calculations involving $h$$c$And $m$And convert to eV at the end if needed.
+   (joules) for calculations involving $h$, $c$And $m$And convert to eV at the end if needed.
 7. **Nuclear equations** -- always check conservation of $Z$ and $A$ on both sides.
 8. **De Broglie wavelength** -- use the relativistic momentum $p = \gamma mv$ for particles moving
    at speeds approaching $c$. For electrons accelerated through less than about $10\mathrm{ kV$The

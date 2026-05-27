@@ -246,7 +246,7 @@ Can cause the protein to unfold.
 - Antiparallel strands ($5' \to 3'$ and $3' \to 5'$)
 - Sugar-phosphate backbone on the outside, bases on the inside
 - Base pairing: A--T (2 H-bonds), G--C (3 H-bonds)
-- Chargaff's rules: $[\mathrm{A] = [\mathrm{T]$$[\mathrm{G] = [\mathrm{C]$
+- Chargaff's rules: $[\mathrm{A] = [\mathrm{T]$, $[\mathrm{G] = [\mathrm{C]$
 
 **RNA:**
 
@@ -757,7 +757,7 @@ $\mathrm{G + \mathrm{C = 100 - 18 - 18 = 64\%$.
 
 By Chargaff's rules, $[\mathrm{G] = [\mathrm{C] = 64 / 2 = 32\%$.
 
-So: $\mathrm{A = 18\%$$\mathrm{T = 18\%$$\mathrm{G = 32\%$$\mathrm{C = 32\%$.
+So: $\mathrm{A = 18\%$, $\mathrm{T = 18\%$, $\mathrm{G = 32\%$, $\mathrm{C = 32\%$.
 
 Hydrogen bonds: A-T pairs have 2 H-bonds, G-C pairs have 3 H-bonds.
 

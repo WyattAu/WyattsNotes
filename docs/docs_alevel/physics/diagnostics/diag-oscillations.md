@@ -227,7 +227,7 @@ $F = F_0\cos(\omega t)$. The analogous electrical circuit consists of an inducto
 $C$And resistor $R$ in series driven by an AC voltage $V = V_0\cos(\omega t)$.
 
 Given:
-$m = 0.50\,\text{kg}$$k = 200\,\text{N}\,\text{m}^{-1}$$b = 2.0\,\text{N}\,\text{s}\,\text{m}^{-1}$$L = 0.10\,\text{H}$$C = 25\,\mu\text{F}$$R = 40\,\Omega$.
+$m = 0.50\,\text{kg}$, $k = 200\,\text{N}\,\text{m}^{-1}$, $b = 2.0\,\text{N}\,\text{s}\,\text{m}^{-1}$, $L = 0.10\,\text{H}$, $C = 25\,\mu\text{F}$, $R = 40\,\Omega$.
 
 (a) Show that the natural frequency of the mechanical oscillator equals the resonant frequency of
 the electrical circuit.
@@ -247,7 +247,7 @@ $\omega_0 = 1/\sqrt{LC} = 1/\sqrt◆LB◆0.10 \times 25 \times 10^{-6}◆RB◆ =
 
 These are **not** equal. For the analogy to hold, the corresponding parameters must be chosen
 consistently. The mechanical-electrical analogies are:
-$m \leftrightarrow L$$k \leftrightarrow 1/C$$b \leftrightarrow R$.
+$m \leftrightarrow L$, $k \leftrightarrow 1/C$, $b \leftrightarrow R$.
 
 For the frequencies to match, we need $\sqrt{k/m} = 1/\sqrt{LC}$I.e. $k/m = 1/(LC)$.
 
@@ -256,7 +256,7 @@ not equal, so the systems are not analogous as given.
 
 For a true analogy with the given mechanical parameters, the electrical components would need:
 $LC = m/k = 0.50/200 = 2.5 \times 10^{-3}\,\text{s}^2$E.g.
-$L = 0.50\,\text{H}$$C = 5.0 \times 10^{-3}\,\text{F}$.
+$L = 0.50\,\text{H}$, $C = 5.0 \times 10^{-3}\,\text{F}$.
 
 (b) For the mechanical oscillator at resonance:
 

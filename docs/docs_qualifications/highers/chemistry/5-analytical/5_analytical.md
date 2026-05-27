@@ -335,7 +335,7 @@ Far. Therefore, substance A is more polar than substance B.
 $\mathrm{C_3\mathrm{H_6\mathrm{O_2$ shows: IR absorption at $1740 \mathrm{ cm^{-1}$Molecular ion at
 $m/z = 74$And $^1\mathrm{H$ NMR singlet at $\delta = 3.7$ (3H), singlet at $\delta = 2.1$ (3H).
 
-**Step 1:** Molecular formula $\mathrm{C_3\mathrm{H_6\mathrm{O_2$$M_r = 74$.
+**Step 1:** Molecular formula $\mathrm{C_3\mathrm{H_6\mathrm{O_2$, $M_r = 74$.
 
 **Step 2:** DBE $= (2 \times 3 + 2 - 6)/2 = (6 + 2 - 6)/2 = 1$. One double bond or ring.
 
@@ -484,7 +484,7 @@ Carbons. The pattern is consistent with butanoic acid
 ### Combustion Analysis
 
 When an organic compound containing C, H, and possibly other elements is burned completely, the
-Products are $\mathrm{CO_2$$\mathrm{H_2\mathrm{O$And other oxides.
+Products are $\mathrm{CO_2$, $\mathrm{H_2\mathrm{O$And other oxides.
 
 **Worked Example 14:** A compound contains 40.0% C, 6.7% H, and 53.3% O by mass. Find its empirical
 Formula.

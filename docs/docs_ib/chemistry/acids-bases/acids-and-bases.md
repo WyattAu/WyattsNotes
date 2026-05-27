@@ -950,7 +950,7 @@ $$
 <summary>Question 6: Polyprotic Acid (Paper 2 Style)</summary>
 
 Calculate the pH of a $0.100\mathrm{ mol/L}$ H$_3$PO$_4$ solution. Use the following data:
-$K_{a1} = 7.5 \times 10^{-3}$$K_{a2} = 6.2 \times 10^{-8}$$K_{a3} = 4.2 \times 10^{-13}$.
+$K_{a1} = 7.5 \times 10^{-3}$, $K_{a2} = 6.2 \times 10^{-8}$, $K_{a3} = 4.2 \times 10^{-13}$.
 
 Answer:
 

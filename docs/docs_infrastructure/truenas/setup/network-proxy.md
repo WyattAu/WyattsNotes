@@ -65,7 +65,7 @@ services:
     healthcheck:
       test:
         - CMD-SHELL
-        - mysqladmin ping -u root -p$${MYSQL_ROOT_PASSWORD}
+        - mysqladmin ping -u root -p$, ${MYSQL_ROOT_PASSWORD}
       interval: 5s
       timeout: 10s
       retries: 12

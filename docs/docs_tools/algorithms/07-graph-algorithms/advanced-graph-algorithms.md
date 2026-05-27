@@ -270,7 +270,7 @@ Edges for each implication.
 
 1. Build the implication graph
 2. Find SCCs using Tarjan's or Kosaraju's algorithm
-3. For every variable $x$$x$ and $\lnot x$ must be in different SCCs
+3. For every variable $x$, $x$ and $\lnot x$ must be in different SCCs
 4. If any variable has both $x$ and $\lnot x$ in the same SCC, the formula is unsatisfiable
 5. Otherwise, assign truth values: if `scc_id[x] > scc_id[not_x]`Set $x$ to true
 

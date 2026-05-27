@@ -20,7 +20,7 @@ $0 \le \theta \le 2\pi$.
 
 **Solution:**
 
-(a) $x = r\cos\theta$$y = r\sin\theta$. $r^2\cos^2\theta + r^2\sin^2\theta = 4$. $r^2 = 4$. $r = 2$
+(a) $x = r\cos\theta$, $y = r\sin\theta$. $r^2\cos^2\theta + r^2\sin^2\theta = 4$. $r^2 = 4$. $r = 2$
 (circle centred at origin, radius 2).
 
 (b)
@@ -58,7 +58,7 @@ $= \frac{1}{2}(8\pi + \pi) = \frac◆LB◆9\pi◆RB◆◆LB◆2◆RB◆$.
 $A = \frac{1}{2}\int_0^{2\pi} (1+\cos\theta)^2\,d\theta = \frac{1}{2}\int_0^{2\pi} (1 + 2\cos\theta + \cos^2\theta)\,d\theta = \frac{1}{2}\int_0^{2\pi}\left(\frac{3}{2} + 2\cos\theta + \frac◆LB◆\cos 2\theta◆RB◆◆LB◆2◆RB◆\right)\,d\theta$
 $= \frac{1}{2}\left[\frac◆LB◆3\theta◆RB◆◆LB◆2◆RB◆ + 2\sin\theta + \frac◆LB◆\sin 2\theta◆RB◆◆LB◆4◆RB◆\right]_0^{2\pi} = \frac{1}{2} \times 3\pi = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$.
 
-(d) Find intersection: $3\cos\theta = 1 + \cos\theta$$2\cos\theta = 1$$\theta = \pm\pi/3$.
+(d) Find intersection: $3\cos\theta = 1 + \cos\theta$, $2\cos\theta = 1$, $\theta = \pm\pi/3$.
 
 $A = \frac{1}{2}\int_{-\pi/3}^{\pi/3} [(3\cos\theta)^2 - (1+\cos\theta)^2]\,d\theta$
 $= \frac{1}{2}\int_{-\pi/3}^{\pi/3} (9\cos^2\theta - 1 - 2\cos\theta - \cos^2\theta)\,d\theta$
@@ -79,13 +79,13 @@ to Cartesian form.
 $y = r\sin\theta = 2\sin\theta - 2\sin\theta\cos\theta$.
 
 $\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = -2\sin\theta + 4\cos\theta\sin\theta$. At $\theta = \pi/2$:
-$x = 0$$y = 2$$\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = -2 + 0 = -2$.
+$x = 0$, $y = 2$, $\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = -2 + 0 = -2$.
 $\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 2\cos\theta - 2(\cos^2\theta - \sin^2\theta)$. At
 $\theta = \pi/2$: $\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = 0 - 2(-1) = 2$.
 
 $\frac{dy}{dx} = \frac{2}{-2} = -1$. Tangent: $y - 2 = -1(x - 0)$I.e., $x + y = 2$.
 
-(b) $2 = 4\cos\theta$$\cos\theta = 1/2$$\theta = \pm\pi/3$. Points:
+(b) $2 = 4\cos\theta$, $\cos\theta = 1/2$, $\theta = \pm\pi/3$. Points:
 $(2\cos(\pi/3), 2\sin(\pi/3)) = (1, \sqrt{3})$ and $(1, -\sqrt{3})$.
 
 (c) $r = e^\theta$.
@@ -110,7 +110,7 @@ $\theta = \pi$. (d) Find the area between the spiral and the line $\theta = \pi$
 $s = \int_0^{2\pi} \sqrt◆LB◆r^2 + \left(\frac{dr}{d\theta}\right)^2◆RB◆\,d\theta = \int_0^{2\pi} \sqrt◆LB◆a^2\theta^2 + a^2◆RB◆\,d\theta = a\int_0^{2\pi} \sqrt◆LB◆\theta^2 + 1◆RB◆\,d\theta$.
 
 This requires the substitution $\theta = \sinh u$:
-$d\theta = \cosh u\,du$$\sqrt◆LB◆\theta^2+1◆RB◆ = \cosh u$.
+$d\theta = \cosh u\,du$, $\sqrt◆LB◆\theta^2+1◆RB◆ = \cosh u$.
 $s = a\int_0^{\text{arcsinh}(2\pi)} \cosh^2 u\,du = \frac{a}{2}\int_0^{\text{arcsinh}(2\pi)} (1 + \cosh 2u)\,du = \frac{a}{2}\left[u + \frac◆LB◆\sinh 2u◆RB◆◆LB◆2◆RB◆\right]$.
 
 Since $\sinh(\text{arcsinh}(2\pi)) = 2\pi$ and
@@ -121,10 +121,10 @@ $s = \frac{a}{2}\left(\text{arcsinh}(2\pi) + 2\pi\sqrt◆LB◆1+4\pi^2◆RB◆\r
 (b)
 $A = \frac{1}{2}\int_0^{2\pi} a^2\theta^2\,d\theta = \frac{a^2}{2}\left[\frac◆LB◆\theta^3◆RB◆◆LB◆3◆RB◆\right]_0^{2\pi} = \frac{a^2}{2} \cdot \frac◆LB◆8\pi^3◆RB◆◆LB◆3◆RB◆ = \frac◆LB◆4\pi^3 a^2◆RB◆◆LB◆3◆RB◆$.
 
-(c) At $\theta = \pi$: $r = a\pi$. $x = a\pi\cos\pi = -a\pi$$y = a\pi\sin\pi = 0$.
-$\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = a(\cos\theta - \theta\sin\theta)$$\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = a(\sin\theta + \theta\cos\theta)$.
+(c) At $\theta = \pi$: $r = a\pi$. $x = a\pi\cos\pi = -a\pi$, $y = a\pi\sin\pi = 0$.
+$\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = a(\cos\theta - \theta\sin\theta)$, $\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = a(\sin\theta + \theta\cos\theta)$.
 At $\theta = \pi$:
-$\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = a(-1 - 0) = -a$$\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = a(0 - \pi) = -a\pi$.
+$\frac◆LB◆dx◆RB◆◆LB◆d\theta◆RB◆ = a(-1 - 0) = -a$, $\frac◆LB◆dy◆RB◆◆LB◆d\theta◆RB◆ = a(0 - \pi) = -a\pi$.
 $\frac{dy}{dx} = \pi$. Tangent at $(-a\pi, 0)$: $y = \pi(x + a\pi)$.
 
 (d) Area between spiral and $\theta = \pi$: This is the area swept from $\theta = 0$ to

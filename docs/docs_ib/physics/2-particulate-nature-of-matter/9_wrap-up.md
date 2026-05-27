@@ -152,7 +152,7 @@ An engine serves as the work input for another device.
 - The entropy decreases, as expected, since heat is being removed from the system.
 
 <b>If you get this wrong, you should focus on:</b> The specific gas law relations for an adiabatic
-Process ($PV^\gamma=\mathrm{const.}$$TV^{\gamma-1}=\mathrm{const.}$). Also, the formula for
+Process ($PV^\gamma=\mathrm{const.}$, $TV^{\gamma-1}=\mathrm{const.}$). Also, the formula for
 Calculating entropy change during a process with a changing temperature, which requires integration
 Or the logarithmic form.
 
@@ -330,9 +330,9 @@ The ideal gas model makes the following assumptions:
 
 | Law              | Relationship            | Constant Quantity |
 | :--------------- | :---------------------- | :---------------- |
-| Boyle's Law      | $P \propto \frac{1}{V}$ | $T$$n$            |
-| Charles's Law    | $V \propto T$           | $P$$n$            |
-| Gay-Lussac's Law | $P \propto T$           | $V$$n$            |
+| Boyle's Law      | $P \propto \frac{1}{V}$ | $T$, $n$            |
+| Charles's Law    | $V \propto T$           | $P$, $n$            |
+| Gay-Lussac's Law | $P \propto T$           | $V$, $n$            |
 
 All of these are unified in the **ideal gas equation**:
 
@@ -431,9 +431,9 @@ Therefore:
 ### Worked Example: Phase Change Energy
 
 Calculate the total energy required to convert $2.0$ kg of ice at $-20$ degrees C to steam at $120$
-Degrees C. (Data: $c_{\mathrm{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$$c_{\mathrm{water}} = 4200$ J
-Kg$^{-1}$ K$^{-1}$$c_{\mathrm{steam}} = 2000$ J kg$^{-1}$ K$^{-1}$$L_f = 3.34 \times 10^5$ J
-Kg$^{-1}$$L_v = 2.26 \times 10^6$ J kg$^{-1}$)
+Degrees C. (Data: $c_{\mathrm{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4200$ J
+Kg$^{-1}$ K$^{-1}$, $c_{\mathrm{steam}} = 2000$ J kg$^{-1}$ K$^{-1}$, $L_f = 3.34 \times 10^5$ J
+Kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$)
 
 | Stage                           | Calculation               | Energy (J)                |
 | :------------------------------ | :------------------------ | :------------------------ |

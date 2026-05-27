@@ -85,7 +85,7 @@ $$v = u + at = 0 + 2 \times 6 = 12\;\mathrm{m\,s^{-1}}$$
 
 $$s_1 = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\;\mathrm{m}$$
 
-**Stage 2: Deceleration.** Now $u = 12$$v = 0$$a = -3$.
+**Stage 2: Deceleration.** Now $u = 12$, $v = 0$, $a = -3$.
 
 $$t_2 = \frac{v - u}{a} = \frac{0 - 12}{-3} = 4\;\mathrm{s}$$
 
@@ -135,7 +135,7 @@ $$s_{\mathrm{up}} = \frac{v^2 - u^2}{2a} = \frac{0 - 225}{2(-9.8)} = \frac{225}{
 
 Total height above ground: $11.48 + 2 = 13.48\;\mathrm{m}$.
 
-On the way down: $u = 0$$a = -9.8$ (still upward positive), $s = -13.48\;\mathrm{m}$.
+On the way down: $u = 0$, $a = -9.8$ (still upward positive), $s = -13.48\;\mathrm{m}$.
 
 $$v^2 = 0 + 2(-9.8)(-13.48) = 264.21$$
 
@@ -143,7 +143,7 @@ $$v = -\sqrt{264.21} \approx -16.26\;\mathrm{m\,s^{-1}}$$
 
 The negative sign confirms downward motion. Speed $= 16.3\;\mathrm{m\,s^{-1}}$ (3 s.f.).
 
-:::info Note that the total time of flight can also be found directly: $s = -2$$u = 15$$a = -9.8$:
+:::info Note that the total time of flight can also be found directly: $s = -2$, $u = 15$, $a = -9.8$:
 $-2 = 15t - 4.9t^2$Giving $t \approx 3.15\;\mathrm{s}$. This is **not** $2 \times t_{\mathrm{max}}$
 Because the ball was thrown from a height, not from ground level. :::
 
@@ -306,12 +306,12 @@ $$v\,dv = a\,ds \implies \int v\,dv = \int a\,ds \implies \frac{1}{2}v^2 = \int 
 ### 5.3 Worked example: $a = f(t)$
 
 **Problem.** A particle moves in a straight line with acceleration
-$a = 6t - 2t^2\;\mathrm{m\,s^{-2}}$. At $t = 0$$v = 3\;\mathrm{m\,s^{-1}}$ and $s = 0$. Find the
+$a = 6t - 2t^2\;\mathrm{m\,s^{-2}}$. At $t = 0$, $v = 3\;\mathrm{m\,s^{-1}}$ and $s = 0$. Find the
 distance travelled in the first $4$ seconds.
 
 $$v = \int (6t - 2t^2)\,dt = 3t^2 - \frac{2}{3}t^3 + C$$
 
-When $t = 0$$v = 3$: $C = 3$.
+When $t = 0$, $v = 3$: $C = 3$.
 
 $$v = 3t^2 - \frac{2}{3}t^3 + 3$$
 
@@ -341,7 +341,7 @@ $$\int \frac{1}{v^2}\,dv = \int -0.1\,dt$$
 
 $$-\frac{1}{v} = -0.1t + C$$
 
-When $t = 0$$v = 10$: $-\dfrac{1}{10} = C$.
+When $t = 0$, $v = 10$: $-\dfrac{1}{10} = C$.
 
 $$-\frac{1}{v} = -0.1t - \frac{1}{10}$$
 
@@ -398,11 +398,11 @@ Origin. Find its displacement when $t = 3\;\mathrm{s}$.
 
 $$v = \int 12t\,dt = 6t^2 + C_1$$
 
-When $t = 0$$v = 0$: $C_1 = 0$So $v = 6t^2$.
+When $t = 0$, $v = 0$: $C_1 = 0$So $v = 6t^2$.
 
 $$s = \int 6t^2\,dt = 2t^3 + C_2$$
 
-When $t = 0$$s = 0$: $C_2 = 0$So $s = 2t^3$.
+When $t = 0$, $s = 0$: $C_2 = 0$So $s = 2t^3$.
 
 At $t = 3$: $s = 2(27) = 54\;\mathrm{m}$.
 
@@ -417,13 +417,13 @@ where the Stone lands, and the velocity (magnitude and direction) at impact.
 <details>
 <summary>Solution</summary>
 
-Vertical: $s = -60$$u_y = 0$$a = -9.8$.
+Vertical: $s = -60$, $u_y = 0$, $a = -9.8$.
 
 $$-60 = 0 - \frac{1}{2}(9.8)t^2 \implies t = \sqrt◆LB◆\frac{120}{9.8}◆RB◆ \approx 3.50\;\mathrm{s}$$
 
 Horizontal: $x = 8 \times 3.50 = 28.0\;\mathrm{m}$.
 
-At impact: $v_y = -9.8 \times 3.50 = -34.3\;\mathrm{m\,s^{-1}}$$v_x = 8\;\mathrm{m\,s^{-1}}$.
+At impact: $v_y = -9.8 \times 3.50 = -34.3\;\mathrm{m\,s^{-1}}$, $v_x = 8\;\mathrm{m\,s^{-1}}$.
 
 $$|\mathbf{v}| = \sqrt{8^2 + 34.3^2} = \sqrt{64 + 1176.5} \approx 35.2\;\mathrm{m\,s^{-1}}$$
 
@@ -435,7 +435,7 @@ Angle below horizontal: $\theta = \arctan\!\left(\dfrac{34.3}{8}\right) \approx 
 
 A particle moves in a straight line so that its acceleration is given by
 $a = 4 - 2s\;\mathrm{m\,s^{-2}}$ Where $s$ is the displacement from a fixed point. When
-$s = 0$$v = 2\;\mathrm{m\,s^{-1}}$. Find the Maximum displacement.
+$s = 0$, $v = 2\;\mathrm{m\,s^{-1}}$. Find the Maximum displacement.
 
 <details>
 <summary>Solution</summary>
@@ -450,7 +450,7 @@ $$\int v\,dv = \int (4 - 2s)\,ds$$
 
 $$\frac{1}{2}v^2 = 4s - s^2 + C$$
 
-When $s = 0$$v = 2$: $\dfrac{1}{2}(4) = 0 + C \implies C = 2$.
+When $s = 0$, $v = 2$: $\dfrac{1}{2}(4) = 0 + C \implies C = 2$.
 
 $$\frac{1}{2}v^2 = 4s - s^2 + 2$$
 

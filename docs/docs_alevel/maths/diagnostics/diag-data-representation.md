@@ -399,7 +399,7 @@ in regression.]
 | 7   | 5.0          | 5.409                                | -0.409                 |
 | 8   | 4.9          | 4.456                                | 0.444                  |
 
-Rounded to 2 d.p.: 0.97, $-0.37$$-1.02$$-0.77$$-1.22$$-1.06$$-0.41$0.44.
+Rounded to 2 d.p.: 0.97, $-0.37$, $-1.02$, $-0.77$, $-1.22$, $-1.06$, $-0.41$0.44.
 
 Stem-and-leaf (key: $1 \mid -2 = -1.2$):
 
@@ -410,7 +410,7 @@ Stem-and-leaf (key: $1 \mid -2 = -1.2$):
  1 | 0
 ```
 
-**(b)** Ordered residuals: $-1.22$$-1.06$$-1.02$$-0.77$$-0.41$$-0.37$0.44, 0.97. ($n = 8$)
+**(b)** Ordered residuals: $-1.22$, $-1.06$, $-1.02$, $-0.77$, $-0.41$, $-0.37$0.44, 0.97. ($n = 8$)
 
 $Q_1$ = median of lower half $= \frac{-1.06 + (-1.02)}{2} = -1.04$
 
@@ -466,7 +466,7 @@ $$f(x) = \begin{cases} \frac{3}{64}x^2 & \quad 0 \leq x \leq 4 \\ 0 & \quad \tex
 **(c)** Find the interquartile range of $X$.
 
 **(d)** The values of $X$ are recorded as a grouped frequency distribution using the classes
-$0 \leq x \lt 1$$1 \leq x \lt 2$$2 \leq x \lt 3$$3 \leq x \lt 4$. Estimate the mean and standard
+$0 \leq x \lt 1$, $1 \leq x \lt 2$, $2 \leq x \lt 3$, $3 \leq x \lt 4$. Estimate the mean and standard
 deviation from this grouped data, and compare your answers with the true values $\mathrm{E}(X) = 3$
 and $\mathrm{SD}(X) = \frac◆LB◆3◆RB◆◆LB◆\sqrt{5}◆RB◆$. Comment on the accuracy of the grouped
 estimates.

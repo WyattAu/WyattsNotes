@@ -44,7 +44,7 @@ and the fringe spacing is $1.65$ mm. The entire interference pattern shifts by $
 fringe spacing remains unchanged.
 
 **Key insight:** An off-axis source shifts the entire fringe pattern but does NOT change the fringe
-spacing. The fringe spacing depends only on $\lambda$$D$And $d$.
+spacing. The fringe spacing depends only on $\lambda$, $D$And $d$.
 
 ---
 
@@ -67,13 +67,13 @@ Grating equation: $d \sin\theta = n\lambda$
 
 _Red ($\lambda = 700$ nm):_
 
-- $n = 1$: $\sin\theta = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.35$$\theta = 20.49°$
-- $n = 2$: $\sin\theta = 0.70$$\theta = 44.43°$
+- $n = 1$: $\sin\theta = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.35$, $\theta = 20.49°$
+- $n = 2$: $\sin\theta = 0.70$, $\theta = 44.43°$
 
 _Violet ($\lambda = 400$ nm):_
 
-- $n = 1$: $\sin\theta = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.20$$\theta = 11.54°$
-- $n = 2$: $\sin\theta = 0.40$$\theta = 23.58°$
+- $n = 1$: $\sin\theta = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.20$, $\theta = 11.54°$
+- $n = 2$: $\sin\theta = 0.40$, $\theta = 23.58°$
 
 **(b) Highest visible order:**
 

@@ -60,7 +60,7 @@ chaining, (b) linear probing, (c) quadratic probing. Calculate the load factor f
 
 **Solution:**
 
-Hash values: $h(14) = 0$$h(21) = 0$$h(28) = 0$$h(35) = 0$$h(42) = 0$$h(15) = 1$$h(22) = 1$.
+Hash values: $h(14) = 0$, $h(21) = 0$, $h(28) = 0$, $h(35) = 0$, $h(42) = 0$, $h(15) = 1$, $h(22) = 1$.
 
 (a) **Separate chaining:**
 

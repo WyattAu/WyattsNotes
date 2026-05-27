@@ -920,7 +920,7 @@ If producers have 10,000 kJ of energy:
 1. Identify $q^2$ from the homozygous recessive frequency
 2. Take the square root to get $q$
 3. Calculate $p = 1 - q$
-4. Calculate $p^2$$2pq$And verify $p^2 + 2pq + q^2 = 1$
+4. Calculate $p^2$, $2pq$And verify $p^2 + 2pq + q^2 = 1$
 
 **Population growth:**
 
@@ -1082,7 +1082,7 @@ If you get this wrong, revise: Genetics of Evolution -- Hardy-Weinberg Equilibri
 
 $$q^2 = \frac{160}{1000} = 0.16, \quad q = 0.4, \quad p = 0.6$$
 
-Expected frequencies: $p^2 = 0.36$$2pq = 0.48$$q^2 = 0.16$
+Expected frequencies: $p^2 = 0.36$, $2pq = 0.48$, $q^2 = 0.16$
 
 Expected numbers: RR = $0.36 \times 1000 = 360$; Rr = $0.48 \times 1000 = 480$; rr =
 $0.16 \times 1000 = 160$

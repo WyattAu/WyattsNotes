@@ -483,7 +483,7 @@ $$\Psi_s = -iCRT$$
 
 Where $i = 1$ (sucrose does not ionise),
 $C = 0.3\ \mathrm{mol\ dm^{-3}} = 300\ \mathrm{mol\ m^{-3}}$
-$R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$$T = 293\ \mathrm{K}$.
+$R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T = 293\ \mathrm{K}$.
 
 $$\Psi_{\mathrm{solution}} = -1 \times 300 \times 8.314 \times 293 = -730800\ \mathrm{Pa} = -731\ \mathrm{kPa}$$
 
@@ -1093,11 +1093,11 @@ ABA triggers stomatal closure by:
 | --------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------- |
 | Water                                                                                   | 90--92%                        | Solvent for transport                                                   |
 | Proteins (albumin, globulins, fibrinogen)                                               | $60$--$80\ \mathrm{g\ L^{-1}}$ | Osmotic pressure (albumin), immunity (globulins), clotting (fibrinogen) |
-| Ions ($\mathrm{Na^+}$$\mathrm{K^+}$$\mathrm{Ca^{2+}}$$\mathrm{Cl^-}$$\mathrm{HCO_3^-}$) | Variable                       | Osmoregulation, pH buffering, nerve impulse transmission                |
+| Ions ($\mathrm{Na^+}$, $\mathrm{K^+}$, $\mathrm{Ca^{2+}}$, $\mathrm{Cl^-}$, $\mathrm{HCO_3^-}$) | Variable                       | Osmoregulation, pH buffering, nerve impulse transmission                |
 | - Nutrients (glucose, amino acids, lipids)                                              | Variable                       | Transport from digestive system to cells                                |
 | - Urea, uric acid                                                                       | Variable                       | Waste products transported to kidneys                                   |
 | - Hormones                                                                              | Trace                          | Chemical signalling                                                     |
-| - Dissolved gases ($\mathrm{O_2}$$\mathrm{CO_2}$$\mathrm{N_2}$)                         | Variable                       | Gas transport                                                           |
+| - Dissolved gases ($\mathrm{O_2}$, $\mathrm{CO_2}$, $\mathrm{N_2}$)                         | Variable                       | Gas transport                                                           |
 
 ### 16.2 Tissue Fluid and Lymph
 
@@ -1863,7 +1863,7 @@ The cohesion-tension theory explains how water moves up the xylem against gravit
 
 | Feature        | Arteries                                                                      | Veins                                                                           | Capillaries                                                                                        |
 | -------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Function       | Carry blood away from the heart ( oxygenated)                                 | Carry blood back to the heart ( deoxygenated)                                   | Exchange of materials between blood and tissues ($\mathrm{O_2}$$\mathrm{CO_2}$Glucose, urea, etc.) |
+| Function       | Carry blood away from the heart ( oxygenated)                                 | Carry blood back to the heart ( deoxygenated)                                   | Exchange of materials between blood and tissues ($\mathrm{O_2}$, $\mathrm{CO_2}$Glucose, urea, etc.) |
 | Wall structure | Thick, muscular wall (tunica media contains smooth muscle and elastic tissue) | Thinner wall; less muscle                                                       | Single layer of endothelial cells (squamous epithelium); very thin walls                           |
 | Lumen          | Narrow (relative to wall thickness)                                           | Wide (relative to wall thickness)                                               | Very narrow (8--10 $\mu$M diameter; red blood cells squeeze through in single file)                |
 | Valves         | None (except semilunar valves at the base of the aorta and pulmonary artery)  | Valves present (prevent backflow; ensure one-way flow)                          | None                                                                                               |

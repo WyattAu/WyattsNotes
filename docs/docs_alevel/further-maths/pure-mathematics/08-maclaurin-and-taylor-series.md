@@ -29,7 +29,7 @@ Adjust the parameters in the graph above to explore the relationships between va
 
 | Board   | Paper   | Notes                                                                          |
 | ------- | ------- | ------------------------------------------------------------------------------ |
-| AQA     | Paper 1 | Maclaurin series; standard series for $e^x$$\sin x$$\cos x$$\ln(1+x)$$(1+x)^n$ |
+| AQA     | Paper 1 | Maclaurin series; standard series for $e^x$, $\sin x$, $\cos x$, $\ln(1+x)$, $(1+x)^n$ |
 | Edexcel | FP2     | Maclaurin + Taylor series about general $x = a$; convergence                   |
 | OCR (A) | Paper 1 | Maclaurin series; standard series; applications                                |
 | CIE     | P2      | Maclaurin series; expansion of compound functions; range of validity           |
@@ -88,7 +88,7 @@ $\square$
 
 ### Proof of the Maclaurin series for $\sin x$
 
-Let $f(x) = \sin x$. The derivatives cycle: $\sin x$$\cos x$$-\sin x$$-\cos x$$\sin x$...
+Let $f(x) = \sin x$. The derivatives cycle: $\sin x$, $\cos x$, $-\sin x$, $-\cos x$, $\sin x$...
 
 At $x = 0$: $0, 1, 0, -1, 0, 1, 0, -1, \ldots$
 
@@ -102,7 +102,7 @@ $\square$
 
 ### 2.3 Cosine function
 
-Let $f(x) = \cos x$. The derivatives cycle: $\cos x$$-\sin x$$-\cos x$$\sin x$$\cos x$...
+Let $f(x) = \cos x$. The derivatives cycle: $\cos x$, $-\sin x$, $-\cos x$, $\sin x$, $\cos x$...
 
 At $x = 0$: $1, 0, -1, 0, 1, 0, -1, 0, \ldots$
 
@@ -112,7 +112,7 @@ $$\boxed{\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots 
 
 Let $f(x) = \ln(1+x)$ for $|x| < 1$.
 
-$f'(x) = \dfrac{1}{1+x}$$f''(x) = -\dfrac{1}{(1+x)^2}$$f'''(x) = \dfrac{2}{(1+x)^3}$...
+$f'(x) = \dfrac{1}{1+x}$, $f''(x) = -\dfrac{1}{(1+x)^2}$, $f'''(x) = \dfrac{2}{(1+x)^3}$...
 
 $f^{(n)}(x) = \dfrac{(-1)^{n-1}(n-1)!}{(1+x)^n}$So $f^{(n)}(0) = (-1)^{n-1}(n-1)!$.
 
@@ -181,7 +181,7 @@ $|R_n| \to 0$ as $n \to \infty$Then the Taylor series converges to $f(x)$.
 
 Find the Taylor series of $e^x$ about $x = 1$ up to the $x^3$ term.
 
-$f(x) = e^x$$f'(x) = e^x$$f''(x) = e^x$$f'''(x) = e^x$.
+$f(x) = e^x$, $f'(x) = e^x$, $f''(x) = e^x$, $f'''(x) = e^x$.
 
 At $x = 1$: $f(1) = f'(1) = f''(1) = f'''(1) = e$.
 
@@ -230,7 +230,7 @@ $L = \lim_{n\to\infty}\left|\dfrac{a_{n+1}x^{n+1}}{a_n x^n}\right| = |x|\lim_{n\
 **Example 1.** Find the radius of convergence of
 $\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^n}{n}$.
 
-$a_n = \dfrac{(-1)^{n-1}}{n}$$a_{n+1} = \dfrac{(-1)^n}{n+1}$.
+$a_n = \dfrac{(-1)^{n-1}}{n}$, $a_{n+1} = \dfrac{(-1)^n}{n+1}$.
 
 $\left|\dfrac{a_{n+1}}{a_n}\right| = \dfrac{n}{n+1} \to 1$ as $n \to \infty$.
 
@@ -262,7 +262,7 @@ $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 
 $\square$
 
-:::tip tip $\dfrac{1}{1+x}$$\ln(1+x)$And $\arctan x$ all derive from it. :::
+:::tip tip $\dfrac{1}{1+x}$, $\ln(1+x)$And $\arctan x$ all derive from it. :::
 
 <hr />
 
@@ -369,8 +369,8 @@ Find the Maclaurin series of $f(x) = \cos 2x$ up to the $x^6$ term.
 <details>
 <summary>Solution 1</summary>
 
-$f(0) = 1$$f'(x) = -2\sin 2x$$f'(0) = 0$$f''(x) = -4\cos 2x$$f''(0) = -4$
-$f'''(x) = 8\sin 2x$$f'''(0) = 0$$f^{(4)}(x) = 16\cos 2x$$f^{(4)}(0) = 16$$f^{(5)}(0) = 0$
+$f(0) = 1$, $f'(x) = -2\sin 2x$, $f'(0) = 0$, $f''(x) = -4\cos 2x$, $f''(0) = -4$
+$f'''(x) = 8\sin 2x$, $f'''(0) = 0$, $f^{(4)}(x) = 16\cos 2x$, $f^{(4)}(0) = 16$, $f^{(5)}(0) = 0$
 $f^{(6)}(0) = -64$.
 
 Alternatively, substitute $2x$ into
@@ -436,8 +436,8 @@ Term.
 <summary>Solution 4</summary>
 
 $f(x) = \sin x$. $f(\pi/3) = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$. $f'(x) = \cos x$
-$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$$f''(\pi/3) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
-$f'''(x) = -\cos x$$f'''(\pi/3) = -\dfrac{1}{2}$.
+$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$, $f''(\pi/3) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
+$f'''(x) = -\cos x$, $f'''(\pi/3) = -\dfrac{1}{2}$.
 
 $$\sin x = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \frac{1}{2}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) - \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^2 - \frac{1}{12}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^3 + \cdots$$
 
@@ -870,10 +870,10 @@ $$\boxed{e^x\sin x = x + x^2 + \frac{x^3}{3} - \frac{x^4}{6} - \frac{x^5}{30} + 
 
 **Problem.** Find the Taylor series of $\ln x$ about $x = 1$ up to the term in $(x-1)^4$.
 
-**Solution.** $f(x) = \ln x$$f(1) = 0$.
+**Solution.** $f(x) = \ln x$, $f(1) = 0$.
 
-$f'(x) = \dfrac{1}{x}$$f'(1) = 1$. $f''(x) = -\dfrac{1}{x^2}$$f''(1) = -1$.
-$f'''(x) = \dfrac{2}{x^3}$$f'''(1) = 2$. $f^{(4)}(x) = -\dfrac{6}{x^4}$$f^{(4)}(1) = -6$.
+$f'(x) = \dfrac{1}{x}$, $f'(1) = 1$. $f''(x) = -\dfrac{1}{x^2}$, $f''(1) = -1$.
+$f'''(x) = \dfrac{2}{x^3}$, $f'''(1) = 2$. $f^{(4)}(x) = -\dfrac{6}{x^4}$, $f^{(4)}(1) = -6$.
 
 $$\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \cdots$$
 

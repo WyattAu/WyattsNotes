@@ -181,7 +181,7 @@ $$\mathrm{CH}_3^\bullet + \mathrm{CH}_3^\bullet \to \mathrm{C}_2\mathrm{H}_6$$
 
 $$\mathrm{CH}_3^\bullet + \mathrm{Cl}^\bullet \to \mathrm{CH}_3\mathrm{Cl}$$
 
-:::warning Warning $\mathrm{CH}_3\mathrm{Cl}$$\mathrm{CH}_2\mathrm{Cl}_2$$\mathrm{CHCl}_3$And
+:::warning Warning $\mathrm{CH}_3\mathrm{Cl}$, $\mathrm{CH}_2\mathrm{Cl}_2$, $\mathrm{CHCl}_3$And
 $\mathrm{CCl}_4$ Because the substitution can continue on the same carbon atom. Controlling the
 ratio of methane to Chlorine influences the proportion of products. :::
 
@@ -978,7 +978,7 @@ Key interconversions between functional groups:
 | ----------------- | -------------------------- | --------------------------------------------------------------------------- |
 | Alkene            | Alkane                     | $\mathrm{H}_2$ / Ni catalyst                                                |
 | Alkene            | Haloalkane                 | $\mathrm{HX}$ (e.g., HBr)                                                   |
-| Alkene            | Alcohol                    | $\mathrm{H}_2\mathrm{O}$ / $\mathrm{H}_3\mathrm{PO}_4$$300^\circ\mathrm{C}$ |
+| Alkene            | Alcohol                    | $\mathrm{H}_2\mathrm{O}$ / $\mathrm{H}_3\mathrm{PO}_4$, $300^\circ\mathrm{C}$ |
 | Alkene            | Diol                       | Cold, dilute, alkaline $\mathrm{KMnO}_4$                                    |
 | Alkene            | Halogenoalkane (dihalide)  | $\mathrm{Br}_2$ or $\mathrm{Cl}_2$                                          |
 | Haloalkane        | Alcohol                    | NaOH (aq), heat                                                             |
@@ -1014,7 +1014,7 @@ There are four structural isomers:
 
 A hydrocarbon $\mathrm{A}$ with molecular formula $\mathrm{C}_4\mathrm{H}_8$ decolourises bromine
 Water and reacts with $\mathrm{HBr}$ to give two products, $\mathrm{B}$ (major) and $\mathrm{C}$
-(minor). Identify $\mathrm{A}$$\mathrm{B}$And $\mathrm{C}$.
+(minor). Identify $\mathrm{A}$, $\mathrm{B}$And $\mathrm{C}$.
 
 **Solution:**
 
@@ -1407,7 +1407,7 @@ Chlorine under UV light. Why is a mixture of chlorinated products obtained?
 
 See Section 2.1 for the full mechanism (initiation, propagation, termination).
 
-A mixture of products ($\mathrm{CH}_3\mathrm{Cl}$$\mathrm{CH}_2\mathrm{Cl}_2$$\mathrm{CHCl}_3$
+A mixture of products ($\mathrm{CH}_3\mathrm{Cl}$, $\mathrm{CH}_2\mathrm{Cl}_2$, $\mathrm{CHCl}_3$
 $\mathrm{CCl}_4$) is obtained because once a chlorine radical abstracts a hydrogen from
 $\mathrm{CH}_3\mathrm{Cl}$ (the product), a new $\mathrm{CH}_2\mathrm{Cl}^\bullet$ radical is formed
 In the propagation step. This radical can then react with more $\mathrm{Cl}_2$ to form

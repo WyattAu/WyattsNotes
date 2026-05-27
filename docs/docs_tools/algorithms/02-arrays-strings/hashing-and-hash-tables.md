@@ -272,7 +272,7 @@ Collision occurs, we probe for the next available slot using a deterministic pro
 
 $$h(k, i) = (h'(k) + i) \bmod m$$
 
-The simplest open addressing scheme: on collision at index $h'(k)$Try $h'(k)+1$$h'(k)+2$Etc.
+The simplest open addressing scheme: on collision at index $h'(k)$Try $h'(k)+1$, $h'(k)+2$Etc.
 
 ```python
 class LinearProbingHashTable:

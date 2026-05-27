@@ -30,7 +30,7 @@ Solutions.
 
 <details>
 <summary>Q1. Simplify $\dfrac{x^2 - 9}{x^2 - x - 6}$.</summary>
-$\dfrac{x^2-9}{x^2-x-6} = \dfrac{(x-3)(x+3)}{(x-3)(x+2)} = \dfrac{x+3}{x+2}$$x \neq 3, -2$.
+$\dfrac{x^2-9}{x^2-x-6} = \dfrac{(x-3)(x+3)}{(x-3)(x+2)} = \dfrac{x+3}{x+2}$, $x \neq 3, -2$.
 
 **If you get this wrong, revise:**
 [Algebraic Expressions](/docs/alevel/maths/pure-mathematics/algebraic-expressions)
@@ -47,10 +47,10 @@ $(x-2)(x-3) \geq 0$. The quadratic opens upward, so $x \leq 2$ or $x \geq 3$.
 </details>
 
 <details>
-<summary>Q3. Find the inverse of $f(x) = \dfrac{2x+1}{x-3}$$x \neq 3$.</summary>
+<summary>Q3. Find the inverse of $f(x) = \dfrac{2x+1}{x-3}$, $x \neq 3$.</summary>
 $y = \dfrac{2x+1}{x-3} \implies y(x-3) = 2x+1 \implies yx - 3y = 2x + 1 \implies x(y-2) = 3y+1$.
 
-$f^{-1}(x) = \dfrac{3x+1}{x-2}$$x \neq 2$.
+$f^{-1}(x) = \dfrac{3x+1}{x-2}$, $x \neq 2$.
 
 **If you get this wrong, revise:** [Functions](/docs/alevel/maths/pure-mathematics/functions)
 
@@ -73,7 +73,7 @@ $= \dfrac{8/3}{x-1} + \dfrac{1/3}{x+2} = \dfrac{8}{3(x-1)} + \dfrac{1}{3(x+2)}$.
 
 <details>
 <summary>Q5. Find the sum of the first 50 terms of the arithmetic series $3 + 7 + 11 + \cdots$.</summary>
-$a = 3$$d = 4$. $S_{50} = \dfrac{50}{2}[2(3) + 49(4)] = 25(6 + 196) = 25 \times 202 = 5050$.
+$a = 3$, $d = 4$. $S_{50} = \dfrac{50}{2}[2(3) + 49(4)] = 25(6 + 196) = 25 \times 202 = 5050$.
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/alevel/maths/pure-mathematics/sequences-and-series)
@@ -91,7 +91,7 @@ $\binom{5}{3}(2)^2(-3x)^3 = 10 \times 4 \times (-27x^3) = -1080x^3$. Coefficient
 
 <details>
 <summary>Q7. Find the sum to infinity of $0.5 + 0.1 + 0.02 + 0.004 + \cdots$.</summary>
-$a = 0.5$$r = 0.2$. $|r| \lt 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5}{0.8} = 0.625$.
+$a = 0.5$, $r = 0.2$. $|r| \lt 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5}{0.8} = 0.625$.
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/alevel/maths/pure-mathematics/sequences-and-series)
@@ -147,7 +147,7 @@ $T_d = \dfrac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆ = 3$ hours.
 
 <details>
 <summary>Q12. Find $\dfrac{dy}{dx}$ where $y = \dfrac◆LB◆x^2 e^x◆RB◆◆LB◆\sin x◆RB◆$.</summary>
-$u = x^2e^x$$v = \sin x$. $u' = e^x(x^2+2x)$$v' = \cos x$.
+$u = x^2e^x$, $v = \sin x$. $u' = e^x(x^2+2x)$, $v' = \cos x$.
 
 $\dfrac{dy}{dx} = \dfrac◆LB◆e^x(x^2+2x)\sin x - x^2e^x\cos x◆RB◆◆LB◆\sin^2 x◆RB◆$.
 
@@ -180,7 +180,7 @@ $V = \dfrac{4}{3}\pi r^3$. $\dfrac{dV}{dt} = 4\pi r^2\dfrac{dr}{dt} = 4\pi(25)(3
 
 <details>
 <summary>Q15. Evaluate $\displaystyle\int_0^1 x e^x\,dx$.</summary>
-By parts: $u=x$$dv=e^x\,dx$. $I = [xe^x]_0^1 - \int_0^1 e^x\,dx = e - (e-1) = 1$.
+By parts: $u=x$, $dv=e^x\,dx$. $I = [xe^x]_0^1 - \int_0^1 e^x\,dx = e - (e-1) = 1$.
 
 **If you get this wrong, revise:** [Integration](/docs/alevel/maths/pure-mathematics/integration)
 
@@ -200,7 +200,7 @@ $A = \int_0^1 (x - x^2)\,dx = \left[\dfrac{x^2}{2} - \dfrac{x^3}{3}\right]_0^1 =
 
 <details>
 <summary>Q17. Find the angle between $\mathbf{a} = \begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.</summary>
-$\mathbf{a}\cdot\mathbf{b} = 3-2-2 = -1$. $|\mathbf{a}| = \sqrt{6}$$|\mathbf{b}| = \sqrt{14}$.
+$\mathbf{a}\cdot\mathbf{b} = 3-2-2 = -1$. $|\mathbf{a}| = \sqrt{6}$, $|\mathbf{b}| = \sqrt{14}$.
 
 $\cos\theta = \dfrac◆LB◆-1◆RB◆◆LB◆\sqrt{84}◆RB◆ \implies \theta \approx 96.3^\circ$.
 
@@ -239,7 +239,7 @@ Suppose $\sqrt{5} = a/b$ in lowest terms. $5b^2 = a^2$So $5 \mid a^2 \implies 5 
 
 <details>
 <summary>Q21. Show $x^3 - x - 2 = 0$ has a root in $[1, 2]$.</summary>
-$f(1) = -2 \lt 0$$f(2) = 4 \gt 0$. Sign change, continuous function $\implies$ root in $(1,2)$.
+$f(1) = -2 \lt 0$, $f(2) = 4 \gt 0$. Sign change, continuous function $\implies$ root in $(1,2)$.
 
 **If you get this wrong, revise:**
 [Numerical Methods](/docs/alevel/maths/pure-mathematics/numerical-methods)
@@ -284,10 +284,10 @@ $\bar{x} = 10(3)+50 = 80$. $\sigma_x = 10(2) = 20$.
 ### Correlation and Regression
 
 <details>
-<summary>Q25. Given $S_{xx}=40$$S_{xy}=24$$S_{yy}=25$$\bar{x}=5$$\bar{y}=7$Find $r$ and the regression line of $y$ on $x$.</summary>
+<summary>Q25. Given $S_{xx}=40$, $S_{xy}=24$, $S_{yy}=25$, $\bar{x}=5$, $\bar{y}=7$Find $r$ and the regression line of $y$ on $x$.</summary>
 $r = \dfrac◆LB◆24◆RB◆◆LB◆\sqrt{40 \times 25}◆RB◆ = \dfrac◆LB◆24◆RB◆◆LB◆\sqrt{1000}◆RB◆ = \dfrac{24}{31.62} \approx 0.759$.
 
-$b = 24/40 = 0.6$$a = 7 - 0.6(5) = 4$. Line: $y = 4 + 0.6x$.
+$b = 24/40 = 0.6$, $a = 7 - 0.6(5) = 4$. Line: $y = 4 + 0.6x$.
 
 **If you get this wrong, revise:**
 [Correlation and Regression](/docs/alevel/maths/statistics/correlation-and-regression)
@@ -297,7 +297,7 @@ $b = 24/40 = 0.6$$a = 7 - 0.6(5) = 4$. Line: $y = 4 + 0.6x$.
 ### Probability
 
 <details>
-<summary>Q26. $P(A)=0.6$$P(B)=0.5$$P(A \cap B)=0.3$. Find $P(A|B)$ and $P(A \cup B)$.</summary>
+<summary>Q26. $P(A)=0.6$, $P(B)=0.5$, $P(A \cap B)=0.3$. Find $P(A|B)$ and $P(A \cup B)$.</summary>
 $P(A|B) = 0.3/0.5 = 0.6$. $P(A \cup B) = 0.6+0.5-0.3 = 0.8$.
 
 **If you get this wrong, revise:** [Probability](/docs/alevel/maths/statistics/probability)
@@ -314,7 +314,7 @@ $P = \dfrac{5}{8} \times \dfrac{4}{7} = \dfrac{20}{56} = \dfrac{5}{14}$.
 
 <details>
 <summary>Q28. A disease affects 2% of the population. A test is 95% accurate. Find $P(\mathrm{disease} \mid \mathrm{positive})$.</summary>
-$P(T^+|D) = 0.95$$P(T^+|D') = 0.05$. $P(T^+) = 0.95(0.02) + 0.05(0.98) = 0.019 + 0.049 = 0.068$.
+$P(T^+|D) = 0.95$, $P(T^+|D') = 0.05$. $P(T^+) = 0.95(0.02) + 0.05(0.98) = 0.019 + 0.049 = 0.068$.
 
 $P(D|T^+) = 0.019/0.068 = 19/68 \approx 0.279$.
 
@@ -355,7 +355,7 @@ $P(X \leq 3) = e^{-5}\left(1+5+\dfrac{25}{2}+\dfrac{125}{6}\right) = e^{-5}(1+5+
 
 <details>
 <summary>Q32. A coin is tossed 20 times, landing heads 15 times. Test at 5% if biased towards heads.</summary>
-$H_0: p=0.5$$H_1: p>0.5$. Under $H_0$: $X \sim B(20,0.5)$.
+$H_0: p=0.5$, $H_1: p>0.5$. Under $H_0$: $X \sim B(20,0.5)$.
 
 $P(X \geq 15) = 1-P(X \leq 14) \approx 0.0207 \lt 0.05$. **Reject** $H_0$: evidence of bias.
 
@@ -417,7 +417,7 @@ $R = 49\,\mathrm{N}$. $F_{\max} = 19.6\,\mathrm{N}$. $a = (30-19.6)/5 = 10.4/5 =
 
 <details>
 <summary>Q38. Masses $8\,\mathrm{kg}$ and $5\,\mathrm{kg}$ hang over a smooth pulley. Find the acceleration and tension.</summary>
-$8g-T=8a$$T-5g=5a$. Adding: $3g=13a \implies a = 3g/13 \approx 2.26\,\mathrm{m/s}^2$.
+$8g-T=8a$, $T-5g=5a$. Adding: $3g=13a \implies a = 3g/13 \approx 2.26\,\mathrm{m/s}^2$.
 
 $T = 5(g+a) = 5(9.8+2.26) = 60.3\,\mathrm{N}$.
 
@@ -439,7 +439,7 @@ $R_L = 500 - 216.7 = 283.3\,\mathrm{N}$.
 </details>
 
 <details>
-<summary>Q40. Find the centre of mass of masses $3\,\mathrm{kg}$$4\,\mathrm{kg}$$5\,\mathrm{kg}$ at $(0,0)$$(6,0)$$(3,4)$.</summary>
+<summary>Q40. Find the centre of mass of masses $3\,\mathrm{kg}$, $4\,\mathrm{kg}$, $5\,\mathrm{kg}$ at $(0,0)$, $(6,0)$, $(3,4)$.</summary>
 $\bar{x} = \dfrac{0+24+15}{12} = 39/12 = 3.25$. $\bar{y} = \dfrac{0+0+20}{12} = 5/3 \approx 1.67$.
 
 **If you get this wrong, revise:** [Moments](/docs/alevel/maths/mechanics/moments)
@@ -483,11 +483,11 @@ $J = m(v-u) = 0.15(-7-10) = 0.15(-17) = -2.55\,\mathrm{Ns}$. Magnitude: $2.55\,\
 </details>
 
 <details>
-<summary>Q45. Two bodies ($3\,\mathrm{kg}$ at $5\,\mathrm{m/s}$$2\,\mathrm{kg}$ at $-3\,\mathrm{m/s}$) collide with $e=0.5$. Find the velocities after collision.</summary>
+<summary>Q45. Two bodies ($3\,\mathrm{kg}$ at $5\,\mathrm{m/s}$, $2\,\mathrm{kg}$ at $-3\,\mathrm{m/s}$) collide with $e=0.5$. Find the velocities after collision.</summary>
 Momentum: $15-6 = 3v_1+2v_2 \implies 3v_1+2v_2 = 9$.
 Restitution: $v_2-v_1 = 0.5(5-(-3)) = 4 \implies v_2 = v_1+4$.
 
-$3v_1+2(v_1+4) = 9 \implies 5v_1 = 1 \implies v_1 = 0.2\,\mathrm{m/s}$$v_2 = 4.2\,\mathrm{m/s}$.
+$3v_1+2(v_1+4) = 9 \implies 5v_1 = 1 \implies v_1 = 0.2\,\mathrm{m/s}$, $v_2 = 4.2\,\mathrm{m/s}$.
 
 **If you get this wrong, revise:** [Momentum](/docs/alevel/maths/mechanics/momentum)
 

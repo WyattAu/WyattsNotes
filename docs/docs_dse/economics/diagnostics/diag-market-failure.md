@@ -21,7 +21,7 @@ The social optimum. (d) Calculate the deadweight loss of the free market outcome
 
 **Solution:**
 
-(a) Free market: $MPC = MPB$: $20 + 0.5Q = 100 - 0.8Q$$1.3Q = 80$$Q_m = 61.54$.
+(a) Free market: $MPC = MPB$: $20 + 0.5Q = 100 - 0.8Q$, $1.3Q = 80$, $Q_m = 61.54$.
 $P_m = 100 - 0.8(61.54) = \$50.77$.
 
 (b) Social optimum: $MSC = MSB$. $MSC = MPC + MEC = 20 + 0.5Q + 0.3Q = 20 + 0.8Q$.
@@ -119,7 +119,7 @@ More inelastic (shifts to $P = 200 - 0.5Q$), how does this change the tax incide
 (a) Free market: $200 - Q = 40 + Q$$2Q = 160$$Q_m = 80$$P_m = \$1.20$.
 
 (b) Social optimum: $MSC = MPC + MEC = (40 + Q) + 20 = 60 + Q = MSB = 200 - Q$. $2Q = 140$
-$Q^* = 70$$P^* = \$1.30$.
+$Q^* = 70$, $P^* = \$1.30$.
 
 (c) Pigouvian tax $= MEC = 20$ cents. New supply: $P = 60 + Q$. New equilibrium: $200 - Q = 60 + Q$
 $Q = 70$$P_b = \$1.30$, $P_s = \$1.10$.
@@ -189,9 +189,9 @@ Should it tax first? Justify using DWL calculations.
 **Solution:**
 
 (a) **Factory**: $MPC = MPB$: $30 + Q_f = 100 - Q_f$$2Q_f = 70$$Q_f = 35$$P_f = \$65$. **Driving**:
-$MPB = MC$: $60 - 0.5Q_d = 10$$0.5Q_d = 50$$Q_d = 100$.
+$MPB = MC$: $60 - 0.5Q_d = 10$, $0.5Q_d = 50$, $Q_d = 100$.
 
-(b) **Factory**: $MSC = MPC + MEC = 30 + 1.5Q_f = MSB = 100 - Q_f$. $2.5Q_f = 70$$Q_f^* = 28$
+(b) **Factory**: $MSC = MPC + MEC = 30 + 1.5Q_f = MSB = 100 - Q_f$. $2.5Q_f = 70$, $Q_f^* = 28$
 $P_f^* = \$72$. **Driving**: $MSC = MC + MEC = 10 + 0.3Q_d = MSB = 60 - 0.5Q_d$. $0.8Q_d = 50$,
 $Q_d^* = 62.5$.
 
@@ -272,7 +272,7 @@ $Q = (80 - 56)/0.2 = 120 = Q^*$.
 
 (d) DWL without the charge:
 
-$$DWL = \frac{1}{2} \times MEC_{at Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(300) \times (300 - 120) = \frac{1}{2} \times 90 \times 180 = \text{HK}\$8\,100$$
+$$DWL = \frac{1}{2} \times MEC_{at Q_m} \times (Q_m - Q^*) = \frac{1}{2} \times 0.3(300) \times (300 - 120) = \frac{1}{2} \times 90 \times 180 = \text{HK}\$8\,100$, $
 
 (thousands, i.e., HK$8.1 million per hour).
 
@@ -311,13 +311,13 @@ solutions and explain how they internalise the externality.
 
 $AR = \frac{TR}{B} = 50 - 0.2B$. $AC = \frac{TC}{B} = 10 + 0.5B$.
 
-$50 - 0.2B = 10 + 0.5B$$0.7B = 40$$B_{OA} = 57.14$ boats.
+$50 - 0.2B = 10 + 0.5B$, $0.7B = 40$, $B_{OA} = 57.14$ boats.
 
 (b) Social optimum: $MR = MC$.
 
 $MR = \frac{dTR}{dB} = 50 - 0.4B$. $MC = \frac{dTC}{dB} = 10 + B$.
 
-$50 - 0.4B = 10 + B$$1.4B = 40$$B^* = 28.57$ boats.
+$50 - 0.4B = 10 + B$, $1.4B = 40$, $B^* = 28.57$ boats.
 
 (c) Under open access, each boat owner considers only their private cost and revenue, not the
 externality they impose on others. Each additional boat reduces the catch per boat (because the fish
@@ -397,7 +397,7 @@ project. (b) Calculate the benefit-cost ratio. (c) Should the government proceed
 
 Present value of benefits (40-year annuity at 4%):
 
-$$PV = \frac{C}{r}\left(1 - \frac{1}{(1+r)^n}\right) = \frac{13}{0.04}\left(1 - \frac{1}{(1.04)^{40}}\right)$$
+$, $PV = \frac{C}{r}\left(1 - \frac{1}{(1+r)^n}\right) = \frac{13}{0.04}\left(1 - \frac{1}{(1.04)^{40}}\right)$, $
 
 $(1.04)^{40} = 4.8010$. $PV = 325 \times (1 - 0.2083) = 325 \times 0.7917 = \text{HK}\$257.3$
 billion.

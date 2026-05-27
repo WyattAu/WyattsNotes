@@ -485,7 +485,7 @@ The increasing deviation reflects the increasing number of lone pairs compressin
 | Notation    | Shape                | Bond Angles                     | Example |
 | ----------- | -------------------- | ------------------------------- | ------- |
 | AX$_5$      | Trigonal bipyramidal | 90$\degree$120$\degree$         | PCl$_5$ |
-| AX$_4$E     | Seesaw               | $\lt 90\degree$$\lt 120\degree$ | SF$_4$  |
+| AX$_4$E     | Seesaw               | $\lt 90\degree$, $\lt 120\degree$ | SF$_4$  |
 | AX$_3$E$_2$ | T-shaped             | $\lt 90\degree$                 | ClF$_3$ |
 | AX$_2$E$_3$ | Linear               | 180$\degree$                    | XeF$_2$ |
 
@@ -1046,7 +1046,7 @@ $$
 | 4       | 1          | Trigonal pyramidal   | $\lt 109.5\degree$              | NH$_3$  |
 | 4       | 2          | Bent                 | $\lt 109.5\degree$              | H$_2$O  |
 | 5       | 0          | Trigonal bipyramidal | 90$\degree$120$\degree$         | PCl$_5$ |
-| 5       | 1          | Seesaw               | $\lt 90\degree$$\lt 120\degree$ | SF$_4$  |
+| 5       | 1          | Seesaw               | $\lt 90\degree$, $\lt 120\degree$ | SF$_4$  |
 | 5       | 2          | T-shaped             | $\lt 90\degree$                 | ClF$_3$ |
 | 5       | 3          | Linear               | 180$\degree$                    | XeF$_2$ |
 | 6       | 0          | Octahedral           | 90$\degree$                     | SF$_6$  |
@@ -1137,7 +1137,7 @@ Higher boiling point.
 <details>
 <summary>Question 4: MO Theory and Bond Order</summary>
 
-Use molecular orbital theory to determine the bond order of $\mathrm{O}_2$$\mathrm{O}_2^+$And
+Use molecular orbital theory to determine the bond order of $\mathrm{O}_2$, $\mathrm{O}_2^+$And
 $\mathrm{O}_2^{2-}$. Arrange them in order of increasing bond length.
 
 </details>

@@ -128,7 +128,7 @@ Mass $= 8.5 \times 15\pi = 127.5\pi \approx 400.6$ g.
 ### IT-3: Exchange Rates and Best Value (with Number)
 
 **Question:** Product X costs $\$45$ USD or $38$ euros or $\pounds 32$. Exchange rates:
-$\$1 = \pounds 0.79$$\pounds 1 = 1.15$ euros. (a) Convert all prices to GBP and identify the
+$\$1 = \pounds 0.79$, $\pounds 1 = 1.15$ euros. (a) Convert all prices to GBP and identify the
 cheapest option. (b) A tourist has $\pounds 200$ and buys as many units of X as possible at the
 cheapest price. How many can they buy and what change do they receive? (c) If the pound strengthens
 by 5% against the dollar (i.e., $\pounds 1 = \$1.27 \times 1.05$), recalculate the USD price in GBP.

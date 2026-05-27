@@ -126,7 +126,7 @@ numbers is always a multiple of 8." Is this true? Prove or disprove with a count
 
 **Solution:**
 
-(a) Three consecutive odd numbers: $2k + 1$$2k + 3$$2k + 5$ (where $k$ is an integer).
+(a) Three consecutive odd numbers: $2k + 1$, $2k + 3$, $2k + 5$ (where $k$ is an integer).
 
 Sum $= (2k + 1) + (2k + 3) + (2k + 5) = 6k + 9 = 3(2k + 3)$.
 
@@ -134,7 +134,7 @@ Since $2k + 3$ is an integer, the sum is a multiple of 3.
 
 (b) $u_1 = 1 + 3 = 4$. $u_2 = 4 + 6 = 10$. $u_3 = 9 + 9 = 18$. $u_4 = 16 + 12 = 28$.
 
-Differences: $10 - 4 = 6$$18 - 10 = 8$$28 - 18 = 10$. The differences are 6, 8, 10 -- a linear
+Differences: $10 - 4 = 6$, $18 - 10 = 8$, $28 - 18 = 10$. The differences are 6, 8, 10 -- a linear
 sequence with common difference 2. This confirms the sequence is quadratic (second differences are
 constant).
 
@@ -158,7 +158,7 @@ $\pounds 1.50$ per km with no fixed fee. For what range of distances is the firs
 **Solution:**
 
 (a) Let fixed fee $= f$Cost per km $= p$. $f + 10p = 18$ and $f + 25p = 33$. Subtracting:
-$15p = 15$$p = \pounds 1$ per km. $f = 18 - 10 = \pounds 8$.
+$15p = 15$, $p = \pounds 1$ per km. $f = 18 - 10 = \pounds 8$.
 
 (b) $C = 8 + d$ (where $d$ is in km and $C$ in pounds).
 

@@ -309,7 +309,7 @@ Chemistry, forensics, environmental science, and many other fields.
 
 ### How It Works
 
-1. **Ionisation:** Atoms are ionised (given a charge $+q$$+e$).
+1. **Ionisation:** Atoms are ionised (given a charge $+q$, $+e$).
 2. **Acceleration:** Ions are accelerated through a potential difference $V$. The kinetic energy
    gained equals the electrical potential energy lost:
 

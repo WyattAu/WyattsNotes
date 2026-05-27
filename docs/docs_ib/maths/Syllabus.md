@@ -208,7 +208,7 @@ Expand $(1 + 2x)^5$ in ascending powers of $x$ up to and including the term in $
 <details>
 <summary>Solution</summary>
 
-- Using the binomial theorem with $a = 1$$b = 2x$$n = 5$:
+- Using the binomial theorem with $a = 1$, $b = 2x$, $n = 5$:
 - $(1 + 2x)^5 = 1 + 5(2x) + 10(2x)^2 + 10(2x)^3 + \cdots$
 - $= 1 + 10x + 40x^2 + 80x^3 + \cdots$
 
@@ -324,7 +324,7 @@ $x = 2$.
 <details>
 <summary>Solution</summary>
 
-- **Quotient rule:** $u = x^2 + 1$$v = x - 1$. Then $u' = 2x$$v' = 1$.
+- **Quotient rule:** $u = x^2 + 1$, $v = x - 1$. Then $u' = 2x$, $v' = 1$.
 - $\dfrac{dy}{dx} = \dfrac{2x(x - 1) - (x^2 + 1)}{(x - 1)^2} = \dfrac{2x^2 - 2x - x^2 - 1}{(x - 1)^2} = \dfrac{x^2 - 2x - 1}{(x - 1)^2}$
 - At $x = 2$: $\dfrac{dy}{dx} = \dfrac{4 - 4 - 1}{1} = -1$
 - **Point:** $y(2) = (4 + 1)/(2 - 1) = 5$So the point is $(2, 5)$.
@@ -393,7 +393,7 @@ Manipulation.
 <details>
 <summary>Solution</summary>
 
-- $u_1 = 8$$r = 4/8 = 0.5$. Since $|r| \lt 1$The sum converges.
+- $u_1 = 8$, $r = 4/8 = 0.5$. Since $|r| \lt 1$The sum converges.
 - $S_\infty = \dfrac{8}{1 - 0.5} = 16$
 
 If you get this wrong, revise: Sum to infinity of geometric series (Topic 1).
@@ -446,7 +446,7 @@ If you get this wrong, revise: Finding inverse functions and domain restrictions
 
 ### Geometry and Trigonometry
 
-5. Triangle $ABC$ has sides $a = 9$$b = 7$$c = 5$. Find the largest angle.
+5. Triangle $ABC$ has sides $a = 9$, $b = 7$, $c = 5$. Find the largest angle.
 
 <details>
 <summary>Solution</summary>
@@ -509,7 +509,7 @@ If you get this wrong, revise: Inverse normal distribution and percentiles (Topi
 <details>
 <summary>Solution</summary>
 
-- Let $u = \sin x$$du = \cos x\,dx$:
+- Let $u = \sin x$, $du = \cos x\,dx$:
 - $\displaystyle\int_0^{\pi/2} u\,du = \left[\dfrac{u^2}{2}\right]_0^{\pi/2} = \left[\dfrac{\sin^2 x}{2}\right]_0^{\pi/2} = \dfrac{1}{2} - 0 = \dfrac{1}{2}$
 
 If you get this wrong, revise: Integration by substitution (Topic 5).
@@ -534,8 +534,8 @@ If you get this wrong, revise: Chain rule and equation of a tangent (Topic 5).
 <details>
 <summary>Solution</summary>
 
-- Substitution: let $u = \ln x$$du = dx/x$.
-- When $x = 1$$u = 0$; when $x = e$$u = 1$.
+- Substitution: let $u = \ln x$, $du = dx/x$.
+- When $x = 1$, $u = 0$; when $x = e$, $u = 1$.
 - $\displaystyle\int_0^1 u\,du = \left[\dfrac{u^2}{2}\right]_0^1 = \dfrac{1}{2}$
 
 If you get this wrong, revise: Integration by substitution (Topic 5).

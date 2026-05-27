@@ -828,7 +828,7 @@ IB Physics exams use specific command terms that indicate the expected depth of 
   marks.
 - **Units:** Every numerical answer must have a correct unit. Writing "15" instead of "15 J" will
   lose a mark, even if the calculation is correct.
-- **Negative signs:** Particularly in thermodynamics ($Q$$W$$\Delta U$) and lens equations, sign
+- **Negative signs:** Particularly in thermodynamics ($Q$, $W$, $\Delta U$) and lens equations, sign
   conventions matter. Be consistent.
 - **Showing work:** In Paper 2, method marks are awarded even if the final answer is wrong. Always
   show your working , including the formula you are using and substitution of values.

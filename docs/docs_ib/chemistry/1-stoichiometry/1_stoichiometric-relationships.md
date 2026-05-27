@@ -116,7 +116,7 @@ Molecular formula: C$_6$H$_{12}$O$_6$ (glucose).
 ### Hydrated Salts
 
 A hydrated salt contains water of crystallisation. The formula is written as, for example,
-CuSO$_4$$\cdot$5H$\_2$O.
+CuSO$_4$, $\cdot$5H$\_2$O.
 
 To find the number of water molecules:
 
@@ -127,7 +127,7 @@ To find the number of water molecules:
 
 :::info[Example]
 
-$12.5\mathrm{ g}$ of hydrated copper(II) sulfate, CuSO$_4$$\cdot$xH$_2$O, is heated to give
+$12.5\mathrm{ g}$ of hydrated copper(II) sulfate, CuSO$_4$, $\cdot$xH$_2$O, is heated to give
 $8.0\mathrm{ g}$ of anhydrous CuSO$_4$. Find $x$.
 
 Mass of water lost $= 12.5 - 8.0 = 4.5\mathrm{ g}$.
@@ -144,7 +144,7 @@ $$
 X = \frac{0.250}{0.0501} = 4.99 \approx 5
 $$
 
-Formula: CuSO$_4$$\cdot$5H$\_2$O.
+Formula: CuSO$_4$, $\cdot$5H$\_2$O.
 
 :::
 
@@ -306,10 +306,10 @@ Where:
 
 ### Molar Volume
 
-At STP ($0\degree\mathrm{C}$$100\mathrm{ kPa}$), one mole of any ideal gas occupies
+At STP ($0\degree\mathrm{C}$, $100\mathrm{ kPa}$), one mole of any ideal gas occupies
 $22.7\mathrm{ L}$.
 
-At RTP ($25\degree\mathrm{C}$$100\mathrm{ kPa}$), one mole occupies $24.8\mathrm{ L}$.
+At RTP ($25\degree\mathrm{C}$, $100\mathrm{ kPa}$), one mole occupies $24.8\mathrm{ L}$.
 
 :::info[Example]
 
@@ -672,7 +672,7 @@ Constants, and $m$ is molality.
 
 :::info[Example]
 
-$12.5\mathrm{ g}$ of hydrated magnesium sulfate, MgSO$_4$$\cdot$xH$_2$O, is heated to constant mass
+$12.5\mathrm{ g}$ of hydrated magnesium sulfate, MgSO$_4$, $\cdot$xH$_2$O, is heated to constant mass
 Of $6.1\mathrm{ g}$.
 
 Mass of water lost $= 12.5 - 6.1 = 6.4\mathrm{ g}$.
@@ -689,7 +689,7 @@ $$
 X = \frac{0.355}{0.0507} = 7.0
 $$
 
-Formula: MgSO$_4$$\cdot$7H$\_2$O (Epsom salt).
+Formula: MgSO$_4$, $\cdot$7H$\_2$O (Epsom salt).
 
 :::
 
@@ -982,7 +982,7 @@ $$V_{\mathrm{theoretical}} = 0.0800 \times 24.8 = 1.98\mathrm{ L}$$
 <summary>Question 3: Ideal Gas Law</summary>
 
 A gas occupies $3.00\mathrm{ L}$ at $350\mathrm{ K}$ and $150\mathrm{ kPa}$. What volume does it
-Occupy at STP ($273\mathrm{ K}$$100\mathrm{ kPa}$)?
+Occupy at STP ($273\mathrm{ K}$, $100\mathrm{ kPa}$)?
 
 </details>
 

@@ -75,7 +75,7 @@ Masses:
 $3.0 \times 10^7\,\text{J}$).
 
 Take
-$1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$$1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
+$1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$, $1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
 
 **Solution:**
 
@@ -117,7 +117,7 @@ The dominant overall reaction in the Sun is:
 $$4p \to ^4_2\text{He} + 2e^+ + 2\nu_e + 26.7\,\text{MeV}$$
 
 Masses:
-$m_p = 1.00728\,\text{u}$$m_{^{4}\text{He}} = 4.00150\,\text{u}$$m_{e^+} = 0.00055\,\text{u}$.
+$m_p = 1.00728\,\text{u}$, $m_{^{4}\text{He}} = 4.00150\,\text{u}$, $m_{e^+} = 0.00055\,\text{u}$.
 
 (a) Verify the Q-value of the overall reaction using mass data.
 
@@ -127,7 +127,7 @@ $m_p = 1.00728\,\text{u}$$m_{^{4}\text{He}} = 4.00150\,\text{u}$$m_{e^+} = 0.000
 per second.
 
 Take
-$1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$$c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$.
+$1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$, $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$.
 
 **Solution:**
 
@@ -286,7 +286,7 @@ The deuterium-tritium fusion reaction is:
 $$^{2}_{1}\text{H} + ^{3}_{1}\text{H} \to ^{4}_{2}\text{He} + ^{1}_{0}\text{n} + 17.6\,\text{MeV}$$
 
 Masses:
-$^{2}\text{H} = 2.01410\,\text{u}$$^{3}\text{H} = 3.01605\,\text{u}$$^{4}\text{He} = 4.00260\,\text{u}$$^{1}\text{n} = 1.00867\,\text{u}$.
+$^{2}\text{H} = 2.01410\,\text{u}$, $^{3}\text{H} = 3.01605\,\text{u}$, $^{4}\text{He} = 4.00260\,\text{u}$, $^{1}\text{n} = 1.00867\,\text{u}$.
 
 (a) Verify the Q-value using mass data.
 
@@ -297,7 +297,7 @@ deuterium were used in D-T fusion (with sufficient tritium), calculate the total
 and compare it with the world's annual energy consumption (approximately
 $6.0 \times 10^{20}\,\text{J}$).
 
-Take $1\,\text{u} = 931.5\,\text{MeV}/c^2$$1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
+Take $1\,\text{u} = 931.5\,\text{MeV}/c^2$, $1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
 
 **Solution:**
 

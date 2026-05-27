@@ -118,7 +118,7 @@ Codomain (surjectivity).
 
 <details>
 <summary>Example</summary>
-Find the inverse of $f(x) = \frac{2x + 3}{x - 1}$$x \neq 1$.
+Find the inverse of $f(x) = \frac{2x + 3}{x - 1}$, $x \neq 1$.
 
 $$y = \frac{2x + 3}{x - 1}$$
 
@@ -173,7 +173,7 @@ Case 1: $a, b \geq 0$. Then $|a + b| = a + b = |a| + |b|$. Equality holds.
 Case 2: $a, b \leq 0$. Then $a + b \leq 0$So $|a + b| = -(a + b) = -a - b = |a| + |b|$. Equality
 Holds.
 
-Case 3: $a \geq 0$$b \leq 0$. If $a + b \geq 0$: $|a + b| = a + b \leq a + (-b) = |a| + |b|$. If
+Case 3: $a \geq 0$, $b \leq 0$. If $a + b \geq 0$: $|a + b| = a + b \leq a + (-b) = |a| + |b|$. If
 $a + b \leq 0$: $|a + b| = -(a + b) = -a - b \leq a - b = |a| + |b|$ (since $a \geq 0$ implies
 $a \geq -a$I.e., $2a \geq 0$). $\blacksquare$
 
@@ -449,7 +449,7 @@ Note: the horizontal shift is 2 (not 4), because $2x - 4 = 2(x - 2)$.
 <summary>Solution</summary>
 Domain: $x \neq 3$I.e., $\mathbb{R} \setminus \{3\}$.
 
-Range: As $x \to 3^+$$f(x) \to +\infty$; as $x \to 3^-$$f(x) \to -\infty$. As $x \to \pm\infty$
+Range: As $x \to 3^+$, $f(x) \to +\infty$; as $x \to 3^-$, $f(x) \to -\infty$. As $x \to \pm\infty$
 $f(x) \to 2$. So $f(x) \neq 2$.
 
 Range: $\mathbb{R} \setminus \{2\}$.
@@ -470,7 +470,7 @@ $f^{-1}(x) = \frac{1}{x - 2} + 3$Domain $x \neq 2$.
 <summary>Solution</summary>
 Completing the square: $f(x) = (x - 2)^2 + 5$.
 
-For $x \geq 2$$f$ is injective (strictly increasing).
+For $x \geq 2$, $f$ is injective (strictly increasing).
 
 $$y = (x - 2)^2 + 5 \implies (x - 2)^2 = y - 5 \implies x - 2 = \sqrt{y - 5}$$
 
@@ -588,7 +588,7 @@ $$-4 < x < \frac{2}{3}$$
 
 <hr />
 
-**Problem 8.** Given $f(x) = e^{2x}$ and $g(x) = \ln(x + 1)$Find $f^{-1}$$g^{-1}$And the Domain of
+**Problem 8.** Given $f(x) = e^{2x}$ and $g(x) = \ln(x + 1)$Find $f^{-1}$, $g^{-1}$And the Domain of
 $f \circ g$.
 
 <details>
@@ -638,7 +638,7 @@ Bijective, and find $f^{-1}$.
 
 <details>
 <summary>Solution</summary>
-**Injective:** $f(x) = x^2 + 4x = (x+2)^2 - 4$. For $x \geq 0$$x + 2 > 0$So $(x+2)^2$ is strictly increasing, hence $f$ is strictly increasing, hence injective.
+**Injective:** $f(x) = x^2 + 4x = (x+2)^2 - 4$. For $x \geq 0$, $x + 2 > 0$So $(x+2)^2$ is strictly increasing, hence $f$ is strictly increasing, hence injective.
 
 **Surjective:** For any $y \geq 0$: $x^2 + 4x - y = 0$. By the quadratic formula:
 $x = \frac◆LB◆-4 + \sqrt{16 + 4y}◆RB◆◆LB◆2◆RB◆ = -2 + \sqrt{4 + y}$. Since $y \geq 0$:
@@ -694,7 +694,7 @@ $\{x \in \mathbb{R} : f(x) \geq 1\} = \{x : 2x + 3 \geq 1\} = \{x : x \geq -1\} 
 <summary>Solution</summary>
 $$f(f(x)) = \frac◆LB◆3 \cdot \frac{3x+2}{x-3} + 2◆RB◆◆LB◆\frac{3x+2}{x-3} - 3◆RB◆ = \frac◆LB◆\frac{3(3x+2) + 2(x-3)}{x-3}◆RB◆◆LB◆\frac{3x+2 - 3(x-3)}{x-3}◆RB◆ = \frac{9x + 6 + 2x - 6}{3x + 2 - 3x + 9} = \frac{11x}{11} = x$$
 
-Since $f(f(x)) = x$$f$ is self-inverse. ✓
+Since $f(f(x)) = x$, $f$ is self-inverse. ✓
 
 </details>
 <b>If you get this wrong, revise:</b> [Self-inverse functions](#8-self-inverse-functions)

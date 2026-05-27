@@ -370,7 +370,7 @@ Assume $n$ is even, so $n = 2k$ for some $k \in \mathbb{Z}$.
 
 $3n + 2 = 3(2k) + 2 = 6k + 2 = 2(3k + 1)$
 
-Since $3k + 1 \in \mathbb{Z}$$3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then $n$ is
+Since $3k + 1 \in \mathbb{Z}$, $3n + 2$ is even. By contrapositive, if $3n + 2$ is odd, then $n$ is
 Odd.
 
 </details>
@@ -517,14 +517,14 @@ Actually, we need $P(8)$: two 4-cent stamps. $P(9)$: one 4-cent + one 5-cent. $P
 Stamps. $P(11)$: ... Hmm, $P(12)$: three 4-cent stamps. $P(13)$: two 4-cent + one 5-cent. $P(14)$:
 One 4-cent + two 5-cent. $P(15)$: three 5-cent stamps.
 
-Let us use base cases $P(12)$$P(13)$$P(14)$$P(15)$. Strong inductive hypothesis: assume $P(j)$ For
+Let us use base cases $P(12)$, $P(13)$, $P(14)$, $P(15)$. Strong inductive hypothesis: assume $P(j)$ For
 all $12 \le j \le k$Where $k \ge 15$.
 
 For $P(k+1)$: note that $(k+1) - 4 = k - 3 \ge 12$ (since $k \ge 15$). By strong IH, $P(k-3)$ holds,
 Meaning we can form $(k-3)$ cents. Adding one 4-cent stamp gives $(k-3) + 4 = k+1$ cents.
 
 By strong induction, $P(n)$ holds for all $n \ge 12$. But we should verify the smaller cases: $P(4)$
-Through $P(11)$. We find $P(4)$$P(5)$$P(8)$$P(9)$$P(10)$ hold, but $P(6)$$P(7)$$P(11)$ Do not. So
+Through $P(11)$. We find $P(4)$, $P(5)$, $P(8)$, $P(9)$, $P(10)$ hold, but $P(6)$, $P(7)$, $P(11)$ Do not. So
 the correct statement is: all postage $n \ge 8$ except $n = 11$. Or: all $n \ge 12$.
 
 The cleanest formulation: all $n \ge 12$ can be formed. Base cases $P(12)$ through $P(15)$.
@@ -565,9 +565,9 @@ When $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681$Which is composite ($41 \times 41$)
 Counterexample. This asymmetry is fundamental to mathematical logic. :::
 
 <details>
-<summary>Exercise: Disprove: "For all positive integers $a$ and $b$$\gcd(a+b, a-b) = \gcd(a, b)$."</summary>
+<summary>Exercise: Disprove: "For all positive integers $a$ and $b$, $\gcd(a+b, a-b) = \gcd(a, b)$."</summary>
 
-Take $a = 3$$b = 1$. Then $\gcd(3+1, 3-1) = \gcd(4, 2) = 2$But $\gcd(3, 1) = 1$. Since $2 \ne 1$The
+Take $a = 3$, $b = 1$. Then $\gcd(3+1, 3-1) = \gcd(4, 2) = 2$But $\gcd(3, 1) = 1$. Since $2 \ne 1$The
 statement is false.
 
 </details>
@@ -646,9 +646,9 @@ Then $\log_2{3} = \frac{p}{q}$ for some coprime positive integers $p, q$ with $q
 
 This means $2^{p/q} = 3$So $2^p = 3^q$.
 
-Since $p \ge 1$$2^p$ is a power of 2. Its only prime factor is 2.
+Since $p \ge 1$, $2^p$ is a power of 2. Its only prime factor is 2.
 
-Since $q \ge 1$$3^q$ is a power of 3. Its only prime factor is 3.
+Since $q \ge 1$, $3^q$ is a power of 3. Its only prime factor is 3.
 
 By the Fundamental Theorem of Arithmetic, prime factorizations are unique. The number $2^p = 3^q$
 Would need to have prime factorization consisting of only 2's AND only 3's simultaneously. This is
@@ -727,7 +727,7 @@ $n \in \mathbb{Z}$.
 
 $ax + by = (dm)x + (dn)y = d(mx + ny)$.
 
-Since $mx + ny \in \mathbb{Z}$$d \mid (ax + by)$. $\blacksquare$
+Since $mx + ny \in \mathbb{Z}$, $d \mid (ax + by)$. $\blacksquare$
 
 :::note This theorem is the foundation of the Euclidean algorithm. The expression $ax + by$ is
 Called a **linear combination** of $a$ and $b$. The greatest common divisor $\gcd(a, b)$ can always
@@ -772,7 +772,7 @@ $\frac{m + c}{2} \ge \sqrt{mc} \ge \sqrt{\sqrt{ab} \cdot c} = (abc)^{1/4}$
 Wait, that gives us $\frac{\frac{a+b}{2} + c}{2} \ge (abc)^{1/4}$I.e.,
 $\frac{a+b+2c}{4} \ge (abc)^{1/4}$.
 
-That is not quite right for three-variable AM-GM. A cleaner approach: let $a = x^3$$b = y^3$
+That is not quite right for three-variable AM-GM. A cleaner approach: let $a = x^3$, $b = y^3$
 $c = z^3$ with $x, y, z \ge 0$. We need $\frac{x^3 + y^3 + z^3}{3} \ge xyz$.
 
 Consider $x^3 + y^3 + z^3 - 3xyz = \frac{1}{2}(x+y+z)[(x-y)^2 + (y-z)^2 + (z-x)^2] \ge 0$.
@@ -1203,7 +1203,7 @@ Preserved. :::
 
 4. Prove that if $n^2$ is divisible by 3, then $n$ is divisible by 3.
 
-5. Disprove: "For all real numbers $x$$x^2 \gt x$."
+5. Disprove: "For all real numbers $x$, $x^2 \gt x$."
 
 6. Negate: "For every real number $x$There exists a real number $y$ such that $x + y = 0$."
 

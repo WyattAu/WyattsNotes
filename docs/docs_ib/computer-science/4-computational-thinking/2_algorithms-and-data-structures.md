@@ -1932,7 +1932,7 @@ Array access by index, hash table lookup (average case), stack push and pop.
 
 **$O(\log n)$ -- Logarithmic time:** The operation time grows logarithmically with input size. Each
 Step reduces the problem size by a constant fraction. Examples: binary search, finding an element in
-A balanced BST. For $n = 1000000$$\log_2 n \approx 20$.
+A balanced BST. For $n = 1000000$, $\log_2 n \approx 20$.
 
 **$O(n)$ -- Linear time:** The operation time grows linearly with input size. Examples: linear
 Search, iterating through an array, finding the maximum element.
@@ -1943,7 +1943,7 @@ Complexity for comparison-based sorting, as proven by the comparison sort lower 
 
 **$O(n^2)$ -- Quadratic time:** The operation time grows with the square of the input size.
 Examples: bubble sort, selection sort, insertion sort (worst case), comparing all pairs of elements.
-For $n = 10000$$n^2 = 100000000$.
+For $n = 10000$, $n^2 = 100000000$.
 
 **$O(2^n)$ -- Exponential time:** The operation time doubles with each additional input element.
 Examples: brute-force solutions to the traveling salesman problem, recursive Fibonacci without
@@ -2100,7 +2100,7 @@ This is the same logarithmic pattern as binary search: each iteration halves the
 **Common Pitfalls -- Computational Complexity**
 
 - **Confusing $O(n \log n)$ with $O(n)$:** These are different classes. For
-  $n = 10^6$$n \log_2 n \approx 2 \times 10^7$ while $n = 10^6$ -- a factor of 20 difference.
+  $n = 10^6$, $n \log_2 n \approx 2 \times 10^7$ while $n = 10^6$ -- a factor of 20 difference.
 - **Adding complexities incorrectly:** Sequential loops use the sum rule:
   $O(f) + O(g) = O(\max(f, g))$. Only multiply for nested loops.
 - **Ignoring the worst case:** An algorithm that is $O(n)$ average but $O(n^2)$ worst case may be

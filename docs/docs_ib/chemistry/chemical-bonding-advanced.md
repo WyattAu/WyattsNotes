@@ -37,19 +37,19 @@ The repulsion between electron pairs (both bonding and lone pairs) around a cent
 
 | Steric number | Lone pairs | Shape                | Bond angle                      | Example                                          |
 | ------------- | ---------- | -------------------- | ------------------------------- | ------------------------------------------------ |
-| $2$           | $0$        | Linear               | $180\degree$                    | $\mathrm{BeCl}_2$$\mathrm{CO}_2$                 |
-| $3$           | $0$        | Trigonal planar      | $120\degree$                    | $\mathrm{BF}_3$$\mathrm{SO}_3$                   |
-| $3$           | $1$        | Bent (V-shaped)      | $\lt 120\degree$                | $\mathrm{SO}_2$$\mathrm{O}_3$                    |
-| $4$           | $0$        | Tetrahedral          | $109.5\degree$                  | $\mathrm{CH}_4$$\mathrm{NH}_4^+$                 |
-| $4$           | $1$        | Trigonal pyramidal   | $\lt 109.5\degree$              | $\mathrm{NH}_3$$\mathrm{PH}_3$                   |
-| $4$           | $2$        | Bent                 | $\lt 109.5\degree$              | $\mathrm{H}_2\mathrm{O}$$\mathrm{H}_2\mathrm{S}$ |
-| $5$           | $0$        | Trigonal bipyramidal | $120\degree, 90\degree$         | $\mathrm{PF}_5$$\mathrm{PCl}_5$                  |
+| $2$           | $0$        | Linear               | $180\degree$                    | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$                 |
+| $3$           | $0$        | Trigonal planar      | $120\degree$                    | $\mathrm{BF}_3$, $\mathrm{SO}_3$                   |
+| $3$           | $1$        | Bent (V-shaped)      | $\lt 120\degree$                | $\mathrm{SO}_2$, $\mathrm{O}_3$                    |
+| $4$           | $0$        | Tetrahedral          | $109.5\degree$                  | $\mathrm{CH}_4$, $\mathrm{NH}_4^+$                 |
+| $4$           | $1$        | Trigonal pyramidal   | $\lt 109.5\degree$              | $\mathrm{NH}_3$, $\mathrm{PH}_3$                   |
+| $4$           | $2$        | Bent                 | $\lt 109.5\degree$              | $\mathrm{H}_2\mathrm{O}$, $\mathrm{H}_2\mathrm{S}$ |
+| $5$           | $0$        | Trigonal bipyramidal | $120\degree, 90\degree$         | $\mathrm{PF}_5$, $\mathrm{PCl}_5$                  |
 | $5$           | $1$        | Seesaw               | $\lt 90\degree, \lt 120\degree$ | $\mathrm{SF}_4$                                  |
 | $5$           | $2$        | T-shaped             | $\lt 90\degree$                 | $\mathrm{ClF}_3$                                 |
-| $5$           | $3$        | Linear               | $180\degree$                    | $\mathrm{XeF}_2$$\mathrm{I}_3^-$                 |
-| $6$           | $0$        | Octahedral           | $90\degree$                     | $\mathrm{SF}_6$$\mathrm{PF}_6^-$                 |
-| $6$           | $1$        | Square pyramidal     | $\lt 90\degree$                 | $\mathrm{BrF}_5$$\mathrm{IF}_5$                  |
-| $6$           | $2$        | Square planar        | $90\degree$                     | $\mathrm{XeF}_4$$\mathrm{ICl}_4^-$               |
+| $5$           | $3$        | Linear               | $180\degree$                    | $\mathrm{XeF}_2$, $\mathrm{I}_3^-$                 |
+| $6$           | $0$        | Octahedral           | $90\degree$                     | $\mathrm{SF}_6$, $\mathrm{PF}_6^-$                 |
+| $6$           | $1$        | Square pyramidal     | $\lt 90\degree$                 | $\mathrm{BrF}_5$, $\mathrm{IF}_5$                  |
+| $6$           | $2$        | Square planar        | $90\degree$                     | $\mathrm{XeF}_4$, $\mathrm{ICl}_4^-$               |
 
 ### Bond Angle Distortions
 
@@ -120,7 +120,7 @@ $$
 ### Sigma and Pi Bonds
 
 - **Sigma ($\sigma$) bond**: formed by head-on overlap of orbitals along the internuclear axis.
-  Always the first bond between two atoms. Can be formed by $s$-$s$$s$-$p$$p$-$p$Or hybrid-hybrid
+  Always the first bond between two atoms. Can be formed by $s$-$s$, $s$-$p$, $p$-$p$Or hybrid-hybrid
   overlap.
 - **Pi ($\pi$) bond**: formed by sideways overlap of parallel $p$-orbitals. Always the second (or
   third) bond in a multiple bond.
@@ -158,13 +158,13 @@ Molecular orbitals that are delocalised over the entire molecule.
 
 ### MO Diagrams for Diatomic Molecules
 
-For homonuclear diatomics ($\mathrm{O}_2$$\mathrm{F}_2$And beyond):
+For homonuclear diatomics ($\mathrm{O}_2$, $\mathrm{F}_2$And beyond):
 
 $$
 \sigma_{1s} \lt \sigma_{1s}^* \lt \sigma_{2s} \lt \sigma_{2s}^* \lt \sigma_{2p_z} \lt \pi_{2p_x} = \pi_{2p_y} \lt \pi_{2p_x}^* = \pi_{2p_y}^* \lt \sigma_{2p_z}^*
 $$
 
-For $\mathrm{B}_2$$\mathrm{C}_2$$\mathrm{N}_2$ (and $\mathrm{Li}_2$$\mathrm{Be}_2$), the
+For $\mathrm{B}_2$, $\mathrm{C}_2$, $\mathrm{N}_2$ (and $\mathrm{Li}_2$, $\mathrm{Be}_2$), the
 $\sigma_{2p_z}$ and $\pi_{2p}$ levels are reversed:
 
 $$
@@ -254,7 +254,7 @@ Broaden into **energy bands** due to orbital overlap.
 
 | Type          | Band gap    | Conductivity                    | Examples                                                             |
 | ------------- | ----------- | ------------------------------- | -------------------------------------------------------------------- |
-| Metal         | $E_g = 0$   | High; electrons promoted        | $\mathrm{Cu}$$\mathrm{Fe}$$\mathrm{Na}$                              |
+| Metal         | $E_g = 0$   | High; electrons promoted        | $\mathrm{Cu}$, $\mathrm{Fe}$, $\mathrm{Na}$                              |
 | Semiconductor | Small $E_g$ | Moderate; temperature-dependent | $\mathrm{Si}$ ($1.1\mathrm{ eV}$), $\mathrm{Ge}$ ($0.7\mathrm{ eV}$) |
 | Insulator     | Large $E_g$ | Very low                        | Diamond ($5.5\mathrm{ eV}$), $\mathrm{SiO}_2$                        |
 
@@ -570,15 +570,15 @@ Point, hardness, and tensile strength compared to sodium.
   $sp^3$Not $sp^2$.
 
 - **Reversing the MO energy ordering between $\mathrm{N}_2$ and $\mathrm{O}_2$**: For
-  $\mathrm{B}_2$$\mathrm{C}_2$$\mathrm{N}_2$ (and lighter), $\pi_{2p}$ is lower than
-  $\sigma_{2p_z}$. For $\mathrm{O}_2$$\mathrm{F}_2$$\mathrm{Ne}_2$The ordering reverses. The
+  $\mathrm{B}_2$, $\mathrm{C}_2$, $\mathrm{N}_2$ (and lighter), $\pi_{2p}$ is lower than
+  $\sigma_{2p_z}$. For $\mathrm{O}_2$, $\mathrm{F}_2$, $\mathrm{Ne}_2$The ordering reverses. The
   boundary is between $\mathrm{N}_2$ and $\mathrm{O}_2$.
 
 - **Treating antibonding electrons as equivalent to bonding electrons**: Each antibonding electron
   weakens the bond by the same amount a bonding electron strengthens it. An electron in a $\pi^*$
   orbital reduces the bond order by 0.5.
 
-- **Assuming metals always have high melting points**: Mercury ($\mathrm{Hg}$$Z = 80$) is a liquid
+- **Assuming metals always have high melting points**: Mercury ($\mathrm{Hg}$, $Z = 80$) is a liquid
   at room temperature (m.p. $-39\degree\mathrm{C}$) because it has a large ionic radius and only 2
   valence electrons, producing weak metallic bonding despite being in Period 6.
 
@@ -745,7 +745,7 @@ $$U = \frac{1200.2 \cdot z_+ z_- \cdot v}{r_+ + r_-}\left(1 - \frac{34.5}{r_+ + 
 
 Where $v$ is the number of ions per formula unit ($v = 2$ for $\mathrm{KBr}$), $r_+$ and $r_-$ are
 ionic radii in pm, and $z_+, z_-$ are ion charges. Given:
-$r(\mathrm{K}^+) = 138\;\mathrm{pm}$$r(\mathrm{Br}^-) = 196\;\mathrm{pm}$.
+$r(\mathrm{K}^+) = 138\;\mathrm{pm}$, $r(\mathrm{Br}^-) = 196\;\mathrm{pm}$.
 
 <details>
 <summary>Solution</summary>
@@ -803,7 +803,7 @@ the position of lone pairs in the trigonal bipyramidal vs octahedral electron pa
 <summary>Problem 11: Quantitative -- MO Theory Bond Length Correlation</summary>
 
 Use MO theory to rank the following diatomic species in order of increasing bond length:
-$\mathrm{O}_2$$\mathrm{O}_2^+$$\mathrm{O}_2^-$$\mathrm{O}_2^{2-}$. For each species, state the bond
+$\mathrm{O}_2$, $\mathrm{O}_2^+$, $\mathrm{O}_2^-$, $\mathrm{O}_2^{2-}$. For each species, state the bond
 order and number of unpaired electrons. Explain the trend in bond length using the concept of bond
 order.
 
@@ -856,7 +856,7 @@ from the value in methane.
   valence electrons (6 bonds, 0 lone pairs). Do not force an octet on central atoms that can
   accommodate more.
 
-- **Assuming that polar bonds always make a molecule polar**: $\mathrm{CCl}_4$$\mathrm{CO}_2$And
+- **Assuming that polar bonds always make a molecule polar**: $\mathrm{CCl}_4$, $\mathrm{CO}_2$And
   $\mathrm{BF}_3$ all have polar bonds but are non-polar molecules because the bond dipoles cancel
   due to molecular symmetry. Always check the geometry before assigning polarity.
 
@@ -866,7 +866,7 @@ from the value in methane.
   all four N--H bonds are equivalent in the ammonium ion.
 
 - **Using the wrong MO energy ordering for heteronuclear diatomics**: For heteronuclear diatomics
-  (e.g., $\mathrm{CO}$$\mathrm{NO}$), the energy levels are not exactly degenerate as in homonuclear
+  (e.g., $\mathrm{CO}$, $\mathrm{NO}$), the energy levels are not exactly degenerate as in homonuclear
   diatomics. The more electronegative atom contributes lower-energy AOs, and the bonding orbitals
   are closer in energy to the AO of the more electronegative atom. However, for a rough analysis,
   the homonuclear ordering is often used as an approximation.

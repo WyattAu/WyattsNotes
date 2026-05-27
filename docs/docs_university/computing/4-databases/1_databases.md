@@ -153,7 +153,7 @@ possible; `NULL`-padded otherwise.
 **Full outer join** $R \bowtie_◆LB◆\mathrm◆LB◆full◆RB◆ S$: All tuples from both $R$ and $S$.
 
 **Division** $R \div S$: Tuples $t$ in $\pi_◆LB◆R-S◆RB◆(R)$ such that for every tuple
-$s \in S$$(t, s)
+$s \in S$, $(t, s)
 \in R$.
 
 $$R \div S = \pi_◆LB◆R-S◆RB◆(R) - \pi_◆LB◆R-S◆RB◆\Bigl(\bigl(\pi_◆LB◆R-S◆RB◆(R) \times S\bigr) - R\Bigr)$$
@@ -718,14 +718,14 @@ Superkey or $A$ is a prime attribute.
 
 A **prime attribute** is an attribute that belongs to some candidate key.
 
-**Boyce-Codd Normal Form (BCNF).** For every non-trivial FD $X \to A$ in $R$$X$ is a superkey.
+**Boyce-Codd Normal Form (BCNF).** For every non-trivial FD $X \to A$ in $R$, $X$ is a superkey.
 
 **Theorem 4.2.** Every relation in BCNF is in 3NF, but the converse does not hold.
 
 _Proof._ BCNF requires $X$ to be a superkey for every non-trivial FD $X \to A$. 3NF allows $X$ to be
 A superkey **or** $A$ to be prime. Since the BCNF condition is stricter, every BCNF relation is in
 3NF. For the converse, consider $R(A, B, C)$ with FDs $AB \to C$ and $C \to B$. Candidate keys:
-$\\{AB\\}$$\\{AC\\}$. $C \to B$ does not violate 3NF ($B$ is prime) but violates BCNF ($C$ is not a
+$\\{AB\\}$, $\\{AC\\}$. $C \to B$ does not violate 3NF ($B$ is prime) but violates BCNF ($C$ is not a
 Superkey). $\blacksquare$
 
 ### 4.3 Decomposition
@@ -739,7 +739,7 @@ A decomposition of $R$ into $R_1, R_2, \ldots, R_k$ must satisfy:
 **Theorem 4.3 (Lossless-join test).** A decomposition of $R$ into $R_1, R_2$ is lossless if and Only
 if $R_1 \cap R_2 \to R_1$ or $R_1 \cap R_2 \to R_2$.
 
-_Proof._ Let $r$ be an instance of $R$ and let $r_1 = \pi_◆LB◆R_1◆RB◆(r)$$r_2 = \pi_◆LB◆R_2◆RB◆(r)$. We must
+_Proof._ Let $r$ be an instance of $R$ and let $r_1 = \pi_◆LB◆R_1◆RB◆(r)$, $r_2 = \pi_◆LB◆R_2◆RB◆(r)$. We must
 Show $r = r_1 \bowtie r_2$ under the given condition. Since $r_1$ and $r_2$ are projections of $r$
 Every tuple in $r_1 \bowtie r_2$ agrees with some tuple of $r$ on every attribute. It suffices to
 show That no spurious tuple is produced. Suppose $(t_1, t_2) \in r_1 \bowtie r_2$ where
@@ -763,7 +763,7 @@ DBMS can verify relevant FDs locally without joining all decomposed relations.
 ### 4.4 Normalisation Examples
 
 **Example 1.** `Enrolment(StudentID, CourseID, StudentName, Dept, Grade)` with FDs:
-$\mathrm◆LB◆StudentID \to \mathrm◆LB◆StudentName$$\mathrm◆LB◆StudentID \to \mathrm◆LB◆Dept$
+$\mathrm◆LB◆StudentID \to \mathrm◆LB◆StudentName$, $\mathrm◆LB◆StudentID \to \mathrm◆LB◆Dept$
 $\\{\mathrm◆LB◆StudentID, \mathrm◆LB◆CourseID\\} \to \mathrm◆LB◆Grade$.
 
 - Candidate key: $\\{\mathrm◆LB◆StudentID, \mathrm◆LB◆CourseID\\}$.
@@ -793,7 +793,7 @@ $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\} \to \mathrm◆LB◆Instruct
 $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$.
 
 - Candidate keys:
-  $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$$\\{\mathrm◆LB◆Instructor, \mathrm◆LB◆Student\\}$.
+  $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$, $\\{\mathrm◆LB◆Instructor, \mathrm◆LB◆Student\\}$.
 - 3NF check for $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$: Instructor is not a superkey. But Course
   **is** prime (in candidate key $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$). So 3NF is satisfied.
 - BCNF check: $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$ violates BCNF (Instructor is not a superkey).
@@ -838,7 +838,7 @@ $ED^+$ in $R = \\{E, D, A, B\\}$Which does not include $C$. So $C$ is not determ
 This means $R_2 = \\{A, C, D, E\\}$ has no non-trivial FDs that hold (other than keys determining
 all Attributes). Check: candidate keys of $R_2$ must be superkeys. Since $ED \to A$ holds but $ED$
 does Not determine $C$We need $EDC$ as a key: $EDC^+ = \\{E, D, C, A, B\\} = R$ (all of $R$). So in
-$R_2$$EDC$ is a candidate key (since it determines all attributes of $R_2$: $EDC \to A$ and
+$R_2$, $EDC$ is a candidate key (since it determines all attributes of $R_2$: $EDC \to A$ and
 $A \to
 \varnothing$ in $R_2$, so $EDC^+ = \\{A, C, D, E\\}$). $R_2$ is in BCNF since the only
 non-trivial FD is $ED \to A$ and we need to check if $ED$ is a superkey of $R_2$. Since
@@ -854,9 +854,9 @@ Hmm, $\\{C\\}$ alone is a relation with no non-trivial FDs, so it is in BCNF.
 $R_◆LB◆2a◆RB◆ = \\{E, D, A\\}$ With $ED \to A$: $ED$ is a superkey (it determines all three attributes).
 BCNF.
 
-**Final decomposition:** $R_1 = \\{A, B\\}$$R_◆LB◆2a◆RB◆ = \\{A, D, E\\}$$R_◆LB◆2b◆RB◆ = \\{C\\}$.
+**Final decomposition:** $R_1 = \\{A, B\\}$, $R_◆LB◆2a◆RB◆ = \\{A, D, E\\}$, $R_◆LB◆2b◆RB◆ = \\{C\\}$.
 
-**Lossless check:** $R_1 \cap R_◆LB◆2a◆RB◆ = \\{A\\}$$A \to B$ (from $F$), so $R_1 \bowtie R_◆LB◆2a◆RB◆$ is
+**Lossless check:** $R_1 \cap R_◆LB◆2a◆RB◆ = \\{A\\}$, $A \to B$ (from $F$), so $R_1 \bowtie R_◆LB◆2a◆RB◆$ is
 lossless. $R_◆LB◆2a◆RB◆ \cap R_◆LB◆2b◆RB◆ = \varnothing$... This is problematic. $R_◆LB◆2b◆RB◆ = \\{C\\}$ shares no
 attributes with The others.
 
@@ -890,7 +890,7 @@ Tuples $t_1, t_2 \in R$ with $t_1[X] = t_2[X]$There exists a tuple $t_3 \in R$ s
 **Trivial MVDs:** $X \twoheadrightarrow Y$ where $Y \subseteq X$ or $X \cup Y = R$.
 
 **Fourth Normal Form (4NF).** $R$ is in 4NF if for every non-trivial MVD $X \twoheadrightarrow Y$
-That holds on $R$$X$ is a superkey.
+That holds on $R$, $X$ is a superkey.
 
 **Theorem 4.5.** Every relation in 4NF is in BCNF.
 
@@ -1077,7 +1077,7 @@ Average lookup: $O(1)$ under uniform hashing. No support for range queries.
 
 1. **Separate chaining:** Each bucket contains a linked list of entries. Lookup requires traversing
    the chain. Average chain length under uniform hashing is $n / B$.
-2. **Open addressing (linear probing):** If bucket $h(k)$ is full, try $h(k)+1$$h(k)+2$Etc. (mod
+2. **Open addressing (linear probing):** If bucket $h(k)$ is full, try $h(k)+1$, $h(k)+2$Etc. (mod
    $B$). Prone to **primary clustering**: consecutive occupied slots increase the average probe
    length.
 3. **Open addressing (quadratic probing):** Try $h(k) + 1^2, h(k) + 2^2, h(k) + 3^2$Etc. Reduces
@@ -1268,7 +1268,7 @@ Precedence graph has cycle: $T_1 \to T_2 \to T_1$. **Not conflict-serialisable.*
 **Theorem 6.2.** 2PL guarantees conflict serialisability.
 
 _Proof._ By the protocol, transaction $T_i$ acquires all its locks before releasing any. If $T_j$
-Requests a lock held by $T_i$$T_j$ waits. This creates a total ordering on conflicting Operations,
+Requests a lock held by $T_i$, $T_j$ waits. This creates a total ordering on conflicting Operations,
 which corresponds to a serial schedule. $\blacksquare$
 
 **Variants:**
@@ -1310,15 +1310,15 @@ OCC performs well when conflicts are rare but degrades under high contention (ma
 
 **Execution:**
 
-1. **$T_1$ read phase:** Reads $A = 100$$B = 200$ into private workspace.
+1. **$T_1$ read phase:** Reads $A = 100$, $B = 200$ into private workspace.
 2. **$T_2$ read phase:** Reads $A = 100$ into private workspace.
 3. **$T_2$ validation phase:** Checks if $A$ was modified by any committed transaction since $T_2$
    started. No committed transactions modified $A$. Validation passes.
 4. **$T_2$ write phase:** Writes $A = 75$. $T_2$ commits.
 5. **$T_1$ validation phase:** Checks if $A$ or $B$ was modified by any committed transaction since
    $T_1$ started. $T_2$ committed and modified $A$. Validation fails.
-6. **$T_1$ is aborted and restarted.** On restart, $T_1$ reads $A = 75$$B = 200$And correctly
-   computes $A = 125$$B = 150$.
+6. **$T_1$ is aborted and restarted.** On restart, $T_1$ reads $A = 75$, $B = 200$And correctly
+   computes $A = 125$, $B = 150$.
 
 </details>
 
@@ -1727,7 +1727,7 @@ visibility Of updates.
 <details>
 <summary>Worked Example 9.1: Quorum Read/Write</summary>
 
-**Scenario:** $N = 5$ replicas. Choose $W = 3$$R = 3$. Note $W + R = 6 \gt 5 = N$.
+**Scenario:** $N = 5$ replicas. Choose $W = 3$, $R = 3$. Note $W + R = 6 \gt 5 = N$.
 
 **Write:** Client writes value $v$. Primary sends write to all 5 replicas. At least 3 acknowledge
 ($W = 3$). Write is considered successful.

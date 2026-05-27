@@ -101,7 +101,7 @@ Phase Relationships:
 
 Graphical Interpretation:
 
-- $x(t)$$v(t)$And $a(t)$ are phase-shifted sinusoids.
+- $x(t)$, $v(t)$And $a(t)$ are phase-shifted sinusoids.
 - $a(t)$ is inverted relative to $x(t)$ due to $a \propto -x$.
 
 ## Energy Conservation
@@ -219,7 +219,7 @@ $$
 ### Verification by Direct Substitution
 
 **Claim:** $x(t) = A\cos(\omega t + \phi_0)$ satisfies $\frac{d^2x}{dt^2} + \omega^2 x = 0$ for any
-Constants $A$$\omega$And $\phi_0$.
+Constants $A$, $\omega$And $\phi_0$.
 
 **Proof.** First derivative:
 
@@ -266,8 +266,8 @@ Conditions.
 
 | Initial condition                         | Preferred form                   | Rationale                      |
 | ----------------------------------------- | -------------------------------- | ------------------------------ |
-| Released from $x = A$ with $v = 0$        | $x = A\cos(\omega t)$            | $\cos(0) = 1$$\sin(0) = 0$     |
-| Released from $x = 0$ with $v = v_{\max}$ | $x = A\sin(\omega t)$            | $\sin(0) = 0$$\cos(0) = 1$     |
+| Released from $x = A$ with $v = 0$        | $x = A\cos(\omega t)$            | $\cos(0) = 1$, $\sin(0) = 0$     |
+| Released from $x = 0$ with $v = v_{\max}$ | $x = A\sin(\omega t)$            | $\sin(0) = 0$, $\cos(0) = 1$     |
 | General initial state                     | Either with appropriate $\phi_0$ | Phase angle absorbs the offset |
 
 The IB data booklet uses the sine convention ($x = x_0 \sin(\omega t + \Phi)$). Both conventions are
@@ -355,7 +355,7 @@ System A (cosine form): $x_A = A\cos(\omega t)$
 System B (starts at $x = 0$ with positive velocity, sine form):
 $x_B = A\sin(\omega t) = A\cos\!\left(\omega t - \frac{\pi}{2}\right)$
 
-Comparing phases: $\phi_A = 0$$\phi_B = -\pi/2$.
+Comparing phases: $\phi_A = 0$, $\phi_B = -\pi/2$.
 
 $$
 |\Delta\phi| = \left|`0 - \left(-\frac{\pi}{2}\right)\right`| = \frac{\pi}{2}\mathrm{ rad} = 90^{\circ}
@@ -365,7 +365,7 @@ System A leads System B by $90^\circ$.
 
 ### Example 6: Energy Partition at a Given Displacement
 
-A mass-spring system has $A = 0.15\mathrm{ m}$$k = 80.0\mathrm{ N/m}$And $m = 0.20\mathrm{ kg}$.
+A mass-spring system has $A = 0.15\mathrm{ m}$, $k = 80.0\mathrm{ N/m}$And $m = 0.20\mathrm{ kg}$.
 Find the kinetic energy, potential energy, and speed at $x = 0.090\mathrm{ m}$.
 
 $$
@@ -488,7 +488,7 @@ $v = 20.0\sqrt{(0.10)^2 - (0.060)^2} = 1.60\mathrm{ m/s}$ $\checkmark$
 ### HL Example 4: Period, Amplitude, and Total Energy
 
 A $0.50\mathrm{ kg}$ object undergoes SHM with total energy $2.0\mathrm{ J}$ and amplitude
-$0.20\mathrm{ m}$. Determine $\omega$$k$And the speed at $x = 0.10\mathrm{ m}$.
+$0.20\mathrm{ m}$. Determine $\omega$, $k$And the speed at $x = 0.10\mathrm{ m}$.
 
 $$
 E_T = \frac{1}{2}m\omega^2 A^2 \implies \omega^2 = \frac{2E_T}{mA^2} = \frac{2(2.0)}{(0.50)(0.20)^2} = 200
@@ -524,7 +524,7 @@ The amplitude decays exponentially: $A(t) = A_0 e^{-bt}$Where $b$ is the damping
 The damping force is just sufficient to prevent oscillation. The system returns to equilibrium in
 The **shortest possible time** without overshooting.
 
-- Displacement decays as $x(t) = (c_1 + c_2 t)e^{-\alpha t}$ for constants $c_1$$c_2$$\alpha$.
+- Displacement decays as $x(t) = (c_1 + c_2 t)e^{-\alpha t}$ for constants $c_1$, $c_2$, $\alpha$.
 - No oscillation occurs.
 - Applications: car shock absorbers, door closers, instrument mechanisms.
 
@@ -705,7 +705,7 @@ $$
 
 ### Problem 6 (HL)
 
-A particle undergoes SHM with $\omega = 8.0\mathrm{ rad/s}$. At $t = 0$$x = 0.030\mathrm{ m}$ and
+A particle undergoes SHM with $\omega = 8.0\mathrm{ rad/s}$. At $t = 0$, $x = 0.030\mathrm{ m}$ and
 $v = -0.20\mathrm{ m/s}$. Determine the amplitude, the phase angle (cosine form), and the
 Displacement at $t = 0.50\mathrm{ s}$.
 

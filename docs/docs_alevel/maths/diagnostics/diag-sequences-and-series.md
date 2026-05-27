@@ -30,7 +30,7 @@ in the denominator, where the cancellation pattern is commonly misidentified.]
 
 **Step 1: Partial fraction decomposition.**
 
-We seek constants $A$$B$$C$ such that:
+We seek constants $A$, $B$, $C$ such that:
 
 $$\frac{1}{r(r+1)(r+2)} = \frac{A}{r} + \frac{B}{r+1} + \frac{C}{r+2}$$
 
@@ -106,7 +106,7 @@ to start at $r = 1$ and end at $r = m$.
 
 **Correct approach — Method 1: Index shift.**
 
-Let $k = r - 3$. When $r = 4$$k = 1$. When $r = n + 3$$k = n$.
+Let $k = r - 3$. When $r = 4$, $k = 1$. When $r = n + 3$, $k = n$.
 
 $$\sum_{r=4}^{n+3} (r-3)^2 = \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$$
 
@@ -141,7 +141,7 @@ $$u_{n+2} = 5u_{n+1} - 6u_n, \quad n \geq 1$$
 
 With $u_1 = 1$ and $u_2 = 5$.
 
-**(a)** Find $u_3$$u_4$And $u_5$.
+**(a)** Find $u_3$, $u_4$And $u_5$.
 
 **(b)** Find a closed-form expression for $u_n$ in terms of $n$.
 
@@ -185,7 +185,7 @@ $$u_n = 3^n - 2^n$$
 
 **(c)** We need $3^n - 2^n > 10000$.
 
-For large $n$$3^n$ dominates $2^n$. We need $3^n \gtrapprox 10000$.
+For large $n$, $3^n$ dominates $2^n$. We need $3^n \gtrapprox 10000$.
 
 $n = 8$: $3^8 - 2^8 = 6561 - 256 = 6305 < 10000$.
 
@@ -253,7 +253,7 @@ The function $f$ is defined by $f(x) = \cos x$ where $x$ is in radians.
 
 A sequence is defined by $x_0 = 1$ and $x_{n+1} = f(x_n) = \cos(x_n)$ for $n \geq 0$.
 
-**(a)** Find $x_1$$x_2$$x_3$And $x_4$ to 6 decimal places.
+**(a)** Find $x_1$, $x_2$, $x_3$And $x_4$ to 6 decimal places.
 
 **(b)** Prove that the sequence $(x_n)$ is convergent.
 

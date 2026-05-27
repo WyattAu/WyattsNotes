@@ -196,7 +196,7 @@ $n$.
 
 _Proof._ The sum
 $\sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ \omega^k = \frac◆LB◆1 - \omega^n◆RB◆◆LB◆1 - \omega◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆1 - \omega◆RB◆ = 0$
-Provided $\omega \neq 1$. For $j$ not divisible by $n$$\omega^j$ is a non-trivial root of unity, So
+Provided $\omega \neq 1$. For $j$ not divisible by $n$, $\omega^j$ is a non-trivial root of unity, So
 the same argument applies. $\blacksquare$
 
 <details>
@@ -216,7 +216,7 @@ $z_2 = 2\,e^◆LB◆i5\pi/3◆RB◆ = 2\left(\frac◆LB◆1◆RB◆◆LB◆2◆R
 $16i = 16\,e^◆LB◆i\pi/2◆RB◆$. The fourth roots are:
 $z_k = 16^◆LB◆1/4◆RB◆\, e^◆LB◆i(\pi/2 + 2\pi k)/4◆RB◆ = 2\, e^◆LB◆i(\pi/8 + \pi k/2)◆RB◆$ for $k = 0, 1, 2, 3$.
 
-$z_0 = 2\,e^◆LB◆i\pi/8◆RB◆$$z_1 = 2\,e^◆LB◆i5\pi/8◆RB◆$$z_2 = 2\,e^◆LB◆i9\pi/8◆RB◆$$z_3 = 2\,e^◆LB◆i13\pi/8◆RB◆$.
+$z_0 = 2\,e^◆LB◆i\pi/8◆RB◆$, $z_1 = 2\,e^◆LB◆i5\pi/8◆RB◆$, $z_2 = 2\,e^◆LB◆i9\pi/8◆RB◆$, $z_3 = 2\,e^◆LB◆i13\pi/8◆RB◆$.
 
 **Problem.** Show that the $n$-th roots of any non-zero $w$ are in geometric progression.
 
@@ -287,7 +287,7 @@ Makes complex differentiability far more restrictive than real differentiability
 $U \subseteq \mathbb◆LB◆C◆RB◆$ if $f$ is differentiable at every point of $U$. A function that is analytic
 On all of $\mathbb◆LB◆C◆RB◆$ is called **entire**.
 
-**Examples of entire functions:** $z^n$$e^z$$\sin z$$\cos z$Polynomials.
+**Examples of entire functions:** $z^n$, $e^z$, $\sin z$, $\cos z$Polynomials.
 
 **Example of a non-analytic function:** $f(z) = \bar◆LB◆z◆RB◆$ is nowhere differentiable (except at
 $z = 0$ if we define it, but still not analytic there).
@@ -297,7 +297,7 @@ $z = 0$ if we define it, but still not analytic there).
 
 **Problem.** Show that $f(z) = |z|^2$ is differentiable only at $z = 0$.
 
-$f(z) = x^2 + y^2$So $u = x^2 + y^2$ and $v = 0$. $u_x = 2x$$u_y = 2y$$v_x = 0$$v_y = 0$. The
+$f(z) = x^2 + y^2$So $u = x^2 + y^2$ and $v = 0$. $u_x = 2x$, $u_y = 2y$, $v_x = 0$, $v_y = 0$. The
 Cauchy-Riemann equations require $2x = 0$ and $2y = 0$So $x = y = 0$. Thus $f$ satisfies CR only at
 $z = 0$.
 
@@ -306,7 +306,7 @@ Differentiable at $0$ but not analytic anywhere (no neighbourhood of $0$ is anal
 
 **Problem.** Show that $f(z) = z\bar◆LB◆z◆RB◆ + z$ is differentiable only at $z = 0$.
 
-$f(z) = |z|^2 + z = (x^2 + y^2 + x) + iy$. $u_x = 2x + 1$$u_y = 2y$$v_x = 0$$v_y = 1$. CR equations:
+$f(z) = |z|^2 + z = (x^2 + y^2 + x) + iy$. $u_x = 2x + 1$, $u_y = 2y$, $v_x = 0$, $v_y = 1$. CR equations:
 $2x + 1 = 1 \Rightarrow x = 0$And $2y = 0 \Rightarrow y = 0$. At $(0, 0)$:
 $f'(0) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆h\bar◆LB◆h◆RB◆ + h◆RB◆◆LB◆h◆RB◆ = \lim_◆LB◆h \to 0◆RB◆ (\bar◆LB◆h◆RB◆ + 1) = 1$. So $f$ is
 differentiable at $z = 0$ only, hence nowhere analytic.
@@ -376,11 +376,11 @@ $z = x + iy$Then
 
 $$\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ = \frac◆LB◆\partial v◆RB◆◆LB◆\partial y◆RB◆, \quad \frac◆LB◆\partial u◆RB◆◆LB◆\partial y◆RB◆ = -\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆$$
 
-_Proof._ Compute the limit along the real axis ($h \in \mathbb◆LB◆R◆RB◆$$h \to 0$):
+_Proof._ Compute the limit along the real axis ($h \in \mathbb◆LB◆R◆RB◆$, $h \to 0$):
 
 $$f'(z) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆u(x+h, y) - u(x, y)◆RB◆◆LB◆h◆RB◆ + i\lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆v(x+h, y) - v(x, y)◆RB◆◆LB◆h◆RB◆ = \frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ + i\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆$$
 
-Compute along the imaginary axis ($h = ik$$k \in \mathbb◆LB◆R◆RB◆$$k \to 0$):
+Compute along the imaginary axis ($h = ik$, $k \in \mathbb◆LB◆R◆RB◆$, $k \to 0$):
 
 $$f'(z) = \lim_◆LB◆k \to 0◆RB◆ \frac◆LB◆u(x, y+k) - u(x, y)◆RB◆◆LB◆ik◆RB◆ + i\lim_◆LB◆k \to 0◆RB◆ \frac◆LB◆v(x, y+k) - v(x, y)◆RB◆◆LB◆ik◆RB◆ = -i\frac◆LB◆\partial u◆RB◆◆LB◆\partial y◆RB◆ + \frac◆LB◆\partial v◆RB◆◆LB◆\partial y◆RB◆$$
 
@@ -392,7 +392,7 @@ And $\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆ = -\frac◆LB◆\
 **Theorem 3.2.** If $u$ and $v$ have continuous first partial derivatives on an open set $U$ and
 Satisfy the Cauchy-Riemann equations on $U$Then $f = u + iv$ is analytic on $U$.
 
-_Proof._ Since $u_x, u_y, v_x, v_y$ are continuous on $U$$u$ and $v$ are (real) differentiable. Let
+_Proof._ Since $u_x, u_y, v_x, v_y$ are continuous on $U$, $u$ and $v$ are (real) differentiable. Let
 $\Delta z = \Delta x + i\Delta y$. By real differentiability:
 
 $u(x + \Delta x, y + \Delta y) - u(x, y) = u_x\,\Delta x + u_y\,\Delta y + \varepsilon_1$
@@ -441,7 +441,7 @@ CR equations. $\blacksquare$
 
 **Problem.** Find the harmonic conjugate of $u(x, y) = x^3 - 3xy^2$.
 
-Verify $u$ is harmonic: $u_◆LB◆xx◆RB◆ = 6x$$u_◆LB◆yy◆RB◆ = -6x$So $u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = 0$. $\checkmark$
+Verify $u$ is harmonic: $u_◆LB◆xx◆RB◆ = 6x$, $u_◆LB◆yy◆RB◆ = -6x$So $u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = 0$. $\checkmark$
 
 By CR: $v_y = u_x = 3x^2 - 3y^2$So $v = 3x^2 y - y^3 + g(x)$. Also $v_x = -u_y = 6xy$So
 $6xy = 6xy + g'(x)$Giving $g'(x) = 0$So $g(x) = C$.
@@ -453,8 +453,8 @@ _Note:_ $f(z) = u + iv = x^3 - 3xy^2 + i(3x^2 y - y^3) = (x + iy)^3 = z^3$.
 **Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on $\mathbb◆LB◆R◆RB◆^2 \setminus \{0\}$ but
 Has no harmonic conjugate on $\mathbb◆LB◆R◆RB◆^2 \setminus \{0\}$.
 
-$u_x = \frac◆LB◆2x◆RB◆◆LB◆x^2 + y^2◆RB◆$$u_◆LB◆xx◆RB◆ = \frac◆LB◆2(y^2 - x^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$.
-$u_y = \frac◆LB◆2y◆RB◆◆LB◆x^2 + y^2◆RB◆$$u_◆LB◆yy◆RB◆ = \frac◆LB◆2(x^2 - y^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. $\Delta u = 0$.
+$u_x = \frac◆LB◆2x◆RB◆◆LB◆x^2 + y^2◆RB◆$, $u_◆LB◆xx◆RB◆ = \frac◆LB◆2(y^2 - x^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$.
+$u_y = \frac◆LB◆2y◆RB◆◆LB◆x^2 + y^2◆RB◆$, $u_◆LB◆yy◆RB◆ = \frac◆LB◆2(x^2 - y^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. $\Delta u = 0$.
 $\checkmark$
 
 However,
@@ -475,7 +475,7 @@ conjugate exists on this domain.
 
 _Solution._ $e^z = e^◆LB◆x+iy◆RB◆ = e^x(\cos y + i\sin y)$. So $u = e^x \cos y$ and $v = e^x \sin y$.
 
-$u_x = e^x \cos y$$u_y = -e^x \sin y$$v_x = e^x \sin y$$v_y = e^x \cos y$.
+$u_x = e^x \cos y$, $u_y = -e^x \sin y$, $v_x = e^x \sin y$, $v_y = e^x \cos y$.
 
 Cauchy-Riemann: $u_x = e^x \cos y = v_y$ and $u_y = -e^x \sin y = -v_x$. Both satisfied.
 
@@ -485,9 +485,9 @@ $f'(z) = u_x + iv_x = e^x \cos y + ie^x \sin y = e^z$. $\blacksquare$
 
 $\sin z = \sin(x + iy) = \sin x \cosh y + i\cos x \sinh y$.
 
-$u = \sin x \cosh y$$v = \cos x \sinh y$.
+$u = \sin x \cosh y$, $v = \cos x \sinh y$.
 
-$u_x = \cos x \cosh y$$u_y = \sin x \sinh y$. $v_x = -\sin x \sinh y$$v_y = \cos x \cosh y$.
+$u_x = \cos x \cosh y$, $u_y = \sin x \sinh y$. $v_x = -\sin x \sinh y$, $v_y = \cos x \cosh y$.
 
 CR: $u_x = \cos x \cosh y = v_y$ $\checkmark$ and $u_y = \sin x \sinh y = -v_x$ $\checkmark$.
 
@@ -497,12 +497,12 @@ $f'(z) = u_x + iv_x = \cos x \cosh y - i\sin x \sinh y = \cos z$. $\blacksquare$
 
 $\frac◆LB◆1◆RB◆◆LB◆z◆RB◆ = \frac◆LB◆\bar◆LB◆z◆RB◆◆RB◆◆LB◆|z|^2◆RB◆ = \frac◆LB◆x - iy◆RB◆◆LB◆x^2 + y^2◆RB◆$.
 
-$u = \frac◆LB◆x◆RB◆◆LB◆x^2 + y^2◆RB◆$$v = \frac◆LB◆-y◆RB◆◆LB◆x^2 + y^2◆RB◆$.
+$u = \frac◆LB◆x◆RB◆◆LB◆x^2 + y^2◆RB◆$, $v = \frac◆LB◆-y◆RB◆◆LB◆x^2 + y^2◆RB◆$.
 
-$u_x = \frac◆LB◆y^2 - x^2◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$$v_y = \frac◆LB◆y^2 - x^2◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. So $u_x = v_y$.
+$u_x = \frac◆LB◆y^2 - x^2◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$, $v_y = \frac◆LB◆y^2 - x^2◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. So $u_x = v_y$.
 $\checkmark$
 
-$u_y = \frac◆LB◆-2xy◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$$v_x = \frac◆LB◆2xy◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. So $u_y = -v_x$. $\checkmark$
+$u_y = \frac◆LB◆-2xy◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$, $v_x = \frac◆LB◆2xy◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. So $u_y = -v_x$. $\checkmark$
 
 $f'(z) = u_x + iv_x = \frac◆LB◆-(x^2 - y^2 + 2ixy)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆ = \frac◆LB◆-1◆RB◆◆LB◆z^2◆RB◆$. $\blacksquare$
 
@@ -569,23 +569,23 @@ $\int_\gamma z^2\, dz = \frac◆LB◆-2 + 2i◆RB◆◆LB◆3◆RB◆$. $\blacks
 **Problem.** Evaluate $\int_\gamma \bar◆LB◆z◆RB◆\, dz$ where $\gamma$ is the unit circle traversed once
 Counterclockwise.
 
-$\gamma(t) = e^◆LB◆it◆RB◆$$0 \leq t \leq 2\pi$$\gamma'(t) = ie^◆LB◆it◆RB◆$. $\bar◆LB◆z◆RB◆ = e^◆LB◆-it◆RB◆$ on $\gamma$.
+$\gamma(t) = e^◆LB◆it◆RB◆$, $0 \leq t \leq 2\pi$, $\gamma'(t) = ie^◆LB◆it◆RB◆$. $\bar◆LB◆z◆RB◆ = e^◆LB◆-it◆RB◆$ on $\gamma$.
 
 $\int_\gamma \bar◆LB◆z◆RB◆\, dz = \int_0^◆LB◆2\pi◆RB◆ e^◆LB◆-it◆RB◆ \cdot ie^◆LB◆it◆RB◆\, dt = \int_0^◆LB◆2\pi◆RB◆ i\, dt = 2\pi i$.
 
 _Note:_ Since $\bar◆LB◆z◆RB◆$ is not analytic, this result is non-zero, as expected.
 
 **Problem.** Evaluate $\int_\gamma \frac◆LB◆dz◆RB◆◆LB◆z◆RB◆$ where $\gamma$ is the upper semicircle
-$z = e^◆LB◆i\theta◆RB◆$$0 \leq \theta \leq \pi$.
+$z = e^◆LB◆i\theta◆RB◆$, $0 \leq \theta \leq \pi$.
 
 $\int_0^\pi \frac◆LB◆ie^◆LB◆i\theta◆RB◆◆RB◆◆LB◆e^◆LB◆i\theta◆RB◆◆RB◆\, d\theta = \int_0^\pi i\, d\theta = i\pi$.
 
 **Problem.** Evaluate $\int_\gamma z\, dz$ where $\gamma$ consists of the line segment from $0$ to
 $1$ followed by the line segment from $1$ to $1 + i$.
 
-$\gamma_1(t) = t$$0 \leq t \leq 1$: $\int_0^1 t \cdot 1\, dt = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
+$\gamma_1(t) = t$, $0 \leq t \leq 1$: $\int_0^1 t \cdot 1\, dt = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
 
-$\gamma_2(t) = 1 + it$$0 \leq t \leq 1$:
+$\gamma_2(t) = 1 + it$, $0 \leq t \leq 1$:
 $\int_0^1 (1 + it) \cdot i\, dt = \int_0^1 (i - t)\, dt = i - \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
 
 Total: $\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ + i - \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ = i$.
@@ -602,9 +602,9 @@ Consistent. $\blacksquare$
 
 **Problem.** Use the ML inequality to show that
 $\lim_◆LB◆R \to \infty◆RB◆ \int_◆LB◆C_R◆RB◆ \frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z◆RB◆\, dz = 0$ Where $C_R$ is the upper semicircle
-$|z| = R$$\mathrm◆LB◆Im(z) \geq 0$.
+$|z| = R$, $\mathrm◆LB◆Im(z) \geq 0$.
 
-On $C_R$: $z = Re^◆LB◆i\theta◆RB◆$$0 \leq \theta \leq \pi$.
+On $C_R$: $z = Re^◆LB◆i\theta◆RB◆$, $0 \leq \theta \leq \pi$.
 $|e^◆LB◆iz◆RB◆| = |e^◆LB◆iR(\cos\theta + i\sin\theta)◆RB◆| = e^◆LB◆-R\sin\theta◆RB◆$.
 
 $\left|\int_◆LB◆C_R◆RB◆ \frac◆LB◆e^◆LB◆iz◆RB◆◆RB◆◆LB◆z◆RB◆\, dz\right| \leq \int_0^\pi \frac◆LB◆e^◆LB◆-R\sin\theta◆RB◆◆RB◆◆LB◆R◆RB◆ \cdot R\, d\theta
@@ -822,7 +822,7 @@ _Proof._ $1/f$ is entire and bounded by $1/M$So constant by Liouville. $\blacksq
 $p(z) \in \mathbb◆LB◆C◆RB◆[z]$ has a root in $\mathbb◆LB◆C◆RB◆$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
-$|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
+$|z| \to \infty$, $f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
 constant, a contradiction. $\blacksquare$
 
 **Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb◆LB◆C◆RB◆$
@@ -847,7 +847,7 @@ By Cauchy's formula for derivatives with $f(z) = z^2 + 1$ and $z_0 = i$:
 
 $\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆(z - i)^3◆RB◆\, dz = \frac◆LB◆2\pi i◆RB◆◆LB◆2!◆RB◆\,f''(i)$.
 
-$f'(z) = 2z$$f''(z) = 2$. So $f''(i) = 2$.
+$f'(z) = 2z$, $f''(z) = 2$. So $f''(i) = 2$.
 
 $\int_\gamma \frac◆LB◆z^2 + 1◆RB◆◆LB◆(z - i)^3◆RB◆\, dz = \frac◆LB◆2\pi i◆RB◆◆LB◆2◆RB◆ \cdot 2 = 2\pi i$. $\blacksquare$
 
@@ -1092,7 +1092,7 @@ Where $\gamma$ is a small positively oriented circle around $z_0$.
 
 $$\mathrm◆LB◆Res(f, z_0) = \lim_◆LB◆z \to z_0◆RB◆ (z - z_0)f(z)$$
 
-If $f = g/h$ where $g(z_0) \neq 0$$h(z_0) = 0$$h'(z_0) \neq 0$:
+If $f = g/h$ where $g(z_0) \neq 0$, $h(z_0) = 0$, $h'(z_0) \neq 0$:
 
 $$\mathrm◆LB◆Res(f, z_0) = \frac◆LB◆g(z_0)◆RB◆◆LB◆h'(z_0)◆RB◆$$
 
@@ -1196,7 +1196,7 @@ $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆dx◆RB◆◆L
 ### 9.4 Integrals Involving Trigonometric Functions
 
 For integrals of the form $\int_0^◆LB◆2\pi◆RB◆ R(\cos\theta, \sin\theta)\, d\theta$Substitute
-$z = e^◆LB◆i\theta◆RB◆$So $dz = iz\, d\theta$$\cos\theta = \frac◆LB◆z + z^◆LB◆-1◆RB◆◆RB◆◆LB◆2◆RB◆$
+$z = e^◆LB◆i\theta◆RB◆$So $dz = iz\, d\theta$, $\cos\theta = \frac◆LB◆z + z^◆LB◆-1◆RB◆◆RB◆◆LB◆2◆RB◆$
 $\sin\theta = \frac◆LB◆z - z^◆LB◆-1◆RB◆◆RB◆◆LB◆2i◆RB◆$.
 
 The integral becomes $\int_◆LB◆|z|=1◆RB◆ f(z)\, dz$ where $f(z)$ is a rational function.
@@ -1227,7 +1227,7 @@ Half-plane and $a \gt 0$Then
 
 $$\lim_◆LB◆R \to \infty◆RB◆ \int_◆LB◆C_R◆RB◆ e^◆LB◆iaz◆RB◆f(z)\, dz = 0$$
 
-Where $C_R$ is the upper semicircle $|z| = R$$\mathrm◆LB◆Im(z) \geq 0$.
+Where $C_R$ is the upper semicircle $|z| = R$, $\mathrm◆LB◆Im(z) \geq 0$.
 
 This allows evaluation of integrals of the form $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\cos(ax)\, dx$ and
 $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\sin(ax)\, dx$.
@@ -1261,7 +1261,7 @@ Taking imaginary parts: $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \fr
 
 **Problem.** Evaluate $\int_0^◆LB◆2\pi◆RB◆ \frac◆LB◆\cos 2\theta◆RB◆◆LB◆5 + 4\cos\theta◆RB◆\, d\theta$.
 
-Substitute $z = e^◆LB◆i\theta◆RB◆$: $\cos\theta = (z + z^◆LB◆-1◆RB◆)/2$$\cos 2\theta = (z^2 + z^◆LB◆-2◆RB◆)/2$.
+Substitute $z = e^◆LB◆i\theta◆RB◆$: $\cos\theta = (z + z^◆LB◆-1◆RB◆)/2$, $\cos 2\theta = (z^2 + z^◆LB◆-2◆RB◆)/2$.
 
 $I = \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆\int_◆LB◆|z|=1◆RB◆ \frac◆LB◆z^4 + 1◆RB◆◆LB◆z^2(2z + 1)(z + 2)◆RB◆\, dz$.
 
@@ -1338,7 +1338,7 @@ $$T(z) = \frac◆LB◆az + b◆RB◆◆LB◆cz + d◆RB◆, \quad ad - bc \neq 0
 To circles and lines.
 
 **Proposition 10.2.** Three points determine a unique Möbius transformation: $T(z_1) = w_1$
-$T(z_2) = w_2$$T(z_3) = w_3$.
+$T(z_2) = w_2$, $T(z_3) = w_3$.
 
 ### 10.5 Cross-Ratio
 
@@ -1349,7 +1349,7 @@ $$(z_1, z_2, z_3, z_4) = \frac◆LB◆(z_1 - z_3)(z_2 - z_4)◆RB◆◆LB◆(z_1
 **Proposition 10.3.** The cross-ratio is invariant under Möbius transformations:
 $(Tz_1, Tz_2, Tz_3, Tz_4) = (z_1, z_2, z_3, z_4)$.
 
-**Proposition 10.4.** The unique Möbius transformation sending $z_1 \mapsto 0$$z_2 \mapsto 1$
+**Proposition 10.4.** The unique Möbius transformation sending $z_1 \mapsto 0$, $z_2 \mapsto 1$
 $z_3 \mapsto \infty$ is
 
 $$T(z) = \frac◆LB◆(z - z_1)(z_2 - z_3)◆RB◆◆LB◆(z - z_3)(z_2 - z_1)◆RB◆$$
@@ -1361,7 +1361,7 @@ of $T(z) = z$).
 
 1. **Parabolic:** Exactly one fixed point. Conjugate to $w = z + k$.
 2. **Elliptic:** Two fixed points, $|T'(z_0)| = 1$. Conjugate to a rotation $w = e^◆LB◆i\theta◆RB◆ z$.
-3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb◆LB◆R◆RB◆^+$$T'(z_0) \neq 1$. Conjugate to
+3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb◆LB◆R◆RB◆^+$, $T'(z_0) \neq 1$. Conjugate to
    $w = kz$.
 4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb◆LB◆R◆RB◆ \cup \{z : |z| = 1\}$. Conjugate to
    $w = ke^◆LB◆i\theta◆RB◆z$.
@@ -1369,7 +1369,7 @@ of $T(z) = z$).
 <details>
 <summary>Solution</summary>
 
-**Problem.** Find the Möbius transformation mapping $0 \mapsto i$$1 \mapsto 0$$\infty \mapsto -i$.
+**Problem.** Find the Möbius transformation mapping $0 \mapsto i$, $1 \mapsto 0$, $\infty \mapsto -i$.
 
 $T(z) = \frac◆LB◆az + b◆RB◆◆LB◆cz + d◆RB◆$ with $T(0) = i \Rightarrow b/d = i \Rightarrow b = id$.
 $T(1) = 0 \Rightarrow a = -b = -id$. $T(\infty) = -i \Rightarrow a/c = -i \Rightarrow c = d$.
@@ -1387,7 +1387,7 @@ $|T(i)| = 1$. $\checkmark$
 
 Fixed points: $z = \frac◆LB◆2z + 1◆RB◆◆LB◆z + 2◆RB◆ \Rightarrow z^2 = 1 \Rightarrow z = \pm 1$.
 
-$T'(z) = \frac◆LB◆3◆RB◆◆LB◆(z + 2)^2◆RB◆$. $T'(1) = 1/3$$T'(-1) = 3$.
+$T'(z) = \frac◆LB◆3◆RB◆◆LB◆(z + 2)^2◆RB◆$. $T'(1) = 1/3$, $T'(-1) = 3$.
 
 Both multipliers are real and positive (not equal to $1$), so $T$ is hyperbolic.
 
@@ -1421,7 +1421,7 @@ Constant. $\blacksquare$
 $p(z) \in \mathbb◆LB◆C◆RB◆[z]$ has a root in $\mathbb◆LB◆C◆RB◆$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
-$|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
+$|z| \to \infty$, $f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
 constant, a contradiction. $\blacksquare$
 
 ### 11.3 The Maximum Modulus Principle
@@ -1575,7 +1575,7 @@ $z = 2\,e^◆LB◆5\pi i/6◆RB◆$.
 
 $z^◆LB◆1/3◆RB◆ = 2^◆LB◆1/3◆RB◆\, e^◆LB◆(5\pi/6 + 2\pi k)/3◆RB◆$ for $k = 0, 1, 2$.
 
-$z_0 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆5\pi i/18◆RB◆$$z_1 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆17\pi i/18◆RB◆$$z_2 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆29\pi i/18◆RB◆$.
+$z_0 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆5\pi i/18◆RB◆$, $z_1 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆17\pi i/18◆RB◆$, $z_2 = 2^◆LB◆1/3◆RB◆\, e^◆LB◆29\pi i/18◆RB◆$.
 
 _If you get this wrong, revise:_ Section 1.5 (Roots of Complex Numbers).
 
@@ -1588,11 +1588,11 @@ Let $f(z) = z^2 + \bar◆LB◆z◆RB◆^2$. Find where $f$ is differentiable and
 <details>
 <summary>Solution</summary>
 
-$f(z) = (x + iy)^2 + (x - iy)^2 = 2(x^2 - y^2)$. So $u = 2(x^2 - y^2)$$v = 0$.
+$f(z) = (x + iy)^2 + (x - iy)^2 = 2(x^2 - y^2)$. So $u = 2(x^2 - y^2)$, $v = 0$.
 
-$u_x = 4x$$u_y = -4y$$v_x = 0$$v_y = 0$.
+$u_x = 4x$, $u_y = -4y$, $v_x = 0$, $v_y = 0$.
 
-CR: $4x = 0 \Rightarrow x = 0$$-4y = 0 \Rightarrow y = 0$.
+CR: $4x = 0 \Rightarrow x = 0$, $-4y = 0 \Rightarrow y = 0$.
 
 $f$ is differentiable only at $z = 0$ and analytic nowhere.
 
@@ -1631,7 +1631,7 @@ Show that $u(x, y) = x^3 - 3xy^2 + 3x^2 - 3y^2$ is harmonic and find its harmoni
 <details>
 <summary>Solution</summary>
 
-$u_◆LB◆xx◆RB◆ = 6x + 6$$u_◆LB◆yy◆RB◆ = -6x - 6$. $\Delta u = 0$. $\checkmark$
+$u_◆LB◆xx◆RB◆ = 6x + 6$, $u_◆LB◆yy◆RB◆ = -6x - 6$. $\Delta u = 0$. $\checkmark$
 
 By CR: $v_y = u_x = 3x^2 - 3y^2 + 6x$. $v = 3x^2 y - y^3 + 6xy + g(x)$.
 
@@ -1821,7 +1821,7 @@ _If you get this wrong, revise:_ Section 12.2 (Rouché's Theorem).
 
 ### Problem 14
 
-Find the Möbius transformation that maps $1 \mapsto 0$$i \mapsto 1$$-1 \mapsto \infty$.
+Find the Möbius transformation that maps $1 \mapsto 0$, $i \mapsto 1$, $-1 \mapsto \infty$.
 
 <details>
 <summary>Solution</summary>
@@ -1833,11 +1833,11 @@ $\frac◆LB◆i + 1◆RB◆◆LB◆i - 1◆RB◆ = \frac◆LB◆(i+1)(-i-1)◆RB
 
 $T(z) = -i \cdot \frac◆LB◆z - 1◆RB◆◆LB◆z + 1◆RB◆$.
 
-Verify: $T(1) = 0$ $\checkmark$$T(i) = -i \cdot \frac◆LB◆i-1◆RB◆◆LB◆i+1◆RB◆ = -i \cdot (-i) = -1$.
+Verify: $T(1) = 0$ $\checkmark$, $T(i) = -i \cdot \frac◆LB◆i-1◆RB◆◆LB◆i+1◆RB◆ = -i \cdot (-i) = -1$.
 
 That gives $-1$Not $1$. Let me recompute.
 
-$T(z) = \frac◆LB◆(z - z_1)(z_2 - z_3)◆RB◆◆LB◆(z - z_3)(z_2 - z_1)◆RB◆$ with $z_1 = 1$$z_2 = i$$z_3 = -1$.
+$T(z) = \frac◆LB◆(z - z_1)(z_2 - z_3)◆RB◆◆LB◆(z - z_3)(z_2 - z_1)◆RB◆$ with $z_1 = 1$, $z_2 = i$, $z_3 = -1$.
 
 $T(z) = \frac◆LB◆(z - 1)(i + 1)◆RB◆◆LB◆(z + 1)(i - 1)◆RB◆$.
 
@@ -1936,9 +1936,9 @@ one point and find $f'(z)$ there.
 <details>
 <summary>Solution</summary>
 
-$f(z) = x^2 + y^2 + 2x - 2iy$. So $u = x^2 + y^2 + 2x$$v = -2y$.
+$f(z) = x^2 + y^2 + 2x - 2iy$. So $u = x^2 + y^2 + 2x$, $v = -2y$.
 
-$u_x = 2x + 2$$u_y = 2y$$v_x = 0$$v_y = -2$.
+$u_x = 2x + 2$, $u_y = 2y$, $v_x = 0$, $v_y = -2$.
 
 CR: $2x + 2 = -2 \Rightarrow x = -2$And $2y = 0 \Rightarrow y = 0$.
 

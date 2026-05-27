@@ -138,7 +138,7 @@ $$
 F(x) = ax^2 + bx + c, \quad a \neq 0
 $$
 
-Where $a$$b$And $c$ are real constants.
+Where $a$, $b$And $c$ are real constants.
 
 ### Vertex Form
 
@@ -241,7 +241,7 @@ $$
 ### Exponential Equations
 
 Equations of the form $a^{f(x)} = a^{g(x)}$ can be solved by equating exponents: $f(x) = g(x)$
-(provided $a > 0$$a \neq 1$).
+(provided $a > 0$, $a \neq 1$).
 
 For equations of the form $a^{f(x)} = b$Take logarithms of both sides. See [logarithms](logarithms)
 for the full treatment of logarithmic techniques.
@@ -267,7 +267,7 @@ for the full treatment of logarithmic techniques.
 ## Logarithmic Functions
 
 The **logarithmic function** is the inverse of the exponential function. If $a^y = x$ (where
-$a > 0$$a \neq 1$$x > 0$), then:
+$a > 0$, $a \neq 1$, $x > 0$), then:
 
 $$
 Y = \log_a x
@@ -346,7 +346,7 @@ $$
 <DesmosGraph title="Graph Transformations" expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]} width={800}
 height={500} />
 
-Use the sliders to explore how the parameters $a$$b$And $c$ transform the parent function, and
+Use the sliders to explore how the parameters $a$, $b$And $c$ transform the parent function, and
 Observe the order in which each transformation is applied.
 
 ### Individual Transformations
@@ -489,7 +489,7 @@ $(\Leftarrow)$ If $-a \lt f(x) \lt a$Then $f(x) \lt a$ and $-f(x) \lt a$So $|f(x
 
 ### Quadratic Inequalities
 
-To solve $ax^2 + bx + c \gt 0$ (or $\lt$$\geq$$\leq$), use the discriminant and the shape of the
+To solve $ax^2 + bx + c \gt 0$ (or $\lt$, $\geq$, $\leq$), use the discriminant and the shape of the
 Parabola:
 
 1. Find the roots of $ax^2 + bx + c = 0$ (if they exist).
@@ -506,7 +506,7 @@ See [inequalities.md](inequalities)) for the general theory.
 
 ### Rational Inequalities
 
-To solve $\frac{f(x)}{g(x)} \gt 0$ (or $\lt$$\geq$$\leq$):
+To solve $\frac{f(x)}{g(x)} \gt 0$ (or $\lt$, $\geq$, $\leq$):
 
 1. Express both sides with a common denominator so one side is zero.
 2. Factor numerator and denominator completely.
@@ -535,7 +535,7 @@ Multiplying through, use a sign chart. :::
 
 - Solve $\frac{x^2 - 4}{x - 3} \leq 0$:
 - $\frac{(x - 2)(x + 2)}{x - 3} \leq 0$.
-- Critical points: $x = -2$$x = 2$$x = 3$ (excluded).
+- Critical points: $x = -2$, $x = 2$, $x = 3$ (excluded).
 - Sign chart: negative on $(-2, 2) \cup (2, 3)$Positive elsewhere.
 - Include zeros of numerator: $x = -2$ and $x = 2$.
 - Solution: $-2 \leq x \leq 2$ or $2 \lt x \lt 3$I.e., $[-2, 2] \cup (2, 3)$.
@@ -601,7 +601,7 @@ Remaining factors. Analyse using a sign chart or by evaluating test points on ea
 - $x$-intercept: $2x + 1 = 0 \implies x = -\frac{1}{2}$.
 - Sign analysis: $f(x) \gt 0$ for $x \lt -\frac{1}{2}$ or $x \gt 3$; $f(x) \lt 0$ for
   $-\frac{1}{2} \lt x \lt 3$.
-- As $x \to 3^+$$f(x) \to +\infty$; as $x \to 3^-$$f(x) \to -\infty$.
+- As $x \to 3^+$, $f(x) \to +\infty$; as $x \to 3^-$, $f(x) \to -\infty$.
 
 - Sketch $f(x) = \frac{x^2 - 1}{x^2 - 4}$:
 - Factor: $f(x) = \frac{(x - 1)(x + 1)}{(x - 2)(x + 2)}$.
@@ -789,7 +789,7 @@ Key observations:
 - The vertex is at $(-1, -4)$.
 - (a) Domain $\mathbb{R}$: Since the parabola opens upward with minimum $-4$Range is $[-4, \infty)$.
 - (b) Domain $[0, 4]$:
-- $f(0) = -3$$f(4) = 16 + 8 - 3 = 21$.
+- $f(0) = -3$, $f(4) = 16 + 8 - 3 = 21$.
 - On $[0, 4]$The function is increasing (vertex at $x = -1$ is to the left of the interval).
 - Range: $[-3, 21]$.
 
@@ -856,7 +856,7 @@ Is the function $f(x) = x^3 - 3x$ injective on $\mathbb{R}$?
 
 <summary>Solution</summary>
 
-$f(0) = 0$$f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$$f(-\sqrt{3}) = 0$.
+$f(0) = 0$, $f(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0$, $f(-\sqrt{3}) = 0$.
 
 Since $f(0) = f(\sqrt{3}) = f(-\sqrt{3})$ and the inputs are distinct, $f$ is not injective on
 $\mathbb{R}$.
@@ -920,16 +920,16 @@ Domain: $x \neq 1$So $\mathrm{dom}(f) = \mathbb{R} \setminus \{1\}$.
 
 $f(x) = 2 + \dfrac{5}{x - 1}$.
 
-For $x > 1$: as $x \to 1^+$$f(x) \to +\infty$; as $x \to +\infty$$f(x) \to 2^+$. Range:
+For $x > 1$: as $x \to 1^+$, $f(x) \to +\infty$; as $x \to +\infty$, $f(x) \to 2^+$. Range:
 $(2, +\infty)$.
 
-For $x < 1$: as $x \to 1^-$$f(x) \to -\infty$; as $x \to -\infty$$f(x) \to 2^-$. Range:
+For $x < 1$: as $x \to 1^-$, $f(x) \to -\infty$; as $x \to -\infty$, $f(x) \to 2^-$. Range:
 $(-\infty, 2)$.
 
 Combined range: $\mathbb{R} \setminus \{2\}$.
 
-$f$ is injective: for $x > 1$$f$ is strictly decreasing (derivative $-5/(x-1)^2 < 0$); for
-$x < 1$$f$ is also strictly decreasing. And no value from $(2, +\infty)$ overlaps with
+$f$ is injective: for $x > 1$, $f$ is strictly decreasing (derivative $-5/(x-1)^2 < 0$); for
+$x < 1$, $f$ is also strictly decreasing. And no value from $(2, +\infty)$ overlaps with
 $(-\infty, 2)$.
 
 **DSE Practice 2.** Let $f(x) = x^2 - 2x + 3$ for $x \geq 1$. Find the range and determine whether
@@ -937,7 +937,7 @@ $f$ has an inverse.
 
 <summary>Solution</summary>
 
-$f(x) = (x - 1)^2 + 2$. Since $x \geq 1$ and the vertex is at $(1, 2)$$f$ is strictly increasing on
+$f(x) = (x - 1)^2 + 2$. Since $x \geq 1$ and the vertex is at $(1, 2)$, $f$ is strictly increasing on
 $[1, \infty)$.
 
 Range: $[2, \infty)$.
@@ -945,11 +945,11 @@ Range: $[2, \infty)$.
 Since $f$ is strictly increasing (hence injective) on $[1, \infty)$It has an inverse.
 
 **DSE Practice 3.** A function is defined by $f(x) = \lfloor x \rfloor$ (the greatest integer less
-than or equal to $x$). Find $f(3.7)$$f(-2.1)$And $f(0)$.
+than or equal to $x$). Find $f(3.7)$, $f(-2.1)$And $f(0)$.
 
 <summary>Solution</summary>
 
-$f(3.7) = 3$$f(-2.1) = -3$$f(0) = 0$.
+$f(3.7) = 3$, $f(-2.1) = -3$, $f(0) = 0$.
 
 **DSE Practice 4.** Determine whether $f(x) = x^3 + x$ is odd, even, or neither.
 
@@ -957,10 +957,10 @@ $f(3.7) = 3$$f(-2.1) = -3$$f(0) = 0$.
 
 $$f(-x) = (-x)^3 + (-x) = -x^3 - x = -(x^3 + x) = -f(x)$$
 
-Since $f(-x) = -f(x)$$f$ is odd.
+Since $f(-x) = -f(x)$, $f$ is odd.
 
 **DSE Practice 5.** The function $f$ is defined on $\mathbb{R}$ by $f(x) = ax^2 + bx + c$. Given
-that $f(0) = 5$$f(1) = 4$And $f(-1) = 10$Find $a$$b$And $c$.
+that $f(0) = 5$, $f(1) = 4$And $f(-1) = 10$Find $a$, $b$And $c$.
 
 <summary>Solution</summary>
 

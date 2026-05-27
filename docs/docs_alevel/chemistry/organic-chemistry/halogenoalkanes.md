@@ -63,7 +63,7 @@ Transition state has trigonal bipyramidal geometry.
 **Favouring factors:**
 
 - Primary halogenoalkanes (minimal steric hindrance to backside attack).
-- Strong nucleophiles (e.g. $\mathrm{OH}^-$$\mathrm{CN}^-$$\mathrm{NH}_3$).
+- Strong nucleophiles (e.g. $\mathrm{OH}^-$, $\mathrm{CN}^-$, $\mathrm{NH}_3$).
 - Polar aprotic solvents (e.g. Acetone, DMSO, DMF), which solvate cations but not anions, keeping
   the nucleophile "naked" and reactive.
 
@@ -99,7 +99,7 @@ Partially shields one face (ion pair effect).
 **Favouring factors:**
 
 - Tertiary halogenoalkanes (stable carbocation intermediate).
-- Weak nucleophiles (e.g. $\mathrm{H}_2\mathrm{O}$$\mathrm{ROH}$).
+- Weak nucleophiles (e.g. $\mathrm{H}_2\mathrm{O}$, $\mathrm{ROH}$).
 - Polar protic solvents (e.g. Water, ethanol), which stabilise the carbocation and the leaving group
   through solvation.
 
@@ -213,7 +213,7 @@ Damage to marine phytoplankton (the base of the oceanic food chain).
 
 The Antarctic ozone hole (first detected in 1985) forms during the Antarctic spring due to
 Heterogeneous reactions on polar stratospheric cloud (PSC) surfaces that convert inactive chlorine
-Reservoirs ($\mathrm{HCl}$$\mathrm{ClONO}_2$) into active $\mathrm{Cl}_2$ and $\mathrm{HOCl}$.
+Reservoirs ($\mathrm{HCl}$, $\mathrm{ClONO}_2$) into active $\mathrm{Cl}_2$ and $\mathrm{HOCl}$.
 
 ### Montreal Protocol
 
@@ -239,7 +239,7 @@ Current replacements include:
 | ------------------------- | ----------------------------------------------------- | ------------------ | ------------------------- |
 | HFCs                      | $\mathrm{CF}_3\mathrm{CH}_2\mathrm{F}$ (HFC-134a)     | Zero (no chlorine) | High (GWP $\approx 1430$) |
 | HFOs (hydrofluoroolefins) | $\mathrm{CF}_3\mathrm{CF}=\mathrm{CH}_2$ (HFO-1234yf) | Zero               | Low (GWP $\approx 4$)     |
-| Natural refrigerants      | $\mathrm{NH}_3$$\mathrm{CO}_2$Hydrocarbons            | Zero               | Zero or low               |
+| Natural refrigerants      | $\mathrm{NH}_3$, $\mathrm{CO}_2$Hydrocarbons            | Zero               | Zero or low               |
 
 HFOs are the latest generation of refrigerants, designed to have both zero ozone depletion potential
 and very low global warming potential.
@@ -255,7 +255,7 @@ $$
 \mathrm{R-X} + \mathrm{H}_2\mathrm{O} \to \mathrm{R-OH} + \mathrm{X}^-
 $$
 
-Adding $\mathrm{AgNO}_3(aq)$ produces a precipitate ($\mathrm{AgCl}$$\mathrm{AgBr}$Or
+Adding $\mathrm{AgNO}_3(aq)$ produces a precipitate ($\mathrm{AgCl}$, $\mathrm{AgBr}$Or
 $\mathrm{AgI}$) whose appearance can be timed. The time for the precipitate to appear is inversely
 proportional to the rate of hydrolysis.
 

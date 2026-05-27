@@ -217,7 +217,7 @@ confidence, recalculate the multiplier and explain the effect on the money suppl
 (a) The money multiplier accounting for excess reserves ($er$) and the currency-deposit ratio
 ($cr$):
 
-$$m = \frac{1 + cr}{rrr + er + cr} = \frac{1 + 0.15}{0.08 + 0.02 + 0.15} = \frac{1.15}{0.25} = 4.6$$
+$, $m = \frac{1 + cr}{rrr + er + cr} = \frac{1 + 0.15}{0.08 + 0.02 + 0.15} = \frac{1.15}{0.25} = 4.6$, $
 
 (b) (i) Monetary base change $= \$50$ billion (the OMO directly changes reserves, part of the
 monetary base).
@@ -335,13 +335,13 @@ address the downturn.
 (c) Original mortgage rate $= \text{HIBOR} + 1.5\% = 2\% + 1.5\% = 3.5\%$. Monthly payment (assuming
 25-year mortgage):
 
-$$M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
+$, $M = P \times \frac{r(1+r)^n}{(1+r)^n - 1}$, $
 
 Where $P = 2,000,000$$r = 0.035/12 = 0.002917$$n = 300$.
 
 $M = 2\,000\,000 \times \frac{0.002917(1.002917)^{300}}{(1.002917)^{300} - 1} = 2\,000\,000 \times \frac{0.002917 \times 2.4066}{2.4066 - 1} = 2\,000\,000 \times \frac{0.00702}{1.4066} = \text{HK}\$9\,983$
 
-After rate rise: new rate $= 2.5\% + 1.5\% = 4.0\%$$r = 0.04/12 = 0.003333$.
+After rate rise: new rate $= 2.5\% + 1.5\% = 4.0\%$, $r = 0.04/12 = 0.003333$.
 
 $M' = 2\,000\,000 \times \frac{0.003333(1.003333)^{300}}{(1.003333)^{300} - 1} = 2\,000\,000 \times \frac{0.003333 \times 2.7137}{2.7137 - 1} = 2\,000\,000 \times \frac{0.009046}{1.7137} = \text{HK}\$10\,558$
 

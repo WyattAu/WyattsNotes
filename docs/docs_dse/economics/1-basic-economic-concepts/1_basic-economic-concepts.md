@@ -1221,7 +1221,7 @@ If you get this wrong, revise: [Division of Labour](#division-of-labour)
 ### Problem 9: PPC and Economic Growth
 
 A country's PPC for capital goods ($K$) and consumer goods ($C$) is given by
-$K = 400 - C - 0.005C^2$Where $0 \le C \le 200$. Currently producing at $C = 100$$K = 250$.
+$K = 400 - C - 0.005C^2$Where $0 \le C \le 200$. Currently producing at $C = 100$, $K = 250$.
 
 (a) Verify that $(100, 250)$ lies on the PPC. (b) Calculate the opportunity cost of producing the
 101st unit of consumer goods. (c) If the country invests in new technology, shifting the PPC outward
@@ -1240,7 +1240,7 @@ $MRT = \left|\frac{dK}{dC}\right| = |{-1 - 0.01C}| = 1 + 0.01C$.
 At $C = 100$: $MRT = 1 + 1 = 2$. The 101st unit of consumer goods costs 2 units of capital goods in
 opportunity cost.
 
-(c) New PPC intercept: when $C = 0$$K = 480$. When $K = 0$: $0 = 480 - C - 0.005C^2$.
+(c) New PPC intercept: when $C = 0$, $K = 480$. When $K = 0$: $0 = 480 - C - 0.005C^2$.
 $0.005C^2 + C - 480 = 0$.
 $C = \frac{-1 + \sqrt{1 + 9.6}}{0.01} = \frac{-1 + \sqrt{10.6}}{0.01} = \frac{-1 + 3.256}{0.01} = 225.6$.
 

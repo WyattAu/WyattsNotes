@@ -138,16 +138,16 @@ that connective) and **elimination rules** (how to _use_ a formula with that con
 
 | Rule          | Premises                           | Conclusion  |
 | ------------- | ---------------------------------- | ----------- |
-| $\land$-I     | $A$$B$                             | $A \land B$ |
+| $\land$-I     | $A$, $B$                             | $A \land B$ |
 | $\land$-E$_1$ | $A \land B$                        | $A$         |
 | $\land$-E$_2$ | $A \land B$                        | $B$         |
 | $\lor$-I$_1$  | $A$                                | $A \lor B$  |
 | $\lor$-I$_2$  | $B$                                | $A \lor B$  |
-| $\lor$-E      | $A \lor B$$A \vdash C$$B \vdash C$ | $C$         |
+| $\lor$-E      | $A \lor B$, $A \vdash C$, $B \vdash C$ | $C$         |
 | $\to$-I       | $[A] \vdash B$                     | $A \to B$   |
-| $\to$-E       | $A$$A \to B$                       | $B$         |
+| $\to$-E       | $A$, $A \to B$                       | $B$         |
 | $\neg$-I      | $[A] \vdash \bot$                  | $\neg A$    |
-| $\neg$-E      | $A$$\neg A$                        | $\bot$      |
+| $\neg$-E      | $A$, $\neg A$                        | $\bot$      |
 | DNE           | $\neg\neg A$                       | $A$         |
 | RAA           | $[\neg A] \vdash \bot$             | $A$         |
 
@@ -356,7 +356,7 @@ A **binary relation** $R$ from set $A$ to set $B$ is a subset of $A \times B$.
 
 A relation $R$ on $A$ is:
 
-- **Reflexive:** $\forall a \in A$$(a,a) \in R$.
+- **Reflexive:** $\forall a \in A$, $(a,a) \in R$.
 - **Symmetric:** $(a,b) \in R \implies (b,a) \in R$.
 - **Antisymmetric:** $(a,b) \in R$ and $(b,a) \in R \implies a = b$.
 - **Transitive:** $(a,b) \in R$ and $(b,c) \in R \implies $(a,c) \in R$.
@@ -468,7 +468,7 @@ countable Is **uncountable**.
 
 _Proof._ The function $f : \mathbb{{'}N{}'} \to \mathbb{{'}Z{}'}$ defined by
 
-$$f(n) = \begin◆LB◆cases◆RB◆ n/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; even \\ -(n+1)/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; odd \end◆LB◆cases◆RB◆$$
+$, $f(n) = \begin◆LB◆cases◆RB◆ n/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; even \\ -(n+1)/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; odd \end◆LB◆cases◆RB◆$, $
 
 Is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
@@ -492,7 +492,7 @@ the expansion that does not end in all 9s to avoid dual representations).
 
 Define $s = 0.s_1 s_2 s_3 \ldots$ by
 
-$$s_i = \begin◆LB◆cases◆RB◆ 5 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ \neq 5 \\ 6 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ = 5 \end◆LB◆cases◆RB◆$$
+$, $s_i = \begin◆LB◆cases◆RB◆ 5 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ \neq 5 \\ 6 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ = 5 \end◆LB◆cases◆RB◆$, $
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$ So
 $s \notin \\{r_1, r_2, \ldots\\}$Contradicting the assumption that the list was complete. Therefore
@@ -516,7 +516,7 @@ $\blacksquare$
 
 Let $a = p/q$ and $b = r/s$ where $p, q, r, s \in \mathbb{{'}Z{}'}$ and $q, s \neq 0$. Then
 
-$$a + b = \frac◆LB◆p◆RB◆◆LB◆q◆RB◆ + \frac◆LB◆r◆RB◆◆LB◆s◆RB◆ = \frac◆LB◆ps + rq◆RB◆◆LB◆qs◆RB◆$$
+$, $a + b = \frac◆LB◆p◆RB◆◆LB◆q◆RB◆ + \frac◆LB◆r◆RB◆◆LB◆s◆RB◆ = \frac◆LB◆ps + rq◆RB◆◆LB◆qs◆RB◆$, $
 
 Since $ps + rq \in \mathbb{{'}Z{}'}$ and $qs \in \mathbb{{'}Z{}'} \setminus \\{0\\}$The sum $a + b$
 is rational. $\blacksquare$
@@ -580,7 +580,7 @@ _Proof._ Base case: $n = 1$: $1 = 1 \cdot 2 / 2$. True.
 
 Inductive step: Assume $\sum_{i=1}^{k} i = k(k+1)/2$. Then
 
-$$\sum_◆LB◆i=1◆RB◆^◆LB◆k+1◆RB◆ i = \frac◆LB◆k(k+1)◆RB◆◆LB◆2◆RB◆ + (k+1) = \frac◆LB◆k(k+1) + 2(k+1)◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆(k+1)(k+2)◆RB◆◆LB◆2◆RB◆$$
+$, $\sum_◆LB◆i=1◆RB◆^◆LB◆k+1◆RB◆ i = \frac◆LB◆k(k+1)◆RB◆◆LB◆2◆RB◆ + (k+1) = \frac◆LB◆k(k+1) + 2(k+1)◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆(k+1)(k+2)◆RB◆◆LB◆2◆RB◆$, $
 
 $\blacksquare$
 
@@ -612,7 +612,7 @@ _Base case:_ $n = 0$: $2^0 = 1 = 2^{0+1} - 1$. ✓
 
 _Inductive step:_ Assume $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then
 
-$$\sum_◆LB◆i=0◆RB◆^◆LB◆k+1◆RB◆ 2^i = 2^◆LB◆k+1◆RB◆ - 1 + 2^◆LB◆k+1◆RB◆ = 2 \cdot 2^◆LB◆k+1◆RB◆ - 1 = 2^◆LB◆k+2◆RB◆ - 1$$
+$, $\sum_◆LB◆i=0◆RB◆^◆LB◆k+1◆RB◆ 2^i = 2^◆LB◆k+1◆RB◆ - 1 + 2^◆LB◆k+1◆RB◆ = 2 \cdot 2^◆LB◆k+1◆RB◆ - 1 = 2^◆LB◆k+2◆RB◆ - 1$, $
 
 $\blacksquare$
 
@@ -865,7 +865,7 @@ Pigeonhole principle, at least two people have the same count. $\blacksquare$
 
 The $n$-th **Catalan number** is
 
-$$C_n = \frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆\binom◆LB◆2n◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆(2n)!◆RB◆◆LB◆(n+1)!\,n!◆RB◆$$
+$, $C_n = \frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆\binom◆LB◆2n◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆(2n)!◆RB◆◆LB◆(n+1)!\,n!◆RB◆$, $
 
 The first few values: $C_0 = 1$$C_1 = 1$$C_2 = 2$$C_3 = 5$$C_4 = 14$$C_5 = 42$.
 
@@ -980,7 +980,7 @@ A graph is **planar** if it can be drawn in the plane with no edge crossings.
 **Theorem 5.5 (Euler's Formula for Planar Graphs).** For a connected planar graph drawn in the plane
 With $V$ vertices, $E$ edges, and $F$ faces:
 
-$$V - E + F = 2$$
+$, $V - E + F = 2$, $
 
 _Proof sketch._ Build the graph edge by edge. Starting from a single vertex ($V = 1$$E = 0$$F = 1$),
 The quantity $V - E + F = 2$ is preserved when adding an edge: if the edge connects two components,
@@ -1188,7 +1188,7 @@ Endpoint). A vertex is **matched** if it is an endpoint of an edge in $M$; other
 Partitions $X$ and $Y$. There exists a matching that covers every vertex in $X$ if and only if for
 Every subset $S \subseteq X$
 
-$$|N(S)| \geq |S|$$
+$, $|N(S)| \geq |S|$, $
 
 Where $N(S) = \\{y \in Y : \exists\, x \in S\; \mathrm{with{}\; xy \in E\\}$ is the neighbourhood of
 $S$.
@@ -1343,9 +1343,9 @@ $F_n = F_◆LB◆n-1◆RB◆ + F_◆LB◆n-2◆RB◆$ With $F_0 = 0$$F_1 = 1$.
 
 Let $G(x) = \sum_{n=0}^{\infty} F_n x^n$.
 
-$$G(x) = x + \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ (F_◆LB◆n-1◆RB◆ + F_◆LB◆n-2◆RB◆) x^n = x + x(G(x) - F_0) + x^2 G(x) = x + xG(x) + x^2 G(x)$$
+$, $G(x) = x + \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ (F_◆LB◆n-1◆RB◆ + F_◆LB◆n-2◆RB◆) x^n = x + x(G(x) - F_0) + x^2 G(x) = x + xG(x) + x^2 G(x)$, $
 
-$$G(x)(1 - x - x^2) = x \implies G(x) = \frac◆LB◆x◆RB◆◆LB◆1 - x - x^2◆RB◆$$
+$, $G(x)(1 - x - x^2) = x \implies G(x) = \frac◆LB◆x◆RB◆◆LB◆1 - x - x^2◆RB◆$, $
 
 Factor: $1 - x - x^2 = (1 - \alpha x)(1 - \beta x)$ where $\alpha = (1 + \sqrt{5})/2$ and
 $\beta = (1 - \sqrt{5})/2$.
@@ -1363,9 +1363,9 @@ $F_n = \frac{1}{\sqrt{5}}(\alpha^n - \beta^n)$ (Binet's formula). $\blacksquare$
 
 Let $G(x) = \sum_{n=0}^{\infty} a_n x^n$.
 
-$$G(x) = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ (2a_◆LB◆n-1◆RB◆ + 1) x^n = 2x G(x) + \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ x^n = 2x G(x) + \frac◆LB◆x◆RB◆◆LB◆1-x◆RB◆$$
+$, $G(x) = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ (2a_◆LB◆n-1◆RB◆ + 1) x^n = 2x G(x) + \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ x^n = 2x G(x) + \frac◆LB◆x◆RB◆◆LB◆1-x◆RB◆$, $
 
-$$(1 - 2x) G(x) = \frac◆LB◆x◆RB◆◆LB◆1-x◆RB◆ \implies G(x) = \frac◆LB◆x◆RB◆◆LB◆(1-x)(1-2x)◆RB◆$$
+$, $(1 - 2x) G(x) = \frac◆LB◆x◆RB◆◆LB◆1-x◆RB◆ \implies G(x) = \frac◆LB◆x◆RB◆◆LB◆(1-x)(1-2x)◆RB◆$, $
 
 Partial fractions: $\frac{x}{(1-x)(1-2x)} = \frac{A}{1-x} + \frac{B}{1-2x}$.
 
@@ -1446,7 +1446,7 @@ Therefore $T(n) = \Theta(n^2)$.
 There are $a^j$ subproblems, each of size $n/b^j$Each contributing $f(n/b^j)$ work. The tree has
 $\log_b n$ levels, with $a^{\log_b n} = n^{c_{\mathrm{crit{}}}$ leaves. The total work is
 
-$$T(n) = \Theta\!\left(n^◆LB◆c_◆LB◆\mathrm◆LB◆crit◆RB◆◆RB◆\right) + \sum_◆LB◆j=0◆RB◆^◆LB◆\log_b n - 1◆RB◆ a^j \, f(n/b^j)$$
+$, $T(n) = \Theta\!\left(n^◆LB◆c_◆LB◆\mathrm◆LB◆crit◆RB◆◆RB◆\right) + \sum_◆LB◆j=0◆RB◆^◆LB◆\log_b n - 1◆RB◆ a^j \, f(n/b^j)$, $
 
 - **Case 1:** $f(n) = O(n^c)$ with $c \lt c_{\mathrm{crit{}}$. The sum is dominated by the leaves,
   giving $T(n) = \Theta(n^{c_{\mathrm{crit{}}})$.
@@ -1623,7 +1623,7 @@ _Base case:_ $n = 0$: $2^0 = 1 = 2^1 - 1$. ✓
 
 _Inductive step:_ Assume $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then
 
-$$\sum_◆LB◆i=0◆RB◆^◆LB◆k+1◆RB◆ 2^i = (2^◆LB◆k+1◆RB◆ - 1) + 2^◆LB◆k+1◆RB◆ = 2 \cdot 2^◆LB◆k+1◆RB◆ - 1 = 2^◆LB◆k+2◆RB◆ - 1$$
+$, $\sum_◆LB◆i=0◆RB◆^◆LB◆k+1◆RB◆ 2^i = (2^◆LB◆k+1◆RB◆ - 1) + 2^◆LB◆k+1◆RB◆ = 2 \cdot 2^◆LB◆k+1◆RB◆ - 1 = 2^◆LB◆k+2◆RB◆ - 1$, $
 
 $\blacksquare$
 

@@ -65,7 +65,7 @@ Transition Metals
 - Atomic Structure must be mastered before Bonding and Structure.
 - Quantitative Chemistry (moles, equations) underpins all subsequent topics.
 - Kinetics and Thermodynamics both feed into Equilibrium.
-- Acids and Bases requires Equilibrium concepts ($K_a$$K_w$ as equilibrium constants).
+- Acids and Bases requires Equilibrium concepts ($K_a$, $K_w$ as equilibrium constants).
 - Electrochemistry draws on redox concepts from Transition Metals and thermodynamics.
 - Organic Introduction provides the nomenclature and isomerism foundation for all organic topics.
 - Alkanes/Alkenes must precede Halogenoalkanes/Alcohols (mechanism foundations).
@@ -202,7 +202,7 @@ Each diagnostic test contains questions rated by difficulty and type:
 | diag-bonding-structure        | VSEPR, intermolecular forces, ionic/covalent bonding             | bonding-and-structure.md                                                                          |
 | diag-quantitative-chemistry   | Moles, titration, gas calculations, uncertainties                | quantitative-chemistry.md                                                                         |
 | diag-kinetics                 | Rate equations, Arrhenius, mechanisms, catalysts                 | kinetics.md                                                                                       |
-| diag-equilibrium              | $K_c$$K_p$Le Chatelier, heterogeneous equilibrium                | equilibrium.md                                                                                    |
+| diag-equilibrium              | $K_c$, $K_p$Le Chatelier, heterogeneous equilibrium                | equilibrium.md                                                                                    |
 | diag-thermodynamics           | Enthalpy, entropy, Gibbs energy, Born-Haber                      | thermodynamics.md, entropy-and-gibbs.md, born-haber-cycles.md                                     |
 | diag-acids-bases              | pH, weak acids, buffers, titration curves, indicators            | acids-bases.md                                                                                    |
 | diag-electrochemistry         | Electrode potentials, cells, electrolysis, feasibility           | electrochemistry.md                                                                               |

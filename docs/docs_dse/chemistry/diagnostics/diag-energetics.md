@@ -179,7 +179,7 @@ Given:
 
 - $\Delta H_{f}^{\circ}(C_{2}H_{4}, g) = +52.2$ kJ/mol
 - $\Delta H_{f}^{\circ}(C_{2}H_{6}, g) = -84.7$ kJ/mol
-- Bond enthalpies: $C=C = 612$$C-C = 348$$C-H = 412$$H-H = 436$ (all in kJ/mol)
+- Bond enthalpies: $C=C = 612$, $C-C = 348$, $C-H = 412$, $H-H = 436$ (all in kJ/mol)
 
 (a) Calculate the enthalpy change for the hydrogenation of ethene using standard enthalpy of
 formation data:
@@ -209,7 +209,7 @@ $$= -84.7 - 52.2 - 0 = -136.9 \text{ kJ/mol}$$
 
 Bonds broken: $C=C + H-H + 4 \times C-H = 612 + 436 + 1648 = 2696$ kJ/mol
 
-Bonds formed (in $C_{2}H_{6}$$H_{3}C-CH_{3}$):
+Bonds formed (in $C_{2}H_{6}$, $H_{3}C-CH_{3}$):
 $1 \times C-C + 6 \times C-H = 348 + 6 \times 412 = 348 + 2472 = 2820$ kJ/mol
 
 $$\Delta H = 2696 - 2820 = -124 \text{ kJ/mol}$$

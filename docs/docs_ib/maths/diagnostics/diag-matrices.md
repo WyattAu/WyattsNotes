@@ -98,7 +98,7 @@ For $\lambda_2 = 3$: $(M - 3I)\mathbf{v} = \mathbf{0}$:
 
 $$\begin{pmatrix} -1 & 1 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$$
 
-This gives $y = 0$$-x = 0$ so $x = 0$With $z$ free. Eigenvector:
+This gives $y = 0$, $-x = 0$ so $x = 0$With $z$ free. Eigenvector:
 $\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
 
 **(b)** The student is incorrect. While it is true that the eigenvalues of a triangular matrix are
