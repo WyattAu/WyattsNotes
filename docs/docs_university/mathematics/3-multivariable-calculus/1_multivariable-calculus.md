@@ -768,9 +768,9 @@ _Physical interpretation._ If $\mathbf◆LB◆F◆RB◆$ represents the velocity
 
 **Proposition 3.5.** For any $C^2$ vector field $\mathbf◆LB◆F◆RB◆$:
 
-$$\nabla \cdot (\nabla \times \mathbf◆LB◆F◆RB◆) = 0 \quad \mathrm◆LB◆(div\ of\ curl\ is\ zero)$$
+$$\nabla \cdot (\nabla \times \mathbf◆LB◆F◆RB◆) = 0 \quad \mathrm◆LB◆(div\ of\ curl\ is\ zero)◆RB◆$$
 
-$$\nabla \times (\nabla \phi) = \mathbf◆LB◆0◆RB◆ \quad \mathrm◆LB◆(curl\ of\ gradient\ is\ zero)$$
+$$\nabla \times (\nabla \phi) = \mathbf◆LB◆0◆RB◆ \quad \mathrm◆LB◆(curl\ of\ gradient\ is\ zero)◆RB◆$$
 
 _Proof._ Both follow from Clairaut's theorem on equality of mixed partials. For the first:
 
@@ -999,13 +999,13 @@ Circulation around a curve to the curl through the surface it bounds. The diverg
 The flux through a closed surface to the divergence inside the volume it encloses. Together, these
 Form the higher-dimensional analogues of the Fundamental Theorem of Calculus:
 
-$$\int_a^b f'(x)\, dx = f(b) - f(a) \quad \mathrm◆LB◆(FTC)$$
+$$\int_a^b f'(x)\, dx = f(b) - f(a) \quad \mathrm◆LB◆(FTC)◆RB◆$$
 
-$$\int_C \nabla \phi \cdot d\mathbf◆LB◆r◆RB◆ = \phi(B) - \phi(A) \quad \mathrm◆LB◆(FTLI)$$
+$$\int_C \nabla \phi \cdot d\mathbf◆LB◆r◆RB◆ = \phi(B) - \phi(A) \quad \mathrm◆LB◆(FTLI)◆RB◆$$
 
-$$\oint_C \mathbf◆LB◆F◆RB◆ \cdot d\mathbf◆LB◆r◆RB◆ = \iint_S (\nabla \times \mathbf◆LB◆F◆RB◆) \cdot d\mathbf◆LB◆S◆RB◆ \quad \mathrm◆LB◆(Stokes)$$
+$$\oint_C \mathbf◆LB◆F◆RB◆ \cdot d\mathbf◆LB◆r◆RB◆ = \iint_S (\nabla \times \mathbf◆LB◆F◆RB◆) \cdot d\mathbf◆LB◆S◆RB◆ \quad \mathrm◆LB◆(Stokes)◆RB◆$$
 
-$$\iint_S \mathbf◆LB◆F◆RB◆ \cdot d\mathbf◆LB◆S◆RB◆ = \iiint_E (\nabla \cdot \mathbf◆LB◆F◆RB◆)\, dV \quad \mathrm◆LB◆(Divergence)$$
+$$\iint_S \mathbf◆LB◆F◆RB◆ \cdot d\mathbf◆LB◆S◆RB◆ = \iiint_E (\nabla \cdot \mathbf◆LB◆F◆RB◆)\, dV \quad \mathrm◆LB◆(Divergence)◆RB◆$$
 
 In each case, the integral of a "derivative" over a region equals the integral of the original
 function Over the boundary of that region. This is the **generalised Stokes' theorem**:

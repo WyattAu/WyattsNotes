@@ -590,9 +590,9 @@ Link rate, and $d_◆LB◆\mathrm◆LB◆prop◆RB◆$ is the propagation delay.
 
 For a path through $n$ switches:
 
-$$\mathrm◆LB◆Store◆RB◆\mathrm◆LB◆-and\mathrm◆LB◆-forward\;latency◆RB◆ = n \cdot \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
+$$\mathrm◆LB◆Store◆RB◆\mathrm◆LB◆-and\mathrm◆RB◆◆LB◆-forward\;latency◆RB◆ = n \cdot \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
 
-$$\mathrm◆LB◆Cut◆RB◆\mathrm◆LB◆-through\;latency◆RB◆ = \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + (n-1) \cdot \frac◆LB◆L_h◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
+$$\mathrm◆LB◆Cut◆RB◆\mathrm◆LB◆-through◆RB◆\;latency◆RB◆ = \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + (n-1) \cdot \frac◆LB◆L_h◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
 
 <details>
 <summary>Worked Example: Switching Latency Comparison</summary>

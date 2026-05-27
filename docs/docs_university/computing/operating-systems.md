@@ -63,7 +63,7 @@ Are invoked via software interrupts (e.g., `syscall` on x86-64, `svc` on ARM).
 
 **System call overhead.** A transition from user mode to kernel mode involves saving user Registers,
 switching to the kernel stack, validating arguments, executing kernel code, and Returning. Typical
-overhead: $100\mathrm◆LB◆--1000$ ns on modern hardware.
+overhead: $100\mathrm◆LB◆--1000◆RB◆$ ns on modern hardware.
 
 ## 2. Process Management
 
@@ -147,7 +147,7 @@ Remaining burst, preempt the current process.
 
 **Round Robin (RR).** Each process gets a time quantum $q$. If not finished within $q$Preempted and
 Placed at the back of the ready queue. If $q$ is large, RR degenerates to FCFS. Typical $q$:
-$10\mathrm◆LB◆--100$ ms.
+$10\mathrm◆LB◆--100◆RB◆$ ms.
 
 **Priority Scheduling.** Highest-priority ready process runs. Can be preemptive or non-preemptive.
 Risk of **starvation**; solved by **aging** (gradually increase priority of waiting processes).

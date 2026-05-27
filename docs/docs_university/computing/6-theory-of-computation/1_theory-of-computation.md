@@ -198,8 +198,8 @@ _Proof (subset construction)._ Given NFA $N = (Q, \Sigma, \delta, q_0, F)$Constr
 $D = (Q', \Sigma, \delta', q_0', F')$ where:
 
 - $Q' = \mathcal◆LB◆P◆RB◆(Q)$ (each state of $D$ is a subset of states of $N$).
-- $q_0' = \varepsilon\mathrm◆LB◆-closure(\{q_0\})$.
-- $\delta'(S, a) = \varepsilon\mathrm◆LB◆-closure(\bigcup_◆LB◆q \in S◆RB◆ \delta(q, a))$ for $S \subseteq Q$
+- $q_0' = \varepsilon\mathrm◆LB◆-closure(\{q_0\})◆RB◆$.
+- $\delta'(S, a) = \varepsilon\mathrm◆LB◆-closure(\bigcup_◆LB◆q \in S◆RB◆ \delta(q, a))◆RB◆$ for $S \subseteq Q$
   $a \in \Sigma$.
 - $F' = \{S \subseteq Q : S \cap F \neq \emptyset\}$.
 
@@ -1695,7 +1695,7 @@ $$\mathrm{P \subseteq \mathrm{NP \subseteq \mathrm{PH \subseteq \mathrm{PSPACE$$
 | ------------------------------------------------------------- | ------------------- | ------------------- |
 | $\mathrm◆LB◆Regular◆RB◆ \subseteq \mathrm◆LB◆CFL◆RB◆$                       | Yes                 | Pumping lemma       |
 | $\mathrm◆LB◆CFL◆RB◆ \subseteq \mathrm◆LB◆Decidable◆RB◆$                     | Yes                 | CYK algorithm       |
-| $\mathrm◆LB◆Decidable◆RB◆ \subseteq \mathrm◆LB◆TM◆RB◆\mathrm◆LB◆-recognisable$ | Yes                 | Diagonalisation     |
+| $\mathrm◆LB◆Decidable◆RB◆ \subseteq \mathrm◆LB◆TM◆RB◆\mathrm◆LB◆-recognisable◆RB◆$ | Yes                 | Diagonalisation     |
 | $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆EXPTIME◆RB◆$                         | Yes                 | Time hierarchy      |
 | $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆PSPACE◆RB◆$                          | Yes                 | Space hierarchy     |
 | $\mathrm◆LB◆NP◆RB◆ \subseteq \mathrm◆LB◆PSPACE◆RB◆$                         | Yes                 | Savitch's corollary |
@@ -1777,13 +1777,13 @@ exists).
 **Problem 16.** Using Savitch's theorem, prove that $\mathrm◆LB◆NL◆RB◆ \subseteq \mathrm◆LB◆P◆RB◆$. What is the
 time complexity of your algorithm?
 
-**Problem 17.** Define the language $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE = \{\langle G, k \rangle : G$
-$\mathrm◆LB◆ has a clique of exactly size  k\}$. Show that $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE$ is
+**Problem 17.** Define the language $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE◆RB◆ = \{\langle G, k \rangle : G$
+$\mathrm◆LB◆ has a clique of exactly size  k\}$. Show that $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE◆RB◆$ is
 NP-complete.
 
 **Problem 18.** A language $L$ is in **DP** (difference of two NP sets) if there exist
 $L_1, L_2 \in \mathrm◆LB◆NP◆RB◆$ such that $L = L_1 \cap \overline◆LB◆L_2◆RB◆$. Show that
-$\mathrm◆LB◆SAT◆RB◆\mathrm◆LB◆-UNSAT = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT◆RB◆ \mathrm◆LB◆ and 
+$\mathrm◆LB◆SAT◆RB◆\mathrm◆LB◆-UNSAT◆RB◆ = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT◆RB◆ \mathrm◆LB◆ and 
 \psi \notin \mathrm◆LB◆SAT◆RB◆\}$
 is in DP. Is DP contained in $\Sigma_2^P$? Justify.
 

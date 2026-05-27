@@ -712,7 +712,7 @@ $$m \sim (T_c - T)^◆LB◆1/\beta◆RB◆, \quad \chi \sim |T - T_c|^◆LB◆-\
 
 Mean field theory predicts:
 
-$$\beta = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆, \quad \gamma = 1, \quad \alpha = 0\ \text◆LB◆(jump discontinuity)$$
+$$\beta = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆, \quad \gamma = 1, \quad \alpha = 0\ \text◆LB◆(jump discontinuity)◆RB◆$$
 
 These are the **classical** critical exponents. They are independent of the spatial dimension $d$
 and the lattice structure --- a deficiency of mean field theory. Exact results and renormalisation
@@ -1367,7 +1367,7 @@ $$D = \mu k_B T$$
 
 For a spherical particle of radius $r$ in a fluid with viscosity $\eta$:
 
-$$\mu = \frac◆LB◆1◆RB◆◆LB◆6\pi\eta r◆RB◆ \quad \text◆LB◆(Stokes drag)$$
+$$\mu = \frac◆LB◆1◆RB◆◆LB◆6\pi\eta r◆RB◆ \quad \text◆LB◆(Stokes drag)◆RB◆$$
 
 So $D = k_B T/(6\pi\eta r)$.
 

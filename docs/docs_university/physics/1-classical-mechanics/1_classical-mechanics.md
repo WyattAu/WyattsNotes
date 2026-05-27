@@ -2270,7 +2270,7 @@ changed slowly compared to the period of motion.
 
 For a harmonic oscillator with slowly varying $\omega(t)$:
 
-$$\frac◆LB◆E◆RB◆◆LB◆\omega◆RB◆ = \text◆LB◆const◆RB◆ \quad \text◆LB◆(adiabatic invariant)$$
+$$\frac◆LB◆E◆RB◆◆LB◆\omega◆RB◆ = \text◆LB◆const◆RB◆ \quad \text◆LB◆(adiabatic invariant)◆RB◆$$
 
 This has important applications:
 

@@ -1364,11 +1364,11 @@ Near a critical point, thermodynamic quantities follow power laws:
 
 The **scaling relations** (from the homogeneity hypothesis):
 
-$$\alpha + 2\beta + \gamma = 2 \quad \mathrm◆LB◆(Rushbrooke)$$
+$$\alpha + 2\beta + \gamma = 2 \quad \mathrm◆LB◆(Rushbrooke)◆RB◆$$
 
-$$\gamma = \beta(\delta - 1) \quad \mathrm◆LB◆(Widom)$$
+$$\gamma = \beta(\delta - 1) \quad \mathrm◆LB◆(Widom)◆RB◆$$
 
-$$\gamma = (2 - \eta)\nu \quad \mathrm◆LB◆(Fisher)$$
+$$\gamma = (2 - \eta)\nu \quad \mathrm◆LB◆(Fisher)◆RB◆$$
 
 These are verified experimentally and by renormalisation group calculations.
 

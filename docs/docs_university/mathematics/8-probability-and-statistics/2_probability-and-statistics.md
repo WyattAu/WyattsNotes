@@ -642,11 +642,11 @@ $$P(X \gt 300 + 200 \mid X \gt 300) = P(X \gt 200) = e^◆LB◆-200/500◆RB◆ 
 
 **Definition.** The **expected value** of $X$ is
 
-$$E[X] = \begin◆LB◆cases◆RB◆ \sum_x x\, f_X(x) & \mathrm◆LB◆(discrete) \\ \int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ x\, f_X(x)\, dx & \mathrm◆LB◆(continuous) \end◆LB◆cases◆RB◆$$
+$$E[X] = \begin◆LB◆cases◆RB◆ \sum_x x\, f_X(x) & \mathrm◆LB◆(discrete)◆RB◆ \\ \int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ x\, f_X(x)\, dx & \mathrm◆LB◆(continuous)◆RB◆ \end◆LB◆cases◆RB◆$$
 
 **Proposition 4.1 (LOTUS — Law of the Unconscious Statistician).** For any function $g$:
 
-$$E[g(X)] = \begin◆LB◆cases◆RB◆ \sum_x g(x)\, f_X(x) & \mathrm◆LB◆(discrete) \\ \int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ g(x)\, f_X(x)\, dx & \mathrm◆LB◆(continuous) \end◆LB◆cases◆RB◆$$
+$$E[g(X)] = \begin◆LB◆cases◆RB◆ \sum_x g(x)\, f_X(x) & \mathrm◆LB◆(discrete)◆RB◆ \\ \int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ g(x)\, f_X(x)\, dx & \mathrm◆LB◆(continuous)◆RB◆ \end◆LB◆cases◆RB◆$$
 
 _Intuition._ We do not need to find the distribution of $Y = g(X)$ to compute $E[Y]$; we integrate
 with respect to the Distribution of $X$ directly.

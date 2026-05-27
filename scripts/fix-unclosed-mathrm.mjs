@@ -69,7 +69,8 @@ function fixUnclosedBraces(content) {
         // We have \cmd◆LB◆ — now find where the argument should end
         const argStart = cmdEnd + LBRACE.length;
 
-        // Read the argument: word characters, possibly with escaped spaces
+        // Read the argument: word characters, possibly with escaped spaces,
+        // parentheses, backslash-prefixed symbols, dots, hyphens, etc.
         let argEnd = argStart;
         while (argEnd < content.length) {
           const ch = content[argEnd];
@@ -90,8 +91,57 @@ function fixUnclosedBraces(content) {
             continue;
           }
 
-          // Digits after _ continue (like Syl_2)
-          // Already handled by [a-zA-Z0-9_]
+          // Parenthesized text like \mathrm{(discrete)} or \mathrm{(div\ of\ curl)}
+          if (ch === '(') {
+            // Find matching closing paren
+            let depth = 1;
+            argEnd++; // skip opening (
+            while (argEnd < content.length && depth > 0) {
+              if (content[argEnd] === '(') depth++;
+              else if (content[argEnd] === ')') {
+                depth--;
+                if (depth === 0) {
+                  argEnd++; // include closing )
+                  break;
+                }
+              }
+              argEnd++;
+            }
+            // After closing paren, check if escaped space continues
+            if (
+              argEnd < content.length &&
+              content[argEnd] === '\\' &&
+              argEnd + 1 < content.length &&
+              /\s/.test(content[argEnd + 1])
+            ) {
+              argEnd += 2;
+              continue; // continue reading after parenthesized group
+            }
+            continue;
+          }
+
+          // Backslash-prefixed symbols like \prime, \circ, \cdot (common in \mathrm args)
+          if (
+            ch === '\\' &&
+            argEnd + 1 < content.length &&
+            /[a-zA-Z]/.test(content[argEnd + 1])
+          ) {
+            argEnd += 2; // skip \ and one letter
+            // Continue reading any following word chars
+            while (
+              argEnd < content.length &&
+              /[a-zA-Z0-9]/.test(content[argEnd])
+            ) {
+              argEnd++;
+            }
+            continue;
+          }
+
+          // Common punctuation that appears in \mathrm arguments
+          if (/[.\-]/.test(ch)) {
+            argEnd++;
+            continue;
+          }
 
           // Anything else ends the argument
           break;

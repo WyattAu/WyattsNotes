@@ -609,9 +609,9 @@ Between the wave reflected from the top surface and the wave reflected from the 
 A phase shift of $\pi$ occurs upon reflection from a medium of higher refractive index. The
 condition For constructive interference (bright reflection) is:
 
-$$2nt\cos\theta_t = \left(m + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right)\lambda \quad \mathrm◆LB◆(one\ phase\ shift)$$
+$$2nt\cos\theta_t = \left(m + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right)\lambda \quad \mathrm◆LB◆(one\ phase\ shift)◆RB◆$$
 
-$$2nt\cos\theta_t = m\lambda \quad \mathrm◆LB◆(zero\ or\ two\ phase\ shifts)$$
+$$2nt\cos\theta_t = m\lambda \quad \mathrm◆LB◆(zero\ or\ two\ phase\ shifts)◆RB◆$$
 
 :::caution Common Pitfall Always count the number of $\pi$ phase shifts that occur upon reflection.
 A reflection from Low-to-high refractive index introduces a $\pi$ shift; high-to-low does not. For a

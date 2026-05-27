@@ -2140,9 +2140,9 @@ potential, and $C_◆LB◆ox◆RB◆ = \varepsilon_◆LB◆ox◆RB◆/t_◆LB◆
 
 **Drain current (long-channel, above threshold):**
 
-$$I_D = \mu_n C_◆LB◆ox◆RB◆\frac◆LB◆W◆RB◆◆LB◆L◆RB◆\left[\left(V_G - V_T\right)V_D - \frac◆LB◆V_D^2◆RB◆◆LB◆2◆RB◆\right] \quad \text◆LB◆(linear region)$$
+$$I_D = \mu_n C_◆LB◆ox◆RB◆\frac◆LB◆W◆RB◆◆LB◆L◆RB◆\left[\left(V_G - V_T\right)V_D - \frac◆LB◆V_D^2◆RB◆◆LB◆2◆RB◆\right] \quad \text◆LB◆(linear region)◆RB◆$$
 
-$$I_D = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\mu_n C_◆LB◆ox◆RB◆\frac◆LB◆W◆RB◆◆LB◆L◆RB◆(V_G - V_T)^2 \quad \text◆LB◆(saturation,  V_D \geq V_G - V_T \text◆LB◆)$$
+$$I_D = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\mu_n C_◆LB◆ox◆RB◆\frac◆LB◆W◆RB◆◆LB◆L◆RB◆(V_G - V_T)^2 \quad \text◆LB◆(saturation,  V_D \geq V_G - V_T \text◆LB◆)◆RB◆$$
 
 **Subthreshold swing:** Below threshold, the current decreases exponentially:
 
@@ -2258,7 +2258,7 @@ A Type II superconductor has $\xi_0 = 5$ nm and $\lambda_0 = 50$ nm at $T = 0$. 
 
 $$\xi = \frac◆LB◆\xi_0◆RB◆◆LB◆\sqrt◆LB◆0.1◆RB◆◆RB◆ = \frac◆LB◆5◆RB◆◆LB◆0.316◆RB◆ = 15.8\ \text◆LB◆nm◆RB◆, \quad \lambda = \frac◆LB◆50◆RB◆◆LB◆\sqrt◆LB◆0.1◆RB◆◆RB◆ = 158\ \text◆LB◆nm◆RB◆$$
 
-$$\kappa = \lambda/\xi = 10 \quad \text◆LB◆(independent of  T\text◆LB◆)$$
+$$\kappa = \lambda/\xi = 10 \quad \text◆LB◆(independent of  T\text◆LB◆)◆RB◆$$
 
 (b)
 $B_◆LB◆c2◆RB◆ = \frac◆LB◆\Phi_0◆RB◆◆LB◆2\pi\xi^2◆RB◆ = \frac◆LB◆2.07 \times 10^◆LB◆-15◆RB◆◆RB◆◆LB◆2\pi \times (15.8 \times 10^◆LB◆-9◆RB◆)^2◆RB◆ = \frac◆LB◆2.07 \times 10^◆LB◆-15◆RB◆◆RB◆◆LB◆1.57 \times 10^◆LB◆-15◆RB◆◆RB◆ = 1.32\ \text◆LB◆T◆RB◆$

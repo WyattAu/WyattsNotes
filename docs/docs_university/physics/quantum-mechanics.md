@@ -1255,7 +1255,7 @@ The ground state wave function ($n = 1, l = 0, m_l = 0$):
 
 $$\psi_◆LB◆100◆RB◆(r, \theta, \phi) = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆\pi a_0^3◆RB◆◆RB◆ e^◆LB◆-r/a_0◆RB◆$$
 
-Where $a_0 = \frac◆LB◆4\pi\varepsilon_0 \hbar^2◆RB◆◆LB◆m_e e^2◆RB◆ \approx 0.529\,\mathrm◆LB◆\AA$ is the Bohr
+Where $a_0 = \frac◆LB◆4\pi\varepsilon_0 \hbar^2◆RB◆◆LB◆m_e e^2◆RB◆ \approx 0.529\,\mathrm◆LB◆\AA◆RB◆$ is the Bohr
 radius.
 
 #### 6.5.3 Expectation Values for the Ground State
@@ -1714,7 +1714,7 @@ Schrodinger equation when the potential varies slowly compared to the de Broglie
 
 **Ansatz.** Write $\psi(x) = A(x)\exp(iS(x)/\hbar)$ and substitute into the Schrodinger equation:
 
-$$-i\hbar A'S - \hbar^2 A S'' + \hbar^2 A S'^2 - A S' \cdot \hbar^2 = \mathrm◆LB◆(terms)$$
+$$-i\hbar A'S - \hbar^2 A S'' + \hbar^2 A S'^2 - A S' \cdot \hbar^2 = \mathrm◆LB◆(terms)◆RB◆$$
 
 Actually, substituting directly into $-\hbar^2\psi''/(2m) + V\psi = E\psi$ and separating orders of
 $\hbar$:
@@ -1888,9 +1888,9 @@ $$\psi(\ldots, \mathbf◆LB◆r◆RB◆_i, \ldots, \mathbf◆LB◆r◆RB◆_j, \
 
 For two particles, the properly symmetrised states are:
 
-$$\psi_S = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆\left[\psi_a(1)\psi_b(2) + \psi_b(1)\psi_a(2)\right] \quad \text◆LB◆(bosons)$$
+$$\psi_S = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆\left[\psi_a(1)\psi_b(2) + \psi_b(1)\psi_a(2)\right] \quad \text◆LB◆(bosons)◆RB◆$$
 
-$$\psi_A = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆\left[\psi_a(1)\psi_b(2) - \psi_b(1)\psi_a(2)\right] \quad \text◆LB◆(fermions)$$
+$$\psi_A = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆\left[\psi_a(1)\psi_b(2) - \psi_b(1)\psi_a(2)\right] \quad \text◆LB◆(fermions)◆RB◆$$
 
 ### 9.2 Exchange Interaction
 
@@ -2349,9 +2349,9 @@ $$S(x) = \pm\int^x p(x')\,dx', \quad p(x) = \sqrt◆LB◆2m[E - V(x)]◆RB◆$$
 
 The WKB wavefunctions:
 
-$$\psi(x) \approx \frac◆LB◆C◆RB◆◆LB◆\sqrt◆LB◆p(x)◆RB◆◆RB◆\exp\!\left(\pm\frac◆LB◆i◆RB◆◆LB◆\hbar◆RB◆\int^x p(x')\,dx'\right) \quad \text◆LB◆(classically allowed,  E > V\text◆LB◆)$$
+$$\psi(x) \approx \frac◆LB◆C◆RB◆◆LB◆\sqrt◆LB◆p(x)◆RB◆◆RB◆\exp\!\left(\pm\frac◆LB◆i◆RB◆◆LB◆\hbar◆RB◆\int^x p(x')\,dx'\right) \quad \text◆LB◆(classically allowed,  E > V\text◆LB◆)◆RB◆$$
 
-$$\psi(x) \approx \frac◆LB◆C◆RB◆◆LB◆\sqrt◆LB◆|p(x)|◆RB◆◆RB◆\exp\!\left(\pm\frac◆LB◆1◆RB◆◆LB◆\hbar◆RB◆\int^x |p(x')|\,dx'\right) \quad \text◆LB◆(classically forbidden,  E < V\text◆LB◆)$$
+$$\psi(x) \approx \frac◆LB◆C◆RB◆◆LB◆\sqrt◆LB◆|p(x)|◆RB◆◆RB◆\exp\!\left(\pm\frac◆LB◆1◆RB◆◆LB◆\hbar◆RB◆\int^x |p(x')|\,dx'\right) \quad \text◆LB◆(classically forbidden,  E < V\text◆LB◆)◆RB◆$$
 
 ### 13.2 Connection Formulas
 
@@ -2433,11 +2433,11 @@ potential:
 
 $$\left[-\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\nabla^2 + V_◆LB◆\text◆LB◆eff◆RB◆[n](\mathbf◆LB◆r◆RB◆)\right]\psi_i(\mathbf◆LB◆r◆RB◆) = \varepsilon_i\psi_i(\mathbf◆LB◆r◆RB◆)$$
 
-$$n(\mathbf◆LB◆r◆RB◆) = \sum_◆LB◆i=1◆RB◆^◆LB◆N◆RB◆|\psi_i(\mathbf◆LB◆r◆RB◆)|^2 \quad \text◆LB◆(summing over occupied states)$$
+$$n(\mathbf◆LB◆r◆RB◆) = \sum_◆LB◆i=1◆RB◆^◆LB◆N◆RB◆|\psi_i(\mathbf◆LB◆r◆RB◆)|^2 \quad \text◆LB◆(summing over occupied states)◆RB◆$$
 
 $$V_◆LB◆\text◆LB◆eff◆RB◆ = V_◆LB◆\text◆LB◆ext◆RB◆ + V_H[n] + V_◆LB◆\text◆LB◆xc◆RB◆[n]$$
 
-$$V_H[n](\mathbf◆LB◆r◆RB◆) = e^2\int\frac◆LB◆n(\mathbf◆LB◆r◆RB◆')◆RB◆◆LB◆|\mathbf◆LB◆r◆RB◆ - \mathbf◆LB◆r◆RB◆'|◆RB◆\,d^3r' \quad \text◆LB◆(Hartree potential)$$
+$$V_H[n](\mathbf◆LB◆r◆RB◆) = e^2\int\frac◆LB◆n(\mathbf◆LB◆r◆RB◆')◆RB◆◆LB◆|\mathbf◆LB◆r◆RB◆ - \mathbf◆LB◆r◆RB◆'|◆RB◆\,d^3r' \quad \text◆LB◆(Hartree potential)◆RB◆$$
 
 The exchange-correlation functional $V_◆LB◆\text◆LB◆xc◆RB◆[n]$ contains all many-body effects beyond the
 classical Hartree approximation.
