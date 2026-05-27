@@ -119,7 +119,7 @@ More inelastic (shifts to $P = 200 - 0.5Q$), how does this change the tax incide
 (a) Free market: $200 - Q = 40 + Q$$2Q = 160$$Q_m = 80$$P_m = \$1.20$.
 
 (b) Social optimum: $MSC = MPC + MEC = (40 + Q) + 20 = 60 + Q = MSB = 200 - Q$. $2Q = 140$
-$Q^* = 70$$P^* = \$1.30$.
+$Q^* = 70$, $P^* = \$1.30$.
 
 (c) Pigouvian tax $= MEC = 20$ cents. New supply: $P = 60 + Q$. New equilibrium: $200 - Q = 60 + Q$
 $Q = 70$$P_b = \$1.30$, $P_s = \$1.10$.

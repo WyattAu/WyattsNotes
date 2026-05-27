@@ -169,9 +169,9 @@ Neglecting friction.
 </details>
 <summary>Solution</summary>
 
-At `A`: $E_k = 0$$E_p = 600 \times 9.81 \times 25 = 147150 \mathrm{ J}$
+At `A`: $E_k = 0$, $E_p = 600 \times 9.81 \times 25 = 147150 \mathrm{ J}$
 
-At `B`: $E_k = \frac{1}{2}(600)v^2$$E_p = 600 \times 9.81 \times 8 = 47088 \mathrm{ J}$
+At `B`: $E_k = \frac{1}{2}(600)v^2$, $E_p = 600 \times 9.81 \times 8 = 47088 \mathrm{ J}$
 
 $$147150 = \frac{1}{2}(600)v^2 + 47088$$
 

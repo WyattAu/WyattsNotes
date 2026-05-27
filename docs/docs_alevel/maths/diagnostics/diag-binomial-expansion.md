@@ -54,7 +54,7 @@ $$= 1 + x - \frac{1}{2}x^2 + \frac{1}{2}x^3 + \cdots$$
 
 The expansion is valid when $|2x| < 1$I.e. $|x| < \frac{1}{2}$.
 
-**(b)** To estimate $\sqrt{1.02} = (1.02)^{1/2}$Set $1 + 2x = 1.02$Giving $2x = 0.02$$x = 0.01$.
+**(b)** To estimate $\sqrt{1.02} = (1.02)^{1/2}$Set $1 + 2x = 1.02$Giving $2x = 0.02$, $x = 0.01$.
 
 Since $|0.01| < 0.5$The expansion is valid.
 

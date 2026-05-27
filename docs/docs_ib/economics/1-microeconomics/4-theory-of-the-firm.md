@@ -605,15 +605,15 @@ If $|\mathrm{PED}_i| < |\mathrm{PED}_j|$ (market $i$ has less elastic demand), t
 
 **Worked example:** A monopolist serves two markets with demand curves:
 
-Market 1 (adults): $P_1 = 40 - Q_1$$\mathrm{PED}_1 = -2$ at equilibrium Market 2 (students):
-$P_2 = 25 - Q_2$$\mathrm{PED}_2 = -3$ at equilibrium Total cost: $\mathrm{TC} = 50 + 5(Q_1 + Q_2)$So
+Market 1 (adults): $P_1 = 40 - Q_1$, $\mathrm{PED}_1 = -2$ at equilibrium Market 2 (students):
+$P_2 = 25 - Q_2$, $\mathrm{PED}_2 = -3$ at equilibrium Total cost: $\mathrm{TC} = 50 + 5(Q_1 + Q_2)$So
 $MC = 5$.
 
 For each market: $MR = MC = 5$.
 
-Market 1: $\mathrm{MR}_1 = 40 - 2Q_1 = 5 \implies Q_1 = 17.5$$P_1 = 40 - 17.5 = 22.5$
+Market 1: $\mathrm{MR}_1 = 40 - 2Q_1 = 5 \implies Q_1 = 17.5$, $P_1 = 40 - 17.5 = 22.5$
 
-Market 2: $\mathrm{MR}_2 = 25 - 2Q_2 = 5 \implies Q_2 = 10$$P_2 = 25 - 10 = 15$
+Market 2: $\mathrm{MR}_2 = 25 - 2Q_2 = 5 \implies Q_2 = 10$, $P_2 = 25 - 10 = 15$
 
 Total profit $= P_1 Q_1 + P_2 Q_2 - \mathrm{TC} = 22.5(17.5) + 15(10) - 50 - 5(27.5)$
 $= 393.75 + 150 - 50 - 137.5 = 356.25$
@@ -834,11 +834,11 @@ Substituting: $q_1 = 45 - 0.5(45 - 0.5q_1) = 45 - 22.5 + 0.25q_1 = 22.5 + 0.25q_
 
 $0.75q_1 = 22.5 \implies q_1^* = q_2^* = 30$
 
-$Q^* = 60$$P^* = 100 - 60 = 40$
+$Q^* = 60$, $P^* = 100 - 60 = 40$
 
 $\pi_1 = \pi_2 = (40 - 10) \times 30 = 900$
 
-(b) Monopoly: $\mathrm{MR} = 100 - 2Q = MC = 10 \implies Q_m = 45$$P_m = 55$
+(b) Monopoly: $\mathrm{MR} = 100 - 2Q = MC = 10 \implies Q_m = 45$, $P_m = 55$
 
 $\pi_m = (55 - 10) \times 45 = 2025$
 
@@ -1070,7 +1070,7 @@ Economic profit.
 
 | Feature        | Unregulated monopoly                      | Contestable monopoly                                                                 |
 | -------------- | ----------------------------------------- | ------------------------------------------------------------------------------------ |
-| Price          | $P > \text{MC}$$P > \text{AC}$            | $P = \text{AC} > \text{MC}$                                                          |
+| Price          | $P > \text{MC}$, $P > \text{AC}$            | $P = \text{AC} > \text{MC}$                                                          |
 | Output         | $Q < Q_{\text{efficient}}$                | Higher than unregulated monopoly                                                     |
 | Profit         | $\pi > 0$                                 | $\pi = 0$                                                                            |
 | Efficiency     | Allocatively and productively inefficient | Productively efficient ($P = \text{AC}$), allocatively inefficient ($P > \text{MC}$) |
@@ -1169,7 +1169,7 @@ $-2Q^2 + 40Q - 200 = 0 \implies Q^2 - 20Q + 100 = 0 \implies (Q - 10)^2 = 0 \imp
 $P = 30$. The contestable market outcome coincides with the monopoly outcome in this specific Case
 because the monopoly was already earning zero profit.
 
-(c) Efficient quantity: $P = \text{MC}: 50 - 2Q = 10 \implies Q = 20$$P = 10$.
+(c) Efficient quantity: $P = \text{MC}: 50 - 2Q = 10 \implies Q = 20$, $P = 10$.
 
 $\text{DWL} = \frac{1}{2}(30 - 10)(20 - 10) = \frac{1}{2}(20)(10) = 100$
 
@@ -1194,17 +1194,17 @@ $P = \text{MC}$ regulation.
 
 (c) Identify potential sources of government failure in this regulation.
 
-(a) (i) Unregulated monopoly: $\text{MR} = 25 - 2Q$$\text{MC} = 5$.
+(a) (i) Unregulated monopoly: $\text{MR} = 25 - 2Q$, $\text{MC} = 5$.
 
-$\text{MR} = \text{MC}: 25 - 2Q = 5 \implies Q = 10$$P = 15$
+$\text{MR} = \text{MC}: 25 - 2Q = 5 \implies Q = 10$, $P = 15$
 
 $\pi = 150 - (100 + 50) = 0$. Again zero profit.
 
 (ii) $P = \text{AC}$: $25 - Q = 100/Q + 5 \implies 25Q - Q^2 = 100 + 5Q$
 
-$Q^2 - 20Q + 100 = 0 \implies Q = 10$$P = 15$. Same as monopoly (zero profit already).
+$Q^2 - 20Q + 100 = 0 \implies Q = 10$, $P = 15$. Same as monopoly (zero profit already).
 
-(iii) $P = \text{MC}$: $25 - Q = 5 \implies Q = 20$$P = 5$.
+(iii) $P = \text{MC}$: $25 - Q = 5 \implies Q = 20$, $P = 5$.
 
 $\pi = 100 - (100 + 100) = -100$. The firm makes a loss and would exit without a subsidy.
 
@@ -1366,7 +1366,7 @@ Elasticity of demand. The market with the less elastic demand has the higher mar
 A monopolist serves two markets:
 
 Market 1 (business travellers): $P_1 = 200 - Q_1$ Market 2 (leisure travellers): $P_2 = 120 - Q_2$
-$\text{MC} = 20$$F = 500$
+$\text{MC} = 20$, $F = 500$
 
 **Without price discrimination (uniform price):**
 
@@ -1384,9 +1384,9 @@ $\pi = 90 \times 140 - 20 \times 140 - 500 = 12\,600 - 2\,800 - 500 = 9\,300$
 
 **With price discrimination:**
 
-Market 1: $Q_1 = (200 - 20)/2 = 90$$P_1 = 110$. $\pi_1 = 110 \times 90 - 20 \times 90 = 8\,100$
+Market 1: $Q_1 = (200 - 20)/2 = 90$, $P_1 = 110$. $\pi_1 = 110 \times 90 - 20 \times 90 = 8\,100$
 
-Market 2: $Q_2 = (120 - 20)/2 = 50$$P_2 = 70$. $\pi_2 = 70 \times 50 - 20 \times 50 = 2\,500$
+Market 2: $Q_2 = (120 - 20)/2 = 50$, $P_2 = 70$. $\pi_2 = 70 \times 50 - 20 \times 50 = 2\,500$
 
 $\pi = 8\,100 + 2\,500 - 500 = 10\,100$
 

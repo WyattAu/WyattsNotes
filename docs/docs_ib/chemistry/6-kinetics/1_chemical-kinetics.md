@@ -152,7 +152,7 @@ $$
 | 0             | mol/(L$\cdot$S)         |
 | 1             | s$^{-1}$                |
 | 2             | L/(mol$\cdot$S)         |
-| 3             | L$^2$/(mol$^2$$\cdot$s) |
+| 3             | L$^2$/(mol$^2$, $\cdot$s) |
 
 ### Zero-Order Reactions
 

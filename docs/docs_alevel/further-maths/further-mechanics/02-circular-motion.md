@@ -503,11 +503,11 @@ $$\boxed{T = \frac{mv_0^2}{r} - 2mg - 3mg\cos\theta}$$
 
 ### 6.3 Verification at special points
 
-At the top ($\theta = 0$$\cos\theta = 1$): $T = \dfrac{mv_0^2}{r} - 5mg$.
+At the top ($\theta = 0$, $\cos\theta = 1$): $T = \dfrac{mv_0^2}{r} - 5mg$.
 
-At the bottom ($\theta = \pi$$\cos\theta = -1$): $T = \dfrac{mv_0^2}{r} + mg$.
+At the bottom ($\theta = \pi$, $\cos\theta = -1$): $T = \dfrac{mv_0^2}{r} + mg$.
 
-At the midpoint ($\theta = \pi/2$$\cos\theta = 0$): $T = \dfrac{mv_0^2}{r} - 2mg$.
+At the midpoint ($\theta = \pi/2$, $\cos\theta = 0$): $T = \dfrac{mv_0^2}{r} - 2mg$.
 
 ### 6.4 Complete derivation of $\sqrt{5gr}$
 
@@ -612,7 +612,7 @@ $$\boxed{T_{\mathrm{period}} = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ =
 
 Key observations:
 
-- The period depends only on $L$$\alpha$And $g$ — it is independent of mass
+- The period depends only on $L$, $\alpha$And $g$ — it is independent of mass
 - As $\alpha \to 0$The period approaches $2\pi\sqrt{L/g}$ (simple pendulum for small angles)
 - As $\alpha \to 90^\circ$The period $\to 0$ (impractical: requires infinite speed)
 - A larger angle $\alpha$ means a faster rotation (shorter period)

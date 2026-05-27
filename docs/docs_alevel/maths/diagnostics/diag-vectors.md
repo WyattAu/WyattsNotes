@@ -106,7 +106,7 @@ non-parallel directions).]
 
 **(a)** $\mathbf{d}_1$ and $\mathbf{d}_2$ are not proportional for any value of $a$ (since
 $\frac{2}{1} \neq \frac{-1}{a}$ for $a = -\frac{1}{2}$And checking: at
-$a = -\frac{1}{2}$$\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never
+$a = -\frac{1}{2}$, $\frac{2}{1} = 2$ but $\frac{1}{2} = \frac{1}{2} \neq 2$). So the lines are never
 parallel.
 
 For intersection, there exist $s, t$ such that:
@@ -128,7 +128,7 @@ $\begin{pmatrix} 1+6 \\ 2-3 \\ 3+3 \end{pmatrix} = \begin{pmatrix} 7 \\ -1 \\ 6 
 **(b)** For $a = 3$: the lines are not parallel ($\mathbf{d}_1$ and $\mathbf{d}_2$ not
 proportional). Check for intersection:
 
-$t = 2s - 3$$s = 3$$t = 3$ (from first and third equations).
+$t = 2s - 3$, $s = 3$, $t = 3$ (from first and third equations).
 
 Second equation: $2 - 3 = 1 + 3(3) = 10$Giving $-1 = 10$Which is false.
 
@@ -193,7 +193,7 @@ To find a point on both planes, set $z = 0$:
 
 $2x - y = 5$ and $x + 2y = 3$. Solving: from the first, $y = 2x - 5$.
 
-$x + 2(2x - 5) = 3 \implies 5x = 13 \implies x = \frac{13}{5}$$y = \frac{1}{5}$.
+$x + 2(2x - 5) = 3 \implies 5x = 13 \implies x = \frac{13}{5}$, $y = \frac{1}{5}$.
 
 Point: $\left(\frac{13}{5}, \frac{1}{5}, 0\right)$.
 

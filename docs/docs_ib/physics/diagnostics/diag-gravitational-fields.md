@@ -131,7 +131,7 @@ $\Delta E = E_2 - E_1 = -3.13 \times 10^9 - (-7.82 \times 10^9) = 4.69 \times 10
 $R$.
 
 (b) Calculate the escape velocity from the surface of the Moon
-($M_M = 7.35 \times 10^{22}\,\text{kg}$$R_M = 1.74 \times 10^6\,\text{m}$).
+($M_M = 7.35 \times 10^{22}\,\text{kg}$, $R_M = 1.74 \times 10^6\,\text{m}$).
 
 (c) A student argues that "a projectile launched at escape velocity will escape to infinity and then
 stop." Explain why this is misleading.

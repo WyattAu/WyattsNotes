@@ -31,7 +31,7 @@ Construct any Boolean function. XOR and XNOR are useful for parity and compariso
 | 1   | 0   | 0           |
 | 1   | 1   | 1           |
 
-Notation: $A \cdot B$$AB$$A \wedge B$
+Notation: $A \cdot B$, $AB$, $A \wedge B$
 
 **OR (disjunction):** The output is 1 when at least one input is 1.
 
@@ -42,7 +42,7 @@ Notation: $A \cdot B$$AB$$A \wedge B$
 | 1   | 0   | 1          |
 | 1   | 1   | 1          |
 
-Notation: $A + B$$A \vee B$
+Notation: $A + B$, $A \vee B$
 
 **NOT (negation):** The output is the complement of the input.
 
@@ -51,7 +51,7 @@ Notation: $A + B$$A \vee B$
 | 0   | 1       |
 | 1   | 0       |
 
-Notation: $\overline{A}$$A'$$\lnot A$
+Notation: $\overline{A}$, $A'$, $\lnot A$
 
 **NAND:** The negation of AND. Output is 0 only when all inputs are 1.
 
@@ -62,7 +62,7 @@ Notation: $\overline{A}$$A'$$\lnot A$
 | 1   | 0   | 1            |
 | 1   | 1   | 0            |
 
-Notation: $\overline{A \cdot B}$$(A \cdot B)'$
+Notation: $\overline{A \cdot B}$, $(A \cdot B)'$
 
 **NOR:** The negation of OR. Output is 1 only when all inputs are 0.
 
@@ -73,7 +73,7 @@ Notation: $\overline{A \cdot B}$$(A \cdot B)'$
 | 1   | 0   | 0           |
 | 1   | 1   | 0           |
 
-Notation: $\overline{A + B}$$(A + B)'$
+Notation: $\overline{A + B}$, $(A + B)'$
 
 **XOR (exclusive OR):** The output is 1 when inputs are different.
 
@@ -84,7 +84,7 @@ Notation: $\overline{A + B}$$(A + B)'$
 | 1   | 0   | 1           |
 | 1   | 1   | 0           |
 
-Notation: $A \oplus B$$A \veebar B$
+Notation: $A \oplus B$, $A \veebar B$
 
 **XNOR (exclusive NOR):** The negation of XOR. Output is 1 when inputs are the same.
 
@@ -95,7 +95,7 @@ Notation: $A \oplus B$$A \veebar B$
 | 1   | 0   | 0            |
 | 1   | 1   | 1            |
 
-Notation: $\overline{A \oplus B}$$A \odot B$
+Notation: $\overline{A \oplus B}$, $A \odot B$
 
 ### Derived Expressions for XOR and XNOR
 
@@ -462,7 +462,7 @@ $F = \overline{A} \cdot \overline{B} + \overline{A} \cdot B + A \cdot \overline{
 | `A`=0 | 1       | 1       |
 | `A`=1 | 1       | 0       |
 
-The cells for $(0,0)$$(0,1)$And $(1,0)$ are 1.
+The cells for $(0,0)$, $(0,1)$And $(1,0)$ are 1.
 
 Group the two cells in row `A`=0: this spans both columns, so `B` is eliminated. This group
 Represents $\overline{A}$.
@@ -484,7 +484,7 @@ So that adjacent columns differ by exactly one bit. Variables `B` and `C` are th
 
 **Worked example:** Minimize $F(A, B, C) = \sum(0, 1, 2, 5, 6, 7)$
 
-The minterms are: $m_0 = \overline{A}\overline{B}\overline{C}$$m_1 = \overline{A}\overline{B}C$
+The minterms are: $m_0 = \overline{A}\overline{B}\overline{C}$, $m_1 = \overline{A}\overline{B}C$
 $m_2 = \overline{A}B\overline{C}$$m_5 = A\overline{B}C$$m_6 = AB\overline{C}$$m_7 = ABC$.
 
 |       | `BC` = 00 | `BC` = 01 | `BC` = 11 | `BC` = 10 |
@@ -881,7 +881,7 @@ Majority votes yes (2 or 3 yes votes). Derive the Boolean expression and count t
 - $(1,01)$ and $(1,11)$: horizontal pair → $A \cdot C$
 - $(1,11)$ and $(1,10)$: horizontal pair → $A \cdot B$
 
-Essential prime implicants: $BC$$AC$$AB$ (each covers a minterm that no other group covers: $m_3$
+Essential prime implicants: $BC$, $AC$, $AB$ (each covers a minterm that no other group covers: $m_3$
 only by $BC$$m_5$ only by $AC$$m_6$ only by $AB$).
 
 $$F = A \cdot B + A \cdot C + B \cdot C$$
@@ -1280,7 +1280,7 @@ the Gates needed.
 <details>
 <summary>Solution</summary>
 
-**Truth table** (binary subtraction: $0-0=0$$1-0=1$$1-1=0$$0-1=1$ with borrow):
+**Truth table** (binary subtraction: $0-0=0$, $1-0=1$, $1-1=0$, $0-1=1$ with borrow):
 
 | `A` | `B` | Diff | Borrow |
 | --- | --- | ---- | ------ |

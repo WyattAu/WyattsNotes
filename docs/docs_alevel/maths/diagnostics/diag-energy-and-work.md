@@ -385,7 +385,7 @@ $$\frac{1}{2}(5)v^2 = 142.3 \implies v^2 = 56.9 \implies v \approx 7.54 \text{ m
 
 $$a = -g\sin 30° - \mu g\cos 30° = -4.9 - 2.121 = -7.021 \text{ m/s}^2$$
 
-Using $v^2 = u^2 + 2as$ with $v = 0$$u = 12$:
+Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 12$:
 
 $$0 = 144 + 2(-7.021)d \implies d = \frac{144}{14.042} \approx 10.25 \text{ m}$$
 

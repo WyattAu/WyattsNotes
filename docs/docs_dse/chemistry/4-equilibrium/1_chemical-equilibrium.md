@@ -315,7 +315,7 @@ $$\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \rightleftharpoons 2\mathrm{NH}_{3(g)} 
 | ----------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
 | Temperature | 400--500$^\circ$C                                                        | Compromise: lower T favours yield but slows rate                        |
 | Pressure    | 150--250 atm                                                             | High pressure favours yield (fewer gas moles on right) but is expensive |
-| Catalyst    | Iron (promoted with $\mathrm{K}_2\mathrm{O}$$\mathrm{Al}_2\mathrm{O}_3$) | Increases rate without affecting equilibrium                            |
+| Catalyst    | Iron (promoted with $\mathrm{K}_2\mathrm{O}$, $\mathrm{Al}_2\mathrm{O}_3$) | Increases rate without affecting equilibrium                            |
 | Recycle     | Unreacted $\mathrm{N}_2$ and $\mathrm{H}_2$ are recycled                 | Improves overall yield despite low single-pass conversion               |
 
 ### Le Chatelier's Principle Applied
@@ -523,7 +523,7 @@ $$K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2}$$
 If $\Delta n = 0$Then $K_p = K_c$.
 
 **Worked example 8:** For
-$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$$K_c = 50.0$ at 700 K.
+$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$, $K_c = 50.0$ at 700 K.
 Calculate $K_p$.
 
 <details>
@@ -533,7 +533,7 @@ $\Delta n = 2 - (1 + 1) = 0$
 
 $K_p = K_c(RT)^0 = K_c = 50.0$
 
-When $\Delta n = 0$$K_p = K_c$ with no units.
+When $\Delta n = 0$, $K_p = K_c$ with no units.
 
 </details>
 
@@ -815,7 +815,7 @@ When a disturbance is applied to an equilibrium system, the system shifts to par
 Change. The new equilibrium can be estimated using $K_c$.
 
 **Worked example 9:** For
-$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$$K_c = 49.0$ at a
+$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$, $K_c = 49.0$ at a
 Certain temperature. At equilibrium, $[\mathrm{H}_2] = [\mathrm{I}_2] = 0.100$ and
 $[\mathrm{HI}] = 0.700$ mol/dm$^3$. If 0.200 mol/dm$^3$ of $\mathrm{HI}$ is suddenly added, what are
 The new equilibrium concentrations?

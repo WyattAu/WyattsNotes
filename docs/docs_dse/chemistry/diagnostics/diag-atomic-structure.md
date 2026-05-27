@@ -21,7 +21,7 @@ than $[Ar]\,3d^{4}4s^{2}$.
 (b) Write the electron configuration of $Cr^{3+}$. [1 mark]
 
 (c) A student claims that $Cr^{3+}$ has the same electron configuration as the scandium atom
-($Sc$$Z = 21$). Determine whether this claim is correct, and explain your reasoning. [2 marks]
+($Sc$, $Z = 21$). Determine whether this claim is correct, and explain your reasoning. [2 marks]
 
 ---
 
@@ -75,7 +75,7 @@ silicon (16091 kJ/mol). Explain this observation in terms of nuclear charge and 
 
 **Worked Solution**
 
-(a) Element $X$ is **aluminium** ($Al$$Z = 13$).
+(a) Element $X$ is **aluminium** ($Al$, $Z = 13$).
 
 Reasoning: There are three relatively low ionisation energies (578, 1817, 2745) followed by a large
 jump to 11577. This indicates that $X$ has **three valence electrons** in the outermost shell. The

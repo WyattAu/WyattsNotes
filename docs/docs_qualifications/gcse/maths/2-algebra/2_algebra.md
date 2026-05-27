@@ -520,7 +520,7 @@ Factorise: $y = (x - 1)(x - 3)$So the roots are $x = 1$ and $x = 3$.
 
 $y$-intercept: $(0, 3)$.
 
-Vertex: $x = -\frac{-4}{2} = 2$$y = 4 - 8 + 3 = -1$. Vertex at $(2, -1)$.
+Vertex: $x = -\frac{-4}{2} = 2$, $y = 4 - 8 + 3 = -1$. Vertex at $(2, -1)$.
 
 The parabola opens upward with minimum at $(2, -1)$Crossing the $x$-axis at $x = 1$ and $x = 3$.
 
@@ -530,7 +530,7 @@ Factorise: $-2(x^2 - 4x + 3) = -2(x - 1)(x - 3)$. Roots at $x = 1$ and $x = 3$.
 
 $y$-intercept: $(0, -6)$.
 
-Vertex: $x = -\frac{8}{-4} = 2$$y = -8 + 16 - 6 = 2$. Vertex at $(2, 2)$.
+Vertex: $x = -\frac{8}{-4} = 2$, $y = -8 + 16 - 6 = 2$. Vertex at $(2, 2)$.
 
 The parabola opens downward with maximum at $(2, 2)$.
 
@@ -633,7 +633,7 @@ Since $n + 1$ is an integer, the sum is a multiple of 4. $\blacksquare$
 **Example (Higher Tier).** Prove that the product of any three consecutive integers is divisible
 By 6.
 
-Let the three consecutive integers be $n$$n + 1$And $n + 2$.
+Let the three consecutive integers be $n$, $n + 1$And $n + 2$.
 
 Among any three consecutive integers, one is divisible by 2 (even) and one is divisible by 3. Since
 2 and 3 are coprime, their product 6 divides the product of the three integers. $\blacksquare$
@@ -671,9 +671,9 @@ $\sqrt{2} + (-\sqrt{2}) = 0$Which is rational.
 
 **Example.** Given $f(x) = 2x - 1$ and $g(x) = x^2 + 3$Prove that $fg(-2) = gf(1)$.
 
-$f(-2) = -5$$g(-5) = 25 + 3 = 28$.
+$f(-2) = -5$, $g(-5) = 25 + 3 = 28$.
 
-$f(1) = 1$$g(1) = 1 + 3 = 4$.
+$f(1) = 1$, $g(1) = 1 + 3 = 4$.
 
 $fg(-2) = g(f(-2)) = 28 \neq 4 = gf(1)$.
 

@@ -245,7 +245,7 @@ $\blacksquare$
 $$\text◆LB◆cwnd(t) = W_◆LB◆\max◆RB◆ + \beta \cdot \left(\frac◆LB◆t◆RB◆◆LB◆K◆RB◆\right)^3 - (W_◆LB◆\max◆RB◆ - \text◆LB◆cwnd_◆LB◆\text◆LB◆low◆RB◆)$$
 
 Where $W_◆LB◆\max◆RB◆$ is the window size at the last loss event,
-$K = \sqrt[3]◆LB◆W_◆LB◆\max◆RB◆ \cdot \beta / C◆RB◆$$\beta = 0.4$And $C = 0.4$.
+$K = \sqrt[3]◆LB◆W_◆LB◆\max◆RB◆ \cdot \beta / C◆RB◆$, $\beta = 0.4$And $C = 0.4$.
 
 The cubic function grows slowly near $W_◆LB◆\max◆RB◆$ (probing) and rapidly far from it (quick recovery),
 making it suitable for high-BDP (bandwidth-delay product) networks.

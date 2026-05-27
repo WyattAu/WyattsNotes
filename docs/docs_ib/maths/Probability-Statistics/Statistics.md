@@ -179,7 +179,7 @@ Total $n = 50$. Median position $= \dfrac{50}{2} = 25$.
 
 Cumulative frequencies: $5, 17, 35, 45, 50$.
 
-Median is in the $40 \le m \lt 60$ class ($F = 17$$f = 18$).
+Median is in the $40 \le m \lt 60$ class ($F = 17$, $f = 18$).
 
 $$
 \mathrm{Median} \approx 40 + \left(\frac{25 - 17}{18}\right) \times 20 = 40 + \frac{8}{18} \times 20 = 40 + 8.89 = 48.89 \mathrm{ g}
@@ -562,7 +562,7 @@ The reaction times (in seconds) of 20 drivers were measured:
 
 **(a)** Find the mean and standard deviation.
 
-$\bar{x} \approx 0.555$$s \approx 0.099$.
+$\bar{x} \approx 0.555$, $s \approx 0.099$.
 
 **(b)** Construct a box-and-whisker plot.
 
@@ -720,9 +720,9 @@ Group B: $n = 25$$\bar{x} = 68$$s = 10$
 
 **(a)** Find the overall mean.
 
-$$
+$, $
 \bar{x}_{\mathrm{overall}} = \frac{30 \times 72 + 25 \times 68}{55} = \frac{2160 + 1700}{55} = \frac{3860}{55} = 70.2
-$$
+$, $
 
 **(b)** Comment on the spread of the two groups.
 
@@ -765,9 +765,9 @@ The correlation coefficient between study hours and exam scores for 50 students 
 
 **(a)** Calculate the coefficient of determination and interpret it.
 
-$$
+$, $
 R^2 = 0.5184
-$$
+$, $
 
 About $51.8\%$ of the variation in exam scores is explained by the linear relationship with study
 Hours.
@@ -793,9 +793,9 @@ Skewness measures the asymmetry of the distribution.
 
 The **Pearson coefficient of skewness**:
 
-$$
+$, $
 \mathrm{Skewness} = \frac{3(\bar{x} - Q_2)}{s}
-$$
+$, $
 
 ### Kurtosis
 
@@ -823,9 +823,9 @@ Given a population with mean $\mu$ and standard deviation $\sigma$:
 
 The $p$-th percentile is the value below which $p\%$ of the data falls.
 
-$$
+$, $
 X_p = \mu + z_p \cdot \sigma
-$$
+$, $
 
 Where $z_p$ is the z-score such that $P(Z \lt z_p) = p/100$.
 
@@ -834,13 +834,13 @@ Where $z_p$ is the z-score such that $P(Z \lt z_p) = p/100$.
 Scores on a test are normally distributed with $\mu = 72$ and $\sigma = 8$. Find the 90th
 Percentile.
 
-$$
+$, $
 Z_{0.90} = 1.282
-$$
+$, $
 
-$$
+$, $
 X_{90} = 72 + 1.282 \times 8 = 72 + 10.26 = 82.26
-$$
+$, $
 
 A score of 82.26 is at the 90th percentile.
 

@@ -36,7 +36,7 @@ The conjugate of $z = a + bi$ is $\bar{z} = a - bi$.
 - $z\bar{z} = a^2 + b^2 = |z|^2$
 - $\overline{z_1 + z_2} = \bar{z}_1 + \bar{z}_2$
 - $\overline{z_1 z_2} = \bar{z}_1 \bar{z}_2$
-- $z + \bar{z} = 2\mathrm{Re}(z)$$z - \bar{z} = 2i\,\mathrm{Im}(z)$
+- $z + \bar{z} = 2\mathrm{Re}(z)$, $z - \bar{z} = 2i\,\mathrm{Im}(z)$
 
 ### Modulus and Argument
 
@@ -66,9 +66,9 @@ Where $r = |z|$ and $\theta = \arg(z)$.
 
 ### Conversion
 
-- **Cartesian to polar:** $r = \sqrt{a^2 + b^2}$$\theta = \arctan\!\left(\dfrac{b}{a}\right)$
+- **Cartesian to polar:** $r = \sqrt{a^2 + b^2}$, $\theta = \arctan\!\left(\dfrac{b}{a}\right)$
   (adjusting for quadrant).
-- **Polar to Cartesian:** $a = r\cos\theta$$b = r\sin\theta$.
+- **Polar to Cartesian:** $a = r\cos\theta$, $b = r\sin\theta$.
 
 **Example.** Express $z = 1 + i\sqrt{3}$ in polar form.
 
@@ -88,7 +88,7 @@ Multiplication: moduli multiply, arguments add. Division: moduli divide, argumen
 
 **Example.** Compute $\dfrac{1 + i}{\sqrt{3} - i}$.
 
-$1 + i = \sqrt{2}\,e^{i\pi/4}$$\sqrt{3} - i = 2\,e^{-i\pi/6}$.
+$1 + i = \sqrt{2}\,e^{i\pi/4}$, $\sqrt{3} - i = 2\,e^{-i\pi/6}$.
 
 $$\frac{1 + i}{\sqrt{3} - i} = \frac{\sqrt{2}}{2}\, e^{i(\pi/4 + \pi/6)} = \frac{\sqrt{2}}{2}\, e^{i5\pi/12}$$
 

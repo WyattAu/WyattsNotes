@@ -101,9 +101,9 @@ relative to the standard hydrogen electrode under standard conditions
 
 The SHE is the reference electrode:
 
-$$
+$, $
 2\mathrm{H}^+(aq, 1\,\mathrm{mol/dm}^3) + 2e^- \rightleftharpoons \mathrm{H}_2(g, 100\,\mathrm{kPa})
-$$
+$, $
 
 By definition, $E^\circ(\mathrm{H}^+/\mathrm{H}_2) = 0.00\,\mathrm{V}$.
 
@@ -137,42 +137,42 @@ salt bridge ( $\mathrm{KNO}_3$ solution) maintains electrical neutrality.
 
 For an electrochemical cell consisting of two half-cells:
 
-$$
+$, $
 E^\circ_\mathrm{cell} = E^\circ_\mathrm{reduction} - E^\circ_\mathrm{oxidation}
-$$
+$, $
 
 Or equivalently:
 
-$$
+$, $
 E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}
-$$
+$, $
 
 Where the cathode is the electrode where reduction occurs and the anode is where oxidation occurs.
 
 **Worked Example.** Calculate the standard cell EMF for a $\mathrm{Zn}/\mathrm{Cu}$ cell.
 
-$$
+$, $
 \mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn} \quad E^\circ = -0.76\,\mathrm{V}
-$$
+$, $
 
-$$
+$, $
 \mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu} \quad E^\circ = +0.34\,\mathrm{V}
-$$
+$, $
 
 $\mathrm{Zn}$ is oxidised (anode), $\mathrm{Cu}^{2+}$ is reduced (cathode).
 
-$$
+$, $
 E^\circ_\mathrm{cell} = 0.34 - (-0.76) = +1.10\,\mathrm{V}
-$$
+$, $
 
 ### Feasibility of Reactions
 
 A redox reaction is thermodynamically feasible if $E^\circ_\mathrm{cell} \gt 0$. This is equivalent
 to $\Delta G^\circ \lt 0$:
 
-$$
+$, $
 \Delta G^\circ = -nFE^\circ_\mathrm{cell}
-$$
+$, $
 
 Where $n$ is the number of moles of electrons transferred and $F$ is the Faraday constant
 ($96485\,\mathrm{C/mol}$).
@@ -189,9 +189,9 @@ Where $n$ is the number of moles of electrons transferred and $F$ is the Faraday
 The Nernst equation relates the cell potential under non-standard conditions to the standard cell
 potential:
 
-$$
+$, $
 E = E^\circ - \frac{RT}{nF}\ln Q
-$$
+$, $
 
 Where $Q$ is the reaction quotient (same form as the equilibrium expression but with initial
 concentrations).
@@ -199,9 +199,9 @@ concentrations).
 At $298\,\mathrm{K}$Substituting $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$ and
 $F = 96485\,\mathrm{C/mol}$:
 
-$$
+$, $
 E = E^\circ - \frac{0.0257}{n}\ln Q = E^\circ - \frac{0.0592}{n}\log_{10} Q
-$$
+$, $
 
 **Worked Example.** Calculate the cell EMF for a $\mathrm{Zn}/\mathrm{Cu}$ cell where
 $[\mathrm{Zn}^{2+}] = 0.010\,\mathrm{mol/dm}^3$ and $[\mathrm{Cu}^{2+}] = 2.0\,\mathrm{mol/dm}^3$ at
@@ -209,13 +209,13 @@ $298\,\mathrm{K}$.
 
 $E^\circ_\mathrm{cell} = +1.10\,\mathrm{V}$ (from above). $n = 2$.
 
-$$
+$, $
 Q = \frac◆LB◆[\mathrm{Zn}^{2+}]◆RB◆◆LB◆[\mathrm{Cu}^{2+}]◆RB◆ = \frac{0.010}{2.0} = 0.005
-$$
+$, $
 
-$$
+$, $
 E = 1.10 - \frac{0.0592}{2}\log_{10}(0.005) = 1.10 - 0.0296 \times (-2.30) = 1.10 + 0.068 = 1.17\,\mathrm{V}
-$$
+$, $
 
 The non-standard cell EMF is higher than the standard value because the product ion
 ($\mathrm{Zn}^{2+}$) concentration is lower and the reactant ion ($\mathrm{Cu}^{2+}$) concentration
@@ -226,17 +226,17 @@ is higher than standard conditions, driving the reaction further to the right.
 A concentration cell consists of two half-cells with the same redox couple but different
 concentrations. The cell EMF arises purely from the concentration difference:
 
-$$
+$, $
 E_\mathrm{cell} = -\frac{0.0592}{n}\log_{10}\frac◆LB◆[\mathrm{M}^{n+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{M}^{n+}]_\mathrm{concentrated}◆RB◆
-$$
+$, $
 
 **Example:** A $\mathrm{Cu}/\mathrm{Cu}^{2+}$ concentration cell with
 $[\mathrm{Cu}^{2+}]_\mathrm{left} = 0.001\,\mathrm{mol/dm}^3$ and
 $[\mathrm{Cu}^{2+}]_\mathrm{right} = 1.0\,\mathrm{mol/dm}^3$:
 
-$$
+$, $
 E = -\frac{0.0592}{2}\log_{10}\frac{0.001}{1.0} = -0.0296 \times (-3) = +0.089\,\mathrm{V}
-$$
+$, $
 
 The dilute half-cell acts as the anode (oxidation), and the concentrated half-cell acts as the
 cathode (reduction). Equilibrium is reached when the concentrations equalise.
@@ -245,9 +245,9 @@ cathode (reduction). Equilibrium is reached when the concentrations equalise.
 
 Cells are written as:
 
-$$
+$, $
 \mathrm{Anode (oxidation)} \parallel \mathrm{Cathode (reduction)}
-$$
+$, $
 
 Example:
 $\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Cu}^{2+}(aq) \mid \mathrm{Cu}(s)$
@@ -286,19 +286,19 @@ limited infrastructure.
 
 **Efficiency calculation:** The maximum theoretical efficiency of a fuel cell is:
 
-$$
+$, $
 \text{Efficiency} = \frac◆LB◆\Delta G^\circ◆RB◆◆LB◆\Delta H^\circ◆RB◆ \times 100
-$$
+$, $
 
 For the $\mathrm{H}_2/\mathrm{O}_2$ fuel cell at $298\,\mathrm{K}$:
 
-$$
+$, $
 \Delta G^\circ = -2 \times 237 = -474\,\mathrm{kJ/mol}, \quad \Delta H^\circ = -2 \times 286 = -572\,\mathrm{kJ/mol}
-$$
+$, $
 
-$$
+$, $
 \text{Efficiency} = \frac{474}{572} \times 100 = 83\%
-$$
+$, $
 
 In practice, efficiencies of 40--60% are achieved due to overpotentials (additional voltage required
 beyond the theoretical value), internal resistance, and fuel crossover.
@@ -365,9 +365,9 @@ If the metal is below hydrogen in the reactivity series (e.g.
 $\mathrm{Cu}$$\mathrm{Ag}$$\mathrm{Au}$), the metal is deposited. If the metal is more reactive
 (e.g. $\mathrm{Na}$$\mathrm{K}$$\mathrm{Mg}$), hydrogen is evolved:
 
-$$
+$, $
 2\mathrm{H}_2\mathrm{O}(l) + 2e^- \to \mathrm{H}_2(g) + 2\mathrm{OH}^-(aq)
-$$
+$, $
 
 **At the anode (oxidation):**
 
@@ -657,9 +657,9 @@ $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode} = 0.8
 
 Conventional cell representation:
 
-$$
+$, $
 \mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Ag}^+(aq) \mid \mathrm{Ag}(s)
-$$
+$, $
 
 Half-equations:
 
@@ -672,9 +672,9 @@ $\mathrm{Zn}(s) + 2\mathrm{Ag}^+(aq) \to \mathrm{Zn}^{2+}(aq) + 2\mathrm{Ag}(s)$
 
 $n = 2$ electrons transferred.
 
-$$
+$, $
 \Delta G^\circ = -nFE^\circ_\mathrm{cell} = -2 \times 96485 \times 1.56 = -301,000\,\mathrm{J/mol} = -301\,\mathrm{kJ/mol}
-$$
+$, $
 
 The large negative $\Delta G^\circ$ confirms that the reaction is strongly spontaneous under
 standard conditions.
@@ -709,9 +709,9 @@ $n(\mathrm{O}_2) = 0.01866 / 4 = 0.00467\,\mathrm{mol}$
 
 Using $pV = nRT$:
 
-$$
+$, $
 V = \frac{nRT}{p} = \frac◆LB◆0.00467 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{11.57}{100000} = 1.16 \times 10^{-4}\,\mathrm{m}^3 = 0.116\,\mathrm{dm}^3 = 116\,\mathrm{cm}^3
-$$
+$, $
 
 </details>
 
@@ -729,25 +729,25 @@ equation. (c) Identify the anode and cathode and explain the direction of electr
 
 (a)
 
-$$
+$, $
 \mathrm{Cu}(s) \mid \mathrm{Cu}^{2+}(0.00100\,\mathrm{mol/dm}^3) \parallel \mathrm{Cu}^{2+}(1.00\,\mathrm{mol/dm}^3) \mid \mathrm{Cu}(s)
-$$
+$, $
 
 (b) The overall reaction is:
 
-$$
+$, $
 \mathrm{Cu}^{2+}(\text{concentrated}) + \mathrm{Cu}(s) \rightleftharpoons \mathrm{Cu}(s) + \mathrm{Cu}^{2+}(\text{dilute})
-$$
+$, $
 
 Using the Nernst equation:
 
-$$
+$, $
 E_\mathrm{cell} = E^\circ_\mathrm{cell} - \frac{RT}{nF}\ln Q = 0 - \frac{RT}{2F}\ln\frac◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{concentrated}◆RB◆
-$$
+$, $
 
-$$
+$, $
 E_\mathrm{cell} = -\frac{0.02569}{2}\ln\frac{0.00100}{1.00} = -0.01285 \times \ln(10^{-3}) = -0.01285 \times (-6.908) = +0.0888\,\mathrm{V}
-$$
+$, $
 
 (c) The half-cell with the lower concentration ($0.00100\,\mathrm{mol/dm}^3$) is the anode
 (oxidation: $\mathrm{Cu} \to \mathrm{Cu}^{2+} + 2e^-$). The half-cell with the higher concentration
@@ -802,8 +802,8 @@ Will $\mathrm{Zn}$ displace $\mathrm{Cu}$ from $\mathrm{CuSO}_4$ solution?
 
 Half-equations:
 
-- $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$$E^\circ = -0.76\,\mathrm{V}$
-- $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$$E^\circ = +0.34\mathrm{V}$
+- $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$, $E^\circ = -0.76\,\mathrm{V}$
+- $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$, $E^\circ = +0.34\mathrm{V}$
 
 Zinc is the more reactive metal (more negative $E^\circ$), so it will be oxidised (anode). Copper
 ions will be reduced (cathode).
@@ -846,9 +846,9 @@ The cell potential is slightly higher than $E^\circ$ because the lower product c
 **Lead-acid accumulator:**
 
 - Anode (discharge):
-  $\mathrm{Pb}(s) + \mathrm{SO}_4^{2-}(aq) \rightleftharpoons \mathrm{PbSO}_4(s) + 2e^-$$E^\circ = -0.36\,\mathrm{V}$
+  $\mathrm{Pb}(s) + \mathrm{SO}_4^{2-}(aq) \rightleftharpoons \mathrm{PbSO}_4(s) + 2e^-$, $E^\circ = -0.36\,\mathrm{V}$
 - Cathode (discharge):
-  $\mathrm{PbO}_2(s) + \mathrm{SO}_4^{2-}(aq) + 4\mathrm{H}^+(aq) + 2e^- \rightleftharpoons \mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$$E^\circ = +1.69\mathrm{V}$
+  $\mathrm{PbO}_2(s) + \mathrm{SO}_4^{2-}(aq) + 4\mathrm{H}^+(aq) + 2e^- \rightleftharpoons \mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$, $E^\circ = +1.69\mathrm{V}$
 
 $E^\circ_\mathrm{cell} = 1.69 - (-0.36) = 2.05\,\mathrm{V}$
 

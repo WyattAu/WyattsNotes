@@ -122,17 +122,17 @@ Simultaneously gives $Q$And the distance $PQ$ simplifies to the formula above.
 
 The area of a triangle with vertices $(x_1, y_1)$$(x_2, y_2)$$(x_3, y_3)$:
 
-$$
+$, $
 A = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|
-$$
+$, $
 
 This is derived from the shoelace formula (also known as Gauss's area formula).
 
 **Example (HL):** Find the area of the triangle with vertices $(1, 2)$$(4, 6)$$(3, -1)$.
 
-$$
+$, $
 A = \frac{1}{2}|1(6 - (-1)) + 4((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 - 12 - 12| = \frac{1}{2}|-17| = 8.5
-$$
+$, $
 
 ### Intersection of Two Lines (OL/HL)
 
@@ -158,9 +158,9 @@ The circle exists only if $g^2 + f^2 - c > 0$.
 
 Completing the square:
 
-$$
+$, $
 (x - 2)^2 - 4 + (y + 3)^2 - 9 - 3 = 0 \implies (x - 2)^2 + (y + 3)^2 = 16
-$$
+$, $
 
 Centre $(2, -3)$Radius $4$.
 
@@ -168,9 +168,9 @@ Centre $(2, -3)$Radius $4$.
 
 The tangent at a point $(x_1, y_1)$ on the circle $x^2 + y^2 = r^2$ has equation:
 
-$$
+$, $
 X_1 x + y_1 y = r^2
-$$
+$, $
 
 **Proof.** The radius to $(x_1, y_1)$ has slope $y_1/x_1$. The tangent is perpendicular, so its
 Slope is $-x_1/y_1$. Using point-slope form: $y - y_1 = -\frac{x_1}{y_1}(x - x_1)$Which simplifies
@@ -178,29 +178,29 @@ To $x_1 x + y_1 y = x_1^2 + y_1^2 = r^2$.
 
 **Example (HL):** Find the equation of the tangent to $x^2 + y^2 = 25$ at the point $(3, 4)$.
 
-$$
+$, $
 3x + 4y = 25
-$$
+$, $
 
 **Example (HL):** Show that the line $3x - 4y + 25 = 0$ is a tangent to $x^2 + y^2 = 25$.
 
 Substitute $y = \frac{3x + 25}{4}$ into $x^2 + y^2 = 25$:
 
-$$
+$, $
 X^2 + \left(\frac{3x + 25}{4}\right)^2 = 25
-$$
+$, $
 
-$$
+$, $
 16x^2 + 9x^2 + 150x + 625 = 400
-$$
+$, $
 
-$$
+$, $
 25x^2 + 150x + 225 = 0
-$$
+$, $
 
-$$
+$, $
 X^2 + 6x + 9 = 0 \implies (x + 3)^2 = 0
-$$
+$, $
 
 The discriminant is $\Delta = 0$Confirming a tangent. The point of tangency is $x = -3$
 $y = \frac{-9 + 25}{4} = 4$.
@@ -484,9 +484,9 @@ Check: $A + B = 40° + 126.5° = 166.5° < 180^\circ$So both solutions are valid
 
 ### The Cosine Rule (OL/HL)
 
-$$
+$, $
 A^2 = b^2 + c^2 - 2bc\cos A
-$$
+$, $
 
 **Example (OL):** In triangle $\triangle ABC$$a = 7$$b = 5$$c = 8$. Find angle $A$.
 

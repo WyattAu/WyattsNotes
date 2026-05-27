@@ -32,7 +32,7 @@ $q \in \mathbb{Z} \setminus \{0\}$And $p$ and $q$ have no common factors other t
 Fraction is in its **lowest terms**).
 
 An **irrational number** is a real number that cannot be expressed as a fraction of two integers.
-Key examples include $\sqrt{2}$$\pi$And $e$.
+Key examples include $\sqrt{2}$, $\pi$And $e$.
 
 **Theorem.** $\sqrt{2}$ is irrational.
 
@@ -54,7 +54,7 @@ Coprime. Therefore $\sqrt{2}$ is irrational. $\blacksquare$
 $3 \mid p$ (since 3 is prime). Write $p = 3k$: $9k^2 = 3q^2$So $q^2 = 3k^2$Giving $3 \mid q$. This
 contradicts coprimality. $\blacksquare$
 
-This technique generalises: for any prime $p$$\sqrt{p}$ is irrational. The proof structure is
+This technique generalises: for any prime $p$, $\sqrt{p}$ is irrational. The proof structure is
 Identical in every case.
 
 **Proposition.** The sum of a rational and an irrational number is irrational.
@@ -134,7 +134,7 @@ $$\mathrm{LCM = 2^{\max(2,1)} \times 3^{\max(1,1)} \times 5^{\max(0,1)} \times 7
 
 **Verification:** $42 \times 420 = 17640 = 84 \times 210$. $\checkmark$
 
-**Worked Example (Higher Tier).** Find the HCF and LCM of $180$$252$And $396$.
+**Worked Example (Higher Tier).** Find the HCF and LCM of $180$, $252$And $396$.
 
 $$180 = 2^2 \times 3^2 \times 5, \qquad 252 = 2^2 \times 3^2 \times 7, \qquad 396 = 2^2 \times 3^2 \times 11$$
 
@@ -531,7 +531,7 @@ Proportionality).
 
 We write $y \propto x$.
 
-**Worked Example.** $y$ is directly proportional to $x$. When $x = 5$$y = 30$. Find $y$ when
+**Worked Example.** $y$ is directly proportional to $x$. When $x = 5$, $y = 30$. Find $y$ when
 $x = 8$.
 
 $$30 = 5k \implies k = 6$$
@@ -544,7 +544,7 @@ $y$ is **inversely proportional** to $x$ if $y = \frac{k}{x}$.
 
 We write $y \propto \frac{1}{x}$.
 
-**Worked Example.** $y$ is inversely proportional to $x^2$. When $x = 3$$y = 12$. Find $y$ when
+**Worked Example.** $y$ is inversely proportional to $x^2$. When $x = 3$, $y = 12$. Find $y$ when
 $x = 6$.
 
 $$12 = \frac{k}{9} \implies k = 108$$
@@ -643,7 +643,7 @@ List all possible cases and verify each one.
 
 **Example.** Prove that every prime greater than 3 is of the form $6n \pm 1$ for some integer $n$.
 
-Every integer is of the form $6n$$6n+1$$6n+2$$6n+3$$6n+4$Or $6n+5$.
+Every integer is of the form $6n$, $6n+1$, $6n+2$, $6n+3$, $6n+4$Or $6n+5$.
 
 - $6n$: divisible by 6 (not prime for $n \geq 1$)
 - $6n + 2 = 2(3n + 1)$: even (not prime)
@@ -656,7 +656,7 @@ The only remaining forms are $6n + 1$ and $6n + 5 = 6(n + 1) - 1$. $\blacksquare
 
 **Example.** Prove that the sum of any three consecutive integers is divisible by 3.
 
-Let the three consecutive integers be $n$$n + 1$$n + 2$.
+Let the three consecutive integers be $n$, $n + 1$, $n + 2$.
 
 Sum $= n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1)$.
 
@@ -664,7 +664,7 @@ Since $n + 1$ is an integer, the sum is a multiple of 3. $\blacksquare$
 
 **Example.** Prove that the sum of any four consecutive integers is never a prime number.
 
-Let the integers be $n$$n + 1$$n + 2$$n + 3$.
+Let the integers be $n$, $n + 1$, $n + 2$, $n + 3$.
 
 Sum $= 4n + 6 = 2(2n + 3)$.
 
@@ -716,7 +716,7 @@ Since $k + 1$ is an integer, this is a multiple of 8. $\blacksquare$
 
 5. $a = 6.3$ and $b = 2.7$Both correct to 1 decimal place. Find the lower bound of $\frac{a}{b}$.
 
-6. $y$ is directly proportional to the cube of $x$. When $x = 2$$y = 40$. Find $x$ when $y = 1080$.
+6. $y$ is directly proportional to the cube of $x$. When $x = 2$, $y = 40$. Find $x$ when $y = 1080$.
 
 7. Simplify $\frac{12x^5 y^{-2}}{3x^{-1} y^4} \times (xy^3)^2$.
 

@@ -37,7 +37,7 @@ Vectors in 2D are written as column vectors: $\dbinom{a}{b}$ or $a\mathbf{i} + b
 
 Vectors in 3D: $\begin{pmatrix}a\\b\\c\end{pmatrix}$ or $a\mathbf{i} + b\mathbf{j} + c\mathbf{k}$.
 
-The unit vectors $\mathbf{i} = \dbinom{1}{0}$$\mathbf{j} = \dbinom{0}{1}$ point along the positive
+The unit vectors $\mathbf{i} = \dbinom{1}{0}$, $\mathbf{j} = \dbinom{0}{1}$ point along the positive
 $x$- and $y$-axes respectively. In 3D, $\mathbf{k} = \begin{pmatrix}0\\0\\1\end{pmatrix}$.
 
 ### 1.2 Position vectors
@@ -69,7 +69,7 @@ The **direction cosines** of $\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmat
 
 $$\cos\alpha = \frac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\beta = \frac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\gamma = \frac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
 
-Where $\alpha$$\beta$$\gamma$ are the angles between $\mathbf{a}$ and the $x$-, $y$-, $z$-axes
+Where $\alpha$, $\beta$, $\gamma$ are the angles between $\mathbf{a}$ and the $x$-, $y$-, $z$-axes
 Respectively.
 
 Note: $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
@@ -147,7 +147,7 @@ $$\mathbf{a}\cdot\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3$$
 **Theorem.** $\mathbf{a}\cdot\mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$Where $\theta$ is the
 Angle between $\mathbf{a}$ and $\mathbf{b}$.
 
-**Proof using the cosine rule.** Consider the triangle formed by vectors $\mathbf{a}$$\mathbf{b}$
+**Proof using the cosine rule.** Consider the triangle formed by vectors $\mathbf{a}$, $\mathbf{b}$
 And $\mathbf{a} - \mathbf{b}$.
 
 By the cosine rule:
@@ -319,7 +319,7 @@ $d = \left|\begin{pmatrix}1/3\\2/3\\-2/3\end{pmatrix}\right| = \sqrt◆LB◆\dfr
 
 ### 9.1 Definition
 
-**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$$\mathbf{b}$ $\mathbf{c}$
+**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$, $\mathbf{b}$ $\mathbf{c}$
 is
 
 $$[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
@@ -331,7 +331,7 @@ $$[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = \begin{vmatrix} a_1 & a_2 & a_3 \\ 
 ### 9.2 Geometric interpretation: volume of a parallelepiped
 
 **Theorem.** The absolute value of the scalar triple product equals the volume of the parallelepiped
-With edges defined by $\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
+With edges defined by $\mathbf{a}$, $\mathbf{b}$And $\mathbf{c}$.
 
 $$V = |\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$$
 

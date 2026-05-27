@@ -481,8 +481,8 @@ When comparing two box plots:
 - Compare the ranges
 - Comment on skewness (if the median is closer to $Q_1$ or $Q_3$)
 
-**Worked Example.** Class A has median 65, $Q_1 = 50$$Q_3 = 75$. Class B has median 60,
-$Q_1 = 45$$Q_3 = 70$.
+**Worked Example.** Class A has median 65, $Q_1 = 50$, $Q_3 = 75$. Class B has median 60,
+$Q_1 = 45$, $Q_3 = 70$.
 
 Class A has a higher median (65 vs 60), so on average they scored better. Class A also has a
 Narrower IQR ($75 - 50 = 25$ vs $70 - 45 = 25$), so both classes have the same spread by this
@@ -523,7 +523,7 @@ Independent (because $P(A \cap B) = 0 \neq P(A) \times P(B)$ when both are posit
 
 **Example.** A card is drawn from a standard 52-card deck. Let $A$ be "the card is a heart" and $B$
 Be "the card is a king". These events are NOT mutually exclusive (the king of hearts is both), but
-They ARE independent: $P(A) = 13/52 = 1/4$$P(B) = 4/52 = 1/13$And
+They ARE independent: $P(A) = 13/52 = 1/4$, $P(B) = 4/52 = 1/13$And
 $P(A \cap B) = 1/52 = (1/4)(1/13)$.
 
 ### 9.2 Why the Standard Deviation Uses Squared Differences
@@ -576,11 +576,11 @@ Tree diagrams are useful for visualising multi-stage experiments where events ar
 **Worked Example.** A bag contains 4 red and 6 blue counters. Two counters are drawn without
 Replacement. Find the probability that both are the same colour.
 
-First draw: $P(\mathrm{red) = 4/10 = 0.4$$P(\mathrm{blue) = 6/10 = 0.6$.
+First draw: $P(\mathrm{red) = 4/10 = 0.4$, $P(\mathrm{blue) = 6/10 = 0.6$.
 
-Second draw (if first was red): $P(\mathrm{red) = 3/9 = 1/3$$P(\mathrm{blue) = 6/9 = 2/3$.
+Second draw (if first was red): $P(\mathrm{red) = 3/9 = 1/3$, $P(\mathrm{blue) = 6/9 = 2/3$.
 
-Second draw (if first was blue): $P(\mathrm{red) = 4/9$$P(\mathrm{blue) = 5/9$.
+Second draw (if first was blue): $P(\mathrm{red) = 4/9$, $P(\mathrm{blue) = 5/9$.
 
 $$
 P(\mathrm{both red) = \frac{4}{10} \times \frac{3}{9} = \frac{12}{90} = \frac{2}{15}

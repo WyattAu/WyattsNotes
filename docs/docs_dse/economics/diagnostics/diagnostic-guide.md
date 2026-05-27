@@ -232,7 +232,7 @@ in development, referring to Hong Kong's experience.
 
 (a) Using the rule of 70 or the compound growth formula: $50\,000 = 5\,000 \times (1.07)^n$.
 
-$(1.07)^n = 10$$n = \frac{\ln 10}{\ln 1.07} = \frac{2.3026}{0.0677} = 34.0$ years.
+$(1.07)^n = 10$, $n = \frac{\ln 10}{\ln 1.07} = \frac{2.3026}{0.0677} = 34.0$ years.
 
 It would take approximately 34 years for Country B to reach Country A's current GDP per capita,
 assuming constant 7% growth (which is very optimistic -- growth rates slow as economies develop, as

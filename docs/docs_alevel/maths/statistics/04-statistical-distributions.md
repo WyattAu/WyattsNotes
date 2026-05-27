@@ -151,7 +151,7 @@ $$f(x) = \frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt{2\pi}◆RB◆\,e^{-\frac◆LB
 ### 3.3 Properties
 
 - Bell-shaped, symmetric about $\mu$.
-- $E(X) = \mu$$\mathrm{Var}(X) = \sigma^2$.
+- $E(X) = \mu$, $\mathrm{Var}(X) = \sigma^2$.
 - Approximately 68% of data within $\mu \pm \sigma$95% within $\mu \pm 2\sigma$99.7% within
  $\mu \pm
   3\sigma$.
@@ -354,7 +354,7 @@ $a$.
 
 <details>
 <summary>Problem 1</summary>
-$X \sim B(10, 0.3)$. Find $P(X = 4)$$P(X \leq 3)$And $P(X \geq 7)$.
+$X \sim B(10, 0.3)$. Find $P(X = 4)$, $P(X \leq 3)$And $P(X \geq 7)$.
 </details>
 
 <details>
@@ -444,7 +444,7 @@ $X \sim \mathrm{Po}(12)$.
 
 $P(10 \leq X \leq 15) = P(X \leq 15) - P(X \leq 9)$.
 
-$P(X \leq 15) \approx 0.7728$$P(X \leq 9) \approx 0.2424$.
+$P(X \leq 15) \approx 0.7728$, $P(X \leq 9) \approx 0.2424$.
 
 $P(10 \leq X \leq 15) \approx 0.7728 - 0.2424 = 0.5304$.
 
@@ -649,7 +649,7 @@ is small.
 <details>
 <summary>Problem 17</summary>
 Temperatures in a city are modelled by $X \sim N(15, 9)$ in degrees Celsius. The temperature in
-Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$$\mathrm{Var}(F)$And $P(F \gt 68)$.
+Fahrenheit is $F = \frac{9}{5}X + 32$. Find $E(F)$, $\mathrm{Var}(F)$And $P(F \gt 68)$.
 </details>
 
 <details>

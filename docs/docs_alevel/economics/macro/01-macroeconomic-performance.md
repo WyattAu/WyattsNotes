@@ -895,8 +895,8 @@ $$\pi = \pi^e - \beta(u - u^*) = 3 - 2(0.03 - 0.05) = 3 + 0.04 = 7\%$$
 
 **Dynamic adjustment:**
 
-- Year 1: $u = 3\%$$\pi = 7\%$. Workers' expectations start adjusting: $\pi^e$ rises towards 7%.
-- Year 2: $u = 5\%$ (policy wears off), $\pi^e = 5\%$$\pi = 5\%$.
+- Year 1: $u = 3\%$, $\pi = 7\%$. Workers' expectations start adjusting: $\pi^e$ rises towards 7%.
+- Year 2: $u = 5\%$ (policy wears off), $\pi^e = 5\%$, $\pi = 5\%$.
 - Year 3: $u = 5\%$$\pi^e = 5\%$$\pi = 5\%$. Long-run equilibrium restored.
 
 The temporary reduction in unemployment came at the cost of temporarily higher inflation (7%), but

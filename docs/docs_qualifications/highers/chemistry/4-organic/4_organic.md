@@ -502,7 +502,7 @@ This example illustrates the limitations of certain synthetic routes at Higher l
 | --------------- | ----------------- | ---------------------------------------- |
 | Alkene          | Alkane            | $\mathrm{H_2$Ni catalyst                 |
 | Alkene          | Haloalkane        | $\mathrm{HX$ or $\mathrm{X_2$            |
-| Alkene          | Alcohol           | $\mathrm{H_2\mathrm{O$$\mathrm{H^+$      |
+| Alkene          | Alcohol           | $\mathrm{H_2\mathrm{O$, $\mathrm{H^+$      |
 | Alcohol         | Aldehyde          | $[\mathrm{O]$Distillation                |
 | Alcohol         | Carboxylic acid   | $[\mathrm{O]$Reflux                      |
 | Alcohol         | Alkene            | $\mathrm{conc. H_2\mathrm{SO_4$Heat      |

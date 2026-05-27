@@ -237,7 +237,7 @@ $$
 
 ### Special Cases of Elastic Collisions
 
-1. **Equal masses** ($m_1 = m_2$): The objects exchange velocities. $v_{1f} = 0$$v_{2f} = v_{1i}$.
+1. **Equal masses** ($m_1 = m_2$): The objects exchange velocities. $v_{1f} = 0$, $v_{2f} = v_{1i}$.
 2. **Stationary target with $m_1 \gg m_2$:** $m_1$ continues essentially unchanged; $m_2$ moves off
    at roughly $2v_{1i}$.
 3. **Stationary target with $m_1 \ll m_2$:** $m_1$ bounces back with $-v_{1i}$; $m_2$ barely moves.

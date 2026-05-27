@@ -42,7 +42,7 @@ Units of rate: $\mathrm{mol\,dm^{-3}\,s^{-1}}$.
 
 | Method          | Observable                  | Suitable Reactions                                                   |
 | --------------- | --------------------------- | -------------------------------------------------------------------- |
-| Gas collection  | Volume of gas vs time       | Reactions producing gaseous products ($\mathrm{CO}_2$$\mathrm{H}_2$) |
+| Gas collection  | Volume of gas vs time       | Reactions producing gaseous products ($\mathrm{CO}_2$, $\mathrm{H}_2$) |
 | Mass loss       | Mass decrease vs time       | Reactions producing gas from a solid in an open vessel               |
 | Colorimetry     | Absorbance vs time          | Reactions involving coloured species                                 |
 | Titration       | Concentration by quenching  | Slow reactions; samples withdrawn and quenched                       |

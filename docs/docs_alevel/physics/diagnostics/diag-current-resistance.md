@@ -97,8 +97,8 @@ A semiconductor diode has the I-V characteristic approximated by the Shockley di
 
 $$I = I_0\left(e^{eV/(nkT)} - 1\right)$$
 
-Where $I_0 = 5.0 \times 10^{-9}\,\text{A}$$n = 1.5$ (ideality factor),
-$e = 1.60 \times 10^{-19}\,\text{C}$$k = 1.38 \times 10^{-23}\,\text{J}\,\text{K}^{-1}$And
+Where $I_0 = 5.0 \times 10^{-9}\,\text{A}$, $n = 1.5$ (ideality factor),
+$e = 1.60 \times 10^{-19}\,\text{C}$, $k = 1.38 \times 10^{-23}\,\text{J}\,\text{K}^{-1}$And
 $T = 300\,\text{K}$.
 
 (a) Calculate the current when $V = 0.60\,\text{V}$ is applied in the forward direction.
@@ -235,7 +235,7 @@ $R_{20} = R_{25}/[1 + \alpha(25 - 20)] = 8.50/[1 + 0.004 \times 5] = 8.50/1.020 
 
 $$\rho_{20} = \frac◆LB◆\pi \times 2.500 \times 10^{-7} \times 8.333◆RB◆◆LB◆4◆RB◆ = 1.636 \times 10^{-6}\,\Omega\,\text{m}$$
 
-(c) New diameter: $d = 0.498\,\text{mm}$$\Delta d = 0.003\,\text{mm}$
+(c) New diameter: $d = 0.498\,\text{mm}$, $\Delta d = 0.003\,\text{mm}$
 
 $$\rho' = \frac◆LB◆\pi \times (4.98 \times 10^{-4})^2 \times 8.50◆RB◆◆LB◆4 \times 1.000◆RB◆ = \frac◆LB◆\pi \times 2.480 \times 10^{-7} \times 8.50◆RB◆◆LB◆4◆RB◆ = 1.657 \times 10^{-6}\,\Omega\,\text{m}$$
 

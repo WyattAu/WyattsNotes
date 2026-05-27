@@ -265,7 +265,7 @@ No overflow (negative + positive never overflows).
 <details>
 <summary>Example: Overflow — Add $6$ and $5$ in 4-bit two's complement</summary>
 
-$6 = 0110_2$$5 = 0101_2$
+$6 = 0110_2$, $5 = 0101_2$
 
 ```
   Carry: 0 1 1 0 0

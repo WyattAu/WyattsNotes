@@ -57,7 +57,7 @@ $$k_{T,M} = \frac{1}{\mathrm{MPS} + t \times \mathrm{MPC} + \mathrm{MPM}}$$
 
 Where MPM is the marginal propensity to import. Imports are a leakage from the circular flow.
 
-**Worked example:** if $\mathrm{MPC} = 0.75$$t = 0.2$And $\mathrm{MPM} = 0.1$:
+**Worked example:** if $\mathrm{MPC} = 0.75$, $t = 0.2$And $\mathrm{MPM} = 0.1$:
 
 $$k = \frac{1}{0.25 + 0.2 \times 0.75 + 0.1} = \frac{1}{0.25 + 0.15 + 0.1} = \frac{1}{0.50} = 2$$
 

@@ -119,7 +119,7 @@ density maximum between the bonded atoms.
 ### Sigma ($\sigma$) and Pi ($\pi$) Bonds
 
 A **sigma bond** is formed by end-on (head-on) overlap of atomic orbitals along the internuclear
-axis. Sigma bonds can arise from $s$-$s$$s$-$p$Or $p$-$p$ overlap. All single bonds are sigma bonds.
+axis. Sigma bonds can arise from $s$-$s$, $s$-$p$Or $p$-$p$ overlap. All single bonds are sigma bonds.
 
 A **pi bond** is formed by sideways overlap of parallel $p$ orbitals above and below the
 internuclear axis. Pi bonds are weaker than sigma bonds because the sideways overlap is less
@@ -229,12 +229,12 @@ hydrogen bonds.
 ### Hydrogen Bonding
 
 Hydrogen bonding is a special, strong type of dipole-dipole interaction that occurs when hydrogen is
-covalently bonded to a highly electronegative atom ($\mathrm{N}$$\mathrm{O}$Or $\mathrm{F}$). The
+covalently bonded to a highly electronegative atom ($\mathrm{N}$, $\mathrm{O}$Or $\mathrm{F}$). The
 conditions are:
 
-1. Hydrogen bonded to $\mathrm{N}$$\mathrm{O}$Or $\mathrm{F}$.
+1. Hydrogen bonded to $\mathrm{N}$, $\mathrm{O}$Or $\mathrm{F}$.
 2. The hydrogen has a large partial positive charge ($\delta^+$).
-3. A lone pair on a nearby $\mathrm{N}$$\mathrm{O}$Or $\mathrm{F}$ atom interacts with the
+3. A lone pair on a nearby $\mathrm{N}$, $\mathrm{O}$Or $\mathrm{F}$ atom interacts with the
    $\delta^+$ hydrogen.
 
 Hydrogen bonds are approximately 10-40 kJ/mol, compared with 2-5 kJ/mol for typical dipole-dipole
@@ -266,14 +266,14 @@ that atom than bonding pairs, which are shared between two atoms.
 
 | Electron domains | Bonding pairs | Lone pairs | Geometry             | Bond angle                    | Example                                  |
 | ---------------- | ------------- | ---------- | -------------------- | ----------------------------- | ---------------------------------------- |
-| 2                | 2             | 0          | Linear               | $180^\circ$                   | $\mathrm{BeCl}_2$$\mathrm{CO}_2$         |
-| 3                | 3             | 0          | Trigonal planar      | $120^\circ$                   | $\mathrm{BF}_3$$\mathrm{NO}_3^-$         |
+| 2                | 2             | 0          | Linear               | $180^\circ$                   | $\mathrm{BeCl}_2$, $\mathrm{CO}_2$         |
+| 3                | 3             | 0          | Trigonal planar      | $120^\circ$                   | $\mathrm{BF}_3$, $\mathrm{NO}_3^-$         |
 | 3                | 2             | 1          | Bent (angular)       | $\lt 120^\circ$               | $\mathrm{SO}_2$ ($\approx 119^\circ$)    |
-| 4                | 4             | 0          | Tetrahedral          | $109.5^\circ$                 | $\mathrm{CH}_4$$\mathrm{NH}_4^+$         |
+| 4                | 4             | 0          | Tetrahedral          | $109.5^\circ$                 | $\mathrm{CH}_4$, $\mathrm{NH}_4^+$         |
 | 4                | 3             | 1          | Trigonal pyramidal   | $\lt 109.5^\circ$             | $\mathrm{NH}_3$ ($107^\circ$)            |
 | 4                | 2             | 2          | Bent (angular)       | $\lt 109.5^\circ$             | $\mathrm{H}_2\mathrm{O}$ ($104.5^\circ$) |
-| 5                | 5             | 0          | Trigonal bipyramidal | $120^\circ$$90^\circ$         | $\mathrm{PCl}_5$                         |
-| 5                | 4             | 1          | See-saw              | $\lt 90^\circ$$\lt 120^\circ$ | $\mathrm{SF}_4$                          |
+| 5                | 5             | 0          | Trigonal bipyramidal | $120^\circ$, $90^\circ$         | $\mathrm{PCl}_5$                         |
+| 5                | 4             | 1          | See-saw              | $\lt 90^\circ$, $\lt 120^\circ$ | $\mathrm{SF}_4$                          |
 | 5                | 3             | 2          | T-shaped             | $\lt 90^\circ$                | $\mathrm{ClF}_3$                         |
 | 5                | 2             | 3          | Linear               | $180^\circ$                   | $\mathrm{XeF}_2$                         |
 | 6                | 6             | 0          | Octahedral           | $90^\circ$                    | $\mathrm{SF}_6$                          |

@@ -248,9 +248,9 @@ The energy of $4s$ above $3d$.
 
 ### Effective Nuclear Charge
 
-$$
+$, $
 Z_{\mathrm{eff}} = Z - S
-$$
+$, $
 
 Where $S$ is the shielding constant estimated by Slater's rules.
 
@@ -275,13 +275,13 @@ Configuration: $(1s)^2(2s,2p)^8(3s,3p)^8(4s)^1$
 - $n - 1$ $(3s,3p)^8$: $8 \times 0.85 = 6.80$
 - $n - 2$ and lower $(1s)^2(2s,2p)^8$: $10 \times 1.00 = 10.00$
 
-$$
+$, $
 S = 0 + 6.80 + 10.00 = 16.80
-$$
+$, $
 
-$$
+$, $
 Z_{\mathrm{eff}} = 19 - 16.80 = 2.20
-$$
+$, $
 
 :::
 
@@ -294,9 +294,9 @@ $$
 The $n$-th **ionization energy** ($IE_n$) is the minimum energy required to remove the $n$-th
 Electron from one mole of gaseous atoms or ions:
 
-$$
+$, $
 \mathrm{X}^{(n-1)+}(g) \to \mathrm{X}^{n+}(g) + e^- \qquad \Delta H = IE_n
-$$
+$, $
 
 ### Periodic Trends
 
@@ -316,9 +316,9 @@ $$
 
 A large jump between successive ionization energies indicates removal from a new inner shell:
 
-$$
+$, $
 IE_1 \lt IE_2 \lt IE_3 \ll IE_4 \quad \mathrm{(large jump at } IE_4 \mathrm{ for Al)}
-$$
+$, $
 
 This reveals the number of valence electrons.
 
@@ -395,13 +395,13 @@ For a $3d$ electron:
 - $n - 1$ shell: $(3s,3p)^8$: $8 \times 1.00 = 8.00$ (rule for $d$ electrons)
 - $n - 2$ and lower: $(1s)^2(2s,2p)^8 = 10 \times 1.00 = 10.00$
 
-$$
+$, $
 S = 1.75 + 8.00 + 10.00 = 19.75
-$$
+$, $
 
-$$
+$, $
 Z_{\mathrm{eff}}(3d) = 26 - 19.75 = 6.25
-$$
+$, $
 
 For a $4s$ electron:
 
@@ -409,13 +409,13 @@ For a $4s$ electron:
 - $n - 1$ shell $(3s,3p,3d)^{14}$: $14 \times 0.85 = 11.90$
 - $n - 2$ and lower: $10 \times 1.00 = 10.00$
 
-$$
+$, $
 S = 0.35 + 11.90 + 10.00 = 22.25
-$$
+$, $
 
-$$
+$, $
 Z_{\mathrm{eff}}(4s) = 26 - 22.25 = 3.75
-$$
+$, $
 
 Wait — this gives $Z_{\mathrm{eff}}(3d) \gt Z_{\mathrm{eff}}(4s)$Which suggests $4s$ is higher in
 Energy. For a neutral atom, the $4s$ has lower energy due to its greater penetration. Once the $3d$

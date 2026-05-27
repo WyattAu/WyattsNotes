@@ -23,7 +23,7 @@ NADPH has $\Delta G \approx 220\ \text{kJ mol}^{-1}$.
 **Solution:**
 
 $E = \frac{hc}{\lambda}$Where
-$h = 6.626 \times 10^{-34}\ \text{J s}$$c = 2.998 \times 10^8\ \text{m s}^{-1}$.
+$h = 6.626 \times 10^{-34}\ \text{J s}$, $c = 2.998 \times 10^8\ \text{m s}^{-1}$.
 
 PSII ($680\ \text{nm}$):
 $E = \frac{(6.626 \times 10^{-34})(2.998 \times 10^8)}{680 \times 10^{-9}} = 2.92 \times 10^{-19}\ \text{J}$

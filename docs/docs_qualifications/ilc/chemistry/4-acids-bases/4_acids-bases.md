@@ -61,17 +61,17 @@ $\mathrm{NH_3/\mathrm{NH_4^+$ and $\mathrm{H_2\mathrm{O/\mathrm{OH^-$.
 Completely dissociate in water: $\mathrm{HCl$$\mathrm{HNO_3$$\mathrm{H_2\mathrm{SO_4$ (first
 Dissociation).
 
-$$
+$, $
 \mathrm{HCl + \mathrm{H_2\mathrm{O \to \mathrm{H_3\mathrm{O^+ + \mathrm{Cl^-
-$$
+$, $
 
 ### Weak Acids
 
 Partially dissociate in water: $\mathrm{CH_3\mathrm{COOH$$\mathrm{HF$$\mathrm{H_2\mathrm{CO_3$.
 
-$$
+$, $
 \mathrm{CH_3\mathrm{COOH + \mathrm{H_2\mathrm{O \rightleftharpoons \mathrm{H_3\mathrm{O^+ + \mathrm{CH_3\mathrm{COO^-
-$$
+$, $
 
 ### Strong Bases
 
@@ -81,15 +81,15 @@ Completely dissociate: $\mathrm{NaOH$$\mathrm{KOH$$\mathrm{Ca(OH)_2$.
 
 Partially dissociate: $\mathrm{NH_3$.
 
-$$
+$, $
 \mathrm{NH_3 + \mathrm{H_2\mathrm{O \rightleftharpoons \mathrm{NH_4^+ + \mathrm{OH^-
-$$
+$, $
 
 ## The pH Scale (OL/HL)
 
-$$
+$, $
 \mathrm{pH = -\log_{10}[\mathrm{H_3\mathrm{O^+]
-$$
+$, $
 
 At $25^\circ\mathrm{C$: $[\mathrm{H_3\mathrm{O^+][\mathrm{OH^-] = 10^{-14}$.
 
@@ -101,34 +101,34 @@ At $25^\circ\mathrm{C$: $[\mathrm{H_3\mathrm{O^+][\mathrm{OH^-] = 10^{-14}$.
 
 **Example (OL):** Find the pH of a $0.01\mathrm{ M$ solution of $\mathrm{HCl$.
 
-$$
+$, $
 [\mathrm{H_3\mathrm{O^+] = 0.01 = 10^{-2}\mathrm{ M \implies \mathrm{pH = 2
-$$
+$, $
 
 **Example (HL):** Find the pH of a $0.10\mathrm{ M$ solution of $\mathrm{CH_3\mathrm{COOH$
 ($K_a = 1.8 \times 10^{-5}$).
 
-$$
+$, $
 K_a = \frac{[\mathrm{H_3\mathrm{O^+][\mathrm{CH_3\mathrm{COO^-]}{[\mathrm{CH_3\mathrm{COOH]} = \frac{x^2}{0.10 - x} \approx \frac{x^2}{0.10}
-$$
+$, $
 
-$$
+$, $
 X = \sqrt{0.10 \times 1.8 \times 10^{-5}} = \sqrt{1.8 \times 10^{-6}} = 1.34 \times 10^{-3}\mathrm{ M
-$$
+$, $
 
-$$
+$, $
 \mathrm{pH = -\log(1.34 \times 10^{-3}) = 2.87
-$$
+$, $
 
 ## Acid Dissociation Constant ($K_a$) (HL)
 
-$$
+$, $
 K_a = \frac{[\mathrm{H_3\mathrm{O^+][\mathrm{A^-]}{[\mathrm{HA]}
-$$
+$, $
 
-$$
+$, $
 \mathrm{pK_a = -\log K_a
-$$
+$, $
 
 The larger the $K_a$The stronger the acid.
 
@@ -138,33 +138,33 @@ The larger the $K_a$The stronger the acid.
 
 ### Strong Monoprotic Acid
 
-$$
+$, $
 \mathrm{pH = -\log[\mathrm{H_3\mathrm{O^+]
-$$
+$, $
 
 ### Strong Diprotic Acid
 
 For $\mathrm{H_2\mathrm{SO_4$ (first dissociation complete):
 
-$$
+$, $
 [\mathrm{H_3\mathrm{O^+] = 2c \quad (\mathrm{if both protons dissociate fully)
-$$
+$, $
 
 ### Dilution
 
-$$
+$, $
 C_1 V_1 = c_2 V_2
-$$
+$, $
 
 **Example (HL):** 25 mL of $0.10\mathrm{ M$ $\mathrm{HCl$ is diluted to 250 mL. Find the new pH.
 
-$$
+$, $
 C_2 = \frac{0.10 \times 25}{250} = 0.010\mathrm{ M
-$$
+$, $
 
-$$
+$, $
 \mathrm{pH = -\log(0.010) = 2
-$$
+$, $
 
 ## Buffers (HL)
 
@@ -173,30 +173,30 @@ A weak acid and its conjugate base (or a weak base and its conjugate acid).
 
 ### Buffer pH Equation (Henderson-Hasselbalch)
 
-$$
+$, $
 \mathrm{pH = \mathrm{pK_a + \log\frac{[\mathrm{A^-]}{[\mathrm{HA]}
-$$
+$, $
 
 **Example (HL):** A buffer contains $0.10\mathrm{ M$ $\mathrm{CH_3\mathrm{COOH$ and $0.15\mathrm{ M$
 $\mathrm{CH_3\mathrm{COONa$. Find the pH. ($\mathrm{pK_a = 4.76$)
 
-$$
+$, $
 \mathrm{pH = 4.76 + \log\frac{0.15}{0.10} = 4.76 + \log 1.5 = 4.76 + 0.18 = 4.94
-$$
+$, $
 
 ### How Buffers Work
 
 When acid ($\mathrm{H^+$) is added: the conjugate base reacts with $\mathrm{H^+$Removing it.
 
-$$
+$, $
 \mathrm{CH_3\mathrm{COO^- + \mathrm{H_3\mathrm{O^+ \to \mathrm{CH_3\mathrm{COOH + \mathrm{H_2\mathrm{O
-$$
+$, $
 
 When base ($\mathrm{OH^-$) is added: the weak acid reacts with $\mathrm{OH^-$Neutralising it.
 
-$$
+$, $
 \mathrm{CH_3\mathrm{COOH + \mathrm{OH^- \to \mathrm{CH_3\mathrm{COO^- + \mathrm{H_2\mathrm{O
-$$
+$, $
 
 ## Neutralisation Reactions (OL/HL)
 
@@ -204,13 +204,13 @@ Acid + Base $\to$ Salt + Water
 
 **Example (OL):**
 
-$$
+$, $
 \mathrm{HCl + \mathrm{NaOH \to \mathrm{NaCl + \mathrm{H_2\mathrm{O
-$$
+$, $
 
-$$
+$, $
 \mathrm{H_2\mathrm{SO_4 + 2\mathrm{NaOH \to \mathrm{Na_2\mathrm{SO_4 + 2\mathrm{H_2\mathrm{O
-$$
+$, $
 
 ## Salt Preparation (OL/HL)
 
@@ -218,21 +218,21 @@ $$
 
 1. **Acid + Metal:**
 
-$$
+$, $
 \mathrm{Zn + \mathrm{H_2\mathrm{SO_4 \to \mathrm{ZnSO_4 + \mathrm{H_2
-$$
+$, $
 
 2. **Acid + Base (neutralisation):**
 
-$$
+$, $
 \mathrm{HCl + \mathrm{NaOH \to \mathrm{NaCl + \mathrm{H_2\mathrm{O
-$$
+$, $
 
 3. **Acid + Carbonate:**
 
-$$
+$, $
 \mathrm{HCl + \mathrm{CaCO_3 \to \mathrm{CaCl_2 + \mathrm{H_2\mathrm{O + \mathrm{CO_2
-$$
+$, $
 
 4. **Acid + Insoluble Base (titration method):**
 
@@ -241,9 +241,9 @@ Evaporate.
 
 5. **Precipitation (mixing two solutions):**
 
-$$
+$, $
 \mathrm{AgNO_3 + \mathrm{NaCl \to \mathrm{AgCl + \mathrm{NaNO_3
-$$
+$, $
 
 ### Choosing the Method
 
@@ -506,7 +506,7 @@ $$\mathrm{pOH = 5.28, \quad \mathrm{pH = 8.72$$
 
 ### Examples
 
-**Lewis acid:** $\mathrm{BF_3$ (boron has an empty $p$ orbital), $\mathrm{AlCl_3$$\mathrm{H^+$ (has
+**Lewis acid:** $\mathrm{BF_3$ (boron has an empty $p$ orbital), $\mathrm{AlCl_3$, $\mathrm{H^+$ (has
 No electrons), $\mathrm{Cu^{2+}$ (can accept electron pairs).
 
 **Lewis base:** $\mathrm{NH_3$ (lone pair on nitrogen), $\mathrm{H_2\mathrm{O$ (lone pairs on
@@ -697,7 +697,7 @@ System works because:
 2. The kidneys regulate $\mathrm{HCO_3^-$ levels
 3. Haemoglobin acts as an additional buffer
 
-The phosphate buffer system ($\mathrm{H_2\mathrm{PO_4^-/\mathrm{HPO_4^{2-}$$pK_{a2} = 7.21$) is
+The phosphate buffer system ($\mathrm{H_2\mathrm{PO_4^-/\mathrm{HPO_4^{2-}$, $pK_{a2} = 7.21$) is
 Important intracellularly.
 
 ---

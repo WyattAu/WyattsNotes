@@ -465,7 +465,7 @@ Use **dynamic programming**. Let $dp[i][v]$ = shortest path from $s$ to $v$ usin
 
 Recurrence: $dp[i][v] = \min_{(u,v) \in E}(dp[i-1][u] + w(u,v))$
 
-Base case: $dp[0][s] = 0$$dp[0][v] = \infty$ for $v \neq s$.
+Base case: $dp[0][s] = 0$, $dp[0][v] = \infty$ for $v \neq s$.
 
 Answer: $dp[k][t]$.
 

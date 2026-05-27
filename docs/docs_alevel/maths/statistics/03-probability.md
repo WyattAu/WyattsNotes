@@ -50,7 +50,7 @@ Derived from them.
 
 $$P(A \cup A') = P(A) + P(A') = P(\Omega) = 1 \implies P(A') = 1 - P(A). \quad \blacksquare$$
 
-**Corollary.** For any event $A$$P(\emptyset) = 0$.
+**Corollary.** For any event $A$, $P(\emptyset) = 0$.
 
 **Proof.** $P(\emptyset) = P(\Omega') = 1 - P(\Omega) = 1 - 1 = 0$. $\blacksquare$
 
@@ -63,7 +63,7 @@ $P(B) = P(A) + P(B \cap A') \geq P(A)$ since $P(B \cap A') \geq 0$. $\blacksquar
 
 **Theorem.** $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
 
-**Proof.** $A \cup B$ can be partitioned into three disjoint sets: $A \cap B'$$A \cap B$And
+**Proof.** $A \cup B$ can be partitioned into three disjoint sets: $A \cap B'$, $A \cap B$And
 $A' \cap B$.
 
 $$P(A \cup B) = P(A \cap B') + P(A \cap B) + P(A' \cap B)$$
@@ -76,7 +76,7 @@ $$P(A \cup B) = [P(A) - P(A \cap B)] + P(A \cap B) + [P(B) - P(A \cap B)] = P(A)
 
 For mutually exclusive events ($A \cap B = \emptyset$): $P(A \cup B) = P(A) + P(B)$.
 
-**Corollary (Boole's inequality).** For any events $A$ and $B$$P(A \cup B) \leq P(A) + P(B)$.
+**Corollary (Boole's inequality).** For any events $A$ and $B$, $P(A \cup B) \leq P(A) + P(B)$.
 
 **Proof.** Since $P(A \cap B) \geq 0$We have
 $P(A \cup B) = P(A) + P(B) - P(A \cap B) \leq P(A) + P(B)$. $\blacksquare$
@@ -193,7 +193,7 @@ $(A_i, A_j)$ with $i \neq j$ is independent.
 :::warning Mutual independence is a **stronger** condition than pairwise independence. Pairwise
 Independence does not imply mutual independence. For example, with two independent coin tosses, let
 $A$ = "first toss is heads", $B$ = "second toss is heads", $C$ = "both tosses are the same". Then
-$A$$B$$C$ are pairwise independent but not mutually independent since
+$A$, $B$, $C$ are pairwise independent but not mutually independent since
 $P(A \cap B \cap C) = 0 \neq P(A)P(B)P(C) = 1/8$. :::
 
 <hr />
@@ -245,7 +245,7 @@ $P(A) = \dfrac◆LB◆|A|◆RB◆◆LB◆|\Omega|◆RB◆ = \dfrac◆LB◆\mathr
 
 ### 8.1 Inclusion-exclusion principle
 
-**Theorem (Inclusion-Exclusion for three events).** For events $A$$B$$C$:
+**Theorem (Inclusion-Exclusion for three events).** For events $A$, $B$, $C$:
 
 $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$
 
@@ -264,7 +264,7 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(B \cap C) - P(A \cap B) - P(A \cap
 
 ### 8.2 De Morgan's laws for three events
 
-**Theorem.** For events $A$$B$$C$:
+**Theorem.** For events $A$, $B$, $C$:
 
 $$(A \cup B \cup C)' = A' \cap B' \cap C'$$
 
@@ -452,7 +452,7 @@ concentrated around the Centre. :::
 
 <details>
 <summary>Problem 1</summary>
-Events $A$ and $B$ are such that $P(A) = 0.4$$P(B) = 0.5$And $P(A \cup B) = 0.7$. Find $P(A \cap B)$ and $P(A|B)$.
+Events $A$ and $B$ are such that $P(A) = 0.4$, $P(B) = 0.5$And $P(A \cup B) = 0.7$. Find $P(A \cap B)$ and $P(A|B)$.
 </details>
 
 <details>
@@ -809,7 +809,7 @@ Section 10.
 
 <details>
 <summary>Problem 20</summary>
-Three machines $M_1$$M_2$$M_3$ produce items with proportions 50%, 30%, 20%. Their defect rates are 2%, 3%, 5% respectively. An item is found to be defective. Find the probability it was produced by $M_3$.
+Three machines $M_1$, $M_2$, $M_3$ produce items with proportions 50%, 30%, 20%. Their defect rates are 2%, 3%, 5% respectively. An item is found to be defective. Find the probability it was produced by $M_3$.
 </details>
 
 <details>

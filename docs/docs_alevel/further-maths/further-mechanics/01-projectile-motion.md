@@ -1097,7 +1097,7 @@ Is a circle.
 The trajectory is $y = x\tan\theta - \dfrac{gx^2}{2u^2}(1+\tan^2\theta)$.
 
 The vertex of this parabola (maximum height point) is at
-$x_v = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$$y_v = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$.
+$x_v = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$, $y_v = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$.
 
 $x_v^2 + (y_v - \dfrac{u^2}{4g})^2 = \dfrac◆LB◆u^4\sin^2 2\theta◆RB◆◆LB◆4g^2◆RB◆ + \dfrac{u^4}{16g^2}(\cos 2\theta - 1)^2$.
 

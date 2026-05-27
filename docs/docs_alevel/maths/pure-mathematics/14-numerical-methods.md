@@ -135,7 +135,7 @@ This is the **Newton-Raphson formula**.
 
 ### 3.2 Proof of local quadratic convergence
 
-**Theorem.** If $f$ is twice continuously differentiable, $f(\alpha) = 0$$f'(\alpha) \neq 0$And
+**Theorem.** If $f$ is twice continuously differentiable, $f(\alpha) = 0$, $f'(\alpha) \neq 0$And
 $x_0$ is sufficiently close to $\alpha$Then Newton-Raphson converges **quadratically**:
 $|x_{n+1} - \alpha| \leq C|x_n - \alpha|^2$.
 
@@ -181,7 +181,7 @@ $x_0 = 1$:
 
 The formula gives $x_1 = 1 - f(1)/f'(1) = 1 - 1/0$Which is undefined.
 
-Even starting at $x_0 = 0.9$: $f(0.9) = 0.729 - 2.7 + 3 = 1.029$$f'(0.9) = 2.43 - 3 = -0.57$.
+Even starting at $x_0 = 0.9$: $f(0.9) = 0.729 - 2.7 + 3 = 1.029$, $f'(0.9) = 2.43 - 3 = -0.57$.
 $x_1 = 0.9 - 1.029/(-0.57) = 0.9 + 1.805 = 2.705$.
 
 The root is near $\alpha \approx -2.10$So the iterate has been sent in the wrong direction. The Next

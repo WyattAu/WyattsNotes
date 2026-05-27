@@ -100,7 +100,7 @@ actual Volume of goods and services that the average income can buy in each coun
 - Assuming that fiscal policy is always effective. Crowding out, time lags, and the size of the
   multiplier all limit its impact.
 - Confusing a movement along the AD curve (caused by a change in the price level) with a shift of
-  the AD curve (caused by changes in $C$$I$$G$Or $X - M$).
+  the AD curve (caused by changes in $C$, $I$, $G$Or $X - M$).
 - Treating the Phillips Curve as a policy menu. The short-run trade-off does not exist in the long
   run.
 - Forgetting that the LRAS curve is vertical. In the long run, demand-side policies only affect the

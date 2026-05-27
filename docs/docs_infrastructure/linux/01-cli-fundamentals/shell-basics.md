@@ -425,7 +425,7 @@ unset MY_VAR
 | Variable | Meaning                                                    |
 | -------- | ---------------------------------------------------------- |
 | `$?`     | Exit status of the last command (0 = success)              |
-| `$$`     | PID of the current shell                                   |
+| `$, $`     | PID of the current shell                                   |
 | `$!`     | PID of the last background process                         |
 | `$-`     | Current shell options                                      |
 | `$_`     | Last argument of the previous command                      |

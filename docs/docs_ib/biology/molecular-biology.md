@@ -757,7 +757,7 @@ $\mathrm{KCl}$) and polar molecules (sugars, amino acids, many proteins). This e
 - Transport of dissolved substances in blood (glucose, amino acids, urea, hormones, ions).
 - Nutrient uptake from soil by root hairs (mineral ions dissolved in soil water).
 
-**Non-polar molecules** (lipids, steroid hormones, $\mathrm{O}_2$$\mathrm{CO}_2$) are poorly Soluble
+**Non-polar molecules** (lipids, steroid hormones, $\mathrm{O}_2$, $\mathrm{CO}_2$) are poorly Soluble
 in water and require transport proteins or carriers (e.g., lipoproteins for cholesterol).
 
 ### Water Density and Ice Formation
@@ -1154,7 +1154,7 @@ amino acids.
 **Worked Example: Competitive and Non-Competitive Inhibition Graphically**
 
 An enzyme has $K_m = 5.0\;\mathrm{mM}$ and $V_{max} = 100\;\mathrm{\mu mol/min}$. A competitive
-Inhibitor at $2.0\;\mathrm{mM}$ gives $K_m^{app} = 15.0\;\mathrm{mM}$$V_{max}^{app} = 100$. A
+Inhibitor at $2.0\;\mathrm{mM}$ gives $K_m^{app} = 15.0\;\mathrm{mM}$, $V_{max}^{app} = 100$. A
 non-competitive inhibitor at $5.0\;\mathrm{mM}$ gives $K_m^{app} = 5.0\;\mathrm{mM}$
 $V_{max}^{app} = 50$. (a) Sketch the Michaelis-Menten curves for all three conditions. (b) Calculate
 The initial velocity ($v$) at $[S] = 5.0\;\mathrm{mM}$ for each condition. (c) Calculate the

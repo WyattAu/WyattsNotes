@@ -146,7 +146,7 @@ $y$ is directly proportional to $x^2$: $y = kx^2$.
 
 $y$ is inversely proportional to $\sqrt{x}$: $y = \frac{k}{\sqrt{x}}$.
 
-**Worked Example.** $y$ is directly proportional to $x^3$. When $x = 2$$y = 24$. Find $y$ when
+**Worked Example.** $y$ is directly proportional to $x^3$. When $x = 2$, $y = 24$. Find $y$ when
 $x = 5$.
 
 $$24 = 8k \implies k = 3$$ $$y = 3 \times 125 = 375$$
@@ -304,7 +304,7 @@ $$F = P \times A = 5000 \times 0.04 = 200 \mathrm{ N$$
 | ------------------------ | ------------------------ |
 | 1 km = 1000 m            | $\times 1000$            |
 | 1 m = 100 cm             | $\times 100$             |
-| 1 hour = 60 min = 3600 s | $\times 60$$\times 3600$ |
+| 1 hour = 60 min = 3600 s | $\times 60$, $\times 3600$ |
 | 1 litre = 1000 cm$^3$    | $\times 1000$            |
 | 1 kg = 1000 g            | $\times 1000$            |
 
@@ -427,7 +427,7 @@ $4(3b/2 + 15) = 5(b + 15)$.
 
 $6b + 60 = 5b + 75$.
 
-$b = 15$$a = 22.5$.
+$b = 15$, $a = 22.5$.
 
 Verify: $22.5 : 15 = 3 : 2$. After adding 15: $37.5 : 30 = 5 : 4$. $\checkmark$
 
@@ -535,15 +535,15 @@ The original price?"
 
 The original price is NOT $120 - 24 = 96$ pounds. Instead:
 
-$$
+$, $
 \mathrm{Original \times 1.20 = 120 \implies \mathrm{Original = \frac{120}{1.20} = 100 \mathrm{ pounds
-$$
+$, $
 
 **Worked Example.** A population grows by 15% to reach 4600. What was the original population?
 
-$$
+$, $
 \mathrm{Original \times 1.15 = 4600 \implies \mathrm{Original = \frac{4600}{1.15} = 4000
-$$
+$, $
 
 ### 9.5 Best Buy Problems
 
@@ -565,9 +565,9 @@ Pounds, divide by 1.18.
 
 **Worked Example.** A meal costs 45 euros. How much is this in pounds?
 
-$$
+$, $
 45 \div 1.18 \approx 38.14 \mathrm{ pounds
-$$
+$, $
 
 **Worked Example.** A tourist exchanges 500 pounds for euros at a rate of 1 pound = 1.15 euros, with
 A commission of 3 pounds. How many euros do they receive?
@@ -655,18 +655,18 @@ $3 \times 1.15 = 3.45$ euros. Net: $575 - 3.45 = 571.55$ euros.
 
 **Simple interest** is calculated only on the original principal:
 
-$$
+$, $
 I = Prt
-$$
+$, $
 
 Where $P$ is the principal, $r$ is the annual rate, and $t$ is the time in years. The total amount
 Is $A = P + Prt = P(1 + rt)$.
 
 **Compound interest** is calculated on the principal plus accumulated interest:
 
-$$
+$, $
 A = P(1 + r)^t
-$$
+$, $
 
 **Worked Example.** EUR 2000 is invested at 5% per annum for 3 years. Compare simple and compound
 Interest.
@@ -686,9 +686,9 @@ The compound interest earns EUR 15.25 more than simple interest over 3 years.
 **Worked Example.** A shirt originally costs 40 pounds. It is reduced to 32 pounds in a sale. What
 Is the percentage decrease?
 
-$$
+$, $
 \frac{40 - 32}{40} \times 100\% = \frac{8}{40} \times 100\% = 20\%
-$$
+$, $
 
 **Successive percentage changes.** If a price increases by 10% then decreases by 10%, it does NOT
 Return to the original. A 10% increase on 100 gives 110. A 10% decrease on 110 gives
@@ -697,9 +697,9 @@ $110 \times 0.9 = 99$. The net effect is a 1% decrease.
 **Worked Example.** A salary of 30000 pounds increases by 4% one year and 3% the next. What is the
 New salary?
 
-$$
+$, $
 30000 \times 1.04 \times 1.03 = 30000 \times 1.0712 = 32136 \mathrm{ pounds
-$$
+$, $
 
 The overall percentage increase is $7.12\%$ (not $4\% + 3\% = 7\%$).
 
@@ -707,25 +707,25 @@ The overall percentage increase is $7.12\%$ (not $4\% + 3\% = 7\%$).
 
 Pressure is the force per unit area:
 
-$$
+$, $
 P = \frac{F}{A}
-$$
+$, $
 
 **Worked Example.** A person weighing 600 N stands on the ground. If each foot has area
 $180\mathrm{ cm^2$Find the pressure.
 
 Total area $= 360\mathrm{ cm^2 = 0.036\mathrm{ m^2$.
 
-$$
+$, $
 P = \frac{600}{0.036} = 16667 \mathrm{ Pa \approx 16.7 \mathrm{ kPa
-$$
+$, $
 
 **Worked Example.** The pressure at the bottom of a swimming pool is 30 kPa. The pool has a
 Rectangular base of $10\mathrm{ m \times 5\mathrm{ m$. Find the total force on the base.
 
-$$
+$, $
 F = P \times A = 30000 \times 50 = 1500000 \mathrm{ N = 1500 \mathrm{ kN
-$$
+$, $
 
 #### 10.4 Speed, Distance, Time Problems with Multiple Stages
 
@@ -734,27 +734,27 @@ Total journey takes 4 hours. Find the distance from A to B.
 
 Let $d$ be the distance. Then:
 
-$$
+$, $
 \frac{d}{20} + \frac{d}{12} = 4
-$$
+$, $
 
-$$
+$, $
 D\left(\frac{1}{20} + \frac{1}{12}\right) = 4
-$$
+$, $
 
-$$
+$, $
 D\left(\frac{3 + 5}{60}\right) = 4
-$$
+$, $
 
-$$
+$, $
 \frac{8d}{60} = 4 \implies d = 30 \mathrm{ km
-$$
+$, $
 
 **Note:** The average speed is NOT $(20 + 12)/2 = 16$ km/h. The average speed is:
 
-$$
+$, $
 \frac{\mathrm{total distance}{\mathrm{total time} = \frac{60}{4} = 15 \mathrm{ km/h
-$$
+$, $
 
 The harmonic mean of 20 and 12 is $\frac{2}{1/20 + 1/12} = 15$Which equals the average speed for a
 Return journey.

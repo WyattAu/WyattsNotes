@@ -397,7 +397,7 @@ $$\sum_{i=1}^{n} p_i = 1$$
 
 The expected frequency of homozygote $p_i^2$ and heterozygote $2p_ip_j$ for all pairs.
 
-**Example**: ABO blood group with three alleles ($I^A$$I^B$$i$): $$p_{I^A} + p_{I^B} + p_i = 1$$
+**Example**: ABO blood group with three alleles ($I^A$, $I^B$, $i$): $$p_{I^A} + p_{I^B} + p_i = 1$$
 $$f(I^AI^A) = p_{I^A}^2, \quad f(I^AI^B) = 2p_{I^A}p_{I^B}, \quad f(I^Ai) = 2p_{I^A}p_i, \quad \ldots$$
 
 ### Effects of Evolutionary Forces on Hardy-Weinberg

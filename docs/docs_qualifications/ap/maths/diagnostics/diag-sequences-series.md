@@ -230,7 +230,7 @@ are needed to approximate the sum to within $0.001$.
 Let $f(x) = \dfrac{1}{x(\ln x)^p}$ for $x \geq 2$. This is positive, continuous, and decreasing for
 $x \geq 2$ (when $p > 0$).
 
-Let $u = \ln x$$du = \dfrac{dx}{x}$:
+Let $u = \ln x$, $du = \dfrac{dx}{x}$:
 
 $$\int_2^{\infty}\frac{dx}{x(\ln x)^p} = \int_{\ln 2}^{\infty}\frac{du}{u^p}$$
 

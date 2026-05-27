@@ -110,7 +110,7 @@ Where $B$ = births, $D$ = deaths, $I$ = immigration, $E$ = emigration.
 
 $$N_t = N_0 e^{rt}$$
 
-Where $N_t$ is the population size at time $t$$N_0$ is the initial size, and $r$ is the intrinsic
+Where $N_t$ is the population size at time $t$, $N_0$ is the initial size, and $r$ is the intrinsic
 Rate of increase.
 
 **Logistic growth**: in reality, resources are limited. Population growth slows as it approaches the
@@ -771,7 +771,7 @@ Strategy, with ex situ as a backup.
 Explain the mechanism of the enhanced greenhouse effect and discuss the evidence linking human
 Activities to global warming.
 
-**Answer.** The greenhouse effect occurs when greenhouse gases ($\mathrm{CO_2}$$\mathrm{CH_4}$
+**Answer.** The greenhouse effect occurs when greenhouse gases ($\mathrm{CO_2}$, $\mathrm{CH_4}$
 $\mathrm{N_2O}$Water vapour) in the atmosphere absorb infrared radiation re-emitted by the Earth's
 Surface and re-radiate it in all directions, including back towards the surface, warming the planet.
 The enhanced greenhouse effect refers to the additional warming caused by increased atmospheric
@@ -897,7 +897,7 @@ application.
 
 $$N_t = N_0 e^{rt}$$
 
-Where $N_t$ = population size at time $t$$N_0$ = initial population size, $r$ = intrinsic rate of
+Where $N_t$ = population size at time $t$, $N_0$ = initial population size, $r$ = intrinsic rate of
 increase, $t$ = time.
 
 Exponential growth produces a J-shaped curve. It is unrealistic in nature because resources are
@@ -1821,7 +1821,7 @@ self-marking and building a personal test matrix. :::
 
 | Type         | Organisms                                   | Role                                                                                                                                                                          |
 | ------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Decomposers  | Fungi, bacteria                             | Secrete extracellular enzymes; break down dead organic matter; release inorganic nutrients ($\mathrm{NH_4^+}$$\mathrm{PO_4^{3-}}$) back into the soil for producers to absorb |
+| Decomposers  | Fungi, bacteria                             | Secrete extracellular enzymes; break down dead organic matter; release inorganic nutrients ($\mathrm{NH_4^+}$, $\mathrm{PO_4^{3-}}$) back into the soil for producers to absorb |
 | Detritivores | Earthworms, woodlice, maggots, dung beetles | Ingest dead organic matter; digest it internally; speed up decomposition by breaking material into smaller pieces (increasing surface area for decomposers)                   |
 
 ## 34. Nitrogen Cycle
@@ -1853,7 +1853,7 @@ self-marking and building a personal test matrix. :::
 
 | Feature               | Carbon and Nitrogen                         | Phosphorus                                                                   |
 | --------------------- | ------------------------------------------- | ---------------------------------------------------------------------------- |
-| Atmospheric component | Significant ($\mathrm{CO_2}$$\mathrm{N_2}$) | Negligible (no major gaseous phase)                                          |
+| Atmospheric component | Significant ($\mathrm{CO_2}$, $\mathrm{N_2}$) | Negligible (no major gaseous phase)                                          |
 | Main reservoir        | Atmosphere (N); atmosphere and oceans (C)   | Rocks and sediments                                                          |
 | Rate of cycling       | Fast (days to years)                        | Slow (millions of years for the sedimentary component)                       |
 | Bottleneck            | Recycling through decomposers is efficient  | Phosphorus is often a limiting factor in ecosystems because it cycles slowly |

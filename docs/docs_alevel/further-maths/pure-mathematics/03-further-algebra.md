@@ -486,7 +486,7 @@ $$= \frac{1}{2} - \frac{1}{(n+1)(n+2)}$$
 <hr />
 
 **Problem 5.** The equation $3x^3 + px^2 + qx + 12 = 0$ has roots $\alpha, \beta, \gamma$ such that
-$\alpha + \beta + \gamma = 4$ and $\alpha\beta\gamma = -4$. Find $p$$q$And
+$\alpha + \beta + \gamma = 4$ and $\alpha\beta\gamma = -4$. Find $p$, $q$And
 $\alpha\beta + \alpha\gamma + \beta\gamma$.
 
 <details>
@@ -636,7 +636,7 @@ $$\frac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2} = \frac{1}{x^2 + 2x + 3} + \frac{x - 1}{
 <hr />
 
 **Problem 10.** The cubic equation $x^3 + px^2 + qx + r = 0$ has roots $\alpha, \beta, \gamma$ where
-$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$$q$And $r$ in terms of $\alpha$And hence Find
+$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$, $q$And $r$ in terms of $\alpha$And hence Find
 the roots when $p = -6$.
 
 <details>
@@ -658,7 +658,7 @@ $\alpha(2\alpha)(3\alpha) = 6\alpha^3 = -r$So $r = -6\alpha^3$.
 
 When $p = -6$: $-6\alpha = -6 \implies \alpha = 1$.
 
-Then $q = 11$$r = -6$And the roots are $1, 2, 3$.
+Then $q = 11$, $r = -6$And the roots are $1, 2, 3$.
 
 Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
 

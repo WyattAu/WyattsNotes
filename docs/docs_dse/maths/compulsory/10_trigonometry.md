@@ -298,29 +298,29 @@ The general solutions (in degrees) are:
 **For $\sin\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arcsin k$ be the principal value
 In $[-90^\circ, 90^\circ]$:
 
-$$
+$, $
 \begin{aligned}
  \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{Z}
 \end{aligned}
-$$
+$, $
 
 **For $\cos\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arccos k$ be the principal value
 In $[0^\circ, 180^\circ]$:
 
-$$
+$, $
 \begin{aligned}
  \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb{Z}
 \end{aligned}
-$$
+$, $
 
 **For $\tan\theta = k$** (for all real $k$), let $\alpha = \arctan k$ be the principal value in
 $(-90^\circ, 90^\circ)$:
 
-$$
+$, $
 \begin{aligned}
  \theta = 180^\circ n + \alpha, \quad n \in \mathbb{Z}
 \end{aligned}
-$$
+$, $
 
 In radians, replace $360^\circ$ with $2\pi$ and $180^\circ$ with $\pi$.
 
@@ -357,11 +357,11 @@ Many trigonometric equations require algebraic manipulation before they can be s
 
 For any triangle $ABC$ with sides $a$$b$$c$ opposite the respective angles:
 
-$$
+$, $
 \begin{aligned}
  \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
 \end{aligned}
-$$
+$, $
 
 The sine rule is most useful when one side-side-angle (SSA) or angle-angle-side (AAS) configuration
 Is known. In the ambiguous SSA case, two distinct triangles may satisfy the given conditions (the
@@ -371,23 +371,23 @@ Is known. In the ambiguous SSA case, two distinct triangles may satisfy the give
 
 For any triangle $ABC$ with sides $a$$b$$c$ opposite the respective angles:
 
-$$
+$, $
 \begin{aligned}
  a^2 &= b^2 + c^2 - 2bc\cos A \\[4pt]
  \cos A &= \frac{b^2 + c^2 - a^2}{2bc}
 \end{aligned}
-$$
+$, $
 
 The cosine rule generalises the Pythagorean theorem and is most useful for side-side-side (SSS) or
 Side-angle-side (SAS) configurations.
 
 ### Area of a Triangle Using Trigonometry
 
-$$
+$, $
 \begin{aligned}
  \mathrm{Area} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
 \end{aligned}
-$$
+$, $
 
 This is derived from the standard formula
 $\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height}$Where the height is
@@ -728,7 +728,7 @@ $c = \dfrac{8\sin 86.5^\circ}{\sin 40^\circ} \approx \dfrac{8(0.9981)}{0.6428} \
 
 **Worked Example 17: Area of triangle with sine rule**
 
-In $\triangle ABC$$a = 7$$b = 5$$C = 60^\circ$. Find the area and the length of $c$.
+In $\triangle ABC$, $a = 7$, $b = 5$, $C = 60^\circ$. Find the area and the length of $c$.
 
 <details>
 <summary>Solution</summary>
@@ -782,7 +782,7 @@ $$= \sqrt{2}\!\left(\sin\theta \cdot \frac{\sqrt{2}}{2} + \cos\theta \cdot \frac
 
 </details>
 
-**DSE Practice 2.** In $\triangle ABC$$a = 5$$b = 7$$c = 8$. Find (a) the largest angle, (b) the
+**DSE Practice 2.** In $\triangle ABC$, $a = 5$, $b = 7$, $c = 8$. Find (a) the largest angle, (b) the
 area.
 
 <details>
@@ -853,7 +853,7 @@ $$h \approx 19.8 \text{ m}$$
 
 </details>
 
-**DSE Practice 5.** In $\triangle ABC$$a = 6$$B = 45^\circ$And the area is $9\sqrt{2}$. Find the two
+**DSE Practice 5.** In $\triangle ABC$, $a = 6$, $B = 45^\circ$And the area is $9\sqrt{2}$. Find the two
 possible values of $b$.
 
 <details>
@@ -878,7 +878,7 @@ $c = 6$).
 
 This means $C = A$ or $C = 180^\circ - A$.
 
-If $C = A$: $A + B + C = 2A + 45^\circ = 180^\circ \implies A = 67.5^\circ$$C = 67.5^\circ$.
+If $C = A$: $A + B + C = 2A + 45^\circ = 180^\circ \implies A = 67.5^\circ$, $C = 67.5^\circ$.
 
 $b = \dfrac{6\sin 45^\circ}{\sin 67.5^\circ} = \dfrac{6 \cdot \frac{\sqrt{2}}{2}}{\cos 22.5^\circ} = \dfrac{3\sqrt{2}}{\cos 22.5^\circ} \approx \dfrac{4.243}{0.9239} \approx 4.59$.
 
@@ -887,7 +887,7 @@ $B = 0^\circ$Which is degenerate. So only one valid triangle exists with $b \app
 
 </details>
 
-**DSE Practice 6.** The points $A$$B$And $C$ are on level ground. $AB = 200$ m, $BC = 150$ m, and
+**DSE Practice 6.** The points $A$, $B$And $C$ are on level ground. $AB = 200$ m, $BC = 150$ m, and
 $\angle ABC = 110^\circ$. Find the shortest distance from $C$ to the road passing through $A$ and
 $B$.
 

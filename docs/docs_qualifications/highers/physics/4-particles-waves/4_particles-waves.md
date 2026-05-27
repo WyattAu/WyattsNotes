@@ -457,28 +457,28 @@ A string of length $1.2 \mathrm{ m$ has fundamental frequency $200 \mathrm{ Hz$.
 
 Wave speed: $v = 2Lf_1 = 2 \times 1.2 \times 200 = 480 \mathrm{ m/s$
 
-**Second harmonic ($n = 2$):** $f_2 = 400 \mathrm{ Hz$$\lambda_2 = \frac{2L}{2} = 1.2 \mathrm{ m$.
+**Second harmonic ($n = 2$):** $f_2 = 400 \mathrm{ Hz$, $\lambda_2 = \frac{2L}{2} = 1.2 \mathrm{ m$.
 
 Nodes at: $0, 0.6 \mathrm{ m, 1.2 \mathrm{ m$ (3 nodes, including the fixed ends)
 
 Antinodes at: $0.3 \mathrm{ m, 0.9 \mathrm{ m$ (2 antinodes)
 
-**Third harmonic ($n = 3$):** $f_3 = 600 \mathrm{ Hz$$\lambda_3 = \frac{2L}{3} = 0.8 \mathrm{ m$.
+**Third harmonic ($n = 3$):** $f_3 = 600 \mathrm{ Hz$, $\lambda_3 = \frac{2L}{3} = 0.8 \mathrm{ m$.
 
-**Fourth harmonic ($n = 4$):** $f_4 = 800 \mathrm{ Hz$$\lambda_4 = \frac{2L}{4} = 0.6 \mathrm{ m$.
+**Fourth harmonic ($n = 4$):** $f_4 = 800 \mathrm{ Hz$, $\lambda_4 = \frac{2L}{4} = 0.6 \mathrm{ m$.
 
 ## 16. Summary Table: Quantum and Wave Formulas
 
 | Topic           | Formula                         | Variables            | Notes                |
 | --------------- | ------------------------------- | -------------------- | -------------------- |
-| Photon energy   | $E = hf = hc/\lambda$           | $h$$f$$\lambda$      | Planck's constant    |
-| Photoelectric   | $E_k = hf - \phi$               | $h$$f$$\phi$         | Einstein's equation  |
-| De Broglie      | $\lambda = h/p = h/(mv)$        | $h$$p$$m$$v$         | Matter waves         |
-| Uncertainty     | $\Delta x \Delta p \ge \hbar/2$ | $\Delta x$$\Delta p$ | Fundamental limit    |
-| Energy levels   | $\Delta E = hf = hc/\lambda$    | $h$$f$$\lambda$      | Spectral lines       |
-| Standing wave   | $f_n = nv/(2L)$                 | $n$$v$$L$            | String fixed at ends |
+| Photon energy   | $E = hf = hc/\lambda$           | $h$, $f$, $\lambda$      | Planck's constant    |
+| Photoelectric   | $E_k = hf - \phi$               | $h$, $f$, $\phi$         | Einstein's equation  |
+| De Broglie      | $\lambda = h/p = h/(mv)$        | $h$, $p$, $m$, $v$         | Matter waves         |
+| Uncertainty     | $\Delta x \Delta p \ge \hbar/2$ | $\Delta x$, $\Delta p$ | Fundamental limit    |
+| Energy levels   | $\Delta E = hf = hc/\lambda$    | $h$, $f$, $\lambda$      | Spectral lines       |
+| Standing wave   | $f_n = nv/(2L)$                 | $n$, $v$, $L$            | String fixed at ends |
 | Closed pipe     | $f_n = nv/(4L)$                 | $n$ odd              | Only odd harmonics   |
-| Doppler (sound) | $f' = fv/(v \pm v_s)$           | $f$$v$$v_s$          | Approaching/receding |
+| Doppler (sound) | $f' = fv/(v \pm v_s)$           | $f$, $v$, $v_s$          | Approaching/receding |
 
 ## 17. Practice Questions (Additional)
 

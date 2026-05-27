@@ -424,9 +424,9 @@ $y_2 = A\sin(kx + \omega t)$.
 Using the identity
 $\sin\alpha + \sin\beta = 2\sin\frac◆LB◆\alpha+\beta◆RB◆◆LB◆2◆RB◆\cos\frac◆LB◆\alpha-\beta◆RB◆◆LB◆2◆RB◆$:
 
-$\alpha = kx - \omega t$$\beta = kx + \omega t$.
+$\alpha = kx - \omega t$, $\beta = kx + \omega t$.
 
-$\frac◆LB◆\alpha + \beta◆RB◆◆LB◆2◆RB◆ = kx$$\frac◆LB◆\alpha - \beta◆RB◆◆LB◆2◆RB◆ = -\omega t$.
+$\frac◆LB◆\alpha + \beta◆RB◆◆LB◆2◆RB◆ = kx$, $\frac◆LB◆\alpha - \beta◆RB◆◆LB◆2◆RB◆ = -\omega t$.
 
 $y = 2A\sin(kx)\cos(-\omega t) = 2A\sin(kx)\cos(\omega t)$ (since $\cos$ is even).
 

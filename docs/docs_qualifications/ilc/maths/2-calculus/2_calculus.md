@@ -28,7 +28,7 @@ Adjust the parameters in the graph above to explore the relationships between va
 ### The Derivative
 
 The derivative of a function $f(x)$ measures the instantaneous rate of change of $f$ with respect to
-$x$. It is denoted $f'(x)$$\frac{df}{dx}$Or $\dot{x}$ in the context of time.
+$x$. It is denoted $f'(x)$, $\frac{df}{dx}$Or $\dot{x}$ in the context of time.
 
 Geometrically, $f'(a)$ is the gradient of the tangent to the curve $y = f(x)$ at the point $x = a$.
 
@@ -283,9 +283,9 @@ Stationary points occur where $f'(x) = 0$. Use the second derivative to classify
 
 | Condition               | Type              |
 | ----------------------- | ----------------- |
-| $f'(x) = 0$$f''(x) > 0$ | Local minimum     |
-| $f'(x) = 0$$f''(x) < 0$ | Local maximum     |
-| $f'(x) = 0$$f''(x) = 0$ | Test inconclusive |
+| $f'(x) = 0$, $f''(x) > 0$ | Local minimum     |
+| $f'(x) = 0$, $f''(x) < 0$ | Local maximum     |
+| $f'(x) = 0$, $f''(x) = 0$ | Test inconclusive |
 
 **Example (OL):** Find and classify the stationary points of $f(x) = x^3 - 6x^2 + 9x + 1$.
 
@@ -314,8 +314,8 @@ $$
 F''(x) = 12x^2, \quad f''(0) = 0
 $$
 
-The second derivative test is inconclusive. Use the first derivative test: for $x < 0$$f'(x) < 0$
-And for $x > 0$$f'(x) > 0$So $x = 0$ is a local minimum.
+The second derivative test is inconclusive. Use the first derivative test: for $x < 0$, $f'(x) < 0$
+And for $x > 0$, $f'(x) > 0$So $x = 0$ is a local minimum.
 
 **Example (HL) -- Point of inflexion:** Consider $f(x) = x^3$.
 
@@ -388,7 +388,7 @@ The **normal** at a point has gradient $-\frac{1}{f'(a)}$ (the negative reciproc
 
 **Example (HL):** Find the equation of the tangent to $y = x^3 - 2x$ at $x = 1$.
 
-$y = 1 - 2 = -1$$\frac{dy}{dx} = 3x^2 - 2 = 1$ at $x = 1$.
+$y = 1 - 2 = -1$, $\frac{dy}{dx} = 3x^2 - 2 = 1$ at $x = 1$.
 
 Equation: $y - (-1) = 1(x - 1) \implies y = x - 2$.
 
@@ -573,40 +573,40 @@ Use **LIATE** (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential)
 
 Let $u = x$$dv = e^x \, dx$. Then $du = dx$$v = e^x$.
 
-$$
+$, $
 \int x e^x \, dx = x e^x - \int e^x \, dx = x e^x - e^x + C = e^x(x - 1) + C
-$$
+$, $
 
 **Example:** Evaluate $\int x^2 \cos x \, dx$.
 
 Let $u = x^2$$dv = \cos x \, dx$. Then $du = 2x \, dx$$v = \sin x$.
 
-$$
+$, $
 \int x^2 \cos x \, dx = x^2 \sin x - \int 2x \sin x \, dx
-$$
+$, $
 
 Apply integration by parts again for $\int x \sin x \, dx$:
 
 Let $u = x$$dv = \sin x \, dx$. Then $du = dx$$v = -\cos x$.
 
-$$
+$, $
 \int x \sin x \, dx = -x\cos x + \int \cos x \, dx = -x\cos x + \sin x + C
-$$
+$, $
 
 Therefore:
 
-$$
+$, $
 \int x^2 \cos x \, dx = x^2 \sin x - 2(-x\cos x + \sin x) + C = x^2 \sin x + 2x\cos x - 2\sin x + C
-$$
+$, $
 
 **Example (HL):** Evaluate $\int e^x \sin x \, dx$ using the "cyclic" integration by parts
 Technique.
 
 Let $u = \sin x$$dv = e^x\,dx$. Then $du = \cos x\,dx$$v = e^x$.
 
-$$
+$, $
 I = \int e^x \sin x\,dx = e^x \sin x - \int e^x \cos x\,dx
-$$
+$, $
 
 Apply integration by parts to $\int e^x \cos x\,dx$: let $u = \cos x$$dv = e^x\,dx$.
 

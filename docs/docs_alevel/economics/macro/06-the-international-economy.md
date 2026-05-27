@@ -65,14 +65,14 @@ Foreign has a comparative advantage in Wine (lower OC: 0.5 &lt; 2.0).
 
 _Autarky (no trade):_
 
-- Home: splits labour equally: $C = 1200/4 = 300$$W = 1200/8 = 150$. Total: 300C + 150W.
-- Foreign: splits labour equally: $C = 1200/12 = 100$$W = 1200/6 = 200$. Total: 100C + 200W.
+- Home: splits labour equally: $C = 1200/4 = 300$, $W = 1200/8 = 150$. Total: 300C + 150W.
+- Foreign: splits labour equally: $C = 1200/12 = 100$, $W = 1200/6 = 200$. Total: 100C + 200W.
 - World total: 400C + 350W.
 
 _Specialisation:_
 
-- Home specialises in Cloth: $C = 1200/2 = 600$$W = 0$.
-- Foreign specialises in Wine: $C = 0$$W = 1200/3 = 400$.
+- Home specialises in Cloth: $C = 1200/2 = 600$, $W = 0$.
+- Foreign specialises in Wine: $C = 0$, $W = 1200/3 = 400$.
 - World total: 600C + 400W.
 
 **World output increases**: 400C → 600C (+200) and 350W → 400W (+50). Both countries gain if they

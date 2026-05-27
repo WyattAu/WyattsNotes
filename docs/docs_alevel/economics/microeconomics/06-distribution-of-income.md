@@ -212,7 +212,7 @@ The **Laffer curve** illustrates the relationship between the tax rate and tax r
 $$T = t \times Y(t)$$
 
 Where $t$ is the tax rate and $Y(t)$ is the tax base (income), which declines as $t$ increases (due
-To disincentive effects). At $t = 0$$T = 0$. At $t = 1$ (100% tax), $T = 0$ (no one works). There
+To disincentive effects). At $t = 0$, $T = 0$. At $t = 1$ (100% tax), $T = 0$ (no one works). There
 Exists some $t^* \in (0, 1)$ that maximises revenue.
 
 :::warning Common Pitfall The Laffer curve is a theoretical concept — there is no consensus on where
@@ -292,7 +292,7 @@ _Verification for discrete data._ Given cumulative shares $L_k$ at population pr
 $p_k = k/n$The trapezoidal approximation gives
 $B = \sum_{k=1}^{n} \frac{(L_{k-1} + L_k)(p_k - p_{k-1})}{2}$Which is the formula used in Practice.
 For perfect equality ($L(p) = p$): $B = \int_0^1 p\,dp = \frac{1}{2}$So $G = 0$. For Maximum
-inequality ($L(p) = 0$ for $p < 1$$L(1) = 1$): $B = 0$So $G = 1$.
+inequality ($L(p) = 0$ for $p < 1$, $L(1) = 1$): $B = 0$So $G = 1$.
 
 ### 7.2 Derivation of Lorenz Curve Properties
 

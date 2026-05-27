@@ -324,7 +324,7 @@ Find the matrix representing a rotation of $60^\circ$ anticlockwise about the or
 <details>
 <summary>Solution</summary>
 
-$\cos 60^\circ = 0.5$$\sin 60^\circ = \sqrt{3}/2$.
+$\cos 60^\circ = 0.5$, $\sin 60^\circ = \sqrt{3}/2$.
 
 $R = \begin{pmatrix} 0.5 & -\sqrt{3}/2 \\ \sqrt{3}/2 & 0.5 \end{pmatrix}$.
 
@@ -360,7 +360,7 @@ Fibonacci number.
 <summary>Solution</summary>
 
 Eigenvalues of $A$: $\lambda^2 - \lambda - 2 = 0 \implies \lambda = \frac◆LB◆1 \pm 3◆RB◆◆LB◆2◆RB◆$
-So $\lambda_1 = 2$$\lambda_2 = -1$.
+So $\lambda_1 = 2$, $\lambda_2 = -1$.
 
 Eigenvectors: for $\lambda = 2$: $(1, 1)$; for $\lambda = -1$: $(-2, 1)$.
 
@@ -406,7 +406,7 @@ $\blacksquare$
 
 ### 7.3 Proof: the trace equals the sum of eigenvalues
 
-**Theorem.** For any $2 \times 2$ matrix $A$$\mathrm{tr}(A) = \lambda_1 + \lambda_2$.
+**Theorem.** For any $2 \times 2$ matrix $A$, $\mathrm{tr}(A) = \lambda_1 + \lambda_2$.
 
 **Proof.** The characteristic equation is
 $\det(A - \lambda I) = \lambda^2 - (a + d)\lambda + (ad - bc) = 0$.
@@ -439,7 +439,7 @@ $\blacksquare$
 
 1. **Matrix multiplication order:** $AB$ means "apply $B$ first, then $A$." When combining
    transformations, the second transformation is written on the left. Always read right-to-left.
-2. **3x3 determinant sign errors:** The cofactor expansion alternates signs $+$$-$$+$ along the
+2. **3x3 determinant sign errors:** The cofactor expansion alternates signs $+$, $-$, $+$ along the
    first row. A common mistake is to forget the $-$ sign on the middle term.
 3. **Singular matrix checks:** Before finding an inverse, always verify $\det(A) \neq 0$. If the
    determinant is zero, the matrix has no inverse and the system $A\mathbf{x} = \mathbf{b}$ has
@@ -608,7 +608,7 @@ Eigenvector: $\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}$.
 
 $$\begin{pmatrix} 0 & 1 & 0 \\ 1 & 1 & 1 \\ 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \mathbf{0}$$
 
-$y = 0$$x + z = 0$. Eigenvector: $\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}$.
+$y = 0$, $x + z = 0$. Eigenvector: $\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}$.
 
 **For $\lambda_3 = 4$:**
 
@@ -743,7 +743,7 @@ $$y = \frac◆LB◆\det\begin{pmatrix} 1 & 4 & 1 \\ 2 & 3 & 1 \\ 1 & 5 & 2 \end{
 
 $$z = \frac◆LB◆\det\begin{pmatrix} 1 & 2 & 4 \\ 2 & 1 & 3 \\ 1 & 1 & 5 \end{pmatrix}◆RB◆◆LB◆-4◆RB◆ = \frac{1(5-3) - 2(10-3) + 4(2-1)}{-4} = \frac{2 - 14 + 4}{-4} = 2$$
 
-Solution: $x = 0$$y = 1$$z = 2$.
+Solution: $x = 0$, $y = 1$, $z = 2$.
 
 ---
 
@@ -882,7 +882,7 @@ $\begin{pmatrix}0&1\\0&-1\end{pmatrix}\mathbf{v}=\mathbf{0} \implies \mathbf{v}=
 $\lambda = 2$:
 $\begin{pmatrix}1&1\\0&0\end{pmatrix}\mathbf{v}=\mathbf{0} \implies \mathbf{v}=(1,-1)$.
 
-$P = \begin{pmatrix}1&1\\0&-1\end{pmatrix}$$D = \begin{pmatrix}3&0\\0&2\end{pmatrix}$
+$P = \begin{pmatrix}1&1\\0&-1\end{pmatrix}$, $D = \begin{pmatrix}3&0\\0&2\end{pmatrix}$
 $P^{-1} = \begin{pmatrix}1&1\\0&-1\end{pmatrix}$.
 
 $A^{10} = PD^{10}P^{-1} = \begin{pmatrix}1&1\\0&-1\end{pmatrix}\begin{pmatrix}3^{10}&0\\0&2^{10}\end{pmatrix}\begin{pmatrix}1&1\\0&-1\end{pmatrix}$
@@ -906,13 +906,13 @@ $R_\theta^{-1} = \dfrac◆LB◆1◆RB◆◆LB◆\cos^2\theta+\sin^2\theta◆RB�
 
 ### Example 13.4: Determinant and area scaling
 
-**Problem.** The triangle with vertices $(1,0)$$(0,2)$$(3,4)$ is transformed by
+**Problem.** The triangle with vertices $(1,0)$, $(0,2)$, $(3,4)$ is transformed by
 $T = \begin{pmatrix}2&-1\\1&3\end{pmatrix}$. Find the area of the image.
 
 **Solution.** Original area:
 $\dfrac{1}{2}\left|\det\begin{pmatrix}0-1&3-1\\2-0&4-0\end{pmatrix}\right| = \dfrac{1}{2}|-2+2| = 0$.
 
-Wait, the points are collinear? Let me use $(0,0)$$(1,0)$$(0,1)$ instead. Area $= \dfrac{1}{2}$.
+Wait, the points are collinear? Let me use $(0,0)$, $(1,0)$, $(0,1)$ instead. Area $= \dfrac{1}{2}$.
 
 $\det(T) = 6+1 = 7$. Image area $= 7 \times \dfrac{1}{2} = \boxed{3.5}$.
 
@@ -989,7 +989,7 @@ The line $y = 2x$ makes angle $\theta = \arctan 2$ with the $x$-axis.
 
 $R = \begin{pmatrix}\cos 2\theta&\sin 2\theta\\\sin 2\theta&-\cos 2\theta\end{pmatrix}$.
 
-$\cos\theta = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆$$\sin\theta = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{5}◆RB◆$.
+$\cos\theta = \dfrac◆LB◆1◆RB◆◆LB◆\sqrt{5}◆RB◆$, $\sin\theta = \dfrac◆LB◆2◆RB◆◆LB◆\sqrt{5}◆RB◆$.
 
 $\cos 2\theta = \cos^2\theta-\sin^2\theta = \dfrac{1-4}{5} = -\dfrac{3}{5}$.
 
@@ -1065,7 +1065,7 @@ $A^5$.
 
 $\det(A-\lambda I) = (4-\lambda)(3-\lambda)-2 = \lambda^2-7\lambda+10 = (\lambda-5)(\lambda-2)$.
 
-Eigenvalues: $\lambda_1 = 5$$\lambda_2 = 2$.
+Eigenvalues: $\lambda_1 = 5$, $\lambda_2 = 2$.
 
 $\lambda=5$:
 $(A-5I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix}-1&1\\2&-2\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf{0} \implies \mathbf{v}_1 = \begin{pmatrix}1\\1\end{pmatrix}$.
@@ -1073,7 +1073,7 @@ $(A-5I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix}-1&1\\2&-2\end{pmatrix}\b
 $\lambda=2$:
 $(A-2I)\mathbf{v} = \mathbf{0} \implies \begin{pmatrix}2&1\\2&1\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix} = \mathbf{0} \implies \mathbf{v}_2 = \begin{pmatrix}1\\-2\end{pmatrix}$.
 
-$P = \begin{pmatrix}1&1\\1&-2\end{pmatrix}$$D = \begin{pmatrix}5&0\\0&2\end{pmatrix}$
+$P = \begin{pmatrix}1&1\\1&-2\end{pmatrix}$, $D = \begin{pmatrix}5&0\\0&2\end{pmatrix}$
 $P^{-1} = \dfrac{1}{-3}\begin{pmatrix}-2&-1\\-1&1\end{pmatrix}$.
 
 $A^5 = PD^5P^{-1} = \dfrac{1}{3}\begin{pmatrix}1&1\\1&-2\end{pmatrix}\begin{pmatrix}3125&0\\0&32\end{pmatrix}\begin{pmatrix}2&1\\1&-1\end{pmatrix}$

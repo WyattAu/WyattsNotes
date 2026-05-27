@@ -139,7 +139,7 @@ $$\frac{I_1}{I_2} = \frac{R_2}{R_1}$$
 
 ### Worked Example 3
 
-Three resistors of $4 \Omega$$6 \Omega$And $12 \Omega$ are connected in parallel across a
+Three resistors of $4 \Omega$, $6 \Omega$And $12 \Omega$ are connected in parallel across a
 $12 \mathrm{ V}$ supply. Find the total resistance and the current through each resistor.
 
 <summary>Solution</summary>
@@ -457,7 +457,7 @@ $$I_1 = \frac{12}{8} = 1.5 \mathrm{ A}, \quad I_2 = \frac{12}{24} = 0.5 \mathrm{
 $$I_{\mathrm{total}} = 1.5 + 0.5 = 2.0 \mathrm{ A}$$
 
 Verify:
-$R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$$I = \frac{12}{6} = 2.0 \mathrm{ A}$
+$R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$, $I = \frac{12}{6} = 2.0 \mathrm{ A}$
 
 If you get this wrong, revise: Series and Parallel Circuits
 
@@ -603,7 +603,7 @@ Defining $\rho = \frac{1}{ne\mu}$ (resistivity):
 
 $$R = \frac{\rho L}{A}$$
 
-This shows that resistivity is an intrinsic property of the material (dependent on $n$$e$And $\mu$)
+This shows that resistivity is an intrinsic property of the material (dependent on $n$, $e$And $\mu$)
 and is independent of the conductor's dimensions.
 
 ### Derivation: Maximum Power Transfer Theorem
@@ -689,7 +689,7 @@ Voltmeter, a variable resistor, and connecting wires.
    parallel across the cell terminals.
 2. For several values of the variable resistor, record the current $I$ and terminal PD $V$.
 3. Plot $V$ (y-axis) versus $I$ (x-axis).
-4. The y-intercept gives the EMF $\varepsilon$ (when $I = 0$$V = \varepsilon$).
+4. The y-intercept gives the EMF $\varepsilon$ (when $I = 0$, $V = \varepsilon$).
 5. The gradient of the line is $-r$ (since $V = \varepsilon - Ir$).
 
 **Expected result:** A straight line with negative gradient. The steeper the gradient, the larger
@@ -743,7 +743,7 @@ $$\frac{\Delta\rho}{\rho} = \sqrt{\left(\frac{\Delta R}{R}\right)^2 + \left(2\fr
 
 Note the factor of 2 on the diameter uncertainty because $A = \pi d^2/4$ and $\rho \propto d^2$.
 
-**Example:** $R = (10.0 \pm 0.3) \Omega$$d = (0.500 \pm 0.005) \mathrm{ mm}$
+**Example:** $R = (10.0 \pm 0.3) \Omega$, $d = (0.500 \pm 0.005) \mathrm{ mm}$
 $L = (1.000 \pm 0.005) \mathrm{ m}$:
 
 $$\frac{\Delta\rho}{\rho} = \sqrt{(0.030)^2 + (2 \times 0.010)^2 + (0.005)^2} = \sqrt{0.0009 + 0.0004 + 0.000025} = \sqrt{0.001325} = 0.0364 = 3.6\%$$
@@ -973,7 +973,7 @@ much lower.
 ### Question 4 (DSE Structured)
 
 A student designs a circuit to measure an unknown resistance $R_x$ using a Wheatstone bridge
-Arrangement. Three known resistors are used: $R_1 = 100 \Omega$$R_2 = 200 \Omega$And a Variable
+Arrangement. Three known resistors are used: $R_1 = 100 \Omega$, $R_2 = 200 \Omega$And a Variable
 resistor $R_3$. A galvanometer is connected between the junction of $R_1$ and $R_2$ And the junction
 of $R_3$ and $R_x$.
 
@@ -1068,7 +1068,7 @@ $6 \Omega$ resistor terminals.
 <summary>Solution</summary>
 
 $\varepsilon_{\mathrm{Th}}$: Open-circuit voltage across the $6 \Omega$ resistor. With no load, The
-$6 \Omega$ is in parallel with the series combination of battery ($12 \mathrm{ V}$$1 \Omega$) And
+$6 \Omega$ is in parallel with the series combination of battery ($12 \mathrm{ V}$, $1 \Omega$) And
 $4 \Omega$.
 
 Voltage across $6 \Omega$ (by potential divider):

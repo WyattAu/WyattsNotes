@@ -289,7 +289,7 @@ Concentration gradient, temperature, distance.
 Ions) through transmembrane proteins. Two types:
 
 - **Channel proteins**: water-filled pores selective for specific ions ($\mathrm{Na^+}$
-  $\mathrm{K^+}$$\mathrm{Cl^-}$). May be gated (voltage-gated or ligand-gated).
+  $\mathrm{K^+}$, $\mathrm{Cl^-}$). May be gated (voltage-gated or ligand-gated).
 - **Carrier proteins**: undergo conformational change to shuttle molecules across the membrane.
 
 **Osmosis**: the net movement of water molecules across a partially permeable membrane from a region
@@ -345,7 +345,7 @@ the time mitosis Starts, each chromosome already consists of two identical siste
 
 The cell cycle consists of:
 
-- **Interphase** ($G_1$$S$$G_2$): cell growth and DNA replication. This accounts for approximately
+- **Interphase** ($G_1$, $S$, $G_2$): cell growth and DNA replication. This accounts for approximately
   90% of the cycle.
 - **Mitosis** ($M$ phase): nuclear division.
 - **Cytokinesis**: cytoplasmic division.
@@ -1369,7 +1369,7 @@ Cell fractionation separates organelles by size and density:
 Gap junctions are channels that directly connect the cytoplasm of adjacent animal cells:
 
 - Composed of connexin proteins arranged in a ring (connexon) in the plasma membrane of each cell.
-- Allow the passage of ions ($\mathrm{Ca^{2+}}$$\mathrm{K^+}$), small molecules (cAMP,
+- Allow the passage of ions ($\mathrm{Ca^{2+}}$, $\mathrm{K^+}$), small molecules (cAMP,
   $\mathrm{IP_3}$Glucose, amino acids), and electrical signals (action potentials) between cells.
 - Diameter of each channel: approximately 1.5 nm.
 - Functions: electrical coupling between cardiac muscle cells (allows coordinated contraction);

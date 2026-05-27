@@ -544,7 +544,7 @@ $Q(60) = 0.3(260) - \frac{0.3 \cdot 200^4}{260^3} = 78 - \frac{0.3 \cdot 1.6 \ti
 ### Existence and Uniqueness
 
 If $f(x, y)$ and $\frac{\partial f}{\partial y}$ are continuous on a rectangle containing
-$(x_0, y_0)$Then the IVP $\frac{dy}{dx} = f(x, y)$$y(x_0) = y_0$ has a unique solution in some
+$(x_0, y_0)$Then the IVP $\frac{dy}{dx} = f(x, y)$, $y(x_0) = y_0$ has a unique solution in some
 Interval around $x_0$.
 
 **Consequences:**
@@ -583,7 +583,7 @@ $y$-axis with arrows indicating the direction of flow.
 
 Analyse $\displaystyle\frac{dy}{dt} = y(y - 2)(y - 5)$.
 
-Equilibria: $y = 0$$y = 2$$y = 5$.
+Equilibria: $y = 0$, $y = 2$, $y = 5$.
 
 | Interval        | Test point | $f(y)$            | Direction  |
 | --------------- | ---------- | ----------------- | ---------- |
@@ -662,9 +662,9 @@ Exist provides useful context.
 
 :::info[RK4 Example]
 
-Use RK4 with $h = 0.5$ to approximate $y(1)$ for $\frac{dy}{dx} = x + y$$y(0) = 1$.
+Use RK4 with $h = 0.5$ to approximate $y(1)$ for $\frac{dy}{dx} = x + y$, $y(0) = 1$.
 
-Step 1 ($x_0 = 0$$y_0 = 1$):
+Step 1 ($x_0 = 0$, $y_0 = 1$):
 
 $k_1 = 0 + 1 = 1$
 
@@ -676,7 +676,7 @@ $k_4 = (0.5) + (1 + 1.0) = 2.5$
 
 $y_1 = 1 + \frac{0.5}{6}(1 + 3 + 4 + 5) = 1 + \frac{0.5 \times 13}{6} = 1 + 1.0833 = 2.0833$
 
-Step 2 ($x_1 = 0.5$$y_1 = 2.0833$):
+Step 2 ($x_1 = 0.5$, $y_1 = 2.0833$):
 
 $k_1 = 0.5 + 2.0833 = 2.5833$
 
@@ -733,7 +733,7 @@ Method would be.
    the population after 50 years.
 
 3. Use Euler's method with $\Delta x = 0.25$ and two steps to approximate $y(0.5)$ for
-   $\frac{dy}{dx} = x^2 + y$$y(0) = 1$.
+   $\frac{dy}{dx} = x^2 + y$, $y(0) = 1$.
 
 4. A body at $80^\circ\mathrm{C$ is placed in a room at $25^\circ\mathrm{C$. After 30 minutes, the
    body is at $50^\circ\mathrm{C$. When will it reach $30^\circ\mathrm{C$?
@@ -751,7 +751,7 @@ Method would be.
    $y(0) = y_0$ is $\displaystyle y = \frac{L}{1 + \frac{L - y_0}{y_0} e^{-kt}}$.
 
 9. Use Euler's method with $\Delta x = 0.2$ and four steps to approximate $y(0.8)$ for
-   $\frac{dy}{dx} = xy$$y(0) = 1$. Compare your result with the exact solution.
+   $\frac{dy}{dx} = xy$, $y(0) = 1$. Compare your result with the exact solution.
 
 10. A tank contains 100 L of brine with 20 kg of salt. Fresh water flows in at 5 L/min and the
     mixture flows out at 5 L/min. How long does it take for the salt content to drop to 5 kg?
@@ -760,7 +760,7 @@ Method would be.
     and describe the equilibrium structure on either side.
 
 12. Use the improved Euler method (Heun's method) with $h = 0.5$ and two steps to approximate $y(1)$
-    for $\frac{dy}{dx} = x - y$$y(0) = 0$. Compare with the exact solution.
+    for $\frac{dy}{dx} = x - y$, $y(0) = 0$. Compare with the exact solution.
 
 ## Practice Problems
 

@@ -17,7 +17,7 @@ slug: organic-chemistry-introduction
 Organic chemistry is the study of the structure, properties, composition, reactions, and preparation
 Of carbon-containing compounds. Carbon occupies a unique position in the periodic table: its ability
 To form four covalent bonds, catenate (form chains and rings), and hybridise in multiple
-Configurations ($sp^3$$sp^2$$sp$) produces a combinatorial space of molecules that dwarfs all Other
+Configurations ($sp^3$, $sp^2$, $sp$) produces a combinatorial space of molecules that dwarfs all Other
 branches of chemistry combined.
 
 This module serves as the conceptual foundation for every subsequent organic topic. It defines the
@@ -113,7 +113,7 @@ Functional groups are specific groups of atoms within molecules that are respons
 Characteristic chemical reactions of those molecules. The reactivity of an organic compound is
 Determined almost entirely by its functional group(s).
 
-Electron-rich groups (nucleophilic sites): $-\mathrm{OH}$$-\mathrm{NH}_2$C=C, benzene ring.
+Electron-rich groups (nucleophilic sites): $-\mathrm{OH}$, $-\mathrm{NH}_2$C=C, benzene ring.
 
 Electron-deficient groups (electrophilic sites): C=O (carbonyl carbon), C$\equiv$N (nitrile carbon),
 $-\mathrm{COOH}$.
@@ -225,7 +225,7 @@ The rotations cancel. Racemic mixtures have different physical properties from t
 ### Classification of Reagents
 
 **Nucleophiles** ("nucleus-loving") are electron-rich species that donate a lone pair to form a new
-Bond. They are attracted to electron-deficient centres. Examples: $\mathrm{OH}^-$$\mathrm{CN}^-$
+Bond. They are attracted to electron-deficient centres. Examples: $\mathrm{OH}^-$, $\mathrm{CN}^-$
 $\mathrm{NH}_3$$\mathrm{H}_2\mathrm{O}$$-\mathrm{OH}$.
 
 **Electrophiles** ("electron-loving") are electron-deficient species that accept a lone pair. They
@@ -596,9 +596,9 @@ distinguish between isobaric formulas.
 
 ### Step 2: Calculate the Degree of Unsaturation (Index of Hydrogen Deficiency)
 
-$$
+$, $
 \text{DoU} = \frac{2C + 2 + N - H - X}{2}
-$$
+$, $
 
 Where $C$ = number of carbons, $H$ = hydrogens, $N$ = nitrogens, $X$ = halogens. Oxygen does not
 affect the DoU.

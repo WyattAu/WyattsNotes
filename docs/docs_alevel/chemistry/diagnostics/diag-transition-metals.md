@@ -317,7 +317,7 @@ $E^\circ_{\text{cell}}$ for the oxidation of $\text{Fe}^{2+}$ by oxygen in acidi
 
 $$4\text{Fe}^{2+}(aq) + \text{O}_2(g) + 4\text{H}^+(aq) \to 4\text{Fe}^{3+}(aq) + 2\text{H}_2\text{O}(l)$$
 
-$E^\circ(\text{Fe}^{3+}/\text{Fe}^{2+}) = +0.77\,\text{V}$$E^\circ(\text{O}_2/\text{H}_2\text{O}) = +1.23\,\text{V}$.
+$E^\circ(\text{Fe}^{3+}/\text{Fe}^{2+}) = +0.77\,\text{V}$, $E^\circ(\text{O}_2/\text{H}_2\text{O}) = +1.23\,\text{V}$.
 
 (b) Haemoglobin contains $\text{Fe}^{2+}$ coordinated in an octahedral complex. Explain why
 $\text{O}_2$ can coordinate to the $\text{Fe}^{2+}$ in haemoglobin without oxidising it to

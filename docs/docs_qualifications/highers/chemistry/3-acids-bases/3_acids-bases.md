@@ -234,7 +234,7 @@ Let $[\mathrm{HA] = x$Then $[\mathrm{A^-] = 1.74x$.
 
 $x + 1.74x = 0.30 \implies 2.74x = 0.30 \implies x = 0.109 \mathrm{ M$
 
-$[\mathrm{HA] = 0.109 \mathrm{ M$$[\mathrm{A^-] = 0.191 \mathrm{ M$.
+$[\mathrm{HA] = 0.109 \mathrm{ M$, $[\mathrm{A^-] = 0.191 \mathrm{ M$.
 
 ### Buffer Capacity
 
@@ -377,7 +377,7 @@ Acid-weak base titrations (equivalence pH below 7), methyl orange is the correct
 
 ### Diprotic Acids
 
-Acids that can donate two protons, e.g., $\mathrm{H_2\mathrm{SO_4$$\mathrm{H_2\mathrm{CO_3$
+Acids that can donate two protons, e.g., $\mathrm{H_2\mathrm{SO_4$, $\mathrm{H_2\mathrm{CO_3$
 $\mathrm{H_3\mathrm{PO_4$ (triprotic).
 
 For carbonic acid:
@@ -476,7 +476,7 @@ Solution.
 
 ### Salts from Strong Acid + Strong Base
 
-Example: $\mathrm{NaCl$$\mathrm{KNO_3$.
+Example: $\mathrm{NaCl$, $\mathrm{KNO_3$.
 
 Neither ion reacts with water. The solution is neutral (pH = 7).
 

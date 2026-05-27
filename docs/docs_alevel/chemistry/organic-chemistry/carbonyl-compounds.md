@@ -375,7 +375,7 @@ Ethanal, propanone, and any methyl ketone give a positive iodoform test.
 
 The mechanism of nucleophilic addition to aldehydes and ketones is a two-step process:
 
-**Step 1: Nucleophilic attack.** The nucleophile (e.g. $\mathrm{CN}^-$$\mathrm{H}^-$ from
+**Step 1: Nucleophilic attack.** The nucleophile (e.g. $\mathrm{CN}^-$, $\mathrm{H}^-$ from
 $\mathrm{NaBH}_4$) attacks the electrophilic carbonyl carbon. The $\pi$ electrons of the C=O move
 onto the oxygen, forming a tetrahedral intermediate with a negative charge on the oxygen.
 
@@ -476,7 +476,7 @@ compound. This is a standard qualitative organic analysis technique.
 A compound $\mathrm{A}$ ($\mathrm{C}_3\mathrm{H}_6\mathrm{O}$) gives a silver mirror with Tollens'
 Reagent and reacts with $\mathrm{NaBH}_4$ to give compound $\mathrm{B}$. Compound $\mathrm{B}$ can
 Be oxidised to compound $\mathrm{C}$ ($\mathrm{C}_3\mathrm{H}_6\mathrm{O}_2$), which reacts with
-Sodium carbonate to produce $\mathrm{CO}_2$. Identify $\mathrm{A}$$\mathrm{B}$And $\mathrm{C}$.
+Sodium carbonate to produce $\mathrm{CO}_2$. Identify $\mathrm{A}$, $\mathrm{B}$And $\mathrm{C}$.
 
 **Solution:**
 
@@ -538,7 +538,7 @@ The molecular formula $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$ has one degree of 
 The compound is a methyl ketone: **pentan-2-one**
 ($\mathrm{CH}_3\mathrm{COCH}_2\mathrm{CH}_2\mathrm{CH}_3$).
 
-Verify: $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$$\text{DoU} = 1$ (one C=O). Contains
+Verify: $\mathrm{C}_5\mathrm{H}_{10}\mathrm{O}$, $\text{DoU} = 1$ (one C=O). Contains
 $\mathrm{CH}_3\mathrm{CO}-$ group. Not an aldehyde. Correct.
 
 Iodoform test:
@@ -627,7 +627,7 @@ mixture if the carbonyl carbon is prochiral (attached to four different groups a
 
 ### Example 3: Aldol Condensation Calculation
 
-**Ethanal ($\mathrm{CH}_3\mathrm{CHO}$$M = 44.05\,\mathrm{g/mol}$) undergoes an aldol condensation
+**Ethanal ($\mathrm{CH}_3\mathrm{CHO}$, $M = 44.05\,\mathrm{g/mol}$) undergoes an aldol condensation
 followed by dehydration. Calculate the maximum mass of product that can be obtained from
 $5.00\,\mathrm{g}$ of ethanal.**
 

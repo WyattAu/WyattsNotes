@@ -27,8 +27,8 @@ Spending the third hour on Economics (increasing $h_E$ from 2 to 3)?
 
 <details>
 <summary>Answer</summary>
-At $h_E = 2$: $E_E = 30\sqrt{2} \approx 42.4$$h_M = 3$: $E_M = 20\sqrt{3} \approx 34.6$. Total = 77.0.<br />
-At $h_E = 3$: $E_E = 30\sqrt{3} \approx 51.96$$h_M = 2$: $E_M = 20\sqrt{2} \approx 28.3$. Total = 80.3.<br />
+At $h_E = 2$: $E_E = 30\sqrt{2} \approx 42.4$, $h_M = 3$: $E_M = 20\sqrt{3} \approx 34.6$. Total = 77.0.<br />
+At $h_E = 3$: $E_E = 30\sqrt{3} \approx 51.96$, $h_M = 2$: $E_M = 20\sqrt{2} \approx 28.3$. Total = 80.3.<br />
 The third hour on Economics raises total marks from 77.0 to 80.3. The opportunity cost is the Maths marks forgone: $34.6 - 28.3 = 6.3$ marks. (Note: the marginal gain in Economics is $51.96 - 42.4 = 9.6$Net gain = 3.3.)
 <i>Revision: [The Economic Problem](/docs/alevel/economics/microeconomics/the-economic-problem)</i>
 </details>
@@ -59,7 +59,7 @@ Price consumers pay and producers receive, and (c) the tax incidence on consumer
 
 <details>
 <summary>Answer</summary>
-(a) $120 - 2P = 20 + 3P \Rightarrow 100 = 5P \Rightarrow P^* = 20$$Q^* = 80$.<br />
+(a) $120 - 2P = 20 + 3P \Rightarrow 100 = 5P \Rightarrow P^* = 20$, $Q^* = 80$.<br />
 (b) With tax, the supply curve shifts up: $Q_S = 20 + 3(P - 6) = 2 + 3P$. New equilibrium: $120 - 2P = 2 + 3P \Rightarrow 118 = 5P \Rightarrow P_C = 23.60$. Producers receive $P_P = 23.60 - 6 = 17.60$. $Q_{new} = 120 - 2(23.60) = 72.8$.<br />
 (c) Consumers pay $23.60 - 20 = £3.60$ more (60% of the tax). Producers receive $20 - 17.60 = £2.40$ less (40% of the tax). Total tax revenue = $6 \times 72.8 = £436.80$. The side with the more inelastic curve bears more of the burden.
 <i>Revision: [Demand, Supply, and Equilibrium](/docs/alevel/economics/microeconomics/demand-supply-and-equilibrium)</i>
@@ -98,8 +98,8 @@ Optimal quantity and price. (c) Calculate the deadweight loss of the market outc
 
 <details>
 <summary>Answer</summary>
-(a) Market: $MPC = MB \Rightarrow 20 + 2Q = 100 - Q \Rightarrow 3Q = 80 \Rightarrow Q_m = 26.67$$P_m = 100 - 26.67 = 73.33$.<br />
-(b) Social optimum: $MSC = MPC + MEC = 20 + 2Q + 10 + Q = 30 + 3Q$. Set $MSC = MB$: $30 + 3Q = 100 - Q \Rightarrow 4Q = 70 \Rightarrow Q^* = 17.5$$P^* = 100 - 17.5 = 82.5$.<br />
+(a) Market: $MPC = MB \Rightarrow 20 + 2Q = 100 - Q \Rightarrow 3Q = 80 \Rightarrow Q_m = 26.67$, $P_m = 100 - 26.67 = 73.33$.<br />
+(b) Social optimum: $MSC = MPC + MEC = 20 + 2Q + 10 + Q = 30 + 3Q$. Set $MSC = MB$: $30 + 3Q = 100 - Q \Rightarrow 4Q = 70 \Rightarrow Q^* = 17.5$, $P^* = 100 - 17.5 = 82.5$.<br />
 (c) DWL = area of triangle between MSC and MB from $Q^*$ to $Q_m$: $\frac{1}{2}(Q_m - Q^*) \times (MSC(Q_m) - MB(Q_m))$. $MSC(26.67) = 30 + 3(26.67) = 110$. $MB(26.67) = 73.33$. DWL $= \frac{1}{2}(26.67 - 17.5)(110 - 73.33) = \frac{1}{2}(9.17)(36.67) = 168.1$. The market overproduces by 9.17 units.
 <i>Revision: [Market Failure](/docs/alevel/economics/microeconomics/market-failure)</i>
 </details>
@@ -134,9 +134,9 @@ Competition, and (d) the Lerner index of market power.
 
 <details>
 <summary>Answer</summary>
-(a) $MR = 50 - 2Q$. Set $MR = MC$: $50 - 2Q = 10 \Rightarrow Q = 20$$P = 50 - 20 = 30$.<br />
+(a) $MR = 50 - 2Q$. Set $MR = MC$: $50 - 2Q = 10 \Rightarrow Q = 20$, $P = 50 - 20 = 30$.<br />
 (b) $CS = \frac{1}{2}(50 - 30)(20) = 200$.<br />
-(c) Under competition: $P = MC \Rightarrow 50 - Q = 10 \Rightarrow Q_c = 40$$P_c = 10$. DWL $= \frac{1}{2}(30 - 10)(40 - 20) = 200$.<br />
+(c) Under competition: $P = MC \Rightarrow 50 - Q = 10 \Rightarrow Q_c = 40$, $P_c = 10$. DWL $= \frac{1}{2}(30 - 10)(40 - 20) = 200$.<br />
 (d) Lerner index: $\frac{P - MC}{P} = \frac{30 - 10}{30} = 0.667$. This indicates significant market power (the monopoly price is 66.7% above marginal cost). The Lerner index equals $1/|E_d|$ at the profit-maximising output, so $|E_d| = 1.5$.
 <i>Revision: [Theory of the Firm](/docs/alevel/economics/microeconomics/theory-of-the-firm)</i>
 </details>
@@ -342,7 +342,7 @@ On the price level?"
 <details>
 <summary>Answer</summary>
 **SR**: Consumer confidence rises → $C$ rises → AD shifts right → $Y$ rises above $Y^*$ (inflationary gap), $P$ rises.<br />
-**LR adjustment**: $Y \gt Y^*$ → unemployment falls below natural rate → labour market tightens → wages rise → firms' costs rise → SRAS shifts left → $Y$ returns to $Y^*$$P$ rises further.<br />
+**LR adjustment**: $Y \gt Y^*$ → unemployment falls below natural rate → labour market tightens → wages rise → firms' costs rise → SRAS shifts left → $Y$ returns to $Y^*$, $P$ rises further.<br />
 **Final outcome**: $Y$ unchanged at $Y^*$ (long-run neutrality of demand shocks). $P$ is higher. The long-run price level is determined by the intersection of AD and the vertical LRAS, which depends on the money supply (if monetary policy accommodates the shock) or the initial position of AD. The key insight: demand shocks have no long-run effect on output, only on prices.
 <i>Revision: [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
@@ -443,7 +443,7 @@ Overall: globalisation has lifted billions out of poverty (especially in East As
 
 ### Topic 7: Macroeconomic Policy Debates
 
-**Q36.** Using the Taylor Rule with $r^* = 1.5\%$$\pi^* = 2\%$And equal weights of 0.5, Calculate
+**Q36.** Using the Taylor Rule with $r^* = 1.5\%$, $\pi^* = 2\%$And equal weights of 0.5, Calculate
 the prescribed policy rate when inflation is 1% and the output gap is –2%. What does this Tell you
 about the central bank's dilemma at the ZLB?
 
@@ -471,8 +471,8 @@ Private investment. Under what conditions might this policy be beneficial?
 
 <details>
 <summary>Answer</summary>
-**SR**: AD shifts right → $Y$ temporarily rises above $Y^*$$P$ rises. Government borrowing → demand for loanable funds rises → $r$ rises → private investment falls (crowding out).<br />
-**LR**: If the economy was at full employment, wages rise → SRAS shifts left → $Y$ returns to $Y^*$$P$ rises further. Crowding out may be substantial (full crowding out in the classical model).<br />
+**SR**: AD shifts right → $Y$ temporarily rises above $Y^*$, $P$ rises. Government borrowing → demand for loanable funds rises → $r$ rises → private investment falls (crowding out).<br />
+**LR**: If the economy was at full employment, wages rise → SRAS shifts left → $Y$ returns to $Y^*$, $P$ rises further. Crowding out may be substantial (full crowding out in the classical model).<br />
 **Beneficial conditions**: (1) The infrastructure has high social returns → LRAS shifts right in the long run (supply-side benefit) → potential output rises. (2) The spending replaces worn-out infrastructure (maintenance) rather than adding new capacity. (3) The central bank accommodates by increasing money supply (preventing $r$ from rising). (4) The economy has slack in specific sectors (e.g., construction unemployment). Without supply-side benefits, the policy is purely inflationary at full employment.
 <i>Revision: [Fiscal Policy](/docs/alevel/economics/macro/fiscal-policy) and [Aggregate Demand and Aggregate Supply](/docs/alevel/economics/macro/aggregate-demand-and-supply)</i>
 </details>
@@ -630,7 +630,7 @@ revenue, (d) the deadweight loss, (e) the consumer and producer burden of the ta
 
 <details>
 <summary>Answer</summary>
-(a) $500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$$Q = 500 - 240 = 260$.
+(a) $500 - 2P = 3P - 100 \Rightarrow 600 = 5P \Rightarrow P = 120$, $Q = 500 - 240 = 260$.
 
 (b) With tax: supply shifts up. $Q_S = 3(P - 10) - 100 = 3P - 130$.
 $500 - 2P = 3P - 130 \Rightarrow 630 = 5P \Rightarrow P = 126$ (price paid by consumers). Price
@@ -668,7 +668,7 @@ $20 + 0.1L = 100 - 0.2L \Rightarrow 0.3L = 80 \Rightarrow L = 266.67$.
 $w = 20 + 0.1(266.67) = 46.67$.
 
 (c) DWL: This is the area between the MRPL and labour supply curves from $L = 200$ to $L = 266.67$.
-At $L = 200$: $MRPL = 100 - 40 = 60$$w = 40$. At $L = 266.67$: $MRPL = w = 46.67$. DWL
+At $L = 200$: $MRPL = 100 - 40 = 60$, $w = 40$. At $L = 266.67$: $MRPL = w = 46.67$. DWL
 $= \frac{1}{2}(60 - 46.67)(266.67 - 200) = \frac{1}{2}(13.33)(66.67) = 444.4$.
 
 (d) Minimum wage at $\pounds 50$: If $w = 50$The labour supply curve becomes horizontal at $w = 50$

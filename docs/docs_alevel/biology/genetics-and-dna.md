@@ -824,7 +824,7 @@ The expected number of individuals with cystic fibrosis. (c) A genetic screening
 All carriers and counsels them. If two carriers decide to have a child, what is the probability that
 The child will have cystic fibrosis?
 
-**Answer.** (a) $q = 0.02$$p = 1 - 0.02 = 0.98$.
+**Answer.** (a) $q = 0.02$, $p = 1 - 0.02 = 0.98$.
 
 Frequency of heterozygotes $= 2pq = 2 \times 0.98 \times 0.02 = 0.0392$.
 

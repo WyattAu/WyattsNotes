@@ -87,7 +87,7 @@ Add: $19x = 38$So $x = 2$.
 
 Substitute into (1): $6 + 2y = 12$So $y = 3$.
 
-Solution: $x = 2$$y = 3$.
+Solution: $x = 2$, $y = 3$.
 
 </details>
 
@@ -224,7 +224,7 @@ Y &\geq 2x
 \end{aligned}
 $$
 
-This defines a polygon bounded by the lines $x + y = 6$$x = 0$$y = 0$And $y = 2x$. The Vertices are
+This defines a polygon bounded by the lines $x + y = 6$, $x = 0$, $y = 0$And $y = 2x$. The Vertices are
 $(0, 0)$$(0, 6)$And the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$ $x = 2$$y = 4$. So the
 third vertex is $(2, 4)$.
 
@@ -661,7 +661,7 @@ $$\frac{-2}{x(x - 2)} \leq 0$$
 
 $$\frac{2}{x(x - 2)} \geq 0$$
 
-Critical values: $x = 0$$x = 2$.
+Critical values: $x = 0$, $x = 2$.
 
 Sign chart for $x(x - 2)$:
 
@@ -908,13 +908,13 @@ Subtracting: $y^2 - x^2 = 5$So $(y - x)(y + x) = 5$.
 
 Then $(y - x)(5) = 5$Giving $y - x = 1$.
 
-From $x + y = 5$ and $y - x = 1$: adding gives $2y = 6$So $y = 3$$x = 2$.
+From $x + y = 5$ and $y - x = 1$: adding gives $2y = 6$So $y = 3$, $x = 2$.
 
 **Case 2:** $x + y = -5$.
 
 Then $(y - x)(-5) = 5$Giving $y - x = -1$.
 
-From $x + y = -5$ and $y - x = -1$: adding gives $2y = -6$So $y = -3$$x = -2$.
+From $x + y = -5$ and $y - x = -1$: adding gives $2y = -6$So $y = -3$, $x = -2$.
 
 **Verification:** $(2, 3)$: $4 + 6 = 10$ ✓ and $9 + 6 = 15$ ✓.
 

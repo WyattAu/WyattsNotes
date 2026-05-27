@@ -920,7 +920,7 @@ If producers have 10,000 kJ of energy:
 1. Identify $q^2$ from the homozygous recessive frequency
 2. Take the square root to get $q$
 3. Calculate $p = 1 - q$
-4. Calculate $p^2$$2pq$And verify $p^2 + 2pq + q^2 = 1$
+4. Calculate $p^2$, $2pq$And verify $p^2 + 2pq + q^2 = 1$
 
 **Population growth:**
 

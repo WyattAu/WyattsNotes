@@ -130,7 +130,7 @@ The **interquartile range** (IQR) is $Q_3 - Q_1$.
 A box plot displays:
 
 - Minimum and maximum values (or whisker endpoints)
-- $Q_1$$Q_2$ (median), $Q_3$
+- $Q_1$, $Q_2$ (median), $Q_3$
 - The box spans from $Q_1$ to $Q_3$
 - The median is marked inside the box
 
@@ -434,7 +434,7 @@ Find the variance and standard deviation of $\{4, 8, 6, 5, 3, 7, 9, 2\}$ using t
 
 <details>
 <summary>Solution 2</summary>
-$\sum x = 44$$n = 8$$\bar{x} = 44/8 = 5.5$.
+$\sum x = 44$, $n = 8$, $\bar{x} = 44/8 = 5.5$.
 
 $\sum x^2 = 16 + 64 + 36 + 25 + 9 + 49 + 81 + 4 = 284$.
 
@@ -463,7 +463,7 @@ $\sigma_y = \sigma_x/5 = 3 \implies \sigma_x = 15$.
 
 <details>
 <summary>Problem 4</summary>
-For the ordered dataset $\{2, 3, 5, 7, 8, 11, 14, 18, 23\}$Find $Q_1$$Q_2$$Q_3$And the IQR. Identify any outliers.
+For the ordered dataset $\{2, 3, 5, 7, 8, 11, 14, 18, 23\}$Find $Q_1$, $Q_2$, $Q_3$And the IQR. Identify any outliers.
 </details>
 
 <details>
@@ -585,7 +585,7 @@ Income distributions are right-skewed — a small number of very high earners pu
 
 <details>
 <summary>Problem 11</summary>
-For the dataset $\{2, 4, 5, 6, 7, 8, 12, 15, 28\}$Find $Q_1$$Q_2$$Q_3$$\bar{x}$And $\sigma$. Hence calculate Pearson's first coefficient of skewness and interpret the result.
+For the dataset $\{2, 4, 5, 6, 7, 8, 12, 15, 28\}$Find $Q_1$, $Q_2$, $Q_3$, $\bar{x}$And $\sigma$. Hence calculate Pearson's first coefficient of skewness and interpret the result.
 </details>
 
 <details>

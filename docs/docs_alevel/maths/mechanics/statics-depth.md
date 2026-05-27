@@ -48,7 +48,7 @@ $\blacksquare$
 ### 1.3 Worked example: beam on two supports
 
 **Problem.** A uniform beam $AB$ of mass $20\;\mathrm{kg}$ and length $4\;\mathrm{m}$ rests
-Horizontally on supports at $A$ and at a point $C$$1\;\mathrm{m}$ from $B$. A load of
+Horizontally on supports at $A$ and at a point $C$, $1\;\mathrm{m}$ from $B$. A load of
 $50\;\mathrm{N}$ Is hung from the beam at a point $0.5\;\mathrm{m}$ from $A$. Find the reactions at
 $A$ and $C$.
 
@@ -162,7 +162,7 @@ $$\bar{x} = \frac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆, \qquad \b
 **Uniform triangular lamina:** At the intersection of the medians, which is at a distance
 $\dfrac{2}{3}$ of the median length from each vertex.
 
-**Proof for a triangle.** Place the triangle with vertices at $(0,0)$$(a,0)$And $(0,b)$. A strip
+**Proof for a triangle.** Place the triangle with vertices at $(0,0)$, $(a,0)$And $(0,b)$. A strip
 parallel to the base at height $y$ has width $a\!\left(1 - \dfrac{y}{b}\right)$ and mass
 Proportional to this width.
 

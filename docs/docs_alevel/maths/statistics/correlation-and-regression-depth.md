@@ -80,7 +80,7 @@ $$S_{yy} = \sum(y_i - \bar{y})^2 = \sum y_i^2 - n\bar{y}^2$$
 - $r = -1$: perfect negative linear correlation.
 - $r = 0$: no linear correlation (but there may be a non-linear relationship).
 - $r$ is independent of the units of measurement.
-- $r$ is unchanged if both variables are transformed linearly ($x' = ax + b$$y' = cy + d$ with
+- $r$ is unchanged if both variables are transformed linearly ($x' = ax + b$, $y' = cy + d$ with
   $a, c \gt 0$).
 
 ### 2.3 Proof that $|r| \leq 1$

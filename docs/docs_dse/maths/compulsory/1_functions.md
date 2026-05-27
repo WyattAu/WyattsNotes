@@ -138,7 +138,7 @@ $$
 F(x) = ax^2 + bx + c, \quad a \neq 0
 $$
 
-Where $a$$b$And $c$ are real constants.
+Where $a$, $b$And $c$ are real constants.
 
 ### Vertex Form
 
@@ -241,7 +241,7 @@ $$
 ### Exponential Equations
 
 Equations of the form $a^{f(x)} = a^{g(x)}$ can be solved by equating exponents: $f(x) = g(x)$
-(provided $a > 0$$a \neq 1$).
+(provided $a > 0$, $a \neq 1$).
 
 For equations of the form $a^{f(x)} = b$Take logarithms of both sides. See [logarithms](logarithms)
 for the full treatment of logarithmic techniques.
@@ -269,9 +269,9 @@ for the full treatment of logarithmic techniques.
 The **logarithmic function** is the inverse of the exponential function. If $a^y = x$ (where
 $a > 0$$a \neq 1$$x > 0$), then:
 
-$$
+$, $
 Y = \log_a x
-$$
+$, $
 
 This means $\log_a x$ is the exponent to which $a$ must be raised to obtain $x$.
 
@@ -282,7 +282,7 @@ The function $f(x) = \log_a x$ has domain $(0, \infty)$ and range $\mathbb{R}$. 
 
 For $a, M, N > 0$ ($a \neq 1$) and $p \in \mathbb{R}$:
 
-$$
+$, $
 \begin{aligned}
 \log_a (MN) &= \log_a M + \log_a N &\mathrm{(Product Law)} \\
 \log_a \left(\frac{M}{N}\right) &= \log_a M - \log_a N &\mathrm{(Quotient Law)} \\
@@ -290,15 +290,15 @@ $$
 \log_a 1 &= 0 \\
 \log_a a &= 1
 \end{aligned}
-$$
+$, $
 
 ### Change of Base Formula
 
 To evaluate a logarithm with any base:
 
-$$
+$, $
 \log_a b = \frac{\log_c b}{\log_c a} = \frac{\ln b}{\ln a}
-$$
+$, $
 
 For any positive base $c \neq 1$.
 
@@ -339,9 +339,9 @@ When solving logarithmic equations, the following steps are typical:
 Given the graph of $y = f(x)$The graph of $y = af(x + b) + c$ is obtained by applying a sequence Of
 transformations. The general form can be broken down as:
 
-$$
+$, $
 Y = a \cdot f\left(x - (-b)\right) + c
-$$
+$, $
 
 <DesmosGraph title="Graph Transformations" expressions={["a\cdot f(x+b)+c", "f(x)=x^2"]} width={800}
 height={500} />
@@ -957,7 +957,7 @@ $f(3.7) = 3$$f(-2.1) = -3$$f(0) = 0$.
 
 $$f(-x) = (-x)^3 + (-x) = -x^3 - x = -(x^3 + x) = -f(x)$$
 
-Since $f(-x) = -f(x)$$f$ is odd.
+Since $f(-x) = -f(x)$, $f$ is odd.
 
 **DSE Practice 5.** The function $f$ is defined on $\mathbb{R}$ by $f(x) = ax^2 + bx + c$. Given
 that $f(0) = 5$$f(1) = 4$And $f(-1) = 10$Find $a$$b$And $c$.

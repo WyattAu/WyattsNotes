@@ -164,11 +164,11 @@ Multiply both sides by $L/(A\,\Delta x)$:
 
 $$\frac◆LB◆FL◆RB◆◆LB◆A\,\Delta x◆RB◆ = \frac{kL}{A}$$
 
-Define $\sigma = F/A$$\varepsilon = \Delta x/L$:
+Define $\sigma = F/A$, $\varepsilon = \Delta x/L$:
 
 $$\frac◆LB◆\sigma◆RB◆◆LB◆\varepsilon◆RB◆ = \frac{kL}{A} = E$$
 
-Since $k$$L$And $A$ are all constants for a given sample (within the proportional limit), $E$ is A
+Since $k$, $L$And $A$ are all constants for a given sample (within the proportional limit), $E$ is A
 constant of the material — it does not depend on the dimensions of the sample. $\square$
 
 ## 4. Stress-Strain Graphs
@@ -431,7 +431,7 @@ A steel wire and a rubber cord have the same dimensions and are subjected to the
 The Young's modulus of steel is $2.0 \times 10^{11}$ Pa and of rubber is $5.0 \times 10^6$ Pa.
 Calculate the ratio of their extensions.
 
-**Answer.** For the same $F$$L$And $A$: $\Delta L = FL/(AE)$So $\Delta L \propto 1/E$.
+**Answer.** For the same $F$, $L$And $A$: $\Delta L = FL/(AE)$So $\Delta L \propto 1/E$.
 
 Ratio:
 $\frac◆LB◆\Delta L_{\mathrm{rubber}}◆RB◆◆LB◆\Delta L_{\mathrm{steel}}◆RB◆ = \frac◆LB◆E_{\mathrm{steel}}◆RB◆◆LB◆E_{\mathrm{rubber}}◆RB◆ = \frac◆LB◆2.0 \times 10^{11}◆RB◆◆LB◆5.0 \times 10^6◆RB◆ = 4.0 \times 10^4$.

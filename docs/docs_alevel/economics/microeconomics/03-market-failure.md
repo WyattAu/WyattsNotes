@@ -86,8 +86,8 @@ A chemical factory produces output $Q$ with marginal private cost $MPC = 20 + Q$
 External cost $MEC = Q$. The marginal private benefit (demand) is $MPB = 80 - Q$.
 
 - $MSC = MPC + MEC = 20 + 2Q$
-- Market equilibrium: $80 - Q = 20 + Q \Rightarrow Q_{mkt} = 30$$P_{mkt} = 50$
-- Social optimum: $80 - Q = 20 + 2Q \Rightarrow Q^* = 20$$P^* = 60$
+- Market equilibrium: $80 - Q = 20 + Q \Rightarrow Q_{mkt} = 30$, $P_{mkt} = 50$
+- Social optimum: $80 - Q = 20 + 2Q \Rightarrow Q^* = 20$, $P^* = 60$
 - DWL $= \frac{1}{2}(30 - 20)(MSC(30) - MSB(30)) = \frac{1}{2}(10)(80 - 50) = 150$
 
 The market over-produces by 10 units, creating a welfare loss of 150.
@@ -260,7 +260,7 @@ A coal power plant produces electricity with $MPC = 10 + Q$ and $MEC = 0.5Q$ (ca
 Damage). Demand: $P = 100 - Q$.
 
 - $MSC = 10 + 1.5Q$
-- Social optimum: $100 - Q = 10 + 1.5Q \Rightarrow Q^* = 36$$P^* = 64$
+- Social optimum: $100 - Q = 10 + 1.5Q \Rightarrow Q^* = 36$, $P^* = 64$
 - Optimal tax: $t^* = MEC(36) = 18$
 - With tax, firm faces: $MPC + t = 10 + Q + 18 = 28 + Q$. Equilibrium:
 $100 - Q = 28 + Q \Rightarrow Q = 36$ ✓

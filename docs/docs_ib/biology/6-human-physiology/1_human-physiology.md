@@ -185,7 +185,7 @@ Antibodies are Y-shaped proteins produced by plasma cells. Each antibody has:
 - **Two identical heavy chains** and **two identical light chains**.
 - A **variable region** at the tips of the Y: antigen-binding site, specific to one antigen
   (complementary shape).
-- A **constant region**: determines the antibody class ($\mathrm{IgG}$$\mathrm{IgM}$
+- A **constant region**: determines the antibody class ($\mathrm{IgG}$, $\mathrm{IgM}$
   $\mathrm{IgA}$$\mathrm{IgE}$$\mathrm{IgD}$).
 
 **Mechanisms of antibody action**:
@@ -1134,7 +1134,7 @@ calculate the Expected daily urine volume.
 <summary>Solution</summary>
 
 (a) Creatinine clearance $= \frac{U \times V}{P}$ where
-$U = 1.5\;\mathrm{g/L}$$P = 0.010\;\mathrm{g/L}$ $V = 1440\;\mathrm{mL/day} = 1.0\;\mathrm{mL/min}$.
+$U = 1.5\;\mathrm{g/L}$, $P = 0.010\;\mathrm{g/L}$ $V = 1440\;\mathrm{mL/day} = 1.0\;\mathrm{mL/min}$.
 
 $\text{Clearance} = \frac{1.5 \times 1.0}{0.010} = 150\;\mathrm{mL/min}$.
 
@@ -1437,7 +1437,7 @@ the presence and absence Of ADH.
 - The **thin ascending limb** is impermeable to water but permeable to $\mathrm{Na}^+$ and
   $\mathrm{Cl}^-$ which diffuse passively into the medullary interstitium (countercurrent
   multiplication).
-- The **thick ascending limb** actively transports $\mathrm{Na}^+$$\mathrm{K}^+$And $\mathrm{Cl}^-$
+- The **thick ascending limb** actively transports $\mathrm{Na}^+$, $\mathrm{K}^+$And $\mathrm{Cl}^-$
   out of the filtrate via the $\mathrm{Na}^+/2\mathrm{Cl}^-/\mathrm{K}^+$ co-transporter (NKCC2),
   further diluting the filtrate and concentrating the medulla. This segment is impermeable to water.
 - The result is a gradient from approximately $300\;\mathrm{mOsm}$ (cortex) to $1200\;\mathrm{mOsm}$

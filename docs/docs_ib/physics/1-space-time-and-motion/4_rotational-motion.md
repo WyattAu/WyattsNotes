@@ -528,7 +528,7 @@ A satellite orbits Earth at an altitude of $400\mathrm{ km}$ in a circular orbit
 
 **(a)** Calculate the orbital period.
 
-($M_E = 5.97 \times 10^{24}\mathrm{ kg}$$R_E = 6.37 \times 10^6\mathrm{ m}$)
+($M_E = 5.97 \times 10^{24}\mathrm{ kg}$, $R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 $$
 R = 6.77 \times 10^6\mathrm{ m}

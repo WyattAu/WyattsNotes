@@ -787,7 +787,7 @@ maximum number Of amino acids in the protein?
 <details>
 <summary>Solution</summary>
 
-(a) In double-stranded DNA, A pairs with T and G pairs with C (Chargaff's rules: $A = T$$G = C$).
+(a) In double-stranded DNA, A pairs with T and G pairs with C (Chargaff's rules: $A = T$, $G = C$).
 
 If strand 1 has $300$ A, then:
 
@@ -800,7 +800,7 @@ Total base pairs $= 1200$. Total nucleotides $= 2400$.
 Let $A_1$ be the number of A on strand 1 $= 300$. Then $T_2 = A_1 = 300$ (T on strand 2 pairing with
 A on strand 1).
 
-Since the molecule has $2400$ total nucleotides, and $A_{total} = T_{total}$$G_{total} = C_{total}$:
+Since the molecule has $2400$ total nucleotides, and $A_{total} = T_{total}$, $G_{total} = C_{total}$:
 $A_{total} + T_{total} + G_{total} + C_{total} = 2400$ $2A_{total} + 2G_{total} = 2400$
 $A_{total} + G_{total} = 1200$
 
@@ -831,8 +831,8 @@ regions).
 A circular plasmid of $5000\;\mathrm{bp}$ is digested individually and in combination with two
 restriction Enzymes, EcoRI and BamHI. The results are:
 
-- EcoRI alone: $2000\;\mathrm{bp}$$3000\;\mathrm{bp}$
-- BamHI alone: $1500\;\mathrm{bp}$$3500\;\mathrm{bp}$
+- EcoRI alone: $2000\;\mathrm{bp}$, $3000\;\mathrm{bp}$
+- BamHI alone: $1500\;\mathrm{bp}$, $3500\;\mathrm{bp}$
 - EcoRI + BamHI: $500\;\mathrm{bp}$$1000\;\mathrm{bp}$$1500\;\mathrm{bp}$$2000\;\mathrm{bp}$
 
 Determine the restriction map showing the positions and order of the EcoRI and BamHI sites.

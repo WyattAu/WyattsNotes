@@ -589,8 +589,8 @@ types for similar molar masses.
 
 | Electron Domains | Hybridization | Geometry             | Bond Angles           | Examples                                           |
 | ---------------- | ------------- | -------------------- | --------------------- | -------------------------------------------------- |
-| 2                | sp            | Linear               | 180$^\circ$           | $\mathrm{BeCl_2$$\mathrm{CO_2$                     |
-| 3                | sp$^2$        | Trigonal planar      | 120$^\circ$           | $\mathrm{BF_3$$\mathrm{C_2\mathrm{H_4$             |
+| 2                | sp            | Linear               | 180$^\circ$           | $\mathrm{BeCl_2$, $\mathrm{CO_2$                     |
+| 3                | sp$^2$        | Trigonal planar      | 120$^\circ$           | $\mathrm{BF_3$, $\mathrm{C_2\mathrm{H_4$             |
 | 4                | sp$^3$        | Tetrahedral          | 109.5$^\circ$         | $\mathrm{CH_4$$\mathrm{NH_3$$\mathrm{H_2\mathrm{O$ |
 | 5                | sp$^3$D       | Trigonal bipyramidal | 90$^\circ$120$^\circ$ | $\mathrm{PCl_5$                                    |
 | 6                | sp$^3$D$^2$   | Octahedral           | 90$^\circ$            | $\mathrm{SF_6$$\mathrm{XeF_4$                      |

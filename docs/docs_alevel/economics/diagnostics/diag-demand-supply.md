@@ -22,9 +22,9 @@ midpoint (arc elasticity) method. Is demand elastic or inelastic? What happens t
 Midpoint method:
 $\text{PED} = \frac◆LB◆\% \Delta Q_d◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
-$\Delta Q = 600 - 800 = -200$$\bar{Q} = (800 + 600)/2 = 700$
+$\Delta Q = 600 - 800 = -200$, $\bar{Q} = (800 + 600)/2 = 700$
 
-$\Delta P = 3.00 - 2.50 = 0.50$$\bar{P} = (2.50 + 3.00)/2 = 2.75$
+$\Delta P = 3.00 - 2.50 = 0.50$, $\bar{P} = (2.50 + 3.00)/2 = 2.75$
 
 $\text{PED} = \frac{-200/700}{0.50/2.75} = \frac{-0.2857}{0.1818} = -1.57$
 
@@ -52,9 +52,9 @@ At $P = 3$: $Q_s = -100 + 50(3) = 50$ At $P = 5$: $Q_s = -100 + 50(5) = 150$
 Midpoint method:
 $\text{PES} = \frac◆LB◆\% \Delta Q_s◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
-$\Delta Q = 150 - 50 = 100$$\bar{Q} = (50 + 150)/2 = 100$
+$\Delta Q = 150 - 50 = 100$, $\bar{Q} = (50 + 150)/2 = 100$
 
-$\Delta P = 5 - 3 = 2$$\bar{P} = (3 + 5)/2 = 4$
+$\Delta P = 5 - 3 = 2$, $\bar{P} = (3 + 5)/2 = 4$
 
 $\text{PES} = \frac{100/100}{2/4} = \frac{1}{0.5} = 2.0$
 
@@ -101,8 +101,8 @@ $\text{PS} = \frac{1}{2} \times 18 \times (11 - 2) = \frac{1}{2} \times 18 \time
 
 **Price ceiling at $\pounds 8$:**
 
-Quantity demanded at $\pounds 8$: $8 = 20 - 0.5Q_d$$Q_d = 24$. Quantity supplied at $\pounds 8$:
-$8 = 2 + 0.5Q_s$$Q_s = 12$.
+Quantity demanded at $\pounds 8$: $8 = 20 - 0.5Q_d$, $Q_d = 24$. Quantity supplied at $\pounds 8$:
+$8 = 2 + 0.5Q_s$, $Q_s = 12$.
 
 Since $Q_s \lt Q_d$The binding price ceiling creates a shortage of $24 - 12 = 12$ units. The
 quantity traded is $Q = 12$.

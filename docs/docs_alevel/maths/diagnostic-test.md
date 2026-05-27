@@ -30,7 +30,7 @@ Solutions.
 
 <details>
 <summary>Q1. Simplify $\dfrac{x^2 - 9}{x^2 - x - 6}$.</summary>
-$\dfrac{x^2-9}{x^2-x-6} = \dfrac{(x-3)(x+3)}{(x-3)(x+2)} = \dfrac{x+3}{x+2}$$x \neq 3, -2$.
+$\dfrac{x^2-9}{x^2-x-6} = \dfrac{(x-3)(x+3)}{(x-3)(x+2)} = \dfrac{x+3}{x+2}$, $x \neq 3, -2$.
 
 **If you get this wrong, revise:**
 [Algebraic Expressions](/docs/alevel/maths/pure-mathematics/algebraic-expressions)
@@ -47,10 +47,10 @@ $(x-2)(x-3) \geq 0$. The quadratic opens upward, so $x \leq 2$ or $x \geq 3$.
 </details>
 
 <details>
-<summary>Q3. Find the inverse of $f(x) = \dfrac{2x+1}{x-3}$$x \neq 3$.</summary>
+<summary>Q3. Find the inverse of $f(x) = \dfrac{2x+1}{x-3}$, $x \neq 3$.</summary>
 $y = \dfrac{2x+1}{x-3} \implies y(x-3) = 2x+1 \implies yx - 3y = 2x + 1 \implies x(y-2) = 3y+1$.
 
-$f^{-1}(x) = \dfrac{3x+1}{x-2}$$x \neq 2$.
+$f^{-1}(x) = \dfrac{3x+1}{x-2}$, $x \neq 2$.
 
 **If you get this wrong, revise:** [Functions](/docs/alevel/maths/pure-mathematics/functions)
 
@@ -73,7 +73,7 @@ $= \dfrac{8/3}{x-1} + \dfrac{1/3}{x+2} = \dfrac{8}{3(x-1)} + \dfrac{1}{3(x+2)}$.
 
 <details>
 <summary>Q5. Find the sum of the first 50 terms of the arithmetic series $3 + 7 + 11 + \cdots$.</summary>
-$a = 3$$d = 4$. $S_{50} = \dfrac{50}{2}[2(3) + 49(4)] = 25(6 + 196) = 25 \times 202 = 5050$.
+$a = 3$, $d = 4$. $S_{50} = \dfrac{50}{2}[2(3) + 49(4)] = 25(6 + 196) = 25 \times 202 = 5050$.
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/alevel/maths/pure-mathematics/sequences-and-series)
@@ -91,7 +91,7 @@ $\binom{5}{3}(2)^2(-3x)^3 = 10 \times 4 \times (-27x^3) = -1080x^3$. Coefficient
 
 <details>
 <summary>Q7. Find the sum to infinity of $0.5 + 0.1 + 0.02 + 0.004 + \cdots$.</summary>
-$a = 0.5$$r = 0.2$. $|r| \lt 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5}{0.8} = 0.625$.
+$a = 0.5$, $r = 0.2$. $|r| \lt 1$. $S_\infty = \dfrac{0.5}{1-0.2} = \dfrac{0.5}{0.8} = 0.625$.
 
 **If you get this wrong, revise:**
 [Sequences and Series](/docs/alevel/maths/pure-mathematics/sequences-and-series)

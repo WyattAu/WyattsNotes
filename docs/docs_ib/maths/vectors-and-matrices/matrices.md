@@ -105,7 +105,7 @@ $R_1 \to R_1 - 2R_2$:
 
 $$\left[\begin{array}{ccc|ccc} 1 & 0 & -5 & 1 & -2 & 0 \\ 0 & 1 & 4 & 0 & 1 & 0 \\ 0 & 0 & 1 & 0 & 0 & 1 \end{array}\right]$$
 
-$R_1 \to R_1 + 5R_3$$R_2 \to R_2 - 4R_3$:
+$R_1 \to R_1 + 5R_3$, $R_2 \to R_2 - 4R_3$:
 
 $$\left[\begin{array}{ccc|ccc} 1 & 0 & 0 & 1 & -2 & 5 \\ 0 & 1 & 0 & 0 & 1 & -4 \\ 0 & 0 & 1 & 0 & 0 & 1 \end{array}\right]$$
 
@@ -296,7 +296,7 @@ Augmented matrix:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 2 & -1 & 1 & 1 \\ 3 & 1 & 2 & 10 \end{array}\right]$$
 
-$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - 3R_1$:
+$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 0 & -5 & 3 & -5 \\ 0 & -5 & 5 & 1 \end{array}\right]$$
 
@@ -398,7 +398,7 @@ Augmented matrix:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 2 & 4 & 6 & 8 \\ 1 & -1 & 1 & 1 \end{array}\right]$$
 
-$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - R_1$:
+$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - R_1$:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & -3 & -2 & -3 \end{array}\right]$$
 
@@ -509,7 +509,7 @@ Compute $A^5$ where $A = \begin{pmatrix} 3 & -1 \\ 2 & 0 \end{pmatrix}$.
 <summary>Solution</summary>
 
 Characteristic equation: $\lambda(\lambda - 3) + 2 = \lambda^2 - 3\lambda + 2 = 0$So
-$(\lambda - 1)(\lambda - 2) = 0$Giving $\lambda_1 = 1$$\lambda_2 = 2$.
+$(\lambda - 1)(\lambda - 2) = 0$Giving $\lambda_1 = 1$, $\lambda_2 = 2$.
 
 For $\lambda_1 = 1$:
 $\begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 2x = y$.
@@ -579,7 +579,7 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
 3. Find the eigenvalues and eigenvectors of $A = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$. Use
    diagonalisation to find $A^6$.
 
-4. A triangle has vertices at $(0, 0)$$(2, 0)$And $(1, 3)$. Find the matrix of the transformation
+4. A triangle has vertices at $(0, 0)$, $(2, 0)$And $(1, 3)$. Find the matrix of the transformation
    that reflects the triangle in the $y$-axis and then enlarges it by a factor of $2$ about the
    origin. Determine the area of the image.
 

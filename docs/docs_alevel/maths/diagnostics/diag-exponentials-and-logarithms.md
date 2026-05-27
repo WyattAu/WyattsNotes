@@ -62,7 +62,7 @@ The student loses $x = -e^2$ (because $\ln x$ is undefined for $x \lt 0$) and ga
 For $x \lt 0$: $2^x \gt 0$ and $x^2 \gt 0$So solutions may exist. At $x = -0.7666...$:
 $2^{-0.7666} \approx 0.587$ and $(-0.7666)^2 \approx 0.588$. This is a solution, which we denote
 $x = -\frac◆LB◆W(-2\ln 2)◆RB◆◆LB◆2\ln 2◆RB◆$ where $W$ is the Lambert $W$-function. For A-Level
-purposes, we note there are exactly three solutions: $x \approx -0.767$$x = 2$And $x = 4$.
+purposes, we note there are exactly three solutions: $x \approx -0.767$, $x = 2$And $x = 4$.
 
 To show there are no other solutions for $x \geq 0$: consider $g(x) = 2^x - x^2$. We have
 $g(0) = 1$$g(1) = 1$$g(2) = 0$$g(3) = -1$$g(4) = 0$$g(5) = 7$. Since $g''(x) = 2^x(\ln 2)^2 - 2$And
@@ -196,9 +196,9 @@ First application: $du = 3e^{3x}\, dx$$v = -\frac{1}{2}\cos(2x)$.
 
 $$I = -\frac{1}{2}e^{3x}\cos(2x) + \frac{3}{2}\int e^{3x}\cos(2x)\, dx$$
 
-Second application on the remaining integral: $u = e^{3x}$$\frac{dv}{dx} = \cos(2x)$.
+Second application on the remaining integral: $u = e^{3x}$, $\frac{dv}{dx} = \cos(2x)$.
 
-$du = 3e^{3x}\, dx$$v = \frac{1}{2}\sin(2x)$.
+$du = 3e^{3x}\, dx$, $v = \frac{1}{2}\sin(2x)$.
 
 $$\int e^{3x}\cos(2x)\, dx = \frac{1}{2}e^{3x}\sin(2x) - \frac{3}{2}\int e^{3x}\sin(2x)\, dx = \frac{1}{2}e^{3x}\sin(2x) - \frac{3}{2}I$$
 
@@ -270,7 +270,7 @@ $$y = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆x - \frac{3}{4} + \ln 2$$
 
 **(c)** $\frac{dy}{dx} = \frac{x}{x^2+1} = 0 \implies x = 0$.
 
-Wait: $\frac{x}{x^2+1} = 0$ when $x = 0$. Let me check: at $x = 0$$\frac{dy}{dx} = 0$. So $x = 0$ IS
+Wait: $\frac{x}{x^2+1} = 0$ when $x = 0$. Let me check: at $x = 0$, $\frac{dy}{dx} = 0$. So $x = 0$ IS
 a stationary point.
 
 The question says "show that the curve has no stationary points." This is incorrect — the curve does

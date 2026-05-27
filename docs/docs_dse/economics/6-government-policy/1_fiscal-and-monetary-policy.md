@@ -1199,7 +1199,7 @@ If you get this wrong, revise: [Monetary Policy Tools](#monetary-policy-tools)
 
 ### Problem 13: AD-AS Model with Supply Shocks
 
-An economy is in long-run equilibrium at $P = 100$$Y = 1000$ (potential output). An adverse supply
+An economy is in long-run equilibrium at $P = 100$, $Y = 1000$ (potential output). An adverse supply
 shock (e.g., an oil price increase) shifts the SRAS leftward by 5% at every price level. The SRAS is
 relatively flat: a 1% increase in output above potential raises prices by 0.5%. The government has
 MPC $= 0.8$ and the central bank follows a strict inflation target of 2%.
@@ -1213,7 +1213,7 @@ the concept of stagflation and why it presents a policy dilemma.
 <summary>Solution</summary>
 
 (a) The SRAS shift reduces output by approximately 5% and raises prices. New short-run equilibrium:
-$Y_{SR} = 950$$P_{SR} = 100 + 0.5 \times 50 = 125$ (using the given Phillips curve relationship).
+$Y_{SR} = 950$, $P_{SR} = 100 + 0.5 \times 50 = 125$ (using the given Phillips curve relationship).
 
 More precisely, the adverse supply shock shifts SRAS left. At the original price level
 $P = 100$Firms now produce 5% less: $Y = 950$. The resulting excess demand pushes prices up along

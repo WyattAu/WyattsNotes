@@ -77,7 +77,7 @@ $$|\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$$
 
 $$\cos\alpha = \frac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\beta = \frac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\gamma = \frac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
 
-Where $\alpha$$\beta$$\gamma$ are the angles $\mathbf{a}$ makes with the $x$-, $y$-, $z$-axes.
+Where $\alpha$, $\beta$, $\gamma$ are the angles $\mathbf{a}$ makes with the $x$-, $y$-, $z$-axes.
 
 $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
 
@@ -160,7 +160,7 @@ $\mathbf{b}$And its direction is given by the right-hand rule.
   zero)
 - $\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b} + \mathbf{a}\times\mathbf{c}$
   (distributive)
-- $\mathbf{i}\times\mathbf{j} = \mathbf{k}$$\mathbf{j}\times\mathbf{k} = \mathbf{i}$
+- $\mathbf{i}\times\mathbf{j} = \mathbf{k}$, $\mathbf{j}\times\mathbf{k} = \mathbf{i}$
   $\mathbf{k}\times\mathbf{i} = \mathbf{j}$
 
 :::warning warning $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$. The cross product is
@@ -235,7 +235,7 @@ $$\boxed{ax + by + cz = d}$$
 
 ### 6.3 Finding the normal to a plane
 
-Given three points $A$$B$$C$ on the plane, the normal is
+Given three points $A$, $B$, $C$ on the plane, the normal is
 
 $$\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC}$$
 

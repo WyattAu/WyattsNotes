@@ -111,9 +111,9 @@ Each shell contains subshells, designated by the azimuthal quantum number $l$:
 | $n$ | Subshells ($l$ values) | Maximum electrons |
 | --- | ---------------------- | ----------------- |
 | $1$ | $1s$                   | $2$               |
-| $2$ | $2s$$2p$               | $8$               |
-| $3$ | $3s$$3p$$3d$           | $18$              |
-| $4$ | $4s$$4p$$4d$$4f$       | $32$              |
+| $2$ | $2s$, $2p$               | $8$               |
+| $3$ | $3s$, $3p$, $3d$           | $18$              |
+| $4$ | $4s$, $4p$, $4d$, $4f$       | $32$              |
 
 The maximum number of electrons in shell $n$ is $2n^2$.
 
@@ -144,7 +144,7 @@ The number of orbitals in a subshell is $2l + 1$.
 
 :::info[Example — Quantum numbers for a $3p$ electron]
 
-For the $3p$ subshell: $n = 3$$l = 1$$m_l = -1, 0, +1$$m_s = \pm\frac{1}{2}$
+For the $3p$ subshell: $n = 3$, $l = 1$$m_l = -1, 0, +1$$m_s = \pm\frac{1}{2}$
 
 This gives three $p$-orbitals ($p_x$$p_y$$p_z$), each holding two electrons, for a total of six $3p$
 electrons.
@@ -166,24 +166,24 @@ Three rules govern how electrons fill orbitals:
 The filling order follows the $(n + l)$ rule: orbitals with a lower $(n + l)$ value fill first. When
 $(n + l)$ values are equal, the orbital with lower $n$ fills first.
 
-$$
+$, $
 1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p \lt 7s \lt 5f \lt 6d \lt 7p
-$$
+$, $
 
 ### Writing Electron Configurations
 
 **Full notation** — write every subshell explicitly:
 
-$$
+$, $
 \mathrm{Fe}: 1s^2\, 2s^2\, 2p^6\, 3s^2\, 3p^6\, 4s^2\, 3d^6
-$$
+$, $
 
 **Noble gas core notation** — replace the inner-shell electrons with the preceding noble gas symbol
 In brackets:
 
-$$
+$, $
 \mathrm{Fe}: [\mathrm{Ar}]\, 4s^2\, 3d^6
-$$
+$, $
 
 :::warning
 
@@ -213,13 +213,13 @@ Represent $m_s = +\frac{1}{2}$ and $m_s = -\frac{1}{2}$.
 
 For nitrogen ($1s^2\, 2s^2\, 2p^3$):
 
-$$
+$, $
 \begin`\{array}`{c}
 1s\quad \boxed{\uparrow\downarrow} \\
 2s\quad \boxed{\uparrow\downarrow} \\
 2p\quad \boxed{\uparrow}\quad\boxed{\uparrow}\quad\boxed{\uparrow}
 \end`\{array}`
-$$
+$, $
 
 All three $2p$ electrons are unpaired with parallel spins, following Hund's rule.
 
@@ -317,9 +317,9 @@ From $Z = 8$ to $Z = 13$So the radius decreases.
 **Definition.** The **first ionization energy** ($IE_1$) is the minimum energy required to remove
 One mole of electrons from one mole of gaseous atoms:
 
-$$
+$, $
 \mathrm{X}(g) \to \mathrm{X}^+(g) + e^- \qquad \Delta H = IE_1
-$$
+$, $
 
 | Trend                     | Explanation                                               |
 | ------------------------- | --------------------------------------------------------- |
@@ -338,9 +338,9 @@ $$
 Each subsequent ionization energy is larger than the previous one because the remaining electrons
 Experience less shielding from a shrinking electron cloud and are held by a constant $Z$:
 
-$$
+$, $
 IE_1 \lt IE_2 \lt IE_3 \lt \cdots
-$$
+$, $
 
 A large jump in successive ionization energies indicates the removal of an electron from a new inner
 Shell. This reveals the electron configuration.
@@ -363,9 +363,9 @@ The jump from $IE_3$ to $IE_4$ confirms that aluminium has three valence electro
 **Definition.** **Electron affinity** ($EA$) is the enthalpy change when one mole of electrons is
 Added to one mole of gaseous atoms:
 
-$$
+$, $
 \mathrm{X}(g) + e^- \to \mathrm{X}^-(g) \qquad \Delta H = EA
-$$
+$, $
 
 A more negative $EA$ indicates a greater tendency to accept an electron.
 
@@ -435,9 +435,9 @@ forming $\mathrm{M}^+$ ions.
 
 #### Reaction with Water
 
-$$
+$, $
 2\mathrm{M}(s) + 2\mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{MOH}(aq) + \mathrm{H}_2(g)
-$$
+$, $
 
 Reactivity increases down the group:
 
@@ -466,9 +466,9 @@ Alkali metals burn in oxygen to form oxides:
 
 All Group 1 hydroxides ($\mathrm{MOH}$) are strong bases and highly soluble in water:
 
-$$
+$, $
 \mathrm{MOH}(s) \to \mathrm{M}^+(aq) + \mathrm{OH}^-(aq)
-$$
+$, $
 
 Basicity increases down the group (solubility increases, so $[\mathrm{OH}^-]$ is higher).
 
@@ -520,34 +520,34 @@ $\mathrm{X}^-$ ions, achieving a noble gas configuration.
 Reactivity **decreases** down the group. This is because atomic radius increases and
 $Z_{\mathrm{eff}}$ on the incoming electron decreases, so electron affinity becomes less favourable.
 
-$$
+$, $
 \mathrm{F}_2 \gt \mathrm{Cl}_2 \gt \mathrm{Br}_2 \gt \mathrm{I}_2
-$$
+$, $
 
 #### Displacement Reactions
 
 A more reactive halogen displaces a less reactive halogen from its halide solution:
 
-$$
+$, $
 \mathrm{Cl}_2(aq) + 2\mathrm{KBr}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{Br}_2(aq)
-$$
+$, $
 
-$$
+$, $
 \mathrm{Br}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KBr}(aq) + \mathrm{I}_2(aq)
-$$
+$, $
 
-$$
+$, $
 \mathrm{Cl}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{I}_2(aq)
-$$
+$, $
 
 But: $\mathrm{Br}_2$ cannot displace $\mathrm{Cl}^-$ and $\mathrm{I}_2$ cannot displace
 $\mathrm{Br}^-$ or $\mathrm{Cl}^-$.
 
 #### Reaction with Alkali Metals
 
-$$
+$, $
 2\mathrm{M}(s) + \mathrm{X}_2(g) \to 2\mathrm{MX}(s)
-$$
+$, $
 
 These are vigorous, exothermic reactions forming ionic halides.
 
@@ -779,9 +779,9 @@ Transition metals and their complexes can be **paramagnetic** (attracted to a ma
 The number of unpaired electrons determines the magnetic moment (measured in Bohr magnetons,
 $\mu_B$):
 
-$$
+$, $
 \mu \approx \sqrt{n(n + 2)}\ \mu_B
-$$
+$, $
 
 Where $n$ is the number of unpaired electrons.
 
@@ -795,9 +795,9 @@ When atoms absorb energy (e.g., from heat or electricity), electrons are excited
 Levels. When they fall back to lower levels, they emit photons with energies corresponding to the
 Energy differences:
 
-$$
+$, $
 \Delta E = E_{\mathrm{higher}} - E_{\mathrm{lower}} = h\nu = \frac`\{hc}`{\lambda}
-$$
+$, $
 
 Where:
 
@@ -829,9 +829,9 @@ Lower energy level:
 
 The energy levels of hydrogen are given by:
 
-$$
+$, $
 E_n = -\frac{13.6\mathrm{ eV}}{n^2} = -\frac{2.18 \times 10^{-18}\mathrm{ J}}{n^2}
-$$
+$, $
 
 For the Balmer series (transitions to $n = 2$), the first four lines correspond to:
 
@@ -847,9 +847,9 @@ For the Balmer series (transitions to $n = 2$), the first four lines correspond 
 Lines in each series converge at the series limit (the ionization energy). As $n$ increases, the
 Energy levels get closer together and transitions approach a continuum:
 
-$$
+$, $
 E_{\infty} = 0\mathrm{ J} \quad (\mathrm{ionization threshold})
-$$
+$, $
 
 ### Significance
 

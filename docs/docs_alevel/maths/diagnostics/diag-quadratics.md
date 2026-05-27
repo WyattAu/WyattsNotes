@@ -123,10 +123,10 @@ So $u = 0$ or $u = 2$ (both valid since $u \geq 0$).
 
 $$y = 2u - u^2 = -(u^2 - 2u) = -(u-1)^2 + 1$$
 
-This is a downward-opening parabola in $u$ with vertex at $u = 1$. Since $u \geq 0$$u = 1$ is
+This is a downward-opening parabola in $u$ with vertex at $u = 1$. Since $u \geq 0$, $u = 1$ is
 attainable.
 
-At $u = 1$: $x = 0$$y = 1$.
+At $u = 1$: $x = 0$, $y = 1$.
 
 The maximum value of $y$ on $C$ is $\boxed{1}$Occurring at the point $(0, 1)$.
 

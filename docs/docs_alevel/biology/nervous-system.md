@@ -101,7 +101,7 @@ The equilibrium potential for an ion is given by the Nernst equation:
 
 $$E = \frac{RT}{zF} \ln\frac◆LB◆[\text{ion}]_{\text{out}}◆RB◆◆LB◆[\text{ion}]_{\text{in}}◆RB◆$$
 
-Where $R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$$T$ is temperature in Kelvin, $z$ is the ion's
+Where $R = 8.314\ \mathrm{J\ mol^{-1}\ K^{-1}}$, $T$ is temperature in Kelvin, $z$ is the ion's
 charge, and $F = 96485\ \mathrm{C\ mol^{-1}}$.
 
 At body temperature ($37\ ^\circ\mathrm{C} = 310\ \mathrm{K}$):
@@ -380,7 +380,7 @@ intensity of the stimulus.
 | ---------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- |
 | Mechanoreceptors | Pressure, vibration, sound                                              | Skin, inner ear (cochlea)                                       |
 | Thermoreceptors  | Temperature changes                                                     | Skin, hypothalamus                                              |
-| Chemoreceptors   | Chemical concentration (e.g., $\mathrm{O_2}$$\mathrm{CO_2}$Glucose, pH) | Carotid bodies, aortic bodies, taste buds, olfactory epithelium |
+| Chemoreceptors   | Chemical concentration (e.g., $\mathrm{O_2}$, $\mathrm{CO_2}$Glucose, pH) | Carotid bodies, aortic bodies, taste buds, olfactory epithelium |
 | Photoreceptors   | Light                                                                   | Retina (rods and cones)                                         |
 | Nociceptors      | Pain (tissue damage)                                                    | Skin, joints, internal organs                                   |
 | Proprioceptors   | Body position, limb movement                                            | Muscles, tendons, joints                                        |
@@ -1381,7 +1381,7 @@ difficulty with coordination and balance.
 | --------------- | ----------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------- |
 | Mechanoreceptor | Mechanical deformation (pressure, stretch, vibration)             | Skin, inner ear, muscles                                    | Pacinian corpuscle, hair cells in cochlea     |
 | Thermoreceptor  | Temperature change                                                | Skin, hypothalamus                                          | Warm and cold receptors in dermis             |
-| Chemoreceptor   | Chemical concentration ($\mathrm{O_2}$$\mathrm{CO_2}$Glucose, pH) | Carotid body, aortic body, taste buds, olfactory epithelium | Carotid body (detects blood $p\mathrm{CO_2}$) |
+| Chemoreceptor   | Chemical concentration ($\mathrm{O_2}$, $\mathrm{CO_2}$Glucose, pH) | Carotid body, aortic body, taste buds, olfactory epithelium | Carotid body (detects blood $p\mathrm{CO_2}$) |
 | Photoreceptor   | Light intensity (rods) and wavelength (cones)                     | Retina                                                      | Rods and cones                                |
 | Baroreceptor    | Blood pressure change                                             | Aortic arch, carotid sinus                                  | Aortic baroreceptors                          |
 
@@ -1573,7 +1573,7 @@ mechanism of action:
 | Receptor Type                  | Hormone Type                                                           | Mechanism                                                                                                                                                                           | Speed                     |
 | ------------------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | Intracellular (nuclear)        | Steroid hormones (testosterone, oestrogen, cortisol), thyroid hormones | Hormone diffuses through the membrane; binds to intracellular receptor; hormone-receptor complex enters nucleus; acts as a transcription factor, directly affecting gene expression | Slow (hours to days)      |
-| Cell surface (GPCR)            | Peptide hormones (insulin, glucagon, ADH), adrenaline                  | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG}$$\mathrm{Ca^{2+}}$); amplifies signal                                     | Fast (seconds to minutes) |
+| Cell surface (GPCR)            | Peptide hormones (insulin, glucagon, ADH), adrenaline                  | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG}$, $\mathrm{Ca^{2+}}$); amplifies signal                                     | Fast (seconds to minutes) |
 | Cell surface (tyrosine kinase) | Insulin, growth factors                                                | Hormone binds to receptor tyrosine kinase; autophosphorylation; activates intracellular signalling cascade (MAPK, PI3K)                                                             | Minutes to hours          |
 
 ### 27.3 Second Messengers

@@ -1128,7 +1128,7 @@ In an open economy with government:
 
 $$Y = C + I + G + X - M$$
 
-Substituting $C = a + b(Y - T)$$T = tY + T_0$And $M = mY + M_0$:
+Substituting $C = a + b(Y - T)$, $T = tY + T_0$And $M = mY + M_0$:
 
 $$Y = a + b(Y - tY - T_0) + I + G + X - mY - M_0$$
 

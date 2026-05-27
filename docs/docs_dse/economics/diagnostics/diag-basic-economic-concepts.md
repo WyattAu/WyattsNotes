@@ -143,7 +143,7 @@ Answer to the economic concept of scarcity and resource allocation.
 
 **Solution:**
 
-(a) Equilibrium: $500 - 2P = 100 + 3P$So $400 = 5P$$P^* = 80$ ($\$80,000$),
+(a) Equilibrium: $500 - 2P = 100 + 3P$So $400 = 5P$, $P^* = 80$ ($\$80,000$),
 $Q^* = 500 - 2(80) = 340$.
 
 (b) Since healthcare has **positive externalities**, the social benefit exceeds the private benefit,
@@ -220,7 +220,7 @@ Possibilities that were previously unattainable.
 
 **Question:** An economy's PPC for capital goods ($K$) and consumer goods ($C$) is given by
 $K = 200 - 2\sqrt{C}$ for $0 \le C \le 10\,000$. Currently, the economy produces at
-$C = 2500$$K = 100$. (a) Verify that this point is on the PPC. (b) Calculate the opportunity cost of
+$C = 2500$, $K = 100$. (a) Verify that this point is on the PPC. (b) Calculate the opportunity cost of
 increasing consumer goods from 2500 to 3600. (c) If the economy invests in new technology, shifting
 the PPC to $K = 240 - 2\sqrt{C}$Can the economy now produce $C = 3600$ and $K = 120$ simultaneously?
 Show your working. (d) Explain the difference between a movement along the PPC and a shift of the
@@ -233,7 +233,7 @@ is on the PPC. Verified.
 
 (b) At $C = 3600$: $K = 200 - 2\sqrt{3600} = 200 - 2(60) = 200 - 120 = 80$.
 
-Moving from $C = 2500$ to $C = 3600$: $\Delta C = 1100$$\Delta K = 80 - 100 = -20$.
+Moving from $C = 2500$ to $C = 3600$: $\Delta C = 1100$, $\Delta K = 80 - 100 = -20$.
 
 Opportunity cost $= \frac{|\Delta K|}{\Delta C} = \frac{20}{1100} = 0.0182$ units of $K$ per unit of
 $C$.

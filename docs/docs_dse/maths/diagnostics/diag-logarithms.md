@@ -117,7 +117,7 @@ Solve $2\log_x 4 - \log_4 x = 1$.
 
 Using change of base: $\log_x 4 = \dfrac{\log_4 4}{\log_4 x} = \dfrac{1}{\log_4 x}$.
 
-Let $u = \log_4 x$ (domain: $x > 0$$x \neq 1$So $u \neq 0$).
+Let $u = \log_4 x$ (domain: $x > 0$, $x \neq 1$So $u \neq 0$).
 
 $$\frac{2}{u} - u = 1$$
 
@@ -368,7 +368,7 @@ Since $y > 0$: $y = -1 + \sqrt{33}$.
 
 $x = y + 2 = 1 + \sqrt{33}$.
 
-Check domain: $x > 0$$y > 0$$x - y > 0$. All satisfied.
+Check domain: $x > 0$, $y > 0$, $x - y > 0$. All satisfied.
 
 ---
 

@@ -146,7 +146,7 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 **(a)** Show that $f(x) = 0$ has exactly one real root.
 
-**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$$x_2$And $x_3$.
+**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$, $x_2$And $x_3$.
 Describe the behaviour of the iteration.
 
 **(c)** Explain why the iteration fails to converge.
@@ -238,7 +238,7 @@ Excluded values: $x = -3$ (denominator zero) and $x = 2$ (denominator zero).
 
 **Step 5: Assemble the solution.**
 
-The expression is non-negative when $x \lt -3$$1 \leq x \lt 2$Or $x \gt 2$.
+The expression is non-negative when $x \lt -3$, $1 \leq x \lt 2$Or $x \gt 2$.
 
 $$x \in (-\infty, -3) \cup [1, 2) \cup (2, \infty)$$
 
@@ -317,7 +317,7 @@ excluded value of $g$ (which is $3$). The former is much more restrictive.
 
 **Step 1: Partial fraction decomposition.**
 
-We seek constants $A$$B$$C$ such that:
+We seek constants $A$, $B$, $C$ such that:
 
 $$\frac{1}{r(r+1)(r+2)} = \frac{A}{r} + \frac{B}{r+1} + \frac{C}{r+2}$$
 
@@ -507,9 +507,9 @@ $(1, 0)$ is a global (and local) minimum.
 **(a)** By LIATE (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential), $\ln x$ is
 prioritised for $u$.
 
-Set $u = \ln x$$\frac{dv}{dx} = x^3$.
+Set $u = \ln x$, $\frac{dv}{dx} = x^3$.
 
-$du = \frac{1}{x}\, dx$$v = \frac{x^4}{4}$.
+$du = \frac{1}{x}\, dx$, $v = \frac{x^4}{4}$.
 
 $$\int x^3 \ln x\, dx = \frac{x^4}{4}\ln x - \int \frac{x^4}{4} \cdot \frac{1}{x}\, dx$$
 
@@ -561,7 +561,7 @@ $\begin{pmatrix} 7 \\ -1 \\ 6 \end{pmatrix}$.
 
 **(b)** For $a = 3$: the lines are not parallel. Check for intersection:
 
-From the first and third equations: $s = 3$$t = 3$.
+From the first and third equations: $s = 3$, $t = 3$.
 
 Second equation: $2 - 3 = 1 + 3(3) = 10$Giving $-1 = 10$Which is false.
 
@@ -617,15 +617,15 @@ the left of the local maximum). So there is exactly one real root.
 
 **(b)** $f'(x) = 3x^2 - 2$. Newton-Raphson: $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$.
 
-$x_0 = 0$: $f(0) = 2$$f'(0) = -2$.
+$x_0 = 0$: $f(0) = 2$, $f'(0) = -2$.
 
 $$x_1 = 0 - \frac{2}{-2} = 1$$
 
-$x_1 = 1$: $f(1) = 1$$f'(1) = 1$.
+$x_1 = 1$: $f(1) = 1$, $f'(1) = 1$.
 
 $$x_2 = 1 - \frac{1}{1} = 0$$
 
-$x_2 = 0$: $f(0) = 2$$f'(0) = -2$.
+$x_2 = 0$: $f(0) = 2$, $f'(0) = -2$.
 
 $$x_3 = 0 - \frac{2}{-2} = 1$$
 

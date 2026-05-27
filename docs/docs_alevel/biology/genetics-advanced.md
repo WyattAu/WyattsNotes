@@ -258,7 +258,7 @@ $$\sigma_q = \sqrt◆LB◆\frac{pq}{2N}◆RB◆$$
 
 Where $N$ is the effective population size.
 
-**Worked Example.** In a population of $N = 100$ with $p = 0.5$$q = 0.5$:
+**Worked Example.** In a population of $N = 100$ with $p = 0.5$, $q = 0.5$:
 
 $$\sigma_q = \sqrt◆LB◆\frac{0.5 \times 0.5}{2 \times 100}◆RB◆ = \sqrt◆LB◆\frac{0.25}{200}◆RB◆ = \sqrt{0.00125} = 0.0354$$
 
@@ -693,8 +693,8 @@ $$\text{Expected DCO frequency} = \text{RF}_{AB} \times \text{RF}_{BC}$$
 
 $$\text{Interference} = 1 - \text{Coincidence}$$
 
-**Worked Example.** Three genes ($A$$B$$C$) are mapped.
-$\text{RF}_{AB} = 15\%$$\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
+**Worked Example.** Three genes ($A$, $B$, $C$) are mapped.
+$\text{RF}_{AB} = 15\%$, $\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
 
 Expected DCO $= 0.15 \times 0.10 = 0.015 = 1.5\%$.
 

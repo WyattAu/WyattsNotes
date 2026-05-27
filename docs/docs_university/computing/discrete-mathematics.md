@@ -138,7 +138,7 @@ connective Has **introduction rules** (how to _derive_ a formula with that conne
 
 | Rule          | Premises                           | Conclusion  |
 | ------------- | ---------------------------------- | ----------- |
-| $\land$-I     | $A$$B$                             | $A \land B$ |
+| $\land$-I     | $A$, $B$                             | $A \land B$ |
 | $\land$-E$_1$ | $A \land B$                        | $A$         |
 | $\land$-E$_2$ | $A \land B$                        | $B$         |
 | $\lor$-I$_1$  | $A$                                | $A \lor B$  |
@@ -356,7 +356,7 @@ A **binary relation** $R$ from set $A$ to set $B$ is a subset of $A \times B$.
 
 A relation $R$ on $A$ is:
 
-- **Reflexive:** $\forall a \in A$$(a,a) \in R$.
+- **Reflexive:** $\forall a \in A$, $(a,a) \in R$.
 - **Symmetric:** $(a,b) \in R \implies (b,a) \in R$.
 - **Antisymmetric:** $(a,b) \in R$ and $(b,a) \in R \implies a = b$.
 - **Transitive:** $(a,b) \in R$ and $(b,c) \in R \implies $(a,c) \in R$.
@@ -642,7 +642,7 @@ $m \in S$. Therefore $S = \emptyset$ and $P(n)$ holds for all $n \geq 0$.
 
 _Proof (induction implies WOP)._ Let $S \subseteq \mathbb{{'}N{}'}$ be nonempty. We prove by
 induction that If $S \cap \\{0, 1, \ldots, n\\} \neq \emptyset$Then $S$ has a least element. For
-$n = 0$$S$ Contains $0$Which is the least element. Assume the claim for $n = k$. If
+$n = 0$, $S$ Contains $0$Which is the least element. Assume the claim for $n = k$. If
 $0 \in S \cap \\{0, \ldots, k+1\\}$ Then $0$ is the least element. Otherwise
 $S \cap \\{0, \ldots, k+1\\} = S \cap \\{1, \ldots, k+1\\}$And by The induction hypothesis applied
 to the shifted set, a least element exists. $\blacksquare$
@@ -942,7 +942,7 @@ $E \subseteq V \times V$.
 - **Directed graph (digraph):** edges have direction.
 - **Weighted graph:** edges have weights.
 
-The **degree** of a vertex $v$$\deg(v)$Is the number of edges incident to $v$.
+The **degree** of a vertex $v$, $\deg(v)$Is the number of edges incident to $v$.
 
 **Theorem 5.1 (Handshaking Lemma).** $\sum_{v \in V} \deg(v) = 2|E|$.
 
@@ -982,7 +982,7 @@ With $V$ vertices, $E$ edges, and $F$ faces:
 
 $$V - E + F = 2$$
 
-_Proof sketch._ Build the graph edge by edge. Starting from a single vertex ($V = 1$$E = 0$$F = 1$),
+_Proof sketch._ Build the graph edge by edge. Starting from a single vertex ($V = 1$, $E = 0$, $F = 1$),
 The quantity $V - E + F = 2$ is preserved when adding an edge: if the edge connects two components,
 $E$ and $V$ each increase by 1; if it splits a face, $E$ and $F$ each increase by 1. $\blacksquare$
 
@@ -1201,7 +1201,7 @@ $|N(\\{x\\})| \geq 1$ So $x$ has a neighbour, and we can match $x$ to it.
 
 Inductive step. Consider two cases.
 
-_Case 1:_ For every nonempty proper subset $S \subsetneq X$$|N(S)| \gt |S|$. Pick any edge $xy$. In
+_Case 1:_ For every nonempty proper subset $S \subsetneq X$, $|N(S)| \gt |S|$. Pick any edge $xy$. In
 $G' = G - \\{x, y\\}$Hall's condition still holds (removing one element from each side preserves the
 Strict inequality). By the induction hypothesis, $X \setminus \\{x\\}$ can be matched in $G'$.
 Adding $xy$ Gives the desired matching.
@@ -1297,17 +1297,17 @@ $(A_1 + A_2 n + \cdots + A_m n^◆LB◆m-1◆RB◆) r^n$.
 
 ### 6.3 Worked Example
 
-**Problem.** Solve $a_n = 5a_◆LB◆n-1◆RB◆ - 6a_◆LB◆n-2◆RB◆$ with $a_0 = 1$$a_1 = 4$.
+**Problem.** Solve $a_n = 5a_◆LB◆n-1◆RB◆ - 6a_◆LB◆n-2◆RB◆$ with $a_0 = 1$, $a_1 = 4$.
 
-_Solution._ Characteristic equation: $r^2 - 5r + 6 = 0$Giving $r_1 = 2$$r_2 = 3$.
+_Solution._ Characteristic equation: $r^2 - 5r + 6 = 0$Giving $r_1 = 2$, $r_2 = 3$.
 
 $a_n = A \cdot 2^n + B \cdot 3^n$.
 
 From initial conditions: $a_0 = A + B = 1$ $a_1 = 2A + 3B = 4$
 
-Solving: $B = 2$$A = -1$. So $a_n = -2^n + 2 \cdot 3^n = 2 \cdot 3^n - 2^n$. $\blacksquare$
+Solving: $B = 2$, $A = -1$. So $a_n = -2^n + 2 \cdot 3^n = 2 \cdot 3^n - 2^n$. $\blacksquare$
 
-**Worked Example.** Solve $a_n = 4a_{n-1} - 4a_{n-2}$ with $a_0 = 1$$a_1 = 6$.
+**Worked Example.** Solve $a_n = 4a_{n-1} - 4a_{n-2}$ with $a_0 = 1$, $a_1 = 6$.
 
 <details>
 <summary>Solution</summary>
@@ -1336,7 +1336,7 @@ Generating functions can solve recurrences by converting them to algebraic equat
 extracting coefficients.
 
 **Worked Example.** Use generating functions to solve the Fibonacci recurrence
-$F_n = F_◆LB◆n-1◆RB◆ + F_◆LB◆n-2◆RB◆$ With $F_0 = 0$$F_1 = 1$.
+$F_n = F_◆LB◆n-1◆RB◆ + F_◆LB◆n-2◆RB◆$ With $F_0 = 0$, $F_1 = 1$.
 
 <details>
 <summary>Solution</summary>
@@ -1370,7 +1370,7 @@ $$(1 - 2x) G(x) = \frac◆LB◆x◆RB◆◆LB◆1-x◆RB◆ \implies G(x) = \fra
 Partial fractions: $\frac{x}{(1-x)(1-2x)} = \frac{A}{1-x} + \frac{B}{1-2x}$.
 
 $x = A(1-2x) + B(1-x)$. Setting $x = 0$: $A + B = 0$So $B = -A$. Setting $x = 1$: $1 = -A$So
-$A = -1$$B = 1$.
+$A = -1$, $B = 1$.
 
 $G(x) = \frac◆LB◆1◆RB◆◆LB◆1-2x◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆1-x◆RB◆$Giving $a_n = 2^n - 1$. $\blacksquare$
 
@@ -1386,7 +1386,7 @@ The Master Theorem provides asymptotic solutions to recurrences of the form
 
 $$T(n) = a\,T(n/b) + f(n)$$
 
-Where $a \geq 1$$b \gt 1$ are constants and $f(n)$ is asymptotically positive. Define
+Where $a \geq 1$, $b \gt 1$ are constants and $f(n)$ is asymptotically positive. Define
 $c_{\mathrm{crit{}} = \log_b a$ (the **critical exponent**).
 
 **Theorem 6.1 (Master Theorem).** Let $T(n)$ be defined as above.
@@ -1406,7 +1406,7 @@ condition**), then $T(n) = \Theta(f(n))$.
 <details>
 <summary>Solution</summary>
 
-$a = 3$$b = 2$$f(n) = n^2$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 3 \approx 1.585$.
+$a = 3$, $b = 2$, $f(n) = n^2$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 3 \approx 1.585$.
 
 Since $f(n) = n^2 = \Omega(n^c)$ for any $c \lt 2$And $2 \gt 1.585 = c_{\mathrm{crit{}}$We are in
 Case 3 (provided the regularity condition holds). Check:
@@ -1421,7 +1421,7 @@ Therefore $T(n) = \Theta(n^2)$.
 <details>
 <summary>Solution</summary>
 
-$a = 2$$b = 2$$f(n) = n$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 2 = 1$.
+$a = 2$, $b = 2$, $f(n) = n$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 2 = 1$.
 
 $f(n) = n = \Theta(n^1 \log^0 n)$So we are in Case 2 with $k = 0$.
 
@@ -1434,7 +1434,7 @@ Therefore $T(n) = \Theta(n \log n)$.
 <details>
 <summary>Solution</summary>
 
-$a = 4$$b = 2$$f(n) = n$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 4 = 2$.
+$a = 4$, $b = 2$, $f(n) = n$. Critical exponent: $c_{\mathrm{crit{}} = \log_2 4 = 2$.
 
 $f(n) = n = O(n^c)$ for any $c \gt 0$ with $c \lt 2$So we are in Case 1.
 

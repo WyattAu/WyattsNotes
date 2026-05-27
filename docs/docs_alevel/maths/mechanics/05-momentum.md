@@ -99,8 +99,8 @@ $$J = \int_{t_1}^{t_2}F(t)\,dt$$
 
 ### 4.1 Direct collisions
 
-For a one-dimensional collision between masses $m_1$ and $m_2$ with velocities $u_1$$u_2$ before And
-$v_1$$v_2$ after:
+For a one-dimensional collision between masses $m_1$ and $m_2$ with velocities $u_1$, $u_2$ before And
+$v_1$, $v_2$ after:
 
 $$m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$$
 
@@ -172,7 +172,7 @@ $\Delta\mathrm{KE} \geq 0$. From the energy loss formula in Section 5.3:
 
 $$\Delta\mathrm{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2) \geq 0$$
 
-Since $\frac{1}{2} \gt 0$$\frac{m_1m_2}{m_1+m_2} \gt 0$ (for positive masses), and
+Since $\frac{1}{2} \gt 0$, $\frac{m_1m_2}{m_1+m_2} \gt 0$ (for positive masses), and
 $(u_1-u_2)^2 \geq 0$We must have:
 
 $$1 - e^2 \geq 0 \implies e^2 \leq 1 \implies e \leq 1$$
@@ -259,12 +259,12 @@ Particles have speed $3\,\mathrm{m/s}$ after collision. Find $\theta$.
 
 **Solution.** Let the original direction be the positive $x$-axis.
 
-Initial momentum: $p_x = 3 \times 4 = 12$$p_y = 0$.
+Initial momentum: $p_x = 3 \times 4 = 12$, $p_y = 0$.
 
 After collision:
 
-- $3\,\mathrm{kg}$ particle: $v_{x} = 3\cos 30° = 1.5\sqrt{3}$$v_{y} = 3\sin 30° = 1.5$
-- $2\,\mathrm{kg}$ particle: $v_{x} = 3\cos\theta$$v_{y} = -3\sin\theta$
+- $3\,\mathrm{kg}$ particle: $v_{x} = 3\cos 30° = 1.5\sqrt{3}$, $v_{y} = 3\sin 30° = 1.5$
+- $2\,\mathrm{kg}$ particle: $v_{x} = 3\cos\theta$, $v_{y} = -3\sin\theta$
 
 $x$-momentum: $3(1.5\sqrt{3}) + 2(3\cos\theta) = 12 \implies 4.5\sqrt{3} + 6\cos\theta = 12$
 
@@ -277,8 +277,8 @@ $3(1.5) + 2(-3\sin\theta) = 0 \implies 4.5 = 6\sin\theta \implies \sin\theta = 0
 $\theta \approx 48.6^\circ$.
 
 The slight discrepancy arises from rounding $1.5\sqrt{3}$. Using exact values:
-$1.5\sqrt{3} = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$$12 - 4.5\sqrt{3} = 12 - \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
-From $y$: $\sin\theta = 0.75$$\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From
+$1.5\sqrt{3} = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $12 - 4.5\sqrt{3} = 12 - \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
+From $y$: $\sin\theta = 0.75$, $\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From
 $x$: $\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated
 speeds Are not exactly consistent with momentum conservation — a useful check in exam problems.
 
@@ -321,12 +321,12 @@ direction of each sphere after collision.
 **Before collision:**
 
 - $A$:
-  $u_{A,\parallel} = 5\cos 30° = \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$$u_{A,\perp} = 5\sin 30° = 2.5$
-- $B$: $u_{B,\parallel} = 0$$u_{B,\perp} = 0$
+  $u_{A,\parallel} = 5\cos 30° = \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $u_{A,\perp} = 5\sin 30° = 2.5$
+- $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 0$
 
 **After collision (perpendicular unchanged):**
 
-- $v_{A,\perp} = 2.5\,\mathrm{m/s}$$v_{B,\perp} = 0$
+- $v_{A,\perp} = 2.5\,\mathrm{m/s}$, $v_{B,\perp} = 0$
 
 **Along the line of centres (1D collision with $e = 0.6$):**
 
@@ -435,7 +435,7 @@ A ball of mass $0.3\,\mathrm{kg}$ moving at $8\,\mathrm{m/s}$ strikes a wall and
 
 <details>
 <summary>Solution 1</summary>
-Taking initial direction as positive: $u = 8$$v = -5$.
+Taking initial direction as positive: $u = 8$, $v = -5$.
 
 $J = m(v - u) = 0.3(-5 - 8) = 0.3(-13) = -3.9\,\mathrm{Ns}$.
 
@@ -575,7 +575,7 @@ A ball of mass $0.2\,\mathrm{kg}$ hits a vertical wall at $12\,\mathrm{m/s}$ at 
 
 <details>
 <summary>Solution 9</summary>
-Perpendicular to wall (normal): $u_n = 12\cos 30° = 6\sqrt{3}$$v_n = -e \cdot u_n = -0.7(6\sqrt{3}) = -4.2\sqrt{3}$.
+Perpendicular to wall (normal): $u_n = 12\cos 30° = 6\sqrt{3}$, $v_n = -e \cdot u_n = -0.7(6\sqrt{3}) = -4.2\sqrt{3}$.
 
 $J_n = m(v_n - u_n) = 0.2(-4.2\sqrt{3} - 6\sqrt{3}) = 0.2(-10.2\sqrt{3}) = -2.04\sqrt{3} \approx -3.53\,\mathrm{Ns}$.
 
@@ -592,7 +592,7 @@ Two bodies of masses $m$ and $2m$ collide. Before collision, they move towards e
 
 <details>
 <summary>Solution 10</summary>
-Taking the direction of $m$ as positive. $u_1 = u$$u_2 = -2u$.
+Taking the direction of $m$ as positive. $u_1 = u$, $u_2 = -2u$.
 
 Momentum: $mu + 2m(-2u) = mv_1 + 2mv_2 \implies -3mu = m(v_1 + 2v_2) \implies v_1 + 2v_2 = -3u$.
 
@@ -603,11 +603,11 @@ $v_2 \lt -3u/2 \lt 0$. Contradiction.
 
 Let me reconsider: "same direction" means both in the direction of the $2m$ body.
 
-Taking $2m$ direction as positive: $u_1 = -u$$u_2 = 2u$.
+Taking $2m$ direction as positive: $u_1 = -u$, $u_2 = 2u$.
 
 Momentum: $-mu + 4mu = mv_1 + 2mv_2 \implies v_1 + 2v_2 = 3u$.
 
-Both move in positive direction: $v_1 \gt 0$$v_2 \gt 0$.
+Both move in positive direction: $v_1 \gt 0$, $v_2 \gt 0$.
 
 $e = \dfrac{v_2 - v_1}{u_1 - u_2} = \dfrac{v_2 - v_1}{-u - 2u} = \dfrac{v_2 - v_1}{-3u} = \dfrac{v_1 - v_2}{3u}$.
 
@@ -616,7 +616,7 @@ From $v_1 = 3u - 2v_2$: $v_1 - v_2 = 3u - 3v_2 = 3(u - v_2)$.
 $e = \dfrac{3(u-v_2)}{3u} = \dfrac{u-v_2}{u} = 1 - \dfrac{v_2}{u}$.
 
 Since $v_2 \gt 0$: $e \lt 1$. Also from $v_1 \gt 0$: $3u \gt 2v_2 \implies v_2 \lt 1.5u$ So
-$e \gt 1 - 1.5 = -0.5$. And since $v_2 \gt 0$$e \lt 1$.
+$e \gt 1 - 1.5 = -0.5$. And since $v_2 \gt 0$, $e \lt 1$.
 
 But we need both to move in the same direction. $v_2 \gt 0$ and
 $v_1 = 3u - 2v_2 \gt 0 \implies v_2 \lt 1.5u$.
@@ -636,7 +636,7 @@ if $v_2 \gt v_1$. This gives $e \lt 0$ which isn't physical.
 
 Let me re-examine. With original convention (positive = direction of $m$ body before collision):
 
-$u_1 = u$$u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt 0$ $v_2 \lt 0$.
+$u_1 = u$, $u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt 0$ $v_2 \lt 0$.
 
 $v_1 + 2v_2 = -3u$. $e = \dfrac{v_2 - v_1}{u - (-2u)} = \dfrac{v_2 - v_1}{3u}$.
 
@@ -669,7 +669,7 @@ Before explosion, total momentum is zero (particle at rest).
 
 After explosion, resolving into horizontal ($x$) and vertical ($y$):
 
-$1\,\mathrm{kg}$ fragment: $p_x = 1 \times 12\cos 60° = 6$$p_y = 1 \times 12\sin 60° = 6\sqrt{3}$.
+$1\,\mathrm{kg}$ fragment: $p_x = 1 \times 12\cos 60° = 6$, $p_y = 1 \times 12\sin 60° = 6\sqrt{3}$.
 
 By conservation: $3\,v_x + 6 = 0 \implies v_x = -2\,\mathrm{m/s}$.
 $3\,v_y + 6\sqrt{3} = 0 \implies v_y = -2\sqrt{3}\,\mathrm{m/s}$.
@@ -698,7 +698,7 @@ $\beta = 65^\circ$ after.
 
 $\tan\beta = \dfrac◆LB◆\tan\alpha◆RB◆◆LB◆e◆RB◆ \implies e = \dfrac◆LB◆\tan\alpha◆RB◆◆LB◆\tan\beta◆RB◆ = \dfrac◆LB◆\tan 50°◆RB◆◆LB◆\tan 65°◆RB◆$.
 
-$\tan 50° \approx 1.192$$\tan 65° \approx 2.145$.
+$\tan 50° \approx 1.192$, $\tan 65° \approx 2.145$.
 
 $e \approx \dfrac{1.192}{2.145} \approx 0.556$.
 
@@ -726,12 +726,12 @@ Perpendicular (vertical).
 
 **Before collision:**
 
-- $A$: $u_{A,\parallel} = 6$$u_{A,\perp} = 0$
-- $B$: $u_{B,\parallel} = 0$$u_{B,\perp} = 2$
+- $A$: $u_{A,\parallel} = 6$, $u_{A,\perp} = 0$
+- $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 2$
 
 **After collision (perpendicular unchanged):**
 
-- $v_{A,\perp} = 0$$v_{B,\perp} = 2\,\mathrm{m/s}$
+- $v_{A,\perp} = 0$, $v_{B,\perp} = 2\,\mathrm{m/s}$
 
 **Along the line of centres:**
 
@@ -772,7 +772,7 @@ $$\Delta\mathrm{KE} = \frac{1}{2}\frac{m_1m_2}{m_1+m_2}(u_1-u_2)^2(1-e^2)$$
 
 If $e \gt 1$Then $e^2 \gt 1$ and $1 - e^2 \lt 0$.
 
-Since $\frac{1}{2} \gt 0$$\frac{m_1m_2}{m_1+m_2} \gt 0$ (for positive masses), and
+Since $\frac{1}{2} \gt 0$, $\frac{m_1m_2}{m_1+m_2} \gt 0$ (for positive masses), and
 $(u_1-u_2)^2 \geq 0$We get $\Delta\mathrm{KE} \lt 0$.
 
 $\Delta\mathrm{KE} \lt 0$ means
@@ -830,12 +830,12 @@ Resolve parallel ($\parallel$) and perpendicular ($\perp$) to the line of centre
 
 **Before collision:**
 
-- $A$: $u_{A,\parallel} = u\cos\theta$$u_{A,\perp} = u\sin\theta$
-- $B$: $u_{B,\parallel} = 0$$u_{B,\perp} = 0$
+- $A$: $u_{A,\parallel} = u\cos\theta$, $u_{A,\perp} = u\sin\theta$
+- $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 0$
 
 **After collision:**
 
-Perpendicular unchanged: $v_{A,\perp} = u\sin\theta$$v_{B,\perp} = 0$.
+Perpendicular unchanged: $v_{A,\perp} = u\sin\theta$, $v_{B,\perp} = 0$.
 
 Along line of centres (equal masses, use standard 1D result):
 

@@ -278,7 +278,7 @@ The original data.
 
 <details>
 <summary>Problem 1</summary>
-Calculate the PMCC for the data: $(1,2)$$(2,3)$$(3,5)$$(4,4)$$(5,7)$.
+Calculate the PMCC for the data: $(1,2)$, $(2,3)$, $(3,5)$, $(4,4)$, $(5,7)$.
 </details>
 
 <details>

@@ -33,7 +33,7 @@ Follows from:
 
 ### 1.2 Deriving Individual Demand from Utility Maximisation
 
-Consider a consumer with utility function $U(x, y)$ facing prices $P_x$$P_y$ and income $M$. The
+Consider a consumer with utility function $U(x, y)$ facing prices $P_x$, $P_y$ and income $M$. The
 Consumer solves:
 
 $$
@@ -322,7 +322,7 @@ CIE Uses the point elasticity formula. Check your board's preference. :::
 ## 7. Problem Set
 
 **Problem 1.** A consumer has utility $U(x, y) = x^{0.5}y^{0.5}$Income $M = 100$And faces prices
-$P_x = 4$$P_y = 2$. Derive the demand functions for $x$ and $y$. What happens to demand for $x$ if
+$P_x = 4$, $P_y = 2$. Derive the demand functions for $x$ and $y$. What happens to demand for $x$ if
 $P_x$ rises to 5?
 
 <details>
@@ -516,7 +516,7 @@ The more inelastic side bears a greater share of the tax burden.
 **Example.** Demand: $Q_D = 150 - P$. Supply: $Q_S = 2P - 30$. A specific tax of $t = 10$ per unit
 Is imposed.
 
-**Answer.** Original equilibrium: $150 - P = 2P - 30 \implies P^* = 60$$Q^* = 90$.
+**Answer.** Original equilibrium: $150 - P = 2P - 30 \implies P^* = 60$, $Q^* = 90$.
 
 With tax, supply shifts: $P_s = P_d - 10$. New supply: $Q_S = 2(P_d - 10) - 30 = 2P_d - 50$.
 

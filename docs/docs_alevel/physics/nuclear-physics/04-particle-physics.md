@@ -18,8 +18,8 @@ slug: particle-physics
 The Standard Model classifies all known fundamental particles and their interactions. It describes:
 
 - **12 fermions** (matter particles): 6 quarks and 6 leptons, each with an antiparticle.
-- **5 gauge bosons** (force carriers): photon, $W^+$$W^-$$Z^0$Gluon (8 types).
-- **1 scalar boson:** Higgs ($H^0$), responsible for giving mass to $W$$Z$ bosons and fermions.
+- **5 gauge bosons** (force carriers): photon, $W^+$, $W^-$, $Z^0$Gluon (8 types).
+- **1 scalar boson:** Higgs ($H^0$), responsible for giving mass to $W$, $Z$ bosons and fermions.
 
 ### The Four Fundamental Interactions
 
@@ -27,7 +27,7 @@ The Standard Model classifies all known fundamental particles and their interact
 | --------------- | ----------------------- | ----------------- | ----------------- | ----------------- |
 | Electromagnetic | Photon ($\gamma$)       | Charged particles | Infinite          | $\sim 10^{-2}$    |
 | Strong (colour) | Gluon ($g$)             | Quarks, gluons    | $\sim 10^{-15}$ m | $\sim 1$          |
-| Weak            | $W^\pm$$Z^0$            | All fermions      | $\sim 10^{-18}$ m | $\sim 10^{-6}$    |
+| Weak            | $W^\pm$, $Z^0$            | All fermions      | $\sim 10^{-18}$ m | $\sim 10^{-6}$    |
 | Gravitational   | Graviton (hypothetical) | All mass/energy   | Infinite          | $\sim 10^{-39}$   |
 
 ## 2. Quarks
@@ -72,11 +72,11 @@ Leptons are fundamental particles that do **not** experience the strong force.
 | 2          | Muon ($\mu^-$)   | Muon neutrino ($\nu_\mu$)   |
 | 3          | Tau ($\tau^-$)   | Tau neutrino ($\nu_\tau$)   |
 
-Each lepton has a corresponding antiparticle ($e^+$$\bar{\nu}_e$Etc.).
+Each lepton has a corresponding antiparticle ($e^+$, $\bar{\nu}_e$Etc.).
 
 ### Conservation of Lepton Number
 
-Lepton number $L_e$$L_\mu$$L_\tau$ are conserved separately in all interactions. For example, In
+Lepton number $L_e$, $L_\mu$, $L_\tau$ are conserved separately in all interactions. For example, In
 beta-minus decay:
 
 $$n \to p + e^- + \bar{\nu}_e$$
@@ -139,7 +139,7 @@ In all particle interactions, the following quantities are **always conserved**:
 | Energy                               | Yes                            |
 | Momentum                             | Yes                            |
 | Electric charge                      | Yes                            |
-| Lepton number ($L_e$$L_\mu$$L_\tau$) | Yes                            |
+| Lepton number ($L_e$, $L_\mu$, $L_\tau$) | Yes                            |
 | Baryon number ($B$)                  | Yes                            |
 | Strangeness ($S$)                    | Strong and EM only (not weak)  |
 
@@ -207,7 +207,7 @@ A mathematical term in the perturbation theory expansion of the interaction ampl
 
 - Straight lines: fermions (quarks, leptons).
 - Wavy lines: photons (electromagnetic interaction).
-- Wavy/spring lines with arrow: $W^\pm$$Z^0$ bosons (weak interaction).
+- Wavy/spring lines with arrow: $W^\pm$, $Z^0$ bosons (weak interaction).
 - Curly lines: gluons (strong interaction).
 - Time flows from left to right.
 - Particles are labelled with their symbols.

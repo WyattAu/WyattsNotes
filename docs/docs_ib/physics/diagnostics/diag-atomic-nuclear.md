@@ -88,7 +88,7 @@ $\text{Ba-141}$ (mass $140.9144\,\text{u}$) and $\text{Kr-92}$ (mass $91.9262\,\
 
 (a) Calculate the mass defect of the fission products and the energy released.
 
-(b) Calculate the binding energy per nucleon of $\text{U-235}$$\text{Ba-141}$And $\text{Kr-92}$And
+(b) Calculate the binding energy per nucleon of $\text{U-235}$, $\text{Ba-141}$And $\text{Kr-92}$And
 explain why fission releases energy.
 
 (c) A student claims that "nuclear fission converts mass directly into energy, which is why it
@@ -109,21 +109,21 @@ Energy released: $E = 0.1859 \times 931.5 = 173.2\,\text{MeV}$
 
 (b) Binding energy per nucleon:
 
-$\text{U-235}$: $Z = 92$$N = 143$. Mass of constituent nucleons:
+$\text{U-235}$: $Z = 92$, $N = 143$. Mass of constituent nucleons:
 $92(1.0073) + 143(1.0087) = 92.6716 + 144.2441 = 236.9157\,\text{u}$
 
 Mass defect: $236.9157 - 235.0439 = 1.8718\,\text{u}$
 
 BE per nucleon: $1.8718 \times 931.5/235 = 7.41\,\text{MeV/nucleon}$
 
-$\text{Ba-141}$: $Z = 56$$N = 85$. Constituent mass:
+$\text{Ba-141}$: $Z = 56$, $N = 85$. Constituent mass:
 $56(1.0073) + 85(1.0087) = 56.4088 + 85.7395 = 142.1483\,\text{u}$
 
 Mass defect: $142.1483 - 140.9144 = 1.2339\,\text{u}$
 
 BE per nucleon: $1.2339 \times 931.5/141 = 8.15\,\text{MeV/nucleon}$
 
-$\text{Kr-92}$: $Z = 36$$N = 56$. Constituent mass:
+$\text{Kr-92}$: $Z = 36$, $N = 56$. Constituent mass:
 $36(1.0073) + 56(1.0087) = 36.2628 + 56.4872 = 92.7500\,\text{u}$
 
 Mass defect: $92.7500 - 91.9262 = 0.8238\,\text{u}$

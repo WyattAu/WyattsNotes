@@ -97,7 +97,7 @@ This is a critical trap: the problem statement says to "verify" elasticity, but 
 shows it is inelastic. The student must trust the calculation over the implication of the wording.
 
 Note: For a truly elastic collision with these initial conditions
-($m_1 = m_2 = 2.0\,\text{kg}$$u_2 = 0$), $m_1$ should stop and $m_2$ should move at
+($m_1 = m_2 = 2.0\,\text{kg}$, $u_2 = 0$), $m_1$ should stop and $m_2$ should move at
 $4.0\,\text{m}\,\text{s}^{-1}$. The given post-collision velocities ($1.0$ and
 $3.0\,\text{m}\,\text{s}^{-1}$) are inconsistent with an elastic collision.
 

@@ -262,7 +262,7 @@ $$\boxed{\sum_{n=0}^{\infty}x^n = \frac{1}{1-x} \quad \mathrm{for } |x| < 1}$$
 
 $\square$
 
-:::tip tip $\dfrac{1}{1+x}$$\ln(1+x)$And $\arctan x$ all derive from it. :::
+:::tip tip $\dfrac{1}{1+x}$, $\ln(1+x)$And $\arctan x$ all derive from it. :::
 
 <hr />
 
@@ -436,8 +436,8 @@ Term.
 <summary>Solution 4</summary>
 
 $f(x) = \sin x$. $f(\pi/3) = \dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$. $f'(x) = \cos x$
-$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$$f''(\pi/3) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
-$f'''(x) = -\cos x$$f'''(\pi/3) = -\dfrac{1}{2}$.
+$f'(\pi/3) = \dfrac{1}{2}$. $f''(x) = -\sin x$, $f''(\pi/3) = -\dfrac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
+$f'''(x) = -\cos x$, $f'''(\pi/3) = -\dfrac{1}{2}$.
 
 $$\sin x = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ + \frac{1}{2}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) - \frac◆LB◆\sqrt{3}◆RB◆◆LB◆4◆RB◆\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^2 - \frac{1}{12}\left(x-\frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^3 + \cdots$$
 
@@ -870,7 +870,7 @@ $$\boxed{e^x\sin x = x + x^2 + \frac{x^3}{3} - \frac{x^4}{6} - \frac{x^5}{30} + 
 
 **Problem.** Find the Taylor series of $\ln x$ about $x = 1$ up to the term in $(x-1)^4$.
 
-**Solution.** $f(x) = \ln x$$f(1) = 0$.
+**Solution.** $f(x) = \ln x$, $f(1) = 0$.
 
 $f'(x) = \dfrac{1}{x}$$f'(1) = 1$. $f''(x) = -\dfrac{1}{x^2}$$f''(1) = -1$.
 $f'''(x) = \dfrac{2}{x^3}$$f'''(1) = 2$. $f^{(4)}(x) = -\dfrac{6}{x^4}$$f^{(4)}(1) = -6$.

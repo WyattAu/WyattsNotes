@@ -103,7 +103,7 @@ The power depends on:
 $0.5\;\mathrm{mm}$. A sample of 16 bolts has mean $50.18\;\mathrm{mm}$. Test at the 5% significance
 Level whether the mean length has changed.
 
-$H_0: \mu = 50$$H_1: \mu \neq 50$ (two-tailed).
+$H_0: \mu = 50$, $H_1: \mu \neq 50$ (two-tailed).
 
 Under $H_0$: $\bar{X} \sim N(50, 0.5^2/16) = N(50, 0.015625)$.
 
@@ -188,7 +188,7 @@ Under $H_0$If $X$ is the number of successes in $n$ trials, then $X \sim B(n, p_
 **Problem.** A coin is tossed 20 times and lands heads 15 times. Test at the 5% significance level
 Whether the coin is biased.
 
-$H_0: p = 0.5$$H_1: p \neq 0.5$ (two-tailed).
+$H_0: p = 0.5$, $H_1: p \neq 0.5$ (two-tailed).
 
 Under $H_0$: $X \sim B(20, 0.5)$.
 
@@ -241,7 +241,7 @@ To rejection of $H_0$. The **acceptance region** is its complement.
 **Problem.** A receptionist receives on average 2 calls per 5 minutes. Over a 5-minute period, she
 Receives 7 calls. Test at the 5% level whether the rate has increased.
 
-$H_0: \lambda = 2$$H_1: \lambda \gt 2$ (upper-tailed).
+$H_0: \lambda = 2$, $H_1: \lambda \gt 2$ (upper-tailed).
 
 Under $H_0$: $X \sim \mathrm{Po}(2)$.
 
@@ -262,7 +262,7 @@ Increased.
 $3\;\mathrm{g}$. A sample of 10 packets has mean mass $248\;\mathrm{g}$. Find the critical region
 For testing whether the mean mass is less than $250\;\mathrm{g}$ at the 1% significance level.
 
-$H_0: \mu = 250$$H_1: \mu \lt 250$.
+$H_0: \mu = 250$, $H_1: \mu \lt 250$.
 
 Under $H_0$: $\bar{X} \sim N(250, 3^2/10) = N(250, 0.9)$.
 
@@ -286,7 +286,7 @@ Die is biased towards showing a six.
 <details>
 <summary>Solution</summary>
 
-$H_0: p = 1/6$$H_1: p \gt 1/6$ (upper-tailed).
+$H_0: p = 1/6$, $H_1: p \gt 1/6$ (upper-tailed).
 
 $X \sim B(30, 1/6)$.
 
@@ -312,7 +312,7 @@ Level.
 <details>
 <summary>Solution</summary>
 
-$H_0: \mu = 500$$H_1: \mu \neq 500$ (two-tailed).
+$H_0: \mu = 500$, $H_1: \mu \neq 500$ (two-tailed).
 
 $\bar{X} \sim N(500, 15^2/25) = N(500, 9)$ approximately.
 
@@ -334,7 +334,7 @@ Increased.
 <details>
 <summary>Solution</summary>
 
-$H_0: \lambda = 3$$H_1: \lambda \gt 3$.
+$H_0: \lambda = 3$, $H_1: \lambda \gt 3$.
 
 $X \sim \mathrm{Po}(3)$.
 

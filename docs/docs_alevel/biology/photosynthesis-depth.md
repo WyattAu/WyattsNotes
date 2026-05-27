@@ -38,7 +38,7 @@ photosynthetic pigments and converted to chemical energy in the form of ATP and 
 | --------------- | ------------------------------------------------- | -------------------------------------------------------------- |
 | Location        | Thylakoid membranes of chloroplasts               | Stroma of chloroplasts                                         |
 | Light required? | Yes (directly)                                    | No (but requires the products of light reactions)              |
-| Inputs          | Light, $\mathrm{H_2O}$$\mathrm{NADP^+}$ADP, $P_i$ | $\mathrm{CO_2}$ATP, $\mathrm{NADPH}$RuBP                       |
+| Inputs          | Light, $\mathrm{H_2O}$, $\mathrm{NADP^+}$ADP, $P_i$ | $\mathrm{CO_2}$ATP, $\mathrm{NADPH}$RuBP                       |
 | Outputs         | $\mathrm{O_2}$ATP, $\mathrm{NADPH}$               | $\mathrm{C_6H_{12}O_6}$ (via G3P), $\mathrm{NADP^+}$ADP, $P_i$ |
 | Main products   | Energy carriers (ATP, NADPH)                      | Triose phosphate (G3P), which can form glucose                 |
 
@@ -394,7 +394,7 @@ factor. At higher light intensities, the $0.10\%\ \mathrm{CO_2}$ curve gives a h
 indicating that $\mathrm{CO_2}$ was limiting at the lower concentration. The $0.10\%\ \mathrm{CO_2}$
 curve continues to rise beyond where the $0.04\%$ curve plateaus.
 
-## 7. $\mathrm{C_3}$$\mathrm{C_4}$And CAM Plants
+## 7. $\mathrm{C_3}$, $\mathrm{C_4}$And CAM Plants
 
 ### 7.1 $\mathrm{C_3}$ Plants
 
@@ -856,7 +856,7 @@ potential mitigation strategies.
 The "Z-scheme" describes the flow of electrons through Photosystems II and I, so named because the
 redox potential traces a Z-shape when plotted:
 
-1. $\mathrm{H_2O}$ is split by PSII (photolysis), releasing $\mathrm{O_2}$$\mathrm{H^+}$And
+1. $\mathrm{H_2O}$ is split by PSII (photolysis), releasing $\mathrm{O_2}$, $\mathrm{H^+}$And
    electrons. The electrons have a relatively low energy (high redox potential, approximately
    $+0.8\ \mathrm{V}$).
 2. Electrons pass through the electron transport chain (plastoquinone, cytochrome
@@ -1411,8 +1411,8 @@ mitigation:
 | Photosynthesis (light reactions) | Thylakoid membrane           | Light, $\mathrm{H_2O}$ADP, $\mathrm{NADP^+}$      | $\mathrm{O_2}$ATP, $\mathrm{NADPH}$                  |
 | Photosynthesis (Calvin cycle)    | Stroma                       | $\mathrm{CO_2}$ATP, $\mathrm{NADPH}$              | TP, GP, RuBP, ADP, $\mathrm{NADP^+}$                 |
 | Glycolysis                       | Cytoplasm                    | Glucose, ATP, $\mathrm{NAD^+}$                    | Pyruvate, ATP (net 2), $\mathrm{NADH}$               |
-| Link reaction                    | Mitochondrial matrix         | Pyruvate, $\mathrm{NAD^+}$CoA                     | Acetyl CoA, $\mathrm{CO_2}$$\mathrm{NADH}$           |
-| Krebs cycle                      | Mitochondrial matrix         | Acetyl CoA, $\mathrm{NAD^+}$FAD                   | $\mathrm{CO_2}$ATP, $\mathrm{NADH}$$\mathrm{FADH_2}$ |
+| Link reaction                    | Mitochondrial matrix         | Pyruvate, $\mathrm{NAD^+}$CoA                     | Acetyl CoA, $\mathrm{CO_2}$, $\mathrm{NADH}$           |
+| Krebs cycle                      | Mitochondrial matrix         | Acetyl CoA, $\mathrm{NAD^+}$FAD                   | $\mathrm{CO_2}$ATP, $\mathrm{NADH}$, $\mathrm{FADH_2}$ |
 | Oxidative phosphorylation        | Inner mitochondrial membrane | $\mathrm{NADH}$$\mathrm{FADH_2}$$\mathrm{O_2}$ADP | $\mathrm{H_2O}$ATP                                   |
 
 The products of photosynthesis (glucose, $\mathrm{O_2}$) are the reactants of respiration. The
@@ -1708,7 +1708,7 @@ The $\mathrm{H^+}$ ions come from the stroma (not the lumen).
 
 **Z-scheme summary:** $\mathrm{H_2O \to PSII \to PQ \to cyt\ b_6f \to PC \to PSI \to Fd \to NADP^+}$
 
-Products of the light reactions: ATP, $\mathrm{NADPH}$$\mathrm{O_2}$.
+Products of the light reactions: ATP, $\mathrm{NADPH}$, $\mathrm{O_2}$.
 
 ### 28.4 Cyclic Photophosphorylation
 

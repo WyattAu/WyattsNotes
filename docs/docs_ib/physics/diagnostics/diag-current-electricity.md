@@ -142,13 +142,13 @@ equals the internal resistance.
 A potential divider consists of two resistors $R_1$ and $R_2$ in series across a $12\,\text{V}$
 supply. The output voltage is taken across $R_2$. A load resistor $R_L$ is connected across $R_2$.
 
-(a) Calculate the output voltage with $R_1 = 10\,\text{k}\Omega$$R_2 = 10\,\text{k}\Omega$And no
+(a) Calculate the output voltage with $R_1 = 10\,\text{k}\Omega$, $R_2 = 10\,\text{k}\Omega$And no
 load.
 
 (b) Calculate the output voltage when $R_L = 10\,\text{k}\Omega$ is connected across $R_2$And
 calculate the percentage change.
 
-(c) Determine the condition on $R_1$$R_2$And $R_L$ for the potential divider to be "stiff" (output
+(c) Determine the condition on $R_1$, $R_2$And $R_L$ for the potential divider to be "stiff" (output
 voltage unaffected by loading), and calculate the minimum value of $R_2$ for the output to change by
 less than $1\%$ when $R_L = 100\,\text{k}\Omega$ is connected.
 
@@ -215,9 +215,9 @@ sensitivity (small resistors) and efficiency (large resistors).
 
 A circuit contains three batteries and four resistors:
 
-- Battery 1: $\varepsilon_1 = 10\,\text{V}$$r_1 = 1.0\,\Omega$
-- Battery 2: $\varepsilon_2 = 6.0\,\text{V}$$r_2 = 0.5\,\Omega$
-- Battery 3: $\varepsilon_3 = 4.0\,\text{V}$$r_3 = 0.5\,\Omega$
+- Battery 1: $\varepsilon_1 = 10\,\text{V}$, $r_1 = 1.0\,\Omega$
+- Battery 2: $\varepsilon_2 = 6.0\,\text{V}$, $r_2 = 0.5\,\Omega$
+- Battery 3: $\varepsilon_3 = 4.0\,\text{V}$, $r_3 = 0.5\,\Omega$
 - Resistor $R_1 = 4.0\,\Omega$ in the left branch (with battery 1)
 - Resistor $R_2 = 6.0\,\Omega$ in the middle branch (with battery 2)
 - Resistor $R_3 = 3.0\,\Omega$ in the right branch (with battery 3)
@@ -410,7 +410,7 @@ $$I_g = \frac{|V_{\text{th}}|}{R_{\text{th}} + R_g} = \frac{0.0364}{167.2 + 50} 
 
 $$I_g \approx \frac{V \cdot \Delta R_4 \cdot R_3}{(R_3 + R_4)^2(R_{\text{th}} + R_g)}$$
 
-For $\Delta R_4 = 5\,\Omega$$I_g = 168\,\mu\text{A}$.
+For $\Delta R_4 = 5\,\Omega$, $I_g = 168\,\mu\text{A}$.
 
 For $I_g = 1.0\,\mu\text{A}$:
 

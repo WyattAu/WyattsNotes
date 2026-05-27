@@ -62,7 +62,7 @@ $$10x + 1100 - 11x = 1081$$
 
 $$-x = -19 \implies x = 19\%$$
 
-$^{10}\mathrm{B = 19\%$$^{11}\mathrm{B = 81\%$.
+$^{10}\mathrm{B = 19\%$, $^{11}\mathrm{B = 81\%$.
 
 **Worked Example 2 (OL):** Calculate the relative atomic mass of neon from its isotopes:
 $^{20}\mathrm{Ne$ (90.5%) and $^{22}\mathrm{Ne$ (9.5%).
@@ -101,7 +101,7 @@ Potassium has 19 electrons. Filling shells: K (2), L (8), M (8), N (1). Configur
 
 ### Subshells and Orbitals (HL)
 
-Shells are divided into subshells: $s$$p$$d$$f$.
+Shells are divided into subshells: $s$, $p$, $d$, $f$.
 
 | Subshell | Orbitals | Max electrons |
 | -------- | -------- | ------------- |
@@ -167,9 +167,9 @@ For the $p$ subshell).
 When hydrogen atoms absorb energy, electrons are excited to higher energy levels. When they return
 To lower levels, they emit photons:
 
-$$
+$, $
 \Delta E = E_{\mathrm{higher} - E_{\mathrm{lower} = hf = \frac{hc}{\lambda}
-$$
+$, $
 
 **Balmer series** (transitions to $n = 2$): visible light.
 
@@ -631,7 +631,7 @@ And scanning electron microscopy (SEM) are two common types.
     pattern.
 
 12. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \mathrm{ m/s$.
-    (Mass of electron $= 9.11 \times 10^{-31} \mathrm{ kg$$h = 6.63 \times 10^{-34} \mathrm{ J s$.)
+    (Mass of electron $= 9.11 \times 10^{-31} \mathrm{ kg$, $h = 6.63 \times 10^{-34} \mathrm{ J s$.)
 
 13. Explain why potassium ($Z = 19$) is placed after argon ($Z = 18$) in the periodic table, despite
     argon having a filled $3p$ subshell and potassium having an electron in the $4s$ subshell.

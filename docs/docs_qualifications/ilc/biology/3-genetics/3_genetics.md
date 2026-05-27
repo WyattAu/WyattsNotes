@@ -258,8 +258,8 @@ Compare to the critical value at the appropriate degrees of freedom
 
 **Worked Example: Hardy-Weinberg with multiple alleles.**
 
-The ABO blood group system has three alleles: $I^A$$I^B$And $i$. In a population, the allele
-Frequencies are $p$$q$And $r$ respectively, with $p + q + r = 1$.
+The ABO blood group system has three alleles: $I^A$, $I^B$And $i$. In a population, the allele
+Frequencies are $p$, $q$And $r$ respectively, with $p + q + r = 1$.
 
 Genotype frequencies are:
 

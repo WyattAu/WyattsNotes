@@ -69,7 +69,7 @@ mathematical Statement or computation with five options (A--E).
 Options can be eliminated immediately by dimensional analysis, symmetry considerations, or testing
 Special cases.
 
-**Test specific values.** If a statement claims a property holds for all $x$Test $x = 0$$x = 1$ And
+**Test specific values.** If a statement claims a property holds for all $x$Test $x = 0$, $x = 1$ And
 $x = -1$. If it fails for any of these, the statement is false.
 
 **Check edge cases.** For statements about functions, consider what happens at the boundaries of the
@@ -413,7 +413,7 @@ a Local minimum.
 
 $$\frac{x^2}{x - 1} = x + 1 + \frac{1}{x - 1}$$
 
-As $x \to \pm\infty$$\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asymptote is $y = x + 1$.
+As $x \to \pm\infty$, $\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asymptote is $y = x + 1$.
 
 **(iii)** Key features for the sketch:
 

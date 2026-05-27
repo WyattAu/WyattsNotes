@@ -92,7 +92,7 @@ And strength of association.
 
 $$r = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2 \cdot \sum(y_i - \bar{y})^2}} = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}}$$
 
-Where $S_{xy} = \sum x_i y_i - n\bar{x}\bar{y}$$S_{xx} = \sum x_i^2 - n\bar{x}^2$And
+Where $S_{xy} = \sum x_i y_i - n\bar{x}\bar{y}$, $S_{xx} = \sum x_i^2 - n\bar{x}^2$And
 $S_{yy} = \sum y_i^2 - n\bar{y}^2$.
 
 **Properties:**

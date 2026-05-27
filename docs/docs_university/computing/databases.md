@@ -153,7 +153,7 @@ possible; `NULL`-padded otherwise.
 **Full outer join** $R \bowtie_◆LB◆\mathrm◆LB◆full◆RB◆ S$: All tuples from both $R$ and $S$.
 
 **Division** $R \div S$: Tuples $t$ in $\pi_◆LB◆R-S◆RB◆(R)$ such that for every tuple
-$s \in S$$(t, s)
+$s \in S$, $(t, s)
 \in R$.
 
 $$R \div S = \pi_◆LB◆R-S◆RB◆(R) - \pi_◆LB◆R-S◆RB◆\Bigl(\bigl(\pi_◆LB◆R-S◆RB◆(R) \times S\bigr) - R\Bigr)$$
@@ -717,14 +717,14 @@ Superkey or $A$ is a prime attribute.
 
 A **prime attribute** is an attribute that belongs to some candidate key.
 
-**Boyce-Codd Normal Form (BCNF).** For every non-trivial FD $X \to A$ in $R$$X$ is a superkey.
+**Boyce-Codd Normal Form (BCNF).** For every non-trivial FD $X \to A$ in $R$, $X$ is a superkey.
 
 **Theorem 4.2.** Every relation in BCNF is in 3NF, but the converse does not hold.
 
 _Proof._ BCNF requires $X$ to be a superkey for every non-trivial FD $X \to A$. 3NF allows $X$ to be
 A superkey **or** $A$ to be prime. Since the BCNF condition is stricter, every BCNF relation is in
 3NF. For the converse, consider $R(A, B, C)$ with FDs $AB \to C$ and $C \to B$. Candidate keys:
-$\\{AB\\}$$\\{AC\\}$. $C \to B$ does not violate 3NF ($B$ is prime) but violates BCNF ($C$ is not a
+$\\{AB\\}$, $\\{AC\\}$. $C \to B$ does not violate 3NF ($B$ is prime) but violates BCNF ($C$ is not a
 Superkey). $\blacksquare$
 
 ### 4.3 Decomposition
@@ -738,7 +738,7 @@ A decomposition of $R$ into $R_1, R_2, \ldots, R_k$ must satisfy:
 **Theorem 4.3 (Lossless-join test).** A decomposition of $R$ into $R_1, R_2$ is lossless if and Only
 if $R_1 \cap R_2 \to R_1$ or $R_1 \cap R_2 \to R_2$.
 
-_Proof._ Let $r$ be an instance of $R$ and let $r_1 = \pi_◆LB◆R_1◆RB◆(r)$$r_2 = \pi_◆LB◆R_2◆RB◆(r)$. We must
+_Proof._ Let $r$ be an instance of $R$ and let $r_1 = \pi_◆LB◆R_1◆RB◆(r)$, $r_2 = \pi_◆LB◆R_2◆RB◆(r)$. We must
 Show $r = r_1 \bowtie r_2$ under the given condition. Since $r_1$ and $r_2$ are projections of $r$
 Every tuple in $r_1 \bowtie r_2$ agrees with some tuple of $r$ on every attribute. It suffices to
 show That no spurious tuple is produced. Suppose $(t_1, t_2) \in r_1 \bowtie r_2$ where
@@ -762,7 +762,7 @@ DBMS can verify relevant FDs locally without joining all decomposed relations.
 ### 4.4 Normalisation Examples
 
 **Example 1.** `Enrolment(StudentID, CourseID, StudentName, Dept, Grade)` with FDs:
-$\mathrm◆LB◆StudentID \to \mathrm◆LB◆StudentName$$\mathrm◆LB◆StudentID \to \mathrm◆LB◆Dept$
+$\mathrm◆LB◆StudentID \to \mathrm◆LB◆StudentName$, $\mathrm◆LB◆StudentID \to \mathrm◆LB◆Dept$
 $\\{\mathrm◆LB◆StudentID, \mathrm◆LB◆CourseID\\} \to \mathrm◆LB◆Grade$.
 
 - Candidate key: $\\{\mathrm◆LB◆StudentID, \mathrm◆LB◆CourseID\\}$.
@@ -792,7 +792,7 @@ $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\} \to \mathrm◆LB◆Instruct
 $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$.
 
 - Candidate keys:
-  $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$$\\{\mathrm◆LB◆Instructor, \mathrm◆LB◆Student\\}$.
+  $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$, $\\{\mathrm◆LB◆Instructor, \mathrm◆LB◆Student\\}$.
 - 3NF check for $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$: Instructor is not a superkey. But Course
   **is** prime (in candidate key $\\{\mathrm◆LB◆Course, \mathrm◆LB◆Student\\}$). So 3NF is satisfied.
 - BCNF check: $\mathrm◆LB◆Instructor \to \mathrm◆LB◆Course$ violates BCNF (Instructor is not a superkey).
@@ -837,7 +837,7 @@ $ED^+$ in $R = \\{E, D, A, B\\}$Which does not include $C$. So $C$ is not determ
 This means $R_2 = \\{A, C, D, E\\}$ has no non-trivial FDs that hold (other than keys determining
 all Attributes). Check: candidate keys of $R_2$ must be superkeys. Since $ED \to A$ holds but $ED$
 does Not determine $C$We need $EDC$ as a key: $EDC^+ = \\{E, D, C, A, B\\} = R$ (all of $R$). So in
-$R_2$$EDC$ is a candidate key (since it determines all attributes of $R_2$: $EDC \to A$ and
+$R_2$, $EDC$ is a candidate key (since it determines all attributes of $R_2$: $EDC \to A$ and
 $A \to
 \varnothing$ in $R_2$, so $EDC^+ = \\{A, C, D, E\\}$). $R_2$ is in BCNF since the only
 non-trivial FD is $ED \to A$ and we need to check if $ED$ is a superkey of $R_2$. Since

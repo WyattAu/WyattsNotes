@@ -191,7 +191,7 @@ Merge sort divides into 2 subproblems of size $n/2$ and combines in $O(n)$ time.
 
 $$T(n) = 2T(n/2) + \Theta(n)$$
 
-Here $a = 2$$b = 2$So $c = \log_2 2 = 1$. We have $f(n) = \Theta(n) = \Theta(n^c \log^0 n)$Which is
+Here $a = 2$, $b = 2$So $c = \log_2 2 = 1$. We have $f(n) = \Theta(n) = \Theta(n^c \log^0 n)$Which is
 Case 2 with $k = 0$.
 
 Therefore $T(n) = \Theta(n^1 \log^1 n) = \Theta(n \log n)$.
@@ -203,7 +203,7 @@ Therefore $T(n) = \Theta(n^1 \log^1 n) = \Theta(n \log n)$.
 
 $$T(n) = T(n/2) + O(1)$$
 
-Here $a = 1$$b = 2$So $c = \log_2 1 = 0$. We have $f(n) = O(1) = O(n^0)$. This matches Case 2 with
+Here $a = 1$, $b = 2$So $c = \log_2 1 = 0$. We have $f(n) = O(1) = O(n^0)$. This matches Case 2 with
 $k = 0$.
 
 Therefore $T(n) = \Theta(\log n)$.
@@ -217,7 +217,7 @@ Strassen's algorithm divides into 7 subproblems of size $n/2$ and combines in $O
 
 $$T(n) = 7T(n/2) + O(n^2)$$
 
-Here $a = 7$$b = 2$So $c = \log_2 7 \approx 2.807$. We have $f(n) = O(n^2) = O(n^◆LB◆c - \varepsilon◆RB◆)$
+Here $a = 7$, $b = 2$So $c = \log_2 7 \approx 2.807$. We have $f(n) = O(n^2) = O(n^◆LB◆c - \varepsilon◆RB◆)$
 with $\varepsilon = c - 2 \approx 0.807$Which is Case 1.
 
 Therefore $T(n) = \Theta(n^◆LB◆\log_2 7◆RB◆) = \Theta(n^◆LB◆2.807◆RB◆)$.
@@ -450,7 +450,7 @@ rotations:
 **Theorem 2.4.** An AVL tree with $n$ nodes has height $h \leq 1.4404 \cdot \log_2(n + 2) - 1.3277$.
 
 _Proof._ Let $N(h)$ be the minimum number of nodes in an AVL tree of height $h$. We have
-$N(0) = 1$$N(1) = 2$And $N(h) = 1 + N(h-1) + N(h-2)$ for $h \geq 2$. This is the Fibonacci
+$N(0) = 1$, $N(1) = 2$And $N(h) = 1 + N(h-1) + N(h-2)$ for $h \geq 2$. This is the Fibonacci
 recurrence, giving $N(h) = F_◆LB◆h+3◆RB◆ - 1$. Using $F_h = \frac◆LB◆\phi^h - \hat◆LB◆\phi◆RB◆^h◆RB◆◆LB◆\sqrt◆LB◆5◆RB◆◆RB◆$ where
 $\phi = \frac◆LB◆1+\sqrt◆LB◆5◆RB◆◆RB◆◆LB◆2◆RB◆$We get $N(h) > \phi^h / \sqrt◆LB◆5◆RB◆ - 1$So
 $h \lt \log_\phi(\sqrt◆LB◆5◆RB◆(n + 1)) \approx 1.4404 \log_2(n + 1)$. $\blacksquare$
@@ -655,13 +655,13 @@ strings.
 <summary>Worked Example: Bloom Filter Operations Trace</summary>
 
 A Bloom filter has $m = 10$ bits, $k = 2$ hash functions:
-$h_1(x) = x \bmod 10$$h_2(x) = (x \cdot 3) \bmod 10$.
+$h_1(x) = x \bmod 10$, $h_2(x) = (x \cdot 3) \bmod 10$.
 
-Insert 15: $h_1(15) = 5$$h_2(15) = 5 \cdot 3 \bmod 10 = 5$. Set bit 5. Bit array: `0000010000`
+Insert 15: $h_1(15) = 5$, $h_2(15) = 5 \cdot 3 \bmod 10 = 5$. Set bit 5. Bit array: `0000010000`
 
-Insert 22: $h_1(22) = 2$$h_2(22) = 22 \cdot 3 \bmod 10 = 6$. Set bits 2, 6. Bit array: `0010010100`
+Insert 22: $h_1(22) = 2$, $h_2(22) = 22 \cdot 3 \bmod 10 = 6$. Set bits 2, 6. Bit array: `0010010100`
 
-Insert 37: $h_1(37) = 7$$h_2(37) = 37 \cdot 3 \bmod 10 = 1$. Set bits 1, 7. Bit array: `0110010110`
+Insert 37: $h_1(37) = 7$, $h_2(37) = 37 \cdot 3 \bmod 10 = 1$. Set bits 1, 7. Bit array: `0110010110`
 
 Query 22: $h_1(22) = 2$ (set), $h_2(22) = 6$ (set). Result: **possibly in set** (true positive).
 
@@ -828,7 +828,7 @@ MergeSort(A, l, r):
 **Theorem 3.1.** Merge sort runs in $O(n \log n)$ time in all cases (best, average, worst).
 
 _Proof._ The recurrence is $T(n) = 2T(n/2) + O(n)$. By the Master theorem (case 2):
-$a = 2$$b = 2$$f(n) = O(n) = O(n^◆LB◆\log_b a◆RB◆)$So $T(n) = O(n \log n)$. $\blacksquare$
+$a = 2$, $b = 2$, $f(n) = O(n) = O(n^◆LB◆\log_b a◆RB◆)$So $T(n) = O(n \log n)$. $\blacksquare$
 
 **Theorem 3.2.** Merge sort is stable and requires $O(n)$ auxiliary space.
 
@@ -1166,7 +1166,7 @@ descendant of $w$Hence of $u$. $\blacksquare$
 ### 4.3 Topological Sort
 
 A **topological ordering** of a DAG is a linear ordering of vertices such that for every directed
-edge $(u, v)$$u$ appears before $v$.
+edge $(u, v)$, $u$ appears before $v$.
 
 **Algorithm:** Run DFS on the DAG. Output vertices in reverse order of finishing times.
 
@@ -1228,7 +1228,7 @@ Dijkstra(G, w, s):
 
 **Theorem 4.7.** Dijkstra's algorithm correctly computes shortest paths from the source.
 
-_Proof._ We prove by induction on $|S|$ that when a vertex $u$ is added to $S$$d[u] = \delta(s, u)$
+_Proof._ We prove by induction on $|S|$ that when a vertex $u$ is added to $S$, $d[u] = \delta(s, u)$
 (the true shortest-path distance).
 
 Base case: $s$ is the first vertex added, and $d[s] = 0 = \delta(s, s)$.
@@ -1255,18 +1255,18 @@ $O(V \log V + E)$. $\blacksquare$
 
 Find shortest paths from $A$ in the graph:
 
-- $A \xrightarrow◆LB◆4◆RB◆ B$$A \xrightarrow◆LB◆2◆RB◆ C$
-- $B \xrightarrow◆LB◆3◆RB◆ D$$B \xrightarrow◆LB◆1◆RB◆ E$
-- $C \xrightarrow◆LB◆1◆RB◆ B$$C \xrightarrow◆LB◆5◆RB◆ D$
+- $A \xrightarrow◆LB◆4◆RB◆ B$, $A \xrightarrow◆LB◆2◆RB◆ C$
+- $B \xrightarrow◆LB◆3◆RB◆ D$, $B \xrightarrow◆LB◆1◆RB◆ E$
+- $C \xrightarrow◆LB◆1◆RB◆ B$, $C \xrightarrow◆LB◆5◆RB◆ D$
 - $D \xrightarrow◆LB◆2◆RB◆ E$
 
-Initial: $d[A]=0$$d[B]=d[C]=d[D]=d[E]=\infty$
+Initial: $d[A]=0$, $d[B]=d[C]=d[D]=d[E]=\infty$
 
-Extract $A$: relax $B \to 4$$C \to 2$. $Q = \\{C(2), B(4), D(\infty), E(\infty)\\}$
+Extract $A$: relax $B \to 4$, $C \to 2$. $Q = \\{C(2), B(4), D(\infty), E(\infty)\\}$
 
-Extract $C$: relax $B \to \min(4, 2+1)=3$$D \to 2+5=7$. $Q = \\{B(3), D(7), E(\infty)\\}$
+Extract $C$: relax $B \to \min(4, 2+1)=3$, $D \to 2+5=7$. $Q = \\{B(3), D(7), E(\infty)\\}$
 
-Extract $B$: relax $D \to \min(7, 3+3)=6$$E \to 3+1=4$. $Q = \\{E(4), D(6)\\}$
+Extract $B$: relax $D \to \min(7, 3+3)=6$, $E \to 3+1=4$. $Q = \\{E(4), D(6)\\}$
 
 Extract $E$: relax $D \to \min(6, 4+2)=6$. $Q = \\{D(6)\\}$
 
@@ -1618,9 +1618,9 @@ i=3:      0  1  1  4  5  6  6  9
 i=4:      0  1  1  4  5  7  8  9
 ```
 
-Maximum value: $dp[4][7] = 9$ (items 2 and 4: $w = 3 + 5 = 7$$v = 4 + 7 = 11$ — let me recalculate).
+Maximum value: $dp[4][7] = 9$ (items 2 and 4: $w = 3 + 5 = 7$, $v = 4 + 7 = 11$ — let me recalculate).
 
-Correct: items 2 and 3 ($w=3+4=7$$v=4+5=9$), or items 1, 2, 4 ($w=1+3+5=9 > 7$Not valid). Items 1, 3
+Correct: items 2 and 3 ($w=3+4=7$, $v=4+5=9$), or items 1, 2, 4 ($w=1+3+5=9 > 7$Not valid). Items 1, 3
 ($w=1+4=5$$v=1+5=6$), items 2, 4 ($w=3+5=8 > 7$). Optimal: items 2 and 3 ($w=3+4=7$$v=4+5=9$).
 
 </details>
@@ -1873,7 +1873,7 @@ of clause $j$.
 number of variables and $m$ is the number of clauses.
 
 ($\Rightarrow$) If $\phi$ is satisfiable, include in the cover: for each variable, the literal
-vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm◆LB◆true$$\bar◆LB◆x◆RB◆_1$ if
+vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm◆LB◆true$, $\bar◆LB◆x◆RB◆_1$ if
 $x_1 = \mathrm◆LB◆false$). This covers all literal edges ($k$ vertices). For each clause triangle, at
 least one literal in the clause is true, so the corresponding literal vertex covers one of the three
 edges from the triangle. Include the other two vertices of the triangle ($2m$ vertices total).

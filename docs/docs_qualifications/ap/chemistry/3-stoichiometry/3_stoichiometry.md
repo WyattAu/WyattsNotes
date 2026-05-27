@@ -301,7 +301,7 @@ $$
 \mathrm{mol O_2 = \frac{40.0}{32.00} = 1.250
 $$
 
-Divide by coefficients: $\mathrm{NH_3: 1.468/4 = 0.367$$\mathrm{O_2: 1.250/5 = 0.250$.
+Divide by coefficients: $\mathrm{NH_3: 1.468/4 = 0.367$, $\mathrm{O_2: 1.250/5 = 0.250$.
 
 $\mathrm{O_2$ is limiting.
 
@@ -452,7 +452,7 @@ For an ideal gas: $P_i = \chi_i \cdot P_{\mathrm{total}$Where $\chi_i$ is the mo
 
 ### STP
 
-Standard Temperature and Pressure: $T = 273.15 \mathrm{ K$$P = 1 \mathrm{ atm$.
+Standard Temperature and Pressure: $T = 273.15 \mathrm{ K$, $P = 1 \mathrm{ atm$.
 
 At STP, one mole of ideal gas occupies $22.4 \mathrm{ L$.
 

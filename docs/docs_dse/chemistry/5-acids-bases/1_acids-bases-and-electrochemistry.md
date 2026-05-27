@@ -857,7 +857,7 @@ $\mathrm{NH}_4^+$ formed $= 0.0100 \mathrm{ mol}$
 
 Total volume $= 0.200 \mathrm{ dm}^3$
 
-$[\mathrm{NH}_3] = 0.0500 \mathrm{ mol/dm}^3$$[\mathrm{NH}_4^+] = 0.0500 \mathrm{ mol/dm}^3$
+$[\mathrm{NH}_3] = 0.0500 \mathrm{ mol/dm}^3$, $[\mathrm{NH}_4^+] = 0.0500 \mathrm{ mol/dm}^3$
 
 $\mathrm{p}K_a = 14 - \mathrm{p}K_b = 14 - (-\log_{10}(1.8 \times 10^{-5})) = 14 - 4.74 = 9.26$
 
@@ -963,7 +963,7 @@ $\mathrm{H_2O_2}$ is a peroxide. In peroxides, oxygen has oxidation number $-1$.
 
 $$2(+1) + 2(-1) = 0$$
 
-$\mathrm{H} = +1$$\mathrm{O} = -1$.
+$\mathrm{H} = +1$, $\mathrm{O} = -1$.
 
 This is an exception to the usual rule that oxygen is $-2$.
 

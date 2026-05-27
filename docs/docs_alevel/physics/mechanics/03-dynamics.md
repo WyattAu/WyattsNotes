@@ -354,7 +354,7 @@ m S$^{-2}$.
 
 $T = \frac◆LB◆4.0 \times 2.0 \times 9.81 \times 1.3◆RB◆◆LB◆6.0◆RB◆ = \frac{101.8}{6.0} = 17.0$ N.
 
-Check: for $m_1$$T - \mu m_1 g = 17.0 - 0.3 \times 4.0 \times 9.81 = 17.0 - 11.8 = 5.2$ N, and
+Check: for $m_1$, $T - \mu m_1 g = 17.0 - 0.3 \times 4.0 \times 9.81 = 17.0 - 11.8 = 5.2$ N, and
 $m_1 a = 4.0 \times 1.31 = 5.2$ N. Consistent.
 
 </details>
@@ -534,7 +534,7 @@ For the linear drag model $F_d = kv$Derive the time taken for a falling object t
 
 $\frac{1}{2} = 1 - e^{-kt/m} \implies e^{-kt/m} = \frac{1}{2} \implies -kt/m = \ln\frac{1}{2} = -\ln 2$.
 
-$t = \frac◆LB◆m \ln 2◆RB◆◆LB◆k◆RB◆$. Since $\tau = m/k$$t = \tau \ln 2 \approx 0.693\tau$.
+$t = \frac◆LB◆m \ln 2◆RB◆◆LB◆k◆RB◆$. Since $\tau = m/k$, $t = \tau \ln 2 \approx 0.693\tau$.
 
 <b>If you get this wrong, revise:</b> [Solving the ODE](#solving-the-ode)
 
@@ -735,7 +735,7 @@ $m_A g\sin 30° = 5.0 \times 9.81 \times 0.5 = 24.5$ N. Maximum friction on $m_A
 $\mu m_A g\cos 30° = 0.2 \times 5.0 \times 9.81 \times 0.866 = 8.50$ N.
 
 If $m_A$ moves up the slope, total resistance = $24.5 + 8.50 = 33.0$ N. Driving force =
-$m_B g = 78.5$ N. Since $78.5 > 33.0$$m_B$ descends and $m_A$ moves up the slope.
+$m_B g = 78.5$ N. Since $78.5 > 33.0$, $m_B$ descends and $m_A$ moves up the slope.
 
 For $m_A$ (up the slope positive): $T - m_A g\sin 30° - \mu m_A g\cos 30° = m_A a$.
 

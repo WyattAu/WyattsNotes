@@ -479,7 +479,7 @@ $\{1, 2, 3, 4, 5, 6, 7\}$ if no digit is repeated?
 <details>
 <summary>Solution</summary>
 
-The first digit must be $4$$5$$6$Or $7$: $4$ choices.
+The first digit must be $4$, $5$, $6$Or $7$: $4$ choices.
 
 The remaining 4 positions are filled from the remaining $6$ digits without repetition:
 $P_4^6 = \dfrac{6!}{2!} = 360$.

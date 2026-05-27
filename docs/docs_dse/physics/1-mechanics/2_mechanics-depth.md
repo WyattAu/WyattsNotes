@@ -412,9 +412,9 @@ Neglecting friction.
 
 <summary>Solution</summary>
 
-At `A`: $E_k = 0$$E_p = 500 \times 9.81 \times 20 = 98100 \mathrm{ J}$
+At `A`: $E_k = 0$, $E_p = 500 \times 9.81 \times 20 = 98100 \mathrm{ J}$
 
-At `B`: $E_k = \frac{1}{2}(500)v^2$$E_p = 500 \times 9.81 \times 5 = 24525 \mathrm{ J}$
+At `B`: $E_k = \frac{1}{2}(500)v^2$, $E_p = 500 \times 9.81 \times 5 = 24525 \mathrm{ J}$
 
 By conservation of energy:
 
@@ -1664,7 +1664,7 @@ $$f(\tan\theta\sin\theta + \cos\theta) = \frac{mv^2}{r} - mg\tan\theta$$
 
 $$f = \frac{m(v^2/r - g\tan\theta)}{\tan\theta\sin\theta + \cos\theta}$$
 
-$v^2/r = 625/50 = 12.5$$g\tan\theta = 9.81 \times 0.4663 = 4.575$
+$v^2/r = 625/50 = 12.5$, $g\tan\theta = 9.81 \times 0.4663 = 4.575$
 
 Numerator: $1500(12.5 - 4.575) = 1500 \times 7.925 = 11888$
 

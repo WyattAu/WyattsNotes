@@ -43,7 +43,7 @@ Rate is expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration per unit ti
 
 | Method            | Measured Quantity               | Suitable Reactions                                      |
 | ----------------- | ------------------------------- | ------------------------------------------------------- |
-| Collection of gas | Volume of gas over time         | Reactions producing gas ($\mathrm{CO}_2$$\mathrm{H}_2$) |
+| Collection of gas | Volume of gas over time         | Reactions producing gas ($\mathrm{CO}_2$, $\mathrm{H}_2$) |
 | Mass loss         | Mass of flask over time         | Reactions producing gas                                 |
 | Titration         | Concentration at time intervals | Reactions where aliquots can be quenched                |
 | Colorimetry       | Absorbance over time            | Reactions involving colour change                       |

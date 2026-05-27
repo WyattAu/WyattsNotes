@@ -354,7 +354,7 @@ by hiring where $MRP_L = w_{min}$Which gives $L > L_m$ (since $MRP_L$ is downwar
 $w_{min} > w_m = MCL(L_m) = MRP_L(L_m)$). $\blacksquare$
 
 The optimal minimum wage under monopsony is $w_c$ (the competitive wage), which achieves the
-Competitive outcome: $L = L_c$$w = w_c$.
+Competitive outcome: $L = L_c$, $w = w_c$.
 
 :::warning Common Pitfall The statement "minimum wages always cause unemployment" is only true in
 Perfectly competitive labour markets. Under monopsony (e.g., large employers in small towns, certain
@@ -449,7 +449,7 @@ Capital investment:
 
 $$\mathrm{Net present value of education} = \sum_{t=1}^{T} \frac{E_t - C_t}{(1 + r)^t} - C_0$$
 
-Where $E_t$ = earnings premium from education in year $t$$C_t$ = costs of education in year $t$
+Where $E_t$ = earnings premium from education in year $t$, $C_t$ = costs of education in year $t$
 $C_0$ = initial (upfront) cost, $r$ = discount rate, $T$ = working life.
 
 A rational individual invests in education if the NPV > 0 (or equivalently, if the internal rate of
@@ -1039,7 +1039,7 @@ gap is multifaceted, requiring a comprehensive policy response.
 **Example.** A firm's labour demand (MRPL) is $MRPL = 200 - 2L$. Labour supply is $w = 40 + L$.
 
 **Competitive equilibrium:**
-$200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$$w = 93.33$.
+$200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$, $w = 93.33$.
 
 **Trade union negotiates a wage of $\pounds 120$:** At $w = 120$The firm hires workers up to the
 point where $MRPL = 120$: $200 - 2L = 120 \Rightarrow L = 40$.
@@ -1154,7 +1154,7 @@ $w = 140$.
 **With immigration (labour force = 30.5 million):** labour supply shifts to
 $w = 20 + (L - 0.5) = 19.5 + L$. Wait, this needs more careful treatment. If labour supply shifts
 right by 0.5 million: New labour supply: $w = 20 + (L - 0.5)$ for $L \geq 0.5$.
-$200 - 0.5L = 20 + L - 0.5 \Rightarrow 180.5 = 1.5L \Rightarrow L = 120.33$$w = 139.83$.
+$200 - 0.5L = 20 + L - 0.5 \Rightarrow 180.5 = 1.5L \Rightarrow L = 120.33$, $w = 139.83$.
 
 The wage falls from 140 to 139.83 (a fall of 0.17 or 0.12%). Employment rises from 120 to 120.33
 million.
@@ -1192,11 +1192,11 @@ government introduces a progressive income tax:
 | 30-60    | 40%  |    30     |
 | Above 60 | 50%  |    60     |
 
-**Pre-tax equilibrium:** $20 + L = 100 - L \Rightarrow 2L = 80 \Rightarrow L = 40$$w = 60$.
+**Pre-tax equilibrium:** $20 + L = 100 - L \Rightarrow 2L = 80 \Rightarrow L = 40$, $w = 60$.
 
 **Post-tax wages at different employment levels:**
 
-At $L = 40$$w = 60$. Tax $= 0.2(30) + 0.4(30) = 6 + 12 = 18$. Net wage $= 42$.
+At $L = 40$, $w = 60$. Tax $= 0.2(30) + 0.4(30) = 6 + 12 = 18$. Net wage $= 42$.
 
 The labour supply curve must be expressed in terms of the NET wage. At each gross wage $w$The net
 wage $w_n = w - T(w)$.
@@ -1222,7 +1222,7 @@ Let me find the new equilibrium in the third segment ($w > 60$):
 $28 + 2L = 100 - L \Rightarrow 3L = 72 \Rightarrow L = 24$.
 
 At $L = 24$: $w = 76$. This is in the third tax bracket (above 60). Net wage $= 6 + 0.5(76) = 44$.
-Before tax: $L = 40$$w = 60$Net wage $= 42$.
+Before tax: $L = 40$, $w = 60$Net wage $= 42$.
 
 **Results:**
 
@@ -1246,7 +1246,7 @@ pre-tax supply curves from $L = 24$ to $L = 40$).
 labour).
 
 **Employer (monopsony):** $MFCL = 20 + 0.4L$. $MRPL = 100 - 0.5L$. Monopsony optimum: $MFCL = MRPL$:
-$20 + 0.4L = 100 - 0.5L \Rightarrow 0.9L = 80 \Rightarrow L = 88.9$$w = 20 + 0.2(88.9) = 37.8$.
+$20 + 0.4L = 100 - 0.5L \Rightarrow 0.9L = 80 \Rightarrow L = 88.9$, $w = 20 + 0.2(88.9) = 37.8$.
 
 **Union (monopoly seller of labour):** The union maximises the total wage bill
 $w \times L = (20 + 0.2L) \times L = 20L + 0.2L^2$. $\frac{d(wL)}{dL} = 20 + 0.4L$. Setting this

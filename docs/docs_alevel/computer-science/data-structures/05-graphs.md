@@ -237,7 +237,7 @@ The first vertex on $P$ not in $S$And let $y$ be the predecessor of $x$ on $P$ (
 
 $$\mathrm{dist}[x] \leq \mathrm{dist}[y] + w(y, x) = d(s, y) + w(y, x) = d(s, x) \leq d(s, u) < \mathrm{dist}[u]$$
 
-Since $\mathrm{dist}[x] \lt \mathrm{dist}[u]$$x$ would have been extracted from the priority Queue
+Since $\mathrm{dist}[x] \lt \mathrm{dist}[u]$, $x$ would have been extracted from the priority Queue
 before $u$ — contradiction. Therefore $\mathrm{dist}[u] = d(s, u)$. $\square$
 
 **Complexity:** With a binary heap: $O((V + E) \log V)$. Each vertex is extracted once ($O(\log V)$
@@ -349,7 +349,7 @@ From non-MST vertices, and the algorithm selects the minimum-weight crossing edg
 ## 6. Topological Sort
 
 A **topological ordering** of a DAG is a linear ordering of vertices such that for every directed
-Edge $(u, v)$$u$ comes before $v$.
+Edge $(u, v)$, $u$ comes before $v$.
 
 **Algorithm:** DFS-based. When a vertex finishes, prepend it to the result.
 

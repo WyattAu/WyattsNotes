@@ -267,9 +267,9 @@ On the population.
 
 The hierarchical system of classification (Linnaean system):
 
-$$
+$, $
 \mathrm{Domain} \to \mathrm{Kingdom} \to \mathrm{Phylum} \to \mathrm{Class} \to \mathrm{Order} \to \mathrm{Family} \to \mathrm{Genus} \to \mathrm{Species}
-$$
+$, $
 
 **Binomial nomenclature**: each species is given a two-part Latin name: _Genus species_ (e.g., _Homo
 Sapiens_).

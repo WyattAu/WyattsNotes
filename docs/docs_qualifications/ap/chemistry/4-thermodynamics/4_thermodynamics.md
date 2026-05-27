@@ -78,7 +78,7 @@ $$
 \Delta H_{\mathrm{rxn}^\circ = \sum n\Delta H_f^\circ(\mathrm{products) - \sum m\Delta H_f^\circ(\mathrm{reactants)
 $$
 
-Standard conditions: $1 \mathrm{ atm$$298 \mathrm{ K$ ($25^\circ\mathrm{C$), pure substances in
+Standard conditions: $1 \mathrm{ atm$, $298 \mathrm{ K$ ($25^\circ\mathrm{C$), pure substances in
 Their most stable form. By convention, $\Delta H_f^\circ = 0$ for elements in their standard state.
 
 The standard state of an element is its most stable form at $1 \mathrm{ atm$ and
@@ -121,7 +121,7 @@ $$= -393.5 + 2(-285.8) - (-890.3) = -393.5 - 571.6 + 890.3 = -74.8 \mathrm{ kJ/m
 Calculate $\Delta H^\circ$ for
 $\mathrm{C(s) + 2\mathrm{H_2(g) + \frac{1}{2}\mathrm{O_2(g) \to \mathrm{CH_3\mathrm{OH(l)$.
 
-Given: $\mathrm{C(s) + \mathrm{O_2(g) \to \mathrm{CO_2(g)$$\Delta H = -393.5 \mathrm{ kJ/mol$
+Given: $\mathrm{C(s) + \mathrm{O_2(g) \to \mathrm{CO_2(g)$, $\Delta H = -393.5 \mathrm{ kJ/mol$
 $\mathrm{H_2(g) + \frac{1}{2}\mathrm{O_2(g) \to \mathrm{H_2\mathrm{O(l)$
 $\Delta H = -285.8 \mathrm{ kJ/mol$
 $\mathrm{CH_3\mathrm{OH(l) + \frac{3}{2}\mathrm{O_2(g) \to \mathrm{CO_2(g) + 2\mathrm{H_2\mathrm{O(l)$
@@ -131,9 +131,9 @@ Target: $\mathrm{C(s) + 2\mathrm{H_2(g) + \frac{1}{2}\mathrm{O_2(g) \to \mathrm{
 
 Reverse equation 3 and add equations 1 and 2:
 
-$\mathrm{C(s) + \mathrm{O_2(g) \to \mathrm{CO_2(g)$$\Delta H = -393.5$
+$\mathrm{C(s) + \mathrm{O_2(g) \to \mathrm{CO_2(g)$, $\Delta H = -393.5$
 
-$2\mathrm{H_2(g) + \mathrm{O_2(g) \to 2\mathrm{H_2\mathrm{O(l)$$\Delta H = 2(-285.8) = -571.6$
+$2\mathrm{H_2(g) + \mathrm{O_2(g) \to 2\mathrm{H_2\mathrm{O(l)$, $\Delta H = 2(-285.8) = -571.6$
 
 $\mathrm{CO_2(g) + 2\mathrm{H_2\mathrm{O(l) \to \mathrm{CH_3\mathrm{OH(l) + \frac{3}{2}\mathrm{O_2(g)$
 $\Delta H = +726.4$
@@ -351,7 +351,7 @@ $$
 \Delta S^\circ = \sum n S^\circ(\mathrm{products) - \sum m S^\circ(\mathrm{reactants)
 $$
 
-Note: unlike $\Delta H_f^\circ$$S^\circ$ is not zero for elements (elements have nonzero absolute
+Note: unlike $\Delta H_f^\circ$, $S^\circ$ is not zero for elements (elements have nonzero absolute
 Entropy because they are not perfect crystals at absolute zero under standard conditions).
 
 ### The Third Law of Thermodynamics
@@ -364,7 +364,7 @@ Absolute reference point for entropy, unlike enthalpy.
 Calculate $\Delta S^\circ$ for the reaction
 $\mathrm{CaCO_3(s) \to \mathrm{CaO(s) + \mathrm{CO_2(g)$.
 
-Given: $S^\circ(\mathrm{CaCO_3, s) = 92.9$$S^\circ(\mathrm{CaO, s) = 39.7$
+Given: $S^\circ(\mathrm{CaCO_3, s) = 92.9$, $S^\circ(\mathrm{CaO, s) = 39.7$
 $S^\circ(\mathrm{CO_2, g) = 213.7 \mathrm{ J/(mol\cdot\mathrm{K)$.
 
 $$\Delta S^\circ = [39.7 + 213.7] - [92.9] = 253.4 - 92.9 = 160.5 \mathrm{ J/(mol\cdot\mathrm{K)$$
@@ -473,7 +473,7 @@ At this temperature, $\Delta G = 0$ and $K = 1$.
 
 For the reaction $\mathrm{CaCO_3(s) \to \mathrm{CaO(s) + \mathrm{CO_2(g)$:
 
-$\Delta H^\circ = 178 \mathrm{ kJ/mol$$\Delta S^\circ = 160 \mathrm{ J/(mol\cdot\mathrm{K)$.
+$\Delta H^\circ = 178 \mathrm{ kJ/mol$, $\Delta S^\circ = 160 \mathrm{ J/(mol\cdot\mathrm{K)$.
 
 Find the temperature at which the reaction becomes spontaneous.
 
@@ -481,7 +481,7 @@ $$
 T = \frac{\Delta H}{\Delta S} = \frac{178000}{160} = 1113 \mathrm{ K \approx 840^\circ\mathrm{C
 $$
 
-Above $1113 \mathrm{ K$$\Delta G \lt 0$ and the decomposition is spontaneous.
+Above $1113 \mathrm{ K$, $\Delta G \lt 0$ and the decomposition is spontaneous.
 
 :::
 
@@ -503,7 +503,7 @@ $K \gg 1$Confirming the reaction strongly favours products at $298 \mathrm{ K$.
 
 Calculate $\Delta G$ for the reaction $\mathrm{N_2(g) + 3\mathrm{H_2(g) \to 2\mathrm{NH_3(g)$ at
 $298 \mathrm{ K$ when $P(\mathrm{N_2) = 10.0 \mathrm{ atm$
-$P(\mathrm{H_2) = 30.0 \mathrm{ atm$$P(\mathrm{NH_3) = 0.500 \mathrm{ atm$.
+$P(\mathrm{H_2) = 30.0 \mathrm{ atm$, $P(\mathrm{NH_3) = 0.500 \mathrm{ atm$.
 
 $$Q = \frac{(0.500)^2}{(10.0)(30.0)^3} = \frac{0.250}{270000} = 9.26 \times 10^{-7}$$
 
@@ -580,7 +580,7 @@ Reactants and low pressure of product drive the reaction forward.
 
 8. Calculate $\Delta S^\circ$ for the reaction
    $2\mathrm{H_2(g) + \mathrm{O_2(g) \to 2\mathrm{H_2\mathrm{O(l)$ given:
-   $S^\circ(\mathrm{H_2) = 130.7$$S^\circ(\mathrm{O_2) = 205.1$
+   $S^\circ(\mathrm{H_2) = 130.7$, $S^\circ(\mathrm{O_2) = 205.1$
    $S^\circ(\mathrm{H_2\mathrm{O, l) = 69.9 \mathrm{ J/(mol\cdot\mathrm{K)$.
 
 9. A bomb calorimeter has $C_{\mathrm{cal} = 850 \mathrm{ J/K$. Burning $1.00 \mathrm{ g$ of
@@ -645,7 +645,7 @@ Reactants and low pressure of product drive the reaction forward.
 
 22. Using the following data, calculate $\Delta S^\circ$ for the reaction
     $4\mathrm{Fe(s) + 3\mathrm{O_2(g) \to 2\mathrm{Fe_2\mathrm{O_3(s)$:
-    $S^\circ(\mathrm{Fe, s) = 27.3$$S^\circ(\mathrm{O_2, g) = 205.1$
+    $S^\circ(\mathrm{Fe, s) = 27.3$, $S^\circ(\mathrm{O_2, g) = 205.1$
     $S^\circ(\mathrm{Fe_2\mathrm{O_3, s) = 87.4 \mathrm{ J/(mol\cdot\mathrm{K)$.
 
 23. Calculate the normal boiling point of chloroform ($\mathrm{CHCl_3$) given that
@@ -700,7 +700,7 @@ Reactants and low pressure of product drive the reaction forward.
 Given the following data, calculate the standard enthalpy of formation of
 $\mathrm{CH_3\mathrm{OH(l)$:
 
-- $\mathrm{C(s) + \mathrm{O_2(g) \to \mathrm{CO_2(g)$$\Delta H^\circ = -393.5 \mathrm{ kJ/mol$
+- $\mathrm{C(s) + \mathrm{O_2(g) \to \mathrm{CO_2(g)$, $\Delta H^\circ = -393.5 \mathrm{ kJ/mol$
 - $\mathrm{H_2(g) + \frac{1}{2}\mathrm{O_2(g) \to \mathrm{H_2\mathrm{O(l)$
   $\Delta H^\circ = -285.8 \mathrm{ kJ/mol$
 - $\mathrm{CH_3\mathrm{OH(l) + \frac{3}{2}\mathrm{O_2(g) \to \mathrm{CO_2(g) + 2\mathrm{H_2\mathrm{O(l)$

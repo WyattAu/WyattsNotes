@@ -30,11 +30,11 @@ There are **14 Bravais lattices** in three dimensions, classified into 7 crystal
 
 | System       | Lattices     | Constraints                                                   |
 | ------------ | ------------ | ------------------------------------------------------------- |
-| Cubic        | SC, BCC, FCC | $a = b = c$$\alpha = \beta = \gamma = 90^\circ$               |
-| Tetragonal   | P, I         | $a = b \neq c$$\alpha = \beta = \gamma = 90^\circ$            |
-| Orthorhombic | P, C, I, F   | $a \neq b \neq c$$\alpha = \beta = \gamma = 90^\circ$         |
-| Monoclinic   | P, C         | $a \neq b \neq c$$\alpha = \gamma = 90^\circ \neq \beta$      |
-| Triclinic    | P            | $a \neq b \neq c$$\alpha \neq \beta \neq \gamma$              |
+| Cubic        | SC, BCC, FCC | $a = b = c$, $\alpha = \beta = \gamma = 90^\circ$               |
+| Tetragonal   | P, I         | $a = b \neq c$, $\alpha = \beta = \gamma = 90^\circ$            |
+| Orthorhombic | P, C, I, F   | $a \neq b \neq c$, $\alpha = \beta = \gamma = 90^\circ$         |
+| Monoclinic   | P, C         | $a \neq b \neq c$, $\alpha = \gamma = 90^\circ \neq \beta$      |
+| Triclinic    | P            | $a \neq b \neq c$, $\alpha \neq \beta \neq \gamma$              |
 | Hexagonal    | P            | $a = b \neq c$$\alpha = \beta = 90^\circ$$\gamma = 120^\circ$ |
 | Trigonal     | R            | $a = b = c$$\alpha = \beta = \gamma \neq 90^\circ$            |
 
@@ -1430,7 +1430,7 @@ The conductivity becomes:
 
 $$\sigma = \frac◆LB◆e^2◆RB◆◆LB◆3◆RB◆\int \tau(\varepsilon)\,v^2(\varepsilon)\,g(\varepsilon)\left(-\frac◆LB◆\partial f_0◆RB◆◆LB◆\partial\varepsilon◆RB◆\right) d\varepsilon$$
 
-At low $T$$-\partial f_0/\partial\varepsilon \approx \delta(\varepsilon - \varepsilon_F)$So only
+At low $T$, $-\partial f_0/\partial\varepsilon \approx \delta(\varepsilon - \varepsilon_F)$So only
 states Near $E_F$ contribute to transport. This explains why impurity scattering dominates at low
 $T$ (even a small concentration of impurities affects states near $E_F$).
 
@@ -1732,7 +1732,7 @@ FCC, And explain why SC is rarely observed in elemental metals.
 **Problem 2.** Aluminium is FCC with $a = 0.405$ nm and $M = 26.98$ g/mol. Calculate the theoretical
 Density and compare with the experimental value ($2.70\ \mathrm◆LB◆g/cm^3$).
 
-**Problem 3.** A plane intercepts the crystallographic axes at $2a$$3b$And $\infty c$. Determine the
+**Problem 3.** A plane intercepts the crystallographic axes at $2a$, $3b$And $\infty c$. Determine the
 Miller indices. A direction passes through the origin and the point $(1, -1, 0)$ in units of lattice
 Constants. Write the direction indices.
 
@@ -1764,7 +1764,7 @@ specific Heat at $T = 100$ K and $T = 500$ K. At what temperature does the Debye
 Accurate approximation?
 
 **Problem 12.** Compare the Einstein and Debye predictions for $C_V/C_◆LB◆\mathrm◆LB◆Dulong--Petit◆RB◆$ as a
-Function of $T/\Theta$ at $T/\Theta = 0.1$$0.5$And $1.0$.
+Function of $T/\Theta$ at $T/\Theta = 0.1$, $0.5$And $1.0$.
 
 **Problem 13.** Sodium has $n = 2.65 \times 10^◆LB◆28◆RB◆\ \mathrm◆LB◆m^◆LB◆-3◆RB◆$ conduction electrons. Calculate
 The Fermi energy, Fermi wave vector, Fermi velocity, and Fermi temperature.
@@ -1786,7 +1786,7 @@ $J = S = 1/2$ and $g = 2$. Calculate the magnetisation in a field of $B = 1$ T a
 $T = 4$ K.
 
 **Problem 18.** Using the mean-field theory, derive the Curie--Weiss law $\chi = C/(T - T_C)$ for a
-Ferromagnet above $T_C$. Express $C$ in terms of $N$$\mu$And $k_B$.
+Ferromagnet above $T_C$. Express $C$ in terms of $N$, $\mu$And $k_B$.
 
 **Hints and Selected Results:**
 
@@ -1801,9 +1801,9 @@ Ferromagnet above $T_C$. Express $C$ in terms of $N$$\mu$And $k_B$.
   lattice points at $(\pm 2\pi/a)(\pm 1, \pm 1, \pm 1)/2$ form an FCC pattern.
 - _Problem 7:_ First five FCC reflections: (111), (200), (220), (311), (222). Use
   $2d\sin\theta = \lambda$ with $d = a/\sqrt◆LB◆h^2+k^2+l^2◆RB◆$.
-- _Problem 13:_ $\varepsilon_F = 3.24$ eV, $k_F = 9.22 \times 10^9$ m$^◆LB◆-1◆RB◆$$v_F = 1.07 \times 10^6$
+- _Problem 13:_ $\varepsilon_F = 3.24$ eV, $k_F = 9.22 \times 10^9$ m$^◆LB◆-1◆RB◆$, $v_F = 1.07 \times 10^6$
   m/s, $T_F = 3.76 \times 10^4$ K.
-- _Problem 15:_ $n = N_D = 10^◆LB◆22◆RB◆$ m$^◆LB◆-3◆RB◆$$p = n_i^2/N_D = 2.25 \times 10^◆LB◆10◆RB◆$ m$^◆LB◆-3◆RB◆$
+- _Problem 15:_ $n = N_D = 10^◆LB◆22◆RB◆$ m$^◆LB◆-3◆RB◆$, $p = n_i^2/N_D = 2.25 \times 10^◆LB◆10◆RB◆$ m$^◆LB◆-3◆RB◆$
   $E_c - E_F = k_B T\ln(N_c/N_D) \approx 0.214$ eV.
 - _Problem 16:_ $V_0 = 0.716$ V, $W \approx 0.35$ $\mu$M.
 - _Problem 17:_ At 300 K: $M \approx \mu_0 N \mu_B^2 B/(3k_B T) = 0.078$ A/m. At 4 K: the classical
@@ -2004,7 +2004,7 @@ The Chern number is an integer (topological invariant). The Hall conductivity is
 
 $$\sigma_◆LB◆xy◆RB◆ = C\frac◆LB◆e^2◆RB◆◆LB◆h◆RB◆$$
 
-For the integer quantum Hall effect with filling factor $\nu$$C = \nu$.
+For the integer quantum Hall effect with filling factor $\nu$, $C = \nu$.
 
 The TKNN formula (Thouless, Kohmoto, Nightingale, den Nijs, 1982) established that the quantum Hall
 conductance is a topological invariant, explaining its remarkable precision and robustness against
@@ -2246,7 +2246,7 @@ $$I_D = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ \times 450 \times 34.5 \times 10
 
 A Type II superconductor has $\xi_0 = 5$ nm and $\lambda_0 = 50$ nm at $T = 0$. At $T = 0.9\,T_c$:
 
-(a) Calculate $\xi(T)$$\lambda(T)$And $\kappa(T)$.
+(a) Calculate $\xi(T)$, $\lambda(T)$And $\kappa(T)$.
 
 (b) Calculate $B_◆LB◆c1◆RB◆$ and $B_◆LB◆c2◆RB◆$ at $T = 0.9\,T_c$.
 

@@ -723,7 +723,7 @@ _Step 1:_ $\mathrm◆LB◆Request_0 = (0,2,0) \leq \mathrm◆LB◆Need_0 = (7,4,
 
 _Step 2:_ $\mathrm◆LB◆Request_0 = (0,2,0) \leq A = (3,3,2)$. OK.
 
-_Step 3:_ Pretend to allocate. New $A = (3,1,2)$$\mathrm◆LB◆Need_0 = (7,2,3)$.
+_Step 3:_ Pretend to allocate. New $A = (3,1,2)$, $\mathrm◆LB◆Need_0 = (7,2,3)$.
 
 _Step 4:_ Safety check. No process can execute: $P_1$ needs $(1,2,2)$ but only $(3,1,2)$ available
 (second component insufficient). $P_3$ needs $(0,1,1) \leq (3,1,2)$ — OK, execute $P_3$:
@@ -910,7 +910,7 @@ $$\mathrm◆LB◆EAT = (1 - p) \times \mathrm◆LB◆ma + p \times \mathrm◆LB�
 Where $p$ = page fault rate, $\mathrm◆LB◆ma$ = memory access time, $\mathrm◆LB◆pf$ = page fault service
 Time.
 
-For $p = 0.001$$\mathrm◆LB◆ma = 100$ ns, $\mathrm◆LB◆pf = 8$ ms:
+For $p = 0.001$, $\mathrm◆LB◆ma = 100$ ns, $\mathrm◆LB◆pf = 8$ ms:
 
 $$\mathrm◆LB◆EAT = 0.999 \times 100 + 0.001 \times 8\,000\,000 = 8.1 \; \mu\mathrm◆LB◆s$$
 
@@ -926,7 +926,7 @@ $$\mathrm◆LB◆EAT = h \times (\mathrm◆LB◆TLB + \mathrm◆LB◆ma) + (1 - 
 
 Where $h$ is the TLB hit ratio.
 
-For $h = 0.99$$\mathrm◆LB◆TLB = 2$ ns, $\mathrm◆LB◆ma = 100$ ns:
+For $h = 0.99$, $\mathrm◆LB◆TLB = 2$ ns, $\mathrm◆LB◆ma = 100$ ns:
 
 $$\mathrm◆LB◆EAT = 0.99 \times 102 + 0.01 \times 202 = 103 \; \mathrm◆LB◆ns$$
 
@@ -1697,7 +1697,7 @@ Using the same processes as Problem 3, compute the schedule under non-preemptive
 
 **Solution.** (Revision: §2.4)
 
-At $t = 0$Only $P_1$ is available. $P_1$ runs 0--10. At $t = 10$$P_2$ (burst 5) and $P_3$ (burst 2)
+At $t = 0$Only $P_1$ is available. $P_1$ runs 0--10. At $t = 10$, $P_2$ (burst 5) and $P_3$ (burst 2)
 are both ready. SJF selects $P_3$Then $P_2$.
 
 Gantt: $\lvert P_1(10) \rvert P_3(2) \rvert P_2(5) \rvert$ at times 0, 10, 12, 17.

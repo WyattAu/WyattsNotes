@@ -1064,7 +1064,7 @@ above subsistence).
 
 **Low-income trap:** If $Y_0 < Y^*$Savings rate = 5%. Steady state:
 $k^* = (0.05 / 0.05)^{1/0.7} = 1$. $y^* = 1^{0.3} = 1$. $Y^*_{trap} = 1 \times L = L$. (Using
-$\delta = 0.05$$n = 0$.)
+$\delta = 0.05$, $n = 0$.)
 
 This gives $y^* = (s/(\delta + n))^{0.3/(1-0.3)} = (0.05/0.05)^{0.429} = 1$. The economy is trapped
 at $y = 1$Which is below the threshold $Y^* = 100$.

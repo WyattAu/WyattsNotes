@@ -33,8 +33,8 @@ First application: $u = e^{2x}$$dv = \sin x\,dx$. Then $du = 2e^{2x}\,dx$$v = -\
 
 $$I = -e^{2x}\cos x + \int 2e^{2x}\cos x\,dx$$
 
-Second application on $\int e^{2x}\cos x\,dx$: $u = e^{2x}$$dv = \cos x\,dx$. Then
-$du = 2e^{2x}\,dx$$v = \sin x$.
+Second application on $\int e^{2x}\cos x\,dx$: $u = e^{2x}$, $dv = \cos x\,dx$. Then
+$du = 2e^{2x}\,dx$, $v = \sin x$.
 
 $$\int e^{2x}\cos x\,dx = e^{2x}\sin x - \int 2e^{2x}\sin x\,dx = e^{2x}\sin x - I$$
 
@@ -62,7 +62,7 @@ sides, but this does not mean $I = 0$ — it means $I$ can be solved for algebra
 **(b)** Hence evaluate $\displaystyle\int \frac{3x - 1}{(x + 1)(x^2 + 1)}\,dx$.
 
 **(c)** A student attempts to split the denominator as $\dfrac{A}{x + 1} + \dfrac{B}{x^2 + 1}$ and
-gets $A = 3$$B = -1$. Show that this is incorrect.
+gets $A = 3$, $B = -1$. Show that this is incorrect.
 
 [Difficulty: hard. Tests partial fraction decomposition with an irreducible quadratic factor and the
 correct form of the decomposition.]
@@ -206,7 +206,7 @@ $$\text{Area} = (\sqrt{2} - 1) + (1 + \sqrt{2}) = 2\sqrt{2}$$
 
 **Question:**
 
-The region bounded by $y = \dfrac{1}{\sqrt{x + 1}}$$x = 0$$x = 3$And the $x$-axis is rotated
+The region bounded by $y = \dfrac{1}{\sqrt{x + 1}}$, $x = 0$, $x = 3$And the $x$-axis is rotated
 $360\degree$ about the $x$-axis. Find the volume generated.
 
 [Difficulty: hard. Combines volume of revolution with algebraic substitution and definite integral

@@ -118,7 +118,7 @@ Codomain (surjectivity).
 
 <details>
 <summary>Example</summary>
-Find the inverse of $f(x) = \frac{2x + 3}{x - 1}$$x \neq 1$.
+Find the inverse of $f(x) = \frac{2x + 3}{x - 1}$, $x \neq 1$.
 
 $$y = \frac{2x + 3}{x - 1}$$
 
@@ -173,7 +173,7 @@ Case 1: $a, b \geq 0$. Then $|a + b| = a + b = |a| + |b|$. Equality holds.
 Case 2: $a, b \leq 0$. Then $a + b \leq 0$So $|a + b| = -(a + b) = -a - b = |a| + |b|$. Equality
 Holds.
 
-Case 3: $a \geq 0$$b \leq 0$. If $a + b \geq 0$: $|a + b| = a + b \leq a + (-b) = |a| + |b|$. If
+Case 3: $a \geq 0$, $b \leq 0$. If $a + b \geq 0$: $|a + b| = a + b \leq a + (-b) = |a| + |b|$. If
 $a + b \leq 0$: $|a + b| = -(a + b) = -a - b \leq a - b = |a| + |b|$ (since $a \geq 0$ implies
 $a \geq -a$I.e., $2a \geq 0$). $\blacksquare$
 

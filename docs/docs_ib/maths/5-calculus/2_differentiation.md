@@ -20,7 +20,7 @@ $$
 \lim_{x \to a} f(x) = L
 $$
 
-This means that as $x$ gets arbitrarily close to $a$$f(x)$ gets arbitrarily close to $L$.
+This means that as $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily close to $L$.
 
 ### Left-Hand and Right-Hand Limits
 
@@ -620,21 +620,21 @@ Volume: $V = \pi r^2 h = 500$So $h = \dfrac{500}{\pi r^2}$.
 
 Surface area (no top): $A = \pi r^2 + 2\pi r h = \pi r^2 + \dfrac{1000}{r}$.
 
-$$
+$, $
 \frac`\{dA}``\{dr}` = 2\pi r - \frac{1000}{r^2} = 0
-$$
+$, $
 
-$$
+$, $
 2\pi r = \frac{1000}{r^2} \implies 2\pi r^3 = 1000 \implies r^3 = \frac{500}{\pi}
-$$
+$, $
 
-$$
+$, $
 R = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
-$$
+$, $
 
-$$
+$, $
 H = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
-$$
+$, $
 
 The optimal open-top can has $h = r$I.e., height equals radius.
 
@@ -647,9 +647,9 @@ The optimal open-top can has $h = r$I.e., height equals radius.
 If $\displaystyle\lim_{x \to a}\frac{f(x)}{g(x)}$ gives an indeterminate form $\dfrac{0}{0}$ or
 $\dfrac{\pm\infty}{\pm\infty}$Then:
 
-$$
+$, $
 \lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}
-$$
+$, $
 
 Provided the limit on the right exists.
 
@@ -659,15 +659,15 @@ Evaluate $\displaystyle\lim_{x \to 0}\frac{e^x - 1 - x}{x^2}$.
 
 Direct substitution gives $\dfrac{0}{0}$So apply L'Hopital's rule:
 
-$$
+$, $
 \lim_{x \to 0}\frac{e^x - 1}{2x}
-$$
+$, $
 
 Still $\dfrac{0}{0}$Apply again:
 
-$$
+$, $
 \lim_{x \to 0}\frac{e^x}{2} = \frac{1}{2}
-$$
+$, $
 
 :::
 
@@ -681,23 +681,23 @@ Let $f(x) = 2x^3 - 3x^2 - 36x + 5$.
 
 **(a)** Find $f'(x)$.
 
-$$
+$, $
 F'(x) = 6x^2 - 6x - 36
-$$
+$, $
 
 **(b)** Find the $x$-coordinates of the stationary points.
 
-$$
+$, $
 6x^2 - 6x - 36 = 0 \implies x^2 - x - 6 = 0 \implies (x-3)(x+2) = 0
-$$
+$, $
 
 $x = 3$ or $x = -2$.
 
 **(c)** Determine the nature of each stationary point.
 
-$$
+$, $
 F''(x) = 12x - 6
-$$
+$, $
 
 At $x = -2$: $f''(-2) = -30 \lt 0$So local maximum.
 
@@ -707,9 +707,9 @@ At $x = 3$: $f''(3) = 30 \gt 0$So local minimum.
 
 $f(0) = 5$ and $f'(0) = -36$.
 
-$$
+$, $
 Y - 5 = -36(x - 0) \implies y = -36x + 5
-$$
+$, $
 
 ### Question 2 (Paper 2 style)
 
@@ -719,26 +719,26 @@ Available.
 
 **(a)** If the side parallel to the house has length $x\mathrm{ m}$Show that the area is:
 
-$$
+$, $
 A = x\left(30 - \frac{x}{2}\right) = 30x - \frac{x^2}{2}
-$$
+$, $
 
 The two perpendicular sides have total length $60 - x$So each is
 $\dfrac{60-x}{2} = 30 - \dfrac{x}{2}$.
 
-$$
+$, $
 A = x\left(30 - \frac{x}{2}\right)
-$$
+$, $
 
 **(b)** Find the value of $x$ that maximises the area.
 
-$$
+$, $
 \frac`\{dA}``\{dx}` = 30 - x = 0 \implies x = 30
-$$
+$, $
 
-$$
+$, $
 \frac{d^2A}{dx^2} = -1 \lt 0 \implies \mathrm{maximum}
-$$
+$, $
 
 Maximum area $= 30 \times 15 = 450\mathrm{ m}^2$.
 
@@ -748,25 +748,25 @@ Given $x^2 + xy + y^2 = 7$:
 
 **(a)** Find $\dfrac{dy}{dx}$ in terms of $x$ and $y$.
 
-$$
+$, $
 2x + y + x\frac`\{dy}``\{dx}` + 2y\frac`\{dy}``\{dx}` = 0
-$$
+$, $
 
-$$
+$, $
 (x + 2y)\frac`\{dy}``\{dx}` = -(2x + y)
-$$
+$, $
 
-$$
+$, $
 \frac`\{dy}``\{dx}` = -\frac{2x+y}{x+2y}
-$$
+$, $
 
 **(b)** Verify that the point $(1, 2)$ lies on the curve and find the gradient at that point.
 
 $1 + 2 + 4 = 7$. Yes.
 
-$$
+$, $
 \frac`\{dy}``\{dx}`\bigg|_{(1,2)} = -\frac{2+2}{1+4} = -\frac{4}{5}
-$$
+$, $
 
 ### Question 4 (Paper 2 style)
 
@@ -776,9 +776,9 @@ The curve $C$ has equation $y = x e^{-x}$.
 
 Using the product rule with $u = x$ and $v = e^{-x}$:
 
-$$
+$, $
 \frac`\{dy}``\{dx}` = 1 \cdot e^{-x} + x \cdot (-e^{-x}) = e^{-x}(1 - x)
-$$
+$, $
 
 **(b)** Find the coordinates of the stationary point and determine its nature.
 
@@ -804,22 +804,22 @@ $\left(2, \dfrac{2}{e^2}\right)$.
 
 $y(0) = 0$ and $y'(0) = e^0(1) = 1$.
 
-$$
+$, $
 Y = x
-$$
+$, $
 
 ### Question 5 (Paper 1 style)
 
 The radius of a circle is increasing at a rate of $0.5\mathrm{ cm/s}$. Find the rate of change of
 The area when the radius is $4\mathrm{ cm}$.
 
-$$
+$, $
 A = \pi r^2
-$$
+$, $
 
-$$
+$, $
 \frac`\{dA}``\{dt}` = 2\pi r \frac`\{dr}``\{dt}` = 2\pi(4)(0.5) = 4\pi \mathrm{ cm}^2\mathrm{/s}
-$$
+$, $
 
 ### Question 6 (Paper 2 style)
 

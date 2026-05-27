@@ -684,7 +684,7 @@ $$W_f = -fL = -\mu mg\cos\theta \times L$$
 
 $$57 = \mu \times 5 \times 9.8 \times \cos\theta \times 6$$
 
-With $\cos\theta = 3/6 = 0.5$ (from $h = 3 \mathrm{ m$$L = 6 \mathrm{ m$):
+With $\cos\theta = 3/6 = 0.5$ (from $h = 3 \mathrm{ m$, $L = 6 \mathrm{ m$):
 
 $$57 = \mu \times 5 \times 9.8 \times 0.5 \times 6 = 147\mu$$
 

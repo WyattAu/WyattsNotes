@@ -876,7 +876,7 @@ D ---6--- E ---3--- F
 
 **Goal:** Construct the routing table at router A using Dijkstra's algorithm.
 
-**Initialisation.** Set $d(A) = 0$$d(\mathrm◆LB◆all\;others) = \infty$. Unvisited =
+**Initialisation.** Set $d(A) = 0$, $d(\mathrm◆LB◆all\;others) = \infty$. Unvisited =
 $\{A, B, C, D, E, F\}$.
 
 **Visit A** ($d = 0$). Neighbours: B (cost 3), D (cost 4). Update: $d(B) = 3$Prev$(B) = A$.
@@ -1184,7 +1184,7 @@ $$\mathrm◆LB◆RTT_d = (1 - \beta)\,\mathrm◆LB◆RTT_d + \beta\,|\mathrm◆L
 
 $$\mathrm◆LB◆RTO = \mathrm◆LB◆RTT_s + 4 \cdot \mathrm◆LB◆RTT_d$$
 
-Where $\mathrm◆LB◆RTT_m$ = measured RTT, $\alpha = 1/8$$\beta = 1/4$. Initial RTO = 1 s; minimum RTO =
+Where $\mathrm◆LB◆RTT_m$ = measured RTT, $\alpha = 1/8$, $\beta = 1/4$. Initial RTO = 1 s; minimum RTO =
 200 ms.
 
 :::caution Common Pitfall Karn's algorithm: do not update RTT estimates for retransmitted segments.

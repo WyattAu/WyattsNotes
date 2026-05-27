@@ -161,7 +161,7 @@ deflection region. Calculate the separation of their impact points on the detect
 
 (c) Explain why the velocity selector must use crossed $E$ and $B$ fields (not parallel).
 
-Take $1\,\text{u} = 1.66 \times 10^{-27}\,\text{kg}$$e = 1.60 \times 10^{-19}\,\text{C}$.
+Take $1\,\text{u} = 1.66 \times 10^{-27}\,\text{kg}$, $e = 1.60 \times 10^{-19}\,\text{C}$.
 
 **Solution:**
 

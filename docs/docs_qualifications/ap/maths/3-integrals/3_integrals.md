@@ -276,7 +276,7 @@ $\blacksquare$
 
 ### $u$-Substitution
 
-If $\displaystyle\int f(g(x)) \cdot g'(x)\, dx$Let $u = g(x)$$du = g'(x)\, dx$:
+If $\displaystyle\int f(g(x)) \cdot g'(x)\, dx$Let $u = g(x)$, $du = g'(x)\, dx$:
 
 $$
 \int f(u)\, du = F(u) + C = F(g(x)) + C
@@ -289,7 +289,7 @@ Spot $f(g(x))$ and $g'(x)$Set $u = g(x)$.
 
 Evaluate $\displaystyle\int 2x e^{x^2}\, dx$.
 
-Let $u = x^2$$du = 2x\, dx$:
+Let $u = x^2$, $du = 2x\, dx$:
 
 $$
 \int 2x e^{x^2}\, dx = \int e^u\, du = e^u + C = e^{x^2} + C
@@ -301,7 +301,7 @@ $$
 
 Evaluate $\displaystyle\int \frac{x}{x^2 + 1}\, dx$.
 
-Let $u = x^2 + 1$$du = 2x\, dx$Giving $\frac{1}{2}du = x\, dx$:
+Let $u = x^2 + 1$, $du = 2x\, dx$Giving $\frac{1}{2}du = x\, dx$:
 
 $$
 \int \frac{x}{x^2 + 1}\, dx = \frac{1}{2}\int \frac{1}{u}\, du = \frac{1}{2}\ln|u| + C = \frac{1}{2}\ln(x^2 + 1) + C
@@ -313,7 +313,7 @@ $$
 
 Evaluate $\displaystyle\int \frac{\ln x}{x}\, dx$.
 
-Let $u = \ln x$$du = \frac{1}{x}\, dx$:
+Let $u = \ln x$, $du = \frac{1}{x}\, dx$:
 
 $$
 \int \frac{\ln x}{x}\, dx = \int u\, du = \frac{u^2}{2} + C = \frac{(\ln x)^2}{2} + C
@@ -335,9 +335,9 @@ Evaluate $\displaystyle\int_0^1 x\sqrt{1 + x^2}\, dx$.
 
 Let $u = 1 + x^2$$du = 2x\, dx$. When $x = 0$$u = 1$. When $x = 1, u = 2$.
 
-$$
+$, $
 \int_0^1 x\sqrt{1 + x^2}\, dx = \frac{1}{2}\int_1^2 \sqrt{u}\, du = \frac{1}{2}\left[\frac{2u^{3/2}}{3}\right]_1^2 = \frac{1}{3}(2\sqrt{2} - 1)
-$$
+$, $
 
 :::
 
@@ -376,9 +376,9 @@ Evaluate $\displaystyle\int x e^x\, dx$.
 
 Let $u = x$$dv = e^x\, dx$. Then $du = dx$$v = e^x$.
 
-$$
+$, $
 \int x e^x\, dx = xe^x - \int e^x\, dx = xe^x - e^x + C = e^x(x - 1) + C
-$$
+$, $
 
 :::
 
@@ -388,22 +388,22 @@ Evaluate $\displaystyle\int x^2 e^x\, dx$.
 
 Let $u = x^2$$dv = e^x\, dx$. Then $du = 2x\, dx$$v = e^x$.
 
-$$
+$, $
 = x^2 e^x - \int 2x e^x\, dx
-$$
+$, $
 
 Apply integration by parts again for $\int 2x e^x\, dx$. Let $u = 2x$$dv = e^x\, dx$
 $du = 2\, dx$$v = e^x$:
 
-$$
+$, $
 \int 2x e^x\, dx = 2xe^x - 2e^x + C
-$$
+$, $
 
 Therefore:
 
-$$
+$, $
 \int x^2 e^x\, dx = x^2 e^x - 2xe^x + 2e^x + C = e^x(x^2 - 2x + 2) + C
-$$
+$, $
 
 **Tabular method check:**
 
@@ -423,9 +423,9 @@ Evaluate $\displaystyle\int \ln x\, dx$.
 
 Let $u = \ln x$$dv = dx$. Then $du = \frac{1}{x}dx$$v = x$.
 
-$$
+$, $
 \int \ln x\, dx = x\ln x - \int x \cdot \frac{1}{x}\, dx = x\ln x - x + C
-$$
+$, $
 
 :::
 
@@ -510,9 +510,9 @@ Evaluate $\displaystyle\int_0^{\infty} xe^{-x^2}\, dx$.
 
 Let $u = x^2$$du = 2x\, dx$:
 
-$$
+$, $
 \int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}\int_0^{\infty} e^{-u}\, du = \frac{1}{2}\left[-e^{-u}\right]_0^{\infty} = \frac{1}{2}(0 + 1) = \frac{1}{2}
-$$
+$, $
 
 :::
 
@@ -529,9 +529,9 @@ $\displaystyle\int_0^{\infty} e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2}$.
 
 Evaluate $\displaystyle\int_0^{\infty} e^{-x}\, dx$.
 
-$$
+$, $
 \lim_{b \to \infty} \left[-e^{-x}\right]_0^b = \lim_{b \to \infty}(-e^{-b} + 1) = 1
-$$
+$, $
 
 The integral converges to $1$.
 
@@ -543,9 +543,9 @@ The integral converges to $1$.
 
 The area between $y = f(x)$ and $y = g(x)$ from $x = a$ to $x = b$ (where $f(x) \geq g(x)$):
 
-$$
+$, $
 A = \int_a^b [f(x) - g(x)]\, dx
-$$
+$, $
 
 **When to split.** If $f$ and $g$ cross, split the integral at the intersection points.
 
@@ -664,9 +664,9 @@ $$
 
 Let $u = 1 + x$$du = dx$:
 
-$$
+$, $
 L = \int_1^4 \sqrt{u}\, du = \left[\frac{2u^{3/2}}{3}\right]_1^4 = \frac{2}{3}(8 - 1) = \frac{14}{3}
-$$
+$, $
 
 :::
 

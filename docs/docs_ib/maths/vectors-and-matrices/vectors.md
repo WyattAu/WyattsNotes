@@ -14,7 +14,7 @@ A vector $\mathbf{a}$ in three-dimensional space with components $a_1, a_2, a_3$
 
 $$\mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$$
 
-Where $\mathbf{i}, \mathbf{j}, \mathbf{k}$ are the standard basis vectors along the $x$$y$And $z$
+Where $\mathbf{i}, \mathbf{j}, \mathbf{k}$ are the standard basis vectors along the $x$, $y$And $z$
 Axes respectively.
 
 ### Vector Operations
@@ -192,7 +192,7 @@ $\mathbf{d}_2$:
 
 $$\mathbf{r} = \mathbf{a} + s\mathbf{d}_1 + t\mathbf{d}_2, \qquad s, t \in \mathbb{R}$$
 
-**Example.** Find the equation of the plane through $(1, 0, 2)$$(3, 1, 0)$And $(0, -1, 1)$.
+**Example.** Find the equation of the plane through $(1, 0, 2)$, $(3, 1, 0)$And $(0, -1, 1)$.
 
 $$\overrightarrow{AB} = (2, 1, -2), \qquad \overrightarrow{AC} = (-1, -1, -1)$$
 
@@ -272,7 +272,7 @@ The **scalar triple product** is:
 
 $$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$$
 
-Its absolute value equals the volume of the parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And
+Its absolute value equals the volume of the parallelepiped spanned by $\mathbf{a}$, $\mathbf{b}$And
 $\mathbf{c}$.
 
 $$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}$$
@@ -357,7 +357,7 @@ For a vector $\mathbf{a} = (a_1, a_2, a_3)$ with $|\mathbf{a}| \ne 0$The **direc
 
 $$l = \cos\alpha = \frac{a_1}{|\mathbf{a}|}, \qquad m = \cos\beta = \frac{a_2}{|\mathbf{a}|}, \qquad n = \cos\gamma = \frac{a_3}{|\mathbf{a}|}$$
 
-Where $\alpha, \beta, \gamma$ are the angles between $\mathbf{a}$ and the $x$$y$$z$ axes
+Where $\alpha, \beta, \gamma$ are the angles between $\mathbf{a}$ and the $x$, $y$, $z$ axes
 Respectively.
 
 They satisfy: $l^2 + m^2 + n^2 = 1$.
@@ -390,7 +390,7 @@ $$d = \frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}$$
 
 Find the reflection of the point $P(1, 2, 3)$ in the plane $2x - y + z = 4$.
 
-The normal is $\mathbf{n} = (2, -1, 1)$$|\mathbf{n}| = \sqrt{6}$.
+The normal is $\mathbf{n} = (2, -1, 1)$, $|\mathbf{n}| = \sqrt{6}$.
 
 The foot of the perpendicular from $P$ to the plane is found by solving the line
 $\mathbf{r} = (1, 2, 3) + t(2, -1, 1)$ intersecting the plane:

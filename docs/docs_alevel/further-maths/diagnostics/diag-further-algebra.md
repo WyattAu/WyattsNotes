@@ -23,7 +23,7 @@ $\gamma$ individually. (d) Find a cubic with roots $2\alpha, 2\beta, 2\gamma$.
 (a) $f(1) = 1 - 3 + 4 - 2 = 0 \checkmark$. $f(x) = (x-1)(x^2 - 2x + 2)$.
 
 (b) $x^2 - 2x + 2 = 0$. $x = \frac◆LB◆2 \pm \sqrt{4-8}◆RB◆◆LB◆2◆RB◆ = 1 \pm i$. So
-$\beta = 1+i$$\gamma = 1-i$.
+$\beta = 1+i$, $\gamma = 1-i$.
 
 (c)
 $\alpha^2 + \beta^2 + \gamma^2 = (\alpha+\beta+\gamma)^2 - 2(\alpha\beta+\alpha\gamma+\beta\gamma)$.

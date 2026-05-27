@@ -349,7 +349,7 @@ signals (graded potentials, then action potentials) --- a process called **trans
 | **Mechanoreceptors** | Mechanical deformation (pressure, vibration, stretch) | Pacinian corpuscles (deep pressure); Meissner's corpuscles (light touch, vibration); hair cells in cochlea (sound). |
 | **Thermoreceptors**  | Temperature changes                                   | Warm receptors; cold receptors.                                                                                     |
 | **Nociceptors**      | Pain (tissue damage, extreme stimuli)                 | Free nerve endings in skin, muscles, organs.                                                                        |
-| **Chemoreceptors**   | Chemical substances                                   | Taste buds; olfactory receptors; carotid bodies ($\mathrm{O}_2$$\mathrm{CO}_2$PH).                                  |
+| **Chemoreceptors**   | Chemical substances                                   | Taste buds; olfactory receptors; carotid bodies ($\mathrm{O}_2$, $\mathrm{CO}_2$PH).                                  |
 | **Photoreceptors**   | Light                                                 | Rods (dim light, black-and-white); cones (colour vision, high acuity).                                              |
 
 ### Sensory Pathways to the Brain
@@ -759,9 +759,9 @@ secretion. Atropine blocks muscarinic receptors on salivary glands, causing dry 
 **Worked Example: Nernst and Goldman Equations Applied to Neuronal Physiology**
 
 A neuron at $37^\circ\mathrm{C}$ has the following ion concentrations and permeabilities:
-$[\mathrm{Na}^+]_{\mathrm{in}} = 12\;\mathrm{mmol/L}$$[\mathrm{Na}^+]_{\mathrm{out}} = 145\;\mathrm{mmol/L}$
-$[\mathrm{K}^+]_{\mathrm{in}} = 155\;\mathrm{mmol/L}$$[\mathrm{K}^+]_{\mathrm{out}} = 4\;\mathrm{mmol/L}$
-$[\mathrm{Cl}^-]_{\mathrm{in}} = 4\;\mathrm{mmol/L}$$[\mathrm{Cl}^-]_{\mathrm{out}} = 120\;\mathrm{mmol/L}$.
+$[\mathrm{Na}^+]_{\mathrm{in}} = 12\;\mathrm{mmol/L}$, $[\mathrm{Na}^+]_{\mathrm{out}} = 145\;\mathrm{mmol/L}$
+$[\mathrm{K}^+]_{\mathrm{in}} = 155\;\mathrm{mmol/L}$, $[\mathrm{K}^+]_{\mathrm{out}} = 4\;\mathrm{mmol/L}$
+$[\mathrm{Cl}^-]_{\mathrm{in}} = 4\;\mathrm{mmol/L}$, $[\mathrm{Cl}^-]_{\mathrm{out}} = 120\;\mathrm{mmol/L}$.
 During an action potential, voltage-gated $\mathrm{Na}^+$ channels open, making
 $\mathrm{P_{Na}} \gg \mathrm{P_K}$. Predict the membrane potential at the peak of the action
 potential.

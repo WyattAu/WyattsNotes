@@ -14,7 +14,7 @@ hide_table_of_contents: true
 ### UT-1: VSEPR and Molecular Geometry
 
 **Question:** Draw the Lewis structures and predict the shapes and bond angles of
-$\text{XeF}_4$$\text{SF}_4$And $\text{ClF}_3$. Identify the deviation from ideal bond angles where
+$\text{XeF}_4$, $\text{SF}_4$And $\text{ClF}_3$. Identify the deviation from ideal bond angles where
 applicable.
 
 **Solution:**

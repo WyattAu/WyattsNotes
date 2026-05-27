@@ -102,7 +102,7 @@ evolving.
 A population of flowers has 160 red (RR), 480 pink (Rr), and 360 white (rr) individuals. Total
 = 1000.
 
-- Observed frequency of $q^2 = \frac{360}{1000} = 0.36$So $q = 0.6$$p = 0.4$.
+- Observed frequency of $q^2 = \frac{360}{1000} = 0.36$So $q = 0.6$, $p = 0.4$.
 - Expected: $p^2 = 0.16$ (160 RR), $2pq = 0.48$ (480 Rr), $q^2 = 0.36$ (360 rr).
 - Observed: $p^2 = 0.16$ (160), $2pq = 0.48$ (480), $q^2 = 0.36$ (360).
 - The observed and expected frequencies are identical, suggesting the population is in
@@ -110,7 +110,7 @@ A population of flowers has 160 red (RR), 480 pink (Rr), and 360 white (rr) indi
 
 If instead the observed numbers were 100 RR, 500 Rr, 400 rr:
 
-- $q = \sqrt{0.4} = 0.632$$p = 0.368$.
+- $q = \sqrt{0.4} = 0.632$, $p = 0.368$.
 - Expected: $p^2 = 0.135$ (135), $2pq = 0.465$ (465), $q^2 = 0.400$ (400).
 - Observed: $p^2 = 0.100$ (100), $2pq = 0.500$ (500), $q^2 = 0.400$ (400).
 - The excess of heterozygotes and deficit of homozygous dominants suggests a possible selective

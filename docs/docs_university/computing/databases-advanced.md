@@ -37,7 +37,7 @@ $$\pi_◆LB◆\text◆LB◆name, \text◆LB◆salary \times 12 \to \text◆LB◆
 **Recursive closure:** Not expressible in basic relational algebra. Requires recursive CTEs or
 Datalog.
 
-**Division:** $R \div S$ returns tuples $t$ such that for every tuple $s \in S$$(t, s) \in R$.
+**Division:** $R \div S$ returns tuples $t$ such that for every tuple $s \in S$, $(t, s) \in R$.
 
 **Theorem 1.1.** Division can be expressed using basic relational algebra:
 
@@ -48,11 +48,11 @@ Where $A$ is the set of attributes of $R$ not in $S$.
 _Proof._ Let $t \in \pi_A(R)$. We need to show $t \in R \div S$ if and only if
 $t \notin \pi_A(\pi_A(R) \times S - R)$.
 
-($\Rightarrow$) If $t \in R \div S$Then for every $s \in S$$(t, s) \in R$. So
+($\Rightarrow$) If $t \in R \div S$Then for every $s \in S$, $(t, s) \in R$. So
 $(t, s) \notin \pi_A(R) \times S - R$ for any $s$Hence $t \notin \pi_A(\pi_A(R) \times S - R)$.
 
 ($\Leftarrow$) If $t \notin \pi_A(\pi_A(R) \times S - R)$Then there is no $s \in S$ such that
-$(t, s) \notin R$. This means for every $s \in S$$(t, s) \in R$So $t \in R \div S$. $\blacksquare$
+$(t, s) \notin R$. This means for every $s \in S$, $(t, s) \in R$So $t \in R \div S$. $\blacksquare$
 
 <details>
 <summary>Worked Example: Relational Division</summary>

@@ -332,7 +332,7 @@ Factor pairs of 4: $(1,4), (2,2), (4,1), (-1,-4), (-2,-2), (-4,-1)$.
 | $-2$         | $-2$        | $-3$     | $-3$    | $6$                   |
 | $-4$         | $-1$        | $-5$     | $-2$    | $7$                   |
 
-Distinct values of $k$: $-3$$-2$$6$$7$.
+Distinct values of $k$: $-3$, $-2$, $6$, $7$.
 
 ---
 
@@ -345,7 +345,7 @@ $\dfrac{1}{\alpha}$ and $\dfrac{1}{\beta}$.
 
 **Solution:**
 
-$\alpha + \beta = 7$$\alpha\beta = 10$.
+$\alpha + \beta = 7$, $\alpha\beta = 10$.
 
 $$\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{7}{10}$$
 
@@ -470,7 +470,7 @@ $p = 7$: $343 - 210 - 56 = 77 \neq 0$.
 
 $p = -4$: $-64 + 120 - 56 = 0$. Yes.
 
-So $p = -4$$q = \dfrac{16 - 10}{2} = 3$.
+So $p = -4$, $q = \dfrac{16 - 10}{2} = 3$.
 
 (b) $x^2 - 4x + 3 = 0 \implies (x - 1)(x - 3) = 0 \implies x = 1$ or $x = 3$.
 
@@ -532,7 +532,7 @@ $k$ such that $\dfrac{1}{\alpha^2} + \dfrac{1}{\beta^2} = 1$. (4 marks)
 
 **Solution:**
 
-(a) $\alpha + \beta = -2$$\alpha\beta = \dfrac{k}{2}$.
+(a) $\alpha + \beta = -2$, $\alpha\beta = \dfrac{k}{2}$.
 
 $$\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta} = \frac{-2}{k/2} = -\frac{4}{k}$$
 

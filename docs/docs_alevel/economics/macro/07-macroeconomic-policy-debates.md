@@ -140,7 +140,7 @@ Inflation exceeds target, and by 0.5% for every 1% that output exceeds potential
 
 <details>
 <summary>Worked Example</summary>
-Suppose $r^* = 2\%$$\pi^* = 2\%$Current $\pi = 5\%$Output gap = $-3\%$ (recession).
+Suppose $r^* = 2\%$, $\pi^* = 2\%$Current $\pi = 5\%$Output gap = $-3\%$ (recession).
 
 $$i = 2 + 5 + 0.5(5 - 2) + 0.5(-3) = 2 + 5 + 1.5 - 1.5 = 7\%$$
 
@@ -162,7 +162,7 @@ The recessionary output gap.
 
 1. **Unforeseen circumstances**: rules cannot anticipate all shocks (financial crises, pandemics,
    wars)
-2. **Model uncertainty**: the Taylor Rule assumes we know $r^*$$y^*$And the correct coefficients —
+2. **Model uncertainty**: the Taylor Rule assumes we know $r^*$, $y^*$And the correct coefficients —
    these are uncertain
 3. **Multiple objectives**: rules may be too rigid when trade-offs between objectives change
 4. **Communication**: discretion allows nuanced forward guidance
@@ -578,7 +578,7 @@ Statement be less valid?
 From $MV = PY$: if $V$ is stable (Friedman's assumption) and $Y$ is at potential in the long run (LRAS vertical), then $\Delta P \approx \Delta M$. Sustained inflation requires sustained money supply growth. Conditions where this is less valid: (1) $V$ is not stable — during financial crises, velocity falls sharply (people hoard cash), so $\Delta M$ does not translate to $\Delta P$. (2) The economy has a large output gap — $Y$ can increase, absorbing the money supply growth. (3) Supply shocks cause inflation without money supply growth (cost-push). (4) In the short run, prices are sticky, so $\Delta M$ affects $Y$ not $P$ (Keynesian view). Overall: the monetarist argument is strong in the long run but weaker in the short run and during crises.
 </details>
 
-**Problem 2.** Suppose the central bank follows the Taylor Rule with $r^* = 2\%$$\pi^* = 2\%$And
+**Problem 2.** Suppose the central bank follows the Taylor Rule with $r^* = 2\%$, $\pi^* = 2\%$And
 Coefficients 0.5 for both inflation and output gap. Calculate the prescribed interest rate when: (a)
 $\pi = 3\%$$y - y^* = 0\%$(b) $\pi = 2\%$$y - y^* = -4\%$(c) $\pi = 6\%$$y - y^* = 1\%$. Comment on
 the results.

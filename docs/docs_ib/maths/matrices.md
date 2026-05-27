@@ -14,7 +14,7 @@ An $m \times n$ matrix $A$ is a rectangular array of real numbers with $m$ rows 
 
 $$A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}$$
 
-The entry in row $i$ and column $j$ is $a_{ij}$. When $m = n$$A$ is a **square matrix** of order
+The entry in row $i$ and column $j$ is $a_{ij}$. When $m = n$, $A$ is a **square matrix** of order
 $n$.
 
 The **identity matrix** $I_n$ is the $n \times n$ matrix with $1$S on the diagonal and $0$S
@@ -114,7 +114,7 @@ Of the submatrix obtained by deleting row $i$ and column $j$).
 - $(A^{-1})^{-1} = A$
 - $(AB)^{-1} = B^{-1}A^{-1}$
 - $(A^T)^{-1} = (A^{-1})^T$
-- $(\lambda A)^{-1} = \dfrac{1}{\lambda} A^{-1}$$\lambda \ne 0$
+- $(\lambda A)^{-1} = \dfrac{1}{\lambda} A^{-1}$, $\lambda \ne 0$
 
 ---
 
@@ -351,7 +351,7 @@ Cofactors:
 $C_{11} = 1, C_{12} = -5, C_{13} = -2, C_{21} = -2, C_{22} = 1, C_{23} = 4, C_{31} = -2, C_{32} = 1, C_{33} = -5$.
 $A^{-1} = \dfrac{1}{-9}\begin{pmatrix} 1 & 2 & -2 \\ -5 & 1 & 1 \\ -2 & 4 & -5 \end{pmatrix} = \begin{pmatrix} -1/9 & -2/9 & 2/9 \\ 5/9 & -1/9 & -1/9 \\ 2/9 & -4/9 & 5/9 \end{pmatrix}$.
 
-**Problem 3:** $A = \begin{pmatrix} 1 & 2 \\ 3 & 7 \end{pmatrix}$$\det(A) = 7 - 6 = 1$.
+**Problem 3:** $A = \begin{pmatrix} 1 & 2 \\ 3 & 7 \end{pmatrix}$, $\det(A) = 7 - 6 = 1$.
 $A^{-1} = \begin{pmatrix} 7 & -2 \\ -3 & 1 \end{pmatrix}$.
 $\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 7 & -2 \\ -3 & 1 \end{pmatrix}\begin{pmatrix} 5 \\ 18 \end{pmatrix} = \begin{pmatrix} 35 - 36 \\ -15 + 18 \end{pmatrix} = \begin{pmatrix} -1 \\ 3 \end{pmatrix}$.
 So $x = -1, y = 3$.
@@ -450,7 +450,7 @@ $R_1 \leftrightarrow R_2$:
 
 $$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 2 & 1 & -1 & | & 3 \\ 3 & 2 & 1 & | & 1 \end{pmatrix}$$
 
-$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - 3R_1$:
+$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$:
 
 $$\begin{pmatrix} 1 & -1 & 2 & | & 6 \\ 0 & 3 & -5 & | & -9 \\ 0 & 5 & -5 & | & -17 \end{pmatrix}$$
 

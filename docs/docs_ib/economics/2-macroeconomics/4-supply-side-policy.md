@@ -437,7 +437,7 @@ Growth, and technological progress.
 
 $$Y = F(K, L)$$
 
-In per-worker terms ($y = Y/L$$k = K/L$):
+In per-worker terms ($y = Y/L$, $k = K/L$):
 
 $$y = f(k)$$
 
@@ -1229,7 +1229,7 @@ An economy has:
 - LM: $Y = 200 + 100r + 5M/P$
 - BP: $Y = 400 + 50r$ (imperfect capital mobility, upward-sloping)
 - World interest rate: $r^* = 4\%$
-- $G = 200$$M/P = 100$
+- $G = 200$, $M/P = 100$
 
 (a) Find the initial equilibrium.
 
@@ -1254,7 +1254,7 @@ New IS: $Y = 1500 - 50r$.
 
 IS = LM: $1500 - 50r = 700 + 100r + 5\Delta M/P$
 
-At the BP intersection: $r = 4$$Y = 600$. But IS at $r=4$: $Y = 1300$. This does not Intersect BP at
+At the BP intersection: $r = 4$, $Y = 600$. But IS at $r=4$: $Y = 1300$. This does not Intersect BP at
 $r=4$.
 
 Let me solve properly. Under fixed rates, the final equilibrium is where IS and BP intersect (the
@@ -1266,7 +1266,7 @@ $1500 - 50r = 400 + 50r \implies 1100 = 100r \implies r = 11$.
 
 $Y = 400 + 50(11) = 950$.
 
-The equilibrium moves to $r = 11\%$$Y = 950$.
+The equilibrium moves to $r = 11\%$, $Y = 950$.
 
 Fiscal expansion is **effective** under fixed rates: output increases from 1167 to... Wait, this
 Seems wrong. Let me re-examine.
@@ -1275,13 +1275,13 @@ Actually, at the initial equilibrium $Y = 1167 > Y_{BP} = 633$So the economy has
 Under fixed rates, the money supply increases, shifting LM right, which lowers $r$ and Raises $Y$
 further. The process continues until IS = LM = BP.
 
-At the intersection of IS and BP: $r = 11$$Y = 950$. But this gives lower $Y$ than the Initial 1167,
+At the intersection of IS and BP: $r = 11$, $Y = 950$. But this gives lower $Y$ than the Initial 1167,
 which cannot be right for a fiscal expansion.
 
 The issue is that the BP curve's position relative to the initial equilibrium matters. Let me
 Recalculate more carefully.
 
-Initial: $r = 4.67$$Y = 1167$. BP at $r = 4.67$: $Y_{BP} = 400 + 50(4.67) = 633$.
+Initial: $r = 4.67$, $Y = 1167$. BP at $r = 4.67$: $Y_{BP} = 400 + 50(4.67) = 633$.
 
 $Y > Y_{BP}$ means the current account deficit is smaller than the capital account surplus (BoP
 surplus). The central bank buys USD, sells domestic currency, expanding M.
@@ -1293,7 +1293,7 @@ New IS after $G$ increase: $Y = 1500 - 50r$.
 
 The process continues until $Y_{IS} = Y_{BP}$:
 
-$1500 - 50r = 400 + 50r \implies r = 11$$Y = 950$.
+$1500 - 50r = 400 + 50r \implies r = 11$, $Y = 950$.
 
 Hmm, $Y$ fell from 1167 to 950 despite fiscal expansion. This seems contradictory. The Problem is
 that the BP curve is very low relative to the initial equilibrium, suggesting the Capital account
@@ -1304,7 +1304,7 @@ Let me use more realistic parameters. Suppose instead:
 
 - BP: $Y = 800 + 80r$ (steeper BP, implying stronger capital mobility)
 
-Initial IS = LM: $r = 4.67$$Y = 1167$. BP at $r = 4.67$: $Y_{BP} = 800 + 373 = 1173$.
+Initial IS = LM: $r = 4.67$, $Y = 1167$. BP at $r = 4.67$: $Y_{BP} = 800 + 373 = 1173$.
 
 Now $Y \approx Y_{BP}$ (the economy is near BP equilibrium). This is more realistic.
 
@@ -1401,7 +1401,7 @@ IS: $Y = 600 + 4e$. LM: $Y = 600$.
 
 For equilibrium: $600 + 4e = 600 \implies e = 0$. This is unrealistic. Let me adjust the Parameters.
 
-Let IS: $Y = 600 - 40r + 4e$LM: $Y = 400 + 20r$$r^* = 5$.
+Let IS: $Y = 600 - 40r + 4e$LM: $Y = 400 + 20r$, $r^* = 5$.
 
 IS at $r=5$: $Y = 600 - 200 + 4e = 400 + 4e$. LM at $r=5$: $Y = 500$.
 
@@ -1519,13 +1519,13 @@ The Taylor rule responds to two gaps:
 
 ### Numerical Example
 
-$\pi^* = 2\%$$r^* = 2\%$.
+$\pi^* = 2\%$, $r^* = 2\%$.
 
-**Scenario 1:** $\pi = 2\%$$y = y^*$ (output at potential).
+**Scenario 1:** $\pi = 2\%$, $y = y^*$ (output at potential).
 
 $i = 2 + 2 + 0.5(0) + 0.5(0) = 4\%$.
 
-**Scenario 2:** $\pi = 5\%$$y = y^*$.
+**Scenario 2:** $\pi = 5\%$, $y = y^*$.
 
 $i = 2 + 5 + 0.5(3) + 0.5(0) = 8.5\%$.
 
@@ -1645,15 +1645,15 @@ shock causes inflation to rise to 6% while output falls 2% below potential.
 
 (c) Evaluate the Taylor rule as a framework for monetary policy. [2 marks]
 
-(a) **Shock A:** $\pi = 5$$y - y^* = 0$.
+(a) **Shock A:** $\pi = 5$, $y - y^* = 0$.
 
 $i = 2 + 5 + 0.5(5-2) + 0.5(0) = 7 + 1.5 = 8.5\%$
 
-**Shock B:** $\pi = 2$$y - y^* = -4$.
+**Shock B:** $\pi = 2$, $y - y^* = -4$.
 
 $i = 2 + 2 + 0.5(0) + 0.5(-4) = 4 + 0 - 2 = 2.0\%$
 
-**Shock C:** $\pi = 6$$y - y^* = -2$.
+**Shock C:** $\pi = 6$, $y - y^* = -2$.
 
 $i = 2 + 6 + 0.5(6-2) + 0.5(-2) = 8 + 2 - 1 = 9.0\%$
 

@@ -440,7 +440,7 @@ range of values of $x$ for which the expansion is valid. (5 marks)
 
 **Solution:**
 
-Using the generalised binomial theorem with $n = \dfrac{1}{2}$$a = 1$$b = -3x$:
+Using the generalised binomial theorem with $n = \dfrac{1}{2}$, $a = 1$, $b = -3x$:
 
 $$(1 - 3x)^{1/2} = 1 + \frac{1}{2}(-3x) + \frac{\frac{1}{2} \times \left(-\frac{1}{2}\right)}{2!}(-3x)^2 + \frac{\frac{1}{2}\left(-\frac{1}{2}\right)\left(-\frac{3}{2}\right)}{3!}(-3x)^3 + \cdots$$
 

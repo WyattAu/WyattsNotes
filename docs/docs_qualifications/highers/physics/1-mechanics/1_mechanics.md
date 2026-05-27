@@ -74,9 +74,9 @@ Where $u$ = initial velocity, $v$ = final velocity, $s$ = displacement, $t$ = ti
 
 ### Choosing the Right Equation
 
-Each equation relates a different subset of the five variables ($u$$v$$a$$s$$t$). The Variable that
-does _not_ appear tells you when to use that equation. If you know $u$$a$And $s$ And need $v$Use
-$v^2 = u^2 + 2as$ (it does not contain $t$). If you know $u$$v$And $t$ and Need $s$Use
+Each equation relates a different subset of the five variables ($u$, $v$, $a$, $s$, $t$). The Variable that
+does _not_ appear tells you when to use that equation. If you know $u$, $a$And $s$ And need $v$Use
+$v^2 = u^2 + 2as$ (it does not contain $t$). If you know $u$, $v$And $t$ and Need $s$Use
 $s = \frac{1}{2}(u+v)t$ (it does not contain $a$).
 
 **Example:** A car accelerates uniformly from $10 \mathrm{ m/s$ to $30 \mathrm{ m/s$ over a distance
@@ -524,8 +524,8 @@ The ball to just complete the circle, we need $v_t = \sqrt{gL} = \sqrt{11.76} = 
 
 | Topic             | Formula                    | Variables               | Conditions              |
 | ----------------- | -------------------------- | ----------------------- | ----------------------- |
-| Kinematics        | $v = u + at$               | $u$$v$$a$$t$            | Constant acceleration   |
-| Kinematics        | $v^2 = u^2 + 2as$          | $u$$v$$a$$s$            | Constant acceleration   |
+| Kinematics        | $v = u + at$               | $u$, $v$, $a$, $t$            | Constant acceleration   |
+| Kinematics        | $v^2 = u^2 + 2as$          | $u$, $v$, $a$, $s$            | Constant acceleration   |
 | Projectile range  | $R = u^2\sin 2\theta / g$  | $u$$\theta$$g$          | Launch = landing height |
 | Newton's 2nd law  | $F = ma$                   | $F$$m$$a$               | Vector equation         |
 | Weight            | $W = mg$                   | $m$$g$                  | Near surface            |

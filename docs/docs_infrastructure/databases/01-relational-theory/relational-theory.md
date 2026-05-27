@@ -449,7 +449,7 @@ Fix: split into:
 
 ### Boyce-Codd Normal Form (BCNF)
 
-A relation is in BCNF if for every non-trivial FD $X \rightarrow Y$$X$ is a superkey. BCNF is
+A relation is in BCNF if for every non-trivial FD $X \rightarrow Y$, $X$ is a superkey. BCNF is
 Stricter than 3NF: 3NF allows $X \rightarrow A$ where $X$ is a superkey OR $A$ is a prime attribute.
 BCNF removes the "or $A$ is prime" exception.
 

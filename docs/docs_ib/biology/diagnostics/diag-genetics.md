@@ -246,6 +246,6 @@ Observed: affected $= 1$Unaffected $= 2$.
 
 $\chi^2 = \frac{(1 - 1.2)^2}{1.2} + \frac{(2 - 1.8)^2}{1.8} = \frac{0.04}{1.2} + \frac{0.04}{1.8} = 0.0333 + 0.0222 = 0.0556$
 
-With $df = 1$$\chi^2_{\text{crit}} = 3.841$. Since $0.0556 \lt 3.841$The data is consistent with 80%
+With $df = 1$, $\chi^2_{\text{crit}} = 3.841$. Since $0.0556 \lt 3.841$The data is consistent with 80%
 penetrance autosomal dominant inheritance. The probability of two unaffected parents having an
 affected child is 40% per child under this model.

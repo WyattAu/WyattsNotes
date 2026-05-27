@@ -21,7 +21,7 @@ when finding the [domain](functions#definition-of-a-function) and
 
 ### Basic Properties
 
-Let $a$$b$And $c$ be real numbers. The following properties hold for inequalities:
+Let $a$, $b$And $c$ be real numbers. The following properties hold for inequalities:
 
 **Addition property:**
 
@@ -124,7 +124,7 @@ The solution set is $[7, \infty)$.
 
 ## Quadratic Inequalities
 
-A quadratic inequality has the form $ax^2 + bx + c > 0$$ax^2 + bx + c < 0$Or their non-strict
+A quadratic inequality has the form $ax^2 + bx + c > 0$, $ax^2 + bx + c < 0$Or their non-strict
 Variants, where $a \neq 0$. Solving quadratic inequalities relies on understanding the graph of the
 Corresponding [quadratic function](functions#quadratic-functions) $f(x) = ax^2 + bx + c$.
 
@@ -485,7 +485,7 @@ Since $a = 1 > 0$The parabola opens upward. The expression is positive outside t
 
 Solution: $k < -2$ or $k > 3$I.e., $(-\infty, -2) \cup (3, \infty)$.
 
-7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$$|x - 2| \leq 3$And $x > 0$.
+7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$, $|x - 2| \leq 3$And $x > 0$.
 </details>
 <summary>Answer</summary>
 From $x^2 - 5x + 4 \leq 0$: $(x-1)(x-4) \leq 0 \implies 1 \leq x \leq 4$.
@@ -536,7 +536,7 @@ First note that $x \neq 1$ (the denominator cannot be zero).
 
 Factorize the numerator: $\dfrac{(x-2)(x+2)}{x-1} \geq 0$.
 
-Critical points: $x = -2$$x = 1$$x = 2$.
+Critical points: $x = -2$, $x = 1$, $x = 2$.
 
 Sign diagram:
 

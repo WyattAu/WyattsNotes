@@ -66,7 +66,7 @@ $$
 \mathrm{Units of } K_c = (\mathrm{mol/dm}^3)^{(c+d)-(a+b)}
 $$
 
-If $(c+d) = (a+b)$$K_c$ is dimensionless.
+If $(c+d) = (a+b)$, $K_c$ is dimensionless.
 
 | Reaction                                                                       | Units of $K_c$            |
 | ------------------------------------------------------------------------------ | ------------------------- |
@@ -124,7 +124,7 @@ The units depend on the stoichiometry. If $\Delta n_g = (c+d) - (a+b)$ is the ch
 of moles of gas:
 
 - $\Delta n_g = 0$: $K_p$ is dimensionless.
-- $\Delta n_g = 1$: units of pressure ($\mathrm{atm}$$\mathrm{kPa}$Etc.).
+- $\Delta n_g = 1$: units of pressure ($\mathrm{atm}$, $\mathrm{kPa}$Etc.).
 - $\Delta n_g = -2$: units of $\mathrm{pressure}^{-2}$.
 
 **Note:** The numerical value of $K_p$ depends on the units of pressure used. Always state the
@@ -157,9 +157,9 @@ Partial pressures ($p_i = x_i \times 200$):
 - $p(\mathrm{O}_2) = 33.3\,\mathrm{kPa}$
 - $p(\mathrm{SO}_3) = 100.0\,\mathrm{kPa}$
 
-$$
+$, $
 K_p = \frac◆LB◆(p_{\mathrm{SO}_3})^2◆RB◆◆LB◆(p_{\mathrm{SO}_2})^2 \times p_{\mathrm{O}_2}◆RB◆ = \frac◆LB◆(100.0)^2◆RB◆◆LB◆(66.7)^2 \times 33.3◆RB◆ = \frac{10000}{148074} = 0.0675\,\mathrm{kPa}^{-1}
-$$
+$, $
 
 ## Homogeneous and Heterogeneous Equilibria
 
@@ -170,9 +170,9 @@ have constant concentration and are **omitted** from the equilibrium expression.
 
 Example: $\mathrm{CaCO}_3(s) \rightleftharpoons \mathrm{CaO}(s) + \mathrm{CO}_2(g)$
 
-$$
+$, $
 K_p = p(\mathrm{CO}_2)
-$$
+$, $
 
 The concentrations of $\mathrm{CaCO}_3(s)$ and $\mathrm{CaO}(s)$ are constants (they are pure
 solids) and are absorbed into $K$.
@@ -193,9 +193,9 @@ For an endothermic reaction ($\Delta H \gt 0$):
 
 The quantitative relationship is given by the **van 't Hoff equation**:
 
-$$
+$, $
 \ln\left(\frac{K_2}{K_1}\right) = -\frac◆LB◆\Delta H^\circ◆RB◆◆LB◆R◆RB◆\left(\frac{1}{T_2} - \frac{1}{T_1}\right)
-$$
+$, $
 
 This is analogous to the Arrhenius equation (see [Chemical Kinetics](./chemical-kinetics)).
 
@@ -237,9 +237,9 @@ $500\,\mathrm{K}$$K_c = 6.0 \times 10^{-2}\,\mathrm{mol^{-2}\,dm^6}$. Calculate 
 
 $\Delta n_g = 2 - (1 + 3) = -2$.
 
-$$
+$, $
 K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2} = \frac◆LB◆6.0 \times 10^{-2}◆RB◆◆LB◆(8.314 \times 500)^2◆RB◆ = \frac{0.060}{(4157)^2} = \frac◆LB◆0.060◆RB◆◆LB◆1.728 \times 10^7◆RB◆ = 3.5 \times 10^{-9}\,\mathrm{Pa^{-2}}
-$$
+$, $
 
 Note: if $K_c$ is in $\mathrm{mol/dm^3}$$R$ must be in consistent units. Alternatively, work in
 $\mathrm{atm}$: $R = 0.0821\,\mathrm{dm^3\,atm\,mol^{-1}\,K^{-1}}$.
@@ -323,13 +323,13 @@ $$
 Let $s$ = solubility in $\mathrm{mol/dm}^3$. At equilibrium:
 $[\mathrm{Pb}^{2+}] = s$$[\mathrm{I}^-] = 2s$.
 
-$$
+$, $
 K_{sp} = [\mathrm{Pb}^{2+}][\mathrm{I}^-]^2 = s(2s)^2 = 4s^3
-$$
+$, $
 
-$$
+$, $
 S = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac◆LB◆1.4 \times 10^{-8}◆RB◆◆LB◆4◆RB◆} = \sqrt[3]{3.5 \times 10^{-9}} = 1.52 \times 10^{-3}\,\mathrm{mol/dm}^3
-$$
+$, $
 
 ### Precipitation Prediction
 
@@ -346,15 +346,15 @@ common ion shifts the dissolution equilibrium to the left, suppressing dissoluti
 
 **Example.** The solubility of $\mathrm{AgCl}$ in pure water is:
 
-$$
+$, $
 S = \sqrt{K_{sp}} = \sqrt◆LB◆1.8 \times 10^{-10}◆RB◆ = 1.34 \times 10^{-5}\,\mathrm{mol/dm}^3
-$$
+$, $
 
 In $0.10\,\mathrm{mol/dm}^3$ $\mathrm{NaCl}$ solution:
 
-$$
+$, $
 [\mathrm{Ag}^+] = \frac◆LB◆K_{sp}◆RB◆◆LB◆[\mathrm{Cl}^-]◆RB◆ = \frac◆LB◆1.8 \times 10^{-10}◆RB◆◆LB◆0.10◆RB◆ = 1.8 \times 10^{-9}\,\mathrm{mol/dm}^3
-$$
+$, $
 
 The solubility is reduced by a factor of approximately $10^4$.
 
@@ -442,35 +442,35 @@ extracted by:
 
 Let $x$ = mass extracted. $c_\mathrm{ether} = x/100$$c_\mathrm{water} = (5.0 - x)/100$.
 
-$$
+$, $
 4.0 = \frac{x/100}{(5.0 - x)/100} = \frac{x}{5.0 - x}
-$$
+$, $
 
-$$
+$, $
 4(5.0 - x) = x \implies 20 - 4x = x \implies x = 4.0\,\mathrm{g}
-$$
+$, $
 
 **(b)** First extraction with $50\,\mathrm{cm}^3$: Let $x_1$ = mass extracted.
 
-$$
+$, $
 4.0 = \frac{x_1/50}{(5.0 - x_1)/100} = \frac{2x_1}{5.0 - x_1}
-$$
+$, $
 
-$$
+$, $
 4(5.0 - x_1) = 2x_1 \implies 20 - 4x_1 = 2x_1 \implies x_1 = 3.33\,\mathrm{g}
-$$
+$, $
 
 Remaining: $5.0 - 3.33 = 1.67\,\mathrm{g}$.
 
 Second extraction with $50\,\mathrm{cm}^3$: Let $x_2$ = mass extracted.
 
-$$
+$, $
 4.0 = \frac{x_2/50}{(1.67 - x_2)/100} = \frac{2x_2}{1.67 - x_2}
-$$
+$, $
 
-$$
+$, $
 4(1.67 - x_2) = 2x_2 \implies x_2 = 1.11\,\mathrm{g}
-$$
+$, $
 
 Total extracted: $3.33 + 1.11 = 4.44\,\mathrm{g}$.
 
@@ -484,9 +484,9 @@ The equilibrium constant for the dissociation of a weak acid is the acid dissoci
 $K_a$. The relationship between $K_a$ and $K_b$ for a conjugate acid-base pair at $298\,\mathrm{K}$
 is:
 
-$$
+$, $
 K_a \times K_b = K_w = 1.0 \times 10^{-14}
-$$
+$, $
 
 This is a specific application of the general principle that
 $K_\mathrm{forward} \times K_\mathrm{reverse} = 1$ for a pair of conjugate reactions. See
@@ -575,15 +575,15 @@ From the stoichiometry, $p(\mathrm{PCl}_3) = p(\mathrm{Cl}_2) = 95\,\mathrm{kPa}
 
 Total pressure: $p(\mathrm{PCl}_5) + p(\mathrm{PCl}_3) + p(\mathrm{Cl}_2) = 200\,\mathrm{kPa}$
 
-$$
+$, $
 P(\mathrm{PCl}_5) = 200 - 95 - 95 = 10\,\mathrm{kPa}
-$$
+$, $
 
 Verification:
 
-$$
+$, $
 K_p = \frac◆LB◆p(\mathrm{PCl}_3) \times p(\mathrm{Cl}_2)◆RB◆◆LB◆p(\mathrm{PCl}_5)◆RB◆ = \frac◆LB◆95 \times 95◆RB◆◆LB◆10◆RB◆ = \frac{9025}{10} = 902.5\,\mathrm{kPa}
-$$
+$, $
 
 This does not equal $K_p = 12.5\,\mathrm{kPa}$Indicating that the given data is inconsistent with
 $K_p = 12.5\,\mathrm{kPa}$. Either the total pressure or the $\mathrm{Cl}_2$ partial pressure is
@@ -595,27 +595,27 @@ correct partial pressures.
 Let $x = p(\mathrm{PCl}_5)$ at equilibrium. Then $p(\mathrm{PCl}_3) = p(\mathrm{Cl}_2) = 200 - x$
 (since they are equal).
 
-$$
+$, $
 K_p = \frac{(200 - x)^2}{x} = 12.5
-$$
+$, $
 
-$$
+$, $
 (200 - x)^2 = 12.5x
-$$
+$, $
 
-$$
+$, $
 40000 - 400x + x^2 = 12.5x
-$$
+$, $
 
-$$
+$, $
 X^2 - 412.5x + 40000 = 0
-$$
+$, $
 
 Using the quadratic formula:
 
-$$
+$, $
 X = \frac◆LB◆412.5 \pm \sqrt{412.5^2 - 4 \times 40000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm \sqrt{170156 - 160000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm \sqrt{10156}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm 100.8◆RB◆◆LB◆2◆RB◆
-$$
+$, $
 
 $x = 256.7$ or $x = 155.9$. Since $p(\mathrm{PCl}_3) = 200 - x$ must be positive,
 $x = 155.9\,\mathrm{kPa}$.
@@ -639,35 +639,35 @@ $K_{sp}(\mathrm{CaF}_2) = 3.9 \times 10^{-11}$.
 
 Let $s$ = solubility. $[\mathrm{Ca}^{2+}] = s$$[\mathrm{F}^-] = 2s$.
 
-$$
+$, $
 K_{sp} = s(2s)^2 = 4s^3 = 3.9 \times 10^{-11}
-$$
+$, $
 
-$$
+$, $
 S = \sqrt[3]{\frac◆LB◆3.9 \times 10^{-11}◆RB◆◆LB◆4◆RB◆} = \sqrt[3]{9.75 \times 10^{-12}} = 2.14 \times 10^{-4}\,\mathrm{mol/dm}^3
-$$
+$, $
 
 (b) In $0.050\,\mathrm{mol/dm}^3$ $\mathrm{CaCl}_2$:
 $[\mathrm{Ca}^{2+}]_\mathrm{from\ CaCl_2} = 0.050\,\mathrm{mol/dm}^3$.
 
-$$
+$, $
 K_{sp} = [\mathrm{Ca}^{2+}]_\mathrm{total}[\mathrm{F}^-]^2 = (0.050 + s)(2s)^2 \approx 0.050 \times 4s^2
-$$
+$, $
 
 (The approximation $0.050 + s \approx 0.050$ is valid because $s$ will be very small compared to
 $0.050$.)
 
-$$
+$, $
 0.200s^2 = 3.9 \times 10^{-11}
-$$
+$, $
 
-$$
+$, $
 S^2 = 1.95 \times 10^{-10}
-$$
+$, $
 
-$$
+$, $
 S = 1.40 \times 10^{-5}\,\mathrm{mol/dm}^3
-$$
+$, $
 
 The solubility in $0.050\,\mathrm{mol/dm}^3$ $\mathrm{CaCl}_2$
 ($1.40 \times 10^{-5}\,\mathrm{mol/dm}^3$) is approximately 15 times less than in pure water
@@ -711,29 +711,29 @@ $$
 Partial pressures:
 $p(\mathrm{N}_2\mathrm{O}_4) = \frac{1.00 - x}{1.00 + x} \times p_\mathrm{total}$$p(\mathrm{NO}_2) = \frac{2x}{1.00 + x} \times p_\mathrm{total}$.
 
-$$
+$, $
 K_p = \frac◆LB◆p(\mathrm{NO}_2)^2◆RB◆◆LB◆p(\mathrm{N}_2\mathrm{O}_4)◆RB◆ = \frac{(2x)^2}{(1.00 - x)(1.00 + x)} \times p_\mathrm{total} = \frac{4x^2}{1 - x^2} \times p_\mathrm{total}
-$$
+$, $
 
 Since $K_p = 0.115\,\mathrm{atm} = 0.115 \times 101325 = 11652\,\mathrm{Pa}$:
 
-$$
+$, $
 11652 = \frac{4x^2}{1 - x^2} \times 247700(1 + x)
-$$
+$, $
 
 This requires iterative solution or approximation. Assuming $x \ll 1$:
 
-$$
+$, $
 11652 \approx 4x^2 \times 247700
-$$
+$, $
 
-$$
+$, $
 X^2 \approx \frac{11652}{990800} = 0.01176
-$$
+$, $
 
-$$
+$, $
 X \approx 0.108\,\mathrm{mol}
-$$
+$, $
 
 $n(\mathrm{NO}_2) = 2 \times 0.108 = 0.217\,\mathrm{mol}$$n(\mathrm{N}_2\mathrm{O}_4) = 0.892\,\mathrm{mol}$.
 
@@ -887,7 +887,7 @@ colorimetry) is proportional to its concentration.
 Nitrogen and hydrogen react to form ammonia:
 $\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \rightleftharpoons 2\mathrm{NH}_3(g)$.
 
-At $500^\circ\mathrm{C}$$K_p = 6.0 \times 10^{-3}\,\mathrm{atm}^{-2}$. A mixture of
+At $500^\circ\mathrm{C}$, $K_p = 6.0 \times 10^{-3}\,\mathrm{atm}^{-2}$. A mixture of
 $1.0\,\mathrm{mol}$ $\mathrm{N}_2$ and $3.0\,\mathrm{mol}$ $\mathrm{H}_2$ is allowed to reach
 equilibrium at a total pressure of $200\,\mathrm{atm}$. Calculate the equilibrium mole fraction of
 ammonia.

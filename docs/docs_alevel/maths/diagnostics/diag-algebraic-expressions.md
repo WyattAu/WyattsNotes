@@ -305,9 +305,9 @@ To check if this is a constant, perform polynomial division:
 $5x^2 - 11x - 5 = 5(x^2 - 5x - 1) + 14x$.
 
 This is not a constant for general $x$. However, let us verify by direct substitution. Take $x = 0$:
-$f(0) = -1/2$$f^{-1}(0) = -1/3$. Then $\frac{-1/2 - 1/3}{-1/2 + 1/3} = \frac{-5/6}{-1/6} = 5$.
+$f(0) = -1/2$, $f^{-1}(0) = -1/3$. Then $\frac{-1/2 - 1/3}{-1/2 + 1/3} = \frac{-5/6}{-1/6} = 5$.
 
-Take $x = 1$: $f(1) = -4$$f^{-1}(1) = -3$. Then $\frac{-4-3}{-4+3} = 7$.
+Take $x = 1$: $f(1) = -4$, $f^{-1}(1) = -3$. Then $\frac{-4-3}{-4+3} = 7$.
 
 The ratio is not constant. Let me reconsider the calculation. For $x = 1$:
 $$f(1) + f^{-1}(1) = \frac{4}{-1} + \frac{3}{-2} = -4 - \frac{3}{2} = -\frac{11}{2}$$
@@ -411,7 +411,7 @@ Verification: $(2-\sqrt{3})^2 = 4 - 4\sqrt{3} + 3 = 7 - 4\sqrt{3}$. Confirmed.
 
 $$(\sqrt{m} + \sqrt{n})x^2 - (m+n)x + (\sqrt{m} - \sqrt{n}) = 0$$
 
-Substituting $m = 4$$n = 3$:
+Substituting $m = 4$, $n = 3$:
 
 $$(2+\sqrt{3})x^2 - 7x + (2-\sqrt{3}) = 0$$
 

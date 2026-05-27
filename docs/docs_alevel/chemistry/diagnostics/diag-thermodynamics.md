@@ -116,7 +116,7 @@ For the decomposition of calcium carbonate:
 
 $$\text{CaCO}_3(s) \to \text{CaO}(s) + \text{CO}_2(g)$$
 
-$\Delta H^\circ = +178\,\text{kJ mol}^{-1}$$\Delta S^\circ = +161\,\text{J K}^{-1}\text{ mol}^{-1}$.
+$\Delta H^\circ = +178\,\text{kJ mol}^{-1}$, $\Delta S^\circ = +161\,\text{J K}^{-1}\text{ mol}^{-1}$.
 
 (a) Calculate $\Delta G^\circ$ at $298\,\text{K}$ and state whether the reaction is spontaneous at
 this temperature.
@@ -166,7 +166,7 @@ The Contact process involves the oxidation of sulfur dioxide:
 
 $$2\text{SO}_2(g) + \text{O}_2(g) \rightleftharpoons 2\text{SO}_3(g)$$
 
-$\Delta H^\circ = -198\,\text{kJ mol}^{-1}$$\Delta S^\circ = -190\,\text{J K}^{-1}\text{ mol}^{-1}$.
+$\Delta H^\circ = -198\,\text{kJ mol}^{-1}$, $\Delta S^\circ = -190\,\text{J K}^{-1}\text{ mol}^{-1}$.
 
 (a) Calculate the temperature above which the reaction is no longer thermodynamically feasible.
 

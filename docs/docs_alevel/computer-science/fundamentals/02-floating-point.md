@@ -148,7 +148,7 @@ Shift binary point right 3 positions: $1.01 \times 2^{-3}$
 
 The normalised form is $1.01 \times 2^{-3}$.
 
-In IEEE 754: $e = -3$$E = -3 + 127 = 124 = 01111100_2$.
+In IEEE 754: $e = -3$, $E = -3 + 127 = 124 = 01111100_2$.
 
 </details>
 
@@ -225,7 +225,7 @@ Note: CIE uses an **explicit** leading 0 (not the hidden 1 of IEEE 754).
 <details>
 <summary>Example: Decode CIE 8-bit `0 1010 110`</summary>
 
-$S = 0$ (positive) $E = 1010_2 = 10$$e = 10 - 8 = 2$ $M = 110$
+$S = 0$ (positive) $E = 1010_2 = 10$, $e = 10 - 8 = 2$ $M = 110$
 
 Value: $+0.110_2 \times 2^2 = 0.75 \times 4 = 3.0_{10}$
 

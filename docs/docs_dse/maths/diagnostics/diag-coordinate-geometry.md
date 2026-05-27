@@ -186,7 +186,7 @@ $\cos \angle AOB = \dfrac{\vec{OA} \cdot \vec{OB}}{|OA||OB|} = \dfrac{0 + 0}{1} 
 $\angle AOB = 90°$.
 
 For an equilateral triangle inscribed in a circle, each angle is $60°$. But
-$\angle AOB = 90° \neq 60°$So there is **no** equilateral triangle with vertices $A$$B$$C$ all on
+$\angle AOB = 90° \neq 60°$So there is **no** equilateral triangle with vertices $A$, $B$, $C$ all on
 the unit circle.
 
 This tests the misconception of assuming any three points on a circle can form an equilateral
@@ -224,7 +224,7 @@ The reflected parabola has vertex $(-2, 3)$ and axis $x = -2$.
 
 **Question:**
 
-$A(3, -1)$$B(7, 5)$And $C(11, -1)$ are three points.
+$A(3, -1)$, $B(7, 5)$And $C(11, -1)$ are three points.
 
 (a) Show that triangle $ABC$ is isosceles. (2 marks) (b) Find the area of triangle $ABC$. (3 marks)
 
@@ -375,9 +375,9 @@ externally. (2 marks)
 
 **Solution:**
 
-(a) $C_1$: $(x-2)^2 + (y-3)^2 = 4$. Centre $O_1 = (2, 3)$$r_1 = 2$.
+(a) $C_1$: $(x-2)^2 + (y-3)^2 = 4$. Centre $O_1 = (2, 3)$, $r_1 = 2$.
 
-$C_2$: $(x+3)^2 + (y+1)^2 = 25$. Centre $O_2 = (-3, -1)$$r_2 = 5$.
+$C_2$: $(x+3)^2 + (y+1)^2 = 25$. Centre $O_2 = (-3, -1)$, $r_2 = 5$.
 
 (b) Distance between centres:
 
@@ -530,7 +530,7 @@ $x + y - 7 = 0$.
 
 ### DSE-4
 
-The vertices of a triangle are $A(0, 0)$$B(8, 0)$And $C(4, 6)$.
+The vertices of a triangle are $A(0, 0)$, $B(8, 0)$And $C(4, 6)$.
 
 (a) Find the equation of the median from $C$ to $AB$. (2 marks) (b) Find the equation of the
 altitude from $A$ to $BC$. (3 marks) (c) Find the coordinates of the intersection of the median and
@@ -564,13 +564,13 @@ and $C_2$. (4 marks)
 
 **Solution:**
 
-(a) Centres: $O_1 = (1, -2)$$O_2 = (7, 4)$.
+(a) Centres: $O_1 = (1, -2)$, $O_2 = (7, 4)$.
 
 $O_1 O_2 = \sqrt{(7-1)^2 + (4-(-2))^2} = \sqrt{36 + 36} = \sqrt{72} = 6\sqrt{2}$.
 
-(b) $r_1 = 5$$r_2 = 3$.
+(b) $r_1 = 5$, $r_2 = 3$.
 
-$|r_1 - r_2| = 2$$r_1 + r_2 = 8$.
+$|r_1 - r_2| = 2$, $r_1 + r_2 = 8$.
 
 $2 < 6\sqrt{2} < 8$ (since $6\sqrt{2} \approx 8.49$), so actually $O_1 O_2 > r_1 + r_2$.
 

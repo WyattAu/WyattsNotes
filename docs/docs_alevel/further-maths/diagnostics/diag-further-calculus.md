@@ -41,7 +41,7 @@ meaning the area under the curve is infinite.
 **Question:** (a) Find the volume generated when the curve $y = \sqrt{x}$ is rotated $2\pi$ radians
 about the $x$-axis between $x = 0$ and $x = 4$. (b) Find the volume generated when $x = y^2$ (for
 $y \ge 0$) is rotated about the $y$-axis between $y = 0$ and $y = 2$. (c) The region bounded by
-$y = x^2$$y = 0$And $x = 1$ is rotated about the $y$-axis. Calculate the volume using the shell
+$y = x^2$, $y = 0$And $x = 1$ is rotated about the $y$-axis. Calculate the volume using the shell
 method: $V = 2\pi\int_a^b xy\,dx$.
 
 **Solution:**
@@ -57,21 +57,21 @@ $V = 2\pi\int_0^1 x \cdot x^2\,dx = 2\pi\int_0^1 x^3\,dx = 2\pi\left[\frac{x^4}{
 
 ### UT-3: Parametric Differentiation
 
-**Question:** A curve is given parametrically by $x = t^2 + 1$$y = t^3 - t$. (a) Find
+**Question:** A curve is given parametrically by $x = t^2 + 1$, $y = t^3 - t$. (a) Find
 $\frac{dy}{dx}$ in terms of $t$. (b) Find the coordinates of the stationary points. (c) Find
 $\frac{d^2y}{dx^2}$ and determine the nature of each stationary point. (d) Find the equation of the
 normal to the curve at the point where $t = 2$.
 
 **Solution:**
 
-(a) $\frac{dx}{dt} = 2t$$\frac{dy}{dt} = 3t^2 - 1$. $\frac{dy}{dx} = \frac{3t^2 - 1}{2t}$.
+(a) $\frac{dx}{dt} = 2t$, $\frac{dy}{dt} = 3t^2 - 1$. $\frac{dy}{dx} = \frac{3t^2 - 1}{2t}$.
 
-(b) Stationary points: $\frac{dy}{dx} = 0$So $3t^2 - 1 = 0$$t = \pm\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$.
+(b) Stationary points: $\frac{dy}{dx} = 0$So $3t^2 - 1 = 0$, $t = \pm\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$.
 
 $t = \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$x = \frac{4}{3}$$y = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
+$x = \frac{4}{3}$, $y = \frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = -\frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
 $t = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
-$x = \frac{4}{3}$$y = -\frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
+$x = \frac{4}{3}$, $y = -\frac◆LB◆1◆RB◆◆LB◆3\sqrt{3}◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆3\sqrt{3}◆RB◆$.
 
 (c)
 $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{3t^2-1}{2t}\right) \Big/ \frac{dx}{dt} = \frac◆LB◆6t \cdot 2t - (3t^2-1) \cdot 2◆RB◆◆LB◆4t^2◆RB◆ \Big/ 2t = \frac{12t^2 - 6t^2 + 2}{4t^2} \cdot \frac{1}{2t} = \frac{6t^2 + 2}{8t^3}$.
@@ -84,7 +84,7 @@ At $t = -\frac◆LB◆1◆RB◆◆LB◆\sqrt{3}◆RB◆$:
 $\frac{d^2y}{dx^2} = \frac◆LB◆6/3 + 2◆RB◆◆LB◆8/(-3\sqrt{3})◆RB◆ = -\frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆ \lt 0$:
 **maximum**.
 
-(d) At $t = 2$: $x = 5$$y = 6$. $\frac{dy}{dx} = \frac{12-1}{4} = \frac{11}{4}$.
+(d) At $t = 2$: $x = 5$, $y = 6$. $\frac{dy}{dx} = \frac{12-1}{4} = \frac{11}{4}$.
 
 Normal gradient $= -\frac{4}{11}$. Equation: $y - 6 = -\frac{4}{11}(x - 5)$I.e.,
 $11y - 66 = -4x + 20$So $4x + 11y = 86$.

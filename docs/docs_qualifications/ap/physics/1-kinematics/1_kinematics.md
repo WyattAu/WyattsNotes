@@ -131,16 +131,16 @@ $$
 
 ### When to Use Each Equation
 
-Each of the four kinematic equations relates a different subset of the five variables ($v$$v_0$
-$a$$t$$x - x_0$). Choose the equation that contains the variables you know and the variable you Need
+Each of the four kinematic equations relates a different subset of the five variables ($v$, $v_0$
+$a$, $t$, $x - x_0$). Choose the equation that contains the variables you know and the variable you Need
 to find:
 
 | Known variables    | Use equation                        |
 | ------------------ | ----------------------------------- |
-| $v_0$$a$$t$        | $v = v_0 + at$                      |
-| $v_0$$a$$t$        | $x - x_0 = v_0 t + \frac{1}{2}at^2$ |
-| $v_0$$a$$\Delta x$ | $v^2 = v_0^2 + 2a\Delta x$          |
-| $v_0$$v$$t$        | $\Delta x = \frac{v_0 + v}{2} t$    |
+| $v_0$, $a$, $t$        | $v = v_0 + at$                      |
+| $v_0$, $a$, $t$        | $x - x_0 = v_0 t + \frac{1}{2}at^2$ |
+| $v_0$, $a$, $\Delta x$ | $v^2 = v_0^2 + 2a\Delta x$          |
+| $v_0$, $v$, $t$        | $\Delta x = \frac{v_0 + v}{2} t$    |
 
 The variable that does _not_ appear in each equation tells you when to use it.
 
@@ -279,7 +279,7 @@ Confirms that the parabola opens downward.
 A projectile is launched at $50 \mathrm{ m/s$ at $37^\circ$ above horizontal from ground level. Find
 The range and maximum height.
 
-$\cos 37^\circ \approx 0.8$$\sin 37^\circ \approx 0.6$.
+$\cos 37^\circ \approx 0.8$, $\sin 37^\circ \approx 0.6$.
 
 **Range:**
 
@@ -527,7 +527,7 @@ The boat cannot overcome the current.
    horizontal. Find the time of flight and the horizontal range.
 
 3. A particle has acceleration $a(t) = 6t \mathrm{ m/s^2$ with initial velocity
-   $v(0) = -4 \mathrm{ m/s$ and initial position $x(0) = 2 \mathrm{ m$. Find $v(t)$$x(t)$And the
+   $v(0) = -4 \mathrm{ m/s$ and initial position $x(0) = 2 \mathrm{ m$. Find $v(t)$, $x(t)$And the
    displacement from $t = 0$ to $t = 3$.
 
 4. A car accelerates from rest at $2.0 \mathrm{ m/s^2$ for 200 m. What is its final velocity?
@@ -855,12 +855,12 @@ Ball 2 (dropped at $t = 1$): $y_2 = 50 - 4.9(t - 1)^2$ for $t \ge 1$.
 Set $y_1 = y_2$:
 $20t - 4.9t^2 = 50 - 4.9(t^2 - 2t + 1) = 50 - 4.9t^2 + 9.8t - 4.9 = 45.1 - 4.9t^2 + 9.8t$.
 
-$20t = 45.1 + 9.8t$So $10.2t = 45.1$$t = 4.42 \mathrm{ s$.
+$20t = 45.1 + 9.8t$So $10.2t = 45.1$, $t = 4.42 \mathrm{ s$.
 
 Height: $y_1 = 20(4.42) - 4.9(4.42)^2 = 88.4 - 95.7 = -7.3 \mathrm{ m$.
 
 This is negative, meaning the balls don't meet before ball 1 hits the ground. Ball 1 lands when
-$y_1 = 0$: $20t - 4.9t^2 = 0$$t = 20/4.9 = 4.08 \mathrm{ s$.
+$y_1 = 0$: $20t - 4.9t^2 = 0$, $t = 20/4.9 = 4.08 \mathrm{ s$.
 
 Since $4.42 > 4.08$Ball 1 has already landed. The balls do not meet in the air.
 

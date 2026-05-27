@@ -312,26 +312,26 @@ $X = X_1 + X_2 + \cdots + X_n$ and $E(X_i) = p$So $E(X) = np$.
 **Example (HL):** A multiple-choice test has 20 questions, each with 4 options. A student guesses
 Every answer. Find the probability of getting exactly 5 correct.
 
-$$
+$, $
 X \sim \mathrm{Bin(20, 0.25)
-$$
+$, $
 
-$$
+$, $
 P(X = 5) = \binom{20}{5}(0.25)^5(0.75)^{15} \approx 0.2023
-$$
+$, $
 
 ### Poisson Distribution (HL)
 
 $X \sim \mathrm{Po(\lambda)$ models the number of events occurring in a fixed interval when events
 Happen independently at a constant average rate $\lambda$.
 
-$$
+$, $
 P(X = k) = \frac{e^{-\lambda}\lambda^k}{k!}, \quad k = 0, 1, 2, \ldots
-$$
+$, $
 
-$$
+$, $
 E(X) = \lambda, \quad \mathrm{Var(X) = \lambda
-$$
+$, $
 
 **Conditions:** events occur independently, at a constant average rate, and singly (not in
 Clusters).
@@ -339,19 +339,19 @@ Clusters).
 **Example (HL):** A call centre receives an average of 4.5 calls per minute. Find the probability of
 Receiving exactly 3 calls in a given minute.
 
-$$
+$, $
 X \sim \mathrm{Po(4.5)
-$$
+$, $
 
-$$
+$, $
 P(X = 3) = \frac{e^{-4.5}(4.5)^3}{3!} = \frac{e^{-4.5} \times 91.125}{6} \approx \frac{0.01111 \times 91.125}{6} \approx 0.1687
-$$
+$, $
 
 **Example (HL):** Using the same call centre, find $P(X \le 2)$.
 
-$$
+$, $
 P(X \le 2) = P(X=0) + P(X=1) + P(X=2) = e^{-4.5}\left(1 + 4.5 + \frac{4.5^2}{2}\right) = e^{-4.5}(1 + 4.5 + 10.125) = 15.625 \times e^{-4.5} \approx 0.1736
-$$
+$, $
 
 ### Normal Distribution (HL)
 
@@ -511,9 +511,9 @@ Level whether the population mean is 25.
 
 $H_0: \mu = 25$$H_1: \mu \neq 25$.
 
-$$
+$, $
 T = \frac{23.4 - 25}{2.1/\sqrt{8}} = \frac{-1.6}{0.7423} \approx -2.156
-$$
+$, $
 
 Degrees of freedom $= 7$. The critical value from t-tables at $\alpha = 0.05$ (two-tailed, 7 df) is
 Approximately $\pm 2.365$.
@@ -534,15 +534,15 @@ The **power** of a test is $1 - \beta$: the probability of correctly rejecting a
 
 A 95% confidence interval for the population mean $\mu$ when $\sigma$ is known:
 
-$$
+$, $
 \bar{x} \pm 1.96 \frac{\sigma}{\sqrt{n}}
-$$
+$, $
 
 When $\sigma$ is unknown (use sample standard deviation $s$ with $n - 1$ degrees of freedom):
 
-$$
+$, $
 \bar{x} \pm t_{n-1,\, 0.025} \frac{s}{\sqrt{n}}
-$$
+$, $
 
 **Interpretation:** If we were to take many samples and construct a 95% confidence interval from
 Each, approximately 95% of those intervals would contain the true population mean. It does NOT mean
@@ -555,9 +555,9 @@ There is a 95% probability that $\mu$ lies in any particular interval.
 A **scatter plot** displays pairs of data points. The **Pearson correlation coefficient** $r$
 Measures linear association:
 
-$$
+$, $
 R = \frac{n\sum xy - \sum x \sum y}{\sqrt{[n\sum x^2 - (\sum x)^2][n\sum y^2 - (\sum y)^2]}}
-$$
+$, $
 
 $-1 \le r \le 1$. Values near $\pm 1$ indicate strong linear correlation. $r = 0$ means no linear
 Correlation (but there may be a non-linear relationship).
@@ -576,15 +576,15 @@ Regression on $x$. The remaining 36% is due to other factors.
 
 The regression line of $y$ on $x$ is:
 
-$$
+$, $
 Y = a + bx
-$$
+$, $
 
 Where:
 
-$$
+$, $
 B = \frac{n\sum xy - \sum x \sum y}{n\sum x^2 - (\sum x)^2}, \quad a = \bar{y} - b\bar{x}
-$$
+$, $
 
 The least squares line minimises $\sum(y_i - (a + bx_i))^2$.
 
@@ -594,13 +594,13 @@ Coefficient and regression line.
 $n = 5$$\sum x = 15$$\sum y = 25$$\sum xy = 1(3)+2(5)+3(4)+4(7)+5(6) = 3+10+12+28+30 = 83$
 $\sum x^2 = 1+4+9+16+25 = 55$$\sum y^2 = 9+25+16+49+36 = 135$.
 
-$$
+$, $
 R = \frac{5(83) - 15(25)}{\sqrt{[5(55) - 225][5(135) - 625]}} = \frac{415 - 375}{\sqrt{[275 - 225][675 - 625]}} = \frac{40}{\sqrt{50 \times 50}} = \frac{40}{50} = 0.8
-$$
+$, $
 
-$$
+$, $
 B = \frac{40}{50} = 0.8, \quad a = \frac{25}{5} - 0.8 \times \frac{15}{5} = 5 - 2.4 = 2.6
-$$
+$, $
 
 Regression line: $y = 0.8x + 2.6$.
 
@@ -708,9 +708,9 @@ See the examples integrated throughout the sections above.
 When $n$ is large, $p$ is small, and $np$ is moderate, the binomial distribution can be approximated
 By a Poisson distribution with $\lambda = np$:
 
-$$
+$, $
 \mathrm{Bin(n, p) \approx \mathrm{Po(np)
-$$
+$, $
 
 This avoids calculating large binomial coefficients. As a rule of thumb, the approximation is good
 When $n \ge 50$ and $p \le 0.1$.
@@ -720,9 +720,9 @@ The probability of at most 3 defects using the Poisson approximation.
 
 $\lambda = np = 200 \times 0.02 = 4$.
 
-$$
+$, $
 P(X \le 3) = P(X=0) + P(X=1) + P(X=2) + P(X=3) = e^{-4}\left(1 + 4 + \frac{16}{2} + \frac{64}{6}\right) = e^{-4}(1 + 4 + 8 + 10.667) = 23.667 \times e^{-4} \approx 0.4335
-$$
+$, $
 
 ### 8.5 Choosing the Right Distribution
 
@@ -751,9 +751,9 @@ The three main distributions covered in this topic are connected:
 The law of large numbers states that as the number of trials increases, the sample mean converges to
 The expected value. Formally, for i.i.d. Random variables $X_1, X_2, \ldots$ with mean $\mu$:
 
-$$
+$, $
 \bar{X}_n = \frac{X_1 + X_2 + \cdots + X_n}{n} \to \mu \mathrm{ as  n \to \infty
-$$
+$, $
 
 This is why a coin tossed many times gives a proportion of heads close to 0.5, even if short
 Sequences may deviate significantly.

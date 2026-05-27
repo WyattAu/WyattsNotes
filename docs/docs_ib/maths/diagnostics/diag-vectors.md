@@ -79,9 +79,9 @@ pass at different "heights" and never meet. The student has incorrectly generali
 
 **Question:**
 
-Three points are given: $A(1, 0, 2)$$B(3, 1, -1)$And $C(2, 2, 3)$.
+Three points are given: $A(1, 0, 2)$, $B(3, 1, -1)$And $C(2, 2, 3)$.
 
-**(a)** Find the Cartesian equation of the plane $\Pi$ passing through $A$$B$And $C$.
+**(a)** Find the Cartesian equation of the plane $\Pi$ passing through $A$, $B$And $C$.
 
 **(b)** Find the perpendicular distance from the origin to $\Pi$.
 

@@ -130,7 +130,7 @@ Net force driving $A$ down $= 24.5 - 12.73 = 11.77$ N.
 
 Weight of $B = 29.4$ N, which opposes $A$'s downward motion.
 
-Since $11.77 \lt 29.4$$A$ does not slide down either.
+Since $11.77 \lt 29.4$, $A$ does not slide down either.
 
 **The system is in equilibrium.** The tension in the string equals the weight of $B$:
 

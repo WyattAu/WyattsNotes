@@ -957,42 +957,42 @@ Answer:
 
 For the first dissociation:
 
-$$
+$, $
 \mathrm{H}_3\mathrm{PO}_4 \rightleftharpoons \mathrm{H}^+ + \mathrm{H}_2\mathrm{PO}_4^-
-$$
+$, $
 
 Since $K_{a1}$ is not very small compared to $c$The approximation $c - x \approx c$ may not be
 Valid. Check: $K_{a1}/c = 7.5 \times 10^{-3}/0.100 = 0.075 \gt 0.05$. The $5\%$ rule fails.
 
 Solve the quadratic: $x^2 + K_a x - K_a \cdot c = 0$
 
-$$
+$, $
 X^2 + 7.5 \times 10^{-3}x - 7.5 \times 10^{-4} = 0
-$$
+$, $
 
-$$
+$, $
 X = \frac{-7.5 \times 10^{-3} + \sqrt{(7.5 \times 10^{-3})^2 + 4 \times 7.5 \times 10^{-4}}}{2}
-$$
+$, $
 
-$$
+$, $
 X = \frac{-7.5 \times 10^{-3} + \sqrt{5.625 \times 10^{-5} + 3.0 \times 10^{-3}}}{2}
-$$
+$, $
 
-$$
+$, $
 X = \frac{-7.5 \times 10^{-3} + \sqrt{3.056 \times 10^{-3}}}{2}
-$$
+$, $
 
-$$
+$, $
 X = \frac{-7.5 \times 10^{-3} + 5.528 \times 10^{-2}}{2} = \frac{4.778 \times 10^{-2}}{2} = 2.389 \times 10^{-2}
-$$
+$, $
 
-$$
+$, $
 [\mathrm{H}^+] \approx 0.0239\mathrm{ mol/L}
-$$
+$, $
 
-$$
+$, $
 \mathrm{pH} = -\log(0.0239) = 1.62
-$$
+$, $
 
 Note: The second and third dissociations contribute negligible H$^+$ since $K_{a2} \ll K_{a1}$.
 

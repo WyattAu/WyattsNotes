@@ -100,7 +100,7 @@ $P(\text{different}) = P(\text{RB}) + P(\text{BR}) = \dfrac{3}{8} \times \dfrac{
 
 **Question:**
 
-Events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.7$And $P(A \cup B) = 0.85$. Find $P(A \cap B)$ and
+Events $A$ and $B$ satisfy $P(A) = 0.4$, $P(B) = 0.7$And $P(A \cup B) = 0.85$. Find $P(A \cap B)$ and
 determine whether $A$ and $B$ are independent.
 
 **Solution:**
@@ -319,7 +319,7 @@ Otherwise, you win nothing. Determine whether this game is fair.
 
 Expected winnings:
 
-$$E(X) = 0 \times \frac{5}{6} + 20 \times \frac{1}{6} = \frac{20}{6} = \frac{10}{3} \approx \$3.33$$
+$$E(X) = 0 \times \frac{5}{6} + 20 \times \frac{1}{6} = \frac{20}{6} = \frac{10}{3} \approx \$3.33$, $
 
 Net expected gain: $E(X) - 5 = \dfrac{10}{3} - 5 = -\dfrac{5}{3} \approx -\$1.67$.
 
@@ -519,7 +519,7 @@ $$P = \frac{5 - 2}{4(10 - 1)} = \frac{3}{36} = \frac{1}{12}$$
 
 ### DSE-5
 
-Events $A$ and $B$ are such that $P(A) = 0.5$$P(B) = 0.6$And $P(A \mid B) = 0.4$.
+Events $A$ and $B$ are such that $P(A) = 0.5$, $P(B) = 0.6$And $P(A \mid B) = 0.4$.
 
 (a) Find $P(A \cap B)$. (1 mark) (b) Determine whether $A$ and $B$ are independent. Justify your
 answer. (3 marks) (c) Find $P(A \cup B)$. (2 marks) (d) Find $P(A' \cap B')$. (2 marks)

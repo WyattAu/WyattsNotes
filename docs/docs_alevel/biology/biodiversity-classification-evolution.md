@@ -395,13 +395,13 @@ combined With fossil evidence.
 ### 7.1 Multiple Alleles
 
 When a gene has more than two alleles, the Hardy-Weinberg principle is extended. For three alleles
-with Frequencies $p$$q$And $r$:
+with Frequencies $p$, $q$And $r$:
 
 $$p + q + r = 1$$
 
 $$p^2 + q^2 + r^2 + 2pq + 2pr + 2qr = 1$$
 
-**Worked Example.** The ABO blood group system has three alleles: $I^A$$I^B$And $i$. Their
+**Worked Example.** The ABO blood group system has three alleles: $I^A$, $I^B$And $i$. Their
 frequencies In a population are $p = 0.3$$q = 0.1$$r = 0.6$.
 
 Genotype frequencies:
@@ -950,7 +950,7 @@ years:
 | 1    | 360  | 480  | 160  | 1000  | 0.60      | 0.40      |
 | 2    | 324  | 432  | 144  | 900   | 0.60      | 0.40      |
 
-The allele frequencies have not changed ($p = 0.60$$q = 0.40$ in both years). The population appears
+The allele frequencies have not changed ($p = 0.60$, $q = 0.40$ in both years). The population appears
 to be in Hardy-Weinberg equilibrium.
 
 **Chi-squared test:** expected values in Year 2 based on H-W: $p^2 \times 900 = 324$ ($BB$),
@@ -1539,7 +1539,7 @@ Where $S$ = number of species; $A$ = area; $c$ and $z$ are constants ($z$ is 0.2
 **Implication:** if a habitat is reduced in size by 90%, the number of species will be reduced by
 approximately 50%. This is why habitat loss is the single greatest threat to biodiversity.
 
-**Example:** if a forest of $100\ \mathrm{km^2}$ contains 500 species ($c = 100$$z = 0.35$):
+**Example:** if a forest of $100\ \mathrm{km^2}$ contains 500 species ($c = 100$, $z = 0.35$):
 
 $$S_1 = 100 \times 100^{0.35} = 100 \times 22.4 = 2240$$
 

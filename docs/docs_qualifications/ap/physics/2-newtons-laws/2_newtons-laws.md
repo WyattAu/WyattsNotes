@@ -420,7 +420,7 @@ Hyperbolas. Circular orbits are a special case of elliptical orbits with eccentr
 6. A $1500 \mathrm{ kg$ car rounds a banked curve of radius 100 m at $20 \mathrm{ m/s$. The banking
    angle is $15^\circ$. Find the minimum coefficient of static friction.
 
-7. Three blocks of masses $m_1$$m_2$And $m_3$ are connected by strings on a frictionless table, with
+7. Three blocks of masses $m_1$, $m_2$And $m_3$ are connected by strings on a frictionless table, with
    $m_3$ hanging off the edge over a pulley. Derive the acceleration in terms of the masses.
 
 8. A $5.0 \mathrm{ kg$ block is on a frictionless table connected to a $3.0 \mathrm{ kg$ block
@@ -581,7 +581,7 @@ circular Orbit: $\frac{1}{2}mv_e^2 = 2 \times \frac{1}{2}mv_{\mathrm{orbit}^2$.
     the actual distance from Earth's centre.
 
 15. **Confusing the mass of an orbiting body with the mass of the central body.** In
-    $v = \sqrt{GM/r}$$M$ is the mass of the body being orbited (e.g., Earth), not the satellite.
+    $v = \sqrt{GM/r}$, $M$ is the mass of the body being orbited (e.g., Earth), not the satellite.
 
 ## Practice Questions (Additional)
 
@@ -603,7 +603,7 @@ circular Orbit: $\frac{1}{2}mv_e^2 = 2 \times \frac{1}{2}mv_{\mathrm{orbit}^2$.
     tension in the string.
 
 15. Calculate the gravitational field strength at a point halfway between the Earth and the Moon.
-    (Earth-Moon distance $= 3.84 \times 10^8 \mathrm{ m$$M_E = 5.97 \times 10^{24} \mathrm{ kg$
+    (Earth-Moon distance $= 3.84 \times 10^8 \mathrm{ m$, $M_E = 5.97 \times 10^{24} \mathrm{ kg$
     $M_M = 7.35 \times 10^{22} \mathrm{ kg$.)
 
 ## Extended Worked Examples
@@ -799,10 +799,10 @@ and (c) when it decelerates at $3 \mathrm{ m/s^2$ while moving upward?
 
 The scale reads the normal force $N$.
 
-(a) Accelerating up: $N - mg = ma$$N = m(g + a) = 70(9.8 + 2) = 826 \mathrm{ N$. Scale reads
+(a) Accelerating up: $N - mg = ma$, $N = m(g + a) = 70(9.8 + 2) = 826 \mathrm{ N$. Scale reads
 $826 \mathrm{ N$ (about $119\%$ of actual weight).
 
-(b) Constant velocity: $a = 0$$N = mg = 70 \times 9.8 = 686 \mathrm{ N$.
+(b) Constant velocity: $a = 0$, $N = mg = 70 \times 9.8 = 686 \mathrm{ N$.
 
 (c) Decelerating upward (acceleration downward): $N = m(g - a) = 70(9.8 - 3) = 476 \mathrm{ N$.
 

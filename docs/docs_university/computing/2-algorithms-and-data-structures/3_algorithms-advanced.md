@@ -398,7 +398,7 @@ $$dp[S][i] = \text◆LB◆minimum cost to visit all cities in  S \text◆LB◆ s
 
 $$dp[S][i] = \min_◆LB◆j \in S, j \neq i◆RB◆ \{dp[S \setminus \{i\}][j] + \text◆LB◆dist(j, i)\}$$
 
-**Base case:** $dp[\{0\}][0] = 0$$dp[S][i] = \infty$ for $i \notin S$.
+**Base case:** $dp[\{0\}][0] = 0$, $dp[S][i] = \infty$ for $i \notin S$.
 
 **Answer:** $\min_i \{dp[\{0, 1, \ldots, n-1\}][i] + \text◆LB◆dist(i, 0)\}$.
 
@@ -492,13 +492,13 @@ Pattern: $P = \text◆LB◆ababaca$Text: $T = \text◆LB◆abababaca$.
 Compute prefix function:
 
 - $\pi[0] = 0$ ("a", no proper prefix = suffix)
-- $\pi[1]$: $P[1] = \text◆LB◆b$$P[0] = \text◆LB◆a$. No match. $\pi[1] = 0$.
-- $\pi[2]$: $P[2] = \text◆LB◆a$$P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[2] = 1$.
-- $\pi[3]$: $P[3] = \text◆LB◆b$$P[1] = \text◆LB◆b$. Match! $k = 2$. $\pi[3] = 2$.
-- $\pi[4]$: $P[4] = \text◆LB◆a$$P[2] = \text◆LB◆a$. Match! $k = 3$. $\pi[4] = 3$.
-- $\pi[5]$: $P[5] = \text◆LB◆c$$P[3] = \text◆LB◆b$. No match. $k = \pi[2] = 1$.
+- $\pi[1]$: $P[1] = \text◆LB◆b$, $P[0] = \text◆LB◆a$. No match. $\pi[1] = 0$.
+- $\pi[2]$: $P[2] = \text◆LB◆a$, $P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[2] = 1$.
+- $\pi[3]$: $P[3] = \text◆LB◆b$, $P[1] = \text◆LB◆b$. Match! $k = 2$. $\pi[3] = 2$.
+- $\pi[4]$: $P[4] = \text◆LB◆a$, $P[2] = \text◆LB◆a$. Match! $k = 3$. $\pi[4] = 3$.
+- $\pi[5]$: $P[5] = \text◆LB◆c$, $P[3] = \text◆LB◆b$. No match. $k = \pi[2] = 1$.
   $P[1] = \text◆LB◆b \neq \text◆LB◆c$. $k = \pi[0] = 0$. $P[0] = \text◆LB◆a \neq \text◆LB◆c$. $\pi[5] = 0$.
-- $\pi[6]$: $P[6] = \text◆LB◆a$$P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[6] = 1$.
+- $\pi[6]$: $P[6] = \text◆LB◆a$, $P[0] = \text◆LB◆a$. Match! $k = 1$. $\pi[6] = 1$.
 
 $\pi = [0, 0, 1, 2, 3, 0, 1]$.
 
@@ -1335,7 +1335,7 @@ the Master Theorem, $T(n) = O(n \log n)$. $\blacksquare$
 
 Multiply $A(x) = 1 + 2x + 3x^2$ and $B(x) = 2 + x$.
 
-Coefficient vectors (padded to length 4): $a = [1, 2, 3, 0]$$b = [2, 1, 0, 0]$.
+Coefficient vectors (padded to length 4): $a = [1, 2, 3, 0]$, $b = [2, 1, 0, 0]$.
 
 4th roots of unity: $\omega = e^{-2\pi i / 4} = -i$So
 $\omega^0 = 1, \omega^1 = -i, \omega^2 = -1, \omega^3 = i$.

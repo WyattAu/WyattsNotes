@@ -119,9 +119,9 @@ The IQR is resistant to outliers since it ignores the most extreme $50\%$ of dat
 <details>
 <summary>Examples</summary>
 - Dataset: $\{3, 5, 7, 8, 12, 14, 18, 20, 25\}$ ($n=9$Odd).
- - Lower half: $\{3, 5, 7, 8\}$$Q_1 = \frac{5+7}{2} = 6$.
+ - Lower half: $\{3, 5, 7, 8\}$, $Q_1 = \frac{5+7}{2} = 6$.
  - $Q_2 = 12$.
- - Upper half: $\{14, 18, 20, 25\}$$Q_3 = \frac{18+20}{2} = 19$.
+ - Upper half: $\{14, 18, 20, 25\}$, $Q_3 = \frac{18+20}{2} = 19$.
  - IQR $= 19 - 6 = 13$.
 
 ### Variance
@@ -185,7 +185,7 @@ Variance for comparing spread.
 
 <details>
 <summary>Examples</summary>
-- Following the previous example: $\sigma = \sqrt{4} = 2$$s = \sqrt{\frac{32}{7}} \approx 2.14$.
+- Following the previous example: $\sigma = \sqrt{4} = 2$, $s = \sqrt{\frac{32}{7}} \approx 2.14$.
 - Two machines produce rods of length $10$ cm. Machine A has $\sigma = 0.1$ cm, Machine B has $\sigma = 0.5$ cm. Machine A is more precise.
 
 ## Grouped Data
@@ -237,7 +237,7 @@ This method simplifies calculation by working with small integer values of $d_i$
 | 60 -- 69       | 10    | 64.5             | $1$   | $10$      |
 | 70 -- 79       | 4     | 74.5             | $2$   | $8$       |
 
-Here $A = 54.5$$h = 10$.
+Here $A = 54.5$, $h = 10$.
 
 $$
 \begin{aligned}
@@ -330,12 +330,12 @@ The between-group variation caused by the difference in means.
 
 Combined mean: $\bar{x}_c = \frac{6(10)+4(20)}{10} = 14$.
 
-$$
+$, $
 \begin{aligned}
  \sigma_c^2 &= \frac{6(4) + 4(9) + 6(10-14)^2 + 4(20-14)^2}{10} \\
  &= \frac{24 + 36 + 96 + 144}{10} = \frac{300}{10} = 30
 \end{aligned}
-$$
+$, $
 
 ## Applications
 
@@ -344,11 +344,11 @@ $$
 The **coefficient of variation (CV)** allows comparison of variability between datasets measured in
 Different units or with vastly different means:
 
-$$
+$, $
 \begin{aligned}
  \mathrm{CV} = \frac{\sigma}{\bar{x}} \times 100\%
 \end{aligned}
-$$
+$, $
 
 A larger CV indicates greater relative dispersion.
 
@@ -441,14 +441,14 @@ deviation.
 - Combined mean:
   $\bar{x}_c = \frac{30(72)+20(80)}{50} = \frac{2160+1600}{50} = \frac{3760}{50} = 75.2$.
 - Combined variance:
-  $$
+  $, $
   \begin{aligned}
   \sigma_c^2 &= \frac{30(64) + 20(36) + 30(72-75.2)^2 + 20(80-75.2)^2}{50} \\
   &= \frac{1920 + 720 + 30(10.24) + 20(23.04)}{50} \\
   &= \frac{1920 + 720 + 307.2 + 460.8}{50} \\
   &= \frac{3408}{50} = 68.16
   \end{aligned}
-  $$
+  $, $
 - Combined standard deviation: $\sigma_c = \sqrt{68.16} \approx 8.26$.
 
 5. **Question:** The following are the lifetimes (in hours) of $10$ light bulbs:
@@ -514,13 +514,13 @@ Estimate the median weight from the cumulative frequency distribution.
 - The median is the $\frac{50}{2} = 25$Th value, which lies in the class $140$--$159$ (cumulative
   $20$ to $40$).
 - Using linear interpolation within the class:
-  $$
+  $, $
   \begin{aligned}
   \mathrm{Median} &= 139.5 + \frac{25-20}{40-20} \times (159.5 - 139.5) \\
   &= 139.5 + \frac{5}{20} \times 20 \\
   &= 139.5 + 5 = 144.5 \mathrm{ g}
   \end{aligned}
-  $$
+  $, $
 
 10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$$\sum x_i^2$ The
 mean, and the population variance. Verify your variance using both the definition formula and The
@@ -839,11 +839,11 @@ Estimate the mean and standard deviation.
 <details>
 <summary>Solution</summary>
 
-Class marks: $9.5$$29.5$$49.5$$69.5$$89.5$. Class widths: 20, 20, 20, 20, 21.
+Class marks: $9.5$, $29.5$, $49.5$, $69.5$, $89.5$. Class widths: 20, 20, 20, 20, 21.
 
-For the coding method with equal class widths (using width 20): $A = 49.5$$h = 20$.
+For the coding method with equal class widths (using width 20): $A = 49.5$, $h = 20$.
 
-$d_i$: $-2$$-1$$0$$1$$2$ (approximately; the last class has width 21).
+$d_i$: $-2$, $-1$, $0$, $1$, $2$ (approximately; the last class has width 21).
 
 Using approximate equal widths:
 

@@ -210,7 +210,7 @@ Step 1: Convert 6.625 to binary.
 
 Integer part: $6 = 110$
 
-Fractional part: $0.625 \times 2 = 1.25 \to 1$$0.25 \times 2 = 0.5 \to 0$ $0.5 \times 2 = 1.0 \to 1$
+Fractional part: $0.625 \times 2 = 1.25 \to 1$, $0.25 \times 2 = 0.5 \to 0$ $0.5 \times 2 = 1.0 \to 1$
 
 So $6.625_{10} = 110.101_2$
 
@@ -1298,51 +1298,51 @@ Answer:
 
 (a)
 
-$$
+$, $
 \mathrm{Size (bits)} = 3840 \times 2160 \times 24 = 198180480 \mathrm{ bits}
-$$
+$, $
 
-$$
+$, $
 \mathrm{Size (bytes)} = \frac{198180480}{8} = 24772560 \mathrm{ bytes}
-$$
+$, $
 
-$$
+$, $
 \mathrm{Size (MB)} = \frac{24772560}{1024 \times 1024} \approx 23.63 \mathrm{ MB}
-$$
+$, $
 
 (b)
 
-$$
+$, $
 \mathrm{Duration} = 5 \times 60 = 300 \mathrm{ s}
-$$
+$, $
 
-$$
+$, $
 \mathrm{Size (bits)} = 48000 \times 24 \times 300 \times 2 = 691200000 \mathrm{ bits}
-$$
+$, $
 
-$$
+$, $
 \mathrm{Size (bytes)} = \frac{691200000}{8} = 86400000 \mathrm{ bytes}
-$$
+$, $
 
-$$
+$, $
 \mathrm{Size (MB)} = \frac{86400000}{1024 \times 1024} \approx 82.40 \mathrm{ MB}
-$$
+$, $
 
 (c)
 
-$$
+$, $
 \mathrm{Size (bits)} = 320000 \times 300 = 96000000 \mathrm{ bits}
-$$
+$, $
 
-$$
+$, $
 \mathrm{Size (MB)} = \frac{96000000}{8 \times 1024 \times 1024} \approx 11.44 \mathrm{ MB}
-$$
+$, $
 
 (d)
 
-$$
+$, $
 \mathrm{Compression ratio} = \frac{82.40}{11.44} \approx 7.2 : 1
-$$
+$, $
 
 </details>
 

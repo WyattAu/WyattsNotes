@@ -330,7 +330,7 @@ We already know (from Problem 7 below) that:
 
 $$\sum_{r=0}^{n} \binom{n}{r} = 2^n$$
 
-This follows from setting $a = 1$$b = 1$ in the binomial theorem.
+This follows from setting $a = 1$, $b = 1$ in the binomial theorem.
 
 ### 7.2 Weighted Sum: $\sum r\binom{n}{r} = n \cdot 2^{n-1}$
 
@@ -576,7 +576,7 @@ To 5 d.p.: $1.02470$.
 
 <hr />
 
-**Problem 6.** In the expansion of $(1 + ax)^n$The coefficients of $x$$x^2$And $x^3$ are in The
+**Problem 6.** In the expansion of $(1 + ax)^n$The coefficients of $x$, $x^2$And $x^3$ are in The
 ratio $1 : 4 : 12$. Find $a$ and $n$.
 
 <details>
@@ -730,7 +730,7 @@ Write $126 = 125 + 1 = 125(1 + 1/125)$:
 
 $$\sqrt[3]{126} = 5\left(1 + \frac{1}{125}\right)^{1/3}$$
 
-Expand with $n = 1/3$$x = 1/125 = 0.008$:
+Expand with $n = 1/3$, $x = 1/125 = 0.008$:
 
 $$
 \begin{aligned}

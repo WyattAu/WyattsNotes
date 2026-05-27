@@ -236,7 +236,7 @@ and directing the electrophile to the ortho (2-, 6-) and para (4-) positions.
 
 | Group                           | Mechanism                   | Relative activating power |
 | ------------------------------- | --------------------------- | ------------------------- |
-| $-\mathrm{NH}_2$$-\mathrm{NHR}$ | Resonance donation (strong) | Very strong               |
+| $-\mathrm{NH}_2$, $-\mathrm{NHR}$ | Resonance donation (strong) | Very strong               |
 | $-\mathrm{OH}$                  | Resonance donation (strong) | Strong                    |
 | $-\mathrm{OR}$                  | Resonance donation          | Strong                    |
 | $-\mathrm{R}$ (alkyl)           | Inductive donation (weak)   | Weak                      |
@@ -255,10 +255,10 @@ substitution and directing the electrophile to the meta (3-, 5-) position.
 | --------------------------------------- | ---------------------------------------- | --------------------------- |
 | $-\mathrm{NO}_2$                        | Resonance withdrawal (strong)            | Very strong                 |
 | $-\mathrm{CN}$                          | Resonance withdrawal                     | Strong                      |
-| $-\mathrm{COOH}$$-\mathrm{COR}$         | Resonance withdrawal                     | Strong                      |
+| $-\mathrm{COOH}$, $-\mathrm{COR}$         | Resonance withdrawal                     | Strong                      |
 | $-\mathrm{SO}_3\mathrm{H}$              | Resonance withdrawal                     | Strong                      |
 | $-\mathrm{CF}_3$                        | Inductive withdrawal                     | Moderate                    |
-| Halogens ($-\mathrm{Cl}$$-\mathrm{Br}$) | Inductive withdrawal, resonance donation | Weak deactivation           |
+| Halogens ($-\mathrm{Cl}$, $-\mathrm{Br}$) | Inductive withdrawal, resonance donation | Weak deactivation           |
 
 **Why meta?** The resonance structures of the arenium ion for ortho or para attack place the
 positive charge on the carbon bearing the electron-withdrawing group, which further destabilises the

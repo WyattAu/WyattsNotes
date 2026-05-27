@@ -174,7 +174,7 @@ Therefore $\int f(g(x))g'(x)\,dx = F(g(x)) + C$. $\blacksquare$
 
 **Example.** Find $\displaystyle\int 2x\sqrt{x^2+1}\,dx$.
 
-Let $u = x^2 + 1$$du = 2x\,dx$.
+Let $u = x^2 + 1$, $du = 2x\,dx$.
 
 $$\int 2x\sqrt{x^2+1}\,dx = \int \sqrt{u}\,du = \frac{2}{3}u^{3/2} + C = \frac{2}{3}(x^2+1)^{3/2} + C$$
 
@@ -343,7 +343,7 @@ Find $\displaystyle\int \frac{2x}{x^2+3}\,dx$.
 
 <details>
 <summary>Solution 3</summary>
-Let $u = x^2 + 3$$du = 2x\,dx$.
+Let $u = x^2 + 3$, $du = 2x\,dx$.
 
 $$\int \frac{2x}{x^2+3}\,dx = \int \frac{1}{u}\,du = \ln|u| + C = \ln(x^2+3) + C$$
 
@@ -483,7 +483,7 @@ Evaluate $\displaystyle\int_1^e \frac◆LB◆\ln x◆RB◆◆LB◆x◆RB◆\,dx$
 
 <details>
 <summary>Solution 10</summary>
-Let $u = \ln x$$du = \dfrac{1}{x}\,dx$.
+Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$.
 
 $$\int \frac◆LB◆\ln x◆RB◆◆LB◆x◆RB◆\,dx = \int u\,du = \frac{u^2}{2} + C = \frac◆LB◆(\ln x)^2◆RB◆◆LB◆2◆RB◆ + C$$
 
@@ -496,7 +496,7 @@ Section 5.
 
 <details>
 <summary>Problem 11</summary>
-The curve $C$ has parametric equations $x = t^2$$y = 2t$ for $0 \leq t \leq 3$. Find the area under $C$.
+The curve $C$ has parametric equations $x = t^2$, $y = 2t$ for $0 \leq t \leq 3$. Find the area under $C$.
 </details>
 
 <details>

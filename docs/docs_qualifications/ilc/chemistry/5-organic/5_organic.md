@@ -325,7 +325,7 @@ Images.
 - A racemic mixture is a 50:50 mixture of enantiomers and shows no optical activity.
 
 **Example (HL):** Butan-2-ol ($\mathrm{CH_3\mathrm{CH(OH)CH_2\mathrm{CH_3$) has a chiral carbon
-(carbon 2 has H, OH, $\mathrm{CH_3$$\mathrm{CH_2\mathrm{CH_3$). It exists as two optical isomers.
+(carbon 2 has H, OH, $\mathrm{CH_3$, $\mathrm{CH_2\mathrm{CH_3$). It exists as two optical isomers.
 
 ## Common Pitfalls
 
@@ -340,7 +340,7 @@ Images.
 
 ### Ordinary Level
 
-1. Name the following: $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{OH$$\mathrm{CH_3\mathrm{COOH$
+1. Name the following: $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{OH$, $\mathrm{CH_3\mathrm{COOH$
    $\mathrm{CH_3\mathrm{COCH_3$.
 2. Write the equation for the complete combustion of butane.
 3. Describe the test to distinguish between an aldehyde and a ketone.

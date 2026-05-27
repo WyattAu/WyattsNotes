@@ -274,7 +274,7 @@ at least $t - 1$ keys, so $n \geq 2t^◆LB◆h-1◆RB◆(t-1) \geq 2t^◆LB◆h-
 **Corollary.** The height of a B-tree storing $n$ keys is
 $h \leq \log_t \frac◆LB◆n+1◆RB◆◆LB◆2◆RB◆ = O(\log_t n)$.
 
-For example, with $t = 1001$ and $n = 10^9$$h \leq \log_◆LB◆1001◆RB◆(5 \times 10^8) \approx 2.8$So at most
+For example, with $t = 1001$ and $n = 10^9$, $h \leq \log_◆LB◆1001◆RB◆(5 \times 10^8) \approx 2.8$So at most
 3 disk accesses.
 
 #### 1.2.2 B-Tree Operations
@@ -953,7 +953,7 @@ an $n \times m$ matrix where:
 
 $$M_◆LB◆v,e◆RB◆ = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if vertex  v \text◆LB◆ is incident to edge  e \\ 0 & \text◆LB◆otherwise \end◆LB◆cases◆RB◆$$
 
-For directed graphs, $M_◆LB◆v,e◆RB◆ = 1$ if $v$ is the tail of $e$$M_◆LB◆v,e◆RB◆ = -1$ if $v$ is the head of
+For directed graphs, $M_◆LB◆v,e◆RB◆ = 1$ if $v$ is the tail of $e$, $M_◆LB◆v,e◆RB◆ = -1$ if $v$ is the head of
 $e$And $0$ otherwise.
 
 **Properties:**

@@ -233,7 +233,7 @@ Right-hand derivative:
 
 $$f'_{+}(2) = \lim_{h \to 0^+} \frac{f(2+h) - f(2)}{h} = \lim_{h \to 0^+} \frac{((2+h)^2 - 4) - 0}{h} = \lim_{h \to 0^+} \frac{4h + h^2}{h} = \lim_{h \to 0^+}(4 + h) = 4$$
 
-Since $f'_{-}(2) = -4 \neq 4 = f'_{+}(2)$$f$ is **not differentiable** at $x = 2$.
+Since $f'_{-}(2) = -4 \neq 4 = f'_{+}(2)$, $f$ is **not differentiable** at $x = 2$.
 
 **At $x = -2$:**
 
@@ -245,7 +245,7 @@ Right-hand derivative:
 
 $$f'_{+}(-2) = \lim_{h \to 0^+} \frac{f(-2+h) - f(-2)}{h} = \lim_{h \to 0^+} \frac{(4 - (-2+h)^2) - 0}{h} = \lim_{h \to 0^+} \frac{4h - h^2}{h} = 4$$
 
-Since $-4 \neq 4$$f$ is **not differentiable** at $x = -2$ either.
+Since $-4 \neq 4$, $f$ is **not differentiable** at $x = -2$ either.
 
 $f$ is continuous at both points ($f(2) = f(-2) = 0$ and the limits equal the function value),
 confirming that continuity does not imply differentiability. The discontinuity of $f'$ at

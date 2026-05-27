@@ -343,7 +343,7 @@ The increase in demand leads to 7 new firms entering the market, while the price
 remain unchanged.
 
 (c) **Short-run response:** In the short run, the number of firms is fixed at 24. Each firm's supply
-is its MC curve above minimum AVC (which is at $Q = 0$$AVC = 2$So minimum AVC $= 2$). Total market
+is its MC curve above minimum AVC (which is at $Q = 0$, $AVC = 2$So minimum AVC $= 2$). Total market
 supply $= 24 \times (2 + Q_i) = 48 + 24Q_i$ where $Q_i$ is per-firm output.
 
 Setting $P = MC$ for each firm: $2 + Q_i = P$So $Q_i = P - 2$. Total supply $= 24(P - 2)$.
@@ -386,12 +386,12 @@ $(Q, P) = (100, 50)$.
 
 $|PED| = \frac{dQ}{dP} \times \frac{P}{Q} = b \times \frac{50}{100} = 3$. So $b = 6$.
 
-$Q = a - 6P$. At $(100, 50)$: $100 = a - 300$$a = 400$. Elastic demand: $Q = 400 - 6P$.
+$Q = a - 6P$. At $(100, 50)$: $100 = a - 300$, $a = 400$. Elastic demand: $Q = 400 - 6P$.
 
 **Inelastic segment (price decrease):** $|PED| = 0.5$ at $(100, 50)$.
 
 $|PED| = b' \times \frac{50}{100} = 0.5$. $b' = 1$. $Q = a' - P$. At $(100, 50)$:
-$100 = a' - 50$$a' = 150$. Inelastic demand: $Q = 150 - P$.
+$100 = a' - 50$, $a' = 150$. Inelastic demand: $Q = 150 - P$.
 
 (b) **Elastic MR:** $MR_1 = \frac{400}{6} - \frac{2Q}{6} = 66.67 - 0.333Q$. At $Q = 100$:
 $MR_1 = 66.67 - 33.33 = 33.33$.

@@ -115,7 +115,7 @@ $$x = -2 - \sqrt{y+4}$$
 Therefore $f^{-1}(x) = -2 - \sqrt{x+4}$.
 
 Domain of $f^{-1}$: We need $x + 4 \geq 0$So $x \geq -4$. Also, the range of $f$ on $x \leq -2$:
-since $f$ is decreasing, as $x \to -\infty$$f(x) \to +\infty$And $f(-2) = 0$. So the range of $f$ is
+since $f$ is decreasing, as $x \to -\infty$, $f(x) \to +\infty$And $f(-2) = 0$. So the range of $f$ is
 $[0, \infty)$.
 
 Wait: completing the square gives $f(x) = (x+2)^2 - 4$. At $x = -2$: $f(-2) = -4$. As
@@ -142,7 +142,7 @@ Range of $f^{-1}$ equals domain of $f$: $[0, \infty)$.
 
 **Question:**
 
-Let $f(x) = \frac{2}{x+1}$$g(x) = x^2 - 1$And $h(x) = \sqrt{x}$.
+Let $f(x) = \frac{2}{x+1}$, $g(x) = x^2 - 1$And $h(x) = \sqrt{x}$.
 
 **(a)** Find $f \circ g \circ h$ in its simplest form, stating its domain.
 
@@ -179,7 +179,7 @@ Check: $x = 2 > 0$So it is in the domain. Also verify through each layer:
 
 $h(x) = \sqrt{x}$
 
-$f(h(x)) = \frac◆LB◆2◆RB◆◆LB◆\sqrt{x}+1◆RB◆$ (domain: $x \geq 0$$x \neq 0$So $x > 0$)
+$f(h(x)) = \frac◆LB◆2◆RB◆◆LB◆\sqrt{x}+1◆RB◆$ (domain: $x \geq 0$, $x \neq 0$So $x > 0$)
 
 $g(f(h(x))) = \left(\frac◆LB◆2◆RB◆◆LB◆\sqrt{x}+1◆RB◆\right)^2 - 1 = \frac◆LB◆4◆RB◆◆LB◆(\sqrt{x}+1)^2◆RB◆ - 1 = \frac◆LB◆4 - (\sqrt{x}+1)^2◆RB◆◆LB◆(\sqrt{x}+1)^2◆RB◆$
 
@@ -265,7 +265,7 @@ $0 < \alpha < \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$.
 
 **(b)** Solve the equation $f(\theta) = g(\theta)$ for $\theta \in [0, 2\pi)$.
 
-**(c)** A triangle has sides $a = 3$$b = 4$And the angle between them is $C$. The area of the
+**(c)** A triangle has sides $a = 3$, $b = 4$And the angle between them is $C$. The area of the
 triangle is $A = \frac{1}{2}ab\sin C = f\left(\frac{C}{2}\right) \cdot g\left(\frac{C}{2}\right)$.
 Find the exact value of $C$.
 
@@ -290,7 +290,7 @@ $$2\sin\theta\cos\theta = \sin\theta + \cos\theta$$
 
 $$2\sin\theta\cos\theta - \sin\theta - \cos\theta = 0$$
 
-Let $u = \sin\theta$$v = \cos\theta$. Then $2uv - u - v = 0$I.e. $(2u - 1)(v) - u = 0$Which gives
+Let $u = \sin\theta$, $v = \cos\theta$. Then $2uv - u - v = 0$I.e. $(2u - 1)(v) - u = 0$Which gives
 $v(2u-1) = u$.
 
 Alternatively, add $\frac{1}{2}$ to both sides:
@@ -371,7 +371,7 @@ The function $f$ is defined by $f(x) = \frac{1}{2}\left(x + \frac{3}{x}\right)$ 
 
 A sequence $(a_n)$ is defined by $a_1 = 1$ and $a_{n+1} = f(a_n)$ for $n \geq 1$.
 
-**(a)** Find $a_2$$a_3$And $a_4$ as exact fractions.
+**(a)** Find $a_2$, $a_3$And $a_4$ as exact fractions.
 
 **(b)** Prove by induction that $a_n > 0$ for all $n \geq 1$.
 

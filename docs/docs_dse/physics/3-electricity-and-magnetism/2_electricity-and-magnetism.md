@@ -67,7 +67,7 @@ $$F = \frac{kQ_1 Q_2}{r^2}$$
 Where:
 
 - $F$ = electrostatic force (N)
-- $Q_1$$Q_2$ = magnitudes of the charges (C)
+- $Q_1$, $Q_2$ = magnitudes of the charges (C)
 - $r$ = distance between the charges (m)
 - $k = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9 \mathrm{ N m}^2\mathrm{/C}^2$ (Coulomb's
   constant)
@@ -730,8 +730,8 @@ $$\frac{V_s}{V_p} = \frac{N_s}{N_p}$$
 
 Where:
 
-- $V_p$$V_s$ = primary and secondary voltages
-- $N_p$$N_s$ = number of turns on primary and secondary coils
+- $V_p$, $V_s$ = primary and secondary voltages
+- $N_p$, $N_s$ = number of turns on primary and secondary coils
 
 If $N_s \gt N_p$: step-up transformer ($V_s \gt V_p$)
 
@@ -803,7 +803,7 @@ $$I = I_0 \sin(\omega t) = I_0 \sin(2\pi ft)$$
 
 Where:
 
-- $V_0$$I_0$ = peak (maximum) values
+- $V_0$, $I_0$ = peak (maximum) values
 - $f$ = frequency (Hz)
 - $\omega = 2\pi f$ = angular frequency (rad/s)
 - $T = 1/f$ = period (s)
@@ -1239,8 +1239,8 @@ _If you get this wrong, revise: Transformer equation and efficiency calculations
 <summary>Problem 11: Internal Resistance Graph</summary>
 
 A battery with unknown EMF and internal resistance is connected to a variable resistor. The
-Following measurements are obtained: at $I = 0.5 \mathrm{ A}$$V = 11.5 \mathrm{ V}$; at
-$I = 1.5 \mathrm{ A}$$V = 10.5 \mathrm{ V}$. Find $\varepsilon$ and $r$.
+Following measurements are obtained: at $I = 0.5 \mathrm{ A}$, $V = 11.5 \mathrm{ V}$; at
+$I = 1.5 \mathrm{ A}$, $V = 10.5 \mathrm{ V}$. Find $\varepsilon$ and $r$.
 
 <summary>Solution</summary>
 
@@ -1276,7 +1276,7 @@ _If you get this wrong, revise: Magnetic field at the centre of a circular curre
 
 <summary>Problem 13: Energy to Heat Water</summary>
 
-An electric kettle rated at $1500 \mathrm{ W}$$220 \mathrm{ V}$ is used to boil $1.2 \mathrm{ kg}$
+An electric kettle rated at $1500 \mathrm{ W}$, $220 \mathrm{ V}$ is used to boil $1.2 \mathrm{ kg}$
 Of water from $20^\circ\mathrm{C}$ to $100^\circ\mathrm{C}$. Specific heat capacity of water is
 $4200 \mathrm{ J/(kg }^\circ\mathrm{C)}$. If the kettle is $85\%$ efficient, find the time taken.
 
@@ -1501,7 +1501,7 @@ When measuring the time constant $\tau = RC$:
 
 $$\frac{\Delta\tau}{\tau} = \sqrt{\left(\frac{\Delta R}{R}\right)^2 + \left(\frac{\Delta C}{C}\right)^2}$$
 
-**Example:** $R = (10.0 \pm 0.5) \mathrm{ k}\Omega$$C = (100 \pm 5) \mathrm{ \mu F}$:
+**Example:** $R = (10.0 \pm 0.5) \mathrm{ k}\Omega$, $C = (100 \pm 5) \mathrm{ \mu F}$:
 
 $$\tau = RC = 10.0 \times 10^3 \times 100 \times 10^{-6} = 1.00 \mathrm{ s}$$
 

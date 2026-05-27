@@ -210,13 +210,13 @@ Calculate the new resonant frequencies for the first three harmonics.
 
 For a closed pipe, resonant wavelengths satisfy: $L = (2n - 1)\lambda/4$ for $n = 1, 2, 3, \ldots$
 
-Checking for $n = 1$: $\lambda_1 = 4L = 3.40\,\text{m}$$f_1 = 100\,\text{Hz}$
+Checking for $n = 1$: $\lambda_1 = 4L = 3.40\,\text{m}$, $f_1 = 100\,\text{Hz}$
 
-$n = 2$: $\lambda_2 = 4L/3 = 1.133\,\text{m}$$f_2 = 300\,\text{Hz}$
+$n = 2$: $\lambda_2 = 4L/3 = 1.133\,\text{m}$, $f_2 = 300\,\text{Hz}$
 
-$n = 3$: $\lambda_3 = 4L/5 = 0.680\,\text{m}$$f_3 = 500\,\text{Hz}$
+$n = 3$: $\lambda_3 = 4L/5 = 0.680\,\text{m}$, $f_3 = 500\,\text{Hz}$
 
-$n = 4$: $\lambda_4 = 4L/7 = 0.486\,\text{m}$$f_4 = 700\,\text{Hz}$
+$n = 4$: $\lambda_4 = 4L/7 = 0.486\,\text{m}$, $f_4 = 700\,\text{Hz}$
 
 The tuning fork frequency $512\,\text{Hz}$ is close to $f_3 = 500\,\text{Hz}$ but not exactly equal.
 For resonance, the frequency must match exactly. So the tuning fork does **not** cause exact

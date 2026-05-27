@@ -119,7 +119,7 @@ Not be uniformly distributed. Always state the distribution assumption when disc
 
 ### The Master Theorem
 
-For recurrences of the form $T(n) = aT(n/b) + f(n)$ where $a \geq 1$$b \gt 1$:
+For recurrences of the form $T(n) = aT(n/b) + f(n)$ where $a \geq 1$, $b \gt 1$:
 
 Let $c = \log_b a$. Compare $f(n)$ with $n^c$:
 
@@ -197,7 +197,7 @@ Capacity/2, else 0.
 
 - **Insert without resize:** Actual cost = 1. $\Phi$ increases by 2. Amortised cost = $1 + 2 = 3$.
 - **Insert with resize from $k$ to $2k$:** Actual cost = $k$ (copy) + 1 (insert). Before: size =
-  $k$Capacity = $k$$\Phi = 2(k - k/2) = k$. After: size = $k+1$Capacity = $2k$
+  $k$Capacity = $k$, $\Phi = 2(k - k/2) = k$. After: size = $k+1$Capacity = $2k$
   $\Phi = 2(k+1 - k) = 2$. Change: $2 - k$. Amortised = $(k + 1) + (2 - k) = 3$.
 
 Amortised cost per operation: $O(3) = O(1)$. $\square$
@@ -268,7 +268,7 @@ $n^2 \neq O(n)$.
 <details>
 <summary>Answer</summary>
 
-$a = 4$$b = 2$$c = \log_2 4 = 2$.
+$a = 4$, $b = 2$, $c = \log_2 4 = 2$.
 
 $f(n) = n^2 \log n = n^c \log^1 n$.
 

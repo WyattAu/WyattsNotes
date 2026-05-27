@@ -199,9 +199,9 @@ $\mathrm{Zn}$$\mathrm{Fe}^{2+}$).
 
 ### Cobalt Complexes
 
-$$
+$, $
 [\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+} \xrightarrow{+\mathrm{Cl}^-} [\mathrm{CoCl}_4]^{2-}
-$$
+$, $
 
 Pink (octahedral) $\to$ blue (tetrahedral). This equilibrium is temperature-dependent; heating
 shifts it towards the blue tetrahedral form.
@@ -213,9 +213,9 @@ shifts it towards the blue tetrahedral form.
 Vanadium exhibits oxidation states $+2$ (violet), $+3$ (green), $+4$ (blue), and $+5$ (yellow).
 Reduction of vanadate($\mathrm{V}$) with zinc:
 
-$$
+$, $
 \mathrm{VO}_2^+(\mathrm{yellow}) \xrightarrow{\mathrm{Zn/HCl}} \mathrm{VO}^{2+}(\mathrm{blue}) \xrightarrow{\mathrm{Zn/HCl}} \mathrm{V}^{3+}(\mathrm{green}) \xrightarrow{\mathrm{Zn/HCl}} \mathrm{V}^{2+}(\mathrm{violet})
-$$
+$, $
 
 The colour changes are striking and form a classic demonstration of variable oxidation states.
 
@@ -225,18 +225,18 @@ Potassium manganate(VII) ($\mathrm{KMnO}_4$) is a powerful oxidising agent in ac
 ($E^\circ = +1.51\,\mathrm{V}$). It is reduced to $\mathrm{Mn}^{2+}$ (pale pink, almost colourless
 in dilute solution):
 
-$$
+$, $
 \mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}
-$$
+$, $
 
 In neutral/alkaline solution, it is reduced to $\mathrm{MnO}_2$ (brown precipitate) or
 $\mathrm{MnO}_4^{2-}$ (green).
 
 ### Iron
 
-$$
+$, $
 \mathrm{Fe}^{3+} + e^- \rightleftharpoons \mathrm{Fe}^{2+} \quad E^\circ = +0.77\,\mathrm{V}
-$$
+$, $
 
 $\mathrm{Fe}^{3+}$ is a moderate oxidising agent; $\mathrm{Fe}^{2+}$ is a moderate reducing agent.
 
@@ -257,9 +257,9 @@ on the surface, and desorption.
 
 **Iron in the Haber process:**
 
-$$
+$, $
 \mathrm{N}_2 + 3\mathrm{H}_2 \rightleftharpoons 2\mathrm{NH}_3
-$$
+$, $
 
 $\mathrm{N}_2$ and $\mathrm{H}_2$ adsorb onto the iron surface. The $\mathrm{N}\equiv\mathrm{N}$
 bond is weakened, lowering the activation energy for bond breaking and subsequent reaction with
@@ -267,9 +267,9 @@ $\mathrm{H}$ atoms. $\mathrm{NH}_3$ desorbs from the surface.
 
 **Vanadium(V) oxide in the Contact process:**
 
-$$
+$, $
 2\mathrm{SO}_2 + \mathrm{O}_2 \rightleftharpoons 2\mathrm{SO}_3
-$$
+$, $
 
 $\mathrm{V}_2\mathrm{O}_5$ provides a surface for the reaction. The mechanism involves reduction of
 $\mathrm{V}^{5+}$ to $\mathrm{V}^{4+}$ by $\mathrm{SO}_2$Then reoxidation of $\mathrm{V}^{4+}$ to
@@ -322,9 +322,9 @@ complex is **paramagnetic** if it contains unpaired electrons (attracted into a 
 The magnetic moment $\mu$ (in Bohr magnetons, $\mu_\mathrm{BM}$) is related to the number of
 unpaired electrons $n$ by the spin-only formula:
 
-$$
+$, $
 \mu = \sqrt{n(n+2)}\,\mu_\mathrm{BM}
-$$
+$, $
 
 | Unpaired electrons ($n$) | $\mu_\mathrm{calc}$ ($\mu_\mathrm{BM}$) | Typical ion ($d^n$)                                                      |
 | ------------------------ | --------------------------------------- | ------------------------------------------------------------------------ |
@@ -393,15 +393,15 @@ the wavelength in metres.
 **Worked Example.** $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ absorbs at
 $\lambda = 510\,\mathrm{nm}$ (green). Calculate $\Delta_o$ in $\mathrm{kJ/mol}$.
 
-$$
+$, $
 \Delta E = \frac◆LB◆hc◆RB◆◆LB◆\lambda◆RB◆ = \frac◆LB◆(6.626 \times 10^{-34})(3.00 \times 10^8)◆RB◆◆LB◆510 \times 10^{-9}◆RB◆ = 3.90 \times 10^{-19}\,\mathrm{J}
-$$
+$, $
 
 Per mole:
 
-$$
+$, $
 \Delta_o = 3.90 \times 10^{-19} \times 6.022 \times 10^{23} = 234,800\,\mathrm{J/mol} = 235\,\mathrm{kJ/mol}
-$$
+$, $
 
 ### Colour Wheel and Complementary Colours
 
@@ -566,27 +566,27 @@ $\mathrm{AgCl}$ precipitate, shifting it left.
 
 For the formation of $[\mathrm{Cu}(\mathrm{NH}_3)_4]^{2+}$:
 
-$$
+$, $
 \mathrm{Cu}^{2+} + \mathrm{NH}_3 \rightleftharpoons [\mathrm{Cu}(\mathrm{NH}_3)]^{2+} \quad K_1
-$$
+$, $
 
-$$
+$, $
 [\mathrm{Cu}(\mathrm{NH}_3)]^{2+} + \mathrm{NH}_3 \rightleftharpoons [\mathrm{Cu}(\mathrm{NH}_3)_2]^{2+} \quad K_2
-$$
+$, $
 
-$$
+$, $
 [\mathrm{Cu}(\mathrm{NH}_3)_2]^{2+} + \mathrm{NH}_3 \rightleftharpoons [\mathrm{Cu}(\mathrm{NH}_3)_3]^{2+} \quad K_3
-$$
+$, $
 
-$$
+$, $
 [\mathrm{Cu}(\mathrm{NH}_3)_3]^{2+} + \mathrm{NH}_3 \rightleftharpoons [\mathrm{Cu}(\mathrm{NH}_3)_4]^{2+} \quad K_4
-$$
+$, $
 
 The overall formation constant is:
 
-$$
+$, $
 \beta_4 = K_1 \times K_2 \times K_3 \times K_4
-$$
+$, $
 
 $K_1 \gt K_2 \gt K_3 \gt K_4$ because each successive ligand added experiences increasing steric and
 electrostatic repulsion from the ligands already present.
@@ -596,17 +596,17 @@ electrostatic repulsion from the ligands already present.
 Haemoglobin contains $\mathrm{Fe}^{2+}$ ions coordinated to a porphyrin ring (a tetradentate ligand)
 and a protein chain (globin). The sixth coordination site binds $\mathrm{O}_2$ reversibly:
 
-$$
+$, $
 [\mathrm{Hb-Fe}^{2+}] + \mathrm{O}_2 \rightleftharpoons [\mathrm{Hb-Fe}^{2+}-\mathrm{O}_2]
-$$
+$, $
 
 **Carbon monoxide poisoning:** $\mathrm{CO}$ is a stronger ligand than $\mathrm{O}_2$ (greater
 $d$-orbital overlap due to $\pi$-backbonding). It binds irreversibly to haemoglobin, blocking
 $\mathrm{O}_2$ transport:
 
-$$
+$, $
 [\mathrm{Hb-Fe}^{2+}] + \mathrm{CO} \to [\mathrm{Hb-Fe}^{2+}-\mathrm{CO}] \quad \text{(essentially irreversible)}
-$$
+$, $
 
 The equilibrium constant for $\mathrm{CO}$ binding is approximately 200 times that for
 $\mathrm{O}_2$ binding.
@@ -669,25 +669,25 @@ $\mathrm{NH}_3$(b) concentrated $\mathrm{HCl}$And (c) $\mathrm{NaOH}$. State any
 
 (a) With excess $\mathrm{NH}_3$:
 
-$$
+$, $
 [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + 4\mathrm{NH}_3 \to [\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+} + 4\mathrm{H}_2\mathrm{O}
-$$
+$, $
 
 Pale blue $\to$ deep blue solution.
 
 (b) With concentrated $\mathrm{HCl}$:
 
-$$
+$, $
 [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + 4\mathrm{Cl}^- \rightleftharpoons [\mathrm{CuCl}_4]^{2-} + 6\mathrm{H}_2\mathrm{O}
-$$
+$, $
 
 Pale blue $\to$ yellow solution (tetrahedral complex).
 
 (c) With $\mathrm{NaOH}$:
 
-$$
+$, $
 [\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+} + 2\mathrm{OH}^- \to \mathrm{Cu}(\mathrm{OH})_2(s) + 6\mathrm{H}_2\mathrm{O}
-$$
+$, $
 
 Blue solution $\to$ blue precipitate.
 
@@ -834,7 +834,7 @@ $$t_{2g}^4\,e_g^2$$
 
 $$\text{CFSE} = 4(-0.4\Delta_o) + 2(0.6\Delta_o) = -1.6\Delta_o + 1.2\Delta_o = -0.4\Delta_o$$
 
-For $\mathrm{H}_2\mathrm{O}$$\Delta_o \approx 10400\,\mathrm{cm}^{-1}$:
+For $\mathrm{H}_2\mathrm{O}$, $\Delta_o \approx 10400\,\mathrm{cm}^{-1}$:
 
 $$\text{CFSE} = -0.4 \times 10400 = -4160\,\mathrm{cm}^{-1}$$
 
@@ -848,7 +848,7 @@ $$t_{2g}^6\,e_g^0$$
 
 $$\text{CFSE} = 6(-0.4\Delta_o) + 0(0.6\Delta_o) = -2.4\Delta_o$$
 
-For $\mathrm{CN}^-$$\Delta_o \approx 33000\,\mathrm{cm}^{-1}$:
+For $\mathrm{CN}^-$, $\Delta_o \approx 33000\,\mathrm{cm}^{-1}$:
 
 $$\text{CFSE} = -2.4 \times 33000 = -79200\,\mathrm{cm}^{-1}$$
 

@@ -90,7 +90,7 @@ $$|A \cup B| = |A| + |B| - |A \cap B|$$
 This is the **inclusion-exclusion principle** for two sets. It subtracts the overlap that would
 Otherwise be double-counted.
 
-For three sets $A$$B$$C$:
+For three sets $A$, $B$, $C$:
 
 $$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$$
 
@@ -125,7 +125,7 @@ $$f: X \to Y$$
 
 - $f_1: \mathbb{R}^+ \to \mathbb{R},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two values, $f_1$ is
   not a function.
-- $f_2: \mathbb{R} \to \mathbb{R},\; f_2(x) = \frac{1}{x}$ — At $x = 0$$f_2(0)$ is undefined, so not
+- $f_2: \mathbb{R} \to \mathbb{R},\; f_2(x) = \frac{1}{x}$ — At $x = 0$, $f_2(0)$ is undefined, so not
   every element of the domain is mapped. Redefine as
   $f_2: \mathbb{R} \setminus \{0\} \to \mathbb{R}$.
 - $f_3: \emptyset \to Y$ — Since no elements are in the domain, uniqueness is vacuously satisfied.
@@ -430,7 +430,7 @@ The value is approximately $7,401.22.
 
 Find the sum of the first 20 terms of the arithmetic sequence $3, 7, 11, \ldots$
 
-Here $a_1 = 3$$d = 4$$n = 20$.
+Here $a_1 = 3$, $d = 4$, $n = 20$.
 
 $S_{20} = \frac{20}{2}\big(2(3) + 19(4)\big) = 10(6 + 76) = 10 \times 82 = 820$
 
@@ -441,7 +441,7 @@ $S_{20} = \frac{20}{2}\big(2(3) + 19(4)\big) = 10(6 + 76) = 10 \times 82 = 820$
 
 Find the sum of $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots$
 
-Here $u_1 = 1$$r = \frac{1}{2}$. Since $|r| \lt 1$:
+Here $u_1 = 1$, $r = \frac{1}{2}$. Since $|r| \lt 1$:
 
 $S_{\infty} = \frac{1}{1 - 1/2} = \frac{1}{1/2} = 2$
 
@@ -452,7 +452,7 @@ $S_{\infty} = \frac{1}{1 - 1/2} = \frac{1}{1/2} = 2$
 
 The sum of the first $n$ terms of $2, 6, 18, \ldots$ is $6560$. Find $n$.
 
-Here $u_1 = 2$$r = 3$. Using $S_n = \frac{2(3^n - 1)}{3 - 1} = 3^n - 1$.
+Here $u_1 = 2$, $r = 3$. Using $S_n = \frac{2(3^n - 1)}{3 - 1} = 3^n - 1$.
 
 $3^n - 1 = 6560 \implies 3^n = 6561 = 3^8 \implies n = 8$
 
@@ -487,7 +487,7 @@ $\log_a(x^m) = mn = m\log_a x$. $\blacksquare$
 
 ### Change of Base Formula
 
-**Theorem.** $\log_a x = \dfrac{\log_b x}{\log_b a}$ for any valid bases $a, b \gt 0$$a, b \ne 1$.
+**Theorem.** $\log_a x = \dfrac{\log_b x}{\log_b a}$ for any valid bases $a, b \gt 0$, $a, b \ne 1$.
 
 _Proof._ Let $y = \log_a x$. Then $a^y = x$. Taking $\log_b$ of both sides:
 $\log_b(a^y) = \log_b x$. By the power rule, $y\log_b a = \log_b x$So

@@ -252,7 +252,7 @@ $\mathrm{C}_{18}$-bonded silica), polar compounds elute first.
 
 ### Gas Chromatography (GC)
 
-**Mobile phase:** Inert carrier gas ($\mathrm{He}$$\mathrm{N}_2$).
+**Mobile phase:** Inert carrier gas ($\mathrm{He}$, $\mathrm{N}_2$).
 
 **Stationary phase:** High-boiling liquid coated on the inner wall of a capillary column.
 
@@ -903,7 +903,7 @@ in the NMR. The discrepancy suggests the formula may be $\mathrm{C}_3\mathrm{H}_
 An organic compound $\mathrm{C}_7\mathrm{H}_8$ shows the following data:
 
 - Mass spec: M+ at $m/z = 92$ (base peak), M+1 at 7.7%, significant fragment at $m/z = 91$
-- IR: absorption at $3030\,\mathrm{cm}^{-1}$$1600$ and $1500\,\mathrm{cm}^{-1}$No absorption above
+- IR: absorption at $3030\,\mathrm{cm}^{-1}$, $1600$ and $1500\,\mathrm{cm}^{-1}$No absorption above
   $3100\,\mathrm{cm}^{-1}$
 - $^1\mathrm{H}$ NMR: $\delta\, 7.2$ (m, 5H), $\delta\, 2.3$ (s, 3H)
 

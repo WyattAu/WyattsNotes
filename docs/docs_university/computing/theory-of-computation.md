@@ -165,7 +165,7 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_0\})$$
 | $q_1$ | $q_2$              | $q_0$              |
 | $q_2$ | $q_1$              | $q_2$              |
 
-_Correctness._ By induction on input length. Base: $x = \varepsilon$$\mathrm◆LB◆val(\varepsilon) = 0$
+_Correctness._ By induction on input length. Base: $x = \varepsilon$, $\mathrm◆LB◆val(\varepsilon) = 0$
 DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm◆LB◆val(x) \bmod 3$), Then
 reading $b$ moves to $q_◆LB◆(2r+b) \bmod 3◆RB◆$Which equals $q_◆LB◆\mathrm◆LB◆val(xb) \bmod 3◆RB◆$. $\blacksquare$
 
@@ -731,7 +731,7 @@ $M = (\{q_0, q_1, q_2\}, \Sigma, V \cup \Sigma \cup \{\$\}, \delta, q_0, \{q_2\}
 4. $(q_1, \varepsilon, \$) \to (q_2, \$)$ — accept when only the marker remains.
 
 The PDA maintains the current sentential form (minus terminals already matched) on the stack. When
-only $\$$ remains, the derivation is complete and all input has been consumed. $\blacksquare$
+only $\$, $ remains, the derivation is complete and all input has been consumed. $\blacksquare$
 
 ### 3.6 Pumping Lemma for Context-Free Languages
 
@@ -1190,7 +1190,7 @@ $$\alpha_{i_1} \alpha_{i_2} \cdots \alpha_{i_m} = \beta_{i_1} \beta_{i_2} \cdots
 The **PCP language** is
 $\mathrm◆LB◆PCP = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm◆LB◆ have a solution\}$.
 
-**Example.** $\alpha = (a, ab, bba)$$\beta = (ba, aa, bb)$. The sequence $(2, 1, 1, 3)$ gives
+**Example.** $\alpha = (a, ab, bba)$, $\beta = (ba, aa, bb)$. The sequence $(2, 1, 1, 3)$ gives
 $ab \cdot a \cdot a \cdot bba = abaabba$ and $aa \cdot ba \cdot ba \cdot bb = aabababb$ — not equal.
 The sequence $(1, 3, 1)$ gives $a \cdot bba \cdot a = abbaa$ and $ba \cdot bb \cdot ba = babba$ —
 not equal. This instance may or may not have a solution; determining this is undecidable .
@@ -1198,7 +1198,7 @@ not equal. This instance may or may not have a solution; determining this is und
 <details>
 <summary>Worked Example: A solvable PCP instance</summary>
 
-$\alpha = (b, ba, aab)$$\beta = (bb, aa, ba)$.
+$\alpha = (b, ba, aab)$, $\beta = (bb, aa, ba)$.
 
 Try the sequence $(2, 3, 1)$:
 
@@ -1270,7 +1270,7 @@ about $B$. :::
 The **running time** of a deterministic TM $M$ on input $w$ is the number of steps $M$ takes before
 Halting. If $M$ never halts, the running time is $\infty$.
 
-$M$ **runs in time $t(n)$** if for every input $w$ of length $n$$M$ halts within $t(n)$ steps.
+$M$ **runs in time $t(n)$** if for every input $w$ of length $n$, $M$ halts within $t(n)$ steps.
 
 **Theorem 6.1.** Let $t(n)$ be a function with $t(n) \geq n$. Every TM that runs in time $t(n)$ has
 An equivalent single-tape TM that runs in time $O(t^2(n))$.
@@ -1603,7 +1603,7 @@ Evaluate $\phi = \forall x \exists y \, [(x \lor y) \land (\bar{x} \lor y)]$.
 - For $x = 1$: need $\exists y$ such that $(1 \lor y) \land (0 \lor y) = \mathrm{true \land y = y$.
   So we need $y = 1$ (which exists).
 
-Since both values of $x$ lead to a satisfying assignment for $y$$\phi$ is true.
+Since both values of $x$ lead to a satisfying assignment for $y$, $\phi$ is true.
 
 </details>
 

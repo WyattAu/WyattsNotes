@@ -156,7 +156,7 @@ $$P(M) = 0.45, \quad P(P) = 0.30, \quad P(M \cap P) = 0.15$$
 
 ### 3.3 Three-event Venn diagrams
 
-For three events $A$$B$$C$The inclusion-exclusion formula gives:
+For three events $A$, $B$, $C$The inclusion-exclusion formula gives:
 
 $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$
 
@@ -236,7 +236,7 @@ Equivalently: $P(A \mid B) = P(A)$Or $P(B \mid A) = P(B)$.
 
 ### 5.2 Pairwise vs mutual independence
 
-For three events $A$$B$$C$:
+For three events $A$, $B$, $C$:
 
 - **Pairwise independence** means each pair is independent.
 - **Mutual independence** means pairwise independence **and**

@@ -51,7 +51,7 @@ Phagocytes (neutrophils, macrophages, and dendritic cells) engulf and destroy pa
 **Steps of phagocytosis:**
 
 1. **Chemotaxis**: phagocytes migrate toward chemical attractants released at the infection site
-   (e.g., bacterial peptides, complement fragments $\mathrm{C3a}$$\mathrm{C5a}$).
+   (e.g., bacterial peptides, complement fragments $\mathrm{C3a}$, $\mathrm{C5a}$).
 2. **Recognition**: phagocyte binds to pathogen via:
 
 - **Direct binding** to PAMPs (pathogen-associated molecular patterns) using pattern recognition
@@ -102,7 +102,7 @@ Through three pathways:
 **All three pathways converge on $\mathrm{C3}$ and lead to:**
 
 1. **Opsonisation** ($\mathrm{C3b}$): coats pathogens, enhancing phagocytosis.
-2. **Inflammation** ($\mathrm{C3a}$$\mathrm{C5a}$): act as chemoattractants for phagocytes; cause
+2. **Inflammation** ($\mathrm{C3a}$, $\mathrm{C5a}$): act as chemoattractants for phagocytes; cause
    mast cell degranulation.
 3. **Membrane attack complex (MAC)** ($\mathrm{C5b\text{-}C9}$): forms transmembrane pores in the
    pathogen cell membrane, causing lysis by osmotic imbalance.

@@ -163,7 +163,7 @@ Overflow has occurred. The sign bit flips unexpectedly.
 
 **Worked Example.** Compute $100 + 50$ in 8-bit two's complement.
 
-$100 = 01100100$$50 = 00110010$.
+$100 = 01100100$, $50 = 00110010$.
 
 Sum: $10010110$.
 

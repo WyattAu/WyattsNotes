@@ -832,7 +832,7 @@ The economy is in an inflationary gap: $520 - 400 = 120$.
 **Supply-side policy: LRAS shifts right to $Y^* = 600$.**
 
 The LRAS shift does not directly change AD or SRAS. In the short run, equilibrium remains at
-$Y = 520$$P = 240$.
+$Y = 520$, $P = 240$.
 
 **Long-run adjustment:** The increase in potential output reduces inflationary pressure. Workers and
 firms expect lower future prices, reducing wage demands. SRAS shifts right.
@@ -849,7 +849,7 @@ and the new LRAS. But the adjustment process depends on expectations.
 
 **If the SRAS shifts right enough to reach the new LRAS at $Y = 600$:**
 
-New SRAS: $Y = 3P - 500$. $1000 - 2P = 3P - 500 \Rightarrow 1500 = 5P \Rightarrow P = 300$$Y = 400$.
+New SRAS: $Y = 3P - 500$. $1000 - 2P = 3P - 500 \Rightarrow 1500 = 5P \Rightarrow P = 300$, $Y = 400$.
 This does not work either.
 
 Let me reconsider. The SRAS must intersect AD at $Y = 600$: $$600 = 1000 - 2P \Rightarrow P = 200$$

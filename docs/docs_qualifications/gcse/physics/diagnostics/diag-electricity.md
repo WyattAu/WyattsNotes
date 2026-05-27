@@ -61,7 +61,7 @@ $P = VI_{\text{total} = 10 \times 4.17 = 41.7$ W. (Or: $P = V^2/R = 100/2.4 = 41
 
 ### UT-3: Electrical Power and Energy
 
-**Question:** (a) Derive the three formulas for electrical power: $P = VI$$P = I^2R$And $P = V^2/R$.
+**Question:** (a) Derive the three formulas for electrical power: $P = VI$, $P = I^2R$And $P = V^2/R$.
 (b) A heater rated at 2000 W is used for 3 hours per day for 30 days. Calculate the total energy in
 kWh and the cost at 28p per kWh. (c) A 12 V car battery has a capacity of 50 Ah. Calculate the total
 energy stored and how long it can power a 60 W light bulb.

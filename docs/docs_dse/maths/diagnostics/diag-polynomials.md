@@ -25,7 +25,7 @@ By the factor theorem, $x + 2$ is a factor if and only if $P(-2) = 0$.
 
 $$P(-2) = (-2)^3 + 3(-2)^2 - 4(-2) - 8 = -8 + 12 + 8 - 8 = 4$$
 
-Since $P(-2) = 4 \neq 0$$x + 2$ is **not** a factor.
+Since $P(-2) = 4 \neq 0$, $x + 2$ is **not** a factor.
 
 A common mistake is testing $P(2)$ instead of $P(-2)$. The factor theorem states that $(x - a)$ is a
 factor if $P(a) = 0$. Here the factor is $x + 2 = x - (-2)$So we test $a = -2$.
@@ -61,7 +61,7 @@ $P(2) = 4a + b + 9 = 11 \implies 4a + b = 2$.
 
 $P(-1) = -2 + a + 5 + b = a + b + 3 = -4 \implies a + b = -7$.
 
-Subtracting: $3a = 9 \implies a = 3$$b = -10$.
+Subtracting: $3a = 9 \implies a = 3$, $b = -10$.
 
 ---
 
@@ -101,7 +101,7 @@ $= 2x^3 - 5x^2 + x - 6$. Correct.
 
 **Question:**
 
-If $\alpha$$\beta$$\gamma$ are the roots of $x^3 - 5x^2 + 2x + 8 = 0$Find:
+If $\alpha$, $\beta$, $\gamma$ are the roots of $x^3 - 5x^2 + 2x + 8 = 0$Find:
 
 (a) $\alpha + \beta + \gamma$ (b) $\alpha\beta + \beta\gamma + \gamma\alpha$ (c) $\alpha\beta\gamma$
 
@@ -118,7 +118,7 @@ $$\alpha\beta\gamma = -r = -8$$
 
 **Question:**
 
-$P(x) = x^3 + ax^2 + bx - 12$ has factors $(x - 1)$ and $(x + 4)$. Find $a$$b$And the remaining
+$P(x) = x^3 + ax^2 + bx - 12$ has factors $(x - 1)$ and $(x + 4)$. Find $a$, $b$And the remaining
 factor.
 
 **Solution:**
@@ -204,7 +204,7 @@ $$
 
 $$x^2 - x - 6 = (x - 3)(x + 2)$$
 
-Roots: $x = -2$$x = 2$$x = 3$.
+Roots: $x = -2$, $x = 2$, $x = 3$.
 
 $P(x) = (x - 2)(x - 3)(x + 2)$ is a cubic with positive leading coefficient, so it is strictly
 increasing when restricted to avoid the local maximum and minimum.
@@ -218,8 +218,8 @@ points) or $(-\infty,\; -2]$.
 
 **Question:**
 
-The cubic curve $y = x^3 - 6x^2 + 11x - 6$ intersects the $x$-axis at points $A$$B$And $C$. Find the
-coordinates of $A$$B$$C$ and the area of triangle $ABC$.
+The cubic curve $y = x^3 - 6x^2 + 11x - 6$ intersects the $x$-axis at points $A$, $B$And $C$. Find the
+coordinates of $A$, $B$, $C$ and the area of triangle $ABC$.
 
 **Solution:**
 
@@ -395,7 +395,7 @@ $\dfrac{1}{\alpha^2}$ and $\dfrac{1}{\beta^2}$.
 
 **Solution:**
 
-$\alpha + \beta = -\dfrac{3}{2}$$\alpha\beta = -2$.
+$\alpha + \beta = -\dfrac{3}{2}$, $\alpha\beta = -2$.
 
 $$\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \frac{9}{4} + 4 = \frac{25}{4}$$
 
@@ -474,7 +474,7 @@ $x$-intercepts and the $y$-intercept. (3 marks)
 
 (b) Divide by $(x + 1)$: $x^3 - 4x^2 + x + 6 = (x+1)(x^2 - 5x + 6) = (x+1)(x-2)(x-3)$.
 
-(c) $x = -1$$x = 2$$x = 3$.
+(c) $x = -1$, $x = 2$, $x = 3$.
 
 (d) $y$-intercept: $(0, 6)$. $x$-intercepts: $(-1, 0)$$(2, 0)$$(3, 0)$. The cubic has positive
 leading coefficient, so it goes from bottom-left to top-right, crossing the $x$-axis at each root.
@@ -567,7 +567,7 @@ $\displaystyle\int \left(\frac{11/5}{x+2} + \frac{1}{2x-1}\right) dx = \frac{11}
 
 $P(x) = x^4 + ax^3 + bx^2 + cx + d$ has roots $1, -1, 2, -3$.
 
-(a) Find $a$$b$$c$$d$. (3 marks) (b) Find the value of $P'(1)$. (3 marks)
+(a) Find $a$, $b$, $c$, $d$. (3 marks) (b) Find the value of $P'(1)$. (3 marks)
 
 **Solution:**
 

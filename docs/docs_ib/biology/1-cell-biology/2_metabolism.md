@@ -68,7 +68,7 @@ $$\frac{1}{v} = \frac{K_m}{V_{\max}} \cdot \frac{1}{[S]} + \frac{1}{V_{\max}}$$
 - **Lineweaver-Burk**: lines intersect on the **x-axis** (same $-1/K_m$Different y-intercepts and
   slopes).
 
-**Example**: heavy metal ions ($\mathrm{Pb}^{2+}$$\mathrm{Hg}^{2+}$) bind to thiol groups (-SH) of
+**Example**: heavy metal ions ($\mathrm{Pb}^{2+}$, $\mathrm{Hg}^{2+}$) bind to thiol groups (-SH) of
 cysteine residues at allosteric sites.
 
 #### Uncompetitive Inhibition
@@ -107,7 +107,7 @@ cysteine residues at allosteric sites.
 
 - **Adenine**: a nitrogenous base (purine).
 - **Ribose**: a pentose sugar.
-- **Three phosphate groups** ($\alpha$$\beta$$\gamma$).
+- **Three phosphate groups** ($\alpha$, $\beta$, $\gamma$).
 
 The bonds between the phosphate groups are **phosphoanhydride bonds**. The hydrolysis of the
 terminal Phosphoanhydride bond (between $\beta$ and $\gamma$ phosphates) releases energy:
@@ -204,7 +204,7 @@ Acetyl-CoA:
 $$\mathrm{Pyruvate} + \mathrm{CoA} + \mathrm{NAD}^+ \to \mathrm{Acetyl\text{-}CoA} + \mathrm{CO}_2 + \mathrm{NADH}$$
 
 Catalysed by the **pyruvate dehydrogenase complex** (a multi-enzyme complex). Per glucose: $2$
-pyruvate $\to$ $2$ acetyl-CoA, $2$ $\mathrm{CO}_2$$2$ NADH.
+pyruvate $\to$ $2$ acetyl-CoA, $2$ $\mathrm{CO}_2$, $2$ NADH.
 
 ### The Krebs Cycle (Citric Acid Cycle)
 
@@ -534,7 +534,7 @@ regulation**:
 <summary>Question 1: Michaelis-Menten Calculation</summary>
 
 An enzyme has $V_{\max} = 60\;\mathrm{\mu mol/min}$ and $K_m = 8\;\mathrm{mM}$. Calculate the
-Reaction velocity at $[S] = 4\;\mathrm{mM}$$8\;\mathrm{mM}$And $20\;\mathrm{mM}$. A Competitive
+Reaction velocity at $[S] = 4\;\mathrm{mM}$, $8\;\mathrm{mM}$And $20\;\mathrm{mM}$. A Competitive
 inhibitor is added that increases the apparent $K_m$ to $24\;\mathrm{mM}$. Calculate the velocity at
 $[S] = 20\;\mathrm{mM}$ with the inhibitor. At what substrate Concentration does the inhibited
 reaction reach $90\%$ of $V_{\max}$?
@@ -556,7 +556,7 @@ $\frac{1}{2}V_{\max}$Confirming $K_m$)
 At $[S] = 20\;\mathrm{mM}$:
 $v = \frac{60 \times 20}{8 + 20} = \frac{1200}{28} = 42.9\;\mathrm{\mu mol/min}$
 
-With competitive inhibitor ($K_m^{\mathrm{app}} = 24\;\mathrm{mM}$$V_{\max}$ unchanged): At
+With competitive inhibitor ($K_m^{\mathrm{app}} = 24\;\mathrm{mM}$, $V_{\max}$ unchanged): At
 $[S] = 20\;\mathrm{mM}$:
 $v = \frac{60 \times 20}{24 + 20} = \frac{1200}{44} = 27.3\;\mathrm{\mu mol/min}$
 
@@ -888,7 +888,7 @@ Absorption spectrum are similar but not identical.
 Palmitic acid (16-carbon saturated fatty acid, C16:0) undergoes complete $\beta$-oxidation.
 Calculate the Net ATP yield, assuming the malate-aspartate shuttle transfers NADH from glycolysis
 into the mitochondria And using the updated P/O ratios
-($\mathrm{NADH} = 2.5\;\mathrm{ATP}$$\mathrm{FADH}_2 = 1.5\;\mathrm{ATP}$).
+($\mathrm{NADH} = 2.5\;\mathrm{ATP}$, $\mathrm{FADH}_2 = 1.5\;\mathrm{ATP}$).
 
 <details>
 <summary>Solution</summary>
@@ -901,7 +901,7 @@ Step 2: $\beta$-oxidation cycles.
 
 - Palmitoyl-CoA (16C) undergoes $16/2 - 1 = 7$ cycles of $\beta$-oxidation.
 - Each cycle produces: 1 $\mathrm{FADH}\_2$1 NADH, and 1 acetyl-CoA (2C).
-- After 7 cycles: $7\;\mathrm{FADH}_2$$7\;\mathrm{NADH}$And $8$ acetyl-CoA.
+- After 7 cycles: $7\;\mathrm{FADH}_2$, $7\;\mathrm{NADH}$And $8$ acetyl-CoA.
 
 Step 3: Oxidation of products through the ETC and Krebs cycle.
 
@@ -913,7 +913,7 @@ Step 3: Oxidation of products through the ETC and Krebs cycle.
 
 Step 4: Net ATP yield. $\text{Total} = 10.5 + 17.5 + 80 - 2 = 106\;\mathrm{ATP}$
 
-Using the traditional P/O ratios ($\mathrm{NADH} = 3$$\mathrm{FADH}_2 = 2$):
+Using the traditional P/O ratios ($\mathrm{NADH} = 3$, $\mathrm{FADH}_2 = 2$):
 $7 \times 2 + 7 \times 3 + 8 \times 12 - 2 = 14 + 21 + 96 - 2 = 129\;\mathrm{ATP}$
 
 </details>
@@ -936,7 +936,7 @@ $\mathrm{RQ} = \frac{\mathrm{CO}_2\text{ produced}}{\mathrm{O}_2\text{ consumed}
 - $\mathrm{RQ} = 1.0$: pure carbohydrate (glucose:
   $\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 + 6\mathrm{O}_2 \to 6\mathrm{CO}_2 + 6\mathrm{H}_2\mathrm{O}$)
 - $\mathrm{RQ} = 0.7$: pure fat (e.g., palmitic acid:
-  $\mathrm{C}_{16}\mathrm{H}_{32}\mathrm{O}_2 + 23\mathrm{O}_2 \to 16\mathrm{CO}_2 + 16\mathrm{H}_2\mathrm{O}$$\mathrm{RQ} = 16/23 = 0.696$)
+  $\mathrm{C}_{16}\mathrm{H}_{32}\mathrm{O}_2 + 23\mathrm{O}_2 \to 16\mathrm{CO}_2 + 16\mathrm{H}_2\mathrm{O}$, $\mathrm{RQ} = 16/23 = 0.696$)
 - $\mathrm{RQ} = 0.8$: protein
 - $\mathrm{RQ} = 0.9$: mixed substrate, approximately $50\%$ carbohydrate and $50\%$ fat.
 
@@ -978,7 +978,7 @@ $\alpha = 1 + \frac{[I]}{K_i}$So $3 = 1 + \frac{2.0}{K_i}$Giving $K_i = 1.0\;\ma
   $= K_m/V_{max}$ increases from $4/120$ to $12/120$).
 
 (d) Without inhibitor: at
-$[S] = K_m = 4.0\;\mathrm{mM}$$v = \frac{V_{max} \times [S]}{K_m + [S]} = \frac{120 \times 4}{4 + 4} = 60\;\mathrm{\mu mol/min}$.
+$[S] = K_m = 4.0\;\mathrm{mM}$, $v = \frac{V_{max} \times [S]}{K_m + [S]} = \frac{120 \times 4}{4 + 4} = 60\;\mathrm{\mu mol/min}$.
 Fraction $= 60/120 = 0.50$ ($50\%$).
 
 With inhibitor:
@@ -1035,7 +1035,7 @@ $$\mathrm{C}_6\mathrm{H}_{12}\mathrm{O}_6 \to 2\;\mathrm{C}_2\mathrm{H}_5\mathrm
 The bioreactor contains $100\;\mathrm{L}$ of $0.5\;\mathrm{mol/L}$ glucose solution. After $8$
 hours, $15\;\mathrm{mol}$ of $\mathrm{CO}_2$ have been produced. (a) Calculate the percentage of
 glucose consumed. (b) Calculate the volume of $\mathrm{CO}_2$ produced at $25^\circ\mathrm{C}$ and
-$1\;\mathrm{atm}$ (ideal gas: $V = nRT/P$$R = 0.0821\;\mathrm{L\;atm/(mol\;K)}$). (c) Calculate the
+$1\;\mathrm{atm}$ (ideal gas: $V = nRT/P$, $R = 0.0821\;\mathrm{L\;atm/(mol\;K)}$). (c) Calculate the
 mass of ethanol Produced. (d) Explain why fermentation eventually stops even if glucose remains.
 
 <details>

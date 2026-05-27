@@ -463,7 +463,7 @@ Is approximately zero.
    a charged oil drop allows the determination of the elementary charge. The key equation is
    $q = mgd/V$.
 
-6. **Capacitors:** Remember that capacitance depends only on the geometry of the plates ($A$$d$) and
+6. **Capacitors:** Remember that capacitance depends only on the geometry of the plates ($A$, $d$) and
    the dielectric, not on the charge or voltage. The energy stored can be expressed in three
    equivalent forms — use the one that matches your given data.
 

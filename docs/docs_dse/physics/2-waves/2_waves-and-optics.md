@@ -1063,7 +1063,7 @@ Given $\lambda = \frac{\Delta y \cdot d}{D}$:
 
 $$\frac{\Delta\lambda}{\lambda} = \sqrt{\left(\frac{\Delta(\Delta y)}{\Delta y}\right)^2 + \left(\frac{\Delta d}{d}\right)^2 + \left(\frac{\Delta D}{D}\right)^2}$$
 
-**Example:** $\Delta y = (0.80 \pm 0.02) \mathrm{ mm}$$d = (0.50 \pm 0.01) \mathrm{ mm}$
+**Example:** $\Delta y = (0.80 \pm 0.02) \mathrm{ mm}$, $d = (0.50 \pm 0.01) \mathrm{ mm}$
 $D = (1.50 \pm 0.01) \mathrm{ m}$:
 
 $$\lambda = \frac{0.80 \times 10^{-3} \times 0.50 \times 10^{-3}}{1.50} = 2.67 \times 10^{-7} \mathrm{ m} = 267 \mathrm{ nm}$$
@@ -1144,7 +1144,7 @@ nature of the new image and explain your reasoning.
 (c) The student wants to use this lens as a simple magnifying glass. What is the maximum
 Magnification achievable if the near point of the user is $25 \mathrm{ cm}$?
 
-(a) $u = 30 \mathrm{ cm}$$v = 120 \mathrm{ cm}$
+(a) $u = 30 \mathrm{ cm}$, $v = 120 \mathrm{ cm}$
 
 $$\frac{1}{f} = \frac{1}{30} + \frac{1}{120} = \frac{4 + 1}{120} = \frac{5}{120} = \frac{1}{24}$$
 

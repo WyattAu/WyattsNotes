@@ -268,15 +268,15 @@ $$\mathrm{Long-run equilibrium: } AD = SRAS = LRAS \mathrm{ at } (Y^*, P_{LR})$$
 **Positive demand shock** (e.g., increase in consumer confidence):
 
 1. AD shifts right
-2. SR: $Y \uparrow$$P \uparrow$
-3. LR: wages adjust $\Rightarrow$ SRAS shifts left $\Rightarrow$ $Y$ returns to $Y^*$$P$ rises
+2. SR: $Y \uparrow$, $P \uparrow$
+3. LR: wages adjust $\Rightarrow$ SRAS shifts left $\Rightarrow$ $Y$ returns to $Y^*$, $P$ rises
    further
 
 **Negative demand shock** (e.g., financial crisis):
 
 1. AD shifts left
-2. SR: $Y \downarrow$$P \downarrow$
-3. LR: wages adjust $\Rightarrow$ SRAS shifts right $\Rightarrow$ $Y$ returns to $Y^*$$P$ falls
+2. SR: $Y \downarrow$, $P \downarrow$
+3. LR: wages adjust $\Rightarrow$ SRAS shifts right $\Rightarrow$ $Y$ returns to $Y^*$, $P$ falls
    further
 
 ### 3.4 Supply-Side Shocks
@@ -284,7 +284,7 @@ $$\mathrm{Long-run equilibrium: } AD = SRAS = LRAS \mathrm{ at } (Y^*, P_{LR})$$
 **Negative supply shock** (e.g., oil price increase):
 
 1. SRAS shifts left
-2. $Y \downarrow$$P \uparrow$ (stagflation — simultaneous rise in inflation and fall in output)
+2. $Y \downarrow$, $P \uparrow$ (stagflation — simultaneous rise in inflation and fall in output)
 
 This is the worst outcome for policymakers because the standard tools are contradictory:
 Expansionary policy to raise output worsens inflation; contractionary policy to reduce inflation
@@ -494,7 +494,7 @@ The price of oil. Why is this particularly problematic for policymakers?
 
 <details>
 <summary>Hint</summary>
-SR: SRAS shifts left $\Rightarrow Y$ falls, $P$ rises (stagflation). LR: high unemployment puts downward pressure on wages $\Rightarrow$ SRAS shifts right $\Rightarrow Y$ returns to $Y^*$$P$ returns to original level. Problematic because in the short run, expansionary policy (AD shift right) would raise $Y$ but worsen inflation, while contractionary policy would reduce inflation but worsen the recession. Policymakers face a difficult trade-off.
+SR: SRAS shifts left $\Rightarrow Y$ falls, $P$ rises (stagflation). LR: high unemployment puts downward pressure on wages $\Rightarrow$ SRAS shifts right $\Rightarrow Y$ returns to $Y^*$, $P$ returns to original level. Problematic because in the short run, expansionary policy (AD shift right) would raise $Y$ but worsen inflation, while contractionary policy would reduce inflation but worsen the recession. Policymakers face a difficult trade-off.
 </details>
 
 **Problem 4.** Prove the paradox of thrift. Assume MPC = 0.8, full-employment income = £1,000bn, and
@@ -528,7 +528,7 @@ Process.
 
 <details>
 <summary>Hint</summary>
-$1000 - 2P = -500 + 5P \Rightarrow 1500 = 7P \Rightarrow P = 214.3$$Y = 571.4$. Output gap $= 1000 - 571.4 = 428.6$ (recessionary gap). LR: high unemployment $\Rightarrow$ wages fall $\Rightarrow$ SRAS shifts right (parallel shift). New SRAS: $Y = -500 + \delta + 5P$ where $\delta$ is chosen so that $Y^* = 1000$ at the new equilibrium. At $Y = 1000$: $P = 0$ from AD, which is unrealistic. In practice, the SRAS shifts right until it intersects AD at $Y^* = 1000$. From AD: $1000 = 1000 - 2P \Rightarrow P = 0$. The model breaks down at extreme values, but the mechanism is correct conceptually.
+$1000 - 2P = -500 + 5P \Rightarrow 1500 = 7P \Rightarrow P = 214.3$, $Y = 571.4$. Output gap $= 1000 - 571.4 = 428.6$ (recessionary gap). LR: high unemployment $\Rightarrow$ wages fall $\Rightarrow$ SRAS shifts right (parallel shift). New SRAS: $Y = -500 + \delta + 5P$ where $\delta$ is chosen so that $Y^* = 1000$ at the new equilibrium. At $Y = 1000$: $P = 0$ from AD, which is unrealistic. In practice, the SRAS shifts right until it intersects AD at $Y^* = 1000$. From AD: $1000 = 1000 - 2P \Rightarrow P = 0$. The model breaks down at extreme values, but the mechanism is correct conceptually.
 </details>
 
 **Problem 8.** Explain the accelerator effect. Why might a small slowdown in GDP growth cause a
@@ -544,7 +544,7 @@ Using the AD/AS model and the concept of crowding out.
 
 <details>
 <summary>Hint</summary>
-SR: AD shifts right $\Rightarrow Y \uparrow$$P \uparrow$. LR: if the economy was below $Y^*$The increase in $Y$ is sustainable. If the economy was at or near $Y^*$SRAS shifts left as wages rise, returning $Y$ to $Y^*$ with only higher prices. Crowding out: increased government borrowing raises interest rates, reducing private investment $\Rightarrow$ AD may not shift by the full amount of the spending increase. The net effect on growth depends on: (1) the size of the output gap, (2) the multiplier, (3) the degree of crowding out.
+SR: AD shifts right $\Rightarrow Y \uparrow$, $P \uparrow$. LR: if the economy was below $Y^*$The increase in $Y$ is sustainable. If the economy was at or near $Y^*$SRAS shifts left as wages rise, returning $Y$ to $Y^*$ with only higher prices. Crowding out: increased government borrowing raises interest rates, reducing private investment $\Rightarrow$ AD may not shift by the full amount of the spending increase. The net effect on growth depends on: (1) the size of the output gap, (2) the multiplier, (3) the degree of crowding out.
 </details>
 
 **Problem 10.** Compare and contrast demand-pull and cost-push inflation using AD/AS diagrams.

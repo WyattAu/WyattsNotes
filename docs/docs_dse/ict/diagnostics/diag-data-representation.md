@@ -136,7 +136,7 @@ memory. If the system has 8 GB of RAM installed, explain why not all addresses m
 Result in 8 bits: $00100000 = 32_{10}$.
 
 Carry out of the MSB $= 1$ (indicates overflow in unsigned). For signed:
-$10110011 = -77$$01101101 = 109$. Sum $= 32$. No signed overflow because a negative plus positive
+$10110011 = -77$, $01101101 = 109$. Sum $= 32$. No signed overflow because a negative plus positive
 cannot exceed the range.
 
 (b) The ALU uses full adders chained together. Each full adder takes three inputs (two bits to add

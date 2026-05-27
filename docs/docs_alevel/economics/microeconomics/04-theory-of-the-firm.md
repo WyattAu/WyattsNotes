@@ -238,14 +238,14 @@ Group with lower $|\mathrm{PED}|$ pays higher price.
 <details>
 <summary>Example: Third-Degree Price Discrimination</summary>
 A cinema charges £12 for adults and £6 for students. Adult demand: $P_A = 20 - Q_A$Student demand:
-$P_S = 14 - Q_S$$MC = 2$.
+$P_S = 14 - Q_S$, $MC = 2$.
 
-Adult MR: $MR_A = 20 - 2Q_A$. Set $MR_A = MC$: $20 - 2Q_A = 2 \Rightarrow Q_A = 9$$P_A = 11$.
-Student MR: $MR_S = 14 - 2Q_S$. Set $MR_S = MC$: $14 - 2Q_S = 2 \Rightarrow Q_S = 6$$P_S = 8$.
+Adult MR: $MR_A = 20 - 2Q_A$. Set $MR_A = MC$: $20 - 2Q_A = 2 \Rightarrow Q_A = 9$, $P_A = 11$.
+Student MR: $MR_S = 14 - 2Q_S$. Set $MR_S = MC$: $14 - 2Q_S = 2 \Rightarrow Q_S = 6$, $P_S = 8$.
 
 Without discrimination (single price, aggregate demand): total demand
 $Q = Q_A + Q_S = (20 - P) + (14 - P) = 34 - 2P$So $P = 17 - Q/2$. $MR = 17 - Q$. Set
-$MR = 2 \Rightarrow Q = 15$$P = 9.50$.
+$MR = 2 \Rightarrow Q = 15$, $P = 9.50$.
 
 With discrimination: revenue = $11 \times 9 + 8 \times 6 = 99 + 48 = 147$. Without:
 $9.50 \times 15 = 142.50$. Discrimination increases profit.

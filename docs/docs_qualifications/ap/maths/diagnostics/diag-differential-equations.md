@@ -64,7 +64,7 @@ solution, and non-uniqueness can arise.
 **Question:**
 
 Use Euler's method with step size $\Delta x = 0.5$ to approximate $y(2)$ for the initial value
-problem $\dfrac{dy}{dx} = x + y$$y(0) = 1$. Then use $\Delta x = 0.25$ and compare. The exact
+problem $\dfrac{dy}{dx} = x + y$, $y(0) = 1$. Then use $\Delta x = 0.25$ and compare. The exact
 solution is $y = 2e^x - x - 1$.
 
 (a) Compute both approximations. (b) Compute the exact error for each. (c) Halving the step size
@@ -174,7 +174,7 @@ The population reaches $90\%$ of carrying capacity at approximately $t \approx 8
 **Question:**
 
 A slope field for $\dfrac{dy}{dx} = \dfrac{x}{y}$ is drawn in the region
-$-3 \leq x \leq 3$$-3 \leq y \leq 3$.
+$-3 \leq x \leq 3$, $-3 \leq y \leq 3$.
 
 (a) Sketch the solution curve passing through $(1, 2)$. (b) A student claims that no solution curve
 can cross the $x$-axis. Justify this claim using the existence and uniqueness theorem. (c) The
@@ -277,7 +277,7 @@ as $t \to \infty$?
 
 **Solution:**
 
-(a) Equilibrium solutions: $y = 0$$y = 2$$y = -1$.
+(a) Equilibrium solutions: $y = 0$, $y = 2$, $y = -1$.
 
 Let $f(y) = y(y-2)^2(y+1)$. Test the sign of $f(y)$ in each region:
 

@@ -32,7 +32,7 @@ minimises electron-electron repulsion. In Cr, promoting one $4s$ electron to $3d
 
 ### UT-2: Quantum Numbers and Orbital Maximums
 
-**Question:** State the four quantum numbers ($n$$\ell$$m_\ell$$m_s$) for each electron in a $2p^4$
+**Question:** State the four quantum numbers ($n$, $\ell$$m_\ell$$m_s$) for each electron in a $2p^4$
 configuration. How many electrons maximum can occupy the $n = 3$ shell, and why?
 
 **Solution:** The $2p$ subshell has

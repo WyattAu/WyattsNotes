@@ -19,7 +19,7 @@ $\text{H}_2\text{O}_2$.
 
 **Solution:**
 
-(a) $\text{KMnO}_4$: K = $+1$ (group 1), O = $-2$ (). Let Mn = $x$: $+1 + x + 4(-2) = 0$$x = +7$. Mn
+(a) $\text{KMnO}_4$: K = $+1$ (group 1), O = $-2$ (). Let Mn = $x$: $+1 + x + 4(-2) = 0$, $x = +7$. Mn
 is $+7$.
 
 (b) $\text{K}_2\text{Cr}_2\text{O}_7$: K = $+1$O = $-2$.
@@ -200,6 +200,6 @@ destructive.
 The periodic trend explanation: Al is in period 3 with a small ionic radius
 ($\text{Al}^{3+} = 53.5\ \text{pm}$) and high charge density. The $\text{Al}^{3+}$ ion polarises the
 $\text{O}^{2-}$ ions strongly, forming a tightly bonded, compact oxide lattice. Fe is in period 4
-with a larger ionic radius ($\text{Fe}^{2+} = 78\ \text{pm}$$\text{Fe}^{3+} = 64.5\ \text{pm}$) and
+with a larger ionic radius ($\text{Fe}^{2+} = 78\ \text{pm}$, $\text{Fe}^{3+} = 64.5\ \text{pm}$) and
 the oxide lattice has more defects and is less uniformly bonded, allowing water incorporation and
 porosity.

@@ -783,10 +783,10 @@ $$
 3\sin\theta = n \times 0.5
 $$
 
-For $n = 1$: $\sin\theta = 1/6$$\theta = 9.6\degree$. Distance from centre:
+For $n = 1$: $\sin\theta = 1/6$, $\theta = 9.6\degree$. Distance from centre:
 $4\tan 9.6\degree = 0.68\mathrm{ m}$.
 
-For $n = 2$: $\sin\theta = 1/3$$\theta = 19.5\degree$. Distance from centre:
+For $n = 2$: $\sin\theta = 1/3$, $\theta = 19.5\degree$. Distance from centre:
 $4\tan 19.5\degree = 1.41\mathrm{ m}$.
 
 ### Question 8 (Paper 1 style)

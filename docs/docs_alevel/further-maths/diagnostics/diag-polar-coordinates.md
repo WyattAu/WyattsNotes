@@ -20,7 +20,7 @@ $0 \le \theta \le 2\pi$.
 
 **Solution:**
 
-(a) $x = r\cos\theta$$y = r\sin\theta$. $r^2\cos^2\theta + r^2\sin^2\theta = 4$. $r^2 = 4$. $r = 2$
+(a) $x = r\cos\theta$, $y = r\sin\theta$. $r^2\cos^2\theta + r^2\sin^2\theta = 4$. $r^2 = 4$. $r = 2$
 (circle centred at origin, radius 2).
 
 (b)

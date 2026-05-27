@@ -633,7 +633,7 @@ $\blacksquare$
 ### 4.4 Proof of the Generalised Uncertainty Principle
 
 **Theorem 4.5 (Robertson-Schrodinger inequality).** For any state $|\psi\rangle$ and observables
-$\hat◆LB◆A◆RB◆$$\hat◆LB◆B◆RB◆$:
+$\hat◆LB◆A◆RB◆$, $\hat◆LB◆B◆RB◆$:
 
 $$\sigma_A^2\,\sigma_B^2 \geq \frac◆LB◆1◆RB◆◆LB◆4◆RB◆|\langle[\hat◆LB◆A◆RB◆, \hat◆LB◆B◆RB◆]\rangle|^2 + \frac◆LB◆1◆RB◆◆LB◆4◆RB◆\langle\{\Delta\hat◆LB◆A◆RB◆, \Delta\hat◆LB◆B◆RB◆\}\rangle^2$$
 
@@ -1260,7 +1260,7 @@ radius.
 
 #### 6.5.3 Expectation Values for the Ground State
 
-**Example 6.1.** Calculate $\langle r \rangle$$\langle r^2 \rangle$And $\langle 1/r \rangle$ for the
+**Example 6.1.** Calculate $\langle r \rangle$, $\langle r^2 \rangle$And $\langle 1/r \rangle$ for the
 Hydrogen ground state.
 
 <details>
@@ -1379,8 +1379,8 @@ $$\sigma_x = \begin◆LB◆pmatrix◆RB◆ 0 & 1 \\ 1 & 0 \end◆LB◆pmatrix◆
 $$\sigma_x\sigma_y - \sigma_y\sigma_x = 2i\sigma_z$$
 
 Writing $\sigma_y = \begin◆LB◆pmatrix◆RB◆ c & d \\ d^* & -c \end◆LB◆pmatrix◆RB◆$ and imposing
-$\sigma_y^2 = I$$\sigma_y^\dagger = \sigma_y$ And the commutation relation, we find
-$c = 0$$|d| = 1$And the commutator gives $d - d^* = 2i$ So $d = i$:
+$\sigma_y^2 = I$, $\sigma_y^\dagger = \sigma_y$ And the commutation relation, we find
+$c = 0$, $|d| = 1$And the commutator gives $d - d^* = 2i$ So $d = i$:
 
 $$\sigma_y = \begin◆LB◆pmatrix◆RB◆ 0 & -i \\ i & 0 \end◆LB◆pmatrix◆RB◆$$
 
@@ -2325,7 +2325,7 @@ As $|E| \to 0$: $\kappa' \to 0$So $\kappa\cot(\kappa a) \to 0$Giving $\kappa a =
 threshold for the first bound state).
 
 (c) The scattering length $a_s = -\lim_◆LB◆k \to 0◆RB◆(\delta_0/k)$. As
-$\kappa a \to \pi/2$$\tan(\kappa a) \to \infty$So:
+$\kappa a \to \pi/2$, $\tan(\kappa a) \to \infty$So:
 
 $$\delta_0 \approx -ka + \arctan(\infty) = -ka + \pi/2$$
 

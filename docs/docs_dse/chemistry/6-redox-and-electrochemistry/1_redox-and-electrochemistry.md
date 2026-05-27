@@ -286,7 +286,7 @@ Discharged. The product at each electrode depends on the relative reactivity of 
 
 - If the anion is a halide ($\mathrm{Cl^-}$$\mathrm{Br^-}$$\mathrm{I^-}$): the halogen is produced.
   $$2\mathrm{Cl^-} \to \mathrm{Cl_2} + 2e^-$$
-- If the anion is anything else ($\mathrm{SO_4^{2-}}$$\mathrm{NO_3^-}$): oxygen gas is produced.
+- If the anion is anything else ($\mathrm{SO_4^{2-}}$, $\mathrm{NO_3^-}$): oxygen gas is produced.
   $$4\mathrm{OH^-} \to \mathrm{O_2} + 2\mathrm{H_2O} + 4e^-$$ (or equivalently:
   $2\mathrm{H_2O} \to \mathrm{O_2} + 4\mathrm{H^+} + 4e^-$)
 
@@ -365,7 +365,7 @@ At the cathode: $\mathrm{Ag^+} + e^- \to \mathrm{Ag}$ (silver deposits on the ob
   cell, the anode is positive; in a galvanic cell, the anode is negative (electrons flow from anode
   to cathode).
 - Forgetting that $2 \times F$ electrons are needed to deposit 1 mole of a divalent metal (e.g.,
-  $\mathrm{Cu^{2+}}$$\mathrm{Zn^{2+}}$). Always check the ion's charge.
+  $\mathrm{Cu^{2+}}$, $\mathrm{Zn^{2+}}$). Always check the ion's charge.
 - Applying the wrong rule for discharge at the anode in aqueous electrolysis. Halides are discharged
   in preference to hydroxide; other anions result in oxygen production.
 - Assuming the most reactive metal is always deposited at the cathode. In aqueous solution, if the

@@ -23,7 +23,7 @@ $$F_D = k \, r^n \, v^m \, \rho^p \, \eta^q$$
 Where $k$ is a dimensionless constant.
 
 Given that dynamic viscosity $\eta$ has dimensions $\text{M}\text{L}^{-1}\text{T}^{-1}$Use
-dimensional analysis to find the values of $n$$m$$p$And $q$ such that the equation is dimensionally
+dimensional analysis to find the values of $n$, $m$, $p$And $q$ such that the equation is dimensionally
 consistent. Express the resulting formula with $n$ as the subject.
 
 **Solution:**
@@ -222,7 +222,7 @@ rest through a light gate at a measured distance $d$ below the release point. Th
 the speed $v$ of the ball as it passes through. The relationship is $v^2 = 2gd$So $g = v^2/(2d)$.
 
 The student records:
-$d = (1.500 \pm 0.003)\,\text{m}$$v = (5.40 \pm 0.05)\,\text{m}\,\text{s}^{-1}$.
+$d = (1.500 \pm 0.003)\,\text{m}$, $v = (5.40 \pm 0.05)\,\text{m}\,\text{s}^{-1}$.
 
 (a) Calculate $g$ and its absolute uncertainty.
 

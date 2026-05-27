@@ -1125,7 +1125,7 @@ immediately.
 
 _Proof (wait-die)._ A cycle in the wait-for graph would require
 $T_1 \to T_2 \to \cdots \to T_k \to T_1$ where each arrow means "waiting for." In wait-die, a
-process only waits for older processes. So $T_1$ is older than $T_2$$T_2$ is older than $T_3$...,
+process only waits for older processes. So $T_1$ is older than $T_2$, $T_2$ is older than $T_3$...,
 $T_k$ is older than $T_1$. This is a contradiction ($T_1 > T_2 > \cdots > T_k > T_1$). Therefore no
 cycle exists. Starvation-freedom: a process only dies (aborts) if it is younger than the holder.
 After restarting, it retains its original timestamp, so it becomes "older" relative to new

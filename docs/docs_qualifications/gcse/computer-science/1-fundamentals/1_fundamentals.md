@@ -665,7 +665,7 @@ Binary multiplication is performed using long multiplication, similar to denary.
 
 **Worked Example.** Calculate $6 \times 3$ in binary.
 
-$6 = 0110$$3 = 0011$.
+$6 = 0110$, $3 = 0011$.
 
 ```
       0110

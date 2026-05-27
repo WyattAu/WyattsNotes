@@ -1347,7 +1347,7 @@ Outcomes relative to reference point (60):
 - Gain of 10 with probability 0.70
 - Loss of 20 with probability 0.30
 
-Probability weights: $\pi(0.70) = 0.70^{0.65} = 0.792$$\pi(0.30) = 0.30^{0.65} = 0.415$
+Probability weights: $\pi(0.70) = 0.70^{0.65} = 0.792$, $\pi(0.30) = 0.30^{0.65} = 0.415$
 
 Prospect theory value:
 
@@ -1368,7 +1368,7 @@ Outcomes relative to reference point (60):
 - Gain of 20 with probability 0.50
 - Loss of 30 with probability 0.50
 
-$\pi(0.50) = 0.50^{0.65} = 0.637$$\pi(0.50) = 0.637$ (same)
+$\pi(0.50) = 0.50^{0.65} = 0.637$, $\pi(0.50) = 0.637$ (same)
 
 $v(20) = 20^{0.88} = 15.60$
 
@@ -1450,7 +1450,7 @@ Payoff matrix:
 | Cooperate | (3, 3)    | (0, 5) |
 | Defect    | (5, 0)    | (1, 1) |
 
-$g = 3 - 1 = 2$$t = 5$$p = 1$.
+$g = 3 - 1 = 2$, $t = 5$, $p = 1$.
 
 $\delta \geq (5 - 3)/(5 - 1) = 2/4 = 0.5$
 
@@ -1780,7 +1780,7 @@ Replicator dynamics:
 
 $$\frac{dx}{dt} = x(3x - 1 - 3x + x^2) = x(x^2 - 1) = x(x-1)(x+1)$$
 
-Since $x \in [0, 1]$$\frac{dx}{dt} < 0$ for all $x \in (0, 1)$. Cooperators always decline.
+Since $x \in [0, 1]$, $\frac{dx}{dt} < 0$ for all $x \in (0, 1)$. Cooperators always decline.
 
 Defect is the unique ESS. This shows that in a well-mixed population, cooperation cannot Survive in
 a one-shot prisoner's dilemma.
@@ -1832,7 +1832,7 @@ $p(V + C)/2 = V - V/2 = V/2$
 
 $p = V/(V + C)$
 
-**Numerical example:** $V = 4$$C = 6$.
+**Numerical example:** $V = 4$, $C = 6$.
 
 $p = 4/(4+6) = 0.4$.
 
@@ -1989,11 +1989,11 @@ exponential discount factor.
 
 **Numerical example:**
 
-An individual with $\beta = 0.7$$\delta = 0.95$ chooses between:
+An individual with $\beta = 0.7$, $\delta = 0.95$ chooses between:
 
 Option A: receive USD 100 today Option B: receive USD 110 in one week
 
-From today's perspective: $U(A) = 100$$U(B) = 0.7 \times 0.95 \times 110 = 73.15$.
+From today's perspective: $U(A) = 100$, $U(B) = 0.7 \times 0.95 \times 110 = 73.15$.
 
 The individual chooses A (immediate gratification).
 
@@ -2134,7 +2134,7 @@ The **Nash bargaining solution** maximises the product of the players' gains ove
 
 $$\max_{(u_1, u_2)} (u_1 - d_1)(u_2 - d_2)$$
 
-Subject to $u_1 \geq d_1$$u_2 \geq d_2$And $(u_1, u_2)$ being feasible.
+Subject to $u_1 \geq d_1$, $u_2 \geq d_2$And $(u_1, u_2)$ being feasible.
 
 Where $d_1$ and $d_2$ are the payoffs each player receives if negotiations break down (the threat
 point or disagreement point).
@@ -2401,7 +2401,7 @@ than advantageous inequality.
 
 **Numerical example:**
 
-Two players, A and B. $\alpha = 0.5$$\beta = 0.3$.
+Two players, A and B. $\alpha = 0.5$, $\beta = 0.3$.
 
 Allocation: A gets 10, B gets 5.
 

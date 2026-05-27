@@ -196,7 +196,7 @@ $n$.
 
 _Proof._ The sum
 $\sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ \omega^k = \frac◆LB◆1 - \omega^n◆RB◆◆LB◆1 - \omega◆RB◆ = \frac◆LB◆1 - 1◆RB◆◆LB◆1 - \omega◆RB◆ = 0$
-Provided $\omega \neq 1$. For $j$ not divisible by $n$$\omega^j$ is a non-trivial root of unity, So
+Provided $\omega \neq 1$. For $j$ not divisible by $n$, $\omega^j$ is a non-trivial root of unity, So
 the same argument applies. $\blacksquare$
 
 <details>
@@ -376,7 +376,7 @@ $z = x + iy$Then
 
 $$\frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ = \frac◆LB◆\partial v◆RB◆◆LB◆\partial y◆RB◆, \quad \frac◆LB◆\partial u◆RB◆◆LB◆\partial y◆RB◆ = -\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆$$
 
-_Proof._ Compute the limit along the real axis ($h \in \mathbb◆LB◆R◆RB◆$$h \to 0$):
+_Proof._ Compute the limit along the real axis ($h \in \mathbb◆LB◆R◆RB◆$, $h \to 0$):
 
 $$f'(z) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆u(x+h, y) - u(x, y)◆RB◆◆LB◆h◆RB◆ + i\lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆v(x+h, y) - v(x, y)◆RB◆◆LB◆h◆RB◆ = \frac◆LB◆\partial u◆RB◆◆LB◆\partial x◆RB◆ + i\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆$$
 
@@ -392,7 +392,7 @@ And $\frac◆LB◆\partial v◆RB◆◆LB◆\partial x◆RB◆ = -\frac◆LB◆\
 **Theorem 3.2.** If $u$ and $v$ have continuous first partial derivatives on an open set $U$ and
 Satisfy the Cauchy-Riemann equations on $U$Then $f = u + iv$ is analytic on $U$.
 
-_Proof._ Since $u_x, u_y, v_x, v_y$ are continuous on $U$$u$ and $v$ are (real) differentiable. Let
+_Proof._ Since $u_x, u_y, v_x, v_y$ are continuous on $U$, $u$ and $v$ are (real) differentiable. Let
 $\Delta z = \Delta x + i\Delta y$. By real differentiability:
 
 $u(x + \Delta x, y + \Delta y) - u(x, y) = u_x\,\Delta x + u_y\,\Delta y + \varepsilon_1$
@@ -441,7 +441,7 @@ CR equations. $\blacksquare$
 
 **Problem.** Find the harmonic conjugate of $u(x, y) = x^3 - 3xy^2$.
 
-Verify $u$ is harmonic: $u_◆LB◆xx◆RB◆ = 6x$$u_◆LB◆yy◆RB◆ = -6x$So $u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = 0$. $\checkmark$
+Verify $u$ is harmonic: $u_◆LB◆xx◆RB◆ = 6x$, $u_◆LB◆yy◆RB◆ = -6x$So $u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = 0$. $\checkmark$
 
 By CR: $v_y = u_x = 3x^2 - 3y^2$So $v = 3x^2 y - y^3 + g(x)$. Also $v_x = -u_y = 6xy$So
 $6xy = 6xy + g'(x)$Giving $g'(x) = 0$So $g(x) = C$.
@@ -453,8 +453,8 @@ _Note:_ $f(z) = u + iv = x^3 - 3xy^2 + i(3x^2 y - y^3) = (x + iy)^3 = z^3$.
 **Problem.** Show that $u(x, y) = \ln(x^2 + y^2)$ is harmonic on $\mathbb◆LB◆R◆RB◆^2 \setminus \{0\}$ but
 Has no harmonic conjugate on $\mathbb◆LB◆R◆RB◆^2 \setminus \{0\}$.
 
-$u_x = \frac◆LB◆2x◆RB◆◆LB◆x^2 + y^2◆RB◆$$u_◆LB◆xx◆RB◆ = \frac◆LB◆2(y^2 - x^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$.
-$u_y = \frac◆LB◆2y◆RB◆◆LB◆x^2 + y^2◆RB◆$$u_◆LB◆yy◆RB◆ = \frac◆LB◆2(x^2 - y^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. $\Delta u = 0$.
+$u_x = \frac◆LB◆2x◆RB◆◆LB◆x^2 + y^2◆RB◆$, $u_◆LB◆xx◆RB◆ = \frac◆LB◆2(y^2 - x^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$.
+$u_y = \frac◆LB◆2y◆RB◆◆LB◆x^2 + y^2◆RB◆$, $u_◆LB◆yy◆RB◆ = \frac◆LB◆2(x^2 - y^2)◆RB◆◆LB◆(x^2 + y^2)^2◆RB◆$. $\Delta u = 0$.
 $\checkmark$
 
 However,
@@ -822,7 +822,7 @@ _Proof._ $1/f$ is entire and bounded by $1/M$So constant by Liouville. $\blacksq
 $p(z) \in \mathbb◆LB◆C◆RB◆[z]$ has a root in $\mathbb◆LB◆C◆RB◆$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
-$|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
+$|z| \to \infty$, $f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
 constant, a contradiction. $\blacksquare$
 
 **Corollary 6.8.** Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb◆LB◆C◆RB◆$
@@ -847,7 +847,7 @@ By Cauchy's formula for derivatives with $f(z) = z^2 + 1$ and $z_0 = i$:
 
 $\int_\gamma \frac◆LB◆f(z)◆RB◆◆LB◆(z - i)^3◆RB◆\, dz = \frac◆LB◆2\pi i◆RB◆◆LB◆2!◆RB◆\,f''(i)$.
 
-$f'(z) = 2z$$f''(z) = 2$. So $f''(i) = 2$.
+$f'(z) = 2z$, $f''(z) = 2$. So $f''(i) = 2$.
 
 $\int_\gamma \frac◆LB◆z^2 + 1◆RB◆◆LB◆(z - i)^3◆RB◆\, dz = \frac◆LB◆2\pi i◆RB◆◆LB◆2◆RB◆ \cdot 2 = 2\pi i$. $\blacksquare$
 
@@ -1196,7 +1196,7 @@ $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆dx◆RB◆◆L
 ### 9.4 Integrals Involving Trigonometric Functions
 
 For integrals of the form $\int_0^◆LB◆2\pi◆RB◆ R(\cos\theta, \sin\theta)\, d\theta$Substitute
-$z = e^◆LB◆i\theta◆RB◆$So $dz = iz\, d\theta$$\cos\theta = \frac◆LB◆z + z^◆LB◆-1◆RB◆◆RB◆◆LB◆2◆RB◆$
+$z = e^◆LB◆i\theta◆RB◆$So $dz = iz\, d\theta$, $\cos\theta = \frac◆LB◆z + z^◆LB◆-1◆RB◆◆RB◆◆LB◆2◆RB◆$
 $\sin\theta = \frac◆LB◆z - z^◆LB◆-1◆RB◆◆RB◆◆LB◆2i◆RB◆$.
 
 The integral becomes $\int_◆LB◆|z|=1◆RB◆ f(z)\, dz$ where $f(z)$ is a rational function.
@@ -1227,7 +1227,7 @@ Half-plane and $a \gt 0$Then
 
 $$\lim_◆LB◆R \to \infty◆RB◆ \int_◆LB◆C_R◆RB◆ e^◆LB◆iaz◆RB◆f(z)\, dz = 0$$
 
-Where $C_R$ is the upper semicircle $|z| = R$$\mathrm◆LB◆Im(z) \geq 0$.
+Where $C_R$ is the upper semicircle $|z| = R$, $\mathrm◆LB◆Im(z) \geq 0$.
 
 This allows evaluation of integrals of the form $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\cos(ax)\, dx$ and
 $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f(x)\sin(ax)\, dx$.
@@ -1261,7 +1261,7 @@ Taking imaginary parts: $\int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ \fr
 
 **Problem.** Evaluate $\int_0^◆LB◆2\pi◆RB◆ \frac◆LB◆\cos 2\theta◆RB◆◆LB◆5 + 4\cos\theta◆RB◆\, d\theta$.
 
-Substitute $z = e^◆LB◆i\theta◆RB◆$: $\cos\theta = (z + z^◆LB◆-1◆RB◆)/2$$\cos 2\theta = (z^2 + z^◆LB◆-2◆RB◆)/2$.
+Substitute $z = e^◆LB◆i\theta◆RB◆$: $\cos\theta = (z + z^◆LB◆-1◆RB◆)/2$, $\cos 2\theta = (z^2 + z^◆LB◆-2◆RB◆)/2$.
 
 $I = \frac◆LB◆1◆RB◆◆LB◆2i◆RB◆\int_◆LB◆|z|=1◆RB◆ \frac◆LB◆z^4 + 1◆RB◆◆LB◆z^2(2z + 1)(z + 2)◆RB◆\, dz$.
 
@@ -1338,7 +1338,7 @@ $$T(z) = \frac◆LB◆az + b◆RB◆◆LB◆cz + d◆RB◆, \quad ad - bc \neq 0
 To circles and lines.
 
 **Proposition 10.2.** Three points determine a unique Möbius transformation: $T(z_1) = w_1$
-$T(z_2) = w_2$$T(z_3) = w_3$.
+$T(z_2) = w_2$, $T(z_3) = w_3$.
 
 ### 10.5 Cross-Ratio
 
@@ -1349,7 +1349,7 @@ $$(z_1, z_2, z_3, z_4) = \frac◆LB◆(z_1 - z_3)(z_2 - z_4)◆RB◆◆LB◆(z_1
 **Proposition 10.3.** The cross-ratio is invariant under Möbius transformations:
 $(Tz_1, Tz_2, Tz_3, Tz_4) = (z_1, z_2, z_3, z_4)$.
 
-**Proposition 10.4.** The unique Möbius transformation sending $z_1 \mapsto 0$$z_2 \mapsto 1$
+**Proposition 10.4.** The unique Möbius transformation sending $z_1 \mapsto 0$, $z_2 \mapsto 1$
 $z_3 \mapsto \infty$ is
 
 $$T(z) = \frac◆LB◆(z - z_1)(z_2 - z_3)◆RB◆◆LB◆(z - z_3)(z_2 - z_1)◆RB◆$$
@@ -1361,7 +1361,7 @@ of $T(z) = z$).
 
 1. **Parabolic:** Exactly one fixed point. Conjugate to $w = z + k$.
 2. **Elliptic:** Two fixed points, $|T'(z_0)| = 1$. Conjugate to a rotation $w = e^◆LB◆i\theta◆RB◆ z$.
-3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb◆LB◆R◆RB◆^+$$T'(z_0) \neq 1$. Conjugate to
+3. **Hyperbolic:** Two fixed points, $T'(z_0) \in \mathbb◆LB◆R◆RB◆^+$, $T'(z_0) \neq 1$. Conjugate to
    $w = kz$.
 4. **Loxodromic:** Two fixed points, $T'(z_0) \notin \mathbb◆LB◆R◆RB◆ \cup \{z : |z| = 1\}$. Conjugate to
    $w = ke^◆LB◆i\theta◆RB◆z$.

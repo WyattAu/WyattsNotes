@@ -138,9 +138,9 @@ $$Q = 100 - 2(16) = 100 - 32 = 68$$
 
 ### Disequilibrium
 
-**Surplus (excess supply):** When $P \gt P_e$$Q_S \gt Q_D$. Price tends to fall.
+**Surplus (excess supply):** When $P \gt P_e$, $Q_S \gt Q_D$. Price tends to fall.
 
-**Shortage (excess demand):** When $P \lt P_e$$Q_D \gt Q_S$. Price tends to rise.
+**Shortage (excess demand):** When $P \lt P_e$, $Q_D \gt Q_S$. Price tends to rise.
 
 ### Changes in Equilibrium
 
@@ -504,7 +504,7 @@ $300 - 5P = 2P - 60$
 
 $360 = 7P$
 
-$P = 51.43$$Q = 300 - 5(51.43) = 42.86$
+$P = 51.43$, $Q = 300 - 5(51.43) = 42.86$
 
 **Question 2:** A 20% increase in the price of good `A` causes a 10% decrease in the quantity
 Demanded of good `B`. What is the relationship between the goods?

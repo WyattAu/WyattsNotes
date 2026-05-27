@@ -45,7 +45,7 @@ Find the sum of the first 10 terms and the sum to infinity of the series $3 + 1.
 <details>
 <summary>Solution</summary>
 
-- **Identify:** $u_1 = 3$$r = 1.5/3 = 0.5$. Since $|r| \lt 1$The sum to infinity converges.
+- **Identify:** $u_1 = 3$, $r = 1.5/3 = 0.5$. Since $|r| \lt 1$The sum to infinity converges.
 - **Sum of first 10 terms:**
   $S_{10} = \dfrac{u_1(1 - r^{10})}{1 - r} = \dfrac{3(1 - 0.5^{10})}{1 - 0.5} = \dfrac{3(1 - 0.000977)}{0.5} = 5.994$
 - **Sum to infinity:** $S_\infty = \dfrac{u_1}{1 - r} = \dfrac{3}{0.5} = 6$
@@ -164,7 +164,7 @@ Identities, and an introduction to vector geometry.
 
 ### Worked Example: Sine and Cosine Rules (SL)
 
-In triangle $ABC$$a = 8$ cm, $b = 5$ cm, and $A = 60$ degrees. Find angle $B$.
+In triangle $ABC$, $a = 8$ cm, $b = 5$ cm, and $A = 60$ degrees. Find angle $B$.
 
 <details>
 <summary>Solution</summary>
@@ -205,7 +205,7 @@ $\mathbf{b} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix}$.
 
 - **Dot product:** $\mathbf{a} \cdot \mathbf{b} = (2)(4) + (3)(-1) + (-1)(2) = 8 - 3 - 2 = 3$
 - **Magnitudes:**
-  $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$$\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
+  $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$, $\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
 - **Angle:**
   $\cos \theta = \dfrac{\mathbf{a} \cdot \mathbf{b}}{\lvert \mathbf{a} \rvert \lvert \mathbf{b} \rvert} = \dfrac{3}{\sqrt{14} \cdot \sqrt{21}} = \dfrac{3}{\sqrt{294}} = \dfrac{3}{17.15} = 0.1749$
 - $\theta = \arccos(0.1749) = 79.9$ degrees
@@ -262,7 +262,7 @@ Chosen at random. Given that they play basketball, find the probability they als
 <summary>Solution</summary>
 
 - **Define:** $F$ = plays football, $B$ = plays basketball.
-- $P(F \cap B) = 10/40 = 0.25$$P(B) = 18/40 = 0.45$
+- $P(F \cap B) = 10/40 = 0.25$, $P(B) = 18/40 = 0.45$
 - **Conditional probability:**
   $P(F \mid B) = \dfrac{P(F \cap B)}{P(B)} = \dfrac{0.25}{0.45} = \dfrac{5}{9}$
 

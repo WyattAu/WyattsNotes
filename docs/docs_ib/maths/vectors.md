@@ -168,7 +168,7 @@ In component form:
 
 $$\begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} + \lambda\begin{pmatrix} d_1 \\ d_2 \\ d_3 \end{pmatrix}$$
 
-This gives parametric equations: $x = a_1 + \lambda d_1$$y = a_2 + \lambda d_2$
+This gives parametric equations: $x = a_1 + \lambda d_1$, $y = a_2 + \lambda d_2$
 $z = a_3 + \lambda d_3$.
 
 ### Cartesian (Symmetric) Form
@@ -320,7 +320,7 @@ Find the vector equation of the line through $A(1, -2, 3)$ and $B(4, 1, -1)$.
 <details>
 <summary>Problem 3</summary>
 
-Find the Cartesian equation of the plane through $(1, 0, 2)$$(3, -1, 1)$And $(2, 1, -1)$.
+Find the Cartesian equation of the plane through $(1, 0, 2)$, $(3, -1, 1)$And $(2, 1, -1)$.
 
 </details>
 
@@ -547,7 +547,7 @@ $\mathbf{b}$ perpendicular to $\mathbf{a}$.
 <summary>Problem 10</summary>
 
 Find the volume of the parallelepiped with edges $\overrightarrow{OA} = (1, 2, 3)$
-$\overrightarrow{OB} = (4, -1, 0)$$\overrightarrow{OC} = (2, 1, -2)$.
+$\overrightarrow{OB} = (4, -1, 0)$, $\overrightarrow{OC} = (2, 1, -2)$.
 
 </details>
 

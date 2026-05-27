@@ -75,7 +75,7 @@ Masses:
 $3.0 \times 10^7\,\text{J}$).
 
 Take
-$1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$$1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
+$1\,\text{u} = 931.5\,\text{MeV}/c^2 = 1.661 \times 10^{-27}\,\text{kg}$, $1\,\text{MeV} = 1.60 \times 10^{-13}\,\text{J}$.
 
 **Solution:**
 

@@ -14,7 +14,7 @@ hide_table_of_contents: true
 ### UT-1: Scalar and Vector Products
 
 **Question:**
-$\mathbf{a} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$$\mathbf{b} = \begin{pmatrix} 1 \\ 3 \\ 2 \end{pmatrix}$.
+$\mathbf{a} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 1 \\ 3 \\ 2 \end{pmatrix}$.
 (a) Calculate $\mathbf{a} \cdot \mathbf{b}$. (b) Calculate $\mathbf{a} \times \mathbf{b}$. (c) Find
 the angle between $\mathbf{a}$ and $\mathbf{b}$. (d) Verify that $\mathbf{a} \times \mathbf{b}$ is
 perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
@@ -36,14 +36,14 @@ $\mathbf{b} \cdot (\mathbf{a} \times \mathbf{b}) = 1(5) + 3(-5) + 2(5) = 5 - 15 
 
 ### UT-2: Equation of a Plane
 
-**Question:** A plane passes through points $A(1, 0, 2)$$B(3, 1, -1)$And $C(0, 2, 1)$. (a) Find the
+**Question:** A plane passes through points $A(1, 0, 2)$, $B(3, 1, -1)$And $C(0, 2, 1)$. (a) Find the
 normal vector to the plane. (b) Find the Cartesian equation of the plane. (c) Find the distance from
 the origin to the plane. (d) Determine whether the point $D(1, 1, 1)$ lies on the plane.
 
 **Solution:**
 
 (a)
-$\overrightarrow{AB} = \begin{pmatrix} 2 \\ 1 \\ -3 \end{pmatrix}$$\overrightarrow{AC} = \begin{pmatrix} -1 \\ 2 \\ -1 \end{pmatrix}$.
+$\overrightarrow{AB} = \begin{pmatrix} 2 \\ 1 \\ -3 \end{pmatrix}$, $\overrightarrow{AC} = \begin{pmatrix} -1 \\ 2 \\ -1 \end{pmatrix}$.
 $\mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} 1(-1) - (-3)(2) \\ (-3)(-1) - 2(-1) \\ 2(2) - 1(-1) \end{pmatrix} = \begin{pmatrix} 5 \\ 5 \\ 5 \end{pmatrix}$.
 
 (b) Using $A(1,0,2)$: $5(x-1) + 5(y-0) + 5(z-2) = 0$. Simplifying: $x + y + z = 3$.

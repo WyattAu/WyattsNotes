@@ -77,13 +77,13 @@ $$\int x^2 e^x\,dx = x^2 e^x - 2(xe^x - e^x) + C = e^x(x^2 - 2x + 2) + C$$
 
 **Example.** Find $\displaystyle\int e^{ax}\cos bx\,dx$.
 
-Let $I = \int e^{ax}\cos bx\,dx$. First application: $u = e^{ax}$$dv = \cos bx\,dx$.
+Let $I = \int e^{ax}\cos bx\,dx$. First application: $u = e^{ax}$, $dv = \cos bx\,dx$.
 
 $$du = ae^{ax}\,dx, \quad v = \frac{1}{b}\sin bx$$
 
 $$I = \frac◆LB◆e^{ax}\sin bx◆RB◆◆LB◆b◆RB◆ - \frac{a}{b}\int e^{ax}\sin bx\,dx$$
 
-Second application on $\int e^{ax}\sin bx\,dx$: $u = e^{ax}$$dv = \sin bx\,dx$.
+Second application on $\int e^{ax}\sin bx\,dx$: $u = e^{ax}$, $dv = \sin bx\,dx$.
 
 $$du = ae^{ax}\,dx, \quad v = -\frac{1}{b}\cos bx$$
 
@@ -111,7 +111,7 @@ $I_{n-1}$ or $I_{n-2}$.
 
 Write $I_n = \int_0^{\pi/2}\sin^{n-1}x \cdot \sin x\,dx$.
 
-Let $u = \sin^{n-1}x$$dv = \sin x\,dx$. Then:
+Let $u = \sin^{n-1}x$, $dv = \sin x\,dx$. Then:
 
 $$du = (n-1)\sin^{n-2}x\cos x\,dx, \quad v = -\cos x$$
 
@@ -306,7 +306,7 @@ $$\boxed{V = \pi\int_c^d x^2\,dy = \pi\int_c^d [g(y)]^2\,dy}$$
 
 ### 5.3 Parametric curves
 
-When a curve is given parametrically by $x = x(t)$$y = y(t)$:
+When a curve is given parametrically by $x = x(t)$, $y = y(t)$:
 
 - Rotation about the $x$-axis: $V = \pi\displaystyle\int_{t_1}^{t_2} y^2\,\frac{dx}{dt}\,dt$
 - Rotation about the $y$-axis: $V = \pi\displaystyle\int_{t_1}^{t_2} x^2\,\frac{dy}{dt}\,dt$
@@ -319,7 +319,7 @@ About the $x$-axis.
 
 $$V = \pi\int_0^4 (\sqrt{x})^2\,dx = \pi\int_0^4 x\,dx = \pi\left[\frac{x^2}{2}\right]_0^4 = 8\pi$$
 
-**Example.** The curve $x = 2\cos t$$y = 2\sin t$ for $0 \leq t \leq \pi$ is rotated about the
+**Example.** The curve $x = 2\cos t$, $y = 2\sin t$ for $0 \leq t \leq \pi$ is rotated about the
 $x$-axis. Find the volume.
 
 $$V = \pi\int_0^{\pi} (2\sin t)^2 \cdot \frac{dx}{dt}\,dt = \pi\int_0^{\pi} 4\sin^2 t \cdot (-2\sin t)\,dt$$
@@ -340,7 +340,7 @@ $$= 8\pi\int_{-1}^{1}(1-u^2)\,du = 8\pi\left[u - \frac{u^3}{3}\right]_{-1}^1 = 8
 
 $$\boxed{s = \int_a^b \sqrt◆LB◆1 + \left(\frac{dy}{dx}\right)^2◆RB◆\,dx}$$
 
-For a curve given parametrically by $x = x(t)$$y = y(t)$ from $t = t_1$ to $t = t_2$:
+For a curve given parametrically by $x = x(t)$, $y = y(t)$ from $t = t_1$ to $t = t_2$:
 
 $$\boxed{s = \int_{t_1}^{t_2} \sqrt◆LB◆\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2◆RB◆\,dt}$$
 
@@ -375,8 +375,8 @@ $x$-axis.
 
 $$S = 2\pi\int_0^1 x^2\sqrt{1+4x^2}\,dx$$
 
-Let $x = \frac{1}{2}\tan\theta$$dx = \frac{1}{2}\sec^2\theta\,d\theta$. When $x = 0$ $\theta = 0$;
-when $x = 1$$\theta = \arctan 2$.
+Let $x = \frac{1}{2}\tan\theta$, $dx = \frac{1}{2}\sec^2\theta\,d\theta$. When $x = 0$ $\theta = 0$;
+when $x = 1$, $\theta = \arctan 2$.
 
 $$
 S = 2\pi\int_0^{\arctan 2}\frac◆LB◆\tan^2\theta◆RB◆◆LB◆4◆RB◆\cdot\sec\theta\cdot\frac{1}{2}\sec^2\theta\,d\theta
@@ -689,16 +689,16 @@ $$= \left[-\frac{2}{t+1}\right]_0^1 = -1 + 2 = \boxed{1}$$
 
 ### Example 8.5: Differentiation of parametric arc length
 
-**Problem.** A curve is given by $x = t - \sin t$$y = 1 - \cos t$ for $0 \leq t \leq 2\pi$. Find The
+**Problem.** A curve is given by $x = t - \sin t$, $y = 1 - \cos t$ for $0 \leq t \leq 2\pi$. Find The
 total arc length.
 
-**Solution.** $\dfrac{dx}{dt} = 1 - \cos t$$\dfrac{dy}{dt} = \sin t$.
+**Solution.** $\dfrac{dx}{dt} = 1 - \cos t$, $\dfrac{dy}{dt} = \sin t$.
 
 $$s = \int_0^{2\pi} \sqrt◆LB◆(1-\cos t)^2 + \sin^2 t◆RB◆\,dt = \int_0^{2\pi} \sqrt◆LB◆1 - 2\cos t + \cos^2 t + \sin^2 t◆RB◆\,dt$$
 
 $$= \int_0^{2\pi} \sqrt◆LB◆2 - 2\cos t◆RB◆\,dt = \int_0^{2\pi} \sqrt◆LB◆4\sin^2(t/2)◆RB◆\,dt = \int_0^{2\pi} 2|\sin(t/2)|\,dt$$
 
-For $0 \leq t \leq 2\pi$$\sin(t/2) \geq 0$So:
+For $0 \leq t \leq 2\pi$, $\sin(t/2) \geq 0$So:
 
 $$s = 2\int_0^{2\pi} \sin(t/2)\,dt = 2\left[-2\cos(t/2)\right]_0^{2\pi} = 2(2 + 2) = \boxed{8}$$
 
@@ -719,13 +719,13 @@ $\boxed{\displaystyle\lim_{x \to 0} \frac◆LB◆x - \sin x◆RB◆◆LB◆x^3�
 
 **Problem.** Evaluate $\displaystyle\int \arcsin x\,dx$.
 
-**Solution.** Use integration by parts with $u = \arcsin x$$dv = dx$:
+**Solution.** Use integration by parts with $u = \arcsin x$, $dv = dx$:
 
 $$du = \frac◆LB◆1◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆\,dx, \quad v = x$$
 
 $$\int \arcsin x\,dx = x\arcsin x - \int \frac◆LB◆x◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆\,dx$$
 
-For the second integral, let $w = 1 - x^2$$dw = -2x\,dx$:
+For the second integral, let $w = 1 - x^2$, $dw = -2x\,dx$:
 
 $$\int \frac◆LB◆x◆RB◆◆LB◆\sqrt{1-x^2}◆RB◆\,dx = -\sqrt{1-x^2}$$
 
@@ -754,7 +754,7 @@ Using the substitution $u = e^x$Find $\displaystyle\int \frac{e^x}{e^{2x} + 1}\,
 <details>
 <summary>Solution</summary>
 
-$u = e^x$$du = e^x\,dx$.
+$u = e^x$, $du = e^x\,dx$.
 
 $$\int \frac{du}{u^2 + 1} = \arctan u + C = \boxed{\arctan(e^x) + C}$$
 
@@ -779,7 +779,7 @@ $\boxed{I_3 = \dfrac{1}{2}(1 - \ln 2)}$
 
 ### Question 10
 
-Find the area enclosed by the curve $x = t^2$$y = t^3 - t$ for $-1 \leq t \leq 1$.
+Find the area enclosed by the curve $x = t^2$, $y = t^3 - t$ for $-1 \leq t \leq 1$.
 
 <details>
 <summary>Solution</summary>

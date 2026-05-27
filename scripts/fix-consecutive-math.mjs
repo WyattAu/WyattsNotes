@@ -62,18 +62,40 @@ function fixConsecutiveMath(content) {
           state = 'INLINE';
         }
       } else if (state === 'INLINE') {
-        // Closing $ of inline math
-        // Check if next char is $ (consecutive inline math)
         if (i + 1 < content.length && content[i + 1] === '$') {
-          // Consecutive inline math detected!
-          // Insert ", " between them
-          result.push('$, ');
-          fixes++;
-          i += 1; // skip past the first $ of the next expression
-          // state stays INLINE - the ", " is text, next $ opens new inline
-          state = 'TEXT';
+          // $...$$ detected. The $$ could be:
+          // 1. Consecutive inline: $a$$b$   → fix to $a$, $b$
+          // 2. Display math:       $a$$\frac{b}{c}$$  → leave alone
+          //
+          // Heuristic: look for closing $$ in the rest of the line,
+          // skipping the first 2 chars (the $$ itself).
+          const lineEnd = content.indexOf('\n', i + 2);
+          const restOfLine = lineEnd === -1
+            ? content.substring(i + 2)
+            : content.substring(i + 2, lineEnd);
+          const displayClose = restOfLine.indexOf('$$', 2);
+
+          if (displayClose !== -1 && displayClose > 5) {
+            // Likely display math: $expr$$content$$
+            // Output $$ (the closing $ of inline + opening $$ of display)
+            // and enter DISPLAY state
+            result.push('$$');
+            i += 2;
+            state = 'DISPLAY';
+          } else if (displayClose === -1) {
+            // No closing $$ → consecutive inline
+            result.push('$, ');
+            fixes++;
+            i += 1;
+            state = 'TEXT';
+          } else {
+            // Short content between $$ (<=5) → consecutive inline
+            result.push('$, ');
+            fixes++;
+            i += 1;
+            state = 'TEXT';
+          }
         } else {
-          // Normal closing of inline math
           result.push('$');
           i += 1;
           state = 'TEXT';

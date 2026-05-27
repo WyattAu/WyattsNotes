@@ -137,10 +137,10 @@ two regression lines, and extrapolation.]
 
 **Solution:**
 
-**(a)** On the line $y = 4.2x - 3.1$: when $x = 5.0$$y = 4.2(5.0) - 3.1 = 21.0 - 3.1 = 17.9$. This
+**(a)** On the line $y = 4.2x - 3.1$: when $x = 5.0$, $y = 4.2(5.0) - 3.1 = 21.0 - 3.1 = 17.9$. This
 matches $\bar{y}$. So $(\bar{x}, \bar{y}) = (5.0, 17.9)$ lies on the regression line of $y$ on $x$.
 
-On the line $x = 0.21y + 1.8$: when $y = 17.9$$x = 0.21(17.9) + 1.8 = 3.759 + 1.8 = 5.559$. This
+On the line $x = 0.21y + 1.8$: when $y = 17.9$, $x = 0.21(17.9) + 1.8 = 3.759 + 1.8 = 5.559$. This
 does **not** equal $\bar{x} = 5.0$.
 
 This discrepancy means the regression coefficients as stated are not consistent with $\bar{x} = 5.0$
@@ -373,7 +373,7 @@ it tests for any non-zero correlation (positive or negative) rather than just po
 
 **(c)** **Hypotheses:**
 
-$H_0: \rho = 0$$H_1: \rho > 0$
+$H_0: \rho = 0$, $H_1: \rho > 0$
 
 **Critical value:** For $n = 30$ at the 5% level (one-tailed), the critical value is 0.306.
 

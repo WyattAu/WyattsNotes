@@ -318,7 +318,7 @@ $$
 
 At resonance, impedance is minimum ($Z = R$) and current is maximum.
 
-**Example (HL):** An RLC circuit has $R = 100\mathrm{ ohms$$L = 0.5\mathrm{ H$
+**Example (HL):** An RLC circuit has $R = 100\mathrm{ ohms$, $L = 0.5\mathrm{ H$
 $C = 20\mathrm{ \mu F$. Find the resonant frequency and the impedance at resonance.
 
 $$
@@ -477,7 +477,7 @@ $$I_p = \frac{I_s \times V_s}{0.95 \times V_p} = \frac{5 \times 2300}{0.95 \time
 
 ### Worked Example
 
-Three capacitors $C_1 = 22\mu\mathrm{F$$C_2 = 47\mu\mathrm{F$And $C_3 = 10\mu\mathrm{F$ are
+Three capacitors $C_1 = 22\mu\mathrm{F$, $C_2 = 47\mu\mathrm{F$And $C_3 = 10\mu\mathrm{F$ are
 Connected in series across a $12\mathrm{ V$ supply.
 
 **Total capacitance:**
@@ -545,7 +545,7 @@ The $6\mathrm{ \Omega$ resistor, not the total current. Let me recalculate:
 
 $V_p = 1.017 \times 4.8 = 4.882\mathrm{ V$
 
-$I_8 = \frac{4.882}{8} = 0.610\mathrm{ A$$I_{12} = \frac{4.882}{12} = 0.407\mathrm{ A$
+$I_8 = \frac{4.882}{8} = 0.610\mathrm{ A$, $I_{12} = \frac{4.882}{12} = 0.407\mathrm{ A$
 
 Check: $0.610 + 0.407 = 1.017\mathrm{ A$. Correct.
 

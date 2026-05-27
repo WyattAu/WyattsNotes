@@ -393,7 +393,7 @@ A car accelerates from rest at $2\,\mathrm{m/s}^2$ for 8 seconds. Find the dista
 
 <details>
 <summary>Solution 1</summary>
-$u = 0$$a = 2$$t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
+$u = 0$, $a = 2$, $t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
 
 $s = 0 + \tfrac{1}{2}(2)(64) = 64\,\mathrm{m}$.
 
@@ -425,7 +425,7 @@ A projectile is launched at $30\,\mathrm{m/s}$ at an angle of $40^\circ$ above t
 
 <details>
 <summary>Solution 3</summary>
-$v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$$v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
+$v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$, $v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
 
 $H_{\max} = \dfrac{(19.28)^2}{2(9.8)} = \dfrac{371.72}{19.6} \approx 18.97\,\mathrm{m}$.
 
@@ -746,10 +746,10 @@ A particle $P$ is projected from a point $A$ on horizontal ground with speed $u$
 
 <details>
 <summary>Solution 18</summary>
-Highest point of $P$'s trajectory: $x = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$$y = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$At time
+Highest point of $P$'s trajectory: $x = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$, $y = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$At time
 $t_1 = \dfrac◆LB◆u\sin\theta◆RB◆◆LB◆g◆RB◆$.
 
-After $t_1$$P$ is in free fall with $v_y = 0$ at $t_1$So for $t \geq t_1$:
+After $t_1$, $P$ is in free fall with $v_y = 0$ at $t_1$So for $t \geq t_1$:
 
 $y_P = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ - \dfrac{1}{2}g(t - t_1)^2$.
 
@@ -767,14 +767,14 @@ That instant, so for collision we need $y_Q(0^+) = y_P(t_1) = H$.
 
 $Q$ starts at ground level ($y_Q = 0$) and must reach $y = H = u^2\sin^2\theta / (2g)$.
 
-For $Q$: $v_Q = w - gt$$y_Q = wt - \tfrac{1}{2}gt^2$Where $w$ is the projection speed.
+For $Q$: $v_Q = w - gt$, $y_Q = wt - \tfrac{1}{2}gt^2$Where $w$ is the projection speed.
 
 Collision at $y = H$ when $t = 0$ is impossible ($Q$ starts at $y = 0$). So collision must occur at
 Some $\Delta t \gt 0$ after $t_1$.
 
 At time $t_1 + \Delta t$:
 
-$y_P = H - \tfrac{1}{2}g(\Delta t)^2$$y_Q = w\,\Delta t - \tfrac{1}{2}g(\Delta t)^2$.
+$y_P = H - \tfrac{1}{2}g(\Delta t)^2$, $y_Q = w\,\Delta t - \tfrac{1}{2}g(\Delta t)^2$.
 
 For collision: $H = w\,\Delta t$. Also, $x$ must match:
 $u\cos\theta(t_1 + \Delta t) = u^2\sin\theta\cos\theta/g + u\cos\theta\,\Delta t$. This is satisfied

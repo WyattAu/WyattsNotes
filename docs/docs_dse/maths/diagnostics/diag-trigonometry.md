@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-In triangle $ABC$$AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of
+In triangle $ABC$, $AB = 8$ cm, $BC = 6$ cm, and $\angle BAC = 30°$. Find the possible values of
 $\angle ABC$.
 
 **Solution:**
@@ -26,7 +26,7 @@ By the sine rule:
 
 $$\frac{\sin \angle ABC}{AC} = \frac{\sin 30°}{BC}$$
 
-We need $AC$ first. We only have $AB$$BC$And $\angle A$ -- this is the SSA (ambiguous) case.
+We need $AC$ first. We only have $AB$, $BC$And $\angle A$ -- this is the SSA (ambiguous) case.
 
 Using the sine rule: $\dfrac{\sin C}{8} = \dfrac{\sin 30°}{6}$
 
@@ -265,7 +265,7 @@ $$c = \frac{a \sin C}{\sin A} = \frac{8 \sin 75°}{\sin 45°} = \frac{8 \times 0
 
 **Question:**
 
-In triangle $PQR$$PQ = 5$ cm, $QR = 7$ cm, $PR = 10$ cm. Find the largest angle.
+In triangle $PQR$, $PQ = 5$ cm, $QR = 7$ cm, $PR = 10$ cm. Find the largest angle.
 
 **Solution:**
 
@@ -321,7 +321,7 @@ Solution: $x = 0°,\; 120°,\; 240°$.
 
 **Question:**
 
-In triangle $ABC$$AB = 12$ cm, $AC = 10$ cm, and $\angle BAC = 65°$. Find the area.
+In triangle $ABC$, $AB = 12$ cm, $AC = 10$ cm, and $\angle BAC = 65°$. Find the area.
 
 **Solution:**
 
@@ -431,7 +431,7 @@ $$d = \frac{80}{\tan 30°} = \frac{80}{1/\sqrt{3}} = 80\sqrt{3} \approx 138.6 \t
 
 ### DSE-1
 
-In triangle $ABC$$a = 8$ cm, $b = 6$ cm, and $\angle A = 70°$.
+In triangle $ABC$, $a = 8$ cm, $b = 6$ cm, and $\angle A = 70°$.
 
 (a) Find $\angle B$. Give your answer correct to 1 decimal place. (3 marks) (b) Find the area of
 triangle $ABC$. (2 marks) (c) Find the length of the altitude from $C$ to $AB$. (2 marks)
@@ -487,7 +487,7 @@ Solution: $x = 60°,\; 120°,\; 240°,\; 300°$.
 ### DSE-3
 
 A vertical tower $PQ$ stands on horizontal ground. From a point $A$ on the ground, the angle of
-elevation of $P$ is $32°$. From another point $B$$50$ m from $A$ on the opposite side of the tower,
+elevation of $P$ is $32°$. From another point $B$, $50$ m from $A$ on the opposite side of the tower,
 the angle of elevation of $P$ is $24°$. Find the height of the tower. (5 marks)
 
 **Solution:**

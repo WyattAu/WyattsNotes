@@ -58,7 +58,7 @@ $$E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{RT}{nF}\ln Q$$
 $$E_{\text{cell}} = E^\circ_{\text{cell}} - \frac{0.0592}{n}\log Q$$
 
 For the cell:
-$\text{Ag}^+(aq) + \text{Fe}^{2+}(aq) \rightleftharpoons \text{Ag}(s) + \text{Fe}^{3+}(aq)$$n = 1$
+$\text{Ag}^+(aq) + \text{Fe}^{2+}(aq) \rightleftharpoons \text{Ag}(s) + \text{Fe}^{3+}(aq)$, $n = 1$
 
 $$Q = \frac◆LB◆[\text{Fe}^{3+}]◆RB◆◆LB◆[\text{Ag}^+][\text{Fe}^{2+}]◆RB◆ = \frac◆LB◆1.00◆RB◆◆LB◆1.00 \times [\text{Fe}^{2+}]◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆[\text{Fe}^{2+}]◆RB◆$$
 
@@ -229,7 +229,7 @@ reaction).
 
 **Question:**
 
-A solution containing $\text{Cu}^{2+}$$\text{Ag}^+$And $\text{Zn}^{2+}$ ions (all at
+A solution containing $\text{Cu}^{2+}$, $\text{Ag}^+$And $\text{Zn}^{2+}$ ions (all at
 $0.10\,\text{mol dm}^{-3}$) is electrolysed using carbon electrodes.
 
 Relevant electrode potentials:
@@ -252,9 +252,9 @@ the half-equation.
 (a) Metals are deposited at the cathode in order of their **reduction potential** (most positive
 first):
 
-1. **Silver** ($\text{Ag}^+$$E^\circ = +0.80\,\text{V}$) -- deposited first (most reduced)
-2. **Copper** ($\text{Cu}^{2+}$$E^\circ = +0.34\,\text{V}$) -- deposited second
-3. **Zinc** ($\text{Zn}^{2+}$$E^\circ = -0.76\,\text{V}$) -- zinc would only be deposited after all
+1. **Silver** ($\text{Ag}^+$, $E^\circ = +0.80\,\text{V}$) -- deposited first (most reduced)
+2. **Copper** ($\text{Cu}^{2+}$, $E^\circ = +0.34\,\text{V}$) -- deposited second
+3. **Zinc** ($\text{Zn}^{2+}$, $E^\circ = -0.76\,\text{V}$) -- zinc would only be deposited after all
    copper is removed, and in practice hydrogen gas would be produced instead (from water reduction)
    because $\text{H}_2\text{O}/\text{H}_2$ has a less negative effective potential than
    $\text{Zn}^{2+}/\text{Zn}$ under these conditions.
@@ -338,7 +338,7 @@ $$m(\text{H}_2) = 0.1865 \times 2.02 = 0.377\,\text{g}$$
    intermediate thermal step, achieving efficiencies of 40--60% compared to 20--30% for internal
    combustion engines (which lose energy as heat).
 2. **Zero direct emissions**: The only product is water ($\text{H}_2\text{O}$), producing no
-   $\text{CO}_2$$\text{NO}_x$Or particulate matter. (Note: the source of hydrogen matters for
+   $\text{CO}_2$, $\text{NO}_x$Or particulate matter. (Note: the source of hydrogen matters for
    overall carbon footprint.)
 
 ---

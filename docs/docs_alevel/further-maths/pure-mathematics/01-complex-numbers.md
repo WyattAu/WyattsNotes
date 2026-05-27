@@ -246,7 +246,7 @@ Where $e^{i\theta} \equiv \cos\theta + i\sin\theta$ by Euler's formula.
 
 ### Proof of Euler's Formula (from Maclaurin series)
 
-The Maclaurin series for $e^x$$\cos x$And $\sin x$ are:
+The Maclaurin series for $e^x$, $\cos x$And $\sin x$ are:
 
 $$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots$$
 
@@ -286,13 +286,13 @@ Describes a point moving around the unit circle at a rate determined by $\theta$
 
 The standard laws of indices extend :
 
-$$
+$, $
 \begin{aligned}
 Z_1 z_2 &= r_1 r_2 \, e^{i(\theta_1 + \theta_2)} & &\mathrm{(arguments add)} \\
 \frac{z_1}{z_2} &= \frac{r_1}{r_2} \, e^{i(\theta_1 - \theta_2)} & &\mathrm{(arguments subtract)} \\
 Z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 \end{aligned}
-$$
+$, $
 
 :::info info with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem. :::
 
@@ -361,7 +361,7 @@ Positive $y$-axis at $(0, 5)$Giving $|z| = 5$.
 $(x^2 + (y-2)^2) = 9$. The closest point on this circle to the origin lies along the line from the
 Origin through the centre $(0,2)$Which is the $y$-axis. The point $(0, -1)$ is outside the first
 Quadrant. Within the first quadrant, the closest point is where the circle meets the $x$-axis:
-Setting $y = 0$$x^2 + 4 = 9 \implies x = \sqrt{5}$. So $|z| = \sqrt{5}$.
+Setting $y = 0$, $x^2 + 4 = 9 \implies x = \sqrt{5}$. So $|z| = \sqrt{5}$.
 
 </details>
 
@@ -870,7 +870,7 @@ Followed by a translation by $2i$.
 For $\mathrm{Re}(z) = 1$: $z = 1 + it$.
 $w = (1+i)(1+it) + 2i = 1 + it + i - t + 2i = (1-t) + i(3+t)$.
 
-$\mathrm{Re}(w) = 1-t$$\mathrm{Im}(w) = 3+t$. Eliminating $t$:
+$\mathrm{Re}(w) = 1-t$, $\mathrm{Im}(w) = 3+t$. Eliminating $t$:
 $\mathrm{Im}(w) = 3 + (1 - \mathrm{Re}(w)) = 4 - \mathrm{Re}(w)$.
 
 The image is the line $\boxed{u + v = 4}$ (where $w = u + iv$).
@@ -922,8 +922,8 @@ $8(1+i\sqrt{3}) = 16e^{i\pi/3}$.
 
 $z_k = 2\exp\!\left(\dfrac◆LB◆i(\pi/3 + 2k\pi)◆RB◆◆LB◆4◆RB◆\right)$ for $k = 0, 1, 2, 3$.
 
-$z_0 = 2(\cos 15° + i\sin 15°)$$z_1 = 2(\cos 105° + i\sin 105°)$
-$z_2 = 2(\cos 195° + i\sin 195°)$$z_3 = 2(\cos 285° + i\sin 285°)$.
+$z_0 = 2(\cos 15° + i\sin 15°)$, $z_1 = 2(\cos 105° + i\sin 105°)$
+$z_2 = 2(\cos 195° + i\sin 195°)$, $z_3 = 2(\cos 285° + i\sin 285°)$.
 
 </details>
 
@@ -989,7 +989,7 @@ Argand diagrams and polar form $(r, \theta)$ connect to polar coordinates. See
 | Argument                      | $\arg(z) = \arctan(b/a)$ (adjusting for quadrant)         |
 | Euler's formula               | $e^{i\theta} = \cos\theta+i\sin\theta$                    |
 | De Moivre                     | $(\cos\theta+i\sin\theta)^n = \cos n\theta+i\sin n\theta$ |
-| $n$-th roots of unity         | $z_k = e^{2\pi ik/n}$$k = 0, \ldots, n-1$                 |
+| $n$-th roots of unity         | $z_k = e^{2\pi ik/n}$, $k = 0, \ldots, n-1$                 |
 | Locus: circle                 | $                                                         | z-a | =r$                              |
 | Locus: perpendicular bisector | $                                                         | z-a | =                                | z-b | $   |
 | Locus: half-line              | $\arg(z-a) = \theta$                                      |

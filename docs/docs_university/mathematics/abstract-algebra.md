@@ -54,7 +54,7 @@ The group satisfies the **presentation**:
 
 $$D_n = \langle r, s \mid r^n = s^2 = e,\ srs = r^◆LB◆-1◆RB◆ \rangle$$
 
-For $n \geq 3$$D_n$ is non-abelian (e.g., $rs \neq sr$ since $sr = r^◆LB◆-1◆RB◆s \neq rs$ when $n > 2$).
+For $n \geq 3$, $D_n$ is non-abelian (e.g., $rs \neq sr$ since $sr = r^◆LB◆-1◆RB◆s \neq rs$ when $n > 2$).
 
 **Example 1.6.** $D_3$ (symmetries of an equilateral triangle) has $6$ elements:
 $\{e, r, r^2, s, rs, r^2s\}$. The map sending each symmetry to its permutation of the three vertices
@@ -193,7 +193,7 @@ subgroup If and only if $H$ is closed under the group operation.
 
 ### 2.2 Examples of Subgroups
 
-**Example.** For any group $G$$\{e\}$ and $G$ itself are subgroups (the **trivial subgroups**).
+**Example.** For any group $G$, $\{e\}$ and $G$ itself are subgroups (the **trivial subgroups**).
 
 **Example.** The set $SL_n(\mathbb◆LB◆R◆RB◆)$ of $n \times n$ real matrices with determinant $1$ is a
 subgroup of $GL_n(\mathbb◆LB◆R◆RB◆)$.
@@ -223,7 +223,7 @@ $$\langle g \rangle = \{g^n : n \in \mathbb◆LB◆Z◆RB◆\}$$
 _Proof._ Let $G = \langle a \rangle$ and $H \leq G$. If $H = \{e\}$Then $H = \langle e \rangle$.
 Otherwise, let $m$ be the smallest positive integer with $a^m \in H$. We claim
 $H = \langle a^m \rangle$. For any $a^k \in H$Write $k = qm + r$ with $0 \leq r \lt m$. Then
-$a^r = a^◆LB◆k - qm◆RB◆ = a^k (a^m)^◆LB◆-q◆RB◆ \in H$. By minimality of $m$$r = 0$So
+$a^r = a^◆LB◆k - qm◆RB◆ = a^k (a^m)^◆LB◆-q◆RB◆ \in H$. By minimality of $m$, $r = 0$So
 $a^k = (a^m)^q \in \langle a^m \rangle$. $\blacksquare$
 
 **Theorem 2.5.** If $G = \langle a \rangle$ has order $n$Then
@@ -285,10 +285,10 @@ $$\langle S \rangle = \{s_1^◆LB◆\epsilon_1◆RB◆ s_2^◆LB◆\epsilon_2◆
 
 When $S = \{g_1, \ldots, g_n\}$We write $\langle g_1, \ldots, g_n \rangle$.
 
-**Example.** In $S_3$$\langle (1\ 2), (2\ 3) \rangle = S_3$ since
-$(1\ 2)(2\ 3) = (1\ 2\ 3)$$(1\ 2\ 3)(1\ 2) = (1\ 3)$And we obtain all six elements.
+**Example.** In $S_3$, $\langle (1\ 2), (2\ 3) \rangle = S_3$ since
+$(1\ 2)(2\ 3) = (1\ 2\ 3)$, $(1\ 2\ 3)(1\ 2) = (1\ 3)$And we obtain all six elements.
 
-**Example.** In $D_4$$\langle r^2, s \rangle = \{e, r^2, s, r^2s\} \cong V_4$ (the Klein
+**Example.** In $D_4$, $\langle r^2, s \rangle = \{e, r^2, s, r^2s\} \cong V_4$ (the Klein
 four-group).
 
 **Problem.** Show that $S_n = \langle (1\ 2), (1\ 2\ \ldots\ n) \rangle$.
@@ -354,7 +354,7 @@ $\phi$ Is Euler's totient function.
 **Problem.** Show that every group of prime order $p$ is cyclic.
 
 _Solution._ Let $G$ be a group of order $p$ and $g \in G$ with $g \neq e$. By Corollary 3.4, $|g|$
-divides $p$. Since $g \neq e$$|g| \neq 1$. Since $p$ is prime, $|g| = p$. Thus
+divides $p$. Since $g \neq e$, $|g| \neq 1$. Since $p$ is prime, $|g| = p$. Thus
 $\langle g \rangle = G$And $G$ is cyclic. $\blacksquare$
 
 ### 3.4 Worked Examples: Computing Cosets
@@ -373,7 +373,7 @@ Computing: $(1\ 2)(1\ 2\ 3) = (2\ 3)$ and $(1\ 2)(1\ 3\ 2) = (1\ 3)$. So:
 
 $$S_3 = \{e, (1\ 2\ 3), (1\ 3\ 2)\} \cup \{(1\ 2), (2\ 3), (1\ 3)\}$$
 
-Since $[S_3 : H] = 2$$H$ is normal (see Corollary 3.7). $\blacksquare$
+Since $[S_3 : H] = 2$, $H$ is normal (see Corollary 3.7). $\blacksquare$
 
 </details>
 
@@ -569,7 +569,7 @@ By construction, $\mathrm◆LB◆im(\overline◆LB◆\phi◆RB◆) = \mathrm◆L
 ### 5.4 Second and Third Isomorphism Theorems
 
 **Theorem 5.4 (Second Isomorphism Theorem).** If $N \trianglelefteq G$ and $H \leq G$Then
-$HN \leq G$ $N \trianglelefteq HN$$H \cap N \trianglelefteq H$And
+$HN \leq G$ $N \trianglelefteq HN$, $H \cap N \trianglelefteq H$And
 
 $$H / (H \cap N) \cong HN / N$$
 
@@ -824,7 +824,7 @@ $$|G| = |Z(G)| + \sum_◆LB◆i◆RB◆ [G : C_G(x_i)]$$
 Where the sum is over representatives $x_i$ of the non-central conjugacy classes.
 
 _Proof._ The conjugacy classes partition $G$. Central elements form singleton classes. For a
-non-central element $x$$|\mathrm◆LB◆Orb(x)| = [G : C_G(x)]$ by the orbit-stabilizer theorem. Summing
+non-central element $x$, $|\mathrm◆LB◆Orb(x)| = [G : C_G(x)]$ by the orbit-stabilizer theorem. Summing
 gives the result. $\blacksquare$
 
 ### 6.5 Worked Example: Symmetries of a Cube
@@ -876,7 +876,7 @@ Since $e \in Z(G)$We have $|Z(G)| \geq 1$. Therefore $|Z(G)| \geq p$. $\blacksqu
 
 **Corollary 6.6.** Every group of order $p^2$ (where $p$ is prime) is abelian.
 
-_Proof._ By Theorem 6.5, $|Z(G)| \geq p$. Since $Z(G) \leq G$$|Z(G)|$ divides $p^2$So $|Z(G)| = p$
+_Proof._ By Theorem 6.5, $|Z(G)| \geq p$. Since $Z(G) \leq G$, $|Z(G)|$ divides $p^2$So $|Z(G)| = p$
 or $|Z(G)| = p^2$. If $|Z(G)| = p^2$Then $G = Z(G)$ is abelian. If $|Z(G)| = p$ Then $G/Z(G)$ has
 order $p$ and is therefore cyclic, say $G/Z(G) = \langle gZ(G) \rangle$. Then every element of $G$
 has the form $g^k z$ for some $k \in \mathbb◆LB◆Z◆RB◆$ and $z \in Z(G)$. For any two such elements
@@ -919,7 +919,7 @@ Is cyclic.
 
 _Proof._ By Sylow's third theorem, $n_q \equiv 1 \pmod◆LB◆q◆RB◆$ and $n_q$ divides $p$. Since $p \lt q$
 $n_q = 1$So the Sylow $q$-subgroup $Q$ is normal. Similarly, $n_p \equiv 1 \pmod◆LB◆p◆RB◆$ and $n_p$
-Divides $q$. Since $p \nmid (q-1)$$n_p \neq q$So $n_p = 1$And the Sylow $p$-subgroup $P$ Is normal.
+Divides $q$. Since $p \nmid (q-1)$, $n_p \neq q$So $n_p = 1$And the Sylow $p$-subgroup $P$ Is normal.
 Since $P \cap Q = \{e\}$ (their orders are coprime) and $|PQ| = pq = |G|$ We have
 $G \cong P \times Q \cong \mathbb◆LB◆Z◆RB◆/p\mathbb◆LB◆Z◆RB◆ \times \mathbb◆LB◆Z◆RB◆/q\mathbb◆LB◆Z◆RB◆ \cong \mathbb◆LB◆Z◆RB◆/pq\mathbb◆LB◆Z◆RB◆$.
 $\blacksquare$
@@ -962,7 +962,7 @@ Thus $P$ is the **unique** fixed point. All other orbits have size $[P : \mathrm
 power of $p$ greater than $1$. By the fixed-point congruence for $p$-group actions:
 $n_p = 1 + \sum (\mathrm◆LB◆sizes\ of\ remaining\ orbits) \equiv 1 \pmod◆LB◆p◆RB◆$. **Step 2: $n_p$ divides
 $m$.** The group $G$ acts transitively on $\mathrm◆LB◆Syl_p(G)$ by conjugation (by Sylow's second
-theorem). Hence $n_p = |\mathrm◆LB◆Syl_p(G)| = [G : N_G(P)]$. Since $P \leq N_G(P)$$|N_G(P)|$ is
+theorem). Hence $n_p = |\mathrm◆LB◆Syl_p(G)| = [G : N_G(P)]$. Since $P \leq N_G(P)$, $|N_G(P)|$ is
 divisible by $p^n$. Therefore $n_p = |G|/|N_G(P)|$ divides $|G|/p^n = m$. $\blacksquare$
 
 ### 7.6 Worked Examples: Finding Sylow Subgroups
@@ -1667,8 +1667,8 @@ $f \in \mathbb◆LB◆Q◆RB◆[x]$.
 in the Alternating group) if and only if $\Delta$ is a perfect square in the base field.
 
 _Proof._ The Galois group acts on $\delta = \prod_◆LB◆i \lt j◆RB◆(\alpha_i - \alpha_j)$ by permutation.
-For any $\sigma \in G$$\sigma(\delta) = \mathrm◆LB◆sgn(\sigma) \cdot \delta$. If $\sigma \in A_n$
-$\sigma(\delta) = \delta$; if $\sigma \notin A_n$$\sigma(\delta) = -\delta$.
+For any $\sigma \in G$, $\sigma(\delta) = \mathrm◆LB◆sgn(\sigma) \cdot \delta$. If $\sigma \in A_n$
+$\sigma(\delta) = \delta$; if $\sigma \notin A_n$, $\sigma(\delta) = -\delta$.
 
 If $G \leq A_n$Then $\delta$ is fixed by all of $G$So $\delta \in F$Hence $\Delta = \delta^2$ is a
 square. Conversely, if $\Delta$ is a square in $F$Then $\delta \in F$ (or $-\delta \in F$), so
@@ -1796,7 +1796,7 @@ _Solution._ Since $72 = 2^3 \cdot 3^2$Every abelian group of order 72 is a direc
 Abelian group of order $2^3$ and one of order $3^2$.
 
 For order $2^3$: the partitions of 3 give (3), (2,1), (1,1,1), corresponding to
-$\mathbb◆LB◆Z◆RB◆/8\mathbb◆LB◆Z◆RB◆$$\mathbb◆LB◆Z◆RB◆/4\mathbb◆LB◆Z◆RB◆ \times \mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆$
+$\mathbb◆LB◆Z◆RB◆/8\mathbb◆LB◆Z◆RB◆$, $\mathbb◆LB◆Z◆RB◆/4\mathbb◆LB◆Z◆RB◆ \times \mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆$
 $\mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆ \times \mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆ \times \mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆$.
 
 For order $3^2$: the partitions of 2 give (2), (1,1), corresponding to $\mathbb◆LB◆Z◆RB◆/9\mathbb◆LB◆Z◆RB◆$
@@ -1820,7 +1820,7 @@ Taking all products, the six abelian groups of order 72 are:
 _Solution._ Suppose $N \trianglelefteq S_4$ with $|N| = 8$. By Lagrange, $[S_4 : N] = 24/8 = 3$. The
 action of $S_4$ on the cosets of $N$ gives a homomorphism $\phi : S_4 \to S_3$. Since $N$ is normal,
 $\ker(\phi) \subseteq N$So $|\ker(\phi)|$ divides $8$. Since $\mathrm◆LB◆im(\phi) \subseteq S_3$ has
-order dividing $6$$|\ker(\phi)|$ divides $24/6 = 4$. But $|\ker(\phi)|$ divides $8$So $|\ker(\phi)|$
+order dividing $6$, $|\ker(\phi)|$ divides $24/6 = 4$. But $|\ker(\phi)|$ divides $8$So $|\ker(\phi)|$
 divides $\gcd(8, 4) = 4$. Since $\ker(\phi) \subseteq N$ and $|N| = 8$And $|\ker(\phi)|$ divides
 $4$This is possible. However, we need $\ker(\phi) = N$ (since $N$ is the kernel of the action on
 cosets). Then $|\ker(\phi)| = 8$Contradicting $|\ker(\phi)| \leq 4$. So no such $N$ exists.
@@ -1868,7 +1868,7 @@ _Solution._ This result is known as the **Schur-Zassenhaus theorem**. We prove a
 $H$ is abelian. Let $|H| = m$ and $[G : H] = n$ with $\gcd(m, n) = 1$.
 
 Consider the action of $G$ on $H$ by conjugation. Since $H$ is abelian and normal, $G$ acts by
-Automorphisms on $H$. The group of automorphisms of $H$$\mathrm◆LB◆Aut(H)$Has order dividing $|H|!$But
+Automorphisms on $H$. The group of automorphisms of $H$, $\mathrm◆LB◆Aut(H)$Has order dividing $|H|!$But
 we need a more refined argument.
 
 Here is a cleaner approach for the case when one factor is cyclic. Let $G/H = \langle gH \rangle$ be
@@ -1939,9 +1939,9 @@ The following table summarizes the classification of groups of small order:
 | 1     | $\{e\}$                                                                                                                                          |
 | 2     | $\mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆$                                                                                                                         |
 | 3     | $\mathbb◆LB◆Z◆RB◆/3\mathbb◆LB◆Z◆RB◆$                                                                                                                         |
-| 4     | $\mathbb◆LB◆Z◆RB◆/4\mathbb◆LB◆Z◆RB◆$$V_4$                                                                                                                    |
+| 4     | $\mathbb◆LB◆Z◆RB◆/4\mathbb◆LB◆Z◆RB◆$, $V_4$                                                                                                                    |
 | 5     | $\mathbb◆LB◆Z◆RB◆/5\mathbb◆LB◆Z◆RB◆$                                                                                                                         |
-| 6     | $\mathbb◆LB◆Z◆RB◆/6\mathbb◆LB◆Z◆RB◆$$S_3$                                                                                                                    |
+| 6     | $\mathbb◆LB◆Z◆RB◆/6\mathbb◆LB◆Z◆RB◆$, $S_3$                                                                                                                    |
 | 7     | $\mathbb◆LB◆Z◆RB◆/7\mathbb◆LB◆Z◆RB◆$                                                                                                                         |
 | 8     | $\mathbb◆LB◆Z◆RB◆/8\mathbb◆LB◆Z◆RB◆$$\mathbb◆LB◆Z◆RB◆/4\mathbb◆LB◆Z◆RB◆ \times \mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆$$(\mathbb◆LB◆Z◆RB◆/2\mathbb◆LB◆Z◆RB◆)^3$$D_4$$Q_8$                             |
 | 9     | $\mathbb◆LB◆Z◆RB◆/9\mathbb◆LB◆Z◆RB◆$$\mathbb◆LB◆Z◆RB◆/3\mathbb◆LB◆Z◆RB◆ \times \mathbb◆LB◆Z◆RB◆/3\mathbb◆LB◆Z◆RB◆$                                                                   |

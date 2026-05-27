@@ -139,7 +139,7 @@ $s = xyz$ where:
 3. $xy^iz \in L$ for all $i \geq 0$
 
 Choose $s = a^p b^p$. By condition 1, $y$ consists only of $a$'s. Pumping ($i = 0$):
-$xz = a^{p-|y|}b^p$. Since $|y| \geq 1$$p - |y| \neq p$So $a^{p-|y|}b^p \notin L$. Contradiction.
+$xz = a^{p-|y|}b^p$. Since $|y| \geq 1$, $p - |y| \neq p$So $a^{p-|y|}b^p \notin L$. Contradiction.
 $\square$
 
 <hr />
@@ -404,7 +404,7 @@ $ww = 0^p10^p1$). Note $|s| = 2p + 2 \geq p$. ✓
 
 By the Pumping Lemma, $s = xyz$ with $|xy| \leq p$ and $|y| \geq 1$.
 
-Since $|xy| \leq p$$y$ consists entirely of 0s from the first half. Say $y = 0^k$ where
+Since $|xy| \leq p$, $y$ consists entirely of 0s from the first half. Say $y = 0^k$ where
 $1 \leq k \leq p$.
 
 Pump with $i = 0$: $xz = 0^{p-k}10^p1$.

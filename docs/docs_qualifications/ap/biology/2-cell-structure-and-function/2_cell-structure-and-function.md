@@ -215,7 +215,7 @@ Eukaryotic cells.
 
 2. **Transduction:** The signal is relayed and amplified through a signal transduction pathway.
 
-- Often involves **second messengers** (cAMP, $\mathrm{Ca^{2+}$$\mathrm{IP_3$DAG).
+- Often involves **second messengers** (cAMP, $\mathrm{Ca^{2+}$, $\mathrm{IP_3$DAG).
 - **Protein kinases** phosphorylate target proteins, activating or deactivating them.
 - **Protein phosphatases** remove phosphate groups, reversing kinase action.
 - **Cascades** amplify the signal (one activated kinase activates many downstream targets).
@@ -304,7 +304,7 @@ Receptors in the cytoplasm or nucleus.
     the outcome depends on the specific pathway and cell type.
 11. **Confusing GPCRs and RTKs.** GPCRs use G-proteins and second messengers; RTKs dimerize and
     autophosphorylate, often activating the MAP kinase cascade.
-12. **Thinking all second messengers are the same.** cAMP, $\mathrm{Ca^{2+}$$\mathrm{IP_3$And DAG
+12. **Thinking all second messengers are the same.** cAMP, $\mathrm{Ca^{2+}$, $\mathrm{IP_3$And DAG
     have different roles and activate different downstream pathways.
 13. **Confusing exocytosis and endocytosis direction.** Exocytosis releases materials out of the
     cell; endocytosis brings materials in.
@@ -390,7 +390,7 @@ Receptors in the cytoplasm or nucleus.
 Understanding the nuances of membrane transport is critical. Here is a more detailed analysis of
 Each mechanism:
 
-**Simple diffusion:** Small, nonpolar molecules (e.g., $\mathrm{O_2$$\mathrm{CO_2$Steroid Hormones)
+**Simple diffusion:** Small, nonpolar molecules (e.g., $\mathrm{O_2$, $\mathrm{CO_2$Steroid Hormones)
 diffuse directly through the phospholipid bilayer. The rate depends on the concentration Gradient,
 temperature, and the surface area of the membrane. No energy or transport protein is Required.
 

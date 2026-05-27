@@ -225,7 +225,7 @@ $P(X \le 1) = (0.97)^{20} + 20(0.03)(0.97)^{19} \approx 0.5438 + 0.3364 \approx 
 
 $P(X \ge 3) = 1 - P(X \le 2) \approx 1 - 0.8802 - 0.0988 = 0.0210$
 
-$E(X) = 20(0.03) = 0.6$$\sigma = \sqrt{20(0.03)(0.97)} = \sqrt{0.582} \approx 0.763$
+$E(X) = 20(0.03) = 0.6$, $\sigma = \sqrt{20(0.03)(0.97)} = \sqrt{0.582} \approx 0.763$
 
 :::
 
@@ -312,9 +312,9 @@ $\mathrm{Var}(X) = \lambda^2 + \lambda - \lambda^2 = \lambda$.
 
 ### Poisson as a Limit of the Binomial
 
-If $n \to \infty$$p \to 0$While $np = \lambda$ stays constant, then
+If $n \to \infty$, $p \to 0$While $np = \lambda$ stays constant, then
 $B(n, p) \to \mathrm{Po}(\lambda)$. The Poisson approximates the binomial when $n$ is large, $p$ is
-Small, and $np$ is moderate ( $n \ge 50$$p \le 0.1$).
+Small, and $np$ is moderate ( $n \ge 50$, $p \le 0.1$).
 
 ### Additivity
 
@@ -335,7 +335,7 @@ $P(X = 5) = \dfrac{e^{-3.5} \cdot 3.5^5}{5!} \approx 0.1318$
 
 $P(X \le 2) = e^{-3.5}\!\left(1 + 3.5 + \dfrac{12.25}{2}\right) = 10.625 \, e^{-3.5} \approx 0.3208$
 
-Over 2 hours: $Y \sim \mathrm{Po}(7)$$P(Y \gt 7) = 1 - P(Y \le 7) \approx 0.4013$.
+Over 2 hours: $Y \sim \mathrm{Po}(7)$, $P(Y \gt 7) = 1 - P(Y \le 7) \approx 0.4013$.
 
 :::
 
@@ -462,7 +462,7 @@ $P(985 \lt X \lt 1020) = P(-1 \lt Z \lt 1.333) = \Phi(1.333) - \Phi(-1) \approx 
 
 $P(X \lt 970) = P(Z \lt -2) = 0.0228$So about 2.28% are rejected.
 
-For the mass exceeded by only 5%: $P(X \le x) = 0.95$$x = 1000 + 1.645(15) = 1024.67$ g.
+For the mass exceeded by only 5%: $P(X \le x) = 0.95$, $x = 1000 + 1.645(15) = 1024.67$ g.
 
 :::
 
@@ -679,7 +679,7 @@ A coin has $P(\mathrm{heads}) = 0.4$. $X \sim \mathrm{NB}(3, 0.4)$ counts flips 
 
 $P(X = 7) = \dbinom{6}{2}(0.4)^3(0.6)^4 = 15 \times 0.064 \times 0.1296 \approx 0.1244$
 
-$E(X) = 3/0.4 = 7.5$$\mathrm{Var}(X) = 3(0.6)/0.16 = 11.25$ $\sigma = \sqrt{11.25} \approx 3.354$.
+$E(X) = 3/0.4 = 7.5$, $\mathrm{Var}(X) = 3(0.6)/0.16 = 11.25$ $\sigma = \sqrt{11.25} \approx 3.354$.
 
 :::
 
@@ -723,7 +723,7 @@ $\bar{X} \sim N(150, 400/36)$. $P\!\left(Z \gt \dfrac{5}{20/6}\right) = P(Z \gt 
 
 $X \sim U(2, 10)$. Sample of 50 observations. Find $P(\mathrm{sum} \gt 310)$.
 
-$\mu = 6$$\sigma^2 = 64/12 = 16/3$. Sum has mean $300$ and variance $50(16/3) = 800/3$.
+$\mu = 6$, $\sigma^2 = 64/12 = 16/3$. Sum has mean $300$ and variance $50(16/3) = 800/3$.
 
 $P\!\left(Z \gt \dfrac{10}{\sqrt{800/3}}\right) = P(Z \gt 0.612) \approx 0.2704$.
 
@@ -766,7 +766,7 @@ Required sample size for margin $E$: $n = \left(\dfrac{z_{\alpha/2} \cdot \sigma
 
 :::info[Example]
 
-Bottle volumes: $N(\mu, 25)$$\sigma = 5$ ml. Sample of 25 gives $\bar{x} = 498$ ml.
+Bottle volumes: $N(\mu, 25)$, $\sigma = 5$ ml. Sample of 25 gives $\bar{x} = 498$ ml.
 
 95% CI: $498 \pm 1.960 \times 5/\sqrt{25} = 498 \pm 1.96$So $(496.04, 499.96)$ ml.
 
@@ -782,9 +782,9 @@ For margin 1 ml at 95%: $n = (1.960 \times 5/1)^2 = 96.04$Round up to 97.
 
 For any random variables $X$$Y$ and constants $a$$b$:
 
-$$
+$, $
 E(aX + bY) = aE(X) + bE(Y)
-$$
+$, $
 
 This is the **linearity of expectation** and holds always, even without independence.
 
@@ -792,21 +792,21 @@ This is the **linearity of expectation** and holds always, even without independ
 
 For **independent** $X$ and $Y$:
 
-$$
+$, $
 \mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)
-$$
+$, $
 
-$$
+$, $
 \mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y), \quad \mathrm{Var}(X - Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)
-$$
+$, $
 
 Note the plus sign even for differences: subtracting a variable still adds variability.
 
 The general formula (not necessarily independent):
 
-$$
+$, $
 \mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y) + 2\mathrm{Cov}(X, Y)
-$$
+$, $
 
 Where $\mathrm{Cov}(X, Y) = E(XY) - E(X)E(Y) = 0$ when $X$ and $Y$ are independent.
 
@@ -821,21 +821,21 @@ $\mathrm{Var}(X+Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$ requires independence.
 
 If $X_1, \ldots, X_n$ are iid with mean $\mu$ and variance $\sigma^2$:
 
-$$
+$, $
 E(X_1 + \cdots + X_n) = n\mu, \quad \mathrm{Var}(X_1 + \cdots + X_n) = n\sigma^2
-$$
+$, $
 
-$$
+$, $
 E(\bar{X}) = \mu, \quad \mathrm{Var}(\bar{X}) = \frac{\sigma^2}{n}
-$$
+$, $
 
 ### Combining Normal Variables
 
 If $X \sim N(\mu_X, \sigma_X^2)$ and $Y \sim N(\mu_Y, \sigma_Y^2)$ are independent, then:
 
-$$
+$, $
 AX + bY \sim N(a\mu_X + b\mu_Y, a^2\sigma_X^2 + b^2\sigma_Y^2)
-$$
+$, $
 
 This is exact (not an approximation) for normal variables, and requires no CLT.
 
@@ -1069,7 +1069,7 @@ $$P(X \ge 15) = 1 - P(X \le 14) \approx 1 - 0.9752 = 0.0248$$
 ### Problem 3
 
 A bookshop sells an average of 3.2 rare books per week. $X \sim \mathrm{Po}(3.2)$ is the number sold
-In a week. Find $P(X = 4)$$P(X = 0)$And $P(X \gt 5)$.
+In a week. Find $P(X = 4)$, $P(X = 0)$And $P(X \gt 5)$.
 
 <details>
 <summary>Solution</summary>
@@ -1094,7 +1094,7 @@ Student scores above 75, and the score that is exceeded by only 10% of students.
 <details>
 <summary>Solution</summary>
 
-$\mu = 65$$\sigma = \sqrt{64} = 8$.
+$\mu = 65$, $\sigma = \sqrt{64} = 8$.
 
 $$P(X \gt 75) = P\!\left(Z \gt \frac{75 - 65}{8}\right) = P(Z \gt 1.25) = 1 - \Phi(1.25) \approx 1 - 0.8944 = 0.1056$$
 
@@ -1298,7 +1298,7 @@ $X \sim B(60, 1/6)$. $\lambda = np = 60/6 = 10$.
 
 Approximate: $X \approx \mathrm{Po}(10)$.
 
-Check conditions: $n = 60 \ge 50$$p = 1/6 \le 0.1$? No, $p = 0.167 \gt 0.1$. The Poisson
+Check conditions: $n = 60 \ge 50$, $p = 1/6 \le 0.1$? No, $p = 0.167 \gt 0.1$. The Poisson
 Approximation is less accurate here but still usable as an estimate.
 
 $$P(X \ge 3) = 1 - P(X \le 2) = 1 - e^{-10}\!\left(1 + 10 + \frac{100}{2}\right)$$

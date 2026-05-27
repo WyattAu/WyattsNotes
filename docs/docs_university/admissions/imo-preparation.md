@@ -83,7 +83,7 @@ Then $m \equiv n \pmod{\text{ord_p(a)}$. This is often more precise than working
 Congruences $x \equiv a_i \pmod{m_i}$ for $i = 1, \ldots, k$ has a unique solution modulo
 $M = m_1 \cdots m_k$.
 
-**Proof sketch.** For $k = 2$: let $M_1 = m_2$$M_2 = m_1$. Compute $t_1$ such that
+**Proof sketch.** For $k = 2$: let $M_1 = m_2$, $M_2 = m_1$. Compute $t_1$ such that
 $M_1 t_1 \equiv 1 \pmod{m_1}$ (using the extended Euclidean algorithm) and $t_2$ such that
 $M_2 t_2 \equiv 1 \pmod{m_2}$. Then $x = a_1 M_1 t_1 + a_2 M_2 t_2$ satisfies both congruences.
 
@@ -534,10 +534,10 @@ pencil of lines through $P$. The inverse of $R'$ is a fixed point $R$ such that 
 of $\triangle QAB$ passes Through $R$.
 
 A cleaner characterisation: the point $R$ is the Miquel point of the complete quadrilateral formed
-By $\omega_1$$\omega_2$And the line $PQ$. By the Miquel theorem, the circumcircles of the four
+By $\omega_1$, $\omega_2$And the line $PQ$. By the Miquel theorem, the circumcircles of the four
 Triangles formed by any three of these four lines/circles concur at $R$.
 
-In particular, the circumcircle of $\triangle QAB$ (formed by $\omega_1$$\omega_2$And the line
+In particular, the circumcircle of $\triangle QAB$ (formed by $\omega_1$, $\omega_2$And the line
 Through $P$) always passes through the Miquel point $R$Which is fixed.
 
 ---
@@ -578,7 +578,7 @@ Non-empty set $S$ with the desired property.
 ### Question 6 (Geometry: Complex Numbers)
 
 > Let $ABC$ be a triangle with circumcircle $\Gamma$. A point $P$ lies in the interior of
-> $\triangle ABC$. The lines $AP$$BP$$CP$ meet $\Gamma$ again at $D$$E$$F$ respectively. Prove that
+> $\triangle ABC$. The lines $AP$, $BP$$CP$ meet $\Gamma$ again at $D$$E$$F$ respectively. Prove that
 > $\frac{PD}{AD} + \frac{PE}{BE} + \frac{PF}{CF} = 1$.
 
 **Solution.** We use barycentric coordinates with respect to $\triangle ABC$. Let $P$ have

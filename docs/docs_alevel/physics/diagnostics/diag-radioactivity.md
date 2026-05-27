@@ -60,7 +60,7 @@ $$e^{-0.10395t} = 600/400 = 1.5$$
 This requires $e$ raised to a positive power to equal $1.5$But $-0.10395t \lt 0$ for all $t \gt 0$So
 $e^{-0.10395t} \lt 1$ always.
 
-The activities are **never equal** for $t \gt 0$. At $t = 0$$R_A = 400 \lt R_B = 600$And $R_A$
+The activities are **never equal** for $t \gt 0$. At $t = 0$, $R_A = 400 \lt R_B = 600$And $R_A$
 always decays faster than $R_B$ (larger decay constant), so $R_A$ is always less than $R_B$ for
 $t \gt 0$.
 

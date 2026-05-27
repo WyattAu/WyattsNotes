@@ -295,7 +295,7 @@ Data (5 observations):
 
 (c) Interpret the results and identify a potential omitted variable.
 
-(a) $\bar{u} = 6.6$$\bar{\pi} = 3.2$
+(a) $\bar{u} = 6.6$, $\bar{\pi} = 3.2$
 
 $\sum(u_i - \bar{u})(\pi_i - \bar{\pi})$:
 
@@ -320,7 +320,7 @@ Estimated Phillips curve: $\hat{\pi} = 7.86 - 0.706u$
 | 8   | 2     | 2.21        | 0.044                 | 1.44                  |
 | 10  | 1     | 0.80        | 0.040                 | 4.84                  |
 
-$\text{SSR} = 0.267$$\text{SST} = 14.80$
+$\text{SSR} = 0.267$, $\text{SST} = 14.80$
 
 $R^2 = 1 - 0.267/14.80 = 0.982$
 

@@ -321,7 +321,7 @@ Sign analysis:
 
 The quotient is $\geq 0$ when $x \leq \frac{7}{2}$ (including equality) but $x \neq 2$.
 
-Solution: $x \leq \frac{7}{2}$$x \neq 2$I.e.,
+Solution: $x \leq \frac{7}{2}$, $x \neq 2$I.e.,
 $x \in (-\infty, 2) \cup \left[\frac{7}{2}, \infty\right)$.
 
 </details>
@@ -352,8 +352,8 @@ Non-negative when $a > 0$ and always non-positive when $a < 0$With equality only
 3. Identify all critical values: roots of the numerator, zeros of the denominator (if rational), and
    any points where $f$ is undefined.
 4. Draw a sign chart: test one point from each interval between consecutive critical values.
-5. Select the intervals that satisfy the original inequality, respecting strict ($>$$<$) vs
-   non-strict ($\geq$$\leq$) conditions.
+5. Select the intervals that satisfy the original inequality, respecting strict ($>$, $<$) vs
+   non-strict ($\geq$, $\leq$) conditions.
 
 :::tip Tip **never** include points where the denominator is zero. :::
 
@@ -437,7 +437,7 @@ to the quadratic $az^2 + bz + c = 0$.
 
 :::warning After solving the reduced quadratic for $z$You must substitute back to find $x$. Discard
 any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires
-$z \geq 0$$z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
+$z \geq 0$, $z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
 
 <details>
 <summary>Example</summary>
@@ -785,7 +785,7 @@ $x = -2$: $y = -3$. Point: $(-2, -3)$.
 <hr />
 
 **Problem 6.** The function $f(x) = px^2 + qx + r$ has a minimum value of $-5$ at $x = 2$And Passes
-through the point $(0, 7)$. Find $p$$q$And $r$.
+through the point $(0, 7)$. Find $p$, $q$And $r$.
 
 <details>
 <summary>Solution</summary>

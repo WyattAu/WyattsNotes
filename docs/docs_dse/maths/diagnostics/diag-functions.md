@@ -56,7 +56,7 @@ Therefore $\mathrm{dom}(f \circ g) = (-2,\; -1]$.
 
 **Question:**
 
-Let $f(x) = \dfrac{2x + 3}{x - 1}$$x \neq 1$. Which of the following equals $f^{-1}(5)$?
+Let $f(x) = \dfrac{2x + 3}{x - 1}$, $x \neq 1$. Which of the following equals $f^{-1}(5)$?
 
 $$\text{(A)}\; \frac{1}{f(5)} \qquad \text{(B)}\; f(5) \qquad \text{(C)}\; \text{Neither}$$
 
@@ -111,14 +111,14 @@ the sign.
 
 **Question:**
 
-Let $f(x) = x^2 - 4x + 3$$x \in \mathbb{R}$.
+Let $f(x) = x^2 - 4x + 3$, $x \in \mathbb{R}$.
 
 (a) Show that $f$ is not injective. (b) Restrict the domain so that $f^{-1}$ exists and find
 $f^{-1}(x)$.
 
 **Solution:**
 
-(a) $f(0) = 3$ and $f(4) = 3$. Since $f(0) = f(4)$ but $0 \neq 4$$f$ is not injective.
+(a) $f(0) = 3$ and $f(4) = 3$. Since $f(0) = f(4)$ but $0 \neq 4$, $f$ is not injective.
 
 (b) We need to restrict to a domain where $f$ is strictly monotonic.
 
@@ -171,7 +171,7 @@ $$\mathrm{ran}(g \circ f) = [1,\; \infty)$$
 **Question:**
 
 Let $f(x) = ax^2 + bx + c$ where $a > 0$. The function $f$ has a minimum value of $-5$ at $x = 3$.
-Given that $f(1) = 3$Find $a$$b$And $c$And hence find the range of $f^{-1}$.
+Given that $f(1) = 3$Find $a$, $b$And $c$And hence find the range of $f^{-1}$.
 
 **Solution:**
 

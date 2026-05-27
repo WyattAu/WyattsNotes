@@ -921,9 +921,9 @@ Encrypt blocks of text. It demonstrates a direct application of matrices in cryp
 
 **Decryption:** Apply the inverse of the key matrix modulo 26:
 
-$$
+$, $
 \mathbf{p} = K^{-1}\mathbf{c} \pmod{26}
-$$
+$, $
 
 The key matrix $K$ must be invertible modulo 26, which requires $\det(K)$ to be coprime to 26 (i.e.
 $\gcd(\det(K), 26) = 1$).
@@ -966,9 +966,9 @@ Matrices are fundamental to 2D and 3D computer graphics. Every transformation of
 Matrix multiplications, 2D points $(x, y)$ are extended to homogeneous coordinates $(x, y, 1)$. A
 Translation by $(t_x, t_y)$ is then:
 
-$$
+$, $
 T = \begin`\{pmatrix}` 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end`\{pmatrix}`
-$$
+$, $
 
 Rotation and scaling in homogeneous coordinates use $3 \times 3$ matrices with the bottom row
 $(0, 0, 1)$.
@@ -998,9 +998,9 @@ The entry $p_{ij}$ represents the probability of moving from state $i$ to state 
 
 **State evolution.** If $\mathbf{s}^{(k)}$ is the state probability vector at step $k$Then:
 
-$$
+$, $
 \mathbf{s}^{(k)} = \mathbf{s}^{(0)} P^k
-$$
+$, $
 
 **Steady state.** A steady-state (stationary) vector $\mathbf{s}$ satisfies
 $\mathbf{s}P = \mathbf{s}$Or equivalently, $\mathbf{s}(P - I) = \mathbf{0}$. This means $\mathbf{s}$
@@ -1133,7 +1133,7 @@ $$\det(A - \lambda I) = (5 - \lambda)^2 - 9 = \lambda^2 - 10\lambda + 16 = 0$$
 
 $$(\lambda - 2)(\lambda - 8) = 0$$
 
-$\lambda_1 = 2$$\lambda_2 = 8$.
+$\lambda_1 = 2$, $\lambda_2 = 8$.
 
 **Eigenvector for $\lambda_1 = 2$:**
 
@@ -1296,7 +1296,7 @@ $$\det(A - \lambda I) = (3 - \lambda)(-\lambda) - (-2)(1) = \lambda^2 - 3\lambda
 
 $$(\lambda - 1)(\lambda - 2) = 0$$
 
-$\lambda_1 = 1$$\lambda_2 = 2$.
+$\lambda_1 = 1$, $\lambda_2 = 2$.
 
 **Eigenvector for $\lambda_1 = 1$:**
 
@@ -1324,7 +1324,7 @@ $y$-axis with scale factor $3$. Find the single matrix and describe its effect o
 
 $$M = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}$$
 
-The unit square (area = 1) is mapped to a rectangle with vertices $(0,0)$$(2,0)$$(2,3)$$(0,3)$. The
+The unit square (area = 1) is mapped to a rectangle with vertices $(0,0)$, $(2,0)$, $(2,3)$, $(0,3)$. The
 new area is $6$.
 
 Area scale factor: $|\det(M)| = 6$.
@@ -1377,7 +1377,7 @@ From $\mathbf{s}P = \mathbf{s}$:
 
 $0.6s_1 + 0.4s_2 = s_1 \implies -0.4s_1 + 0.4s_2 = 0 \implies s_1 = s_2$
 
-With $s_1 + s_2 = 1$: $s_1 = 0.5$$s_2 = 0.5$.
+With $s_1 + s_2 = 1$: $s_1 = 0.5$, $s_2 = 0.5$.
 
 Steady state: $\begin{pmatrix} 0.5 & 0.5 \end{pmatrix}$.
 

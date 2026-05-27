@@ -41,7 +41,7 @@ Acceleration is also a vector. The SI unit is m s$^{-2}$.
 ## 2. Derivation of the SUVAT Equations
 
 For **uniform acceleration** (constant $a$), we derive five equations relating the kinematic
-Variables $s$$u$$v$$a$And $t$.
+Variables $s$, $u$, $v$, $a$And $t$.
 
 ### Equation 1: $v = u + at$
 
@@ -431,9 +431,9 @@ $\mathbf{r}_{BA} \cdot \mathbf{v}_{BA} = 0$.
 <summary>Problem 1</summary>
 A stone is thrown vertically upward with speed $15.0$ m s$^{-1}$. Find: (a) the maximum height reached, (b) the time to reach maximum height, (c) the total time of flight, (d) the speed when it returns to the thrower's hand.
 
-**Answer.** (a) $v^2 = u^2 + 2as$: $0 = 15^2 - 2(9.81)s$$s = \frac{225}{19.62} = 11.5$ m.
+**Answer.** (a) $v^2 = u^2 + 2as$: $0 = 15^2 - 2(9.81)s$, $s = \frac{225}{19.62} = 11.5$ m.
 
-(b) $v = u + at$: $0 = 15 - 9.81t$$t = 1.53$ s.
+(b) $v = u + at$: $0 = 15 - 9.81t$, $t = 1.53$ s.
 
 (c) By symmetry (no air resistance), $T = 2t = 3.06$ s.
 
@@ -464,7 +464,7 @@ M.
 <summary>Problem 3</summary>
 A ball is thrown from a cliff of height $40.0$ m with horizontal velocity $12.0$ m s$^{-1}$. Find: (a) the time to hit the ground, (b) the horizontal distance from the cliff base, (c) the vertical component of velocity at impact, (d) the magnitude of the final velocity.
 
-**Answer.** (a) Vertical: $s = ut + \frac{1}{2}at^2$$40 = 0 + \frac{1}{2}(9.81)t^2$
+**Answer.** (a) Vertical: $s = ut + \frac{1}{2}at^2$, $40 = 0 + \frac{1}{2}(9.81)t^2$
 $t = \sqrt◆LB◆\frac{80}{9.81}◆RB◆ = 2.86$ s.
 
 (b) $R = v_x t = 12.0 \times 2.86 = 34.3$ m.
@@ -497,7 +497,7 @@ Two balls are thrown simultaneously from the same height. Ball A is thrown verti
 
 **Answer.** For Ball A: upward first, then downward. Time to reach max height:
 $t_1 = 20/9.81 = 2.04$ s, max height above launch: $20^2/(2 \times 9.81) = 20.4$ m, total height
-Above ground = $50.4$ m. Time to fall from 50.4 m: $50.4 = \frac{1}{2}(9.81)t_2^2$$t_2 = 3.21$ s.
+Above ground = $50.4$ m. Time to fall from 50.4 m: $50.4 = \frac{1}{2}(9.81)t_2^2$, $t_2 = 3.21$ s.
 Total: $t_A = 2.04 + 3.21 = 5.25$ s.
 
 For Ball B: $30 = 20t + \frac{1}{2}(9.81)t^2$. Solving: $4.905t^2 + 20t - 30 = 0$

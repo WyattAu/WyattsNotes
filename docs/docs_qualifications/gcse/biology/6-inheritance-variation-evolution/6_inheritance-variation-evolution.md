@@ -687,7 +687,7 @@ Codominance and incomplete dominance.
 In codominance, both alleles are expressed fully in the heterozygote. Neither allele is dominant or
 Recessive. The heterozygote shows both phenotypes simultaneously.
 
-**Example: Blood groups.** Human ABO blood groups are determined by three alleles: $I^A$$I^B$And
+**Example: Blood groups.** Human ABO blood groups are determined by three alleles: $I^A$, $I^B$And
 $i$. $I^A$ and $I^B$ are codominant to each other, and both are dominant over $i$.
 
 | Genotype  | Blood group | Phenotype                          |
@@ -736,7 +736,7 @@ Phenotypic ratio: 1 red : 2 pink : 1 white.
 
 Some genes have more than two alleles in the population, although any individual can only carry two
 Alleles (one on each chromosome). The ABO blood group system is an example: there are three alleles
-($I^A$$I^B$And $i$), but each person carries only two of them.
+($I^A$, $I^B$And $i$), but each person carries only two of them.
 
 ## 7. Higher Tier: Pedigree Charts
 

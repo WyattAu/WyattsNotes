@@ -89,7 +89,7 @@ The determinant is computed by _cofactor expansion_ along any row or column:
 
 $$\boxed{\det(\mathbf{A}) = a_{11}\begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix} - a_{12}\begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33} \end{vmatrix} + a_{13}\begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix}}$$
 
-The signs alternate $+$$-$$+$ along the first row (following the checkerboard pattern).
+The signs alternate $+$, $-$, $+$ along the first row (following the checkerboard pattern).
 
 ### 2.3 Properties of Determinants
 
@@ -409,7 +409,7 @@ $\det\!\begin{pmatrix} 4 - \lambda & 1 \\ 2 & 3 - \lambda \end{pmatrix} = 0$
 
 $$(4 - \lambda)(3 - \lambda) - 2 = \lambda^2 - 7\lambda + 10 = (\lambda - 5)(\lambda - 2) = 0$$
 
-Eigenvalues: $\lambda_1 = 5$$\lambda_2 = 2$.
+Eigenvalues: $\lambda_1 = 5$, $\lambda_2 = 2$.
 
 **For $\lambda_1 = 5$:**
 $\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \implies -x + y = 0 \implies y = x$.
@@ -815,7 +815,7 @@ $y = -x$.
 ### Example 8.4: Determinant as a scaling factor
 
 **Problem.** The matrix $\mathbf{T} = \begin{pmatrix}2&1\\-1&3\end{pmatrix}$ represents a
-Transformation. A triangle has vertices $(0,0)$$(1,0)$$(0,1)$. Find the area of its image.
+Transformation. A triangle has vertices $(0,0)$, $(1,0)$, $(0,1)$. Find the area of its image.
 
 **Solution.** $\det(\mathbf{T}) = 6 - (-1) = 7$.
 
@@ -835,7 +835,7 @@ $\mathbf{BA} = \begin{pmatrix}0&0\\1&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{p
 
 $\boxed{[\mathbf{A},\mathbf{B}] = \begin{pmatrix}1&0\\0&-1\end{pmatrix}}$
 
-Since $[\mathbf{A},\mathbf{B}] \neq \mathbf{O}$$\mathbf{A}$ and $\mathbf{B}$ do not commute.
+Since $[\mathbf{A},\mathbf{B}] \neq \mathbf{O}$, $\mathbf{A}$ and $\mathbf{B}$ do not commute.
 
 ### Example 8.6: Matrix representing successive transformations
 

@@ -292,7 +292,7 @@ $$
 
 | Effect             | Mechanism                                                               |
 | ------------------ | ----------------------------------------------------------------------- |
-| Soil acidification | Leaches $\mathrm{Ca}^{2+}$$\mathrm{Mg}^{2+}$Releases $\mathrm{Al}^{3+}$ |
+| Soil acidification | Leaches $\mathrm{Ca}^{2+}$, $\mathrm{Mg}^{2+}$Releases $\mathrm{Al}^{3+}$ |
 | Lake acidification | Reduces biodiversity, mobilises toxic $\mathrm{Al}^{3+}$                |
 | Plant damage       | Damages leaves, inhibits root growth                                    |
 | Building corrosion | $\mathrm{CaCO}_3$ (limestone/marble) reacts with acid                   |
@@ -675,7 +675,7 @@ $$m(\mathrm{NH}_4\mathrm{Cl}) = 0.0575 \times 53.49 = 3.08\mathrm{ g}$$
 **Worked Example: Titration curve analysis for a polyprotic acid**
 
 $25.0\mathrm{ mL}$ of $0.100\mathrm{ M}$ $\mathrm{H}_3\mathrm{PO}_4$ ($K_{a1} = 7.5 \times 10^{-3}$
-$K_{a2} = 6.2 \times 10^{-8}$$K_{a3} = 4.8 \times 10^{-13}$) is titrated with $0.100\mathrm{ M}$
+$K_{a2} = 6.2 \times 10^{-8}$, $K_{a3} = 4.8 \times 10^{-13}$) is titrated with $0.100\mathrm{ M}$
 $\mathrm{NaOH}$. Calculate the $\mathrm{pH}$ at the first and second equivalence points and identify
 Suitable indicators.
 
@@ -722,7 +722,7 @@ A suitable indicator: phenolphthalein (8.3--10.0).
 
 - **Using $\mathrm{pOH} = 14 - \mathrm{pH}$ without specifying temperature**:
   $K_w = 1.0 \times 10^{-14}$ only at $25\degree\mathrm{C}$. At
-  $37\degree\mathrm{C}$$K_w \approx 2.4 \times 10^{-14}$So $\mathrm{pH} + \mathrm{pOH} = 13.62$.
+  $37\degree\mathrm{C}$, $K_w \approx 2.4 \times 10^{-14}$So $\mathrm{pH} + \mathrm{pOH} = 13.62$.
   Always state the temperature assumption explicitly.
 
 - **Applying Henderson-Hasselbalch to strong acid--base mixtures**: The equation requires a weak
@@ -770,7 +770,7 @@ A suitable indicator: phenolphthalein (8.3--10.0).
    assumptions and justify their validity. **[Medium]**
 
 2. A buffer is prepared by dissolving $4.10\mathrm{ g}$ of sodium ethanoate
-   ($\mathrm{CH}_3\mathrm{COONa}$$M = 82.03\mathrm{ g/mol}$) in $250\mathrm{ mL}$ of
+   ($\mathrm{CH}_3\mathrm{COONa}$, $M = 82.03\mathrm{ g/mol}$) in $250\mathrm{ mL}$ of
    $0.200\mathrm{ M}$ ethanoic acid ($\mathrm{p}K_a = 4.76$). (a) Calculate the buffer
    $\mathrm{pH}$. (b) Calculate the new $\mathrm{pH}$ after adding $5.0\mathrm{ mL}$ of
    $0.100\mathrm{ M}$ $\mathrm{HCl}$. (c) Calculate the percentage change in $\mathrm{pH}$ and

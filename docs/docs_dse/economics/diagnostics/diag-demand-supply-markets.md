@@ -23,15 +23,15 @@ PED.
 
 Midpoint method: $PED = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}}$
 
-**Cinema 1:** $\Delta Q = 350 - 500 = -150$$\bar{Q} = (500 + 350)/2 = 425$.
-$\Delta P = 100 - 80 = 20$$\bar{P} = (80 + 100)/2 = 90$.
+**Cinema 1:** $\Delta Q = 350 - 500 = -150$, $\bar{Q} = (500 + 350)/2 = 425$.
+$\Delta P = 100 - 80 = 20$, $\bar{P} = (80 + 100)/2 = 90$.
 
 $PED = \frac{-150/425}{20/90} = \frac{-0.3529}{0.2222} = -1.59$
 
 $|PED| = 1.59 \gt 1$: Demand is **elastic**.
 
-**Cinema 2:** $\Delta Q = 380 - 400 = -20$$\bar{Q} = (400 + 380)/2 = 390$.
-$\Delta P = 66 - 60 = 6$$\bar{P} = (60 + 66)/2 = 63$.
+**Cinema 2:** $\Delta Q = 380 - 400 = -20$, $\bar{Q} = (400 + 380)/2 = 390$.
+$\Delta P = 66 - 60 = 6$, $\bar{P} = (60 + 66)/2 = 63$.
 
 $PED = \frac{-20/390}{6/63} = \frac{-0.0513}{0.0952} = -0.54$
 
@@ -105,7 +105,7 @@ $PES = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}} = \frac{100/280}{20/60} = \
 
 $PES \approx 1.07 \gt 1$: Supply is **unit elastic / slightly elastic**.
 
-(b) The restaurant starts supplying when $Q_s = 0$: $-20 + 5P = 0$$P = 4$. The restaurant needs a
+(b) The restaurant starts supplying when $Q_s = 0$: $-20 + 5P = 0$, $P = 4$. The restaurant needs a
 Minimum price of $\$4$ to cover its variable costs before it begins supplying. Below this price, the
 Restaurant would shut down in the short run.
 

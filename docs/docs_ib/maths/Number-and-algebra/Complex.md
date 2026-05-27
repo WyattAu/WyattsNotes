@@ -327,7 +327,7 @@ Polynomial.
 
 **Solution:**
 
-$$
+$, $
 \begin`\{aligned}`
  P(z) &= (z - 2)(z - (1+i))(z - (1-i))\\
  &= (z - 2)\left((z - 1)^2 + 1\right)\\
@@ -335,7 +335,7 @@ $$
  &= z^3 - 2z^2 + 2z - 2z^2 + 4z - 4\\
  &= z^3 - 4z^2 + 6z - 4
 \end`\{aligned}`
-$$
+$, $
 
 ## Summary of Forms
 
@@ -357,64 +357,64 @@ Follow simple, elegant rules.
 
 Let $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$. Then:
 
-$$
+$, $
 Z_1 z_2 = r_1 r_2 \cdot e^{i(\theta_1 + \theta_2)}
-$$
+$, $
 
 **Proof:**
 
-$$
+$, $
 \begin`\{aligned}`
  z_1 z_2 &= r_1 e^{i\theta_1} \cdot r_2 e^{i\theta_2}\\
  &= r_1 r_2 \cdot e^{i\theta_1 + i\theta_2}\\
  &= r_1 r_2 \cdot e^{i(\theta_1 + \theta_2)}
 \end`\{aligned}`
-$$
+$, $
 
 Therefore:
 
-$$
+$, $
 |z_1 z_2| = |z_1||z_2|, \qquad \arg(z_1 z_2) = \arg(z_1) + \arg(z_2)
-$$
+$, $
 
 Note that the argument sum may exceed $\pi$ or fall below $-\pi$So normalise to the principal
 Argument by adding or subtracting $2\pi$ as needed.
 
 ### Division
 
-$$
+$, $
 \frac{z_1}{z_2} = \frac{r_1}{r_2} \cdot e^{i(\theta_1 - \theta_2)}, \qquad z_2 \neq 0
-$$
+$, $
 
 **Proof:**
 
-$$
+$, $
 \begin`\{aligned}`
  \frac{z_1}{z_2} &= \frac{r_1 e^{i\theta_1}}{r_2 e^{i\theta_2}}\\
  &= \frac{r_1}{r_2} \cdot e^{i\theta_1} \cdot e^{-i\theta_2}\\
  &= \frac{r_1}{r_2} \cdot e^{i(\theta_1 - \theta_2)}
 \end`\{aligned}`
-$$
+$, $
 
 Therefore:
 
-$$
+$, $
 \left|\frac{z_1}{z_2}\right| = \frac{|z_1|}{|z_2|}, \qquad \arg\!\left(\frac{z_1}{z_2}\right) = \arg(z_1) - \arg(z_2)
-$$
+$, $
 
 ### Powers
 
 Applying multiplication repeatedly:
 
-$$
+$, $
 Z^n = r^n e^{in\theta}, \qquad n \in \mathbb{Z}
-$$
+$, $
 
 Therefore:
 
-$$
+$, $
 |z^n| = |z|^n, \qquad \arg(z^n) = n\arg(z)
-$$
+$, $
 
 ### Worked Example: Product and Quotient
 
@@ -423,20 +423,20 @@ Cartesian form.
 
 **Solution:**
 
-$$
+$, $
 \begin`\{aligned}`
  z_1 z_2 &= (2)(3) \cdot e^{i(\pi/3 - \pi/6)} = 6e^{i\pi/6}\\
  &= 6\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right)\\
  &= 6\left(\frac{\sqrt{3}}{2} + i \cdot \frac{1}{2}\right) = 3\sqrt{3} + 3i
 \end`\{aligned}`
-$$
+$, $
 
-$$
+$, $
 \begin`\{aligned}`
  \frac{z_1}{z_2} &= \frac{2}{3} \cdot e^{i(\pi/3 - (-\pi/6))} = \frac{2}{3} e^{i\pi/2}\\
  &= \frac{2}{3}\left(\cos\frac{\pi}{2} + i\sin\frac{\pi}{2}\right) = \frac{2}{3}i
 \end`\{aligned}`
-$$
+$, $
 
 ### Worked Example: Argument of a Product
 
@@ -451,9 +451,9 @@ Convert each to modulus-argument form:
 
 Then:
 
-$$
+$, $
 \arg(z_1 z_2) = -\frac{\pi}{4} + \left(-\frac{5\pi}{6}\right) = -\frac{3\pi + 10\pi}{12} = -\frac{13\pi}{12}
-$$
+$, $
 
 Normalise to the principal value: $-\frac{13\pi}{12} + 2\pi = \frac{11\pi}{12}$.
 
@@ -465,15 +465,15 @@ The Argand diagram allows geometric problems to be expressed algebraically using
 
 The distance between points representing $z_1$ and $z_2$ is:
 
-$$
+$, $
 D = |z_1 - z_2|
-$$
+$, $
 
 **Proof:** If $z_1 = a + bi$ and $z_2 = c + di$Then $z_1 - z_2 = (a - c) + (b - d)i$And:
 
-$$
+$, $
 |z_1 - z_2| = \sqrt{(a-c)^2 + (b-d)^2}
-$$
+$, $
 
 This is exactly the distance formula in $\mathbb{R}^2$.
 
@@ -481,24 +481,24 @@ This is exactly the distance formula in $\mathbb{R}^2$.
 
 The midpoint of the segment joining $z_1$ and $z_2$ is:
 
-$$
+$, $
 M = \frac{z_1 + z_2}{2}
-$$
+$, $
 
 ### Perpendicular Bisector (Locus)
 
 The perpendicular bisector of the segment joining $z_1$ and $z_2$ is the set of all points $z$
 Satisfying:
 
-$$
+$, $
 |z - z_1| = |z - z_2|
-$$
+$, $
 
 Expanding in Cartesian form: if $z_1 = a + bi$ and $z_2 = c + di$Then
 
-$$
+$, $
 |z - z_1|^2 = |z - z_2|^2 \implies (x - a)^2 + (y - b)^2 = (x - c)^2 + (y - d)^2
-$$
+$, $
 
 Which simplifies to a linear equation in $x$ and $y$.
 
@@ -507,15 +507,15 @@ Which simplifies to a linear equation in $x$ and $y$.
 The set of all points at a fixed distance $r$ from $z_0$ is the circle with centre $z_0$ and radius
 $r$:
 
-$$
+$, $
 |z - z_0| = r
-$$
+$, $
 
 In Cartesian form, with $z_0 = x_0 + iy_0$:
 
-$$
+$, $
 (x - x_0)^2 + (y - y_0)^2 = r^2
-$$
+$, $
 
 ### Half-Planes and Lines
 
@@ -526,9 +526,9 @@ $z_2$. The boundary $|z - z_1| = |z - z_2|$ is the perpendicular bisector.
 
 A line through $z_1$ and $z_2$ can be parameterised as:
 
-$$
+$, $
 Z = z_1 + t(z_2 - z_1), \quad t \in \mathbb{R}
-$$
+$, $
 
 Equivalently, a line with equation $\mathrm{Re}(\bar{a}\, z) = c$ for some complex constant
 $a \neq 0$ and real constant $c$.
@@ -537,9 +537,9 @@ $a \neq 0$ and real constant $c$.
 
 The shortest distance from the origin to the line $\mathrm{Re}(\bar{a}\, z) = c$ is:
 
-$$
+$, $
 D = \frac{|c|}{|a|}
-$$
+$, $
 
 ### Worked Example: Locus as a Circle
 
@@ -556,13 +556,13 @@ $z_1 = 1 + 2i$ and $z_2 = 5 - 2i$.
 
 **Solution:**
 
-$$
+$, $
 |z - z_1| = |z - z_2| \implies |z - 1 - 2i|^2 = |z - 5 + 2i|^2
-$$
+$, $
 
 Let $z = x + iy$:
 
-$$
+$, $
 \begin`\{aligned}`
  (x - 1)^2 + (y - 2)^2 &= (x - 5)^2 + (y + 2)^2\\
  x^2 - 2x + 1 + y^2 - 4y + 4 &= x^2 - 10x + 25 + y^2 + 4y + 4\\
@@ -570,7 +570,7 @@ $$
  8x - 8y &= 24\\
  x - y &= 3
 \end`\{aligned}`
-$$
+$, $
 
 The perpendicular bisector is the line $x - y = 3$.
 
@@ -580,18 +580,18 @@ The perpendicular bisector is the line $x - y = 3$.
 
 **Solution:** Let $z = x + iy$:
 
-$$
+$, $
 \begin`\{aligned}`
  x^2 + y^2 &= 25 \tag{1}\\
  (x - 3)^2 + y^2 &= 16 \tag{2}
 \end`\{aligned}`
-$$
+$, $
 
 Subtracting $(2)$ from $(1)$:
 
-$$
+$, $
 X^2 - (x - 3)^2 = 9 \implies x^2 - x^2 + 6x - 9 = 9 \implies x = 3
-$$
+$, $
 
 Substituting into $(1)$: $9 + y^2 = 25 \implies y^2 = 16 \implies y = \pm 4$.
 
@@ -601,9 +601,9 @@ The points of intersection are $z = 3 + 4i$ and $z = 3 - 4i$.
 
 **Theorem:** For all integers $n$
 
-$$
+$, $
 \left(re^{i\theta}\right)^n = r^n e^{in\theta}
-$$
+$, $
 
 ### Proof by Mathematical Induction
 
@@ -611,52 +611,52 @@ $$
 
 **Inductive hypothesis:** Assume the result holds for $n = k$I.e.
 
-$$
+$, $
 \left(re^{i\theta}\right)^k = r^k e^{ik\theta}
-$$
+$, $
 
 **Inductive step ($n = k + 1$):**
 
-$$
+$, $
 \begin`\{aligned}`
  \left(re^{i\theta}\right)^{k+1} &= \left(re^{i\theta}\right)^k \cdot re^{i\theta}\\
  &= r^k e^{ik\theta} \cdot r e^{i\theta} \quad \mathrm{(by hypothesis)}\\
  &= r^{k+1} \cdot e^{i(k\theta + \theta)}\\
  &= r^{k+1} e^{i(k+1)\theta}
 \end`\{aligned}`
-$$
+$, $
 
 So the result holds for $n = k + 1$. By induction, the theorem is true for all $n \in \mathbb{N}$.
 
 **Negative integers:** For $n = -m$ where $m \in \mathbb{N}$:
 
-$$
+$, $
 \left(re^{i\theta}\right)^{-m} = \frac{1}{\left(re^{i\theta}\right)^m} = \frac{1}{r^m e^{im\theta}} = r^{-m} e^{-im\theta} = r^n e^{in\theta}
-$$
+$, $
 
 ### Connection to the Binomial Theorem
 
 Expanding $(\cos\theta + i\sin\theta)^n$ using the binomial theorem and equating with De Moivre's
 Result gives trigonometric identities. For $n = 3$:
 
-$$
+$, $
 \begin`\{aligned}`
  \cos 3\theta + i\sin 3\theta &= (\cos\theta + i\sin\theta)^3\\
  &= \cos^3\theta + 3i\cos^2\theta\sin\theta - 3\cos\theta\sin^2\theta - i\sin^3\theta
 \end`\{aligned}`
-$$
+$, $
 
 Equating real parts:
 
-$$
+$, $
 \cos 3\theta = \cos^3\theta - 3\cos\theta\sin^2\theta = 4\cos^3\theta - 3\cos\theta
-$$
+$, $
 
 Equating imaginary parts:
 
-$$
+$, $
 \sin 3\theta = 3\cos^2\theta\sin\theta - \sin^3\theta = 3\sin\theta - 4\sin^3\theta
-$$
+$, $
 
 ## Additional Worked Examples
 
@@ -666,24 +666,24 @@ $$
 
 **Solution:** Factor:
 
-$$
+$, $
 Z(z^4 + z^2 + 1) = 0
-$$
+$, $
 
 So $z = 0$ is one root. For $z^4 + z^2 + 1 = 0$Substitute $w = z^2$:
 
-$$
+$, $
 W^2 + w + 1 = 0 \implies w = \frac{-1 \pm \sqrt{1 - 4}}{2} = \frac{-1 \pm i\sqrt{3}}{2}
-$$
+$, $
 
 So $z^2 = e^{\pm 2\pi i/3}$. Taking square roots:
 
-$$
+$, $
 \begin`\{aligned}`
  z^2 &= e^{2\pi i/3} \implies z = \pm\, e^{\pi i/3} = \pm\left(\frac{1}{2} + i\frac{\sqrt{3}}{2}\right)\\
  z^2 &= e^{-2\pi i/3} \implies z = \pm\, e^{-\pi i/3} = \pm\left(\frac{1}{2} - i\frac{\sqrt{3}}{2}\right)
 \end`\{aligned}`
-$$
+$, $
 
 The five roots are $0,\; \pm\frac{1}{2} \pm i\frac{\sqrt{3}}{2}$.
 
@@ -1016,7 +1016,7 @@ the area of the triangle.
 **Solution:** Using the determinant formula for the area of a triangle with vertices at complex
 Numbers:
 
-$$
+$, $
 \begin`\{aligned}`
  \mathrm{Area} &= \frac{1}{2}\left|\mathrm{Im}\!\left(\bar{z}_2 \cdot z_3\right)\right|\\
  &= \frac{1}{2}\left|\mathrm{Im}\!\left((4 - 2i)(1 + 5i)\right)\right|\\
@@ -1024,7 +1024,7 @@ $$
  &= \frac{1}{2}\left|\mathrm{Im}(14 + 18i)\right|\\
  &= \frac{1}{2} \cdot 18 = 9
 \end`\{aligned}`
-$$
+$, $
 
 </details>
 
@@ -1040,21 +1040,21 @@ Those two points.
 
 Algebraically, set $\mathrm{Im}\!\left(\frac{z + i}{z - 1}\right) = 0$. Let $z = x + iy$:
 
-$$
+$, $
 \frac{z + i}{z - 1} = \frac{x + i(y + 1)}{(x - 1) + iy}
-$$
+$, $
 
 Multiplying numerator and denominator by the conjugate of the denominator:
 
-$$
+$, $
 \frac{(x + i(y+1))((x-1) - iy)}{(x-1)^2 + y^2}
-$$
+$, $
 
 The imaginary part of the numerator:
 
-$$
+$, $
 X(-y) + (y + 1)(x - 1) = -xy + xy + x - y - 1 = x - y - 1
-$$
+$, $
 
 Setting this to zero: $x - y - 1 = 0$I.e. $y = x - 1$.
 

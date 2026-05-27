@@ -30,13 +30,13 @@ slug: 4-geometry
 
 **Theorem (Angle sum of a triangle).** The interior angles of any triangle sum to $180^{\circ}$.
 
-**Proof.** Let triangle $\triangle ABC$ have vertices $A$$B$$C$. Draw a line through $C$ Parallel to
+**Proof.** Let triangle $\triangle ABC$ have vertices $A$, $B$, $C$. Draw a line through $C$ Parallel to
 $AB$. Label the intersection points of this line with the exterior of the triangle as $D$ and $E$
 (so $D$ is on the side of $B$ and $E$ is on the side of $A$).
 
 By alternate angles: $\angle B = \angle BCD$ and $\angle A = \angle ACE$.
 
-Since $D$$C$$E$ lie on a straight line: $\angle BCD + \angle ACB + \angle ACE = 180^{\circ}$.
+Since $D$, $C$, $E$ lie on a straight line: $\angle BCD + \angle ACB + \angle ACE = 180^{\circ}$.
 
 Therefore $\angle A + \angle B + \angle C = 180^{\circ}$. $\blacksquare$
 
@@ -239,7 +239,7 @@ Used when you know: an angle and its opposite side, plus one other angle or side
 Express the height as both $b \sin A$ and $a \sin B$. Setting equal: $b \sin A = a \sin B$Giving
 $\frac{a}{\sin A} = \frac{b}{\sin B}$. $\blacksquare$
 
-**Worked Example (Higher Tier).** In $\triangle ABC$$a = 10$ cm, $A = 45^{\circ}$ $B = 70^{\circ}$.
+**Worked Example (Higher Tier).** In $\triangle ABC$, $a = 10$ cm, $A = 45^{\circ}$ $B = 70^{\circ}$.
 Find $b$.
 
 $$\frac{b}{\sin 70^{\circ}} = \frac{10}{\sin 45^{\circ}}$$
@@ -258,12 +258,12 @@ $$\cos A = \frac{b^2 + c^2 - a^2}{2bc}$$
 Used when you know: two sides and the included angle (to find the third side), or all three sides
 (to find an angle).
 
-**Worked Example.** In $\triangle ABC$$a = 8$ cm, $b = 5$ cm, $c = 7$ cm. Find angle $A$.
+**Worked Example.** In $\triangle ABC$, $a = 8$ cm, $b = 5$ cm, $c = 7$ cm. Find angle $A$.
 
 $$\cos A = \frac{25 + 49 - 64}{2 \times 5 \times 7} = \frac{10}{70} = \frac{1}{7}$$
 $$A = \cos^{-1}\!\left(\frac{1}{7}\right) = 81.8^{\circ} \mathrm{ (to 1 d.p.)$$
 
-**Worked Example (Higher Tier).** In $\triangle ABC$$a = 12$ cm, $b = 8$ cm, $C = 60^{\circ}$. Find
+**Worked Example (Higher Tier).** In $\triangle ABC$, $a = 12$ cm, $b = 8$ cm, $C = 60^{\circ}$. Find
 $c$.
 
 $$c^2 = 144 + 64 - 2 \times 12 \times 8 \times \cos 60^{\circ}$$ $$c^2 = 208 - 96 = 112$$
@@ -285,7 +285,7 @@ $$\mathrm{Area = \frac{1}{2} \times 10 \times 8 \times \sin 45^{\circ} = 40 \tim
 When using the sine rule to find an angle, there may be two possible solutions: $\theta$ and
 $180^{\circ} - \theta$.
 
-**Worked Example.** In $\triangle ABC$$a = 8$ cm, $b = 10$ cm, $A = 40^{\circ}$. Find angle $B$.
+**Worked Example.** In $\triangle ABC$, $a = 8$ cm, $b = 10$ cm, $A = 40^{\circ}$. Find angle $B$.
 
 $$\frac{\sin B}{10} = \frac{\sin 40^{\circ}}{8}$$
 $$\sin B = \frac{10 \sin 40^{\circ}}{8} = \frac{10 \times 0.6428}{8} = 0.8035$$
@@ -355,7 +355,7 @@ Adding: $\angle ABC + \angle ADC = \frac{1}{2} \times 360^{\circ} = 180^{\circ}$
 
 ### 3.5 Worked Examples with Circle Theorems
 
-**Worked Example.** $A$$B$$C$And $D$ lie on a circle. $\angle ABC = 75^{\circ}$ and
+**Worked Example.** $A$, $B$, $C$And $D$ lie on a circle. $\angle ABC = 75^{\circ}$ and
 $\angle CAD = 40^{\circ}$. Find $\angle ABD$.
 
 $\angle ABC$ and $\angle ADC$ are opposite angles of cyclic quadrilateral $ABCD$:
@@ -379,7 +379,7 @@ Since $OA = OC$ (radii), $\triangle OAC$ is isosceles: $\angle OCA = \angle OAC 
 **Worked Example (Higher Tier).** $AB$ and $AC$ are tangents to a circle at points $B$ and $C$
 Respectively. Prove that $AB = AC$.
 
-Join $O$ to $A$$B$And $C$. Since $OB$ and $OC$ are radii, and tangents are perpendicular to Radii at
+Join $O$ to $A$, $B$And $C$. Since $OB$ and $OC$ are radii, and tangents are perpendicular to Radii at
 the point of contact, $\angle OBA = \angle OCA = 90^{\circ}$.
 
 $OA$ is common, and $OB = OC$ (radii). By RHS (right angle, hypotenuse, side),
@@ -491,7 +491,7 @@ $\begin{pmatrix} 14 \\ 11 \end{pmatrix}$. Show that $A$$B$And $C$ are collinear.
 $$\overrightarrow{AB} = \begin{pmatrix} 6 \\ 4 \end{pmatrix}, \qquad \overrightarrow{BC} = \begin{pmatrix} 6 \\ 4 \end{pmatrix}$$
 
 Since $\overrightarrow{AB} = \overrightarrow{BC}$The vectors are parallel and share point $B$So
-$A$$B$$C$ are collinear. $\blacksquare$
+$A$, $B$, $C$ are collinear. $\blacksquare$
 
 ### 5.3 Column Vectors in Geometry
 
@@ -640,7 +640,7 @@ Height: $h = \sqrt{6^2 - (3\sqrt{2})^2} = \sqrt{36 - 18} = \sqrt{18} = 3\sqrt{2}
 1. A regular hexagon and a regular octagon share a common side. Find the size of the angle between
    them.
 
-2. In $\triangle ABC$$a = 12$ cm, $b = 9$ cm, and $B = 40^{\circ}$. Find angle $A$.
+2. In $\triangle ABC$, $a = 12$ cm, $b = 9$ cm, and $B = 40^{\circ}$. Find angle $A$.
 
 3. Prove that the exterior angle of a triangle equals the sum of the two interior opposite angles.
 
@@ -653,7 +653,7 @@ Height: $h = \sqrt{6^2 - (3\sqrt{2})^2} = \sqrt{36 - 18} = \sqrt{18} = 3\sqrt{2}
 6. Two similar cones have heights in the ratio $3 : 5$. The volume of the smaller cone is 108
    cm$^3$. Find the volume of the larger cone.
 
-7. $A$$B$And $C$ are points on a circle with centre $O$. Angle $ABC = 55^{\circ}$. Find angle $AOC$.
+7. $A$, $B$And $C$ are points on a circle with centre $O$. Angle $ABC = 55^{\circ}$. Find angle $AOC$.
 
 8. A triangle has sides 7 cm, 8 cm, and 10 cm. Determine whether it is acute, right-angled, or
    obtuse.

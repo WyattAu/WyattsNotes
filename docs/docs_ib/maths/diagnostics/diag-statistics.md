@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-For a dataset, the quartiles are $Q_1 = 42$$Q_2 = 55$And $Q_3 = 70$.
+For a dataset, the quartiles are $Q_1 = 42$, $Q_2 = 55$And $Q_3 = 70$.
 
 **(a)** Determine whether the data is positively skewed, negatively skewed, or symmetric.
 

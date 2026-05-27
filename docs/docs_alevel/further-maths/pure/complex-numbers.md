@@ -319,7 +319,7 @@ Express $z = -\sqrt{3} + i$ in modulus-argument form and hence find $z^8$.
 <details>
 <summary>Solution</summary>
 
-$r = \sqrt{3 + 1} = 2$$\theta = \pi - \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ = \dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
+$r = \sqrt{3 + 1} = 2$, $\theta = \pi - \dfrac◆LB◆\pi◆RB◆◆LB◆6◆RB◆ = \dfrac◆LB◆5\pi◆RB◆◆LB◆6◆RB◆$.
 
 $z = 2\,e^{i5\pi/6}$.
 
@@ -455,7 +455,7 @@ The complex numbers $z_1$ and $z_2$ satisfy $z_1 = 1 + i$ and $z_2 = 1 - \sqrt{3
 <details>
 <summary>Solution</summary>
 
-**(a)** $z_1 = \sqrt{2}\,e^{i\pi/4}$$z_2 = 2\,e^{-i\pi/3}$.
+**(a)** $z_1 = \sqrt{2}\,e^{i\pi/4}$, $z_2 = 2\,e^{-i\pi/3}$.
 
 $z_1 z_2 = 2\sqrt{2}\,e^{i(\pi/4 - \pi/3)} = 2\sqrt{2}\,e^{-i\pi/12}$.
 
@@ -629,7 +629,7 @@ The five roots lie on a circle of radius $2^{3/5}$Equally spaced starting from a
 ### Example 9.6: Complex conjugate roots and polynomial equations
 
 **Problem.** The cubic equation $z^3 + az^2 + bz + 12 = 0$ has a root $z = 1 + 2i$ where $a, b$ are
-Real. Find $a$$b$And all roots.
+Real. Find $a$, $b$And all roots.
 
 **Solution.** Since $a, b$ are real, the conjugate $1 - 2i$ is also a root.
 
