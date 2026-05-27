@@ -12,6 +12,10 @@
  * - Consecutive inline: $a$$b$ (fixed to $a$, $b$)
  * - Normal inline: $a$ text $b$ (preserved)
  *
+ * v3: Protects fenced code blocks, HTML comments, and single-line inline
+ * code spans containing $ from the state machine. This prevents false
+ * positives when $ appears inside code regions.
+ *
  * Usage:
  *   node scripts/fix-consecutive-math.mjs <file-or-directory> [--dry-run]
  */
@@ -20,6 +24,124 @@ import fs from 'fs';
 import path from 'path';
 
 const DRY_RUN = process.argv.includes('--dry-run');
+
+/**
+ * Pre-process content to protect code regions from the state machine.
+ * Handles: fenced code blocks (```) and HTML comments (<!-- -->).
+ * Also protects single-line inline code spans (`...`) that contain $ signs.
+ *
+ * Inline code spans are only protected when:
+ * - They are on a single line (no newlines between backticks)
+ * - They contain at least one $ character
+ * This avoids over-matching stray backticks in prose while still
+ * protecting cases like `$2b$12$hash` inside inline code.
+ *
+ * Returns the content with protected regions replaced by placeholders,
+ * plus a map to restore them afterward.
+ */
+function protectCodeRegions(content) {
+  const blocks = [];
+  let result = '';
+  let i = 0;
+
+  while (i < content.length) {
+    // Check for fenced code block ```
+    if (
+      content[i] === '`' &&
+      content[i + 1] === '`' &&
+      content[i + 2] === '`'
+    ) {
+      const start = i;
+      i += 3;
+      while (i < content.length) {
+        if (
+          content[i] === '`' &&
+          content[i + 1] === '`' &&
+          content[i + 2] === '`'
+        ) {
+          i += 3;
+          break;
+        }
+        i++;
+      }
+      const placeholder = `\x00CODEBLOCK${blocks.length}\x00`;
+      blocks.push(content.substring(start, i));
+      result += placeholder;
+    }
+    // Check for single-line inline code span containing $
+    else if (
+      content[i] === '`' &&
+      content[i + 1] !== '`' &&
+      content[i + 2] !== '`'
+    ) {
+      const start = i;
+      i += 1;
+      const lineEnd = content.indexOf('\n', i);
+      const searchLimit = lineEnd === -1 ? content.length : lineEnd;
+      let foundClose = false;
+      while (i < searchLimit) {
+        if (content[i] === '`') {
+          i += 1;
+          foundClose = true;
+          break;
+        }
+        i++;
+      }
+      if (foundClose) {
+        const span = content.substring(start, i);
+        // Only protect if it contains $ (avoid false matches on stray backticks)
+        if (span.includes('$')) {
+          const placeholder = `\x00CODEBLOCK${blocks.length}\x00`;
+          blocks.push(span);
+          result += placeholder;
+        } else {
+          result += span;
+        }
+      } else {
+        // No matching backtick on same line — not a code span, output as-is
+        result += content.substring(start, searchLimit);
+        i = searchLimit;
+      }
+    }
+    // Check for HTML comments <!-- ... -->
+    else if (
+      content[i] === '<' &&
+      content[i + 1] === '!' &&
+      content[i + 2] === '-' &&
+      content[i + 3] === '-'
+    ) {
+      const start = i;
+      i += 4;
+      while (i < content.length) {
+        if (
+          content[i] === '-' &&
+          content[i + 1] === '-' &&
+          content[i + 2] === '>'
+        ) {
+          i += 3;
+          break;
+        }
+        i++;
+      }
+      const placeholder = `\x00CODEBLOCK${blocks.length}\x00`;
+      blocks.push(content.substring(start, i));
+      result += placeholder;
+    }
+    else {
+      result += content[i];
+      i++;
+    }
+  }
+
+  return { text: result, blocks };
+}
+
+/**
+ * Restore code regions from placeholders.
+ */
+function restoreCodeRegions(text, blocks) {
+  return text.replace(/\x00CODEBLOCK(\d+)\x00/g, (_, id) => blocks[parseInt(id)]);
+}
 
 /**
  * State-machine parser for math delimiters.
@@ -124,13 +246,19 @@ function fixConsecutiveMath(content) {
 
 function processFile(filePath) {
   const raw = fs.readFileSync(filePath, 'utf8');
-  const { content, fixes } = fixConsecutiveMath(raw);
+
+  // Protect code blocks and inline code from the state machine
+  const { text, blocks } = protectCodeRegions(raw);
+  const { content, fixes } = fixConsecutiveMath(text);
+
+  // Restore code regions
+  const finalContent = restoreCodeRegions(content, blocks);
 
   if (fixes > 0) {
     if (DRY_RUN) {
       console.log(`  [DRY-RUN] ${filePath}: ${fixes} fixes would be applied`);
     } else {
-      fs.writeFileSync(filePath, content, 'utf8');
+      fs.writeFileSync(filePath, finalContent, 'utf8');
       console.log(`  [FIXED] ${filePath}: ${fixes} fixes`);
     }
     return fixes;
@@ -155,28 +283,33 @@ function processDirectory(dirPath) {
   return totalFixes;
 }
 
-// Main
-const nonFlagArgs = process.argv.slice(2).filter(a => !a.startsWith('--'));
-const target = nonFlagArgs[0];
-if (!target) {
-  console.error('Usage: node scripts/fix-consecutive-math.mjs <file-or-directory> [--dry-run]');
-  process.exit(1);
+// Export for testing, while keeping CLI behavior intact
+export { fixConsecutiveMath, protectCodeRegions, restoreCodeRegions };
+
+// Main (only run when executed directly, not when imported)
+if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
+  const nonFlagArgs = process.argv.slice(2).filter(a => !a.startsWith('--'));
+  const target = nonFlagArgs[0];
+  if (!target) {
+    console.error('Usage: node scripts/fix-consecutive-math.mjs <file-or-directory> [--dry-run]');
+    process.exit(1);
+  }
+
+  const targetPath = path.resolve(target);
+  if (!fs.existsSync(targetPath)) {
+    console.error(`Error: ${targetPath} does not exist`);
+    process.exit(1);
+  }
+
+  console.error(`Fixing consecutive inline math in: ${targetPath}${DRY_RUN ? ' (DRY RUN)' : ''}`);
+
+  const stat = fs.statSync(targetPath);
+  let totalFixes;
+  if (stat.isDirectory()) {
+    totalFixes = processDirectory(targetPath);
+  } else {
+    totalFixes = processFile(targetPath);
+  }
+
+  console.error(`\nTotal fixes: ${totalFixes}`);
 }
-
-const targetPath = path.resolve(target);
-if (!fs.existsSync(targetPath)) {
-  console.error(`Error: ${targetPath} does not exist`);
-  process.exit(1);
-}
-
-console.error(`Fixing consecutive inline math in: ${targetPath}${DRY_RUN ? ' (DRY RUN)' : ''}`);
-
-const stat = fs.statSync(targetPath);
-let totalFixes;
-if (stat.isDirectory()) {
-  totalFixes = processDirectory(targetPath);
-} else {
-  totalFixes = processFile(targetPath);
-}
-
-console.error(`\nTotal fixes: ${totalFixes}`);

@@ -514,7 +514,7 @@ int main() {
 ### 3. Escaping Special Characters in Replacement Strings
 
 In replacement strings passed to `std::regex_replace`The `$` character has special meaning. To
-insert a literal `$`, use `$$`. The matched text is `$&`, capture groups are `$1` through `$9`:
+insert a literal `$`, use `$, $`. The matched text is `$&`, capture groups are `$1` through `$9`:
 
 ```cpp
 #include <iostream>
@@ -529,9 +529,9 @@ int main() {
         text, std::regex(R"(\d+)"), "[$&]");
     std::cout << result << "\n";  // price: [100] USD
 
-    // $, $ for literal dollar sign
+    // $$ for literal dollar sign
     std::string result2 = std::regex_replace(
-        text, std::regex(R"(\d+)"), "$, $0");
+        text, std::regex(R"(\d+)"), "$$0");
     std::cout << result2 << "\n";  // price: $0 USD
 }
 ```
