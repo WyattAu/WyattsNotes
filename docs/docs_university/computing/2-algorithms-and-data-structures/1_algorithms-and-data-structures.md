@@ -413,11 +413,11 @@ values $\gt$ node value.
 **Theorem 2.3.** The expected height of a randomly built BST with $n$ distinct keys is $O(\log n)$.
 
 _Proof._ Let $X_n$ be the height of a BST built from $n$ random keys. Let $Y_n = 2^◆LB◆X_n◆RB◆$. Then
-$\mathrm◆LB◆E[Y_n] \leq \frac◆LB◆1◆RB◆◆LB◆4◆RB◆ \sum_◆LB◆i=0◆RB◆^◆LB◆n-1◆RB◆ \binom◆LB◆n◆RB◆◆LB◆i◆RB◆ \mathrm◆LB◆E[Y_i] \mathrm◆LB◆E[Y_◆LB◆n-1-i◆RB◆] / n$.
+$\mathrm◆LB◆E◆RB◆[Y_n] \leq \frac◆LB◆1◆RB◆◆LB◆4◆RB◆ \sum_◆LB◆i=0◆RB◆^◆LB◆n-1◆RB◆ \binom◆LB◆n◆RB◆◆LB◆i◆RB◆ \mathrm◆LB◆E◆RB◆[Y_i] \mathrm◆LB◆E◆RB◆[Y_◆LB◆n-1-i◆RB◆] / n$.
 Using the indicator random variable technique,
-$\mathrm◆LB◆E[Y_n] \leq \frac◆LB◆c^◆LB◆n+1◆RB◆◆RB◆◆LB◆n^◆LB◆3/2◆RB◆◆RB◆ \sum_◆LB◆i=0◆RB◆^◆LB◆n-1◆RB◆ \frac◆LB◆i^◆LB◆3/2◆RB◆(n-1-i)^◆LB◆3/2◆RB◆◆RB◆◆LB◆c^i c^◆LB◆n-1-i◆RB◆◆RB◆ \leq c \cdot n^◆LB◆3/2◆RB◆$
+$\mathrm◆LB◆E◆RB◆[Y_n] \leq \frac◆LB◆c^◆LB◆n+1◆RB◆◆RB◆◆LB◆n^◆LB◆3/2◆RB◆◆RB◆ \sum_◆LB◆i=0◆RB◆^◆LB◆n-1◆RB◆ \frac◆LB◆i^◆LB◆3/2◆RB◆(n-1-i)^◆LB◆3/2◆RB◆◆RB◆◆LB◆c^i c^◆LB◆n-1-i◆RB◆◆RB◆ \leq c \cdot n^◆LB◆3/2◆RB◆$
 for some constant $c$. Taking logs gives
-$\mathrm◆LB◆E[X_n] = \mathrm◆LB◆E[\log Y_n] \leq \log \mathrm◆LB◆E[Y_n] = O(\log n)$ by Jensen's inequality.
+$\mathrm◆LB◆E◆RB◆[X_n] = \mathrm◆LB◆E◆RB◆[\log Y_n] \leq \log \mathrm◆LB◆E◆RB◆[Y_n] = O(\log n)$ by Jensen's inequality.
 $\blacksquare$
 
 #### 2.4.1 AVL Trees
@@ -795,15 +795,15 @@ A graph $G = (V, E)$ can be represented by:
 
 - **Adjacency matrix:** $A_◆LB◆ij◆RB◆ = 1$ if $(i,j) \in E$. Space: $O(V^2)$. Edge lookup: $O(1)$.
 - **Adjacency list:** For each vertex, store a list of neighbours. Space: $O(V + E)$. Iterating over
-  neighbours: $O(\mathrm◆LB◆deg(v))$.
+  neighbours: $O(\mathrm◆LB◆deg◆RB◆(v))$.
 
 | Operation          | Adjacency Matrix | Adjacency List      |
 | ------------------ | ---------------- | ------------------- |
 | Space              | $O(V^2)$         | $O(V + E)$          |
-| Check edge $(u,v)$ | $O(1)$           | $O(\mathrm◆LB◆deg(u))$ |
-| Iterate neighbours | $O(V)$           | $O(\mathrm◆LB◆deg(v))$ |
+| Check edge $(u,v)$ | $O(1)$           | $O(\mathrm◆LB◆deg◆RB◆(u))$ |
+| Iterate neighbours | $O(V)$           | $O(\mathrm◆LB◆deg◆RB◆(v))$ |
 | Add edge           | $O(1)$           | $O(1)$              |
-| Remove edge        | $O(1)$           | $O(\mathrm◆LB◆deg(u))$ |
+| Remove edge        | $O(1)$           | $O(\mathrm◆LB◆deg◆RB◆(u))$ |
 
 :::caution Common Pitfall Choosing the wrong graph representation can make an algorithm
 asymptotically slower. Use adjacency matrices for dense graphs ($E \approx V^2$) and adjacency lists
@@ -884,7 +884,7 @@ QuickSort(A, lo, hi):
 ```
 
 **Partition (Lomuto):** Select the last element as pivot. Iterate through the array, maintaining
-that elements $A[\mathrm◆LB◆lo..i]$ are $\leq$ pivot and $A[i+1..j-1]$ are $>$ pivot.
+that elements $A[\mathrm◆LB◆lo◆RB◆..i]$ are $\leq$ pivot and $A[i+1..j-1]$ are $>$ pivot.
 
 **Theorem 3.5.** Quicksort runs in $O(n \log n)$ expected time and $O(n^2)$ worst-case time.
 
@@ -895,11 +895,11 @@ Let $X_◆LB◆ij◆RB◆$ be the indicator random variable that $z_i$ and $z_j$
 $z_1, \ldots, z_n$ are the sorted elements. Since elements are compared only if one is an ancestor
 of the other in the recursion tree, and the pivot is chosen uniformly at random:
 
-$$\mathrm◆LB◆E[X_◆LB◆ij◆RB◆] = \Pr(z_i \mathrm◆LB◆~and~ z_j \mathrm◆LB◆~are~compared) = \frac◆LB◆2◆RB◆◆LB◆j - i + 1◆RB◆$$
+$$\mathrm◆LB◆E◆RB◆[X_◆LB◆ij◆RB◆] = \Pr(z_i \mathrm◆LB◆~and~ z_j \mathrm◆LB◆~are~compared) = \frac◆LB◆2◆RB◆◆LB◆j - i + 1◆RB◆$$
 
 The total number of comparisons is $X = \sum_◆LB◆i < j◆RB◆ X_◆LB◆ij◆RB◆$So:
 
-$$\mathrm◆LB◆E[X] = \sum_◆LB◆i=1◆RB◆^◆LB◆n-1◆RB◆ \sum_◆LB◆j=i+1◆RB◆^◆LB◆n◆RB◆ \frac◆LB◆2◆RB◆◆LB◆j - i + 1◆RB◆ \leq \sum_◆LB◆k=1◆RB◆^◆LB◆n◆RB◆ n \cdot \frac◆LB◆2◆RB◆◆LB◆k+1◆RB◆ = O(n \log n)$$
+$$\mathrm◆LB◆E◆RB◆[X] = \sum_◆LB◆i=1◆RB◆^◆LB◆n-1◆RB◆ \sum_◆LB◆j=i+1◆RB◆^◆LB◆n◆RB◆ \frac◆LB◆2◆RB◆◆LB◆j - i + 1◆RB◆ \leq \sum_◆LB◆k=1◆RB◆^◆LB◆n◆RB◆ n \cdot \frac◆LB◆2◆RB◆◆LB◆k+1◆RB◆ = O(n \log n)$$
 
 Worst case occurs when the pivot is always the smallest or largest element (e.g., already sorted
 Array with first-element pivot): $T(n) = T(n-1) + O(n) = O(n^2)$. $\blacksquare$
@@ -1594,7 +1594,7 @@ knapsack of capacity $W$Maximise the total value without exceeding the capacity.
 
 **Recurrence:**
 
-$$dp[i][c] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if  i = 0 \mathrm◆LB◆ or  c = 0 \\ dp[i-1][c] & \mathrm◆LB◆if  w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm◆LB◆if  w_i \leq c \end◆LB◆cases◆RB◆$$
+$$dp[i][c] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  i = 0 \mathrm◆LB◆ or  c = 0 \\ dp[i-1][c] & \mathrm◆LB◆if◆RB◆  w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm◆LB◆if◆RB◆  w_i \leq c \end◆LB◆cases◆RB◆$$
 
 **Time:** $O(nW)$. **Space:** $O(nW)$ (can be reduced to $O(W)$ with 1D array).
 
@@ -1632,7 +1632,7 @@ insertions, deletions, and substitutions to transform $s$ into $t$.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin◆LB◆cases◆RB◆ j & \mathrm◆LB◆if  i = 0 \\ i & \mathrm◆LB◆if  j = 0 \\ dp[i-1][j-1] & \mathrm◆LB◆if  s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm◆LB◆if  s[i] \neq t[j] \end◆LB◆cases◆RB◆$$
+$$dp[i][j] = \begin◆LB◆cases◆RB◆ j & \mathrm◆LB◆if◆RB◆  i = 0 \\ i & \mathrm◆LB◆if◆RB◆  j = 0 \\ dp[i-1][j-1] & \mathrm◆LB◆if◆RB◆  s[i] = t[j] \\ 1 + \min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) & \mathrm◆LB◆if◆RB◆  s[i] \neq t[j] \end◆LB◆cases◆RB◆$$
 
 Where the three cases in the minimum are: delete from $s$Insert into $s$Substitute in $s$.
 
@@ -1670,7 +1670,7 @@ multiplications.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if  i = j \\ \min_◆LB◆i \leq k < j◆RB◆ (dp[i][k] + dp[k+1][j] + p_◆LB◆i-1◆RB◆ p_k p_j) & \mathrm◆LB◆if  i < j \end◆LB◆cases◆RB◆$$
+$$dp[i][j] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  i = j \\ \min_◆LB◆i \leq k < j◆RB◆ (dp[i][k] + dp[k+1][j] + p_◆LB◆i-1◆RB◆ p_k p_j) & \mathrm◆LB◆if◆RB◆  i < j \end◆LB◆cases◆RB◆$$
 
 **Time:** $O(n^3)$. **Space:** $O(n^2)$.
 
@@ -1705,12 +1705,12 @@ Minimum: $dp[1][3] = 4500$Split at $k=2$: $(A_1(A_2 A_3))$.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if  i = 0 \mathrm◆LB◆ or  j = 0 \\ dp[i-1][j-1] + 1 & \mathrm◆LB◆if  x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm◆LB◆if  x_i \neq y_j \end◆LB◆cases◆RB◆$$
+$$dp[i][j] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  i = 0 \mathrm◆LB◆ or  j = 0 \\ dp[i-1][j-1] + 1 & \mathrm◆LB◆if◆RB◆  x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm◆LB◆if◆RB◆  x_i \neq y_j \end◆LB◆cases◆RB◆$$
 
 **Time:** $O(mn)$. **Space:** $O(mn)$ (can be reduced to $O(\min(m,n))$ for the length only).
 
 _Proof of correctness._ If $x_i = y_j$Any LCS of $X[1..i]$ and $Y[1..j]$ must include $x_i$ So
-$\mathrm◆LB◆LCS = 1 + \mathrm◆LB◆LCS(X[1..i-1], Y[1..j-1])$. If $x_i \neq y_j$The LCS either Excludes
+$\mathrm◆LB◆LCS◆RB◆ = 1 + \mathrm◆LB◆LCS◆RB◆(X[1..i-1], Y[1..j-1])$. If $x_i \neq y_j$The LCS either Excludes
 $x_i$ or excludes $y_j$Giving the max of the two subproblems. $\blacksquare$
 
 ### 5.9 Worked Example: Coin Change
@@ -1720,7 +1720,7 @@ number of coins needed.
 
 **Recurrence:**
 
-$$dp[c] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if  c = 0 \\ \min_◆LB◆i: d_i \leq c◆RB◆(dp[c - d_i] + 1) & \mathrm◆LB◆if  c > 0 \end◆LB◆cases◆RB◆$$
+$$dp[c] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  c = 0 \\ \min_◆LB◆i: d_i \leq c◆RB◆(dp[c - d_i] + 1) & \mathrm◆LB◆if◆RB◆  c > 0 \end◆LB◆cases◆RB◆$$
 
 **Time:** $O(nM)$. **Space:** $O(M)$.
 
@@ -1810,7 +1810,7 @@ Transforms instances of $A$ into instances of $B$Preserving the answer.
 
 **Theorem 6.2 (Cook-Levin, 1971).** SAT is NP-complete.
 
-_Proof sketch._ We show that every problem in NP reduces to SAT. Let $L \in \mathrm◆LB◆NP$. There
+_Proof sketch._ We show that every problem in NP reduces to SAT. Let $L \in \mathrm◆LB◆NP◆RB◆$. There
 exists a polynomial-time non-deterministic Turing machine $M$ that decides $L$Running in time $p(n)$
 on inputs of length $n$. For an input $x$We construct a Boolean formula $\phi_x$ that is satisfiable
 if and only if $M$ accepts $x$.
@@ -1847,7 +1847,7 @@ Tour of total weight $\leq B$?
 
 To prove a problem $B$ is NP-complete:
 
-1. Show $B \in \mathrm◆LB◆NP$ (polynomial-time verifiable certificate).
+1. Show $B \in \mathrm◆LB◆NP◆RB◆$ (polynomial-time verifiable certificate).
 2. Show a known NP-complete problem $A$ reduces to $B$: $A \leq_p B$.
 
 **Example.** 3-SAT $\leq_p$ Vertex Cover: construct a graph from the 3-SAT formula where each
@@ -1873,8 +1873,8 @@ of clause $j$.
 number of variables and $m$ is the number of clauses.
 
 ($\Rightarrow$) If $\phi$ is satisfiable, include in the cover: for each variable, the literal
-vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm◆LB◆true$, $\bar◆LB◆x◆RB◆_1$ if
-$x_1 = \mathrm◆LB◆false$). This covers all literal edges ($k$ vertices). For each clause triangle, at
+vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm◆LB◆true◆RB◆$, $\bar◆LB◆x◆RB◆_1$ if
+$x_1 = \mathrm◆LB◆false◆RB◆$). This covers all literal edges ($k$ vertices). For each clause triangle, at
 least one literal in the clause is true, so the corresponding literal vertex covers one of the three
 edges from the triangle. Include the other two vertices of the triangle ($2m$ vertices total).
 
@@ -1905,17 +1905,17 @@ least $(1/\rho)$ times the optimal value.
 
 _Proof._ The algorithm selects a set $C$ of vertices. Each edge in the matching used by the
 algorithm contributes 2 vertices to $C$. Let $M^*$ be a maximum matching. Then
-$|C| = 2|M^*| \leq 2 \cdot |\mathrm◆LB◆OPT|$Since OPT must contain at least one endpoint of every edge
+$|C| = 2|M^*| \leq 2 \cdot |\mathrm◆LB◆OPT◆RB◆|$Since OPT must contain at least one endpoint of every edge
 in $M^*$ (and $M^*$ is maximum, so $|M^*| \geq$ the size of any matching). Therefore the
 approximation ratio is at most 2. $\blacksquare$
 
 **Theorem 6.4 (Metric TSP).** The Christofides algorithm is a $3/2$-approximation for TSP with the
 triangle inequality.
 
-_Proof._ The algorithm computes an MST ($\leq \mathrm◆LB◆OPT$), finds a minimum-weight perfect matching
-$M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm◆LB◆OPT/2$), and combines them
+_Proof._ The algorithm computes an MST ($\leq \mathrm◆LB◆OPT◆RB◆$), finds a minimum-weight perfect matching
+$M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm◆LB◆OPT◆RB◆/2$), and combines them
 into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at most
-$\mathrm◆LB◆MST + \lvert M \rvert \leq \mathrm◆LB◆OPT + \mathrm◆LB◆OPT/2 = \frac◆LB◆3◆RB◆◆LB◆2◆RB◆\mathrm◆LB◆OPT$.
+$\mathrm◆LB◆MST◆RB◆ + \lvert M \rvert \leq \mathrm◆LB◆OPT◆RB◆ + \mathrm◆LB◆OPT◆RB◆/2 = \frac◆LB◆3◆RB◆◆LB◆2◆RB◆\mathrm◆LB◆OPT◆RB◆$.
 $\blacksquare$
 
 **Theorem 6.5 (Inapproximability).** Unless P = NP, TSP (general, without triangle inequality) has
@@ -1932,7 +1932,7 @@ where $n$ is the size of the universe.
 
 _Proof sketch._ At each step, the greedy algorithm picks the set covering the most uncovered
 elements. Let $c_i$ be the cost of the $i$-th set picked, and let $n_i$ be the number of newly
-covered elements. Then $c_i / n_i \leq \mathrm◆LB◆OPT / (n - \sum_◆LB◆j \lt i◆RB◆ n_j)$ (otherwise OPT could
+covered elements. Then $c_i / n_i \leq \mathrm◆LB◆OPT◆RB◆ / (n - \sum_◆LB◆j \lt i◆RB◆ n_j)$ (otherwise OPT could
 not cover the remaining elements at lower cost). Summing gives the $\ln n + O(1)$ bound.
 $\blacksquare$
 
@@ -1974,7 +1974,7 @@ probability.
 probability $\epsilon^k$ by running it $k$ times and taking the majority vote (for decision problems
 with one-sided error) or the most frequent answer (for two-sided error).
 
-_Proof._ For one-sided error: $\Pr[\mathrm◆LB◆all~ k \mathrm◆LB◆~runs~fail] = \epsilon^k$. For two-sided
+_Proof._ For one-sided error: $\Pr[\mathrm◆LB◆all◆RB◆~ k \mathrm◆LB◆~runs~fail] = \epsilon^k$. For two-sided
 error with majority vote: by the Chernoff bound, the probability that the majority is wrong
 decreases exponentially in $k$. $\blacksquare$
 
@@ -2056,8 +2056,8 @@ any element is at most $n/m$.
 
 _Proof._ For a fixed element $x$Let $X_◆LB◆iy◆RB◆$ be the indicator that $h(x) = h(y_i)$ where
 $y_1, \ldots, y_n$ are the other $n-1$ elements. Then
-$\mathrm◆LB◆E[X_◆LB◆iy◆RB◆] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation, the
-expected number of collisions is $\sum_i \mathrm◆LB◆E[X_◆LB◆iy◆RB◆] \leq (n-1)/m$. $\blacksquare$
+$\mathrm◆LB◆E◆RB◆[X_◆LB◆iy◆RB◆] = \Pr[h(x) = h(y_i)] \leq 1/m$ by universality. By linearity of expectation, the
+expected number of collisions is $\sum_i \mathrm◆LB◆E◆RB◆[X_◆LB◆iy◆RB◆] \leq (n-1)/m$. $\blacksquare$
 
 ### 6.4 Amortised Analysis (Detailed)
 
@@ -2124,9 +2124,9 @@ alternating directions).
 **Access Lemma.** The amortised cost of splaying a node $x$ in a splay tree with $n$ nodes is
 $O(\log n)$.
 
-_Proof sketch._ Define the potential as $\Phi(T) = \sum_◆LB◆x \in T◆RB◆ \log \mathrm◆LB◆size(x)$Where
-$\mathrm◆LB◆size(x)$ is the number of nodes in the subtree rooted at $x$ (including $x$). Define the
-**rank** $r(x) = \log \mathrm◆LB◆size(x)$.
+_Proof sketch._ Define the potential as $\Phi(T) = \sum_◆LB◆x \in T◆RB◆ \log \mathrm◆LB◆size◆RB◆(x)$Where
+$\mathrm◆LB◆size◆RB◆(x)$ is the number of nodes in the subtree rooted at $x$ (including $x$). Define the
+**rank** $r(x) = \log \mathrm◆LB◆size◆RB◆(x)$.
 
 The amortised cost of a splay step at node $x$ with parent $p$ and grandparent $g$ is
 $\hat◆LB◆c◆RB◆ = 1 + r'(x) - r(x)$Where primes denote ranks after the step.

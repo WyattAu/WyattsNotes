@@ -93,12 +93,12 @@ _Solution._ Roll two fair dice. Let $A$ = "first die is even", $B$ = "second die
 $P(A) = P(B) = P(C) = 1/2$.
 
 $P(A \cap B) = 1/4 = P(A)P(B)$.
-$P(A \cap C) = P(\text◆LB◆first even, sum even) = P(\text◆LB◆second even) = 1/4 = P(A)P(C)$.
+$P(A \cap C) = P(\text◆LB◆first◆RB◆ even, sum even) = P(\text◆LB◆second◆RB◆ even) = 1/4 = P(A)P(C)$.
 
 $P(B \cap C) = 1/4 = P(B)P(C)$. So $A$, $B$, $C$ are pairwise independent.
 
 But
-$P(A \cap B \cap C) = P(\text◆LB◆both even, sum even) = P(\text◆LB◆both even) = 1/4 \neq 1/8 = P(A)P(B)P(C)$.
+$P(A \cap B \cap C) = P(\text◆LB◆both◆RB◆ even, sum even) = P(\text◆LB◆both◆RB◆ even) = 1/4 \neq 1/8 = P(A)P(B)P(C)$.
 
 So $A$, $B$, $C$ are pairwise independent but not mutually independent. $\blacksquare$
 
@@ -140,7 +140,7 @@ $$E[X] = \sum_◆LB◆x◆RB◆ x\, p_X(x)$$
 
 Provided the sum converges absolutely.
 
-**Definition (Variance).** $\mathrm◆LB◆Var(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
+**Definition (Variance).** $\mathrm◆LB◆Var◆RB◆(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
 
 **Proposition 2.2 (Linearity of Expectation).** $E[aX + bY] = aE[X] + bE[Y]$ for any random
 variables $X$$Y$ and constants $a$$b$.
@@ -169,7 +169,7 @@ $$F_X(x) = \int_◆LB◆-\infty◆RB◆^◆LB◆x◆RB◆ f_X(t)\, dt$$
 
 **Discrete distributions:**
 
-| Distribution       | PMF                             | $E[X]$    | $\mathrm◆LB◆Var(X)$ |
+| Distribution       | PMF                             | $E[X]$    | $\mathrm◆LB◆Var◆RB◆(X)$ |
 | ------------------ | ------------------------------- | --------- | ---------------- |
 | Bernoulli$(p)$     | $p^x(1-p)^◆LB◆1-x◆RB◆$, $x \in \{0,1\}$ | $p$       | $p(1-p)$         |
 | Binomial$(n,p)$    | $\binom◆LB◆n◆RB◆◆LB◆x◆RB◆p^x(1-p)^◆LB◆n-x◆RB◆$    | $np$      | $np(1-p)$        |
@@ -178,7 +178,7 @@ $$F_X(x) = \int_◆LB◆-\infty◆RB◆^◆LB◆x◆RB◆ f_X(t)\, dt$$
 
 **Continuous distributions:**
 
-| Distribution           | PDF                                                     | $E[X]$      | $\mathrm◆LB◆Var(X)$ |
+| Distribution           | PDF                                                     | $E[X]$      | $\mathrm◆LB◆Var◆RB◆(X)$ |
 | ---------------------- | ------------------------------------------------------- | ----------- | ---------------- |
 | Uniform$(a,b)$         | $1/(b-a)$ on $[a,b]$                                    | $(a+b)/2$   | $(b-a)^2/12$     |
 | Exponential$(\lambda)$ | $\lambda e^◆LB◆-\lambda x◆RB◆$, $x \geq 0$                      | $1/\lambda$ | $1/\lambda^2$    |
@@ -217,18 +217,18 @@ Furthermore, $E[X^n] = M_X^◆LB◆(n)◆RB◆(0)$.
 
 ### 2.7 Worked Examples
 
-**Problem.** Let $X \sim \mathrm◆LB◆Poisson(3)$ and $Y \sim \mathrm◆LB◆Poisson(5)$ be independent. Find
+**Problem.** Let $X \sim \mathrm◆LB◆Poisson◆RB◆(3)$ and $Y \sim \mathrm◆LB◆Poisson◆RB◆(5)$ be independent. Find
 the distribution of $X + Y$.
 
 <details>
 <summary>Solution</summary>
 
-The MGF of $X \sim \mathrm◆LB◆Poisson(\lambda)$ is $M_X(t) = e^◆LB◆\lambda(e^t - 1)◆RB◆$.
+The MGF of $X \sim \mathrm◆LB◆Poisson◆RB◆(\lambda)$ is $M_X(t) = e^◆LB◆\lambda(e^t - 1)◆RB◆$.
 
 $M_◆LB◆X+Y◆RB◆(t) = M_X(t) \cdot M_Y(t) = e^◆LB◆3(e^t - 1)◆RB◆ \cdot e^◆LB◆5(e^t - 1)◆RB◆ = e^◆LB◆8(e^t - 1)◆RB◆$.
 
-This is the MGF of $\mathrm◆LB◆Poisson(8)$. Since the MGF uniquely determines the distribution,
-$X + Y \sim \mathrm◆LB◆Poisson(8)$.
+This is the MGF of $\mathrm◆LB◆Poisson◆RB◆(8)$. Since the MGF uniquely determines the distribution,
+$X + Y \sim \mathrm◆LB◆Poisson◆RB◆(8)$.
 
 $\blacksquare$
 
@@ -237,13 +237,13 @@ $\blacksquare$
 <details>
 <summary>Worked Example: Minimum of Exponential Random Variables</summary>
 
-_Solution._ Let $X_1, \ldots, X_n$ be independent with $X_i \sim \mathrm◆LB◆Exp(\lambda_i)$. Find the
+_Solution._ Let $X_1, \ldots, X_n$ be independent with $X_i \sim \mathrm◆LB◆Exp◆RB◆(\lambda_i)$. Find the
 distribution of $M = \min(X_1, \ldots, X_n)$.
 
 $P(M > t) = P(X_1 > t, \ldots, X_n > t) = \prod_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ P(X_i > t) = \prod_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ e^◆LB◆-\lambda_i t◆RB◆ = e^◆LB◆-(\lambda_1 + \cdots + \lambda_n)t◆RB◆$
 
 So $P(M \leq t) = 1 - e^◆LB◆-\lambda t◆RB◆$ where $\lambda = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \lambda_i$. This means
-$M \sim \mathrm◆LB◆Exp(\lambda)$. $\blacksquare$
+$M \sim \mathrm◆LB◆Exp◆RB◆(\lambda)$. $\blacksquare$
 
 </details>
 
@@ -265,14 +265,14 @@ $f_X(x) = \int_◆LB◆-\infty◆RB◆^◆LB◆\infty◆RB◆ f_◆LB◆X,Y◆RB
 
 **Definition.** The **covariance** of $X$ and $Y$ is
 
-$$\mathrm◆LB◆Cov(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
+$$\mathrm◆LB◆Cov◆RB◆(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
 
-**Proposition 2.6.** $\mathrm◆LB◆Cov(X, Y) = \mathrm◆LB◆Cov(Y, X)$ and
-$\mathrm◆LB◆Cov(aX + b, cY + d) = ac\,\mathrm◆LB◆Cov(X, Y)$.
+**Proposition 2.6.** $\mathrm◆LB◆Cov◆RB◆(X, Y) = \mathrm◆LB◆Cov◆RB◆(Y, X)$ and
+$\mathrm◆LB◆Cov◆RB◆(aX + b, cY + d) = ac\,\mathrm◆LB◆Cov◆RB◆(X, Y)$.
 
 **Definition.** The **correlation coefficient** is
 
-$$\rho(X, Y) = \frac◆LB◆\mathrm◆LB◆Cov(X, Y)◆RB◆◆LB◆\sqrt◆LB◆\mathrm◆LB◆Var(X)\,\mathrm◆LB◆Var(Y)◆RB◆◆RB◆$$
+$$\rho(X, Y) = \frac◆LB◆\mathrm◆LB◆Cov◆RB◆(X, Y)◆RB◆◆LB◆\sqrt◆LB◆\mathrm◆LB◆Var◆RB◆(X)\,\mathrm◆LB◆Var◆RB◆(Y)◆RB◆◆RB◆$$
 
 **Theorem 2.7 (Cauchy--Schwarz for Random Variables).** $|\rho(X, Y)| \leq 1$With equality if and
 only if $Y = aX + b$ almost surely for some $a, b$.
@@ -283,14 +283,14 @@ only if $Y = aX + b$ almost surely for some $a, b$.
 
 For continuous random variables, this is equivalent to $f_◆LB◆X,Y◆RB◆(x, y) = f_X(x)\, f_Y(y)$.
 
-**Proposition 2.8.** If $X$ and $Y$ are independent, then $\mathrm◆LB◆Cov(X, Y) = 0$. The converse is
+**Proposition 2.8.** If $X$ and $Y$ are independent, then $\mathrm◆LB◆Cov◆RB◆(X, Y) = 0$. The converse is
 false.
 
 <details>
 <summary>Worked Example: Uncorrelated but Dependent</summary>
 
 _Solution._ Let $X \sim N(0, 1)$ and $Y = X^2$. Then
-$\mathrm◆LB◆Cov(X, Y) = E[X^3] - E[X]E[X^2] = 0 - 0 \cdot 1 = 0$ (since the third moment of a standard
+$\mathrm◆LB◆Cov◆RB◆(X, Y) = E[X^3] - E[X]E[X^2] = 0 - 0 \cdot 1 = 0$ (since the third moment of a standard
 normal is 0).
 
 But $Y$ is completely determined by $X$So they are not independent. $\blacksquare$
@@ -302,14 +302,14 @@ But $Y$ is completely determined by $X$So they are not independent. $\blacksquar
 ### 4.1 The Law of Large Numbers
 
 **Theorem 4.1 (Weak Law of Large Numbers).** Let $X_1, X_2, \ldots$ be i.i.d. With $E[X_i] = \mu$
-and $\mathrm◆LB◆Var(X_i) = \sigma^2 < \infty$. Then for every $\varepsilon > 0$:
+and $\mathrm◆LB◆Var◆RB◆(X_i) = \sigma^2 < \infty$. Then for every $\varepsilon > 0$:
 
 $$\lim_◆LB◆n \to \infty◆RB◆ P\left(\left|\frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ X_i - \mu\right| \geq \varepsilon\right) = 0$$
 
 _Proof._ Let $S_n = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ X_i$. Then $E[S_n] = \mu$ and
-$\mathrm◆LB◆Var(S_n) = \sigma^2/n$. By Chebyshev's inequality:
+$\mathrm◆LB◆Var◆RB◆(S_n) = \sigma^2/n$. By Chebyshev's inequality:
 
-$$P(|S_n - \mu| \geq \varepsilon) \leq \frac◆LB◆\mathrm◆LB◆Var(S_n)◆RB◆◆LB◆\varepsilon^2◆RB◆ = \frac◆LB◆\sigma^2◆RB◆◆LB◆n\varepsilon^2◆RB◆ \to 0 \quad \mathrm◆LB◆as\  n \to \infty$$
+$$P(|S_n - \mu| \geq \varepsilon) \leq \frac◆LB◆\mathrm◆LB◆Var◆RB◆(S_n)◆RB◆◆LB◆\varepsilon^2◆RB◆ = \frac◆LB◆\sigma^2◆RB◆◆LB◆n\varepsilon^2◆RB◆ \to 0 \quad \mathrm◆LB◆as\ ◆RB◆ n \to \infty$$
 
 $\blacksquare$
 
@@ -322,7 +322,7 @@ The sample mean converges to the population mean almost surely.
 ### 4.2 The Central Limit Theorem
 
 **Theorem 4.3 (Central Limit Theorem).** Let $X_1, X_2, \ldots$ be i.i.d. With $E[X_i] = \mu$ and
-$\mathrm◆LB◆Var(X_i) = \sigma^2 \in (0, \infty)$. Then
+$\mathrm◆LB◆Var◆RB◆(X_i) = \sigma^2 \in (0, \infty)$. Then
 
 $$\frac◆LB◆S_n - n\mu◆RB◆◆LB◆\sigma\sqrt◆LB◆n◆RB◆◆RB◆ \xrightarrow◆LB◆d◆RB◆ N(0, 1)$$
 
@@ -360,7 +360,7 @@ distribution follows. $\blacksquare$
 <summary>Solution</summary>
 
 Let $X_i$ be the value of the $i$-th roll. Then $E[X_i] = 7/2 = 3.5$ and
-$\mathrm◆LB◆Var(X_i) = 35/12 \approx 2.917$.
+$\mathrm◆LB◆Var◆RB◆(X_i) = 35/12 \approx 2.917$.
 
 $S_◆LB◆100◆RB◆ = \sum_◆LB◆i=1◆RB◆^◆LB◆100◆RB◆ X_i$. By the CLT:
 
@@ -404,7 +404,7 @@ $\blacksquare$
 
 **Theorem 5.1 (CDF Method).** If $Y = g(X)$ and $g$ is monotone, then
 
-$$F_Y(y) = P(g(X) \leq y) = \begin◆LB◆cases◆RB◆ F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if  g \text◆LB◆ is increasing \\ 1 - F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if  g \text◆LB◆ is decreasing \end◆LB◆cases◆RB◆$$
+$$F_Y(y) = P(g(X) \leq y) = \begin◆LB◆cases◆RB◆ F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if◆RB◆  g \text◆LB◆ is increasing \\ 1 - F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if◆RB◆  g \text◆LB◆ is decreasing \end◆LB◆cases◆RB◆$$
 
 **Theorem 5.2 (Change of Variables).** If $Y = g(X)$ where $g$ is differentiable and strictly
 monotone, then

@@ -160,7 +160,7 @@ The completeness axiom can be formulated in several equivalent ways. Each implie
 1. **Least Upper Bound Property:** Every non-empty set bounded above has a supremum.
 2. **Monotone Convergence Theorem:** Every bounded monotone sequence converges.
 3. **Nested Interval Property:** Every nested sequence of closed intervals
-   $I_1 \supseteq I_2 \supseteq \cdots$ with $\mathrm◆LB◆length(I_n) \to 0$ has exactly one point in
+   $I_1 \supseteq I_2 \supseteq \cdots$ with $\mathrm◆LB◆length◆RB◆(I_n) \to 0$ has exactly one point in
    $\bigcap I_n$.
 4. **Bolzano-Weierstrass Property:** Every bounded sequence has a convergent subsequence.
 5. **Cauchy Completeness:** Every Cauchy sequence converges.
@@ -190,7 +190,7 @@ the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$. :::
 A sequence $(a_n)_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆$ in $\mathbb◆LB◆R◆RB◆$ **converges** to a limit $L \in \mathbb◆LB◆R◆RB◆$ if for
 Every $\varepsilon > 0$There exists $N \in \mathbb◆LB◆N◆RB◆$ such that
 
-$$|a_n - L| \lt \varepsilon \quad \mathrm◆LB◆for\ all\  n \geq N$$
+$$|a_n - L| \lt \varepsilon \quad \mathrm◆LB◆for\ all\ ◆RB◆ n \geq N$$
 
 We write $a_n \to L$ or $\lim_◆LB◆n \to \infty◆RB◆ a_n = L$. A sequence that does not converge is said to
 **diverge**.
@@ -241,7 +241,7 @@ A sequence $(a_n)$ is a **Cauchy sequence** if for every $\varepsilon > 0$There 
 $N \in
 \mathbb◆LB◆N◆RB◆$ such that
 
-$$|a_n - a_m| \lt \varepsilon \quad \mathrm◆LB◆for\ all\  m, n \geq N$$
+$$|a_n - a_m| \lt \varepsilon \quad \mathrm◆LB◆for\ all\ ◆RB◆ m, n \geq N$$
 
 **Theorem 2.4.** Every convergent sequence is Cauchy.
 
@@ -285,14 +285,14 @@ it $I_1$. Having constructed $I_k = [l_k, r_k]$Bisect it and select $I_◆LB◆k
 Infinitely many terms of $(a_n)$.
 
 This produces a nested sequence of closed intervals
-$I_0 \supseteq I_1 \supseteq I_2 \supseteq \cdots$ With $\mathrm◆LB◆length(I_k) = (B - A)/2^k \to 0$.
+$I_0 \supseteq I_1 \supseteq I_2 \supseteq \cdots$ With $\mathrm◆LB◆length◆RB◆(I_k) = (B - A)/2^k \to 0$.
 By the **Nested Interval Property** (which follows From completeness),
 $\bigcap_◆LB◆k=0◆RB◆^◆LB◆\infty◆RB◆ I_k = \{c\}$ for some $c \in [A, B]$.
 
 Construct the subsequence inductively: pick $n_1$ with $a_◆LB◆n_1◆RB◆ \in I_1$. Having chosen
 $n_1 \lt n_2 \lt \cdots \lt n_◆LB◆k-1◆RB◆$Pick $n_k > n_◆LB◆k-1◆RB◆$ with $a_◆LB◆n_k◆RB◆ \in I_k$ (possible since
 $I_k$ contains infinitely many terms). Then $a_◆LB◆n_k◆RB◆ \in I_k$ for all $k$So
-$|a_◆LB◆n_k◆RB◆ - c| \leq \mathrm◆LB◆length(I_k) \to 0$. Hence $a_◆LB◆n_k◆RB◆ \to c$. $\blacksquare$
+$|a_◆LB◆n_k◆RB◆ - c| \leq \mathrm◆LB◆length◆RB◆(I_k) \to 0$. Hence $a_◆LB◆n_k◆RB◆ \to c$. $\blacksquare$
 
 ### 2.6 Limit Superior and Limit Inferior
 
@@ -1019,7 +1019,7 @@ But $f'$ is not continuous at $0$.
 _Proof._ Assume without loss of generality that $f'(a) \lt y \lt f'(b)$. Define $g(x) = f(x) - yx$.
 Then $g$ is differentiable on $[a, b]$ with
 
-$$g'(a) = f'(a) - y \lt 0 \quad \mathrm◆LB◆and \quad g'(b) = f'(b) - y > 0$$
+$$g'(a) = f'(a) - y \lt 0 \quad \mathrm◆LB◆and◆RB◆ \quad g'(b) = f'(b) - y > 0$$
 
 Since $g'(a) \lt 0$There exists $x_1 > a$ with $g(x_1) \lt g(a)$ (otherwise $g(x) \geq g(a)$ For $x$
 near $a$Contradicting $g'(a) \lt 0$). Similarly, since $g'(b) > 0$There exists $x_2 \lt b$ with
@@ -1139,8 +1139,8 @@ The **mesh** of $P$ is $\|P\| = \max_◆LB◆1 \leq i \leq n◆RB◆ \Delta x_i$
 
 $$\overline◆LB◆\int_a^b◆RB◆ f(x)\, dx = \underline◆LB◆\int_a^b◆RB◆ f(x)\, dx$$
 
-Where $\overline◆LB◆\int_a^b◆RB◆ f = \inf\{U(f,P) : P \mathrm◆LB◆\ is\ a\ partition\}$ and
-$\underline◆LB◆\int_a^b◆RB◆ f = \sup\{L(f,P) : P \mathrm◆LB◆\ is\ a\ partition\}$.
+Where $\overline◆LB◆\int_a^b◆RB◆ f = \inf\{U(f,P) : P \mathrm◆LB◆\ is\ a\ partition◆RB◆\}$ and
+$\underline◆LB◆\int_a^b◆RB◆ f = \sup\{L(f,P) : P \mathrm◆LB◆\ is\ a\ partition◆RB◆\}$.
 
 The common value is denoted $\int_a^b f(x)\, dx$.
 
@@ -1419,7 +1419,7 @@ $|f_n(x) - f(x)| \lt \varepsilon$ for all $n \geq N$.
 **Example.** Let $f_n(x) = x^n$ on $E = [0, 1]$. For each $x \in [0, 1)$, $f_n(x) = x^n \to 0$And
 $f_n(1) = 1$ for all $n$. So $f_n$ converges pointwise to
 
-$$f(x) = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if\  0 \leq x \lt 1 \\ 1 & \mathrm◆LB◆if\  x = 1 \end◆LB◆cases◆RB◆$$
+$$f(x) = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if\ ◆RB◆ 0 \leq x \lt 1 \\ 1 & \mathrm◆LB◆if\ ◆RB◆ x = 1 \end◆LB◆cases◆RB◆$$
 
 Note that each $f_n$ is continuous, but the pointwise limit $f$ is not continuous at $x = 1$.
 
@@ -1428,7 +1428,7 @@ Note that each $f_n$ is continuous, but the pointwise limit $f$ is not continuou
 **Definition.** $(f_n)$ **converges uniformly** to $f$ on $E$ if for every $\varepsilon > 0$There
 Exists $N \in \mathbb◆LB◆N◆RB◆$ (depending only on $\varepsilon$Not on $x$) such that for all $x \in E$:
 
-$$|f_n(x) - f(x)| \lt \varepsilon \quad \mathrm◆LB◆for\ all\  n \geq N$$
+$$|f_n(x) - f(x)| \lt \varepsilon \quad \mathrm◆LB◆for\ all\ ◆RB◆ n \geq N$$
 
 Equivalently, $\sup_◆LB◆x \in E◆RB◆ |f_n(x) - f(x)| \to 0$ as $n \to \infty$.
 
@@ -1999,7 +1999,7 @@ _Solution._ Apply the ratio test to the terms:
 
 $$\left|\frac◆LB◆a_◆LB◆n+1◆RB◆◆RB◆◆LB◆a_n◆RB◆\right| = \frac◆LB◆(2(n+1))!◆RB◆◆LB◆((n+1)!)^2◆RB◆ \cdot \frac◆LB◆(n!)^2◆RB◆◆LB◆(2n)!◆RB◆ \cdot |x| = \frac◆LB◆(2n+2)(2n+1)◆RB◆◆LB◆(n+1)^2◆RB◆ \cdot |x|$$
 
-$$= \frac◆LB◆2(2n+1)◆RB◆◆LB◆n+1◆RB◆ \cdot |x| = \frac◆LB◆4n + 2◆RB◆◆LB◆n + 1◆RB◆ \cdot |x| \to 4|x| \quad \mathrm◆LB◆as\  n \to \infty$$
+$$= \frac◆LB◆2(2n+1)◆RB◆◆LB◆n+1◆RB◆ \cdot |x| = \frac◆LB◆4n + 2◆RB◆◆LB◆n + 1◆RB◆ \cdot |x| \to 4|x| \quad \mathrm◆LB◆as\ ◆RB◆ n \to \infty$$
 
 The series converges when $4|x| \lt 1$I.e., $|x| \lt 1/4$And diverges when $4|x| > 1$. The radius of
 convergence is $R = 1/4$. $\blacksquare$

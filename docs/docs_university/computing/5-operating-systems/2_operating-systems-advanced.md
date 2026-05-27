@@ -279,7 +279,7 @@ Under demand paging with a **local replacement policy** (each process gets a fix
 frames), the **working set model** defines the set of pages a process needs within a time window
 $\Delta$:
 
-$$W(t, \Delta) = \{\text◆LB◆pages referenced by the process in  [t - \Delta, t]\}$$
+$$W(t, \Delta) = \{\text◆LB◆pages◆RB◆ referenced by the process in  [t - \Delta, t]\}$$
 
 **Theorem 2.2 (Working Set Theorem).** A process with working set size $|W|$ needs at least $|W|$
 frames to avoid thrashing. If allocated fewer frames, the page fault rate increases dramatically.
@@ -509,7 +509,7 @@ for new writes.
 **Cost-benefit model for segment selection:** Clean the segment with the highest ratio of dead
 blocks to live blocks (most benefit for least cost):
 
-$$\text◆LB◆benefit(s) = \frac◆LB◆\text◆LB◆dead(s)◆RB◆◆LB◆1 - u(s)◆RB◆$$
+$$\text◆LB◆benefit◆RB◆(s) = \frac◆LB◆\text◆LB◆dead◆RB◆(s)◆RB◆◆LB◆1 - u(s)◆RB◆$$
 
 Where $u(s)$ is the utilisation of segment $s$.
 
@@ -846,7 +846,7 @@ The **Completely Fair Scheduler (CFS)** is the default process scheduler in Linu
    task's priority (niceness).
 2. CFS always picks the task with the smallest `vruntime`.
 3. The `vruntime` increment per tick is:
-   $\text◆LB◆vruntime += \text◆LB◆actual\_time \times \text◆LB◆weight_0 / \text◆LB◆weight$Where $\text◆LB◆weight$
+   $\text◆LB◆vruntime◆RB◆ += \text◆LB◆actual◆RB◆\_time \times \text◆LB◆weight_0◆RB◆ / \text◆LB◆weight◆RB◆$Where $\text◆LB◆weight◆RB◆$
    depends on the nice value.
 
 **Target latency.** CFS aims to give each task a fair share of CPU time within a "sched period"

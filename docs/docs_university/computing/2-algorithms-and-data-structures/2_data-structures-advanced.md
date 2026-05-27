@@ -37,8 +37,8 @@ $h_x$: if $x$ is a leaf, it has $0 = 2^0 - 1$ internal nodes; otherwise, each ch
 at least $bh(x) - 1$ if it is red, or $bh(x)$ if it is black, so each child has at least
 $2^◆LB◆bh(x)-1◆RB◆ - 1$ internal nodes, giving at least $2(2^◆LB◆bh(x)-1◆RB◆ - 1) + 1 = 2^◆LB◆bh(x)◆RB◆ - 1$ for $x$).
 
-Therefore $n \geq 2^◆LB◆bh(\mathrm◆LB◆root)◆RB◆ - 1$Giving $bh(\mathrm◆LB◆root) \leq \log_2(n+1)$. Since
-$h \leq 2 \cdot bh(\mathrm◆LB◆root)$We have $h \leq 2\log_2(n+1)$. $\blacksquare$
+Therefore $n \geq 2^◆LB◆bh(\mathrm◆LB◆root◆RB◆)◆RB◆ - 1$Giving $bh(\mathrm◆LB◆root◆RB◆) \leq \log_2(n+1)$. Since
+$h \leq 2 \cdot bh(\mathrm◆LB◆root◆RB◆)$We have $h \leq 2\log_2(n+1)$. $\blacksquare$
 
 **Corollary.** Search, insert, and delete in a red-black tree take $O(\log n)$ time.
 
@@ -545,7 +545,7 @@ This means splay trees are asymptotically as fast as a static optimal binary sea
 access sequence.
 
 **Theorem 1.9 (Static Finger).** The total access time is
-$O\left(n \log n + n \log \min_◆LB◆j◆RB◆ |\mathrm◆LB◆key_i - \mathrm◆LB◆key_j|\right)$ where $j$ is a fixed
+$O\left(n \log n + n \log \min_◆LB◆j◆RB◆ |\mathrm◆LB◆key_i◆RB◆ - \mathrm◆LB◆key_j◆RB◆|\right)$ where $j$ is a fixed
 "finger" position.
 
 **Theorem 1.10 (Working Set).** The access time for element $i$ is $O(\log(t_i))$ where $t_i$ is the
@@ -859,21 +859,21 @@ Create two binomial heaps and merge them.
 Heap $H_1$: insert 3, 7, 1.
 
 - Insert 3: $H_1 = \{B_0: 3\}$
-- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text◆LB◆root  3, \text◆LB◆child  7\}$
+- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text◆LB◆root◆RB◆  3, \text◆LB◆child◆RB◆  7\}$
 - Insert 1: $H_1 = \{B_1: (3,7)\} \cup \{B_0: 1\}$. No linking (different degrees).
   $H_1 = \{B_0: 1, B_1: (3,7)\}$
 
 Heap $H_2$: insert 5, 2.
 
 - Insert 5: $H_2 = \{B_0: 5\}$
-- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text◆LB◆root  2, \text◆LB◆child  5\}$
+- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text◆LB◆root◆RB◆  2, \text◆LB◆child◆RB◆  5\}$
 
 Merge $H_1$ and $H_2$: $\{B_0: 1, B_1: (3,7)\} \cup \{B_1: (2,5)\}$.
 
 Both have $B_1$ trees. Link them (root 2 < root 3, so 3 becomes child of 2): $B_2$: root 2,
 children: 3 (with child 7), 5.
 
-Final merged heap: $\{B_0: 1, B_2: \text◆LB◆root  2, \text◆LB◆children  [3, 5], \text◆LB◆3's child  7\}$
+Final merged heap: $\{B_0: 1, B_2: \text◆LB◆root◆RB◆  2, \text◆LB◆children◆RB◆  [3, 5], \text◆LB◆3◆RB◆'s child  7\}$
 
 Minimum element: 1 (root of $B_0$).
 
@@ -911,7 +911,7 @@ of any node in the Fibonacci heap.
 _Proof (outline)._ Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees
 and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For
 decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in
-potential is at most $c + 2 - 2m'(H) \cdot (\text◆LB◆terms cancel)$Giving $O(1)$ amortised.
+potential is at most $c + 2 - 2m'(H) \cdot (\text◆LB◆terms◆RB◆ cancel)$Giving $O(1)$ amortised.
 $\blacksquare$
 
 :::caution Common Pitfall Fibonacci heaps have excellent amortised bounds but poor constant factors
@@ -951,7 +951,7 @@ the "original pairing heap" and gave a $\Omega(\log \log n)$ lower bound for a s
 The **incidence matrix** $M$ of an undirected graph $G = (V, E)$ with $n$ vertices and $m$ edges is
 an $n \times m$ matrix where:
 
-$$M_◆LB◆v,e◆RB◆ = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if vertex  v \text◆LB◆ is incident to edge  e \\ 0 & \text◆LB◆otherwise \end◆LB◆cases◆RB◆$$
+$$M_◆LB◆v,e◆RB◆ = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if◆RB◆ vertex  v \text◆LB◆ is incident to edge  e \\ 0 & \text◆LB◆otherwise◆RB◆ \end◆LB◆cases◆RB◆$$
 
 For directed graphs, $M_◆LB◆v,e◆RB◆ = 1$ if $v$ is the tail of $e$, $M_◆LB◆v,e◆RB◆ = -1$ if $v$ is the head of
 $e$And $0$ otherwise.
@@ -1013,7 +1013,7 @@ Total space: $(|V|+1) + 2|E| = 5 + 12 = 17$ integers.
 The **inverse Ackermann function** $\alpha(n)$ is defined in terms of a rapidly growing function
 $A_k(j)$:
 
-$$A_k(j) = \begin◆LB◆cases◆RB◆ 2j & \text◆LB◆if  k = 0 \\ 0 & \text◆LB◆if  j = 0 \text◆LB◆ and  k \geq 1 \\ A_◆LB◆k-1◆RB◆(A_k(j-1)) & \text◆LB◆if  j \geq 1 \text◆LB◆ and  k \geq 1 \end◆LB◆cases◆RB◆$$
+$$A_k(j) = \begin◆LB◆cases◆RB◆ 2j & \text◆LB◆if◆RB◆  k = 0 \\ 0 & \text◆LB◆if◆RB◆  j = 0 \text◆LB◆ and  k \geq 1 \\ A_◆LB◆k-1◆RB◆(A_k(j-1)) & \text◆LB◆if◆RB◆  j \geq 1 \text◆LB◆ and  k \geq 1 \end◆LB◆cases◆RB◆$$
 
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
@@ -1033,7 +1033,7 @@ Define the "level" of a node based on its rank. The key idea is to partition the
 and bound the total charges.
 
 Let $A_k(j)$ be as defined above. Node $x$ has **level** $\ell$ if
-$\text◆LB◆rank(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_◆LB◆\ell+1◆RB◆(\lfloor \log_2 n \rfloor))$.
+$\text◆LB◆rank◆RB◆(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_◆LB◆\ell+1◆RB◆(\lfloor \log_2 n \rfloor))$.
 
 For a Find operation along a path $x_1, x_2, \ldots, x_k$Path compression makes all nodes point to
 the root. We charge the cost of the Find as follows:
@@ -1084,7 +1084,7 @@ reported intervals.
 A **segment tree** stores an array $A[1..n]$ and supports:
 
 - Point update: set $A[i] = v$. $O(\log n)$.
-- Range query: compute $\mathrm◆LB◆combine(A[l], A[l+1], \ldots, A[r])$ for any associative operation
+- Range query: compute $\mathrm◆LB◆combine◆RB◆(A[l], A[l+1], \ldots, A[r])$ for any associative operation
   (sum, min, max, gcd). $O(\log n)$.
 
 **Structure.** A binary tree where:
@@ -1148,14 +1148,14 @@ A **Fenwick tree** (BIT) is a space-efficient alternative to the segment tree fo
 and point updates.
 
 **Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at
-index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm◆LB◆lsb(i) = 2^k$Then
+index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm◆LB◆lsb◆RB◆(i) = 2^k$Then
 `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
 
 **Operations:**
 
 - **Prefix sum** $\sum_◆LB◆j=1◆RB◆^◆LB◆i◆RB◆ A[j]$: Traverse `BIT` by removing lowest set bits. $O(\log n)$.
 - **Point update** $A[i] += \delta$: Traverse `BIT` by adding lowest set bits. $O(\log n)$.
-- **Range sum** $A[l..r]$: $\mathrm◆LB◆prefix(r) - \mathrm◆LB◆prefix(l-1)$. $O(\log n)$.
+- **Range sum** $A[l..r]$: $\mathrm◆LB◆prefix◆RB◆(r) - \mathrm◆LB◆prefix◆RB◆(l-1)$. $O(\log n)$.
 
 **Advantages over segment trees:** Simpler to implement, lower constant factor, $O(n)$ space
 (exactly $n+1$).
@@ -1173,7 +1173,7 @@ Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
 
 Binary representations: 1=001, 2=010, 3=011, 4=100, 5=101, 6=110, 7=111, 8=1000.
 
-`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm◆LB◆lsb(i)$.
+`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm◆LB◆lsb◆RB◆(i)$.
 
 - BIT[1] = $A[1]$ = 3 (lsb=1, range [1,1])
 - BIT[2] = $A[1] + A[2]$ = 4 (lsb=2, range [1,2])
@@ -1200,9 +1200,9 @@ Update $A[3] += 5$: Update BIT[3] += 5 (BIT[3] = 9). Then BIT[4] += 5 (BIT[4] = 
 
 ### 6.1 Suffix Arrays
 
-A **suffix array** $\mathrm◆LB◆SA$ of a string $S$ of length $n$ is a permutation of
+A **suffix array** $\mathrm◆LB◆SA◆RB◆$ of a string $S$ of length $n$ is a permutation of
 $\{0, 1, \ldots, n-1\}$ such that
-$S[\mathrm◆LB◆SA[0]..] < S[\mathrm◆LB◆SA[1]..] < \cdots < S[\mathrm◆LB◆SA[n-1]..]$ (lexicographic order of
+$S[\mathrm◆LB◆SA◆RB◆[0]..] < S[\mathrm◆LB◆SA◆RB◆[1]..] < \cdots < S[\mathrm◆LB◆SA◆RB◆[n-1]..]$ (lexicographic order of
 suffixes).
 
 **Construction:** The most efficient algorithm (SA-IS) constructs the suffix array in $O(n)$ time. A
@@ -1256,12 +1256,12 @@ Sorted suffixes: 6: $
 1: anana$ 0: banana$
 4: na$ 2: nana$
 
-Suffix array: $\mathrm◆LB◆SA = [6, 5, 3, 1, 0, 4, 2]$
+Suffix array: $\mathrm◆LB◆SA◆RB◆ = [6, 5, 3, 1, 0, 4, 2]$
 
-LCP array (LCP with previous suffix): $\mathrm◆LB◆LCP[0] = 0$ (undefined for first)
-$\mathrm◆LB◆LCP[1] = 0$ (LCP("$", "a$") = 0) $\mathrm◆LB◆LCP[2] = 1$ (LCP("a$", "ana$") = 1)
-$\mathrm◆LB◆LCP[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm◆LB◆LCP[4] = 0$ (LCP("anana$", "banana$") = 0)
-$\mathrm◆LB◆LCP[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm◆LB◆LCP[6] = 2$ (LCP("na$", "nana$") = 2)
+LCP array (LCP with previous suffix): $\mathrm◆LB◆LCP◆RB◆[0] = 0$ (undefined for first)
+$\mathrm◆LB◆LCP◆RB◆[1] = 0$ (LCP("$", "a$") = 0) $\mathrm◆LB◆LCP◆RB◆[2] = 1$ (LCP("a$", "ana$") = 1)
+$\mathrm◆LB◆LCP◆RB◆[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm◆LB◆LCP◆RB◆[4] = 0$ (LCP("anana$", "banana$") = 0)
+$\mathrm◆LB◆LCP◆RB◆[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm◆LB◆LCP◆RB◆[6] = 2$ (LCP("na$", "nana$") = 2)
 
 LCP array: $[0, 0, 1, 3, 0, 0, 2]$
 
@@ -1294,10 +1294,10 @@ A good potential function satisfies:
 
 | Data structure | Potential function $\Phi$                                        |
 | -------------- | ---------------------------------------------------------------- |
-| Dynamic array  | $\Phi = 2 \cdot \mathrm◆LB◆num - \mathrm◆LB◆size$ (credit per element) |
+| Dynamic array  | $\Phi = 2 \cdot \mathrm◆LB◆num◆RB◆ - \mathrm◆LB◆size◆RB◆$ (credit per element) |
 | Binary counter | $\Phi =$ number of 1-bits                                        |
 | Stack          | $\Phi =$ number of elements                                      |
-| Splay tree     | $\Phi = \sum_x \log(\mathrm◆LB◆size(x))$                            |
+| Splay tree     | $\Phi = \sum_x \log(\mathrm◆LB◆size◆RB◆(x))$                            |
 | Union-Find     | $\Phi$ based on node levels                                      |
 
 ### 7.3 Limitations of Amortised Analysis

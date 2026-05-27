@@ -468,7 +468,7 @@ countable Is **uncountable**.
 
 _Proof._ The function $f : \mathbb{{'}N{}'} \to \mathbb{{'}Z{}'}$ defined by
 
-$$f(n) = \begin◆LB◆cases◆RB◆ n/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; even \\ -(n+1)/2 & \mathrm◆LB◆if\; n\; \mathrm◆LB◆is\; odd \end◆LB◆cases◆RB◆$$
+$$f(n) = \begin◆LB◆cases◆RB◆ n/2 & \mathrm◆LB◆if◆RB◆\; n\; \mathrm◆LB◆is◆RB◆\; even \\ -(n+1)/2 & \mathrm◆LB◆if◆RB◆\; n\; \mathrm◆LB◆is◆RB◆\; odd \end◆LB◆cases◆RB◆$$
 
 Is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
@@ -492,7 +492,7 @@ the expansion that does not end in all 9s to avoid dual representations).
 
 Define $s = 0.s_1 s_2 s_3 \ldots$ by
 
-$$s_i = \begin◆LB◆cases◆RB◆ 5 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ \neq 5 \\ 6 & \mathrm◆LB◆if\; d_◆LB◆ii◆RB◆ = 5 \end◆LB◆cases◆RB◆$$
+$$s_i = \begin◆LB◆cases◆RB◆ 5 & \mathrm◆LB◆if◆RB◆\; d_◆LB◆ii◆RB◆ \neq 5 \\ 6 & \mathrm◆LB◆if◆RB◆\; d_◆LB◆ii◆RB◆ = 5 \end◆LB◆cases◆RB◆$$
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$ So
 $s \notin \\{r_1, r_2, \ldots\\}$Contradicting the assumption that the list was complete. Therefore

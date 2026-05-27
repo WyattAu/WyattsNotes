@@ -158,7 +158,7 @@ and $\dim(W) = 2$.
 $U \cap W = \{(x, y, z) : z = 0 \mathrm◆LB◆~and~ x = 0\} = \{(0, y, 0) : y \in \mathbb◆LB◆R◆RB◆\}$ Which has
 basis $\{(0, 1, 0)\}$ and dimension 1.
 
-$U + W = \mathrm◆LB◆span\{(1,0,0), (0,1,0), (0,1,0), (0,0,1)\} = \mathrm◆LB◆span\{(1,0,0), (0,1,0), (0,0,1)\} = \mathbb◆LB◆R◆RB◆^3$
+$U + W = \mathrm◆LB◆span◆RB◆\{(1,0,0), (0,1,0), (0,1,0), (0,0,1)\} = \mathrm◆LB◆span◆RB◆\{(1,0,0), (0,1,0), (0,0,1)\} = \mathbb◆LB◆R◆RB◆^3$
 So $\dim(U + W) = 3$.
 
 Verify: $\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W) = 2 + 2 - 1 = 3$. $\checkmark$
@@ -210,19 +210,19 @@ by (3), $\alpha_i = 0$ for all $i$. $\blacksquare$
 
 ### 2.2 Span
 
-The **span** of a set $S \subseteq V$Denoted $\mathrm◆LB◆span(S)$Is the set of all finite linear
+The **span** of a set $S \subseteq V$Denoted $\mathrm◆LB◆span◆RB◆(S)$Is the set of all finite linear
 Combinations of elements of $S$:
 
-$$\mathrm◆LB◆span(S) = \left\{ \sum_◆LB◆i=1◆RB◆^k \alpha_i \mathbf◆LB◆v◆RB◆_i : k \in \mathbb◆LB◆N◆RB◆,\, \alpha_i \in F,\, \mathbf◆LB◆v◆RB◆_i \in S \right\}$$
+$$\mathrm◆LB◆span◆RB◆(S) = \left\{ \sum_◆LB◆i=1◆RB◆^k \alpha_i \mathbf◆LB◆v◆RB◆_i : k \in \mathbb◆LB◆N◆RB◆,\, \alpha_i \in F,\, \mathbf◆LB◆v◆RB◆_i \in S \right\}$$
 
-**Proposition 2.2.** $\mathrm◆LB◆span(S)$ is always a subspace of $V$. In fact, $\mathrm◆LB◆span(S)$ is
+**Proposition 2.2.** $\mathrm◆LB◆span◆RB◆(S)$ is always a subspace of $V$. In fact, $\mathrm◆LB◆span◆RB◆(S)$ is
 The smallest subspace containing $S$: if $W$ is any subspace with $S \subseteq W$Then
-$\mathrm◆LB◆span(S) \subseteq W$.
+$\mathrm◆LB◆span◆RB◆(S) \subseteq W$.
 
-_Proof._ $\mathrm◆LB◆span(S)$ is non-empty since $\mathbf◆LB◆0◆RB◆ = 0 \cdot \mathbf◆LB◆v◆RB◆$ for any
+_Proof._ $\mathrm◆LB◆span◆RB◆(S)$ is non-empty since $\mathbf◆LB◆0◆RB◆ = 0 \cdot \mathbf◆LB◆v◆RB◆$ for any
 $\mathbf◆LB◆v◆RB◆ \in S$. Closure under addition and scalar multiplication follows directly from the
 Definition of linear combinations. For minimality, any subspace $W$ containing $S$ must contain all
-Finite linear combinations of elements of $S$ by Proposition 1.2, so $\mathrm◆LB◆span(S) \subseteq W$.
+Finite linear combinations of elements of $S$ by Proposition 1.2, so $\mathrm◆LB◆span◆RB◆(S) \subseteq W$.
 $\blacksquare$
 
 ### 2.3 Basis and Dimension
@@ -230,7 +230,7 @@ $\blacksquare$
 A set $B \subseteq V$ is a **basis** for $V$ if:
 
 1. $B$ is linearly independent, and
-2. $\mathrm◆LB◆span(B) = V$.
+2. $\mathrm◆LB◆span◆RB◆(B) = V$.
 
 **Theorem 2.1.** Every vector space has a basis. All bases of a finite-dimensional vector space have
 The same number of elements.
@@ -251,15 +251,15 @@ _Proof._ We proceed by induction on $k$. For $k = 0$ there is nothing to prove.
 
 Assume the result holds for $k - 1$. Since $\{\mathbf◆LB◆u◆RB◆_1, \ldots, \mathbf◆LB◆u◆RB◆_k\}$ is linearly
 Independent, $\mathbf◆LB◆u◆RB◆_k \neq \mathbf◆LB◆0◆RB◆$ and
-$\mathbf◆LB◆u◆RB◆_k \in \mathrm◆LB◆span\{\mathbf◆LB◆w◆RB◆_1, \ldots, \mathbf◆LB◆w◆RB◆_m\}$ Since the $\mathbf◆LB◆w◆RB◆_j$ span
+$\mathbf◆LB◆u◆RB◆_k \in \mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆w◆RB◆_1, \ldots, \mathbf◆LB◆w◆RB◆_m\}$ Since the $\mathbf◆LB◆w◆RB◆_j$ span
 $V$. Therefore $\mathbf◆LB◆u◆RB◆_k = \sum_◆LB◆j=1◆RB◆^m \alpha_j \mathbf◆LB◆w◆RB◆_j$ for some $\alpha_j \in F$And not
 all $\alpha_j$ are zero.
 
 After relabelling, assume $\alpha_1 \neq 0$. Then
 $\mathbf◆LB◆w◆RB◆_1 = \alpha_1^◆LB◆-1◆RB◆(\mathbf◆LB◆u◆RB◆_k - \sum_◆LB◆j=2◆RB◆^m \alpha_j \mathbf◆LB◆w◆RB◆_j)$ So
-$\mathbf◆LB◆w◆RB◆_1 \in \mathrm◆LB◆span\{\mathbf◆LB◆u◆RB◆_k, \mathbf◆LB◆w◆RB◆_2, \ldots, \mathbf◆LB◆w◆RB◆_m\}$. It follows that
+$\mathbf◆LB◆w◆RB◆_1 \in \mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆u◆RB◆_k, \mathbf◆LB◆w◆RB◆_2, \ldots, \mathbf◆LB◆w◆RB◆_m\}$. It follows that
 
-$$\mathrm◆LB◆span\{\mathbf◆LB◆w◆RB◆_1, \ldots, \mathbf◆LB◆w◆RB◆_m\} = \mathrm◆LB◆span\{\mathbf◆LB◆u◆RB◆_k, \mathbf◆LB◆w◆RB◆_2, \ldots, \mathbf◆LB◆w◆RB◆_m\} = V$$
+$$\mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆w◆RB◆_1, \ldots, \mathbf◆LB◆w◆RB◆_m\} = \mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆u◆RB◆_k, \mathbf◆LB◆w◆RB◆_2, \ldots, \mathbf◆LB◆w◆RB◆_m\} = V$$
 
 Now $\{\mathbf◆LB◆u◆RB◆_1, \ldots, \mathbf◆LB◆u◆RB◆_◆LB◆k-1◆RB◆\}$ is linearly independent and
 $\{\mathbf◆LB◆u◆RB◆_k, \mathbf◆LB◆w◆RB◆_2, \ldots, \mathbf◆LB◆w◆RB◆_m\}$ spans $V$. By the inductive hypothesis,
@@ -288,17 +288,17 @@ $$\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W)$$
 
 **Theorem 2.6 (Rank-Nullity Theorem).** Let $A \in \mathcal◆LB◆M◆RB◆_◆LB◆m \times n◆RB◆(F)$. Then
 
-$$\mathrm◆LB◆rank(A) + \mathrm◆LB◆nullity(A) = n$$
+$$\mathrm◆LB◆rank◆RB◆(A) + \mathrm◆LB◆nullity◆RB◆(A) = n$$
 
-Where $\mathrm◆LB◆rank(A) = \dim(\mathrm◆LB◆col(A))$ and $\mathrm◆LB◆nullity(A) = \dim(\mathrm◆LB◆null(A))$.
+Where $\mathrm◆LB◆rank◆RB◆(A) = \dim(\mathrm◆LB◆col◆RB◆(A))$ and $\mathrm◆LB◆nullity◆RB◆(A) = \dim(\mathrm◆LB◆null◆RB◆(A))$.
 
-_Proof._ Let $\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k\}$ be a basis for $\mathrm◆LB◆null(A)$Where
-$k = \mathrm◆LB◆nullity(A)$. Extend this to a basis
+_Proof._ Let $\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k\}$ be a basis for $\mathrm◆LB◆null◆RB◆(A)$Where
+$k = \mathrm◆LB◆nullity◆RB◆(A)$. Extend this to a basis
 $\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k, \mathbf◆LB◆v◆RB◆_◆LB◆k+1◆RB◆, \ldots, \mathbf◆LB◆v◆RB◆_n\}$ for $F^n$.
 
-We claim that $\{A\mathbf◆LB◆v◆RB◆_◆LB◆k+1◆RB◆, \ldots, A\mathbf◆LB◆v◆RB◆_n\}$ is a basis for $\mathrm◆LB◆col(A)$.
+We claim that $\{A\mathbf◆LB◆v◆RB◆_◆LB◆k+1◆RB◆, \ldots, A\mathbf◆LB◆v◆RB◆_n\}$ is a basis for $\mathrm◆LB◆col◆RB◆(A)$.
 
-_Spanning:_ For any $\mathbf◆LB◆y◆RB◆ \in \mathrm◆LB◆col(A)$There exists $\mathbf◆LB◆x◆RB◆ \in F^n$ With
+_Spanning:_ For any $\mathbf◆LB◆y◆RB◆ \in \mathrm◆LB◆col◆RB◆(A)$There exists $\mathbf◆LB◆x◆RB◆ \in F^n$ With
 $\mathbf◆LB◆y◆RB◆ = A\mathbf◆LB◆x◆RB◆$. Writing $\mathbf◆LB◆x◆RB◆ = \sum_◆LB◆i=1◆RB◆^n \alpha_i \mathbf◆LB◆v◆RB◆_i$
 
 $$\mathbf◆LB◆y◆RB◆ = A\left(\sum_◆LB◆i=1◆RB◆^n \alpha_i \mathbf◆LB◆v◆RB◆_i\right) = \sum_◆LB◆i=1◆RB◆^n \alpha_i A\mathbf◆LB◆v◆RB◆_i = \sum_◆LB◆i=k+1◆RB◆^n \alpha_i A\mathbf◆LB◆v◆RB◆_i$$
@@ -307,18 +307,18 @@ Since $A\mathbf◆LB◆v◆RB◆_i = \mathbf◆LB◆0◆RB◆$ for $i \leq k$.
 
 _Linear independence:_ If $\sum_◆LB◆i=k+1◆RB◆^n \alpha_i A\mathbf◆LB◆v◆RB◆_i = \mathbf◆LB◆0◆RB◆$Then
 $A\left(\sum_◆LB◆i=k+1◆RB◆^n \alpha_i \mathbf◆LB◆v◆RB◆_i\right) = \mathbf◆LB◆0◆RB◆$So
-$\sum_◆LB◆i=k+1◆RB◆^n \alpha_i \mathbf◆LB◆v◆RB◆_i \in \mathrm◆LB◆null(A)$. Since
+$\sum_◆LB◆i=k+1◆RB◆^n \alpha_i \mathbf◆LB◆v◆RB◆_i \in \mathrm◆LB◆null◆RB◆(A)$. Since
 $\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k\}$ Is a basis for the null space,
 $\sum_◆LB◆i=k+1◆RB◆^n \alpha_i \mathbf◆LB◆v◆RB◆_i = \sum_◆LB◆i=1◆RB◆^k \beta_i \mathbf◆LB◆v◆RB◆_i$ For some $\beta_i$Giving
 $\sum_◆LB◆i=1◆RB◆^n (-\beta_i)\mathbf◆LB◆v◆RB◆_i + \sum_◆LB◆i=k+1◆RB◆^n \alpha_i \mathbf◆LB◆v◆RB◆_i = \mathbf◆LB◆0◆RB◆$. By linear
 independence of the full basis, $\alpha_i = 0$ for all $i \geq k + 1$.
 
-Therefore $\mathrm◆LB◆rank(A) = n - k = n - \mathrm◆LB◆nullity(A)$. $\blacksquare$
+Therefore $\mathrm◆LB◆rank◆RB◆(A) = n - k = n - \mathrm◆LB◆nullity◆RB◆(A)$. $\blacksquare$
 
 ### 2.7 Worked Examples
 
 **Problem.** Find a basis for and the dimension of the subspace
-$W = \mathrm◆LB◆span\{(1, 2, -1, 0), (3, 1, 0, 2), (-1, 3, -2, -2)\}$ of $\mathbb◆LB◆R◆RB◆^4$.
+$W = \mathrm◆LB◆span◆RB◆\{(1, 2, -1, 0), (3, 1, 0, 2), (-1, 3, -2, -2)\}$ of $\mathbb◆LB◆R◆RB◆^4$.
 
 <details>
 <summary>Solution</summary>
@@ -459,7 +459,7 @@ $$AA^◆LB◆-1◆RB◆ = A^◆LB◆-1◆RB◆A = I_n$$
 2. $\det(A) \neq 0$.
 3. The columns of $A$ are linearly independent.
 4. The rows of $A$ are linearly independent.
-5. $\mathrm◆LB◆rank(A) = n$.
+5. $\mathrm◆LB◆rank◆RB◆(A) = n$.
 6. The equation $A\mathbf◆LB◆x◆RB◆ = \mathbf◆LB◆b◆RB◆$ has a unique solution for every $\mathbf◆LB◆b◆RB◆$.
 7. The only solution to $A\mathbf◆LB◆x◆RB◆ = \mathbf◆LB◆0◆RB◆$ is $\mathbf◆LB◆x◆RB◆ = \mathbf◆LB◆0◆RB◆$.
 
@@ -485,7 +485,7 @@ for any fixed row $i$.
 3. Adding a multiple of one row to another leaves the determinant unchanged.
 
 _Proof._ (1) This follows from the antisymmetry of the Leibniz formula
-$\det(A) = \sum_◆LB◆\sigma \in S_n◆RB◆ \mathrm◆LB◆sgn(\sigma) \prod_◆LB◆i=1◆RB◆^n a_◆LB◆i,\sigma(i)◆RB◆$. Swapping two
+$\det(A) = \sum_◆LB◆\sigma \in S_n◆RB◆ \mathrm◆LB◆sgn◆RB◆(\sigma) \prod_◆LB◆i=1◆RB◆^n a_◆LB◆i,\sigma(i)◆RB◆$. Swapping two
 rows Changes the sign of every permutation, hence the sign of the sum.
 
 (2) Multiplying row $i$ by $\alpha$ multiplies every term in the Leibniz expansion by $\alpha$ Hence
@@ -493,11 +493,11 @@ $\det$ is multiplied by $\alpha$.
 
 (3) Adding $\alpha$ times row $j$ to row $i$ ($i \neq j$): by multilinearity in row $i$
 
-$$\det(\mathrm◆LB◆new~A) = \det(A) + \alpha \cdot \det(\mathrm◆LB◆matrix~with~rows~i\mathrm◆LB◆~and~j\mathrm◆LB◆~equal)$$
+$$\det(\mathrm◆LB◆new◆RB◆~A) = \det(A) + \alpha \cdot \det(\mathrm◆LB◆matrix◆RB◆~with~rows~i\mathrm◆LB◆~and~j\mathrm◆LB◆~equal)$$
 
 A matrix with two equal rows has determinant 0 (by antisymmetry: swapping them leaves the matrix
 Unchanged but multiplies $\det$ by $-1$So $\det = -\det$Hence $\det = 0$). Therefore
-$\det(\mathrm◆LB◆new~A) = \det(A)$. $\blacksquare$
+$\det(\mathrm◆LB◆new◆RB◆~A) = \det(A)$. $\blacksquare$
 
 **Theorem 3.3 (Multiplicativity).** For $A, B \in \mathcal◆LB◆M◆RB◆_◆LB◆n \times n◆RB◆(F)$
 
@@ -528,18 +528,18 @@ same effects on the determinant. $\blacksquare$
 
 **Definition.** The **adjugate** (or **adjoint**) of $A \in \mathcal◆LB◆M◆RB◆_◆LB◆n \times n◆RB◆(F)$ is
 
-$$\mathrm◆LB◆adj(A) = (C_◆LB◆ji◆RB◆)_◆LB◆i,j=1◆RB◆^n$$
+$$\mathrm◆LB◆adj◆RB◆(A) = (C_◆LB◆ji◆RB◆)_◆LB◆i,j=1◆RB◆^n$$
 
-Where $C_◆LB◆ij◆RB◆$ is the $(i,j)$-cofactor of $A$. That is, $\mathrm◆LB◆adj(A)$ is the transpose of the
+Where $C_◆LB◆ij◆RB◆$ is the $(i,j)$-cofactor of $A$. That is, $\mathrm◆LB◆adj◆RB◆(A)$ is the transpose of the
 Cofactor matrix.
 
 **Theorem 3.5.** For any $A \in \mathcal◆LB◆M◆RB◆_◆LB◆n \times n◆RB◆(F)$
 
-$$A \cdot \mathrm◆LB◆adj(A) = \mathrm◆LB◆adj(A) \cdot A = \det(A) \cdot I_n$$
+$$A \cdot \mathrm◆LB◆adj◆RB◆(A) = \mathrm◆LB◆adj◆RB◆(A) \cdot A = \det(A) \cdot I_n$$
 
-In particular, if $\det(A) \neq 0$Then $A^◆LB◆-1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\det(A)◆RB◆ \mathrm◆LB◆adj(A)$.
+In particular, if $\det(A) \neq 0$Then $A^◆LB◆-1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\det(A)◆RB◆ \mathrm◆LB◆adj◆RB◆(A)$.
 
-_Proof._ The $(i,j)$-entry of $A \cdot \mathrm◆LB◆adj(A)$ is $\sum_◆LB◆k=1◆RB◆^n a_◆LB◆ik◆RB◆ C_◆LB◆jk◆RB◆$. When
+_Proof._ The $(i,j)$-entry of $A \cdot \mathrm◆LB◆adj◆RB◆(A)$ is $\sum_◆LB◆k=1◆RB◆^n a_◆LB◆ik◆RB◆ C_◆LB◆jk◆RB◆$. When
 $i = j$This is $\sum_◆LB◆k=1◆RB◆^n a_◆LB◆ik◆RB◆ C_◆LB◆ik◆RB◆ = \det(A)$ (cofactor expansion along row $i$). When
 $i \neq j$This is the cofactor expansion of a matrix obtained from $A$ by replacing row $j$ With row
 $i$Which has two equal rows and hence determinant 0. $\blacksquare$
@@ -602,7 +602,7 @@ $\det(A) = 1 \cdot 4 - 2 \cdot 3 = -2 \neq 0$So $A$ is invertible.
 
 Cofactors: $C_◆LB◆11◆RB◆ = 4$$C_◆LB◆12◆RB◆ = -3$$C_◆LB◆21◆RB◆ = -2$$C_◆LB◆22◆RB◆ = 1$.
 
-$$\mathrm◆LB◆adj(A) = \begin◆LB◆pmatrix◆RB◆ 4 & -2 \\ -3 & 1 \end◆LB◆pmatrix◆RB◆$$
+$$\mathrm◆LB◆adj◆RB◆(A) = \begin◆LB◆pmatrix◆RB◆ 4 & -2 \\ -3 & 1 \end◆LB◆pmatrix◆RB◆$$
 
 $$A^◆LB◆-1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆-2◆RB◆\begin◆LB◆pmatrix◆RB◆ 4 & -2 \\ -3 & 1 \end◆LB◆pmatrix◆RB◆ = \begin◆LB◆pmatrix◆RB◆ -2 & 1 \\ 3/2 & -1/2 \end◆LB◆pmatrix◆RB◆$$
 
@@ -688,18 +688,18 @@ Have the same RREF.
 **Theorem 4.2 (Rouché--Capelli).** The system $A\mathbf◆LB◆x◆RB◆ = \mathbf◆LB◆b◆RB◆$ is consistent (has at least
 one Solution) if and only if
 
-$$\mathrm◆LB◆rank(A) = \mathrm◆LB◆rank([A \mid \mathbf◆LB◆b◆RB◆])$$
+$$\mathrm◆LB◆rank◆RB◆(A) = \mathrm◆LB◆rank◆RB◆([A \mid \mathbf◆LB◆b◆RB◆])$$
 
-If consistent, the solution set has $\dim(\mathrm◆LB◆null(A))$ free parameters, where
-$\dim(\mathrm◆LB◆null(A)) = n - \mathrm◆LB◆rank(A)$.
+If consistent, the solution set has $\dim(\mathrm◆LB◆null◆RB◆(A))$ free parameters, where
+$\dim(\mathrm◆LB◆null◆RB◆(A)) = n - \mathrm◆LB◆rank◆RB◆(A)$.
 
-_Proof._ Let the RREF of $[A \mid \mathbf◆LB◆b◆RB◆]$ have $r = \mathrm◆LB◆rank(A)$ pivots in the coefficient
+_Proof._ Let the RREF of $[A \mid \mathbf◆LB◆b◆RB◆]$ have $r = \mathrm◆LB◆rank◆RB◆(A)$ pivots in the coefficient
 Columns. The system is inconsistent if and only if the last non-zero row is $[0 \cdots 0 \mid 1]$
 Which occurs precisely when the augmented column contains a pivot, i.e., when
-$\mathrm◆LB◆rank([A \mid \mathbf◆LB◆b◆RB◆]) \gt r$.
+$\mathrm◆LB◆rank◆RB◆([A \mid \mathbf◆LB◆b◆RB◆]) \gt r$.
 
 If consistent, the $r$ pivot variables are determined by the $n - r$ free variables, yielding
-$n - \mathrm◆LB◆rank(A)$ degrees of freedom. $\blacksquare$
+$n - \mathrm◆LB◆rank◆RB◆(A)$ degrees of freedom. $\blacksquare$
 
 ### 4.3 LU Decomposition
 
@@ -794,7 +794,7 @@ If $A$ has full column rank, then $A^T A$ is invertible and
 $\hat◆LB◆\mathbf◆LB◆x◆RB◆◆RB◆ = (A^T A)^◆LB◆-1◆RB◆ A^T \mathbf◆LB◆b◆RB◆$.
 
 _Proof._ The error vector $\mathbf◆LB◆e◆RB◆ = A\mathbf◆LB◆x◆RB◆ - \mathbf◆LB◆b◆RB◆$ is minimised when
-$\mathbf◆LB◆e◆RB◆ \perp \mathrm◆LB◆col(A)$ I.e., when $A^T \mathbf◆LB◆e◆RB◆ = \mathbf◆LB◆0◆RB◆$. This gives
+$\mathbf◆LB◆e◆RB◆ \perp \mathrm◆LB◆col◆RB◆(A)$ I.e., when $A^T \mathbf◆LB◆e◆RB◆ = \mathbf◆LB◆0◆RB◆$. This gives
 $A^T(A\mathbf◆LB◆x◆RB◆ - \mathbf◆LB◆b◆RB◆) = \mathbf◆LB◆0◆RB◆$ Or $A^T A \mathbf◆LB◆x◆RB◆ = A^T \mathbf◆LB◆b◆RB◆$. If $A$ has full
 column rank, then $\ker(A) = \{\mathbf◆LB◆0◆RB◆\}$ So $\ker(A^T A) = \ker(A) = \{\mathbf◆LB◆0◆RB◆\}$Meaning
 $A^T A$ is invertible. $\blacksquare$
@@ -906,7 +906,7 @@ $p(\lambda) = (\\lambda - \\lambda_1)^◆LB◆m_1◆RB◆(\\lambda - \\lambda_2)
 With $\\lambda_1, \ldots, \\lambda_k$ distinct, then $m_i$ is the **algebraic multiplicity** of
 $\\lambda_i$.
 
-**Proposition 5.2.** For each eigenvalue $\lambda$$1 \leq \mathrm◆LB◆dim(E_\lambda) \leq m_\lambda$
+**Proposition 5.2.** For each eigenvalue $\lambda$$1 \leq \mathrm◆LB◆dim◆RB◆(E_\lambda) \leq m_\lambda$
 (geometric multiplicity does not exceed algebraic multiplicity).
 
 ### 5.3 Diagonalisation
@@ -933,9 +933,9 @@ If $p(\lambda) = \det(\lambda I - A)$Then $p(A) = 0$ (the zero matrix).
 
 _Proof sketch._ Let $p(\lambda) = \lambda^n + c_◆LB◆n-1◆RB◆\lambda^◆LB◆n-1◆RB◆ + \cdots + c_1\lambda + c_0$. By
 the adjugate formula (Theorem 3.5),
-$(\lambda I - A) \cdot \mathrm◆LB◆adj(\lambda I - A) = p(\lambda) \cdot I$. Each entry of
-$\mathrm◆LB◆adj(\lambda I - A)$ is a polynomial in $\lambda$ of degree at most $n - 1$ So we can write
-$\mathrm◆LB◆adj(\lambda I - A) = B_◆LB◆n-1◆RB◆\lambda^◆LB◆n-1◆RB◆ + \cdots + B_1\lambda + B_0$ for Matrices $B_i$.
+$(\lambda I - A) \cdot \mathrm◆LB◆adj◆RB◆(\lambda I - A) = p(\lambda) \cdot I$. Each entry of
+$\mathrm◆LB◆adj◆RB◆(\lambda I - A)$ is a polynomial in $\lambda$ of degree at most $n - 1$ So we can write
+$\mathrm◆LB◆adj◆RB◆(\lambda I - A) = B_◆LB◆n-1◆RB◆\lambda^◆LB◆n-1◆RB◆ + \cdots + B_1\lambda + B_0$ for Matrices $B_i$.
 Multiplying out and comparing coefficients of $\lambda^k$:
 
 $$B_◆LB◆n-1◆RB◆ = I, \quad B_◆LB◆n-2◆RB◆ - AB_◆LB◆n-1◆RB◆ = c_◆LB◆n-1◆RB◆I, \quad \ldots, \quad -AB_0 = c_0 I$$
@@ -1137,7 +1137,7 @@ $\mathbf◆LB◆q◆RB◆_4 = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆3◆RB�
 
 $A = QDQ^T$ where
 $Q = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆\begin◆LB◆pmatrix◆RB◆ \sqrt◆LB◆3◆RB◆ & 1 & -\sqrt◆LB◆2◆RB◆ & \sqrt◆LB◆2◆RB◆ \\ -\sqrt◆LB◆3◆RB◆ & 1 & -\sqrt◆LB◆2◆RB◆ & \sqrt◆LB◆2◆RB◆ \\ 0 & -2 & \sqrt◆LB◆2◆RB◆ & \sqrt◆LB◆2◆RB◆ \end◆LB◆pmatrix◆RB◆$
-and $D = \mathrm◆LB◆diag(1, 2, 3)$.
+and $D = \mathrm◆LB◆diag◆RB◆(1, 2, 3)$.
 
 $\blacksquare$
 
@@ -1196,24 +1196,24 @@ coordinate vector of $T(\mathbf◆LB◆v◆RB◆_j)$ with respect to $\mathcal�
 The **kernel** (null space) and **image** (range) of $T$ are:
 
 $$\ker(T) = \{\mathbf◆LB◆v◆RB◆ \in V : T(\mathbf◆LB◆v◆RB◆) = \mathbf◆LB◆0◆RB◆\}$$
-$$\mathrm◆LB◆im(T) = \{T(\mathbf◆LB◆v◆RB◆) : \mathbf◆LB◆v◆RB◆ \in V\}$$
+$$\mathrm◆LB◆im◆RB◆(T) = \{T(\mathbf◆LB◆v◆RB◆) : \mathbf◆LB◆v◆RB◆ \in V\}$$
 
-**Proposition 6.2.** $\ker(T)$ is a subspace of $V$ and $\mathrm◆LB◆im(T)$ is a subspace of $W$.
+**Proposition 6.2.** $\ker(T)$ is a subspace of $V$ and $\mathrm◆LB◆im◆RB◆(T)$ is a subspace of $W$.
 
 ### 6.4 Rank-Nullity Theorem for Linear Maps
 
 **Theorem 6.3 (Rank-Nullity).** For $T \in \mathcal◆LB◆L◆RB◆(V, W)$ with $V$ finite-dimensional:
 
-$$\dim(\ker(T)) + \dim(\mathrm◆LB◆im(T)) = \dim(V)$$
+$$\dim(\ker(T)) + \dim(\mathrm◆LB◆im◆RB◆(T)) = \dim(V)$$
 
 _Proof._ Let $\{\mathbf◆LB◆u◆RB◆_1, \ldots, \mathbf◆LB◆u◆RB◆_k\}$ be a basis for $\ker(T)$Where
 $k = \dim(\ker(T))$. Extend to a basis
 $\{\mathbf◆LB◆u◆RB◆_1, \ldots, \mathbf◆LB◆u◆RB◆_k, \mathbf◆LB◆u◆RB◆_◆LB◆k+1◆RB◆, \ldots, \mathbf◆LB◆u◆RB◆_n\}$ of $V$ Where
 $n = \dim(V)$.
 
-We claim $\{T(\mathbf◆LB◆u◆RB◆_◆LB◆k+1◆RB◆), \ldots, T(\mathbf◆LB◆u◆RB◆_n)\}$ is a basis for $\mathrm◆LB◆im(T)$.
+We claim $\{T(\mathbf◆LB◆u◆RB◆_◆LB◆k+1◆RB◆), \ldots, T(\mathbf◆LB◆u◆RB◆_n)\}$ is a basis for $\mathrm◆LB◆im◆RB◆(T)$.
 
-_Spanning:_ For any $\mathbf◆LB◆w◆RB◆ \in \mathrm◆LB◆im(T)$Write $\mathbf◆LB◆w◆RB◆ = T(\mathbf◆LB◆v◆RB◆)$ for some
+_Spanning:_ For any $\mathbf◆LB◆w◆RB◆ \in \mathrm◆LB◆im◆RB◆(T)$Write $\mathbf◆LB◆w◆RB◆ = T(\mathbf◆LB◆v◆RB◆)$ for some
 $\mathbf◆LB◆v◆RB◆ = \sum_◆LB◆i=1◆RB◆^n \alpha_i \mathbf◆LB◆u◆RB◆_i \in V$. Then
 
 $$\mathbf◆LB◆w◆RB◆ = T\left(\sum_◆LB◆i=1◆RB◆^n \alpha_i \mathbf◆LB◆u◆RB◆_i\right) = \sum_◆LB◆i=1◆RB◆^n \alpha_i T(\mathbf◆LB◆u◆RB◆_i) = \sum_◆LB◆i=k+1◆RB◆^n \alpha_i T(\mathbf◆LB◆u◆RB◆_i)$$
@@ -1226,7 +1226,7 @@ $\sum_◆LB◆i=k+1◆RB◆^n \alpha_i \mathbf◆LB◆u◆RB◆_i \in \ker(T)$. 
 $\sum_◆LB◆i=k+1◆RB◆^n \alpha_i \mathbf◆LB◆u◆RB◆_i = \sum_◆LB◆j=1◆RB◆^k \beta_j \mathbf◆LB◆u◆RB◆_j$ For some $\beta_j$. By
 linear independence of the full basis, all coefficients are zero.
 
-Therefore $\dim(\mathrm◆LB◆im(T)) = n - k$Giving $\dim(\ker(T)) + \dim(\mathrm◆LB◆im(T)) = n$.
+Therefore $\dim(\mathrm◆LB◆im◆RB◆(T)) = n - k$Giving $\dim(\ker(T)) + \dim(\mathrm◆LB◆im◆RB◆(T)) = n$.
 $\blacksquare$
 
 ### 6.5 Isomorphisms
@@ -1235,14 +1235,14 @@ A linear transformation $T : V \to W$ is an **isomorphism** if it is bijective. 
 $V \cong W$.
 
 **Theorem 6.4.** $T$ is an isomorphism if and only if $\ker(T) = \{\mathbf◆LB◆0◆RB◆\}$ and
-$\mathrm◆LB◆im(T) = W$.
+$\mathrm◆LB◆im◆RB◆(T) = W$.
 
 **Corollary 6.5.** If $\dim(V) = \dim(W) \lt \infty$Then $T$ is injective if and only if $T$ is
 surjective.
 
-_Proof._ If $T$ is injective, $\ker(T) = \{\mathbf◆LB◆0◆RB◆\}$So $\dim(\mathrm◆LB◆im(T)) = \dim(V) = \dim(W)$
-Hence $\mathrm◆LB◆im(T) = W$ (a subspace of full dimension equals the whole space). Conversely, If $T$
-is surjective, $\dim(\mathrm◆LB◆im(T)) = \dim(W) = \dim(V)$So $\dim(\ker(T)) = 0$Giving
+_Proof._ If $T$ is injective, $\ker(T) = \{\mathbf◆LB◆0◆RB◆\}$So $\dim(\mathrm◆LB◆im◆RB◆(T)) = \dim(V) = \dim(W)$
+Hence $\mathrm◆LB◆im◆RB◆(T) = W$ (a subspace of full dimension equals the whole space). Conversely, If $T$
+is surjective, $\dim(\mathrm◆LB◆im◆RB◆(T)) = \dim(W) = \dim(V)$So $\dim(\ker(T)) = 0$Giving
 $\ker(T) = \{\mathbf◆LB◆0◆RB◆\}$. $\blacksquare$
 
 ### 6.6 Change of Basis
@@ -1397,10 +1397,10 @@ $$\lVert \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆ \rVert \leq \lVert 
 
 _Proof._
 
-$$\lVert \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆ \rVert^2 = \langle \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆, \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆ \rangle = \lVert \mathbf◆LB◆u◆RB◆ \rVert^2 + 2\,\mathrm◆LB◆Re\langle \mathbf◆LB◆u◆RB◆, \mathbf◆LB◆v◆RB◆ \rangle + \lVert \mathbf◆LB◆v◆RB◆ \rVert^2$$
+$$\lVert \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆ \rVert^2 = \langle \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆, \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆ \rangle = \lVert \mathbf◆LB◆u◆RB◆ \rVert^2 + 2\,\mathrm◆LB◆Re◆RB◆\langle \mathbf◆LB◆u◆RB◆, \mathbf◆LB◆v◆RB◆ \rangle + \lVert \mathbf◆LB◆v◆RB◆ \rVert^2$$
 
 By Cauchy--Schwarz,
-$\mathrm◆LB◆Re\langle \mathbf◆LB◆u◆RB◆, \mathbf◆LB◆v◆RB◆ \rangle \leq \lvert\langle \mathbf◆LB◆u◆RB◆, \mathbf◆LB◆v◆RB◆ \rangle\rvert \leq \lVert \mathbf◆LB◆u◆RB◆ \rVert \lVert \mathbf◆LB◆v◆RB◆ \rVert$So
+$\mathrm◆LB◆Re◆RB◆\langle \mathbf◆LB◆u◆RB◆, \mathbf◆LB◆v◆RB◆ \rangle \leq \lvert\langle \mathbf◆LB◆u◆RB◆, \mathbf◆LB◆v◆RB◆ \rangle\rvert \leq \lVert \mathbf◆LB◆u◆RB◆ \rVert \lVert \mathbf◆LB◆v◆RB◆ \rVert$So
 
 $$\lVert \mathbf◆LB◆u◆RB◆ + \mathbf◆LB◆v◆RB◆ \rVert^2 \leq \lVert \mathbf◆LB◆u◆RB◆ \rVert^2 + 2\lVert \mathbf◆LB◆u◆RB◆ \rVert \lVert \mathbf◆LB◆v◆RB◆ \rVert + \lVert \mathbf◆LB◆v◆RB◆ \rVert^2 = (\lVert \mathbf◆LB◆u◆RB◆ \rVert + \lVert \mathbf◆LB◆v◆RB◆ \rVert)^2$$
 
@@ -1437,12 +1437,12 @@ $$\mathbf◆LB◆u◆RB◆_1 = \mathbf◆LB◆v◆RB◆_1, \quad e_1 = \frac◆L
 $$\mathbf◆LB◆u◆RB◆_k = \mathbf◆LB◆v◆RB◆_k - \sum_◆LB◆i=1◆RB◆^◆LB◆k-1◆RB◆ \langle \mathbf◆LB◆v◆RB◆_k, e_i \rangle e_i, \quad e_k = \frac◆LB◆\mathbf◆LB◆u◆RB◆_k◆RB◆◆LB◆\lVert \mathbf◆LB◆u◆RB◆_k \rVert◆RB◆$$
 
 **Proposition 7.5.** At each step,
-$\mathrm◆LB◆span\{e_1, \ldots, e_k\} = \mathrm◆LB◆span\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k\}$.
+$\mathrm◆LB◆span◆RB◆\{e_1, \ldots, e_k\} = \mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k\}$.
 
 _Proof._ By construction, $\mathbf◆LB◆u◆RB◆_k$ is $\mathbf◆LB◆v◆RB◆_k$ minus its projection onto
-$\mathrm◆LB◆span\{e_1, \ldots, e_◆LB◆k-1◆RB◆\} = \mathrm◆LB◆span\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_◆LB◆k-1◆RB◆\}$. So
-$\mathbf◆LB◆u◆RB◆_k \in \mathrm◆LB◆span\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k\}$ and
-$\mathbf◆LB◆v◆RB◆_k = \mathbf◆LB◆u◆RB◆_k + \sum_◆LB◆i=1◆RB◆^◆LB◆k-1◆RB◆\langle \mathbf◆LB◆v◆RB◆_k, e_i \rangle e_i \in \mathrm◆LB◆span\{\mathbf◆LB◆u◆RB◆_1, \ldots, \mathbf◆LB◆u◆RB◆_k\}$.
+$\mathrm◆LB◆span◆RB◆\{e_1, \ldots, e_◆LB◆k-1◆RB◆\} = \mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_◆LB◆k-1◆RB◆\}$. So
+$\mathbf◆LB◆u◆RB◆_k \in \mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆v◆RB◆_1, \ldots, \mathbf◆LB◆v◆RB◆_k\}$ and
+$\mathbf◆LB◆v◆RB◆_k = \mathbf◆LB◆u◆RB◆_k + \sum_◆LB◆i=1◆RB◆^◆LB◆k-1◆RB◆\langle \mathbf◆LB◆v◆RB◆_k, e_i \rangle e_i \in \mathrm◆LB◆span◆RB◆\{\mathbf◆LB◆u◆RB◆_1, \ldots, \mathbf◆LB◆u◆RB◆_k\}$.
 Since each $e_i$ is a scalar multiple of $\mathbf◆LB◆u◆RB◆_i$The spans coincide. $\blacksquare$
 
 ### 7.5 Orthogonal Projection
@@ -1450,27 +1450,27 @@ Since each $e_i$ is a scalar multiple of $\mathbf◆LB◆u◆RB◆_i$The spans c
 The **orthogonal projection** of $\mathbf◆LB◆v◆RB◆$ onto a subspace $W$ with orthonormal basis
 $\{e_1, \ldots, e_k\}$ is
 
-$$\mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) = \sum_◆LB◆i=1◆RB◆^k \langle \mathbf◆LB◆v◆RB◆, e_i \rangle e_i$$
+$$\mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) = \sum_◆LB◆i=1◆RB◆^k \langle \mathbf◆LB◆v◆RB◆, e_i \rangle e_i$$
 
 **Theorem 7.6 (Best Approximation).** Among all vectors in $W$The orthogonal projection
-$\mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆)$ minimises the distance to $\mathbf◆LB◆v◆RB◆$:
+$\mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆)$ minimises the distance to $\mathbf◆LB◆v◆RB◆$:
 
-$$\lVert \mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) \rVert \leq \lVert \mathbf◆LB◆v◆RB◆ - \mathbf◆LB◆w◆RB◆ \rVert \quad \mathrm◆LB◆for~all~ \mathbf◆LB◆w◆RB◆ \in W$$
+$$\lVert \mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) \rVert \leq \lVert \mathbf◆LB◆v◆RB◆ - \mathbf◆LB◆w◆RB◆ \rVert \quad \mathrm◆LB◆for◆RB◆~all~ \mathbf◆LB◆w◆RB◆ \in W$$
 
 _Proof._ For any $\mathbf◆LB◆w◆RB◆ \in W$Write
-$\mathbf◆LB◆v◆RB◆ - \mathbf◆LB◆w◆RB◆ = (\mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆)) + (\mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) - \mathbf◆LB◆w◆RB◆)$.
+$\mathbf◆LB◆v◆RB◆ - \mathbf◆LB◆w◆RB◆ = (\mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆)) + (\mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) - \mathbf◆LB◆w◆RB◆)$.
 The first term is orthogonal to $W$ (hence to the second term, which lies in $W$), so by the
 Pythagorean theorem:
 
-$$\lVert \mathbf◆LB◆v◆RB◆ - \mathbf◆LB◆w◆RB◆ \rVert^2 = \lVert \mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) \rVert^2 + \lVert \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) - \mathbf◆LB◆w◆RB◆ \rVert^2 \geq \lVert \mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) \rVert^2$$
+$$\lVert \mathbf◆LB◆v◆RB◆ - \mathbf◆LB◆w◆RB◆ \rVert^2 = \lVert \mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) \rVert^2 + \lVert \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) - \mathbf◆LB◆w◆RB◆ \rVert^2 \geq \lVert \mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) \rVert^2$$
 
-With equality iff $\mathbf◆LB◆w◆RB◆ = \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆)$. $\blacksquare$
+With equality iff $\mathbf◆LB◆w◆RB◆ = \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆)$. $\blacksquare$
 
 ### 7.6 Least Squares Approximation
 
 A fundamental application of orthogonal projection is fitting functions to data. Given a subspace
 $W$ of an inner product space $V$ and a target $\mathbf◆LB◆v◆RB◆ \in V$The best approximation in $W$ Is
-the orthogonal projection $\mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆)$.
+the orthogonal projection $\mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆)$.
 
 ### 7.7 Worked Example: Gram--Schmidt
 
@@ -1536,13 +1536,13 @@ $\langle \mathbf◆LB◆v◆RB◆, e_1 \rangle = \frac◆LB◆1◆RB◆◆LB◆\
 
 $\langle \mathbf◆LB◆v◆RB◆, e_2 \rangle = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆(-3 - 2 + 2) = \frac◆LB◆-3◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆$
 
-$\mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) = \frac◆LB◆5◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆(1, 0, 1) + \frac◆LB◆-3◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆(-1, 2, 1)$
+$\mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) = \frac◆LB◆5◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆(1, 0, 1) + \frac◆LB◆-3◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆(-1, 2, 1)$
 
 $= \frac◆LB◆5◆RB◆◆LB◆2◆RB◆(1, 0, 1) + \frac◆LB◆-3◆RB◆◆LB◆6◆RB◆(-1, 2, 1) = (\frac◆LB◆5◆RB◆◆LB◆2◆RB◆, 0, \frac◆LB◆5◆RB◆◆LB◆2◆RB◆) + (\frac◆LB◆1◆RB◆◆LB◆2◆RB◆, -1, -\frac◆LB◆1◆RB◆◆LB◆2◆RB◆) = (3, -1, 2)$
 
-The residual is $\mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) = (0, 0, 0)$So the distance is 0. This
+The residual is $\mathbf◆LB◆v◆RB◆ - \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) = (0, 0, 0)$So the distance is 0. This
 means $\mathbf◆LB◆v◆RB◆ \in W$ itself. Indeed,
-$\mathbf◆LB◆v◆RB◆ = 3(1, 0, 1) - (0, 1, 1) \in \mathrm◆LB◆span\{(1,0,1), (0,1,1)\}$. $\blacksquare$
+$\mathbf◆LB◆v◆RB◆ = 3(1, 0, 1) - (0, 1, 1) \in \mathrm◆LB◆span◆RB◆\{(1,0,1), (0,1,1)\}$. $\blacksquare$
 
 </details>
 
@@ -1554,11 +1554,11 @@ That minimises $\int_0^1 (e^x - c)^2\,dx$.
 <details>
 <summary>Solution</summary>
 
-We want the orthogonal projection of $f(x) = e^x$ onto the subspace $W = \mathrm◆LB◆span\{1\}$ in the
+We want the orthogonal projection of $f(x) = e^x$ onto the subspace $W = \mathrm◆LB◆span◆RB◆\{1\}$ in the
 $L^2[0,1]$ inner product space. The orthonormal basis for $W$ is $e_1 = 1$ (since
 $\lVert 1 \rVert^2 = \int_0^1 1\,dx = 1$).
 
-$\mathrm◆LB◆proj_W(f) = \langle f, 1 \rangle \cdot 1 = \left(\int_0^1 e^x\,dx\right) \cdot 1 = (e - 1) \cdot 1$
+$\mathrm◆LB◆proj_W◆RB◆(f) = \langle f, 1 \rangle \cdot 1 = \left(\int_0^1 e^x\,dx\right) \cdot 1 = (e - 1) \cdot 1$
 
 So the best constant approximation is $c = e - 1 \approx 1.718$.
 
@@ -1577,7 +1577,7 @@ $\blacksquare$
 - **Gram--Schmidt is numerically unstable.** For floating-point computation, modified Gram--Schmidt
   or Householder reflections are preferred.
 - **Orthogonal projection decomposes $\mathbf◆LB◆v◆RB◆$ uniquely.**
-  $\mathbf◆LB◆v◆RB◆ = \mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) + \mathbf◆LB◆v◆RB◆^\perp$ where $\mathbf◆LB◆v◆RB◆^\perp \in W^\perp$.
+  $\mathbf◆LB◆v◆RB◆ = \mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) + \mathbf◆LB◆v◆RB◆^\perp$ where $\mathbf◆LB◆v◆RB◆^\perp \in W^\perp$.
   This decomposition is unique and is called the **orthogonal decomposition**.
 
 ---
@@ -1594,7 +1594,7 @@ $$A = U \Sigma V^T$$
 Where $U \in \mathcal◆LB◆M◆RB◆_◆LB◆m \times m◆RB◆(\mathbb◆LB◆R◆RB◆)$ is orthogonal,
 $V \in \mathcal◆LB◆M◆RB◆_◆LB◆n \times n◆RB◆(\mathbb◆LB◆R◆RB◆)$ is orthogonal, and
 $\Sigma \in \mathcal◆LB◆M◆RB◆_◆LB◆m \times n◆RB◆(\mathbb◆LB◆R◆RB◆)$ is diagonal with non-negative entries
-$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r \geq 0$ (where $r = \mathrm◆LB◆rank(A)$).
+$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r \geq 0$ (where $r = \mathrm◆LB◆rank◆RB◆(A)$).
 
 The $\sigma_i$ are called the **singular values** of $A$. The columns of $U$ are the **left singular
 vectors**, and the columns of $V$ are the **right singular vectors**.
@@ -1685,7 +1685,7 @@ $$A^+ = V \Sigma^+ U^T$$
 Where $\Sigma^+$ is obtained from $\Sigma$ by transposing and inverting each non-zero singular
 value:
 
-$$(\Sigma^+)_◆LB◆ii◆RB◆ = \begin◆LB◆cases◆RB◆ 1/\sigma_i & \text◆LB◆if  \sigma_i > 0 \\ 0 & \text◆LB◆if  \sigma_i = 0 \end◆LB◆cases◆RB◆$$
+$$(\Sigma^+)_◆LB◆ii◆RB◆ = \begin◆LB◆cases◆RB◆ 1/\sigma_i & \text◆LB◆if◆RB◆  \sigma_i > 0 \\ 0 & \text◆LB◆if◆RB◆  \sigma_i = 0 \end◆LB◆cases◆RB◆$$
 
 **Theorem 8.5.** The pseudoinverse satisfies the four Moore--Penrose conditions:
 
@@ -1706,7 +1706,7 @@ $\mathbf◆LB◆x◆RB◆^* = A^+\mathbf◆LB◆b◆RB◆$ is the least-squares 
 
 _Proof._ The least-squares solutions to $A\mathbf◆LB◆x◆RB◆ \approx \mathbf◆LB◆b◆RB◆$ are
 $\mathbf◆LB◆x◆RB◆ = A^+\mathbf◆LB◆b◆RB◆ + (I - A^+A)\mathbf◆LB◆z◆RB◆$ for arbitrary $\mathbf◆LB◆z◆RB◆$. Since
-$(I - A^+A)\mathbf◆LB◆z◆RB◆ \in \ker(A)$ and $A^+\mathbf◆LB◆b◆RB◆ \in \mathrm◆LB◆im(A^T)$These two components are
+$(I - A^+A)\mathbf◆LB◆z◆RB◆ \in \ker(A)$ and $A^+\mathbf◆LB◆b◆RB◆ \in \mathrm◆LB◆im◆RB◆(A^T)$These two components are
 orthogonal. The minimum-norm solution is obtained when $\mathbf◆LB◆z◆RB◆ = \mathbf◆LB◆0◆RB◆$Giving
 $\mathbf◆LB◆x◆RB◆^* = A^+\mathbf◆LB◆b◆RB◆$. $\blacksquare$
 
@@ -1805,7 +1805,7 @@ recompute.
 
 $A^T A = \begin◆LB◆pmatrix◆RB◆ 2 & 1 & 1 \\ 1 & 1 & 0 \\ 1 & 0 & 2 \end◆LB◆pmatrix◆RB◆$.
 
-$\mathrm◆LB◆tr(A^T A) = 5$So $\lambda_1 + \lambda_2 + \lambda_3 = 5$.
+$\mathrm◆LB◆tr◆RB◆(A^T A) = 5$So $\lambda_1 + \lambda_2 + \lambda_3 = 5$.
 
 $\det(A^T A) = 2(2) - 1(2) - 1(-1) = 4 - 2 + 1 = 3$.
 
@@ -1863,7 +1863,7 @@ $\log_◆LB◆10◆RB◆(20000) \approx 4.3$ digits of precision. $\blacksquare$
   can be any orthonormal basis of the eigenspace. The signs of singular vectors can also be flipped
   in pairs.
 - **The pseudoinverse equals the inverse only for square, full-rank matrices.** When $A$ is not full
-  rank, $A^+A \neq I$; instead, $A^+A$ is the orthogonal projection onto $\mathrm◆LB◆im(A^T)$.
+  rank, $A^+A \neq I$; instead, $A^+A$ is the orthogonal projection onto $\mathrm◆LB◆im◆RB◆(A^T)$.
 - **The SVD and eigendecomposition are different decompositions.** The SVD always exists for any
   matrix, but the eigendecomposition requires the matrix to be square. Even for symmetric matrices,
   the singular values are $|\lambda_i|$Not $\lambda_i$.
@@ -1927,14 +1927,14 @@ Row-reduce $A$:
 
 $$\begin◆LB◆pmatrix◆RB◆ 1 & 2 & 1 & 4 \\ 2 & 4 & 0 & 6 \\ 3 & 6 & 1 & 10 \end◆LB◆pmatrix◆RB◆ \xrightarrow◆LB◆R_2 - 2R_1, R_3 - 3R_1◆RB◆ \begin◆LB◆pmatrix◆RB◆ 1 & 2 & 1 & 4 \\ 0 & 0 & -2 & -2 \\ 0 & 0 & -2 & -2 \end◆LB◆pmatrix◆RB◆ \xrightarrow◆LB◆R_3 - R_2◆RB◆ \begin◆LB◆pmatrix◆RB◆ 1 & 2 & 1 & 4 \\ 0 & 0 & -2 & -2 \\ 0 & 0 & 0 & 0 \end◆LB◆pmatrix◆RB◆$$
 
-Pivots are in columns 1 and 3. A basis for $\mathrm◆LB◆col(A)$ is $\{(1, 2, 3), (1, 0, 1)\}$ (the pivot
-columns of the original $A$). $\dim(\mathrm◆LB◆col(A)) = 2$.
+Pivots are in columns 1 and 3. A basis for $\mathrm◆LB◆col◆RB◆(A)$ is $\{(1, 2, 3), (1, 0, 1)\}$ (the pivot
+columns of the original $A$). $\dim(\mathrm◆LB◆col◆RB◆(A)) = 2$.
 
 _If you get this wrong, revise: Section 2.7 (Worked Examples)._
 
 </details>
 
-**Problem 5.** Let $U = \mathrm◆LB◆span\{(1, 0, 1), (0, 1, 1)\}$ and $W = \mathrm◆LB◆span\{(1, 1, 0)\}$ in
+**Problem 5.** Let $U = \mathrm◆LB◆span◆RB◆\{(1, 0, 1), (0, 1, 1)\}$ and $W = \mathrm◆LB◆span◆RB◆\{(1, 1, 0)\}$ in
 $\mathbb◆LB◆R◆RB◆^3$. Verify the dimension formula $\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W)$.
 
 <details>
@@ -1996,7 +1996,7 @@ $\det(A) = 2(3 - 0) - 0 + 1(1 - 0) = 6 + 1 = 7$.
 Cofactors: $C_◆LB◆11◆RB◆ = +3$$C_◆LB◆12◆RB◆ = -3$$C_◆LB◆13◆RB◆ = +1$ $C_◆LB◆21◆RB◆ = +1$$C_◆LB◆22◆RB◆ = +6$$C_◆LB◆23◆RB◆ = -2$
 $C_◆LB◆31◆RB◆ = -1$$C_◆LB◆32◆RB◆ = +1$$C_◆LB◆33◆RB◆ = +2$
 
-$\mathrm◆LB◆adj(A) = \begin◆LB◆pmatrix◆RB◆ 3 & 1 & -1 \\ -3 & 6 & 1 \\ 1 & -2 & 2 \end◆LB◆pmatrix◆RB◆$
+$\mathrm◆LB◆adj◆RB◆(A) = \begin◆LB◆pmatrix◆RB◆ 3 & 1 & -1 \\ -3 & 6 & 1 \\ 1 & -2 & 2 \end◆LB◆pmatrix◆RB◆$
 
 $A^◆LB◆-1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆7◆RB◆\begin◆LB◆pmatrix◆RB◆ 3 & 1 & -1 \\ -3 & 6 & 1 \\ 1 & -2 & 2 \end◆LB◆pmatrix◆RB◆$
 
@@ -2034,8 +2034,8 @@ $$\begin◆LB◆aligned◆RB◆ x + y + z &= 1 \\ 2x + 2y + 2z &= 3 \\ x - y + z
 
 $$[A \mid \mathbf◆LB◆b◆RB◆] = \begin◆LB◆pmatrix◆RB◆ 1 & 1 & 1 & 1 \\ 2 & 2 & 2 & 3 \\ 1 & -1 & 1 & 0 \end◆LB◆pmatrix◆RB◆ \xrightarrow◆LB◆R_2 - 2R_1, R_3 - R_1◆RB◆ \begin◆LB◆pmatrix◆RB◆ 1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 \\ 0 & -2 & 0 & -1 \end◆LB◆pmatrix◆RB◆$$
 
-$\mathrm◆LB◆rank(A) = 2$ but $\mathrm◆LB◆rank([A \mid \mathbf◆LB◆b◆RB◆]) = 3$ (the row $[0\ 0\ 0\ 1]$ is
-Non-zero). Since $\mathrm◆LB◆rank(A) \neq \mathrm◆LB◆rank([A \mid \mathbf◆LB◆b◆RB◆])$The system is inconsistent.
+$\mathrm◆LB◆rank◆RB◆(A) = 2$ but $\mathrm◆LB◆rank◆RB◆([A \mid \mathbf◆LB◆b◆RB◆]) = 3$ (the row $[0\ 0\ 0\ 1]$ is
+Non-zero). Since $\mathrm◆LB◆rank◆RB◆(A) \neq \mathrm◆LB◆rank◆RB◆([A \mid \mathbf◆LB◆b◆RB◆])$The system is inconsistent.
 
 _If you get this wrong, revise: Section 4.2 (Rouché--Capelli Theorem)._
 
@@ -2162,9 +2162,9 @@ $[T]_◆LB◆\mathcal◆LB◆E◆RB◆◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1
 $\ker(T) = \{(x, y, z) : x + y = 0, y + z = 0\} = \{(t, -t, t) : t \in \mathbb◆LB◆R◆RB◆\}$So
 $\dim(\ker(T)) = 1$.
 
-$\mathrm◆LB◆im(T) = \mathrm◆LB◆span\{(1, 0), (1, 1)\} = \mathbb◆LB◆R◆RB◆^2$So $\dim(\mathrm◆LB◆im(T)) = 2$.
+$\mathrm◆LB◆im◆RB◆(T) = \mathrm◆LB◆span◆RB◆\{(1, 0), (1, 1)\} = \mathbb◆LB◆R◆RB◆^2$So $\dim(\mathrm◆LB◆im◆RB◆(T)) = 2$.
 
-Verify: $\dim(\ker(T)) + \dim(\mathrm◆LB◆im(T)) = 1 + 2 = 3 = \dim(\mathbb◆LB◆R◆RB◆^3)$. $\blacksquare$
+Verify: $\dim(\ker(T)) + \dim(\mathrm◆LB◆im◆RB◆(T)) = 1 + 2 = 3 = \dim(\mathbb◆LB◆R◆RB◆^3)$. $\blacksquare$
 
 _If you get this wrong, revise: Section 6.4 (Rank-Nullity for Linear Maps)._
 
@@ -2185,13 +2185,13 @@ $\mathbf◆LB◆u◆RB◆_2 = (1, 0, -1) - \langle (1, 0, -1), e_1 \rangle e_1 =
 $\lVert \mathbf◆LB◆u◆RB◆_2 \rVert = \sqrt◆LB◆1/4 + 1/4 + 1◆RB◆ = \sqrt◆LB◆3/2◆RB◆$So
 $e_2 = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆(1, 1, -2)$.
 
-$\mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) = \langle (1,2,3), e_1 \rangle e_1 + \langle (1,2,3), e_2 \rangle e_2$
+$\mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) = \langle (1,2,3), e_1 \rangle e_1 + \langle (1,2,3), e_2 \rangle e_2$
 
 $\langle (1,2,3), e_1 \rangle = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆(1 - 2) = \frac◆LB◆-1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆$
 
 $\langle (1,2,3), e_2 \rangle = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆(1 + 2 - 6) = \frac◆LB◆-3◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆$
 
-$\mathrm◆LB◆proj_W(\mathbf◆LB◆v◆RB◆) = \frac◆LB◆-1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆(1, -1, 0) + \frac◆LB◆-3◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆(1, 1, -2)$
+$\mathrm◆LB◆proj_W◆RB◆(\mathbf◆LB◆v◆RB◆) = \frac◆LB◆-1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆2◆RB◆◆RB◆(1, -1, 0) + \frac◆LB◆-3◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆6◆RB◆◆RB◆(1, 1, -2)$
 
 $= -\frac◆LB◆1◆RB◆◆LB◆2◆RB◆(1, -1, 0) - \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(1, 1, -2) = (-1, 0, 1)$.
 
@@ -2257,7 +2257,7 @@ _If you get this wrong, revise: Section 5.4 (Cayley--Hamilton Theorem)._
 
 **Problem 20.** Let $T : \mathcal◆LB◆P◆RB◆_2(\mathbb◆LB◆R◆RB◆) \to \mathcal◆LB◆P◆RB◆_2(\mathbb◆LB◆R◆RB◆)$ be defined by
 $T(p) = p'$ (the derivative). Find the matrix of $T$ with respect to the basis
-$\mathcal◆LB◆B◆RB◆ = \{1, x, x^2\}$And determine $\ker(T)$ and $\mathrm◆LB◆im(T)$.
+$\mathcal◆LB◆B◆RB◆ = \{1, x, x^2\}$And determine $\ker(T)$ and $\mathrm◆LB◆im◆RB◆(T)$.
 
 <details>
 <summary>Solution</summary>
@@ -2273,11 +2273,11 @@ $\begin◆LB◆pmatrix◆RB◆ 0 \\ 2 \\ 0 \end◆LB◆pmatrix◆RB◆$.
 
 $$[T]_◆LB◆\mathcal◆LB◆B◆RB◆◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 0 & 1 & 0 \\ 0 & 0 & 2 \\ 0 & 0 & 0 \end◆LB◆pmatrix◆RB◆$$
 
-$\ker(T) = \{p : p' = 0\} = \mathrm◆LB◆span\{1\}$So $\dim(\ker(T)) = 1$.
+$\ker(T) = \{p : p' = 0\} = \mathrm◆LB◆span◆RB◆\{1\}$So $\dim(\ker(T)) = 1$.
 
-$\mathrm◆LB◆im(T) = \{p' : p \in \mathcal◆LB◆P◆RB◆_2\} = \mathrm◆LB◆span\{1, x\}$So $\dim(\mathrm◆LB◆im(T)) = 2$.
+$\mathrm◆LB◆im◆RB◆(T) = \{p' : p \in \mathcal◆LB◆P◆RB◆_2\} = \mathrm◆LB◆span◆RB◆\{1, x\}$So $\dim(\mathrm◆LB◆im◆RB◆(T)) = 2$.
 
-Verify: $\dim(\ker(T)) + \dim(\mathrm◆LB◆im(T)) = 1 + 2 = 3 = \dim(\mathcal◆LB◆P◆RB◆_2)$. $\blacksquare$
+Verify: $\dim(\ker(T)) + \dim(\mathrm◆LB◆im◆RB◆(T)) = 1 + 2 = 3 = \dim(\mathcal◆LB◆P◆RB◆_2)$. $\blacksquare$
 
 _If you get this wrong, revise: Section 6.2 (Matrix Representation) and Section 6.4 (Rank-Nullity)._
 

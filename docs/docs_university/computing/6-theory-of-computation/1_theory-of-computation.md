@@ -53,13 +53,13 @@ complexity class.
 
 **Finite languages** (always regular):
 
-- $L_1 = \{\mathrm◆LB◆true, \mathrm◆LB◆false\}$ — the set of Boolean literals.
+- $L_1 = \{\mathrm◆LB◆true◆RB◆, \mathrm◆LB◆false◆RB◆\}$ — the set of Boolean literals.
 - $L_2 = \{w \in \{0,1\}^* : |w| \leq 3\}$ — all binary strings of length at most 3.
 
 **Regular languages** (decidable by finite automata):
 
 - $L_3 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains the substring  101\}$.
-- $L_4 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ has an even number of  1\mathrm◆LB◆s\}$.
+- $L_4 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ has an even number of  1\mathrm◆LB◆s◆RB◆\}$.
 - $L_5 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ interpreted in binary is divisible by  3\}$.
 
 **Context-free but not regular:**
@@ -76,7 +76,7 @@ complexity class.
 **Undecidable (Turing-recognisable):**
 
 - $A_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ accepts  w\}$ — the acceptance problem.
-- $\mathrm◆LB◆HALT_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ halts on  w\}$.
+- $\mathrm◆LB◆HALT_◆RB◆◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ halts on  w\}$.
 
 **Not even Turing-recognisable:**
 
@@ -166,9 +166,9 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_0\})$$
 | $q_1$ | $q_2$              | $q_0$              |
 | $q_2$ | $q_1$              | $q_2$              |
 
-_Correctness._ By induction on input length. Base: $x = \varepsilon$, $\mathrm◆LB◆val(\varepsilon) = 0$
-DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm◆LB◆val(x) \bmod 3$), Then
-reading $b$ moves to $q_◆LB◆(2r+b) \bmod 3◆RB◆$Which equals $q_◆LB◆\mathrm◆LB◆val(xb) \bmod 3◆RB◆$. $\blacksquare$
+_Correctness._ By induction on input length. Base: $x = \varepsilon$, $\mathrm◆LB◆val◆RB◆(\varepsilon) = 0$
+DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm◆LB◆val◆RB◆(x) \bmod 3$), Then
+reading $b$ moves to $q_◆LB◆(2r+b) \bmod 3◆RB◆$Which equals $q_◆LB◆\mathrm◆LB◆val◆RB◆(xb) \bmod 3◆RB◆$. $\blacksquare$
 
 </details>
 
@@ -558,14 +558,14 @@ A **parse tree** (derivation tree) for a string $w$ according to grammar $G$ is 
 A CFG is **ambiguous** if some string in its language has two or more distinct parse trees
 (equivalently, Two or more leftmost derivations or two or more rightmost derivations).
 
-**Example (ambiguous).** $S \to S + S \mid S \times S \mid \mathrm◆LB◆id$. The string
-$\mathrm◆LB◆id + \mathrm◆LB◆id \times \mathrm◆LB◆id$ has two parse trees: $S + (S \times S)$ and
+**Example (ambiguous).** $S \to S + S \mid S \times S \mid \mathrm◆LB◆id◆RB◆$. The string
+$\mathrm◆LB◆id◆RB◆ + \mathrm◆LB◆id◆RB◆ \times \mathrm◆LB◆id◆RB◆$ has two parse trees: $S + (S \times S)$ and
 $(S + S) \times S$.
 
 **Removing ambiguity.** Some ambiguous grammars can be made unambiguous by rewriting the productions
 To enforce a particular evaluation order. For the arithmetic expression grammar:
 
-$$E \to E + T \mid T, \quad T \to T \times F \mid F, \quad F \to (E) \mid \mathrm◆LB◆id$$
+$$E \to E + T \mid T, \quad T \to T \times F \mid F, \quad F \to (E) \mid \mathrm◆LB◆id◆RB◆$$
 
 This grammar is unambiguous and enforces the standard precedence ($\times$ before $+$) and left
 Associativity.
@@ -1189,7 +1189,7 @@ That:
 $$\alpha_{i_1} \alpha_{i_2} \cdots \alpha_{i_m} = \beta_{i_1} \beta_{i_2} \cdots \beta_{i_m}$$
 
 The **PCP language** is
-$\mathrm◆LB◆PCP = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm◆LB◆ have a solution\}$.
+$\mathrm◆LB◆PCP◆RB◆ = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm◆LB◆ have a solution\}$.
 
 **Example.** $\alpha = (a, ab, bba)$, $\beta = (ba, aa, bb)$. The sequence $(2, 1, 1, 3)$ gives
 $ab \cdot a \cdot a \cdot bba = abaabba$ and $aa \cdot ba \cdot ba \cdot bb = aabababb$ — not equal.
@@ -1305,7 +1305,7 @@ $\mathrm{NTIME(t(n)) = \{L : L \mathrm{ is decided by a nondeterministic TM in  
 
 ### 6.2 The Class P
 
-$$\mathrm◆LB◆P = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆TIME(n^k)$$
+$$\mathrm◆LB◆P◆RB◆ = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆TIME◆RB◆(n^k)$$
 
 $\mathrm{P$ is the class of languages decidable in polynomial time by a deterministic TM. This
 Captures the notion of "efficiently solvable."
@@ -1320,12 +1320,12 @@ Captures the notion of "efficiently solvable."
 
 ### 6.3 The Class NP
 
-$$\mathrm◆LB◆NP = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆NTIME(n^k)$$
+$$\mathrm◆LB◆NP◆RB◆ = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆NTIME◆RB◆(n^k)$$
 
 **Equivalent definition.** A language $L$ is in NP if there exists a polynomial-time verifier $V$
 And a polynomial $p$ such that:
 
-$$L = \{w : \exists c \mathrm◆LB◆ with  |c| \leq p(|w|) \mathrm◆LB◆ and  V(w, c) = \mathrm◆LB◆accept\}$$
+$$L = \{w : \exists c \mathrm◆LB◆ with  |c| \leq p(|w|) \mathrm◆LB◆ and  V(w, c) = \mathrm◆LB◆accept◆RB◆\}$$
 
 The string $c$ is called a **certificate** (or witness).
 
@@ -1512,13 +1512,13 @@ Equal sum?
 
 **Reduction chain:**
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆VertexCover \to \mathrm◆LB◆Clique$$
+$$\mathrm◆LB◆SAT◆RB◆ \to \mathrm◆LB◆3◆RB◆\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆VertexCover◆RB◆ \to \mathrm◆LB◆Clique◆RB◆$$
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆HamiltonianPath$$
+$$\mathrm◆LB◆SAT◆RB◆ \to \mathrm◆LB◆3◆RB◆\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆HamiltonianPath◆RB◆$$
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$$
+$$\mathrm◆LB◆SAT◆RB◆ \to \mathrm◆LB◆3◆RB◆\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum◆RB◆ \to \mathrm◆LB◆Partition◆RB◆$$
 
-$$\mathrm◆LB◆SAT \to \mathrm◆LB◆3\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum \to \mathrm◆LB◆Partition$$
+$$\mathrm◆LB◆SAT◆RB◆ \to \mathrm◆LB◆3◆RB◆\mathrm◆LB◆-SAT◆RB◆ \to \mathrm◆LB◆SubsetSum◆RB◆ \to \mathrm◆LB◆Partition◆RB◆$$
 
 <details>
 <summary>Worked Example: Reducing 3-SAT to Independent Set</summary>
@@ -1616,10 +1616,10 @@ Quantifiers.
 
 **Definition.** Define the classes $\Sigma_k^P$ and $\Pi_k^P$ inductively:
 
-- $\Sigma_0^P = \Pi_0^P = \mathrm◆LB◆P$.
-- $\Sigma_◆LB◆k+1◆RB◆^P = \mathrm◆LB◆NP^◆LB◆\Sigma_k^P◆RB◆$ (NP with a $\Sigma_k^P$ oracle).
-- $\Pi_◆LB◆k+1◆RB◆^P◆RB◆ = \mathrm◆LB◆coNP^◆LB◆\Sigma_k^P◆RB◆$ (coNP with a $\Sigma_k^P$ oracle).
-- $\mathrm◆LB◆PH = \bigcup_◆LB◆k \geq 0◆RB◆ \Sigma_k^P$.
+- $\Sigma_0^P = \Pi_0^P = \mathrm◆LB◆P◆RB◆$.
+- $\Sigma_◆LB◆k+1◆RB◆^P = \mathrm◆LB◆NP◆RB◆^◆LB◆\Sigma_k^P◆RB◆$ (NP with a $\Sigma_k^P$ oracle).
+- $\Pi_◆LB◆k+1◆RB◆^P◆RB◆ = \mathrm◆LB◆coNP◆RB◆^◆LB◆\Sigma_k^P◆RB◆$ (coNP with a $\Sigma_k^P$ oracle).
+- $\mathrm◆LB◆PH◆RB◆ = \bigcup_◆LB◆k \geq 0◆RB◆ \Sigma_k^P$.
 
 **Equivalent characterisation.** A language $L$ is in $\Sigma_k^P$ iff there exist polynomial-time
 Computable relations $R$ and polynomials $p$ such that:
@@ -1630,8 +1630,8 @@ Where each $|y_i| \leq p(|x|)$ and the quantifiers alternate, starting with $\ex
 
 **Examples:**
 
-- $\Sigma_1^P = \mathrm◆LB◆NP$: "there exists a certificate."
-- $\Pi_1^P = \mathrm◆LB◆coNP$: "for all certificates."
+- $\Sigma_1^P = \mathrm◆LB◆NP◆RB◆$: "there exists a certificate."
+- $\Pi_1^P = \mathrm◆LB◆coNP◆RB◆$: "for all certificates."
 - $\Sigma_2^P$ contains problems like "does there exist a strategy for player 1 such that for all
   strategies of player 2, player 1 wins?" (for polynomial-size games).
 - $\Pi_2^P$ contains the complement of such problems.
@@ -1640,14 +1640,14 @@ Where each $|y_i| \leq p(|x|)$ and the quantifiers alternate, starting with $\ex
 
 $$\mathrm{P \subseteq \mathrm{NP \subseteq \Sigma_2^P \subseteq \Sigma_3^P \subseteq \cdots \subseteq \mathrm{PH \subseteq \mathrm{PSPACE$$
 
-**Theorem 6.10.** If $\Sigma_k^P = \Sigma_◆LB◆k+1◆RB◆^P$ for some $k$Then $\mathrm◆LB◆PH = \Sigma_k^P$ (the
+**Theorem 6.10.** If $\Sigma_k^P = \Sigma_◆LB◆k+1◆RB◆^P$ for some $k$Then $\mathrm◆LB◆PH◆RB◆ = \Sigma_k^P$ (the
 polynomial hierarchy collapses to level $k$).
 
-_Proof._ If $\Sigma_k^P = \Sigma_◆LB◆k+1◆RB◆^P = \mathrm◆LB◆NP^◆LB◆\Sigma_k^P◆RB◆$Then the $\Sigma_k^P$ oracle
+_Proof._ If $\Sigma_k^P = \Sigma_◆LB◆k+1◆RB◆^P = \mathrm◆LB◆NP◆RB◆^◆LB◆\Sigma_k^P◆RB◆$Then the $\Sigma_k^P$ oracle
 Provides no additional power. By induction, $\Sigma_◆LB◆k+i◆RB◆^P = \Sigma_k^P$ for all $i \geq 0$ So
-$\mathrm◆LB◆PH = \Sigma_k^P$. $\blacksquare$
+$\mathrm◆LB◆PH◆RB◆ = \Sigma_k^P$. $\blacksquare$
 
-It is widely believed that $\mathrm◆LB◆PH$ does not collapse.
+It is widely believed that $\mathrm◆LB◆PH◆RB◆$ does not collapse.
 
 ### 6.8 Beyond NP
 
@@ -1655,22 +1655,22 @@ It is widely believed that $\mathrm◆LB◆PH$ does not collapse.
 Instance has a polynomial-time verifiable certificate.
 
 - Example: "Is this formula a tautology?" (the certificate for "no" would be a failing assignment).
-- $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP \cap \mathrm◆LB◆coNP$.
-- It is unknown whether $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$. If $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then
-  $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$.
+- $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆NP◆RB◆ \cap \mathrm◆LB◆coNP◆RB◆$.
+- It is unknown whether $\mathrm◆LB◆NP◆RB◆ = \mathrm◆LB◆coNP◆RB◆$. If $\mathrm◆LB◆P◆RB◆ = \mathrm◆LB◆NP◆RB◆$Then
+  $\mathrm◆LB◆NP◆RB◆ = \mathrm◆LB◆coNP◆RB◆$.
 
-**Theorem 6.11.** If $\mathrm◆LB◆NP \neq \mathrm◆LB◆coNP$Then $\mathrm◆LB◆P \neq \mathrm◆LB◆NP$.
+**Theorem 6.11.** If $\mathrm◆LB◆NP◆RB◆ \neq \mathrm◆LB◆coNP◆RB◆$Then $\mathrm◆LB◆P◆RB◆ \neq \mathrm◆LB◆NP◆RB◆$.
 
-_Proof._ If $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then $\mathrm◆LB◆P = \mathrm◆LB◆coNP$ (since $\mathrm◆LB◆P$ Is closed
-under complement), so $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$. The contrapositive gives the Result.
+_Proof._ If $\mathrm◆LB◆P◆RB◆ = \mathrm◆LB◆NP◆RB◆$Then $\mathrm◆LB◆P◆RB◆ = \mathrm◆LB◆coNP◆RB◆$ (since $\mathrm◆LB◆P◆RB◆$ Is closed
+under complement), so $\mathrm◆LB◆NP◆RB◆ = \mathrm◆LB◆coNP◆RB◆$. The contrapositive gives the Result.
 $\blacksquare$
 
 **PSPACE.** The class of languages decidable in polynomial space:
 
 $$\mathrm{PSPACE = \bigcup_{k \geq 1} \mathrm{SPACE(n^k)$$
 
-- $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE$.
-- $\mathrm◆LB◆P \neq \mathrm◆LB◆PSPACE$ (space hierarchy theorem).
+- $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆NP◆RB◆ \subseteq \mathrm◆LB◆PSPACE◆RB◆$.
+- $\mathrm◆LB◆P◆RB◆ \neq \mathrm◆LB◆PSPACE◆RB◆$ (space hierarchy theorem).
 - PSPACE-complete problems: TQBF, generalised geography, determining the winner of a position in
   certain games.
 
@@ -1678,8 +1678,8 @@ $$\mathrm{PSPACE = \bigcup_{k \geq 1} \mathrm{SPACE(n^k)$$
 
 $$\mathrm{EXPTIME = \bigcup_{k \geq 1} \mathrm{TIME(2^{n^k})$$
 
-- $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE \subseteq \mathrm◆LB◆EXPTIME$.
-- $\mathrm◆LB◆P \neq \mathrm◆LB◆EXPTIME$ (time hierarchy theorem).
+- $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆NP◆RB◆ \subseteq \mathrm◆LB◆PSPACE◆RB◆ \subseteq \mathrm◆LB◆EXPTIME◆RB◆$.
+- $\mathrm◆LB◆P◆RB◆ \neq \mathrm◆LB◆EXPTIME◆RB◆$ (time hierarchy theorem).
 - EXPTIME-complete problems: Generalised chess, Go (on sufficiently large boards), determining the
   winner of a two-player game with exponential game tree.
 
@@ -1693,18 +1693,18 @@ $$\mathrm{P \subseteq \mathrm{NP \subseteq \mathrm{PH \subseteq \mathrm{PSPACE$$
 
 | Inclusion                                                     | Known to be proper? | Theorem used        |
 | ------------------------------------------------------------- | ------------------- | ------------------- |
-| $\mathrm◆LB◆Regular \subseteq \mathrm◆LB◆CFL$                       | Yes                 | Pumping lemma       |
-| $\mathrm◆LB◆CFL \subseteq \mathrm◆LB◆Decidable$                     | Yes                 | CYK algorithm       |
-| $\mathrm◆LB◆Decidable \subseteq \mathrm◆LB◆TM\mathrm◆LB◆-recognisable$ | Yes                 | Diagonalisation     |
-| $\mathrm◆LB◆P \subseteq \mathrm◆LB◆EXPTIME$                         | Yes                 | Time hierarchy      |
-| $\mathrm◆LB◆P \subseteq \mathrm◆LB◆PSPACE$                          | Yes                 | Space hierarchy     |
-| $\mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE$                         | Yes                 | Savitch's corollary |
-| $\mathrm◆LB◆L \subseteq \mathrm◆LB◆NL$                              | Unknown             |                     |
-| $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP$                              | Unknown             | Open problem        |
-| $\mathrm◆LB◆NP \subseteq \mathrm◆LB◆coNP$                           | Unknown             | Open problem        |
+| $\mathrm◆LB◆Regular◆RB◆ \subseteq \mathrm◆LB◆CFL◆RB◆$                       | Yes                 | Pumping lemma       |
+| $\mathrm◆LB◆CFL◆RB◆ \subseteq \mathrm◆LB◆Decidable◆RB◆$                     | Yes                 | CYK algorithm       |
+| $\mathrm◆LB◆Decidable◆RB◆ \subseteq \mathrm◆LB◆TM◆RB◆\mathrm◆LB◆-recognisable$ | Yes                 | Diagonalisation     |
+| $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆EXPTIME◆RB◆$                         | Yes                 | Time hierarchy      |
+| $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆PSPACE◆RB◆$                          | Yes                 | Space hierarchy     |
+| $\mathrm◆LB◆NP◆RB◆ \subseteq \mathrm◆LB◆PSPACE◆RB◆$                         | Yes                 | Savitch's corollary |
+| $\mathrm◆LB◆L◆RB◆ \subseteq \mathrm◆LB◆NL◆RB◆$                              | Unknown             |                     |
+| $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆NP◆RB◆$                              | Unknown             | Open problem        |
+| $\mathrm◆LB◆NP◆RB◆ \subseteq \mathrm◆LB◆coNP◆RB◆$                           | Unknown             | Open problem        |
 
-Both inclusions $\mathrm◆LB◆P \subseteq \mathrm◆LB◆NP$ and $\mathrm◆LB◆NP \subseteq \mathrm◆LB◆PSPACE$ are Known
-to be proper ($\mathrm◆LB◆P \neq \mathrm◆LB◆PSPACE$), but the status of $\mathrm◆LB◆P$ vs. $\mathrm◆LB◆NP$
+Both inclusions $\mathrm◆LB◆P◆RB◆ \subseteq \mathrm◆LB◆NP◆RB◆$ and $\mathrm◆LB◆NP◆RB◆ \subseteq \mathrm◆LB◆PSPACE◆RB◆$ are Known
+to be proper ($\mathrm◆LB◆P◆RB◆ \neq \mathrm◆LB◆PSPACE◆RB◆$), but the status of $\mathrm◆LB◆P◆RB◆$ vs. $\mathrm◆LB◆NP◆RB◆$
 remains open.
 
 :::caution Common Pitfall NP-completeness refers to **decision** problems. The optimisation versions
@@ -1723,7 +1723,7 @@ undecidable). :::
 Length is a multiple of 3. Prove your DFA is correct.
 
 **Problem 2.** Let
-$L = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains an even number of  0\mathrm◆LB◆s and
+$L = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains an even number of  0\mathrm◆LB◆s◆RB◆ and
 \mathrm◆LB◆ ends with  1\}$.
 Give a DFA with the minimum number of states for $L$.
 
@@ -1764,27 +1764,27 @@ a solution by finding one, or prove it has no solution.
 
 ### 7.4 Complexity Theory
 
-**Problem 13.** Show that if $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then $\mathrm◆LB◆NP = \mathrm◆LB◆coNP$.
+**Problem 13.** Show that if $\mathrm◆LB◆P◆RB◆ = \mathrm◆LB◆NP◆RB◆$Then $\mathrm◆LB◆NP◆RB◆ = \mathrm◆LB◆coNP◆RB◆$.
 
 **Problem 14.** A **3-colouring** of a graph $G = (V, E)$ is a function $c : V \to \{1, 2, 3\}$ Such
 that $c(u) \neq c(v)$ for every edge $(u, v) \in E$. Show that 3-SAT $\leq_p$ 3-Colouring By
 describing the reduction construction.
 
-**Problem 15.** Prove that $\mathrm◆LB◆CLIQUE$ is self-reducible: given an oracle for
-$\mathrm◆LB◆CLIQUE$Describe a polynomial-time algorithm to find an actual clique of size $k$ (if one
+**Problem 15.** Prove that $\mathrm◆LB◆CLIQUE◆RB◆$ is self-reducible: given an oracle for
+$\mathrm◆LB◆CLIQUE◆RB◆$Describe a polynomial-time algorithm to find an actual clique of size $k$ (if one
 exists).
 
-**Problem 16.** Using Savitch's theorem, prove that $\mathrm◆LB◆NL \subseteq \mathrm◆LB◆P$. What is the
+**Problem 16.** Using Savitch's theorem, prove that $\mathrm◆LB◆NL◆RB◆ \subseteq \mathrm◆LB◆P◆RB◆$. What is the
 time complexity of your algorithm?
 
-**Problem 17.** Define the language $\mathrm◆LB◆EXACT\mathrm◆LB◆-CLIQUE = \{\langle G, k \rangle : G$
-$\mathrm◆LB◆ has a clique of exactly size  k\}$. Show that $\mathrm◆LB◆EXACT\mathrm◆LB◆-CLIQUE$ is
+**Problem 17.** Define the language $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE = \{\langle G, k \rangle : G$
+$\mathrm◆LB◆ has a clique of exactly size  k\}$. Show that $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE$ is
 NP-complete.
 
 **Problem 18.** A language $L$ is in **DP** (difference of two NP sets) if there exist
-$L_1, L_2 \in \mathrm◆LB◆NP$ such that $L = L_1 \cap \overline◆LB◆L_2◆RB◆$. Show that
-$\mathrm◆LB◆SAT\mathrm◆LB◆-UNSAT = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT \mathrm◆LB◆ and 
-\psi \notin \mathrm◆LB◆SAT\}$
+$L_1, L_2 \in \mathrm◆LB◆NP◆RB◆$ such that $L = L_1 \cap \overline◆LB◆L_2◆RB◆$. Show that
+$\mathrm◆LB◆SAT◆RB◆\mathrm◆LB◆-UNSAT = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT◆RB◆ \mathrm◆LB◆ and 
+\psi \notin \mathrm◆LB◆SAT◆RB◆\}$
 is in DP. Is DP contained in $\Sigma_2^P$? Justify.
 
 ### 7.5 Comprehensive
@@ -1794,7 +1794,7 @@ regular using the pumping lemma. (b) Give a CFG for $L$ and prove it is correct.
 decidable? Justify.
 
 **Problem 20.** For each of the following languages, state the smallest complexity class (from
-$\mathrm◆LB◆Regular$$\mathrm{CFL$$\mathrm◆LB◆Decidable$$\mathrm{NP$ $\mathrm{PSPACE$$\mathrm◆LB◆EXPTIME$Or
+$\mathrm◆LB◆Regular◆RB◆$$\mathrm{CFL$$\mathrm◆LB◆Decidable◆RB◆$$\mathrm{NP$ $\mathrm{PSPACE$$\mathrm◆LB◆EXPTIME◆RB◆$Or
 "undecidable") that is known to contain it. Justify each answer briefly.
 
 (a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm◆LB◆ has a Hamiltonian cycle\}$
@@ -1824,11 +1824,11 @@ a string not in $L$.
 $L(M_1) \cap L(M_2) \neq \emptyset$ iff $M$ accepts $\varepsilon$ iff
 $\langle M \rangle \notin E_◆LB◆\mathrm◆LB◆TM◆RB◆$ (after adjusting for the specific reduction).
 
-**Problem 13.** If $\mathrm◆LB◆P = \mathrm◆LB◆NP$Then for any $L \in \mathrm◆LB◆NP$We have $L \in \mathrm◆LB◆P$.
-Since $\mathrm◆LB◆P$ is closed under complement, $\overline◆LB◆L◆RB◆ \in \mathrm◆LB◆P
-\subseteq \mathrm◆LB◆NP$. So
-$\overline◆LB◆L◆RB◆ \in \mathrm◆LB◆NP$ for every $L \in \mathrm◆LB◆NP$, meaning
-$\mathrm◆LB◆NP \subseteq \mathrm◆LB◆coNP$. By symmetry, $\mathrm◆LB◆coNP \subseteq \mathrm◆LB◆NP$.
+**Problem 13.** If $\mathrm◆LB◆P◆RB◆ = \mathrm◆LB◆NP◆RB◆$Then for any $L \in \mathrm◆LB◆NP◆RB◆$We have $L \in \mathrm◆LB◆P◆RB◆$.
+Since $\mathrm◆LB◆P◆RB◆$ is closed under complement, $\overline◆LB◆L◆RB◆ \in \mathrm◆LB◆P◆RB◆
+\subseteq \mathrm◆LB◆NP◆RB◆$. So
+$\overline◆LB◆L◆RB◆ \in \mathrm◆LB◆NP◆RB◆$ for every $L \in \mathrm◆LB◆NP◆RB◆$, meaning
+$\mathrm◆LB◆NP◆RB◆ \subseteq \mathrm◆LB◆coNP◆RB◆$. By symmetry, $\mathrm◆LB◆coNP◆RB◆ \subseteq \mathrm◆LB◆NP◆RB◆$.
 
 **Problem 19.** (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$$y$ is in the first $0^p$
 block. Pumping down gives $0^{p-k}1^p\#0^p1^p \notin L$. (b)

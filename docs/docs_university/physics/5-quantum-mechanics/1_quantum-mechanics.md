@@ -98,7 +98,7 @@ Agreed with Planck's value from blackbody radiation to within $0.5\%$.
 The cutoff frequency is $\nu_0 = \phi/h = 2.28 \times 1.602 \times 10^◆LB◆-19◆RB◆ / 6.626 \times 10^◆LB◆-34◆RB◆$
 $= 5.51 \times 10^◆LB◆14◆RB◆$ Hz. The cutoff wavelength is:
 
-$$\lambda_0 = \frac◆LB◆c◆RB◆◆LB◆\nu_0◆RB◆ = \frac◆LB◆3.00 \times 10^8◆RB◆◆LB◆5.51 \times 10^◆LB◆14◆RB◆◆RB◆ = 544\;\mathrm◆LB◆nm$$
+$$\lambda_0 = \frac◆LB◆c◆RB◆◆LB◆\nu_0◆RB◆ = \frac◆LB◆3.00 \times 10^8◆RB◆◆LB◆5.51 \times 10^◆LB◆14◆RB◆◆RB◆ = 544\;\mathrm◆LB◆nm◆RB◆$$
 
 This lies in the green region of the visible spectrum, explaining why sodium is sensitive to visible
 Light.
@@ -165,15 +165,15 @@ Wavelength of the scattered photon and the kinetic energy of the recoil electron
 <details>
 <summary>Solution</summary>
 
-$$\Delta\lambda = \lambda_C(1 - \cos 90°) = \lambda_C = 2.426 \times 10^◆LB◆-12◆RB◆\;\mathrm◆LB◆m = 0.00243\;\mathrm◆LB◆nm$$
+$$\Delta\lambda = \lambda_C(1 - \cos 90°) = \lambda_C = 2.426 \times 10^◆LB◆-12◆RB◆\;\mathrm◆LB◆m◆RB◆ = 0.00243\;\mathrm◆LB◆nm◆RB◆$$
 
-$$\lambda' = \lambda + \Delta\lambda = 0.100 + 0.00243 = 0.10243\;\mathrm◆LB◆nm$$
+$$\lambda' = \lambda + \Delta\lambda = 0.100 + 0.00243 = 0.10243\;\mathrm◆LB◆nm◆RB◆$$
 
 The kinetic energy of the recoil electron:
 
 $$T_e = hc\!\left(\frac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆\lambda'◆RB◆\right) = \frac◆LB◆hc\,\Delta\lambda◆RB◆◆LB◆\lambda\lambda'◆RB◆$$
 
-$$= \frac◆LB◆(6.626 \times 10^◆LB◆-34◆RB◆)(3.00 \times 10^8)(2.43 \times 10^◆LB◆-12◆RB◆)◆RB◆◆LB◆(1.00 \times 10^◆LB◆-10◆RB◆)(1.0243 \times 10^◆LB◆-10◆RB◆)◆RB◆ = 4.72 \times 10^◆LB◆-17◆RB◆\;\mathrm◆LB◆J = 295\;\mathrm◆LB◆eV$$
+$$= \frac◆LB◆(6.626 \times 10^◆LB◆-34◆RB◆)(3.00 \times 10^8)(2.43 \times 10^◆LB◆-12◆RB◆)◆RB◆◆LB◆(1.00 \times 10^◆LB◆-10◆RB◆)(1.0243 \times 10^◆LB◆-10◆RB◆)◆RB◆ = 4.72 \times 10^◆LB◆-17◆RB◆\;\mathrm◆LB◆J◆RB◆ = 295\;\mathrm◆LB◆eV◆RB◆$$
 
 </details>
 
@@ -204,7 +204,7 @@ Where $\phi$ is the angle measured from the crystal surface.
 **The key observation.** At $V = 54$ V, a pronounced peak was observed at $\phi = 50°$. The De
 Broglie wavelength at this voltage is:
 
-$$\lambda = \frac◆LB◆6.626 \times 10^◆LB◆-34◆RB◆◆RB◆◆LB◆\sqrt◆LB◆2(9.109 \times 10^◆LB◆-31◆RB◆)(1.602 \times 10^◆LB◆-19◆RB◆)(54)◆RB◆◆RB◆ = 0.167\;\mathrm◆LB◆nm$$
+$$\lambda = \frac◆LB◆6.626 \times 10^◆LB◆-34◆RB◆◆RB◆◆LB◆\sqrt◆LB◆2(9.109 \times 10^◆LB◆-31◆RB◆)(1.602 \times 10^◆LB◆-19◆RB◆)(54)◆RB◆◆RB◆ = 0.167\;\mathrm◆LB◆nm◆RB◆$$
 
 The Bragg condition with the nickel lattice spacing gives excellent agreement with this Prediction,
 confirming that electrons exhibit wave-like diffraction.
@@ -310,11 +310,11 @@ $$\hat◆LB◆\rho◆RB◆ = \sum_i p_i\,|\psi_i\rangle\langle\psi_i|$$
 
 **Properties:**
 
-- $\mathrm◆LB◆Tr(\hat◆LB◆\rho◆RB◆) = 1$ (normalisation)
+- $\mathrm◆LB◆Tr◆RB◆(\hat◆LB◆\rho◆RB◆) = 1$ (normalisation)
 - $\hat◆LB◆\rho◆RB◆^\dagger = \hat◆LB◆\rho◆RB◆$ (Hermitian)
 - $\hat◆LB◆\rho◆RB◆^2 = \hat◆LB◆\rho◆RB◆$ if and only if the state is pure; $\hat◆LB◆\rho◆RB◆^2 \lt \hat◆LB◆\rho◆RB◆$ for
   mixed states
-- Expectation values: $\langle A \rangle = \mathrm◆LB◆Tr(\hat◆LB◆\rho◆RB◆\hat◆LB◆A◆RB◆)$
+- Expectation values: $\langle A \rangle = \mathrm◆LB◆Tr◆RB◆(\hat◆LB◆\rho◆RB◆\hat◆LB◆A◆RB◆)$
 
 **Time evolution:** $i\hbar\,d\hat◆LB◆\rho◆RB◆/dt = [\hat◆LB◆H◆RB◆, \hat◆LB◆\rho◆RB◆]$ (Liouville-von Neumann
 equation).
@@ -353,7 +353,7 @@ $$i\hbar \frac◆LB◆\partial \psi◆RB◆◆LB◆\partial t◆RB◆ = \hat◆L
 For time-independent potentials $V(\mathbf◆LB◆r◆RB◆)$Separate variables:
 $\psi(\mathbf◆LB◆r◆RB◆, t) = \phi(\mathbf◆LB◆r◆RB◆) e^◆LB◆-iEt/\hbar◆RB◆$:
 
-$$\hat◆LB◆H◆RB◆\phi = E\phi \quad \mathrm◆LB◆i.e., \quad -\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\nabla^2\phi + V\phi = E\phi$$
+$$\hat◆LB◆H◆RB◆\phi = E\phi \quad \mathrm◆LB◆i◆RB◆.e., \quad -\frac◆LB◆\hbar^2◆RB◆◆LB◆2m◆RB◆\nabla^2\phi + V\phi = E\phi$$
 
 This is an eigenvalue problem: $E$ is the energy eigenvalue, $\phi$ is the energy eigenstate.
 
@@ -959,7 +959,7 @@ $$T = \frac◆LB◆1◆RB◆◆LB◆1 + \dfrac◆LB◆V_0^2◆RB◆◆LB◆4E(E 
 **Resonances** occur when $2k_2 a = n\pi$ (integer multiples of $\pi$), giving $T = 1$: the well
 Becomes perfectly transparent.
 
-**Example 5.3.** A finite square well has $V_0 = 5\,\mathrm◆LB◆eV$ and $2a = 1\,\mathrm◆LB◆nm$. Estimate
+**Example 5.3.** A finite square well has $V_0 = 5\,\mathrm◆LB◆eV◆RB◆$ and $2a = 1\,\mathrm◆LB◆nm◆RB◆$. Estimate
 the Number of bound states for an electron.
 
 <details>
@@ -1063,7 +1063,7 @@ $a = 0.5$ nm. Calculate $T$.
 <details>
 <summary>Solution</summary>
 
-$$\kappa = \sqrt◆LB◆\frac◆LB◆2(9.109 \times 10^◆LB◆-31◆RB◆)(10 - 5)(1.602 \times 10^◆LB◆-19◆RB◆)◆RB◆◆LB◆(1.055 \times 10^◆LB◆-34◆RB◆)^2◆RB◆◆RB◆ = \sqrt◆LB◆1.302 \times 10^◆LB◆20◆RB◆◆RB◆ = 1.141 \times 10^◆LB◆10◆RB◆\;\mathrm◆LB◆m^◆LB◆-1◆RB◆◆RB◆$$
+$$\kappa = \sqrt◆LB◆\frac◆LB◆2(9.109 \times 10^◆LB◆-31◆RB◆)(10 - 5)(1.602 \times 10^◆LB◆-19◆RB◆)◆RB◆◆LB◆(1.055 \times 10^◆LB◆-34◆RB◆)^2◆RB◆◆RB◆ = \sqrt◆LB◆1.302 \times 10^◆LB◆20◆RB◆◆RB◆ = 1.141 \times 10^◆LB◆10◆RB◆\;\mathrm◆LB◆m◆RB◆^◆LB◆-1◆RB◆◆RB◆$$
 
 $$2\kappa a = 2(1.141 \times 10^◆LB◆10◆RB◆)(5 \times 10^◆LB◆-10◆RB◆) = 11.41$$
 
@@ -1093,7 +1093,7 @@ $$\hat◆LB◆L◆RB◆_x = -i\hbar\left(y\frac◆LB◆\partial◆RB◆◆LB◆\
 
 $$[\hat◆LB◆L◆RB◆_x, \hat◆LB◆L◆RB◆_y] = i\hbar\hat◆LB◆L◆RB◆_z, \quad [\hat◆LB◆L◆RB◆_y, \hat◆LB◆L◆RB◆_z] = i\hbar\hat◆LB◆L◆RB◆_x, \quad [\hat◆LB◆L◆RB◆_z, \hat◆LB◆L◆RB◆_x] = i\hbar\hat◆LB◆L◆RB◆_y$$
 
-$$[\hat◆LB◆L◆RB◆^2, \hat◆LB◆L◆RB◆_i] = 0 \quad \mathrm◆LB◆for\ all\  i$$
+$$[\hat◆LB◆L◆RB◆^2, \hat◆LB◆L◆RB◆_i] = 0 \quad \mathrm◆LB◆for\ all\ ◆RB◆ i$$
 
 **Simultaneous eigenstates:** $|l, m\rangle$ with
 
@@ -1352,7 +1352,7 @@ algebra For $j = 1/2$.
 
 1. $\sigma_i^2 = I$ (eigenvalues are $\pm 1$Corresponding to $S_z = \pm\hbar/2$)
 2. $\sigma_i^\dagger = \sigma_i$ (Hermitian)
-3. $\mathrm◆LB◆Tr(\sigma_i) = 0$ (traceless, since eigenvalues sum to zero)
+3. $\mathrm◆LB◆Tr◆RB◆(\sigma_i) = 0$ (traceless, since eigenvalues sum to zero)
 4. $[\sigma_x, \sigma_y] = 2i\sigma_z$ (and cyclic permutations)
 
 **Step 1: Fix $\sigma_z$.** A traceless Hermitian matrix with eigenvalues $\pm 1$ is:
@@ -1409,7 +1409,7 @@ $$\langle S_x \rangle(t) = \frac◆LB◆\hbar◆RB◆◆LB◆2◆RB◆(\alpha^*\
 
 $$\langle S_y \rangle(t) = \frac◆LB◆\hbar◆RB◆◆LB◆2i◆RB◆(\alpha^*\beta\,e^◆LB◆-i\gamma B_0 t◆RB◆ - \alpha\beta^*\,e^◆LB◆i\gamma B_0 t◆RB◆)$$
 
-$$\langle S_z \rangle(t) = \frac◆LB◆\hbar◆RB◆◆LB◆2◆RB◆(|\alpha|^2 - |\beta|^2) = \mathrm◆LB◆const.$$
+$$\langle S_z \rangle(t) = \frac◆LB◆\hbar◆RB◆◆LB◆2◆RB◆(|\alpha|^2 - |\beta|^2) = \mathrm◆LB◆const◆RB◆.$$
 
 The spin precesses at the **Larmor frequency** $\omega_L = \gamma B_0$.
 
@@ -1417,7 +1417,7 @@ For an electron, $\gamma = -e/(m_e)$ (negative charge), giving $\omega_L = eB_0/
 
 **The Larmor frequency.** For a typical laboratory field $B_0 = 1$ T:
 
-$$\omega_L = \frac◆LB◆(1.602 \times 10^◆LB◆-19◆RB◆)(1)◆RB◆◆LB◆9.109 \times 10^◆LB◆-31◆RB◆◆RB◆ = 1.76 \times 10^◆LB◆11◆RB◆\;\mathrm◆LB◆rad/s$$
+$$\omega_L = \frac◆LB◆(1.602 \times 10^◆LB◆-19◆RB◆)(1)◆RB◆◆LB◆9.109 \times 10^◆LB◆-31◆RB◆◆RB◆ = 1.76 \times 10^◆LB◆11◆RB◆\;\mathrm◆LB◆rad◆RB◆/s$$
 
 Corresponding to a frequency $\nu_L = \omega_L/(2\pi) = 28$ GHz (microwave range). This is the basis
 Of Electron Spin Resonance (ESR) and Nuclear Magnetic Resonance (NMR) spectroscopy, where
@@ -1856,7 +1856,7 @@ $|\psi\rangle = \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆3◆RB◆◆RB◆|\up
 \sqrt◆LB◆\frac◆LB◆2◆RB◆◆LB◆3◆RB◆◆RB◆|\downarrow\rangle$. (a) If
 $S_z$ is measured, what are the possible outcomes and Their probabilities? (b) If $S_x$ is measured,
 what are the possible outcomes and their Probabilities? (c) What is $\langle S_x \rangle$? (d) Write
-the density matrix $\hat◆LB◆\rho◆RB◆$ for this state and verify $\mathrm◆LB◆Tr(\hat◆LB◆\rho◆RB◆) = 1$ and
+the density matrix $\hat◆LB◆\rho◆RB◆$ for this state and verify $\mathrm◆LB◆Tr◆RB◆(\hat◆LB◆\rho◆RB◆) = 1$ and
 $\hat◆LB◆\rho◆RB◆^2 = \hat◆LB◆\rho◆RB◆$ (pure state).
 
 **17.** (Singlet state) Two spin-1/2 particles are prepared in the singlet state. If particle 1 is
@@ -1897,9 +1897,9 @@ effective **exchange interaction**. For two electrons in a box, the probability 
 close together differs between the triplet (spatially antisymmetric, spin symmetric) and singlet
 (spatially symmetric, spin antisymmetric) states:
 
-$$|\psi_◆LB◆\text◆LB◆triplet◆RB◆|^2 = 0 \quad \text◆LB◆when  \mathbf◆LB◆r◆RB◆_1 = \mathbf◆LB◆r◆RB◆_2$$
+$$|\psi_◆LB◆\text◆LB◆triplet◆RB◆|^2 = 0 \quad \text◆LB◆when◆RB◆  \mathbf◆LB◆r◆RB◆_1 = \mathbf◆LB◆r◆RB◆_2$$
 
-$$|\psi_◆LB◆\text◆LB◆singlet◆RB◆|^2 > 0 \quad \text◆LB◆when  \mathbf◆LB◆r◆RB◆_1 = \mathbf◆LB◆r◆RB◆_2$$
+$$|\psi_◆LB◆\text◆LB◆singlet◆RB◆|^2 > 0 \quad \text◆LB◆when◆RB◆  \mathbf◆LB◆r◆RB◆_1 = \mathbf◆LB◆r◆RB◆_2$$
 
 The triplet state keeps electrons apart (effective repulsion), while the singlet allows them to be
 close. This is the origin of the **Hund's first rule**: parallel spins are energetically favourable
@@ -1916,9 +1916,9 @@ spatial part is symmetric: $\psi_◆LB◆100◆RB◆(\mathbf◆LB◆r◆RB◆_1)
 
 **First-order perturbation theory** for the electron-electron repulsion:
 
-$$E^◆LB◆(1)◆RB◆ = \frac◆LB◆5◆RB◆◆LB◆4◆RB◆\frac◆LB◆e^2◆RB◆◆LB◆4\pi\varepsilon_0 a_0◆RB◆ = \frac◆LB◆5◆RB◆◆LB◆2◆RB◆\times 13.6\ \text◆LB◆eV = 34.0\ \text◆LB◆eV$$
+$$E^◆LB◆(1)◆RB◆ = \frac◆LB◆5◆RB◆◆LB◆4◆RB◆\frac◆LB◆e^2◆RB◆◆LB◆4\pi\varepsilon_0 a_0◆RB◆ = \frac◆LB◆5◆RB◆◆LB◆2◆RB◆\times 13.6\ \text◆LB◆eV◆RB◆ = 34.0\ \text◆LB◆eV◆RB◆$$
 
-The unperturbed ground state energy is $E^◆LB◆(0)◆RB◆ = 2 \times (-54.4\ \text◆LB◆eV) = -108.8$ eV (two
+The unperturbed ground state energy is $E^◆LB◆(0)◆RB◆ = 2 \times (-54.4\ \text◆LB◆eV◆RB◆) = -108.8$ eV (two
 electrons in $Z = 2$ Coulomb potential). Including perturbation: $E \approx -108.8 + 34.0 = -74.8$
 eV. The experimental value is $-79.0$ eV.
 
@@ -1948,9 +1948,9 @@ $$K_◆LB◆1s,2s◆RB◆ = \frac◆LB◆e^2◆RB◆◆LB◆4\pi\varepsilon_0◆
 Evaluating these (using the multipole expansion
 $1/r_◆LB◆12◆RB◆ = \sum_l r_<^l/r_>^◆LB◆l+1◆RB◆\,P_l(\cos\theta)$):
 
-$$J_◆LB◆1s,2s◆RB◆ \approx 0.42\ \text◆LB◆Ry = 5.7\ \text◆LB◆eV$$
+$$J_◆LB◆1s,2s◆RB◆ \approx 0.42\ \text◆LB◆Ry◆RB◆ = 5.7\ \text◆LB◆eV◆RB◆$$
 
-$$K_◆LB◆1s,2s◆RB◆ \approx 0.032\ \text◆LB◆Ry = 0.43\ \text◆LB◆eV$$
+$$K_◆LB◆1s,2s◆RB◆ \approx 0.032\ \text◆LB◆Ry◆RB◆ = 0.43\ \text◆LB◆eV◆RB◆$$
 
 The singlet (parahelium) has energy $E = E_0 + J + K$And the triplet (orthohelium) has
 $E = E_0 + J - K$.
@@ -2028,14 +2028,14 @@ where $Z_◆LB◆\text◆LB◆eff◆RB◆$ is a variational parameter.
 
 The energy expectation value (treating the electron-electron repulsion as a perturbation):
 
-$$E(Z_◆LB◆\text◆LB◆eff◆RB◆) = 2\times\frac◆LB◆Z_◆LB◆\text◆LB◆eff◆RB◆^2◆RB◆◆LB◆2◆RB◆\text◆LB◆Ry - 2\times\frac◆LB◆Z_◆LB◆\text◆LB◆eff◆RB◆ Z◆RB◆◆LB◆1◆RB◆\text◆LB◆Ry + \frac◆LB◆5◆RB◆◆LB◆8◆RB◆Z_◆LB◆\text◆LB◆eff◆RB◆\text◆LB◆Ry$$
+$$E(Z_◆LB◆\text◆LB◆eff◆RB◆) = 2\times\frac◆LB◆Z_◆LB◆\text◆LB◆eff◆RB◆^2◆RB◆◆LB◆2◆RB◆\text◆LB◆Ry◆RB◆ - 2\times\frac◆LB◆Z_◆LB◆\text◆LB◆eff◆RB◆ Z◆RB◆◆LB◆1◆RB◆\text◆LB◆Ry◆RB◆ + \frac◆LB◆5◆RB◆◆LB◆8◆RB◆Z_◆LB◆\text◆LB◆eff◆RB◆\text◆LB◆Ry◆RB◆$$
 
-$$= \left(Z_◆LB◆\text◆LB◆eff◆RB◆^2 - 4Z_◆LB◆\text◆LB◆eff◆RB◆ + \frac◆LB◆5◆RB◆◆LB◆4◆RB◆Z_◆LB◆\text◆LB◆eff◆RB◆\right)\text◆LB◆Ry = \left(Z_◆LB◆\text◆LB◆eff◆RB◆^2 - \frac◆LB◆11◆RB◆◆LB◆4◆RB◆Z_◆LB◆\text◆LB◆eff◆RB◆\right)\text◆LB◆Ry$$
+$$= \left(Z_◆LB◆\text◆LB◆eff◆RB◆^2 - 4Z_◆LB◆\text◆LB◆eff◆RB◆ + \frac◆LB◆5◆RB◆◆LB◆4◆RB◆Z_◆LB◆\text◆LB◆eff◆RB◆\right)\text◆LB◆Ry◆RB◆ = \left(Z_◆LB◆\text◆LB◆eff◆RB◆^2 - \frac◆LB◆11◆RB◆◆LB◆4◆RB◆Z_◆LB◆\text◆LB◆eff◆RB◆\right)\text◆LB◆Ry◆RB◆$$
 
 Minimising:
 $\partial E/\partial Z_◆LB◆\text◆LB◆eff◆RB◆ = (2Z_◆LB◆\text◆LB◆eff◆RB◆ - 11/4) = 0 \implies Z_◆LB◆\text◆LB◆eff◆RB◆ = 11/8 = 1.375$.
 
-$$E = \left(\frac◆LB◆121◆RB◆◆LB◆64◆RB◆ - \frac◆LB◆121◆RB◆◆LB◆32◆RB◆\right)\text◆LB◆Ry = -\frac◆LB◆121◆RB◆◆LB◆64◆RB◆\text◆LB◆Ry = -2.848\text◆LB◆Ry = -77.5\ \text◆LB◆eV$$
+$$E = \left(\frac◆LB◆121◆RB◆◆LB◆64◆RB◆ - \frac◆LB◆121◆RB◆◆LB◆32◆RB◆\right)\text◆LB◆Ry◆RB◆ = -\frac◆LB◆121◆RB◆◆LB◆64◆RB◆\text◆LB◆Ry◆RB◆ = -2.848\text◆LB◆Ry◆RB◆ = -77.5\ \text◆LB◆eV◆RB◆$$
 
 The exact (non-relativistic) ground state energy is $-79.0$ eV, so the variational result is within
 2%.
@@ -2141,7 +2141,7 @@ Where $\delta_l$ is the phase shift for partial wave $l$.
 
 **Optical theorem:**
 
-$$\sigma_◆LB◆\text◆LB◆total◆RB◆ = \frac◆LB◆4\pi◆RB◆◆LB◆k◆RB◆\,\text◆LB◆Im\,f(0) = \frac◆LB◆4\pi◆RB◆◆LB◆k^2◆RB◆\sum_◆LB◆l=0◆RB◆^◆LB◆\infty◆RB◆(2l+1)\sin^2\delta_l$$
+$$\sigma_◆LB◆\text◆LB◆total◆RB◆ = \frac◆LB◆4\pi◆RB◆◆LB◆k◆RB◆\,\text◆LB◆Im◆RB◆\,f(0) = \frac◆LB◆4\pi◆RB◆◆LB◆k^2◆RB◆\sum_◆LB◆l=0◆RB◆^◆LB◆\infty◆RB◆(2l+1)\sin^2\delta_l$$
 
 **Partial wave unitarity bound:** $\sin^2\delta_l \leq 1$So the maximum contribution of partial wave
 $l$ to the cross section is:
@@ -2269,7 +2269,7 @@ partially: using the helium result, $Z_◆LB◆\text◆LB◆eff◆RB◆(1s) \app
 (b) The $2s$ electron sees an effective nuclear charge of
 $Z_◆LB◆\text◆LB◆eff◆RB◆(2s) \approx 3 - 2 \times 0.85 = 1.3$ (Slater's rules). The energy:
 
-$$E_◆LB◆2s◆RB◆ = -\frac◆LB◆Z_◆LB◆\text◆LB◆eff◆RB◆^2◆RB◆◆LB◆n^2◆RB◆\times 13.6\ \text◆LB◆eV = -\frac◆LB◆1.3^2◆RB◆◆LB◆4◆RB◆\times 13.6 = -\frac◆LB◆1.69◆RB◆◆LB◆4◆RB◆\times 13.6 = -5.75\ \text◆LB◆eV$$
+$$E_◆LB◆2s◆RB◆ = -\frac◆LB◆Z_◆LB◆\text◆LB◆eff◆RB◆^2◆RB◆◆LB◆n^2◆RB◆\times 13.6\ \text◆LB◆eV◆RB◆ = -\frac◆LB◆1.3^2◆RB◆◆LB◆4◆RB◆\times 13.6 = -\frac◆LB◆1.69◆RB◆◆LB◆4◆RB◆\times 13.6 = -5.75\ \text◆LB◆eV◆RB◆$$
 
 The ionisation energy is $|E_◆LB◆2s◆RB◆| = 5.75$ eV, close to the experimental 5.39 eV. The discrepancy
 reflects the crudeness of the Slater screening constants.
@@ -2400,7 +2400,7 @@ $$= \exp\!\left(-\frac◆LB◆\pi a◆RB◆◆LB◆\hbar◆RB◆\sqrt◆LB◆2mV
 For alpha decay ($V_0 \approx 25$ MeV, $a \approx 30$ fm, $E = 5$ MeV, $m = 4 \times 931.5$
 MeV/$c^2$):
 
-$$\frac◆LB◆\pi a◆RB◆◆LB◆\hbar c◆RB◆\sqrt◆LB◆2mc^2 V_0◆RB◆\left(1 - \frac◆LB◆E◆RB◆◆LB◆V_0◆RB◆\right) = \frac◆LB◆\pi \times 30\,\text◆LB◆fm◆RB◆◆LB◆197\,\text◆LB◆MeV\cdot\text◆LB◆fm◆RB◆\sqrt◆LB◆2 \times 3726 \times 25◆RB◆\times 0.8$$
+$$\frac◆LB◆\pi a◆RB◆◆LB◆\hbar c◆RB◆\sqrt◆LB◆2mc^2 V_0◆RB◆\left(1 - \frac◆LB◆E◆RB◆◆LB◆V_0◆RB◆\right) = \frac◆LB◆\pi \times 30\,\text◆LB◆fm◆RB◆◆LB◆197\,\text◆LB◆MeV◆RB◆\cdot\text◆LB◆fm◆RB◆\sqrt◆LB◆2 \times 3726 \times 25◆RB◆\times 0.8$$
 
 $$= 0.479 \times 432.6 \times 0.8 = 165.7$$
 

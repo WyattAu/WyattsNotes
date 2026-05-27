@@ -77,7 +77,7 @@ $\blacksquare$
 **Theorem 1.3.** Let $a, b \in \mathbb◆LB◆Z◆RB◆$Not both zero. The greatest common divisor of $a$ and $b$
 Exists and is unique.
 
-_Proof._ The set $D = \\{d \in \mathbb◆LB◆N◆RB◆ : d \mid a \mathrm◆LB◆\ and\  d \mid b\\}"$ is non-empty
+_Proof._ The set $D = \\{d \in \mathbb◆LB◆N◆RB◆ : d \mid a \mathrm◆LB◆\ and\ ◆RB◆ d \mid b\\}"$ is non-empty
 since $|a| \in D$ (if $a \neq 0$) or $|b| \in D$ (if $b \neq 0$). By the well-ordering principle,
 $D$ has A least element $g$. We claim $g = \gcd(a, b)$. By definition $g \mid a$ and $g \mid b$. If
 $c \mid a$ And $c \mid b$Then $c \leq |c| \leq g$ (since $g$ is the least positive common divisor).
@@ -87,27 +87,27 @@ $g_2 \mid g_1$ So $g_1 = g_2$ (since both are positive). $\blacksquare$
 ### 1.5 Least Common Multiple
 
 **Definition.** The **least common multiple** of positive integers $a$ and $b$Written
-$\mathrm◆LB◆lcm(a, b)$Is the smallest positive integer $m$ such that $a \mid m$ and $b \mid m$.
+$\mathrm◆LB◆lcm◆RB◆(a, b)$Is the smallest positive integer $m$ such that $a \mid m$ and $b \mid m$.
 
 **Theorem 1.4 (GCD--LCM Identity).** For all positive integers $a$ and $b$
 
-$$\gcd(a, b) \cdot \mathrm◆LB◆lcm(a, b) = ab$$
+$$\gcd(a, b) \cdot \mathrm◆LB◆lcm◆RB◆(a, b) = ab$$
 
 _Proof._ Write $a = \prod_◆LB◆i=1◆RB◆^k p_i^◆LB◆\alpha_i◆RB◆$ and $b = \prod_◆LB◆i=1◆RB◆^k p_i^◆LB◆\beta_i◆RB◆$ where
 $\alpha_i, \beta_i \geq 0$. Then $\gcd(a, b) = \prod_◆LB◆i=1◆RB◆^k p_i^◆LB◆\min(\alpha_i, \beta_i)◆RB◆$ and
-$\mathrm◆LB◆lcm(a, b) = \prod_◆LB◆i=1◆RB◆^k p_i^◆LB◆\max(\alpha_i, \beta_i)◆RB◆$. Since
+$\mathrm◆LB◆lcm◆RB◆(a, b) = \prod_◆LB◆i=1◆RB◆^k p_i^◆LB◆\max(\alpha_i, \beta_i)◆RB◆$. Since
 $\min(\alpha_i, \beta_i) + \max(\alpha_i, \beta_i) = \alpha_i + \beta_i$ for each $i$We have
 
-$$\gcd(a,b) \cdot \mathrm◆LB◆lcm(a,b) = \prod_◆LB◆i=1◆RB◆^k p_i^◆LB◆\alpha_i + \beta_i◆RB◆ = ab \qquad \blacksquare$$
+$$\gcd(a,b) \cdot \mathrm◆LB◆lcm◆RB◆(a,b) = \prod_◆LB◆i=1◆RB◆^k p_i^◆LB◆\alpha_i + \beta_i◆RB◆ = ab \qquad \blacksquare$$
 
 **Proposition 1.5.** For all positive integers $a, b$:
 
-1. $\mathrm◆LB◆lcm(a, b) = ab / \gcd(a, b)$.
-2. $\gcd(a, \mathrm◆LB◆lcm(b, c)) = \mathrm◆LB◆lcm(\gcd(a, b), \gcd(a, c))$.
+1. $\mathrm◆LB◆lcm◆RB◆(a, b) = ab / \gcd(a, b)$.
+2. $\gcd(a, \mathrm◆LB◆lcm◆RB◆(b, c)) = \mathrm◆LB◆lcm◆RB◆(\gcd(a, b), \gcd(a, c))$.
 
 ### 1.6 Worked Example: LCM Computation
 
-**Problem.** Compute $\mathrm◆LB◆lcm(252, 105)$ and verify the gcd--lcm identity.
+**Problem.** Compute $\mathrm◆LB◆lcm◆RB◆(252, 105)$ and verify the gcd--lcm identity.
 
 <details>
 <summary>Solution</summary>
@@ -115,7 +115,7 @@ $$\gcd(a,b) \cdot \mathrm◆LB◆lcm(a,b) = \prod_◆LB◆i=1◆RB◆^k p_i^◆L
 First, $\gcd(252, 105)$. Using the Euclidean algorithm:
 $252 = 2 \cdot 105 + 42$$105 = 2 \cdot 42 + 21$$42 = 2 \cdot 21 + 0$. So $\gcd(252, 105) = 21$.
 
-By the identity: $\mathrm◆LB◆lcm(252, 105) = 252 \cdot 105 / 21 = 252 \cdot 5 = 1260$.
+By the identity: $\mathrm◆LB◆lcm◆RB◆(252, 105) = 252 \cdot 105 / 21 = 252 \cdot 5 = 1260$.
 
 Verification: $1260 / 252 = 5$ and $1260 / 105 = 12$Both integers. $\blacksquare$
 
@@ -431,7 +431,7 @@ So $14(-7) \equiv 1 \pmod◆LB◆33◆RB◆$Giving $x \equiv -42 \equiv 24 \pmod
 1. $a \equiv b \pmod◆LB◆m◆RB◆$ if and only if $a$ and $b$ leave the same remainder when divided by $m$.
 2. If $a \equiv b \pmod◆LB◆m◆RB◆$ and $d \mid m$Then $a \equiv b \pmod◆LB◆d◆RB◆$.
 3. If $a \equiv b \pmod◆LB◆m_i◆RB◆$ for $i = 1, \ldots, k$Then
-   $a \equiv b \pmod◆LB◆\mathrm◆LB◆lcm(m_1, \ldots, m_k)◆RB◆$.
+   $a \equiv b \pmod◆LB◆\mathrm◆LB◆lcm◆RB◆(m_1, \ldots, m_k)◆RB◆$.
 
 _Proof of (1)._ Write $a = mq_1 + r_1$ and $b = mq_2 + r_2$ with $0 \leq r_1, r_2 \lt m$. Then
 $a - b = m(q_1 - q_2) + (r_1 - r_2)$. So $m \mid (a - b)$ iff $m \mid (r_1 - r_2)$Which Happens iff
@@ -439,8 +439,8 @@ $r_1 = r_2$ (since $|r_1 - r_2| \lt m$). $\blacksquare$
 
 _Proof of (2)._ $m \mid (a - b)$ and $d \mid m$So $d \mid (a - b)$. $\blacksquare$
 
-_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$So $\mathrm◆LB◆lcm(m_1, \ldots, m_k) \mid (a-b)$
-By definition of the lcm. Hence $a \equiv b \pmod◆LB◆\mathrm◆LB◆lcm(m_1, \ldots, m_k)◆RB◆$. $\blacksquare$
+_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$So $\mathrm◆LB◆lcm◆RB◆(m_1, \ldots, m_k) \mid (a-b)$
+By definition of the lcm. Hence $a \equiv b \pmod◆LB◆\mathrm◆LB◆lcm◆RB◆(m_1, \ldots, m_k)◆RB◆$. $\blacksquare$
 
 **Proposition 4.6.** If $a \equiv b \pmod◆LB◆m◆RB◆$ and $f(x) = c_k x^k + \cdots + c_1 x + c_0$ is a
 Polynomial with integer coefficients, then $f(a) \equiv f(b) \pmod◆LB◆m◆RB◆$.
@@ -582,7 +582,7 @@ The CRT can be extended to systems where the moduli are not necessarily pairwise
 
 **Theorem 5.2 (General CRT).** The system $x \equiv a_i \pmod◆LB◆m_i◆RB◆$ for $i = 1, \ldots, k$ has a
 Solution if and only if $a_i \equiv a_j \pmod◆LB◆\gcd(m_i, m_j)◆RB◆$ for all $i, j$. When a solution
-Exists, it is unique modulo $\mathrm◆LB◆lcm(m_1, \ldots, m_k)$.
+Exists, it is unique modulo $\mathrm◆LB◆lcm◆RB◆(m_1, \ldots, m_k)$.
 
 _Proof._ ($\Rightarrow$) If $x \equiv a_i \pmod◆LB◆m_i◆RB◆$ and $x \equiv a_j \pmod◆LB◆m_j◆RB◆$Then
 $m_i \mid (x - a_i)$ and $m_j \mid (x - a_j)$. Any common divisor of $m_i$ and $m_j$ divides
@@ -607,7 +607,7 @@ $6k \equiv 2 \pmod◆LB◆10◆RB◆$. Dividing by $\gcd(6, 10) = 2$: $3k \equiv
 $k \equiv 2 \pmod◆LB◆5◆RB◆$.
 
 So $k = 5m + 2$And $x = 6(5m + 2) + 3 = 30m + 15$. The solution is $x \equiv 15 \pmod◆LB◆30◆RB◆$. Note
-$\mathrm◆LB◆lcm(6, 10) = 30$. $\blacksquare$
+$\mathrm◆LB◆lcm◆RB◆(6, 10) = 30$. $\blacksquare$
 
 </details>
 
@@ -811,17 +811,17 @@ So $c = 2790$. Decrypt: $m = 2790^◆LB◆2753◆RB◆ \bmod 3233$. (By the corr
 ### 7.1 The Multiplicative Order
 
 **Definition.** The **multiplicative order** of $a$ modulo $n$ (where $\gcd(a, n) = 1$) is the
-Smallest positive integer $k$ such that $a^k \equiv 1 \pmod◆LB◆n◆RB◆$. We write $\mathrm◆LB◆ord_n(a) = k$.
+Smallest positive integer $k$ such that $a^k \equiv 1 \pmod◆LB◆n◆RB◆$. We write $\mathrm◆LB◆ord_n◆RB◆(a) = k$.
 
-**Proposition 7.1.** $\mathrm◆LB◆ord_n(a)$ divides $\phi(n)$.
+**Proposition 7.1.** $\mathrm◆LB◆ord_n◆RB◆(a)$ divides $\phi(n)$.
 
-**Proposition 7.2.** $a^k \equiv 1 \pmod◆LB◆n◆RB◆$ if and only if $\mathrm◆LB◆ord_n(a) \mid k$.
+**Proposition 7.2.** $a^k \equiv 1 \pmod◆LB◆n◆RB◆$ if and only if $\mathrm◆LB◆ord_n◆RB◆(a) \mid k$.
 
-**Proposition 7.3.** If $\mathrm◆LB◆ord_n(a) = k$Then $\mathrm◆LB◆ord_n(a^m) = k / \gcd(k, m)$.
+**Proposition 7.3.** If $\mathrm◆LB◆ord_n◆RB◆(a) = k$Then $\mathrm◆LB◆ord_n◆RB◆(a^m) = k / \gcd(k, m)$.
 
 ### 7.2 Primitive Roots
 
-**Definition.** $g$ is a **primitive root modulo $n$** if $\mathrm◆LB◆ord_n(g) = \phi(n)$I.e., $g$
+**Definition.** $g$ is a **primitive root modulo $n$** if $\mathrm◆LB◆ord_n◆RB◆(g) = \phi(n)$I.e., $g$
 Generates the multiplicative group $(\mathbb◆LB◆Z◆RB◆/n\mathbb◆LB◆Z◆RB◆)^*$.
 
 **Theorem 7.4.** A primitive root modulo $n$ exists if and only if $n = 2$$n = 4$$n = p^k$Or
@@ -865,10 +865,10 @@ $g^◆LB◆(p-1)/q◆RB◆ \not\equiv 1 \pmod◆LB◆p◆RB◆$ for every prime 
 primitive Root modulo $p$ if and only if for every prime
 $q \mid (p - 1)$$g^◆LB◆(p-1)/q◆RB◆ \not\equiv 1 \pmod◆LB◆p◆RB◆$.
 
-_Proof._ If $g$ is a primitive root, $\mathrm◆LB◆ord_p(g) = p - 1$. If $g^◆LB◆(p-1)/q◆RB◆ \equiv 1 \pmod◆LB◆p◆RB◆$
-For some prime $q \mid (p-1)$Then $\mathrm◆LB◆ord_p(g) \mid (p-1)/q \lt p-1$Contradiction.
+_Proof._ If $g$ is a primitive root, $\mathrm◆LB◆ord_p◆RB◆(g) = p - 1$. If $g^◆LB◆(p-1)/q◆RB◆ \equiv 1 \pmod◆LB◆p◆RB◆$
+For some prime $q \mid (p-1)$Then $\mathrm◆LB◆ord_p◆RB◆(g) \mid (p-1)/q \lt p-1$Contradiction.
 
-Conversely, if $g$ is not a primitive root, let $d = \mathrm◆LB◆ord_p(g) \lt p - 1$. Then
+Conversely, if $g$ is not a primitive root, let $d = \mathrm◆LB◆ord_p◆RB◆(g) \lt p - 1$. Then
 $d \mid (p-1)$ So $(p-1)/d > 1$ has some prime factor $q$Meaning $q \mid (p-1)$ and
 $d \mid (p-1)/q$. Then $g^◆LB◆(p-1)/q◆RB◆ \equiv 1 \pmod◆LB◆p◆RB◆$Contradicting the hypothesis. $\blacksquare$
 
@@ -901,14 +901,14 @@ By Theorem 7.5, there are $\phi(12) = 4$ primitive roots modulo $13$: $2, 6, 7, 
 
 When a primitive root $g$ modulo $p$ is known, every element $a$ of $(\mathbb◆LB◆Z◆RB◆/p\mathbb◆LB◆Z◆RB◆)^*$ Can
 be written uniquely as $a \equiv g^k \pmod◆LB◆p◆RB◆$ with $0 \leq k \lt p - 1$. The exponent $k$ Is called
-the **index** (or **discrete logarithm**) of $a$ to base $g$Written $\mathrm◆LB◆ind_g(a) = k$.
+the **index** (or **discrete logarithm**) of $a$ to base $g$Written $\mathrm◆LB◆ind_g◆RB◆(a) = k$.
 
 **Proposition 7.8 (Properties of indices).** Let $g$ be a primitive root modulo $p$. For all
 $a, b \in (\mathbb◆LB◆Z◆RB◆/p\mathbb◆LB◆Z◆RB◆)^*$:
 
-1. $\mathrm◆LB◆ind_g(ab) \equiv \mathrm◆LB◆ind_g(a) + \mathrm◆LB◆ind_g(b) \pmod◆LB◆p-1◆RB◆$.
-2. $\mathrm◆LB◆ind_g(a^k) \equiv k \cdot \mathrm◆LB◆ind_g(a) \pmod◆LB◆p-1◆RB◆$.
-3. $\mathrm◆LB◆ind_g(1) = 0$ and $\mathrm◆LB◆ind_g(g) = 1$.
+1. $\mathrm◆LB◆ind_g◆RB◆(ab) \equiv \mathrm◆LB◆ind_g◆RB◆(a) + \mathrm◆LB◆ind_g◆RB◆(b) \pmod◆LB◆p-1◆RB◆$.
+2. $\mathrm◆LB◆ind_g◆RB◆(a^k) \equiv k \cdot \mathrm◆LB◆ind_g◆RB◆(a) \pmod◆LB◆p-1◆RB◆$.
+3. $\mathrm◆LB◆ind_g◆RB◆(1) = 0$ and $\mathrm◆LB◆ind_g◆RB◆(g) = 1$.
 
 ### 7.6 The Discrete Logarithm Problem
 
@@ -927,7 +927,7 @@ solving the DLP.
 
 ### 7.7 Worked Example: Index Calculus
 
-**Problem.** Let $g = 2$ be a primitive root modulo $19$. Find $\mathrm◆LB◆ind_2(14) \pmod◆LB◆19◆RB◆$.
+**Problem.** Let $g = 2$ be a primitive root modulo $19$. Find $\mathrm◆LB◆ind_2◆RB◆(14) \pmod◆LB◆19◆RB◆$.
 
 <details>
 <summary>Solution</summary>
@@ -944,7 +944,7 @@ $2^◆LB◆10◆RB◆ \equiv -2 \equiv 17$$2^◆LB◆11◆RB◆ \equiv -4 \equiv
 $2^◆LB◆13◆RB◆ \equiv -16 \equiv 3$$2^◆LB◆14◆RB◆ = 6$$2^◆LB◆15◆RB◆ = 12$$2^◆LB◆16◆RB◆ = 24 \equiv 5$
 $2^◆LB◆17◆RB◆ = 10$$2^◆LB◆18◆RB◆ = 20 \equiv 1$.
 
-From $2^7 = 14 \pmod◆LB◆19◆RB◆$We get $\mathrm◆LB◆ind_2(14) = 7$. $\blacksquare$
+From $2^7 = 14 \pmod◆LB◆19◆RB◆$We get $\mathrm◆LB◆ind_2◆RB◆(14) = 7$. $\blacksquare$
 
 </details>
 
@@ -953,10 +953,10 @@ From $2^7 = 14 \pmod◆LB◆19◆RB◆$We get $\mathrm◆LB◆ind_2(14) = 7$. $\
 <details>
 <summary>Solution</summary>
 
-Taking indices base $2$: $\mathrm◆LB◆ind_2(6^x) = \mathrm◆LB◆ind_2(11)$.
-$x \cdot \mathrm◆LB◆ind_2(6) \equiv \mathrm◆LB◆ind_2(11) \pmod◆LB◆18◆RB◆$.
+Taking indices base $2$: $\mathrm◆LB◆ind_2◆RB◆(6^x) = \mathrm◆LB◆ind_2◆RB◆(11)$.
+$x \cdot \mathrm◆LB◆ind_2◆RB◆(6) \equiv \mathrm◆LB◆ind_2◆RB◆(11) \pmod◆LB◆18◆RB◆$.
 
-From the table: $\mathrm◆LB◆ind_2(6) = 14$ and $\mathrm◆LB◆ind_2(11) = 12$. So $14x \equiv 12 \pmod◆LB◆18◆RB◆$.
+From the table: $\mathrm◆LB◆ind_2◆RB◆(6) = 14$ and $\mathrm◆LB◆ind_2◆RB◆(11) = 12$. So $14x \equiv 12 \pmod◆LB◆18◆RB◆$.
 
 $\gcd(14, 18) = 2$ and $2 \mid 12$So solutions exist. Divide by $2$: $7x \equiv 6 \pmod◆LB◆9◆RB◆$.
 $7^◆LB◆-1◆RB◆ \equiv 4 \pmod◆LB◆9◆RB◆$ (since $7 \cdot 4 = 28 \equiv 1$). So
@@ -988,7 +988,7 @@ $x \not\equiv 0 \pmod◆LB◆p◆RB◆$ (since $p$ is odd). $\blacksquare$
 
 **Theorem 8.2 (Euler's Criterion).** Let $p$ be an odd prime and $\gcd(a, p) = 1$. Then
 
-$$a^◆LB◆(p-1)/2◆RB◆ \equiv \begin◆LB◆cases◆RB◆ 1 \pmod◆LB◆p◆RB◆ & \mathrm◆LB◆if\  a \mathrm◆LB◆\ is\ a\ QR\ mod\  p \\ -1 \pmod◆LB◆p◆RB◆ & \mathrm◆LB◆if\  a \mathrm◆LB◆\ is\ a\ QNR\ mod\  p \end◆LB◆cases◆RB◆$$
+$$a^◆LB◆(p-1)/2◆RB◆ \equiv \begin◆LB◆cases◆RB◆ 1 \pmod◆LB◆p◆RB◆ & \mathrm◆LB◆if\ ◆RB◆ a \mathrm◆LB◆\ is\ a\ QR\ mod\ ◆RB◆ p \\ -1 \pmod◆LB◆p◆RB◆ & \mathrm◆LB◆if\ ◆RB◆ a \mathrm◆LB◆\ is\ a\ QNR\ mod\ ◆RB◆ p \end◆LB◆cases◆RB◆$$
 
 _Proof._ By Fermat's little theorem, $a^◆LB◆p-1◆RB◆ \equiv 1 \pmod◆LB◆p◆RB◆$So
 $(a^◆LB◆(p-1)/2◆RB◆ - 1)(a^◆LB◆(p-1)/2◆RB◆ + 1) \equiv 0 \pmod◆LB◆p◆RB◆$. Thus $a^◆LB◆(p-1)/2◆RB◆ \equiv \pm 1 \pmod◆LB◆p◆RB◆$.
@@ -1004,7 +1004,7 @@ $a^◆LB◆(p-1)/2◆RB◆ \equiv 1 \pmod◆LB◆p◆RB◆$These sets coincide. 
 
 **Definition.** The **Legendre symbol** is defined by
 
-$$\left(\frac◆LB◆a◆RB◆◆LB◆p◆RB◆\right) = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if\  p \mid a \\ 1 & \mathrm◆LB◆if\  a \mathrm◆LB◆\ is\ a\ QR\ mod\  p \\ -1 & \mathrm◆LB◆if\  a \mathrm◆LB◆\ is\ a\ QNR\ mod\  p \end◆LB◆cases◆RB◆$$
+$$\left(\frac◆LB◆a◆RB◆◆LB◆p◆RB◆\right) = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if\ ◆RB◆ p \mid a \\ 1 & \mathrm◆LB◆if\ ◆RB◆ a \mathrm◆LB◆\ is\ a\ QR\ mod\ ◆RB◆ p \\ -1 & \mathrm◆LB◆if\ ◆RB◆ a \mathrm◆LB◆\ is\ a\ QNR\ mod\ ◆RB◆ p \end◆LB◆cases◆RB◆$$
 
 **Proposition 8.3.** The Legendre symbol is completely multiplicative:
 $\left(\frac◆LB◆ab◆RB◆◆LB◆p◆RB◆\right) = \left(\frac◆LB◆a◆RB◆◆LB◆p◆RB◆\right)\left(\frac◆LB◆b◆RB◆◆LB◆p◆RB◆\right)$.
@@ -1420,7 +1420,7 @@ Fermat's last theorem for $n = 4$).
 ### 10.5 The Generalized Riemann Hypothesis
 
 **Conjecture (Generalized Riemann Hypothesis).** All non-trivial zeros of the Dirichlet $L$-function
-$L(s, \chi)$ for any Dirichlet character $\chi$ lie on the line $\mathrm◆LB◆Re(s) = 1/2$.
+$L(s, \chi)$ for any Dirichlet character $\chi$ lie on the line $\mathrm◆LB◆Re◆RB◆(s) = 1/2$.
 
 This is one of the most important open problems in mathematics. It has profound implications for the
 Distribution of primes in arithmetic progressions and the error terms in various number-theoretic
@@ -1824,7 +1824,7 @@ $a^◆LB◆\lambda(n)◆RB◆ \equiv 1 \pmod◆LB◆n◆RB◆$ for all $a$ with 
 
 For $n = p_1^◆LB◆a_1◆RB◆ \cdots p_k^◆LB◆a_k◆RB◆$:
 
-$$\lambda(n) = \mathrm◆LB◆lcm\!\left(\lambda(p_1^◆LB◆a_1◆RB◆), \ldots, \lambda(p_k^◆LB◆a_k◆RB◆)\right)$$
+$$\lambda(n) = \mathrm◆LB◆lcm◆RB◆\!\left(\lambda(p_1^◆LB◆a_1◆RB◆), \ldots, \lambda(p_k^◆LB◆a_k◆RB◆)\right)$$
 
 Where $\lambda(2) = 1$$\lambda(4) = 2$$\lambda(2^k) = 2^◆LB◆k-2◆RB◆$ for $k \geq 3$And
 $\lambda(p^k) = (p-1)p^◆LB◆k-1◆RB◆$ for odd primes $p$.
@@ -1844,7 +1844,7 @@ $a^◆LB◆n-1◆RB◆ \equiv 1 \pmod◆LB◆n◆RB◆$ for all $\gcd(a, n) = 1$
 2. For every prime $p \mid n$$(p - 1) \mid (n - 1)$.
 
 _Proof._ If $n$ is squarefree with $n = p_1 \cdots p_k$Then
-$\lambda(n) = \mathrm◆LB◆lcm(p_1 - 1, \ldots, p_k - 1)$. We need $\lambda(n) \mid (n - 1)$Which is
+$\lambda(n) = \mathrm◆LB◆lcm◆RB◆(p_1 - 1, \ldots, p_k - 1)$. We need $\lambda(n) \mid (n - 1)$Which is
 equivalent to each $(p_i - 1) \mid (n - 1)$. $\blacksquare$
 
 **Example.** $561 = 3 \cdot 11 \cdot 17$. Check: $3 - 1 = 2 \mid 560$$11 - 1 = 10 \mid 560$
@@ -1908,7 +1908,7 @@ project.
 
 **Theorem 14.1a (Brun, 1919).** The sum of the reciprocals of the twin primes converges:
 
-$$\sum_◆LB◆\substack◆LB◆p \mathrm◆LB◆\ prime \\ p+2 \mathrm◆LB◆\ prime◆RB◆◆RB◆ \left(\frac◆LB◆1◆RB◆◆LB◆p◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆p+2◆RB◆\right) \lt \infty$$
+$$\sum_◆LB◆\substack◆LB◆p \mathrm◆LB◆\ prime◆RB◆ \\ p+2 \mathrm◆LB◆\ prime◆RB◆◆RB◆ \left(\frac◆LB◆1◆RB◆◆LB◆p◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆p+2◆RB◆\right) \lt \infty$$
 
 This is known as **Brun's theorem**. It establishes that the twin primes form a "thin" set, In
 contrast to the full set of primes (whose reciprocal sum diverges by Euler).
@@ -1992,9 +1992,9 @@ Since $L_3 \equiv 0 \pmod◆LB◆31◆RB◆$, $M_5 = 31$ is prime. $\blacksquare
 **Conjecture (Masser--Oesterlé, 1985).** For every $\varepsilon > 0$There exists $K_\varepsilon > 0$
 Such that for all coprime positive integers $a, b, c$ with $a + b = c$:
 
-$$c \lt K_\varepsilon \cdot \mathrm◆LB◆rad(abc)^◆LB◆1 + \varepsilon◆RB◆$$
+$$c \lt K_\varepsilon \cdot \mathrm◆LB◆rad◆RB◆(abc)^◆LB◆1 + \varepsilon◆RB◆$$
 
-Where $\mathrm◆LB◆rad(n) = \prod_◆LB◆p \mid n◆RB◆ p$ is the **radical** of $n$ (the product of distinct prime
+Where $\mathrm◆LB◆rad◆RB◆(n) = \prod_◆LB◆p \mid n◆RB◆ p$ is the **radical** of $n$ (the product of distinct prime
 Factors).
 
 The abc conjecture is one of the most important open problems in number theory. It implies:
@@ -2008,7 +2008,7 @@ The abc conjecture is one of the most important open problems in number theory. 
 
 **Conjecture (Collatz, 1937).** Define $T \colon \mathbb◆LB◆N◆RB◆ \to \mathbb◆LB◆N◆RB◆$ by
 
-$$T(n) = \begin◆LB◆cases◆RB◆ n/2 & n \mathrm◆LB◆\ even \\ 3n + 1 & n \mathrm◆LB◆\ odd \end◆LB◆cases◆RB◆$$
+$$T(n) = \begin◆LB◆cases◆RB◆ n/2 & n \mathrm◆LB◆\ even◆RB◆ \\ 3n + 1 & n \mathrm◆LB◆\ odd◆RB◆ \end◆LB◆cases◆RB◆$$
 
 For every positive integer $n$The sequence $n, T(n), T(T(n)), \ldots$ eventually reaches $1$.
 
@@ -2112,15 +2112,15 @@ _If you get this wrong, revise:_ Section 1.1.
 
 ### Problem 2 (GCD and LCM)
 
-Compute $\gcd(1071, 462)$ and $\mathrm◆LB◆lcm(1071, 462)$. Verify the identity
-$\gcd(a, b) \cdot \mathrm◆LB◆lcm(a, b) = ab$.
+Compute $\gcd(1071, 462)$ and $\mathrm◆LB◆lcm◆RB◆(1071, 462)$. Verify the identity
+$\gcd(a, b) \cdot \mathrm◆LB◆lcm◆RB◆(a, b) = ab$.
 
 <details>
 <summary>Solution</summary>
 
 $1071 = 2 \cdot 462 + 147$$462 = 3 \cdot 147 + 21$$147 = 7 \cdot 21 + 0$. So $\gcd(1071, 462) = 21$.
 
-$\mathrm◆LB◆lcm(1071, 462) = 1071 \cdot 462 / 21 = 1071 \cdot 22 = 23562$.
+$\mathrm◆LB◆lcm◆RB◆(1071, 462) = 1071 \cdot 462 / 21 = 1071 \cdot 22 = 23562$.
 
 Check: $21 \cdot 23562 = 494802 = 1071 \cdot 462$. $\blacksquare$
 
@@ -2360,12 +2360,12 @@ Find the multiplicative order of $2$ modulo $11$.
 <details>
 <summary>Solution</summary>
 
-$\phi(11) = 10$So $\mathrm◆LB◆ord_◆LB◆11◆RB◆(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
+$\phi(11) = 10$So $\mathrm◆LB◆ord_◆RB◆◆LB◆11◆RB◆(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
 
 $2^1 = 2 \not\equiv 1 \pmod◆LB◆11◆RB◆$. $2^2 = 4 \not\equiv 1 \pmod◆LB◆11◆RB◆$.
 $2^5 = 32 \equiv 10 \equiv -1 \not\equiv 1 \pmod◆LB◆11◆RB◆$. $2^◆LB◆10◆RB◆ \equiv 1 \pmod◆LB◆11◆RB◆$ by Fermat.
 
-So $\mathrm◆LB◆ord_◆LB◆11◆RB◆(2) = 10$Meaning $2$ is a primitive root modulo $11$. $\blacksquare$
+So $\mathrm◆LB◆ord_◆RB◆◆LB◆11◆RB◆(2) = 10$Meaning $2$ is a primitive root modulo $11$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.1.
 
@@ -2476,14 +2476,14 @@ Let $f(n) = \sum_◆LB◆d \mid n◆RB◆ \sigma(d)$. Find a closed-form express
 <details>
 <summary>Solution</summary>
 
-We have $f = \sigma * \mathbf◆LB◆1◆RB◆$. We know $\sigma = \mathrm◆LB◆id * \mathbf◆LB◆1◆RB◆$ where
-$\mathrm◆LB◆id(n) = n$. So
-$f = (\mathrm◆LB◆id * \mathbf◆LB◆1◆RB◆) * \mathbf◆LB◆1◆RB◆ = \mathrm◆LB◆id * (\mathbf◆LB◆1◆RB◆ * \mathbf◆LB◆1◆RB◆)$.
+We have $f = \sigma * \mathbf◆LB◆1◆RB◆$. We know $\sigma = \mathrm◆LB◆id◆RB◆ * \mathbf◆LB◆1◆RB◆$ where
+$\mathrm◆LB◆id◆RB◆(n) = n$. So
+$f = (\mathrm◆LB◆id◆RB◆ * \mathbf◆LB◆1◆RB◆) * \mathbf◆LB◆1◆RB◆ = \mathrm◆LB◆id◆RB◆ * (\mathbf◆LB◆1◆RB◆ * \mathbf◆LB◆1◆RB◆)$.
 
 Now $(\mathbf◆LB◆1◆RB◆ * \mathbf◆LB◆1◆RB◆)(n) = \sum_◆LB◆d \mid n◆RB◆ 1 \cdot 1 = \tau(n)$.
 
 So $f(n) = \sum_◆LB◆d \mid n◆RB◆ d \cdot \tau(n/d)$. This is the Dirichlet convolution
-$\mathrm◆LB◆id * \tau$.
+$\mathrm◆LB◆id◆RB◆ * \tau$.
 
 For example, $f(6) = \sigma(1) + \sigma(2) + \sigma(3) + \sigma(6) = 1 + 3 + 4 + 12 = 20$. Check:
 $\sum_◆LB◆d \mid 6◆RB◆ d \cdot \tau(6/d) = 1 \cdot \tau(6) + 2 \cdot \tau(3) + 3 \cdot \tau(2) + 6 \cdot \tau(1) = 1 \cdot 4 + 2 \cdot 2 + 3 \cdot 2 + 6 \cdot 1 = 4 + 4 + 6 + 6 = 20$.

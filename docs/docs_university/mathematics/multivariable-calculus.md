@@ -76,7 +76,7 @@ When $f$ is differentiable at $\mathbf◆LB◆a◆RB◆$The linear map $L$ is gi
 _Remark._ Existence of all partial derivatives at a point does **not** imply differentiability at
 That point. The canonical counterexample is
 
-$$f(x,y) = \begin◆LB◆cases◆RB◆ \dfrac◆LB◆xy◆RB◆◆LB◆x^2 + y^2◆RB◆ & \mathrm◆LB◆if\ (x,y) \neq (0,0), \\ 0 & \mathrm◆LB◆if\ (x,y) = (0,0). \end◆LB◆cases◆RB◆$$
+$$f(x,y) = \begin◆LB◆cases◆RB◆ \dfrac◆LB◆xy◆RB◆◆LB◆x^2 + y^2◆RB◆ & \mathrm◆LB◆if\ ◆RB◆(x,y) \neq (0,0), \\ 0 & \mathrm◆LB◆if\ ◆RB◆(x,y) = (0,0). \end◆LB◆cases◆RB◆$$
 
 Both $f_x(0,0)$ and $f_y(0,0)$ exist (and equal $0$), yet $f$ is not even continuous at the origin,
 Hence not differentiable.

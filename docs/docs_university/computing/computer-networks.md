@@ -32,7 +32,7 @@ Communication:
 **Encapsulation.** Each layer adds its own header (and possibly trailer) to the data from the layer
 Above, forming a **protocol data unit (PDU)**:
 
-$$\mathrm◆LB◆Data \xrightarrow◆LB◆+\mathrm◆LB◆th◆RB◆ \mathrm◆LB◆Segment \xrightarrow◆LB◆+\mathrm◆LB◆nh◆RB◆ \mathrm◆LB◆Packet \xrightarrow◆LB◆+\mathrm◆LB◆fh+ft◆RB◆ \mathrm◆LB◆Frame \xrightarrow◆LB◆\mathrm◆LB◆encode◆RB◆ \mathrm◆LB◆Bits$$
+$$\mathrm◆LB◆Data◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆th◆RB◆ \mathrm◆LB◆Segment◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆nh◆RB◆ \mathrm◆LB◆Packet◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆fh◆RB◆+ft◆RB◆ \mathrm◆LB◆Frame◆RB◆ \xrightarrow◆LB◆\mathrm◆LB◆encode◆RB◆ \mathrm◆LB◆Bits◆RB◆$$
 
 ### 1.2 The TCP/IP Model
 
@@ -112,7 +112,7 @@ Line-of-sight constraints.
 - **Bit rate:** Number of bits transmitted per second (bps).
 - **Nyquist theorem:** For a noiseless channel of bandwidth $H$ Hz with $V$ discrete signal levels:
 
-$$C = 2H \log_2 V \;\mathrm◆LB◆bps$$
+$$C = 2H \log_2 V \;\mathrm◆LB◆bps◆RB◆$$
 
 **Theorem 2.1 (Nyquist--Shannon Sampling Theorem).** A bandlimited signal of bandwidth $H$ Hz can Be
 perfectly reconstructed from samples taken at a rate of at least $2H$ samples per second.
@@ -124,21 +124,21 @@ frequency domain, $X_s(f) = f_s \sum_◆LB◆k=-\infty◆RB◆^◆LB◆\infty◆
 spectral copies do not overlap, and $x(t)$ can be recovered by an ideal Lowpass filter with cutoff
 $H$. When $f_s \lt 2H$Aliasing occurs and perfect recovery is Impossible. $\blacksquare$
 
-- **Shannon capacity:** For a noisy channel with signal-to-noise ratio $\mathrm◆LB◆SNR$:
+- **Shannon capacity:** For a noisy channel with signal-to-noise ratio $\mathrm◆LB◆SNR◆RB◆$:
 
-$$C = H \log_2(1 + \mathrm◆LB◆SNR) \;\mathrm◆LB◆bps$$
+$$C = H \log_2(1 + \mathrm◆LB◆SNR◆RB◆) \;\mathrm◆LB◆bps◆RB◆$$
 
 **Theorem 2.2 (Shannon--Hartley Theorem).** The channel capacity $C$ is the maximum error-free data
-Rate achievable on a channel of bandwidth $H$ with signal-to-noise ratio $\mathrm◆LB◆SNR$.
+Rate achievable on a channel of bandwidth $H$ with signal-to-noise ratio $\mathrm◆LB◆SNR◆RB◆$.
 
 _Proof._ For a bandlimited AWGN channel, the number of distinguishable signal levels is constrained
-By the noise power. Let $\mathrm◆LB◆SNR = S/N$ where $S$ is signal power and $N = N_0 H$ is noise
+By the noise power. Let $\mathrm◆LB◆SNR◆RB◆ = S/N$ where $S$ is signal power and $N = N_0 H$ is noise
 Power. The number of distinguishable amplitude levels is proportional to $\sqrt◆LB◆1 + \mathrm◆LB◆SNR◆RB◆$.
 With $\log_2$ levels per signal element and $2H$ signal elements per second (Nyquist), the maximum
-Error-free rate is $C = 2H \cdot \tfrac◆LB◆1◆RB◆◆LB◆2◆RB◆\log_2(1 + \mathrm◆LB◆SNR) = H \log_2(1 + \mathrm◆LB◆SNR)$.
+Error-free rate is $C = 2H \cdot \tfrac◆LB◆1◆RB◆◆LB◆2◆RB◆\log_2(1 + \mathrm◆LB◆SNR◆RB◆) = H \log_2(1 + \mathrm◆LB◆SNR◆RB◆)$.
 $\blacksquare$
 
-**Example.** A telephone line has $H = 3100$ Hz and $\mathrm◆LB◆SNR = 3162$ (35 dB). Shannon limit:
+**Example.** A telephone line has $H = 3100$ Hz and $\mathrm◆LB◆SNR◆RB◆ = 3162$ (35 dB). Shannon limit:
 $C = 3100 \times \log_2(3163) \approx 34860$ bps.
 
 <details>
@@ -159,11 +159,11 @@ $$\log_2 V = \frac◆LB◆56000◆RB◆◆LB◆8000◆RB◆ = 7$$ $$V = 2^7 = 12
 
 A satellite channel has a bandwidth of 36 MHz and an SNR of 30 dB. Find the maximum data rate.
 
-First convert SNR from dB to linear: $$\mathrm◆LB◆SNR_◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆30/10◆RB◆ = 1000$$
+First convert SNR from dB to linear: $$\mathrm◆LB◆SNR_◆RB◆◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆30/10◆RB◆ = 1000$$
 
-Apply Shannon's formula: $$C = H \log_2(1 + \mathrm◆LB◆SNR) = 36 \times 10^6 \times \log_2(1001)$$
+Apply Shannon's formula: $$C = H \log_2(1 + \mathrm◆LB◆SNR◆RB◆) = 36 \times 10^6 \times \log_2(1001)$$
 $$\log_2(1001) = \frac◆LB◆\ln(1001)◆RB◆◆LB◆\ln(2)◆RB◆ \approx 9.967$$
-$$C = 36 \times 10^6 \times 9.967 \approx 358.8 \times 10^6 \;\mathrm◆LB◆bps \approx 358.8\;\mathrm◆LB◆Mbps$$
+$$C = 36 \times 10^6 \times 9.967 \approx 358.8 \times 10^6 \;\mathrm◆LB◆bps◆RB◆ \approx 358.8\;\mathrm◆LB◆Mbps◆RB◆$$
 
 **Answer:** The maximum achievable data rate is approximately 358.8 Mbps. Any attempt to exceed This
 rate will result in an unacceptable error rate regardless of the modulation scheme used.
@@ -173,15 +173,15 @@ rate will result in an unacceptable error rate regardless of the modulation sche
 <details>
 <summary>Worked Example: Comparing Nyquist and Shannon Limits</summary>
 
-A channel has $H = 6000$ Hz and $\mathrm◆LB◆SNR = 1023$ (30 dB).
+A channel has $H = 6000$ Hz and $\mathrm◆LB◆SNR◆RB◆ = 1023$ (30 dB).
 
-**Shannon limit:** $$C = 6000 \times \log_2(1024) = 6000 \times 10 = 60000\;\mathrm◆LB◆bps$$
+**Shannon limit:** $$C = 6000 \times \log_2(1024) = 6000 \times 10 = 60000\;\mathrm◆LB◆bps◆RB◆$$
 
 **Nyquist limit with $V = 8$:**
-$$C = 2 \times 6000 \times \log_2(8) = 12000 \times 3 = 36000\;\mathrm◆LB◆bps$$
+$$C = 2 \times 6000 \times \log_2(8) = 12000 \times 3 = 36000\;\mathrm◆LB◆bps◆RB◆$$
 
 The Nyquist limit (36 kbps) is below the Shannon limit (60 kbps), so 8 signal levels are Achievable.
-With $V = 64$: $$C = 12000 \times 6 = 72000\;\mathrm◆LB◆bps$$
+With $V = 64$: $$C = 12000 \times 6 = 72000\;\mathrm◆LB◆bps◆RB◆$$
 
 This exceeds Shannon's limit of 60 kbps, meaning 64 levels would produce errors. The maximum Number
 of levels consistent with Shannon:
@@ -233,14 +233,14 @@ $\log_2 M = 2k$ bits. The symbol rate equals the bandwidth $B$ (Nyquist: 2 symbo
 
 A 256-QAM modem operates over a 20 MHz channel. What is the maximum data rate?
 
-$$M = 256, \quad \log_2 256 = 8 \;\mathrm◆LB◆bits/symbol$$
+$$M = 256, \quad \log_2 256 = 8 \;\mathrm◆LB◆bits◆RB◆/symbol$$
 
-$$\mathrm◆LB◆Bit\;rate = 8 \times 20 \times 10^6 = 160\;\mathrm◆LB◆Mbps$$
+$$\mathrm◆LB◆Bit◆RB◆\;rate = 8 \times 20 \times 10^6 = 160\;\mathrm◆LB◆Mbps◆RB◆$$
 
 If the channel has SNR = 24 dB, verify against Shannon:
 
-$$\mathrm◆LB◆SNR_◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆24/10◆RB◆ = 251.2$$
-$$C = 20 \times 10^6 \times \log_2(252.2) \approx 20 \times 10^6 \times 7.98 \approx 159.6\;\mathrm◆LB◆Mbps$$
+$$\mathrm◆LB◆SNR_◆RB◆◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆24/10◆RB◆ = 251.2$$
+$$C = 20 \times 10^6 \times \log_2(252.2) \approx 20 \times 10^6 \times 7.98 \approx 159.6\;\mathrm◆LB◆Mbps◆RB◆$$
 
 The Nyquist-based rate (160 Mbps) is very close to the Shannon limit (159.6 Mbps), meaning 256-QAM
 Is near-optimal for this channel but has almost no margin for noise or interference.
@@ -411,7 +411,7 @@ simultaneously; If collision detected, send jam signal and wait random backoff.
   $k \in \\{0, 1, \ldots,
  2^◆LB◆\min(n,10)◆RB◆ - 1\\}$ and wait $K \times 512$ bit times.
 - **Minimum frame size:** Must be at least $2\tau$ where $\tau$ is the round-trip propagation delay.
-  For 10 Mbps Ethernet with $\tau = 51.2\;\mu\mathrm◆LB◆s$: minimum frame = 64 bytes.
+  For 10 Mbps Ethernet with $\tau = 51.2\;\mu\mathrm◆LB◆s◆RB◆$: minimum frame = 64 bytes.
 
 **CSMA/CD collision analysis.** The sender must still be transmitting when a collision signal
 returns From the farthest point on the network. The worst-case round-trip propagation time is
@@ -428,13 +428,13 @@ Where $R$ is the data rate.
 A 100 Mbps Ethernet network uses a maximum cable length of 2 km. Signal propagation speed is
 $2 \times 10^8$ m/s. Calculate the minimum frame size.
 
-One-way propagation delay: $$\tau = \frac◆LB◆d◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2000◆RB◆◆LB◆2 \times 10^8◆RB◆ = 10\;\mu\mathrm◆LB◆s$$
+One-way propagation delay: $$\tau = \frac◆LB◆d◆RB◆◆LB◆v◆RB◆ = \frac◆LB◆2000◆RB◆◆LB◆2 \times 10^8◆RB◆ = 10\;\mu\mathrm◆LB◆s◆RB◆$$
 
 Worst case: collision occurs at the far end, signal must travel back. Total time is
-$2\tau = 20\;\mu\mathrm◆LB◆s$.
+$2\tau = 20\;\mu\mathrm◆LB◆s◆RB◆$.
 
 The sender must still be transmitting after $2\tau$:
-$$L_◆LB◆\min◆RB◆ = R \times 2\tau = 100 \times 10^6 \times 20 \times 10^◆LB◆-6◆RB◆ = 2000\;\mathrm◆LB◆bits = 250\;\mathrm◆LB◆bytes$$
+$$L_◆LB◆\min◆RB◆ = R \times 2\tau = 100 \times 10^6 \times 20 \times 10^◆LB◆-6◆RB◆ = 2000\;\mathrm◆LB◆bits◆RB◆ = 250\;\mathrm◆LB◆bytes◆RB◆$$
 
 **Answer:** The minimum frame size is 250 bytes (2000 bits). Any frame shorter than this risks an
 Undetected collision.
@@ -590,9 +590,9 @@ Link rate, and $d_◆LB◆\mathrm◆LB◆prop◆RB◆$ is the propagation delay.
 
 For a path through $n$ switches:
 
-$$\mathrm◆LB◆Store\mathrm◆LB◆-and\mathrm◆LB◆-forward\;latency◆RB◆ = n \cdot \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
+$$\mathrm◆LB◆Store◆RB◆\mathrm◆LB◆-and\mathrm◆LB◆-forward\;latency◆RB◆ = n \cdot \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
 
-$$\mathrm◆LB◆Cut\mathrm◆LB◆-through\;latency◆RB◆ = \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + (n-1) \cdot \frac◆LB◆L_h◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
+$$\mathrm◆LB◆Cut◆RB◆\mathrm◆LB◆-through\;latency◆RB◆ = \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + (n-1) \cdot \frac◆LB◆L_h◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
 
 <details>
 <summary>Worked Example: Switching Latency Comparison</summary>
@@ -602,11 +602,11 @@ Propagation delay.
 
 **Store-and-forward:**
 
-$$\mathrm◆LB◆Latency = 3 \times \frac◆LB◆1500 \times 8◆RB◆◆LB◆10^9◆RB◆ + 3 \times 5 \times 10^◆LB◆-6◆RB◆ = 36\;\mu\mathrm◆LB◆s + 15\;\mu\mathrm◆LB◆s = 51\;\mu\mathrm◆LB◆s$$
+$$\mathrm◆LB◆Latency◆RB◆ = 3 \times \frac◆LB◆1500 \times 8◆RB◆◆LB◆10^9◆RB◆ + 3 \times 5 \times 10^◆LB◆-6◆RB◆ = 36\;\mu\mathrm◆LB◆s◆RB◆ + 15\;\mu\mathrm◆LB◆s◆RB◆ = 51\;\mu\mathrm◆LB◆s◆RB◆$$
 
 **Cut-through:**
 
-$$\mathrm◆LB◆Latency = \frac◆LB◆1500 \times 8◆RB◆◆LB◆10^9◆RB◆ + 2 \times \frac◆LB◆14 \times 8◆RB◆◆LB◆10^9◆RB◆ + 3 \times 5 \times 10^◆LB◆-6◆RB◆ = 12\;\mu\mathrm◆LB◆s + 0.224\;\mu\mathrm◆LB◆s + 15\;\mu\mathrm◆LB◆s = 27.2\;\mu\mathrm◆LB◆s$$
+$$\mathrm◆LB◆Latency◆RB◆ = \frac◆LB◆1500 \times 8◆RB◆◆LB◆10^9◆RB◆ + 2 \times \frac◆LB◆14 \times 8◆RB◆◆LB◆10^9◆RB◆ + 3 \times 5 \times 10^◆LB◆-6◆RB◆ = 12\;\mu\mathrm◆LB◆s◆RB◆ + 0.224\;\mu\mathrm◆LB◆s◆RB◆ + 15\;\mu\mathrm◆LB◆s◆RB◆ = 27.2\;\mu\mathrm◆LB◆s◆RB◆$$
 
 **Answer:** Cut-through saves approximately 23.8 $\mu$S (47% reduction) for this scenario, but it
 Cannot detect corrupted frames before forwarding them.
@@ -793,7 +793,7 @@ Route to A goes through A).
 
 - **OSPF:** Hierarchical design (areas), VLSM support, fast convergence. Link-state advertisements
   (LSAs) flooded throughout the area. Each router runs Dijkstra on the full topology graph. Uses
-  cost = $10^8 / \mathrm◆LB◆bandwidth(bps)$ by default.
+  cost = $10^8 / \mathrm◆LB◆bandwidth◆RB◆(bps)$ by default.
 
 **OSPF area design:**
 
@@ -876,7 +876,7 @@ D ---6--- E ---3--- F
 
 **Goal:** Construct the routing table at router A using Dijkstra's algorithm.
 
-**Initialisation.** Set $d(A) = 0$, $d(\mathrm◆LB◆all\;others) = \infty$. Unvisited =
+**Initialisation.** Set $d(A) = 0$, $d(\mathrm◆LB◆all◆RB◆\;others) = \infty$. Unvisited =
 $\{A, B, C, D, E, F\}$.
 
 **Visit A** ($d = 0$). Neighbours: B (cost 3), D (cost 4). Update: $d(B) = 3$Prev$(B) = A$.
@@ -1067,7 +1067,7 @@ Client                        Server
   |      (wait 2*MSL)         |    Server: CLOSED
 ```
 
-**TIME_WAIT.** Client waits $2 \times \mathrm◆LB◆MSL$ (Maximum Segment Lifetime, 60 s) Before closing.
+**TIME_WAIT.** Client waits $2 \times \mathrm◆LB◆MSL◆RB◆$ (Maximum Segment Lifetime, 60 s) Before closing.
 Ensures: (1) the last ACK reaches the server; (2) old segments have expired.
 
 **TCP state diagram** (state transitions):
@@ -1095,7 +1095,7 @@ Ensures: (1) the last ACK reaches the server; (2) old segments have expired.
 TCP uses a **sliding window**. The receiver advertises `rwnd` (receive window). The sender never has
 More than `rwnd` bytes of unacknowledged data in flight.
 
-$$\mathrm◆LB◆Effective\;window = \min(\mathrm◆LB◆cwnd,\, \mathrm◆LB◆rwnd)$$
+$$\mathrm◆LB◆Effective◆RB◆\;window = \min(\mathrm◆LB◆cwnd◆RB◆,\, \mathrm◆LB◆rwnd◆RB◆)$$
 
 **Example.** Buffer size 4096, 1024 unprocessed bytes: `rwnd = 3072`. The window slides as data is
 Acknowledged and the receiver processes data.
@@ -1107,14 +1107,14 @@ TCP adapts its sending rate based on perceived network congestion.
 **Slow start.** `cwnd = 1` MSS. Double `cwnd` per ACK (exponential growth). Until `cwnd` reaches
 `ssthresh` or loss occurs.
 
-**Congestion avoidance.** When $\mathrm◆LB◆cwnd \geq \mathrm◆LB◆ssthresh$Increase `cwnd` by
-$\mathrm◆LB◆MSS \times (\mathrm◆LB◆MSS / \mathrm◆LB◆cwnd)$ per ACK (linear growth, approximately 1 MSS Per
+**Congestion avoidance.** When $\mathrm◆LB◆cwnd◆RB◆ \geq \mathrm◆LB◆ssthresh◆RB◆$Increase `cwnd` by
+$\mathrm◆LB◆MSS◆RB◆ \times (\mathrm◆LB◆MSS◆RB◆ / \mathrm◆LB◆cwnd◆RB◆)$ per ACK (linear growth, approximately 1 MSS Per
 RTT).
 
 **Fast retransmit.** Three duplicate ACKs trigger immediate retransmission of the missing segment.
 
-**Fast recovery.** After fast retransmit: $\mathrm◆LB◆ssthresh = \mathrm◆LB◆cwnd/2$
-$\mathrm◆LB◆cwnd = \mathrm◆LB◆ssthresh + 3$. Enter congestion avoidance (not slow start).
+**Fast recovery.** After fast retransmit: $\mathrm◆LB◆ssthresh◆RB◆ = \mathrm◆LB◆cwnd◆RB◆/2$
+$\mathrm◆LB◆cwnd◆RB◆ = \mathrm◆LB◆ssthresh◆RB◆ + 3$. Enter congestion avoidance (not slow start).
 
 **TCP Reno state transitions:**
 
@@ -1178,13 +1178,13 @@ Cwnd = ssthresh = 13870 bytes, continue congestion avoidance.
 
 ### 5.8 Retransmission Timer
 
-$$\mathrm◆LB◆RTT_s = (1 - \alpha)\,\mathrm◆LB◆RTT_s + \alpha \cdot \mathrm◆LB◆RTT_m$$
+$$\mathrm◆LB◆RTT_s◆RB◆ = (1 - \alpha)\,\mathrm◆LB◆RTT_s◆RB◆ + \alpha \cdot \mathrm◆LB◆RTT_m◆RB◆$$
 
-$$\mathrm◆LB◆RTT_d = (1 - \beta)\,\mathrm◆LB◆RTT_d + \beta\,|\mathrm◆LB◆RTT_m - \mathrm◆LB◆RTT_s|$$
+$$\mathrm◆LB◆RTT_d◆RB◆ = (1 - \beta)\,\mathrm◆LB◆RTT_d◆RB◆ + \beta\,|\mathrm◆LB◆RTT_m◆RB◆ - \mathrm◆LB◆RTT_s◆RB◆|$$
 
-$$\mathrm◆LB◆RTO = \mathrm◆LB◆RTT_s + 4 \cdot \mathrm◆LB◆RTT_d$$
+$$\mathrm◆LB◆RTO◆RB◆ = \mathrm◆LB◆RTT_s◆RB◆ + 4 \cdot \mathrm◆LB◆RTT_d◆RB◆$$
 
-Where $\mathrm◆LB◆RTT_m$ = measured RTT, $\alpha = 1/8$, $\beta = 1/4$. Initial RTO = 1 s; minimum RTO =
+Where $\mathrm◆LB◆RTT_m◆RB◆$ = measured RTT, $\alpha = 1/8$, $\beta = 1/4$. Initial RTO = 1 s; minimum RTO =
 200 ms.
 
 :::caution Common Pitfall Karn's algorithm: do not update RTT estimates for retransmitted segments.
@@ -1194,37 +1194,37 @@ The ACK could correspond To either the original or the retransmission (retransmi
 <details>
 <summary>Worked Example: RTT Estimation</summary>
 
-Given: $\alpha = 1/8$$\beta = 1/4$Initial $\mathrm◆LB◆RTT_s = 0$$\mathrm◆LB◆RTT_d = 0$. Measured RTTs: 220
+Given: $\alpha = 1/8$$\beta = 1/4$Initial $\mathrm◆LB◆RTT_s◆RB◆ = 0$$\mathrm◆LB◆RTT_d◆RB◆ = 0$. Measured RTTs: 220
 ms, 240 ms, 230 ms, 260 ms, 250 ms.
 
 **After measurement 1 (220 ms):**
 
-$\mathrm◆LB◆RTT_s = (7/8)(0) + (1/8)(220) = 27.5$ ms
-$\mathrm◆LB◆RTT_d = (3/4)(0) + (1/4)|220 - 27.5| = 48.125$ ms $\mathrm◆LB◆RTO = 27.5 + 4(48.125) = 220$ ms
+$\mathrm◆LB◆RTT_s◆RB◆ = (7/8)(0) + (1/8)(220) = 27.5$ ms
+$\mathrm◆LB◆RTT_d◆RB◆ = (3/4)(0) + (1/4)|220 - 27.5| = 48.125$ ms $\mathrm◆LB◆RTO◆RB◆ = 27.5 + 4(48.125) = 220$ ms
 
 **After measurement 2 (240 ms):**
 
-$\mathrm◆LB◆RTT_s = (7/8)(27.5) + (1/8)(240) = 24.06 + 30 = 54.06$ ms
-$\mathrm◆LB◆RTT_d = (3/4)(48.125) + (1/4)|240 - 54.06| = 36.09 + 46.49 = 82.58$ ms
-$\mathrm◆LB◆RTO = 54.06 + 4(82.58) = 384.38$ ms
+$\mathrm◆LB◆RTT_s◆RB◆ = (7/8)(27.5) + (1/8)(240) = 24.06 + 30 = 54.06$ ms
+$\mathrm◆LB◆RTT_d◆RB◆ = (3/4)(48.125) + (1/4)|240 - 54.06| = 36.09 + 46.49 = 82.58$ ms
+$\mathrm◆LB◆RTO◆RB◆ = 54.06 + 4(82.58) = 384.38$ ms
 
 **After measurement 3 (230 ms):**
 
-$\mathrm◆LB◆RTT_s = (7/8)(54.06) + (1/8)(230) = 47.30 + 28.75 = 76.05$ ms
-$\mathrm◆LB◆RTT_d = (3/4)(82.58) + (1/4)|230 - 76.05| = 61.94 + 38.49 = 100.43$ ms
-$\mathrm◆LB◆RTO = 76.05 + 4(100.43) = 477.77$ ms
+$\mathrm◆LB◆RTT_s◆RB◆ = (7/8)(54.06) + (1/8)(230) = 47.30 + 28.75 = 76.05$ ms
+$\mathrm◆LB◆RTT_d◆RB◆ = (3/4)(82.58) + (1/4)|230 - 76.05| = 61.94 + 38.49 = 100.43$ ms
+$\mathrm◆LB◆RTO◆RB◆ = 76.05 + 4(100.43) = 477.77$ ms
 
 **After measurement 4 (260 ms):**
 
-$\mathrm◆LB◆RTT_s = (7/8)(76.05) + (1/8)(260) = 66.54 + 32.50 = 99.04$ ms
-$\mathrm◆LB◆RTT_d = (3/4)(100.43) + (1/4)|260 - 99.04| = 75.32 + 40.24 = 115.56$ ms
-$\mathrm◆LB◆RTO = 99.04 + 4(115.56) = 561.28$ ms
+$\mathrm◆LB◆RTT_s◆RB◆ = (7/8)(76.05) + (1/8)(260) = 66.54 + 32.50 = 99.04$ ms
+$\mathrm◆LB◆RTT_d◆RB◆ = (3/4)(100.43) + (1/4)|260 - 99.04| = 75.32 + 40.24 = 115.56$ ms
+$\mathrm◆LB◆RTO◆RB◆ = 99.04 + 4(115.56) = 561.28$ ms
 
 **After measurement 5 (250 ms):**
 
-$\mathrm◆LB◆RTT_s = (7/8)(99.04) + (1/8)(250) = 86.66 + 31.25 = 117.91$ ms
-$\mathrm◆LB◆RTT_d = (3/4)(115.56) + (1/4)|250 - 117.91| = 86.67 + 33.02 = 119.69$ ms
-$\mathrm◆LB◆RTO = 117.91 + 4(119.69) = 596.67$ ms
+$\mathrm◆LB◆RTT_s◆RB◆ = (7/8)(99.04) + (1/8)(250) = 86.66 + 31.25 = 117.91$ ms
+$\mathrm◆LB◆RTT_d◆RB◆ = (3/4)(115.56) + (1/4)|250 - 117.91| = 86.67 + 33.02 = 119.69$ ms
+$\mathrm◆LB◆RTO◆RB◆ = 117.91 + 4(119.69) = 596.67$ ms
 
 The smoothed RTT converges toward the true average (~240 ms) and the RTO stabilises around 600 ms.
 
@@ -1443,9 +1443,9 @@ Model with authentication and encryption).
 
 **Key metrics:**
 
-- **Bandwidth-delay product (BDP):** $\mathrm◆LB◆BDP = \mathrm◆LB◆bandwidth \times \mathrm◆LB◆RTT$. The
+- **Bandwidth-delay product (BDP):** $\mathrm◆LB◆BDP◆RB◆ = \mathrm◆LB◆bandwidth◆RB◆ \times \mathrm◆LB◆RTT◆RB◆$. The
   maximum amount of unacknowledged data that can be in flight. For a 10 Gbps link with 80 ms RTT:
-  $\mathrm◆LB◆BDP = 10^◆LB◆10◆RB◆ \times 0.08 = 800\;\mathrm◆LB◆Mb = 100\;\mathrm◆LB◆MB$.
+  $\mathrm◆LB◆BDP◆RB◆ = 10^◆LB◆10◆RB◆ \times 0.08 = 800\;\mathrm◆LB◆Mb◆RB◆ = 100\;\mathrm◆LB◆MB◆RB◆$.
 
 - **Throughput:** Actual data rate achieved, less than bandwidth due to protocol overhead,
   congestion, and errors.
@@ -1457,7 +1457,7 @@ Model with authentication and encryption).
   Measured as the standard deviation of delay.
 
 **Theorem 6.2.** The maximum throughput of a TCP connection is bounded by the window size divided by
-The RTT: $\mathrm◆LB◆throughput \leq \min(\mathrm◆LB◆cwnd, \mathrm◆LB◆rwnd) / \mathrm◆LB◆RTT$.
+The RTT: $\mathrm◆LB◆throughput◆RB◆ \leq \min(\mathrm◆LB◆cwnd◆RB◆, \mathrm◆LB◆rwnd◆RB◆) / \mathrm◆LB◆RTT◆RB◆$.
 
 _Proof._ The sender cannot have more than the window size in unacknowledged data. Each byte sent
 Requires an ACK, which takes one RTT to arrive. Thus the sender can send at most window / RTT bytes
@@ -1682,7 +1682,7 @@ Rate limiting, connection throttling.
    error-free data rate. If 64 signal levels are used with a Nyquist-based scheme, is the channel
    being used within its theoretical limit?
 
-3. **Nyquist vs Shannon.** A channel has $H = 3000$ Hz and $\mathrm◆LB◆SNR = 31$ (about 15 dB). What is
+3. **Nyquist vs Shannon.** A channel has $H = 3000$ Hz and $\mathrm◆LB◆SNR◆RB◆ = 31$ (about 15 dB). What is
    the maximum number of signal levels $V$ that can be used reliably?
 
 4. **Hamming code.** Encode the data bits $d_1 d_2 d_3 d_4 = 0110$ using Hamming(7,4). If bit 5 of
@@ -1737,8 +1737,8 @@ Rate limiting, connection throttling.
     is the value of `ssthresh` after the timeout?
 
 16. **RTT estimation.** Using $\alpha = 1/8$$\beta = 1/4$And measured RTTs of 100 ms, 120 ms, 80 ms,
-    compute $\mathrm◆LB◆RTT_s$$\mathrm◆LB◆RTT_d$And RTO after each measurement (starting from
-    $\mathrm◆LB◆RTT_s = \mathrm◆LB◆RTT_d = 0$).
+    compute $\mathrm◆LB◆RTT_s◆RB◆$$\mathrm◆LB◆RTT_d◆RB◆$And RTO after each measurement (starting from
+    $\mathrm◆LB◆RTT_s◆RB◆ = \mathrm◆LB◆RTT_d◆RB◆ = 0$).
 
 17. **DNS resolution.** A client at `192.168.1.100` wants to resolve `www.example.com`. Describe the
     complete resolution process, including: the recursive query to the local resolver, the iterative
