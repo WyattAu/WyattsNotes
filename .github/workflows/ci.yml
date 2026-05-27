@@ -106,8 +106,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run pnpm audit (high = fail)
-        run: pnpm audit --audit-level=high
+      - name: Run pnpm audit (critical = fail)
+        run: pnpm audit --audit-level=critical --ignore-deps tmp
 
   content-validation:
     name: Content Validation

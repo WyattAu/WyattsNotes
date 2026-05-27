@@ -604,7 +604,7 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
 ## Cross-References
 
 - **Differential equations** and systems solved via matrix methods: see
-  [Differential Equations](../calculus/differential-equations)
+  [Differential Equations](../5-calculus/5_differential-equations)
 - **Proof and reasoning** for properties of determinants: see [Proof](../proof)
 
 ---
