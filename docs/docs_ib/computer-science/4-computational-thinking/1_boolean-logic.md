@@ -31,7 +31,7 @@ Construct any Boolean function. XOR and XNOR are useful for parity and compariso
 | 1   | 0   | 0           |
 | 1   | 1   | 1           |
 
-Notation: $A \cdot B$, $AB$, $A \wedge B$
+Notation: $A \cdot B$$AB$$A \wedge B$
 
 **OR (disjunction):** The output is 1 when at least one input is 1.
 
@@ -42,7 +42,7 @@ Notation: $A \cdot B$, $AB$, $A \wedge B$
 | 1   | 0   | 1          |
 | 1   | 1   | 1          |
 
-Notation: $A + B$, $A \vee B$
+Notation: $A + B$$A \vee B$
 
 **NOT (negation):** The output is the complement of the input.
 
@@ -51,7 +51,7 @@ Notation: $A + B$, $A \vee B$
 | 0   | 1       |
 | 1   | 0       |
 
-Notation: $\overline{A}$, $A'$, $\lnot A$
+Notation: $\overline{A}$$A'$$\lnot A$
 
 **NAND:** The negation of AND. Output is 0 only when all inputs are 1.
 
@@ -62,7 +62,7 @@ Notation: $\overline{A}$, $A'$, $\lnot A$
 | 1   | 0   | 1            |
 | 1   | 1   | 0            |
 
-Notation: $\overline{A \cdot B}$, $(A \cdot B)'$
+Notation: $\overline{A \cdot B}$$(A \cdot B)'$
 
 **NOR:** The negation of OR. Output is 1 only when all inputs are 0.
 
@@ -73,7 +73,7 @@ Notation: $\overline{A \cdot B}$, $(A \cdot B)'$
 | 1   | 0   | 0           |
 | 1   | 1   | 0           |
 
-Notation: $\overline{A + B}$, $(A + B)'$
+Notation: $\overline{A + B}$$(A + B)'$
 
 **XOR (exclusive OR):** The output is 1 when inputs are different.
 
@@ -84,7 +84,7 @@ Notation: $\overline{A + B}$, $(A + B)'$
 | 1   | 0   | 1           |
 | 1   | 1   | 0           |
 
-Notation: $A \oplus B$, $A \veebar B$
+Notation: $A \oplus B$$A \veebar B$
 
 **XNOR (exclusive NOR):** The negation of XOR. Output is 1 when inputs are the same.
 
@@ -95,7 +95,7 @@ Notation: $A \oplus B$, $A \veebar B$
 | 1   | 0   | 0            |
 | 1   | 1   | 1            |
 
-Notation: $\overline{A \oplus B}$, $A \odot B$
+Notation: $\overline{A \oplus B}$$A \odot B$
 
 ### Derived Expressions for XOR and XNOR
 
@@ -128,7 +128,7 @@ Build column by column, evaluating each sub-expression:
 | 1   | 1   | 0   | 1       | 1              | 1                                |
 | 1   | 1   | 1   | 1       | 0              | 0                                |
 
-Minterms (where $F = 1$): $\overline{A}B\overline{C}$, $A\overline{B}\overline{C}$, $AB\overline{C}$.
+Minterms (where $F = 1$): $\overline{A}B\overline{C}$$A\overline{B}\overline{C}$$AB\overline{C}$.
 
 SOP expression: $F = \overline{A}B\overline{C} + A\overline{B}\overline{C} + AB\overline{C}$
 
@@ -197,8 +197,8 @@ Given an expression, construct the truth table by evaluating each sub-expression
 | 1   | 1   | 0   | 0              | 0              | 0                      | 0                      | 0   |
 | 1   | 1   | 1   | 0              | 0              | 0                      | 0                      | 0   |
 
-The minterms (rows where $F = 1$) are: $\overline{A}\overline{B}C$, $\overline{A}BC$
-$A\overline{B}\overline{C}$, $A\overline{B}C$.
+The minterms (rows where $F = 1$) are: $\overline{A}\overline{B}C$$\overline{A}BC$
+$A\overline{B}\overline{C}$$A\overline{B}C$.
 
 ## Boolean Identities and Laws
 
@@ -462,7 +462,7 @@ $F = \overline{A} \cdot \overline{B} + \overline{A} \cdot B + A \cdot \overline{
 | `A`=0 | 1       | 1       |
 | `A`=1 | 1       | 0       |
 
-The cells for $(0,0)$, $(0,1)$And $(1,0)$ are 1.
+The cells for $(0,0)$$(0,1)$And $(1,0)$ are 1.
 
 Group the two cells in row `A`=0: this spans both columns, so `B` is eliminated. This group
 Represents $\overline{A}$.
@@ -484,8 +484,8 @@ So that adjacent columns differ by exactly one bit. Variables `B` and `C` are th
 
 **Worked example:** Minimize $F(A, B, C) = \sum(0, 1, 2, 5, 6, 7)$
 
-The minterms are: $m_0 = \overline{A}\overline{B}\overline{C}$, $m_1 = \overline{A}\overline{B}C$
-$m_2 = \overline{A}B\overline{C}$, $m_5 = A\overline{B}C$, $m_6 = AB\overline{C}$, $m_7 = ABC$.
+The minterms are: $m_0 = \overline{A}\overline{B}\overline{C}$$m_1 = \overline{A}\overline{B}C$
+$m_2 = \overline{A}B\overline{C}$$m_5 = A\overline{B}C$$m_6 = AB\overline{C}$$m_7 = ABC$.
 
 |       | `BC` = 00 | `BC` = 01 | `BC` = 11 | `BC` = 10 |
 | ----- | --------- | --------- | --------- | --------- |
@@ -497,7 +497,7 @@ $m_2 = \overline{A}B\overline{C}$, $m_5 = A\overline{B}C$, $m_6 = AB\overline{C}
 - Group 1: Cells $(0,00)$ and $(0,01)$ -- adjacent horizontally. These are
   $\overline{A}\overline{B}\overline{C}$ and $\overline{A}\overline{B}C$. The variable that changes
   is `C`So eliminate it: $\overline{A}\overline{B}$.
-- Group 2: Cells $(1,01)$, $(1,11)$, $(1,10)$ -- all three in row `A`=1. But $(1,01)$ and $(1,11)$ are
+- Group 2: Cells $(1,01)$$(1,11)$$(1,10)$ -- all three in row `A`=1. But $(1,01)$ and $(1,11)$ are
   adjacent, and $(1,11)$ and $(1,10)$ are adjacent. Group $(1,11)$ and $(1,10)$: these are $ABC$ and
   $AB\overline{C}$Eliminating `C`: $AB$.
 - Group 3: Cells $(0,10)$ and $(1,10)$ -- adjacent vertically. These are $\overline{A}B\overline{C}$
@@ -537,9 +537,9 @@ Gray code ordering: 00, 01, 11, 10.
 **Step 1: Identify groups of 1s.**
 
 - Group 1: The four corners form a valid group because K-maps wrap around both horizontally and
-  vertically. Cells $(00,00)$, $(00,10)$, $(10,00)$, $(10,10)$ are the four corners. In terms of
+  vertically. Cells $(00,00)$$(00,10)$$(10,00)$$(10,10)$ are the four corners. In terms of
   variables, these are $\overline{A}\overline{B}\overline{C}\overline{D}$
-  $\overline{A}\overline{B}C\overline{D}$, $A\overline{B}\overline{C}\overline{D}$
+  $\overline{A}\overline{B}C\overline{D}$$A\overline{B}\overline{C}\overline{D}$
   $A\overline{B}C\overline{D}$. Variables `A` and `C` change, so they are eliminated. Result:
   $\overline{B}\overline{D}$.
 - Group 2: Cells $(00,00)$ and $(00,01)$ are adjacent. These are
@@ -558,9 +558,9 @@ The four-corner group $\overline{B}\overline{D}$ covers $m_0, m_2, m_8, m_{10}$.
 
 $\overline{A}\overline{C}D$ covers $m_1, m_5$.
 
-Check coverage: $m_0$ covered by $\overline{B}\overline{D}$, $m_1$ covered by
-$\overline{A}\overline{C}D$, $m_2$ covered by $\overline{B}\overline{D}$, $m_5$ covered by
-$\overline{A}\overline{C}D$, $m_8$ covered by $\overline{B}\overline{D}$, $m_9$ is NOT covered yet,
+Check coverage: $m_0$ covered by $\overline{B}\overline{D}$$m_1$ covered by
+$\overline{A}\overline{C}D$$m_2$ covered by $\overline{B}\overline{D}$$m_5$ covered by
+$\overline{A}\overline{C}D$$m_8$ covered by $\overline{B}\overline{D}$$m_9$ is NOT covered yet,
 $m_{10}$ covered by $\overline{B}\overline{D}$.
 
 $m_9 = A\overline{B}\overline{C}D$. We need to cover it. Options:
@@ -713,7 +713,7 @@ $F = \overline{A}C + A\overline{B}$
 
 **With don't cares**, we can set the X to 1 to create a larger group:
 
-- Cells $(0,01)$, $(0,11)$, $(1,01)$, $(1,11)$: if X = 1, this is a $2 \times 2$ group spanning both rows
+- Cells $(0,01)$$(0,11)$$(1,01)$$(1,11)$: if X = 1, this is a $2 \times 2$ group spanning both rows
   and columns 01 and 11. Variables `A` and `B` change, so eliminate them: $C$.
 - Cells $(1,00)$ and $(1,01)$: $A\overline{B}$.
 
@@ -814,7 +814,7 @@ A carry-out.
 | `A`=0 | 0                     | 1                     | 0                     | 1                     |
 | `A`=1 | 1                     | 0                     | 1                     | 0                     |
 
-The 1s appear at $(0,01)$, $(0,10)$, $(1,00)$, $(1,11)$. No two adjacent 1s share a common group in The
+The 1s appear at $(0,01)$$(0,10)$$(1,00)$$(1,11)$. No two adjacent 1s share a common group in The
 standard sense. Each 1 is isolated (adjacent cells are 0). Therefore, no simplification is Possible,
 and the SOP form is the sum of minterms:
 
@@ -881,8 +881,8 @@ Majority votes yes (2 or 3 yes votes). Derive the Boolean expression and count t
 - $(1,01)$ and $(1,11)$: horizontal pair → $A \cdot C$
 - $(1,11)$ and $(1,10)$: horizontal pair → $A \cdot B$
 
-Essential prime implicants: $BC$, $AC$, $AB$ (each covers a minterm that no other group covers: $m_3$
-only by $BC$, $m_5$ only by $AC$, $m_6$ only by $AB$).
+Essential prime implicants: $BC$$AC$$AB$ (each covers a minterm that no other group covers: $m_3$
+only by $BC$$m_5$ only by $AC$$m_6$ only by $AB$).
 
 $$F = A \cdot B + A \cdot C + B \cdot C$$
 
@@ -1280,7 +1280,7 @@ the Gates needed.
 <details>
 <summary>Solution</summary>
 
-**Truth table** (binary subtraction: $0-0=0$, $1-0=1$, $1-1=0$, $0-1=1$ with borrow):
+**Truth table** (binary subtraction: $0-0=0$$1-0=1$$1-1=0$$0-1=1$ with borrow):
 
 | `A` | `B` | Diff | Borrow |
 | --- | --- | ---- | ------ |

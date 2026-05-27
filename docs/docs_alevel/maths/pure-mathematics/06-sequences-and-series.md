@@ -90,7 +90,7 @@ The first and last, second and second-to-last, etc. Each pair sums to the same v
 <summary>Example</summary>
 Find the sum of the first 20 terms of $3, 7, 11, 15, \ldots$
 
-Here $a = 3$, $d = 4$, $n = 20$.
+Here $a = 3$$d = 4$$n = 20$.
 
 $$S_{20} = \frac{20}{2}(2 \times 3 + 19 \times 4) = 10(6 + 76) = 10 \times 82 = 820$$
 
@@ -176,7 +176,7 @@ Formula when $|r| \geq 1$Which gives nonsense. :::
 <summary>Example</summary>
 Find the sum to infinity of $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots$
 
-Here $a = 1$, $r = \frac{1}{2}$, $|r| < 1$.
+Here $a = 1$$r = \frac{1}{2}$$|r| < 1$.
 
 $$S_\infty = \frac◆LB◆1◆RB◆◆LB◆1 - \frac{1}{2}◆RB◆ = 2$$
 
@@ -208,7 +208,7 @@ $$
 $$
 
 _Proof of $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$._ This is the arithmetic series with $a = 1$
-$d = 1$, $n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)}{2}$. $\blacksquare$
+$d = 1$$n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)}{2}$. $\blacksquare$
 
 <hr />
 
@@ -217,16 +217,16 @@ $d = 1$, $n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)
 A _recurrence relation_ defines each term in terms of previous terms. A recurrence relation of order
 $k$ requires $k$ initial conditions.
 
-**Example.** $u_{n+1} = 2u_n + 3$, $u_1 = 1$.
+**Example.** $u_{n+1} = 2u_n + 3$$u_1 = 1$.
 
-$u_2 = 2(1) + 3 = 5$, $u_3 = 2(5) + 3 = 13$, $u_4 = 2(13) + 3 = 29$...
+$u_2 = 2(1) + 3 = 5$$u_3 = 2(5) + 3 = 13$$u_4 = 2(13) + 3 = 29$...
 
 **Periodic sequences.** If $u_{n+1} = f(u_n)$ and the sequence returns to a previous value, it
 Becomes periodic.
 
-**Example.** $u_{n+1} = \frac{1}{u_n}$, $u_1 = 2$.
+**Example.** $u_{n+1} = \frac{1}{u_n}$$u_1 = 2$.
 
-$u_2 = \frac{1}{2}$, $u_3 = 2$, $u_4 = \frac{1}{2}$... This is periodic with period 2.
+$u_2 = \frac{1}{2}$$u_3 = 2$$u_4 = \frac{1}{2}$... This is periodic with period 2.
 
 <hr />
 
@@ -415,7 +415,7 @@ A salary is 30000 in year 1 and increases by 1500 each year. Due to inflation, e
 
 The sequence of discounted salaries is an arithmetic-geometric sequence:
 
-- AP part: $a = 30000$, $d = 1500$
+- AP part: $a = 30000$$d = 1500$
 - GP part: $r = 0.9$
 
 Since $|r| \lt 1$:
@@ -527,7 +527,7 @@ $a = 17 - 12 = 5$.
 
 <details>
 <summary>Solution</summary>
-This is an arithmetic series with first term $a = 2$Last term $\ell = 3(50) - 1 = 149$, $n = 50$.
+This is an arithmetic series with first term $a = 2$Last term $\ell = 3(50) - 1 = 149$$n = 50$.
 
 $$S = \frac{50}{2}(2 + 149) = 25 \times 151 = 3775$$
 
@@ -553,7 +553,7 @@ $$\frac{5}{1 - r} = 25 \implies 1 - r = \frac{1}{5} \implies r = \frac{4}{5}$$
 
 <details>
 <summary>Solution</summary>
-$a = 2$, $r = -3$, $n = 10$.
+$a = 2$$r = -3$$n = 10$.
 
 $$S_{10} = \frac{2(1 - (-3)^{10})}{1 - (-3)} = \frac{2(1 - 59049)}{4} = \frac{2(-59048)}{4} = -29524$$
 
@@ -581,7 +581,7 @@ $$
 
 <hr />
 
-**Problem 6.** Given $u_1 = 3$ and $u_{n+1} = \frac{u_n + 1}{u_n - 1}$Find $u_2$, $u_3$, $u_4$ And
+**Problem 6.** Given $u_1 = 3$ and $u_{n+1} = \frac{u_n + 1}{u_n - 1}$Find $u_2$$u_3$$u_4$ And
 $u_5$. Comment on the sequence.
 
 <details>
@@ -630,7 +630,7 @@ The ball falls 10 m, then rises $10 \times 0.8 = 8$ m, falls 8 m, rises $8 \time
 
 Total distance = $10 + 2(8 + 6.4 + 5.12 + \cdots)$.
 
-The bracketed series is geometric with $a = 8$, $r = 0.8$.
+The bracketed series is geometric with $a = 8$$r = 0.8$.
 
 $$S_\infty = \frac{8}{1 - 0.8} = \frac{8}{0.2} = 40$$
 
@@ -646,7 +646,7 @@ $3 + 6 + 12 + 24 + \cdots$ exceeds 10000.
 
 <details>
 <summary>Solution</summary>
-$a = 3$, $r = 2$.
+$a = 3$$r = 2$.
 
 $$S_n = \frac{3(2^n - 1)}{2 - 1} = 3(2^n - 1) > 10000$$
 
@@ -749,7 +749,7 @@ $1, \; 4 \times \tfrac{1}{2}, \; 7 \times \tfrac{1}{4}, \; 10 \times \tfrac{1}{8
 <details>
 <summary>Solution</summary>
 Identify the components:
-- AP part: first term $a = 1$Common difference $d = 3$ (since $4 - 1 = 3$, $7 - 4 = 3$Etc.)
+- AP part: first term $a = 1$Common difference $d = 3$ (since $4 - 1 = 3$$7 - 4 = 3$Etc.)
 - GP part: common ratio $r = \frac{1}{2}$
 
 Since $|r| \lt 1$The sum to infinity converges:

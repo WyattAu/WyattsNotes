@@ -246,9 +246,9 @@ To counteract the increasing Coulomb repulsion between protons.
 
 | Decay                  | Emission                           | Change                                | Example                                                       |
 | :--------------------- | :--------------------------------- | :------------------------------------ | :------------------------------------------------------------ |
-| Alpha ($\alpha$)       | $^4_2\mathrm{He}$ (helium nucleus) | $Z \to Z - 2$, $A \to A - 4$            | $^{238}_{92}\mathrm{U} \to ^{234}_{90}\mathrm{Th} + \alpha$   |
-| Beta-minus ($\beta^-$) | $e^-$ (electron) + $\bar{\nu}_e$   | $n \to p$: $Z \to Z + 1$, $A$ unchanged | $^{14}_6\mathrm{C} \to ^{14}_7\mathrm{N} + e^- + \bar{\nu}_e$ |
-| Beta-plus ($\beta^+$)  | $e^+$ (positron) + $\nu_e$         | $p \to n$: $Z \to Z - 1$, $A$ unchanged | $^{11}_6\mathrm{C} \to ^{11}_5\mathrm{B} + e^+ + \nu_e$       |
+| Alpha ($\alpha$)       | $^4_2\mathrm{He}$ (helium nucleus) | $Z \to Z - 2$$A \to A - 4$            | $^{238}_{92}\mathrm{U} \to ^{234}_{90}\mathrm{Th} + \alpha$   |
+| Beta-minus ($\beta^-$) | $e^-$ (electron) + $\bar{\nu}_e$   | $n \to p$: $Z \to Z + 1$$A$ unchanged | $^{14}_6\mathrm{C} \to ^{14}_7\mathrm{N} + e^- + \bar{\nu}_e$ |
+| Beta-plus ($\beta^+$)  | $e^+$ (positron) + $\nu_e$         | $p \to n$: $Z \to Z - 1$$A$ unchanged | $^{11}_6\mathrm{C} \to ^{11}_5\mathrm{B} + e^+ + \nu_e$       |
 | Gamma ($\gamma$)       | High-energy photon                 | No change in $Z$ or $A$               | Excited nucleus de-excites                                    |
 
 ### The Decay Law
@@ -257,7 +257,7 @@ Radioactive decay is a random process governed by:
 
 $$N = N_0 e^{-\lambda t}$$
 
-Where $N$ is the number of undecayed nuclei at time $t$, $N_0$ is the initial number, and $\lambda$ Is
+Where $N$ is the number of undecayed nuclei at time $t$$N_0$ is the initial number, and $\lambda$ Is
 the **decay constant**.
 
 **Activity** (rate of decay): $A = -\dfrac{dN}{dt} = \lambda N = A_0 e^{-\lambda t}$Measured in
@@ -379,7 +379,7 @@ Iron-56 ($\sim 8.8\,\mathrm{MeV/nucleon}$), which is the most stable nucleus.
 
 **Example.** Calculate the binding energy of the helium-4 nucleus.
 
-Given: $m_p = 1.00728\,\mathrm{u}$, $m_n = 1.00867\,\mathrm{u}$, $m_{\mathrm{He}} = 4.00260\,\mathrm{u}$
+Given: $m_p = 1.00728\,\mathrm{u}$$m_n = 1.00867\,\mathrm{u}$$m_{\mathrm{He}} = 4.00260\,\mathrm{u}$
 $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
 
 $$\Delta m = 2(1.00728) + 2(1.00867) - 4.00260 = 0.03030\,\mathrm{u}$$
@@ -394,8 +394,8 @@ $$\frac{E_b}{A} = \frac{28.2}{4} = 7.07\,\mathrm{MeV/nucleon}$$
 
 $$^{235}_{92}\mathrm{U} + ^1_0\mathrm{n} \to ^{141}_{56}\mathrm{Ba} + ^{92}_{36}\mathrm{Kr} + 3\,^1_0\mathrm{n}$$
 
-Masses: $m_{\mathrm{U-235}} = 235.0439\,\mathrm{u}$, $m_{\mathrm{Ba-141}} = 140.9139\,\mathrm{u}$
-$m_{\mathrm{Kr-92}} = 91.8973\,\mathrm{u}$, $m_n = 1.0087\,\mathrm{u}$.
+Masses: $m_{\mathrm{U-235}} = 235.0439\,\mathrm{u}$$m_{\mathrm{Ba-141}} = 140.9139\,\mathrm{u}$
+$m_{\mathrm{Kr-92}} = 91.8973\,\mathrm{u}$$m_n = 1.0087\,\mathrm{u}$.
 
 Reactants: $235.0439 + 1.0087 = 236.0526\,\mathrm{u}$. Products:
 $140.9139 + 91.8973 + 3(1.0087) = 235.8373\,\mathrm{u}$.
@@ -409,8 +409,8 @@ $$E = 0.2153 \times 931.5 \approx 200.6\,\mathrm{MeV}$$
 
 Calculate the binding energy per nucleon of lithium-7 ($^7_3\mathrm{Li}$).
 
-Given: $m_p = 1.00728\,\mathrm{u}$, $m_n = 1.00867\,\mathrm{u}$
-$m_{\mathrm{Li-7}} = 7.01600\,\mathrm{u}$, $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
+Given: $m_p = 1.00728\,\mathrm{u}$$m_n = 1.00867\,\mathrm{u}$
+$m_{\mathrm{Li-7}} = 7.01600\,\mathrm{u}$$1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
 
 Lithium-7 has $Z = 3$ protons and $N = 4$ neutrons.
 
@@ -587,8 +587,8 @@ Quantum tunneling is responsible for alpha decay, tunnel diodes, and scanning tu
 
 - **Photon** ($\gamma$): electromagnetic force.
 - **Gluon** ($g$): strong nuclear force.
-- **$W^+$, $W^-$, $Z^0$**: weak nuclear force.
-- **Higgs boson**: gives mass to $W$, $Z$ bosons and fermions.
+- **$W^+$$W^-$$Z^0$**: weak nuclear force.
+- **Higgs boson**: gives mass to $W$$Z$ bosons and fermions.
 
 ### The Four Fundamental Forces
 
@@ -596,7 +596,7 @@ Quantum tunneling is responsible for alpha decay, tunnel diodes, and scanning tu
 | :-------------- | :---------------------- | :---------------- | :-------------------------- |
 | Strong          | Gluon                   | 1                 | $\sim 10^{-15}\,\mathrm{m}$ |
 | Electromagnetic | Photon                  | $\sim 10^{-2}$    | Infinite                    |
-| Weak            | $W$, $Z$ bosons           | $\sim 10^{-6}$    | $\sim 10^{-18}\,\mathrm{m}$ |
+| Weak            | $W$$Z$ bosons           | $\sim 10^{-6}$    | $\sim 10^{-18}\,\mathrm{m}$ |
 | Gravitational   | Graviton (hypothetical) | $\sim 10^{-38}$   | Infinite                    |
 
 ---
@@ -767,7 +767,7 @@ $$^{234}_{90}\mathrm{Th} \to ^{234}_{91}\mathrm{Pa} + e^{-} + \bar{\nu}_e$$
 ### Problem 6
 
 Calculate the binding energy of carbon-12 ($^{12}_{6}\mathrm{C}$). Given:
-$m_p = 1.00728\,\mathrm{u}$, $m_n = 1.00867\,\mathrm{u}$ $m_{\mathrm{C-12}} = 12.00000\,\mathrm{u}$
+$m_p = 1.00728\,\mathrm{u}$$m_n = 1.00867\,\mathrm{u}$ $m_{\mathrm{C-12}} = 12.00000\,\mathrm{u}$
 (by definition of the atomic mass unit), $1\,\mathrm{u} = 931.5\,\mathrm{MeV}/c^2$.
 
 <details>

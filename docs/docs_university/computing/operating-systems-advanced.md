@@ -178,9 +178,9 @@ total demand is feasible. $\blacksquare$
 
 Three periodic tasks:
 
-- Task 1: $C_1 = 2$, $T_1 = 5$, $U_1 = 0.4$
-- Task 2: $C_2 = 2$, $T_2 = 10$, $U_2 = 0.2$
-- Task 3: $C_3 = 3$, $T_3 = 20$, $U_3 = 0.15$
+- Task 1: $C_1 = 2$$T_1 = 5$$U_1 = 0.4$
+- Task 2: $C_2 = 2$$T_2 = 10$$U_2 = 0.2$
+- Task 3: $C_3 = 3$$T_3 = 20$$U_3 = 0.15$
 
 Total utilisation: $U = 0.4 + 0.2 + 0.15 = 0.75$.
 
@@ -1124,7 +1124,7 @@ immediately.
 
 _Proof (wait-die)._ A cycle in the wait-for graph would require
 $T_1 \to T_2 \to \cdots \to T_k \to T_1$ where each arrow means "waiting for." In wait-die, a
-process only waits for older processes. So $T_1$ is older than $T_2$, $T_2$ is older than $T_3$...,
+process only waits for older processes. So $T_1$ is older than $T_2$$T_2$ is older than $T_3$...,
 $T_k$ is older than $T_1$. This is a contradiction ($T_1 > T_2 > \cdots > T_k > T_1$). Therefore no
 cycle exists. Starvation-freedom: a process only dies (aborts) if it is younger than the holder.
 After restarting, it retains its original timestamp, so it becomes "older" relative to new
@@ -1205,7 +1205,7 @@ resource types and $n$ is the number of processes), which may be prohibitive for
 determine how many processes exist. What if the parent calls `wait()` after each `fork()`?
 
 **Problem 2.** Three periodic real-time tasks with computation times and periods:
-$T_1 = (3, 6)$, $T_2 = (2, 8)$, $T_3 = (2, 12)$. Determine if they are schedulable under (a) RMS, and
+$T_1 = (3, 6)$$T_2 = (2, 8)$$T_3 = (2, 12)$. Determine if they are schedulable under (a) RMS, and
 (b) EDF. Draw the schedule for the first 24 time units under each algorithm.
 
 **Problem 3.** Compare the 1:1, N:1, and M:N thread models for an application with 1000 short-lived

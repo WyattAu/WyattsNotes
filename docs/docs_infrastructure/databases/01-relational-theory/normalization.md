@@ -269,9 +269,9 @@ Non-prime attributes: B, C.
 1. **Right-side decomposition:** Every FD in $F_{min}$ has exactly one attribute on the right side.
    (Replace $X \rightarrow YZ$ with $X \rightarrow Y$ and $X \rightarrow Z$.)
 2. **No redundant FDs:** Removing any FD from $F_{min}$ changes the closure. For each
-   $f \in F_{min}$, $(F_{min} - \{f\})^+ \neq F_{min}^+$.
+   $f \in F_{min}$$(F_{min} - \{f\})^+ \neq F_{min}^+$.
 3. **No redundant attributes on the left side:** For each FD $X \rightarrow A$ in $F_{min}$ and each
-   attribute $B \in X$, $(X - \{B\})^+$ does not contain $A$. In other words, removing any attribute
+   attribute $B \in X$$(X - \{B\})^+$ does not contain $A$. In other words, removing any attribute
    from the left side would destroy the dependency.
 
 The minimal cover is not necessarily unique, but all minimal covers of $F$ are equivalent.
@@ -488,7 +488,7 @@ Check B -> C:
 ### Boyce-Codd Normal Form (BCNF)
 
 **Definition.** A relation $R$ is in Boyce-Codd normal form (BCNF) if and only if, for every
-Non-trivial functional dependency $X \rightarrow Y$ that holds in $R$, $X$ is a superkey of $R$.
+Non-trivial functional dependency $X \rightarrow Y$ that holds in $R$$X$ is a superkey of $R$.
 
 Compare with 3NF:
 
@@ -556,7 +556,7 @@ Logic, triggers, or CHECK constraints.
 ### Fourth Normal Form (4NF)
 
 **Definition.** A relation $R$ is in fourth normal form (4NF) if and only if, for every non-trivial
-Multivalued dependency $X \twoheadrightarrow Y$ that holds in $R$, $X$ is a superkey of $R$.
+Multivalued dependency $X \twoheadrightarrow Y$ that holds in $R$$X$ is a superkey of $R$.
 
 **Definition.** A multivalued dependency (MVD) $X \twoheadrightarrow Y$ holds in $R$ if and only if,
 For every pair of tuples $t_1$ and $t_2$ in $R$ that agree on $X$There exists a tuple $t_3$ in $R$

@@ -323,7 +323,7 @@ The converse of $P \Rightarrow Q$ is $Q \Rightarrow P$:
 | F   | F   | T                 | T                 |
 
 The truth values differ in rows 2 and 3. This is why the converse of a true statement need not be
-True. For instance, "If a number is prime then it is odd" ($P = \mathrm{prime}$, $Q = \mathrm{odd}$)
+True. For instance, "If a number is prime then it is odd" ($P = \mathrm{prime}$$Q = \mathrm{odd}$)
 Is false (witness $2$), but its converse "If a number is odd then it is prime" is also false
 (witness $9$). In contrast, "If a number is a square then it is a rectangle" is true, but its
 Converse "If a number is a rectangle then it is a square" is false.
@@ -337,7 +337,7 @@ Applies.
 
 - The **universal quantifier** "for all" (symbol $\forall$) asserts that a property holds for every
   element in a set.
-- Example: "For all integers $n$, $n + 0 = n$."
+- Example: "For all integers $n$$n + 0 = n$."
 - In symbols: $\forall n \in \mathbb{Z},\; n + 0 = n$.
 
 - The **existential quantifier** "there exists" (symbol $\exists$) asserts that a property holds for
@@ -354,11 +354,11 @@ Negation flips the quantifier and negates the predicate:
 
 - $\neg(\forall x,\; P(x)) \equiv \exists x,\; \neg P(x)$
 
-"Not (for all $x$, $P(x)$ holds)" means "there exists some $x$ for which $P(x)$ does not hold."
+"Not (for all $x$$P(x)$ holds)" means "there exists some $x$ for which $P(x)$ does not hold."
 
 - $\neg(\exists x,\; P(x)) \equiv \forall x,\; \neg P(x)$
 
-"Not (there exists an $x$ such that $P(x)$ holds)" means "for every $x$, $P(x)$ does not hold."
+"Not (there exists an $x$ such that $P(x)$ holds)" means "for every $x$$P(x)$ does not hold."
 
 This matches the informal rules from the Negation section:
 
@@ -370,7 +370,7 @@ This matches the informal rules from the Negation section:
 
 ### Worked examples
 
-**Example 1.** Negate: "For all real numbers $x$, $x^2 \ge 0$."
+**Example 1.** Negate: "For all real numbers $x$$x^2 \ge 0$."
 
 Negation: "There exists a real number $x$ such that $x^2 \lt 0$."
 
@@ -378,7 +378,7 @@ Negation: "There exists a real number $x$ such that $x^2 \lt 0$."
 
 **Example 2.** Negate: "There exists an integer $n$ such that $n^2 + 1 = 0$."
 
-Negation: "For all integers $n$, $n^2 + 1 \neq 0$."
+Negation: "For all integers $n$$n^2 + 1 \neq 0$."
 
 **Example 3.** Negate: "For every integer $n$If $n$ is even then $n^2$ is even."
 
@@ -391,7 +391,7 @@ Equivalent to $\neg P \lor Q$And negating gives $P \land \neg Q$.
 **Example 4.** Negate: "For all real numbers $x$ there exists a real number $y$ such that
 $x + y = 0$."
 
-Negation: "There exists a real number $x$ such that for all real numbers $y$, $x + y \neq 0$."
+Negation: "There exists a real number $x$ such that for all real numbers $y$$x + y \neq 0$."
 
 When negating a chain of quantifiers, the order reverses. The rightmost quantifier flips first, then
 The next, and so on -- just like removing nested negations.
@@ -563,14 +563,14 @@ $\exists x,\; \neg P(x)$.
 
 Counterexample: $2$ is prime and $2$ is even.
 
-**Worked example 2.** Disprove: "For all real numbers $x$, $x^2 \gt x$."
+**Worked example 2.** Disprove: "For all real numbers $x$$x^2 \gt x$."
 
 Counterexample: $x = 0.5$ gives $x^2 = 0.25 \lt 0.5 = x$.
 
 **Worked example 3.** Disprove: "If $a$ and $b$ are positive integers, then
 $a^2 + b^2 \ge 2ab + 1$."
 
-Counterexample: $a = 1$, $b = 1$ gives $1 + 1 = 2$ but $2(1)(1) + 1 = 3$And $2 \lt 3$.
+Counterexample: $a = 1$$b = 1$ gives $1 + 1 = 2$ but $2(1)(1) + 1 = 3$And $2 \lt 3$.
 
 ### Common errors in .../1-number-and-algebra/3_proof-and-logics (Err1, Err2)
 
@@ -578,7 +578,7 @@ Several tempting deductions are invalid. The TMUA specification specifically hig
 
 **Error 1:** "If $ab = ac$Then $b = c$."
 
-This implicitly assumes $a \neq 0$. Counterexample: $a = 0$, $b = 3$, $c = 7$. Then
+This implicitly assumes $a \neq 0$. Counterexample: $a = 0$$b = 3$$c = 7$. Then
 $0 \cdot 3 = 0 \cdot 7 = 0$But $3 \neq 7$. The correct deduction is: if $ab = ac$ and $a \neq 0$
 Then $b = c$.
 
@@ -716,7 +716,7 @@ Original statement is true.
 
 ### Problem 4
 
-Let $f(x) = x^2 - 5x + 6$. A student claims: "For all real $x$, $f(x) \ge 0$." Disprove by
+Let $f(x) = x^2 - 5x + 6$. A student claims: "For all real $x$$f(x) \ge 0$." Disprove by
 Counterexample.
 
 <details>
@@ -733,7 +733,7 @@ $x \le 2$ or $x \ge 3$.)
 
 ### Problem 5
 
-Prove by cases: for all integers $n$, $n^2 + n$ is even.
+Prove by cases: for all integers $n$$n^2 + n$ is even.
 
 <details>
 <summary>Solution</summary>
@@ -768,7 +768,7 @@ Proof: $x^2 = y^2$. Taking square roots, $x = y$. QED."
 The error is in the step "taking square roots gives $x = y$". This is invalid because
 $\sqrt{x^2} = |x|$Not $x$. From $x^2 = y^2$ we get $|x| = |y|$Which means $x = y$ or $x = -y$.
 
-Counterexample: $x = 3$, $y = -3$. Then $x^2 = 9 = y^2$But $3 \neq -3$.
+Counterexample: $x = 3$$y = -3$. Then $x^2 = 9 = y^2$But $3 \neq -3$.
 
 The correct statement is: "If $x^2 = y^2$Then $x = y$ or $x = -y$."
 
@@ -839,7 +839,7 @@ By 15 but does not end in 5.
 ### Problem 10
 
 Let $P$ and $Q$ be statements. In terms of $P$ and $Q$Express: "It is not the case that both $P$ And
-$Q$ are true." Show that this is logically equivalent to "At least one of $P$, $Q$ is false."
+$Q$ are true." Show that this is logically equivalent to "At least one of $P$$Q$ is false."
 
 <details>
 <summary>Solution</summary>
@@ -848,7 +848,7 @@ $Q$ are true." Show that this is logically equivalent to "At least one of $P$, $
 
 By De Morgan's law: $\neg(P \land Q) \equiv (\neg P) \lor (\neg Q)$.
 
-"At least one of $P$, $Q$ is false" means either $P$ is false or $Q$ is false (or both), which is
+"At least one of $P$$Q$ is false" means either $P$ is false or $Q$ is false (or both), which is
 Precisely $\neg P \lor \neg Q$.
 
 Therefore the two statements are logically equivalent. This can also be verified by truth table:

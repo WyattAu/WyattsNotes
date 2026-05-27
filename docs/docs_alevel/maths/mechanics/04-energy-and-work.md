@@ -182,7 +182,7 @@ $$\boxed{P = Fv}$$
 
 The SI unit of power is the watt (W) = joule per second (J/s).
 
-$1\,\mathrm{kW} = 1000\,\mathrm{W}$, $1\,\mathrm{MW} = 10^6\,\mathrm{W}$.
+$1\,\mathrm{kW} = 1000\,\mathrm{W}$$1\,\mathrm{MW} = 10^6\,\mathrm{W}$.
 
 ### 5.3 Power and inclined planes
 

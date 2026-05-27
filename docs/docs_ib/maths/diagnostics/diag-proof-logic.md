@@ -196,7 +196,7 @@ $$\sqrt{6} = \frac{a^2 - 5b^2}{2b^2}$$
 
 Since $a, b$ are integers, the RHS is rational. So $\sqrt{6}$ is rational. But $\sqrt{6}$ is
 irrational (proved by the standard contradiction proof: if $\sqrt{6} = \frac{p}{q}$ in lowest terms,
-then $p^2 = 6q^2$So $p$ is even, $p = 2r$, $4r^2 = 6q^2$, $2r^2 = 3q^2$So $q$ is even, contradicting
+then $p^2 = 6q^2$So $p$ is even, $p = 2r$$4r^2 = 6q^2$$2r^2 = 3q^2$So $q$ is even, contradicting
 lowest terms).
 
 This contradiction means our assumption is false. Therefore $\sqrt{2} + \sqrt{3}$ is irrational.

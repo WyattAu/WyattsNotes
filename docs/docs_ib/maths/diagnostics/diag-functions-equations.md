@@ -90,7 +90,7 @@ $$y(x - 1) = 2x + 3 \implies xy - y = 2x + 3 \implies xy - 2x = y + 3 \implies x
 $$f^{-1}(x) = \frac{x + 3}{x - 2}, \quad x \neq 2$$
 
 The domain of $f^{-1}$ equals the range of $f$. Since
-$f(x) = \dfrac{2x + 3}{x - 1} = 2 + \dfrac{5}{x - 1}$As $x \to \pm\infty$, $f(x) \to 2$But
+$f(x) = \dfrac{2x + 3}{x - 1} = 2 + \dfrac{5}{x - 1}$As $x \to \pm\infty$$f(x) \to 2$But
 $f(x) \neq 2$. The horizontal asymptote at $y = 2$ is never reached. Domain:
 $\mathbb{R} \setminus \{2\}$.
 

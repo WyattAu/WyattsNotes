@@ -108,7 +108,7 @@ The cell membrane is described by the fluid mosaic model:
 
 | Type                  | Description                                                        | Examples                    |
 | --------------------- | ------------------------------------------------------------------ | --------------------------- |
-| Simple diffusion      | Movement from high to low concentration; small non-polar molecules | $\mathrm{O_2$, $\mathrm{CO_2$ |
+| Simple diffusion      | Movement from high to low concentration; small non-polar molecules | $\mathrm{O_2$$\mathrm{CO_2$ |
 | Facilitated diffusion | Via channel or carrier proteins; large or polar molecules          | Glucose, ions               |
 | Osmosis               | Movement of water across a semi-permeable membrane                 | Water in cells              |
 
@@ -496,7 +496,7 @@ Cell.
 
 | Mechanism             | Energy Required | Direction          | Mediator        | Example                          |
 | --------------------- | --------------- | ------------------ | --------------- | -------------------------------- |
-| Simple diffusion      | No              | High to low conc.  | None            | $\mathrm{O_2$, $\mathrm{CO_2$      |
+| Simple diffusion      | No              | High to low conc.  | None            | $\mathrm{O_2$$\mathrm{CO_2$      |
 | Facilitated diffusion | No              | High to low conc.  | Channel/carrier | Glucose, $\mathrm{Na^+$          |
 | Osmosis               | No              | High to low $\psi$ | Aquaporins      | Water                            |
 | Active transport      | Yes (ATP)       | Low to high conc.  | Carrier protein | $\mathrm{Na^+/\mathrm{K^+$ pump  |

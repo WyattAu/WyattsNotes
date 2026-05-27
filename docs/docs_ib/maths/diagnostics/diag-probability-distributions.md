@@ -113,7 +113,7 @@ A student claims this follows $\mathrm{Poi}(2)$ directly without justification.
 **(a)** Explain what assumptions must be verified.
 
 **(b)** Compute the probability and compare it with the exact binomial probability if
-$n = 200$, $p = 0.01$.
+$n = 200$$p = 0.01$.
 
 [Difficulty: hard. Tests the conditions for Poisson approximation and comparison with exact
 binomial.]
@@ -128,7 +128,7 @@ binomial.]
 
 For the call centre, if we model each second as a Bernoulli trial with
 $p = \frac{2}{60} = \frac{1}{30}$ and $n = 60$Then $np = 2$. The conditions are satisfied since
-$n = 60 \geq 50$, $p = \frac{1}{30} \lt 0.1$And $np = 2 \leq 15$.
+$n = 60 \geq 50$$p = \frac{1}{30} \lt 0.1$And $np = 2 \leq 15$.
 
 However, the student's claim that this is "directly $\mathrm{Poi}(2)$" is incomplete — the Poisson
 is an approximation that must be justified.

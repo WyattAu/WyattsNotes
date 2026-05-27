@@ -315,7 +315,7 @@ $$R_w(6\sin 55° - 1.8\cos 55°) = 1200\cos 55°$$
 
 $$R_w = \frac◆LB◆1200\cos 55°◆RB◆◆LB◆6\sin 55° - 1.8\cos 55°◆RB◆$$
 
-$\sin 55° \approx 0.8192$, $\cos 55° \approx 0.5736$.
+$\sin 55° \approx 0.8192$$\cos 55° \approx 0.5736$.
 
 $$R_w = \frac{688.3}{4.915 - 1.032} = \frac{688.3}{3.883} \approx 177.3 \text{ N}$$
 

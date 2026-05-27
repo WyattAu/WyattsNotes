@@ -58,10 +58,10 @@ Increasing temperature:
 
 | Law          | Relationship    | Condition held constant |
 | ------------ | --------------- | ----------------------- |
-| Boyle's      | $P \propto 1/V$ | $n$, $T$                  |
-| Charles's    | $V \propto T$   | $n$, $P$                  |
-| Gay-Lussac's | $P \propto T$   | $n$, $V$                  |
-| Avogadro's   | $V \propto n$   | $P$, $T$                  |
+| Boyle's      | $P \propto 1/V$ | $n$$T$                  |
+| Charles's    | $V \propto T$   | $n$$P$                  |
+| Gay-Lussac's | $P \propto T$   | $n$$V$                  |
+| Avogadro's   | $V \propto n$   | $P$$T$                  |
 
 Combining: $PV \propto nT$Giving the ideal gas equation:
 
@@ -79,9 +79,9 @@ $$
 
 ### Molar Volume
 
-At STP ($0\degree\mathrm{C}$, $100\mathrm{ kPa}$): $V_m = 22.7\mathrm{ L/mol}$
+At STP ($0\degree\mathrm{C}$$100\mathrm{ kPa}$): $V_m = 22.7\mathrm{ L/mol}$
 
-At RTP ($25\degree\mathrm{C}$, $100\mathrm{ kPa}$): $V_m = 24.8\mathrm{ L/mol}$
+At RTP ($25\degree\mathrm{C}$$100\mathrm{ kPa}$): $V_m = 24.8\mathrm{ L/mol}$
 
 ### Dalton's Law of Partial Pressures
 
@@ -109,7 +109,7 @@ Leaks.
 ### Common Pitfalls
 
 - Forgetting to convert temperature to Kelvin.
-- Using the wrong value of $R$ (check units of $P$, $V$, $T$).
+- Using the wrong value of $R$ (check units of $P$$V$$T$).
 - Confusing STP definitions (the IB uses $100\mathrm{ kPa}$Not $1\mathrm{ atm}$).
 
 ---
@@ -265,7 +265,7 @@ And **lowers** the melting point.
 ### $\mathrm{CO}_2$ Phase Diagram
 
 The triple point of $\mathrm{CO}_2$ is at $-57\degree\mathrm{C}$ and $5.1\mathrm{ atm}$. At
-$1\mathrm{ atm}$, $\mathrm{CO}_2$ sublimates directly from solid to gas — hence the name "dry ice."
+$1\mathrm{ atm}$$\mathrm{CO}_2$ sublimates directly from solid to gas — hence the name "dry ice."
 
 ---
 
@@ -459,7 +459,7 @@ M_{\mathrm{unknown}} = \frac{32.0}{0.1498} = 213.5\mathrm{ g/mol}
 $$
 
 The molar mass is approximately $214\mathrm{ g/mol}$. This is close to that of mercury vapour
-($\mathrm{Hg}$, $A_r = 200.6$) or radon ($\mathrm{Rn}$, $A_r = 222$). Given typical IB problem contexts,
+($\mathrm{Hg}$$A_r = 200.6$) or radon ($\mathrm{Rn}$$A_r = 222$). Given typical IB problem contexts,
 this is most consistent with radon gas.
 
 </details>
@@ -575,17 +575,17 @@ The trend is entirely consistent with increasing LDF strength down the group.
   conversion produces answers that are off by a factor of $\approx 10$.
 
 - **Choosing the wrong value of $R$:** $R = 8.314\mathrm{ J/(mol \cdot K)}$ requires SI units
-  ($\mathrm{Pa}$, $\mathrm{m}^3$). $R = 0.0821\mathrm{ L \cdot atm/(mol \cdot K)}$ requires pressure
+  ($\mathrm{Pa}$$\mathrm{m}^3$). $R = 0.0821\mathrm{ L \cdot atm/(mol \cdot K)}$ requires pressure
   in atm and volume in litres. Mixing unit systems (e.g., kPa with $0.0821$) yields incorrect
   results.
 
 - **Confusing STP definitions:** The IB uses STP as $0\degree\mathrm{C}$ and
   $100\mathrm{ kPa}$Giving $V_m = 22.7\mathrm{ L/mol}$. Many textbooks use the older IUPAC
-  definition ($1\mathrm{ atm} = 101.3\mathrm{ kPa}$, $V_m = 22.4\mathrm{ L/mol}$). Using the wrong
+  definition ($1\mathrm{ atm} = 101.3\mathrm{ kPa}$$V_m = 22.4\mathrm{ L/mol}$). Using the wrong
   molar volume introduces a $\approx 1.3\%$ error.
 
 - **Claiming hydrogen bonding without checking all criteria:** A molecule must have H bonded
-  directly to N, O, or F. $\mathrm{CH}_4$, $\mathrm{HCl}$And $\mathrm{PH}_3$ do **not** exhibit
+  directly to N, O, or F. $\mathrm{CH}_4$$\mathrm{HCl}$And $\mathrm{PH}_3$ do **not** exhibit
   hydrogen bonding. $\mathrm{H}$ bonded to C is never sufficient, regardless of molecular polarity.
 
 - **Misapplying Graham's law to mixtures:** Graham's law compares rates of effusion for two pure
@@ -614,8 +614,8 @@ The trend is entirely consistent with increasing LDF strength down the group.
    $a = 4.17\mathrm{ L}^2 \cdot \mathrm{atm/mol}^2$ and $b = 0.037\mathrm{ L/mol}$. Compare with the
    ideal gas prediction and explain the direction of the deviation.
 
-4. **[Hard]** A gas mixture contains $\mathrm{He}$, $\mathrm{Ne}$And $\mathrm{Ar}$ with mole fractions
-   $0.40$, $0.35$And $0.25$ respectively. The total pressure is $120\mathrm{ kPa}$. Calculate the
+4. **[Hard]** A gas mixture contains $\mathrm{He}$$\mathrm{Ne}$And $\mathrm{Ar}$ with mole fractions
+   $0.40$$0.35$And $0.25$ respectively. The total pressure is $120\mathrm{ kPa}$. Calculate the
    partial pressure of each component and the total mass of gas in a $10.0\mathrm{ L}$ container at
    $300\mathrm{ K}$.
 
@@ -644,7 +644,7 @@ The trend is entirely consistent with increasing LDF strength down the group.
 
 Calculate the root-mean-square speed of $\mathrm{O}_2$ molecules at $298\;\mathrm{K}$ and at
 $500\;\mathrm{K}$. By what factor does the rms speed increase?
-($M_r(\mathrm{O}_2) = 32.0\;\mathrm{g/mol}$, $R = 8.314\;\mathrm{J/(mol \cdot K)}$)
+($M_r(\mathrm{O}_2) = 32.0\;\mathrm{g/mol}$$R = 8.314\;\mathrm{J/(mol \cdot K)}$)
 
 <details>
 <summary>Solution</summary>
@@ -703,8 +703,8 @@ The integrated Clausius-Clapeyron equation:
 
 $$\ln\!\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{\mathrm{vap}}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
-Substituting: $P_1 = 2.34\;\mathrm{kPa}$, $T_1 = 293\;\mathrm{K}$
-$P_2 = 7.38\;\mathrm{kPa}$, $T_2 = 313\;\mathrm{K}$
+Substituting: $P_1 = 2.34\;\mathrm{kPa}$$T_1 = 293\;\mathrm{K}$
+$P_2 = 7.38\;\mathrm{kPa}$$T_2 = 313\;\mathrm{K}$
 
 $$\ln\!\left(\frac{7.38}{2.34}\right) = -\frac{\Delta H_{\mathrm{vap}}}{8.314}\left(\frac{1}{313} - \frac{1}{293}\right)$$
 
@@ -727,7 +727,7 @@ A $50.0\;\mathrm{g}$ sample of ice at $-20\degree\mathrm{C}$ is heated to $120\d
 standard pressure. Calculate the total energy required. Given: specific heat of ice
 $= 2.09\;\mathrm{J/(g \cdot \degree C)}$Specific heat of water
 $= 4.18\;\mathrm{J/(g \cdot \degree C)}$Specific heat of steam
-$= 2.01\;\mathrm{J/(g \cdot \degree C)}$, $\Delta H_{\mathrm{fusion}} = 334\;\mathrm{J/g}$, $\Delta H_{\mathrm{vap}} = 2260\;\mathrm{J/g}$.
+$= 2.01\;\mathrm{J/(g \cdot \degree C)}$$\Delta H_{\mathrm{fusion}} = 334\;\mathrm{J/g}$$\Delta H_{\mathrm{vap}} = 2260\;\mathrm{J/g}$.
 
 <details>
 <summary>Solution</summary>
@@ -819,8 +819,8 @@ $500\;\mathrm{K}$ and $100\;\mathrm{atm}$ for the same gas.
 <summary>Problem 14: Extended Response -- Phase Diagram Interpretation</summary>
 
 The phase diagram of a substance shows a triple point at
-$T = 150\;\mathrm{K}$, $P = 0.5\;\mathrm{atm}$A normal melting point of $180\;\mathrm{K}$And a
-critical point at $T = 350\;\mathrm{K}$, $P = 45\;\mathrm{atm}$. The solid-liquid boundary has a
+$T = 150\;\mathrm{K}$$P = 0.5\;\mathrm{atm}$A normal melting point of $180\;\mathrm{K}$And a
+critical point at $T = 350\;\mathrm{K}$$P = 45\;\mathrm{atm}$. The solid-liquid boundary has a
 positive slope. (a) Sketch the phase diagram. (b) Describe what happens when the substance at
 $200\;\mathrm{K}$ and $1.0\;\mathrm{atm}$ is compressed to $50\;\mathrm{atm}$ at constant
 temperature. (c) Explain why the solid-liquid boundary has a positive slope for this substance but a
@@ -835,7 +835,7 @@ alone?
 
 - **Confusing rms speed, average speed, and most probable speed**: For the Maxwell-Boltzmann
   distribution, $v_{\mathrm{mp}} < \bar{v} < v_{\mathrm{rms}}$. The relationships are
-  $v_{\mathrm{rms}} = \sqrt{3RT/M}$, $\bar{v} = \sqrt{8RT/(\pi M)}$And
+  $v_{\mathrm{rms}} = \sqrt{3RT/M}$$\bar{v} = \sqrt{8RT/(\pi M)}$And
   $v_{\mathrm{mp}} = \sqrt{2RT/M}$. Each differs by a constant factor.
 
 - **Using the Clausius-Clapeyron equation outside its validity range**: The equation assumes
@@ -856,8 +856,8 @@ alone?
   is an upper bound.
 
 - **Ignoring the role of unit conversions in gas density calculations**: Gas density
-  $\rho = PM/(RT)$ requires $P$ in $\mathrm{Pa}$, $M$ in
-  $\mathrm{kg/mol}$, $R = 8.314\;\mathrm{J/(mol \cdot K)}$And $T$ in $\mathrm{K}$ to get density in
+  $\rho = PM/(RT)$ requires $P$ in $\mathrm{Pa}$$M$ in
+  $\mathrm{kg/mol}$$R = 8.314\;\mathrm{J/(mol \cdot K)}$And $T$ in $\mathrm{K}$ to get density in
   $\mathrm{kg/m}^3$. Using $M$ in $\mathrm{g/mol}$ gives a result that is off by a factor of 1000.
 
 ---

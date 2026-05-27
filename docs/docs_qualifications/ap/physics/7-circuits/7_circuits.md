@@ -279,7 +279,7 @@ $Q(1) = C\mathcal{E}(1 - e^{-1}) = (5 \times 10^{-6})(12)(1 - 0.368) = 60 \times
 
 (c) $I(1) = \frac{\mathcal{E}}{R}e^{-1} = \frac{12}{200000} \times 0.368 = 22.1\,\mu\text{A$
 
-(d) $0.95 = 1 - e^{-t}$So $e^{-t} = 0.05$, $t = -\ln(0.05) = 3.0\,\text{s = 3\tau$.
+(d) $0.95 = 1 - e^{-t}$So $e^{-t} = 0.05$$t = -\ln(0.05) = 3.0\,\text{s = 3\tau$.
 
 :::
 
@@ -348,13 +348,13 @@ reduces the Voltage across the measured component.
    external circuit of resistance $R = 11.5\,\Omega$. Find the terminal voltage and the power
    dissipated in the external resistance.
 
-2. Three resistors $R_1 = 6\,\Omega$, $R_2 = 12\,\Omega$, $R_3 = 4\,\Omega$ are connected to a $12$ V
+2. Three resistors $R_1 = 6\,\Omega$$R_2 = 12\,\Omega$$R_3 = 4\,\Omega$ are connected to a $12$ V
    battery. Find the current through each resistor when (a) all three are in series and (b) $R_1$
    and $R_2$ are in parallel, and the combination is in series with $R_3$.
 
 3. Using Kirchhoff's laws, find the current through each resistor in a circuit with two loops:
    $\mathcal{E}_1 = 10$ V, $\mathcal{E}_2 = 4$ V,
-   $R_1 = 2\,\Omega$, $R_2 = 4\,\Omega$, $R_3 = 6\,\Omega$. Battery 1 and $R_1$ are in the left branch;
+   $R_1 = 2\,\Omega$$R_2 = 4\,\Omega$$R_3 = 6\,\Omega$. Battery 1 and $R_1$ are in the left branch;
    $R_3$ is the middle branch; Battery 2 and $R_2$ are in the right branch.
 
 4. A $2\,\mu\text{F$ capacitor in series with a $500\,\text{k\Omega$ resistor is connected to a $20$
@@ -371,7 +371,7 @@ reduces the Voltage across the measured component.
 <details>
 <summary>Question 7: AP Exam-Style -- RC circuit with a switch</summary>
 
-In the circuit shown, $R_1 = 10\,\text{k\Omega$, $R_2 = 20\,\text{k\Omega$, $C = 5\,\mu\text{F$And
+In the circuit shown, $R_1 = 10\,\text{k\Omega$$R_2 = 20\,\text{k\Omega$$C = 5\,\mu\text{F$And
 $\mathcal{E} = 30$ V. Switch S is closed at $t = 0$ with the capacitor initially uncharged. Find (a)
 the Initial current through the battery, (b) the current through the battery at steady state, (c)
 the charge On the capacitor at steady state, and (d) the time constant of the circuit.

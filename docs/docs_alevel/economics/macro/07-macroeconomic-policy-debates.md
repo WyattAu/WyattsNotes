@@ -140,7 +140,7 @@ Inflation exceeds target, and by 0.5% for every 1% that output exceeds potential
 
 <details>
 <summary>Worked Example</summary>
-Suppose $r^* = 2\%$, $\pi^* = 2\%$Current $\pi = 5\%$Output gap = $-3\%$ (recession).
+Suppose $r^* = 2\%$$\pi^* = 2\%$Current $\pi = 5\%$Output gap = $-3\%$ (recession).
 
 $$i = 2 + 5 + 0.5(5 - 2) + 0.5(-3) = 2 + 5 + 1.5 - 1.5 = 7\%$$
 
@@ -162,7 +162,7 @@ The recessionary output gap.
 
 1. **Unforeseen circumstances**: rules cannot anticipate all shocks (financial crises, pandemics,
    wars)
-2. **Model uncertainty**: the Taylor Rule assumes we know $r^*$, $y^*$And the correct coefficients —
+2. **Model uncertainty**: the Taylor Rule assumes we know $r^*$$y^*$And the correct coefficients —
    these are uncertain
 3. **Multiple objectives**: rules may be too rigid when trade-offs between objectives change
 4. **Communication**: discretion allows nuanced forward guidance
@@ -578,9 +578,9 @@ Statement be less valid?
 From $MV = PY$: if $V$ is stable (Friedman's assumption) and $Y$ is at potential in the long run (LRAS vertical), then $\Delta P \approx \Delta M$. Sustained inflation requires sustained money supply growth. Conditions where this is less valid: (1) $V$ is not stable — during financial crises, velocity falls sharply (people hoard cash), so $\Delta M$ does not translate to $\Delta P$. (2) The economy has a large output gap — $Y$ can increase, absorbing the money supply growth. (3) Supply shocks cause inflation without money supply growth (cost-push). (4) In the short run, prices are sticky, so $\Delta M$ affects $Y$ not $P$ (Keynesian view). Overall: the monetarist argument is strong in the long run but weaker in the short run and during crises.
 </details>
 
-**Problem 2.** Suppose the central bank follows the Taylor Rule with $r^* = 2\%$, $\pi^* = 2\%$And
+**Problem 2.** Suppose the central bank follows the Taylor Rule with $r^* = 2\%$$\pi^* = 2\%$And
 Coefficients 0.5 for both inflation and output gap. Calculate the prescribed interest rate when: (a)
-$\pi = 3\%$, $y - y^* = 0\%$(b) $\pi = 2\%$, $y - y^* = -4\%$(c) $\pi = 6\%$, $y - y^* = 1\%$. Comment on
+$\pi = 3\%$$y - y^* = 0\%$(b) $\pi = 2\%$$y - y^* = -4\%$(c) $\pi = 6\%$$y - y^* = 1\%$. Comment on
 the results.
 
 <details>
@@ -780,7 +780,7 @@ but 1.0 on the level since $i$ includes $\pi^*$) satisfies this principle.
 **Application to the UK (2022-2023):** The Bank Rate was raised from 0.25% to 5.25% between December
 2021 and August 2023. Inflation peaked at 11.1% in October 2022.
 
-Taylor Rule recommendation at peak inflation ($\pi = 11.1\%$, $g = 0.2\%$):
+Taylor Rule recommendation at peak inflation ($\pi = 11.1\%$$g = 0.2\%$):
 $$i = 2 + 2 + 0.5(11.1 - 2) + 0.5(0.2 - 2.5) = 4 + 4.55 - 1.15 = 7.4\%$$
 
 The actual Bank Rate (5.25%) was BELOW the Taylor Rule recommendation, suggesting monetary policy
@@ -832,9 +832,9 @@ $$u = u^* + \epsilon - \alpha\left(\frac◆LB◆\beta\alpha◆RB◆◆LB◆1 + \
 The output gain from surprise inflation is zero (since workers anticipate it), but inflation is
 higher. This is the **inflationary bias** of discretionary policy.
 
-**Numerical example:** $\beta = 1$, $\alpha = 0.5$, $\pi^* = 2\%$, $\epsilon = 2\%$.
+**Numerical example:** $\beta = 1$$\alpha = 0.5$$\pi^* = 2\%$$\epsilon = 2\%$.
 
-Under rules (credible commitment): $\pi = 2\%$, $u = u^* + 2\%$. Loss $= 0 + 4 = 4$.
+Under rules (credible commitment): $\pi = 2\%$$u = u^* + 2\%$. Loss $= 0 + 4 = 4$.
 
 Under discretion:
 $\pi = 2 + \frac◆LB◆1 \times 0.5◆RB◆◆LB◆1 + 1 \times 0.25◆RB◆ \times 2 = 2 + 0.8 = 2.8\%$.
@@ -886,11 +886,11 @@ $\Delta Y = 60$New $Y = 460$. Policy is insufficient.
 
 **Monetarist approach:** Wait for self-correction.
 
-- Year 1: $Y = 400$, $u = 8\%$ (natural rate 5%). Wages fall 2%.
-- Year 2: SRAS shifts right. $Y = 440$, $P$ falls. $u = 6.4\%$.
-- Year 3: $Y = 470$, $u = 5.6\%$.
-- Year 4: $Y = 490$, $u = 5.1\%$.
-- Year 5: $Y = 500$, $u = 5\%$. Full employment restored.
+- Year 1: $Y = 400$$u = 8\%$ (natural rate 5%). Wages fall 2%.
+- Year 2: SRAS shifts right. $Y = 440$$P$ falls. $u = 6.4\%$.
+- Year 3: $Y = 470$$u = 5.6\%$.
+- Year 4: $Y = 490$$u = 5.1\%$.
+- Year 5: $Y = 500$$u = 5\%$. Full employment restored.
 
 The economy self-corrects in approximately 5 years, during which cumulative lost output is
 approximately $100 + 60 + 30 + 10 = 200$ units of GDP.
@@ -1030,12 +1030,12 @@ policy was appropriate during 2021-2023.
 **Taylor Rule calculation (4 marks):**
 Using $i = 2 + 2 + 0.5(\pi - 2) + 0.5(g - 2.5)$:
 
-- December 2021: $\pi = 5.4\%$, $g = 0.9\%$. Taylor rate
+- December 2021: $\pi = 5.4\%$$g = 0.9\%$. Taylor rate
   $= 4 + 0.5(3.4) + 0.5(-1.6) = 4 + 1.7 - 0.8 = 4.9\%$. Actual Bank Rate: 0.25%. Policy was far
   below the Taylor Rule.
-- June 2022: $\pi = 9.4\%$, $g = 0.2\%$. Taylor rate
+- June 2022: $\pi = 9.4\%$$g = 0.2\%$. Taylor rate
   $= 4 + 0.5(7.4) + 0.5(-2.3) = 4 + 3.7 - 1.15 = 6.55\%$. Actual Bank Rate: 1.25%. Still well below.
-- August 2023: $\pi = 6.8\%$, $g = 0.2\%$. Taylor rate
+- August 2023: $\pi = 6.8\%$$g = 0.2\%$. Taylor rate
   $= 4 + 0.5(4.8) + 0.5(-2.3) = 4 + 2.4 - 1.15 = 5.25\%$. Actual Bank Rate: 5.25%. Now consistent.
 
 **Assessment (4 marks):** The BoE was "behind the curve" in 2021-2022, keeping rates too low

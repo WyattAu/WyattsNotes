@@ -37,7 +37,7 @@ lower-middle income ($1145$--$4465), upper-middle income ($4466$--$13 845), and 
 **Human Development Index (HDI).** Created by the UN Development Programme (UNDP), the HDI combines
 three dimensions:
 
-$, $\mathrm{HDI} = \frac{I_{\mathrm{health}} + I_{\mathrm{education}} + I_{\mathrm{income}}}{3}$, $
+$$\mathrm{HDI} = \frac{I_{\mathrm{health}} + I_{\mathrm{education}} + I_{\mathrm{income}}}{3}$$
 
 Where $I_{\mathrm{health}}$ is measured by life expectancy at birth, $I_{\mathrm{education}}$ is
 measured by mean years of schooling and expected years of schooling, and $I_{\mathrm{income}}$ is

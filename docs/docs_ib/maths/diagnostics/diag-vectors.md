@@ -79,9 +79,9 @@ pass at different "heights" and never meet. The student has incorrectly generali
 
 **Question:**
 
-Three points are given: $A(1, 0, 2)$, $B(3, 1, -1)$And $C(2, 2, 3)$.
+Three points are given: $A(1, 0, 2)$$B(3, 1, -1)$And $C(2, 2, 3)$.
 
-**(a)** Find the Cartesian equation of the plane $\Pi$ passing through $A$, $B$And $C$.
+**(a)** Find the Cartesian equation of the plane $\Pi$ passing through $A$$B$And $C$.
 
 **(b)** Find the perpendicular distance from the origin to $\Pi$.
 
@@ -132,7 +132,7 @@ Specifically:
 
 **Question:**
 
-Four points are given: $O(0, 0, 0)$, $A(2, 1, 0)$, $B(1, 3, 2)$And $C(0, 1, 4)$.
+Four points are given: $O(0, 0, 0)$$A(2, 1, 0)$$B(1, 3, 2)$And $C(0, 1, 4)$.
 
 **(a)** Find the volume of tetrahedron $OABC$.
 
@@ -143,7 +143,7 @@ $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
 
 **Solution:**
 
-**(a)** The volume of a tetrahedron with vertices $O$, $A$, $B$, $C$ is:
+**(a)** The volume of a tetrahedron with vertices $O$$A$$B$$C$ is:
 
 $$V = \frac{1}{6}\lvert [\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] \rvert$$
 
@@ -159,10 +159,10 @@ $$V = \frac{16}{6} = \frac{8}{3}$$
 
 **(b)** The scalar triple product
 $[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ equals the
-volume of the parallelepiped spanned by $\mathbf{a}$, $\mathbf{b}$And $\mathbf{c}$.
+volume of the parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
 
 If the four points are coplanar, the three vectors
-$\overrightarrow{OA}$, $\overrightarrow{OB}$, $\overrightarrow{OC}$ all lie in the same plane, meaning
+$\overrightarrow{OA}$$\overrightarrow{OB}$$\overrightarrow{OC}$ all lie in the same plane, meaning
 the parallelepiped they span has zero volume (it is flat). Therefore
 $[\overrightarrow{OA}, \overrightarrow{OB}, \overrightarrow{OC}] = 0$.
 

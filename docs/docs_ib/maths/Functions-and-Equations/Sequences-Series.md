@@ -50,7 +50,7 @@ $$
 
 Find the 20th term and the sum of the first 20 terms of the sequence $3, 7, 11, 15, \ldots$.
 
-$u_1 = 3$, $d = 4$.
+$u_1 = 3$$d = 4$.
 
 $$
 U_{20} = 3 + 19 \times 4 = 79
@@ -115,7 +115,7 @@ When $r = 1$: $S_n = nu_1$.
 
 Find the 8th term and the sum of the first 8 terms of $2, 6, 18, 54, \ldots$.
 
-$u_1 = 2$, $r = 3$.
+$u_1 = 2$$r = 3$.
 
 $$
 U_8 = 2 \times 3^7 = 2 \times 2187 = 4374
@@ -151,7 +151,7 @@ If $|r| \ge 1$The series diverges (the sum to infinity does not exist).
 
 Find the sum to infinity of $1 + \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \cdots$.
 
-$u_1 = 1$, $r = \dfrac{1}{2}$. Since $|r| \lt 1$:
+$u_1 = 1$$r = \dfrac{1}{2}$. Since $|r| \lt 1$:
 
 $$
 S_{\infty} = \frac{1}{1 - \frac{1}{2}} = 2
@@ -183,7 +183,7 @@ $$
 0.\dot{2}\dot{7} = \frac{27}{100} + \frac{27}{10000} + \cdots
 $$
 
-$u_1 = \dfrac{27}{100}$, $r = \dfrac{1}{100}$.
+$u_1 = \dfrac{27}{100}$$r = \dfrac{1}{100}$.
 
 $$
 S_{\infty} = \frac{\frac{27}{100}}{1 - \frac{1}{100}} = \frac{\frac{27}{100}}{\frac{99}{100}} = \frac{27}{99} = \frac{3}{11}
@@ -468,7 +468,7 @@ $$
 
 A sequence is defined by $u_{n+1} = 3u_n + 2$ with $u_1 = 1$. Find $u_n$.
 
-$r = 3$, $d = 2$.
+$r = 3$$d = 2$.
 
 $$
 U_n = 3^{n-1} \cdot 1 + 2 \cdot \frac{3^{n-1} - 1}{3 - 1} = 3^{n-1} + 3^{n-1} - 1 = 2 \cdot 3^{n-1} - 1
@@ -565,7 +565,7 @@ $$
 
 ### Question 4 (Paper 2 style)
 
-The first three terms of a geometric sequence are $\sin\theta$, $\cos\theta$And
+The first three terms of a geometric sequence are $\sin\theta$$\cos\theta$And
 $\dfrac{1}{\sqrt{3}}$Where $0 \lt \theta \lt \dfrac{\pi}{2}$.
 
 **Find the value of $\theta$.**
@@ -606,7 +606,7 @@ $$
 U = \frac{-1 \pm \sqrt{1 + 12}}{2\sqrt{3}} = \frac{-1 \pm \sqrt{13}}{2\sqrt{3}}
 $$
 
-Since $0 \lt \theta \lt \dfrac{\pi}{2}$, $\sin\theta \gt 0$:
+Since $0 \lt \theta \lt \dfrac{\pi}{2}$$\sin\theta \gt 0$:
 
 $$
 \sin\theta = \frac{-1 + \sqrt{13}}{2\sqrt{3}}

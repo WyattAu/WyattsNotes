@@ -191,7 +191,7 @@ Merge sort divides into 2 subproblems of size $n/2$ and combines in $O(n)$ time.
 
 $$T(n) = 2T(n/2) + \Theta(n)$$
 
-Here $a = 2$, $b = 2$So $c = \log_2 2 = 1$. We have $f(n) = \Theta(n) = \Theta(n^c \log^0 n)$Which is
+Here $a = 2$$b = 2$So $c = \log_2 2 = 1$. We have $f(n) = \Theta(n) = \Theta(n^c \log^0 n)$Which is
 Case 2 with $k = 0$.
 
 Therefore $T(n) = \Theta(n^1 \log^1 n) = \Theta(n \log n)$.
@@ -203,7 +203,7 @@ Therefore $T(n) = \Theta(n^1 \log^1 n) = \Theta(n \log n)$.
 
 $$T(n) = T(n/2) + O(1)$$
 
-Here $a = 1$, $b = 2$So $c = \log_2 1 = 0$. We have $f(n) = O(1) = O(n^0)$. This matches Case 2 with
+Here $a = 1$$b = 2$So $c = \log_2 1 = 0$. We have $f(n) = O(1) = O(n^0)$. This matches Case 2 with
 $k = 0$.
 
 Therefore $T(n) = \Theta(\log n)$.
@@ -217,7 +217,7 @@ Strassen's algorithm divides into 7 subproblems of size $n/2$ and combines in $O
 
 $$T(n) = 7T(n/2) + O(n^2)$$
 
-Here $a = 7$, $b = 2$So $c = \log_2 7 \approx 2.807$. We have $f(n) = O(n^2) = O(n^◆LB◆c - \varepsilon◆RB◆)$
+Here $a = 7$$b = 2$So $c = \log_2 7 \approx 2.807$. We have $f(n) = O(n^2) = O(n^◆LB◆c - \varepsilon◆RB◆)$
 with $\varepsilon = c - 2 \approx 0.807$Which is Case 1.
 
 Therefore $T(n) = \Theta(n^◆LB◆\log_2 7◆RB◆) = \Theta(n^◆LB◆2.807◆RB◆)$.
@@ -450,7 +450,7 @@ rotations:
 **Theorem 2.4.** An AVL tree with $n$ nodes has height $h \leq 1.4404 \cdot \log_2(n + 2) - 1.3277$.
 
 _Proof._ Let $N(h)$ be the minimum number of nodes in an AVL tree of height $h$. We have
-$N(0) = 1$, $N(1) = 2$And $N(h) = 1 + N(h-1) + N(h-2)$ for $h \geq 2$. This is the Fibonacci
+$N(0) = 1$$N(1) = 2$And $N(h) = 1 + N(h-1) + N(h-2)$ for $h \geq 2$. This is the Fibonacci
 recurrence, giving $N(h) = F_◆LB◆h+3◆RB◆ - 1$. Using $F_h = \frac◆LB◆\phi^h - \hat◆LB◆\phi◆RB◆^h◆RB◆◆LB◆\sqrt◆LB◆5◆RB◆◆RB◆$ where
 $\phi = \frac◆LB◆1+\sqrt◆LB◆5◆RB◆◆RB◆◆LB◆2◆RB◆$We get $N(h) > \phi^h / \sqrt◆LB◆5◆RB◆ - 1$So
 $h \lt \log_\phi(\sqrt◆LB◆5◆RB◆(n + 1)) \approx 1.4404 \log_2(n + 1)$. $\blacksquare$
@@ -655,13 +655,13 @@ strings.
 <summary>Worked Example: Bloom Filter Operations Trace</summary>
 
 A Bloom filter has $m = 10$ bits, $k = 2$ hash functions:
-$h_1(x) = x \bmod 10$, $h_2(x) = (x \cdot 3) \bmod 10$.
+$h_1(x) = x \bmod 10$$h_2(x) = (x \cdot 3) \bmod 10$.
 
-Insert 15: $h_1(15) = 5$, $h_2(15) = 5 \cdot 3 \bmod 10 = 5$. Set bit 5. Bit array: `0000010000`
+Insert 15: $h_1(15) = 5$$h_2(15) = 5 \cdot 3 \bmod 10 = 5$. Set bit 5. Bit array: `0000010000`
 
-Insert 22: $h_1(22) = 2$, $h_2(22) = 22 \cdot 3 \bmod 10 = 6$. Set bits 2, 6. Bit array: `0010010100`
+Insert 22: $h_1(22) = 2$$h_2(22) = 22 \cdot 3 \bmod 10 = 6$. Set bits 2, 6. Bit array: `0010010100`
 
-Insert 37: $h_1(37) = 7$, $h_2(37) = 37 \cdot 3 \bmod 10 = 1$. Set bits 1, 7. Bit array: `0110010110`
+Insert 37: $h_1(37) = 7$$h_2(37) = 37 \cdot 3 \bmod 10 = 1$. Set bits 1, 7. Bit array: `0110010110`
 
 Query 22: $h_1(22) = 2$ (set), $h_2(22) = 6$ (set). Result: **possibly in set** (true positive).
 
@@ -828,7 +828,7 @@ MergeSort(A, l, r):
 **Theorem 3.1.** Merge sort runs in $O(n \log n)$ time in all cases (best, average, worst).
 
 _Proof._ The recurrence is $T(n) = 2T(n/2) + O(n)$. By the Master theorem (case 2):
-$a = 2$, $b = 2$, $f(n) = O(n) = O(n^◆LB◆\log_b a◆RB◆)$So $T(n) = O(n \log n)$. $\blacksquare$
+$a = 2$$b = 2$$f(n) = O(n) = O(n^◆LB◆\log_b a◆RB◆)$So $T(n) = O(n \log n)$. $\blacksquare$
 
 **Theorem 3.2.** Merge sort is stable and requires $O(n)$ auxiliary space.
 
@@ -1166,7 +1166,7 @@ descendant of $w$Hence of $u$. $\blacksquare$
 ### 4.3 Topological Sort
 
 A **topological ordering** of a DAG is a linear ordering of vertices such that for every directed
-edge $(u, v)$, $u$ appears before $v$.
+edge $(u, v)$$u$ appears before $v$.
 
 **Algorithm:** Run DFS on the DAG. Output vertices in reverse order of finishing times.
 
@@ -1228,7 +1228,7 @@ Dijkstra(G, w, s):
 
 **Theorem 4.7.** Dijkstra's algorithm correctly computes shortest paths from the source.
 
-_Proof._ We prove by induction on $|S|$ that when a vertex $u$ is added to $S$, $d[u] = \delta(s, u)$
+_Proof._ We prove by induction on $|S|$ that when a vertex $u$ is added to $S$$d[u] = \delta(s, u)$
 (the true shortest-path distance).
 
 Base case: $s$ is the first vertex added, and $d[s] = 0 = \delta(s, s)$.
@@ -1255,24 +1255,24 @@ $O(V \log V + E)$. $\blacksquare$
 
 Find shortest paths from $A$ in the graph:
 
-- $A \xrightarrow◆LB◆4◆RB◆ B$, $A \xrightarrow◆LB◆2◆RB◆ C$
-- $B \xrightarrow◆LB◆3◆RB◆ D$, $B \xrightarrow◆LB◆1◆RB◆ E$
-- $C \xrightarrow◆LB◆1◆RB◆ B$, $C \xrightarrow◆LB◆5◆RB◆ D$
+- $A \xrightarrow◆LB◆4◆RB◆ B$$A \xrightarrow◆LB◆2◆RB◆ C$
+- $B \xrightarrow◆LB◆3◆RB◆ D$$B \xrightarrow◆LB◆1◆RB◆ E$
+- $C \xrightarrow◆LB◆1◆RB◆ B$$C \xrightarrow◆LB◆5◆RB◆ D$
 - $D \xrightarrow◆LB◆2◆RB◆ E$
 
-Initial: $d[A]=0$, $d[B]=d[C]=d[D]=d[E]=\infty$
+Initial: $d[A]=0$$d[B]=d[C]=d[D]=d[E]=\infty$
 
-Extract $A$: relax $B \to 4$, $C \to 2$. $Q = \\{C(2), B(4), D(\infty), E(\infty)\\}$
+Extract $A$: relax $B \to 4$$C \to 2$. $Q = \\{C(2), B(4), D(\infty), E(\infty)\\}$
 
-Extract $C$: relax $B \to \min(4, 2+1)=3$, $D \to 2+5=7$. $Q = \\{B(3), D(7), E(\infty)\\}$
+Extract $C$: relax $B \to \min(4, 2+1)=3$$D \to 2+5=7$. $Q = \\{B(3), D(7), E(\infty)\\}$
 
-Extract $B$: relax $D \to \min(7, 3+3)=6$, $E \to 3+1=4$. $Q = \\{E(4), D(6)\\}$
+Extract $B$: relax $D \to \min(7, 3+3)=6$$E \to 3+1=4$. $Q = \\{E(4), D(6)\\}$
 
 Extract $E$: relax $D \to \min(6, 4+2)=6$. $Q = \\{D(6)\\}$
 
 Extract $D$: no improvements.
 
-Result: $d[A]=0$, $d[B]=3$, $d[C]=2$, $d[D]=6$, $d[E]=4$
+Result: $d[A]=0$$d[B]=3$$d[C]=2$$d[D]=6$$d[E]=4$
 
 </details>
 
@@ -1317,10 +1317,10 @@ weight, which contains a cycle of negative weight. $\blacksquare$
 
 Find shortest paths from $A$ in the graph:
 
-- $A \xrightarrow◆LB◆6◆RB◆ B$, $A \xrightarrow◆LB◆7◆RB◆ C$
-- $B \xrightarrow◆LB◆5◆RB◆ C$, $B \xrightarrow◆LB◆-4◆RB◆ D$, $B \xrightarrow◆LB◆8◆RB◆ E$
-- $C \xrightarrow◆LB◆-3◆RB◆ D$, $C \xrightarrow◆LB◆9◆RB◆ E$
-- $D \xrightarrow◆LB◆2◆RB◆ E$, $D \xrightarrow◆LB◆7◆RB◆ F$
+- $A \xrightarrow◆LB◆6◆RB◆ B$$A \xrightarrow◆LB◆7◆RB◆ C$
+- $B \xrightarrow◆LB◆5◆RB◆ C$$B \xrightarrow◆LB◆-4◆RB◆ D$$B \xrightarrow◆LB◆8◆RB◆ E$
+- $C \xrightarrow◆LB◆-3◆RB◆ D$$C \xrightarrow◆LB◆9◆RB◆ E$
+- $D \xrightarrow◆LB◆2◆RB◆ E$$D \xrightarrow◆LB◆7◆RB◆ F$
 - $E \xrightarrow◆LB◆-5◆RB◆ F$
 
 Initial: $d = [\infty, \infty, \infty, \infty, \infty, \infty]$ for $[A, B, C, D, E, F]$.
@@ -1351,22 +1351,22 @@ Result: $d = [0, 6, 7, 2, 4, -1]$. Shortest path to $F$: $A \to B \to D \to E \t
 <details>
 <summary>Worked Example: Bellman-Ford Negative Cycle Detection</summary>
 
-Graph: $A \xrightarrow◆LB◆1◆RB◆ B$, $B \xrightarrow◆LB◆-3◆RB◆ C$, $C \xrightarrow◆LB◆2◆RB◆ A$. This has a cycle
+Graph: $A \xrightarrow◆LB◆1◆RB◆ B$$B \xrightarrow◆LB◆-3◆RB◆ C$$C \xrightarrow◆LB◆2◆RB◆ A$. This has a cycle
 $A \to B \to C \to A$ of weight $1 + (-3) + 2 = 0$. Not negative.
 
 Now add $C \xrightarrow◆LB◆-1◆RB◆ A$. Cycle weight: $1 + (-3) + (-1) = -3$. Negative cycle.
 
 Initial: $d[A] = 0$Rest $\infty$.
 
-**Iteration 1:** $d[B] = 1$, $d[C] = -2$, $d[A] = \min(0, -2 + (-1)) = -3$.
+**Iteration 1:** $d[B] = 1$$d[C] = -2$$d[A] = \min(0, -2 + (-1)) = -3$.
 
-**Iteration 2:** $d[B] = -2$, $d[C] = -5$, $d[A] = -6$.
+**Iteration 2:** $d[B] = -2$$d[C] = -5$$d[A] = -6$.
 
-**Iteration 3:** $d[B] = -5$, $d[C] = -8$, $d[A] = -9$.
+**Iteration 3:** $d[B] = -5$$d[C] = -8$$d[A] = -9$.
 
-**Iteration 4:** $d[B] = -8$, $d[C] = -11$, $d[A] = -12$.
+**Iteration 4:** $d[B] = -8$$d[C] = -11$$d[A] = -12$.
 
-**Iteration 5:** $d[B] = -11$, $d[C] = -14$, $d[A] = -15$.
+**Iteration 5:** $d[B] = -11$$d[C] = -14$$d[A] = -15$.
 
 **Check (iteration 6):** $(A,B)$: $-15 + 1 = -14 \lt -11$Can still relax. **Negative cycle
 detected!**
@@ -1392,7 +1392,7 @@ intermediate vertices from $\\{1, 2, \ldots, k\\}$. Then:
 
 **Theorem 4.10.** Floyd-Warshall runs in $O(V^3)$ time and $O(V^2)$ space.
 
-_Proof._ The triple nested loop ($k$, $i$, $j$) executes $V^3$ iterations, each doing $O(1)$ work. The
+_Proof._ The triple nested loop ($k$$i$$j$) executes $V^3$ iterations, each doing $O(1)$ work. The
 distance matrix requires $V^2$ space. Note that $d_◆LB◆ij◆RB◆^◆LB◆(k)◆RB◆$ can overwrite $d_◆LB◆ij◆RB◆^◆LB◆(k-1)◆RB◆$ in
 place because $d_◆LB◆ik◆RB◆^◆LB◆(k)◆RB◆ = d_◆LB◆ik◆RB◆^◆LB◆(k-1)◆RB◆$ and $d_◆LB◆kj◆RB◆^◆LB◆(k)◆RB◆ = d_◆LB◆kj◆RB◆^◆LB◆(k-1)◆RB◆$ (paths from $i$ to
 $k$ and $k$ to $j$ using vertices up to $k$ cannot be improved by going through $k$ again without a
@@ -1402,8 +1402,8 @@ negative cycle). $\blacksquare$
 <summary>Worked Example: Floyd-Warshall on 4 Vertices</summary>
 
 Find all-pairs shortest paths for the graph with vertices $\\{1, 2, 3, 4\\}$ and edges:
-$w(1,2) = 3$, $w(1,3) = 8$, $w(1,4) = -4$ $w(2,1) = 5$, $w(2,3) = 7$, $w(2,4) = 2$ $w(3,1) = 2$, $w(3,4) = -1$
-$w(4,1) = 6$, $w(4,3) = 9$.
+$w(1,2) = 3$$w(1,3) = 8$$w(1,4) = -4$ $w(2,1) = 5$$w(2,3) = 7$$w(2,4) = 2$ $w(3,1) = 2$$w(3,4) = -1$
+$w(4,1) = 6$$w(4,3) = 9$.
 
 **Initial distance matrix $D^◆LB◆(0)◆RB◆$:**
 $$D^◆LB◆(0)◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 0 & 3 & 8 & -4 \\ 5 & 0 & 7 & 2 \\ 2 & \infty & 0 & -1 \\ 6 & \infty & 9 & 0 \end◆LB◆pmatrix◆RB◆$$
@@ -1450,7 +1450,7 @@ Tree to a non-tree vertex (using a priority queue). $O((V + E)\log V)$.
 Belongs to some MST.
 
 _Proof._ Let $(S, V \setminus S)$ be a cut and $e = (u, v)$ be the minimum-weight crossing edge with
-$u \in S$, $v \notin S$. Let $T$ be an MST. If $e \in T$We are done. Otherwise, adding $e$ to $T$
+$u \in S$$v \notin S$. Let $T$ be an MST. If $e \in T$We are done. Otherwise, adding $e$ to $T$
 creates a cycle. This cycle must cross the cut at least once more (it goes from $u$ to $v$ via some
 other path). Let $e'$ be another crossing edge on this cycle. Since $e$ is the minimum-weight
 crossing edge, $w(e) \leq w(e')$. Replacing $e'$ with $e$ in $T$ gives a spanning tree of weight no
@@ -1483,24 +1483,24 @@ the cut property, the minimum-weight crossing edge belongs to some MST. $\blacks
 <summary>Worked Example: Kruskal's Algorithm</summary>
 
 Find the MST of the graph with edges (sorted by weight):
-$(D, E, 2)$, $(C, E, 3)$, $(A, B, 4)$, $(B, C, 5)$, $(B, E, 6)$, $(A, E, 7)$, $(A, D, 8)$, $(C, D, 9)$.
+$(D, E, 2)$$(C, E, 3)$$(A, B, 4)$$(B, C, 5)$$(B, E, 6)$$(A, E, 7)$$(A, D, 8)$$(C, D, 9)$.
 
 Vertices: $\\{A, B, C, D, E\\}$.
 
-Sorted edges: $(D,E,2)$, $(C,E,3)$, $(A,B,4)$, $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$, $(C,D,9)$.
+Sorted edges: $(D,E,2)$$(C,E,3)$$(A,B,4)$$(B,C,5)$$(B,E,6)$$(A,E,7)$$(A,D,8)$$(C,D,9)$.
 
 Process each edge:
 
 1. $(D, E, 2)$: Add. Forest: $\\{D-E\\}$. Cost: 2.
 2. $(C, E, 3)$: Add. Forest: $\\{C-D-E\\}$. Cost: 5.
-3. $(A, B, 4)$: Add. Forest: $\\{A-B\\}$, $\\{C-D-E\\}$. Cost: 9.
+3. $(A, B, 4)$: Add. Forest: $\\{A-B\\}$$\\{C-D-E\\}$. Cost: 9.
 4. $(B, C, 5)$: Add (connects two components). Forest: $\\{A-B-C-D-E\\}$. Cost: 14.
 5. $(B, E, 6)$: Skip (creates cycle $B-C-D-E-B$).
 6. $(A, E, 7)$: Skip (creates cycle).
 7. $(A, D, 8)$: Skip (creates cycle).
 8. $(C, D, 9)$: Skip (creates cycle).
 
-**MST:** $(D,E,2)$, $(C,E,3)$, $(A,B,4)$, $(B,C,5)$. Total weight: 14.
+**MST:** $(D,E,2)$$(C,E,3)$$(A,B,4)$$(B,C,5)$. Total weight: 14.
 
 </details>
 
@@ -1509,18 +1509,18 @@ Process each edge:
 
 Find the MST of the same graph starting from vertex $A$.
 
-Edges from $A$: $(A,B,4)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(A,B,4)$. Tree: $\\{A, B\\}$. Cost: 4.
+Edges from $A$: $(A,B,4)$$(A,E,7)$$(A,D,8)$. Minimum: $(A,B,4)$. Tree: $\\{A, B\\}$. Cost: 4.
 
-Edges crossing cut: $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(B,C,5)$. Tree: $\\{A, B, C\\}$.
+Edges crossing cut: $(B,C,5)$$(B,E,6)$$(A,E,7)$$(A,D,8)$. Minimum: $(B,C,5)$. Tree: $\\{A, B, C\\}$.
 Cost: 9.
 
-Edges crossing cut: $(C,E,3)$, $(C,D,9)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(C,E,3)$. Tree:
+Edges crossing cut: $(C,E,3)$$(C,D,9)$$(B,E,6)$$(A,E,7)$$(A,D,8)$. Minimum: $(C,E,3)$. Tree:
 $\\{A, B, C, E\\}$. Cost: 12.
 
-Edges crossing cut: $(D,E,2)$, $(C,D,9)$, $(A,D,8)$. Minimum: $(D,E,2)$. Tree: $\\{A, B, C, D, E\\}$.
+Edges crossing cut: $(D,E,2)$$(C,D,9)$$(A,D,8)$. Minimum: $(D,E,2)$. Tree: $\\{A, B, C, D, E\\}$.
 Cost: 14.
 
-**MST:** $(A,B,4)$, $(B,C,5)$, $(C,E,3)$, $(D,E,2)$. Total weight: 14 (same as Kruskal's).
+**MST:** $(A,B,4)$$(B,C,5)$$(C,E,3)$$(D,E,2)$. Total weight: 14 (same as Kruskal's).
 
 </details>
 
@@ -1618,10 +1618,10 @@ i=3:      0  1  1  4  5  6  6  9
 i=4:      0  1  1  4  5  7  8  9
 ```
 
-Maximum value: $dp[4][7] = 9$ (items 2 and 4: $w = 3 + 5 = 7$, $v = 4 + 7 = 11$ — let me recalculate).
+Maximum value: $dp[4][7] = 9$ (items 2 and 4: $w = 3 + 5 = 7$$v = 4 + 7 = 11$ — let me recalculate).
 
-Correct: items 2 and 3 ($w=3+4=7$, $v=4+5=9$), or items 1, 2, 4 ($w=1+3+5=9 > 7$Not valid). Items 1, 3
-($w=1+4=5$, $v=1+5=6$), items 2, 4 ($w=3+5=8 > 7$). Optimal: items 2 and 3 ($w=3+4=7$, $v=4+5=9$).
+Correct: items 2 and 3 ($w=3+4=7$$v=4+5=9$), or items 1, 2, 4 ($w=1+3+5=9 > 7$Not valid). Items 1, 3
+($w=1+4=5$$v=1+5=6$), items 2, 4 ($w=3+5=8 > 7$). Optimal: items 2 and 3 ($w=3+4=7$$v=4+5=9$).
 
 </details>
 
@@ -1873,7 +1873,7 @@ of clause $j$.
 number of variables and $m$ is the number of clauses.
 
 ($\Rightarrow$) If $\phi$ is satisfiable, include in the cover: for each variable, the literal
-vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm◆LB◆true$, $\bar◆LB◆x◆RB◆_1$ if
+vertex matching the truth assignment (e.g., $x_1$ if $x_1 = \mathrm◆LB◆true$$\bar◆LB◆x◆RB◆_1$ if
 $x_1 = \mathrm◆LB◆false$). This covers all literal edges ($k$ vertices). For each clause triangle, at
 least one literal in the clause is true, so the corresponding literal vertex covers one of the three
 edges from the triangle. Include the other two vertices of the triangle ($2m$ vertices total).
@@ -1940,7 +1940,7 @@ $\blacksquare$
 <summary>Worked Example: Greedy Set Cover</summary>
 
 Universe $U = \\{1, 2, 3, 4, 5, 6\\}$. Sets:
-$S_1 = \\{1, 2, 3\\}$, $S_2 = \\{2, 4\\}$, $S_3 = \\{3, 5, 6\\}$, $S_4 = \\{4, 5\\}$, $S_5 = \\{1, 4, 6\\}$.
+$S_1 = \\{1, 2, 3\\}$$S_2 = \\{2, 4\\}$$S_3 = \\{3, 5, 6\\}$$S_4 = \\{4, 5\\}$$S_5 = \\{1, 4, 6\\}$.
 All sets have equal cost 1.
 
 **Greedy:**
@@ -2018,13 +2018,13 @@ The 3rd smallest element is 3.
 
 Test whether $n = 561$ is prime (it is not; $561 = 3 \times 11 \times 17$A Carmichael number).
 
-Write $n - 1 = 560 = 2^4 \times 35$So $s = 4$, $d = 35$.
+Write $n - 1 = 560 = 2^4 \times 35$So $s = 4$$d = 35$.
 
 Choose random base $a = 2$.
 
 Compute $a^d \bmod n = 2^◆LB◆35◆RB◆ \bmod 561$.
 
-$2^5 = 32$, $2^◆LB◆10◆RB◆ = 1024 \bmod 561 = 463$, $2^◆LB◆20◆RB◆ = 463^2 \bmod 561 = 67$, $2^◆LB◆35◆RB◆ = 2^◆LB◆20◆RB◆ \cdot 2^◆LB◆10◆RB◆ \cdot 2^5 \bmod 561 = 67 \cdot 463 \cdot 32 \bmod 561$.
+$2^5 = 32$$2^◆LB◆10◆RB◆ = 1024 \bmod 561 = 463$$2^◆LB◆20◆RB◆ = 463^2 \bmod 561 = 67$$2^◆LB◆35◆RB◆ = 2^◆LB◆20◆RB◆ \cdot 2^◆LB◆10◆RB◆ \cdot 2^5 \bmod 561 = 67 \cdot 463 \cdot 32 \bmod 561$.
 
 $67 \times 463 = 31021 \bmod 561 = 31021 - 55 \times 561 = 31021 - 30855 = 166$.
 $166 \times 32 = 5312 \bmod 561 = 5312 - 9 \times 561 = 5312 - 5049 = 263$.
@@ -2049,7 +2049,7 @@ $\leq 4^◆LB◆-k◆RB◆$.
 #### 6.3.3 Hashing with Universal Hash Functions
 
 **Definition.** A family $\mathcal◆LB◆H◆RB◆$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$ is
-**universal** if for any distinct $x, y \in U$, $\Pr_◆LB◆h \in \mathcal◆LB◆H◆RB◆◆RB◆[h(x) = h(y)] \leq 1/m$.
+**universal** if for any distinct $x, y \in U$$\Pr_◆LB◆h \in \mathcal◆LB◆H◆RB◆◆RB◆[h(x) = h(y)] \leq 1/m$.
 
 **Theorem 6.8.** With a universal hash family and chaining, the expected number of collisions for
 any element is at most $n/m$.
@@ -2186,7 +2186,7 @@ $\Omega(n \log n)$ (not just the worst case).
 
 **Problem 12.** Run Dijkstra's algorithm on the following graph from source $A$. Show the state of
 the priority queue after each extraction. Edge weights:
-$A \xrightarrow◆LB◆10◆RB◆ B$, $A \xrightarrow◆LB◆3◆RB◆ C$, $C \xrightarrow◆LB◆4◆RB◆ B$, $C \xrightarrow◆LB◆8◆RB◆ D$, $C \xrightarrow◆LB◆2◆RB◆ E$, $B \xrightarrow◆LB◆7◆RB◆ D$, $E \xrightarrow◆LB◆5◆RB◆ D$, $D \xrightarrow◆LB◆6◆RB◆ B$.
+$A \xrightarrow◆LB◆10◆RB◆ B$$A \xrightarrow◆LB◆3◆RB◆ C$$C \xrightarrow◆LB◆4◆RB◆ B$$C \xrightarrow◆LB◆8◆RB◆ D$$C \xrightarrow◆LB◆2◆RB◆ E$$B \xrightarrow◆LB◆7◆RB◆ D$$E \xrightarrow◆LB◆5◆RB◆ D$$D \xrightarrow◆LB◆6◆RB◆ B$.
 
 **Problem 13.** Prove that if a graph has a negative-weight cycle reachable from the source, then
 Bellman-Ford will detect it.
@@ -2205,7 +2205,7 @@ amount $M$. Find the minimum number of coins needed to make exact change for $M$
 is impossible). Give a recurrence, prove correctness, and state the time and space complexity.
 
 **Problem 17.** Given a sequence of matrices
-$A_1 (2 \times 10)$, $A_2 (10 \times 50)$, $A_3 (50 \times 20)$, $A_4 (20 \times 5)$, $A_5 (5 \times 80)$Find
+$A_1 (2 \times 10)$$A_2 (10 \times 50)$$A_3 (50 \times 20)$$A_4 (20 \times 5)$$A_5 (5 \times 80)$Find
 the optimal parenthesisation using the matrix chain multiplication DP. Show the full DP table.
 
 ### 7.6 Advanced Topics (Problems 18--20)

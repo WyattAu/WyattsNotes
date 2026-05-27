@@ -479,7 +479,7 @@ $v_p < \langle v \rangle < v_{\mathrm{rms}}$.
 
 **Answer.** All three speeds are of the form $c\sqrt{k_BT/m}$ with different constants:
 
-$v_p = \sqrt{2} \approx 1.414$, $\langle v \rangle = \sqrt◆LB◆8/\pi◆RB◆ \approx 1.596$
+$v_p = \sqrt{2} \approx 1.414$$\langle v \rangle = \sqrt◆LB◆8/\pi◆RB◆ \approx 1.596$
 $v_{\mathrm{rms}} = \sqrt{3} \approx 1.732$.
 
 The ratios are $v_p : \langle v \rangle : v_{\mathrm{rms}} = 1 : 1.128 : 1.225$. The ordering holds
@@ -495,7 +495,7 @@ Peak, but the asymmetric tail pulls the mean and rms progressively higher.
 <summary>Problem 12</summary>
 
 A container holds helium at 400 K and nitrogen at 400 K. Calculate the ratio of their rms speeds.
-($M_r(\mathrm{He}) = 4$, $M_r(\mathrm{N}_2) = 28$.)
+($M_r(\mathrm{He}) = 4$$M_r(\mathrm{N}_2) = 28$.)
 
 **Answer.**
 $\frac◆LB◆v_{\mathrm{rms}}(\mathrm{He})◆RB◆◆LB◆v_{\mathrm{rms}}(\mathrm{N}_2)◆RB◆ = \sqrt◆LB◆\frac{M_r(\mathrm{N}_2)}{M_r(\mathrm{He})}◆RB◆ = \sqrt◆LB◆\frac{28}{4}◆RB◆ = \sqrt{7} \approx 2.65$.
@@ -517,7 +517,7 @@ Temperature increases, the average kinetic energy $\frac{3}{2}k_BT$ increases, s
 Faster (on average). Faster molecules collide with the walls more frequently and with greater
 Momentum change per collision ($\Delta p = 2mv_x$ increases). Since pressure $p = F/A$ and force is
 The rate of momentum transfer, both the collision rate and the impulse per collision increase, so
-Pressure increases. From the ideal gas law: at constant $V$, $p \propto T$.
+Pressure increases. From the ideal gas law: at constant $V$$p \propto T$.
 
 <b>If you get this wrong, revise:</b>
 [Derivation of $pV = Nk_BT$ from Kinetic Theory](#4-derivation-of-pv--nk_bt-from-kinetic-theory)
@@ -588,8 +588,8 @@ Escape in an adiabatic process).
 
 10 g of ice at $-10$°C is heated until it becomes steam at 110°C at 1 atm pressure. Calculate the
 Total energy required. Data: $c_{\mathrm{ice}} = 2100$ J kg$^{-1}$ K$^{-1}$
-$c_{\mathrm{water}} = 4200$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{steam}} = 2010$ J kg$^{-1}$ K$^{-1}$
-$L_f = 3.34 \times 10^5$ J kg$^{-1}$, $L_v = 2.26 \times 10^6$ J kg$^{-1}$.
+$c_{\mathrm{water}} = 4200$ J kg$^{-1}$ K$^{-1}$$c_{\mathrm{steam}} = 2010$ J kg$^{-1}$ K$^{-1}$
+$L_f = 3.34 \times 10^5$ J kg$^{-1}$$L_v = 2.26 \times 10^6$ J kg$^{-1}$.
 
 **Answer.** Break into 5 stages:
 

@@ -69,7 +69,7 @@ mathematical Statement or computation with five options (A--E).
 Options can be eliminated immediately by dimensional analysis, symmetry considerations, or testing
 Special cases.
 
-**Test specific values.** If a statement claims a property holds for all $x$Test $x = 0$, $x = 1$ And
+**Test specific values.** If a statement claims a property holds for all $x$Test $x = 0$$x = 1$ And
 $x = -1$. If it fails for any of these, the statement is false.
 
 **Check edge cases.** For statements about functions, consider what happens at the boundaries of the
@@ -413,7 +413,7 @@ a Local minimum.
 
 $$\frac{x^2}{x - 1} = x + 1 + \frac{1}{x - 1}$$
 
-As $x \to \pm\infty$, $\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asymptote is $y = x + 1$.
+As $x \to \pm\infty$$\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asymptote is $y = x + 1$.
 
 **(iii)** Key features for the sketch:
 
@@ -422,7 +422,7 @@ As $x \to \pm\infty$, $\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asy
 - Stationary points: local maximum at $(0, 0)$Local minimum at $(2, 4)$
 - Vertical asymptote: $x = 1$
 - Oblique asymptote: $y = x + 1$
-- As $x \to 1^+$, $y \to +\infty$; as $x \to 1^-$, $y \to -\infty$
+- As $x \to 1^+$$y \to +\infty$; as $x \to 1^-$$y \to -\infty$
 
 ---
 
@@ -436,7 +436,7 @@ As $x \to \pm\infty$, $\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asy
 **Solution.**
 
 **(i)**
-$S_1 = \frac{1}{2}$, $S_2 = \frac{1}{2} + \frac{2}{4} = 1$, $S_3 = 1 + \frac{3}{8} = \frac{11}{8}$.
+$S_1 = \frac{1}{2}$$S_2 = \frac{1}{2} + \frac{2}{4} = 1$$S_3 = 1 + \frac{3}{8} = \frac{11}{8}$.
 
 **(ii)** Write:
 

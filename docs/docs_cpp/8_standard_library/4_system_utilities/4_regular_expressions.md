@@ -529,9 +529,9 @@ int main() {
         text, std::regex(R"(\d+)"), "[$&]");
     std::cout << result << "\n";  // price: [100] USD
 
-    // $, $ for literal dollar sign
+    // $$ for literal dollar sign
     std::string result2 = std::regex_replace(
-        text, std::regex(R"(\d+)"), "$, $0");
+        text, std::regex(R"(\d+)"), "$$0");
     std::cout << result2 << "\n";  // price: $0 USD
 }
 ```

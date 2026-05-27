@@ -211,10 +211,10 @@ For brown fur and short hair, the genotype must be $bbS\_$.
 
 Using the forked line method (or Punnett square):
 
-For fur colour ($Bb \times Bb$): $\frac{1}{4} BB$, $\frac{1}{2} Bb$, $\frac{1}{4} bb$ -- probability of
+For fur colour ($Bb \times Bb$): $\frac{1}{4} BB$$\frac{1}{2} Bb$$\frac{1}{4} bb$ -- probability of
 $bb$ = $\frac{1}{4}$.
 
-For hair length ($Ss \times Ss$): $\frac{1}{4} SS$, $\frac{1}{2} Ss$, $\frac{1}{4} ss$ -- probability of
+For hair length ($Ss \times Ss$): $\frac{1}{4} SS$$\frac{1}{2} Ss$$\frac{1}{4} ss$ -- probability of
 $S\_$ ($SS$ or $Ss$) = $\frac{3}{4}$.
 
 Since the genes are on different chromosomes (assumed independent assortment):

@@ -404,7 +404,7 @@ $$
 
 Given $X \sim N(50, 16)$Find $P(45 \lt X \lt 55)$.
 
-$\mu = 50$, $\sigma = 4$.
+$\mu = 50$$\sigma = 4$.
 
 $$
 P(45 \lt X \lt 55) = P\!\left(\frac{45-50}{4} \lt Z \lt \frac{55-50}{4}\right) = P(-1.25 \lt Z \lt 1.25)
@@ -430,7 +430,7 @@ Where $z_p$ is the $p$-th percentile of the standard normal.
 
 Heights of a population follow $N(170, 64)$ (in cm). Find the height that is at the 90th percentile.
 
-$\mu = 170$, $\sigma = 8$.
+$\mu = 170$$\sigma = 8$.
 
 $$
 P(X \lt x) = 0.90 \implies \frac{x - 170}{8} = z_{0.90} = 1.282
@@ -549,7 +549,7 @@ $$
 
 ### Question 1 (Paper 1 style)
 
-Events `A` and `B` are such that $P(A) = 0.6$, $P(B) = 0.4$And $P(A|B) = 0.3$.
+Events `A` and `B` are such that $P(A) = 0.6$$P(B) = 0.4$And $P(A|B) = 0.3$.
 
 **(a)** Find $P(A \cap B)$.
 

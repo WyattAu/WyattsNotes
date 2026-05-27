@@ -243,7 +243,7 @@ Groups:
 
 - Cells (0,1,5,4? no, 4 is 0): Cells (0,1): $A=0, B=0, C$ varies → $\bar{A}\bar{B}$ Actually, let me
   re-map: minterm $m_i$ corresponds to binary $i$ in order $ABC$.
-- $m_0 = 000$, $m_1 = 001$, $m_2 = 010$, $m_3 = 011$, $m_4 = 100$, $m_5 = 101$, $m_6 = 110$ $m_7 = 111$
+- $m_0 = 000$$m_1 = 001$$m_2 = 010$$m_3 = 011$$m_4 = 100$$m_5 = 101$$m_6 = 110$ $m_7 = 111$
 
 K-map:
 
@@ -459,7 +459,7 @@ $\overline{A \cdot B} = \bar{A} + \bar{B}$.
 <details>
 <summary>Hint</summary>
 
-Construct a truth table with columns for $A$, $B$, $A \cdot B$, $\overline{A \cdot B}$, $\bar{A}$
+Construct a truth table with columns for $A$$B$$A \cdot B$$\overline{A \cdot B}$$\bar{A}$
 $\bar{B}$And $\bar{A} + \bar{B}$.
 
 </details>

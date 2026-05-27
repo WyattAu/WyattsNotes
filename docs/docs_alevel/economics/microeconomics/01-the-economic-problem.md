@@ -679,7 +679,7 @@ given by:
 
 $$C = 100 - 0.01K^2$$
 
-**Current production:** $K = 40$, $C = 100 - 0.01(1600) = 84$.
+**Current production:** $K = 40$$C = 100 - 0.01(1600) = 84$.
 
 **Opportunity cost of increasing $K$ from 40 to 50:**
 $$\Delta C = C(50) - C(40) = (100 - 0.01(2500)) - (100 - 0.01(1600)) = 75 - 84 = -9$$
@@ -710,7 +710,7 @@ used, requiring larger sacrifices of consumer goods.
 
 **Example.** The PPF shifts outward due to economic growth.
 
-**Capital accumulation.** If the economy produces at $K = 60$, $C = 64$And the capital stock grows at
+**Capital accumulation.** If the economy produces at $K = 60$$C = 64$And the capital stock grows at
 5% per year:
 
 $$K_{t+1} = K_t + 0.05K_t = 1.05K_t$$
@@ -885,7 +885,7 @@ $F = 500 - 0.005(10000) = 450$.
 **Consumption with trade:** The economy can trade at the world price. If it exports 150 units of
 food at price ratio 1, it imports 150 units of clothing.
 
-Consumption: $F = 450 - 150 = 300$, $C = 100 + 150 = 250$.
+Consumption: $F = 450 - 150 = 300$$C = 100 + 150 = 250$.
 
 **Comparison:**
 

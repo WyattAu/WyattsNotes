@@ -274,7 +274,7 @@ at least $t - 1$ keys, so $n \geq 2t^◆LB◆h-1◆RB◆(t-1) \geq 2t^◆LB◆h-
 **Corollary.** The height of a B-tree storing $n$ keys is
 $h \leq \log_t \frac◆LB◆n+1◆RB◆◆LB◆2◆RB◆ = O(\log_t n)$.
 
-For example, with $t = 1001$ and $n = 10^9$, $h \leq \log_◆LB◆1001◆RB◆(5 \times 10^8) \approx 2.8$So at most
+For example, with $t = 1001$ and $n = 10^9$$h \leq \log_◆LB◆1001◆RB◆(5 \times 10^8) \approx 2.8$So at most
 3 disk accesses.
 
 #### 1.2.2 B-Tree Operations
@@ -953,7 +953,7 @@ an $n \times m$ matrix where:
 
 $$M_◆LB◆v,e◆RB◆ = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if vertex  v \text◆LB◆ is incident to edge  e \\ 0 & \text◆LB◆otherwise \end◆LB◆cases◆RB◆$$
 
-For directed graphs, $M_◆LB◆v,e◆RB◆ = 1$ if $v$ is the tail of $e$, $M_◆LB◆v,e◆RB◆ = -1$ if $v$ is the head of
+For directed graphs, $M_◆LB◆v,e◆RB◆ = 1$ if $v$ is the tail of $e$$M_◆LB◆v,e◆RB◆ = -1$ if $v$ is the head of
 $e$And $0$ otherwise.
 
 **Properties:**
@@ -1018,7 +1018,7 @@ $$A_k(j) = \begin◆LB◆cases◆RB◆ 2j & \text◆LB◆if  k = 0 \\ 0 & \text�
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
 **Key values:**
-$\alpha(1) = 0$, $\alpha(2) = 1$, $\alpha(4) = 2$, $\alpha(16) = 3$, $\alpha(2^◆LB◆65536◆RB◆) = 4$.
+$\alpha(1) = 0$$\alpha(2) = 1$$\alpha(4) = 2$$\alpha(16) = 3$$\alpha(2^◆LB◆65536◆RB◆) = 4$.
 
 For all practical purposes, $\alpha(n) \leq 4$.
 
@@ -1105,7 +1105,7 @@ most $2 \log_2 n$ nodes (one per level, on each side). $\blacksquare$
 <details>
 <summary>Worked Example: Segment Tree Range Sum</summary>
 
-Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
+Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
 
 Build the segment tree for range sum queries:
 
@@ -1169,7 +1169,7 @@ $O(\log n)$ time and uses $O(n)$ space.
 <details>
 <summary>Worked Example: Fenwick Tree Construction</summary>
 
-Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
+Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
 
 Binary representations: 1=001, 2=010, 3=011, 4=100, 5=101, 6=110, 7=111, 8=1000.
 
@@ -1214,7 +1214,7 @@ algorithm) or $O(n \log n)$ time (using the doubling algorithm with radix sort).
 ### 6.2 Suffix Trees
 
 A **suffix tree** for a string $S$ of length $n$ is a compressed trie of all $n$ suffixes of $S$
-(plus a unique terminator $\$, $).
+(plus a unique terminator $\$$).
 
 **Theorem 6.2 (Ukkonen).** A suffix tree can be constructed in $O(n)$ time online.
 

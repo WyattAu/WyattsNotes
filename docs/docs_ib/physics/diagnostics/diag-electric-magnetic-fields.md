@@ -16,7 +16,7 @@ hide_table_of_contents: true
 **Question:**
 
 Three point charges are placed on the $x$-axis: $q_1 = +4.0\,\mu\text{C}$ at
-$x = 0$, $q_2 = -3.0\,\mu\text{C}$ at $x = 0.10\,\text{m}$And $q_3 = +2.0\,\mu\text{C}$ at
+$x = 0$$q_2 = -3.0\,\mu\text{C}$ at $x = 0.10\,\text{m}$And $q_3 = +2.0\,\mu\text{C}$ at
 $x = 0.20\,\text{m}$. Take $k = 8.99 \times 10^9\,\text{N}\,\text{m}^2\,\text{C}^{-2}$.
 
 (a) Calculate the net electric field at $x = 0.15\,\text{m}$.
@@ -60,7 +60,7 @@ negative field contribution).
 (c) For $x \gt 0.20\,\text{m}$All positive charges push in the $+x$ direction and the negative
 charge pulls in the $+x$ direction. The net field cannot be zero.
 
-For $x \lt 0$, $q_1$ pushes in the $-x$ direction, $q_2$ attracts in the $+x$ direction, $q_3$
+For $x \lt 0$$q_1$ pushes in the $-x$ direction, $q_2$ attracts in the $+x$ direction, $q_3$
 attracts in the $+x$ direction. We need:
 
 $$\frac{k \times 4.0 \times 10^{-6}}{x^2} = \frac{k \times 3.0 \times 10^{-6}}{(x - 0.10)^2} + \frac{k \times 2.0 \times 10^{-6}}{(x - 0.20)^2}$$
@@ -226,7 +226,7 @@ since $E$ is in $-y$ and $q$ is positive)
 Magnetic force:
 $F_B = qvB = 1.6 \times 10^{-19} \times 1.0 \times 10^5 \times 0.10 = 1.6 \times 10^{-15}\,\text{N}$
 
-Using the right-hand rule for positive charge: $\vec{v} = v\hat{i}$, $\vec{B} = -B\hat{k}$So
+Using the right-hand rule for positive charge: $\vec{v} = v\hat{i}$$\vec{B} = -B\hat{k}$So
 $\vec{v} \times \vec{B} = vB(\hat{i} \times (-\hat{k})) = vB\hat{j}$. Force $= qvB\hat{j}$I.e. In
 the $+y$ direction.
 

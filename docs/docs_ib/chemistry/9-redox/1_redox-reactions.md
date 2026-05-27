@@ -356,9 +356,9 @@ $$
 Calculate $E^\circ_{\mathrm{cell}}$ for:
 $\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)$
 
-**Cathode (reduction):** $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$, $E^\circ = +0.34\mathrm{ V}$
+**Cathode (reduction):** $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$E^\circ = +0.34\mathrm{ V}$
 
-**Anode (oxidation):** $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-$, $E^\circ = -0.76\mathrm{ V}$
+**Anode (oxidation):** $\mathrm{Zn} \to \mathrm{Zn}^{2+} + 2e^-$$E^\circ = -0.76\mathrm{ V}$
 
 $$
 E^\circ_{\mathrm{cell}} = E^\circ_{\mathrm{cathode}} - E^\circ_{\mathrm{anode}} = 0.34 - (-0.76) = +1.10\mathrm{ V}
@@ -521,7 +521,7 @@ $$
 Q = 0.500 \times 2.00 \times 3600 = 3600\mathrm{ C}
 $$
 
-For Cu: $n = 2$, $M = 63.5\mathrm{ g/mol}$.
+For Cu: $n = 2$$M = 63.5\mathrm{ g/mol}$.
 
 $$
 M = \frac{3600 \times 63.5}{2 \times 96500} = \frac{228600}{193000} = 1.18\mathrm{ g}
@@ -550,10 +550,10 @@ What mass of Al is produced in the second?
 
 Answer:
 
-For Na: $\mathrm{Na}^+ + e^- \to \mathrm{Na}$, $n_1 = 1$, $M_1 = 23.0\mathrm{ g/mol}$. Equivalent Mass
+For Na: $\mathrm{Na}^+ + e^- \to \mathrm{Na}$$n_1 = 1$$M_1 = 23.0\mathrm{ g/mol}$. Equivalent Mass
 of Na = $23.0/1 = 23.0\mathrm{ g/equiv}$.
 
-For Al: $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$, $n_2 = 3$, $M_2 = 27.0\mathrm{ g/mol}$. Equivalent
+For Al: $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$$n_2 = 3$$M_2 = 27.0\mathrm{ g/mol}$. Equivalent
 mass of Al = $27.0/3 = 9.0\mathrm{ g/equiv}$.
 
 By Faraday's Second Law:
@@ -688,16 +688,16 @@ $\mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^- \to 4\mathrm{OH}^-(aq)$
 
 Determine the oxidation state of the underlined element in each compound:
 
-(a) K$\underline{\mathrm{2}}$, $\mathrm{Cr}_2$, $\underline{\mathrm{O}}_7$ (b)
-$\underline{\mathrm{H}}_2$, $\underline{\mathrm{O}}_2$ (c) $\underline{\mathrm{N}}$, $\mathrm{H}_4^+$
-(d) $\underline{\mathrm{Mn}}$, $\mathrm{O}_4^{2-}$ (e) $\underline{\mathrm{S}}$, $\mathrm{O}_3^{2-}$
+(a) K$\underline{\mathrm{2}}$$\mathrm{Cr}_2$$\underline{\mathrm{O}}_7$ (b)
+$\underline{\mathrm{H}}_2$$\underline{\mathrm{O}}_2$ (c) $\underline{\mathrm{N}}$$\mathrm{H}_4^+$
+(d) $\underline{\mathrm{Mn}}$$\mathrm{O}_4^{2-}$ (e) $\underline{\mathrm{S}}$$\mathrm{O}_3^{2-}$
 
 Answer:
 
-(a) K = +1 (two K = +2). O = -2 (seven O = -14). $+2 + 2\mathrm{Cr} - 14 = 0$, $2\mathrm{Cr} = +12$ Cr
+(a) K = +1 (two K = +2). O = -2 (seven O = -14). $+2 + 2\mathrm{Cr} - 14 = 0$$2\mathrm{Cr} = +12$ Cr
 = +6.
 
-(b) H = +1 (two H = +2). $+2 + 2\mathrm{O} = 0$, $2\mathrm{O} = -2$O = -1. (Hydrogen peroxide.)
+(b) H = +1 (two H = +2). $+2 + 2\mathrm{O} = 0$$2\mathrm{O} = -2$O = -1. (Hydrogen peroxide.)
 
 (c) H = +1 (four H = +4). $+4 + \mathrm{N} = +1$ (charge of ion), N = -3.
 
@@ -781,7 +781,7 @@ $$
 
 (c) $\mathrm{Ni}(s) + 2\mathrm{Fe}^{3+}(aq) \to \mathrm{Ni}^{2+}(aq) + 2\mathrm{Fe}^{2+}(aq)$
 
-Cathode: Fe$^{3+}$/Fe$^{2+}$, $E^\circ = +0.77\mathrm{ V}$. Anode: Ni$^{2+}$/Ni,
+Cathode: Fe$^{3+}$/Fe$^{2+}$$E^\circ = +0.77\mathrm{ V}$. Anode: Ni$^{2+}$/Ni,
 $E^\circ = -0.25\mathrm{ V}$.
 
 $$

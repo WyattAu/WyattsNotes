@@ -51,7 +51,7 @@ $$\bullet\text{CH}_2\text{Cl} + \text{Cl}_2 \to \text{CH}_2\text{Cl}_2 + \text{C
 This process continues, with each chlorinated product being susceptible to further substitution. The
 C--H bonds in chloromethane are slightly weaker than in methane (due to the electron-withdrawing
 effect of Cl, which weakens the remaining C--H bonds), making further substitution competitive. A
-mixture of $\text{CH}_3\text{Cl}$, $\text{CH}_2\text{Cl}_2$, $\text{CHCl}_3$And $\text{CCl}_4$ is always
+mixture of $\text{CH}_3\text{Cl}$$\text{CH}_2\text{Cl}_2$$\text{CHCl}_3$And $\text{CCl}_4$ is always
 obtained.
 
 (c) The Cl--Cl bond has a bond enthalpy of $+242\,\text{kJ mol}^{-1}$Which requires significant

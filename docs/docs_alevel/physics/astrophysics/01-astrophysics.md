@@ -66,7 +66,7 @@ Therefore:
 
 $$d = \frac◆LB◆1\;\mathrm{AU}◆RB◆◆LB◆p\;(\mathrm{rad})◆RB◆ = \frac◆LB◆206,265\;\mathrm{AU}◆RB◆◆LB◆p\;('')◆RB◆$$
 
-By definition, when $p = 1''$, $d = 1$ pc $= 206,265$ AU. Hence:
+By definition, when $p = 1''$$d = 1$ pc $= 206,265$ AU. Hence:
 
 $$\boxed{d\;(\mathrm{pc}) = \frac{1}{p\;('')}}$$
 

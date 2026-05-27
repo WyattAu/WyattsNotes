@@ -43,13 +43,13 @@ Monopoly.
 
 **Solution:**
 
-(a) $MR = 100 - 4Q$. $MC = 10 + 2Q$. Set $MR = MC$: $100 - 4Q = 10 + 2Q$, $90 = 6Q$, $Q_m = 15$.
+(a) $MR = 100 - 4Q$. $MC = 10 + 2Q$. Set $MR = MC$: $100 - 4Q = 10 + 2Q$$90 = 6Q$$Q_m = 15$.
 $P_m = 100 - 2(15) = \$70$.
 
 (b) Profit
 $= TR - TC = 70(15) - [50 + 10(15) + 15^2] = 1050 - [50 + 150 + 225] = 1050 - 425 = \$625$.
 
-(c) Under perfect competition, $P = MC$: $100 - 2Q = 10 + 2Q$, $90 = 4Q$, $Q_c = 22.5$.
+(c) Under perfect competition, $P = MC$: $100 - 2Q = 10 + 2Q$$90 = 4Q$$Q_c = 22.5$.
 $P_c = 100 - 2(22.5) = \$55$.
 
 (d)
@@ -68,7 +68,7 @@ Of $a$ where economic profit is zero.
 
 **Solution:**
 
-(a) $MR = 80 - 2Q$. $MC = 20 + Q$. Set $MR = MC$: $80 - 2Q = 20 + Q$, $60 = 3Q$, $Q = 20$.
+(a) $MR = 80 - 2Q$. $MC = 20 + Q$. Set $MR = MC$: $80 - 2Q = 20 + Q$$60 = 3Q$$Q = 20$.
 $P = 80 - 20 = \$60$.
 
 Profit $= 60(20) - [100 + 20(20) + 0.5(20)^2] = 1200 - [100 + 400 + 200] = 1200 - 700 = \$500$.
@@ -77,8 +77,8 @@ Profit $= 60(20) - [100 + 20(20) + 0.5(20)^2] = 1200 - [100 + 400 + 200] = 1200 
 $P = ATC$ (zero economic profit due to free entry and exit). The demand curve is tangent to the ATC
 Curve at the profit-maximising quantity.
 
-(c) Set $P = ATC$ at the profit-maximising quantity. $MR = a - 2Q$, $MC = 20 + Q$. Set $MR = MC$:
-$a - 2Q = 20 + Q$, $a - 20 = 3Q$, $Q = (a - 20)/3$.
+(c) Set $P = ATC$ at the profit-maximising quantity. $MR = a - 2Q$$MC = 20 + Q$. Set $MR = MC$:
+$a - 2Q = 20 + Q$$a - 20 = 3Q$$Q = (a - 20)/3$.
 
 $ATC = \frac{100 + 20Q + 0.5Q^2}{Q} = \frac{100}{Q} + 20 + 0.5Q$.
 
@@ -135,10 +135,10 @@ Since $P = 17 \le 20$Both groups are served. Profit $= 17(52) - 4(52) = 13(52) =
 (b) Third-degree price discrimination:
 
 - Adults: $MR_A = 40 - Q_A = 4$$Q_A = 36$$P_A = 40 - 0.5(36) = \$22$.
-- Students: $MR_S = 20 - Q_S = 4$, $Q_S = 16$, $P_S = 20 - 0.5(16) = \$12$.
+- Students: $MR_S = 20 - Q_S = 4$$Q_S = 16$$P_S = 20 - 0.5(16) = \$12$.
 - Total $Q = 52$Profit $= 22(36) + 12(16) - 4(52) = 792 + 192 - 208 = \$776$.
 
-(c) Under no discrimination ($P = 17$, $Q = 52$): competitive output would be where $P = MC = 4$.
+(c) Under no discrimination ($P = 17$$Q = 52$): competitive output would be where $P = MC = 4$.
 $Q_c = 120 - 4(4) = 104$. $DWL = \frac{1}{2}(17 - 4)(104 - 52) = \frac{1}{2}(13)(52) = \$338$.
 
 Under price discrimination ($Q = 52$ total): total DWL
@@ -146,7 +146,7 @@ $= \frac{1}{2}(22 - 4)(80 - 36) + \frac{1}{2}(12 - 4)(40 - 16) = \frac{1}{2}(18)
 
 **Note:** Price discrimination produces the same total quantity (52) but a different allocation
 across Groups. The DWL calculation requires the competitive benchmark per group. Competitive output
-($P = 4$): $Q_A = 80 - 8 = 72$, $Q_S = 40 - 8 = 32$. Total competitive output $Q_c = 104$.
+($P = 4$): $Q_A = 80 - 8 = 72$$Q_S = 40 - 8 = 32$. Total competitive output $Q_c = 104$.
 
 $DWL_{\text{no disc}} = \frac{1}{2}(17 - 4)(104 - 52) = \$338$.
 $DWL_d = \frac{1}{2}(22 - 4)(72 - 36) + \frac{1}{2}(12 - 4)(32 - 16) = \frac{1}{2}(18)(36) + \frac{1}{2}(8)(16) = 324 + 64 = \$388$.
@@ -218,13 +218,13 @@ Equals marginal cost.
 
 **Solution:**
 
-(a) Competitive: $P = MC = 2 + 0.2Q = 12$So $0.2Q = 10$, $Q_c = 50$.
+(a) Competitive: $P = MC = 2 + 0.2Q = 12$So $0.2Q = 10$$Q_c = 50$.
 
-Monopoly: $MC = 2 + 0.2Q$. Need demand: at $P = 12$, $Q = 50$. Assume linear demand through this Point
-with choke price. $P = a - bQ$. From $MC$ curve: at $Q = 0$, $MC = 2$. Let demand pass through
+Monopoly: $MC = 2 + 0.2Q$. Need demand: at $P = 12$$Q = 50$. Assume linear demand through this Point
+with choke price. $P = a - bQ$. From $MC$ curve: at $Q = 0$$MC = 2$. Let demand pass through
 $(50, 12)$ with intercept at $P = 22$ (so $b = 10/50 = 0.2$). Demand: $P = 22 - 0.2Q$.
 
-$MR = 22 - 0.4Q = MC = 2 + 0.2Q$. $20 = 0.6Q$, $Q_m = 33.33$. $P_m = 22 - 0.2(33.33) = \$15.33$.
+$MR = 22 - 0.4Q = MC = 2 + 0.2Q$. $20 = 0.6Q$$Q_m = 33.33$. $P_m = 22 - 0.2(33.33) = \$15.33$.
 
 (b) **Perfect competition:**
 

@@ -169,9 +169,9 @@ Neglecting friction.
 </details>
 <summary>Solution</summary>
 
-At `A`: $E_k = 0$, $E_p = 600 \times 9.81 \times 25 = 147150 \mathrm{ J}$
+At `A`: $E_k = 0$$E_p = 600 \times 9.81 \times 25 = 147150 \mathrm{ J}$
 
-At `B`: $E_k = \frac{1}{2}(600)v^2$, $E_p = 600 \times 9.81 \times 8 = 47088 \mathrm{ J}$
+At `B`: $E_k = \frac{1}{2}(600)v^2$$E_p = 600 \times 9.81 \times 8 = 47088 \mathrm{ J}$
 
 $$147150 = \frac{1}{2}(600)v^2 + 47088$$
 
@@ -931,11 +931,11 @@ Collision.
 
 (a) By conservation of momentum:
 
-$, $m_A u_A = (m_A + m_B)v$, $
+$$m_A u_A = (m_A + m_B)v$$
 
-$, $2.0 \times 4.0 = (2.0 + 1.0)v$, $
+$$2.0 \times 4.0 = (2.0 + 1.0)v$$
 
-$, $v = \frac{8.0}{3.0} = 2.67 \mathrm{ m/s}$, $
+$$v = \frac{8.0}{3.0} = 2.67 \mathrm{ m/s}$$
 
 (b) Before: $E_{k,i} = \frac{1}{2}(2.0)(4.0)^2 = 16.0 \mathrm{ J}$
 
@@ -959,17 +959,17 @@ $\frac{1}{2}(2.0)(4.0)^2 = \frac{1}{2}(2.0)v_A^2 + \frac{1}{2}(1.0)v_B^2 \implie
 
 From (1): $v_B = 8 - 2v_A$. Substituting into (2):
 
-$, $16 = 2v_A^2 + \frac{1}{2}(8 - 2v_A)^2 = 2v_A^2 + \frac{1}{2}(64 - 32v_A + 4v_A^2) = 2v_A^2 + 32 - 16v_A + 2v_A^2$, $
+$$16 = 2v_A^2 + \frac{1}{2}(8 - 2v_A)^2 = 2v_A^2 + \frac{1}{2}(64 - 32v_A + 4v_A^2) = 2v_A^2 + 32 - 16v_A + 2v_A^2$$
 
-$, $4v_A^2 - 16v_A + 32 = 16$, $
+$$4v_A^2 - 16v_A + 32 = 16$$
 
-$, $4v_A^2 - 16v_A + 16 = 0$, $
+$$4v_A^2 - 16v_A + 16 = 0$$
 
-$, $v_A^2 - 4v_A + 4 = 0$, $
+$$v_A^2 - 4v_A + 4 = 0$$
 
-$, $(v_A - 2)^2 = 0 \implies v_A = 2.0 \mathrm{ m/s}$, $
+$$(v_A - 2)^2 = 0 \implies v_A = 2.0 \mathrm{ m/s}$$
 
-$, $v_B = 8 - 2(2) = 4.0 \mathrm{ m/s}$, $
+$$v_B = 8 - 2(2) = 4.0 \mathrm{ m/s}$$
 
 After the elastic collision: A moves at $2.0 \mathrm{ m/s}$ and B moves at $4.0 \mathrm{ m/s}$. (A
 transfers all its "excess" speed to B.)
@@ -1000,17 +1000,17 @@ $E_{\mathrm{total}} = \frac{1}{2}kA^2 = \frac{1}{2}(150)(0.10)^2 = \frac{1}{2}(1
 
 (b) Maximum speed occurs at equilibrium ($x = 0$), where all energy is kinetic:
 
-$, $\frac{1}{2}mv_{\max}^2 = 0.75 \implies v_{\max} = \sqrt{\frac{2 \times 0.75}{3.0}} = \sqrt{0.50} = 0.707 \mathrm{ m/s}$, $
+$$\frac{1}{2}mv_{\max}^2 = 0.75 \implies v_{\max} = \sqrt{\frac{2 \times 0.75}{3.0}} = \sqrt{0.50} = 0.707 \mathrm{ m/s}$$
 
 (c) At $x = 0.05 \mathrm{ m}$:
 
-$, $E_k = E_{\mathrm{total}} - \frac{1}{2}kx^2 = 0.75 - \frac{1}{2}(150)(0.0025) = 0.75 - 0.1875 = 0.5625 \mathrm{ J}$, $
+$$E_k = E_{\mathrm{total}} - \frac{1}{2}kx^2 = 0.75 - \frac{1}{2}(150)(0.0025) = 0.75 - 0.1875 = 0.5625 \mathrm{ J}$$
 
-$, $v = \sqrt{\frac{2E_k}{m}} = \sqrt{\frac{2 \times 0.5625}{3.0}} = \sqrt{0.375} = 0.612 \mathrm{ m/s}$, $
+$$v = \sqrt{\frac{2E_k}{m}} = \sqrt{\frac{2 \times 0.5625}{3.0}} = \sqrt{0.375} = 0.612 \mathrm{ m/s}$$
 
 (d) $F = -kx = -150 \times 0.05 = -7.5 \mathrm{ N}$
 
-$, $a = \frac{F}{m} = \frac{-7.5}{3.0} = -2.5 \mathrm{ m/s}^2$, $
+$$a = \frac{F}{m} = \frac{-7.5}{3.0} = -2.5 \mathrm{ m/s}^2$$
 
 (The negative sign indicates the acceleration is directed towards the equilibrium position.)
 
@@ -1024,11 +1024,11 @@ inverted parabolas that sum to the constant total.
 An object of mass $m$ falls from height $h$. The power dissipated by air resistance at any Instant
 is:
 
-$, $P_{\mathrm{air}} = F_{\mathrm{air}} \times v = (mg - ma) \times v$, $
+$$P_{\mathrm{air}} = F_{\mathrm{air}} \times v = (mg - ma) \times v$$
 
 At terminal velocity, $a = 0$So $F_{\mathrm{air}} = mg$ and:
 
-$, $P_{\mathrm{terminal}} = mgv_{\mathrm{terminal}}$, $
+$$P_{\mathrm{terminal}} = mgv_{\mathrm{terminal}}$$
 
 The gravitational power input ($mgv$) exactly equals the power dissipated by air resistance.
 
@@ -1044,7 +1044,7 @@ terminal velocity.
 
 At terminal velocity: $mg = kv_{\mathrm{terminal}}^2$
 
-$, $v_{\mathrm{terminal}} = \sqrt{\frac{mg}{k}} = \sqrt{\frac{5.0 \times 10^{-7} \times 9.81}{2.0 \times 10^{-5}}} = \sqrt{\frac{4.905 \times 10^{-6}}{2.0 \times 10^{-5}}} = \sqrt{0.245} = 0.495 \mathrm{ m/s}$, $
+$$v_{\mathrm{terminal}} = \sqrt{\frac{mg}{k}} = \sqrt{\frac{5.0 \times 10^{-7} \times 9.81}{2.0 \times 10^{-5}}} = \sqrt{\frac{4.905 \times 10^{-6}}{2.0 \times 10^{-5}}} = \sqrt{0.245} = 0.495 \mathrm{ m/s}$$
 
 ### Extended Worked Example: Efficiency of a Machine
 

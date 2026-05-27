@@ -95,7 +95,7 @@ $$
 
 The **standard electrode potential** $E^\circ$ is the potential difference (voltage) of a half-cell
 relative to the standard hydrogen electrode under standard conditions
-($298\,\mathrm{K}$, $100\,\mathrm{kPa}$, $1\,\mathrm{mol/dm}^3$ solutions).
+($298\,\mathrm{K}$$100\,\mathrm{kPa}$$1\,\mathrm{mol/dm}^3$ solutions).
 
 ### The Standard Hydrogen Electrode (SHE)
 
@@ -362,8 +362,8 @@ is more reduced/oxidised (higher/lower $E^\circ$) is preferentially discharged.
 **At the cathode (reduction):**
 
 If the metal is below hydrogen in the reactivity series (e.g.
-$\mathrm{Cu}$, $\mathrm{Ag}$, $\mathrm{Au}$), the metal is deposited. If the metal is more reactive
-(e.g. $\mathrm{Na}$, $\mathrm{K}$, $\mathrm{Mg}$), hydrogen is evolved:
+$\mathrm{Cu}$$\mathrm{Ag}$$\mathrm{Au}$), the metal is deposited. If the metal is more reactive
+(e.g. $\mathrm{Na}$$\mathrm{K}$$\mathrm{Mg}$), hydrogen is evolved:
 
 $$
 2\mathrm{H}_2\mathrm{O}(l) + 2e^- \to \mathrm{H}_2(g) + 2\mathrm{OH}^-(aq)
@@ -371,8 +371,8 @@ $$
 
 **At the anode (oxidation):**
 
-If the anion is a halide ($\mathrm{Cl}^-$, $\mathrm{Br}^-$, $\mathrm{I}^-$), the halogen is produced.
-For all other anions (including $\mathrm{SO}_4^{2-}$, $\mathrm{NO}_3^-$), oxygen is evolved from
+If the anion is a halide ($\mathrm{Cl}^-$$\mathrm{Br}^-$$\mathrm{I}^-$), the halogen is produced.
+For all other anions (including $\mathrm{SO}_4^{2-}$$\mathrm{NO}_3^-$), oxygen is evolved from
 water:
 
 $$
@@ -456,7 +456,7 @@ iron(III) oxide (rust).
 | Painting / oiling          | Physical barrier to water and oxygen                                                                        |
 | Galvanising (zinc coating) | Zinc acts as a sacrificial anode (more reactive than iron); even if scratched, zinc corrodes preferentially |
 | Tin plating                | Physical barrier; if scratched, tin accelerates rusting (tin is less reactive than iron)                    |
-| Sacrificial protection     | Attaching blocks of a more reactive metal (e.g. $\mathrm{Mg}$, $\mathrm{Zn}$) to the iron structure           |
+| Sacrificial protection     | Attaching blocks of a more reactive metal (e.g. $\mathrm{Mg}$$\mathrm{Zn}$) to the iron structure           |
 | Alloying (stainless steel) | Chromium forms a protective oxide layer                                                                     |
 
 ## Common Pitfalls
@@ -484,7 +484,7 @@ iron(III) oxide (rust).
    anode potential from the cathode potential.
 
 7. **Forgetting that the SHE is defined at specific conditions.** The standard hydrogen electrode
-   operates at $298\,\mathrm{K}$, $100\,\mathrm{kPa}$ $\mathrm{H}_2$ pressure, and
+   operates at $298\,\mathrm{K}$$100\,\mathrm{kPa}$ $\mathrm{H}_2$ pressure, and
    $1.0\,\mathrm{mol/dm}^3$ $\mathrm{H}^+$ concentration. Any deviation requires the Nernst
    equation.
 
@@ -646,7 +646,7 @@ $\mathrm{Ag}(s) \mid \mathrm{Ag}^+(aq)$ half-cell. Calculate the standard cell E
 conventional cell representation, and determine $\Delta G^\circ$.
 
 Given:
-$E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\,\mathrm{V}$, $E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\,\mathrm{V}$.
+$E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\,\mathrm{V}$$E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\,\mathrm{V}$.
 
 **Solution:**
 
@@ -802,8 +802,8 @@ Will $\mathrm{Zn}$ displace $\mathrm{Cu}$ from $\mathrm{CuSO}_4$ solution?
 
 Half-equations:
 
-- $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$, $E^\circ = -0.76\,\mathrm{V}$
-- $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$, $E^\circ = +0.34\mathrm{V}$
+- $\mathrm{Zn}^{2+} + 2e^- \rightleftharpoons \mathrm{Zn}$$E^\circ = -0.76\,\mathrm{V}$
+- $\mathrm{Cu}^{2+} + 2e^- \rightleftharpoons \mathrm{Cu}$$E^\circ = +0.34\mathrm{V}$
 
 Zinc is the more reactive metal (more negative $E^\circ$), so it will be oxidised (anode). Copper
 ions will be reduced (cathode).
@@ -846,9 +846,9 @@ The cell potential is slightly higher than $E^\circ$ because the lower product c
 **Lead-acid accumulator:**
 
 - Anode (discharge):
-  $\mathrm{Pb}(s) + \mathrm{SO}_4^{2-}(aq) \rightleftharpoons \mathrm{PbSO}_4(s) + 2e^-$, $E^\circ = -0.36\,\mathrm{V}$
+  $\mathrm{Pb}(s) + \mathrm{SO}_4^{2-}(aq) \rightleftharpoons \mathrm{PbSO}_4(s) + 2e^-$$E^\circ = -0.36\,\mathrm{V}$
 - Cathode (discharge):
-  $\mathrm{PbO}_2(s) + \mathrm{SO}_4^{2-}(aq) + 4\mathrm{H}^+(aq) + 2e^- \rightleftharpoons \mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$, $E^\circ = +1.69\mathrm{V}$
+  $\mathrm{PbO}_2(s) + \mathrm{SO}_4^{2-}(aq) + 4\mathrm{H}^+(aq) + 2e^- \rightleftharpoons \mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$$E^\circ = +1.69\mathrm{V}$
 
 $E^\circ_\mathrm{cell} = 1.69 - (-0.36) = 2.05\,\mathrm{V}$
 

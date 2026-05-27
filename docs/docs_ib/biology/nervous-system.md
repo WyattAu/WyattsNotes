@@ -346,7 +346,7 @@ signals (graded potentials, then action potentials) --- a process called **trans
 | **Mechanoreceptors** | Mechanical deformation (pressure, vibration, stretch) | Pacinian corpuscles (deep pressure); Meissner's corpuscles (light touch, vibration); hair cells in cochlea (sound). |
 | **Thermoreceptors**  | Temperature changes                                   | Warm receptors; cold receptors.                                                                                     |
 | **Nociceptors**      | Pain (tissue damage, extreme stimuli)                 | Free nerve endings in skin, muscles, organs.                                                                        |
-| **Chemoreceptors**   | Chemical substances                                   | Taste buds; olfactory receptors; carotid bodies ($\mathrm{O}_2$, $\mathrm{CO}_2$PH).                                  |
+| **Chemoreceptors**   | Chemical substances                                   | Taste buds; olfactory receptors; carotid bodies ($\mathrm{O}_2$$\mathrm{CO}_2$PH).                                  |
 | **Photoreceptors**   | Light                                                 | Rods (dim light, black-and-white); cones (colour vision, high acuity).                                              |
 
 ### Sensory Pathways to the Brain
@@ -756,9 +756,9 @@ secretion. Atropine blocks muscarinic receptors on salivary glands, causing dry 
 **Worked Example: Nernst and Goldman Equations Applied to Neuronal Physiology**
 
 A neuron at $37^\circ\mathrm{C}$ has the following ion concentrations and permeabilities:
-$[\mathrm{Na}^+]_{\mathrm{in}} = 12\;\mathrm{mmol/L}$, $[\mathrm{Na}^+]_{\mathrm{out}} = 145\;\mathrm{mmol/L}$
-$[\mathrm{K}^+]_{\mathrm{in}} = 155\;\mathrm{mmol/L}$, $[\mathrm{K}^+]_{\mathrm{out}} = 4\;\mathrm{mmol/L}$
-$[\mathrm{Cl}^-]_{\mathrm{in}} = 4\;\mathrm{mmol/L}$, $[\mathrm{Cl}^-]_{\mathrm{out}} = 120\;\mathrm{mmol/L}$.
+$[\mathrm{Na}^+]_{\mathrm{in}} = 12\;\mathrm{mmol/L}$$[\mathrm{Na}^+]_{\mathrm{out}} = 145\;\mathrm{mmol/L}$
+$[\mathrm{K}^+]_{\mathrm{in}} = 155\;\mathrm{mmol/L}$$[\mathrm{K}^+]_{\mathrm{out}} = 4\;\mathrm{mmol/L}$
+$[\mathrm{Cl}^-]_{\mathrm{in}} = 4\;\mathrm{mmol/L}$$[\mathrm{Cl}^-]_{\mathrm{out}} = 120\;\mathrm{mmol/L}$.
 During an action potential, voltage-gated $\mathrm{Na}^+$ channels open, making
 $\mathrm{P_{Na}} \gg \mathrm{P_K}$. Predict the membrane potential at the peak of the action
 potential.
@@ -1041,7 +1041,7 @@ $E_{\mathrm{Ca}} = \frac{26.7}{2} \ln\frac{2.0}{0.0001} = 13.35 \times \ln(20000
 (c) Goldman equation (only monovalent ions):
 $V_m = \frac{RT}{F}\ln\frac{P_{\mathrm{Na}}[\mathrm{Na}^+]_{out} + P_{\mathrm{K}}[\mathrm{K}^+]_{out} + P_{\mathrm{Cl}}[\mathrm{Cl}^-]_{in}}{P_{\mathrm{Na}}[\mathrm{Na}^+]_{in} + P_{\mathrm{K}}[\mathrm{K}^+]_{in} + P_{\mathrm{Cl}}[\mathrm{Cl}^-]_{out}}$
 
-Let $P_{\mathrm{K}} = 50$, $P_{\mathrm{Na}} = 1$, $P_{\mathrm{Cl}} = 5$:
+Let $P_{\mathrm{K}} = 50$$P_{\mathrm{Na}} = 1$$P_{\mathrm{Cl}} = 5$:
 $V_m = 26.7 \times \ln\frac{1 \times 145 + 50 \times 4.5 + 5 \times 10}{1 \times 15 + 50 \times 150 + 5 \times 110}$
 $= 26.7 \times \ln\frac{145 + 225 + 50}{15 + 7500 + 550}$ $= 26.7 \times \ln\frac{420}{8065}$
 $= 26.7 \times \ln(0.0521)$ $= 26.7 \times (-2.954)$ $= -78.9\;\mathrm{mV}$
@@ -1191,7 +1191,7 @@ changes that occur during LTP maintenance. (e) Explain how LTP relates to the He
 $\mathrm{K}^+$). It mediates fast excitatory postsynaptic potentials (EPSPs). It is responsible for
 the Initial depolarisation that removes the $\mathrm{Mg}^{2+}$ block from the NMDA receptor.
 
-**NMDA receptor**: an ionotropic glutamate receptor permeable to $\mathrm{Na}^+$, $\mathrm{K}^+$And
+**NMDA receptor**: an ionotropic glutamate receptor permeable to $\mathrm{Na}^+$$\mathrm{K}^+$And
 $\mathrm{Ca}^{2+}$. It requires both glutamate binding AND sufficient depolarisation (to remove the
 $\mathrm{Mg}^{2+}$ block). The $\mathrm{Ca}^{2+}$ influx through NMDA receptors is the trigger for
 LTP Induction.
@@ -1298,7 +1298,7 @@ and (f) overall function ("fight or flight" vs "rest and digest").
 | **Heart rate**              | Increases ($\beta_1$)                                                                          | Decreases (M2)                                                 |
 | **Pupil**                   | Dilates ($\alpha_1$)                                                                           | Constricts (M3)                                                |
 | **Bronchioles**             | Dilate ($\beta_2$)                                                                             | Constrict (M3)                                                 |
-| **Digestion**               | Inhibits ($\alpha_2$, $\beta_2$)                                                                 | Stimulates (M1, M3)                                            |
+| **Digestion**               | Inhibits ($\alpha_2$$\beta_2$)                                                                 | Stimulates (M1, M3)                                            |
 | **Adrenal medulla**         | Stimulates (ACh on chromaffin cells, releasing adrenaline + NA)                                | No effect                                                      |
 | **Overall**                 | Fight or flight                                                                                | Rest and digest                                                |
 

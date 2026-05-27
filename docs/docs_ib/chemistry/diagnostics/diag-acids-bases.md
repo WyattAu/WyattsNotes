@@ -67,7 +67,7 @@ HCl reacts with $\text{CH}_3\text{COO}^-$:
 $\text{CH}_3\text{COO}^- + \text{H}^+ \to \text{CH}_3\text{COOH}$
 
 New moles:
-$\text{CH}_3\text{COOH} = 0.0500 + 0.0100 = 0.0600\ \text{mol}$, $\text{CH}_3\text{COO}^- = 0.0500 - 0.0100 = 0.0400\ \text{mol}$.
+$\text{CH}_3\text{COOH} = 0.0500 + 0.0100 = 0.0600\ \text{mol}$$\text{CH}_3\text{COO}^- = 0.0500 - 0.0100 = 0.0400\ \text{mol}$.
 
 $\text{pH} = 4.76 + \log\frac{0.0400}{0.0600} = 4.76 + \log(0.667) = 4.76 - 0.176 = 4.58$
 
@@ -123,7 +123,7 @@ $K_b = \frac{K_w}{K_a} = \frac{1.00 \times 10^{-14}}{1.74 \times 10^{-5}} = 5.75
 
 $[\text{OH}^-] = \sqrt{K_b \times 0.0500} = \sqrt{2.875 \times 10^{-11}} = 5.36 \times 10^{-6}$.
 
-$\text{pOH} = 5.27$, $\text{pH} = 14.00 - 5.27 = 8.73$.
+$\text{pOH} = 5.27$$\text{pH} = 14.00 - 5.27 = 8.73$.
 
 (d) Volume: $\frac{0.100 \times 25.0}{0.100} = 25.0\ \text{cm}^3$.
 

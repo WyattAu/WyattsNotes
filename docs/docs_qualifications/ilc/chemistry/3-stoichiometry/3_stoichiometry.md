@@ -624,7 +624,7 @@ $$m(\mathrm{SO_4^{2-}) = 0.00501 \times 96.1 = 0.481 \mathrm{ g$$
     monoprotic.
 13. What mass of $\mathrm{AgCl$ precipitate would be formed when excess $\mathrm{AgNO_3$ is added to
     $25.0 \mathrm{ cm^3$ of $0.150 \mathrm{ M$ $\mathrm{MgCl_2$?
-14. A gas mixture at $100 \mathrm{ kPa$ and $298 \mathrm{ K$ contains $\mathrm{N_2$, $\mathrm{O_2$And
+14. A gas mixture at $100 \mathrm{ kPa$ and $298 \mathrm{ K$ contains $\mathrm{N_2$$\mathrm{O_2$And
     $\mathrm{CO_2$ with partial pressures of 78, 21, and 1 kPa respectively. Calculate the mole
     fraction and number of moles of each gas if the total volume is $10.0 \mathrm{ L$.
 15. Find the empirical formula of a compound that contains 37.5% C, 12.5% H, and 50.0% O by mass.

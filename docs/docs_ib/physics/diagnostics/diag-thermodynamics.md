@@ -36,7 +36,7 @@ $$V = \frac{4988.4}{1.013 \times 10^7} = 4.92 \times 10^{-4}\,\text{m}^3 = 0.492
 **Van der Waals equation:** $\left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT$
 
 This must be solved numerically. Substituting
-$P = 1.013 \times 10^7\,\text{Pa}$, $n = 2.0$, $T = 300\,\text{K}$:
+$P = 1.013 \times 10^7\,\text{Pa}$$n = 2.0$$T = 300\,\text{K}$:
 
 $$\left(1.013 \times 10^7 + \frac{0.137 \times 4.0}{V^2}\right)(V - 7.74 \times 10^{-5}) = 4988.4$$
 
@@ -259,7 +259,7 @@ pressure higher and allowing more work.
 
 A gas undergoes a cycle consisting of three processes:
 
-- 1 to 2: Isobaric expansion at $P = 3.0 \times 10^5\,\text{Pa}$, $V$ increases from
+- 1 to 2: Isobaric expansion at $P = 3.0 \times 10^5\,\text{Pa}$$V$ increases from
   $1.0 \times 10^{-3}\,\text{m}^3$ to $3.0 \times 10^{-3}\,\text{m}^3$
 - 2 to 3: Isochoric cooling, $P$ decreases to $1.0 \times 10^5\,\text{Pa}$
 - 3 to 1: Isothermal compression back to state 1
@@ -292,16 +292,16 @@ $\Delta U_{12} = nC_v(T_2 - T_1) = nC_v \times 2T_1$
 
 $Q_{12} = nC_p(T_2 - T_1) = nC_p \times 2T_1$
 
-For a monatomic ideal gas: $C_v = 3R/2$, $C_p = 5R/2$.
+For a monatomic ideal gas: $C_v = 3R/2$$C_p = 5R/2$.
 
 $nR = P_1V_1/T_1 = 300/T_1$So $n = 300/(RT_1)$.
 
 Let us use specific values. Let $T_1 = 100\,\text{K}$ (choosing for convenience, the ratios will be
 the same).
 
-Then $nR = 3.0$, $n = 3.0/8.314 = 0.361\,\text{mol}$.
+Then $nR = 3.0$$n = 3.0/8.314 = 0.361\,\text{mol}$.
 
-$T_2 = 300\,\text{K}$, $T_3 = P_3V_3/(nR) = 1.0 \times 10^5 \times 3.0 \times 10^{-3}/3.0 = 100\,\text{K} = T_1$.
+$T_2 = 300\,\text{K}$$T_3 = P_3V_3/(nR) = 1.0 \times 10^5 \times 3.0 \times 10^{-3}/3.0 = 100\,\text{K} = T_1$.
 
 $\Delta U_{12} = 0.361 \times 1.5 \times 8.314 \times (300 - 100) = 0.361 \times 12.471 \times 200 = 900\,\text{J}$
 

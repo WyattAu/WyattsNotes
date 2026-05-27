@@ -531,7 +531,7 @@ Country R has the following sectoral employment data:
 (b) Calculate the rate of structural change between 1980 and 2020 using the structure of Production
 indicator:
 
-$, $\text{Structural change index} = \frac{1}{2} \sum_{i=1}^{n} |s_{i,t} - s_{i,0}|$, $
+$$\text{Structural change index} = \frac{1}{2} \sum_{i=1}^{n} |s_{i,t} - s_{i,0}|$$
 
 (c) Explain why the share of industry employment peaked and then declined.
 
@@ -549,7 +549,7 @@ capita increases substantially.
 
 (b) Structural change index between 1980 and 2020:
 
-$, $\text{Index} = \frac{1}{2}(|22 - 70| + |20 - 10| + |58 - 20|) = \frac{1}{2}(48 + 10 + 38) = \frac{96}{2} = 48$, $
+$$\text{Index} = \frac{1}{2}(|22 - 70| + |20 - 10| + |58 - 20|) = \frac{1}{2}(48 + 10 + 38) = \frac{96}{2} = 48$$
 
 The structural change index is 48 percentage points, indicating substantial transformation over 40
 years.

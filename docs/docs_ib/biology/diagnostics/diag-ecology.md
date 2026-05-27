@@ -59,7 +59,7 @@ $2.5 + 3.0 = 5.5\ \text{Gt C yr}^{-1}$ Net annual increase: $11.0 - 5.5 = 5.5\ \
 
 (c) For doubling: $\frac{870}{5.5} = 158$ years (using the simple linear approximation). More
 precisely, using exponential growth: $870 \times e^{0.0063t} = 1740$So
-$e^{0.0063t} = 2$, $t = \frac{\ln 2}{0.0063} = 110$ years.
+$e^{0.0063t} = 2$$t = \frac{\ln 2}{0.0063} = 110$ years.
 
 The linear model gives 158 years and the exponential model gives 110 years. The exponential model is
 more realistic because as atmospheric $\text{CO}_2$ increases, ocean absorption increases (but at a

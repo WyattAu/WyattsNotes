@@ -40,12 +40,12 @@ $$\coth x = \frac◆LB◆1◆RB◆◆LB◆\tanh x◆RB◆ = \frac{e^x + e^{-x}}{
 
 ### 1.3 Basic properties
 
-- $\sinh 0 = 0$, $\cosh 0 = 1$, $\tanh 0 = 0$.
+- $\sinh 0 = 0$$\cosh 0 = 1$$\tanh 0 = 0$.
 - $\sinh x$ is **odd**: $\sinh(-x) = -\sinh x$.
 - $\cosh x$ is **even**: $\cosh(-x) = \cosh x$.
 - $\tanh x$ is **odd**.
-- As $x \to +\infty$: $\sinh x \to +\infty$, $\cosh x \to +\infty$, $\tanh x \to 1$.
-- As $x \to -\infty$: $\sinh x \to -\infty$, $\cosh x \to +\infty$, $\tanh x \to -1$.
+- As $x \to +\infty$: $\sinh x \to +\infty$$\cosh x \to +\infty$$\tanh x \to 1$.
+- As $x \to -\infty$: $\sinh x \to -\infty$$\cosh x \to +\infty$$\tanh x \to -1$.
 
 ### 1.4 Connection with Euler's formula
 
@@ -282,7 +282,7 @@ $$= \left[\operatorname{arsinh}\,x\right]_0^1 = \operatorname{arsinh}\,1 - \oper
 
 **Problem.** Evaluate $\displaystyle\int \sqrt{x^2 + 4}\,dx$.
 
-Use the substitution $x = 2\sinh u$, $dx = 2\cosh u\,du$:
+Use the substitution $x = 2\sinh u$$dx = 2\cosh u\,du$:
 
 $$\int \sqrt◆LB◆4\sinh^2 u + 4◆RB◆\cdot 2\cosh u\,du = \int 2\cosh u \cdot 2\cosh u\,du = 4\int \cosh^2 u\,du$$
 
@@ -540,7 +540,7 @@ Since $\dfrac◆LB◆5 - 3\sqrt{2}◆RB◆◆LB◆7◆RB◆ \approx 0.109 > 0$Bo
 
 **Problem.** Evaluate $\displaystyle\int \sqrt{x^2 - 9}\,dx$ for $x \geq 3$.
 
-**Solution.** Use the substitution $x = 3\cosh u$, $dx = 3\sinh u\,du$:
+**Solution.** Use the substitution $x = 3\cosh u$$dx = 3\sinh u\,du$:
 
 $$\int \sqrt◆LB◆9\cosh^2 u - 9◆RB◆\cdot 3\sinh u\,du = \int 3\sinh u \cdot 3\sinh u\,du = 9\int \sinh^2 u\,du$$
 
@@ -601,10 +601,10 @@ $$= \frac{1}{2}\bigl[\operatorname{arsinh}\,2 - \operatorname{arsinh}\,0\bigr] =
 
 ### Example 9.6: Parametric differentiation with hyperbolic functions
 
-**Problem.** A curve is given parametrically by $x = 2\cosh t$, $y = 3\sinh t$. Find the value of
+**Problem.** A curve is given parametrically by $x = 2\cosh t$$y = 3\sinh t$. Find the value of
 $\dfrac{dy}{dx}$ at $t = \ln 2$.
 
-**Solution.** $\dfrac{dx}{dt} = 2\sinh t$, $\dfrac{dy}{dt} = 3\cosh t$.
+**Solution.** $\dfrac{dx}{dt} = 2\sinh t$$\dfrac{dy}{dt} = 3\cosh t$.
 
 $$\frac{dy}{dx} = \frac◆LB◆3\cosh t◆RB◆◆LB◆2\sinh t◆RB◆ = \frac{3}{2}\coth t$$
 
@@ -629,7 +629,7 @@ $$\int \tanh^3 x\,dx = \int \tanh x\,dx - \int \tanh x\,\mathrm{sech}^2\,x\,dx$$
 
 The first integral: $\displaystyle\int\tanh x\,dx = \ln(\cosh x) + C$.
 
-For the second integral, let $u = \tanh x$, $du = \mathrm{sech}^2\,x\,dx$:
+For the second integral, let $u = \tanh x$$du = \mathrm{sech}^2\,x\,dx$:
 
 $$\int u\,du = \frac{u^2}{2} + C = \frac◆LB◆\tanh^2 x◆RB◆◆LB◆2◆RB◆ + C$$
 
@@ -662,7 +662,7 @@ The identities $\cosh x = \cos(ix)$ and $\sinh x = -i\sin(ix)$ connect the two t
 
 ### 10.3 Hyperbolic functions and integration techniques
 
-Hyperbolic substitutions ($x = a\sinh u$, $x = a\cosh u$) are powerful alternatives to trigonometric
+Hyperbolic substitutions ($x = a\sinh u$$x = a\cosh u$) are powerful alternatives to trigonometric
 Substitutions. See [Further Calculus](/docs/alevel/further-maths/pure-mathematics/further-calculus).
 
 ### 10.4 The catenary and mechanics
@@ -818,7 +818,7 @@ So $\ln 3 - \ln 2 = \operatorname{artanh}(1/5)$.
    $\displaystyle\int\frac{dx}{a^2 - x^2} = \frac{1}{2a}\ln\!\left|\frac{a+x}{a-x}\right|$ is valid
    for all $|x| \neq a$But $\dfrac{1}{a}\operatorname{artanh}(x/a)$ is only valid for $|x| < a$. For
    $|x| > a$Use the logarithmic form or $\operatorname{arcoth}$.
-3. **No absolute value needed for $\cosh$:** Unlike $|\cos x|$, $\sqrt◆LB◆\cosh^2 x◆RB◆ = \cosh x$ (no
+3. **No absolute value needed for $\cosh$:** Unlike $|\cos x|$$\sqrt◆LB◆\cosh^2 x◆RB◆ = \cosh x$ (no
    absolute value needed) since $\cosh x \geq 1 > 0$ for all real $x$.
 4. **Differential equation solutions:** The equation $y'' - y = 0$ has solutions in both exponential
    and hyperbolic forms. When boundary conditions involve $y(0)$ and $y'(0)$The hyperbolic form
@@ -832,7 +832,7 @@ So $\ln 3 - \ln 2 = \operatorname{artanh}(1/5)$.
 
 **Problem.** Evaluate $\displaystyle\int \sqrt{x^2 + 9}\,dx$.
 
-**Solution.** Let $x = 3\sinh u$, $dx = 3\cosh u\,du$.
+**Solution.** Let $x = 3\sinh u$$dx = 3\cosh u\,du$.
 
 $$\int 3\cosh u \cdot 3\cosh u\,du = 9\int \cosh^2 u\,du = 9\int \frac◆LB◆1+\cosh 2u◆RB◆◆LB◆2◆RB◆\,du = \frac{9}{2}\!\left(u + \frac◆LB◆\sinh 2u◆RB◆◆LB◆2◆RB◆\right)$$
 
@@ -946,7 +946,7 @@ $x > 1$.
 The Gudermannian function $\mathrm{gd}(x)$ relates circular and hyperbolic functions without complex
 Numbers:
 
-$\sin(\mathrm{gd}\,x) = \tanh x$, $\cos(\mathrm{gd}\,x) = \mathrm{sech}\,x$
+$\sin(\mathrm{gd}\,x) = \tanh x$$\cos(\mathrm{gd}\,x) = \mathrm{sech}\,x$
 $\tan(\mathrm{gd}\,x) = \sinh x$.
 
 $\dfrac{d}{dx}\mathrm{gd}(x) = \mathrm{sech}\,x$.
@@ -956,7 +956,7 @@ $\dfrac{d}{dx}\mathrm{gd}(x) = \mathrm{sech}\,x$.
 In special relativity, the Lorentz transformation uses hyperbolic functions. If $\beta = v/c$ and
 $\gamma = (1-\beta^2)^{-1/2} = \cosh\phi$ where $\tanh\phi = \beta$Then:
 
-$t' = t\cosh\phi - x\sinh\phi/c$, $x' = x\cosh\phi - ct\sinh\phi$.
+$t' = t\cosh\phi - x\sinh\phi/c$$x' = x\cosh\phi - ct\sinh\phi$.
 
 ### 16.3 Inverse hyperbolic functions in logarithmic form
 
@@ -1038,7 +1038,7 @@ Standard substitutions:
 
 Example: $\displaystyle\int \frac◆LB◆dx◆RB◆◆LB◆\sqrt{x^2-4}◆RB◆$ with $x = 2\cosh t$:
 
-$dx = 2\sinh t\,dt$, $\sqrt{x^2-4} = 2\sinh t$.
+$dx = 2\sinh t\,dt$$\sqrt{x^2-4} = 2\sinh t$.
 
 $\displaystyle\int \frac◆LB◆2\sinh t◆RB◆◆LB◆2\sinh t◆RB◆\,dt = t = \operatorname{arcosh}\!\left(\frac{x}{2}\right) + C$.
 
@@ -1090,13 +1090,13 @@ $\displaystyle\int_0^{\operatorname{arsinh}(4/3)} \sqrt{x^2+9}\,dx$.
 <details>
 <summary>Solution</summary>
 
-$dx = 3\cosh t\,dt$, $\sqrt{x^2+9} = 3\cosh t$.
+$dx = 3\cosh t\,dt$$\sqrt{x^2+9} = 3\cosh t$.
 
 $= \displaystyle\int_0^{\operatorname{arsinh}(4/3)} 9\cosh^2 t\,dt = \frac{9}{2}\int_0^{\operatorname{arsinh}(4/3)} (1+\cosh 2t)\,dt$
 
 $= \frac{9}{2}\!\left[t + \frac◆LB◆\sinh 2t◆RB◆◆LB◆2◆RB◆\right]_0^{\operatorname{arsinh}(4/3)}$.
 
-At $t = \operatorname{arsinh}(4/3)$: $\sinh t = 4/3$, $\cosh t = 5/3$
+At $t = \operatorname{arsinh}(4/3)$: $\sinh t = 4/3$$\cosh t = 5/3$
 $\sinh 2t = 2\cdot\dfrac{4}{3}\cdot\dfrac{5}{3} = \dfrac{40}{9}$.
 
 $= \frac{9}{2}\!\left(\operatorname{arsinh}\!\frac{4}{3} + \frac{20}{9}\right) = \boxed{\frac{9}{2}\operatorname{arsinh}\!\frac{4}{3} + 10}$.

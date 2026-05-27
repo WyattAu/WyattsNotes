@@ -606,7 +606,7 @@ $i = 0, 1, 2, 3, \ldots$). If the target index is occupied, try $(h'(k) + i^2) \
 <details>
 <summary>Answer</summary>
 
-$h'(k) = k \bmod 11$, $h(k, i) = (h'(k) + i^2) \bmod 11$
+$h'(k) = k \bmod 11$$h(k, i) = (h'(k) + i^2) \bmod 11$
 
 | Key | $h'(k)$ | Probe sequence ($i=0, 1, 2, \ldots$)              | Final index |
 | --- | ------- | ------------------------------------------------- | ----------- |
@@ -803,7 +803,7 @@ First, then trace the probe sequence.
 
 **(a) Insertion with double hashing:**
 
-$h_1(k) = k \bmod 11$, $h_2(k) = 1 + (k \bmod 9)$
+$h_1(k) = k \bmod 11$$h_2(k) = 1 + (k \bmod 9)$
 
 | Key | $h_1(k)$ | $h_2(k)$                   | Probe sequence ($h_1 + i \cdot h_2$) mod 11 | Final index |
 | --- | -------- | -------------------------- | ------------------------------------------- | ----------- |
@@ -841,7 +841,7 @@ Key 80 found at index 1 after **2 probes**.
 If key 25 at index 0 is deleted by setting the slot to empty, a subsequent search for key 47 Would
 fail:
 
-$h_1(47) = 3$, $h_2(47) = 3$
+$h_1(47) = 3$$h_2(47) = 3$
 
 Search for 47:
 

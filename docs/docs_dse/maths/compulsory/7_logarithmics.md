@@ -22,7 +22,7 @@ the properties of [exponential functions](functions#exponential-functions) and C
 
 ### Logarithmic Notation
 
-For $a \gt 0$, $a \neq 1$And $x \gt 0$The logarithmic statement
+For $a \gt 0$$a \neq 1$And $x \gt 0$The logarithmic statement
 
 $$
 \log_a x = y
@@ -90,7 +90,7 @@ These two identities express the fact that the logarithmic and exponential funct
 ## Laws of Logarithms
 
 The following laws are essential for manipulating logarithmic expressions. In all cases,
-$a \gt 0$, $a \neq 1$And the arguments of all logarithms are positive.
+$a \gt 0$$a \neq 1$And the arguments of all logarithms are positive.
 
 ### Product Rule
 
@@ -461,9 +461,9 @@ Function, which depends on whether the base is greater than or less than 1.
 
 When $a > 1$$\log_a x$ is strictly increasing, so the inequality sign is **preserved**:
 
-$, $
+$$
 \log_a x \gt \log_a y \iff x \gt y
-$, $
+$$
 
 ### Case 2: Base $0 \lt{} a \lt{} 1$
 
@@ -874,11 +874,11 @@ Year: $2020 + 11.3 \approx 2031$ (during 2031).
 <details>
 <summary>Solution</summary>
 
-$, $\log_{27} 8 = \frac{\log 8}{\log 27} = \frac{3\log 2}{3\log 3} = \frac{\log 2}{\log 3}$, $
+$$\log_{27} 8 = \frac{\log 8}{\log 27} = \frac{3\log 2}{3\log 3} = \frac{\log 2}{\log 3}$$
 
-$, $\log_{\sqrt{3}} 2 = \frac{\log 2}{\log \sqrt{3}} = \frac{\log 2}{\frac{1}{2}\log 3} = \frac{2\log 2}{\log 3}$, $
+$$\log_{\sqrt{3}} 2 = \frac{\log 2}{\log \sqrt{3}} = \frac{\log 2}{\frac{1}{2}\log 3} = \frac{2\log 2}{\log 3}$$
 
-$, $\frac{\log_{27} 8}{\log_{\sqrt{3}} 2} = \frac{\log 2 / \log 3}{2\log 2 / \log 3} = \frac{1}{2}$, $
+$$\frac{\log_{27} 8}{\log_{\sqrt{3}} 2} = \frac{\log 2 / \log 3}{2\log 2 / \log 3} = \frac{1}{2}$$
 
 </details>
 

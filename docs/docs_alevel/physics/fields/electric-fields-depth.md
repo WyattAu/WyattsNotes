@@ -433,7 +433,7 @@ $E_k = qEd = 1.60 \times 10^{-19} \times 3.0 \times 10^4 \times 0.050 = 2.4 \tim
 A charged sphere of mass 0.50 g is suspended by a thread in a horizontal uniform field of
 $5.0 \times 10^3$ V m$^{-1}$. The thread makes $15^\circ$ with the vertical. Calculate the charge.
 
-**Answer.** Resolving: $qE = T\sin 15^\circ$, $mg = T\cos 15^\circ$.
+**Answer.** Resolving: $qE = T\sin 15^\circ$$mg = T\cos 15^\circ$.
 
 $\tan 15^\circ = qE/(mg)$.
 $q = mg\tan 15^\circ / E = 0.50 \times 10^{-3} \times 9.81 \times 0.268 / 5000 = 2.63 \times 10^{-7}$

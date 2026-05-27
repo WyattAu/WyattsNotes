@@ -516,7 +516,7 @@ $$
 ## Worked Example: First Law in Isothermal and Adiabatic Processes
 
 **Question:** A monatomic ideal gas ($n = 2.0$ mol) is initially at $P_1 = 3.0 \times 10^5$ Pa,
-$V_1 = 4.0 \times 10^{-3}$ m$^3$, $T_1 = 723$ K.
+$V_1 = 4.0 \times 10^{-3}$ m$^3$$T_1 = 723$ K.
 
 A) The gas expands isothermally to $V_2 = 8.0 \times 10^{-3}$ m$^3$. Calculate the work done by the
 Gas and the heat transferred. B) Starting from the same initial state, the gas expands adiabatically
@@ -599,7 +599,7 @@ $$
 U = \frac{3}{2}nRT
 $$
 
-For a diatomic ideal gas (e.g., $N_2$, $O_2$), molecules have 5 degrees of freedom at moderate
+For a diatomic ideal gas (e.g., $N_2$$O_2$), molecules have 5 degrees of freedom at moderate
 Temperatures (3 translational + 2 rotational). The internal energy is:
 
 $$
@@ -819,7 +819,7 @@ M/s.
 
 300 g of ice at $-10^\circ\mathrm{C}$ is placed in 500 g of water at $40^\circ\mathrm{C}$ in an
 Insulated container. Calculate the final temperature and state of the mixture.
-($c_{\mathrm{ice}} = 2090$ J kg$^{-1}$ K$^{-1}$, $c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$
+($c_{\mathrm{ice}} = 2090$ J kg$^{-1}$ K$^{-1}$$c_{\mathrm{water}} = 4186$ J kg$^{-1}$ K$^{-1}$
 $L_f = 3.34 \times 10^5$ J kg$^{-1}$)
 
 </details>

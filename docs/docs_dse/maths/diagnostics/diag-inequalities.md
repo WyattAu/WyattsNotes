@@ -115,10 +115,10 @@ Find the maximum value of $P = 3x + 2y$ in this region.
 Corner points of the feasible region:
 
 1. Intersection of $x + y = 6$ and $2x - y = 1$: adding gives $3x = 7$So
-   $x = \dfrac{7}{3}$, $y = 6 - \dfrac{7}{3} = \dfrac{11}{3}$. Point:
+   $x = \dfrac{7}{3}$$y = 6 - \dfrac{7}{3} = \dfrac{11}{3}$. Point:
    $\left(\dfrac{7}{3},\; \dfrac{11}{3}\right)$.
 
-2. Intersection of $2x - y = 1$ with $y = 0$: $2x = 1$, $x = \dfrac{1}{2}$. Point:
+2. Intersection of $2x - y = 1$ with $y = 0$: $2x = 1$$x = \dfrac{1}{2}$. Point:
    $\left(\dfrac{1}{2},\; 0\right)$.
 
 3. Intersection of $x + y = 6$ with $x = 0$: $y = 6$. Point: $(0,\; 6)$.
@@ -157,7 +157,7 @@ $$\frac{3 - x}{(x-1)(x+1)} \leq 0$$
 
 $$\frac{x - 3}{(x-1)(x+1)} \geq 0$$
 
-Critical values: $x = -1$, $x = 1$, $x = 3$.
+Critical values: $x = -1$$x = 1$$x = 3$.
 
 Sign chart:
 
@@ -216,7 +216,7 @@ $$3x^2 - 6x \geq 0$$
 
 $$3x(x - 2) \geq 0$$
 
-Critical values: $x = 0$, $x = 2$.
+Critical values: $x = 0$$x = 2$.
 
 Solution: $x \leq 0$ or $x \geq 2$I.e. $x \in (-\infty,\; 0] \cup [2,\; \infty)$.
 
@@ -507,7 +507,7 @@ Sign chart:
 Including $x = 1$Excluding $x = -3$ and $x = 3$.
 
 Solution: $x \in (-3,\; 1] \cup (3,\; \infty)$? No -- checking: for
-$x > 3$, $\dfrac{x-1}{x+3} > 0$Which does not satisfy $\leq 0$.
+$x > 3$$\dfrac{x-1}{x+3} > 0$Which does not satisfy $\leq 0$.
 
 Correct solution: $x \in (-3,\; 1]$.
 

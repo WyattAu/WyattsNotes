@@ -135,7 +135,7 @@ This is the **Newton-Raphson formula**.
 
 ### 3.2 Proof of local quadratic convergence
 
-**Theorem.** If $f$ is twice continuously differentiable, $f(\alpha) = 0$, $f'(\alpha) \neq 0$And
+**Theorem.** If $f$ is twice continuously differentiable, $f(\alpha) = 0$$f'(\alpha) \neq 0$And
 $x_0$ is sufficiently close to $\alpha$Then Newton-Raphson converges **quadratically**:
 $|x_{n+1} - \alpha| \leq C|x_n - \alpha|^2$.
 
@@ -181,7 +181,7 @@ $x_0 = 1$:
 
 The formula gives $x_1 = 1 - f(1)/f'(1) = 1 - 1/0$Which is undefined.
 
-Even starting at $x_0 = 0.9$: $f(0.9) = 0.729 - 2.7 + 3 = 1.029$, $f'(0.9) = 2.43 - 3 = -0.57$.
+Even starting at $x_0 = 0.9$: $f(0.9) = 0.729 - 2.7 + 3 = 1.029$$f'(0.9) = 2.43 - 3 = -0.57$.
 $x_1 = 0.9 - 1.029/(-0.57) = 0.9 + 1.805 = 2.705$.
 
 The root is near $\alpha \approx -2.10$So the iterate has been sent in the wrong direction. The Next
@@ -195,7 +195,7 @@ point.
 The quadratic convergence proof in Section 3.2 requires $f'(\alpha) \neq 0$. When the root coincides
 With an inflection point, so that $f'(\alpha) = 0$Convergence degrades from quadratic to **linear**.
 
-**Theorem.** If $f(\alpha) = 0$, $f'(\alpha) = 0$, $f''(\alpha) \neq 0$And $x_0$ is sufficiently Close
+**Theorem.** If $f(\alpha) = 0$$f'(\alpha) = 0$$f''(\alpha) \neq 0$And $x_0$ is sufficiently Close
 to $\alpha$Then Newton-Raphson converges linearly with rate $1/2$:
 
 $$|x_{n+1} - \alpha| \approx \frac{1}{2}|x_n - \alpha|$$
@@ -226,8 +226,8 @@ Becomes:
 
 $$x_{n+1} = x_n - \frac{(x_n - 1)^3}{3(x_n - 1)^2} = x_n - \frac{x_n - 1}{3} = \frac{2x_n + 1}{3}$$
 
-Starting at $x_0 = 4$: $x_1 = 3$, $x_2 = 7/3 \approx 2.333$, $x_3 = 17/9 \approx 1.889$
-$x_4 = 37/27 \approx 1.370$, $x_5 = 75/81 \approx 1.210$...
+Starting at $x_0 = 4$: $x_1 = 3$$x_2 = 7/3 \approx 2.333$$x_3 = 17/9 \approx 1.889$
+$x_4 = 37/27 \approx 1.370$$x_5 = 75/81 \approx 1.210$...
 
 The error is multiplied by $2/3$ each step (linear, not quadratic). Compare: standard Newton-Raphson
 With $f'(\alpha) \neq 0$ would give roughly 1, then 2, then 4, then 8 correct digits. Here each step
@@ -330,7 +330,7 @@ The coefficients follow the pattern: $1, 4, 2, 4, 2, \ldots, 4, 1$.
 ### 5.2 Derivation
 
 Simpson's rule approximates $f$ by quadratic arcs over pairs of strips. Over $[x_{2k}, x_{2k+2}]$A
-Unique quadratic passes through $(x_{2k}, y_{2k})$, $(x_{2k+1}, y_{2k+1})$, $(x_{2k+2}, y_{2k+2})$.
+Unique quadratic passes through $(x_{2k}, y_{2k})$$(x_{2k+1}, y_{2k+1})$$(x_{2k+2}, y_{2k+2})$.
 Integrating this quadratic gives the area $\dfrac{h}{3}(y_{2k} + 4y_{2k+1} + y_{2k+2})$.
 
 ### 5.3 Error bound
@@ -415,7 +415,7 @@ Show that $x^3 - 2x - 5 = 0$ has a root in the interval $[2, 3]$.
 
 <details>
 <summary>Solution 1</summary>
-$f(x) = x^3 - 2x - 5$. $f(2) = 8-4-5 = -1 \lt 0$, $f(3) = 27-6-5 = 16 \gt 0$.
+$f(x) = x^3 - 2x - 5$. $f(2) = 8-4-5 = -1 \lt 0$$f(3) = 27-6-5 = 16 \gt 0$.
 
 Since $f$ is continuous and changes sign on $[2,3]$By the sign change theorem there is a root in
 $(2,3)$.
@@ -448,7 +448,7 @@ Show that the iteration $x_{n+1} = \dfrac{x_n^3 + 5}{2}$ for solving $x^3 - 2x -
 
 <details>
 <summary>Solution 3</summary>
-$g(x) = \dfrac{x^3+5}{2}$, $g'(x) = \dfrac{3x^2}{2}$.
+$g(x) = \dfrac{x^3+5}{2}$$g'(x) = \dfrac{3x^2}{2}$.
 
 Near the root $\alpha \approx 2.09$:
 $g'(\alpha) = \dfrac{3(2.09)^2}{2} \approx \dfrac◆LB◆3 \times 4.37◆RB◆◆LB◆2◆RB◆ \approx 6.55 \gt 1$.
@@ -468,9 +468,9 @@ Use Newton-Raphson with $x_0 = 2$ to find $x_2$ for $f(x) = x^3 - 2x - 5 = 0$. G
 <summary>Solution 4</summary>
 $f'(x) = 3x^2 - 2$. $x_{n+1} = x_n - \dfrac{x_n^3 - 2x_n - 5}{3x_n^2 - 2}$.
 
-$x_0 = 2$: $f(2) = -1$, $f'(2) = 10$. $x_1 = 2 - (-1/10) = 2.1000$.
+$x_0 = 2$: $f(2) = -1$$f'(2) = 10$. $x_1 = 2 - (-1/10) = 2.1000$.
 
-$x_1 = 2.1$: $f(2.1) = 9.261-4.2-5 = 0.061$, $f'(2.1) = 13.23-2 = 11.23$.
+$x_1 = 2.1$: $f(2.1) = 9.261-4.2-5 = 0.061$$f'(2.1) = 13.23-2 = 11.23$.
 $x_2 = 2.1 - 0.061/11.23 = 2.0946$.
 
 **If you get this wrong, revise:** [Newton-Raphson Method](#3-newton-raphson-method) — Section 3.
@@ -484,7 +484,7 @@ Use Simpson's rule with 4 strips to approximate $\displaystyle\int_0^2 e^{-x^2}\
 
 <details>
 <summary>Solution 5</summary>
-$h = 0.5$. Values: $y_0 = 1$, $y_1 = e^{-0.25} \approx 0.7788$, $y_2 = e^{-1} \approx 0.3679$, $y_3 = e^{-2.25} \approx 0.1054$, $y_4 = e^{-4} \approx 0.0183$.
+$h = 0.5$. Values: $y_0 = 1$$y_1 = e^{-0.25} \approx 0.7788$$y_2 = e^{-1} \approx 0.3679$$y_3 = e^{-2.25} \approx 0.1054$$y_4 = e^{-4} \approx 0.0183$.
 
 $$\int_0^2 e^{-x^2}\,dx \approx \frac{0.5}{3}[1 + 4(0.7788) + 2(0.3679) + 4(0.1054) + 0.0183]$$
 $$= \frac{0.5}{3}[1 + 3.1152 + 0.7358 + 0.4216 + 0.0183] = \frac{0.5}{3}(5.2909) \approx 0.8818$$
@@ -509,7 +509,7 @@ $f(\ln 3) = 3 - 3\ln 3 \approx 3 - 3.296 = -0.296 \lt 0$.
 Since $f''(x) = e^x \gt 0$This is a global minimum. The minimum value is negative, and
 $f(x) \to \infty$ as $x \to \pm\infty$So $f(x) = 0$ has exactly two roots.
 
-$f(0) = 1 \gt 0$, $f(1) = e-3 \lt 0$: root in $(0,1)$. $f(1) \lt 0$, $f(2) = e^2-6 \gt 0$: Root in
+$f(0) = 1 \gt 0$$f(1) = e-3 \lt 0$: root in $(0,1)$. $f(1) \lt 0$$f(2) = e^2-6 \gt 0$: Root in
 $(1,2)$.
 
 **If you get this wrong, revise:** [Sign Change Theorem](#1-locating-roots-sign-change) — Section 1.
@@ -523,11 +523,11 @@ The Newton-Raphson formula fails when applied to $f(x) = x^{1/3}$ starting from 
 
 <details>
 <summary>Solution 7</summary>
-$f(x) = x^{1/3}$, $f'(x) = \dfrac{1}{3}x^{-2/3}$.
+$f(x) = x^{1/3}$$f'(x) = \dfrac{1}{3}x^{-2/3}$.
 
 $x_{n+1} = x_n - \dfrac◆LB◆x_n^{1/3}◆RB◆◆LB◆\frac{1}{3}x_n^{-2/3}◆RB◆ = x_n - 3x_n = -2x_n$.
 
-So $x_1 = -2$, $x_2 = 4$, $x_3 = -8$... The iterates oscillate and diverge.
+So $x_1 = -2$$x_2 = 4$$x_3 = -8$... The iterates oscillate and diverge.
 
 The problem is that $f'(0) = \infty$ — the tangent at the root $x=0$ is vertical, so the
 Newton-Raphson step sends the iterate to $-\infty$.
@@ -543,7 +543,7 @@ Use the trapezium rule with 6 strips to approximate $\displaystyle\int_1^4 \ln x
 
 <details>
 <summary>Solution 8</summary>
-$h = 0.5$. Values: $\ln 1 = 0$, $\ln 1.5 \approx 0.4055$, $\ln 2 \approx 0.6931$, $\ln 2.5 \approx 0.9163$, $\ln 3 \approx 1.0986$, $\ln 3.5 \approx 1.2528$, $\ln 4 \approx 1.3863$.
+$h = 0.5$. Values: $\ln 1 = 0$$\ln 1.5 \approx 0.4055$$\ln 2 \approx 0.6931$$\ln 2.5 \approx 0.9163$$\ln 3 \approx 1.0986$$\ln 3.5 \approx 1.2528$$\ln 4 \approx 1.3863$.
 
 $$\mathrm{Approx} = \frac{0.5}{2}[0 + 2(0.4055+0.6931+0.9163+1.0986+1.2528) + 1.3863]$$
 $$= 0.25[0 + 2(4.3663) + 1.3863] = 0.25[8.7326 + 1.3863] = 0.25 \times 10.1189 \approx 2.5297$$
@@ -561,11 +561,11 @@ For the equation $x^3 + x - 3 = 0$Show that $x_{n+1} = \sqrt[3]{3 - x_n}$ conver
 
 <details>
 <summary>Solution 9</summary>
-$f(1) = -1 \lt 0$, $f(1.2) = 1.728 + 1.2 - 3 = -0.072 \lt 0$, $f(1.3) = 2.197 + 1.3 - 3 = 0.497 \gt 0$.
+$f(1) = -1 \lt 0$$f(1.2) = 1.728 + 1.2 - 3 = -0.072 \lt 0$$f(1.3) = 2.197 + 1.3 - 3 = 0.497 \gt 0$.
 
 Root near $\alpha \approx 1.21$.
 
-$g(x) = (3-x)^{1/3}$, $g'(x) = -\dfrac{1}{3}(3-x)^{-2/3}$.
+$g(x) = (3-x)^{1/3}$$g'(x) = -\dfrac{1}{3}(3-x)^{-2/3}$.
 
 $|g'(\alpha)| = \dfrac{1}{3}(3-1.21)^{-2/3} = \dfrac{1}{3}(1.79)^{-2/3} \approx \dfrac◆LB◆1◆RB◆◆LB◆3 \times 1.489◆RB◆ \approx 0.224 \lt 1$.
 
@@ -597,15 +597,15 @@ Convergence is lost.
 
 <details>
 <summary>Solution 11</summary>
-$f(x) = (x-2)^3$, $f'(x) = 3(x-2)^2$.
+$f(x) = (x-2)^3$$f'(x) = 3(x-2)^2$.
 
 $x_{n+1} = x_n - \dfrac{(x_n-2)^3}{3(x_n-2)^2} = x_n - \dfrac{x_n - 2}{3} = \dfrac{2x_n + 4}{3}$
 
-Starting from $x_0 = 5$: $x_1 = 14/3 \approx 4.667$, $x_2 = 40/9 \approx 4.444$
-$x_3 = 116/27 \approx 4.296$, $x_4 = 344/81 \approx 4.198$.
+Starting from $x_0 = 5$: $x_1 = 14/3 \approx 4.667$$x_2 = 40/9 \approx 4.444$
+$x_3 = 116/27 \approx 4.296$$x_4 = 344/81 \approx 4.198$.
 
-Error: $e_0 = 3$, $e_1 = 8/3 \approx 2.667$, $e_2 = 16/9 \approx 1.778$
-$e_3 = 32/27 \approx 1.185$, $e_4 = 64/81 \approx 0.790$.
+Error: $e_0 = 3$$e_1 = 8/3 \approx 2.667$$e_2 = 16/9 \approx 1.778$
+$e_3 = 32/27 \approx 1.185$$e_4 = 64/81 \approx 0.790$.
 
 Ratio: $e_{n+1}/e_n = 2/3$ for all $n$. This is linear convergence with rate $2/3$.
 
@@ -634,8 +634,8 @@ $[0,2]$ and hence bound the error in your approximation.
 <summary>Solution 12</summary>
 (a) $h = 0.5$.
 
-$y_0 = f(0) = 1$, $y_1 = f(0.5) = 1/1.25 = 0.8$, $y_2 = f(1) = 0.5$
-$y_3 = f(1.5) = 1/3.25 \approx 0.3077$, $y_4 = f(2) = 0.2$.
+$y_0 = f(0) = 1$$y_1 = f(0.5) = 1/1.25 = 0.8$$y_2 = f(1) = 0.5$
+$y_3 = f(1.5) = 1/3.25 \approx 0.3077$$y_4 = f(2) = 0.2$.
 
 $$\mathrm{Approx} = \frac{0.5}{2}[1 + 2(0.8 + 0.5 + 0.3077) + 0.2] = 0.25[1 + 2(1.6077) + 0.2] = 0.25 \times 4.4154 \approx 1.1039$$
 
@@ -646,7 +646,7 @@ $x = 2$ where it equals $6(4) - 2 = 22$. The denominator $(1+x^2)^3$ is minimise
 It equals 1. We need to maximise $|f''(x)|$.
 
 Checking critical points: $f'''(x) = 0$ gives potential extrema of $f''$. Alternatively, evaluate at
-Endpoints and critical points. $f''(0) = -2$, $f''(1) = 4/8 = 0.5$, $f''(2) = 22/125 = 0.176$.
+Endpoints and critical points. $f''(0) = -2$$f''(1) = 4/8 = 0.5$$f''(2) = 22/125 = 0.176$.
 
 So $M = 2$ (taking $|f''(x)| \leq 2$).
 
@@ -679,10 +679,10 @@ $\alpha$.
 $f(0.7) = e^{-0.7} - 0.7 \approx 0.4966 - 0.7 = -0.2034 \lt 0$.
 By the sign change theorem, $\alpha \in (0.5, 0.7)$.
 
-(b) $g_1(x) = e^{-x}$, $g_1'(x) = -e^{-x}$. At $\alpha \approx 0.567$:
+(b) $g_1(x) = e^{-x}$$g_1'(x) = -e^{-x}$. At $\alpha \approx 0.567$:
 $|g_1'(\alpha)| = e^{-\alpha} = \alpha \approx 0.567 \lt 1$. Converges.
 
-(c) $g_2(x) = -\ln x$, $g_2'(x) = -1/x$. At $\alpha \approx 0.567$:
+(c) $g_2(x) = -\ln x$$g_2'(x) = -1/x$. At $\alpha \approx 0.567$:
 $|g_2'(\alpha)| = 1/\alpha \approx 1.763 \gt 1$. Diverges.
 
 Both rearrangements solve the same equation, but only $x_{n+1} = e^{-x_n}$ converges near the root.
@@ -700,19 +700,19 @@ Convergence towards $x = 1$.
 
 <details>
 <summary>Solution 14</summary>
-$f(x) = x^3 - 3x + 2 = (x-1)^2(x+2)$, $f'(x) = 3x^2 - 3$.
+$f(x) = x^3 - 3x + 2 = (x-1)^2(x+2)$$f'(x) = 3x^2 - 3$.
 
-$x_0 = 0.5$: $f(0.5) = 0.125 - 1.5 + 2 = 0.625$, $f'(0.5) = 0.75 - 3 = -2.25$.
+$x_0 = 0.5$: $f(0.5) = 0.125 - 1.5 + 2 = 0.625$$f'(0.5) = 0.75 - 3 = -2.25$.
 $x_1 = 0.5 - 0.625/(-2.25) = 0.5 + 0.2778 = 0.7778$.
 
-$x_1 = 0.7778$: $f(0.7778) = 0.4703 - 2.3334 + 2 = 0.1369$, $f'(0.7778) = 1.8151 - 3 = -1.1849$.
+$x_1 = 0.7778$: $f(0.7778) = 0.4703 - 2.3334 + 2 = 0.1369$$f'(0.7778) = 1.8151 - 3 = -1.1849$.
 $x_2 = 0.7778 - 0.1369/(-1.1849) = 0.7778 + 0.1155 = 0.8933$.
 
-The iterates are approaching $x = 1$ but slowly. Errors: $e_0 = 0.5$, $e_1 \approx 0.2222$
+The iterates are approaching $x = 1$ but slowly. Errors: $e_0 = 0.5$$e_1 \approx 0.2222$
 $e_2 \approx 0.1067$. The ratio $e_2/e_1 \approx 0.48$And $e_1/e_0 \approx 0.44$. This is
 Approximately linear convergence.
 
-At the double root $x = 1$: $f(1) = 0$, $f'(1) = 0$. Since $f'(\alpha) = 0$Quadratic convergence Is
+At the double root $x = 1$: $f(1) = 0$$f'(1) = 0$. Since $f'(\alpha) = 0$Quadratic convergence Is
 lost (as in Section 3.5). For a double root, Newton-Raphson converges linearly with rate
 Approximately $1/2$.
 
@@ -734,13 +734,13 @@ Approximately $1/2$.
 
 <details>
 <summary>Solution 15</summary>
-(a) $h = 0.5$. $y_0 = \sqrt{0} = 0$, $y_1 = \sqrt{0.5} \approx 0.7071$, $y_2 = \sqrt{1} = 1$.
+(a) $h = 0.5$. $y_0 = \sqrt{0} = 0$$y_1 = \sqrt{0.5} \approx 0.7071$$y_2 = \sqrt{1} = 1$.
 
 $$\mathrm{Approx} = \frac{0.5}{2}[0 + 2(0.7071) + 1] = 0.25 \times 2.4142 = 0.6036$$
 
 (b) Exact: $2/3 \approx 0.6667$. Actual error: $|0.6667 - 0.6036| = 0.0631$.
 
-(c) $f(x) = x^{1/2}$, $f'(x) = \frac{1}{2}x^{-1/2}$, $f''(x) = -\frac{1}{4}x^{-3/2}$.
+(c) $f(x) = x^{1/2}$$f'(x) = \frac{1}{2}x^{-1/2}$$f''(x) = -\frac{1}{4}x^{-3/2}$.
 
 On $(0, 1]$: $|f''(x)| = \frac{1}{4}x^{-3/2}$Which is unbounded as $x \to 0^+$. The error bound
 Requires $f''$ to be bounded on $[a,b]$But $f''(x) \to \infty$ as $x \to 0$.
@@ -796,7 +796,7 @@ Entirely.
 
 <details>
 <summary>Solution 17</summary>
-(a) $f(x) = \tan x - 1$, $f'(x) = \sec^2 x = 1/\cos^2 x$.
+(a) $f(x) = \tan x - 1$$f'(x) = \sec^2 x = 1/\cos^2 x$.
 
 $x_0 = 1.3$: $f(1.3) = \tan(1.3) - 1 \approx 3.6021 - 1 = 2.6021$.
 $f'(1.3) = \sec^2(1.3) = 1/\cos^2(1.3) \approx 1/0.0754 \approx 13.26$.
@@ -806,7 +806,7 @@ This is still far from $\alpha = 0.7854$. The function is very steep here (large
 Is small but the iterate is far from the root.
 
 (b) Newton-Raphson fails when $f'(x_0) = 0$I.e., $\sec^2 x_0 = 0$Which never happens since
-$\sec^2 x \geq 1$ for all $x$. However, as $x_0 \to \pi/2^-$, $\cos x_0 \to 0$ and
+$\sec^2 x \geq 1$ for all $x$. However, as $x_0 \to \pi/2^-$$\cos x_0 \to 0$ and
 $f'(x_0) \to \infty$While $f(x_0) = \tan x_0 - 1 \to \infty$. The ratio
 $f(x_0)/f'(x_0) = (\tan x_0 - 1)\cos^2 x_0$ tends to a finite limit, but the function becomes
 Extremely steep near $\pi/2$Making the iteration numerically unstable. Starting very close to

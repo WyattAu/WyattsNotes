@@ -224,7 +224,7 @@ Finalised, its distance cannot improve — this assumption fails with negative e
 <details>
 <summary>Answer</summary>
 
-$a = 2$, $b = 2$, $c = \log_2 2 = 1$. $f(n) = n = \Theta(n^1) = \Theta(n^c)$. Case 2:
+$a = 2$$b = 2$$c = \log_2 2 = 1$. $f(n) = n = \Theta(n^1) = \Theta(n^c)$. Case 2:
 $T(n) = \Theta(n \log n)$.
 
 **Revision:** [Complexity Analysis](/docs/alevel/computer-science/algorithms/complexity-analysis)

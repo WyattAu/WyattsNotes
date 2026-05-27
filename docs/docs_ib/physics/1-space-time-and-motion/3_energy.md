@@ -550,7 +550,7 @@ $$
 ### Question 4 (Paper 1 style)
 
 A satellite of mass $200\mathrm{ kg}$ is in a circular orbit at altitude $500\mathrm{ km}$.
-($M_E = 5.97 \times 10^{24}\mathrm{ kg}$, $R_E = 6.37 \times 10^6\mathrm{ m}$)
+($M_E = 5.97 \times 10^{24}\mathrm{ kg}$$R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 **(a)** Find the orbital speed.
 
@@ -652,7 +652,7 @@ The difference in total orbital energies.
 Find the energy required to move a $1000\mathrm{ kg}$ satellite from a circular orbit at
 $300\mathrm{ km}$ altitude to one at $600\mathrm{ km}$ altitude.
 
-($M_E = 5.97 \times 10^{24}\mathrm{ kg}$, $R_E = 6.37 \times 10^6\mathrm{ m}$)
+($M_E = 5.97 \times 10^{24}\mathrm{ kg}$$R_E = 6.37 \times 10^6\mathrm{ m}$)
 
 $$
 R_1 = 6.67 \times 10^6\mathrm{ m}, \quad r_2 = 6.97 \times 10^6\mathrm{ m}

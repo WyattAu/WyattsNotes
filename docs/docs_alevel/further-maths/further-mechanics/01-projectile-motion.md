@@ -221,7 +221,7 @@ A projectile is launched at $30\,\mathrm{m s}^{-1}$ at $50^\circ$ to the horizon
 
 <details>
 <summary>Solution 1</summary>
-$V = 30$, $\theta = 50^\circ$, $g = 9.8$.
+$V = 30$$\theta = 50^\circ$$g = 9.8$.
 
 $H = \dfrac◆LB◆V^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ = \dfrac◆LB◆900\sin^2 50°◆RB◆◆LB◆19.6◆RB◆ = \dfrac◆LB◆900 \times 0.5868◆RB◆◆LB◆19.6◆RB◆ \approx 26.94\,\mathrm{m}$.
 
@@ -260,7 +260,7 @@ A projectile is launched from a cliff $80\,\mathrm{m}$ high at $20\,\mathrm{m s}
 
 <details>
 <summary>Solution 3</summary>
-$\theta = 0^\circ$So $v_x = 20$, $v_y = 0$.
+$\theta = 0^\circ$So $v_x = 20$$v_y = 0$.
 
 $y = -\dfrac{1}{2}gt^2 = -80 \implies t^2 = \dfrac{160}{9.8} \implies t \approx 4.04\,\mathrm{s}$.
 
@@ -680,7 +680,7 @@ By conservation of energy (or by kinematics):
 
 $v_x = V\cos\theta$ (constant).
 
-$v_y^2 = (V\sin\theta)^2 + 2gh$ (from $v^2 = u^2 + 2as$ with $a = g$, $s = h$).
+$v_y^2 = (V\sin\theta)^2 + 2gh$ (from $v^2 = u^2 + 2as$ with $a = g$$s = h$).
 
 $v^2 = v_x^2 + v_y^2 = V^2\cos^2\theta + V^2\sin^2\theta + 2gh = V^2 + 2gh$.
 
@@ -728,7 +728,7 @@ $20\,\mathrm{m\,s^{-1}}$ at an angle of $50°$ to the horizontal. Find the range
 **Solution.** Resolving perpendicular to the plane (call this the $\xi$-axis) and parallel to the
 Plane (the $\eta$-axis):
 
-$a_\xi = -g\cos 30° = -\dfrac◆LB◆g\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $a_\eta = -g\sin 30° = -\dfrac{g}{2}$.
+$a_\xi = -g\cos 30° = -\dfrac◆LB◆g\sqrt{3}◆RB◆◆LB◆2◆RB◆$$a_\eta = -g\sin 30° = -\dfrac{g}{2}$.
 
 $u_\xi = 20\sin(50° - 30°) = 20\sin 20° \approx 6.84\,\mathrm{m\,s^{-1}}$.
 
@@ -771,9 +771,9 @@ $$\boxed{\theta = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆ + \frac◆LB◆\alph
 Horizontal. At the same instant, a second particle is released from rest at position $(d, h)$. Find
 The condition on $u$ and $\theta$ for a collision.
 
-**Solution.** The second particle falls freely: $x_2(t) = d$, $y_2(t) = h - \dfrac{1}{2}gt^2$.
+**Solution.** The second particle falls freely: $x_2(t) = d$$y_2(t) = h - \dfrac{1}{2}gt^2$.
 
-The first particle: $x_1(t) = u\cos\theta\,t$, $y_1(t) = u\sin\theta\,t - \dfrac{1}{2}gt^2$.
+The first particle: $x_1(t) = u\cos\theta\,t$$y_1(t) = u\sin\theta\,t - \dfrac{1}{2}gt^2$.
 
 For collision: $u\cos\theta\,t = d \implies t = \dfrac◆LB◆d◆RB◆◆LB◆u\cos\theta◆RB◆$.
 
@@ -795,7 +795,7 @@ Is $mkv^2$ opposing motion. Find the maximum height.
 
 $$\int_0^u \frac{v\,dv}{g + kv^2} = \int_0^H dh$$
 
-Let $w = g + kv^2$, $dw = 2kv\,dv$:
+Let $w = g + kv^2$$dw = 2kv\,dv$:
 
 $$\frac{1}{2k}\int_g^{g+ku^2} \frac{dw}{w} = \frac{1}{2k}\ln\!\left(\frac{g+ku^2}{g}\right) = H$$
 
@@ -1097,7 +1097,7 @@ Is a circle.
 The trajectory is $y = x\tan\theta - \dfrac{gx^2}{2u^2}(1+\tan^2\theta)$.
 
 The vertex of this parabola (maximum height point) is at
-$x_v = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$, $y_v = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$.
+$x_v = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$$y_v = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$.
 
 $x_v^2 + (y_v - \dfrac{u^2}{4g})^2 = \dfrac◆LB◆u^4\sin^2 2\theta◆RB◆◆LB◆4g^2◆RB◆ + \dfrac{u^4}{16g^2}(\cos 2\theta - 1)^2$.
 

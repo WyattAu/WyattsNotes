@@ -349,7 +349,7 @@ $v_2 = 25.6/8 = 3.2$ m s$^{-1}$. $v_1 = 3.2 - 1.2 = 2.0$ m s$^{-1}$.
 <summary>Problem 10</summary>
 Two trolleys approach each other on a frictionless track. Trolley A ($2.0$ kg) moves at $3.0$ m s$^{-1}$ to the right, trolley B ($3.0$ kg) moves at $2.0$ m s$^{-1}$ to the left. They collide elastically. Find their final velocities.
 
-**Answer.** Taking right as positive: $u_1 = 3.0$, $u_2 = -2.0$.
+**Answer.** Taking right as positive: $u_1 = 3.0$$u_2 = -2.0$.
 
 $v_1 = \frac{(2-3)(3) + 2(3)(-2)}{2+3} = \frac{-3 - 12}{5} = -3.0$ m s$^{-1}$.
 
@@ -586,9 +586,9 @@ A ball of mass $0.10$ kg is projected at $20^\circ$ to the vertical towards a sm
 **Answer.** Let the $x$-axis be perpendicular to the wall (positive away from wall). The angle to
 The normal is $20^\circ$.
 
-Before: $u_x = -10\cos 20° = -9.40$ m s$^{-1}$, $u_y = 10\sin 20° = 3.42$ m s$^{-1}$.
+Before: $u_x = -10\cos 20° = -9.40$ m s$^{-1}$$u_y = 10\sin 20° = 3.42$ m s$^{-1}$.
 
-After (smooth wall): $v_x = +0.60 \times 9.40 = +5.64$ m s$^{-1}$, $v_y = 3.42$ m s$^{-1}$.
+After (smooth wall): $v_x = +0.60 \times 9.40 = +5.64$ m s$^{-1}$$v_y = 3.42$ m s$^{-1}$.
 
 Impulse: $J_x = 0.10(5.64 - (-9.40)) = 0.10 \times 15.04 = 1.50$ N s away from the wall. $J_y = 0$.
 

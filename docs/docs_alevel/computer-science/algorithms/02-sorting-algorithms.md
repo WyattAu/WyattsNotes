@@ -192,7 +192,7 @@ $$T(n) = 2T(n/2) + O(n), \quad T(1) = O(1)$$
 
 The $O(n)$ term comes from the `merge` step, which processes each element exactly once.
 
-By the Master Theorem: $a = 2$, $b = 2$, $f(n) = O(n)$. We have
+By the Master Theorem: $a = 2$$b = 2$$f(n) = O(n)$. We have
 $f(n) = O(n^{\log_b a}) = O(n^1) = O(n)$Which is case 2. Therefore:
 
 $$T(n) = O(n \log n)$$
@@ -458,9 +458,9 @@ $(n-1) + (n-2) + \cdots + 1 = n(n-1)/2 = O(n^2)$.
 <details>
 <summary>Answer</summary>
 
-The recurrence: $T(n) = 2T(n/2) + cn$, $T(1) = d$.
+The recurrence: $T(n) = 2T(n/2) + cn$$T(1) = d$.
 
-Master Theorem: $a = 2$, $b = 2$, $f(n) = cn$.
+Master Theorem: $a = 2$$b = 2$$f(n) = cn$.
 
 $n^{\log_b a} = n^{\log_2 2} = n^1 = n$.
 

@@ -364,7 +364,7 @@ EcoRI cuts at $1000\ \mathrm{bp}$Producing fragments of $1000\ \mathrm{bp}$ and 
 BamHI cuts the $4000\ \mathrm{bp}$ fragment at position $3500\ \mathrm{bp}$Producing fragments of
 $2500\ \mathrm{bp}$ ($3500 - 1000$) and $1500\ \mathrm{bp}$ ($5000 - 3500$).
 
-Final fragments: $1000\ \mathrm{bp}$, $2500\ \mathrm{bp}$And $1500\ \mathrm{bp}$ (three fragments).
+Final fragments: $1000\ \mathrm{bp}$$2500\ \mathrm{bp}$And $1500\ \mathrm{bp}$ (three fragments).
 
 **Worked Example 3: Calculating DNA concentration from absorbance.** A DNA solution has an
 absorbance of 0.40 at $260\ \mathrm{nm}$. The relationship between absorbance and double-stranded
@@ -454,7 +454,7 @@ A plasmid has a total length of $4500\ \mathrm{bp}$. It is cut with two restrict
 the linearised plasmid to the first cut. Fragment 2: from position 900 to 2700 =
 $1800\ \mathrm{bp}$. Fragment 3: from position 2700 to 4500 = $1800\ \mathrm{bp}$.
 
-The three fragments are: $900\ \mathrm{bp}$, $1800\ \mathrm{bp}$And $1800\ \mathrm{bp}$.
+The three fragments are: $900\ \mathrm{bp}$$1800\ \mathrm{bp}$And $1800\ \mathrm{bp}$.
 
 (c) The smallest fragment ($900\ \mathrm{bp}$) will travel furthest from the wells because smaller
 DNA fragments migrate faster through the gel matrix.

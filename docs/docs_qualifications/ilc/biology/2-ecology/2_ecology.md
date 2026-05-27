@@ -183,7 +183,7 @@ Density).
 
 ### Pollution
 
-- **Air pollution:** $\mathrm{CO_2$, $\mathrm{SO_2$, $\mathrm{NO_x$Particulate matter.
+- **Air pollution:** $\mathrm{CO_2$$\mathrm{SO_2$$\mathrm{NO_x$Particulate matter.
 - **Water pollution:** sewage, fertilisers (eutrophication), heavy metals, oil spills.
 - **Soil pollution:** pesticides, herbicides, industrial waste.
 
@@ -212,7 +212,7 @@ Organisms. If the dissolved oxygen drops below about 5 mg/L, fish begin to die.
 
 ### Climate Change (HL)
 
-- Enhanced greenhouse effect due to increased atmospheric $\mathrm{CO_2$, $\mathrm{CH_4$
+- Enhanced greenhouse effect due to increased atmospheric $\mathrm{CO_2$$\mathrm{CH_4$
   $\mathrm{N_2\mathrm{O$.
 - Rising global temperatures, sea level rise, extreme weather events.
 - Impact on ecosystems, agriculture, and human health.

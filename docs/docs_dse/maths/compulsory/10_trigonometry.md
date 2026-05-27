@@ -128,9 +128,9 @@ $$
 
 <details>
 <summary>Examples</summary>
-- In a right-angled triangle, if the hypotenuse is $13$ and one leg is $5$Then $\sin\theta = \frac{5}{13}$, $\cos\theta = \frac{12}{13}$, $\tan\theta = \frac{5}{12}$.
+- In a right-angled triangle, if the hypotenuse is $13$ and one leg is $5$Then $\sin\theta = \frac{5}{13}$$\cos\theta = \frac{12}{13}$$\tan\theta = \frac{5}{12}$.
 - Given $\tan\theta = 3$ and $\theta$ is acute: construct a triangle with opposite $= 3$Adjacent $= 1$Hypotenuse $= \sqrt{10}$. Then $\sin\theta = \frac{3}{\sqrt{10}}$ and $\cos\theta = \frac{1}{\sqrt{10}}$.
-- If $\sec\theta = \frac{5}{3}$ and $\theta$ is in the first quadrant, then $\cos\theta = \frac{3}{5}$, $\sin\theta = \frac{4}{5}$And $\tan\theta = \frac{4}{3}$.
+- If $\sec\theta = \frac{5}{3}$ and $\theta$ is in the first quadrant, then $\cos\theta = \frac{3}{5}$$\sin\theta = \frac{4}{5}$And $\tan\theta = \frac{4}{3}$.
 
 ## Trigonometric Identities
 
@@ -190,7 +190,7 @@ $$
 </details>
 <summary>Examples</summary>
 - Simplify $\frac{\sin\theta}{\tan\theta}$: Since $\tan\theta = \frac{\sin\theta}{\cos\theta}$We have $\frac{\sin\theta}{\sin\theta / \cos\theta} = \cos\theta$.
-- Given $\sin\theta = \frac{3}{5}$ and $\theta$ is in the second quadrant, find $\cos\theta$ and $\tan\theta$: $\cos\theta = -\sqrt{1 - \frac{9}{25}} = -\frac{4}{5}$, $\tan\theta = \frac{3/5}{-4/5} = -\frac{3}{4}$.
+- Given $\sin\theta = \frac{3}{5}$ and $\theta$ is in the second quadrant, find $\cos\theta$ and $\tan\theta$: $\cos\theta = -\sqrt{1 - \frac{9}{25}} = -\frac{4}{5}$$\tan\theta = \frac{3/5}{-4/5} = -\frac{3}{4}$.
 - Prove $\frac{1}{1 + \sin\theta} + \frac{1}{1 - \sin\theta} = 2\sec^2\theta$: LHS $= \frac{(1 - \sin\theta) + (1 + \sin\theta)}{(1 + \sin\theta)(1 - \sin\theta)} = \frac{2}{\cos^2\theta} = 2\sec^2\theta$.
 
 ## Exact Values
@@ -229,7 +229,7 @@ The graph.
 | Range          | $[-1, 1]$                            |
 | Period         | $2\pi$ (or $360^\circ$)              |
 | Amplitude      | $1$                                  |
-| $x$-intercepts | $n\pi$, $n \in \mathbb{Z}$             |
+| $x$-intercepts | $n\pi$$n \in \mathbb{Z}$             |
 | Maximum        | $1$ at $x = \frac{\pi}{2} + 2n\pi$   |
 | Minimum        | $-1$ at $x = \frac{3\pi}{2} + 2n\pi$ |
 
@@ -243,7 +243,7 @@ The graph is an odd function ($\sin(-x) = -\sin x$), symmetric about the origin.
 | Range          | $[-1, 1]$                                |
 | Period         | $2\pi$ (or $360^\circ$)                  |
 | Amplitude      | $1$                                      |
-| $x$-intercepts | $\frac{\pi}{2} + n\pi$, $n \in \mathbb{Z}$ |
+| $x$-intercepts | $\frac{\pi}{2} + n\pi$$n \in \mathbb{Z}$ |
 | Maximum        | $1$ at $x = 2n\pi$                       |
 | Minimum        | $-1$ at $x = \pi + 2n\pi$                |
 
@@ -257,7 +257,7 @@ The graph is an even function ($\cos(-x) = \cos x$), symmetric about the $y$-axi
 | Range          | All real $\mathbb{R}$         |
 | Period         | $\pi$ (or $180^\circ$)        |
 | Amplitude      | Not defined (unbounded)       |
-| $x$-intercepts | $n\pi$, $n \in \mathbb{Z}$      |
+| $x$-intercepts | $n\pi$$n \in \mathbb{Z}$      |
 | Asymptotes     | $x = \frac{\pi}{2} + n\pi$    |
 
 The graph is an odd function ($\tan(-x) = -\tan x$). The tangent function has vertical asymptotes
@@ -292,7 +292,7 @@ $$
 
 ### General Solutions
 
-When solving $\sin\theta = k$, $\cos\theta = k$Or $\tan\theta = k$The solutions repeat Periodically.
+When solving $\sin\theta = k$$\cos\theta = k$Or $\tan\theta = k$The solutions repeat Periodically.
 The general solutions (in degrees) are:
 
 **For $\sin\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arcsin k$ be the principal value
@@ -347,7 +347,7 @@ Many trigonometric equations require algebraic manipulation before they can be s
 <details>
 <summary>Examples</summary>
 - Solve $\sin\theta = \frac{1}{2}$ for $0^\circ \leq \theta < 360^\circ$: $\alpha = 30^\circ$. Solutions: $\theta = 30^\circ$ or $\theta = 180^\circ - 30^\circ = 150^\circ$.
-- Solve $2\cos^2\theta - \cos\theta - 1 = 0$ for $0 \leq \theta < 2\pi$: Let $u = \cos\theta$. Then $2u^2 - u - 1 = 0 \implies (2u + 1)(u - 1) = 0$. So $\cos\theta = -\frac{1}{2}$ or $\cos\theta = 1$. Solutions: $\theta = \frac{2\pi}{3}$, $\theta = \frac{4\pi}{3}$, $\theta = 0$.
+- Solve $2\cos^2\theta - \cos\theta - 1 = 0$ for $0 \leq \theta < 2\pi$: Let $u = \cos\theta$. Then $2u^2 - u - 1 = 0 \implies (2u + 1)(u - 1) = 0$. So $\cos\theta = -\frac{1}{2}$ or $\cos\theta = 1$. Solutions: $\theta = \frac{2\pi}{3}$$\theta = \frac{4\pi}{3}$$\theta = 0$.
 - Solve $\sin 2\theta = \cos\theta$ for $0^\circ \leq \theta < 360^\circ$: $2\sin\theta\cos\theta = \cos\theta \implies \cos\theta(2\sin\theta - 1) = 0$. Either $\cos\theta = 0 \implies \theta = 90^\circ, 270^\circ$Or $\sin\theta = \frac{1}{2} \implies \theta = 30^\circ, 150^\circ$. Solutions: $30^\circ, 90^\circ, 150^\circ, 270^\circ$.
 - Solve $\tan^2\theta = 3$ for $0 \leq \theta < 2\pi$: $\tan\theta = \pm\sqrt{3}$. $\tan\theta = \sqrt{3} \implies \theta = \frac{\pi}{3}, \frac{4\pi}{3}$. $\tan\theta = -\sqrt{3} \implies \theta = \frac{2\pi}{3}, \frac{5\pi}{3}$.
 
@@ -355,7 +355,7 @@ Many trigonometric equations require algebraic manipulation before they can be s
 
 ### Sine Rule
 
-For any triangle $ABC$ with sides $a$, $b$, $c$ opposite the respective angles:
+For any triangle $ABC$ with sides $a$$b$$c$ opposite the respective angles:
 
 $$
 \begin{aligned}
@@ -369,7 +369,7 @@ Is known. In the ambiguous SSA case, two distinct triangles may satisfy the give
 
 ### Cosine Rule
 
-For any triangle $ABC$ with sides $a$, $b$, $c$ opposite the respective angles:
+For any triangle $ABC$ with sides $a$$b$$c$ opposite the respective angles:
 
 $$
 \begin{aligned}
@@ -425,12 +425,12 @@ This connects to the vector formulation described in the
 
 </details>
 <summary>Examples</summary>
-- In $\triangle ABC$, $a = 8$, $b = 6$, $C = 60^\circ$. Find $c$: $c^2 = 64 + 36 - 2(6)(8)\cos 60^\circ = 100 - 48 = 52$So $c = 2\sqrt{13}$.
-- In $\triangle ABC$, $a = 7$, $A = 45^\circ$, $B = 60^\circ$. Find $b$: $\frac{b}{\sin 60^\circ} = \frac{7}{\sin 45^\circ} \implies b = \frac{7 \cdot \frac{\sqrt{3}}{2}}{\frac{\sqrt{2}}{2}} = \frac{7\sqrt{3}}{\sqrt{2}} = \frac{7\sqrt{6}}{2}$.
+- In $\triangle ABC$$a = 8$$b = 6$$C = 60^\circ$. Find $c$: $c^2 = 64 + 36 - 2(6)(8)\cos 60^\circ = 100 - 48 = 52$So $c = 2\sqrt{13}$.
+- In $\triangle ABC$$a = 7$$A = 45^\circ$$B = 60^\circ$. Find $b$: $\frac{b}{\sin 60^\circ} = \frac{7}{\sin 45^\circ} \implies b = \frac{7 \cdot \frac{\sqrt{3}}{2}}{\frac{\sqrt{2}}{2}} = \frac{7\sqrt{3}}{\sqrt{2}} = \frac{7\sqrt{6}}{2}$.
 - A ship sails $10$ km on a bearing of $030^\circ$Then $8$ km on a bearing of $120^\circ$. Find the distance from the starting point: The angle between the two legs is $120^\circ - 30^\circ = 90^\circ$. Distance $= \sqrt{10^2 + 8^2} = 2\sqrt{41} \approx 12.8$ km.
 - From the top of a $50$ m cliff, the angle of depression of a boat is $30^\circ$. Find the horizontal distance from the boat to the base of the cliff: $\tan 30^\circ = \frac{50}{d} \implies d = \frac{50}{\tan 30^\circ} = 50\sqrt{3} \approx 86.6$ m.
 - A vertical pole $PQ$ stands on horizontal ground. Point $A$ is on the ground, $20$ m from the base $Q$. The angle of elevation of $P$ from $A$ is $35^\circ$. Find the height of the pole: $PQ = 20\tan 35^\circ \approx 14.0$ m.
-- In a cuboid $ABCDEFGH$ with $AB = 4$, $BC = 3$, $CG = 5$Find the angle between the diagonal $AG$ and the base $ABCD$: $AG = \sqrt{16 + 9 + 25} = \sqrt{50} = 5\sqrt{2}$. The projection of $AG$ onto the base is $AC = \sqrt{16 + 9} = 5$. The angle between $AG$ and the base $= \arccos\frac{AC}{AG} = \arccos\frac{5}{5\sqrt{2}} = \arccos\frac{1}{\sqrt{2}} = 45^\circ$.
+- In a cuboid $ABCDEFGH$ with $AB = 4$$BC = 3$$CG = 5$Find the angle between the diagonal $AG$ and the base $ABCD$: $AG = \sqrt{16 + 9 + 25} = \sqrt{50} = 5\sqrt{2}$. The projection of $AG$ onto the base is $AC = \sqrt{16 + 9} = 5$. The angle between $AG$ and the base $= \arccos\frac{AC}{AG} = \arccos\frac{5}{5\sqrt{2}} = \arccos\frac{1}{\sqrt{2}} = 45^\circ$.
 
 ---
 
@@ -469,7 +469,7 @@ Length and the perimeter of the sector.
   $\theta = 180^\circ - (-19.47^\circ) = 199.47^\circ$.
 - Solutions: $\theta \approx 90^\circ, 199.5^\circ, 340.5^\circ$.
 
-4. **Question:** In $\triangle ABC$, $a = 10$, $b = 7$, $c = 8$. Find the largest angle of the Triangle.
+4. **Question:** In $\triangle ABC$$a = 10$$b = 7$$c = 8$. Find the largest angle of the Triangle.
 </details>
 <summary>Answer</summary>
 
@@ -479,7 +479,7 @@ Length and the perimeter of the sector.
 - $A = \arccos\left(\frac{13}{112}\right) \approx 83.3^\circ$.
 
 5. **Question:** From a point $A$ on the ground, the angle of elevation of the top $T$ of a vertical
-Tower is $40^\circ$. From a point $B$, $30$ m closer to the base of the tower, the angle of Elevation
+Tower is $40^\circ$. From a point $B$$30$ m closer to the base of the tower, the angle of Elevation
 is $55^\circ$. Find the height of the tower.
 <details>
 <summary>Answer</summary>
@@ -594,7 +594,7 @@ $30^\circ$ and from $B$ is $45^\circ$. Find the height of the tower.
 - $\sin\theta = -1 \implies \theta = \frac{3\pi}{2}$.
 - Solutions: $\theta = \frac{\pi}{6}, \frac{3\pi}{2}, \frac{5\pi}{6}$.
 
-12. **Question:** In $\triangle ABC$, $a = 5$, $b = 7$, $A = 40^\circ$. Determine whether two Distinct
+12. **Question:** In $\triangle ABC$$a = 5$$b = 7$$A = 40^\circ$. Determine whether two Distinct
 triangles exist, and find all possible values of $B$.
 </details>
 <summary>Answer</summary>
@@ -606,7 +606,7 @@ triangles exist, and find all possible values of $B$.
 - $B = \arcsin(0.8999) \approx 64.2^\circ$.
 - $C = 180^\circ - 40^\circ - 64.2^\circ = 75.8^\circ$.
 - $c = \frac{5\sin 75.8^\circ}{\sin 40^\circ} \approx \frac{5(0.9692)}{0.6428} \approx 7.54$.
-- There is only one triangle, with $B \approx 64.2^\circ$, $C \approx 75.8^\circ$, $c \approx 7.54$.
+- There is only one triangle, with $B \approx 64.2^\circ$$C \approx 75.8^\circ$$c \approx 7.54$.
 
 For the A-Level treatment of this topic, see
 [Trigonometry](https://alevel.wyattau.com/docs/maths/pure-mathematics/trigonometry).
@@ -629,7 +629,7 @@ For trigonometry problems in DSE Paper 1:
 ### Significant Figures
 
 Angle answers should be given to 3 significant figures unless exact values are possible (e.g.,
-$30^\circ$, $45^\circ$, $60^\circ$). Length answers to 3 significant figures.
+$30^\circ$$45^\circ$$60^\circ$). Length answers to 3 significant figures.
 
 ### Common DSE Question Types
 
@@ -660,7 +660,7 @@ This equals the RHS. $\qed$
 
 **Worked Example 14: 3D angle between line and plane**
 
-In the cuboid $ABCDEFGH$ where $AB = 6$, $BC = 8$, $CG = 4$Find the angle between the diagonal $BH$ and
+In the cuboid $ABCDEFGH$ where $AB = 6$$BC = 8$$CG = 4$Find the angle between the diagonal $BH$ and
 the face $ABCD$.
 
 <details>
@@ -704,7 +704,7 @@ Solutions: $\theta = \dfrac{2\pi}{3},\; \pi,\; \dfrac{4\pi}{3}$.
 
 **Worked Example 16: Ambiguous case of sine rule**
 
-In $\triangle ABC$, $a = 8$, $b = 10$, $A = 40^\circ$. Find all possible values of $B$.
+In $\triangle ABC$$a = 8$$b = 10$$A = 40^\circ$. Find all possible values of $B$.
 
 <details>
 <summary>Solution</summary>
@@ -728,7 +728,7 @@ $c = \dfrac{8\sin 86.5^\circ}{\sin 40^\circ} \approx \dfrac{8(0.9981)}{0.6428} \
 
 **Worked Example 17: Area of triangle with sine rule**
 
-In $\triangle ABC$, $a = 7$, $b = 5$, $C = 60^\circ$. Find the area and the length of $c$.
+In $\triangle ABC$$a = 7$$b = 5$$C = 60^\circ$. Find the area and the length of $c$.
 
 <details>
 <summary>Solution</summary>
@@ -782,7 +782,7 @@ $$= \sqrt{2}\!\left(\sin\theta \cdot \frac{\sqrt{2}}{2} + \cos\theta \cdot \frac
 
 </details>
 
-**DSE Practice 2.** In $\triangle ABC$, $a = 5$, $b = 7$, $c = 8$. Find (a) the largest angle, (b) the
+**DSE Practice 2.** In $\triangle ABC$$a = 5$$b = 7$$c = 8$. Find (a) the largest angle, (b) the
 area.
 
 <details>
@@ -853,7 +853,7 @@ $$h \approx 19.8 \text{ m}$$
 
 </details>
 
-**DSE Practice 5.** In $\triangle ABC$, $a = 6$, $B = 45^\circ$And the area is $9\sqrt{2}$. Find the two
+**DSE Practice 5.** In $\triangle ABC$$a = 6$$B = 45^\circ$And the area is $9\sqrt{2}$. Find the two
 possible values of $b$.
 
 <details>
@@ -878,7 +878,7 @@ $c = 6$).
 
 This means $C = A$ or $C = 180^\circ - A$.
 
-If $C = A$: $A + B + C = 2A + 45^\circ = 180^\circ \implies A = 67.5^\circ$, $C = 67.5^\circ$.
+If $C = A$: $A + B + C = 2A + 45^\circ = 180^\circ \implies A = 67.5^\circ$$C = 67.5^\circ$.
 
 $b = \dfrac{6\sin 45^\circ}{\sin 67.5^\circ} = \dfrac{6 \cdot \frac{\sqrt{2}}{2}}{\cos 22.5^\circ} = \dfrac{3\sqrt{2}}{\cos 22.5^\circ} \approx \dfrac{4.243}{0.9239} \approx 4.59$.
 
@@ -887,7 +887,7 @@ $B = 0^\circ$Which is degenerate. So only one valid triangle exists with $b \app
 
 </details>
 
-**DSE Practice 6.** The points $A$, $B$And $C$ are on level ground. $AB = 200$ m, $BC = 150$ m, and
+**DSE Practice 6.** The points $A$$B$And $C$ are on level ground. $AB = 200$ m, $BC = 150$ m, and
 $\angle ABC = 110^\circ$. Find the shortest distance from $C$ to the road passing through $A$ and
 $B$.
 

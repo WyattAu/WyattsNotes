@@ -88,7 +88,7 @@ The **coordination number** is the total number of coordinate bonds to the centr
 
 | Type        | Description          | Examples                                                                                               | Denticity |
 | ----------- | -------------------- | ------------------------------------------------------------------------------------------------------ | --------- |
-| Monodentate | One lone pair donor  | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, $\mathrm{Cl}^-$, $\mathrm{CN}^-$                                  | 1         |
+| Monodentate | One lone pair donor  | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$$\mathrm{Cl}^-$$\mathrm{CN}^-$                                  | 1         |
 | Bidentate   | Two lone pair donors | $\mathrm{NH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{NH}_2$ (en), $\mathrm{C}_2\mathrm{O}_4^{2-}$ (oxalate) | 2         |
 | Hexadentate | Six lone pair donors | $\mathrm{EDTA}^{4-}$                                                                                   | 6         |
 
@@ -102,8 +102,8 @@ system.
 | Coordination number | Geometry      | Example                                                                                            |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
 | 4                   | Tetrahedral   | $[\mathrm{CoCl}_4]^{2-}$                                                                           |
-| 6                   | Octahedral    | $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$, $[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$ |
-| 4                   | Square planar | $[\mathrm{PtCl}_4]^{2-}$, $[\mathrm{Ni(CN})_4]^{2-}$                                                 |
+| 6                   | Octahedral    | $[\mathrm{Cu}(\mathrm{NH}_3)_4(\mathrm{H}_2\mathrm{O})_2]^{2+}$$[\mathrm{Fe}(\mathrm{CN})_6]^{4-}$ |
+| 4                   | Square planar | $[\mathrm{PtCl}_4]^{2-}$$[\mathrm{Ni(CN})_4]^{2-}$                                                 |
 
 Most first-row transition metal complexes are octahedral or tetrahedral. Square planar geometry is
 typical for $d^8$ configurations with strong-field ligands (e.g. $\mathrm{Ni}^{2+}$ with
@@ -114,15 +114,15 @@ $\mathrm{CN}^-$).
 ### d-Orbital Splitting
 
 In a free ion, all five $d$ orbitals are degenerate (same energy). In an octahedral complex, the six
-ligands approach along the $x$, $y$And $z$ axes. The $d$ orbitals that point along these axes
+ligands approach along the $x$$y$And $z$ axes. The $d$ orbitals that point along these axes
 ($d_{z^2}$ and $d_{x^2-y^2}$Collectively the $e_g$ set) experience greater electrostatic repulsion
 from the ligand lone pairs than those that point between the axes
-($d_{xy}$, $d_{xz}$, $d_{yz}$Collectively the $t_{2g}$ set).
+($d_{xy}$$d_{xz}$$d_{yz}$Collectively the $t_{2g}$ set).
 
 This splits the $d$ orbitals into two energy levels:
 
-- **$e_g$ (higher energy):** $d_{z^2}$, $d_{x^2-y^2}$ -- 2 orbitals
-- **$t_{2g}$ (lower energy):** $d_{xy}$, $d_{xz}$, $d_{yz}$ -- 3 orbitals
+- **$e_g$ (higher energy):** $d_{z^2}$$d_{x^2-y^2}$ -- 2 orbitals
+- **$t_{2g}$ (lower energy):** $d_{xy}$$d_{xz}$$d_{yz}$ -- 3 orbitals
 
 The energy separation is the **crystal field splitting parameter** $\Delta_o$ (octahedral).
 
@@ -131,10 +131,10 @@ The energy separation is the **crystal field splitting parameter** $\Delta_o$ (o
 Electrons occupy the $d$ orbitals according to Hund's rule (maximise parallel spins) but must also
 respect the energy gap $\Delta_o$.
 
-- **Weak-field ligands** (e.g. $\mathrm{H}_2\mathrm{O}$, $\mathrm{F}^-$): $\Delta_o$ is small.
+- **Weak-field ligands** (e.g. $\mathrm{H}_2\mathrm{O}$$\mathrm{F}^-$): $\Delta_o$ is small.
   Electrons occupy all five orbitals singly before pairing (high-spin configuration). Maximum number
   of unpaired electrons.
-- **Strong-field ligands** (e.g. $\mathrm{CN}^-$, $\mathrm{NH}_3$ for certain metals): $\Delta_o$ is
+- **Strong-field ligands** (e.g. $\mathrm{CN}^-$$\mathrm{NH}_3$ for certain metals): $\Delta_o$ is
   large. Electrons pair in the lower $t_{2g}$ orbitals before occupying $e_g$ (low-spin
   configuration). Fewer unpaired electrons.
 
@@ -195,7 +195,7 @@ $$
 $$
 
 The orange dichromate is reduced back to green $\mathrm{Cr}^{3+}$ by reducing agents (e.g.
-$\mathrm{Zn}$, $\mathrm{Fe}^{2+}$).
+$\mathrm{Zn}$$\mathrm{Fe}^{2+}$).
 
 ### Cobalt Complexes
 
@@ -369,8 +369,8 @@ large. All 6 electrons pair in the $t_{2g}$ set ($t_{2g}^6\,e_g^0$), giving 0 un
 ### Tetrahedral Splitting
 
 In a tetrahedral complex, the splitting is the inverse of the octahedral case. The $d$ orbitals
-pointing between the axes ($t_2$: $d_{xy}$, $d_{xz}$, $d_{yz}$) are closer to the ligands and are higher
-energy. The orbitals pointing along the axes ($e$: $d_{z^2}$, $d_{x^2-y^2}$) are lower energy. The
+pointing between the axes ($t_2$: $d_{xy}$$d_{xz}$$d_{yz}$) are closer to the ligands and are higher
+energy. The orbitals pointing along the axes ($e$: $d_{z^2}$$d_{x^2-y^2}$) are lower energy. The
 splitting parameter $\Delta_t \approx \frac{4}{9}\Delta_o$.
 
 Because $\Delta_t$ is much smaller than $\Delta_o$Tetrahedral complexes are almost always high-spin.
@@ -387,7 +387,7 @@ $$
 \Delta E = \frac◆LB◆hc◆RB◆◆LB◆\lambda◆RB◆
 $$
 
-Where $h = 6.626 \times 10^{-34}\,\mathrm{J\,s}$, $c = 3.00 \times 10^8\,\mathrm{m/s}$And $\lambda$ is
+Where $h = 6.626 \times 10^{-34}\,\mathrm{J\,s}$$c = 3.00 \times 10^8\,\mathrm{m/s}$And $\lambda$ is
 the wavelength in metres.
 
 **Worked Example.** $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{3+}$ absorbs at
@@ -426,7 +426,7 @@ involve the transfer of an electron between the metal and the ligand. These are 
 intense than $d$-$d$ transitions.
 
 - **Ligand-to-metal charge transfer (LMCT):** An electron moves from a ligand-based orbital to a
-  metal-based orbital. Common in oxoanions: $\mathrm{MnO}_4^-$ (deep purple, $\mathrm{Mn}^{7+}$, $d^0$
+  metal-based orbital. Common in oxoanions: $\mathrm{MnO}_4^-$ (deep purple, $\mathrm{Mn}^{7+}$$d^0$
   -- no $d$-$d$ transitions possible; the colour is entirely due to LMCT), $\mathrm{CrO}_4^{2-}$
   (yellow).
 - **Metal-to-ligand charge transfer (MLCT):** An electron moves from the metal to the ligand. Less
@@ -538,7 +538,7 @@ $\mathrm{AgCl}$ precipitate, shifting it left.
 2. **Writing wrong electron configurations for ions.** Remove $4s$ electrons before $3d$ when
    forming cations.
 
-3. **Confusing $e_g$ and $t_{2g}$.** The $e_g$ set ($d_{z^2}$, $d_{x^2-y^2}$) is higher energy in
+3. **Confusing $e_g$ and $t_{2g}$.** The $e_g$ set ($d_{z^2}$$d_{x^2-y^2}$) is higher energy in
    octahedral complexes. The $t_{2g}$ set is lower energy.
 
 4. **Stating that colour is due to $d$-$d$ transitions without specifying the mechanism.** Be
@@ -702,13 +702,13 @@ colour of the complex relative to $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$
 **Solution:**
 
 $\mathrm{Co}^{3+}$ has the electron configuration $[\mathrm{Ar}]\,3d^6$. In
-$[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$, $\mathrm{NH}_3$ is a strong-field ligand (high in the
+$[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$$\mathrm{NH}_3$ is a strong-field ligand (high in the
 spectrochemical series). The large $\Delta_o$ means it is energetically favourable for all 6
 electrons to pair in the $t_{2g}$ orbitals ($t_{2g}^6\,e_g^0$) rather than promoting electrons to
 the $e_g$ set. With zero unpaired electrons, the complex is diamagnetic
 ($\mu = 0\,\mu_\mathrm{BM}$).
 
-Since $\mathrm{NH}_3$ is a stronger field ligand than $\mathrm{H}_2\mathrm{O}$, $\Delta_o$ is larger
+Since $\mathrm{NH}_3$ is a stronger field ligand than $\mathrm{H}_2\mathrm{O}$$\Delta_o$ is larger
 for $[\mathrm{Co}(\mathrm{NH}_3)_6]^{3+}$ than for $[\mathrm{Co}(\mathrm{H}_2\mathrm{O})_6]^{2+}$. A
 larger $\Delta_o$ means absorption of higher-energy (shorter wavelength) photons. The absorbed light
 shifts from the green region (observed: pink) to the blue/violet region, so
@@ -731,7 +731,7 @@ the oxygen atoms into an empty $d$ orbital on the manganese. This charge transfe
 involves a much larger change in dipole moment than a $d$-$d$ transition, giving it a much higher
 extinction coefficient (more intense colour).
 
-By contrast, $[\mathrm{Mn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($\mathrm{Mn}^{2+}$, $d^5$High-spin) is a
+By contrast, $[\mathrm{Mn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ ($\mathrm{Mn}^{2+}$$d^5$High-spin) is a
 very pale pink because $d$-$d$ transitions are Laporte-forbidden (centrosymmetric complexes have
 very weak $d$-$d$ absorption) and because the high-spin $d^5$ configuration has all $d$ orbitals
 singly occupied, so every $d$-$d$ transition requires an electron to change spin as well as orbital,
@@ -810,9 +810,9 @@ $\mathrm{O}_2$Facilitating the reaction.
 When a transition metal ion is surrounded by six ligands in an octahedral arrangement, the five
 degenerate $d$-orbitals split into two energy levels:
 
-- **$t_{2g}$ orbitals** ($d_{xy}$, $d_{xz}$, $d_{yz}$): Lower energy. These orbitals point between the
+- **$t_{2g}$ orbitals** ($d_{xy}$$d_{xz}$$d_{yz}$): Lower energy. These orbitals point between the
   ligands and experience less repulsion.
-- **$e_g$ orbitals** ($d_{x^2-y^2}$, $d_{z^2}$): Higher energy. These orbitals point directly at the
+- **$e_g$ orbitals** ($d_{x^2-y^2}$$d_{z^2}$): Higher energy. These orbitals point directly at the
   ligands and experience more repulsion.
 
 The energy difference between the two sets is the crystal field splitting energy, $\Delta_o$ (or
@@ -834,7 +834,7 @@ $$t_{2g}^4\,e_g^2$$
 
 $$\text{CFSE} = 4(-0.4\Delta_o) + 2(0.6\Delta_o) = -1.6\Delta_o + 1.2\Delta_o = -0.4\Delta_o$$
 
-For $\mathrm{H}_2\mathrm{O}$, $\Delta_o \approx 10400\,\mathrm{cm}^{-1}$:
+For $\mathrm{H}_2\mathrm{O}$$\Delta_o \approx 10400\,\mathrm{cm}^{-1}$:
 
 $$\text{CFSE} = -0.4 \times 10400 = -4160\,\mathrm{cm}^{-1}$$
 
@@ -848,7 +848,7 @@ $$t_{2g}^6\,e_g^0$$
 
 $$\text{CFSE} = 6(-0.4\Delta_o) + 0(0.6\Delta_o) = -2.4\Delta_o$$
 
-For $\mathrm{CN}^-$, $\Delta_o \approx 33000\,\mathrm{cm}^{-1}$:
+For $\mathrm{CN}^-$$\Delta_o \approx 33000\,\mathrm{cm}^{-1}$:
 
 $$\text{CFSE} = -2.4 \times 33000 = -79200\,\mathrm{cm}^{-1}$$
 

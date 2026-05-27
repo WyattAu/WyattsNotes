@@ -328,8 +328,8 @@ $$
 
 Calculate $\Delta S^\circ$ for: CaCO$_3$(s) $\to$ CaO(s) + CO$_2$(g)
 
-Given: $S^\circ$(CaCO$_3$) = $92.9\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(CaO) =
-$39.7\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(CO$_2$) = $213.7\mathrm{ J/(mol}\cdot\mathrm{K)}$.
+Given: $S^\circ$(CaCO$_3$) = $92.9\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(CaO) =
+$39.7\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(CO$_2$) = $213.7\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 $$
 \Delta S^\circ = (39.7 + 213.7) - 92.9 = 253.4 - 92.9 = 160.5\mathrm{ J/(mol}\cdot\mathrm{K)}
@@ -391,7 +391,7 @@ $\Delta S \gt 0$ (and vice versa).
 
 For the reaction: CaCO$_3$(s) $\to$ CaO(s) + CO$_2$(g)
 
-$\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +160.5\mathrm{ J/(mol}\cdot\mathrm{K)}$
+$\Delta H = +178\mathrm{ kJ/mol}$$\Delta S = +160.5\mathrm{ J/(mol}\cdot\mathrm{K)}$
 
 Find the temperature at which the reaction becomes spontaneous.
 
@@ -562,8 +562,8 @@ Coulomb's law). Additionally, Mg$^{2+}$ is smaller than Na$^+$Further increasing
 
 Calculate $\Delta S^\circ$ for: 2H$_2$(g) + O$_2$(g) $\to$ 2H$_2$O(l)
 
-$S^\circ$(H$_2$) $= 131\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(O$_2$)
-$= 205\mathrm{ J/(mol}\cdot\mathrm{K)}$, $S^\circ$(H$_2$O) $= 70\mathrm{ J/(mol}\cdot\mathrm{K)}$.
+$S^\circ$(H$_2$) $= 131\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(O$_2$)
+$= 205\mathrm{ J/(mol}\cdot\mathrm{K)}$$S^\circ$(H$_2$O) $= 70\mathrm{ J/(mol}\cdot\mathrm{K)}$.
 
 $$
 \Delta S^\circ = 2(70) - [2(131) + 205] = 140 - 467 = -327\mathrm{ J/(mol}\cdot\mathrm{K)}
@@ -587,7 +587,7 @@ $$
 
 Calculate $\Delta G^\circ$ for: C(s) + CO$_2$(g) $\to$ 2CO(g) at $298\mathrm{ K}$.
 
-Given: $\Delta G_f^\circ$(CO$_2$) $= -394\mathrm{ kJ/mol}$, $\Delta G_f^\circ$(CO)
+Given: $\Delta G_f^\circ$(CO$_2$) $= -394\mathrm{ kJ/mol}$$\Delta G_f^\circ$(CO)
 $= -137\mathrm{ kJ/mol}$.
 
 $$
@@ -887,7 +887,7 @@ Using average bond enthalpies, calculate $\Delta H$ for the reaction:
 $$\mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)$$
 
 Given: $\mathrm{N} \equiv \mathrm{N} = 945\mathrm{ kJ/mol}$
-$\mathrm{H}-\mathrm{H} = 436\mathrm{ kJ/mol}$, $\mathrm{N}-\mathrm{H} = 391\mathrm{ kJ/mol}$.
+$\mathrm{H}-\mathrm{H} = 436\mathrm{ kJ/mol}$$\mathrm{N}-\mathrm{H} = 391\mathrm{ kJ/mol}$.
 
 </details>
 
@@ -912,7 +912,7 @@ For the decomposition of calcium carbonate:
 
 $$\mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)$$
 
-$\Delta H = +178\mathrm{ kJ/mol}$, $\Delta S = +161\mathrm{ J/(mol \cdot K)}$.
+$\Delta H = +178\mathrm{ kJ/mol}$$\Delta S = +161\mathrm{ J/(mol \cdot K)}$.
 
 (a) Calculate $\Delta G$ at $298\mathrm{ K}$ and state whether the reaction is spontaneous.
 

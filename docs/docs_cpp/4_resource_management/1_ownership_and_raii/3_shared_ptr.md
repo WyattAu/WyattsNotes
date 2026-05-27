@@ -96,7 +96,7 @@ State (s, w) where s >= 0, w >= 0, w >= 1 when s > 0
          └────────────────────────────└──────────────────┘
 ```
 
-**Invariant:** When $s \gt 0$, $w \ge 1$. The control block itself holds a "self-reference" weak
+**Invariant:** When $s \gt 0$$w \ge 1$. The control block itself holds a "self-reference" weak
 Count so it cannot deallocate while the object is alive. Formally:
 
 - **Object lifetime:** The managed object exists if and only if $s \gt 0$.

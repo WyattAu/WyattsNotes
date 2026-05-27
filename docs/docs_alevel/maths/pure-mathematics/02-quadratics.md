@@ -265,7 +265,7 @@ Always works (when $\Delta \geq 0$), but can be computationally heavier.
 
 ## 6. Quadratic Inequalities
 
-Solving $ax^2 + bx + c > 0$ (or $< 0$, $\geq 0$, $\leq 0$) requires understanding the sign of the
+Solving $ax^2 + bx + c > 0$ (or $< 0$$\geq 0$$\leq 0$) requires understanding the sign of the
 Quadratic across the real line.
 
 **Method.**
@@ -321,7 +321,7 @@ Sign analysis:
 
 The quotient is $\geq 0$ when $x \leq \frac{7}{2}$ (including equality) but $x \neq 2$.
 
-Solution: $x \leq \frac{7}{2}$, $x \neq 2$I.e.,
+Solution: $x \leq \frac{7}{2}$$x \neq 2$I.e.,
 $x \in (-\infty, 2) \cup \left[\frac{7}{2}, \infty\right)$.
 
 </details>
@@ -352,8 +352,8 @@ Non-negative when $a > 0$ and always non-positive when $a < 0$With equality only
 3. Identify all critical values: roots of the numerator, zeros of the denominator (if rational), and
    any points where $f$ is undefined.
 4. Draw a sign chart: test one point from each interval between consecutive critical values.
-5. Select the intervals that satisfy the original inequality, respecting strict ($>$, $<$) vs
-   non-strict ($\geq$, $\leq$) conditions.
+5. Select the intervals that satisfy the original inequality, respecting strict ($>$$<$) vs
+   non-strict ($\geq$$\leq$) conditions.
 
 :::tip Tip **never** include points where the denominator is zero. :::
 
@@ -437,7 +437,7 @@ to the quadratic $az^2 + bz + c = 0$.
 
 :::warning After solving the reduced quadratic for $z$You must substitute back to find $x$. Discard
 any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires
-$z \geq 0$, $z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
+$z \geq 0$$z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
 
 <details>
 <summary>Example</summary>
@@ -785,7 +785,7 @@ $x = -2$: $y = -3$. Point: $(-2, -3)$.
 <hr />
 
 **Problem 6.** The function $f(x) = px^2 + qx + r$ has a minimum value of $-5$ at $x = 2$And Passes
-through the point $(0, 7)$. Find $p$, $q$And $r$.
+through the point $(0, 7)$. Find $p$$q$And $r$.
 
 <details>
 <summary>Solution</summary>
@@ -803,7 +803,7 @@ $$
 
 So $f(x) = 3(x - 2)^2 - 5 = 3(x^2 - 4x + 4) - 5 = 3x^2 - 12x + 7$.
 
-Therefore $p = 3$, $q = -12$, $r = 7$.
+Therefore $p = 3$$q = -12$$r = 7$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Completing the square](#2-completing-the-square)
@@ -840,7 +840,7 @@ $-2x \div x = -2$. Multiply: $-2(x-3) = -2x + 6$. Subtract: $-1$.
 
 So $\frac{2x^2 - 8x + 5}{x - 3} = 2x - 2 - \frac{1}{x - 3}$.
 
-Therefore $A = 2$, $B = -2$, $C = -1$.
+Therefore $A = 2$$B = -2$$C = -1$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Polynomial division](./01-algebraic-expressions.md)

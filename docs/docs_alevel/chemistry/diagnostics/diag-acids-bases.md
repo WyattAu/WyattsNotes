@@ -16,7 +16,7 @@ hide_table_of_contents: true
 **Question:**
 
 A buffer solution is prepared by adding $0.100\,\text{mol}$ of ethanoic acid
-($\text{CH}_3\text{COOH}$, $K_a = 1.74 \times 10^{-5}\,\text{mol dm}^{-3}$) and $0.050\,\text{mol}$ of
+($\text{CH}_3\text{COOH}$$K_a = 1.74 \times 10^{-5}\,\text{mol dm}^{-3}$) and $0.050\,\text{mol}$ of
 sodium ethanoate ($\text{CH}_3\text{COONa}$) to water and making up to $250\,\text{cm}^3$.
 
 (a) Calculate the pH of this buffer solution.
@@ -131,7 +131,7 @@ colour well before the equivalence point.
 
 **Question:**
 
-At $50\,^\circ\text{C}$, $K_w = 5.48 \times 10^{-14}\,\text{mol}^2\text{ dm}^{-6}$.
+At $50\,^\circ\text{C}$$K_w = 5.48 \times 10^{-14}\,\text{mol}^2\text{ dm}^{-6}$.
 
 (a) Calculate the pH of pure water at $50\,^\circ\text{C}$.
 
@@ -286,7 +286,7 @@ concentrations are much larger than the amount of added $\text{H}^+$.
 **Question:**
 
 $25.0\,\text{cm}^3$ of a solution of ammonia
-($\text{NH}_3$, $K_b = 1.78 \times 10^{-5}\,\text{mol dm}^{-3}$) is titrated with
+($\text{NH}_3$$K_b = 1.78 \times 10^{-5}\,\text{mol dm}^{-3}$) is titrated with
 $0.0500\,\text{mol dm}^{-3}$ HCl. The equivalence point is reached at $20.0\,\text{cm}^3$ of HCl.
 
 (a) Calculate the concentration of the ammonia solution.

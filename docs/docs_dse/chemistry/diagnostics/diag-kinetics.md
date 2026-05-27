@@ -46,11 +46,11 @@ $[B]$ doubles (0.10 to 0.20), rate quadruples ($1.2 \times 10^{-4}$ to $4.8 \tim
 
 Rate $\propto [B]^{2}$So **order with respect to $B$ = 2**.
 
-**Verification with experiment 4:** With orders $A = 1$, $B = 2$: predicted rate
+**Verification with experiment 4:** With orders $A = 1$$B = 2$: predicted rate
 $= 0.12 \times 0.30
 \times 0.30^{2} = 3.24 \times 10^{-3}$. The given value of $2.16 \times 10^{-3}$
 does not match. Experiment 4 may contain a typo, or is designed to test whether students verify all
-data points. Proceeding with orders $A = 1$, $B = 2$ as determined from experiments 1--3.
+data points. Proceeding with orders $A = 1$$B = 2$ as determined from experiments 1--3.
 
 (b) Rate equation: $\text{Rate} = k[A][B]^{2}$
 
@@ -325,7 +325,7 @@ $$E_{a} = \frac{1.386 \times 8.314}{2.083 \times 10^{-4}}$$
 $$E_{a} = \frac{11.523}{2.083 \times 10^{-4}} = 55320 \text{ J/mol} = 55.3 \text{ kJ/mol}$$
 
 (b) Using the Arrhenius equation with $T_{1} = 300$ K, $k_{1} = 2.5 \times 10^{-3}$
-s$^{-1}$, $T_{2} = 340$ K:
+s$^{-1}$$T_{2} = 340$ K:
 
 $$\ln\left(\frac{k_{2}}{2.5 \times 10^{-3}}\right) = \frac{55320}{8.314}\left(\frac{1}{300} - \frac{1}{340}\right)$$
 

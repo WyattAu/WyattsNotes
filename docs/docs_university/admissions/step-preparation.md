@@ -122,7 +122,7 @@ Techniques.
 Contains $g'(x)$ alongside a function of $g(x)$.
 
 **Integration by parts.** For $\int u \, dv = uv - \int v \, du$. Strategy: apply repeatedly when
-the Integrand involves $x^n$ multiplied by $\sin x$, $\cos x$, $e^x$Or $\ln x$.
+the Integrand involves $x^n$ multiplied by $\sin x$$\cos x$$e^x$Or $\ln x$.
 
 **Reduction formulae.** Many STEP questions establish a recurrence relation. For example, setting
 $I_n = \int_0^{\pi/2} \sin^n x \, dx$ and integrating by parts yields:
@@ -312,10 +312,10 @@ $F(x, y, t) = 0$ and $\frac{\partial F}{\partial t} = 0$ simultaneously.
 >
 > $$\frac{a}{b + c} + \frac{b}{c + a} + \frac{c}{a + b} \geq \frac{3}{2}$$
 
-**Solution.** We use the substitution $x = b + c$, $y = c + a$, $z = a + b$. Then
-$a = \frac{y + z - x}{2}$, $b = \frac{z + x - y}{2}$, $c = \frac{x + y - z}{2}$.
+**Solution.** We use the substitution $x = b + c$$y = c + a$$z = a + b$. Then
+$a = \frac{y + z - x}{2}$$b = \frac{z + x - y}{2}$$c = \frac{x + y - z}{2}$.
 
-By the triangle inequalities on $a, b, c > 0$We have $y + z > x$, $z + x > y$, $x + y > z$ So $x, y, z$
+By the triangle inequalities on $a, b, c > 0$We have $y + z > x$$z + x > y$$x + y > z$ So $x, y, z$
 are the side lengths of a (non-degenerate) triangle.
 
 The inequality becomes:

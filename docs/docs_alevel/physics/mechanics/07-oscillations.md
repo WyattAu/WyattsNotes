@@ -111,7 +111,7 @@ $$E_{\mathrm{total}} = E_k + E_p = \frac{1}{2}m\omega^2(A^2 - x^2) + \frac{1}{2}
 
 $$\boxed{E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2 = \mathrm{constant}}$$
 
-**Proof that total energy is constant.** The total energy depends only on $m$, $\omega$And $A$ — None
+**Proof that total energy is constant.** The total energy depends only on $m$$\omega$And $A$ — None
 of which change during the motion. Therefore $E_{\mathrm{total}}$ is conserved. $\square$
 
 **Intuition.** Energy oscillates between kinetic and potential forms. At the equilibrium ($x = 0$),
@@ -149,7 +149,7 @@ Newton's second law: $ma = -mg\sin\theta$Where $a = L\ddot{\theta}$:
 
 $$mL\ddot{\theta} = -mg\sin\theta \implies \ddot{\theta} = -\frac{g}{L}\sin\theta$$
 
-**Small angle approximation:** For $\theta \lesssim 10^\circ$, $\sin\theta \approx \theta$ (in
+**Small angle approximation:** For $\theta \lesssim 10^\circ$$\sin\theta \approx \theta$ (in
 Radians). Then:
 
 $$\ddot{\theta} = -\frac{g}{L}\theta$$

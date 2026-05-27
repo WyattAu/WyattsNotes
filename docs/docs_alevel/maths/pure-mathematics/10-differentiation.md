@@ -47,7 +47,7 @@ but not Differentiable. :::
 
 ## 2. Derivative of $x^n$ from First Principles
 
-**Theorem.** For $n \in \mathbb{N}$, $\dfrac{d}{dx}x^n = nx^{n-1}$.
+**Theorem.** For $n \in \mathbb{N}$$\dfrac{d}{dx}x^n = nx^{n-1}$.
 
 **Proof.** By the limit definition:
 
@@ -225,9 +225,9 @@ There are three types:
 
 | Type                | Condition                        | Shape   |
 | ------------------- | -------------------------------- | ------- |
-| Maximum             | $f'(a) = 0$, $f''(a) \lt 0$        | $\cap$  |
-| Minimum             | $f'(a) = 0$, $f''(a) \gt 0$        | $\cup$  |
-| Point of inflection | $f'(a) = 0$, $f''(a) = 0$ (may be) | S-shape |
+| Maximum             | $f'(a) = 0$$f''(a) \lt 0$        | $\cap$  |
+| Minimum             | $f'(a) = 0$$f''(a) \gt 0$        | $\cup$  |
+| Point of inflection | $f'(a) = 0$$f''(a) = 0$ (may be) | S-shape |
 
 ### 7.3 Proof of the second derivative test (Taylor expansion intuition)
 
@@ -268,7 +268,7 @@ $A = \pi r^2$. Differentiating with respect to $t$:
 
 $$\frac{dA}{dt} = 2\pi r \frac{dr}{dt}$$
 
-At $r = 5$, $\dfrac{dr}{dt} = 2$:
+At $r = 5$$\dfrac{dr}{dt} = 2$:
 
 $$\frac{dA}{dt} = 2\pi(5)(2) = 20\pi \,\mathrm{cm}^2\mathrm{/s}$$
 
@@ -312,7 +312,7 @@ If $x = x(t)$ and $y = y(t)$Then
 
 $$\frac{dy}{dx} = \frac{dy/dt}{dx/dt}$$
 
-**Example.** $x = 2\cos t$, $y = 2\sin t$. Find $\dfrac{dy}{dx}$ at $t = \pi/4$.
+**Example.** $x = 2\cos t$$y = 2\sin t$. Find $\dfrac{dy}{dx}$ at $t = \pi/4$.
 
 $$\frac{dx}{dt} = -2\sin t, \quad \frac{dy}{dt} = 2\cos t$$
 
@@ -469,14 +469,14 @@ $\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} = \dfrac{3t^2 - 3}{2t} = \dfrac{3(t^2-1)}
 
 Stationary when $dy/dx = 0$: $t^2 = 1 \implies t = \pm 1$.
 
-$t = 1$: $x = 2$, $y = -2$. Point $(2, -2)$. $t = -1$: $x = 2$, $y = 2$. Point $(2, 2)$.
+$t = 1$: $x = 2$$y = -2$. Point $(2, -2)$. $t = -1$: $x = 2$$y = 2$. Point $(2, 2)$.
 
 For nature, check $\dfrac{d^2y}{dx^2}$ or the sign of $\dfrac{dy}{dx}$:
 
-Near $t = 1$: for $t = 0.5$, $\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} \lt 0$; for
-$t = 2$, $\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} \gt 0$. So $t=1$ is a **minimum**.
+Near $t = 1$: for $t = 0.5$$\dfrac{dy}{dx} = \dfrac{3(0.25-1)}{1} = -\dfrac{9}{4} \lt 0$; for
+$t = 2$$\dfrac{dy}{dx} = \dfrac{3(4-1)}{4} \gt 0$. So $t=1$ is a **minimum**.
 
-Near $t = -1$: for $t = -2$, $\dfrac{dy}{dx} \lt 0$; for $t = -0.5$, $\dfrac{dy}{dx} \gt 0$. So $t=-1$
+Near $t = -1$: for $t = -2$$\dfrac{dy}{dx} \lt 0$; for $t = -0.5$$\dfrac{dy}{dx} \gt 0$. So $t=-1$
 is a **minimum**.
 
 **If you get this wrong, revise:**
@@ -526,7 +526,7 @@ Differentiate $y = \sin^3(2x^2 + 1)$.
 <summary>Solution 11</summary>
 Let $u = \sin(2x^2+1)$So $y = u^3$.
 
-$\dfrac{dy}{du} = 3u^2$, $\dfrac{du}{dx} = \cos(2x^2+1) \cdot 4x$.
+$\dfrac{dy}{du} = 3u^2$$\dfrac{du}{dx} = \cos(2x^2+1) \cdot 4x$.
 
 $$\frac{dy}{dx} = 3\sin^2(2x^2+1) \cdot \cos(2x^2+1) \cdot 4x = 12x\sin^2(2x^2+1)\cos(2x^2+1)$$
 

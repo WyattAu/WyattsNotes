@@ -112,12 +112,12 @@ By Euler's theorem: $M^{\phi(n)} \equiv 1 \pmod{n}$.
 Therefore:
 $M^{ed} = M^{1 + k\phi(n)} = M \cdot (M^{\phi(n)})^k \equiv M \cdot 1^k \equiv M \pmod{n}$. ✓
 
-**Case 2:** $\gcd(M, n) \neq 1$. Since $n = pq$, $M$ must be divisible by $p$ or $q$ (but not both,
+**Case 2:** $\gcd(M, n) \neq 1$. Since $n = pq$$M$ must be divisible by $p$ or $q$ (but not both,
 Since $M \lt n = pq$).
 
 Without loss of generality, let $M \equiv 0 \pmod{p}$. Then $M^{ed} \equiv 0 \equiv M \pmod{p}$. ✓
 
-For $q$: since $M \not\equiv 0 \pmod{q}$, $\gcd(M, q) = 1$. By Fermat's little theorem:
+For $q$: since $M \not\equiv 0 \pmod{q}$$\gcd(M, q) = 1$. By Fermat's little theorem:
 $M^{q-1} \equiv 1 \pmod{q}$. Since $\phi(n) = (p-1)(q-1)$:
 
 $$M^{ed} = M^{1 + k(p-1)(q-1)} = M \cdot (M^{q-1})^{k(p-1)} \equiv M \cdot 1^{k(p-1)} \equiv M \pmod{q}$$
@@ -240,7 +240,7 @@ Traffic based on predetermined security rules.
 
 ## Problem Set
 
-**Problem 1.** Given RSA parameters $p = 5$, $q = 11$, $e = 3$Encrypt the message $M = 7$ and then
+**Problem 1.** Given RSA parameters $p = 5$$q = 11$$e = 3$Encrypt the message $M = 7$ and then
 Decrypt it. Show all steps.
 
 <details>

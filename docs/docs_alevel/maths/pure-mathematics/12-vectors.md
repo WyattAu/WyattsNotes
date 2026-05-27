@@ -37,7 +37,7 @@ Vectors in 2D are written as column vectors: $\dbinom{a}{b}$ or $a\mathbf{i} + b
 
 Vectors in 3D: $\begin{pmatrix}a\\b\\c\end{pmatrix}$ or $a\mathbf{i} + b\mathbf{j} + c\mathbf{k}$.
 
-The unit vectors $\mathbf{i} = \dbinom{1}{0}$, $\mathbf{j} = \dbinom{0}{1}$ point along the positive
+The unit vectors $\mathbf{i} = \dbinom{1}{0}$$\mathbf{j} = \dbinom{0}{1}$ point along the positive
 $x$- and $y$-axes respectively. In 3D, $\mathbf{k} = \begin{pmatrix}0\\0\\1\end{pmatrix}$.
 
 ### 1.2 Position vectors
@@ -69,7 +69,7 @@ The **direction cosines** of $\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmat
 
 $$\cos\alpha = \frac◆LB◆a_1◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\beta = \frac◆LB◆a_2◆RB◆◆LB◆|\mathbf{a}|◆RB◆, \quad \cos\gamma = \frac◆LB◆a_3◆RB◆◆LB◆|\mathbf{a}|◆RB◆$$
 
-Where $\alpha$, $\beta$, $\gamma$ are the angles between $\mathbf{a}$ and the $x$-, $y$-, $z$-axes
+Where $\alpha$$\beta$$\gamma$ are the angles between $\mathbf{a}$ and the $x$-, $y$-, $z$-axes
 Respectively.
 
 Note: $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$.
@@ -122,7 +122,7 @@ Scalar multiplication also satisfies the distributive laws:
 $\lambda(\mathbf{a} + \mathbf{b}) = \lambda\mathbf{a} + \lambda\mathbf{b}$ and
 $(\lambda + \mu)\mathbf{a} = \lambda\mathbf{a} + \mu\mathbf{a}$ for scalars $\lambda, \mu$.
 
-**Example.** Given points $A(1, 2, -1)$, $B(4, 0, 3)$, $C(2, 5, 1)$Find
+**Example.** Given points $A(1, 2, -1)$$B(4, 0, 3)$$C(2, 5, 1)$Find
 $\overrightarrow{AB} + \overrightarrow{BC}$.
 
 $\overrightarrow{AB} = \begin{pmatrix}3\\-2\\4\end{pmatrix}$
@@ -147,7 +147,7 @@ $$\mathbf{a}\cdot\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3$$
 **Theorem.** $\mathbf{a}\cdot\mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta$Where $\theta$ is the
 Angle between $\mathbf{a}$ and $\mathbf{b}$.
 
-**Proof using the cosine rule.** Consider the triangle formed by vectors $\mathbf{a}$, $\mathbf{b}$
+**Proof using the cosine rule.** Consider the triangle formed by vectors $\mathbf{a}$$\mathbf{b}$
 And $\mathbf{a} - \mathbf{b}$.
 
 By the cosine rule:
@@ -319,7 +319,7 @@ $d = \left|\begin{pmatrix}1/3\\2/3\\-2/3\end{pmatrix}\right| = \sqrt◆LB◆\dfr
 
 ### 9.1 Definition
 
-**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$, $\mathbf{b}$ $\mathbf{c}$
+**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$$\mathbf{b}$ $\mathbf{c}$
 is
 
 $$[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
@@ -331,7 +331,7 @@ $$[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = \begin{vmatrix} a_1 & a_2 & a_3 \\ 
 ### 9.2 Geometric interpretation: volume of a parallelepiped
 
 **Theorem.** The absolute value of the scalar triple product equals the volume of the parallelepiped
-With edges defined by $\mathbf{a}$, $\mathbf{b}$And $\mathbf{c}$.
+With edges defined by $\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
 
 $$V = |\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$$
 
@@ -349,7 +349,7 @@ $$V = \mathrm{base area} \times \mathrm{height} = |\mathbf{b}\times\mathbf{c}| \
   $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = [\mathbf{b},\, \mathbf{c},\, \mathbf{a}] = [\mathbf{c},\, \mathbf{a},\, \mathbf{b}]$
 - **Anti-symmetry:** Swapping any two vectors changes the sign:
   $[\mathbf{a},\, \mathbf{c},\, \mathbf{b}] = -[\mathbf{a},\, \mathbf{b},\, \mathbf{c}]$
-- **Coplanarity test:** $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ are coplanar if and only if
+- **Coplanarity test:** $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are coplanar if and only if
   $[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = 0$ (the parallelepiped has zero volume).
 - **Volume of a tetrahedron:**
   $V_{\mathrm{tet}} = \dfrac{1}{6}|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$Since a tetrahedron
@@ -374,7 +374,7 @@ Volume $= |30| = 30$ cubic units.
 
 ### 10.1 Proving collinear points
 
-Points $A$, $B$, $C$ are **collinear** if and only if $\overrightarrow{AB}$ is parallel to
+Points $A$$B$$C$ are **collinear** if and only if $\overrightarrow{AB}$ is parallel to
 $\overrightarrow{BC}$I.e. $\overrightarrow{AB} = k\,\overrightarrow{BC}$ for some scalar $k$.
 
 Equivalently, $\overrightarrow{AB} \times \overrightarrow{BC} = \mathbf{0}$ (zero vector).
@@ -386,7 +386,7 @@ Equivalently, $\overrightarrow{AB} \times \overrightarrow{BC} = \mathbf{0}$ (zer
 2. Check if one is a scalar multiple of the other.
 3. Alternatively, check if $\overrightarrow{AC}$ is parallel to $\overrightarrow{AB}$.
 
-**Example.** Show that $A(1, 2, 3)$, $B(3, 4, 5)$, $C(5, 6, 7)$ are collinear.
+**Example.** Show that $A(1, 2, 3)$$B(3, 4, 5)$$C(5, 6, 7)$ are collinear.
 
 $\overrightarrow{AB} = \begin{pmatrix}2\\2\\2\end{pmatrix}$
 $\overrightarrow{BC} = \begin{pmatrix}2\\2\\2\end{pmatrix}$.
@@ -415,7 +415,7 @@ Since the dot product is zero, the lines are perpendicular. $\blacksquare$
 
 ### 10.3 Proving points form a parallelogram
 
-Points $A$, $B$, $C$, $D$ form a parallelogram (in order) if and only if
+Points $A$$B$$C$$D$ form a parallelogram (in order) if and only if
 $\overrightarrow{AB} = \overrightarrow{DC}$ (or equivalently
 $\overrightarrow{AD} = \overrightarrow{BC}$).
 
@@ -453,7 +453,7 @@ $\blacksquare$
 
 <details>
 <summary>Problem 1</summary>
-Given $\mathbf{a} = 3\mathbf{i} - 2\mathbf{j} + \mathbf{k}$ and $\mathbf{b} = \mathbf{i} + 4\mathbf{j} - 3\mathbf{k}$Find $\mathbf{a} + \mathbf{b}$, $\mathbf{a} - \mathbf{b}$, $|\mathbf{a}|$And a unit vector in the direction of $\mathbf{a}$.
+Given $\mathbf{a} = 3\mathbf{i} - 2\mathbf{j} + \mathbf{k}$ and $\mathbf{b} = \mathbf{i} + 4\mathbf{j} - 3\mathbf{k}$Find $\mathbf{a} + \mathbf{b}$$\mathbf{a} - \mathbf{b}$$|\mathbf{a}|$And a unit vector in the direction of $\mathbf{a}$.
 </details>
 
 <details>
@@ -479,7 +479,7 @@ Find the angle between $\mathbf{a} = \begin{pmatrix}2\\1\\-1\end{pmatrix}$ and $
 <details>
 <summary>Solution 2</summary>
 $\mathbf{a}\cdot\mathbf{b} = 2-3-2 = -3$.
-$|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$, $|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{14}$.
+$|\mathbf{a}| = \sqrt{4+1+1} = \sqrt{6}$$|\mathbf{b}| = \sqrt{1+9+4} = \sqrt{14}$.
 
 $\cos\theta = \dfrac◆LB◆-3◆RB◆◆LB◆\sqrt{6}\sqrt{14}◆RB◆ = \dfrac◆LB◆-3◆RB◆◆LB◆\sqrt{84}◆RB◆ = \dfrac◆LB◆-3◆RB◆◆LB◆2\sqrt{21}◆RB◆ = \dfrac◆LB◆-\sqrt{21}◆RB◆◆LB◆14◆RB◆$.
 
@@ -513,11 +513,11 @@ Show that the lines $\mathbf{r} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t\begin{
 
 <details>
 <summary>Solution 4</summary>
-Equating components: $1+2t = 3+s$, $t = 1-s$, $2-t = 1+s$.
+Equating components: $1+2t = 3+s$$t = 1-s$$2-t = 1+s$.
 
 From $t = 1-s$ and $2-t = 1+s$: $2-(1-s) = 1+s \implies 1+s = 1+s$ ✓ (consistent).
 
-Check first: $1+2(1-s) = 3+s \implies 3-2s = 3+s \implies s = 0$, $t = 1$.
+Check first: $1+2(1-s) = 3+s \implies 3-2s = 3+s \implies s = 0$$t = 1$.
 
 Point: $\begin{pmatrix}1+2\\0+1\\2-1\end{pmatrix} = \begin{pmatrix}3\\1\\1\end{pmatrix}$.
 
@@ -570,7 +570,7 @@ Prove that the direction cosines satisfy $\cos^2\alpha + \cos^2\beta + \cos^2\ga
 <summary>Solution 7</summary>
 For $\mathbf{a} = \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}$ with $|\mathbf{a}| = m$:
 
-$\cos\alpha = a_1/m$, $\cos\beta = a_2/m$, $\cos\gamma = a_3/m$.
+$\cos\alpha = a_1/m$$\cos\beta = a_2/m$$\cos\gamma = a_3/m$.
 
 $$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \frac{a_1^2+a_2^2+a_3^2}{m^2} = \frac{m^2}{m^2} = 1 \quad \blacksquare$$
 
@@ -580,12 +580,12 @@ $$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \frac{a_1^2+a_2^2+a_3^2}{m^2} = \f
 
 <details>
 <summary>Problem 8</summary>
-Points $A$, $B$, $C$ have position vectors $\mathbf{a} = \begin{pmatrix}1\\-1\\2\end{pmatrix}$, $\mathbf{b} = \begin{pmatrix}3\\1\\0\end{pmatrix}$, $\mathbf{c} = \begin{pmatrix}4\\0\\3\end{pmatrix}$. Determine whether $\triangle ABC$ is right-angled.
+Points $A$$B$$C$ have position vectors $\mathbf{a} = \begin{pmatrix}1\\-1\\2\end{pmatrix}$$\mathbf{b} = \begin{pmatrix}3\\1\\0\end{pmatrix}$$\mathbf{c} = \begin{pmatrix}4\\0\\3\end{pmatrix}$. Determine whether $\triangle ABC$ is right-angled.
 </details>
 
 <details>
 <summary>Solution 8</summary>
-$\overrightarrow{AB} = \begin{pmatrix}2\\2\\-2\end{pmatrix}$, $\overrightarrow{AC} = \begin{pmatrix}3\\1\\1\end{pmatrix}$, $\overrightarrow{BC} = \begin{pmatrix}1\\-1\\3\end{pmatrix}$.
+$\overrightarrow{AB} = \begin{pmatrix}2\\2\\-2\end{pmatrix}$$\overrightarrow{AC} = \begin{pmatrix}3\\1\\1\end{pmatrix}$$\overrightarrow{BC} = \begin{pmatrix}1\\-1\\3\end{pmatrix}$.
 
 $\overrightarrow{AB}\cdot\overrightarrow{AC} = 6+2-2 = 6 \neq 0$.
 $\overrightarrow{AB}\cdot\overrightarrow{BC} = 2-2-6 = -6 \neq 0$.
@@ -604,13 +604,13 @@ Show that the lines $\mathbf{r} = \begin{pmatrix}0\\0\\1\end{pmatrix} + t\begin{
 
 <details>
 <summary>Solution 9</summary>
-Equating: $t = s$, $t = 1$, $1 = s$.
+Equating: $t = s$$t = 1$$1 = s$.
 
 From $t = 1$ and $t = s$: $s = 1$. Check third: $1 = s = 1$ ✓.
 
 Wait — all three are consistent! Let me re-check. Line 1: $(t, t, 1)$. Line 2: $(s, 1, s)$.
 
-$t = s$, $t = 1$, $1 = s$. So $t = s = 1$. Point: $(1, 1, 1)$.
+$t = s$$t = 1$$1 = s$. So $t = s = 1$. Point: $(1, 1, 1)$.
 
 Actually the lines **intersect** at $(1,1,1)$They are not skew.
 
@@ -668,14 +668,14 @@ Find the direction cosines of the vector $\mathbf{v} = \begin{pmatrix}1\\-2\\2\e
 <summary>Solution 12</summary>
 $|\mathbf{v}| = \sqrt{1 + 4 + 4} = \sqrt{9} = 3$.
 
-$\cos\alpha = \dfrac{1}{3}$, $\quad \cos\beta = \dfrac{-2}{3}$, $\quad \cos\gamma = \dfrac{2}{3}$.
+$\cos\alpha = \dfrac{1}{3}$$\quad \cos\beta = \dfrac{-2}{3}$$\quad \cos\gamma = \dfrac{2}{3}$.
 
 Check:
 $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \dfrac{1}{9} + \dfrac{4}{9} + \dfrac{4}{9} = \dfrac{9}{9} = 1$.
 ✓
 
 The angles are $\alpha = \arccos(1/3) \approx 70.5^\circ$
-$\beta = \arccos(-2/3) \approx 131.8^\circ$, $\gamma = \arccos(2/3) \approx 48.2^\circ$.
+$\beta = \arccos(-2/3) \approx 131.8^\circ$$\gamma = \arccos(2/3) \approx 48.2^\circ$.
 
 **If you get this wrong, revise:** [Direction Cosines](#23-direction-cosines) — Section 2.3.
 
@@ -701,7 +701,7 @@ $$\mathbf{r} = \begin{pmatrix}2\\-3\\1\end{pmatrix} + t\begin{pmatrix}4\\-1\\3\e
 
 <details>
 <summary>Problem 14</summary>
-Find the volume of the parallelepiped with edges $\mathbf{a} = \begin{pmatrix}1\\0\\2\end{pmatrix}$, $\mathbf{b} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$, $\mathbf{c} = \begin{pmatrix}-1\\2\\1\end{pmatrix}$.
+Find the volume of the parallelepiped with edges $\mathbf{a} = \begin{pmatrix}1\\0\\2\end{pmatrix}$$\mathbf{b} = \begin{pmatrix}3\\1\\-1\end{pmatrix}$$\mathbf{c} = \begin{pmatrix}-1\\2\\1\end{pmatrix}$.
 </details>
 
 <details>
@@ -722,7 +722,7 @@ Volume of the tetrahedron $= \dfrac{17}{6}$ cubic units.
 
 <details>
 <summary>Problem 15</summary>
-Determine whether the points $P(1, 2, 3)$, $Q(4, 5, 6)$, $R(7, 8, 9)$ are collinear. If they are, find the ratio $PQ : QR$.
+Determine whether the points $P(1, 2, 3)$$Q(4, 5, 6)$$R(7, 8, 9)$ are collinear. If they are, find the ratio $PQ : QR$.
 </details>
 
 <details>
@@ -745,7 +745,7 @@ Show that the lines $\mathbf{r}_1 = \begin{pmatrix}1\\0\\0\end{pmatrix} + t\begi
 
 <details>
 <summary>Solution 16</summary>
-Equating components: $1+t = 2s$, $2t = 1-s$, $3t = -1+s$.
+Equating components: $1+t = 2s$$2t = 1-s$$3t = -1+s$.
 
 From equation 2: $s = 1 - 2t$. Substitute into equation 1:
 $1+t = 2(1-2t) = 2-4t \implies 5t = 1 \implies t = 1/5$.
@@ -767,7 +767,7 @@ Find the shortest distance from the point $P(3, -1, 2)$ to the line $\mathbf{r} 
 
 <details>
 <summary>Solution 17</summary>
-Let $\mathbf{a} = \begin{pmatrix}1\\2\\-1\end{pmatrix}$, $\mathbf{d} = \begin{pmatrix}1\\0\\3\end{pmatrix}$
+Let $\mathbf{a} = \begin{pmatrix}1\\2\\-1\end{pmatrix}$$\mathbf{d} = \begin{pmatrix}1\\0\\3\end{pmatrix}$
 $\mathbf{p} = \begin{pmatrix}3\\-1\\2\end{pmatrix}$.
 
 $\overrightarrow{AP} = \mathbf{p} - \mathbf{a} = \begin{pmatrix}2\\-3\\3\end{pmatrix}$.
@@ -791,7 +791,7 @@ $d = \sqrt{81/100 + 9 + 9/100} = \sqrt{81/100 + 900/100 + 9/100} = \sqrt{990/100
 
 <details>
 <summary>Problem 18</summary>
-Points $A$, $B$, $C$, $D$ have position vectors $\mathbf{a} = \begin{pmatrix}0\\0\\0\end{pmatrix}$, $\mathbf{b} = \begin{pmatrix}4\\1\\-2\end{pmatrix}$, $\mathbf{c} = \begin{pmatrix}6\\3\\1\end{pmatrix}$, $\mathbf{d} = \begin{pmatrix}2\\2\\3\end{pmatrix}$. Show that $ABCD$ is a parallelogram, and determine whether it is a rectangle.
+Points $A$$B$$C$$D$ have position vectors $\mathbf{a} = \begin{pmatrix}0\\0\\0\end{pmatrix}$$\mathbf{b} = \begin{pmatrix}4\\1\\-2\end{pmatrix}$$\mathbf{c} = \begin{pmatrix}6\\3\\1\end{pmatrix}$$\mathbf{d} = \begin{pmatrix}2\\2\\3\end{pmatrix}$. Show that $ABCD$ is a parallelogram, and determine whether it is a rectangle.
 </details>
 
 <details>
@@ -799,7 +799,7 @@ Points $A$, $B$, $C$, $D$ have position vectors $\mathbf{a} = \begin{pmatrix}0\\
 $\overrightarrow{AB} = \begin{pmatrix}4\\1\\-2\end{pmatrix}$
 $\overrightarrow{DC} = \mathbf{c} - \mathbf{d} = \begin{pmatrix}4\\1\\-2\end{pmatrix}$.
 
-Since $\overrightarrow{AB} = \overrightarrow{DC}$, $ABCD$ is a parallelogram. ✓
+Since $\overrightarrow{AB} = \overrightarrow{DC}$$ABCD$ is a parallelogram. ✓
 
 Check for rectangle:
 $\overrightarrow{AB}\cdot\overrightarrow{AD} = \begin{pmatrix}4\\1\\-2\end{pmatrix}\cdot\begin{pmatrix}2\\2\\3\end{pmatrix} = 8 + 2 - 6 = 4 \neq 0$.

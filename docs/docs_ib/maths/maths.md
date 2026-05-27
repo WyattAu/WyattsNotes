@@ -45,7 +45,7 @@ Find the sum of the first 10 terms and the sum to infinity of the series $3 + 1.
 <details>
 <summary>Solution</summary>
 
-- **Identify:** $u_1 = 3$, $r = 1.5/3 = 0.5$. Since $|r| \lt 1$The sum to infinity converges.
+- **Identify:** $u_1 = 3$$r = 1.5/3 = 0.5$. Since $|r| \lt 1$The sum to infinity converges.
 - **Sum of first 10 terms:**
   $S_{10} = \dfrac{u_1(1 - r^{10})}{1 - r} = \dfrac{3(1 - 0.5^{10})}{1 - 0.5} = \dfrac{3(1 - 0.000977)}{0.5} = 5.994$
 - **Sum to infinity:** $S_\infty = \dfrac{u_1}{1 - r} = \dfrac{3}{0.5} = 6$
@@ -164,7 +164,7 @@ Identities, and an introduction to vector geometry.
 
 ### Worked Example: Sine and Cosine Rules (SL)
 
-In triangle $ABC$, $a = 8$ cm, $b = 5$ cm, and $A = 60$ degrees. Find angle $B$.
+In triangle $ABC$$a = 8$ cm, $b = 5$ cm, and $A = 60$ degrees. Find angle $B$.
 
 <details>
 <summary>Solution</summary>
@@ -205,7 +205,7 @@ $\mathbf{b} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix}$.
 
 - **Dot product:** $\mathbf{a} \cdot \mathbf{b} = (2)(4) + (3)(-1) + (-1)(2) = 8 - 3 - 2 = 3$
 - **Magnitudes:**
-  $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$, $\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
+  $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$$\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
 - **Angle:**
   $\cos \theta = \dfrac{\mathbf{a} \cdot \mathbf{b}}{\lvert \mathbf{a} \rvert \lvert \mathbf{b} \rvert} = \dfrac{3}{\sqrt{14} \cdot \sqrt{21}} = \dfrac{3}{\sqrt{294}} = \dfrac{3}{17.15} = 0.1749$
 - $\theta = \arccos(0.1749) = 79.9$ degrees
@@ -262,7 +262,7 @@ Chosen at random. Given that they play basketball, find the probability they als
 <summary>Solution</summary>
 
 - **Define:** $F$ = plays football, $B$ = plays basketball.
-- $P(F \cap B) = 10/40 = 0.25$, $P(B) = 18/40 = 0.45$
+- $P(F \cap B) = 10/40 = 0.25$$P(B) = 18/40 = 0.45$
 - **Conditional probability:**
   $P(F \mid B) = \dfrac{P(F \cap B)}{P(B)} = \dfrac{0.25}{0.45} = \dfrac{5}{9}$
 
@@ -339,7 +339,7 @@ Evaluate $\displaystyle\int x e^{2x}\,dx$.
 <details>
 <summary>Solution</summary>
 
-- **Let $u = x$, $dv = e^{2x}\,dx$.** Then $du = dx$, $v = \tfrac{1}{2}e^{2x}$.
+- **Let $u = x$$dv = e^{2x}\,dx$.** Then $du = dx$$v = \tfrac{1}{2}e^{2x}$.
 - **Integration by parts:** $\displaystyle\int u\,dv = uv - \int v\,du$
 - $= x \cdot \tfrac{1}{2}e^{2x} - \int \tfrac{1}{2}e^{2x}\,dx$
 - $= \tfrac{1}{2}xe^{2x} - \tfrac{1}{4}e^{2x} + C$
@@ -402,7 +402,7 @@ All topics:
 - **Show all working:** Examination marks are awarded for method as well as for the final answer. An
   unexplained result receives no credit, even if numerically correct.
 - **Use precise notation:** Mathematical rigour is central to the AA course. Distinguish between
-  equations and expressions, use appropriate symbols ($=$, $\approx$, $>$, $<$, $\in$, $\subseteq$ etc.), and
+  equations and expressions, use appropriate symbols ($=$$\approx$$>$$<$$\in$$\subseteq$ etc.), and
   state any assumptions or conditions (e.g. Domain restrictions, non-zero denominators).
 - **Verify solutions:** Where possible, substitute answers back into the original equation or check
   against expected behaviour. This is particularly important in trigonometric equations and calculus
@@ -436,7 +436,7 @@ All topics:
 **Arithmetic sequences:** $u_n = u_1 + (n-1)d$
 $S_n = \frac{n}{2}(2u_1 + (n-1)d) = \frac{n}{2}(u_1 + u_n)$
 
-**Geometric sequences:** $u_n = u_1 r^{n-1}$, $S_n = \frac{u_1(r^n - 1)}{r - 1}$ for $r \neq 1$
+**Geometric sequences:** $u_n = u_1 r^{n-1}$$S_n = \frac{u_1(r^n - 1)}{r - 1}$ for $r \neq 1$
 
 **Sum to infinity (when $|r| \lt 1$):** $S_\infty = \frac{u_1}{1 - r}$
 
@@ -447,7 +447,7 @@ $S_n = \frac{n}{2}(2u_1 + (n-1)d) = \frac{n}{2}(u_1 + u_n)$
 - $\log_a(xy) = \log_a x + \log_a y$
 - $\log_a(x/y) = \log_a x - \log_a y$
 - $\log_a(x^n) = n\log_a x$
-- $\log_a a = 1$, $\log_a 1 = 0$
+- $\log_a a = 1$$\log_a 1 = 0$
 
 ### Functions -- Key Results
 
@@ -516,7 +516,7 @@ $S_n = \frac{n}{2}(2u_1 + (n-1)d) = \frac{n}{2}(u_1 + u_n)$
 This paper tests your algebraic fluency and conceptual understanding. Key strategies:
 
 - **Memorise exact values:**
-  $\sin 30^{\circ} = 1/2$, $\cos 60^{\circ} = 1/2$, $\tan 45^{\circ} = 1$, $\sin 0 = 0$ $\cos 0 = 1$Etc.
+  $\sin 30^{\circ} = 1/2$$\cos 60^{\circ} = 1/2$$\tan 45^{\circ} = 1$$\sin 0 = 0$ $\cos 0 = 1$Etc.
 - **Practise algebraic manipulation:** Partial fractions, simplifying expressions, solving equations
   without a calculator.
 - **Know your identities:** Double angle formulas, Pythagorean identities, and log laws should be at
@@ -698,7 +698,7 @@ If you get this wrong, revise: Solving trigonometric equations by substitution (
 
 </details>
 
-6. In triangle $ABC$, $a = 7$, $b = 10$, $C = 120$ degrees. Find the length of side $c$.
+6. In triangle $ABC$$a = 7$$b = 10$$C = 120$ degrees. Find the length of side $c$.
 
 <details>
 <summary>Solution</summary>
@@ -713,7 +713,7 @@ If you get this wrong, revise: Cosine rule for finding a side (Topic 3).
 
 ### Probability and Statistics
 
-7. Two events $A$ and $B$ are such that $P(A) = 0.6$, $P(B) = 0.4$And $P(A \mid B) = 0.5$. Find
+7. Two events $A$ and $B$ are such that $P(A) = 0.6$$P(B) = 0.4$And $P(A \mid B) = 0.5$. Find
    $P(A \cap B)$ and determine whether $A$ and $B$ are independent.
 
 <details>
@@ -747,8 +747,8 @@ If you get this wrong, revise: Standardisation $Z = (X - \mu)/\sigma$ and invers
 <details>
 <summary>Solution</summary>
 
-- **Substitution:** Let $u = 1 + x^2$, $du = 2x\,dx$So $x\,dx = du/2$.
-- When $x = 0$, $u = 1$; when $x = 1$, $u = 2$.
+- **Substitution:** Let $u = 1 + x^2$$du = 2x\,dx$So $x\,dx = du/2$.
+- When $x = 0$$u = 1$; when $x = 1$$u = 2$.
 - $\displaystyle\int_1^2 \sqrt{u} \cdot \dfrac{du}{2} = \dfrac{1}{2}\left[\dfrac{2}{3}u^{3/2}\right]_1^2 = \dfrac{1}{3}(2\sqrt{2} - 1)$
 
 If you get this wrong, revise: Integration by substitution, changing limits (Topic 5).
@@ -777,7 +777,7 @@ If you get this wrong, revise: Implicit differentiation (HL, Topic 5).
 
 - **Find intersections:** $x^2 = 2x \implies x^2 - 2x = 0 \implies x(x - 2) = 0$So $x = 0$ and
   $x = 2$.
-- **On $[0, 2]$, $2x \ge x^2$.**
+- **On $[0, 2]$$2x \ge x^2$.**
 - **Area:**
   $\displaystyle\int_0^2 (2x - x^2)\,dx = \left[x^2 - \dfrac{x^3}{3}\right]_0^2 = \left(4 - \dfrac{8}{3}\right) - 0 = \dfrac{4}{3}$
 

@@ -479,7 +479,7 @@ $\{1, 2, 3, 4, 5, 6, 7\}$ if no digit is repeated?
 <details>
 <summary>Solution</summary>
 
-The first digit must be $4$, $5$, $6$Or $7$: $4$ choices.
+The first digit must be $4$$5$$6$Or $7$: $4$ choices.
 
 The remaining 4 positions are filled from the remaining $6$ digits without repetition:
 $P_4^6 = \dfrac{6!}{2!} = 360$.
@@ -689,7 +689,7 @@ Find the number of positive divisors of $N = 2^3 \times 3^2 \times 5$.
 <summary>Solution</summary>
 
 A divisor of $N$ has the form $2^a \times 3^b \times 5^c$ where
-$0 \leq a \leq 3$, $0 \leq b \leq 2$, $0 \leq c \leq 1$.
+$0 \leq a \leq 3$$0 \leq b \leq 2$$0 \leq c \leq 1$.
 
 Number of choices for $a$: $4$ (i.e., $0, 1, 2, 3$).
 

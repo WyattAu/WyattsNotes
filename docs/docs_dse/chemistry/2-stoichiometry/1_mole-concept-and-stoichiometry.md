@@ -349,9 +349,9 @@ Moles of $\mathrm{Al} = 10.0 / 27.0 = 0.370 \mathrm{ mol}$
 
 Moles of $\mathrm{HCl} = 30.0 / 36.5 = 0.822 \mathrm{ mol}$
 
-Divide by coefficients: $\mathrm{Al}$: $0.370 / 2 = 0.185$, $\mathrm{HCl}$: $0.822 / 6 = 0.137$
+Divide by coefficients: $\mathrm{Al}$: $0.370 / 2 = 0.185$$\mathrm{HCl}$: $0.822 / 6 = 0.137$
 
-Since $0.137 \lt 0.185$, $\mathrm{HCl}$ is the limiting reagent.
+Since $0.137 \lt 0.185$$\mathrm{HCl}$ is the limiting reagent.
 
 From the equation: 6 mol $\mathrm{HCl}$ produces 3 mol $\mathrm{H}_2$
 
@@ -423,11 +423,11 @@ $V = \dfrac{nRT}{P} = \dfrac{0.156 \times 0.0821 \times 300}{2.0} = \dfrac{3.842
 
 ### Converting Between Mass, Moles, and Volume of Gas
 
-The "mole triangle" connects $n$, $m$And $M$:
+The "mole triangle" connects $n$$m$And $M$:
 
 $$n = \frac{m}{M} \quad ; \quad m = n \times M \quad ; \quad M = \frac{m}{n}$$
 
-For gases, also connect $n$, $V$And $V_m$:
+For gases, also connect $n$$V$And $V_m$:
 
 $$n = \frac{V}{V_m} \quad ; \quad V = n \times V_m$$
 
@@ -752,7 +752,7 @@ Moles of $\mathrm{Mg}$ = $2.43 / 24.3 = 0.100 \mathrm{ mol}$
 
 Moles of $\mathrm{HCl}$ = $2.00 \times 100 / 1000 = 0.200 \mathrm{ mol}$
 
-Divide by coefficients: $\mathrm{Mg}$: $0.100 / 1 = 0.100$, $\mathrm{HCl}$: $0.200 / 2 = 0.100$
+Divide by coefficients: $\mathrm{Mg}$: $0.100 / 1 = 0.100$$\mathrm{HCl}$: $0.200 / 2 = 0.100$
 
 Both are in exactly the stoichiometric ratio. Neither is in strict excess; both are fully consumed.
 
@@ -858,7 +858,7 @@ Empirical formula = $\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$
 Hmm, let me re-check. $0.375 \times 8 = 3$. So empirical formula =
 $\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$.
 
-But this seems large. Let me double check: $0.00600 / 0.00600 = 1$, $0.0120 / 0.00600 = 2$
+But this seems large. Let me double check: $0.00600 / 0.00600 = 1$$0.0120 / 0.00600 = 2$
 $0.00225 / 0.00600 = 0.375$. Multiply by 8: 8, 16, 3. Yes,
 $\mathrm{C}_8\mathrm{H}_{16}\mathrm{O}_3$.
 

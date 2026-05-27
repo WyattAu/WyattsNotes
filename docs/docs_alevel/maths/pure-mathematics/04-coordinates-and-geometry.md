@@ -268,7 +268,7 @@ Since $P$ lies on the circle: $x^2 + y^2 = r^2$So $y^2 = r^2 - x^2 = -(x^2 - r^2
 
 Product: $\frac{-(x^2 - r^2)}{x^2 - r^2} = -1$ (for $x \neq \pm r$).
 
-Since the product of gradients is $-1$, $AP \perp BP$. $\blacksquare$
+Since the product of gradients is $-1$$AP \perp BP$. $\blacksquare$
 
 <hr />
 
@@ -401,7 +401,7 @@ Since $|r_1 - r_2| = 2 < 5 < 6 = r_1 + r_2$The circles intersect at two points a
 Three.
 
 **Method.** Substitute each point into the general form $x^2 + y^2 + Dx + Ey + F = 0$ to obtain
-Three simultaneous equations in $D$, $E$And $F$:
+Three simultaneous equations in $D$$E$And $F$:
 
 $$
 \begin{aligned}
@@ -419,7 +419,7 @@ gradient between the first Two points equals the gradient between the second two
 
 <details>
 <summary>Worked example</summary>
-Find the equation of the circle through $A(1, 2)$, $B(3, 4)$And $C(5, 2)$.
+Find the equation of the circle through $A(1, 2)$$B(3, 4)$And $C(5, 2)$.
 
 Substituting into $x^2 + y^2 + Dx + Ey + F = 0$:
 
@@ -503,7 +503,7 @@ $$\left(4, -1 + 3 \cdot \frac◆LB◆\sqrt{5}◆RB◆◆LB◆3◆RB◆\right) = 
 
 $$\left(4, -1 + 3 \cdot \left(-\frac◆LB◆\sqrt{5}◆RB◆◆LB◆3◆RB◆\right)\right) = \left(4, -1 - \sqrt{5}\right)$$
 
-Verification using the Cartesian equation $(x-2)^2 + (y+1)^2 = 9$: when $x = 4$, $(y+1)^2 = 5$So
+Verification using the Cartesian equation $(x-2)^2 + (y+1)^2 = 9$: when $x = 4$$(y+1)^2 = 5$So
 $y = -1 \pm \sqrt{5}$.
 
 </details>
@@ -595,7 +595,7 @@ Intersection: $\left(\frac{9}{5}, \frac{4}{5}\right)$.
 
 <hr />
 
-**Problem 5.** The points $A(1, 2)$, $B(5, 4)$And $C(3, 8)$ form a triangle. Show that $ABC$ is a
+**Problem 5.** The points $A(1, 2)$$B(5, 4)$And $C(3, 8)$ form a triangle. Show that $ABC$ is a
 Right-angled triangle.
 
 <details>
@@ -606,7 +606,7 @@ Gradient of $BC$: $\frac{8 - 4}{3 - 5} = \frac{4}{-2} = -2$.
 
 Product: $\frac{1}{2} \times (-2) = -1$.
 
-Since $m_{AB} \cdot m_{BC} = -1$, $AB \perp BC$So $\angle B = 90^\circ$. $\blacksquare$
+Since $m_{AB} \cdot m_{BC} = -1$$AB \perp BC$So $\angle B = 90^\circ$. $\blacksquare$
 
 </details>
 <b>If you get this wrong, revise:</b> [Parallel and perpendicular lines](#23-parallel-and-perpendicular-lines)
@@ -825,7 +825,7 @@ $|AC| = 4 = 2r$.
 
 <hr />
 
-**Problem 14.** A circle $C$ has parametric equations $x = 1 + 5\cos\theta$, $y = -2 + 5\sin\theta$.
+**Problem 14.** A circle $C$ has parametric equations $x = 1 + 5\cos\theta$$y = -2 + 5\sin\theta$.
 
 (a) State the centre and radius of $C$.
 

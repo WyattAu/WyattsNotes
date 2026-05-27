@@ -383,7 +383,7 @@ $$
 PV_m = RT
 $$
 
-At STP (standard temperature and pressure: $273.15\mathrm{ K$, $1.013 \times 10^5\mathrm{ Pa$), one
+At STP (standard temperature and pressure: $273.15\mathrm{ K$$1.013 \times 10^5\mathrm{ Pa$), one
 Mole of ideal gas occupies $22.4\mathrm{ L$.
 
 **Example (HL):** Find the volume occupied by 2 mol of gas at $300\mathrm{ K$ and
@@ -527,7 +527,7 @@ $$
 U = \frac{3}{2}Nk_BT = \frac{3}{2}nRT
 $$
 
-For a diatomic ideal gas (e.g., $\mathrm{N_2$, $\mathrm{O_2$), rotational kinetic energy adds two more
+For a diatomic ideal gas (e.g., $\mathrm{N_2$$\mathrm{O_2$), rotational kinetic energy adds two more
 Degrees of freedom:
 
 $$
@@ -863,7 +863,7 @@ See the examples integrated throughout the sections above.
 4. **First law of thermodynamics** -- $W$ is work done _by_ the system. Work done _on_ the system is
    negative $W$. Be consistent with sign conventions.
 5. **Ideal gas law** -- ensure the gas constant $R$ matches the units used.
-   $R = 8.314\mathrm{ J/(mol K)$ when $p$ is in Pa, $V$ in $\mathrm{m^3$, $T$ in K, and $n$ in mol.
+   $R = 8.314\mathrm{ J/(mol K)$ when $p$ is in Pa, $V$ in $\mathrm{m^3$$T$ in K, and $n$ in mol.
 6. **Carnot efficiency** -- temperatures must be in Kelvin. The formula $\eta = 1 - T_C/T_H$ gives
    the maximum possible efficiency; real engines are less efficient.
 7. **pV diagrams** -- work done by the gas equals the area under the curve. For a cycle, net work
@@ -898,7 +898,7 @@ See the examples integrated throughout the sections above.
    $300\mathrm{ g$ of water at $20^\circ\mathrm{C$ in a calorimeter of heat capacity
    $50\mathrm{ J/K$. The final temperature is $30^\circ\mathrm{C$. Find the specific heat capacity
    of the metal.
-6. An ideal gas undergoes isothermal expansion from $2 \times 10^5\mathrm{ Pa$, $0.01\mathrm{ m^3$ to
+6. An ideal gas undergoes isothermal expansion from $2 \times 10^5\mathrm{ Pa$$0.01\mathrm{ m^3$ to
    $1 \times 10^5\mathrm{ Pa$. Find the final volume and the work done by the gas.
 7. A black body of surface area $0.1\mathrm{ m^2$ is at a temperature of $1500\mathrm{ K$. Find the
    power radiated and the wavelength of peak emission.

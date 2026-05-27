@@ -60,7 +60,7 @@ $$e^{-0.10395t} = 600/400 = 1.5$$
 This requires $e$ raised to a positive power to equal $1.5$But $-0.10395t \lt 0$ for all $t \gt 0$So
 $e^{-0.10395t} \lt 1$ always.
 
-The activities are **never equal** for $t \gt 0$. At $t = 0$, $R_A = 400 \lt R_B = 600$And $R_A$
+The activities are **never equal** for $t \gt 0$. At $t = 0$$R_A = 400 \lt R_B = 600$And $R_A$
 always decays faster than $R_B$ (larger decay constant), so $R_A$ is always less than $R_B$ for
 $t \gt 0$.
 
@@ -133,7 +133,7 @@ beta particles have a continuous energy spectrum.
 (c) Calculate the maximum momentum of the beta particle.
 
 Take
-$m_e = 9.11 \times 10^{-31}\,\text{kg}$, $c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$, $1\,\text{eV} = 1.60 \times 10^{-19}\,\text{J}$.
+$m_e = 9.11 \times 10^{-31}\,\text{kg}$$c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$$1\,\text{eV} = 1.60 \times 10^{-19}\,\text{J}$.
 
 **Solution:**
 

@@ -41,7 +41,7 @@ $$\sum_{n=1}^{5} n = \sum_{n'=0}^{4} (n' + 1)$$
 The student's error was writing $\sum_{n=0}^{4} n$ instead of $\sum_{n=0}^{4} (n + 1)$. The LHS
 equals $15$ but the student's RHS equals $10$.
 
-**(b)** Let $j = k - 2$So when $k = 3$, $j = 1$And when $k = 20$, $j = 18$:
+**(b)** Let $j = k - 2$So when $k = 3$$j = 1$And when $k = 20$$j = 18$:
 
 $$\sum_{k=3}^{20} (k - 2) = \sum_{j=1}^{18} j = \frac{18 \times 19}{2} = 171$$
 
@@ -51,7 +51,7 @@ Verification: the original sum has 18 terms from $1$ to $18$Confirming the resul
 
 $$\sum_{n=1}^{10} n(n+1) = \sum_{n=1}^{10}(n^2 + n) = \frac{10 \times 11 \times 21}{6} + \frac{10 \times 11}{2} = 385 + 55 = 440$$
 
-For the second sum, let $m = n - 1$So when $n = 2$, $m = 1$And when $n = 11$, $m = 10$:
+For the second sum, let $m = n - 1$So when $n = 2$$m = 1$And when $n = 11$$m = 10$:
 
 $$\sum_{n=2}^{11} (n-1)^2 = \sum_{m=1}^{10} m^2 = \frac{10 \times 11 \times 21}{6} = 385$$
 

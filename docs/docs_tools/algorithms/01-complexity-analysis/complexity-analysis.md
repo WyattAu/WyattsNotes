@@ -162,7 +162,7 @@ G_2(n))$.
 
 ### Polynomial Rule
 
-For any constant $k$, $O(n^k)$ dominates $O(n^j)$ when $k \gt j$.
+For any constant $k$$O(n^k)$ dominates $O(n^j)$ when $k \gt j$.
 
 ### Logarithmic Rule
 
@@ -190,7 +190,7 @@ The recursive work at the leaves dominates the combine step.
 
 **Example:** $T(n) = 8T(n/2) + O(n)$
 
-- $a = 8$, $b = 2$So $c_{crit} = \log_2 8 = 3$
+- $a = 8$$b = 2$So $c_{crit} = \log_2 8 = 3$
 - $f(n) = O(n) = O(n^{3-2})$So $\epsilon = 2$
 - $T(n) = \Theta(n^3)$
 
@@ -203,7 +203,7 @@ The work is the same at each level of the recursion tree.
 
 **Example:** $T(n) = 2T(n/2) + O(n)$
 
-- $a = 2$, $b = 2$So $c_{crit} = \log_2 2 = 1$
+- $a = 2$$b = 2$So $c_{crit} = \log_2 2 = 1$
 - $f(n) = O(n) = \Theta(n^1 \log^0 n)$So $k = 0$
 - $T(n) = \Theta(n \log n)$ — this is merge sort
 
@@ -219,7 +219,7 @@ The combine step dominates the recursive work.
 
 **Example:** $T(n) = 2T(n/2) + O(n^2)$
 
-- $a = 2$, $b = 2$So $c_{crit} = 1$
+- $a = 2$$b = 2$So $c_{crit} = 1$
 - $f(n) = O(n^2) = \Omega(n^{1+1})$So $\epsilon = 1$
 - Regularity: $2 \cdot (n/2)^2 = n^2/2 \le 0.5 \cdot n^2$ — satisfied
 - $T(n) = \Theta(n^2)$
@@ -606,7 +606,7 @@ The Akra-Bazzi theorem generalises the Master Theorem for recurrences of the for
 
 $$T(x) = \sum_{i=1}^{k} a_i T(b_i x + h_i(x)) + f(x)$$
 
-Where $a_i \gt 0$, $0 \lt b_i \lt 1$And $h_i(x) = O(x / \log^2 x)$. Find $p$ such that
+Where $a_i \gt 0$$0 \lt b_i \lt 1$And $h_i(x) = O(x / \log^2 x)$. Find $p$ such that
 $\sum_{i=1}^{k} a_i b_i^p = 1$. Then:
 
 $$T(x) = \Theta\left(x^p \left(1 + \int_1^x \frac{f(u)}{u^{p+1}} du\right)\right)$$
@@ -757,7 +757,7 @@ Some algorithms reduce the problem size by a constant rather than a factor.
 
 **Example:** Binary search — $T(n) = T(n/2) + O(1)$
 
-This is a degenerate case of the Master Theorem with $a = 1$, $b = 2$: $c_{crit} = \log_2 1 = 0$
+This is a degenerate case of the Master Theorem with $a = 1$$b = 2$: $c_{crit} = \log_2 1 = 0$
 $f(n) = O(1) = O(n^0)$So Case 2 gives $T(n) = O(\log n)$.
 
 **Example:** Euclidean GCD — $T(a, b) = T(b, a \bmod b) + O(1)$

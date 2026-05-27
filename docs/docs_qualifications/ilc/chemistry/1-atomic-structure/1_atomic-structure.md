@@ -62,7 +62,7 @@ $$10x + 1100 - 11x = 1081$$
 
 $$-x = -19 \implies x = 19\%$$
 
-$^{10}\mathrm{B = 19\%$, $^{11}\mathrm{B = 81\%$.
+$^{10}\mathrm{B = 19\%$$^{11}\mathrm{B = 81\%$.
 
 **Worked Example 2 (OL):** Calculate the relative atomic mass of neon from its isotopes:
 $^{20}\mathrm{Ne$ (90.5%) and $^{22}\mathrm{Ne$ (9.5%).
@@ -101,7 +101,7 @@ Potassium has 19 electrons. Filling shells: K (2), L (8), M (8), N (1). Configur
 
 ### Subshells and Orbitals (HL)
 
-Shells are divided into subshells: $s$, $p$, $d$, $f$.
+Shells are divided into subshells: $s$$p$$d$$f$.
 
 | Subshell | Orbitals | Max electrons |
 | -------- | -------- | ------------- |
@@ -155,7 +155,7 @@ Two electrons with opposite spins.
 
 **Worked Example 5 (HL):** List all possible quantum numbers for a $3p$ electron.
 
-$n = 3$, $\ell = 1$ (p subshell), $m_\ell = -1, 0, +1$, $m_s = +\frac{1}{2}$ or $-\frac{1}{2}$.
+$n = 3$$\ell = 1$ (p subshell), $m_\ell = -1, 0, +1$$m_s = +\frac{1}{2}$ or $-\frac{1}{2}$.
 
 There are 6 possible combinations: 3 orbitals $\times$ 2 spins = 6 electrons (matches the maximum
 For the $p$ subshell).
@@ -226,11 +226,11 @@ Decreases across a period (increasing nuclear charge pulls electrons closer). In
 (additional shells).
 
 **Worked Example 7 (OL):** Arrange the following in order of increasing atomic radius: $\mathrm{Na$
-$\mathrm{Mg$, $\mathrm{Al$, $\mathrm{K$.
+$\mathrm{Mg$$\mathrm{Al$$\mathrm{K$.
 
 $\mathrm{Al < \mathrm{Mg < \mathrm{Na < \mathrm{K$.
 
-$\mathrm{Na$, $\mathrm{Mg$And $\mathrm{Al$ are in period 3: radius decreases from left to right.
+$\mathrm{Na$$\mathrm{Mg$And $\mathrm{Al$ are in period 3: radius decreases from left to right.
 $\mathrm{K$ is in period 4 (below $\mathrm{Na$) and has a much larger radius.
 
 ### Ionisation Energy (OL/HL)
@@ -441,7 +441,7 @@ Each orbital is described by a wave function $\psi$And $|\psi|^2$ gives the prob
 ### Shapes of Orbitals
 
 - **s orbitals:** Spherical. All $s$ orbitals are spherical but increase in size with $n$.
-- **p orbitals:** Dumbbell-shaped. Three orientations: $p_x$, $p_y$, $p_z$.
+- **p orbitals:** Dumbbell-shaped. Three orientations: $p_x$$p_y$$p_z$.
 - **d orbitals:** Clover-shaped (five orientations).
 
 ### Radial Distribution Functions
@@ -482,7 +482,7 @@ Note: $\mathrm{Fe^{3+}$ has a half-filled $3d$ subshell, making it particularly 
 
 Ions with the same number of electrons are isoelectronic.
 
-**Example:** $\mathrm{O^{2-}$, $\mathrm{F^-$, $\mathrm{Ne$, $\mathrm{Na^+$, $\mathrm{Mg^{2+}$ all have 10
+**Example:** $\mathrm{O^{2-}$$\mathrm{F^-$$\mathrm{Ne$$\mathrm{Na^+$$\mathrm{Mg^{2+}$ all have 10
 Electrons ($[\mathrm{Ne]$ configuration).
 
 **Trend in ionic radius:** For isoelectronic ions, the radius decreases as nuclear charge increases:
@@ -497,10 +497,10 @@ $$\mathrm{O^{2-} > \mathrm{F^-> \mathrm{Ne > \mathrm{Na^+ > \mathrm{Mg^{2+}$$
 
 | Block   | Subshell being filled | Groups                 | Examples                             |
 | ------- | --------------------- | ---------------------- | ------------------------------------ |
-| s-block | $s$                   | 1, 2                   | $\mathrm{Na$, $\mathrm{Mg$             |
-| p-block | $p$                   | 13-18                  | $\mathrm{Al$, $\mathrm{Cl$, $\mathrm{Ar$ |
-| d-block | $d$                   | 3-12                   | $\mathrm{Fe$, $\mathrm{Cu$             |
-| f-block | $f$                   | Lanthanides, Actinides | $\mathrm{U$, $\mathrm{Ce$              |
+| s-block | $s$                   | 1, 2                   | $\mathrm{Na$$\mathrm{Mg$             |
+| p-block | $p$                   | 13-18                  | $\mathrm{Al$$\mathrm{Cl$$\mathrm{Ar$ |
+| d-block | $d$                   | 3-12                   | $\mathrm{Fe$$\mathrm{Cu$             |
+| f-block | $f$                   | Lanthanides, Actinides | $\mathrm{U$$\mathrm{Ce$              |
 
 ### Periodic Trends in Detail: Atomic Radius
 
@@ -631,7 +631,7 @@ And scanning electron microscopy (SEM) are two common types.
     pattern.
 
 12. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \mathrm{ m/s$.
-    (Mass of electron $= 9.11 \times 10^{-31} \mathrm{ kg$, $h = 6.63 \times 10^{-34} \mathrm{ J s$.)
+    (Mass of electron $= 9.11 \times 10^{-31} \mathrm{ kg$$h = 6.63 \times 10^{-34} \mathrm{ J s$.)
 
 13. Explain why potassium ($Z = 19$) is placed after argon ($Z = 18$) in the periodic table, despite
     argon having a filled $3p$ subshell and potassium having an electron in the $4s$ subshell.

@@ -673,7 +673,7 @@ The ratio of their periods.
 $T_1/T_2 = \sqrt◆LB◆\cos\alpha_1/\cos\alpha_2◆RB◆ = \sqrt◆LB◆\cos 20°/\cos 40°◆RB◆
 = \sqrt{0.9397/0.7660} = \sqrt{1.227} = 1.108$.
 
-Since $T_1/T_2 \gt 1$, $T_1 \gt T_2$: the pendulum at the larger angle ($40^\circ$) has the shorter
+Since $T_1/T_2 \gt 1$$T_1 \gt T_2$: the pendulum at the larger angle ($40^\circ$) has the shorter
 Period, as expected.
 
 The ratio is $T_1:T_2 = 1.108:1$Or equivalently $T_2/T_1 = 0.902$.

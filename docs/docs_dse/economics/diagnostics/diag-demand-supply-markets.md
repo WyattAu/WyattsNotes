@@ -23,15 +23,15 @@ PED.
 
 Midpoint method: $PED = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}}$
 
-**Cinema 1:** $\Delta Q = 350 - 500 = -150$, $\bar{Q} = (500 + 350)/2 = 425$.
-$\Delta P = 100 - 80 = 20$, $\bar{P} = (80 + 100)/2 = 90$.
+**Cinema 1:** $\Delta Q = 350 - 500 = -150$$\bar{Q} = (500 + 350)/2 = 425$.
+$\Delta P = 100 - 80 = 20$$\bar{P} = (80 + 100)/2 = 90$.
 
 $PED = \frac{-150/425}{20/90} = \frac{-0.3529}{0.2222} = -1.59$
 
 $|PED| = 1.59 \gt 1$: Demand is **elastic**.
 
-**Cinema 2:** $\Delta Q = 380 - 400 = -20$, $\bar{Q} = (400 + 380)/2 = 390$.
-$\Delta P = 66 - 60 = 6$, $\bar{P} = (60 + 66)/2 = 63$.
+**Cinema 2:** $\Delta Q = 380 - 400 = -20$$\bar{Q} = (400 + 380)/2 = 390$.
+$\Delta P = 66 - 60 = 6$$\bar{P} = (60 + 66)/2 = 63$.
 
 $PED = \frac{-20/390}{6/63} = \frac{-0.0513}{0.0952} = -0.54$
 
@@ -105,7 +105,7 @@ $PES = \frac{\Delta Q / \bar{Q}}{\Delta P / \bar{P}} = \frac{100/280}{20/60} = \
 
 $PES \approx 1.07 \gt 1$: Supply is **unit elastic / slightly elastic**.
 
-(b) The restaurant starts supplying when $Q_s = 0$: $-20 + 5P = 0$, $P = 4$. The restaurant needs a
+(b) The restaurant starts supplying when $Q_s = 0$: $-20 + 5P = 0$$P = 4$. The restaurant needs a
 Minimum price of $\$4$ to cover its variable costs before it begins supplying. Below this price, the
 Restaurant would shut down in the short run.
 
@@ -132,7 +132,7 @@ Using the concept of negative externalities.
 
 **Solution:**
 
-(a) Pre-tax: $120 - 0.5Q = 20 + 0.5Q$, $100 = Q$, $Q^* = 100$, $P^* = \$70$.
+(a) Pre-tax: $120 - 0.5Q = 20 + 0.5Q$$100 = Q$$Q^* = 100$$P^* = \$70$.
 
 Post-tax: supply shifts up by $\$10$. $120 - 0.5Q = 30 + 0.5Q$, $90 = Q$, $Q_t = 90$.
 $P_b = 120 - 0.5(90) = \$75$. $P_s = 75 - 10 = \$65$.
@@ -171,7 +171,7 @@ Of opportunity cost for commuters who switch from taxis to MTR.
 
 **Solution:**
 
-(a) Equilibrium at $P = 30$, $Q = 400$ (where $Q_d = Q_s$).
+(a) Equilibrium at $P = 30$$Q = 400$ (where $Q_d = Q_s$).
 
 (b) New supply schedule adds 100 to each $Q_s$:
 
@@ -183,10 +183,10 @@ Of opportunity cost for commuters who switch from taxis to MTR.
 | 40    | 300   | 600         |
 | 50    | 200   | 700         |
 
-New equilibrium: Between $P = 20$ ($Q_d = 500$, $Q_s = 400$) and $P = 30$ ($Q_d = 400$ $Q_s = 500$).
+New equilibrium: Between $P = 20$ ($Q_d = 500$$Q_s = 400$) and $P = 30$ ($Q_d = 400$ $Q_s = 500$).
 At equilibrium: $Q_d = Q_s$. Interpolating: $Q = 450$ at $P = 25$.
 
-(c) Original: $P = 30$, $Q = 400$. New: $P = 25$, $Q = 450$.
+(c) Original: $P = 30$$Q = 400$. New: $P = 25$$Q = 450$.
 
 $PED = \frac{(450-400)/425}{(25-30)/27.5} = \frac{50/425}{-5/27.5} = \frac{0.1176}{-0.1818} = -0.647$.
 
@@ -437,7 +437,7 @@ impact of the minimum wage on: (i) workers who keep their jobs, (ii) workers who
 
 **Solution:**
 
-(a) Free market: $500 - 5W = -200 + 10W$, $700 = 15W$, $W^* = 46.67$, $L^* = 500 - 5(46.67) = 266.67$
+(a) Free market: $500 - 5W = -200 + 10W$$700 = 15W$$W^* = 46.67$$L^* = 500 - 5(46.67) = 266.67$
 thousand workers.
 
 Wait, the minimum wage of 37.50 is _below_ the market equilibrium wage of 46.67. This means the
@@ -446,7 +446,7 @@ demand and supply to make the minimum wage binding.
 
 Let demand be $L_d = 500 - 10W$ and supply $L_s = -100 + 10W$.
 
-Free market: $500 - 10W = -100 + 10W$, $600 = 20W$, $W^* = 30$, $L^* = 500 - 300 = 200$ thousand.
+Free market: $500 - 10W = -100 + 10W$$600 = 20W$$W^* = 30$$L^* = 500 - 300 = 200$ thousand.
 
 Now the minimum wage of HK$37.50 is binding (above equilibrium).
 
@@ -520,9 +520,9 @@ linear functions.
 Let demand: $Q_d = a - bP$ where $b = |PED| \times Q/P = 0.8 \times 60/15 = 3.2$. Supply:
 $Q_s = c + dP$ where $d = PES \times Q/P = 0.4 \times 60/15 = 1.6$.
 
-$Q_d = a - 3.2P$. At equilibrium: $60 = a - 3.2(15)$, $a = 60 + 48 = 108$. So $Q_d = 108 - 3.2P$.
+$Q_d = a - 3.2P$. At equilibrium: $60 = a - 3.2(15)$$a = 60 + 48 = 108$. So $Q_d = 108 - 3.2P$.
 
-$Q_s = c + 1.6P$. At equilibrium: $60 = c + 1.6(15)$, $c = 60 - 24 = 36$. So $Q_s = 36 + 1.6P$.
+$Q_s = c + 1.6P$. At equilibrium: $60 = c + 1.6(15)$$c = 60 - 24 = 36$. So $Q_s = 36 + 1.6P$.
 
 Supply shifts right by 15%: new supply at every price is
 $Q_s' = 1.15 \times (36 + 1.6P) = 41.4 + 1.84P$.

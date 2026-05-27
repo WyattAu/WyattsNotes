@@ -74,7 +74,7 @@ Because we cannot achieve exactly $\alpha$.
 
 $P(X \geq 12) = 1 - P(X \leq 11)$. We find the smallest $c$ such that $P(X \geq c) \leq 0.05$.
 
-$P(X \geq 12) \approx 0.0176$, $P(X \geq 11) \approx 0.0592$.
+$P(X \geq 12) \approx 0.0176$$P(X \geq 11) \approx 0.0592$.
 
 Critical region: $X \geq 12$. Actual significance level: 1.76%.
 
@@ -134,7 +134,7 @@ Whether the coin is biased towards heads.
 
 $X \sim B(20, p)$.
 
-$H_0: p = 0.5$, $H_1: p \gt 0.5$. One-tailed, $\alpha = 0.05$.
+$H_0: p = 0.5$$H_1: p \gt 0.5$. One-tailed, $\alpha = 0.05$.
 
 Under $H_0$: $X \sim B(20, 0.5)$.
 
@@ -156,7 +156,7 @@ There is sufficient evidence at the 5% level that the coin is biased towards hea
 **Example.** A machine fills bags with mean weight 500g. A sample of 30 bags gives $\bar{x} = 497$G.
 Test at the 5% level whether the mean weight has decreased, given $\sigma = 6$G.
 
-$H_0: \mu = 500$, $H_1: \mu \lt 500$. $\alpha = 0.05$.
+$H_0: \mu = 500$$H_1: \mu \lt 500$. $\alpha = 0.05$.
 
 Under $H_0$: $\bar{X} \sim N(500, 6^2/30) = N(500, 1.2)$.
 
@@ -272,7 +272,7 @@ Since the binomial distribution is discrete and the normal distribution is conti
 **Example.** Historically, 40% of students at a school take the bus. In a survey of 120 students, 58
 Take the bus. Test at the 5% level whether the proportion has changed.
 
-$X \sim B(120, p)$. $H_0: p = 0.4$, $H_1: p \neq 0.4$. Two-tailed, $\alpha = 0.05$.
+$X \sim B(120, p)$. $H_0: p = 0.4$$H_1: p \neq 0.4$. Two-tailed, $\alpha = 0.05$.
 
 Check conditions using $p_0 = 0.4$: $np_0 = 120 \times 0.4 = 48 \gt 5$ and
 $n(1 - p_0) = 120 \times 0.6 = 72 \gt 5$. Conditions satisfied.
@@ -327,7 +327,7 @@ There is a direct and important link between confidence intervals and two-tailed
 - If $p_0$ falls **outside** the confidence interval, then $H_0$ is rejected at level $\alpha$.
 - If $p_0$ falls **inside** the confidence interval, then $H_0$ is not rejected at level $\alpha$.
 
-**Example.** Using the bus survey data: $\hat{p} = 58/120 \approx 0.483$, $n = 120$.
+**Example.** Using the bus survey data: $\hat{p} = 58/120 \approx 0.483$$n = 120$.
 
 $$95\%\mathrm{ CI} = 0.483 \pm 1.96\sqrt◆LB◆\dfrac{0.483 \times 0.517}{120}◆RB◆ = 0.483 \pm 1.96 \times 0.0456$$
 
@@ -409,7 +409,7 @@ A die is rolled 60 times and a 6 appears 16 times. Test at the 5% level whether 
 
 <details>
 <summary>Solution 1</summary>
-$X \sim B(60, p)$. $H_0: p = 1/6$, $H_1: p \neq 1/6$. Two-tailed, $\alpha = 0.05$.
+$X \sim B(60, p)$. $H_0: p = 1/6$$H_1: p \neq 1/6$. Two-tailed, $\alpha = 0.05$.
 
 Under $H_0$: $X \sim B(60, 1/6)$. $\mu = 10$
 $\sigma = \sqrt◆LB◆60 \times \frac{1}{6} \times \frac{5}{6}◆RB◆ = \sqrt{50/6} \approx 2.887$.
@@ -432,7 +432,7 @@ A manufacturer claims that 90% of their products pass quality control. In a samp
 
 <details>
 <summary>Solution 2</summary>
-$X \sim B(200, p)$. $H_0: p = 0.9$, $H_1: p \lt 0.9$. Left-tailed, $\alpha = 0.05$.
+$X \sim B(200, p)$. $H_0: p = 0.9$$H_1: p \lt 0.9$. Left-tailed, $\alpha = 0.05$.
 
 $\hat{p} = 170/200 = 0.85$.
 
@@ -491,7 +491,7 @@ The mean lifetime of a bulb is claimed to be 1000 hours. A sample of 50 bulbs gi
 
 <details>
 <summary>Solution 5</summary>
-$H_0: \mu = 1000$, $H_1: \mu \lt 1000$. $\alpha = 0.01$.
+$H_0: \mu = 1000$$H_1: \mu \lt 1000$. $\alpha = 0.01$.
 
 $\bar{X} \sim N(1000, 40^2/50) = N(1000, 32)$ approximately.
 
@@ -517,8 +517,8 @@ Under $H_0$: $X \sim B(20, 0.5)$.
 
 For each tail, we need $P(X \leq c_L) \leq 0.05$ and $P(X \geq c_U) \leq 0.05$.
 
-Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$, $P(X \leq 6) \approx 0.0577 \gt 0.05$. So $c_L = 5$.
-Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$, $P(X \geq 14) \approx 0.0577 \gt 0.05$. So $c_U = 15$.
+Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$$P(X \leq 6) \approx 0.0577 \gt 0.05$. So $c_L = 5$.
+Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$$P(X \geq 14) \approx 0.0577 \gt 0.05$. So $c_U = 15$.
 
 Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times 0.0207 = 0.0414$.
 
@@ -534,7 +534,7 @@ A teacher claims that the average score on a test is 70%. In a class of 25, the 
 
 <details>
 <summary>Solution 7</summary>
-$H_0: \mu = 70$, $H_1: \mu \neq 70$. Two-tailed, $\alpha = 0.05$.
+$H_0: \mu = 70$$H_1: \mu \neq 70$. Two-tailed, $\alpha = 0.05$.
 
 $\bar{X} \sim N(70, 12^2/25) = N(70, 5.76)$ approximately.
 
@@ -556,7 +556,7 @@ A drug is effective for 60% of patients. After a new treatment, 18 out of 25 pat
 
 <details>
 <summary>Solution 8</summary>
-$X \sim B(25, p)$. $H_0: p = 0.6$, $H_1: p \gt 0.6$. Right-tailed, $\alpha = 0.05$.
+$X \sim B(25, p)$. $H_0: p = 0.6$$H_1: p \gt 0.6$. Right-tailed, $\alpha = 0.05$.
 
 Under $H_0$: $X \sim B(25, 0.6)$.
 
@@ -637,7 +637,7 @@ A survey of 200 households in a town finds that 45 regularly recycle. The nation
 
 <details>
 <summary>Solution 12</summary>
-$X \sim B(200, p)$. $H_0: p = 0.20$, $H_1: p \neq 0.20$. Two-tailed, $\alpha = 0.05$.
+$X \sim B(200, p)$. $H_0: p = 0.20$$H_1: p \neq 0.20$. Two-tailed, $\alpha = 0.05$.
 
 Check conditions using $p_0 = 0.20$: $np_0 = 200 \times 0.20 = 40 \gt 5$ and
 $n(1 - p_0) = 160 \gt 5$. Conditions satisfied.
@@ -724,7 +724,7 @@ Against $H_0$.
 
 <details>
 <summary>Problem 16</summary>
-For a test of $H_0: \mu = 100$ vs $H_1: \mu \gt 100$ with $\sigma = 15$, $n = 25$And $\alpha = 0.05$: (a) Find the critical value in terms of $\bar{x}$. (b) Find the probability of a Type II error and the power of the test if the true mean is $\mu = 108$. (c) How would the power change if $\alpha$ were increased to 0.10?
+For a test of $H_0: \mu = 100$ vs $H_1: \mu \gt 100$ with $\sigma = 15$$n = 25$And $\alpha = 0.05$: (a) Find the critical value in terms of $\bar{x}$. (b) Find the probability of a Type II error and the power of the test if the true mean is $\mu = 108$. (c) How would the power change if $\alpha$ were increased to 0.10?
 </details>
 
 <details>

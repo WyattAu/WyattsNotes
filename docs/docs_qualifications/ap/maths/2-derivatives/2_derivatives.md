@@ -129,7 +129,7 @@ $$
 F'(x) = \frac{2}{3}x^{-1/3} = \frac{2}{3\sqrt[3]{x}}
 $$
 
-As $x \to 0^+$, $f'(x) \to +\infty$. As $x \to 0^-$, $f'(x) \to -\infty$.
+As $x \to 0^+$$f'(x) \to +\infty$. As $x \to 0^-$$f'(x) \to -\infty$.
 
 The left and right derivatives are both infinite but with opposite signs, creating a cusp. The
 Tangent line approaches vertical from both sides. $\blacksquare$
@@ -455,12 +455,12 @@ $$
 F''(x) = \frac{d}{dx}[f'(x)] = \frac{d^2y}{dx^2}
 $$
 
-Similarly, $f'''(x)$, $f^{(4)}(x)$Etc. Denote higher-order derivatives.
+Similarly, $f'''(x)$$f^{(4)}(x)$Etc. Denote higher-order derivatives.
 
 ### Interpretation of the Second Derivative
 
-- If $f''(x) \gt 0$, $f$ is **concave up** at $x$.
-- If $f''(x) \lt 0$, $f$ is **concave down** at $x$.
+- If $f''(x) \gt 0$$f$ is **concave up** at $x$.
+- If $f''(x) \lt 0$$f$ is **concave down** at $x$.
 - If $f''(x)$ changes sign at $x = c$Then $(c, f(c))$ is an **inflection point**.
 
 **Theorem.** If $f$ has a local maximum at $c$ and $f''(c)$ exists, then $f''(c) \leq 0$. If $f$ has
@@ -472,9 +472,9 @@ This is the second derivative test for concavity at critical points.
 
 Common notations for derivatives include:
 
-- $f'(x)$, $f''(x)$, $f'''(x)$ (prime notation)
-- $\frac{df}{dx}$, $\frac{d^2f}{dx^2}$ (Leibniz notation)
-- $\dot{x}$, $\ddot{x}$ (Newton's dot notation for time derivatives)
+- $f'(x)$$f''(x)$$f'''(x)$ (prime notation)
+- $\frac{df}{dx}$$\frac{d^2f}{dx^2}$ (Leibniz notation)
+- $\dot{x}$$\ddot{x}$ (Newton's dot notation for time derivatives)
 
 ## Applications of Derivatives (CED Unit 5)
 
@@ -562,7 +562,7 @@ This is useful for estimating values of functions near known points.
 
 Use linear approximation to estimate $\sqrt{4.1}$.
 
-Let $f(x) = \sqrt{x}$, $a = 4$.
+Let $f(x) = \sqrt{x}$$a = 4$.
 
 $$
 F'(x) = \frac{1}{2\sqrt{x}} \implies f(4) = 2, \quad f'(4) = \frac{1}{4}
@@ -580,7 +580,7 @@ $$
 
 Use linear approximation to estimate $(1.02)^{10}$.
 
-Let $f(x) = x^{10}$, $a = 1$.
+Let $f(x) = x^{10}$$a = 1$.
 
 $$
 F'(x) = 10x^9 \implies f(1) = 1, \quad f'(1) = 10
@@ -636,7 +636,7 @@ Suppose there are two distinct roots $a \lt b$. Then $f(a) = f(b) = 0$And by Rol
 exists $c \in (a, b)$ with $f'(c) = 0$. But $f'(x) = 3x^2 - 3 = 3(x+1)(x-1)$Which is zero Only at
 $x = \pm 1$. This does not lead to a contradiction on its own, so we must examine further.
 
-In fact, $f(-2) = -1$, $f(0) = 1$, $f(1) = -1$, $f(2) = 3$. So $f$ has at least one root in $(-2, 0)$At
+In fact, $f(-2) = -1$$f(0) = 1$$f(1) = -1$$f(2) = 3$. So $f$ has at least one root in $(-2, 0)$At
 least one in $(0, 1)$And possibly one in $(1, 2)$. Rolle's Theorem applied to Consecutive roots
 shows that each pair of roots must bracket either $x = -1$ or $x = 1$.
 
@@ -706,7 +706,7 @@ $$
 \frac{d^2A}{dx^2} = -2 \lt 0 \quad \mathrm{(confirms maximum)
 $$
 
-So $x = 50$, $y = 50$And the maximum area is $2500 \mathrm{ ft^2$.
+So $x = 50$$y = 50$And the maximum area is $2500 \mathrm{ ft^2$.
 
 :::
 
@@ -779,7 +779,7 @@ $$
 F'(x) = 3x^2 - 6x = 3x(x - 2) = 0 \implies x = 0 \mathrm{ or  x = 2
 $$
 
-$f(-1) = -1 - 3 + 4 = 0$, $f(0) = 4$, $f(2) = 8 - 12 + 4 = 0$, $f(4) = 64 - 48 + 4 = 20$.
+$f(-1) = -1 - 3 + 4 = 0$$f(0) = 4$$f(2) = 8 - 12 + 4 = 0$$f(4) = 64 - 48 + 4 = 20$.
 
 Absolute minimum: $0$ at $x = -1$ and $x = 2$. Absolute maximum: $20$ at $x = 4$.
 
@@ -931,7 +931,7 @@ Let base side = $x$Height = $h$. Volume: $x^2 h = 108$So $h = 108/x^2$.
 
 Surface area: $S = x^2 + 4xh = x^2 + 4x(108/x^2) = x^2 + 432/x$.
 
-$\frac{dS}{dx} = 2x - 432/x^2 = 0$So $2x = 432/x^2$, $x^3 = 216$, $x = 6 \mathrm{ cm$.
+$\frac{dS}{dx} = 2x - 432/x^2 = 0$So $2x = 432/x^2$$x^3 = 216$$x = 6 \mathrm{ cm$.
 
 $h = 108/36 = 3 \mathrm{ cm$.
 
@@ -959,7 +959,7 @@ $f(2) = 8 - 6 + 1 = 3$. $f(-2) = -8 + 6 + 1 = -1$.
 
 $f'(c) = \frac{f(2) - f(-2)}{2 - (-2)} = \frac{3 - (-1)}{4} = 1$.
 
-$f'(x) = 3x^2 - 3 = 1$So $3x^2 = 4$, $x^2 = 4/3$, $x = \pm 2/\sqrt{3} \approx \pm 1.155$.
+$f'(x) = 3x^2 - 3 = 1$So $3x^2 = 4$$x^2 = 4/3$$x = \pm 2/\sqrt{3} \approx \pm 1.155$.
 
 Both values are in $(-2, 2)$. The MVT is satisfied at $c = 2/\sqrt{3}$ and $c = -2/\sqrt{3}$.
 

@@ -111,9 +111,9 @@ Each shell contains subshells, designated by the azimuthal quantum number $l$:
 | $n$ | Subshells ($l$ values) | Maximum electrons |
 | --- | ---------------------- | ----------------- |
 | $1$ | $1s$                   | $2$               |
-| $2$ | $2s$, $2p$               | $8$               |
-| $3$ | $3s$, $3p$, $3d$           | $18$              |
-| $4$ | $4s$, $4p$, $4d$, $4f$       | $32$              |
+| $2$ | $2s$$2p$               | $8$               |
+| $3$ | $3s$$3p$$3d$           | $18$              |
+| $4$ | $4s$$4p$$4d$$4f$       | $32$              |
 
 The maximum number of electrons in shell $n$ is $2n^2$.
 
@@ -144,9 +144,9 @@ The number of orbitals in a subshell is $2l + 1$.
 
 :::info[Example — Quantum numbers for a $3p$ electron]
 
-For the $3p$ subshell: $n = 3$, $l = 1$, $m_l = -1, 0, +1$, $m_s = \pm\frac{1}{2}$
+For the $3p$ subshell: $n = 3$$l = 1$$m_l = -1, 0, +1$$m_s = \pm\frac{1}{2}$
 
-This gives three $p$-orbitals ($p_x$, $p_y$, $p_z$), each holding two electrons, for a total of six $3p$
+This gives three $p$-orbitals ($p_x$$p_y$$p_z$), each holding two electrons, for a total of six $3p$
 electrons.
 
 :::
@@ -242,7 +242,7 @@ Electron configurations of the elements.
 
 | Block | Subshell being filled       | Groups                | Examples                  |
 | ----- | --------------------------- | --------------------- | ------------------------- |
-| $s$   | $ns^1$ to $ns^2$            | $1$, $2$                | H, He, Li, Na, Mg, Ca     |
+| $s$   | $ns^1$ to $ns^2$            | $1$$2$                | H, He, Li, Na, Mg, Ca     |
 | $p$   | $np^1$ to $np^6$            | $13$--$18$            | B, C, N, O, F, Ne, Cl, Ar |
 | $d$   | $(n-1)d^1$ to $(n-1)d^{10}$ | $3$--$12$             | Sc, Ti, Fe, Cu, Zn        |
 | $f$   | $(n-2)f^1$ to $(n-2)f^{14}$ | Lanthanides/Actinides | Ce, Th, U                 |
@@ -307,7 +307,7 @@ Nuclei of adjacent atoms in the solid or liquid), which is significantly larger 
 
 $\mathrm{O}^{2-} \gt \mathrm{F}^- \gt \mathrm{Na}^+ \gt \mathrm{Mg}^{2+} \gt \mathrm{Al}^{3+}$
 
-All have the neon configuration ($1s^2\, 2s^2\, 2p^6$, $10$ electrons). The nuclear charge increases
+All have the neon configuration ($1s^2\, 2s^2\, 2p^6$$10$ electrons). The nuclear charge increases
 From $Z = 8$ to $Z = 13$So the radius decreases.
 
 :::
@@ -616,7 +616,7 @@ London dispersion.
 
 Under extreme conditions, the heavier noble gases can form compounds:
 
-- **Xenon** forms $\mathrm{XeF}_2$, $\mathrm{XeF}_4$, $\mathrm{XeF}_6$, $\mathrm{XeO}_3$ $\mathrm{XeO}_4$
+- **Xenon** forms $\mathrm{XeF}_2$$\mathrm{XeF}_4$$\mathrm{XeF}_6$$\mathrm{XeO}_3$ $\mathrm{XeO}_4$
 - **Krypton** forms $\mathrm{KrF}_2$ (extremely reactive)
 - **Argon** forms very unstable compounds under extreme conditions
 
@@ -690,7 +690,7 @@ Central metal ion to form a coordinate bond.
 
 | Type of ligand | Examples                                                              | Denticity | Bonds donated |
 | -------------- | --------------------------------------------------------------------- | --------- | ------------- |
-| Monodentate    | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, $\mathrm{Cl}^-$, $\mathrm{CN}^-$ | $1$       | $1$           |
+| Monodentate    | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$$\mathrm{Cl}^-$$\mathrm{CN}^-$ | $1$       | $1$           |
 | Bidentate      | Ethylenediamine (en), oxalate ($\mathrm{C}_2\mathrm{O}_4^{2-}$)       | $2$       | $2$           |
 | Hexadentate    | EDTA ($\mathrm{EDTA}^{4-}$)                                           | $6$       | $6$           |
 
@@ -703,7 +703,7 @@ The central metal ion.
 | ------------------- | ------------- | ------------------------------------------------------------------------ |
 | $4$                 | Tetrahedral   | $[\mathrm{CoCl}_4]^{2-}$                                                 |
 | $4$                 | Square planar | $[\mathrm{Cu(NH}_3)_4]^{2+}$ (sometimes), $[\mathrm{Ni(CN)}_4]^{2-}$     |
-| $6$                 | Octahedral    | $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$, $[\mathrm{Fe(CN)}_6]^{4-}$ |
+| $6$                 | Octahedral    | $[\mathrm{Cu}(\mathrm{H}_2\mathrm{O})_6]^{2+}$$[\mathrm{Fe(CN)}_6]^{4-}$ |
 
 ### Colour of Transition Metal Complexes
 
@@ -740,7 +740,7 @@ Splitting are **weak-field ligands**.
 
 A substance is colourless if either: (a) it has no $d$-electrons (e.g., $\mathrm{Sc}^{3+}$
 $[\mathrm{Ti}(\mathrm{H}_2\mathrm{O})_6]^{4+}$ has $d^0$), or (b) it has a full $d$-subshell (e.g.,
-$\mathrm{Zn}^{2+}$, $[\mathrm{Cu}(\mathrm{NH}_3)_4]^+$ has $d^{10}$). In both cases, there are no
+$\mathrm{Zn}^{2+}$$[\mathrm{Cu}(\mathrm{NH}_3)_4]^+$ has $d^{10}$). In both cases, there are no
 $d$-$d$ transitions possible.
 
 :::
@@ -1214,11 +1214,11 @@ $m/z = 74$ ($^{37}\mathrm{Cl}$--$^{37}\mathrm{Cl}$) in the ratio $9:6:1$. (1 mar
 
 $2s$ electrons: $(2, 0, 0, +\frac{1}{2})$ and $(2, 0, 0, -\frac{1}{2})$
 
-$2p$ electrons: $(2, 1, -1, +\frac{1}{2})$, $(2, 1, 0, +\frac{1}{2})$, $(2, 1, +1, +\frac{1}{2})$
+$2p$ electrons: $(2, 1, -1, +\frac{1}{2})$$(2, 1, 0, +\frac{1}{2})$$(2, 1, +1, +\frac{1}{2})$
 $(2, 1, -1, -\frac{1}{2})$ (1 mark for $n, l, m_l$; 1 mark for $m_s$ showing Hund's rule with first
 Three $2p$ electrons having parallel spins; 1 mark for the fourth being paired)
 
-(b) Beryllium: $1s^2\, 2s^2$. $IE_1$, $IE_2$, $IE_3$ remove the two $2s$ electrons and one $1s$
+(b) Beryllium: $1s^2\, 2s^2$. $IE_1$$IE_2$$IE_3$ remove the two $2s$ electrons and one $1s$
 Electron. $IE_4$ removes the remaining $1s$ electron. (1 mark)
 
 The $1s$ electron is much closer to the nucleus and experiences far less shielding, so it requires
@@ -1260,7 +1260,7 @@ Facilitating the formation of $\mathrm{NH}_3$. (1 mark)
 
 The successive ionization energies of an element X are shown below (in kJ/mol):
 
-$IE_1 = 577$, $IE_2 = 1816$, $IE_3 = 2744$, $IE_4 = 11577$, $IE_5 = 14842$, $IE_6 = 18376$
+$IE_1 = 577$$IE_2 = 1816$$IE_3 = 2744$$IE_4 = 11577$$IE_5 = 14842$$IE_6 = 18376$
 
 (a) Identify element X and explain your reasoning. (2 marks)
 
@@ -1432,7 +1432,7 @@ Making the paired electron easier to remove.
 <summary>Question 4: Isoelectronic Series</summary>
 
 Arrange the following ions in order of increasing ionic radius and explain your reasoning:
-$\mathrm{O}^{2-}$, $\mathrm{F}^-$, $\mathrm{Na}^+$, $\mathrm{Mg}^{2+}$, $\mathrm{Al}^{3+}$.
+$\mathrm{O}^{2-}$$\mathrm{F}^-$$\mathrm{Na}^+$$\mathrm{Mg}^{2+}$$\mathrm{Al}^{3+}$.
 
 </details>
 

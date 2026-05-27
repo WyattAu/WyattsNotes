@@ -354,7 +354,7 @@ by hiring where $MRP_L = w_{min}$Which gives $L > L_m$ (since $MRP_L$ is downwar
 $w_{min} > w_m = MCL(L_m) = MRP_L(L_m)$). $\blacksquare$
 
 The optimal minimum wage under monopsony is $w_c$ (the competitive wage), which achieves the
-Competitive outcome: $L = L_c$, $w = w_c$.
+Competitive outcome: $L = L_c$$w = w_c$.
 
 :::warning Common Pitfall The statement "minimum wages always cause unemployment" is only true in
 Perfectly competitive labour markets. Under monopsony (e.g., large employers in small towns, certain
@@ -449,7 +449,7 @@ Capital investment:
 
 $$\mathrm{Net present value of education} = \sum_{t=1}^{T} \frac{E_t - C_t}{(1 + r)^t} - C_0$$
 
-Where $E_t$ = earnings premium from education in year $t$, $C_t$ = costs of education in year $t$
+Where $E_t$ = earnings premium from education in year $t$$C_t$ = costs of education in year $t$
 $C_0$ = initial (upfront) cost, $r$ = discount rate, $T$ = working life.
 
 A rational individual invests in education if the NPV > 0 (or equivalently, if the internal rate of
@@ -625,7 +625,7 @@ Loss.
 
 <details>
 <summary>Hint</summary>
-$MCL = 20 + 4L$. Monopsony: $120 - 4L = 20 + 4L \Rightarrow 8L = 100 \Rightarrow L_m = 12.5$, $w_m = 45$. Competitive: $120 - 4L = 20 + 2L \Rightarrow 6L = 100 \Rightarrow L_c = 16.67$, $w_c = 53.33$. DWL $= \frac{1}{2}(w_c - w_m)(L_c - L_m) + \mathrm{area above supply}$. More precisely: DWL $= \int_{12.5}^{16.67} [(120 - 4L) - (20 + 2L)] dL = \int_{12.5}^{16.67} [100 - 6L] dL = [100L - 3L^2]_{12.5}^{16.67} = 1667 - 833.7 - 1250 + 468.75 = 52.08$.
+$MCL = 20 + 4L$. Monopsony: $120 - 4L = 20 + 4L \Rightarrow 8L = 100 \Rightarrow L_m = 12.5$$w_m = 45$. Competitive: $120 - 4L = 20 + 2L \Rightarrow 6L = 100 \Rightarrow L_c = 16.67$$w_c = 53.33$. DWL $= \frac{1}{2}(w_c - w_m)(L_c - L_m) + \mathrm{area above supply}$. More precisely: DWL $= \int_{12.5}^{16.67} [(120 - 4L) - (20 + 2L)] dL = \int_{12.5}^{16.67} [100 - 6L] dL = [100L - 3L^2]_{12.5}^{16.67} = 1667 - 833.7 - 1250 + 468.75 = 52.08$.
 </details>
 
 **Problem 3.** Prove that a minimum wage set at the competitive wage in a monopsony labour market
@@ -721,7 +721,7 @@ Total wage payments to workers. Has the minimum wage improved worker welfare?
 
 <details>
 <summary>Hint</summary>
-$MCL = 10 + 2L$. (a) Monopsony equilibrium: $80 - 2L = 10 + 2L \Rightarrow 4L = 70 \Rightarrow L_m = 17.5$, $w_m = 27.5$. Total wage payments $= 27.5 \times 17.5 = 481.25$. (b) With $w_{min} = 35$: the firm hires where $MRP_L = 35$: $80 - 2L = 35 \Rightarrow L = 22.5$. Supply at $w = 35$: $35 = 10 + L \Rightarrow L_s = 25$. So employment rises to 22.5, and $S_L(22.5) = 10 + 22.5 = 32.5$Which is less than $L_d$ at $w = 35$ (i.e., $80 - (35 - 10)/2 = 80 - 12.5 = 67.5$), so the minimum wage does not create a surplus at this employment level. (c) New total wage payments $= 35 \times 22.5 = 787.5$. Worker surplus has increased: more workers are employed at a higher wage. Competitive equilibrium would be $80 - 2L = 10 + L \Rightarrow 3L = 70 \Rightarrow L_c = 23.33$, $w_c = 33.33$. The minimum wage of £35 is slightly above the competitive wage, so employment (22.5) is just below the competitive level (23.33), but the higher wage may compensate.
+$MCL = 10 + 2L$. (a) Monopsony equilibrium: $80 - 2L = 10 + 2L \Rightarrow 4L = 70 \Rightarrow L_m = 17.5$$w_m = 27.5$. Total wage payments $= 27.5 \times 17.5 = 481.25$. (b) With $w_{min} = 35$: the firm hires where $MRP_L = 35$: $80 - 2L = 35 \Rightarrow L = 22.5$. Supply at $w = 35$: $35 = 10 + L \Rightarrow L_s = 25$. So employment rises to 22.5, and $S_L(22.5) = 10 + 22.5 = 32.5$Which is less than $L_d$ at $w = 35$ (i.e., $80 - (35 - 10)/2 = 80 - 12.5 = 67.5$), so the minimum wage does not create a surplus at this employment level. (c) New total wage payments $= 35 \times 22.5 = 787.5$. Worker surplus has increased: more workers are employed at a higher wage. Competitive equilibrium would be $80 - 2L = 10 + L \Rightarrow 3L = 70 \Rightarrow L_c = 23.33$$w_c = 33.33$. The minimum wage of £35 is slightly above the competitive wage, so employment (22.5) is just below the competitive level (23.33), but the higher wage may compensate.
 </details>
 
 **Problem 14.** "The gender pay gap is entirely explained by differences in human capital between
@@ -1039,7 +1039,7 @@ gap is multifaceted, requiring a comprehensive policy response.
 **Example.** A firm's labour demand (MRPL) is $MRPL = 200 - 2L$. Labour supply is $w = 40 + L$.
 
 **Competitive equilibrium:**
-$200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$, $w = 93.33$.
+$200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$$w = 93.33$.
 
 **Trade union negotiates a wage of $\pounds 120$:** At $w = 120$The firm hires workers up to the
 point where $MRPL = 120$: $200 - 2L = 120 \Rightarrow L = 40$.
@@ -1154,7 +1154,7 @@ $w = 140$.
 **With immigration (labour force = 30.5 million):** labour supply shifts to
 $w = 20 + (L - 0.5) = 19.5 + L$. Wait, this needs more careful treatment. If labour supply shifts
 right by 0.5 million: New labour supply: $w = 20 + (L - 0.5)$ for $L \geq 0.5$.
-$200 - 0.5L = 20 + L - 0.5 \Rightarrow 180.5 = 1.5L \Rightarrow L = 120.33$, $w = 139.83$.
+$200 - 0.5L = 20 + L - 0.5 \Rightarrow 180.5 = 1.5L \Rightarrow L = 120.33$$w = 139.83$.
 
 The wage falls from 140 to 139.83 (a fall of 0.17 or 0.12%). Employment rises from 120 to 120.33
 million.
@@ -1192,11 +1192,11 @@ government introduces a progressive income tax:
 | 30-60    | 40%  |    30     |
 | Above 60 | 50%  |    60     |
 
-**Pre-tax equilibrium:** $20 + L = 100 - L \Rightarrow 2L = 80 \Rightarrow L = 40$, $w = 60$.
+**Pre-tax equilibrium:** $20 + L = 100 - L \Rightarrow 2L = 80 \Rightarrow L = 40$$w = 60$.
 
 **Post-tax wages at different employment levels:**
 
-At $L = 40$, $w = 60$. Tax $= 0.2(30) + 0.4(30) = 6 + 12 = 18$. Net wage $= 42$.
+At $L = 40$$w = 60$. Tax $= 0.2(30) + 0.4(30) = 6 + 12 = 18$. Net wage $= 42$.
 
 The labour supply curve must be expressed in terms of the NET wage. At each gross wage $w$The net
 wage $w_n = w - T(w)$.
@@ -1222,7 +1222,7 @@ Let me find the new equilibrium in the third segment ($w > 60$):
 $28 + 2L = 100 - L \Rightarrow 3L = 72 \Rightarrow L = 24$.
 
 At $L = 24$: $w = 76$. This is in the third tax bracket (above 60). Net wage $= 6 + 0.5(76) = 44$.
-Before tax: $L = 40$, $w = 60$Net wage $= 42$.
+Before tax: $L = 40$$w = 60$Net wage $= 42$.
 
 **Results:**
 
@@ -1246,7 +1246,7 @@ pre-tax supply curves from $L = 24$ to $L = 40$).
 labour).
 
 **Employer (monopsony):** $MFCL = 20 + 0.4L$. $MRPL = 100 - 0.5L$. Monopsony optimum: $MFCL = MRPL$:
-$20 + 0.4L = 100 - 0.5L \Rightarrow 0.9L = 80 \Rightarrow L = 88.9$, $w = 20 + 0.2(88.9) = 37.8$.
+$20 + 0.4L = 100 - 0.5L \Rightarrow 0.9L = 80 \Rightarrow L = 88.9$$w = 20 + 0.2(88.9) = 37.8$.
 
 **Union (monopoly seller of labour):** The union maximises the total wage bill
 $w \times L = (20 + 0.2L) \times L = 20L + 0.2L^2$. $\frac{d(wL)}{dL} = 20 + 0.4L$. Setting this

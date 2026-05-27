@@ -157,7 +157,7 @@ $x + \frac{b}{2a} = \frac{\pm\sqrt{b^2 - 4ac}}{2a}$
 
 **Example:** Solve $2x^2 + 3x - 5 = 0$.
 
-Here $a = 2$, $b = 3$, $c = -5$.
+Here $a = 2$$b = 3$$c = -5$.
 
 $$
 X = \frac{-3 \pm \sqrt{9 + 40}}{4} = \frac{-3 \pm 7}{4}
@@ -388,7 +388,7 @@ Expanding using addition formulae gives $r^{k+1}(\cos(k+1)\theta + i\sin(k+1)\th
 
 **Example:** Express $(\sqrt{3} + i)^4$ in the form $a + bi$.
 
-First find modulus and argument: $r = 2$, $\theta = \frac{\pi}{6}$.
+First find modulus and argument: $r = 2$$\theta = \frac{\pi}{6}$.
 
 $$
 (\sqrt{3} + i)^4 = 2^4\left(\cos\frac{4\pi}{6} + i\sin\frac{4\pi}{6}\right) = 16\left(\cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3}\right) = 16\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = -8 + 8\sqrt{3}\,i
@@ -426,7 +426,7 @@ These lie on the unit circle in the complex plane, equally spaced at angles of $
 
 **Example:** Find the cube roots of unity.
 
-For $z^3 = 1$: $z_k = \cos\frac{2k\pi}{3} + i\sin\frac{2k\pi}{3}$, $k = 0, 1, 2$.
+For $z^3 = 1$: $z_k = \cos\frac{2k\pi}{3} + i\sin\frac{2k\pi}{3}$$k = 0, 1, 2$.
 
 $$
 Z_0 = 1, \quad z_1 = -\frac{1}{2} + i\frac{\sqrt{3}}{2}, \quad z_2 = -\frac{1}{2} - i\frac{\sqrt{3}}{2}

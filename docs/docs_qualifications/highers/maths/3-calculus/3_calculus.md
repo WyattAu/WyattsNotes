@@ -100,7 +100,7 @@ $$
 \frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right) = \frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}
 $$
 
-**Example:** A curve has parametric equations $x = 2\cos t$, $y = \sin 2t$. Find $\dfrac{dy}{dx}$ at
+**Example:** A curve has parametric equations $x = 2\cos t$$y = \sin 2t$. Find $\dfrac{dy}{dx}$ at
 $t = \dfrac{\pi}{4}$.
 
 $$
@@ -117,7 +117,7 @@ $$
 \frac{dy}{dx} = -\frac{\cos(\pi/2)}{\sin(\pi/4)} = -\frac{0}{1/\sqrt{2}} = 0
 $$
 
-**Example:** Find $\frac{d^2y}{dx^2}$ for $x = t^2$, $y = t^3$.
+**Example:** Find $\frac{d^2y}{dx^2}$ for $x = t^2$$y = t^3$.
 
 $$
 \frac{dy}{dx} = \frac{3t^2}{2t} = \frac{3t}{2}
@@ -225,7 +225,7 @@ Trigonometric, Exponential. Choose $u$ as the function that appears earliest in 
 
 **Example:** Evaluate $\int x e^{2x} \, dx$.
 
-Let $u = x$, $dv = e^{2x} dx$. Then $du = dx$, $v = \dfrac{e^{2x}}{2}$.
+Let $u = x$$dv = e^{2x} dx$. Then $du = dx$$v = \dfrac{e^{2x}}{2}$.
 
 $$
 \int x e^{2x} \, dx = x \cdot \frac{e^{2x}}{2} - \int \frac{e^{2x}}{2} \, dx = \frac{x e^{2x}}{2} - \frac{e^{2x}}{4} + C = \frac{e^{2x}(2x - 1)}{4} + C
@@ -233,7 +233,7 @@ $$
 
 **Example:** Evaluate $\int x^2 \cos x \, dx$.
 
-Let $u = x^2$, $dv = \cos x \, dx$. Then $du = 2x \, dx$, $v = \sin x$.
+Let $u = x^2$$dv = \cos x \, dx$. Then $du = 2x \, dx$$v = \sin x$.
 
 $$
 = x^2 \sin x - \int 2x \sin x \, dx
@@ -241,7 +241,7 @@ $$
 
 Apply integration by parts again for $\int x \sin x \, dx$:
 
-Let $u = x$, $dv = \sin x \, dx$. Then $du = dx$, $v = -\cos x$.
+Let $u = x$$dv = \sin x \, dx$. Then $du = dx$$v = -\cos x$.
 
 $$
 \int x \sin x \, dx = -x\cos x + \int \cos x \, dx = -x\cos x + \sin x
@@ -259,13 +259,13 @@ Some integrals require integration by parts twice, then solving algebraically.
 
 **Example:** Evaluate $\int e^x \cos x \, dx$.
 
-Let $u = e^x$, $dv = \cos x\,dx$. Then $du = e^x\,dx$, $v = \sin x$.
+Let $u = e^x$$dv = \cos x\,dx$. Then $du = e^x\,dx$$v = \sin x$.
 
 $$
 I = e^x \sin x - \int e^x \sin x\,dx
 $$
 
-Apply parts again for $\int e^x \sin x\,dx$: $u = e^x$, $dv = \sin x\,dx$.
+Apply parts again for $\int e^x \sin x\,dx$: $u = e^x$$dv = \sin x\,dx$.
 
 $$
 \int e^x \sin x\,dx = -e^x \cos x + \int e^x \cos x\,dx = -e^x \cos x + I
@@ -305,7 +305,7 @@ When using substitution in a definite integral, you must change the limits.
 
 **Example:** Evaluate $\displaystyle\int_0^1 \frac{2x}{x^2 + 1}\,dx$.
 
-Let $u = x^2 + 1$. When $x = 0$, $u = 1$. When $x = 1$, $u = 2$.
+Let $u = x^2 + 1$. When $x = 0$$u = 1$. When $x = 1$$u = 2$.
 
 $$
 \int_0^1 \frac{2x}{x^2 + 1}\,dx = \int_1^2 \frac{du}{u} = [\ln u]_1^2 = \ln 2 - \ln 1 = \ln 2
@@ -361,7 +361,7 @@ $$
 = \int \frac{\sec^2 x}{\tan^2 x + 4} \, dx
 $$
 
-Let $u = \tan x$, $du = \sec^2 x \, dx$:
+Let $u = \tan x$$du = \sec^2 x \, dx$:
 
 $$
 = \int \frac{du}{u^2 + 4} = \frac{1}{2}\arctan\left(\frac{u}{2}\right) + C = \frac{1}{2}\arctan\left(\frac{\tan x}{2}\right) + C
@@ -695,7 +695,7 @@ See the examples integrated throughout the sections above.
 
 5. Solve $\dfrac{d^2y}{dx^2} + 2\dfrac{dy}{dx} + y = 0$.
 
-6. A curve has parametric equations $x = t^2$, $y = t^3 - 3t$. Find the coordinates of the stationary
+6. A curve has parametric equations $x = t^2$$y = t^3 - 3t$. Find the coordinates of the stationary
    points.
 
 7. Evaluate $\displaystyle\int_0^1 \frac{dx}{1 + x^3}$ by first finding the partial fraction

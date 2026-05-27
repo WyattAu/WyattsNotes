@@ -186,7 +186,7 @@ Example: $\mathrm{CRCR$ (red) $\times$ $\mathrm{CWCW$ (white) $\to$ $\mathrm{CRC
 Example: Blood groups. $\mathrm{I^\mathrm{A\mathrm{I^\mathrm{B$ = blood group AB.
 
 **Multiple alleles:** More than two alleles for a gene (e.g., blood groups: $\mathrm{I^\mathrm{A$
-$\mathrm{I^\mathrm{B$, $i$).
+$\mathrm{I^\mathrm{B$$i$).
 
 **Epistasis:** One gene affects the expression of another gene.
 

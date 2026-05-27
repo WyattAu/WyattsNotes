@@ -541,7 +541,7 @@ acids).
 
 #### Gas Chromatography (GC)
 
-The mobile phase is an inert carrier gas (e.g. $\mathrm{He}$, $\mathrm{N}_2$). The stationary phase is
+The mobile phase is an inert carrier gas (e.g. $\mathrm{He}$$\mathrm{N}_2$). The stationary phase is
 a high-boiling liquid coated on the inside of a capillary column. Separation depends on volatility
 and interaction with the stationary phase.
 
@@ -591,9 +591,9 @@ reach the starting material.
 
 | Target          | From                      | Reagents/conditions                                                    |
 | --------------- | ------------------------- | ---------------------------------------------------------------------- |
-| Alkene          | Alcohol                   | Dehydration: conc. $\mathrm{H}_2\mathrm{SO}_4$, $170^\circ\mathrm{C}$    |
+| Alkene          | Alcohol                   | Dehydration: conc. $\mathrm{H}_2\mathrm{SO}_4$$170^\circ\mathrm{C}$    |
 | Alkene          | Halogenoalkane            | Elimination: $\mathrm{KOH}$ in ethanol, heat                           |
-| Alcohol         | Alkene                    | Hydration: $\mathrm{H}_3\mathrm{PO}_4$, $300^\circ\mathrm{C}$ (indirect) |
+| Alcohol         | Alkene                    | Hydration: $\mathrm{H}_3\mathrm{PO}_4$$300^\circ\mathrm{C}$ (indirect) |
 | Alcohol         | Halogenoalkane            | SN2: aqueous $\mathrm{NaOH}$                                           |
 | Halogenoalkane  | Alcohol                   | $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$ / conc. $\mathrm{HBr}$            |
 | Aldehyde        | Primary alcohol           | Distillation with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$    |
@@ -695,7 +695,7 @@ $\mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOH} + \mathrm{CH}_3\mathrm{OH} \
 | $\mathrm{LiAlH}_4$                                     | Reduces C=O (including carboxylic acids, esters, amides) to alcohols/amines |
 | Acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$      | Oxidises alcohols (primary to acid/aldehyde, secondary to ketone)           |
 | $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$                   | Converts alcohol to halogenoalkane                                          |
-| Conc. $\mathrm{H}_2\mathrm{SO}_4$, $170^\circ\mathrm{C}$ | Dehydrates alcohol to alkene                                                |
+| Conc. $\mathrm{H}_2\mathrm{SO}_4$$170^\circ\mathrm{C}$ | Dehydrates alcohol to alkene                                                |
 | $\mathrm{NaOH}(aq)$                                    | SN2 substitution of halogenoalkane to alcohol                               |
 | $\mathrm{KCN}$                                         | SN2 substitution, adds CN (one extra carbon)                                |
 | $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$           | Nitration of arene                                                          |
@@ -812,7 +812,7 @@ The quartet-triplet pattern indicates an ethyl group ($\mathrm{CH}_3\mathrm{CH}_
 3.6 (3H) is a $-\mathrm{OCH}_3$. The carboxylic acid proton at 11.0 confirms $-\mathrm{COOH}$.
 
 The compound is **2-methoxypropanoic acid**? Actually, with
-$-\mathrm{CH}_3$, $-\mathrm{CH}_2-$, $-\mathrm{OCH}_3$And $-\mathrm{COOH}$: that is
+$-\mathrm{CH}_3$$-\mathrm{CH}_2-$$-\mathrm{OCH}_3$And $-\mathrm{COOH}$: that is
 $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_3$... The molecular formula is
 $\mathrm{C}_4\mathrm{H}_8\mathrm{O}_2$So the compound is **propanoic acid**
 ($\mathrm{CH}_3\mathrm{CH}_2\mathrm{COOH}$) with the singlet at 3.6 being an impurity or misread.

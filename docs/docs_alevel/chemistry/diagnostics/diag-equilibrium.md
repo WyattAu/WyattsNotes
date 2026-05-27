@@ -140,7 +140,7 @@ $$\text{CaCO}_3(s) \rightleftharpoons \text{CaO}(s) + \text{CO}_2(g) \quad \Delt
 (a) Write the expression for $K_p$ for this equilibrium and explain why the concentrations of the
 solids are not included.
 
-(b) At $800\,^\circ\text{C}$, $K_p = 0.220\,\text{atm}$. Calculate the minimum pressure of
+(b) At $800\,^\circ\text{C}$$K_p = 0.220\,\text{atm}$. Calculate the minimum pressure of
 $\text{CO}_2$ that must be applied to prevent decomposition of $\text{CaCO}_3$ at this temperature.
 
 (c) Explain how the decomposition temperature changes if the experiment is carried out at a lower
@@ -292,7 +292,7 @@ This is a cubic equation. Solving iteratively or by approximation: since the vol
 $y \approx 0.08$:
 
 New equilibrium moles:
-$\text{SO}_2 \approx 0.72$, $\text{O}_2 \approx 0.86$, $\text{SO}_3 \approx 1.28$.
+$\text{SO}_2 \approx 0.72$$\text{O}_2 \approx 0.86$$\text{SO}_3 \approx 1.28$.
 
 The moles of $\text{SO}_3$ have increased from $1.20$ to approximately $1.28\,\text{mol}$Consistent
 with Le Chatelier's principle (increasing pressure favours the side with fewer moles of gas: 3 mol
@@ -413,7 +413,7 @@ $\mathrm{NH}_3$ is continually condensed out.
 **Question:** For the reaction
 $\mathrm{CO}(g) + \mathrm{H}_2\mathrm{O}(g) \rightleftharpoons \mathrm{CO}_2(g) + \mathrm{H}_2(g)$:
 
-$\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$, $\Delta S^\circ = -42\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$\Delta H^\circ = -41\,\mathrm{kJ\,mol^{-1}}$$\Delta S^\circ = -42\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 (a) Calculate $K_p$ at $298\,\mathrm{K}$.
 
@@ -429,7 +429,7 @@ $298\,\mathrm{K}$.
 
 $$K_p = \exp\left(\frac◆LB◆28484◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(11.50) = 9.89 \times 10^4$$
 
-Since $\Delta n = 0$, $K_p$ is dimensionless (1 mark).
+Since $\Delta n = 0$$K_p$ is dimensionless (1 mark).
 
 (b) $K_p = 1$ when $\Delta G^\circ = 0$:
 
@@ -455,5 +455,5 @@ $$315.5x = 314.5$$
 $$x = 0.997\,\mathrm{atm}$$
 
 Equilibrium:
-$p(\mathrm{CO}) = p(\mathrm{H}_2\mathrm{O}) = 0.003\,\mathrm{atm}$, $p(\mathrm{CO}_2) = p(\mathrm{H}_2) = 0.997\,\mathrm{atm}$
+$p(\mathrm{CO}) = p(\mathrm{H}_2\mathrm{O}) = 0.003\,\mathrm{atm}$$p(\mathrm{CO}_2) = p(\mathrm{H}_2) = 0.997\,\mathrm{atm}$
 (1 mark).

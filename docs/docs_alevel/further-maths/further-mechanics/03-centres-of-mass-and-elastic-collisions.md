@@ -34,7 +34,7 @@ Including oblique impacts.
 
 ### 1.1 Centre of mass by integration
 
-**Definition.** The _centre of mass_ of a lamina bounded by $y = f(x)$, $x = a$, $x = b$And the $x$-axis
+**Definition.** The _centre of mass_ of a lamina bounded by $y = f(x)$$x = a$$x = b$And the $x$-axis
 is the point $(\bar{x}, \bar{y})$ where:
 
 $$\boxed{\bar{x} = \frac◆LB◆\displaystyle\int_a^b x \cdot f(x)\,dx◆RB◆◆LB◆\displaystyle\int_a^b f(x)\,dx◆RB◆}$$
@@ -47,12 +47,12 @@ The denominator is the total area of the lamina: $A = \displaystyle\int_a^b f(x)
 
 ### Proof
 
-Consider a triangle with vertices at $(0, 0)$, $(b, 0)$And $(c, h)$.
+Consider a triangle with vertices at $(0, 0)$$(b, 0)$And $(c, h)$.
 
 The line from $(0, 0)$ to $(c, h)$ is $y = \dfrac{h}{c}\,x$ and the line from $(b, 0)$ to $(c, h)$
 Is $y = \dfrac{h}{c - b}(x - b)$.
 
-For simplicity, take a right triangle with vertices $(0, 0)$, $(b, 0)$, $(0, h)$Where
+For simplicity, take a right triangle with vertices $(0, 0)$$(b, 0)$$(0, h)$Where
 $f(x) = h - \dfrac{h}{b}x = h\!\left(1 - \dfrac{x}{b}\right)$.
 
 $$\bar{x} = \frac◆LB◆\displaystyle\int_0^b x \cdot h\!\left(1 - \frac{x}{b}\right)dx◆RB◆◆LB◆\displaystyle\int_0^b h\!\left(1 - \frac{x}{b}\right)dx◆RB◆$$
@@ -170,7 +170,7 @@ Point of suspension. This means:
 ### 4.3 Equilibrium of a suspended body
 
 For a body suspended from a point $P$ to hang in equilibrium, the centre of mass $G$ must be
-Directly below $P$. If suspended from a second point $Q$, $G$ must be directly below $Q$. The
+Directly below $P$. If suspended from a second point $Q$$G$ must be directly below $Q$. The
 Intersection of the two vertical lines through $P$ and $Q$ gives $G$.
 
 <hr />
@@ -341,7 +341,7 @@ $$\boxed{\mathrm{Oblique wall impact: } v_{\mathrm{normal}} = -e \cdot u_{\mathr
 
 <details>
 <summary>Problem 1</summary>
-A uniform triangular lamina has vertices at $(0, 0)$, $(6, 0)$And $(2, 4)$. Find the coordinates of the centre of mass.
+A uniform triangular lamina has vertices at $(0, 0)$$(6, 0)$And $(2, 4)$. Find the coordinates of the centre of mass.
 </details>
 
 <details>
@@ -364,7 +364,7 @@ A particle of mass $3\,\mathrm{kg}$ moving at $8\,\mathrm{m s}^{-1}$ collides di
 
 <details>
 <summary>Solution 2</summary>
-Taking the direction of the $3\,\mathrm{kg}$ particle as positive: $u_1 = 8$, $u_2 = -2$.
+Taking the direction of the $3\,\mathrm{kg}$ particle as positive: $u_1 = 8$$u_2 = -2$.
 
 Momentum: $3(8) + 5(-2) = 3v_1 + 5v_2 \implies 3v_1 + 5v_2 = 14$ ... (i)
 
@@ -451,7 +451,7 @@ $\theta = \arctan\!\left(\dfrac◆LB◆4\sqrt{3}◆RB◆◆LB◆5◆RB◆\right)
 
 <details>
 <summary>Problem 6</summary>
-A uniform wire framework consists of three rods forming a right-angled triangle with vertices at $(0, 0)$, $(4, 0)$And $(0, 3)$. All rods are made of the same uniform material. Find the centre of mass of the framework.
+A uniform wire framework consists of three rods forming a right-angled triangle with vertices at $(0, 0)$$(4, 0)$And $(0, 3)$. All rods are made of the same uniform material. Find the centre of mass of the framework.
 </details>
 
 <details>
@@ -482,9 +482,9 @@ Two smooth spheres $A$ (mass $2\,\mathrm{kg}$) and $B$ (mass $3\,\mathrm{kg}$) c
 <summary>Solution 7</summary>
 The normal direction is $\mathbf{i}$ and the tangential direction is $\mathbf{j}$.
 
-Tangential components are unchanged: $v_{Ay} = 2$, $v_{By} = -1$.
+Tangential components are unchanged: $v_{Ay} = 2$$v_{By} = -1$.
 
-Normal components: $u_{An} = 3$, $u_{Bn} = 1$.
+Normal components: $u_{An} = 3$$u_{Bn} = 1$.
 
 Momentum: $2(3) + 3(1) = 2v_{An} + 3v_{Bn} \implies 2v_{An} + 3v_{Bn} = 9$ ... (i)
 
@@ -512,9 +512,9 @@ A uniform lamina is made from a rectangle $ABCD$ where $AB = 8\,\mathrm{cm}$ and
 <summary>Solution 8</summary>
 Rectangle $ABCD$: area $= 48$Centre of mass at $(4, 3)$.
 
-Triangle $BCE$: vertices $B(8, 0)$, $C(8, 6)$, $E(4, 6)$. Area $= \dfrac{1}{2} \times 4 \times 6 = 12$.
+Triangle $BCE$: vertices $B(8, 0)$$C(8, 6)$$E(4, 6)$. Area $= \dfrac{1}{2} \times 4 \times 6 = 12$.
 Centre of mass:
-$\bar{x} = \dfrac{8 + 8 + 4}{3} = \dfrac{20}{3}$, $\bar{y} = \dfrac{0 + 6 + 6}{3} = 4$.
+$\bar{x} = \dfrac{8 + 8 + 4}{3} = \dfrac{20}{3}$$\bar{y} = \dfrac{0 + 6 + 6}{3} = 4$.
 
 Remaining area $= 48 - 12 = 36$.
 
@@ -538,7 +538,7 @@ Just before first impact:
 $v_x = u\cos\theta$ (unchanged throughout),
 $v_y = -u\sin\theta$ (downward).
 
-After first impact: $v_x = u\cos\theta$, $v_{y}' = eu\sin\theta$ (upward).
+After first impact: $v_x = u\cos\theta$$v_{y}' = eu\sin\theta$ (upward).
 
 Speed after bounce $= u\sqrt◆LB◆\cos^2\theta + e^2\sin^2\theta◆RB◆$.
 
@@ -598,9 +598,9 @@ Resolving $A$'s velocity: $u_{An} = (5)(4/5) + (3)(3/5) = 4 + 9/5 = 29/5$.
 
 $u_{At} = (5)(-3/5) + (3)(4/5) = -3 + 12/5 = -3/5$.
 
-$u_{Bn} = 0$, $u_{Bt} = 0$.
+$u_{Bn} = 0$$u_{Bt} = 0$.
 
-Tangential components unchanged: $v_{At} = -3/5$, $v_{Bt} = 0$.
+Tangential components unchanged: $v_{At} = -3/5$$v_{Bt} = 0$.
 
 Normal direction (conservation of momentum):
 $m(29/5) + m(0) = mv_{An} + mv_{Bn} \implies v_{An} + v_{Bn} = 29/5$ ... (i)
@@ -631,7 +631,7 @@ Equilateral triangle with side $2a$: area $= \dfrac◆LB◆\sqrt{3}◆RB◆◆LB
 
 Height $= \sqrt{3}\,a$. The triangle's centroid is at distance $\sqrt{3}\,a/3$ from the base.
 
-Assuming the square has vertices at $(0, 0)$, $(6a, 0)$, $(6a, 6a)$, $(0, 6a)$And the triangle has Its
+Assuming the square has vertices at $(0, 0)$$(6a, 0)$$(6a, 6a)$$(0, 6a)$And the triangle has Its
 base on the top edge $y = 6a$ with centroid at $(3a, 6a - \sqrt{3}\,a/3)$:
 
 Using negative mass:
@@ -675,11 +675,11 @@ The centre of mass is at distance $\dfrac{3h}{4}$ from the vertex (or $\dfrac{h}
 
 ### Example 9.5: Three-body collision problem
 
-**Problem.** Three identical particles $A$, $B$, $C$ of mass $m$ are at rest in a straight line on a
+**Problem.** Three identical particles $A$$B$$C$ of mass $m$ are at rest in a straight line on a
 Smooth surface with equal spacing $d$. Particle $A$ is given velocity $u$ towards $B$. If all
 Collisions are perfectly elastic ($e = 1$), describe the subsequent motion.
 
-**Solution.** **Collision 1 ($A$ hits $B$):** By symmetry of equal masses with $e = 1$, $A$ stops And
+**Solution.** **Collision 1 ($A$ hits $B$):** By symmetry of equal masses with $e = 1$$A$ stops And
 $B$ moves with velocity $u$ towards $C$.
 
 **Collision 2 ($B$ hits $C$):** Similarly, $B$ stops and $C$ moves with velocity $u$ away.
@@ -762,7 +762,7 @@ Restitution is $e = 2/3$. Find $m$.
 <details>
 <summary>Solution</summary>
 
-Taking the initial direction of the 2 kg particle as positive: $u_1 = 6$, $u_2 = 0$, $v_1 = -1$.
+Taking the initial direction of the 2 kg particle as positive: $u_1 = 6$$u_2 = 0$$v_1 = -1$.
 
 Momentum: $2(6) + m(0) = 2(-1) + m v_2 \implies 12 = -2 + m v_2 \implies m v_2 = 14$ ... (i)
 
@@ -1021,7 +1021,7 @@ $\mathbf{M} = \mathbf{r} \times \mathbf{F}$. See
 
 | Result                          | Formula                                                                                     |
 | ------------------------------- | ------------------------------------------------------------------------------------------- |
-| 1D elastic collision            | $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$, $v_2 = \dfrac{2m_1 u}{m_1+m_2}$                          |
+| 1D elastic collision            | $v_1 = \dfrac{(m_1-m_2)u}{m_1+m_2}$$v_2 = \dfrac{2m_1 u}{m_1+m_2}$                          |
 | Conservation of momentum        | $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$                                                         |
 | Conservation of KE (elastic)    | $\dfrac{1}{2}m_1u_1^2 + \dfrac{1}{2}m_2u_2^2 = \dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2$ |
 | Centre of mass (discrete)       | $\bar{x} = \dfrac◆LB◆\sum m_i x_i◆RB◆◆LB◆\sum m_i◆RB◆$                                      |

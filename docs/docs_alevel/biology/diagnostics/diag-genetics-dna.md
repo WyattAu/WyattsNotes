@@ -125,7 +125,7 @@ epistatic gene; gene B is the hypostatic gene.
 
 (b) Dihybrid cross: $AaBb \times AaBb$
 
-Punnett square (gametes: $AB$, $Ab$, $aB$, $ab$):
+Punnett square (gametes: $AB$$Ab$$aB$$ab$):
 
 |        | AB           | Ab           | aB            | ab            |
 | ------ | ------------ | ------------ | ------------- | ------------- |
@@ -159,7 +159,7 @@ A dihybrid cross $PpQq \times PpQq$:
 Phenotypes:
 
 - **Purple** ($P\_Q\_$): 9
-- **White** ($P\_qq$, $ppQ\_$, $ppqq$): 7 (3 + 3 + 1)
+- **White** ($P\_qq$$ppQ\_$$ppqq$): 7 (3 + 3 + 1)
 
 Expected phenotypic ratio: **9 purple : 7 white**
 
@@ -400,7 +400,7 @@ rare.
 
 (b) Cross: $X^OX^B$ (tortoiseshell female) $\times$ $X^BY$ (black male)
 
-Gametes from female: $X^O$, $X^B$ Gametes from male: $X^B$, $Y$
+Gametes from female: $X^O$$X^B$ Gametes from male: $X^B$$Y$
 
 |           | $X^B$                           | $Y$                  |
 | --------- | ------------------------------- | -------------------- |

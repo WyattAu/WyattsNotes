@@ -205,7 +205,7 @@ values. The block $B$ has static friction less than kinetic, so:
 
 $T = 40 - 29.43 = 10.57\,\text{N}$ (from block $B$'s equation)
 
-Check block $A$: $T = 10.57\,\text{N}$, $f_A = \mu_s \times 4.0 \times 9.81 = 11.77\,\text{N}$. Since
+Check block $A$: $T = 10.57\,\text{N}$$f_A = \mu_s \times 4.0 \times 9.81 = 11.77\,\text{N}$. Since
 $T \lt f_A^{\max}$Block $A$ does not move. So $a = 0$ for block $A$ and the system does not move.
 
 (c) When block $B$ is pushed towards the pulley (kinetic friction now applies):
@@ -377,7 +377,7 @@ $$a = \frac{-3.80}{11.0} = -0.345\,\text{m}\,\text{s}^{-2}$$
 Still negative, meaning the system does not move. The static friction is sufficient to hold the
 system in equilibrium.
 
-Checking: without $B$, $A$ alone would require $mg\sin 30^\circ = 39.24\,\text{N}$ to start sliding,
+Checking: without $B$$A$ alone would require $mg\sin 30^\circ = 39.24\,\text{N}$ to start sliding,
 while maximum static friction $= 0.20 \times 8.0 \times 9.81 \times 0.866 = 13.61\,\text{N}$. So $A$
 would slide down without $B$. But $B$ pulls back with $29.43\,\text{N}$.
 
@@ -385,7 +385,7 @@ Net force down the slope without friction: $39.24 - 29.43 = 9.81\,\text{N}$. Sin
 $9.81 \lt 13.61\,\text{N}$The maximum static friction is sufficient to hold the system in
 equilibrium.
 
-The system does not move. $a = 0$, $T = 29.43\,\text{N}$.
+The system does not move. $a = 0$$T = 29.43\,\text{N}$.
 
 (b) Since the system is in equilibrium, block $B$ never hits the ground. The question setup is a
 trap: the static friction is sufficient to hold the entire system at rest.

@@ -14,7 +14,7 @@ hide_table_of_contents: true
 ### UT-1: Modulus, Argument, and Argand Diagrams
 
 **Question:** (a) Plot $z_1 = 3 + 4i$ and $z_2 = -2 + i$ on an Argand diagram. (b) Calculate
-$|z_1|$, $\arg(z_1)$, $|z_2|$And $\arg(z_2)$. (c) Express $z_1$ and $z_2$ in modulus-argument form
+$|z_1|$$\arg(z_1)$$|z_2|$And $\arg(z_2)$. (c) Express $z_1$ and $z_2$ in modulus-argument form
 $r(\cos\theta + i\sin\theta)$. (d) Calculate $z_1 z_2$ and $z_1/z_2$ using modulus-argument form.
 
 **Solution:**
@@ -44,7 +44,7 @@ Find the four fourth roots of $-16$. (d) Verify that the product of all four roo
 $(1+i)^8 = (\sqrt{2})^8(\cos 2\pi + i\sin 2\pi) = 16(1 + 0i) = 16$.
 
 (c) $-16 = 16(\cos\pi + i\sin\pi)$. Fourth roots:
-$r = 2$, $\theta = \frac◆LB◆\pi + 2k\pi◆RB◆◆LB◆4◆RB◆$ for $k = 0,1,2,3$.
+$r = 2$$\theta = \frac◆LB◆\pi + 2k\pi◆RB◆◆LB◆4◆RB◆$ for $k = 0,1,2,3$.
 
 $k=0$:
 $2(\cos\pi/4 + i\sin\pi/4) = 2\left(\frac◆LB◆1◆RB◆◆LB◆\sqrt{2}◆RB◆ + \frac◆LB◆i◆RB◆◆LB◆\sqrt{2}◆RB◆\right) = \sqrt{2} + \sqrt{2}i$.
@@ -89,7 +89,7 @@ are the roots of $z^n - 1 = 0$And the coefficient of $z^{n-1}$ is zero (by Vieta
 
 (c) $z_k = \cos(2\pi k/5) + i\sin(2\pi k/5)$ for $k = 0, 1, 2, 3, 4$.
 
-$z_0 = 1$, $z_1 = \cos(2\pi/5) + i\sin(2\pi/5)$, $z_2 = \cos(4\pi/5) + i\sin(4\pi/5)$, $z_3 = \cos(6\pi/5) + i\sin(6\pi/5)$, $z_4 = \cos(8\pi/5) + i\sin(8\pi/5)$.
+$z_0 = 1$$z_1 = \cos(2\pi/5) + i\sin(2\pi/5)$$z_2 = \cos(4\pi/5) + i\sin(4\pi/5)$$z_3 = \cos(6\pi/5) + i\sin(6\pi/5)$$z_4 = \cos(8\pi/5) + i\sin(8\pi/5)$.
 
 (d) Since $\omega$ is a primitive 5th root of unity:
 $1 + \omega + \omega^2 + \omega^3 + \omega^4 = 0$ (the sum of all 5th roots of unity is zero).
@@ -156,7 +156,7 @@ $\cos 3\theta = \cos^3\theta - 3\cos\theta(1 - \cos^2\theta) = \cos^3\theta - 3\
 
 **Question:** (a) The transformation $w = z^2$ maps the line $\text{Re}(z) = 1$ in the $z$-plane.
 Find the image in the $w$-plane. (b) If $z = 2e^{i\pi/6}$Find $w = z^4$ in modulus-argument form.
-(c) Find the image of the region $|z| \le 2$, $0 \le \arg(z) \le \pi/4$ under the transformation
+(c) Find the image of the region $|z| \le 2$$0 \le \arg(z) \le \pi/4$ under the transformation
 $w = z^3$. (d) A complex number $z$ satisfies $|z - 1 - 2i| = |z - 3 - 4i|$. Show that this
 represents a straight line and find its equation.
 
@@ -170,7 +170,7 @@ the left.
 $w = z^4 = (2e^{i\pi/6})^4 = 2^4 e^{i4\pi/6} = 16e^{i2\pi/3} = 16(\cos 2\pi/3 + i\sin 2\pi/3) = 16(-1/2 + i\sqrt{3}/2) = -8 + 8\sqrt{3}i$.
 
 (c) Under $w = z^3$: $|w| = |z|^3 \le 8$And $\arg(w) = 3\arg(z) \in [0, 3\pi/4]$. The image is the
-sector $|w| \le 8$, $0 \le \arg(w) \le 3\pi/4$.
+sector $|w| \le 8$$0 \le \arg(w) \le 3\pi/4$.
 
 (d) $|z - 1 - 2i|^2 = |z - 3 - 4i|^2$. Let $z = x + iy$: $(x-1)^2 + (y-2)^2 = (x-3)^2 + (y-4)^2$.
 $x^2 - 2x + 1 + y^2 - 4y + 4 = x^2 - 6x + 9 + y^2 - 8y + 16$. $-2x - 4y + 5 = -6x - 8y + 25$.

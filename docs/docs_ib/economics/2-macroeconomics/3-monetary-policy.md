@@ -321,7 +321,7 @@ $$\pi_t^e = \pi_{t-1}$$
 
 If the government tries to maintain $u_t < u_n$ permanently:
 
-Period 1: $\pi_1 = \pi_0 - \alpha(u_1 - u_n)$. Since $u_1 < u_n$, $\pi_1 > \pi_0$. Period 2:
+Period 1: $\pi_1 = \pi_0 - \alpha(u_1 - u_n)$. Since $u_1 < u_n$$\pi_1 > \pi_0$. Period 2:
 $\pi_2^e = \pi_1$. $\pi_2 = \pi_1 - \alpha(u_1 - u_n) > \pi_1$. Period 3: $\pi_3^e = \pi_2$.
 $\pi_3 = \pi_2 - \alpha(u_1 - u_n) > \pi_2$.
 
@@ -670,7 +670,7 @@ Where:
 **Short-run Phillips curve:** for a given $\pi^e$There is a trade-off between $\pi$ and $u$. The
 central bank can reduce $u$ below $u_n$ by creating unexpected inflation ($\pi > \pi^e$).
 
-**Long-run Phillips curve:** when $\pi = \pi^e$, $u = u_n$. The long-run Phillips curve is Vertical at
+**Long-run Phillips curve:** when $\pi = \pi^e$$u = u_n$. The long-run Phillips curve is Vertical at
 the natural rate.
 
 ### The Sacrifice Ratio

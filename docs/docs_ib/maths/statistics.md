@@ -92,7 +92,7 @@ And strength of association.
 
 $$r = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum(x_i - \bar{x})^2 \cdot \sum(y_i - \bar{y})^2}} = \frac{S_{xy}}{\sqrt{S_{xx} \cdot S_{yy}}}$$
 
-Where $S_{xy} = \sum x_i y_i - n\bar{x}\bar{y}$, $S_{xx} = \sum x_i^2 - n\bar{x}^2$And
+Where $S_{xy} = \sum x_i y_i - n\bar{x}\bar{y}$$S_{xx} = \sum x_i^2 - n\bar{x}^2$And
 $S_{yy} = \sum y_i^2 - n\bar{y}^2$.
 
 **Properties:**
@@ -311,7 +311,7 @@ Find the number of distinct arrangements of the letters in "MISSISSIPPI".
 <details>
 <summary>Problem 8</summary>
 
-A grouped frequency distribution has classes $0$--$10$, $10$--$20$, $20$--$30$, $30$--$40$ $40$--$50$ with
+A grouped frequency distribution has classes $0$--$10$$10$--$20$$20$--$30$$30$--$40$ $40$--$50$ with
 frequencies $5, 12, 18, 10, 5$. Estimate the mean and median.
 
 </details>
@@ -324,8 +324,8 @@ $(4 + 5)/2 = 4.5$. Mode: $4$.
 $s^2 = (16 + 9 + 16 + 16 + 16 + 25 + 36 + 49 + 64 + 81 - 10 \times 27.04)/9 = (328 - 270.4)/9 = 57.6/9 = 6.4$.
 $s = \sqrt{6.4} \approx 2.53$.
 
-**Problem 2:** $n = 6$, $\sum x = 21$, $\sum y = 34$, $\sum x^2 = 91$, $\sum y^2 = 216$ $\sum xy = 135$.
-$\bar{x} = 3.5$, $\bar{y} = 5.667$.
+**Problem 2:** $n = 6$$\sum x = 21$$\sum y = 34$$\sum x^2 = 91$$\sum y^2 = 216$ $\sum xy = 135$.
+$\bar{x} = 3.5$$\bar{y} = 5.667$.
 $b = (135 - 6 \times 3.5 \times 5.667)/(91 - 6 \times 12.25) = (135 - 119)/91 - 73.5) = 16/17.5 = 0.914$.
 $a = 5.667 - 0.914 \times 3.5 = 2.467$. Line: $y = 2.47 + 0.91x$.
 $r = 16/\sqrt{17.5 \times 23.33} = 16/\sqrt{408.3} = 16/20.21 = 0.792$.
@@ -362,16 +362,16 @@ $\approx 20 + \dfrac{25 - 17}{18} \times 10 = 20 + \dfrac{80}{18} \approx 24.4$.
 **Worked Example: Full Regression Analysis with Prediction**
 
 A study records the temperature ($x$In $\mathrm^\circ C}$) and ice cream sales ($y$In USD) for 7
-days: $(18, 220)$, $(22, 310)$, $(25, 380)$, $(28, 440)$, $(31, 510)$, $(34, 580)$, $(20, 270)$. Find the
+days: $(18, 220)$$(22, 310)$$(25, 380)$$(28, 440)$$(31, 510)$$(34, 580)$$(20, 270)$. Find the
 regression line of $y$ on $x$The correlation coefficient, and predict sales at $30\mathrm^\circ C}$.
 
 <details>
 <summary>Solution</summary>
 
-Computing: $n = 7$, $\sum x = 178$, $\sum y = 2710$, $\sum x^2 = 4734$, $\sum y^2 = 1163900$
+Computing: $n = 7$$\sum x = 178$$\sum y = 2710$$\sum x^2 = 4734$$\sum y^2 = 1163900$
 $\sum xy = 73420$.
 
-$\bar{x} = 178/7 \approx 25.43$, $\bar{y} = 2710/7 \approx 387.14$.
+$\bar{x} = 178/7 \approx 25.43$$\bar{y} = 2710/7 \approx 387.14$.
 
 $S_{xx} = 4734 - 7(25.43)^2 = 4734 - 4529.0 = 205.0$
 
@@ -408,9 +408,9 @@ Selected at random and found to be defective. What is the probability it came fr
 Let $D$ be the event "bolt is defective" and $A, B, C$ be the events "bolt from Machine A, B, C"
 Respectively.
 
-Prior probabilities: $P(A) = 0.50$, $P(B) = 0.30$, $P(C) = 0.20$.
+Prior probabilities: $P(A) = 0.50$$P(B) = 0.30$$P(C) = 0.20$.
 
-Likelihoods: $P(D \mid A) = 0.02$, $P(D \mid B) = 0.03$, $P(D \mid C) = 0.05$.
+Likelihoods: $P(D \mid A) = 0.02$$P(D \mid B) = 0.03$$P(D \mid C) = 0.05$.
 
 Total probability of defect:
 
@@ -448,8 +448,8 @@ ${6 \choose 1}{5 \choose 3} + {6 \choose 2}{5 \choose 2} + {6 \choose 3}{5 \choo
 
 **Worked Example: Spearman's Rank Correlation**
 
-Eight students are ranked by two judges. The rank pairs are: $(1, 2)$, $(2, 1)$, $(3, 4)$, $(4, 3)$
-$(5, 6)$, $(6, 5)$, $(7, 8)$, $(8, 7)$. Calculate Spearman's rank correlation coefficient.
+Eight students are ranked by two judges. The rank pairs are: $(1, 2)$$(2, 1)$$(3, 4)$$(4, 3)$
+$(5, 6)$$(6, 5)$$(7, 8)$$(8, 7)$. Calculate Spearman's rank correlation coefficient.
 
 <details>
 <summary>Solution</summary>
@@ -515,7 +515,7 @@ Find the probability that: (a) all three are the same colour; (b) exactly two ar
 <details>
 <summary>Problem 11</summary>
 
-Two events $A$ and $B$ satisfy $P(A) = 0.4$, $P(B) = 0.7$And $P(A \cap B) = 0.25$. Find: (a)
+Two events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.7$And $P(A \cap B) = 0.25$. Find: (a)
 $P(A \mid B)$; (b) $P(A \cup B)$; (c) whether $A$ and $B$ are independent.
 
 </details>
@@ -530,7 +530,7 @@ A fair coin is tossed 5 times. Find the probability of getting exactly 3 heads.
 <details>
 <summary>Problem 13</summary>
 
-The bivariate data has $\sum x = 60$, $\sum y = 84$, $\sum x^2 = 440$, $\sum y^2 = 860$ $\sum xy = 580$And
+The bivariate data has $\sum x = 60$$\sum y = 84$$\sum x^2 = 440$$\sum y^2 = 860$ $\sum xy = 580$And
 $n = 10$. Find the equation of the regression line of $y$ on $x$ and the Coefficient of
 determination.
 

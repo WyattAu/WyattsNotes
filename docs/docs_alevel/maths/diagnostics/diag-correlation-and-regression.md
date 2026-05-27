@@ -41,7 +41,7 @@ correlation measures.]
 
 **Solution:**
 
-**(a)** We need $\sum x$, $\sum y$, $\sum x^2$, $\sum y^2$, $\sum xy$.
+**(a)** We need $\sum x$$\sum y$$\sum x^2$$\sum y^2$$\sum xy$.
 
 $$\sum x = 15 + 22 + 30 + 35 + 42 + 55 + 68 = 267$$
 
@@ -137,10 +137,10 @@ two regression lines, and extrapolation.]
 
 **Solution:**
 
-**(a)** On the line $y = 4.2x - 3.1$: when $x = 5.0$, $y = 4.2(5.0) - 3.1 = 21.0 - 3.1 = 17.9$. This
+**(a)** On the line $y = 4.2x - 3.1$: when $x = 5.0$$y = 4.2(5.0) - 3.1 = 21.0 - 3.1 = 17.9$. This
 matches $\bar{y}$. So $(\bar{x}, \bar{y}) = (5.0, 17.9)$ lies on the regression line of $y$ on $x$.
 
-On the line $x = 0.21y + 1.8$: when $y = 17.9$, $x = 0.21(17.9) + 1.8 = 3.759 + 1.8 = 5.559$. This
+On the line $x = 0.21y + 1.8$: when $y = 17.9$$x = 0.21(17.9) + 1.8 = 3.759 + 1.8 = 5.559$. This
 does **not** equal $\bar{x} = 5.0$.
 
 This discrepancy means the regression coefficients as stated are not consistent with $\bar{x} = 5.0$
@@ -373,7 +373,7 @@ it tests for any non-zero correlation (positive or negative) rather than just po
 
 **(c)** **Hypotheses:**
 
-$H_0: \rho = 0$, $H_1: \rho > 0$
+$H_0: \rho = 0$$H_1: \rho > 0$
 
 **Critical value:** For $n = 30$ at the 5% level (one-tailed), the critical value is 0.306.
 
@@ -497,7 +497,7 @@ The regression line of $S$ on $T$ is $S = 12.34T - 102.9$ with PMCC $r = 0.893$.
 when $T = 30$ is anomalous.
 
 **(b)** After removing the outlier, the new summary statistics are:
-$n = 7$, $\bar{T} = 20$, $\bar{S} = 160.7$, $S_{TT} = 238$, $S_{SS} = 46247$, $S_{TS} = 3292$. Calculate the
+$n = 7$$\bar{T} = 20$$\bar{S} = 160.7$$S_{TT} = 238$$S_{SS} = 46247$$S_{TS} = 3292$. Calculate the
 new PMCC and regression line.
 
 **(c)** Calculate the percentage change in the PMCC after removing the outlier. Comment on the

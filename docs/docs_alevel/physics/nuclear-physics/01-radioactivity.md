@@ -505,7 +505,7 @@ Radiation hazards, while long-lived isotopes create lower but persistent contami
 ### Fukushima Daiichi (2011)
 
 The Fukushima disaster, triggered by a tsunami following the Tohoku earthquake, released significant
-Quantities of radioactive isotopes including $^{131}\mathrm{I}$, $^{134}\mathrm{Cs}$ ($t_{1/2} = 2.06$
+Quantities of radioactive isotopes including $^{131}\mathrm{I}$$^{134}\mathrm{Cs}$ ($t_{1/2} = 2.06$
 years), and $^{137}\mathrm{Cs}$.
 
 Key differences from Chernobyl:
@@ -546,8 +546,8 @@ $t = -\ln 0.12/(1.209 \times 10^{-4}) = 2.12/(1.209 \times 10^{-4}) = 17,500$ ye
 In the uranium-238 decay series, verify that 8 alpha decays and 6 beta-minus decays are consistent
 With the transformation from $^{238}\mathrm{U}$ to $^{206}\mathrm{Pb}$.
 
-**Answer.** After 8 alpha decays: $A = 238 - 8 \times 4 = 206$, $Z = 92 - 8 \times 2 = 76$. After 6
-Beta-minus decays: $A$ unchanged, $Z = 76 + 6 = 82$. Final nuclide: $A = 206$, $Z = 82$Which is
+**Answer.** After 8 alpha decays: $A = 238 - 8 \times 4 = 206$$Z = 92 - 8 \times 2 = 76$. After 6
+Beta-minus decays: $A$ unchanged, $Z = 76 + 6 = 82$. Final nuclide: $A = 206$$Z = 82$Which is
 $^{206}\mathrm{Pb}$ $\checkmark$.
 
 <b>If you get this wrong, revise:</b> [The Uranium-238 Decay Series](#the-uranium-238-decay-series)

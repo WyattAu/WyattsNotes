@@ -486,7 +486,7 @@ $$= \frac{1}{2} - \frac{1}{(n+1)(n+2)}$$
 <hr />
 
 **Problem 5.** The equation $3x^3 + px^2 + qx + 12 = 0$ has roots $\alpha, \beta, \gamma$ such that
-$\alpha + \beta + \gamma = 4$ and $\alpha\beta\gamma = -4$. Find $p$, $q$And
+$\alpha + \beta + \gamma = 4$ and $\alpha\beta\gamma = -4$. Find $p$$q$And
 $\alpha\beta + \alpha\gamma + \beta\gamma$.
 
 <details>
@@ -636,7 +636,7 @@ $$\frac{x^2 + 3x + 2}{(x^2 + 2x + 3)^2} = \frac{1}{x^2 + 2x + 3} + \frac{x - 1}{
 <hr />
 
 **Problem 10.** The cubic equation $x^3 + px^2 + qx + r = 0$ has roots $\alpha, \beta, \gamma$ where
-$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$, $q$And $r$ in terms of $\alpha$And hence Find
+$\beta = 2\alpha$ and $\gamma = 3\alpha$. Express $p$$q$And $r$ in terms of $\alpha$And hence Find
 the roots when $p = -6$.
 
 <details>
@@ -658,7 +658,7 @@ $\alpha(2\alpha)(3\alpha) = 6\alpha^3 = -r$So $r = -6\alpha^3$.
 
 When $p = -6$: $-6\alpha = -6 \implies \alpha = 1$.
 
-Then $q = 11$, $r = -6$And the roots are $1, 2, 3$.
+Then $q = 11$$r = -6$And the roots are $1, 2, 3$.
 
 Verification: $(x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6$. ✓
 
@@ -755,7 +755,7 @@ The $n$-th harmonic number. No simpler closed form exists.
 
 ### Example 8.7: Simultaneous equations via matrices
 
-**Problem.** Solve the system $x + 2y - z = 3$, $2x - y + z = 4$, $3x + y + 2z = 7$.
+**Problem.** Solve the system $x + 2y - z = 3$$2x - y + z = 4$$3x + y + 2z = 7$.
 
 **Solution.** In matrix form $\mathbf{M}\mathbf{x} = \mathbf{b}$:
 
@@ -778,7 +778,7 @@ Similarly: $y = \dfrac{5}{3}$ and $z = \dfrac{1}{6}$.
 | Forgetting the condition $\|x\| < 1$ for binomial expansions                                    | Always state the convergence condition explicitly                                                                    |
 | Confusing $\displaystyle\sum_{r=1}^{n} r^3$ with $\left(\displaystyle\sum_{r=1}^{n} r\right)^3$ | $\sum r^3 = \dfrac{n^2(n+1)^2}{4}$; they happen to be equal but the reasoning is different                           |
 | Splitting partial fractions incorrectly for method of differences                               | Always check by recombining: $\dfrac{A}{r} + \dfrac{B}{r+1} = \dfrac{A(r+1) + Br}{r(r+1)}$                           |
-| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign             | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
+| Assuming Vieta's formulae give $\alpha\beta\gamma = -d/a$ without checking the sign             | For $ax^3+bx^2+cx+d=0$: $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
 | Skipping the base case in induction proofs                                                      | The base case is essential — without it the induction chain is unanchored                                            |
 
 ---
@@ -908,7 +908,7 @@ Used extensively in integration and differentiation. See
 | General binomial      | $(1+x)^n = \displaystyle\sum_{k=0}^{\infty} \binom{n}{k}x^k$ for $\|x\| < 1$                 |
 | Method of differences | Decompose $\dfrac{P(r)}{Q(r)}$ into partial fractions that telescope                         |
 | Induction             | Base case $\to$ assume $P(k)$ $\to$ prove $P(k+1)$                                           |
-| Vieta's (cubic)       | $\alpha+\beta+\gamma=-b/a$, $\alpha\beta+\beta\gamma+\gamma\alpha=c/a$, $\alpha\beta\gamma=-d/a$ |
+| Vieta's (cubic)       | $\alpha+\beta+\gamma=-b/a$$\alpha\beta+\beta\gamma+\gamma\alpha=c/a$$\alpha\beta\gamma=-d/a$ |
 | Sum of squares        | $\displaystyle\sum_{r=1}^{n} r^2 = \dfrac{n(n+1)(2n+1)}{6}$                                  |
 | Sum of cubes          | $\displaystyle\sum_{r=1}^{n} r^3 = \dfrac{n^2(n+1)^2}{4}$                                    |
 | Harmonic sum          | $H_n = \displaystyle\sum_{r=1}^{n} \dfrac{1}{r} \approx \ln n + \gamma$                      |

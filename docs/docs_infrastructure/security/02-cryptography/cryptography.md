@@ -420,9 +420,9 @@ A MAC provides integrity and authenticity for a message. The sender and receiver
 
 HMAC (Hash-based MAC, RFC 2104) uses a cryptographic hash function with a secret key:
 
-$, $
+$$
 \mathrm{HMAC(K, m) = H\Big((K' \oplus \mathrm{opad) \;\|\; H\big((K' \oplus \mathrm{ipad) \;\|\; m\big)\Big)
-$, $
+$$
 
 Where $K'$ is the key padded to the block size, $\mathrm{opad = \mathrm{0x5c...$And
 $\mathrm{ipad = \mathrm{0x36...$.

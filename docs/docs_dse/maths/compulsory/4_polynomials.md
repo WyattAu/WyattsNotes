@@ -52,7 +52,7 @@ Corresponding powers of $x$ are equal.
 
 </details>
 <summary>Example: Using the method of undetermined coefficients</summary>
-Find constants $A$, $B$, $C$ such that $x^2 + 4x + 6 \equiv A(x-1)^2 + B(x-1) + C$.
+Find constants $A$$B$$C$ such that $x^2 + 4x + 6 \equiv A(x-1)^2 + B(x-1) + C$.
 
 Expanding the right-hand side:
 
@@ -401,7 +401,7 @@ Manipulation.
 <summary>Example: Finding a new equation from roots</summary>
 If $\alpha$ and $\beta$ are roots of $2x^2 - 5x + 1 = 0$Find the equation whose roots are $\alpha^2$ and $\beta^2$.
 
-From Vieta: $\alpha + \beta = \dfrac{5}{2}$, $\alpha\beta = \dfrac{1}{2}$.
+From Vieta: $\alpha + \beta = \dfrac{5}{2}$$\alpha\beta = \dfrac{1}{2}$.
 
 Sum of new roots:
 
@@ -482,7 +482,7 @@ Adding (i) and (ii): $3a = 26 \implies a = \dfrac{26}{3}$.
 From (i): $b = -\dfrac{26}{3}$.
 
 4. **Question:** Given that $(x - 3)$ and $(x + 1)$ are factors of $f(x) = x^3 + ax^2 + bx + c$ Find
-$a$, $b$And $c$. Hence factorize $f(x)$ completely.
+$a$$b$And $c$. Hence factorize $f(x)$ completely.
 </details>
 <summary>Answer</summary>
 By the Factor Theorem:
@@ -509,7 +509,7 @@ Subtracting (ii) from (i): $28 + 8a + 4b = 0 \implies 7 + 2a + b = 0 \quad \math
 
 From (ii): $a - b + c = 1$.
 
-Substituting $a = -(d+2)$, $b = 2d-3$, $c = 3d$ into (i):
+Substituting $a = -(d+2)$$b = 2d-3$$c = 3d$ into (i):
 
 $$
 27 + 9(-d-2) + 3(2d-3) + 3d = 27 - 9d - 18 + 6d - 9 + 3d = 0
@@ -545,7 +545,7 @@ There are infinitely many cubics with $(x-3)$ and $(x+1)$ as factors. Assuming t
 Monic cubic (which it is, with leading coefficient $1$), we write $f(x) = (x-3)(x+1)(x - d)$ where
 $d$ is the third root. Since no further condition is given, the general answer is:
 
-$a = -(d+2)$, $b = 2d - 3$, $c = 3d$And $f(x) = (x-3)(x+1)(x-d)$ for any real $d$.
+$a = -(d+2)$$b = 2d - 3$$c = 3d$And $f(x) = (x-3)(x+1)(x-d)$ for any real $d$.
 
 5. **Question:** Factorize $x^4 - 5x^2 + 4$ completely.
 <details>
@@ -560,7 +560,7 @@ $$
 $\alpha^3 + \beta^3$ without solving the equation.
 </details>
 <summary>Answer</summary>
-From Vieta: $\alpha + \beta = \dfrac{8}{3}$, $\alpha\beta = \dfrac{2}{3}$.
+From Vieta: $\alpha + \beta = \dfrac{8}{3}$$\alpha\beta = \dfrac{2}{3}$.
 
 $$
 \alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = \left(\frac{8}{3}\right)^3 - 3 \cdot \frac{2}{3} \cdot \frac{8}{3}
@@ -639,7 +639,7 @@ The coefficient of $x^5$ is $30$.
 Equation whose roots are $\dfrac{1}{\alpha}$ and $\dfrac{1}{\beta}$.
 <details>
 <summary>Answer</summary>
-From Vieta: $\alpha + \beta = 7$, $\alpha\beta = 3$.
+From Vieta: $\alpha + \beta = 7$$\alpha\beta = 3$.
 
 Sum of new roots:
 $\dfrac{1}{\alpha} + \dfrac{1}{\beta} = \dfrac{\alpha + \beta}{\alpha\beta} = \dfrac{7}{3}$.
@@ -704,7 +704,7 @@ should be left in exact form.
 **Worked Example 13: Cubic with given conditions**
 
 The polynomial $f(x) = x^3 + ax^2 + bx - 12$ is divisible by $(x - 3)$ and $f(1) = -18$. Find
-$a$, $b$And factorise $f(x)$ completely.
+$a$$b$And factorise $f(x)$ completely.
 
 <details>
 <summary>Solution</summary>
@@ -756,7 +756,7 @@ $f(\omega) = \omega^4 + 2\omega^3 - \omega^2 + 3 = \omega + 2 - (-\omega - 1) + 
 
 $f(\omega^2) = \omega^8 + 2\omega^6 - \omega^4 + 3 = \omega^2 + 2 - \omega + 3 = (-\omega - 1) + 2 - \omega + 3 = -2\omega + 4$.
 
-From $a\omega + b = 2\omega + 6$: $a = 2$, $b = 6$.
+From $a\omega + b = 2\omega + 6$: $a = 2$$b = 6$.
 
 Check: $a\omega^2 + b = 2(-\omega - 1) + 6 = -2\omega + 4$. Consistent.
 
@@ -766,14 +766,14 @@ Remainder: $2x + 6$.
 
 **Worked Example 16: Vieta for cubic equations**
 
-If $\alpha$, $\beta$, $\gamma$ are roots of $x^3 - 2x^2 + 3x - 4 = 0$Find
+If $\alpha$$\beta$$\gamma$ are roots of $x^3 - 2x^2 + 3x - 4 = 0$Find
 $\alpha^2 + \beta^2 + \gamma^2$.
 
 <details>
 <summary>Solution</summary>
 
 From Vieta:
-$\alpha + \beta + \gamma = 2$, $\alpha\beta + \beta\gamma + \gamma\alpha = 3$, $\alpha\beta\gamma = 4$.
+$\alpha + \beta + \gamma = 2$$\alpha\beta + \beta\gamma + \gamma\alpha = 3$$\alpha\beta\gamma = 4$.
 
 $$(\alpha + \beta + \gamma)^2 = \alpha^2 + \beta^2 + \gamma^2 + 2(\alpha\beta + \beta\gamma + \gamma\alpha)$$
 
@@ -800,7 +800,7 @@ $$\frac{n}{6} = \frac{3}{2} \implies n = 9$$
 
 **DSE Practice 1.** When $f(x) = x^3 + ax^2 + bx + c$ is divided by $(x - 1)$The remainder is $4$.
 When divided by $(x + 1)$The remainder is $-2$. When divided by $(x - 2)$The remainder is $14$. Find
-$a$, $b$And $c$.
+$a$$b$And $c$.
 
 <details>
 <summary>Solution</summary>
@@ -832,11 +832,11 @@ $a + b + c = 5$:
 
 $$\frac{5!}{a!\,b!\,c!} \cdot 1^a \cdot (2x)^b \cdot (-x^2)^c = \frac{5!}{a!\,b!\,c!} \cdot 2^b \cdot (-1)^c \cdot x^{b + 2c}$$
 
-For $x^3$: $b + 2c = 3$ with $a + b + c = 5$, $a, b, c \geq 0$.
+For $x^3$: $b + 2c = 3$ with $a + b + c = 5$$a, b, c \geq 0$.
 
-Case $c = 0$: $b = 3$, $a = 2$. Coefficient: $\dfrac{120}{2! \cdot 3!} \cdot 8 = 10 \cdot 8 = 80$.
+Case $c = 0$: $b = 3$$a = 2$. Coefficient: $\dfrac{120}{2! \cdot 3!} \cdot 8 = 10 \cdot 8 = 80$.
 
-Case $c = 1$: $b = 1$, $a = 3$. Coefficient:
+Case $c = 1$: $b = 1$$a = 3$. Coefficient:
 $\dfrac{120}{3! \cdot 1! \cdot 1!} \cdot 2 \cdot (-1) = 20 \cdot (-2) = -40$.
 
 Total coefficient of $x^3$: $80 + (-40) = 40$.
@@ -882,7 +882,7 @@ To 5 decimal places: $1.10462$.
 
 </details>
 
-**DSE Practice 5.** Prove that for positive integers $n \geq 2$, $n^n > 2^{n-1} \cdot n!$.
+**DSE Practice 5.** Prove that for positive integers $n \geq 2$$n^n > 2^{n-1} \cdot n!$.
 
 <details>
 <summary>Solution</summary>

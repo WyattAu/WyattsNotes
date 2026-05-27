@@ -378,9 +378,9 @@ The grating spacing: $d = \frac{1}{500 \times 10^3} = 2 \times 10^{-6} \mathrm{ 
 For the first order ($n = 1$):
 
 - Violet ($\lambda = 400 \mathrm{ nm$):
-  $\sin\theta_v = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.200$, $\theta_v = 11.5^{\circ}$
+  $\sin\theta_v = \frac{400 \times 10^{-9}}{2 \times 10^{-6}} = 0.200$$\theta_v = 11.5^{\circ}$
 - Red ($\lambda = 700 \mathrm{ nm$):
-  $\sin\theta_r = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.350$, $\theta_r = 20.5^{\circ}$
+  $\sin\theta_r = \frac{700 \times 10^{-9}}{2 \times 10^{-6}} = 0.350$$\theta_r = 20.5^{\circ}$
 
 The angular width of the first-order spectrum is $20.5^{\circ} - 11.5^{\circ} = 9.0^{\circ}$.
 
@@ -449,16 +449,16 @@ Source of equal intensity adds 3 dB.
 
 | Topic               | Formula                             | Variables            | Notes                     |
 | ------------------- | ----------------------------------- | -------------------- | ------------------------- |
-| Wave speed          | $v = f\lambda$                      | $f$, $\lambda$         | Exact for periodic waves  |
-| Snell's law         | $n_1\sin\theta_1 = n_2\sin\theta_2$ | $n$, $\theta$          | Frequency unchanged       |
+| Wave speed          | $v = f\lambda$                      | $f$$\lambda$         | Exact for periodic waves  |
+| Snell's law         | $n_1\sin\theta_1 = n_2\sin\theta_2$ | $n$$\theta$          | Frequency unchanged       |
 | Critical angle      | $\sin\theta_c = n_2/n_1$            | $n_1 \gt n_2$        | Total internal reflection |
-| Double slit         | $w = \lambda L/d$                   | $\lambda$, $L$, $d$      | Fringe spacing            |
-| Diffraction grating | $d\sin\theta = n\lambda$            | $d$, $\theta$, $\lambda$ | $n$Th order maximum       |
-| Decibels            | $\beta = 10\log_{10}(I/I_0)$        | $I$, $I_0$             | $I_0 = 10^{-12}$ W/m$^2$  |
-| Decay law           | $N = N_0 e^{-\lambda t}$            | $N_0$, $\lambda$, $t$    | Exponential decay         |
+| Double slit         | $w = \lambda L/d$                   | $\lambda$$L$$d$      | Fringe spacing            |
+| Diffraction grating | $d\sin\theta = n\lambda$            | $d$$\theta$$\lambda$ | $n$Th order maximum       |
+| Decibels            | $\beta = 10\log_{10}(I/I_0)$        | $I$$I_0$             | $I_0 = 10^{-12}$ W/m$^2$  |
+| Decay law           | $N = N_0 e^{-\lambda t}$            | $N_0$$\lambda$$t$    | Exponential decay         |
 | Half-life           | $t_{1/2} = \ln 2/\lambda$           | $\lambda$            | Constant for each isotope |
-| Activity            | $A = \lambda N$                     | $\lambda$, $N$         | In becquerels (Bq)        |
-| Mass-energy         | $E = mc^2$                          | $m$, $c$               | Binding energy            |
+| Activity            | $A = \lambda N$                     | $\lambda$$N$         | In becquerels (Bq)        |
+| Mass-energy         | $E = mc^2$                          | $m$$c$               | Binding energy            |
 
 ## 16. Practice Questions (Additional)
 
@@ -647,7 +647,7 @@ $L_3 = 5\lambda/4 = 5 \times 0.165 = 0.825 \mathrm{ m = 82.5 \mathrm{ cm$
 
 Calculate the binding energy per nucleon of helium-4. Given: mass of helium-4 nucleus
 $= 4.001506 \mathrm{ u$Mass of proton $= 1.007276 \mathrm{ u$Mass of neutron
-$= 1.008665 \mathrm{ u$, $1 \mathrm{ u = 931.5 \mathrm{ MeV/c^2$.
+$= 1.008665 \mathrm{ u$$1 \mathrm{ u = 931.5 \mathrm{ MeV/c^2$.
 
 **Step 1: Calculate mass defect**
 

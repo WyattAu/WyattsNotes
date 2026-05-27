@@ -325,7 +325,7 @@ $$
 A = \frac{1}{2}ab\sin C
 $$
 
-**Example:** In triangle $ABC$, $a = 8$, $b = 5$, $C = 60^\circ$. Find $c$.
+**Example:** In triangle $ABC$$a = 8$$b = 5$$C = 60^\circ$. Find $c$.
 
 $$
 C^2 = 64 + 25 - 2(8)(5)\cos 60° = 89 - 40 = 49
@@ -333,7 +333,7 @@ $$
 
 $c = 7$.
 
-**Example:** In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$.
+**Example:** In triangle $ABC$$a = 7$$b = 9$$B = 55^\circ$. Find angle $A$.
 
 By the sine rule:
 
@@ -602,7 +602,7 @@ $$
 \mathbf{r} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + t\begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix}
 $$
 
-Parametrically: $x = 1 + 3t$, $y = 2 - t$, $z = -1 + 4t$.
+Parametrically: $x = 1 + 3t$$y = 2 - t$$z = -1 + 4t$.
 
 ### Skew, Parallel, and Intersecting Lines
 
@@ -628,7 +628,7 @@ $$s = 1 - t \quad (2)$$
 $$2 - s = -1 + 3t \quad (3)$$
 
 From (2): $s = 1 - t$. Substitute into (1): $1 + 2(1 - t) = 3 + t$So $3 - 2t = 3 + t$Giving
-$t = 0$, $s = 1$.
+$t = 0$$s = 1$.
 
 Check (3): $2 - 1 = -1 + 0$I.e., $1 = -1$. This is false, so the lines are **skew**.
 
@@ -643,7 +643,7 @@ $$
 **Example:** Find the perpendicular distance from the point $(1, 2, 3)$ to the line
 $\mathbf{r} = (0, 1, -1) + t(2, -1, 3)$.
 
-$\overrightarrow{AP} = (1, 1, 4)$, $\mathbf{d} = (2, -1, 3)$.
+$\overrightarrow{AP} = (1, 1, 4)$$\mathbf{d} = (2, -1, 3)$.
 
 $$
 \overrightarrow{AP} \times \mathbf{d} = \begin{pmatrix} 1 \cdot 3 - 4 \cdot (-1) \\ 4 \cdot 2 - 1 \cdot 3 \\ 1 \cdot (-1) - 1 \cdot 2 \end{pmatrix} = \begin{pmatrix} 7 \\ 5 \\ -3 \end{pmatrix}
@@ -675,7 +675,7 @@ And $\mathbf{r} = (0, 0, 1) + t(0, 1, 1)$.
 
 $\mathbf{a}_2 - \mathbf{a}_1 = (-1, 0, 1)$.
 
-$\mathbf{d}_1 = (1, 2, 0)$, $\mathbf{d}_2 = (0, 1, 1)$.
+$\mathbf{d}_1 = (1, 2, 0)$$\mathbf{d}_2 = (0, 1, 1)$.
 
 $$
 \mathbf{d}_1 \times \mathbf{d}_2 = \begin{pmatrix} 2 \cdot 1 - 0 \cdot 1 \\ 0 \cdot 0 - 1 \cdot 1 \\ 1 \cdot 1 - 2 \cdot 0 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}
@@ -716,7 +716,7 @@ See the examples integrated throughout the sections above.
 5. **Assuming lines in 3D always intersect:** Always check all three coordinates when testing for
    intersection. Even if two coordinates match, the third may not.
 
-6. **Dividing by zero in trig equations:** When you factor and divide by $\cos x$, $\sin x$Or
+6. **Dividing by zero in trig equations:** When you factor and divide by $\cos x$$\sin x$Or
    $\tan x$You lose solutions. Always consider the case where the factor equals zero separately.
 
 7. **Using the wrong form of $\cos 2A$:** All three forms are equivalent, but using the wrong one
@@ -757,7 +757,7 @@ See the examples integrated throughout the sections above.
 9. Find the perpendicular distance from the point $(1, 2, 3)$ to the line
    $\mathbf{r} = (0, 1, -1) + t(2, -1, 3)$.
 
-10. In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$ (there may be two solutions).
+10. In triangle $ABC$$a = 7$$b = 9$$B = 55^\circ$. Find angle $A$ (there may be two solutions).
 
 11. Solve $2\sin^2 x + 3\cos x - 3 = 0$ for $0 \le x \lt 2\pi$.
 
@@ -767,7 +767,7 @@ See the examples integrated throughout the sections above.
 13. Find the angle between the lines $\mathbf{r} = (0, 0, 0) + s(1, 2, -1)$ and
     $\mathbf{r} = (1, 1, 0) + t(2, -1, 3)$.
 
-14. Find the area of triangle $ABC$ given $a = 10$, $b = 8$, $c = 6$.
+14. Find the area of triangle $ABC$ given $a = 10$$b = 8$$c = 6$.
 
 15. The line $y = mx + 7$ is tangent to the circle $x^2 + y^2 - 4x + 2y - 20 = 0$. Find the possible
     values of $m$.

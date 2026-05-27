@@ -59,7 +59,7 @@ $$\frac{dy}{y} = x\,dx \implies \ln|y| = \frac{x^2}{2} + C \implies y = Ae^{x^2/
 
 Where $A = \pm e^C$.
 
-**Example.** Solve $\dfrac{dy}{dx} = \dfrac{y + 1}{x}$, $x \gt 0$.
+**Example.** Solve $\dfrac{dy}{dx} = \dfrac{y + 1}{x}$$x \gt 0$.
 
 $$\frac{dy}{y + 1} = \frac{dx}{x} \implies \ln|y + 1| = \ln x + C \implies |y + 1| = e^C \cdot x$$
 
@@ -98,7 +98,7 @@ $\mu = \exp\!\left(\displaystyle\int P(x)\,dx\right)$.
 
 ### Worked Examples
 
-**Example.** Solve $\dfrac{dy}{dx} + \dfrac{y}{x} = x^2$, $x \gt 0$.
+**Example.** Solve $\dfrac{dy}{dx} + \dfrac{y}{x} = x^2$$x \gt 0$.
 
 Here $P(x) = \dfrac{1}{x}$So:
 
@@ -164,7 +164,7 @@ $$y = e^{\alpha x}\bigl(A\cos\beta x + B\sin\beta x\bigr)$$
 
 Characteristic equation: $\lambda^2 - 5\lambda + 6 = 0 \implies (\lambda - 2)(\lambda - 3) = 0$.
 
-Roots: $\lambda_1 = 2$, $\lambda_2 = 3$ (distinct real).
+Roots: $\lambda_1 = 2$$\lambda_2 = 3$ (distinct real).
 
 $$y = Ae^{2x} + Be^{3x}$$
 
@@ -182,7 +182,7 @@ Characteristic equation: $\lambda^2 + 2\lambda + 5 = 0$.
 
 $$\lambda = \frac{-2 \pm \sqrt{4 - 20}}{2} = -1 \pm 2i$$
 
-Here $\alpha = -1$, $\beta = 2$.
+Here $\alpha = -1$$\beta = 2$.
 
 $$y = e^{-x}(A\cos 2x + B\sin 2x)$$
 
@@ -261,12 +261,12 @@ $\phi = \arctan\!\left(-\dfrac{B}{A}\right)$.
 | Maximum velocity     | $v_{\max} = R\omega$                      |
 | Maximum acceleration | $a_{\max} = R\omega^2$                    |
 
-**Example.** A particle moves with SHM. At $t = 0$, $x = 3$ and $v = 4$. The angular frequency is
+**Example.** A particle moves with SHM. At $t = 0$$x = 3$ and $v = 4$. The angular frequency is
 $\omega = 2$. Find $x(t)$.
 
 $$x = A\cos 2t + B\sin 2t, \qquad v = -2A\sin 2t + 2B\cos 2t$$
 
-$x(0) = A = 3$, $v(0) = 2B = 4 \implies B = 2$.
+$x(0) = A = 3$$v(0) = 2B = 4 \implies B = 2$.
 
 $$x(t) = 3\cos 2t + 2\sin 2t$$
 
@@ -338,7 +338,7 @@ Where $h$ is the step size.
 - Advance: $x_{n+1} = x_n + h$.
 
 **Example.** Use Euler's method with $h = 0.1$ to approximate $y(0.5)$ for
-$\dfrac{dy}{dx} = x + y$, $y(0) = 1$.
+$\dfrac{dy}{dx} = x + y$$y(0) = 1$.
 
 | $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = x_n + y_n$ |
 | :-- | :---- | :---- | :------------------------ |
@@ -392,7 +392,7 @@ behaviour Of the DE (equilibrium, asymptotes, periodicity).
 
 **Worked Example: Separable Equation with Partial Fractions**
 
-Solve $\dfrac{dy}{dx} = \dfrac{y^2 - 1}{x}$ with $y(1) = 2$, $x \gt 0$.
+Solve $\dfrac{dy}{dx} = \dfrac{y^2 - 1}{x}$ with $y(1) = 2$$x \gt 0$.
 
 <details>
 <summary>Solution</summary>
@@ -520,7 +520,7 @@ Use Euler's method with $h = 0.05$ to approximate $y(0.3)$ for $\dfrac{dy}{dx} =
 
 Euler approximation: $y(0.3) \approx 1.505$.
 
-The exact solution (integrating factor): $y' + y = x$, $\mu = e^x$.
+The exact solution (integrating factor): $y' + y = x$$\mu = e^x$.
 
 $$\frac{d}{dx}(ye^x) = xe^x \implies ye^x = (x - 1)e^x + C$$
 

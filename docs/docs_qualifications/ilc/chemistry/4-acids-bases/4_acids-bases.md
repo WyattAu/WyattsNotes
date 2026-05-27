@@ -58,7 +58,7 @@ $\mathrm{NH_3/\mathrm{NH_4^+$ and $\mathrm{H_2\mathrm{O/\mathrm{OH^-$.
 
 ### Strong Acids
 
-Completely dissociate in water: $\mathrm{HCl$, $\mathrm{HNO_3$, $\mathrm{H_2\mathrm{SO_4$ (first
+Completely dissociate in water: $\mathrm{HCl$$\mathrm{HNO_3$$\mathrm{H_2\mathrm{SO_4$ (first
 Dissociation).
 
 $$
@@ -67,7 +67,7 @@ $$
 
 ### Weak Acids
 
-Partially dissociate in water: $\mathrm{CH_3\mathrm{COOH$, $\mathrm{HF$, $\mathrm{H_2\mathrm{CO_3$.
+Partially dissociate in water: $\mathrm{CH_3\mathrm{COOH$$\mathrm{HF$$\mathrm{H_2\mathrm{CO_3$.
 
 $$
 \mathrm{CH_3\mathrm{COOH + \mathrm{H_2\mathrm{O \rightleftharpoons \mathrm{H_3\mathrm{O^+ + \mathrm{CH_3\mathrm{COO^-
@@ -75,7 +75,7 @@ $$
 
 ### Strong Bases
 
-Completely dissociate: $\mathrm{NaOH$, $\mathrm{KOH$, $\mathrm{Ca(OH)_2$.
+Completely dissociate: $\mathrm{NaOH$$\mathrm{KOH$$\mathrm{Ca(OH)_2$.
 
 ### Weak Bases
 
@@ -506,7 +506,7 @@ $$\mathrm{pOH = 5.28, \quad \mathrm{pH = 8.72$$
 
 ### Examples
 
-**Lewis acid:** $\mathrm{BF_3$ (boron has an empty $p$ orbital), $\mathrm{AlCl_3$, $\mathrm{H^+$ (has
+**Lewis acid:** $\mathrm{BF_3$ (boron has an empty $p$ orbital), $\mathrm{AlCl_3$$\mathrm{H^+$ (has
 No electrons), $\mathrm{Cu^{2+}$ (can accept electron pairs).
 
 **Lewis base:** $\mathrm{NH_3$ (lone pair on nitrogen), $\mathrm{H_2\mathrm{O$ (lone pairs on
@@ -697,7 +697,7 @@ System works because:
 2. The kidneys regulate $\mathrm{HCO_3^-$ levels
 3. Haemoglobin acts as an additional buffer
 
-The phosphate buffer system ($\mathrm{H_2\mathrm{PO_4^-/\mathrm{HPO_4^{2-}$, $pK_{a2} = 7.21$) is
+The phosphate buffer system ($\mathrm{H_2\mathrm{PO_4^-/\mathrm{HPO_4^{2-}$$pK_{a2} = 7.21$) is
 Important intracellularly.
 
 ---

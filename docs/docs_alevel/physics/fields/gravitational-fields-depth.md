@@ -82,8 +82,8 @@ The axial force contribution from the ring is:
 
 $$dF = \frac{Gm\,dM}{s^2}\cos\alpha = \frac{GmM}{2}\cdot\frac◆LB◆(r - R\cos\theta)\sin\theta\,d\theta◆RB◆◆LB◆(r^2 + R^2 - 2rR\cos\theta)^{3/2}◆RB◆$$
 
-Substitute $u = \cos\theta$, $du = -\sin\theta\,d\theta$. When $\theta = 0$, $u = 1$; when
-$\theta = \pi$, $u = -1$:
+Substitute $u = \cos\theta$$du = -\sin\theta\,d\theta$. When $\theta = 0$$u = 1$; when
+$\theta = \pi$$u = -1$:
 
 $$F = \frac{GmM}{2}\int_{1}^{-1}\frac{(r - Ru)(-du)}{(r^2 + R^2 - 2rRu)^{3/2}}$$
 
@@ -167,7 +167,7 @@ infinity With zero residual speed from the surface of a body of mass $M$ and rad
 
 ### Derivation from Energy Conservation
 
-At launch: $E_k = \frac{1}{2}mv_e^2$, $E_p = -GMm/R$. At infinity: $E_k = 0$, $E_p = 0$. By energy
+At launch: $E_k = \frac{1}{2}mv_e^2$$E_p = -GMm/R$. At infinity: $E_k = 0$$E_p = 0$. By energy
 Conservation:
 
 $$\frac{1}{2}mv_e^2 - \frac{GMm}{R} = 0$$
@@ -393,7 +393,7 @@ $T = 9.94 \times 10^6$ s $= 115$ days.
 Show that for a satellite in circular orbit, the ratio of kinetic energy to the magnitude of
 Potential energy is exactly $1:2$.
 
-**Answer.** $E_k = GMm/(2r)$, $|E_p| = GMm/r$. Therefore $E_k / |E_p| = 1/2$. This follows from the
+**Answer.** $E_k = GMm/(2r)$$|E_p| = GMm/r$. Therefore $E_k / |E_p| = 1/2$. This follows from the
 Virial theorem: $2E_k + E_p = 0$. $\square$
 
 </details>
@@ -441,7 +441,7 @@ J.
 Show that the work required to move a satellite from a circular orbit of radius $r$ to a circular
 Orbit of radius $2r$ is $GMm/(4r)$.
 
-**Answer.** $E_1 = -GMm/(2r)$, $E_2 = -GMm/(4r)$. Work
+**Answer.** $E_1 = -GMm/(2r)$$E_2 = -GMm/(4r)$. Work
 $= E_2 - E_1 = -GMm/(4r) + GMm/(2r) = GMm/(4r)$. $\square$
 
 </details>

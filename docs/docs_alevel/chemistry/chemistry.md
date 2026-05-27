@@ -52,9 +52,9 @@ the ten core modules to each board's paper structure.
    the ideal gas equation, thermochemical calculations.
 4. **[Chemical Kinetics](./chemical-kinetics)** -- Rate equations, the Arrhenius equation, collision
    theory, Maxwell-Boltzmann distributions, catalysis.
-5. **[Chemical Equilibrium](./chemical-equilibrium)** -- $K_c$, $K_p$Le Chatelier's principle,
+5. **[Chemical Equilibrium](./chemical-equilibrium)** -- $K_c$$K_p$Le Chatelier's principle,
    solubility products, industrial processes.
-6. **[Acids, Bases & Buffers](./acids-bases)** -- pH, $K_a$, $K_b$, $K_w$Buffer solutions, titration
+6. **[Acids, Bases & Buffers](./acids-bases)** -- pH, $K_a$$K_b$$K_w$Buffer solutions, titration
    curves, indicators.
 7. **[Thermodynamics & Energetics](./thermodynamics)** -- Hess's Law, entropy, Gibbs free energy,
    lattice enthalpy, Born-Haber cycles.
@@ -131,12 +131,12 @@ four boards.
 
 | Topic            | Key Equations                                                                                                                                                                                                                      |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Quantitative     | $n = \frac{m}{M}$, $c = \frac{n}{V}$, $pV = nRT$, $\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$                                                                                                                                            |
-| Acids/Bases      | $\mathrm{pH} = -\log[\mathrm{H}^+]$, $K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$, $K_w = [\mathrm{H}^+][\mathrm{OH}^-]$, $\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$ |
-| Equilibrium      | $K_c = \frac◆LB◆\prod[\mathrm{products}]^a◆RB◆◆LB◆\prod[\mathrm{reactants}]^b◆RB◆$, $K_p = \frac◆LB◆\prod p_i^{a_i}◆RB◆◆LB◆\prod p_j^{b_j}◆RB◆$, $K_p = K_c(RT)^{\Delta n}$                                                            |
-| Thermodynamics   | $\Delta G = \Delta H - T\Delta S$, $\Delta G^\circ = -RT\ln K$, $q = mc\Delta T$                                                                                                                                                       |
-| Kinetics         | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$, $k = Ae^{-E_a/RT}$, $\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$, $t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$ (first-order)                                                               |
-| Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$, $\Delta G^\circ = -nFE^\circ$, $Q = It$, $n = \frac{Q}{F}$, $E = E^\circ - \frac{RT}{nF}\ln Q$                                                                |
+| Quantitative     | $n = \frac{m}{M}$$c = \frac{n}{V}$$pV = nRT$$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$                                                                                                                                            |
+| Acids/Bases      | $\mathrm{pH} = -\log[\mathrm{H}^+]$$K_a = \frac◆LB◆[\mathrm{H}^+][\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$$K_w = [\mathrm{H}^+][\mathrm{OH}^-]$$\mathrm{pH} = \mathrm{p}K_a + \log\frac◆LB◆[\mathrm{A}^-]◆RB◆◆LB◆[\mathrm{HA}]◆RB◆$ |
+| Equilibrium      | $K_c = \frac◆LB◆\prod[\mathrm{products}]^a◆RB◆◆LB◆\prod[\mathrm{reactants}]^b◆RB◆$$K_p = \frac◆LB◆\prod p_i^{a_i}◆RB◆◆LB◆\prod p_j^{b_j}◆RB◆$$K_p = K_c(RT)^{\Delta n}$                                                            |
+| Thermodynamics   | $\Delta G = \Delta H - T\Delta S$$\Delta G^\circ = -RT\ln K$$q = mc\Delta T$                                                                                                                                                       |
+| Kinetics         | $\text{rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$$k = Ae^{-E_a/RT}$$\ln k = -\frac{E_a}{R}\cdot\frac{1}{T} + \ln A$$t_{1/2} = \frac◆LB◆\ln 2◆RB◆◆LB◆k◆RB◆$ (first-order)                                                               |
+| Electrochemistry | $E^\circ_\mathrm{cell} = E^\circ_\mathrm{cathode} - E^\circ_\mathrm{anode}$$\Delta G^\circ = -nFE^\circ$$Q = It$$n = \frac{Q}{F}$$E = E^\circ - \frac{RT}{nF}\ln Q$                                                                |
 | Born-Haber       | $\Delta H_f = \Delta H_\mathrm{at} + \sum \mathrm{IE} + \Delta H_\mathrm{at}(\text{anion}) + \sum \mathrm{EA} + \Delta H_\mathrm{lat}$                                                                                             |
 
 ### Organic Chemistry
@@ -144,7 +144,7 @@ four boards.
 | Topic            | Key Reactions                                                                                                                                                      |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Alkanes          | Radical substitution: $\mathrm{RH} + \mathrm{X}_2 \xrightarrow{\mathrm{UV}} \mathrm{RX} + \mathrm{HX}$                                                             |
-| Alkenes          | Electrophilic addition: $\mathrm{C=C} + \mathrm{HX}$, $\mathrm{C=C} + \mathrm{X}_2$, $\mathrm{C=C} + \mathrm{H}_2\mathrm{O}$ (acid)                                    |
+| Alkenes          | Electrophilic addition: $\mathrm{C=C} + \mathrm{HX}$$\mathrm{C=C} + \mathrm{X}_2$$\mathrm{C=C} + \mathrm{H}_2\mathrm{O}$ (acid)                                    |
 | Halogenoalkanes  | SN2: $\mathrm{R-X} + \mathrm{OH}^- \to \mathrm{R-OH} + \mathrm{X}^-$; E2: $\mathrm{R-X} + \mathrm{OH}^- \to \text{alkene} + \mathrm{X}^- + \mathrm{H}_2\mathrm{O}$ |
 | Alcohols         | Oxidation: $1^\circ \to$ aldehyde $\to$ acid; $2^\circ \to$ ketone; Dehydration $\to$ alkene                                                                       |
 | Carbonyls        | Nucleophilic addition: $\mathrm{NaBH}_4$ reduction; 2,4-DNPH test; Tollens' test                                                                                   |

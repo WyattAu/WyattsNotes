@@ -213,7 +213,7 @@ $$T = 19.62 + 4(0.951) = 23.42 \text{ N}$$
 A light inextensible string of length $2L$ has a small mass $m$ attached at its midpoint. One end is
 fixed at point A and the other at point B, where A and B are on the same horizontal level separated
 by distance $L$. The system rotates about the vertical axis AB with angular speed $\omega$. Find the
-tension in each half of the string in terms of $m$, $\omega$, $g$And $L$.
+tension in each half of the string in terms of $m$$\omega$$g$And $L$.
 
 **Solution:**
 

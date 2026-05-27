@@ -25,7 +25,7 @@ Concepts underpin much of the algebra and calculus in the Leaving Certificate co
 | ------------ | ---------------- | -------------------------------------------------------------------------- |
 | $\mathbb{N}$ | Natural numbers  | $\{1, 2, 3, \ldots\}$ (some definitions include 0)                         |
 | $\mathbb{Z}$ | Integers         | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$                                      |
-| $\mathbb{Q}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{Z}$, $q \neq 0$ |
+| $\mathbb{Q}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{Z}$$q \neq 0$ |
 | $\mathbb{R}$ | Real numbers     | All rational and irrational numbers                                        |
 | $\mathbb{C}$ | Complex numbers  | Numbers of the form $a + bi$ where $a, b \in \mathbb{R}$                   |
 
@@ -49,7 +49,7 @@ The real numbers satisfy the following axioms:
 **Inverse elements:** For every $a$There exists $-a$ such that $a + (-a) = 0$. For every
 $a \neq 0$There exists $a^{-1}$ such that $a \cdot a^{-1} = 1$.
 
-**Ordered field properties:** For any $a, b \in \mathbb{R}$Exactly one of $a \lt b$, $a = b$ $a \gt b$
+**Ordered field properties:** For any $a, b \in \mathbb{R}$Exactly one of $a \lt b$$a = b$ $a \gt b$
 holds. The order is compatible with addition and multiplication by positive numbers.
 
 ### Irrational Numbers (HL)
@@ -58,7 +58,7 @@ A number is irrational if it cannot be expressed as a ratio of integers.
 
 **Proof that $\sqrt{2}$ is irrational:**
 
-Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{Z}$, $q \neq 0$And the fraction is in Lowest
+Assume $\sqrt{2} = \frac{p}{q}$ where $p, q \in \mathbb{Z}$$q \neq 0$And the fraction is in Lowest
 terms ($\gcd(p, q) = 1$).
 
 Then $p^2 = 2q^2$So $p^2$ is even, which means $p$ is even. Let $p = 2k$. Then $4k^2 = 2q^2$ Giving
@@ -76,7 +76,7 @@ $$
 2r\sqrt{2} = r^2 - 1 \implies \sqrt{2} = \frac{r^2 - 1}{2r}
 $$
 
-Since $r \in \mathbb{Q}$, $\frac{r^2 - 1}{2r} \in \mathbb{Q}$Contradicting the irrationality of
+Since $r \in \mathbb{Q}$$\frac{r^2 - 1}{2r} \in \mathbb{Q}$Contradicting the irrationality of
 $\sqrt{2}$.
 
 **Example:** Prove that $\sqrt{2} \cdot \sqrt{3} = \sqrt{6}$ is irrational.
@@ -97,7 +97,7 @@ This contradicts the irrationality of $\sqrt{2}$.
 
 **Example (HL):** Prove that $\log_2 3$ is irrational.
 
-Assume $\log_2 3 = \frac{p}{q}$ where $p, q \in \mathbb{Z}$, $q \neq 0$In lowest terms. Then
+Assume $\log_2 3 = \frac{p}{q}$ where $p, q \in \mathbb{Z}$$q \neq 0$In lowest terms. Then
 $2^{p/q} = 3$So $2^p = 3^q$.
 
 The left side is even (since $p \ge 1$) but the right side is odd. Contradiction.
@@ -225,7 +225,7 @@ Adding: $2S_n = n(a+l)$So $S_n = \frac{n}{2}(a+l)$.
 
 **Example (OL):** Find the sum of the first 20 terms of 3, 7, 11, 15, ...
 
-Here $a = 3$, $d = 4$, $n = 20$.
+Here $a = 3$$d = 4$$n = 20$.
 
 $$
 S_{20} = \frac{20}{2}[2(3) + 19(4)] = 10(6 + 76) = 820
@@ -278,7 +278,7 @@ $S_n = \frac{a(1-r^n)}{1-r} = \frac{a(r^n-1)}{r-1}$.
 
 **Example (OL):** Find the sum of the first 8 terms of 2, 6, 18, 54, ...
 
-Here $a = 2$, $r = 3$, $n = 8$.
+Here $a = 2$$r = 3$$n = 8$.
 
 $$
 S_8 = \frac{2(3^8 - 1)}{3 - 1} = \frac{2(6561 - 1)}{2} = 6560
@@ -323,7 +323,7 @@ $$
 
 **Example (HL):** Find the sum to infinity of $\frac{1}{2} + \frac{1}{6} + \frac{1}{18} + \cdots$
 
-$a = \frac{1}{2}$, $r = \frac{1/6}{1/2} = \frac{1}{3}$.
+$a = \frac{1}{2}$$r = \frac{1/6}{1/2} = \frac{1}{3}$.
 
 $$
 S_\infty = \frac{1/2}{1 - 1/3} = \frac{1/2}{2/3} = \frac{3}{4}
@@ -565,7 +565,7 @@ $$
 
 A recurrence relation defines each term of a sequence in terms of previous terms.
 
-**Example:** $T_1 = 2$, $T_{n+1} = 3T_n - 1$.
+**Example:** $T_1 = 2$$T_{n+1} = 3T_n - 1$.
 
 $$
 T_1 = 2, \quad T_2 = 5, \quad T_3 = 14, \quad T_4 = 41
@@ -584,7 +584,7 @@ $U_{n+1} = T_{n+1} - L = aT_n + b - L = aT_n + b - \frac{b}{1-a} = aT_n + \frac{
 Since $L = \frac{b}{1-a}$We have $aL = \frac{ab}{1-a}$So $U_{n+1} = aT_n - aL = aU_n$. This is a
 Geometric sequence with ratio $a$.
 
-**Example:** Solve $T_1 = 3$, $T_{n+1} = 2T_n + 5$.
+**Example:** Solve $T_1 = 3$$T_{n+1} = 2T_n + 5$.
 
 Fixed point: $L = \frac{5}{1 - 2} = -5$.
 
@@ -592,7 +592,7 @@ $$
 T_n = -5 + (3 - (-5)) \cdot 2^{n-1} = -5 + 8 \cdot 2^{n-1} = -5 + 2^{n+2}
 $$
 
-**Example (HL):** Solve $T_1 = 1$, $T_{n+1} = 4T_n - 3$.
+**Example (HL):** Solve $T_1 = 1$$T_{n+1} = 4T_n - 3$.
 
 Fixed point: $L = \frac{-3}{1 - 4} = 1$.
 
@@ -600,7 +600,7 @@ $$
 T_n = 1 + (1 - 1) \cdot 4^{n-1} = 1
 $$
 
-Indeed: $T_2 = 4(1) - 3 = 1$, $T_3 = 4(1) - 3 = 1$Etc. The sequence is constant at 1, which is the
+Indeed: $T_2 = 4(1) - 3 = 1$$T_3 = 4(1) - 3 = 1$Etc. The sequence is constant at 1, which is the
 Fixed point.
 
 ### Second Order Recurrence Relations (HL - awareness)
@@ -608,7 +608,7 @@ Fixed point.
 A second-order linear recurrence $T_{n+2} = aT_{n+1} + bT_n$ with constant coefficients is solved by
 Finding the roots of the characteristic equation $\lambda^2 - a\lambda - b = 0$.
 
-**Example:** The Fibonacci sequence $F_1 = 1$, $F_2 = 1$, $F_{n+2} = F_{n+1} + F_n$.
+**Example:** The Fibonacci sequence $F_1 = 1$$F_2 = 1$$F_{n+2} = F_{n+1} + F_n$.
 
 Characteristic equation: $\lambda^2 - \lambda - 1 = 0$.
 
@@ -663,7 +663,7 @@ See the examples integrated throughout the sections above.
 1. Prove that $\sqrt{3}$ is irrational.
 2. Find the sum to infinity of $\frac{1}{2} + \frac{1}{6} + \frac{1}{18} + \cdots$
 3. Evaluate $\sum_{r=1}^{100} (2r^2 - r)$.
-4. Solve the recurrence relation $T_1 = 1$, $T_{n+1} = 4T_n - 3$. Find a closed form for $T_n$.
+4. Solve the recurrence relation $T_1 = 1$$T_{n+1} = 4T_n - 3$. Find a closed form for $T_n$.
 5. EUR 2000 is invested at 3.5% per annum compounded monthly. Find the amount after 5 years.
 6. Prove De Morgan's second law: $(A \cap B)' = A' \cup B'$.
 7. Evaluate $\lim_{n \to \infty} \frac{n^3 + 2n}{4n^3 - n + 1}$.
@@ -681,7 +681,7 @@ See the examples integrated throughout the sections above.
 17. Prove that $n! > 2^n$ for all $n \ge 4$ by induction.
 18. A loan of EUR 150,000 is repaid over 20 years at a monthly rate of 0.4%. Find the monthly
     repayment and the total amount paid.
-19. The first three terms of a geometric sequence are $x - 2$, $x + 2$And $x + 8$. Find $x$ and the
+19. The first three terms of a geometric sequence are $x - 2$$x + 2$And $x + 8$. Find $x$ and the
     common ratio.
 20. Prove that the sum of an odd number and an even number is always odd.
 
@@ -692,7 +692,7 @@ See the examples integrated throughout the sections above.
     $\frac{2}{3} + \frac{1}{3} + \frac{1}{6} + \frac{1}{12} + \cdots$
 23. Evaluate $\sum_{r=1}^{n} (r+1)(r+2)$.
 24. Prove by induction that $n^2 + n$ is even for all positive integers $n$.
-25. Solve $T_1 = 5$, $T_{n+1} = \frac{1}{2}T_n + 3$ and find $\lim_{n \to \infty} T_n$.
+25. Solve $T_1 = 5$$T_{n+1} = \frac{1}{2}T_n + 3$ and find $\lim_{n \to \infty} T_n$.
 26. A geometric sequence has first term 3 and common ratio $\frac{2}{3}$. Find the smallest value of
     $n$ such that $T_n < 0.1$.
 27. Prove that there are infinitely many prime numbers (Euclid's proof).

@@ -736,7 +736,7 @@ def dfs_iterative(graph, start):
 ## Topological Sort
 
 A topological ordering of a DAG is a linear ordering of vertices such that for every directed edge
-$u \to v$, $u$ comes before $v$ in the ordering.
+$u \to v$$u$ comes before $v$ in the ordering.
 
 ```python
 def topological_sort_kahn(graph):

@@ -39,7 +39,7 @@ $$
 <summary>Examples</summary>
 - Distance between $A(3, 4)$ and $B(7, 1)$: $d = \sqrt{(7-3)^2 + (1-4)^2} = \sqrt{16 + 9} = 5$
 - Distance between $O(0, 0)$ and $P(5, 12)$: $d = \sqrt{5^2 + 12^2} = 13$
-- Verify that the points $A(0, 0)$, $B(3, 4)$, $C(6, 8)$ are collinear: $AB = 5$, $BC = 5$, $AC = 10$. Since $AB + BC = AC$The points are collinear.
+- Verify that the points $A(0, 0)$$B(3, 4)$$C(6, 8)$ are collinear: $AB = 5$$BC = 5$$AC = 10$. Since $AB + BC = AC$The points are collinear.
 
 ### Midpoint Formula
 
@@ -154,7 +154,7 @@ $$
 \end{aligned}
 $$
 
-Where $A$, $B$, $C$ are constants and $A$ and $B$ are not both zero. The gradient is $m = -\frac{A}{B}$
+Where $A$$B$$C$ are constants and $A$ and $B$ are not both zero. The gradient is $m = -\frac{A}{B}$
 and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
 
 </details>
@@ -220,7 +220,7 @@ The intersection satisfy both equations.
 
 </details>
 <summary>Examples</summary>
-- Find the intersection of $x + y = 5$ and $2x - y = 1$: Adding gives $3x = 6$So $x = 2$, $y = 3$. The intersection is $(2, 3)$.
+- Find the intersection of $x + y = 5$ and $2x - y = 1$: Adding gives $3x = 6$So $x = 2$$y = 3$. The intersection is $(2, 3)$.
 
 ## Circles
 
@@ -341,7 +341,7 @@ $$
 \end{aligned}
 $$
 
-Using the [Heron's formula](trigonometry)) for a triangle with side lengths $a$, $b$, $c$ and
+Using the [Heron's formula](trigonometry)) for a triangle with side lengths $a$$b$$c$ and
 Semi-perimeter $s = \frac{a+b+c}{2}$:
 
 $$
@@ -350,7 +350,7 @@ $$
 \end{aligned}
 $$
 
-The area of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$ is given by:
+The area of a triangle with vertices $(x_1, y_1)$$(x_2, y_2)$$(x_3, y_3)$ is given by:
 
 $$
 \begin{aligned}
@@ -363,9 +363,9 @@ $$
 | Figure                                        | Area                 | Perimeter        |
 | --------------------------------------------- | -------------------- | ---------------- |
 | Rectangle ($l \times w$)                      | $lw$                 | $2(l+w)$         |
-| Parallelogram ($b$, $h$)                        | $bh$                 | $2(a+b)$         |
-| Rhombus (diagonals $d_1$, $d_2$)                | $\frac{1}{2}d_1 d_2$ | $4s$             |
-| Trapezium (parallel sides $a$, $b$; height $h$) | $\frac{1}{2}(a+b)h$  | Sum of all sides |
+| Parallelogram ($b$$h$)                        | $bh$                 | $2(a+b)$         |
+| Rhombus (diagonals $d_1$$d_2$)                | $\frac{1}{2}d_1 d_2$ | $4s$             |
+| Trapezium (parallel sides $a$$b$; height $h$) | $\frac{1}{2}(a+b)h$  | Sum of all sides |
 | Square (side $s$)                             | $s^2$                | $4s$             |
 
 ### Circles
@@ -404,7 +404,7 @@ $$
 <details>
 <summary>Examples</summary>
 - Find the area and perimeter of a sector of radius $7\mathrm{ cm}$ with angle $120^\circ$: $\theta = \frac{2\pi}{3}$ rad. Area $= \frac{1}{2}(49)\left(\frac{2\pi}{3}\right) = \frac{49\pi}{3} \approx 51.3\mathrm{ cm}^2$. Arc length $= 7 \times \frac{2\pi}{3} = \frac{14\pi}{3} \approx 14.7\mathrm{ cm}$. Perimeter $= 14 + \frac{14\pi}{3} \approx 28.7\mathrm{ cm}$.
-- A chord of length $8\mathrm{ cm}$ subtends an angle of $90^\circ$ at the centre. Find the area of the minor segment: $r = \frac{8}{\sqrt{2}} = 4\sqrt{2}\mathrm{ cm}$, $\theta = \frac{\pi}{2}$. Area $= \frac{1}{2}(32)\left(\frac{\pi}{2} - 1\right) = 16\left(\frac{\pi}{2} - 1\right) = 8\pi - 16 \approx 9.13\mathrm{ cm}^2$.
+- A chord of length $8\mathrm{ cm}$ subtends an angle of $90^\circ$ at the centre. Find the area of the minor segment: $r = \frac{8}{\sqrt{2}} = 4\sqrt{2}\mathrm{ cm}$$\theta = \frac{\pi}{2}$. Area $= \frac{1}{2}(32)\left(\frac{\pi}{2} - 1\right) = 16\left(\frac{\pi}{2} - 1\right) = 8\pi - 16 \approx 9.13\mathrm{ cm}^2$.
 
 ## 3D Geometry
 
@@ -436,7 +436,7 @@ $$
 </details>
 <summary>Examples</summary>
 - Distance between $A(1, 2, 3)$ and $B(4, 6, -3)$: $d = \sqrt{3^2 + 4^2 + (-6)^2} = \sqrt{9 + 16 + 36} = \sqrt{61}$
-- Show that $A(0, 0, 0)$, $B(1, 0, 0)$, $C(0, 1, 0)$, $D(0, 0, 1)$ form a **trirectangular tetrahedron**: $AB = AC = AD = 1$ (edges from the origin) and $BC = BD = CD = \sqrt{2}$ (edges of the base triangle $BCD$). It is not a regular tetrahedron — a regular tetrahedron would require all six edges to be equal. For a regular tetrahedron, use vertices such as $(1,1,1)$, $(1,-1,-1)$, $(-1,1,-1)$, $(-1,-1,1)$.
+- Show that $A(0, 0, 0)$$B(1, 0, 0)$$C(0, 1, 0)$$D(0, 0, 1)$ form a **trirectangular tetrahedron**: $AB = AC = AD = 1$ (edges from the origin) and $BC = BD = CD = \sqrt{2}$ (edges of the base triangle $BCD$). It is not a regular tetrahedron — a regular tetrahedron would require all six edges to be equal. For a regular tetrahedron, use vertices such as $(1,1,1)$$(1,-1,-1)$$(-1,1,-1)$$(-1,-1,1)$.
 
 ### Equation of a Plane
 
@@ -460,7 +460,7 @@ $$
 \end{aligned}
 $$
 
-- **Intercept form**: If the plane has $x$-intercept $a$, $y$-intercept $b$And $z$-intercept $c$ (all
+- **Intercept form**: If the plane has $x$-intercept $a$$y$-intercept $b$And $z$-intercept $c$ (all
   non-zero):
 
 $$
@@ -519,7 +519,7 @@ $$
 <summary>Examples</summary>
 - Find the distance from $P(1, 2, -1)$ to the plane $2x - y + 2z + 3 = 0$: $d = \frac{|2(1) - 1(2) + 2(-1) + 3|}{\sqrt{4 + 1 + 4}} = \frac{|2 - 2 - 2 + 3|}{3} = \frac{1}{3}$.
 - Find the angle between the planes $x + y + z = 1$ and $2x - y + z = 0$: $\cos\theta = \frac{|1\cdot 2 + 1\cdot(-1) + 1\cdot 1|}{\sqrt{3}\sqrt{6}} = \frac{2}{3\sqrt{2}} = \frac{\sqrt{2}}{3}$. So $\theta = \arccos\left(\frac{\sqrt{2}}{3}\right) \approx 61.9^\circ$.
-- Find the equation of the plane through $(1, 0, 2)$, $(0, 1, -1)$And $(2, 1, 1)$: direction vectors $\overrightarrow{AB} = (-1, 1, -3)$ and $\overrightarrow{AC} = (1, 1, -1)$. Cross product: $\overrightarrow{AB} \times \overrightarrow{AC} = (2, -4, -2)$So normal $\mathbf{n} = (1, -2, -1)$. The plane is $x - 2y - z = -1$.
+- Find the equation of the plane through $(1, 0, 2)$$(0, 1, -1)$And $(2, 1, 1)$: direction vectors $\overrightarrow{AB} = (-1, 1, -3)$ and $\overrightarrow{AC} = (1, 1, -1)$. Cross product: $\overrightarrow{AB} \times \overrightarrow{AC} = (2, -4, -2)$So normal $\mathbf{n} = (1, -2, -1)$. The plane is $x - 2y - z = -1$.
 
 ---
 
@@ -571,7 +571,7 @@ Chord length is $20\mathrm{ cm}$.
 - Area of sector:
   $A = \frac{1}{2}r^2\theta = \frac{1}{2}(144)\left(\frac{4\pi}{3}\right) = 96\pi \mathrm{ cm}^2$.
 - Area of triangle formed by the radii and chord: Using the chord length $c = 20$The triangle has
-  sides $12$, $12$, $20$. Semi-perimeter $s = 22$. By Heron's formula: Area
+  sides $12$$12$$20$. Semi-perimeter $s = 22$. By Heron's formula: Area
   $= \sqrt{22 \times 10 \times 10 \times 2} = \sqrt{4400} = 20\sqrt{11} \mathrm{ cm}^2$.
 - Alternatively, the perpendicular from centre to chord: $h = \sqrt{12^2 - 10^2} = 2\sqrt{11}$.
   Triangle area $= \frac{1}{2} \times 20 \times 2\sqrt{11} = 20\sqrt{11}$.
@@ -590,7 +590,7 @@ $x + y + z = 1$.
   $\phi = 90^\circ - 0^\circ = 90^\circ$.
 - The line is parallel to the plane (perpendicular to the normal).
 
-6. **Question:** Points $A(1, 2)$, $B(4, 6)$And $C(7, 4)$ are vertices of a triangle. Find the
+6. **Question:** Points $A(1, 2)$$B(4, 6)$And $C(7, 4)$ are vertices of a triangle. Find the
 Equation of the altitude from $A$ to $BC$The area of triangle $ABC$And the length of the Altitude
 from $A$.
 <details>
@@ -620,7 +620,7 @@ Through $(1, 4)$.
 - Equation: $(x-3)^2 + \left(y - \frac{5}{2}\right)^2 = \frac{25}{4}$I.e.,
   $x^2 + y^2 - 6x - 5y + 9 = 0$.
 
-8. **Question:** The vertices of a triangle are $A(2, 1, -1)$, $B(0, 3, -4)$And $C(5, 0, 2)$. Find (a)
+8. **Question:** The vertices of a triangle are $A(2, 1, -1)$$B(0, 3, -4)$And $C(5, 0, 2)$. Find (a)
 the length of each side, (b) the area of the triangle, and (c) the equation of the plane Containing
 the triangle.
 <details>
@@ -654,10 +654,10 @@ Chord $AB$ and the coordinates of $A$ and $B$.
 - $25x^2 - 10x + 145 = 144$.
 - $25x^2 - 10x + 1 = 0$.
 - Discriminant $= 100 - 100 = 0$So the circles are tangent (touch at exactly one point).
-- $x = \frac{10}{50} = \frac{1}{5}$, $y = \frac{3(1/5) + 5}{4} = \frac{28}{20} = \frac{7}{5}$.
+- $x = \frac{10}{50} = \frac{1}{5}$$y = \frac{3(1/5) + 5}{4} = \frac{28}{20} = \frac{7}{5}$.
 - The circles touch at $\left(\frac{1}{5}, \frac{7}{5}\right)$.
 
-10. **Question:** A rectangle $ABCD$ has vertices $A(1, 1)$, $B(5, 1)$And $C(5, 4)$. Find the
+10. **Question:** A rectangle $ABCD$ has vertices $A(1, 1)$$B(5, 1)$And $C(5, 4)$. Find the
 Coordinates of $D$ and the area of the rectangle.
 <details>
 <summary>Answer</summary>
@@ -682,7 +682,7 @@ $10\mathrm{ cm}$. A sector is cut from a circular sheet of metal to form the cur
 - (c) Area of sector:
   $A = \frac{1}{2}r^2\theta = \frac{1}{2}(100)\left(\frac{6\pi}{5}\right) = 60\pi \mathrm{ cm}^2$.
 
-12. **Question:** Prove that the points $A(-2, 0)$, $B(0, 4)$, $C(6, 2)$And $D(4, -2)$ are the Vertices
+12. **Question:** Prove that the points $A(-2, 0)$$B(0, 4)$$C(6, 2)$And $D(4, -2)$ are the Vertices
 of a rectangle. Find the equation of the circle passing through all four vertices.
 <details>
 <summary>Answer</summary>
@@ -690,7 +690,7 @@ of a rectangle. Find the equation of the circle passing through all four vertice
 - Midpoint of $AC = \left(\frac{-2+6}{2}, \frac{0+2}{2}\right) = (2, 1)$.
 - Midpoint of $BD = \left(\frac{0+4}{2}, \frac{4+(-2)}{2}\right) = (2, 1)$.
 - Since the diagonals bisect each other, $ABCD$ is a parallelogram.
-- $AB = \sqrt{4 + 16} = 2\sqrt{5}$, $BC = \sqrt{36 + 4} = 2\sqrt{10}$
+- $AB = \sqrt{4 + 16} = 2\sqrt{5}$$BC = \sqrt{36 + 4} = 2\sqrt{10}$
   $AC = \sqrt{64 + 4} = 2\sqrt{17}$.
 - $AB^2 + BC^2 = 20 + 40 = 60 = AC^2$. The parallelogram has a right angle, so $ABCD$ is a
   rectangle.
@@ -800,7 +800,7 @@ $(1, 2, 3) = (4, 5, 6) + (-1)(1, 1, 1)$. So $P$ is on the line and the distance 
 
 **Worked Example 16: 3D tetrahedron volume**
 
-Find the volume of the tetrahedron with vertices $A(0, 0, 0)$, $B(2, 0, 0)$, $C(0, 3, 0)$, $D(0, 0, 4)$.
+Find the volume of the tetrahedron with vertices $A(0, 0, 0)$$B(2, 0, 0)$$C(0, 3, 0)$$D(0, 0, 4)$.
 
 <details>
 <summary>Solution</summary>
@@ -826,7 +826,7 @@ Find the angle between the lines joining $A(1, 0, 0)$ to $B(0, 1, 0)$ and $A$ to
 <details>
 <summary>Solution</summary>
 
-$\overrightarrow{AB} = (-1, 1, 0)$, $\overrightarrow{AC} = (-1, 0, 1)$.
+$\overrightarrow{AB} = (-1, 1, 0)$$\overrightarrow{AC} = (-1, 0, 1)$.
 
 $$\cos\theta = \frac{|(-1)(-1) + (1)(0) + (0)(1)|}{\sqrt{1 + 1 + 0} \cdot \sqrt{1 + 0 + 1}} = \frac{1}{\sqrt{2}\sqrt{2}} = \frac{1}{2}$$
 
@@ -845,7 +845,7 @@ First verify $(5, 1)$ lies on the circle: $25 + 1 - 20 + 6 - 12 = 0$. Confirmed.
 
 Using the tangent formula for the general circle equation $x^2 + y^2 + Dx + Ey + F = 0$:
 
-Replace $x^2 \to x \cdot 5$, $y^2 \to y \cdot 1$, $x \to \dfrac{x + 5}{2}$, $y \to \dfrac{y + 1}{2}$:
+Replace $x^2 \to x \cdot 5$$y^2 \to y \cdot 1$$x \to \dfrac{x + 5}{2}$$y \to \dfrac{y + 1}{2}$:
 
 $$5x + y - 4\cdot\frac{x + 5}{2} + 6\cdot\frac{y + 1}{2} - 12 = 0$$
 
@@ -879,7 +879,7 @@ Equation: $x^2 + (y - 2)^2 = 4$Or $x^2 + y^2 - 4y = 0$.
 
 </details>
 
-**DSE Practice 2.** In $\triangle ABC$, $A = (1, -2)$, $B = (5, 4)$And $C = (8, 1)$. Find the equation
+**DSE Practice 2.** In $\triangle ABC$$A = (1, -2)$$B = (5, 4)$And $C = (8, 1)$. Find the equation
 of the median from $A$ and the equation of the altitude from $B$.
 
 <details>
@@ -921,7 +921,7 @@ at $A$ and $B$. Find the length of the common chord $AB$.
 <details>
 <summary>Solution</summary>
 
-Centres: $O_1 = (1, 0)$, $O_2 = (5, 0)$. Radii: $r_1 = 3$, $r_2 = 5$.
+Centres: $O_1 = (1, 0)$$O_2 = (5, 0)$. Radii: $r_1 = 3$$r_2 = 5$.
 
 Distance between centres: $d = 4$.
 
@@ -959,7 +959,7 @@ $$\theta = \arccos\!\left(\frac{4}{9}\right) \approx 63.6^\circ$$
 
 </details>
 
-**DSE Practice 6.** A pyramid has a rectangular base $ABCD$ with $AB = 8$, $BC = 6$. The vertex $V$ is
+**DSE Practice 6.** A pyramid has a rectangular base $ABCD$ with $AB = 8$$BC = 6$. The vertex $V$ is
 directly above the centre of the base, and $VA = 10$. Find the angle between the face $VAB$ and the
 base $ABCD$.
 
@@ -968,7 +968,7 @@ base $ABCD$.
 
 The centre of the rectangle is $O = (4, 3, 0)$ (taking $A$ at the origin).
 
-$VA = 10$, $OA = \sqrt{4^2 + 3^2} = 5$.
+$VA = 10$$OA = \sqrt{4^2 + 3^2} = 5$.
 
 $VO = \sqrt{VA^2 - OA^2} = \sqrt{100 - 25} = \sqrt{75} = 5\sqrt{3}$.
 
@@ -1003,7 +1003,7 @@ The point of contact: the foot of the perpendicular from $(0,0)$ to $3x + 4y = 2
 
 $3x + 4y = 25$ and $y = \dfrac{3}{4}x$ (the perpendicular from the origin).
 
-$3x + 4 \cdot \dfrac{3}{4}x = 25 \implies 6x = 25 \implies x = \dfrac{25}{6}$, $y = \dfrac{25}{8}$.
+$3x + 4 \cdot \dfrac{3}{4}x = 25 \implies 6x = 25 \implies x = \dfrac{25}{6}$$y = \dfrac{25}{8}$.
 
 Point of tangency: $\left(\dfrac{25}{6}, \dfrac{25}{8}\right)$.
 

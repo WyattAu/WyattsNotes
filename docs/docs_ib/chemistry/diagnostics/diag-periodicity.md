@@ -35,7 +35,7 @@ remove.
 ### UT-2: Atomic and Ionic Radii Comparison
 
 **Question:** Arrange the following species in order of increasing ionic/atomic radius and justify
-each placement: $\text{O}^{2-}$, $\text{F}^-$, $\text{Na}^+$, $\text{Mg}^{2+}$. All are isoelectronic (10
+each placement: $\text{O}^{2-}$$\text{F}^-$$\text{Na}^+$$\text{Mg}^{2+}$. All are isoelectronic (10
 electrons).
 
 **Solution:** Increasing radius: $\text{Mg}^{2+} \lt \text{Na}^+ \lt \text{F}^- \lt \text{O}^{2-}$.
@@ -127,7 +127,7 @@ ionisation energy and lower melting point.
 ### IT-3: Electronegativity Trends and Acid Strength (with Acids and Bases)
 
 **Question:** Across period 3, the hydrides are:
-$\text{NaH}$, $\text{MgH}_2$, $\text{AlH}_3$, $\text{SiH}_4$, $\text{PH}_3$, $\text{H}_2\text{S}$HCl. Use
+$\text{NaH}$$\text{MgH}_2$$\text{AlH}_3$$\text{SiH}_4$$\text{PH}_3$$\text{H}_2\text{S}$HCl. Use
 electronegativity trends to predict and explain which of these behave as acids, which as bases, and
 which are essentially neutral in water.
 

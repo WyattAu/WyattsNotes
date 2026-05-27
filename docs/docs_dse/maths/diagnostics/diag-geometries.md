@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-In the figure, $A$, $B$, $C$ are points on a circle with centre $O$. If $\angle ABC = 35°$ and
+In the figure, $A$$B$$C$ are points on a circle with centre $O$. If $\angle ABC = 35°$ and
 $\angle BAC = 70°$Find $\angle AOC$.
 
 **Solution:**
@@ -79,7 +79,7 @@ $\angle B + \angle D = 180° \implies \angle D = 145°$.
 
 **Question:**
 
-Let $\vec{OA} = \mathbf{a}$, $\vec{OB} = \mathbf{b}$. Point $P$ divides $AB$ in the ratio $2:1$ and
+Let $\vec{OA} = \mathbf{a}$$\vec{OB} = \mathbf{b}$. Point $P$ divides $AB$ in the ratio $2:1$ and
 point $Q$ divides $AB$ in the ratio $3:2$. Express $\vec{PQ}$ in terms of $\mathbf{a}$ and
 $\mathbf{b}$.
 
@@ -110,7 +110,7 @@ equidistant from all three vertices.
 
 Place the right angle at the origin, with the legs along the axes.
 
-Let $A = (0, 0)$, $B = (2a, 0)$, $C = (0, 2b)$.
+Let $A = (0, 0)$$B = (2a, 0)$$C = (0, 2b)$.
 
 Right angle at $A$Hypotenuse is $BC$.
 
@@ -134,7 +134,7 @@ Since $MA = MB = MC$The midpoint of the hypotenuse is equidistant from all three
 
 **Question:**
 
-In triangle $ABC$, $AB = 10$ cm, $BC = 8$ cm, $CA = 6$ cm. Find the radius of the circumscribed
+In triangle $ABC$$AB = 10$ cm, $BC = 8$ cm, $CA = 6$ cm. Find the radius of the circumscribed
 circle.
 
 **Solution:**
@@ -153,7 +153,7 @@ Radius $= \dfrac{AB}{2} = \dfrac{10}{2} = 5$ cm.
 
 The position vectors of $A$ and $B$ are $\mathbf{a} = 2\mathbf{i} + 3\mathbf{j}$ and
 $\mathbf{b} = 8\mathbf{i} - \mathbf{j}$. Point $C$ has position vector
-$\mathbf{c} = 4\mathbf{i} + 7\mathbf{j}$. Prove that $A$, $B$, $C$ form an isosceles triangle.
+$\mathbf{c} = 4\mathbf{i} + 7\mathbf{j}$. Prove that $A$$B$$C$ form an isosceles triangle.
 
 **Solution:**
 
@@ -169,7 +169,7 @@ $$\vec{BC} = \mathbf{c} - \mathbf{b} = -4\mathbf{i} + 8\mathbf{j}$$
 
 $$|\vec{BC}| = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{5}$$
 
-$|\vec{AB}| = 2\sqrt{13}$, $|\vec{AC}| = 2\sqrt{5}$, $|\vec{BC}| = 4\sqrt{5}$.
+$|\vec{AB}| = 2\sqrt{13}$$|\vec{AC}| = 2\sqrt{5}$$|\vec{BC}| = 4\sqrt{5}$.
 
 None are equal, so this is **not** isosceles. Verifying:
 $|\vec{AC}|^2 + |\vec{BC}|^2 = 20 + 80 = 100 \neq 52 = |\vec{AB}|^2$Confirming it is also not
@@ -183,7 +183,7 @@ Right-angled. The triangle is **scalene**.
 
 **Question:**
 
-The points $(1, 2)$, $(3, 6)$And $(k, 10)$ are collinear. Find $k$.
+The points $(1, 2)$$(3, 6)$And $(k, 10)$ are collinear. Find $k$.
 
 **Solution:**
 
@@ -247,7 +247,7 @@ $$AB = 2 \times AM = 10\sqrt{3} \text{ cm}$$
 
 **Question:**
 
-In triangle $ABC$, $D$ is a point on $BC$ such that $AD$ bisects $\angle BAC$. If $AD = AB$Prove that
+In triangle $ABC$$D$ is a point on $BC$ such that $AD$ bisects $\angle BAC$. If $AD = AB$Prove that
 $ABCD$ is a cyclic quadrilateral.
 
 **Solution:**
@@ -347,7 +347,7 @@ $$\vec{AD} = \vec{AB} + \frac{1}{2}(-\vec{AB} + \vec{AC}) = \vec{AB} - \frac{1}{
 
 **Question:**
 
-Find the equation of the circle passing through the points $(0, 0)$, $(4, 0)$And $(0, 6)$.
+Find the equation of the circle passing through the points $(0, 0)$$(4, 0)$And $(0, 6)$.
 
 **Solution:**
 
@@ -407,7 +407,7 @@ $$x = 25°$$
 
 4. **Incorrect vector notation in geometry ./1-number-and-algebra/3_proof-and-logics.** When writing
    vector ./1-number-and-algebra/3_proof-and-logics, always use position vectors (e.g.
-   $\vec{OA}$, $\vec{OB}$) or define your notation. Mixing free vectors and position vectors leads to
+   $\vec{OA}$$\vec{OB}$) or define your notation. Mixing free vectors and position vectors leads to
    sign errors.
 
 5. **Not rationalising the denominator in coordinate geometry answers.** In DSE, answers involving
@@ -444,7 +444,7 @@ Since $ABCD$ is cyclic: $\angle ADC = 180° - \angle ABC = 180° - 65° = 115°$
 
 ### DSE-2
 
-The vertices of triangle $ABC$ are $A(1, 2)$, $B(5, 4)$And $C(3, 8)$.
+The vertices of triangle $ABC$ are $A(1, 2)$$B(5, 4)$And $C(3, 8)$.
 
 (a) Find the equation of the perpendicular bisector of $AB$. (4 marks) (b) The perpendicular
 bisector of $AB$ meets the perpendicular bisector of $AC$ at point $O$. Find the coordinates of
@@ -482,7 +482,7 @@ Circumcentre: $O = (2, 5)$.
 
 ### DSE-3
 
-In triangle $PQR$, $PQ = 7$ cm, $PR = 5$ cm, and $\angle QPR = 60°$.
+In triangle $PQR$$PQ = 7$ cm, $PR = 5$ cm, and $\angle QPR = 60°$.
 
 (a) Find $QR$. (3 marks) (b) Find the area of triangle $PQR$. (2 marks) (c) Find the length of the
 perpendicular from $P$ to $QR$. (2 marks)
@@ -509,11 +509,11 @@ $$h = \frac{35\sqrt{3}}{2\sqrt{39}} = \frac{35\sqrt{3}}{2\sqrt{39}} \cdot \frac{
 
 ### DSE-4
 
-The position vectors of points $A$, $B$, $C$ are $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ respectively.
+The position vectors of points $A$$B$$C$ are $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ respectively.
 Point $D$ is such that $\vec{AD} = \dfrac{1}{3}\vec{AC}$.
 
 (a) Express $\vec{OD}$ in terms of $\mathbf{a}$ and $\mathbf{c}$. (1 mark) (b) If $E$ is the
-midpoint of $BC$Prove that $A$, $D$, $E$ are collinear. (4 marks)
+midpoint of $BC$Prove that $A$$D$$E$ are collinear. (4 marks)
 
 **Solution:**
 
@@ -528,7 +528,7 @@ $$\vec{AE} = \vec{OE} - \vec{OA} = \frac{1}{2}(\mathbf{b} + \mathbf{c}) - \mathb
 $$\vec{AD} = \frac{1}{3}(\mathbf{c} - \mathbf{a})$$
 
 For collinearity, $\vec{AE}$ must be a scalar multiple of $\vec{AD}$. This requires more information
-about the relationship between $\mathbf{a}$, $\mathbf{b}$And $\mathbf{c}$. If $D$ divides $AE$ in some
+about the relationship between $\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$. If $D$ divides $AE$ in some
 ratio, we can show:
 
 $\vec{AD} = \dfrac{1}{3}\vec{AC}$ means $D$ divides $AC$ in ratio $1:2$.

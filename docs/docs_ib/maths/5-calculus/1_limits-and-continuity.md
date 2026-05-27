@@ -38,8 +38,8 @@ $$\lim_{x \to a} f(x) = L \iff \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L
 
 ### Indeterminate Forms
 
-Expressions of the form $\dfrac{0}{0}$, $\dfrac{\infty}{\infty}$, $0 \cdot \infty$
-$\infty - \infty$, $1^\infty$, $0^0$And $\infty^0$ are **indeterminate** — the limit may or may Not
+Expressions of the form $\dfrac{0}{0}$$\dfrac{\infty}{\infty}$$0 \cdot \infty$
+$\infty - \infty$$1^\infty$$0^0$And $\infty^0$ are **indeterminate** — the limit may or may Not
 exist, and algebraic manipulation or l'H\^opital's rule is required.
 
 ### Common Limits
@@ -293,7 +293,7 @@ Exponential. Choose $u$ as the function that appears highest on this list.
 
 **Example.** Evaluate $\displaystyle\int x e^x\,dx$.
 
-Let $u = x$, $dv = e^x\,dx$. Then $du = dx$, $v = e^x$:
+Let $u = x$$dv = e^x\,dx$. Then $du = dx$$v = e^x$:
 
 $$\int x e^x\,dx = xe^x - \int e^x\,dx = xe^x - e^x + C = (x - 1)e^x + C$$
 
@@ -394,7 +394,7 @@ Evaluate $\displaystyle\int x^2 e^{-x}\,dx$ using integration by parts.
 <details>
 <summary>Problem 6</summary>
 
-Find the volume generated when the region bounded by $y = \sqrt{x}$, $x = 4$And the $x$-axis is
+Find the volume generated when the region bounded by $y = \sqrt{x}$$x = 4$And the $x$-axis is
 Rotated $360^\circ$ about the $x$-axis.
 
 </details>
@@ -426,11 +426,11 @@ $\dfrac{dy}{dx} = \dfrac{y - x^2}{y^2 - x}$.
 
 **Problem 3:** Let base side $= x$ and height $= h$. Surface area: $2x^2 + 4xh = 150$So
 $h = \dfrac{75 - x^2}{2x}$. Volume $V = x^2 h = \dfrac{75x - x^3}{2}$. Setting
-$\dfrac{dV}{dx} = \dfrac{75 - 3x^2}{2} = 0$ gives $x = 5\;\mathrm{cm}$, $h = 5\;\mathrm{cm}$. Second
+$\dfrac{dV}{dx} = \dfrac{75 - 3x^2}{2} = 0$ gives $x = 5\;\mathrm{cm}$$h = 5\;\mathrm{cm}$. Second
 Derivative $V'' = -3x$ is negative at $x = 5$Confirming a maximum. Maximum volume is
 $125\;\mathrm{cm^3}$.
 
-**Problem 4:** Let $u = x^2 + 1$, $du = 2x\,dx$.
+**Problem 4:** Let $u = x^2 + 1$$du = 2x\,dx$.
 $\displaystyle\int_0^1 \frac{x}{\sqrt{x^2 + 1}}\,dx = \frac{1}{2}\int_1^2 u^{-1/2}\,du = \left[\sqrt{u}\right]_1^2 = \sqrt{2} - 1$.
 
 **Problem 5:** Using tabular integration: differentiate $x^2 \to 2x \to 2 \to 0$Integrate
@@ -444,7 +444,7 @@ $\displaystyle\int_1^\infty \frac{1}{x}\,dx = \lim_{b \to \infty} \ln b = \infty
 $0 \lt p \lt 1$: $x^{1-p} \to \infty$ (diverges). Converges if and only if $p \gt 1$.
 
 **Problem 8:** $f(1) = -1 \lt 0$ and $f(2) = 3 \gt 0$. By the Intermediate Value Theorem, a root
-Exists in $(1, 2)$. Since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) \gt 0$ for all $x \in (1, 2)$, $f$ is
+Exists in $(1, 2)$. Since $f'(x) = 3x^2 - 3 = 3(x-1)(x+1) \gt 0$ for all $x \in (1, 2)$$f$ is
 Strictly increasing on $[1, 2]$So the root is unique.
 
 </details>
@@ -508,7 +508,7 @@ Evaluate $\displaystyle\int_0^{\pi/2} x \cos x\,dx$.
 <details>
 <summary>Solution</summary>
 
-Let $u = x$, $dv = \cos x\,dx$. Then $du = dx$, $v = \sin x$.
+Let $u = x$$dv = \cos x\,dx$. Then $du = dx$$v = \sin x$.
 
 $$\int_0^{\pi/2} x \cos x\,dx = \bigl[x \sin x\bigr]_0^{\pi/2} - \int_0^{\pi/2} \sin x\,dx$$
 
@@ -518,7 +518,7 @@ $$= \frac{\pi}{2} \cdot 1 - 0 - \bigl[-\cos x\bigr]_0^{\pi/2} = \frac{\pi}{2} - 
 
 **Worked Example: Volume of Revolution with Shells**
 
-Find the volume generated when the region bounded by $y = x^2$, $y = 0$And $x = 2$ is rotated
+Find the volume generated when the region bounded by $y = x^2$$y = 0$And $x = 2$ is rotated
 $360^\circ$ About the $y$-axis.
 
 <details>
@@ -548,7 +548,7 @@ $$\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}$$
 At $(3, 3)$: $\dfrac{dy}{dx} = \dfrac{6 - 9}{9 - 6} = \dfrac{-3}{3} = -1$.
 
 For the second derivative, differentiate $\dfrac{dy}{dx}$ using the quotient rule, then substitute
-$x = 3$, $y = 3$And $\dfrac{dy}{dx} = -1$. Alternatively, start from
+$x = 3$$y = 3$And $\dfrac{dy}{dx} = -1$. Alternatively, start from
 
 $$(3y^2 - 6x)\frac{dy}{dx} = 6y - 3x^2$$
 
@@ -653,7 +653,7 @@ $\displaystyle\int_0^1 \frac{x}{x^2 + 4}\,dx = \dfrac{1}{2}\ln\!\left(\dfrac{5}{
 
 **Problem 9:** Write
 $\left(\dfrac{3x+1}{2x-5}\right)^x = \exp\!\left(x \ln\dfrac{3x+1}{2x-5}\right)$. As
-$x \to \infty$, $\dfrac{3x+1}{2x-5} \to \dfrac{3}{2}$And
+$x \to \infty$$\dfrac{3x+1}{2x-5} \to \dfrac{3}{2}$And
 $x\ln\!\left(\dfrac{3}{2} + \dfrac{13}{2(2x-5)}\right) \approx x \cdot \dfrac{13}{3(2x)} = \dfrac{13}{6}$.
 The limit is $e^{13/6}$.
 
@@ -663,7 +663,7 @@ $\dfrac{16x}{(x^2+1)^2} = 1 \implies (x^2+1)^2 = 16x$. Solving: $x^4 + 2x^2 - 16
 inspection $x = 1$ is a root: $1 + 2 - 16 + 1 = -12 \ne 0$. Trying $x = \dfrac{1}{2}$:
 $\dfrac{1}{16} + \dfrac{1}{2} - 8 + 1 \ne 0$. Since $\dfrac{dy}{dx} = -\dfrac{1}{8}$ at $x = 2$:
 $\dfrac{16}{25} \ne 1$. At $x = 1$: $\dfrac{2}{4} = \dfrac{1}{2} \ne \dfrac{1}{8}$. At
-$x = \sqrt[3]{2} - 1$ check numerically: $x \approx 0.26$, $\dfrac{dy}{dx} \approx -0.48$. Solving
+$x = \sqrt[3]{2} - 1$ check numerically: $x \approx 0.26$$\dfrac{dy}{dx} \approx -0.48$. Solving
 Numerically gives $x \approx 0.065$ and $x \approx 1.48$. At $x = 1.48$:
 $\dfrac{dy}{dx} \approx -0.124$ Close to $-\dfrac{1}{8} = -0.125$.
 
@@ -675,15 +675,15 @@ $\dfrac{dA}{dr} = 4\pi r - \dfrac{1000}{r^2} = 0 \implies r^3 = \dfrac{250}{\pi}
 Then $h = \dfrac{500}{\pi r^2} = 2r \approx 8.60\;\mathrm{cm}$. Checking
 $A'' = 4\pi + \dfrac{2000}{r^3} \gt 0$ Confirming a minimum.
 
-**Problem 13:** Let $x = 3\sin\theta$, $dx = 3\cos\theta\,d\theta$. When $x = 0$, $\theta = 0$; when
+**Problem 13:** Let $x = 3\sin\theta$$dx = 3\cos\theta\,d\theta$. When $x = 0$$\theta = 0$; when
 $x = 3$ $\theta = \pi/2$.
 $\displaystyle\int_0^{\pi/2} \frac{3\cos\theta}{3\cos\theta}\,d\theta = \int_0^{\pi/2} d\theta = \frac{\pi}{2}$.
 
-**Problem 14:** $y = x^2 e^{-x}$, $\dfrac{dy}{dx} = 2xe^{-x} - x^2 e^{-x} = e^{-x}(2x - x^2)$. At
-$x = 1$: $y = e^{-1} = \dfrac{1}{e}$, $\dfrac{dy}{dx} = e^{-1}(2 - 1) = \dfrac{1}{e}$. Normal gradient
+**Problem 14:** $y = x^2 e^{-x}$$\dfrac{dy}{dx} = 2xe^{-x} - x^2 e^{-x} = e^{-x}(2x - x^2)$. At
+$x = 1$: $y = e^{-1} = \dfrac{1}{e}$$\dfrac{dy}{dx} = e^{-1}(2 - 1) = \dfrac{1}{e}$. Normal gradient
 $= -e$. Normal equation: $y - \dfrac{1}{e} = -e(x - 1)$I.e. $y = -ex + e + \dfrac{1}{e}$.
 
-**Problem 15:** Let $u = x^2 + 4$, $du = 2x\,dx$.
+**Problem 15:** Let $u = x^2 + 4$$du = 2x\,dx$.
 $\displaystyle\int_0^1 \frac{x\,dx}{x^2 + 4} = \frac{1}{2}\int_4^5 \frac{du}{u} = \frac{1}{2}\bigl[\ln u\bigr]_4^5 = \frac{1}{2}\ln\!\left(\frac{5}{4}\right)$.
 
 </details>

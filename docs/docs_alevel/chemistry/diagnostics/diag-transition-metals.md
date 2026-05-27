@@ -120,7 +120,7 @@ $25.0\,\text{cm}^3$ of the same solution is titrated with $0.0200\,\text{mol dm}
 dichromate(VI), requiring $12.0\,\text{cm}^3$.
 
 $E^\circ$ values:
-$\text{MnO}_4^-/\text{Mn}^{2+} = +1.51\,\text{V}$, $\text{Cr}_2\text{O}_7^{2-}/\text{Cr}^{3+} = +1.33\,\text{V}$, $\text{Fe}^{3+}/\text{Fe}^{2+} = +0.77\,\text{V}$.
+$\text{MnO}_4^-/\text{Mn}^{2+} = +1.51\,\text{V}$$\text{Cr}_2\text{O}_7^{2-}/\text{Cr}^{3+} = +1.33\,\text{V}$$\text{Fe}^{3+}/\text{Fe}^{2+} = +0.77\,\text{V}$.
 
 (a) Calculate the concentration of $\text{Fe}^{2+}$ in the solution.
 
@@ -317,7 +317,7 @@ $E^\circ_{\text{cell}}$ for the oxidation of $\text{Fe}^{2+}$ by oxygen in acidi
 
 $$4\text{Fe}^{2+}(aq) + \text{O}_2(g) + 4\text{H}^+(aq) \to 4\text{Fe}^{3+}(aq) + 2\text{H}_2\text{O}(l)$$
 
-$E^\circ(\text{Fe}^{3+}/\text{Fe}^{2+}) = +0.77\,\text{V}$, $E^\circ(\text{O}_2/\text{H}_2\text{O}) = +1.23\,\text{V}$.
+$E^\circ(\text{Fe}^{3+}/\text{Fe}^{2+}) = +0.77\,\text{V}$$E^\circ(\text{O}_2/\text{H}_2\text{O}) = +1.23\,\text{V}$.
 
 (b) Haemoglobin contains $\text{Fe}^{2+}$ coordinated in an octahedral complex. Explain why
 $\text{O}_2$ can coordinate to the $\text{Fe}^{2+}$ in haemoglobin without oxidising it to

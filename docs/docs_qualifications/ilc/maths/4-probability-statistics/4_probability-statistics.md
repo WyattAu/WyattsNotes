@@ -184,7 +184,7 @@ $$
 And 2% false positive rate. The disease prevalence is 1%. Find the probability that a person who
 Tests positive actually has the disease.
 
-$P(D) = 0.01$, $P(D') = 0.99$, $P(+|D) = 0.95$, $P(+|D') = 0.02$.
+$P(D) = 0.01$$P(D') = 0.99$$P(+|D) = 0.95$$P(+|D') = 0.02$.
 
 $$
 P(D|+) = \frac{P(+|D)P(D)}{P(+)} = \frac{0.95 \times 0.01}{0.95 \times 0.01 + 0.02 \times 0.99} = \frac{0.0095}{0.0095 + 0.0198} = \frac{0.0095}{0.0293} \approx 0.324
@@ -306,7 +306,7 @@ $$
 **Conditions:** fixed $n$Independent trials, two outcomes, constant $p$.
 
 **Proof that $E(X) = np$ for $X \sim \mathrm{Bin(n, p)$.** Let $X_i$ be the indicator variable for
-Success on trial $i$ (so $X_i = 1$ with probability $p$, $X_i = 0$ with probability $1-p$). Then
+Success on trial $i$ (so $X_i = 1$ with probability $p$$X_i = 0$ with probability $1-p$). Then
 $X = X_1 + X_2 + \cdots + X_n$ and $E(X_i) = p$So $E(X) = np$.
 
 **Example (HL):** A multiple-choice test has 20 questions, each with 4 options. A student guesses
@@ -367,7 +367,7 @@ $X \sim N(\mu, \sigma^2)$. The standard normal $Z = \frac{X - \mu}{\sigma}$ has 
 Large number of independent random variables is approximately normally distributed, regardless of
 The original distribution. This is why the normal distribution appears everywhere in nature.
 
-**Example (HL):** Exam marks are normally distributed with $\mu = 60$, $\sigma = 10$. Find the
+**Example (HL):** Exam marks are normally distributed with $\mu = 60$$\sigma = 10$. Find the
 Probability a student scores above 75.
 
 $$
@@ -440,7 +440,7 @@ A box plot displays five statistics: minimum, $Q_1$Median, $Q_3$Maximum.
 
 **Outlier:** A value below $Q_1 - 1.5 \times \mathrm{IQR$ or above $Q_3 + 1.5 \times \mathrm{IQR$.
 
-**Example (HL):** A data set has $Q_1 = 25$, $Q_3 = 45$Minimum $= 10$Maximum $= 65$. Identify Any
+**Example (HL):** A data set has $Q_1 = 25$$Q_3 = 45$Minimum $= 10$Maximum $= 65$. Identify Any
 outliers.
 
 $\mathrm{IQR = 45 - 25 = 20$.
@@ -488,7 +488,7 @@ Level whether the coin is biased.
 
 $H_0: p = 0.5$ (coin is fair), $H_1: p \neq 0.5$ (coin is biased).
 
-Under $H_0$: $\mu = np = 100$, $\sigma = \sqrt{np(1-p)} = \sqrt{50} \approx 7.071$.
+Under $H_0$: $\mu = np = 100$$\sigma = \sqrt{np(1-p)} = \sqrt{50} \approx 7.071$.
 
 Using the normal approximation with continuity correction:
 $Z = \frac{114.5 - 100}{7.071} \approx 2.05$.
@@ -509,7 +509,7 @@ $$
 **Example (HL):** A sample of 8 measurements has $\bar{x} = 23.4$ and $s = 2.1$. Test at the 5%
 Level whether the population mean is 25.
 
-$H_0: \mu = 25$, $H_1: \mu \neq 25$.
+$H_0: \mu = 25$$H_1: \mu \neq 25$.
 
 $$
 T = \frac{23.4 - 25}{2.1/\sqrt{8}} = \frac{-1.6}{0.7423} \approx -2.156
@@ -591,8 +591,8 @@ The least squares line minimises $\sum(y_i - (a + bx_i))^2$.
 **Example (HL):** For the data set $\{(1,3), (2,5), (3,4), (4,7), (5,6)\}$Find the correlation
 Coefficient and regression line.
 
-$n = 5$, $\sum x = 15$, $\sum y = 25$, $\sum xy = 1(3)+2(5)+3(4)+4(7)+5(6) = 3+10+12+28+30 = 83$
-$\sum x^2 = 1+4+9+16+25 = 55$, $\sum y^2 = 9+25+16+49+36 = 135$.
+$n = 5$$\sum x = 15$$\sum y = 25$$\sum xy = 1(3)+2(5)+3(4)+4(7)+5(6) = 3+10+12+28+30 = 83$
+$\sum x^2 = 1+4+9+16+25 = 55$$\sum y^2 = 9+25+16+49+36 = 135$.
 
 $$
 R = \frac{5(83) - 15(25)}{\sqrt{[5(55) - 225][5(135) - 625]}} = \frac{415 - 375}{\sqrt{[275 - 225][675 - 625]}} = \frac{40}{\sqrt{50 \times 50}} = \frac{40}{50} = 0.8
@@ -668,7 +668,7 @@ See the examples integrated throughout the sections above.
 10. A 95% confidence interval for a mean is $(12.3, 15.7)$ based on a sample of size $n = 25$. Find
     $\bar{x}$ and the margin of error.
 11. Prove that $\mathrm{Var(aX + b) = a^2\mathrm{Var(X)$.
-12. Two events $A$ and $B$ satisfy $P(A) = 0.4$, $P(B) = 0.5$And $P(A \cup B) = 0.7$. Determine
+12. Two events $A$ and $B$ satisfy $P(A) = 0.4$$P(B) = 0.5$And $P(A \cup B) = 0.7$. Determine
     whether $A$ and $B$ are independent.
 13. Find the coefficient of $x^4$ in the expansion of $(1 - 2x)^8$.
 14. Explain the difference between Type I and Type II errors in hypothesis testing.
@@ -701,7 +701,7 @@ See the examples integrated throughout the sections above.
 
 27. Prove that if $A$ and $B$ are independent, then so are $A$ and $B'$.
 28. The regression line of $y$ on $x$ is $y = 2.5x - 3.0$ and the regression line of $x$ on $y$ is
-    $x = 0.35y + 1.2$. Find $\bar{x}$, $\bar{y}$And the correlation coefficient $r$.
+    $x = 0.35y + 1.2$. Find $\bar{x}$$\bar{y}$And the correlation coefficient $r$.
 
 ### 8.4 Poisson Approximation to the Binomial
 

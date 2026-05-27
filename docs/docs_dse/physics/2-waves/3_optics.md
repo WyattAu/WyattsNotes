@@ -673,7 +673,7 @@ Angle to the axis and the angle to the normal._
 
 <summary>Problem 15: Dispersion — Prism</summary>
 
-White light enters a glass prism ($n_{\mathrm{red}} = 1.51$, $n_{\mathrm{violet}} = 1.53$) at an Angle
+White light enters a glass prism ($n_{\mathrm{red}} = 1.51$$n_{\mathrm{violet}} = 1.53$) at an Angle
 of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain why the violet Light
 is deviated more than the red light and calculate the angle of refraction for each colour at The
 first surface.
@@ -1001,11 +1001,11 @@ The refractive index $n = 1.51$.
 $$\theta_c = \sin^{-1}(0.662) = 41.5^\circ$$
 
 (c) The uncertainty in $n$ from the graph is estimated from the worst-fit lines. For a single Data
-point at $\theta_i = 45^\circ$, $\theta_r = 28^\circ$:
+point at $\theta_i = 45^\circ$$\theta_r = 28^\circ$:
 
 $\Delta\theta = 1^\circ = 0.0175 \mathrm{ rad}$
 
-$\sin(45 \pm 1) = 0.707 \pm 0.012$, $\sin(28 \pm 1) = 0.469 \pm 0.015$
+$\sin(45 \pm 1) = 0.707 \pm 0.012$$\sin(28 \pm 1) = 0.469 \pm 0.015$
 
 The percentage uncertainty in $n$ from the gradient depends on the spread of the worst-fit lines.
 Approximately: $\frac{\Delta n}{n} \approx 3\%$ to $5\%$Giving $\Delta n \approx 0.05$ to $0.08$.
@@ -1031,7 +1031,7 @@ An object is placed $0.6 \mathrm{ cm}$ from the objective lens.
 
 <summary>Solution</summary>
 
-(a) Objective lens: $u_1 = 0.6 \mathrm{ cm}$, $f_1 = 0.5 \mathrm{ cm}$
+(a) Objective lens: $u_1 = 0.6 \mathrm{ cm}$$f_1 = 0.5 \mathrm{ cm}$
 
 $$\frac{1}{v_1} = \frac{1}{f_1} - \frac{1}{u_1} = \frac{1}{0.5} - \frac{1}{0.6} = 2.0 - 1.667 = 0.333$$
 

@@ -845,7 +845,7 @@ via the GLUT5 transporter. All three monosaccharides exit the cell into the bloo
 
 **Lactose intolerance** results from insufficient lactase production in adulthood (primary lactase
 deficiency). Undigested lactose passes to the large intestine, where it is fermented by gut
-bacteria, producing gas ($\mathrm{CO_2}$, $\mathrm{H_2}$Methane) and organic acids. This causes
+bacteria, producing gas ($\mathrm{CO_2}$$\mathrm{H_2}$Methane) and organic acids. This causes
 bloating, flatulence, abdominal cramps, and osmotic diarrhoea (the undigested lactose increases the
 osmolarity of the intestinal contents, drawing water into the lumen).
 
@@ -1052,7 +1052,7 @@ systems require tight pH regulation because enzyme activity is pH-dependent.
    most important blood buffer because both components ($\mathrm{HCO_3^-}$ and $\mathrm{CO_2}$) can
    be regulated: $\mathrm{CO_2}$ by ventilation, $\mathrm{HCO_3^-}$ by the kidneys.
 2. **Phosphate buffer** (intracellular, urine):
-   $\mathrm{H_2PO_4^- \rightleftharpoons H^+ + HPO_4^{2-}}$, $\mathrm{p}K_a \approx 7.2$ (close to
+   $\mathrm{H_2PO_4^- \rightleftharpoons H^+ + HPO_4^{2-}}$$\mathrm{p}K_a \approx 7.2$ (close to
    physiological pH).
 3. **Protein buffer** (blood): haemoglobin binds $\mathrm{H^+}$ (forming haemoglobinic acid),
    buffering the $\mathrm{H^+}$ produced by $\mathrm{CO_2}$ transport (the Bohr effect).
@@ -1217,7 +1217,7 @@ From the Michaelis-Menten equation: $v = \frac◆LB◆V_{\max} [S]◆RB◆◆LB�
 At $v = \frac◆LB◆V_{\max}◆RB◆◆LB◆2◆RB◆$: $[S] = K_m$.
 
 $\frac◆LB◆V_{\max}◆RB◆◆LB◆2◆RB◆ = 20\ \mu\mathrm{mol\ min^{-1}}$. At
-$v = 20$, $[S] = 10\ \mathrm{mM}$.
+$v = 20$$[S] = 10\ \mathrm{mM}$.
 
 Therefore: $K_m = 10\ \mathrm{mM}$ and $V_{\max} = 40\ \mu\mathrm{mol\ min^{-1}}$.
 
@@ -1265,7 +1265,7 @@ that increases the affinity of the remaining haem groups for $\mathrm{O_2}$.
 | Effect on $K_m$      | Increases (apparent $K_m$ increases because higher $[S]$ is needed to achieve half $V_{\max}$) | No change                                                                                     |
 | Effect on $V_{\max}$ | No change (at very high $[S]$Substrate outcompetes inhibitor)                                  | Decreases                                                                                     |
 | Can be overcome?     | Yes, by increasing substrate concentration                                                     | No, because inhibitor binds at a different site                                               |
-| Example              | Malonate inhibits succinate dehydrogenase (Krebs cycle)                                        | Heavy metals ($\mathrm{Pb^{2+}}$, $\mathrm{Hg^{2+}}$) bind to -SH groups, changing enzyme shape |
+| Example              | Malonate inhibits succinate dehydrogenase (Krebs cycle)                                        | Heavy metals ($\mathrm{Pb^{2+}}$$\mathrm{Hg^{2+}}$) bind to -SH groups, changing enzyme shape |
 
 ### 20.4 Collagen: A Structural Protein
 
@@ -1389,7 +1389,7 @@ Water always moves from a region of higher water potential to a region of lower 
 | $\mathrm{Fe^{2+/3+}}$ | Haemoglobin component (oxygen transport); cytochromes (ETC)                                | Anaemia (iron deficiency); chlorosis                                       |
 | $\mathrm{PO_4^{3-}}$  | ATP, DNA, RNA, phospholipids; bone and teeth                                               | Rickets (children); osteomalacia (adults); poor root development in plants |
 | $\mathrm{NO_3^-}$     | Amino acid and protein synthesis; nucleotide synthesis                                     | Chlorosis (nitrogen deficiency); poor growth                               |
-| $\mathrm{I^-}$        | Thyroid hormone synthesis ($\mathrm{T_3}$, $\mathrm{T_4}$)                                   | Goitre; cretinism (in infants); hypothyroidism                             |
+| $\mathrm{I^-}$        | Thyroid hormone synthesis ($\mathrm{T_3}$$\mathrm{T_4}$)                                   | Goitre; cretinism (in infants); hypothyroidism                             |
 
 ## 23. Biochemical Tests
 
@@ -1537,7 +1537,7 @@ Monosaccharides are the simplest carbohydrates (single sugar units):
 
 **Lactose intolerance:** deficiency of lactase (the enzyme that hydrolyses lactose into glucose and
 galactose) causes undigested lactose to reach the large intestine, where bacteria ferment it,
-producing gas ($\mathrm{CO_2}$, $\mathrm{CH_4}$) and causing bloating, flatulence, and diarrhoea.
+producing gas ($\mathrm{CO_2}$$\mathrm{CH_4}$) and causing bloating, flatulence, and diarrhoea.
 Approximately 70% of the world's adult population has some degree of lactase deficiency.
 
 ### 25.3 Polysaccharides
@@ -1570,7 +1570,7 @@ The rate is halved, and increasing $[S]$ cannot overcome the inhibition.
 
 ### 26.2 Competitive Inhibition Worked Example
 
-The same enzyme ($V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$, $K_m = 5\ \mathrm{mM}$) with a
+The same enzyme ($V_{\max} = 50\ \mu\mathrm{mol\ min^{-1}}$$K_m = 5\ \mathrm{mM}$) with a
 competitive inhibitor. $V_{\max}$ remains 50, but apparent $K_m$ increases to $15\ \mathrm{mM}$.
 
 At $[S] = 5\ \mathrm{mM}$:
@@ -1675,7 +1675,7 @@ This is a straight line: $y = mx + c$ where:
 
 | Inhibitor Type  | Effect on $V_{max}$                                | Effect on $K_m$ | Lineweaver-Burk Plot                   |
 | --------------- | -------------------------------------------------- | --------------- | -------------------------------------- |
-| Competitive     | No change (at very high $[S]$, $V_{max}$ is reached) | Increases       | Intersects on y-axis; different slopes |
+| Competitive     | No change (at very high $[S]$$V_{max}$ is reached) | Increases       | Intersects on y-axis; different slopes |
 | Non-competitive | Decreases (maximum rate is reduced)                | No change       | Intersects on x-axis; same slope       |
 
 ## 29. Lipids: Structure and Function in Detail
@@ -1996,7 +1996,7 @@ character due to resonance).
 | Feature    | Description                                                                                                                                                                                                                      |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Cause      | Deficiency of lactase enzyme in the small intestine brush border                                                                                                                                                                 |
-| Effect     | Lactose passes undigested to the large intestine; bacteria ferment lactose; produces gas ($\mathrm{CO_2}$, $\mathrm{CH_4}$, $\mathrm{H_2}$) and organic acids                                                                        |
+| Effect     | Lactose passes undigested to the large intestine; bacteria ferment lactose; produces gas ($\mathrm{CO_2}$$\mathrm{CH_4}$$\mathrm{H_2}$) and organic acids                                                                        |
 | Symptoms   | Bloating, flatulence, abdominal pain, diarrhoea                                                                                                                                                                                  |
 | Prevalence | ~70% of the world's population lose lactase activity after weaning; highest prevalence in East Asian, West African, and Native American populations                                                                              |
 | Genetics   | Lactase persistence (ability to digest lactose as an adult) is caused by mutations in the regulatory region of the _LCT_ gene; evolved independently in European, African, and Middle Eastern populations (convergent evolution) |

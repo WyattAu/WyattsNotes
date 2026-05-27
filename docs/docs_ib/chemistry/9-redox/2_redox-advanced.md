@@ -47,7 +47,7 @@ $$
 2\mathrm{H}^+(aq, 1\mathrm{ M}) + 2e^- \rightleftharpoons \mathrm{H}_2(g, 100\mathrm{ kPa}) \qquad E^\circ = 0.00\mathrm{ V}
 $$
 
-Standard conditions: $298\mathrm{ K}$, $1\mathrm{ M}$ solutions, $100\mathrm{ kPa}$ gas pressure.
+Standard conditions: $298\mathrm{ K}$$1\mathrm{ M}$ solutions, $100\mathrm{ kPa}$ gas pressure.
 
 ### Standard Reduction Potentials (Selected)
 
@@ -143,7 +143,7 @@ $$
 
 :::info[Example]
 
-For the Daniell cell: $E_{\mathrm{cell}}^\circ = 1.10\mathrm{ V}$, $n = 2$.
+For the Daniell cell: $E_{\mathrm{cell}}^\circ = 1.10\mathrm{ V}$$n = 2$.
 
 $$
 \log K = \frac{nE^\circ}{0.0592} = \frac{2 \times 1.10}{0.0592} = 37.2
@@ -460,7 +460,7 @@ platinum electrodes. Write half-equations and the overall equation.
 
 **Cathode (reduction):** The cations present are $\mathrm{Na}^+$ and $\mathrm{H}^+$ (from water).
 Since sodium is more reactive than hydrogen
-($E^\circ(\mathrm{Na}^+/\mathrm{Na}) = -2.71\mathrm{ V}$, $E^\circ(\mathrm{H}^+/\mathrm{H}_2) = 0.00\mathrm{ V}$),
+($E^\circ(\mathrm{Na}^+/\mathrm{Na}) = -2.71\mathrm{ V}$$E^\circ(\mathrm{H}^+/\mathrm{H}_2) = 0.00\mathrm{ V}$),
 hydrogen is discharged preferentially:
 
 $$
@@ -521,15 +521,15 @@ $$
 $$
 
 Given:
-$E^\circ(\mathrm{MnO}_4^-/\mathrm{Mn}^{2+}) = +1.51\mathrm{ V}$, $E^\circ(\mathrm{Fe}^{3+}/\mathrm{Fe}^{2+}) = +0.77\mathrm{ V}$.
+$E^\circ(\mathrm{MnO}_4^-/\mathrm{Mn}^{2+}) = +1.51\mathrm{ V}$$E^\circ(\mathrm{Fe}^{3+}/\mathrm{Fe}^{2+}) = +0.77\mathrm{ V}$.
 
 <details>
 <summary>Solution</summary>
 
 Cathode (reduction):
-$\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$, $E^\circ = +1.51\mathrm{ V}$
+$\mathrm{MnO}_4^- + 8\mathrm{H}^+ + 5e^- \to \mathrm{Mn}^{2+} + 4\mathrm{H}_2\mathrm{O}$$E^\circ = +1.51\mathrm{ V}$
 
-Anode (oxidation): $\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$, $E^\circ = +0.77\mathrm{ V}$
+Anode (oxidation): $\mathrm{Fe}^{2+} \to \mathrm{Fe}^{3+} + e^-$$E^\circ = +0.77\mathrm{ V}$
 
 $$
 E_{\mathrm{cell}}^\circ = 1.51 - 0.77 = +0.74\mathrm{ V}
@@ -610,9 +610,9 @@ toward equilibrium.
   milligrams, convert to grams.
 
 - **Forgetting water as a competitor in aqueous electrolysis:** When electrolysing
-  $\mathrm{NaCl}(aq)$, $\mathrm{H}_2$ is produced at the cathode (not $\mathrm{Na}$), because
+  $\mathrm{NaCl}(aq)$$\mathrm{H}_2$ is produced at the cathode (not $\mathrm{Na}$), because
   $\mathrm{Na}^+$ is too reactive. Similarly, when electrolysing
-  $\mathrm{Na}_2\mathrm{SO}_4(aq)$, $\mathrm{O}_2$ is produced at the anode (not from sulfate
+  $\mathrm{Na}_2\mathrm{SO}_4(aq)$$\mathrm{O}_2$ is produced at the anode (not from sulfate
   oxidation).
 
 - **Nernst equation sign errors:** The Nernst equation is $E = E^\circ - (0.0592/n)\log Q$. If you
@@ -626,7 +626,7 @@ toward equilibrium.
 1. **[Medium]** Write the cell notation for a galvanic cell in which $\mathrm{Ni}(s)$ is oxidised to
    $\mathrm{Ni}^{2+}(aq)$ and $\mathrm{Ag}^+(aq)$ is reduced to $\mathrm{Ag}(s)$. Calculate
    $E_{\mathrm{cell}}^\circ$.
-   ($E^\circ(\mathrm{Ni}^{2+}/\mathrm{Ni}) = -0.25\mathrm{ V}$, $E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\mathrm{ V}$)
+   ($E^\circ(\mathrm{Ni}^{2+}/\mathrm{Ni}) = -0.25\mathrm{ V}$$E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\mathrm{ V}$)
 
 2. **[Hard]** A current of $4.00\mathrm{ A}$ is passed through molten $\mathrm{Al}_2\mathrm{O}_3$
    for $45.0$ minutes. Calculate: (a) the mass of aluminium produced, (b) the volume of oxygen gas
@@ -654,13 +654,13 @@ toward equilibrium.
    at the cathode. Describe the process, including the half-equations, and calculate the time
    required to deposit a $0.020\mathrm{ mm}$ thick layer of copper over a surface area of
    $50.0\mathrm{ cm}^2$ using a current of $0.500\mathrm{ A}$. (Density of copper
-   $= 8.96\mathrm{ g/cm}^3$, $M_r(\mathrm{Cu}) = 63.55$)
+   $= 8.96\mathrm{ g/cm}^3$$M_r(\mathrm{Cu}) = 63.55$)
 
 8. **[Hard]** For the cell
    $\mathrm{Zn} \mid \mathrm{Zn}^{2+}(1.0\mathrm{ M}) \parallel \mathrm{Fe}^{2+}(0.010\mathrm{ M}) \mid \mathrm{Fe}$Determine:
    (a) $E_{\mathrm{cell}}^\circ$(b) $E_{\mathrm{cell}}$ at the given concentrations, (c) $\Delta G$
    for the reaction under these non-standard conditions.
-   ($E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\mathrm{ V}$, $E^\circ(\mathrm{Fe}^{2+}/\mathrm{Fe}) = -0.44\mathrm{ V}$)
+   ($E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\mathrm{ V}$$E^\circ(\mathrm{Fe}^{2+}/\mathrm{Fe}) = -0.44\mathrm{ V}$)
 
 ---
 
@@ -743,9 +743,9 @@ $$m(\mathrm{O}_2) = 0.0305 \times 32.0 = 0.976\;\mathrm{g}$$
 
 For the reaction
 $\mathrm{Cu}(s) + 2\mathrm{Ag}^+(aq) \rightleftharpoons \mathrm{Cu}^{2+}(aq) + 2\mathrm{Ag}(s)$: (a)
-Calculate $E_{\mathrm{cell}}^\circ$, $\Delta G^\circ$And $K$ at $298\;\mathrm{K}$. (b) Calculate
+Calculate $E_{\mathrm{cell}}^\circ$$\Delta G^\circ$And $K$ at $298\;\mathrm{K}$. (b) Calculate
 $\Delta G$ when $[\mathrm{Ag}^+] = 0.010\;\mathrm{M}$ and $[\mathrm{Cu}^{2+}] = 0.10\;\mathrm{M}$.
-($E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\;\mathrm{V}$, $E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\;\mathrm{V}$)
+($E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\;\mathrm{V}$$E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\;\mathrm{V}$)
 
 <details>
 <summary>Solution</summary>
@@ -768,7 +768,7 @@ $$E_{\mathrm{cell}} = E_{\mathrm{cell}}^\circ - \frac{0.0592}{n}\log Q = 0.46 - 
 
 $$\Delta G = -nFE_{\mathrm{cell}} = -2 \times 96485 \times 0.371 = -71\,600\;\mathrm{J/mol} = -71.6\;\mathrm{kJ/mol}$$
 
-The reaction is still spontaneous ($\Delta G < 0$, $E_{\mathrm{cell}} > 0$) but less strongly so
+The reaction is still spontaneous ($\Delta G < 0$$E_{\mathrm{cell}} > 0$) but less strongly so
 because the high product-to-reactant ratio pushes the reaction back toward equilibrium.
 
 </details>
@@ -816,7 +816,7 @@ $\Delta G_f^\circ(\mathrm{Cu}, s) = 0\;\mathrm{kJ/mol}$
 $\mathrm{Zn}(s) + \mathrm{Cu}^{2+}(aq) \to \mathrm{Zn}^{2+}(aq) + \mathrm{Cu}(s)$. (b) Calculate
 $E_{\mathrm{cell}}^\circ$ for the Daniell cell. (c) Compare your result with the standard reduction
 potential values
-($E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\;\mathrm{V}$, $E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\;\mathrm{V}$).
+($E^\circ(\mathrm{Zn}^{2+}/\mathrm{Zn}) = -0.76\;\mathrm{V}$$E^\circ(\mathrm{Cu}^{2+}/\mathrm{Cu}) = +0.34\;\mathrm{V}$).
 
 </details>
 
@@ -827,7 +827,7 @@ A steel pipeline ($\mathrm{Fe}$) buried in soil is protected using a sacrificial
 (a) Write the half-equations for the corrosion of iron and the protection reaction of magnesium. (b)
 Calculate the minimum mass of magnesium required to protect $1.00\;\mathrm{tonne}$
 ($1000\;\mathrm{kg}$) of iron from complete corrosion.
-($M_r(\mathrm{Mg}) = 24.3$, $M_r(\mathrm{Fe}) = 55.8$) (c) Explain why the pipeline must be
+($M_r(\mathrm{Mg}) = 24.3$$M_r(\mathrm{Fe}) = 55.8$) (c) Explain why the pipeline must be
 electrically connected to the magnesium block. (d) Discuss why impressed-current cathodic protection
 (using an external DC power supply and an inert anode) may be preferred for large structures.
 
@@ -884,8 +884,8 @@ $E_{\mathrm{cell}}^\circ = 1.23\;\mathrm{V}$And calculate the voltage efficiency
 
 - **Neglecting the stoichiometry of electrons when using $\Delta G = -nFE$**: The $n$ must be the
   total number of electrons transferred in the balanced equation, not per mole of a specific
-  reactant. For $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$, $n = 2$. For
-  $2\mathrm{Fe}^{3+} + 2e^- \to 2\mathrm{Fe}^{2+}$, $n$ is still $2$ (not $2 \times 2 = 4$).
+  reactant. For $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$n = 2$. For
+  $2\mathrm{Fe}^{3+} + 2e^- \to 2\mathrm{Fe}^{2+}$$n$ is still $2$ (not $2 \times 2 = 4$).
 
 - **Assuming standard conditions apply to real batteries**: A car battery at $12\;\mathrm{V}$ (open
   circuit) delivers less than $12\;\mathrm{V}$ under load due to internal resistance. The terminal

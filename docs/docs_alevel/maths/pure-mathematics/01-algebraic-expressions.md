@@ -29,7 +29,7 @@ slug: algebraic-expressions
 Is, an expression of the form $\sqrt{n}$ where $n \in \mathbb{Q}^+$ and
 $\sqrt{n} \notin \mathbb{Q}$.
 
-The most familiar surds are $\sqrt{2}$, $\sqrt{3}$, $\sqrt{5}$And so on. The set of surds is a Subset of
+The most familiar surds are $\sqrt{2}$$\sqrt{3}$$\sqrt{5}$And so on. The set of surds is a Subset of
 the algebraic numbers, and they arise whenever we solve equations of degree 2 or Higher.
 
 ### 1.1 Laws of Surds
@@ -75,7 +75,7 @@ distribute the Denominator correctly. :::
 **Theorem.** $\sqrt{2}$ is irrational.
 
 _Proof._ We proceed by contradiction. Assume $\sqrt{2}$ is rational. Then $\sqrt{2} = \frac{p}{q}$
-Where $p, q \in \mathbb{Z}^+$, $q \neq 0$And $\gcd(p, q) = 1$ (i.e., the fraction is in lowest Terms).
+Where $p, q \in \mathbb{Z}^+$$q \neq 0$And $\gcd(p, q) = 1$ (i.e., the fraction is in lowest Terms).
 
 $$
 \begin{aligned}
@@ -175,7 +175,7 @@ Factorisation is the reverse of expansion. The key techniques are:
 
 - **Common factors:** $ab + ac = a(b + c)$
 - **Difference of two squares:** $a^2 - b^2 = (a - b)(a + b)$
-- **Trinomial (quadratic):** $ax^2 + bx + c = (px + q)(rx + s)$ where $pr = a$, $ps + qr = b$ $qs = c$
+- **Trinomial (quadratic):** $ax^2 + bx + c = (px + q)(rx + s)$ where $pr = a$$ps + qr = b$ $qs = c$
 - **Grouping:** $ab + ac + db + dc = a(b + c) + d(b + c) = (a + d)(b + c)$
 
 **Theorem (Difference of Two Squares).** $a^2 - b^2 = (a - b)(a + b)$.
@@ -289,7 +289,7 @@ F(2) &= 2^3 - 3(2)^2 + 4 = 8 - 12 + 4 = 0
 \end{aligned}
 $$
 
-Since $f(2) = 0$, $(x - 2)$ is a factor. To find the remaining factor, we perform polynomial Division:
+Since $f(2) = 0$$(x - 2)$ is a factor. To find the remaining factor, we perform polynomial Division:
 
 $$
 \begin{aligned}
@@ -459,7 +459,7 @@ $$\frac{2x + 1}{(x + 3)(x - 2)} = \frac{1}{x + 3} + \frac{1}{x - 2}$$
 
 <hr />
 
-**Problem 7.** Given $f(x) = x^4 - x^3 - 7x^2 + x + 6$Show that $(x - 1)$, $(x + 1)$And $(x - 3)$ are
+**Problem 7.** Given $f(x) = x^4 - x^3 - 7x^2 + x + 6$Show that $(x - 1)$$(x + 1)$And $(x - 3)$ are
 all factors, and hence factorise $f(x)$ completely.
 
 <details>
@@ -482,7 +482,7 @@ The product $(x-1)(x+1)(x-3) = (x^2-1)(x-3) = x^3 - 3x^2 - x + 3$.
 
 Comparing leading coefficients: $p = 1$.
 
-Comparing constant terms: $(-1)(1)(-3)(q) = 6$So $3q = 6$, $q = 2$.
+Comparing constant terms: $(-1)(1)(-3)(q) = 6$So $3q = 6$$q = 2$.
 
 $$f(x) = (x - 1)(x + 1)(x - 3)(x + 2)$$
 
@@ -495,7 +495,7 @@ $$f(x) = (x - 1)(x + 1)(x - 3)(x + 2)$$
 
 <details>
 <summary>Solution</summary>
-Assume $\sqrt{3} = \frac{p}{q}$ in lowest terms, $p, q \in \mathbb{Z}^+$, $\gcd(p, q) = 1$.
+Assume $\sqrt{3} = \frac{p}{q}$ in lowest terms, $p, q \in \mathbb{Z}^+$$\gcd(p, q) = 1$.
 
 $$
 \begin{aligned}
@@ -565,7 +565,7 @@ Discriminant: $\Delta = 9 - 20 = -11 < 0$. No real solutions.
 <hr />
 
 **Problem 11.** Given that $x^3 + ax^2 + bx + c$ is exactly divisible by $(x - 1)^2$ and leaves
-Remainder $12$ when divided by $(x + 2)$Find $a$, $b$And $c$.
+Remainder $12$ when divided by $(x + 2)$Find $a$$b$And $c$.
 
 <details>
 <summary>Solution</summary>

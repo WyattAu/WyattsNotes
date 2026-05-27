@@ -268,7 +268,7 @@ Product: **2-bromobutane**.
 (Curly arrow from lone pair on $Br^{-}$ to the carbocation carbon.)
 
 (b) The product (2-bromobutane) has a chiral centre at $C-2$ (carbon bonded to four different
-groups: $CH_{3}$-, $H$, $Br$, $CH_{2}CH_{3}$). However, the reaction produces a **racemic mixture**
+groups: $CH_{3}$-, $H$$Br$$CH_{2}CH_{3}$). However, the reaction produces a **racemic mixture**
 (equal amounts of both enantiomers) because the $Br^{-}$ can attack the planar carbocation
 intermediate with equal probability from either face. Since equal amounts of both enantiomers are
 produced, the mixture is **optically inactive** (no net rotation of plane-polarised light).

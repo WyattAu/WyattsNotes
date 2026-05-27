@@ -67,7 +67,7 @@ $$F = \frac{kQ_1 Q_2}{r^2}$$
 Where:
 
 - $F$ = electrostatic force (N)
-- $Q_1$, $Q_2$ = magnitudes of the charges (C)
+- $Q_1$$Q_2$ = magnitudes of the charges (C)
 - $r$ = distance between the charges (m)
 - $k = \frac{1}{4\pi\varepsilon_0} = 8.99 \times 10^9 \mathrm{ N m}^2\mathrm{/C}^2$ (Coulomb's
   constant)
@@ -730,8 +730,8 @@ $$\frac{V_s}{V_p} = \frac{N_s}{N_p}$$
 
 Where:
 
-- $V_p$, $V_s$ = primary and secondary voltages
-- $N_p$, $N_s$ = number of turns on primary and secondary coils
+- $V_p$$V_s$ = primary and secondary voltages
+- $N_p$$N_s$ = number of turns on primary and secondary coils
 
 If $N_s \gt N_p$: step-up transformer ($V_s \gt V_p$)
 
@@ -803,7 +803,7 @@ $$I = I_0 \sin(\omega t) = I_0 \sin(2\pi ft)$$
 
 Where:
 
-- $V_0$, $I_0$ = peak (maximum) values
+- $V_0$$I_0$ = peak (maximum) values
 - $f$ = frequency (Hz)
 - $\omega = 2\pi f$ = angular frequency (rad/s)
 - $T = 1/f$ = period (s)
@@ -919,9 +919,9 @@ Of resistance $50 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading
 
 The voltmeter acts as a load across $R_2$:
 
-$, $R_2 \parallel R_V = \frac{20 \times 50}{20 + 50} = \frac{1000}{70} = 14.29 \mathrm{ k}\Omega$, $
+$$R_2 \parallel R_V = \frac{20 \times 50}{20 + 50} = \frac{1000}{70} = 14.29 \mathrm{ k}\Omega$$
 
-$, $V_{\mathrm{out}} = 9 \times \frac{14.29}{10 + 14.29} = 9 \times \frac{14.29}{24.29} = 9 \times 0.5884 = 5.30 \mathrm{ V}$, $
+$$V_{\mathrm{out}} = 9 \times \frac{14.29}{10 + 14.29} = 9 \times \frac{14.29}{24.29} = 9 \times 0.5884 = 5.30 \mathrm{ V}$$
 
 **Question 4:** A cell of EMF $6 \mathrm{ V}$ and internal resistance $0.8 \Omega$ is connected to
 An external circuit consisting of a $4.2 \Omega$ resistor in series with a parallel combination of
@@ -931,7 +931,7 @@ Two $6 \Omega$ resistors. Find the current from the cell and the terminal PD.
 
 Equivalent resistance of the parallel combination:
 
-$, $R_p = \frac{6 \times 6}{6 + 6} = \frac{36}{12} = 3 \Omega$, $
+$$R_p = \frac{6 \times 6}{6 + 6} = \frac{36}{12} = 3 \Omega$$
 
 Total external resistance: $R = 4.2 + 3 = 7.2 \Omega$
 
@@ -956,7 +956,7 @@ $\varepsilon_0 = NAB\omega = 100 \times 0.02 \times 0.5 \times 100\pi = 100\pi =
 When the plane of the coil makes $60^\circ$ with the field, the angle between the normal to the coil
 And the field is $30^\circ$. The EMF is:
 
-$, $\varepsilon = \varepsilon_0 \sin 30^\circ = 314 \times 0.5 = 157 \mathrm{ V}$, $
+$$\varepsilon = \varepsilon_0 \sin 30^\circ = 314 \times 0.5 = 157 \mathrm{ V}$$
 
 **Question 6:** A step-down transformer with 2000 primary turns and 100 secondary turns is used to
 Reduce the mains voltage of $220 \mathrm{ V}$ RMS to supply a device. If the device draws a current
@@ -991,9 +991,9 @@ $F = eE = 1.6 \times 10^{-19} \times 2.5 \times 10^5 = 4.0 \times 10^{-14} \math
 
 Using energy conservation: $eV = \frac{1}{2}m_e v^2$
 
-$, $v = \sqrt{\frac{2eV}{m_e}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 5000}{9.11 \times 10^{-31}}}$, $
+$$v = \sqrt{\frac{2eV}{m_e}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 5000}{9.11 \times 10^{-31}}}$$
 
-$, $v = \sqrt{\frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}}} = \sqrt{1.756 \times 10^{15}} = 4.19 \times 10^7 \mathrm{ m/s}$, $
+$$v = \sqrt{\frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}}} = \sqrt{1.756 \times 10^{15}} = 4.19 \times 10^7 \mathrm{ m/s}$$
 
 **Question 8:** A straight wire of length $0.5 \mathrm{ m}$ carries a current of $8 \mathrm{ A}$ and
 Lies perpendicular to a uniform magnetic field of flux density $0.4 \mathrm{ T}$. Calculate the
@@ -1004,11 +1004,11 @@ What is the new force?
 
 Force when perpendicular ($\theta = 90^\circ$):
 
-$, $F = BIL \sin 90^\circ = 0.4 \times 8 \times 0.5 \times 1 = 1.6 \mathrm{ N}$, $
+$$F = BIL \sin 90^\circ = 0.4 \times 8 \times 0.5 \times 1 = 1.6 \mathrm{ N}$$
 
 Force when at $45^\circ$:
 
-$, $F = BIL \sin 45^\circ = 0.4 \times 8 \times 0.5 \times 0.7071 = 1.131 \mathrm{ N}$, $
+$$F = BIL \sin 45^\circ = 0.4 \times 8 \times 0.5 \times 0.7071 = 1.131 \mathrm{ N}$$
 
 **Question 9:** A cell is connected to a variable resistor $R$. A voltmeter across the cell reads
 $1.5 \mathrm{ V}$ when $R = 8 \Omega$ and $1.2 \mathrm{ V}$ when $R = 4 \Omega$. Find the EMF and
@@ -1018,21 +1018,21 @@ Internal resistance of the cell.
 
 When $R = 8 \Omega$: $I_1 = \frac{V_1}{R_1} = \frac{1.5}{8} = 0.1875 \mathrm{ A}$
 
-$, $\varepsilon = V_1 + I_1 r = 1.5 + 0.1875r \quad \cdots (1)$, $
+$$\varepsilon = V_1 + I_1 r = 1.5 + 0.1875r \quad \cdots (1)$$
 
 When $R = 4 \Omega$: $I_2 = \frac{V_2}{R_2} = \frac{1.2}{4} = 0.3 \mathrm{ A}$
 
-$, $\varepsilon = V_2 + I_2 r = 1.2 + 0.3r \quad \cdots (2)$, $
+$$\varepsilon = V_2 + I_2 r = 1.2 + 0.3r \quad \cdots (2)$$
 
 Equating (1) and (2):
 
-$, $1.5 + 0.1875r = 1.2 + 0.3r$, $
+$$1.5 + 0.1875r = 1.2 + 0.3r$$
 
-$, $0.3 = 0.1125r$, $
+$$0.3 = 0.1125r$$
 
-$, $r = \frac{0.3}{0.1125} = 2.67 \Omega$, $
+$$r = \frac{0.3}{0.1125} = 2.67 \Omega$$
 
-$, $\varepsilon = 1.2 + 0.3 \times 2.67 = 1.2 + 0.8 = 2.0 \mathrm{ V}$, $
+$$\varepsilon = 1.2 + 0.3 \times 2.67 = 1.2 + 0.8 = 2.0 \mathrm{ V}$$
 
 **Question 10:** A solenoid of length $0.3 \mathrm{ m}$ has 600 turns and carries a current of
 $4 \mathrm{ A}$. A straight wire running parallel to the axis of the solenoid at a distance of
@@ -1043,14 +1043,14 @@ Magnetic flux density inside the solenoid and the force per unit length on the w
 
 Magnetic flux density inside the solenoid:
 
-$, $n = \frac{N}{L} = \frac{600}{0.3} = 2000 \mathrm{ turns/m}$, $
+$$n = \frac{N}{L} = \frac{600}{0.3} = 2000 \mathrm{ turns/m}$$
 
-$, $B = \mu_0 n I = (4\pi \times 10^{-7})(2000)(4) = 4\pi \times 10^{-7} \times 8000 = 0.01005 \mathrm{ T}$, $
+$$B = \mu_0 n I = (4\pi \times 10^{-7})(2000)(4) = 4\pi \times 10^{-7} \times 8000 = 0.01005 \mathrm{ T}$$
 
 The wire runs parallel to the axis of the solenoid, so the current in the wire is parallel to the
 Magnetic field inside the solenoid. Since the angle between the current and the field is $0^\circ$:
 
-$, $F = BIL \sin 0^\circ = 0$, $
+$$F = BIL \sin 0^\circ = 0$$
 
 The force per unit length on the wire is zero.
 
@@ -1066,9 +1066,9 @@ $-2 \times 10^{-9} \mathrm{ C}$ Charge placed at that point.
 
 <summary>Solution</summary>
 
-$, $E = \frac{kQ}{r^2} = \frac{(8.99 \times 10^9)(6 \times 10^{-9})}{(0.05)^2} = \frac{53.94}{0.0025} = 21576 \mathrm{ V/m}$, $
+$$E = \frac{kQ}{r^2} = \frac{(8.99 \times 10^9)(6 \times 10^{-9})}{(0.05)^2} = \frac{53.94}{0.0025} = 21576 \mathrm{ V/m}$$
 
-$, $F = qE = (2 \times 10^{-9})(21576) = 4.32 \times 10^{-5} \mathrm{ N}$, $
+$$F = qE = (2 \times 10^{-9})(21576) = 4.32 \times 10^{-5} \mathrm{ N}$$
 
 The force is attractive (towards the positive charge).
 
@@ -1083,19 +1083,19 @@ Power dissipated in the $6 \Omega$ resistor.
 
 <summary>Solution</summary>
 
-$, $R_p = \frac{6 \times 12}{6 + 12} = \frac{72}{18} = 4 \Omega$, $
+$$R_p = \frac{6 \times 12}{6 + 12} = \frac{72}{18} = 4 \Omega$$
 
-$, $R_{\mathrm{total}} = 0.5 + 3 + 4 = 7.5 \Omega$, $
+$$R_{\mathrm{total}} = 0.5 + 3 + 4 = 7.5 \Omega$$
 
-$, $I = \frac{12}{7.5} = 1.6 \mathrm{ A}$, $
+$$I = \frac{12}{7.5} = 1.6 \mathrm{ A}$$
 
 Voltage across the parallel combination:
 
-$, $V_p = 12 - 1.6(0.5 + 3) = 12 - 5.6 = 6.4 \mathrm{ V}$, $
+$$V_p = 12 - 1.6(0.5 + 3) = 12 - 5.6 = 6.4 \mathrm{ V}$$
 
 Current through $6 \Omega$: $I_6 = \frac{6.4}{6} = 1.067 \mathrm{ A}$
 
-$, $P_6 = I_6^2 R = (1.067)^2 \times 6 = 1.139 \times 6 = 6.83 \mathrm{ W}$, $
+$$P_6 = I_6^2 R = (1.067)^2 \times 6 = 1.139 \times 6 = 6.83 \mathrm{ W}$$
 
 _If you get this wrong, revise: Series and parallel resistance combinations and internal
 resistance._
@@ -1107,9 +1107,9 @@ Wire in $10$ seconds?
 
 <summary>Solution</summary>
 
-$, $Q = It = 3 \times 10 = 30 \mathrm{ C}$, $
+$$Q = It = 3 \times 10 = 30 \mathrm{ C}$$
 
-$, $n = \frac{Q}{e} = \frac{30}{1.6 \times 10^{-19}} = 1.875 \times 10^{20} \mathrm{ electrons}$, $
+$$n = \frac{Q}{e} = \frac{30}{1.6 \times 10^{-19}} = 1.875 \times 10^{20} \mathrm{ electrons}$$
 
 _If you get this wrong, revise: The relationship between current, charge, and the elementary charge
 $Q = ne = It$._
@@ -1121,9 +1121,9 @@ of Tungsten is $5.6 \times 10^{-8} \Omega \mathrm{ m}$. Find the length of the w
 
 <summary>Solution</summary>
 
-$, $A = \pi r^2 = \pi(1.0 \times 10^{-4})^2 = \pi \times 10^{-8} = 3.14 \times 10^{-8} \mathrm{ m}^2$, $
+$$A = \pi r^2 = \pi(1.0 \times 10^{-4})^2 = \pi \times 10^{-8} = 3.14 \times 10^{-8} \mathrm{ m}^2$$
 
-$, $R = \frac{\rho L}{A} \implies L = \frac{RA}{\rho} = \frac{5 \times 3.14 \times 10^{-8}}{5.6 \times 10^{-8}} = \frac{15.7}{5.6} = 2.80 \mathrm{ m}$, $
+$$R = \frac{\rho L}{A} \implies L = \frac{RA}{\rho} = \frac{5 \times 3.14 \times 10^{-8}}{5.6 \times 10^{-8}} = \frac{15.7}{5.6} = 2.80 \mathrm{ m}$$
 
 _If you get this wrong, revise: Resistivity formula $R = \rho L / A$ and rearranging to find
 length._
@@ -1139,11 +1139,11 @@ $2 \mathrm{ k}\Omega$. Find the output voltage across the thermistor at each tem
 
 At $20^\circ\mathrm{C}$:
 
-$, $V_{\mathrm{out}} = 9 \times \frac{10}{10 + 10} = 9 \times 0.5 = 4.5 \mathrm{ V}$, $
+$$V_{\mathrm{out}} = 9 \times \frac{10}{10 + 10} = 9 \times 0.5 = 4.5 \mathrm{ V}$$
 
 At $80^\circ\mathrm{C}$:
 
-$, $V_{\mathrm{out}} = 9 \times \frac{2}{10 + 2} = 9 \times \frac{2}{12} = 1.5 \mathrm{ V}$, $
+$$V_{\mathrm{out}} = 9 \times \frac{2}{10 + 2} = 9 \times \frac{2}{12} = 1.5 \mathrm{ V}$$
 
 The output voltage decreases as temperature increases, which is the principle behind temperature
 Sensing circuits.
@@ -1160,11 +1160,11 @@ the Current through each resistor and the total current from the battery.
 
 Both resistors have $12 \mathrm{ V}$ across them (parallel):
 
-$, $I_4 = \frac{12}{4} = 3.0 \mathrm{ A}$, $
+$$I_4 = \frac{12}{4} = 3.0 \mathrm{ A}$$
 
-$, $I_6 = \frac{12}{6} = 2.0 \mathrm{ A}$, $
+$$I_6 = \frac{12}{6} = 2.0 \mathrm{ A}$$
 
-$, $I_{\mathrm{total}} = 3.0 + 2.0 = 5.0 \mathrm{ A}$, $
+$$I_{\mathrm{total}} = 3.0 + 2.0 = 5.0 \mathrm{ A}$$
 
 _If you get this wrong, revise: Kirchhoff's current law and parallel circuit analysis._
 
@@ -1176,11 +1176,11 @@ And the radius of its circular path.
 
 <summary>Solution</summary>
 
-$, $F = qvB = (1.6 \times 10^{-19})(2.0 \times 10^6)(0.5) = 1.6 \times 10^{-13} \mathrm{ N}$, $
+$$F = qvB = (1.6 \times 10^{-19})(2.0 \times 10^6)(0.5) = 1.6 \times 10^{-13} \mathrm{ N}$$
 
 For circular motion: $F = \frac{mv^2}{r}$
 
-$, $r = \frac{mv}{qB} = \frac{(9.11 \times 10^{-31})(2.0 \times 10^6)}{(1.6 \times 10^{-19})(0.5)} = \frac{1.822 \times 10^{-24}}{8.0 \times 10^{-20}} = 2.28 \times 10^{-5} \mathrm{ m}$, $
+$$r = \frac{mv}{qB} = \frac{(9.11 \times 10^{-31})(2.0 \times 10^6)}{(1.6 \times 10^{-19})(0.5)} = \frac{1.822 \times 10^{-24}}{8.0 \times 10^{-20}} = 2.28 \times 10^{-5} \mathrm{ m}$$
 
 _If you get this wrong, revise: Force on a moving charge in a magnetic field ($F = qvB$) and
 circular Motion of charged particles._
@@ -1192,7 +1192,7 @@ $0.8 \mathrm{ T}$ at a speed of $5 \mathrm{ m/s}$. Find the induced EMF.
 
 <summary>Solution</summary>
 
-$, $\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$, $
+$$\varepsilon = BLv = (0.8)(0.3)(5) = 1.2 \mathrm{ V}$$
 
 _If you get this wrong, revise: Faraday's law for a straight conductor moving through a magnetic
 field ($\varepsilon = BLv$)._
@@ -1204,15 +1204,15 @@ The peak power, and the average power dissipated.
 
 <summary>Solution</summary>
 
-$, $I_{\mathrm{rms}} = \frac{V_{\mathrm{rms}}}{R} = \frac{220}{100} = 2.2 \mathrm{ A}$, $
+$$I_{\mathrm{rms}} = \frac{V_{\mathrm{rms}}}{R} = \frac{220}{100} = 2.2 \mathrm{ A}$$
 
-$, $I_0 = I_{\mathrm{rms}}\sqrt{2} = 2.2 \times 1.414 = 3.11 \mathrm{ A}$, $
+$$I_0 = I_{\mathrm{rms}}\sqrt{2} = 2.2 \times 1.414 = 3.11 \mathrm{ A}$$
 
-$, $V_0 = V_{\mathrm{rms}}\sqrt{2} = 220 \times 1.414 = 311 \mathrm{ V}$, $
+$$V_0 = V_{\mathrm{rms}}\sqrt{2} = 220 \times 1.414 = 311 \mathrm{ V}$$
 
-$, $P_{\mathrm{peak}} = V_0 I_0 = 311 \times 3.11 = 967 \mathrm{ W}$, $
+$$P_{\mathrm{peak}} = V_0 I_0 = 311 \times 3.11 = 967 \mathrm{ W}$$
 
-$, $P_{\mathrm{average}} = V_{\mathrm{rms}} I_{\mathrm{rms}} = 220 \times 2.2 = 484 \mathrm{ W}$, $
+$$P_{\mathrm{average}} = V_{\mathrm{rms}} I_{\mathrm{rms}} = 220 \times 2.2 = 484 \mathrm{ W}$$
 
 Note: $P_{\mathrm{average}} = \frac{P_{\mathrm{peak}}}{2}$ as expected.
 
@@ -1226,13 +1226,13 @@ $95\%$ efficient, find the secondary voltage, the output power, and the secondar
 
 <summary>Solution</summary>
 
-$, $V_s = V_p \times \frac{N_s}{N_p} = 110 \times \frac{2500}{500} = 110 \times 5 = 550 \mathrm{ V}$, $
+$$V_s = V_p \times \frac{N_s}{N_p} = 110 \times \frac{2500}{500} = 110 \times 5 = 550 \mathrm{ V}$$
 
-$, $P_{\mathrm{in}} = V_p I_p = 110 \times 10 = 1100 \mathrm{ W}$, $
+$$P_{\mathrm{in}} = V_p I_p = 110 \times 10 = 1100 \mathrm{ W}$$
 
-$, $P_{\mathrm{out}} = 0.95 \times 1100 = 1045 \mathrm{ W}$, $
+$$P_{\mathrm{out}} = 0.95 \times 1100 = 1045 \mathrm{ W}$$
 
-$, $I_s = \frac{P_{\mathrm{out}}}{V_s} = \frac{1045}{550} = 1.90 \mathrm{ A}$, $
+$$I_s = \frac{P_{\mathrm{out}}}{V_s} = \frac{1045}{550} = 1.90 \mathrm{ A}$$
 
 _If you get this wrong, revise: Transformer equation and efficiency calculations._
 
@@ -1252,13 +1252,13 @@ At $I = 1.5$: $10.5 = \varepsilon - 1.5r \quad \cdots (2)$
 
 Subtracting (2) from (1):
 
-$, $1.0 = 1.0r$, $
+$$1.0 = 1.0r$$
 
-$, $r = 1.0 \Omega$, $
+$$r = 1.0 \Omega$$
 
 Substituting into (1):
 
-$, $\varepsilon = 11.5 + 0.5(1.0) = 12.0 \mathrm{ V}$, $
+$$\varepsilon = 11.5 + 0.5(1.0) = 12.0 \mathrm{ V}$$
 
 _If you get this wrong, revise: Internal resistance and the equation $V = \varepsilon - Ir$._
 
@@ -1269,7 +1269,7 @@ Magnetic flux density at the centre of the loop.
 
 <summary>Solution</summary>
 
-$, $B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac{6.283 \times 10^{-6}}{0.2} = 3.14 \times 10^{-5} \mathrm{ T}$, $
+$$B = \frac{\mu_0 I}{2r} = \frac{(4\pi \times 10^{-7})(5)}{2 \times 0.1} = \frac{6.283 \times 10^{-6}}{0.2} = 3.14 \times 10^{-5} \mathrm{ T}$$
 
 _If you get this wrong, revise: Magnetic field at the centre of a circular current loop
 ($B = \mu_0 I / 2r$)._
@@ -1503,13 +1503,13 @@ $$\frac{\Delta\tau}{\tau} = \sqrt{\left(\frac{\Delta R}{R}\right)^2 + \left(\fra
 
 **Example:** $R = (10.0 \pm 0.5) \mathrm{ k}\Omega$$C = (100 \pm 5) \mathrm{ \mu F}$:
 
-$, $\tau = RC = 10.0 \times 10^3 \times 100 \times 10^{-6} = 1.00 \mathrm{ s}$, $
+$$\tau = RC = 10.0 \times 10^3 \times 100 \times 10^{-6} = 1.00 \mathrm{ s}$$
 
-$, $\frac{\Delta\tau}{\tau} = \sqrt{(0.05)^2 + (0.05)^2} = \sqrt{0.005} = 0.0707 = 7.1\%$, $
+$$\frac{\Delta\tau}{\tau} = \sqrt{(0.05)^2 + (0.05)^2} = \sqrt{0.005} = 0.0707 = 7.1\%$$
 
-$, $\Delta\tau = 0.071 \times 1.00 = 0.07 \mathrm{ s}$, $
+$$\Delta\tau = 0.071 \times 1.00 = 0.07 \mathrm{ s}$$
 
-$, $\tau = (1.00 \pm 0.07) \mathrm{ s}$, $
+$$\tau = (1.00 \pm 0.07) \mathrm{ s}$$
 
 ### Analysing Exponential Decay Data
 
@@ -1540,7 +1540,7 @@ $Q = C_1 V_1 = 200 \times 10^{-6} \times 50 = 0.010 \mathrm{ C}$
 
 When connected in parallel, charge is conserved: $Q = (C_1 + C_2)V_f$
 
-$, $V_f = \frac{Q}{C_1 + C_2} = \frac{0.010}{200 \times 10^{-6} + 300 \times 10^{-6}} = \frac{0.010}{500 \times 10^{-6}} = 20 \mathrm{ V}$, $
+$$V_f = \frac{Q}{C_1 + C_2} = \frac{0.010}{200 \times 10^{-6} + 300 \times 10^{-6}} = \frac{0.010}{500 \times 10^{-6}} = 20 \mathrm{ V}$$
 
 (b) Energy before:
 $E_i = \frac{1}{2}C_1 V_1^2 = \frac{1}{2}(200 \times 10^{-6})(2500) = 0.250 \mathrm{ J}$
@@ -1572,15 +1572,15 @@ $12 \mathrm{ V}$ supply.
 
 (b) After one time constant: $Q = Q_0(1 - e^{-1}) = 0.632 Q_0$
 
-$, $Q_0 = CV_0 = 470 \times 10^{-6} \times 12 = 5.64 \times 10^{-3} \mathrm{ C}$, $
+$$Q_0 = CV_0 = 470 \times 10^{-6} \times 12 = 5.64 \times 10^{-3} \mathrm{ C}$$
 
-$, $Q = 0.632 \times 5.64 \times 10^{-3} = 3.56 \times 10^{-3} \mathrm{ C}$, $
+$$Q = 0.632 \times 5.64 \times 10^{-3} = 3.56 \times 10^{-3} \mathrm{ C}$$
 
 (c) $Q/Q_0 = 0.95 = 1 - e^{-t/\tau}$
 
-$, $e^{-t/\tau} = 0.05 \implies -t/\tau = \ln(0.05) = -3.00$, $
+$$e^{-t/\tau} = 0.05 \implies -t/\tau = \ln(0.05) = -3.00$$
 
-$, $t = 3.00\tau = 3.00 \times 47.0 = 141 \mathrm{ s}$, $
+$$t = 3.00\tau = 3.00 \times 47.0 = 141 \mathrm{ s}$$
 
 (d) At $t = 0$:
 $I_0 = V_0/R = 12/(100 \times 10^3) = 1.20 \times 10^{-4} \mathrm{ A} = 120 \mathrm{ \mu A}$
@@ -1600,9 +1600,9 @@ $= 9.11 \times 10^{-31} \mathrm{ kg}$)
 
 Kinetic energy gained: $\frac{1}{2}mv^2 = eV$
 
-$, $v = \sqrt{\frac{2eV}{m}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 2000}{9.11 \times 10^{-31}}} = \sqrt{\frac{6.4 \times 10^{-16}}{9.11 \times 10^{-31}}} = \sqrt{7.03 \times 10^{14}} = 2.65 \times 10^7 \mathrm{ m/s}$, $
+$$v = \sqrt{\frac{2eV}{m}} = \sqrt{\frac{2 \times 1.6 \times 10^{-19} \times 2000}{9.11 \times 10^{-31}}} = \sqrt{\frac{6.4 \times 10^{-16}}{9.11 \times 10^{-31}}} = \sqrt{7.03 \times 10^{14}} = 2.65 \times 10^7 \mathrm{ m/s}$$
 
-$, $r = \frac{mv}{eB} = \frac{9.11 \times 10^{-31} \times 2.65 \times 10^7}{1.6 \times 10^{-19} \times 5.0 \times 10^{-3}} = \frac{2.41 \times 10^{-23}}{8.0 \times 10^{-22}} = 0.0301 \mathrm{ m} = 3.01 \mathrm{ cm}$, $
+$$r = \frac{mv}{eB} = \frac{9.11 \times 10^{-31} \times 2.65 \times 10^7}{1.6 \times 10^{-19} \times 5.0 \times 10^{-3}} = \frac{2.41 \times 10^{-23}}{8.0 \times 10^{-22}} = 0.0301 \mathrm{ m} = 3.01 \mathrm{ cm}$$
 
 ---
 
@@ -1676,26 +1676,26 @@ $E_2 = \frac{8.99 \times 10^9 \times 5.0 \times 10^{-6}}{(0.10)^2} = \frac{4.495
 
 Since both fields point in the same direction (from $+q_1$ towards $-q_2$):
 
-$, $E_{\mathrm{net}} = E_1 + E_2 = 2.70 \times 10^6 + 4.50 \times 10^6 = 7.20 \times 10^6 \mathrm{ V/m}$, $
+$$E_{\mathrm{net}} = E_1 + E_2 = 2.70 \times 10^6 + 4.50 \times 10^6 = 7.20 \times 10^6 \mathrm{ V/m}$$
 
 (iii) The zero-field point must be outside the charges, on the side of the smaller charge
 ($q_1 = +3.0 \mathrm{ \mu C}$), since the larger charge dominates near the midpoint.
 
 Let the point be distance $x$ from $q_1$ (beyond $q_1$). Distance from $q_2 = x + 0.20$.
 
-$, $\frac{kq_1}{x^2} = \frac{kq_2}{(x + 0.20)^2}$, $
+$$\frac{kq_1}{x^2} = \frac{kq_2}{(x + 0.20)^2}$$
 
-$, $\frac{3.0}{x^2} = \frac{5.0}{(x + 0.20)^2}$, $
+$$\frac{3.0}{x^2} = \frac{5.0}{(x + 0.20)^2}$$
 
-$, $3.0(x + 0.20)^2 = 5.0x^2$, $
+$$3.0(x + 0.20)^2 = 5.0x^2$$
 
-$, $3.0(x^2 + 0.40x + 0.04) = 5.0x^2$, $
+$$3.0(x^2 + 0.40x + 0.04) = 5.0x^2$$
 
-$, $3x^2 + 1.2x + 0.12 = 5x^2$, $
+$$3x^2 + 1.2x + 0.12 = 5x^2$$
 
-$, $2x^2 - 1.2x - 0.12 = 0$, $
+$$2x^2 - 1.2x - 0.12 = 0$$
 
-$, $x = \frac{1.2 \pm \sqrt{1.44 + 0.96}}{4} = \frac{1.2 \pm \sqrt{2.40}}{4} = \frac{1.2 \pm 1.549}{4}$, $
+$$x = \frac{1.2 \pm \sqrt{1.44 + 0.96}}{4} = \frac{1.2 \pm \sqrt{2.40}}{4} = \frac{1.2 \pm 1.549}{4}$$
 
 Taking the positive root: $x = \frac{1.2 + 1.549}{4} = 0.687 \mathrm{ m}$ from $q_1$.
 
@@ -1727,7 +1727,7 @@ to low potential.
 
 (ii) The electron enters horizontally. Time to cross the plates:
 
-$, $t = \frac{L}{v_x} = \frac{0.10}{3.0 \times 10^7} = 3.33 \times 10^{-9} \mathrm{ s}$, $
+$$t = \frac{L}{v_x} = \frac{0.10}{3.0 \times 10^7} = 3.33 \times 10^{-9} \mathrm{ s}$$
 
 Vertical acceleration:
 $a = \frac{eE}{m} = \frac{1.6 \times 10^{-19} \times 10000}{9.11 \times 10^{-31}} = \frac{1.6 \times 10^{-15}}{9.11 \times 10^{-31}} = 1.76 \times 10^{15} \mathrm{ m/s}^2$
@@ -1738,7 +1738,7 @@ $y = \frac{1}{2}at^2 = \frac{1}{2}(1.76 \times 10^{15})(3.33 \times 10^{-9})^2 =
 (iii) Vertical velocity at exit:
 $v_y = at = 1.76 \times 10^{15} \times 3.33 \times 10^{-9} = 5.86 \times 10^6 \mathrm{ m/s}$
 
-$, $\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right) = \tan^{-1}\left(\frac{5.86 \times 10^6}{3.0 \times 10^7}\right) = \tan^{-1}(0.195) = 11.0^\circ$, $
+$$\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right) = \tan^{-1}\left(\frac{5.86 \times 10^6}{3.0 \times 10^7}\right) = \tan^{-1}(0.195) = 11.0^\circ$$
 
 ### Question 4 (DSE Structured)
 
@@ -1766,7 +1766,7 @@ varies sinusoidally, producing alternating current.
 
 $A = 0.05 \times 0.08 = 0.004 \mathrm{ m}^2$
 
-$, $\varepsilon_0 = NBA\omega = 100 \times 0.3 \times 0.004 \times 314.2 = 37.7 \mathrm{ V}$, $
+$$\varepsilon_0 = NBA\omega = 100 \times 0.3 \times 0.004 \times 314.2 = 37.7 \mathrm{ V}$$
 
 (ii) $\varepsilon = 37.7\sin(314.2t) \mathrm{ V}$
 

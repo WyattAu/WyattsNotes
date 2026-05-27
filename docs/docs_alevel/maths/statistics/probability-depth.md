@@ -156,7 +156,7 @@ $$P(M) = 0.45, \quad P(P) = 0.30, \quad P(M \cap P) = 0.15$$
 
 ### 3.3 Three-event Venn diagrams
 
-For three events $A$, $B$, $C$The inclusion-exclusion formula gives:
+For three events $A$$B$$C$The inclusion-exclusion formula gives:
 
 $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$
 
@@ -236,7 +236,7 @@ Equivalently: $P(A \mid B) = P(A)$Or $P(B \mid A) = P(B)$.
 
 ### 5.2 Pairwise vs mutual independence
 
-For three events $A$, $B$, $C$:
+For three events $A$$B$$C$:
 
 - **Pairwise independence** means each pair is independent.
 - **Mutual independence** means pairwise independence **and**
@@ -287,7 +287,7 @@ Chosen at random. Given that they play football, find the probability they also 
 <details>
 <summary>Solution</summary>
 
-$P(F) = 25/40 = 0.625$, $P(C) = 18/40 = 0.45$, $P(F \cup C) = 35/40 = 0.875$.
+$P(F) = 25/40 = 0.625$$P(C) = 18/40 = 0.45$$P(F \cup C) = 35/40 = 0.875$.
 
 $P(F \cap C) = 0.625 + 0.45 - 0.875 = 0.20$.
 
@@ -304,7 +304,7 @@ $P(\mathrm{condition} \mid \mathrm{negative})$.
 <details>
 <summary>Solution</summary>
 
-$P(T^+ \mid C) = 0.92$, $P(T^- \mid C') = 0.96$, $P(C) = 0.03$.
+$P(T^+ \mid C) = 0.92$$P(T^- \mid C') = 0.96$$P(C) = 0.03$.
 
 (a)
 $P(C \mid T^+) = \dfrac◆LB◆0.92 \times 0.03◆RB◆◆LB◆0.92 \times 0.03 + 0.04 \times 0.97◆RB◆ = \dfrac{0.0276}{0.0276 + 0.0388} = \dfrac{0.0276}{0.0664} \approx 0.416$

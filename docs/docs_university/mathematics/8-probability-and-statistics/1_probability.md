@@ -95,12 +95,12 @@ $P(A) = P(B) = P(C) = 1/2$.
 $P(A \cap B) = 1/4 = P(A)P(B)$.
 $P(A \cap C) = P(\text◆LB◆first even, sum even) = P(\text◆LB◆second even) = 1/4 = P(A)P(C)$.
 
-$P(B \cap C) = 1/4 = P(B)P(C)$. So $A$, $B$, $C$ are pairwise independent.
+$P(B \cap C) = 1/4 = P(B)P(C)$. So $A$$B$$C$ are pairwise independent.
 
 But
 $P(A \cap B \cap C) = P(\text◆LB◆both even, sum even) = P(\text◆LB◆both even) = 1/4 \neq 1/8 = P(A)P(B)P(C)$.
 
-So $A$, $B$, $C$ are pairwise independent but not mutually independent. $\blacksquare$
+So $A$$B$$C$ are pairwise independent but not mutually independent. $\blacksquare$
 
 </details>
 
@@ -143,7 +143,7 @@ Provided the sum converges absolutely.
 **Definition (Variance).** $\mathrm◆LB◆Var(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
 
 **Proposition 2.2 (Linearity of Expectation).** $E[aX + bY] = aE[X] + bE[Y]$ for any random
-variables $X$, $Y$ and constants $a$, $b$.
+variables $X$$Y$ and constants $a$$b$.
 
 _Proof._ Direct computation from the definition of expected value. For the discrete case:
 
@@ -171,17 +171,17 @@ $$F_X(x) = \int_◆LB◆-\infty◆RB◆^◆LB◆x◆RB◆ f_X(t)\, dt$$
 
 | Distribution       | PMF                             | $E[X]$    | $\mathrm◆LB◆Var(X)$ |
 | ------------------ | ------------------------------- | --------- | ---------------- |
-| Bernoulli$(p)$     | $p^x(1-p)^◆LB◆1-x◆RB◆$, $x \in \{0,1\}$ | $p$       | $p(1-p)$         |
+| Bernoulli$(p)$     | $p^x(1-p)^◆LB◆1-x◆RB◆$$x \in \{0,1\}$ | $p$       | $p(1-p)$         |
 | Binomial$(n,p)$    | $\binom◆LB◆n◆RB◆◆LB◆x◆RB◆p^x(1-p)^◆LB◆n-x◆RB◆$    | $np$      | $np(1-p)$        |
 | Poisson$(\lambda)$ | $e^◆LB◆-\lambda◆RB◆\lambda^x / x!$    | $\lambda$ | $\lambda$        |
-| Geometric$(p)$     | $(1-p)^◆LB◆x-1◆RB◆p$, $x \geq 1$        | $1/p$     | $(1-p)/p^2$      |
+| Geometric$(p)$     | $(1-p)^◆LB◆x-1◆RB◆p$$x \geq 1$        | $1/p$     | $(1-p)/p^2$      |
 
 **Continuous distributions:**
 
 | Distribution           | PDF                                                     | $E[X]$      | $\mathrm◆LB◆Var(X)$ |
 | ---------------------- | ------------------------------------------------------- | ----------- | ---------------- |
 | Uniform$(a,b)$         | $1/(b-a)$ on $[a,b]$                                    | $(a+b)/2$   | $(b-a)^2/12$     |
-| Exponential$(\lambda)$ | $\lambda e^◆LB◆-\lambda x◆RB◆$, $x \geq 0$                      | $1/\lambda$ | $1/\lambda^2$    |
+| Exponential$(\lambda)$ | $\lambda e^◆LB◆-\lambda x◆RB◆$$x \geq 0$                      | $1/\lambda$ | $1/\lambda^2$    |
 | $N(\mu, \sigma^2)$     | $\frac◆LB◆1◆RB◆◆LB◆\sigma\sqrt◆LB◆2\pi◆RB◆◆RB◆e^◆LB◆-(x-\mu)^2/(2\sigma^2)◆RB◆$ | $\mu$       | $\sigma^2$       |
 
 ### 2.5 The Normal Distribution

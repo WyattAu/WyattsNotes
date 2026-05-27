@@ -374,7 +374,7 @@ $$
 2x^2 + 5x + 2 = (2x + 1)(x + 2)
 $$
 
-Roots: $x = 3$, $x = -\dfrac{1}{2}$, $x = -2$.
+Roots: $x = 3$$x = -\dfrac{1}{2}$$x = -2$.
 
 :::
 
@@ -610,7 +610,7 @@ $$
 Y = 2(x-3)^2 - 5 \implies y + 5 = 2(x-3)^2 \implies (x-3)^2 = \frac{y+5}{2}
 $$
 
-Since $x \ge 3$, $x - 3 \ge 0$:
+Since $x \ge 3$$x - 3 \ge 0$:
 
 $$
 X = 3 + \sqrt{\frac{y+5}{2}}
@@ -826,7 +826,7 @@ Continuous at $x = 2$.
 
 ### Question 6 (Paper 2 style)
 
-The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for $x \in \mathbb{R}$, $x \neq 1$.
+The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for $x \in \mathbb{R}$$x \neq 1$.
 
 **(a)** Find the inverse function $f^{-1}$.
 

@@ -73,7 +73,7 @@ Calculus or other methods.
 
 A car accelerates from rest at $2\mathrm{ m/s}^2$ for $6$ seconds. Find the distance travelled.
 
-$u = 0$, $a = 2$, $t = 6$.
+$u = 0$$a = 2$$t = 6$.
 
 $$
 S = ut + \frac{1}{2}at^2 = 0 + \frac{1}{2}(2)(36) = 36\mathrm{ m}
@@ -181,7 +181,7 @@ This value varies slightly with location and altitude.
 
 ### Key Results for Free Fall
 
-- Objects dropped from rest: $u = 0$, $a = g$.
+- Objects dropped from rest: $u = 0$$a = g$.
 - Time to fall height $h$: $h = \dfrac{1}{2}gt^2 \implies t = \sqrt{\dfrac{2h}{g}}$.
 - Speed after falling height $h$: $v = \sqrt{2gh}$.
 - In the absence of air resistance, all objects fall at the same rate regardless of mass.
@@ -569,7 +569,7 @@ $$
 
 :::info[Example]
 
-A particle moves with acceleration $a = 6t\mathrm{ m/s}^2$. At $t = 0$, $v = 2\mathrm{ m/s}$ and
+A particle moves with acceleration $a = 6t\mathrm{ m/s}^2$. At $t = 0$$v = 2\mathrm{ m/s}$ and
 $s = 0$.
 
 $$
@@ -805,7 +805,7 @@ $$
 For a projectile launched with initial velocity
 $\vec{u} = u\cos\theta\,\hat{i} + u\sin\theta\,\hat{j}$:
 
-- $a_x = 0$, $a_y = -g$
+- $a_x = 0$$a_y = -g$
 
 $$
 X(t) = u\cos\theta \cdot t
@@ -864,7 +864,7 @@ Release, the balloon is at a height of $120\mathrm{ m}$.
 
 **(a)** Find the maximum height reached by the object.
 
-At release: $u_y = 5\mathrm{ m/s}$, $s_y = 120\mathrm{ m}$.
+At release: $u_y = 5\mathrm{ m/s}$$s_y = 120\mathrm{ m}$.
 
 $$
 V_y^2 = u_y^2 - 2g \cdot \Delta s \implies 0 = 25 - 2(9.81)\Delta s

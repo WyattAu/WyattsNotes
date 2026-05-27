@@ -531,7 +531,7 @@ $$T = \frac{\Delta H}{\Delta S}$$
 
 $$\mathrm{CaCO}_{3(s)} \to \mathrm{CaO}_{(s)} + \mathrm{CO}_{2(g)}$$
 
-$\Delta H = +178 \mathrm{ kJ/mol}$, $\Delta S = +0.161 \mathrm{ kJ mol}^{-1} \mathrm{ K}^{-1}$
+$\Delta H = +178 \mathrm{ kJ/mol}$$\Delta S = +0.161 \mathrm{ kJ mol}^{-1} \mathrm{ K}^{-1}$
 
 Calculate the minimum temperature at which the reaction becomes feasible.
 
@@ -548,7 +548,7 @@ Above $833^\circ\mathrm{C}$The reaction becomes thermodynamically feasible.
 **Worked example 10:** For the reaction
 $\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \to 2\mathrm{NH}_{3(g)}$:
 
-$\Delta H = -92.0 \mathrm{ kJ/mol}$, $\Delta S = -0.199 \mathrm{ kJ mol}^{-1} \mathrm{ K}^{-1}$
+$\Delta H = -92.0 \mathrm{ kJ/mol}$$\Delta S = -0.199 \mathrm{ kJ mol}^{-1} \mathrm{ K}^{-1}$
 
 Is the reaction feasible at 298 K? At what temperature does it become non-feasible?
 
@@ -680,7 +680,7 @@ This is slightly less exothermic than $-57.3 \mathrm{ kJ/mol}$ due to heat losse
 
 For the reaction $\mathrm{C}_{(s)} + \mathrm{CO}_{2(g)} \to 2\mathrm{CO}_{(g)}$:
 
-$\Delta H = +173 \mathrm{ kJ/mol}$, $\Delta S = +0.176 \mathrm{ kJ mol}^{-1} \mathrm{ K}^{-1}$
+$\Delta H = +173 \mathrm{ kJ/mol}$$\Delta S = +0.176 \mathrm{ kJ mol}^{-1} \mathrm{ K}^{-1}$
 
 Calculate $\Delta G$ at 298 K and at 1000 K. At what temperature does the reaction become feasible?
 

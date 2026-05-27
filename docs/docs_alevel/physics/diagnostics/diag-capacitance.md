@@ -77,7 +77,7 @@ A capacitor of capacitance $C = 100\,\mu\text{F}$ is charged from a $12\,\text{V
 resistor.
 
 (a) Calculate the energy stored on the capacitor using each of the three formulae:
-$\frac{1}{2}CV^2$, $\frac{1}{2}QV$And $\frac{Q^2}{2C}$.
+$\frac{1}{2}CV^2$$\frac{1}{2}QV$And $\frac{Q^2}{2C}$.
 
 (b) Calculate the total energy supplied by the battery during charging.
 
@@ -281,7 +281,7 @@ This energy is dissipated as heat in the connecting wires (or resistor) and as e
 radiation during the transient current flow. This is a fundamental result: connecting two capacitors
 always results in energy loss.
 
-(c) At $t = 0$, $C_2$ is uncharged (zero voltage) and $C_1$ is at $50\,\text{V}$So the full voltage
+(c) At $t = 0$$C_2$ is uncharged (zero voltage) and $C_1$ is at $50\,\text{V}$So the full voltage
 difference appears across $R$:
 
 $$I_0 = \frac{V_1}{R} = \frac{50}{100} = 0.50\,\text{A}$$

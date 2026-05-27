@@ -366,7 +366,7 @@ $$
 :::info[Example]
 
 Calculate the binding energy of the helium-4 nucleus. ($m_p = 1.00728\mathrm{ u}$
-$m_n = 1.00867\mathrm{ u}$, $m_{\alpha} = 4.00151\mathrm{ u}$ $1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
+$m_n = 1.00867\mathrm{ u}$$m_{\alpha} = 4.00151\mathrm{ u}$ $1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
 
 $$
 \Delta m = 2(1.00728) + 2(1.00867) - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039\mathrm{ u}
@@ -574,10 +574,10 @@ $$
 ### Question 4 (Paper 2 style)
 
 Calculate the energy released when $^{235}\mathrm{U}$ undergoes fission to produce
-$^{141}\mathrm{Ba}$, $^{92}\mathrm{Kr}$And 3 neutrons.
+$^{141}\mathrm{Ba}$$^{92}\mathrm{Kr}$And 3 neutrons.
 
-Masses: $^{235}\mathrm{U} = 235.044\mathrm{ u}$, $^{141}\mathrm{Ba} = 140.914\mathrm{ u}$
-$^{92}\mathrm{Kr} = 91.926\mathrm{ u}$, $n = 1.00867\mathrm{ u}$.
+Masses: $^{235}\mathrm{U} = 235.044\mathrm{ u}$$^{141}\mathrm{Ba} = 140.914\mathrm{ u}$
+$^{92}\mathrm{Kr} = 91.926\mathrm{ u}$$n = 1.00867\mathrm{ u}$.
 
 $$
 \Delta m = 235.044 - (140.914 + 91.926 + 3 \times 1.00867)

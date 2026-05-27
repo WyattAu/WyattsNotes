@@ -177,7 +177,7 @@ $\prod r_i = (-1)^n a_0 / a_n$.
 
 ### 4.3 Functional Equations
 
-**Technique: strategic substitution.** Common substitutions: $P(x,x)$, $P(x,0)$, $P(0,x)$ Swapping
+**Technique: strategic substitution.** Common substitutions: $P(x,x)$$P(x,0)$$P(0,x)$ Swapping
 $P(x,y)$ and $P(y,x)$Composing $P(x, P(y,z))$.
 
 **Technique: finding the form.** Often the solution is polynomial. If you suspect $f(x) = ax + b$
@@ -229,7 +229,7 @@ lies on all three medians by symmetry.
 
 ### Question 1 (Number Theory: Divisibility)
 
-> Prove that for all positive integers $n$, $n^5 - n$ is divisible by 30.
+> Prove that for all positive integers $n$$n^5 - n$ is divisible by 30.
 
 **Solution.** Factor $n^5 - n = n(n^4 - 1) = (n-1)n(n+1)(n^2 + 1)$.
 

@@ -328,7 +328,7 @@ $e = 1$ corresponds to a perfectly elastic collision; $e = 0$ to a perfectly ine
 With speeds $6\;\mathrm{m\,s^{-1}}$ and $4\;\mathrm{m\,s^{-1}}$ respectively. They collide directly
 With coefficient of restitution $e = 0.5$. Find their velocities after the collision.
 
-Taking the direction of the $2\;\mathrm{kg}$ particle as positive, $u_1 = 6$, $u_2 = -4$.
+Taking the direction of the $2\;\mathrm{kg}$ particle as positive, $u_1 = 6$$u_2 = -4$.
 
 Conservation of momentum:
 

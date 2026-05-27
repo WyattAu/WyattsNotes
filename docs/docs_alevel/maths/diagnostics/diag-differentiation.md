@@ -56,7 +56,7 @@ $$\frac{dy}{dx} = 3e^{3x}\sin(2e^{3x})$$
 
 **(c)** Starting from $\frac{dy}{dx} = 3e^{3x}\sin(2e^{3x})$.
 
-Apply the product rule: $u = 3e^{3x}$, $v = \sin(2e^{3x})$.
+Apply the product rule: $u = 3e^{3x}$$v = \sin(2e^{3x})$.
 
 $$\frac{du}{dx} = 9e^{3x}$$
 
@@ -66,7 +66,7 @@ $$\frac{d^2y}{dx^2} = 9e^{3x}\sin(2e^{3x}) + 3e^{3x} \cdot 6e^{3x}\cos(2e^{3x})$
 
 $$= 9e^{3x}\sin(2e^{3x}) + 18e^{6x}\cos(2e^{3x})$$
 
-At $x = 0$: $e^0 = 1$, $2e^0 = 2$.
+At $x = 0$: $e^0 = 1$$2e^0 = 2$.
 
 $$\frac{d^2y}{dx^2}\bigg\rvert_{x=0} = 9\sin 2 + 18\cos 2$$
 
@@ -129,8 +129,8 @@ When $x = 2$: $y = -4$. Point: $(2, -4)$.
 
 When $x = -2$: $y = 4$. Point: $(-2, 4)$.
 
-Checking: at $(2, -4)$, $\frac{dy}{dx} = -\frac{4-4}{2-8} = 0$. At
-$(-2, 4)$, $\frac{dy}{dx} = -\frac{-4+4}{-2+8} = 0$. Confirmed.
+Checking: at $(2, -4)$$\frac{dy}{dx} = -\frac{4-4}{2-8} = 0$. At
+$(-2, 4)$$\frac{dy}{dx} = -\frac{-4+4}{-2+8} = 0$. Confirmed.
 
 ---
 
@@ -234,14 +234,14 @@ $\mathbb{R}$.
 For example, $f(-1) = -1 + 3 + 1 = 3$ and $f(2) = 8 - 6 + 1 = 3$So $f(-1) = f(2)$ with $-1 \neq 2$.
 
 **(b)** The largest interval containing $x = 0$ on which $f$ is monotonic is $[-1, 1]$ (where
-$f' \leq 0$With equality only at the endpoints). Actually, on $(-1, 1)$, $f' \lt 0$So $f$ is strictly
+$f' \leq 0$With equality only at the endpoints). Actually, on $(-1, 1)$$f' \lt 0$So $f$ is strictly
 decreasing and therefore injective.
 
 The largest such interval is $[-1, 1]$.
 
 **(c)** $g'(x) = 1 + e^x$.
 
-Since $e^x \gt 0$ for all $x$, $g'(x) = 1 + e^x \gt 0$ for all $x \in \mathbb{R}$.
+Since $e^x \gt 0$ for all $x$$g'(x) = 1 + e^x \gt 0$ for all $x \in \mathbb{R}$.
 
 Therefore $g$ is strictly increasing on $\mathbb{R}$And hence injective.
 
@@ -282,9 +282,9 @@ for tangency across two curves.]
 
 **Solution:**
 
-**(a)** $y = x^2 - 4x + 5$, $\frac{dy}{dx} = 2x - 4$.
+**(a)** $y = x^2 - 4x + 5$$\frac{dy}{dx} = 2x - 4$.
 
-At $x = 1$: $y = 1 - 4 + 5 = 2$, $\frac{dy}{dx} = -2$.
+At $x = 1$: $y = 1 - 4 + 5 = 2$$\frac{dy}{dx} = -2$.
 
 Tangent: $y - 2 = -2(x - 1) \implies y = -2x + 4$.
 

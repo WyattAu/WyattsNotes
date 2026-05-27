@@ -236,7 +236,7 @@ and directing the electrophile to the ortho (2-, 6-) and para (4-) positions.
 
 | Group                           | Mechanism                   | Relative activating power |
 | ------------------------------- | --------------------------- | ------------------------- |
-| $-\mathrm{NH}_2$, $-\mathrm{NHR}$ | Resonance donation (strong) | Very strong               |
+| $-\mathrm{NH}_2$$-\mathrm{NHR}$ | Resonance donation (strong) | Very strong               |
 | $-\mathrm{OH}$                  | Resonance donation (strong) | Strong                    |
 | $-\mathrm{OR}$                  | Resonance donation          | Strong                    |
 | $-\mathrm{R}$ (alkyl)           | Inductive donation (weak)   | Weak                      |
@@ -255,10 +255,10 @@ substitution and directing the electrophile to the meta (3-, 5-) position.
 | --------------------------------------- | ---------------------------------------- | --------------------------- |
 | $-\mathrm{NO}_2$                        | Resonance withdrawal (strong)            | Very strong                 |
 | $-\mathrm{CN}$                          | Resonance withdrawal                     | Strong                      |
-| $-\mathrm{COOH}$, $-\mathrm{COR}$         | Resonance withdrawal                     | Strong                      |
+| $-\mathrm{COOH}$$-\mathrm{COR}$         | Resonance withdrawal                     | Strong                      |
 | $-\mathrm{SO}_3\mathrm{H}$              | Resonance withdrawal                     | Strong                      |
 | $-\mathrm{CF}_3$                        | Inductive withdrawal                     | Moderate                    |
-| Halogens ($-\mathrm{Cl}$, $-\mathrm{Br}$) | Inductive withdrawal, resonance donation | Weak deactivation           |
+| Halogens ($-\mathrm{Cl}$$-\mathrm{Br}$) | Inductive withdrawal, resonance donation | Weak deactivation           |
 
 **Why meta?** The resonance structures of the arenium ion for ortho or para attack place the
 positive charge on the carbon bearing the electron-withdrawing group, which further destabilises the
@@ -287,10 +287,10 @@ $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$ at higher temperature) and produces
 
 | Group type                                                    | Effect on rate       | Directing  |
 | ------------------------------------------------------------- | -------------------- | ---------- |
-| $-\mathrm{NH}_2$, $-\mathrm{OH}$, $-\mathrm{OR}$                  | Activates strongly   | Ortho/para |
+| $-\mathrm{NH}_2$$-\mathrm{OH}$$-\mathrm{OR}$                  | Activates strongly   | Ortho/para |
 | Alkyl ($-\mathrm{R}$)                                         | Activates weakly     | Ortho/para |
 | Halogens                                                      | Deactivates weakly   | Ortho/para |
-| $-\mathrm{NO}_2$, $-\mathrm{CN}$, $-\mathrm{COR}$, $-\mathrm{COOH}$ | Deactivates strongly | Meta       |
+| $-\mathrm{NO}_2$$-\mathrm{CN}$$-\mathrm{COR}$$-\mathrm{COOH}$ | Deactivates strongly | Meta       |
 
 ## Common Pitfalls
 
@@ -396,10 +396,10 @@ performed, the existing substituent controls the position of the new group:
 These groups donate electron density to the ring, activating it and directing substitution to the
 ortho (positions 2 and 6) and para (position 4) positions:
 
-- $-\mathrm{OH}$, $-\mathrm{OR}$ (strong activators)
-- $-\mathrm{NH}_2$, $-\mathrm{NHR}$, $-\mathrm{NR}_2$ (strong activators)
-- $-\mathrm{CH}_3$, $-\mathrm{R}$ (moderate activators)
-- Halogens: $-\mathrm{F}$, $-\mathrm{Cl}$, $-\mathrm{Br}$, $-\mathrm{I}$ (deactivators but ortho/para
+- $-\mathrm{OH}$$-\mathrm{OR}$ (strong activators)
+- $-\mathrm{NH}_2$$-\mathrm{NHR}$$-\mathrm{NR}_2$ (strong activators)
+- $-\mathrm{CH}_3$$-\mathrm{R}$ (moderate activators)
+- Halogens: $-\mathrm{F}$$-\mathrm{Cl}$$-\mathrm{Br}$$-\mathrm{I}$ (deactivators but ortho/para
   directors)
 
 ### Meta Directors (Deactivating)
@@ -408,11 +408,11 @@ These groups withdraw electron density from the ring, deactivating it and direct
 the meta position (position 3 and 5):
 
 - $-\mathrm{NO}_2$ (very strong deactivator)
-- $-\mathrm{CF}_3$, $-\mathrm{CCl}_3$
+- $-\mathrm{CF}_3$$-\mathrm{CCl}_3$
 - $-\mathrm{CN}$
 - $-\mathrm{SO}_3\mathrm{H}$
-- $-\mathrm{CHO}$, $-\mathrm{COR}$
-- $-\mathrm{COOH}$, $-\mathrm{COOR}$
+- $-\mathrm{CHO}$$-\mathrm{COR}$
+- $-\mathrm{COOH}$$-\mathrm{COOR}$
 
 ### Worked Examples
 
@@ -631,13 +631,13 @@ then nitrate).
 **Calculate the delocalisation energy of benzene from hydrogenation data.**
 
 Hydrogenation of cyclohexene:
-$\mathrm{C}_6\mathrm{H}_{10} + \mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$, $\Delta H = -120\,\mathrm{kJ/mol}$
+$\mathrm{C}_6\mathrm{H}_{10} + \mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$$\Delta H = -120\,\mathrm{kJ/mol}$
 
 If benzene had three isolated C=C bonds, expected
 $\Delta H_\mathrm{hydrogenation} = 3 \times (-120) = -360\,\mathrm{kJ/mol}$
 
 Experimental:
-$\mathrm{C}_6\mathrm{H}_6 + 3\mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$, $\Delta H = -208\,\mathrm{kJ/mol}$
+$\mathrm{C}_6\mathrm{H}_6 + 3\mathrm{H}_2 \to \mathrm{C}_6\mathrm{H}_{12}$$\Delta H = -208\,\mathrm{kJ/mol}$
 
 $$\text{Delocalisation energy} = -360 - (-208) = -152\,\mathrm{kJ/mol}$$
 

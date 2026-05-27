@@ -180,7 +180,7 @@ The acceleration is $a = dv/dt = 6t - 18 = 6(t - 3)$.
 
 - At $t = 3$: $a = 0$The particle changes from decelerating to accelerating (in the positive sense).
 
-Displacement at key times: $s(0) = 0$, $s(2) = 8 - 36 + 48 = 20$, $s(4) = 64 - 144 + 96 = 16$
+Displacement at key times: $s(0) = 0$$s(2) = 8 - 36 + 48 = 20$$s(4) = 64 - 144 + 96 = 16$
 $s(6) = 216 - 324 + 144 = 36$.
 
 <hr />
@@ -393,7 +393,7 @@ A car accelerates from rest at $2\,\mathrm{m/s}^2$ for 8 seconds. Find the dista
 
 <details>
 <summary>Solution 1</summary>
-$u = 0$, $a = 2$, $t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
+$u = 0$$a = 2$$t = 8$. Using $s = ut + \tfrac{1}{2}at^2$:
 
 $s = 0 + \tfrac{1}{2}(2)(64) = 64\,\mathrm{m}$.
 
@@ -425,7 +425,7 @@ A projectile is launched at $30\,\mathrm{m/s}$ at an angle of $40^\circ$ above t
 
 <details>
 <summary>Solution 3</summary>
-$v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$, $v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
+$v_x = 30\cos 40° \approx 22.98\,\mathrm{m/s}$$v_y = 30\sin 40° \approx 19.28\,\mathrm{m/s}$.
 
 $H_{\max} = \dfrac{(19.28)^2}{2(9.8)} = \dfrac{371.72}{19.6} \approx 18.97\,\mathrm{m}$.
 
@@ -442,7 +442,7 @@ A train decelerates uniformly from $25\,\mathrm{m/s}$ to $10\,\mathrm{m/s}$ over
 
 <details>
 <summary>Solution 4</summary>
-$u = 25$, $v = 10$, $s = 200$.
+$u = 25$$v = 10$$s = 200$.
 
 $v^2 = u^2 + 2as \implies 100 = 625 + 400a \implies a = -525/400 = -1.3125\,\mathrm{m/s}^2$.
 
@@ -533,13 +533,13 @@ A car travels at $20\,\mathrm{m/s}$ for 30 seconds, then decelerates at $1.5\,\m
 
 <details>
 <summary>Solution 9</summary>
-Phase 1: $s_1 = 20 \times 30 = 600\,\mathrm{m}$, $t_1 = 30\,\mathrm{s}$.
+Phase 1: $s_1 = 20 \times 30 = 600\,\mathrm{m}$$t_1 = 30\,\mathrm{s}$.
 
 Phase 2: $v = u + at \implies 0 = 20 - 1.5t \implies t = 40/3 \approx 13.33\,\mathrm{s}$.
 
 $s_2 = ut + \tfrac{1}{2}at^2 = 20(40/3) - \tfrac{1}{2}(1.5)(1600/9) = 800/3 - 400/3 = 400/3 \approx 133.3\,\mathrm{m}$.
 
-Total: $s = 600 + 133.3 = 733.3\,\mathrm{m}$, $t = 30 + 13.33 = 43.33\,\mathrm{s}$.
+Total: $s = 600 + 133.3 = 733.3\,\mathrm{m}$$t = 30 + 13.33 = 43.33\,\mathrm{s}$.
 
 **If you get this wrong, revise:** [The SUVAT Equations](#2-the-suvat-equations) — Section 2.
 
@@ -601,7 +601,7 @@ $\dfrac{18976.9}{v^2} = 27.67 \implies v^2 = 686.0 \implies v \approx 26.2\,\mat
 
 <details>
 <summary>Problem 13</summary>
-A particle moves with acceleration $a = 4 - 2t\,\mathrm{m/s}^2$. When $t = 0$, $v = 3\,\mathrm{m/s}$ and $s = 0$. Find the velocity and displacement when $t = 5$. Also find when the particle is at rest.
+A particle moves with acceleration $a = 4 - 2t\,\mathrm{m/s}^2$. When $t = 0$$v = 3\,\mathrm{m/s}$ and $s = 0$. Find the velocity and displacement when $t = 5$. Also find when the particle is at rest.
 </details>
 
 <details>
@@ -630,7 +630,7 @@ A projectile is launched from the top of a cliff $60\,\mathrm{m}$ high at $20\,\
 
 <details>
 <summary>Solution 14</summary>
-Horizontal: $v_x = 20\,\mathrm{m/s}$ (constant). Vertical: $u_y = 0$, $a_y = 9.8$, $s_y = 60$ (downwards positive).
+Horizontal: $v_x = 20\,\mathrm{m/s}$ (constant). Vertical: $u_y = 0$$a_y = 9.8$$s_y = 60$ (downwards positive).
 
 $s_y = \tfrac{1}{2}gt^2 \implies 60 = 4.9t^2 \implies t = \sqrt{60/4.9} \approx 3.50\,\mathrm{s}$.
 
@@ -687,7 +687,7 @@ A ball is thrown at $12\,\mathrm{m/s}$ at an angle of $60^\circ$ above the horiz
 
 <details>
 <summary>Solution 16</summary>
-$v_x = 12\cos 60° = 6\,\mathrm{m/s}$, $v_{y0} = 12\sin 60° = 6\sqrt{3} \approx 10.39\,\mathrm{m/s}$.
+$v_x = 12\cos 60° = 6\,\mathrm{m/s}$$v_{y0} = 12\sin 60° = 6\sqrt{3} \approx 10.39\,\mathrm{m/s}$.
 
 Taking upwards as positive with launch at $s_y = 2$:
 
@@ -710,7 +710,7 @@ Angle below horizontal: $\arctan(12.05/6) \approx 63.5^\circ$.
 
 <details>
 <summary>Problem 17</summary>
-A particle moves so that $a = -6s\,\mathrm{m/s}^2$Where $s$ is the displacement from a fixed point. When $s = 0$, $v = 8\,\mathrm{m/s}$. Find the velocity when $s = 1$.
+A particle moves so that $a = -6s\,\mathrm{m/s}^2$Where $s$ is the displacement from a fixed point. When $s = 0$$v = 8\,\mathrm{m/s}$. Find the velocity when $s = 1$.
 </details>
 
 <details>
@@ -723,7 +723,7 @@ $$\int v\,dv = \int -6s\,ds$$
 
 $$\frac{v^2}{2} = -3s^2 + C$$
 
-When $s = 0$, $v = 8$: $64/2 = C \implies C = 32$.
+When $s = 0$$v = 8$: $64/2 = C \implies C = 32$.
 
 $$\frac{v^2}{2} = -3s^2 + 32$$
 
@@ -746,10 +746,10 @@ A particle $P$ is projected from a point $A$ on horizontal ground with speed $u$
 
 <details>
 <summary>Solution 18</summary>
-Highest point of $P$'s trajectory: $x = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$, $y = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$At time
+Highest point of $P$'s trajectory: $x = \dfrac◆LB◆u^2\sin 2\theta◆RB◆◆LB◆2g◆RB◆$$y = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆$At time
 $t_1 = \dfrac◆LB◆u\sin\theta◆RB◆◆LB◆g◆RB◆$.
 
-After $t_1$, $P$ is in free fall with $v_y = 0$ at $t_1$So for $t \geq t_1$:
+After $t_1$$P$ is in free fall with $v_y = 0$ at $t_1$So for $t \geq t_1$:
 
 $y_P = \dfrac◆LB◆u^2\sin^2\theta◆RB◆◆LB◆2g◆RB◆ - \dfrac{1}{2}g(t - t_1)^2$.
 
@@ -767,14 +767,14 @@ That instant, so for collision we need $y_Q(0^+) = y_P(t_1) = H$.
 
 $Q$ starts at ground level ($y_Q = 0$) and must reach $y = H = u^2\sin^2\theta / (2g)$.
 
-For $Q$: $v_Q = w - gt$, $y_Q = wt - \tfrac{1}{2}gt^2$Where $w$ is the projection speed.
+For $Q$: $v_Q = w - gt$$y_Q = wt - \tfrac{1}{2}gt^2$Where $w$ is the projection speed.
 
 Collision at $y = H$ when $t = 0$ is impossible ($Q$ starts at $y = 0$). So collision must occur at
 Some $\Delta t \gt 0$ after $t_1$.
 
 At time $t_1 + \Delta t$:
 
-$y_P = H - \tfrac{1}{2}g(\Delta t)^2$, $y_Q = w\,\Delta t - \tfrac{1}{2}g(\Delta t)^2$.
+$y_P = H - \tfrac{1}{2}g(\Delta t)^2$$y_Q = w\,\Delta t - \tfrac{1}{2}g(\Delta t)^2$.
 
 For collision: $H = w\,\Delta t$. Also, $x$ must match:
 $u\cos\theta(t_1 + \Delta t) = u^2\sin\theta\cos\theta/g + u\cos\theta\,\Delta t$. This is satisfied

@@ -474,7 +474,7 @@ $$
 $$
 
 Incomplete combustion occurs when the supply of oxygen is insufficient for all carbon to be fully
-oxidised to $\mathrm{CO}_2$. The products are a mixture of $\mathrm{CO}_2$, $\mathrm{CO}$, $\mathrm{C}$
+oxidised to $\mathrm{CO}_2$. The products are a mixture of $\mathrm{CO}_2$$\mathrm{CO}$$\mathrm{C}$
 (soot), and unburnt hydrocarbons. $\mathrm{CO}$ is toxic because it binds irreversibly to
 haemoglobin, reducing the blood's oxygen-carrying capacity.
 
@@ -663,7 +663,7 @@ $M = 10.0/n(\text{alkane}) = 10.0n/0.700 = 14.3n$.
 
 For $\mathrm{C}_5\mathrm{H}_{12}$: $M = 60 + 12 = 72$. $14.3n = 72 \implies n = 5.03 \approx 5$.
 
-The alkane is **pentane** ($\mathrm{C}_5\mathrm{H}_{12}$, $M = 72.0\,\mathrm{g/mol}$).
+The alkane is **pentane** ($\mathrm{C}_5\mathrm{H}_{12}$$M = 72.0\,\mathrm{g/mol}$).
 
 Check: $n(\text{pentane}) = 10.0/72.0 = 0.139\,\mathrm{mol}$.
 $n(\mathrm{CO}_2) = 5 \times 0.139 = 0.694\,\mathrm{mol}$.
@@ -803,7 +803,7 @@ Catalytic converters reduce the emissions from internal combustion engines:
 
 1. **Writing balanced combustion equations:** For $\mathrm{C}_n\mathrm{H}_{2n+2}$The coefficient of
    $\mathrm{O}_2$ is $\frac{3n+1}{2}$Not $n + \frac{n+1}{2}$ (these are the same, but students often
-   get the algebra wrong). For odd $n$, $\frac{3n+1}{2}$ is not an integer, so double the entire
+   get the algebra wrong). For odd $n$$\frac{3n+1}{2}$ is not an integer, so double the entire
    equation.
 
 2. **Confusing substitution and addition:** Alkanes undergo substitution (one atom replaces

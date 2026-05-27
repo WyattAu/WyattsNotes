@@ -120,7 +120,7 @@ Simultaneously gives $Q$And the distance $PQ$ simplifies to the formula above.
 
 ### Area of a Triangle (HL)
 
-The area of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$:
+The area of a triangle with vertices $(x_1, y_1)$$(x_2, y_2)$$(x_3, y_3)$:
 
 $$
 A = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|
@@ -128,7 +128,7 @@ $$
 
 This is derived from the shoelace formula (also known as Gauss's area formula).
 
-**Example (HL):** Find the area of the triangle with vertices $(1, 2)$, $(4, 6)$, $(3, -1)$.
+**Example (HL):** Find the area of the triangle with vertices $(1, 2)$$(4, 6)$$(3, -1)$.
 
 $$
 A = \frac{1}{2}|1(6 - (-1)) + 4((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 - 12 - 12| = \frac{1}{2}|-17| = 8.5
@@ -215,7 +215,7 @@ Substitute the line into the circle equation. The discriminant of the resulting 
 
 ### Circle Through Three Points (HL)
 
-**Example (HL):** Find the equation of the circle through $(0, 0)$, $(4, 0)$And $(0, 4)$.
+**Example (HL):** Find the equation of the circle through $(0, 0)$$(4, 0)$And $(0, 4)$.
 
 Let the circle be $x^2 + y^2 + 2gx + 2fy + c = 0$.
 
@@ -472,7 +472,7 @@ Use when you know: two sides and a non-included angle, or two angles and one sid
 Or none. If $a > b$ and $A$ is acute, there is exactly one solution. If $a < b$ and $A$ is acute,
 There may be two solutions (the "ambiguous case").
 
-**Example (HL) -- Ambiguous case:** In $\triangle ABC$, $a = 8$, $b = 10$, $A = 40^\circ$. Find all
+**Example (HL) -- Ambiguous case:** In $\triangle ABC$$a = 8$$b = 10$$A = 40^\circ$. Find all
 Possible values of $B$.
 
 By the sine rule:
@@ -488,7 +488,7 @@ $$
 A^2 = b^2 + c^2 - 2bc\cos A
 $$
 
-**Example (OL):** In triangle $\triangle ABC$, $a = 7$, $b = 5$, $c = 8$. Find angle $A$.
+**Example (OL):** In triangle $\triangle ABC$$a = 7$$b = 5$$c = 8$. Find angle $A$.
 
 $$
 49 = 25 + 64 - 80\cos A \implies \cos A = \frac{40}{80} = \frac{1}{2} \implies A = 60°
@@ -503,7 +503,7 @@ $$
 **Proof.** Drop altitude $h$ from $B$ to side $b$. Then $h = a\sin C$So
 $A = \frac{1}{2} \times b \times h = \frac{1}{2}ab\sin C$.
 
-**Example (HL):** In $\triangle ABC$, $a = 8$, $b = 6$And $C = 50^\circ$. Find the area.
+**Example (HL):** In $\triangle ABC$$a = 8$$b = 6$And $C = 50^\circ$. Find the area.
 
 $$
 A = \frac{1}{2}(8)(6)\sin 50° = 24 \times 0.766 = 18.39 \mathrm{ square units
@@ -583,7 +583,7 @@ $$
 \mathbf{a} \times \mathbf{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 3 \\ 1 & 2 & -1 \end{vmatrix} = \mathbf{i}(1 - 6) - \mathbf{j}(-2 - 3) + \mathbf{k}(4 + 1) = -5\mathbf{i} + 5\mathbf{j} + 5\mathbf{k}
 $$
 
-$|\mathbf{a}| = \sqrt{4 + 1 + 9} = \sqrt{14}$, $|\mathbf{b}| = \sqrt{1 + 4 + 1} = \sqrt{6}$.
+$|\mathbf{a}| = \sqrt{4 + 1 + 9} = \sqrt{14}$$|\mathbf{b}| = \sqrt{1 + 4 + 1} = \sqrt{6}$.
 
 $\mathbf{a} \cdot \mathbf{b} = 2 - 2 - 3 = -3$.
 
@@ -592,7 +592,7 @@ $\cos\theta = \frac{-3}{\sqrt{14}\sqrt{6}} = \frac{-3}{2\sqrt{21}}$.
 ### Scalar Triple Product (HL)
 
 The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ gives the volume of the
-Parallelepiped spanned by $\mathbf{a}$, $\mathbf{b}$And $\mathbf{c}$.
+Parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And $\mathbf{c}$.
 
 $$
 \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}
@@ -612,7 +612,7 @@ Since the scalar triple product is $-16 \neq 0$The vectors are not coplanar.
 
 ### Area of a Triangle Using Vectors (HL)
 
-The area of triangle $\triangle ABC$ with position vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$:
+The area of triangle $\triangle ABC$ with position vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$:
 
 $$
 \mathrm{Area = \frac{1}{2}|\overrightarrow{AB} \times \overrightarrow{AC}|
@@ -627,7 +627,7 @@ $\overrightarrow{AC} = \mathbf{c} - \mathbf{a}$.
 
 The sum of the interior angles of a triangle is $180^\circ$.
 
-**Proof:** Let $\triangle ABC$ have vertices $A$, $B$, $C$. Draw a line through $A$ parallel to $BC$.
+**Proof:** Let $\triangle ABC$ have vertices $A$$B$$C$. Draw a line through $A$ parallel to $BC$.
 Then $\angle B = \angle BAX$ (alternate angles) and $\angle C = \angle CAY$ (alternate Angles).
 Since $BAX$ and $CAY$ together with $\angle A$ form a straight line:
 
@@ -713,9 +713,9 @@ See the examples integrated throughout the sections above.
 1. Find the equation of the line through $(2, -1)$ and $(4, 5)$.
 2. Find the centre and radius of $x^2 + y^2 + 6x - 2y + 6 = 0$.
 3. Solve $2\sin\theta = 1$ for $0 \leq \theta \leq 360^\circ$.
-4. In $\triangle ABC$, $a = 10$, $b = 7$, $C = 45^\circ$. Find $c$ using the cosine rule.
+4. In $\triangle ABC$$a = 10$$b = 7$$C = 45^\circ$. Find $c$ using the cosine rule.
 5. Prove that $\sin^2\theta + \cos^2\theta = 1$.
-6. Find the area of $\triangle ABC$ where $a = 8$, $b = 5$And $C = 60^\circ$.
+6. Find the area of $\triangle ABC$ where $a = 8$$b = 5$And $C = 60^\circ$.
 7. Find the midpoint and length of the segment joining $(-2, 3)$ and $(4, -1)$.
 
 ### Higher Level
@@ -723,7 +723,7 @@ See the examples integrated throughout the sections above.
 1. Prove that $\sin 3\theta = 3\sin\theta - 4\sin^3\theta$ using compound angle formulae.
 2. Find the shortest distance from $(1, -2)$ to the line $3x - 4y + 5 = 0$.
 3. Solve $\cos 2\theta = \cos\theta$ for $0 \leq \theta \leq 2\pi$.
-4. Find the area of the triangle with vertices $(1, 2)$, $(4, 6)$, $(3, -1)$.
+4. Find the area of the triangle with vertices $(1, 2)$$(4, 6)$$(3, -1)$.
 5. Given $\mathbf{a} = 2\mathbf{i} - \mathbf{j} + 3\mathbf{k}$ and
    $\mathbf{b} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$Find $\mathbf{a} \times \mathbf{b}$ and the
    angle between $\mathbf{a}$ and $\mathbf{b}$.
@@ -737,10 +737,10 @@ See the examples integrated throughout the sections above.
 11. Express $4\sin\theta + 3\cos\theta$ in the form $R\sin(\theta + \alpha)$ and hence find its
     maximum value.
 12. Find the area of the triangle with vertices at the points with position vectors
-    $\mathbf{i} + 2\mathbf{j} + 3\mathbf{k}$, $2\mathbf{i} - \mathbf{j} + \mathbf{k}$And
+    $\mathbf{i} + 2\mathbf{j} + 3\mathbf{k}$$2\mathbf{i} - \mathbf{j} + \mathbf{k}$And
     $3\mathbf{i} + \mathbf{j} - 2\mathbf{k}$.
 13. Solve $2\cos^2 x + \sin x = 2$ for $0 \le x \le 2\pi$.
-14. Find the equation of the circle passing through $(1, 0)$, $(0, 1)$And $(2, 3)$.
+14. Find the equation of the circle passing through $(1, 0)$$(0, 1)$And $(2, 3)$.
 15. Determine whether the vectors $\mathbf{i} + \mathbf{j} + \mathbf{k}$
     $2\mathbf{i} - \mathbf{j} + \mathbf{k}$And $3\mathbf{i} + 4\mathbf{k}$ are coplanar.
 

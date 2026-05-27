@@ -126,7 +126,7 @@ $$
 \end`\{pmatrix}`
 $$
 
-Where $v_x$, $v_y$, $v_z$ are the components along the $x$, $y$And $z$ axes respectively.
+Where $v_x$$v_y$$v_z$ are the components along the $x$$y$And $z$ axes respectively.
 
 ### Magnitude (Modulus)
 
@@ -330,7 +330,7 @@ With plane $2x - y + z = 5$.
 
 **Solution:**
 
-Normal vector $\hat{n} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$, $d = 5$.
+Normal vector $\hat{n} = \begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}$$d = 5$.
 
 Point on line: $\bm{a} = \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix}$Direction:
 $\bm{b} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix}$.
@@ -414,7 +414,7 @@ $$
 
 ### Proving Three Points Are Collinear
 
-Points $A$, $B$, $C$ are collinear if and only if $\overrightarrow{AB} = k\overrightarrow{AC}$ for Some
+Points $A$$B$$C$ are collinear if and only if $\overrightarrow{AB} = k\overrightarrow{AC}$ for Some
 scalar $k$.
 
 ### Finding the Foot of a Perpendicular
@@ -593,7 +593,7 @@ $\bm{b} = \begin{pmatrix} 4 \\ -1 \\ 1 \end{pmatrix}$.
 <summary>Answer 1</summary>
 
 $\bm{a} \cdot \bm{b} = (1)(4) + (3)(-1) + (-2)(1) = 4 - 3 - 2 = -1$.
-$|\bm{a}| = \sqrt{1 + 9 + 4} = \sqrt{14}$, $|\bm{b}| = \sqrt{16 + 1 + 1} = \sqrt{18} = 3\sqrt{2}$.
+$|\bm{a}| = \sqrt{1 + 9 + 4} = \sqrt{14}$$|\bm{b}| = \sqrt{16 + 1 + 1} = \sqrt{18} = 3\sqrt{2}$.
 $\cos\theta = \frac{-1}{3\sqrt{28}} = \frac{-1}{3 \times 5.292} = -0.0630$.
 $\theta = \arccos(-0.0630) \approx 93.6^\circ$.
 
@@ -602,7 +602,7 @@ $\theta = \arccos(-0.0630) \approx 93.6^\circ$.
 <details>
 <summary>Question 2</summary>
 
-Find the Cartesian equation of the plane containing the points $P(2, 1, 0)$, $Q(1, -1, 3)$And
+Find the Cartesian equation of the plane containing the points $P(2, 1, 0)$$Q(1, -1, 3)$And
 $R(4, 0, -1)$.
 
 </details>
@@ -666,7 +666,7 @@ Find the shortest distance from the point $A(2, -3, 1)$ to the plane $2x + y - 2
 <details>
 <summary>Answer 5</summary>
 
-$\hat{n} = \begin{pmatrix} 2 \\ 1 \\ -2 \end{pmatrix}$, $|\hat{n}| = \sqrt{4 + 1 + 4} = 3$.
+$\hat{n} = \begin{pmatrix} 2 \\ 1 \\ -2 \end{pmatrix}$$|\hat{n}| = \sqrt{4 + 1 + 4} = 3$.
 $\bm{p} \cdot \hat{n} = (2)(2) + (-3)(1) + (1)(-2) = 4 - 3 - 2 = -1$.
 $D = \frac{|-1 - 6|}{3} = \frac{7}{3}$.
 
@@ -717,7 +717,7 @@ $\bm{F} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} + \frac{19}{14}\begin{pmatr
 <details>
 <summary>Question 8</summary>
 
-Show that the points $A(1, 2, 3)$, $B(3, 5, 7)$And $C(5, 8, 11)$ are collinear.
+Show that the points $A(1, 2, 3)$$B(3, 5, 7)$And $C(5, 8, 11)$ are collinear.
 
 </details>
 

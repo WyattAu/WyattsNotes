@@ -37,7 +37,7 @@ $$\pi_◆LB◆\text◆LB◆name, \text◆LB◆salary \times 12 \to \text◆LB◆
 **Recursive closure:** Not expressible in basic relational algebra. Requires recursive CTEs or
 Datalog.
 
-**Division:** $R \div S$ returns tuples $t$ such that for every tuple $s \in S$, $(t, s) \in R$.
+**Division:** $R \div S$ returns tuples $t$ such that for every tuple $s \in S$$(t, s) \in R$.
 
 **Theorem 1.1.** Division can be expressed using basic relational algebra:
 
@@ -48,11 +48,11 @@ Where $A$ is the set of attributes of $R$ not in $S$.
 _Proof._ Let $t \in \pi_A(R)$. We need to show $t \in R \div S$ if and only if
 $t \notin \pi_A(\pi_A(R) \times S - R)$.
 
-($\Rightarrow$) If $t \in R \div S$Then for every $s \in S$, $(t, s) \in R$. So
+($\Rightarrow$) If $t \in R \div S$Then for every $s \in S$$(t, s) \in R$. So
 $(t, s) \notin \pi_A(R) \times S - R$ for any $s$Hence $t \notin \pi_A(\pi_A(R) \times S - R)$.
 
 ($\Leftarrow$) If $t \notin \pi_A(\pi_A(R) \times S - R)$Then there is no $s \in S$ such that
-$(t, s) \notin R$. This means for every $s \in S$, $(t, s) \in R$So $t \in R \div S$. $\blacksquare$
+$(t, s) \notin R$. This means for every $s \in S$$(t, s) \in R$So $t \in R \div S$. $\blacksquare$
 
 <details>
 <summary>Worked Example: Relational Division</summary>
@@ -839,7 +839,7 @@ A comprehensive summary of anomalies by isolation level:
 | Write skew          | Possible         | Possible       | Possible        | Prevented    |
 | Read skew           | Possible         | Possible       | Prevented       | Prevented    |
 
-**Read skew:** $T_1$ reads $A$ and $B$, $T_2$ updates $A$, $T_1$ reads $A$ again and sees a different
+**Read skew:** $T_1$ reads $A$ and $B$$T_2$ updates $A$$T_1$ reads $A$ again and sees a different
 value. Prevented by Repeatable Read (locks on read rows).
 
 **Write skew:** $T_1$ reads rows where $x + y > 10$Updates $x$; $T_2$ reads same rows, updates $y$.
@@ -1168,7 +1168,7 @@ sort-merge join, and block nested-loop join.
 salary. Use window functions.
 
 **Problem 5.** Consider the relation $R(A, B, C, D, E)$ with functional dependencies:
-$AB \to C$, $C \to D$, $D \to E$, $E \to A$. Find all candidate keys, decompose into BCNF, and check if
+$AB \to C$$C \to D$$D \to E$$E \to A$. Find all candidate keys, decompose into BCNF, and check if
 the decomposition is dependency-preserving.
 
 **Problem 6.** The relation Teaching(course, teacher, textbook, room) has the constraint: "The
@@ -1221,15 +1221,15 @@ tolerance (CP), what trade-offs does it make in terms of availability?
 <details>
 <summary>Solution to Problem 5</summary>
 
-FDs: $AB \to C$, $C \to D$, $D \to E$, $E \to A$.
+FDs: $AB \to C$$C \to D$$D \to E$$E \to A$.
 
 **Closure computation:**
 
-$AB^+ = \{A, B\}$ $ABC^+ = \{A, B, C, D, E\}$ (via $C \to D$, $D \to E$, $E \to A$)
+$AB^+ = \{A, B\}$ $ABC^+ = \{A, B, C, D, E\}$ (via $C \to D$$D \to E$$E \to A$)
 
 So $AB$ is a candidate key. Similarly:
 
-$BC^+ = \{B, C, D, E, A\}$ (via $C \to D$, $D \to E$, $E \to A$). So $BC$ is a candidate key.
+$BC^+ = \{B, C, D, E, A\}$ (via $C \to D$$D \to E$$E \to A$). So $BC$ is a candidate key.
 
 $CD^+ = \{C, D, E, A\}$ (no $B$So not a candidate key).
 
@@ -1254,11 +1254,11 @@ Candidate keys: $\{AB, BC\}$.
 $C \to D$ violates BCNF (LHS $C$ is not a superkey). Decompose $R$ into:
 
 - $R_1(C, D)$ with $C \to D$ (BCNF, key = $C$)
-- $R_2(A, B, C, E)$ with $AB \to CE$, $E \to A$, $CE \to AB$... Wait, let me recompute.
+- $R_2(A, B, C, E)$ with $AB \to CE$$E \to A$$CE \to AB$... Wait, let me recompute.
 
-Actually, $R_2$ has attributes $\{A, B, C, E\}$ and the restricted FDs are $AB \to C$, $E \to A$.
+Actually, $R_2$ has attributes $\{A, B, C, E\}$ and the restricted FDs are $AB \to C$$E \to A$.
 
-$E \to A$ violates BCNF (LHS $E$ is not a superkey of $R_2$). Superkeys of $R_2$ include $AB$, $BC$
+$E \to A$ violates BCNF (LHS $E$ is not a superkey of $R_2$). Superkeys of $R_2$ include $AB$$BC$
 (since $BC \to D$ is lost but $BC$ in $R_2$: $BC \to C$Not useful). Actually, $BC$ is not a key in
 $R_2$ because we lost $D$.
 
@@ -1271,9 +1271,9 @@ FDs are $AB \to C$ and $E \to A$.
 
 $AB^+ = \{A, B, C\}$ in $R_2$. Not a superkey (missing $E$).
 
-$BE^+ = \{B, E, A, C\} = \{A, B, C, E\}$ (via $E \to A$, $AB \to C$). So $BE$ is a key!
+$BE^+ = \{B, E, A, C\} = \{A, B, C, E\}$ (via $E \to A$$AB \to C$). So $BE$ is a key!
 
-$CE^+ = \{C, E, A, B\} = \{A, B, C, E\}$ (via $E \to A$, $AB \to C$). So $CE$ is a key!
+$CE^+ = \{C, E, A, B\} = \{A, B, C, E\}$ (via $E \to A$$AB \to C$). So $CE$ is a key!
 
 $BC^+ = \{B, C\}$ (no applicable FD). Not a key.
 
@@ -1284,14 +1284,14 @@ Keys of $R_2$: $\{BE, CE\}$.
 $E \to A$ violates BCNF. Decompose $R_2$ into:
 
 - $R_◆LB◆2a◆RB◆(E, A)$ with $E \to A$ (BCNF, key = $E$)
-- $R_◆LB◆2b◆RB◆(B, C, E)$ with restricted FDs: $BE \to C$, $CE \to B$... Wait, $BE \to C$ comes from
+- $R_◆LB◆2b◆RB◆(B, C, E)$ with restricted FDs: $BE \to C$$CE \to B$... Wait, $BE \to C$ comes from
   $AB \to C$ restricted to $\{B, C, E\}$: we lose the dependency since $A$ is not in $R_◆LB◆2b◆RB◆$.
 
 Actually, $AB \to C$ restricted to $R_◆LB◆2b◆RB◆(B, C, E)$: the LHS is $AB$ but $A \notin R_◆LB◆2b◆RB◆$So this
 FD is lost. The only remaining FDs in $R_◆LB◆2b◆RB◆$ are trivial. So $R_◆LB◆2b◆RB◆$ is in BCNF with key $BE$ (or
 $CE$).
 
-**BCNF decomposition:** $R_1(C, D)$, $R_◆LB◆2a◆RB◆(E, A)$, $R_◆LB◆2b◆RB◆(B, C, E)$.
+**BCNF decomposition:** $R_1(C, D)$$R_◆LB◆2a◆RB◆(E, A)$$R_◆LB◆2b◆RB◆(B, C, E)$.
 
 **Dependency preservation:** $C \to D$ is preserved (in $R_1$). $E \to A$ is preserved (in
 $R_◆LB◆2a◆RB◆$). $AB \to C$ is NOT preserved (lost in the decomposition). $D \to E$ is NOT preserved

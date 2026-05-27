@@ -153,7 +153,7 @@ rule correctly to all three functions. Explain the error.
 
 **Solution:**
 
-**(a)** Treat $f(x) = u \cdot v \cdot w$ where $u = x^2$, $v = e^{3x}$, $w = \sin x$.
+**(a)** Treat $f(x) = u \cdot v \cdot w$ where $u = x^2$$v = e^{3x}$$w = \sin x$.
 
 Using the product rule for three functions:
 
@@ -209,8 +209,8 @@ $$\frac{dy}{dx} = y(\ln x + 1) = x^x(1 + \ln x)$$
 Since $x^x \gt 0$ for all $x \gt 0$We need
 $1 + \ln x = 0 \implies \ln x = -1 \implies x = e^{-1} = \frac{1}{e}$.
 
-To determine the nature: for $0 \lt x \lt \frac{1}{e}$, $\ln x \lt -1$ so $1 + \ln x \lt 0$
-(decreasing). For $x \gt \frac{1}{e}$, $1 + \ln x \gt 0$ (increasing).
+To determine the nature: for $0 \lt x \lt \frac{1}{e}$$\ln x \lt -1$ so $1 + \ln x \lt 0$
+(decreasing). For $x \gt \frac{1}{e}$$1 + \ln x \gt 0$ (increasing).
 
 So $x = \frac{1}{e}$ is a **local minimum**.
 

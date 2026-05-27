@@ -1061,7 +1061,7 @@ by root hair cells, primarily through active transport (against the concentratio
 
 | Mineral Ion | Symbol                             | Function                                                                          | Deficiency Symptom                                            |
 | ----------- | ---------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Nitrogen    | $\mathrm{NO}_3^-$, $\mathrm{NH}_4^+$ | Component of amino acids, proteins, nucleic acids, chlorophyll                    | Chlorosis (yellowing of older leaves); stunted growth         |
+| Nitrogen    | $\mathrm{NO}_3^-$$\mathrm{NH}_4^+$ | Component of amino acids, proteins, nucleic acids, chlorophyll                    | Chlorosis (yellowing of older leaves); stunted growth         |
 | Phosphorus  | $\mathrm{PO}_4^{3-}$               | Component of ATP, nucleic acids (DNA, RNA), phospholipids                         | Poor root growth; dark green or purplish leaves               |
 | Potassium   | $\mathrm{K}^+$                     | Osmoregulation; opening and closing of stomata; enzyme activation                 | Yellow leaves with dead tips; weak stems                      |
 | Magnesium   | $\mathrm{Mg}^{2+}$                 | Central atom in the chlorophyll molecule; enzyme activator                        | Chlorosis of older leaves (chlorophyll cannot be synthesised) |

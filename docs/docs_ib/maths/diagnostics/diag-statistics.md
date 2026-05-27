@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-For a dataset, the quartiles are $Q_1 = 42$, $Q_2 = 55$And $Q_3 = 70$.
+For a dataset, the quartiles are $Q_1 = 42$$Q_2 = 55$And $Q_3 = 70$.
 
 **(a)** Determine whether the data is positively skewed, negatively skewed, or symmetric.
 
@@ -98,7 +98,7 @@ correct for computing $s_y$But then incorrectly applied the result to $s_x$.
 **Question:**
 
 Given five data points $(x_i, y_i)$ with
-$\sum x_i = 15$, $\sum y_i = 20$, $\sum x_i^2 = 55$, $\sum x_iy_i = 68$And $\sum y_i^2 = 90$:
+$\sum x_i = 15$$\sum y_i = 20$$\sum x_i^2 = 55$$\sum x_iy_i = 68$And $\sum y_i^2 = 90$:
 
 **(a)** Find the equation of the least squares regression line of $y$ on $x$ in the form
 $y = a + bx$.

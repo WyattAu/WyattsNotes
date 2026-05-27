@@ -177,7 +177,7 @@ exceptional stability.
 2. **Electron-deficient:** $\mathrm{BeCl_2$ (4 valence electrons), $\mathrm{BF_3$ (6 valence
    electrons). These stable molecules have fewer than 8 electrons around the central atom.
 3. **Expanded octets:** Elements in period 3 and beyond can have more than 8 electrons because they
-   have accessible d orbitals (e.g., $\mathrm{SF_6$, $\mathrm{PCl_5$, $\mathrm{XeF_4$).
+   have accessible d orbitals (e.g., $\mathrm{SF_6$$\mathrm{PCl_5$$\mathrm{XeF_4$).
 
 ## VSEPR Theory (CED Unit 2)
 
@@ -192,7 +192,7 @@ Themselves to be as far apart as possible.
 | 2                | Linear               | $180^\circ$           |
 | 3                | Trigonal planar      | $120^\circ$           |
 | 4                | Tetrahedral          | $109.5^\circ$         |
-| 5                | Trigonal bipyramidal | $90^\circ$, $120^\circ$ |
+| 5                | Trigonal bipyramidal | $90^\circ$$120^\circ$ |
 | 6                | Octahedral           | $90^\circ$            |
 
 ### Molecular Geometry (Accounting for Lone Pairs)
@@ -345,14 +345,14 @@ Interactions is insufficient to overcome the lattice energy.
 
 - 2 electron domains
 - Geometry: linear
-- Example: $\mathrm{BeCl_2$, $\mathrm{CO_2$, $\mathrm{C_2\mathrm{H_2$
+- Example: $\mathrm{BeCl_2$$\mathrm{CO_2$$\mathrm{C_2\mathrm{H_2$
 - One s orbital + one p orbital = two sp hybrid orbitals; two p orbitals remain unhybridized
 
 ### sp2 Hybridization
 
 - 3 electron domains
 - Geometry: trigonal planar
-- Example: $\mathrm{BF_3$, $\mathrm{C_2\mathrm{H_4$
+- Example: $\mathrm{BF_3$$\mathrm{C_2\mathrm{H_4$
 - One s orbital + two p orbitals = three sp$^2$ hybrid orbitals; one p orbital remains unhybridized
   (forms the pi bond)
 
@@ -360,7 +360,7 @@ Interactions is insufficient to overcome the lattice energy.
 
 - 4 electron domains
 - Geometry: tetrahedral
-- Example: $\mathrm{CH_4$, $\mathrm{NH_3$, $\mathrm{H_2\mathrm{O$
+- Example: $\mathrm{CH_4$$\mathrm{NH_3$$\mathrm{H_2\mathrm{O$
 - One s orbital + three p orbitals = four sp$^3$ hybrid orbitals
 
 ### sp3d and sp3d2 Hybridization
@@ -589,17 +589,17 @@ types for similar molar masses.
 
 | Electron Domains | Hybridization | Geometry             | Bond Angles           | Examples                                           |
 | ---------------- | ------------- | -------------------- | --------------------- | -------------------------------------------------- |
-| 2                | sp            | Linear               | 180$^\circ$           | $\mathrm{BeCl_2$, $\mathrm{CO_2$                     |
-| 3                | sp$^2$        | Trigonal planar      | 120$^\circ$           | $\mathrm{BF_3$, $\mathrm{C_2\mathrm{H_4$             |
-| 4                | sp$^3$        | Tetrahedral          | 109.5$^\circ$         | $\mathrm{CH_4$, $\mathrm{NH_3$, $\mathrm{H_2\mathrm{O$ |
+| 2                | sp            | Linear               | 180$^\circ$           | $\mathrm{BeCl_2$$\mathrm{CO_2$                     |
+| 3                | sp$^2$        | Trigonal planar      | 120$^\circ$           | $\mathrm{BF_3$$\mathrm{C_2\mathrm{H_4$             |
+| 4                | sp$^3$        | Tetrahedral          | 109.5$^\circ$         | $\mathrm{CH_4$$\mathrm{NH_3$$\mathrm{H_2\mathrm{O$ |
 | 5                | sp$^3$D       | Trigonal bipyramidal | 90$^\circ$120$^\circ$ | $\mathrm{PCl_5$                                    |
-| 6                | sp$^3$D$^2$   | Octahedral           | 90$^\circ$            | $\mathrm{SF_6$, $\mathrm{XeF_4$                      |
+| 6                | sp$^3$D$^2$   | Octahedral           | 90$^\circ$            | $\mathrm{SF_6$$\mathrm{XeF_4$                      |
 
 ## Practice Questions
 
 1. Draw the Lewis structure for $\mathrm{XeO_3$ and determine its molecular geometry and polarity.
 
-2. Arrange in order of increasing boiling point: $\mathrm{F_2$, $\mathrm{Cl_2$, $\mathrm{Br_2$
+2. Arrange in order of increasing boiling point: $\mathrm{F_2$$\mathrm{Cl_2$$\mathrm{Br_2$
    $\mathrm{I_2$. Explain your reasoning.
 
 3. Explain why $\mathrm{NH_3$ has a higher boiling point than $\mathrm{PH_3$.
@@ -610,8 +610,8 @@ types for similar molar masses.
 
 6. Which has a higher boiling point and why: $n$-pentane or neopentane (2,2-dimethylpropane)?
 
-7. For each molecule, predict whether it is polar or nonpolar: $\mathrm{BrF_5$, $\mathrm{XeF_4$
-   $\mathrm{IF_3$, $\mathrm{PF_5$.
+7. For each molecule, predict whether it is polar or nonpolar: $\mathrm{BrF_5$$\mathrm{XeF_4$
+   $\mathrm{IF_3$$\mathrm{PF_5$.
 
 8. Draw the Lewis structure for $\mathrm{ClO_4^-$Determine the formal charge on each atom, and
    describe the molecular geometry.
@@ -635,7 +635,7 @@ types for similar molar masses.
     can accommodate 12 electrons around it.
 
 15. Which of the following can form hydrogen bonds with water: $\mathrm{CH_3\mathrm{OH$
-    $\mathrm{CH_3\mathrm{OCH_3$, $\mathrm{CH_3\mathrm{CH_3$? Explain.
+    $\mathrm{CH_3\mathrm{OCH_3$$\mathrm{CH_3\mathrm{CH_3$? Explain.
 
 16. Describe the bonding in the nitrate ion ($\mathrm{NO_3^-$), including hybridization, resonance,
     and bond order.
@@ -647,7 +647,7 @@ types for similar molar masses.
 
 19. Arrange in order of increasing boiling point and explain:
     $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{CH_3$
-    $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{OH$, $\mathrm{HOCH_2\mathrm{CH_2\mathrm{OH$.
+    $\mathrm{CH_3\mathrm{CH_2\mathrm{CH_2\mathrm{OH$$\mathrm{HOCH_2\mathrm{CH_2\mathrm{OH$.
 
 20. Draw the Lewis structure for $\mathrm{ClF_3$ and explain why the molecule has a T-shaped
     geometry rather than a trigonal planar geometry.
@@ -723,9 +723,9 @@ Formal charge calculation: $\mathrm{FC = V - N - B/2$.
 
 In the resonance hybrid with two double bonds and two single bonds:
 
-- S: $V = 6$, $N = 0$, $B = 10$, $\mathrm{FC = 6 - 0 - 5 = +1$.
-- Double-bonded O: $V = 6$, $N = 4$, $B = 4$, $\mathrm{FC = 6 - 4 - 2 = 0$.
-- Single-bonded O: $V = 6$, $N = 6$, $B = 2$, $\mathrm{FC = 6 - 6 - 1 = -1$.
+- S: $V = 6$$N = 0$$B = 10$$\mathrm{FC = 6 - 0 - 5 = +1$.
+- Double-bonded O: $V = 6$$N = 4$$B = 4$$\mathrm{FC = 6 - 4 - 2 = 0$.
+- Single-bonded O: $V = 6$$N = 6$$B = 2$$\mathrm{FC = 6 - 6 - 1 = -1$.
 
 Net charge: $+1 + 0 + 0 + (-1) + (-1) = -2$. Correct for $\mathrm{SO_4^{2-}$.
 
@@ -763,7 +763,7 @@ Dipole.
 <summary>Question 3: Intermolecular forces and boiling points</summary>
 
 Arrange the following compounds in order of increasing boiling point and explain your reasoning:
-$\mathrm{CH_4$, $\mathrm{CH_3\mathrm{OH$, $\mathrm{CH_3\mathrm{Cl$ $\mathrm{CH_3\mathrm{NH_2$.
+$\mathrm{CH_4$$\mathrm{CH_3\mathrm{OH$$\mathrm{CH_3\mathrm{Cl$ $\mathrm{CH_3\mathrm{NH_2$.
 
 </details>
 
@@ -823,7 +823,7 @@ Repulsion from only two axial bonds at 90 degrees, making them shorter and stron
 <summary>Question 5: Lattice energy and ionic radii</summary>
 
 Arrange the following ionic compounds in order of increasing lattice energy and explain the trend:
-$\mathrm{NaCl$, $\mathrm{MgO$, $\mathrm{NaBr$, $\mathrm{MgS$.
+$\mathrm{NaCl$$\mathrm{MgO$$\mathrm{NaBr$$\mathrm{MgS$.
 
 </details>
 

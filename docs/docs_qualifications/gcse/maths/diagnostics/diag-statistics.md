@@ -163,10 +163,10 @@ $\pounds 8$.
 
 **Solution:**
 
-(a) Class widths: 2, 3, 5, 10. Frequency densities: $8/2 = 4$, $15/3 = 5$, $18/5 = 3.6$, $9/10 = 0.9$.
+(a) Class widths: 2, 3, 5, 10. Frequency densities: $8/2 = 4$$15/3 = 5$$18/5 = 3.6$$9/10 = 0.9$.
 
-(b) Linear model: $C = mw + c$. When $w = 3.5$, $C = 4$: $3.5m + c = 4$. When $w = 12$, $C = 12$:
-$12m + c = 12$. Subtracting: $8.5m = 8$, $m = 0.941$. $c = 4 - 3.5(0.941) = 4 - 3.294 = 0.706$.
+(b) Linear model: $C = mw + c$. When $w = 3.5$$C = 4$: $3.5m + c = 4$. When $w = 12$$C = 12$:
+$12m + c = 12$. Subtracting: $8.5m = 8$$m = 0.941$. $c = 4 - 3.5(0.941) = 4 - 3.294 = 0.706$.
 
 $C \approx 0.94w + 0.71$ (to 2 d.p.).
 

@@ -14,12 +14,12 @@ hide_table_of_contents: true
 ### UT-1: Ideal Gas Law and Unit Conversion
 
 **Question:** A gas occupies $250\ \text{cm}^3$ at $25\ ^\circ\text{C}$ and $98.5\ \text{kPa}$.
-Calculate the volume it would occupy at STP ($0\ ^\circ\text{C}$, $101.3\ \text{kPa}$), giving your
+Calculate the volume it would occupy at STP ($0\ ^\circ\text{C}$$101.3\ \text{kPa}$), giving your
 answer in $\text{dm}^3$ to three significant figures.
 
 **Solution:** Use the combined gas law: $\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$.
 
-$T_1 = 25 + 273.15 = 298.15\ \text{K}$, $T_2 = 273.15\ \text{K}$.
+$T_1 = 25 + 273.15 = 298.15\ \text{K}$$T_2 = 273.15\ \text{K}$.
 
 $V_2 = \frac{P_1 V_1 T_2}{P_2 T_1} = \frac{98.5 \times 250 \times 273.15}{101.3 \times 298.15}$
 
@@ -122,7 +122,7 @@ $\text{m}^3$; convert to $\text{dm}^3$).
 $100\ ^\circ\text{C}$ and the enthalpy of fusion is $6.01\ \text{kJ mol}^{-1}$ at
 $0\ ^\circ\text{C}$. Calculate the total energy required to convert $50.0\ \text{g}$ of ice at
 $-10\ ^\circ\text{C}$ to steam at $110\ ^\circ\text{C}$. Use:
-$c_{\text{ice}} = 2.09\ \text{J g}^{-1}\text{K}^{-1}$, $c_{\text{water}} = 4.18\ \text{J g}^{-1}\text{K}^{-1}$, $c_{\text{steam}} = 2.01\ \text{J g}^{-1}\text{K}^{-1}$.
+$c_{\text{ice}} = 2.09\ \text{J g}^{-1}\text{K}^{-1}$$c_{\text{water}} = 4.18\ \text{J g}^{-1}\text{K}^{-1}$$c_{\text{steam}} = 2.01\ \text{J g}^{-1}\text{K}^{-1}$.
 
 **Solution:** Five stages:
 

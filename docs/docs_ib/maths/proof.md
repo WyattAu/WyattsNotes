@@ -38,7 +38,7 @@ $m, n \in \mathbb{Z}$. Then:
 
 $$a + b = 2m + 2n = 2(m + n)$$
 
-Since $m + n \in \mathbb{Z}$, $a + b$ is even by definition.
+Since $m + n \in \mathbb{Z}$$a + b$ is even by definition.
 
 **Theorem.** If $n$ is an odd integer, then $n^2$ is odd.
 
@@ -46,7 +46,7 @@ _Proof._ Let $n = 2k + 1$ for some $k \in \mathbb{Z}$. Then:
 
 $$n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 
-Since $2k^2 + 2k \in \mathbb{Z}$, $n^2$ is odd.
+Since $2k^2 + 2k \in \mathbb{Z}$$n^2$ is odd.
 
 **Theorem.** The product of two rational numbers is rational.
 
@@ -55,7 +55,7 @@ $q, s \ne 0$. Then:
 
 $$ab = \frac{p}{q} \cdot \frac{r}{s} = \frac{pr}{qs}$$
 
-Since $pr, qs \in \mathbb{Z}$ and $qs \ne 0$, $ab$ is rational.
+Since $pr, qs \in \mathbb{Z}$ and $qs \ne 0$$ab$ is rational.
 
 ---
 
@@ -77,7 +77,7 @@ true.
 **Theorem.** $\sqrt{2}$ is irrational.
 
 _Proof._ Suppose, for contradiction, that $\sqrt{2}$ is rational. Then $\sqrt{2} = \dfrac{a}{b}$
-Where $a, b \in \mathbb{Z}^+$, $\gcd(a, b) = 1$ (the fraction is in lowest terms).
+Where $a, b \in \mathbb{Z}^+$$\gcd(a, b) = 1$ (the fraction is in lowest terms).
 
 Squaring: $2 = \dfrac{a^2}{b^2}$So $a^2 = 2b^2$. This means $a^2$ is even, so $a$ is even (since The
 square of an odd number is odd). Write $a = 2k$.
@@ -140,7 +140,7 @@ To prove that a statement $P(n)$ holds for all integers $n \ge n_0$:
 
 ### Examples
 
-**Theorem.** For all $n \in \mathbb{Z}^+$, $\displaystyle\sum_{i=1}^{n} i = \dfrac{n(n+1)}{2}$.
+**Theorem.** For all $n \in \mathbb{Z}^+$$\displaystyle\sum_{i=1}^{n} i = \dfrac{n(n+1)}{2}$.
 
 _Proof._ By induction on $n$.
 
@@ -157,7 +157,7 @@ This is precisely the formula with $n = k + 1$.
 
 **Conclusion:** By induction, the formula holds for all $n \in \mathbb{Z}^+$.
 
-**Theorem.** For all $n \in \mathbb{Z}^+$, $n^3 - n$ is divisible by $6$.
+**Theorem.** For all $n \in \mathbb{Z}^+$$n^3 - n$ is divisible by $6$.
 
 _Proof._ By induction on $n$.
 
@@ -191,7 +191,7 @@ _Proof._ By induction.
 
 ### Method
 
-To **disprove** a universal statement of the form "for all $x \in S$, $P(x)$", find a single element
+To **disprove** a universal statement of the form "for all $x \in S$$P(x)$", find a single element
 $x \in S$ for which $P(x)$ is false. This single counterexample is sufficient to refute the claim.
 
 ### Examples
@@ -204,7 +204,7 @@ _Counterexample._ $2$ is prime and even.
 
 _Counterexample._ $f(x) = |x|$ is continuous on $\mathbb{R}$ but not differentiable at $x = 0$.
 
-**Claim.** "For all real numbers $x$, $x^2 \gt x$."
+**Claim.** "For all real numbers $x$$x^2 \gt x$."
 
 _Counterexample._ $x = 0.5$: $0.25 \not\gt 0.5$. Also $x = 0$: $0 \not\gt 0$And $x = 1$:
 $1 \not\gt 1$.
@@ -227,8 +227,8 @@ _Proof._ The primes in this range are $3$ and $5$.
 - $p = 3$: $3 = 6(1) - 3 = 6(0) + 3$. Since $3 = 6(1) - 3$ does not match, we check: $3 = 6(0) + 3$.
   Actually, $3 = 6(1) - 3$. Better: $3$ is the sole exception as $3 \mid 6$ and $3 \mid 3$.
 
-Let us reconsider. For primes $p \gt 3$: every integer $n$ is of the form $6k$, $6k \pm 1$
-$6k \pm 2$Or $6k + 3$. Numbers of the form $6k$, $6k \pm 2$, $6k + 3$ are divisible by $2$, $2$ Or $3$
+Let us reconsider. For primes $p \gt 3$: every integer $n$ is of the form $6k$$6k \pm 1$
+$6k \pm 2$Or $6k + 3$. Numbers of the form $6k$$6k \pm 2$$6k + 3$ are divisible by $2$$2$ Or $3$
 respectively. So any prime $p \gt 3$ must be of the form $6k \pm 1$.
 
 For the given range, $p = 5 = 6(1) - 1$. Verified.
@@ -458,7 +458,7 @@ If $n$ is even, then $n = 2k$ for some $k \in \mathbb{Z}$.
 
 $$n^2 = (2k)^2 = 4k^2$$
 
-Since $k^2 \in \mathbb{Z}$, $n^2 = 4k^2$ is divisible by $4$.
+Since $k^2 \in \mathbb{Z}$$n^2 = 4k^2$ is divisible by $4$.
 
 Therefore, if $n^2$ is not divisible by $4$Then $n$ must be odd.
 
@@ -501,9 +501,9 @@ Integers, which always includes at least one even factor.
   Strong induction assumes $P(2), P(3), \ldots, P(k)$ to prove $P(k+1)$. Use strong induction when
   $P(k+1)$ depends on more than just $P(k)$.
 
-- **Contradiction: negating the statement incorrectly.** The negation of "for all $x$, $P(x)$" is
+- **Contradiction: negating the statement incorrectly.** The negation of "for all $x$$P(x)$" is
   "there exists $x$ such that $\neg P(x)$". The negation of "there exists $x$ such that $P(x)$" is
-  "for all $x$, $\neg P(x)$". Quantifier negation must swap "for all" with "there exists."
+  "for all $x$$\neg P(x)$". Quantifier negation must swap "for all" with "there exists."
 
 - **Incomplete exhaustion.** Proof by exhaustion requires checking every single case. Missing even
   one case invalidates the proof. This technique should only be used when the number of cases is
@@ -568,7 +568,7 @@ $b$.
 <summary>Problem 17</summary>
 
 Give a counterexample to disprove: "For all real numbers $x$ and
-$y$, $\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor$."
+$y$$\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor$."
 
 </details>
 

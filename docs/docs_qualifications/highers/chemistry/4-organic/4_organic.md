@@ -379,7 +379,7 @@ Requires a chiral centre (carbon with four different groups attached).
 **Worked Example 12:** Explain why $\mathrm{CH_3\mathrm{CH(\mathrm{OH)\mathrm{COOH$ is optically
 active, And draw both enantiomers.
 
-Carbon-2 has four different groups attached: $\mathrm{H$, $\mathrm{OH$, $\mathrm{CH_3$And
+Carbon-2 has four different groups attached: $\mathrm{H$$\mathrm{OH$$\mathrm{CH_3$And
 $\mathrm{COOH$. This makes it a chiral centre. The two enantiomers are non-superimposable mirror
 Images that rotate plane-polarised light in opposite directions.
 
@@ -502,7 +502,7 @@ This example illustrates the limitations of certain synthetic routes at Higher l
 | --------------- | ----------------- | ---------------------------------------- |
 | Alkene          | Alkane            | $\mathrm{H_2$Ni catalyst                 |
 | Alkene          | Haloalkane        | $\mathrm{HX$ or $\mathrm{X_2$            |
-| Alkene          | Alcohol           | $\mathrm{H_2\mathrm{O$, $\mathrm{H^+$      |
+| Alkene          | Alcohol           | $\mathrm{H_2\mathrm{O$$\mathrm{H^+$      |
 | Alcohol         | Aldehyde          | $[\mathrm{O]$Distillation                |
 | Alcohol         | Carboxylic acid   | $[\mathrm{O]$Reflux                      |
 | Alcohol         | Alkene            | $\mathrm{conc. H_2\mathrm{SO_4$Heat      |

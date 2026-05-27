@@ -166,7 +166,7 @@ And show at least one full period . :::
 <!-- prettier-ignore -->
 <DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
 
-Use the sliders to see how changing $a$, $b$, $c$And $d$ in $y = a\sin(bx + c) + d$ affects the Graph.
+Use the sliders to see how changing $a$$b$$c$And $d$ in $y = a\sin(bx + c) + d$ affects the Graph.
 
 ## Trigonometric Identities
 
@@ -383,7 +383,7 @@ $$
 
 ### Worked Example: Sine Rule
 
-**Problem:** In triangle $ABC$, $a = 8$ cm, $A = 45^\circ$, $B = 30^\circ$. Find $b$.
+**Problem:** In triangle $ABC$$a = 8$ cm, $A = 45^\circ$$B = 30^\circ$. Find $b$.
 
 **Solution:**
 
@@ -393,7 +393,7 @@ $$
 
 ### Worked Example: Cosine Rule
 
-**Problem:** Find the angle $C$ in a triangle with sides $a = 5$, $b = 7$, $c = 8$.
+**Problem:** Find the angle $C$ in a triangle with sides $a = 5$$b = 7$$c = 8$.
 
 **Solution:**
 
@@ -432,7 +432,7 @@ $A + B_2 \lt 180^\circ$ as well).
 
 ### Worked Example: Ambiguous Case
 
-**Problem:** In triangle $ABC$, $a = 7$, $b = 10$, $A = 40^\circ$. Find all possible triangles.
+**Problem:** In triangle $ABC$$a = 7$$b = 10$$A = 40^\circ$. Find all possible triangles.
 
 **Solution:**
 
@@ -451,10 +451,10 @@ $$
 Check both: $A + B_1 = 106.8^{\circ} \lt 180^\circ$ and $A + B_2 = 153.2^{\circ} \lt 180^\circ$.
 Both are valid.
 
-**Triangle 1:** $B = 66.8^\circ$, $C = 73.2^\circ$
+**Triangle 1:** $B = 66.8^\circ$$C = 73.2^\circ$
 $c_1 = \frac{7\sin 73.2^{\circ}}{\sin 40^{\circ}} \approx 10.4$
 
-**Triangle 2:** $B = 113.2^\circ$, $C = 26.8^\circ$
+**Triangle 2:** $B = 113.2^\circ$$C = 26.8^\circ$
 $c_2 = \frac{7\sin 26.8^{\circ}}{\sin 40^{\circ}} \approx 4.89$
 
 ## Non-Right-Angled Triangle Problems
@@ -469,7 +469,7 @@ $c_2 = \frac{7\sin 26.8^{\circ}}{\sin 40^{\circ}} \approx 4.89$
 
 ### Worked Example: Multi-Step Triangle Problem
 
-**Problem:** In triangle $ABC$, $a = 12$, $b = 8$, $A = 65^\circ$. Find the area of the triangle.
+**Problem:** In triangle $ABC$$a = 12$$b = 8$$A = 65^\circ$. Find the area of the triangle.
 
 **Solution:**
 
@@ -593,7 +593,7 @@ $$
 
 **Solution:**
 
-Since $\tan$ has period $\pi$, $\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ for $n \in \mathbb{Z}$.
+Since $\tan$ has period $\pi$$\tan 2x = 1$ gives $2x = \frac{\pi}{4} + n\pi$ for $n \in \mathbb{Z}$.
 
 $$
 X = \frac{\pi}{8} + \frac{n\pi}{2}
@@ -688,7 +688,7 @@ expression equals another. The Standard approach is:
 
 - **Factor:** Look for common factors, e.g., $\sin x + \sin x\cos x = \sin x(1 + \cos x)$.
 - **Use $\sin^2 + \cos^2 = 1$:** Convert everything to sines or everything to cosines.
-- **Convert to $\sin$ and $\cos$:** When $\tan$, $\sec$, $\csc$Or $\cot$ appear, express them in terms
+- **Convert to $\sin$ and $\cos$:** When $\tan$$\sec$$\csc$Or $\cot$ appear, express them in terms
   of $\sin$ and $\cos$.
 - **Look for compound angle structure:** Recognise when an expression matches $\sin(A \pm B)$ or
   $\cos(A \pm B)$.
@@ -840,7 +840,7 @@ So $x = 0, \frac{2\pi}{3}, \frac{4\pi}{3}, 2\pi$.
 <details>
 <summary>Problem 5: Non-Right-Angled Triangle</summary>
 
-**Problem:** In triangle $PQR$, $p = 13$, $q = 14$, $r = 15$. Find the largest angle of the Triangle.
+**Problem:** In triangle $PQR$$p = 13$$q = 14$$r = 15$. Find the largest angle of the Triangle.
 
 **Solution:**
 

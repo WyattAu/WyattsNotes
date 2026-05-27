@@ -448,7 +448,7 @@ $d | \gcd(b, a \bmod b)$.
 Conversely, let $e = \gcd(b, a \bmod b)$. Then $e | b$ and $e | (a \bmod b)$So
 $e | (q \cdot b + a \bmod b) = a$. Hence $e | \gcd(a, b)$.
 
-Since $d | e$ and $e | d$, $d = e$. ✓
+Since $d | e$ and $e | d$$d = e$. ✓
 
 Base case: $\gcd(a, 0) = a$. ✓
 

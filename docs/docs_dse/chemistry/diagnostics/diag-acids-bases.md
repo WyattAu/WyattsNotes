@@ -72,7 +72,7 @@ increasing pH by exactly 1.)
 **Question**
 
 A buffer solution is prepared by mixing 100 cm$^{3}$ of 0.20 mol/dm$^{3}$ ethanoic acid
-($CH_{3}COOH$, $K_{a} = 1.8 \times 10^{-5}$) with 100 cm$^{3}$ of 0.10 mol/dm$^{3}$ sodium ethanoate
+($CH_{3}COOH$$K_{a} = 1.8 \times 10^{-5}$) with 100 cm$^{3}$ of 0.10 mol/dm$^{3}$ sodium ethanoate
 ($CH_{3}COONa$).
 
 (a) Calculate the pH of this buffer solution. [4 marks]
@@ -185,7 +185,7 @@ acid $HCl$) do not undergo hydrolysis. Neither ion affects the $pH$ of the solut
 
 **Question**
 
-25.0 cm$^{3}$ of 0.100 mol/dm$^{3}$ ammonia solution ($NH_{3}$, $K_{b} = 1.8 \times 10^{-5}$) is
+25.0 cm$^{3}$ of 0.100 mol/dm$^{3}$ ammonia solution ($NH_{3}$$K_{b} = 1.8 \times 10^{-5}$) is
 titrated with 0.100 mol/dm$^{3}$ hydrochloric acid.
 
 (a) Calculate the pH of the ammonia solution before any acid is added. [3 marks]

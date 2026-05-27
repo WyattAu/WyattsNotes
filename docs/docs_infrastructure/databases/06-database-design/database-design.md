@@ -726,7 +726,7 @@ Riak.
 
 - Writes are sent to N replicas (configurable)
 - Reads query R replicas and return the most recent value based on timestamps
-- Quorum: $W + R \gt N$ ensures consistency (e.g., $N=3$, $W=2$, $R=2$)
+- Quorum: $W + R \gt N$ ensures consistency (e.g., $N=3$$W=2$$R=2$)
 
 ### Failover
 

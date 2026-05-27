@@ -564,7 +564,7 @@ Repulsion between the positively charged nuclei. At these temperatures, matter e
 <summary>Worked Example: Energy from Fission</summary>
 
 Calculate the energy released when $\prescript{235}{92}\mathrm{U}$ undergoes fission to produce
-$\prescript{141}{56}\mathrm{Ba}$, $\prescript{92}{36}\mathrm{Kr}$And 3 neutrons.
+$\prescript{141}{56}\mathrm{Ba}$$\prescript{92}{36}\mathrm{Kr}$And 3 neutrons.
 
 Given masses:
 
@@ -867,7 +867,7 @@ Possible photons that could be emitted as the electron returns to the ground sta
 <details>
 <summary>Solution</summary>
 
-Possible transitions: $3 \to 2$, $3 \to 1$And $2 \to 1$ (after first transitioning to $n = 2$).
+Possible transitions: $3 \to 2$$3 \to 1$And $2 \to 1$ (after first transitioning to $n = 2$).
 
 For $3 \to 2$ (Balmer series):
 
@@ -887,7 +887,7 @@ $$\Delta E = \frac{-13.6}{4} - \frac{-13.6}{1} = -3.40 - (-13.6) = 10.2\,\mathrm
 
 $$\lambda = \frac{1240}{10.2} = 121.6\,\mathrm{nm}$$
 
-The three possible wavelengths are $656\,\mathrm{nm}$, $121.6\,\mathrm{nm}$And $102.6\,\mathrm{nm}$.
+The three possible wavelengths are $656\,\mathrm{nm}$$121.6\,\mathrm{nm}$And $102.6\,\mathrm{nm}$.
 
 **If you get this wrong, revise:** Section 1.3.
 
@@ -1006,7 +1006,7 @@ $$E = 0.00523 \times 931.5 = 4.87\,\mathrm{MeV}$$
 
 Calculate the binding energy per nucleon of lithium-7 ($\prescript{7}{3}\mathrm{Li}$).
 
-Given: $m(\prescript{7}{3}\mathrm{Li}) = 7.01600\,\mathrm{u}$, $m_p = 1.00728\,\mathrm{u}$
+Given: $m(\prescript{7}{3}\mathrm{Li}) = 7.01600\,\mathrm{u}$$m_p = 1.00728\,\mathrm{u}$
 $m_n = 1.00867\,\mathrm{u}$.
 
 <details>

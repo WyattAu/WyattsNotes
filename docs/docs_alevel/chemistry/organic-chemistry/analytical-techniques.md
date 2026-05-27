@@ -252,7 +252,7 @@ $\mathrm{C}_{18}$-bonded silica), polar compounds elute first.
 
 ### Gas Chromatography (GC)
 
-**Mobile phase:** Inert carrier gas ($\mathrm{He}$, $\mathrm{N}_2$).
+**Mobile phase:** Inert carrier gas ($\mathrm{He}$$\mathrm{N}_2$).
 
 **Stationary phase:** High-boiling liquid coated on the inner wall of a capillary column.
 
@@ -341,7 +341,7 @@ $\mathrm{Cr}^{3+}$ vs $\mathrm{Cr}^{6+}$).
 
 ### Applications
 
-- Determination of trace metals in water (e.g. $\mathrm{Pb}$, $\mathrm{Cd}$, $\mathrm{Cu}$ in drinking
+- Determination of trace metals in water (e.g. $\mathrm{Pb}$$\mathrm{Cd}$$\mathrm{Cu}$ in drinking
   water).
 - Analysis of metal content in food and pharmaceuticals.
 - Environmental monitoring of soil and water contamination.
@@ -454,7 +454,7 @@ protons are neighbours.
 | Carbon environment                                                      | $\delta$ range (ppm) |
 | ----------------------------------------------------------------------- | -------------------- |
 | Alkyl ($\mathrm{C}-\mathrm{C}$)                                         | $0$--$50$            |
-| Adjacent to heteroatom ($\mathrm{C}-\mathrm{O}$, $\mathrm{C}-\mathrm{N}$) | $50$--$90$           |
+| Adjacent to heteroatom ($\mathrm{C}-\mathrm{O}$$\mathrm{C}-\mathrm{N}$) | $50$--$90$           |
 | Aromatic                                                                | $100$--$150$         |
 | Carbonyl (aldehyde, ketone)                                             | $190$--$220$         |
 | Carbonyl (acid, ester, amide)                                           | $160$--$185$         |
@@ -467,7 +467,7 @@ An unknown compound has the following data:
 - IR: $1740\,\mathrm{cm}^{-1}$ (strong), $2980\,\mathrm{cm}^{-1}$ (strong), no broad O--H
 - $^1\mathrm{H}$ NMR: $\delta\, 1.3$ (triplet, 3H), $\delta\, 2.0$ (singlet, 3H), $\delta\, 4.1$
   (quartet, 2H)
-- $^{13}\mathrm{C}$ NMR: 4 peaks at $\delta\, 14$, $21$, $60$, $171$
+- $^{13}\mathrm{C}$ NMR: 4 peaks at $\delta\, 14$$21$$60$$171$
 
 **Analysis:**
 
@@ -602,7 +602,7 @@ adjacent to the carbonyl.
 
 The compound is **propanone (acetone)**, $\mathrm{CH}_3\mathrm{COCH}_3$. The two methyl groups are
 equivalent (same chemical environment), but the NMR data shows two singlets. This is consistent with
-**butanone** ($\mathrm{C}_4\mathrm{H}_8\mathrm{O}$, $M_r = 72$), which does not match $M_r = 58$.
+**butanone** ($\mathrm{C}_4\mathrm{H}_8\mathrm{O}$$M_r = 72$), which does not match $M_r = 58$.
 
 Reconsidering: with only two singlets of 3H each, the compound must have two non-equivalent methyl
 groups. $\mathrm{C}_3\mathrm{H}_6\mathrm{O}$ with two $\mathrm{CH}_3$ groups and one C=O accounts
@@ -741,7 +741,7 @@ Characteristic fragments include:
 | 77         | $\mathrm{C}_6\mathrm{H}_5^+$                                                         | Phenyl cation               |
 | 91         | $\mathrm{C}_7\mathrm{H}_7^+$                                                         | Benzyl/tropylium ion        |
 | 105        | $\mathrm{C}_6\mathrm{H}_5\mathrm{CO}^+$                                              | Benzoyl cation              |
-| 39, 51, 65 | $\mathrm{C}_3\mathrm{H}_3^+$, $\mathrm{C}_4\mathrm{H}_3^+$, $\mathrm{C}_5\mathrm{H}_5^+$ | Fragmentary ring structures |
+| 39, 51, 65 | $\mathrm{C}_3\mathrm{H}_3^+$$\mathrm{C}_4\mathrm{H}_3^+$$\mathrm{C}_5\mathrm{H}_5^+$ | Fragmentary ring structures |
 
 ### IR Spectroscopy: Detailed Interpretation Guide
 
@@ -833,7 +833,7 @@ $R_f$ values are always between 0 and 1. A compound with a higher $R_f$ is less 
 less with the polar stationary phase and travels further with the non-polar mobile phase).
 
 **Worked Example:** In a TLC experiment, the solvent front travels $12.0\,\mathrm{cm}$. Three
-compounds travel $3.6\,\mathrm{cm}$, $7.2\,\mathrm{cm}$And $10.8\,\mathrm{cm}$ from the origin.
+compounds travel $3.6\,\mathrm{cm}$$7.2\,\mathrm{cm}$And $10.8\,\mathrm{cm}$ from the origin.
 
 $$R_f(\mathrm{A}) = \frac{3.6}{12.0} = 0.30$$
 
@@ -903,7 +903,7 @@ in the NMR. The discrepancy suggests the formula may be $\mathrm{C}_3\mathrm{H}_
 An organic compound $\mathrm{C}_7\mathrm{H}_8$ shows the following data:
 
 - Mass spec: M+ at $m/z = 92$ (base peak), M+1 at 7.7%, significant fragment at $m/z = 91$
-- IR: absorption at $3030\,\mathrm{cm}^{-1}$, $1600$ and $1500\,\mathrm{cm}^{-1}$No absorption above
+- IR: absorption at $3030\,\mathrm{cm}^{-1}$$1600$ and $1500\,\mathrm{cm}^{-1}$No absorption above
   $3100\,\mathrm{cm}^{-1}$
 - $^1\mathrm{H}$ NMR: $\delta\, 7.2$ (m, 5H), $\delta\, 2.3$ (s, 3H)
 

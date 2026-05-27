@@ -860,17 +860,17 @@ stabilisers absorb approximately 49% of the shock.
 
 **Example.** Three countries have different debt dynamics:
 
-**Country A (UK-like):** $b = 100\%$, $r = 4\%$, $g_{nominal} = 5\%$, $p = -3\%$ (primary deficit).
+**Country A (UK-like):** $b = 100\%$$r = 4\%$$g_{nominal} = 5\%$$p = -3\%$ (primary deficit).
 $\Delta b = (0.04 - 0.05)(1.0) + (-0.03) = -0.01 - 0.03 = -0.04$. The debt ratio falls by 4
 percentage points per year. Despite running a primary deficit, the debt ratio is falling because
 $g > r$.
 
-**Country B (Italy-like):** $b = 140\%$, $r = 3.5\%$, $g_{nominal} = 2\%$, $p = -1\%$.
+**Country B (Italy-like):** $b = 140\%$$r = 3.5\%$$g_{nominal} = 2\%$$p = -1\%$.
 $\Delta b = (0.035 - 0.02)(1.4) + (-0.01) = 0.021 - 0.01 = 0.011$. The debt ratio rises by 1.1
 percentage points per year. The snowball effect ($r > g$) is pushing the debt ratio up. A primary
 surplus of 1.1% would be needed to stabilise the debt ratio.
 
-**Country C (Japan-like):** $b = 250\%$, $r = 1\%$, $g_{nominal} = 3\%$, $p = -5\%$.
+**Country C (Japan-like):** $b = 250\%$$r = 1\%$$g_{nominal} = 3\%$$p = -5\%$.
 $\Delta b = (0.01 - 0.03)(2.5) + (-0.05) = -0.05 - 0.05 = -0.10$. Despite an enormous debt ratio and
 a large primary deficit, the debt ratio is falling by 10 percentage points per year because
 $r \ll g$.
@@ -975,10 +975,10 @@ the elasticity of taxable income.
 **Numerical application:**
 
 - For the top 1% (income > GBP 150,000): $g(z) = 0.2$ (society values their welfare less than
-  average), $a = 1.5$, $e(z) = 0.5$.
+  average), $a = 1.5$$e(z) = 0.5$.
 - $\tau = \frac◆LB◆1 - 0.2◆RB◆◆LB◆1 - 0.2 + 1.5 \times 0.5◆RB◆ = \frac{0.8}{0.8 + 0.75} = \frac{0.8}{1.55} = 51.6\%$.
 
-- For median earners (income GBP 35,000): $g(z) = 1.0$, $a = 1.5$, $e(z) = 0.1$.
+- For median earners (income GBP 35,000): $g(z) = 1.0$$a = 1.5$$e(z) = 0.1$.
 - $\tau = \frac◆LB◆1 - 1.0◆RB◆◆LB◆1 - 1.0 + 1.5 \times 0.1◆RB◆ = \frac{0}{0.15} = 0\%$.
 
 Wait, this gives zero tax at the median, which is because the social marginal welfare weight is 1.0

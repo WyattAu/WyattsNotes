@@ -86,8 +86,8 @@ A chemical factory produces output $Q$ with marginal private cost $MPC = 20 + Q$
 External cost $MEC = Q$. The marginal private benefit (demand) is $MPB = 80 - Q$.
 
 - $MSC = MPC + MEC = 20 + 2Q$
-- Market equilibrium: $80 - Q = 20 + Q \Rightarrow Q_{mkt} = 30$, $P_{mkt} = 50$
-- Social optimum: $80 - Q = 20 + 2Q \Rightarrow Q^* = 20$, $P^* = 60$
+- Market equilibrium: $80 - Q = 20 + Q \Rightarrow Q_{mkt} = 30$$P_{mkt} = 50$
+- Social optimum: $80 - Q = 20 + 2Q \Rightarrow Q^* = 20$$P^* = 60$
 - DWL $= \frac{1}{2}(30 - 20)(MSC(30) - MSB(30)) = \frac{1}{2}(10)(80 - 50) = 150$
 
 The market over-produces by 10 units, creating a welfare loss of 150.
@@ -260,7 +260,7 @@ A coal power plant produces electricity with $MPC = 10 + Q$ and $MEC = 0.5Q$ (ca
 Damage). Demand: $P = 100 - Q$.
 
 - $MSC = 10 + 1.5Q$
-- Social optimum: $100 - Q = 10 + 1.5Q \Rightarrow Q^* = 36$, $P^* = 64$
+- Social optimum: $100 - Q = 10 + 1.5Q \Rightarrow Q^* = 36$$P^* = 64$
 - Optimal tax: $t^* = MEC(36) = 18$
 - With tax, firm faces: $MPC + t = 10 + Q + 18 = 28 + Q$. Equilibrium:
 $100 - Q = 28 + Q \Rightarrow Q = 36$ ✓
@@ -368,7 +368,7 @@ Market outcome.
 
 <details>
 <summary>Hint</summary>
-(a) Market: $60 - Q = 15 + 0.5Q \Rightarrow Q_{mkt} = 30$, $P = 30$. (b) $MSC = 15 + 0.8Q$. Social optimum: $60 - Q = 15 + 0.8Q \Rightarrow Q^* = 25$, $P^* = 35$. (c) $t^* = MEC(25) = 7.5$. (d) DWL $= \frac{1}{2}(30 - 25)(MSC(30) - MSB(30)) = \frac{1}{2}(5)(15 + 24 - 30) = \frac{1}{2}(5)(9) = 22.5$.
+(a) Market: $60 - Q = 15 + 0.5Q \Rightarrow Q_{mkt} = 30$$P = 30$. (b) $MSC = 15 + 0.8Q$. Social optimum: $60 - Q = 15 + 0.8Q \Rightarrow Q^* = 25$$P^* = 35$. (c) $t^* = MEC(25) = 7.5$. (d) DWL $= \frac{1}{2}(30 - 25)(MSC(30) - MSB(30)) = \frac{1}{2}(5)(15 + 24 - 30) = \frac{1}{2}(5)(9) = 22.5$.
 </details>
 
 **Problem 2.** Vaccination against a disease has marginal private benefit $MPB = 100 - Q$ and
@@ -479,9 +479,9 @@ Tax, and DWL.
 
 $MSC = 10 + 1.5Q$.
 
-Market equilibrium: $80 - Q = 10 + Q \implies Q_{mkt} = 35$, $P_{mkt} = 45$.
+Market equilibrium: $80 - Q = 10 + Q \implies Q_{mkt} = 35$$P_{mkt} = 45$.
 
-Social optimum: $80 - Q = 10 + 1.5Q \implies Q^* = 28$, $P^* = 52$.
+Social optimum: $80 - Q = 10 + 1.5Q \implies Q^* = 28$$P^* = 52$.
 
 Optimal tax: $t^* = MEC(28) = 14$.
 
@@ -618,7 +618,7 @@ Rate.
 
 <details>
 <summary>Hint</summary>
-$MSC = 30 + 3Q$. Market: $120 - Q = 20 + 2Q \implies Q_{mkt} = 33.3$, $P = 86.7$. Social: $120 - Q = 30 + 3Q \implies Q^* = 22.5$, $P^* = 97.5$. DWL $= \frac{1}{2}(33.3 - 22.5)(MSC(33.3) - MSB(33.3)) = \frac{1}{2}(10.8)(129.9 - 86.7) = 233$. Tax $= MEC(22.5) = 32.5$.
+$MSC = 30 + 3Q$. Market: $120 - Q = 20 + 2Q \implies Q_{mkt} = 33.3$$P = 86.7$. Social: $120 - Q = 30 + 3Q \implies Q^* = 22.5$$P^* = 97.5$. DWL $= \frac{1}{2}(33.3 - 22.5)(MSC(33.3) - MSB(33.3)) = \frac{1}{2}(10.8)(129.9 - 86.7) = 233$. Tax $= MEC(22.5) = 32.5$.
 </details>
 
 **Problem 2.** A vaccination programme has $MPB = 200 - 2Q$ and $MPC = 20 + Q$. The marginal
@@ -627,7 +627,7 @@ Optimum, and the optimal subsidy per vaccination.
 
 <details>
 <summary>Hint</summary>
-Market: $200 - 2Q = 20 + Q \implies Q_{mkt} = 60$. $MSB = 240 - 3Q$. Social: $240 - 3Q = 20 + Q \implies Q^* = 55$. Wait, $MSB = MPB + MEB = 200 - 2Q + 40 - Q = 240 - 3Q$. $240 - 3Q = 20 + Q \implies 220 = 4Q \implies Q^* = 55$. Subsidy $= MEB(55) = 40 - 55 = -15$. This is negative, which means $MEB$ is already declining. Let me recheck: at $Q_{mkt} = 60$, $MEB = 40 - 60 = -20$Meaning there's actually a negative externality at high vaccination rates. The optimal subsidy should be $MEB(Q^*) = 40 - 55 = -15$. A negative subsidy means a tax, which doesn't make sense. The issue is the linear $MEB$ function. In practice, $MEB$ would be positive over the relevant range.
+Market: $200 - 2Q = 20 + Q \implies Q_{mkt} = 60$. $MSB = 240 - 3Q$. Social: $240 - 3Q = 20 + Q \implies Q^* = 55$. Wait, $MSB = MPB + MEB = 200 - 2Q + 40 - Q = 240 - 3Q$. $240 - 3Q = 20 + Q \implies 220 = 4Q \implies Q^* = 55$. Subsidy $= MEB(55) = 40 - 55 = -15$. This is negative, which means $MEB$ is already declining. Let me recheck: at $Q_{mkt} = 60$$MEB = 40 - 60 = -20$Meaning there's actually a negative externality at high vaccination rates. The optimal subsidy should be $MEB(Q^*) = 40 - 55 = -15$. A negative subsidy means a tax, which doesn't make sense. The issue is the linear $MEB$ function. In practice, $MEB$ would be positive over the relevant range.
 </details>
 
 **Problem 3.** Explain why road congestion is an example of a negative externality. Using a diagram,
@@ -707,8 +707,8 @@ rental housing.
 - Result: shortage of rental housing, reduced quality, and reduced total surplus.
 
 **Calculation.** Suppose demand is $Q_D = 1000 - 5P$ and supply is $Q_S = 200 + 5P$. Equilibrium:
-$1000 - 5P = 200 + 5P \Rightarrow P^* = 80$, $Q^* = 600$. If rent control sets $P_c = 50$:
-$Q_D = 750$, $Q_S = 450$. Shortage $= 300$ units. DWL
+$1000 - 5P = 200 + 5P \Rightarrow P^* = 80$$Q^* = 600$. If rent control sets $P_c = 50$:
+$Q_D = 750$$Q_S = 450$. Shortage $= 300$ units. DWL
 $= \frac{1}{2}(80 - 50)(600 - 450) = \frac{1}{2}(30)(150) = 2\,250$.
 
 ### 14.3 Worked Example: Cost-Benefit Analysis of a Road Project
@@ -748,7 +748,7 @@ when it is not.
 (increasing marginal damage). Demand is $P = 150 - Q$.
 
 **Step 1: Market equilibrium.**
-$150 - Q = 30 + 0.5Q \Rightarrow 120 = 1.5Q \Rightarrow Q_{mkt} = 80$, $P_{mkt} = 70$.
+$150 - Q = 30 + 0.5Q \Rightarrow 120 = 1.5Q \Rightarrow Q_{mkt} = 80$$P_{mkt} = 70$.
 
 **Step 2: Social optimum.** $MSC = 30 + 0.5Q + 0.2Q^2$.
 $150 - Q = 30 + 0.5Q + 0.2Q^2 \Rightarrow 0.2Q^2 + 1.5Q - 120 = 0$.
@@ -774,10 +774,10 @@ The DWL is approximately GBP 31,371 (the absolute value).
 benefit is constant at $MEB = 30$ (spillover benefits to society from a more educated population).
 
 **Step 1: Market equilibrium.**
-$200 - 2Q = 40 + 2Q \Rightarrow 160 = 4Q \Rightarrow Q_{mkt} = 40$, $P_{mkt} = 120$.
+$200 - 2Q = 40 + 2Q \Rightarrow 160 = 4Q \Rightarrow Q_{mkt} = 40$$P_{mkt} = 120$.
 
 **Step 2: Social optimum.** $MSB = MPB + MEB = 200 - 2Q + 30 = 230 - 2Q$.
-$230 - 2Q = 40 + 2Q \Rightarrow 190 = 4Q \Rightarrow Q^* = 47.5$, $P^* = 135$.
+$230 - 2Q = 40 + 2Q \Rightarrow 190 = 4Q \Rightarrow Q^* = 47.5$$P^* = 135$.
 
 The market under-produces by $47.5 - 40 = 7.5$ units.
 
@@ -921,17 +921,17 @@ $MEC = 5 + 0.5Q$.
 <summary>Full Mark Scheme</summary>
 
 **Step 1: Market equilibrium (2 marks).** $MPB = MPC$:
-$80 - Q = 10 + Q \Rightarrow 2Q = 70 \Rightarrow Q_{mkt} = 35$, $P_{mkt} = 45$. (1 mark for quantity,
+$80 - Q = 10 + Q \Rightarrow 2Q = 70 \Rightarrow Q_{mkt} = 35$$P_{mkt} = 45$. (1 mark for quantity,
 1 mark for price.)
 
 **Step 2: Social optimum (2 marks).** $MSC = MPC + MEC = 10 + Q + 5 + 0.5Q = 15 + 1.5Q$.
-$MSB = MSC$: $80 - Q = 15 + 1.5Q \Rightarrow 2.5Q = 65 \Rightarrow Q^* = 26$, $P^* = 54$. (1 mark for
+$MSB = MSC$: $80 - Q = 15 + 1.5Q \Rightarrow 2.5Q = 65 \Rightarrow Q^* = 26$$P^* = 54$. (1 mark for
 quantity, 1 mark for price.)
 
 **Step 3: Optimal tax (2 marks).** $t^* = MEC(Q^*) = 5 + 0.5(26) = 5 + 13 = 18$. (2 marks.)
 
 **Step 4: DWL calculation (4 marks).** At $Q_{mkt} = 35$:
-$MSC = 15 + 1.5(35) = 67.5$, $MSB = 80 - 35 = 45$. At $Q^* = 26$: $MSC = MSB = 54$.
+$MSC = 15 + 1.5(35) = 67.5$$MSB = 80 - 35 = 45$. At $Q^* = 26$: $MSC = MSB = 54$.
 $\mathrm{DWL} = \int_{26}^{35} [(80 - Q) - (15 + 1.5Q)]\,dQ = \int_{26}^{35} [65 - 2.5Q]\,dQ$
 $= [65Q - 1.25Q^2]_{26}^{35}$ $= (2275 - 1531.25) - (1690 - 845) = 743.75 - 845 = -101.25$
 
@@ -989,7 +989,7 @@ triangle. Label the market and social optimum. (2 marks.)
 $F_{t+1} = F_t + rF_t(1 - F_t/K) - H_t$ where $F_t$ is the fish stock, $r = 0.5$ is the growth rate,
 $K = 1000$ is carrying capacity, and $H_t$ is the harvest.
 
-**Open access (no regulation):** Each fisher earns profit $\pi = pH - cE$ where $p = 2$, $c = 1$ per
+**Open access (no regulation):** Each fisher earns profit $\pi = pH - cE$ where $p = 2$$c = 1$ per
 unit of effort, and $E$ is effort. Harvest $H = qEF$ where $q = 0.01$ (catchability).
 
 The open-access equilibrium occurs where profit per unit of effort is zero:
@@ -1110,7 +1110,7 @@ factory to reduce output. The fishery's willingness to pay equals the damage avo
 per unit of reduction.
 
 The factory will reduce output if the payment exceeds its lost profit. Lost profit per unit at
-$Q = 400$: $MB - MC = 100 - 100 = 0$... Wait, at $Q = 400$, $MB = 100 = MC$So profit on the marginal
+$Q = 400$: $MB - MC = 100 - 100 = 0$... Wait, at $Q = 400$$MB = 100 = MC$So profit on the marginal
 unit is zero.
 
 Let me reconsider. The factory's profit per unit at output $Q$ is
@@ -1163,14 +1163,14 @@ age 35). Let me rescale.
 
 Let $Q$ be units of education (courses, modules). $P = 50 - 0.5Q$. $MC = 20 + Q$.
 
-$50 - 0.5Q = 20 + Q \Rightarrow Q = 20$, $P = 40$.
+$50 - 0.5Q = 20 + Q \Rightarrow Q = 20$$P = 40$.
 
 **Social optimum:** The marginal social benefit of education exceeds the private marginal benefit
 due to positive externalities (reduced crime, higher civic participation, better health outcomes,
 technology spillovers). Let $MEB = 10$ (constant).
 
 $MSB = MPB + MEB = 60 - 0.5Q$. $MSC = 20 + Q$.
-$60 - 0.5Q = 20 + Q \Rightarrow Q = 26.67$, $P_{MSB} = 60 - 13.33 = 46.67$.
+$60 - 0.5Q = 20 + Q \Rightarrow Q = 26.67$$P_{MSB} = 60 - 13.33 = 46.67$.
 
 The socially optimal quantity is 26.67 (33.3% more than the private market provides).
 

@@ -82,11 +82,11 @@ With city size, geographic location, and prevailing weather patterns.
 
 | Source                           | Key Pollutants                                               | Characteristics                                                                     |
 | -------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| **Vehicle emissions**            | $\mathrm{NO_x}$, $\mathrm{PM}_{2.5}$, $\mathrm{PM}_{10}$CO, VOCs | Dominant source in most cities; concentrated along major roads and at intersections |
-| **Industrial activity**          | $\mathrm{SO_2}$, $\mathrm{PM}_{10}$VOCs, heavy metals          | Point sources; often located in industrial zones or port areas                      |
-| **Construction and demolition**  | $\mathrm{PM}_{10}$, $\mathrm{PM}_{2.5}$                        | Seasonal; concentrated at construction sites                                        |
+| **Vehicle emissions**            | $\mathrm{NO_x}$$\mathrm{PM}_{2.5}$$\mathrm{PM}_{10}$CO, VOCs | Dominant source in most cities; concentrated along major roads and at intersections |
+| **Industrial activity**          | $\mathrm{SO_2}$$\mathrm{PM}_{10}$VOCs, heavy metals          | Point sources; often located in industrial zones or port areas                      |
+| **Construction and demolition**  | $\mathrm{PM}_{10}$$\mathrm{PM}_{2.5}$                        | Seasonal; concentrated at construction sites                                        |
 | **Domestic heating and cooking** | $\mathrm{PM}_{2.5}$CO, $\mathrm{NO_x}$                       | Significant in cities where solid fuels (coal, biomass) are used; seasonal (winter) |
-| **Power generation**             | $\mathrm{SO_2}$, $\mathrm{NO_x}$, $\mathrm{PM}_{10}$             | Point sources; depends on fuel mix                                                  |
+| **Power generation**             | $\mathrm{SO_2}$$\mathrm{NO_x}$$\mathrm{PM}_{10}$             | Point sources; depends on fuel mix                                                  |
 
 ### Health Impacts
 

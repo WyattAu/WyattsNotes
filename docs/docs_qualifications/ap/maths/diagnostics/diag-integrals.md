@@ -44,7 +44,7 @@ $$\lim_{n \to \infty} \sum_{k=1}^{n} \frac{1}{n} \cdot x_k^2 \sqrt{4 - x_k^2} = 
 (b) Since $x_k = \frac{k}{n}$ uses the right endpoint of each subinterval, this is a **right Riemann
 sum**.
 
-(c) Use the substitution $x = 2\sin\theta$, $dx = 2\cos\theta\,d\theta$:
+(c) Use the substitution $x = 2\sin\theta$$dx = 2\cos\theta\,d\theta$:
 
 $$\int_0^1 x^2\sqrt{4-x^2}\,dx = \int_0^{\arcsin(1/2)} 4\sin^2\theta \cdot 2\cos\theta \cdot 2\cos\theta\,d\theta$$
 
@@ -77,15 +77,15 @@ comes before Exponential, so LIATE suggests $u = \sin(3x)$. But for products of 
 trig functions, **either** choice works, and the key is to apply integration by parts **twice** and
 solve algebraically.
 
-Using $u = e^{2x}$, $dv = \sin(3x)\,dx$:
+Using $u = e^{2x}$$dv = \sin(3x)\,dx$:
 
-$du = 2e^{2x}\,dx$, $v = -\frac{1}{3}\cos(3x)$.
+$du = 2e^{2x}\,dx$$v = -\frac{1}{3}\cos(3x)$.
 
 $$\int e^{2x}\sin(3x)\,dx = -\frac{1}{3}e^{2x}\cos(3x) + \frac{2}{3}\int e^{2x}\cos(3x)\,dx$$
 
-Apply parts again to the remaining integral. Let $u = e^{2x}$, $dv = \cos(3x)\,dx$:
+Apply parts again to the remaining integral. Let $u = e^{2x}$$dv = \cos(3x)\,dx$:
 
-$du = 2e^{2x}\,dx$, $v = \frac{1}{3}\sin(3x)$.
+$du = 2e^{2x}\,dx$$v = \frac{1}{3}\sin(3x)$.
 
 $$\int e^{2x}\cos(3x)\,dx = \frac{1}{3}e^{2x}\sin(3x) - \frac{2}{3}\int e^{2x}\sin(3x)\,dx$$
 
@@ -127,9 +127,9 @@ Intersection points: $x = -2, 1, 2$.
 The student's error: they integrated from $-2$ to $2$ without accounting for the curve crossing at
 $x = 1$. On $[-2, 1]$We must determine which curve is on top; on $[1, 2]$The other may be on top.
 
-Test point $x = 0$: $x^3 - 4x = 0$, $x^2 - 4 = -4$. So $x^3 - 4x \gt x^2 - 4$ on $[-2, 1]$.
+Test point $x = 0$: $x^3 - 4x = 0$$x^2 - 4 = -4$. So $x^3 - 4x \gt x^2 - 4$ on $[-2, 1]$.
 
-Test point $x = 1.5$: $x^3 - 4x = 3.375 - 6 = -2.625$, $x^2 - 4 = 2.25 - 4 = -1.75$. So
+Test point $x = 1.5$: $x^3 - 4x = 3.375 - 6 = -2.625$$x^2 - 4 = 2.25 - 4 = -1.75$. So
 $x^2 - 4 \gt x^3 - 4x$ on $[1, 2]$.
 
 $$\text{Total area = \int_{-2}^{1}\left[(x^3 - 4x) - (x^2 - 4)\right]\,dx + \int_1^{2}\left[(x^2 - 4) - (x^3 - 4x)\right]\,dx$$
@@ -169,7 +169,7 @@ at intersection points, which would give wrong answers .
 
 **Question:**
 
-Let $R$ be the region bounded by $y = \sqrt{x}$, $y = 0$And $x = 4$.
+Let $R$ be the region bounded by $y = \sqrt{x}$$y = 0$And $x = 4$.
 
 (a) Find the volume generated when $R$ is revolved about the line $x = 6$ using the **shell
 method**. (b) Verify your answer using the **washer method**. (c) A student claims the volume about
@@ -231,7 +231,7 @@ comparison with $p$-integrals.
 Split at $x = 1$:
 $\displaystyle\int_0^{\infty} \frac{x^{p-1}}{1+x}\,dx = \int_0^1 \frac{x^{p-1}}{1+x}\,dx + \int_1^{\infty} \frac{x^{p-1}}{1+x}\,dx$
 
-**Near $x = 0$** (first integral): When $x \in (0, 1)$, $\frac{1}{2} \lt \frac{1}{1+x} \lt 1$So:
+**Near $x = 0$** (first integral): When $x \in (0, 1)$$\frac{1}{2} \lt \frac{1}{1+x} \lt 1$So:
 
 $$\frac{x^{p-1}}{2} \lt \frac{x^{p-1}}{1+x} \lt x^{p-1}$$
 
@@ -240,7 +240,7 @@ By comparison with $\displaystyle\int_0^1 x^{p-1}\,dx$ (converges iff $p - 1 > -
 The first integral converges iff $p > 0$.
 
 **As $x \to \infty$** (second integral): When
-$x > 1$, $\frac{1}{2} \lt \frac{1}{1+x} \lt \frac{1}{x}$So:
+$x > 1$$\frac{1}{2} \lt \frac{1}{1+x} \lt \frac{1}{x}$So:
 
 $$\frac{x^{p-1}}{2} \lt \frac{x^{p-1}}{1+x} \lt x^{p-2}$$
 
@@ -266,7 +266,7 @@ $f(x) = \begin{cases} 2x & \text{if  0 \leq x \lt 2 \\ 8 - 2x & \text{if  2 \leq
 Let $\displaystyle F(x) = \int_0^x f(t)\,dt$.
 
 (a) Find and graph $F(x)$. (b) Is $F$ differentiable at $x = 2$? Compute $F'(2)$ from the definition
-of the derivative and explain. (c) A student claims that since $f$ has a corner at $x = 2$, $F$ must
+of the derivative and explain. (c) A student claims that since $f$ has a corner at $x = 2$$F$ must
 also have a corner at $x = 2$. Is this correct?
 
 **Solution:**
@@ -297,9 +297,9 @@ $F'_{+}(2) = \lim_{h \to 0^+}\frac{F(2+h) - F(2)}{h} = \lim_{h \to 0^+}\frac{-(2
 
 $= \lim_{h \to 0^+}\frac{-4 - 4h - h^2 + 16 + 8h - 12}{h} = \lim_{h \to 0^+}\frac{-h^2 + 4h}{h} = \lim_{h \to 0^+}(-h + 4) = 4$.
 
-Since $4 = 4$, $F$ **is differentiable** at $x = 2$With $F'(2) = 4 = f(2)$.
+Since $4 = 4$$F$ **is differentiable** at $x = 2$With $F'(2) = 4 = f(2)$.
 
 (c) The student is **incorrect**. Although $f$ has a corner at $x = 2$ ($f$ changes from slope $+2$
 to slope $-2$), $f$ is continuous at $x = 2$ ($f(2^-) = 4 = f(2^+)$). By FTC part 1, since $f$ is
-continuous at $x = 2$, $F$ is differentiable at $x = 2$ with $F'(2) = f(2) = 4$. Integration "smooths"
+continuous at $x = 2$$F$ is differentiable at $x = 2$ with $F'(2) = f(2) = 4$. Integration "smooths"
 the corner: $F$ is continuously differentiable even though $f$ is not.

@@ -89,7 +89,7 @@ The determinant is computed by _cofactor expansion_ along any row or column:
 
 $$\boxed{\det(\mathbf{A}) = a_{11}\begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix} - a_{12}\begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33} \end{vmatrix} + a_{13}\begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix}}$$
 
-The signs alternate $+$, $-$, $+$ along the first row (following the checkerboard pattern).
+The signs alternate $+$$-$$+$ along the first row (following the checkerboard pattern).
 
 ### 2.3 Properties of Determinants
 
@@ -409,7 +409,7 @@ $\det\!\begin{pmatrix} 4 - \lambda & 1 \\ 2 & 3 - \lambda \end{pmatrix} = 0$
 
 $$(4 - \lambda)(3 - \lambda) - 2 = \lambda^2 - 7\lambda + 10 = (\lambda - 5)(\lambda - 2) = 0$$
 
-Eigenvalues: $\lambda_1 = 5$, $\lambda_2 = 2$.
+Eigenvalues: $\lambda_1 = 5$$\lambda_2 = 2$.
 
 **For $\lambda_1 = 5$:**
 $\begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \implies -x + y = 0 \implies y = x$.
@@ -531,7 +531,7 @@ $$\mathbf{M}^2 = \begin{pmatrix} -\frac{1}{2} & \frac◆LB◆\sqrt{3}◆RB◆◆
 
 <hr />
 
-**Problem 4.** The triangle with vertices $(0, 0)$, $(2, 0)$, $(0, 1)$ is transformed by the matrix
+**Problem 4.** The triangle with vertices $(0, 0)$$(2, 0)$$(0, 1)$ is transformed by the matrix
 $\mathbf{T} = \begin{pmatrix} 3 & 1 \\ 0 & 2 \end{pmatrix}$. Find the coordinates of the vertices of
 The image, and verify that the area scales by $|\det(\mathbf{T})|$.
 
@@ -545,9 +545,9 @@ Apply $\mathbf{T}$ to each vertex. The original triangle has area 1.
 <details>
 <summary>Answer</summary>
 
-$(0, 0) \mapsto (0, 0)$, $(2, 0) \mapsto (6, 0)$, $(0, 1) \mapsto (1, 2)$.
+$(0, 0) \mapsto (0, 0)$$(2, 0) \mapsto (6, 0)$$(0, 1) \mapsto (1, 2)$.
 
-Image vertices: $(0, 0)$, $(6, 0)$, $(1, 2)$.
+Image vertices: $(0, 0)$$(6, 0)$$(1, 2)$.
 
 Original area: $\dfrac{1}{2} \times 2 \times 1 = 1$.
 
@@ -581,14 +581,14 @@ $\det(\mathbf{A}) = 2\begin{vmatrix} -1 & 2 \\ 2 & 1 \end{vmatrix} - 1\begin{vma
 
 $= 2(-5) - 1(-5) - 1(5) = -10 + 5 - 5 = -10$
 
-Cofactors: $C_{11} = -5$, $C_{12} = 5$, $C_{13} = 5$, $C_{21} = -3$, $C_{22} = 5$, $C_{23} = -1$
-$C_{31} = 1$, $C_{32} = -5$, $C_{33} = -3$.
+Cofactors: $C_{11} = -5$$C_{12} = 5$$C_{13} = 5$$C_{21} = -3$$C_{22} = 5$$C_{23} = -1$
+$C_{31} = 1$$C_{32} = -5$$C_{33} = -3$.
 
 $$\mathbf{A}^{-1} = -\frac{1}{10}\begin{pmatrix} -5 & -3 & 1 \\ 5 & 5 & -5 \\ 5 & -1 & -3 \end{pmatrix}$$
 
 $$\mathbf{x} = -\frac{1}{10}\begin{pmatrix} -5 & -3 & 1 \\ 5 & 5 & -5 \\ 5 & -1 & -3 \end{pmatrix}\begin{pmatrix} 3 \\ 1 \\ 10 \end{pmatrix} = -\frac{1}{10}\begin{pmatrix} -15 - 3 + 10 \\ 15 + 5 - 50 \\ 15 - 1 - 30 \end{pmatrix} = -\frac{1}{10}\begin{pmatrix} -8 \\ -30 \\ -16 \end{pmatrix} = \begin{pmatrix} 4/5 \\ 3 \\ 8/5 \end{pmatrix}$$
 
-So $x = \dfrac{4}{5}$, $y = 3$, $z = \dfrac{8}{5}$.
+So $x = \dfrac{4}{5}$$y = 3$$z = \dfrac{8}{5}$.
 
 </details>
 
@@ -646,7 +646,7 @@ Solve $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$ for $\lambda$Then find eigenvec
 Characteristic equation:
 $\det\begin{pmatrix} 5 - \lambda & 4 \\ 1 & 2 - \lambda \end{pmatrix} = (5 - \lambda)(2 - \lambda) - 4 = \lambda^2 - 7\lambda + 6 = (\lambda - 1)(\lambda - 6) = 0$.
 
-Eigenvalues: $\lambda_1 = 6$, $\lambda_2 = 1$.
+Eigenvalues: $\lambda_1 = 6$$\lambda_2 = 1$.
 
 **For $\lambda_1 = 6$:**
 $\begin{pmatrix} -1 & 4 \\ 1 & -4 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} = \mathbf{0} \implies -x + 4y = 0 \implies x = 4y$.
@@ -815,7 +815,7 @@ $y = -x$.
 ### Example 8.4: Determinant as a scaling factor
 
 **Problem.** The matrix $\mathbf{T} = \begin{pmatrix}2&1\\-1&3\end{pmatrix}$ represents a
-Transformation. A triangle has vertices $(0,0)$, $(1,0)$, $(0,1)$. Find the area of its image.
+Transformation. A triangle has vertices $(0,0)$$(1,0)$$(0,1)$. Find the area of its image.
 
 **Solution.** $\det(\mathbf{T}) = 6 - (-1) = 7$.
 
@@ -835,7 +835,7 @@ $\mathbf{BA} = \begin{pmatrix}0&0\\1&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{p
 
 $\boxed{[\mathbf{A},\mathbf{B}] = \begin{pmatrix}1&0\\0&-1\end{pmatrix}}$
 
-Since $[\mathbf{A},\mathbf{B}] \neq \mathbf{O}$, $\mathbf{A}$ and $\mathbf{B}$ do not commute.
+Since $[\mathbf{A},\mathbf{B}] \neq \mathbf{O}$$\mathbf{A}$ and $\mathbf{B}$ do not commute.
 
 ### Example 8.6: Matrix representing successive transformations
 

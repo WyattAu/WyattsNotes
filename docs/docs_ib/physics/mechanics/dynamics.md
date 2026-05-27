@@ -814,7 +814,7 @@ the additional centripetal force:
 
 ### Question 8 (Paper 2 style)
 
-A block of mass $3\mathrm{ kg}$ is on a rough horizontal surface ($\mu_s = 0.4$, $\mu_k = 0.3$). A
+A block of mass $3\mathrm{ kg}$ is on a rough horizontal surface ($\mu_s = 0.4$$\mu_k = 0.3$). A
 Force of $15\mathrm{ N}$ is applied at $25\degree$ above the horizontal.
 
 **(a)** Determine whether the block moves.

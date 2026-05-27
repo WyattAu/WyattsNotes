@@ -60,7 +60,7 @@ $$
 
 ### The Analogy Between Linear and Rotational Kinematics
 
-Every linear kinematic equation has a direct rotational analogue. Replace $x$ with $\theta$, $v$ With
+Every linear kinematic equation has a direct rotational analogue. Replace $x$ with $\theta$$v$ With
 $\omega$And $a$ with $\alpha$. This is not a coincidence: it reflects the fact that rotation Is a
 one-dimensional motion in the angular coordinate. The mathematics is identical.
 
@@ -802,7 +802,7 @@ $a = \frac{g\sin\theta}{1 + I/(mr^2)} = \frac{g\sin\theta}{1 + 2/5} = \frac{9.8 
 
 Angular acceleration: $\alpha = a/r = 3.5/0.1 = 35 \mathrm{ rad/s^2$.
 
-Speed: $v^2 = 2ad = 2 \times 3.5 \times 3 = 21$, $v = 4.58 \mathrm{ m/s$.
+Speed: $v^2 = 2ad = 2 \times 3.5 \times 3 = 21$$v = 4.58 \mathrm{ m/s$.
 
 </details>
 
@@ -903,6 +903,6 @@ $L = I_{\mathrm{disk}\omega = \frac{1}{2}(3)(0.4)^2 \times 10 = 0.24 \times 10 =
 Final moment of inertia:
 $I_f = I_{\mathrm{disk} + mr^2 = 0.24 + 1(0.3)^2 = 0.24 + 0.09 = 0.33 \mathrm{ kg\cdot m^2$.
 
-Conservation: $L_f = L_i$, $I_f\omega_f = 2.4$, $\omega_f = 2.4/0.33 = 7.27 \mathrm{ rad/s$.
+Conservation: $L_f = L_i$$I_f\omega_f = 2.4$$\omega_f = 2.4/0.33 = 7.27 \mathrm{ rad/s$.
 
 </details>

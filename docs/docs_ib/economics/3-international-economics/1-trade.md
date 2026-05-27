@@ -573,13 +573,13 @@ Loss.
 
 (a) Pre-tariff (world price $= 50$):
 
-$Q_d = 200 - 2(50) = 100$, $Q_s = 2(50) - 40 = 60$
+$Q_d = 200 - 2(50) = 100$$Q_s = 2(50) - 40 = 60$
 
 Imports $= 100 - 60 = 40$
 
 Post-tariff (domestic price $= 50 + 10 = 60$):
 
-$Q_d = 200 - 2(60) = 80$, $Q_s = 2(60) - 40 = 80$
+$Q_d = 200 - 2(60) = 80$$Q_s = 2(60) - 40 = 80$
 
 Imports $= 80 - 80 = 0$
 
@@ -1580,17 +1580,17 @@ prices, driven by structural shifts in global demand.
 
 During a super-cycle upswing:
 
-$, $
+$$
 \text{ToT improve} \implies \text{Higher export revenue} \implies \text{Higher government
 savings} \implies \text{Higher investment}
-$, $
+$$
 
 During a super-cycle downswing:
 
-$, $
+$$
 \text{ToT deteriorate} \implies \text{Lower export revenue} \implies \text{Fiscal deficits} \implies
 \text{Debt accumulation}
-$, $
+$$
 
 The volatility of commodity prices makes fiscal planning extremely difficult for Commodity-dependent
 developing countries.

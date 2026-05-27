@@ -87,7 +87,7 @@ Add: $19x = 38$So $x = 2$.
 
 Substitute into (1): $6 + 2y = 12$So $y = 3$.
 
-Solution: $x = 2$, $y = 3$.
+Solution: $x = 2$$y = 3$.
 
 </details>
 
@@ -224,8 +224,8 @@ Y &\geq 2x
 \end{aligned}
 $$
 
-This defines a polygon bounded by the lines $x + y = 6$, $x = 0$, $y = 0$And $y = 2x$. The Vertices are
-$(0, 0)$, $(0, 6)$And the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$ $x = 2$, $y = 4$. So the
+This defines a polygon bounded by the lines $x + y = 6$$x = 0$$y = 0$And $y = 2x$. The Vertices are
+$(0, 0)$$(0, 6)$And the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$ $x = 2$$y = 4$. So the
 third vertex is $(2, 4)$.
 
 </details>
@@ -262,7 +262,7 @@ If $0 < a < b$Then $\frac{1}{a} > \frac{1}{b}$.
 _Proof._ Since $a, b > 0$ and $a < b$: $\frac{1}{a} - \frac{1}{b} = \frac{b - a}{ab}$. Since
 $b - a > 0$ and $ab > 0$The result is positive. So $\frac{1}{a} > \frac{1}{b}$. $\blacksquare$
 
-_Intuition._ Consider $a = 2$, $b = 4$. Then $\frac{1}{2} > \frac{1}{4}$. The smaller the positive
+_Intuition._ Consider $a = 2$$b = 4$. Then $\frac{1}{2} > \frac{1}{4}$. The smaller the positive
 Number, the larger its reciprocal — like how slicing a cake into more pieces makes each piece
 Smaller.
 
@@ -380,7 +380,7 @@ If $D \neq 0$The unique solution is:
 
 $$x = \frac{D_x}{D}, \quad y = \frac{D_y}{D}, \quad z = \frac{D_z}{D}$$
 
-Where $D_x$ is formed by replacing the first column of $D$ with $(d_1, d_2, d_3)^T$, $D_y$ by
+Where $D_x$ is formed by replacing the first column of $D$ with $(d_1, d_2, d_3)^T$$D_y$ by
 Replacing the second column, and $D_z$ by replacing the third.
 
 ### 7.3 3x3 Determinant Expansion
@@ -661,7 +661,7 @@ $$\frac{-2}{x(x - 2)} \leq 0$$
 
 $$\frac{2}{x(x - 2)} \geq 0$$
 
-Critical values: $x = 0$, $x = 2$.
+Critical values: $x = 0$$x = 2$.
 
 Sign chart for $x(x - 2)$:
 
@@ -680,18 +680,18 @@ Solution: $x \in (-\infty, 0) \cup (2, \infty)$.
 
 <hr />
 
-**Problem 6.** Find the vertices of the region defined by $x \geq 0$, $y \geq 0$, $2x + y \leq 8$ And
+**Problem 6.** Find the vertices of the region defined by $x \geq 0$$y \geq 0$$2x + y \leq 8$ And
 $x + 2y \leq 8$.
 
 <details>
 <summary>Solution</summary>
 Intersection of $2x + y = 8$ and $x + 2y = 8$:
 
-Multiply first by 2: $4x + 2y = 16$. Subtract: $3x = 8$, $x = \frac{8}{3}$.
+Multiply first by 2: $4x + 2y = 16$. Subtract: $3x = 8$$x = \frac{8}{3}$.
 
 $y = 8 - 2 \cdot \frac{8}{3} = \frac{24 - 16}{3} = \frac{8}{3}$.
 
-Vertices: $(0, 0)$, $(4, 0)$, $(0, 4)$And $\left(\frac{8}{3}, \frac{8}{3}\right)$.
+Vertices: $(0, 0)$$(4, 0)$$(0, 4)$And $\left(\frac{8}{3}, \frac{8}{3}\right)$.
 
 </details>
 <b>If you get this wrong, revise:</b> [Graphical inequalities](#4-graphical-inequalities)
@@ -736,7 +736,7 @@ and $\alpha\beta = 8$Find $p$ and $q$.
 <summary>Solution</summary>
 By Viète's formulas (sum and product of roots): $-p = 6$ and $q = 8$.
 
-So $p = -6$, $q = 8$.
+So $p = -6$$q = 8$.
 
 Verification: $x^2 - 6x + 8 = (x - 2)(x - 4) = 0$Giving roots $2$ and $4$ with sum $6$ and product
 $8$. ✓
@@ -866,7 +866,7 @@ $x \geq \frac◆LB◆3 + \sqrt{13}◆RB◆◆LB◆2◆RB◆$.
 
 <hr />
 
-**Problem 14.** Find the area of the region defined by $x \geq 0$, $y \geq 0$, $3x + 2y \leq 12$ And
+**Problem 14.** Find the area of the region defined by $x \geq 0$$y \geq 0$$3x + 2y \leq 12$ And
 $x + y \geq 3$.
 
 <details>
@@ -908,13 +908,13 @@ Subtracting: $y^2 - x^2 = 5$So $(y - x)(y + x) = 5$.
 
 Then $(y - x)(5) = 5$Giving $y - x = 1$.
 
-From $x + y = 5$ and $y - x = 1$: adding gives $2y = 6$So $y = 3$, $x = 2$.
+From $x + y = 5$ and $y - x = 1$: adding gives $2y = 6$So $y = 3$$x = 2$.
 
 **Case 2:** $x + y = -5$.
 
 Then $(y - x)(-5) = 5$Giving $y - x = -1$.
 
-From $x + y = -5$ and $y - x = -1$: adding gives $2y = -6$So $y = -3$, $x = -2$.
+From $x + y = -5$ and $y - x = -1$: adding gives $2y = -6$So $y = -3$$x = -2$.
 
 **Verification:** $(2, 3)$: $4 + 6 = 10$ ✓ and $9 + 6 = 15$ ✓.
 

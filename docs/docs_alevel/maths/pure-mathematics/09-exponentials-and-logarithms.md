@@ -112,7 +112,7 @@ Are all governed by exponential functions.
 
 ### 3.1 Definition
 
-**Definition.** For $a \gt 0$, $a \neq 1$The **logarithm** $\log_a x$ is the inverse function of
+**Definition.** For $a \gt 0$$a \neq 1$The **logarithm** $\log_a x$ is the inverse function of
 $a^x$:
 
 $$y = \log_a x \iff a^y = x$$
@@ -121,7 +121,7 @@ The **natural logarithm** is the logarithm with base $e$Written $\ln x = \log_e 
 
 ### 3.2 Proof that $a^{\log_a x} = x$ and $\log_a(a^x) = x$
 
-**Theorem.** For all $a \gt 0$, $a \neq 1$And all $x \gt 0$:
+**Theorem.** For all $a \gt 0$$a \neq 1$And all $x \gt 0$:
 
 $$(\mathrm{i})\quad a^{\log_a x} = x \qquad (\mathrm{ii})\quad \log_a(a^x) = x$$
 
@@ -329,7 +329,7 @@ hours.
 - $y$-intercept: $(0, 1)$
 - Horizontal asymptote: $y = 0$ (as $x \to -\infty$)
 - Strictly increasing
-- Passes through $(1, e)$, $(\ln 2, 2)$
+- Passes through $(1, e)$$(\ln 2, 2)$
 
 ### 9.2 Key features of $y = \ln x$
 
@@ -337,7 +337,7 @@ hours.
 - $x$-intercept: $(1, 0)$
 - Vertical asymptote: $x = 0$
 - Strictly increasing
-- Passes through $(e, 1)$, $(2, \ln 2)$
+- Passes through $(e, 1)$$(2, \ln 2)$
 
 ### 9.3 Transformations
 
@@ -378,7 +378,7 @@ Evaluate $\displaystyle\lim_{n\to\infty}\left(1+\frac{3}{n}\right)^n$.
 
 <details>
 <summary>Solution 1</summary>
-Let $m = n/3$So $n = 3m$. As $n \to \infty$, $m \to \infty$.
+Let $m = n/3$So $n = 3m$. As $n \to \infty$$m \to \infty$.
 
 $$\left(1+\frac{3}{n}\right)^n = \left(1+\frac{1}{m}\right)^{3m} = \left[\left(1+\frac{1}{m}\right)^m\right]^3 \to e^3$$
 
@@ -393,7 +393,7 @@ Prove that $\dfrac{d}{dx}(e^{3x^2}) = 6x\, e^{3x^2}$ using the chain rule.
 
 <details>
 <summary>Solution 2</summary>
-Let $u = 3x^2$So $y = e^u$ and $\dfrac{dy}{du} = e^u$, $\dfrac{du}{dx} = 6x$.
+Let $u = 3x^2$So $y = e^u$ and $\dfrac{dy}{du} = e^u$$\dfrac{du}{dx} = 6x$.
 
 By the chain rule:
 $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx} = e^u \cdot 6x = 6x\, e^{3x^2}$.
@@ -502,7 +502,7 @@ Solution.**
 
 <details>
 <summary>Problem 9</summary>
-Prove that $\log_a b \cdot \log_b a = 1$ for all $a, b \gt 0$, $a, b \neq 1$.
+Prove that $\log_a b \cdot \log_b a = 1$ for all $a, b \gt 0$$a, b \neq 1$.
 </details>
 
 <details>
@@ -524,7 +524,7 @@ The temperature $T$ of a cooling object follows $T = T_s + (T_0 - T_s)e^{-kt}$. 
 
 <details>
 <summary>Solution 10</summary>
-$T_s = 20$, $T_0 = 90$. Model: $T = 20 + 70e^{-kt}$.
+$T_s = 20$$T_0 = 90$. Model: $T = 20 + 70e^{-kt}$.
 
 At $t = 10$: $60 = 20 + 70e^{-10k} \implies 40 = 70e^{-10k} \implies e^{-10k} = 4/7$.
 
@@ -547,7 +547,7 @@ Express $y = e^{2x} + 3e^{-2x}$ in the form $y = 2\cosh(2x) + \cosh(2x)$ is not 
 <summary>Solution 11</summary>
 $\dfrac{dy}{dx} = 2e^{2x} - 6e^{-2x} = 0 \implies 2e^{2x} = 6e^{-2x} \implies e^{4x} = 3 \implies x = \dfrac◆LB◆\ln 3◆RB◆◆LB◆4◆RB◆$.
 
-At $x = \dfrac◆LB◆\ln 3◆RB◆◆LB◆4◆RB◆$: $e^{2x} = e^{\ln 3 / 2} = \sqrt{3}$, $e^{-2x} = 1/\sqrt{3}$.
+At $x = \dfrac◆LB◆\ln 3◆RB◆◆LB◆4◆RB◆$: $e^{2x} = e^{\ln 3 / 2} = \sqrt{3}$$e^{-2x} = 1/\sqrt{3}$.
 
 $$y_{\min} = \sqrt{3} + \frac◆LB◆3◆RB◆◆LB◆\sqrt{3}◆RB◆ = \sqrt{3} + \sqrt{3} = 2\sqrt{3}$$
 

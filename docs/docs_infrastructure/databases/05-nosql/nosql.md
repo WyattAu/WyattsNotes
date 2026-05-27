@@ -341,7 +341,7 @@ Availability across multiple data centers.
 For reads and writes to be consistent (read-your-writes), the sum of read and write consistency
 Levels must exceed the replication factor:
 
-$, $W + R \gt RF$, $
+$$W + R \gt RF$$
 
 For example, with replication factor 3: `QUORUM` writes + `QUORUM` reads ($2 + 2 = 4 \gt 3$)
 Guarantees that the read sees the latest write.

@@ -21,13 +21,13 @@ given that $y = 0$ when $x = 0$. (d) Explain what is meant by a "particular solu
 **Solution:**
 
 (a) $y\,dy = x\,dx$. $\frac{y^2}{2} = \frac{x^2}{2} + C$. $y^2 = x^2 + C$. At $(1,2)$:
-$4 = 1 + C$, $C = 3$. $y^2 = x^2 + 3$, $y = \sqrt{x^2 + 3}$ (taking positive root).
+$4 = 1 + C$$C = 3$. $y^2 = x^2 + 3$$y = \sqrt{x^2 + 3}$ (taking positive root).
 
 (b) $\frac{dy}{y} = x\,dx$. $\ln|y| = \frac{x^2}{2} + C$. $y = Ae^{x^2/2}$. At $(0,1)$: $1 = A$So
 $y = e^{x^2/2}$.
 
 (c) $\frac{y}{y^2 + 1}\,dy = dx$. Integrating: $\frac{1}{2}\ln(y^2 + 1) = x + C$.
-$\ln(y^2 + 1) = 2x + C$. At $(0,0)$: $\ln 1 = C = 0$. $y^2 + 1 = e^{2x}$, $y = \sqrt{e^{2x} - 1}$.
+$\ln(y^2 + 1) = 2x + C$. At $(0,0)$: $\ln 1 = C = 0$. $y^2 + 1 = e^{2x}$$y = \sqrt{e^{2x} - 1}$.
 
 (d) The **general solution** contains an arbitrary constant $C$ and represents the family of all
 possible solutions. The **particular solution** is obtained by using an initial/boundary condition
@@ -46,7 +46,7 @@ the auxiliary equation.
 $y = Ae^{2x} + Be^{3x}$.
 
 (b) $m^2 + 4 = 0$. $m = \pm 2i$. General solution: $y = A\cos 2x + B\sin 2x$. $y(0) = 1$: $A = 1$.
-$y'(0) = 0$: $2B = 0$, $B = 0$. Particular solution: $y = \cos 2x$.
+$y'(0) = 0$: $2B = 0$$B = 0$. Particular solution: $y = \cos 2x$.
 
 (c) $m^2 + 6m + 9 = 0$. $(m+3)^2 = 0$. $m = -3$ (repeated root). General solution:
 $y = (A + Bx)e^{-3x}$.
@@ -67,18 +67,18 @@ Solve $\frac{d^2y}{dx^2} - 4y = 2e^{3x}$.
 
 **Solution:**
 
-(a) CFE: $m^2 - 3m + 2 = 0$, $m = 1, 2$. CF: $y_c = Ae^x + Be^{2x}$. PI: try $y_p = k$.
-$0 - 0 + 2k = 4$, $k = 2$. GS: $y = Ae^x + Be^{2x} + 2$.
+(a) CFE: $m^2 - 3m + 2 = 0$$m = 1, 2$. CF: $y_c = Ae^x + Be^{2x}$. PI: try $y_p = k$.
+$0 - 0 + 2k = 4$$k = 2$. GS: $y = Ae^x + Be^{2x} + 2$.
 
-(b) CFE: $m^2 + 1 = 0$, $m = \pm i$. CF: $y_c = A\cos x + B\sin x$. PI: since $\cos x$ is in the CF,
+(b) CFE: $m^2 + 1 = 0$$m = \pm i$. CF: $y_c = A\cos x + B\sin x$. PI: since $\cos x$ is in the CF,
 try $y_p = x(C\cos x + D\sin x)$. $y_p' = C\cos x + D\sin x + x(-C\sin x + D\cos x)$.
 $y_p'' = -C\sin x + D\cos x - C\sin x + D\cos x + x(-C\cos x - D\sin x) = -2C\sin x + 2D\cos x - x(C\cos x + D\sin x)$.
 $y_p'' + y_p = -2C\sin x + 2D\cos x = 10\cos x$.
-$2D = 10 \Rightarrow D = 5$, $-2C = 0 \Rightarrow C = 0$. PI: $y_p = 5x\sin x$. GS:
+$2D = 10 \Rightarrow D = 5$$-2C = 0 \Rightarrow C = 0$. PI: $y_p = 5x\sin x$. GS:
 $y = A\cos x + B\sin x + 5x\sin x$.
 
-(c) CFE: $m^2 - 4 = 0$, $m = \pm 2$. CF: $y_c = Ae^{2x} + Be^{-2x}$. PI: try $y_p = ce^{3x}$.
-$9ce^{3x} - 4ce^{3x} = 2e^{3x}$. $5c = 2$, $c = 2/5$. GS:
+(c) CFE: $m^2 - 4 = 0$$m = \pm 2$. CF: $y_c = Ae^{2x} + Be^{-2x}$. PI: try $y_p = ce^{3x}$.
+$9ce^{3x} - 4ce^{3x} = 2e^{3x}$. $5c = 2$$c = 2/5$. GS:
 $y = Ae^{2x} + Be^{-2x} + \frac{2}{5}e^{3x}$.
 
 ---
@@ -98,9 +98,9 @@ the velocity-time graph.
 Integrating factor: $e^{\alpha t}$. $\frac{d}{dt}(ve^{\alpha t}) = ge^{\alpha t}$.
 $ve^{\alpha t} = \frac◆LB◆g◆RB◆◆LB◆\alpha◆RB◆e^{\alpha t} + C$.
 $v = \frac◆LB◆g◆RB◆◆LB◆\alpha◆RB◆ + Ce^{-\alpha t} = \frac{mg}{k} + Ce^{-kt/m}$. At $t = 0$:
-$0 = mg/k + C$, $C = -mg/k$. $v = \frac{mg}{k}(1 - e^{-kt/m})$.
+$0 = mg/k + C$$C = -mg/k$. $v = \frac{mg}{k}(1 - e^{-kt/m})$.
 
-(b) Terminal velocity: as $t \to \infty$, $e^{-kt/m} \to 0$So $v_{\text{term}} = \frac{mg}{k}$.
+(b) Terminal velocity: as $t \to \infty$$e^{-kt/m} \to 0$So $v_{\text{term}} = \frac{mg}{k}$.
 
 (c) At $t = m/k$: $v = \frac{mg}{k}(1 - e^{-1}) = \frac{mg}{k}(1 - 0.368) = 0.632 v_{\text{term}}$.
 The particle reaches approximately 63.2% of terminal velocity.
@@ -110,8 +110,8 @@ approaches $v = mg/k$. It is a typical exponential approach curve.
 
 ### IT-2: Coupled DEs (with Matrices)
 
-**Question:** Solve the system: $\frac{dx}{dt} = 2x + y$, $\frac{dy}{dt} = x + 2y$With
-$x(0) = 1$, $y(0) = 0$. (a) Write in matrix form. (b) Find eigenvalues and eigenvectors of the
+**Question:** Solve the system: $\frac{dx}{dt} = 2x + y$$\frac{dy}{dt} = x + 2y$With
+$x(0) = 1$$y(0) = 0$. (a) Write in matrix form. (b) Find eigenvalues and eigenvectors of the
 coefficient matrix. (c) Solve the system. (d) Calculate $x(1)$ and $y(1)$.
 
 **Solution:**
@@ -129,7 +129,7 @@ $\begin{pmatrix}x\\y\end{pmatrix} = c_1 e^{3t}\begin{pmatrix}1\\1\end{pmatrix} +
 $\begin{pmatrix}1\\0\end{pmatrix} = c_1\begin{pmatrix}1\\1\end{pmatrix} + c_2\begin{pmatrix}1\\-1\end{pmatrix}$.
 $c_1 + c_2 = 1$ and $c_1 - c_2 = 0$So $c_1 = c_2 = 1/2$.
 
-$x = \frac{e^{3t} + e^t}{2}$, $y = \frac{e^{3t} - e^t}{2}$.
+$x = \frac{e^{3t} + e^t}{2}$$y = \frac{e^{3t} - e^t}{2}$.
 
 (d) $x(1) = \frac{e^3 + e}{2} = \frac{20.086 + 2.718}{2} = 11.40$.
 $y(1) = \frac{e^3 - e}{2} = \frac{20.086 - 2.718}{2} = 8.68$.

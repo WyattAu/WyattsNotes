@@ -283,8 +283,8 @@ Valence electrons available for bonding.
 A **transition metal** has a partially filled $d$-subshell in its atom **or** in any of its common
 Oxidation states.
 
-By this definition, $\mathrm{Sc}$ (always $\mathrm{Sc}^{3+}$, $d^0$) and $\mathrm{Zn}$ (always
-$\mathrm{Zn}^{2+}$, $d^{10}$) are **not** transition metals.
+By this definition, $\mathrm{Sc}$ (always $\mathrm{Sc}^{3+}$$d^0$) and $\mathrm{Zn}$ (always
+$\mathrm{Zn}^{2+}$$d^{10}$) are **not** transition metals.
 
 ### Variable Oxidation States
 
@@ -310,7 +310,7 @@ $$
 
 | Ligand type | Examples                                               | Denticity |
 | ----------- | ------------------------------------------------------ | --------- |
-| Monodentate | $\mathrm{H}_2\mathrm{O}$, $\mathrm{NH}_3$, $\mathrm{Cl}^-$ | $1$       |
+| Monodentate | $\mathrm{H}_2\mathrm{O}$$\mathrm{NH}_3$$\mathrm{Cl}^-$ | $1$       |
 | Bidentate   | en, oxalate                                            | $2$       |
 | Hexadentate | EDTA                                                   | $6$       |
 
@@ -502,7 +502,7 @@ decreasing ionic character of the oxides.
 **Worked Example: Thermal Decomposition Ranking**
 
 Arrange the following in order of increasing thermal decomposition temperature, and explain:
-$\mathrm{Na}_2\mathrm{CO}_3$, $\mathrm{MgCO}_3$, $\mathrm{CaCO}_3$.
+$\mathrm{Na}_2\mathrm{CO}_3$$\mathrm{MgCO}_3$$\mathrm{CaCO}_3$.
 
 <details>
 <summary>Solution</summary>
@@ -580,7 +580,7 @@ no visible light is absorbed by $d$-$d$ transitions. The compound appears white.
    charge.
 
 2. **[Medium]** A student adds aqueous silver nitrate to three separate test tubes containing
-   $\mathrm{NaCl}(aq)$, $\mathrm{NaBr}(aq)$And $\mathrm{NaI}(aq)$. Describe the observations at each
+   $\mathrm{NaCl}(aq)$$\mathrm{NaBr}(aq)$And $\mathrm{NaI}(aq)$. Describe the observations at each
    step, including what happens when dilute and concentrated ammonia are subsequently added.
 
 3. **[Hard]** Write balanced equations for the reactions of sulfur dioxide with: (a) water, (b)
@@ -605,7 +605,7 @@ no visible light is absorbed by $d$-$d$ transitions. The compound appears white.
 
 8. **[Hard]** EDTA ($\mathrm{C}_{10}\mathrm{H}_{16}\mathrm{N}_2\mathrm{O}_8$) forms a 1:1 complex
    with $\mathrm{Ca}^{2+}$. Calculate the mass of EDTA required to complex exactly
-   $50.0\mathrm{ mg}$ of $\mathrm{Ca}^{2+}$ ions. ($M_r$ of EDTA $= 292\mathrm{ g/mol}$, $A_r$ of
+   $50.0\mathrm{ mg}$ of $\mathrm{Ca}^{2+}$ ions. ($M_r$ of EDTA $= 292\mathrm{ g/mol}$$A_r$ of
    $\mathrm{Ca} = 40.1$)
 
 ---
@@ -744,7 +744,7 @@ $$V(\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7) = \frac{n}{c} = \frac{4.17 \times 10^
 <summary>Problem 9: Quantitative -- Comparing Lattice Energies</summary>
 
 Arrange the following ionic compounds in order of increasing lattice energy (most negative first):
-$\mathrm{NaF}$, $\mathrm{MgO}$, $\mathrm{NaCl}$, $\mathrm{MgCl}_2$, $\mathrm{Al}_2\mathrm{O}_3$. Justify
+$\mathrm{NaF}$$\mathrm{MgO}$$\mathrm{NaCl}$$\mathrm{MgCl}_2$$\mathrm{Al}_2\mathrm{O}_3$. Justify
 your ordering using Coulomb's law: $U \propto \frac{z_+ z_-}{r_+ + r_-}$.
 
 </details>
@@ -768,7 +768,7 @@ $\mathrm{Cl}_2(aq) + 2\mathrm{Br}^-(aq) \rightleftharpoons 2\mathrm{Cl}^-(aq) + 
 is $K = 4.0 \times 10^{11}$ at $298\;\mathrm{K}$. (a) Calculate $E_{\mathrm{cell}}^\circ$ for the
 reaction. (b) If $0.050\;\mathrm{mol}$ of $\mathrm{Cl}_2$ is bubbled into $1.0\;\mathrm{L}$ of
 $0.10\;\mathrm{M}$ $\mathrm{KBr}$Calculate the equilibrium concentration of $\mathrm{Br}_2$.
-($E^\circ(\mathrm{Cl}_2/\mathrm{Cl}^-) = +1.36\;\mathrm{V}$, $E^\circ(\mathrm{Br}_2/\mathrm{Br}^-) = +1.09\;\mathrm{V}$)
+($E^\circ(\mathrm{Cl}_2/\mathrm{Cl}^-) = +1.36\;\mathrm{V}$$E^\circ(\mathrm{Br}_2/\mathrm{Br}^-) = +1.09\;\mathrm{V}$)
 
 </details>
 
@@ -788,7 +788,7 @@ Explain why $[\mathrm{Zn}(\mathrm{H}_2\mathrm{O})_6]^{2+}$ is colourless.
 <summary>Problem 13: Quantitative -- Successive Ionisation Energies</summary>
 
 The first five ionisation energies of an element ($\mathrm{kJ/mol}$) are:
-$578$, $1817$, $2745$, $11577$, $14842$. (a) Identify the group of the element. (b) Write the electron
+$578$$1817$$2745$$11577$$14842$. (a) Identify the group of the element. (b) Write the electron
 configuration of the element. (c) The element is in Period 3. Identify it and explain the large jump
 between $IE_3$ and $IE_4$.
 

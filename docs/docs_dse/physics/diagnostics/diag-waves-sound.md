@@ -16,7 +16,7 @@ hide_table_of_contents: true
 **Question:**
 
 A string of length $1.2$ m is fixed at both ends. A standing wave is set up on the string. Nodes are
-observed at $x = 0$, $x = 0.3$ m, $x = 0.6$ m, $x = 0.9$ m, and $x = 1.2$ m. The maximum transverse
+observed at $x = 0$$x = 0.3$ m, $x = 0.6$ m, $x = 0.9$ m, and $x = 1.2$ m. The maximum transverse
 displacement of the string at an antinode is $4$ mm and the wave speed on the string is
 $24 \text{ m s}^{-1}$. Find (a) the wavelength, (b) the frequency, (c) which harmonic this is, and
 (d) the equation of the standing wave.
@@ -53,7 +53,7 @@ $$y(x,t) = 4 \times 10^{-3} \sin\left(\frac{2\pi}{0.6} x\right) \cos(2\pi \times
 
 $$y(x,t) = 4 \times 10^{-3} \sin\left(\frac{10\pi}{3} x\right) \cos(80\pi t) \text{ m}$$
 
-**Key check:** At $x = 0$, $\sin(0) = 0$ (node). At $x = 0.15$ m, $\sin(\pi/2) = 1$ (antinode). At
+**Key check:** At $x = 0$$\sin(0) = 0$ (node). At $x = 0.15$ m, $\sin(\pi/2) = 1$ (antinode). At
 $x = 0.3$ m, $\sin(\pi) = 0$ (node). All consistent.
 
 ---

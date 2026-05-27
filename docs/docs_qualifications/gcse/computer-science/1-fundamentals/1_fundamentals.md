@@ -49,7 +49,7 @@ $$64 + 16 + 8 + 4 + 1 = 93$$
 
 **Worked Example.** Convert 105 to binary.
 
-$105 - 64 = 41$, $41 - 32 = 9$, $9 - 8 = 1$, $1 - 1 = 0$.
+$105 - 64 = 41$$41 - 32 = 9$$9 - 8 = 1$$1 - 1 = 0$.
 
 Binary: 1101001.
 
@@ -126,7 +126,7 @@ To subtract, add the two's complement of the number being subtracted.
 
 **Worked Example.** Calculate $6 - 3$ in 4-bit binary.
 
-$6 = 0110$, $3 = 0011$
+$6 = 0110$$3 = 0011$
 
 Two's complement of 3: invert $0011 \to 1100$Add $1 \to 1101$.
 
@@ -136,7 +136,7 @@ Discard the overflow bit: $0011 = 3$. Correct.
 
 **Worked Example.** Calculate $3 - 6$ in 4-bit binary.
 
-$3 = 0011$, $6 = 0110$.
+$3 = 0011$$6 = 0110$.
 
 Two's complement of 6: invert $0110 \to 1001$Add $1 \to 1010$.
 
@@ -146,7 +146,7 @@ In two's complement, $1101 = -8 + 4 + 0 + 1 = -3$. Correct.
 
 **Worked Example.** Calculate $15 - 8$ in 5-bit binary.
 
-$15 = 01111$, $8 = 01000$.
+$15 = 01111$$8 = 01000$.
 
 Two's complement of 8: invert $01000 \to 10111$Add $1 \to 11000$.
 
@@ -665,7 +665,7 @@ Binary multiplication is performed using long multiplication, similar to denary.
 
 **Worked Example.** Calculate $6 \times 3$ in binary.
 
-$6 = 0110$, $3 = 0011$.
+$6 = 0110$$3 = 0011$.
 
 ```
       0110

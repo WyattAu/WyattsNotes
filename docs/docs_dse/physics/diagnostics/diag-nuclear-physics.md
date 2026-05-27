@@ -86,7 +86,7 @@ The following data are given:
 | $^{141}\text{Ba}$       | 140.91390 |
 | $^{92}\text{Kr}$        | 91.92620  |
 
-$1 \text{ u} = 931.5 \text{ MeV}/c^2$, $1 \text{ eV} = 1.6 \times 10^{-19}$ J.
+$1 \text{ u} = 931.5 \text{ MeV}/c^2$$1 \text{ eV} = 1.6 \times 10^{-19}$ J.
 
 (a) Calculate the binding energy per nucleon of $^{56}\text{Fe}$. (b) Calculate the binding energy
 per nucleon of $^{235}\text{U}$. (c) For the fission reaction
@@ -116,7 +116,7 @@ $$\frac{BE}{A} = \frac{479.2}{56} = 8.557 \text{ MeV/nucleon}$$
 
 **(b) Binding energy of $^{235}\text{U}$:**
 
-$Z = 92$, $N = 143$.
+$Z = 92$$N = 143$.
 
 $$m_{\text{nucleons}} = 92 \times 1.00728 + 143 \times 1.00867 = 92.66976 + 144.23981 = 236.90957 \text{ u}$$
 

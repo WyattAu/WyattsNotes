@@ -179,7 +179,7 @@ $$y - 4 = -\frac{3}{4}(x - 3) \implies 4(y - 4) = -3(x - 3) \implies 4y - 16 = -
 
 ### Area of a Triangle (Coordinate Formula)
 
-Given vertices $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$:
+Given vertices $A(x_1, y_1)$$B(x_2, y_2)$$C(x_3, y_3)$:
 
 $$\mathrm{Area} = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$
 
@@ -194,7 +194,7 @@ Where $(x_{n+1}, y_{n+1}) = (x_1, y_1)$.
 
 ### Worked Example 7
 
-Find the area of the triangle with vertices $A(1, 2)$, $B(5, 6)$, $C(3, -1)$.
+Find the area of the triangle with vertices $A(1, 2)$$B(5, 6)$$C(3, -1)$.
 
 $$\mathrm{Area} = \frac{1}{2}|1(6 - (-1)) + 5((-1) - 2) + 3(2 - 6)| = \frac{1}{2}|7 + (-15) + (-12)| = \frac{1}{2}|-20| = 10$$
 
@@ -237,7 +237,7 @@ Perpendicular slope: $m_\perp = -2/3$.
 
 $$y - 4 = -\frac{2}{3}(x - 4) \implies 3(y - 4) = -2(x - 4) \implies 3y - 12 = -2x + 8 \implies 2x + 3y - 20 = 0$$
 
-2. **Question:** Find the equation of the circle passing through $(1, 2)$, $(3, 4)$And $(5, 2)$.
+2. **Question:** Find the equation of the circle passing through $(1, 2)$$(3, 4)$And $(5, 2)$.
 
 General form: $x^2 + y^2 + Dx + Ey + F = 0$.
 
@@ -274,7 +274,7 @@ Not tangent.
 
 For $x^2 + y^2 = 1/2$:
 $x^2 + (x+1)^2 = 1/2 \implies 2x^2 + 2x + 1/2 = 0 \implies \Delta = 4 - 4 = 0$. Tangent. Point of
-Contact: $x = -1/2$, $y = 1/2$. Point: $(-1/2, 1/2)$.
+Contact: $x = -1/2$$y = 1/2$. Point: $(-1/2, 1/2)$.
 
 4. **Question:** Find the distance between the parallel lines $3x + 4y - 5 = 0$ and
    $3x + 4y + 11 = 0$.
@@ -282,7 +282,7 @@ Contact: $x = -1/2$, $y = 1/2$. Point: $(-1/2, 1/2)$.
 Distance
 $= \dfrac{|C_2 - C_1|}{\sqrt{A^2 + B^2}} = \dfrac{|11 - (-5)|}{\sqrt{9 + 16}} = \dfrac{16}{5} = 3.2$.
 
-5. **Question:** The points $A(-1, 3)$, $B(2, k)$And $C(5, -1)$ are collinear. Find $k$.
+5. **Question:** The points $A(-1, 3)$$B(2, k)$And $C(5, -1)$ are collinear. Find $k$.
 
 For collinearity, the slope of $AB$ equals the slope of $BC$:
 
@@ -290,7 +290,7 @@ $$\frac{k - 3}{2 - (-1)} = \frac{-1 - k}{5 - 2} \implies \frac{k - 3}{3} = \frac
 
 $$k - 3 = -1 - k \implies 2k = 2 \implies k = 1$$
 
-6. **Question:** Find the area of the quadrilateral with vertices $(0, 0)$, $(4, 0)$, $(5, 3)$And
+6. **Question:** Find the area of the quadrilateral with vertices $(0, 0)$$(4, 0)$$(5, 3)$And
    $(1, 4)$.
 
 Using the shoelace formula with vertices in order:
@@ -384,7 +384,7 @@ $\dfrac{4}{\sqrt{2}} = 2\sqrt{2} = \sqrt{8}$. Correct.
 
 **Worked Example 10: Triangle formed by three lines**
 
-Find the area of the triangle formed by $\ell_1: x + y = 6$, $\ell_2: x - y = 2$And
+Find the area of the triangle formed by $\ell_1: x + y = 6$$\ell_2: x - y = 2$And
 $\ell_3: 2x + y = 9$.
 
 <details>
@@ -392,12 +392,12 @@ $\ell_3: 2x + y = 9$.
 
 Find the three vertices by pairwise intersection.
 
-$\ell_1 \cap \ell_2$: Adding the equations gives $2x = 8 \implies x = 4$, $y = 2$. Vertex $A(4, 2)$.
+$\ell_1 \cap \ell_2$: Adding the equations gives $2x = 8 \implies x = 4$$y = 2$. Vertex $A(4, 2)$.
 
-$\ell_1 \cap \ell_3$: Subtracting $\ell_1$ from $\ell_3$ gives $x = 3$, $y = 3$. Vertex $B(3, 3)$.
+$\ell_1 \cap \ell_3$: Subtracting $\ell_1$ from $\ell_3$ gives $x = 3$$y = 3$. Vertex $B(3, 3)$.
 
 $\ell_2 \cap \ell_3$: Adding the equations gives
-$3x = 11 \implies x = \dfrac{11}{3}$, $y = \dfrac{5}{3}$. Vertex
+$3x = 11 \implies x = \dfrac{11}{3}$$y = \dfrac{5}{3}$. Vertex
 $C\!\left(\dfrac{11}{3}, \dfrac{5}{3}\right)$.
 
 Using the area formula:
@@ -438,7 +438,7 @@ Reflection: $P'\!\left(\dfrac{8}{5}, \dfrac{24}{5}\right)$.
 
 **Worked Example 12: Circle through three points**
 
-Find the equation of the circle through $P(0, 1)$, $Q(2, 3)$And $R(4, 1)$.
+Find the equation of the circle through $P(0, 1)$$Q(2, 3)$And $R(4, 1)$.
 
 <details>
 <summary>Solution</summary>
@@ -475,8 +475,8 @@ Verification: $(4-2)^2 + (1-1)^2 = 4 = r^2$. Correct.
    $d = \dfrac{|C_2 - C_1|}{\sqrt{A^2 + B^2}}$Ensure both equations have identical $A$ and $B$
    coefficients. If one equation is a scalar multiple of the other, rescale first.
 
-4. **Assuming two circles always intersect.** Two circles with centres $O_1$, $O_2$ and radii
-   $r_1$, $r_2$ intersect at two points only when $|r_1 - r_2| \lt d \lt r_1 + r_2$Where $d$ is the
+4. **Assuming two circles always intersect.** Two circles with centres $O_1$$O_2$ and radii
+   $r_1$$r_2$ intersect at two points only when $|r_1 - r_2| \lt d \lt r_1 + r_2$Where $d$ is the
    distance between centres.
 
 5. **Undefined slope of vertical lines.** The line $x = a$ has no defined slope. Never assign a
@@ -497,7 +497,7 @@ Verification: $(4-2)^2 + (1-1)^2 = 4 = r^2$. Correct.
 
 ## Exam-Style Problems
 
-**Problem 1.** The points $A(-2, 3)$, $B(4, 7)$And $C(k, -1)$ form a triangle with area $30$. Find the
+**Problem 1.** The points $A(-2, 3)$$B(4, 7)$And $C(k, -1)$ form a triangle with area $30$. Find the
 possible values of $k$.
 
 <details>
@@ -572,7 +572,7 @@ Expanding: $x^2 + y^2 - 4x - 3y = 0$.
 
 </details>
 
-**Problem 5.** Determine whether the triangle with vertices $P(1, 2)$, $Q(5, 5)$And $R(8, 1)$ is
+**Problem 5.** Determine whether the triangle with vertices $P(1, 2)$$Q(5, 5)$And $R(8, 1)$ is
 right-angled.
 
 <details>
@@ -584,9 +584,9 @@ $$m_{PQ} = \frac{5-2}{5-1} = \frac{3}{4}, \quad m_{QR} = \frac{1-5}{8-5} = -\fra
 
 $$m_{PQ} \cdot m_{QR} = \frac{3}{4} \cdot \left(-\frac{4}{3}\right) = -1$$
 
-Since the product is $-1$, $PQ \perp QR$. The triangle is right-angled at $Q$.
+Since the product is $-1$$PQ \perp QR$. The triangle is right-angled at $Q$.
 
-Verification by Pythagoras: $PQ^2 = 25$, $QR^2 = 25$, $PR^2 = 49 + 1 = 50$. Indeed $25 + 25 = 50$.
+Verification by Pythagoras: $PQ^2 = 25$$QR^2 = 25$$PR^2 = 49 + 1 = 50$. Indeed $25 + 25 = 50$.
 
 </details>
 
@@ -764,7 +764,7 @@ Find the shortest distance from $P(5, 3)$ to the circle $x^2 + y^2 - 4x + 2y - 4
 <details>
 <summary>Solution</summary>
 
-Centre: $(2, -1)$, $r^2 = 4 + 1 + 4 = 9 \implies r = 3$.
+Centre: $(2, -1)$$r^2 = 4 + 1 + 4 = 9 \implies r = 3$.
 
 Distance from $P$ to centre: $d = \sqrt{(5-2)^2 + (3-(-1))^2} = \sqrt{9 + 16} = 5$.
 
@@ -853,7 +853,7 @@ Equation: $(x - 2)^2 + (y - 3)^2 = 4$Or $x^2 + y^2 - 4x - 6y + 9 = 0$.
 
 </details>
 
-**DSE Practice 3.** Find the equation of the circle passing through $(1, 0)$, $(0, 1)$And $(-1, 0)$.
+**DSE Practice 3.** Find the equation of the circle passing through $(1, 0)$$(0, 1)$And $(-1, 0)$.
 
 <details>
 <summary>Solution</summary>

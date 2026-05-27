@@ -226,7 +226,7 @@ Natural join, which matches on attributes with the same name.
 
 The inner join can be expressed in terms of selection and Cartesian product:
 
-$, $R \bowtie_{\theta} S = \sigma_{\theta}(R \times S)$, $
+$$R \bowtie_{\theta} S = \sigma_{\theta}(R \times S)$$
 
 ### Division
 
@@ -235,7 +235,7 @@ Division answers "which X values are associated with ALL Y values?" Denoted $R \
 Given `Takes(student, course)` and `RequiredCourse(course)`Find students who have taken ALL Required
 courses:
 
-$, $\pi_{\mathrm{student, \mathrm{course}(\mathrm{Takes) \div \pi_{\mathrm{course}(\mathrm{RequiredCourse)$, $
+$$\pi_{\mathrm{student, \mathrm{course}(\mathrm{Takes) \div \pi_{\mathrm{course}(\mathrm{RequiredCourse)$$
 
 SQL has no direct division operator. You simulate it with a double `NOT EXISTS`:
 
@@ -294,7 +294,7 @@ called the determinant.
 
 Formally:
 
-$, $X \rightarrow Y \iff \forall t_1, t_2 \in R : t_1[X] = t_2[X] \Rightarrow t_1[Y] = t_2[Y]$, $
+$$X \rightarrow Y \iff \forall t_1, t_2 \in R : t_1[X] = t_2[X] \Rightarrow t_1[Y] = t_2[Y]$$
 
 ### Examples
 

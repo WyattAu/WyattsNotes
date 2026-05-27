@@ -514,7 +514,7 @@ And one 3d electron to form Fe$^{3+}$.
 | Melting point         | Relatively low | High                               |
 | Density               | Low            | High                               |
 | Reactivity with water | Very reactive  | Much less reactive (or unreactive) |
-| Oxidation states      | Always $1+$    | Variable (e.g. $2+$, $3+$ for iron)  |
+| Oxidation states      | Always $1+$    | Variable (e.g. $2+$$3+$ for iron)  |
 | Coloured compounds    | No             | Yes                                |
 | Catalytic activity    | No             | Common                             |
 

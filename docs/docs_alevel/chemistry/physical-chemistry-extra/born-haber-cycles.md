@@ -199,7 +199,7 @@ Where:
 - $N_A = 6.022 \times 10^{23}\,\mathrm{mol}^{-1}$ (Avogadro's constant)
 - $M$ = Madelung constant (geometric factor depending on crystal structure; NaCl: $M = 1.7476$ CsCl:
   $M = 1.7627$)
-- $z^+$, $z^-$ = ion charges (signed integers)
+- $z^+$$z^-$ = ion charges (signed integers)
 - $e = 1.602 \times 10^{-19}\,\mathrm{C}$ (elementary charge)
 - $\varepsilon_0 = 8.854 \times 10^{-12}\,\mathrm{F/m}$ (permittivity of free space)
 - $r_0$ = distance between ion centres (sum of ionic radii, in metres)
@@ -215,8 +215,8 @@ At close distances.
 
 ### Worked Example: Theoretical Lattice Enthalpy of NaCl
 
-Parameters: $M = 1.7476$, $z^+ = 1$, $z^- = -1$
-$r_0 = 282\,\mathrm{pm} = 2.82 \times 10^{-10}\,\mathrm{m}$, $n = 8$.
+Parameters: $M = 1.7476$$z^+ = 1$$z^- = -1$
+$r_0 = 282\,\mathrm{pm} = 2.82 \times 10^{-10}\,\mathrm{m}$$n = 8$.
 
 $$
 \Delta H_\mathrm{lat}^\circ \approx -\frac◆LB◆(6.022 \times 10^{23})(1.7476)(1)(1)(1.602 \times 10^{-19})^2◆RB◆◆LB◆4\pi(8.854 \times 10^{-12})(2.82 \times 10^{-10})◆RB◆\left(1 - \frac{1}{8}\right)
@@ -241,7 +241,7 @@ $$
 $$
 
 Where $\nu$ is the number of ions per formula unit ($\nu = 2$ for MX, $\nu = 3$ for $\mathrm{MX}_2$
-Etc.) and $r_+$, $r_-$ are ionic radii in metres. The result is in $\mathrm{kJ/mol}$.
+Etc.) and $r_+$$r_-$ are ionic radii in metres. The result is in $\mathrm{kJ/mol}$.
 
 The Kapustinskii equation is less accurate than the Born-Lande equation but does not require
 Knowledge of the crystal structure (Madelung constant).
@@ -370,16 +370,16 @@ Equation does not account for.
 
 Explain why the lattice enthalpy of $\mathrm{NaCl}$ ($-788\,\mathrm{kJ/mol}$) is much less
 exothermic than that of $\mathrm{MgO}$ ($-3844\,\mathrm{kJ/mol}$), even though the ionic radii are
-similar ($r(\mathrm{Na}^+) \approx 102\,\mathrm{pm}$, $r(\mathrm{Mg}^{2+}) \approx 72\,\mathrm{pm}$;
-$r(\mathrm{Cl}^-) \approx 181\,\mathrm{pm}$, $r(\mathrm{O}^{2-}) \approx 140\,\mathrm{pm}$).
+similar ($r(\mathrm{Na}^+) \approx 102\,\mathrm{pm}$$r(\mathrm{Mg}^{2+}) \approx 72\,\mathrm{pm}$;
+$r(\mathrm{Cl}^-) \approx 181\,\mathrm{pm}$$r(\mathrm{O}^{2-}) \approx 140\,\mathrm{pm}$).
 
 **Solution:**
 
 The Born-Lande equation shows that the lattice enthalpy is proportional to $\frac{z^+ z^-}{r_0}$.
 
-For NaCl: $z^+ z^- = 1 \times 1 = 1$, $r_0 \approx 102 + 181 = 283\,\mathrm{pm}$.
+For NaCl: $z^+ z^- = 1 \times 1 = 1$$r_0 \approx 102 + 181 = 283\,\mathrm{pm}$.
 
-For MgO: $z^+ z^- = 2 \times 2 = 4$, $r_0 \approx 72 + 140 = 212\,\mathrm{pm}$.
+For MgO: $z^+ z^- = 2 \times 2 = 4$$r_0 \approx 72 + 140 = 212\,\mathrm{pm}$.
 
 The charge product for MgO is 4 times that of NaCl, and the ionic separation is smaller. The
 combined effect gives:
@@ -637,7 +637,7 @@ explains the very high melting point ($2072^\circ\mathrm{C}$) and hardness of al
 **Trend analysis:** The lattice enthalpy becomes less exothermic down Group 2 as the cation radius
 increases. The electrostatic attraction between the cation and the chloride ions decreases with
 increasing distance (the $1/r$ term in the Born-Lande equation). The anion
-($\mathrm{Cl}^-$, $r = 181\,\mathrm{pm}$) is constant, so the trend is driven entirely by the changing
+($\mathrm{Cl}^-$$r = 181\,\mathrm{pm}$) is constant, so the trend is driven entirely by the changing
 cation size.
 
 ### Example 4: Enthalpy of Solution Calculation
@@ -678,7 +678,7 @@ configuration, and the $d$-electrons can participate in some covalent bonding wi
 polarisable $\mathrm{I}^-$ ion. This covalent contribution strengthens the lattice relative to the
 purely electrostatic model.
 
-In most cases (e.g. $\mathrm{AlCl}_3$, $\mathrm{BeCl}_2$), the experimental lattice enthalpy is
+In most cases (e.g. $\mathrm{AlCl}_3$$\mathrm{BeCl}_2$), the experimental lattice enthalpy is
 **less** exothermic than the theoretical value because covalent character reduces the effective
 ionic charges, weakening the electrostatic attraction.
 

@@ -279,7 +279,7 @@ Where $R$ is the known resistance, $S$ is the unknown, and $l$ is the balance le
 <details>
 <summary>Example: Wheatstone Bridge Calculation</summary>
 
-A Wheatstone bridge has $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$, $R_3 = 150\,\Omega$. Find $R_4$ For
+A Wheatstone bridge has $R_1 = 100\,\Omega$$R_2 = 200\,\Omega$$R_3 = 150\,\Omega$. Find $R_4$ For
 balance.
 
 **Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac◆LB◆200 \times 150◆RB◆◆LB◆100◆RB◆ = 300\,\Omega$.
@@ -519,7 +519,7 @@ This means the 12 V battery is driving current through the 6 V battery (charging
 <details>
 <summary>Problem 5</summary>
 A battery with unknown e.m.f. And internal resistance is connected to a variable resistor. When
-$R = 4.0\,\Omega$, $I = 1.5$ A. When $R = 9.0\,\Omega$, $I = 0.80$ A. Find $\mathcal{E}$ and $r$.
+$R = 4.0\,\Omega$$I = 1.5$ A. When $R = 9.0\,\Omega$$I = 0.80$ A. Find $\mathcal{E}$ and $r$.
 
 **Answer.** $\mathcal{E} = I_1(R_1 + r) = 1.5(4.0 + r) = 6.0 + 1.5r$ ... (i).
 
@@ -654,7 +654,7 @@ $= P_{\mathrm{load}}/P_{\mathrm{total}} = 1/2 = 50\%$.
 
 <details>
 <summary>Problem 13</summary>
-A Wheatstone bridge has $R_1 = 120\,\Omega$, $R_2 = 180\,\Omega$And $R_3 = 200\,\Omega$. Find $R_4$ for balance.
+A Wheatstone bridge has $R_1 = 120\,\Omega$$R_2 = 180\,\Omega$And $R_3 = 200\,\Omega$. Find $R_4$ for balance.
 
 **Answer.** $R_4 = \frac{R_2 R_3}{R_1} = \frac◆LB◆180 \times 200◆RB◆◆LB◆120◆RB◆ = 300\,\Omega$.
 

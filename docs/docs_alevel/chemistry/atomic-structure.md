@@ -95,7 +95,7 @@ Lighter ions (lower $m/z$) are deflected more. The detector records the abundanc
 
 **Worked Example.** A compound shows a molecular ion peak at $m/z = 78$ and a base peak at
 $m/z = 77$. The M+1 peak at $m/z = 79$ has 6.4% of the molecular ion intensity. This is consistent
-with benzene ($\mathrm{C}_6\mathrm{H}_6$, $M_r = 78$). The M+1 peak intensity
+with benzene ($\mathrm{C}_6\mathrm{H}_6$$M_r = 78$). The M+1 peak intensity
 ($\approx 6 \times 1.1\% = 6.6\%$) confirms six carbon atoms.
 
 ## Electron Configuration
@@ -107,7 +107,7 @@ Each electron in an atom is described by four quantum numbers:
 | Quantum Number | Symbol   | Values                          | Describes                             |
 | -------------- | -------- | ------------------------------- | ------------------------------------- |
 | Principal      | $n$      | $1, 2, 3, \ldots$               | Energy level / shell                  |
-| Azimuthal      | $\ell$   | $0, 1, \ldots, n-1$             | Subshell type ($0 = s$, $1 = p$, $2 = d$) |
+| Azimuthal      | $\ell$   | $0, 1, \ldots, n-1$             | Subshell type ($0 = s$$1 = p$$2 = d$) |
 | Magnetic       | $m_\ell$ | $-\ell, -\ell+1, \ldots, +\ell$ | Orbital orientation                   |
 | Spin           | $m_s$    | $+\tfrac{1}{2}, -\tfrac{1}{2}$  | Electron spin direction               |
 
@@ -242,7 +242,7 @@ Ionisation energy decreases down a group because:
 
 ### Successive Ionisation Energies
 
-Plotting successive ionisation energies ($\mathrm{IE}_1$, $\mathrm{IE}_2$, $\mathrm{IE}_3$...) against
+Plotting successive ionisation energies ($\mathrm{IE}_1$$\mathrm{IE}_2$$\mathrm{IE}_3$...) against
 ionisation number reveals the electron configuration. Large jumps occur when electrons are removed
 from a new inner shell.
 
@@ -319,7 +319,7 @@ $$
 This low effective nuclear charge explains why the $4s$ electron is so lost (low first ionisation
 energy of K).
 
-For calcium ($Z = 20$, $4s^2$), each $4s$ electron experiences:
+For calcium ($Z = 20$$4s^2$), each $4s$ electron experiences:
 
 $$
 \sigma = (1 \times 0.35) + (8 \times 0.85) + (10 \times 1.00) = 0.35 + 6.8 + 10.0 = 17.15
@@ -417,17 +417,17 @@ The mass spectrum of an element shows three peaks at $m/z = 52$54, and 56 with r
 
 **Solution:**
 
-(a) The element is chromium ($\mathrm{Cr}$, $Z = 24$, $A_r \approx 52$). The peaks correspond to
-$^{52}\mathrm{Cr}$, $^{54}\mathrm{Cr}$And $^{56}\mathrm{Cr}$.
+(a) The element is chromium ($\mathrm{Cr}$$Z = 24$$A_r \approx 52$). The peaks correspond to
+$^{52}\mathrm{Cr}$$^{54}\mathrm{Cr}$And $^{56}\mathrm{Cr}$.
 
 (b) Chromium has four stable isotopes: $^{50}\mathrm{Cr}$ (4.3%), $^{52}\mathrm{Cr}$ (83.8%),
 $^{53}\mathrm{Cr}$ (9.5%), and $^{54}\mathrm{Cr}$ (2.4%). However, the data shows three peaks at 52,
-54, and 56, which is more consistent with iron ($\mathrm{Fe}$, $Z = 26$): $^{54}\mathrm{Fe}$ (5.8%),
+54, and 56, which is more consistent with iron ($\mathrm{Fe}$$Z = 26$): $^{54}\mathrm{Fe}$ (5.8%),
 $^{56}\mathrm{Fe}$ (91.7%), $^{57}\mathrm{Fe}$ (2.1%), and $^{58}\mathrm{Fe}$ (0.3%).
 
 Re-examining: the $m/z$ values of 52, 54, 56 with the given abundances most closely match chromium:
 $^{52}\mathrm{Cr}$ ($A_r = 51.94$Abundance $\approx 83.8\%$), $^{53}\mathrm{Cr}$
-($A_r = 52.94$, $\approx 9.5\%$), $^{54}\mathrm{Cr}$ ($A_r = 53.94$, $\approx 2.4\%$). However, the
+($A_r = 52.94$$\approx 9.5\%$), $^{54}\mathrm{Cr}$ ($A_r = 53.94$$\approx 2.4\%$). However, the
 relative abundances in the problem (17.4%, 67.8%, 14.8%) do not match chromium's known isotope
 pattern.
 
@@ -532,12 +532,12 @@ from exchange stabilisation can exceed the energy difference between $4s$ and $3
 
 ### Successive Ionisation Energies
 
-Successive ionisation energies ($\mathrm{IE}_1$, $\mathrm{IE}_2$, $\mathrm{IE}_3$...) always increase
+Successive ionisation energies ($\mathrm{IE}_1$$\mathrm{IE}_2$$\mathrm{IE}_3$...) always increase
 because each electron is removed from an increasingly positive ion. Large jumps indicate that the
 electron is being removed from a new, inner shell closer to the nucleus.
 
 **Worked Example.** The first five ionisation energies of an element are (in $\mathrm{kJ/mol}$):
-$578$, $1817$, $2745$, $11578$, $14842$.
+$578$$1817$$2745$$11578$$14842$.
 
 The large jump between $\mathrm{IE}_3$ and $\mathrm{IE}_4$ indicates that the first three electrons
 are removed from the outer shell, and the fourth is removed from an inner shell. The element is in
@@ -550,10 +550,10 @@ electrons from different shells. The number of electrons in each step gives the 
 
 | Element | $\mathrm{IE}_1$ ($\mathrm{kJ/mol}$) | Group | Evidence             |
 | ------- | ----------------------------------- | ----- | -------------------- |
-| Na      | $496$, $4562$...                      | 1     | Large jump after 1st |
-| Mg      | $738$, $1451$, $7733$...                | 2     | Large jump after 2nd |
-| Al      | $578$, $1817$, $2745$, $11578$...         | 13    | Large jump after 3rd |
-| Si      | $789$, $1577$, $3228$, $4356$, $16091$...   | 14    | Large jump after 4th |
+| Na      | $496$$4562$...                      | 1     | Large jump after 1st |
+| Mg      | $738$$1451$$7733$...                | 2     | Large jump after 2nd |
+| Al      | $578$$1817$$2745$$11578$...         | 13    | Large jump after 3rd |
+| Si      | $789$$1577$$3228$$4356$$16091$...   | 14    | Large jump after 4th |
 
 ### Trends Across Period 3 in Detail
 
@@ -585,7 +585,7 @@ and Al) show similar properties due to similar charge-to-radius ratios.
 <details>
 <summary>Problem 4</summary>
 
-The first four ionisation energies of an element X are: $738$, $1451$, $7733$And
+The first four ionisation energies of an element X are: $738$$1451$$7733$And
 $10540\,\mathrm{kJ/mol}$. Identify the element and explain the pattern.
 
 **Solution:**
@@ -594,7 +594,7 @@ The large jump between the second ($1451$) and third ($7733$) ionisation energie
 removing the third electron requires breaking into a new, inner electron shell. The element has two
 valence electrons and is in Group 2.
 
-The element is **magnesium** ($\mathrm{Mg}$, $Z = 12$Electron configuration $[\mathrm{Ne}]\,3s^2$).
+The element is **magnesium** ($\mathrm{Mg}$$Z = 12$Electron configuration $[\mathrm{Ne}]\,3s^2$).
 The first two electrons are removed from the $3s$ subshell (valence); the third must be removed from
 the $2p$ subshell (core), which is much closer to the nucleus and more tightly held.
 
@@ -640,7 +640,7 @@ orbital partially offsets the increased nuclear charge. This makes the electron 
 from oxygen than from nitrogen, despite the higher nuclear charge.
 
 Data:
-$\mathrm{IE}_1(\mathrm{N}) = 1402\,\mathrm{kJ/mol}$, $\mathrm{IE}_1(\mathrm{O}) = 1314\,\mathrm{kJ/mol}$.
+$\mathrm{IE}_1(\mathrm{N}) = 1402\,\mathrm{kJ/mol}$$\mathrm{IE}_1(\mathrm{O}) = 1314\,\mathrm{kJ/mol}$.
 
 </details>
 
@@ -669,7 +669,7 @@ The successive ionisation energies of element X are shown below:
 three electrons are in the outer shell (valence electrons), and the 4th electron is removed from an
 inner shell.
 
-(b) Aluminium ($\mathrm{Al}$, $Z = 13$). The first ionisation energy (578 kJ/mol) matches the known
+(b) Aluminium ($\mathrm{Al}$$Z = 13$). The first ionisation energy (578 kJ/mol) matches the known
 value for aluminium.
 
 (c) The first three electrons are removed from the $n = 3$ shell ($3s^2 3p^1$). The fourth electron
@@ -718,7 +718,7 @@ $C(7,2) \times (0.011)^2 = 21 \times 0.000121 = 0.25\%$Close to the observed val
 (c) The peak at $m/z = 91$ corresponds to the tropylium ion ($\mathrm{C}_7\mathrm{H}_7^+$), formed
 by loss of one hydrogen atom from the methyl group followed by ring expansion of the resulting
 benzyl cation. The tropylium ion has a cyclic, aromatic structure
-($\mathrm{C}_7\mathrm{H}_7^+$, $6\,\pi$ electrons satisfying Huckel's rule) that makes it
+($\mathrm{C}_7\mathrm{H}_7^+$$6\,\pi$ electrons satisfying Huckel's rule) that makes it
 exceptionally stable, explaining its high intensity in the mass spectrum.
 
 </details>
@@ -883,7 +883,7 @@ marks)
 
 **Mark Scheme:**
 
-(a) Magnesium ($\mathrm{Mg}$, $Z = 12$) (1 mark).
+(a) Magnesium ($\mathrm{Mg}$$Z = 12$) (1 mark).
 
 (b) The first two electrons are removed from the $3s$ subshell (valence electrons) (1 mark). The
 third electron is removed from the $2p$ subshell (core electrons), which is closer to the nucleus

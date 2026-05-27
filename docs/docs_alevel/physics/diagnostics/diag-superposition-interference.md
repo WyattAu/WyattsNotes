@@ -32,23 +32,23 @@ comment on the effect on the interference pattern.
 
 Using the approximation $d\sin\theta \approx n\lambda$ for small angles:
 
-For $n = 1$: $\sin\theta_1 = \lambda/d = 28/140 = 0.200$, $\theta_1 = 11.5^\circ$
+For $n = 1$: $\sin\theta_1 = \lambda/d = 28/140 = 0.200$$\theta_1 = 11.5^\circ$
 
 Position from centre:
 $y_1 = D\tan\theta_1 = 800\tan 11.5^\circ = 800 \times 0.2035 = 163\,\text{mm}$
 
-For $n = 2$: $\sin\theta_2 = 56/140 = 0.400$, $\theta_2 = 23.6^\circ$
+For $n = 2$: $\sin\theta_2 = 56/140 = 0.400$$\theta_2 = 23.6^\circ$
 
 $y_2 = 800\tan 23.6^\circ = 800 \times 0.4368 = 349\,\text{mm}$
 
-For $n = 3$: $\sin\theta_3 = 84/140 = 0.600$, $\theta_3 = 36.9^\circ$
+For $n = 3$: $\sin\theta_3 = 84/140 = 0.600$$\theta_3 = 36.9^\circ$
 
 $y_3 = 800\tan 36.9^\circ = 800 \times 0.7508 = 601\,\text{mm}$
 
 (b) Fringe spacing (using small angle approximation):
 $\Delta y \approx \lambda D/d = 28 \times 800/140 = 160\,\text{mm}$
 
-From exact calculation: $y_1 = 163\,\text{mm}$, $y_2 - y_1 = 349 - 163 = 186\,\text{mm}$. The
+From exact calculation: $y_1 = 163\,\text{mm}$$y_2 - y_1 = 349 - 163 = 186\,\text{mm}$. The
 approximation becomes less accurate at larger angles.
 
 (c) New fringe spacing: $\Delta y' = 28 \times 800/280 = 80\,\text{mm}$
@@ -80,15 +80,15 @@ Grating equation: $d\sin\theta = n\lambda$
 
 **Blue light ($450\,\text{nm}$):**
 
-$n = 1$: $\sin\theta = 450 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.225$, $\theta = 13.0^\circ$
+$n = 1$: $\sin\theta = 450 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.225$$\theta = 13.0^\circ$
 
-$n = 2$: $\sin\theta = 900 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.450$, $\theta = 26.7^\circ$
+$n = 2$: $\sin\theta = 900 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.450$$\theta = 26.7^\circ$
 
 **Red light ($700\,\text{nm}$):**
 
-$n = 1$: $\sin\theta = 700 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.350$, $\theta = 20.5^\circ$
+$n = 1$: $\sin\theta = 700 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.350$$\theta = 20.5^\circ$
 
-$n = 2$: $\sin\theta = 1400 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.700$, $\theta = 44.4^\circ$
+$n = 2$: $\sin\theta = 1400 \times 10^{-9}/(2.0 \times 10^{-6}) = 0.700$$\theta = 44.4^\circ$
 
 (b) Angular width of first-order spectrum $= 20.5^\circ - 13.0^\circ = 7.5^\circ$
 

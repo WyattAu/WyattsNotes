@@ -1381,7 +1381,7 @@ Kong's Currency Board?
 
 (a) From LM: $r = (Y - 200)/50$.
 
-IS: $Y = 1000 - (Y - 200) + 2e = 1200 - Y + 2e$. So $2Y = 1200 + 2e$, $Y = 600 + e$.
+IS: $Y = 1000 - (Y - 200) + 2e = 1200 - Y + 2e$. So $2Y = 1200 + 2e$$Y = 600 + e$.
 
 BP: $Y = 500 + 2(Y - 200) - 10e = 500 + 2Y - 400 - 10e = 100 + 2Y - 10e$.
 
@@ -1539,14 +1539,14 @@ development.
 <details>
 <summary>Solution</summary>
 
-(a) **Free trade:** $P = 50$. $Q_d = 750$, $Q_s = 300$. Imports = 450. CS = 56,250. PS = 4,500. Total
+(a) **Free trade:** $P = 50$. $Q_d = 750$$Q_s = 300$. Imports = 450. CS = 56,250. PS = 4,500. Total
 welfare = 60,750.
 
-**ISI (50% tariff):** $P = 75$. $Q_d = 625$, $Q_s = 550$. Imports = 75. CS = 39,062.5. PS = 15,125.
+**ISI (50% tariff):** $P = 75$. $Q_d = 625$$Q_s = 550$. Imports = 75. CS = 39,062.5. PS = 15,125.
 Tariff revenue = 1,875. Welfare = 56,062.5. DWL = 4,687.5.
 
 **EP (5% tariff + subsidy 20):** Consumer price = 52.5. Producer receives 72.5.
-$Q_d = 737.5$, $Q_s = 525$. Imports = 212.5. CS = 54,391. PS = 13,781. Subsidy cost = 10,500. Tariff
+$Q_d = 737.5$$Q_s = 525$. Imports = 212.5. CS = 54,391. PS = 13,781. Subsidy cost = 10,500. Tariff
 revenue = 531. Net welfare = 58,203. DWL = 2,547.
 
 (b) EP has smaller DWL (2,547 vs 4,687.5). The subsidy distorts production (overproduction) but

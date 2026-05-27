@@ -14,7 +14,7 @@ A vector $\mathbf{a}$ in three-dimensional space with components $a_1, a_2, a_3$
 
 $$\mathbf{a} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$$
 
-Where $\mathbf{i}, \mathbf{j}, \mathbf{k}$ are the standard basis vectors along the $x$, $y$And $z$
+Where $\mathbf{i}, \mathbf{j}, \mathbf{k}$ are the standard basis vectors along the $x$$y$And $z$
 Axes respectively.
 
 ### Vector Operations
@@ -117,7 +117,7 @@ $\mathbf{b}$Given by the right-hand rule.
 - $\mathbf{a} \times \mathbf{a} = \mathbf{0}$
 - $\mathbf{a} \times \mathbf{b} = \mathbf{0}$ if and only if $\mathbf{a}$ and $\mathbf{b}$ are
   parallel (or one is zero)
-- $\mathbf{i} \times \mathbf{j} = \mathbf{k}$, $\mathbf{j} \times \mathbf{k} = \mathbf{i}$, $\mathbf{k} \times \mathbf{i} = \mathbf{j}$
+- $\mathbf{i} \times \mathbf{j} = \mathbf{k}$$\mathbf{j} \times \mathbf{k} = \mathbf{i}$$\mathbf{k} \times \mathbf{i} = \mathbf{j}$
 
 ### Area of a Parallelogram and Triangle
 
@@ -129,7 +129,7 @@ The area of the triangle with sides represented by $\mathbf{a}$ and $\mathbf{b}$
 
 $$A = \frac{1}{2}|\mathbf{a} \times \mathbf{b}|$$
 
-**Example.** Find the area of the triangle with vertices $A(1, 0, 0)$, $B(0, 2, 0)$, $C(0, 0, 3)$.
+**Example.** Find the area of the triangle with vertices $A(1, 0, 0)$$B(0, 2, 0)$$C(0, 0, 3)$.
 
 $$\overrightarrow{AB} = (-1, 2, 0), \qquad \overrightarrow{AC} = (-1, 0, 3)$$
 
@@ -192,7 +192,7 @@ $\mathbf{d}_2$:
 
 $$\mathbf{r} = \mathbf{a} + s\mathbf{d}_1 + t\mathbf{d}_2, \qquad s, t \in \mathbb{R}$$
 
-**Example.** Find the equation of the plane through $(1, 0, 2)$, $(3, 1, 0)$And $(0, -1, 1)$.
+**Example.** Find the equation of the plane through $(1, 0, 2)$$(3, 1, 0)$And $(0, -1, 1)$.
 
 $$\overrightarrow{AB} = (2, 1, -2), \qquad \overrightarrow{AC} = (-1, -1, -1)$$
 
@@ -272,14 +272,14 @@ The **scalar triple product** is:
 
 $$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$$
 
-Its absolute value equals the volume of the parallelepiped spanned by $\mathbf{a}$, $\mathbf{b}$And
+Its absolute value equals the volume of the parallelepiped spanned by $\mathbf{a}$$\mathbf{b}$And
 $\mathbf{c}$.
 
 $$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix}$$
 
 ### Coplanarity Test
 
-Three vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ are **coplanar** if and only if:
+Three vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$ are **coplanar** if and only if:
 
 $$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$$
 
@@ -357,7 +357,7 @@ For a vector $\mathbf{a} = (a_1, a_2, a_3)$ with $|\mathbf{a}| \ne 0$The **direc
 
 $$l = \cos\alpha = \frac{a_1}{|\mathbf{a}|}, \qquad m = \cos\beta = \frac{a_2}{|\mathbf{a}|}, \qquad n = \cos\gamma = \frac{a_3}{|\mathbf{a}|}$$
 
-Where $\alpha, \beta, \gamma$ are the angles between $\mathbf{a}$ and the $x$, $y$, $z$ axes
+Where $\alpha, \beta, \gamma$ are the angles between $\mathbf{a}$ and the $x$$y$$z$ axes
 Respectively.
 
 They satisfy: $l^2 + m^2 + n^2 = 1$.
@@ -376,7 +376,7 @@ ratios**. For a vector $\mathbf{a}$Its components are direction ratios.
 Find the shortest distance between $\mathbf{r}_1 = (0, 1, 0) + t(1, 0, -1)$ and
 $\mathbf{r}_2 = (0, 0, 1) + s(0, 1, 1)$.
 
-$\mathbf{a}_2 - \mathbf{a}_1 = (0, -1, 1)$, $\mathbf{d}_1 = (1, 0, -1)$, $\mathbf{d}_2 = (0, 1, 1)$.
+$\mathbf{a}_2 - \mathbf{a}_1 = (0, -1, 1)$$\mathbf{d}_1 = (1, 0, -1)$$\mathbf{d}_2 = (0, 1, 1)$.
 
 $$\mathbf{d}_1 \times \mathbf{d}_2 = \begin{pmatrix} 0 - (-1) \\ -1 - 0 \\ 1 - 0 \end{pmatrix} = \begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}$$
 
@@ -390,7 +390,7 @@ $$d = \frac{2}{\sqrt{3}} = \frac{2\sqrt{3}}{3}$$
 
 Find the reflection of the point $P(1, 2, 3)$ in the plane $2x - y + z = 4$.
 
-The normal is $\mathbf{n} = (2, -1, 1)$, $|\mathbf{n}| = \sqrt{6}$.
+The normal is $\mathbf{n} = (2, -1, 1)$$|\mathbf{n}| = \sqrt{6}$.
 
 The foot of the perpendicular from $P$ to the plane is found by solving the line
 $\mathbf{r} = (1, 2, 3) + t(2, -1, 1)$ intersecting the plane:
@@ -570,7 +570,7 @@ $$x + y + 3z - 12 = 0$$
    the shadow), while the vector projection gives a vector. The scalar projection can be negative if
    the angle exceeds $90\,^{\circ}$.
 
-7. **Scalar triple product coplanarity test.** Three vectors $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$
+7. **Scalar triple product coplanarity test.** Three vectors $\mathbf{a}$$\mathbf{b}$$\mathbf{c}$
    are coplanar if $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 0$. A zero result means the
    volume of the parallelepiped is zero, confirming coplanarity.
 
@@ -587,7 +587,7 @@ $$x + y + 3z - 12 = 0$$
 1. Find the vector equation of the line through $A(2, -1, 3)$ and $B(5, 1, -2)$. Determine whether
    the point $C(4, 0, 1)$ lies on this line.
 
-2. Find the equation of the plane through $(1, 0, -1)$, $(2, 3, 1)$And $(0, 1, 2)$. Find the distance
+2. Find the equation of the plane through $(1, 0, -1)$$(2, 3, 1)$And $(0, 1, 2)$. Find the distance
    from the origin to this plane.
 
 3. Two lines are given by $\mathbf{r}_1 = (0, 1, 2) + t(1, -1, 1)$ and
@@ -596,7 +596,7 @@ $$x + y + 3z - 12 = 0$$
 
 4. Find the angle between the planes $x + y + z = 1$ and $2x - y + z = 3$.
 
-5. The points $A(1, 0, 0)$, $B(0, 2, 0)$, $C(0, 0, 3)$And $D(1, 1, 1)$ form a tetrahedron. Find its
+5. The points $A(1, 0, 0)$$B(0, 2, 0)$$C(0, 0, 3)$And $D(1, 1, 1)$ form a tetrahedron. Find its
    volume using the scalar triple product.
 
 6. Find the reflection of the point $(3, -1, 2)$ in the plane $x - 2y + z = 4$.

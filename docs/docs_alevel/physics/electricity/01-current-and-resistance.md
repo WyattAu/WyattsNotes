@@ -484,7 +484,7 @@ Positive on that same face (holes accumulate).
 
 $$n = \frac{BI}{qV_Hd}$$
 
-Measurement of $V_H$, $B$, $I$And $d$ gives $n$ directly.
+Measurement of $V_H$$B$$I$And $d$ gives $n$ directly.
 
 <details>
 <summary>Example: Hall Voltage Calculation</summary>

@@ -61,7 +61,7 @@ This subject assumes familiarity with:
   $\log(a^b) =
  b \log a$, and the change of base formula.
 - **Summations** — Many algorithm analyses reduce to evaluating sums. Know the closed forms for
-  $\sum_{i=1}^{n} i = n(n+1)/2$, $\sum_{i=1}^{n} i^2 = n(n+1)(2n+1)/6$And the geometric series
+  $\sum_{i=1}^{n} i = n(n+1)/2$$\sum_{i=1}^{n} i^2 = n(n+1)(2n+1)/6$And the geometric series
   $\sum_{i=0}^{k} r^i = (r^{k+1} - 1)/(r - 1)$.
 - **Recurrence relations** — Divide-and-conquer algorithms produce recurrences like $T(n) = 2T(n/2)
 - O(n)$. The Master Theorem provides closed-form solutions for a broad class of these.

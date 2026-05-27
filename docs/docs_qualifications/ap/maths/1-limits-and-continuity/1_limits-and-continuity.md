@@ -21,7 +21,7 @@ $$
 \lim_{x \to a} f(x) = L
 $$
 
-This means that as $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily close to $L$.
+This means that as $x$ gets arbitrarily close to $a$$f(x)$ gets arbitrarily close to $L$.
 
 ### Left-Hand and Right-Hand Limits
 
@@ -75,7 +75,7 @@ Left limit $= -1$Right limit $= 1$. The limit does not exist.
 This is proved using the squeeze theorem and the geometric inequality $\sin x \lt x \lt \tan x$ for
 $0 \lt x \lt \frac{\pi}{2}$Which gives $\cos x \lt \frac{\sin x}{x} \lt 1$.
 
-As $x \to 0^+$, $\cos x \to 1$So by the squeeze theorem, $\frac{\sin x}{x} \to 1$. A similar Argument
+As $x \to 0^+$$\cos x \to 1$So by the squeeze theorem, $\frac{\sin x}{x} \to 1$. A similar Argument
 applies from the left. $\blacksquare$
 
 **Proof of the geometric inequality $\sin x \lt x \lt \tan x$ for $0 \lt x \lt \frac{\pi}{2}$.**
@@ -87,7 +87,7 @@ $\sin x \lt x \lt \tan x$. $\blacksquare$
 
 **Proof that $\displaystyle\lim_{x \to 0} \frac{e^x - 1}{x} = 1$.**
 
-Let $h = e^x - 1$So $e^x = 1 + h$ and $x = \ln(1+h)$. As $x \to 0$, $h \to 0$.
+Let $h = e^x - 1$So $e^x = 1 + h$ and $x = \ln(1+h)$. As $x \to 0$$h \to 0$.
 
 $$
 \frac{e^x - 1}{x} = \frac{h}{\ln(1+h)} = \frac{1}{\frac{\ln(1+h)}{h}}
@@ -99,7 +99,7 @@ Inverses), we obtain the result. $\blacksquare$
 
 **Proof that $\displaystyle\lim_{x \to 0} \frac{\ln(1+x)}{x} = 1$.**
 
-Let $u = \ln(1+x)$So $e^u = 1 + x$ and $x = e^u - 1$. As $x \to 0$, $u \to 0$.
+Let $u = \ln(1+x)$So $e^u = 1 + x$ and $x = e^u - 1$. As $x \to 0$$u \to 0$.
 
 $$
 \frac{\ln(1+x)}{x} = \frac{u}{e^u - 1} = \frac{1}{\frac{e^u - 1}{u}}

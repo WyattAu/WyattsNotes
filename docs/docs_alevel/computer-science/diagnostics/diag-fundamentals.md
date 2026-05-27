@@ -106,7 +106,7 @@ Simplify $AB + A\bar{B}C = A(B + \bar{B}C) = A(B + C) = AB + AC$.
 Therefore: $F = AB + AC + BC$.
 
 **Karnaugh map verification** (minterms:
-$A\bar{B}C = m_5$, $AB\bar{C} = m_6$, $ABC = m_7$, $\bar{A}BC = m_3$):
+$A\bar{B}C = m_5$$AB\bar{C} = m_6$$ABC = m_7$$\bar{A}BC = m_3$):
 
 | AB\C | 0   | 1   |
 | ---- | --- | --- |
@@ -248,8 +248,8 @@ $S = A \oplus B = A\bar{B} + \bar{A}B$ (XOR). $C = AB$ (AND).
 
 (b) Full adder from two half-adders:
 
-First half-adder: inputs $A$, $B$. Produces $S_1 = A \oplus B$ and $C_1 = AB$. Second half-adder:
-inputs $S_1$, $C_{\text{in}}$. Produces
+First half-adder: inputs $A$$B$. Produces $S_1 = A \oplus B$ and $C_1 = AB$. Second half-adder:
+inputs $S_1$$C_{\text{in}}$. Produces
 $S = S_1 \oplus C_{\text{in}} = A \oplus B \oplus C_{\text{in}}$ and
 $C_2 = S_1 \cdot C_{\text{in}}$. OR gate:
 $C_{\text{out}} = C_1 + C_2 = AB + (A \oplus B)C_{\text{in}}$.

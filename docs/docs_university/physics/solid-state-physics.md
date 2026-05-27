@@ -32,13 +32,13 @@ There are **14 Bravais lattices** in three dimensions, classified into 7 crystal
 
 | System       | Lattices     | Constraints                                                   |
 | ------------ | ------------ | ------------------------------------------------------------- |
-| Cubic        | SC, BCC, FCC | $a = b = c$, $\alpha = \beta = \gamma = 90^\circ$               |
-| Tetragonal   | P, I         | $a = b \neq c$, $\alpha = \beta = \gamma = 90^\circ$            |
-| Orthorhombic | P, C, I, F   | $a \neq b \neq c$, $\alpha = \beta = \gamma = 90^\circ$         |
-| Monoclinic   | P, C         | $a \neq b \neq c$, $\alpha = \gamma = 90^\circ \neq \beta$      |
-| Triclinic    | P            | $a \neq b \neq c$, $\alpha \neq \beta \neq \gamma$              |
-| Hexagonal    | P            | $a = b \neq c$, $\alpha = \beta = 90^\circ$, $\gamma = 120^\circ$ |
-| Trigonal     | R            | $a = b = c$, $\alpha = \beta = \gamma \neq 90^\circ$            |
+| Cubic        | SC, BCC, FCC | $a = b = c$$\alpha = \beta = \gamma = 90^\circ$               |
+| Tetragonal   | P, I         | $a = b \neq c$$\alpha = \beta = \gamma = 90^\circ$            |
+| Orthorhombic | P, C, I, F   | $a \neq b \neq c$$\alpha = \beta = \gamma = 90^\circ$         |
+| Monoclinic   | P, C         | $a \neq b \neq c$$\alpha = \gamma = 90^\circ \neq \beta$      |
+| Triclinic    | P            | $a \neq b \neq c$$\alpha \neq \beta \neq \gamma$              |
+| Hexagonal    | P            | $a = b \neq c$$\alpha = \beta = 90^\circ$$\gamma = 120^\circ$ |
+| Trigonal     | R            | $a = b = c$$\alpha = \beta = \gamma \neq 90^\circ$            |
 
 **Notation:** P = primitive, I = body-centred, F = face-centred, C = base-centred, R = rhombohedral.
 
@@ -61,7 +61,7 @@ per Conventional cell. Examples: C (diamond), Si, Ge.
 
 ### 1.4 Miller Indices
 
-A plane with Miller indices $(hkl)$ intersects the crystallographic axes at $a/h$, $b/k$, $c/l$.
+A plane with Miller indices $(hkl)$ intersects the crystallographic axes at $a/h$$b/k$$c/l$.
 
 **Procedure:** (1) Find intercepts with axes in units of lattice constants. (2) Take reciprocals.
 (3) Reduce to smallest integers.
@@ -278,7 +278,7 @@ $\mathbf◆LB◆G◆RB◆_◆LB◆hkl◆RB◆ = h\mathbf◆LB◆b◆RB◆_1 + k\
 real-space planes $(hkl)$And $\lvert\mathbf◆LB◆G◆RB◆_◆LB◆hkl◆RB◆\rvert = 2\pi/d_◆LB◆hkl◆RB◆$ where $d_◆LB◆hkl◆RB◆$ is the
 interplanar spacing.
 
-**Proof.** The plane $(hkl)$ has intercepts $\mathbf◆LB◆a◆RB◆_1/h$, $\mathbf◆LB◆a◆RB◆_2/k$, $\mathbf◆LB◆a◆RB◆_3/l$. Two
+**Proof.** The plane $(hkl)$ has intercepts $\mathbf◆LB◆a◆RB◆_1/h$$\mathbf◆LB◆a◆RB◆_2/k$$\mathbf◆LB◆a◆RB◆_3/l$. Two
 vectors in this plane are $\mathbf◆LB◆a◆RB◆_2/k - \mathbf◆LB◆a◆RB◆_1/h$ and $\mathbf◆LB◆a◆RB◆_3/l - \mathbf◆LB◆a◆RB◆_1/h$.
 
 $\mathbf◆LB◆G◆RB◆_◆LB◆hkl◆RB◆ \cdot (\mathbf◆LB◆a◆RB◆_2/k - \mathbf◆LB◆a◆RB◆_1/h) = (2\pi/k)k - (2\pi/h)h = 0$.
@@ -296,7 +296,7 @@ plane is $d_◆LB◆hkl◆RB◆ = 2\pi/\lvert\mathbf◆LB◆G◆RB◆_◆LB◆hk
 <details>
 <summary>Worked Example: First Brillouin Zone of the 2D Square Lattice</summary>
 
-For a 2D square lattice with primitive vectors $\mathbf◆LB◆a◆RB◆_1 = a\hat◆LB◆x◆RB◆$, $\mathbf◆LB◆a◆RB◆_2 = a\hat◆LB◆y◆RB◆$:
+For a 2D square lattice with primitive vectors $\mathbf◆LB◆a◆RB◆_1 = a\hat◆LB◆x◆RB◆$$\mathbf◆LB◆a◆RB◆_2 = a\hat◆LB◆y◆RB◆$:
 
 $$\mathbf◆LB◆b◆RB◆_1 = \frac◆LB◆2\pi◆RB◆◆LB◆a◆RB◆\hat◆LB◆x◆RB◆, \quad \mathbf◆LB◆b◆RB◆_2 = \frac◆LB◆2\pi◆RB◆◆LB◆a◆RB◆\hat◆LB◆y◆RB◆$$
 
@@ -456,7 +456,7 @@ $$S_◆LB◆hkl◆RB◆ = f\left[1 + e^◆LB◆-i\pi(h+k+l)◆RB◆\right] = f\l
 Reflections are present only when $h + k + l$ is even. When $h + k + l$ is odd, $S_◆LB◆hkl◆RB◆ = 0$
 (systematic absence).
 
-**Example: FCC.** Atoms at $(0,0,0)$, $(a/2,a/2,0)$, $(a/2,0,a/2)$, $(0,a/2,a/2)$:
+**Example: FCC.** Atoms at $(0,0,0)$$(a/2,a/2,0)$$(a/2,0,a/2)$$(0,a/2,a/2)$:
 
 $$S_◆LB◆hkl◆RB◆ = f\left[1 + e^◆LB◆-i\pi(h+k)◆RB◆ + e^◆LB◆-i\pi(h+l)◆RB◆ + e^◆LB◆-i\pi(k+l)◆RB◆\right]$$
 
@@ -659,10 +659,10 @@ Where $\ell_◆LB◆\mathrm◆LB◆ph◆RB◆$ is the phonon mean free path.
 
 **Scattering mechanisms** that limit $\ell_◆LB◆\mathrm◆LB◆ph◆RB◆$:
 
-1. **Phonon--phonon scattering:** At high $T$, $\ell_◆LB◆\mathrm◆LB◆ph◆RB◆ \propto 1/T$ (Umklapp processes
+1. **Phonon--phonon scattering:** At high $T$$\ell_◆LB◆\mathrm◆LB◆ph◆RB◆ \propto 1/T$ (Umklapp processes
    dominate, where the total phonon momentum is not conserved). At low $T$Only normal processes
    ($N$-processes, conserving momentum) contribute, and $\ell_◆LB◆\mathrm◆LB◆ph◆RB◆$ grows exponentially.
-2. **Boundary scattering:** At very low $T$, $\ell_◆LB◆\mathrm◆LB◆ph◆RB◆$ is limited by the sample size $L$.
+2. **Boundary scattering:** At very low $T$$\ell_◆LB◆\mathrm◆LB◆ph◆RB◆$ is limited by the sample size $L$.
 3. **Defect scattering:** Point defects, dislocations, and grain boundaries scatter phonons,
    reducing $\kappa_◆LB◆\mathrm◆LB◆ph◆RB◆$.
 
@@ -1253,7 +1253,7 @@ Diodes). Indirect-gap materials like Si have very low radiative efficiency.
 <details>
 <summary>Worked Example: Intrinsic Carrier Concentration in Silicon</summary>
 
-For Si at $T = 300$ K: $E_g = 1.12$ eV, $m_e^* = 1.08\,m_e$, $m_h^* = 0.56\,m_e$.
+For Si at $T = 300$ K: $E_g = 1.12$ eV, $m_e^* = 1.08\,m_e$$m_h^* = 0.56\,m_e$.
 
 $$N_c = 2\left(\frac◆LB◆2\pi \times 1.08 \times 9.11 \times 10^◆LB◆-31◆RB◆ \times 1.381 \times 10^◆LB◆-23◆RB◆ \times 300◆RB◆◆LB◆(6.626 \times 10^◆LB◆-34◆RB◆)^2◆RB◆\right)^◆LB◆3/2◆RB◆ = 2.81 \times 10^◆LB◆25◆RB◆\ \mathrm◆LB◆m^◆LB◆-3◆RB◆$$
 
@@ -1432,7 +1432,7 @@ The conductivity becomes:
 
 $$\sigma = \frac◆LB◆e^2◆RB◆◆LB◆3◆RB◆\int \tau(\varepsilon)\,v^2(\varepsilon)\,g(\varepsilon)\left(-\frac◆LB◆\partial f_0◆RB◆◆LB◆\partial\varepsilon◆RB◆\right) d\varepsilon$$
 
-At low $T$, $-\partial f_0/\partial\varepsilon \approx \delta(\varepsilon - \varepsilon_F)$So only
+At low $T$$-\partial f_0/\partial\varepsilon \approx \delta(\varepsilon - \varepsilon_F)$So only
 states Near $E_F$ contribute to transport. This explains why impurity scattering dominates at low
 $T$ (even a small concentration of impurities affects states near $E_F$).
 
@@ -1734,7 +1734,7 @@ FCC, And explain why SC is rarely observed in elemental metals.
 **Problem 2.** Aluminium is FCC with $a = 0.405$ nm and $M = 26.98$ g/mol. Calculate the theoretical
 Density and compare with the experimental value ($2.70\ \mathrm◆LB◆g/cm^3$).
 
-**Problem 3.** A plane intercepts the crystallographic axes at $2a$, $3b$And $\infty c$. Determine the
+**Problem 3.** A plane intercepts the crystallographic axes at $2a$$3b$And $\infty c$. Determine the
 Miller indices. A direction passes through the origin and the point $(1, -1, 0)$ in units of lattice
 Constants. Write the direction indices.
 
@@ -1766,7 +1766,7 @@ specific Heat at $T = 100$ K and $T = 500$ K. At what temperature does the Debye
 Accurate approximation?
 
 **Problem 12.** Compare the Einstein and Debye predictions for $C_V/C_◆LB◆\mathrm◆LB◆Dulong--Petit◆RB◆$ as a
-Function of $T/\Theta$ at $T/\Theta = 0.1$, $0.5$And $1.0$.
+Function of $T/\Theta$ at $T/\Theta = 0.1$$0.5$And $1.0$.
 
 **Problem 13.** Sodium has $n = 2.65 \times 10^◆LB◆28◆RB◆\ \mathrm◆LB◆m^◆LB◆-3◆RB◆$ conduction electrons. Calculate
 The Fermi energy, Fermi wave vector, Fermi velocity, and Fermi temperature.
@@ -1788,7 +1788,7 @@ $J = S = 1/2$ and $g = 2$. Calculate the magnetisation in a field of $B = 1$ T a
 $T = 4$ K.
 
 **Problem 18.** Using the mean-field theory, derive the Curie--Weiss law $\chi = C/(T - T_C)$ for a
-Ferromagnet above $T_C$. Express $C$ in terms of $N$, $\mu$And $k_B$.
+Ferromagnet above $T_C$. Express $C$ in terms of $N$$\mu$And $k_B$.
 
 **Hints and Selected Results:**
 
@@ -1803,9 +1803,9 @@ Ferromagnet above $T_C$. Express $C$ in terms of $N$, $\mu$And $k_B$.
   lattice points at $(\pm 2\pi/a)(\pm 1, \pm 1, \pm 1)/2$ form an FCC pattern.
 - _Problem 7:_ First five FCC reflections: (111), (200), (220), (311), (222). Use
   $2d\sin\theta = \lambda$ with $d = a/\sqrt◆LB◆h^2+k^2+l^2◆RB◆$.
-- _Problem 13:_ $\varepsilon_F = 3.24$ eV, $k_F = 9.22 \times 10^9$ m$^◆LB◆-1◆RB◆$, $v_F = 1.07 \times 10^6$
+- _Problem 13:_ $\varepsilon_F = 3.24$ eV, $k_F = 9.22 \times 10^9$ m$^◆LB◆-1◆RB◆$$v_F = 1.07 \times 10^6$
   m/s, $T_F = 3.76 \times 10^4$ K.
-- _Problem 15:_ $n = N_D = 10^◆LB◆22◆RB◆$ m$^◆LB◆-3◆RB◆$, $p = n_i^2/N_D = 2.25 \times 10^◆LB◆10◆RB◆$ m$^◆LB◆-3◆RB◆$
+- _Problem 15:_ $n = N_D = 10^◆LB◆22◆RB◆$ m$^◆LB◆-3◆RB◆$$p = n_i^2/N_D = 2.25 \times 10^◆LB◆10◆RB◆$ m$^◆LB◆-3◆RB◆$
   $E_c - E_F = k_B T\ln(N_c/N_D) \approx 0.214$ eV.
 - _Problem 16:_ $V_0 = 0.716$ V, $W \approx 0.35$ $\mu$M.
 - _Problem 17:_ At 300 K: $M \approx \mu_0 N \mu_B^2 B/(3k_B T) = 0.078$ A/m. At 4 K: the classical
@@ -1831,7 +1831,7 @@ The GL free energy functional:
 
 $$\mathcal◆LB◆F◆RB◆ = \mathcal◆LB◆F◆RB◆_n + \alpha|\psi|^2 + \frac◆LB◆\beta◆RB◆◆LB◆2◆RB◆|\psi|^4 + \frac◆LB◆1◆RB◆◆LB◆2m^*◆RB◆\left|\left(-i\hbar\nabla - e^*\mathbf◆LB◆A◆RB◆\right)\psi\right|^2 + \frac◆LB◆|\mathbf◆LB◆B◆RB◆|^2◆RB◆◆LB◆2\mu_0◆RB◆$$
 
-Where $\alpha = \alpha_0(T - T_c)$ (negative below $T_c$), $\beta > 0$, $m^* = 2m_e$, $e^* = 2e$ (Cooper
+Where $\alpha = \alpha_0(T - T_c)$ (negative below $T_c$), $\beta > 0$$m^* = 2m_e$$e^* = 2e$ (Cooper
 pair charge), and $\mathbf◆LB◆A◆RB◆$ is the vector potential.
 
 Minimising with respect to $\psi^*$ gives the **first GL equation**:
@@ -2006,7 +2006,7 @@ The Chern number is an integer (topological invariant). The Hall conductivity is
 
 $$\sigma_◆LB◆xy◆RB◆ = C\frac◆LB◆e^2◆RB◆◆LB◆h◆RB◆$$
 
-For the integer quantum Hall effect with filling factor $\nu$, $C = \nu$.
+For the integer quantum Hall effect with filling factor $\nu$$C = \nu$.
 
 The TKNN formula (Thouless, Kohmoto, Nightingale, den Nijs, 1982) established that the quantum Hall
 conductance is a topological invariant, explaining its remarkable precision and robustness against
@@ -2177,7 +2177,7 @@ $$E_n = E_g - \frac◆LB◆\mu e^4◆RB◆◆LB◆2(4\pi\varepsilon_0\varepsilon
 
 Where $R^* = \frac◆LB◆\mu◆RB◆◆LB◆m_e\varepsilon_r^2◆RB◆ \times 13.6$ eV is the effective Rydberg.
 
-For GaAs ($m_e^* = 0.067m_e$, $m_h^* = 0.45m_e$, $\varepsilon_r = 12.9$):
+For GaAs ($m_e^* = 0.067m_e$$m_h^* = 0.45m_e$$\varepsilon_r = 12.9$):
 
 $$\mu = \frac◆LB◆0.067 \times 0.45◆RB◆◆LB◆0.067 + 0.45◆RB◆m_e = 0.058m_e$$
 
@@ -2248,7 +2248,7 @@ $$I_D = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ \times 450 \times 34.5 \times 10
 
 A Type II superconductor has $\xi_0 = 5$ nm and $\lambda_0 = 50$ nm at $T = 0$. At $T = 0.9\,T_c$:
 
-(a) Calculate $\xi(T)$, $\lambda(T)$And $\kappa(T)$.
+(a) Calculate $\xi(T)$$\lambda(T)$And $\kappa(T)$.
 
 (b) Calculate $B_◆LB◆c1◆RB◆$ and $B_◆LB◆c2◆RB◆$ at $T = 0.9\,T_c$.
 

@@ -280,7 +280,7 @@ $$3x = 1.0$$
 $$x = 0.333\,\text{mol dm}^{-3}$$
 
 Equilibrium concentrations:
-$[A] = [B] = 0.167\,\text{mol dm}^{-3}$, $[C] = [D] = 0.333\,\text{mol dm}^{-3}$.
+$[A] = [B] = 0.167\,\text{mol dm}^{-3}$$[C] = [D] = 0.333\,\text{mol dm}^{-3}$.
 
 (c) If $K_c$ increases from $4.0$ to $8.0$The equilibrium shifts to the right, meaning the forward
 reaction is more favoured. Since $K_c = k_f/k_r$And $K_c$ has increased:

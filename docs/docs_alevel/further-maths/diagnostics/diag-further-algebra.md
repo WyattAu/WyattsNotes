@@ -23,12 +23,12 @@ $\gamma$ individually. (d) Find a cubic with roots $2\alpha, 2\beta, 2\gamma$.
 (a) $f(1) = 1 - 3 + 4 - 2 = 0 \checkmark$. $f(x) = (x-1)(x^2 - 2x + 2)$.
 
 (b) $x^2 - 2x + 2 = 0$. $x = \frac◆LB◆2 \pm \sqrt{4-8}◆RB◆◆LB◆2◆RB◆ = 1 \pm i$. So
-$\beta = 1+i$, $\gamma = 1-i$.
+$\beta = 1+i$$\gamma = 1-i$.
 
 (c)
 $\alpha^2 + \beta^2 + \gamma^2 = (\alpha+\beta+\gamma)^2 - 2(\alpha\beta+\alpha\gamma+\beta\gamma)$.
 By Vieta's:
-$\alpha+\beta+\gamma = 3$, $\alpha\beta+\alpha\gamma+\beta\gamma = 4$, $\alpha\beta\gamma = 2$.
+$\alpha+\beta+\gamma = 3$$\alpha\beta+\alpha\gamma+\beta\gamma = 4$$\alpha\beta\gamma = 2$.
 $= 9 - 8 = 1$.
 
 (d) If roots are $2\alpha, 2\beta, 2\gamma$: sum $= 2 \times 3 = 6$Sum of products
@@ -43,8 +43,8 @@ to find $\sum_{r=1}^{n} \frac{1}{r(r+2)}$.
 **Solution:**
 
 (a) $\frac{2x+3}{(x+1)(x-2)^2} = \frac{A}{x+1} + \frac{B}{x-2} + \frac{C}{(x-2)^2}$.
-$2x+3 = A(x-2)^2 + B(x+1)(x-2) + C(x+1)$. $x = -1$: $1 = 9A$, $A = 1/9$. $x = 2$: $7 = 3C$, $C = 7/3$.
-Comparing $x^2$: $0 = A + B = 1/9 + B$, $B = -1/9$.
+$2x+3 = A(x-2)^2 + B(x+1)(x-2) + C(x+1)$. $x = -1$: $1 = 9A$$A = 1/9$. $x = 2$: $7 = 3C$$C = 7/3$.
+Comparing $x^2$: $0 = A + B = 1/9 + B$$B = -1/9$.
 $= \frac{1}{9(x+1)} - \frac{1}{9(x-2)} + \frac{7}{3(x-2)^2}$.
 
 (b) $\frac{1}{r(r+1)} = \frac{1}{r} - \frac{1}{r+1}$.
@@ -91,7 +91,7 @@ the relationship between these identities and symmetric functions.
 (a)
 $\alpha^3 + \beta^3 + \gamma^3 = (\alpha+\beta+\gamma)^3 - 3(\alpha+\beta+\gamma)(\alpha\beta+\alpha\gamma+\beta\gamma) + 3\alpha\beta\gamma$.
 By Vieta's (since $x^3 + px + q = 0$):
-$\alpha+\beta+\gamma = 0$, $\alpha\beta+\alpha\gamma+\beta\gamma = p$, $\alpha\beta\gamma = -q$.
+$\alpha+\beta+\gamma = 0$$\alpha\beta+\alpha\gamma+\beta\gamma = p$$\alpha\beta\gamma = -q$.
 $= 0 - 0 + 3(-q) = -3q$.
 
 (b)
@@ -102,7 +102,7 @@ is impossible. So no such $p$ exists. The conditions are inconsistent.
 
 (d) These are Newton's identities connecting power sums $s_k = \sum \alpha_i^k$ with elementary
 symmetric polynomials $e_k$. For a cubic with zero $x^2$ term:
-$s_1 = e_1 = 0$, $s_2 = e_1^2 - 2e_2 = -2p$, $s_3 = e_1^3 - 3e_1e_2 + 3e_3 = -3q$. These identities
+$s_1 = e_1 = 0$$s_2 = e_1^2 - 2e_2 = -2p$$s_3 = e_1^3 - 3e_1e_2 + 3e_3 = -3q$. These identities
 generalize to polynomials of any degree.
 
 ### IT-2: Series and Induction Combined (with Calculus)
@@ -150,15 +150,15 @@ $\{0, 1, -1\}$?
 
 (a)
 $M^2 = \begin{pmatrix} a^2+bc & ab+bd \\ ac+cd & bc+d^2 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$.
-So $a^2 + bc = 1$, $b(a+d) = 0$, $c(a+d) = 0$, $bc + d^2 = 1$.
+So $a^2 + bc = 1$$b(a+d) = 0$$c(a+d) = 0$$bc + d^2 = 1$.
 
 (b) From $a^2 + bc = 1$ and $d^2 + bc = 1$: $a^2 = d^2$So $d = \pm a$.
 
 Case 1: $d = a$. Then $b(a+a) = 2ab = 0$ and $c(a+a) = 2ac = 0$. So either $a = 0$ or $b = c = 0$.
 
 - If $a = 0$: $bc = 1$So $(b, c) = (1, 1)$ or $(-1, -1)$. Matrices:
-  $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $\begin{pmatrix}0&-1\\-1&0\end{pmatrix}$.
-- If $a \ne 0$: $b = c = 0$, $a^2 = 1$, $a = \pm 1$. Matrices: $\pm\mathbf{I}$.
+  $\begin{pmatrix}0&1\\1&0\end{pmatrix}$$\begin{pmatrix}0&-1\\-1&0\end{pmatrix}$.
+- If $a \ne 0$: $b = c = 0$$a^2 = 1$$a = \pm 1$. Matrices: $\pm\mathbf{I}$.
 
 Case 2: $d = -a$. Then $b(a-a) = 0$ and $c(a-a) = 0$ (always satisfied). Need $a^2 + bc = 1$. With
 integer entries and $|a|, |b|, |c| \le 1$: if $a = 0$: $bc = 1$Same as above. If $a = 1$: $bc = 0$.
@@ -166,7 +166,7 @@ If $a = -1$: $bc = 0$.
 
 - $a = 1, d = -1, bc = 0$: $(b,c) = (0,0), (1,0), (-1,0), (0,1), (0,-1)$. But $b$ and $c$ must be in
   $\{-1, 0, 1\}$. Matrices:
-  $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, $\begin{pmatrix}1&1\\0&-1\end{pmatrix}$, $\begin{pmatrix}1&-1\\0&-1\end{pmatrix}$, $\begin{pmatrix}1&0\\1&-1\end{pmatrix}$, $\begin{pmatrix}1&0\\-1&-1\end{pmatrix}$.
+  $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$$\begin{pmatrix}1&1\\0&-1\end{pmatrix}$$\begin{pmatrix}1&-1\\0&-1\end{pmatrix}$$\begin{pmatrix}1&0\\1&-1\end{pmatrix}$$\begin{pmatrix}1&0\\-1&-1\end{pmatrix}$.
 - $a = -1, d = 1$: similarly, 5 matrices with $(-1, 1)$ diagonal.
 
 (c) From $M^2 = \mathbf{I}$: $\det(M)^2 = 1$So $\det(M) = \pm 1$. Also $\text{tr}(M) = a + d$. From
@@ -174,7 +174,7 @@ $d = \pm a$: $\text{tr} = 2a$ or $\text{tr} = 0$. If $d = a$: $\text{tr} = 2a \i
 $d = -a$: $\text{tr} = 0$. So $\text{tr}(M) \in \{-2, 0, 2\}$.
 
 (d) From case 1 (d = a):
-$2\mathbf{I}$, $-2\mathbf{I}$, $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $\begin{pmatrix}0&-1\\-1&0\end{pmatrix}$.
+$2\mathbf{I}$$-2\mathbf{I}$$\begin{pmatrix}0&1\\1&0\end{pmatrix}$$\begin{pmatrix}0&-1\\-1&0\end{pmatrix}$.
 That is 4 matrices. From case 2 (d = -a): For $a = 1$: 5 matrices. For $a = -1$: 5 matrices. For
 $a = 0$: same 2 matrices (already counted). Total: $4 + 5 + 5 = 14$ matrices with entries in
 $\{0, 1, -1\}$.

@@ -230,8 +230,8 @@ Left carbon of the double bond: substituents are $\mathrm{CH}_3$ and $\mathrm{H}
 $\mathrm{CH}_3 \gt \mathrm{H}$ (atomic number of $\mathrm{C} \gt \mathrm{H}$).
 
 Right carbon: substituents are $\mathrm{CH}_3$ and $\mathrm{COOH}$. For $\mathrm{COOH}$: the atoms
-directly bonded are $\mathrm{C}$, $\mathrm{O}$, $\mathrm{O}$; for $\mathrm{CH}_3$: the atoms directly
-bonded are $\mathrm{H}$, $\mathrm{H}$, $\mathrm{H}$. Since $\mathrm{O} \gt \mathrm{H}$, $\mathrm{COOH}$
+directly bonded are $\mathrm{C}$$\mathrm{O}$$\mathrm{O}$; for $\mathrm{CH}_3$: the atoms directly
+bonded are $\mathrm{H}$$\mathrm{H}$$\mathrm{H}$. Since $\mathrm{O} \gt \mathrm{H}$$\mathrm{COOH}$
 has higher priority than $\mathrm{CH}_3$.
 
 If the higher-priority groups ($\mathrm{CH}_3$ on the left, $\mathrm{COOH}$ on the right) are on the

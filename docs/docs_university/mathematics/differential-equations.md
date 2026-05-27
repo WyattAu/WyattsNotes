@@ -50,7 +50,7 @@ Differential equations arise throughout the natural sciences. A few canonical ex
    nonlinear (Bernoulli) ODE.
 
 4. **Lotka-Volterra predator-prey model.**
-   $\frac◆LB◆dx◆RB◆◆LB◆dt◆RB◆ = x(\alpha - \beta y)$, $\frac◆LB◆dy◆RB◆◆LB◆dt◆RB◆ = y(-\gamma + \delta x)$A coupled nonlinear
+   $\frac◆LB◆dx◆RB◆◆LB◆dt◆RB◆ = x(\alpha - \beta y)$$\frac◆LB◆dy◆RB◆◆LB◆dt◆RB◆ = y(-\gamma + \delta x)$A coupled nonlinear
    system.
 
 5. **RC circuit.** The charge $q(t)$ on a capacitor satisfies $R\frac◆LB◆dq◆RB◆◆LB◆dt◆RB◆ + \frac◆LB◆q◆RB◆◆LB◆C◆RB◆ = V(t)$
@@ -109,7 +109,7 @@ Differential Equations
 
 (c) Second-order, linear, homogeneous. This is Bessel's equation of order 1.
 
-(d) Second-order PDE, linear, homogeneous. This is Laplace's equation; $A = 1$, $C = 1$, $B = 0$ So
+(d) Second-order PDE, linear, homogeneous. This is Laplace's equation; $A = 1$$C = 1$$B = 0$ So
 $B^2 - 4AC = -4 \lt 0$ (elliptic). $\blacksquare$
 
 </details>
@@ -149,7 +149,7 @@ Integrating: $\mu y = \int \mu Q\, dx + C$. Solving for $y$ gives the result. $\
 
 **Problem.** Solve $y' + \frac◆LB◆2◆RB◆◆LB◆x◆RB◆y = x^2$ for $x > 0$.
 
-_Solution._ $P(x) = 2/x$, $Q(x) = x^2$.
+_Solution._ $P(x) = 2/x$$Q(x) = x^2$.
 
 $\mu(x) = e^◆LB◆\int 2/x\, dx◆RB◆ = e^◆LB◆2\ln x◆RB◆ = x^2$.
 
@@ -177,7 +177,7 @@ $\blacksquare$
 
 **Problem.** Solve $(2xy + 3)\, dx + (x^2 - 1)\, dy = 0$.
 
-_Solution._ $M = 2xy + 3$, $N = x^2 - 1$. Check: $M_y = 2x = N_x$. Exact.
+_Solution._ $M = 2xy + 3$$N = x^2 - 1$. Check: $M_y = 2x = N_x$. Exact.
 
 $\Psi_x = 2xy + 3 \implies \Psi = x^2 y + 3x + h(y)$.
 
@@ -209,13 +209,13 @@ $$\frac◆LB◆dv◆RB◆◆LB◆dx◆RB◆ + (1 - n)P(x)v = (1 - n)Q(x)$$
 **Example.** Solve $y' + y = y^2 e^x$.
 
 Here $n = 2$So set $v = y^◆LB◆-1◆RB◆$. Then $v' = -y^◆LB◆-2◆RB◆y'$And the equation becomes $v' - v = -e^x$.
-Integrating factor: $e^◆LB◆-x◆RB◆$. So $(v e^◆LB◆-x◆RB◆)' = -1$Giving $ve^◆LB◆-x◆RB◆ = -x + C$, $v = -xe^x + Ce^x$ And
+Integrating factor: $e^◆LB◆-x◆RB◆$. So $(v e^◆LB◆-x◆RB◆)' = -1$Giving $ve^◆LB◆-x◆RB◆ = -x + C$$v = -xe^x + Ce^x$ And
 $y = 1/(C - x)e^x$.
 
 ### 2.8 Existence and Uniqueness
 
 **Theorem 2.3 (Picard-Lindelöf).** If $f$ and $\partial f/\partial y$ are continuous on a rectangle
-Containing $(x_0, y_0)$Then the IVP $y' = f(x, y)$, $y(x_0) = y_0$ has a unique solution in some
+Containing $(x_0, y_0)$Then the IVP $y' = f(x, y)$$y(x_0) = y_0$ has a unique solution in some
 Neighbourhood of $x_0$.
 
 ### 2.9 Substitution Methods
@@ -288,7 +288,7 @@ Minutes, its temperature is $60\degree\mathrm◆LB◆C$. When will it reach $30\
 <details>
 <summary>Solution</summary>
 
-_Solution._ Newton's law of cooling: $\frac◆LB◆dT◆RB◆◆LB◆dt◆RB◆ = -k(T - 20)$, $T(0) = 90$.
+_Solution._ Newton's law of cooling: $\frac◆LB◆dT◆RB◆◆LB◆dt◆RB◆ = -k(T - 20)$$T(0) = 90$.
 
 This is separable: $\frac◆LB◆dT◆RB◆◆LB◆T - 20◆RB◆ = -k\, dt$.
 
@@ -320,7 +320,7 @@ _Solution._ Let $Q(t)$ be the amount of salt (kg) at time $t$ (min).
 Rate of change:
 $\frac◆LB◆dQ◆RB◆◆LB◆dt◆RB◆ = \mathrm◆LB◆rate\; in - \mathrm◆LB◆rate\; out = 0 - 3 \cdot \frac◆LB◆Q◆RB◆◆LB◆100◆RB◆$.
 
-$\frac◆LB◆dQ◆RB◆◆LB◆dt◆RB◆ = -\frac◆LB◆3Q◆RB◆◆LB◆100◆RB◆$, $Q(0) = 20$.
+$\frac◆LB◆dQ◆RB◆◆LB◆dt◆RB◆ = -\frac◆LB◆3Q◆RB◆◆LB◆100◆RB◆$$Q(0) = 20$.
 
 This is separable: $\frac◆LB◆dQ◆RB◆◆LB◆Q◆RB◆ = -\frac◆LB◆3◆RB◆◆LB◆100◆RB◆\, dt$.
 
@@ -339,9 +339,9 @@ At $t = 30$: $Q(30) = 20e^◆LB◆-0.9◆RB◆ \approx 20 \cdot 0.4066 \approx 8
 <details>
 <summary>Solution</summary>
 
-_Solution._ $M = 3xy + 2y^2$, $N = x^2 + 2xy$.
+_Solution._ $M = 3xy + 2y^2$$N = x^2 + 2xy$.
 
-$M_y = 3x + 4y$, $N_x = 2x + 2y$. Since $M_y \neq N_x$Not exact.
+$M_y = 3x + 4y$$N_x = 2x + 2y$. Since $M_y \neq N_x$Not exact.
 
 Check Case 1:
 $\frac◆LB◆M_y - N_x◆RB◆◆LB◆N◆RB◆ = \frac◆LB◆x + 2y◆RB◆◆LB◆x^2 + 2xy◆RB◆ = \frac◆LB◆x + 2y◆RB◆◆LB◆x(x + 2y)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆x◆RB◆$.
@@ -350,7 +350,7 @@ This depends only on $x$So $\mu(x) = e^◆LB◆\int 1/x\, dx◆RB◆ = x$.
 
 Multiply: $(3x^2y + 2xy^2)\, dx + (x^3 + 2x^2y)\, dy = 0$.
 
-$\tilde◆LB◆M◆RB◆ = 3x^2y + 2xy^2$, $\tilde◆LB◆N◆RB◆ = x^3 + 2x^2y$.
+$\tilde◆LB◆M◆RB◆ = 3x^2y + 2xy^2$$\tilde◆LB◆N◆RB◆ = x^3 + 2x^2y$.
 
 $\tilde◆LB◆M◆RB◆_y = 3x^2 + 4xy = \tilde◆LB◆N◆RB◆_x$. Now exact.
 
@@ -425,19 +425,19 @@ $y_h = e^◆LB◆\alpha x◆RB◆(c_1 \cos(\beta x) + c_2 \sin(\beta x))$.
 
 ### 3.3 Worked Example: Homogeneous Equation
 
-**Problem.** Solve $y'' - 5y' + 6y = 0$ with $y(0) = 1$, $y'(0) = 0$.
+**Problem.** Solve $y'' - 5y' + 6y = 0$ with $y(0) = 1$$y'(0) = 0$.
 
 _Solution._ Characteristic equation: $r^2 - 5r + 6 = (r-2)(r-3) = 0$. Roots: $r = 2, 3$.
 
 $y_h = c_1 e^◆LB◆2x◆RB◆ + c_2 e^◆LB◆3x◆RB◆$.
 
-$y(0) = c_1 + c_2 = 1$. $y'(0) = 2c_1 + 3c_2 = 0$. Solving: $c_1 = 3$, $c_2 = -2$.
+$y(0) = c_1 + c_2 = 1$. $y'(0) = 2c_1 + 3c_2 = 0$. Solving: $c_1 = 3$$c_2 = -2$.
 
 $y = 3e^◆LB◆2x◆RB◆ - 2e^◆LB◆3x◆RB◆$. $\blacksquare$
 
 ### 3.4 Worked Example: Complex Roots
 
-**Problem.** Solve $y'' + 2y' + 5y = 0$ with $y(0) = 1$, $y'(0) = 0$.
+**Problem.** Solve $y'' + 2y' + 5y = 0$ with $y(0) = 1$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -446,7 +446,7 @@ _Solution._ Characteristic equation: $r^2 + 2r + 5 = 0$.
 
 $r = \frac◆LB◆-2 \pm \sqrt◆LB◆4 - 20◆RB◆◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆-2 \pm \sqrt◆LB◆-16◆RB◆◆RB◆◆LB◆2◆RB◆ = -1 \pm 2i$.
 
-So $\alpha = -1$, $\beta = 2$.
+So $\alpha = -1$$\beta = 2$.
 
 $y = e^◆LB◆-x◆RB◆(c_1 \cos(2x) + c_2 \sin(2x))$.
 
@@ -462,7 +462,7 @@ $y = e^◆LB◆-x◆RB◆\left(\cos(2x) + \frac◆LB◆1◆RB◆◆LB◆2◆RB�
 
 ### 3.5 Worked Example: Repeated Roots
 
-**Problem.** Solve $y'' - 4y' + 4y = 0$ with $y(0) = 1$, $y'(0) = 3$.
+**Problem.** Solve $y'' - 4y' + 4y = 0$ with $y(0) = 1$$y'(0) = 3$.
 
 <details>
 <summary>Solution</summary>
@@ -519,7 +519,7 @@ _Solution._ Homogeneous: $r^2 + 3r + 2 = (r+1)(r+2) = 0$Roots $-1, -2$.
 
 $y_h = c_1 e^◆LB◆-x◆RB◆ + c_2 e^◆LB◆-2x◆RB◆$.
 
-Guess $y_p = Ax^2 + Bx + C$. Then $y_p' = 2Ax + B$, $y_p'' = 2A$.
+Guess $y_p = Ax^2 + Bx + C$. Then $y_p' = 2Ax + B$$y_p'' = 2A$.
 
 Substituting: $2A + 3(2Ax + B) + 2(Ax^2 + Bx + C) = x^2 + 1$.
 
@@ -562,7 +562,7 @@ $= e^◆LB◆-x◆RB◆[(-2A + 2A - 2B + B)\cos x + (2B - 2A - 2B + A)\sin x]$
 
 $= e^◆LB◆-x◆RB◆[(-B)\cos x + (-A)\sin x]$.
 
-Setting equal to $3e^◆LB◆-x◆RB◆\sin x$: $-B = 0$ and $-A = 3$So $A = -3$, $B = 0$.
+Setting equal to $3e^◆LB◆-x◆RB◆\sin x$: $-B = 0$ and $-A = 3$So $A = -3$$B = 0$.
 
 $y = c_1 e^◆LB◆-x◆RB◆ + c_2 xe^◆LB◆-x◆RB◆ - 3e^◆LB◆-x◆RB◆\sin x$. $\blacksquare$
 
@@ -588,14 +588,14 @@ $$y_p = \frac◆LB◆F_0◆RB◆◆LB◆2\omega_0◆RB◆ t \sin(\omega_0 t)$$
 The amplitude grows linearly with $t$ --- this is **resonance**. Physically, the system absorbs
 energy From the periodic forcing at its natural frequency, causing unbounded oscillations.
 
-**Worked Example.** Solve $y'' + 9y = 6\cos(3t)$, $y(0) = 0$, $y'(0) = 0$.
+**Worked Example.** Solve $y'' + 9y = 6\cos(3t)$$y(0) = 0$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ $\omega_0 = 3$, $\omega = 3$So this is the resonant case.
+_Solution._ $\omega_0 = 3$$\omega = 3$So this is the resonant case.
 
-Homogeneous: $r^2 + 9 = 0$, $r = \pm 3i$. $y_h = c_1 \cos(3t) + c_2 \sin(3t)$.
+Homogeneous: $r^2 + 9 = 0$$r = \pm 3i$. $y_h = c_1 \cos(3t) + c_2 \sin(3t)$.
 
 $y_p = \frac◆LB◆6◆RB◆◆LB◆2 \cdot 3◆RB◆ t\sin(3t) = t\sin(3t)$.
 
@@ -631,7 +631,7 @@ With $u_1'y_1 + u_2'y_2 = 0$Solving gives the formulas above. $\blacksquare$
 
 **Problem.** Solve $y'' + y = \tan x$ using variation of parameters.
 
-_Solution._ $y_1 = \cos x$, $y_2 = \sin x$. $W = \cos x \cdot \cos x - \sin x \cdot (-\sin x) = 1$.
+_Solution._ $y_1 = \cos x$$y_2 = \sin x$. $W = \cos x \cdot \cos x - \sin x \cdot (-\sin x) = 1$.
 
 $u_1' = -\frac◆LB◆y_2 g◆RB◆◆LB◆W◆RB◆ = -\sin x \tan x = -\frac◆LB◆\sin^2 x◆RB◆◆LB◆\cos x◆RB◆ = -(1 - \cos^2 x)/\cos x = -\sec x + \cos x$.
 
@@ -722,7 +722,7 @@ $y = c_1 x^2 + c_2 x^2 \ln x$. $\blacksquare$
 
 _Solution._ $r(r-1) + r + 1 = r^2 + 1 = 0$. Roots $r = \pm i$.
 
-Here $\alpha = 0$, $\beta = 1$.
+Here $\alpha = 0$$\beta = 1$.
 
 $y = c_1 \cos(\ln x) + c_2 \sin(\ln x)$. $\blacksquare$
 
@@ -744,7 +744,7 @@ $F(t)$Satisfies
 
 $$mx'' + cx' + kx = F(t)$$
 
-Dividing by $m$ and setting $\omega_0 = \sqrt◆LB◆k/m◆RB◆$, $\gamma = c/(2m)$:
+Dividing by $m$ and setting $\omega_0 = \sqrt◆LB◆k/m◆RB◆$$\gamma = c/(2m)$:
 
 $$x'' + 2\gamma x' + \omega_0^2 x = \frac◆LB◆F(t)◆RB◆◆LB◆m◆RB◆$$
 
@@ -752,9 +752,9 @@ The homogeneous solution depends on the discriminant $\gamma^2 - \omega_0^2$:
 
 | Condition                 | Type        | Homogeneous Solution                                                                                  |
 | ------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
-| $\gamma^2 \lt \omega_0^2$ | Underdamped | $e^◆LB◆-\gamma t◆RB◆(c_1 \cos(\omega_d t) + c_2 \sin(\omega_d t))$, $\omega_d = \sqrt◆LB◆\omega_0^2 - \gamma^2◆RB◆$ |
+| $\gamma^2 \lt \omega_0^2$ | Underdamped | $e^◆LB◆-\gamma t◆RB◆(c_1 \cos(\omega_d t) + c_2 \sin(\omega_d t))$$\omega_d = \sqrt◆LB◆\omega_0^2 - \gamma^2◆RB◆$ |
 | $\gamma^2 = \omega_0^2$   | Critical    | $e^◆LB◆-\gamma t◆RB◆(c_1 + c_2 t)$                                                                          |
-| $\gamma^2 > \omega_0^2$   | Overdamped  | $c_1 e^◆LB◆r_1 t◆RB◆ + c_2 e^◆LB◆r_2 t◆RB◆$, $r_◆LB◆1,2◆RB◆ = -\gamma \pm \sqrt◆LB◆\gamma^2 - \omega_0^2◆RB◆$                   |
+| $\gamma^2 > \omega_0^2$   | Overdamped  | $c_1 e^◆LB◆r_1 t◆RB◆ + c_2 e^◆LB◆r_2 t◆RB◆$$r_◆LB◆1,2◆RB◆ = -\gamma \pm \sqrt◆LB◆\gamma^2 - \omega_0^2◆RB◆$                   |
 
 ### 3.17 Common Pitfalls for Second-Order ODEs
 
@@ -798,7 +798,7 @@ _Corollary._ $W(x)$ is either identically zero or never zero.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Homogeneous: $r^2 - 4 = 0$, $r = \pm 2$. $y_1 = e^◆LB◆2x◆RB◆$, $y_2 = e^◆LB◆-2x◆RB◆$.
+_Solution._ Homogeneous: $r^2 - 4 = 0$$r = \pm 2$. $y_1 = e^◆LB◆2x◆RB◆$$y_2 = e^◆LB◆-2x◆RB◆$.
 
 $W = e^◆LB◆2x◆RB◆(-2e^◆LB◆-2x◆RB◆) - e^◆LB◆-2x◆RB◆(2e^◆LB◆2x◆RB◆) = -4$.
 
@@ -864,7 +864,7 @@ $e^◆LB◆Dt◆RB◆ = \mathrm◆LB◆diag(e^◆LB◆\lambda_1 t◆RB◆, \ldot
 
 _Solution._ Characteristic equation:
 $\det(A - \lambda I) = \lambda^2 + 3\lambda + 2 = (\lambda + 1)(\lambda + 2) = 0$. Eigenvalues:
-$\lambda_1 = -1$, $\lambda_2 = -2$.
+$\lambda_1 = -1$$\lambda_2 = -2$.
 
 For $\lambda_1 = -1$:
 $(A + I)\mathbf◆LB◆v◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 & 1 \\ -2 & -2 \end◆LB◆pmatrix◆RB◆\mathbf◆LB◆v◆RB◆ = \mathbf◆LB◆0◆RB◆$.
@@ -895,7 +895,7 @@ With $v_1 = 2$:
 $\mathbf◆LB◆v◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 2 \\ 0 \end◆LB◆pmatrix◆RB◆ + i\begin◆LB◆pmatrix◆RB◆ 0 \\ -\sqrt◆LB◆2◆RB◆ \end◆LB◆pmatrix◆RB◆$.
 
 So
-$\mathbf◆LB◆a◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 2 \\ 0 \end◆LB◆pmatrix◆RB◆$, $\mathbf◆LB◆b◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 0 \\ -\sqrt◆LB◆2◆RB◆ \end◆LB◆pmatrix◆RB◆$.
+$\mathbf◆LB◆a◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 2 \\ 0 \end◆LB◆pmatrix◆RB◆$$\mathbf◆LB◆b◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 0 \\ -\sqrt◆LB◆2◆RB◆ \end◆LB◆pmatrix◆RB◆$.
 
 $\mathbf◆LB◆x◆RB◆(t) = c_1\left[\mathbf◆LB◆a◆RB◆\cos(\sqrt◆LB◆2◆RB◆\, t) - \mathbf◆LB◆b◆RB◆\sin(\sqrt◆LB◆2◆RB◆\, t)\right] + c_2\left[\mathbf◆LB◆a◆RB◆\sin(\sqrt◆LB◆2◆RB◆\, t) + \mathbf◆LB◆b◆RB◆\cos(\sqrt◆LB◆2◆RB◆\, t)\right]$
 
@@ -975,8 +975,8 @@ Behaviour near the origin is determined by the eigenvalues:
 | $\lambda_1, \lambda_2 \lt 0$Real, distinct  | Stable node     | Asymptotically stable |
 | $\lambda_1, \lambda_2 > 0$Real, distinct    | Unstable node   | Unstable              |
 | $\lambda_1 \lt 0 \lt \lambda_2$             | Saddle point    | Unstable              |
-| $\lambda = \alpha \pm i\beta$, $\alpha \lt 0$ | Stable spiral   | Asymptotically stable |
-| $\lambda = \alpha \pm i\beta$, $\alpha > 0$   | Unstable spiral | Unstable              |
+| $\lambda = \alpha \pm i\beta$$\alpha \lt 0$ | Stable spiral   | Asymptotically stable |
+| $\lambda = \alpha \pm i\beta$$\alpha > 0$   | Unstable spiral | Unstable              |
 | $\lambda = \pm i\beta$                      | Center          | (Marginally) stable   |
 
 _Remark._ The **trace-determinant plane** provides a convenient classification. Let
@@ -1060,7 +1060,7 @@ _Proof of First Shifting Theorem._
 $\mathcal◆LB◆L◆RB◆\{e^◆LB◆at◆RB◆f(t)\} = \int_0^◆LB◆\infty◆RB◆ e^◆LB◆-st◆RB◆ e^◆LB◆at◆RB◆ f(t)\, dt = \int_0^◆LB◆\infty◆RB◆ e^◆LB◆-(s-a)t◆RB◆ f(t)\, dt = F(s - a)$.
 $\blacksquare$
 
-_Proof of Derivative Property._ Integrating by parts with $u = e^◆LB◆-st◆RB◆$, $dv = f'(t)\, dt$:
+_Proof of Derivative Property._ Integrating by parts with $u = e^◆LB◆-st◆RB◆$$dv = f'(t)\, dt$:
 
 $\mathcal◆LB◆L◆RB◆\{f'(t)\} = \left[e^◆LB◆-st◆RB◆f(t)\right]_0^◆LB◆\infty◆RB◆ + s\int_0^◆LB◆\infty◆RB◆ e^◆LB◆-st◆RB◆f(t)\, dt = -f(0) + sF(s) = sF(s) - f(0)$.
 
@@ -1096,7 +1096,7 @@ Therefore $\mathcal◆LB◆L◆RB◆\{g(t)\} = F(s)/s$. $\blacksquare$
 
 ### 5.6 Worked Example: Solving an IVP
 
-**Problem.** Solve $y'' + 4y = \sin(2t)$, $y(0) = 0$, $y'(0) = 0$.
+**Problem.** Solve $y'' + 4y = \sin(2t)$$y(0) = 0$$y'(0) = 0$.
 
 _Solution._ Taking Laplace transforms:
 
@@ -1131,7 +1131,7 @@ _Solution._ Partial fractions: $\frac◆LB◆1◆RB◆◆LB◆s(s^2 + 4)◆RB◆
 
 $1 = A(s^2 + 4) + (Bs + C)s = (A + B)s^2 + Cs + 4A$.
 
-$s^2$: $A + B = 0$, $s$: $C = 0$Constant: $4A = 1 \implies A = 1/4$, $B = -1/4$.
+$s^2$: $A + B = 0$$s$: $C = 0$Constant: $4A = 1 \implies A = 1/4$$B = -1/4$.
 
 $\frac◆LB◆1◆RB◆◆LB◆s(s^2 + 4)◆RB◆ = \frac◆LB◆1/4◆RB◆◆LB◆s◆RB◆ - \frac◆LB◆s/4◆RB◆◆LB◆s^2 + 4◆RB◆$.
 
@@ -1151,7 +1151,7 @@ $F(s)G(s) = \int_0^◆LB◆\infty◆RB◆ e^◆LB◆-s\tau◆RB◆ f(\tau)\, d\t
 
 $= \int_0^◆LB◆\infty◆RB◆ \int_0^◆LB◆\infty◆RB◆ e^◆LB◆-s(\tau+u)◆RB◆ f(\tau) g(u)\, du\, d\tau$
 
-Substitute $t = \tau + u$, $u = t - \tau$. For fixed $\tau$, $u$ ranges from $0$ to $\infty$So $t$
+Substitute $t = \tau + u$$u = t - \tau$. For fixed $\tau$$u$ ranges from $0$ to $\infty$So $t$
 ranges From $\tau$ to $\infty$.
 
 $= \int_0^◆LB◆\infty◆RB◆ f(\tau)\left[\int_◆LB◆\tau◆RB◆^◆LB◆\infty◆RB◆ e^◆LB◆-st◆RB◆ g(t - \tau)\, dt\right] d\tau$
@@ -1185,7 +1185,7 @@ $\blacksquare$
 
 ### 5.9 Worked Example: IVP with Discontinuous Forcing
 
-**Problem.** Solve $y'' + 3y' + 2y = u_2(t)$, $y(0) = 0$, $y'(0) = 0$.
+**Problem.** Solve $y'' + 3y' + 2y = u_2(t)$$y(0) = 0$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1246,8 +1246,8 @@ $\mathcal◆LB◆L◆RB◆\{\delta(t - c)\} = e^◆LB◆-cs◆RB◆$.
 
 ### 5.12 Worked Example: Impulse Response
 
-**Problem.** An undamped spring-mass system ($m = 1$, $k = 4$) is struck by an impulse at $t = 0$:
-$y'' + 4y = \delta(t)$, $y(0) = 0$, $y'(0) = 0$. Find $y(t)$.
+**Problem.** An undamped spring-mass system ($m = 1$$k = 4$) is struck by an impulse at $t = 0$:
+$y'' + 4y = \delta(t)$$y(0) = 0$$y'(0) = 0$. Find $y(t)$.
 
 <details>
 <summary>Solution</summary>
@@ -1266,7 +1266,7 @@ This is the **impulse response** (Green's function) for the operator $D^2 + 4$. 
 
 ### 5.13 Worked Example: IVP with Laplace
 
-**Problem.** Solve $y'' - 6y' + 9y = 6e^◆LB◆3t◆RB◆$, $y(0) = 0$, $y'(0) = 0$.
+**Problem.** Solve $y'' - 6y' + 9y = 6e^◆LB◆3t◆RB◆$$y(0) = 0$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1297,7 +1297,7 @@ the step. :::
 ### 5.15 Proof Sketch: Picard Iteration
 
 The Picard-Lindelöf theorem can be proved constructively via **Picard iteration**. For the IVP
-$y' = f(x, y)$, $y(x_0) = y_0$Define the sequence
+$y' = f(x, y)$$y(x_0) = y_0$Define the sequence
 
 $$\phi_0(x) = y_0, \quad \phi_◆LB◆n+1◆RB◆(x) = y_0 + \int_◆LB◆x_0◆RB◆^x f(t, \phi_n(t))\, dt$$
 
@@ -1361,7 +1361,7 @@ $y = c_1 e^x + c_2 e^◆LB◆2x◆RB◆ + c_3 e^◆LB◆3x◆RB◆$. $\blacksqua
 _Solution._ Since $p(x) = 0$ and $q(x) = -x$ are both analytic everywhere, $x_0 = 0$ is an ordinary
 Point. Substitute $y = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ a_n x^n$:
 
-$y' = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ na_n x^◆LB◆n-1◆RB◆$, $y'' = \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ n(n-1)a_n x^◆LB◆n-2◆RB◆$.
+$y' = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ na_n x^◆LB◆n-1◆RB◆$$y'' = \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ n(n-1)a_n x^◆LB◆n-2◆RB◆$.
 
 $y'' - xy = \sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ n(n-1)a_n x^◆LB◆n-2◆RB◆ - \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ a_n x^◆LB◆n+1◆RB◆ = 0$.
 
@@ -1372,7 +1372,7 @@ For $m = 0$: $2 \cdot 1 \cdot a_2 = 0 \implies a_2 = 0$.
 
 For $m \geq 1$: $(m+2)(m+1)a_◆LB◆m+2◆RB◆ - a_◆LB◆m-1◆RB◆ = 0 \implies a_◆LB◆m+2◆RB◆ = \frac◆LB◆a_◆LB◆m-1◆RB◆◆RB◆◆LB◆(m+2)(m+1)◆RB◆$.
 
-This gives: $a_3 = \frac◆LB◆a_0◆RB◆◆LB◆6◆RB◆$, $a_4 = \frac◆LB◆a_1◆RB◆◆LB◆12◆RB◆$, $a_5 = \frac◆LB◆a_2◆RB◆◆LB◆20◆RB◆ = 0$
+This gives: $a_3 = \frac◆LB◆a_0◆RB◆◆LB◆6◆RB◆$$a_4 = \frac◆LB◆a_1◆RB◆◆LB◆12◆RB◆$$a_5 = \frac◆LB◆a_2◆RB◆◆LB◆20◆RB◆ = 0$
 $a_6 = \frac◆LB◆a_3◆RB◆◆LB◆30◆RB◆ = \frac◆LB◆a_0◆RB◆◆LB◆180◆RB◆$Etc.
 
 Since $a_2 = 0$All $a_◆LB◆3k+2◆RB◆ = 0$.
@@ -1395,7 +1395,7 @@ _Solution._ Rewrite in standard form: $y'' + \frac◆LB◆1◆RB◆◆LB◆2x◆
 
 $x = 0$ is a regular singular point since $xp(x) = 1/2$ and $x^2 q(x) = x^2/2$ are analytic at $0$.
 
-Substitute $y = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ a_n x^◆LB◆n+r◆RB◆$, $a_0 \neq 0$:
+Substitute $y = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ a_n x^◆LB◆n+r◆RB◆$$a_0 \neq 0$:
 
 $y' = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ (n+r)a_n x^◆LB◆n+r-1◆RB◆$
 
@@ -1437,7 +1437,7 @@ _Solution._ Here $\nu = 0$. The indicial equation gives $r^2 = 0$ (repeated root
 
 Substituting $y = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ a_n x^◆LB◆2n◆RB◆$ (we can show only even powers appear):
 
-$y' = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ 2n a_n x^◆LB◆2n-1◆RB◆$, $y'' = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ 2n(2n-1) a_n x^◆LB◆2n-2◆RB◆$.
+$y' = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ 2n a_n x^◆LB◆2n-1◆RB◆$$y'' = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ 2n(2n-1) a_n x^◆LB◆2n-2◆RB◆$.
 
 $x^2 y'' + xy' + x^2 y = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ 2n(2n-1)a_n x^◆LB◆2n◆RB◆ + \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ 2n a_n x^◆LB◆2n◆RB◆ + \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ a_n x^◆LB◆2n+2◆RB◆ = 0$.
 
@@ -1445,7 +1445,7 @@ For $n = 0$: $a_0$ is free.
 
 For the recurrence: $4n^2 a_n + a_◆LB◆n-1◆RB◆ = 0 \implies a_n = -\frac◆LB◆a_◆LB◆n-1◆RB◆◆RB◆◆LB◆4n^2◆RB◆$ for $n \geq 1$.
 
-$a_1 = -\frac◆LB◆a_0◆RB◆◆LB◆4◆RB◆$, $a_2 = \frac◆LB◆a_0◆RB◆◆LB◆64◆RB◆$, $a_3 = -\frac◆LB◆a_0◆RB◆◆LB◆2304◆RB◆$.
+$a_1 = -\frac◆LB◆a_0◆RB◆◆LB◆4◆RB◆$$a_2 = \frac◆LB◆a_0◆RB◆◆LB◆64◆RB◆$$a_3 = -\frac◆LB◆a_0◆RB◆◆LB◆2304◆RB◆$.
 
 Setting $a_0 = 1$: $J_0(x) = 1 - \frac◆LB◆x^2◆RB◆◆LB◆4◆RB◆ + \frac◆LB◆x^4◆RB◆◆LB◆64◆RB◆ - \frac◆LB◆x^6◆RB◆◆LB◆2304◆RB◆ + \cdots$.
 $\blacksquare$
@@ -1510,7 +1510,7 @@ _Solution._ $f$ is odd, so $a_n = 0$ for all $n$.
 
 $b_n = \frac◆LB◆1◆RB◆◆LB◆\pi◆RB◆\int_◆LB◆-\pi◆RB◆^◆LB◆\pi◆RB◆ x\sin(nx)\, dx = \frac◆LB◆2◆RB◆◆LB◆\pi◆RB◆\int_0^◆LB◆\pi◆RB◆ x\sin(nx)\, dx$.
 
-Integration by parts: $u = x$, $dv = \sin(nx)\, dx$:
+Integration by parts: $u = x$$dv = \sin(nx)\, dx$:
 
 $b_n = \frac◆LB◆2◆RB◆◆LB◆\pi◆RB◆\left[-\frac◆LB◆x\cos(nx)◆RB◆◆LB◆n◆RB◆\Big|_0^◆LB◆\pi◆RB◆ + \int_0^◆LB◆\pi◆RB◆ \frac◆LB◆\cos(nx)◆RB◆◆LB◆n◆RB◆\, dx\right] = \frac◆LB◆2◆RB◆◆LB◆\pi◆RB◆\left[-\frac◆LB◆\pi\cos(n\pi)◆RB◆◆LB◆n◆RB◆ + 0\right] = \frac◆LB◆-2\cos(n\pi)◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆2(-1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆n◆RB◆$.
 
@@ -1531,7 +1531,7 @@ For $n \geq 1$: $a_n = \frac◆LB◆2◆RB◆◆LB◆\pi◆RB◆\int_0^◆LB◆\
 
 Integrating by parts twice:
 
-$u = x^2$, $dv = \cos(nx)\, dx$: $du = 2x\, dx$, $v = \sin(nx)/n$.
+$u = x^2$$dv = \cos(nx)\, dx$: $du = 2x\, dx$$v = \sin(nx)/n$.
 
 $a_n = \frac◆LB◆2◆RB◆◆LB◆\pi◆RB◆\left[\frac◆LB◆x^2\sin(nx)◆RB◆◆LB◆n◆RB◆\Big|_0^◆LB◆\pi◆RB◆ - \int_0^◆LB◆\pi◆RB◆ \frac◆LB◆2x\sin(nx)◆RB◆◆LB◆n◆RB◆\, dx\right] = -\frac◆LB◆4◆RB◆◆LB◆n\pi◆RB◆\int_0^◆LB◆\pi◆RB◆ x\sin(nx)\, dx$
 
@@ -1554,7 +1554,7 @@ $$f(x) \sim \sum_◆LB◆n=-\infty◆RB◆^◆LB◆\infty◆RB◆ c_n e^◆LB◆
 
 Where $c_n = \frac◆LB◆1◆RB◆◆LB◆2\pi◆RB◆\int_◆LB◆-\pi◆RB◆^◆LB◆\pi◆RB◆ f(x)e^◆LB◆-inx◆RB◆\, dx$.
 
-The relationship with the real coefficients is $c_0 = a_0/2$, $c_n = (a_n - ib_n)/2$ for $n > 0$ And
+The relationship with the real coefficients is $c_0 = a_0/2$$c_n = (a_n - ib_n)/2$ for $n > 0$ And
 $c_◆LB◆-n◆RB◆ = \overline◆LB◆c_n◆RB◆$ when $f$ is real-valued.
 
 ### 7.9 Worked Example: Parseval's Identity
@@ -1565,7 +1565,7 @@ deduce $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆�
 <details>
 <summary>Solution</summary>
 
-_Solution._ From Section 7.6: $a_0 = 0$, $a_n = 0$, $b_n = \frac◆LB◆2(-1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆n◆RB◆$.
+_Solution._ From Section 7.6: $a_0 = 0$$a_n = 0$$b_n = \frac◆LB◆2(-1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆n◆RB◆$.
 
 Parseval:
 $\frac◆LB◆1◆RB◆◆LB◆\pi◆RB◆\int_◆LB◆-\pi◆RB◆^◆LB◆\pi◆RB◆ x^2\, dx = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ b_n^2 = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆4◆RB◆◆LB◆n^2◆RB◆$.
@@ -1637,12 +1637,12 @@ $f$).
 
 ### 8.5 Worked Example: Heat Equation
 
-**Problem.** Solve $u_t = u_◆LB◆xx◆RB◆$ for $0 \lt x \lt \pi$, $t > 0$With $u(0, t) = u(\pi, t) = 0$ And
+**Problem.** Solve $u_t = u_◆LB◆xx◆RB◆$ for $0 \lt x \lt \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$ And
 $u(x, 0) = \sin(2x) + 3\sin(5x)$.
 
 _Solution._ Here $\alpha = 1$ and $L = \pi$. The initial condition is already a sine series.
 
-$\lambda_n = n^2$, $X_n = \sin(nx)$, $T_n = e^◆LB◆-n^2 t◆RB◆$.
+$\lambda_n = n^2$$X_n = \sin(nx)$$T_n = e^◆LB◆-n^2 t◆RB◆$.
 
 $u(x, t) = e^◆LB◆-4t◆RB◆\sin(2x) + 3e^◆LB◆-25t◆RB◆\sin(5x)$. $\blacksquare$
 
@@ -1727,7 +1727,7 @@ $\blacksquare$
 
 ### 8.12 Worked Example: Laplace's Equation on a Rectangle
 
-**Problem.** Solve $u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = 0$ on $0 \lt x \lt \pi$, $0 \lt y \lt 1$ with
+**Problem.** Solve $u_◆LB◆xx◆RB◆ + u_◆LB◆yy◆RB◆ = 0$ on $0 \lt x \lt \pi$$0 \lt y \lt 1$ with
 $u(0, y) = u(\pi, y) = u(x, 1) = 0$ and $u(x, 0) = f(x) = x(\pi - x)$.
 
 <details>
@@ -1737,9 +1737,9 @@ _Solution._ Separate variables: $u(x, y) = X(x)Y(y)$.
 
 $X''/X = -Y''/Y = -\lambda$.
 
-$X'' + \lambda X = 0$, $X(0) = X(\pi) = 0$: $\lambda_n = n^2$, $X_n = \sin(nx)$.
+$X'' + \lambda X = 0$$X(0) = X(\pi) = 0$: $\lambda_n = n^2$$X_n = \sin(nx)$.
 
-$Y'' - n^2 Y = 0$, $Y(1) = 0$: $Y_n = \sinh(n(1 - y))$.
+$Y'' - n^2 Y = 0$$Y(1) = 0$: $Y_n = \sinh(n(1 - y))$.
 
 $u(x, y) = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ b_n \sin(nx)\sinh(n(1-y))$.
 
@@ -1770,7 +1770,7 @@ On $[a, b]$ with homogeneous boundary conditions, where $p, w > 0$ and $p, p', q
 
 _Remark._ The boundary value problems encountered in the heat and wave equations
 ($X'' + \lambda X = 0$ with $X(0) = X(L) = 0$) are special cases of Sturm-Liouville problems With
-$p = 1$, $q = 0$, $w = 1$.
+$p = 1$$q = 0$$w = 1$.
 
 ### 8.14 Neumann Boundary Conditions
 
@@ -1794,7 +1794,7 @@ the initial temperature. Physically, an insulated rod reaches a uniform steady-s
 
 ### 8.15 Worked Example: Heat Equation with Non-Trivial Initial Data
 
-**Problem.** Solve $u_t = u_◆LB◆xx◆RB◆$ for $0 \lt x \lt \pi$, $t > 0$With $u(0, t) = u(\pi, t) = 0$ And
+**Problem.** Solve $u_t = u_◆LB◆xx◆RB◆$ for $0 \lt x \lt \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$ And
 $u(x, 0) = x(\pi - x)$.
 
 <details>
@@ -1859,13 +1859,13 @@ It is **asymptotically stable** if it is stable and $\mathbf◆LB◆x◆RB◆(t)
 $t \to \infty$.
 
 **Theorem 9.1 (Lyapunov).** If there exists a continuously differentiable function $V$ (a **Lyapunov
-Function**) such that $V(\mathbf◆LB◆x◆RB◆^*) = 0$, $V(\mathbf◆LB◆x◆RB◆) > 0$ for $\mathbf◆LB◆x◆RB◆ \neq \mathbf◆LB◆x◆RB◆^*$
+Function**) such that $V(\mathbf◆LB◆x◆RB◆^*) = 0$$V(\mathbf◆LB◆x◆RB◆) > 0$ for $\mathbf◆LB◆x◆RB◆ \neq \mathbf◆LB◆x◆RB◆^*$
 And $\dot◆LB◆V◆RB◆ \leq 0$ in a neighbourhood of $\mathbf◆LB◆x◆RB◆^*$Then $\mathbf◆LB◆x◆RB◆^*$ is stable. If
 $\dot◆LB◆V◆RB◆ \lt 0$ for $\mathbf◆LB◆x◆RB◆ \neq \mathbf◆LB◆x◆RB◆^*$Then $\mathbf◆LB◆x◆RB◆^*$ is asymptotically stable.
 
 ### 9.4 Worked Example: Linearization
 
-**Problem.** Find and classify the critical points of $x' = x - y$, $y' = x^2 + y^2 - 1$.
+**Problem.** Find and classify the critical points of $x' = x - y$$y' = x^2 + y^2 - 1$.
 
 <details>
 <summary>Solution</summary>
@@ -1882,7 +1882,7 @@ The Jacobian is $J = \begin◆LB◆pmatrix◆RB◆ 1 & -1 \\ 2x & 2y \end◆LB�
 
 At $(1/\sqrt◆LB◆2◆RB◆, 1/\sqrt◆LB◆2◆RB◆)$: $J = \begin◆LB◆pmatrix◆RB◆ 1 & -1 \\ \sqrt◆LB◆2◆RB◆ & \sqrt◆LB◆2◆RB◆ \end◆LB◆pmatrix◆RB◆$.
 
-$\mathrm◆LB◆tr(J) = 1 + \sqrt◆LB◆2◆RB◆ > 0$, $\det(J) = \sqrt◆LB◆2◆RB◆ + \sqrt◆LB◆2◆RB◆ = 2\sqrt◆LB◆2◆RB◆ > 0$.
+$\mathrm◆LB◆tr(J) = 1 + \sqrt◆LB◆2◆RB◆ > 0$$\det(J) = \sqrt◆LB◆2◆RB◆ + \sqrt◆LB◆2◆RB◆ = 2\sqrt◆LB◆2◆RB◆ > 0$.
 
 $\tau^2 - 4\Delta = (1 + \sqrt◆LB◆2◆RB◆)^2 - 8\sqrt◆LB◆2◆RB◆ = 3 + 2\sqrt◆LB◆2◆RB◆ - 8\sqrt◆LB◆2◆RB◆ = 3 - 6\sqrt◆LB◆2◆RB◆ \lt 0$.
 
@@ -1891,7 +1891,7 @@ Complex eigenvalues with positive real part: **unstable spiral**.
 At $(-1/\sqrt◆LB◆2◆RB◆, -1/\sqrt◆LB◆2◆RB◆)$:
 $J = \begin◆LB◆pmatrix◆RB◆ 1 & -1 \\ -\sqrt◆LB◆2◆RB◆ & -\sqrt◆LB◆2◆RB◆ \end◆LB◆pmatrix◆RB◆$.
 
-$\mathrm◆LB◆tr(J) = 1 - \sqrt◆LB◆2◆RB◆ \lt 0$, $\det(J) = -\sqrt◆LB◆2◆RB◆ + \sqrt◆LB◆2◆RB◆ = 0$.
+$\mathrm◆LB◆tr(J) = 1 - \sqrt◆LB◆2◆RB◆ \lt 0$$\det(J) = -\sqrt◆LB◆2◆RB◆ + \sqrt◆LB◆2◆RB◆ = 0$.
 
 Wait, $\det(J) = (1)(-\sqrt◆LB◆2◆RB◆) - (-1)(-\sqrt◆LB◆2◆RB◆) = -\sqrt◆LB◆2◆RB◆ - \sqrt◆LB◆2◆RB◆ = -2\sqrt◆LB◆2◆RB◆ \lt 0$.
 
@@ -1934,7 +1934,7 @@ Nonlinear resistance and arises in biology (cardiac rhythms, neuron firing).
 
 ### 9.7 Worked Example: Lotka-Volterra Analysis
 
-**Problem.** Analyze the stability of the Lotka-Volterra system $x' = x(2 - y)$, $y' = y(x - 1)$.
+**Problem.** Analyze the stability of the Lotka-Volterra system $x' = x(2 - y)$$y' = y(x - 1)$.
 
 <details>
 <summary>Solution</summary>
@@ -1947,7 +1947,7 @@ At $(0, 0)$: $J = \begin◆LB◆pmatrix◆RB◆ 2 & 0 \\ 0 & -1 \end◆LB◆pmat
 point** (unstable).
 
 At $(1, 2)$: $J = \begin◆LB◆pmatrix◆RB◆ 0 & -1 \\ 2 & 0 \end◆LB◆pmatrix◆RB◆$.
-$\det(J) = 2 > 0$, $\mathrm◆LB◆tr(J) = 0$. Eigenvalues $\pm i\sqrt◆LB◆2◆RB◆$: **center**.
+$\det(J) = 2 > 0$$\mathrm◆LB◆tr(J) = 0$. Eigenvalues $\pm i\sqrt◆LB◆2◆RB◆$: **center**.
 
 _Remark._ For the linearized system, the center is (marginally) stable. However, for the Nonlinear
 Lotka-Volterra system, the trajectories are actually closed orbits surrounding $(1, 2)$. This can be
@@ -1963,7 +1963,7 @@ The competing species model is:
 $$x' = x(r_1 - a_◆LB◆11◆RB◆x - a_◆LB◆12◆RB◆y), \quad y' = y(r_2 - a_◆LB◆21◆RB◆x - a_◆LB◆22◆RB◆y)$$
 
 Where $r_i > 0$ are growth rates and $a_◆LB◆ij◆RB◆ > 0$ are competition coefficients. The four critical
-Points are $(0, 0)$, $(r_1/a_◆LB◆11◆RB◆, 0)$, $(0, r_2/a_◆LB◆22◆RB◆)$And the coexistence point $(x^*, y^*)$ where
+Points are $(0, 0)$$(r_1/a_◆LB◆11◆RB◆, 0)$$(0, r_2/a_◆LB◆22◆RB◆)$And the coexistence point $(x^*, y^*)$ where
 both $x'$ and $y'$ vanish.
 
 The stability of the coexistence point determines whether both species survive. If
@@ -2014,7 +2014,7 @@ $W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity. :::
 ### 9.9 Worked Example: Lyapunov Function
 
 **Problem.** Show that $(0, 0)$ is asymptotically stable for the system
-$x' = -x - y^3$, $y' = x^3 - y$.
+$x' = -x - y^3$$y' = x^3 - y$.
 
 <details>
 <summary>Solution</summary>
@@ -2045,12 +2045,12 @@ unique limit cycle.
 <details>
 <summary>Solution</summary>
 
-\_Solution.\* Write as a system: $x' = y$, $y' = -x - \mu(x^2 - 1)y$.
+\_Solution.\* Write as a system: $x' = y$$y' = -x - \mu(x^2 - 1)y$.
 
 The only critical point is $(0, 0)$. The Jacobian at the origin is
 $J = \begin◆LB◆pmatrix◆RB◆ 0 & 1 \\ -1 & \mu \end◆LB◆pmatrix◆RB◆$.
 
-$\mathrm◆LB◆tr(J) = \mu > 0$, $\det(J) = 1 > 0$, $\tau^2 - 4\Delta = \mu^2 - 4$.
+$\mathrm◆LB◆tr(J) = \mu > 0$$\det(J) = 1 > 0$$\tau^2 - 4\Delta = \mu^2 - 4$.
 
 For $0 \lt \mu \lt 2$: complex eigenvalues with positive real part (**unstable spiral**). For
 $\mu \geq 2$: two positive real eigenvalues (**unstable node**).
@@ -2058,7 +2058,7 @@ $\mu \geq 2$: two positive real eigenvalues (**unstable node**).
 The origin is always unstable. To show existence of a limit cycle, we use a **Liénard's theorem** Or
 construct a trapping region. Define
 
-$L(x) = x^3/3 - x$ and write the system as $x' = y$, $y' = -x - \mu L'(x) y$.
+$L(x) = x^3/3 - x$ and write the system as $x' = y$$y' = -x - \mu L'(x) y$.
 
 The function $L(x)$ has zeros at $x = \pm 1$. For $\mu > 0$The damping is negative for
 $\lvert x \rvert \lt 1$ (energy input) and positive for $\lvert x \rvert > 1$ (energy Dissipation).
@@ -2078,7 +2078,7 @@ Classify the ODE $y'' + xy' + e^x y = \cos x$ by order, linearity, and homogenei
 <details>
 <summary>Solution</summary>
 
-_Solution._ Second-order (highest derivative is $y''$), linear ($y$, $y'$, $y''$ appear linearly With
+_Solution._ Second-order (highest derivative is $y''$), linear ($y$$y'$$y''$ appear linearly With
 coefficient functions of $x$ only), nonhomogeneous ($\cos x \neq 0$). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 1.2 (Classification of ODEs).
@@ -2087,7 +2087,7 @@ _If you get this wrong, revise:_ Section 1.2 (Classification of ODEs).
 
 ### Problem 2 (Separable Equation)
 
-Solve $\frac◆LB◆dy◆RB◆◆LB◆dx◆RB◆ = \frac◆LB◆x◆RB◆◆LB◆y◆RB◆$, $y(0) = 2$.
+Solve $\frac◆LB◆dy◆RB◆◆LB◆dx◆RB◆ = \frac◆LB◆x◆RB◆◆LB◆y◆RB◆$$y(0) = 2$.
 
 <details>
 <summary>Solution</summary>
@@ -2103,12 +2103,12 @@ _If you get this wrong, revise:_ Section 2.1 (Separable Equations).
 
 ### Problem 3 (Linear First-Order)
 
-Solve $y' + \frac◆LB◆y◆RB◆◆LB◆x◆RB◆ = x^2$ for $x > 0$, $y(1) = 1$.
+Solve $y' + \frac◆LB◆y◆RB◆◆LB◆x◆RB◆ = x^2$ for $x > 0$$y(1) = 1$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ $P(x) = 1/x$, $Q(x) = x^2$.
+_Solution._ $P(x) = 1/x$$Q(x) = x^2$.
 
 $\mu(x) = e^◆LB◆\int 1/x\, dx◆RB◆ = e^◆LB◆\ln x◆RB◆ = x$.
 
@@ -2129,7 +2129,7 @@ Solve $(2x + y)\, dx + (x + 2y)\, dy = 0$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ $M = 2x + y$, $N = x + 2y$. $M_y = 1 = N_x$. Exact.
+_Solution._ $M = 2x + y$$N = x + 2y$. $M_y = 1 = N_x$. Exact.
 
 $\Psi_x = 2x + y \implies \Psi = x^2 + xy + h(y)$.
 
@@ -2148,7 +2148,7 @@ Solve $y' - y = xy^2$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ This is Bernoulli with $n = 2$, $P(x) = -1$, $Q(x) = x$.
+_Solution._ This is Bernoulli with $n = 2$$P(x) = -1$$Q(x) = x$.
 
 Substitution $v = y^◆LB◆-1◆RB◆$: $v' = -y^◆LB◆-2◆RB◆y'$So $-v' - v = x$I.e., $v' + v = -x$.
 
@@ -2193,7 +2193,7 @@ _If you get this wrong, revise:_ Section 2.10 (Homogeneous Equations).
 
 ### Problem 7 (Complex Roots)
 
-Solve $y'' + 4y' + 13y = 0$, $y(0) = 2$, $y'(0) = -3$.
+Solve $y'' + 4y' + 13y = 0$$y(0) = 2$$y'(0) = -3$.
 
 <details>
 <summary>Solution</summary>
@@ -2218,7 +2218,7 @@ _If you get this wrong, revise:_ Section 3.2 (Homogeneous Equations with Constan
 
 ### Problem 8 (Repeated Roots)
 
-Solve $y'' + 4y' + 4y = 0$, $y(0) = 1$, $y'(0) = 0$.
+Solve $y'' + 4y' + 4y = 0$$y(0) = 1$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -2241,7 +2241,7 @@ _If you get this wrong, revise:_ Section 3.2, Case 2.
 
 ### Problem 9 (Undetermined Coefficients)
 
-Solve $y'' - 2y' - 3y = 3e^◆LB◆2x◆RB◆$, $y(0) = 1$, $y'(0) = 0$.
+Solve $y'' - 2y' - 3y = 3e^◆LB◆2x◆RB◆$$y(0) = 1$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -2250,7 +2250,7 @@ _Solution._ Homogeneous: $r^2 - 2r - 3 = (r - 3)(r + 1) = 0$. Roots: $3, -1$.
 
 $y_h = c_1 e^◆LB◆3x◆RB◆ + c_2 e^◆LB◆-x◆RB◆$.
 
-Guess $y_p = Ae^◆LB◆2x◆RB◆$. $y_p' = 2Ae^◆LB◆2x◆RB◆$, $y_p'' = 4Ae^◆LB◆2x◆RB◆$.
+Guess $y_p = Ae^◆LB◆2x◆RB◆$. $y_p' = 2Ae^◆LB◆2x◆RB◆$$y_p'' = 4Ae^◆LB◆2x◆RB◆$.
 
 $4Ae^◆LB◆2x◆RB◆ - 4Ae^◆LB◆2x◆RB◆ - 3Ae^◆LB◆2x◆RB◆ = 3e^◆LB◆2x◆RB◆ \implies -3A = 3 \implies A = -1$.
 
@@ -2260,7 +2260,7 @@ $y(0) = c_1 + c_2 - 1 = 1 \implies c_1 + c_2 = 2$.
 
 $y'(0) = 3c_1 - c_2 - 2 = 0 \implies 3c_1 - c_2 = 2$.
 
-Solving: $4c_1 = 4 \implies c_1 = 1$, $c_2 = 1$.
+Solving: $4c_1 = 4 \implies c_1 = 1$$c_2 = 1$.
 
 $y = e^◆LB◆3x◆RB◆ + e^◆LB◆-x◆RB◆ - e^◆LB◆2x◆RB◆$. $\blacksquare$
 
@@ -2270,7 +2270,7 @@ _If you get this wrong, revise:_ Section 3.6 (Undetermined Coefficients).
 
 ### Problem 10 (Resonance)
 
-Solve $y'' + 4y = 8\cos(2t)$, $y(0) = 0$, $y'(0) = 0$.
+Solve $y'' + 4y = 8\cos(2t)$$y(0) = 0$$y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -2368,11 +2368,11 @@ For $\lambda = i$: $\begin◆LB◆pmatrix◆RB◆ -i & -1 \\ 1 & -i \end◆LB◆
 $-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$:
 $\mathbf◆LB◆v◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 \\ -i \end◆LB◆pmatrix◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 \\ 0 \end◆LB◆pmatrix◆RB◆ + i\begin◆LB◆pmatrix◆RB◆ 0 \\ -1 \end◆LB◆pmatrix◆RB◆$.
 
-$\mathbf◆LB◆a◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 \\ 0 \end◆LB◆pmatrix◆RB◆$, $\mathbf◆LB◆b◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 0 \\ -1 \end◆LB◆pmatrix◆RB◆$.
+$\mathbf◆LB◆a◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 1 \\ 0 \end◆LB◆pmatrix◆RB◆$$\mathbf◆LB◆b◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 0 \\ -1 \end◆LB◆pmatrix◆RB◆$.
 
 $\mathbf◆LB◆x◆RB◆(t) = c_1 \begin◆LB◆pmatrix◆RB◆ \cos t \\ -\sin t \end◆LB◆pmatrix◆RB◆ + c_2 \begin◆LB◆pmatrix◆RB◆ \sin t \\ \cos t \end◆LB◆pmatrix◆RB◆$.
 
-Equivalently: $x_1(t) = c_1 \cos t + c_2 \sin t$, $x_2(t) = -c_1 \sin t + c_2 \cos t$. $\blacksquare$
+Equivalently: $x_1(t) = c_1 \cos t + c_2 \sin t$$x_2(t) = -c_1 \sin t + c_2 \cos t$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 4.2, Case 3.
 
@@ -2385,7 +2385,7 @@ Compute $\mathcal◆LB◆L◆RB◆\{t^2 e^◆LB◆-3t◆RB◆\}$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Using $\mathcal◆LB◆L◆RB◆\{t^n e^◆LB◆at◆RB◆\} = \frac◆LB◆n!◆RB◆◆LB◆(s-a)^◆LB◆n+1◆RB◆◆RB◆$ with $n = 2$, $a = -3$:
+_Solution._ Using $\mathcal◆LB◆L◆RB◆\{t^n e^◆LB◆at◆RB◆\} = \frac◆LB◆n!◆RB◆◆LB◆(s-a)^◆LB◆n+1◆RB◆◆RB◆$ with $n = 2$$a = -3$:
 
 $\mathcal◆LB◆L◆RB◆\{t^2 e^◆LB◆-3t◆RB◆\} = \frac◆LB◆2!◆RB◆◆LB◆(s + 3)^3◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆(s+3)^3◆RB◆$. $\blacksquare$
 
@@ -2395,7 +2395,7 @@ _If you get this wrong, revise:_ Section 5.2 (Basic Properties) and Section 5.4 
 
 ### Problem 16 (IVP with Laplace)
 
-Solve $y'' - y = e^t$, $y(0) = 0$, $y'(0) = 0$ using Laplace transforms.
+Solve $y'' - y = e^t$$y(0) = 0$$y'(0) = 0$ using Laplace transforms.
 
 <details>
 <summary>Solution</summary>
@@ -2470,7 +2470,7 @@ _If you get this wrong, revise:_ Section 7.1 and 7.6 (Fourier Series).
 
 ### Problem 19 (Heat Equation)
 
-Solve $u_t = 4u_◆LB◆xx◆RB◆$ for $0 \lt x \lt \pi$, $t > 0$With $u(0, t) = u(\pi, t) = 0$ and
+Solve $u_t = 4u_◆LB◆xx◆RB◆$ for $0 \lt x \lt \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$ and
 $u(x, 0) = \sin x$.
 
 <details>
@@ -2478,7 +2478,7 @@ $u(x, 0) = \sin x$.
 
 _Solution._ Here $\alpha = 2$ and $L = \pi$.
 
-$\lambda_n = (n\pi/\pi)^2 = n^2$, $X_n = \sin(nx)$, $T_n = e^◆LB◆-4n^2 t◆RB◆$.
+$\lambda_n = (n\pi/\pi)^2 = n^2$$X_n = \sin(nx)$$T_n = e^◆LB◆-4n^2 t◆RB◆$.
 
 The initial condition $\sin x$ is already the first sine mode.
 
@@ -2490,7 +2490,7 @@ _If you get this wrong, revise:_ Section 8.4 (Solving the Heat Equation by Separ
 
 ### Problem 20 (Stability Classification)
 
-Find and classify the critical points of $x' = y - x^2$, $y' = x - y^2$.
+Find and classify the critical points of $x' = y - x^2$$y' = x - y^2$.
 
 <details>
 <summary>Solution</summary>
@@ -2503,10 +2503,10 @@ $x = 0 \implies y = 0$. Critical point: $(0, 0)$. $x = 1 \implies y = 1$. Critic
 Jacobian: $J = \begin◆LB◆pmatrix◆RB◆ -2x & 1 \\ 1 & -2y \end◆LB◆pmatrix◆RB◆$.
 
 At $(0, 0)$: $J = \begin◆LB◆pmatrix◆RB◆ 0 & 1 \\ 1 & 0 \end◆LB◆pmatrix◆RB◆$.
-$\mathrm◆LB◆tr(J) = 0$, $\det(J) = -1 \lt 0$. **Saddle point** (unstable).
+$\mathrm◆LB◆tr(J) = 0$$\det(J) = -1 \lt 0$. **Saddle point** (unstable).
 
 At $(1, 1)$: $J = \begin◆LB◆pmatrix◆RB◆ -2 & 1 \\ 1 & -2 \end◆LB◆pmatrix◆RB◆$.
-$\mathrm◆LB◆tr(J) = -4 \lt 0$, $\det(J) = 3 > 0$. $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct
+$\mathrm◆LB◆tr(J) = -4 \lt 0$$\det(J) = 3 > 0$. $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct
 negative real eigenvalues. **Stable node** (asymptotically stable). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 9.2 (Linearization and Stability) and Section 4.9 (Phase

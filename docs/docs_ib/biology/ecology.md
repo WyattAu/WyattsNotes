@@ -254,7 +254,7 @@ $$
 P^2 + 2pq + q^2 = 1
 $$
 
-Where $p^2$ = frequency of $AA$, $2pq$ = frequency of $Aa$, $q^2$ = frequency of $aa$.
+Where $p^2$ = frequency of $AA$$2pq$ = frequency of $Aa$$q^2$ = frequency of $aa$.
 
 Deviations from Hardy-Weinberg proportions indicate that one or more evolutionary forces are acting
 On the population.
@@ -442,9 +442,9 @@ Convention, unicellular photosynthetic eukaryotes are classified as protists.
 **Worked Example: Hardy-Weinberg Equilibrium with Selection**
 
 In a population of $5000$ peppered moths, the allele for dark colouration ($D$) is dominant over the
-Light allele ($d$). The current genotype frequencies are: $DD = 0.36$, $Dd = 0.48$, $dd = 0.16$.
+Light allele ($d$). The current genotype frequencies are: $DD = 0.36$$Dd = 0.48$$dd = 0.16$.
 Industrial pollution darkens tree bark, giving dark moths a survival advantage. The relative fitness
-Values are: $w_{DD} = 1.0$, $w_{Dd} = 1.0$, $w_{dd} = 0.5$. Calculate the allele frequencies after One
+Values are: $w_{DD} = 1.0$$w_{Dd} = 1.0$$w_{dd} = 0.5$. Calculate the allele frequencies after One
 generation of selection.
 
 <details>
@@ -586,7 +586,7 @@ cycles independently of predation.
 - **Confusing GPP and NPP**: GPP is total photosynthetic output; NPP is what remains after plant
   respiration. NPP is the energy available to consumers.
 - **Assuming all nitrogen is available to plants**: atmospheric $\mathrm{N}_2$ is inert and
-  unavailable. Plants can only use fixed forms: $\mathrm{NH}_4^+$, $\mathrm{NO}_2^-$And
+  unavailable. Plants can only use fixed forms: $\mathrm{NH}_4^+$$\mathrm{NO}_2^-$And
   $\mathrm{NO}_3^-$.
 
 ---
@@ -967,7 +967,7 @@ the logistic equation ($dN/dt = rN(1 - N/K)$). Assume migration continues at the
 
 (b) Net change $= rN + I - E = 0.05 \times 2000 + 50 - 20 = 100 + 30 = 130$ birds per year.
 
-(c) Using the logistic equation with migration: $N_0 = 2000$, $r = 0.05$, $K = 5000$Migration $= +30$
+(c) Using the logistic equation with migration: $N_0 = 2000$$r = 0.05$$K = 5000$Migration $= +30$
 per year.
 
 Year 1: $dN/dt = 0.05 \times 2000 \times (1 - 2000/5000) + 30 = 100 \times 0.6 + 30 = 60 + 30 = 90$.

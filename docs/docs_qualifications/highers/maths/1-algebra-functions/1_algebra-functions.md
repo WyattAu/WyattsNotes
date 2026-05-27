@@ -31,7 +31,7 @@ $f \colon A \to B$ means $f$ maps from set $A$ to set $B$.
 
 The **domain** of $f$ is the set of all valid inputs. The **range** is the set of all outputs.
 
-The **domain** of $f(x) = \dfrac{1}{x - 3}$ is $x \in \mathbb{R}$, $x \neq 3$.
+The **domain** of $f(x) = \dfrac{1}{x - 3}$ is $x \in \mathbb{R}$$x \neq 3$.
 
 The **range** of $f(x) = x^2$ is $f(x) \geq 0$ (assuming the domain is all real numbers).
 
@@ -356,9 +356,9 @@ $$
 
 **Example:** Differentiate $f(x) = (3x^2 + 1)\sin(2x)$ using the product rule.
 
-Let $u = 3x^2 + 1$, $v = \sin(2x)$.
+Let $u = 3x^2 + 1$$v = \sin(2x)$.
 
-$u' = 6x$, $v' = 2\cos(2x)$.
+$u' = 6x$$v' = 2\cos(2x)$.
 
 $$
 F'(x) = 6x \sin(2x) + (3x^2 + 1) \cdot 2\cos(2x)
@@ -370,9 +370,9 @@ $$
 
 **Example:** Differentiate $f(x) = \dfrac{e^{2x}}{x + 1}$.
 
-Let $u = e^{2x}$, $v = x + 1$.
+Let $u = e^{2x}$$v = x + 1$.
 
-$u' = 2e^{2x}$, $v' = 1$.
+$u' = 2e^{2x}$$v' = 1$.
 
 $$
 F'(x) = \frac{2e^{2x}(x + 1) - e^{2x}}{(x + 1)^2} = \frac{e^{2x}(2x + 2 - 1)}{(x + 1)^2} = \frac{e^{2x}(2x + 1)}{(x + 1)^2}
@@ -380,9 +380,9 @@ $$
 
 **Example:** Differentiate $f(x) = \dfrac{x^2 + 1}{e^{3x}}$.
 
-Let $u = x^2 + 1$, $v = e^{3x}$.
+Let $u = x^2 + 1$$v = e^{3x}$.
 
-$u' = 2x$, $v' = 3e^{3x}$.
+$u' = 2x$$v' = 3e^{3x}$.
 
 $$
 F'(x) = \frac{2x \cdot e^{3x} - (x^2 + 1) \cdot 3e^{3x}}{e^{6x}} = \frac{e^{3x}(2x - 3x^2 - 3)}{e^{6x}} = \frac{2x - 3x^2 - 3}{e^{3x}}
@@ -585,7 +585,7 @@ $$
 
 Find intersections: $x^2 = 2x$So $x^2 - 2x = 0$Giving $x = 0$ and $x = 2$.
 
-Between $x = 0$ and $x = 2$, $2x > x^2$.
+Between $x = 0$ and $x = 2$$2x > x^2$.
 
 $$
 A = \int_0^2 (2x - x^2) \, dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
@@ -620,7 +620,7 @@ $$
 
 **Example:** Evaluate $\int_0^2 \frac{x}{x^2 + 1}\,dx$.
 
-Let $u = x^2 + 1$, $du = 2x\,dx$. When $x = 0$, $u = 1$. When $x = 2$, $u = 5$.
+Let $u = x^2 + 1$$du = 2x\,dx$. When $x = 0$$u = 1$. When $x = 2$$u = 5$.
 
 $$
 \int_0^2 \frac{x}{x^2 + 1}\,dx = \frac{1}{2}\int_1^5 \frac{1}{u}\,du = \frac{1}{2}\left[\ln u\right]_1^5 = \frac{1}{2}\ln 5
@@ -636,7 +636,7 @@ Use **LIATE** (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential)
 
 **Example:** Evaluate $\int x e^x \, dx$.
 
-Let $u = x$, $dv = e^x\,dx$. Then $du = dx$, $v = e^x$.
+Let $u = x$$dv = e^x\,dx$. Then $du = dx$$v = e^x$.
 
 $$
 \int x e^x \, dx = xe^x - \int e^x \, dx = xe^x - e^x + C = e^x(x - 1) + C

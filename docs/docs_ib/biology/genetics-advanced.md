@@ -787,7 +787,7 @@ maximum number Of amino acids in the protein?
 <details>
 <summary>Solution</summary>
 
-(a) In double-stranded DNA, A pairs with T and G pairs with C (Chargaff's rules: $A = T$, $G = C$).
+(a) In double-stranded DNA, A pairs with T and G pairs with C (Chargaff's rules: $A = T$$G = C$).
 
 If strand 1 has $300$ A, then:
 
@@ -800,7 +800,7 @@ Total base pairs $= 1200$. Total nucleotides $= 2400$.
 Let $A_1$ be the number of A on strand 1 $= 300$. Then $T_2 = A_1 = 300$ (T on strand 2 pairing with
 A on strand 1).
 
-Since the molecule has $2400$ total nucleotides, and $A_{total} = T_{total}$, $G_{total} = C_{total}$:
+Since the molecule has $2400$ total nucleotides, and $A_{total} = T_{total}$$G_{total} = C_{total}$:
 $A_{total} + T_{total} + G_{total} + C_{total} = 2400$ $2A_{total} + 2G_{total} = 2400$
 $A_{total} + G_{total} = 1200$
 
@@ -831,9 +831,9 @@ regions).
 A circular plasmid of $5000\;\mathrm{bp}$ is digested individually and in combination with two
 restriction Enzymes, EcoRI and BamHI. The results are:
 
-- EcoRI alone: $2000\;\mathrm{bp}$, $3000\;\mathrm{bp}$
-- BamHI alone: $1500\;\mathrm{bp}$, $3500\;\mathrm{bp}$
-- EcoRI + BamHI: $500\;\mathrm{bp}$, $1000\;\mathrm{bp}$, $1500\;\mathrm{bp}$, $2000\;\mathrm{bp}$
+- EcoRI alone: $2000\;\mathrm{bp}$$3000\;\mathrm{bp}$
+- BamHI alone: $1500\;\mathrm{bp}$$3500\;\mathrm{bp}$
+- EcoRI + BamHI: $500\;\mathrm{bp}$$1000\;\mathrm{bp}$$1500\;\mathrm{bp}$$2000\;\mathrm{bp}$
 
 Determine the restriction map showing the positions and order of the EcoRI and BamHI sites.
 
@@ -879,7 +879,7 @@ BamHI fragment. The $3500\;\mathrm{bp}$ region is cut by 2 EcoRI sites into 3 pi
 these pieces plus the intact $1500\;\mathrm{bp}$ fragment to give the double digest fragments.
 
 The $3500\;\mathrm{bp}$ BamHI fragment, when cut by 2 EcoRI sites, produces 3 fragments that sum to
-$3500$. From the double digest, the fragments within this region would be $500$, $1000$And $2000$
+$3500$. From the double digest, the fragments within this region would be $500$$1000$And $2000$
 ($500 + 1000 + 2000 = 3500$).
 
 So the order around the circular plasmid is: BamHI -- $500$ -- EcoRI -- $1000$ -- EcoRI -- $2000$ --
@@ -898,16 +898,16 @@ placed such that EcoRI-to-EcoRI distances are $2000$ and $3000$.
 If EcoRI sites are at positions $a$ and $b$ (with $a < b$), then $b - a = 2000$ (or $3000$) and
 $(5000 - b) + a = 3000$ (or $2000$).
 
-Case 1: $b - a = 2000$, $(5000 - b) + a = 3000$.
+Case 1: $b - a = 2000$$(5000 - b) + a = 3000$.
 
 Now, BamHI cuts at $0$ and $1500$. The double digest fragments come from cutting at all four sites.
 
-Case 1a: Place $a = 500$, $b = 2500$. Sites in order: $0$ (BamHI), $500$ (EcoRI), $1500$ (BamHI),
+Case 1a: Place $a = 500$$b = 2500$. Sites in order: $0$ (BamHI), $500$ (EcoRI), $1500$ (BamHI),
 $2500$ (EcoRI). Fragments:
-$500 - 0 = 500$, $1500 - 500 = 1000$, $2500 - 1500 = 1000$, $5000 - 2500 = 2500$. Double digest:
+$500 - 0 = 500$$1500 - 500 = 1000$$2500 - 1500 = 1000$$5000 - 2500 = 2500$. Double digest:
 $500, 1000, 1000, 2500$. This does not match ($500, 1000, 1500, 2000$).
 
-Case 1b: Place $a = 500$, $b = 2500$ is wrong. Let me try $a = 2000$, $b = 4000$. Sites in order: $0$
+Case 1b: Place $a = 500$$b = 2500$ is wrong. Let me try $a = 2000$$b = 4000$. Sites in order: $0$
 (BamHI), $1500$ (BamHI), $2000$ (EcoRI), $4000$ (EcoRI). Fragments: $1500, 500, 2000, 1000$. That
 gives $500, 1000, 1500, 2000$. This matches.
 
@@ -1128,7 +1128,7 @@ $N = 10^4 \times 1.074 \times 10^9 = 1.074 \times 10^{13}$ copies.
 More precisely: $2^{30} = 1073741824$. $N = 10000 \times 1073741824 = 1.074 \times 10^{13}$ copies.
 
 (b) At $92\%$ efficiency: $N = N_0 \times (1 + E)^n = 10^4 \times (1.92)^{30}$. $(1.92)^{30}$:
-$\ln(1.92) = 0.6523$So $30 \times 0.6523 = 19.569$, $e^{19.569} = 3.17 \times 10^8$.
+$\ln(1.92) = 0.6523$So $30 \times 0.6523 = 19.569$$e^{19.569} = 3.17 \times 10^8$.
 $N = 10^4 \times 3.17 \times 10^8 = 3.17 \times 10^{12}$ copies.
 
 (c) Concentration: $\frac{3.17 \times 10^{12}}{100} = 3.17 \times 10^{10}$ copies/$\mu\mathrm{L}$.
@@ -1324,7 +1324,7 @@ where Cas cleaves The DNA, destroying the phage genome and protecting the bacter
 A forensic DNA sample is analysed using a VNTR (variable number tandem repeat) probe. The suspect's
 DNA Produces two bands at $3200\;\mathrm{bp}$ and $5600\;\mathrm{bp}$. A crime scene sample produces
 two Bands at $3200\;\mathrm{bp}$ and $5600\;\mathrm{bp}$. The VNTR allele frequencies in the
-population are: $3200\;\mathrm{bp} = 0.15$, $5600\;\mathrm{bp} = 0.08$And the remaining alleles
+population are: $3200\;\mathrm{bp} = 0.15$$5600\;\mathrm{bp} = 0.08$And the remaining alleles
 collectively have a Combined frequency of $0.77$. (a) Assuming Hardy-Weinberg equilibrium, calculate
 the probability of this Specific genotype in the population. (b) If three independent VNTR loci are
 tested and all match between The suspect and the crime scene sample, and the match probabilities for

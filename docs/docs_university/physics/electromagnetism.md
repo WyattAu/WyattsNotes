@@ -109,7 +109,7 @@ $$\hat◆LB◆\mathbf◆LB◆n◆RB◆◆RB◆ \times (\mathbf◆LB◆H◆RB◆_
 
 Where $\mathbf◆LB◆K◆RB◆_f$ is the free surface current density.
 
-**Summary** (no free charges or currents, $\sigma_f = 0$, $\mathbf◆LB◆K◆RB◆_f = \mathbf◆LB◆0◆RB◆$):
+**Summary** (no free charges or currents, $\sigma_f = 0$$\mathbf◆LB◆K◆RB◆_f = \mathbf◆LB◆0◆RB◆$):
 
 | Field        | Normal component                              | Tangential component                          |
 | ------------ | --------------------------------------------- | --------------------------------------------- |
@@ -120,7 +120,7 @@ Where $\mathbf◆LB◆K◆RB◆_f$ is the free surface current density.
 
 ### 1.5 Worked Example: Deriving the Electromagnetic Wave Equation
 
-**Problem.** Starting from Maxwell's equations in free space ($\rho = 0$, $\mathbf◆LB◆J◆RB◆ = \mathbf◆LB◆0◆RB◆$),
+**Problem.** Starting from Maxwell's equations in free space ($\rho = 0$$\mathbf◆LB◆J◆RB◆ = \mathbf◆LB◆0◆RB◆$),
 Derive the wave equations for $\mathbf◆LB◆E◆RB◆$ and $\mathbf◆LB◆B◆RB◆$And show that the wave speed is
 $c = 1/\sqrt◆LB◆\mu_0 \varepsilon_0◆RB◆$.
 
@@ -637,11 +637,11 @@ Where $\chi_m$ is the magnetic susceptibility and $\mu = \mu_0(1 + \chi_m)$ is t
 
 ### 3.8 Magnetic Materials
 
-**Diamagnetic materials** ($\chi_m \lt 0$, $\lvert\chi_m\rvert \ll 1$): Weakly repelled by Magnetic
+**Diamagnetic materials** ($\chi_m \lt 0$$\lvert\chi_m\rvert \ll 1$): Weakly repelled by Magnetic
 fields. The induced magnetization opposes the applied field (Lenz's law at the Atomic level).
 Examples: bismuth, copper, water.
 
-**Paramagnetic materials** ($\chi_m \gt 0$, $\chi_m \ll 1$): Weakly attracted by magnetic fields.
+**Paramagnetic materials** ($\chi_m \gt 0$$\chi_m \ll 1$): Weakly attracted by magnetic fields.
 Atomic dipoles align partially with the applied field. Examples: aluminium, platinum, oxygen.
 
 **Ferromagnetic materials** ($\chi_m \gg 1$): Strongly attracted by magnetic fields. Exhibit
@@ -818,7 +818,7 @@ $$L = \frac◆LB◆\mu_0 N^2 A◆RB◆◆LB◆\ell◆RB◆$$
 
 ### 5.1 The Wave Equation
 
-In free space ($\rho = 0$, $\mathbf◆LB◆J◆RB◆ = \mathbf◆LB◆0◆RB◆$), take the curl of Faraday's law:
+In free space ($\rho = 0$$\mathbf◆LB◆J◆RB◆ = \mathbf◆LB◆0◆RB◆$), take the curl of Faraday's law:
 
 $$\nabla \times (\nabla \times \mathbf◆LB◆E◆RB◆) = -\frac◆LB◆\partial◆RB◆◆LB◆\partial t◆RB◆(\nabla \times \mathbf◆LB◆B◆RB◆) = -\mu_0 \varepsilon_0 \frac◆LB◆\partial^2 \mathbf◆LB◆E◆RB◆◆RB◆◆LB◆\partial t^2◆RB◆$$
 
@@ -991,7 +991,7 @@ layers. $\blacksquare$
 Electromagnetic waves can be guided by hollow conducting pipes (waveguides). Consider a Rectangular
 waveguide with dimensions $a$ (width) and $b$ (height).
 
-**TE modes** (transverse electric, $E_z = 0$, $B_z \neq 0$). The lowest-order mode is
+**TE modes** (transverse electric, $E_z = 0$$B_z \neq 0$). The lowest-order mode is
 $\mathrm◆LB◆TE_◆LB◆10◆RB◆$With fields:
 
 $$E_y = E_0 \sin\!\left(\frac◆LB◆\pi x◆RB◆◆LB◆a◆RB◆\right)\cos(k_g z - \omega t)$$
@@ -1190,7 +1190,7 @@ The **Lienard-Wiechert potentials** are the exact solutions:
 
 $$V(\mathbf◆LB◆r◆RB◆, t) = \frac◆LB◆q◆RB◆◆LB◆4\pi\varepsilon_0◆RB◆\frac◆LB◆1◆RB◆◆LB◆(\kappa R)◆RB◆\bigg|_◆LB◆t_r◆RB◆, \quad \mathbf◆LB◆A◆RB◆(\mathbf◆LB◆r◆RB◆, t) = \frac◆LB◆q\mathbf◆LB◆v◆RB◆◆RB◆◆LB◆4\pi\varepsilon_0 c^2◆RB◆\frac◆LB◆1◆RB◆◆LB◆(\kappa R)◆RB◆\bigg|_◆LB◆t_r◆RB◆$$
 
-Where $\mathbf◆LB◆R◆RB◆ = \mathbf◆LB◆r◆RB◆ - \mathbf◆LB◆r◆RB◆_s(t_r)$, $R = \lvert\mathbf◆LB◆R◆RB◆\rvert$
+Where $\mathbf◆LB◆R◆RB◆ = \mathbf◆LB◆r◆RB◆ - \mathbf◆LB◆r◆RB◆_s(t_r)$$R = \lvert\mathbf◆LB◆R◆RB◆\rvert$
 $\mathbf◆LB◆v◆RB◆ = \dot◆LB◆\mathbf◆LB◆r◆RB◆◆RB◆_s(t_r)$And $\kappa = 1 - \hat◆LB◆\mathbf◆LB◆R◆RB◆◆RB◆ \cdot \mathbf◆LB◆v◆RB◆/c$.
 
 The factor $\kappa$ corrects for the **Doppler effect**: when the charge moves toward the
@@ -1292,7 +1292,7 @@ $\varepsilon^◆LB◆0123◆RB◆ = +1$. In matrix form:
 $$\tilde◆LB◆F◆RB◆^◆LB◆\mu\nu◆RB◆ = \begin◆LB◆pmatrix◆RB◆ 0 & -B_x & -B_y & -B_z \\ B_x & 0 & E_z/c & -E_y/c \\ B_y & -E_z/c & 0 & E_x/c \\ B_z & E_y/c & -E_x/c & 0 \end◆LB◆pmatrix◆RB◆$$
 
 The dual tensor is obtained from $F^◆LB◆\mu\nu◆RB◆$ by the replacement
-$\mathbf◆LB◆E◆RB◆/c \to -\mathbf◆LB◆B◆RB◆$, $\mathbf◆LB◆B◆RB◆ \to \mathbf◆LB◆E◆RB◆/c$.
+$\mathbf◆LB◆E◆RB◆/c \to -\mathbf◆LB◆B◆RB◆$$\mathbf◆LB◆B◆RB◆ \to \mathbf◆LB◆E◆RB◆/c$.
 
 **Lorentz force.** The four-force on a charge $q$ is:
 
@@ -1381,7 +1381,7 @@ _Cross-reference:_ Section 1.3, Section 4.5.
 </details>
 
 **Problem 2.** A point charge $q$ is placed at the centre of a dielectric sphere of radius $R$ And
-permittivity $\varepsilon$. Find $\mathbf◆LB◆D◆RB◆$, $\mathbf◆LB◆E◆RB◆$And $\mathbf◆LB◆P◆RB◆$ everywhere. Determine the
+permittivity $\varepsilon$. Find $\mathbf◆LB◆D◆RB◆$$\mathbf◆LB◆E◆RB◆$And $\mathbf◆LB◆P◆RB◆$ everywhere. Determine the
 bound surface charge density.
 
 <details>
@@ -1733,7 +1733,7 @@ _Cross-reference:_ Section 3.3, Section 3.6.
 
 **Problem 14.** An iron ring of mean radius $R = 10$ cm, cross-sectional area $A = 4\ \mathrm◆LB◆cm^2$
 And relative permeability $\mu_r = 500$ has $N = 200$ turns carrying current $I = 2$ A. Find
-$B$, $H$, $M$And the total flux through the ring.
+$B$$H$$M$And the total flux through the ring.
 
 <details>
 <summary>Solution</summary>
@@ -2312,7 +2312,7 @@ pure electric field in one frame becomes a mixture of electric and magnetic fiel
 is no frame-independent distinction between $\mathbf◆LB◆E◆RB◆$ and $\mathbf◆LB◆B◆RB◆$.
 
 **Invariants:** $E^2 - c^2B^2$ and $\mathbf◆LB◆E◆RB◆\cdot\mathbf◆LB◆B◆RB◆$ are Lorentz invariants. A pure
-radiation field ($E = cB$, $\mathbf◆LB◆E◆RB◆\perp\mathbf◆LB◆B◆RB◆$) satisfies both invariants being zero.
+radiation field ($E = cB$$\mathbf◆LB◆E◆RB◆\perp\mathbf◆LB◆B◆RB◆$) satisfies both invariants being zero.
 
 ### 12.3 Electromagnetic Field Momentum and Angular Momentum
 
@@ -2332,7 +2332,7 @@ charge quantisation condition $eg = n\hbar/2$.
 <summary>Worked Example 12.1: Fields of a Moving Point Charge</summary>
 
 A point charge $q$ at rest at the origin has
-$\mathbf◆LB◆E◆RB◆ = q\hat◆LB◆\mathbf◆LB◆r◆RB◆◆RB◆/(4\pi\varepsilon_0 r^2)$, $\mathbf◆LB◆B◆RB◆ = 0$.
+$\mathbf◆LB◆E◆RB◆ = q\hat◆LB◆\mathbf◆LB◆r◆RB◆◆RB◆/(4\pi\varepsilon_0 r^2)$$\mathbf◆LB◆B◆RB◆ = 0$.
 
 In a frame moving with velocity $v$ along the $x$-axis, the fields at the boosted position are:
 
@@ -2360,7 +2360,7 @@ A plasma screens electric fields over the **Debye length**:
 
 $$\lambda_D = \sqrt◆LB◆\frac◆LB◆\varepsilon_0 k_B T◆RB◆◆LB◆n_e e^2◆RB◆◆RB◆$$
 
-For $n_e = 10^◆LB◆18◆RB◆$ m$^◆LB◆-3◆RB◆$, $T = 10^4$ K: $\lambda_D = 7.4 \times 10^◆LB◆-5◆RB◆$ m $= 74\,\mu$M.
+For $n_e = 10^◆LB◆18◆RB◆$ m$^◆LB◆-3◆RB◆$$T = 10^4$ K: $\lambda_D = 7.4 \times 10^◆LB◆-5◆RB◆$ m $= 74\,\mu$M.
 
 The plasma frequency:
 

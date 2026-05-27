@@ -503,11 +503,11 @@ $$\boxed{T = \frac{mv_0^2}{r} - 2mg - 3mg\cos\theta}$$
 
 ### 6.3 Verification at special points
 
-At the top ($\theta = 0$, $\cos\theta = 1$): $T = \dfrac{mv_0^2}{r} - 5mg$.
+At the top ($\theta = 0$$\cos\theta = 1$): $T = \dfrac{mv_0^2}{r} - 5mg$.
 
-At the bottom ($\theta = \pi$, $\cos\theta = -1$): $T = \dfrac{mv_0^2}{r} + mg$.
+At the bottom ($\theta = \pi$$\cos\theta = -1$): $T = \dfrac{mv_0^2}{r} + mg$.
 
-At the midpoint ($\theta = \pi/2$, $\cos\theta = 0$): $T = \dfrac{mv_0^2}{r} - 2mg$.
+At the midpoint ($\theta = \pi/2$$\cos\theta = 0$): $T = \dfrac{mv_0^2}{r} - 2mg$.
 
 ### 6.4 Complete derivation of $\sqrt{5gr}$
 
@@ -612,7 +612,7 @@ $$\boxed{T_{\mathrm{period}} = \frac◆LB◆2\pi◆RB◆◆LB◆\omega◆RB◆ =
 
 Key observations:
 
-- The period depends only on $L$, $\alpha$And $g$ — it is independent of mass
+- The period depends only on $L$$\alpha$And $g$ — it is independent of mass
 - As $\alpha \to 0$The period approaches $2\pi\sqrt{L/g}$ (simple pendulum for small angles)
 - As $\alpha \to 90^\circ$The period $\to 0$ (impractical: requires infinite speed)
 - A larger angle $\alpha$ means a faster rotation (shorter period)
@@ -924,7 +924,7 @@ $$\boxed{\omega = 10e^{-0.2t}}$$
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | Confusing the centripetal force direction                   | It always points toward the centre of the circle                                 |
 | Forgetting that normal reaction changes on a banked surface | Resolve perpendicular to the surface                                             |
-| Using $v = r\omega$ with inconsistent units                 | $v$ in $\mathrm{m\,s^{-1}}$, $r$ in $\mathrm{m}$, $\omega$ in $\mathrm{rad\,s^{-1}}$ |
+| Using $v = r\omega$ with inconsistent units                 | $v$ in $\mathrm{m\,s^{-1}}$$r$ in $\mathrm{m}$$\omega$ in $\mathrm{rad\,s^{-1}}$ |
 | Assuming tension is constant in vertical motion             | $T$ varies; use energy conservation for $v$Then Newton's second law for $T$      |
 
 ---
@@ -934,7 +934,7 @@ $$\boxed{\omega = 10e^{-0.2t}}$$
 ### Question 8
 
 A particle of mass $m$ moves in a horizontal circle of radius $r$ on the inside of a smooth
-Hemispherical bowl of radius $R$. Find the speed $v$ in terms of $R$, $r$And $g$.
+Hemispherical bowl of radius $R$. Find the speed $v$ in terms of $R$$r$And $g$.
 
 <details>
 <summary>Solution</summary>

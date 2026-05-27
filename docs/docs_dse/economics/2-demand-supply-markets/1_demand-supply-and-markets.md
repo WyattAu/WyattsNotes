@@ -138,9 +138,9 @@ $$Q = 100 - 2(16) = 100 - 32 = 68$$
 
 ### Disequilibrium
 
-**Surplus (excess supply):** When $P \gt P_e$, $Q_S \gt Q_D$. Price tends to fall.
+**Surplus (excess supply):** When $P \gt P_e$$Q_S \gt Q_D$. Price tends to fall.
 
-**Shortage (excess demand):** When $P \lt P_e$, $Q_D \gt Q_S$. Price tends to rise.
+**Shortage (excess demand):** When $P \lt P_e$$Q_D \gt Q_S$. Price tends to rise.
 
 ### Changes in Equilibrium
 
@@ -369,7 +369,7 @@ $$\mathrm{Producer burden} = P_{\mathrm{before tax}} - P_{\mathrm{after tax (net
 Given $Q_D = 100 - P$ and $Q_S = P - 20$A specific tax of USD 10 per unit is imposed. Find the new
 Equilibrium, tax revenue, and the burden on consumers and producers.
 
-Original equilibrium: $100 - P = P - 20$So $2P = 120$, $P = 60$, $Q = 40$.
+Original equilibrium: $100 - P = P - 20$So $2P = 120$$P = 60$$Q = 40$.
 
 With tax, the supply becomes $Q_S = (P - 10) - 20 = P - 30$ (producers receive $P - 10$):
 
@@ -504,7 +504,7 @@ $300 - 5P = 2P - 60$
 
 $360 = 7P$
 
-$P = 51.43$, $Q = 300 - 5(51.43) = 42.86$
+$P = 51.43$$Q = 300 - 5(51.43) = 42.86$
 
 **Question 2:** A 20% increase in the price of good `A` causes a 10% decrease in the quantity
 Demanded of good `B`. What is the relationship between the goods?
@@ -834,7 +834,7 @@ At Q = 20: ATC = 200/20 + 10 + 0.5(20) = 10 + 10 + 10 = USD 30.
 The government imposes a specific tax of USD 8 per unit. Calculate the tax revenue and deadweight
 Loss.
 
-Original equilibrium: $200 - 4P = 2P - 40$, $240 = 6P$, $P = 40$, $Q = 40$.
+Original equilibrium: $200 - 4P = 2P - 40$$240 = 6P$$P = 40$$Q = 40$.
 
 With tax: supply becomes $Q_S = 2(P - 8) - 40 = 2P - 56$
 
@@ -1236,7 +1236,7 @@ willingness to pay get the apartments, which may not be the case with non-price 
 
 PS before $= 0.5 \times (20000 - 7500) \times 10000 = 0.5 \times 12500 \times 10000 = 62\,500\,000$.
 
-(Supply intercept: $0 = -6000 + 0.8P$, $P = 7500$.)
+(Supply intercept: $0 = -6000 + 0.8P$$P = 7500$.)
 
 PS after $= 0.5 \times (15000 - 7500) \times 6000 = 0.5 \times 7500 \times 6000 = 22\,500\,000$.
 

@@ -44,7 +44,7 @@ $$\mathrm{HA} + \mathrm{B} \rightleftharpoons \mathrm{A}^- + \mathrm{BH}^+$$
 | Property                   | Strong Acids                                              | Weak Acids                                                           |
 | -------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------- |
 | Degree of ionisation       | Nearly 100%                                               | Partial                                                              |
-| Examples                   | $\mathrm{HCl}$, $\mathrm{HNO}_3$, $\mathrm{H}_2\mathrm{SO}_4$ | $\mathrm{CH}_3\mathrm{COOH}$, $\mathrm{H}_2\mathrm{CO}_3$, $\mathrm{HF}$ |
+| Examples                   | $\mathrm{HCl}$$\mathrm{HNO}_3$$\mathrm{H}_2\mathrm{SO}_4$ | $\mathrm{CH}_3\mathrm{COOH}$$\mathrm{H}_2\mathrm{CO}_3$$\mathrm{HF}$ |
 | pH at same concentration   | Lower pH                                                  | Higher pH                                                            |
 | Conductivity               | Higher                                                    | Lower                                                                |
 | Reaction rate (same conc.) | Faster                                                    | Slower                                                               |
@@ -55,10 +55,10 @@ dilute solution of a Strong acid can have a higher pH than a concentrated soluti
 
 ### Common Strong Acids and Bases
 
-**Strong acids:** $\mathrm{HCl}$, $\mathrm{HBr}$, $\mathrm{HI}$, $\mathrm{HNO}_3$
-$\mathrm{H}_2\mathrm{SO}_4$, $\mathrm{HClO}_4$
+**Strong acids:** $\mathrm{HCl}$$\mathrm{HBr}$$\mathrm{HI}$$\mathrm{HNO}_3$
+$\mathrm{H}_2\mathrm{SO}_4$$\mathrm{HClO}_4$
 
-**Strong bases:** Group 1 hydroxides ($\mathrm{NaOH}$, $\mathrm{KOH}$), $\mathrm{Ba(OH)}_2$
+**Strong bases:** Group 1 hydroxides ($\mathrm{NaOH}$$\mathrm{KOH}$), $\mathrm{Ba(OH)}_2$
 
 ---
 
@@ -217,15 +217,15 @@ $$[\mathrm{NaOH}] = \frac{0.00200}{25.0/1000} = \frac{0.00200}{0.0250} = 0.0800 
 | -------------------------------------- | ------------------------------------------------------------------------ |
 | All Group 1 and ammonium salts         | —                                                                        |
 | All nitrates                           | —                                                                        |
-| All chlorides                          | $\mathrm{PbCl}_2$, $\mathrm{AgCl}$, $\mathrm{Hg}_2\mathrm{Cl}_2$ (insoluble) |
-| All sulphates                          | $\mathrm{BaSO}_4$, $\mathrm{PbSO}_4$, $\mathrm{CaSO}_4$ (slightly soluble)   |
+| All chlorides                          | $\mathrm{PbCl}_2$$\mathrm{AgCl}$$\mathrm{Hg}_2\mathrm{Cl}_2$ (insoluble) |
+| All sulphates                          | $\mathrm{BaSO}_4$$\mathrm{PbSO}_4$$\mathrm{CaSO}_4$ (slightly soluble)   |
 | Sodium, potassium, ammonium carbonates | —                                                                        |
 | Sodium, potassium, ammonium hydroxides | —                                                                        |
 
 | Insoluble       | Exceptions                                                 |
 | --------------- | ---------------------------------------------------------- |
 | Most carbonates | Group 1 and ammonium                                       |
-| Most hydroxides | Group 1, $\mathrm{Ba(OH)}_2$, $\mathrm{Ca(OH)}_2$ (slightly) |
+| Most hydroxides | Group 1, $\mathrm{Ba(OH)}_2$$\mathrm{Ca(OH)}_2$ (slightly) |
 | Most oxides     | Group 1                                                    |
 
 ### Methods of Salt Preparation
@@ -280,7 +280,7 @@ Describe how to prepare a sample of copper(II) sulphate crystals.
 
 Rules for assigning oxidation numbers:
 
-1. Elements in their standard state have oxidation number 0 (e.g., $\mathrm{Na}$, $\mathrm{Cl}_2$
+1. Elements in their standard state have oxidation number 0 (e.g., $\mathrm{Na}$$\mathrm{Cl}_2$
    $\mathrm{O}_2$)
 2. Simple ions have oxidation number equal to their charge (e.g., $\mathrm{Na}^+ = +1$
    $\mathrm{Cl}^- = -1$)
@@ -301,7 +301,7 @@ $$1 + x - 8 = 0$$
 
 $$x = +7$$
 
-Oxidation numbers: $\mathrm{K} = +1$, $\mathrm{Mn} = +7$, $\mathrm{O} = -2$.
+Oxidation numbers: $\mathrm{K} = +1$$\mathrm{Mn} = +7$$\mathrm{O} = -2$.
 
 ### Balancing Redox Equations (Ion-Electron Method)
 
@@ -396,7 +396,7 @@ Sulphate and nitrate: $\mathrm{H}_2\mathrm{O}$ is oxidised instead
 ($4\mathrm{OH}^- \to \mathrm{O}_2 + 2\mathrm{H}_2\mathrm{O} + 4e^-$Or
 $2\mathrm{H}_2\mathrm{O} \to \mathrm{O}_2 + 4\mathrm{H}^+ + 4e^-$)
 
-Halides ($\mathrm{Cl}^-$, $\mathrm{Br}^-$, $\mathrm{I}^-$): The halogen is discharged
+Halides ($\mathrm{Cl}^-$$\mathrm{Br}^-$$\mathrm{I}^-$): The halogen is discharged
 
 :::warning Warning At the anode instead of $\mathrm{OH}^-$. In dilute chloride solutions,
 $\mathrm{OH}^-$ may be Preferentially discharged. :::
@@ -595,7 +595,7 @@ $2 + 2x - 14 = 0$
 
 $x = +6$
 
-Oxidation numbers: $\mathrm{K} = +1$, $\mathrm{Cr} = +6$, $\mathrm{O} = -2$.
+Oxidation numbers: $\mathrm{K} = +1$$\mathrm{Cr} = +6$$\mathrm{O} = -2$.
 
 **Question 4:** Balance the reaction between $\mathrm{MnO}_4^-$ and $\mathrm{C}_2\mathrm{O}_4^{2-}$
 In acidic solution.
@@ -804,7 +804,7 @@ electrodes.
 
 <summary>Solution</summary>
 
-Ions present: $\mathrm{Na^+}$, $\mathrm{SO_4^{2-}}$, $\mathrm{H^+}$, $\mathrm{OH^-}$
+Ions present: $\mathrm{Na^+}$$\mathrm{SO_4^{2-}}$$\mathrm{H^+}$$\mathrm{OH^-}$
 
 Cathode: $\mathrm{Na^+}$ is above $\mathrm{H^+}$ in the discharge series, so water is reduced:
 
@@ -857,7 +857,7 @@ $\mathrm{NH}_4^+$ formed $= 0.0100 \mathrm{ mol}$
 
 Total volume $= 0.200 \mathrm{ dm}^3$
 
-$[\mathrm{NH}_3] = 0.0500 \mathrm{ mol/dm}^3$, $[\mathrm{NH}_4^+] = 0.0500 \mathrm{ mol/dm}^3$
+$[\mathrm{NH}_3] = 0.0500 \mathrm{ mol/dm}^3$$[\mathrm{NH}_4^+] = 0.0500 \mathrm{ mol/dm}^3$
 
 $\mathrm{p}K_a = 14 - \mathrm{p}K_b = 14 - (-\log_{10}(1.8 \times 10^{-5})) = 14 - 4.74 = 9.26$
 
@@ -963,7 +963,7 @@ $\mathrm{H_2O_2}$ is a peroxide. In peroxides, oxygen has oxidation number $-1$.
 
 $$2(+1) + 2(-1) = 0$$
 
-$\mathrm{H} = +1$, $\mathrm{O} = -1$.
+$\mathrm{H} = +1$$\mathrm{O} = -1$.
 
 This is an exception to the usual rule that oxygen is $-2$.
 

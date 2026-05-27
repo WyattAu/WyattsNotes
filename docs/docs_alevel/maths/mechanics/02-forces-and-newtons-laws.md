@@ -261,7 +261,7 @@ $$R + P\sin\theta = mg \implies R = mg - P\sin\theta$$
 
 $$P\cos\theta - F = ma$$
 
-If the block is in limiting equilibrium ($a = 0$, $F = \mu R$):
+If the block is in limiting equilibrium ($a = 0$$F = \mu R$):
 
 $$P\cos\theta = \mu(mg - P\sin\theta)$$
 
@@ -291,7 +291,7 @@ Mass $3\,\mathrm{kg}$ hanging vertically. Find the acceleration.
 
 For the $3\,\mathrm{kg}$ mass (assumed descending): $3g - T = 3a$.
 
-For the $4\,\mathrm{kg}$ mass: $R = 4g$, $F = \mu R = 0.3 \times 4g = 1.2g$.
+For the $4\,\mathrm{kg}$ mass: $R = 4g$$F = \mu R = 0.3 \times 4g = 1.2g$.
 
 $$T - 1.2g = 4a$$
 
@@ -331,8 +331,8 @@ $$T = \frac{2m_1 m_2 g}{m_1 + m_2}$$
 
 **Verification of limits:**
 
-- If $m_1 = m_2$: $a = 0$, $T = mg$ (static equilibrium, as expected).
-- If $m_2 = 0$: $a = g$, $T = 0$ (free fall, as expected).
+- If $m_1 = m_2$: $a = 0$$T = mg$ (static equilibrium, as expected).
+- If $m_2 = 0$: $a = g$$T = 0$ (free fall, as expected).
 
 ### 9.2 Particle on a table with a pulley
 
@@ -487,8 +487,8 @@ If a body in equilibrium is acted upon by exactly three coplanar forces, then:
 
 ### 11.3 Lami's theorem
 
-If three coplanar forces $F_1$, $F_2$, $F_3$ act on a body in equilibrium, and $\theta_1$ is the Angle
-between $F_2$ and $F_3$, $\theta_2$ is the angle between $F_1$ and $F_3$And $\theta_3$ is The angle
+If three coplanar forces $F_1$$F_2$$F_3$ act on a body in equilibrium, and $\theta_1$ is the Angle
+between $F_2$ and $F_3$$\theta_2$ is the angle between $F_1$ and $F_3$And $\theta_3$ is The angle
 between $F_1$ and $F_2$Then:
 
 $$\frac◆LB◆F_1◆RB◆◆LB◆\sin\theta_1◆RB◆ = \frac◆LB◆F_2◆RB◆◆LB◆\sin\theta_2◆RB◆ = \frac◆LB◆F_3◆RB◆◆LB◆\sin\theta_3◆RB◆$$
@@ -683,7 +683,7 @@ Two particles of masses $m$ and $3m$ are connected by a light inextensible strin
 
 <details>
 <summary>Solution 9</summary>
-$3mg - T = 3ma$, $T - mg = ma$. Adding: $2mg = 4ma \implies a = g/2$.
+$3mg - T = 3ma$$T - mg = ma$. Adding: $2mg = 4ma \implies a = g/2$.
 
 $s = \tfrac{1}{2}at^2 \implies 2 = \tfrac{1}{2}(g/2)t^2 \implies t^2 = 8/g \implies t = \sqrt{8/9.8} \approx 0.904\,\mathrm{s}$.
 
@@ -788,7 +788,7 @@ By Lami's theorem:
 
 $$\frac◆LB◆T_1◆RB◆◆LB◆\sin 135°◆RB◆ = \frac◆LB◆T_2◆RB◆◆LB◆\sin 120°◆RB◆ = \frac◆LB◆5g◆RB◆◆LB◆\sin 105°◆RB◆$$
 
-$\sin 105° \approx 0.9659$, $\sin 135° = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ \approx 0.7071$
+$\sin 105° \approx 0.9659$$\sin 135° = \frac◆LB◆\sqrt{2}◆RB◆◆LB◆2◆RB◆ \approx 0.7071$
 $\sin 120° = \frac◆LB◆\sqrt{3}◆RB◆◆LB◆2◆RB◆ \approx 0.8660$.
 
 $T_1 = \frac◆LB◆5g \times 0.7071◆RB◆◆LB◆0.9659◆RB◆ = \frac{34.65}{0.9659} \approx 35.9\,\mathrm{N}$
@@ -801,7 +801,7 @@ $T_2 = \frac◆LB◆5g \times 0.8660◆RB◆◆LB◆0.9659◆RB◆ = \frac{42.43
 
 <details>
 <summary>Problem 15</summary>
-A $7\,\mathrm{kg}$ block on a rough inclined plane (angle $= 35^\circ$, $\mu = 0.35$) is pulled up the slope by a force of $80\,\mathrm{N}$ acting parallel to the plane. Find the acceleration of the block.
+A $7\,\mathrm{kg}$ block on a rough inclined plane (angle $= 35^\circ$$\mu = 0.35$) is pulled up the slope by a force of $80\,\mathrm{N}$ acting parallel to the plane. Find the acceleration of the block.
 </details>
 
 <details>

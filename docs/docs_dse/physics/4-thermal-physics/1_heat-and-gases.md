@@ -1110,7 +1110,7 @@ $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}$$
 ### Mistake 8: Units in Thermal Conductivity Problems
 
 When using Fourier's law, ensure all quantities are in SI units: $k$ in
-$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$, $A$ in $\mathrm{m}^2$, $d$ in $\mathrm{m}$, $\Delta T$ in K. A Common
+$\mathrm{W m}^{-1}\mathrm{ K}^{-1}$$A$ in $\mathrm{m}^2$$d$ in $\mathrm{m}$$\Delta T$ in K. A Common
 error is using centimetres for thickness without converting to metres.
 
 ### Mistake 9: Mixing Up Specific Heat Capacity and Heat Capacity
@@ -1269,7 +1269,7 @@ Moles escaped:
 
 $$\Delta n = 6.154 - 5.108 = 1.046 \mathrm{ mol}$$
 
-Volume at STP conditions ($20^\circ\mathrm{C}$, $1.01 \times 10^5$ Pa):
+Volume at STP conditions ($20^\circ\mathrm{C}$$1.01 \times 10^5$ Pa):
 
 $$V = \frac{nRT}{p} = \frac{1.046 \times 8.314 \times 293.15}{1.01 \times 10^5} = \frac{2548.5}{101000} = 0.0252 \mathrm{ m}^3 = 25.2 \mathrm{ L}$$
 
@@ -1491,7 +1491,7 @@ $$PV = nRT$$
 
 Where $R = 8.31 \mathrm{ J/(mol\cdot K)}$ is the molar gas constant.
 
-For one mole: $PV = RT$. At STP ($T = 273 \mathrm{ K}$, $P = 1.01 \times 10^5 \mathrm{ Pa}$):
+For one mole: $PV = RT$. At STP ($T = 273 \mathrm{ K}$$P = 1.01 \times 10^5 \mathrm{ Pa}$):
 $V = RT/P = 8.31 \times 273 / (1.01 \times 10^5) = 0.0224 \mathrm{ m}^3 = 22.4 \mathrm{ litres}$.
 
 ### Derivation: Kinetic Theory Pressure Formula
@@ -1600,8 +1600,8 @@ $$\frac{\Delta c}{c} = \sqrt{\left(\frac{\Delta V}{V}\right)^2 + \left(\frac{\De
 The temperature difference uncertainty is:
 $\Delta(\Delta T) = \sqrt{(\Delta T_f)^2 + (\Delta T_i)^2}$
 
-**Example:** $V = (12.0 \pm 0.1) \mathrm{ V}$, $I = (2.00 \pm 0.02) \mathrm{ A}$
-$t = (300 \pm 1) \mathrm{ s}$, $m = (0.500 \pm 0.001) \mathrm{ kg}$
+**Example:** $V = (12.0 \pm 0.1) \mathrm{ V}$$I = (2.00 \pm 0.02) \mathrm{ A}$
+$t = (300 \pm 1) \mathrm{ s}$$m = (0.500 \pm 0.001) \mathrm{ kg}$
 $\Delta T = (25.0 \pm 0.5)^\circ\mathrm{C}$:
 
 $$c = \frac{12.0 \times 2.00 \times 300}{0.500 \times 25.0} = \frac{7200}{12.5} = 576 \mathrm{ J/(kg\cdot}^\circ C)}$$

@@ -22,9 +22,9 @@ midpoint (arc elasticity) method. Is demand elastic or inelastic? What happens t
 Midpoint method:
 $\text{PED} = \frac◆LB◆\% \Delta Q_d◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
-$\Delta Q = 600 - 800 = -200$, $\bar{Q} = (800 + 600)/2 = 700$
+$\Delta Q = 600 - 800 = -200$$\bar{Q} = (800 + 600)/2 = 700$
 
-$\Delta P = 3.00 - 2.50 = 0.50$, $\bar{P} = (2.50 + 3.00)/2 = 2.75$
+$\Delta P = 3.00 - 2.50 = 0.50$$\bar{P} = (2.50 + 3.00)/2 = 2.75$
 
 $\text{PED} = \frac{-200/700}{0.50/2.75} = \frac{-0.2857}{0.1818} = -1.57$
 
@@ -52,9 +52,9 @@ At $P = 3$: $Q_s = -100 + 50(3) = 50$ At $P = 5$: $Q_s = -100 + 50(5) = 150$
 Midpoint method:
 $\text{PES} = \frac◆LB◆\% \Delta Q_s◆RB◆◆LB◆\% \Delta P◆RB◆ = \frac◆LB◆\Delta Q / \bar{Q}◆RB◆◆LB◆\Delta P / \bar{P}◆RB◆$
 
-$\Delta Q = 150 - 50 = 100$, $\bar{Q} = (50 + 150)/2 = 100$
+$\Delta Q = 150 - 50 = 100$$\bar{Q} = (50 + 150)/2 = 100$
 
-$\Delta P = 5 - 3 = 2$, $\bar{P} = (3 + 5)/2 = 4$
+$\Delta P = 5 - 3 = 2$$\bar{P} = (3 + 5)/2 = 4$
 
 $\text{PES} = \frac{100/100}{2/4} = \frac{1}{0.5} = 2.0$
 
@@ -101,8 +101,8 @@ $\text{PS} = \frac{1}{2} \times 18 \times (11 - 2) = \frac{1}{2} \times 18 \time
 
 **Price ceiling at $\pounds 8$:**
 
-Quantity demanded at $\pounds 8$: $8 = 20 - 0.5Q_d$, $Q_d = 24$. Quantity supplied at $\pounds 8$:
-$8 = 2 + 0.5Q_s$, $Q_s = 12$.
+Quantity demanded at $\pounds 8$: $8 = 20 - 0.5Q_d$$Q_d = 24$. Quantity supplied at $\pounds 8$:
+$8 = 2 + 0.5Q_s$$Q_s = 12$.
 
 Since $Q_s \lt Q_d$The binding price ceiling creates a shortage of $24 - 12 = 12$ units. The
 quantity traded is $Q = 12$.
@@ -139,11 +139,11 @@ the deadweight loss occurs.
 
 **Solution:**
 
-(a) Pre-tax equilibrium: $50 - Q = 10 + Q$So $40 = 2Q$, $Q^* = 20$, $P^* = \pounds 30$.
+(a) Pre-tax equilibrium: $50 - Q = 10 + Q$So $40 = 2Q$$Q^* = 20$$P^* = \pounds 30$.
 
 Post-tax: supply shifts up by $\pounds 4$. New supply: $P = 14 + Q$.
 
-$50 - Q = 14 + Q$So $36 = 2Q$, $Q_t = 18$, $P_{\text{buyer}} = 50 - 18 = \pounds 32$.
+$50 - Q = 14 + Q$So $36 = 2Q$$Q_t = 18$$P_{\text{buyer}} = 50 - 18 = \pounds 32$.
 
 $P_{\text{seller}} = P_{\text{buyer}} - \text{tax} = 32 - 4 = \pounds 28$.
 
@@ -178,12 +178,12 @@ overproduction.
 
 **Solution:**
 
-Pre-subsidy equilibrium: $40 - 0.5Q = 4 + 0.5Q$, $36 = Q$, $Q^* = 36$, $P^* = \pounds 22$.
+Pre-subsidy equilibrium: $40 - 0.5Q = 4 + 0.5Q$$36 = Q$$Q^* = 36$$P^* = \pounds 22$.
 
 With subsidy: effective supply shifts down by $\pounds 6$. New supply (from seller's perspective,
 the price they receive): $P_{\text{seller}} = 4 + 0.5Q$But they receive $P_{\text{buyer}} + 6$.
 
-Equilibrium: $40 - 0.5Q = 4 + 0.5Q - 6 = -2 + 0.5Q$. So $42 = Q$, $Q_s = 42$.
+Equilibrium: $40 - 0.5Q = 4 + 0.5Q - 6 = -2 + 0.5Q$. So $42 = Q$$Q_s = 42$.
 
 $P_{\text{buyer}} = 40 - 0.5(42) = \pounds 19$. $P_{\text{seller}} = 4 + 0.5(42) = \pounds 25$
 (which is $P_{\text{buyer}} + 6 = 19 + 6 = 25$. Correct.)
@@ -224,16 +224,16 @@ Supply with subsidy: $P = 10 + Q - 5 = 5 + Q$ (fishermen receive $\pounds 5$ ext
 
 At the price floor of $\pounds 40$:
 
-Quantity demanded: $40 = 60 - Q_d$, $Q_d = 20$. Quantity supplied (with subsidy): fishermen receive
-$40 + 5 = \pounds 45$ per unit. So $45 = 10 + Q_s$, $Q_s = 35$.
+Quantity demanded: $40 = 60 - Q_d$$Q_d = 20$. Quantity supplied (with subsidy): fishermen receive
+$40 + 5 = \pounds 45$ per unit. So $45 = 10 + Q_s$$Q_s = 35$.
 
 The subsidy means the effective price received by fishermen is $\pounds 40 + \pounds 5 = \pounds 45$
-per unit. The quantity supplied at this effective price: $45 = 10 + Q_s$, $Q_s = 35$.
+per unit. The quantity supplied at this effective price: $45 = 10 + Q_s$$Q_s = 35$.
 
 Since $Q_s = 35 \gt Q_d = 20$There is excess supply (surplus) of $35 - 20 = 15$ units. The quantity
 traded is determined by demand: $Q = 20$.
 
-Consumer surplus at $P = 40$, $Q = 20$:
+Consumer surplus at $P = 40$$Q = 20$:
 
 $P_{\text{demand}}$ at $Q = 0$ is $\pounds 60$At $Q = 20$ is $\pounds 40$.
 
@@ -270,7 +270,7 @@ change in consumer and producer surplus, government expenditure, and deadweight 
 
 **Solution:**
 
-Pre-subsidy: $120 - P = 2P - 40 \Rightarrow 160 = 3P \Rightarrow P = 53.33$, $Q = 66.67$.
+Pre-subsidy: $120 - P = 2P - 40 \Rightarrow 160 = 3P \Rightarrow P = 53.33$$Q = 66.67$.
 
 Post-subsidy: consumers pay $P_c$Producers receive $P_c + 8$. Supply:
 $Q_S = 2(P_c + 8) - 40 = 2P_c - 24$.
@@ -326,7 +326,7 @@ consumer and producer surplus, (e) the deadweight loss.
 
 **Solution:**
 
-(a) $200 - 4P = 6P - 80 \Rightarrow 280 = 10P \Rightarrow P = 28$, $Q = 88$.
+(a) $200 - 4P = 6P - 80 \Rightarrow 280 = 10P \Rightarrow P = 28$$Q = 88$.
 
 (b) At $P = 20$: $Q_D = 200 - 80 = 120$. $Q_S = 120 - 80 = 40$. Quantity traded
 $= \min(120, 40) = 40$ (supply is the binding constraint).
@@ -357,7 +357,7 @@ production subsidy makes the externality worse.
 
 **Solution:**
 
-(a) Market equilibrium: $100 - Q = 20 + Q \Rightarrow 80 = 2Q \Rightarrow Q = 40$, $P = 60$. Social
+(a) Market equilibrium: $100 - Q = 20 + Q \Rightarrow 80 = 2Q \Rightarrow Q = 40$$P = 60$. Social
 optimum: $MSC = MPC + MEC = (20 + Q) + 0.1Q = 20 + 1.1Q$. Set $MSB = MSC$:
 $100 - Q = 20 + 1.1Q \Rightarrow 80 = 2.1Q \Rightarrow Q = 38.10$. Socially optimal output is 38.10,
 below the market output of 40.
@@ -366,7 +366,7 @@ below the market output of 40.
 $MSB_{40} = 60$. DWL $= \frac{1}{2}(64 - 60)(1.90) = \frac{1}{2}(4)(1.90) = 3.81$.
 
 (c) With subsidy of $\pounds 5$: supply shifts down to $P = 15 + Q$.
-$100 - Q = 15 + Q \Rightarrow 85 = 2Q \Rightarrow Q = 42.5$, $P = 57.5$. Output INCREASES from 40 to
+$100 - Q = 15 + Q \Rightarrow 85 = 2Q \Rightarrow Q = 42.5$$P = 57.5$. Output INCREASES from 40 to
 42.5, making the externality worse.
 
 (d) A production subsidy encourages MORE production, which increases the negative externality

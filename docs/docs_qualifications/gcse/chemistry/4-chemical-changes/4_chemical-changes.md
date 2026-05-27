@@ -834,7 +834,7 @@ decomposition of calcium carbonate -- energy is needed to break the bonds in $\m
 <summary>Question 5: Le Chatelier's principle</summary>
 
 The Haber process:
-$\mathrm{N_2(g) + 3\mathrm{H_2(g) \rightleftharpoons 2\mathrm{NH_3(g)$, $\Delta H = -92 \mathrm{ kJ/mol$.
+$\mathrm{N_2(g) + 3\mathrm{H_2(g) \rightleftharpoons 2\mathrm{NH_3(g)$$\Delta H = -92 \mathrm{ kJ/mol$.
 Explain the effect on the yield of ammonia of (a) increasing pressure, (b) increasing temperature,
 and (c) removing ammonia as it is formed.
 

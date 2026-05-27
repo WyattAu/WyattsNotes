@@ -108,7 +108,7 @@ Check: $360 + 480 + 160 = 1000$.
 The frequency of the dominant allele for a trait is 0.7 in a population of 5000. How many
 Individuals are expected to be heterozygous?
 
-$p = 0.7$, $q = 0.3$.
+$p = 0.7$$q = 0.3$.
 
 $2pq = 2(0.7)(0.3) = 0.42$.
 
@@ -122,7 +122,7 @@ Number showing the recessive phenotype: $q^2 \times 5000 = 0.09 \times 5000 = 45
 
 16% of individuals in a population show the recessive phenotype. What percentage is heterozygous?
 
-$q^2 = 0.16$So $q = 0.4$, $p = 0.6$.
+$q^2 = 0.16$So $q = 0.4$$p = 0.6$.
 
 $2pq = 2(0.6)(0.4) = 0.48 = 48\%$.
 
@@ -139,9 +139,9 @@ $q = q^2 + \frac{1}{2}(2pq) = 0.22 + 0.18 = 0.40$.
 
 Check: $p + q = 0.60 + 0.40 = 1.00$. Good.
 
-Expected frequencies: $p^2 = 0.36$, $2pq = 0.48$, $q^2 = 0.16$.
+Expected frequencies: $p^2 = 0.36$$2pq = 0.48$$q^2 = 0.16$.
 
-Observed: $p^2 = 0.42$, $2pq = 0.36$, $q^2 = 0.22$.
+Observed: $p^2 = 0.42$$2pq = 0.36$$q^2 = 0.22$.
 
 The observed and expected frequencies differ, so the population is not in Hardy-Weinberg
 Equilibrium. The excess of homozygotes (AA and aa) suggests non-random mating (possibly inbreeding
@@ -195,9 +195,9 @@ Differences between populations.
 
 **Worked Example: The bottleneck effect.**
 
-A population of 1000 birds has allele frequencies: $p = 0.5$, $q = 0.5$. A natural disaster kills 950
+A population of 1000 birds has allele frequencies: $p = 0.5$$q = 0.5$. A natural disaster kills 950
 birds, leaving 50 survivors. By chance, the surviving 50 birds have allele frequencies:
-$p = 0.8$, $q = 0.2$.
+$p = 0.8$$q = 0.2$.
 
 The population has bounced back to 1000 birds, but the allele frequencies remain $p = 0.8$ $q = 0.2$
 because the survivors passed on their alleles. Genetic diversity has been lost: the Frequency of
@@ -222,7 +222,7 @@ Movement of alleles between populations through migration of individuals or game
 **Worked Example: Gene flow between two populations of mice.**
 
 Two populations of mice live on opposite sides of a river. Population A has allele frequencies
-$p = 0.9$, $q = 0.1$. Population B has $p = 0.3$, $q = 0.7$. If a flood allows mice from population B to
+$p = 0.9$$q = 0.1$. Population B has $p = 0.3$$q = 0.7$. If a flood allows mice from population B to
 cross to population A and interbreed, gene flow will occur. The allele frequencies in Population A
 will shift towards those of population B (the frequency of allele $a$ will increase). Over time,
 continued gene flow will make the two populations more genetically similar.
@@ -738,7 +738,7 @@ Colour and skull morphology, and are considered separate subspecies (or possibly
 <summary>Question 1: Hardy-Weinberg with multiple alleles</summary>
 
 In a population, the ABO blood group alleles have the following frequencies: $p(I^A) = 0.3$
-$q(I^B) = 0.1$, $r(i) = 0.6$. Calculate the expected frequency of each blood type (A, B, AB, O)
+$q(I^B) = 0.1$$r(i) = 0.6$. Calculate the expected frequency of each blood type (A, B, AB, O)
 Assuming Hardy-Weinberg equilibrium. What percentage of the population can donate blood to a person
 With type O blood?
 
@@ -765,7 +765,7 @@ Individuals with blood type O (genotype $ii$) can donate to them: 36% of the pop
 <summary>Question 2: Directional selection and allele frequency change</summary>
 
 In a population of beetles, body colour is determined by a single gene with two alleles: B (brown,
-Dominant) and b (green, recessive). The initial allele frequencies are $p = 0.5$, $q = 0.5$. Brown
+Dominant) and b (green, recessive). The initial allele frequencies are $p = 0.5$$q = 0.5$. Brown
 Beetles have a fitness of 0.7 on light-coloured tree bark (they are more visible to predators),
 While green beetles have a fitness of 1.0. Calculate the allele frequencies after one generation of
 Selection.
@@ -775,9 +775,9 @@ Selection.
 <details>
 <summary>Answer</summary>
 
-Fitness values: $w_{BB} = 0.7$, $w_{Bb} = 0.7$, $w_{bb} = 1.0$.
+Fitness values: $w_{BB} = 0.7$$w_{Bb} = 0.7$$w_{bb} = 1.0$.
 
-Initial genotype frequencies: $p^2 = 0.25$, $2pq = 0.50$, $q^2 = 0.25$.
+Initial genotype frequencies: $p^2 = 0.25$$2pq = 0.50$$q^2 = 0.25$.
 
 Mean fitness: $\bar{w} = (0.25)(0.7) + (0.50)(0.7) + (0.25)(1.0) = 0.175 + 0.35 + 0.25 = 0.775$.
 
@@ -821,9 +821,9 @@ Divergence. The two species diverged approximately 1.33 million years ago.
 <details>
 <summary>Question 4: Founder effect and genetic drift</summary>
 
-A mainland population of birds has allele frequencies $p(A) = 0.8$, $q(a) = 0.2$ for a gene
+A mainland population of birds has allele frequencies $p(A) = 0.8$$q(a) = 0.2$ for a gene
 Controlling beak shape. Five birds colonise a new island. By chance, the founders have the
-Genotypes: $AA$, $Aa$, $Aa$, $aa$, $Aa$. Calculate the allele frequencies in the founder population. Has
+Genotypes: $AA$$Aa$$Aa$$aa$$Aa$. Calculate the allele frequencies in the founder population. Has
 genetic drift increased or decreased the frequency of allele $a$?
 
 </details>
@@ -839,7 +839,7 @@ Total alleles: $5 \mathrm{ birds \times 2 = 10$ alleles.
 
 Number of A alleles: $2 + 3 = 5$. Number of a alleles: $3 + 2 = 5$.
 
-New allele frequencies: $p = 5/10 = 0.5$, $q = 5/10 = 0.5$.
+New allele frequencies: $p = 5/10 = 0.5$$q = 5/10 = 0.5$.
 
 Genetic drift has dramatically increased the frequency of allele $a$ from $0.2$ on the mainland to
 $0.5$ on the island. This is an example of the founder effect: the small founding population does

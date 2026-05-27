@@ -344,8 +344,8 @@ $AD$ along the $y$-axis.
 Rectangle centre: $(3, 2)$. Triangle vertex $E$ is at $(6 + 2, 4) = (8, 4)$... Actually, let us
 Re-examine.
 
-Let us use the **subtraction method** for clarity. Place $A$ at $(0,0)$, $B$ at $(6,0)$, $C$ at
-$(6,4)$, $D$ at $(0,4)$. The triangle $BCE$ has $E$ above the line $BC$.
+Let us use the **subtraction method** for clarity. Place $A$ at $(0,0)$$B$ at $(6,0)$$C$ at
+$(6,4)$$D$ at $(0,4)$. The triangle $BCE$ has $E$ above the line $BC$.
 
 Midpoint of $BC$ is $(6, 2)$. The triangle extends $2\sqrt{3}$ upward from $BC$So $E$ is at
 $(6, 4 + 2\sqrt{3})$.
@@ -461,7 +461,7 @@ $T = \dfrac◆LB◆12(9.8)(1.5)◆RB◆◆LB◆3\cos 30°◆RB◆ = \dfrac{176.4
 
 <details>
 <summary>Problem 3</summary>
-Find the centre of mass of three particles of masses $2\,\mathrm{kg}$, $3\,\mathrm{kg}$And $5\,\mathrm{kg}$ placed at $(0,0)$, $(4,0)$And $(2,3)$ respectively.
+Find the centre of mass of three particles of masses $2\,\mathrm{kg}$$3\,\mathrm{kg}$And $5\,\mathrm{kg}$ placed at $(0,0)$$(4,0)$And $(2,3)$ respectively.
 </details>
 
 <details>
@@ -502,7 +502,7 @@ Range: $\dfrac{2l}{3} \leq x \leq \dfrac{4l}{3}$.
 
 <details>
 <summary>Problem 5</summary>
-A non-uniform rod $AB$ of length $2\,\mathrm{m}$ and weight $40\,\mathrm{N}$ is supported at $A$ and at a point $C$, $1.4\,\mathrm{m}$ from $A$. When supported at $A$ and $B$The reaction at $A$ is $18\,\mathrm{N}$. Find the position of the centre of mass.
+A non-uniform rod $AB$ of length $2\,\mathrm{m}$ and weight $40\,\mathrm{N}$ is supported at $A$ and at a point $C$$1.4\,\mathrm{m}$ from $A$. When supported at $A$ and $B$The reaction at $A$ is $18\,\mathrm{N}$. Find the position of the centre of mass.
 </details>
 
 <details>
@@ -539,14 +539,14 @@ $F = R_w = 46.6\,\mathrm{N}$. $\mu_{\min} = F/R_g = 46.6/200 = 0.233$.
 
 <details>
 <summary>Problem 7</summary>
-Find the centre of mass of a uniform lamina in the shape of a triangle with vertices at $(0,0)$, $(6,0)$And $(0,4)$.
+Find the centre of mass of a uniform lamina in the shape of a triangle with vertices at $(0,0)$$(6,0)$And $(0,4)$.
 </details>
 
 <details>
 <summary>Solution 7</summary>
 The centre of mass of a uniform triangular lamina is at the intersection of the medians, which is $\dfrac{1}{3}$ of the way from each side.
 
-$\bar{x} = \dfrac{0+6+0}{3} = 2$, $\bar{y} = \dfrac{0+0+4}{3} = \dfrac{4}{3}$.
+$\bar{x} = \dfrac{0+6+0}{3} = 2$$\bar{y} = \dfrac{0+0+4}{3} = \dfrac{4}{3}$.
 
 Centre of mass at $\left(2, \dfrac{4}{3}\right)$.
 
@@ -578,7 +578,7 @@ $\arctan(71.13/50) \approx 54.9^\circ$ below horizontal.
 
 <details>
 <summary>Problem 9</summary>
-A uniform lamina is made from a rectangle $ABCD$ with $AB = 8\,\mathrm{cm}$, $AD = 6\,\mathrm{cm}$And a square of side $3\,\mathrm{cm}$ removed from corner $C$. Find the centre of mass of the remaining lamina.
+A uniform lamina is made from a rectangle $ABCD$ with $AB = 8\,\mathrm{cm}$$AD = 6\,\mathrm{cm}$And a square of side $3\,\mathrm{cm}$ removed from corner $C$. Find the centre of mass of the remaining lamina.
 </details>
 
 <details>
@@ -587,7 +587,7 @@ Place $A$ at the origin, $AB$ along the $x$-axis, $AD$ along the $y$-axis.
 
 Rectangle: area $= 48$Centre at $(4, 3)$.
 
-Removed square: corner at $C(8,6)$So the square occupies $x \in [5, 8]$, $y \in [3, 6]$. Area
+Removed square: corner at $C(8,6)$So the square occupies $x \in [5, 8]$$y \in [3, 6]$. Area
 $= 9$Centre at $(6.5, 4.5)$.
 
 Using the subtraction method:
@@ -652,7 +652,7 @@ The rod **is** in rotational equilibrium since the two couples balance exactly.
 
 <details>
 <summary>Problem 12</summary>
-A non-uniform beam $AB$ of length $5\,\mathrm{m}$ and weight $300\,\mathrm{N}$ is supported at $A$ on a pivot and at $B$ by a vertical string. A load of $400\,\mathrm{N}$ is hung from a point $C$, $2\,\mathrm{m}$ from $A$. When the beam is horizontal, the tension in the string at $B$ is $500\,\mathrm{N}$. Find the distance of the centre of mass of the beam from $A$.
+A non-uniform beam $AB$ of length $5\,\mathrm{m}$ and weight $300\,\mathrm{N}$ is supported at $A$ on a pivot and at $B$ by a vertical string. A load of $400\,\mathrm{N}$ is hung from a point $C$$2\,\mathrm{m}$ from $A$. When the beam is horizontal, the tension in the string at $B$ is $500\,\mathrm{N}$. Find the distance of the centre of mass of the beam from $A$.
 </details>
 
 <details>
@@ -753,7 +753,7 @@ A uniform rod $AB$ of length $4\,\mathrm{m}$ and weight $120\,\mathrm{N}$ is hin
 <summary>Solution 15</summary>
 The strut $BC$ is a rod under compression (thrust). Let the thrust be $T$ along $BC$.
 
-First, find the geometry. $AC = 3\,\mathrm{m}$, $AB = 4\,\mathrm{m}$So
+First, find the geometry. $AC = 3\,\mathrm{m}$$AB = 4\,\mathrm{m}$So
 $BC = \sqrt{3^2 + 4^2} = 5\,\mathrm{m}$.
 
 The angle between $BC$ and the horizontal is $\alpha$ where $\sin\alpha = 3/5$ and

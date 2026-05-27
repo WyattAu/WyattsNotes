@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-In triangle $ABC$, $a = 8$, $b = 10$And $A = 35°$.
+In triangle $ABC$$a = 8$$b = 10$And $A = 35°$.
 
 **(a)** Find the two possible values of angle $B$Giving your answers to 1 decimal place.
 
@@ -295,9 +295,9 @@ integration for area under a parametric curve.]
 
 **Solution:**
 
-**(a)** At $t = 0$: $x = a(1 + 1) = 2a$, $y = a(0 + 0) = 0$.
+**(a)** At $t = 0$: $x = a(1 + 1) = 2a$$y = a(0 + 0) = 0$.
 
-At $t = 2\pi$: $x = a(\cos 2\pi + \cos 4\pi) = a(1+1) = 2a$, $y = a(\sin 2\pi + \sin 4\pi) = 0$.
+At $t = 2\pi$: $x = a(\cos 2\pi + \cos 4\pi) = a(1+1) = 2a$$y = a(\sin 2\pi + \sin 4\pi) = 0$.
 
 The curve starts and ends at $(2a, 0)$So it is closed.
 
@@ -383,7 +383,7 @@ careful attention to domain and range restrictions.]
 
 **Solution:**
 
-**(a)** On $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$, $f'(x) = -\sin x \lt 0$ for
+**(a)** On $\left[0, \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right]$$f'(x) = -\sin x \lt 0$ for
 $0 \lt x \lt \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆$So $f$ is strictly decreasing and therefore injective.
 
 $f(0) = 1$ and $f\!\left(\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆\right) = 0$So the range is $[0, 1]$.
@@ -432,7 +432,7 @@ $$h(x) = \begin{cases} \frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x + 2n\pi & \
 For $n \in \mathbb{Z}$.
 
 To find $h(x) = x$: on
-$[0, \pi]$, $\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x = x \implies x = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
+$[0, \pi]$$\frac◆LB◆\pi◆RB◆◆LB◆2◆RB◆ - x = x \implies x = \frac◆LB◆\pi◆RB◆◆LB◆4◆RB◆$.
 
 On $[\pi, 2\pi]$:
 $x - \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆ = x \implies 0 = \frac◆LB◆3\pi◆RB◆◆LB◆2◆RB◆$Impossible.

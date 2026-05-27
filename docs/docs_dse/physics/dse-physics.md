@@ -293,7 +293,7 @@ $$a = \frac{F\cos 30^\circ - f_k}{m} = \frac{34.64 - 11.62}{5} = \frac{23.02}{5}
 
 If you get this wrong, revise: Mechanics / Newton's Laws and Friction
 
-**Problem 3.** Three resistors of $2 \Omega$, $3 \Omega$And $6 \Omega$ are connected in Parallel. A
+**Problem 3.** Three resistors of $2 \Omega$$3 \Omega$And $6 \Omega$ are connected in Parallel. A
 $6 \mathrm{ V}$ battery with internal resistance $0.5 \Omega$ is connected across The combination.
 Find the total current from the battery.
 
@@ -437,7 +437,7 @@ For multiplication/division and powers: add percentage uncertainties in quadratu
 $$z = x^a y^b \implies \frac{\Delta z}{z} = \sqrt{\left(a\frac{\Delta x}{x}\right)^2 + \left(b\frac{\Delta y}{y}\right)^2}$$
 
 **Example:** $A = \frac{1}{2}mv^2$ with
-$m = (0.200 \pm 0.002) \mathrm{ kg}$, $v = (3.0 \pm 0.1) \mathrm{ m/s}$:
+$m = (0.200 \pm 0.002) \mathrm{ kg}$$v = (3.0 \pm 0.1) \mathrm{ m/s}$:
 
 $$A = \frac{1}{2}(0.200)(3.0)^2 = 0.90 \mathrm{ J}$$
 
@@ -542,7 +542,7 @@ DSE Physics Paper 2 consists of multiple choice questions. Key strategies:
 2. **Check dimensions:** If the answer should be a force (N) and an option has units of energy (J),
    eliminate it.
 3. **Estimate:** Quick mental arithmetic can often eliminate wrong options.
-4. **Check extreme cases:** What happens if $m \to 0$, $R \to \infty$Etc.?
+4. **Check extreme cases:** What happens if $m \to 0$$R \to \infty$Etc.?
 5. **Do not leave blanks:** There is no penalty for wrong answers in DSE.
 
 ---

@@ -47,7 +47,7 @@ Express $\displaystyle\sum_{k=3}^{n+2} (k - 2)^2$ in terms of $n$Without sigma n
 
 **Solution:**
 
-Let $j = k - 2$. When $k = 3$, $j = 1$. When $k = n + 2$, $j = n$.
+Let $j = k - 2$. When $k = 3$$j = 1$. When $k = n + 2$$j = n$.
 
 $$\sum_{k=3}^{n+2} (k - 2)^2 = \sum_{j=1}^{n} j^2 = \frac{n(n+1)(2n+1)}{6}$$
 
@@ -141,7 +141,7 @@ $$= \frac{2\sqrt{2}(2 + \sqrt{2})}{(2 - \sqrt{2})(2 + \sqrt{2})} = \frac{4\sqrt{
 
 **Question:**
 
-The first three terms of a geometric sequence are $\log_2 3$, $\log_2 9$, $\log_2 27$. Find the common
+The first three terms of a geometric sequence are $\log_2 3$$\log_2 9$$\log_2 27$. Find the common
 ratio and the sum of the first 10 terms.
 
 **Solution:**
@@ -152,7 +152,7 @@ Checking the ratio: $\dfrac{\log_2 9}{\log_2 3} = \dfrac{2\log_2 3}{\log_2 3} = 
 $\dfrac{\log_2 27}{\log_2 9} = \dfrac{3\log_2 3}{2\log_2 3} = \dfrac{3}{2}$.
 
 Since the ratio is not constant, this is **not** a geometric sequence. The terms are $\log_2 3$
-$2\log_2 3$, $3\log_2 3$Which form an **arithmetic sequence** with common difference $d = \log_2 3$.
+$2\log_2 3$$3\log_2 3$Which form an **arithmetic sequence** with common difference $d = \log_2 3$.
 
 $S_{10} = \dfrac{10}{2}[2\log_2 3 + 9\log_2 3] = 5 \times 11\log_2 3 = 55\log_2 3$.
 
@@ -246,7 +246,7 @@ Let the sequence be $2, ar, ar^2, ar^3, 162$ where $a = 2$.
 
 $ar^4 = 162 \implies 2r^4 = 162 \implies r^4 = 81 \implies r = 3$ (taking positive $r$).
 
-The three geometric means are: $2 \times 3 = 6$, $2 \times 9 = 18$, $2 \times 27 = 54$.
+The three geometric means are: $2 \times 3 = 6$$2 \times 9 = 18$$2 \times 27 = 54$.
 
 Sequence: $2, 6, 18, 54, 162$.
 
@@ -331,12 +331,12 @@ $A_8 = 10000 \times (1.06)^8 = 10000 \times \left(\dfrac{106}{100}\right)^8 = 10
 
 **Question:**
 
-If three positive numbers $a$, $b$, $c$ form a geometric sequence and $a + b + c = 26$ and
-$a + 2b - c = 10$Find $a$, $b$And $c$.
+If three positive numbers $a$$b$$c$ form a geometric sequence and $a + b + c = 26$ and
+$a + 2b - c = 10$Find $a$$b$And $c$.
 
 **Solution:**
 
-Since $a$, $b$, $c$ are in GP: $b^2 = ac$ and $b = ar$, $c = ar^2$ for some ratio $r$.
+Since $a$$b$$c$ are in GP: $b^2 = ac$ and $b = ar$$c = ar^2$ for some ratio $r$.
 
 From the two equations:
 

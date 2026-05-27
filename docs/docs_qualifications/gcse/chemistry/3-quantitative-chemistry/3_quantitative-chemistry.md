@@ -55,7 +55,7 @@ This is a direct consequence of the conservation of mass.
 **Worked Example.** Verify that the equation $\mathrm{CaCO_3 \to \mathrm{CaO + \mathrm{CO_2$ obeys
 the Law of conservation of mass.
 
-$M_r(\mathrm{CaCO_3) = 100.1$, $M_r(\mathrm{CaO) = 56.1$, $M_r(\mathrm{CO_2) = 44.0$.
+$M_r(\mathrm{CaCO_3) = 100.1$$M_r(\mathrm{CaO) = 56.1$$M_r(\mathrm{CO_2) = 44.0$.
 
 $100.1 = 56.1 + 44.0 = 100.1$. The equation is balanced.
 

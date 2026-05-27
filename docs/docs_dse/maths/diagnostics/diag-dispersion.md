@@ -22,7 +22,7 @@ $181$ cm joins the group. Find the new mean and new variance.
 
 **Solution:**
 
-Original: $n = 100$, $\bar{x} = 165$, $\sigma^2 = 49$.
+Original: $n = 100$$\bar{x} = 165$$\sigma^2 = 49$.
 
 Sum of original data: $\sum x_i = 100 \times 165 = 16500$.
 
@@ -106,7 +106,7 @@ Estimated SD $= \sqrt{\dfrac{821}{9}} = \dfrac{\sqrt{821}}{3} \approx 9.56$.
 
 **Question:**
 
-A box plot has minimum $= 10$, $Q_1 = 25$Median $= 35$, $Q_3 = 50$Maximum $= 80$. Find the interquartile
+A box plot has minimum $= 10$$Q_1 = 25$Median $= 35$$Q_3 = 50$Maximum $= 80$. Find the interquartile
 range and identify any outliers.
 
 **Solution:**
@@ -125,7 +125,7 @@ Since all values ($10$ to $80$) fall within $[-12.5,\; 87.5]$There are no outlie
 
 **Question:**
 
-Set $A$ has $n_A = 8$, $\bar{x}_A = 10$, $s_A^2 = 4$. Set $B$ has $n_B = 12$, $\bar{x}_B = 15$, $s_B^2 = 9$.
+Set $A$ has $n_A = 8$$\bar{x}_A = 10$$s_A^2 = 4$. Set $B$ has $n_B = 12$$\bar{x}_B = 15$$s_B^2 = 9$.
 Find the mean and variance of the combined set $A \cup B$.
 
 **Solution:**
@@ -154,7 +154,7 @@ $$s^2 = \frac{8(4 + 9) + 12(9 + 4)}{20} = \frac{8 \times 13 + 12 \times 13}{20} 
 **Question:**
 
 A random variable $X$ takes values $1, 2, 3, 4, 5$ with probabilities
-$\dfrac{1}{15}$, $\dfrac{2}{15}$, $\dfrac{3}{15}$, $\dfrac{4}{15}$, $\dfrac{5}{15}$ respectively. Find
+$\dfrac{1}{15}$$\dfrac{2}{15}$$\dfrac{3}{15}$$\dfrac{4}{15}$$\dfrac{5}{15}$ respectively. Find
 $E(X)$ and $\text{Var}(X)$.
 
 **Solution:**
@@ -198,7 +198,7 @@ the mean and variance of the sampling distribution of the sample mean.
 
 **Solution:**
 
-Population: $\\{2, 4, 6\\}$, $\mu = 4$, $\sigma^2 = \dfrac{(4+0+4)}{3} = \dfrac{8}{3}$.
+Population: $\\{2, 4, 6\\}$$\mu = 4$$\sigma^2 = \dfrac{(4+0+4)}{3} = \dfrac{8}{3}$.
 
 All samples of size 2 with replacement (9 samples):
 
@@ -227,7 +227,7 @@ the new mean, new standard deviation, and new variance.
 
 **Solution:**
 
-Transformation: $y = x + 7$ (i.e. $a = 1$, $b = 7$).
+Transformation: $y = x + 7$ (i.e. $a = 1$$b = 7$).
 
 New mean $= 1 \times 10 + 7 = 17$.
 
@@ -350,7 +350,7 @@ deviation after removing $45$. (c) Comment on the effect of the outlier.
 
 **Solution:**
 
-(a) Sum $= 113$, $\bar{x} = \dfrac{113}{7} \approx 16.14$.
+(a) Sum $= 113$$\bar{x} = \dfrac{113}{7} \approx 16.14$.
 
 $\sum x^2 = 25 + 64 + 100 + 144 + 225 + 324 + 2025 = 2907$.
 
@@ -358,9 +358,9 @@ $\sigma^2 = \dfrac{2907}{7} - \left(\dfrac{113}{7}\right)^2 = 415.29 - 260.31 = 
 
 $\sigma \approx 12.45$.
 
-(b) After removing $45$: sum $= 68$, $n = 6$, $\bar{x} = \dfrac{68}{6} = \dfrac{34}{3} \approx 11.33$.
+(b) After removing $45$: sum $= 68$$n = 6$$\bar{x} = \dfrac{68}{6} = \dfrac{34}{3} \approx 11.33$.
 
-$\sum x^2 = 882$, $\sigma^2 = \dfrac{882}{6} - \left(\dfrac{34}{3}\right)^2 = 147 - 128.44 = 18.56$.
+$\sum x^2 = 882$$\sigma^2 = \dfrac{882}{6} - \left(\dfrac{34}{3}\right)^2 = 147 - 128.44 = 18.56$.
 
 $\sigma \approx 4.31$.
 
@@ -497,7 +497,7 @@ converted to grams, find the new mean and new variance. (2 marks)
 
 **Solution:**
 
-(a) Sum $= 29.5$, $\bar{x} = \dfrac{29.5}{8} = 3.6875$.
+(a) Sum $= 29.5$$\bar{x} = \dfrac{29.5}{8} = 3.6875$.
 
 $\sum x^2 = 5.29 + 9.61 + 20.25 + 27.04 + 14.44 + 16.81 + 8.41 + 12.96 = 114.81$.
 
@@ -532,7 +532,7 @@ students. (4 marks)
 (a) Combined mean
 $= \dfrac{30 \times 72 + 20 \times 65}{50} = \dfrac{2160 + 1300}{50} = \dfrac{3460}{50} = 69.2$.
 
-(b) $d_A = 72 - 69.2 = 2.8$, $d_B = 65 - 69.2 = -4.2$.
+(b) $d_A = 72 - 69.2 = 2.8$$d_B = 65 - 69.2 = -4.2$.
 
 $$\sigma^2 = \frac{30(36 + 2.8^2) + 20(64 + 4.2^2)}{50} = \frac{30(36 + 7.84) + 20(64 + 17.64)}{50}$$
 
@@ -545,7 +545,7 @@ $$= \frac{30 \times 43.84 + 20 \times 81.64}{50} = \frac{1315.2 + 1632.8}{50} = 
 The box-and-whisker diagram below summarises the daily temperatures (in $°$C) recorded in a city for
 30 days:
 
-Minimum $= 12$, $Q_1 = 18$Median $= 22$, $Q_3 = 28$Maximum $= 35$.
+Minimum $= 12$$Q_1 = 18$Median $= 22$$Q_3 = 28$Maximum $= 35$.
 
 (a) Find the interquartile range. (1 mark) (b) Determine the lower and upper fences and identify any
 outliers. (3 marks) (c) What percentage of the data lies between $18$ and $28$? (1 mark)

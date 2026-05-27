@@ -179,7 +179,7 @@ Total $n = 50$. Median position $= \dfrac{50}{2} = 25$.
 
 Cumulative frequencies: $5, 17, 35, 45, 50$.
 
-Median is in the $40 \le m \lt 60$ class ($F = 17$, $f = 18$).
+Median is in the $40 \le m \lt 60$ class ($F = 17$$f = 18$).
 
 $$
 \mathrm{Median} \approx 40 + \left(\frac{25 - 17}{18}\right) \times 20 = 40 + \frac{8}{18} \times 20 = 40 + 8.89 = 48.89 \mathrm{ g}
@@ -562,7 +562,7 @@ The reaction times (in seconds) of 20 drivers were measured:
 
 **(a)** Find the mean and standard deviation.
 
-$\bar{x} \approx 0.555$, $s \approx 0.099$.
+$\bar{x} \approx 0.555$$s \approx 0.099$.
 
 **(b)** Construct a box-and-whisker plot.
 
@@ -714,9 +714,9 @@ $$
 
 Two groups of students took a test. The results are summarised below:
 
-Group A: $n = 30$, $\bar{x} = 72$, $s = 8$
+Group A: $n = 30$$\bar{x} = 72$$s = 8$
 
-Group B: $n = 25$, $\bar{x} = 68$, $s = 10$
+Group B: $n = 25$$\bar{x} = 68$$s = 10$
 
 **(a)** Find the overall mean.
 

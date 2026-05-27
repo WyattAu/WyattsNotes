@@ -109,7 +109,7 @@ Wave function (orbital) and spin state.
 
 ### Example: Quantum Numbers for $3d$ Electrons
 
-For $n = 3$, $\ell = 2$ (d orbital):
+For $n = 3$$\ell = 2$ (d orbital):
 
 $m_\ell \in \{-2, -1, 0, 1, 2\}$ (5 orbitals, 10 electrons maximum)
 
@@ -119,7 +119,7 @@ Each electron also has $m_s = \pm\frac{1}{2}$.
 
 The Pauli exclusion principle limits how many electrons can share the same quantum numbers: no two
 Electrons in an atom can have the same set of four quantum numbers. Since an orbital is defined by
-$n$, $\ell$And $m_\ell$It can hold at most two electrons (differing in $m_s$).
+$n$$\ell$And $m_\ell$It can hold at most two electrons (differing in $m_s$).
 
 ### Example: Valid vs. Invalid Quantum Number Sets
 
@@ -132,9 +132,9 @@ For $n = 2$:
 
 **Worked Example.** List all possible sets of quantum numbers for the electrons in a 2p subshell.
 
-For $n = 2$, $\ell = 1$, $m_\ell = -1, 0, +1$And $m_s = \pm\frac{1}{2}$:
+For $n = 2$$\ell = 1$$m_\ell = -1, 0, +1$And $m_s = \pm\frac{1}{2}$:
 
-$(2, 1, -1, +1/2)$, $(2, 1, -1, -1/2)$, $(2, 1, 0, +1/2)$, $(2, 1, 0, -1/2)$, $(2, 1, 1, +1/2)$
+$(2, 1, -1, +1/2)$$(2, 1, -1, -1/2)$$(2, 1, 0, +1/2)$$(2, 1, 0, -1/2)$$(2, 1, 1, +1/2)$
 $(2, 1, 1, -1/2)$.
 
 Six sets, corresponding to 6 electrons in the 2p subshell.
@@ -240,7 +240,7 @@ E = h\nu = \frac{hc}{\lambda}
 $$
 
 Where $h = 6.626 \times 10^{-34} \mathrm{ J\cdot\mathrm{s$ (Planck's constant),
-$c = 3.00 \times 10^8 \mathrm{ m/s$, $\nu$ is frequency, and $\lambda$ is wavelength.
+$c = 3.00 \times 10^8 \mathrm{ m/s$$\nu$ is frequency, and $\lambda$ is wavelength.
 
 ### The Bohr Model for Hydrogen
 
@@ -251,7 +251,7 @@ E_n = -\frac{13.6 \mathrm{ eV}{n^2} = -\frac{2.18 \times 10^{-18} \mathrm{ J}{n^
 $$
 
 The energy is negative because the electron is bound to the nucleus. The ground state ($n = 1$) has
-The most negative (lowest) energy. As $n \to \infty$, $E_n \to 0$Which is the ionisation energy.
+The most negative (lowest) energy. As $n \to \infty$$E_n \to 0$Which is the ionisation energy.
 
 The radius of the $n$Th orbit:
 
@@ -450,7 +450,7 @@ Charge. For example: $\mathrm{O^{2-} \gt \mathrm{F^- \gt \mathrm{Na^+ \gt \mathr
 
 ### Worked Example: Isoelectronic Radius Comparison
 
-Arrange in order of increasing ionic radius: $\mathrm{Na^+$, $\mathrm{Mg^{2+}$, $\mathrm{F^-$
+Arrange in order of increasing ionic radius: $\mathrm{Na^+$$\mathrm{Mg^{2+}$$\mathrm{F^-$
 $\mathrm{O^{2-}$.
 
 All four ions have 10 electrons (isoelectronic with Ne). The nuclear charges are: O (8), F (9), Na
@@ -633,8 +633,8 @@ The increase in $Z_{\mathrm{eff}$.
 
 4. Explain why the first ionization energy of oxygen is less than that of nitrogen.
 
-5. Arrange the following in order of increasing atomic radius: $\mathrm{Mg^{2+}$, $\mathrm{Na^+$
-   $\mathrm{F^-$, $\mathrm{O^{2-}$.
+5. Arrange the following in order of increasing atomic radius: $\mathrm{Mg^{2+}$$\mathrm{Na^+$
+   $\mathrm{F^-$$\mathrm{O^{2-}$.
 
 6. The work function of potassium is $2.30 \mathrm{ eV$. What is the maximum kinetic energy of
    electrons ejected by light of wavelength $400 \mathrm{ nm$?
@@ -647,8 +647,8 @@ The increase in $Z_{\mathrm{eff}$.
 
 10. Which element has the higher electronegativity, and why: P or Cl?
 
-11. For the isoelectronic series $\mathrm{N^{3-}$, $\mathrm{O^{2-}$, $\mathrm{F^-$
-    $\mathrm{Na^+$, $\mathrm{Mg^{2+}$Arrange the ions in order of increasing radius and explain the
+11. For the isoelectronic series $\mathrm{N^{3-}$$\mathrm{O^{2-}$$\mathrm{F^-$
+    $\mathrm{Na^+$$\mathrm{Mg^{2+}$Arrange the ions in order of increasing radius and explain the
     trend.
 
 12. Explain, in terms of effective nuclear charge, why atomic radius decreases across a period.
@@ -790,7 +790,7 @@ Stable.
 <details>
 <summary>Question 4: Quantum numbers and orbitals</summary>
 
-An electron in a hydrogen atom has the quantum numbers $n = 4$, $l = 2$, $m_l = -1$, $m_s = +1/2$.
+An electron in a hydrogen atom has the quantum numbers $n = 4$$l = 2$$m_l = -1$$m_s = +1/2$.
 Identify the orbital type and the maximum number of electrons that can occupy this subshell. Explain
 Why $m_l = 4$ is not a valid quantum number for this electron.
 

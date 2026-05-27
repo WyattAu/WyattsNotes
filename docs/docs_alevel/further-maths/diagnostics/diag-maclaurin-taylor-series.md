@@ -40,16 +40,16 @@ convergence. (d) Use the series for $\frac{1}{1-x}$ to find the series for $\fra
 
 **Solution:**
 
-(a) $f(x) = \cos x$, $f(0) = 1$. $f'(x) = -\sin x$, $f'(0) = 0$. $f''(x) = -\cos x$, $f''(0) = -1$.
-$f'''(x) = \sin x$, $f'''(0) = 0$. $f^{(4)}(x) = \cos x$, $f^{(4)}(0) = 1$.
-$f^{(5)}(0) = 0$, $f^{(6)}(0) = -1$.
+(a) $f(x) = \cos x$$f(0) = 1$. $f'(x) = -\sin x$$f'(0) = 0$. $f''(x) = -\cos x$$f''(0) = -1$.
+$f'''(x) = \sin x$$f'''(0) = 0$. $f^{(4)}(x) = \cos x$$f^{(4)}(0) = 1$.
+$f^{(5)}(0) = 0$$f^{(6)}(0) = -1$.
 
 $\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots = 1 - \frac{x^2}{2} + \frac{x^4}{24} - \frac{x^6}{720} + \cdots$
 
-(b) $f(x) = e^{2x}$, $f^{(n)}(x) = 2^n e^{2x}$, $f^{(n)}(0) = 2^n$.
+(b) $f(x) = e^{2x}$$f^{(n)}(x) = 2^n e^{2x}$$f^{(n)}(0) = 2^n$.
 $e^{2x} = 1 + 2x + \frac{4x^2}{2} + \frac{8x^3}{6} + \frac{16x^4}{24} + \cdots = 1 + 2x + 2x^2 + \frac{4x^3}{3} + \frac{2x^4}{3} + \cdots$
 
-(c) $f(x) = (1-x)^{-1}$. $f^{(n)}(x) = n!(1-x)^{-n-1}$, $f^{(n)}(0) = n!$.
+(c) $f(x) = (1-x)^{-1}$. $f^{(n)}(x) = n!(1-x)^{-n-1}$$f^{(n)}(0) = n!$.
 $\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \cdots$
 
 This is a geometric series with ratio $x$. Converges when $|x| \lt 1$. Radius of convergence $= 1$.
@@ -91,12 +91,12 @@ approximation. (d) Explain why the Maclaurin series of $\ln x$ does not exist.
 
 **Solution:**
 
-(a) $f(x) = \ln x$, $f(1) = 0$. $f'(x) = 1/x$, $f'(1) = 1$. $f''(x) = -1/x^2$, $f''(1) = -1$.
-$f'''(x) = 2/x^3$, $f'''(1) = 2$. $f^{(4)}(x) = -6/x^4$, $f^{(4)}(1) = -6$.
+(a) $f(x) = \ln x$$f(1) = 0$. $f'(x) = 1/x$$f'(1) = 1$. $f''(x) = -1/x^2$$f''(1) = -1$.
+$f'''(x) = 2/x^3$$f'''(1) = 2$. $f^{(4)}(x) = -6/x^4$$f^{(4)}(1) = -6$.
 
 $\ln x = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \cdots$
 
-(b) With $x = 1.1$, $h = 0.1$:
+(b) With $x = 1.1$$h = 0.1$:
 $\ln 1.1 \approx 0.1 - 0.005 + 0.000333 - 0.000025 = 0.095308 \approx 0.0953$.
 
 (c) The next term is $\frac{(0.1)^5}{5} = 0.000002$. The error is less than the magnitude of the

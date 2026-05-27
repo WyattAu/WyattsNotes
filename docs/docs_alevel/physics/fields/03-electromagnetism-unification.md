@@ -453,7 +453,7 @@ Velocity cancel out:
 
 $$\boxed{f = \frac{1}{T} = \frac◆LB◆qB◆RB◆◆LB◆2\pi m◆RB◆}$$
 
-This is the **cyclotron frequency** — only on $q$, $B$And $m$**not on the particle's Speed or
+This is the **cyclotron frequency** — only on $q$$B$And $m$**not on the particle's Speed or
 radius**. This is why the alternating `EMF` can operate at a fixed frequency, regardless of The
 particle's energy.
 

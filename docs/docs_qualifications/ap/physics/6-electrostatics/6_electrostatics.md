@@ -68,7 +68,7 @@ $$
 F = \int_0^L \frac{1}{4\pi\epsilon_0} \frac{q \lambda\, dx}{(L + a - x)^2} = \frac{q\lambda}{4\pi\epsilon_0} \int_0^L \frac{dx}{(L+a-x)^2}
 $$
 
-Let $u = L + a - x$, $du = -dx$:
+Let $u = L + a - x$$du = -dx$:
 
 $$
 F = \frac{q\lambda}{4\pi\epsilon_0} \int_{L+a}^{a} \frac{-du}{u^2} = \frac{q\lambda}{4\pi\epsilon_0} \left[\frac{1}{u}\right]_a^{L+a} = \frac{q\lambda}{4\pi\epsilon_0}\left(\frac{1}{a} - \frac{1}{L+a}\right) = \frac{qQ}{4\pi\epsilon_0\, a(L+a)}
@@ -449,7 +449,7 @@ $$
 
 ## Practice Questions
 
-1. Three point charges $q_1 = 2\,\mu\text{C$, $q_2 = -3\,\mu\text{C$, $q_3 = 4\,\mu\text{C$ are placed
+1. Three point charges $q_1 = 2\,\mu\text{C$$q_2 = -3\,\mu\text{C$$q_3 = 4\,\mu\text{C$ are placed
    at the corners of an equilateral triangle of side 0.5 m. Find the net force on $q_1$.
 
 2. A uniformly charged rod of length $L = 2$ m carries charge $Q = 8\,\mu\text{C$. Find the electric

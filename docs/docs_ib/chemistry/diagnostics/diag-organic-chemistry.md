@@ -183,7 +183,7 @@ substituents in a trigonal planar arrangement:
 
 $$\text{CN}^\delta-\cdots\text{C}^\delta+\cdots\text{Br}^\delta-$$
 
-With $\text{CH}_3$, $\text{H}$And $\text{CH}_2\text{CH}_3$ in a plane.
+With $\text{CH}_3$$\text{H}$And $\text{CH}_2\text{CH}_3$ in a plane.
 
 As the $\text{CN}^-$ bonds and $\text{Br}^-$ leaves, the three substituents flip like an umbrella
 inverting. This produces $(S)$-2-methylbutanenitrile.

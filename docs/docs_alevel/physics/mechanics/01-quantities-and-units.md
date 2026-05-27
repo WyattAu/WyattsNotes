@@ -355,7 +355,7 @@ The density of a cylinder is $\rho = \frac◆LB◆m◆RB◆◆LB◆\pi r^2 h◆R
 **Answer.** $\rho = \frac◆LB◆150.0◆RB◆◆LB◆\pi(1.20)^2(5.00)◆RB◆ = \frac{150.0}{22.62} = 6.63$ g
 cm$^{-3}$.
 
-Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$, $\frac{2(0.05)}{1.20} = 0.0833$ (power Rule),
+Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$$\frac{2(0.05)}{1.20} = 0.0833$ (power Rule),
 $\frac{0.02}{5.00} = 0.004$.
 
 Total fractional uncertainty: $0.0033 + 0.0833 + 0.004 = 0.0907$.
@@ -446,7 +446,7 @@ In SI units: m$^3$ kg$^{-1}$ s$^{-2}$.
 
 <details>
 <summary>Problem 12</summary>
-A quantity $Q$ is measured as $Q = \frac◆LB◆a^2 b◆RB◆◆LB◆\sqrt{c}◆RB◆$ where $a = 4.0 \pm 0.2$, $b = 3.0 \pm 0.1$, $c = 9.0 \pm 0.3$. Calculate $Q$ and its percentage uncertainty.
+A quantity $Q$ is measured as $Q = \frac◆LB◆a^2 b◆RB◆◆LB◆\sqrt{c}◆RB◆$ where $a = 4.0 \pm 0.2$$b = 3.0 \pm 0.1$$c = 9.0 \pm 0.3$. Calculate $Q$ and its percentage uncertainty.
 
 **Answer.** $Q = \frac◆LB◆16.0 \times 3.0◆RB◆◆LB◆3.0◆RB◆ = 16.0$.
 
@@ -477,7 +477,7 @@ Interpreting measurements correctly.
 | Luminous intensity  | candela (cd)  | Defined by fixing the luminous efficacy $K_{cd} = 683$ lm W$^{-1}$                       |
 
 :::info Note Since 2019, all SI base units are defined in terms of fundamental physical constants.
-The values of $c$, $h$, $e$, $k_B$, $N_A$And $\Delta\nu_{Cs}$ are now exact defined quantities, While the
+The values of $c$$h$$e$$k_B$$N_A$And $\Delta\nu_{Cs}$ are now exact defined quantities, While the
 unit values are derived from them. :::
 
 ## 9. Dimensional Analysis: Extended Worked Examples
@@ -568,7 +568,7 @@ Uncertainty.
 
 Fractional uncertainty in $r$: $\Delta r / r = 0.05 / 4.50 = 0.0111$.
 
-Since $A \propto r^2$, $\Delta A / A = 2 \times 0.0111 = 0.0222$.
+Since $A \propto r^2$$\Delta A / A = 2 \times 0.0111 = 0.0222$.
 
 $\Delta A = 63.62 \times 0.0222 = 1.41$ cm$^2$.
 
@@ -582,7 +582,7 @@ Uncertainty.
 
 **Answer.** $V = 5.00 \times 3.00 \times 2.00 = 30.00$ cm$^3$.
 
-Fractional uncertainties: $\Delta l/l = 0.02/5.00 = 0.004$, $\Delta w/w = 0.02/3.00 = 0.0067$
+Fractional uncertainties: $\Delta l/l = 0.02/5.00 = 0.004$$\Delta w/w = 0.02/3.00 = 0.0067$
 $\Delta h/h = 0.01/2.00 = 0.005$.
 
 Total fractional uncertainty: $0.004 + 0.0067 + 0.005 = 0.0157$.
@@ -691,7 +691,7 @@ A force $F = 8.0 \pm 0.4$ N acts on an object of mass $m = 2.00 \pm 0.05$ kg. Ca
 
 **Answer.** $a = 8.0 / 2.00 = 4.0$ m s$^{-2}$.
 
-Fractional uncertainties: $\Delta F/F = 0.4/8.0 = 0.050$, $\Delta m/m = 0.05/2.00 = 0.025$.
+Fractional uncertainties: $\Delta F/F = 0.4/8.0 = 0.050$$\Delta m/m = 0.05/2.00 = 0.025$.
 
 Total fractional uncertainty: $0.050 + 0.025 = 0.075 = 7.5\%$.
 

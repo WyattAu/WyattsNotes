@@ -105,7 +105,7 @@ $R_1 \to R_1 - 2R_2$:
 
 $$\left[\begin{array}{ccc|ccc} 1 & 0 & -5 & 1 & -2 & 0 \\ 0 & 1 & 4 & 0 & 1 & 0 \\ 0 & 0 & 1 & 0 & 0 & 1 \end{array}\right]$$
 
-$R_1 \to R_1 + 5R_3$, $R_2 \to R_2 - 4R_3$:
+$R_1 \to R_1 + 5R_3$$R_2 \to R_2 - 4R_3$:
 
 $$\left[\begin{array}{ccc|ccc} 1 & 0 & 0 & 1 & -2 & 5 \\ 0 & 1 & 0 & 0 & 1 & -4 \\ 0 & 0 & 1 & 0 & 0 & 1 \end{array}\right]$$
 
@@ -296,7 +296,7 @@ Augmented matrix:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 2 & -1 & 1 & 1 \\ 3 & 1 & 2 & 10 \end{array}\right]$$
 
-$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$:
+$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - 3R_1$:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & -1 & 3 \\ 0 & -5 & 3 & -5 \\ 0 & -5 & 5 & 1 \end{array}\right]$$
 
@@ -360,7 +360,7 @@ Entries to the $n$-th power).
 
 **Example.** Compute $A^{10}$ for $A = \begin{pmatrix} 3 & 1 \\ 2 & 4 \end{pmatrix}$.
 
-From earlier, $\lambda_1 = 5$, $\lambda_2 = 2$, $P = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}$.
+From earlier, $\lambda_1 = 5$$\lambda_2 = 2$$P = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}$.
 
 $$D^{10} = \begin{pmatrix} 5^{10} & 0 \\ 0 & 2^{10} \end{pmatrix}$$
 
@@ -398,7 +398,7 @@ Augmented matrix:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 2 & 4 & 6 & 8 \\ 1 & -1 & 1 & 1 \end{array}\right]$$
 
-$R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - R_1$:
+$R_2 \to R_2 - 2R_1$$R_3 \to R_3 - R_1$:
 
 $$\left[\begin{array}{ccc|c} 1 & 2 & 3 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & -3 & -2 & -3 \end{array}\right]$$
 
@@ -411,7 +411,7 @@ Row 2 gives $-3y - 2z = -3$So $y = \dfrac{3 - 2z}{3} = 1 - \dfrac{2z}{3}$.
 Row 1 gives $x + 2\!\left(1 - \dfrac{2z}{3}\right) + 3z = 4$So $x + 2 - \dfrac{4z}{3} + 3z = 4$
 Hence $x = 2 - \dfrac{5z}{3}$.
 
-Let $z = 3t$ (to avoid fractions): $x = 2 - 5t$, $y = 1 - 2t$, $z = 3t$.
+Let $z = 3t$ (to avoid fractions): $x = 2 - 5t$$y = 1 - 2t$$z = 3t$.
 
 The system has infinitely many solutions parametrised by $t \in \mathbb{R}$.
 
@@ -464,7 +464,7 @@ From $2 - \lambda = 0$: $\lambda_1 = 2$.
 
 From $\lambda^2 - 2\lambda + 2 = 0$: $\lambda = \dfrac{2 \pm \sqrt{4 - 8}}{2} = 1 \pm i$.
 
-The three eigenvalues are $\lambda = 2$, $\lambda = 1 + i$, $\lambda = 1 - i$.
+The three eigenvalues are $\lambda = 2$$\lambda = 1 + i$$\lambda = 1 - i$.
 
 Since complex eigenvalues of a real matrix come in conjugate pairs, this is consistent. The matrix
 Is not diagonalisable over $\mathbb{R}$ but is diagonalisable over $\mathbb{C}$.
@@ -485,11 +485,11 @@ $$\det(A) = 2\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} - 1\begin{vmatrix} 1 &
 
 Now compute the cofactor matrix $C$:
 
-$C_{11} = +\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} = 5$, $C_{12} = -\begin{vmatrix} 1 & 1 \\ 0 & 2 \end{vmatrix} = -2$, $C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
+$C_{11} = +\begin{vmatrix} 3 & 1 \\ 1 & 2 \end{vmatrix} = 5$$C_{12} = -\begin{vmatrix} 1 & 1 \\ 0 & 2 \end{vmatrix} = -2$$C_{13} = +\begin{vmatrix} 1 & 3 \\ 0 & 1 \end{vmatrix} = 1$
 
-$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$, $C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$, $C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
+$C_{21} = -\begin{vmatrix} 1 & 0 \\ 1 & 2 \end{vmatrix} = -2$$C_{22} = +\begin{vmatrix} 2 & 0 \\ 0 & 2 \end{vmatrix} = 4$$C_{23} = -\begin{vmatrix} 2 & 1 \\ 0 & 1 \end{vmatrix} = -2$
 
-$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & 1 \end{vmatrix} = 1$, $C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & 1 \end{vmatrix} = -2$, $C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
+$C_{31} = +\begin{vmatrix} 1 & 0 \\ 3 & 1 \end{vmatrix} = 1$$C_{32} = -\begin{vmatrix} 2 & 0 \\ 1 & 1 \end{vmatrix} = -2$$C_{33} = +\begin{vmatrix} 2 & 1 \\ 1 & 3 \end{vmatrix} = 5$
 
 $$C = \begin{pmatrix} 5 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 5 \end{pmatrix}$$
 
@@ -509,7 +509,7 @@ Compute $A^5$ where $A = \begin{pmatrix} 3 & -1 \\ 2 & 0 \end{pmatrix}$.
 <summary>Solution</summary>
 
 Characteristic equation: $\lambda(\lambda - 3) + 2 = \lambda^2 - 3\lambda + 2 = 0$So
-$(\lambda - 1)(\lambda - 2) = 0$Giving $\lambda_1 = 1$, $\lambda_2 = 2$.
+$(\lambda - 1)(\lambda - 2) = 0$Giving $\lambda_1 = 1$$\lambda_2 = 2$.
 
 For $\lambda_1 = 1$:
 $\begin{pmatrix} 2 & -1 \\ 2 & -1 \end{pmatrix}\mathbf{v} = \mathbf{0} \implies 2x = y$.
@@ -579,7 +579,7 @@ $$= \begin{pmatrix} 1 & 32 \\ 2 & 32 \end{pmatrix}\begin{pmatrix} -1 & 1 \\ 2 & 
 3. Find the eigenvalues and eigenvectors of $A = \begin{pmatrix} 5 & 4 \\ 1 & 2 \end{pmatrix}$. Use
    diagonalisation to find $A^6$.
 
-4. A triangle has vertices at $(0, 0)$, $(2, 0)$And $(1, 3)$. Find the matrix of the transformation
+4. A triangle has vertices at $(0, 0)$$(2, 0)$And $(1, 3)$. Find the matrix of the transformation
    that reflects the triangle in the $y$-axis and then enlarges it by a factor of $2$ about the
    origin. Determine the area of the image.
 

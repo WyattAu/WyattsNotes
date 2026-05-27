@@ -139,7 +139,7 @@ $$\frac{I_1}{I_2} = \frac{R_2}{R_1}$$
 
 ### Worked Example 3
 
-Three resistors of $4 \Omega$, $6 \Omega$And $12 \Omega$ are connected in parallel across a
+Three resistors of $4 \Omega$$6 \Omega$And $12 \Omega$ are connected in parallel across a
 $12 \mathrm{ V}$ supply. Find the total resistance and the current through each resistor.
 
 <summary>Solution</summary>
@@ -351,7 +351,7 @@ Cost: $10 \times 0.90 = \$9.00$
 A potential divider (voltage divider) consists of two or more resistors in series across a supply
 Voltage. The output voltage across one resistor is a fraction of the input:
 
-$, $V_{\mathrm{out}} = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$, $
+$$V_{\mathrm{out}} = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$$
 
 ### Potentiometer
 
@@ -372,7 +372,7 @@ $12 \mathrm{ k}\Omega$ is connected across $R_2$. Find the reading on the voltme
 (b) With voltmeter across $R_2$: $R_2$ in parallel with
 $R_V = \frac{4 \times 12}{4 + 12} = 3 \mathrm{ k}\Omega$
 
-$, $V_2 = 12 \times \frac{3}{8 + 3} = 12 \times \frac{3}{11} = 3.27 \mathrm{ V}$, $
+$$V_2 = 12 \times \frac{3}{8 + 3} = 12 \times \frac{3}{11} = 3.27 \mathrm{ V}$$
 
 The voltmeter draws current and reduces the measured voltage (loading effect).
 
@@ -418,7 +418,7 @@ this maximum power.
 
 Maximum power transfer occurs when $R = r = 1.5 \Omega$.
 
-$, $P_{\max} = \frac{\varepsilon^2}{4r} = \frac{36}{4 \times 1.5} = \frac{36}{6} = 6.0 \mathrm{ W}$, $
+$$P_{\max} = \frac{\varepsilon^2}{4r} = \frac{36}{4 \times 1.5} = \frac{36}{6} = 6.0 \mathrm{ W}$$
 
 If you get this wrong, revise: Internal Resistance and EMF / Maximum Power Transfer
 
@@ -428,9 +428,9 @@ PD across the combination.
 
 <summary>Solution</summary>
 
-$, $\varepsilon_{\mathrm{total}} = 3 \times 1.5 = 4.5 \mathrm{ V}, \quad r_{\mathrm{total}} = 3 \times 0.4 = 1.2 \Omega$, $
+$$\varepsilon_{\mathrm{total}} = 3 \times 1.5 = 4.5 \mathrm{ V}, \quad r_{\mathrm{total}} = 3 \times 0.4 = 1.2 \Omega$$
 
-$, $I = \frac{4.5}{4.6 + 1.2} = \frac{4.5}{5.8} = 0.776 \mathrm{ A}$, $
+$$I = \frac{4.5}{4.6 + 1.2} = \frac{4.5}{5.8} = 0.776 \mathrm{ A}$$
 
 Terminal PD: $V = \varepsilon - Ir = 4.5 - 0.776 \times 1.2 = 4.5 - 0.931 = 3.57 \mathrm{ V}$
 
@@ -442,7 +442,7 @@ Nichrome.
 
 <summary>Solution</summary>
 
-$, $\rho = \frac{RA}{L} = \frac{44 \times 5.0 \times 10^{-7}}{2.0} = \frac{2.2 \times 10^{-5}}{2.0} = 1.1 \times 10^{-5} \Omega\,\mathrm{m}$, $
+$$\rho = \frac{RA}{L} = \frac{44 \times 5.0 \times 10^{-7}}{2.0} = \frac{2.2 \times 10^{-5}}{2.0} = 1.1 \times 10^{-5} \Omega\,\mathrm{m}$$
 
 If you get this wrong, revise: Ohm's Law and Resistance / Resistivity
 
@@ -452,9 +452,9 @@ current through each resistor.
 
 <summary>Solution</summary>
 
-$, $I_1 = \frac{12}{8} = 1.5 \mathrm{ A}, \quad I_2 = \frac{12}{24} = 0.5 \mathrm{ A}$, $
+$$I_1 = \frac{12}{8} = 1.5 \mathrm{ A}, \quad I_2 = \frac{12}{24} = 0.5 \mathrm{ A}$$
 
-$, $I_{\mathrm{total}} = 1.5 + 0.5 = 2.0 \mathrm{ A}$, $
+$$I_{\mathrm{total}} = 1.5 + 0.5 = 2.0 \mathrm{ A}$$
 
 Verify:
 $R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$$I = \frac{12}{6} = 2.0 \mathrm{ A}$
@@ -613,11 +613,11 @@ current is $I = \varepsilon / (R + r)$.
 
 Power delivered to the load:
 
-$, $P = I^2 R = \frac{\varepsilon^2 R}{(R + r)^2}$, $
+$$P = I^2 R = \frac{\varepsilon^2 R}{(R + r)^2}$$
 
 To find the maximum, differentiate with respect to $R$ and set to zero:
 
-$, $\frac{dP}{dR} = \varepsilon^2 \frac{(R + r)^2 - 2R(R + r)}{(R + r)^4} = \varepsilon^2 \frac{R + r - 2R}{(R + r)^3} = \varepsilon^2 \frac{r - R}{(R + r)^3} = 0$, $
+$$\frac{dP}{dR} = \varepsilon^2 \frac{(R + r)^2 - 2R(R + r)}{(R + r)^4} = \varepsilon^2 \frac{R + r - 2R}{(R + r)^3} = \varepsilon^2 \frac{r - R}{(R + r)^3} = 0$$
 
 This gives $R = r$. Therefore, maximum power is delivered to the load when the load resistance
 Equals the internal resistance of the source.
@@ -629,11 +629,11 @@ Maximum power: $P_{\max} = \frac{\varepsilon^2 r}{(r + r)^2} = \frac{\varepsilon
 For two resistors $R_1$ and $R_2$ in series across supply voltage $V_{\mathrm{in}}$The current
 Through both resistors is:
 
-$, $I = \frac{V_{\mathrm{in}}}{R_1 + R_2}$, $
+$$I = \frac{V_{\mathrm{in}}}{R_1 + R_2}$$
 
 The voltage across $R_2$:
 
-$, $V_{\mathrm{out}} = IR_2 = \frac{V_{\mathrm{in}}}{R_1 + R_2} \times R_2 = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$, $
+$$V_{\mathrm{out}} = IR_2 = \frac{V_{\mathrm{in}}}{R_1 + R_2} \times R_2 = V_{\mathrm{in}} \times \frac{R_2}{R_1 + R_2}$$
 
 ### Derivation: Energy Dissipated in a Resistor
 
@@ -641,7 +641,7 @@ When a current $I$ flows through a resistor $R$ for time $t$The charge that pass
 $Q = It$. Each coulomb of charge loses energy $V = IR$ joules (the potential difference across The
 resistor).
 
-$, $E = QV = (It)(IR) = I^2 Rt$, $
+$$E = QV = (It)(IR) = I^2 Rt$$
 
 This energy is dissipated as thermal energy in the resistor (Joule heating).
 
@@ -746,7 +746,7 @@ Note the factor of 2 on the diameter uncertainty because $A = \pi d^2/4$ and $\r
 **Example:** $R = (10.0 \pm 0.3) \Omega$$d = (0.500 \pm 0.005) \mathrm{ mm}$
 $L = (1.000 \pm 0.005) \mathrm{ m}$:
 
-$, $\frac{\Delta\rho}{\rho} = \sqrt{(0.030)^2 + (2 \times 0.010)^2 + (0.005)^2} = \sqrt{0.0009 + 0.0004 + 0.000025} = \sqrt{0.001325} = 0.0364 = 3.6\%$, $
+$$\frac{\Delta\rho}{\rho} = \sqrt{(0.030)^2 + (2 \times 0.010)^2 + (0.005)^2} = \sqrt{0.0009 + 0.0004 + 0.000025} = \sqrt{0.001325} = 0.0364 = 3.6\%$$
 
 The diameter measurement is often the largest source of uncertainty in resistivity experiments
 Because of the factor of 2.
@@ -769,7 +769,7 @@ $R_p = 4 \Omega$.
 
 Total resistance: $R_{\mathrm{total}} = 4 + 4 = 8 \Omega$.
 
-$, $I_{\mathrm{total}} = \frac{\varepsilon}{R_{\mathrm{total}} + r} = \frac{12}{8 + 0.5} = \frac{12}{8.5} = 1.41 \mathrm{ A}$, $
+$$I_{\mathrm{total}} = \frac{\varepsilon}{R_{\mathrm{total}} + r} = \frac{12}{8 + 0.5} = \frac{12}{8.5} = 1.41 \mathrm{ A}$$
 
 Terminal PD: $V = \varepsilon - I_{\mathrm{total}} r = 12 - 1.41 \times 0.5 = 11.3 \mathrm{ V}$
 
@@ -796,9 +796,9 @@ $42.5 \mathrm{ cm}$. If the EMF of cell A is $1.50 \mathrm{ V}$Find the EMF of c
 
 For a potentiometer, the EMF is proportional to the balancing length:
 
-$, $\frac{\varepsilon_B}{\varepsilon_A} = \frac{L_B}{L_A}$, $
+$$\frac{\varepsilon_B}{\varepsilon_A} = \frac{L_B}{L_A}$$
 
-$, $\varepsilon_B = \varepsilon_A \times \frac{L_B}{L_A} = 1.50 \times \frac{42.5}{65.0} = 1.50 \times 0.6538 = 0.981 \mathrm{ V}$, $
+$$\varepsilon_B = \varepsilon_A \times \frac{L_B}{L_A} = 1.50 \times \frac{42.5}{65.0} = 1.50 \times 0.6538 = 0.981 \mathrm{ V}$$
 
 ### Worked Example 12
 
@@ -889,21 +889,21 @@ maximum power point.
 
 (a) From the first case: $V_1 = \varepsilon - I_1 r$
 
-$, $5.5 = \varepsilon - 1.1r \quad (1)$, $
+$$5.5 = \varepsilon - 1.1r \quad (1)$$
 
 From the second case: $I_2 = V_2/R_2 = 7.2/12.0 = 0.60 \mathrm{ A}$
 
-$, $7.2 = \varepsilon - 0.60r \quad (2)$, $
+$$7.2 = \varepsilon - 0.60r \quad (2)$$
 
 Subtracting (2) from (1): $5.5 - 7.2 = -1.1r + 0.60r \implies -1.7 = -0.50r \implies r = 3.4 \Omega$
 
-$, $\varepsilon = 5.5 + 1.1 \times 3.4 = 5.5 + 3.74 = 9.24 \mathrm{ V}$, $
+$$\varepsilon = 5.5 + 1.1 \times 3.4 = 5.5 + 3.74 = 9.24 \mathrm{ V}$$
 
 (b) $P = I_1^2 R_1 = (1.1)^2 \times 5.0 = 1.21 \times 5.0 = 6.05 \mathrm{ W}$
 
 (c) Maximum power transfer when $R = r = 3.4 \Omega$.
 
-$, $P_{\max} = \frac{\varepsilon^2}{4r} = \frac{(9.24)^2}{4 \times 3.4} = \frac{85.4}{13.6} = 6.28 \mathrm{ W}$, $
+$$P_{\max} = \frac{\varepsilon^2}{4r} = \frac{(9.24)^2}{4 \times 3.4} = \frac{85.4}{13.6} = 6.28 \mathrm{ W}$$
 
 (d) The graph of $P$ versus $R$ starts at zero ($R = 0$), rises to a maximum of $6.28 \mathrm{ W}$
 At $R = 3.4 \Omega$Then gradually decreases towards zero as $R \to \infty$. The curve is Asymmetric,
@@ -943,7 +943,7 @@ For the loop through $\varepsilon_2$: $\varepsilon_2 - I_2 r_2 = V_{\mathrm{term
 
 Both batteries drive current through the same terminal PD $V$:
 
-$, $V = 12 - I_1 \times 1 = 6 - I_2 \times 0.5$, $
+$$V = 12 - I_1 \times 1 = 6 - I_2 \times 0.5$$
 
 Also: $I_1 + I_2 = V / 10$
 
@@ -954,16 +954,16 @@ $I_1 + I_2 = V/10 = (12 - I_1)/10 \implies 10I_1 + 10I_2 = 12 - I_1 \implies 11I
 
 From (1): $I_1 = 6 + 0.5I_2$. Substituting into (2):
 
-$, $11(6 + 0.5I_2) + 10I_2 = 12 \implies 66 + 5.5I_2 + 10I_2 = 12 \implies 15.5I_2 = -54$, $
+$$11(6 + 0.5I_2) + 10I_2 = 12 \implies 66 + 5.5I_2 + 10I_2 = 12 \implies 15.5I_2 = -54$$
 
-$, $I_2 = -3.48 \mathrm{ A}$, $
+$$I_2 = -3.48 \mathrm{ A}$$
 
 This negative value means current flows **into** $\varepsilon_2$ (it is being charged by
 $\varepsilon_1$).
 
-$, $I_1 = 6 + 0.5(-3.48) = 6 - 1.74 = 4.26 \mathrm{ A}$, $
+$$I_1 = 6 + 0.5(-3.48) = 6 - 1.74 = 4.26 \mathrm{ A}$$
 
-$, $V = 12 - 4.26 \times 1 = 7.74 \mathrm{ V}$, $
+$$V = 12 - 4.26 \times 1 = 7.74 \mathrm{ V}$$
 
 (c) If $\varepsilon_2$ is reversed, both batteries would oppose each other. The net EMF would be
 $12 - 6 = 6 \mathrm{ V}$And the total internal resistance would be $1 + 0.5 = 1.5 \Omega$. Current

@@ -848,7 +848,7 @@ What is the maximum number of comparisons merge sort makes for 8 elements?
 <details>
 <summary>Answer</summary>
 
-Using $C(n) = 2C(n/2) + n - 1$: $C(1)=0$, $C(2)=1$, $C(4)=5$, $C(8)=17$. Maximum 17 comparisons.
+Using $C(n) = 2C(n/2) + n - 1$: $C(1)=0$$C(2)=1$$C(4)=5$$C(8)=17$. Maximum 17 comparisons.
 
 </details>
 

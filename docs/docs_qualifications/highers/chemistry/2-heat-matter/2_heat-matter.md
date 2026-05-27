@@ -185,7 +185,7 @@ Where square brackets denote equilibrium concentrations in $\mathrm{mol/L$.
 - Pure solids and pure liquids are NOT included in the $K_c$ expression
 
 **Worked Example 7:** For $\mathrm{H_2 + \mathrm{I_2 \rightleftharpoons 2\mathrm{HI$At equilibrium
-The concentrations are $[\mathrm{H_2] = 0.22$, $[\mathrm{I_2] = 0.22$
+The concentrations are $[\mathrm{H_2] = 0.22$$[\mathrm{I_2] = 0.22$
 $[\mathrm{HI] = 1.56 \mathrm{ mol/L$. Find $K_c$.
 
 $$K_c = \frac{[\mathrm{HI]^2}{[\mathrm{H_2][\mathrm{I_2]} = \frac{(1.56)^2}{(0.22)(0.22)} = \frac{2.4336}{0.0484} = 50.3$$
@@ -212,7 +212,7 @@ $\mathrm{PCl_5 \rightleftharpoons \mathrm{PCl_3 + \mathrm{Cl_2$. Find $K_c$.
 | Change      | -0.3            | +0.3            | +0.3           |
 | Equilibrium | 0.7             | 0.3             | 0.3            |
 
-Concentrations (divide by $V = 5.0$ L): $[\mathrm{PCl_5] = 0.14$, $[\mathrm{PCl_3] = 0.06$
+Concentrations (divide by $V = 5.0$ L): $[\mathrm{PCl_5] = 0.14$$[\mathrm{PCl_3] = 0.06$
 $[\mathrm{Cl_2] = 0.06 \mathrm{ mol/L$.
 
 $$K_c = \frac{[\mathrm{PCl_3][\mathrm{Cl_2]}{[\mathrm{PCl_5]} = \frac{(0.06)(0.06)}{0.14} = \frac{0.0036}{0.14} = 0.0257$$
@@ -225,7 +225,7 @@ $$K_c = \frac{[\mathrm{PCl_3][\mathrm{Cl_2]}{[\mathrm{PCl_5]} = \frac{(0.06)(0.0
 
 $$\Delta G^\circ = -RT\ln K$$
 
-Where $R = 8.314 \mathrm{ J mol^{-1}\mathrm{K^{-1}$, $T$ is temperature in Kelvin.
+Where $R = 8.314 \mathrm{ J mol^{-1}\mathrm{K^{-1}$$T$ is temperature in Kelvin.
 
 **Derivation:**
 
@@ -714,7 +714,7 @@ $$T = \frac{\Delta H^\circ}{\Delta S^\circ} = \frac{178000}{160} = 1112.5 \mathr
 This is the decomposition temperature of limestone, consistent with industrial practice.
 
 **Worked Example 20:** For the dissolution of $\mathrm{NH_4\mathrm{NO_3\mathrm{(s)$ in water:
-$\Delta H^\circ = +25.7 \mathrm{ kJ/mol$, $\Delta S^\circ = +108 \mathrm{ J mol^{-1}\mathrm{K^{-1}$.
+$\Delta H^\circ = +25.7 \mathrm{ kJ/mol$$\Delta S^\circ = +108 \mathrm{ J mol^{-1}\mathrm{K^{-1}$.
 Explain why this dissolution is spontaneous at room temperature.
 
 $$\Delta G^\circ = 25700 - 298 \times 108 = 25700 - 32184 = -6484 \mathrm{ J/mol$$

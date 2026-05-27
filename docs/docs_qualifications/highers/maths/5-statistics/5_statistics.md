@@ -328,7 +328,7 @@ $P(X \le k) \approx P\!\left(Z \lt \frac{k + 0.5 - np}{\sqrt{np(1-p)}}\right)$.
 
 **Example:** $X \sim B(100, 0.3)$. Approximate $P(X \le 35)$.
 
-$\mu = 100 \times 0.3 = 30$, $\sigma = \sqrt{100 \times 0.3 \times 0.7} = \sqrt{21} \approx 4.583$.
+$\mu = 100 \times 0.3 = 30$$\sigma = \sqrt{100 \times 0.3 \times 0.7} = \sqrt{21} \approx 4.583$.
 
 $$
 P(X \le 35) \approx P\!\left(Z \lt \frac{35.5 - 30}{4.583}\right) = P(Z < 1.20) \approx 0.8849
@@ -337,7 +337,7 @@ $$
 **Example:** $X \sim B(50, 0.4)$. Use the normal approximation with continuity correction to
 Estimate $P(X > 20)$.
 
-$\mu = 50 \times 0.4 = 20$, $\sigma = \sqrt{50 \times 0.4 \times 0.6} = \sqrt{12} \approx 3.464$.
+$\mu = 50 \times 0.4 = 20$$\sigma = \sqrt{50 \times 0.4 \times 0.6} = \sqrt{12} \approx 3.464$.
 
 With continuity correction:
 
@@ -384,7 +384,7 @@ May not hold.
 | --- | --- | --- | --- | --- | --- |
 | $y$ | 2   | 5   | 6   | 9   | 11  |
 
-$\bar{x} = 3$, $\bar{y} = 6.6$.
+$\bar{x} = 3$$\bar{y} = 6.6$.
 
 $S_{xx} = (1-3)^2 + (2-3)^2 + (3-3)^2 + (4-3)^2 + (5-3)^2 = 4 + 1 + 0 + 1 + 4 = 10$.
 
@@ -552,7 +552,7 @@ To increase the sample size.
 Bags has mean weight 497 g with standard deviation 5 g. Test at the 5% significance level whether
 The mean weight differs from 500 g.
 
-$H_0: \mu = 500$, $H_1: \mu \neq 500$.
+$H_0: \mu = 500$$H_1: \mu \neq 500$.
 
 Test statistic:
 $t = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}} = \dfrac{497 - 500}{5/\sqrt{16}} = \dfrac{-3}{1.25} = -2.4$.
@@ -616,7 +616,7 @@ Since $24.194 > 5.991$We reject $H_0$. There is significant evidence of an assoc
 **Example:** A machine is supposed to fill bottles with 500 ml. A sample of 20 bottles has mean 498
 Ml with standard deviation 4 ml. Test at the 5% level whether the machine is underfilling.
 
-$H_0: \mu = 500$, $H_1: \mu < 500$ (one-tailed).
+$H_0: \mu = 500$$H_1: \mu < 500$ (one-tailed).
 
 $t = \dfrac{498 - 500}{4/\sqrt{20}} = \dfrac{-2}{0.894} = -2.236$.
 

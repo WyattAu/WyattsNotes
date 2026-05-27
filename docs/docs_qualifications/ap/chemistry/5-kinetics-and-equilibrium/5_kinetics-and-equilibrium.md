@@ -428,7 +428,7 @@ $$
 
 ### Worked Example: ICE Table with Quadratic
 
-For $\mathrm{PCl_5(g) \rightleftharpoons \mathrm{PCl_3(g) + \mathrm{Cl_2(g)$, $K_c = 0.0420$ at
+For $\mathrm{PCl_5(g) \rightleftharpoons \mathrm{PCl_3(g) + \mathrm{Cl_2(g)$$K_c = 0.0420$ at
 $500 \mathrm{ K$. If $2.00 \mathrm{ M  \mathrm{PCl_5$ is placed in a flask, find all equilibrium
 Concentrations.
 
@@ -447,13 +447,13 @@ $$x^2 + 0.0420x - 0.0840 = 0$$
 Using the quadratic formula:
 $x = \frac{-0.0420 + \sqrt{0.0420^2 + 4(0.0840)}}{2} = \frac{-0.0420 + 0.581}{2} = 0.269 \mathrm{ M$
 
-$[\mathrm{PCl_5] = 1.73 \mathrm{ M$, $[\mathrm{PCl_3] = 0.269 \mathrm{ M$
+$[\mathrm{PCl_5] = 1.73 \mathrm{ M$$[\mathrm{PCl_3] = 0.269 \mathrm{ M$
 $[\mathrm{Cl_2] = 0.269 \mathrm{ M$.
 
 ### Worked Example: $K_c$ to $K_p$ Conversion
 
 For $\mathrm{N_2(g) + 3\mathrm{H_2(g) \rightleftharpoons 2\mathrm{NH_3(g)$ at
-$400^{\circ}\mathrm{C$, $K_c = 0.500$. Calculate $K_p$.
+$400^{\circ}\mathrm{C$$K_c = 0.500$. Calculate $K_p$.
 
 $$\Delta n = 2 - (1 + 3) = -2$$
 
@@ -493,7 +493,7 @@ $K_{sp}(\mathrm{PbCl_2) = 1.7 \times 10^{-5}$.
 
 After mixing (volumes double):
 
-$[\mathrm{Pb^{2+}] = 0.00050 \mathrm{ M$, $[\mathrm{Cl^-] = 0.0010 \mathrm{ M$.
+$[\mathrm{Pb^{2+}] = 0.00050 \mathrm{ M$$[\mathrm{Cl^-] = 0.0010 \mathrm{ M$.
 
 $$
 Q_{sp} = (0.00050)(0.0010)^2 = 5.0 \times 10^{-10}
@@ -620,10 +620,10 @@ This matches the experimental rate law with $k = k_2 K$.
 
 Determine the rate law and rate constant.
 
-3. At $400 \mathrm{ K$, $k = 6.4 \times 10^{-3} \mathrm{ M^{-1}\mathrm{s^{-1}$. At
-   $450 \mathrm{ K$, $k = 3.2 \times 10^{-2} \mathrm{ M^{-1}\mathrm{s^{-1}$. Find $E_a$.
+3. At $400 \mathrm{ K$$k = 6.4 \times 10^{-3} \mathrm{ M^{-1}\mathrm{s^{-1}$. At
+   $450 \mathrm{ K$$k = 3.2 \times 10^{-2} \mathrm{ M^{-1}\mathrm{s^{-1}$. Find $E_a$.
 
-4. For $\mathrm{PCl_5(g) \rightleftharpoons \mathrm{PCl_3(g) + \mathrm{Cl_2(g)$, $K_p = 1.80$ at
+4. For $\mathrm{PCl_5(g) \rightleftharpoons \mathrm{PCl_3(g) + \mathrm{Cl_2(g)$$K_p = 1.80$ at
    $250^\circ\mathrm{C$. If $0.500 \mathrm{ atm$ of $\mathrm{PCl_5$ is placed in a flask, find the
    equilibrium partial pressures of all species.
 
@@ -675,7 +675,7 @@ Determine the rate law and rate constant.
     $55 \mathrm{kJ/mol$. Calculate the ratio of rate constants at $300 \mathrm{ K$.
 
 17. For $\mathrm{H_2(g) + \mathrm{I_2(g) \rightleftharpoons 2\mathrm{HI(g)$ at
-    $448^{\circ}\mathrm{C$, $K_c = 50.5$. Calculate $K_p$ for this reaction at the same temperature.
+    $448^{\circ}\mathrm{C$$K_c = 50.5$. Calculate $K_p$ for this reaction at the same temperature.
 
 18. Will a precipitate form when equal volumes of $0.0020 \mathrm{ M  \mathrm{CaCl_2$ and
     $0.0010 \mathrm{ M  \mathrm{Na_2\mathrm{SO_4$ are mixed?
@@ -687,7 +687,7 @@ Determine the rate law and rate constant.
 
 20. Calculate $K_c$ for the reaction
     $\mathrm{Fe^{3+}(aq) + \mathrm{SCN^-(aq) \rightleftharpoons \mathrm{FeSCN^{2+}(aq)$ if at
-    equilibrium $[\mathrm{Fe^{3+}] = 0.0100 \mathrm{ M$, $[\mathrm{SCN^-] = 0.0080 \mathrm{ M$ and
+    equilibrium $[\mathrm{Fe^{3+}] = 0.0100 \mathrm{ M$$[\mathrm{SCN^-] = 0.0080 \mathrm{ M$ and
     $[\mathrm{FeSCN^{2+}] = 0.0020 \mathrm{ M$.
 
 21. Explain why the rate of a reaction approximately doubles for every $10^{\circ}\mathrm{C$
@@ -700,7 +700,7 @@ Determine the rate law and rate constant.
 
 23. Calculate the pH of a saturated solution of $\mathrm{Mg(OH)_2$. $K_{sp} = 5.6 \times 10^{-12}$.
 
-24. A reaction has $\Delta H = +50 \mathrm{ kJ/mol$. At $300 \mathrm{ K$, $K = 0.10$. Calculate $K$ at
+24. A reaction has $\Delta H = +50 \mathrm{ kJ/mol$. At $300 \mathrm{ K$$K = 0.10$. Calculate $K$ at
     $400 \mathrm{ K$ using the van't Hoff equation.
 
 ## Practice Problems
@@ -742,7 +742,7 @@ $k = 0.0020 / 0.001 = 2.0 \mathrm{ M^{-2}s^{-1}}$.
 <details>
 <summary>Question 2: Equilibrium calculation with ICE table</summary>
 
-At $500 \mathrm{ K$, $\mathrm{PCl_5(g) \rightleftharpoons \mathrm{PCl_3(g) + \mathrm{Cl_2(g)$ Has
+At $500 \mathrm{ K$$\mathrm{PCl_5(g) \rightleftharpoons \mathrm{PCl_3(g) + \mathrm{Cl_2(g)$ Has
 $K_p = 1.05$. If $2.00 \mathrm{ atm$ of $\mathrm{PCl_5$ is placed in a flask and the system Reaches
 equilibrium, calculate the equilibrium partial pressures of all three gases and the Percentage
 dissociation of $\mathrm{PCl_5$.
@@ -770,7 +770,7 @@ Using the quadratic formula:
 $x = \frac{-1.05 + \sqrt{1.1025 + 8.40}}{2} = \frac{-1.05 + 3.086}{2} = 1.018 \mathrm{ atm$.
 
 Equilibrium pressures: $P_{\mathrm{PCl_5} = 2.00 - 1.018 = 0.982 \mathrm{ atm$
-$P_{\mathrm{PCl_3} = 1.018 \mathrm{ atm$, $P_{\mathrm{Cl_2} = 1.018 \mathrm{ atm$.
+$P_{\mathrm{PCl_3} = 1.018 \mathrm{ atm$$P_{\mathrm{Cl_2} = 1.018 \mathrm{ atm$.
 
 Percentage dissociation: $\frac{1.018}{2.00} \times 100 = 50.9\%$.
 

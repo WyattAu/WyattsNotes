@@ -121,7 +121,7 @@ $$dt = \frac◆LB◆dv◆RB◆◆LB◆\frac{P}{mv} - \frac{R}{m}◆RB◆ = \frac
 
 $$t = \int_{5}^{15} \frac{mv}{P - Rv}\,dv = 800\int_{5}^{15} \frac{v}{40000 - 200v}\,dv$$
 
-Let $u = 40000 - 200v$, $du = -200\,dv$, $dv = -\frac{du}{200}$, $v = \frac{40000 - u}{200}$:
+Let $u = 40000 - 200v$$du = -200\,dv$$dv = -\frac{du}{200}$$v = \frac{40000 - u}{200}$:
 
 $$t = 800\int \frac{(40000 - u)/200}{u} \cdot \left(-\frac{du}{200}\right) = 800 \times \frac{-1}{40000}\int \frac{40000 - u}{u}\,du$$
 
@@ -235,11 +235,11 @@ $$21 = \frac{1}{2}(2)v^2 \implies v^2 = 21 \implies v = \sqrt{21} \approx 4.58 \
 **(c)** $F(x) = 0 \implies 3x^2 + 2x - 5 = 0 \implies (3x + 5)(x - 1) = 0 \implies x = -\frac{5}{3}$
 or $x = 1$.
 
-For $x \lt -5/3$: test $x = -2$, $F = 12 - 4 - 5 = 3 \gt 0$ (force in positive $x$-direction).
+For $x \lt -5/3$: test $x = -2$$F = 12 - 4 - 5 = 3 \gt 0$ (force in positive $x$-direction).
 
-For $-5/3 \lt x \lt 1$: test $x = 0$, $F = -5 \lt 0$ (force in negative $x$-direction).
+For $-5/3 \lt x \lt 1$: test $x = 0$$F = -5 \lt 0$ (force in negative $x$-direction).
 
-For $x \gt 1$: test $x = 2$, $F = 12 + 4 - 5 = 11 \gt 0$ (force in positive $x$-direction).
+For $x \gt 1$: test $x = 2$$F = 12 + 4 - 5 = 11 \gt 0$ (force in positive $x$-direction).
 
 The force does positive work in $(-\infty, -5/3)$ and $(1, \infty)$And negative work in $(-5/3, 1)$.
 
@@ -385,7 +385,7 @@ $$\frac{1}{2}(5)v^2 = 142.3 \implies v^2 = 56.9 \implies v \approx 7.54 \text{ m
 
 $$a = -g\sin 30° - \mu g\cos 30° = -4.9 - 2.121 = -7.021 \text{ m/s}^2$$
 
-Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 12$:
+Using $v^2 = u^2 + 2as$ with $v = 0$$u = 12$:
 
 $$0 = 144 + 2(-7.021)d \implies d = \frac{144}{14.042} \approx 10.25 \text{ m}$$
 

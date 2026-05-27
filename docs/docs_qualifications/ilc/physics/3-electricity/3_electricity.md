@@ -318,7 +318,7 @@ $$
 
 At resonance, impedance is minimum ($Z = R$) and current is maximum.
 
-**Example (HL):** An RLC circuit has $R = 100\mathrm{ ohms$, $L = 0.5\mathrm{ H$
+**Example (HL):** An RLC circuit has $R = 100\mathrm{ ohms$$L = 0.5\mathrm{ H$
 $C = 20\mathrm{ \mu F$. Find the resonant frequency and the impedance at resonance.
 
 $$
@@ -390,8 +390,8 @@ $$
 5. Two capacitors of $22\mathrm{ \mu F$ and $47\mathrm{ \mu F$ are connected in series across a
    $12\mathrm{ V$ supply. Find the total capacitance and the charge on each capacitor.
 
-6. An AC circuit has $R = 200\mathrm{ ohms$, $L = 0.2\mathrm{ H$, $C = 50\mathrm{ \mu F$ at
-   $f = 100\mathrm{ Hz$. Calculate $X_L$, $X_C$, $Z$The phase angle, and the power dissipated.
+6. An AC circuit has $R = 200\mathrm{ ohms$$L = 0.2\mathrm{ H$$C = 50\mathrm{ \mu F$ at
+   $f = 100\mathrm{ Hz$. Calculate $X_L$$X_C$$Z$The phase angle, and the power dissipated.
 
 7. A battery of EMF $12\mathrm{ V$ and internal resistance $1.0\mathrm{ \Omega$ is connected to an
    external circuit of resistance $5\mathrm{ \Omega$. Calculate the power dissipated in the external
@@ -420,7 +420,7 @@ $$0.95 = 1 - e^{-t/3.3} \implies e^{-t/3.3} = 0.05 \implies t = -3.3 \times\ln(0
 
 ## 10. Worked Example: RLC Circuit Analysis (HL)
 
-An RLC series circuit has $R = 200\mathrm{ \Omega$, $L = 0.5\mathrm{ H$, $C = 20\mathrm{ \mu\mathrm{F$
+An RLC series circuit has $R = 200\mathrm{ \Omega$$L = 0.5\mathrm{ H$$C = 20\mathrm{ \mu\mathrm{F$
 At $f = 100\mathrm{ Hz$.
 
 **Inductive reactance:** $X_L = 2\pi fL = 2\pi \times 100 \times 0.5 = 314.2\mathrm{ \Omega$
@@ -477,7 +477,7 @@ $$I_p = \frac{I_s \times V_s}{0.95 \times V_p} = \frac{5 \times 2300}{0.95 \time
 
 ### Worked Example
 
-Three capacitors $C_1 = 22\mu\mathrm{F$, $C_2 = 47\mu\mathrm{F$And $C_3 = 10\mu\mathrm{F$ are
+Three capacitors $C_1 = 22\mu\mathrm{F$$C_2 = 47\mu\mathrm{F$And $C_3 = 10\mu\mathrm{F$ are
 Connected in series across a $12\mathrm{ V$ supply.
 
 **Total capacitance:**
@@ -545,7 +545,7 @@ The $6\mathrm{ \Omega$ resistor, not the total current. Let me recalculate:
 
 $V_p = 1.017 \times 4.8 = 4.882\mathrm{ V$
 
-$I_8 = \frac{4.882}{8} = 0.610\mathrm{ A$, $I_{12} = \frac{4.882}{12} = 0.407\mathrm{ A$
+$I_8 = \frac{4.882}{8} = 0.610\mathrm{ A$$I_{12} = \frac{4.882}{12} = 0.407\mathrm{ A$
 
 Check: $0.610 + 0.407 = 1.017\mathrm{ A$. Correct.
 
@@ -580,8 +580,8 @@ Check: $0.610 + 0.407 = 1.017\mathrm{ A$. Correct.
     $68\mathrm{ k\Omega$ resistor. Calculate (a) the time constant, (b) the voltage after
     $5\mathrm{ s$(c) the energy stored initially, and (d) the energy remaining after $5\mathrm{ s$.
 
-13. An AC circuit has $R = 150\mathrm{ \Omega$, $L = 0.3\mathrm{ H$, $C = 30\mathrm{ \mu\mathrm{F$ at
-    $f = 200\mathrm{ Hz$. Calculate $X_L$, $X_C$, $Z$The phase angle, the current, and the power
+13. An AC circuit has $R = 150\mathrm{ \Omega$$L = 0.3\mathrm{ H$$C = 30\mathrm{ \mu\mathrm{F$ at
+    $f = 200\mathrm{ Hz$. Calculate $X_L$$X_C$$Z$The phase angle, the current, and the power
     dissipated.
 
 14. A transformer with 1000 primary turns and 50 secondary turns is connected to a
@@ -617,7 +617,7 @@ Check: $0.610 + 0.407 = 1.017\mathrm{ A$. Correct.
 ### Example 21: AC Circuit with Purely Resistive, Inductive, and Capacitive Loads
 
 Compare the behaviour of a $100 \Omega$ resistor, a $0.5 \mathrm{ H$ inductor, and a
-$10 \mu\mathrm{F$ Capacitor when connected individually to a $230 \mathrm{ V$, $50 \mathrm{ Hz$ AC
+$10 \mu\mathrm{F$ Capacitor when connected individually to a $230 \mathrm{ V$$50 \mathrm{ Hz$ AC
 supply.
 
 **Resistor:**
@@ -654,7 +654,7 @@ This: a purely resistive load has $\cos\phi = 1$While purely reactive loads have
 
 ### Example 22: Measuring Unknown Resistance with a Wheatstone Bridge
 
-A Wheatstone bridge has $P = 100 \Omega$, $Q = 200 \Omega$, $R = 150 \Omega$And $S$ is unknown. The
+A Wheatstone bridge has $P = 100 \Omega$$Q = 200 \Omega$$R = 150 \Omega$And $S$ is unknown. The
 galvanometer shows zero deflection. Calculate $S$. If the battery EMF is $6 \mathrm{ V$ Calculate
 the current through each resistor.
 
@@ -664,9 +664,9 @@ $$\frac{P}{Q} = \frac{R}{S} \implies \frac{100}{200} = \frac{150}{S} \implies S 
 
 **Step 2: Currents (no current through galvanometer at balance)**
 
-Branch 1 ($P$ and $Q$ in series): $R_1 = 300 \Omega$, $I_1 = 6/300 = 0.020 \mathrm{ A$
+Branch 1 ($P$ and $Q$ in series): $R_1 = 300 \Omega$$I_1 = 6/300 = 0.020 \mathrm{ A$
 
-Branch 2 ($R$ and $S$ in series): $R_2 = 450 \Omega$, $I_2 = 6/450 = 0.0133 \mathrm{ A$
+Branch 2 ($R$ and $S$ in series): $R_2 = 450 \Omega$$I_2 = 6/450 = 0.0133 \mathrm{ A$
 
 Total current from battery: $I = I_1 + I_2 = 0.020 + 0.0133 = 0.0333 \mathrm{ A = 33.3 \mathrm{ mA$
 

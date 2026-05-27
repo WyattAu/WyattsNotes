@@ -26,7 +26,7 @@ pressure on the surface if it is (i) perfectly absorbing and (ii) perfectly refl
 (c) Calculate the energy of a single photon of this radiation.
 
 Take
-$c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$, $\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$, $\mu_0 = 4\pi \times 10^{-7}\,\text{H}\,\text{m}^{-1}$, $h = 6.63 \times 10^{-34}\,\text{J}\,\text{s}$.
+$c = 3.00 \times 10^8\,\text{m}\,\text{s}^{-1}$$\varepsilon_0 = 8.85 \times 10^{-12}\,\text{F}\,\text{m}^{-1}$$\mu_0 = 4\pi \times 10^{-7}\,\text{H}\,\text{m}^{-1}$$h = 6.63 \times 10^{-34}\,\text{J}\,\text{s}$.
 
 **Solution:**
 

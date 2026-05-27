@@ -54,7 +54,7 @@ $$= 1 + x - \frac{1}{2}x^2 + \frac{1}{2}x^3 + \cdots$$
 
 The expansion is valid when $|2x| < 1$I.e. $|x| < \frac{1}{2}$.
 
-**(b)** To estimate $\sqrt{1.02} = (1.02)^{1/2}$Set $1 + 2x = 1.02$Giving $2x = 0.02$, $x = 0.01$.
+**(b)** To estimate $\sqrt{1.02} = (1.02)^{1/2}$Set $1 + 2x = 1.02$Giving $2x = 0.02$$x = 0.01$.
 
 Since $|0.01| < 0.5$The expansion is valid.
 
@@ -75,7 +75,7 @@ decimal place.
 So $\sqrt{1.02} \approx 1.009950$ to 6 decimal places.
 
 **Overestimate or underestimate?** The next term is negative ($-5x^4/8$), so the partial sum up to
-$x^3$ is an overestimate. (The terms alternate in sign: $+x$, $-x^2/2$, $+x^3/2$, $-5x^4/8$, $...$.)
+$x^3$ is an overestimate. (The terms alternate in sign: $+x$$-x^2/2$$+x^3/2$$-5x^4/8$$...$.)
 
 **(c)** The generalised binomial coefficient:
 
@@ -188,7 +188,7 @@ $$\frac{27}{16} + \frac{3a}{4} = 0 \implies \frac{3a}{4} = -\frac{27}{16} \impli
 the expansion.
 
 Note that
-$1 = \frac{1}{4} \cdot 4$, $\frac{3}{2} = \frac{3}{4} \cdot 2$, $\frac{27}{8} = \frac{27}{16} \cdot 2$, $\frac{135}{16} = \frac{27}{8} \cdot 5$.
+$1 = \frac{1}{4} \cdot 4$$\frac{3}{2} = \frac{3}{4} \cdot 2$$\frac{27}{8} = \frac{27}{16} \cdot 2$$\frac{135}{16} = \frac{27}{8} \cdot 5$.
 
 The series $(2-3x)^{-2} = \frac{1}{4} + \frac{3x}{4} + \frac{27x^2}{16} + \frac{27x^3}{8} + \cdots$
 evaluated at $x = 1$ would give
@@ -205,7 +205,7 @@ That gives $1 + 3/2 + 27/16 + 27/16 + \cdots$Not matching.
 At $x = 1$: $1 + 3 + 27/4 + 27/2 + \cdots = 1 + 3 + 6.75 + 13.5 + \cdots$. Not matching either.
 
 Let me check the given series: $1, 3/2, 27/8, 135/16$. The ratio between consecutive terms:
-$3/2$, $9/4$, $5/2$. These aren't constant, so it's not a geometric series.
+$3/2$$9/4$$5/2$. These aren't constant, so it's not a geometric series.
 
 Consider $(2-3x)^{-2}$ at $x = 1/2$: $(2 - 3/2)^{-2} = (1/2)^{-2} = 4$.
 
@@ -223,7 +223,7 @@ $(1-x)^{-3} = 1 + 3x + 6x^2 + 10x^3 + \cdots$. At $x = 1/2$: $1 + 3/2 + 3/2 + 5/
 matching.
 
 Actually, the series $1 + 3/2 + 27/8 + 135/16 + \cdots$: checking $r_n = a_n/a_{n-1}$:
-$3/2$, $9/4$, $5/2$. The general term appears to be $(2n-1) \cdot 3^n / (2^{n+1})$ for $n \geq 0$.
+$3/2$$9/4$$5/2$. The general term appears to be $(2n-1) \cdot 3^n / (2^{n+1})$ for $n \geq 0$.
 
 At $n = 0$: $(1)(1)/2 = 1/2 \neq 1$. So the formula needs adjustment.
 

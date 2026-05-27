@@ -115,7 +115,7 @@ and sign errors.]
 
 **Solution:**
 
-**(a)** $X \sim N(50, 12)$So $\mu = 50$, $\sigma = \sqrt{12} = 2\sqrt{3}$.
+**(a)** $X \sim N(50, 12)$So $\mu = 50$$\sigma = \sqrt{12} = 2\sqrt{3}$.
 
 Standardising:
 
@@ -195,7 +195,7 @@ standard deviations.]
 
 **Solution:**
 
-**(a)** $A \sim N(25, 9)$So $\mu_A = 25$, $\sigma_A = 3$.
+**(a)** $A \sim N(25, 9)$So $\mu_A = 25$$\sigma_A = 3$.
 
 $$\mathrm{P}(A \lt 22) = \mathrm{P}\left(Z \lt \frac{22 - 25}{3}\right) = \mathrm{P}(Z \lt -1) = 1 - \Phi(1) = 1 - 0.8413 = 0.1587$$
 
@@ -205,7 +205,7 @@ Since $A$ and $B$ are independent normal variables, $T$ is also normally distrib
 
 $$T \sim N(\mu_A + \mu_B,\; \sigma_A^2 + \sigma_B^2) = N(25 + 30,\; 9 + 16) = N(55, 25)$$
 
-So $\mu_T = 55$, $\sigma_T = 5$.
+So $\mu_T = 55$$\sigma_T = 5$.
 
 $$\mathrm{P}(T \lt 60) = \mathrm{P}\left(Z \lt \frac{60 - 55}{5}\right) = \mathrm{P}(Z \lt 1) = 0.8413$$
 
@@ -287,7 +287,7 @@ We find the smallest value $c$ such that $\mathrm{P}(X \geq c \mid H_0) \leq 0.0
 
 $$\mathrm{P}(X \geq 9) = 1 - \mathrm{P}(X \leq 8)$$
 
-Using the binomial cumulative distribution with $n = 20$, $p = 0.3$:
+Using the binomial cumulative distribution with $n = 20$$p = 0.3$:
 
 $$\mathrm{P}(X \leq 8) = 0.8867 \quad \text{(from tables or calculator)}$$
 
@@ -314,9 +314,9 @@ value that gives exactly 5%. The closest we can get is 4.80% (with critical regi
 11.33% (with critical region $X \geq 9$). We choose the critical region that does not exceed the
 stated significance level.
 
-**(c)** Under $H_0$: $X \sim B(50, 0.3)$So $\mu = 15$, $\sigma^2 = 10.5$.
+**(c)** Under $H_0$: $X \sim B(50, 0.3)$So $\mu = 15$$\sigma^2 = 10.5$.
 
-Using the normal approximation: $X \approx N(15, 10.5)$, $\sigma = \sqrt{10.5} \approx 3.24$.
+Using the normal approximation: $X \approx N(15, 10.5)$$\sigma = \sqrt{10.5} \approx 3.24$.
 
 With continuity correction for $X \geq c$:
 

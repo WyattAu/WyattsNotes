@@ -14,7 +14,7 @@ hide_table_of_contents: true
 ### UT-1: VSEPR and Molecular Geometry
 
 **Question:** Draw the Lewis structures and predict the shapes and bond angles of
-$\text{XeF}_4$, $\text{SF}_4$And $\text{ClF}_3$. Identify the deviation from ideal bond angles where
+$\text{XeF}_4$$\text{SF}_4$And $\text{ClF}_3$. Identify the deviation from ideal bond angles where
 applicable.
 
 **Solution:**
@@ -38,7 +38,7 @@ angles: $\approx 87.5^\circ$ (slightly less than $90^\circ$ due to lone pair rep
 ### UT-2: Hybridisation Determination
 
 **Question:** Determine the hybridisation of the central atom in
-$\text{BF}_3$, $\text{NH}_3$, $\text{H}_2\text{O}$, $\text{XeF}_2$And $\text{BrF}_5$. For each, state the
+$\text{BF}_3$$\text{NH}_3$$\text{H}_2\text{O}$$\text{XeF}_2$And $\text{BrF}_5$. For each, state the
 number of electron domains and the predicted geometry.
 
 **Solution:**

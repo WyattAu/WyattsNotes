@@ -313,7 +313,7 @@ $p_{y,\text{initial}} = 0$.
 
 **After collision:**
 
-$A$: $v_{Ax} = 4\cos 30° = 2\sqrt{3}$, $v_{Ay} = 4\sin 30° = 2$.
+$A$: $v_{Ax} = 4\cos 30° = 2\sqrt{3}$$v_{Ay} = 4\sin 30° = 2$.
 
 **$x$-momentum conservation:**
 
@@ -395,7 +395,7 @@ $3$ kg which is at rest. The coefficient of restitution between $P$ and $Q$ is $
 
 **(b)** Find the velocities of $P$ and $Q$ after the collision between $P$ and $Q$.
 
-**(c)** After the collision with $Q$, $P$ moves on a rough horizontal surface with $\mu = 0.4$. Find
+**(c)** After the collision with $Q$$P$ moves on a rough horizontal surface with $\mu = 0.4$. Find
 the distance $P$ travels before coming to rest.
 
 **(d)** Find the total kinetic energy lost in both collisions combined, and the total impulse
@@ -434,7 +434,7 @@ Both particles move in the same direction (away from the wall).
 
 Deceleration: $a = -\mu g = -0.4 \times 9.8 = -3.92$ m/s$^2$.
 
-Using $v^2 = u^2 + 2as$ with $v = 0$, $u = 0.6$:
+Using $v^2 = u^2 + 2as$ with $v = 0$$u = 0.6$:
 
 $$0 = 0.36 + 2(-3.92)d \implies d = \frac{0.36}{7.84} \approx 0.0459 \text{ m} \approx 4.6 \text{ cm}$$
 

@@ -114,7 +114,7 @@ $E_b/A = 28.3/4 = 7.08$ MeV per nucleon.
 The binding energy per nucleon plotted against mass number shows:
 
 - **Light nuclei** ($A \lt 20$): Low binding energy per nucleon, with peaks at
-  $\prescript{4}{2}\mathrm{He}$, $\prescript{12}{6}\mathrm{C}$And $\prescript{16}{8}\mathrm{O}$ (magic
+  $\prescript{4}{2}\mathrm{He}$$\prescript{12}{6}\mathrm{C}$And $\prescript{16}{8}\mathrm{O}$ (magic
   numbers).
 - **Iron-56** ($\prescript{56}{26}\mathrm{Fe}$): Maximum binding energy per nucleon ($\sim 8.8$ MeV)
   — the most stable nucleus.
@@ -365,7 +365,7 @@ Number of nuclei present initially.
 
 **Answer.** After 20 hours: $n = 20/5 = 4$ half-lives. $A = 400/2^4 = 25$ Bq.
 
-$A_0 = \lambda N_0$, $\lambda = \ln 2/t_{1/2} = 0.693/18000 = 3.85 \times 10^{-5}$ s$^{-1}$.
+$A_0 = \lambda N_0$$\lambda = \ln 2/t_{1/2} = 0.693/18000 = 3.85 \times 10^{-5}$ s$^{-1}$.
 $N_0 = A_0/\lambda = 400/(3.85 \times 10^{-5}) = 1.04 \times 10^7$ nuclei.
 
 </details>

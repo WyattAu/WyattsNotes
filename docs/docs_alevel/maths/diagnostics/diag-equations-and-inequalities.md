@@ -70,7 +70,7 @@ Sign analysis:
 
 **Step 5: Assemble the solution.**
 
-The expression is non-negative when $x < -3$, $1 \leq x < 2$Or $x > 2$.
+The expression is non-negative when $x < -3$$1 \leq x < 2$Or $x > 2$.
 
 $$x \in (-\infty, -3) \cup [1, 2) \cup (2, \infty)$$
 
@@ -104,9 +104,9 @@ $$x = 1 \quad \text{or} \quad x = 2$$
 
 **Verification:**
 
-- $x = 1$: $|1-5+6| = |2| = 2$, $|2-4| = 2$. Valid.
-- $x = 2$: $|4-10+6| = 0$, $|4-4| = 0$. Valid.
-- $x = 5$: $|25-25+6| = 6$, $|10-4| = 6$. Valid.
+- $x = 1$: $|1-5+6| = |2| = 2$$|2-4| = 2$. Valid.
+- $x = 2$: $|4-10+6| = 0$$|4-4| = 0$. Valid.
+- $x = 5$: $|25-25+6| = 6$$|10-4| = 6$. Valid.
 
 The solutions are $x = 1, 2, 5$.
 
@@ -151,7 +151,7 @@ For exactly one real solution, we need $\Delta = 0$:
 
 $$4k^2 - 8(k^2 - 1) = 0$$ $$4k^2 - 8k^2 + 8 = 0$$ $$-4k^2 + 8 = 0$$ $$k^2 = 2$$ $$k = \sqrt{2}$$
 
-(Since we want the smallest positive $k$, $k = \sqrt{2}$.)
+(Since we want the smallest positive $k$$k = \sqrt{2}$.)
 
 **The solution:** When $\Delta = 0$:
 
@@ -200,7 +200,7 @@ $$y(x-1) = 2x + 3$$ $$xy - y = 2x + 3$$ $$x(y-2) = y + 3$$ $$x = \frac{y+3}{y-2}
 So $f^{-1}(x) = \frac{x+3}{x-2}$.
 
 Domain of $f^{-1}$: Since the range of $f$ (for $x > 1$) needs to be determined first. As
-$x \to 1^+$, $f(x) \to +\infty$. As $x \to +\infty$, $f(x) \to 2$. So range of $f$ is
+$x \to 1^+$$f(x) \to +\infty$. As $x \to +\infty$$f(x) \to 2$. So range of $f$ is
 $(2, +\infty)$Meaning domain of $f^{-1}$ is $x > 2$.
 
 Range of $f^{-1}$: This equals the domain of $f$So $(1, +\infty)$.
@@ -223,7 +223,7 @@ The solution is $x = \frac◆LB◆3 + \sqrt{21}◆RB◆◆LB◆2◆RB◆$.
 
 **(c)** For a function and its inverse, the solutions to $f(x) = f^{-1}(x)$ lie on the line $y = x$
 (the line of reflection). This is because $f(x) = f^{-1}(x)$ implies $f(f(x)) = x$And if $f(x) = c$
-then $f(c) = x$. When $f(x) = x$, $f^{-1}(x) = x = f(x)$.
+then $f(c) = x$. When $f(x) = x$$f^{-1}(x) = x = f(x)$.
 
 For this specific M\"obius transformation, since $f$ is a strictly decreasing function on
 $(1, \infty)$ (its derivative $f'(x) = \frac{-5}{(x-1)^2} < 0$), the graph of $f$ crosses $y = x$

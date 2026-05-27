@@ -277,7 +277,7 @@ gravitational field.
 the direction of motion. Calculate the new orbital radius, assuming the orbit remains circular.
 
 Take
-$G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$, $M_E = 5.97 \times 10^{24}\,\text{kg}$, $R_E = 6.37 \times 10^6\,\text{m}$.
+$G = 6.67 \times 10^{-11}\,\text{N}\,\text{m}^2\,\text{kg}^{-2}$$M_E = 5.97 \times 10^{24}\,\text{kg}$$R_E = 6.37 \times 10^6\,\text{m}$.
 
 **Solution:**
 

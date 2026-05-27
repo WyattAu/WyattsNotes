@@ -65,14 +65,14 @@ Foreign has a comparative advantage in Wine (lower OC: 0.5 &lt; 2.0).
 
 _Autarky (no trade):_
 
-- Home: splits labour equally: $C = 1200/4 = 300$, $W = 1200/8 = 150$. Total: 300C + 150W.
-- Foreign: splits labour equally: $C = 1200/12 = 100$, $W = 1200/6 = 200$. Total: 100C + 200W.
+- Home: splits labour equally: $C = 1200/4 = 300$$W = 1200/8 = 150$. Total: 300C + 150W.
+- Foreign: splits labour equally: $C = 1200/12 = 100$$W = 1200/6 = 200$. Total: 100C + 200W.
 - World total: 400C + 350W.
 
 _Specialisation:_
 
-- Home specialises in Cloth: $C = 1200/2 = 600$, $W = 0$.
-- Foreign specialises in Wine: $C = 0$, $W = 1200/3 = 400$.
+- Home specialises in Cloth: $C = 1200/2 = 600$$W = 0$.
+- Foreign specialises in Wine: $C = 0$$W = 1200/3 = 400$.
 - World total: 600C + 400W.
 
 **World output increases**: 400C → 600C (+200) and 350W → 400W (+50). Both countries gain if they
@@ -437,7 +437,7 @@ Imports from a member country (due to preferential tariffs). This reduces effici
 Consumer surplus falls by more than producer surplus and government revenue increase → **net welfare
 Loss** (deadweight loss from inefficient domestic production and reduced consumption).
 
-$, $\mathrm{DWL} = \frac{1}{2} \times (P_w + t - P_w) \times (Q_d^{domestic} - Q_s^{domestic}) = \frac{1}{2} t \times \Delta Q$, $
+$$\mathrm{DWL} = \frac{1}{2} \times (P_w + t - P_w) \times (Q_d^{domestic} - Q_s^{domestic}) = \frac{1}{2} t \times \Delta Q$$
 
 ## 8. Problem Set
 
@@ -585,11 +585,11 @@ Comparative advantage: leaving the EU's single market means the UK faces tariffs
 The Marshall-Lerner condition states that a depreciation of the exchange rate improves the current
 account balance if and only if:
 
-$, $|\text{PED}_X| + |\text{PED}_M| > 1$, $
+$$|\text{PED}_X| + |\text{PED}_M| > 1$$
 
 **Proof.** The current account balance in domestic currency is:
 
-$, $CA = P_X \cdot X(P_X^*) - P_M^* \cdot e \cdot M$, $
+$$CA = P_X \cdot X(P_X^*) - P_M^* \cdot e \cdot M$$
 
 Where $P_X$ is the export price in domestic currency, $X$ is export volume, $P_M^*$ is the import
 price in foreign currency, $e$ is the exchange rate (domestic currency per foreign currency), and
@@ -603,11 +603,11 @@ Define $\epsilon_X = -\frac◆LB◆\Delta X/X◆RB◆◆LB◆\Delta e/e◆RB◆$
 exchange rate) and $\epsilon_M = -\frac◆LB◆\Delta M/M◆RB◆◆LB◆\Delta e/e◆RB◆$ (elasticity of import
 volume to exchange rate). The current account improves when:
 
-$, $\epsilon_X \cdot \frac◆LB◆P_X \cdot X◆RB◆◆LB◆CA◆RB◆ + \epsilon_M \cdot \frac◆LB◆P_M^* \cdot e \cdot M◆RB◆◆LB◆CA◆RB◆ > \frac◆LB◆P_M^* \cdot e \cdot M - P_X \cdot X◆RB◆◆LB◆CA◆RB◆$, $
+$$\epsilon_X \cdot \frac◆LB◆P_X \cdot X◆RB◆◆LB◆CA◆RB◆ + \epsilon_M \cdot \frac◆LB◆P_M^* \cdot e \cdot M◆RB◆◆LB◆CA◆RB◆ > \frac◆LB◆P_M^* \cdot e \cdot M - P_X \cdot X◆RB◆◆LB◆CA◆RB◆$$
 
 If trade is initially balanced ($P_X \cdot X = P_M^* \cdot e \cdot M$), this simplifies to:
 
-$, $\epsilon_X + \epsilon_M > 1$, $
+$$\epsilon_X + \epsilon_M > 1$$
 
 Since $\epsilon_X = |\text{PED}_X|$ and $\epsilon_M = |\text{PED}_M|$The condition is
 $|\text{PED}_X| + |\text{PED}_M| > 1$. $\blacksquare$
@@ -646,7 +646,7 @@ $= 1.0$.
 
 The **terms of trade (ToT)** measure the ratio of export prices to import prices:
 
-$, $\text{ToT} = \frac{P_X}{P_M} \times 100$, $
+$$\text{ToT} = \frac{P_X}{P_M} \times 100$$
 
 Where $P_X$ is the export price index and $P_M$ is the import price index.
 
@@ -696,14 +696,14 @@ This is trade DIVERSION (GBP 200 cost per tonne).
 
 **Purchasing Power Parity (PPP):**
 
-$, $e = \frac{P_{domestic}}{P_{foreign}}$, $
+$$e = \frac{P_{domestic}}{P_{foreign}}$$
 
 **Absolute PPP**: the exchange rate should equal the ratio of domestic to foreign price levels. A
 Big Mac should cost the same everywhere (the "Big Mac index" published by The Economist).
 
 **Relative PPP**: the exchange rate should adjust to reflect inflation differentials:
 
-$, $\%\Delta e \approx \pi_{domestic} - \pi_{foreign}$, $
+$$\%\Delta e \approx \pi_{domestic} - \pi_{foreign}$$
 
 If UK inflation is 5% and US inflation is 3%, the pound should depreciate by approximately 2%
 against the dollar.

@@ -83,7 +83,7 @@ Then $m \equiv n \pmod{\text{ord_p(a)}$. This is often more precise than working
 Congruences $x \equiv a_i \pmod{m_i}$ for $i = 1, \ldots, k$ has a unique solution modulo
 $M = m_1 \cdots m_k$.
 
-**Proof sketch.** For $k = 2$: let $M_1 = m_2$, $M_2 = m_1$. Compute $t_1$ such that
+**Proof sketch.** For $k = 2$: let $M_1 = m_2$$M_2 = m_1$. Compute $t_1$ such that
 $M_1 t_1 \equiv 1 \pmod{m_1}$ (using the extended Euclidean algorithm) and $t_2$ such that
 $M_2 t_2 \equiv 1 \pmod{m_2}$. Then $x = a_1 M_1 t_1 + a_2 M_2 t_2$ satisfies both congruences.
 
@@ -138,7 +138,7 @@ solutions.
 integer $R(r, s)$ such that any 2-colouring of the edges of a complete graph on $R(r, s)$ vertices
 contains Either a red $K_r$ or a blue $K_s$.
 
-**Known values and bounds.** $R(3, 3) = 6$, $R(3, 4) = 9$, $R(3, 5) = 14$, $R(4, 4) = 18$.
+**Known values and bounds.** $R(3, 3) = 6$$R(3, 4) = 9$$R(3, 5) = 14$$R(4, 4) = 18$.
 $R(r, s) \leq \binom{r+s-2}{r-1}$.
 
 **Technique: constructive lower bounds.** To show $R(r, s) > n$Exhibit a 2-colouring of $K_n$ with
@@ -243,7 +243,7 @@ Where $m = \deg P$ and $n = \deg Q$.
 
 **Technique: irreducibility.** Eisenstein's criterion: if
 $f(x) = a_n x^n + \cdots + a_0 \in \mathbb{Z}[x]$ And there exists a prime $p$ such that
-$p \nmid a_n$, $p \mid a_i$ for $i < n$And $p^2 \nmid a_0$ Then $f$ is irreducible over $\mathbb{Q}$.
+$p \nmid a_n$$p \mid a_i$ for $i < n$And $p^2 \nmid a_0$ Then $f$ is irreducible over $\mathbb{Q}$.
 
 **Technique: roots of unity.** The $n$-th roots of unity are $\zeta_n^k = e^{2\pi i k/n}$ for
 $k = 0, 1, \ldots, n-1$. The cyclotomic polynomial
@@ -353,12 +353,12 @@ Where $x + y + z \neq 0$ and $P$ is the weighted average $P = \frac{xA + yB + zC
 
 **Key points.**
 
-- $A = (1:0:0)$, $B = (0:1:0)$, $C = (0:0:1)$
+- $A = (1:0:0)$$B = (0:1:0)$$C = (0:0:1)$
 - Centroid $G = (1:1:1)$
 - Incentre $I = (a:b:c)$ where $a, b, c$ are side lengths
 - Circumcentre $O = (a^2(b^2 + c^2 - a^2) : b^2(c^2 + a^2 - b^2) : c^2(a^2 + b^2 - c^2))$
 
-**Collinearity.** Three points $(x_1:y_1:z_1)$, $(x_2:y_2:z_2)$, $(x_3:y_3:z_3)$ are collinear if And
+**Collinearity.** Three points $(x_1:y_1:z_1)$$(x_2:y_2:z_2)$$(x_3:y_3:z_3)$ are collinear if And
 only if:
 
 $$\begin{vmatrix} x_1 & y_1 & z_1 \\ x_2 & y_2 & z_2 \\ x_3 & y_3 & z_3 \end{vmatrix} = 0$$
@@ -458,7 +458,7 @@ $$\frac{(a^2 + b^2 + c^2)^2}{\sum_{\text{sym} a^2 b - 3abc} \geq a + b + c$$
 
 I.e., $(a^2 + b^2 + c^2)^2 \geq (a + b + c)\left(\sum_{\text{sym} a^2 b - 3abc\right)$.
 
-Let $S = a + b + c$, $Q = ab + bc + ca$, $P = abc$. Then $\sum_{\text{sym} a^2 b = SQ - 3P$.
+Let $S = a + b + c$$Q = ab + bc + ca$$P = abc$. Then $\sum_{\text{sym} a^2 b = SQ - 3P$.
 
 The right side becomes $(a+b+c)(SQ - 6P) = S^2 Q - 6SP$.
 
@@ -534,10 +534,10 @@ pencil of lines through $P$. The inverse of $R'$ is a fixed point $R$ such that 
 of $\triangle QAB$ passes Through $R$.
 
 A cleaner characterisation: the point $R$ is the Miquel point of the complete quadrilateral formed
-By $\omega_1$, $\omega_2$And the line $PQ$. By the Miquel theorem, the circumcircles of the four
+By $\omega_1$$\omega_2$And the line $PQ$. By the Miquel theorem, the circumcircles of the four
 Triangles formed by any three of these four lines/circles concur at $R$.
 
-In particular, the circumcircle of $\triangle QAB$ (formed by $\omega_1$, $\omega_2$And the line
+In particular, the circumcircle of $\triangle QAB$ (formed by $\omega_1$$\omega_2$And the line
 Through $P$) always passes through the Miquel point $R$Which is fixed.
 
 ---
@@ -578,7 +578,7 @@ Non-empty set $S$ with the desired property.
 ### Question 6 (Geometry: Complex Numbers)
 
 > Let $ABC$ be a triangle with circumcircle $\Gamma$. A point $P$ lies in the interior of
-> $\triangle ABC$. The lines $AP$, $BP$, $CP$ meet $\Gamma$ again at $D$, $E$, $F$ respectively. Prove that
+> $\triangle ABC$. The lines $AP$$BP$$CP$ meet $\Gamma$ again at $D$$E$$F$ respectively. Prove that
 > $\frac{PD}{AD} + \frac{PE}{BE} + \frac{PF}{CF} = 1$.
 
 **Solution.** We use barycentric coordinates with respect to $\triangle ABC$. Let $P$ have
@@ -599,14 +599,14 @@ Therefore:
 $$\frac{PD}{AD} + \frac{PE}{BE} + \frac{PF}{CF} = \frac{[PBC] + [PCA] + [PAB]}{[ABC]} = \frac{[ABC]}{[ABC]} = 1$$
 
 The last equality holds because $P$ lies in the interior of $\triangle ABC$So the three triangles
-$PBC$, $PCA$, $PAB$ partition $\triangle ABC$ without overlap.
+$PBC$$PCA$$PAB$ partition $\triangle ABC$ without overlap.
 
 ---
 
 ## 7. Common Pitfalls
 
 **Insufficient rigour in number theory.** Modular arithmetic arguments must specify the modulus at
-Every step. When applying LTE, verify all hypotheses (e.g., $p \nmid ab$, $p$ odd or the $p = 2$
+Every step. When applying LTE, verify all hypotheses (e.g., $p \nmid ab$$p$ odd or the $p = 2$
 Variant). When using quadratic reciprocity, handle $p = 2$ separately.
 
 **Ignoring degenerate cases.** In geometry problems, degenerate configurations (collinear points,

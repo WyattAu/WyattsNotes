@@ -321,7 +321,7 @@ $$H = \frac{20^2 \sin^2 50^\circ}{2 \times 9.81} = \frac{400 \times 0.5868}{19.6
 | Period               | $T$      | s       | $T = 2\pi/\omega$         |
 | Frequency            | $f$      | Hz      | $f = 1/T = \omega/(2\pi)$ |
 
-Linear-angular relation: $v = r\omega$, $a = r\alpha$
+Linear-angular relation: $v = r\omega$$a = r\alpha$
 
 ### Centripetal Acceleration and Force
 
@@ -831,7 +831,7 @@ $$\frac{\Delta g}{g} = \sqrt{\left(\frac{\Delta h}{h}\right)^2 + \left(2\frac{\D
 
 The time measurement dominates the uncertainty due to the factor of 2.
 
-**Example:** $h = (1.00 \pm 0.01) \mathrm{ m}$, $t = (0.450 \pm 0.005) \mathrm{ s}$:
+**Example:** $h = (1.00 \pm 0.01) \mathrm{ m}$$t = (0.450 \pm 0.005) \mathrm{ s}$:
 
 $$g = \frac{2 \times 1.00}{(0.450)^2} = \frac{2.00}{0.2025} = 9.88 \mathrm{ m/s}^2$$
 
@@ -882,7 +882,7 @@ direction of the ball just before impact.
 <details>
 <summary>Solution</summary>
 
-$u_x = 20\cos 30^\circ = 17.32 \mathrm{ m/s}$, $u_y = 20\sin 30^\circ = 10.0 \mathrm{ m/s}$
+$u_x = 20\cos 30^\circ = 17.32 \mathrm{ m/s}$$u_y = 20\sin 30^\circ = 10.0 \mathrm{ m/s}$
 
 (a) Vertical motion (taking upward as positive, $h = -45 \mathrm{ m}$):
 

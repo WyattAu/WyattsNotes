@@ -352,7 +352,7 @@ SIGQUIT, SIGTSTP).
 ps -eo pid,pgid,sid,comm | head
 
 # The shell's own process group
-echo "Shell PID: $, $, PGID: $(ps -o pgid= -p $$)"
+echo "Shell PID: $$, PGID: $(ps -o pgid= -p $$)"
 ```
 
 ```mermaid

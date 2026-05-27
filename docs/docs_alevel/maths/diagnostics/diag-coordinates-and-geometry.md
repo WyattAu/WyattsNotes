@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 **Question:**
 
-Find the equation of the circle passing through the three points $A(1, 2)$, $B(5, 4)$And $C(3, 8)$.
+Find the equation of the circle passing through the three points $A(1, 2)$$B(5, 4)$And $C(3, 8)$.
 
 Express your answer in the form $(x-a)^2 + (y-b)^2 = r^2$ and in the expanded form
 $x^2 + y^2 + px + qy + r = 0$.
@@ -122,7 +122,7 @@ $$R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad S = \begin{pmatrix} 0
 **(c)** The point $P(3, 1)$ is first reflected in the line $y = x$ and then rotated $90°$
 anticlockwise about the origin. Find the coordinates of the image of $P$.
 
-**(d)** The triangle with vertices $(0, 0)$, $(4, 0)$, $(0, 3)$ is transformed by $RS$. Find the area of
+**(d)** The triangle with vertices $(0, 0)$$(4, 0)$$(0, 3)$ is transformed by $RS$. Find the area of
 the image and explain why it is preserved.
 
 [Difficulty: hard. Tests understanding that matrix multiplication is not commutative for
@@ -248,7 +248,7 @@ $\overrightarrow{AC} = \mathbf{c}$:
 
 **(b)** Find the ratio $AF : FD$.
 
-**(c)** If $|\mathbf{b}| = 5$, $|\mathbf{c}| = 7$And $\mathbf{b} \cdot \mathbf{c} = 15$Find
+**(c)** If $|\mathbf{b}| = 5$$|\mathbf{c}| = 7$And $\mathbf{b} \cdot \mathbf{c} = 15$Find
 $|\overrightarrow{AF}|$.
 
 [Difficulty: hard. Tests vector methods for concurrency problems and application of the dot
@@ -258,7 +258,7 @@ product.]
 
 **(a)** Express all points in terms of $\mathbf{b}$ and $\mathbf{c}$:
 
-- $\overrightarrow{OB} = \mathbf{b}$, $\overrightarrow{OC} = \mathbf{c}$ (since origin is at $A$)
+- $\overrightarrow{OB} = \mathbf{b}$$\overrightarrow{OC} = \mathbf{c}$ (since origin is at $A$)
 - $\overrightarrow{OD} = \overrightarrow{OB} + \frac{2}{3}\overrightarrow{BC} = \mathbf{b} + \frac{2}{3}(\mathbf{c} - \mathbf{b}) = \frac{1}{3}\mathbf{b} + \frac{2}{3}\mathbf{c}$
 - $\overrightarrow{OE} = \frac{1}{2}\mathbf{c}$
 
@@ -360,4 +360,4 @@ In terms of the original variables (after translation, using $x$ and $y$ for the
 
 $$y = x^2$$
 
-So $a = 1$, $b = 0$, $c = 0$.
+So $a = 1$$b = 0$$c = 0$.

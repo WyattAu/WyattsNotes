@@ -370,8 +370,8 @@ Psychological research is reported according to the guidelines of the American P
 Association (APA). Key conventions include:
 
 - **Statistical notation:** Test statistic, degrees of freedom, p-value. For example:
-  $t(28) = 2.45$, $\mathrm{p} \lt 0.05$, $r = 0.62$.
-- **Mean and standard deviation:** Reported as $M = 23.4$, $SD = 4.2$.
+  $t(28) = 2.45$$\mathrm{p} \lt 0.05$$r = 0.62$.
+- **Mean and standard deviation:** Reported as $M = 23.4$$SD = 4.2$.
 - **Confidence intervals:** Reported alongside point estimates, e.g., $95\%$ CI $[18.2, 28.6]$.
 - **Decimal places:** Means and standard deviations are reported to one decimal place for most
   measures; test statistics and p-values are reported to two or three decimal places.
