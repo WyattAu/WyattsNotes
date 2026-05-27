@@ -1783,7 +1783,7 @@ NP-complete.
 
 **Problem 18.** A language $L$ is in **DP** (difference of two NP sets) if there exist
 $L_1, L_2 \in \mathrm◆LB◆NP◆RB◆$ such that $L = L_1 \cap \overline◆LB◆L_2◆RB◆$. Show that
-$\mathrm◆LB◆SAT◆RB◆\mathrm◆LB◆-UNSAT◆RB◆ = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT◆RB◆ \mathrm◆LB◆ and 
+$\mathrm◆LB◆SAT◆RB◆\mathrm◆LB◆-UNSAT◆RB◆ = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT◆RB◆ \mathrm◆LB◆ and
 \psi \notin \mathrm◆LB◆SAT◆RB◆\}$
 is in DP. Is DP contained in $\Sigma_2^P$? Justify.
 
