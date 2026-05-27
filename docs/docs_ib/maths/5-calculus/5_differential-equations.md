@@ -600,9 +600,9 @@ Error: $|1.522 - 1.505| \approx 0.017$Roughly $1.1\%$.
 ## Cross-References
 
 - **Integration techniques** used in solving DEs: see
-  [Integration Techniques](integration-techniques)
+  [Integration Techniques](3_integration-techniques)
 - **Maclaurin series** arise when linearising DE solutions: see
-  [Sequences and Series](sequences-and-series)
+  [Sequences and Series](6_sequences-and-series)
 
 For the A-Level Further Maths treatment of this topic, see
 [Differential Equations](https://alevel.wyattau.com/docs/further-maths/pure-mathematics/differential-equations).

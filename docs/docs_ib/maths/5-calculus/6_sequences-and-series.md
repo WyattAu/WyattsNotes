@@ -569,11 +569,11 @@ Actual error: $|0.1823 - 0.18| = 0.0023$Which is within the bound.
 ## Cross-References
 
 - **Differentiation** is needed to derive Maclaurin and Taylor series: see
-  [Differentiation](differentiation-depth)
+  [Differentiation](2_differentiation)
 - **Integration** connects to term-by-term integration of power series: see
-  [Integration](integration-techniques)
+  [Integration](3_integration-techniques)
 - **Differential equations** use series expansions as solution methods: see
-  [Differential Equations](differential-equations)
+  [Differential Equations](5_differential-equations)
 - **Proof and reasoning** techniques including induction: see
   [Proof](../1-number-and-algebra/3_proof-and-logic)
 

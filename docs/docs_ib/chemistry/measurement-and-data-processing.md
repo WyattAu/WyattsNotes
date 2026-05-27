@@ -836,7 +836,7 @@ $$E_a = 44.9 \pm 3.3\mathrm{ kJ/mol}$$
   [./organic-chemistry-advanced](./organic-chemistry-advanced)
 - **Acid-base calculations and pH** → Review [./acids-bases-advanced](./acids-bases-advanced)
 - **Equilibrium constant expressions** → Review
-  [./equilibrium/equilibrium](./equilibrium/equilibrium)
+  [./7-equilibrium/1_equilibrium](./7-equilibrium/1_equilibrium)
 
 ## Summary
 

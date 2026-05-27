@@ -159,8 +159,8 @@ Identities, and an introduction to vector geometry.
   dimensions, and further trigonometric identities. HL students also study the reciprocal
   trigonometric functions and the inverse trigonometric functions in greater depth.
 
-> See [Vectors notes](3-geometry-and-trigonometry/vectors.md) and
-> [Trigonometry notes](3-geometry-and-trigonometry/trigonometry.md).
+> See [Vectors notes](3-geometry-and-trigonometry/2_vectors.md) and
+> [Trigonometry notes](3-geometry-and-trigonometry/1_trigonometry.md).
 
 ### Worked Example: Sine and Cosine Rules (SL)
 
