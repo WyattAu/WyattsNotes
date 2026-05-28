@@ -15,6 +15,7 @@ on:
       - 'package.json'
       - 'pnpm-lock.yaml'
       - 'scripts/escape-latex-braces.js'
+      - 'scripts/generate-university-plugin-config.mjs'
   workflow_dispatch:
 
 concurrency:
@@ -78,7 +79,7 @@ jobs:
         run: node scripts/generate-university-plugin-config.mjs ${{ matrix.subject }} ${{ matrix.docs_path }} ${{ matrix.extra_plugin != '' && 'intro' || '' }}
 
       - name: Build
-        run: npx docusaurus build --config /tmp/docusaurus-university-${{ matrix.subject }}.config.ts
+        run: npx docusaurus build --config docusaurus-university-${{ matrix.subject }}.config.ts
         env:
           NODE_OPTIONS: --max-old-space-size=11264
           DISABLE_LUNRACE: 'true'
