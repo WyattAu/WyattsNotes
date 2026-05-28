@@ -2395,7 +2395,7 @@ $\blacksquare$
 magnitude.
 
 **Solution.**
-$\langle S \rangle = \frac◆LB◆E_0^2◆RB◆◆LB◆2\mu_0 c◆RB◆ = \frac◆LB◆100^2◆RB◆◆LB◆2 \times 4\pi \times 10^◆LB◆-7◆RB◆ \times 3 \times 10^8◆RB◆ = \frac◆LB◆10000◆RB◆◆LB◆754◆RB◆ \approx 13.3 \mathrm◆LB◆ W/m^2◆RB◆$.
+$\langle S \rangle = \frac◆LB◆E_0^2◆RB◆◆LB◆2\mu_0 c◆RB◆ = \frac◆LB◆100^2◆RB◆◆LB◆2 \times 4\pi \times 10^◆LB◆-7◆RB◆ \times 3 \times 10^8◆RB◆ = \frac◆LB◆10000◆RB◆◆LB◆754◆RB◆ \approx 13.3 \mathrm◆LB◆ W/m◆RB◆^2◆RB◆$.
 
 $\blacksquare$
 

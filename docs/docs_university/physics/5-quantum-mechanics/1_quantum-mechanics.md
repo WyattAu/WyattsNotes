@@ -2496,7 +2496,7 @@ $\blacksquare$
 uncertainty in its momentum.
 
 **Solution.** $\Delta x = 0.1 \times 10^◆LB◆-9◆RB◆ \mathrm◆LB◆ m◆RB◆$.
-$\Delta p \geq \frac◆LB◆\hbar◆RB◆◆LB◆2\Delta x◆RB◆ = \frac◆LB◆1.055 \times 10^◆LB◆-34◆RB◆◆RB◆◆LB◆2 \times 10^◆LB◆-10◆RB◆◆RB◆ = 5.28 \times 10^◆LB◆-25◆RB◆ \mathrm◆LB◆ kg\cdot m/s◆RB◆$.
+$\Delta p \geq \frac◆LB◆\hbar◆RB◆◆LB◆2\Delta x◆RB◆ = \frac◆LB◆1.055 \times 10^◆LB◆-34◆RB◆◆RB◆◆LB◆2 \times 10^◆LB◆-10◆RB◆◆RB◆ = 5.28 \times 10^◆LB◆-25◆RB◆ \mathrm◆LB◆ kg\cdot◆RB◆ m/s◆RB◆$.
 
 $\blacksquare$
 

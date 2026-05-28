@@ -951,7 +951,7 @@ the "original pairing heap" and gave a $\Omega(\log \log n)$ lower bound for a s
 The **incidence matrix** $M$ of an undirected graph $G = (V, E)$ with $n$ vertices and $m$ edges is
 an $n \times m$ matrix where:
 
-$$M_◆LB◆v,e◆RB◆ = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if◆RB◆ vertex  v \text◆LB◆ is incident to edge  e \\ 0 & \text◆LB◆otherwise◆RB◆ \end◆LB◆cases◆RB◆$$
+$$M_◆LB◆v,e◆RB◆ = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if◆RB◆ vertex  v \text◆LB◆ is◆RB◆ incident to edge  e \\ 0 & \text◆LB◆otherwise◆RB◆ \end◆LB◆cases◆RB◆$$
 
 For directed graphs, $M_◆LB◆v,e◆RB◆ = 1$ if $v$ is the tail of $e$, $M_◆LB◆v,e◆RB◆ = -1$ if $v$ is the head of
 $e$And $0$ otherwise.
@@ -1013,7 +1013,7 @@ Total space: $(|V|+1) + 2|E| = 5 + 12 = 17$ integers.
 The **inverse Ackermann function** $\alpha(n)$ is defined in terms of a rapidly growing function
 $A_k(j)$:
 
-$$A_k(j) = \begin◆LB◆cases◆RB◆ 2j & \text◆LB◆if◆RB◆  k = 0 \\ 0 & \text◆LB◆if◆RB◆  j = 0 \text◆LB◆ and  k \geq 1 \\ A_◆LB◆k-1◆RB◆(A_k(j-1)) & \text◆LB◆if◆RB◆  j \geq 1 \text◆LB◆ and  k \geq 1 \end◆LB◆cases◆RB◆$$
+$$A_k(j) = \begin◆LB◆cases◆RB◆ 2j & \text◆LB◆if◆RB◆  k = 0 \\ 0 & \text◆LB◆if◆RB◆  j = 0 \text◆LB◆ and◆RB◆  k \geq 1 \\ A_◆LB◆k-1◆RB◆(A_k(j-1)) & \text◆LB◆if◆RB◆  j \geq 1 \text◆LB◆ and◆RB◆  k \geq 1 \end◆LB◆cases◆RB◆$$
 
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 

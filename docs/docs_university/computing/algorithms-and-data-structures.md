@@ -894,7 +894,7 @@ Let $X_◆LB◆ij◆RB◆$ be the indicator random variable that $z_i$ and $z_j$
 $z_1, \ldots, z_n$ are the sorted elements. Since elements are compared only if one is an ancestor
 of the other in the recursion tree, and the pivot is chosen uniformly at random:
 
-$$\mathrm◆LB◆E◆RB◆[X_◆LB◆ij◆RB◆] = \Pr(z_i \mathrm◆LB◆~and~ z_j \mathrm◆LB◆~are~compared) = \frac◆LB◆2◆RB◆◆LB◆j - i + 1◆RB◆$$
+$$\mathrm◆LB◆E◆RB◆[X_◆LB◆ij◆RB◆] = \Pr(z_i \mathrm◆LB◆~and~◆RB◆ z_j \mathrm◆LB◆~are~compared◆RB◆) = \frac◆LB◆2◆RB◆◆LB◆j - i + 1◆RB◆$$
 
 The total number of comparisons is $X = \sum_◆LB◆i < j◆RB◆ X_◆LB◆ij◆RB◆$So:
 
@@ -1593,7 +1593,7 @@ knapsack of capacity $W$Maximise the total value without exceeding the capacity.
 
 **Recurrence:**
 
-$$dp[i][c] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  i = 0 \mathrm◆LB◆ or  c = 0 \\ dp[i-1][c] & \mathrm◆LB◆if◆RB◆  w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm◆LB◆if◆RB◆  w_i \leq c \end◆LB◆cases◆RB◆$$
+$$dp[i][c] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  i = 0 \mathrm◆LB◆ or◆RB◆  c = 0 \\ dp[i-1][c] & \mathrm◆LB◆if◆RB◆  w_i > c \\ \max(dp[i-1][c], dp[i-1][c - w_i] + v_i) & \mathrm◆LB◆if◆RB◆  w_i \leq c \end◆LB◆cases◆RB◆$$
 
 **Time:** $O(nW)$. **Space:** $O(nW)$ (can be reduced to $O(W)$ with 1D array).
 
@@ -1704,7 +1704,7 @@ Minimum: $dp[1][3] = 4500$Split at $k=2$: $(A_1(A_2 A_3))$.
 
 **Recurrence:**
 
-$$dp[i][j] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  i = 0 \mathrm◆LB◆ or  j = 0 \\ dp[i-1][j-1] + 1 & \mathrm◆LB◆if◆RB◆  x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm◆LB◆if◆RB◆  x_i \neq y_j \end◆LB◆cases◆RB◆$$
+$$dp[i][j] = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if◆RB◆  i = 0 \mathrm◆LB◆ or◆RB◆  j = 0 \\ dp[i-1][j-1] + 1 & \mathrm◆LB◆if◆RB◆  x_i = y_j \\ \max(dp[i-1][j], dp[i][j-1]) & \mathrm◆LB◆if◆RB◆  x_i \neq y_j \end◆LB◆cases◆RB◆$$
 
 **Time:** $O(mn)$. **Space:** $O(mn)$ (can be reduced to $O(\min(m,n))$ for the length only).
 
@@ -1755,7 +1755,7 @@ Solution: 2 quarters + 1 dime + 3 pennies = $25 + 25 + 10 + 1 + 1 + 1 = 63$. 6 c
 **Problem.** Given a sequence $a_1, \ldots, a_n$Find the length of the longest strictly increasing
 subsequence (not necessarily contiguous).
 
-**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt i \mathrm◆LB◆~and~ a_j \lt a_i\\}$With $dp[i] = 1$ if
+**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt i \mathrm◆LB◆~and~◆RB◆ a_j \lt a_i\\}$With $dp[i] = 1$ if
 no such $j$ exists.
 
 **Time:** $O(n^2)$. **Space:** $O(n)$.
@@ -1973,7 +1973,7 @@ probability.
 probability $\epsilon^k$ by running it $k$ times and taking the majority vote (for decision problems
 with one-sided error) or the most frequent answer (for two-sided error).
 
-_Proof._ For one-sided error: $\Pr[\mathrm◆LB◆all◆RB◆~ k \mathrm◆LB◆~runs~fail] = \epsilon^k$. For two-sided
+_Proof._ For one-sided error: $\Pr[\mathrm◆LB◆all◆RB◆~ k \mathrm◆LB◆~runs~fail◆RB◆] = \epsilon^k$. For two-sided
 error with majority vote: by the Chernoff bound, the probability that the majority is wrong
 decreases exponentially in $k$. $\blacksquare$
 

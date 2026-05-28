@@ -1405,7 +1405,7 @@ Region** (critical region).
 
 **Type II error**: failing to reject $H_0$ when it is false (false negative). Probability = $\beta$.
 
-The **power** of a test is $1 - \beta = P(\mathrm◆LB◆reject◆RB◆  H_0 \mid H_1 \mathrm◆LB◆ is true)$.
+The **power** of a test is $1 - \beta = P(\mathrm◆LB◆reject◆RB◆  H_0 \mid H_1 \mathrm◆LB◆ is◆RB◆ true)$.
 
 ### 8.3 Neyman-Pearson Lemma
 

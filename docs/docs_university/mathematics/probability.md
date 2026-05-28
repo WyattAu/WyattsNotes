@@ -404,7 +404,7 @@ $\blacksquare$
 
 **Theorem 5.1 (CDF Method).** If $Y = g(X)$ and $g$ is monotone, then
 
-$$F_Y(y) = P(g(X) \leq y) = \begin◆LB◆cases◆RB◆ F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if◆RB◆  g \text◆LB◆ is increasing \\ 1 - F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if◆RB◆  g \text◆LB◆ is decreasing \end◆LB◆cases◆RB◆$$
+$$F_Y(y) = P(g(X) \leq y) = \begin◆LB◆cases◆RB◆ F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if◆RB◆  g \text◆LB◆ is◆RB◆ increasing \\ 1 - F_X(g^◆LB◆-1◆RB◆(y)) & \text◆LB◆if◆RB◆  g \text◆LB◆ is◆RB◆ decreasing \end◆LB◆cases◆RB◆$$
 
 **Theorem 5.2 (Change of Variables).** If $Y = g(X)$ where $g$ is differentiable and strictly
 monotone, then

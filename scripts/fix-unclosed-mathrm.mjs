@@ -70,7 +70,7 @@ function fixUnclosedBraces(content) {
         const argStart = cmdEnd + LBRACE.length;
 
         // Read the argument: word characters, possibly with escaped spaces,
-        // parentheses, backslash-prefixed symbols, dots, hyphens, etc.
+        // parentheses, backslash-prefixed symbols, dots, hyphens, tildes, etc.
         let argEnd = argStart;
         while (argEnd < content.length) {
           const ch = content[argEnd];
@@ -91,6 +91,41 @@ function fixUnclosedBraces(content) {
             continue;
           }
 
+          // Tilde as non-breaking space (~and~, ~for~)
+          if (ch === '~') {
+            argEnd++;
+            continue;
+          }
+
+          // Leading space(s) in argument (like \text{ Pa/K})
+          // Skip leading spaces and continue reading
+          if (ch === ' ') {
+            let ahead = argEnd + 1;
+            while (ahead < content.length && content[ahead] === ' ') ahead++;
+            if (ahead < content.length && /[a-zA-Z0-9(~(]/.test(content[ahead])) {
+              // If we already consumed content, a space likely means end of argument
+              // (e.g., \mathrm{or}  w, not \mathrm{or  w})
+              if (argEnd > argStart) break;
+              argEnd = ahead; // skip leading spaces
+              continue;
+            }
+            break; // space not followed by content — end of argument
+          }
+
+          // Single space after content has started (for \text{ Pa/K})
+          // Only if we've already consumed some argument chars
+          if (ch === ' ' && argEnd > argStart) {
+            // Check if followed by word chars (continuation) or delimiter (end)
+            let ahead = argEnd + 1;
+            while (ahead < content.length && content[ahead] === ' ') ahead++;
+            if (ahead < content.length && /[a-zA-Z0-9(]/.test(content[ahead])) {
+              argEnd = ahead; // skip spaces, continue
+              continue;
+            }
+            // Otherwise space ends the argument
+            break;
+          }
+
           // Parenthesized text like \mathrm{(discrete)} or \mathrm{(div\ of\ curl)}
           if (ch === '(') {
             // Find matching closing paren
@@ -107,7 +142,7 @@ function fixUnclosedBraces(content) {
               }
               argEnd++;
             }
-            // After closing paren, check if escaped space continues
+            // After closing paren, check if escaped space or tilde continues
             if (
               argEnd < content.length &&
               content[argEnd] === '\\' &&
@@ -115,7 +150,11 @@ function fixUnclosedBraces(content) {
               /\s/.test(content[argEnd + 1])
             ) {
               argEnd += 2;
-              continue; // continue reading after parenthesized group
+              continue;
+            }
+            if (argEnd < content.length && content[argEnd] === '~') {
+              argEnd++;
+              continue;
             }
             continue;
           }
@@ -137,8 +176,19 @@ function fixUnclosedBraces(content) {
             continue;
           }
 
-          // Common punctuation that appears in \mathrm arguments
-          if (/[.\-]/.test(ch)) {
+          // Escaped closing brace \} at end of argument (like \mathrm{~for~all~ s \in S\})
+          if (
+            ch === '\\' &&
+            argEnd + 1 < content.length &&
+            content[argEnd + 1] === '}'
+          ) {
+            // Don't include the \} — it closes the outer set, not the \mathrm
+            break;
+          }
+
+          // Common punctuation that appears in \mathrm/\text arguments
+          // Include ' for quoted strings in domain relational calculus (e.g., \mathrm{'A'})
+          if (/[.\-\/']/.test(ch)) {
             argEnd++;
             continue;
           }

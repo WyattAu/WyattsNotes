@@ -338,9 +338,9 @@ Checking validity is Co-NP-complete, not NP-complete. :::
 
 **Basic operations:**
 
-- Union: $A \cup B = \\{x : x \in A \mathrm◆LB◆ or  x \in B\\}$
-- Intersection: $A \cap B = \\{x : x \in A \mathrm◆LB◆ and  x \in B\\}$
-- Difference: $A \setminus B = \\{x : x \in A \mathrm◆LB◆ and  x \notin B\\}$
+- Union: $A \cup B = \\{x : x \in A \mathrm◆LB◆ or◆RB◆  x \in B\\}$
+- Intersection: $A \cap B = \\{x : x \in A \mathrm◆LB◆ and◆RB◆  x \in B\\}$
+- Difference: $A \setminus B = \\{x : x \in A \mathrm◆LB◆ and◆RB◆  x \notin B\\}$
 - Complement: $A^c = U \setminus A$ (where $U$ is the universal set)
 
 **De Morgan's Laws:**

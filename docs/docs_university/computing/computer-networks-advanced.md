@@ -1241,7 +1241,7 @@ $$\text◆LB◆Throughput◆RB◆ \approx \frac◆LB◆1.22 \times \text◆LB◆
 
 $\text◆LB◆MSS◆RB◆ = 1460$ bytes $= 11680$ bits. $\text◆LB◆RTT◆RB◆ = 80$ ms $= 0.08$ s. $p = 0.001$.
 
-$$\text◆LB◆Throughput◆RB◆ \approx \frac◆LB◆1.22 \times 11680◆RB◆◆LB◆0.08 \times \sqrt◆LB◆0.001◆RB◆◆RB◆ = \frac◆LB◆14249.6◆RB◆◆LB◆0.08 \times 0.03162◆RB◆ = \frac◆LB◆14249.6◆RB◆◆LB◆0.002530◆RB◆ \approx 5\,632\,727 \text◆LB◆ bits/s \approx 5.63 \text◆LB◆ Mbps$$
+$$\text◆LB◆Throughput◆RB◆ \approx \frac◆LB◆1.22 \times 11680◆RB◆◆LB◆0.08 \times \sqrt◆LB◆0.001◆RB◆◆RB◆ = \frac◆LB◆14249.6◆RB◆◆LB◆0.08 \times 0.03162◆RB◆ = \frac◆LB◆14249.6◆RB◆◆LB◆0.002530◆RB◆ \approx 5\,632\,727 \text◆LB◆ bits/s◆RB◆ \approx 5.63 \text◆LB◆ Mbps◆RB◆$$
 
 The BDP is $\text◆LB◆BW◆RB◆ \times \text◆LB◆RTT◆RB◆ = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$
 KB. The receive window must be at least this for full utilisation.

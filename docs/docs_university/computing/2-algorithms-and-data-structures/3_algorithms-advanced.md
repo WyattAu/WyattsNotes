@@ -392,7 +392,7 @@ $S \subseteq \{0, \ldots, n-1\}$ is represented as an integer where bit $i$ is s
 **The Travelling Salesman Problem (TSP).** Find the shortest tour visiting all $n$ cities exactly
 once and returning to the start.
 
-$$dp[S][i] = \text◆LB◆minimum◆RB◆ cost to visit all cities in  S \text◆LB◆ starting from city 0, ending at city  i$$
+$$dp[S][i] = \text◆LB◆minimum◆RB◆ cost to visit all cities in  S \text◆LB◆ starting◆RB◆ from city 0, ending at city  i$$
 
 **Recurrence:**
 

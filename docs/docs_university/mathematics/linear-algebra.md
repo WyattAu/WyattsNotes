@@ -113,7 +113,7 @@ a Subspace of $\mathbb◆LB◆R◆RB◆^n$Called the **null space** of $A$.
 
 (b) $W_2 = \{(x, y, z) \in \mathbb◆LB◆R◆RB◆^3 : x^2 + y^2 = 1\}$
 
-(c) $W_3 = \{(x, y, z) \in \mathbb◆LB◆R◆RB◆^3 : x = 0 \mathrm◆LB◆~and~ y = z\}$
+(c) $W_3 = \{(x, y, z) \in \mathbb◆LB◆R◆RB◆^3 : x = 0 \mathrm◆LB◆~and~◆RB◆ y = z\}$
 
 <details>
 <summary>Solution</summary>
@@ -155,7 +155,7 @@ verify the dimension formula.
 $U$ has basis $\{(1, 0, 0), (0, 1, 0)\}$ and $\dim(U) = 2$. $W$ has basis $\{(0, 1, 0), (0, 0, 1)\}$
 and $\dim(W) = 2$.
 
-$U \cap W = \{(x, y, z) : z = 0 \mathrm◆LB◆~and~ x = 0\} = \{(0, y, 0) : y \in \mathbb◆LB◆R◆RB◆\}$ Which has
+$U \cap W = \{(x, y, z) : z = 0 \mathrm◆LB◆~and~◆RB◆ x = 0\} = \{(0, y, 0) : y \in \mathbb◆LB◆R◆RB◆\}$ Which has
 basis $\{(0, 1, 0)\}$ and dimension 1.
 
 $U + W = \mathrm◆LB◆span◆RB◆\{(1,0,0), (0,1,0), (0,1,0), (0,0,1)\} = \mathrm◆LB◆span◆RB◆\{(1,0,0), (0,1,0), (0,0,1)\} = \mathbb◆LB◆R◆RB◆^3$
@@ -493,7 +493,7 @@ $\det$ is multiplied by $\alpha$.
 
 (3) Adding $\alpha$ times row $j$ to row $i$ ($i \neq j$): by multilinearity in row $i$
 
-$$\det(\mathrm◆LB◆new◆RB◆~A) = \det(A) + \alpha \cdot \det(\mathrm◆LB◆matrix◆RB◆~with~rows~i\mathrm◆LB◆~and~j\mathrm◆LB◆~equal)$$
+$$\det(\mathrm◆LB◆new◆RB◆~A) = \det(A) + \alpha \cdot \det(\mathrm◆LB◆matrix◆RB◆~with~rows~i\mathrm◆LB◆~and~j\mathrm◆RB◆◆LB◆~equal)$$
 
 A matrix with two equal rows has determinant 0 (by antisymmetry: swapping them leaves the matrix
 Unchanged but multiplies $\det$ by $-1$So $\det = -\det$Hence $\det = 0$). Therefore
@@ -1324,7 +1324,7 @@ Isomorphism is a special feature of finite-dimensional spaces.
 
 **Definition.** For a subset $S \subseteq V$The **annihilator** of $S$ is
 
-$$S^0 = \{f \in V^* : f(s) = 0 \mathrm◆LB◆~for~all~ s \in S\}$$
+$$S^0 = \{f \in V^* : f(s) = 0 \mathrm◆LB◆~for~all~◆RB◆ s \in S\}$$
 
 **Proposition 6.8.** $S^0$ is a subspace of $V^*$And if $W$ is a subspace of $V$ with
 $\dim(V) = n$Then $\dim(W^0) = n - \dim(W)$.

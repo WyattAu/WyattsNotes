@@ -231,12 +231,12 @@ variable And $P$ is a well-formed formula. The formula is built from:
 - Logical connectives: $\land$ (and), $\lor$ (or), $\lnot$ (not).
 - Quantifiers: $\exists t$ (there exists), $\forall t$ (for all).
 
-$$\{t \mid \exists s \in \mathrm◆LB◆Takes◆RB◆(t[\mathrm◆LB◆name◆RB◆] = s[\mathrm◆LB◆name◆RB◆] \land s[\mathrm◆LB◆grade◆RB◆] = \mathrm◆LB◆'A')\}$$
+$$\{t \mid \exists s \in \mathrm◆LB◆Takes◆RB◆(t[\mathrm◆LB◆name◆RB◆] = s[\mathrm◆LB◆name◆RB◆] \land s[\mathrm◆LB◆grade◆RB◆] = \mathrm◆LB◆'A'◆RB◆)\}$$
 
 **Domain relational calculus.** Variables range over individual attribute domains (not entire
 tuples). A query has the form $\\{\langle x_1, \ldots, x_k \rangle \mid P(x_1, \ldots, x_k)\\}$.
 
-$$\{ \langle n \rangle \mid \exists s, g \;(\mathrm◆LB◆Takes◆RB◆(s, \mathrm◆LB◆'CS101', g) \land \mathrm◆LB◆Student◆RB◆(s, n, \ldots) \land g = \mathrm◆LB◆'A')\}$$
+$$\{ \langle n \rangle \mid \exists s, g \;(\mathrm◆LB◆Takes◆RB◆(s, \mathrm◆LB◆'CS101'◆RB◆, g) \land \mathrm◆LB◆Student◆RB◆(s, n, \ldots) \land g = \mathrm◆LB◆'A'◆RB◆)\}$$
 
 **Safety.** A calculus expression is **safe** if it yields a finite relation. The expression
 $\\{t \mid \lnot(t \in R)\\}$ is unsafe (it includes every tuple not in $R$An infinite set). We
@@ -252,7 +252,7 @@ Equally expressive: every query expressible in one is expressible in the other.
 
 Using tuple relational calculus:
 
-$$\{t \mid t \in \mathrm◆LB◆Student◆RB◆ \land \lnot \exists s \in \mathrm◆LB◆Takes◆RB◆\bigl(s[\mathrm◆LB◆sid◆RB◆] = t[\mathrm◆LB◆sid◆RB◆] \land \exists c \in \mathrm◆LB◆Course◆RB◆(c[\mathrm◆LB◆cid◆RB◆] = s[\mathrm◆LB◆cid◆RB◆] \land c[\mathrm◆LB◆dept◆RB◆] = \mathrm◆LB◆'CS')\bigr)\}$$
+$$\{t \mid t \in \mathrm◆LB◆Student◆RB◆ \land \lnot \exists s \in \mathrm◆LB◆Takes◆RB◆\bigl(s[\mathrm◆LB◆sid◆RB◆] = t[\mathrm◆LB◆sid◆RB◆] \land \exists c \in \mathrm◆LB◆Course◆RB◆(c[\mathrm◆LB◆cid◆RB◆] = s[\mathrm◆LB◆cid◆RB◆] \land c[\mathrm◆LB◆dept◆RB◆] = \mathrm◆LB◆'CS'◆RB◆\bigr)\}$$
 
 **Translation to relational algebra:**
 
@@ -1437,7 +1437,7 @@ $1 / V(A, R)$ where $V(A, R)$ is the number of distinct values of $A$ in $R$.
 
 **Nested-loop join.** For each tuple in $R$Scan all of $S$.
 
-$$\mathrm◆LB◆Cost◆RB◆ = n_R \cdot n_S \mathrm◆LB◆ page accesses (worst case)$$
+$$\mathrm◆LB◆Cost◆RB◆ = n_R \cdot n_S \mathrm◆LB◆ page◆RB◆ accesses (worst case)$$
 
 If one relation fits in memory, buffer it and scan the other: cost = $n_R + n_S$.
 
@@ -1455,7 +1455,7 @@ Efficient for large relations, especially when both are already sorted.
 **Hash join.** Build a hash table on the smaller relation (build phase), then probe with the larger
 (probe phase).
 
-$$\mathrm◆LB◆Cost◆RB◆ = 3 \cdot (n_R + n_S) \mathrm◆LB◆ (if build relation fits in memory)$$
+$$\mathrm◆LB◆Cost◆RB◆ = 3 \cdot (n_R + n_S) \mathrm◆LB◆ (if build relation fits in memory)◆RB◆$$
 
 Best for equi-joins when one relation fits in memory.
 

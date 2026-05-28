@@ -2473,7 +2473,7 @@ $\blacksquare$
 light that can excite an electron across the gap.
 
 **Solution.**
-$\lambda = \frac◆LB◆hc◆RB◆◆LB◆E_g◆RB◆ = \frac◆LB◆1240 \mathrm◆LB◆ eV\cdot nm◆RB◆◆RB◆◆LB◆1.1 \mathrm◆LB◆ eV◆RB◆◆RB◆ = 1127 \mathrm◆LB◆ nm◆RB◆$
+$\lambda = \frac◆LB◆hc◆RB◆◆LB◆E_g◆RB◆ = \frac◆LB◆1240 \mathrm◆LB◆ eV\cdot◆RB◆ nm◆RB◆◆RB◆◆LB◆1.1 \mathrm◆LB◆ eV◆RB◆◆RB◆ = 1127 \mathrm◆LB◆ nm◆RB◆$
 (infrared).
 
 $\blacksquare$

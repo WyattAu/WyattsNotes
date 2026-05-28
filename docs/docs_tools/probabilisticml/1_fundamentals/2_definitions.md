@@ -248,7 +248,7 @@ $\sigma$-algebra containing $\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'
 
 $$
 \begin◆LB◆equation◆RB◆
- \sigma(\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆) = \bigcap \left\{\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆:\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆, \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆ \mathrm◆LB◆ is a $\sigma$-algebra on ◆LB◆◆RB◆S \right\◆RB◆
+ \sigma(\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆) = \bigcap \left\{\mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆:\mathcal◆LB◆◆LB◆'◆RB◆C◆LB◆◆RB◆'◆RB◆ \subseteq \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆, \mathcal◆LB◆◆LB◆'◆RB◆G◆LB◆◆RB◆'◆RB◆ \mathrm◆LB◆ is◆RB◆ a $\sigma$-algebra on ◆LB◆◆RB◆S \right\◆RB◆
 \end◆LB◆equation◆RB◆
 $$
 
@@ -305,7 +305,7 @@ A measure space $(\Omega, \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆
 measurable (and hence also a null set). Formally:
 
 $$
-\mathrm◆LB◆If◆RB◆ ◆LB◆◆RB◆ N \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \mathrm◆LB◆ with ◆LB◆◆RB◆ \mu(N) = 0 \mathrm◆LB◆ and ◆LB◆◆RB◆ A \subseteq N, \mathrm◆LB◆ then ◆LB◆◆RB◆ A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆
+\mathrm◆LB◆If◆RB◆ ◆LB◆◆RB◆ N \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆ \mathrm◆LB◆ with◆RB◆ ◆LB◆◆RB◆ \mu(N) = 0 \mathrm◆LB◆ and◆RB◆ ◆LB◆◆RB◆ A \subseteq N, \mathrm◆LB◆ then◆RB◆ ◆LB◆◆RB◆ A \in \mathcal◆LB◆◆LB◆'◆RB◆F◆LB◆◆RB◆'◆RB◆
 $$
 
 _Note:_ The Lebesgue measure on $\mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$ is complete by construction. Any measure space
@@ -420,7 +420,7 @@ neighborhood of $x$ has positive measure. Equivalently, it is the intersection o
 with full measure:
 
 $$
-\mathrm◆LB◆supp◆RB◆◆LB◆◆RB◆(\mu) = \bigcap \{ C \subseteq S : C \mathrm◆LB◆ is closed and ◆LB◆◆RB◆ \mu(C) = 1 \}
+\mathrm◆LB◆supp◆RB◆◆LB◆◆RB◆(\mu) = \bigcap \{ C \subseteq S : C \mathrm◆LB◆ is◆RB◆ closed and ◆LB◆◆RB◆ \mu(C) = 1 \}
 $$
 
 ### Probability Measure
@@ -708,7 +708,7 @@ This is an integral constructed from $3$ steps:
 2. Non-negative Measurable Functions: For any $f: \Omega \rightarrow [0, \infty]$Defined as the
    supremum of integrals of simple functions bounded by f:
    $$
-   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \mathrm◆LB◆ is simple◆LB◆◆RB◆\right\◆RB◆
+   \int f d\mu = \sup \left\{\int s d\mu : 0\leq s \leq f, s \mathrm◆LB◆ is◆RB◆ simple◆LB◆◆RB◆\right\◆RB◆
    $$
 3. General Measurable Functions: For a **measurable** function
    $f: \Omega \rightarrow \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$Decompose into positive and negative parts

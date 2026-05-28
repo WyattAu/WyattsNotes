@@ -40,8 +40,8 @@ A **language** $L$ over $\Sigma$ is any subset of $\Sigma^*$. The empty language
 
 **Operations on languages:**
 
-- Union: $L_1 \cup L_2 = \{w : w \in L_1 \mathrm◆LB◆ or  w \in L_2\}$.
-- Intersection: $L_1 \cap L_2 = \{w : w \in L_1 \mathrm◆LB◆ and  w \in L_2\}$.
+- Union: $L_1 \cup L_2 = \{w : w \in L_1 \mathrm◆LB◆ or◆RB◆  w \in L_2\}$.
+- Intersection: $L_1 \cap L_2 = \{w : w \in L_1 \mathrm◆LB◆ and◆RB◆  w \in L_2\}$.
 - Concatenation: $L_1 \cdot L_2 = \{w_1 w_2 : w_1 \in L_1, w_2 \in L_2\}$.
 - Kleene star: $L^* = \{\varepsilon\} \cup L \cup L^2 \cup \cdots$.
 - Complement: $\overline◆LB◆L◆RB◆ = \Sigma^* \setminus L$.
@@ -58,9 +58,9 @@ complexity class.
 
 **Regular languages** (decidable by finite automata):
 
-- $L_3 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains the substring  101\}$.
-- $L_4 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ has an even number of  1\mathrm◆LB◆s◆RB◆\}$.
-- $L_5 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ interpreted in binary is divisible by  3\}$.
+- $L_3 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains◆RB◆ the substring  101\}$.
+- $L_4 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ has◆RB◆ an even number of  1\mathrm◆LB◆s◆RB◆\}$.
+- $L_5 = \{w \in \{0,1\}^* : w \mathrm◆LB◆ interpreted◆RB◆ in binary is divisible by  3\}$.
 
 **Context-free but not regular:**
 
@@ -71,12 +71,12 @@ complexity class.
 **Decidable but not context-free:**
 
 - $L_9 = \{a^n b^n c^n : n \geq 0\}$.
-- $L_◆LB◆10◆RB◆ = \{\langle G \rangle : G \mathrm◆LB◆ is a connected undirected graph\}$.
+- $L_◆LB◆10◆RB◆ = \{\langle G \rangle : G \mathrm◆LB◆ is◆RB◆ a connected undirected graph\}$.
 
 **Undecidable (Turing-recognisable):**
 
-- $A_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ accepts  w\}$ — the acceptance problem.
-- $\mathrm◆LB◆HALT_◆RB◆◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ halts on  w\}$.
+- $A_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ accepts◆RB◆  w\}$ — the acceptance problem.
+- $\mathrm◆LB◆HALT_◆RB◆◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ halts◆RB◆ on  w\}$.
 
 **Not even Turing-recognisable:**
 
@@ -531,7 +531,7 @@ $$S \to aAb \mid bAa \mid aSa \mid bSb \mid a \mid b, \quad A \to aAa \mid aAb \
 Here $S$ generates non-palindromes and $A$ generates arbitrary strings of length $\geq 1$.
 
 <details>
-<summary>Worked Example: CFG for $\{a^i b^j : 2i = j \mathrm◆LB◆ or  2j = i\}$</summary>
+<summary>Worked Example: CFG for $\{a^i b^j : 2i = j \mathrm◆LB◆ or◆RB◆  2j = i\}$</summary>
 
 $$S \to S_1 \mid S_2, \quad S_1 \to aS_1bb \mid \varepsilon, \quad S_2 \to aaS_2b \mid \varepsilon$$
 
@@ -586,7 +586,7 @@ $a^◆LB◆n+1◆RB◆ b^◆LB◆n+1◆RB◆$ has exactly one parse tree. $\blac
 
 </details>
 
-**Example.** $L = \{a^i b^j c^k : i = j \mathrm◆LB◆ or  j = k\}$ is inherently ambiguous. (Proof
+**Example.** $L = \{a^i b^j c^k : i = j \mathrm◆LB◆ or◆RB◆  j = k\}$ is inherently ambiguous. (Proof
 omitted; Any grammar must have two competing mechanisms for the two conditions, and these
 Interfere.)
 
@@ -1189,7 +1189,7 @@ That:
 $$\alpha_{i_1} \alpha_{i_2} \cdots \alpha_{i_m} = \beta_{i_1} \beta_{i_2} \cdots \beta_{i_m}$$
 
 The **PCP language** is
-$\mathrm◆LB◆PCP◆RB◆ = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm◆LB◆ have a solution\}$.
+$\mathrm◆LB◆PCP◆RB◆ = \{\langle \alpha, \beta \rangle : \alpha, \beta \mathrm◆LB◆ have◆RB◆ a solution\}$.
 
 **Example.** $\alpha = (a, ab, bba)$, $\beta = (ba, aa, bb)$. The sequence $(2, 1, 1, 3)$ gives
 $ab \cdot a \cdot a \cdot bba = abaabba$ and $aa \cdot ba \cdot ba \cdot bb = aabababb$ — not equal.
@@ -1238,7 +1238,7 @@ $O \subseteq \Sigma^*$. In addition to its ordinary transitions, $M^O$ may enter
 state," write a string $q$ on a query tape, and enter an "answer state" where the tape Contains `1`
 if $q \in O$ and `0` if $q \notin O$. The oracle answers in one step.
 
-**Definition.** $A^O = \{w : M^O \mathrm◆LB◆ accepts  w\}$ for a fixed oracle TM $M$ and oracle $O$.
+**Definition.** $A^O = \{w : M^O \mathrm◆LB◆ accepts◆RB◆  w\}$ for a fixed oracle TM $M$ and oracle $O$.
 
 **Theorem 5.7.** There exists an oracle $A$ such that $P^A \neq NP^A$And an oracle $B$ such That
 $P^B = NP^B$.
@@ -1325,7 +1325,7 @@ $$\mathrm◆LB◆NP◆RB◆ = \bigcup_◆LB◆k \geq 1◆RB◆ \mathrm◆LB◆NT
 **Equivalent definition.** A language $L$ is in NP if there exists a polynomial-time verifier $V$
 And a polynomial $p$ such that:
 
-$$L = \{w : \exists c \mathrm◆LB◆ with  |c| \leq p(|w|) \mathrm◆LB◆ and  V(w, c) = \mathrm◆LB◆accept◆RB◆\}$$
+$$L = \{w : \exists c \mathrm◆LB◆ with◆RB◆  |c| \leq p(|w|) \mathrm◆LB◆ and◆RB◆  V(w, c) = \mathrm◆LB◆accept◆RB◆\}$$
 
 The string $c$ is called a **certificate** (or witness).
 
@@ -1723,8 +1723,8 @@ undecidable). :::
 Length is a multiple of 3. Prove your DFA is correct.
 
 **Problem 2.** Let
-$L = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains an even number of  0\mathrm◆LB◆s◆RB◆ and
-\mathrm◆LB◆ ends with  1\}$.
+$L = \{w \in \{0,1\}^* : w \mathrm◆LB◆ contains◆RB◆ an even number of  0\mathrm◆LB◆s◆RB◆ and
+\mathrm◆LB◆ ends◆RB◆ with  1\}$.
 Give a DFA with the minimum number of states for $L$.
 
 **Problem 3.** Use the Myhill-Nerode theorem to prove that $L = \{0^n 1^◆LB◆2n◆RB◆ : n \geq 0\}$ is not
@@ -1756,7 +1756,7 @@ algorithm and prove it always halts.
 $L = \{\langle M_1, M_2 \rangle : L(M_1) \cap L(M_2) \neq \emptyset\}$ is undecidable.
 
 **Problem 11.** Use Rice's theorem to prove that
-$L = \{\langle M \rangle : L(M) \mathrm◆LB◆ contains at least two strings\}$ is undecidable. Explain
+$L = \{\langle M \rangle : L(M) \mathrm◆LB◆ contains◆RB◆ at least two strings\}$ is undecidable. Explain
 why Rice's theorem applies.
 
 **Problem 12.** Show that the PCP instance with $\alpha = (01, 0, 1)$ and $\beta = (0, 10, 01)$ Has
@@ -1778,12 +1778,12 @@ exists).
 time complexity of your algorithm?
 
 **Problem 17.** Define the language $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE◆RB◆ = \{\langle G, k \rangle : G$
-$\mathrm◆LB◆ has a clique of exactly size  k\}$. Show that $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE◆RB◆$ is
+$\mathrm◆LB◆ has◆RB◆ a clique of exactly size  k\}$. Show that $\mathrm◆LB◆EXACT◆RB◆\mathrm◆LB◆-CLIQUE◆RB◆$ is
 NP-complete.
 
 **Problem 18.** A language $L$ is in **DP** (difference of two NP sets) if there exist
 $L_1, L_2 \in \mathrm◆LB◆NP◆RB◆$ such that $L = L_1 \cap \overline◆LB◆L_2◆RB◆$. Show that
-$\mathrm◆LB◆SAT◆RB◆\mathrm◆LB◆-UNSAT◆RB◆ = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT◆RB◆ \mathrm◆LB◆ and
+$\mathrm◆LB◆SAT◆RB◆\mathrm◆LB◆-UNSAT◆RB◆ = \{\langle \phi, \psi \rangle : \phi \in \mathrm◆LB◆SAT◆RB◆ \mathrm◆LB◆ and◆RB◆
 \psi \notin \mathrm◆LB◆SAT◆RB◆\}$
 is in DP. Is DP contained in $\Sigma_2^P$? Justify.
 
@@ -1797,10 +1797,10 @@ decidable? Justify.
 $\mathrm◆LB◆Regular◆RB◆$$\mathrm{CFL$$\mathrm◆LB◆Decidable◆RB◆$$\mathrm{NP$ $\mathrm{PSPACE$$\mathrm◆LB◆EXPTIME◆RB◆$Or
 "undecidable") that is known to contain it. Justify each answer briefly.
 
-(a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm◆LB◆ has a Hamiltonian cycle\}$
-(c) $\{\langle G, k \rangle : G \mathrm◆LB◆ has a vertex cover of size  \leq k\}$ (d)
-$\{\langle M \rangle : M \mathrm◆LB◆ runs for at most  100 \mathrm◆LB◆ steps on  \varepsilon\}$ (e)
-$\{\langle \phi \rangle : \phi \mathrm◆LB◆ is a true quantified Boolean formula\}$
+(a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm◆LB◆ has◆RB◆ a Hamiltonian cycle\}$
+(c) $\{\langle G, k \rangle : G \mathrm◆LB◆ has◆RB◆ a vertex cover of size  \leq k\}$ (d)
+$\{\langle M \rangle : M \mathrm◆LB◆ runs◆RB◆ for at most  100 \mathrm◆LB◆ steps◆RB◆ on  \varepsilon\}$ (e)
+$\{\langle \phi \rangle : \phi \mathrm◆LB◆ is◆RB◆ a true quantified Boolean formula\}$
 
 ### 7.6 Selected Solutions and Hints
 
