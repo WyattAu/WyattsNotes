@@ -33,7 +33,6 @@ const pluginId = `university-${subject}`;
 const outFile = path.resolve('docusaurus-university-' + subject + '.config.ts');
 
 const config = `// Auto-generated config for ${subject} parallel build
-import path from 'path';
 import type * as Preset from '@docusaurus/preset-classic';
 import {
   createAlgoliaConfig,
@@ -53,7 +52,7 @@ const plugins: any[] = [
     id: '${pluginId}',
     path: '${docsPath}',
     routeBasePath: '${routeBase}',
-    sidebarPath: require.resolve(path.join(projectRoot, 'sidebars/sidebar_university.ts')),
+    sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
     editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/${docsPath}/{dir}',
     ...createCommonDocsPluginConfig(true),
   }],
@@ -63,7 +62,7 @@ ${includeIntro ? `  // Include intro plugin in maths build (it's tiny)
     path: 'docs/docs_university',
     routeBasePath: '/docs',
     include: ['intro.md'],
-    sidebarPath: require.resolve(path.join(projectRoot, 'sidebars/sidebar_university.ts')),
+    sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
     editUrl: 'https://github.com/WyattAu/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
     ...createCommonDocsPluginConfig(true),
   }],
