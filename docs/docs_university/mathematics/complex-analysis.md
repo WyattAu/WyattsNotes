@@ -1014,7 +1014,7 @@ $$\sum_◆LB◆\mathrm◆LB◆all\ finite\ ◆RB◆ z_k◆RB◆ \mathrm◆LB◆R
 
 _Proof._ By the residue theorem applied to $|z| = R$ enclosing all finite singularities:
 
-$\int_◆LB◆|z|=R◆RB◆ f\, dz = 2\pi i \sum_◆LB◆\mathrm◆LB◆finite◆RB◆ \mathrm◆LB◆Res◆RB◆(f, z_k)$.
+$\int_◆LB◆|z|=R◆RB◆ f\, dz = 2\pi i \sum_◆LB◆\mathrm◆LB◆finite◆RB◆ \mathrm◆LB◆Res◆RB◆(f, z_k)◆RB◆$.
 
 But $\mathrm◆LB◆Res◆RB◆(f, \infty) = -\frac◆LB◆1◆RB◆◆LB◆2\pi i◆RB◆\int_◆LB◆|z|=R◆RB◆ f\, dz$So the sum is zero.
 $\blacksquare$

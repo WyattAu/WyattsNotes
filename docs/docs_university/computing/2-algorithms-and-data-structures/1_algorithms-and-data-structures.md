@@ -2136,7 +2136,7 @@ $\hat◆LB◆c◆RB◆ = 1 + r'(x) - r(x)$Where primes denote ranks after the st
 - **Zig-zag:** $\hat◆LB◆c◆RB◆ = 2 + r'(x) - r(x) \leq 3(r'(x) - r(x))$.
 
 Summing over all splay steps:
-$\hat◆LB◆c◆RB◆_◆LB◆\mathrm◆LB◆total◆RB◆ \leq 1 + 3(r_◆LB◆\mathrm◆LB◆final◆RB◆(x) - r_◆LB◆\mathrm◆LB◆initial◆RB◆(x)) \leq 1 + 3 \log n = O(\log n)$.
+$\hat◆LB◆c◆RB◆_◆LB◆\mathrm◆LB◆total◆RB◆ \leq 1 + 3(r_◆LB◆\mathrm◆LB◆final◆RB◆(x) - r_◆LB◆\mathrm◆LB◆initial◆RB◆(x)) \leq 1 + 3 \log n = O(\log n)◆RB◆◆RB◆◆RB◆$.
 $\blacksquare$
 
 **Corollary.** A sequence of $m$ splay tree operations takes $O(m \log n)$ amortised time.

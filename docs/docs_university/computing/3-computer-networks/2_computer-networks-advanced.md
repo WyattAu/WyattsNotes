@@ -218,7 +218,7 @@ TCP uses an **additive-increase multiplicative-decrease (AIMD)** algorithm for c
 
 **Theorem 2.1 (TCP throughput).** The average throughput of TCP Reno is approximately:
 
-$$\text◆LB◆Throughput◆RB◆ \approx \frac◆LB◆1.22 \cdot \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT◆RB◆ \cdot \sqrt◆LB◆p◆RB◆◆RB◆$$
+$$\text◆LB◆Throughput◆RB◆ \approx \frac◆LB◆1.22 \cdot \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT◆RB◆ \cdot \sqrt◆LB◆p◆RB◆◆RB◆◆RB◆$$
 
 Where $p$ is the packet loss rate.
 
@@ -227,7 +227,7 @@ which loss occurs. The area under the AIMD sawtooth is approximately $\frac◆LB
 of the linear increase from $W/2$ to $W$). The number of packets sent per cycle is
 $\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2$. The cycle length is $W/2$ RTTs. The loss rate is approximately
 $1/(\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2)$ (one loss per cycle). So $W \approx \sqrt◆LB◆8/(3p)◆RB◆$. The throughput is
-$\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2 / (\frac◆LB◆W◆RB◆◆LB◆2◆RB◆ \cdot \text◆LB◆RTT◆RB◆) = \frac◆LB◆3W◆RB◆◆LB◆4 \cdot \text◆LB◆RTT◆RB◆ \approx \frac◆LB◆1.22 \cdot \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT◆RB◆ \cdot \sqrt◆LB◆p◆RB◆◆RB◆$.
+$\frac◆LB◆3◆RB◆◆LB◆8◆RB◆ W^2 / (\frac◆LB◆W◆RB◆◆LB◆2◆RB◆ \cdot \text◆LB◆RTT◆RB◆) = \frac◆LB◆3W◆RB◆◆LB◆4 \cdot \text◆LB◆RTT◆RB◆ \approx \frac◆LB◆1.22 \cdot \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT◆RB◆ \cdot \sqrt◆LB◆p◆RB◆◆RB◆◆RB◆◆RB◆$.
 $\blacksquare$
 
 ### 2.2 TCP Variants
@@ -242,7 +242,7 @@ $\blacksquare$
 
 **TCP Cubic.** Replaces the linear increase with a cubic function:
 
-$$\text◆LB◆cwnd◆RB◆(t) = W_◆LB◆\max◆RB◆ + \beta \cdot \left(\frac◆LB◆t◆RB◆◆LB◆K◆RB◆\right)^3 - (W_◆LB◆\max◆RB◆ - \text◆LB◆cwnd_◆RB◆◆LB◆\text◆LB◆low◆RB◆)$$
+$$\text◆LB◆cwnd◆RB◆(t) = W_◆LB◆\max◆RB◆ + \beta \cdot \left(\frac◆LB◆t◆RB◆◆LB◆K◆RB◆\right)^3 - (W_◆LB◆\max◆RB◆ - \text◆LB◆cwnd_◆RB◆◆LB◆\text◆LB◆low◆RB◆)◆RB◆$$
 
 Where $W_◆LB◆\max◆RB◆$ is the window size at the last loss event,
 $K = \sqrt[3]◆LB◆W_◆LB◆\max◆RB◆ \cdot \beta / C◆RB◆$, $\beta = 0.4$And $C = 0.4$.
@@ -1238,7 +1238,7 @@ exceeds 20 packets. (Hint: $P(n \geq k) = \rho^k$.)
 
 Using the TCP Reno throughput formula:
 
-$$\text◆LB◆Throughput◆RB◆ \approx \frac◆LB◆1.22 \times \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT◆RB◆ \times \sqrt◆LB◆p◆RB◆◆RB◆$$
+$$\text◆LB◆Throughput◆RB◆ \approx \frac◆LB◆1.22 \times \text◆LB◆MSS◆RB◆◆LB◆\text◆LB◆RTT◆RB◆ \times \sqrt◆LB◆p◆RB◆◆RB◆◆RB◆$$
 
 $\text◆LB◆MSS◆RB◆ = 1460$ bytes $= 11680$ bits. $\text◆LB◆RTT◆RB◆ = 80$ ms $= 0.08$ s. $p = 0.001$.
 

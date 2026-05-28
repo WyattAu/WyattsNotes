@@ -493,7 +493,7 @@ $\det$ is multiplied by $\alpha$.
 
 (3) Adding $\alpha$ times row $j$ to row $i$ ($i \neq j$): by multilinearity in row $i$
 
-$$\det(\mathrm◆LB◆new◆RB◆~A) = \det(A) + \alpha \cdot \det(\mathrm◆LB◆matrix◆RB◆~with~rows~i\mathrm◆LB◆~and~j\mathrm◆RB◆◆LB◆~equal)$$
+$$\det(\mathrm◆LB◆new◆RB◆~A) = \det(A) + \alpha \cdot \det(\mathrm◆LB◆matrix◆RB◆~with~rows~i\mathrm◆LB◆~and~j\mathrm◆RB◆◆LB◆~equal)◆RB◆$$
 
 A matrix with two equal rows has determinant 0 (by antisymmetry: swapping them leaves the matrix
 Unchanged but multiplies $\det$ by $-1$So $\det = -\det$Hence $\det = 0$). Therefore

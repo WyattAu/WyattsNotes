@@ -1067,14 +1067,14 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 **Structure.** An augmented BST where:
 
 - In-order traversal of keys gives the intervals sorted by their left endpoint (or by midpoint).
-- Each node stores a key $x_◆LB◆\mathrm◆LB◆mid◆RB◆$ (the median endpoint) and a max-endpoint for the subtree.
+- Each node stores a key $x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$ (the median endpoint) and a max-endpoint for the subtree.
 
-**Query algorithm:** Starting at the root, compare $q$ with $x_◆LB◆\mathrm◆LB◆mid◆RB◆$:
+**Query algorithm:** Starting at the root, compare $q$ with $x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$:
 
-1. If $q < x_◆LB◆\mathrm◆LB◆mid◆RB◆$: report all intervals in the left subtree that overlap $q$ (check
+1. If $q < x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$: report all intervals in the left subtree that overlap $q$ (check
    max-endpoint), then recurse into the left subtree. Also check if any interval stored at the
    current node overlaps $q$.
-2. If $q \geq x_◆LB◆\mathrm◆LB◆mid◆RB◆$: similar for the right subtree.
+2. If $q \geq x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$: similar for the right subtree.
 
 **Theorem 5.1.** Query in an interval tree takes $O(\log n + k)$ time where $k$ is the number of
 reported intervals.

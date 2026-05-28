@@ -2400,7 +2400,7 @@ Solve $y'' - y = e^t$$y(0) = 0$$y'(0) = 0$ using Laplace transforms.
 <details>
 <summary>Solution</summary>
 
-_Solution._ $\mathcal◆LB◆L◆RB◆\{y'◆RB◆ - \mathcal◆LB◆L◆RB◆\{y\} = \mathcal◆LB◆L◆RB◆\{e^t\}$:
+_Solution._ $◆LB◆\mathcal◆LB◆L◆RB◆\{y'◆RB◆ - \mathcal◆LB◆L◆RB◆\{y\} = \mathcal◆LB◆L◆RB◆\{e^t\}$:
 
 $s^2 Y - Y = \frac◆LB◆1◆RB◆◆LB◆s - 1◆RB◆$
 

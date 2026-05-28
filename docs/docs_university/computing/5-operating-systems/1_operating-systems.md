@@ -129,7 +129,7 @@ The CPU scheduler decides which process runs next from the set of ready processe
 - **CPU utilisation:** Keep the CPU busy ($\mathrm◆LB◆utilisation◆RB◆ = 1 - p$ where $p$ is the I/O wait
   probability).
 - **Throughput:** Number of processes completed per time unit.
-- **Turnaround time:** $T_◆LB◆\mathrm◆LB◆turnaround◆RB◆ = T_◆LB◆\mathrm◆LB◆completion◆RB◆ - T_◆LB◆\mathrm◆LB◆arrival◆RB◆$.
+- **Turnaround time:** $T_◆LB◆\mathrm◆LB◆turnaround◆RB◆ = T_◆LB◆\mathrm◆LB◆completion◆RB◆ - T_◆LB◆\mathrm◆LB◆arrival◆RB◆◆RB◆◆RB◆◆RB◆$.
 - **Waiting time:** Time spent in the ready queue.
 - **Response time:** Time from submission to first response.
 
@@ -841,7 +841,7 @@ Where $\mathrm◆LB◆PT◆RB◆[p]$ is the frame number for page $p$ and $F$ is
 Two-level scheme uses a **page directory** indexed by the outer page number, pointing to inner Page
 tables:
 
-$$\mathrm◆LB◆Address◆RB◆:  \underbrace◆LB◆p_1◆RB◆_◆LB◆\mathrm◆LB◆outer◆RB◆ \mid \underbrace◆LB◆p_2◆RB◆_◆LB◆\mathrm◆LB◆inner◆RB◆ \mid \underbrace◆LB◆d◆RB◆_◆LB◆\mathrm◆LB◆offset◆RB◆$$
+$$\mathrm◆LB◆Address◆RB◆:  \underbrace◆LB◆p_1◆RB◆_◆LB◆\mathrm◆LB◆outer◆RB◆ \mid \underbrace◆LB◆p_2◆RB◆_◆LB◆\mathrm◆LB◆inner◆RB◆ \mid \underbrace◆LB◆d◆RB◆_◆LB◆\mathrm◆LB◆offset◆RB◆◆RB◆◆RB◆◆RB◆$$
 
 X86-64 with 48-bit virtual addresses uses four-level page tables.
 
@@ -883,7 +883,7 @@ Translate (segment = 2, offset = 2500):
 
 Combine segmentation and paging: the segment offset is divided into page number and page offset.
 
-$$\mathrm◆LB◆Address◆RB◆:  \underbrace◆LB◆s◆RB◆_◆LB◆\mathrm◆LB◆segment◆RB◆ \mid \underbrace◆LB◆p◆RB◆_◆LB◆\mathrm◆LB◆page◆RB◆ \mid \underbrace◆LB◆d◆RB◆_◆LB◆\mathrm◆LB◆offset◆RB◆$$
+$$\mathrm◆LB◆Address◆RB◆:  \underbrace◆LB◆s◆RB◆_◆LB◆\mathrm◆LB◆segment◆RB◆ \mid \underbrace◆LB◆p◆RB◆_◆LB◆\mathrm◆LB◆page◆RB◆ \mid \underbrace◆LB◆d◆RB◆_◆LB◆\mathrm◆LB◆offset◆RB◆◆RB◆◆RB◆◆RB◆$$
 
 Used by x86 (segmentation + paging).
 
@@ -1311,10 +1311,10 @@ reliability, Or both.
 - RAID 6: $(n - 2)C$
 - RAID 10: $nC / 2$
 
-**Mean time to failure (MTTF).** If each disk has $\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆$ and the MTTR (mean
-time to repair) is $T_◆LB◆\mathrm◆LB◆repair◆RB◆$:
+**Mean time to failure (MTTF).** If each disk has $\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆◆RB◆$ and the MTTR (mean
+time to repair) is $T_◆LB◆\mathrm◆LB◆repair◆RB◆◆RB◆$:
 
-$$\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆RAID◆RB◆\;5◆RB◆ \approx \frac◆LB◆\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆^2◆RB◆◆LB◆n(n-1) \cdot T_◆LB◆\mathrm◆LB◆repair◆RB◆◆RB◆$$
+$$\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆RAID◆RB◆\;5◆RB◆ \approx \frac◆LB◆\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆^2◆RB◆◆LB◆n(n-1) \cdot T_◆LB◆\mathrm◆LB◆repair◆RB◆◆RB◆◆RB◆◆RB◆$$
 
 RAID 5 significantly improves reliability for large arrays, but the rebuild time grows with disk
 Capacity, increasing the window of vulnerability.
@@ -1322,11 +1322,11 @@ Capacity, increasing the window of vulnerability.
 <details>
 <summary>Worked Example 6.2 — RAID Capacity and Reliability</summary>
 
-Eight 2 TiB disks. $\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆ = 1.2 \times 10^6$ hours, $T_◆LB◆\mathrm◆LB◆repair◆RB◆ = 24$
+Eight 2 TiB disks. $\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆ = 1.2 \times 10^6◆RB◆$ hours, $T_◆LB◆\mathrm◆LB◆repair◆RB◆ = 24◆RB◆$
 hours.
 
 _RAID 0:_ Capacity = $8 \times 2 = 16$ TiB. No fault tolerance. MTTF =
-$\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆ / 8 = 150000$ hours.
+$\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆ / 8 = 150000◆RB◆$ hours.
 
 _RAID 5:_ Capacity = $7 \times 2 = 14$ TiB.
 $\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆RAID◆RB◆\;5◆RB◆ \approx \frac◆LB◆(1.2 \times 10^6)^2◆RB◆◆LB◆8 \times 7 \times 24◆RB◆ = \frac◆LB◆1.44 \times 10^◆LB◆12◆RB◆◆RB◆◆LB◆1344◆RB◆ \approx 1.07 \times 10^9$

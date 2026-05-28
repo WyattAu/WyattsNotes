@@ -1908,7 +1908,7 @@ project.
 
 **Theorem 14.1a (Brun, 1919).** The sum of the reciprocals of the twin primes converges:
 
-$$\sum_◆LB◆\substack◆LB◆p \mathrm◆LB◆\ prime◆RB◆ \\ p+2 \mathrm◆LB◆\ prime◆RB◆◆RB◆ \left(\frac◆LB◆1◆RB◆◆LB◆p◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆p+2◆RB◆\right) \lt \infty$$
+$$\sum_◆LB◆\substack◆LB◆p \mathrm◆LB◆\ prime◆RB◆ \\ p+2 \mathrm◆LB◆\ prime◆RB◆◆RB◆ \left(\frac◆LB◆1◆RB◆◆LB◆p◆RB◆ + \frac◆LB◆1◆RB◆◆LB◆p+2◆RB◆\right) \lt \infty◆RB◆$$
 
 This is known as **Brun's theorem**. It establishes that the twin primes form a "thin" set, In
 contrast to the full set of primes (whose reciprocal sum diverges by Euler).

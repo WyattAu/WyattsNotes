@@ -26,7 +26,7 @@ $$\gamma_◆LB◆\text◆LB◆dept◆RB◆, \text◆LB◆AVG◆RB◆(salary) \to
 
 **Generalised projection:** Allows arithmetic expressions in the projection list.
 
-$$\pi_◆LB◆\text◆LB◆name◆RB◆, \text◆LB◆salary◆RB◆ \times 12 \to \text◆LB◆annual◆RB◆(\text◆LB◆Employee◆RB◆)$$
+$$\pi_◆LB◆\text◆LB◆name◆RB◆, \text◆LB◆salary◆RB◆ \times 12 \to \text◆LB◆annual◆RB◆(\text◆LB◆Employee◆RB◆)◆RB◆$$
 
 **Outer join:** Preserves unmatched tuples from one or both relations.
 
@@ -60,7 +60,7 @@ $(t, s) \notin R$. This means for every $s \in S$, $(t, s) \in R$So $t \in R \di
 Find students who have taken **all** courses offered by the CS department.
 
 $R$ = (student, course) pairs from Enrolment. $S$ = courses offered by CS department:
-$\pi_◆LB◆\text◆LB◆course◆RB◆(\sigma_◆LB◆\text◆LB◆dept◆RB◆=\text◆LB◆'CS'◆RB◆(\text◆LB◆Course◆RB◆))$.
+$\pi_◆LB◆\text◆LB◆course◆RB◆(\sigma_◆LB◆\text◆LB◆dept◆RB◆=\text◆LB◆'CS'◆RB◆(\text◆LB◆Course◆RB◆))◆RB◆◆RB◆$.
 
 $R \div S$ gives the students enrolled in every CS course.
 

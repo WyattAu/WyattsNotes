@@ -1446,7 +1446,7 @@ Therefore $T(n) = \Theta(n^2)$.
 There are $a^j$ subproblems, each of size $n/b^j$Each contributing $f(n/b^j)$ work. The tree has
 $\log_b n$ levels, with $a^{\log_b n} = n^{c_{\mathrm{crit{}}}$ leaves. The total work is
 
-$$T(n) = \Theta\!\left(n^◆LB◆c_◆LB◆\mathrm◆LB◆crit◆RB◆◆RB◆\right) + \sum_◆LB◆j=0◆RB◆^◆LB◆\log_b n - 1◆RB◆ a^j \, f(n/b^j)$$
+$$T(n) = \Theta\!\left(n^◆LB◆c_◆LB◆\mathrm◆LB◆crit◆RB◆◆RB◆\right) + \sum_◆LB◆j=0◆RB◆^◆LB◆\log_b n - 1◆RB◆ a^j \, f(n/b^j)◆RB◆$$
 
 - **Case 1:** $f(n) = O(n^c)$ with $c \lt c_{\mathrm{crit{}}$. The sum is dominated by the leaves,
   giving $T(n) = \Theta(n^{c_{\mathrm{crit{}}})$.

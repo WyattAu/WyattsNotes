@@ -32,7 +32,7 @@ Communication:
 **Encapsulation.** Each layer adds its own header (and possibly trailer) to the data from the layer
 Above, forming a **protocol data unit (PDU)**:
 
-$$\mathrm◆LB◆Data◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆th◆RB◆ \mathrm◆LB◆Segment◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆nh◆RB◆ \mathrm◆LB◆Packet◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆fh◆RB◆+ft◆RB◆ \mathrm◆LB◆Frame◆RB◆ \xrightarrow◆LB◆\mathrm◆LB◆encode◆RB◆ \mathrm◆LB◆Bits◆RB◆$$
+$$\mathrm◆LB◆Data◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆th◆RB◆ \mathrm◆LB◆Segment◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆nh◆RB◆ \mathrm◆LB◆Packet◆RB◆ \xrightarrow◆LB◆+\mathrm◆LB◆fh◆RB◆+ft◆RB◆ \mathrm◆LB◆Frame◆RB◆ \xrightarrow◆LB◆\mathrm◆LB◆encode◆RB◆ \mathrm◆LB◆Bits◆RB◆◆RB◆◆RB◆◆RB◆$$
 
 ### 1.2 The TCP/IP Model
 
@@ -133,7 +133,7 @@ Rate achievable on a channel of bandwidth $H$ with signal-to-noise ratio $\mathr
 
 _Proof._ For a bandlimited AWGN channel, the number of distinguishable signal levels is constrained
 By the noise power. Let $\mathrm◆LB◆SNR◆RB◆ = S/N$ where $S$ is signal power and $N = N_0 H$ is noise
-Power. The number of distinguishable amplitude levels is proportional to $\sqrt◆LB◆1 + \mathrm◆LB◆SNR◆RB◆$.
+Power. The number of distinguishable amplitude levels is proportional to $\sqrt◆LB◆1 + \mathrm◆LB◆SNR◆RB◆◆RB◆$.
 With $\log_2$ levels per signal element and $2H$ signal elements per second (Nyquist), the maximum
 Error-free rate is $C = 2H \cdot \tfrac◆LB◆1◆RB◆◆LB◆2◆RB◆\log_2(1 + \mathrm◆LB◆SNR◆RB◆) = H \log_2(1 + \mathrm◆LB◆SNR◆RB◆)$.
 $\blacksquare$
@@ -159,7 +159,7 @@ $$\log_2 V = \frac◆LB◆56000◆RB◆◆LB◆8000◆RB◆ = 7$$ $$V = 2^7 = 12
 
 A satellite channel has a bandwidth of 36 MHz and an SNR of 30 dB. Find the maximum data rate.
 
-First convert SNR from dB to linear: $$\mathrm◆LB◆SNR_◆RB◆◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆30/10◆RB◆ = 1000$$
+First convert SNR from dB to linear: $$\mathrm◆LB◆SNR_◆RB◆◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆30/10◆RB◆ = 1000◆RB◆$$
 
 Apply Shannon's formula: $$C = H \log_2(1 + \mathrm◆LB◆SNR◆RB◆) = 36 \times 10^6 \times \log_2(1001)$$
 $$\log_2(1001) = \frac◆LB◆\ln(1001)◆RB◆◆LB◆\ln(2)◆RB◆ \approx 9.967$$
@@ -185,7 +185,7 @@ With $V = 64$: $$C = 12000 \times 6 = 72000\;\mathrm◆LB◆bps◆RB◆$$
 
 This exceeds Shannon's limit of 60 kbps, meaning 64 levels would produce errors. The maximum Number
 of levels consistent with Shannon:
-$$C_◆LB◆\mathrm◆LB◆Shannon◆RB◆ = 2H \log_2 V \implies 60000 = 12000 \times \log_2 V \implies V = 32$$
+$$C_◆LB◆\mathrm◆LB◆Shannon◆RB◆ = 2H \log_2 V \implies 60000 = 12000 \times \log_2 V \implies V = 32◆RB◆$$
 
 **Answer:** At most 32 signal levels can be used reliably on this channel.
 
@@ -239,7 +239,7 @@ $$\mathrm◆LB◆Bit◆RB◆\;rate = 8 \times 20 \times 10^6 = 160\;\mathrm◆LB
 
 If the channel has SNR = 24 dB, verify against Shannon:
 
-$$\mathrm◆LB◆SNR_◆RB◆◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆24/10◆RB◆ = 251.2$$
+$$\mathrm◆LB◆SNR_◆RB◆◆LB◆\mathrm◆LB◆linear◆RB◆ = 10^◆LB◆24/10◆RB◆ = 251.2◆RB◆$$
 $$C = 20 \times 10^6 \times \log_2(252.2) \approx 20 \times 10^6 \times 7.98 \approx 159.6\;\mathrm◆LB◆Mbps◆RB◆$$
 
 The Nyquist-based rate (160 Mbps) is very close to the Shannon limit (159.6 Mbps), meaning 256-QAM
@@ -361,7 +361,7 @@ $r = 3$).
 
 $$M(x) = x^5 + x^4 + x^2, \quad G(x) = x^3 + x + 1$$
 
-$$M_◆LB◆\mathrm◆LB◆aug◆RB◆(x) = x^8 + x^7 + x^5$$
+$$M_◆LB◆\mathrm◆LB◆aug◆RB◆(x) = x^8 + x^7 + x^5◆RB◆$$
 
 Division steps:
 
@@ -580,17 +580,17 @@ Does not. $\blacksquare$
 | Aspect             | Store-and-Forward                | Cut-Through                        |
 | ------------------ | -------------------------------- | ---------------------------------- |
 | Operation          | Receives entire frame first      | Reads destination MAC only         |
-| Latency            | $L/R + d_◆LB◆\mathrm◆LB◆prop◆RB◆$ per hop | $L_h/R + d_◆LB◆\mathrm◆LB◆prop◆RB◆$ per hop |
+| Latency            | $L/R + d_◆LB◆\mathrm◆LB◆prop◆RB◆◆RB◆$ per hop | $L_h/R + d_◆LB◆\mathrm◆LB◆prop◆RB◆◆RB◆$ per hop |
 | Error detection    | Can check FCS before forward     | Cannot check FCS                   |
 | Memory requirement | Must buffer full frame           | Only needs header buffer           |
 | Use case           | General-purpose switching        | Low-latency environments           |
 
 Where $L$ is the full frame length, $L_h$ is the header length (14 bytes for Ethernet), $R$ is the
-Link rate, and $d_◆LB◆\mathrm◆LB◆prop◆RB◆$ is the propagation delay.
+Link rate, and $d_◆LB◆\mathrm◆LB◆prop◆RB◆◆RB◆$ is the propagation delay.
 
 For a path through $n$ switches:
 
-$$\mathrm◆LB◆Store◆RB◆\mathrm◆LB◆-and\mathrm◆RB◆◆LB◆-forward\;latency◆RB◆ = n \cdot \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
+$$\mathrm◆LB◆Store◆RB◆\mathrm◆LB◆-and\mathrm◆RB◆◆LB◆-forward\;latency◆RB◆ = n \cdot \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆◆RB◆$$
 
 $$\mathrm◆LB◆Cut◆RB◆\mathrm◆LB◆-through◆RB◆\;latency◆RB◆ = \frac◆LB◆L◆RB◆◆LB◆R◆RB◆ + (n-1) \cdot \frac◆LB◆L_h◆RB◆◆LB◆R◆RB◆ + d_◆LB◆\mathrm◆LB◆total◆RB◆$$
 

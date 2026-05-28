@@ -75,12 +75,12 @@ complexity class.
 
 **Undecidable (Turing-recognisable):**
 
-- $A_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ accepts◆RB◆  w\}$ — the acceptance problem.
-- $\mathrm◆LB◆HALT_◆RB◆◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ halts◆RB◆ on  w\}$.
+- $A_◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ accepts◆RB◆  w\}◆RB◆$ — the acceptance problem.
+- $\mathrm◆LB◆HALT_◆RB◆◆LB◆\mathrm◆LB◆TM◆RB◆ = \{\langle M, w \rangle : M \mathrm◆LB◆ halts◆RB◆ on  w\}◆RB◆$.
 
 **Not even Turing-recognisable:**
 
-- $\overline◆LB◆A_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$ — the complement of the acceptance problem.
+- $\overline◆LB◆A_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆◆RB◆$ — the complement of the acceptance problem.
 
 This hierarchy illustrates the central theme of the course: as we move to more expressive language
 Classes, the corresponding machines become more powerful, but certain properties (decidability,
@@ -112,7 +112,7 @@ Turing-recognisable languages is a countable subset of the uncountable set of al
 **Cantor's diagonalisation.** The classic proof of Theorem 1.1 uses diagonalisation: assume the Set
 of all languages is countable, list them as $L_1, L_2, L_3, \ldots$And construct a language $D$ that
 differs from each $L_i$ on the $i$-th string. Then $D$ is not in the list — contradiction. This
-technique reappears in the proof of undecidability of $A_◆LB◆\mathrm◆LB◆TM◆RB◆$ (Section 5.2).
+technique reappears in the proof of undecidability of $A_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$ (Section 5.2).
 
 ## 2. Regular Languages
 
@@ -845,7 +845,7 @@ and $C \to a$.
 
 A **Turing machine (TM)** is a 7-tuple
 $M = (Q, \Sigma, \Gamma, \delta, q_0, q_◆LB◆\mathrm◆LB◆accept◆RB◆,
-Q_◆LB◆\mathrm◆LB◆reject◆RB◆)$ where:
+Q_◆LB◆\mathrm◆LB◆reject◆RB◆)◆RB◆◆RB◆$ where:
 
 - $Q$ is a finite set of states.
 - $\Sigma$ is the input alphabet (does not contain the blank symbol $\sqcup$).
@@ -1168,7 +1168,7 @@ $M_0$ with $L(M_0) \in P$ and a TM $M_1$ with $L(M_1) \notin P$. Given an arbitr
 $w$Construct $M_w$ that on input $x$: first simulates $M$ on $w$Then simulates $M_0$ on $x$. If $M$
 accepts $w$Then $L(M_w) = L(M_0) \in P$; if $M$ does not accept $w$$L(M_w) = \emptyset$. If
 $\emptyset \notin P$Then $M_w \in P$ iff $M$ accepts $w$So deciding $P$ would decide
-$A_◆LB◆\mathrm◆LB◆TM◆RB◆$. The case $\emptyset \in P$ is similar. $\blacksquare$
+$A_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$. The case $\emptyset \in P$ is similar. $\blacksquare$
 
 **Corollary.** The following are undecidable: "Does $M$ accept at least one string?", "Is $L(M)$
 Finite?", "Is $L(M)$ regular?", "Is $L(M)$ context-free?"
@@ -1218,12 +1218,12 @@ Not equal. Finding solutions to PCP instances can be very difficult — there is
 
 **Theorem 5.6.** PCP is undecidable.
 
-_Proof (sketch)._ Reduce from $A_◆LB◆\mathrm◆LB◆TM◆RB◆$. Given TM $M$ and input $w$Construct a PCP instance
+_Proof (sketch)._ Reduce from $A_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$. Given TM $M$ and input $w$Construct a PCP instance
 Whose tiles encode the computation history of $M$ on $w$. The tiles are designed so that a matching
 Sequence corresponds to a valid accepting computation: the first tile starts the computation, middle
 Tiles enforce that each configuration follows from the previous by a valid transition, and the last
 Tile allows termination only if an accept state is reached. Thus the PCP instance has a solution iff
-$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_◆LB◆\mathrm◆LB◆TM◆RB◆$ would Be
+$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$ would Be
 decidable — contradiction. $\blacksquare$
 
 **Modified PCP (MPCP).** In the modified version, the first tile used must be tile 1. MPCP is also
@@ -1616,7 +1616,7 @@ Quantifiers.
 
 - $\Sigma_0^P = \Pi_0^P = \mathrm◆LB◆P◆RB◆$.
 - $\Sigma_◆LB◆k+1◆RB◆^P = \mathrm◆LB◆NP◆RB◆^◆LB◆\Sigma_k^P◆RB◆$ (NP with a $\Sigma_k^P$ oracle).
-- $\Pi_◆LB◆k+1◆RB◆^P◆RB◆ = \mathrm◆LB◆coNP◆RB◆^◆LB◆\Sigma_k^P◆RB◆$ (coNP with a $\Sigma_k^P$ oracle).
+- $◆LB◆\Pi_◆LB◆k+1◆RB◆^P◆RB◆ = \mathrm◆LB◆coNP◆RB◆^◆LB◆\Sigma_k^P◆RB◆$ (coNP with a $\Sigma_k^P$ oracle).
 - $\mathrm◆LB◆PH◆RB◆ = \bigcup_◆LB◆k \geq 0◆RB◆ \Sigma_k^P$.
 
 **Equivalent characterisation.** A language $L$ is in $\Sigma_k^P$ iff there exist polynomial-time
@@ -1816,10 +1816,10 @@ suffix $1^◆LB◆2i◆RB◆$ distinguishes $0^i$ from $0^j$ since $0^i 1^◆LB�
 $vxy$ cannot span all four blocks. Case analysis shows that pumping any valid Decomposition produces
 a string not in $L$.
 
-**Problem 10.** Reduce from $E_◆LB◆\mathrm◆LB◆TM◆RB◆$. Given $\langle M \rangle$Construct two TMs $M_1$
+**Problem 10.** Reduce from $E_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$. Given $\langle M \rangle$Construct two TMs $M_1$
 (accepts $\varepsilon$ only) and $M_2$ (accepts what $M$ accepts). Then
 $L(M_1) \cap L(M_2) \neq \emptyset$ iff $M$ accepts $\varepsilon$ iff
-$\langle M \rangle \notin E_◆LB◆\mathrm◆LB◆TM◆RB◆$ (after adjusting for the specific reduction).
+$\langle M \rangle \notin E_◆LB◆\mathrm◆LB◆TM◆RB◆◆RB◆$ (after adjusting for the specific reduction).
 
 **Problem 13.** If $\mathrm◆LB◆P◆RB◆ = \mathrm◆LB◆NP◆RB◆$Then for any $L \in \mathrm◆LB◆NP◆RB◆$We have $L \in \mathrm◆LB◆P◆RB◆$.
 Since $\mathrm◆LB◆P◆RB◆$ is closed under complement, $\overline◆LB◆L◆RB◆ \in \mathrm◆LB◆P◆RB◆

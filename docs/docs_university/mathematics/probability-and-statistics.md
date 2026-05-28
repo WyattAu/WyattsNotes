@@ -1230,17 +1230,17 @@ $$\ell(\theta) = \log L(\theta) = \sum_◆LB◆i=1◆RB◆^n \log f(x_i \mid \th
 
 ### 7.2 MLE Procedure
 
-The **maximum likelihood estimator** (MLE) $\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆$ maximises $L(\theta)$
+The **maximum likelihood estimator** (MLE) $\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆◆RB◆$ maximises $L(\theta)$
 (equivalently, $\ell(\theta)$):
 
-$$\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆ = \arg\max_\theta L(\theta)$$
+$$\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆ = \arg\max_\theta L(\theta)◆RB◆$$
 
 found by solving $\ell'(\theta) = 0$ and verifying $\ell''(\hat◆LB◆\theta◆RB◆) \lt 0$.
 
 ### 7.3 Properties of MLEs
 
 **Theorem 7.1 (Consistency — Sketch).** Under regularity conditions,
-$\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆ \xrightarrow◆LB◆p◆RB◆ \theta_0$ (the true parameter).
+$\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆ \xrightarrow◆LB◆p◆RB◆ \theta_0◆RB◆$ (the true parameter).
 
 _Proof sketch._ By the law of large numbers,
 $\frac◆LB◆1◆RB◆◆LB◆n◆RB◆\ell(\theta) \xrightarrow◆LB◆p◆RB◆ E_◆LB◆\theta_0◆RB◆[\log f(X \mid \theta)]$ For each $\theta$. The
@@ -1251,7 +1251,7 @@ maximiser of $\ell(\theta)$ converges in probability to $\theta_0$.
 
 **Theorem 7.2 (Asymptotic Normality).** Under regularity conditions:
 
-$$\sqrt◆LB◆n◆RB◆(\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆ - \theta_0) \xrightarrow◆LB◆d◆RB◆ N\left(0, \frac◆LB◆1◆RB◆◆LB◆I(\theta_0)◆RB◆\right)$$
+$$\sqrt◆LB◆n◆RB◆(\hat◆LB◆\theta◆RB◆_◆LB◆\mathrm◆LB◆MLE◆RB◆ - \theta_0) \xrightarrow◆LB◆d◆RB◆ N\left(0, \frac◆LB◆1◆RB◆◆LB◆I(\theta_0)◆RB◆\right)◆RB◆$$
 
 Where $I(\theta_0)$ is the **Fisher information**.
 
@@ -1301,9 +1301,9 @@ $$\bar◆LB◆X◆RB◆ \pm t_◆LB◆n-1, \alpha/2◆RB◆ \cdot \frac◆LB◆S
 **Theorem 7.5 (Wald Confidence Interval).** For a scalar parameter $\theta$ with MLE $\hat◆LB◆\theta◆RB◆$
 satisfying Asymptotic normality, the **Wald confidence interval** is
 
-$$\hat◆LB◆\theta◆RB◆ \pm z_◆LB◆\alpha/2◆RB◆\, \widehat◆LB◆\mathrm◆LB◆SE◆RB◆(\hat◆LB◆\theta◆RB◆)$$
+$$\hat◆LB◆\theta◆RB◆ \pm z_◆LB◆\alpha/2◆RB◆\, \widehat◆LB◆\mathrm◆LB◆SE◆RB◆(\hat◆LB◆\theta◆RB◆)◆RB◆$$
 
-Where $\widehat◆LB◆\mathrm◆LB◆SE◆RB◆(\hat◆LB◆\theta◆RB◆) = 1/\sqrt◆LB◆n\, I(\hat◆LB◆\theta◆RB◆)◆RB◆$ is the estimated standard
+Where $\widehat◆LB◆\mathrm◆LB◆SE◆RB◆(\hat◆LB◆\theta◆RB◆) = 1/\sqrt◆LB◆n\, I(\hat◆LB◆\theta◆RB◆)◆RB◆◆RB◆$ is the estimated standard
 error.
 
 **Problem 7.4.** In a survey of 400 people, 220 support a policy. Construct a 95% confidence
@@ -1314,7 +1314,7 @@ interval for the True proportion $p$.
 
 $\hat◆LB◆p◆RB◆ = 220/400 = 0.55$. For a Bernoulli: $I(p) = 1/[p(1-p)]$So
 $\widehat◆LB◆\mathrm◆LB◆SE◆RB◆ = \sqrt◆LB◆\hat◆LB◆p◆RB◆(1 - \hat◆LB◆p◆RB◆)/n◆RB◆
-= \sqrt◆LB◆0.55 \times 0.45 / 400◆RB◆ = \sqrt◆LB◆0.000619◆RB◆ \approx 0.02488$.
+= \sqrt◆LB◆0.55 \times 0.45 / 400◆RB◆ = \sqrt◆LB◆0.000619◆RB◆ \approx 0.02488◆RB◆$.
 
 $$95\%\, \mathrm◆LB◆CI◆RB◆: 0.55 \pm 1.96 \times 0.02488 = 0.55 \pm 0.0488 = (0.501, 0.599)$$
 
@@ -1929,7 +1929,7 @@ $\blacksquare$
 If you get this wrong, revise: Section 8.4 (Likelihood Ratio Tests) and Section 8.6 (Z-Test).
 
 **Problem 19.** Let $X_1, \ldots, X_n$ be i.i.d. $N(\mu, \sigma^2)$ with both parameters unknown.
-Find the MLE For $(\mu, \sigma^2)$ and show that $\hat◆LB◆\sigma◆RB◆^2_◆LB◆\mathrm◆LB◆MLE◆RB◆$ is biased.
+Find the MLE For $(\mu, \sigma^2)$ and show that $\hat◆LB◆\sigma◆RB◆^2_◆LB◆\mathrm◆LB◆MLE◆RB◆◆RB◆$ is biased.
 
 <details>
 <summary>Solution</summary>

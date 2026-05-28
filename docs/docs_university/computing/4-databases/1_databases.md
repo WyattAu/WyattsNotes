@@ -120,12 +120,12 @@ Relational algebra provides a formal query language based on operations on relat
 
 **Selection** $\sigma_◆LB◆\theta◆RB◆(R)$: Return tuples from $R$ satisfying condition $\theta$.
 
-$$\sigma_◆LB◆\mathrm◆LB◆dept◆RB◆ = \mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Student◆RB◆)$$
+$$\sigma_◆LB◆\mathrm◆LB◆dept◆RB◆ = \mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Student◆RB◆)◆RB◆$$
 
 **Projection** $\pi_◆LB◆A_1, \ldots, A_k◆RB◆(R)$: Return a relation containing only attributes
 $A_1, \ldots, A_k$.
 
-$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆, \mathrm◆LB◆gpa◆RB◆(\mathrm◆LB◆Student◆RB◆)$$
+$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆, \mathrm◆LB◆gpa◆RB◆(\mathrm◆LB◆Student◆RB◆)◆RB◆$$
 
 **Union** $R \cup S$: All tuples in $R$ or $S$ (both must be union-compatible: same arity and
 Attribute domains).
@@ -138,19 +138,19 @@ Attribute domains).
 
 **Natural join** $R \bowtie S$: Combine tuples from $R$ and $S$ that agree on all common attributes.
 
-$$R \bowtie S = \pi_◆LB◆R \cup S◆RB◆(\sigma_◆LB◆R.\mathrm◆LB◆common◆RB◆ = S.\mathrm◆LB◆common◆RB◆(R \times S))$$
+$$R \bowtie S = \pi_◆LB◆R \cup S◆RB◆(\sigma_◆LB◆R.\mathrm◆LB◆common◆RB◆ = S.\mathrm◆LB◆common◆RB◆(R \times S))◆RB◆$$
 
 **Theta join** $R \bowtie_◆LB◆\theta◆RB◆ S$: $\sigma_◆LB◆\theta◆RB◆(R \times S)$.
 
 **Equi-join** $R \bowtie_◆LB◆R.A = S.B◆RB◆ S$: A theta join where $\theta$ is an equality on specific
 Attributes. Keeps both join columns.
 
-**Left outer join** $R \bowtie_◆LB◆\mathrm◆LB◆left◆RB◆ S$: All tuples from $R$Matched with $S$ where
+**Left outer join** $R \bowtie_◆LB◆\mathrm◆LB◆left◆RB◆ S◆RB◆$: All tuples from $R$Matched with $S$ where
 possible; `NULL`-padded otherwise.
 
-**Right outer join** $R \bowtie_◆LB◆\mathrm◆LB◆right◆RB◆ S$: All tuples from $S$Matched with $R$.
+**Right outer join** $R \bowtie_◆LB◆\mathrm◆LB◆right◆RB◆ S◆RB◆$: All tuples from $S$Matched with $R$.
 
-**Full outer join** $R \bowtie_◆LB◆\mathrm◆LB◆full◆RB◆ S$: All tuples from both $R$ and $S$.
+**Full outer join** $R \bowtie_◆LB◆\mathrm◆LB◆full◆RB◆ S◆RB◆$: All tuples from both $R$ and $S$.
 
 **Division** $R \div S$: Tuples $t$ in $\pi_◆LB◆R-S◆RB◆(R)$ such that for every tuple
 $s \in S$, $(t, s)
@@ -160,7 +160,7 @@ $$R \div S = \pi_◆LB◆R-S◆RB◆(R) - \pi_◆LB◆R-S◆RB◆\Bigl(\bigl(\pi
 
 **Example.** Find students who have taken **all** courses:
 
-$$\pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes◆RB◆) \div \pi_◆LB◆\mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Course◆RB◆)$$
+$$\pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes◆RB◆) \div \pi_◆LB◆\mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Course◆RB◆)◆RB◆◆RB◆$$
 
 <details>
 <summary>Worked Example 2.1: Complex Relational Algebra Query</summary>
@@ -172,23 +172,23 @@ department.
 
 **Step 1.** Get CS course IDs:
 
-$$C_◆LB◆\mathrm◆LB◆CS◆RB◆ = \pi_◆LB◆\mathrm◆LB◆cid◆RB◆\bigl(\sigma_◆LB◆\mathrm◆LB◆dept◆RB◆ = \mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆)\bigr)$$
+$$C_◆LB◆\mathrm◆LB◆CS◆RB◆ = \pi_◆LB◆\mathrm◆LB◆cid◆RB◆\bigl(\sigma_◆LB◆\mathrm◆LB◆dept◆RB◆ = \mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆)\bigr)◆RB◆◆RB◆◆RB◆$$
 
 **Step 2.** Get student-course pairs from enrolments:
 
-$$T = \pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes◆RB◆)$$
+$$T = \pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes◆RB◆)◆RB◆$$
 
 **Step 3.** Students who have taken all CS courses (division):
 
-$$S_◆LB◆\mathrm◆LB◆all◆RB◆ = T \div C_◆LB◆\mathrm◆LB◆CS◆RB◆$$
+$$S_◆LB◆\mathrm◆LB◆all◆RB◆ = T \div C_◆LB◆\mathrm◆LB◆CS◆RB◆◆RB◆◆RB◆$$
 
 **Step 4.** Get names:
 
-$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆(S_◆LB◆\mathrm◆LB◆all◆RB◆ \bowtie \mathrm◆LB◆Student◆RB◆)$$
+$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆(S_◆LB◆\mathrm◆LB◆all◆RB◆ \bowtie \mathrm◆LB◆Student◆RB◆)◆RB◆◆RB◆$$
 
 **Combined:**
 
-$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆\Bigl(\bigl(\pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes◆RB◆) \div \pi_◆LB◆\mathrm◆LB◆cid◆RB◆(\sigma_◆LB◆\mathrm◆LB◆dept◆RB◆=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆))\bigr) \bowtie \mathrm◆LB◆Student◆RB◆\Bigr)$$
+$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆\Bigl(\bigl(\pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆(\mathrm◆LB◆Takes◆RB◆) \div \pi_◆LB◆\mathrm◆LB◆cid◆RB◆(\sigma_◆LB◆\mathrm◆LB◆dept◆RB◆=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆))\bigr) \bowtie \mathrm◆LB◆Student◆RB◆\Bigr)◆RB◆◆RB◆◆RB◆◆RB◆$$
 
 </details>
 
@@ -200,11 +200,11 @@ have Taken no CS courses (count should be 0).
 
 **Step 1.** Filter enrolments to CS courses:
 
-$$E_◆LB◆\mathrm◆LB◆CS◆RB◆ = \pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆\bigl(\mathrm◆LB◆Takes◆RB◆ \bowtie \sigma_◆LB◆\mathrm◆LB◆dept◆RB◆=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆)\bigr)$$
+$$E_◆LB◆\mathrm◆LB◆CS◆RB◆ = \pi_◆LB◆\mathrm◆LB◆sid◆RB◆, \mathrm◆LB◆cid◆RB◆\bigl(\mathrm◆LB◆Takes◆RB◆ \bowtie \sigma_◆LB◆\mathrm◆LB◆dept◆RB◆=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆)\bigr)◆RB◆◆RB◆◆RB◆$$
 
 **Step 2.** Left outer join with Student to include those with no CS courses:
 
-$$\mathrm◆LB◆Result◆RB◆ = \mathrm◆LB◆Student◆RB◆ \bowtie_◆LB◆\mathrm◆LB◆left◆RB◆ E_◆LB◆\mathrm◆LB◆CS◆RB◆$$
+$$\mathrm◆LB◆Result◆RB◆ = \mathrm◆LB◆Student◆RB◆ \bowtie_◆LB◆\mathrm◆LB◆left◆RB◆ E_◆LB◆\mathrm◆LB◆CS◆RB◆◆RB◆◆RB◆$$
 
 Note: aggregation over outer join results handles `NULL` values (they are excluded from `COUNT`).
 
@@ -225,8 +225,8 @@ GROUP BY S.sid, S.name;
 **Tuple relational calculus.** A query has the form $\\{t \mid P(t)\\}$ where $t$ is a tuple
 variable And $P$ is a well-formed formula. The formula is built from:
 
-- Atoms: $t \in R$ (tuple $t$ is in relation $R$), $t[A] \mathbin◆LB◆\mathrm◆LB◆op◆RB◆ s[A]$ (comparison),
-  $t[A] \mathbin◆LB◆\mathrm◆LB◆op◆RB◆ c$ (comparison with constant), where
+- Atoms: $t \in R$ (tuple $t$ is in relation $R$), $t[A] \mathbin◆LB◆\mathrm◆LB◆op◆RB◆ s[A]◆RB◆$ (comparison),
+  $t[A] \mathbin◆LB◆\mathrm◆LB◆op◆RB◆ c◆RB◆$ (comparison with constant), where
   $\mathrm◆LB◆op◆RB◆ \in \\{=, \neq, \lt, \gt, \le, \ge\\}$.
 - Logical connectives: $\land$ (and), $\lor$ (or), $\lnot$ (not).
 - Quantifiers: $\exists t$ (there exists), $\forall t$ (for all).
@@ -256,7 +256,7 @@ $$\{t \mid t \in \mathrm◆LB◆Student◆RB◆ \land \lnot \exists s \in \mathr
 
 **Translation to relational algebra:**
 
-$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆(\mathrm◆LB◆Student◆RB◆) - \pi_◆LB◆\mathrm◆LB◆name◆RB◆(\mathrm◆LB◆Student◆RB◆ \bowtie \mathrm◆LB◆Takes◆RB◆ \bowtie \sigma_◆LB◆\mathrm◆LB◆dept◆RB◆=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆))$$
+$$\pi_◆LB◆\mathrm◆LB◆name◆RB◆(\mathrm◆LB◆Student◆RB◆) - \pi_◆LB◆\mathrm◆LB◆name◆RB◆(\mathrm◆LB◆Student◆RB◆ \bowtie \mathrm◆LB◆Takes◆RB◆ \bowtie \sigma_◆LB◆\mathrm◆LB◆dept◆RB◆=\mathrm◆LB◆'CS'◆RB◆(\mathrm◆LB◆Course◆RB◆))◆RB◆◆RB◆◆RB◆$$
 
 </details>
 
@@ -1412,7 +1412,7 @@ with a Midpoint insertion strategy to avoid scan pollution.
 
 ### 7.1 Query Processing Pipeline
 
-$$\mathrm◆LB◆SQL◆RB◆ \xrightarrow◆LB◆\mathrm◆LB◆parse◆RB◆ \mathrm◆LB◆AST◆RB◆ \xrightarrow◆LB◆\mathrm◆LB◆rewrite◆RB◆ \mathrm◆LB◆Logical◆RB◆ plan \xrightarrow◆LB◆\mathrm◆LB◆optimise◆RB◆ \mathrm◆LB◆Physical◆RB◆ plan \xrightarrow◆LB◆\mathrm◆LB◆execute◆RB◆ \mathrm◆LB◆Result◆RB◆$$
+$$\mathrm◆LB◆SQL◆RB◆ \xrightarrow◆LB◆\mathrm◆LB◆parse◆RB◆ \mathrm◆LB◆AST◆RB◆ \xrightarrow◆LB◆\mathrm◆LB◆rewrite◆RB◆ \mathrm◆LB◆Logical◆RB◆ plan \xrightarrow◆LB◆\mathrm◆LB◆optimise◆RB◆ \mathrm◆LB◆Physical◆RB◆ plan \xrightarrow◆LB◆\mathrm◆LB◆execute◆RB◆ \mathrm◆LB◆Result◆RB◆◆RB◆◆RB◆◆RB◆◆RB◆$$
 
 ### 7.2 Cost-Based Optimisation
 
