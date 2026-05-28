@@ -189,29 +189,22 @@ function fixConsecutiveMath(content) {
           // 1. Consecutive inline: $a$$b$   → fix to $a$, $b$
           // 2. Display math:       $a$$\frac{b}{c}$$  → leave alone
           //
-          // Heuristic: look for closing $$ in the rest of the line,
-          // skipping the first 2 chars (the $$ itself).
-          const lineEnd = content.indexOf('\n', i + 2);
-          const restOfLine = lineEnd === -1
-            ? content.substring(i + 2)
-            : content.substring(i + 2, lineEnd);
-          const displayClose = restOfLine.indexOf('$$', 2);
+          // Heuristic: check if the $$ is at the start of a line (preceded
+          // only by whitespace/newlines since the last newline).
+          // Display math $$ almost always starts on its own line.
+          const lastNewline = result.join('').lastIndexOf('\n');
+          const textAfterNewline = lastNewline === -1
+            ? result.join('')
+            : result.join('').slice(lastNewline + 1);
+          const isOwnLine = /^\s*$/.test(textAfterNewline);
 
-          if (displayClose !== -1 && displayClose > 5) {
-            // Likely display math: $expr$$content$$
-            // Output $$ (the closing $ of inline + opening $$ of display)
-            // and enter DISPLAY state
+          if (isOwnLine) {
+            // $$ is at start of its own line → display math
             result.push('$$');
             i += 2;
             state = 'DISPLAY';
-          } else if (displayClose === -1) {
-            // No closing $$ → consecutive inline
-            result.push('$, ');
-            fixes++;
-            i += 1;
-            state = 'TEXT';
           } else {
-            // Short content between $$ (<=5) → consecutive inline
+            // $$ is mid-text → consecutive inline
             result.push('$, ');
             fixes++;
             i += 1;

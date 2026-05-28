@@ -1056,7 +1056,7 @@ _Proof._ 3-SAT is in NP. To show NP-hardness, reduce from SAT. Given a clause $C
 literals, introduce new variables $y_1, \ldots, y_{k-3}$ and replace
 $C = (l_1 \lor l_2 \lor \cdots \lor l_k)$ with:
 
-$, $(l_1 \lor l_2 \lor y_1) \land (\neg y_1 \lor l_3 \lor y_2) \land (\neg y_2 \lor l_4 \lor y_3) \land \cdots \land (\neg y_{k-3} \lor l_{k-1} \lor l_k)$, $
+$$(l_1 \lor l_2 \lor y_1) \land (\neg y_1 \lor l_3 \lor y_2) \land (\neg y_2 \lor l_4 \lor y_3) \land \cdots \land (\neg y_{k-3} \lor l_{k-1} \lor l_k)$$
 
 This is satisfiable iff the original clause is satisfiable. The reduction is polynomial.
 $\blacksquare$
@@ -1156,7 +1156,7 @@ Given a string $S$ of length $n$Find the length of the longest subsequence that 
 
 **Recurrence:**
 
-$, $dp[i][j] = \begin{cases} 1 & \text{if} {} i = j \\ 2 + dp[i+1][j-1] & \text{if} {} S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text{if} {} S[i] \neq S[j] \end{cases}$, $
+$$dp[i][j] = \begin{cases} 1 & \text{if} {} i = j \\ 2 + dp[i+1][j-1] & \text{if} {} S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text{if} {} S[i] \neq S[j] \end{cases}$$
 
 **Running time:** $O(n^2)$Space $O(n^2)$ (or $O(n)$ with optimisation).
 
@@ -1169,7 +1169,7 @@ $\blacksquare$
 <details>
 <summary>Worked Example: Longest Palindromic Subsequence</summary>
 
-$S = \text{character$$n = 9$.
+$S = \text{character$, $n = 9$.
 
 DP table (diagonal entries = 1, fill bottom-up):
 
@@ -1189,36 +1189,36 @@ r  [                        1]
 Let me compute key entries:
 
 - $dp[0][4]$ ($c..a$I.e., "chara"): $c \neq a$So $\max(dp[1][4], dp[0][3])$. $dp[1][4]$ ("hara"):
-  $h \neq a$$\max(dp[2][4], dp[1][3])$. $dp[2][4]$ ("ara"): $a = a$$2 + dp[3][3] = 2 + 1 = 3$.
-  $dp[1][3]$ ("har"): $h \neq r$$\max(dp[2][3], dp[1][2])$. $dp[2][3]$ ("ar"):
-  $a \neq r$$\max(1, 1) = 1$. $dp[1][2]$ ("ha"): $h \neq a$$\max(1, 1) = 1$. So
-  $dp[1][3] = 1$$dp[1][4] = \max(3, 1) = 3$. $dp[0][3]$ ("char"):
-  $c \neq r$$\max(dp[1][3], dp[0][2])$. $dp[0][2]$ ("cha"):
-  $c \neq a$$\max(dp[1][2], dp[0][1]) = \max(1, 1) = 1$. $dp[0][3] = \max(1, 1) = 1$.
+  $h \neq a$, $\max(dp[2][4], dp[1][3])$. $dp[2][4]$ ("ara"): $a = a$, $2 + dp[3][3] = 2 + 1 = 3$.
+  $dp[1][3]$ ("har"): $h \neq r$, $\max(dp[2][3], dp[1][2])$. $dp[2][3]$ ("ar"):
+  $a \neq r$, $\max(1, 1) = 1$. $dp[1][2]$ ("ha"): $h \neq a$, $\max(1, 1) = 1$. So
+  $dp[1][3] = 1$, $dp[1][4] = \max(3, 1) = 3$. $dp[0][3]$ ("char"):
+  $c \neq r$, $\max(dp[1][3], dp[0][2])$. $dp[0][2]$ ("cha"):
+  $c \neq a$, $\max(dp[1][2], dp[0][1]) = \max(1, 1) = 1$. $dp[0][3] = \max(1, 1) = 1$.
   $dp[0][4] = \max(3, 1) = 3$.
 
-- $dp[3][8]$ ("racter"): $r = r$$2 + dp[4][7] = 2 + dp[4][7]$. $dp[4][7]$ ("acte"):
-  $a \neq e$$\max(dp[5][7], dp[4][6])$. $dp[5][7]$ ("cte"): $c \neq e$$\max(dp[6][7], dp[5][6])$.
-  $dp[6][7]$ ("te"): $t \neq e$$\max(1, 1) = 1$. $dp[5][6]$ ("ct"): $c \neq t$$\max(1, 1) = 1$.
-  $dp[5][7] = 1$. $dp[4][6]$ ("act"): $a \neq t$$\max(dp[5][6], dp[4][5])$. $dp[4][5]$ ("ac"):
-  $a \neq c$$\max(1, 1) = 1$. $dp[4][6] = 1$. $dp[4][7] = \max(1, 1) = 1$. $dp[3][8] = 2 + 1 = 3$.
+- $dp[3][8]$ ("racter"): $r = r$, $2 + dp[4][7] = 2 + dp[4][7]$. $dp[4][7]$ ("acte"):
+  $a \neq e$, $\max(dp[5][7], dp[4][6])$. $dp[5][7]$ ("cte"): $c \neq e$, $\max(dp[6][7], dp[5][6])$.
+  $dp[6][7]$ ("te"): $t \neq e$, $\max(1, 1) = 1$. $dp[5][6]$ ("ct"): $c \neq t$, $\max(1, 1) = 1$.
+  $dp[5][7] = 1$. $dp[4][6]$ ("act"): $a \neq t$, $\max(dp[5][6], dp[4][5])$. $dp[4][5]$ ("ac"):
+  $a \neq c$, $\max(1, 1) = 1$. $dp[4][6] = 1$. $dp[4][7] = \max(1, 1) = 1$. $dp[3][8] = 2 + 1 = 3$.
 
-- $dp[0][8]$ ("character"): $c \neq r$$\max(dp[1][8], dp[0][7])$. $dp[1][8]$ ("haracter"):
-  $h \neq r$$\max(dp[2][8], dp[1][7])$. $dp[2][8]$ ("aracter"):
-  $a \neq r$$\max(dp[3][8], dp[2][7])$. $dp[3][8] = 3$ (computed above). $dp[2][7]$ ("aracte"):
-  $a \neq e$$\max(dp[3][7], dp[2][6])$. $dp[3][7]$ ("racte"): $r \neq e$$\max(dp[4][7], dp[3][6])$.
-  $dp[4][7] = 1$. $dp[3][6]$ ("ract"): $r \neq t$$\max(dp[4][6], dp[3][5])$. $dp[4][6] = 1$.
-  $dp[3][5]$ ("rac"): $r \neq c$$\max(dp[4][5], dp[3][4])$. $dp[4][5] = 1$. $dp[3][4]$ ("ra"):
-  $r \neq a$$\max(1, 1) = 1$. $dp[3][6] = 1$. $dp[3][7] = 1$. $dp[2][6]$ ("arac"):
-  $a \neq c$$\max(dp[3][6], dp[2][5])$. $dp[2][5]$ ("ara"): $a = a$$2 + dp[3][4] = 2 + 1 = 3$.
+- $dp[0][8]$ ("character"): $c \neq r$, $\max(dp[1][8], dp[0][7])$. $dp[1][8]$ ("haracter"):
+  $h \neq r$, $\max(dp[2][8], dp[1][7])$. $dp[2][8]$ ("aracter"):
+  $a \neq r$, $\max(dp[3][8], dp[2][7])$. $dp[3][8] = 3$ (computed above). $dp[2][7]$ ("aracte"):
+  $a \neq e$, $\max(dp[3][7], dp[2][6])$. $dp[3][7]$ ("racte"): $r \neq e$, $\max(dp[4][7], dp[3][6])$.
+  $dp[4][7] = 1$. $dp[3][6]$ ("ract"): $r \neq t$, $\max(dp[4][6], dp[3][5])$. $dp[4][6] = 1$.
+  $dp[3][5]$ ("rac"): $r \neq c$, $\max(dp[4][5], dp[3][4])$. $dp[4][5] = 1$. $dp[3][4]$ ("ra"):
+  $r \neq a$, $\max(1, 1) = 1$. $dp[3][6] = 1$. $dp[3][7] = 1$. $dp[2][6]$ ("arac"):
+  $a \neq c$, $\max(dp[3][6], dp[2][5])$. $dp[2][5]$ ("ara"): $a = a$, $2 + dp[3][4] = 2 + 1 = 3$.
   $dp[2][6] = \max(1, 3) = 3$. $dp[2][7] = \max(1, 3) = 3$. $dp[2][8] = \max(3, 3) = 3$. $dp[1][7]$
-  ("hacter"): $h \neq r$$\max(dp[2][7], dp[1][6])$. $dp[1][6]$ ("hacter" minus last... "hact"):
-  $h \neq t$$\max(dp[2][6], dp[1][5])$. $dp[1][5]$ ("hara"): $h \neq a$$\max(dp[2][5], dp[1][4])$.
+  ("hacter"): $h \neq r$, $\max(dp[2][7], dp[1][6])$. $dp[1][6]$ ("hacter" minus last... "hact"):
+  $h \neq t$, $\max(dp[2][6], dp[1][5])$. $dp[1][5]$ ("hara"): $h \neq a$, $\max(dp[2][5], dp[1][4])$.
   $dp[2][5] = 3$. $dp[1][4] = 3$ (computed above). $dp[1][5] = \max(3, 3) = 3$.
   $dp[1][6] = \max(3, 3) = 3$. $dp[1][7] = \max(3, 3) = 3$. $dp[1][8] = \max(3, 3) = 3$.
 
-$dp[0][7]$ ("characte"): $c \neq e$$\max(dp[1][7], dp[0][6])$. $dp[0][6]$ ("charact"):
-$c \neq t$$\max(dp[1][6], dp[0][5])$. $dp[0][5]$ ("charac"): $c = c$$2 + dp[1][4] = 2 + 3 = 5$.
+$dp[0][7]$ ("characte"): $c \neq e$, $\max(dp[1][7], dp[0][6])$. $dp[0][6]$ ("charact"):
+$c \neq t$, $\max(dp[1][6], dp[0][5])$. $dp[0][5]$ ("charac"): $c = c$, $2 + dp[1][4] = 2 + 3 = 5$.
 $dp[0][6] = \max(3, 5) = 5$. $dp[0][7] = \max(3, 5) = 5$.
 
 $dp[0][8] = \max(3, 5) = 5$.
@@ -1290,9 +1290,9 @@ Verify: $17 \times 53 = 901 = 15 \times 60 + 1$. So $17 \times 53 \equiv 1 \pmod
 
 **RSA key generation with these parameters:**
 
-- $p = 7$$q = 13$ (not realistic, for illustration)
-- $n = 91$$\phi(n) = 72$
-- $e = 5$$d = 29$ (since $5 \times 29 = 145 = 2 \times 72 + 1$)
+- $p = 7$, $q = 13$ (not realistic, for illustration)
+- $n = 91$, $\phi(n) = 72$
+- $e = 5$, $d = 29$ (since $5 \times 29 = 145 = 2 \times 72 + 1$)
 - Public key: $(e, n) = (5, 91)$. Private key: $(d, n) = (29, 91)$.
 
 Encrypt $m = 3$: $c = 3^5 \bmod 91 = 243 \bmod 91 = 61$. Decrypt: $m = 61^{29} \bmod 91 = 3$. ✓
@@ -1524,11 +1524,11 @@ Trace the search through the text "ushers".
 10), (3, 4) using the divide-and-conquer algorithm.
 
 **Problem 14.** Apply the 2-approximation algorithm for metric TSP on 5 cities with distances:
-$d(A,B) = d(B,A) = 3$$d(A,C) = 7$$d(A,D) = 5$$d(A,E) = 2$$d(B,C) = 4$$d(B,D) = 6$$d(B,E) = 8$$d(C,D) = 3$$d(C,E) = 6$$d(D,E) = 5$.
+$d(A,B) = d(B,A) = 3$, $d(A,C) = 7$, $d(A,D) = 5$, $d(A,E) = 2$, $d(B,C) = 4$, $d(B,D) = 6$, $d(B,E) = 8$, $d(C,D) = 3$, $d(C,E) = 6$, $d(D,E) = 5$.
 Compute the MST, the Eulerian tour, and the shortcut tour.
 
 **Problem 15.** Apply the greedy set cover algorithm to:
-$U = \{1, 2, 3, 4, 5, 6\}$$\mathcal{{'}S{}'} = \{S_1 = \{1, 2, 3\}, S_2 = \{2, 4\}, S_3 = \{3, 5, 6\}, S_4 = \{1, 4, 5\}, S_5 = \{4, 6\}\}$.
+$U = \{1, 2, 3, 4, 5, 6\}$, $\mathcal{{'}S{}'} = \{S_1 = \{1, 2, 3\}, S_2 = \{2, 4\}, S_3 = \{3, 5, 6\}, S_4 = \{1, 4, 5\}, S_5 = \{4, 6\}\}$.
 Compare with the optimal cover.
 
 <details>

@@ -468,7 +468,7 @@ countable Is **uncountable**.
 
 _Proof._ The function $f : \mathbb{{'}N{}'} \to \mathbb{{'}Z{}'}$ defined by
 
-$, $f(n) = \begin{cases} n/2 & \mathrm{if}\; n\; \mathrm{is}\; even \\ -(n+1)/2 & \mathrm{if}\; n\; \mathrm{is}\; odd \end{cases}$, $
+$$f(n) = \begin{cases} n/2 & \mathrm{if}\; n\; \mathrm{is}\; even \\ -(n+1)/2 & \mathrm{if}\; n\; \mathrm{is}\; odd \end{cases}$$
 
 Is a bijection, enumerating $0, -1, 1, -2, 2, -3, 3, \ldots$ $\blacksquare$
 
@@ -492,7 +492,7 @@ the expansion that does not end in all 9s to avoid dual representations).
 
 Define $s = 0.s_1 s_2 s_3 \ldots$ by
 
-$, $s_i = \begin{cases} 5 & \mathrm{if}\; d_{ii} \neq 5 \\ 6 & \mathrm{if}\; d_{ii} = 5 \end{cases}$, $
+$$s_i = \begin{cases} 5 & \mathrm{if}\; d_{ii} \neq 5 \\ 6 & \mathrm{if}\; d_{ii} = 5 \end{cases}$$
 
 Then $s \in [0, 1)$ and $s$ differs from $r_i$ in the $i$-th decimal place for every $i$ So
 $s \notin \\{r_1, r_2, \ldots\\}$Contradicting the assumption that the list was complete. Therefore
@@ -516,7 +516,7 @@ $\blacksquare$
 
 Let $a = p/q$ and $b = r/s$ where $p, q, r, s \in \mathbb{{'}Z{}'}$ and $q, s \neq 0$. Then
 
-$, $a + b = \frac{p}{q} + \frac{r}{s} = \frac{ps + rq}{qs}$, $
+$$a + b = \frac{p}{q} + \frac{r}{s} = \frac{ps + rq}{qs}$$
 
 Since $ps + rq \in \mathbb{{'}Z{}'}$ and $qs \in \mathbb{{'}Z{}'} \setminus \\{0\\}$The sum $a + b$
 is rational. $\blacksquare$
@@ -580,7 +580,7 @@ _Proof._ Base case: $n = 1$: $1 = 1 \cdot 2 / 2$. True.
 
 Inductive step: Assume $\sum_{i=1}^{k} i = k(k+1)/2$. Then
 
-$, $\sum_{i=1}^{k+1} i = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$, $
+$$\sum_{i=1}^{k+1} i = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$$
 
 $\blacksquare$
 
@@ -612,7 +612,7 @@ _Base case:_ $n = 0$: $2^0 = 1 = 2^{0+1} - 1$. ✓
 
 _Inductive step:_ Assume $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then
 
-$, $\sum_{i=0}^{k+1} 2^i = 2^{k+1} - 1 + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$, $
+$$\sum_{i=0}^{k+1} 2^i = 2^{k+1} - 1 + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$$
 
 $\blacksquare$
 
@@ -684,7 +684,7 @@ $n$.
 
 **Theorem 4.1 (Binomial Theorem).**
 
-$, $(x + y)^n = \sum_{r=0}^{n} \binom{n}{r} x^{n-r} y^r$, $
+$$(x + y)^n = \sum_{r=0}^{n} \binom{n}{r} x^{n-r} y^r$$
 
 **Theorem 4.2 (Pascal's Identity).** $\binom{n}{r} = \binom{n-1}{r} + \binom{n-1}{r-1}$
 
@@ -696,7 +696,7 @@ all $r$ From $\\{1, \ldots, n-1\\}$). $\blacksquare$
 
 **Theorem 4.3 (Inclusion-Exclusion).** For finite sets $A_1, \ldots, A_n$:
 
-$, $\left|\bigcup_{i=1}^{n} A_i\right| = \sum_i |A_i| - \sum_{i \lt j} |A_i \cap A_j| + \sum_{i \lt j \lt k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1}|A_1 \cap \cdots \cap A_n|$, $
+$$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_i |A_i| - \sum_{i \lt j} |A_i \cap A_j| + \sum_{i \lt j \lt k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1}|A_1 \cap \cdots \cap A_n|$$
 
 _Proof (for two sets)._ Every element of $A_1 \cup A_2$ is in $A_1$ or $A_2$ or both. Counting
 $|A_1| + |A_2|$ counts elements in $A_1 \cap A_2$ twice, so we subtract $|A_1 \cap A_2|$ once:
@@ -710,9 +710,9 @@ $\blacksquare$
 
 Let $A_2$ = multiples of 2, $A_3$ = multiples of 3, $A_5$ = multiples of 5.
 
-$|A_2| = 500$$|A_3| = 333$$|A_5| = 200$.
+$|A_2| = 500$, $|A_3| = 333$, $|A_5| = 200$.
 
-$|A_2 \cap A_3| = 166$$|A_2 \cap A_5| = 100$$|A_3 \cap A_5| = 66$.
+$|A_2 \cap A_3| = 166$, $|A_2 \cap A_5| = 100$, $|A_3 \cap A_5| = 66$.
 
 $|A_2 \cap A_3 \cap A_5| = 33$.
 
@@ -796,10 +796,10 @@ Differ by exactly $n$.
 <details>
 <summary>Solution</summary>
 
-Partition $\\{1, 2, \ldots, 2n\\}$ into $n$ pigeonholes: $\\{1, n+1\\}$$\\{2, n+2\\}$$\ldots$
+Partition $\\{1, 2, \ldots, 2n\\}$ into $n$ pigeonholes: $\\{1, n+1\\}$, $\\{2, n+2\\}$, $\ldots$
 $\\{n, 2n\\}$. Each pair sums to $n + (n+k) = 2n + k$... Let me rephrase.
 
-Partition into $\\{1, n+1\\}$$\\{2, n+2\\}$$\ldots$$\\{n, 2n\\}$. These are $n$ disjoint sets. If we
+Partition into $\\{1, n+1\\}$, $\\{2, n+2\\}$, $\ldots$, $\\{n, 2n\\}$. These are $n$ disjoint sets. If we
 select $n + 1$ integers from $\\{1, \ldots, 2n\\}$By the pigeonhole principle two must lie in the
 Same set $\\{i, n+i\\}$And their difference is $(n + i) - i = n$. $\blacksquare$
 
@@ -867,7 +867,7 @@ The $n$-th **Catalan number** is
 
 $$C_n = \frac{1}{n+1}\binom{2n}{n} = \frac{(2n)!}{(n+1)!\,n!}$$
 
-The first few values: $C_0 = 1$$C_1 = 1$$C_2 = 2$$C_3 = 5$$C_4 = 14$$C_5 = 42$.
+The first few values: $C_0 = 1$, $C_1 = 1$, $C_2 = 2$, $C_3 = 5$, $C_4 = 14$, $C_5 = 42$.
 
 **Catalan numbers count:**
 
@@ -878,14 +878,14 @@ The first few values: $C_0 = 1$$C_1 = 1$$C_2 = 2$$C_3 = 5$$C_4 = 14$$C_5 = 42$.
 
 **Recurrence.** $C_0 = 1$ and for $n \geq 1$:
 
-$, $C_n = \sum_{i=0}^{n-1} C_i \, C_{n-1-i}$, $
+$$C_n = \sum_{i=0}^{n-1} C_i \, C_{n-1-i}$$
 
 **Worked Example.** Verify $C_3 = 5$ by listing all valid sequences of 3 pairs of parentheses.
 
 <details>
 <summary>Solution</summary>
 
-The five valid sequences are: $((()))$$(()())$$(())()$$()(())$$()()()$.
+The five valid sequences are: $((()))$, $(()())$, $(())()$, $()(())$, $()()()$.
 
 Checking: $C_3 = \frac{1}{4}\binom{6}{3} = \frac{1}{4} \cdot 20 = 5$. ✓
 
@@ -895,7 +895,7 @@ Checking: $C_3 = \frac{1}{4}\binom{6}{3} = \frac{1}{4} \cdot 20 = 5$. ✓
 
 The **ordinary generating function (OGF)** of a sequence $\\{a_n\\}$ is
 
-$, $G(x) = \sum_{n=0}^{\infty} a_n x^n$, $
+$$G(x) = \sum_{n=0}^{\infty} a_n x^n$$
 
 **Common generating functions:**
 
@@ -921,9 +921,9 @@ And 5p coins.
 
 The generating function is
 
-$, $G(x) = \underbrace{(1 + x + x^2 + \cdots)}_{\mathrm{1p\; coins{}} \cdot \underbrace{(1 + x^2 + x^4 + \cdots)}_{\mathrm{2p\; coins{}} \cdot \underbrace{(1 + x^5 + x^{10} + \cdots)}_{\mathrm{5p\; coins{}}$, $
+$$G(x) = \underbrace{(1 + x + x^2 + \cdots)}_{\mathrm{1p\; coins{}} \cdot \underbrace{(1 + x^2 + x^4 + \cdots)}_{\mathrm{2p\; coins{}} \cdot \underbrace{(1 + x^5 + x^{10} + \cdots)}_{\mathrm{5p\; coins{}}$$
 
-$, $= \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}$, $
+$$= \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}$$
 
 The coefficient of $x^n$ in the expansion gives the number of ways. For example, expanding the First
 few terms: $1 + x + 2x^2 + 2x^3 + 3x^4 + 4x^5 + \cdots$So there are 4 ways to make 5p (5×1p; 3×1p +
@@ -980,7 +980,7 @@ A graph is **planar** if it can be drawn in the plane with no edge crossings.
 **Theorem 5.5 (Euler's Formula for Planar Graphs).** For a connected planar graph drawn in the plane
 With $V$ vertices, $E$ edges, and $F$ faces:
 
-$, $V - E + F = 2$, $
+$$V - E + F = 2$$
 
 _Proof sketch._ Build the graph edge by edge. Starting from a single vertex ($V = 1$, $E = 0$, $F = 1$),
 The quantity $V - E + F = 2$ is preserved when adding an edge: if the edge connects two components,
@@ -994,7 +994,7 @@ $\blacksquare$
 
 **Corollary 5.7.** $K_5$ and $K_{3,3}$ are not planar.
 
-_Proof._ $K_5$ has $V = 5$$E = 10$But $10 \gt 3(5) - 6 = 9$. For $K_{3,3}$$V = 6$$E = 9$. Since
+_Proof._ $K_5$ has $V = 5$, $E = 10$But $10 \gt 3(5) - 6 = 9$. For $K_{3,3}$, $V = 6$, $E = 9$. Since
 $K_{3,3}$ has no triangles, every face has at least 4 edges, giving $4F \leq 2E$So
 $F \leq E/2 = 4.5$. But $V - E + F = 2$ gives $F = 2 - 6 + 9 = 5 \gt 4.5$. Contradiction.
 $\blacksquare$
@@ -1052,7 +1052,7 @@ Merged).
 <details>
 <summary>Solution</summary>
 
-Label the vertices of $C_4$ as $v_1, v_2, v_3, v_4$ with edges $v_1v_2$$v_2v_3$$v_3v_4$$v_4v_1$.
+Label the vertices of $C_4$ as $v_1, v_2, v_3, v_4$ with edges $v_1v_2$, $v_2v_3$, $v_3v_4$, $v_4v_1$.
 
 Pick edge $e = v_1v_2$.
 
@@ -1162,7 +1162,7 @@ $12, 23, 34, 45, 51, 13, 35$. Does $G$ have an Euler circuit or Euler path?
 <details>
 <summary>Solution</summary>
 
-Degrees: $\deg(1) = 3$$\deg(2) = 2$$\deg(3) = 4$$\deg(4) = 2$$\deg(5) = 3$. Two vertices (1 and 5)
+Degrees: $\deg(1) = 3$, $\deg(2) = 2$, $\deg(3) = 4$, $\deg(4) = 2$, $\deg(5) = 3$. Two vertices (1 and 5)
 have odd degree. Since exactly two vertices have odd degree, $G$ has an Euler Path (starting at 1,
 ending at 5) but no Euler circuit.
 
@@ -1188,7 +1188,7 @@ Endpoint). A vertex is **matched** if it is an endpoint of an edge in $M$; other
 Partitions $X$ and $Y$. There exists a matching that covers every vertex in $X$ if and only if for
 Every subset $S \subseteq X$
 
-$, $|N(S)| \geq |S|$, $
+$$|N(S)| \geq |S|$$
 
 Where $N(S) = \\{y \in Y : \exists\, x \in S\; \mathrm{with{}\; xy \in E\\}$ is the neighbourhood of
 $S$.
@@ -1210,7 +1210,7 @@ _Case 2:_ There exists a nonempty proper $T \subsetneq X$ with $|N(T)| = |T|$. M
 By the induction hypothesis. In $G'' = G - (T \cup N(T))$For any $S \subseteq X \setminus T$
 $N_{G''}(S) = N_G(S \cup T) \setminus N(T)$So
 
-$, $|N_{G''}(S)| = |N_G(S \cup T)| - |N(T)| \geq |S \cup T| - |T| = |S|$, $
+$$|N_{G''}(S)| = |N_G(S \cup T)| - |N(T)| \geq |S \cup T| - |T| = |S|$$
 
 Where the inequality uses Hall's condition on $S \cup T$ in $G$. By the induction hypothesis,
 $X \setminus T$ can be matched in $G''$. Combining with the matching on $T$ gives the result.
@@ -1225,14 +1225,14 @@ $b$--$1,2$; $c$--$2,3$; $d$--$3,4,5$. Does a matching covering $X$ exist?
 Check Hall's condition for every subset $S \subseteq X$:
 
 - $|S| = 1$: each vertex has at least 1 neighbour. ✓
-- $|S| = 2$: $N(\\{a, b\\}) = \\{1, 2\\}$$|N| = 2$. $N(\\{a, c\\}) = \\{1, 2, 3\\}$$|N| = 3$.
+- $|S| = 2$: $N(\\{a, b\\}) = \\{1, 2\\}$, $|N| = 2$. $N(\\{a, c\\}) = \\{1, 2, 3\\}$, $|N| = 3$.
   Similarly all pairs have $|N| \geq 2$. ✓
-- $|S| = 3$: $N(\\{a, b, c\\}) = \\{1, 2, 3\\}$$|N| = 3$.
-  $N(\\{a, c, d\\}) = \\{1, 2, 3, 4, 5\\}$$|N| = 5$. All triples have $|N| \geq 3$. ✓
-- $|S| = 4$: $N(X) = \\{1, 2, 3, 4, 5\\}$$|N| = 5 \geq 4$. ✓
+- $|S| = 3$: $N(\\{a, b, c\\}) = \\{1, 2, 3\\}$, $|N| = 3$.
+  $N(\\{a, c, d\\}) = \\{1, 2, 3, 4, 5\\}$, $|N| = 5$. All triples have $|N| \geq 3$. ✓
+- $|S| = 4$: $N(X) = \\{1, 2, 3, 4, 5\\}$, $|N| = 5 \geq 4$. ✓
 
-Hall's condition is satisfied, so a matching exists. One such matching: $a$--$1$$b$--$2$
-$c$--$3$$d$--$4$.
+Hall's condition is satisfied, so a matching exists. One such matching: $a$--$1$, $b$--$2$
+$c$--$3$, $d$--$4$.
 
 </details>
 
@@ -1279,15 +1279,15 @@ Guaranteeing termination.
 A **recurrence relation** defines a sequence $\{a_n\}$ by expressing $a_n$ in terms of previous
 terms.
 
-**Example.** Fibonacci: $F_n = F_{n-1} + F_{n-2}$With $F_0 = 0$$F_1 = 1$.
+**Example.** Fibonacci: $F_n = F_{n-1} + F_{n-2}$With $F_0 = 0$, $F_1 = 1$.
 
 ### 6.2 Linear Homogeneous Recurrences with Constant Coefficients
 
-$, $a_n + c_1 a_{n-1} + \cdots + c_k a_{n-k} = 0$, $
+$$a_n + c_1 a_{n-1} + \cdots + c_k a_{n-k} = 0$$
 
 **Solution method.** Form the **characteristic equation**:
 
-$, $r^k + c_1 r^{k-1} + \cdots + c_k = 0$, $
+$$r^k + c_1 r^{k-1} + \cdots + c_k = 0$$
 
 **Case 1 (distinct roots).** If $r_1, \ldots, r_k$ are distinct, then
 $a_n = A_1 r_1^n + \cdots + A_k r_k^n$.
@@ -1326,7 +1326,7 @@ So $a_n = (1 + 2n) \cdot 2^n$. $\blacksquare$
 
 The **generating function** of a sequence $\{a_n\}$ is
 
-$, $G(x) = \sum_{n=0}^{\infty} a_n x^n$, $
+$$G(x) = \sum_{n=0}^{\infty} a_n x^n$$
 
 **Example.** The generating function for $a_n = 1$ (all ones) is $G(x) = 1/(1-x)$.
 
@@ -1343,9 +1343,9 @@ $F_n = F_{n-1} + F_{n-2}$ With $F_0 = 0$, $F_1 = 1$.
 
 Let $G(x) = \sum_{n=0}^{\infty} F_n x^n$.
 
-$, $G(x) = x + \sum_{n=2}^{\infty} (F_{n-1} + F_{n-2}) x^n = x + x(G(x) - F_0) + x^2 G(x) = x + xG(x) + x^2 G(x)$, $
+$$G(x) = x + \sum_{n=2}^{\infty} (F_{n-1} + F_{n-2}) x^n = x + x(G(x) - F_0) + x^2 G(x) = x + xG(x) + x^2 G(x)$$
 
-$, $G(x)(1 - x - x^2) = x \implies G(x) = \frac{x}{1 - x - x^2}$, $
+$$G(x)(1 - x - x^2) = x \implies G(x) = \frac{x}{1 - x - x^2}$$
 
 Factor: $1 - x - x^2 = (1 - \alpha x)(1 - \beta x)$ where $\alpha = (1 + \sqrt{5})/2$ and
 $\beta = (1 - \sqrt{5})/2$.
@@ -1363,9 +1363,9 @@ $F_n = \frac{1}{\sqrt{5}}(\alpha^n - \beta^n)$ (Binet's formula). $\blacksquare$
 
 Let $G(x) = \sum_{n=0}^{\infty} a_n x^n$.
 
-$, $G(x) = \sum_{n=1}^{\infty} (2a_{n-1} + 1) x^n = 2x G(x) + \sum_{n=1}^{\infty} x^n = 2x G(x) + \frac{x}{1-x}$, $
+$$G(x) = \sum_{n=1}^{\infty} (2a_{n-1} + 1) x^n = 2x G(x) + \sum_{n=1}^{\infty} x^n = 2x G(x) + \frac{x}{1-x}$$
 
-$, $(1 - 2x) G(x) = \frac{x}{1-x} \implies G(x) = \frac{x}{(1-x)(1-2x)}$, $
+$$(1 - 2x) G(x) = \frac{x}{1-x} \implies G(x) = \frac{x}{(1-x)(1-2x)}$$
 
 Partial fractions: $\frac{x}{(1-x)(1-2x)} = \frac{A}{1-x} + \frac{B}{1-2x}$.
 
@@ -1384,7 +1384,7 @@ manipulated algebraically. :::
 
 The Master Theorem provides asymptotic solutions to recurrences of the form
 
-$, $T(n) = a\,T(n/b) + f(n)$, $
+$$T(n) = a\,T(n/b) + f(n)$$
 
 Where $a \geq 1$, $b \gt 1$ are constants and $f(n)$ is asymptotically positive. Define
 $c_{\mathrm{crit{}} = \log_b a$ (the **critical exponent**).
@@ -1446,7 +1446,7 @@ Therefore $T(n) = \Theta(n^2)$.
 There are $a^j$ subproblems, each of size $n/b^j$Each contributing $f(n/b^j)$ work. The tree has
 $\log_b n$ levels, with $a^{\log_b n} = n^{c_{\mathrm{crit{}}}$ leaves. The total work is
 
-$, $T(n) = \Theta\!\left(n^{c_{\mathrm{crit}}\right) + \sum_{j=0}^{\log_b n - 1} a^j \, f(n/b^j)}$, $
+$$T(n) = \Theta\!\left(n^{c_{\mathrm{crit}}\right) + \sum_{j=0}^{\log_b n - 1} a^j \, f(n/b^j)}$$
 
 - **Case 1:** $f(n) = O(n^c)$ with $c \lt c_{\mathrm{crit{}}$. The sum is dominated by the leaves,
   giving $T(n) = \Theta(n^{c_{\mathrm{crit{}}})$.
@@ -1623,7 +1623,7 @@ _Base case:_ $n = 0$: $2^0 = 1 = 2^1 - 1$. ✓
 
 _Inductive step:_ Assume $\sum_{i=0}^{k} 2^i = 2^{k+1} - 1$. Then
 
-$, $\sum_{i=0}^{k+1} 2^i = (2^{k+1} - 1) + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$, $
+$$\sum_{i=0}^{k+1} 2^i = (2^{k+1} - 1) + 2^{k+1} = 2 \cdot 2^{k+1} - 1 = 2^{k+2} - 1$$
 
 $\blacksquare$
 
@@ -1667,9 +1667,9 @@ If you get this wrong, revise: Section 4.2.
 <details>
 <summary>Solution</summary>
 
-$|A_3| = 166$$|A_7| = 71$$|A_3 \cap A_7| = 23$. Divisible by 3 or 7: $166 + 71 - 23 = 214$.
+$|A_3| = 166$, $|A_7| = 71$, $|A_3 \cap A_7| = 23$. Divisible by 3 or 7: $166 + 71 - 23 = 214$.
 
-$|A_3 \cap A_5| = 33$$|A_7 \cap A_5| = 14$$|A_3 \cap A_7 \cap A_5| = 4$. Divisible by 3 or 7 **and**
+$|A_3 \cap A_5| = 33$, $|A_7 \cap A_5| = 14$, $|A_3 \cap A_7 \cap A_5| = 4$. Divisible by 3 or 7 **and**
 5: $33 + 14 - 4 = 43$.
 
 Divisible by 3 or 7 but not 5: $214 - 43 = 171$.
@@ -1725,8 +1725,8 @@ $C_5$ is an odd cycle. It cannot be 2-coloured (an odd cycle requires 3 colours:
 Vertex 1, alternate 2 and 1 around, and the last vertex (5th) is adjacent to both the 4th (colour 2)
 And the 1st (colour 1), so it needs colour 3).
 
-A 3-colouring exists: label vertices $v_1, \ldots, v_5$; colour $v_1 = 1$$v_2 = 2$$v_3 = 1$
-$v_4 = 2$$v_5 = 3$.
+A 3-colouring exists: label vertices $v_1, \ldots, v_5$; colour $v_1 = 1$, $v_2 = 2$, $v_3 = 1$
+$v_4 = 2$, $v_5 = 3$.
 
 Therefore $\chi(C_5) = 3$.
 
@@ -1741,28 +1741,28 @@ a matching covering $X$.
 <details>
 <summary>Solution</summary>
 
-Neighbourhoods: $N(\\{1\\}) = \\{a, b\\}$$N(\\{2\\}) = \\{b, c\\}$$N(\\{3\\}) = \\{c, d\\}$.
-$N(\\{1, 2\\}) = \\{a, b, c\\}$$N(\\{1, 3\\}) = \\{a, b, c, d\\}$$N(\\{2, 3\\}) = \\{b, c, d\\}$.
+Neighbourhoods: $N(\\{1\\}) = \\{a, b\\}$, $N(\\{2\\}) = \\{b, c\\}$, $N(\\{3\\}) = \\{c, d\\}$.
+$N(\\{1, 2\\}) = \\{a, b, c\\}$, $N(\\{1, 3\\}) = \\{a, b, c, d\\}$, $N(\\{2, 3\\}) = \\{b, c, d\\}$.
 $N(\\{1, 2, 3\\}) = \\{a, b, c, d\\}$.
 
-All satisfy $|N(S)| \geq |S|$. A matching: $1$--$a$$2$--$b$$3$--$c$.
+All satisfy $|N(S)| \geq |S|$. A matching: $1$--$a$, $2$--$b$, $3$--$c$.
 
 If you get this wrong, revise: Section 5.7.
 
 </details>
 
-**Problem 20.** Solve $a_n = 3a_{n-1} - 2a_{n-2}$ with $a_0 = 0$$a_1 = 1$.
+**Problem 20.** Solve $a_n = 3a_{n-1} - 2a_{n-2}$ with $a_0 = 0$, $a_1 = 1$.
 
 <details>
 <summary>Solution</summary>
 
-Characteristic equation: $r^2 - 3r + 2 = 0$Giving $(r - 1)(r - 2) = 0$So $r_1 = 1$$r_2 = 2$.
+Characteristic equation: $r^2 - 3r + 2 = 0$Giving $(r - 1)(r - 2) = 0$So $r_1 = 1$, $r_2 = 2$.
 
 $a_n = A \cdot 1^n + B \cdot 2^n = A + B \cdot 2^n$.
 
 $a_0 = A + B = 0 \implies A = -B$. $a_1 = A + 2B = 1 \implies -B + 2B = B = 1$.
 
-So $A = -1$$B = 1$Giving $a_n = 2^n - 1$. $\blacksquare$
+So $A = -1$, $B = 1$Giving $a_n = 2^n - 1$. $\blacksquare$
 
 If you get this wrong, revise: Section 6.2 and Section 6.3.
 
@@ -1785,9 +1785,9 @@ If you get this wrong, revise: Section 6.2 and Section 6.3.
 
 Inductive step: assume true for $n$. For $n+1$:
 
-$, $\sum_{k=1}^{n+1} k^2 = \frac{n(n+1)(2n+1)}{6} + (n+1)^2 = \frac{n(n+1)(2n+1) + 6(n+1)^2}{6}$, $
+$$\sum_{k=1}^{n+1} k^2 = \frac{n(n+1)(2n+1)}{6} + (n+1)^2 = \frac{n(n+1)(2n+1) + 6(n+1)^2}{6}$$
 
-$, $= \frac{(n+1)(2n^2 + n + 6n + 6)}{6} = \frac{(n+1)(n+2)(2n+3)}{6}$, $
+$$= \frac{(n+1)(2n^2 + n + 6n + 6)}{6} = \frac{(n+1)(n+2)(2n+3)}{6}$$
 
 Which matches the formula with $n$ replaced by $n+1$. ✓
 
