@@ -76,6 +76,8 @@ const config = {
     algoliaIndexName: 'wyattsnotes_university',
     socialCard: '/img/social-cards/university.png',
   }),
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   future: {
     faster: true,
     v4: {
