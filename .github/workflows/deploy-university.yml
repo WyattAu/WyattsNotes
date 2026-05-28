@@ -26,31 +26,19 @@ jobs:
   build:
     name: Build ${{ matrix.subject }}
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 30
     strategy:
       matrix:
         include:
           - subject: maths
             docs_path: docs/docs_university/mathematics
-            extra_plugin: |
-              ['@docusaurus/plugin-content-docs', {
-                id: 'university-intro',
-                path: 'docs/docs_university',
-                routeBasePath: '/docs',
-                include: ['intro.md'],
-                sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
-                editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
-                ...createCommonDocsPluginConfig(true),
-              }]
+            include_intro: 'intro'
           - subject: physics
             docs_path: docs/docs_university/physics
-            extra_plugin: ""
           - subject: computing
             docs_path: docs/docs_university/computing
-            extra_plugin: ""
           - subject: admissions
             docs_path: docs/docs_university/admissions
-            extra_plugin: ""
     steps:
       - uses: actions/checkout@v6
 
@@ -76,7 +64,7 @@ jobs:
         run: node scripts/escape-latex-braces.js ${{ matrix.docs_path }}
 
       - name: Generate per-plugin Docusaurus config
-        run: node scripts/generate-university-plugin-config.mjs ${{ matrix.subject }} ${{ matrix.docs_path }} ${{ matrix.extra_plugin != '' && 'intro' || '' }}
+        run: node scripts/generate-university-plugin-config.mjs ${{ matrix.subject }} ${{ matrix.docs_path }} ${{ matrix.include_intro || '' }}
 
       - name: Build
         run: npx docusaurus build --config docusaurus-university-${{ matrix.subject }}.config.ts

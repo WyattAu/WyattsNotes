@@ -32,6 +32,17 @@ const routeBase = subject === 'maths' ? '/docs/mathematics'
 const pluginId = `university-${subject}`;
 const outFile = path.resolve('docusaurus-university-' + subject + '.config.ts');
 
+// For maths: create isolated intro directory to avoid scanning all 120K lines
+if (includeIntro) {
+  const introDir = path.resolve('docs/docs_university_intro');
+  fs.mkdirSync(introDir, { recursive: true });
+  fs.copyFileSync(
+    path.resolve('docs/docs_university/intro.md'),
+    path.join(introDir, 'intro.md'),
+  );
+  console.error('Created isolated intro directory:', introDir);
+}
+
 const config = `// Auto-generated config for ${subject} parallel build
 import type * as Preset from '@docusaurus/preset-classic';
 import {
@@ -56,14 +67,13 @@ const plugins: any[] = [
     editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/${docsPath}/{dir}',
     ...createCommonDocsPluginConfig(true),
   }],
-${includeIntro ? `  // Include intro plugin in maths build (it's tiny)
+${includeIntro ? `  // Include intro plugin — uses isolated dir to avoid scanning all subjects
   ['@docusaurus/plugin-content-docs', {
     id: 'university-intro',
-    path: 'docs/docs_university',
+    path: 'docs/docs_university_intro',
     routeBasePath: '/docs',
-    include: ['intro.md'],
     sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
-    editUrl: 'https://github.com/WyattAu/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
+    editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
     ...createCommonDocsPluginConfig(true),
   }],
 ` : ''}];
