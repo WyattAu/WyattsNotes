@@ -188,7 +188,7 @@ to be defective. What is the Probability it was produced by machine A?
 
 Let $D$ = "defective" and $A$, $B$, $C$ denote production by each machine.
 
-$P(A) = 0.5$$P(B) = 0.3$$P(C) = 0.2$. $P(D \mid A) = 0.02$$P(D \mid B) = 0.01$$P(D \mid C) = 0.03$.
+$P(A) = 0.5$, $P(B) = 0.3$, $P(C) = 0.2$. $P(D \mid A) = 0.02$, $P(D \mid B) = 0.01$, $P(D \mid C) = 0.03$.
 
 $$P(A \mid D) = \frac{P(D \mid A)\, P(A)}{P(D \mid A)\, P(A) + P(D \mid B)\, P(B) + P(D \mid C)\, P(C)}$$
 
@@ -364,7 +364,7 @@ $X_{(2)}$.
 <details>
 <summary>Solution</summary>
 
-Here $n = 3$, $k = 2$$F(x) = x$$f(x) = 1$ on $(0, 1)$.
+Here $n = 3$, $k = 2$, $F(x) = x$, $f(x) = 1$ on $(0, 1)$.
 
 $$f_{X_{(2)}}(x) = \frac{3!}{1! \cdot 1!}\, x^{1}\, (1 - x)^{1} \cdot 1 = 6x(1 - x), \quad 0 \lt x \lt 1$$
 
@@ -534,7 +534,7 @@ $$M_X(t) = \exp\left(\mu t + \frac{\sigma^2 t^2}{2}\right)$$
 
 _Verification that $f$ integrates to 1._ Consider $I = \int_{-\infty}^{\infty} e^{-x^2/2}\, dx$.
 Then $I^2 = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} e^{-(x^2+y^2)/2}\, dx\, dy$. Switching to
-polar coordinates: $x = r\cos\theta$$y = r\sin\theta$$dx\, dy = r\, dr\, d\theta$.
+polar coordinates: $x = r\cos\theta$, $y = r\sin\theta$, $dx\, dy = r\, dr\, d\theta$.
 
 $$I^2 = \int_0^{2\pi}\int_0^{\infty} e^{-r^2/2}\, r\, dr\, d\theta = 2\pi \int_0^{\infty} e^{-r^2/2}\, r\, dr = 2\pi \left[-e^{-r^2/2}\right]_0^{\infty} = 2\pi$$
 
@@ -992,7 +992,7 @@ $$f(x,y) = \frac{1}{2\pi \sigma_X \sigma_Y \sqrt{1 - \rho^2}} \exp\left(-\frac{1
 $$M_{X,Y}(t_1, t_2) = \exp\left(\mu_X t_1 + \mu_Y t_2 + \frac{1}{2}(\sigma_X^2 t_1^2 + 2\rho\sigma_X\sigma_Y t_1 t_2 + \sigma_Y^2 t_2^2)\right)$$
 
 **Problem 5.4.** Let $(X, Y)$ be bivariate normal with
-$\mu_X = 0$$\mu_Y = 0$$\sigma_X = \sigma_Y = 1$$\rho = 1/2$. Find $P(Y \gt 1 \mid X = 0.5)$.
+$\mu_X = 0$, $\mu_Y = 0$, $\sigma_X = \sigma_Y = 1$, $\rho = 1/2$. Find $P(Y \gt 1 \mid X = 0.5)$.
 
 <details>
 <summary>Solution</summary>
@@ -1030,7 +1030,7 @@ Therefore $X$ and $Y$ are **not** independent. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-$E[X] = 0$$E[Y] = E[X^2] = 1$And $E[XY] = E[X^3] = 0$ (since $X^3$ is an odd function of a symmetric
+$E[X] = 0$, $E[Y] = E[X^2] = 1$And $E[XY] = E[X^3] = 0$ (since $X^3$ is an odd function of a symmetric
 distribution).
 
 $$\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y] = 0 - 0 = 0$$
@@ -1604,8 +1604,8 @@ distinction is critical in scientific Reasoning. :::
 
 ## 9. Problem Set
 
-**Problem 1.** Let $A, B, C$ be events with $P(A) = 0.4$$P(B) = 0.5$$P(C) = 0.3$$P(A \cap B) = 0.2$
-$P(A \cap C) = 0.1$$P(B \cap C) = 0.15$And $P(A \cap B \cap C) = 0.05$. Compute
+**Problem 1.** Let $A, B, C$ be events with $P(A) = 0.4$, $P(B) = 0.5$, $P(C) = 0.3$, $P(A \cap B) = 0.2$
+$P(A \cap C) = 0.1$, $P(B \cap C) = 0.15$And $P(A \cap B \cap C) = 0.05$. Compute
 $P(A \cup B \cup C)$.
 
 <details>
@@ -1793,7 +1793,7 @@ If you get this wrong, revise: Section 4.3 (MGFs).
 <details>
 <summary>Solution</summary>
 
-$X \sim \mathrm{Bin}(100, 0.3)$So $E[X] = 30$$\mathrm{Var}(X) = 21$$\sigma = \sqrt{21} \approx 4.583$.
+$X \sim \mathrm{Bin}(100, 0.3)$So $E[X] = 30$, $\mathrm{Var}(X) = 21$, $\sigma = \sqrt{21} \approx 4.583$.
 
 With continuity correction:
 

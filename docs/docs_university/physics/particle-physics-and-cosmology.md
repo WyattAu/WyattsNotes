@@ -92,9 +92,9 @@ Increasing mass:
 
 | Generation | Quarks                     | Charge       | Leptons          | Charge  |
 | ---------- | -------------------------- | ------------ | ---------------- | ------- |
-| I          | up ($u$), down ($d$)       | $+2/3$$-1/3$ | $e$$\nu_e$       | $-1$$0$ |
-| II         | charm ($c$), strange ($s$) | $+2/3$$-1/3$ | $\mu$$\nu_\mu$   | $-1$$0$ |
-| III        | top ($t$), bottom ($b$)    | $+2/3$$-1/3$ | $\tau$$\nu_\tau$ | $-1$$0$ |
+| I          | up ($u$), down ($d$)       | $+2/3$, $-1/3$ | $e$, $\nu_e$       | $-1$, $0$ |
+| II         | charm ($c$), strange ($s$) | $+2/3$, $-1/3$ | $\mu$, $\nu_\mu$   | $-1$, $0$ |
+| III        | top ($t$), bottom ($b$)    | $+2/3$, $-1/3$ | $\tau$, $\nu_\tau$ | $-1$, $0$ |
 
 Each quark comes in three **colour charges**: red, green, blue. Antiquarks carry anticolours.
 
@@ -139,7 +139,7 @@ Each quark comes in three **colour charges**: red, green, blue. Antiquarks carry
 <details>
 <summary>Example 1.1: Identifying the quark content of the $\Omega^-$ baryon</summary>
 
-The $\Omega^-$ has the following quantum numbers: $Q = -1$$B = 1$$S = -3$ Strangeness $S = -3$.
+The $\Omega^-$ has the following quantum numbers: $Q = -1$, $B = 1$, $S = -3$ Strangeness $S = -3$.
 
 Since $B = 1$It is a baryon, so it consists of three quarks. The strangeness Contributes $-1$ per
 strange quark, so all three quarks must be strange:
@@ -156,13 +156,13 @@ the baryon number:** $B(sss) = 3 \times (1/3) = 1$. Both agree.
 
 A neutral meson $X^0$ decays via $X^0 \to K^+ + \pi^-$. Identify $X^0$.
 
-The kaon $K^+$ has quark content $u\bar{s}$ ($Q = +1$$S = +1$). The pion $\pi^-$ has quark content
-$d\bar{u}$ ($Q = -1$$S = 0$).
+The kaon $K^+$ has quark content $u\bar{s}$ ($Q = +1$, $S = +1$). The pion $\pi^-$ has quark content
+$d\bar{u}$ ($Q = -1$, $S = 0$).
 
 Since $X^0$ is a neutral meson ($q\bar{q}$), its quark content must combine the quarks From the
 decay products. The decay conserves strangeness if $X^0$ has $S = +1$So It contains one $\bar{s}$.
 
-The quantum numbers of $X^0$: $Q = 0$$S = +1$. A meson with these properties Containing a $\bar{s}$
+The quantum numbers of $X^0$: $Q = 0$, $S = +1$. A meson with these properties Containing a $\bar{s}$
 quark must be:
 
 $$X^0 = K^0 = d\bar{s}$$
@@ -256,18 +256,18 @@ hypercharge is generalised to $Y = B + S + C + B' + T$ when additional flavours 
 
 Verify the charges of the following hadrons:
 
-**(a) Proton ($uud$):** $B = 1$, $S = 0$, $C = 0$$B' = 0$$T = 0$. The proton belongs to The isospin
-doublet with $I = 1/2$$I_3 = +1/2$.
+**(a) Proton ($uud$):** $B = 1$, $S = 0$, $C = 0$, $B' = 0$, $T = 0$. The proton belongs to The isospin
+doublet with $I = 1/2$, $I_3 = +1/2$.
 
 $$Q = \frac{1}{2} + \frac{1 + 0}{2} = \frac{1}{2} + \frac{1}{2} = 1 \quad \checkmark$$
 
-**(b) $\Xi^-$ ($ssd$):** $B = 1$$S = -2$$C = 0$$B' = 0$$T = 0$. The cascade Particle belongs to the
-isospin doublet with $I = 1/2$$I_3 = -1/2$.
+**(b) $\Xi^-$ ($ssd$):** $B = 1$, $S = -2$, $C = 0$, $B' = 0$, $T = 0$. The cascade Particle belongs to the
+isospin doublet with $I = 1/2$, $I_3 = -1/2$.
 
 $$Q = -\frac{1}{2} + \frac{1 + (-2)}{2} = -\frac{1}{2} + \left(-\frac{1}{2}\right) = -1 \quad \checkmark$$
 
-**(c) $D^+$ ($c\bar{d}$):** $B = 0$, $S = 0$$C = +1$$B' = 0$$T = 0$. The $D$ mesons form an isospin
-doublet with $I = 1/2$$I_3 = +1/2$.
+**(c) $D^+$ ($c\bar{d}$):** $B = 0$, $S = 0$, $C = +1$, $B' = 0$, $T = 0$. The $D$ mesons form an isospin
+doublet with $I = 1/2$, $I_3 = +1/2$.
 
 $$Q = \frac{1}{2} + \frac{0 + 0 + 1}{2} = \frac{1}{2} + \frac{1}{2} = 1 \quad \checkmark$$
 
@@ -830,7 +830,7 @@ The Gell-Mann--Okubo mass formula for the baryon octet is:
 
 $$\frac{1}{2}(N + \Xi) + \frac{3}{2}\Lambda = 2\Sigma$$
 
-Where $N$, $\Xi$$\Lambda$$\Sigma$ denote the average masses of the respective isospin Multiplets.
+Where $N$, $\Xi$, $\Lambda$, $\Sigma$ denote the average masses of the respective isospin Multiplets.
 Substituting the experimental values:
 
 $$N = \frac{m_p + m_n}{2} = \frac{938.3 + 939.6}{2} = 938.9\;\mathrm{MeV}$$
@@ -2149,7 +2149,7 @@ momentum fraction $\langle x \rangle_q$ decreases with $Q^2$.
 
 $$\int_0^1 dx\,\frac{\partial q}{\partial \ln Q^2} = \frac{\alpha_s}{2\pi}\int_0^1 dx\int_x^1 \frac{dz}{z}\, P_{qq}(z)\, q\!\left(\frac{x}{z}\right)$$
 
-Change variables $y = x/z$$x = yz$$dx = z\,dy$:
+Change variables $y = x/z$, $x = yz$, $dx = z\,dy$:
 
 $$= \frac{\alpha_s}{2\pi}\int_0^1 dz\, P_{qq}(z)\int_0^1 dy\, q(y) = \frac{\alpha_s}{2\pi}\left[\int_0^1 P_{qq}(z)\,dz\right]\left[\int_0^1 q(y)\,dy\right]$$
 
@@ -2216,7 +2216,7 @@ This gives $T \approx 300$--$400$ MeV, consistent with LHC measurements.
 
 $$m_D^2 = g_s^2 T^2\left(\frac{N_c}{3} + \frac{N_f}{6}\right) = g_s^2 T^2\left(1 + \frac{N_f}{6}\right)$$
 
-With $N_c = 3$$N_f = 3$$g_s^2/(4\pi) = \alpha_s \approx 0.3$ at $T \sim 300$ MeV:
+With $N_c = 3$, $N_f = 3$, $g_s^2/(4\pi) = \alpha_s \approx 0.3$ at $T \sim 300$ MeV:
 
 $$m_D^2 = 4\pi \times 0.3 \times (0.3\ \text{GeV})^2 \times (1 + 0.5) = 3.77 \times 0.09 \times 1.5 = 0.509\ \text{GeV}^2$$
 

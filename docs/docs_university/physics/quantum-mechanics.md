@@ -844,7 +844,7 @@ The eigenfunctions involve Hermite polynomials $H_n$:
 
 $$\phi_n(x) = \left(\frac{m\omega}{\pi\hbar}\right)^{1/4} \frac{1}{\sqrt{2^n n!}} H_n\!\left(\sqrt{\frac{m\omega}{\hbar}}\,x\right) e^{-m\omega x^2/(2\hbar)}$$
 
-The first few Hermite polynomials are $H_0(\xi) = 1$$H_1(\xi) = 2\xi$$H_2(\xi) = 4\xi^2 - 2$.
+The first few Hermite polynomials are $H_0(\xi) = 1$, $H_1(\xi) = 2\xi$, $H_2(\xi) = 4\xi^2 - 2$.
 
 **Example 5.1.** Using the ladder operators, find $\phi_1(x)$ from $\phi_0(x)$.
 
@@ -1505,7 +1505,7 @@ Given two angular momenta $\hat{\mathbf{J}}_1$ and $\hat{\mathbf{J}}_2$ with qua
 $j_1, m_1$ and $j_2, m_2$Define the total
 $\hat{\mathbf{J}} = \hat{\mathbf{J}}_1 + \hat{\mathbf{J}}_2$.
 
-**Compatible observables:** $\hat{J}^2$$\hat{J}_z$$\hat{J}_1^2$$\hat{J}_2^2$ all commute. We label
+**Compatible observables:** $\hat{J}^2$, $\hat{J}_z$, $\hat{J}_1^2$, $\hat{J}_2^2$ all commute. We label
 Simultaneous eigenstates as $|j_1, j_2; j, m\rangle$.
 
 **Clebsch-Gordan decomposition.** The total angular momentum quantum numbers range over:
@@ -1810,7 +1810,7 @@ $\psi(\mathbf{r},t) = \phi(\mathbf{r})e^{-iEt/\hbar}$The probability current is 
 What does this imply about the probability distribution?
 
 **6.** (Normalisation) Normalise the wave function $\psi(x) = N\,x(a-x)$ for $0 \lt x \lt a$ (and
-zero Otherwise). Find $\langle x \rangle$$\langle x^2 \rangle$And $\langle p^2 \rangle$.
+zero Otherwise). Find $\langle x \rangle$, $\langle x^2 \rangle$And $\langle p^2 \rangle$.
 
 **7.** (Hermitian operators) Prove that the momentum operator $\hat{p} = -i\hbar\,d/dx$ is Hermitian
 On the space of wave functions that vanish at infinity. What boundary conditions are required? Show
@@ -1818,7 +1818,7 @@ by counterexample that $\hat{p}$ is not Hermitian if the boundary terms do not v
 
 **8.** (Uncertainty principle) For the harmonic oscillator ground state
 $\psi_0(x) = (m\omega/\pi\hbar)^{1/4}e^{-m\omega x^2/(2\hbar)}$Calculate $\langle x \rangle$
-$\langle x^2 \rangle$$\langle p \rangle$$\langle p^2 \rangle$And verify that
+$\langle x^2 \rangle$, $\langle p \rangle$, $\langle p^2 \rangle$And verify that
 $\sigma_x\,\sigma_p = \hbar/2$. Also show that $\langle x \rangle = \langle p \rangle = 0$ by
 symmetry.
 
@@ -1834,7 +1834,7 @@ probability that it is found in the first excited state.
 
 **11.** (Harmonic oscillator) Using the ladder operators, compute $\langle x^2 \rangle$
 $\langle p^2 \rangle$And $\langle x^4 \rangle$ for the state $|n\rangle$ of the harmonic Oscillator.
-Express your answers in terms of $n$$m$$\omega$And $\hbar$.
+Express your answers in terms of $n$, $m$, $\omega$And $\hbar$.
 
 **12.** (Delta potential) A particle of mass $m$ and energy $E \gt 0$ is incident on the potential
 $V(x) = \alpha[\delta(x+a) + \delta(x-a)]$. Find the transmission coefficient. In the limit
@@ -1848,7 +1848,7 @@ decay of a typical heavy nucleus and comment on the exponential dependence on ba
 Raising/lowering operators, prove that $[\hat{L}^2, \hat{L}_\pm] = 0$. Then show that
 $\hat{L}_+|l,l\rangle = 0$ and hence derive the normalisation constant for $\hat{L}_+|l,m\rangle$.
 
-**15.** (Hydrogen atom) Calculate $\langle r \rangle$$\langle r^2 \rangle$And $\langle 1/r \rangle$
+**15.** (Hydrogen atom) Calculate $\langle r \rangle$, $\langle r^2 \rangle$And $\langle 1/r \rangle$
 for the hydrogen atom ground state $\psi_{100}$. Compare $\langle r \rangle$ With the Bohr radius
 $a_0$. Use the virial theorem to relate $\langle T \rangle$ and $\langle V \rangle$ for The Coulomb
 potential.
@@ -2085,7 +2085,7 @@ $$\langle f|\hat{\mathbf{d}}|i\rangle = -e\langle f|\mathbf{r}|i\rangle$$
 For hydrogen-like atoms, the selection rules are:
 
 - $\Delta l = \pm 1$ (parity change required)
-- $\Delta m = 0, \pm 1$ (for $z$$x \pm iy$ polarisation respectively)
+- $\Delta m = 0, \pm 1$ (for $z$, $x \pm iy$ polarisation respectively)
 - $\Delta n$ unrestricted
 
 The transition rate for $2p \to 1s$ in hydrogen:

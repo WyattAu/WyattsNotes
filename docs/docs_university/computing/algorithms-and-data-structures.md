@@ -1271,7 +1271,7 @@ Extract $E$: relax $D \to \min(6, 4+2)=6$. $Q = \\{D(6)\\}$
 
 Extract $D$: no improvements.
 
-Result: $d[A]=0$$d[B]=3$$d[C]=2$$d[D]=6$$d[E]=4$
+Result: $d[A]=0$, $d[B]=3$, $d[C]=2$, $d[D]=6$, $d[E]=4$
 
 </details>
 
@@ -1316,10 +1316,10 @@ weight, which contains a cycle of negative weight. $\blacksquare$
 
 Find shortest paths from $A$ in the graph:
 
-- $A \xrightarrow{6} B$$A \xrightarrow{7} C$
-- $B \xrightarrow{5} C$$B \xrightarrow{-4} D$$B \xrightarrow{8} E$
-- $C \xrightarrow{-3} D$$C \xrightarrow{9} E$
-- $D \xrightarrow{2} E$$D \xrightarrow{7} F$
+- $A \xrightarrow{6} B$, $A \xrightarrow{7} C$
+- $B \xrightarrow{5} C$, $B \xrightarrow{-4} D$, $B \xrightarrow{8} E$
+- $C \xrightarrow{-3} D$, $C \xrightarrow{9} E$
+- $D \xrightarrow{2} E$, $D \xrightarrow{7} F$
 - $E \xrightarrow{-5} F$
 
 Initial: $d = [\infty, \infty, \infty, \infty, \infty, \infty]$ for $[A, B, C, D, E, F]$.
@@ -1350,22 +1350,22 @@ Result: $d = [0, 6, 7, 2, 4, -1]$. Shortest path to $F$: $A \to B \to D \to E \t
 <details>
 <summary>Worked Example: Bellman-Ford Negative Cycle Detection</summary>
 
-Graph: $A \xrightarrow{1} B$$B \xrightarrow{-3} C$$C \xrightarrow{2} A$. This has a cycle
+Graph: $A \xrightarrow{1} B$, $B \xrightarrow{-3} C$, $C \xrightarrow{2} A$. This has a cycle
 $A \to B \to C \to A$ of weight $1 + (-3) + 2 = 0$. Not negative.
 
 Now add $C \xrightarrow{-1} A$. Cycle weight: $1 + (-3) + (-1) = -3$. Negative cycle.
 
 Initial: $d[A] = 0$Rest $\infty$.
 
-**Iteration 1:** $d[B] = 1$$d[C] = -2$$d[A] = \min(0, -2 + (-1)) = -3$.
+**Iteration 1:** $d[B] = 1$, $d[C] = -2$, $d[A] = \min(0, -2 + (-1)) = -3$.
 
-**Iteration 2:** $d[B] = -2$$d[C] = -5$$d[A] = -6$.
+**Iteration 2:** $d[B] = -2$, $d[C] = -5$, $d[A] = -6$.
 
-**Iteration 3:** $d[B] = -5$$d[C] = -8$$d[A] = -9$.
+**Iteration 3:** $d[B] = -5$, $d[C] = -8$, $d[A] = -9$.
 
-**Iteration 4:** $d[B] = -8$$d[C] = -11$$d[A] = -12$.
+**Iteration 4:** $d[B] = -8$, $d[C] = -11$, $d[A] = -12$.
 
-**Iteration 5:** $d[B] = -11$$d[C] = -14$$d[A] = -15$.
+**Iteration 5:** $d[B] = -11$, $d[C] = -14$, $d[A] = -15$.
 
 **Check (iteration 6):** $(A,B)$: $-15 + 1 = -14 \lt -11$Can still relax. **Negative cycle
 detected!**
@@ -1391,7 +1391,7 @@ intermediate vertices from $\\{1, 2, \ldots, k\\}$. Then:
 
 **Theorem 4.10.** Floyd-Warshall runs in $O(V^3)$ time and $O(V^2)$ space.
 
-_Proof._ The triple nested loop ($k$$i$$j$) executes $V^3$ iterations, each doing $O(1)$ work. The
+_Proof._ The triple nested loop ($k$, $i$, $j$) executes $V^3$ iterations, each doing $O(1)$ work. The
 distance matrix requires $V^2$ space. Note that $d_{ij}^{(k)}$ can overwrite $d_{ij}^{(k-1)}$ in
 place because $d_{ik}^{(k)} = d_{ik}^{(k-1)}$ and $d_{kj}^{(k)} = d_{kj}^{(k-1)}$ (paths from $i$ to
 $k$ and $k$ to $j$ using vertices up to $k$ cannot be improved by going through $k$ again without a
@@ -1401,8 +1401,8 @@ negative cycle). $\blacksquare$
 <summary>Worked Example: Floyd-Warshall on 4 Vertices</summary>
 
 Find all-pairs shortest paths for the graph with vertices $\\{1, 2, 3, 4\\}$ and edges:
-$w(1,2) = 3$$w(1,3) = 8$$w(1,4) = -4$ $w(2,1) = 5$$w(2,3) = 7$$w(2,4) = 2$ $w(3,1) = 2$$w(3,4) = -1$
-$w(4,1) = 6$$w(4,3) = 9$.
+$w(1,2) = 3$, $w(1,3) = 8$, $w(1,4) = -4$ $w(2,1) = 5$, $w(2,3) = 7$, $w(2,4) = 2$ $w(3,1) = 2$, $w(3,4) = -1$
+$w(4,1) = 6$, $w(4,3) = 9$.
 
 **Initial distance matrix $D^{(0)}$:**
 $$D^{(0)} = \begin{pmatrix} 0 & 3 & 8 & -4 \\ 5 & 0 & 7 & 2 \\ 2 & \infty & 0 & -1 \\ 6 & \infty & 9 & 0 \end{pmatrix}$$
@@ -1449,7 +1449,7 @@ Tree to a non-tree vertex (using a priority queue). $O((V + E)\log V)$.
 Belongs to some MST.
 
 _Proof._ Let $(S, V \setminus S)$ be a cut and $e = (u, v)$ be the minimum-weight crossing edge with
-$u \in S$$v \notin S$. Let $T$ be an MST. If $e \in T$We are done. Otherwise, adding $e$ to $T$
+$u \in S$, $v \notin S$. Let $T$ be an MST. If $e \in T$We are done. Otherwise, adding $e$ to $T$
 creates a cycle. This cycle must cross the cut at least once more (it goes from $u$ to $v$ via some
 other path). Let $e'$ be another crossing edge on this cycle. Since $e$ is the minimum-weight
 crossing edge, $w(e) \leq w(e')$. Replacing $e'$ with $e$ in $T$ gives a spanning tree of weight no
@@ -1482,24 +1482,24 @@ the cut property, the minimum-weight crossing edge belongs to some MST. $\blacks
 <summary>Worked Example: Kruskal's Algorithm</summary>
 
 Find the MST of the graph with edges (sorted by weight):
-$(D, E, 2)$$(C, E, 3)$$(A, B, 4)$$(B, C, 5)$$(B, E, 6)$$(A, E, 7)$$(A, D, 8)$$(C, D, 9)$.
+$(D, E, 2)$, $(C, E, 3)$, $(A, B, 4)$, $(B, C, 5)$, $(B, E, 6)$, $(A, E, 7)$, $(A, D, 8)$, $(C, D, 9)$.
 
 Vertices: $\\{A, B, C, D, E\\}$.
 
-Sorted edges: $(D,E,2)$$(C,E,3)$$(A,B,4)$$(B,C,5)$$(B,E,6)$$(A,E,7)$$(A,D,8)$$(C,D,9)$.
+Sorted edges: $(D,E,2)$, $(C,E,3)$, $(A,B,4)$, $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$, $(C,D,9)$.
 
 Process each edge:
 
 1. $(D, E, 2)$: Add. Forest: $\\{D-E\\}$. Cost: 2.
 2. $(C, E, 3)$: Add. Forest: $\\{C-D-E\\}$. Cost: 5.
-3. $(A, B, 4)$: Add. Forest: $\\{A-B\\}$$\\{C-D-E\\}$. Cost: 9.
+3. $(A, B, 4)$: Add. Forest: $\\{A-B\\}$, $\\{C-D-E\\}$. Cost: 9.
 4. $(B, C, 5)$: Add (connects two components). Forest: $\\{A-B-C-D-E\\}$. Cost: 14.
 5. $(B, E, 6)$: Skip (creates cycle $B-C-D-E-B$).
 6. $(A, E, 7)$: Skip (creates cycle).
 7. $(A, D, 8)$: Skip (creates cycle).
 8. $(C, D, 9)$: Skip (creates cycle).
 
-**MST:** $(D,E,2)$$(C,E,3)$$(A,B,4)$$(B,C,5)$. Total weight: 14.
+**MST:** $(D,E,2)$, $(C,E,3)$, $(A,B,4)$, $(B,C,5)$. Total weight: 14.
 
 </details>
 
@@ -1508,18 +1508,18 @@ Process each edge:
 
 Find the MST of the same graph starting from vertex $A$.
 
-Edges from $A$: $(A,B,4)$$(A,E,7)$$(A,D,8)$. Minimum: $(A,B,4)$. Tree: $\\{A, B\\}$. Cost: 4.
+Edges from $A$: $(A,B,4)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(A,B,4)$. Tree: $\\{A, B\\}$. Cost: 4.
 
-Edges crossing cut: $(B,C,5)$$(B,E,6)$$(A,E,7)$$(A,D,8)$. Minimum: $(B,C,5)$. Tree: $\\{A, B, C\\}$.
+Edges crossing cut: $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(B,C,5)$. Tree: $\\{A, B, C\\}$.
 Cost: 9.
 
-Edges crossing cut: $(C,E,3)$$(C,D,9)$$(B,E,6)$$(A,E,7)$$(A,D,8)$. Minimum: $(C,E,3)$. Tree:
+Edges crossing cut: $(C,E,3)$, $(C,D,9)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(C,E,3)$. Tree:
 $\\{A, B, C, E\\}$. Cost: 12.
 
-Edges crossing cut: $(D,E,2)$$(C,D,9)$$(A,D,8)$. Minimum: $(D,E,2)$. Tree: $\\{A, B, C, D, E\\}$.
+Edges crossing cut: $(D,E,2)$, $(C,D,9)$, $(A,D,8)$. Minimum: $(D,E,2)$. Tree: $\\{A, B, C, D, E\\}$.
 Cost: 14.
 
-**MST:** $(A,B,4)$$(B,C,5)$$(C,E,3)$$(D,E,2)$. Total weight: 14 (same as Kruskal's).
+**MST:** $(A,B,4)$, $(B,C,5)$, $(C,E,3)$, $(D,E,2)$. Total weight: 14 (same as Kruskal's).
 
 </details>
 
@@ -1620,7 +1620,7 @@ i=4:      0  1  1  4  5  7  8  9
 Maximum value: $dp[4][7] = 9$ (items 2 and 4: $w = 3 + 5 = 7$, $v = 4 + 7 = 11$ — let me recalculate).
 
 Correct: items 2 and 3 ($w=3+4=7$, $v=4+5=9$), or items 1, 2, 4 ($w=1+3+5=9 > 7$Not valid). Items 1, 3
-($w=1+4=5$$v=1+5=6$), items 2, 4 ($w=3+5=8 > 7$). Optimal: items 2 and 3 ($w=3+4=7$$v=4+5=9$).
+($w=1+4=5$, $v=1+5=6$), items 2, 4 ($w=3+5=8 > 7$). Optimal: items 2 and 3 ($w=3+4=7$, $v=4+5=9$).
 
 </details>
 
@@ -1939,7 +1939,7 @@ $\blacksquare$
 <summary>Worked Example: Greedy Set Cover</summary>
 
 Universe $U = \\{1, 2, 3, 4, 5, 6\\}$. Sets:
-$S_1 = \\{1, 2, 3\\}$$S_2 = \\{2, 4\\}$$S_3 = \\{3, 5, 6\\}$$S_4 = \\{4, 5\\}$$S_5 = \\{1, 4, 6\\}$.
+$S_1 = \\{1, 2, 3\\}$, $S_2 = \\{2, 4\\}$, $S_3 = \\{3, 5, 6\\}$, $S_4 = \\{4, 5\\}$, $S_5 = \\{1, 4, 6\\}$.
 All sets have equal cost 1.
 
 **Greedy:**
@@ -2017,13 +2017,13 @@ The 3rd smallest element is 3.
 
 Test whether $n = 561$ is prime (it is not; $561 = 3 \times 11 \times 17$A Carmichael number).
 
-Write $n - 1 = 560 = 2^4 \times 35$So $s = 4$$d = 35$.
+Write $n - 1 = 560 = 2^4 \times 35$So $s = 4$, $d = 35$.
 
 Choose random base $a = 2$.
 
 Compute $a^d \bmod n = 2^{35} \bmod 561$.
 
-$2^5 = 32$$2^{10} = 1024 \bmod 561 = 463$$2^{20} = 463^2 \bmod 561 = 67$$2^{35} = 2^{20} \cdot 2^{10} \cdot 2^5 \bmod 561 = 67 \cdot 463 \cdot 32 \bmod 561$.
+$2^5 = 32$, $2^{10} = 1024 \bmod 561 = 463$, $2^{20} = 463^2 \bmod 561 = 67$, $2^{35} = 2^{20} \cdot 2^{10} \cdot 2^5 \bmod 561 = 67 \cdot 463 \cdot 32 \bmod 561$.
 
 $67 \times 463 = 31021 \bmod 561 = 31021 - 55 \times 561 = 31021 - 30855 = 166$.
 $166 \times 32 = 5312 \bmod 561 = 5312 - 9 \times 561 = 5312 - 5049 = 263$.
@@ -2048,7 +2048,7 @@ $\leq 4^{-k}$.
 #### 6.3.3 Hashing with Universal Hash Functions
 
 **Definition.** A family $\mathcal{H}$ of hash functions from $U$ to $\\{0, \ldots, m - 1\\}$ is
-**universal** if for any distinct $x, y \in U$$\Pr_{h \in \mathcal{H}}[h(x) = h(y)] \leq 1/m$.
+**universal** if for any distinct $x, y \in U$, $\Pr_{h \in \mathcal{H}}[h(x) = h(y)] \leq 1/m$.
 
 **Theorem 6.8.** With a universal hash family and chaining, the expected number of collisions for
 any element is at most $n/m$.
@@ -2185,7 +2185,7 @@ $\Omega(n \log n)$ (not just the worst case).
 
 **Problem 12.** Run Dijkstra's algorithm on the following graph from source $A$. Show the state of
 the priority queue after each extraction. Edge weights:
-$A \xrightarrow{10} B$$A \xrightarrow{3} C$$C \xrightarrow{4} B$$C \xrightarrow{8} D$$C \xrightarrow{2} E$$B \xrightarrow{7} D$$E \xrightarrow{5} D$$D \xrightarrow{6} B$.
+$A \xrightarrow{10} B$, $A \xrightarrow{3} C$, $C \xrightarrow{4} B$, $C \xrightarrow{8} D$, $C \xrightarrow{2} E$, $B \xrightarrow{7} D$, $E \xrightarrow{5} D$, $D \xrightarrow{6} B$.
 
 **Problem 13.** Prove that if a graph has a negative-weight cycle reachable from the source, then
 Bellman-Ford will detect it.
@@ -2204,7 +2204,7 @@ amount $M$. Find the minimum number of coins needed to make exact change for $M$
 is impossible). Give a recurrence, prove correctness, and state the time and space complexity.
 
 **Problem 17.** Given a sequence of matrices
-$A_1 (2 \times 10)$$A_2 (10 \times 50)$$A_3 (50 \times 20)$$A_4 (20 \times 5)$$A_5 (5 \times 80)$Find
+$A_1 (2 \times 10)$, $A_2 (10 \times 50)$, $A_3 (50 \times 20)$, $A_4 (20 \times 5)$, $A_5 (5 \times 80)$Find
 the optimal parenthesisation using the matrix chain multiplication DP. Show the full DP table.
 
 ### 7.6 Advanced Topics (Problems 18--20)

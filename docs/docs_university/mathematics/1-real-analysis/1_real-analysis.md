@@ -639,11 +639,11 @@ Classified as:
 - **Essential (or infinite/oscillatory):** At least one one-sided limit does not exist.
 
 **Proposition 4.3.** Polynomials are continuous on $\mathbb{R}$. Rational functions $p(x)/q(x)$ are
-Continuous wherever $q(x) \neq 0$. The functions $\sin x$$\cos x$$e^x$$\ln x$ are continuous On
+Continuous wherever $q(x) \neq 0$. The functions $\sin x$, $\cos x$, $e^x$, $\ln x$ are continuous On
 their domains.
 
 **Theorem 4.1 (Algebra of Continuous Functions).** If $f$ and $g$ are continuous at $a$Then $f+g$
-$f-g$$fg$And (where defined) $f/g$ are continuous at $a$.
+$f-g$, $fg$And (where defined) $f/g$ are continuous at $a$.
 
 **Theorem 4.2.** Compositions of continuous functions are continuous: if $f$ is continuous at $a$
 and $g$ is continuous at $f(a)$Then $g \circ f$ is continuous at $a$.
@@ -688,9 +688,9 @@ That $c = \sup(S)$.
 
 Therefore $f(c) = y$. $\blacksquare$
 
-_Alternative .../1-number-and-algebra/3_proof-and-logic (bisection)._ Set $a_0 = a$$b_0 = b$. Given
+_Alternative .../1-number-and-algebra/3_proof-and-logic (bisection)._ Set $a_0 = a$, $b_0 = b$. Given
 $[a_n, b_n]$ with $f(a_n) \lt y \lt f(b_n)$ Let $m_n = (a_n + b_n)/2$. If $f(m_n) \geq y$Set
-$a_{n+1} = a_n$$b_{n+1} = m_n$. If $f(m_n) \lt y$ Set $a_{n+1} = m_n$$b_{n+1} = b_n$. Either way,
+$a_{n+1} = a_n$, $b_{n+1} = m_n$. If $f(m_n) \lt y$ Set $a_{n+1} = m_n$, $b_{n+1} = b_n$. Either way,
 $f(a_n) \lt y \leq f(b_n)$ and $b_n - a_n = (b-a)/2^n \to 0$. By the nested interval property,
 $a_n \to c$ and $b_n \to c$. By continuity, $f(c) = \lim f(a_n) \leq y$ And
 $f(c) = \lim f(b_n) \geq y$So $f(c) = y$. $\blacksquare$
@@ -811,7 +811,7 @@ $\blacksquare$
 <details>
 <summary>Worked Example: Prove $f(x) = x \sin(1/x)$ (with $f(0) = 0$) is continuous everywhere</summary>
 
-_Solution._ For $x \neq 0$$f$ is a product of continuous functions, hence continuous.
+_Solution._ For $x \neq 0$, $f$ is a product of continuous functions, hence continuous.
 
 At $x = 0$: let $\varepsilon > 0$. Choose $\delta = \varepsilon$. For $|x - 0| = |x| \lt \delta$:
 
@@ -1047,7 +1047,7 @@ Highly discontinuous while retaining the intermediate value property. $\blacksqu
 
 **Worked Example.** Compute the third-order Taylor polynomial of $f(x) = e^x$ about $a = 0$.
 
-$f(0) = 1$$f'(0) = 1$$f''(0) = 1$$f'''(0) = 1$. So
+$f(0) = 1$, $f'(0) = 1$, $f''(0) = 1$, $f'''(0) = 1$. So
 
 $$T_3(x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{6}$$
 
@@ -1077,7 +1077,7 @@ The error is at most $2.48 \times 10^{-13} \lt 10^{-10}$. $\blacksquare$
 <details>
 <summary>Worked Example: Find the Maclaurin series for $\ln(1 + x)$ and its radius of convergence</summary>
 
-_Solution._ For $f(x) = \ln(1+x)$: $f(0) = 0$$f'(x) = 1/(1+x)$$f''(x) = -1/(1+x)^2$
+_Solution._ For $f(x) = \ln(1+x)$: $f(0) = 0$, $f'(x) = 1/(1+x)$, $f''(x) = -1/(1+x)^2$
 $f^{(k)}(x) = (-1)^{k-1}(k-1)!/(1+x)^k$ for $k \geq 1$. So $f^{(k)}(0) = (-1)^{k-1}(k-1)!$.
 
 $$\ln(1+x) = \sum_{k=1}^{\infty} \frac{(-1)^{k-1}(k-1)!}{k!} x^k = \sum_{k=1}^{\infty} \frac{(-1)^{k-1}}{k} x^k$$
@@ -1095,10 +1095,10 @@ The radius of convergence is $R = 1$ and the interval of convergence is $(-1, 1]
 <summary>Worked Example: Compute the Taylor expansion of $\cos x$ about $a = \pi/3$ with remainder bound</summary>
 
 _Solution._ Compute derivatives:
-$f(x) = \cos x$$f'(x) = -\sin x$$f''(x) = -\cos x$$f'''(x) = \sin x$ $f^{(4)}(x) = \cos x$.
+$f(x) = \cos x$, $f'(x) = -\sin x$, $f''(x) = -\cos x$, $f'''(x) = \sin x$ $f^{(4)}(x) = \cos x$.
 Evaluated at $a = \pi/3$:
 
-$f(\pi/3) = 1/2$$f'(\pi/3) = -\sqrt{3}/2$$f''(\pi/3) = -1/2$$f'''(\pi/3) = \sqrt{3}/2$.
+$f(\pi/3) = 1/2$, $f'(\pi/3) = -\sqrt{3}/2$, $f''(\pi/3) = -1/2$, $f'''(\pi/3) = \sqrt{3}/2$.
 
 The third-degree Taylor polynomial is:
 
@@ -1130,7 +1130,7 @@ The **upper sum** and **lower sum** of $f$ with respect to $P$ are:
 
 $$U(f, P) = \sum_{i=1}^{n} M_i \Delta x_i, \quad L(f, P) = \sum_{i=1}^{n} m_i \Delta x_i$$
 
-Where $M_i = \sup\{f(x) : x \in [x_{i-1}, x_i]\}$$m_i = \inf\{f(x) : x \in [x_{i-1}, x_i]\}$And
+Where $M_i = \sup\{f(x) : x \in [x_{i-1}, x_i]\}$, $m_i = \inf\{f(x) : x \in [x_{i-1}, x_i]\}$And
 $\Delta x_i = x_i - x_{i-1}$.
 
 The **mesh** of $P$ is $\|P\| = \max_{1 \leq i \leq n} \Delta x_i$.
@@ -1389,7 +1389,7 @@ _Solution._ This integral requires both a Type I and Type II limit:
 
 $$\int_0^{\infty} x e^{-x}\, dx = \lim_{a \to 0^+} \lim_{b \to \infty} \int_a^b x e^{-x}\, dx$$
 
-Integrate by parts with $u = x$$dv = e^{-x}\, dx$So $du = dx$$v = -e^{-x}$:
+Integrate by parts with $u = x$, $dv = e^{-x}\, dx$So $du = dx$, $v = -e^{-x}$:
 
 $$\int x e^{-x}\, dx = -xe^{-x} + \int e^{-x}\, dx = -xe^{-x} - e^{-x} = -(x+1)e^{-x}$$
 

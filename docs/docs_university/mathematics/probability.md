@@ -143,7 +143,7 @@ Provided the sum converges absolutely.
 **Definition (Variance).** $\mathrm{Var}(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$ where $\mu = E[X]$.
 
 **Proposition 2.2 (Linearity of Expectation).** $E[aX + bY] = aE[X] + bE[Y]$ for any random
-variables $X$$Y$ and constants $a$$b$.
+variables $X$, $Y$ and constants $a$, $b$.
 
 _Proof._ Direct computation from the definition of expected value. For the discrete case:
 

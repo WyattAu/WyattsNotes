@@ -854,9 +854,9 @@ Hmm, $\\{C\\}$ alone is a relation with no non-trivial FDs, so it is in BCNF.
 $R_{2a} = \\{E, D, A\\}$ With $ED \to A$: $ED$ is a superkey (it determines all three attributes).
 BCNF.
 
-**Final decomposition:** $R_1 = \\{A, B\\}$$R_{2a} = \\{A, D, E\\}$$R_{2b} = \\{C\\}$.
+**Final decomposition:** $R_1 = \\{A, B\\}$, $R_{2a} = \\{A, D, E\\}$, $R_{2b} = \\{C\\}$.
 
-**Lossless check:** $R_1 \cap R_{2a} = \\{A\\}$$A \to B$ (from $F$), so $R_1 \bowtie R_{2a}$ is
+**Lossless check:** $R_1 \cap R_{2a} = \\{A\\}$, $A \to B$ (from $F$), so $R_1 \bowtie R_{2a}$ is
 lossless. $R_{2a} \cap R_{2b} = \varnothing$... This is problematic. $R_{2b} = \\{C\\}$ shares no
 attributes with The others.
 
@@ -890,7 +890,7 @@ Tuples $t_1, t_2 \in R$ with $t_1[X] = t_2[X]$There exists a tuple $t_3 \in R$ s
 **Trivial MVDs:** $X \twoheadrightarrow Y$ where $Y \subseteq X$ or $X \cup Y = R$.
 
 **Fourth Normal Form (4NF).** $R$ is in 4NF if for every non-trivial MVD $X \twoheadrightarrow Y$
-That holds on $R$$X$ is a superkey.
+That holds on $R$, $X$ is a superkey.
 
 **Theorem 4.5.** Every relation in 4NF is in BCNF.
 
@@ -1077,7 +1077,7 @@ Average lookup: $O(1)$ under uniform hashing. No support for range queries.
 
 1. **Separate chaining:** Each bucket contains a linked list of entries. Lookup requires traversing
    the chain. Average chain length under uniform hashing is $n / B$.
-2. **Open addressing (linear probing):** If bucket $h(k)$ is full, try $h(k)+1$$h(k)+2$Etc. (mod
+2. **Open addressing (linear probing):** If bucket $h(k)$ is full, try $h(k)+1$, $h(k)+2$Etc. (mod
    $B$). Prone to **primary clustering**: consecutive occupied slots increase the average probe
    length.
 3. **Open addressing (quadratic probing):** Try $h(k) + 1^2, h(k) + 2^2, h(k) + 3^2$Etc. Reduces
@@ -1268,7 +1268,7 @@ Precedence graph has cycle: $T_1 \to T_2 \to T_1$. **Not conflict-serialisable.*
 **Theorem 6.2.** 2PL guarantees conflict serialisability.
 
 _Proof._ By the protocol, transaction $T_i$ acquires all its locks before releasing any. If $T_j$
-Requests a lock held by $T_i$$T_j$ waits. This creates a total ordering on conflicting Operations,
+Requests a lock held by $T_i$, $T_j$ waits. This creates a total ordering on conflicting Operations,
 which corresponds to a serial schedule. $\blacksquare$
 
 **Variants:**
@@ -1310,15 +1310,15 @@ OCC performs well when conflicts are rare but degrades under high contention (ma
 
 **Execution:**
 
-1. **$T_1$ read phase:** Reads $A = 100$$B = 200$ into private workspace.
+1. **$T_1$ read phase:** Reads $A = 100$, $B = 200$ into private workspace.
 2. **$T_2$ read phase:** Reads $A = 100$ into private workspace.
 3. **$T_2$ validation phase:** Checks if $A$ was modified by any committed transaction since $T_2$
    started. No committed transactions modified $A$. Validation passes.
 4. **$T_2$ write phase:** Writes $A = 75$. $T_2$ commits.
 5. **$T_1$ validation phase:** Checks if $A$ or $B$ was modified by any committed transaction since
    $T_1$ started. $T_2$ committed and modified $A$. Validation fails.
-6. **$T_1$ is aborted and restarted.** On restart, $T_1$ reads $A = 75$$B = 200$And correctly
-   computes $A = 125$$B = 150$.
+6. **$T_1$ is aborted and restarted.** On restart, $T_1$ reads $A = 75$, $B = 200$And correctly
+   computes $A = 125$, $B = 150$.
 
 </details>
 
@@ -1727,7 +1727,7 @@ visibility Of updates.
 <details>
 <summary>Worked Example 9.1: Quorum Read/Write</summary>
 
-**Scenario:** $N = 5$ replicas. Choose $W = 3$$R = 3$. Note $W + R = 6 \gt 5 = N$.
+**Scenario:** $N = 5$ replicas. Choose $W = 3$, $R = 3$. Note $W + R = 6 \gt 5 = N$.
 
 **Write:** Client writes value $v$. Primary sends write to all 5 replicas. At least 3 acknowledge
 ($W = 3$). Write is considered successful.

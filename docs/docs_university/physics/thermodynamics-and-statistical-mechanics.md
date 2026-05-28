@@ -578,7 +578,7 @@ $\blacksquare$
 Latent heat $L = T \Delta S$.
 
 **Second-order (continuous) transition:** First derivatives are continuous, but second derivatives
-(e.g., $C_P$$\kappa_T$$\alpha$) diverge or are discontinuous.
+(e.g., $C_P$, $\kappa_T$, $\alpha$) diverge or are discontinuous.
 
 **Ehrenfest classification:** An $n$-th order transition has discontinuities in the $n$-th
 Derivatives of $G$With all lower derivatives continuous.
@@ -1332,7 +1332,7 @@ $$m = \tanh\left[\beta(Jzm + h)\right]$$
 
 For $h = 0$A non-zero solution exists when $T \lt T_c = Jz/k_B$.
 
-The critical exponents in mean-field theory: $\beta = 1/2$$\gamma = 1$$\delta = 3$.
+The critical exponents in mean-field theory: $\beta = 1/2$, $\gamma = 1$, $\delta = 3$.
 
 ### 14.4 Landau Theory of Phase Transitions
 
@@ -1534,7 +1534,7 @@ $$= \frac{V^N}{N!h^{3N}}\left(\frac{2\pi m}{\beta}\right)^{3N/2} = \frac{1}{N!}\
 $\blacksquare$
 
 From this, all ideal gas thermodynamics follows:
-$F = -Nk_B T[\ln(V/N\lambda^3) + 1]$$P = Nk_B T/V$$S = Nk_B[\ln(V/N\lambda^3) + 5/2]$.
+$F = -Nk_B T[\ln(V/N\lambda^3) + 1]$, $P = Nk_B T/V$, $S = Nk_B[\ln(V/N\lambda^3) + 5/2]$.
 
 ## 17. Problem Set
 
@@ -1883,7 +1883,7 @@ Entropy of a monatomic ideal gas. State all assumptions.
 1. Particles are non-interacting (ideal gas).
 2. Particles are indistinguishable (Gibbs factor $1/N!$).
 3. Classical phase space is quantised in units of $h^{3N}$.
-4. Thermodynamic limit ($N \to \infty$$V \to \infty$$N/V = \mathrm{const}$).
+4. Thermodynamic limit ($N \to \infty$, $V \to \infty$, $N/V = \mathrm{const}$).
 
 **If you get this wrong, revise:** Section 15.3 (ideal gas in the microcanonical ensemble).
 
@@ -2429,7 +2429,7 @@ The **Landau free energy** for a scalar order parameter $\phi$ near $T_c$:
 $$f(\phi, T) = f_0(T) + \frac{a_0}{2}(T - T_c)\phi^2 + \frac{b}{4}\phi^4$$
 
 **Mean-field exponents:** $\alpha = 0$ (jump in $C$),
-$\beta = 1/2$$\gamma = 1$$\delta = 3$$\eta = 0$.
+$\beta = 1/2$, $\gamma = 1$, $\delta = 3$, $\eta = 0$.
 
 These are exact above the upper critical dimension $d_u = 4$. Below $d_u$Fluctuations modify the
 exponents (as computed by the epsilon expansion).
@@ -2460,7 +2460,7 @@ After thinning out modes in the shell $\Lambda/b < |k| < \Lambda$ and rescaling:
 The RG flow for $r_0$: $\frac{dr_0}{d\ln b} = 2r_0$ (relevant operator).
 
 This means $r_0$ grows under RG, flowing away from the Gaussian fixed point ($r_0 = 0$). The fixed
-point is unstable, indicating that the disordered phase ($r_0 > 0$$\phi = 0$ is stable) is separated
+point is unstable, indicating that the disordered phase ($r_0 > 0$, $\phi = 0$ is stable) is separated
 from the ordered phase by the critical point.
 
 The correlation length exponent: $\xi \propto r_0^{-1/2}$Giving $\nu = 1/2$ (the mean-field value).

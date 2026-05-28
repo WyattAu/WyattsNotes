@@ -313,8 +313,8 @@ The proof is therefore Incomplete.
 >
 > What is the value of $k$And what is $\mathbb{E}(X)$?
 
-A: $k = 1/4$$\mathbb{E}(X) = 4/3$ B: $k = 1/2$$\mathbb{E}(X) = 4/3$ C: $k = 1/2$$\mathbb{E}(X) = 1$
-D: $k = 1/4$$\mathbb{E}(X) = 1$ E: $k = 1$$\mathbb{E}(X) = 2$
+A: $k = 1/4$, $\mathbb{E}(X) = 4/3$ B: $k = 1/2$, $\mathbb{E}(X) = 4/3$ C: $k = 1/2$, $\mathbb{E}(X) = 1$
+D: $k = 1/4$, $\mathbb{E}(X) = 1$ E: $k = 1$, $\mathbb{E}(X) = 2$
 
 **Solution.** Since $f$ is a probability density function, $\int_{-\infty}^{\infty} f(x)\,dx = 1$:
 
@@ -401,7 +401,7 @@ form).
 > can be written as a sum of distinct divisors of $n$.
 >
 > For example, $6$ is practical because its divisors are $1, 2, 3, 6$And:
-> $1 = 1$$2 = 2$$3 = 3$$4 = 1 + 3$$5 = 2 + 3$$6 = 6$.
+> $1 = 1$, $2 = 2$, $3 = 3$, $4 = 1 + 3$, $5 = 2 + 3$, $6 = 6$.
 >
 > Which of the following is practical?
 
@@ -410,17 +410,17 @@ A: 4 B: 5 C: 7 D: 8 E: 9
 **Solution.**
 
 **A: $n = 4$.** Divisors: $1, 2, 4$. We need to write $1, 2, 3, 4$.
-$1 = 1$$2 = 2$$3 = 1 + 2$$4 = 4$. All values up to 4 are achievable. **4 is practical.**
+$1 = 1$, $2 = 2$, $3 = 1 + 2$, $4 = 4$. All values up to 4 are achievable. **4 is practical.**
 
-**B: $n = 5$.** Divisors: $1, 5$. We need to write $1, 2, 3, 4, 5$. $1 = 1$$2 = ?$ We only have $1$
+**B: $n = 5$.** Divisors: $1, 5$. We need to write $1, 2, 3, 4, 5$. $1 = 1$, $2 = ?$ We only have $1$
 and $5$And $1 + 5 = 6 > 2$. We cannot make $2$. **5 is not practical.**
 
 **C: $n = 7$.** Divisors: $1, 7$. We cannot make $2$. **7 is not practical.**
 
 **D: $n = 8$.** Divisors: $1, 2, 4, 8$. We need to write $1, 2, \ldots, 8$.
-$1 = 1$$2 = 2$$3 = 1 + 2$$4 = 4$$5 = 1 + 4$$6 = 2 + 4$$7 = 1 + 2 + 4$$8 = 8$. **8 is practical.**
+$1 = 1$, $2 = 2$, $3 = 1 + 2$, $4 = 4$, $5 = 1 + 4$, $6 = 2 + 4$, $7 = 1 + 2 + 4$, $8 = 8$. **8 is practical.**
 
-**E: $n = 9$.** Divisors: $1, 3, 9$. We need to write $1, 2, \ldots, 9$. $1 = 1$$2 = ?$ We have $1$
+**E: $n = 9$.** Divisors: $1, 3, 9$. We need to write $1, 2, \ldots, 9$. $1 = 1$, $2 = ?$ We have $1$
 and $3$. $1 + 3 = 4 > 2$. We cannot make $2$. **9 is not practical.**
 
 Both A (4) and D (8) are practical. Since the question asks "which of the following is practical"

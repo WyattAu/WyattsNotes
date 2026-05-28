@@ -1018,7 +1018,7 @@ $$A_k(j) = \begin{cases} 2j & \text{if}  k = 0 \\ 0 & \text{if}  j = 0 \text{ an
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
 **Key values:**
-$\alpha(1) = 0$$\alpha(2) = 1$$\alpha(4) = 2$$\alpha(16) = 3$$\alpha(2^{65536}) = 4$.
+$\alpha(1) = 0$, $\alpha(2) = 1$, $\alpha(4) = 2$, $\alpha(16) = 3$, $\alpha(2^{65536}) = 4$.
 
 For all practical purposes, $\alpha(n) \leq 4$.
 
@@ -1105,7 +1105,7 @@ most $2 \log_2 n$ nodes (one per level, on each side). $\blacksquare$
 <details>
 <summary>Worked Example: Segment Tree Range Sum</summary>
 
-Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
+Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
 
 Build the segment tree for range sum queries:
 
@@ -1169,7 +1169,7 @@ $O(\log n)$ time and uses $O(n)$ space.
 <details>
 <summary>Worked Example: Fenwick Tree Construction</summary>
 
-Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
+Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$, $n = 8$.
 
 Binary representations: 1=001, 2=010, 3=011, 4=100, 5=101, 6=110, 7=111, 8=1000.
 
@@ -1214,7 +1214,7 @@ algorithm) or $O(n \log n)$ time (using the doubling algorithm with radix sort).
 ### 6.2 Suffix Trees
 
 A **suffix tree** for a string $S$ of length $n$ is a compressed trie of all $n$ suffixes of $S$
-(plus a unique terminator $\$$).
+(plus a unique terminator $\$, $).
 
 **Theorem 6.2 (Ukkonen).** A suffix tree can be constructed in $O(n)$ time online.
 

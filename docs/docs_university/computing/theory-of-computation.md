@@ -214,7 +214,7 @@ of Regular languages.
 
 Convert the NFA from the "strings ending in `01`" example to a DFA via the subset construction.
 
-NFA states: $\{q_0, q_1, q_2\}$$\Sigma = \{0, 1\}$$F = \{q_2\}$No $\varepsilon$-transitions.
+NFA states: $\{q_0, q_1, q_2\}$, $\Sigma = \{0, 1\}$, $F = \{q_2\}$No $\varepsilon$-transitions.
 
 Start state: $\{q_0\}$.
 
@@ -224,7 +224,7 @@ Start state: $\{q_0\}$.
 | $\{q_0, q_1\}$ | $\{q_0, q_1\}$      | $\{q_0, q_2\}$      | No      |
 | $\{q_0, q_2\}$ | $\{q_0, q_1\}$      | $\{q_0\}$           | Yes     |
 
-The DFA has 3 reachable states. $\{q_1\}$$\{q_2\}$And $\{q_1, q_2\}$ are unreachable.
+The DFA has 3 reachable states. $\{q_1\}$, $\{q_2\}$And $\{q_1, q_2\}$ are unreachable.
 
 </details>
 
@@ -233,7 +233,7 @@ The DFA has 3 reachable states. $\{q_1\}$$\{q_2\}$And $\{q_1, q_2\}$ are unreach
 **Definition.** Regular expressions over $\Sigma$ are defined inductively:
 
 1. $\emptyset$ (empty set), $\varepsilon$ (empty string), and $a$ for each $a \in \Sigma$ are regex.
-2. If $R_1$ and $R_2$ are regex, then $(R_1 \cup R_2)$$(R_1 \cdot R_2)$And $(R_1^*)$ are regex.
+2. If $R_1$ and $R_2$ are regex, then $(R_1 \cup R_2)$, $(R_1 \cdot R_2)$And $(R_1^*)$ are regex.
 3. Nothing else is a regex.
 
 **Shorthand:** $R^+$ means $R \cdot R^*$. $R?$ means $(R \cup \varepsilon)$.
@@ -275,7 +275,7 @@ _Proof (sketch)._
 
 **Regex to NFA:** Induction on the structure of the regex.
 
-- Base cases: $\emptyset$$\varepsilon$$a$ each have trivial NFAs.
+- Base cases: $\emptyset$, $\varepsilon$, $a$ each have trivial NFAs.
 - Union: Combine two NFAs with a new start state and $\varepsilon$-transitions to each.
 - Concatenation: Connect the accept states of the first NFA to the start state of the second via
   $\varepsilon$-transitions.
@@ -338,7 +338,7 @@ _Proof of Theorem 2.4._
 **(1) $\Rightarrow$ (2):** Let $D = (Q, \Sigma, \delta, q_0, F)$ be a DFA for $L$. Define $x \sim y$
 iff $\delta^*(q_0, x) = \delta^*(q_0, y)$ (i.e., $D$ reaches the same state on $x$ and $y$). Then
 $\sim$ has at most $|Q|$ equivalence classes. We show $\sim = \equiv_L$. If $x \sim y$Then for All
-$z$$\delta^*(q_0, xz) = \delta^*(q_0, yz)$So $xz \in L$ iff $yz \in L$Meaning $x \equiv_L y$.
+$z$, $\delta^*(q_0, xz) = \delta^*(q_0, yz)$So $xz \in L$ iff $yz \in L$Meaning $x \equiv_L y$.
 Conversely, if $x \not\equiv_L y$There exists $z$ with $xz \in L$ and $yz \notin L$ (or vice versa),
 so $\delta^*(q_0, xz) \neq \delta^*(q_0, yz)$Hence $x \not\sim y$.
 
@@ -391,7 +391,7 @@ This algorithm runs in $O(n^2 k)$ time where $n$ is the number of states and $k 
 ### 2.6 Pumping Lemma for Regular Languages
 
 **Theorem 2.6 (Pumping Lemma).** If $L$ is regular, then there exists a constant $p$ (the pumping
-Length) such that for every string $w \in L$ with $|w| \geq p$$w$ can be decomposed as $w = xyz$
+Length) such that for every string $w \in L$ with $|w| \geq p$, $w$ can be decomposed as $w = xyz$
 satisfying:
 
 1. $|y| \gt 0$ (the pumped part is non-empty).
@@ -415,7 +415,7 @@ $|xy| \leq p$So $y$ consists only of `0`S. Let $|y| = k \gt 0$. Then $xy^0 z = 0
 
 **Example.** $L = \{ww : w \in \{0,1\}^*\}$ is not regular.
 
-_Proof._ Assume pumping length $p$. Let $w = 0^p 1 0^p 1 \in L$. Since $|xy| \leq p$$y = 0^k$ for
+_Proof._ Assume pumping length $p$. Let $w = 0^p 1 0^p 1 \in L$. Since $|xy| \leq p$, $y = 0^k$ for
 Some $k \gt 0$. Then $xy^0 z = 0^{p-k} 1 0^p 1 \notin L$ (the two halves have different lengths).
 $\blacksquare$
 
@@ -666,7 +666,7 @@ $\varepsilon$-moves (without consuming input or changing the stack).
 
 **Example.** PDA for $L = \{a^n b^n : n \geq 0\}$:
 
-1. Push a marker $\$$ onto the stack.
+1. Push a marker $\$, $ onto the stack.
 2. For each `a`Push `X` onto the stack.
 3. For each `b`Pop `X` from the stack.
 4. Accept if the stack is empty (just the marker) and all input is consumed.
@@ -736,7 +736,7 @@ only $\$, $ remains, the derivation is complete and all input has been consumed.
 ### 3.6 Pumping Lemma for Context-Free Languages
 
 **Theorem 3.3.** If $L$ is context-free, there exists $p$ such that for every $w \in L$ with
-$|w| \geq p$$w$ can be decomposed as $w = uvxyz$ satisfying:
+$|w| \geq p$, $w$ can be decomposed as $w = uvxyz$ satisfying:
 
 1. $|vy| \gt 0$.
 2. $|vxy| \leq p$.
@@ -818,7 +818,7 @@ And checks all $|G|$ rules, giving $O(n^3 \cdot |G|)$ total time.
 <details>
 <summary>Worked Example: CYK on a small grammar</summary>
 
-Grammar (CNF): $S \to AB \mid BC$$A \to BA \mid a$$B \to CC \mid b$$C \to AB \mid a$.
+Grammar (CNF): $S \to AB \mid BC$, $A \to BA \mid a$, $B \to CC \mid b$, $C \to AB \mid a$.
 
 String: $w = ba$.
 
@@ -849,7 +849,7 @@ Q_{\mathrm{reject})}}$ where:
 
 - $Q$ is a finite set of states.
 - $\Sigma$ is the input alphabet (does not contain the blank symbol $\sqcup$).
-- $\Gamma$ is the tape alphabet, $\sqcup \in \Gamma$$\Sigma \subseteq \Gamma$.
+- $\Gamma$ is the tape alphabet, $\sqcup \in \Gamma$, $\Sigma \subseteq \Gamma$.
 - $\delta : Q \times \Gamma \to Q \times \Gamma \times \{L, R\}$ is the transition function.
 - $q_0 \in Q$ is the start state.
 - $q_{\mathrm{accept} \in Q$ is the accept state.
@@ -1166,7 +1166,7 @@ neither Empty nor the set of all Turing-recognisable languages.
 _Proof (sketch)._ Let $P$ be a non-trivial property. Since $P$ is non-trivial, there exists a TM
 $M_0$ with $L(M_0) \in P$ and a TM $M_1$ with $L(M_1) \notin P$. Given an arbitrary TM $M$ and input
 $w$Construct $M_w$ that on input $x$: first simulates $M$ on $w$Then simulates $M_0$ on $x$. If $M$
-accepts $w$Then $L(M_w) = L(M_0) \in P$; if $M$ does not accept $w$$L(M_w) = \emptyset$. If
+accepts $w$Then $L(M_w) = L(M_0) \in P$; if $M$ does not accept $w$, $L(M_w) = \emptyset$. If
 $\emptyset \notin P$Then $M_w \in P$ iff $M$ accepts $w$So deciding $P$ would decide
 $A_{\mathrm{TM}}$. The case $\emptyset \in P$ is similar. $\blacksquare$
 
@@ -1792,7 +1792,7 @@ regular using the pumping lemma. (b) Give a CFG for $L$ and prove it is correct.
 decidable? Justify.
 
 **Problem 20.** For each of the following languages, state the smallest complexity class (from
-$\mathrm{Regular}$$\mathrm{CFL$$\mathrm{Decidable}$$\mathrm{NP$ $\mathrm{PSPACE$$\mathrm{EXPTIME}$Or
+$\mathrm{Regular}$, $\mathrm{CFL$, $\mathrm{Decidable}$, $\mathrm{NP$ $\mathrm{PSPACE$, $\mathrm{EXPTIME}$Or
 "undecidable") that is known to contain it. Justify each answer briefly.
 
 (a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm{ has} a Hamiltonian cycle\}$
@@ -1827,7 +1827,7 @@ Since $\mathrm{P}$ is closed under complement, $\overline{L} \in \mathrm{P}
 $\overline{L} \in \mathrm{NP}$ for every $L \in \mathrm{NP}$, meaning
 $\mathrm{NP} \subseteq \mathrm{coNP}$. By symmetry, $\mathrm{coNP} \subseteq \mathrm{NP}$.
 
-**Problem 19.** (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$$y$ is in the first $0^p$
+**Problem 19.** (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$, $y$ is in the first $0^p$
 block. Pumping down gives $0^{p-k}1^p\#0^p1^p \notin L$. (b)
 $S \to 0S0 \mid 1S1 \mid S\#S \mid \varepsilon$ (generate matched pairs on both sides of $\#$). (c)
 Yes — a TM can check the $\#$ symbol and verify both halves are reverses of each other.

@@ -216,7 +216,7 @@ $z_2 = 2\,e^{i5\pi/3} = 2\left(\frac{1}{2} - i\,\frac{\sqrt{3}}{2}\right) = 1 - 
 $16i = 16\,e^{i\pi/2}$. The fourth roots are:
 $z_k = 16^{1/4}\, e^{i(\pi/2 + 2\pi k)/4} = 2\, e^{i(\pi/8 + \pi k/2)}$ for $k = 0, 1, 2, 3$.
 
-$z_0 = 2\,e^{i\pi/8}$$z_1 = 2\,e^{i5\pi/8}$$z_2 = 2\,e^{i9\pi/8}$$z_3 = 2\,e^{i13\pi/8}$.
+$z_0 = 2\,e^{i\pi/8}$, $z_1 = 2\,e^{i5\pi/8}$, $z_2 = 2\,e^{i9\pi/8}$, $z_3 = 2\,e^{i13\pi/8}$.
 
 **Problem.** Show that the $n$-th roots of any non-zero $w$ are in geometric progression.
 
@@ -287,7 +287,7 @@ Makes complex differentiability far more restrictive than real differentiability
 $U \subseteq \mathbb{C}$ if $f$ is differentiable at every point of $U$. A function that is analytic
 On all of $\mathbb{C}$ is called **entire**.
 
-**Examples of entire functions:** $z^n$$e^z$$\sin z$$\cos z$Polynomials.
+**Examples of entire functions:** $z^n$, $e^z$, $\sin z$, $\cos z$Polynomials.
 
 **Example of a non-analytic function:** $f(z) = \bar{z}$ is nowhere differentiable (except at
 $z = 0$ if we define it, but still not analytic there).
@@ -297,7 +297,7 @@ $z = 0$ if we define it, but still not analytic there).
 
 **Problem.** Show that $f(z) = |z|^2$ is differentiable only at $z = 0$.
 
-$f(z) = x^2 + y^2$So $u = x^2 + y^2$ and $v = 0$. $u_x = 2x$$u_y = 2y$$v_x = 0$$v_y = 0$. The
+$f(z) = x^2 + y^2$So $u = x^2 + y^2$ and $v = 0$. $u_x = 2x$, $u_y = 2y$, $v_x = 0$, $v_y = 0$. The
 Cauchy-Riemann equations require $2x = 0$ and $2y = 0$So $x = y = 0$. Thus $f$ satisfies CR only at
 $z = 0$.
 
@@ -306,7 +306,7 @@ Differentiable at $0$ but not analytic anywhere (no neighbourhood of $0$ is anal
 
 **Problem.** Show that $f(z) = z\bar{z} + z$ is differentiable only at $z = 0$.
 
-$f(z) = |z|^2 + z = (x^2 + y^2 + x) + iy$. $u_x = 2x + 1$$u_y = 2y$$v_x = 0$$v_y = 1$. CR equations:
+$f(z) = |z|^2 + z = (x^2 + y^2 + x) + iy$. $u_x = 2x + 1$, $u_y = 2y$, $v_x = 0$, $v_y = 1$. CR equations:
 $2x + 1 = 1 \Rightarrow x = 0$And $2y = 0 \Rightarrow y = 0$. At $(0, 0)$:
 $f'(0) = \lim_{h \to 0} \frac{h\bar{h} + h}{h} = \lim_{h \to 0} (\bar{h} + 1) = 1$. So $f$ is
 differentiable at $z = 0$ only, hence nowhere analytic.
@@ -380,7 +380,7 @@ _Proof._ Compute the limit along the real axis ($h \in \mathbb{R}$, $h \to 0$):
 
 $$f'(z) = \lim_{h \to 0} \frac{u(x+h, y) - u(x, y)}{h} + i\lim_{h \to 0} \frac{v(x+h, y) - v(x, y)}{h} = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
 
-Compute along the imaginary axis ($h = ik$$k \in \mathbb{R}$$k \to 0$):
+Compute along the imaginary axis ($h = ik$, $k \in \mathbb{R}$, $k \to 0$):
 
 $$f'(z) = \lim_{k \to 0} \frac{u(x, y+k) - u(x, y)}{ik} + i\lim_{k \to 0} \frac{v(x, y+k) - v(x, y)}{ik} = -i\frac{\partial u}{\partial y} + \frac{\partial v}{\partial y}$$
 
@@ -475,7 +475,7 @@ conjugate exists on this domain.
 
 _Solution._ $e^z = e^{x+iy} = e^x(\cos y + i\sin y)$. So $u = e^x \cos y$ and $v = e^x \sin y$.
 
-$u_x = e^x \cos y$$u_y = -e^x \sin y$$v_x = e^x \sin y$$v_y = e^x \cos y$.
+$u_x = e^x \cos y$, $u_y = -e^x \sin y$, $v_x = e^x \sin y$, $v_y = e^x \cos y$.
 
 Cauchy-Riemann: $u_x = e^x \cos y = v_y$ and $u_y = -e^x \sin y = -v_x$. Both satisfied.
 
@@ -485,9 +485,9 @@ $f'(z) = u_x + iv_x = e^x \cos y + ie^x \sin y = e^z$. $\blacksquare$
 
 $\sin z = \sin(x + iy) = \sin x \cosh y + i\cos x \sinh y$.
 
-$u = \sin x \cosh y$$v = \cos x \sinh y$.
+$u = \sin x \cosh y$, $v = \cos x \sinh y$.
 
-$u_x = \cos x \cosh y$$u_y = \sin x \sinh y$. $v_x = -\sin x \sinh y$$v_y = \cos x \cosh y$.
+$u_x = \cos x \cosh y$, $u_y = \sin x \sinh y$. $v_x = -\sin x \sinh y$, $v_y = \cos x \cosh y$.
 
 CR: $u_x = \cos x \cosh y = v_y$ $\checkmark$ and $u_y = \sin x \sinh y = -v_x$ $\checkmark$.
 
@@ -497,12 +497,12 @@ $f'(z) = u_x + iv_x = \cos x \cosh y - i\sin x \sinh y = \cos z$. $\blacksquare$
 
 $\frac{1}{z} = \frac{\bar{z}}{|z|^2} = \frac{x - iy}{x^2 + y^2}$.
 
-$u = \frac{x}{x^2 + y^2}$$v = \frac{-y}{x^2 + y^2}$.
+$u = \frac{x}{x^2 + y^2}$, $v = \frac{-y}{x^2 + y^2}$.
 
-$u_x = \frac{y^2 - x^2}{(x^2 + y^2)^2}$$v_y = \frac{y^2 - x^2}{(x^2 + y^2)^2}$. So $u_x = v_y$.
+$u_x = \frac{y^2 - x^2}{(x^2 + y^2)^2}$, $v_y = \frac{y^2 - x^2}{(x^2 + y^2)^2}$. So $u_x = v_y$.
 $\checkmark$
 
-$u_y = \frac{-2xy}{(x^2 + y^2)^2}$$v_x = \frac{2xy}{(x^2 + y^2)^2}$. So $u_y = -v_x$. $\checkmark$
+$u_y = \frac{-2xy}{(x^2 + y^2)^2}$, $v_x = \frac{2xy}{(x^2 + y^2)^2}$. So $u_y = -v_x$. $\checkmark$
 
 $f'(z) = u_x + iv_x = \frac{-(x^2 - y^2 + 2ixy)}{(x^2 + y^2)^2} = \frac{-1}{z^2}$. $\blacksquare$
 
@@ -569,23 +569,23 @@ $\int_\gamma z^2\, dz = \frac{-2 + 2i}{3}$. $\blacksquare$
 **Problem.** Evaluate $\int_\gamma \bar{z}\, dz$ where $\gamma$ is the unit circle traversed once
 Counterclockwise.
 
-$\gamma(t) = e^{it}$$0 \leq t \leq 2\pi$$\gamma'(t) = ie^{it}$. $\bar{z} = e^{-it}$ on $\gamma$.
+$\gamma(t) = e^{it}$, $0 \leq t \leq 2\pi$, $\gamma'(t) = ie^{it}$. $\bar{z} = e^{-it}$ on $\gamma$.
 
 $\int_\gamma \bar{z}\, dz = \int_0^{2\pi} e^{-it} \cdot ie^{it}\, dt = \int_0^{2\pi} i\, dt = 2\pi i$.
 
 _Note:_ Since $\bar{z}$ is not analytic, this result is non-zero, as expected.
 
 **Problem.** Evaluate $\int_\gamma \frac{dz}{z}$ where $\gamma$ is the upper semicircle
-$z = e^{i\theta}$$0 \leq \theta \leq \pi$.
+$z = e^{i\theta}$, $0 \leq \theta \leq \pi$.
 
 $\int_0^\pi \frac{ie^{i\theta}}{e^{i\theta}}\, d\theta = \int_0^\pi i\, d\theta = i\pi$.
 
 **Problem.** Evaluate $\int_\gamma z\, dz$ where $\gamma$ consists of the line segment from $0$ to
 $1$ followed by the line segment from $1$ to $1 + i$.
 
-$\gamma_1(t) = t$$0 \leq t \leq 1$: $\int_0^1 t \cdot 1\, dt = \frac{1}{2}$.
+$\gamma_1(t) = t$, $0 \leq t \leq 1$: $\int_0^1 t \cdot 1\, dt = \frac{1}{2}$.
 
-$\gamma_2(t) = 1 + it$$0 \leq t \leq 1$:
+$\gamma_2(t) = 1 + it$, $0 \leq t \leq 1$:
 $\int_0^1 (1 + it) \cdot i\, dt = \int_0^1 (i - t)\, dt = i - \frac{1}{2}$.
 
 Total: $\frac{1}{2} + i - \frac{1}{2} = i$.
@@ -602,9 +602,9 @@ Consistent. $\blacksquare$
 
 **Problem.** Use the ML inequality to show that
 $\lim_{R \to \infty} \int_{C_R} \frac{e^{iz}}{z}\, dz = 0$ Where $C_R$ is the upper semicircle
-$|z| = R$$\mathrm{Im}(z) \geq 0$.
+$|z| = R$, $\mathrm{Im}(z) \geq 0$.
 
-On $C_R$: $z = Re^{i\theta}$$0 \leq \theta \leq \pi$.
+On $C_R$: $z = Re^{i\theta}$, $0 \leq \theta \leq \pi$.
 $|e^{iz}| = |e^{iR(\cos\theta + i\sin\theta)}| = e^{-R\sin\theta}$.
 
 $\left|\int_{C_R} \frac{e^{iz}}{z}\, dz\right| \leq \int_0^\pi \frac{e^{-R\sin\theta}}{R} \cdot R\, d\theta
@@ -1092,7 +1092,7 @@ Where $\gamma$ is a small positively oriented circle around $z_0$.
 
 $$\mathrm{Res}(f, z_0) = \lim_{z \to z_0} (z - z_0)f(z)$$
 
-If $f = g/h$ where $g(z_0) \neq 0$$h(z_0) = 0$$h'(z_0) \neq 0$:
+If $f = g/h$ where $g(z_0) \neq 0$, $h(z_0) = 0$, $h'(z_0) \neq 0$:
 
 $$\mathrm{Res}(f, z_0) = \frac{g(z_0)}{h'(z_0)}$$
 
@@ -1369,7 +1369,7 @@ of $T(z) = z$).
 <details>
 <summary>Solution</summary>
 
-**Problem.** Find the Möbius transformation mapping $0 \mapsto i$$1 \mapsto 0$$\infty \mapsto -i$.
+**Problem.** Find the Möbius transformation mapping $0 \mapsto i$, $1 \mapsto 0$, $\infty \mapsto -i$.
 
 $T(z) = \frac{az + b}{cz + d}$ with $T(0) = i \Rightarrow b/d = i \Rightarrow b = id$.
 $T(1) = 0 \Rightarrow a = -b = -id$. $T(\infty) = -i \Rightarrow a/c = -i \Rightarrow c = d$.
@@ -1387,7 +1387,7 @@ $|T(i)| = 1$. $\checkmark$
 
 Fixed points: $z = \frac{2z + 1}{z + 2} \Rightarrow z^2 = 1 \Rightarrow z = \pm 1$.
 
-$T'(z) = \frac{3}{(z + 2)^2}$. $T'(1) = 1/3$$T'(-1) = 3$.
+$T'(z) = \frac{3}{(z + 2)^2}$. $T'(1) = 1/3$, $T'(-1) = 3$.
 
 Both multipliers are real and positive (not equal to $1$), so $T$ is hyperbolic.
 
@@ -1421,7 +1421,7 @@ Constant. $\blacksquare$
 $p(z) \in \mathbb{C}[z]$ has a root in $\mathbb{C}$.
 
 _Proof._ Suppose $p(z)$ has no root. Then $f(z) = 1/p(z)$ is entire. Since $|p(z)| \to \infty$ as
-$|z| \to \infty$$f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
+$|z| \to \infty$, $f(z) \to 0$So $f$ is bounded. By Liouville's theorem, $f$ is constant, so $p$ Is
 constant, a contradiction. $\blacksquare$
 
 ### 11.3 The Maximum Modulus Principle
@@ -1575,7 +1575,7 @@ $z = 2\,e^{5\pi i/6}$.
 
 $z^{1/3} = 2^{1/3}\, e^{(5\pi/6 + 2\pi k)/3}$ for $k = 0, 1, 2$.
 
-$z_0 = 2^{1/3}\, e^{5\pi i/18}$$z_1 = 2^{1/3}\, e^{17\pi i/18}$$z_2 = 2^{1/3}\, e^{29\pi i/18}$.
+$z_0 = 2^{1/3}\, e^{5\pi i/18}$, $z_1 = 2^{1/3}\, e^{17\pi i/18}$, $z_2 = 2^{1/3}\, e^{29\pi i/18}$.
 
 _If you get this wrong, revise:_ Section 1.5 (Roots of Complex Numbers).
 
@@ -1588,11 +1588,11 @@ Let $f(z) = z^2 + \bar{z}^2$. Find where $f$ is differentiable and where it is a
 <details>
 <summary>Solution</summary>
 
-$f(z) = (x + iy)^2 + (x - iy)^2 = 2(x^2 - y^2)$. So $u = 2(x^2 - y^2)$$v = 0$.
+$f(z) = (x + iy)^2 + (x - iy)^2 = 2(x^2 - y^2)$. So $u = 2(x^2 - y^2)$, $v = 0$.
 
-$u_x = 4x$$u_y = -4y$$v_x = 0$$v_y = 0$.
+$u_x = 4x$, $u_y = -4y$, $v_x = 0$, $v_y = 0$.
 
-CR: $4x = 0 \Rightarrow x = 0$$-4y = 0 \Rightarrow y = 0$.
+CR: $4x = 0 \Rightarrow x = 0$, $-4y = 0 \Rightarrow y = 0$.
 
 $f$ is differentiable only at $z = 0$ and analytic nowhere.
 
@@ -1631,7 +1631,7 @@ Show that $u(x, y) = x^3 - 3xy^2 + 3x^2 - 3y^2$ is harmonic and find its harmoni
 <details>
 <summary>Solution</summary>
 
-$u_{xx} = 6x + 6$$u_{yy} = -6x - 6$. $\Delta u = 0$. $\checkmark$
+$u_{xx} = 6x + 6$, $u_{yy} = -6x - 6$. $\Delta u = 0$. $\checkmark$
 
 By CR: $v_y = u_x = 3x^2 - 3y^2 + 6x$. $v = 3x^2 y - y^3 + 6xy + g(x)$.
 
@@ -1821,7 +1821,7 @@ _If you get this wrong, revise:_ Section 12.2 (Rouché's Theorem).
 
 ### Problem 14
 
-Find the Möbius transformation that maps $1 \mapsto 0$$i \mapsto 1$$-1 \mapsto \infty$.
+Find the Möbius transformation that maps $1 \mapsto 0$, $i \mapsto 1$, $-1 \mapsto \infty$.
 
 <details>
 <summary>Solution</summary>
@@ -1833,11 +1833,11 @@ $\frac{i + 1}{i - 1} = \frac{(i+1)(-i-1)}{(i-1)(-i-1)} = \frac{-i^2 - 2i - 1}{-i
 
 $T(z) = -i \cdot \frac{z - 1}{z + 1}$.
 
-Verify: $T(1) = 0$ $\checkmark$$T(i) = -i \cdot \frac{i-1}{i+1} = -i \cdot (-i) = -1$.
+Verify: $T(1) = 0$ $\checkmark$, $T(i) = -i \cdot \frac{i-1}{i+1} = -i \cdot (-i) = -1$.
 
 That gives $-1$Not $1$. Let me recompute.
 
-$T(z) = \frac{(z - z_1)(z_2 - z_3)}{(z - z_3)(z_2 - z_1)}$ with $z_1 = 1$$z_2 = i$$z_3 = -1$.
+$T(z) = \frac{(z - z_1)(z_2 - z_3)}{(z - z_3)(z_2 - z_1)}$ with $z_1 = 1$, $z_2 = i$, $z_3 = -1$.
 
 $T(z) = \frac{(z - 1)(i + 1)}{(z + 1)(i - 1)}$.
 
@@ -1936,9 +1936,9 @@ one point and find $f'(z)$ there.
 <details>
 <summary>Solution</summary>
 
-$f(z) = x^2 + y^2 + 2x - 2iy$. So $u = x^2 + y^2 + 2x$$v = -2y$.
+$f(z) = x^2 + y^2 + 2x - 2iy$. So $u = x^2 + y^2 + 2x$, $v = -2y$.
 
-$u_x = 2x + 2$$u_y = 2y$$v_x = 0$$v_y = -2$.
+$u_x = 2x + 2$, $u_y = 2y$, $v_x = 0$, $v_y = -2$.
 
 CR: $2x + 2 = -2 \Rightarrow x = -2$And $2y = 0 \Rightarrow y = 0$.
 

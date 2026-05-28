@@ -1194,7 +1194,7 @@ The ACK could correspond To either the original or the retransmission (retransmi
 <details>
 <summary>Worked Example: RTT Estimation</summary>
 
-Given: $\alpha = 1/8$$\beta = 1/4$Initial $\mathrm{RTT_s} = 0$$\mathrm{RTT_d} = 0$. Measured RTTs: 220
+Given: $\alpha = 1/8$, $\beta = 1/4$Initial $\mathrm{RTT_s} = 0$, $\mathrm{RTT_d} = 0$. Measured RTTs: 220
 ms, 240 ms, 230 ms, 260 ms, 250 ms.
 
 **After measurement 1 (220 ms):**
@@ -1524,7 +1524,7 @@ Channel without prior shared key.
 3. Bob picks secret $b$Sends $B = g^b \bmod p$.
 4. Shared secret: $s = B^a \bmod p = g^{ab} \bmod p = A^b \bmod p$.
 
-An eavesdropper who sees $g$$p$$A$$B$ cannot compute $g^{ab}$ without solving the discrete Logarithm
+An eavesdropper who sees $g$, $p$, $A$, $B$ cannot compute $g^{ab}$ without solving the discrete Logarithm
 problem.
 
 **Digital signatures.** The sender signs a message hash with their private key. Anyone can verify
@@ -1736,8 +1736,8 @@ Rate limiting, connection throttling.
     `cwnd` through: slow start for 3 RTTs, then 2 RTTs of congestion avoidance, then a timeout. What
     is the value of `ssthresh` after the timeout?
 
-16. **RTT estimation.** Using $\alpha = 1/8$$\beta = 1/4$And measured RTTs of 100 ms, 120 ms, 80 ms,
-    compute $\mathrm{RTT_s}$$\mathrm{RTT_d}$And RTO after each measurement (starting from
+16. **RTT estimation.** Using $\alpha = 1/8$, $\beta = 1/4$And measured RTTs of 100 ms, 120 ms, 80 ms,
+    compute $\mathrm{RTT_s}$, $\mathrm{RTT_d}$And RTO after each measurement (starting from
     $\mathrm{RTT_s} = \mathrm{RTT_d} = 0$).
 
 17. **DNS resolution.** A client at `192.168.1.100` wants to resolve `www.example.com`. Describe the
@@ -1765,8 +1765,8 @@ _Hint:_ Total data = 630 KB = 5.04 Mb. Transmission time = 5.04 / 10 = 0.504 s.
     (a) allows external HTTP/HTTPS to the web server, (b) allows external SMTP to the mail server,
     (c) allows internal users to access any external service, (d) blocks all other inbound traffic.
 
-20. **RSA encryption.** Given primes $p = 5$$q = 11$And public exponent $e = 3$: (a) Compute
-    $n$$\phi(n)$And the private key $d$. (b) Encrypt the message $m = 7$. (c) Decrypt the ciphertext
+20. **RSA encryption.** Given primes $p = 5$, $q = 11$And public exponent $e = 3$: (a) Compute
+    $n$, $\phi(n)$And the private key $d$. (b) Encrypt the message $m = 7$. (c) Decrypt the ciphertext
     to verify.
 
 21. **TCP throughput bound.** A TCP connection over a satellite link has RTT = 600 ms and bandwidth
@@ -1775,7 +1775,7 @@ _Hint:_ Total data = 630 KB = 5.04 Mb. Transmission time = 5.04 / 10 = 0.504 s.
     fill the pipe?
 
 22. **CDMA orthogonality.** Four stations share a channel using CDMA with chip codes:
-    $C_1 = (+1, -1, +1, +1)$$C_2 = (+1, +1, -1, +1)$$C_3 = (+1, +1, +1, -1)$
+    $C_1 = (+1, -1, +1, +1)$, $C_2 = (+1, +1, -1, +1)$, $C_3 = (+1, +1, +1, -1)$
     $C_4 = (-1, +1, +1, +1)$. Station 1 sends bit 1, station 2 sends bit 0, station 3 sends bit 1,
     station 4 is silent. Compute the combined signal and show that each receiver correctly recovers
     its station's bit.

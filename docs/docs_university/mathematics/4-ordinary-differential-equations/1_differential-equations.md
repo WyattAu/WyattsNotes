@@ -588,14 +588,14 @@ $$y_p = \frac{F_0}{2\omega_0} t \sin(\omega_0 t)$$
 The amplitude grows linearly with $t$ --- this is **resonance**. Physically, the system absorbs
 energy From the periodic forcing at its natural frequency, causing unbounded oscillations.
 
-**Worked Example.** Solve $y'' + 9y = 6\cos(3t)$$y(0) = 0$$y'(0) = 0$.
+**Worked Example.** Solve $y'' + 9y = 6\cos(3t)$, $y(0) = 0$, $y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ $\omega_0 = 3$$\omega = 3$So this is the resonant case.
+_Solution._ $\omega_0 = 3$, $\omega = 3$So this is the resonant case.
 
-Homogeneous: $r^2 + 9 = 0$$r = \pm 3i$. $y_h = c_1 \cos(3t) + c_2 \sin(3t)$.
+Homogeneous: $r^2 + 9 = 0$, $r = \pm 3i$. $y_h = c_1 \cos(3t) + c_2 \sin(3t)$.
 
 $y_p = \frac{6}{2 \cdot 3} t\sin(3t) = t\sin(3t)$.
 
@@ -798,7 +798,7 @@ _Corollary._ $W(x)$ is either identically zero or never zero.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Homogeneous: $r^2 - 4 = 0$$r = \pm 2$. $y_1 = e^{2x}$$y_2 = e^{-2x}$.
+_Solution._ Homogeneous: $r^2 - 4 = 0$, $r = \pm 2$. $y_1 = e^{2x}$, $y_2 = e^{-2x}$.
 
 $W = e^{2x}(-2e^{-2x}) - e^{-2x}(2e^{2x}) = -4$.
 
@@ -1096,7 +1096,7 @@ Therefore $\mathcal{L}\{g(t)\} = F(s)/s$. $\blacksquare$
 
 ### 5.6 Worked Example: Solving an IVP
 
-**Problem.** Solve $y'' + 4y = \sin(2t)$$y(0) = 0$$y'(0) = 0$.
+**Problem.** Solve $y'' + 4y = \sin(2t)$, $y(0) = 0$, $y'(0) = 0$.
 
 _Solution._ Taking Laplace transforms:
 
@@ -1131,7 +1131,7 @@ _Solution._ Partial fractions: $\frac{1}{s(s^2 + 4)} = \frac{A}{s} + \frac{Bs + 
 
 $1 = A(s^2 + 4) + (Bs + C)s = (A + B)s^2 + Cs + 4A$.
 
-$s^2$: $A + B = 0$$s$: $C = 0$Constant: $4A = 1 \implies A = 1/4$$B = -1/4$.
+$s^2$: $A + B = 0$, $s$: $C = 0$Constant: $4A = 1 \implies A = 1/4$, $B = -1/4$.
 
 $\frac{1}{s(s^2 + 4)} = \frac{1/4}{s} - \frac{s/4}{s^2 + 4}$.
 
@@ -1151,7 +1151,7 @@ $F(s)G(s) = \int_0^{\infty} e^{-s\tau} f(\tau)\, d\tau \cdot \int_0^{\infty} e^{
 
 $= \int_0^{\infty} \int_0^{\infty} e^{-s(\tau+u)} f(\tau) g(u)\, du\, d\tau$
 
-Substitute $t = \tau + u$$u = t - \tau$. For fixed $\tau$$u$ ranges from $0$ to $\infty$So $t$
+Substitute $t = \tau + u$, $u = t - \tau$. For fixed $\tau$, $u$ ranges from $0$ to $\infty$So $t$
 ranges From $\tau$ to $\infty$.
 
 $= \int_0^{\infty} f(\tau)\left[\int_{\tau}^{\infty} e^{-st} g(t - \tau)\, dt\right] d\tau$
@@ -1185,7 +1185,7 @@ $\blacksquare$
 
 ### 5.9 Worked Example: IVP with Discontinuous Forcing
 
-**Problem.** Solve $y'' + 3y' + 2y = u_2(t)$$y(0) = 0$$y'(0) = 0$.
+**Problem.** Solve $y'' + 3y' + 2y = u_2(t)$, $y(0) = 0$, $y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1247,7 +1247,7 @@ $\mathcal{L}\{\delta(t - c)\} = e^{-cs}$.
 ### 5.12 Worked Example: Impulse Response
 
 **Problem.** An undamped spring-mass system ($m = 1$, $k = 4$) is struck by an impulse at $t = 0$:
-$y'' + 4y = \delta(t)$$y(0) = 0$$y'(0) = 0$. Find $y(t)$.
+$y'' + 4y = \delta(t)$, $y(0) = 0$, $y'(0) = 0$. Find $y(t)$.
 
 <details>
 <summary>Solution</summary>
@@ -1266,7 +1266,7 @@ This is the **impulse response** (Green's function) for the operator $D^2 + 4$. 
 
 ### 5.13 Worked Example: IVP with Laplace
 
-**Problem.** Solve $y'' - 6y' + 9y = 6e^{3t}$$y(0) = 0$$y'(0) = 0$.
+**Problem.** Solve $y'' - 6y' + 9y = 6e^{3t}$, $y(0) = 0$, $y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -1297,7 +1297,7 @@ the step. :::
 ### 5.15 Proof Sketch: Picard Iteration
 
 The Picard-Lindelöf theorem can be proved constructively via **Picard iteration**. For the IVP
-$y' = f(x, y)$$y(x_0) = y_0$Define the sequence
+$y' = f(x, y)$, $y(x_0) = y_0$Define the sequence
 
 $$\phi_0(x) = y_0, \quad \phi_{n+1}(x) = y_0 + \int_{x_0}^x f(t, \phi_n(t))\, dt$$
 
@@ -1361,7 +1361,7 @@ $y = c_1 e^x + c_2 e^{2x} + c_3 e^{3x}$. $\blacksquare$
 _Solution._ Since $p(x) = 0$ and $q(x) = -x$ are both analytic everywhere, $x_0 = 0$ is an ordinary
 Point. Substitute $y = \sum_{n=0}^{\infty} a_n x^n$:
 
-$y' = \sum_{n=1}^{\infty} na_n x^{n-1}$$y'' = \sum_{n=2}^{\infty} n(n-1)a_n x^{n-2}$.
+$y' = \sum_{n=1}^{\infty} na_n x^{n-1}$, $y'' = \sum_{n=2}^{\infty} n(n-1)a_n x^{n-2}$.
 
 $y'' - xy = \sum_{n=2}^{\infty} n(n-1)a_n x^{n-2} - \sum_{n=0}^{\infty} a_n x^{n+1} = 0$.
 
@@ -1372,7 +1372,7 @@ For $m = 0$: $2 \cdot 1 \cdot a_2 = 0 \implies a_2 = 0$.
 
 For $m \geq 1$: $(m+2)(m+1)a_{m+2} - a_{m-1} = 0 \implies a_{m+2} = \frac{a_{m-1}}{(m+2)(m+1)}$.
 
-This gives: $a_3 = \frac{a_0}{6}$$a_4 = \frac{a_1}{12}$$a_5 = \frac{a_2}{20} = 0$
+This gives: $a_3 = \frac{a_0}{6}$, $a_4 = \frac{a_1}{12}$, $a_5 = \frac{a_2}{20} = 0$
 $a_6 = \frac{a_3}{30} = \frac{a_0}{180}$Etc.
 
 Since $a_2 = 0$All $a_{3k+2} = 0$.
@@ -1395,7 +1395,7 @@ _Solution._ Rewrite in standard form: $y'' + \frac{1}{2x}y' + \frac{1}{2}y = 0$.
 
 $x = 0$ is a regular singular point since $xp(x) = 1/2$ and $x^2 q(x) = x^2/2$ are analytic at $0$.
 
-Substitute $y = \sum_{n=0}^{\infty} a_n x^{n+r}$$a_0 \neq 0$:
+Substitute $y = \sum_{n=0}^{\infty} a_n x^{n+r}$, $a_0 \neq 0$:
 
 $y' = \sum_{n=0}^{\infty} (n+r)a_n x^{n+r-1}$
 
@@ -1437,7 +1437,7 @@ _Solution._ Here $\nu = 0$. The indicial equation gives $r^2 = 0$ (repeated root
 
 Substituting $y = \sum_{n=0}^{\infty} a_n x^{2n}$ (we can show only even powers appear):
 
-$y' = \sum_{n=1}^{\infty} 2n a_n x^{2n-1}$$y'' = \sum_{n=1}^{\infty} 2n(2n-1) a_n x^{2n-2}$.
+$y' = \sum_{n=1}^{\infty} 2n a_n x^{2n-1}$, $y'' = \sum_{n=1}^{\infty} 2n(2n-1) a_n x^{2n-2}$.
 
 $x^2 y'' + xy' + x^2 y = \sum_{n=1}^{\infty} 2n(2n-1)a_n x^{2n} + \sum_{n=1}^{\infty} 2n a_n x^{2n} + \sum_{n=0}^{\infty} a_n x^{2n+2} = 0$.
 
@@ -1445,7 +1445,7 @@ For $n = 0$: $a_0$ is free.
 
 For the recurrence: $4n^2 a_n + a_{n-1} = 0 \implies a_n = -\frac{a_{n-1}}{4n^2}$ for $n \geq 1$.
 
-$a_1 = -\frac{a_0}{4}$$a_2 = \frac{a_0}{64}$$a_3 = -\frac{a_0}{2304}$.
+$a_1 = -\frac{a_0}{4}$, $a_2 = \frac{a_0}{64}$, $a_3 = -\frac{a_0}{2304}$.
 
 Setting $a_0 = 1$: $J_0(x) = 1 - \frac{x^2}{4} + \frac{x^4}{64} - \frac{x^6}{2304} + \cdots$.
 $\blacksquare$
@@ -1531,7 +1531,7 @@ For $n \geq 1$: $a_n = \frac{2}{\pi}\int_0^{\pi} x^2\cos(nx)\, dx$.
 
 Integrating by parts twice:
 
-$u = x^2$$dv = \cos(nx)\, dx$: $du = 2x\, dx$$v = \sin(nx)/n$.
+$u = x^2$, $dv = \cos(nx)\, dx$: $du = 2x\, dx$, $v = \sin(nx)/n$.
 
 $a_n = \frac{2}{\pi}\left[\frac{x^2\sin(nx)}{n}\Big|_0^{\pi} - \int_0^{\pi} \frac{2x\sin(nx)}{n}\, dx\right] = -\frac{4}{n\pi}\int_0^{\pi} x\sin(nx)\, dx$
 
@@ -1565,7 +1565,7 @@ deduce $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ From Section 7.6: $a_0 = 0$$a_n = 0$$b_n = \frac{2(-1)^{n+1}}{n}$.
+_Solution._ From Section 7.6: $a_0 = 0$, $a_n = 0$, $b_n = \frac{2(-1)^{n+1}}{n}$.
 
 Parseval:
 $\frac{1}{\pi}\int_{-\pi}^{\pi} x^2\, dx = \sum_{n=1}^{\infty} b_n^2 = \sum_{n=1}^{\infty} \frac{4}{n^2}$.
@@ -1642,7 +1642,7 @@ $u(x, 0) = \sin(2x) + 3\sin(5x)$.
 
 _Solution._ Here $\alpha = 1$ and $L = \pi$. The initial condition is already a sine series.
 
-$\lambda_n = n^2$$X_n = \sin(nx)$$T_n = e^{-n^2 t}$.
+$\lambda_n = n^2$, $X_n = \sin(nx)$, $T_n = e^{-n^2 t}$.
 
 $u(x, t) = e^{-4t}\sin(2x) + 3e^{-25t}\sin(5x)$. $\blacksquare$
 
@@ -1737,9 +1737,9 @@ _Solution._ Separate variables: $u(x, y) = X(x)Y(y)$.
 
 $X''/X = -Y''/Y = -\lambda$.
 
-$X'' + \lambda X = 0$$X(0) = X(\pi) = 0$: $\lambda_n = n^2$$X_n = \sin(nx)$.
+$X'' + \lambda X = 0$, $X(0) = X(\pi) = 0$: $\lambda_n = n^2$, $X_n = \sin(nx)$.
 
-$Y'' - n^2 Y = 0$$Y(1) = 0$: $Y_n = \sinh(n(1 - y))$.
+$Y'' - n^2 Y = 0$, $Y(1) = 0$: $Y_n = \sinh(n(1 - y))$.
 
 $u(x, y) = \sum_{n=1}^{\infty} b_n \sin(nx)\sinh(n(1-y))$.
 
@@ -1770,7 +1770,7 @@ On $[a, b]$ with homogeneous boundary conditions, where $p, w > 0$ and $p, p', q
 
 _Remark._ The boundary value problems encountered in the heat and wave equations
 ($X'' + \lambda X = 0$ with $X(0) = X(L) = 0$) are special cases of Sturm-Liouville problems With
-$p = 1$$q = 0$$w = 1$.
+$p = 1$, $q = 0$, $w = 1$.
 
 ### 8.14 Neumann Boundary Conditions
 
@@ -1794,7 +1794,7 @@ the initial temperature. Physically, an insulated rod reaches a uniform steady-s
 
 ### 8.15 Worked Example: Heat Equation with Non-Trivial Initial Data
 
-**Problem.** Solve $u_t = u_{xx}$ for $0 \lt x \lt \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$ And
+**Problem.** Solve $u_t = u_{xx}$ for $0 \lt x \lt \pi$, $t > 0$With $u(0, t) = u(\pi, t) = 0$ And
 $u(x, 0) = x(\pi - x)$.
 
 <details>
@@ -1859,13 +1859,13 @@ It is **asymptotically stable** if it is stable and $\mathbf{x}(t) \to \mathbf{x
 $t \to \infty$.
 
 **Theorem 9.1 (Lyapunov).** If there exists a continuously differentiable function $V$ (a **Lyapunov
-Function**) such that $V(\mathbf{x}^*) = 0$$V(\mathbf{x}) > 0$ for $\mathbf{x} \neq \mathbf{x}^*$
+Function**) such that $V(\mathbf{x}^*) = 0$, $V(\mathbf{x}) > 0$ for $\mathbf{x} \neq \mathbf{x}^*$
 And $\dot{V} \leq 0$ in a neighbourhood of $\mathbf{x}^*$Then $\mathbf{x}^*$ is stable. If
 $\dot{V} \lt 0$ for $\mathbf{x} \neq \mathbf{x}^*$Then $\mathbf{x}^*$ is asymptotically stable.
 
 ### 9.4 Worked Example: Linearization
 
-**Problem.** Find and classify the critical points of $x' = x - y$$y' = x^2 + y^2 - 1$.
+**Problem.** Find and classify the critical points of $x' = x - y$, $y' = x^2 + y^2 - 1$.
 
 <details>
 <summary>Solution</summary>
@@ -1882,7 +1882,7 @@ The Jacobian is $J = \begin{pmatrix} 1 & -1 \\ 2x & 2y \end{pmatrix}$.
 
 At $(1/\sqrt{2}, 1/\sqrt{2})$: $J = \begin{pmatrix} 1 & -1 \\ \sqrt{2} & \sqrt{2} \end{pmatrix}$.
 
-$\mathrm{tr}(J) = 1 + \sqrt{2} > 0$$\det(J) = \sqrt{2} + \sqrt{2} = 2\sqrt{2} > 0$.
+$\mathrm{tr}(J) = 1 + \sqrt{2} > 0$, $\det(J) = \sqrt{2} + \sqrt{2} = 2\sqrt{2} > 0$.
 
 $\tau^2 - 4\Delta = (1 + \sqrt{2})^2 - 8\sqrt{2} = 3 + 2\sqrt{2} - 8\sqrt{2} = 3 - 6\sqrt{2} \lt 0$.
 
@@ -1891,7 +1891,7 @@ Complex eigenvalues with positive real part: **unstable spiral**.
 At $(-1/\sqrt{2}, -1/\sqrt{2})$:
 $J = \begin{pmatrix} 1 & -1 \\ -\sqrt{2} & -\sqrt{2} \end{pmatrix}$.
 
-$\mathrm{tr}(J) = 1 - \sqrt{2} \lt 0$$\det(J) = -\sqrt{2} + \sqrt{2} = 0$.
+$\mathrm{tr}(J) = 1 - \sqrt{2} \lt 0$, $\det(J) = -\sqrt{2} + \sqrt{2} = 0$.
 
 Wait, $\det(J) = (1)(-\sqrt{2}) - (-1)(-\sqrt{2}) = -\sqrt{2} - \sqrt{2} = -2\sqrt{2} \lt 0$.
 
@@ -1963,7 +1963,7 @@ The competing species model is:
 $$x' = x(r_1 - a_{11}x - a_{12}y), \quad y' = y(r_2 - a_{21}x - a_{22}y)$$
 
 Where $r_i > 0$ are growth rates and $a_{ij} > 0$ are competition coefficients. The four critical
-Points are $(0, 0)$$(r_1/a_{11}, 0)$$(0, r_2/a_{22})$And the coexistence point $(x^*, y^*)$ where
+Points are $(0, 0)$, $(r_1/a_{11}, 0)$, $(0, r_2/a_{22})$And the coexistence point $(x^*, y^*)$ where
 both $x'$ and $y'$ vanish.
 
 The stability of the coexistence point determines whether both species survive. If
@@ -2014,7 +2014,7 @@ $W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity. :::
 ### 9.9 Worked Example: Lyapunov Function
 
 **Problem.** Show that $(0, 0)$ is asymptotically stable for the system
-$x' = -x - y^3$$y' = x^3 - y$.
+$x' = -x - y^3$, $y' = x^3 - y$.
 
 <details>
 <summary>Solution</summary>
@@ -2045,12 +2045,12 @@ unique limit cycle.
 <details>
 <summary>Solution</summary>
 
-\_Solution.\* Write as a system: $x' = y$$y' = -x - \mu(x^2 - 1)y$.
+\_Solution.\* Write as a system: $x' = y$, $y' = -x - \mu(x^2 - 1)y$.
 
 The only critical point is $(0, 0)$. The Jacobian at the origin is
 $J = \begin{pmatrix} 0 & 1 \\ -1 & \mu \end{pmatrix}$.
 
-$\mathrm{tr}(J) = \mu > 0$$\det(J) = 1 > 0$$\tau^2 - 4\Delta = \mu^2 - 4$.
+$\mathrm{tr}(J) = \mu > 0$, $\det(J) = 1 > 0$, $\tau^2 - 4\Delta = \mu^2 - 4$.
 
 For $0 \lt \mu \lt 2$: complex eigenvalues with positive real part (**unstable spiral**). For
 $\mu \geq 2$: two positive real eigenvalues (**unstable node**).
@@ -2058,7 +2058,7 @@ $\mu \geq 2$: two positive real eigenvalues (**unstable node**).
 The origin is always unstable. To show existence of a limit cycle, we use a **Liénard's theorem** Or
 construct a trapping region. Define
 
-$L(x) = x^3/3 - x$ and write the system as $x' = y$$y' = -x - \mu L'(x) y$.
+$L(x) = x^3/3 - x$ and write the system as $x' = y$, $y' = -x - \mu L'(x) y$.
 
 The function $L(x)$ has zeros at $x = \pm 1$. For $\mu > 0$The damping is negative for
 $\lvert x \rvert \lt 1$ (energy input) and positive for $\lvert x \rvert > 1$ (energy Dissipation).
@@ -2078,7 +2078,7 @@ Classify the ODE $y'' + xy' + e^x y = \cos x$ by order, linearity, and homogenei
 <details>
 <summary>Solution</summary>
 
-_Solution._ Second-order (highest derivative is $y''$), linear ($y$$y'$$y''$ appear linearly With
+_Solution._ Second-order (highest derivative is $y''$), linear ($y$, $y'$, $y''$ appear linearly With
 coefficient functions of $x$ only), nonhomogeneous ($\cos x \neq 0$). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 1.2 (Classification of ODEs).
@@ -2087,7 +2087,7 @@ _If you get this wrong, revise:_ Section 1.2 (Classification of ODEs).
 
 ### Problem 2 (Separable Equation)
 
-Solve $\frac{dy}{dx} = \frac{x}{y}$$y(0) = 2$.
+Solve $\frac{dy}{dx} = \frac{x}{y}$, $y(0) = 2$.
 
 <details>
 <summary>Solution</summary>
@@ -2103,12 +2103,12 @@ _If you get this wrong, revise:_ Section 2.1 (Separable Equations).
 
 ### Problem 3 (Linear First-Order)
 
-Solve $y' + \frac{y}{x} = x^2$ for $x > 0$$y(1) = 1$.
+Solve $y' + \frac{y}{x} = x^2$ for $x > 0$, $y(1) = 1$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ $P(x) = 1/x$$Q(x) = x^2$.
+_Solution._ $P(x) = 1/x$, $Q(x) = x^2$.
 
 $\mu(x) = e^{\int 1/x\, dx} = e^{\ln x} = x$.
 
@@ -2129,7 +2129,7 @@ Solve $(2x + y)\, dx + (x + 2y)\, dy = 0$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ $M = 2x + y$$N = x + 2y$. $M_y = 1 = N_x$. Exact.
+_Solution._ $M = 2x + y$, $N = x + 2y$. $M_y = 1 = N_x$. Exact.
 
 $\Psi_x = 2x + y \implies \Psi = x^2 + xy + h(y)$.
 
@@ -2148,7 +2148,7 @@ Solve $y' - y = xy^2$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ This is Bernoulli with $n = 2$$P(x) = -1$$Q(x) = x$.
+_Solution._ This is Bernoulli with $n = 2$, $P(x) = -1$, $Q(x) = x$.
 
 Substitution $v = y^{-1}$: $v' = -y^{-2}y'$So $-v' - v = x$I.e., $v' + v = -x$.
 
@@ -2193,7 +2193,7 @@ _If you get this wrong, revise:_ Section 2.10 (Homogeneous Equations).
 
 ### Problem 7 (Complex Roots)
 
-Solve $y'' + 4y' + 13y = 0$$y(0) = 2$$y'(0) = -3$.
+Solve $y'' + 4y' + 13y = 0$, $y(0) = 2$, $y'(0) = -3$.
 
 <details>
 <summary>Solution</summary>
@@ -2218,7 +2218,7 @@ _If you get this wrong, revise:_ Section 3.2 (Homogeneous Equations with Constan
 
 ### Problem 8 (Repeated Roots)
 
-Solve $y'' + 4y' + 4y = 0$$y(0) = 1$$y'(0) = 0$.
+Solve $y'' + 4y' + 4y = 0$, $y(0) = 1$, $y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -2241,7 +2241,7 @@ _If you get this wrong, revise:_ Section 3.2, Case 2.
 
 ### Problem 9 (Undetermined Coefficients)
 
-Solve $y'' - 2y' - 3y = 3e^{2x}$$y(0) = 1$$y'(0) = 0$.
+Solve $y'' - 2y' - 3y = 3e^{2x}$, $y(0) = 1$, $y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -2250,7 +2250,7 @@ _Solution._ Homogeneous: $r^2 - 2r - 3 = (r - 3)(r + 1) = 0$. Roots: $3, -1$.
 
 $y_h = c_1 e^{3x} + c_2 e^{-x}$.
 
-Guess $y_p = Ae^{2x}$. $y_p' = 2Ae^{2x}$$y_p'' = 4Ae^{2x}$.
+Guess $y_p = Ae^{2x}$. $y_p' = 2Ae^{2x}$, $y_p'' = 4Ae^{2x}$.
 
 $4Ae^{2x} - 4Ae^{2x} - 3Ae^{2x} = 3e^{2x} \implies -3A = 3 \implies A = -1$.
 
@@ -2260,7 +2260,7 @@ $y(0) = c_1 + c_2 - 1 = 1 \implies c_1 + c_2 = 2$.
 
 $y'(0) = 3c_1 - c_2 - 2 = 0 \implies 3c_1 - c_2 = 2$.
 
-Solving: $4c_1 = 4 \implies c_1 = 1$$c_2 = 1$.
+Solving: $4c_1 = 4 \implies c_1 = 1$, $c_2 = 1$.
 
 $y = e^{3x} + e^{-x} - e^{2x}$. $\blacksquare$
 
@@ -2270,7 +2270,7 @@ _If you get this wrong, revise:_ Section 3.6 (Undetermined Coefficients).
 
 ### Problem 10 (Resonance)
 
-Solve $y'' + 4y = 8\cos(2t)$$y(0) = 0$$y'(0) = 0$.
+Solve $y'' + 4y = 8\cos(2t)$, $y(0) = 0$, $y'(0) = 0$.
 
 <details>
 <summary>Solution</summary>
@@ -2368,11 +2368,11 @@ For $\lambda = i$: $\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{v} = 
 $-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$:
 $\mathbf{v} = \begin{pmatrix} 1 \\ -i \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
-$\mathbf{a} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$$\mathbf{b} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
+$\mathbf{a} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
 $\mathbf{x}(t) = c_1 \begin{pmatrix} \cos t \\ -\sin t \end{pmatrix} + c_2 \begin{pmatrix} \sin t \\ \cos t \end{pmatrix}$.
 
-Equivalently: $x_1(t) = c_1 \cos t + c_2 \sin t$$x_2(t) = -c_1 \sin t + c_2 \cos t$. $\blacksquare$
+Equivalently: $x_1(t) = c_1 \cos t + c_2 \sin t$, $x_2(t) = -c_1 \sin t + c_2 \cos t$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 4.2, Case 3.
 
@@ -2385,7 +2385,7 @@ Compute $\mathcal{L}\{t^2 e^{-3t}\}$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Using $\mathcal{L}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$ with $n = 2$$a = -3$:
+_Solution._ Using $\mathcal{L}\{t^n e^{at}\} = \frac{n!}{(s-a)^{n+1}}$ with $n = 2$, $a = -3$:
 
 $\mathcal{L}\{t^2 e^{-3t}\} = \frac{2!}{(s + 3)^3} = \frac{2}{(s+3)^3}$. $\blacksquare$
 
@@ -2395,7 +2395,7 @@ _If you get this wrong, revise:_ Section 5.2 (Basic Properties) and Section 5.4 
 
 ### Problem 16 (IVP with Laplace)
 
-Solve $y'' - y = e^t$$y(0) = 0$$y'(0) = 0$ using Laplace transforms.
+Solve $y'' - y = e^t$, $y(0) = 0$, $y'(0) = 0$ using Laplace transforms.
 
 <details>
 <summary>Solution</summary>
@@ -2470,7 +2470,7 @@ _If you get this wrong, revise:_ Section 7.1 and 7.6 (Fourier Series).
 
 ### Problem 19 (Heat Equation)
 
-Solve $u_t = 4u_{xx}$ for $0 \lt x \lt \pi$$t > 0$With $u(0, t) = u(\pi, t) = 0$ and
+Solve $u_t = 4u_{xx}$ for $0 \lt x \lt \pi$, $t > 0$With $u(0, t) = u(\pi, t) = 0$ and
 $u(x, 0) = \sin x$.
 
 <details>
@@ -2478,7 +2478,7 @@ $u(x, 0) = \sin x$.
 
 _Solution._ Here $\alpha = 2$ and $L = \pi$.
 
-$\lambda_n = (n\pi/\pi)^2 = n^2$$X_n = \sin(nx)$$T_n = e^{-4n^2 t}$.
+$\lambda_n = (n\pi/\pi)^2 = n^2$, $X_n = \sin(nx)$, $T_n = e^{-4n^2 t}$.
 
 The initial condition $\sin x$ is already the first sine mode.
 
@@ -2490,7 +2490,7 @@ _If you get this wrong, revise:_ Section 8.4 (Solving the Heat Equation by Separ
 
 ### Problem 20 (Stability Classification)
 
-Find and classify the critical points of $x' = y - x^2$$y' = x - y^2$.
+Find and classify the critical points of $x' = y - x^2$, $y' = x - y^2$.
 
 <details>
 <summary>Solution</summary>
@@ -2503,10 +2503,10 @@ $x = 0 \implies y = 0$. Critical point: $(0, 0)$. $x = 1 \implies y = 1$. Critic
 Jacobian: $J = \begin{pmatrix} -2x & 1 \\ 1 & -2y \end{pmatrix}$.
 
 At $(0, 0)$: $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
-$\mathrm{tr}(J) = 0$$\det(J) = -1 \lt 0$. **Saddle point** (unstable).
+$\mathrm{tr}(J) = 0$, $\det(J) = -1 \lt 0$. **Saddle point** (unstable).
 
 At $(1, 1)$: $J = \begin{pmatrix} -2 & 1 \\ 1 & -2 \end{pmatrix}$.
-$\mathrm{tr}(J) = -4 \lt 0$$\det(J) = 3 > 0$. $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct
+$\mathrm{tr}(J) = -4 \lt 0$, $\det(J) = 3 > 0$. $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct
 negative real eigenvalues. **Stable node** (asymptotically stable). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 9.2 (Linearization and Stability) and Section 4.9 (Phase

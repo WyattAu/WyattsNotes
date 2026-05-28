@@ -690,7 +690,7 @@ $1$ can map to any generator, i.e., any $[k]$ with $\gcd(k, n) = 1$.
 
 **Example.**
 $\mathrm{Aut}(\mathbb{Z}/8\mathbb{Z}) \cong (\mathbb{Z}/8\mathbb{Z})^* = \{1, 3, 5, 7\} \cong V_4$.
-The four automorphisms are $x \mapsto x$$x \mapsto 3x$$x \mapsto 5x$$x \mapsto 7x$. Note that
+The four automorphisms are $x \mapsto x$, $x \mapsto 3x$, $x \mapsto 5x$, $x \mapsto 7x$. Note that
 $3^2 = 9 \equiv 1 \pmod{8}$So every non-identity automorphism has order $2$.
 
 ### 5.9 Semidirect Products
@@ -712,8 +712,8 @@ So $H' \trianglelefteq G$. The remaining claims are immediate. $\blacksquare$
 
 **Example.** $D_n = \mathbb{Z}/n\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ where the action of
 $\mathbb{Z}/2\mathbb{Z}$ on $\mathbb{Z}/n\mathbb{Z}$ sends $k \mapsto -k$ (inversion). Explicitly:
-$(a, 0)(b, 0) = (a + b, 0)$$(a, 0)(b, 1) = (a + b, 1)$
-$(a, 1)(b, 0) = (a - b, 1)$$(a, 1)(b, 1) = (a - b, 0)$.
+$(a, 0)(b, 0) = (a + b, 0)$, $(a, 0)(b, 1) = (a + b, 1)$
+$(a, 1)(b, 0) = (a - b, 1)$, $(a, 1)(b, 1) = (a - b, 0)$.
 
 **Problem.** Show that there are exactly two groups of order $6$: $\mathbb{Z}/6\mathbb{Z}$ and
 $S_3$.
@@ -806,7 +806,7 @@ Where $\mathrm{Fix}(g) = \{x \in X : g \cdot x = x\}$.
 
 _Proof._ Count the set $S = \{(g, x) \in G \times X : g \cdot x = x\}$ in two ways. Grouping by $g$:
 $|S| = \sum_{g \in G} |\mathrm{Fix}(g)|$. Grouping by $x$: $|S| = \sum_{x \in X} |\mathrm{Stab}(x)|$.
-For $x$ in orbit $O$$|\mathrm{Stab}(x)| = |G|/|O|$. So
+For $x$ in orbit $O$, $|\mathrm{Stab}(x)| = |G|/|O|$. So
 $\sum_{x \in O} |\mathrm{Stab}(x)| = |O| \cdot |G|/|O| = |G|$. Summing over all orbits:
 $|S| = |G| \cdot (\mathrm{number\ of\ orbits})$. $\blacksquare$
 
@@ -980,7 +980,7 @@ $\binom{4}{3} \cdot 2 = 8$ elements of order $3$And each subgroup of order $3$ C
 elements. So $n_3 = 8/2 = 4$.
 
 The four Sylow $3$-subgroups are:
-$\langle (1\ 2\ 3) \rangle$$\langle (1\ 2\ 4) \rangle$$\langle (1\ 3\ 4) \rangle$$\langle (2\ 3\ 4) \rangle$.
+$\langle (1\ 2\ 3) \rangle$, $\langle (1\ 2\ 4) \rangle$, $\langle (1\ 3\ 4) \rangle$, $\langle (2\ 3\ 4) \rangle$.
 
 **Sylow $2$-subgroups** (order $8$). $n_2 \equiv 1 \pmod{2}$ and $n_2$ divides $3$ So
 $n_2 \in \{1, 3\}$. A Sylow $2$-subgroup is isomorphic to $D_4$ (the dihedral group of order $8$).
@@ -1036,7 +1036,7 @@ element has A multiplicative inverse.
 **Example 2.** $\mathbb{Z}/n\mathbb{Z}$ is a commutative ring with unity. It is a field if and only
 if $n$ is prime.
 
-**Example 3.** $\mathbb{Q}$$\mathbb{R}$$\mathbb{C}$ are fields.
+**Example 3.** $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ are fields.
 
 **Example 4.** The set $M_n(\mathbb{R})$ of $n \times n$ real matrices is a non-commutative ring
 with unity.
@@ -1081,7 +1081,7 @@ $b - c = 0$. $\blacksquare$
 **Example.** $\mathbb{Q}(\sqrt{2}) = \{a + b\sqrt{2} : a, b \in \mathbb{Q}\}$ is a field. The
 inverse of $a + b\sqrt{2}$ (with $a, b$ not both zero) is $\frac{a - b\sqrt{2}}{a^2 - 2b^2}$.
 
-**Example.** For any prime $p$$\mathbb{Z}/p\mathbb{Z}$ is a field with $p$ elements, denoted
+**Example.** For any prime $p$, $\mathbb{Z}/p\mathbb{Z}$ is a field with $p$ elements, denoted
 $\mathbb{F}_p$.
 
 **Proposition 8.5.** In a finite integral domain $R$Every non-zero element is a unit. Hence every
@@ -1111,7 +1111,7 @@ A ring homomorphism that is bijective is a **ring isomorphism**.
 _Proof._ (1) $\phi(0) = \phi(0 + 0) = \phi(0) + \phi(0)$So $\phi(0) = 0$ by cancellation in
 $(S, +)$. (2) $\phi(a) + \phi(-a) = \phi(a + (-a)) = \phi(0) = 0$So $\phi(-a) = -\phi(a)$. (3)
 $\ker(\phi)$ Is an ideal: it is a subgroup of $(R, +)$ by the group homomorphism property, and for
-any $r \in R$ and $a \in \ker(\phi)$$\phi(ra) = \phi(r)\phi(a) = \phi(r) \cdot 0 = 0$ and
+any $r \in R$ and $a \in \ker(\phi)$, $\phi(ra) = \phi(r)\phi(a) = \phi(r) \cdot 0 = 0$ and
 $\phi(ar) = \phi(a)\phi(r) = 0$So $ra, ar \in \ker(\phi)$. $\blacksquare$
 
 **Example.** The map $\phi : \mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ given by $\phi(k) = [k]$ is a
@@ -1140,7 +1140,7 @@ These differ by $5bd + 5\mathbb{Z} = 0 + 5\mathbb{Z}$ since $5bd$ is a multiple 
 preserves Multiplication. Additivity is clear. Also $\phi(1) = 1 + 5\mathbb{Z}$. ✓
 
 Surjectivity:
-$\phi(1) = 1$$\phi(i) = 2$$\phi(2) = 2$$\phi(2i) = 4$$\phi(1+i) = 3$$\phi(1+2i) = 5 \equiv 0$. We
+$\phi(1) = 1$, $\phi(i) = 2$, $\phi(2) = 2$, $\phi(2i) = 4$, $\phi(1+i) = 3$, $\phi(1+2i) = 5 \equiv 0$. We
 get all residues $0, 1, 2, 3, 4$So $\phi$ is surjective.
 
 Kernel: $\ker(\phi) = \{a + bi : a + 2b \equiv 0 \pmod{5}\}$. For example, $1 + 2i \in \ker(\phi)$
@@ -1157,7 +1157,7 @@ zero divisors.
 <summary>Solution</summary>
 
 _Solution._ In $R$We have $x^2 = x$. Every element can be written as $[a + bx]$ where
-$a, b \in \mathbb{Z}$ Since higher powers reduce: $x^2 = x$$x^3 = x^2 = x$Etc.
+$a, b \in \mathbb{Z}$ Since higher powers reduce: $x^2 = x$, $x^3 = x^2 = x$Etc.
 
 $R$ has zero divisors: $[x][x - 1] = [x^2 - x] = [0]$But $[x] \neq [0]$ and $[x - 1] \neq [0]$. So
 $R$ is not an integral domain.
@@ -1252,10 +1252,10 @@ isomorphism theorem, $R/(I \cap J) \cong R/I \times R/J$. $\blacksquare$
 **Corollary 9.6.** If $m, n \in \mathbb{Z}$ are coprime, then
 $\mathbb{Z}/(mn) \cong \mathbb{Z}/(m) \times \mathbb{Z}/(n)$.
 
-_Proof._ Apply Theorem 9.5 with $I = (m)$$J = (n)$. Since $\gcd(m, n) = 1$We have
+_Proof._ Apply Theorem 9.5 with $I = (m)$, $J = (n)$. Since $\gcd(m, n) = 1$We have
 $(m) + (n) = (1) = \mathbb{Z}$. Also $(m) \cap (n) = (\mathrm{lcm}(m, n)) = (mn)$. $\blacksquare$
 
-**Problem.** Find all solutions to $x \equiv 2 \pmod{3}$$x \equiv 3 \pmod{5}$$x \equiv 1 \pmod{7}$.
+**Problem.** Find all solutions to $x \equiv 2 \pmod{3}$, $x \equiv 3 \pmod{5}$, $x \equiv 1 \pmod{7}$.
 
 <details>
 <summary>Solution</summary>
@@ -1309,7 +1309,7 @@ $f(x) = a_n x^n + \cdots + a_1 x + a_0 \in \mathbb{Z}[x]$. If there exists a pri
 Then $f$ is irreducible in $\mathbb{Q}[x]$.
 
 _Proof._ Suppose $f = gh$ with $g, h \in \mathbb{Z}[x]$ (by Gauss's lemma), $\deg(g) = r \geq 1$
-$\deg(h) = s \geq 1$$r + s = n$. Modulo $p$: $\bar{f} = \bar{g}\bar{h} = \bar{a}_n x^n$ in
+$\deg(h) = s \geq 1$, $r + s = n$. Modulo $p$: $\bar{f} = \bar{g}\bar{h} = \bar{a}_n x^n$ in
 $(\mathbb{Z}/p\mathbb{Z})[x]$. Since $\mathbb{Z}/p\mathbb{Z}[x]$ is an integral domain,
 $\bar{g} = bx^r$ And $\bar{h} = cx^s$ for some $b, c \in \mathbb{Z}/p\mathbb{Z}$. In particular, the
 constant terms of $g$ and $h$ are both divisible by $p$. But then $p^2$ divides $a_0$Contradicting
@@ -1353,11 +1353,11 @@ $\gcd(x^4 + x^3 + x^2 + x + 1, x^3 + 1) = 1$. $\blacksquare$
 <summary>Solution</summary>
 
 _Solution._ By the rational root theorem, possible rational roots are $\pm 1, \pm 3$.
-$f(1) = -1$$f(-1) = 7$$f(3) = 216$$f(-3) = -269$. No rational roots.
+$f(1) = -1$, $f(-1) = 7$, $f(3) = 216$, $f(-3) = -269$. No rational roots.
 
 Since $\deg(f) = 5$If $f$ is reducible, it must have an irreducible factor of degree $1$ or $2$. No
 degree-$1$ factor means no rational root. We check for degree-$2$ factors by reducing modulo $2$:
-$\bar{f} = x^5 + x + 1$ in $\mathbb{F}_2[x]$. $\bar{f}(0) = 1$$\bar{f}(1) = 1$So no roots in
+$\bar{f} = x^5 + x + 1$ in $\mathbb{F}_2[x]$. $\bar{f}(0) = 1$, $\bar{f}(1) = 1$So no roots in
 $\mathbb{F}_2$. The only irreducible quadratic in $\mathbb{F}_2[x]$ is $x^2 + x + 1$. Division gives
 $x^5 + x + 1 = (x^2+x+1)(x^3 + x^2) + 1$So $x^2 + x + 1$ does not divide $\bar{f}$.
 
@@ -1392,7 +1392,7 @@ Minimising $\delta(d)$. We claim $I = (d)$. For any $a \in I$Write $a = qd + r$ 
 $\delta(r) \lt \delta(d)$. Since $r = a - qd \in I$Minimality of $\delta(d)$ Forces $r = 0$So
 $a = qd \in (d)$. $\blacksquare$
 
-**Corollary 11.2.** $\mathbb{Z}$$F[x]$And $\mathbb{Z}[i]$ are PIDs.
+**Corollary 11.2.** $\mathbb{Z}$, $F[x]$And $\mathbb{Z}[i]$ are PIDs.
 
 ### 11.3 Unique Factorization Domains
 
@@ -1548,7 +1548,7 @@ $\blacksquare$
 
 _Solution._ The minimal polynomial of $\sqrt[4]{2}$ is $x^4 - 2$ (irreducible by Eisenstein with
 $p = 2$), So $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$. The roots of $x^4 - 2$ are
-$\sqrt[4]{2}$$i\sqrt[4]{2}$ $-\sqrt[4]{2}$$-i\sqrt[4]{2}$. The root $i\sqrt[4]{2}$ is not in
+$\sqrt[4]{2}$, $i\sqrt[4]{2}$ $-\sqrt[4]{2}$, $-i\sqrt[4]{2}$. The root $i\sqrt[4]{2}$ is not in
 $\mathbb{Q}(\sqrt[4]{2}) \subset \mathbb{R}$.
 
 Therefore $\mathbb{Q}(\sqrt[4]{2})$ is not the splitting field of $x^4 - 2$And
@@ -1563,7 +1563,7 @@ $\blacksquare$
 <summary>Solution</summary>
 
 _Solution._ We need an irreducible polynomial of degree $2$ in $\mathbb{F}_3[x]$. Check $x^2 + 1$:
-$f(0) = 1$$f(1) = 2$$f(2) = 4 + 1 = 5 \equiv 2 \pmod{3}$. No roots, so irreducible. Thus
+$f(0) = 1$, $f(1) = 2$, $f(2) = 4 + 1 = 5 \equiv 2 \pmod{3}$. No roots, so irreducible. Thus
 $\mathbb{F}_9 = \mathbb{F}_3[x]/(x^2 + 1)$.
 
 Let $\alpha = x + (x^2 + 1)$So $\alpha^2 = -1 = 2$ in $\mathbb{F}_3$. Then:
@@ -1622,7 +1622,7 @@ the splitting field of a separable polynomial over $F$.
 
 **Problem.** Find the Galois group of $x^3 - 2$ over $\mathbb{Q}$.
 
-_Solution._ The roots of $x^3 - 2$ are $\sqrt[3]{2}$$\omega\sqrt[3]{2}$$\omega^2\sqrt[3]{2}$ Where
+_Solution._ The roots of $x^3 - 2$ are $\sqrt[3]{2}$, $\omega\sqrt[3]{2}$, $\omega^2\sqrt[3]{2}$ Where
 $\omega = e^{2\pi i/3}$ is a primitive cube root of unity. The splitting field is
 $E = \mathbb{Q}(\sqrt[3]{2}, \omega)$. We have
 $[E : \mathbb{Q}] = [E : \mathbb{Q}(\sqrt[3]{2})]
@@ -1687,7 +1687,7 @@ $\mathrm{Gal}(x^3 - 3x + 1) = A_3 \cong \mathbb{Z}/3\mathbb{Z}$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ The roots are $\alpha_1 = \sqrt[4]{2}$$\alpha_2 = i\sqrt[4]{2}$$\alpha_3 = -\sqrt[4]{2}$
+_Solution._ The roots are $\alpha_1 = \sqrt[4]{2}$, $\alpha_2 = i\sqrt[4]{2}$, $\alpha_3 = -\sqrt[4]{2}$
 $\alpha_4 = -i\sqrt[4]{2}$. The splitting field is $E = \mathbb{Q}(\sqrt[4]{2}, i)$.
 
 $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$ (since $x^4 - 2$ is irreducible by Eisenstein).
@@ -1945,11 +1945,11 @@ The following table summarizes the classification of groups of small order:
 | 5     | $\mathbb{Z}/5\mathbb{Z}$                                                                                                                         |
 | 6     | $\mathbb{Z}/6\mathbb{Z}$, $S_3$                                                                                                                    |
 | 7     | $\mathbb{Z}/7\mathbb{Z}$                                                                                                                         |
-| 8     | $\mathbb{Z}/8\mathbb{Z}$$\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$$(\mathbb{Z}/2\mathbb{Z})^3$$D_4$$Q_8$                             |
-| 9     | $\mathbb{Z}/9\mathbb{Z}$$\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$                                                                   |
-| 10    | $\mathbb{Z}/10\mathbb{Z}$$D_5$                                                                                                                   |
+| 8     | $\mathbb{Z}/8\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, $(\mathbb{Z}/2\mathbb{Z})^3$, $D_4$, $Q_8$                             |
+| 9     | $\mathbb{Z}/9\mathbb{Z}$, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$                                                                   |
+| 10    | $\mathbb{Z}/10\mathbb{Z}$, $D_5$                                                                                                                   |
 | 11    | $\mathbb{Z}/11\mathbb{Z}$                                                                                                                        |
-| 12    | $\mathbb{Z}/12\mathbb{Z}$$\mathbb{Z}/6\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$$A_4$$D_6$$\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/4\mathbb{Z}$ |
+| 12    | $\mathbb{Z}/12\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, $A_4$, $D_6$, $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/4\mathbb{Z}$ |
 
 **Proposition 16.1.** Every group of prime order is cyclic, and every group of order $p^2$ (where
 $p$ Is prime) is abelian (hence isomorphic to $\mathbb{Z}/p^2\mathbb{Z}$ or
@@ -1960,7 +1960,7 @@ _Proof._ For prime order, see Section 3.3. For order $p^2$See Corollary 6.6. $\b
 **Proposition 16.2.** There are exactly five groups of order $8$.
 
 _Proof._ The abelian groups of order $8$ are classified by the structure theorem:
-$\mathbb{Z}/8\mathbb{Z}$$\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$$(\mathbb{Z}/2\mathbb{Z})^3$.
+$\mathbb{Z}/8\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, $(\mathbb{Z}/2\mathbb{Z})^3$.
 
 For non-abelian groups of order $8$: by Theorem 6.5, $|Z(G)| \geq 2$. If $|Z(G)| = 4$ Then $G/Z(G)$
 has order $2$ and is cyclic, making $G$ abelian (contradiction). So $|Z(G)| = 2$ and
@@ -2072,7 +2072,7 @@ $|g^k| = n / \gcd(n, k)$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ Let $d = \gcd(n, k)$ and write $n = dn'$$k = dk'$ with $\gcd(n', k') = 1$. We show
+_Solution._ Let $d = \gcd(n, k)$ and write $n = dn'$, $k = dk'$ with $\gcd(n', k') = 1$. We show
 $(g^k)^{n'} = e$ and that $n'$ is the smallest such positive exponent.
 
 $(g^k)^{n'} = g^{kn'} = g^{dk'n'} = g^{n'k}$. Since $n = dn'$We have
@@ -2092,10 +2092,10 @@ normal.
 <details>
 <summary>Solution</summary>
 
-_Solution._ $D_4 = \{e, r, r^2, r^3, s, rs, r^2s, r^3s\}$ where $r^4 = e$$s^2 = e$$srs = r^{-1}$.
+_Solution._ $D_4 = \{e, r, r^2, r^3, s, rs, r^2s, r^3s\}$ where $r^4 = e$, $s^2 = e$, $srs = r^{-1}$.
 
-Elements of order $2$: $r^2$$s$$rs$$r^2s$$r^3s$. So there are five subgroups of order $2$:
-$\langle r^2 \rangle$$\langle s \rangle$$\langle rs \rangle$$\langle r^2s \rangle$$\langle r^3s \rangle$.
+Elements of order $2$: $r^2$, $s$, $rs$, $r^2s$, $r^3s$. So there are five subgroups of order $2$:
+$\langle r^2 \rangle$, $\langle s \rangle$, $\langle rs \rangle$, $\langle r^2s \rangle$, $\langle r^3s \rangle$.
 
 For normality: $r r^2 r^{-1} = r^2$ and $s r^2 s = r^{-2} = r^2$So
 $\langle r^2 \rangle \trianglelefteq D_4$. But
@@ -2137,7 +2137,7 @@ $\langle 3 \rangle = \{0, 3, 6, 9\}$ (order $4$), $\langle 2 \rangle = \{0, 2, 4
 $6$), $\langle 1 \rangle = \mathbb{Z}/12\mathbb{Z}$ (order $12$).
 
 The subgroup lattice (Hasse diagram): $\mathbb{Z}/12\mathbb{Z}$ connects to
-$\langle 2 \rangle$$\langle 3 \rangle$$\langle 4 \rangle$. $\langle 2 \rangle$ connects to
+$\langle 2 \rangle$, $\langle 3 \rangle$, $\langle 4 \rangle$. $\langle 2 \rangle$ connects to
 $\langle 4 \rangle$ and $\langle 6 \rangle$. $\langle 3 \rangle$ connects to $\langle 6 \rangle$.
 $\langle 4 \rangle$ and $\langle 6 \rangle$ connect to $\{0\}$. $\blacksquare$
 
@@ -2152,8 +2152,8 @@ and verify $H$ is not normal.
 <summary>Solution</summary>
 
 _Solution._ $H = \{e, (1\ 2\ 3\ 4), (1\ 3)(2\ 4), (1\ 4\ 3\ 2)\}$ has order $4$ $[S_4 : H] = 6$.
-Choose representatives from $S_4 \setminus H$E.g., $(1\ 2)$$(1\ 3)$ $(2\ 3)$$(1\ 2\ 3)$$(1\ 3\ 2)$.
-The six cosets are: $H$$(1\ 2)H$$(1\ 3)H$$(2\ 3)H$$(1\ 2\ 3)H$$(1\ 3\ 2)H$.
+Choose representatives from $S_4 \setminus H$E.g., $(1\ 2)$, $(1\ 3)$ $(2\ 3)$, $(1\ 2\ 3)$, $(1\ 3\ 2)$.
+The six cosets are: $H$, $(1\ 2)H$, $(1\ 3)H$, $(2\ 3)H$, $(1\ 2\ 3)H$, $(1\ 3\ 2)H$.
 
 To show $H$ is not normal: $(1\ 2)(1\ 2\ 3\ 4)(1\ 2) = (2\ 1\ 3\ 4) = (1\ 3\ 4\ 2) \notin H$ (since
 $(1\ 3\ 4\ 2)$ is not among the four elements of $H$ listed above). $\blacksquare$
@@ -2186,7 +2186,7 @@ _If you get this wrong, revise: Section 3.5, Corollary 3.7._
 
 _Solution._ $Q_8 = \{1, -1, i, -i, j, -j, k, -k\}$ with $|Q_8| = 8$ and $Z(Q_8) = \{1, -1\}$ of
 order $2$. The quotient has order $4$. The cosets are
-$Z = \{1, -1\}$$iZ = \{i, -i\}$$jZ = \{j, -j\}$$kZ = \{k, -k\}$. Every non-identity element
+$Z = \{1, -1\}$, $iZ = \{i, -i\}$, $jZ = \{j, -j\}$, $kZ = \{k, -k\}$. Every non-identity element
 satisfies $(iZ)^2 = i^2Z = (-1)Z = Z$So every element has order $1$ or $2$. The quotient is abelian
 (since $Z(Q_8)$ contains the commutator subgroup). Thus
 $Q_8 / Z(Q_8) \cong V_4 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$. $\blacksquare$
@@ -2278,8 +2278,8 @@ _If you get this wrong, revise: Section 6.2, Theorem 6.2._
 
 _Solution._ $|S_3| = 6 = 2 \cdot 3$. Sylow $2$-subgroups have order $2$. $n_2 \equiv 1 \pmod{2}$ and
 $n_2$ divides $3$So $n_2 \in \{1, 3\}$. The elements of order $2$ in $S_3$ are the three
-transpositions: $(1\ 2)$$(1\ 3)$$(2\ 3)$. Each generates a subgroup of order $2$:
-$\langle (1\ 2) \rangle$$\langle (1\ 3) \rangle$$\langle (2\ 3) \rangle$. So $n_2 = 3$ and the three
+transpositions: $(1\ 2)$, $(1\ 3)$, $(2\ 3)$. Each generates a subgroup of order $2$:
+$\langle (1\ 2) \rangle$, $\langle (1\ 3) \rangle$, $\langle (2\ 3) \rangle$. So $n_2 = 3$ and the three
 Sylow $2$-subgroups are these. $\blacksquare$
 
 </details>
@@ -2315,7 +2315,7 @@ _Solution._ $n_7 \equiv 1 \pmod{7}$ and $n_7$ divides $3$. Since $7 \nmid (3 - 1
 $n_7 = 1$. So the Sylow $7$-subgroup $Q \cong \mathbb{Z}/7\mathbb{Z}$ is normal.
 
 $n_3 \equiv 1 \pmod{3}$ and $n_3$ divides $7$So $n_3 \in \{1, 7\}$. If $n_3 = 1$Both Sylow subgroups
-are normal and $G \cong \mathbb{Z}/21\mathbb{Z}$ (abelian). If $n_3 = 7$$G$ is a semidirect product
+are normal and $G \cong \mathbb{Z}/21\mathbb{Z}$ (abelian). If $n_3 = 7$, $G$ is a semidirect product
 $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ Which is non-abelian. This group exists: it
 is the unique non-abelian group of order $21$. So $G$ need not be abelian. $\blacksquare$
 
@@ -2385,7 +2385,7 @@ _Solution._ **UFD:** By Gauss's lemma, since $\mathbb{Z}$ is a UFD, $\mathbb{Z}[
 
 **Not a PID:** The ideal $I = (2, x) = \{2f + xg : f, g \in \mathbb{Z}[x]\}$ is not principal.
 Suppose $I = (h)$ for some $h \in \mathbb{Z}[x]$. Then $h$ divides both $2$ and $x$. Since $h$
-divides $2 \in \mathbb{Z}$$h$ is a constant polynomial, say $h = c \in \mathbb{Z}$. Then
+divides $2 \in \mathbb{Z}$, $h$ is a constant polynomial, say $h = c \in \mathbb{Z}$. Then
 $(c) = (2, x)$So $c$ divides $2$ and $c$ divides $x$Hence $c = \pm 1$. But
 $(1) = \mathbb{Z}[x] \neq (2, x)$ since $1 \notin (2, x)$ (every element of $(2, x)$ has even
 constant term). Contradiction. Therefore $(2, x)$ is not principal, and $\mathbb{Z}[x]$ is not a
@@ -2411,13 +2411,13 @@ $[\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}(\sqrt{2})] = 2$.
 By the tower law: $[\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}] = 2 \cdot 2 = 4$.
 
 The Galois group consists of four automorphisms determined by their action on $\sqrt{2}$ and
-$\sqrt{3}$: $\mathrm{id}$: $\sqrt{2} \mapsto \sqrt{2}$$\sqrt{3} \mapsto \sqrt{3}$ $\sigma$:
-$\sqrt{2} \mapsto -\sqrt{2}$$\sqrt{3} \mapsto \sqrt{3}$ $\tau$:
-$\sqrt{2} \mapsto \sqrt{2}$$\sqrt{3} \mapsto -\sqrt{3}$ $\sigma\tau$:
-$\sqrt{2} \mapsto -\sqrt{2}$$\sqrt{3} \mapsto -\sqrt{3}$
+$\sqrt{3}$: $\mathrm{id}$: $\sqrt{2} \mapsto \sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$ $\sigma$:
+$\sqrt{2} \mapsto -\sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$ $\tau$:
+$\sqrt{2} \mapsto \sqrt{2}$, $\sqrt{3} \mapsto -\sqrt{3}$ $\sigma\tau$:
+$\sqrt{2} \mapsto -\sqrt{2}$, $\sqrt{3} \mapsto -\sqrt{3}$
 
 Since all non-identity elements have order
-$2$$\mathrm{Gal}(\mathbb{Q}(\sqrt{2}, \sqrt{3})/\mathbb{Q}) \cong V_4$. $\blacksquare$
+$2$, $\mathrm{Gal}(\mathbb{Q}(\sqrt{2}, \sqrt{3})/\mathbb{Q}) \cong V_4$. $\blacksquare$
 
 </details>
 
@@ -2482,7 +2482,7 @@ _Solution._ We show that every non-abelian group of order $n < 60$ is not simple
 - Order $10$: $n_5 = 1$ by Sylow.
 - Order $12$: $n_3 = 1$ or $4$. If $n_3 = 4$One checks $A_4$ has the normal Klein subgroup $V_4$.
 - Order $14$: $n_7 = 1$ by Sylow.
-- Order $15$: $n_5 = 1$$n_3 = 1$ by Sylow.
+- Order $15$: $n_5 = 1$, $n_3 = 1$ by Sylow.
 - Order $18$: $n_3 = 1$ by Sylow (since $n_3 \equiv 1 \pmod{3}$ and $n_3$ divides $2$).
 - Order $20$: $n_5 = 1$ by Sylow (since $n_5 \equiv 1 \pmod{5}$ and $n_5$ divides $4$).
 - Order $21$: $n_7 = 1$ by Sylow.
@@ -2495,7 +2495,7 @@ _Solution._ We show that every non-abelian group of order $n < 60$ is not simple
 - Order $30$: $n_5 = 1$ or $n_3 = 1$ by counting arguments (see Section 7.6).
 - Order $33$: $n_{11} = 1$.
 - Order $34$: $n_{17} = 1$.
-- Order $35$: $n_7 = 1$$n_5 = 1$.
+- Order $35$: $n_7 = 1$, $n_5 = 1$.
 - Order $36$: $n_3 = 1$ or $4$. If $n_3 = 4$The action on Sylow $3$-subgroups gives a homomorphism
   $G \to S_4$ whose kernel is a proper normal subgroup.
 - Orders $38, 39, 40, 42, 44, 46, 48, 50, 51, 52, 54, 55, 56, 57, 58$: similar arguments apply. For

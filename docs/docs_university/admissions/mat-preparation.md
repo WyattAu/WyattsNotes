@@ -422,7 +422,7 @@ As $x \to \pm\infty$, $\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asy
 - Stationary points: local maximum at $(0, 0)$Local minimum at $(2, 4)$
 - Vertical asymptote: $x = 1$
 - Oblique asymptote: $y = x + 1$
-- As $x \to 1^+$$y \to +\infty$; as $x \to 1^-$$y \to -\infty$
+- As $x \to 1^+$, $y \to +\infty$; as $x \to 1^-$, $y \to -\infty$
 
 ---
 
@@ -436,7 +436,7 @@ As $x \to \pm\infty$, $\frac{1}{x-1} \to 0$So $y \approx x + 1$. The oblique asy
 **Solution.**
 
 **(i)**
-$S_1 = \frac{1}{2}$$S_2 = \frac{1}{2} + \frac{2}{4} = 1$$S_3 = 1 + \frac{3}{8} = \frac{11}{8}$.
+$S_1 = \frac{1}{2}$, $S_2 = \frac{1}{2} + \frac{2}{4} = 1$, $S_3 = 1 + \frac{3}{8} = \frac{11}{8}$.
 
 **(ii)** Write:
 

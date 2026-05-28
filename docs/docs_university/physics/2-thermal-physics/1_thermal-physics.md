@@ -1029,7 +1029,7 @@ Solving gives:
 $$T_c = \frac{8a}{27bk_B}, \qquad P_c = \frac{a}{27b^2}, \qquad v_c = 3b$$
 
 Near the critical point, define the **reduced variables**
-$\tilde{T} = T/T_c$$\tilde{P} = P/P_c$$\tilde{v} = v/v_c$ to obtain the universal form:
+$\tilde{T} = T/T_c$, $\tilde{P} = P/P_c$, $\tilde{v} = v/v_c$ to obtain the universal form:
 
 $$\left(\tilde{P} + \frac{3}{\tilde{v}^2}\right)(3\tilde{v} - 1) = 8\tilde{T}$$
 
@@ -1069,7 +1069,7 @@ atm.
 <details>
 <summary>Worked Example 10.2: Critical Parameters of CO$_2$</summary>
 
-For CO$_2$$a = 0.364$ Pa$\cdot$M$^6$/mol$^2$$b = 4.27 \times 10^{-5}$ m$^3$/mol. Using the critical
+For CO$_2$, $a = 0.364$ Pa$\cdot$M$^6$/mol$^2$, $b = 4.27 \times 10^{-5}$ m$^3$/mol. Using the critical
 point formulas:
 
 $$T_c = \frac{8a}{27Rb} = \frac{8 \times 0.364}{27 \times 8.314 \times 4.27 \times 10^{-5}} = \frac{2.912}{9.585 \times 10^{-3}} \approx 303.7 \text{ K}$$

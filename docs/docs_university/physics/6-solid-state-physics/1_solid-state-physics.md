@@ -35,8 +35,8 @@ There are **14 Bravais lattices** in three dimensions, classified into 7 crystal
 | Orthorhombic | P, C, I, F   | $a \neq b \neq c$, $\alpha = \beta = \gamma = 90^\circ$         |
 | Monoclinic   | P, C         | $a \neq b \neq c$, $\alpha = \gamma = 90^\circ \neq \beta$      |
 | Triclinic    | P            | $a \neq b \neq c$, $\alpha \neq \beta \neq \gamma$              |
-| Hexagonal    | P            | $a = b \neq c$$\alpha = \beta = 90^\circ$$\gamma = 120^\circ$ |
-| Trigonal     | R            | $a = b = c$$\alpha = \beta = \gamma \neq 90^\circ$            |
+| Hexagonal    | P            | $a = b \neq c$, $\alpha = \beta = 90^\circ$, $\gamma = 120^\circ$ |
+| Trigonal     | R            | $a = b = c$, $\alpha = \beta = \gamma \neq 90^\circ$            |
 
 **Notation:** P = primitive, I = body-centred, F = face-centred, C = base-centred, R = rhombohedral.
 
@@ -59,7 +59,7 @@ per Conventional cell. Examples: C (diamond), Si, Ge.
 
 ### 1.4 Miller Indices
 
-A plane with Miller indices $(hkl)$ intersects the crystallographic axes at $a/h$$b/k$$c/l$.
+A plane with Miller indices $(hkl)$ intersects the crystallographic axes at $a/h$, $b/k$, $c/l$.
 
 **Procedure:** (1) Find intercepts with axes in units of lattice constants. (2) Take reciprocals.
 (3) Reduce to smallest integers.
@@ -276,7 +276,7 @@ $\mathbf{G}_{hkl} = h\mathbf{b}_1 + k\mathbf{b}_2 + l\mathbf{b}_3$ Is perpendicu
 real-space planes $(hkl)$And $\lvert\mathbf{G}_{hkl}\rvert = 2\pi/d_{hkl}$ where $d_{hkl}$ is the
 interplanar spacing.
 
-**Proof.** The plane $(hkl)$ has intercepts $\mathbf{a}_1/h$$\mathbf{a}_2/k$$\mathbf{a}_3/l$. Two
+**Proof.** The plane $(hkl)$ has intercepts $\mathbf{a}_1/h$, $\mathbf{a}_2/k$, $\mathbf{a}_3/l$. Two
 vectors in this plane are $\mathbf{a}_2/k - \mathbf{a}_1/h$ and $\mathbf{a}_3/l - \mathbf{a}_1/h$.
 
 $\mathbf{G}_{hkl} \cdot (\mathbf{a}_2/k - \mathbf{a}_1/h) = (2\pi/k)k - (2\pi/h)h = 0$.
@@ -294,7 +294,7 @@ plane is $d_{hkl} = 2\pi/\lvert\mathbf{G}_{hkl}\rvert$. $\blacksquare$
 <details>
 <summary>Worked Example: First Brillouin Zone of the 2D Square Lattice</summary>
 
-For a 2D square lattice with primitive vectors $\mathbf{a}_1 = a\hat{x}$$\mathbf{a}_2 = a\hat{y}$:
+For a 2D square lattice with primitive vectors $\mathbf{a}_1 = a\hat{x}$, $\mathbf{a}_2 = a\hat{y}$:
 
 $$\mathbf{b}_1 = \frac{2\pi}{a}\hat{x}, \quad \mathbf{b}_2 = \frac{2\pi}{a}\hat{y}$$
 
@@ -454,7 +454,7 @@ $$S_{hkl} = f\left[1 + e^{-i\pi(h+k+l)}\right] = f\left[1 + (-1)^{h+k+l}\right]$
 Reflections are present only when $h + k + l$ is even. When $h + k + l$ is odd, $S_{hkl} = 0$
 (systematic absence).
 
-**Example: FCC.** Atoms at $(0,0,0)$$(a/2,a/2,0)$$(a/2,0,a/2)$$(0,a/2,a/2)$:
+**Example: FCC.** Atoms at $(0,0,0)$, $(a/2,a/2,0)$, $(a/2,0,a/2)$, $(0,a/2,a/2)$:
 
 $$S_{hkl} = f\left[1 + e^{-i\pi(h+k)} + e^{-i\pi(h+l)} + e^{-i\pi(k+l)}\right]$$
 
@@ -657,10 +657,10 @@ Where $\ell_{\mathrm{ph}}$ is the phonon mean free path.
 
 **Scattering mechanisms** that limit $\ell_{\mathrm{ph}}$:
 
-1. **Phonon--phonon scattering:** At high $T$$\ell_{\mathrm{ph} \propto 1/T}$ (Umklapp processes
+1. **Phonon--phonon scattering:** At high $T$, $\ell_{\mathrm{ph} \propto 1/T}$ (Umklapp processes
    dominate, where the total phonon momentum is not conserved). At low $T$Only normal processes
    ($N$-processes, conserving momentum) contribute, and $\ell_{\mathrm{ph}}$ grows exponentially.
-2. **Boundary scattering:** At very low $T$$\ell_{\mathrm{ph}}$ is limited by the sample size $L$.
+2. **Boundary scattering:** At very low $T$, $\ell_{\mathrm{ph}}$ is limited by the sample size $L$.
 3. **Defect scattering:** Point defects, dislocations, and grain boundaries scatter phonons,
    reducing $\kappa_{\mathrm{ph}}$.
 
@@ -1251,7 +1251,7 @@ Diodes). Indirect-gap materials like Si have very low radiative efficiency.
 <details>
 <summary>Worked Example: Intrinsic Carrier Concentration in Silicon</summary>
 
-For Si at $T = 300$ K: $E_g = 1.12$ eV, $m_e^* = 1.08\,m_e$$m_h^* = 0.56\,m_e$.
+For Si at $T = 300$ K: $E_g = 1.12$ eV, $m_e^* = 1.08\,m_e$, $m_h^* = 0.56\,m_e$.
 
 $$N_c = 2\left(\frac{2\pi \times 1.08 \times 9.11 \times 10^{-31} \times 1.381 \times 10^{-23} \times 300}{(6.626 \times 10^{-34})^2}\right)^{3/2} = 2.81 \times 10^{25}\ \mathrm{m}^{-3}$$
 
@@ -1829,7 +1829,7 @@ The GL free energy functional:
 
 $$\mathcal{F} = \mathcal{F}_n + \alpha|\psi|^2 + \frac{\beta}{2}|\psi|^4 + \frac{1}{2m^*}\left|\left(-i\hbar\nabla - e^*\mathbf{A}\right)\psi\right|^2 + \frac{|\mathbf{B}|^2}{2\mu_0}$$
 
-Where $\alpha = \alpha_0(T - T_c)$ (negative below $T_c$), $\beta > 0$$m^* = 2m_e$$e^* = 2e$ (Cooper
+Where $\alpha = \alpha_0(T - T_c)$ (negative below $T_c$), $\beta > 0$, $m^* = 2m_e$, $e^* = 2e$ (Cooper
 pair charge), and $\mathbf{A}$ is the vector potential.
 
 Minimising with respect to $\psi^*$ gives the **first GL equation**:
@@ -2175,7 +2175,7 @@ $$E_n = E_g - \frac{\mu e^4}{2(4\pi\varepsilon_0\varepsilon_r)^2\hbar^2 n^2} = E
 
 Where $R^* = \frac{\mu}{m_e\varepsilon_r^2} \times 13.6$ eV is the effective Rydberg.
 
-For GaAs ($m_e^* = 0.067m_e$$m_h^* = 0.45m_e$$\varepsilon_r = 12.9$):
+For GaAs ($m_e^* = 0.067m_e$, $m_h^* = 0.45m_e$, $\varepsilon_r = 12.9$):
 
 $$\mu = \frac{0.067 \times 0.45}{0.067 + 0.45}m_e = 0.058m_e$$
 

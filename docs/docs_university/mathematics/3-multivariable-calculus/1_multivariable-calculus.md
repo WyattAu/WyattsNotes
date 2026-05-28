@@ -273,7 +273,7 @@ $\frac{\partial z}{\partial y}$ at the point $(1, 1, 1)$.
 Let $F(x,y,z) = x^2 y + y^2 z + z^2 x - 3$. Then $F_x = 2xy + z^2$
 $F_y = x^2 + 2yz$, $F_z = y^2 + 2zx$.
 
-At $(1,1,1)$: $F_x = 3$$F_y = 3$$F_z = 3$.
+At $(1,1,1)$: $F_x = 3$, $F_y = 3$, $F_z = 3$.
 
 $$\frac{\partial z}{\partial x} = -\frac{F_x}{F_z} = -\frac{3}{3} = -1, \quad \frac{\partial z}{\partial y} = -\frac{F_y}{F_z} = -\frac{3}{3} = -1$$
 
@@ -473,16 +473,16 @@ $$\left\lvert \frac{\partial u}{\partial x}\frac{\partial v}{\partial y} - \frac
 Summing over all subrectangles and taking the limit gives the change of variables formula.
 $\blacksquare$
 
-**Polar coordinates:** $x = r\cos\theta$$y = r\sin\theta$$\lvert J \rvert = r$.
+**Polar coordinates:** $x = r\cos\theta$, $y = r\sin\theta$, $\lvert J \rvert = r$.
 
 $$\iint_D f(x,y)\, dA = \iint_{D'} f(r\cos\theta, r\sin\theta)\, r\, dr\, d\theta$$
 
-**Cylindrical coordinates:** $x = r\cos\theta$$y = r\sin\theta$$z = z$$\lvert J \rvert = r$.
+**Cylindrical coordinates:** $x = r\cos\theta$, $y = r\sin\theta$, $z = z$, $\lvert J \rvert = r$.
 
 $$\iiint_E f(x,y,z)\, dV = \iiint_{E'} f(r\cos\theta, r\sin\theta, z)\, r\, dr\, d\theta\, dz$$
 
 **Spherical coordinates:**
-$x = \rho\sin\phi\cos\theta$$y = \rho\sin\phi\sin\theta$$z = \rho\cos\phi$
+$x = \rho\sin\phi\cos\theta$, $y = \rho\sin\phi\sin\theta$, $z = \rho\cos\phi$
 $\lvert J \rvert = \rho^2 \sin\phi$.
 
 $$\iiint_E f(x,y,z)\, dV = \iiint_{E'} f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi)\, \rho^2 \sin\phi\, d\rho\, d\phi\, d\theta$$
@@ -494,7 +494,7 @@ $$\iiint_E f(x,y,z)\, dV = \iiint_{E'} f(\rho\sin\phi\cos\theta, \rho\sin\phi\si
 <details>
 <summary>Solution</summary>
 
-Use polar coordinates. The region $D'$ is $0 \leq r \lt \infty$$0 \leq \theta \leq 2\pi$.
+Use polar coordinates. The region $D'$ is $0 \leq r \lt \infty$, $0 \leq \theta \leq 2\pi$.
 
 $$\iint_D e^{-(x^2+y^2)}\, dA = \int_0^{2\pi} \int_0^{\infty} e^{-r^2}\, r\, dr\, d\theta$$
 
@@ -539,7 +539,7 @@ $x^2 + y^2 + z^2 \leq a^2$.
 <summary>Solution</summary>
 
 Use spherical coordinates. In spherical: $x^2 + y^2 + z^2 = \rho^2$And $E'$ is
-$0 \leq \rho \leq a$$0 \leq \phi \leq \pi$$0 \leq \theta \leq 2\pi$.
+$0 \leq \rho \leq a$, $0 \leq \phi \leq \pi$, $0 \leq \theta \leq 2\pi$.
 
 $$\iiint_E (x^2 + y^2 + z^2)\, dV = \int_0^{2\pi} \int_0^{\pi} \int_0^a \rho^2 \cdot \rho^2 \sin\phi\, d\rho\, d\phi\, d\theta$$
 
@@ -1129,7 +1129,7 @@ $x = 0$ or $x = \pm 1$.
 - $x = 1$: $y = 1$. Critical point: $(1, 1)$.
 - $x = -1$: $y = -1$. Critical point: $(-1, -1)$.
 
-Second derivatives: $f_{xx} = 12x^2$$f_{yy} = 12y^2$$f_{xy} = -4$.
+Second derivatives: $f_{xx} = 12x^2$, $f_{yy} = 12y^2$, $f_{xy} = -4$.
 
 At $(0,0)$: $D = 0 \cdot 0 - 16 = -16 \lt 0$. **Saddle point.**
 
@@ -1159,7 +1159,7 @@ Substituting: $(x^2)^2 = x$So $x^4 - x = 0$Giving $x(x^3 - 1) = 0$So $x = 0$ or 
 - $x = 0$: $y = 0$. Critical point: $(0, 0)$.
 - $x = 1$: $y = 1$. Critical point: $(1, 1)$.
 
-Second derivatives: $f_{xx} = 6x$$f_{yy} = 6y$$f_{xy} = -3$.
+Second derivatives: $f_{xx} = 6x$, $f_{yy} = 6y$, $f_{xy} = -3$.
 
 At $(0,0)$: $D = f_{xx} f_{yy} - f_{xy}^2 = 0 \cdot 0 - 9 = -9 \lt 0$. **Saddle point.**
 
@@ -1179,11 +1179,11 @@ $\nabla f = \lambda \nabla g$:
 
 $$(2x, 2y, 2z) = \lambda(1, 2, 3)$$
 
-This gives $x = \lambda/2$$y = \lambda$$z = 3\lambda/2$. Substituting into the constraint:
+This gives $x = \lambda/2$, $y = \lambda$, $z = 3\lambda/2$. Substituting into the constraint:
 
 $$\frac{\lambda}{2} + 2\lambda + \frac{9\lambda}{2} = 6 \implies \frac{\lambda + 4\lambda + 9\lambda}{2} = 6 \implies 7\lambda = 6 \implies \lambda = \frac{6}{7}$$
 
-Therefore $x = 3/7$$y = 6/7$$z = 9/7$. The closest point is $(3/7,\, 6/7,\, 9/7)$ with Distance
+Therefore $x = 3/7$, $y = 6/7$, $z = 9/7$. The closest point is $(3/7,\, 6/7,\, 9/7)$ with Distance
 $\sqrt{9/49 + 36/49 + 81/49} = \sqrt{126/49} = \frac{3\sqrt{14}}{7}$. $\blacksquare$
 
 </details>
@@ -1315,7 +1315,7 @@ Define:
 - **Binormal:** $\mathbf{B}(s) = \mathbf{T}(s) \times \mathbf{N}(s)$
 - **Torsion:** $\tau(s) = -\mathbf{B}'(s) \cdot \mathbf{N}(s)$
 
-The vectors $\mathbf{T}$$\mathbf{N}$$\mathbf{B}$ form the **Frenet--Serret frame**, an orthonormal
+The vectors $\mathbf{T}$, $\mathbf{N}$, $\mathbf{B}$ form the **Frenet--Serret frame**, an orthonormal
 Basis that moves with the curve.
 
 **Theorem 5.2 (Frenet--Serret Formulas).**
@@ -1435,11 +1435,11 @@ $$\lVert \mathbf{r}_x \times \mathbf{r}_y \rVert = \sqrt{4x^2 + 4y^2 + 1}$$
 
 $$A = \iint_{x^2+y^2 \leq 4} \sqrt{4x^2 + 4y^2 + 1}\, dx\, dy$$
 
-Use polar coordinates: $x = r\cos\theta$$y = r\sin\theta$$0 \leq r \leq 2$$0 \leq \theta \leq 2\pi$.
+Use polar coordinates: $x = r\cos\theta$, $y = r\sin\theta$, $0 \leq r \leq 2$, $0 \leq \theta \leq 2\pi$.
 
 $$A = \int_0^{2\pi} \int_0^2 \sqrt{4r^2 + 1}\, r\, dr\, d\theta$$
 
-Let $u = 4r^2 + 1$$du = 8r\, dr$:
+Let $u = 4r^2 + 1$, $du = 8r\, dr$:
 
 $$= 2\pi \cdot \frac{1}{8} \int_1^{17} \sqrt{u}\, du = \frac{\pi}{4}\left[\frac{2u^{3/2}}{3}\right]_1^{17} = \frac{\pi}{6}(17^{3/2} - 1)$$
 
@@ -1496,12 +1496,12 @@ First octant.
 <details>
 <summary>Solution</summary>
 
-Parametrise the surface. Solve for $z = 4 - 2x - 2y$ where $x \geq 0$$y \geq 0$$z \geq 0$ I.e.,
+Parametrise the surface. Solve for $z = 4 - 2x - 2y$ where $x \geq 0$, $y \geq 0$, $z \geq 0$ I.e.,
 $2x + 2y \leq 4$ or $x + y \leq 2$.
 
-$\mathbf{r}(x,y) = (x,\, y,\, 4 - 2x - 2y)$$D = \\{(x,y) : x \geq 0,\, y \geq 0,\, x + y \leq 2\\}$.
+$\mathbf{r}(x,y) = (x,\, y,\, 4 - 2x - 2y)$, $D = \\{(x,y) : x \geq 0,\, y \geq 0,\, x + y \leq 2\\}$.
 
-$\mathbf{r}_x = (1,\, 0,\, -2)$$\mathbf{r}_y = (0,\, 1,\, -2)$.
+$\mathbf{r}_x = (1,\, 0,\, -2)$, $\mathbf{r}_y = (0,\, 1,\, -2)$.
 
 $$\mathbf{r}_x \times \mathbf{r}_y = (2,\, 2,\, 1)$$
 
@@ -1537,9 +1537,9 @@ Compute $\nabla f$ for $f(x,y,z) = \ln(x^2 + y^2) + e^{xz}$ and evaluate at $(1,
 <details>
 <summary>Solution</summary>
 
-$f_x = \frac{2x}{x^2+y^2} + ze^{xz}$$f_y = \frac{2y}{x^2+y^2}$$f_z = xe^{xz}$.
+$f_x = \frac{2x}{x^2+y^2} + ze^{xz}$, $f_y = \frac{2y}{x^2+y^2}$, $f_z = xe^{xz}$.
 
-At $(1,0,0)$: $f_x = 2 + 0 = 2$$f_y = 0$$f_z = 1$.
+At $(1,0,0)$: $f_x = 2 + 0 = 2$, $f_y = 0$, $f_z = 1$.
 
 $\nabla f(1,0,0) = (2, 0, 1)$.
 
@@ -1563,7 +1563,7 @@ If $y = x$: $f_y = 3x(-2x + x) = -3x^2 = 0$So $x = 0$. Point: $(0,0)$.
 
 If $y = -x$: $f_y = 3(-x)(2x + x) = -9x^2 = 0$So $x = 0$. Point: $(0,0)$.
 
-The only critical point is $(0, 0)$. Now $f_{xx} = 6x$$f_{yy} = -6x + 6y$$f_{xy} = -6y$.
+The only critical point is $(0, 0)$. Now $f_{xx} = 6x$, $f_{yy} = -6x + 6y$, $f_{xy} = -6y$.
 
 At $(0,0)$: $D = 0 \cdot 0 - 0 = 0$. The second derivative test is inconclusive.
 
@@ -1585,7 +1585,7 @@ $\mathbf{v} = (1, 1)$.
 
 Normalise: $\lVert \mathbf{v} \rVert = \sqrt{2}$So $\mathbf{u} = (1/\sqrt{2},\, 1/\sqrt{2})$.
 
-$f_x = e^x \cos y$$f_y = -e^x \sin y$.
+$f_x = e^x \cos y$, $f_y = -e^x \sin y$.
 
 $\nabla f(0, \pi/2) = (e^0 \cos(\pi/2),\, -e^0 \sin(\pi/2)) = (0, -1)$.
 
@@ -1602,9 +1602,9 @@ If $x^2 z + y^2 z^2 = 5$Find $\frac{\partial z}{\partial x}$ at $(1, 1, 1)$.
 <details>
 <summary>Solution</summary>
 
-Let $F(x,y,z) = x^2 z + y^2 z^2 - 5$. Then $F_x = 2xz$$F_y = 2yz^2$$F_z = x^2 + 2y^2 z$.
+Let $F(x,y,z) = x^2 z + y^2 z^2 - 5$. Then $F_x = 2xz$, $F_y = 2yz^2$, $F_z = x^2 + 2y^2 z$.
 
-At $(1,1,1)$: $F_x = 2$$F_z = 1 + 2 = 3$.
+At $(1,1,1)$: $F_x = 2$, $F_z = 1 + 2 = 3$.
 
 $$\frac{\partial z}{\partial x} = -\frac{F_x}{F_z} = -\frac{2}{3}$$
 
@@ -1619,9 +1619,9 @@ Write the second-order Taylor expansion of $f(x,y) = \sin(x + y)$ at $(0, 0)$.
 <details>
 <summary>Solution</summary>
 
-$f(0,0) = 0$$f_x = \cos(x+y)$$f_y = \cos(x+y)$So $f_x(0,0) = f_y(0,0) = 1$.
+$f(0,0) = 0$, $f_x = \cos(x+y)$, $f_y = \cos(x+y)$So $f_x(0,0) = f_y(0,0) = 1$.
 
-$f_{xx} = -\sin(x+y)$$f_{xy} = -\sin(x+y)$$f_{yy} = -\sin(x+y)$So
+$f_{xx} = -\sin(x+y)$, $f_{xy} = -\sin(x+y)$, $f_{yy} = -\sin(x+y)$So
 $f_{xx}(0,0) = f_{xy}(0,0) = f_{yy}(0,0) = 0$.
 
 $$f(x,y) = 0 + x + y + \frac{1}{2}(0 \cdot x^2 + 2 \cdot 0 \cdot xy + 0 \cdot y^2) + R_2 = x + y + R_2$$
@@ -1856,7 +1856,7 @@ So the area is:
 
 $$A = \iint_D 1\, dA = \oint_C -\frac{y}{2}\, dx + \frac{x}{2}\, dy = \frac{1}{2}\oint_C x\, dy - y\, dx$$
 
-Parametrise the ellipse: $x = a\cos t$$y = b\sin t$$0 \leq t \leq 2\pi$.
+Parametrise the ellipse: $x = a\cos t$, $y = b\sin t$, $0 \leq t \leq 2\pi$.
 
 $$A = \frac{1}{2}\int_0^{2\pi} \left[a\cos t \cdot b\cos t - b\sin t \cdot (-a\sin t)\right]\, dt$$
 
@@ -1875,9 +1875,9 @@ Find the minimum value of $f(x,y,z) = x^2 + y^2 + z^2$ subject to $x + y - z = 1
 
 $\nabla f = (2x, 2y, 2z)$, $\nabla g = (1, 1, -1)$ where $g = x + y - z - 1$.
 
-$2x = \lambda$$2y = \lambda$$2z = -\lambda$So $x = y = -z$.
+$2x = \lambda$, $2y = \lambda$, $2z = -\lambda$So $x = y = -z$.
 
-From $x + y - z = 1$: $2x - (-x) = 3x = 1$So $x = 1/3$$y = 1/3$$z = -1/3$.
+From $x + y - z = 1$: $2x - (-x) = 3x = 1$So $x = 1/3$, $y = 1/3$, $z = -1/3$.
 
 $$f(1/3, 1/3, -1/3) = \frac{1}{9} + \frac{1}{9} + \frac{1}{9} = \frac{1}{3}$$
 
@@ -1939,7 +1939,7 @@ $z = 1$.
 Use spherical coordinates. The sphere has $\rho = 2$. The plane $z = 1$ intersects when
 $2\cos\phi = 1$So $\cos\phi = 1/2$Giving $\phi = \pi/3$.
 
-The region: $0 \leq \rho \leq 2$$0 \leq \phi \leq \pi/3$$0 \leq \theta \leq 2\pi$.
+The region: $0 \leq \rho \leq 2$, $0 \leq \phi \leq \pi/3$, $0 \leq \theta \leq 2\pi$.
 
 $$A = \int_0^{2\pi} \int_0^{\pi/3} \rho^2 \sin\phi\, d\phi\, d\theta = 4 \cdot 2\pi \int_0^{\pi/3} \sin\phi\, d\phi$$
 

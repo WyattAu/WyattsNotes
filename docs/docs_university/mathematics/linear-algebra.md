@@ -346,14 +346,14 @@ Row-reduce $A$:
 $$\begin{pmatrix} 1 & 2 & 1 & -1 \\ 2 & 4 & 0 & 1 \\ 0 & 0 & 1 & 3 \end{pmatrix} \xrightarrow{R_2 - 2R_1} \begin{pmatrix} 1 & 2 & 1 & -1 \\ 0 & 0 & -2 & 3 \\ 0 & 0 & 1 & 3 \end{pmatrix} \xrightarrow{R_3 + R_2/2} \begin{pmatrix} 1 & 2 & 1 & -1 \\ 0 & 0 & -2 & 3 \\ 0 & 0 & 0 & 9/2 \end{pmatrix}$$
 
 This has pivots in columns 1, 3, and 4. The free variable is $x_2$. Setting $x_2 = t$ and
-Back-substituting: $x_4 = 0$$x_3 = 0$$x_1 = -2t$. The null space is
+Back-substituting: $x_4 = 0$, $x_3 = 0$, $x_1 = -2t$. The null space is
 $\{t(-2, 1, 0, 0) : t \in \mathbb{R}\}$With basis $\{(-2, 1, 0, 0)\}$ and dimension 1.
 $\blacksquare$
 
 </details>
 
 **Problem.** Determine whether the vectors
-$\mathbf{v}_1 = (1, 2, 3)$$\mathbf{v}_2 = (4, 5, 6)$$\mathbf{v}_3 = (7, 8, 9)$ form a basis For
+$\mathbf{v}_1 = (1, 2, 3)$, $\mathbf{v}_2 = (4, 5, 6)$, $\mathbf{v}_3 = (7, 8, 9)$ form a basis For
 $\mathbb{R}^3$.
 
 <details>
@@ -600,7 +600,7 @@ $$A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$$
 
 $\det(A) = 1 \cdot 4 - 2 \cdot 3 = -2 \neq 0$So $A$ is invertible.
 
-Cofactors: $C_{11} = 4$$C_{12} = -3$$C_{21} = -2$$C_{22} = 1$.
+Cofactors: $C_{11} = 4$, $C_{12} = -3$, $C_{21} = -2$, $C_{22} = 1$.
 
 $$\mathrm{adj}(A) = \begin{pmatrix} 4 & -2 \\ -3 & 1 \end{pmatrix}$$
 
@@ -659,7 +659,7 @@ Only the product of diagonal entries. $\blacksquare$
 ### 4.1 Gaussian Elimination
 
 A system of $m$ linear equations in $n$ unknowns can be written as $A\mathbf{x} = \mathbf{b}$Where
-$A \in \mathcal{M}_{m \times n}(\mathbb{R})$$\mathbf{x} \in \mathbb{R}^n$And
+$A \in \mathcal{M}_{m \times n}(\mathbb{R})$, $\mathbf{x} \in \mathbb{R}^n$And
 $\mathbf{b} \in \mathbb{R}^m$.
 
 **Gaussian elimination** transforms the augmented matrix $[A \mid \mathbf{b}]$ into **row echelon
@@ -777,7 +777,7 @@ $\frac{7}{3}x_2 = \frac{29}{3} - 14 = -\frac{13}{3}$ Giving $x_2 = -\frac{13}{7}
 From row 1: $3x_1 + (-\frac{13}{7}) - 3 = 2$So $3x_1 = 2 + 3 + \frac{13}{7} = \frac{48}{7}$ Giving
 $x_1 = \frac{16}{7}$.
 
-**Solution:** $x_1 = \frac{16}{7}$$x_2 = -\frac{13}{7}$$x_3 = 3$. $\blacksquare$
+**Solution:** $x_1 = \frac{16}{7}$, $x_2 = -\frac{13}{7}$, $x_3 = 3$. $\blacksquare$
 
 </details>
 
@@ -800,7 +800,7 @@ column rank, then $\ker(A) = \{\mathbf{0}\}$ So $\ker(A^T A) = \ker(A) = \{\math
 $A^T A$ is invertible. $\blacksquare$
 
 **Problem.** Find the least squares line $y = ax + b$ fitting the data points
-$(1, 1)$$(2, 1)$$(3, 3)$.
+$(1, 1)$, $(2, 1)$, $(3, 3)$.
 
 <details>
 <summary>Solution</summary>
@@ -808,7 +808,7 @@ $(1, 1)$$(2, 1)$$(3, 3)$.
 The system is
 $\begin{pmatrix} 1 & 1 \\ 2 & 1 \\ 3 & 1 \end{pmatrix}\begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \\ 3 \end{pmatrix}$
 I.e., $A\mathbf{x} = \mathbf{b}$ with $A = \begin{pmatrix} 1 & 1 \\ 2 & 1 \\ 3 & 1 \end{pmatrix}$
-$\mathbf{x} = (a, b)^T$$\mathbf{b} = (1, 1, 3)^T$.
+$\mathbf{x} = (a, b)^T$, $\mathbf{b} = (1, 1, 3)^T$.
 
 Compute
 $A^T A = \begin{pmatrix} 1 & 2 & 3 \\ 1 & 1 & 1 \end{pmatrix}\begin{pmatrix} 1 & 1 \\ 2 & 1 \\ 3 & 1 \end{pmatrix} = \begin{pmatrix} 14 & 6 \\ 6 & 3 \end{pmatrix}$.
@@ -906,7 +906,7 @@ $p(\lambda) = (\\lambda - \\lambda_1)^{m_1}(\\lambda - \\lambda_2)^{m_2}\cdots(\
 With $\\lambda_1, \ldots, \\lambda_k$ distinct, then $m_i$ is the **algebraic multiplicity** of
 $\\lambda_i$.
 
-**Proposition 5.2.** For each eigenvalue $\lambda$$1 \leq \mathrm{dim}(E_\lambda) \leq m_\lambda$
+**Proposition 5.2.** For each eigenvalue $\lambda$, $1 \leq \mathrm{dim}(E_\lambda) \leq m_\lambda$
 (geometric multiplicity does not exceed algebraic multiplicity).
 
 ### 5.3 Diagonalisation
@@ -1118,12 +1118,12 @@ $= (2-\lambda)[(2-\lambda)^2 - 1] - 1[(2-\lambda) - 1] + 1[1 - (2-\lambda)]$
 $= (2-\lambda)(\lambda^2 - 4\lambda + 3) - (1-\lambda) + (\lambda - 1)$
 $= (2-\lambda)(\lambda-1)(\lambda-3)$
 
-Eigenvalues: $\lambda_1 = 1$$\lambda_2 = 2$$\lambda_3 = 3$.
+Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 2$, $\lambda_3 = 3$.
 
 For $\lambda_1 = 1$:
 $A - I = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix} \to \begin{pmatrix} 1 & 1 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$.
 Eigenspace: $\{(s, t, -s-t) : s, t \in \mathbb{R}\}$. An orthonormal basis:
-$\mathbf{q}_1 = \frac{1}{\sqrt{2}}(1, -1, 0)$$\mathbf{q}_2 = \frac{1}{\sqrt{6}}(1, 1, -2)$.
+$\mathbf{q}_1 = \frac{1}{\sqrt{2}}(1, -1, 0)$, $\mathbf{q}_2 = \frac{1}{\sqrt{6}}(1, 1, -2)$.
 
 For $\lambda_2 = 2$:
 $A - 2I = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{pmatrix} \to \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 0 \end{pmatrix}$.
@@ -1165,7 +1165,7 @@ Is a function satisfying:
 
 1. $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$ for all
    $\mathbf{u}, \mathbf{v} \in V$
-2. $T(\alpha \mathbf{v}) = \alpha T(\mathbf{v})$ for all $\alpha \in F$$\mathbf{v} \in V$
+2. $T(\alpha \mathbf{v}) = \alpha T(\mathbf{v})$ for all $\alpha \in F$, $\mathbf{v} \in V$
 
 Equivalently, $T(\alpha\mathbf{u} + \beta\mathbf{v}) = \alpha T(\mathbf{u}) + \beta T(\mathbf{v})$
 for all $\alpha, \beta \in F$ and $\mathbf{u}, \mathbf{v} \in V$.
@@ -1481,11 +1481,11 @@ Product.
 <details>
 <summary>Solution</summary>
 
-$\mathbf{u}_1 = \mathbf{v}_1 = (1, 1, 0)$$\lVert \mathbf{u}_1 \rVert = \sqrt{2}$$e_1 = \frac{1}{\sqrt{2}}(1, 1, 0)$.
+$\mathbf{u}_1 = \mathbf{v}_1 = (1, 1, 0)$, $\lVert \mathbf{u}_1 \rVert = \sqrt{2}$, $e_1 = \frac{1}{\sqrt{2}}(1, 1, 0)$.
 
 $\mathbf{u}_2 = \mathbf{v}_2 - \langle \mathbf{v}_2, e_1 \rangle e_1 = (1, 0, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0) = (1, 0, 1) - \frac{1}{2}(1, 1, 0) = (\frac{1}{2}, -\frac{1}{2}, 1)$
 
-$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$$e_2 = \frac{1}{\sqrt{3/2}}(\frac{1}{2}, -\frac{1}{2}, 1) = \frac{1}{\sqrt{6}}(1, -1, 2)$.
+$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$, $e_2 = \frac{1}{\sqrt{3/2}}(\frac{1}{2}, -\frac{1}{2}, 1) = \frac{1}{\sqrt{6}}(1, -1, 2)$.
 
 $\mathbf{u}_3 = \mathbf{v}_3 - \langle \mathbf{v}_3, e_1 \rangle e_1 - \langle \mathbf{v}_3, e_2 \rangle e_2$
 
@@ -1497,7 +1497,7 @@ $\mathbf{u}_3 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0)
 
 $= (-\frac{1}{2} - \frac{1}{6}, 1 - \frac{1}{2} + \frac{1}{6}, 1 - \frac{1}{3}) = (-\frac{2}{3}, \frac{2}{3}, \frac{2}{3})$
 
-$\lVert \mathbf{u}_3 \rVert = \sqrt{4/9 + 4/9 + 4/9} = \sqrt{4/3} = 2/\sqrt{3}$$e_3 = \frac{\sqrt{3}}{2}(-\frac{2}{3}, \frac{2}{3}, \frac{2}{3}) = \frac{1}{\sqrt{3}}(-1, 1, 1)$.
+$\lVert \mathbf{u}_3 \rVert = \sqrt{4/9 + 4/9 + 4/9} = \sqrt{4/3} = 2/\sqrt{3}$, $e_3 = \frac{\sqrt{3}}{2}(-\frac{2}{3}, \frac{2}{3}, \frac{2}{3}) = \frac{1}{\sqrt{3}}(-1, 1, 1)$.
 
 **Verification:** $\langle e_1, e_2 \rangle = \frac{1}{\sqrt{12}}(1 - 1 + 0) = 0$. $\checkmark$
 $\langle e_1, e_3 \rangle = \frac{1}{\sqrt{6}}(-1 + 1 + 0) = 0$. $\checkmark$
@@ -1524,11 +1524,11 @@ distance from $\mathbf{v}$ to $W$.
 
 First, apply Gram--Schmidt to obtain an orthonormal basis for $W$.
 
-$\mathbf{u}_1 = (1, 0, 1)$$\lVert \mathbf{u}_1 \rVert = \sqrt{2}$$e_1 = \frac{1}{\sqrt{2}}(1, 0, 1)$.
+$\mathbf{u}_1 = (1, 0, 1)$, $\lVert \mathbf{u}_1 \rVert = \sqrt{2}$, $e_1 = \frac{1}{\sqrt{2}}(1, 0, 1)$.
 
 $\mathbf{u}_2 = (0, 1, 1) - \langle (0,1,1), e_1 \rangle e_1 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 0, 1) = (0, 1, 1) - \frac{1}{2}(1, 0, 1) = (-\frac{1}{2}, 1, \frac{1}{2})$.
 
-$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1 + 1/4} = \sqrt{3/2}$$e_2 = \frac{1}{\sqrt{6}}(-1, 2, 1)$.
+$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1 + 1/4} = \sqrt{3/2}$, $e_2 = \frac{1}{\sqrt{6}}(-1, 2, 1)$.
 
 Now compute the projection:
 
@@ -1748,7 +1748,7 @@ $A^T A = \begin{pmatrix} 3 & 2 & 2 \\ 2 & 3 & -2 \end{pmatrix}\begin{pmatrix} 3 
 **Step 2:** Eigenvalues of $A^T A$:
 $\det\begin{pmatrix} 17 - \lambda & 4 \\ 4 & 17 - \lambda \end{pmatrix} = (17 - \lambda)^2 - 16 = \lambda^2 - 34\lambda + 273 = (\lambda - 21)(\lambda - 13)$.
 
-So $\sigma_1^2 = 21$ and $\sigma_2^2 = 13$Giving $\sigma_1 = \sqrt{21}$$\sigma_2 = \sqrt{13}$.
+So $\sigma_1^2 = 21$ and $\sigma_2^2 = 13$Giving $\sigma_1 = \sqrt{21}$, $\sigma_2 = \sqrt{13}$.
 
 **Step 3:** Eigenvectors of $A^T A$. For $\lambda = 21$: $(17 - 21)v_1 + 4v_2 = 0$So $v_1 = v_2$.
 Normalised: $\mathbf{v}_1 = \frac{1}{\sqrt{2}}(1, 1)^T$.
@@ -1798,7 +1798,7 @@ $= 2\lambda^2 - 6\lambda + 2 - \lambda^3 + 3\lambda^2 - \lambda - 3 + \lambda = 
 Setting to zero and solving: $\lambda^3 - 5\lambda^2 + 6\lambda + 1 = 0$. Testing $\lambda = 3$:
 $27 - 45 + 18 + 1 = 1 \neq 0$. Testing $\lambda = 4$: $64 - 80 + 24 + 1 = 9 \neq 0$. By numerical
 methods or the rational root theorem (no rational roots), the eigenvalues are approximately
-$\lambda_1 \approx 5.25$$\lambda_2 \approx 1.31$$\lambda_3 \approx -0.56$.
+$\lambda_1 \approx 5.25$, $\lambda_2 \approx 1.31$, $\lambda_3 \approx -0.56$.
 
 Wait, $A^T A$ should be positive semi-definite, so all eigenvalues should be non-negative. Let me
 recompute.
@@ -1817,7 +1817,7 @@ Testing $\lambda = 1$: $1 - 5 + 6 - 3 = -1 \neq 0$. Testing $\lambda = 3$:
 $27 - 45 + 18 - 3 = -3 \neq 0$.
 
 By the trigonometric method for cubics or numerical approximation,
-$\lambda_1 \approx 3.35$$\lambda_2 \approx 1.35$$\lambda_3 \approx 0.30$.
+$\lambda_1 \approx 3.35$, $\lambda_2 \approx 1.35$, $\lambda_3 \approx 0.30$.
 
 The best rank-1 approximation uses only $\sigma_1 = \sqrt{\lambda_1} \approx 1.83$ and its
 corresponding singular vectors, yielding $A_1 = \sigma_1 \mathbf{u}_1 \mathbf{v}_1^T$ with error
@@ -1909,7 +1909,7 @@ $\mathcal{P}_2(\mathbb{R})$.
 <summary>Solution</summary>
 
 Suppose $a(1 - x) + b(1 + x) + cx^2 = 0$ as a polynomial. Then $(a + b) + (-a + b)x + cx^2 = 0$So
-$a + b = 0$$-a + b = 0$$c = 0$. From the first two equations: $2a = 0$So $a = 0$Then $b = 0$. Since
+$a + b = 0$, $-a + b = 0$, $c = 0$. From the first two equations: $2a = 0$So $a = 0$Then $b = 0$. Since
 $a = b = c = 0$The set is linearly independent.
 
 _If you get this wrong, revise: Section 2.1 (Linear Independence)._
@@ -1993,8 +1993,8 @@ $$A = \begin{pmatrix} 2 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 3 \end{pmatrix}$$
 
 $\det(A) = 2(3 - 0) - 0 + 1(1 - 0) = 6 + 1 = 7$.
 
-Cofactors: $C_{11} = +3$$C_{12} = -3$$C_{13} = +1$ $C_{21} = +1$$C_{22} = +6$$C_{23} = -2$
-$C_{31} = -1$$C_{32} = +1$$C_{33} = +2$
+Cofactors: $C_{11} = +3$, $C_{12} = -3$, $C_{13} = +1$ $C_{21} = +1$, $C_{22} = +6$, $C_{23} = -2$
+$C_{31} = -1$, $C_{32} = +1$, $C_{33} = +2$
 
 $\mathrm{adj}(A) = \begin{pmatrix} 3 & 1 & -1 \\ -3 & 6 & 1 \\ 1 & -2 & 2 \end{pmatrix}$
 
@@ -2018,7 +2018,7 @@ $$\xrightarrow{R_3 - 3R_2} \begin{pmatrix} 1 & 2 & -1 & 3 \\ 0 & 1 & 3 & 2 \\ 0 
 From row 3: $-6z = -1$So $z = 1/6$. From row 2: $y + 3(1/6) = 2$So $y = 3/2$. From row 1:
 $x + 2(3/2) - 1/6 = 3$So $x = 3 - 3 + 1/6 = 1/6$.
 
-Solution: $x = 1/6$$y = 3/2$$z = 1/6$.
+Solution: $x = 1/6$, $y = 3/2$, $z = 1/6$.
 
 _If you get this wrong, revise: Section 4.1 (Gaussian Elimination)._
 
@@ -2155,7 +2155,7 @@ Find the matrix of $T$ with respect to the standard bases, and verify the rank-n
 <details>
 <summary>Solution</summary>
 
-$T(1, 0, 0) = (1, 0)$$T(0, 1, 0) = (1, 1)$$T(0, 0, 1) = (0, 1)$.
+$T(1, 0, 0) = (1, 0)$, $T(0, 1, 0) = (1, 1)$, $T(0, 0, 1) = (0, 1)$.
 
 $[T]_{\mathcal{E}} = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \end{pmatrix}$.
 

@@ -777,7 +777,7 @@ Three processes and one resource type with 10 instances:
 
 Available = $10 - (5 + 2 + 2) = 1$.
 
-$\mathrm{Request_0} = 4$$\mathrm{Request_1} = 2$$\mathrm{Request_2} = 5$.
+$\mathrm{Request_0} = 4$, $\mathrm{Request_1} = 2$, $\mathrm{Request_2} = 5$.
 
 _Detection:_
 
@@ -1889,7 +1889,7 @@ Granted.
 
 1. $\mathrm{Request_0} = (1,0,0) \leq \mathrm{Need_0} = (2,2,1)$. OK.
 2. $\mathrm{Request_0} = (1,0,0) \leq A = (3,2,1)$. OK.
-3. Pretend to allocate: $A = (2,2,1)$$\mathrm{Alloc_0} = (2,0,0)$$\mathrm{Need_0} = (1,2,1)$.
+3. Pretend to allocate: $A = (2,2,1)$, $\mathrm{Alloc_0} = (2,0,0)$, $\mathrm{Need_0} = (1,2,1)$.
 4. Safety: Work = $(2,2,1)$.
 
 - $P_0$: $(1,2,1) \leq (2,2,1)$. Execute. Work = $(4,2,1)$.
