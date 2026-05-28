@@ -33,6 +33,7 @@ const pluginId = `university-${subject}`;
 const outFile = path.resolve('docusaurus-university-' + subject + '.config.ts');
 
 const config = `// Auto-generated config for ${subject} parallel build
+import path from 'path';
 import type * as Preset from '@docusaurus/preset-classic';
 import {
   createAlgoliaConfig,
