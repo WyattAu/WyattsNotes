@@ -14,6 +14,7 @@ on:
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'scripts/escape-latex-braces.js'
   workflow_dispatch:
 
 concurrency:
@@ -21,10 +22,34 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    name: Build and Deploy University
+  build:
+    name: Build ${{ matrix.subject }}
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 180
+    strategy:
+      matrix:
+        include:
+          - subject: maths
+            docs_path: docs/docs_university/mathematics
+            extra_plugin: |
+              ['@docusaurus/plugin-content-docs', {
+                id: 'university-intro',
+                path: 'docs/docs_university',
+                routeBasePath: '/docs',
+                include: ['intro.md'],
+                sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+                editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
+                ...createCommonDocsPluginConfig(true),
+              }]
+          - subject: physics
+            docs_path: docs/docs_university/physics
+            extra_plugin: ""
+          - subject: computing
+            docs_path: docs/docs_university/computing
+            extra_plugin: ""
+          - subject: admissions
+            docs_path: docs/docs_university/admissions
+            extra_plugin: ""
     steps:
       - uses: actions/checkout@v6
 
@@ -36,7 +61,6 @@ jobs:
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
-          free -h
 
       - uses: pnpm/action-setup@v6
 
@@ -48,26 +72,198 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Escape LaTeX braces for MDX
-        run: node scripts/escape-latex-braces.js docs/docs_university
+        run: node scripts/escape-latex-braces.js ${{ matrix.docs_path }}
 
-      - name: Cache Docusaurus build
-        uses: actions/cache@v4
-        with:
-          path: node_modules/.cache/docusaurus
-          key: docusaurus-university-${ hashFiles('pnpm-lock.yaml') }
-          restore-keys: |
-            docusaurus-university-
+      - name: Generate per-plugin Docusaurus config
+        run: |
+          cat > /tmp/docusaurus-university-${{ matrix.subject }}.config.ts << 'CONFIG'
+          import type * as Preset from '@docusaurus/preset-classic';
+          import {
+            createAlgoliaConfig,
+            createCommonDocsPluginConfig,
+            sharedColorMode,
+            sharedConfig,
+            sharedMermaid,
+            sharedPlugins,
+            sharedPrism,
+            sharedThemeConfigMetadata,
+            sharedZoom,
+          } from './docusaurus.shared.config';
+
+          const subject = '${{ matrix.subject }}';
+          const docsPath = '${{ matrix.docs_path }}';
+          const routeBase = subject === 'maths' ? '/docs/mathematics' :
+                            subject === 'physics' ? '/docs/physics' :
+                            subject === 'computing' ? '/docs/computing' :
+                            '/docs/admissions';
+          const pluginId = 'university-' + subject;
+
+          const plugins: any[] = [
+            ...sharedPlugins('wyattsnotes-university'),
+            ['@docusaurus/plugin-content-docs', {
+              id: pluginId,
+              path: docsPath,
+              routeBasePath: routeBase,
+              sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
+              editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/' + docsPath + '/{dir}',
+              ...createCommonDocsPluginConfig(true),
+            }],
+          ];
+
+          ${{ matrix.extra_plugin }}
+
+          const config = {
+            ...sharedConfig({
+              title: "Wyatt's Notes — University",
+              tagline: 'Mathematics, Physics, and Computing for Undergraduates',
+              url: 'https://university.wyattau.com',
+              algoliaIndexName: 'wyattsnotes_university',
+              socialCard: '/img/social-cards/university.png',
+            }),
+            future: {
+              faster: true,
+              v4: {
+                removeLegacyPostBuildHeadAttribute: true,
+              },
+            },
+            plugins,
+            themeConfig: {
+              algolia: createAlgoliaConfig('wyattsnotes_university'),
+              metadata: sharedThemeConfigMetadata,
+              image: 'img/WyattsNotes/WyattsNotesSocialCard.jpg',
+              navbar: {
+                title: "Wyatt's Notes",
+                logo: {
+                  alt: "Wyatt's Notes",
+                  src: 'img/WyattsNotes/WyattsNotesLogo.svg',
+                  srcDark: 'img/WyattsNotes/WyattsNotesLogo.svg',
+                },
+                items: [
+                  { type: 'search', position: 'right' },
+                  { to: '/docs/intro', label: 'University', position: 'left' },
+                  { href: 'https://academics.wyattau.com', label: 'Academics', position: 'right' },
+                  { href: 'https://alevel.wyattau.com', label: 'A-Levels', position: 'right' },
+                  { href: 'https://qualifications.wyattau.com', label: 'Qualifications', position: 'right' },
+                  { href: 'https://programming.wyattau.com', label: 'Programming', position: 'right' },
+                  { href: 'https://wyattsnotes.wyattau.com', label: 'Main Site', position: 'right' },
+                  { href: 'https://github.com/WyattAu/WyattsNotes', label: 'GitHub', position: 'right' },
+                ],
+              },
+              colorMode: sharedColorMode,
+              footer: {
+                style: 'dark',
+                links: [
+                  {
+                    title: 'University Subjects',
+                    items: [
+                      { label: 'Mathematics', to: '/docs/mathematics/linear-algebra' },
+                      { label: 'Physics', to: '/docs/physics/classical-mechanics' },
+                      { label: 'Computing', to: '/docs/computing/algorithms-and-data-structures' },
+                    ],
+                  },
+                  {
+                    title: 'More',
+                    items: [
+                      { label: 'Academics', href: 'https://academics.wyattau.com' },
+                      { label: 'A-Levels', href: 'https://alevel.wyattau.com' },
+                      { label: 'Qualifications', href: 'https://qualifications.wyattau.com' },
+                      { label: 'Programming', href: 'https://programming.wyattau.com' },
+                      { label: 'Main Site', href: 'https://wyattsnotes.wyattau.com' },
+                      { label: 'GitHub', href: 'https://github.com/WyattAu/WyattsNotes' },
+                      { label: 'Donate', href: 'https://gravatar.com/wyattau' },
+                    ],
+                  },
+                ],
+                copyright: '\u00A9 ' + new Date().getFullYear() + ' Wyatt Au. Content is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.',
+              },
+              prism: sharedPrism,
+              mermaid: sharedMermaid,
+              zoom: sharedZoom,
+            },
+          } satisfies Preset.ThemeConfig;
+
+          export default config;
+          CONFIG
 
       - name: Build
-        run: npx docusaurus build --config docusaurus.university.config.ts
+        run: npx docusaurus build --config /tmp/docusaurus-university-${{ matrix.subject }}.config.ts
         env:
           NODE_OPTIONS: --max-old-space-size=11264
-          DISABLE_LUNR: 'true'
+          DISABLE_LUNRACE: 'true'
           GENERATE_SOURCEMAP: 'false'
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
 
-      - name: Remove SSR bundle (Cloudflare Pages static-only, 25 MiB file limit)
+      - name: Remove SSR bundle
         run: rm -rf build/__server
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: university-build-${{ matrix.subject }}
+          path: build/
+          retention-days: 1
+
+  merge-and-deploy:
+    name: Merge and Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: [build]
+    if: success()
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download maths build (base with intro + shared assets)
+        uses: actions/download-artifact@v4
+        with:
+          name: university-build-maths
+          path: build-maths
+
+      - name: Download physics build
+        uses: actions/download-artifact@v4
+        with:
+          name: university-build-physics
+          path: build-physics
+
+      - name: Download computing build
+        uses: actions/download-artifact@v4
+        with:
+          name: university-build-computing
+          path: build-computing
+
+      - name: Download admissions build
+        uses: actions/download-artifact@v4
+        with:
+          name: university-build-admissions
+          path: build-admissions
+
+      - name: Merge builds
+        run: |
+          # Use maths as the base (has intro page + shared theme assets)
+          mv build-maths build
+
+          # Merge per-subject page directories from other builds
+          # Each build puts its pages under build/docs/<routeBasePath>/
+          # These directories don't overlap, so we can safely copy them
+          cp -rn build-physics/docs build/ 2>/dev/null || true
+          cp -rn build-computing/docs build/ 2>/dev/null || true
+          cp -rn build-admissions/docs build/ 2>/dev/null || true
+
+          # Verify structure
+          echo "=== Build directory structure ==="
+          find build/docs -maxdepth 2 -type d | sort | head -30
+          echo "=== Total HTML pages ==="
+          find build/docs -name '*.html' | wc -l
+
+      - name: Remove SSR bundle
+        run: rm -rf build/__server
+
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
 
       - name: Install wrangler
         run: pnpm add -D wrangler
