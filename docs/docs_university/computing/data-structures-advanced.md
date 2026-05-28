@@ -32,13 +32,13 @@ red. So the length of any root-to-leaf path is at most twice the black-height $b
 now bound $bh$ in terms of $n$.
 
 Consider the subtree rooted at any node $x$. If this subtree has height $h_x$Then it contains at
-least $2^◆LB◆bh(x)◆RB◆ - 1$ internal nodes (proof by induction on $h_x$: if $x$ is a leaf, it has
+least $2^{bh(x)} - 1$ internal nodes (proof by induction on $h_x$: if $x$ is a leaf, it has
 $0 = 2^0 - 1$ internal nodes; otherwise, each child has black-height at least $bh(x) - 1$ if it is
-red, or $bh(x)$ if it is black, so each child has at least $2^◆LB◆bh(x)-1◆RB◆ - 1$ internal nodes, giving
-at least $2(2^◆LB◆bh(x)-1◆RB◆ - 1) + 1 = 2^◆LB◆bh(x)◆RB◆ - 1$ for $x$).
+red, or $bh(x)$ if it is black, so each child has at least $2^{bh(x)-1} - 1$ internal nodes, giving
+at least $2(2^{bh(x)-1} - 1) + 1 = 2^{bh(x)} - 1$ for $x$).
 
-Therefore $n \geq 2^◆LB◆bh(\mathrm◆LB◆root◆RB◆)◆RB◆ - 1$Giving $bh(\mathrm◆LB◆root◆RB◆) \leq \log_2(n+1)$. Since
-$h \leq 2 \cdot bh(\mathrm◆LB◆root◆RB◆)$We have $h \leq 2\log_2(n+1)$. $\blacksquare$
+Therefore $n \geq 2^{bh(\mathrm{root})} - 1$Giving $bh(\mathrm{root}) \leq \log_2(n+1)$. Since
+$h \leq 2 \cdot bh(\mathrm{root})$We have $h \leq 2\log_2(n+1)$. $\blacksquare$
 
 **Corollary.** Search, insert, and delete in a red-black tree take $O(\log n)$ time.
 
@@ -263,18 +263,18 @@ A **B-tree of minimum degree $t$** (where $t \geq 2$) is a rooted tree satisfyin
 3. Every internal node with $k$ keys has exactly $k + 1$ children.
 4. All leaves appear at the same depth.
 
-**Theorem 1.4.** A B-tree of height $h$ with minimum degree $t \geq 2$ has at least $2t^◆LB◆h-1◆RB◆$
-leaves (for $h \geq 1$) and stores at least $n \geq 2t^◆LB◆h-1◆RB◆ - 1$ keys.
+**Theorem 1.4.** A B-tree of height $h$ with minimum degree $t \geq 2$ has at least $2t^{h-1}$
+leaves (for $h \geq 1$) and stores at least $n \geq 2t^{h-1} - 1$ keys.
 
 _Proof._ The root has at least 2 children (since it has at least 1 key). Every internal node at
 depth $\geq 1$ has at least $t$ children. Therefore the number of nodes at depth $d$ is at least
-$2t^◆LB◆d-1◆RB◆$ for $d \geq 1$. The number of leaves (at depth $h$) is at least $2t^◆LB◆h-1◆RB◆$. Each leaf has
-at least $t - 1$ keys, so $n \geq 2t^◆LB◆h-1◆RB◆(t-1) \geq 2t^◆LB◆h-1◆RB◆ - 1$ (for $t \geq 2$). $\blacksquare$
+$2t^{d-1}$ for $d \geq 1$. The number of leaves (at depth $h$) is at least $2t^{h-1}$. Each leaf has
+at least $t - 1$ keys, so $n \geq 2t^{h-1}(t-1) \geq 2t^{h-1} - 1$ (for $t \geq 2$). $\blacksquare$
 
 **Corollary.** The height of a B-tree storing $n$ keys is
-$h \leq \log_t \frac◆LB◆n+1◆RB◆◆LB◆2◆RB◆ = O(\log_t n)$.
+$h \leq \log_t \frac{n+1}{2} = O(\log_t n)$.
 
-For example, with $t = 1001$ and $n = 10^9$, $h \leq \log_◆LB◆1001◆RB◆(5 \times 10^8) \approx 2.8$So at most
+For example, with $t = 1001$ and $n = 10^9$, $h \leq \log_{1001}(5 \times 10^8) \approx 2.8$So at most
 3 disk accesses.
 
 #### 1.2.2 B-Tree Operations
@@ -454,7 +454,7 @@ prefix, and edges are labelled with characters.
 $|\Sigma|$ children pointers.
 
 **Theorem 1.7.** A trie storing $n$ distinct strings over alphabet $\Sigma$ has at most
-$n \cdot L_◆LB◆\max◆RB◆$ nodes, where $L_◆LB◆\max◆RB◆$ is the maximum string length.
+$n \cdot L_{\max}$ nodes, where $L_{\max}$ is the maximum string length.
 
 #### 1.3.1 Compressed Tries (Radix Trees)
 
@@ -538,14 +538,14 @@ called **splaying**.
    again.
 
 **Theorem 1.8 (Static Optimality).** The total time for a sequence of accesses in a splay tree is
-$O\left(\sum_◆LB◆i◆RB◆ \left(1 + \log \frac◆LB◆W◆RB◆◆LB◆w_i◆RB◆\right)\right)$ where $W = \sum_i w_i$ is the total
+$O\left(\sum_{i} \left(1 + \log \frac{W}{w_i}\right)\right)$ where $W = \sum_i w_i$ is the total
 access count and $w_i$ is the number of accesses of the $i$-th element.
 
 This means splay trees are asymptotically as fast as a static optimal binary search tree for any
 access sequence.
 
 **Theorem 1.9 (Static Finger).** The total access time is
-$O\left(n \log n + n \log \min_◆LB◆j◆RB◆ |\mathrm◆LB◆key_i◆RB◆ - \mathrm◆LB◆key_j◆RB◆|\right)$ where $j$ is a fixed
+$O\left(n \log n + n \log \min_{j} |\mathrm{key_i} - \mathrm{key_j}|\right)$ where $j$ is a fixed
 "finger" position.
 
 **Theorem 1.10 (Working Set).** The access time for element $i$ is $O(\log(t_i))$ where $t_i$ is the
@@ -824,7 +824,7 @@ A **binomial heap** is a collection of binomial trees satisfying the heap proper
 merge in $O(\log n)$ and insert, extract-min, and decrease-key in $O(\log n)$.
 
 **Binomial tree $B_k$.** Defined recursively: $B_0$ is a single node. $B_k$ is formed by linking two
-$B_◆LB◆k-1◆RB◆$ trees, making one the leftmost child of the other's root.
+$B_{k-1}$ trees, making one the leftmost child of the other's root.
 
 **Properties of $B_k$:**
 
@@ -833,14 +833,14 @@ $B_◆LB◆k-1◆RB◆$ trees, making one the leftmost child of the other's root
 | Number of nodes                      | $2^k$          |
 | Height                               | $k$            |
 | Number of children of root           | $k$            |
-| Minimum number of nodes at depth $d$ | $\binom◆LB◆k◆RB◆◆LB◆d◆RB◆$ |
+| Minimum number of nodes at depth $d$ | $\binom{k}{d}$ |
 
 **Theorem 2.1.** A binomial heap with $n$ nodes contains at most $\lfloor \log_2 n \rfloor + 1$
 binomial trees.
 
 _Proof._ The binary representation of $n$ determines which binomial trees are present. If
-$n = \sum_◆LB◆i◆RB◆ 2^◆LB◆b_i◆RB◆$ (binary decomposition), then the heap contains exactly the trees
-$B_◆LB◆b_1◆RB◆, B_◆LB◆b_2◆RB◆, \ldots$. The number of terms is at most $\lfloor \log_2 n \rfloor + 1$.
+$n = \sum_{i} 2^{b_i}$ (binary decomposition), then the heap contains exactly the trees
+$B_{b_1}, B_{b_2}, \ldots$. The number of terms is at most $\lfloor \log_2 n \rfloor + 1$.
 $\blacksquare$
 
 **Operations:**
@@ -859,21 +859,21 @@ Create two binomial heaps and merge them.
 Heap $H_1$: insert 3, 7, 1.
 
 - Insert 3: $H_1 = \{B_0: 3\}$
-- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text◆LB◆root◆RB◆  3, \text◆LB◆child◆RB◆  7\}$
+- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text{root}  3, \text{child}  7\}$
 - Insert 1: $H_1 = \{B_1: (3,7)\} \cup \{B_0: 1\}$. No linking (different degrees).
   $H_1 = \{B_0: 1, B_1: (3,7)\}$
 
 Heap $H_2$: insert 5, 2.
 
 - Insert 5: $H_2 = \{B_0: 5\}$
-- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text◆LB◆root◆RB◆  2, \text◆LB◆child◆RB◆  5\}$
+- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text{root}  2, \text{child}  5\}$
 
 Merge $H_1$ and $H_2$: $\{B_0: 1, B_1: (3,7)\} \cup \{B_1: (2,5)\}$.
 
 Both have $B_1$ trees. Link them (root 2 < root 3, so 3 becomes child of 2): $B_2$: root 2,
 children: 3 (with child 7), 5.
 
-Final merged heap: $\{B_0: 1, B_2: \text◆LB◆root◆RB◆  2, \text◆LB◆children◆RB◆  [3, 5], \text◆LB◆3◆RB◆'s child  7\}$
+Final merged heap: $\{B_0: 1, B_2: \text{root}  2, \text{children}  [3, 5], \text{3}'s child  7\}$
 
 Minimum element: 1 (root of $B_0$).
 
@@ -906,12 +906,12 @@ same degree are linked.
 **Theorem 2.2.** The amortised cost of extract-min is $O(D(n))$ where $D(n)$ is the maximum degree
 of any node in the Fibonacci heap.
 
-**Theorem 2.3.** $D(n) = O(\log_\phi n)$ where $\phi = (1 + \sqrt◆LB◆5◆RB◆)/2$ is the golden ratio.
+**Theorem 2.3.** $D(n) = O(\log_\phi n)$ where $\phi = (1 + \sqrt{5})/2$ is the golden ratio.
 
 _Proof (outline)._ Define the potential $\Phi = t(H) + 2m(H)$ where $t(H)$ is the number of trees
 and $m(H)$ is the number of marked nodes. Show that each operation's amortised cost is bounded. For
 decrease-key, the actual cost is $O(c)$ where $c$ is the number of cascading cuts. The change in
-potential is at most $c + 2 - 2m'(H) \cdot (\text◆LB◆terms◆RB◆ cancel)$Giving $O(1)$ amortised.
+potential is at most $c + 2 - 2m'(H) \cdot (\text{terms} cancel)$Giving $O(1)$ amortised.
 $\blacksquare$
 
 :::caution Common Pitfall Fibonacci heaps have excellent amortised bounds but poor constant factors
@@ -951,15 +951,15 @@ the "original pairing heap" and gave a $\Omega(\log \log n)$ lower bound for a s
 The **incidence matrix** $M$ of an undirected graph $G = (V, E)$ with $n$ vertices and $m$ edges is
 an $n \times m$ matrix where:
 
-$$M_◆LB◆v,e◆RB◆ = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if◆RB◆ vertex  v \text◆LB◆ is◆RB◆ incident to edge  e \\ 0 & \text◆LB◆otherwise◆RB◆ \end◆LB◆cases◆RB◆$$
+$$M_{v,e} = \begin{cases} 1 & \text{if} vertex  v \text{ is} incident to edge  e \\ 0 & \text{otherwise} \end{cases}$$
 
-For directed graphs, $M_◆LB◆v,e◆RB◆ = 1$ if $v$ is the tail of $e$, $M_◆LB◆v,e◆RB◆ = -1$ if $v$ is the head of
+For directed graphs, $M_{v,e} = 1$ if $v$ is the tail of $e$, $M_{v,e} = -1$ if $v$ is the head of
 $e$And $0$ otherwise.
 
 **Properties:**
 
 - Space: $O(nm)$.
-- The rank of $M$ over $\mathbb◆LB◆R◆RB◆$ is $n - c$ where $c$ is the number of connected components.
+- The rank of $M$ over $\mathbb{R}$ is $n - c$ where $c$ is the number of connected components.
 - The number of spanning trees of $G$ equals any cofactor of $MM^T$ (Kirchhoff's matrix tree
   theorem).
 
@@ -968,8 +968,8 @@ $e$And $0$ otherwise.
 Many graphs are not stored explicitly but defined by a rule or function. Examples:
 
 - **State space graphs:** Each vertex is a configuration; edges are valid transitions. Example: the
-  15-puzzle has $16!/2 \approx 10^◆LB◆13◆RB◆$ states.
-- **Geometric graphs:** Vertices are points in $\mathbb◆LB◆R◆RB◆^d$; edges connect nearby points. Example:
+  15-puzzle has $16!/2 \approx 10^{13}$ states.
+- **Geometric graphs:** Vertices are points in $\mathbb{R}^d$; edges connect nearby points. Example:
   Delaunay triangulation.
 - **Social networks:** Vertices are users; edges are friendships.
 
@@ -1013,12 +1013,12 @@ Total space: $(|V|+1) + 2|E| = 5 + 12 = 17$ integers.
 The **inverse Ackermann function** $\alpha(n)$ is defined in terms of a rapidly growing function
 $A_k(j)$:
 
-$$A_k(j) = \begin◆LB◆cases◆RB◆ 2j & \text◆LB◆if◆RB◆  k = 0 \\ 0 & \text◆LB◆if◆RB◆  j = 0 \text◆LB◆ and◆RB◆  k \geq 1 \\ A_◆LB◆k-1◆RB◆(A_k(j-1)) & \text◆LB◆if◆RB◆  j \geq 1 \text◆LB◆ and◆RB◆  k \geq 1 \end◆LB◆cases◆RB◆$$
+$$A_k(j) = \begin{cases} 2j & \text{if}  k = 0 \\ 0 & \text{if}  j = 0 \text{ and}  k \geq 1 \\ A_{k-1}(A_k(j-1)) & \text{if}  j \geq 1 \text{ and}  k \geq 1 \end{cases}$$
 
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
 **Key values:**
-$\alpha(1) = 0$$\alpha(2) = 1$$\alpha(4) = 2$$\alpha(16) = 3$$\alpha(2^◆LB◆65536◆RB◆) = 4$.
+$\alpha(1) = 0$$\alpha(2) = 1$$\alpha(4) = 2$$\alpha(16) = 3$$\alpha(2^{65536}) = 4$.
 
 For all practical purposes, $\alpha(n) \leq 4$.
 
@@ -1033,7 +1033,7 @@ Define the "level" of a node based on its rank. The key idea is to partition the
 and bound the total charges.
 
 Let $A_k(j)$ be as defined above. Node $x$ has **level** $\ell$ if
-$\text◆LB◆rank◆RB◆(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_◆LB◆\ell+1◆RB◆(\lfloor \log_2 n \rfloor))$.
+$\text{rank}(x) \in [A_\ell(\lfloor \log_2 n \rfloor), A_{\ell+1}(\lfloor \log_2 n \rfloor))$.
 
 For a Find operation along a path $x_1, x_2, \ldots, x_k$Path compression makes all nodes point to
 the root. We charge the cost of the Find as follows:
@@ -1067,14 +1067,14 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 **Structure.** An augmented BST where:
 
 - In-order traversal of keys gives the intervals sorted by their left endpoint (or by midpoint).
-- Each node stores a key $x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$ (the median endpoint) and a max-endpoint for the subtree.
+- Each node stores a key $x_{\mathrm{mid}}$ (the median endpoint) and a max-endpoint for the subtree.
 
-**Query algorithm:** Starting at the root, compare $q$ with $x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$:
+**Query algorithm:** Starting at the root, compare $q$ with $x_{\mathrm{mid}}$:
 
-1. If $q < x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$: report all intervals in the left subtree that overlap $q$ (check
+1. If $q < x_{\mathrm{mid}}$: report all intervals in the left subtree that overlap $q$ (check
    max-endpoint), then recurse into the left subtree. Also check if any interval stored at the
    current node overlaps $q$.
-2. If $q \geq x_◆LB◆\mathrm◆LB◆mid◆RB◆◆RB◆$: similar for the right subtree.
+2. If $q \geq x_{\mathrm{mid}}$: similar for the right subtree.
 
 **Theorem 5.1.** Query in an interval tree takes $O(\log n + k)$ time where $k$ is the number of
 reported intervals.
@@ -1084,7 +1084,7 @@ reported intervals.
 A **segment tree** stores an array $A[1..n]$ and supports:
 
 - Point update: set $A[i] = v$. $O(\log n)$.
-- Range query: compute $\mathrm◆LB◆combine◆RB◆(A[l], A[l+1], \ldots, A[r])$ for any associative operation
+- Range query: compute $\mathrm{combine}(A[l], A[l+1], \ldots, A[r])$ for any associative operation
   (sum, min, max, gcd). $O(\log n)$.
 
 **Structure.** A binary tree where:
@@ -1099,7 +1099,7 @@ A **segment tree** stores an array $A[1..n]$ and supports:
 range query in $O(\log n)$ time each.
 
 _Proof._ The segment tree is a complete binary tree of height $\lceil \log_2 n \rceil$. The number
-of nodes is at most $2 \cdot 2^◆LB◆\lceil \log_2 n \rceil + 1◆RB◆ \leq 4n$. Each update or query visits at
+of nodes is at most $2 \cdot 2^{\lceil \log_2 n \rceil + 1} \leq 4n$. Each update or query visits at
 most $2 \log_2 n$ nodes (one per level, on each side). $\blacksquare$
 
 <details>
@@ -1148,14 +1148,14 @@ A **Fenwick tree** (BIT) is a space-efficient alternative to the segment tree fo
 and point updates.
 
 **Structure.** An array `BIT[1..n]` where `BIT[i]` stores the sum of a specific range ending at
-index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm◆LB◆lsb◆RB◆(i) = 2^k$Then
+index $i$. The range is determined by the lowest set bit of $i$: if $\mathrm{lsb}(i) = 2^k$Then
 `BIT[i]` stores the sum of $A[i - 2^k + 1..i]$.
 
 **Operations:**
 
-- **Prefix sum** $\sum_◆LB◆j=1◆RB◆^◆LB◆i◆RB◆ A[j]$: Traverse `BIT` by removing lowest set bits. $O(\log n)$.
+- **Prefix sum** $\sum_{j=1}^{i} A[j]$: Traverse `BIT` by removing lowest set bits. $O(\log n)$.
 - **Point update** $A[i] += \delta$: Traverse `BIT` by adding lowest set bits. $O(\log n)$.
-- **Range sum** $A[l..r]$: $\mathrm◆LB◆prefix◆RB◆(r) - \mathrm◆LB◆prefix◆RB◆(l-1)$. $O(\log n)$.
+- **Range sum** $A[l..r]$: $\mathrm{prefix}(r) - \mathrm{prefix}(l-1)$. $O(\log n)$.
 
 **Advantages over segment trees:** Simpler to implement, lower constant factor, $O(n)$ space
 (exactly $n+1$).
@@ -1173,7 +1173,7 @@ Array $A = [3, 1, 4, 1, 5, 9, 2, 6]$$n = 8$.
 
 Binary representations: 1=001, 2=010, 3=011, 4=100, 5=101, 6=110, 7=111, 8=1000.
 
-`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm◆LB◆lsb◆RB◆(i)$.
+`BIT[i]` stores sum of $A[i - 2^k + 1..i]$ where $k = \mathrm{lsb}(i)$.
 
 - BIT[1] = $A[1]$ = 3 (lsb=1, range [1,1])
 - BIT[2] = $A[1] + A[2]$ = 4 (lsb=2, range [1,2])
@@ -1200,9 +1200,9 @@ Update $A[3] += 5$: Update BIT[3] += 5 (BIT[3] = 9). Then BIT[4] += 5 (BIT[4] = 
 
 ### 6.1 Suffix Arrays
 
-A **suffix array** $\mathrm◆LB◆SA◆RB◆$ of a string $S$ of length $n$ is a permutation of
+A **suffix array** $\mathrm{SA}$ of a string $S$ of length $n$ is a permutation of
 $\{0, 1, \ldots, n-1\}$ such that
-$S[\mathrm◆LB◆SA◆RB◆[0]..] < S[\mathrm◆LB◆SA◆RB◆[1]..] < \cdots < S[\mathrm◆LB◆SA◆RB◆[n-1]..]$ (lexicographic order of
+$S[\mathrm{SA}[0]..] < S[\mathrm{SA}[1]..] < \cdots < S[\mathrm{SA}[n-1]..]$ (lexicographic order of
 suffixes).
 
 **Construction:** The most efficient algorithm (SA-IS) constructs the suffix array in $O(n)$ time. A
@@ -1256,12 +1256,12 @@ Sorted suffixes: 6: $
 1: anana$ 0: banana$
 4: na$ 2: nana$
 
-Suffix array: $\mathrm◆LB◆SA◆RB◆ = [6, 5, 3, 1, 0, 4, 2]$
+Suffix array: $\mathrm{SA} = [6, 5, 3, 1, 0, 4, 2]$
 
-LCP array (LCP with previous suffix): $\mathrm◆LB◆LCP◆RB◆[0] = 0$ (undefined for first)
-$\mathrm◆LB◆LCP◆RB◆[1] = 0$ (LCP("$", "a$") = 0) $\mathrm◆LB◆LCP◆RB◆[2] = 1$ (LCP("a$", "ana$") = 1)
-$\mathrm◆LB◆LCP◆RB◆[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm◆LB◆LCP◆RB◆[4] = 0$ (LCP("anana$", "banana$") = 0)
-$\mathrm◆LB◆LCP◆RB◆[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm◆LB◆LCP◆RB◆[6] = 2$ (LCP("na$", "nana$") = 2)
+LCP array (LCP with previous suffix): $\mathrm{LCP}[0] = 0$ (undefined for first)
+$\mathrm{LCP}[1] = 0$ (LCP("$", "a$") = 0) $\mathrm{LCP}[2] = 1$ (LCP("a$", "ana$") = 1)
+$\mathrm{LCP}[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm{LCP}[4] = 0$ (LCP("anana$", "banana$") = 0)
+$\mathrm{LCP}[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm{LCP}[6] = 2$ (LCP("na$", "nana$") = 2)
 
 LCP array: $[0, 0, 1, 3, 0, 0, 2]$
 
@@ -1294,10 +1294,10 @@ A good potential function satisfies:
 
 | Data structure | Potential function $\Phi$                                        |
 | -------------- | ---------------------------------------------------------------- |
-| Dynamic array  | $\Phi = 2 \cdot \mathrm◆LB◆num◆RB◆ - \mathrm◆LB◆size◆RB◆$ (credit per element) |
+| Dynamic array  | $\Phi = 2 \cdot \mathrm{num} - \mathrm{size}$ (credit per element) |
 | Binary counter | $\Phi =$ number of 1-bits                                        |
 | Stack          | $\Phi =$ number of elements                                      |
-| Splay tree     | $\Phi = \sum_x \log(\mathrm◆LB◆size◆RB◆(x))$                            |
+| Splay tree     | $\Phi = \sum_x \log(\mathrm{size}(x))$                            |
 | Union-Find     | $\Phi$ based on node levels                                      |
 
 ### 7.3 Limitations of Amortised Analysis

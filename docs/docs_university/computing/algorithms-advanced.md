@@ -19,18 +19,18 @@ slug: algorithms-advanced
 A **flow network** is a directed graph $G = (V, E)$ with:
 
 - A **source** $s \in V$ and a **sink** $t \in V$.
-- A **capacity function** $c : E \to \mathbb◆LB◆R◆RB◆_◆LB◆\geq 0◆RB◆$.
+- A **capacity function** $c : E \to \mathbb{R}_{\geq 0}$.
 - For every edge $(u, v) \in E$The reverse edge $(v, u) \notin E$ (we can add reverse edges with
   capacity 0).
 
-A **flow** is a function $f : V \times V \to \mathbb◆LB◆R◆RB◆_◆LB◆\geq 0◆RB◆$ satisfying:
+A **flow** is a function $f : V \times V \to \mathbb{R}_{\geq 0}$ satisfying:
 
 1. **Capacity constraint:** $0 \leq f(u, v) \leq c(u, v)$ for all $(u, v) \in E$.
-2. **Flow conservation:** $\sum_◆LB◆v \in V◆RB◆ f(v, u) = \sum_◆LB◆v \in V◆RB◆ f(u, v)$ for all
+2. **Flow conservation:** $\sum_{v \in V} f(v, u) = \sum_{v \in V} f(u, v)$ for all
    $u \in V \setminus \{s, t\}$.
 
 The **value of a flow** is
-$|f| = \sum_◆LB◆v \in V◆RB◆ f(s, v) - \sum_◆LB◆v \in V◆RB◆ f(v, s) = \sum_◆LB◆v \in V◆RB◆ f(v, t) - \sum_◆LB◆v \in V◆RB◆ f(t, v)$.
+$|f| = \sum_{v \in V} f(s, v) - \sum_{v \in V} f(v, s) = \sum_{v \in V} f(v, t) - \sum_{v \in V} f(t, v)$.
 
 **Theorem 1.1 (Max-Flow Min-Cut).** The maximum value of a flow from $s$ to $t$ equals the minimum
 capacity of an $s$-$t$ cut.
@@ -45,7 +45,7 @@ $t \notin S$. The cut $(S, V \setminus S)$ has capacity equal to $|f^*|$:
    residual graph would provide a path from $s$ into $S$).
 
 Therefore
-$|f^*| = \sum_◆LB◆u \in S, v \in V \setminus S◆RB◆ f^*(u, v) - \sum_◆LB◆u \in S, v \in V \setminus S◆RB◆ f^*(v, u) = \sum_◆LB◆u \in S, v \in V \setminus S◆RB◆ c(u, v)$.
+$|f^*| = \sum_{u \in S, v \in V \setminus S} f^*(u, v) - \sum_{u \in S, v \in V \setminus S} f^*(v, u) = \sum_{u \in S, v \in V \setminus S} c(u, v)$.
 
 Since any flow has value at most the capacity of any cut, and we have found a cut with capacity
 $|f^*|$The maximum flow equals the minimum cut. $\blacksquare$
@@ -103,18 +103,18 @@ $O(VE^2)$. $\blacksquare$
 Find the maximum flow from $s$ to $t$ in the following network:
 
 Edges with capacities:
-$s \xrightarrow◆LB◆10◆RB◆ a$$s \xrightarrow◆LB◆8◆RB◆ b$$a \xrightarrow◆LB◆5◆RB◆ b$$a \xrightarrow◆LB◆7◆RB◆ c$$a \xrightarrow◆LB◆8◆RB◆ t$$b \xrightarrow◆LB◆10◆RB◆ c$$b \xrightarrow◆LB◆4◆RB◆ t$$c \xrightarrow◆LB◆6◆RB◆ t$.
+$s \xrightarrow{10} a$$s \xrightarrow{8} b$$a \xrightarrow{5} b$$a \xrightarrow{7} c$$a \xrightarrow{8} t$$b \xrightarrow{10} c$$b \xrightarrow{4} t$$c \xrightarrow{6} t$.
 
 _Iteration 1:_ BFS finds $s \to a \to t$. Bottleneck = 8. Push 8. Residual:
-$s \xrightarrow◆LB◆2◆RB◆ a$$a \xrightarrow◆LB◆8◆RB◆ t$ becomes $a \xrightarrow◆LB◆0◆RB◆ t$ (saturated). Reverse
-$t \xrightarrow◆LB◆8◆RB◆ a$. Flow: $|f| = 8$.
+$s \xrightarrow{2} a$$a \xrightarrow{8} t$ becomes $a \xrightarrow{0} t$ (saturated). Reverse
+$t \xrightarrow{8} a$. Flow: $|f| = 8$.
 
 _Iteration 2:_ BFS finds $s \to a \to c \to t$. Bottleneck = $\min(2, 7, 6) = 2$. Push 2. Residual:
-$s \xrightarrow◆LB◆0◆RB◆ a$ (saturated), $a \xrightarrow◆LB◆5◆RB◆ c$$c \xrightarrow◆LB◆4◆RB◆ t$. Reverse edges:
-$c \xrightarrow◆LB◆2◆RB◆ a$$t \xrightarrow◆LB◆2◆RB◆ c$. Flow: $|f| = 10$.
+$s \xrightarrow{0} a$ (saturated), $a \xrightarrow{5} c$$c \xrightarrow{4} t$. Reverse edges:
+$c \xrightarrow{2} a$$t \xrightarrow{2} c$. Flow: $|f| = 10$.
 
-_Iteration 3:_ BFS from $s$: $s \xrightarrow◆LB◆8◆RB◆ b$. From $b$: $b \xrightarrow◆LB◆5◆RB◆ a$ (reverse,
-residual 5 from $a \xrightarrow◆LB◆5◆RB◆ b$... Wait, let me track the residual graph more carefully).
+_Iteration 3:_ BFS from $s$: $s \xrightarrow{8} b$. From $b$: $b \xrightarrow{5} a$ (reverse,
+residual 5 from $a \xrightarrow{5} b$... Wait, let me track the residual graph more carefully).
 
 Actually, let me restart with a cleaner approach.
 
@@ -125,32 +125,32 @@ $a \to b$ (5), $a \to c$ (7), $a \to t$ (8), $b \to c$ (10), $b \to t$ (4), $c \
 
 **Augmentation 1:** BFS shortest path: $s \to a \to t$. Residual capacity = $\min(10, 8) = 8$.
 
-Flow after: $f(s,a) = 8$$f(a,t) = 8$. Residual: $s \xrightarrow◆LB◆2◆RB◆ a$$a \xrightarrow◆LB◆8◆RB◆ t$ (0,
-saturated). Reverse: $a \xrightarrow◆LB◆8◆RB◆ s$$t \xrightarrow◆LB◆8◆RB◆ a$.
+Flow after: $f(s,a) = 8$$f(a,t) = 8$. Residual: $s \xrightarrow{2} a$$a \xrightarrow{8} t$ (0,
+saturated). Reverse: $a \xrightarrow{8} s$$t \xrightarrow{8} a$.
 
 **Augmentation 2:** BFS: $s \to b \to t$. Residual = $\min(8, 4) = 4$.
 
-Flow after: $f(s,b) = 4$$f(b,t) = 4$. Residual: $s \xrightarrow◆LB◆4◆RB◆ b$$b \xrightarrow◆LB◆0◆RB◆ t$. Reverse:
-$b \xrightarrow◆LB◆4◆RB◆ s$$t \xrightarrow◆LB◆4◆RB◆ b$.
+Flow after: $f(s,b) = 4$$f(b,t) = 4$. Residual: $s \xrightarrow{4} b$$b \xrightarrow{0} t$. Reverse:
+$b \xrightarrow{4} s$$t \xrightarrow{4} b$.
 
 **Augmentation 3:** BFS: $s \to b \to c \to t$. Residual = $\min(4, 10, 6) = 4$.
 
-Flow: $f(s,b) = 8$$f(b,c) = 4$$f(c,t) = 4$. Residual: $s \xrightarrow◆LB◆0◆RB◆ b$.
-$b \xrightarrow◆LB◆6◆RB◆ c$$c \xrightarrow◆LB◆2◆RB◆ t$. Reverse: $c \xrightarrow◆LB◆4◆RB◆ b$$t \xrightarrow◆LB◆4◆RB◆ c$.
+Flow: $f(s,b) = 8$$f(b,c) = 4$$f(c,t) = 4$. Residual: $s \xrightarrow{0} b$.
+$b \xrightarrow{6} c$$c \xrightarrow{2} t$. Reverse: $c \xrightarrow{4} b$$t \xrightarrow{4} c$.
 
 **Augmentation 4:** BFS: $s \to a \to b \to c \to t$. Residual = $\min(2, 5, 6, 2) = 2$.
 
-Flow: $f(s,a) = 10$$f(a,b) = 2$$f(b,c) = 6$$f(c,t) = 6$. Residual: $s \xrightarrow◆LB◆0◆RB◆ a$.
-$a \xrightarrow◆LB◆3◆RB◆ b$$a \xrightarrow◆LB◆7◆RB◆ c$. $b \xrightarrow◆LB◆4◆RB◆ c$. $c \xrightarrow◆LB◆0◆RB◆ t$.
+Flow: $f(s,a) = 10$$f(a,b) = 2$$f(b,c) = 6$$f(c,t) = 6$. Residual: $s \xrightarrow{0} a$.
+$a \xrightarrow{3} b$$a \xrightarrow{7} c$. $b \xrightarrow{4} c$. $c \xrightarrow{0} t$.
 
 **Augmentation 5:** BFS from $s$: $s$ has no outgoing edges with residual capacity. Wait, $s \to a$
 has 0 residual, $s \to b$ has 0 residual. But we have reverse edges!
 
-$s$ has reverse edge from $b$: $b \xrightarrow◆LB◆8◆RB◆ s$. But we are searching from $s$Not to $s$. The
-reverse edge $a \xrightarrow◆LB◆8◆RB◆ s$ goes into $s$Which is irrelevant for BFS from $s$.
+$s$ has reverse edge from $b$: $b \xrightarrow{8} s$. But we are searching from $s$Not to $s$. The
+reverse edge $a \xrightarrow{8} s$ goes into $s$Which is irrelevant for BFS from $s$.
 
 Hmm, actually BFS from $s$ can only follow outgoing edges. $s$'s outgoing residual edges are:
-$s \xrightarrow◆LB◆0◆RB◆ a$ (no), $s \xrightarrow◆LB◆0◆RB◆ b$ (no). There are no reverse edges from $s$ to
+$s \xrightarrow{0} a$ (no), $s \xrightarrow{0} b$ (no). There are no reverse edges from $s$ to
 anywhere.
 
 So there is no augmenting path. The algorithm terminates.
@@ -199,7 +199,7 @@ is at least $|L|$.
 In a **minimum cost maximum flow** problem, each edge $(u, v)$ has a cost $w(u, v)$ per unit of
 flow, in addition to its capacity. The goal is to find a maximum flow of minimum total cost.
 
-**Total cost:** $\mathrm◆LB◆cost◆RB◆(f) = \sum_◆LB◆(u,v) \in E◆RB◆ f(u,v) \cdot w(u,v)$.
+**Total cost:** $\mathrm{cost}(f) = \sum_{(u,v) \in E} f(u,v) \cdot w(u,v)$.
 
 **Algorithm (Successive Shortest Paths):**
 
@@ -222,7 +222,7 @@ maximum cost.
 
 Network with costs (shown as capacity/cost):
 
-$s \xrightarrow◆LB◆3/2◆RB◆ a$$s \xrightarrow◆LB◆2/3◆RB◆ b$$a \xrightarrow◆LB◆2/1◆RB◆ b$$a \xrightarrow◆LB◆3/4◆RB◆ t$$b \xrightarrow◆LB◆1/2◆RB◆ t$$b \xrightarrow◆LB◆2/1◆RB◆ t$.
+$s \xrightarrow{3/2} a$$s \xrightarrow{2/3} b$$a \xrightarrow{2/1} b$$a \xrightarrow{3/4} t$$b \xrightarrow{1/2} t$$b \xrightarrow{2/1} t$.
 
 Find minimum cost flow of value 4.
 
@@ -329,21 +329,21 @@ dummy key probabilities $q_0, q_1, \ldots, q_n$ (for searches between keys), fin
 the expected search cost.
 
 **Expected cost:**
-$$E[\text◆LB◆cost◆RB◆] = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ (d(k_i) + 1) \cdot p_i + \sum_◆LB◆j=0◆RB◆^◆LB◆n◆RB◆ (d(d_j) + 1) \cdot q_j$$
+$$E[\text{cost}] = \sum_{i=1}^{n} (d(k_i) + 1) \cdot p_i + \sum_{j=0}^{n} (d(d_j) + 1) \cdot q_j$$
 
 Where $d$ is the depth of the node and $d_j$ is the depth of dummy key $j$.
 
 **DP formulation:** Let $e[i, j]$ be the expected search cost for keys $k_i, \ldots, k_j$.
 
-$$e[i, j] = \begin◆LB◆cases◆RB◆ q_◆LB◆i-1◆RB◆ & \text◆LB◆if◆RB◆  j = i - 1 \\ \min_◆LB◆r=i◆RB◆^◆LB◆j◆RB◆\{e[i, r-1] + e[r+1, j] + w(i, j)\} & \text◆LB◆if◆RB◆  i \leq j \end◆LB◆cases◆RB◆$$
+$$e[i, j] = \begin{cases} q_{i-1} & \text{if}  j = i - 1 \\ \min_{r=i}^{j}\{e[i, r-1] + e[r+1, j] + w(i, j)\} & \text{if}  i \leq j \end{cases}$$
 
-Where $w(i, j) = \sum_◆LB◆l=i◆RB◆^◆LB◆j◆RB◆ p_l + \sum_◆LB◆l=i-1◆RB◆^◆LB◆j◆RB◆ q_l$ is the total probability of the subtree.
+Where $w(i, j) = \sum_{l=i}^{j} p_l + \sum_{l=i-1}^{j} q_l$ is the total probability of the subtree.
 
 **Running time:** $O(n^3)$ (Knuth's optimisation reduces this to $O(n^2)$ when the cost function
 satisfies the quadrangle inequality).
 
 **Theorem 2.2 (Knuth's Optimisation).** If the optimal root of $e[i, j]$ is monotone (i.e.,
-$\mathrm◆LB◆root◆RB◆[i, j-1] \leq \mathrm◆LB◆root◆RB◆[i, j] \leq \mathrm◆LB◆root◆RB◆[i+1, j]$), then the DP can be
+$\mathrm{root}[i, j-1] \leq \mathrm{root}[i, j] \leq \mathrm{root}[i+1, j]$), then the DP can be
 computed in $O(n^2)$ time by restricting the search range for the root.
 
 <details>
@@ -392,15 +392,15 @@ $S \subseteq \{0, \ldots, n-1\}$ is represented as an integer where bit $i$ is s
 **The Travelling Salesman Problem (TSP).** Find the shortest tour visiting all $n$ cities exactly
 once and returning to the start.
 
-$$dp[S][i] = \text◆LB◆minimum◆RB◆ cost to visit all cities in  S \text◆LB◆ starting◆RB◆ from city 0, ending at city  i$$
+$$dp[S][i] = \text{minimum} cost to visit all cities in  S \text{ starting} from city 0, ending at city  i$$
 
 **Recurrence:**
 
-$$dp[S][i] = \min_◆LB◆j \in S, j \neq i◆RB◆ \{dp[S \setminus \{i\}][j] + \text◆LB◆dist◆RB◆(j, i)\}$$
+$$dp[S][i] = \min_{j \in S, j \neq i} \{dp[S \setminus \{i\}][j] + \text{dist}(j, i)\}$$
 
 **Base case:** $dp[\{0\}][0] = 0$, $dp[S][i] = \infty$ for $i \notin S$.
 
-**Answer:** $\min_i \{dp[\{0, 1, \ldots, n-1\}][i] + \text◆LB◆dist◆RB◆(i, 0)\}$.
+**Answer:** $\min_i \{dp[\{0, 1, \ldots, n-1\}][i] + \text{dist}(i, 0)\}$.
 
 **Running time:** $O(2^n \cdot n^2)$.
 
@@ -411,7 +411,7 @@ space.
 
 #### 2.4.1 Divide and Conquer DP
 
-When the recurrence has the form $dp[i][j] = \min_◆LB◆k < j◆RB◆ \{dp[i-1][k] + C(k, j)\}$ and the optimal
+When the recurrence has the form $dp[i][j] = \min_{k < j} \{dp[i-1][k] + C(k, j)\}$ and the optimal
 $k$ is monotone in $j$We can use divide and conquer to compute each row in $O(n \log n)$ instead of
 $O(n^2)$.
 
@@ -487,25 +487,25 @@ iterations is at most $n$ (the number of increases). The total work is $O(n + m)
 <details>
 <summary>Worked Example: KMP String Matching</summary>
 
-Pattern: $P = \text◆LB◆ababaca◆RB◆$Text: $T = \text◆LB◆abababaca◆RB◆$.
+Pattern: $P = \text{ababaca}$Text: $T = \text{abababaca}$.
 
 Compute prefix function:
 
 - $\pi[0] = 0$ ("a", no proper prefix = suffix)
-- $\pi[1]$: $P[1] = \text◆LB◆b◆RB◆$, $P[0] = \text◆LB◆a◆RB◆$. No match. $\pi[1] = 0$.
-- $\pi[2]$: $P[2] = \text◆LB◆a◆RB◆$, $P[0] = \text◆LB◆a◆RB◆$. Match! $k = 1$. $\pi[2] = 1$.
-- $\pi[3]$: $P[3] = \text◆LB◆b◆RB◆$, $P[1] = \text◆LB◆b◆RB◆$. Match! $k = 2$. $\pi[3] = 2$.
-- $\pi[4]$: $P[4] = \text◆LB◆a◆RB◆$, $P[2] = \text◆LB◆a◆RB◆$. Match! $k = 3$. $\pi[4] = 3$.
-- $\pi[5]$: $P[5] = \text◆LB◆c◆RB◆$, $P[3] = \text◆LB◆b◆RB◆$. No match. $k = \pi[2] = 1$.
-  $P[1] = \text◆LB◆b◆RB◆ \neq \text◆LB◆c◆RB◆$. $k = \pi[0] = 0$. $P[0] = \text◆LB◆a◆RB◆ \neq \text◆LB◆c◆RB◆$. $\pi[5] = 0$.
-- $\pi[6]$: $P[6] = \text◆LB◆a◆RB◆$, $P[0] = \text◆LB◆a◆RB◆$. Match! $k = 1$. $\pi[6] = 1$.
+- $\pi[1]$: $P[1] = \text{b}$, $P[0] = \text{a}$. No match. $\pi[1] = 0$.
+- $\pi[2]$: $P[2] = \text{a}$, $P[0] = \text{a}$. Match! $k = 1$. $\pi[2] = 1$.
+- $\pi[3]$: $P[3] = \text{b}$, $P[1] = \text{b}$. Match! $k = 2$. $\pi[3] = 2$.
+- $\pi[4]$: $P[4] = \text{a}$, $P[2] = \text{a}$. Match! $k = 3$. $\pi[4] = 3$.
+- $\pi[5]$: $P[5] = \text{c}$, $P[3] = \text{b}$. No match. $k = \pi[2] = 1$.
+  $P[1] = \text{b} \neq \text{c}$. $k = \pi[0] = 0$. $P[0] = \text{a} \neq \text{c}$. $\pi[5] = 0$.
+- $\pi[6]$: $P[6] = \text{a}$, $P[0] = \text{a}$. Match! $k = 1$. $\pi[6] = 1$.
 
 $\pi = [0, 0, 1, 2, 3, 0, 1]$.
 
-Search in $T = \text◆LB◆abababaca◆RB◆$: $i=0$: $T[0]=\text◆LB◆a◆RB◆=P[0]$$k=1$. $i=1$: $T[1]=\text◆LB◆b◆RB◆=P[1]$$k=2$.
-$i=2$: $T[2]=\text◆LB◆a◆RB◆=P[2]$$k=3$. $i=3$: $T[3]=\text◆LB◆b◆RB◆=P[3]$$k=4$. $i=4$: $T[4]=\text◆LB◆a◆RB◆=P[4]$$k=5$.
-$i=5$: $T[5]=\text◆LB◆b◆RB◆ \neq P[5]=\text◆LB◆c◆RB◆$. $k=\pi[4]=3$. $P[3]=\text◆LB◆b◆RB◆=T[5]$$k=4$. $i=6$:
-$T[6]=\text◆LB◆a◆RB◆=P[4]$$k=5$. $i=7$: $T[7]=\text◆LB◆c◆RB◆=P[5]$$k=6$. $i=8$: $T[8]=\text◆LB◆a◆RB◆=P[6]$$k=7=m$. Match
+Search in $T = \text{abababaca}$: $i=0$: $T[0]=\text{a}=P[0]$$k=1$. $i=1$: $T[1]=\text{b}=P[1]$$k=2$.
+$i=2$: $T[2]=\text{a}=P[2]$$k=3$. $i=3$: $T[3]=\text{b}=P[3]$$k=4$. $i=4$: $T[4]=\text{a}=P[4]$$k=5$.
+$i=5$: $T[5]=\text{b} \neq P[5]=\text{c}$. $k=\pi[4]=3$. $P[3]=\text{b}=T[5]$$k=4$. $i=6$:
+$T[6]=\text{a}=P[4]$$k=5$. $i=7$: $T[7]=\text{c}=P[5]$$k=6$. $i=8$: $T[8]=\text{a}=P[6]$$k=7=m$. Match
 at $8-7+1=2$.
 
 Pattern found at position 2.
@@ -518,10 +518,10 @@ Rabin-Karp uses hashing to compare the pattern with substrings of the text in $O
 per comparison.
 
 **Rolling hash.** Given a hash function
-$h(s) = \left(\sum_◆LB◆i=0◆RB◆^◆LB◆m-1◆RB◆ s[i] \cdot p^◆LB◆m-1-i◆RB◆\right) \bmod q$The hash of the substring
+$h(s) = \left(\sum_{i=0}^{m-1} s[i] \cdot p^{m-1-i}\right) \bmod q$The hash of the substring
 $T[i+1..i+m]$ can be computed from the hash of $T[i..i+m-1]$ in $O(1)$:
 
-$$h(T[i+1..i+m]) = (h(T[i..i+m-1]) - T[i] \cdot p^◆LB◆m-1◆RB◆) \cdot p + T[i+m] \pmod q$$
+$$h(T[i+1..i+m]) = (h(T[i..i+m-1]) - T[i] \cdot p^{m-1}) \cdot p + T[i+m] \pmod q$$
 
 **Expected time:** $O(n + m)$ average, $O(nm)$ worst case (when many hash collisions occur).
 
@@ -558,7 +558,7 @@ At each event point:
 
 ### 4.2 Convex Hull
 
-The **convex hull** of a set of points $S \subset \mathbb◆LB◆R◆RB◆^2$ is the smallest convex polygon
+The **convex hull** of a set of points $S \subset \mathbb{R}^2$ is the smallest convex polygon
 containing $S$.
 
 **Graham scan.** $O(n \log n)$ time.
@@ -596,8 +596,8 @@ Master Theorem, $T(n) = O(n \log n)$. $\blacksquare$
 ### 5.1 Introduction
 
 An $\alpha$-approximation algorithm for a minimisation problem returns a solution with cost at most
-$\alpha \cdot \mathrm◆LB◆OPT◆RB◆$. For a maximisation problem, the solution has value at least
-$\mathrm◆LB◆OPT◆RB◆ / \alpha$.
+$\alpha \cdot \mathrm{OPT}$. For a maximisation problem, the solution has value at least
+$\mathrm{OPT} / \alpha$.
 
 ### 5.2 Vertex Cover -- 2-Approximation
 
@@ -611,7 +611,7 @@ remove all edges incident to $u$ or $v$.
 _Proof._ The algorithm picks a set $C$ of edges that form a matching (no two share a vertex). For
 each edge in $C$Both endpoints are added to the cover, so $|S| = 2|C|$. Any vertex cover must
 include at least one endpoint of each edge in $C$ (since $C$ is a matching), so
-$\mathrm◆LB◆OPT◆RB◆ \geq |C|$. Therefore $|S| = 2|C| \leq 2 \cdot \mathrm◆LB◆OPT◆RB◆$. $\blacksquare$
+$\mathrm{OPT} \geq |C|$. Therefore $|S| = 2|C| \leq 2 \cdot \mathrm{OPT}$. $\blacksquare$
 
 ### 5.3 Metric TSP -- 2-Approximation
 
@@ -627,9 +627,9 @@ $\mathrm◆LB◆OPT◆RB◆ \geq |C|$. Therefore $|S| = 2|C| \leq 2 \cdot \mathr
 **Theorem 5.2.** This gives a 2-approximation for metric TSP.
 
 _Proof._ The cost of the MST is at most OPT (removing any edge from the optimal tour gives a
-spanning tree). The doubled MST costs $2 \cdot \mathrm◆LB◆MST◆RB◆ \leq 2 \cdot \mathrm◆LB◆OPT◆RB◆$. By the
+spanning tree). The doubled MST costs $2 \cdot \mathrm{MST} \leq 2 \cdot \mathrm{OPT}$. By the
 triangle inequality, shortcutting does not increase the cost. Therefore the final tour costs at most
-$2 \cdot \mathrm◆LB◆OPT◆RB◆$. $\blacksquare$
+$2 \cdot \mathrm{OPT}$. $\blacksquare$
 
 **Christofides' algorithm** improves this to a $3/2$-approximation by finding a minimum-weight
 perfect matching on the odd-degree vertices of the MST and combining it with the MST to form an
@@ -638,28 +638,28 @@ $(3/2 - \epsilon)$-approximation was discovered.
 
 ### 5.4 Set Cover -- $\ln n$-Approximation
 
-**Problem.** Given a universe $U$ of $n$ elements and a collection $\mathcal◆LB◆S◆RB◆$ of subsets of
-$U$Find the minimum number of subsets from $\mathcal◆LB◆S◆RB◆$ whose union is $U$.
+**Problem.** Given a universe $U$ of $n$ elements and a collection $\mathcal{S}$ of subsets of
+$U$Find the minimum number of subsets from $\mathcal{S}$ whose union is $U$.
 
 **Greedy algorithm:** Repeatedly pick the set covering the most uncovered elements.
 
 **Theorem 5.3.** The greedy algorithm gives a $(\ln n + 1)$-approximation for set cover.
-Furthermore, unless $\text◆LB◆P◆RB◆ = \text◆LB◆NP◆RB◆$No polynomial-time algorithm can do better than
+Furthermore, unless $\text{P} = \text{NP}$No polynomial-time algorithm can do better than
 $(1 - o(1)) \ln n$.
 
 _Proof (approximation ratio)._ Let $n_t$ be the number of uncovered elements after $t$ iterations.
-In iteration $t+1$The greedy algorithm picks a set covering at least $n_t / \mathrm◆LB◆OPT◆RB◆$ elements
-(since OPT sets cover all $n_t$ elements). So $n_◆LB◆t+1◆RB◆ \leq n_t (1 - 1/\mathrm◆LB◆OPT◆RB◆)$. After
-$k = \mathrm◆LB◆OPT◆RB◆ \cdot \ln n$ iterations,
-$n_k \leq n(1 - 1/\mathrm◆LB◆OPT◆RB◆)^◆LB◆\mathrm◆LB◆OPT◆RB◆ \cdot \ln n◆RB◆ \leq n \cdot e^◆LB◆-\ln n◆RB◆ = 1$.
+In iteration $t+1$The greedy algorithm picks a set covering at least $n_t / \mathrm{OPT}$ elements
+(since OPT sets cover all $n_t$ elements). So $n_{t+1} \leq n_t (1 - 1/\mathrm{OPT})$. After
+$k = \mathrm{OPT} \cdot \ln n$ iterations,
+$n_k \leq n(1 - 1/\mathrm{OPT})^{\mathrm{OPT} \cdot \ln n} \leq n \cdot e^{-\ln n} = 1$.
 $\blacksquare$
 
 ### 5.5 Inapproximability
 
-**Theorem 5.4 (PCP Theorem).** Unless $\text◆LB◆P◆RB◆ = \text◆LB◆NP◆RB◆$There is no polynomial-time algorithm that
+**Theorem 5.4 (PCP Theorem).** Unless $\text{P} = \text{NP}$There is no polynomial-time algorithm that
 approximates MAX-3SAT to within any constant factor better than $7/8$.
 
-**Theorem 5.5.** Unless $\text◆LB◆P◆RB◆ = \text◆LB◆NP◆RB◆$TSP (without triangle inequality) cannot be approximated
+**Theorem 5.5.** Unless $\text{P} = \text{NP}$TSP (without triangle inequality) cannot be approximated
 to within any polynomial factor.
 
 ## 6. Randomised Algorithms
@@ -696,7 +696,7 @@ Quickselect finds the $k$-th smallest element in expected $O(n)$ time.
 **Theorem 6.2.** Randomised quickselect has expected running time $O(n)$.
 
 _Proof._ The expected number of comparisons satisfies
-$T(n) \leq n + \frac◆LB◆1◆RB◆◆LB◆n◆RB◆ \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ (T(i-1) + T(n-i))$. This solves to $T(n) \leq 2n$ by
+$T(n) \leq n + \frac{1}{n} \sum_{i=1}^{n} (T(i-1) + T(n-i))$. This solves to $T(n) \leq 2n$ by
 induction. $\blacksquare$
 
 ### 6.4 Karger's Minimum Cut Algorithm
@@ -705,12 +705,12 @@ induction. $\blacksquare$
 the two remaining vertices is a candidate minimum cut.
 
 **Theorem 6.3.** The probability that a specific minimum cut survives all contractions is at least
-$\frac◆LB◆2◆RB◆◆LB◆n(n-1)◆RB◆$.
+$\frac{2}{n(n-1)}$.
 
 _Proof._ A minimum cut has exactly $k$ edges where $k$ is the minimum cut value. Each contraction
 removes at most one edge of the minimum cut (since the two endpoints are in the same partition).
 When $i$ vertices remain, the probability of contracting an edge of the minimum cut is
-$k / \binom◆LB◆i◆RB◆◆LB◆2◆RB◆$. Since $k \leq (n-2)/2$ (the minimum cut has at most $n-1$ edges... Actually we
+$k / \binom{i}{2}$. Since $k \leq (n-2)/2$ (the minimum cut has at most $n-1$ edges... Actually we
 need $k \leq n/2$... Let me use the standard proof).
 
 Actually, let $k$ be the size of the minimum cut. At any point with $i \geq 3$ vertices, the number
@@ -719,7 +719,7 @@ the min-cut property). The probability of contracting an edge of the minimum cut
 $k / (ik/2) = 2/i$.
 
 The probability that the minimum cut survives is:
-$$\prod_◆LB◆i=3◆RB◆^◆LB◆n◆RB◆ \left(1 - \frac◆LB◆2◆RB◆◆LB◆i◆RB◆\right) = \prod_◆LB◆i=3◆RB◆^◆LB◆n◆RB◆ \frac◆LB◆i-2◆RB◆◆LB◆i◆RB◆ = \frac◆LB◆(n-2)!◆RB◆◆LB◆n!◆RB◆ \cdot 2! = \frac◆LB◆2◆RB◆◆LB◆n(n-1)◆RB◆$$
+$$\prod_{i=3}^{n} \left(1 - \frac{2}{i}\right) = \prod_{i=3}^{n} \frac{i-2}{i} = \frac{(n-2)!}{n!} \cdot 2! = \frac{2}{n(n-1)}$$
 $\blacksquare$
 
 **Running $O(n^2 \log n)$ repetitions** gives probability of failure at most $1/n$ (by union bound).
@@ -764,7 +764,7 @@ amortised. Total: $O(V \log V + E)$. $\blacksquare$
 <summary>Worked Example: Prim's Algorithm Step by Step</summary>
 
 Graph with 5 vertices and weighted edges:
-$A \xrightarrow◆LB◆4◆RB◆ B$$A \xrightarrow◆LB◆1◆RB◆ C$$B \xrightarrow◆LB◆2◆RB◆ C$$B \xrightarrow◆LB◆5◆RB◆ D$$C \xrightarrow◆LB◆8◆RB◆ D$$C \xrightarrow◆LB◆7◆RB◆ E$$D \xrightarrow◆LB◆3◆RB◆ E$$A \xrightarrow◆LB◆6◆RB◆ E$.
+$A \xrightarrow{4} B$$A \xrightarrow{1} C$$B \xrightarrow{2} C$$B \xrightarrow{5} D$$C \xrightarrow{8} D$$C \xrightarrow{7} E$$D \xrightarrow{3} E$$A \xrightarrow{6} E$.
 
 Start at vertex $A$. Key values: $A = 0$$B = \infty$$C = \infty$$D = \infty$$E = \infty$.
 
@@ -967,21 +967,21 @@ most $n$ times, the total number of comparisons is $O(n)$. $\blacksquare$
 <details>
 <summary>Worked Example: Z-Algorithm</summary>
 
-String: $S = \text◆LB◆aabcaab◆RB◆$$n = 7$.
+String: $S = \text{aabcaab}$$n = 7$.
 
 $Z[0]$ is undefined (the entire string matches itself).
 
-$i = 1$: $i > r = 0$. Set $l = r = 1$. Compare: $S[0] = \text◆LB◆a◆RB◆ = S[1] = \text◆LB◆a◆RB◆$So $r = 2$.
-$S[1] = \text◆LB◆a◆RB◆ \neq S[2] = \text◆LB◆b◆RB◆$Stop. $Z[1] = r - l = 2 - 1 = 1$. Decrement $r$: $r = 1$.
+$i = 1$: $i > r = 0$. Set $l = r = 1$. Compare: $S[0] = \text{a} = S[1] = \text{a}$So $r = 2$.
+$S[1] = \text{a} \neq S[2] = \text{b}$Stop. $Z[1] = r - l = 2 - 1 = 1$. Decrement $r$: $r = 1$.
 
-$i = 2$: $i > r = 1$. Set $l = r = 2$. Compare: $S[0] = \text◆LB◆a◆RB◆ \neq S[2] = \text◆LB◆b◆RB◆$Stop
+$i = 2$: $i > r = 1$. Set $l = r = 2$. Compare: $S[0] = \text{a} \neq S[2] = \text{b}$Stop
 immediately. $Z[2] = 0$. $r = 1$.
 
-$i = 3$: $i > r = 1$. Set $l = r = 3$. Compare: $S[0] = \text◆LB◆a◆RB◆ \neq S[3] = \text◆LB◆c◆RB◆$Stop.
+$i = 3$: $i > r = 1$. Set $l = r = 3$. Compare: $S[0] = \text{a} \neq S[3] = \text{c}$Stop.
 $Z[3] = 0$. $r = 2$.
 
-$i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text◆LB◆a◆RB◆ = S[4] = \text◆LB◆a◆RB◆$$r = 5$.
-$S[1] = \text◆LB◆a◆RB◆ = S[5] = \text◆LB◆a◆RB◆$$r = 6$. $S[2] = \text◆LB◆b◆RB◆ = S[6] = \text◆LB◆b◆RB◆$$r = 7$. $r = n = 7$Stop.
+$i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text{a} = S[4] = \text{a}$$r = 5$.
+$S[1] = \text{a} = S[5] = \text{a}$$r = 6$. $S[2] = \text{b} = S[6] = \text{b}$$r = 7$. $r = n = 7$Stop.
 $Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
 
 $i = 5$: $i = 5 \leq r = 6$. $k = i - l = 5 - 4 = 1$. $Z[k] = Z[1] = 1$.
@@ -1056,7 +1056,7 @@ _Proof._ 3-SAT is in NP. To show NP-hardness, reduce from SAT. Given a clause $C
 literals, introduce new variables $y_1, \ldots, y_{k-3}$ and replace
 $C = (l_1 \lor l_2 \lor \cdots \lor l_k)$ with:
 
-$$(l_1 \lor l_2 \lor y_1) \land (\neg y_1 \lor l_3 \lor y_2) \land (\neg y_2 \lor l_4 \lor y_3) \land \cdots \land (\neg y_◆LB◆k-3◆RB◆ \lor l_◆LB◆k-1◆RB◆ \lor l_k)$$
+$$(l_1 \lor l_2 \lor y_1) \land (\neg y_1 \lor l_3 \lor y_2) \land (\neg y_2 \lor l_4 \lor y_3) \land \cdots \land (\neg y_{k-3} \lor l_{k-1} \lor l_k)$$
 
 This is satisfiable iff the original clause is satisfiable. The reduction is polynomial.
 $\blacksquare$
@@ -1156,7 +1156,7 @@ Given a string $S$ of length $n$Find the length of the longest subsequence that 
 
 **Recurrence:**
 
-$$dp[i][j] = \begin◆LB◆cases◆RB◆ 1 & \text◆LB◆if◆RB◆ ◆LB◆◆RB◆ i = j \\ 2 + dp[i+1][j-1] & \text◆LB◆if◆RB◆ ◆LB◆◆RB◆ S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text◆LB◆if◆RB◆ ◆LB◆◆RB◆ S[i] \neq S[j] \end◆LB◆cases◆RB◆$$
+$$dp[i][j] = \begin{cases} 1 & \text{if} {} i = j \\ 2 + dp[i+1][j-1] & \text{if} {} S[i] = S[j] \\ \max(dp[i+1][j], dp[i][j-1]) & \text{if} {} S[i] \neq S[j] \end{cases}$$
 
 **Running time:** $O(n^2)$Space $O(n^2)$ (or $O(n)$ with optimisation).
 
@@ -1295,7 +1295,7 @@ Verify: $17 \times 53 = 901 = 15 \times 60 + 1$. So $17 \times 53 \equiv 1 \pmod
 - $e = 5$$d = 29$ (since $5 \times 29 = 145 = 2 \times 72 + 1$)
 - Public key: $(e, n) = (5, 91)$. Private key: $(d, n) = (29, 91)$.
 
-Encrypt $m = 3$: $c = 3^5 \bmod 91 = 243 \bmod 91 = 61$. Decrypt: $m = 61^◆LB◆29◆RB◆ \bmod 91 = 3$. ✓
+Encrypt $m = 3$: $c = 3^5 \bmod 91 = 243 \bmod 91 = 61$. Decrypt: $m = 61^{29} \bmod 91 = 3$. ✓
 
 </details>
 
@@ -1306,7 +1306,7 @@ the naive DFT.
 
 $$X_k = \sum_{j=0}^{n-1} x_j \cdot \omega^{jk}$$
 
-Where $\omega = e^◆LB◆-2\pi i / n◆RB◆$ is the $n$-th root of unity.
+Where $\omega = e^{-2\pi i / n}$ is the $n$-th root of unity.
 
 **Cooley-Tukey algorithm.** Split the DFT into even-indexed and odd-indexed parts:
 
@@ -1447,7 +1447,7 @@ DFS from 1:
 - Back at 7: low[7] = min(6, 6) = 6.
 - Back at 1: low[1] = min(0, 1, 6) = 0.
 
-Articulation points: 2 (disconnects ◆LB◆3◆RB◆ from rest), 1 (root with children 2 and 7; both subtrees
+Articulation points: 2 (disconnects {3} from rest), 1 (root with children 2 and 7; both subtrees
 cannot reach each other... Actually, child 2's subtree cannot reach child 7's subtree, and vice
 versa). So 1 is also an articulation point.
 
@@ -1492,7 +1492,7 @@ assigned.
 
 **Problem 5.** Solve the TSP for 5 cities with the following distance matrix using bitmask DP:
 
-$$D = \begin◆LB◆pmatrix◆RB◆ 0 & 3 & 1 & 5 & 2 \\ 3 & 0 & 6 & 4 & 3 \\ 1 & 6 & 0 & 2 & 1 \\ 5 & 4 & 2 & 0 & 7 \\ 2 & 3 & 1 & 7 & 0 \end◆LB◆pmatrix◆RB◆$$
+$$D = \begin{pmatrix} 0 & 3 & 1 & 5 & 2 \\ 3 & 0 & 6 & 4 & 3 \\ 1 & 6 & 0 & 2 & 1 \\ 5 & 4 & 2 & 0 & 7 \\ 2 & 3 & 1 & 7 & 0 \end{pmatrix}$$
 
 **Problem 6.** Given $n$ jobs with start times, finish times, and profits, find the maximum profit
 subset of non-overlapping jobs. Jobs: (1, 3, 50), (2, 5, 10), (4, 6, 40), (6, 9, 70), (5, 7, 30),
@@ -1512,7 +1512,7 @@ text "aabaaabaabaaab".
 **Problem 10.** Use the Rabin-Karp algorithm to find all occurrences of "abc" in "abcabcababc". Use
 $p = 7$ and $q = 13$. Show all hash computations and any collisions.
 
-**Problem 11.** Build the Aho-Corasick automaton for the patterns ◆LB◆"he", "she", "his", "hers"◆RB◆.
+**Problem 11.** Build the Aho-Corasick automaton for the patterns {"he", "she", "his", "hers"}.
 Trace the search through the text "ushers".
 
 ### 7.4 Geometry and Approximation (Problems 12--15)

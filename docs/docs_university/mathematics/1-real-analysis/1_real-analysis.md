@@ -16,13 +16,13 @@ slug: real-analysis
 
 ### 1.1 Field Axioms
 
-The real numbers $\mathbb◆LB◆R◆RB◆$ form a **complete ordered field**. The field axioms guarantee closure
+The real numbers $\mathbb{R}$ form a **complete ordered field**. The field axioms guarantee closure
 Under addition, subtraction, multiplication, and division (by non-zero elements), together with the
 Usual commutative, associative, and distributive laws.
 
 ### 1.2 Order and the Completeness Axiom
 
-The order relation $\leq$ on $\mathbb◆LB◆R◆RB◆$ satisfies:
+The order relation $\leq$ on $\mathbb{R}$ satisfies:
 
 1. **Reflexivity**: $a \leq a$
 2. **Antisymmetry**: $a \leq b$ and $b \leq a$ implies $a = b$
@@ -32,14 +32,14 @@ The order relation $\leq$ on $\mathbb◆LB◆R◆RB◆$ satisfies:
 6. **Compatibility with multiplication**: $a \leq b$ and $0 \leq c$ implies $ac \leq bc$
 
 The **completeness axiom** (also called the **least upper bound property**) is what distinguishes
-$\mathbb◆LB◆R◆RB◆$ from $\mathbb◆LB◆Q◆RB◆$:
+$\mathbb{R}$ from $\mathbb{Q}$:
 
-**Axiom (Completeness).** Every non-empty subset of $\mathbb◆LB◆R◆RB◆$ that is bounded above has a **least
-Upper bound** (supremum) in $\mathbb◆LB◆R◆RB◆$.
+**Axiom (Completeness).** Every non-empty subset of $\mathbb{R}$ that is bounded above has a **least
+Upper bound** (supremum) in $\mathbb{R}$.
 
 ### 1.3 Supremum and Infimum
 
-Let $S \subseteq \mathbb◆LB◆R◆RB◆$ be a non-empty set that is bounded above.
+Let $S \subseteq \mathbb{R}$ be a non-empty set that is bounded above.
 
 **Definition.** The **supremum** (or least upper bound) of $S$Denoted $\sup(S)$Is the real number
 $u$ satisfying:
@@ -58,37 +58,37 @@ Exists $s \in S$ such that $u - \varepsilon \lt s \leq u$.
 _Proof._ If no such $s$ existed, then $u - \varepsilon$ would be an upper bound of $S$ strictly less
 Than $u$Contradicting the definition of $\sup(S)$. $\blacksquare$
 
-**Example.** Let $S = \{x \in \mathbb◆LB◆R◆RB◆ : x^2 \lt 2\}$. Then $\sup(S) = \sqrt◆LB◆2◆RB◆$. Note that
-$\sqrt◆LB◆2◆RB◆
-\notin \mathbb◆LB◆Q◆RB◆$, so $\mathbb◆LB◆Q◆RB◆$ does not satisfy the completeness axiom.
+**Example.** Let $S = \{x \in \mathbb{R} : x^2 \lt 2\}$. Then $\sup(S) = \sqrt{2}$. Note that
+$\sqrt{2}
+\notin \mathbb{Q}$, so $\mathbb{Q}$ does not satisfy the completeness axiom.
 
 ### 1.4 Archimedean Property
 
-**Theorem 1.1 (Archimedean Property).** For every $x \in \mathbb◆LB◆R◆RB◆$There exists $n \in \mathbb◆LB◆N◆RB◆$
+**Theorem 1.1 (Archimedean Property).** For every $x \in \mathbb{R}$There exists $n \in \mathbb{N}$
 Such that $n \gt x$.
 
-_Proof._ Suppose, for contradiction, that $\mathbb◆LB◆N◆RB◆$ is bounded above. By the completeness axiom,
-$s = \sup(\mathbb◆LB◆N◆RB◆)$ exists in $\mathbb◆LB◆R◆RB◆$. Then $s - 1$ is not an upper bound for $\mathbb◆LB◆N◆RB◆$
-So there exists $n \in \mathbb◆LB◆N◆RB◆$ with $n \gt s - 1$I.e., $n + 1 \gt s$. But $n + 1 \in \mathbb◆LB◆N◆RB◆$
+_Proof._ Suppose, for contradiction, that $\mathbb{N}$ is bounded above. By the completeness axiom,
+$s = \sup(\mathbb{N})$ exists in $\mathbb{R}$. Then $s - 1$ is not an upper bound for $\mathbb{N}$
+So there exists $n \in \mathbb{N}$ with $n \gt s - 1$I.e., $n + 1 \gt s$. But $n + 1 \in \mathbb{N}$
 Contradicting that $s$ is an upper bound. $\blacksquare$
 
-**Corollary 1.2.** For every $\varepsilon > 0$There exists $n \in \mathbb◆LB◆N◆RB◆$ such that
+**Corollary 1.2.** For every $\varepsilon > 0$There exists $n \in \mathbb{N}$ such that
 $1/n \lt \varepsilon$.
 
-_Proof._ By the Archimedean property, choose $n \in \mathbb◆LB◆N◆RB◆$ with $n \gt 1/\varepsilon$. Then
+_Proof._ By the Archimedean property, choose $n \in \mathbb{N}$ with $n \gt 1/\varepsilon$. Then
 $1/n \lt \varepsilon$. $\blacksquare$
 
-**Corollary 1.3 (Density of $\mathbb◆LB◆Q◆RB◆$).** Between any two distinct real numbers $a \lt b$There
-Exists a rational number $q \in \mathbb◆LB◆Q◆RB◆$ with $a \lt q \lt b$.
+**Corollary 1.3 (Density of $\mathbb{Q}$).** Between any two distinct real numbers $a \lt b$There
+Exists a rational number $q \in \mathbb{Q}$ with $a \lt q \lt b$.
 
-_Proof._ Since $b - a > 0$By Corollary 1.2 there exists $n \in \mathbb◆LB◆N◆RB◆$ with $1/n \lt b - a$ So
-$1 \lt n(b - a) = nb - na$. Let $m = \lfloor na \rfloor + 1 \in \mathbb◆LB◆Z◆RB◆$. Then
+_Proof._ Since $b - a > 0$By Corollary 1.2 there exists $n \in \mathbb{N}$ with $1/n \lt b - a$ So
+$1 \lt n(b - a) = nb - na$. Let $m = \lfloor na \rfloor + 1 \in \mathbb{Z}$. Then
 $m - 1 \leq na \lt m$ Giving $m \leq na + 1 \lt na + n(b - a) = nb$. Hence $a \lt m/n \lt b$And
-$m/n \in \mathbb◆LB◆Q◆RB◆$. $\blacksquare$
+$m/n \in \mathbb{Q}$. $\blacksquare$
 
 ### 1.5 Properties of Supremum and Infimum
 
-**Proposition 1.4.** If $A$ and $B$ are non-empty bounded subsets of $\mathbb◆LB◆R◆RB◆$Then
+**Proposition 1.4.** If $A$ and $B$ are non-empty bounded subsets of $\mathbb{R}$Then
 $\sup(A + B) = \sup(A) + \sup(B)$Where $A + B = \{a + b : a \in A, b \in B\}$.
 
 _Proof._ For all $a \in A$ and $b \in B$: $a \leq \sup(A)$ and $b \leq \sup(B)$So
@@ -100,7 +100,7 @@ $a \in A$ And $b \in B$ with $a > \sup(A) - \varepsilon/2$ and $b > \sup(B) - \v
 $a + b > \sup(A) + \sup(B) - \varepsilon$So $\sup(A + B) \geq \sup(A) + \sup(B) - \varepsilon$.
 Since $\varepsilon > 0$ is arbitrary, $\sup(A + B) \geq \sup(A) + \sup(B)$. $\blacksquare$
 
-**Proposition 1.5.** For any non-empty bounded set $S \subseteq \mathbb◆LB◆R◆RB◆$, $\inf(S) = -\sup(-S)$
+**Proposition 1.5.** For any non-empty bounded set $S \subseteq \mathbb{R}$, $\inf(S) = -\sup(-S)$
 Where $-S = \{-s : s \in S\}$.
 
 _Proof._ Let $u = \sup(-S)$. Then $-s \leq u$ for all $s \in S$So $s \geq -u$ for all $s \in S$
@@ -108,12 +108,12 @@ Meaning $-u$ is a lower bound for $S$. If $v$ is any lower bound for $S$Then $-v
 For $-S$So $u \leq -v$I.e., $-u \geq v$. Hence $-u = \inf(S)$. $\blacksquare$
 
 <details>
-<summary>Worked Example: Find $\sup$ and $\inf$ of $S = \{(-1)^n + 1/n : n \in \mathbb◆LB◆N◆RB◆\}$</summary>
+<summary>Worked Example: Find $\sup$ and $\inf$ of $S = \{(-1)^n + 1/n : n \in \mathbb{N}\}$</summary>
 
 _Solution._ The first few terms are $0, 3/2, -2/3, 5/4, -4/5, 7/6, \ldots$.
 
-For even $n = 2k$: $(-1)^◆LB◆2k◆RB◆ + 1/(2k) = 1 + 1/(2k)$Which decreases toward $1$ from above. For odd
-$n = 2k-1$: $(-1)^◆LB◆2k-1◆RB◆ + 1/(2k-1) = -1 + 1/(2k-1)$Which increases toward $-1$ from below.
+For even $n = 2k$: $(-1)^{2k} + 1/(2k) = 1 + 1/(2k)$Which decreases toward $1$ from above. For odd
+$n = 2k-1$: $(-1)^{2k-1} + 1/(2k-1) = -1 + 1/(2k-1)$Which increases toward $-1$ from below.
 
 The even terms form the sequence $3/2, 5/4, 7/6, \ldots$ with limit $1$So $\sup(S) = 3/2$ (the first
 even term). The odd terms form $0, -2/3, -4/5, \ldots$ with limit $-1$And since $0$ Is an
@@ -121,37 +121,37 @@ odd-indexed term, $\inf(S) = -1$ (approached but not attained). $\blacksquare$
 
 </details>
 
-### 1.6 Construction of $\mathbb◆LB◆R◆RB◆$ via Dedekind Cuts
+### 1.6 Construction of $\mathbb{R}$ via Dedekind Cuts
 
-_Remark._ The following outline shows how $\mathbb◆LB◆R◆RB◆$ can be constructed from $\mathbb◆LB◆Q◆RB◆$Making
+_Remark._ The following outline shows how $\mathbb{R}$ can be constructed from $\mathbb{Q}$Making
 The completeness axiom a theorem rather than an axiom.
 
-**Definition (Dedekind Cut).** A **Dedekind cut** is a subset $\alpha \subseteq \mathbb◆LB◆Q◆RB◆$
+**Definition (Dedekind Cut).** A **Dedekind cut** is a subset $\alpha \subseteq \mathbb{Q}$
 satisfying:
 
-1. $\alpha \neq \emptyset$ and $\alpha \neq \mathbb◆LB◆Q◆RB◆$
-2. If $p \in \alpha$ and $q \lt p$ (with $q \in \mathbb◆LB◆Q◆RB◆$), then $q \in \alpha$ (downward closure)
+1. $\alpha \neq \emptyset$ and $\alpha \neq \mathbb{Q}$
+2. If $p \in \alpha$ and $q \lt p$ (with $q \in \mathbb{Q}$), then $q \in \alpha$ (downward closure)
 3. $\alpha$ has no greatest element: for every $p \in \alpha$There exists $q \in \alpha$ with
    $p \lt q$
 
-**Definition.** The set of real numbers $\mathbb◆LB◆R◆RB◆$ is defined as the set of all Dedekind cuts.
+**Definition.** The set of real numbers $\mathbb{R}$ is defined as the set of all Dedekind cuts.
 
 The order, addition, and multiplication are defined as follows:
 
 - **Order:** $\alpha \lt \beta$ if and only if $\alpha \subsetneq \beta$
 - **Addition:** $\alpha + \beta = \{p + q : p \in \alpha, q \in \beta\}$
 - **Multiplication:** For $\alpha, \beta \geq 0^*$:
-  $\alpha \cdot \beta = \{p \cdot q : p \in \alpha, q \in \beta, p \geq 0, q \geq 0\} \cup \{r \in \mathbb◆LB◆Q◆RB◆ : r \lt 0\}$
+  $\alpha \cdot \beta = \{p \cdot q : p \in \alpha, q \in \beta, p \geq 0, q \geq 0\} \cup \{r \in \mathbb{Q} : r \lt 0\}$
 
-Here $0^* = \{q \in \mathbb◆LB◆Q◆RB◆ : q \lt 0\}$ represents the real number $0$.
+Here $0^* = \{q \in \mathbb{Q} : q \lt 0\}$ represents the real number $0$.
 
-**Theorem.** With these definitions, $\mathbb◆LB◆R◆RB◆$ is a complete ordered field, and $\mathbb◆LB◆Q◆RB◆$
-embeds Into $\mathbb◆LB◆R◆RB◆$ via $q \mapsto \{r \in \mathbb◆LB◆Q◆RB◆ : r \lt q\}$.
+**Theorem.** With these definitions, $\mathbb{R}$ is a complete ordered field, and $\mathbb{Q}$
+embeds Into $\mathbb{R}$ via $q \mapsto \{r \in \mathbb{Q} : r \lt q\}$.
 
 _Proof (sketch)._ Verifying the field axioms and order axioms is lengthy but straightforward. The
-key Step is the completeness axiom: if $\mathcal◆LB◆A◆RB◆$ is a non-empty set of Dedekind cuts bounded
-above, Then $\alpha = \bigcup_◆LB◆\beta \in \mathcal◆LB◆A◆RB◆◆RB◆ \beta$ is itself a Dedekind cut and
-$\alpha = \sup(\mathcal◆LB◆A◆RB◆)$. $\blacksquare$
+key Step is the completeness axiom: if $\mathcal{A}$ is a non-empty set of Dedekind cuts bounded
+above, Then $\alpha = \bigcup_{\beta \in \mathcal{A}} \beta$ is itself a Dedekind cut and
+$\alpha = \sup(\mathcal{A})$. $\blacksquare$
 
 ### 1.7 Equivalences of Completeness
 
@@ -160,7 +160,7 @@ The completeness axiom can be formulated in several equivalent ways. Each implie
 1. **Least Upper Bound Property:** Every non-empty set bounded above has a supremum.
 2. **Monotone Convergence Theorem:** Every bounded monotone sequence converges.
 3. **Nested Interval Property:** Every nested sequence of closed intervals
-   $I_1 \supseteq I_2 \supseteq \cdots$ with $\mathrm◆LB◆length◆RB◆(I_n) \to 0$ has exactly one point in
+   $I_1 \supseteq I_2 \supseteq \cdots$ with $\mathrm{length}(I_n) \to 0$ has exactly one point in
    $\bigcap I_n$.
 4. **Bolzano-Weierstrass Property:** Every bounded sequence has a convergent subsequence.
 5. **Cauchy Completeness:** Every Cauchy sequence converges.
@@ -175,24 +175,24 @@ equivalence $(1) \Rightarrow (3)$ follows from the Nested interval argument, and
 $(3) \Rightarrow (1)$ follows by constructing nested intervals that Shrink to $\sup S$.
 $\blacksquare$
 
-_Remark._ The field $\mathbb◆LB◆Q◆RB◆$ satisfies none of these properties, which is why it must be
-Extended to $\mathbb◆LB◆R◆RB◆$ for analysis.
+_Remark._ The field $\mathbb{Q}$ satisfies none of these properties, which is why it must be
+Extended to $\mathbb{R}$ for analysis.
 
 :::caution Common Pitfall The completeness axiom is often misstated as "every bounded set has a
 supremum." The set must be Non-empty. Also, completeness does not say every set has a maximum;
-$\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb◆LB◆N◆RB◆\} = 1$Which belongs to
+$\sup(S)$ need not belong to $S$. For example, $\sup\{1/n : n \in \mathbb{N}\} = 1$Which belongs to
 the set, but $\sup(0, 1) = 1$Which does not belong to $(0, 1)$. :::
 
 ## 2. Sequences and Limits
 
 ### 2.1 Convergence
 
-A sequence $(a_n)_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆$ in $\mathbb◆LB◆R◆RB◆$ **converges** to a limit $L \in \mathbb◆LB◆R◆RB◆$ if for
-Every $\varepsilon > 0$There exists $N \in \mathbb◆LB◆N◆RB◆$ such that
+A sequence $(a_n)_{n=1}^{\infty}$ in $\mathbb{R}$ **converges** to a limit $L \in \mathbb{R}$ if for
+Every $\varepsilon > 0$There exists $N \in \mathbb{N}$ such that
 
-$$|a_n - L| \lt \varepsilon \quad \mathrm◆LB◆for\ all\ ◆RB◆ n \geq N$$
+$$|a_n - L| \lt \varepsilon \quad \mathrm{for\ all\ } n \geq N$$
 
-We write $a_n \to L$ or $\lim_◆LB◆n \to \infty◆RB◆ a_n = L$. A sequence that does not converge is said to
+We write $a_n \to L$ or $\lim_{n \to \infty} a_n = L$. A sequence that does not converge is said to
 **diverge**.
 
 **Proposition 2.1 (Uniqueness of Limits).** If $(a_n)$ converges, its limit is unique.
@@ -209,7 +209,7 @@ A contradiction. $\blacksquare$
 
 _Proof._ Let $a_n \to L$. Taking $\varepsilon = 1$There exists $N$ such that $|a_n - L| \lt 1$ for
 All $n \geq N$. Then $|a_n| \leq |L| + 1$ for $n \geq N$. Let
-$M = \max\{|a_1|, |a_2|, \ldots, |a_◆LB◆N-1◆RB◆|, |L| + 1\}$. Then $|a_n| \leq M$ for all $n$.
+$M = \max\{|a_1|, |a_2|, \ldots, |a_{N-1}|, |L| + 1\}$. Then $|a_n| \leq M$ for all $n$.
 $\blacksquare$
 
 ### 2.2 Convergence Theorems
@@ -223,14 +223,14 @@ $\blacksquare$
 **Theorem 2.2 (Squeeze Theorem).** If $a_n \leq b_n \leq c_n$ for all $n$ and $a_n \to L$
 $c_n \to L$Then $b_n \to L$.
 
-**Theorem 2.3 (Monotone Convergence Theorem).** Every bounded monotone sequence in $\mathbb◆LB◆R◆RB◆$
+**Theorem 2.3 (Monotone Convergence Theorem).** Every bounded monotone sequence in $\mathbb{R}$
 converges. Specifically:
 
 - Every bounded increasing sequence converges to its supremum.
 - Every bounded decreasing sequence converges to its infimum.
 
 _Proof._ Let $(a_n)$ be bounded and increasing. By the completeness axiom,
-$s = \sup\{a_n : n \in \mathbb◆LB◆N◆RB◆\}$ exists. Let $\varepsilon > 0$. By the approximation property,
+$s = \sup\{a_n : n \in \mathbb{N}\}$ exists. Let $\varepsilon > 0$. By the approximation property,
 There exists $N$ such that $s - \varepsilon \lt a_N \leq s$. Since $(a_n)$ is increasing,
 $a_n \geq a_N > s - \varepsilon$ for all $n \geq N$. Also $a_n \leq s$ for all $n$. Hence
 $|a_n - s| \lt \varepsilon$ for all $n \geq N$. $\blacksquare$
@@ -239,9 +239,9 @@ $|a_n - s| \lt \varepsilon$ for all $n \geq N$. $\blacksquare$
 
 A sequence $(a_n)$ is a **Cauchy sequence** if for every $\varepsilon > 0$There exists
 $N \in
-\mathbb◆LB◆N◆RB◆$ such that
+\mathbb{N}$ such that
 
-$$|a_n - a_m| \lt \varepsilon \quad \mathrm◆LB◆for\ all\ ◆RB◆ m, n \geq N$$
+$$|a_n - a_m| \lt \varepsilon \quad \mathrm{for\ all\ } m, n \geq N$$
 
 **Theorem 2.4.** Every convergent sequence is Cauchy.
 
@@ -249,62 +249,62 @@ _Proof._ Let $a_n \to L$. Given $\varepsilon > 0$Choose $N$ such that $|a_n - L|
 For all $n \geq N$. Then for $m, n \geq N$:
 $|a_n - a_m| \leq |a_n - L| + |a_m - L| \lt \varepsilon$. $\blacksquare$
 
-**Theorem 2.5 (Cauchy Completeness of $\mathbb◆LB◆R◆RB◆$).** Every Cauchy sequence in $\mathbb◆LB◆R◆RB◆$
+**Theorem 2.5 (Cauchy Completeness of $\mathbb{R}$).** Every Cauchy sequence in $\mathbb{R}$
 converges.
 
 _Proof._ Let $(a_n)$ be Cauchy. First, $(a_n)$ is bounded: choose $N$ with $|a_n - a_m| \lt 1$ for
 $m, n \geq N$. Then $|a_n| \leq |a_N| + 1$ for $n \geq N$. By the Bolzano-Weierstrass theorem
-(Theorem 2.6 below), $(a_n)$ has a convergent subsequence $(a_◆LB◆n_k◆RB◆) \to L$. We show $a_n \to L$.
+(Theorem 2.6 below), $(a_n)$ has a convergent subsequence $(a_{n_k}) \to L$. We show $a_n \to L$.
 
 Given $\varepsilon > 0$Choose $N_1$ so that $|a_n - a_m| \lt \varepsilon/2$ for $m, n \geq N_1$ And
-$K$ so that $|a_◆LB◆n_k◆RB◆ - L| \lt \varepsilon/2$ for $k \geq K$. For $n \geq N_1$Choose $k \geq K$ with
+$K$ so that $|a_{n_k} - L| \lt \varepsilon/2$ for $k \geq K$. For $n \geq N_1$Choose $k \geq K$ with
 $n_k \geq N_1$ (possible since $n_k \to \infty$). Then
 
-$$|a_n - L| \leq |a_n - a_◆LB◆n_k◆RB◆| + |a_◆LB◆n_k◆RB◆ - L| \lt \varepsilon/2 + \varepsilon/2 = \varepsilon$$
+$$|a_n - L| \leq |a_n - a_{n_k}| + |a_{n_k} - L| \lt \varepsilon/2 + \varepsilon/2 = \varepsilon$$
 
 $\blacksquare$
 
 ### 2.4 Subsequences
 
-A **subsequence** of $(a_n)$ is a sequence $(a_◆LB◆n_k◆RB◆)_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆$ where
+A **subsequence** of $(a_n)$ is a sequence $(a_{n_k})_{k=1}^{\infty}$ where
 $n_1 \lt n_2 \lt n_3 \lt \cdots$.
 
-**Proposition 2.3.** If $a_n \to L$Then every subsequence $(a_◆LB◆n_k◆RB◆) \to L$.
+**Proposition 2.3.** If $a_n \to L$Then every subsequence $(a_{n_k}) \to L$.
 
 **Proposition 2.4.** If $(a_n)$ has two subsequences converging to different limits, then $(a_n)$
 diverges.
 
 ### 2.5 The Bolzano-Weierstrass Theorem
 
-**Theorem 2.6 (Bolzano-Weierstrass).** Every bounded sequence in $\mathbb◆LB◆R◆RB◆$ has a convergent
+**Theorem 2.6 (Bolzano-Weierstrass).** Every bounded sequence in $\mathbb{R}$ has a convergent
 subsequence.
 
 _Proof._ Let $(a_n)$ be bounded, so $a_n \in [A, B]$ for all $n$. Set $I_0 = [A, B]$. Bisect $I_0$
 into $[A, (A+B)/2]$ and $[(A+B)/2, B]$. At least one contains infinitely many terms of $(a_n)$; call
-it $I_1$. Having constructed $I_k = [l_k, r_k]$Bisect it and select $I_◆LB◆k+1◆RB◆$ as the half containing
+it $I_1$. Having constructed $I_k = [l_k, r_k]$Bisect it and select $I_{k+1}$ as the half containing
 Infinitely many terms of $(a_n)$.
 
 This produces a nested sequence of closed intervals
-$I_0 \supseteq I_1 \supseteq I_2 \supseteq \cdots$ With $\mathrm◆LB◆length◆RB◆(I_k) = (B - A)/2^k \to 0$.
+$I_0 \supseteq I_1 \supseteq I_2 \supseteq \cdots$ With $\mathrm{length}(I_k) = (B - A)/2^k \to 0$.
 By the **Nested Interval Property** (which follows From completeness),
-$\bigcap_◆LB◆k=0◆RB◆^◆LB◆\infty◆RB◆ I_k = \{c\}$ for some $c \in [A, B]$.
+$\bigcap_{k=0}^{\infty} I_k = \{c\}$ for some $c \in [A, B]$.
 
-Construct the subsequence inductively: pick $n_1$ with $a_◆LB◆n_1◆RB◆ \in I_1$. Having chosen
-$n_1 \lt n_2 \lt \cdots \lt n_◆LB◆k-1◆RB◆$Pick $n_k > n_◆LB◆k-1◆RB◆$ with $a_◆LB◆n_k◆RB◆ \in I_k$ (possible since
-$I_k$ contains infinitely many terms). Then $a_◆LB◆n_k◆RB◆ \in I_k$ for all $k$So
-$|a_◆LB◆n_k◆RB◆ - c| \leq \mathrm◆LB◆length◆RB◆(I_k) \to 0$. Hence $a_◆LB◆n_k◆RB◆ \to c$. $\blacksquare$
+Construct the subsequence inductively: pick $n_1$ with $a_{n_1} \in I_1$. Having chosen
+$n_1 \lt n_2 \lt \cdots \lt n_{k-1}$Pick $n_k > n_{k-1}$ with $a_{n_k} \in I_k$ (possible since
+$I_k$ contains infinitely many terms). Then $a_{n_k} \in I_k$ for all $k$So
+$|a_{n_k} - c| \leq \mathrm{length}(I_k) \to 0$. Hence $a_{n_k} \to c$. $\blacksquare$
 
 ### 2.6 Limit Superior and Limit Inferior
 
 Let $(a_n)$ be a bounded sequence. Define:
 
-$$\limsup_◆LB◆n \to \infty◆RB◆ a_n = \inf_◆LB◆n \geq 1◆RB◆ \sup_◆LB◆k \geq n◆RB◆ a_k, \qquad \liminf_◆LB◆n \to \infty◆RB◆ a_n = \sup_◆LB◆n \geq 1◆RB◆ \inf_◆LB◆k \geq n◆RB◆ a_k$$
+$$\limsup_{n \to \infty} a_n = \inf_{n \geq 1} \sup_{k \geq n} a_k, \qquad \liminf_{n \to \infty} a_n = \sup_{n \geq 1} \inf_{k \geq n} a_k$$
 
 **Proposition 2.5.** For every bounded sequence $(a_n)$:
-$$\liminf_◆LB◆n \to \infty◆RB◆ a_n \leq \limsup_◆LB◆n \to \infty◆RB◆ a_n$$
+$$\liminf_{n \to \infty} a_n \leq \limsup_{n \to \infty} a_n$$
 
-_Proof._ For any $n$, $\inf_◆LB◆k \geq n◆RB◆ a_k \leq a_n \leq \sup_◆LB◆k \geq n◆RB◆ a_n$. Taking supremum over
-$n$ on the left: $\liminf a_n \leq \sup_◆LB◆k \geq n◆RB◆ a_k$ for every $n$. Taking infimum over $n$ on
+_Proof._ For any $n$, $\inf_{k \geq n} a_k \leq a_n \leq \sup_{k \geq n} a_n$. Taking supremum over
+$n$ on the left: $\liminf a_n \leq \sup_{k \geq n} a_k$ for every $n$. Taking infimum over $n$ on
 The right gives $\liminf a_n \leq \limsup a_n$. $\blacksquare$
 
 **Proposition 2.6.** $(a_n)$ converges if and only if $\liminf a_n = \limsup a_n$In which case the
@@ -312,26 +312,26 @@ Common value equals $\lim a_n$.
 
 _Proof._ If $a_n \to L$Then for every $\varepsilon > 0$There exists $N$ such that
 $L - \varepsilon \lt a_n \lt L + \varepsilon$ for $n \geq N$. Hence
-$\sup_◆LB◆k \geq n◆RB◆ a_k \leq L + \varepsilon$ For $n \geq N$So $\limsup a_n \leq L + \varepsilon$.
+$\sup_{k \geq n} a_k \leq L + \varepsilon$ For $n \geq N$So $\limsup a_n \leq L + \varepsilon$.
 Since $\varepsilon > 0$ is arbitrary, $\limsup a_n \leq L$. Similarly $\liminf a_n \geq L$. Combined
 with Proposition 2.5, $\liminf a_n = \limsup a_n = L$.
 
 Conversely, if $\liminf a_n = \limsup a_n = L$Then for every $\varepsilon > 0$There exists $N_1$
-With $\sup_◆LB◆k \geq n◆RB◆ a_k \lt L + \varepsilon$ for $n \geq N_1$And $N_2$ with
-$\inf_◆LB◆k \geq n◆RB◆ a_k > L - \varepsilon$ for $n \geq N_2$. For $n \geq \max(N_1, N_2)$:
+With $\sup_{k \geq n} a_k \lt L + \varepsilon$ for $n \geq N_1$And $N_2$ with
+$\inf_{k \geq n} a_k > L - \varepsilon$ for $n \geq N_2$. For $n \geq \max(N_1, N_2)$:
 $L - \varepsilon \lt a_n \lt L + \varepsilon$So $a_n \to L$. $\blacksquare$
 
 **Proposition 2.7.** $\limsup a_n$ is the largest subsequential limit of $(a_n)$And $\liminf a_n$ Is
 the smallest.
 
-_Proof._ Let $L^* = \limsup a_n = \inf_n \sup_◆LB◆k \geq n◆RB◆ a_k$. Define $s_n = \sup_◆LB◆k \geq n◆RB◆ a_k$.
+_Proof._ Let $L^* = \limsup a_n = \inf_n \sup_{k \geq n} a_k$. Define $s_n = \sup_{k \geq n} a_k$.
 Then $(s_n)$ is decreasing and $s_n \to L^*$. For each $n$Choose $k_n \geq n$ with
-$a_◆LB◆k_n◆RB◆ > s_n - 1/n$. Then $a_◆LB◆k_n◆RB◆ \to L^*$ (by squeeze), producing a subsequence converging to
+$a_{k_n} > s_n - 1/n$. Then $a_{k_n} \to L^*$ (by squeeze), producing a subsequence converging to
 $L^*$.
 
-If $L > L^*$ were a subsequential limit, choose a subsequence $a_◆LB◆n_j◆RB◆ \to L$. For large $j$:
-$a_◆LB◆n_j◆RB◆ > (L + L^*)/2 > L^*$. But $a_◆LB◆n_j◆RB◆ \leq s_◆LB◆n_j◆RB◆$ for all $j$And $s_◆LB◆n_j◆RB◆ \to L^*$ So
-$a_◆LB◆n_j◆RB◆ \leq s_◆LB◆n_j◆RB◆ \lt (L + L^*)/2$ for large $j$A contradiction. $\blacksquare$
+If $L > L^*$ were a subsequential limit, choose a subsequence $a_{n_j} \to L$. For large $j$:
+$a_{n_j} > (L + L^*)/2 > L^*$. But $a_{n_j} \leq s_{n_j}$ for all $j$And $s_{n_j} \to L^*$ So
+$a_{n_j} \leq s_{n_j} \lt (L + L^*)/2$ for large $j$A contradiction. $\blacksquare$
 
 **Proposition 2.8 (Algebra of $\limsup$/$\liminf$).** If $(a_n)$ and $(b_n)$ are bounded sequences:
 
@@ -339,71 +339,71 @@ $a_◆LB◆n_j◆RB◆ \leq s_◆LB◆n_j◆RB◆ \lt (L + L^*)/2$ for large $j$
 2. $\liminf(a_n + b_n) \geq \liminf a_n + \liminf b_n$
 3. If $a_n \geq 0$ and $b_n \geq 0$: $\limsup(a_n b_n) \leq (\limsup a_n)(\limsup b_n)$
 
-_Remark._ Equality in (1) does not hold . For example, $a_n = (-1)^n$ and $b_n = (-1)^◆LB◆n+1◆RB◆$ Give
+_Remark._ Equality in (1) does not hold . For example, $a_n = (-1)^n$ and $b_n = (-1)^{n+1}$ Give
 $a_n + b_n = 0$So $\limsup(a_n + b_n) = 0 \lt 1 + 1 = \limsup a_n + \limsup b_n$.
 
 **Proposition 2.9.** A sequence $(a_n)$ is convergent if and only if it is Cauchy, if and only if
 $\limsup a_n = \liminf a_n$.
 
 <details>
-<summary>Worked Example: Compute $\limsup$ and $\liminf$ of $a_n = (-1)^n \cdot \frac◆LB◆n◆RB◆◆LB◆n+1◆RB◆$</summary>
+<summary>Worked Example: Compute $\limsup$ and $\liminf$ of $a_n = (-1)^n \cdot \frac{n}{n+1}$</summary>
 
 _Solution._ The sequence is $-1/2, 2/3, -3/4, 4/5, -5/6, \ldots$
 
-The even subsequence is $a_◆LB◆2k◆RB◆ = \frac◆LB◆2k◆RB◆◆LB◆2k+1◆RB◆ \to 1$. The odd subsequence is
-$a_◆LB◆2k-1◆RB◆ = -\frac◆LB◆2k-1◆RB◆◆LB◆2k◆RB◆ \to -1$.
+The even subsequence is $a_{2k} = \frac{2k}{2k+1} \to 1$. The odd subsequence is
+$a_{2k-1} = -\frac{2k-1}{2k} \to -1$.
 
 No subsequence can have a limit greater than $1$ (since $a_n \leq n/(n+1) \lt 1$ for even $n$ And
 $a_n \lt 0$ for odd $n$). Similarly, no subsequence can have a limit less than $-1$.
 
-Therefore $\limsup_◆LB◆n \to \infty◆RB◆ a_n = 1$ and $\liminf_◆LB◆n \to \infty◆RB◆ a_n = -1$. Since
+Therefore $\limsup_{n \to \infty} a_n = 1$ and $\liminf_{n \to \infty} a_n = -1$. Since
 $\limsup \neq \liminf$The sequence diverges. $\blacksquare$
 
 </details>
 
 ### 2.7 Worked Examples
 
-**Problem.** Prove that $\lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆n◆RB◆◆LB◆n+1◆RB◆ = 1$.
+**Problem.** Prove that $\lim_{n \to \infty} \frac{n}{n+1} = 1$.
 
-_Solution._ Let $\varepsilon > 0$. We need $\left|\frac◆LB◆n◆RB◆◆LB◆n+1◆RB◆ - 1\right| \lt \varepsilon$I.e.,
-$\frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆ \lt \varepsilon$I.e., $n > \frac◆LB◆1◆RB◆◆LB◆\varepsilon◆RB◆ - 1$. Choose
-$N = \lceil \frac◆LB◆1◆RB◆◆LB◆\varepsilon◆RB◆ \rceil$. Then for $n \geq N$: $n \geq \frac◆LB◆1◆RB◆◆LB◆\varepsilon◆RB◆$So
-$n+1 > \frac◆LB◆1◆RB◆◆LB◆\varepsilon◆RB◆$So $\frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆ \lt \varepsilon$. $\blacksquare$
+_Solution._ Let $\varepsilon > 0$. We need $\left|\frac{n}{n+1} - 1\right| \lt \varepsilon$I.e.,
+$\frac{1}{n+1} \lt \varepsilon$I.e., $n > \frac{1}{\varepsilon} - 1$. Choose
+$N = \lceil \frac{1}{\varepsilon} \rceil$. Then for $n \geq N$: $n \geq \frac{1}{\varepsilon}$So
+$n+1 > \frac{1}{\varepsilon}$So $\frac{1}{n+1} \lt \varepsilon$. $\blacksquare$
 
 <details>
-<summary>Worked Example: $\varepsilon$-$N$ .../1-number-and-algebra/3_proof-and-logic for $\lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆3n + 1◆RB◆◆LB◆n + 2◆RB◆ = 3$</summary>
+<summary>Worked Example: $\varepsilon$-$N$ .../1-number-and-algebra/3_proof-and-logic for $\lim_{n \to \infty} \frac{3n + 1}{n + 2} = 3$</summary>
 
 _Solution._ Let $\varepsilon > 0$. We compute:
 
-$$\left|\frac◆LB◆3n+1◆RB◆◆LB◆n+2◆RB◆ - 3\right| = \left|\frac◆LB◆3n+1 - 3(n+2)◆RB◆◆LB◆n+2◆RB◆\right| = \left|\frac◆LB◆-5◆RB◆◆LB◆n+2◆RB◆\right| = \frac◆LB◆5◆RB◆◆LB◆n+2◆RB◆$$
+$$\left|\frac{3n+1}{n+2} - 3\right| = \left|\frac{3n+1 - 3(n+2)}{n+2}\right| = \left|\frac{-5}{n+2}\right| = \frac{5}{n+2}$$
 
-We need $\frac◆LB◆5◆RB◆◆LB◆n+2◆RB◆ \lt \varepsilon$I.e., $n + 2 > 5/\varepsilon$I.e., $n > 5/\varepsilon - 2$.
+We need $\frac{5}{n+2} \lt \varepsilon$I.e., $n + 2 > 5/\varepsilon$I.e., $n > 5/\varepsilon - 2$.
 Choose $N = \lceil 5/\varepsilon \rceil$. Then for $n \geq N$:
 
-$$\left|\frac◆LB◆3n+1◆RB◆◆LB◆n+2◆RB◆ - 3\right| = \frac◆LB◆5◆RB◆◆LB◆n+2◆RB◆ \leq \frac◆LB◆5◆RB◆◆LB◆N+2◆RB◆ \leq \frac◆LB◆5◆RB◆◆LB◆5/\varepsilon◆RB◆ = \varepsilon$$
+$$\left|\frac{3n+1}{n+2} - 3\right| = \frac{5}{n+2} \leq \frac{5}{N+2} \leq \frac{5}{5/\varepsilon} = \varepsilon$$
 
 $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Show $(a_n)$ with $a_1 = \sqrt◆LB◆2◆RB◆$, $a_◆LB◆n+1◆RB◆ = \sqrt◆LB◆2 + a_n◆RB◆$ converges</summary>
+<summary>Worked Example: Show $(a_n)$ with $a_1 = \sqrt{2}$, $a_{n+1} = \sqrt{2 + a_n}$ converges</summary>
 
-_Solution._ **Step 1:** $(a_n)$ is bounded above by $2$. By induction: $a_1 = \sqrt◆LB◆2◆RB◆ \leq 2$. If
-$a_n \leq 2$Then $a_◆LB◆n+1◆RB◆ = \sqrt◆LB◆2 + a_n◆RB◆ \leq \sqrt◆LB◆2 + 2◆RB◆ = 2$.
+_Solution._ **Step 1:** $(a_n)$ is bounded above by $2$. By induction: $a_1 = \sqrt{2} \leq 2$. If
+$a_n \leq 2$Then $a_{n+1} = \sqrt{2 + a_n} \leq \sqrt{2 + 2} = 2$.
 
-**Step 2:** $(a_n)$ is increasing. We have $a_1 = \sqrt◆LB◆2◆RB◆ \approx 1.414$ and
-$a_2 = \sqrt◆LB◆2 + \sqrt◆LB◆2◆RB◆◆RB◆ \approx 1.848$. Assume $a_n \leq a_◆LB◆n+1◆RB◆$. Then
-$a_◆LB◆n+1◆RB◆ = \sqrt◆LB◆2 + a_n◆RB◆ \leq \sqrt◆LB◆2 + a_◆LB◆n+1◆RB◆◆RB◆ = a_◆LB◆n+2◆RB◆$.
+**Step 2:** $(a_n)$ is increasing. We have $a_1 = \sqrt{2} \approx 1.414$ and
+$a_2 = \sqrt{2 + \sqrt{2}} \approx 1.848$. Assume $a_n \leq a_{n+1}$. Then
+$a_{n+1} = \sqrt{2 + a_n} \leq \sqrt{2 + a_{n+1}} = a_{n+2}$.
 
 **Step 3:** By the Monotone Convergence Theorem, $(a_n)$ converges. Let $L = \lim a_n$. Taking
-limits In $a_◆LB◆n+1◆RB◆ = \sqrt◆LB◆2 + a_n◆RB◆$: $L = \sqrt◆LB◆2 + L◆RB◆$So $L^2 = 2 + L$Giving $L^2 - L - 2 = 0$So
-$(L-2)(L+1) = 0$. Since $a_n \geq \sqrt◆LB◆2◆RB◆ > 0$ for all $n$, $L \geq 0$So $L = 2$. $\blacksquare$
+limits In $a_{n+1} = \sqrt{2 + a_n}$: $L = \sqrt{2 + L}$So $L^2 = 2 + L$Giving $L^2 - L - 2 = 0$So
+$(L-2)(L+1) = 0$. Since $a_n \geq \sqrt{2} > 0$ for all $n$, $L \geq 0$So $L = 2$. $\blacksquare$
 
 </details>
 
 :::caution Common Pitfall When computing $\limsup$ and $\liminf$Do not confuse them with $\sup$ and
-$\inf$ of the range $\{a_n : n \in \mathbb◆LB◆N◆RB◆\}$. The $\limsup$ depends on the _tail_ behavior of
+$\inf$ of the range $\{a_n : n \in \mathbb{N}\}$. The $\limsup$ depends on the _tail_ behavior of
 the sequence. For Example, $a_n = (-1)^n$ has $\limsup = 1$ and $\liminf = -1$But $\sup\{a_n\} = 1$
 and $\inf\{a_n\} = -1$ happen to agree in this case. However, for $a_n = 1/n$, $\sup = 1$ but
 $\limsup = 0$. :::
@@ -412,8 +412,8 @@ $\limsup = 0$. :::
 
 ### 3.1 Definitions and Convergence
 
-A **series** $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ a_n$ converges if the sequence of partial sums
-$S_N = \sum_◆LB◆n=1◆RB◆^◆LB◆N◆RB◆ a_n$ Converges. The limit is the sum of the series.
+A **series** $\sum_{n=1}^{\infty} a_n$ converges if the sequence of partial sums
+$S_N = \sum_{n=1}^{N} a_n$ Converges. The limit is the sum of the series.
 
 If $a_n \geq 0$ for all $n$The series of partial sums is increasing, so by the monotone convergence
 Theorem, $\sum a_n$ converges if and only if $(S_N)$ is bounded above.
@@ -426,54 +426,54 @@ Theorem, $\sum a_n$ converges if and only if $(S_N)$ is bounded above.
 - If $\sum a_n$ diverges, then $\sum b_n$ diverges.
 
 **Theorem 3.2 (Limit Comparison Test).** If $a_n > 0$, $b_n > 0$And
-$\lim_◆LB◆n \to \infty◆RB◆ a_n / b_n = L$ where $0 \lt L \lt \infty$Then $\sum a_n$ converges if and only
+$\lim_{n \to \infty} a_n / b_n = L$ where $0 \lt L \lt \infty$Then $\sum a_n$ converges if and only
 if $\sum b_n$ converges.
 
-**Theorem 3.3 (Ratio Test).** If $\lim_◆LB◆n \to \infty◆RB◆ |a_◆LB◆n+1◆RB◆/a_n| = L$Then:
+**Theorem 3.3 (Ratio Test).** If $\lim_{n \to \infty} |a_{n+1}/a_n| = L$Then:
 
 - If $L \lt 1$, $\sum a_n$ converges absolutely.
 - If $L > 1$, $\sum a_n$ diverges.
 - If $L = 1$The test is inconclusive.
 
-**Theorem 3.4 (Root Test).** If $\limsup_◆LB◆n \to \infty◆RB◆ \sqrt[n]◆LB◆|a_n|◆RB◆ = L$Then:
+**Theorem 3.4 (Root Test).** If $\limsup_{n \to \infty} \sqrt[n]{|a_n|} = L$Then:
 
 - If $L \lt 1$, $\sum a_n$ converges absolutely.
 - If $L > 1$, $\sum a_n$ diverges.
 - If $L = 1$The test is inconclusive.
 
 _Proof._ If $L \lt 1$Choose $r$ with $L \lt r \lt 1$. By definition of $\limsup$There exists $N$
-such that $\sqrt[n]◆LB◆|a_n|◆RB◆ \lt r$ for all $n \geq N$I.e., $|a_n| \lt r^n$. Since $\sum r^n$
+such that $\sqrt[n]{|a_n|} \lt r$ for all $n \geq N$I.e., $|a_n| \lt r^n$. Since $\sum r^n$
 converges (geometric series with $r \lt 1$), the comparison test gives absolute convergence.
 
-If $L > 1$Then for infinitely many $n$: $\sqrt[n]◆LB◆|a_n|◆RB◆ > 1$So $|a_n| > 1$. Hence $a_n \not\to 0$
+If $L > 1$Then for infinitely many $n$: $\sqrt[n]{|a_n|} > 1$So $|a_n| > 1$. Hence $a_n \not\to 0$
 And the series diverges. $\blacksquare$
 
 **Theorem 3.5 (Integral Test).** If $f : [1, \infty) \to [0, \infty)$ is positive, continuous, and
-Decreasing, then $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ f(n)$ converges if and only if $\int_1^◆LB◆\infty◆RB◆ f(x)\, dx$
+Decreasing, then $\sum_{n=1}^{\infty} f(n)$ converges if and only if $\int_1^{\infty} f(x)\, dx$
 converges.
 
 _Proof._ Since $f$ is decreasing, for $k \leq x \leq k+1$: $f(k+1) \leq f(x) \leq f(k)$.
 Integrating:
 
-$$f(k+1) = \int_k^◆LB◆k+1◆RB◆ f(k+1)\, dx \leq \int_k^◆LB◆k+1◆RB◆ f(x)\, dx \leq \int_k^◆LB◆k+1◆RB◆ f(k)\, dx = f(k)$$
+$$f(k+1) = \int_k^{k+1} f(k+1)\, dx \leq \int_k^{k+1} f(x)\, dx \leq \int_k^{k+1} f(k)\, dx = f(k)$$
 
 Summing from $k = 1$ to $N - 1$:
 
-$$\sum_◆LB◆k=2◆RB◆^◆LB◆N◆RB◆ f(k) \leq \int_1^N f(x)\, dx \leq \sum_◆LB◆k=1◆RB◆^◆LB◆N-1◆RB◆ f(k)$$
+$$\sum_{k=2}^{N} f(k) \leq \int_1^N f(x)\, dx \leq \sum_{k=1}^{N-1} f(k)$$
 
-If $\int_1^◆LB◆\infty◆RB◆ f$ converges, the left inequality shows $\sum f(k)$ is bounded above, hence
-converges. If $\int_1^◆LB◆\infty◆RB◆ f$ diverges, the right inequality shows $\sum f(k)$ is unbounded,
+If $\int_1^{\infty} f$ converges, the left inequality shows $\sum f(k)$ is bounded above, hence
+converges. If $\int_1^{\infty} f$ diverges, the right inequality shows $\sum f(k)$ is unbounded,
 hence diverges. $\blacksquare$
 
 **Theorem 3.6 (Alternating Series Test).** If $a_n > 0$, $a_n$ decreases, and $a_n \to 0$Then
-$\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ (-1)^◆LB◆n+1◆RB◆ a_n$ converges.
+$\sum_{n=1}^{\infty} (-1)^{n+1} a_n$ converges.
 
 _Proof._ The partial sums of the even-indexed subsequence satisfy
-$S_◆LB◆2n◆RB◆ = S_◆LB◆2n-2◆RB◆ - a_◆LB◆2n-1◆RB◆ + a_◆LB◆2n◆RB◆$. Since $a_◆LB◆2n-1◆RB◆ \geq a_◆LB◆2n◆RB◆$We have
-$S_◆LB◆2n◆RB◆ \leq S_◆LB◆2n-2◆RB◆$So $(S_◆LB◆2n◆RB◆)$ is decreasing. Similarly, $(S_◆LB◆2n+1◆RB◆)$ is increasing. Also
-$S_◆LB◆2n+1◆RB◆ = S_◆LB◆2n◆RB◆ + a_◆LB◆2n+1◆RB◆ \geq S_◆LB◆2n◆RB◆$. Both sequences are bounded (since $(S_◆LB◆2n◆RB◆)$ is
-decreasing and bounded below by $S_1$And $(S_◆LB◆2n+1◆RB◆)$ is increasing and bounded Above by $S_2$).
-Hence both converge. Since $a_◆LB◆2n+1◆RB◆ \to 0$Their limits coincide. $\blacksquare$
+$S_{2n} = S_{2n-2} - a_{2n-1} + a_{2n}$. Since $a_{2n-1} \geq a_{2n}$We have
+$S_{2n} \leq S_{2n-2}$So $(S_{2n})$ is decreasing. Similarly, $(S_{2n+1})$ is increasing. Also
+$S_{2n+1} = S_{2n} + a_{2n+1} \geq S_{2n}$. Both sequences are bounded (since $(S_{2n})$ is
+decreasing and bounded below by $S_1$And $(S_{2n+1})$ is increasing and bounded Above by $S_2$).
+Hence both converge. Since $a_{2n+1} \to 0$Their limits coincide. $\blacksquare$
 
 ### 3.3 Absolute and Conditional Convergence
 
@@ -484,52 +484,52 @@ conditionally** If $\sum a_n$ converges but $\sum |a_n|$ diverges.
 
 _Proof._ Since $\sum |a_n|$ converges, the partial sums of $\sum |a_n|$ satisfy the Cauchy
 criterion. Given $\varepsilon > 0$There exists $N$ such that for $m > n \geq N$:
-$\sum_◆LB◆k=n+1◆RB◆^◆LB◆m◆RB◆ |a_k| \lt \varepsilon$. Then
-$\left|\sum_◆LB◆k=n+1◆RB◆^◆LB◆m◆RB◆ a_k\right| \leq \sum_◆LB◆k=n+1◆RB◆^◆LB◆m◆RB◆ |a_k| \lt \varepsilon$So $\sum a_n$
+$\sum_{k=n+1}^{m} |a_k| \lt \varepsilon$. Then
+$\left|\sum_{k=n+1}^{m} a_k\right| \leq \sum_{k=n+1}^{m} |a_k| \lt \varepsilon$So $\sum a_n$
 satisfies The Cauchy criterion and converges. $\blacksquare$
 
 ### 3.4 The Alternating Series Estimation Theorem
 
-**Theorem 3.8 (Alternating Series Estimation).** If $S = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ (-1)^◆LB◆n+1◆RB◆ a_n$
+**Theorem 3.8 (Alternating Series Estimation).** If $S = \sum_{n=1}^{\infty} (-1)^{n+1} a_n$
 satisfies the Hypotheses of the alternating series test, then the error after $N$ terms satisfies:
 
-$$|S - S_N| \leq a_◆LB◆N+1◆RB◆$$
+$$|S - S_N| \leq a_{N+1}$$
 
-_Proof._ We have $S_◆LB◆2n◆RB◆ \leq S \leq S_◆LB◆2n+1◆RB◆ = S_◆LB◆2n◆RB◆ + a_◆LB◆2n+1◆RB◆$ and
-$S_◆LB◆2n-1◆RB◆ \geq S \geq S_◆LB◆2n◆RB◆ = S_◆LB◆2n-1◆RB◆ - a_◆LB◆2n◆RB◆$. In both cases $|S - S_N| \leq a_◆LB◆N+1◆RB◆$.
+_Proof._ We have $S_{2n} \leq S \leq S_{2n+1} = S_{2n} + a_{2n+1}$ and
+$S_{2n-1} \geq S \geq S_{2n} = S_{2n-1} - a_{2n}$. In both cases $|S - S_N| \leq a_{N+1}$.
 $\blacksquare$
 
 ### 3.5 Cauchy Condensation Test
 
 **Theorem 3.8b (Cauchy Condensation Test).** If $(a_n)$ is a non-negative, decreasing sequence, then
-$\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ a_n$ converges if and only if $\sum_◆LB◆k=0◆RB◆^◆LB◆\infty◆RB◆ 2^k a_◆LB◆2^k◆RB◆$ converges.
+$\sum_{n=1}^{\infty} a_n$ converges if and only if $\sum_{k=0}^{\infty} 2^k a_{2^k}$ converges.
 
 _Proof._ Group the terms of $\sum a_n$. For the lower bound, note:
 
-$$a_1 + (a_2 + a_3) + (a_4 + a_5 + a_6 + a_7) + \cdots \geq a_1 + 2a_2 + 4a_4 + 8a_8 + \cdots = \sum_◆LB◆k=0◆RB◆^◆LB◆\infty◆RB◆ 2^k a_◆LB◆2^k◆RB◆$$
+$$a_1 + (a_2 + a_3) + (a_4 + a_5 + a_6 + a_7) + \cdots \geq a_1 + 2a_2 + 4a_4 + 8a_8 + \cdots = \sum_{k=0}^{\infty} 2^k a_{2^k}$$
 
-Since each group $(a_◆LB◆2^k◆RB◆ + \cdots + a_◆LB◆2^◆LB◆k+1◆RB◆-1◆RB◆)$ has $2^k$ terms, each $\geq a_◆LB◆2^k◆RB◆$. For the
+Since each group $(a_{2^k} + \cdots + a_{2^{k+1}-1})$ has $2^k$ terms, each $\geq a_{2^k}$. For the
 upper Bound:
 
-$$a_1 + a_2 + (a_3 + a_4) + (a_5 + a_6 + a_7 + a_8) + \cdots \leq a_1 + a_2 + 2a_4 + 4a_8 + \cdots \leq a_1 + 2\sum_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆ 2^◆LB◆k-1◆RB◆ a_◆LB◆2^k◆RB◆$$
+$$a_1 + a_2 + (a_3 + a_4) + (a_5 + a_6 + a_7 + a_8) + \cdots \leq a_1 + a_2 + 2a_4 + 4a_8 + \cdots \leq a_1 + 2\sum_{k=1}^{\infty} 2^{k-1} a_{2^k}$$
 
-If $\sum 2^k a_◆LB◆2^k◆RB◆$ converges, the upper bound shows $\sum a_n$ converges. If $\sum a_n$
-Converges, the lower bound shows $\sum 2^k a_◆LB◆2^k◆RB◆$ converges. $\blacksquare$
+If $\sum 2^k a_{2^k}$ converges, the upper bound shows $\sum a_n$ converges. If $\sum a_n$
+Converges, the lower bound shows $\sum 2^k a_{2^k}$ converges. $\blacksquare$
 
-_Corollary._ $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ 1/n^p$ converges if and only if $p > 1$. Apply the condensation
-Test: $\sum 2^k \cdot 1/(2^k)^p = \sum 2^◆LB◆k(1-p)◆RB◆$A geometric series with ratio $2^◆LB◆1-p◆RB◆$ Which
+_Corollary._ $\sum_{n=1}^{\infty} 1/n^p$ converges if and only if $p > 1$. Apply the condensation
+Test: $\sum 2^k \cdot 1/(2^k)^p = \sum 2^{k(1-p)}$A geometric series with ratio $2^{1-p}$ Which
 converges iff $1 - p \lt 0$I.e., $p > 1$.
 
 ### 3.6 Rearrangement of Series
 
 **Theorem 3.9 (Riemann Rearrangement Theorem).** If $\sum a_n$ converges conditionally, then for any
-$L \in \mathbb◆LB◆R◆RB◆$ (or $\pm\infty$), there exists a rearrangement
-$\sigma : \mathbb◆LB◆N◆RB◆ \to \mathbb◆LB◆N◆RB◆$ such That $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ a_◆LB◆\sigma(n)◆RB◆ = L$.
+$L \in \mathbb{R}$ (or $\pm\infty$), there exists a rearrangement
+$\sigma : \mathbb{N} \to \mathbb{N}$ such That $\sum_{n=1}^{\infty} a_{\sigma(n)} = L$.
 
 _Proof (outline)._ Let $P = \{n : a_n > 0\}$ and $N = \{n : a_n \lt 0\}$. Since $\sum a_n$ converges
-Conditionally, both $\sum_◆LB◆n \in P◆RB◆ a_n = +\infty$ and $\sum_◆LB◆n \in N◆RB◆ a_n = -\infty$.
+Conditionally, both $\sum_{n \in P} a_n = +\infty$ and $\sum_{n \in N} a_n = -\infty$.
 
-To achieve sum $L \in \mathbb◆LB◆R◆RB◆$: take positive terms in order until the partial sum exceeds $L$
+To achieve sum $L \in \mathbb{R}$: take positive terms in order until the partial sum exceeds $L$
 Then take negative terms until it falls below $L$Then positive terms again, and so on. Since both
 The positive and negative subseries diverge, this process can always continue. The terms tend to
 Zero (since the series converges), so the oscillations around $L$ shrink to zero. $\blacksquare$
@@ -539,69 +539,69 @@ sum.
 
 ### 3.7 Worked Examples
 
-**Problem.** Determine whether $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆n◆RB◆◆LB◆2^n◆RB◆$ converges.
+**Problem.** Determine whether $\sum_{n=1}^{\infty} \frac{n}{2^n}$ converges.
 
 _Solution._ Apply the ratio test:
 
-$$\lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆a_◆LB◆n+1◆RB◆◆RB◆◆LB◆a_n◆RB◆ = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆(n+1)/2^◆LB◆n+1◆RB◆◆RB◆◆LB◆n/2^n◆RB◆ = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆n+1◆RB◆◆LB◆2n◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ \lt 1$$
+$$\lim_{n \to \infty} \frac{a_{n+1}}{a_n} = \lim_{n \to \infty} \frac{(n+1)/2^{n+1}}{n/2^n} = \lim_{n \to \infty} \frac{n+1}{2n} = \frac{1}{2} \lt 1$$
 
 By the ratio test, the series converges absolutely. $\blacksquare$
 
 <details>
-<summary>Worked Example: Determine convergence of $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n^2 + n◆RB◆$</summary>
+<summary>Worked Example: Determine convergence of $\sum_{n=1}^{\infty} \frac{1}{n^2 + n}$</summary>
 
-_Solution._ Note that $\frac◆LB◆1◆RB◆◆LB◆n^2 + n◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆n(n+1)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆$. This is
+_Solution._ Note that $\frac{1}{n^2 + n} = \frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$. This is
 a Telescoping series. The $N$-th partial sum is:
 
-$$S_N = \sum_◆LB◆n=1◆RB◆^◆LB◆N◆RB◆ \left(\frac◆LB◆1◆RB◆◆LB◆n◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆\right) = 1 - \frac◆LB◆1◆RB◆◆LB◆N+1◆RB◆$$
+$$S_N = \sum_{n=1}^{N} \left(\frac{1}{n} - \frac{1}{n+1}\right) = 1 - \frac{1}{N+1}$$
 
-Therefore $\lim_◆LB◆N \to \infty◆RB◆ S_N = 1$And the series converges to $1$. $\blacksquare$
+Therefore $\lim_{N \to \infty} S_N = 1$And the series converges to $1$. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Does $\sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n \ln n◆RB◆$ converge?</summary>
+<summary>Worked Example: Does $\sum_{n=2}^{\infty} \frac{1}{n \ln n}$ converge?</summary>
 
 _Solution._ Apply the integral test with $f(x) = 1/(x \ln x)$ on $[2, \infty)$. The function is
 positive, Continuous, and decreasing. Compute:
 
-$$\int_2^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆x \ln x◆RB◆\, dx = \lim_◆LB◆b \to \infty◆RB◆ \int_2^◆LB◆b◆RB◆ \frac◆LB◆1◆RB◆◆LB◆x \ln x◆RB◆\, dx = \lim_◆LB◆b \to \infty◆RB◆ \left[\ln(\ln x)\right]_2^b = \lim_◆LB◆b \to \infty◆RB◆ \ln(\ln b) - \ln(\ln 2) = \infty$$
+$$\int_2^{\infty} \frac{1}{x \ln x}\, dx = \lim_{b \to \infty} \int_2^{b} \frac{1}{x \ln x}\, dx = \lim_{b \to \infty} \left[\ln(\ln x)\right]_2^b = \lim_{b \to \infty} \ln(\ln b) - \ln(\ln 2) = \infty$$
 
 The integral diverges, so by the integral test, the series diverges. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Approximate $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆n◆RB◆$ to within $0.01$</summary>
+<summary>Worked Example: Approximate $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$ to within $0.01$</summary>
 
 _Solution._ This is the alternating harmonic series, with $a_n = 1/n$. By the alternating series
-Estimation theorem, $|S - S_N| \leq a_◆LB◆N+1◆RB◆ = 1/(N+1)$. We need $1/(N+1) \leq 0.01$So
+Estimation theorem, $|S - S_N| \leq a_{N+1} = 1/(N+1)$. We need $1/(N+1) \leq 0.01$So
 $N + 1 \geq 100$I.e., $N \geq 99$.
 
-So $S_◆LB◆99◆RB◆ = \sum_◆LB◆n=1◆RB◆^◆LB◆99◆RB◆ \frac◆LB◆(-1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆n◆RB◆$ approximates $\ln 2$ to within $0.01$. (The exact
+So $S_{99} = \sum_{n=1}^{99} \frac{(-1)^{n+1}}{n}$ approximates $\ln 2$ to within $0.01$. (The exact
 sum is $\ln 2 \approx 0.6931$.) $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Determine convergence of $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n^2 + 1◆RB◆$</summary>
+<summary>Worked Example: Determine convergence of $\sum_{n=1}^{\infty} \frac{1}{n^2 + 1}$</summary>
 
-_Solution._ Since $\frac◆LB◆1◆RB◆◆LB◆n^2 + 1◆RB◆ \leq \frac◆LB◆1◆RB◆◆LB◆n^2◆RB◆$ for all $n$And $\sum 1/n^2$ converges
-($p$-series with $p = 2 > 1$), the comparison test implies $\sum \frac◆LB◆1◆RB◆◆LB◆n^2 + 1◆RB◆$ converges.
+_Solution._ Since $\frac{1}{n^2 + 1} \leq \frac{1}{n^2}$ for all $n$And $\sum 1/n^2$ converges
+($p$-series with $p = 2 > 1$), the comparison test implies $\sum \frac{1}{n^2 + 1}$ converges.
 $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Use the condensation test for $\sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n (\ln n) (\ln \ln n)◆RB◆$</summary>
+<summary>Worked Example: Use the condensation test for $\sum_{n=2}^{\infty} \frac{1}{n (\ln n) (\ln \ln n)}$</summary>
 
-_Solution._ Let $a_n = \frac◆LB◆1◆RB◆◆LB◆n (\ln n)(\ln \ln n)◆RB◆$ for $n \geq 3$. This is positive and
-decreasing. By the condensation test, $\sum a_n$ converges iff $\sum 2^k a_◆LB◆2^k◆RB◆$ converges.
+_Solution._ Let $a_n = \frac{1}{n (\ln n)(\ln \ln n)}$ for $n \geq 3$. This is positive and
+decreasing. By the condensation test, $\sum a_n$ converges iff $\sum 2^k a_{2^k}$ converges.
 Compute:
 
-$$2^k a_◆LB◆2^k◆RB◆ = \frac◆LB◆2^k◆RB◆◆LB◆2^k \cdot k \ln 2 \cdot \ln(k \ln 2)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆k \ln 2 \cdot \ln(k \ln 2)◆RB◆ \approx \frac◆LB◆1◆RB◆◆LB◆k \ln k◆RB◆$$
+$$2^k a_{2^k} = \frac{2^k}{2^k \cdot k \ln 2 \cdot \ln(k \ln 2)} = \frac{1}{k \ln 2 \cdot \ln(k \ln 2)} \approx \frac{1}{k \ln k}$$
 
-The series $\sum \frac◆LB◆1◆RB◆◆LB◆k \ln k◆RB◆$ diverges (integral test, analogous to $\sum \frac◆LB◆1◆RB◆◆LB◆n \ln n◆RB◆$).
+The series $\sum \frac{1}{k \ln k}$ diverges (integral test, analogous to $\sum \frac{1}{n \ln n}$).
 Therefore $\sum a_n$ diverges. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 3.5 (Cauchy Condensation Test).
@@ -616,14 +616,14 @@ cases, try the comparison Test, integral test, or other methods. For example, $\
 
 ### 4.1 Limits of Functions
 
-Let $f : D \to \mathbb◆LB◆R◆RB◆$ where $D \subseteq \mathbb◆LB◆R◆RB◆$. We say $\lim_◆LB◆x \to a◆RB◆ f(x) = L$ if for
+Let $f : D \to \mathbb{R}$ where $D \subseteq \mathbb{R}$. We say $\lim_{x \to a} f(x) = L$ if for
 Every $\varepsilon > 0$There exists $\delta > 0$ such that
 
 $$0 \lt |x - a| \lt \delta \implies |f(x) - L| \lt \varepsilon$$
 
 ### 4.2 Continuity
 
-**Definition.** $f$ is **continuous at $a$** if $\lim_◆LB◆x \to a◆RB◆ f(x) = f(a)$. In epsilon-delta form:
+**Definition.** $f$ is **continuous at $a$** if $\lim_{x \to a} f(x) = f(a)$. In epsilon-delta form:
 For every $\varepsilon > 0$There exists $\delta > 0$ such that
 
 $$|x - a| \lt \delta \implies |f(x) - f(a)| \lt \varepsilon$$
@@ -634,11 +634,11 @@ function is **globally continuous** (or "continuous") if it is continuous on its
 **Definition.** $f$ is **discontinuous at $a$** if it is not continuous at $a$. Discontinuities are
 Classified as:
 
-- **Removable:** $\lim_◆LB◆x \to a◆RB◆ f(x)$ exists but does not equal $f(a)$ (or $f(a)$ is undefined).
-- **Jump:** $\lim_◆LB◆x \to a^-◆RB◆ f(x)$ and $\lim_◆LB◆x \to a^+◆RB◆ f(x)$ both exist but are unequal.
+- **Removable:** $\lim_{x \to a} f(x)$ exists but does not equal $f(a)$ (or $f(a)$ is undefined).
+- **Jump:** $\lim_{x \to a^-} f(x)$ and $\lim_{x \to a^+} f(x)$ both exist but are unequal.
 - **Essential (or infinite/oscillatory):** At least one one-sided limit does not exist.
 
-**Proposition 4.3.** Polynomials are continuous on $\mathbb◆LB◆R◆RB◆$. Rational functions $p(x)/q(x)$ are
+**Proposition 4.3.** Polynomials are continuous on $\mathbb{R}$. Rational functions $p(x)/q(x)$ are
 Continuous wherever $q(x) \neq 0$. The functions $\sin x$$\cos x$$e^x$$\ln x$ are continuous On
 their domains.
 
@@ -653,7 +653,7 @@ and $g$ is continuous at $f(a)$Then $g \circ f$ is continuous at $a$.
 The epsilon-delta definitions can be reformulated in terms of sequences, which is often more
 Convenient for .../1-number-and-algebra/3_proof-and-logics.
 
-**Proposition 4.2a (Sequential Criterion for Limits).** $\lim_◆LB◆x \to c◆RB◆ f(x) = L$ if and only if For
+**Proposition 4.2a (Sequential Criterion for Limits).** $\lim_{x \to c} f(x) = L$ if and only if For
 every sequence $(x_n)$ with $x_n \to c$ and $x_n \neq c$ for all $n$We have $f(x_n) \to L$.
 
 _Proof._ ($\Rightarrow$) Let $\varepsilon > 0$. Choose $\delta > 0$ from the $\varepsilon$-$\delta$
@@ -661,7 +661,7 @@ definition. Since $x_n \to c$There exists $N$ with $|x_n - c| \lt \delta$ for $n
 $|f(x_n) - L| \lt \varepsilon$ for $n \geq N$.
 
 ($\Leftarrow$) Suppose the $\varepsilon$-$\delta$ condition fails. Then there exists
-$\varepsilon > 0$ such That for every $n \in \mathbb◆LB◆N◆RB◆$There exists $x_n$ with
+$\varepsilon > 0$ such That for every $n \in \mathbb{N}$There exists $x_n$ with
 $0 \lt |x_n - c| \lt 1/n$ but $|f(x_n) - L| \geq \varepsilon$. Then $x_n \to c$ but
 $f(x_n) \not\to L$Contradicting the hypothesis. $\blacksquare$
 
@@ -673,7 +673,7 @@ Converging to $c$ whose image does not converge to $f(c)$.
 
 ### 4.3 Intermediate Value Theorem
 
-**Theorem 4.3 (IVT).** If $f : [a,b] \to \mathbb◆LB◆R◆RB◆$ is continuous and $f(a) \lt y \lt f(b)$ (or
+**Theorem 4.3 (IVT).** If $f : [a,b] \to \mathbb{R}$ is continuous and $f(a) \lt y \lt f(b)$ (or
 $f(b) \lt y \lt f(a)$), then there exists $c \in (a,b)$ such that $f(c) = y$.
 
 _Proof._ Assume $f(a) \lt y \lt f(b)$. Let $S = \{x \in [a,b] : f(x) \lt y\}$. Since $a \in S$ $S$
@@ -690,26 +690,26 @@ Therefore $f(c) = y$. $\blacksquare$
 
 _Alternative .../1-number-and-algebra/3_proof-and-logic (bisection)._ Set $a_0 = a$$b_0 = b$. Given
 $[a_n, b_n]$ with $f(a_n) \lt y \lt f(b_n)$ Let $m_n = (a_n + b_n)/2$. If $f(m_n) \geq y$Set
-$a_◆LB◆n+1◆RB◆ = a_n$$b_◆LB◆n+1◆RB◆ = m_n$. If $f(m_n) \lt y$ Set $a_◆LB◆n+1◆RB◆ = m_n$$b_◆LB◆n+1◆RB◆ = b_n$. Either way,
+$a_{n+1} = a_n$$b_{n+1} = m_n$. If $f(m_n) \lt y$ Set $a_{n+1} = m_n$$b_{n+1} = b_n$. Either way,
 $f(a_n) \lt y \leq f(b_n)$ and $b_n - a_n = (b-a)/2^n \to 0$. By the nested interval property,
 $a_n \to c$ and $b_n \to c$. By continuity, $f(c) = \lim f(a_n) \leq y$ And
 $f(c) = \lim f(b_n) \geq y$So $f(c) = y$. $\blacksquare$
 
 ### 4.4 Extreme Value Theorem
 
-**Theorem 4.4 (EVT).** If $f : [a,b] \to \mathbb◆LB◆R◆RB◆$ is continuous, then $f$ attains its maximum and
+**Theorem 4.4 (EVT).** If $f : [a,b] \to \mathbb{R}$ is continuous, then $f$ attains its maximum and
 Minimum on $[a,b]$: there exist $c_1, c_2 \in [a,b]$ such that $f(c_1) \leq f(x) \leq f(c_2)$ for
 all $x \in [a,b]$.
 
-_Proof._ We first show $f$ is bounded. Suppose not; then for each $n \in \mathbb◆LB◆N◆RB◆$There exists
+_Proof._ We first show $f$ is bounded. Suppose not; then for each $n \in \mathbb{N}$There exists
 $x_n \in [a,b]$ with $|f(x_n)| > n$. By Bolzano-Weierstrass, $(x_n)$ has a convergent subsequence
-$x_◆LB◆n_k◆RB◆ \to c \in [a,b]$. By continuity, $f(x_◆LB◆n_k◆RB◆) \to f(c)$So $(f(x_◆LB◆n_k◆RB◆))$ is bounded. But
-$|f(x_◆LB◆n_k◆RB◆)| > n_k \to \infty$A contradiction.
+$x_{n_k} \to c \in [a,b]$. By continuity, $f(x_{n_k}) \to f(c)$So $(f(x_{n_k}))$ is bounded. But
+$|f(x_{n_k})| > n_k \to \infty$A contradiction.
 
 Now we show $f$ attains its supremum. Let $M = \sup\{f(x) : x \in [a,b]\}$. For each $n$Choose
 $x_n \in [a,b]$ with $f(x_n) > M - 1/n$. By Bolzano-Weierstrass, $(x_n)$ has a subsequence
-$x_◆LB◆n_k◆RB◆ \to c \in [a,b]$. By continuity, $f(c) = \lim f(x_◆LB◆n_k◆RB◆)$. Since
-$M - 1/n_k \lt f(x_◆LB◆n_k◆RB◆) \leq M$ for all $k$The squeeze theorem gives $f(c) = M$. The argument for
+$x_{n_k} \to c \in [a,b]$. By continuity, $f(c) = \lim f(x_{n_k})$. Since
+$M - 1/n_k \lt f(x_{n_k}) \leq M$ for all $k$The squeeze theorem gives $f(c) = M$. The argument for
 the infimum is similar (consider $-f$). $\blacksquare$
 
 ### 4.5 Uniform Continuity
@@ -724,33 +724,33 @@ point $a$; for uniform continuity, $\delta$ depends only on $\varepsilon$.
 
 ### 4.6 The Heine-Cantor Theorem
 
-**Theorem 4.5 (Heine-Cantor).** If $f : [a,b] \to \mathbb◆LB◆R◆RB◆$ is continuous on the closed, bounded
+**Theorem 4.5 (Heine-Cantor).** If $f : [a,b] \to \mathbb{R}$ is continuous on the closed, bounded
 Interval $[a,b]$Then $f$ is uniformly continuous on $[a,b]$.
 
 _Proof._ Suppose $f$ is continuous on $[a,b]$ but not uniformly continuous. Then there exists
-$\varepsilon > 0$ such that for every $n \in \mathbb◆LB◆N◆RB◆$There exist $x_n, y_n \in [a,b]$ with
+$\varepsilon > 0$ such that for every $n \in \mathbb{N}$There exist $x_n, y_n \in [a,b]$ with
 $|x_n - y_n| \lt 1/n$ but $|f(x_n) - f(y_n)| \geq \varepsilon$.
 
-By the Bolzano-Weierstrass theorem, $(x_n)$ has a convergent subsequence $x_◆LB◆n_k◆RB◆ \to c \in [a,b]$.
-Since $|x_◆LB◆n_k◆RB◆ - y_◆LB◆n_k◆RB◆| \lt 1/n_k \to 0$We have $y_◆LB◆n_k◆RB◆ \to c$ as well.
+By the Bolzano-Weierstrass theorem, $(x_n)$ has a convergent subsequence $x_{n_k} \to c \in [a,b]$.
+Since $|x_{n_k} - y_{n_k}| \lt 1/n_k \to 0$We have $y_{n_k} \to c$ as well.
 
 By continuity of $f$ at $c$: there exists $\delta > 0$ such that $|x - c| \lt \delta$ implies
-$|f(x) - f(c)| \lt \varepsilon/2$. For $k$ sufficiently large, $|x_◆LB◆n_k◆RB◆ - c| \lt \delta$ and
-$|y_◆LB◆n_k◆RB◆ - c| \lt \delta$So:
+$|f(x) - f(c)| \lt \varepsilon/2$. For $k$ sufficiently large, $|x_{n_k} - c| \lt \delta$ and
+$|y_{n_k} - c| \lt \delta$So:
 
-$$|f(x_◆LB◆n_k◆RB◆) - f(y_◆LB◆n_k◆RB◆)| \leq |f(x_◆LB◆n_k◆RB◆) - f(c)| + |f(y_◆LB◆n_k◆RB◆) - f(c)| \lt \varepsilon/2 + \varepsilon/2 = \varepsilon$$
+$$|f(x_{n_k}) - f(y_{n_k})| \leq |f(x_{n_k}) - f(c)| + |f(y_{n_k}) - f(c)| \lt \varepsilon/2 + \varepsilon/2 = \varepsilon$$
 
-Contradicting $|f(x_◆LB◆n_k◆RB◆) - f(y_◆LB◆n_k◆RB◆)| \geq \varepsilon$. $\blacksquare$
+Contradicting $|f(x_{n_k}) - f(y_{n_k})| \geq \varepsilon$. $\blacksquare$
 
 ### 4.7 Worked Examples
 
-**Problem.** Prove that $f(x) = \sqrt◆LB◆x◆RB◆$ is uniformly continuous on $[0, \infty)$.
+**Problem.** Prove that $f(x) = \sqrt{x}$ is uniformly continuous on $[0, \infty)$.
 
 _Solution._ For $x, y \geq 0$:
-$|\sqrt◆LB◆x◆RB◆ - \sqrt◆LB◆y◆RB◆| = \frac◆LB◆|x - y|◆RB◆◆LB◆\sqrt◆LB◆x◆RB◆ + \sqrt◆LB◆y◆RB◆◆RB◆ \leq |x - y|^◆LB◆1/2◆RB◆$.
+$|\sqrt{x} - \sqrt{y}| = \frac{|x - y|}{\sqrt{x} + \sqrt{y}} \leq |x - y|^{1/2}$.
 
 Given $\varepsilon > 0$Choose $\delta = \varepsilon^2$. Then $|x - y| \lt \delta$ implies
-$|\sqrt◆LB◆x◆RB◆ - \sqrt◆LB◆y◆RB◆| \leq \sqrt◆LB◆|x-y|◆RB◆ \lt \sqrt◆LB◆\delta◆RB◆ = \varepsilon$. Since $\delta$ depends
+$|\sqrt{x} - \sqrt{y}| \leq \sqrt{|x-y|} \lt \sqrt{\delta} = \varepsilon$. Since $\delta$ depends
 Only on $\varepsilon$The continuity is uniform. $\blacksquare$
 
 <details>
@@ -777,7 +777,7 @@ Restrict to $\delta \leq 1$So $|x - 3| \lt 1$ means $2 \lt x \lt 4$Giving $|x + 
 
 Choose $\delta = \min(1, \varepsilon/7)$. Then $|x - 3| \lt \delta$ implies:
 
-$$|x^2 - 9| = |x + 3| \cdot |x - 3| \lt 7 \cdot \frac◆LB◆\varepsilon◆RB◆◆LB◆7◆RB◆ = \varepsilon$$
+$$|x^2 - 9| = |x + 3| \cdot |x - 3| \lt 7 \cdot \frac{\varepsilon}{7} = \varepsilon$$
 
 $\blacksquare$
 
@@ -787,10 +787,10 @@ $\blacksquare$
 <summary>Worked Example: Show $f(x) = 1/x$ is NOT uniformly continuous on $(0, 1)$</summary>
 
 _Solution._ We show the negation of uniform continuity. Take $\varepsilon = 1$. For any $\delta > 0$
-Choose $n \in \mathbb◆LB◆N◆RB◆$ with $1/n \lt \delta$. Set $x = 1/n$ and $y = 1/(2n)$. Then
+Choose $n \in \mathbb{N}$ with $1/n \lt \delta$. Set $x = 1/n$ and $y = 1/(2n)$. Then
 $|x - y| = 1/(2n) \lt 1/n \lt \delta$But:
 
-$$|f(x) - f(y)| = \left|\frac◆LB◆1◆RB◆◆LB◆1/n◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆1/(2n)◆RB◆\right| = |n - 2n| = n \geq 1 = \varepsilon$$
+$$|f(x) - f(y)| = \left|\frac{1}{1/n} - \frac{1}{1/(2n)}\right| = |n - 2n| = n \geq 1 = \varepsilon$$
 
 So no single $\delta$ works for all $x, y \in (0,1)$. $\blacksquare$
 
@@ -802,7 +802,7 @@ So no single $\delta$ works for all $x, y \in (0,1)$. $\blacksquare$
 _Solution._ Consider the sequences $x_n = 1/(2n\pi)$ and $y_n = 1/(2n\pi + \pi/2)$. Both converge to
 $0$. But $f(x_n) = \sin(2n\pi) = 0$ and $f(y_n) = \sin(2n\pi + \pi/2) = 1$ for all $n$.
 
-So $f(x_n) \to 0$ and $f(y_n) \to 1$. By the sequential criterion, if $\lim_◆LB◆x \to 0◆RB◆ f(x)$ existed,
+So $f(x_n) \to 0$ and $f(y_n) \to 1$. By the sequential criterion, if $\lim_{x \to 0} f(x)$ existed,
 Both subsequences would converge to the same limit. Since they don't, the limit does not exist.
 $\blacksquare$
 
@@ -823,34 +823,34 @@ Heine-Cantor Theorem implies $f$ is uniformly continuous on $[0, 1]$. $\blacksqu
 </details>
 
 <details>
-<summary>Worked Example: $\varepsilon$-$\delta$ .../1-number-and-algebra/3_proof-and-logic that $f(x) = \sin x$ is continuous at every $a \in \mathbb◆LB◆R◆RB◆$</summary>
+<summary>Worked Example: $\varepsilon$-$\delta$ .../1-number-and-algebra/3_proof-and-logic that $f(x) = \sin x$ is continuous at every $a \in \mathbb{R}$</summary>
 
-_Solution._ We use the identity $|\sin u - \sin v| \leq |u - v|$ for all $u, v \in \mathbb◆LB◆R◆RB◆$.
+_Solution._ We use the identity $|\sin u - \sin v| \leq |u - v|$ for all $u, v \in \mathbb{R}$.
 (Proof: $|\sin u - \sin v| = 2|\cos((u+v)/2)\sin((u-v)/2)| \leq 2|\sin((u-v)/2)| \leq |u - v|$ Using
 $|\sin t| \leq |t|$ and $|\cos| \leq 1$.)
 
-Let $\varepsilon > 0$ and $a \in \mathbb◆LB◆R◆RB◆$. Choose $\delta = \varepsilon$. For
+Let $\varepsilon > 0$ and $a \in \mathbb{R}$. Choose $\delta = \varepsilon$. For
 $|x - a| \lt \delta$:
 
 $$|\sin x - \sin a| \leq |x - a| \lt \delta = \varepsilon$$
 
 Since $\delta = \varepsilon$ works independently of $a$, $\sin x$ is actually **uniformly continuous**
-On $\mathbb◆LB◆R◆RB◆$. The same argument works for $\cos x$. $\blacksquare$
+On $\mathbb{R}$. The same argument works for $\cos x$. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: $\varepsilon$-$\delta$ .../1-number-and-algebra/3_proof-and-logic that $f(x) = e^x$ is continuous at every $a \in \mathbb◆LB◆R◆RB◆$</summary>
+<summary>Worked Example: $\varepsilon$-$\delta$ .../1-number-and-algebra/3_proof-and-logic that $f(x) = e^x$ is continuous at every $a \in \mathbb{R}$</summary>
 
-_Solution._ We use the inequality $|e^u - e^v| \leq e^◆LB◆\max(u,v)◆RB◆ |u - v|$Which follows from the
+_Solution._ We use the inequality $|e^u - e^v| \leq e^{\max(u,v)} |u - v|$Which follows from the
 Mean Value Theorem applied to $e^t$: $e^u - e^v = e^\xi (u - v)$ for some $\xi$ between $u$ and $v$
-So $|e^u - e^v| = e^\xi |u - v| \leq e^◆LB◆\max(u,v)◆RB◆ |u - v|$.
+So $|e^u - e^v| = e^\xi |u - v| \leq e^{\max(u,v)} |u - v|$.
 
-Let $\varepsilon > 0$ and $a \in \mathbb◆LB◆R◆RB◆$. Restrict to $|x - a| \lt 1$So $x \lt a + 1$ and
-$e^◆LB◆\max(x,a)◆RB◆ \leq e^◆LB◆a+1◆RB◆$. Choose $\delta = \min(1, \varepsilon / e^◆LB◆a+1◆RB◆)$. For
+Let $\varepsilon > 0$ and $a \in \mathbb{R}$. Restrict to $|x - a| \lt 1$So $x \lt a + 1$ and
+$e^{\max(x,a)} \leq e^{a+1}$. Choose $\delta = \min(1, \varepsilon / e^{a+1})$. For
 $|x - a| \lt \delta$:
 
-$$|e^x - e^a| \leq e^◆LB◆a+1◆RB◆ |x - a| \lt e^◆LB◆a+1◆RB◆ \cdot \frac◆LB◆\varepsilon◆RB◆◆LB◆e^◆LB◆a+1◆RB◆◆RB◆ = \varepsilon$$
+$$|e^x - e^a| \leq e^{a+1} |x - a| \lt e^{a+1} \cdot \frac{\varepsilon}{e^{a+1}} = \varepsilon$$
 
 $\blacksquare$
 
@@ -861,23 +861,23 @@ _If you get this wrong, revise:_ Section 4.2 (Continuity), Section 5.3 (Mean Val
 :::caution Common Pitfall Continuity on $(a, b)$ does not imply uniform continuity. The function
 $f(x) = 1/x$ on $(0, 1)$ is Continuous but not uniformly continuous. The Heine-Cantor theorem
 requires a **closed and bounded** Interval. Also, a function can be uniformly continuous on an
-unbounded domain (e.g., $f(x) = \sqrt◆LB◆x◆RB◆$ On $[0, \infty)$) --- boundedness of the domain is
+unbounded domain (e.g., $f(x) = \sqrt{x}$ On $[0, \infty)$) --- boundedness of the domain is
 sufficient but not necessary. :::
 
 ## 5. Differentiability
 
 ### 5.1 The Derivative
 
-**Definition.** $f : (a,b) \to \mathbb◆LB◆R◆RB◆$ is **differentiable at** $c \in (a,b)$ if the limit
+**Definition.** $f : (a,b) \to \mathbb{R}$ is **differentiable at** $c \in (a,b)$ if the limit
 
-$$f'(c) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆f(c+h) - f(c)◆RB◆◆LB◆h◆RB◆$$
+$$f'(c) = \lim_{h \to 0} \frac{f(c+h) - f(c)}{h}$$
 
 Exists (as a finite real number).
 
 **Proposition 5.1.** If $f$ is differentiable at $c$Then $f$ is continuous at $c$.
 
 _Proof._
-$\lim_◆LB◆x \to c◆RB◆ (f(x) - f(c)) = \lim_◆LB◆x \to c◆RB◆ \frac◆LB◆f(x) - f(c)◆RB◆◆LB◆x - c◆RB◆ \cdot (x - c) = f'(c) \cdot 0 = 0$.
+$\lim_{x \to c} (f(x) - f(c)) = \lim_{x \to c} \frac{f(x) - f(c)}{x - c} \cdot (x - c) = f'(c) \cdot 0 = 0$.
 $\blacksquare$
 
 The converse is false: $f(x) = |x|$ is continuous at $0$ but not differentiable at $0$.
@@ -888,12 +888,12 @@ The converse is false: $f(x) = |x|$ is continuous at $0$ but not differentiable 
 
 1. $(f + g)'(c) = f'(c) + g'(c)$
 2. $(fg)'(c) = f'(c)g(c) + f(c)g'(c)$
-3. $(f/g)'(c) = \frac◆LB◆f'(c)g(c) - f(c)g'(c)◆RB◆◆LB◆g(c)^2◆RB◆$ (if $g(c) \neq 0$)
+3. $(f/g)'(c) = \frac{f'(c)g(c) - f(c)g'(c)}{g(c)^2}$ (if $g(c) \neq 0$)
 4. $(f \circ g)'(c) = f'(g(c)) \cdot g'(c)$ (Chain Rule)
 
 ### 5.3 Mean Value Theorem
 
-**Theorem 5.2 (Rolle's Theorem).** If $f : [a,b] \to \mathbb◆LB◆R◆RB◆$ is continuous on
+**Theorem 5.2 (Rolle's Theorem).** If $f : [a,b] \to \mathbb{R}$ is continuous on
 $[a,b]$Differentiable On $(a,b)$And $f(a) = f(b)$Then there exists $c \in (a,b)$ such that
 $f'(c) = 0$.
 
@@ -902,12 +902,12 @@ $M = m$Then $f$ is constant and $f'(c) = 0$ for all $c \in (a,b)$. Otherwise, at
 $m$ is attained at some $c \in (a,b)$ (since $f(a) = f(b)$). By Fermat's theorem, $f'(c) = 0$.
 $\blacksquare$
 
-**Theorem 5.3 (Mean Value Theorem).** If $f : [a,b] \to \mathbb◆LB◆R◆RB◆$ is continuous on $[a,b]$ and
+**Theorem 5.3 (Mean Value Theorem).** If $f : [a,b] \to \mathbb{R}$ is continuous on $[a,b]$ and
 Differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
 
-$$f'(c) = \frac◆LB◆f(b) - f(a)◆RB◆◆LB◆b - a◆RB◆$$
+$$f'(c) = \frac{f(b) - f(a)}{b - a}$$
 
-_Proof._ Define $g(x) = f(x) - \frac◆LB◆f(b)-f(a)◆RB◆◆LB◆b-a◆RB◆(x - a)$. Then $g(a) = g(b)$ and $g$ satisfies
+_Proof._ Define $g(x) = f(x) - \frac{f(b)-f(a)}{b-a}(x - a)$. Then $g(a) = g(b)$ and $g$ satisfies
 the Hypotheses of Rolle's theorem. So $g'(c) = 0$ for some $c \in (a,b)$Which gives the result.
 $\blacksquare$
 
@@ -915,7 +915,7 @@ $\blacksquare$
 
 **Corollary 5.5.** If $f'(x) > 0$ for all $x \in (a,b)$Then $f$ is strictly increasing on $[a,b]$.
 
-**Theorem 5.3a (Cauchy's Mean Value Theorem).** If $f, g : [a,b] \to \mathbb◆LB◆R◆RB◆$ are continuous on
+**Theorem 5.3a (Cauchy's Mean Value Theorem).** If $f, g : [a,b] \to \mathbb{R}$ are continuous on
 $[a,b]$ and differentiable on $(a,b)$Then there exists $c \in (a,b)$ such that
 
 $$(f(b) - f(a))g'(c) = (g(b) - g(a))f'(c)$$
@@ -937,70 +937,70 @@ _Proof._ Apply the MVT to $f$ on the interval between $x$ and $y$. $\blacksquare
 **Theorem 5.6 (Taylor's Theorem with Lagrange Remainder).** If $f$ is $(n+1)$-times differentiable
 on An open interval containing $a$Then for each $x$ in that interval:
 
-$$f(x) = \sum_◆LB◆k=0◆RB◆^◆LB◆n◆RB◆ \frac◆LB◆f^◆LB◆(k)◆RB◆(a)◆RB◆◆LB◆k!◆RB◆(x - a)^k + R_n(x)$$
+$$f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x - a)^k + R_n(x)$$
 
 Where the remainder is
 
-$$R_n(x) = \frac◆LB◆f^◆LB◆(n+1)◆RB◆(\xi)◆RB◆◆LB◆(n+1)!◆RB◆(x - a)^◆LB◆n+1◆RB◆$$
+$$R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x - a)^{n+1}$$
 
 For some $\xi$ between $a$ and $x$.
 
 _Proof._ Fix $x \neq a$ and define
 
-$$g(t) = f(x) - \sum_◆LB◆k=0◆RB◆^◆LB◆n◆RB◆ \frac◆LB◆f^◆LB◆(k)◆RB◆(t)◆RB◆◆LB◆k!◆RB◆(x - t)^k$$
+$$g(t) = f(x) - \sum_{k=0}^{n} \frac{f^{(k)}(t)}{k!}(x - t)^k$$
 
 Then $g(a) = R_n(x)$ and $g(x) = 0$. By the generalized Rolle's theorem (or direct computation Using
 the Cauchy mean value theorem), there exists $\xi$ between $a$ and $x$ with $g'( \xi ) = 0$.
 Computing:
 
-$$g'(t) = -\frac◆LB◆f^◆LB◆(n+1)◆RB◆(t)◆RB◆◆LB◆n!◆RB◆(x - t)^n$$
+$$g'(t) = -\frac{f^{(n+1)}(t)}{n!}(x - t)^n$$
 
 Setting $g'(\xi) = 0$ yields the result after comparing $g(a) = R_n(x)$ with the integral form. A
 Cleaner approach uses the standard MVT applied to $g$ on $[a, x]$. $\blacksquare$
 
 ### 5.5 L'Hôpital's Rule
 
-**Theorem 5.7 (L'Hôpital's Rule, $\frac◆LB◆0◆RB◆◆LB◆0◆RB◆$ case).** Suppose $f$ and $g$ are differentiable on An
+**Theorem 5.7 (L'Hôpital's Rule, $\frac{0}{0}$ case).** Suppose $f$ and $g$ are differentiable on An
 open interval containing $c$ (except possibly at $c$ itself), $g'(x) \neq 0$ near $c$And
-$\lim_◆LB◆x \to c◆RB◆ f(x) = \lim_◆LB◆x \to c◆RB◆ g(x) = 0$. If $\lim_◆LB◆x \to c◆RB◆ f'(x)/g'(x) = L$ exists (as a
-finite Number or $\pm\infty$), then $\lim_◆LB◆x \to c◆RB◆ f(x)/g(x) = L$.
+$\lim_{x \to c} f(x) = \lim_{x \to c} g(x) = 0$. If $\lim_{x \to c} f'(x)/g'(x) = L$ exists (as a
+finite Number or $\pm\infty$), then $\lim_{x \to c} f(x)/g(x) = L$.
 
 _Proof._ Extend $f$ and $g$ continuously to $c$ by setting $f(c) = g(c) = 0$. For $x \neq c$By
 Cauchy's Mean Value Theorem, there exists $\xi$ strictly between $c$ and $x$ such that
 
-$$\frac◆LB◆f(x) - f(c)◆RB◆◆LB◆g(x) - g(c)◆RB◆ = \frac◆LB◆f'(\xi)◆RB◆◆LB◆g'(\xi)◆RB◆$$
+$$\frac{f(x) - f(c)}{g(x) - g(c)} = \frac{f'(\xi)}{g'(\xi)}$$
 
-I.e., $\frac◆LB◆f(x)◆RB◆◆LB◆g(x)◆RB◆ = \frac◆LB◆f'(\xi)◆RB◆◆LB◆g'(\xi)◆RB◆$. As $x \to c$We have $\xi \to c$ (since $\xi$ is
+I.e., $\frac{f(x)}{g(x)} = \frac{f'(\xi)}{g'(\xi)}$. As $x \to c$We have $\xi \to c$ (since $\xi$ is
 trapped between $c$ and $x$). Therefore
-$\lim_◆LB◆x \to c◆RB◆ f(x)/g(x) = \lim_◆LB◆\xi \to c◆RB◆ f'(\xi)/g'(\xi) = L$. $\blacksquare$
+$\lim_{x \to c} f(x)/g(x) = \lim_{\xi \to c} f'(\xi)/g'(\xi) = L$. $\blacksquare$
 
-**Theorem 5.7b (L'Hôpital's Rule, $\frac◆LB◆\infty◆RB◆◆LB◆\infty◆RB◆$ case).** Suppose $f$ and $g$ are
+**Theorem 5.7b (L'Hôpital's Rule, $\frac{\infty}{\infty}$ case).** Suppose $f$ and $g$ are
 Differentiable on $(a, b)$ (except possibly at $c$), $g'(x) \neq 0$ near $c$And
-$\lim_◆LB◆x \to c◆RB◆ |f(x)| = \lim_◆LB◆x \to c◆RB◆ |g(x)| = \infty$. If $\lim_◆LB◆x \to c◆RB◆ f'(x)/g'(x) = L$
-exists, Then $\lim_◆LB◆x \to c◆RB◆ f(x)/g(x) = L$.
+$\lim_{x \to c} |f(x)| = \lim_{x \to c} |g(x)| = \infty$. If $\lim_{x \to c} f'(x)/g'(x) = L$
+exists, Then $\lim_{x \to c} f(x)/g(x) = L$.
 
 _Proof (sketch)._ Fix $\varepsilon > 0$. For $x, y$ near $c$ with $x \neq y$By Cauchy's MVT:
 
-$$\frac◆LB◆f(x) - f(y)◆RB◆◆LB◆g(x) - g(y)◆RB◆ = \frac◆LB◆f'(\xi)◆RB◆◆LB◆g'(\xi)◆RB◆$$
+$$\frac{f(x) - f(y)}{g(x) - g(y)} = \frac{f'(\xi)}{g'(\xi)}$$
 
 For some $\xi$ between $x$ and $y$. Since $f'(\xi)/g'(\xi) \approx L$ for $\xi$ near $c$We have:
 
-$$\frac◆LB◆f(x)◆RB◆◆LB◆g(x)◆RB◆ = \frac◆LB◆f(x) - f(y)◆RB◆◆LB◆g(x) - g(y)◆RB◆ \cdot \frac◆LB◆1 - f(y)/f(x)◆RB◆◆LB◆1 - g(y)/g(x)◆RB◆$$
+$$\frac{f(x)}{g(x)} = \frac{f(x) - f(y)}{g(x) - g(y)} \cdot \frac{1 - f(y)/f(x)}{1 - g(y)/g(x)}$$
 
 Since $f(x), g(x) \to \infty$By fixing $y$ and letting $x \to c$The fractions $f(y)/f(x)$ and
 $g(y)/g(x)$ tend to $0$So the second factor tends to $1$. The first factor tends to $L$ by Cauchy's
 MVT. Hence $f(x)/g(x) \to L$. $\blacksquare$
 
 <details>
-<summary>Worked Example: Compute $\lim_◆LB◆x \to 0◆RB◆ \frac◆LB◆e^x - 1 - x◆RB◆◆LB◆x^2◆RB◆$</summary>
+<summary>Worked Example: Compute $\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$</summary>
 
 _Solution._ Both numerator and denominator approach $0$ as $x \to 0$. Applying L'Hôpital's rule:
 
-$$\lim_◆LB◆x \to 0◆RB◆ \frac◆LB◆e^x - 1 - x◆RB◆◆LB◆x^2◆RB◆ = \lim_◆LB◆x \to 0◆RB◆ \frac◆LB◆e^x - 1◆RB◆◆LB◆2x◆RB◆$$
+$$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{e^x - 1}{2x}$$
 
-This is still $\frac◆LB◆0◆RB◆◆LB◆0◆RB◆$So apply L'Hôpital again:
+This is still $\frac{0}{0}$So apply L'Hôpital again:
 
-$$= \lim_◆LB◆x \to 0◆RB◆ \frac◆LB◆e^x◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$$
+$$= \lim_{x \to 0} \frac{e^x}{2} = \frac{1}{2}$$
 
 $\blacksquare$
 
@@ -1019,7 +1019,7 @@ But $f'$ is not continuous at $0$.
 _Proof._ Assume without loss of generality that $f'(a) \lt y \lt f'(b)$. Define $g(x) = f(x) - yx$.
 Then $g$ is differentiable on $[a, b]$ with
 
-$$g'(a) = f'(a) - y \lt 0 \quad \mathrm◆LB◆and◆RB◆ \quad g'(b) = f'(b) - y > 0$$
+$$g'(a) = f'(a) - y \lt 0 \quad \mathrm{and} \quad g'(b) = f'(b) - y > 0$$
 
 Since $g'(a) \lt 0$There exists $x_1 > a$ with $g(x_1) \lt g(a)$ (otherwise $g(x) \geq g(a)$ For $x$
 near $a$Contradicting $g'(a) \lt 0$). Similarly, since $g'(b) > 0$There exists $x_2 \lt b$ with
@@ -1032,7 +1032,7 @@ $g'(c) = 0$So $f'(c) = y$. $\blacksquare$
 <summary>Worked Example: Apply Darboux's theorem to $f(x) = x^2 \sin(1/x)$ ($f(0) = 0$)</summary>
 
 _Solution._ For $x \neq 0$: $f'(x) = 2x \sin(1/x) - \cos(1/x)$. At $x = 0$:
-$f'(0) = \lim_◆LB◆h \to 0◆RB◆ \frac◆LB◆h^2 \sin(1/h)◆RB◆◆LB◆h◆RB◆ = \lim_◆LB◆h \to 0◆RB◆ h \sin(1/h) = 0$.
+$f'(0) = \lim_{h \to 0} \frac{h^2 \sin(1/h)}{h} = \lim_{h \to 0} h \sin(1/h) = 0$.
 
 So $f'(0) = 0$. For any $\delta > 0$The term $-\cos(1/x)$ oscillates between $-1$ and $1$ on
 $(0, \delta)$So $f'$ takes all values in $[-1, 1]$ infinitely often on $(0, \delta)$.
@@ -1049,28 +1049,28 @@ Highly discontinuous while retaining the intermediate value property. $\blacksqu
 
 $f(0) = 1$$f'(0) = 1$$f''(0) = 1$$f'''(0) = 1$. So
 
-$$T_3(x) = 1 + x + \frac◆LB◆x^2◆RB◆◆LB◆2◆RB◆ + \frac◆LB◆x^3◆RB◆◆LB◆6◆RB◆$$
+$$T_3(x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{6}$$
 
-The remainder is $R_3(x) = \frac◆LB◆e^\xi◆RB◆◆LB◆24◆RB◆ x^4$ for some $\xi$ between $0$ and $x$.
+The remainder is $R_3(x) = \frac{e^\xi}{24} x^4$ for some $\xi$ between $0$ and $x$.
 
 <details>
-<summary>Worked Example: Approximate $\sin(0.1)$ with error less than $10^◆LB◆-10◆RB◆$</summary>
+<summary>Worked Example: Approximate $\sin(0.1)$ with error less than $10^{-10}$</summary>
 
-_Solution._ For $f(x) = \sin x$ about $a = 0$: $f^◆LB◆(k)◆RB◆(0) \in \{0, 1, -1\}$ and the Taylor
+_Solution._ For $f(x) = \sin x$ about $a = 0$: $f^{(k)}(0) \in \{0, 1, -1\}$ and the Taylor
 Polynomial of degree $n$ has the form $T_n(x) = x - x^3/3! + x^5/5! - \cdots$ (odd terms only).
 
 The Lagrange remainder is
-$|R_n(x)| = \frac◆LB◆|f^◆LB◆(n+1)◆RB◆(\xi)|◆RB◆◆LB◆(n+1)!◆RB◆ |x|^◆LB◆n+1◆RB◆ \leq \frac◆LB◆|x|^◆LB◆n+1◆RB◆◆RB◆◆LB◆(n+1)!◆RB◆$ (since
-$|f^◆LB◆(k)◆RB◆| \leq 1$ for all $k$).
+$|R_n(x)| = \frac{|f^{(n+1)}(\xi)|}{(n+1)!} |x|^{n+1} \leq \frac{|x|^{n+1}}{(n+1)!}$ (since
+$|f^{(k)}| \leq 1$ for all $k$).
 
-We need $\frac◆LB◆(0.1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆(n+1)!◆RB◆ \lt 10^◆LB◆-10◆RB◆$. Testing: for $n = 5$
-$\frac◆LB◆(0.1)^6◆RB◆◆LB◆6!◆RB◆ = \frac◆LB◆10^◆LB◆-6◆RB◆◆RB◆◆LB◆720◆RB◆ \approx 1.39 \times 10^◆LB◆-9◆RB◆ \gt 10^◆LB◆-10◆RB◆$. For $n = 7$:
-$\frac◆LB◆(0.1)^8◆RB◆◆LB◆8!◆RB◆ = \frac◆LB◆10^◆LB◆-8◆RB◆◆RB◆◆LB◆40320◆RB◆ \approx 2.48 \times 10^◆LB◆-13◆RB◆ \lt 10^◆LB◆-10◆RB◆$.
+We need $\frac{(0.1)^{n+1}}{(n+1)!} \lt 10^{-10}$. Testing: for $n = 5$
+$\frac{(0.1)^6}{6!} = \frac{10^{-6}}{720} \approx 1.39 \times 10^{-9} \gt 10^{-10}$. For $n = 7$:
+$\frac{(0.1)^8}{8!} = \frac{10^{-8}}{40320} \approx 2.48 \times 10^{-13} \lt 10^{-10}$.
 
-So $T_7(0.1) = 0.1 - \frac◆LB◆(0.1)^3◆RB◆◆LB◆6◆RB◆ + \frac◆LB◆(0.1)^5◆RB◆◆LB◆120◆RB◆ - \frac◆LB◆(0.1)^7◆RB◆◆LB◆5040◆RB◆$
+So $T_7(0.1) = 0.1 - \frac{(0.1)^3}{6} + \frac{(0.1)^5}{120} - \frac{(0.1)^7}{5040}$
 $= 0.1 - 0.00016667 + 0.00000083 - 0.00000000 \approx 0.09983342$.
 
-The error is at most $2.48 \times 10^◆LB◆-13◆RB◆ \lt 10^◆LB◆-10◆RB◆$. $\blacksquare$
+The error is at most $2.48 \times 10^{-13} \lt 10^{-10}$. $\blacksquare$
 
 </details>
 
@@ -1078,12 +1078,12 @@ The error is at most $2.48 \times 10^◆LB◆-13◆RB◆ \lt 10^◆LB◆-10◆RB
 <summary>Worked Example: Find the Maclaurin series for $\ln(1 + x)$ and its radius of convergence</summary>
 
 _Solution._ For $f(x) = \ln(1+x)$: $f(0) = 0$$f'(x) = 1/(1+x)$$f''(x) = -1/(1+x)^2$
-$f^◆LB◆(k)◆RB◆(x) = (-1)^◆LB◆k-1◆RB◆(k-1)!/(1+x)^k$ for $k \geq 1$. So $f^◆LB◆(k)◆RB◆(0) = (-1)^◆LB◆k-1◆RB◆(k-1)!$.
+$f^{(k)}(x) = (-1)^{k-1}(k-1)!/(1+x)^k$ for $k \geq 1$. So $f^{(k)}(0) = (-1)^{k-1}(k-1)!$.
 
-$$\ln(1+x) = \sum_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^◆LB◆k-1◆RB◆(k-1)!◆RB◆◆LB◆k!◆RB◆ x^k = \sum_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^◆LB◆k-1◆RB◆◆RB◆◆LB◆k◆RB◆ x^k$$
+$$\ln(1+x) = \sum_{k=1}^{\infty} \frac{(-1)^{k-1}(k-1)!}{k!} x^k = \sum_{k=1}^{\infty} \frac{(-1)^{k-1}}{k} x^k$$
 
 By the ratio test:
-$\lim_◆LB◆k \to \infty◆RB◆ |a_◆LB◆k+1◆RB◆/a_k| = \lim_◆LB◆k \to \infty◆RB◆ \frac◆LB◆k◆RB◆◆LB◆k+1◆RB◆ |x| = |x|$. The series
+$\lim_{k \to \infty} |a_{k+1}/a_k| = \lim_{k \to \infty} \frac{k}{k+1} |x| = |x|$. The series
 converges for $|x| \lt 1$ and diverges for $|x| > 1$. At $x = 1$ we get the alternating Harmonic
 series (converges to $\ln 2$). At $x = -1$ we get the negative harmonic series (diverges).
 
@@ -1095,26 +1095,26 @@ The radius of convergence is $R = 1$ and the interval of convergence is $(-1, 1]
 <summary>Worked Example: Compute the Taylor expansion of $\cos x$ about $a = \pi/3$ with remainder bound</summary>
 
 _Solution._ Compute derivatives:
-$f(x) = \cos x$$f'(x) = -\sin x$$f''(x) = -\cos x$$f'''(x) = \sin x$ $f^◆LB◆(4)◆RB◆(x) = \cos x$.
+$f(x) = \cos x$$f'(x) = -\sin x$$f''(x) = -\cos x$$f'''(x) = \sin x$ $f^{(4)}(x) = \cos x$.
 Evaluated at $a = \pi/3$:
 
-$f(\pi/3) = 1/2$$f'(\pi/3) = -\sqrt◆LB◆3◆RB◆/2$$f''(\pi/3) = -1/2$$f'''(\pi/3) = \sqrt◆LB◆3◆RB◆/2$.
+$f(\pi/3) = 1/2$$f'(\pi/3) = -\sqrt{3}/2$$f''(\pi/3) = -1/2$$f'''(\pi/3) = \sqrt{3}/2$.
 
 The third-degree Taylor polynomial is:
 
-$$T_3(x) = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆\sqrt◆LB◆3◆RB◆◆RB◆◆LB◆2◆RB◆\left(x - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right) - \frac◆LB◆1◆RB◆◆LB◆4◆RB◆\left(x - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^2 + \frac◆LB◆\sqrt◆LB◆3◆RB◆◆RB◆◆LB◆12◆RB◆\left(x - \frac◆LB◆\pi◆RB◆◆LB◆3◆RB◆\right)^3$$
+$$T_3(x) = \frac{1}{2} - \frac{\sqrt{3}}{2}\left(x - \frac{\pi}{3}\right) - \frac{1}{4}\left(x - \frac{\pi}{3}\right)^2 + \frac{\sqrt{3}}{12}\left(x - \frac{\pi}{3}\right)^3$$
 
-The remainder satisfies $|R_3(x)| \leq \frac◆LB◆|x - \pi/3|^4◆RB◆◆LB◆24◆RB◆$ (since
-$|f^◆LB◆(4)◆RB◆(\xi)| = |\cos \xi| \leq 1$).
+The remainder satisfies $|R_3(x)| \leq \frac{|x - \pi/3|^4}{24}$ (since
+$|f^{(4)}(\xi)| = |\cos \xi| \leq 1$).
 
 For example, at $x = 1$:
-$|R_3(1)| \leq \frac◆LB◆|1 - \pi/3|^4◆RB◆◆LB◆24◆RB◆ \approx \frac◆LB◆0.0472^4◆RB◆◆LB◆24◆RB◆ \approx 2.1 \times 10^◆LB◆-7◆RB◆$.
+$|R_3(1)| \leq \frac{|1 - \pi/3|^4}{24} \approx \frac{0.0472^4}{24} \approx 2.1 \times 10^{-7}$.
 $\blacksquare$
 
 </details>
 
-:::caution Common Pitfall L'Hôpital's rule only applies to indeterminate forms $\frac◆LB◆0◆RB◆◆LB◆0◆RB◆$ and
-$\frac◆LB◆\infty◆RB◆◆LB◆\infty◆RB◆$. Applying it to forms like $\frac◆LB◆1◆RB◆◆LB◆0◆RB◆$ or $\frac◆LB◆\infty◆RB◆◆LB◆1◆RB◆$ will give
+:::caution Common Pitfall L'Hôpital's rule only applies to indeterminate forms $\frac{0}{0}$ and
+$\frac{\infty}{\infty}$. Applying it to forms like $\frac{1}{0}$ or $\frac{\infty}{1}$ will give
 incorrect results. Always Verify the indeterminate form before applying the rule. Also, L'Hôpital's
 rule requires that the Limit of the quotient of derivatives exists; if it does not exist
 (oscillates), the original limit May still exist. :::
@@ -1123,30 +1123,30 @@ rule requires that the Limit of the quotient of derivatives exists; if it does n
 
 ### 6.1 Definition
 
-Let $f : [a,b] \to \mathbb◆LB◆R◆RB◆$ be bounded. A **partition** of $[a,b]$ is a finite set
+Let $f : [a,b] \to \mathbb{R}$ be bounded. A **partition** of $[a,b]$ is a finite set
 $P = \{x_0, x_1, \ldots, x_n\}$ with $a = x_0 \lt x_1 \lt \cdots \lt x_n = b$.
 
 The **upper sum** and **lower sum** of $f$ with respect to $P$ are:
 
-$$U(f, P) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ M_i \Delta x_i, \quad L(f, P) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ m_i \Delta x_i$$
+$$U(f, P) = \sum_{i=1}^{n} M_i \Delta x_i, \quad L(f, P) = \sum_{i=1}^{n} m_i \Delta x_i$$
 
-Where $M_i = \sup\{f(x) : x \in [x_◆LB◆i-1◆RB◆, x_i]\}$$m_i = \inf\{f(x) : x \in [x_◆LB◆i-1◆RB◆, x_i]\}$And
-$\Delta x_i = x_i - x_◆LB◆i-1◆RB◆$.
+Where $M_i = \sup\{f(x) : x \in [x_{i-1}, x_i]\}$$m_i = \inf\{f(x) : x \in [x_{i-1}, x_i]\}$And
+$\Delta x_i = x_i - x_{i-1}$.
 
-The **mesh** of $P$ is $\|P\| = \max_◆LB◆1 \leq i \leq n◆RB◆ \Delta x_i$.
+The **mesh** of $P$ is $\|P\| = \max_{1 \leq i \leq n} \Delta x_i$.
 
 **Definition.** $f$ is **Riemann integrable** on $[a,b]$ if the upper and lower integrals are equal:
 
-$$\overline◆LB◆\int_a^b◆RB◆ f(x)\, dx = \underline◆LB◆\int_a^b◆RB◆ f(x)\, dx$$
+$$\overline{\int_a^b} f(x)\, dx = \underline{\int_a^b} f(x)\, dx$$
 
-Where $\overline◆LB◆\int_a^b◆RB◆ f = \inf\{U(f,P) : P \mathrm◆LB◆\ is\ a\ partition◆RB◆\}$ and
-$\underline◆LB◆\int_a^b◆RB◆ f = \sup\{L(f,P) : P \mathrm◆LB◆\ is\ a\ partition◆RB◆\}$.
+Where $\overline{\int_a^b} f = \inf\{U(f,P) : P \mathrm{\ is\ a\ partition}\}$ and
+$\underline{\int_a^b} f = \sup\{L(f,P) : P \mathrm{\ is\ a\ partition}\}$.
 
 The common value is denoted $\int_a^b f(x)\, dx$.
 
 ### 6.2 Integrability Criteria
 
-**Theorem 6.1 (Riemann Integrability Criterion).** A bounded function $f : [a,b] \to \mathbb◆LB◆R◆RB◆$ is
+**Theorem 6.1 (Riemann Integrability Criterion).** A bounded function $f : [a,b] \to \mathbb{R}$ is
 Riemann integrable if and only if for every $\varepsilon > 0$There exists a partition $P$ such that
 
 $$U(f,P) - L(f,P) \lt \varepsilon$$
@@ -1157,21 +1157,21 @@ _Proof._ Let $f$ be continuous on $[a,b]$. By the Heine-Cantor theorem, $f$ is u
 Given $\varepsilon > 0$Choose $\delta > 0$ such that $|x - y| \lt \delta$ implies
 $|f(x) - f(y)| \lt \varepsilon/(b-a)$.
 
-Let $P$ be any partition with $\|P\| \lt \delta$. On each subinterval $[x_◆LB◆i-1◆RB◆, x_i]$By the Extreme
+Let $P$ be any partition with $\|P\| \lt \delta$. On each subinterval $[x_{i-1}, x_i]$By the Extreme
 Value Theorem, $f$ attains its maximum $M_i$ and minimum $m_i$. By uniform continuity:
 $M_i - m_i \lt \varepsilon/(b-a)$. Therefore:
 
-$$U(f,P) - L(f,P) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆(M_i - m_i)\Delta x_i \lt \frac◆LB◆\varepsilon◆RB◆◆LB◆b-a◆RB◆ \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \Delta x_i = \varepsilon$$
+$$U(f,P) - L(f,P) = \sum_{i=1}^{n}(M_i - m_i)\Delta x_i \lt \frac{\varepsilon}{b-a} \sum_{i=1}^{n} \Delta x_i = \varepsilon$$
 
 By the Riemann integrability criterion, $f$ is integrable. $\blacksquare$
 
 **Theorem 6.3.** Every monotone function on $[a,b]$ is Riemann integrable.
 
 _Proof._ Assume $f$ is increasing (the decreasing case is analogous). Given $\varepsilon > 0$Let
-$P_n$ be the uniform partition with $n$ subintervals of length $(b-a)/n$. On $[x_◆LB◆i-1◆RB◆, x_i]$:
-$M_i = f(x_i)$ and $m_i = f(x_◆LB◆i-1◆RB◆)$. Then:
+$P_n$ be the uniform partition with $n$ subintervals of length $(b-a)/n$. On $[x_{i-1}, x_i]$:
+$M_i = f(x_i)$ and $m_i = f(x_{i-1})$. Then:
 
-$$U(f, P_n) - L(f, P_n) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ [f(x_i) - f(x_◆LB◆i-1◆RB◆)] \cdot \frac◆LB◆b-a◆RB◆◆LB◆n◆RB◆ = [f(b) - f(a)] \cdot \frac◆LB◆b-a◆RB◆◆LB◆n◆RB◆$$
+$$U(f, P_n) - L(f, P_n) = \sum_{i=1}^{n} [f(x_i) - f(x_{i-1})] \cdot \frac{b-a}{n} = [f(b) - f(a)] \cdot \frac{b-a}{n}$$
 
 Choose $n$ large enough that $[f(b) - f(a)](b-a)/n \lt \varepsilon$. $\blacksquare$
 
@@ -1180,11 +1180,11 @@ integrable.
 
 _Proof (sketch)._ Let $f$ have discontinuities at $d_1, \ldots, d_m \in [a,b]$. Given
 $\varepsilon > 0$ Enclose each $d_j$ in a small interval $I_j$ of total length
-$\varepsilon/(2M)$Where $M = \sup_◆LB◆[a,b]◆RB◆ |f|$. On the remaining set (a finite union of closed
+$\varepsilon/(2M)$Where $M = \sup_{[a,b]} |f|$. On the remaining set (a finite union of closed
 intervals), $f$ is continuous, Hence uniformly continuous. Choose a partition fine enough that the
 oscillation of $f$ on each Subinterval outside the $I_j$ is less than $\varepsilon/(2(b-a))$. Then:
 
-$$U(f, P) - L(f, P) \leq \frac◆LB◆\varepsilon◆RB◆◆LB◆2(b-a)◆RB◆ \cdot (b - a) + 2M \cdot \frac◆LB◆\varepsilon◆RB◆◆LB◆2M◆RB◆ = \varepsilon$$
+$$U(f, P) - L(f, P) \leq \frac{\varepsilon}{2(b-a)} \cdot (b - a) + 2M \cdot \frac{\varepsilon}{2M} = \varepsilon$$
 
 $\blacksquare$
 
@@ -1192,7 +1192,7 @@ $\blacksquare$
 If $f$ and $g$ are integrable, then so are $|f|$, $f^2$And $\max(f, g)$.
 
 **Theorem 6.4b (Lebesgue's Criterion for Riemann Integrability).** A bounded function
-$f : [a,b] \to \mathbb◆LB◆R◆RB◆$ Is Riemann integrable if and only if the set of its discontinuities has
+$f : [a,b] \to \mathbb{R}$ Is Riemann integrable if and only if the set of its discontinuities has
 (Lebesgue) measure zero.
 
 _Remark._ A set has measure zero if it can be covered by countably many intervals of arbitrarily
@@ -1200,16 +1200,16 @@ Small total length. In particular, every countable set has measure zero. This me
 
 - Every continuous function is integrable (empty set of discontinuities).
 - Every function with countably many discontinuities is integrable (Theorem 6.4 is a special case).
-- The Dirichlet function $f(x) = 1$ for $x \in \mathbb◆LB◆Q◆RB◆$ and $f(x) = 0$ for $x \notin \mathbb◆LB◆Q◆RB◆$
+- The Dirichlet function $f(x) = 1$ for $x \in \mathbb{Q}$ and $f(x) = 0$ for $x \notin \mathbb{Q}$
   is discontinuous everywhere (set of discontinuities = $[a,b]$Measure $> 0$), hence not integrable.
 - Thomae's function $f(x) = 1/q$ if $x = p/q$ in lowest terms, and $f(x) = 0$ if $x$ is irrational,
-  is continuous at every irrational and discontinuous at every rational. Since $\mathbb◆LB◆Q◆RB◆$ is
+  is continuous at every irrational and discontinuous at every rational. Since $\mathbb{Q}$ is
   countable (measure zero), Thomae's function is Riemann integrable, with $\int_0^1 f = 0$.
 
 ### 6.3 Properties of the Integral
 
 **Theorem 6.5 (Linearity).** If $f$ and $g$ are integrable on $[a,b]$ and
-$\alpha, \beta \in \mathbb◆LB◆R◆RB◆$:
+$\alpha, \beta \in \mathbb{R}$:
 
 $$\int_a^b (\alpha f + \beta g) = \alpha \int_a^b f + \beta \int_a^b g$$
 
@@ -1229,7 +1229,7 @@ Is differentiable on $(a,b)$ and $F'(x) = f(x)$.
 _Proof._ Let $h > 0$ (the case $h \lt 0$ is similar). By the Mean Value Theorem for Integrals (which
 follows from the EVT), there exists $\xi \in [x, x+h]$ such that
 
-$$\frac◆LB◆F(x+h) - F(x)◆RB◆◆LB◆h◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆h◆RB◆\int_x^◆LB◆x+h◆RB◆ f(t)\, dt = f(\xi)$$
+$$\frac{F(x+h) - F(x)}{h} = \frac{1}{h}\int_x^{x+h} f(t)\, dt = f(\xi)$$
 
 As $h \to 0^+$We have $\xi \to x^+$ (since $\xi \in [x, x+h]$). By continuity of $f$
 $f(\xi) \to f(x)$. Hence $F'_+(x) = f(x)$. A similar argument gives $F'_-(x) = f(x)$. $\blacksquare$
@@ -1240,10 +1240,10 @@ integrable), Then
 $$\int_a^b f(x)\, dx = F(b) - F(a)$$
 
 _Proof._ Let $P = \{x_0, \ldots, x_n\}$ be any partition of $[a,b]$. By the Mean Value Theorem, For
-each $i$ there exists $\xi_i \in [x_◆LB◆i-1◆RB◆, x_i]$ with $F(x_i) - F(x_◆LB◆i-1◆RB◆) = f(\xi_i)\Delta x_i$.
+each $i$ there exists $\xi_i \in [x_{i-1}, x_i]$ with $F(x_i) - F(x_{i-1}) = f(\xi_i)\Delta x_i$.
 Summing:
 
-$$F(b) - F(a) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ [F(x_i) - F(x_◆LB◆i-1◆RB◆)] = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ f(\xi_i) \Delta x_i$$
+$$F(b) - F(a) = \sum_{i=1}^{n} [F(x_i) - F(x_{i-1})] = \sum_{i=1}^{n} f(\xi_i) \Delta x_i$$
 
 The right-hand side is a Riemann sum for $\int_a^b f$. As $\|P\| \to 0$This converges to the
 Integral. Hence $F(b) - F(a) = \int_a^b f(x)\, dx$. $\blacksquare$
@@ -1252,30 +1252,30 @@ Integral. Hence $F(b) - F(a) = \int_a^b f(x)\, dx$. $\blacksquare$
 
 **Problem.** Compute $\int_0^1 x^2\, dx$ from the definition.
 
-_Solution._ Let $P_n = \{0, 1/n, 2/n, \ldots, 1\}$. On $[x_◆LB◆i-1◆RB◆, x_i] = [(i-1)/n, i/n]$, $f(x) = x^2$
+_Solution._ Let $P_n = \{0, 1/n, 2/n, \ldots, 1\}$. On $[x_{i-1}, x_i] = [(i-1)/n, i/n]$, $f(x) = x^2$
 Has $M_i = (i/n)^2$ and $m_i = ((i-1)/n)^2$.
 
-$$U(f, P_n) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \frac◆LB◆i^2◆RB◆◆LB◆n^2◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆n^3◆RB◆ \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ i^2 = \frac◆LB◆1◆RB◆◆LB◆n^3◆RB◆ \cdot \frac◆LB◆n(n+1)(2n+1)◆RB◆◆LB◆6◆RB◆$$
+$$U(f, P_n) = \sum_{i=1}^{n} \frac{i^2}{n^2} \cdot \frac{1}{n} = \frac{1}{n^3} \sum_{i=1}^{n} i^2 = \frac{1}{n^3} \cdot \frac{n(n+1)(2n+1)}{6}$$
 
 As $n \to \infty$:
-$\lim_◆LB◆n \to \infty◆RB◆ U(f, P_n) = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆(n+1)(2n+1)◆RB◆◆LB◆6n^2◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆6◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆3◆RB◆$.
+$\lim_{n \to \infty} U(f, P_n) = \lim_{n \to \infty} \frac{(n+1)(2n+1)}{6n^2} = \frac{2}{6} = \frac{1}{3}$.
 
 Similarly, $L(f, P_n) \to 1/3$. So $\int_0^1 x^2\, dx = 1/3$. $\blacksquare$
 
 <details>
-<summary>Worked Example: Compute $\int_0^1 \sqrt◆LB◆x◆RB◆\, dx$ from the definition</summary>
+<summary>Worked Example: Compute $\int_0^1 \sqrt{x}\, dx$ from the definition</summary>
 
-_Solution._ Let $P_n = \{0, 1/n, 2/n, \ldots, 1\}$. On $[(i-1)/n, i/n]$, $f(x) = \sqrt◆LB◆x◆RB◆$ has
-$M_i = \sqrt◆LB◆i/n◆RB◆$ and $m_i = \sqrt◆LB◆(i-1)/n◆RB◆$.
+_Solution._ Let $P_n = \{0, 1/n, 2/n, \ldots, 1\}$. On $[(i-1)/n, i/n]$, $f(x) = \sqrt{x}$ has
+$M_i = \sqrt{i/n}$ and $m_i = \sqrt{(i-1)/n}$.
 
-$$U(f, P_n) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \sqrt◆LB◆\frac◆LB◆i◆RB◆◆LB◆n◆RB◆◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆n^◆LB◆3/2◆RB◆◆RB◆ \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \sqrt◆LB◆i◆RB◆$$
+$$U(f, P_n) = \sum_{i=1}^{n} \sqrt{\frac{i}{n}} \cdot \frac{1}{n} = \frac{1}{n^{3/2}} \sum_{i=1}^{n} \sqrt{i}$$
 
-Using $\sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \sqrt◆LB◆i◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆3◆RB◆ n^◆LB◆3/2◆RB◆ + O(n^◆LB◆1/2◆RB◆)$ (obtained from comparing with
-$\int_0^n \sqrt◆LB◆x◆RB◆\, dx$):
+Using $\sum_{i=1}^{n} \sqrt{i} = \frac{2}{3} n^{3/2} + O(n^{1/2})$ (obtained from comparing with
+$\int_0^n \sqrt{x}\, dx$):
 
-$$\lim_◆LB◆n \to \infty◆RB◆ U(f, P_n) = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n^◆LB◆3/2◆RB◆◆RB◆ \cdot \frac◆LB◆2◆RB◆◆LB◆3◆RB◆n^◆LB◆3/2◆RB◆ = \frac◆LB◆2◆RB◆◆LB◆3◆RB◆$$
+$$\lim_{n \to \infty} U(f, P_n) = \lim_{n \to \infty} \frac{1}{n^{3/2}} \cdot \frac{2}{3}n^{3/2} = \frac{2}{3}$$
 
-Similarly $L(f, P_n) \to 2/3$Confirming $\int_0^1 \sqrt◆LB◆x◆RB◆\, dx = 2/3$. $\blacksquare$
+Similarly $L(f, P_n) \to 2/3$Confirming $\int_0^1 \sqrt{x}\, dx = 2/3$. $\blacksquare$
 
 </details>
 
@@ -1286,96 +1286,96 @@ integration Is unbounded or the integrand is unbounded.
 
 **Type I (Infinite Intervals).** If $f$ is Riemann integrable on $[a, b]$ for every $b > a$Define:
 
-$$\int_a^◆LB◆\infty◆RB◆ f(x)\, dx = \lim_◆LB◆b \to \infty◆RB◆ \int_a^b f(x)\, dx$$
+$$\int_a^{\infty} f(x)\, dx = \lim_{b \to \infty} \int_a^b f(x)\, dx$$
 
 The integral **converges** if this limit exists as a finite number; otherwise it **diverges**.
 
 **Type II (Unbounded Integrands).** If $f$ is unbounded near $a$ but integrable on $[c, b]$ for
 every $c \in (a, b]$:
 
-$$\int_a^b f(x)\, dx = \lim_◆LB◆c \to a^+◆RB◆ \int_c^b f(x)\, dx$$
+$$\int_a^b f(x)\, dx = \lim_{c \to a^+} \int_c^b f(x)\, dx$$
 
 **Theorem 6.10 (Comparison Test for Improper Integrals).** If $0 \leq f(x) \leq g(x)$ for
 $x \geq a$:
 
-- If $\int_a^◆LB◆\infty◆RB◆ g$ converges, then $\int_a^◆LB◆\infty◆RB◆ f$ converges.
-- If $\int_a^◆LB◆\infty◆RB◆ f$ diverges, then $\int_a^◆LB◆\infty◆RB◆ g$ diverges.
+- If $\int_a^{\infty} g$ converges, then $\int_a^{\infty} f$ converges.
+- If $\int_a^{\infty} f$ diverges, then $\int_a^{\infty} g$ diverges.
 
-**Theorem 6.11 (Absolute Convergence).** If $\int_a^◆LB◆\infty◆RB◆ |f(x)|\, dx$ converges, then
-$\int_a^◆LB◆\infty◆RB◆ f(x)\, dx$ converges.
+**Theorem 6.11 (Absolute Convergence).** If $\int_a^{\infty} |f(x)|\, dx$ converges, then
+$\int_a^{\infty} f(x)\, dx$ converges.
 
 **Theorem 6.12 ($p$-Test for Improper Integrals).**
 
-- **Type I:** $\int_1^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆x^p◆RB◆\, dx$ converges if and only if $p > 1$.
-- **Type II:** $\int_0^1 \frac◆LB◆1◆RB◆◆LB◆x^p◆RB◆\, dx$ converges if and only if $p < 1$.
+- **Type I:** $\int_1^{\infty} \frac{1}{x^p}\, dx$ converges if and only if $p > 1$.
+- **Type II:** $\int_0^1 \frac{1}{x^p}\, dx$ converges if and only if $p < 1$.
 
 _Proof._ For Type I with $p \neq 1$:
 
-$$\int_1^◆LB◆\infty◆RB◆ x^◆LB◆-p◆RB◆\, dx = \lim_◆LB◆b \to \infty◆RB◆ \left[\frac◆LB◆x^◆LB◆1-p◆RB◆◆RB◆◆LB◆1-p◆RB◆\right]_1^b = \lim_◆LB◆b \to \infty◆RB◆ \frac◆LB◆b^◆LB◆1-p◆RB◆ - 1◆RB◆◆LB◆1-p◆RB◆$$
+$$\int_1^{\infty} x^{-p}\, dx = \lim_{b \to \infty} \left[\frac{x^{1-p}}{1-p}\right]_1^b = \lim_{b \to \infty} \frac{b^{1-p} - 1}{1-p}$$
 
 This converges when $1 - p < 0$I.e., $p > 1$. For $p = 1$:
-$\int_1^◆LB◆\infty◆RB◆ 1/x\, dx = \lim_◆LB◆b \to \infty◆RB◆ \ln b = \infty$.
+$\int_1^{\infty} 1/x\, dx = \lim_{b \to \infty} \ln b = \infty$.
 
-For Type II: $\int_0^1 x^◆LB◆-p◆RB◆\, dx = \lim_◆LB◆c \to 0^+◆RB◆ \frac◆LB◆1 - c^◆LB◆1-p◆RB◆◆RB◆◆LB◆1-p◆RB◆$. This converges when
+For Type II: $\int_0^1 x^{-p}\, dx = \lim_{c \to 0^+} \frac{1 - c^{1-p}}{1-p}$. This converges when
 $1 - p > 0$I.e., $p < 1$. $\blacksquare$
 
 _Remark._ The $p$-test for Type I integrals mirrors the $p$-series test: $\sum 1/n^p$ converges Iff
 $p > 1$. This is not a coincidence --- the integral test establishes the connection.
 
 <details>
-<summary>Worked Example: Evaluate $\int_0^◆LB◆\infty◆RB◆ e^◆LB◆-x◆RB◆\, dx$</summary>
+<summary>Worked Example: Evaluate $\int_0^{\infty} e^{-x}\, dx$</summary>
 
 _Solution._ This is a Type I improper integral:
 
-$$\int_0^◆LB◆\infty◆RB◆ e^◆LB◆-x◆RB◆\, dx = \lim_◆LB◆b \to \infty◆RB◆ \int_0^b e^◆LB◆-x◆RB◆\, dx = \lim_◆LB◆b \to \infty◆RB◆ \left[-e^◆LB◆-x◆RB◆\right]_0^b = \lim_◆LB◆b \to \infty◆RB◆ (-e^◆LB◆-b◆RB◆ + 1) = 1$$
+$$\int_0^{\infty} e^{-x}\, dx = \lim_{b \to \infty} \int_0^b e^{-x}\, dx = \lim_{b \to \infty} \left[-e^{-x}\right]_0^b = \lim_{b \to \infty} (-e^{-b} + 1) = 1$$
 
 So the integral converges to $1$. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Does $\int_1^◆LB◆\infty◆RB◆ \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\, dx$ converge?</summary>
+<summary>Worked Example: Does $\int_1^{\infty} \frac{\sin x}{x}\, dx$ converge?</summary>
 
-_Solution._ The integral $\int_1^◆LB◆\infty◆RB◆ \left|\frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\right|\, dx$ diverges (compare with
-$\int_1^◆LB◆\infty◆RB◆ \frac◆LB◆|\sin x|◆RB◆◆LB◆x◆RB◆\, dx \geq \sum_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆ \int_◆LB◆k\pi◆RB◆^◆LB◆(k+1)\pi◆RB◆ \frac◆LB◆|\sin x|◆RB◆◆LB◆x◆RB◆\, dx \geq
-\sum_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆2◆RB◆◆LB◆(k+1)\pi◆RB◆$,
+_Solution._ The integral $\int_1^{\infty} \left|\frac{\sin x}{x}\right|\, dx$ diverges (compare with
+$\int_1^{\infty} \frac{|\sin x|}{x}\, dx \geq \sum_{k=1}^{\infty} \int_{k\pi}^{(k+1)\pi} \frac{|\sin x|}{x}\, dx \geq
+\sum_{k=1}^{\infty} \frac{2}{(k+1)\pi}$,
 which diverges by comparison with the harmonic series).
 
-However, $\int_1^◆LB◆\infty◆RB◆ \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\, dx$ converges by **Dirichlet's test for integrals**.
+However, $\int_1^{\infty} \frac{\sin x}{x}\, dx$ converges by **Dirichlet's test for integrals**.
 Let $F(b) = \int_1^b \sin x\, dx = \cos 1 - \cos b$Which is bounded by $|\cos 1 - \cos b| \leq 2$.
 Since $1/x$ decreases to $0$By integration by parts:
 
-$$\int_1^b \frac◆LB◆\sin x◆RB◆◆LB◆x◆RB◆\, dx = \frac◆LB◆-\cos x◆RB◆◆LB◆x◆RB◆\bigg|_1^b - \int_1^b \frac◆LB◆\cos x◆RB◆◆LB◆x^2◆RB◆\, dx$$
+$$\int_1^b \frac{\sin x}{x}\, dx = \frac{-\cos x}{x}\bigg|_1^b - \int_1^b \frac{\cos x}{x^2}\, dx$$
 
 As $b \to \infty$The boundary term $\cos b / b \to 0$ and
-$\int_1^◆LB◆\infty◆RB◆ \frac◆LB◆|\cos x|◆RB◆◆LB◆x^2◆RB◆\, dx \leq
-\int_1^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆x^2◆RB◆\, dx = 1$, so the
+$\int_1^{\infty} \frac{|\cos x|}{x^2}\, dx \leq
+\int_1^{\infty} \frac{1}{x^2}\, dx = 1$, so the
 improper integral converges (conditionally). $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Evaluate $\int_0^1 \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆x◆RB◆◆RB◆\, dx$ (Type II improper integral)</summary>
+<summary>Worked Example: Evaluate $\int_0^1 \frac{1}{\sqrt{x}}\, dx$ (Type II improper integral)</summary>
 
-_Solution._ The integrand $f(x) = 1/\sqrt◆LB◆x◆RB◆$ is unbounded as $x \to 0^+$. Compute:
+_Solution._ The integrand $f(x) = 1/\sqrt{x}$ is unbounded as $x \to 0^+$. Compute:
 
-$$\int_0^1 \frac◆LB◆1◆RB◆◆LB◆\sqrt◆LB◆x◆RB◆◆RB◆\, dx = \lim_◆LB◆c \to 0^+◆RB◆ \int_c^1 x^◆LB◆-1/2◆RB◆\, dx = \lim_◆LB◆c \to 0^+◆RB◆ \left[2\sqrt◆LB◆x◆RB◆\right]_c^1 = \lim_◆LB◆c \to 0^+◆RB◆ (2 - 2\sqrt◆LB◆c◆RB◆) = 2$$
+$$\int_0^1 \frac{1}{\sqrt{x}}\, dx = \lim_{c \to 0^+} \int_c^1 x^{-1/2}\, dx = \lim_{c \to 0^+} \left[2\sqrt{x}\right]_c^1 = \lim_{c \to 0^+} (2 - 2\sqrt{c}) = 2$$
 
-The improper integral converges to $2$. Note that $\int_0^1 x^◆LB◆-p◆RB◆\, dx$ converges for $p \lt 1$ and
+The improper integral converges to $2$. Note that $\int_0^1 x^{-p}\, dx$ converges for $p \lt 1$ and
 Diverges for $p \geq 1$. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Determine convergence of $\int_1^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆x^p◆RB◆\, dx$ for various $p$</summary>
+<summary>Worked Example: Determine convergence of $\int_1^{\infty} \frac{1}{x^p}\, dx$ for various $p$</summary>
 
-_Solution._ By the $p$-test (Theorem 6.12): $\int_1^◆LB◆\infty◆RB◆ x^◆LB◆-p◆RB◆\, dx$ converges iff $p > 1$.
+_Solution._ By the $p$-test (Theorem 6.12): $\int_1^{\infty} x^{-p}\, dx$ converges iff $p > 1$.
 
 Specifically:
 
-- $p = 2$: $\int_1^◆LB◆\infty◆RB◆ 1/x^2\, dx = \lim_◆LB◆b \to \infty◆RB◆ [-1/x]_1^b = 0 - (-1) = 1$. Converges.
-- $p = 1$: $\int_1^◆LB◆\infty◆RB◆ 1/x\, dx = \lim_◆LB◆b \to \infty◆RB◆ \ln b = \infty$. Diverges.
-- $p = 1/2$: $\int_1^◆LB◆\infty◆RB◆ 1/\sqrt◆LB◆x◆RB◆\, dx = \lim_◆LB◆b \to \infty◆RB◆ [2\sqrt◆LB◆x◆RB◆]_1^b = \infty$.
+- $p = 2$: $\int_1^{\infty} 1/x^2\, dx = \lim_{b \to \infty} [-1/x]_1^b = 0 - (-1) = 1$. Converges.
+- $p = 1$: $\int_1^{\infty} 1/x\, dx = \lim_{b \to \infty} \ln b = \infty$. Diverges.
+- $p = 1/2$: $\int_1^{\infty} 1/\sqrt{x}\, dx = \lim_{b \to \infty} [2\sqrt{x}]_1^b = \infty$.
   Diverges.
 
 This mirrors the $p$-series test: $\sum 1/n^p$ converges iff $p > 1$. $\blacksquare$
@@ -1383,19 +1383,19 @@ This mirrors the $p$-series test: $\sum 1/n^p$ converges iff $p > 1$. $\blacksqu
 </details>
 
 <details>
-<summary>Worked Example: Evaluate $\int_0^◆LB◆\infty◆RB◆ x e^◆LB◆-x◆RB◆\, dx$</summary>
+<summary>Worked Example: Evaluate $\int_0^{\infty} x e^{-x}\, dx$</summary>
 
 _Solution._ This integral requires both a Type I and Type II limit:
 
-$$\int_0^◆LB◆\infty◆RB◆ x e^◆LB◆-x◆RB◆\, dx = \lim_◆LB◆a \to 0^+◆RB◆ \lim_◆LB◆b \to \infty◆RB◆ \int_a^b x e^◆LB◆-x◆RB◆\, dx$$
+$$\int_0^{\infty} x e^{-x}\, dx = \lim_{a \to 0^+} \lim_{b \to \infty} \int_a^b x e^{-x}\, dx$$
 
-Integrate by parts with $u = x$$dv = e^◆LB◆-x◆RB◆\, dx$So $du = dx$$v = -e^◆LB◆-x◆RB◆$:
+Integrate by parts with $u = x$$dv = e^{-x}\, dx$So $du = dx$$v = -e^{-x}$:
 
-$$\int x e^◆LB◆-x◆RB◆\, dx = -xe^◆LB◆-x◆RB◆ + \int e^◆LB◆-x◆RB◆\, dx = -xe^◆LB◆-x◆RB◆ - e^◆LB◆-x◆RB◆ = -(x+1)e^◆LB◆-x◆RB◆$$
+$$\int x e^{-x}\, dx = -xe^{-x} + \int e^{-x}\, dx = -xe^{-x} - e^{-x} = -(x+1)e^{-x}$$
 
-Evaluating: $\lim_◆LB◆b \to \infty◆RB◆ [-(b+1)e^◆LB◆-b◆RB◆] - \lim_◆LB◆a \to 0^+◆RB◆ [-(a+1)e^◆LB◆-a◆RB◆] = 0 - (-1) = 1$.
+Evaluating: $\lim_{b \to \infty} [-(b+1)e^{-b}] - \lim_{a \to 0^+} [-(a+1)e^{-a}] = 0 - (-1) = 1$.
 
-So $\int_0^◆LB◆\infty◆RB◆ x e^◆LB◆-x◆RB◆\, dx = 1$. This equals $\Gamma(2) = 1! = 1$. $\blacksquare$
+So $\int_0^{\infty} x e^{-x}\, dx = 1$. This equals $\Gamma(2) = 1! = 1$. $\blacksquare$
 
 </details>
 
@@ -1410,53 +1410,53 @@ can change its value. :::
 
 ### 7.1 Pointwise Convergence
 
-Let $(f_n)$ be a sequence of functions defined on a set $E \subseteq \mathbb◆LB◆R◆RB◆$.
+Let $(f_n)$ be a sequence of functions defined on a set $E \subseteq \mathbb{R}$.
 
 **Definition.** $(f_n)$ **converges pointwise** to $f$ on $E$ if for every $x \in E$ and every
-$\varepsilon > 0$There exists $N \in \mathbb◆LB◆N◆RB◆$ (depending on both $x$ and $\varepsilon$) such that
+$\varepsilon > 0$There exists $N \in \mathbb{N}$ (depending on both $x$ and $\varepsilon$) such that
 $|f_n(x) - f(x)| \lt \varepsilon$ for all $n \geq N$.
 
 **Example.** Let $f_n(x) = x^n$ on $E = [0, 1]$. For each $x \in [0, 1)$, $f_n(x) = x^n \to 0$And
 $f_n(1) = 1$ for all $n$. So $f_n$ converges pointwise to
 
-$$f(x) = \begin◆LB◆cases◆RB◆ 0 & \mathrm◆LB◆if\ ◆RB◆ 0 \leq x \lt 1 \\ 1 & \mathrm◆LB◆if\ ◆RB◆ x = 1 \end◆LB◆cases◆RB◆$$
+$$f(x) = \begin{cases} 0 & \mathrm{if\ } 0 \leq x \lt 1 \\ 1 & \mathrm{if\ } x = 1 \end{cases}$$
 
 Note that each $f_n$ is continuous, but the pointwise limit $f$ is not continuous at $x = 1$.
 
 ### 7.2 Uniform Convergence
 
 **Definition.** $(f_n)$ **converges uniformly** to $f$ on $E$ if for every $\varepsilon > 0$There
-Exists $N \in \mathbb◆LB◆N◆RB◆$ (depending only on $\varepsilon$Not on $x$) such that for all $x \in E$:
+Exists $N \in \mathbb{N}$ (depending only on $\varepsilon$Not on $x$) such that for all $x \in E$:
 
-$$|f_n(x) - f(x)| \lt \varepsilon \quad \mathrm◆LB◆for\ all\ ◆RB◆ n \geq N$$
+$$|f_n(x) - f(x)| \lt \varepsilon \quad \mathrm{for\ all\ } n \geq N$$
 
-Equivalently, $\sup_◆LB◆x \in E◆RB◆ |f_n(x) - f(x)| \to 0$ as $n \to \infty$.
+Equivalently, $\sup_{x \in E} |f_n(x) - f(x)| \to 0$ as $n \to \infty$.
 
 **Proposition 7.1.** Uniform convergence implies pointwise convergence. The converse is false.
 
 **Example (continued).** $f_n(x) = x^n$ on $[0, 1]$ converges pointwise but not uniformly. We have
-$\sup_◆LB◆x \in [0,1]◆RB◆ |f_n(x) - f(x)| = \sup_◆LB◆x \in [0,1)◆RB◆ x^n = 1$ for all $n$ (since the supremum is
+$\sup_{x \in [0,1]} |f_n(x) - f(x)| = \sup_{x \in [0,1)} x^n = 1$ for all $n$ (since the supremum is
 Approached as $x \to 1^-$). This does not tend to $0$.
 
-However, on $[0, r]$ for any $r \lt 1$: $\sup_◆LB◆x \in [0,r]◆RB◆ |x^n| = r^n \to 0$So the convergence Is
+However, on $[0, r]$ for any $r \lt 1$: $\sup_{x \in [0,r]} |x^n| = r^n \to 0$So the convergence Is
 uniform on $[0, r]$.
 
 ### 7.3 The Weierstrass M-Test
 
 **Theorem 7.1 (Weierstrass M-Test).** Let $(f_n)$ be a sequence of functions on $E$. If there exists
 a Sequence $(M_n)$ of non-negative real numbers such that $|f_n(x)| \leq M_n$ for all $x \in E$ and
-all $n$And $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ M_n \lt \infty$Then $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ f_n$ converges uniformly on
+all $n$And $\sum_{n=1}^{\infty} M_n \lt \infty$Then $\sum_{n=1}^{\infty} f_n$ converges uniformly on
 $E$.
 
-_Proof._ Let $S_n(x) = \sum_◆LB◆k=1◆RB◆^◆LB◆n◆RB◆ f_k(x)$ and $T_n = \sum_◆LB◆k=1◆RB◆^◆LB◆n◆RB◆ M_k$. Since $\sum M_k$
+_Proof._ Let $S_n(x) = \sum_{k=1}^{n} f_k(x)$ and $T_n = \sum_{k=1}^{n} M_k$. Since $\sum M_k$
 converges, $(T_n)$ is a Cauchy sequence. Given $\varepsilon > 0$There exists $N$ such that for
 $m > n \geq N$:
 
-$$T_m - T_n = \sum_◆LB◆k=n+1◆RB◆^◆LB◆m◆RB◆ M_k \lt \varepsilon$$
+$$T_m - T_n = \sum_{k=n+1}^{m} M_k \lt \varepsilon$$
 
 Then for all $x \in E$ and $m > n \geq N$:
 
-$$|S_m(x) - S_n(x)| = \left|\sum_◆LB◆k=n+1◆RB◆^◆LB◆m◆RB◆ f_k(x)\right| \leq \sum_◆LB◆k=n+1◆RB◆^◆LB◆m◆RB◆ |f_k(x)| \leq \sum_◆LB◆k=n+1◆RB◆^◆LB◆m◆RB◆ M_k \lt \varepsilon$$
+$$|S_m(x) - S_n(x)| = \left|\sum_{k=n+1}^{m} f_k(x)\right| \leq \sum_{k=n+1}^{m} |f_k(x)| \leq \sum_{k=n+1}^{m} M_k \lt \varepsilon$$
 
 So the partial sums $(S_n)$ satisfy the uniform Cauchy criterion on $E$Hence converge uniformly.
 $\blacksquare$
@@ -1470,7 +1470,7 @@ _Proof._ Let $c \in E$ and $\varepsilon > 0$. Since $f_n \to f$ uniformly, choos
 $|f_N(x) - f(x)| \lt \varepsilon/3$ for all $x \in E$. Since $f_N$ is continuous at $c$Choose
 $\delta > 0$ such that $|x - c| \lt \delta$ implies $|f_N(x) - f_N(c)| \lt \varepsilon/3$. Then:
 
-$$|f(x) - f(c)| \leq |f(x) - f_N(x)| + |f_N(x) - f_N(c)| + |f_N(c) - f(c)| \lt \frac◆LB◆\varepsilon◆RB◆◆LB◆3◆RB◆ + \frac◆LB◆\varepsilon◆RB◆◆LB◆3◆RB◆ + \frac◆LB◆\varepsilon◆RB◆◆LB◆3◆RB◆ = \varepsilon$$
+$$|f(x) - f(c)| \leq |f(x) - f_N(x)| + |f_N(x) - f_N(c)| + |f_N(c) - f(c)| \lt \frac{\varepsilon}{3} + \frac{\varepsilon}{3} + \frac{\varepsilon}{3} = \varepsilon$$
 
 $\blacksquare$
 
@@ -1479,19 +1479,19 @@ $\blacksquare$
 **Theorem 7.3.** If $(f_n)$ is a sequence of Riemann integrable functions on $[a, b]$ converging
 Uniformly to $f$ on $[a, b]$Then $f$ is Riemann integrable and
 
-$$\lim_◆LB◆n \to \infty◆RB◆ \int_a^b f_n(x)\, dx = \int_a^b f(x)\, dx$$
+$$\lim_{n \to \infty} \int_a^b f_n(x)\, dx = \int_a^b f(x)\, dx$$
 
 _Proof._ Since $(f_n)$ converges uniformly, $f$ is the uniform limit of integrable functions. Given
 $\varepsilon > 0$Choose $N$ with $\sup |f_N(x) - f(x)| \lt \varepsilon/(2(b-a))$ for all
 $x \in [a, b]$. Then $f_N - \varepsilon/(2(b-a)) \leq f(x) \leq f_N(x) + \varepsilon/(2(b-a))$ for
 all $x$And by Integrability of $f_N$:
 
-$$\int_a^b f_N - \frac◆LB◆\varepsilon◆RB◆◆LB◆2◆RB◆ \leq \underline◆LB◆\int_a^b◆RB◆ f \leq \overline◆LB◆\int_a^b◆RB◆ f \leq \int_a^b f_N + \frac◆LB◆\varepsilon◆RB◆◆LB◆2◆RB◆$$
+$$\int_a^b f_N - \frac{\varepsilon}{2} \leq \underline{\int_a^b} f \leq \overline{\int_a^b} f \leq \int_a^b f_N + \frac{\varepsilon}{2}$$
 
-So $\overline◆LB◆\int◆RB◆ f - \underline◆LB◆\int◆RB◆ f \leq \varepsilon$Proving $f$ is integrable. For the
+So $\overline{\int} f - \underline{\int} f \leq \varepsilon$Proving $f$ is integrable. For the
 limit:
 
-$$\left|\int_a^b f_n - \int_a^b f\right| \leq \int_a^b |f_n - f| \leq (b-a) \cdot \sup_◆LB◆[a,b]◆RB◆ |f_n - f| \to 0$$
+$$\left|\int_a^b f_n - \int_a^b f\right| \leq \int_a^b |f_n - f| \leq (b-a) \cdot \sup_{[a,b]} |f_n - f| \to 0$$
 
 $\blacksquare$
 
@@ -1506,17 +1506,17 @@ Hypothesis is needed.
 2. $(f_n')$ converges uniformly on $[a, b]$
 
 Then $(f_n)$ converges uniformly to a differentiable function $f$ on $[a, b]$And
-$f'(x) = \lim_◆LB◆n \to \infty◆RB◆ f_n'(x)$.
+$f'(x) = \lim_{n \to \infty} f_n'(x)$.
 
 _Proof._ Let $g = \lim f_n'$ (uniform limit). Define
-$f(x) = \lim_◆LB◆n \to \infty◆RB◆ \left[f_n(c) + \int_c^x f_n'(t)\, dt\right]$. By Theorem 7.3,
+$f(x) = \lim_{n \to \infty} \left[f_n(c) + \int_c^x f_n'(t)\, dt\right]$. By Theorem 7.3,
 $\int_c^x f_n'(t)\, dt \to \int_c^x g(t)\, dt$So $f(x) = f(c) + \int_c^x g(t)\, dt$. By FTC Part 1,
 $f$ is differentiable and $f'(x) = g(x)$. Uniform convergence of $f_n$ to $f$ follows From the
 estimate $|f_n(x) - f(x)| \leq |f_n(c) - f(c)| + \int_a^b |f_n'(t) - g(t)|\, dt$. $\blacksquare$
 
 ### 7.7 Power Series
 
-A **power series** centered at $a$ is a series of the form $\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ c_n (x - a)^n$.
+A **power series** centered at $a$ is a series of the form $\sum_{n=0}^{\infty} c_n (x - a)^n$.
 
 **Theorem 7.5 (Radius of Convergence).** Every power series $\sum c_n (x - a)^n$ has a **radius of
 Convergence** $R \in [0, \infty]$ such that:
@@ -1525,111 +1525,111 @@ Convergence** $R \in [0, \infty]$ such that:
 - The series diverges for $|x - a| > R$
 - The behavior at $|x - a| = R$ must be checked separately
 
-The radius is given by $1/R = \limsup_◆LB◆n \to \infty◆RB◆ \sqrt[n]◆LB◆|c_n|◆RB◆$ (Cauchy-Hadamard formula), or
-When the limit exists, $R = \lim_◆LB◆n \to \infty◆RB◆ |c_n/c_◆LB◆n+1◆RB◆|$.
+The radius is given by $1/R = \limsup_{n \to \infty} \sqrt[n]{|c_n|}$ (Cauchy-Hadamard formula), or
+When the limit exists, $R = \lim_{n \to \infty} |c_n/c_{n+1}|$.
 
-_Proof._ Apply the root test to $\sum |c_n (x-a)^n|$: $\limsup \sqrt[n]◆LB◆|c_n|◆RB◆ |x-a| = |x-a|/R$
-(where $1/R = \limsup \sqrt[n]◆LB◆|c_n|◆RB◆$). The root test gives convergence when $|x-a|/R \lt 1$ And
+_Proof._ Apply the root test to $\sum |c_n (x-a)^n|$: $\limsup \sqrt[n]{|c_n|} |x-a| = |x-a|/R$
+(where $1/R = \limsup \sqrt[n]{|c_n|}$). The root test gives convergence when $|x-a|/R \lt 1$ And
 divergence when $|x-a|/R > 1$. $\blacksquare$
 
 **Theorem 7.6.** A power series converges uniformly on every compact subset of its open disk of
 Convergence.
 
 **Theorem 7.6a (Differentiation and Integration of Power Series).** If
-$f(x) = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ c_n (x-a)^n$ Has radius of convergence $R > 0$Then:
+$f(x) = \sum_{n=0}^{\infty} c_n (x-a)^n$ Has radius of convergence $R > 0$Then:
 
-1. $f$ is differentiable on $(a - R, a + R)$ and $f'(x) = \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ n c_n (x - a)^◆LB◆n-1◆RB◆$
+1. $f$ is differentiable on $(a - R, a + R)$ and $f'(x) = \sum_{n=1}^{\infty} n c_n (x - a)^{n-1}$
    (same $R$).
 2. $f$ is infinitely differentiable on $(a - R, a + R)$And
-   $f^◆LB◆(k)◆RB◆(x) = \sum_◆LB◆n=k◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆n!◆RB◆◆LB◆(n-k)!◆RB◆ c_n (x - a)^◆LB◆n-k◆RB◆$.
-3. $\int_a^x f(t)\, dt = \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆c_n◆RB◆◆LB◆n+1◆RB◆(x - a)^◆LB◆n+1◆RB◆$ for $|x - a| \lt R$.
-4. $c_n = f^◆LB◆(n)◆RB◆(a)/n!$ (uniqueness of power series coefficients).
+   $f^{(k)}(x) = \sum_{n=k}^{\infty} \frac{n!}{(n-k)!} c_n (x - a)^{n-k}$.
+3. $\int_a^x f(t)\, dt = \sum_{n=0}^{\infty} \frac{c_n}{n+1}(x - a)^{n+1}$ for $|x - a| \lt R$.
+4. $c_n = f^{(n)}(a)/n!$ (uniqueness of power series coefficients).
 
-_Proof._ The differentiated series $\sum n c_n (x-a)^◆LB◆n-1◆RB◆$ has the same radius of convergence as
-The original (by the Cauchy-Hadamard formula, since $\sqrt[n]◆LB◆n◆RB◆ \to 1$). By Theorem 7.4, the
+_Proof._ The differentiated series $\sum n c_n (x-a)^{n-1}$ has the same radius of convergence as
+The original (by the Cauchy-Hadamard formula, since $\sqrt[n]{n} \to 1$). By Theorem 7.4, the
 Derivative of the sum equals the sum of the derivatives. Parts (2), (3), and (4) follow by Induction
 and the FTC. $\blacksquare$
 
-**Theorem 7.6b (Abel's Theorem).** If $\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ c_n$ converges to $L$Then
+**Theorem 7.6b (Abel's Theorem).** If $\sum_{n=0}^{\infty} c_n$ converges to $L$Then
 
-$$\lim_◆LB◆x \to 1^-◆RB◆ \sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ c_n x^n = L$$
+$$\lim_{x \to 1^-} \sum_{n=0}^{\infty} c_n x^n = L$$
 
 That is, the power series is continuous from the left at the endpoint $x = 1$.
 
-_Proof (sketch)._ Let $s_n = \sum_◆LB◆k=0◆RB◆^◆LB◆n◆RB◆ c_k$ and $s_n \to L$. Write the partial sum
-$\sum_◆LB◆k=0◆RB◆^◆LB◆n◆RB◆ c_k x^k = \sum_◆LB◆k=0◆RB◆^◆LB◆n◆RB◆(s_k - s_◆LB◆k-1◆RB◆)x^k$ (with $s_◆LB◆-1◆RB◆ = 0$) and use summation by
-Parts to express this as $s_n x^n + \sum_◆LB◆k=0◆RB◆^◆LB◆n-1◆RB◆ s_k(x^k - x^◆LB◆k+1◆RB◆)$. Letting $n \to \infty$ and
+_Proof (sketch)._ Let $s_n = \sum_{k=0}^{n} c_k$ and $s_n \to L$. Write the partial sum
+$\sum_{k=0}^{n} c_k x^k = \sum_{k=0}^{n}(s_k - s_{k-1})x^k$ (with $s_{-1} = 0$) and use summation by
+Parts to express this as $s_n x^n + \sum_{k=0}^{n-1} s_k(x^k - x^{k+1})$. Letting $n \to \infty$ and
 using That $s_n \to L$ and $x^n \to 0$ for $|x| \lt 1$One shows the expression tends to $L$ as
 $x \to 1^-$. $\blacksquare$
 
-_Example._ Since $\sum_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆ (-1)^◆LB◆k+1◆RB◆/k = \ln 2$Abel's theorem gives
-$\lim_◆LB◆x \to 1^-◆RB◆ \sum_◆LB◆k=1◆RB◆^◆LB◆\infty◆RB◆ (-1)^◆LB◆k+1◆RB◆ x^k/k = \ln 2$I.e., $\ln 2$ is the left-hand limit
+_Example._ Since $\sum_{k=1}^{\infty} (-1)^{k+1}/k = \ln 2$Abel's theorem gives
+$\lim_{x \to 1^-} \sum_{k=1}^{\infty} (-1)^{k+1} x^k/k = \ln 2$I.e., $\ln 2$ is the left-hand limit
 Of $-\ln(1 - x)$ at $x = 1$.
 
 ### 7.8 Taylor Series Convergence
 
-The **Taylor series** of $f$ at $a$ is $\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆f^◆LB◆(n)◆RB◆(a)◆RB◆◆LB◆n!◆RB◆(x - a)^n$.
+The **Taylor series** of $f$ at $a$ is $\sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x - a)^n$.
 
 **Definition.** A function $f$ is **analytic** at $a$ if its Taylor series at $a$ converges to
 $f(x)$ In some neighborhood of $a$.
 
-Not every $C^◆LB◆\infty◆RB◆$ function is analytic. The standard counterexample is:
+Not every $C^{\infty}$ function is analytic. The standard counterexample is:
 
-$$f(x) = \begin◆LB◆cases◆RB◆ e^◆LB◆-1/x^2◆RB◆ & x \neq 0 \\ 0 & x = 0 \end◆LB◆cases◆RB◆$$
+$$f(x) = \begin{cases} e^{-1/x^2} & x \neq 0 \\ 0 & x = 0 \end{cases}$$
 
-$f^◆LB◆(n)◆RB◆(0) = 0$ for all $n$So the Taylor series at $0$ is identically zero, which Converges only to
+$f^{(n)}(0) = 0$ for all $n$So the Taylor series at $0$ is identically zero, which Converges only to
 $0$Not to $f(x)$ for $x \neq 0$.
 
 ### 7.9 Worked Examples
 
 <details>
-<summary>Worked Example: Show $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆x^n◆RB◆◆LB◆n^2◆RB◆$ converges uniformly on $[-1, 1]$</summary>
+<summary>Worked Example: Show $\sum_{n=1}^{\infty} \frac{x^n}{n^2}$ converges uniformly on $[-1, 1]$</summary>
 
-_Solution._ For $x \in [-1, 1]$: $\left|\frac◆LB◆x^n◆RB◆◆LB◆n^2◆RB◆\right| \leq \frac◆LB◆1◆RB◆◆LB◆n^2◆RB◆$. Since
-$\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n^2◆RB◆$ converges (it is a $p$-series with $p = 2 > 1$), the Weierstrass
+_Solution._ For $x \in [-1, 1]$: $\left|\frac{x^n}{n^2}\right| \leq \frac{1}{n^2}$. Since
+$\sum_{n=1}^{\infty} \frac{1}{n^2}$ converges (it is a $p$-series with $p = 2 > 1$), the Weierstrass
 M-Test with $M_n = 1/n^2$ implies the series converges uniformly on $[-1, 1]$. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Find the radius of convergence of $\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆x^n◆RB◆◆LB◆n!◆RB◆$</summary>
+<summary>Worked Example: Find the radius of convergence of $\sum_{n=0}^{\infty} \frac{x^n}{n!}$</summary>
 
 _Solution._ Apply the ratio test to the coefficients:
-$\lim_◆LB◆n \to \infty◆RB◆ \left|\frac◆LB◆c_◆LB◆n+1◆RB◆◆RB◆◆LB◆c_n◆RB◆\right|
-= \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆n!◆RB◆◆LB◆(n+1)!◆RB◆ = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n+1◆RB◆ = 0$.
+$\lim_{n \to \infty} \left|\frac{c_{n+1}}{c_n}\right|
+= \lim_{n \to \infty} \frac{n!}{(n+1)!} = \lim_{n \to \infty} \frac{1}{n+1} = 0$.
 
-So $R = \infty$ and the series converges for all $x \in \mathbb◆LB◆R◆RB◆$. This is the power series for
+So $R = \infty$ and the series converges for all $x \in \mathbb{R}$. This is the power series for
 $e^x$. By Theorem 7.4, the derivative of the sum equals
-$\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆n x^◆LB◆n-1◆RB◆◆RB◆◆LB◆n!◆RB◆
-= \sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆x^◆LB◆n-1◆RB◆◆RB◆◆LB◆(n-1)!◆RB◆ = \sum_◆LB◆k=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆x^k◆RB◆◆LB◆k!◆RB◆ = e^x$,
+$\sum_{n=1}^{\infty} \frac{n x^{n-1}}{n!}
+= \sum_{n=1}^{\infty} \frac{x^{n-1}}{(n-1)!} = \sum_{k=0}^{\infty} \frac{x^k}{k!} = e^x$,
 confirming That $e^x$ is its own derivative. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Find the radius of convergence of $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ n! \, x^n$</summary>
+<summary>Worked Example: Find the radius of convergence of $\sum_{n=1}^{\infty} n! \, x^n$</summary>
 
 _Solution._ Apply the ratio test to the coefficients:
 
-$$\lim_◆LB◆n \to \infty◆RB◆ \left|\frac◆LB◆c_◆LB◆n+1◆RB◆◆RB◆◆LB◆c_n◆RB◆\right| = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆(n+1)!◆RB◆◆LB◆n!◆RB◆ = \lim_◆LB◆n \to \infty◆RB◆ (n+1) = \infty$$
+$$\lim_{n \to \infty} \left|\frac{c_{n+1}}{c_n}\right| = \lim_{n \to \infty} \frac{(n+1)!}{n!} = \lim_{n \to \infty} (n+1) = \infty$$
 
 So $R = 0$Meaning the series converges only at $x = 0$. $\blacksquare$
 
 </details>
 
 <details>
-<summary>Worked Example: Show $f_n(x) = \frac◆LB◆x◆RB◆◆LB◆1 + nx◆RB◆$ converges uniformly on $[1, \infty)$</summary>
+<summary>Worked Example: Show $f_n(x) = \frac{x}{1 + nx}$ converges uniformly on $[1, \infty)$</summary>
 
 _Solution._ **Pointwise limit:** For $x \geq 1$:
-$\lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆x◆RB◆◆LB◆1 + nx◆RB◆ = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆1/x + n◆RB◆ = 0$.
+$\lim_{n \to \infty} \frac{x}{1 + nx} = \lim_{n \to \infty} \frac{1}{1/x + n} = 0$.
 
 **Uniform convergence:**
-$\sup_◆LB◆x \in [1, \infty)◆RB◆ \left|\frac◆LB◆x◆RB◆◆LB◆1 + nx◆RB◆ - 0\right| = \sup_◆LB◆x \geq 1◆RB◆ \frac◆LB◆x◆RB◆◆LB◆1 + nx◆RB◆$. To
+$\sup_{x \in [1, \infty)} \left|\frac{x}{1 + nx} - 0\right| = \sup_{x \geq 1} \frac{x}{1 + nx}$. To
 find the maximum, differentiate with respect to $x$:
-$\frac◆LB◆d◆RB◆◆LB◆dx◆RB◆\left(\frac◆LB◆x◆RB◆◆LB◆1+nx◆RB◆\right) = \frac◆LB◆1◆RB◆◆LB◆(1+nx)^2◆RB◆ > 0$. So the function is increasing in
+$\frac{d}{dx}\left(\frac{x}{1+nx}\right) = \frac{1}{(1+nx)^2} > 0$. So the function is increasing in
 $x$ on $[1, \infty)$And:
 
-$$\sup_◆LB◆x \geq 1◆RB◆ \frac◆LB◆x◆RB◆◆LB◆1 + nx◆RB◆ = \lim_◆LB◆x \to \infty◆RB◆ \frac◆LB◆x◆RB◆◆LB◆1 + nx◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆$$
+$$\sup_{x \geq 1} \frac{x}{1 + nx} = \lim_{x \to \infty} \frac{x}{1 + nx} = \frac{1}{n}$$
 
 Since $\sup |f_n| = 1/n \to 0$The convergence is uniform on $[1, \infty)$. $\blacksquare$
 
@@ -1644,7 +1644,7 @@ verify the uniform Cauchy criterion directly. :::
 
 ## 8. Problem Set
 
-**Problem 1.** Let $A, B \subseteq \mathbb◆LB◆R◆RB◆$ be non-empty and bounded above. Prove that
+**Problem 1.** Let $A, B \subseteq \mathbb{R}$ be non-empty and bounded above. Prove that
 $\sup(A \cup B) = \max(\sup A, \sup B)$.
 
 <details>
@@ -1662,7 +1662,7 @@ _If you get this wrong, revise:_ Section 1.3 (Supremum and Infimum), Section 1.5
 </details>
 
 **Problem 2.** Prove that $\inf A = -\sup(-A)$ for any non-empty bounded set
-$A \subseteq \mathbb◆LB◆R◆RB◆$.
+$A \subseteq \mathbb{R}$.
 
 <details>
 <summary>Solution</summary>
@@ -1677,20 +1677,20 @@ _If you get this wrong, revise:_ Section 1.5 (Properties of Supremum and Infimum
 </details>
 
 **Problem 3.** Using the $\varepsilon$-$N$ definition, prove that
-$\lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆n^2 + 3n◆RB◆◆LB◆2n^2 + 1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
+$\lim_{n \to \infty} \frac{n^2 + 3n}{2n^2 + 1} = \frac{1}{2}$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ Let $\varepsilon > 0$. Compute:
 
-$$\left|\frac◆LB◆n^2 + 3n◆RB◆◆LB◆2n^2 + 1◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\right| = \left|\frac◆LB◆2(n^2 + 3n) - (2n^2 + 1)◆RB◆◆LB◆2(2n^2 + 1)◆RB◆\right| = \left|\frac◆LB◆6n - 1◆RB◆◆LB◆2(2n^2 + 1)◆RB◆\right|$$
+$$\left|\frac{n^2 + 3n}{2n^2 + 1} - \frac{1}{2}\right| = \left|\frac{2(n^2 + 3n) - (2n^2 + 1)}{2(2n^2 + 1)}\right| = \left|\frac{6n - 1}{2(2n^2 + 1)}\right|$$
 
 For $n \geq 1$: $6n - 1 \lt 6n$ and $2n^2 + 1 > 2n^2$So
 
-$$\frac◆LB◆6n - 1◆RB◆◆LB◆2(2n^2 + 1)◆RB◆ \lt \frac◆LB◆6n◆RB◆◆LB◆4n^2◆RB◆ = \frac◆LB◆3◆RB◆◆LB◆2n◆RB◆$$
+$$\frac{6n - 1}{2(2n^2 + 1)} \lt \frac{6n}{4n^2} = \frac{3}{2n}$$
 
-We need $\frac◆LB◆3◆RB◆◆LB◆2n◆RB◆ \lt \varepsilon$I.e., $n > 3/(2\varepsilon)$. Choose
+We need $\frac{3}{2n} \lt \varepsilon$I.e., $n > 3/(2\varepsilon)$. Choose
 $N = \lceil 3/(2\varepsilon) \rceil$. For $n \geq N$: the expression is $\lt \varepsilon$.
 $\blacksquare$
 
@@ -1698,38 +1698,38 @@ _If you get this wrong, revise:_ Section 2.1 (Convergence), Section 2.7 (Worked 
 
 </details>
 
-**Problem 4.** Let $a_1 = 1$ and $a_◆LB◆n+1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\left(a_n + \frac◆LB◆2◆RB◆◆LB◆a_n◆RB◆\right)$. Prove
+**Problem 4.** Let $a_1 = 1$ and $a_{n+1} = \frac{1}{2}\left(a_n + \frac{2}{a_n}\right)$. Prove
 $(a_n)$ converges And find its limit.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ **Step 1:** $(a_n)$ is bounded below by $\sqrt◆LB◆2◆RB◆$. By AM-GM:
-$a_◆LB◆n+1◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(a_n + 2/a_n) \geq \sqrt◆LB◆a_n \cdot 2/a_n◆RB◆ = \sqrt◆LB◆2◆RB◆$.
+_Solution._ **Step 1:** $(a_n)$ is bounded below by $\sqrt{2}$. By AM-GM:
+$a_{n+1} = \frac{1}{2}(a_n + 2/a_n) \geq \sqrt{a_n \cdot 2/a_n} = \sqrt{2}$.
 
 **Step 2:** $(a_n)$ is decreasing for $n \geq 2$. Note $a_1 = 1$, $a_2 = 3/2$.
-$a_◆LB◆n+1◆RB◆ - a_n = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(a_n + 2/a_n) - a_n = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(2/a_n - a_n) = \frac◆LB◆2 - a_n^2◆RB◆◆LB◆2a_n◆RB◆$.
-Since $a_n \geq \sqrt◆LB◆2◆RB◆$ for $n \geq 2$, $a_n^2 \geq 2$So $a_◆LB◆n+1◆RB◆ - a_n \leq 0$.
+$a_{n+1} - a_n = \frac{1}{2}(a_n + 2/a_n) - a_n = \frac{1}{2}(2/a_n - a_n) = \frac{2 - a_n^2}{2a_n}$.
+Since $a_n \geq \sqrt{2}$ for $n \geq 2$, $a_n^2 \geq 2$So $a_{n+1} - a_n \leq 0$.
 
 **Step 3:** By the Monotone Convergence Theorem, $L = \lim a_n$ exists. Taking limits:
-$L = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(L + 2/L)$Giving $2L = L + 2/L$So $L = 2/L$Hence $L^2 = 2$. Since
-$a_n \geq \sqrt◆LB◆2◆RB◆$ for $n \geq 2$, $L \geq 0$So $L = \sqrt◆LB◆2◆RB◆$. $\blacksquare$
+$L = \frac{1}{2}(L + 2/L)$Giving $2L = L + 2/L$So $L = 2/L$Hence $L^2 = 2$. Since
+$a_n \geq \sqrt{2}$ for $n \geq 2$, $L \geq 0$So $L = \sqrt{2}$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 2.2 (Monotone Convergence Theorem), Section 2.7 (recursive
 sequences).
 
 </details>
 
-**Problem 5.** Compute $\limsup_◆LB◆n \to \infty◆RB◆ a_n$ and $\liminf_◆LB◆n \to \infty◆RB◆ a_n$ for
-$a_n = 2 + (-1)^n \frac◆LB◆n◆RB◆◆LB◆n+1◆RB◆$.
+**Problem 5.** Compute $\limsup_{n \to \infty} a_n$ and $\liminf_{n \to \infty} a_n$ for
+$a_n = 2 + (-1)^n \frac{n}{n+1}$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ Write $a_n = 2 + (-1)^n \cdot \frac◆LB◆n◆RB◆◆LB◆n+1◆RB◆$.
+_Solution._ Write $a_n = 2 + (-1)^n \cdot \frac{n}{n+1}$.
 
-For even $n = 2k$: $a_◆LB◆2k◆RB◆ = 2 + \frac◆LB◆2k◆RB◆◆LB◆2k+1◆RB◆ \to 2 + 1 = 3$. For odd $n = 2k - 1$:
-$a_◆LB◆2k-1◆RB◆ = 2 - \frac◆LB◆2k-1◆RB◆◆LB◆2k◆RB◆ \to 2 - 1 = 1$.
+For even $n = 2k$: $a_{2k} = 2 + \frac{2k}{2k+1} \to 2 + 1 = 3$. For odd $n = 2k - 1$:
+$a_{2k-1} = 2 - \frac{2k-1}{2k} \to 2 - 1 = 1$.
 
 Since these are the only two subsequential limits: $\limsup a_n = 3$ and $\liminf a_n = 1$. The
 sequence diverges since $\limsup \neq \liminf$. $\blacksquare$
@@ -1738,7 +1738,7 @@ _If you get this wrong, revise:_ Section 2.6 (Limit Superior and Limit Inferior)
 
 </details>
 
-**Problem 6.** Determine whether $\sum_◆LB◆n=2◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n(\ln n)^2◆RB◆$ converges.
+**Problem 6.** Determine whether $\sum_{n=2}^{\infty} \frac{1}{n(\ln n)^2}$ converges.
 
 <details>
 <summary>Solution</summary>
@@ -1746,7 +1746,7 @@ _If you get this wrong, revise:_ Section 2.6 (Limit Superior and Limit Inferior)
 _Solution._ Apply the integral test with $f(x) = 1/(x(\ln x)^2)$ on $[2, \infty)$. The function is
 Positive, continuous, and decreasing. Compute via $u = \ln x$, $du = dx/x$:
 
-$$\int_2^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆x(\ln x)^2◆RB◆\, dx = \int_◆LB◆\ln 2◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆u^2◆RB◆\, du = \left[-\frac◆LB◆1◆RB◆◆LB◆u◆RB◆\right]_◆LB◆\ln 2◆RB◆^◆LB◆\infty◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆\ln 2◆RB◆ \lt \infty$$
+$$\int_2^{\infty} \frac{1}{x(\ln x)^2}\, dx = \int_{\ln 2}^{\infty} \frac{1}{u^2}\, du = \left[-\frac{1}{u}\right]_{\ln 2}^{\infty} = \frac{1}{\ln 2} \lt \infty$$
 
 The integral converges, so by the integral test, the series converges. $\blacksquare$
 
@@ -1754,17 +1754,17 @@ _If you get this wrong, revise:_ Section 3.2 (Integral Test), Section 3.6 (Worke
 
 </details>
 
-**Problem 7.** Does $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆n^◆LB◆1/3◆RB◆◆RB◆$ converge absolutely,
+**Problem 7.** Does $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^{1/3}}$ converge absolutely,
 conditionally, or diverge?
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ The absolute series is $\sum 1/n^◆LB◆1/3◆RB◆$Which is a $p$-series with $p = 1/3 \lt 1$ So it
+_Solution._ The absolute series is $\sum 1/n^{1/3}$Which is a $p$-series with $p = 1/3 \lt 1$ So it
 diverges. Hence the series does not converge absolutely.
 
-For conditional convergence, apply the alternating series test: $a_n = 1/n^◆LB◆1/3◆RB◆$ is positive,
-Decreasing, and $a_n \to 0$. Therefore $\sum (-1)^◆LB◆n+1◆RB◆/n^◆LB◆1/3◆RB◆$ converges.
+For conditional convergence, apply the alternating series test: $a_n = 1/n^{1/3}$ is positive,
+Decreasing, and $a_n \to 0$. Therefore $\sum (-1)^{n+1}/n^{1/3}$ converges.
 
 Since it converges but not absolutely, it converges **conditionally**. $\blacksquare$
 
@@ -1773,28 +1773,28 @@ _If you get this wrong, revise:_ Section 3.3 (Absolute and Conditional Convergen
 
 </details>
 
-**Problem 8.** Find the sum of $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆n(n+2)◆RB◆$.
+**Problem 8.** Find the sum of $\sum_{n=1}^{\infty} \frac{1}{n(n+2)}$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ Use partial fractions:
-$\frac◆LB◆1◆RB◆◆LB◆n(n+2)◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\left(\frac◆LB◆1◆RB◆◆LB◆n◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆n+2◆RB◆\right)$. The $N$-th partial sum
+$\frac{1}{n(n+2)} = \frac{1}{2}\left(\frac{1}{n} - \frac{1}{n+2}\right)$. The $N$-th partial sum
 telescopes:
 
-$$S_N = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\left[\left(\frac◆LB◆1◆RB◆◆LB◆1◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆3◆RB◆\right) + \left(\frac◆LB◆1◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆4◆RB◆\right) + \left(\frac◆LB◆1◆RB◆◆LB◆3◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆5◆RB◆\right) + \cdots + \left(\frac◆LB◆1◆RB◆◆LB◆N◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆N+2◆RB◆\right)\right]$$
+$$S_N = \frac{1}{2}\left[\left(\frac{1}{1} - \frac{1}{3}\right) + \left(\frac{1}{2} - \frac{1}{4}\right) + \left(\frac{1}{3} - \frac{1}{5}\right) + \cdots + \left(\frac{1}{N} - \frac{1}{N+2}\right)\right]$$
 
 Most terms cancel. The surviving terms are:
 
-$$S_N = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆\left(1 + \frac◆LB◆1◆RB◆◆LB◆2◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆N+1◆RB◆ - \frac◆LB◆1◆RB◆◆LB◆N+2◆RB◆\right)$$
+$$S_N = \frac{1}{2}\left(1 + \frac{1}{2} - \frac{1}{N+1} - \frac{1}{N+2}\right)$$
 
-As $N \to \infty$: $S_N \to \frac◆LB◆1◆RB◆◆LB◆2◆RB◆(1 + 1/2) = \frac◆LB◆3◆RB◆◆LB◆4◆RB◆$. $\blacksquare$
+As $N \to \infty$: $S_N \to \frac{1}{2}(1 + 1/2) = \frac{3}{4}$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 3.1 (Definitions and Convergence), telescoping series.
 
 </details>
 
-**Problem 9.** Give an explicit rearrangement of $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^◆LB◆n+1◆RB◆◆RB◆◆LB◆n◆RB◆$ whose
+**Problem 9.** Give an explicit rearrangement of $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$ whose
 sum is $0$.
 
 <details>
@@ -1821,12 +1821,12 @@ _If you get this wrong, revise:_ Section 3.5 (Rearrangement of Series).
 </details>
 
 **Problem 10.** Prove using $\varepsilon$-$\delta$ that $f(x) = x^3$ is continuous at every
-$a \in \mathbb◆LB◆R◆RB◆$.
+$a \in \mathbb{R}$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ Let $a \in \mathbb◆LB◆R◆RB◆$ and $\varepsilon > 0$. Compute:
+_Solution._ Let $a \in \mathbb{R}$ and $\varepsilon > 0$. Compute:
 
 $$|f(x) - f(a)| = |x^3 - a^3| = |x - a| \cdot |x^2 + ax + a^2|$$
 
@@ -1835,7 +1835,7 @@ $|x^2 + ax + a^2| \leq (|a|+1)^2 + |a|(|a|+1) + a^2 = 3a^2 + 3|a| + 1$. Let $M =
 
 Choose $\delta = \min(1, \varepsilon/M)$. Then $|x - a| \lt \delta$ implies:
 
-$$|x^3 - a^3| \leq |x - a| \cdot M \lt \frac◆LB◆\varepsilon◆RB◆◆LB◆M◆RB◆ \cdot M = \varepsilon$$
+$$|x^3 - a^3| \leq |x - a| \cdot M \lt \frac{\varepsilon}{M} \cdot M = \varepsilon$$
 
 $\blacksquare$
 
@@ -1843,7 +1843,7 @@ _If you get this wrong, revise:_ Section 4.2 (Continuity), Section 4.7 (Worked E
 
 </details>
 
-**Problem 11.** Prove that $f(x) = x \sin(1/x)$ (with $f(0) = 0$) is continuous on $\mathbb◆LB◆R◆RB◆$ but
+**Problem 11.** Prove that $f(x) = x \sin(1/x)$ (with $f(0) = 0$) is continuous on $\mathbb{R}$ but
 not Uniformly continuous on $(0, 1)$. (Trick question --- see solution.)
 
 <details>
@@ -1873,13 +1873,13 @@ Constant $C$.
 
 _Solution._ Let $h(x) = f(x) - g(x)$. Then $h'(x) = f'(x) - g'(x) = 0$ for all $x \in (a, b)$. By
 Corollary 5.4 (a consequence of the Mean Value Theorem), $h$ is constant on $(a, b)$. So
-$f(x) - g(x) = C$ for some $C \in \mathbb◆LB◆R◆RB◆$I.e., $f(x) = g(x) + C$. $\blacksquare$
+$f(x) - g(x) = C$ for some $C \in \mathbb{R}$I.e., $f(x) = g(x) + C$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 5.3 (Mean Value Theorem, Corollary 5.4).
 
 </details>
 
-**Problem 13.** Use Taylor's theorem with remainder to bound the error in approximating $e^◆LB◆0.2◆RB◆$
+**Problem 13.** Use Taylor's theorem with remainder to bound the error in approximating $e^{0.2}$
 Using the fourth-degree Maclaurin polynomial.
 
 <details>
@@ -1887,15 +1887,15 @@ Using the fourth-degree Maclaurin polynomial.
 
 _Solution._ The fourth-degree Maclaurin polynomial of $e^x$ is:
 
-$$T_4(x) = 1 + x + \frac◆LB◆x^2◆RB◆◆LB◆2◆RB◆ + \frac◆LB◆x^3◆RB◆◆LB◆6◆RB◆ + \frac◆LB◆x^4◆RB◆◆LB◆24◆RB◆$$
+$$T_4(x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \frac{x^4}{24}$$
 
-By Taylor's theorem, $R_4(x) = \frac◆LB◆e^◆LB◆\xi◆RB◆◆RB◆◆LB◆5!◆RB◆ x^5$ for some $\xi$ between $0$ and $x$. For
-$x = 0.2$: $\xi \in (0, 0.2)$So $e^◆LB◆\xi◆RB◆ \lt e^◆LB◆0.2◆RB◆ \lt e^◆LB◆1/4◆RB◆ \lt 1.3$.
+By Taylor's theorem, $R_4(x) = \frac{e^{\xi}}{5!} x^5$ for some $\xi$ between $0$ and $x$. For
+$x = 0.2$: $\xi \in (0, 0.2)$So $e^{\xi} \lt e^{0.2} \lt e^{1/4} \lt 1.3$.
 
-$$|R_4(0.2)| = \frac◆LB◆e^◆LB◆\xi◆RB◆◆RB◆◆LB◆120◆RB◆ (0.2)^5 \lt \frac◆LB◆1.3◆RB◆◆LB◆120◆RB◆ \cdot 0.00032 = \frac◆LB◆1.3 \times 0.00032◆RB◆◆LB◆120◆RB◆ \approx 3.47 \times 10^◆LB◆-6◆RB◆$$
+$$|R_4(0.2)| = \frac{e^{\xi}}{120} (0.2)^5 \lt \frac{1.3}{120} \cdot 0.00032 = \frac{1.3 \times 0.00032}{120} \approx 3.47 \times 10^{-6}$$
 
-So $T_4(0.2) = 1 + 0.2 + 0.02 + 0.001333 + 0.000067 = 1.221400$ approximates $e^◆LB◆0.2◆RB◆$ with Error
-less than $3.5 \times 10^◆LB◆-6◆RB◆$. $\blacksquare$
+So $T_4(0.2) = 1 + 0.2 + 0.02 + 0.001333 + 0.000067 = 1.221400$ approximates $e^{0.2}$ with Error
+less than $3.5 \times 10^{-6}$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 5.4 (Taylor's Theorem), Section 5.7 (Worked Examples).
 
@@ -1909,11 +1909,11 @@ _If you get this wrong, revise:_ Section 5.4 (Taylor's Theorem), Section 5.7 (Wo
 _Solution._ Let $P_n = \{0, 1/n, 2/n, \ldots, 1\}$. On $[(i-1)/n, i/n]$, $f(x) = x^3$ has
 $M_i = (i/n)^3$ and $m_i = ((i-1)/n)^3$.
 
-$$U(f, P_n) = \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \frac◆LB◆i^3◆RB◆◆LB◆n^3◆RB◆ \cdot \frac◆LB◆1◆RB◆◆LB◆n◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆n^4◆RB◆ \sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ i^3 = \frac◆LB◆1◆RB◆◆LB◆n^4◆RB◆ \cdot \frac◆LB◆n^2(n+1)^2◆RB◆◆LB◆4◆RB◆$$
+$$U(f, P_n) = \sum_{i=1}^{n} \frac{i^3}{n^3} \cdot \frac{1}{n} = \frac{1}{n^4} \sum_{i=1}^{n} i^3 = \frac{1}{n^4} \cdot \frac{n^2(n+1)^2}{4}$$
 
 As $n \to \infty$:
 
-$$\lim_◆LB◆n \to \infty◆RB◆ U(f, P_n) = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆(n+1)^2◆RB◆◆LB◆4n^2◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆4◆RB◆$$
+$$\lim_{n \to \infty} U(f, P_n) = \lim_{n \to \infty} \frac{(n+1)^2}{4n^2} = \frac{1}{4}$$
 
 Similarly, $L(f, P_n) \to 1/4$. So $\int_0^1 x^3\, dx = 1/4$. $\blacksquare$
 
@@ -1922,19 +1922,19 @@ _If you get this wrong, revise:_ Section 6.1 (Definition), Section 6.5 (Worked E
 </details>
 
 **Problem 14b.** Show that the Dirichlet function
-$f(x) = \begin◆LB◆cases◆RB◆ 1 & x \in \mathbb◆LB◆Q◆RB◆ \\ 0 & x \notin \mathbb◆LB◆Q◆RB◆ \end◆LB◆cases◆RB◆$ is not Riemann
+$f(x) = \begin{cases} 1 & x \in \mathbb{Q} \\ 0 & x \notin \mathbb{Q} \end{cases}$ is not Riemann
 integrable on $[0, 1]$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ Every non-empty subinterval $[x_◆LB◆i-1◆RB◆, x_i]$ of any partition contains both rational and
-Irrational numbers (by density of $\mathbb◆LB◆Q◆RB◆$ and density of $\mathbb◆LB◆R◆RB◆ \setminus \mathbb◆LB◆Q◆RB◆$). So
+_Solution._ Every non-empty subinterval $[x_{i-1}, x_i]$ of any partition contains both rational and
+Irrational numbers (by density of $\mathbb{Q}$ and density of $\mathbb{R} \setminus \mathbb{Q}$). So
 $M_i = \sup f = 1$ and $m_i = \inf f = 0$ for every subinterval.
 
 For any partition $P$: $U(f, P) = \sum 1 \cdot \Delta x_i = 1$ and
 $L(f, P) = \sum 0 \cdot \Delta x_i = 0$. Hence
-$\overline◆LB◆\int_0^1◆RB◆ f = 1 \neq 0 = \underline◆LB◆\int_0^1◆RB◆ f$So $f$ is not Riemann integrable.
+$\overline{\int_0^1} f = 1 \neq 0 = \underline{\int_0^1} f$So $f$ is not Riemann integrable.
 
 This also follows from Lebesgue's criterion: $f$ is discontinuous everywhere, and $[0,1]$ does not
 Have measure zero. $\blacksquare$
@@ -1943,19 +1943,19 @@ _If you get this wrong, revise:_ Section 6.2 (Integrability Criteria), Theorem 6
 
 </details>
 
-**Problem 15.** Evaluate $\int_0^1 \frac◆LB◆x◆RB◆◆LB◆\sqrt◆LB◆1 - x^2◆RB◆◆RB◆\, dx$ as an improper integral.
+**Problem 15.** Evaluate $\int_0^1 \frac{x}{\sqrt{1 - x^2}}\, dx$ as an improper integral.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ The integrand $f(x) = x/\sqrt◆LB◆1 - x^2◆RB◆$ is unbounded as $x \to 1^-$. This is a Type II
+_Solution._ The integrand $f(x) = x/\sqrt{1 - x^2}$ is unbounded as $x \to 1^-$. This is a Type II
 Improper integral.
 
-$$\int_0^1 \frac◆LB◆x◆RB◆◆LB◆\sqrt◆LB◆1 - x^2◆RB◆◆RB◆\, dx = \lim_◆LB◆b \to 1^-◆RB◆ \int_0^b \frac◆LB◆x◆RB◆◆LB◆\sqrt◆LB◆1 - x^2◆RB◆◆RB◆\, dx$$
+$$\int_0^1 \frac{x}{\sqrt{1 - x^2}}\, dx = \lim_{b \to 1^-} \int_0^b \frac{x}{\sqrt{1 - x^2}}\, dx$$
 
 Compute via substitution $u = 1 - x^2$, $du = -2x\, dx$:
 
-$$= \lim_◆LB◆b \to 1^-◆RB◆ \left[-\sqrt◆LB◆1 - x^2◆RB◆\right]_0^b = \lim_◆LB◆b \to 1^-◆RB◆ \left(-\sqrt◆LB◆1 - b^2◆RB◆ + 1\right) = 0 + 1 = 1$$
+$$= \lim_{b \to 1^-} \left[-\sqrt{1 - x^2}\right]_0^b = \lim_{b \to 1^-} \left(-\sqrt{1 - b^2} + 1\right) = 0 + 1 = 1$$
 
 The improper integral converges to $1$. $\blacksquare$
 
@@ -1963,26 +1963,26 @@ _If you get this wrong, revise:_ Section 6.6 (Improper Integrals).
 
 </details>
 
-**Problem 16.** Let $f_n(x) = \frac◆LB◆nx◆RB◆◆LB◆1 + n^2 x^2◆RB◆$ on $(0, \infty)$. Find the pointwise limit and
+**Problem 16.** Let $f_n(x) = \frac{nx}{1 + n^2 x^2}$ on $(0, \infty)$. Find the pointwise limit and
 Determine whether the convergence is uniform on $(0, \infty)$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ **Pointwise limit:** For fixed $x > 0$:
-$\lim_◆LB◆n \to \infty◆RB◆ f_n(x) = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆nx◆RB◆◆LB◆1 + n^2 x^2◆RB◆ = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆x/n◆RB◆◆LB◆1/n^2 + x^2◆RB◆ = 0$.
+$\lim_{n \to \infty} f_n(x) = \lim_{n \to \infty} \frac{nx}{1 + n^2 x^2} = \lim_{n \to \infty} \frac{x/n}{1/n^2 + x^2} = 0$.
 
 So $f_n \to 0$ pointwise on $(0, \infty)$.
 
-**Uniform convergence?** We check $\sup_◆LB◆x > 0◆RB◆ |f_n(x) - 0| = \sup_◆LB◆x > 0◆RB◆ \frac◆LB◆nx◆RB◆◆LB◆1 + n^2 x^2◆RB◆$.
+**Uniform convergence?** We check $\sup_{x > 0} |f_n(x) - 0| = \sup_{x > 0} \frac{nx}{1 + n^2 x^2}$.
 To maximize, differentiate with respect to $x$ (treating $n$ as fixed):
 
-$$\frac◆LB◆d◆RB◆◆LB◆dx◆RB◆\left(\frac◆LB◆nx◆RB◆◆LB◆1 + n^2 x^2◆RB◆\right) = \frac◆LB◆n(1 + n^2 x^2) - nx \cdot 2n^2 x◆RB◆◆LB◆(1 + n^2 x^2)^2◆RB◆ = \frac◆LB◆n - n^3 x^2◆RB◆◆LB◆(1 + n^2 x^2)^2◆RB◆$$
+$$\frac{d}{dx}\left(\frac{nx}{1 + n^2 x^2}\right) = \frac{n(1 + n^2 x^2) - nx \cdot 2n^2 x}{(1 + n^2 x^2)^2} = \frac{n - n^3 x^2}{(1 + n^2 x^2)^2}$$
 
 Setting to zero: $n - n^3 x^2 = 0$So $x = 1/n$. The maximum value is
-$f_n(1/n) = \frac◆LB◆n \cdot 1/n◆RB◆◆LB◆1 + n^2/n^2◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2◆RB◆$.
+$f_n(1/n) = \frac{n \cdot 1/n}{1 + n^2/n^2} = \frac{1}{2}$.
 
-Since $\sup_◆LB◆x > 0◆RB◆ |f_n(x)| = 1/2$ for all $n$This does not tend to $0$. Therefore the convergence
+Since $\sup_{x > 0} |f_n(x)| = 1/2$ for all $n$This does not tend to $0$. Therefore the convergence
 Is **not uniform** on $(0, \infty)$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.2 (Uniform Convergence), Section 7.1 (Pointwise
@@ -1990,16 +1990,16 @@ Convergence).
 
 </details>
 
-**Problem 17.** Find the radius of convergence of $\sum_◆LB◆n=1◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(2n)!◆RB◆◆LB◆(n!)^2◆RB◆ x^n$.
+**Problem 17.** Find the radius of convergence of $\sum_{n=1}^{\infty} \frac{(2n)!}{(n!)^2} x^n$.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ Apply the ratio test to the terms:
 
-$$\left|\frac◆LB◆a_◆LB◆n+1◆RB◆◆RB◆◆LB◆a_n◆RB◆\right| = \frac◆LB◆(2(n+1))!◆RB◆◆LB◆((n+1)!)^2◆RB◆ \cdot \frac◆LB◆(n!)^2◆RB◆◆LB◆(2n)!◆RB◆ \cdot |x| = \frac◆LB◆(2n+2)(2n+1)◆RB◆◆LB◆(n+1)^2◆RB◆ \cdot |x|$$
+$$\left|\frac{a_{n+1}}{a_n}\right| = \frac{(2(n+1))!}{((n+1)!)^2} \cdot \frac{(n!)^2}{(2n)!} \cdot |x| = \frac{(2n+2)(2n+1)}{(n+1)^2} \cdot |x|$$
 
-$$= \frac◆LB◆2(2n+1)◆RB◆◆LB◆n+1◆RB◆ \cdot |x| = \frac◆LB◆4n + 2◆RB◆◆LB◆n + 1◆RB◆ \cdot |x| \to 4|x| \quad \mathrm◆LB◆as\ ◆RB◆ n \to \infty$$
+$$= \frac{2(2n+1)}{n+1} \cdot |x| = \frac{4n + 2}{n + 1} \cdot |x| \to 4|x| \quad \mathrm{as\ } n \to \infty$$
 
 The series converges when $4|x| \lt 1$I.e., $|x| \lt 1/4$And diverges when $4|x| > 1$. The radius of
 convergence is $R = 1/4$. $\blacksquare$
@@ -2009,20 +2009,20 @@ _If you get this wrong, revise:_ Section 7.7 (Power Series), Section 3.2 (Ratio 
 </details>
 
 **Problem 18.** Let $f_n(x) = x^n/n$ on $[0, 1]$. Show that $f_n \to 0$ uniformly, but
-$f_n'(x) = x^◆LB◆n-1◆RB◆$ does not converge uniformly on $(0, 1)$.
+$f_n'(x) = x^{n-1}$ does not converge uniformly on $(0, 1)$.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ **Uniform convergence of $f_n$:** $\sup_◆LB◆x \in [0,1]◆RB◆ |x^n/n| = 1/n \to 0$ as
+_Solution._ **Uniform convergence of $f_n$:** $\sup_{x \in [0,1]} |x^n/n| = 1/n \to 0$ as
 $n \to \infty$. So $f_n \to 0$ uniformly on $[0, 1]$.
 
-**Non-uniform convergence of $f_n'$:** $f_n'(x) = x^◆LB◆n-1◆RB◆$. The pointwise limit is $g(x) = 0$ for
+**Non-uniform convergence of $f_n'$:** $f_n'(x) = x^{n-1}$. The pointwise limit is $g(x) = 0$ for
 $0 \leq x \lt 1$ and $g(1) = 1$. So
-$\sup_◆LB◆x \in [0,1]◆RB◆ |f_n'(x) - g(x)| \geq |f_n'(1) - g(1)| = |1 - 1| = 0$.
+$\sup_{x \in [0,1]} |f_n'(x) - g(x)| \geq |f_n'(1) - g(1)| = |1 - 1| = 0$.
 
-Actually, check $\sup_◆LB◆x \in [0,1)◆RB◆ |x^◆LB◆n-1◆RB◆| = 1$ (approached as $x \to 1^-$). But $g(x) = 0$ on
-$[0, 1)$So $\sup_◆LB◆x \in [0,1)◆RB◆ |x^◆LB◆n-1◆RB◆ - 0| = 1$ for all $n$. This does not Tend to $0$So $f_n'$
+Actually, check $\sup_{x \in [0,1)} |x^{n-1}| = 1$ (approached as $x \to 1^-$). But $g(x) = 0$ on
+$[0, 1)$So $\sup_{x \in [0,1)} |x^{n-1} - 0| = 1$ for all $n$. This does not Tend to $0$So $f_n'$
 does not converge uniformly on $[0, 1)$.
 
 This illustrates that uniform convergence of functions does not imply uniform convergence of
@@ -2034,52 +2034,52 @@ and Differentiation).
 
 </details>
 
-**Problem 19.** Let $f_n(x) = \frac◆LB◆x◆RB◆◆LB◆1 + nx^2◆RB◆$ on $[0, \infty)$. Find the pointwise limit and
+**Problem 19.** Let $f_n(x) = \frac{x}{1 + nx^2}$ on $[0, \infty)$. Find the pointwise limit and
 determine Whether the convergence is uniform.
 
 <details>
 <summary>Solution</summary>
 
 _Solution._ **Pointwise limit:** For $x = 0$: $f_n(0) = 0$ for all $n$. For $x > 0$:
-$\lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆x◆RB◆◆LB◆1 + nx^2◆RB◆ = \lim_◆LB◆n \to \infty◆RB◆ \frac◆LB◆1◆RB◆◆LB◆1/x + nx◆RB◆ = 0$. So
+$\lim_{n \to \infty} \frac{x}{1 + nx^2} = \lim_{n \to \infty} \frac{1}{1/x + nx} = 0$. So
 $f_n \to 0$ pointwise.
 
-**Uniform convergence on $[0, \infty)$?** We check $\sup_◆LB◆x \geq 0◆RB◆ |f_n(x)|$. Differentiate:
-$\frac◆LB◆d◆RB◆◆LB◆dx◆RB◆\left(\frac◆LB◆x◆RB◆◆LB◆1 + nx^2◆RB◆\right) = \frac◆LB◆1 - nx^2◆RB◆◆LB◆(1 + nx^2)^2◆RB◆$. Setting to zero:
-$x = 1/\sqrt◆LB◆n◆RB◆$. The maximum value is
-$f_n(1/\sqrt◆LB◆n◆RB◆) = \frac◆LB◆1/\sqrt◆LB◆n◆RB◆◆RB◆◆LB◆1 + n/n◆RB◆ = \frac◆LB◆1◆RB◆◆LB◆2\sqrt◆LB◆n◆RB◆◆RB◆$.
+**Uniform convergence on $[0, \infty)$?** We check $\sup_{x \geq 0} |f_n(x)|$. Differentiate:
+$\frac{d}{dx}\left(\frac{x}{1 + nx^2}\right) = \frac{1 - nx^2}{(1 + nx^2)^2}$. Setting to zero:
+$x = 1/\sqrt{n}$. The maximum value is
+$f_n(1/\sqrt{n}) = \frac{1/\sqrt{n}}{1 + n/n} = \frac{1}{2\sqrt{n}}$.
 
-Since $\sup_◆LB◆x \geq 0◆RB◆ |f_n(x)| = \frac◆LB◆1◆RB◆◆LB◆2\sqrt◆LB◆n◆RB◆◆RB◆ \to 0$ as $n \to \infty$The convergence **is**
+Since $\sup_{x \geq 0} |f_n(x)| = \frac{1}{2\sqrt{n}} \to 0$ as $n \to \infty$The convergence **is**
 Uniform on $[0, \infty)$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.2 (Uniform Convergence).
 
 </details>
 
-**Problem 20.** Prove that the series $\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^n◆RB◆◆LB◆2n+1◆RB◆ x^◆LB◆2n+1◆RB◆$ converges
+**Problem 20.** Prove that the series $\sum_{n=0}^{\infty} \frac{(-1)^n}{2n+1} x^{2n+1}$ converges
 uniformly on $[-1, 1]$ and identify its sum.
 
 <details>
 <summary>Solution</summary>
 
-_Solution._ For $|x| \leq 1$: $\left|\frac◆LB◆(-1)^n x^◆LB◆2n+1◆RB◆◆RB◆◆LB◆2n+1◆RB◆\right| \leq \frac◆LB◆1◆RB◆◆LB◆2n+1◆RB◆$. The
-series $\sum \frac◆LB◆1◆RB◆◆LB◆2n+1◆RB◆$ diverges (it dominates half the harmonic series), so the Weierstrass
+_Solution._ For $|x| \leq 1$: $\left|\frac{(-1)^n x^{2n+1}}{2n+1}\right| \leq \frac{1}{2n+1}$. The
+series $\sum \frac{1}{2n+1}$ diverges (it dominates half the harmonic series), so the Weierstrass
 M-test does not apply directly with these bounds.
 
 However, by the alternating series test, the series converges pointwise for every $|x| \leq 1$
-(since $\frac◆LB◆|x|^◆LB◆2n+1◆RB◆◆RB◆◆LB◆2n+1◆RB◆$ decreases to $0$ for $|x| \leq 1$). The sum is $\arctan x$ Which is
+(since $\frac{|x|^{2n+1}}{2n+1}$ decreases to $0$ for $|x| \leq 1$). The sum is $\arctan x$ Which is
 the Taylor series of $\arctan$ about $0$.
 
 For uniform convergence, we use **Abel's test for uniform convergence of series**: if $\sum f_n(x)$
 has uniformly bounded partial sums and $g_n(x)$ decreases uniformly to $0$Then $\sum f_n(x) g_n(x)$
-converges uniformly. Here $f_n(x) = (-1)^n x^◆LB◆2n+1◆RB◆$ and $g_n(x) = 1/(2n+1)$ Is independent of $x$.
+converges uniformly. Here $f_n(x) = (-1)^n x^{2n+1}$ and $g_n(x) = 1/(2n+1)$ Is independent of $x$.
 
 The partial sums
-$\left|\sum_◆LB◆k=0◆RB◆^◆LB◆n◆RB◆ (-1)^k x^◆LB◆2k+1◆RB◆\right| = \frac◆LB◆|x| \cdot |1-(-x^2)^◆LB◆n+1◆RB◆|◆RB◆◆LB◆1+x^2◆RB◆ \leq \frac◆LB◆2|x|◆RB◆◆LB◆1+x^2◆RB◆ \leq 1$
+$\left|\sum_{k=0}^{n} (-1)^k x^{2k+1}\right| = \frac{|x| \cdot |1-(-x^2)^{n+1}|}{1+x^2} \leq \frac{2|x|}{1+x^2} \leq 1$
 for $|x| \leq 1$ (geometric series with closed form). And $1/(2n+1) \to 0$ uniformly. By Abel's
 test, the convergence is uniform on $[-1, 1]$.
 
-Setting $x = 1$: $\sum_◆LB◆n=0◆RB◆^◆LB◆\infty◆RB◆ \frac◆LB◆(-1)^n◆RB◆◆LB◆2n+1◆RB◆ = \arctan 1 = \pi/4$. $\blacksquare$
+Setting $x = 1$: $\sum_{n=0}^{\infty} \frac{(-1)^n}{2n+1} = \arctan 1 = \pi/4$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.3 (Weierstrass M-Test), Section 7.7 (Power Series),
 Abel's theorem.
@@ -2104,7 +2104,7 @@ Abel's theorem.
 
 ### Example 1: Proving a limit using $\varepsilon$-$\delta$
 
-**Problem.** Prove that $\lim_◆LB◆x \to 2◆RB◆ (3x - 1) = 5$.
+**Problem.** Prove that $\lim_{x \to 2} (3x - 1) = 5$.
 
 **Solution.** Let $\varepsilon > 0$ be given. We need $|3x - 1 - 5| < \varepsilon$, i.e.
 $|3x - 6| < \varepsilon$, i.e. $3|x - 2| < \varepsilon$.
@@ -2112,11 +2112,11 @@ $|3x - 6| < \varepsilon$, i.e. $3|x - 2| < \varepsilon$.
 Choose $\delta = \varepsilon/3$. Then $|x - 2| < \delta$ implies
 $3|x - 2| < 3 \cdot \varepsilon/3 = \varepsilon$.
 
-Therefore $\lim_◆LB◆x \to 2◆RB◆(3x - 1) = 5$. $\blacksquare$
+Therefore $\lim_{x \to 2}(3x - 1) = 5$. $\blacksquare$
 
 ### Example 2: Supremum and infimum
 
-**Problem.** Find $\sup$ and $\inf$ of the set $S = \{1/n : n \in \mathbb◆LB◆N◆RB◆\}$.
+**Problem.** Find $\sup$ and $\inf$ of the set $S = \{1/n : n \in \mathbb{N}\}$.
 
 **Solution.** The elements are $1, 1/2, 1/3, \ldots$. The sequence decreases and approaches $0$.
 
@@ -2126,10 +2126,10 @@ $\blacksquare$
 
 ## Summary
 
-- $\mathbb◆LB◆R◆RB◆$ is a complete ordered field; the completeness axiom guarantees $\sup(S)$ exists for
+- $\mathbb{R}$ is a complete ordered field; the completeness axiom guarantees $\sup(S)$ exists for
   every non-empty bounded-above set.
 - Supremum $\sup(S)$ is the least upper bound; it equals $\max(S)$ iff $\sup(S) \in S$.
-- $\varepsilon$-$\delta$ definition: $\lim_◆LB◆x \to a◆RB◆ f(x) = L$ iff for every $\varepsilon > 0$ there
+- $\varepsilon$-$\delta$ definition: $\lim_{x \to a} f(x) = L$ iff for every $\varepsilon > 0$ there
   exists $\delta > 0$ such that $0 < |x-a| < \delta$ implies $|f(x) - L| < \varepsilon$.
 - Uniform convergence preserves continuity, differentiability (under appropriate conditions), and
   integrability.

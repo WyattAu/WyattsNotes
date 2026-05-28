@@ -63,7 +63,7 @@ Are invoked via software interrupts (e.g., `syscall` on x86-64, `svc` on ARM).
 
 **System call overhead.** A transition from user mode to kernel mode involves saving user Registers,
 switching to the kernel stack, validating arguments, executing kernel code, and Returning. Typical
-overhead: $100\mathrm◆LB◆--1000◆RB◆$ ns on modern hardware.
+overhead: $100\mathrm{--1000}$ ns on modern hardware.
 
 ## 2. Process Management
 
@@ -85,9 +85,9 @@ A **process** is an instance of a program in execution. The OS maintains a **pro
 
 **Process states.** Processes transition through states:
 
-$$\mathrm◆LB◆New◆RB◆ \to \mathrm◆LB◆Ready◆RB◆ \to \mathrm◆LB◆Running◆RB◆ \to \mathrm◆LB◆Terminated◆RB◆$$
+$$\mathrm{New} \to \mathrm{Ready} \to \mathrm{Running} \to \mathrm{Terminated}$$
 
-$$\mathrm◆LB◆Running◆RB◆ \to \mathrm◆LB◆Blocked◆RB◆ \to \mathrm◆LB◆Ready◆RB◆$$
+$$\mathrm{Running} \to \mathrm{Blocked} \to \mathrm{Ready}$$
 
 The scheduler dispatches processes from **ready** to **running**. A running process may be
 **preempted** back to ready, or may **block** on I/O or a synchronisation event.
@@ -126,10 +126,10 @@ The CPU scheduler decides which process runs next from the set of ready processe
 
 **Scheduling criteria:**
 
-- **CPU utilisation:** Keep the CPU busy ($\mathrm◆LB◆utilisation◆RB◆ = 1 - p$ where $p$ is the I/O wait
+- **CPU utilisation:** Keep the CPU busy ($\mathrm{utilisation} = 1 - p$ where $p$ is the I/O wait
   probability).
 - **Throughput:** Number of processes completed per time unit.
-- **Turnaround time:** $T_◆LB◆\mathrm◆LB◆turnaround◆RB◆ = T_◆LB◆\mathrm◆LB◆completion◆RB◆ - T_◆LB◆\mathrm◆LB◆arrival◆RB◆◆RB◆◆RB◆◆RB◆$.
+- **Turnaround time:** $T_{\mathrm{turnaround} = T_{\mathrm{completion} - T_{\mathrm{arrival}}}}$.
 - **Waiting time:** Time spent in the ready queue.
 - **Response time:** Time from submission to first response.
 
@@ -140,14 +140,14 @@ From the **convoy effect**: short processes waiting behind a long process.
 
 **Shortest Job First (SJF).** Non-preemptive. Schedule the process with the shortest next CPU burst.
 Provably optimal for average waiting time. Requires burst length estimation via exponential
-Averaging: $\tau_◆LB◆n+1◆RB◆ = \alpha t_n + (1 - \alpha) \tau_n$.
+Averaging: $\tau_{n+1} = \alpha t_n + (1 - \alpha) \tau_n$.
 
 **Shortest Remaining Time First (SRTF).** Preemptive SJF. If a new process arrives with a shorter
 Remaining burst, preempt the current process.
 
 **Round Robin (RR).** Each process gets a time quantum $q$. If not finished within $q$Preempted and
 Placed at the back of the ready queue. If $q$ is large, RR degenerates to FCFS. Typical $q$:
-$10\mathrm◆LB◆--100◆RB◆$ ms.
+$10\mathrm{--100}$ ms.
 
 **Priority Scheduling.** Highest-priority ready process runs. Can be preemptive or non-preemptive.
 Risk of **starvation**; solved by **aging** (gradually increase priority of waiting processes).
@@ -637,10 +637,10 @@ State.
 **Definitions:**
 
 - **Available:** Vector $A = (A_1, \ldots, A_m)$ of available instances of each resource type.
-- **Maximum:** Matrix $\mathrm◆LB◆Max◆RB◆$ where $\mathrm◆LB◆Max◆RB◆[i][j]$ is the maximum demand of process $i$
+- **Maximum:** Matrix $\mathrm{Max}$ where $\mathrm{Max}[i][j]$ is the maximum demand of process $i$
   for resource $j$.
-- **Allocation:** Matrix $\mathrm◆LB◆Alloc◆RB◆$ where $\mathrm◆LB◆Alloc◆RB◆[i][j]$ is the current allocation.
-- **Need:** $\mathrm◆LB◆Need◆RB◆[i][j] = \mathrm◆LB◆Max◆RB◆[i][j] - \mathrm◆LB◆Alloc◆RB◆[i][j]$.
+- **Allocation:** Matrix $\mathrm{Alloc}$ where $\mathrm{Alloc}[i][j]$ is the current allocation.
+- **Need:** $\mathrm{Need}[i][j] = \mathrm{Max}[i][j] - \mathrm{Alloc}[i][j]$.
 
 **Safety algorithm:**
 
@@ -676,8 +676,8 @@ State.
 | $P_3$   | (2,1,1)    | (2,2,2) | (0,1,1) |
 | $P_4$   | (0,0,2)    | (4,3,3) | (4,3,1) |
 
-Safety check: $P_1$ has $\mathrm◆LB◆Need◆RB◆ = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release $(2,0,0)$New
-$A = (5,3,2)$. Then $P_3$: $\mathrm◆LB◆Need◆RB◆ = (0,1,1) \leq (5,3,2)$. Continuing, All processes can
+Safety check: $P_1$ has $\mathrm{Need} = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release $(2,0,0)$New
+$A = (5,3,2)$. Then $P_3$: $\mathrm{Need} = (0,1,1) \leq (5,3,2)$. Continuing, All processes can
 complete: system is **safe**.
 
 <details>
@@ -685,9 +685,9 @@ complete: system is **safe**.
 
 Given the state above, suppose $P_1$ requests $(1,0,2)$.
 
-_Step 1:_ Verify $\mathrm◆LB◆Request_1◆RB◆ = (1,0,2) \leq \mathrm◆LB◆Need_1◆RB◆ = (1,2,2)$. OK.
+_Step 1:_ Verify $\mathrm{Request_1} = (1,0,2) \leq \mathrm{Need_1} = (1,2,2)$. OK.
 
-_Step 2:_ Verify $\mathrm◆LB◆Request_1◆RB◆ = (1,0,2) \leq A = (3,3,2)$. OK.
+_Step 2:_ Verify $\mathrm{Request_1} = (1,0,2) \leq A = (3,3,2)$. OK.
 
 _Step 3:_ Pretend to allocate:
 
@@ -703,11 +703,11 @@ $A = (3,3,2) - (1,0,2) = (2,3,0)$.
 
 _Step 4:_ Run safety algorithm.
 
-1. $P_1$: $\mathrm◆LB◆Need◆RB◆ = (0,2,0) \leq (2,3,0)$. Execute, $A = (2,3,0) + (3,0,2) = (5,3,2)$.
-2. $P_3$: $\mathrm◆LB◆Need◆RB◆ = (0,1,1) \leq (5,3,2)$. Execute, $A = (5,3,2) + (2,1,1) = (7,4,3)$.
-3. $P_4$: $\mathrm◆LB◆Need◆RB◆ = (4,3,1) \leq (7,4,3)$. Execute, $A = (7,4,3) + (0,0,2) = (7,4,5)$.
-4. $P_0$: $\mathrm◆LB◆Need◆RB◆ = (7,4,3) \leq (7,4,5)$. Execute, $A = (7,4,5) + (0,1,0) = (7,5,5)$.
-5. $P_2$: $\mathrm◆LB◆Need◆RB◆ = (6,0,0) \leq (7,5,5)$. Execute, $A = (7,5,5) + (3,0,2) = (10,5,7)$.
+1. $P_1$: $\mathrm{Need} = (0,2,0) \leq (2,3,0)$. Execute, $A = (2,3,0) + (3,0,2) = (5,3,2)$.
+2. $P_3$: $\mathrm{Need} = (0,1,1) \leq (5,3,2)$. Execute, $A = (5,3,2) + (2,1,1) = (7,4,3)$.
+3. $P_4$: $\mathrm{Need} = (4,3,1) \leq (7,4,3)$. Execute, $A = (7,4,3) + (0,0,2) = (7,4,5)$.
+4. $P_0$: $\mathrm{Need} = (7,4,3) \leq (7,4,5)$. Execute, $A = (7,4,5) + (0,1,0) = (7,5,5)$.
+5. $P_2$: $\mathrm{Need} = (6,0,0) \leq (7,5,5)$. Execute, $A = (7,5,5) + (3,0,2) = (10,5,7)$.
 
 All processes finish. The request is **granted**. Safe sequence:
 $\langle P_1, P_3, P_4, P_0, P_2 \rangle$.
@@ -719,11 +719,11 @@ $\langle P_1, P_3, P_4, P_0, P_2 \rangle$.
 
 Suppose instead $P_0$ requests $(0,2,0)$ in the original state.
 
-_Step 1:_ $\mathrm◆LB◆Request_0◆RB◆ = (0,2,0) \leq \mathrm◆LB◆Need_0◆RB◆ = (7,4,3)$. OK.
+_Step 1:_ $\mathrm{Request_0} = (0,2,0) \leq \mathrm{Need_0} = (7,4,3)$. OK.
 
-_Step 2:_ $\mathrm◆LB◆Request_0◆RB◆ = (0,2,0) \leq A = (3,3,2)$. OK.
+_Step 2:_ $\mathrm{Request_0} = (0,2,0) \leq A = (3,3,2)$. OK.
 
-_Step 3:_ Pretend to allocate. New $A = (3,1,2)$, $\mathrm◆LB◆Need_0◆RB◆ = (7,2,3)$.
+_Step 3:_ Pretend to allocate. New $A = (3,1,2)$, $\mathrm{Need_0} = (7,2,3)$.
 
 _Step 4:_ Safety check. No process can execute: $P_1$ needs $(1,2,2)$ but only $(3,1,2)$ available
 (second component insufficient). $P_3$ needs $(0,1,1) \leq (3,1,2)$ — OK, execute $P_3$:
@@ -777,18 +777,18 @@ Three processes and one resource type with 10 instances:
 
 Available = $10 - (5 + 2 + 2) = 1$.
 
-$\mathrm◆LB◆Request_0◆RB◆ = 4$$\mathrm◆LB◆Request_1◆RB◆ = 2$$\mathrm◆LB◆Request_2◆RB◆ = 5$.
+$\mathrm{Request_0} = 4$$\mathrm{Request_1} = 2$$\mathrm{Request_2} = 5$.
 
 _Detection:_
 
-1. Work = 1. No process has $\mathrm◆LB◆Request◆RB◆ \leq 1$.
+1. Work = 1. No process has $\mathrm{Request} \leq 1$.
 2. No process can proceed. All three are deadlocked.
 
 The system is in an **unsafe state** with a deadlock involving $\{P_0, P_1, P_2\}$.
 
 _Recovery:_ Preempt 3 units from $P_0$ (reducing its allocation to 2). Now Available = 4. $P_1$ can
-proceed ($\mathrm◆LB◆Request_1◆RB◆ = 2 \leq 4$). After $P_1$ finishes, Available = $4 + 2 = 6$. $P_0$:
-$\mathrm◆LB◆Request_0◆RB◆ = 4 \leq 6$Proceeds. After: Available = $6 + 5 = 11$. $P_2$ proceeds. Deadlock
+proceed ($\mathrm{Request_1} = 2 \leq 4$). After $P_1$ finishes, Available = $4 + 2 = 6$. $P_0$:
+$\mathrm{Request_0} = 4 \leq 6$Proceeds. After: Available = $6 + 5 = 11$. $P_2$ proceeds. Deadlock
 resolved.
 
 </details>
@@ -823,9 +823,9 @@ is Overly restrictive.
 Divide physical memory into fixed-size **frames** and logical memory into same-size **pages**. A
 **page table** maps page numbers to frame numbers.
 
-$$\mathrm◆LB◆physical◆RB◆ address = \mathrm◆LB◆PT◆RB◆[p] \times F + f$$
+$$\mathrm{physical} address = \mathrm{PT}[p] \times F + f$$
 
-Where $\mathrm◆LB◆PT◆RB◆[p]$ is the frame number for page $p$ and $F$ is the frame size.
+Where $\mathrm{PT}[p]$ is the frame number for page $p$ and $F$ is the frame size.
 
 **Page table entry fields:**
 
@@ -841,7 +841,7 @@ Where $\mathrm◆LB◆PT◆RB◆[p]$ is the frame number for page $p$ and $F$ is
 Two-level scheme uses a **page directory** indexed by the outer page number, pointing to inner Page
 tables:
 
-$$\mathrm◆LB◆Address◆RB◆:  \underbrace◆LB◆p_1◆RB◆_◆LB◆\mathrm◆LB◆outer◆RB◆ \mid \underbrace◆LB◆p_2◆RB◆_◆LB◆\mathrm◆LB◆inner◆RB◆ \mid \underbrace◆LB◆d◆RB◆_◆LB◆\mathrm◆LB◆offset◆RB◆◆RB◆◆RB◆◆RB◆$$
+$$\mathrm{Address}:  \underbrace{p_1}_{\mathrm{outer} \mid \underbrace{p_2}_{\mathrm{inner} \mid \underbrace{d}_{\mathrm{offset}}}}$$
 
 X86-64 with 48-bit virtual addresses uses four-level page tables.
 
@@ -853,7 +853,7 @@ Overhead but makes searching for a specific virtual page expensive; solved by ha
 Segments divide the address space into logical units (code, data, stack, heap). Each segment has a
 **base** and **limit**:
 
-$$\mathrm◆LB◆physical◆RB◆ address = \mathrm◆LB◆base◆RB◆ + \mathrm◆LB◆offset◆RB◆, \quad \mathrm◆LB◆if◆RB◆  \mathrm◆LB◆offset◆RB◆ \lt \mathrm◆LB◆limit◆RB◆$$
+$$\mathrm{physical} address = \mathrm{base} + \mathrm{offset}, \quad \mathrm{if}  \mathrm{offset} \lt \mathrm{limit}$$
 
 _Advantages:_ Reflects program structure; supports sharing individual segments. _Disadvantages:_
 External fragmentation (variable-size segments).
@@ -883,7 +883,7 @@ Translate (segment = 2, offset = 2500):
 
 Combine segmentation and paging: the segment offset is divided into page number and page offset.
 
-$$\mathrm◆LB◆Address◆RB◆:  \underbrace◆LB◆s◆RB◆_◆LB◆\mathrm◆LB◆segment◆RB◆ \mid \underbrace◆LB◆p◆RB◆_◆LB◆\mathrm◆LB◆page◆RB◆ \mid \underbrace◆LB◆d◆RB◆_◆LB◆\mathrm◆LB◆offset◆RB◆◆RB◆◆RB◆◆RB◆$$
+$$\mathrm{Address}:  \underbrace{s}_{\mathrm{segment} \mid \underbrace{p}_{\mathrm{page} \mid \underbrace{d}_{\mathrm{offset}}}}$$
 
 Used by x86 (segmentation + paging).
 
@@ -905,14 +905,14 @@ Pages in RAM; the rest reside on disk (swap space).
 
 **Effective access time (EAT):**
 
-$$\mathrm◆LB◆EAT◆RB◆ = (1 - p) \times \mathrm◆LB◆ma◆RB◆ + p \times \mathrm◆LB◆pf◆RB◆$$
+$$\mathrm{EAT} = (1 - p) \times \mathrm{ma} + p \times \mathrm{pf}$$
 
-Where $p$ = page fault rate, $\mathrm◆LB◆ma◆RB◆$ = memory access time, $\mathrm◆LB◆pf◆RB◆$ = page fault service
+Where $p$ = page fault rate, $\mathrm{ma}$ = memory access time, $\mathrm{pf}$ = page fault service
 Time.
 
-For $p = 0.001$, $\mathrm◆LB◆ma◆RB◆ = 100$ ns, $\mathrm◆LB◆pf◆RB◆ = 8$ ms:
+For $p = 0.001$, $\mathrm{ma} = 100$ ns, $\mathrm{pf} = 8$ ms:
 
-$$\mathrm◆LB◆EAT◆RB◆ = 0.999 \times 100 + 0.001 \times 8\,000\,000 = 8.1 \; \mu\mathrm◆LB◆s◆RB◆$$
+$$\mathrm{EAT} = 0.999 \times 100 + 0.001 \times 8\,000\,000 = 8.1 \; \mu\mathrm{s}$$
 
 This is roughly $80\times$ slower than pure memory access, illustrating why a low page fault rate Is
 critical.
@@ -922,13 +922,13 @@ critical.
 A **TLB** is a hardware cache of recently used page table entries, avoiding an extra memory access
 Per translation.
 
-$$\mathrm◆LB◆EAT◆RB◆ = h \times (\mathrm◆LB◆TLB◆RB◆ + \mathrm◆LB◆ma◆RB◆) + (1 - h) \times (\mathrm◆LB◆TLB◆RB◆ + \mathrm◆LB◆ma◆RB◆ + \mathrm◆LB◆ma◆RB◆)$$
+$$\mathrm{EAT} = h \times (\mathrm{TLB} + \mathrm{ma}) + (1 - h) \times (\mathrm{TLB} + \mathrm{ma} + \mathrm{ma})$$
 
 Where $h$ is the TLB hit ratio.
 
-For $h = 0.99$, $\mathrm◆LB◆TLB◆RB◆ = 2$ ns, $\mathrm◆LB◆ma◆RB◆ = 100$ ns:
+For $h = 0.99$, $\mathrm{TLB} = 2$ ns, $\mathrm{ma} = 100$ ns:
 
-$$\mathrm◆LB◆EAT◆RB◆ = 0.99 \times 102 + 0.01 \times 202 = 103 \; \mathrm◆LB◆ns◆RB◆$$
+$$\mathrm{EAT} = 0.99 \times 102 + 0.01 \times 202 = 103 \; \mathrm{ns}$$
 
 **TLB coherence.** When the OS modifies a page table entry, it must invalidate the corresponding TLB
 entry. On x86-64: `invlpg` for single-entry invalidation, or reload `CR3` to flush the entire TLB.
@@ -940,16 +940,16 @@ A system with TLB access time = 2 ns, memory access time = 100 ns, page fault se
 TLB hit ratio = 0.80, and page fault rate = 0.0005.
 
 _Case 1: TLB hit, no page fault_ ($0.80 \times 0.9995 = 0.7996$): Time =
-$\mathrm◆LB◆TLB◆RB◆ + \mathrm◆LB◆ma◆RB◆ = 2 + 100 = 102$ ns.
+$\mathrm{TLB} + \mathrm{ma} = 2 + 100 = 102$ ns.
 
 _Case 2: TLB miss, no page fault_ ($0.20 \times 0.9995 = 0.1999$): Time =
-$\mathrm◆LB◆TLB◆RB◆ + 2 \times \mathrm◆LB◆ma◆RB◆ = 2 + 200 = 202$ ns.
+$\mathrm{TLB} + 2 \times \mathrm{ma} = 2 + 200 = 202$ ns.
 
 _Case 3: Page fault_ ($0.0005$): Time =
-$\mathrm◆LB◆TLB◆RB◆ + \mathrm◆LB◆ma◆RB◆ + \mathrm◆LB◆pf◆RB◆ = 2 + 100 + 8 \times 10^6 = 8000002$ ns.
+$\mathrm{TLB} + \mathrm{ma} + \mathrm{pf} = 2 + 100 + 8 \times 10^6 = 8000002$ ns.
 
-$$\mathrm◆LB◆EAT◆RB◆ = 0.7996 \times 102 + 0.1999 \times 202 + 0.0005 \times 8\,000\,102$$
-$$\mathrm◆LB◆EAT◆RB◆ = 81.56 + 40.38 + 4000.05 = 4121.99 \;\mathrm◆LB◆ns◆RB◆ \approx 4.12 \;\mu\mathrm◆LB◆s◆RB◆$$
+$$\mathrm{EAT} = 0.7996 \times 102 + 0.1999 \times 202 + 0.0005 \times 8\,000\,102$$
+$$\mathrm{EAT} = 81.56 + 40.38 + 4000.05 = 4121.99 \;\mathrm{ns} \approx 4.12 \;\mu\mathrm{s}$$
 
 This is roughly $41\times$ slower than pure memory access, driven almost entirely by the page fault
 Component.
@@ -1142,7 +1142,7 @@ Decrease its allocation.
 **Theorem 5.4.** If the sum of all working sets exceeds the number of physical frames, at least one
 Process must thrash.
 
-_Proof._ By the pigeonhole principle, if $\sum_◆LB◆i=1◆RB◆^◆LB◆n◆RB◆ \lvert W_i \rvert \gt F$ where $F$ is the
+_Proof._ By the pigeonhole principle, if $\sum_{i=1}^{n} \lvert W_i \rvert \gt F$ where $F$ is the
 Total number of frames, at least one process cannot hold its entire working set in memory. That
 Process will repeatedly evict pages it needs, causing its page fault rate to dominate its execution
 Time. $\blacksquare$
@@ -1262,7 +1262,7 @@ Directory entry):
 - **Triple indirect:** 1 more level of indirection (4 TiB).
 
 Maximum file size:
-$48\;\mathrm◆LB◆KiB◆RB◆ + 4\;\mathrm◆LB◆MiB◆RB◆ + 4\;\mathrm◆LB◆GiB◆RB◆ + 4\;\mathrm◆LB◆TiB◆RB◆ \approx 4\;\mathrm◆LB◆TiB◆RB◆$.
+$48\;\mathrm{KiB} + 4\;\mathrm{MiB} + 4\;\mathrm{GiB} + 4\;\mathrm{TiB} \approx 4\;\mathrm{TiB}$.
 
 ### 6.5 Journaling File Systems
 
@@ -1311,10 +1311,10 @@ reliability, Or both.
 - RAID 6: $(n - 2)C$
 - RAID 10: $nC / 2$
 
-**Mean time to failure (MTTF).** If each disk has $\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆◆RB◆$ and the MTTR (mean
-time to repair) is $T_◆LB◆\mathrm◆LB◆repair◆RB◆◆RB◆$:
+**Mean time to failure (MTTF).** If each disk has $\mathrm{MTTF_}{\mathrm{disk}}$ and the MTTR (mean
+time to repair) is $T_{\mathrm{repair}}$:
 
-$$\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆RAID◆RB◆\;5◆RB◆ \approx \frac◆LB◆\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆^2◆RB◆◆LB◆n(n-1) \cdot T_◆LB◆\mathrm◆LB◆repair◆RB◆◆RB◆◆RB◆◆RB◆$$
+$$\mathrm{MTTF_}{\mathrm{RAID}\;5} \approx \frac{\mathrm{MTTF_}{\mathrm{disk}^2}{n(n-1) \cdot T_{\mathrm{repair}}}}$$
 
 RAID 5 significantly improves reliability for large arrays, but the rebuild time grows with disk
 Capacity, increasing the window of vulnerability.
@@ -1322,14 +1322,14 @@ Capacity, increasing the window of vulnerability.
 <details>
 <summary>Worked Example 6.2 — RAID Capacity and Reliability</summary>
 
-Eight 2 TiB disks. $\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆ = 1.2 \times 10^6◆RB◆$ hours, $T_◆LB◆\mathrm◆LB◆repair◆RB◆ = 24◆RB◆$
+Eight 2 TiB disks. $\mathrm{MTTF_}{\mathrm{disk} = 1.2 \times 10^6}$ hours, $T_{\mathrm{repair} = 24}$
 hours.
 
 _RAID 0:_ Capacity = $8 \times 2 = 16$ TiB. No fault tolerance. MTTF =
-$\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆disk◆RB◆ / 8 = 150000◆RB◆$ hours.
+$\mathrm{MTTF_}{\mathrm{disk} / 8 = 150000}$ hours.
 
 _RAID 5:_ Capacity = $7 \times 2 = 14$ TiB.
-$\mathrm◆LB◆MTTF_◆RB◆◆LB◆\mathrm◆LB◆RAID◆RB◆\;5◆RB◆ \approx \frac◆LB◆(1.2 \times 10^6)^2◆RB◆◆LB◆8 \times 7 \times 24◆RB◆ = \frac◆LB◆1.44 \times 10^◆LB◆12◆RB◆◆RB◆◆LB◆1344◆RB◆ \approx 1.07 \times 10^9$
+$\mathrm{MTTF_}{\mathrm{RAID}\;5} \approx \frac{(1.2 \times 10^6)^2}{8 \times 7 \times 24} = \frac{1.44 \times 10^{12}}{1344} \approx 1.07 \times 10^9$
 hours.
 
 _RAID 6:_ Capacity = $6 \times 2 = 12$ TiB. Tolerates 2 simultaneous disk failures. MTTF is orders
@@ -1609,7 +1609,7 @@ Modified, the program aborts.
 Libraries, and executable code in each process invocation.
 
 - Defeats return-to-libc and ROP (Return-Oriented Programming) attacks that rely on known addresses.
-- Entropy: 22--28 bits on 64-bit systems, providing $2^◆LB◆22◆RB◆$ to $2^◆LB◆28◆RB◆$ possible layouts.
+- Entropy: 22--28 bits on 64-bit systems, providing $2^{22}$ to $2^{28}$ possible layouts.
 - Limitation: information leaks (e.g., pointer disclosure) can defeat ASLR.
 
 **Data Execution Prevention (DEP / W\^X).** Marks memory pages as either writable or executable,
@@ -1663,7 +1663,7 @@ As a fraction of CPU time on a 3 GHz processor?
 
 **Solution.** (Revision: §1.2)
 
-Total message-passing time per second: $10^6 \times 2 \;\mu\mathrm◆LB◆s◆RB◆ = 2$ seconds of CPU time per
+Total message-passing time per second: $10^6 \times 2 \;\mu\mathrm{s} = 2$ seconds of CPU time per
 Second. This exceeds available CPU time, making the microkernel approach infeasible at this call
 Rate without optimisations such as batched IPC or shared-memory channels.
 
@@ -1887,9 +1887,9 @@ Granted.
 
 **Solution.** (Revision: §4.3)
 
-1. $\mathrm◆LB◆Request_0◆RB◆ = (1,0,0) \leq \mathrm◆LB◆Need_0◆RB◆ = (2,2,1)$. OK.
-2. $\mathrm◆LB◆Request_0◆RB◆ = (1,0,0) \leq A = (3,2,1)$. OK.
-3. Pretend to allocate: $A = (2,2,1)$$\mathrm◆LB◆Alloc_0◆RB◆ = (2,0,0)$$\mathrm◆LB◆Need_0◆RB◆ = (1,2,1)$.
+1. $\mathrm{Request_0} = (1,0,0) \leq \mathrm{Need_0} = (2,2,1)$. OK.
+2. $\mathrm{Request_0} = (1,0,0) \leq A = (3,2,1)$. OK.
+3. Pretend to allocate: $A = (2,2,1)$$\mathrm{Alloc_0} = (2,0,0)$$\mathrm{Need_0} = (1,2,1)$.
 4. Safety: Work = $(2,2,1)$.
 
 - $P_0$: $(1,2,1) \leq (2,2,1)$. Execute. Work = $(4,2,1)$.
@@ -1910,7 +1910,7 @@ is the size of the page table?
 
 **Solution.** (Revision: §5.2)
 
-(a) Offset = $\log_2(4096) = 12$ bits. Page number = $32 - 12 = 20$ bits. (b) $2^◆LB◆20◆RB◆ = 1048576$
+(a) Offset = $\log_2(4096) = 12$ bits. Page number = $32 - 12 = 20$ bits. (b) $2^{20} = 1048576$
 entries. (c) $1048576 \times 4$ bytes = 4 MiB.
 
 </details>
@@ -1928,7 +1928,7 @@ _TLB hit, no fault_ ($0.90 \times 0.999$): $2 + 100 = 102$ ns. _TLB miss, no fau
 ($0.10 \times 0.999$): $2 + 100 + 100 = 202$ ns (TLB + outer PT + inner PT + data). _Fault_
 ($0.001$): $2 + 100 + 100 + 6 \times 10^6 = 6000002$ ns.
 
-$\mathrm◆LB◆EAT◆RB◆ = 0.8991 \times 102 + 0.0999 \times 202 + 0.001 \times 6000002$
+$\mathrm{EAT} = 0.8991 \times 102 + 0.0999 \times 202 + 0.001 \times 6000002$
 $= 91.71 + 20.18 + 6000.20 = 6112.09$ ns $\approx 6.11$ $\mu$S.
 
 </details>
@@ -1941,9 +1941,9 @@ Access time = 100 ns, page fault service = 8 ms.
 
 **Solution.** (Revision: §5.5)
 
-Assume no TLB for simplicity: $\mathrm◆LB◆EAT◆RB◆ = (1 - p) \times 100 + p \times 8 \times 10^6$.
+Assume no TLB for simplicity: $\mathrm{EAT} = (1 - p) \times 100 + p \times 8 \times 10^6$.
 
-$200 = 100 - 100p + 8 \times 10^6 p$ $100 = 7999900 p$ $p \approx 1.25 \times 10^◆LB◆-5◆RB◆$
+$200 = 100 - 100p + 8 \times 10^6 p$ $100 = 7999900 p$ $p \approx 1.25 \times 10^{-5}$
 
 The page fault rate must be below 0.00125%, or roughly 1 fault per 80,000 accesses. This Illustrates
 why effective caching is essential.
@@ -2175,7 +2175,7 @@ Calculate average waiting time with Round Robin (quantum = 4 ms).
 | P2      | 7           | 4         |
 | P3      | 10          | 7         |
 
-Average waiting time = $\frac◆LB◆6 + 4 + 7◆RB◆◆LB◆3◆RB◆ = 5.67$ ms.
+Average waiting time = $\frac{6 + 4 + 7}{3} = 5.67$ ms.
 
 Compare with FCFS: P1 waits 0, P2 waits 24, P3 waits 27, average = 17 ms.
 
