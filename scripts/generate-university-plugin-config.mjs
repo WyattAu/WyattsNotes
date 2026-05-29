@@ -63,14 +63,21 @@ const plugins: any[] = [
   // Webpack loader runs with enforce: 'pre' before the MDX loader.
   () => {
     const path = require('path');
+    const loaderPath = path.resolve(__dirname, 'src/plugins/escape-jsx-braces/webpack-loader.js');
     return {
       name: 'escape-latex-braces-webpack-loader',
-      configureWebpack(config) {
-        config.module.rules.push({
-          test: /\\.mdx?$/,
-          enforce: 'pre',
-          use: [{ loader: path.resolve(__dirname, 'src/plugins/escape-jsx-braces/webpack-loader.js') }],
-        });
+      configureWebpack() {
+        return {
+          module: {
+            rules: [
+              {
+                test: /\\.mdx?$/,
+                enforce: 'pre',
+                use: [{ loader: loaderPath }],
+              },
+            ],
+          },
+        };
       },
     };
   },
