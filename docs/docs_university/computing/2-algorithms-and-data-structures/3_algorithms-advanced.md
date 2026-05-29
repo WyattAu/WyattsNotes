@@ -992,7 +992,7 @@ $Z[k] = 0 < r - i + 1 = 1$So $Z[6] = 0$.
 
 $Z = [\_, 1, 0, 0, 3, 1, 0]$.
 
-Pattern matching: To find pattern $P$ in text $T$, compute the Z-array of $P + \$, $\ $ + T$ and look
+Pattern matching: To find pattern $P$ in text $T$, compute the Z-array of $P + \text{\$} + T$ and look
 for $Z$ values equal to $|P|$.
 
 </details>

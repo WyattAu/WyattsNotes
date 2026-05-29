@@ -667,7 +667,7 @@ $\varepsilon$-moves (without consuming input or changing the stack).
 
 **Example.** PDA for $L = \{a^n b^n : n \geq 0\}$:
 
-1. Push a marker $\$, $ onto the stack.
+ 1. Push a marker $\text{\$}$ onto the stack.
 2. For each `a`Push `X` onto the stack.
 3. For each `b`Pop `X` from the stack.
 4. Accept if the stack is empty (just the marker) and all input is consumed.
@@ -732,7 +732,7 @@ $M = (\{q_0, q_1, q_2\}, \Sigma, V \cup \Sigma \cup \{\$\}, \delta, q_0, \{q_2\}
 4. $(q_1, \varepsilon, \$) \to (q_2, \$)$ — accept when only the marker remains.
 
 The PDA maintains the current sentential form (minus terminals already matched) on the stack. When
-only $\$, $ remains, the derivation is complete and all input has been consumed. $\blacksquare$
+only $\text{\$}$ remains, the derivation is complete and all input has been consumed. $\blacksquare$
 
 ### 3.6 Pumping Lemma for Context-Free Languages
 

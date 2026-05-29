@@ -1214,7 +1214,7 @@ algorithm) or $O(n \log n)$ time (using the doubling algorithm with radix sort).
 ### 6.2 Suffix Trees
 
 A **suffix tree** for a string $S$ of length $n$ is a compressed trie of all $n$ suffixes of $S$
-(plus a unique terminator $\$, $).
+(plus a unique terminator $\text{\$}$).
 
 **Theorem 6.2 (Ukkonen).** A suffix tree can be constructed in $O(n)$ time online.
 
@@ -1244,7 +1244,7 @@ least $\mathrm{LCP[\mathrm{SA^{-1}[j-1]] - 1$.
 <details>
 <summary>Worked Example: Suffix Array and LCP Array</summary>
 
-String $S = \text{banana\$$, $N = 7$.
+String $S = \text{banana\$}$, $N = 7$.
 
 All suffixes: 0: banana$
 1: anana$ 2: nana$
