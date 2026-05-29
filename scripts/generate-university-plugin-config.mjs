@@ -59,9 +59,6 @@ import {
 
 const plugins: any[] = [
   ...sharedPlugins('wyattsnotes-university'),
-  // Webpack loader to pre-process LaTeX braces before MDX parsing.
-  // Runs with enforce: 'pre' so it executes before the MDX loader.
-  ['./src/plugins/escape-jsx-braces/plugin.js'],
   ['@docusaurus/plugin-content-docs', {
     id: '${pluginId}',
     path: '${docsPath}',
@@ -98,6 +95,19 @@ const config = {
     },
   },
   plugins,
+  // Pre-process LaTeX braces before MDX parsing.
+  // Webpack loader runs with enforce: 'pre' before the MDX loader.
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\\.mdx?$/,
+          enforce: 'pre',
+          use: [{ loader: './src/plugins/escape-jsx-braces/webpack-loader.js' }],
+        },
+      ],
+    },
+  },
   themeConfig: {
     algolia: createAlgoliaConfig('wyattsnotes_university'),
     metadata: sharedThemeConfigMetadata,
