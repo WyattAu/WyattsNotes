@@ -108,7 +108,6 @@ function processCommandBraces(source) {
       const cmdName = source.substring(cmdStart + 1, cmdEnd);
 
       if (TOP_LEVEL_CMDS.has(cmdName)) {
-        const isTextCmd = TEXT_CMDS.has(cmdName);
         let pos = cmdEnd;
         while (pos < source.length && ' \t\n'.includes(source[pos])) pos++;
 
@@ -116,7 +115,6 @@ function processCommandBraces(source) {
           const braceGroups = [];
           let scanPos = pos;
           let allValid = true;
-          let anyProblematic = isTextCmd; // Text cmds: always escape
 
           const maxGroups = TWO_ARG_CMDS.has(cmdName) ? 2 : 1;
 
@@ -132,11 +130,9 @@ function processCommandBraces(source) {
 
             braceGroups.push(result);
             scanPos = result.end;
-
-            if (!isTextCmd && hasProblematicContent(result.content)) anyProblematic = true;
           }
 
-          if (allValid && anyProblematic) {
+          if (allValid && braceGroups.length > 0) {
             parts.push(source.substring(cmdStart, cmdEnd));
             let endPos = cmdEnd;
 
