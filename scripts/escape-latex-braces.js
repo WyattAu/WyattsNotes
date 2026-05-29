@@ -239,9 +239,7 @@ function escapeMathRegionBraces(source) {
 }
 
 function escapeBraces(content) {
-  return content
-    .replace(/(?<!\\)\{/g, LBRACE)
-    .replace(/(?<!\\)\}/g, RBRACE);
+  return content.replace(/(?<!\\)\{/g, LBRACE).replace(/(?<!\\)\}/g, RBRACE);
 }
 
 function findClosingDollar(source, start) {
