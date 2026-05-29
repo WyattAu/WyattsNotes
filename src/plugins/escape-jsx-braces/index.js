@@ -114,8 +114,12 @@ module.exports = function escapeJsxBraces() {
     // The preprocessing script replaces braces inside math blocks with
     // diamond placeholders to prevent MDX from parsing them as JSX.
     // We must restore them before KaTeX processes the math server-side.
+    let mathNodeCount = 0;
+    let restoredCount = 0;
     visit(tree, ['math', 'inlineMath'], (node) => {
+      mathNodeCount++;
       if (typeof node.value === 'string') {
+        const before = node.value;
         node.value = node.value
           .replace(/\u29C3LB\u29C4/g, '{')
           .replace(/\u29C3RB\u29C4/g, '}')
@@ -123,7 +127,11 @@ module.exports = function escapeJsxBraces() {
           .replace(/\uE001/g, '}')
           .replace(/\u25C6LB\u25C6/g, '{')
           .replace(/\u25C6RB\u25C6/g, '}');
+        if (before !== node.value) restoredCount++;
       }
     });
+    if (mathNodeCount > 0) {
+      console.log(`[escape-jsx-braces] math nodes: ${mathNodeCount}, restored: ${restoredCount}`);
+    }
   };
 };
