@@ -258,11 +258,10 @@ function findClosingDollar(source, start) {
 function processSource(source) {
   // Pass 1: Escape braces around LaTeX command arguments
   let result = processCommandBraces(source);
-  // Pass 2: Disabled — the remark plugin (escape-jsx-braces) handles
-  // remaining braces via mdxTextExpression nodes. Escaping ALL math-region
-  // braces causes diamond restoration to fail because the math nodes
-  // contain diamond content that rehype-katex can't process.
-  // result = escapeMathRegionBraces(result);
+  // Pass 2: Escape ALL remaining braces inside math regions.
+  // This prevents MDX from parsing standalone braces as JSX expressions,
+  // which would break remark-math's ability to create math/inlineMath nodes.
+  result = escapeMathRegionBraces(result);
   return result;
 }
 
