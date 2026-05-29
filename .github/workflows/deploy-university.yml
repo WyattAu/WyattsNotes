@@ -16,7 +16,6 @@ on:
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
-      - 'scripts/escape-latex-braces.js'
       - 'scripts/generate-university-plugin-config.mjs'
   workflow_dispatch:
 
@@ -62,11 +61,10 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: Escape LaTeX braces for MDX
-        run: node scripts/escape-latex-braces.js ${{ matrix.docs_path }}
-
       - name: Generate per-plugin Docusaurus config
-        run: node scripts/generate-university-plugin-config.mjs ${{ matrix.subject }} ${{ matrix.docs_path }} ${{ matrix.include_intro || '' }}
+        run:
+          node scripts/generate-university-plugin-config.mjs ${{ matrix.subject }} ${{
+          matrix.docs_path }} ${{ matrix.include_intro || '' }}
 
       - name: Build
         run: npx docusaurus build --config docusaurus-university-${{ matrix.subject }}.config.ts

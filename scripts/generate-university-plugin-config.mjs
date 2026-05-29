@@ -59,6 +59,9 @@ import {
 
 const plugins: any[] = [
   ...sharedPlugins('wyattsnotes-university'),
+  // Webpack loader to pre-process LaTeX braces before MDX parsing.
+  // Runs with enforce: 'pre' so it executes before the MDX loader.
+  ['./src/plugins/escape-jsx-braces/plugin.js'],
   ['@docusaurus/plugin-content-docs', {
     id: '${pluginId}',
     path: '${docsPath}',

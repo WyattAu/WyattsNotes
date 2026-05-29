@@ -1,27 +1,67 @@
 #!/usr/bin/env node
 /**
- * Preprocesses .md/.mdx files to replace LaTeX command brace arguments
- * with placeholders that MDX's micromark parser won't try to parse as JSX.
+ * Preprocesses .md/.mdx files to escape braces inside LaTeX command
+ * arguments that MDX's micromark parser can't parse as valid JS.
  *
- * Uses printable ASCII placeholders (no null bytes) to avoid issues with
- * micromark splitting text nodes at null boundaries.
+ * Ported from the webpack loader (src/plugins/escape-jsx-braces/webpack-loader.js).
+ * Same logic, runs as a standalone script for the university build pipeline.
  *
- * Placeholders:
- *   LBRACE_PLACEHOLDER = '⦃LB⦄'  (rare Unicode chars unlikely in LaTeX)
- *   RBRACE_PLACEHOLDER = '⦃RB⦄'
+ * Problem 1: \dfrac{|\mathbf{a}|}{|\mathbf{n}|} — micromark sees \dfrac{...}
+ * and tries to parse {|\mathbf{a}|} as JSX. Acorn fails on \mathbf.
  *
- * The companion remark plugin (in index.js) restores these to { and }.
+ * Problem 2: \mathrm{PMK{}} — MDX sees the inner {} as an empty JSX
+ * expression. The brace depth counter never reaches 0 because the
+ * empty group {} inside makes the outer group unbalanced from the
+ * parser's perspective.
+ *
+ * Solution: Replace { with \{ and } with \} inside LaTeX command
+ * arguments when the content contains backslashes, pipes, or nested
+ * braces. For commands where the first brace group is always a simple
+ * text argument (like \mathrm, \text, etc.), always escape regardless.
+ *
+ * The companion remark plugin (escape-jsx-braces) then handles
+ * mdxTextExpression nodes and escapes remaining braces in text nodes.
+ *
+ * KaTeX interprets \{ and \} as literal braces in math mode, but inside
+ * \dfrac arguments, \{...\} creates a LaTeX group (same as {...}).
+ * So \dfrac\{|\mathbf{a}|\}\{|\mathbf{n}|\} renders identically to
+ * \dfrac{|\mathbf{a}|}{|\mathbf{n}|}.
+ *
+ * IMPORTANT: This script only escapes INNER braces of command arguments.
+ * The OUTER { and } delimiters are left as-is. MDX parses {E} as JSX
+ * expression `E` (a valid identifier). The remark plugin then converts
+ * these mdxTextExpression nodes back to \{E\} for KaTeX.
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const LBRACE = '◆LB◆';
-const RBRACE = '◆RB◆';
+// Commands whose first argument is a simple text label that should
+// always have its inner braces escaped. These never need nested braces
+// in their first argument for valid LaTeX rendering.
+const ALWAYS_ESCAPE_CMDS = new Set([
+  'mathrm',
+  'text',
+  'textbf',
+  'textit',
+  'textrm',
+  'mathsf',
+  'mathit',
+  'mathnormal',
+  'mathbf',
+  'mathcal',
+  'mathbb',
+  'boldsymbol',
+  'operatorname',
+  'mathtt',
+  'tag',
+  'label',
+]);
 
-// Structural commands: only escape braces when content contains
-// backslash commands or pipes (which MDX misinterprets).
-const STRUCTURAL_CMDS = new Set([
+// Commands whose arguments may contain other LaTeX commands with
+// their own brace groups. Only escape when nested braces, backslashes,
+// or pipes are detected inside the argument.
+const CONDITIONAL_ESCAPE_CMDS = new Set([
   'dfrac',
   'tfrac',
   'cfrac',
@@ -36,121 +76,175 @@ const STRUCTURAL_CMDS = new Set([
   'overset',
   'underset',
   'begin',
+  'sum',
+  'prod',
+  'int',
+  'lim',
 ]);
 
-// Text-formatting commands: ALWAYS escape braces unconditionally.
-// Their {arg} is never meant as JSX — MDX should never see these braces.
-const TEXT_CMDS = new Set([
-  'mathrm',
-  'mathbf',
-  'mathit',
-  'mathsf',
-  'mathtt',
-  'text',
-  'textrm',
-  'textbf',
-  'textit',
-  'operatorname',
-  'boldsymbol',
-  'mathcal',
-  'mathbb',
-  'tag',
-  'label',
-]);
+const ALL_CMDS = new Set([...ALWAYS_ESCAPE_CMDS, ...CONDITIONAL_ESCAPE_CMDS]);
 
-// Commands that take exactly TWO brace arguments (e.g. \frac{num}{den}).
-const TWO_ARG_CMDS = new Set([
-  'dfrac',
-  'tfrac',
-  'cfrac',
-  'frac',
-  'binom',
-  'choose',
-  'brace',
-  'brack',
-  'overset',
-  'underset',
-]);
-
-const TOP_LEVEL_CMDS = new Set([...STRUCTURAL_CMDS, ...TEXT_CMDS]);
-
-function readBalancedBraces(source, start) {
-  let depth = 0;
-  let i = start;
-  while (i < source.length) {
-    if (source[i] === '{') depth++;
-    else if (source[i] === '}') {
-      depth--;
-      if (depth === 0) return { end: i + 1, content: source.substring(start + 1, i) };
-    }
-    i++;
-  }
-  return null;
-}
-
-function hasProblematicContent(content) {
-  for (let i = 0; i < content.length - 1; i++) {
-    if (content[i] === '\\' && /[a-zA-Z]/.test(content[i + 1])) return true;
-  }
-  return content.includes('|');
-}
-
-function processCommandBraces(source) {
-  const parts = [];
+function processSource(source) {
   let i = 0;
+  const parts = [];
 
   while (i < source.length) {
+    // Look for backslash followed by a command name
     if (source[i] === '\\' && i + 1 < source.length && /[a-zA-Z]/.test(source[i + 1])) {
+      // Read the full command name
       const cmdStart = i;
-      let cmdEnd = i + 2;
-      while (cmdEnd < source.length && /[a-zA-Z]/.test(source[cmdEnd])) cmdEnd++;
-
+      let cmdEnd = i + 1;
+      while (cmdEnd < source.length && /[a-zA-Z]/.test(source[cmdEnd])) {
+        cmdEnd++;
+      }
       const cmdName = source.substring(cmdStart + 1, cmdEnd);
+      const shouldAlwaysEscape = ALWAYS_ESCAPE_CMDS.has(cmdName);
+      const shouldConditionalEscape = CONDITIONAL_ESCAPE_CMDS.has(cmdName);
 
-      if (TOP_LEVEL_CMDS.has(cmdName)) {
+      if (shouldAlwaysEscape || shouldConditionalEscape) {
+        // Skip whitespace
         let pos = cmdEnd;
-        while (pos < source.length && ' \t\n'.includes(source[pos])) pos++;
+        while (pos < source.length && source[pos] in { ' ': 1, '\t': 1, '\n': 1 }) {
+          pos++;
+        }
 
         if (pos < source.length && source[pos] === '{') {
-          const braceGroups = [];
-          let scanPos = pos;
-          let allValid = true;
+          if (shouldAlwaysEscape) {
+            // Always escape the first brace group for text commands.
+            parts.push(source.substring(cmdStart, cmdEnd));
+            i = cmdEnd;
 
-          const maxGroups = TWO_ARG_CMDS.has(cmdName) ? 2 : 1;
-
-          for (let g = 0; g < maxGroups && scanPos < source.length; g++) {
-            while (scanPos < source.length && ' \t\n'.includes(source[scanPos])) scanPos++;
-            if (scanPos >= source.length || source[scanPos] !== '{') break;
-
-            const result = readBalancedBraces(source, scanPos);
-            if (!result) {
-              allValid = false;
-              break;
+            // Skip whitespace to opening brace
+            while (i < source.length && source[i] in { ' ': 1, '\t': 1, '\n': 1 }) {
+              parts.push(source[i]);
+              i++;
             }
 
-            braceGroups.push(result);
-            scanPos = result.end;
+            if (i < source.length && source[i] === '{') {
+              // Read the brace group, only tracking depth for the outer level
+              let depth = 0;
+              const start = i;
+              while (i < source.length) {
+                if (source[i] === '{') depth++;
+                else if (source[i] === '}') {
+                  depth--;
+                  if (depth === 0) {
+                    i++;
+                    break;
+                  }
+                }
+                i++;
+              }
+
+              const argContent = source.substring(start + 1, i - 1);
+              // Escape all { and } in the argument content
+              const escaped = argContent.replace(/\{/g, '\\{').replace(/\}/g, '\\}');
+              parts.push('{' + escaped + '}');
+            }
+            continue;
           }
 
-          if (allValid && braceGroups.length > 0) {
-            parts.push(source.substring(cmdStart, cmdEnd));
-            let endPos = cmdEnd;
+          // Conditional escape: check if the brace group has problems
+          let depth = 0;
+          let j = pos;
+          let hasProblem = false;
 
-            for (const group of braceGroups) {
-              const wsStart = endPos;
-              while (endPos < source.length && ' \t\n'.includes(source[endPos])) endPos++;
-              parts.push(source.substring(wsStart, endPos));
-
-              parts.push(LBRACE + group.content + RBRACE);
-              endPos = group.end;
+          while (j < source.length) {
+            if (source[j] === '{') {
+              depth++;
+              if (depth > 1) hasProblem = true;
+            } else if (source[j] === '}') {
+              depth--;
+              if (depth === 0) break;
+            } else if (
+              source[j] === '\\' &&
+              j + 1 < source.length &&
+              /[a-zA-Z]/.test(source[j + 1])
+            ) {
+              hasProblem = true;
+            } else if (source[j] === '|') {
+              hasProblem = true;
             }
+            j++;
+          }
 
-            i = endPos;
+          if (depth !== 0) {
+            // Unbalanced braces — treat as problematic and escape
+            hasProblem = true;
+            // Re-scan: read only the first balanced group (depth 1->0)
+            depth = 0;
+            j = pos;
+            while (j < source.length) {
+              if (source[j] === '{') {
+                depth++;
+                if (depth > 1) {
+                  // Skip the inner empty group entirely
+                  let innerDepth = 1;
+                  j++;
+                  while (j < source.length && innerDepth > 0) {
+                    if (source[j] === '{') innerDepth++;
+                    else if (source[j] === '}') innerDepth--;
+                    j++;
+                  }
+                  continue;
+                }
+              } else if (source[j] === '}') {
+                depth--;
+                if (depth === 0) break;
+              }
+              j++;
+            }
+          }
+
+          if (hasProblem) {
+            // Output the command name as-is
+            parts.push(source.substring(cmdStart, cmdEnd));
+            i = cmdEnd;
+
+            // Process each brace group, escaping { and } inside
+            while (i < source.length) {
+              // Skip whitespace
+              while (i < source.length && source[i] in { ' ': 1, '\t': 1, '\n': 1 }) {
+                parts.push(source[i]);
+                i++;
+              }
+
+              if (i >= source.length || source[i] !== '{') break;
+
+              // Read balanced {content}
+              let d = 0;
+              const start = i;
+              let foundClose = false;
+              while (i < source.length) {
+                if (source[i] === '{') d++;
+                else if (source[i] === '}') {
+                  d--;
+                  if (d === 0) {
+                    i++;
+                    foundClose = true;
+                    break;
+                  }
+                }
+                i++;
+              }
+
+              if (!foundClose) {
+                // Truly unbalanced braces — output rest of content as-is
+                parts.push(source.substring(start));
+                break;
+              }
+
+              const argContent = source.substring(start + 1, i - 1);
+              // Escape { and } in the argument content
+              const escaped = argContent.replace(/\{/g, '\\{').replace(/\}/g, '\\}');
+              parts.push('{' + escaped + '}');
+            }
             continue;
           }
         }
       }
 
+      // Not a problematic command, output as-is
       parts.push(source.substring(cmdStart, cmdEnd));
       i = cmdEnd;
       continue;
@@ -161,108 +255,6 @@ function processCommandBraces(source) {
   }
 
   return parts.join('');
-}
-
-/**
- * Pass 2: Escape ALL remaining { and } inside math regions ($...$ and $$...$$).
- * This prevents MDX from parsing standalone braces as JSX expressions,
- * which would break remark-math's ability to create math/inlineMath nodes.
- * Braces preceded by \ (i.e. \{ and \}) are LaTeX escaped braces — left as-is.
- */
-function escapeMathRegionBraces(source) {
-  const parts = [];
-  let i = 0;
-
-  while (i < source.length) {
-    // Skip fenced code blocks (``` ... ```)
-    if (source.startsWith('```', i)) {
-      const end = source.indexOf('```', i + 3);
-      if (end !== -1) {
-        parts.push(source.substring(i, end + 3));
-        i = end + 3;
-        continue;
-      }
-    }
-
-    // Skip inline code (` ... `)
-    if (source[i] === '`' && source[i + 1] !== '`') {
-      const end = source.indexOf('`', i + 1);
-      if (end !== -1) {
-        parts.push(source.substring(i, end + 1));
-        i = end + 1;
-        continue;
-      }
-    }
-
-    // Skip escaped dollar signs (\$)
-    if (source[i] === '\\' && i + 1 < source.length && source[i + 1] === '$') {
-      parts.push('\\$');
-      i += 2;
-      continue;
-    }
-
-    // Display math $$...$$
-    if (source[i] === '$' && i + 1 < source.length && source[i + 1] === '$') {
-      const end = source.indexOf('$$', i + 2);
-      if (end !== -1) {
-        const content = source.substring(i + 2, end);
-        parts.push('$$');
-        parts.push(escapeBraces(content));
-        parts.push('$$');
-        i = end + 2;
-        continue;
-      }
-    }
-
-    // Inline math $...$ — find closing $ not preceded by \
-    if (source[i] === '$') {
-      const end = findClosingDollar(source, i + 1);
-      if (end !== -1) {
-        const content = source.substring(i + 1, end);
-        parts.push('$');
-        parts.push(escapeBraces(content));
-        parts.push('$');
-        i = end + 1;
-        continue;
-      }
-    }
-
-    parts.push(source[i]);
-    i++;
-  }
-
-  return parts.join('');
-}
-
-function escapeBraces(content) {
-  return content.replace(/(?<!\\)\{/g, LBRACE).replace(/(?<!\\)\}/g, RBRACE);
-}
-
-function findClosingDollar(source, start) {
-  let i = start;
-  while (i < source.length) {
-    if (source[i] === '\\' && i + 1 < source.length) {
-      i += 2; // Skip escaped character
-      continue;
-    }
-    if (source[i] === '$') {
-      // Don't match $$ (display math) as inline math close
-      if (i + 1 < source.length && source[i + 1] === '$') return -1;
-      return i;
-    }
-    i++;
-  }
-  return -1;
-}
-
-function processSource(source) {
-  // Pass 1: Escape braces around LaTeX command arguments
-  let result = processCommandBraces(source);
-  // Pass 2: Escape ALL remaining braces inside math regions.
-  // This prevents MDX from parsing standalone braces as JSX expressions,
-  // which would break remark-math's ability to create math/inlineMath nodes.
-  result = escapeMathRegionBraces(result);
-  return result;
 }
 
 function processFile(filepath) {

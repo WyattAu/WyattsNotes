@@ -66,9 +66,9 @@ export const rehypePluginConfig = {
 
 /**
  * Create remark plugin config.
- * @param useEscapeJsxBraces - Whether to include the escape-jsx-braces webpack loader.
- *   Used by: ib, dse, alevel-maths-physics, alevel-sciences.
- *   NOT used by: main, university, programming, qualifications.
+ * @param useEscapeJsxBraces - Whether to include the escape-jsx-braces remark plugin.
+ *   Used by: ib, dse, alevel-maths-physics, alevel-sciences, university (via generated config).
+ *   NOT used by: main, programming, qualifications.
  */
 export function createRemarkPluginsConfig(useEscapeJsxBraces = false) {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
