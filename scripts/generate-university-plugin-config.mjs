@@ -89,7 +89,7 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   future: {
-    faster: true,
+    faster: false,
     v4: {
       removeLegacyPostBuildHeadAttribute: true,
     },
