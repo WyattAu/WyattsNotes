@@ -65,7 +65,7 @@ const plugins: any[] = [
     routeBasePath: '${routeBase}',
     sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
     editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/${docsPath}/{dir}',
-    ...createCommonDocsPluginConfig(true),
+    ...createCommonDocsPluginConfig(false),
   }],
 ${includeIntro ? `  // Include intro plugin — uses isolated dir to avoid scanning all subjects
   ['@docusaurus/plugin-content-docs', {
@@ -74,7 +74,7 @@ ${includeIntro ? `  // Include intro plugin — uses isolated dir to avoid scann
     routeBasePath: '/docs',
     sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
     editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_university/{dir}',
-    ...createCommonDocsPluginConfig(true),
+    ...createCommonDocsPluginConfig(false),
   }],
 ` : ''}];
 
