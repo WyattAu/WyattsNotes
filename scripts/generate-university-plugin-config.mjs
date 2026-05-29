@@ -59,28 +59,6 @@ import {
 
 const plugins: any[] = [
   ...sharedPlugins('wyattsnotes-university'),
-  // Pre-process LaTeX braces before MDX parsing.
-  // Webpack loader runs with enforce: 'pre' before the MDX loader.
-  () => {
-    const path = require('path');
-    const loaderPath = path.resolve(__dirname, 'src/plugins/escape-jsx-braces/webpack-loader.js');
-    return {
-      name: 'escape-latex-braces-webpack-loader',
-      configureWebpack() {
-        return {
-          module: {
-            rules: [
-              {
-                test: /\\.mdx?$/,
-                enforce: 'pre',
-                use: [{ loader: loaderPath }],
-              },
-            ],
-          },
-        };
-      },
-    };
-  },
   ['@docusaurus/plugin-content-docs', {
     id: '${pluginId}',
     path: '${docsPath}',
