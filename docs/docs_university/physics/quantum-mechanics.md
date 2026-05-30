@@ -1242,7 +1242,7 @@ Where $L_q^p$ are the associated Laguerre polynomials.
 
 **Energy eigenvalues:**
 
-$$E_n = -\frac{m_e e^4}{2(4\pi\varepsilon_0)^2 \hbar^2} \cdot \frac{1}{n^2} = -\frac{13.6\,\mathrm{eV}{n^2}, \quad n = 1, 2, 3, \ldots}$$
+$$E_n = -\frac{m_e e^4}{2(4\pi\varepsilon_0)^2 \hbar^2} \cdot \frac{1}{n^2} = -\frac{13.6\,\mathrm{eV}}{n^2}, \quad n = 1, 2, 3, \ldots$$
 
 **Degeneracy:** Each energy level $E_n$ has degeneracy $n^2$ (ignoring spin). The quantum numbers
 are:
@@ -2431,7 +2431,7 @@ principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{r})$.
 The interacting system is mapped to a fictitious system of non-interacting electrons in an effective
 potential:
 
-$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{eff}[n](\mathbf{r})\right]\psi_i(\mathbf{r}) = \varepsilon_i\psi_i(\mathbf{r})}$$
+$$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{eff}}[n](\mathbf{r})\right]\psi_i(\mathbf{r}) = \varepsilon_i\psi_i(\mathbf{r})$$
 
 $$n(\mathbf{r}) = \sum_{i=1}^{N}|\psi_i(\mathbf{r})|^2 \quad \text{(summing over occupied states)}$$
 
