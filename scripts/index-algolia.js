@@ -190,6 +190,8 @@ function extractContent(html, url, siteTags) {
     }
   }
 
+  const deepestLvl = Math.max(0, ...Object.keys(hierarchy).map((k) => (hierarchy[k] ? parseInt(k.replace('lvl', ''), 10) : -1)));
+
   return {
     objectID: url.pathname,
     url: url.href,
@@ -197,6 +199,12 @@ function extractContent(html, url, siteTags) {
     content: (content + mathSuffix).slice(0, 8000),
     hierarchy,
     _tags: siteTags || [],
+    nbHits: 0,
+    _score: 0,
+    site: siteTags?.[0] || '',
+    weight_page: 1,
+    weight_level: deepestLvl,
+    weight_position: Object.values(hierarchy).filter(Boolean).length > 1 ? 2 : 0,
   };
 }
 
@@ -259,15 +267,35 @@ async function main() {
         indexSettings: {
           searchableAttributes: [
             'title',
-            'content',
             'hierarchy.lvl0',
             'hierarchy.lvl1',
             'hierarchy.lvl2',
+            'hierarchy.lvl3',
+            'hierarchy.lvl4',
+            'content',
+            '_tags',
           ],
+          attributesForFaceting: ['filterOnly(_tags)', 'filterOnly(site)'],
           attributesToHighlight: ['title', 'content'],
           attributesToSnippet: ['content:20'],
-          attributesToRetrieve: ['title', 'url', 'content', 'hierarchy'],
-          customRanking: ['desc(weight.page_rank)', 'desc(weight.position)'],
+          attributesToRetrieve: ['title', 'url', 'content', 'hierarchy', '_tags', 'nbHits', '_score'],
+          customRanking: [
+            'desc(weight_page)',
+            'desc(weight_level)',
+            'desc(weight_position)',
+            'desc(nbHits)',
+          ],
+          highlightPreTag: '<mark>',
+          highlightPostTag: '</mark>',
+          minWordSizefor1Typo: 4,
+          minWordSizefor2Typos: 8,
+          typoTolerance: true,
+          ignorePlurals: true,
+          removeStopWords: ['en'],
+          exactOnSingleWord: 'attribute',
+          alternativesAsExact: ['ignorePlurals', 'singleWordSynonym'],
+          clickAnalytics: true,
+          enableAnalytics: true,
         },
       });
       console.log(`[${site.name}] Configured index: ${site.indexName}`);

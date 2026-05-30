@@ -1,0 +1,140 @@
+{
+  "indices": [
+    {
+      "name": "wyattsnotes_main",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": true,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    },
+    {
+      "name": "wyattsnotes_ib",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": true,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    },
+    {
+      "name": "wyattsnotes_dse",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": true,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    },
+    {
+      "name": "wyattsnotes_alevel_maths_physics",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": true,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    },
+    {
+      "name": "wyattsnotes_alevel_sciences",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": true,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    },
+    {
+      "name": "wyattsnotes_qualifications",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": true,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    },
+    {
+      "name": "wyattsnotes_programming",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": false,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    },
+    {
+      "name": "wyattsnotes_university",
+      "settings": {
+        "searchableAttributes": ["title", "hierarchy", "content", "tags"],
+        "attributesForFaceting": ["filterOnly(tags)", "filterOnly(site)"],
+        "customRanking": ["desc(weight_page)", "desc(weight_level)", "desc(weight_position)", "desc(nbHits)"],
+        "highlightPreTag": "<mark>",
+        "highlightPostTag": "</mark>",
+        "minWordSizefor1Typo": 4,
+        "minWordSizefor2Typos": 8,
+        "typoTolerance": true,
+        "ignorePlurals": true,
+        "removeStopWords": ["en"],
+        "exactOnSingleWord": "attribute",
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+      }
+    }
+  ]
+}
