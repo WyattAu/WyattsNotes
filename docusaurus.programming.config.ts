@@ -157,7 +157,7 @@ const config = {
     },
     prism: {
       ...sharedPrism,
-      additionalLanguages: ['java', 'dart'],
+      additionalLanguages: ['java', 'dart', 'rust', 'go', 'kotlin'],
     },
     mermaid: sharedMermaid,
     zoom: sharedZoom,

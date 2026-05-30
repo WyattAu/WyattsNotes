@@ -103,17 +103,27 @@ export function createCommonDocsPluginConfig(useEscapeJsxBraces = false) {
 // Head tags (DNS prefetch, Sentry, print CSS) — identical across all configs
 // ---------------------------------------------------------------------------
 export const sharedHeadTags: Config['headTags'] = [
-  // Webmaster verification (replace placeholder values after registering with each service)
   // Google Search Console: https://search.google.com/search-console
-  // {
-  //   tagName: 'meta',
-  //   attributes: { name: 'google-site-verification', content: 'GOOGLE_VERIFICATION_CODE' },
-  // },
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? [
+        {
+          tagName: 'meta' as const,
+          attributes: {
+            name: 'google-site-verification',
+            content: process.env.GOOGLE_SITE_VERIFICATION,
+          },
+        },
+      ]
+    : []),
   // Bing Webmaster Tools: https://www.bing.com/webmasters
-  // {
-  //   tagName: 'meta',
-  //   attributes: { name: 'msvalidate.01', content: 'BING_VERIFICATION_CODE' },
-  // },
+  ...(process.env.BING_SITE_VERIFICATION
+    ? [
+        {
+          tagName: 'meta' as const,
+          attributes: { name: 'msvalidate.01', content: process.env.BING_SITE_VERIFICATION },
+        },
+      ]
+    : []),
   // Web App Manifest (PWA)
   {
     tagName: 'link',
@@ -181,6 +191,15 @@ export const sharedHeadTags: Config['headTags'] = [
     tagName: 'link',
     attributes: { rel: 'preconnect', href: 'https://browser.sentry-cdn.com' },
   },
+  // Cloudflare Web Analytics (privacy-respecting, no cookies)
+  {
+    tagName: 'link',
+    attributes: { rel: 'dns-prefetch', href: 'https://static.cloudflareinsights.com' },
+  },
+  {
+    tagName: 'link',
+    attributes: { rel: 'preconnect', href: 'https://static.cloudflareinsights.com' },
+  },
   {
     tagName: 'script',
     attributes: {
@@ -192,12 +211,82 @@ export const sharedHeadTags: Config['headTags'] = [
   },
   {
     tagName: 'script',
-    attributes: {},
+    attributes: { defer: 'defer' },
     innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
   },
+  // Cloudflare Web Analytics beacon (privacy-respecting, no cookies, no fingerprinting)
+  ...(process.env.CLOUDFLARE_ANALYTICS_TOKEN
+    ? [
+        {
+          tagName: 'script' as const,
+          attributes: {
+            defer: 'defer',
+            src: 'https://static.cloudflareinsights.com/beacon.min.js',
+            'data-cf-beacon': JSON.stringify({ token: process.env.CLOUDFLARE_ANALYTICS_TOKEN }),
+          },
+        },
+      ]
+    : []),
   {
     tagName: 'link',
     attributes: { rel: 'stylesheet', href: '/css/print.css', media: 'print' },
+  },
+  // Async font preloading (render-blocking fonts loaded asynchronously)
+  {
+    tagName: 'link',
+    attributes: {
+      rel: 'preload',
+      href: 'https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css',
+      as: 'style',
+    },
+  },
+  {
+    tagName: 'link',
+    attributes: {
+      rel: 'preload',
+      href: 'https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css',
+      as: 'style',
+    },
+  },
+  {
+    tagName: 'link',
+    attributes: {
+      rel: 'preload',
+      href: 'https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/400.css',
+      as: 'style',
+    },
+  },
+  {
+    tagName: 'link',
+    attributes: {
+      rel: 'preload',
+      href: 'https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/700.css',
+      as: 'style',
+    },
+  },
+  {
+    tagName: 'link',
+    attributes: {
+      rel: 'preload',
+      href: 'https://cdn.jsdelivr.net/npm/@fontsource/merriweather@5/400-italic.css',
+      as: 'style',
+    },
+  },
+  // Async CSS loader: swap preload to stylesheet on load
+  {
+    tagName: 'script',
+    attributes: { defer: 'defer' },
+    innerHTML: `(function(){var c=document.querySelectorAll('link[rel="preload"][as="style"]');c.forEach(function(l){l.onload=function(){this.onload=null;this.rel='stylesheet'}})})()`,
+  },
+  {
+    tagName: 'noscript',
+    innerHTML: [
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">',
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">',
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/400.css">',
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/700.css">',
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/merriweather@5/400-italic.css">',
+    ].join(''),
   },
 ];
 

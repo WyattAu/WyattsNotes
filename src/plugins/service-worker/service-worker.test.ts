@@ -1,0 +1,175 @@
+import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest';
+import fs from 'fs';
+import path from 'path';
+import type { LoadedPlugin } from '@docusaurus/types';
+
+vi.mock('workbox-build', () => ({
+  generateSW: vi.fn().mockResolvedValue({ count: 42, size: 3_145_728 }),
+}));
+
+vi.mock('fs', async () => {
+  const actual = await vi.importActual<typeof fs>('fs');
+  return {
+    default: {
+      ...actual,
+      existsSync: vi.fn(),
+      readFileSync: vi.fn(),
+      writeFileSync: vi.fn(),
+    },
+  };
+});
+
+import serviceWorkerPlugin from './index';
+import { generateSW } from 'workbox-build';
+
+const mockWriteFileSync = vi.mocked(fs.writeFileSync);
+const mockExistsSync = vi.mocked(fs.existsSync);
+const mockReadFileSync = vi.mocked(fs.readFileSync);
+
+describe('service-worker-plugin', () => {
+  const context = {} as Parameters<typeof serviceWorkerPlugin>[0];
+
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockExistsSync.mockReturnValue(true);
+    mockReadFileSync.mockReturnValue('<html><head></head><body></body></html>');
+    (generateSW as ReturnType<typeof vi.fn>).mockResolvedValue({ count: 42, size: 3_145_728 });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  it('should export a default function', () => {
+    expect(typeof serviceWorkerPlugin).toBe('function');
+  });
+
+  it('should return a plugin with the correct name', () => {
+    const plugin = serviceWorkerPlugin(context, {});
+    expect(plugin.name).toBe('service-worker-plugin');
+  });
+
+  it('should return a plugin with a postBuild hook', () => {
+    const plugin = serviceWorkerPlugin(context, {});
+    expect(typeof plugin.postBuild).toBe('function');
+  });
+
+  const minimalBuild = { outDir: '/build', baseUrl: '/' } as Parameters<LoadedPlugin['postBuild']>[0];
+
+  it('should skip generation when enable is false', async () => {
+    const plugin = serviceWorkerPlugin(context, { enable: false });
+    await plugin.postBuild(minimalBuild);
+
+    expect(generateSW).not.toHaveBeenCalled();
+    expect(mockWriteFileSync).not.toHaveBeenCalled();
+  });
+
+  it('should generate SW when enable is true', async () => {
+    const plugin = serviceWorkerPlugin(context, { enable: true });
+    await plugin.postBuild(minimalBuild);
+
+    expect(generateSW).toHaveBeenCalledTimes(1);
+    expect(generateSW).toHaveBeenCalledWith(
+      expect.objectContaining({ swDest: path.join('/build', 'sw.js') }),
+    );
+  });
+
+  it('should use default cacheId when not provided', async () => {
+    const plugin = serviceWorkerPlugin(context, {});
+    await plugin.postBuild(minimalBuild);
+
+    const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
+    expect(callArgs.cacheId).toBe('wyattsnotes');
+  });
+
+  it('should use custom cacheId when provided', async () => {
+    const plugin = serviceWorkerPlugin(context, { cacheId: 'my-custom-cache' });
+    await plugin.postBuild(minimalBuild);
+
+    const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
+    expect(callArgs.cacheId).toBe('my-custom-cache');
+    expect(callArgs.swDest).toBe(path.join('/build', 'sw.js'));
+  });
+
+  it('should include cacheId in HTML cache name', async () => {
+    const plugin = serviceWorkerPlugin(context, { cacheId: 'test-cache' });
+    await plugin.postBuild(minimalBuild);
+
+    const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
+    const htmlCaching = callArgs.runtimeCaching[0] as any;
+    expect(htmlCaching.options.cacheName).toBe('test-cache-html');
+  });
+
+  it('should use navigateFallback with baseUrl', async () => {
+    const plugin = serviceWorkerPlugin(context, {});
+    await plugin.postBuild({ outDir: '/build', baseUrl: '/docs/' });
+
+    const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
+    expect(callArgs.navigateFallback).toBe('/docs/offline.html');
+  });
+
+  it('should inject SW registration script into index.html', async () => {
+    const plugin = serviceWorkerPlugin(context, {});
+    await plugin.postBuild(minimalBuild);
+
+    expect(mockExistsSync).toHaveBeenCalledWith(path.join('/build', 'index.html'));
+    expect(mockWriteFileSync).toHaveBeenCalledTimes(1);
+
+    const writtenContent = mockWriteFileSync.mock.calls[0][1] as string;
+    expect(writtenContent).toContain("navigator.serviceWorker.register('/sw.js')");
+    expect(writtenContent).toContain('</head>');
+  });
+
+  it('should use baseUrl in SW registration script', async () => {
+    const plugin = serviceWorkerPlugin(context, {});
+    await plugin.postBuild({ outDir: '/build', baseUrl: '/my-site/' });
+
+    const writtenContent = mockWriteFileSync.mock.calls[0][1] as string;
+    expect(writtenContent).toContain("navigator.serviceWorker.register('/my-site/sw.js')");
+  });
+
+  it('should not inject script when index.html does not exist', async () => {
+    mockExistsSync.mockReturnValue(false);
+    const plugin = serviceWorkerPlugin(context, {});
+    await plugin.postBuild(minimalBuild);
+
+    expect(mockWriteFileSync).not.toHaveBeenCalled();
+  });
+});
+
+describe('static/offline.html', () => {
+  it('should exist and have proper content', () => {
+    const { existsSync, readFileSync } = require('fs') as typeof import('fs');
+    const projectRoot = path.resolve(__dirname, '../../..');
+    const offlinePath = path.join(projectRoot, 'static/offline.html');
+    expect(existsSync(offlinePath)).toBe(true);
+
+    const content = readFileSync(offlinePath, 'utf-8');
+    expect(content).toContain('<!DOCTYPE html>');
+    expect(content).toContain('lang="en"');
+    expect(content).toContain('viewport');
+    expect(content).toContain('Offline');
+    expect(content).toContain('Return to Homepage');
+    expect(content).toContain('href="/"');
+  });
+});
+
+describe('static/manifest.json', () => {
+  it('should exist and have required PWA fields', async () => {
+    const { existsSync, readFileSync } = await vi.importActual<typeof fs>('fs');
+    const projectRoot = path.resolve(__dirname, '../../..');
+    const manifestPath = path.join(projectRoot, 'static/manifest.json');
+    expect(existsSync(manifestPath)).toBe(true);
+
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf-8')) as Record<string, unknown>;
+    expect(manifest.name).toBe("Wyatt's Notes");
+    expect(manifest.short_name).toBe('WyattsNotes');
+    expect(manifest.start_url).toBe('/');
+    expect(manifest.display).toBe('standalone');
+    expect(Array.isArray(manifest.icons)).toBe(true);
+    expect(manifest.icons.length).toBeGreaterThan(0);
+    expect(manifest.icons[0]).toHaveProperty('src');
+    expect(manifest.icons[0]).toHaveProperty('sizes');
+    expect(manifest.icons[0]).toHaveProperty('type');
+  });
+});

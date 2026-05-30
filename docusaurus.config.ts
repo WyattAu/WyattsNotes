@@ -105,11 +105,7 @@ const config = {
 
   markdown: sharedMarkdownConfig,
 
-  themes: [
-    '@docusaurus/theme-live-codeblock',
-    '@docusaurus/theme-mermaid',
-    'docusaurus-theme-redoc',
-  ],
+  themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
 
   themeConfig: {
     algolia: createAlgoliaConfig('wyattsnotes_main'),
@@ -235,7 +231,7 @@ const config = {
       ],
       copyright: `© ${new Date().getFullYear()} Wyatt Au. Content is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.`,
     },
-    prism: sharedPrism,
+    prism: { ...sharedPrism, additionalLanguages: ['sql', 'python'] },
     mermaid: sharedMermaid,
     zoom: sharedZoom,
   } satisfies Preset.ThemeConfig,

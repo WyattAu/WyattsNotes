@@ -16,9 +16,23 @@ Permissions-Policy: camera=(), microphone=(), geolocation=()
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
 # Content Security Policy
-Content-Security-Policy: default-src 'self'; script-src 'self' 'https://cdn.jsdelivr.net' 'https://www.googletagmanager.com'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://algolia.net https://cdn.jsdelivr.net; frame-src 'self' https://www.google.com; base-uri 'self'
+Content-Security-Policy: default-src 'self'; script-src 'self' 'https://cdn.jsdelivr.net' 'https://www.googletagmanager.com' 'https://static.cloudflareinsights.com'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://algolia.net https://cdn.jsdelivr.net https://cloudflareinsights.com; frame-src 'self' https://www.google.com; base-uri 'self'; report-uri /csp-report; report-to default
+Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"/csp-report"}]}
 
 # Cross-origin isolation (Spectre-class protection)
 Cross-Origin-Opener-Policy: same-origin
 Cross-Origin-Resource-Policy: same-origin
 Cross-Origin-Embedder-Policy: require-corp
+
+# Cache-Control: Static assets
+/static/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/static/css/*
+  Cache-Control: public, max-age=604800
+
+/static/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable

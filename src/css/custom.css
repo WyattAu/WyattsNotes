@@ -61,8 +61,8 @@
   /* Blue Secondary for Dark Mode */
   --ifm-color-secondary: #60a5fa;
   --ifm-color-secondary-dark: #3b82f6;
-  --ifm-color-secondary-darker: #2563eb;
-  --ifm-color-secondary-darkest: #1d4ed8;
+  --ifm-color-secondary-darker: #3b82f6;
+  --ifm-color-secondary-darkest: #2563eb;
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 140, 74, 0.2);
 
@@ -192,7 +192,7 @@ a:hover {
 
 /* Accessibility Enhancements */
 :focus-visible {
-  outline: 2px solid var(--ifm-color-primary);
+  outline: 2px solid var(--ifm-color-primary-darker);
   outline-offset: 2px;
 }
 
