@@ -65,12 +65,12 @@ describe('service-worker-plugin', () => {
   });
 
   it('should generate SW when enable is true', async () => {
-    const plugin = serviceWorkerPlugin(context, { enable: true });
+    const plugin = serviceWorkerPlugin(context, { enable: true, buildId: 'test-sw' });
     await plugin.postBuild(minimalBuild);
 
     expect(generateSW).toHaveBeenCalledTimes(1);
     expect(generateSW).toHaveBeenCalledWith(
-      expect.objectContaining({ swDest: path.join('/build', 'sw.js') }),
+      expect.objectContaining({ swDest: path.join('/build', 'sw-test-sw.js') }),
     );
   });
 
@@ -83,21 +83,21 @@ describe('service-worker-plugin', () => {
   });
 
   it('should use custom cacheId when provided', async () => {
-    const plugin = serviceWorkerPlugin(context, { cacheId: 'my-custom-cache' });
+    const plugin = serviceWorkerPlugin(context, { cacheId: 'my-custom-cache', buildId: 'b1' });
     await plugin.postBuild(minimalBuild);
 
     const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
     expect(callArgs.cacheId).toBe('my-custom-cache');
-    expect(callArgs.swDest).toBe(path.join('/build', 'sw.js'));
+    expect(callArgs.swDest).toBe(path.join('/build', 'sw-b1.js'));
   });
 
   it('should include cacheId in HTML cache name', async () => {
-    const plugin = serviceWorkerPlugin(context, { cacheId: 'test-cache' });
+    const plugin = serviceWorkerPlugin(context, { cacheId: 'test-cache', buildId: 'b2' });
     await plugin.postBuild(minimalBuild);
 
     const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
     const htmlCaching = callArgs.runtimeCaching[0] as any;
-    expect(htmlCaching.options.cacheName).toBe('test-cache-html');
+    expect(htmlCaching.options.cacheName).toBe('test-cache-html-b2');
   });
 
   it('should use navigateFallback with baseUrl', async () => {
@@ -109,23 +109,23 @@ describe('service-worker-plugin', () => {
   });
 
   it('should inject SW registration script into index.html', async () => {
-    const plugin = serviceWorkerPlugin(context, {});
+    const plugin = serviceWorkerPlugin(context, { buildId: 'test-reg' });
     await plugin.postBuild(minimalBuild);
 
     expect(mockExistsSync).toHaveBeenCalledWith(path.join('/build', 'index.html'));
     expect(mockWriteFileSync).toHaveBeenCalledTimes(1);
 
     const writtenContent = mockWriteFileSync.mock.calls[0][1] as string;
-    expect(writtenContent).toContain("navigator.serviceWorker.register('/sw.js')");
+    expect(writtenContent).toContain("navigator.serviceWorker.register('/sw-test-reg.js')");
     expect(writtenContent).toContain('</head>');
   });
 
   it('should use baseUrl in SW registration script', async () => {
-    const plugin = serviceWorkerPlugin(context, {});
+    const plugin = serviceWorkerPlugin(context, { buildId: 'test-base' });
     await plugin.postBuild({ outDir: '/build', baseUrl: '/my-site/' });
 
     const writtenContent = mockWriteFileSync.mock.calls[0][1] as string;
-    expect(writtenContent).toContain("navigator.serviceWorker.register('/my-site/sw.js')");
+    expect(writtenContent).toContain("navigator.serviceWorker.register('/my-site/sw-test-base.js')");
   });
 
   it('should not inject script when index.html does not exist', async () => {
@@ -134,6 +134,38 @@ describe('service-worker-plugin', () => {
     await plugin.postBuild(minimalBuild);
 
     expect(mockWriteFileSync).not.toHaveBeenCalled();
+  });
+
+  describe('buildId cache versioning', () => {
+    it('should include buildId in cache names when provided', async () => {
+      const plugin = serviceWorkerPlugin(context, { cacheId: 'test-cache', buildId: 'abc123' });
+      await plugin.postBuild(minimalBuild);
+
+      const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
+      expect(callArgs.cacheId).toBe('test-cache');
+      expect(callArgs.swDest).toBe(path.join('/build', 'sw-abc123.js'));
+      const htmlCaching = callArgs.runtimeCaching[0] as any;
+      expect(htmlCaching.options.cacheName).toBe('test-cache-html-abc123');
+    });
+
+    it('should use default buildId (Date.now() string) when not provided', async () => {
+      const plugin = serviceWorkerPlugin(context, { cacheId: 'test-cache' });
+      await plugin.postBuild(minimalBuild);
+
+      const callArgs = (generateSW as ReturnType<typeof vi.fn>).mock.calls[0][0] as any;
+      const swBasename = path.basename(callArgs.swDest);
+      expect(swBasename).toMatch(/^sw-\d+\.js$/);
+      const htmlCaching = callArgs.runtimeCaching[0] as any;
+      expect(htmlCaching.options.cacheName).toMatch(/^test-cache-html-\d+$/);
+    });
+
+    it('should include buildId in SW registration script', async () => {
+      const plugin = serviceWorkerPlugin(context, { buildId: 'v42' });
+      await plugin.postBuild(minimalBuild);
+
+      const writtenContent = mockWriteFileSync.mock.calls[0][1] as string;
+      expect(writtenContent).toContain("navigator.serviceWorker.register('/sw-v42.js')");
+    });
   });
 });
 

@@ -227,6 +227,12 @@ export const sharedHeadTags: Config['headTags'] = [
         },
       ]
     : []),
+  // Build ID for service worker cache versioning
+  {
+    tagName: 'script' as const,
+    attributes: {},
+    innerHTML: `window.__BUILD_ID__=${JSON.stringify(Date.now())};`,
+  },
   {
     tagName: 'link',
     attributes: { rel: 'stylesheet', href: '/css/print.css', media: 'print' },

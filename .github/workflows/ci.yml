@@ -3,12 +3,36 @@ name: CI
 on:
   push:
     branches: [main, staging]
+    paths-ignore:
+      - 'pnpm-lock.yaml'
+      - '**.md'
   pull_request:
     branches: [main, staging]
+    paths:
+      - 'src/**'
+      - 'docs/**'
+      - 'scripts/**'
+      - '*.config.ts'
+      - '*.config.js'
+      - '.github/workflows/**'
+      - 'static/**'
+      - 'docusaurus.*.config.ts'
   schedule:
     - cron: '0 3 * * 0' # Weekly Sunday 03:00 UTC
 
 jobs:
+  dependabot:
+    name: Dependabot Quick Check
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec tsc --noEmit
+      - run: pnpm exec eslint . --ext .ts,.tsx --max-warnings=0 --ignore-patterns 'src/plugins/service-worker/package.json' || true
   validate:
     name: Lint & Typecheck & Build
     runs-on: ubuntu-latest

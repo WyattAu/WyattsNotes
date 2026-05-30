@@ -25,6 +25,7 @@ import { generateSW } from 'workbox-build';
 interface ServiceWorkerPluginOptions {
   enable?: boolean;
   cacheId?: string;
+  buildId?: string;
 }
 
 export default function serviceWorkerPlugin(
@@ -40,25 +41,28 @@ export default function serviceWorkerPlugin(
       }
 
       const cacheId = options.cacheId || 'wyattsnotes';
+      const buildId = options.buildId || String(Date.now());
+
+      const swFilename = `sw-${buildId}.js`;
 
       const { count, size } = await generateSW({
-        swDest: path.join(outDir, 'sw.js'),
+        swDest: path.join(outDir, swFilename),
         globDirectory: outDir,
         globPatterns: ['**/*.{js,css,woff2,woff,ttf,eot,png,jpg,jpeg,gif,webp,svg,ico,html}'],
-        globIgnores: ['sw.js', 'sw.js.map'],
+        globIgnores: [swFilename, `${swFilename}.map`],
         skipWaiting: true,
         clientsClaim: true,
         cleanupOutdatedCaches: true,
         cacheId,
         dontCacheBustURLsMatching: /\.[a-f0-9]{8}\./i,
         navigateFallback: `${baseUrl}offline.html`,
-        navigateFallbackAllowlist: [/^\/(?!assets\/|img\/|sw\.js).*/],
+        navigateFallbackAllowlist: [/^\/(?!assets\/|img\/|sw-.+\.js).*/],
         runtimeCaching: [
           {
             urlPattern: ({ sameOrigin, request }) => sameOrigin && request.mode === 'navigate',
             handler: 'NetworkFirst' as const,
             options: {
-              cacheName: `${cacheId}-html`,
+              cacheName: `${cacheId}-html-${buildId}`,
               networkTimeoutSeconds: 5,
               cacheableResponse: {
                 statuses: [0, 200],
@@ -73,7 +77,7 @@ export default function serviceWorkerPlugin(
       if (fs.existsSync(indexPath)) {
         let indexContent = fs.readFileSync(indexPath, 'utf-8');
         const swRegister = `<script>
-if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('${baseUrl}sw.js')})}
+if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('${baseUrl}${swFilename}')})}
 </script>`;
 
         indexContent = indexContent.replace('</head>', `${swRegister}</head>`);
