@@ -206,12 +206,12 @@ export const sharedHeadTags: Config['headTags'] = [
       src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
       integrity: 'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
       crossorigin: 'anonymous',
-      defer: 'defer',
+      defer: true,
     },
   },
   {
     tagName: 'script',
-    attributes: { defer: 'defer' },
+    attributes: { defer: true },
     innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
   },
   // Cloudflare Web Analytics beacon (privacy-respecting, no cookies, no fingerprinting)
@@ -230,7 +230,7 @@ export const sharedHeadTags: Config['headTags'] = [
   // Build ID for service worker cache versioning
   {
     tagName: 'script' as const,
-    attributes: {},
+    attributes: { defer: true },
     innerHTML: `window.__BUILD_ID__=${JSON.stringify(Date.now())};`,
   },
   {
