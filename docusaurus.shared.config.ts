@@ -58,6 +58,8 @@ export const katexIgnoreNewLineWarning = {
 
     return 'warn';
   },
+  throwOnError: false,
+  maxExpand: 500,
 };
 
 export const rehypePluginConfig = {
@@ -69,32 +71,51 @@ export const rehypePluginConfig = {
  * @param useEscapeJsxBraces - Whether to include the escape-jsx-braces remark plugin.
  *   Used by: ib, dse, alevel-maths-physics, alevel-sciences, university (via generated config).
  *   NOT used by: main, programming, qualifications.
+ * @param opts.skipGridTables - Skip remarkGridTable plugin (for content without grid tables).
+ * @param opts.skipCodeSnippets - Skip remarkCodeSnippets plugin (for content without @snippet refs).
  */
-export function createRemarkPluginsConfig(useEscapeJsxBraces = false) {
+export function createRemarkPluginsConfig(
+  useEscapeJsxBraces = false,
+  opts: { skipGridTables?: boolean; skipCodeSnippets?: boolean } = {},
+) {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
 
+  let remarkPluginsList: any[];
+  if (useEscapeJsxBraces) {
+    remarkPluginsList = opts.skipCodeSnippets
+      ? [remarkMath, escapeJsxBraces]
+      : [remarkMath, escapeJsxBraces, remarkCodeSnippets];
+  } else {
+    remarkPluginsList = opts.skipCodeSnippets
+      ? [remarkMath]
+      : [remarkMath, remarkCodeSnippets];
+  }
+
   return {
-    beforeDefaultRemarkPlugins: [remarkGridTable],
+    beforeDefaultRemarkPlugins: opts.skipGridTables ? [] : [remarkGridTable],
     // remarkMath MUST run before escape-jsx-braces so that math/inlineMath
     // nodes exist in the AST when the brace-escaping plugin processes them.
     // The plugin restores diamond placeholders in math node values before KaTeX.
-    remarkPlugins: useEscapeJsxBraces
-      ? [remarkMath, escapeJsxBraces, remarkCodeSnippets]
-      : [remarkMath, remarkCodeSnippets],
+    remarkPlugins: remarkPluginsList,
   };
 }
 
 /**
  * Create the common docs plugin config spread object.
  * @param useEscapeJsxBraces - Whether to include escape-jsx-braces in remark plugins.
+ * @param opts.skipGridTables - Skip remarkGridTable plugin (for content without grid tables).
+ * @param opts.skipCodeSnippets - Skip remarkCodeSnippets plugin (for content without @snippet refs).
  */
-export function createCommonDocsPluginConfig(useEscapeJsxBraces = false) {
+export function createCommonDocsPluginConfig(
+  useEscapeJsxBraces = false,
+  opts: { skipGridTables?: boolean; skipCodeSnippets?: boolean } = {},
+) {
   return {
     showLastUpdateTime: true,
     showLastUpdateAuthor: true,
     ...admonitionsConfig,
-    ...createRemarkPluginsConfig(useEscapeJsxBraces),
+    ...createRemarkPluginsConfig(useEscapeJsxBraces, opts),
     ...rehypePluginConfig,
   };
 }

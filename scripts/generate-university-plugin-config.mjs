@@ -29,6 +29,8 @@ const routeBase = subject === 'maths' ? '/docs/mathematics'
   : subject === 'computing' ? '/docs/computing'
   : '/docs/admissions';
 
+const skipGridTables = subject === 'maths';
+const skipCodeSnippets = subject === 'maths';
 const pluginId = `university-${subject}`;
 const outFile = path.resolve('docusaurus-university-' + subject + '.config.ts');
 
@@ -65,7 +67,7 @@ const plugins: any[] = [
     routeBasePath: '${routeBase}',
     sidebarPath: require.resolve('./sidebars/sidebar_university.ts'),
     editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/${docsPath}/{dir}',
-    ...createCommonDocsPluginConfig(true),
+    ...createCommonDocsPluginConfig(true, { skipGridTables: ${skipGridTables}, skipCodeSnippets: ${skipCodeSnippets} }),
   }],
 ${includeIntro ? `  // Include intro plugin — uses isolated dir to avoid scanning all subjects
   ['@docusaurus/plugin-content-docs', {
