@@ -3,6 +3,7 @@
 // Build: pnpm run build -- --config docusaurus.programming.config.ts
 // Contains: C++, Java, Python, Rust, Dart
 // Total: ~167K lines across 2 docs plugins.
+// Enable faster build: rspack bundler, SSG worker threads, SWC loader, MDX cross-compiler cache
 
 import type * as Preset from '@docusaurus/preset-classic';
 import {
@@ -29,6 +30,8 @@ const config = {
     algoliaIndexName: 'wyattsnotes_programming',
     socialCard: '/img/social-cards/programming.png',
   }),
+
+  faster: true,
 
   presets: [
     [

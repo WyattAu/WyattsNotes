@@ -1,7 +1,7 @@
 // @ts-check
 // Docusaurus config for the Qualifications sub-site.
 // Build: npx docusaurus build --config docusaurus.qualifications.config.ts
-// Contains: GCSE, AP, CBSE, Scottish Highers, Irish LC
+// Contains: GCSE, AP, CBSE, SAT, Scottish Highers, Irish LC, HSC/VCE, Gaokao
 // Total: ~75K lines across 1 docs plugin.
 
 import type * as Preset from '@docusaurus/preset-classic';
@@ -20,7 +20,7 @@ import {
 const config = {
   ...sharedConfig({
     title: "Wyatt's Notes — Qualifications",
-    tagline: 'GCSE, AP, CBSE, Scottish Highers, Irish Leaving Certificate',
+    tagline: 'GCSE, AP, CBSE, SAT, Highers, Irish LC, HSC/VCE, Gaokao',
     url: 'https://qualifications.wyattau.com',
     algoliaIndexName: 'wyattsnotes_qualifications',
     socialCard: '/img/social-cards/qualifications.png',
@@ -64,6 +64,8 @@ const config = {
         { to: '/docs/qualifications/ilc/intro', label: 'Irish LC', position: 'left' },
         { to: '/docs/qualifications/cbse/intro', label: 'CBSE', position: 'left' },
         { to: '/docs/qualifications/sat/intro', label: 'SAT', position: 'left' },
+        { to: '/docs/qualifications/hsc/intro', label: 'HSC/VCE', position: 'left' },
+        { to: '/docs/qualifications/gaokao/intro', label: 'Gaokao', position: 'left' },
         {
           href: 'https://alevel.wyattau.com',
           label: 'A-Levels',
@@ -116,6 +118,8 @@ const config = {
             { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
             { label: 'CBSE', to: '/docs/qualifications/cbse/intro' },
             { label: 'SAT', to: '/docs/qualifications/sat/intro' },
+            { label: 'HSC/VCE', to: '/docs/qualifications/hsc/intro' },
+            { label: 'Gaokao', to: '/docs/qualifications/gaokao/intro' },
             {
               label: 'IB',
               href: 'https://ib.wyattau.com/docs/ib/intro',

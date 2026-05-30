@@ -1,0 +1,8 @@
+{
+  "label": "Gaokao",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Chinese Gaokao (高考) exam preparation notes. Covers Mathematics, Physics, Chemistry, Biology, and English."
+  }
+}
