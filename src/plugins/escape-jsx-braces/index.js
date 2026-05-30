@@ -66,9 +66,6 @@ module.exports = function escapeJsxBraces() {
     });
 
     // Replace mdxTextExpression nodes
-    if (replacements.length > 0) {
-      console.error(`[escape-jsx-braces] mdxTextExpression nodes found: ${replacements.length}`);
-    }
     for (const { parent, index, node } of replacements) {
       const expr = node.value || '';
 
@@ -90,7 +87,6 @@ module.exports = function escapeJsxBraces() {
     }
 
     // Process all text nodes
-    let textDiamondCount = 0;
     visit(tree, 'text', (node) => {
       // Skip nodes we inserted for LaTeX environments
       if (node._latexEnv) return;
@@ -103,7 +99,6 @@ module.exports = function escapeJsxBraces() {
       // to prevent MDX from parsing them as JSX expressions.
       // Support both old (multi-char) and new (single-char) placeholder formats,
       // as well as diamond placeholders (U+25C6) used by the preprocessing script.
-      const before = node.value;
       node.value = node.value
         .replace(/\u29C3LB\u29C4/g, '{')
         .replace(/\u29C3RB\u29C4/g, '}')
@@ -111,11 +106,7 @@ module.exports = function escapeJsxBraces() {
         .replace(/\uE001/g, '}')
         .replace(/\u25C6LB\u25C6/g, '{')
         .replace(/\u25C6RB\u25C6/g, '}');
-      if (before !== node.value) textDiamondCount++;
     });
-    if (textDiamondCount > 0) {
-      console.error(`[escape-jsx-braces] text nodes with diamonds restored: ${textDiamondCount}`);
-    }
 
     // Also restore placeholders in math nodes (inlineMath and math).
     // The remark-math plugin parses $...$ as inlineMath and $$...$$ as math.
@@ -137,14 +128,9 @@ module.exports = function escapeJsxBraces() {
         .replace(/\u25C6LB\u25C6/g, '{')
         .replace(/\u25C6RB\u25C6/g, '}');
 
-    let mathCount = 0;
-    let diamondCount = 0;
     visit(tree, ['math', 'inlineMath'], (node) => {
-      mathCount++;
       if (typeof node.value === 'string') {
-        const before = node.value;
         node.value = restoreDiamonds(node.value);
-        if (before !== node.value) diamondCount++;
 
         // Also restore in hChildren (pre-populated by mdast-util-math)
         if (node.data && node.data.hChildren) {
@@ -152,22 +138,15 @@ module.exports = function escapeJsxBraces() {
             if (child.type === 'element' && child.children) {
               for (const textChild of child.children) {
                 if (textChild.type === 'text' && typeof textChild.value === 'string') {
-                  const hBefore = textChild.value;
                   textChild.value = restoreDiamonds(textChild.value);
-                  if (hBefore !== textChild.value) diamondCount++;
                 }
               }
             } else if (child.type === 'text' && typeof child.value === 'string') {
-              const hBefore = child.value;
               child.value = restoreDiamonds(child.value);
-              if (hBefore !== child.value) diamondCount++;
             }
           }
         }
       }
     });
-    if (mathCount > 0 || diamondCount > 0) {
-      console.error(`[escape-jsx-braces] math nodes: ${mathCount}, restored diamonds in: ${diamondCount}`);
-    }
   };
 };
