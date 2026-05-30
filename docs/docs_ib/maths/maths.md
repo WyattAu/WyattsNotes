@@ -35,8 +35,8 @@ Topics.
   complex numbers), and proof by mathematical induction (extended cases including divisibility and
   inequalities).
 
-> See [Number and Algebra notes](Number-and-algebra/Number-and-algebra.md) and
-> [Complex Numbers](Number-and-algebra/Complex.md).
+> See [Number and Algebra notes](1-number-and-algebra/1_number-and-algebra.md) and
+> [Complex Numbers](1-number-and-algebra/2_complex-numbers.md).
 
 ### Worked Example: Geometric Series (SL)
 
@@ -357,7 +357,7 @@ Algorithms.
   including adjacency matrices, walks, paths, circuits, trees, and algorithms (Kruskal's and Prim's
   algorithms for minimum spanning trees, Dijkstra's algorithm for shortest path).
 
-> See [Logic notes](Discrete-maths/logic.md).
+> See [Logic notes](6-discrete-mathematics/1_logic.md).
 
 ---
 

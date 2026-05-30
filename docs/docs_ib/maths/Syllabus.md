@@ -369,9 +369,9 @@ Manipulation.
 
 ### Links to Existing Content
 
-- [Number and Algebra](Number-and-algebra/Number-and-algebra.md) -- arithmetic and geometric
+- [Number and Algebra](1-number-and-algebra/1_number-and-algebra.md) -- arithmetic and geometric
   sequences, sigma notation, binomial theorem
-- [Complex Numbers](Number-and-algebra/Complex.md) -- complex numbers in Cartesian, polar, and Euler
+- [Complex Numbers](1-number-and-algebra/2_complex-numbers.md) -- complex numbers in Cartesian, polar, and Euler
   form; De Moivre's theorem; roots of polynomials
 - [Trigonometry](3-geometry-and-trigonometry/1_trigonometry.md) -- trigonometric functions, identities,
   sine and cosine rules
@@ -379,7 +379,7 @@ Manipulation.
   lines and planes
 - [Integration](5-calculus/4_integration) -- antiderivatives, definite integration, area,
   integration techniques
-- [Logic (Discrete Maths)](Discrete-maths/logic.md) -- propositional logic, truth tables, proof
+- [Logic (Discrete Maths)](6-discrete-mathematics/1_logic.md) -- propositional logic, truth tables, proof
 - [Maths Index](maths.md) -- overview of all mathematics notes
 
 ---

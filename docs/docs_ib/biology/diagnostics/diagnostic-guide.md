@@ -13,12 +13,12 @@ hide_table_of_contents: true
 
 | Diagnostic File             | Topics Covered                                                                           | Source Files           |
 | --------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- |
-| `diag-cell-biology.md`      | Cell theory, prokaryotic vs eukaryotic, organelles, membrane transport, cell division    | `cell-biology.md`      |
-| `diag-molecular-biology.md` | DNA replication, transcription, translation, PCR, enzyme function, gene expression       | `molecular-biology.md` |
-| `diag-genetics.md`          | Monohybrid/dihybrid crosses, chi-squared, sex linkage, Hardy-Weinberg, pedigree analysis | `genetics.md`          |
-| `diag-ecology.md`           | Energy flow, carbon/nitrogen cycles, population growth, biodiversity, conservation       | `ecology.md`           |
-| `diag-human-physiology.md`  | Action potentials, synapses, hormones, kidney function, immune system, gas exchange      | `human-physiology.md`  |
-| `diag-plant-biology.md`     | Photosynthesis, transpiration, mineral transport, plant hormones, reproduction           | `plant-biology.md`     |
+| `diag-cell-biology.md`      | Cell theory, prokaryotic vs eukaryotic, organelles, membrane transport, cell division    | `1-cell-biology/1_cell-biology.md`      |
+| `diag-molecular-biology.md` | DNA replication, transcription, translation, PCR, enzyme function, gene expression       | `2-molecular-biology/1_molecular-biology.md` |
+| `diag-genetics.md`          | Monohybrid/dihybrid crosses, chi-squared, sex linkage, Hardy-Weinberg, pedigree analysis | `3-genetics/1_genetics.md`          |
+| `diag-ecology.md`           | Energy flow, carbon/nitrogen cycles, population growth, biodiversity, conservation       | `4-ecology/1_ecology.md`           |
+| `diag-human-physiology.md`  | Action potentials, synapses, hormones, kidney function, immune system, gas exchange      | `6-human-physiology/1_human-physiology.md`  |
+| `diag-plant-biology.md`     | Photosynthesis, transpiration, mineral transport, plant hormones, reproduction           | `7-plant-biology/1_plant-biology.md`     |
 
 ## Grading Rubric
 

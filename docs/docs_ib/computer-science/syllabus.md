@@ -295,14 +295,14 @@ Work.
 
 ## Topic Pages
 
-- [Computer Organization](computers/computer-organizations.md) -- processor architecture, memory,
+- [Computer Organization](2-computer-organization/1_computer-organization.md) -- processor architecture, memory,
   and instruction cycle
 - [Networks](3-networks/1_networks.md) -- network models, protocols, and data transmission
-- [System Design](systems/system-design.md) -- system planning, stakeholder analysis, and design
+- [System Design](1-system-fundamentals/1_system-design.md) -- system planning, stakeholder analysis, and design
   methodologies
-- [System in Organization](systems/systemIn-organization.md) -- systems in context, integration, and
+- [System in Organization](1-system-fundamentals/2_system-organization.md) -- systems in context, integration, and
   organizational impact
-- [OOP / Java](options/oop/jets.md) -- object-oriented programming concepts and Java-specific notes
+- [OOP / Java](8-object-oriented-programming/1_object-oriented-programming.md) -- object-oriented programming concepts and Java-specific notes
 
 ## Common Pitfalls
 
