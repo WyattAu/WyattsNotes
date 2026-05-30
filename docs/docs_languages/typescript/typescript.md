@@ -99,16 +99,17 @@ Interdependent.
 
 ## Common Pitfalls
 
-1. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
-   necessarily tight.
+1. Using `any` as a shortcut — it disables all type checking for a value and propagates
+   unsoundness. Prefer `unknown` when the type is genuinely unknown.
 
-2. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
-   data).
+2. Relying on type assertions (`as`) instead of proper narrowing — every `as` bypasses the compiler's
+   verification and can introduce runtime errors that TypeScript was supposed to prevent.
 
-3. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+3. Forgetting that `interface` declarations merge while `type` aliases do not — accidental merging
+   can cause subtle bugs in large codebases where the same interface name is used across files.
 
-4. Writing pseudocode that is too language-specific rather than using standard algorithmic
-   constructs.
+4. Over-indexing arrays without `noUncheckedIndexedAccess` — by default, `arr[0]` has type `T`, not
+   `T | undefined`, which hides potential undefined values at runtime.
 
 ### Study Strategy
 

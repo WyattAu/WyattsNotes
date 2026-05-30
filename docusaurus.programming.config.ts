@@ -129,6 +129,8 @@ const config = {
             { label: 'Python', to: '/docs/languages/python/intro' },
             { label: 'Rust', to: '/docs/languages/rust/intro' },
             { label: 'Dart', to: '/docs/languages/dart/intro' },
+            { label: 'Go', to: '/docs/languages/go/intro' },
+            { label: 'Kotlin', to: '/docs/languages/kotlin/intro' },
           ],
         },
         {

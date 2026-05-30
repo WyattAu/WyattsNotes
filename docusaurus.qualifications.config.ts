@@ -62,6 +62,7 @@ const config = {
         { to: '/docs/qualifications/ap/intro', label: 'AP', position: 'left' },
         { to: '/docs/qualifications/highers/intro', label: 'Highers', position: 'left' },
         { to: '/docs/qualifications/ilc/intro', label: 'Irish LC', position: 'left' },
+        { to: '/docs/qualifications/sat/intro', label: 'SAT', position: 'left' },
         {
           href: 'https://alevel.wyattau.com',
           label: 'A-Levels',
@@ -112,6 +113,7 @@ const config = {
               to: '/docs/qualifications/highers/intro',
             },
             { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
+            { label: 'SAT', to: '/docs/qualifications/sat/intro' },
             {
               label: 'IB',
               href: 'https://ib.wyattau.com/docs/ib/intro',
