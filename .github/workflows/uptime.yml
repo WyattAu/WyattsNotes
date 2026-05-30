@@ -16,8 +16,8 @@ jobs:
           SITES=(
             "wyattsnotes.wyattau.com"
             "alevel.wyattau.com"
-            "alevel-maths-physics.wyattau.com"
-            "alevel-sciences.wyattau.com"
+            "alevel-maths-physics.wyattau.com" # DNS pending
+            "alevel-sciences.wyattau.com" # DNS pending
             "qualifications.wyattau.com"
             "programming.wyattau.com"
             "university.wyattau.com"

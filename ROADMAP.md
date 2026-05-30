@@ -83,7 +83,7 @@
 ### 0.6 Fix Uptime Monitor
 
 - [x] 10 sites monitored every 30 minutes
-- [ ] Add alevel-maths-physics and alevel-sciences once DNS configured
+- [x] alevel-maths-physics and alevel-sciences added to uptime monitor (DNS pending, monitored preemptively)
 
 ---
 
@@ -351,7 +351,7 @@
 
 ### 8.4 Cost Optimization
 
-- [ ] Evaluate Cloudflare Pages usage and costs
+- [x] Evaluate Cloudflare Pages usage and costs (.reports/cloudflare-cost-evaluation.md)
 - [x] CDN cache optimization (Cache-Control for img/css/js/fonts)
 - [x] Image optimization: deleted unused docusaur/ template images (~162KB), optimized CoulombsLaw.svg (-10KB)
 - [x] Lazy loading for interactive components (all iframes use loading="lazy")
