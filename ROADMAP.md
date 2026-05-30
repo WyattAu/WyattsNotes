@@ -196,8 +196,8 @@
 
 ### 5.3 Practice and Assessment (Deferred)
 
-- [~] Auto-graded practice problems (PracticeProblem component + GCSE/IB question banks)
-- [~] Exam-style question banks per subject (GCSE + IB Maths AA created)
+- [x] Auto-graded practice problems (PracticeProblem component built AND integrated into 3 MDX pages: GCSE, IB, Python)
+- [x] Exam-style question banks per subject (GCSE 20 MCQs, IB Maths AA 15, SAT science 15, plus 3 interactive MDX practice pages)
 - [x] Spaced repetition integration — FlashcardDeck with SM-2 algorithm
 - [x] Diagnostic test expansion — DiagnosticTest adaptive component
 
@@ -269,14 +269,14 @@
 
 | Area               | Current Lines | Gap                                             | Priority |
 | ------------------ | ------------- | ------------------------------------------------ | -------- |
-| Probabilistic ML   | 1.7K          | Only fundamentals, no advanced topics            | Low      |
-| Licensing          | 1.1K          | Missing MIT, Apache, LGPL, MPL, GPL v3           | Low      |
+| Probabilistic ML   | 1.7K          | Advanced topics guide added (transformers, GANs, RL)    | Low      |
+| Licensing          | 1.1K          | OSI licenses guide added (MIT through AGPL)           | Low      |
 | Go                 | 7.9K          | Standard library and concurrency guides added        | Medium   |
 | Kotlin             | 4.9K          | Coroutines advanced added                             | Medium   |
 | TypeScript         | 6.7K          | Advanced types guide added                   | Medium   |
-| Dart               | 18.5K         | Good coverage, missing Flutter testing           | Low      |
-| University Maths   | 18K           | Topology added, missing abstract algebra depth         | Medium   |
-| University Physics | 18K           | Quantum Mechanics II added, missing thermodynamics  | Medium   |
+| Dart               | 18.5K         | Flutter testing guide added           | Low      |
+| University Maths   | 18K           | Abstract algebra added (groups, Galois theory)         | Medium   |
+| University Physics | 18K           | Thermodynamics added  | Medium   |
 
 ### 7.2 New Qualification Systems
 
@@ -284,8 +284,8 @@
 | -------------------- | ------ | ------ | -------- |
 | SAT / ACT            | High   | Medium | High     | 5 guides created |
 | Indian CBSE/ISC      | Medium | Medium | Medium   | intro stub created |
-| Australian HSC/VCE   | Medium | High   | Low      |
-| Chinese Gaokao       | Medium | High   | Low      |
+| Australian HSC/VCE   | Medium | High   | Low      | intro stub created |
+| Chinese Gaokao       | Medium | High   | Low      | intro stub created |
 | German Abitur        | Low    | High   | Low      |
 | French Baccalaureate | Low    | High   | Low      |
 
@@ -477,9 +477,9 @@
 | ID     | Description                                                                    | Priority | Status  |
 | ------ | ------------------------------------------------------------------------------ | -------- | ------- |
 | TD-009 | E2E tests only cover main site                                                 | Medium   | FIXED (7 sub-sites + cross-site + search) |
-| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | OPEN (maths 9-10 min, others 2-5 min) |
+| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | FIXED (remark plugins skipped for maths, KaTeX opts tuned) |
 | TD-023 | No Google/Bing webmaster verification tags                                     | Medium   | DONE (env var pattern, needs secret setup)    |
-| TD-025 | programming.wyattau.com slow load (0.988s) — BUILD_ID deferred               | Low      | OPEN    |
+| TD-025 | programming.wyattau.com slow load (0.988s) — BUILD_ID deferred               | Low      | FIXED (@docusaurus/faster enabled) |
 | TD-028 | 887 unstaged doc files with prettier/template changes                          | Low      | FIXED (only 16 needed formatting) |
 | TD-029 | Landing page stats hardcoded (TODO comment)                                     | Low      | FIXED   |
 | TD-030 | 1,279 content files with empty descriptions                                    | Medium   | CLOSED (false alarm) |
@@ -516,6 +516,8 @@
 | TD-061 | No push notification support | Low | FIXED |
 | TD-062 | No PDF generation | Medium | FIXED |
 | TD-063 | No keyboard/ARIA automated tests | Medium | FIXED |
+| TD-064 | No interactive MDX practice pages | Medium | FIXED |
+| TD-065 | No Dart Flutter testing guide | Low | FIXED |
 
 ---
 
