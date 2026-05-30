@@ -1100,6 +1100,11 @@ $$V_{\mathrm{eff}''(r_0) = -\frac{2k}{r_0^3} + \frac{3l^2}{mr_0^4} = \frac{m^3k^
 
 So the circular orbit is always stable for the Kepler problem.
 
+<!-- prettier-ignore -->
+<DesmosGraph title="Effective Potential for Kepler Problem" expressions={["-k/x+l^2/(2*x^2)", "y=E"]} width={800} height={500} />
+
+The effective potential $V_{\mathrm{eff}}(r) = -k/r + l^2/(2r^2)$ (blue) combines the attractive $-1/r$ well with the centrifugal barrier $\propto 1/r^2$. Adjust sliders `k` (force constant), `l` (angular momentum), and `E` (total energy) to explore bound and unbound orbits.
+
 ### 6.3 The Orbit Equation
 
 Starting from conservation of energy and angular momentum, we derive the orbit equation. Let

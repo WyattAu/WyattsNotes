@@ -186,6 +186,10 @@ $f\left(-\frac{b}{2a}\right) = -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$. 
 - $\Delta < 0$: the vertex lies on the same side of the $x$-axis as the direction the parabola
   opens, so the graph never meets the axis.
 
+<DesmosGraph title="Quadratic Graph and the Discriminant" expressions={["a*x^2+b*x+c"]} width={800} height={500} />
+
+Adjust sliders `a`, `b`, `c` to see how the quadratic $y = ax^2 + bx + c$ changes. Observe how the discriminant $\Delta = b^2 - 4ac$ determines whether the curve crosses, touches, or misses the $x$-axis.
+
 Furthermore, when $\Delta < 0$:
 
 | Condition                | Conclusion                                                      |

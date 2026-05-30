@@ -756,6 +756,11 @@ The homogeneous solution depends on the discriminant $\gamma^2 - \omega_0^2$:
 | $\gamma^2 = \omega_0^2$   | Critical    | $e^{-\gamma t}(c_1 + c_2 t)$                                                                          |
 | $\gamma^2 > \omega_0^2$   | Overdamped  | $c_1 e^{r_1 t} + c_2 e^{r_2 t}$, $r_{1,2} = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$                   |
 
+<!-- prettier-ignore -->
+<DesmosGraph title="Damped Harmonic Oscillator" expressions={["e^{-c*x}\\cos(w*x)", "e^{-c*x}", "-e^{-c*x}"]} width={800} height={400} />
+
+The underdamped oscillation $e^{-\gamma t}\cos(\omega_d t)$ (blue) decays inside the envelope $\pm e^{-\gamma t}$ (green/red). Adjust sliders `c` (damping $\gamma$) and `w` (damped frequency $\omega_d$) to explore different regimes.
+
 ### 3.17 Common Pitfalls for Second-Order ODEs
 
 :::caution Common Pitfall When using undetermined coefficients, always check whether your guess
@@ -990,6 +995,11 @@ $$\lambda = \frac{\tau \pm \sqrt{\tau^2 - 4\Delta}}{2}$$
 - $\tau^2 - 4\Delta = 0$: repeated eigenvalues (proper or improper node)
 
 Stability is determined by the sign of $\tau$: stable if $\tau \lt 0$Unstable if $\tau > 0$.
+
+<!-- prettier-ignore -->
+<DesmosGraph title="Trace-Determinant Plane: Stability Classification" expressions={["y^2-x^2/4=0", "y=0", "x=0"]} width={800} height={600} />
+
+The trace-determinant plane classifies 2D linear systems. The parabola $\tau^2 = 4\Delta$ separates real from complex eigenvalues; the $\tau = 0$ line separates stable from unstable. The `x`-axis represents the trace $\tau$ and the `y`-axis represents $\Delta$.
 
 ### 4.10 Nonhomogeneous Systems
 

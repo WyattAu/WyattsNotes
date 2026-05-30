@@ -289,6 +289,11 @@ $$
 R = u\cos\theta \cdot t = u\cos\theta \cdot \frac{2u\sin\theta}{g} = \frac{u^2 \sin 2\theta}{g}
 $$
 
+<!-- prettier-ignore -->
+<DesmosGraph title="Projectile Trajectory" expressions={["y=x*tan(a)-\\frac{4.9*x^2}{v^2*cos(a)^2}"]} width={800} height={500} />
+
+Adjust slider `a` (launch angle $\theta$, try 0 to 1.57 rad) and `v` (initial speed, try 5 to 20) to explore how angle and speed affect the parabolic trajectory. Notice that $\theta = 45°$ gives maximum range.
+
 ### Maximum Range
 
 The range is maximised when $\sin 2\theta = 1$I.e., $\theta = 45\degree$:
