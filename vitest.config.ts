@@ -5,20 +5,18 @@ import { defineConfig } from 'vitest/config';
 
 const mocksDir = path.resolve(__dirname, 'src/__tests__/__mocks__');
 
-// https://vitest.dev/config/#resolve-alias
 export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
     globals: true,
     include: ['src/**/*.test.{ts,tsx}'],
-    setupFiles: ['./src/__tests__/setup.ts'],
+    setupFiles: ['./vitest.docusaurus-mocks.ts', './src/__tests__/setup.ts'],
     css: {
       modules: {
         classNameStrategy: 'non-scoped',
       },
     },
-    // Alias Docusaurus modules for ALL files (source + test)
     alias: [
       {
         find: '@docusaurus/ExecutionEnvironment',
@@ -41,7 +39,6 @@ export default defineConfig({
         replacement: path.join(mocksDir, 'theme/$1'),
       },
     ],
-    // Force vitest to inline these modules instead of externalizing them
     deps: {
       interopDefault: true,
     },
