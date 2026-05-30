@@ -65,6 +65,9 @@ jobs:
           DISABLE_LUNR: 'true'
           GENERATE_SOURCEMAP: 'false'
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
+          BING_SITE_VERIFICATION: ${{ secrets.BING_SITE_VERIFICATION }}
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
 
       - name: Remove SSR bundle (Cloudflare Pages static-only, 25 MiB file limit)
         run: rm -rf build/__server
@@ -81,7 +84,19 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       - name: Deploy to Cloudflare Pages
+        id: deploy
         run: npx wrangler pages deploy build --project-name wyattsnotes-alevel-maths-physics
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Deployment summary
+        if: always()
+        run: node scripts/deploy-summary.mjs
+        env:
+          SITE_NAME: 'A-Level Maths & Physics'
+          DEPLOY_URL: 'https://alevel.wyattau.com'
+          BUILD_DURATION: '0'
+          GIT_SHA: ${{ github.sha }}
+          TRIGGER: ${{ github.event_name }}
+          DEPLOY_OUTCOME: ${{ steps.deploy.outcome }}

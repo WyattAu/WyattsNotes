@@ -52,6 +52,11 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://wyattsnotes.wyattau.com
           --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'main'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -77,6 +82,11 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://academics.wyattau.com
           --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'academics'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -104,6 +114,11 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://alevel.wyattau.com
           --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'alevel'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -127,6 +142,11 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm lighthouse -- --collect.url=https://ib.wyattau.com --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'ib'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -150,7 +170,13 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run:
-          pnpm lighthouse -- --collect.url=https://dse.wyattau.com --collect.startServerCommand=""
+          pnpm lighthouse -- --collect.url=https://dse.wyattau.com
+          --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'dse'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -177,6 +203,11 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://qualifications.wyattau.com
           --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'qualifications'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -203,6 +234,11 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://programming.wyattau.com
           --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'programming'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -229,6 +265,11 @@ jobs:
       - run:
           pnpm lighthouse -- --collect.url=https://university.wyattau.com
           --collect.startServerCommand=""
+      - name: Lighthouse summary
+        if: always()
+        run: node scripts/lighthouse-summary.mjs
+        env:
+          SITE_NAME: 'university'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
