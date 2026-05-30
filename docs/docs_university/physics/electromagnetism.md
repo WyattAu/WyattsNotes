@@ -22,13 +22,13 @@ Maxwell's equations are the foundation of classical electromagnetism. In SI unit
 
 **Integral Form:**
 
-$$\oint_S \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\mathrm{enc}}{\varepsilon_0} \quad \mathrm{(Gauss's\ Law)}}$$
+$$\oint_S \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\mathrm{enc}}}{\varepsilon_0} \quad \mathrm{(Gauss's\ Law)}$$
 
 $$\oint_S \mathbf{B} \cdot d\mathbf{A} = 0 \quad \mathrm{(Gauss's\ Law\ for\ Magnetism)}$$
 
 $$\oint_C \mathbf{E} \cdot d\mathbf{l} = -\frac{d\Phi_B}{dt} \quad \mathrm{(Faraday's\ Law)}$$
 
-$$\oint_C \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enc} + \mu_0 \varepsilon_0 \frac{d\Phi_E}{dt} \quad \mathrm{(Ampere{-}Maxwell\ Law)}}$$
+$$\oint_C \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\mathrm{enc}} + \mu_0 \varepsilon_0 \frac{d\Phi_E}{dt} \quad \mathrm{(Ampere{-}Maxwell\ Law)}$$
 
 **Differential Form:**
 
@@ -434,12 +434,12 @@ Outside the slab: $\mathbf{E} = \mathbf{E}_0$.
 
 Inside the slab: by continuity of $D_n$:
 
-$$D_{\mathrm{in} = D_{\mathrm{out} = \varepsilon_0 E_0}}$$
+$$D_{\mathrm{in}} = D_{\mathrm{out}} = \varepsilon_0 E_0$$
 
-$$E_{\mathrm{in} = \frac{D_{\mathrm{in}}{\varepsilon} = \frac{\varepsilon_0}{\varepsilon} E_0 = \frac{E_0}{\varepsilon_r}}}$$
+$$E_{\mathrm{in}} = \frac{D_{\mathrm{in}}}{\varepsilon} = \frac{\varepsilon_0}{\varepsilon} E_0 = \frac{E_0}{\varepsilon_r}$$
 
 The polarization:
-$P = \varepsilon_0 \chi_e E_{\mathrm{in} = \varepsilon_0 (\varepsilon_r - 1) \frac{E_0}{\varepsilon_r}}$.
+$P = \varepsilon_0 \chi_e E_{\mathrm{in}} = \varepsilon_0 (\varepsilon_r - 1) \frac{E_0}{\varepsilon_r}$.
 
 The bound surface charge density on each face:
 
@@ -531,7 +531,7 @@ $\hat{\mathbf{n}}$ is the unit normal given by the right-hand rule.
 
 **Field of a magnetic dipole** (at position $\mathbf{r}$ from the dipole):
 
-$$\mathbf{B}_{\mathrm{dip}(\mathbf{r}) = \frac{\mu_0}{4\pi}\left[\frac{3(\mathbf{m} \cdot \hat{\mathbf{r}})\hat{\mathbf{r}} - \mathbf{m}}{r^3}\right]}$$
+$$\mathbf{B}_{\mathrm{dip}}(\mathbf{r}) = \frac{\mu_0}{4\pi}\left[\frac{3(\mathbf{m} \cdot \hat{\mathbf{r}})\hat{\mathbf{r}} - \mathbf{m}}{r^3}\right]$$
 
 This has the same angular structure as the electric dipole field.
 
@@ -910,7 +910,7 @@ $$\langle\mathbf{S}\rangle = \frac{E_0^2}{2\mu_0 c}\,\hat{\mathbf{k}} = \frac{1}
 A plane wave normally incident on a perfectly absorbing surface exerts a radiation pressure. The
 momentum flux of the wave is $\langle S \rangle/c$ per unit area, so:
 
-$$P_{\mathrm{abs} = \frac{\langle S \rangle}{c} = \frac{\varepsilon_0 E_0^2}{2}}$$
+$$P_{\mathrm{abs}} = \frac{\langle S \rangle}{c} = \frac{\varepsilon_0 E_0^2}{2}$$
 
 For a perfectly reflecting surface, the momentum transfer is doubled:
 
@@ -992,7 +992,7 @@ Electromagnetic waves can be guided by hollow conducting pipes (waveguides). Con
 waveguide with dimensions $a$ (width) and $b$ (height).
 
 **TE modes** (transverse electric, $E_z = 0$, $B_z \neq 0$). The lowest-order mode is
-$\mathrm{TE_}{10}$With fields:
+$\mathrm{TE}_{10}$ With fields:
 
 $$E_y = E_0 \sin\!\left(\frac{\pi x}{a}\right)\cos(k_g z - \omega t)$$
 
@@ -1006,7 +1006,7 @@ Where the **guide wave number** is $k_g = \sqrt{(\omega/c)^2 - (\pi/a)^2}$.
 
 $$\omega_{c,mn} = c\pi\sqrt{\left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2}$$
 
-For the $\mathrm{TE_}{10}$ mode: $f_c = \frac{c}{2a}$.
+For the $\mathrm{TE}_{10}$ mode: $f_c = \frac{c}{2a}$.
 
 **Phase and group velocities.** In a waveguide, the phase velocity exceeds $c$:
 
@@ -1110,13 +1110,13 @@ $\mathbf{B} = \nabla \times \mathbf{A}$Substitute into Gauss's law:
 
 $$\nabla \cdot \mathbf{E} = -\nabla^2 V - \frac{\partial}{\partial t}(\nabla \cdot \mathbf{A}) = \frac{\rho}{\varepsilon_0}$$
 
-$$\nabla^2 V + \frac{\partial}{\partial t}(\nabla \cdot \mathbf{A}) = -\frac{\rho}{\varepsilon_0} \tag{6.1}$$
+$$\nabla^2 V + \frac{\partial}{\partial t}(\nabla \cdot \mathbf{A}) = -\frac{\rho}{\varepsilon_0}$$ \hfill (6.1)
 
 Substitute into the Ampere-Maxwell law:
 
 $$\nabla \times \mathbf{B} = \nabla(\nabla \cdot \mathbf{A}) - \nabla^2 \mathbf{A} = \mu_0\mathbf{J} + \mu_0\varepsilon_0\frac{\partial}{\partial t}(-\nabla V - \frac{\partial\mathbf{A}}{\partial t})$$
 
-$$\nabla^2 \mathbf{A} - \mu_0\varepsilon_0\frac{\partial^2 \mathbf{A}}{\partial t^2} = -\mu_0\mathbf{J} + \nabla\!\left(\nabla \cdot \mathbf{A} + \mu_0\varepsilon_0\frac{\partial V}{\partial t}\right) \tag{6.2}$$
+$$\nabla^2 \mathbf{A} - \mu_0\varepsilon_0\frac{\partial^2 \mathbf{A}}{\partial t^2} = -\mu_0\mathbf{J} + \nabla\!\left(\nabla \cdot \mathbf{A} + \mu_0\varepsilon_0\frac{\partial V}{\partial t}\right)$$ \hfill (6.2)
 
 Equations (6.1) and (6.2) are coupled through the term
 $\nabla \cdot \mathbf{A} + \mu_0\varepsilon_0\,\partial V/\partial t$.
@@ -1198,17 +1198,17 @@ Observation point, the radiation is compressed (higher density of field lines).
 
 **Fields of a moving charge.** The electric field splits into two parts:
 
-$$\mathbf{E} = \mathbf{E}_{\mathrm{vel} + \mathbf{E}_{\mathrm{acc}}}$$
+$$\mathbf{E} = \mathbf{E}_{\mathrm{vel}} + \mathbf{E}_{\mathrm{acc}}$$
 
 The **velocity field** (Coulomb-like, falls off as $1/R^2$):
 
-$$\mathbf{E}_{\mathrm{vel} = \frac{q}{4\pi\varepsilon_0}\frac{(1-\beta^2)(\hat{\mathbf{R}} - \boldsymbol{\beta})}{\kappa^3 R^2}\bigg|_{t_r}}$$
+$$\mathbf{E}_{\mathrm{vel}} = \frac{q}{4\pi\varepsilon_0}\frac{(1-\beta^2)(\hat{\mathbf{R}} - \boldsymbol{\beta})}{\kappa^3 R^2}\bigg|_{t_r}$$
 
 Where $\boldsymbol{\beta} = \mathbf{v}/c$.
 
 The **acceleration field** (radiation, falls off as $1/R$):
 
-$$\mathbf{E}_{\mathrm{acc} = \frac{q}{4\pi\varepsilon_0 c}\frac{\hat{\mathbf{R}} \times [(\hat{\mathbf{R}} - \boldsymbol{\beta}) \times \dot{\boldsymbol{\beta}}]}{\kappa^3 R}\bigg|_{t_r}}$$
+$$\mathbf{E}_{\mathrm{acc}} = \frac{q}{4\pi\varepsilon_0 c}\frac{\hat{\mathbf{R}} \times [(\hat{\mathbf{R}} - \boldsymbol{\beta}) \times \dot{\boldsymbol{\beta}}]}{\kappa^3 R}\bigg|_{t_r}$$
 
 Only the acceleration field contributes to radiation at large distances. The magnetic field Is
 always:
@@ -1392,15 +1392,15 @@ Gaussian surface of radius $r$:
 
 For $r \lt R$: $D \cdot 4\pi r^2 = q \implies \mathbf{D} = \frac{q}{4\pi r^2}\,\hat{\mathbf{r}}$.
 
-$\mathbf{E}_{\mathrm{in} = \frac{\mathbf{D}}{\varepsilon} = \frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{r}}}$.
+$\mathbf{E}_{\mathrm{in}} = \frac{\mathbf{D}}{\varepsilon} = \frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{r}}$.
 
-$\mathbf{P} = \varepsilon_0\chi_e\mathbf{E}_{\mathrm{in} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{r}}}$.
+$\mathbf{P} = \varepsilon_0\chi_e\mathbf{E}_{\mathrm{in}} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon r^2}\,\hat{\mathbf{r}}$.
 
 For $r \gt R$: $D \cdot 4\pi r^2 = q \implies \mathbf{D} = \frac{q}{4\pi r^2}\,\hat{\mathbf{r}}$.
 
-$\mathbf{E}_{\mathrm{out} = \frac{\mathbf{D}}{\varepsilon_0} = \frac{q}{4\pi\varepsilon_0 r^2}\,\hat{\mathbf{r}}}$.
+$\mathbf{E}_{\mathrm{out}} = \frac{\mathbf{D}}{\varepsilon_0} = \frac{q}{4\pi\varepsilon_0 r^2}\,\hat{\mathbf{r}}$.
 
-$\mathbf{P}_{\mathrm{out} = \mathbf{0}}$ (vacuum).
+$\mathbf{P}_{\mathrm{out}} = \mathbf{0}$ (vacuum).
 
 Bound surface charge:
 $\sigma_b = \mathbf{P}\cdot\hat{\mathbf{r}}\big|_{r=R} = \left(\varepsilon - \varepsilon_0\right)\frac{q}{4\pi\varepsilon R^2}$.
@@ -1424,7 +1424,7 @@ radius $r$ and length $L$.
 
 For $r \lt R$: no charge enclosed, so $\mathbf{E} = \mathbf{0}$.
 
-For $r \gt R$: the enclosed charge is $Q_{\mathrm{enc} = \sigma \cdot 2\pi R L}$.
+For $r \gt R$: the enclosed charge is $Q_{\mathrm{enc}} = \sigma \cdot 2\pi R L$.
 
 $$E \cdot 2\pi r L = \frac{\sigma \cdot 2\pi R L}{\varepsilon_0}$$
 
@@ -1483,24 +1483,24 @@ $$V(r,\theta) = \sum_{l=0}^{\infty}\left(A_l r^l + \frac{B_l}{r^{l+1}}\right)P_l
 
 For $r \lt R$: finiteness at $r = 0$ requires $B_l = 0$.
 
-$$V_{\mathrm{in} = \sum_{l=0}^{\infty} A_l\,r^l\,P_l(\cos\theta)}$$
+$$V_{\mathrm{in}} = \sum_{l=0}^{\infty} A_l\,r^l\,P_l(\cos\theta)$$
 
-Boundary condition at $r = R$: $V_{\mathrm{in}(R,\theta) = V_0\cos\theta = V_0 P_1(\cos\theta)}$.
+Boundary condition at $r = R$: $V_{\mathrm{in}}(R,\theta) = V_0\cos\theta = V_0 P_1(\cos\theta)$.
 
 By orthogonality of Legendre polynomials, only $l = 1$ contributes: $A_1 = V_0/R$.
 
-$$V_{\mathrm{in} = \frac{V_0}{R}\,r\cos\theta = \frac{V_0}{R}\,z}$$
+$$V_{\mathrm{in}} = \frac{V_0}{R}\,r\cos\theta = \frac{V_0}{R}\,z$$
 
 For $r \gt R$: $V \to 0$ as $r \to \infty$ requires $A_l = 0$.
 
-$$V_{\mathrm{out} = \sum_{l=0}^{\infty}\frac{B_l}{r^{l+1}}P_l(\cos\theta)}$$
+$$V_{\mathrm{out}} = \sum_{l=0}^{\infty}\frac{B_l}{r^{l+1}}P_l(\cos\theta)$$
 
 Matching at $r = R$: $B_1/R^2 = V_0 \implies B_1 = V_0 R^2$.
 
-$$V_{\mathrm{out} = \frac{V_0 R^2}{r^2}\cos\theta}$$
+$$V_{\mathrm{out}} = \frac{V_0 R^2}{r^2}\cos\theta$$
 
 The interior field is uniform:
-$\mathbf{E}_{\mathrm{in} = -\nabla V_{\mathrm{in} = -(V_0/R)\,\hat{\mathbf{z}}}}$.
+$\mathbf{E}_{\mathrm{in}} = -\nabla V_{\mathrm{in}} = -(V_0/R)\,\hat{\mathbf{z}}$.
 
 _Cross-reference:_ Section 2.4, Section 2.7.
 
@@ -1633,11 +1633,11 @@ $$d\mathbf{B} = \frac{\mu_0 I}{4\pi}\frac{d\mathbf{l} \times \mathbf{r}}{r^3} = 
 
 $$= \frac{\mu_0 I}{4\pi}\frac{(-a/2)\,dy}{[(a/2)^2+y^2]^{3/2}}\,\hat{\mathbf{z}}$$
 
-$$B_{\mathrm{one\ side} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\!\int_{-a/2}^{a/2}\frac{dy}{[(a/2)^2+y^2]^{3/2}}}$$
+$$B_{\mathrm{one\ side}} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\!\int_{-a/2}^{a/2}\frac{dy}{[(a/2)^2+y^2]^{3/2}}$$
 
 Using $\int dy/(s^2+y^2)^{3/2} = y/[s^2\sqrt{s^2+y^2}]$ with $s = a/2$:
 
-$$B_{\mathrm{one\ side} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\frac{2}{(a/2)\sqrt{(a/2)^2+(a/2)^2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\cdot\frac{1}{\sqrt{2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\sqrt{2}}$$
+$$B_{\mathrm{one\ side}} = \frac{\mu_0 I}{4\pi}\!\left(-\frac{a}{2}\right)\frac{2}{(a/2)\sqrt{(a/2)^2+(a/2)^2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\cdot\frac{1}{\sqrt{2}} \cdot 2 = -\frac{\mu_0 I}{\pi a}\sqrt{2}$$
 
 The magnitude from all four sides:
 $B = 4 \times \frac{\sqrt{2}\,\mu_0 I}{\pi a} = \frac{2\sqrt{2}\,\mu_0 I}{\pi a}$.
@@ -1695,7 +1695,7 @@ $$B_z \approx \frac{\mu_0 I R^2}{2z^3} = \frac{\mu_0}{4\pi}\frac{2m}{z^3}$$
 
 The dipole field formula gives, on the axis ($\theta = 0$):
 
-$$\mathbf{B}_{\mathrm{dip} = \frac{\mu_0}{4\pi}\frac{2\mathbf{m}}{z^3}}$$
+$$\mathbf{B}_{\mathrm{dip}} = \frac{\mu_0}{4\pi}\frac{2\mathbf{m}}{z^3}$$
 
 This matches. $\blacksquare$
 
@@ -1798,7 +1798,7 @@ $$\langle S \rangle = \frac{E_0^2}{2\mu_0 c} = \frac{100^2}{2 \times 4\pi \times
 
 Radiation pressure on a perfect absorber:
 
-$$P_{\mathrm{rad} = \frac{\langle S \rangle}{c} = \frac{13.3}{3 \times 10^8} \approx 4.4 \times 10^{-8}\ \mathrm{Pa}}$$
+$$P_{\mathrm{rad}} = \frac{\langle S \rangle}{c} = \frac{13.3}{3 \times 10^8} \approx 4.4 \times 10^{-8}\ \mathrm{Pa}$$
 
 _Cross-reference:_ Section 5.2, Section 5.4, Section 5.5.
 
@@ -1903,7 +1903,7 @@ The product $v_p \cdot v_g = c^2$.
 
 The wave impedance for TE modes:
 
-$$Z_{\text{TE} = \frac{E_x}{H_y} = \frac{\omega\mu_0}{k} = \frac{Z_0}{\sqrt{1 - (f_c/f)^2}}}$$
+$$Z_{\text{TE}} = \frac{E_x}{H_y} = \frac{\omega\mu_0}{k} = \frac{Z_0}{\sqrt{1 - (f_c/f)^2}}$$
 
 Where $Z_0 = \sqrt{\mu_0/\varepsilon_0} \approx 377\,\Omega$ is the impedance of free space.
 
@@ -1954,7 +1954,7 @@ for low-loss, distortion-free signal transmission.
 
 (c) Guide wavelength at 10 GHz:
 
-$$\lambda_g = \frac{\lambda}{\sqrt{1 - (f_c/f)^2}} = \frac{30\ \text{mm}{\sqrt{1 - (6.56/10)^2}} = \frac{30}{\sqrt{1 - 0.430}} = \frac{30}{0.755} = 39.7\ \text{mm}}$$
+$$\lambda_g = \frac{\lambda}{\sqrt{1 - (f_c/f)^2}} = \frac{30\ \text{mm}}{\sqrt{1 - (6.56/10)^2}} = \frac{30}{\sqrt{1 - 0.430}} = \frac{30}{0.755} = 39.7\ \text{mm}$$
 
 (d) Phase and group velocities:
 
@@ -2051,7 +2051,7 @@ $= 1.08 \times 10^{-6} \times 1.875 \times 10^{18} \times \frac{561.6}{(2\pi \ti
 Wait: the power per electron is already the total radiated power. The total synchrotron radiation
 power from the ring is:
 
-$$P_{\text{total} = N_{\text{stored} \times P_{\text{per} electron} \times \frac{\text{bending} length}{\text{circumference}}}}$$
+$$P_{\text{total}} = N_{\text{stored}} \times P_{\text{per}\ electron} \times \frac{\text{bending}\ length}{\text{circumference}}$$
 
 For a rough estimate:
 $P_{\text{total} \approx 0.3 \times 3 \times 10^9 \times \frac{1.08 \times 10^{-6}}{1.6 \times 10^{-19}} \times \frac{2\pi \times 7.1}{561.6} \approx 500}$
@@ -2322,7 +2322,7 @@ $$\mathbf{g} = \frac{\mathbf{S}}{c^2} = \varepsilon_0\mathbf{E} \times \mathbf{B
 
 **Field angular momentum:** $\mathbf{L} = \int \mathbf{r} \times \mathbf{g}\, d^3r$.
 
-**Conservation:** $\frac{d}{dt}\left(\mathbf{p}_{\text{mech} + \mathbf{p}_{\text{field}\right) = 0}}$.
+**Conservation:** $\frac{d}{dt}\left(\mathbf{p}_{\text{mech}} + \mathbf{p}_{\text{field}}\right) = 0$.
 
 For a charge and a magnetic monopole (if they exist), the field angular momentum
 $\mathbf{L} = -qg\hat{\mathbf{r}}/(4\pi)$ is quantised in units of $\hbar/2$Leading to the Dirac
@@ -2373,7 +2373,7 @@ with $\omega < \omega_p$ cannot propagate (evanescent).
 
 Small displacements of the electron cloud create restoring forces, leading to **Langmuir waves**:
 
-$$\omega_{\text{Langmuir} = \omega_p\left(1 + \frac{3k_BT}{2m_e}\frac{k^2}{\omega_p^2}\right)^{-1/2}}$$
+$$\omega_{\text{Langmuir}} = \omega_p\left(1 + \frac{3k_BT}{2m_e}\frac{k^2}{\omega_p^2}\right)^{-1/2}$$
 
 At long wavelengths ($k \to 0$): $\omega \to \omega_p$ (undamped). With ion motion: the ion-acoustic
 wave has $\omega^2 = k^2 c_s^2/(1 + k^2\lambda_D^2)$ where $c_s = \sqrt{k_BT/m_i}$.

@@ -2359,12 +2359,12 @@ Find the multiplicative order of $2$ modulo $11$.
 <details>
 <summary>Solution</summary>
 
-$\phi(11) = 10$So $\mathrm{ord_}{11}(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
+$\phi(11) = 10$So $\mathrm{ord}_{11}(2) \mid 10$. The divisors of $10$ are $1, 2, 5, 10$.
 
 $2^1 = 2 \not\equiv 1 \pmod{11}$. $2^2 = 4 \not\equiv 1 \pmod{11}$.
 $2^5 = 32 \equiv 10 \equiv -1 \not\equiv 1 \pmod{11}$. $2^{10} \equiv 1 \pmod{11}$ by Fermat.
 
-So $\mathrm{ord_}{11}(2) = 10$Meaning $2$ is a primitive root modulo $11$. $\blacksquare$
+So $\mathrm{ord}_{11}(2) = 10$Meaning $2$ is a primitive root modulo $11$. $\blacksquare$
 
 _If you get this wrong, revise:_ Section 7.1.
 

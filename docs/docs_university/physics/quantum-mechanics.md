@@ -1191,9 +1191,9 @@ Where $P_l^m$ are the associated Legendre functions.
 
 **Properties:**
 
-- Orthonormality: $\int Y_l^m^*\, Y_{l'}^{m'}\,d\Omega = \delta_{ll'}\delta_{mm'}$
+- Orthonormality: $\int Y_l^{m*}\, Y_{l'}^{m'}\,d\Omega = \delta_{ll'}\delta_{mm'}$
 - Completeness:
-  $\sum_{l=0}^{\infty}\sum_{m=-l}^{l} Y_l^m(\theta,\phi)\,Y_l^m^*(\theta',\phi') = \delta(\cos\theta - \cos\theta')\delta(\phi - \phi')$
+  $\sum_{l=0}^{\infty}\sum_{m=-l}^{l} Y_l^m(\theta,\phi)\,Y_l^{m*}(\theta',\phi') = \delta(\cos\theta - \cos\theta')\delta(\phi - \phi')$
 - Parity: $Y_l^m(\pi-\theta, \phi+\pi) = (-1)^l\,Y_l^m(\theta,\phi)$
 
 **First few spherical harmonics:**
@@ -1957,7 +1957,7 @@ $$K_{1s,2s} \approx 0.032\ \text{Ry} = 0.43\ \text{eV}$$
 The singlet (parahelium) has energy $E = E_0 + J + K$And the triplet (orthohelium) has
 $E = E_0 + J - K$.
 
-The splitting: $E_{\text{singlet} - E_{\text{triplet} = 2K \approx 0.86}}$ eV. This is the exchange
+The splitting: $E_{\text{singlet}} - E_{\text{triplet}} = 2K \approx 0.86$ eV. This is the exchange
 splitting.
 
 The orthohelium $2^3S$ state is metastable: it cannot decay to the ground state by electric dipole
@@ -1985,9 +1985,9 @@ $$\Psi(1, 2, \ldots, N) = \frac{1}{\sqrt{N!}}\begin{vmatrix} \phi_1(1) & \phi_2(
 For any trial wavefunction $\psi_{\text{trial}}$ (normalised), the expectation value of the
 Hamiltonian is an upper bound on the true ground state energy:
 
-$$E_{\text{trial} = \langle\psi_{\text{trial}|\hat{H}|\psi_{\text{trial}\rangle \geq E_0}}}$$
+$$E_{\text{trial}} = \langle\psi_{\text{trial}}|\hat{H}|\psi_{\text{trial}}\rangle \geq E_0$$
 
-The equality holds if and only if $\psi_{\text{trial} = \psi_0}$.
+The equality holds if and only if $\psi_{\text{trial}} = \psi_0$.
 
 ### 10.2 The Hydrogen Molecule Ion $H_2^+$
 
@@ -2014,9 +2014,9 @@ $K$ is the exchange integral.
 With two electrons, the full Hamiltonian includes the electron-electron repulsion. Using the
 variational method with properly (anti)symmetrised spatial-spin wavefunctions:
 
-**Bonding (singlet):** $E_{\text{singlet} = 2E_{1s} + \frac{e^2}{R} + \frac{2J + 2K}{1 + S^2}}$
+**Bonding (singlet):** $E_{\text{singlet}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J + 2K}{1 + S^2}$
 
-**Antibonding (triplet):** $E_{\text{triplet} = 2E_{1s} + \frac{e^2}{R} + \frac{2J - 2K}{1 - S^2}}$
+**Antibonding (triplet):** $E_{\text{triplet}} = 2E_{1s} + \frac{e^2}{R} + \frac{2J - 2K}{1 - S^2}$
 
 The equilibrium bond length is $R_e \approx 1.4\,a_0$ with binding energy $\sim 3.5$ eV (experiment:
 4.75 eV).
@@ -2025,17 +2025,17 @@ The equilibrium bond length is $R_e \approx 1.4\,a_0$ with binding energy $\sim 
 <summary>Worked Example 10.1: Variational Estimate for Helium Ground State</summary>
 
 Use the trial function
-$\psi_{\text{trial} = (Z_{\text{eff}^3/\pi a_0^3)\exp(-Z_{\text{eff}r_1/a_0)\exp(-Z_{\text{eff}r_2/a_0)}}}}$
+$\psi_{\text{trial}} = (Z_{\text{eff}}^3/\pi a_0^3)\exp(-Z_{\text{eff}} r_1/a_0)\exp(-Z_{\text{eff}} r_2/a_0)$
 where $Z_{\text{eff}}$ is a variational parameter.
 
 The energy expectation value (treating the electron-electron repulsion as a perturbation):
 
-$$E(Z_{\text{eff}) = 2\times\frac{Z_{\text{eff}^2}{2}\text{Ry} - 2\times\frac{Z_{\text{eff} Z}{1}\text{Ry} + \frac{5}{8}Z_{\text{eff}\text{Ry}}}}}$$
+$$E(Z_{\text{eff}}) = 2\times\frac{Z_{\text{eff}}^2}{2}\text{Ry} - 2\times\frac{Z_{\text{eff}} \cdot 2}{1}\text{Ry} + \frac{5}{4}Z_{\text{eff}}\text{Ry}$$
 
-$$= \left(Z_{\text{eff}^2 - 4Z_{\text{eff} + \frac{5}{4}Z_{\text{eff}\right)\text{Ry} = \left(Z_{\text{eff}^2 - \frac{11}{4}Z_{\text{eff}\right)\text{Ry}}}}}}$$
+$$= \left(Z_{\text{eff}}^2 - 4Z_{\text{eff}} + \frac{5}{4}Z_{\text{eff}}\right)\text{Ry} = \left(Z_{\text{eff}}^2 - \frac{11}{4}Z_{\text{eff}}\right)\text{Ry}$$
 
 Minimising:
-$\partial E/\partial Z_{\text{eff} = (2Z_{\text{eff} - 11/4) = 0 \implies Z_{\text{eff} = 11/8 = 1.375}}}$.
+$\partial E/\partial Z_{\text{eff}} = (2Z_{\text{eff}} - 11/4) = 0 \implies Z_{\text{eff}} = 11/8 = 1.375$.
 
 $$E = \left(\frac{121}{64} - \frac{121}{32}\right)\text{Ry} = -\frac{121}{64}\text{Ry} = -2.848\text{Ry} = -77.5\ \text{eV}$$
 
@@ -2269,9 +2269,9 @@ $1s$ electron and partial penetration of the $2s$ electron. The $1s$ electrons s
 partially: using the helium result, $Z_{\text{eff}(1s) \approx Z - 5/16 = 3 - 0.3125 = 2.69}$.
 
 (b) The $2s$ electron sees an effective nuclear charge of
-$Z_{\text{eff}(2s) \approx 3 - 2 \times 0.85 = 1.3}$ (Slater's rules). The energy:
+$Z_{\text{eff}}(2s) \approx 3 - 2 \times 0.85 = 1.3$ (Slater's rules). The energy:
 
-$$E_{2s} = -\frac{Z_{\text{eff}^2}{n^2}\times 13.6\ \text{eV} = -\frac{1.3^2}{4}\times 13.6 = -\frac{1.69}{4}\times 13.6 = -5.75\ \text{eV}}$$
+$$E_{2s} = -\frac{Z_{\text{eff}}^2}{n^2}\times 13.6\ \text{eV} = -\frac{1.3^2}{4}\times 13.6 = -\frac{1.69}{4}\times 13.6 = -5.75\ \text{eV}$$
 
 The ionisation energy is $|E_{2s}| = 5.75$ eV, close to the experimental 5.39 eV. The discrepancy
 reflects the crudeness of the Slater screening constants.
@@ -2349,9 +2349,9 @@ $$S(x) = \pm\int^x p(x')\,dx', \quad p(x) = \sqrt{2m[E - V(x)]}$$
 
 The WKB wavefunctions:
 
-$$\psi(x) \approx \frac{C}{\sqrt{p(x)}}\exp\!\left(\pm\frac{i}{\hbar}\int^x p(x')\,dx'\right) \quad \text{(classically allowed,  E > V\text{)}}$$
+$$\psi(x) \approx \frac{C}{\sqrt{p(x)}}\exp\!\left(\pm\frac{i}{\hbar}\int^x p(x')\,dx'\right) \quad \text{(classically allowed, } E > V\text{)}$$
 
-$$\psi(x) \approx \frac{C}{\sqrt{|p(x)|}}\exp\!\left(\pm\frac{1}{\hbar}\int^x |p(x')|\,dx'\right) \quad \text{(classically forbidden,  E < V\text{)}}$$
+$$\psi(x) \approx \frac{C}{\sqrt{|p(x)|}}\exp\!\left(\pm\frac{1}{\hbar}\int^x |p(x')|\,dx'\right) \quad \text{(classically forbidden, } E < V\text{)}$$
 
 ### 13.2 Connection Formulas
 
@@ -2402,7 +2402,7 @@ $$= \exp\!\left(-\frac{\pi a}{\hbar}\sqrt{2mV_0}\left(1 - \frac{E}{V_0}\right)\r
 For alpha decay ($V_0 \approx 25$ MeV, $a \approx 30$ fm, $E = 5$ MeV, $m = 4 \times 931.5$
 MeV/$c^2$):
 
-$$\frac{\pi a}{\hbar c}\sqrt{2mc^2 V_0}\left(1 - \frac{E}{V_0}\right) = \frac{\pi \times 30\,\text{fm}{197\,\text{MeV}\cdot\text{fm}\sqrt{2 \times 3726 \times 25}\times 0.8}}$$
+$$\frac{\pi a}{\hbar c}\sqrt{2mc^2 V_0}\left(1 - \frac{E}{V_0}\right) = \frac{\pi \times 30\,\text{fm}}{197\,\text{MeV}\cdot\text{fm}\sqrt{2 \times 3726 \times 25}\times 0.8}$$
 
 $$= 0.479 \times 432.6 \times 0.8 = 165.7$$
 
@@ -2423,7 +2423,7 @@ potential $V_{\text{ext}(\mathbf{r})}$ (up to an additive constant), and hence t
 Hamiltonian and all ground-state properties.
 
 **Theorem 2:** The ground-state energy is a functional of the density:
-$E[n] = F_{\text{HK}[n] + \int V_{\text{ext}(\mathbf{r})n(\mathbf{r})\,d^3r}}$And the variational
+$E[n] = F_{\text{HK}}[n] + \int V_{\text{ext}}(\mathbf{r})n(\mathbf{r})\,d^3r$And the variational
 principle applies: $E_0 \leq E[n]$ for any trial density $n(\mathbf{r})$.
 
 ### 14.2 Kohn--Sham Equations
@@ -2435,7 +2435,7 @@ $$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\text{eff}[n](\mathbf{r})\right]\psi_i(
 
 $$n(\mathbf{r}) = \sum_{i=1}^{N}|\psi_i(\mathbf{r})|^2 \quad \text{(summing over occupied states)}$$
 
-$$V_{\text{eff} = V_{\text{ext} + V_H[n] + V_{\text{xc}[n]}}}$$
+$$V_{\text{eff}} = V_{\text{ext}} + V_H[n] + V_{\text{xc}}[n]$$
 
 $$V_H[n](\mathbf{r}) = e^2\int\frac{n(\mathbf{r}')}{|\mathbf{r} - \mathbf{r}'|}\,d^3r' \quad \text{(Hartree potential)}$$
 
@@ -2460,7 +2460,7 @@ Hybrid functionals (e.g., B3LYP, HSE06) and range-separated functionals partiall
 The simplest density functional theory: the Thomas--Fermi model treats the kinetic energy as a local
 functional of the density:
 
-$$T_{\text{TF}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{r})\,d^3r = C_{\text{TF}\int n^{5/3}\,d^3r}}$$
+$$T_{\text{TF}}[n] = \frac{3\hbar^2}{10m}(3\pi^2)^{2/3}\int n^{5/3}(\mathbf{r})\,d^3r = C_{\text{TF}}\int n^{5/3}\,d^3r$$
 
 For an atom with nuclear charge $Ze$Minimising
 $E[n] = T_{\text{TF}[n] - Ze^2\int n(\mathbf{r})/r\,d^3r + \frac{1}{2}e^2\iint n(\mathbf{r})n(\mathbf{r}')/|\mathbf{r}-\mathbf{r}'|\,d^3rd^3r'}$:
@@ -2473,7 +2473,7 @@ This integral equation can be solved by scaling: $n(r) = (Z/a_0^3)\,g(r/a_0 Z^{-
 a universal function.
 
 The Thomas--Fermi energy:
-$E_{\text{TF} = -\frac{3}{7}(9\pi/2)^{2/3}\frac{Z^{7/3}e^2}{2a_0} = -20.8\,Z^{7/3}}$ eV.
+$E_{\text{TF}} = -\frac{3}{7}(9\pi/2)^{2/3}\frac{Z^{7/3}e^2}{2a_0} = -20.8\,Z^{7/3}$ eV.
 
 This gives reasonable total energies for heavy atoms but fails qualitatively for light atoms (no
 shell structure, no chemical bonding).
