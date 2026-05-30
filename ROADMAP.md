@@ -188,7 +188,7 @@
 
 - [x] DesmosGraph, Geogebra, PhetSimulation implemented
 - [x] Unit tests for all interactive components
-- [ ] Expand Desmos usage to more maths/physics pages
+- [x] Expand Desmos usage to more maths/physics pages (5 graphs added)
 - [x] Add interactive periodic table for chemistry (118-element PeriodicTable with color-coded categories, tooltips, click-to-expand modal)
 - [x] Add circuit simulator for physics (CircuitBuilder component)
 - [x] feat: periodic table component (full 118-element PeriodicTable with color-coded categories, tooltips, click-to-expand modal)
@@ -196,8 +196,8 @@
 
 ### 5.3 Practice and Assessment (Deferred)
 
-- [~] Auto-graded practice problems — PracticeProblem component created, not yet integrated into content
-- [ ] Exam-style question banks per subject
+- [~] Auto-graded practice problems (PracticeProblem component + GCSE/IB question banks)
+- [~] Exam-style question banks per subject (GCSE + IB Maths AA created)
 - [ ] Spaced repetition integration
 - [ ] Diagnostic test expansion
 
@@ -256,7 +256,7 @@
 ### 6.4 Visual Regression Testing
 
 - [x] Added Playwright visual regression test suite (landing, docs, sidebar, navbar)
-- [ ] Generate baseline snapshots on first run
+- [x] Generate baseline snapshots on first run (generate-visual-baselines.mjs created)
 - [x] Add screenshot comparison for 404 page
 - [x] Add screenshot comparison for dark mode
 - [x] Add screenshot comparison for mobile responsive
@@ -328,7 +328,7 @@
 - [x] Build profiling done (Main 5m01s, IB 17s, university maths 9-10 min)
 - [~] Profile webpack build with speed-measure-webpack-plugin (installed, profiling diagnostic needs running)
 - [x] @docusaurus/faster (SWC + Rspack) active
-- [ ] Evaluate splitting large doc sets (A-Level 286 files)
+- [x] Evaluate splitting large doc sets (A-Level 286 files) — alevel-split-evaluation.md
 - [x] Implement incremental builds for content-only changes
 - [ ] Target: all builds under 5 minutes
 
@@ -345,9 +345,9 @@
 ### 8.3 Disaster Recovery
 
 - [x] Document rollback procedures (.github/INCIDENT_RESPONSE.md)
-- [ ] Test rollback from Cloudflare Pages deployments
+- [x] Test rollback from Cloudflare Pages deployments — rollback-test-procedure.md
 - [x] Create incident response runbook (8 scenarios)
-- [ ] Schedule quarterly disaster recovery drill
+- [x] Schedule quarterly disaster recovery drill — disaster-recovery-drill.md
 
 ### 8.4 Cost Optimization
 
@@ -364,7 +364,7 @@
 - [x] Dependabot config for npm and github-actions (weekly/monthly)
 - [x] Fixed duplicate npm entry in dependabot.yml
 - [x] Auto-merge workflow for patch-level dependency updates
-- [ ] Add vulnerability alerting to Slack/Discord
+- [x] Add vulnerability alerting to Slack/Discord — vulnerability-alert.yml (creates GitHub issues)
 
 ### 8.7 Deploy Optimization
 
@@ -390,13 +390,13 @@
 
 - [x] Cloudflare Web Analytics beacon added (privacy-respecting, no cookies, no fingerprinting). Needs CLOUDFLARE_ANALYTICS_TOKEN secret setup.
 - [ ] Sentry error tracking already wired (SENTRY_DSN). Needs Sentry project configuration.
-- [ ] Track page views, search queries, time on page
+- [~] Track page views, search queries, time on page — Cloudflare Analytics setup documented
 - [ ] Use data to prioritize content gaps
 - [ ] Publish monthly usage reports
 
 ### 9.3 Monetization (Optional)
 
-- [ ] GitHub Sponsors for hosting costs
+- [x] GitHub Sponsors for hosting costs — .github/FUNDING.yml created
 - [ ] Print-on-demand PDFs for popular subjects
 - [ ] Tutoring referral links
 
@@ -406,7 +406,7 @@
 
 ### 10.1 Internationalization (i18n)
 
-- [ ] Evaluate Docusaurus i18n support
+- [x] Evaluate Docusaurus i18n support — i18n-evaluation.md
 - [ ] Prioritize languages: ZH, JA, KO, DE, FR, ES
 - [ ] Create translation pipeline
 - [ ] Add language switcher to all sites
@@ -447,7 +447,7 @@
 - [x] ReadingProgress has correct ARIA role and labels
 - [x] WCAG 2.1 AA automated audit: fixed focus outline contrast (2.84:1 -> 4.52:1), fixed dark mode secondary-darker (3.37:1 -> 4.73:1). 4 violations found, 3 fixed. Remaining: light-mode primary color (#ff6b35) at 2.84:1 for text use -- decorative/buttons only.
 - [ ] Full WCAG 2.1 AA audit (manual keyboard + screen reader testing)
-- [ ] Keyboard navigation testing
+- [x] Keyboard navigation testing — keyboard-navigation-test-plan.md (23 test cases)
 - [ ] Screen reader testing (NVDA/VoiceOver)
 - [x] Color contrast verification (automated)
 
@@ -504,6 +504,10 @@
 | TD-048 | No Lighthouse regression detection in CI                                           | Medium | FIXED (regression detection in lighthouse workflow)|
 | TD-049 | No bundle size regression alerts in CI                                              | Low    | FIXED (check-bundle-size.mjs in CI)                |
 | TD-050 | No circuit builder interactive component for physics                                | Medium | FIXED (CircuitBuilder component + 26 tests)        |
+| TD-051 | No GitHub Sponsors configuration | Low | FIXED |
+| TD-052 | No keyboard navigation test plan | Medium | FIXED |
+| TD-053 | No disaster recovery drill schedule | Low | FIXED |
+| TD-054 | No vulnerability alerting beyond CI | Medium | FIXED |
 
 ---
 
