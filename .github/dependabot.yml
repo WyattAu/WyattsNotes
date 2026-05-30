@@ -27,3 +27,17 @@ updates:
       - 'github-actions'
     commit-message:
       prefix: 'ci'
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    target-branch: 'main'
+    labels:
+      - 'dependencies'
+      - 'security'
+    commit-message:
+      prefix: 'fix(deps)'
+    allow:
+      - dependency-type: 'direct'
+      - dependency-type: 'indirect'
