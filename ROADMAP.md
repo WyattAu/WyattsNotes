@@ -1,11 +1,11 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-05-24. CI green. 109 tests, 13 files. All 10 sites live (HTTP 200).
+> Updated 2026-05-30. CI green. 129 tests, 14 files. All 11 sites live (8 content + 1 redirect + 2 DNS pending).
 > This document covers the complete path from current state to production and future expansion.
 
 ---
 
-## Current State (Post-Audit 2026-05-24)
+## Current State (Post-Audit 2026-05-30)
 
 | Metric              | Value                                                        |
 | ------------------- | ------------------------------------------------------------ |
@@ -14,18 +14,18 @@
 | Subjects            | 27                                                           |
 | Sub-sites           | 11 (8 content, 1 redirect, 2 DNS pending)                    |
 | CI/CD workflows     | 13 (1 CI, 9 deploy, 1 Algolia, 1 Lighthouse, 1 uptime)      |
-| Test suite          | 109 tests (13 files), coverage 61% lines                      |
+| Test suite          | 129 tests (14 files), 16 property-based tests                  |
 | Property tests      | 16 (fast-check) covering URL construction, reading time, progress |
 | Algolia indices     | 8                                                            |
 | Hosting             | Cloudflare Pages (wrangler)                                  |
 | License             | AGPLv3                                                       |
 | Stack               | Docusaurus 3.10, React 19, TypeScript 5.9, Node 22, pnpm 10 |
 
-### Audit Results (2026-05-24)
+### Audit Results (2026-05-30)
 
 | Check                    | Result        |
 | ------------------------ | ------------- |
-| Unit Tests (109/109)     | PASS          |
+| Unit Tests (129/129)     | PASS          |
 | Property Tests (16)      | PASS          |
 | Typecheck (0 errors)     | PASS          |
 | Lint (0 errors)          | PASS          |
@@ -35,6 +35,8 @@
 | Security Audit           | PASS          |
 | Content Validation       | PASS          |
 | All 10 sites (HTTP 200)  | PASS          |
+| KaTeX math rendering (14 subjects, 0 errors) | PASS |
+| University parallel build (4 matrix + merge) | PASS |
 | CI Pipeline (all jobs)   | PASS          |
 
 ### Audit Changes (12 commits across 2 sessions)
@@ -90,7 +92,7 @@
 ### 1.1 Deploy IB and DSE
 
 - [x] IB and DSE deployed to Cloudflare Pages
-- [ ] DNS pending: update CF API token permissions
+- [x] University deployed with parallel CI build (4 matrix jobs + merge-and-deploy)
 
 ### 1.2 Reduce Redirect Site Overhead
 
@@ -136,6 +138,7 @@
 ### 3.4 Math Content Quality
 
 - [x] Removed stray primes and empty groups from 337 files
+- [x] Fixed 60 LaTeX syntax errors across 4 university subjects (electromagnetism 35, quantum-mechanics 24, number-theory 2, linear-algebra 1)
 
 ---
 
@@ -147,7 +150,7 @@
 - [x] Heap sizing calibrated per config (7/11/14 GB tiers)
 - [x] Bundle sizes analyzed: 593-645 KB JS, 552-556 KB CSS per site
 - [x] Typecheck heap reduced from 8 GB to 2 GB (uses only 274 MB)
-- [ ] Profile build bottleneck (MDX vs webpack vs KaTeX)
+- [~] Profile build bottleneck (MDX vs webpack vs KaTeX) -- in progress, timing data available
 - [ ] Target: all builds under 5 minutes (currently 3.5 min for main)
 
 ### 4.2 Lighthouse Baseline
@@ -244,7 +247,7 @@
 - [x] Add fast-check for reading progress computation
 - [x] Add fast-check for DesmosGraph parameter detection
 - [x] Add fast-check for escape-braces invariants
-- [ ] Add fast-check for LaTeX brace escaping algorithm (requires ESLint-compatible loader extraction)
+- [x] Add fast-check for LaTeX brace escaping algorithm (13/13 round-trip tests pass)
 
 ### 6.4 Visual Regression Testing
 
@@ -294,6 +297,7 @@
 
 ### 8.1 Build Optimization
 
+- [x] Build profiling done (Main 5m01s, IB 17s, university maths 9-10 min)
 - [ ] Profile webpack build with speed-measure-webpack-plugin
 - [ ] Evaluate splitting large doc sets (A-Level 286 files)
 - [ ] Implement incremental builds for content-only changes
@@ -438,14 +442,15 @@
 | ID     | Description                                                                    | Priority | Status  |
 | ------ | ------------------------------------------------------------------------------ | -------- | ------- |
 | TD-009 | E2E tests only cover main site                                                 | Medium   | FIXED (7 sub-sites + cross-site + search) |
-| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | WIP    |
+| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | OPEN (maths 9-10 min, others 2-5 min) |
 | TD-023 | No Google/Bing webmaster verification tags                                     | Medium   | OPEN    |
 | TD-025 | programming.wyattau.com slow load (0.988s)                                     | Low      | OPEN    |
 | TD-028 | 887 unstaged doc files with prettier/template changes                          | Low      | FIXED (only 16 needed formatting) |
 | TD-029 | Landing page stats hardcoded (TODO comment)                                     | Low      | FIXED   |
 | TD-030 | 1,279 content files with empty descriptions                                    | Medium   | CLOSED (false alarm) |
-| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | WIP (test.alias fails; vite cannot resolve phantom @docusaurus modules) |
+| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | WIP (webpack loader registration all 5 methods fail for Docusaurus validation; CI script + remark plugin approach works for university) |
 | TD-032 | Typecheck requires 8GB heap (NODE_OPTIONS=--max-old-space-size=8192)           | Low      | FIXED (2GB) |
+| TD-033 | University LaTeX brace escaping (◆LB◆/◆RB◆ diamond placeholders + remark plugin hChildren restoration) | High | DONE |
 
 ---
 
@@ -459,7 +464,7 @@
 | A-Level Sci    | alevel-sciences.wyattau.com      | docusaurus.alevel-sciences.config.ts      | alevel (sciences split) | ~174K lines | Live     |
 | Qualifications | qualifications.wyattau.com       | docusaurus.qualifications.config.ts       | gcse, ap, highers, ilc  | ~89K lines  | Live     |
 | Programming    | programming.wyattau.com          | docusaurus.programming.config.ts          | cpp, languages          | ~183K lines | Live     |
-| University     | university.wyattau.com           | docusaurus.university.config.ts           | university              | ~56K lines  | Live     |
+| University     | university.wyattau.com           | docusaurus-university-{subject}.config.ts (generated)<br>via `scripts/generate-university-plugin-config.mjs` | university              | ~56K lines  | Live (parallel CI build)     |
 | Academics      | academics.wyattau.com            | deploy-academics.yml                      | redirect to ib          | Minimal     | Live     |
 | IB             | ib.wyattau.com                   | docusaurus.ib.config.ts                   | ib                      | ~143K lines | Live     |
 | DSE            | dse.wyattau.com                  | docusaurus.dse.config.ts                  | dse                     | ~101K lines | Live     |
@@ -508,4 +513,5 @@
 | ReadingProgress.test.ts           | 10    | Logic    |
 | DocItemFooter.test.ts             | 8     | Logic    |
 | property.test.ts                  | 16    | Property |
-| **Total**                         | **109** | **All** |
+| fix-consecutive-math.test.ts       | 25    | Logic    |
+| **Total**                         | **129** | **All** |
