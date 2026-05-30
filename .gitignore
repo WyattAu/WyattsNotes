@@ -25,3 +25,4 @@ src/__tests__/__mocks__/
 .tsbuildinfo
 coverage/
 .lighthouseci/
+.reports/
