@@ -1,6 +1,6 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-05-30. CI green. 178 tests, 18 files. All 11 sites live (8 content + 1 redirect + 2 DNS pending).
+> Updated 2026-05-30. CI green. 203 tests, 19 files. All 11 sites live (8 content + 1 redirect + 2 DNS pending).
 > This document covers the complete path from current state to production and future expansion.
 
 ---
@@ -14,7 +14,7 @@
 | Subjects            | 27                                                           |
 | Sub-sites           | 11 (8 content, 1 redirect, 2 DNS pending)                    |
 | CI/CD workflows     | 13 (1 CI, 9 deploy, 1 Algolia, 1 Lighthouse, 1 uptime)      |
-| Test suite          | 178 tests (18 files), 16 property-based tests, 2 re-enabled render tests |
+| Test suite          | 203 tests (19 files), 16 property-based tests, 2 re-enabled render tests |
 | Property tests      | 16 (fast-check) covering URL construction, reading time, progress |
 | Algolia indices     | 8                                                            |
 | Hosting             | Cloudflare Pages (wrangler)                                  |
@@ -25,7 +25,7 @@
 
 | Check                    | Result        |
 | ------------------------ | ------------- |
-| Unit Tests (178/178)     | PASS          |
+| Unit Tests (203/203)     | PASS          |
 | Property Tests (16)      | PASS          |
 | Typecheck (0 errors)     | PASS          |
 | Lint (0 errors)          | PASS          |
@@ -189,8 +189,10 @@
 - [x] DesmosGraph, Geogebra, PhetSimulation implemented
 - [x] Unit tests for all interactive components
 - [ ] Expand Desmos usage to more maths/physics pages
-- [ ] Add interactive periodic table for chemistry
+- [x] Add interactive periodic table for chemistry (118-element PeriodicTable with color-coded categories, tooltips, click-to-expand modal)
 - [x] Add circuit simulator for physics (CircuitBuilder component)
+- [x] feat: periodic table component (full 118-element PeriodicTable with color-coded categories, tooltips, click-to-expand modal)
+- [x] feat: service worker build-ID cache versioning (caches include build timestamp)
 
 ### 5.3 Practice and Assessment (Deferred)
 
@@ -231,7 +233,8 @@
 
 - [ ] Create vitest plugin that provides Docusaurus webpack aliases
 - [x] Re-enabled 2 render tests (DocItemFooter, ReadingProgress) via vitest aliases
-- [x] Target: 110+ tests (178 tests achieved), 80%+ coverage
+- [x] Target: 110+ tests (203 tests achieved), 80%+ coverage
+- [x] PeriodicTable unit tests (16 tests)
 
 ### 6.2 E2E Test Expansion
 
@@ -268,8 +271,8 @@
 | ------------------ | ------------- | ------------------------------------------------ | -------- |
 | Probabilistic ML   | 1.7K          | Only fundamentals, no advanced topics            | Low      |
 | Licensing          | 1.1K          | Missing MIT, Apache, LGPL, MPL, GPL v3           | Low      |
-| Go                 | 4.8K          | No standard library, no concurrency              | Medium   |
-| Kotlin             | 3.6K          | No coroutines, no advanced topics                | Medium   |
+| Go                 | 7.9K          | Standard library and concurrency guides added        | Medium   |
+| Kotlin             | 4.9K          | Coroutines advanced added                             | Medium   |
 | TypeScript         | 6.7K          | No advanced types, no patterns                   | Medium   |
 | Dart               | 18.5K         | Good coverage, missing Flutter testing           | Low      |
 | University Maths   | 18K           | Missing topology, abstract algebra depth         | Medium   |
@@ -292,6 +295,29 @@
 - [x] Fixed 9 empty descriptions in university physics docs
 - [x] Created scripts/generate-descriptions.mjs for future use
 - [x] Add CI gate for description quality on new files
+
+### 7.4 Content Progress
+
+#### Go (21 files / ~7,900+ lines)
+
+- [x] math/sort/log guide
+- [x] architecture guide
+
+#### Kotlin (14 files / ~4,870+ lines)
+
+- [x] coroutines advanced
+
+#### SAT (5 files / ~1,200+ lines)
+
+- [x] intro guide
+- [x] reading and writing guide
+- [x] mathematics guide
+- [x] reading practice problems
+- [x] math practice problems
+
+#### IB History
+
+- [x] History: Rights and Protest (~673 lines)
 
 ---
 
@@ -458,7 +484,7 @@
 | TD-028 | 887 unstaged doc files with prettier/template changes                          | Low      | FIXED (only 16 needed formatting) |
 | TD-029 | Landing page stats hardcoded (TODO comment)                                     | Low      | FIXED   |
 | TD-030 | 1,279 content files with empty descriptions                                    | Medium   | CLOSED (false alarm) |
-| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | DONE (re-enabled via vitest aliases, 178 tests) |
+| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | DONE (re-enabled via vitest aliases, 203 tests) |
 | TD-032 | Typecheck requires 8GB heap (NODE_OPTIONS=--max-old-space-size=8192)           | Low      | FIXED (2GB) |
 | TD-033 | University LaTeX brace escaping (diamond placeholders + remark plugin hChildren restoration) | High | DONE |
 | TD-034 | Cloudflare Web Analytics + CSP header update (script-src + connect-src)              | Medium | DONE (needs CLOUDFLARE_ANALYTICS_TOKEN secret) |
@@ -541,11 +567,12 @@
 | Geogebra.test.ts                  | 8     | Logic    |
 | PhetSimulation.test.ts           | 7     | Logic    |
 | iframeComponent.test.ts           | 9     | Logic    |
-| webpack-loader.test.ts            | 16    | Logic    |
+| webpack-loader.test.ts            | 19    | Logic    |
 | ReadingProgress.test.ts           | 10    | Logic    |
 | DocItemFooter.test.ts             | 8     | Logic    |
-| property.test.ts                  | 16    | Property |
+| property.test.ts                  | 18    | Property |
 | fix-consecutive-math.test.ts       | 25    | Logic    |
 | CircuitBuilder.test.ts             | 26    | Logic    |
-| service-worker.test.ts             | 14    | Logic    |
-| **Total**                         | **178** | **All** |
+| service-worker.test.ts             | 17    | Logic    |
+| PeriodicTable.test.ts              | 16    | Logic    |
+| **Total**                         | **203** | **All** |
