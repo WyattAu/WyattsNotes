@@ -3,3 +3,4 @@ export { Geogebra } from './Geogebra';
 export { PhetSimulation } from './PhetSimulation';
 export { CircuitBuilder } from './CircuitBuilder';
 export { PeriodicTable } from './PeriodicTable';
+export { PracticeProblem } from './PracticeProblem';
