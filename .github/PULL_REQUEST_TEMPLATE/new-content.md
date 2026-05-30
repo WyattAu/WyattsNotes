@@ -18,7 +18,7 @@
 
 ## Checklist
 
-- [ ] Content follows the [style guide](link-to-your-style-guide).
+- [ ] Content follows the [style guide](../../CONTENT_STYLE_GUIDE.md).
 - [ ] Images/GIFs are compressed and placed in `static/img/`.
 - [ ] Linked from the sidebar or parent page.
 - [ ] Previewed locally with `yarn start`/`npm start`.
