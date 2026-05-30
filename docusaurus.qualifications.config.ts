@@ -1,7 +1,7 @@
 // @ts-check
 // Docusaurus config for the Qualifications sub-site.
 // Build: npx docusaurus build --config docusaurus.qualifications.config.ts
-// Contains: GCSE, AP, Scottish Highers, Irish LC
+// Contains: GCSE, AP, CBSE, Scottish Highers, Irish LC
 // Total: ~75K lines across 1 docs plugin.
 
 import type * as Preset from '@docusaurus/preset-classic';
@@ -20,7 +20,7 @@ import {
 const config = {
   ...sharedConfig({
     title: "Wyatt's Notes — Qualifications",
-    tagline: 'GCSE, AP, Scottish Highers, Irish Leaving Certificate',
+    tagline: 'GCSE, AP, CBSE, Scottish Highers, Irish Leaving Certificate',
     url: 'https://qualifications.wyattau.com',
     algoliaIndexName: 'wyattsnotes_qualifications',
     socialCard: '/img/social-cards/qualifications.png',
@@ -62,6 +62,7 @@ const config = {
         { to: '/docs/qualifications/ap/intro', label: 'AP', position: 'left' },
         { to: '/docs/qualifications/highers/intro', label: 'Highers', position: 'left' },
         { to: '/docs/qualifications/ilc/intro', label: 'Irish LC', position: 'left' },
+        { to: '/docs/qualifications/cbse/intro', label: 'CBSE', position: 'left' },
         { to: '/docs/qualifications/sat/intro', label: 'SAT', position: 'left' },
         {
           href: 'https://alevel.wyattau.com',
@@ -113,6 +114,7 @@ const config = {
               to: '/docs/qualifications/highers/intro',
             },
             { label: 'Irish LC', to: '/docs/qualifications/ilc/intro' },
+            { label: 'CBSE', to: '/docs/qualifications/cbse/intro' },
             { label: 'SAT', to: '/docs/qualifications/sat/intro' },
             {
               label: 'IB',
