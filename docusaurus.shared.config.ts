@@ -290,6 +290,7 @@ export const sharedHeadTags: Config['headTags'] = [
   },
   {
     tagName: 'noscript',
+    attributes: {},
     innerHTML: [
       '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">',
       '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">',
