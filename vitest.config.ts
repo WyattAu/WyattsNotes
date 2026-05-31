@@ -51,10 +51,10 @@ export default defineConfig({
         'src/**/__mocks__/**',
         'src/__tests__/**',
         'src/plugins/**/webpack-loader.ts',
-        'src/theme/**',  // Docusaurus theme wrappers cannot be meaningfully unit-tested
-        'src/pages/**',  // Page components require full Docusaurus browser env
-        'src/global.d.ts',  // Ambient declarations, no runtime code
-        'src/**/index.ts',  // Barrel exports only
+        'src/theme/**', // Docusaurus theme wrappers cannot be meaningfully unit-tested
+        'src/pages/**', // Page components require full Docusaurus browser env
+        'src/global.d.ts', // Ambient declarations, no runtime code
+        'src/**/index.ts', // Barrel exports only
       ],
       thresholds: {
         lines: 50,
