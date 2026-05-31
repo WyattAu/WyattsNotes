@@ -113,24 +113,42 @@ const THEME_SYNC_SCRIPT = `
 
 export default function Root({ children }: { children: React.ReactNode }): React.ReactElement {
   useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const dsn = (window as any).__SENTRY_DSN__;
 
-    if (typeof window !== 'undefined' && window.Sentry && dsn) {
-      window.Sentry.init({
-        dsn,
-        environment: process.env.NODE_ENV || 'production',
-        sampleRate: 0.1,
-        tracesSampleRate: 0.05,
-        replaysSessionSampleRate: 0.01,
-        integrations: [
-          window.Sentry.browserTracingIntegration(),
-          window.Sentry.replayIntegration({
-            maskAllText: false,
-            blockAllMedia: false,
-          }),
-        ],
-      });
+    if (typeof window !== 'undefined' && !window.Sentry && dsn) {
+      const script = document.createElement('script');
+
+      script.src = 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js';
+      script.crossOrigin = 'anonymous';
+
+      script.onload = () => {
+        const init = () => {
+          if (window.Sentry) {
+            window.Sentry.init({
+              dsn,
+              environment: process.env.NODE_ENV || 'production',
+              sampleRate: 0.1,
+              tracesSampleRate: 0.05,
+              replaysSessionSampleRate: 0.01,
+              integrations: [
+                window.Sentry.browserTracingIntegration(),
+                window.Sentry.replayIntegration({
+                  maskAllText: false,
+                  blockAllMedia: false,
+                }),
+              ],
+            });
+          }
+        };
+
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(init);
+        } else {
+          setTimeout(init, 200);
+        }
+      };
+
+      document.head.appendChild(script);
     }
   }, []);
 

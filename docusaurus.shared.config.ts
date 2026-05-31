@@ -204,14 +204,6 @@ export const sharedHeadTags: Config['headTags'] = [
     tagName: 'link',
     attributes: { rel: 'preconnect', href: 'https://phet.colorado.edu' },
   },
-  {
-    tagName: 'link',
-    attributes: { rel: 'dns-prefetch', href: 'https://browser.sentry-cdn.com' },
-  },
-  {
-    tagName: 'link',
-    attributes: { rel: 'preconnect', href: 'https://browser.sentry-cdn.com' },
-  },
   // Cloudflare Web Analytics (privacy-respecting, no cookies)
   {
     tagName: 'link',
@@ -220,15 +212,6 @@ export const sharedHeadTags: Config['headTags'] = [
   {
     tagName: 'link',
     attributes: { rel: 'preconnect', href: 'https://static.cloudflareinsights.com' },
-  },
-  {
-    tagName: 'script',
-    attributes: {
-      src: 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js',
-      integrity: 'sha384-p/qUnBxOD4NW6dE7MXc4bbBkfBXxGhsoxBKcy/CTyCbvKXdhMSp/f8lwhX63trxX',
-      crossorigin: 'anonymous',
-      defer: true,
-    },
   },
   {
     tagName: 'script',

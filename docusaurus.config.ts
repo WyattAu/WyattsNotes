@@ -33,6 +33,8 @@ const config = {
   projectName: 'WyattsNotes',
   trailingSlash: false,
 
+  faster: true,
+
   clientModules: sharedClientModules,
   onBrokenLinks: 'throw',
   ...sharedCompilationConfig,

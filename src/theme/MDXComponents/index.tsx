@@ -1,24 +1,35 @@
-/**
- * Custom MDX component overrides.
- *
- * This swizzled file imports all built-in MDX components from the original
- * theme via @theme-original/MDXComponents and adds custom interactive
- * components (DesmosGraph, Geogebra, PhetSimulation) for use in MDX content.
- *
- * The @theme-original alias is created by Docusaurus webpack when a component
- * is swizzled -- it points to the version provided by the theme package.
- * See: @docusaurus/core/lib/webpack/aliases/index.js -> createAliasesForTheme
- */
 import OriginalMDXComponents from '@theme-original/MDXComponents';
-import { DesmosGraph } from '../../components/interactive/DesmosGraph';
-import { Geogebra } from '../../components/interactive/Geogebra';
-import { PhetSimulation } from '../../components/interactive/PhetSimulation';
+import React, { Suspense } from 'react';
+
+const LazyDesmosGraph = React.lazy(() =>
+  import('../../components/interactive/DesmosGraph').then((m) => ({ default: m.DesmosGraph })),
+);
+const LazyGeogebra = React.lazy(() =>
+  import('../../components/interactive/Geogebra').then((m) => ({ default: m.Geogebra })),
+);
+const LazyPhetSimulation = React.lazy(() =>
+  import('../../components/interactive/PhetSimulation').then((m) => ({
+    default: m.PhetSimulation,
+  })),
+);
 
 const MDXComponents = {
   ...OriginalMDXComponents,
-  DesmosGraph,
-  Geogebra,
-  PhetSimulation,
+  DesmosGraph: (props: React.ComponentProps<typeof LazyDesmosGraph>) => (
+    <Suspense fallback={null}>
+      <LazyDesmosGraph {...props} />
+    </Suspense>
+  ),
+  Geogebra: (props: React.ComponentProps<typeof LazyGeogebra>) => (
+    <Suspense fallback={null}>
+      <LazyGeogebra {...props} />
+    </Suspense>
+  ),
+  PhetSimulation: (props: React.ComponentProps<typeof LazyPhetSimulation>) => (
+    <Suspense fallback={null}>
+      <LazyPhetSimulation {...props} />
+    </Suspense>
+  ),
 };
 
 export default MDXComponents;
