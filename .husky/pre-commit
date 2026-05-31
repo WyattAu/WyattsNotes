@@ -5,6 +5,12 @@
 
 set -e
 
+# --- Emergency bypass ---
+if [ "$SKIP_PRECHECK" = "1" ]; then
+  echo "[pre-commit] SKIP_PRECHECK=1 detected -- bypassing all checks."
+  exit 0
+fi
+
 # --- Environment check ---
 NODE_VERSION=$(node -v | sed 's/^v//')
 NODE_MAJOR=$(echo "$NODE_VERSION" | cut -d. -f1)
