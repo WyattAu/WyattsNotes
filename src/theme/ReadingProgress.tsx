@@ -40,7 +40,7 @@ export default function ReadingProgress(): React.ReactElement {
         left: 0,
         width: `${progress}%`,
         height: '3px',
-        background: 'linear-gradient(90deg, #FF6B35, #ff9a5c)',
+        background: 'var(--ifm-color-primary)',
         zIndex: 9999,
         transition: 'width 100ms linear',
         pointerEvents: 'none',

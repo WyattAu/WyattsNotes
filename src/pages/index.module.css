@@ -451,3 +451,25 @@
     gap: 0.15rem;
   }
 }
+
+@media (max-width: 320px) {
+  .hero {
+    padding: 2.5rem 0.75rem 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2rem, 8vw, 4.5rem);
+  }
+
+  .main {
+    padding: 1.5rem 0.75rem 2rem;
+  }
+
+  .stats {
+    gap: 1rem;
+  }
+
+  .statNumber {
+    font-size: 1.25rem;
+  }
+}

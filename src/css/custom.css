@@ -213,12 +213,7 @@ a:hover {
 .docs-doc-page .markdown {
   background-color: var(--ifm-background-color);
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-[data-theme='dark'] .docs-doc-page .markdown {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--ifm-color-emphasis-200);
 }
 
 .docs-doc-page .markdown table {

@@ -139,11 +139,9 @@ const SearchResultCard = React.memo(function SearchResultCard({
       className={styles.resultCard}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = color;
-        e.currentTarget.style.boxShadow = `0 2px 12px ${color}22`;
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.borderColor = 'var(--ifm-color-emphasis-200)';
-        e.currentTarget.style.boxShadow = 'none';
       }}
     >
       <div className={styles.cardHeader}>
