@@ -1,0 +1,99 @@
+---
+title: Complex Numbers Practice
+date: 2026-05-31
+description:
+  'Interactive A-Level practice problems for complex numbers covering Argand diagrams,
+  modulus-argument form, De Moivre\'s theorem, and roots of equations.'
+tags:
+  - Maths
+  - ALevel
+categories:
+  - Maths
+slug: practice-complex-numbers
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## A-Level Complex Numbers — Interactive Practice
+
+8 auto-graded practice problems covering Argand diagrams, modulus-argument form, De Moivre's theorem, and roots of equations.
+
+---
+
+### Argand Diagrams
+
+<PracticeProblem
+  question="On an Argand diagram, the complex number z = 3 + 4i is plotted. What is its distance from the origin?"
+  options={['5', '7', '√7', '25']}
+  correctAnswer={0}
+  explanation="The distance from the origin is the modulus |z| = √(3² + 4²) = √(9 + 16) = √25 = 5."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="If z = 2 − i, what is the complex number represented by the point obtained by rotating z by 90° anticlockwise about the origin?"
+  options={['−2 − i', '1 + 2i', '−1 + 2i', '−2 + i']}
+  correctAnswer={1}
+  explanation="Rotating by 90° anticlockwise is equivalent to multiplying by i. z × i = (2 − i)(i) = 2i − i² = 2i + 1 = 1 + 2i."
+  difficulty="medium"
+/>
+
+---
+
+### Modulus-Argument Form
+
+<PracticeProblem
+  question="Express z = 1 + √3 i in modulus-argument (r, θ) form."
+  options={['(2, π/3)', '(2, π/6)', '(√3, π/3)', '(2, 2π/3)']}
+  correctAnswer={0}
+  explanation="r = √(1² + (√3)²) = √(1 + 3) = 2. θ = arctan(√3/1) = π/3 (in the first quadrant). So z = 2(cos π/3 + i sin π/3)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is |z₁z₂| if |z₁| = 3 and |z₂| = 5?"
+  options={['8', '15', '2', '√34']}
+  correctAnswer={1}
+  explanation="The modulus of a product equals the product of the moduli: |z₁z₂| = |z₁| · |z₂| = 3 × 5 = 15."
+  difficulty="easy"
+/>
+
+---
+
+### De Moivre's Theorem
+
+<PracticeProblem
+  question="Using De Moivre's theorem, find (1 + i)⁶."
+  options={['−8i', '8i', '8', '−8']}
+  correctAnswer={0}
+  explanation="r = √2, θ = π/4. By De Moivre: (√2 cis(π/4))⁶ = (√2)⁶ cis(6π/4) = 8 cis(3π/2) = 8(cos(3π/2) + i sin(3π/2)) = 8(0 + i(−1)) = −8i."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Express cos(3θ) in terms of cos(θ) using De Moivre's theorem."
+  options={['4cos³θ − 3cosθ', '3cosθ − 4cos³θ', 'cos³θ − 3cosθ', '3cos³θ − cosθ']}
+  correctAnswer={0}
+  explanation="By De Moivre: cos(3θ) + i·sin(3θ) = (cosθ + i·sinθ)³. Expanding real part: cos³θ − 3cosθ·sin²θ = cos³θ − 3cosθ(1 − cos²θ) = 4cos³θ − 3cosθ."
+  difficulty="hard"
+/>
+
+---
+
+### Roots of Equations
+
+<PracticeProblem
+  question="Given that 2 + 3i is a root of a polynomial with real coefficients, what is another root?"
+  options={['2 − 3i', '−2 + 3i', '−2 − 3i', '3 + 2i']}
+  correctAnswer={0}
+  explanation="Complex roots of real-coefficient polynomials occur in conjugate pairs. If 2 + 3i is a root, then its conjugate 2 − 3i is also a root."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Find the modulus and argument of the 5th roots of unity on an Argand diagram."
+  options={['Modulus 1, arguments at 2πk/5 for k = 0, 1, 2, 3, 4', 'Modulus 5, arguments at πk/5 for k = 0, 1, 2, 3, 4', 'Modulus 1, arguments at πk/5 for k = 0, 1, 2, 3, 4', 'Modulus √5, arguments at 2πk/5 for k = 0, 1, 2, 3, 4']}
+  correctAnswer={0}
+  explanation="The 5th roots of 1 are solutions to z⁵ = 1. In polar form: 1 = cis(0), so z = cis(2πk/5) for k = 0, 1, 2, 3, 4. Each has modulus 1 and is equally spaced at 72° intervals on the unit circle."
+  difficulty="medium"
+/>
