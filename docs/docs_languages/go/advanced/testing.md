@@ -1,23 +1,22 @@
 ---
 title: Testing
 description:
-  'Testing — go test Basics; Test Helpers; Table-Driven Tests; Test Main including key definitions,
-  derivations, and problem-solving techniques.'
-slug: testing
-date: 2026-04-18
+  'Go Testing — go test fundamentals, test helpers, table-driven tests, mocking, benchmarking,
+  fuzzing, integration testing, coverage, and common pitfalls.'
+slug: go/testing
+date: 2026-05-31
 tags:
   - Go
 categories:
   - Go
 ---
 
-## go test Basics
+## Testing Fundamentals
 
 Go has a built-in testing framework. Test files are named `*_test.go` and the build system excludes
-Them from production binaries. Test functions have the signature `func TestXxx(t *testing.T)`.
+them from production binaries. Test functions have the signature `func TestXxx(t *testing.T)`.
 
 ```go
-// math_test.go
 package math
 
 import "testing"
@@ -33,17 +32,41 @@ func TestAdd(t *testing.T) {
 Run tests:
 
 ```bash
-go test ./...          # run all tests in all packages
+go test ./...          # all tests in all packages
 go test -v ./math      # verbose output
-go test -run TestAdd   # run specific test by name (regex)
+go test -run TestAdd   # specific test by name (regex)
 go test -count=1 ./... # disable test caching
 go test -short ./...   # skip long-running tests
 ```
 
-## Test Helpers
+### Subtests
 
-`t.Helper()` marks a function as a test helper. Failures report the calling line, not the helper
-Line:
+`t.Run` creates named subtests within a test function. Each subtest gets its own `t` and can be run
+independently with `-run`:
+
+```go
+func TestStack(t *testing.T) {
+    t.Run("empty stack", func(t *testing.T) {
+        s := NewStack()
+        if !s.IsEmpty() {
+            t.Error("new stack should be empty")
+        }
+    })
+
+    t.Run("push and pop", func(t *testing.T) {
+        s := NewStack()
+        s.Push(1)
+        got := s.Pop()
+        if got != 1 {
+            t.Errorf("Pop() = %d; want 1", got)
+        }
+    })
+}
+```
+
+### Test Helpers
+
+`t.Helper()` marks a function as a test helper. Failures report the calling line, not the helper:
 
 ```go
 func assertEqual[T comparable](t *testing.T, got, want T) {
@@ -52,14 +75,9 @@ func assertEqual[T comparable](t *testing.T, got, want T) {
         t.Errorf("got %v, want %v", got, want)
     }
 }
-
-func TestAdd(t *testing.T) {
-    assertEqual(t, Add(2, 3), 5)
-    assertEqual(t, Add(-1, 1), 0)
-}
 ```
 
-## Table-Driven Tests
+### Table-Driven Tests
 
 The idiomatic Go testing pattern. Define a slice of test cases and iterate:
 
@@ -89,44 +107,97 @@ func TestIsPalindrome(t *testing.T) {
 }
 ```
 
-`t.Run` creates a subtest. Each subtest has its own `t` and can be run independently:
+## Assertions and Errors
 
-```bash
-go test -run TestIsPalindrome/"not_palindrome"
-```
+### t.Error vs t.Fatal
 
-## Test Main
+- `t.Error` / `t.Errorf`: logs the failure and continues running the test.
+- `t.Fatal` / `t.Fatalf`: logs the failure and **stops** the current test immediately.
 
-Use `TestMain` for setup and teardown that runs once before all tests:
+Use `Fatal` when subsequent code would panic (e.g., a nil pointer). Use `Error` to collect all
+failures in a single run.
 
-```go
-func TestMain(m *testing.M) {
-    setup()
-    code := m.Run()
-    teardown()
-    os.Exit(code)
-}
-```
-
-## Skipping Tests
+### Custom Error Types
 
 ```go
-func TestIntegration(t *testing.T) {
-    if testing.Short() {
-        t.Skip("skipping integration test in short mode")
-    }
-    // ...
+type ValidationError struct {
+    Field   string
+    Message string
 }
 
-func TestPlatformSpecific(t *testing.T) {
-    if runtime.GOOS != "linux" {
-        t.Skip("skipping on non-linux platform")
-    }
-    // ...
+func (e *ValidationError) Error() string {
+    return fmt.Sprintf("validation failed on %q: %s", e.Field, e.Message)
 }
 ```
 
-## Benchmarks
+Test with `errors.As`:
+
+```go
+func TestValidate(t *testing.T) {
+    _, err := Validate(User{})
+    var ve *ValidationError
+    if !errors.As(err, &ve) {
+        t.Fatalf("expected ValidationError, got %T", err)
+    }
+    if ve.Field != "Name" {
+        t.Errorf("Field = %q; want %q", ve.Field, "Name")
+    }
+}
+```
+
+## Mocking and Interfaces
+
+### Interface-Based Testing
+
+Design code around interfaces to enable test doubles:
+
+```go
+type Repository interface {
+    GetByID(ctx context.Context, id string) (*User, error)
+    Save(ctx context.Context, u *User) error
+}
+```
+
+### Manual Mocks
+
+The simplest approach — implement the interface inline:
+
+```go
+type MockStore struct {
+    GetFunc func(ctx context.Context, id string) (*User, error)
+    SaveFunc func(ctx context.Context, u *User) error
+}
+
+func (m *MockStore) GetByID(ctx context.Context, id string) (*User, error) {
+    return m.GetFunc(ctx, id)
+}
+
+func (m *MockStore) Save(ctx context.Context, u *User) error {
+    return m.SaveFunc(ctx, u)
+}
+```
+
+### gomock (Code Generation)
+
+```go
+ctrl := gomock.NewController(t)
+defer ctrl.Finish()
+
+mockRepo := mock.NewMockRepository(ctrl)
+mockRepo.EXPECT().GetByID(gomock.Any(), "123").Return(&User{Name: "Alice"}, nil)
+```
+
+Use `go.uber.org/mock` (the actively maintained successor to `gomock`).
+
+### testify/mock
+
+```go
+mockRepo := new(MockRepository)
+mockRepo.On("GetByID", mock.Anything, "123").Return(&User{Name: "Alice"}, nil)
+mockRepo.AssertExpectations(t)
+```
+
+## Benchmarking
 
 Benchmark functions have the signature `func BenchmarkXxx(b *testing.B)`:
 
@@ -138,8 +209,6 @@ func BenchmarkAdd(b *testing.B) {
 }
 ```
 
-Run benchmarks:
-
 ```bash
 go test -bench=. -benchmem
 ```
@@ -150,9 +219,7 @@ Output:
 BenchmarkAdd-8    1000000000    0.25 ns/op    0 B/op    0 allocs/op
 ```
 
-`-benchmem` reports memory allocations. `-bench=. ` runs all benchmarks.
-
-### BenchmarkTimerControls
+### Timer Controls
 
 ```go
 func BenchmarkExpensiveSetup(b *testing.B) {
@@ -182,8 +249,8 @@ func BenchmarkParallel(b *testing.B) {
 
 ## Fuzzing
 
-Go 1.18+ includes built-in fuzzing support. Fuzz tests find inputs that trigger panics, assertion
-Failures, or other violations:
+Go 1.18+ includes built-in fuzzing. Fuzz tests find inputs that trigger panics, assertion failures, or
+other violations:
 
 ```go
 func FuzzReverse(f *testing.F) {
@@ -200,30 +267,79 @@ func FuzzReverse(f *testing.F) {
 }
 ```
 
-Run fuzzing:
-
 ```bash
 go test -fuzz=FuzzReverse -fuzztime=30s
 ```
 
-When a crash is found, the failing input is saved to `testdata/fuzz/FuzzReverse/` and will be
-Replayed on subsequent test runs.
+When a crash is found, the failing input is saved to `testdata/fuzz/FuzzReverse/` and will be replayed
+on subsequent test runs. The corpus grows over time, providing better coverage.
 
-## Test Coverage
+Supported fuzz types: `string`, `[]byte`, `int`, `int8`, `int16`, `int32`, `int64`, `uint`, `float32`,
+`float64`, `bool`.
 
-Generate coverage reports:
+## Integration Testing
 
-```bash
-# Summary
-go test -cover ./...
+### TestMain
 
-# Profile output
-go test -coverprofile=coverage.out ./...
-go tool cover -func=coverage.out    # per-function summary
-go tool cover -html=coverage.out     # HTML report in browser
+Use `TestMain` for one-time setup and teardown:
+
+```go
+func TestMain(m *testing.M) {
+    db := setupTestDB()
+    defer db.Close()
+    code := m.Run()
+    os.Exit(code)
+}
 ```
 
-Coverage threshold enforcement in CI:
+### HTTP Handler Testing
+
+```go
+func TestHealthHandler(t *testing.T) {
+    req := httptest.NewRequest("GET", "/health", nil)
+    w := httptest.NewRecorder()
+
+    HealthHandler(w, req)
+
+    if w.Code != http.StatusOK {
+        t.Errorf("status = %d; want %d", w.Code, http.StatusOK)
+    }
+}
+```
+
+### Test Containers
+
+For database integration tests using `testcontainers-go`:
+
+```go
+func TestWithDatabase(t *testing.T) {
+    ctx := context.Background()
+    container, err := postgres.RunContainer(ctx,
+        testcontainer.WithImage("postgres:16"),
+    )
+    if err != nil {
+        t.Fatal(err)
+    }
+    defer container.Terminate(ctx)
+
+    connStr, _ := container.ConnectionString(ctx)
+    db, _ := sql.Open("postgres", connStr)
+    defer db.Close()
+
+    // run tests against db
+}
+```
+
+## Coverage
+
+```bash
+go test -cover ./...                       # summary
+go test -coverprofile=coverage.out ./...   # generate profile
+go tool cover -func=coverage.out           # per-function summary
+go tool cover -html=coverage.out            # HTML report in browser
+```
+
+### CI Coverage Enforcement
 
 ```bash
 go test -coverprofile=coverage.out ./...
@@ -234,85 +350,37 @@ if [ "$coverage" -lt 80 ]; then
 fi
 ```
 
-## Examples
-
-Test examples double as documentation. If the output comment matches the actual output, `go test`
-Verifies it:
-
-```go
-func ExampleAdd() {
-    fmt.Println(Add(2, 3))
-    // Output: 5
-}
-
-func ExampleIsPalindrome() {
-    fmt.Println(IsPalindrome("racecar"))
-    // Output: true
-}
-```
-
-Run with `go test -run Example`.
-
-## Mocking
-
-Go does not have built-in mocking. The standard approach is to define interfaces and implement test
-Doubles:
-
-```go
-type Store interface {
-    Get(key string) (string, error)
-    Put(key, value string) error
-}
-
-type MockStore struct {
-    GetFunc func(key string) (string, error)
-    PutFunc func(key, value string) error
-}
-
-func (m *MockStore) Get(key string) (string, error) {
-    return m.GetFunc(key)
-}
-
-func (m *MockStore) Put(key, value string) error {
-    return m.PutFunc(key, value)
-}
-```
-
-Popular mocking libraries: `gomock` (code generation), `testify/mock` (manual mocks),
-`go.uber.org/mock` (successor to gomock).
-
 ## Common Pitfalls
 
-1. **Testing implementation details.** Test behavior, not internal mechanics. If you find yourself
-   reaching for `reflect` in tests to inspect unexported fields, reconsider the design.
+1. **Testing implementation details.** Test behaviour, not internals. If you use `reflect` to inspect
+   unexported fields in tests, reconsider the design.
 
-2. **Not using table-driven tests.** Copy-pasting test functions with different inputs creates
-   maintenance burden. Use table-driven tests for any function with multiple input/output cases.
+2. **Not using table-driven tests.** Copy-pasting test functions creates maintenance burden. Use
+   table-driven tests for any function with multiple input/output cases.
 
-3. **Flaky tests due to time or concurrency.** Use `testing.Short()` to skip slow tests, and use
-   deterministic test doubles instead of real time/network in unit tests.
+3. **Flaky tests from time or concurrency.** Use `testing.Short()` to skip slow tests. Use
+   deterministic test doubles instead of real time or network in unit tests.
 
-4. **Ignoring benchmark results.** Always run benchmarks with `-benchmem` to catch unexpected
-   allocations. A single allocation in a hot path can dominate performance.
+4. **Ignoring benchmark allocations.** Always run benchmarks with `-benchmem`. A single allocation in a
+   hot path can dominate performance.
 
-5. **Low coverage on error paths.** Test both the happy path and error paths. Use
-   `go test -coverprofile` to identify uncovered code.
+5. **Low coverage on error paths.** Test both happy path and error paths. Use `go test -coverprofile`
+   to identify uncovered code.
 
-6. **Modifying global state in tests.** Tests that modify package-level variables or global state
-   can interfere with each other. Use `t.Parallel()` and isolate state per test.
+6. **Modifying global state in tests.** Tests that modify package-level variables can interfere with
+   each other. Use `t.Parallel()` where possible and isolate state per test.
+
+7. **Over-mocking.** Over-reliance on mocks produces tests that pass but code that fails in production.
+   Prefer thin wrappers around real dependencies and integration tests for critical paths.
 
 ## Summary
 
-This topic covers the core concepts of testing, including underlying theory, practical
-implementation, and key applications.
-
-**Key concepts include:**
-
-- core concepts and terminology
-- algorithms and computational thinking
-- practical implementation
-- security and ethical considerations
-- applications in the real world
-
-Understanding these concepts thoroughly is essential for both examinations and practical
-programming, and requires both theoretical knowledge and hands-on practice.
+- `go test ./...` runs all tests; `*_test.go` files are excluded from production builds.
+- Table-driven tests with `t.Run` subtests are the idiomatic Go pattern.
+- `t.Helper()` marks helper functions for proper failure line reporting.
+- `t.Error` continues the test; `t.Fatal` stops it immediately.
+- Interface-based design enables manual mocks, `go.uber.org/mock`, and `testify/mock`.
+- `go test -bench=.` with `-benchmem` reveals allocation hotspots.
+- Built-in fuzzing (`go test -fuzz`) finds edge cases with coverage-guided input generation.
+- `httptest` enables handler tests without starting a real server.
+- `go test -coverprofile` generates profiles for HTML reports and CI enforcement.
