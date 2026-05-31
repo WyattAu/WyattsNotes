@@ -215,7 +215,7 @@ export const sharedHeadTags: Config['headTags'] = [
   },
   {
     tagName: 'script',
-    attributes: { defer: true },
+    attributes: { defer: 'defer' },
     innerHTML: `window.__SENTRY_DSN__=${JSON.stringify(process.env.SENTRY_DSN || '')};`,
   },
   // Cloudflare Web Analytics beacon (privacy-respecting, no cookies, no fingerprinting)
@@ -234,7 +234,7 @@ export const sharedHeadTags: Config['headTags'] = [
   // Build ID for service worker cache versioning
   {
     tagName: 'script' as const,
-    attributes: { defer: true },
+    attributes: { defer: 'defer' },
     innerHTML: `window.__BUILD_ID__=${JSON.stringify(Date.now())};`,
   },
   {
