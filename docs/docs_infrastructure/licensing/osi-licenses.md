@@ -1,5 +1,5 @@
 ---
-title: open source licenses
+title: "Open Source Licenses"
 slug: licensing/osi-licenses
 date: 2026-05-30
 tags:
