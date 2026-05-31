@@ -73,7 +73,10 @@ function applySM2(state: CardState, rating: Rating, now: number): CardState {
     } else {
       next.interval = Math.round(state.interval * next.easeFactor);
     }
-    next.easeFactor = Math.max(MIN_EASE, next.easeFactor + (0.1 - (5 - 3) * (0.08 + (5 - 3) * 0.02)));
+    next.easeFactor = Math.max(
+      MIN_EASE,
+      next.easeFactor + (0.1 - (5 - 3) * (0.08 + (5 - 3) * 0.02)),
+    );
     next.repetitions += 1;
   } else {
     if (state.repetitions === 0) {
@@ -83,18 +86,26 @@ function applySM2(state: CardState, rating: Rating, now: number): CardState {
     } else {
       next.interval = Math.max(1, Math.round(state.interval * 1.5));
     }
-    next.easeFactor = Math.max(MIN_EASE, next.easeFactor + (0.1 - (5 - 4) * (0.08 + (5 - 4) * 0.02)));
+    next.easeFactor = Math.max(
+      MIN_EASE,
+      next.easeFactor + (0.1 - (5 - 4) * (0.08 + (5 - 4) * 0.02)),
+    );
     next.repetitions += 1;
   }
 
   next.nextReview = now + next.interval * 60 * 1000;
+
   return next;
 }
 
 function loadDeck(deckId: string): DeckData | null {
   try {
     const raw = localStorage.getItem(STORAGE_PREFIX + deckId);
-    if (!raw) return null;
+
+    if (!raw) {
+      return null;
+    }
+
     return JSON.parse(raw) as DeckData;
   } catch {
     return null;
@@ -104,7 +115,9 @@ function loadDeck(deckId: string): DeckData | null {
 function saveDeck(deckId: string, data: DeckData): void {
   try {
     localStorage.setItem(STORAGE_PREFIX + deckId, JSON.stringify(data));
-  } catch { /* quota exceeded — silently fail */ }
+  } catch {
+    /* quota exceeded — silently fail */
+  }
 }
 
 function isDue(state: CardState, now: number): boolean {
@@ -112,19 +125,32 @@ function isDue(state: CardState, now: number): boolean {
 }
 
 function getMasteryLevel(state: CardState): 'new' | 'learning' | 'review' | 'mastered' {
-  if (state.repetitions === 0) return 'new';
-  if (state.interval < 6) return 'learning';
-  if (state.interval < 21) return 'review';
+  if (state.repetitions === 0) {
+    return 'new';
+  }
+  if (state.interval < 6) {
+    return 'learning';
+  }
+  if (state.interval < 21) {
+    return 'review';
+  }
+
   return 'mastered';
 }
 
 function calculateStreak(data: DeckData): number {
-  if (!data.lastStudyDate) return 0;
+  if (!data.lastStudyDate) {
+    return 0;
+  }
   const streak = data.streak ?? 0;
   const lastDate = new Date(data.lastStudyDate).toDateString();
   const today = new Date().toDateString();
   const yesterday = new Date(Date.now() - 86400000).toDateString();
-  if (lastDate === today || lastDate === yesterday) return streak;
+
+  if (lastDate === today || lastDate === yesterday) {
+    return streak;
+  }
+
   return 0;
 }
 
@@ -149,11 +175,11 @@ const RATING_CONFIG: { key: Rating; label: string; color: string; shortcut: stri
   { key: 4, label: 'Easy', color: '#3498db', shortcut: '4' },
 ];
 
-function RatingButton({ config, onClick, disabled }: {
-  config: typeof RATING_CONFIG[number];
+const RatingButton: React.FC<{
+  config: (typeof RATING_CONFIG)[number];
   onClick: (rating: Rating) => void;
   disabled: boolean;
-}) {
+}> = ({ config, onClick, disabled }) => {
   return (
     <button
       type="button"
@@ -180,7 +206,7 @@ function RatingButton({ config, onClick, disabled }: {
       </span>
     </button>
   );
-}
+};
 
 export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDeckProps) {
   const [deckData, setDeckData] = useState<DeckData | null>(() => loadDeck(deckId));
@@ -195,9 +221,11 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const cardStates = useMemo(() => {
     const states: Record<string, CardState> = {};
+
     for (const card of cards) {
       states[card.id] = deckData?.cardStates[card.id] ?? createDefaultState();
     }
+
     return states;
   }, [cards, deckData]);
 
@@ -207,9 +235,11 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const masteryBreakdown = useMemo(() => {
     const counts = { new: 0, learning: 0, review: 0, mastered: 0 };
+
     for (const card of cards) {
       counts[getMasteryLevel(cardStates[card.id])]++;
     }
+
     return counts;
   }, [cards, cardStates]);
 
@@ -217,8 +247,11 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
   const masteryPercent = cards.length > 0 ? Math.round((masteredCount / cards.length) * 100) : 0;
 
   const avgEase = useMemo(() => {
-    if (cards.length === 0) return DEFAULT_EASE;
+    if (cards.length === 0) {
+      return DEFAULT_EASE;
+    }
     const sum = cards.reduce((acc, c) => acc + cardStates[c.id].easeFactor, 0);
+
     return sum / cards.length;
   }, [cards, cardStates]);
 
@@ -238,7 +271,10 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const startReview = useCallback(() => {
     const due = cards.filter((c) => isDue(cardStates[c.id], Date.now()));
-    if (due.length === 0) return;
+
+    if (due.length === 0) {
+      return;
+    }
     setDueQueue(due.map((c) => c.id));
     setCurrentIndex(0);
     setFlipped(false);
@@ -248,7 +284,9 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const handleRate = useCallback(
     (rating: Rating) => {
-      if (currentIndex >= dueQueue.length) return;
+      if (currentIndex >= dueQueue.length) {
+        return;
+      }
       const cardId = dueQueue[currentIndex];
       const prevState = cardStates[cardId] ?? createDefaultState();
       const newState = applySM2(prevState, rating, Date.now());
@@ -256,7 +294,9 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
       const entry: ReviewEntry = { cardId, rating, timestamp: Date.now() };
       const lastStudyDate = Date.now();
       const prevStreak = deckData ? calculateStreak(deckData) : 0;
-      const lastDate = deckData?.lastStudyDate ? new Date(deckData.lastStudyDate).toDateString() : '';
+      const lastDate = deckData?.lastStudyDate
+        ? new Date(deckData.lastStudyDate).toDateString()
+        : '';
       const today = new Date().toDateString();
       const newStreak = lastDate === today ? prevStreak : prevStreak + 1;
 
@@ -266,6 +306,7 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
         lastStudyDate,
         streak: newStreak,
       };
+
       persistData(next);
 
       if (currentIndex + 1 < dueQueue.length) {
@@ -286,6 +327,7 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
       lastStudyDate: null,
       streak: 0,
     };
+
     persistData(next);
     setView('deck');
   }, [persistData]);
@@ -295,6 +337,7 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
+
     a.href = url;
     a.download = `${deckId}-progress.json`;
     a.click();
@@ -303,19 +346,27 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const handleImport = useCallback(() => {
     const input = document.createElement('input');
+
     input.type = 'file';
     input.accept = '.json';
     input.onchange = () => {
       const file = input.files?.[0];
-      if (!file) return;
+
+      if (!file) {
+        return;
+      }
       const reader = new FileReader();
+
       reader.onload = () => {
         try {
           const data = JSON.parse(reader.result as string) as DeckData;
+
           if (data.cardStates) {
             persistData(data);
           }
-        } catch { /* invalid JSON */ }
+        } catch {
+          /* invalid JSON */
+        }
       };
       reader.readAsText(file);
     };
@@ -323,7 +374,9 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
   }, [persistData]);
 
   useEffect(() => {
-    if (view !== 'review') return;
+    if (view !== 'review') {
+      return;
+    }
     const handler = (e: KeyboardEvent) => {
       if (e.key === ' ' || e.key === 'Spacebar') {
         e.preventDefault();
@@ -333,7 +386,9 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
         handleRate(Number(e.key) as Rating);
       }
     };
+
     document.addEventListener('keydown', handler);
+
     return () => document.removeEventListener('keydown', handler);
   }, [view, flipped, handleRate]);
 
@@ -341,9 +396,12 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
   const currentCard = currentCardId ? cards.find((c) => c.id === currentCardId) : null;
 
   const renderFlipCard = () => {
-    if (!currentCard) return null;
+    if (!currentCard) {
+      return null;
+    }
     const prefersReducedMotion =
-      typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const containerFlipStyle: React.CSSProperties = {
       perspective: 1000,
@@ -390,7 +448,9 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
           ref={cardRef}
           tabIndex={0}
           role="button"
-          aria-label={flipped ? 'Card answer shown. Rate your recall.' : 'Card question. Press Space to flip.'}
+          aria-label={
+            flipped ? 'Card answer shown. Rate your recall.' : 'Card question. Press Space to flip.'
+          }
           onClick={() => setFlipped((f) => !f)}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
@@ -401,18 +461,34 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
           style={cardStyle}
         >
           <div style={faceBase}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--ifm-color-emphasis-500)', marginBottom: 8 }}>
+            <div
+              style={{
+                fontSize: '0.75rem',
+                color: 'var(--ifm-color-emphasis-500)',
+                marginBottom: 8,
+              }}
+            >
               QUESTION
             </div>
-            <div style={{ fontSize: '1.1rem', fontWeight: 600, textAlign: 'center', lineHeight: 1.6 }}>
+            <div
+              style={{ fontSize: '1.1rem', fontWeight: 600, textAlign: 'center', lineHeight: 1.6 }}
+            >
               {currentCard.front}
             </div>
           </div>
           <div style={backFace}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--ifm-color-emphasis-500)', marginBottom: 8 }}>
+            <div
+              style={{
+                fontSize: '0.75rem',
+                color: 'var(--ifm-color-emphasis-500)',
+                marginBottom: 8,
+              }}
+            >
               ANSWER
             </div>
-            <div style={{ fontSize: '1.1rem', fontWeight: 600, textAlign: 'center', lineHeight: 1.6 }}>
+            <div
+              style={{ fontSize: '1.1rem', fontWeight: 600, textAlign: 'center', lineHeight: 1.6 }}
+            >
               {currentCard.back}
             </div>
           </div>
@@ -423,7 +499,14 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const renderProgressBar = () => (
     <div style={{ width: '100%', maxWidth: 520, margin: '12px auto 0' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginBottom: 4 }}>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          fontSize: '0.8rem',
+          marginBottom: 4,
+        }}
+      >
         <span style={{ color: 'var(--ifm-font-color-base)' }}>Mastery</span>
         <span style={{ color: 'var(--ifm-font-color-base)' }}>{masteryPercent}%</span>
       </div>
@@ -443,23 +526,43 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const renderDeckView = () => (
     <div style={{ textAlign: 'center' }}>
-      {title && (
-        <h3 style={{ margin: '0 0 4px', color: 'var(--ifm-font-color-base)' }}>{title}</h3>
-      )}
+      {title && <h3 style={{ margin: '0 0 4px', color: 'var(--ifm-font-color-base)' }}>{title}</h3>}
       {description && (
-        <p style={{ margin: '0 0 16px', fontSize: '0.9rem', color: 'var(--ifm-font-color-emphasis-700)' }}>
+        <p
+          style={{
+            margin: '0 0 16px',
+            fontSize: '0.9rem',
+            color: 'var(--ifm-font-color-emphasis-700)',
+          }}
+        >
           {description}
         </p>
       )}
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center', marginBottom: 16 }}>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 12,
+          justifyContent: 'center',
+          marginBottom: 16,
+        }}
+      >
         <StatBox label="Total Cards" value={cards.length} />
         <StatBox label="Due Today" value={dueCards.length} highlight={dueCards.length > 0} />
         <StatBox label="Mastered" value={masteredCount} />
         <StatBox label="Streak" value={`${streak}d`} />
       </div>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', marginBottom: 20 }}>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 8,
+          justifyContent: 'center',
+          marginBottom: 20,
+        }}
+      >
         {Object.entries(masteryBreakdown).map(([level, count]) => (
           <span
             key={level}
@@ -480,7 +583,15 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
       {renderProgressBar()}
 
-      <div style={{ marginTop: 20, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div
+        style={{
+          marginTop: 20,
+          display: 'flex',
+          gap: 10,
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+        }}
+      >
         <ActionButton
           label="Study Now"
           disabled={dueCards.length === 0}
@@ -495,7 +606,14 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
 
   const renderReviewMode = () => (
     <div>
-      <div style={{ textAlign: 'center', marginBottom: 12, fontSize: '0.85rem', color: 'var(--ifm-font-color-emphasis-700)' }}>
+      <div
+        style={{
+          textAlign: 'center',
+          marginBottom: 12,
+          fontSize: '0.85rem',
+          color: 'var(--ifm-font-color-emphasis-700)',
+        }}
+      >
         Card {currentIndex + 1} of {dueQueue.length}
       </div>
       {renderFlipCard()}
@@ -511,14 +629,17 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
           transition: 'opacity 0.2s',
         }}
       >
-        {RATING_CONFIG.map((cfg) => (
-          <RatingButton key={cfg.key} config={cfg} onClick={handleRate} disabled={!flipped} />
+        {RATING_CONFIG.map((cfg, idx) => (
+          <RatingButton key={idx} config={cfg} onClick={handleRate} disabled={!flipped} />
         ))}
       </div>
       <div style={{ textAlign: 'center', marginTop: 16 }}>
         <button
           type="button"
-          onClick={() => { setView('deck'); setDueQueue([]); }}
+          onClick={() => {
+            setView('deck');
+            setDueQueue([]);
+          }}
           style={{
             padding: '8px 20px',
             border: '1px solid var(--ifm-color-emphasis-300)',
@@ -538,15 +659,34 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
   const renderStats = () => (
     <div style={{ textAlign: 'center' }}>
       <h3 style={{ margin: '0 0 16px', color: 'var(--ifm-font-color-base)' }}>Statistics</h3>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center', marginBottom: 16 }}>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 12,
+          justifyContent: 'center',
+          marginBottom: 16,
+        }}
+      >
         <StatBox label="Cards Mastered" value={masteredCount} />
-        <StatBox label="Cards Learning" value={masteryBreakdown.learning + masteryBreakdown.review} />
+        <StatBox
+          label="Cards Learning"
+          value={masteryBreakdown.learning + masteryBreakdown.review}
+        />
         <StatBox label="Cards New" value={masteryBreakdown.new} />
         <StatBox label="Review Streak" value={`${streak} days`} />
         <StatBox label="Total Reviews" value={totalReviews} />
         <StatBox label="Avg Ease Factor" value={avgEase.toFixed(2)} />
       </div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center', marginBottom: 20 }}>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 8,
+          justifyContent: 'center',
+          marginBottom: 20,
+        }}
+      >
         {Object.entries(masteryBreakdown).map(([level, count]) => (
           <span
             key={level}
@@ -628,7 +768,15 @@ export function FlashcardDeck({ cards, deckId, title, description }: FlashcardDe
   );
 }
 
-function StatBox({ label, value, highlight }: { label: string; value: string | number; highlight?: boolean }) {
+function StatBox({
+  label,
+  value,
+  highlight,
+}: {
+  label: string;
+  value: string | number;
+  highlight?: boolean;
+}) {
   return (
     <div
       style={{
@@ -640,7 +788,9 @@ function StatBox({ label, value, highlight }: { label: string; value: string | n
       }}
     >
       <div style={{ fontSize: '1.3rem', fontWeight: 700 }}>{value}</div>
-      <div style={{ fontSize: '0.75rem', color: 'var(--ifm-font-color-emphasis-700)' }}>{label}</div>
+      <div style={{ fontSize: '0.75rem', color: 'var(--ifm-font-color-emphasis-700)' }}>
+        {label}
+      </div>
     </div>
   );
 }
@@ -674,11 +824,7 @@ function ActionButton({
           : danger
             ? 'rgba(231,76,60,0.1)'
             : 'var(--ifm-background-surface-color)',
-        color: primary
-          ? '#fff'
-          : danger
-            ? '#e74c3c'
-            : 'var(--ifm-font-color-base)',
+        color: primary ? '#fff' : danger ? '#e74c3c' : 'var(--ifm-font-color-base)',
         fontWeight: 600,
         fontSize: '0.95rem',
         cursor: disabled ? 'not-allowed' : 'pointer',

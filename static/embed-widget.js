@@ -39,7 +39,13 @@
   container.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
   var header = document.createElement('div');
-  header.style.cssText = 'display:flex;align-items:center;justify-content:space-between;padding:6px 12px;font-size:13px;font-weight:600;border-bottom:1px solid ' + (theme === 'dark' ? '#333' : '#eee') + ';background:' + (theme === 'dark' ? '#16213e' : '#f8f9fa') + ';color:' + (theme === 'dark' ? '#e0e0e0' : '#333');
+  header.style.cssText =
+    'display:flex;align-items:center;justify-content:space-between;padding:6px 12px;font-size:13px;font-weight:600;border-bottom:1px solid ' +
+    (theme === 'dark' ? '#333' : '#eee') +
+    ';background:' +
+    (theme === 'dark' ? '#16213e' : '#f8f9fa') +
+    ';color:' +
+    (theme === 'dark' ? '#e0e0e0' : '#333');
 
   var label = document.createElement('span');
   label.textContent = "Wyatt's Notes";

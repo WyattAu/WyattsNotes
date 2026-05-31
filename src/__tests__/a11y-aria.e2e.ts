@@ -13,10 +13,15 @@ test.describe('ARIA & Screen Reader Accessibility', () => {
   test('landmark roles exist: navigation, main, contentinfo', async ({ page }) => {
     const landmarks = await page.evaluate(() => {
       const roles: Record<string, number> = {};
+
       document.querySelectorAll('[role]').forEach((el) => {
         const role = el.getAttribute('role');
-        if (role) roles[role] = (roles[role] || 0) + 1;
+
+        if (role) {
+          roles[role] = (roles[role] || 0) + 1;
+        }
       });
+
       return roles;
     });
 
@@ -28,6 +33,7 @@ test.describe('ARIA & Screen Reader Accessibility', () => {
   test('heading hierarchy has no skipped levels', async ({ page }) => {
     const levels = await page.evaluate(() => {
       const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+
       return headings.map((h) => parseInt(h.tagName.charAt(1), 10));
     });
 
@@ -35,6 +41,7 @@ test.describe('ARIA & Screen Reader Accessibility', () => {
     expect(levels[0]).toBe(1);
 
     const violations: string[] = [];
+
     for (let i = 1; i < levels.length; i++) {
       if (levels[i] > levels[i - 1] + 1) {
         violations.push(`h${levels[i - 1]} → h${levels[i]}`);
@@ -59,6 +66,7 @@ test.describe('ARIA & Screen Reader Accessibility', () => {
       return Array.from(document.querySelectorAll<HTMLAnchorElement>('a[href]'))
         .filter((a) => {
           const text = (a.textContent || '').trim().toLowerCase();
+
           return text === '' || text === 'click here' || text === 'here' || text === 'read more';
         })
         .map((a) => a.href.slice(0, 80));
@@ -72,7 +80,10 @@ test.describe('ARIA & Screen Reader Accessibility', () => {
       const searchInput = document.querySelector(
         'input[type="search"], input[aria-label], input[aria-labelledby]',
       );
-      if (!searchInput) return false;
+
+      if (!searchInput) {
+        return false;
+      }
 
       return (
         searchInput.hasAttribute('aria-label') ||
@@ -106,7 +117,11 @@ test.describe('ARIA & Screen Reader Accessibility', () => {
 
     const tablesWithoutHeaders = await page.evaluate(() => {
       return Array.from(document.querySelectorAll('table'))
-        .filter((table) => table.querySelectorAll('th').length === 0 && table.querySelectorAll('thead').length === 0)
+        .filter(
+          (table) =>
+            table.querySelectorAll('th').length === 0 &&
+            table.querySelectorAll('thead').length === 0,
+        )
         .map((table, i) => `table[${i}]`);
     });
 

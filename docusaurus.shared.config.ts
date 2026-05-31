@@ -81,15 +81,15 @@ export function createRemarkPluginsConfig(
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const escapeJsxBraces = require('./src/plugins/escape-jsx-braces/index.js');
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let remarkPluginsList: any[];
+
   if (useEscapeJsxBraces) {
     remarkPluginsList = opts.skipCodeSnippets
       ? [remarkMath, escapeJsxBraces]
       : [remarkMath, escapeJsxBraces, remarkCodeSnippets];
   } else {
-    remarkPluginsList = opts.skipCodeSnippets
-      ? [remarkMath]
-      : [remarkMath, remarkCodeSnippets];
+    remarkPluginsList = opts.skipCodeSnippets ? [remarkMath] : [remarkMath, remarkCodeSnippets];
   }
 
   return {

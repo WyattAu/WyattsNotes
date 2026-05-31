@@ -39,14 +39,24 @@ interface DiagnosticTestProps {
 const LABELS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] as const;
 
 function getLevel(score: number): 'strong' | 'moderate' | 'weak' {
-  if (score >= 0.8) return 'strong';
-  if (score >= 0.5) return 'moderate';
+  if (score >= 0.8) {
+    return 'strong';
+  }
+  if (score >= 0.5) {
+    return 'moderate';
+  }
+
   return 'weak';
 }
 
 function getLevelColor(level: 'strong' | 'moderate' | 'weak'): string {
-  if (level === 'strong') return '#2ecc71';
-  if (level === 'moderate') return '#f39c12';
+  if (level === 'strong') {
+    return '#2ecc71';
+  }
+  if (level === 'moderate') {
+    return '#f39c12';
+  }
+
   return '#e74c3c';
 }
 
@@ -56,17 +66,24 @@ function pickNextQuestion(
   topicScores: Map<string, { correct: number; total: number }>,
 ): DiagnosticQuestion | null {
   const remaining = pool.filter((q) => !asked.has(q.id));
-  if (remaining.length === 0) return null;
 
-  const avgDiff = Array.from(topicScores.values()).length > 0
-    ? Array.from(topicScores.values()).reduce((s, t) => s + (t.correct / t.total) * 5, 0)
-      / Array.from(topicScores.values()).length
-    : 3;
+  if (remaining.length === 0) {
+    return null;
+  }
+
+  const avgDiff =
+    Array.from(topicScores.values()).length > 0
+      ? Array.from(topicScores.values()).reduce((s, t) => s + (t.correct / t.total) * 5, 0) /
+        Array.from(topicScores.values()).length
+      : 3;
 
   const targetDiff = Math.max(1, Math.min(5, Math.round(avgDiff)));
 
   let candidates = remaining.filter((q) => q.difficulty === targetDiff);
-  if (candidates.length === 0) candidates = remaining;
+
+  if (candidates.length === 0) {
+    candidates = remaining;
+  }
 
   const weakTopics = Array.from(topicScores.entries())
     .filter(([, s]) => s.total > 0 && s.correct / s.total < 0.6)
@@ -74,7 +91,10 @@ function pickNextQuestion(
 
   if (weakTopics.length > 0) {
     const weakCandidates = candidates.filter((q) => weakTopics.includes(q.topic));
-    if (weakCandidates.length > 0) candidates = weakCandidates;
+
+    if (weakCandidates.length > 0) {
+      candidates = weakCandidates;
+    }
   }
 
   return candidates[Math.floor(Math.random() * candidates.length)] ?? remaining[0];
@@ -84,6 +104,7 @@ function formatTime(ms: number): string {
   const secs = Math.floor(ms / 1000);
   const mins = Math.floor(secs / 60);
   const rem = secs % 60;
+
   return mins > 0 ? `${mins}:${String(rem).padStart(2, '0')}` : `${rem}s`;
 }
 
@@ -101,7 +122,7 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
   );
   const [startTime] = useState(Date.now());
   const [elapsed, setElapsed] = useState(0);
-  const [showTimer, setShowTimer] = useState(true);
+  const [showTimer] = useState(true);
 
   const questionOrder = useMemo(() => {
     const order: string[] = [];
@@ -110,40 +131,58 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
 
     for (let i = 0; i < maxQuestions; i++) {
       const next = pickNextQuestion(questions, asked, scores);
-      if (!next) break;
+
+      if (!next) {
+        break;
+      }
       order.push(next.id);
       asked.add(next.id);
       const prev = scores.get(next.topic) ?? { correct: 0, total: 0 };
+
       scores.set(next.topic, prev);
     }
+
     return order;
   }, [questions, maxQuestions]);
 
   const currentQuestionId = questionOrder[currentIndex] ?? null;
   const currentQuestion = currentQuestionId
-    ? questions.find((q) => q.id === currentQuestionId) ?? null
+    ? (questions.find((q) => q.id === currentQuestionId) ?? null)
     : null;
 
   useEffect(() => {
-    if (!showTimer || showResults) return;
+    if (!showTimer || showResults) {
+      return;
+    }
     const interval = setInterval(() => setElapsed(Date.now() - startTime), 1000);
+
     return () => clearInterval(interval);
   }, [showTimer, showResults, startTime]);
 
-  const handleSelect = useCallback((index: number) => {
-    if (!submitted) setSelected(index);
-  }, [submitted]);
+  const handleSelect = useCallback(
+    (index: number) => {
+      if (!submitted) {
+        setSelected(index);
+      }
+    },
+    [submitted],
+  );
 
   const handleSubmit = useCallback(() => {
-    if (selected === null || !currentQuestion) return;
+    if (selected === null || !currentQuestion) {
+      return;
+    }
     setSubmitted(true);
     const newAnswers = new Map(answers);
+
     newAnswers.set(currentQuestion.id, selected);
     setAnswers(newAnswers);
     const newAsked = new Set(askedIds);
+
     newAsked.add(currentQuestion.id);
     setAskedIds(newAsked);
     const prev = topicScores.get(currentQuestion.topic) ?? { correct: 0, total: 0 };
+
     setTopicScores(
       new Map(topicScores).set(currentQuestion.topic, {
         correct: prev.correct + (selected === currentQuestion.correctIndex ? 1 : 0),
@@ -155,6 +194,7 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
   const handleNext = useCallback(() => {
     if (currentIndex + 1 >= questionOrder.length) {
       setShowResults(true);
+
       return;
     }
     setCurrentIndex((i) => i + 1);
@@ -163,12 +203,19 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
   }, [currentIndex, questionOrder.length]);
 
   useEffect(() => {
-    if (!showResults) return;
+    if (!showResults) {
+      return;
+    }
     const topicMap = new Map<string, { correct: number; total: number }>();
+
     for (const [qid, ans] of answers) {
       const q = questions.find((qq) => qq.id === qid);
-      if (!q) continue;
+
+      if (!q) {
+        continue;
+      }
       const prev = topicMap.get(q.topic) ?? { correct: 0, total: 0 };
+
       topicMap.set(q.topic, {
         correct: prev.correct + (ans === q.correctIndex ? 1 : 0),
         total: prev.total + 1,
@@ -181,15 +228,18 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
       score: s.total > 0 ? s.correct / s.total : 0,
       level: getLevel(s.total > 0 ? s.correct / s.total : 0),
     }));
+
     topicResults.sort((a, b) => a.score - b.score);
     const strengths = topicResults.filter((t) => t.level === 'strong').map((t) => t.topic);
     const weaknesses = topicResults.filter((t) => t.level === 'weak').map((t) => t.topic);
     const recommendedTopics = topicResults.filter((t) => t.level !== 'strong').map((t) => t.topic);
     const totalCorrect = Array.from(answers.values()).filter((a, i) => {
       const q = questions.find((qq) => qq.id === Array.from(answers.keys())[i]);
+
       return q && a === q.correctIndex;
     }).length;
     const totalQuestions = answers.size;
+
     onComplete({
       subject,
       totalQuestions,
@@ -204,12 +254,19 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
   }, [showResults]);
 
   const result: DiagnosticResult | null = useMemo(() => {
-    if (!showResults || answers.size === 0) return null;
+    if (!showResults || answers.size === 0) {
+      return null;
+    }
     const topicMap = new Map<string, { correct: number; total: number }>();
+
     for (const [qid, ans] of answers) {
       const q = questions.find((qq) => qq.id === qid);
-      if (!q) continue;
+
+      if (!q) {
+        continue;
+      }
       const prev = topicMap.get(q.topic) ?? { correct: 0, total: 0 };
+
       topicMap.set(q.topic, {
         correct: prev.correct + (ans === q.correctIndex ? 1 : 0),
         total: prev.total + 1,
@@ -222,15 +279,21 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
       score: s.total > 0 ? s.correct / s.total : 0,
       level: getLevel(s.total > 0 ? s.correct / s.total : 0),
     }));
+
     topicResults.sort((a, b) => a.score - b.score);
     const strengths = topicResults.filter((t) => t.level === 'strong').map((t) => t.topic);
     const weaknesses = topicResults.filter((t) => t.level === 'weak').map((t) => t.topic);
     const recommended = topicResults.filter((t) => t.level !== 'strong').map((t) => t.topic);
     let totalCorrect = 0;
+
     for (const [qid, ans] of answers) {
       const q = questions.find((qq) => qq.id === qid);
-      if (q && ans === q.correctIndex) totalCorrect++;
+
+      if (q && ans === q.correctIndex) {
+        totalCorrect++;
+      }
     }
+
     return {
       subject,
       totalQuestions: answers.size,
@@ -272,6 +335,7 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
 
   if (showResults && result) {
     const pct = (s: number) => `${Math.round(s * 100)}%`;
+
     return (
       <div style={containerStyle}>
         <h3 style={{ marginBottom: 4 }}>{subject} — Diagnostic Results</h3>
@@ -340,7 +404,9 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
     );
   }
 
-  if (!currentQuestion) return null;
+  if (!currentQuestion) {
+    return null;
+  }
 
   const isCorrect = submitted && selected === currentQuestion.correctIndex;
 
@@ -360,6 +426,7 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
       transition: 'border-color 0.15s, background 0.15s',
       fontFamily: 'inherit',
     };
+
     if (!submitted && selected === index) {
       base.borderColor = 'var(--ifm-color-primary)';
       base.background = 'var(--ifm-color-primary-soft)';
@@ -373,12 +440,20 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
         base.background = 'rgba(231,76,60,0.12)';
       }
     }
+
     return base;
   };
 
   return (
     <div style={containerStyle}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: 4,
+        }}
+      >
         <h3 style={{ margin: 0 }}>{subject}</h3>
         {showTimer && (
           <span style={{ fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-700)' }}>
@@ -411,7 +486,12 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
         Question {currentIndex + 1} of {questionOrder.length}
       </p>
       <div
-        style={{ fontSize: '1.15rem', fontWeight: 600, marginBottom: 16, color: 'var(--ifm-font-color-base)' }}
+        style={{
+          fontSize: '1.15rem',
+          fontWeight: 600,
+          marginBottom: 16,
+          color: 'var(--ifm-font-color-base)',
+        }}
         dangerouslySetInnerHTML={{ __html: currentQuestion.question }}
       />
       <div role="group" aria-label="Answer options">
@@ -439,7 +519,8 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
             padding: '10px 24px',
             border: 'none',
             borderRadius: 8,
-            background: selected === null ? 'var(--ifm-color-emphasis-300)' : 'var(--ifm-color-primary)',
+            background:
+              selected === null ? 'var(--ifm-color-emphasis-300)' : 'var(--ifm-color-primary)',
             color: '#fff',
             fontWeight: 600,
             fontSize: '1rem',

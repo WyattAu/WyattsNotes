@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface LanguageSwitcherProps {
   currentLocale: string;
-  availableLocales: { code: string; label: string; flag: string }[];
+  availableLocales?: { code: string; label: string; flag: string }[];
   currentPath: string;
   baseUrl: string;
 }
@@ -29,25 +29,35 @@ export default function LanguageSwitcher({
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
     }
     document.addEventListener('mousedown', handleClickOutside);
+
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   useEffect(() => {
     function handleEscape(e: KeyboardEvent) {
-      if (e.key === 'Escape') setOpen(false);
+      if (e.key === 'Escape') {
+        setOpen(false);
+      }
     }
-    if (open) document.addEventListener('keydown', handleEscape);
+    if (open) {
+      document.addEventListener('keydown', handleEscape);
+    }
+
     return () => document.removeEventListener('keydown', handleEscape);
   }, [open]);
 
   function getLocalePath(code: string): string {
     const base = baseUrl.replace(/\/$/, '');
+
     if (code === 'en') {
       return `${base}${currentPath}`.replace(/\/{2,}/g, '/');
     }
+
     return `${base}/${code}${currentPath}`.replace(/\/{2,}/g, '/');
   }
 
@@ -85,7 +95,12 @@ export default function LanguageSwitcher({
           aria-hidden="true"
           style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'none' }}
         >
-          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <path
+            d="M3 4.5L6 7.5L9 4.5"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
         </svg>
       </button>
       {open && (

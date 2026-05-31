@@ -73,7 +73,20 @@ const ALL_SITES = [
     sitemapUrl: 'https://university.wyattau.com/sitemap.xml',
     indexName: 'wyattsnotes_university',
     key: 'university',
-    tags: ['university', 'degree', 'undergraduate', 'admissions', 'chemistry', 'computer-science', 'physical-chemistry', 'organic-chemistry', 'inorganic-chemistry', 'algorithms', 'systems', 'theory'],
+    tags: [
+      'university',
+      'degree',
+      'undergraduate',
+      'admissions',
+      'chemistry',
+      'computer-science',
+      'physical-chemistry',
+      'organic-chemistry',
+      'inorganic-chemistry',
+      'algorithms',
+      'systems',
+      'theory',
+    ],
   },
 ];
 
@@ -190,7 +203,10 @@ function extractContent(html, url, siteTags) {
     }
   }
 
-  const deepestLvl = Math.max(0, ...Object.keys(hierarchy).map((k) => (hierarchy[k] ? parseInt(k.replace('lvl', ''), 10) : -1)));
+  const deepestLvl = Math.max(
+    0,
+    ...Object.keys(hierarchy).map((k) => (hierarchy[k] ? parseInt(k.replace('lvl', ''), 10) : -1)),
+  );
 
   return {
     objectID: url.pathname,
@@ -278,7 +294,15 @@ async function main() {
           attributesForFaceting: ['filterOnly(_tags)', 'filterOnly(site)'],
           attributesToHighlight: ['title', 'content'],
           attributesToSnippet: ['content:20'],
-          attributesToRetrieve: ['title', 'url', 'content', 'hierarchy', '_tags', 'nbHits', '_score'],
+          attributesToRetrieve: [
+            'title',
+            'url',
+            'content',
+            'hierarchy',
+            '_tags',
+            'nbHits',
+            '_score',
+          ],
           customRanking: [
             'desc(weight_page)',
             'desc(weight_level)',

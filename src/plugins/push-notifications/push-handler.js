@@ -1,5 +1,10 @@
 self.addEventListener('push', (event) => {
-  let data = { title: 'WyattsNotes', body: 'New update available', icon: '/img/logo.png', url: '/' };
+  let data = {
+    title: 'WyattsNotes',
+    body: 'New update available',
+    icon: '/img/logo.png',
+    url: '/',
+  };
 
   if (event.data) {
     try {
@@ -15,9 +20,11 @@ self.addEventListener('push', (event) => {
     }
   }
 
-  const category = data.title.toLowerCase().includes('reminder') ? 'reminder'
-    : data.title.toLowerCase().includes('announcement') ? 'announcement'
-    : 'update';
+  const category = data.title.toLowerCase().includes('reminder')
+    ? 'reminder'
+    : data.title.toLowerCase().includes('announcement')
+      ? 'announcement'
+      : 'update';
 
   const options = {
     body: data.body,

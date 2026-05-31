@@ -19,11 +19,17 @@ test.describe('Keyboard Navigation Accessibility', () => {
 
       const tag = await page.evaluate(() => {
         const el = document.activeElement;
-        if (!el) return null;
+
+        if (!el) {
+          return null;
+        }
+
         return el.tagName + ':' + (el.textContent || '').slice(0, 40);
       });
 
-      if (tag) focusOrder.push(tag);
+      if (tag) {
+        focusOrder.push(tag);
+      }
     }
 
     expect(focusOrder.length).toBeGreaterThan(3);
@@ -31,9 +37,11 @@ test.describe('Keyboard Navigation Accessibility', () => {
     const interactiveTags = focusOrder.filter((f) =>
       ['A:', 'BUTTON:'].some((t) => f.startsWith(t)),
     );
+
     expect(interactiveTags.length).toBeGreaterThan(0);
 
     const hasContent = focusOrder.some((f) => f.startsWith('A:'));
+
     expect(hasContent).toBe(true);
   });
 
@@ -46,6 +54,7 @@ test.describe('Keyboard Navigation Accessibility', () => {
     expect(
       await skipLink.evaluate((el) => {
         const style = window.getComputedStyle(el);
+
         return style.position !== 'static' || style.display !== 'none';
       }),
     ).toBe(true);
@@ -55,6 +64,7 @@ test.describe('Keyboard Navigation Accessibility', () => {
 
     await page.waitForTimeout(200);
     const focusedTag = await page.evaluate(() => document.activeElement?.tagName);
+
     expect(['MAIN', 'ARTICLE']).toContain(focusedTag);
   });
 
@@ -64,9 +74,11 @@ test.describe('Keyboard Navigation Accessibility', () => {
     await page.waitForTimeout(300);
 
     const searchModal = page.locator('[role="dialog"], [class*="DocSearch"], .search-modal');
+
     await expect(searchModal).toBeVisible();
 
     const searchInput = page.locator('input[type="search"], input[placeholder*="Search"]');
+
     await expect(searchInput).toBeFocused();
 
     await page.keyboard.press('Escape');
@@ -76,15 +88,19 @@ test.describe('Keyboard Navigation Accessibility', () => {
   });
 
   test('focus visibility: interactive elements show focus ring', async ({ page }) => {
-    const interactiveSelectors = 'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])';
+    const interactiveSelectors =
+      'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])';
     const elements = await page.$$(interactiveSelectors);
 
     const results: boolean[] = [];
+
     for (const el of elements.slice(0, 10)) {
-      const hasFocusRing = await el.evaluate((node) => {
+      // Check focus ring before explicit focus (informational)
+      await el.evaluate((node) => {
         const style = window.getComputedStyle(node);
         const outline = style.outline || style.outlineWidth || '';
         const boxShadow = style.boxShadow || '';
+
         return (
           outline !== 'none' &&
           outline !== '0px' &&
@@ -95,11 +111,13 @@ test.describe('Keyboard Navigation Accessibility', () => {
       await el.focus();
       const focusedRing = await el.evaluate((node) => {
         const style = window.getComputedStyle(node);
+
         return (
           style.outline !== 'none' &&
           (style.outlineWidth !== '0px' || style.boxShadow.includes('0 0 0'))
         );
       });
+
       results.push(focusedRing);
     }
 
@@ -111,8 +129,10 @@ test.describe('Keyboard Navigation Accessibility', () => {
     await page.waitForLoadState('networkidle');
 
     const practiceProblem = page.locator('[data-testid="practice-problem"], .practice-problem');
+
     if ((await practiceProblem.count()) === 0) {
       test.skip();
+
       return;
     }
 
@@ -126,8 +146,10 @@ test.describe('Keyboard Navigation Accessibility', () => {
     await page.waitForLoadState('networkidle');
 
     const flashcard = page.locator('[data-testid="flashcard-deck"], .flashcard-deck');
+
     if ((await flashcard.count()) === 0) {
       test.skip();
+
       return;
     }
 
@@ -138,8 +160,10 @@ test.describe('Keyboard Navigation Accessibility', () => {
 
   test('sidebar tree supports arrow key navigation', async ({ page }) => {
     const sidebar = page.locator('.theme-doc-sidebar-menu, nav[aria-label="Sidebar"]');
+
     if ((await sidebar.count()) === 0) {
       test.skip();
+
       return;
     }
 
@@ -150,11 +174,13 @@ test.describe('Keyboard Navigation Accessibility', () => {
     await page.keyboard.press('Enter');
 
     const activeBefore = await page.evaluate(() => document.activeElement?.tagName);
+
     expect(['A', 'BUTTON']).toContain(activeBefore);
   });
 
   test('no keyboard traps: Escape or Tab always moves focus forward', async ({ page }) => {
-    const focusableSelectors = 'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled])';
+    const focusableSelectors =
+      'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled])';
     const elements = await page.$$(focusableSelectors);
 
     const traps: string[] = [];

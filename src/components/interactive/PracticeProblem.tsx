@@ -16,7 +16,13 @@ const DIFFICULTY_COLORS: Record<Difficulty, string> = {
   hard: '#e74c3c',
 };
 
-export function PracticeProblem({ question, options, correctAnswer, explanation, difficulty }: PracticeProblemProps) {
+export function PracticeProblem({
+  question,
+  options,
+  correctAnswer,
+  explanation,
+  difficulty,
+}: PracticeProblemProps) {
   const [selected, setSelected] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -33,7 +39,9 @@ export function PracticeProblem({ question, options, correctAnswer, explanation,
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent) => {
-      if (submitted) return;
+      if (submitted) {
+        return;
+      }
       if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
         e.preventDefault();
         setSelected((prev) => (prev === null ? 0 : Math.min(prev + 1, options.length - 1)));
@@ -49,7 +57,9 @@ export function PracticeProblem({ question, options, correctAnswer, explanation,
   );
 
   const handleSubmit = () => {
-    if (selected !== null) setSubmitted(true);
+    if (selected !== null) {
+      setSubmitted(true);
+    }
   };
 
   const getOptionStyle = (index: number): React.CSSProperties => {
@@ -68,6 +78,7 @@ export function PracticeProblem({ question, options, correctAnswer, explanation,
       transition: 'border-color 0.15s, background 0.15s',
       fontFamily: 'inherit',
     };
+
     if (!submitted && selected === index) {
       base.borderColor = 'var(--ifm-color-primary)';
       base.background = 'var(--ifm-color-primary-soft)';
@@ -81,6 +92,7 @@ export function PracticeProblem({ question, options, correctAnswer, explanation,
         base.background = 'rgba(231,76,60,0.12)';
       }
     }
+
     return base;
   };
 
@@ -119,7 +131,12 @@ export function PracticeProblem({ question, options, correctAnswer, explanation,
       </div>
 
       <div
-        style={{ fontSize: '1.15rem', fontWeight: 600, marginBottom: 16, color: 'var(--ifm-font-color-base)' }}
+        style={{
+          fontSize: '1.15rem',
+          fontWeight: 600,
+          marginBottom: 16,
+          color: 'var(--ifm-font-color-base)',
+        }}
         dangerouslySetInnerHTML={{ __html: question }}
       />
 
@@ -127,7 +144,9 @@ export function PracticeProblem({ question, options, correctAnswer, explanation,
         {options.map((opt, i) => (
           <button
             key={i}
-            ref={(el) => { buttonRefs.current[i] = el; }}
+            ref={(el) => {
+              buttonRefs.current[i] = el;
+            }}
             type="button"
             role="radio"
             aria-checked={selected === i}
@@ -153,7 +172,8 @@ export function PracticeProblem({ question, options, correctAnswer, explanation,
             padding: '10px 24px',
             border: 'none',
             borderRadius: 8,
-            background: selected === null ? 'var(--ifm-color-emphasis-300)' : 'var(--ifm-color-primary)',
+            background:
+              selected === null ? 'var(--ifm-color-emphasis-300)' : 'var(--ifm-color-primary)',
             color: '#fff',
             fontWeight: 600,
             fontSize: '1rem',

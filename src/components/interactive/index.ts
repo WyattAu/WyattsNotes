@@ -1,9 +1,9 @@
-export { DesmosGraph } from './DesmosGraph';
-export { Geogebra } from './Geogebra';
-export { PhetSimulation } from './PhetSimulation';
 export { CircuitBuilder } from './CircuitBuilder';
-export { PeriodicTable } from './PeriodicTable';
-export { PracticeProblem } from './PracticeProblem';
-export { FlashcardDeck } from './FlashcardDeck';
+export { DesmosGraph } from './DesmosGraph';
 export { DiagnosticTest } from './DiagnosticTest';
 export type { DiagnosticQuestion, DiagnosticResult, TopicResult } from './DiagnosticTest';
+export { FlashcardDeck } from './FlashcardDeck';
+export { Geogebra } from './Geogebra';
+export { PeriodicTable } from './PeriodicTable';
+export { PhetSimulation } from './PhetSimulation';
+export { PracticeProblem } from './PracticeProblem';

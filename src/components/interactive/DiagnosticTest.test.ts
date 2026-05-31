@@ -1,8 +1,7 @@
-import { describe, expect, it, vi } from 'vitest';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { DiagnosticTest } from './DiagnosticTest';
-import type { DiagnosticQuestion, DiagnosticResult } from './DiagnosticTest';
+import { describe, expect, it, vi } from 'vitest';
+import { DiagnosticTest, type DiagnosticQuestion, type DiagnosticResult } from './DiagnosticTest';
 
 const sampleQuestions: DiagnosticQuestion[] = [
   {
@@ -61,22 +60,26 @@ const defaultProps = {
 describe('DiagnosticTest', () => {
   it('renders without crashing', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
+
     expect(html).toBeTruthy();
   });
 
   it('shows the subject title', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
+
     expect(html).toContain('Mathematics');
   });
 
   it('shows a question from the pool', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
     const found = sampleQuestions.some((q) => html.includes(q.question.slice(0, 20)));
+
     expect(found).toBe(true);
   });
 
   it('shows option labels A through D', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
+
     expect(html).toContain('A<!-- -->.');
     expect(html).toContain('B<!-- -->.');
     expect(html).toContain('C<!-- -->.');
@@ -86,23 +89,27 @@ describe('DiagnosticTest', () => {
   it('shows topic badge', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
     const found = sampleQuestions.some((q) => html.includes(q.topic));
+
     expect(found).toBe(true);
   });
 
   it('shows progress indicator', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
+
     expect(html).toContain('Question');
     expect(html).toMatch(/of <!-- -->5/);
   });
 
   it('shows difficulty level', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
+
     expect(html).toMatch(/Difficulty <!-- -->\d/);
     expect(html).toContain('/5');
   });
 
   it('hides results before completion', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
+
     expect(html).not.toContain('Diagnostic Results');
     expect(html).not.toContain('Recommended Study Topics');
   });
@@ -112,11 +119,13 @@ describe('DiagnosticTest', () => {
     const html = renderToString(
       React.createElement(DiagnosticTest, { ...defaultProps, onComplete }),
     );
+
     expect(html).toBeTruthy();
   });
 
   it('adaptive: includes questions across difficulty levels', () => {
     const html = renderToString(React.createElement(DiagnosticTest, defaultProps));
+
     expect(html).toContain('Difficulty');
   });
 });
