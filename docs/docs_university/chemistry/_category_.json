@@ -1,0 +1,8 @@
+{
+  "label": "Chemistry",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "University-level chemistry: physical chemistry, organic chemistry, inorganic chemistry, thermodynamics, kinetics, quantum chemistry, and spectroscopy."
+  }
+}
