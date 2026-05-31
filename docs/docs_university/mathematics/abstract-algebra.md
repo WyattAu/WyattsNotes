@@ -6,7 +6,7 @@ tags:
   - University Maths
 categories:
   - University Maths
-description: University-level abstract algebra: groups, rings, fields, homomorphisms, quotient structures, Sylow theorems, Galois theory, and applications to number theory and cryptography.
+description: "University-level abstract algebra: groups, rings, fields, homomorphisms, quotient structures, Sylow theorems, Galois theory, and applications to number theory and cryptography."
 ---
 
 ## 1. Introduction

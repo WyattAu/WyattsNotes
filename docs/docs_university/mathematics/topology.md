@@ -6,7 +6,7 @@ tags:
   - University Maths
 categories:
   - University Maths
-description: University-level topology: topological spaces, open and closed sets, continuity, compactness, connectedness, metric spaces, separation axioms, and introduction to algebraic topology.
+description: "University-level topology: topological spaces, open and closed sets, continuity, compactness, connectedness, metric spaces, separation axioms, and introduction to algebraic topology."
 ---
 
 ## 1. Introduction to Topology

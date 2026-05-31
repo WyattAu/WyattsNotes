@@ -6,7 +6,7 @@ tags:
   - Kotlin
 categories:
   - Kotlin
-description: Kotlin delegation patterns: by lazy, by observable, by vetoable, and class delegation. The Result type for error handling, sealed class pattern, and functional error recovery.
+description: "Kotlin delegation patterns: by lazy, by observable, by vetoable, and class delegation. The Result type for error handling, sealed class pattern, and functional error recovery."
 ---
 
 ## Property Delegation

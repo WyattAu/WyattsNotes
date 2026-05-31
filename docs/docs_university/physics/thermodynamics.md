@@ -6,7 +6,7 @@ tags:
   - University Physics
 categories:
   - University Physics
-description: University-level thermodynamics: laws of thermodynamics, entropy, free energy, thermodynamic potentials, phase transitions, statistical mechanics foundations, and applications to engines and refrigerators.
+description: "University-level thermodynamics: laws of thermodynamics, entropy, free energy, thermodynamic potentials, phase transitions, statistical mechanics foundations, and applications to engines and refrigerators."
 ---
 
 ## 1. Introduction

@@ -6,7 +6,7 @@ tags:
   - TypeScript
 categories:
   - TypeScript
-description: Advanced TypeScript type system features: conditional types, mapped types, template literal types, variadic tuples, recursive types, type-level programming, and practical design patterns for complex type scenarios.
+description: "Advanced TypeScript type system features: conditional types, mapped types, template literal types, variadic tuples, recursive types, type-level programming, and practical design patterns for complex type scenarios."
 ---
 
 ## Conditional Types: Internals and Advanced `infer`

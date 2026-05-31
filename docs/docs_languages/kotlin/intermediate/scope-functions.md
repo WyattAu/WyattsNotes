@@ -6,7 +6,7 @@ tags:
   - Kotlin
 categories:
   - Kotlin
-description: Kotlin scope functions: let, apply, run, also, with, and withContext. Understanding when to use each, receiver vs context lambda, chaining patterns, and common idioms.
+description: "Kotlin scope functions: let, apply, run, also, with, and withContext. Understanding when to use each, receiver vs context lambda, chaining patterns, and common idioms."
 ---
 
 ## Introduction

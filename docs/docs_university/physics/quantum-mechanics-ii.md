@@ -6,7 +6,7 @@ tags:
   - University Physics
 categories:
   - University Physics
-description: Advanced quantum mechanics: perturbation theory applications, angular momentum coupling, identical particles, quantum scattering, relativistic QM, and introduction to quantum field theory concepts.
+description: "Advanced quantum mechanics: perturbation theory applications, angular momentum coupling, identical particles, quantum scattering, relativistic QM, and introduction to quantum field theory concepts."
 ---
 
 ## 1. Perturbation Theory: Advanced Applications

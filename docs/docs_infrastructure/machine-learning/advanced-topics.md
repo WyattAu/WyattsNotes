@@ -6,7 +6,7 @@ tags:
   - Machine Learning
 categories:
   - Machine Learning
-description: Advanced machine learning topics: transformers and attention mechanisms, generative adversarial networks, variational autoencoders, reinforcement learning, transfer learning, and model deployment.
+description: "Advanced machine learning topics: transformers and attention mechanisms, generative adversarial networks, variational autoencoders, reinforcement learning, transfer learning, and model deployment."
 ---
 
 ## Attention Mechanisms and Transformers
