@@ -352,6 +352,8 @@ Large amplitudes (nonlinear regime), the principle breaks down.
 
 ### Constructive and Destructive Interference
 
+<DesmosGraph title="Wave Superposition" expressions={["\\sin(x)", "\\sin(2x)", "\\sin(x)+\\sin(2x)"]} width={800} height={500} />
+
 - **Constructive:** waves in phase; amplitudes add.
 - **Destructive:** waves in antiphase (out of phase by $\pi$); amplitudes cancel.
 - **Partial:** any other phase difference; amplitudes add vectorially.

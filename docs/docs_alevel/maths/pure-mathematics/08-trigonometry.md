@@ -86,6 +86,8 @@ Dividing by $\sin^2\theta$ (where $\sin\theta \neq 0$):
 
 $$\cot^2\theta + 1 = \cosec^2\theta$$
 
+<DesmosGraph title="sin, cos, and tan on the Unit Circle" expressions={["\\sin(x)", "\\cos(x)", "\\tan(x)"]} width={800} height={500} />
+
 <hr />
 
 ## 3. Compound Angle Formulas

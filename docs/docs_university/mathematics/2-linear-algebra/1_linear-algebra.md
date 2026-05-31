@@ -1182,6 +1182,8 @@ _Proof._ $T(\mathbf{0}) = T(0 \cdot \mathbf{0}) = 0 \cdot T(\mathbf{0}) = \mathb
 $T(-\mathbf{v}) = T((-1)\mathbf{v}) = (-1)T(\mathbf{v}) = -T(\mathbf{v})$. Property (3) follows by
 Induction. $\blacksquare$
 
+<DesmosGraph title="2D Rotation of the Unit Circle" expressions={["x^2+y^2=1", "(x\\cos(a)-y\\sin(a),x\\sin(a)+y\\cos(a))"]} width={800} height={500} />
+
 ### 6.2 Matrix Representation
 
 If $V$ and $W$ are finite-dimensional with bases

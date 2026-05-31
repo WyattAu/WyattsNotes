@@ -152,6 +152,8 @@ $f''(x) \gt 0$ implies concave up; $f''(x) \lt 0$ implies concave down.
 
 ## Applications of Differentiation
 
+<DesmosGraph title="Function and Its Derivative" expressions={["f(x)=x^3-3x+1", "f'(x)=3x^2-3"]} width={800} height={500} />
+
 ### Stationary Points
 
 A **stationary point** occurs where $f'(x) = 0$. The second derivative test classifies them:

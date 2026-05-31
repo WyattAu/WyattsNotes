@@ -171,6 +171,8 @@ $$\mathbf{E}(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0} \frac{q}{|\mathbf{r}|^2} 
 **Superposition Principle:** The field due to a collection of charges is the vector sum of
 individual Fields.
 
+<DesmosGraph title="Electric Field: 1/r^2 Dependence" expressions={["\\frac{k}{(x-d)^2}", "\\frac{-k}{(x+d)^2}", "\\frac{k}{(x-d)^2}+\\frac{-k}{(x+d)^2}"]} width={800} height={500} />
+
 ### 2.2 Gauss's Law Applications
 
 **Example: Infinite plane of charge** with surface charge density $\sigma$.
