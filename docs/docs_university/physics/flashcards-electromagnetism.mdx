@@ -1,0 +1,134 @@
+---
+title: Electromagnetism Flashcards
+date: 2026-05-31
+description:
+  'Interactive flashcard deck for university electromagnetism revision. Spaced repetition
+  covering electrostatics, magnetism, electromagnetic induction, Maxwell\'s equations, and EM waves.'
+tags:
+  - Physics
+  - University
+categories:
+  - Physics
+slug: flashcards-electromagnetism
+---
+
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## University Physics — Electromagnetism Flashcard Deck
+
+15 flashcards with spaced repetition. Press Space to flip, then rate your recall (1–4).
+
+---
+
+<FlashcardDeck
+  deckId="university-physics-electromagnetism"
+  title="University Physics — Electromagnetism"
+  description="Electrostatics, magnetism, electromagnetic induction, Maxwell's equations, and electromagnetic waves"
+  cards={[
+    {
+      id: 'es-1',
+      front: 'State Coulomb\'s law for the force between two point charges.',
+      back: 'F = (1/4πε₀) · (q₁q₂/r²) · r̂, where ε₀ = 8.854 × 10⁻¹² F/m is the permittivity of free space. Like charges repel, opposite charges attract. The force acts along the line joining the two charges.',
+      tags: ['electrostatics'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'es-2',
+      front: 'Define the electric field E and state its relation to force on a test charge.',
+      back: 'E = F/q₀ = (1/4πε₀) · (Q/r²) · r̂ for a point charge Q. The electric field at a point is the force per unit positive test charge placed at that point. Units: N/C or V/m. Superposition: E_total = ΣEᵢ for multiple charges.',
+      tags: ['electrostatics'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'es-3',
+      front: 'Define electric potential V and state its relation to the electric field.',
+      back: 'V = (1/4πε₀) · (Q/r) for a point charge. The electric potential at a point is the work done per unit charge to bring a test charge from infinity to that point. Relation to field: E = −∇V (the field is the negative gradient of potential). Units: volts (V = J/C).',
+      tags: ['electrostatics'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'es-4',
+      front: 'State Gauss\'s law in integral form and explain its significance.',
+      back: '∮ E · dA = Q_enclosed / ε₀. The total electric flux through any closed surface equals the total charge enclosed divided by ε₀. Significance: provides a powerful way to calculate E for symmetric charge distributions (spheres, cylinders, planes) without integration.',
+      tags: ['electrostatics'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'mag-1',
+      front: 'State the Biot-Savart law.',
+      back: 'dB = (μ₀/4π) · (I dl × r̂)/r², where μ₀ = 4π × 10⁻⁷ T·m/A is the permeability of free space. It gives the magnetic field contribution dB at a point due to a current element I dl. Direction follows the right-hand rule.',
+      tags: ['magnetism'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'mag-2',
+      front: 'State Ampère\'s law in integral form.',
+      back: '∮ B · dl = μ₀ I_enclosed. The line integral of B around any closed loop equals μ₀ times the total current passing through the loop. Used to find B for symmetric current distributions: infinite wire, solenoid (B = μ₀nI inside), toroid.',
+      tags: ['magnetism'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'mag-3',
+      front: 'State the magnetic force on a moving charge and on a current-carrying wire.',
+      back: 'On a moving charge: F = qv × B. Magnitude |F| = qvBsinθ. Direction given by right-hand rule (for positive charge). On a current-carrying wire: F = I l × B, where l is the length vector along the current direction.',
+      tags: ['magnetism'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'em-1',
+      front: 'State Faraday\'s law of electromagnetic induction.',
+      back: 'ε = −dΦ_B/dt, where Φ_B = ∫B · dA is the magnetic flux. The induced EMF in a closed loop equals the negative rate of change of magnetic flux through the loop. The minus sign reflects Lenz\'s law (the induced EMF opposes the change in flux).',
+      tags: ['electromagnetic-induction'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'em-2',
+      front: 'State Lenz\'s law and explain its physical significance.',
+      back: 'The direction of an induced current (or EMF) is such that it opposes the change in magnetic flux that produced it. Physical significance: it is a consequence of conservation of energy — if the induced effect reinforced the change, it would create a perpetually increasing energy source.',
+      tags: ['electromagnetic-induction'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'em-3',
+      front: 'Define self-inductance L and state the energy stored in an inductor.',
+      back: 'Self-inductance: Φ = LI, where Φ is the total magnetic flux linkage. The induced EMF: ε = −L(dI/dt). For a solenoid: L = μ₀n²Al. Energy stored: U = ½LI² = ½ΦI. Units: henry (H = Wb/A).',
+      tags: ['electromagnetic-induction'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'mx-1',
+      front: 'State Maxwell\'s four equations in integral form.',
+      back: '(1) Gauss for E: ∮E·dA = Q/ε₀. (2) Gauss for B: ∮B·dA = 0 (no magnetic monopoles). (3) Faraday: ∮E·dl = −d/dt∫B·dA. (4) Ampère-Maxwell: ∮B·dl = μ₀I + μ₀ε₀(d/dt)∫E·dA.',
+      tags: ['maxwells-equations'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'mx-2',
+      front: 'State Maxwell\'s equations in differential form using the del operator.',
+      back: '(1) ∇·E = ρ/ε₀. (2) ∇·B = 0. (3) ∇×E = −∂B/∂t. (4) ∇×B = μ₀J + μ₀ε₀(∂E/∂t). These relate the divergence and curl of E and B fields to their sources (charge ρ, current J) and to each other.',
+      tags: ['maxwells-equations'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'wave-1',
+      front: 'Derive the electromagnetic wave equation from Maxwell\'s equations in free space.',
+      back: 'In free space (ρ=0, J=0): take curl of (3): ∇×(∇×E) = −∂/∂t(∇×B) = −μ₀ε₀(∂²E/∂t²). Using ∇×(∇×E) = ∇(∇·E) − ∇²E = −∇²E (since ∇·E=0). So ∇²E = μ₀ε₀(∂²E/∂t²). This is a wave equation with speed c = 1/√(μ₀ε₀).',
+      tags: ['electromagnetic-waves'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'wave-2',
+      front: 'Define the Poynting vector S and state its physical meaning.',
+      back: 'S = (1/μ₀)(E × B). The Poynting vector represents the power per unit area carried by an EM wave (energy flux density). Its direction is the direction of wave propagation. Units: W/m². The time-averaged intensity is ⟨S⟩ = (1/2)cε₀E₀².',
+      tags: ['electromagnetic-waves'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'wave-3',
+      front: 'Derive the speed of light from Maxwell\'s equations.',
+      back: 'From the wave equation ∇²E = μ₀ε₀(∂²E/∂t²), the wave speed is c = 1/√(μ₀ε₀). Substituting: c = 1/√((4π×10⁻⁷)(8.854×10⁻¹²)) = 1/√(1.113×10⁻¹⁷) ≈ 2.998 × 10⁸ m/s. This was one of the great triumphs of Maxwell\'s theory.',
+      tags: ['electromagnetic-waves'],
+      difficulty: 'hard',
+    },
+  ]}
+/>
