@@ -29,7 +29,6 @@ const config = {
 
   // Enable faster build: rspack bundler, SSG worker threads, SWC loader, MDX cross-compiler cache
   future: {
-    faster: true,
     v4: {
       removeLegacyPostBuildHeadAttribute: true,
     },
