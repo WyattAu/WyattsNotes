@@ -1,5 +1,12 @@
 name: Uptime Monitor
 
+permissions:
+  contents: read
+
+concurrency:
+  group: uptime
+  cancel-in-progress: true
+
 on:
   schedule:
     # Every 30 minutes

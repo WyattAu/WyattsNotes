@@ -52,3 +52,9 @@ lighthouserc.js
 e2e/
 playwright-report/
 test-results/
+
+# Browser extension (separate build context)
+browser-extension/
+
+# Mobile app (separate build context)
+mobile-app/

@@ -1,5 +1,12 @@
 name: Index to Algolia
 
+permissions:
+  contents: read
+
+concurrency:
+  group: algolia
+  cancel-in-progress: true
+
 on:
   workflow_dispatch:
     inputs:

@@ -1,5 +1,12 @@
 name: CI
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [main, staging]
@@ -21,6 +28,7 @@ jobs:
   detect:
     name: Detect Change Type
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: github.event_name != 'schedule'
     outputs:
       change-type: ${{ steps.detect.outputs.change-type }}
@@ -29,20 +37,25 @@ jobs:
         with:
           fetch-depth: 2
       - id: detect
-        run: echo "change-type=$(node scripts/detect-change-type.mjs | cut -d= -f2)" >> "$GITHUB_OUTPUT"
+        run:
+          echo "change-type=$(node scripts/detect-change-type.mjs | cut -d= -f2)" >>
+          "$GITHUB_OUTPUT"
 
   dependabot:
     name: Dependabot Quick Check
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: github.actor == 'dependabot[bot]'
     steps:
       - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
           version: 10
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec tsc --noEmit
-      - run: pnpm exec eslint . --ext .ts,.tsx --max-warnings=0 --ignore-patterns 'src/plugins/service-worker/package.json' || true
+      - run:
+          pnpm exec eslint . --ext .ts,.tsx --max-warnings=0 --ignore-patterns
+          'src/plugins/service-worker/package.json' || true
   validate:
     name: Lint & Typecheck & Build
     runs-on: ubuntu-latest
@@ -86,11 +99,15 @@ jobs:
         run: pnpm run build
 
       - name: Check bundle size regression
-        if: always() && steps.build.outcome == 'success' && needs.detect.outputs.change-type != 'content'
+        if:
+          always() && steps.build.outcome == 'success' && needs.detect.outputs.change-type !=
+          'content'
         run: node scripts/check-bundle-size.mjs
 
       - name: Report bundle sizes
-        if: always() && steps.build.outcome == 'success' && needs.detect.outputs.change-type != 'content'
+        if:
+          always() && steps.build.outcome == 'success' && needs.detect.outputs.change-type !=
+          'content'
         run: |
           echo "## Bundle Sizes" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
@@ -118,7 +135,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: [detect]
-    if: (needs.detect.outputs.change-type != 'none' && needs.detect.outputs.change-type != 'content') || github.event_name == 'schedule'
+    if:
+      (needs.detect.outputs.change-type != 'none' && needs.detect.outputs.change-type != 'content')
+      || github.event_name == 'schedule'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6

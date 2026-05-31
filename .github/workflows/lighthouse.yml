@@ -1,5 +1,12 @@
 name: Lighthouse CI
 
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse
+  cancel-in-progress: true
+
 on:
   workflow_run:
     workflows:
@@ -170,8 +177,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run:
-          pnpm lighthouse -- --collect.url=https://dse.wyattau.com
-          --collect.startServerCommand=""
+          pnpm lighthouse -- --collect.url=https://dse.wyattau.com --collect.startServerCommand=""
       - name: Lighthouse summary
         if: always()
         run: node scripts/lighthouse-summary.mjs

@@ -1,5 +1,9 @@
 name: Dependabot Auto-merge
 
+concurrency:
+  group: dep-auto-merge-${{ github.ref }}
+  cancel-in-progress: true
+
 on: pull_request_target
 
 permissions:

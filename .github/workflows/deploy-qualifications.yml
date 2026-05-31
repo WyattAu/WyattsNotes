@@ -1,5 +1,8 @@
 name: Deploy Qualifications to Cloudflare Pages
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: [main]
@@ -50,7 +53,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules/.cache/docusaurus
-          key: docusaurus-qualifications-${ hashFiles('pnpm-lock.yaml') }
+          key: docusaurus-qualifications-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
             docusaurus-qualifications-
 
@@ -67,9 +70,6 @@ jobs:
 
       - name: Remove SSR bundle (Cloudflare Pages static-only, 25 MiB file limit)
         run: rm -rf build/__server
-
-      - name: Install wrangler
-        run: pnpm add -D wrangler
 
       - name: Deploy to Cloudflare Pages
         id: deploy
