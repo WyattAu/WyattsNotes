@@ -73,7 +73,7 @@ const ALL_SITES = [
     sitemapUrl: 'https://university.wyattau.com/sitemap.xml',
     indexName: 'wyattsnotes_university',
     key: 'university',
-    tags: ['university', 'degree', 'undergraduate', 'admissions'],
+    tags: ['university', 'degree', 'undergraduate', 'admissions', 'chemistry', 'computer-science', 'physical-chemistry', 'organic-chemistry', 'inorganic-chemistry', 'algorithms', 'systems', 'theory'],
   },
 ];
 

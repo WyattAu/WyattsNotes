@@ -133,7 +133,8 @@
         "ignorePlurals": true,
         "removeStopWords": ["en"],
         "exactOnSingleWord": "attribute",
-        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"]
+        "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"],
+        "optionalFilters": ["tags:chemistry", "tags:computer-science", "tags:physical-chemistry", "tags:organic-chemistry", "tags:inorganic-chemistry", "tags:algorithms", "tags:systems", "tags:theory"]
       }
     }
   ]

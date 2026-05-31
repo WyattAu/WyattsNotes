@@ -27,6 +27,8 @@ if (!subject || !docsPath) {
 const routeBase = subject === 'maths' ? '/docs/mathematics'
   : subject === 'physics' ? '/docs/physics'
   : subject === 'computing' ? '/docs/computing'
+  : subject === 'chemistry' ? '/docs/chemistry'
+  : subject === 'computer-science' ? '/docs/computer-science'
   : '/docs/admissions';
 
 const skipGridTables = subject === 'maths';
@@ -129,6 +131,8 @@ const config = {
             { label: 'Mathematics', to: '/docs/mathematics/linear-algebra' },
             { label: 'Physics', to: '/docs/physics/classical-mechanics' },
             { label: 'Computing', to: '/docs/computing/algorithms-and-data-structures' },
+            { label: 'Chemistry', to: '/docs/chemistry/physical-chemistry' },
+            { label: 'Computer Science', to: '/docs/computer-science/algorithms' },
           ],
         },
         {
