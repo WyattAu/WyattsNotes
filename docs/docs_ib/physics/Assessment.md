@@ -216,20 +216,20 @@ Examination session and vary from session to session depending on the difficulty
 - **[Course Overview](physics.md)** -- Overview of all five themes and their sub-topics.
 - **[Wrap Up](wrap-up.md)** -- Practice questions and solutions covering all themes.
 - **Theme A: Space, Time and Motion**
-- [Forces and Momentums](space-time-and-motions/forces-and-momentums.md)
+- [Forces and Momentums](1-space-time-and-motion/5_forces-and-momentum.md)
 - **Theme B: The Particulate Nature of Matter**
-- [Thermodynamics](matter-behavior/thermodynamics.md)
-- [Matter Behavior Wrap Up](matter-behavior/wrap-up.md)
+- [Thermodynamics](2-particulate-nature-of-matter/1_thermodynamics.md)
+- [Matter Behavior Wrap Up](2-particulate-nature-of-matter/9_wrap-up.md)
 - **Theme C: Wave Behaviour**
-- [Simple Harmonic Motion](waves/simple_harmonic_motion.md)
-- [Waves Wrap Up](waves/wrap-up.md)
+- [Simple Harmonic Motion](3-wave-behaviour/1_simple-harmonic-motion.md)
+- [Waves Wrap Up](3-wave-behaviour/9_wrap-up.md)
 - **Theme D: Fields**
 - [Electric and Magnetic Fields](4-fields/2_electric-and-magnetic-fields.md)
 - [Gravitational Fields](4-fields/1_gravitational-fields.md)
 - [Electromagnetic Induction](4-fields/4_induction.md)
 - [Motion in Electromagnetic Fields](4-fields/3_motion-in-electromagnetic-fields.md)
 - **Theme E: Nuclear and Quantum Physics**
-- [Nuclear and Quantum Wrap Up](nuclear-and-quantum/wrap-up.md)
+- [Nuclear and Quantum Wrap Up](5-nuclear-and-quantum-physics/9_wrap-up.md)
 
 ## Common Pitfalls
 

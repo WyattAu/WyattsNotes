@@ -54,7 +54,7 @@ Depends.
 - **A.5 Galilean and Special Relativity:** Reference frames; the postulates of special relativity;
   time dilation; length contraction; the Lorentz factor.
 
-> See [Forces and Momentum](space-time-and-motions/forces-and-momentums.md) for detailed notes.
+> See [Forces and Momentum](1-space-time-and-motion/5_forces-and-momentum.md) for detailed notes.
 
 ### Worked Example: Projectile Motion (A.1)
 
@@ -211,7 +211,7 @@ Gases, and the structure of matter.
 - **B.7 Discrete Energy and Radioactivity:** Atomic spectra; the Bohr model; radioactive decay;
   half-life; nuclear reactions.
 
-> See [Thermodynamics](matter-behavior/thermodynamics.md) for detailed notes.
+> See [Thermodynamics](2-particulate-nature-of-matter/1_thermodynamics.md) for detailed notes.
 
 ### Worked Example: Specific and Latent Heat (B.1)
 
@@ -341,7 +341,7 @@ Motion.
 - **C.5 Standing Waves and Resonance:** Standing wave patterns in strings and pipes; boundary
   conditions; resonance and harmonics.
 
-> See [Simple Harmonic Motion](waves/simple_harmonic_motion.md) for detailed notes.
+> See [Simple Harmonic Motion](3-wave-behaviour/1_simple-harmonic-motion.md) for detailed notes.
 
 ### Worked Example: Double-Slit Interference (C.3)
 
