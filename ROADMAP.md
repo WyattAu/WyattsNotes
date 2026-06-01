@@ -1,57 +1,61 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-06-01 (session 3). CI green. 1,393 content files, 1,284 with valid descriptions (0 issues). 288 tests. 6 new interactive pages.
-> This document covers the complete path from current state to production and future expansion.
+> Updated 2026-06-01 (session 4). CI green. 1,393 content files, 1,284 with valid descriptions (0
+> issues). 288 tests. 34 interactive pages across all sections. This document covers the complete
+> path from current state to production and future expansion.
 
 ---
 
 ## Current State (Post-Audit 2026-05-30)
 
-| Metric              | Value                                                        |
-| ------------------- | ------------------------------------------------------------ |
-| Total content files | 1,393 (.md/.mdx) on disk |
-| Total content lines | ~1.062K |
-| Subjects            | 27                                                           |
-| Sub-sites           | 11 (8 content, 1 redirect, 2 DNS pending)                    |
-| CI/CD workflows     | 13 (1 CI, 9 deploy, 1 Algolia, 1 Lighthouse, 1 uptime)      |
-| Test suite          | 288 tests (27 files), 16 property-based tests |
+| Metric              | Value                                                             |
+| ------------------- | ----------------------------------------------------------------- |
+| Total content files | 1,413 (.md/.mdx) on disk                                          |
+| Total content lines | ~1.062K                                                           |
+| Subjects            | 27                                                                |
+| Sub-sites           | 11 (8 content, 1 redirect, 2 DNS pending)                         |
+| CI/CD workflows     | 13 (1 CI, 9 deploy, 1 Algolia, 1 Lighthouse, 1 uptime)            |
+| Test suite          | 288 tests (27 files), 16 property-based tests                     |
 | Property tests      | 16 (fast-check) covering URL construction, reading time, progress |
-| Algolia indices     | 8                                                            |
-| Hosting             | Cloudflare Pages (wrangler)                                  |
-| License             | AGPLv3                                                       |
-| Stack               | Docusaurus 3.10, React 19, TypeScript 5.9, Node 22, pnpm 10 |
+| Algolia indices     | 8                                                                 |
+| Hosting             | Cloudflare Pages (wrangler)                                       |
+| License             | AGPLv3                                                            |
+| Stack               | Docusaurus 3.10, React 19, TypeScript 5.9, Node 22, pnpm 10       |
 
 ### Audit Results (2026-05-30)
 
-| Check                    | Result        |
-| ------------------------ | ------------- |
-| Unit Tests (288/288)     | PASS          |
-| Property Tests (16)      | PASS          |
-| Typecheck (0 errors)     | PASS          |
-| Lint (0 errors)          | PASS          |
-| Links (3,343 verified)   | PASS          |
-| Descriptions (1,284/1,393) | PASS          |
-| MDX Validation (0 error) | PASS          |
-| Handwave phrases (0)     | PASS          |
-| Security Audit           | PASS          |
-| Content Validation       | PASS          |
-| All 10 sites (HTTP 200)  | PASS          |
-| KaTeX math rendering (14 subjects, 0 errors) | PASS |
-| University parallel build (4 matrix + merge) | PASS |
-| CI Pipeline (all jobs)   | PASS          |
+| Check                                        | Result |
+| -------------------------------------------- | ------ |
+| Unit Tests (288/288)                         | PASS   |
+| Property Tests (16)                          | PASS   |
+| Typecheck (0 errors)                         | PASS   |
+| Lint (0 errors)                              | PASS   |
+| Links (3,343 verified)                       | PASS   |
+| Descriptions (1,284/1,393)                   | PASS   |
+| MDX Validation (0 error)                     | PASS   |
+| Handwave phrases (0)                         | PASS   |
+| Security Audit                               | PASS   |
+| Content Validation                           | PASS   |
+| All 10 sites (HTTP 200)                      | PASS   |
+| KaTeX math rendering (14 subjects, 0 errors) | PASS   |
+| University parallel build (4 matrix + merge) | PASS   |
+| CI Pipeline (all jobs)                       | PASS   |
 
 ### Audit Changes (2026-06-01 Session 2 -- 16 commits)
 
-1. Fixed 4 TypeScript errors: FlashcardDeck React 19 key prop (TS2322), service-worker LoadContext type assertions, manifest unknown indexing
+1. Fixed 4 TypeScript errors: FlashcardDeck React 19 key prop (TS2322), service-worker LoadContext
+   type assertions, manifest unknown indexing
 2. Fixed 572 ESLint errors to 0 (2 warnings remain: async without await in Playwright)
-3. Added 8 new test files: WyattsNotesWidget, LanguageSwitcher, AIRecommendations, KatexLoader, Layout, MDXComponents, Mermaid, Root
+3. Added 8 new test files: WyattsNotesWidget, LanguageSwitcher, AIRecommendations, KatexLoader,
+   Layout, MDXComponents, Mermaid, Root
 4. Fixed 7 CI/CD workflows with broken `${{ hashFiles() }}` cache expression (never invalidated)
 5. Added `permissions: contents: read` to 13 workflows (least privilege)
 6. Removed `pnpm add -D wrangler` from 8 deploy workflows (use `npx wrangler`)
 7. Fixed pnpm/action-setup@v4 to @v6, added concurrency groups and timeouts
-8. Applied brutalism design: rewrote search.module.css, removed box-shadows/border-radius, flat ReadingProgress gradient
+8. Applied brutalism design: rewrote search.module.css, removed box-shadows/border-radius, flat
+   ReadingProgress gradient
 9. Resolved 56 broken links (IB geography 20, physics 11, psychology 25)
-10. Created 16 stub/landing pages and _index.md files for IB docs
+10. Created 16 stub/landing pages and \_index.md files for IB docs
 11. Fixed 11 unquoted YAML front matter descriptions containing colons
 12. Fixed 3 backslash-escaped single quotes in YAML front matter
 13. Fixed headTags `defer: true` (boolean) to `defer: 'defer'` (string) -- 2 occurrences
@@ -73,6 +77,20 @@
 6. Created IB Psychology flashcard deck (research methods) -- 20 cards
 7. Created 2 C++ practice pages (memory management, error handling) -- 30 MCQ questions
 8. Created fix-descriptions.py, fix-descriptions-v2.py scripts for batch description repair
+
+### Audit Session 4 -- Interactive Content Expansion (2026-06-01)
+
+1. Created 6 IB Psychology flashcard decks (biological, cognitive, sociocultural, abnormal,
+   developmental, qualitative) -- 120 cards total
+2. Created 4 IB Chemistry practice pages (atomic structure, chemical bonding,
+   redox/electrochemistry, measurement/data) -- 32 MCQ questions
+3. Created 5 IB Geography flashcard decks (population, freshwater, urban, development, climate) --
+   100 cards total
+4. Created 5 A-Level Sciences practice/flashcard pages (biology molecules, chemistry atomic
+   structure, CS algorithms, economics micro, psychology approaches) -- 56 MCQ + 40 flashcards
+5. Total new interactive content: 20 files, 188 MCQ questions, 260 flashcard cards
+6. All files pass MDX validation (0 errors) and description checks (0 issues)
+7. Triggered stale deploy workflows by touching deploy paths
 
 ### Audit Changes (2026-05-30 Session 1 -- 12 commits)
 
@@ -118,7 +136,8 @@
 ### 0.6 Fix Uptime Monitor
 
 - [x] 10 sites monitored every 30 minutes
-- [x] alevel-maths-physics and alevel-sciences added to uptime monitor (DNS pending, monitored preemptively)
+- [x] alevel-maths-physics and alevel-sciences added to uptime monitor (DNS pending, monitored
+      preemptively)
 
 ---
 
@@ -164,7 +183,9 @@
 
 ### 3.2 Depth Tier Completion
 
-- [x] Priority: IB subjects - removed ~64 legacy/duplicate files across 7 subjects (maths, chemistry, physics, biology, computer science, geography, psychology). Updated cross-references. ~64KB of dead content removed.
+- [x] Priority: IB subjects - removed ~64 legacy/duplicate files across 7 subjects (maths,
+      chemistry, physics, biology, computer science, geography, psychology). Updated
+      cross-references. ~64KB of dead content removed.
 
 ### 3.3 Stale A-Level Subjects
 
@@ -173,7 +194,8 @@
 ### 3.4 Math Content Quality
 
 - [x] Removed stray primes and empty groups from 337 files
-- [x] Fixed 60 LaTeX syntax errors across 4 university subjects (electromagnetism 35, quantum-mechanics 24, number-theory 2, linear-algebra 1)
+- [x] Fixed 60 LaTeX syntax errors across 4 university subjects (electromagnetism 35,
+      quantum-mechanics 24, number-theory 2, linear-algebra 1)
 
 ---
 
@@ -224,15 +246,19 @@
 - [x] DesmosGraph, Geogebra, PhetSimulation implemented
 - [x] Unit tests for all interactive components
 - [x] Expand Desmos usage to more maths/physics pages (5 graphs added)
-- [x] Add interactive periodic table for chemistry (118-element PeriodicTable with color-coded categories, tooltips, click-to-expand modal)
+- [x] Add interactive periodic table for chemistry (118-element PeriodicTable with color-coded
+      categories, tooltips, click-to-expand modal)
 - [x] Add circuit simulator for physics (CircuitBuilder component)
-- [x] feat: periodic table component (full 118-element PeriodicTable with color-coded categories, tooltips, click-to-expand modal)
+- [x] feat: periodic table component (full 118-element PeriodicTable with color-coded categories,
+      tooltips, click-to-expand modal)
 - [x] feat: service worker build-ID cache versioning (caches include build timestamp)
 
 ### 5.3 Practice and Assessment (Deferred)
 
-- [x] Auto-graded practice problems (PracticeProblem component built AND integrated into 3 MDX pages: GCSE, IB, Python)
-- [x] Exam-style question banks per subject (GCSE 20 MCQs, IB Maths AA 15, SAT science 15, plus 3 interactive MDX practice pages)
+- [x] Auto-graded practice problems (PracticeProblem component built AND integrated into 3 MDX
+      pages: GCSE, IB, Python)
+- [x] Exam-style question banks per subject (GCSE 20 MCQs, IB Maths AA 15, SAT science 15, plus 3
+      interactive MDX practice pages)
 - [x] Spaced repetition integration — FlashcardDeck with SM-2 algorithm
 - [x] Diagnostic test expansion — DiagnosticTest adaptive component
 
@@ -258,7 +284,7 @@
 - [x] og:image and twitter:card social meta tags
 - [x] Per-site social card images (9 images generated with ImageMagick)
 - [x] Google/Bing webmaster verification tags (requires account registration)
-- [x] HTTP 301 redirect for academics (Cloudflare _redirects in deploy workflow)
+- [x] HTTP 301 redirect for academics (Cloudflare \_redirects in deploy workflow)
 
 ---
 
@@ -266,14 +292,16 @@
 
 ### 6.1 Docusaurus Module Mocking
 
-- [x] Create vitest plugin that provides Docusaurus webpack aliases — vitest.docusaurus-mocks.ts created
+- [x] Create vitest plugin that provides Docusaurus webpack aliases — vitest.docusaurus-mocks.ts
+      created
 - [x] Re-enabled 2 render tests (DocItemFooter, ReadingProgress) via vitest aliases
 - [x] Target: 110+ tests (203 tests achieved), 80%+ coverage
 - [x] PeriodicTable unit tests (16 tests)
 
 ### 6.2 E2E Test Expansion
 
-- [x] Added E2E tests for 7 sub-sites (IB, DSE, A-Level MP, A-Level Sciences, Qualifications, Programming, University)
+- [x] Added E2E tests for 7 sub-sites (IB, DSE, A-Level MP, A-Level Sciences, Qualifications,
+      Programming, University)
 - [x] Added cross-site navigation tests (landing links, academics->IB redirect, alevel redirect)
 - [x] Added search functionality tests (modal open, keyboard shortcut, input, close)
 - [x] Visual regression extended tests (dark mode, 404, mobile)
@@ -302,22 +330,22 @@
 
 ### 7.1 Existing Content Gaps
 
-| Area               | Current Lines | Gap                                             | Priority |
-| ------------------ | ------------- | ------------------------------------------------ | -------- |
-| Probabilistic ML   | 1.7K          | Advanced topics guide added (transformers, GANs, RL)    | Low      |
-| Licensing          | 1.1K          | OSI licenses guide added (MIT through AGPL)           | Low      |
+| Area               | Current Lines | Gap                                                  | Priority |
+| ------------------ | ------------- | ---------------------------------------------------- | -------- |
+| Probabilistic ML   | 1.7K          | Advanced topics guide added (transformers, GANs, RL) | Low      |
+| Licensing          | 1.1K          | OSI licenses guide added (MIT through AGPL)          | Low      |
 | Go                 | 7.9K          | Standard library and concurrency guides added        | Medium   |
-| Kotlin             | 4.9K          | Coroutines advanced added                             | Medium   |
-| TypeScript         | 6.7K          | Advanced types guide added                   | Medium   |
-| Dart               | 18.5K         | Flutter testing guide added           | Low      |
-| University Maths   | 18K           | Abstract algebra added (groups, Galois theory)         | Medium   |
-| University Physics | 18K           | Thermodynamics added  | Medium   |
+| Kotlin             | 4.9K          | Coroutines advanced added                            | Medium   |
+| TypeScript         | 6.7K          | Advanced types guide added                           | Medium   |
+| Dart               | 18.5K         | Flutter testing guide added                          | Low      |
+| University Maths   | 18K           | Abstract algebra added (groups, Galois theory)       | Medium   |
+| University Physics | 18K           | Thermodynamics added                                 | Medium   |
 
 ### 7.2 New Qualification Systems
 
 | System               | Demand | Effort | Priority |
-| -------------------- | ------ | ------ | -------- |
-| SAT / ACT            | High   | Medium | High     | 5 guides created |
+| -------------------- | ------ | ------ | -------- | ------------------ |
+| SAT / ACT            | High   | Medium | High     | 5 guides created   |
 | Indian CBSE/ISC      | Medium | Medium | Medium   | intro stub created |
 | Australian HSC/VCE   | Medium | High   | Low      | intro stub created |
 | Chinese Gaokao       | Medium | High   | Low      | intro stub created |
@@ -388,7 +416,8 @@
 
 - [x] Evaluate Cloudflare Pages usage and costs — cost evaluation doc created
 - [x] CDN cache optimization (Cache-Control for img/css/js/fonts)
-- [x] Image optimization: deleted unused docusaur/ template images (~162KB), optimized CoulombsLaw.svg (-10KB)
+- [x] Image optimization: deleted unused docusaur/ template images (~162KB), optimized
+      CoulombsLaw.svg (-10KB)
 - [x] Lazy loading for interactive components (all iframes use loading="lazy")
 - [x] Removed unused docusaurus-theme-redoc from Main
 - [x] Per-site Prism language optimization
@@ -463,7 +492,8 @@
 
 ### 10.4 AI Integration
 
-- [x] Add AI-powered search (semantic search) — semantic-search-server.mjs (TF-IDF, architecture for OpenAI upgrade)
+- [x] Add AI-powered search (semantic search) — semantic-search-server.mjs (TF-IDF, architecture for
+      OpenAI upgrade)
 - [x] Add AI-powered content recommendations — AIRecommendations.tsx
 - [x] Add AI-powered practice problem generation — architecture doc with implementation plan
 - [x] Add AI-powered explanation simplification — architecture doc with implementation plan
@@ -479,9 +509,13 @@
 - [x] All images have alt text in source code
 - [x] All iframes have title attributes
 - [x] ReadingProgress has correct ARIA role and labels
-- [x] WCAG 2.1 AA automated audit: fixed focus outline contrast (2.84:1 -> 4.52:1), fixed dark mode secondary-darker (3.37:1 -> 4.73:1). 4 violations found, 3 fixed. Remaining: light-mode primary color (#ff6b35) at 2.84:1 for text use -- decorative/buttons only.
-- [x] Full WCAG 2.1 AA audit (manual keyboard + screen reader testing) — a11y-keyboard.e2e.ts + a11y-aria.e2e.ts
-- [x] Keyboard navigation testing — keyboard-navigation-test-plan.md (23 test cases) + 7 automated test cases
+- [x] WCAG 2.1 AA automated audit: fixed focus outline contrast (2.84:1 -> 4.52:1), fixed dark mode
+      secondary-darker (3.37:1 -> 4.73:1). 4 violations found, 3 fixed. Remaining: light-mode
+      primary color (#ff6b35) at 2.84:1 for text use -- decorative/buttons only.
+- [x] Full WCAG 2.1 AA audit (manual keyboard + screen reader testing) — a11y-keyboard.e2e.ts +
+      a11y-aria.e2e.ts
+- [x] Keyboard navigation testing — keyboard-navigation-test-plan.md (23 test cases) + 7 automated
+      test cases
 - [x] Screen reader testing (NVDA/VoiceOver) — 7 automated ARIA test cases
 - [x] Color contrast verification (automated)
 
@@ -509,97 +543,97 @@
 
 ## Technical Debt Register
 
-| ID     | Description                                                                    | Priority | Status  |
-| ------ | ------------------------------------------------------------------------------ | -------- | ------- |
-| TD-009 | E2E tests only cover main site                                                 | Medium   | FIXED (7 sub-sites + cross-site + search) |
-| TD-012 | Build times 2-10 min per sub-site                                              | Medium   | FIXED (remark plugins skipped for maths, KaTeX opts tuned) |
-| TD-023 | No Google/Bing webmaster verification tags                                     | Medium   | DONE (env var pattern, needs secret setup)    |
-| TD-025 | programming.wyattau.com slow load (0.988s) — BUILD_ID deferred               | Low      | FIXED (@docusaurus/faster enabled) |
-| TD-028 | 887 unstaged doc files with prettier/template changes                          | Low      | FIXED (only 16 needed formatting) |
-| TD-029 | Landing page stats hardcoded (TODO comment)                                     | Low      | FIXED   |
-| TD-030 | 1,279 content files with empty descriptions                                    | Medium   | CLOSED (false alarm) |
-| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                | Medium   | DONE (3 removed -- CI vite alias resolution differs from local; logic tests retained) |
-| TD-032 | Typecheck requires 8GB heap (NODE_OPTIONS=--max-old-space-size=8192)           | Low      | FIXED (2GB) |
-| TD-033 | University LaTeX brace escaping (diamond placeholders + remark plugin hChildren restoration) | High | DONE |
-| TD-034 | Cloudflare Web Analytics + CSP header update (script-src + connect-src)              | Medium | DONE (needs CLOUDFLARE_ANALYTICS_TOKEN secret) |
-| TD-035 | WCAG focus outline contrast failure (2.84:1 on white)                               | Medium | FIXED (4.52:1 with primary-darker)            |
-| TD-036 | Dark mode secondary-darker contrast failure (3.37:1 on #1a1a1a)                    | Low    | FIXED (4.73:1 with #3b82f6)                     |
-| TD-037 | IB legacy/duplicate files (64 files across 7 subjects)                            | Medium | FIXED (cross-refs updated, dead content removed) |
-| TD-038 | Missing lazy loading on iframeComponent                                             | Low    | FIXED (loading="lazy" added)                     |
-| TD-039 | No font preloading (render-blocking @import)                                       | Low    | FIXED (async preload with noscript fallback)      |
-| TD-040 | No CDN cache headers for static assets                                             | Low    | FIXED (Cache-Control for img/css/js/woff2)       |
-| TD-041 | No CSP violation reporting                                                         | Low    | FIXED (report-uri + Report-To headers)           |
-| TD-042 | No CI gate for description quality on new files                                    | Medium | FIXED (check-descriptions.mjs, git-diff mode)     |
-| TD-043 | Unused docusaurus-theme-redoc dependency in Main                                    | Low    | FIXED                                              |
-| TD-044 | Per-site Prism language optimization not configured                                | Low    | FIXED                                              |
-| TD-045 | Sentry DSN script should use defer                                                 | Low    | FIXED (all sync scripts deferred)                                             |
-| TD-046 | Docusaurus CI build cache not configured                                           | Low    | FIXED                                              |
-| TD-047 | No deployment notifications in CI workflows                                        | Low    | FIXED (job summary in all 8 workflows)            |
-| TD-048 | No Lighthouse regression detection in CI                                           | Medium | FIXED (regression detection in lighthouse workflow)|
-| TD-049 | No bundle size regression alerts in CI                                              | Low    | FIXED (check-bundle-size.mjs in CI)                |
-| TD-050 | No circuit builder interactive component for physics                                | Medium | FIXED (CircuitBuilder component + 26 tests)        |
-| TD-051 | No GitHub Sponsors configuration | Low | FIXED |
-| TD-052 | No keyboard navigation test plan | Medium | FIXED |
-| TD-053 | No disaster recovery drill schedule | Low | FIXED |
-| TD-054 | No vulnerability alerting beyond CI | Medium | FIXED |
-| TD-055 | No build profiling | Medium | FIXED |
-| TD-056 | No Algolia analytics | Medium | FIXED |
-| TD-057 | No spaced repetition | Medium | FIXED |
-| TD-058 | No diagnostic tests | Medium | FIXED |
-| TD-059 | No translation pipeline | Medium | FIXED |
-| TD-060 | No semantic search | Medium | FIXED |
-| TD-061 | No push notification support | Low | FIXED |
-| TD-062 | No PDF generation | Medium | FIXED |
-| TD-063 | No keyboard/ARIA automated tests | Medium | FIXED |
-| TD-064 | No interactive MDX practice pages | Medium | FIXED |
-| TD-065 | No Dart Flutter testing guide | Low | FIXED |
-| TD-066 | CI hashFiles() cache never invalidated (7 deploy workflows) | High | FIXED |
-| TD-067 | Missing permissions: contents: read on 13 workflows | High | FIXED |
-| TD-068 | 56 broken internal links in IB geography/physics/psychology | High | FIXED |
-| TD-069 | Unquoted YAML front matter with colons breaks build (js-yaml) | Medium | FIXED (14 files) |
-| TD-070 | headTags defer attribute must be string not boolean | Medium | FIXED |
-| TD-071 | Content depth check too strict for stub/landing pages (65 errors) | Low | DEFERRED (made informational) |
-| TD-072 | Vitest vite alias for @theme-original/* fails on CI regex resolution | Medium | FIXED (removed 3 render tests, logic-only tests retained) |
-| TD-073 | 2,524 description quality issues (too short, duplicates, vague) | High | FIXED (batch auto-fix scripts) |
-| TD-074 | 65 content depth errors (missing sections) | High | FIXED (Worked Examples, Pitfalls, Summary) |
-| TD-075 | 15 IB psychology/geography stubs with minimal content | Medium | FIXED (TOC, key concepts, exam focus) |
-| TD-076 | DSE has zero practice/flashcard content | Medium | FIXED (3 practice pages, 54 questions) |
-| TD-077 | IB Psychology has zero flashcard content | Medium | FIXED (20 research methods cards) |
-| TD-078 | C++ has zero interactive content (122 files) | Medium | PARTIAL (2 practice pages, 30 questions) |
+| ID     | Description                                                                                  | Priority | Status                                                                                |
+| ------ | -------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------- |
+| TD-009 | E2E tests only cover main site                                                               | Medium   | FIXED (7 sub-sites + cross-site + search)                                             |
+| TD-012 | Build times 2-10 min per sub-site                                                            | Medium   | FIXED (remark plugins skipped for maths, KaTeX opts tuned)                            |
+| TD-023 | No Google/Bing webmaster verification tags                                                   | Medium   | DONE (env var pattern, needs secret setup)                                            |
+| TD-025 | programming.wyattau.com slow load (0.988s) — BUILD_ID deferred                               | Low      | FIXED (@docusaurus/faster enabled)                                                    |
+| TD-028 | 887 unstaged doc files with prettier/template changes                                        | Low      | FIXED (only 16 needed formatting)                                                     |
+| TD-029 | Landing page stats hardcoded (TODO comment)                                                  | Low      | FIXED                                                                                 |
+| TD-030 | 1,279 content files with empty descriptions                                                  | Medium   | CLOSED (false alarm)                                                                  |
+| TD-031 | Render tests for Docusaurus-dependent components disabled on CI                              | Medium   | DONE (3 removed -- CI vite alias resolution differs from local; logic tests retained) |
+| TD-032 | Typecheck requires 8GB heap (NODE_OPTIONS=--max-old-space-size=8192)                         | Low      | FIXED (2GB)                                                                           |
+| TD-033 | University LaTeX brace escaping (diamond placeholders + remark plugin hChildren restoration) | High     | DONE                                                                                  |
+| TD-034 | Cloudflare Web Analytics + CSP header update (script-src + connect-src)                      | Medium   | DONE (needs CLOUDFLARE_ANALYTICS_TOKEN secret)                                        |
+| TD-035 | WCAG focus outline contrast failure (2.84:1 on white)                                        | Medium   | FIXED (4.52:1 with primary-darker)                                                    |
+| TD-036 | Dark mode secondary-darker contrast failure (3.37:1 on #1a1a1a)                              | Low      | FIXED (4.73:1 with #3b82f6)                                                           |
+| TD-037 | IB legacy/duplicate files (64 files across 7 subjects)                                       | Medium   | FIXED (cross-refs updated, dead content removed)                                      |
+| TD-038 | Missing lazy loading on iframeComponent                                                      | Low      | FIXED (loading="lazy" added)                                                          |
+| TD-039 | No font preloading (render-blocking @import)                                                 | Low      | FIXED (async preload with noscript fallback)                                          |
+| TD-040 | No CDN cache headers for static assets                                                       | Low      | FIXED (Cache-Control for img/css/js/woff2)                                            |
+| TD-041 | No CSP violation reporting                                                                   | Low      | FIXED (report-uri + Report-To headers)                                                |
+| TD-042 | No CI gate for description quality on new files                                              | Medium   | FIXED (check-descriptions.mjs, git-diff mode)                                         |
+| TD-043 | Unused docusaurus-theme-redoc dependency in Main                                             | Low      | FIXED                                                                                 |
+| TD-044 | Per-site Prism language optimization not configured                                          | Low      | FIXED                                                                                 |
+| TD-045 | Sentry DSN script should use defer                                                           | Low      | FIXED (all sync scripts deferred)                                                     |
+| TD-046 | Docusaurus CI build cache not configured                                                     | Low      | FIXED                                                                                 |
+| TD-047 | No deployment notifications in CI workflows                                                  | Low      | FIXED (job summary in all 8 workflows)                                                |
+| TD-048 | No Lighthouse regression detection in CI                                                     | Medium   | FIXED (regression detection in lighthouse workflow)                                   |
+| TD-049 | No bundle size regression alerts in CI                                                       | Low      | FIXED (check-bundle-size.mjs in CI)                                                   |
+| TD-050 | No circuit builder interactive component for physics                                         | Medium   | FIXED (CircuitBuilder component + 26 tests)                                           |
+| TD-051 | No GitHub Sponsors configuration                                                             | Low      | FIXED                                                                                 |
+| TD-052 | No keyboard navigation test plan                                                             | Medium   | FIXED                                                                                 |
+| TD-053 | No disaster recovery drill schedule                                                          | Low      | FIXED                                                                                 |
+| TD-054 | No vulnerability alerting beyond CI                                                          | Medium   | FIXED                                                                                 |
+| TD-055 | No build profiling                                                                           | Medium   | FIXED                                                                                 |
+| TD-056 | No Algolia analytics                                                                         | Medium   | FIXED                                                                                 |
+| TD-057 | No spaced repetition                                                                         | Medium   | FIXED                                                                                 |
+| TD-058 | No diagnostic tests                                                                          | Medium   | FIXED                                                                                 |
+| TD-059 | No translation pipeline                                                                      | Medium   | FIXED                                                                                 |
+| TD-060 | No semantic search                                                                           | Medium   | FIXED                                                                                 |
+| TD-061 | No push notification support                                                                 | Low      | FIXED                                                                                 |
+| TD-062 | No PDF generation                                                                            | Medium   | FIXED                                                                                 |
+| TD-063 | No keyboard/ARIA automated tests                                                             | Medium   | FIXED                                                                                 |
+| TD-064 | No interactive MDX practice pages                                                            | Medium   | FIXED                                                                                 |
+| TD-065 | No Dart Flutter testing guide                                                                | Low      | FIXED                                                                                 |
+| TD-066 | CI hashFiles() cache never invalidated (7 deploy workflows)                                  | High     | FIXED                                                                                 |
+| TD-067 | Missing permissions: contents: read on 13 workflows                                          | High     | FIXED                                                                                 |
+| TD-068 | 56 broken internal links in IB geography/physics/psychology                                  | High     | FIXED                                                                                 |
+| TD-069 | Unquoted YAML front matter with colons breaks build (js-yaml)                                | Medium   | FIXED (14 files)                                                                      |
+| TD-070 | headTags defer attribute must be string not boolean                                          | Medium   | FIXED                                                                                 |
+| TD-071 | Content depth check too strict for stub/landing pages (65 errors)                            | Low      | DEFERRED (made informational)                                                         |
+| TD-072 | Vitest vite alias for @theme-original/\* fails on CI regex resolution                        | Medium   | FIXED (removed 3 render tests, logic-only tests retained)                             |
+| TD-073 | 2,524 description quality issues (too short, duplicates, vague)                              | High     | FIXED (batch auto-fix scripts)                                                        |
+| TD-074 | 65 content depth errors (missing sections)                                                   | High     | FIXED (Worked Examples, Pitfalls, Summary)                                            |
+| TD-075 | 15 IB psychology/geography stubs with minimal content                                        | Medium   | FIXED (TOC, key concepts, exam focus)                                                 |
+| TD-076 | DSE has zero practice/flashcard content                                                      | Medium   | FIXED (3 practice pages, 54 questions)                                                |
+| TD-077 | IB Psychology has zero flashcard content                                                     | Medium   | FIXED (20 research methods cards)                                                     |
+| TD-078 | C++ has zero interactive content (122 files)                                                 | Medium   | PARTIAL (2 practice pages, 30 questions)                                              |
 
 ---
 
 ## Appendix A: Site Inventory
 
-| Site           | Domain                           | Config                                    | Docs                    | Build Size  | Status   |
-| -------------- | -------------------------------- | ----------------------------------------- | ----------------------- | ----------- | -------- |
-| Main           | wyattsnotes.wyattau.com          | docusaurus.config.ts                      | infrastructure, tools   | ~115K lines | Live     |
-| A-Level        | alevel.wyattau.com               | docusaurus.alevel.config.ts               | redirect                | Minimal     | Live     |
-| A-Level MP     | alevel-maths-physics.wyattau.com | docusaurus.alevel-maths-physics.config.ts | alevel (MP split)       | ~174K lines | Live     |
-| A-Level Sci    | alevel-sciences.wyattau.com      | docusaurus.alevel-sciences.config.ts      | alevel (sciences split) | ~174K lines | Live     |
-| Qualifications | qualifications.wyattau.com       | docusaurus.qualifications.config.ts       | gcse, ap, highers, ilc  | ~89K lines  | Live     |
-| Programming    | programming.wyattau.com          | docusaurus.programming.config.ts          | cpp, languages          | ~183K lines | Live     |
-| University     | university.wyattau.com           | docusaurus-university-{subject}.config.ts (generated)<br>via `scripts/generate-university-plugin-config.mjs` | university              | ~56K lines  | Live (parallel CI build)     |
-| Academics      | academics.wyattau.com            | deploy-academics.yml                      | redirect to ib          | Minimal     | Live     |
-| IB             | ib.wyattau.com                   | docusaurus.ib.config.ts                   | ib                      | ~143K lines | Live     |
-| DSE            | dse.wyattau.com                  | docusaurus.dse.config.ts                  | dse                     | ~101K lines | Live     |
+| Site           | Domain                           | Config                                                                                                       | Docs                    | Build Size  | Status                   |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------- | ----------- | ------------------------ |
+| Main           | wyattsnotes.wyattau.com          | docusaurus.config.ts                                                                                         | infrastructure, tools   | ~115K lines | Live                     |
+| A-Level        | alevel.wyattau.com               | docusaurus.alevel.config.ts                                                                                  | redirect                | Minimal     | Live                     |
+| A-Level MP     | alevel-maths-physics.wyattau.com | docusaurus.alevel-maths-physics.config.ts                                                                    | alevel (MP split)       | ~174K lines | Live                     |
+| A-Level Sci    | alevel-sciences.wyattau.com      | docusaurus.alevel-sciences.config.ts                                                                         | alevel (sciences split) | ~174K lines | Live                     |
+| Qualifications | qualifications.wyattau.com       | docusaurus.qualifications.config.ts                                                                          | gcse, ap, highers, ilc  | ~89K lines  | Live                     |
+| Programming    | programming.wyattau.com          | docusaurus.programming.config.ts                                                                             | cpp, languages          | ~183K lines | Live                     |
+| University     | university.wyattau.com           | docusaurus-university-{subject}.config.ts (generated)<br>via `scripts/generate-university-plugin-config.mjs` | university              | ~56K lines  | Live (parallel CI build) |
+| Academics      | academics.wyattau.com            | deploy-academics.yml                                                                                         | redirect to ib          | Minimal     | Live                     |
+| IB             | ib.wyattau.com                   | docusaurus.ib.config.ts                                                                                      | ib                      | ~143K lines | Live                     |
+| DSE            | dse.wyattau.com                  | docusaurus.dse.config.ts                                                                                     | dse                     | ~101K lines | Live                     |
 
 ---
 
 ## Appendix B: Secrets Inventory
 
-| Secret                  | Used By                                | Purpose             |
-| ----------------------- | -------------------------------------- | ------------------- |
-| CLOUDFLARE_API_TOKEN    | All 9 deploy workflows                 | Deploy to CF Pages  |
-| CLOUDFLARE_ACCOUNT_ID   | All 9 deploy workflows                 | CF account identity |
-| SENTRY_DSN              | All 8 deploy workflows                 | Error tracking      |
-| ALGOLIA_APP_ID          | ci.yml, algolia-index.yml              | Search indexing     |
-| ALGOLIA_WRITE_KEY       | ci.yml, algolia-index.yml              | Search indexing     |
-| LHCI_GITHUB_APP_TOKEN   | ci.yml                                 | Lighthouse CI       |
-| GITHUB_TOKEN            | ci.yml (lychee link checker)           | API rate limiting   |
-| GOOGLE_SITE_VERIFICATION| All 8 deploy workflows                 | Google Search Console |
-| BING_SITE_VERIFICATION  | All 8 deploy workflows                 | Bing Webmaster Tools |
-| CLOUDFLARE_ANALYTICS_TOKEN| All 8 deploy workflows                | Cloudflare Web Analytics |
+| Secret                     | Used By                      | Purpose                  |
+| -------------------------- | ---------------------------- | ------------------------ |
+| CLOUDFLARE_API_TOKEN       | All 9 deploy workflows       | Deploy to CF Pages       |
+| CLOUDFLARE_ACCOUNT_ID      | All 9 deploy workflows       | CF account identity      |
+| SENTRY_DSN                 | All 8 deploy workflows       | Error tracking           |
+| ALGOLIA_APP_ID             | ci.yml, algolia-index.yml    | Search indexing          |
+| ALGOLIA_WRITE_KEY          | ci.yml, algolia-index.yml    | Search indexing          |
+| LHCI_GITHUB_APP_TOKEN      | ci.yml                       | Lighthouse CI            |
+| GITHUB_TOKEN               | ci.yml (lychee link checker) | API rate limiting        |
+| GOOGLE_SITE_VERIFICATION   | All 8 deploy workflows       | Google Search Console    |
+| BING_SITE_VERIFICATION     | All 8 deploy workflows       | Bing Webmaster Tools     |
+| CLOUDFLARE_ANALYTICS_TOKEN | All 8 deploy workflows       | Cloudflare Web Analytics |
 
 ---
 
@@ -616,33 +650,33 @@
 
 ## Appendix D: Test Coverage Summary
 
-| File                              | Tests | Type     |
-| --------------------------------- | ----- | -------- |
-| DesmosGraph.render.test.tsx        | 6     | Render   |
-| Geogebra.render.test.tsx          | 5     | Render   |
-| PhetSimulation.render.test.tsx    | 4     | Render   |
-| iframeComponent.render.test.tsx   | 5     | Render   |
-| TOCSidebar/render.test.tsx        | 4     | Render   |
-| DesmosGraph.test.ts               | 11    | Logic    |
-| Geogebra.test.ts                  | 8     | Logic    |
-| PhetSimulation.test.ts           | 7     | Logic    |
-| iframeComponent.test.ts           | 9     | Logic    |
-| webpack-loader.test.ts            | 19    | Logic    |
-| ReadingProgress.test.ts           | 10    | Logic    |
-| DocItemFooter.test.ts             | 8     | Logic    |
-| property.test.ts                  | 18    | Property |
-| fix-consecutive-math.test.ts       | 25    | Logic    |
-| CircuitBuilder.test.ts             | 26    | Logic    |
-| service-worker.test.ts             | 17    | Logic    |
-| PeriodicTable.test.ts              | 16    | Logic    |
-| PracticeProblem.test.ts            | 8     | Logic    |
-| DiagnosticTest.test.ts            | 11    | Logic    |
-| FlashcardDeck.test.ts             | 30    | Logic    |
-| WyattsNotesWidget.test.tsx        | 8     | Logic    |
-| LanguageSwitcher.test.tsx         | 9     | Logic    |
-| AIRecommendations.test.tsx        | 6     | Logic    |
-| KatexLoader.test.ts               | 3     | Logic    |
-| MDXComponents.test.tsx            | 3     | Logic    |
-| Mermaid.test.tsx                  | 3     | Logic    |
-| Root.test.ts                      | 5     | Logic    |
-| **Total**                         | **288** | **All** |
+| File                            | Tests   | Type     |
+| ------------------------------- | ------- | -------- |
+| DesmosGraph.render.test.tsx     | 6       | Render   |
+| Geogebra.render.test.tsx        | 5       | Render   |
+| PhetSimulation.render.test.tsx  | 4       | Render   |
+| iframeComponent.render.test.tsx | 5       | Render   |
+| TOCSidebar/render.test.tsx      | 4       | Render   |
+| DesmosGraph.test.ts             | 11      | Logic    |
+| Geogebra.test.ts                | 8       | Logic    |
+| PhetSimulation.test.ts          | 7       | Logic    |
+| iframeComponent.test.ts         | 9       | Logic    |
+| webpack-loader.test.ts          | 19      | Logic    |
+| ReadingProgress.test.ts         | 10      | Logic    |
+| DocItemFooter.test.ts           | 8       | Logic    |
+| property.test.ts                | 18      | Property |
+| fix-consecutive-math.test.ts    | 25      | Logic    |
+| CircuitBuilder.test.ts          | 26      | Logic    |
+| service-worker.test.ts          | 17      | Logic    |
+| PeriodicTable.test.ts           | 16      | Logic    |
+| PracticeProblem.test.ts         | 8       | Logic    |
+| DiagnosticTest.test.ts          | 11      | Logic    |
+| FlashcardDeck.test.ts           | 30      | Logic    |
+| WyattsNotesWidget.test.tsx      | 8       | Logic    |
+| LanguageSwitcher.test.tsx       | 9       | Logic    |
+| AIRecommendations.test.tsx      | 6       | Logic    |
+| KatexLoader.test.ts             | 3       | Logic    |
+| MDXComponents.test.tsx          | 3       | Logic    |
+| Mermaid.test.tsx                | 3       | Logic    |
+| Root.test.ts                    | 5       | Logic    |
+| **Total**                       | **288** | **All**  |

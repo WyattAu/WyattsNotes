@@ -1,7 +1,9 @@
 ---
 id: intro
 title: C++ Systems Programming
-description: 'C++ Programming C++ Systems Programming notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'C++ Programming C++ Systems Programming notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective revision.'
 slug: /intro
 sidebar_position: 1
 ---
@@ -125,3 +127,5 @@ Modification.
 
 Read the modules in order. Each module builds on the previous one and assumes you have internalised
 the key results. Code examples can be edited live in the embedded Compiler Explorer iframe above.
+
+<!-- Last reviewed: 2026-06-01 -->

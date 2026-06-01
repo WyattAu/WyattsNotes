@@ -1,7 +1,9 @@
 ---
 title: GCSE Biology Study Guide
-date: 2026-05-31
-description: 'GCSE Biology.Md Biology Study notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
+date: 2026-06-01
+description:
+  'GCSE Biology.Md Biology Study notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive revision.'
 tags:
   - gcse
   - biology
@@ -22,17 +24,17 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 
 ### 1.1 Cell Structure
 
-| Organelle | Function |
-|---|---|
-| Nucleus | Contains DNA; controls cell activities |
-| Cell membrane | Controls movement of substances in and out of the cell; partially permeable |
-| Mitochondria | Site of aerobic respiration; produces ATP (energy) |
-| Cytoplasm | Site of chemical reactions; contains enzymes |
-| Ribosomes | Site of protein synthesis |
-| Cell wall (plant) | Made of cellulose; provides strength and support |
-| Chloroplast (plant) | Site of photosynthesis; contains chlorophyll |
-| Permanent vacuole (plant) | Contains cell sap; maintains turgor pressure |
-| Vacuole (animal) | Small and temporary; involved in storage and transport |
+| Organelle                 | Function                                                                    |
+| ------------------------- | --------------------------------------------------------------------------- |
+| Nucleus                   | Contains DNA; controls cell activities                                      |
+| Cell membrane             | Controls movement of substances in and out of the cell; partially permeable |
+| Mitochondria              | Site of aerobic respiration; produces ATP (energy)                          |
+| Cytoplasm                 | Site of chemical reactions; contains enzymes                                |
+| Ribosomes                 | Site of protein synthesis                                                   |
+| Cell wall (plant)         | Made of cellulose; provides strength and support                            |
+| Chloroplast (plant)       | Site of photosynthesis; contains chlorophyll                                |
+| Permanent vacuole (plant) | Contains cell sap; maintains turgor pressure                                |
+| Vacuole (animal)          | Small and temporary; involved in storage and transport                      |
 
 ### 1.2 Plant vs Animal Cells
 
@@ -43,16 +45,16 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 
 ### 1.3 Cell Specialisation
 
-| Cell type | Specialisation |
-|---|---|
-| Sperm cell | Long tail for swimming; lots of mitochondria; contains acrosome with enzymes |
-| Egg cell | Large cytoplasm with nutrient stores; haploid nucleus |
-| Red blood cell | Biconcave shape (large surface area); no nucleus; contains haemoglobin |
-| White blood cell | Can change shape to engulf pathogens; produces antibodies |
-| Nerve cell | Long axon for carrying electrical impulses; branched endings (dendrites) |
-| Root hair cell | Elongated projection for increased surface area to absorb water and minerals |
-| Palisade cell | Many chloroplasts; tall shape near the top of the leaf for maximum light |
-| Fat cell | Large lipid droplet filling most of the cell; small cytoplasm and nucleus |
+| Cell type        | Specialisation                                                               |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Sperm cell       | Long tail for swimming; lots of mitochondria; contains acrosome with enzymes |
+| Egg cell         | Large cytoplasm with nutrient stores; haploid nucleus                        |
+| Red blood cell   | Biconcave shape (large surface area); no nucleus; contains haemoglobin       |
+| White blood cell | Can change shape to engulf pathogens; produces antibodies                    |
+| Nerve cell       | Long axon for carrying electrical impulses; branched endings (dendrites)     |
+| Root hair cell   | Elongated projection for increased surface area to absorb water and minerals |
+| Palisade cell    | Many chloroplasts; tall shape near the top of the leaf for maximum light     |
+| Fat cell         | Large lipid droplet filling most of the cell; small cytoplasm and nucleus    |
 
 ### 1.4 Microscopy
 
@@ -76,8 +78,8 @@ contains key concepts, definitions, and essential facts. Use this alongside the
   2. Chromosomes line up at the centre of the cell (metaphase)
   3. Chromosomes are pulled apart by spindle fibres (anaphase)
   4. Cell divides into two (telophase and cytokinesis)
-- The cell cycle: interphase (growth and DNA replication) followed by mitosis (division) followed
-  by cell division
+- The cell cycle: interphase (growth and DNA replication) followed by mitosis (division) followed by
+  cell division
 - In multicellular organisms, mitosis is needed for growth and replacement of damaged cells
 
 **Meiosis**
@@ -94,8 +96,8 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 ### 1.6 Stem Cells
 
 - Stem cells are undifferentiated cells that can divide to produce specialised cells
-- **Embryonic stem cells**: can differentiate into any type of cell (totipotent/pluripotent); found in
-  early embryos
+- **Embryonic stem cells**: can differentiate into any type of cell (totipotent/pluripotent); found
+  in early embryos
 - **Adult stem cells**: can differentiate into a limited range of cell types; found in bone marrow,
   skin, and other tissues
 - **Meristems (plants)**: stem cells found in the tips of roots and shoots; can differentiate into
@@ -114,16 +116,17 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 
 - The digestive system breaks down large molecules into smaller, soluble molecules that can be
   absorbed into the blood
-- **Mouth**: mechanical digestion (teeth); chemical digestion (amylase breaks down starch into maltose)
+- **Mouth**: mechanical digestion (teeth); chemical digestion (amylase breaks down starch into
+  maltose)
 - **Oesophagus**: peristalsis moves food to the stomach
 - **Stomach**: produces hydrochloric acid (kills bacteria, provides acidic pH for enzymes) and
   protease (breaks down proteins into amino acids)
-- **Small intestine**: main site of digestion and absorption; produces amylase, protease, and lipase;
-  villi increase surface area for absorption
+- **Small intestine**: main site of digestion and absorption; produces amylase, protease, and
+  lipase; villi increase surface area for absorption
 - **Large intestine**: absorbs water from remaining material; produces faeces
 - **Pancreas**: produces amylase, protease, and lipase; releases them into the small intestine
-- **Bile**: produced by the liver, stored in the gall bladder; emulsifies fats (increases surface area
-  for lipase); neutralises stomach acid
+- **Bile**: produced by the liver, stored in the gall bladder; emulsifies fats (increases surface
+  area for lipase); neutralises stomach acid
 - **Villi**: finger-like projections in the small intestine; have a large surface area, thin walls,
   and a dense network of blood capillaries for efficient absorption
 
@@ -141,20 +144,20 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 
 **Blood Vessels**
 
-| Vessel | Structure | Function |
-|---|---|---|
-| Artery | Thick walls, small lumen, elastic tissue | Carries blood away from the heart at high pressure |
-| Vein | Thin walls, large lumen, valves | Carries blood towards the heart at low pressure |
-| Capillary | One cell thick walls, very narrow | Exchange of materials between blood and cells |
+| Vessel    | Structure                                | Function                                           |
+| --------- | ---------------------------------------- | -------------------------------------------------- |
+| Artery    | Thick walls, small lumen, elastic tissue | Carries blood away from the heart at high pressure |
+| Vein      | Thin walls, large lumen, valves          | Carries blood towards the heart at low pressure    |
+| Capillary | One cell thick walls, very narrow        | Exchange of materials between blood and cells      |
 
 **Blood Components**
 
-| Component | Function |
-|---|---|
-| Red blood cells | Carry oxygen (bound to haemoglobin) |
-| White blood cells | Defend against pathogens (phagocytosis and antibody production) |
-| Platelets | Cell fragments that help blood to clot at wound sites |
-| Plasma | Liquid that carries dissolved substances (glucose, amino acids, hormones, urea, CO2) |
+| Component         | Function                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| Red blood cells   | Carry oxygen (bound to haemoglobin)                                                  |
+| White blood cells | Defend against pathogens (phagocytosis and antibody production)                      |
+| Platelets         | Cell fragments that help blood to clot at wound sites                                |
+| Plasma            | Liquid that carries dissolved substances (glucose, amino acids, hormones, urea, CO2) |
 
 ### 2.3 Respiratory System
 
@@ -181,7 +184,8 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 - **Reflex arc**: a rapid, automatic response that does not involve conscious thought
   - Stimulus -- receptor -- sensory neuron -- relay neuron -- motor neuron -- effector -- response
   - Reflexes are faster than conscious responses; they protect the body from harm
-- Synapses: gaps between neurons; impulses are transmitted across synapses by chemical neurotransmitters
+- Synapses: gaps between neurons; impulses are transmitted across synapses by chemical
+  neurotransmitters
 - The eye: cornea refracts light; iris controls the amount of light entering; lens focuses light on
   the retina; rods (dim light, black and white) and cones (bright light, colour) are photoreceptors
   in the retina
@@ -193,21 +197,21 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 - Hormones are slower but longer-lasting than nerve impulses
 - **Key glands and hormones**:
 
-| Gland | Hormone | Function |
-|---|---|---|
-| Pituitary | FSH, LH | Controls reproductive cycle |
-| Thyroid | Thyroxine | Controls metabolic rate |
-| Adrenal | Adrenaline | "Fight or flight" response |
-| Pancreas | Insulin, glucagon | Controls blood glucose levels |
-| Ovaries | Oestrogen, progesterone | Controls the menstrual cycle |
-| Testes | Testosterone | Controls sperm production and male characteristics |
+| Gland     | Hormone                 | Function                                           |
+| --------- | ----------------------- | -------------------------------------------------- |
+| Pituitary | FSH, LH                 | Controls reproductive cycle                        |
+| Thyroid   | Thyroxine               | Controls metabolic rate                            |
+| Adrenal   | Adrenaline              | "Fight or flight" response                         |
+| Pancreas  | Insulin, glucagon       | Controls blood glucose levels                      |
+| Ovaries   | Oestrogen, progesterone | Controls the menstrual cycle                       |
+| Testes    | Testosterone            | Controls sperm production and male characteristics |
 
-- **Control of blood glucose**: insulin lowers blood glucose (by stimulating cells to take up glucose
-  and the liver to store glucose as glycogen); glucagon raises blood glucose (by stimulating the liver
-  to convert glycogen back to glucose)
+- **Control of blood glucose**: insulin lowers blood glucose (by stimulating cells to take up
+  glucose and the liver to store glucose as glycogen); glucagon raises blood glucose (by stimulating
+  the liver to convert glycogen back to glucose)
 - Type 1 diabetes: the body does not produce insulin; treated with insulin injections
-- Type 2 diabetes: the body does not respond properly to insulin (insulin resistance); linked to obesity
-  and lifestyle; treated with diet, exercise, and medication
+- Type 2 diabetes: the body does not respond properly to insulin (insulin resistance); linked to
+  obesity and lifestyle; treated with diet, exercise, and medication
 
 ---
 
@@ -215,12 +219,12 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 
 ### 3.1 Pathogens
 
-| Pathogen type | Examples | Characteristics |
-|---|---|---|
-| Bacteria | Salmonella, MRSA | Single-celled; reproduce by binary fission; very small (1--10 micrometres) |
-| Viruses | HIV, influenza, COVID-19 | Not living; replicate inside host cells; much smaller than bacteria |
-| Fungi | Athlete's foot, thrush | Can be single-celled (yeasts) or multicellular |
-| Protists | Malaria (Plasmodium) | Usually single-celled; often transferred by vectors |
+| Pathogen type | Examples                 | Characteristics                                                            |
+| ------------- | ------------------------ | -------------------------------------------------------------------------- |
+| Bacteria      | Salmonella, MRSA         | Single-celled; reproduce by binary fission; very small (1--10 micrometres) |
+| Viruses       | HIV, influenza, COVID-19 | Not living; replicate inside host cells; much smaller than bacteria        |
+| Fungi         | Athlete's foot, thrush   | Can be single-celled (yeasts) or multicellular                             |
+| Protists      | Malaria (Plasmodium)     | Usually single-celled; often transferred by vectors                        |
 
 ### 3.2 Disease Transmission
 
@@ -248,8 +252,8 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 3. A different type of white blood cell (lymphocyte) produces antibodies specific to the antigen
 4. Antibodies bind to the antigen and destroy the pathogen (by causing it to clump, neutralising
    toxins, or marking it for phagocytosis)
-5. Some lymphocytes become memory cells: they remain in the blood and provide long-term immunity;
-   if the same pathogen enters again, they produce antibodies faster and in greater quantities
+5. Some lymphocytes become memory cells: they remain in the blood and provide long-term immunity; if
+   the same pathogen enters again, they produce antibodies faster and in greater quantities
 
 **Vaccination**
 
@@ -258,8 +262,10 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 - If the person encounters the real pathogen later, the immune system responds rapidly
 - Vaccination provides individual immunity and, if enough people are vaccinated, herd immunity
   (protecting those who cannot be vaccinated)
-- Advantages: prevents disease, reduces the spread of infection, can eradicate diseases (e.g., smallpox)
-- Disadvantages: does not work for everyone, rare side effects, requires high uptake for herd immunity
+- Advantages: prevents disease, reduces the spread of infection, can eradicate diseases (e.g.,
+  smallpox)
+- Disadvantages: does not work for everyone, rare side effects, requires high uptake for herd
+  immunity
 
 **Antibiotics and Resistance**
 
@@ -309,11 +315,12 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 - **Aerobic respiration** (with oxygen): glucose + oxygen --> carbon dioxide + water (+ energy)
 - **Anaerobic respiration** (without oxygen):
   - In animals: glucose --> lactic acid (+ small amount of energy)
-  - In plants and yeast (fermentation): glucose --> ethanol + carbon dioxide (+ small amount of energy)
-- Aerobic respiration produces much more energy (approximately 38 ATP) than anaerobic respiration
-  (2 ATP)
-- Anaerobic respiration in muscles: during intense exercise, oxygen supply cannot meet demand; lactic
-  acid builds up, causing muscle fatigue; oxygen debt must be repaid after exercise through
+  - In plants and yeast (fermentation): glucose --> ethanol + carbon dioxide (+ small amount of
+    energy)
+- Aerobic respiration produces much more energy (approximately 38 ATP) than anaerobic respiration (2
+  ATP)
+- Anaerobic respiration in muscles: during intense exercise, oxygen supply cannot meet demand;
+  lactic acid builds up, causing muscle fatigue; oxygen debt must be repaid after exercise through
   increased breathing rate to oxidise lactic acid
 
 ### 4.3 Metabolism
@@ -321,9 +328,10 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 - Metabolism: all the chemical reactions in the body
 - Anabolism: building larger molecules from smaller ones (e.g., proteins from amino acids, glycogen
   from glucose)
-- Catabolism: breaking down larger molecules into smaller ones (e.g., respiration breaks down glucose)
-- Enzymes: biological catalysts that speed up reactions; they are specific to their substrate;
-  have an active site with a complementary shape (lock and key model)
+- Catabolism: breaking down larger molecules into smaller ones (e.g., respiration breaks down
+  glucose)
+- Enzymes: biological catalysts that speed up reactions; they are specific to their substrate; have
+  an active site with a complementary shape (lock and key model)
 - Factors affecting enzyme activity: temperature (optimum then denature), pH (each enzyme has an
   optimum pH), substrate concentration (rate increases then plateaus)
 
@@ -363,8 +371,8 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 
 - The kidneys filter the blood and remove waste products (urea, excess water, excess ions)
 - The functional unit of the kidney is the nephron:
-  1. **Ultrafiltration**: high pressure in the glomerulus forces water, urea, ions, and glucose out of
-     the blood and into the Bowman's capsule
+  1. **Ultrafiltration**: high pressure in the glomerulus forces water, urea, ions, and glucose out
+     of the blood and into the Bowman's capsule
   2. **Selective reabsorption**: useful substances (all glucose, required ions, the right amount of
      water) are reabsorbed back into the blood in the proximal convoluted tubule and collecting duct
   3. **Excretion**: remaining waste (urea, excess water, excess ions) forms urine
@@ -378,8 +386,8 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 - Dialysis is used when the kidneys fail — it removes waste products from the blood
 - **Haemodialysis**: blood is passed through a dialysis machine; a partially permeable membrane
   separates the blood from dialysis fluid; waste products diffuse across the membrane
-- **Peritoneal dialysis**: dialysis fluid is pumped into the abdominal cavity; the peritoneum acts as
-  the exchange membrane
+- **Peritoneal dialysis**: dialysis fluid is pumped into the abdominal cavity; the peritoneum acts
+  as the exchange membrane
 - Kidney transplant is the preferred long-term treatment; immunosuppressant drugs must be taken to
   prevent rejection
 
@@ -413,10 +421,10 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 
 Example cross: Bb x Bb (both heterozygous for brown eyes, B dominant, b recessive):
 
-| | B | b |
-|---|---|---|
-| **B** | BB | Bb |
-| **b** | Bb | bb |
+|       | B   | b   |
+| ----- | --- | --- |
+| **B** | BB  | Bb  |
+| **b** | Bb  | bb  |
 
 Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
 
@@ -424,8 +432,8 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
 
 - Cross between individuals for two characteristics simultaneously
 - Use a 4x4 Punnett square
-- Independent assortment: alleles for different genes are inherited independently (assuming they
-  are on different chromosomes)
+- Independent assortment: alleles for different genes are inherited independently (assuming they are
+  on different chromosomes)
 - Expected ratio for two heterozygous parents (AaBb x AaBb): 9:3:3:1
 
 ### 6.3 Sex Determination
@@ -444,7 +452,8 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
   parent needs to carry the allele for a child to inherit it; symptoms appear in middle age
 - **Polydactyly**: extra fingers or toes; caused by a dominant allele
 - Genetic screening and counselling can identify carriers and inform reproductive choices
-- Embryos can be screened for genetic disorders using IVF and preimplantation genetic diagnosis (PGD)
+- Embryos can be screened for genetic disorders using IVF and preimplantation genetic diagnosis
+  (PGD)
 
 ### 6.5 Variation and Evolution
 
@@ -494,8 +503,8 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
   availability)
 - A habitat is the place where an organism lives; a niche is its role within the ecosystem
 - **Sampling techniques**:
-  - Quadrats: placed randomly; count/estimate percentage cover of species within the quadrat;
-    repeat to calculate mean
+  - Quadrats: placed randomly; count/estimate percentage cover of species within the quadrat; repeat
+    to calculate mean
   - Transects: a line placed across an area; quadrats placed at regular intervals along the line
 
 ### 7.2 Food Chains and Webs
@@ -509,12 +518,12 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
 - **Decomposers**: break down dead organic matter and recycle nutrients (bacteria, fungi)
 - Food chains show the flow of energy from producer to top carnivore
 - Food webs show all the feeding relationships within an ecosystem
-- **Energy transfer**: approximately 90% of energy is lost at each trophic level (through respiration,
-  movement, heat, waste); only about 10% is transferred to the next level
-- **Pyramids of biomass**: show the total biomass at each trophic level; always pyramid-shaped (biomass
-  decreases up the food chain)
-- **Pyramids of numbers**: show the number of organisms at each trophic level; may not be pyramid-shaped
-  (e.g., one oak tree supporting thousands of insects)
+- **Energy transfer**: approximately 90% of energy is lost at each trophic level (through
+  respiration, movement, heat, waste); only about 10% is transferred to the next level
+- **Pyramids of biomass**: show the total biomass at each trophic level; always pyramid-shaped
+  (biomass decreases up the food chain)
+- **Pyramids of numbers**: show the number of organisms at each trophic level; may not be
+  pyramid-shaped (e.g., one oak tree supporting thousands of insects)
 
 ### 7.3 Nutrient Cycles
 
@@ -565,13 +574,14 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
   concentrations
 - Effects: rising global temperatures, melting ice caps, rising sea levels, changes in weather
   patterns, loss of biodiversity
-- Reducing impact: renewable energy (solar, wind, nuclear), energy efficiency, carbon capture, reforestation
+- Reducing impact: renewable energy (solar, wind, nuclear), energy efficiency, carbon capture,
+  reforestation
 
 **Biodiversity**
 
 - Biodiversity: the variety of all the different species of organisms on Earth
-- Importance: ecosystems depend on biodiversity; many species are economically important
-  (medicines, food); ethical responsibility to preserve species
+- Importance: ecosystems depend on biodiversity; many species are economically important (medicines,
+  food); ethical responsibility to preserve species
 - Threats: habitat destruction, pollution, climate change, overexploitation (overfishing, hunting),
   introduction of non-native species
 
@@ -579,20 +589,20 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
 
 ## 8. Key Terms
 
-| Term | Definition |
-|---|---|
-| Mitosis | Cell division producing two identical diploid daughter cells |
-| Meiosis | Cell division producing four genetically different haploid cells |
-| Osmosis | The net movement of water molecules across a partially permeable membrane from a dilute to a concentrated solution |
-| Diffusion | The net movement of particles from an area of higher concentration to an area of lower concentration |
-| Active transport | The movement of particles against a concentration gradient, requiring energy |
-| Homeostasis | The maintenance of a constant internal environment |
-| Niche | The role of an organism within its ecosystem |
-| Biodiversity | The variety of living organisms in an area |
-| Adaptation | A feature that makes an organism better suited to its environment |
-| Mutation | A change in the DNA sequence; can be beneficial, harmful, or neutral |
-| Epigenetics | Changes in gene expression not caused by changes to the DNA sequence |
-| Trophic level | The position of an organism in a food chain |
+| Term             | Definition                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Mitosis          | Cell division producing two identical diploid daughter cells                                                       |
+| Meiosis          | Cell division producing four genetically different haploid cells                                                   |
+| Osmosis          | The net movement of water molecules across a partially permeable membrane from a dilute to a concentrated solution |
+| Diffusion        | The net movement of particles from an area of higher concentration to an area of lower concentration               |
+| Active transport | The movement of particles against a concentration gradient, requiring energy                                       |
+| Homeostasis      | The maintenance of a constant internal environment                                                                 |
+| Niche            | The role of an organism within its ecosystem                                                                       |
+| Biodiversity     | The variety of living organisms in an area                                                                         |
+| Adaptation       | A feature that makes an organism better suited to its environment                                                  |
+| Mutation         | A change in the DNA sequence; can be beneficial, harmful, or neutral                                               |
+| Epigenetics      | Changes in gene expression not caused by changes to the DNA sequence                                               |
+| Trophic level    | The position of an organism in a food chain                                                                        |
 
 ---
 
@@ -602,24 +612,25 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
    and evaluation of results. Know the 10 required biology practicals and the equipment used.
 2. **Use the mark allocation as a guide**: a 4-mark question needs at least four distinct points.
    One extended paragraph rarely earns more than 2 marks unless it contains clear, distinct points.
-3. **Draw and label diagrams accurately**: labels should be on the correct side with clear leader lines.
-   Practice drawing cells, the heart, and the nephron.
-4. **Use scientific terminology precisely**: do not write "plants make food" — write "plants carry out
-   photosynthesis to produce glucose". Examiners reward correct use of terms like "selectively
+3. **Draw and label diagrams accurately**: labels should be on the correct side with clear leader
+   lines. Practice drawing cells, the heart, and the nephron.
+4. **Use scientific terminology precisely**: do not write "plants make food" — write "plants carry
+   out photosynthesis to produce glucose". Examiners reward correct use of terms like "selectively
    permeable", "active transport", "gradient", and "denature".
 5. **Show working for calculations**: even if your final answer is wrong, you can earn marks for the
    correct method. Always include units.
 6. **Read the data**: graph and table questions require you to describe patterns, not just quote
    numbers. Use phrases like "as X increases, Y also increases until it reaches a plateau".
-7. **Understand the difference between correlation and causation**: just because two variables change
-   together does not mean one causes the other. Examiners test this concept regularly.
+7. **Understand the difference between correlation and causation**: just because two variables
+   change together does not mean one causes the other. Examiners test this concept regularly.
 
 ---
 
 ## Common Pitfalls
 
-1. **Confusing mitosis and meiosis**: mitosis produces identical cells for growth and repair; meiosis
-   produces genetically different cells for reproduction. Mix this up and you lose easy marks.
+1. **Confusing mitosis and meiosis**: mitosis produces identical cells for growth and repair;
+   meiosis produces genetically different cells for reproduction. Mix this up and you lose easy
+   marks.
 2. **Writing that "plants photosynthesise and respire at night"**: plants respire all the time, day
    and night. Photosynthesis only happens in light.
 3. **Confusing arteries and veins**: arteries carry blood away from the heart; veins carry blood to
@@ -638,17 +649,32 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
 ## Worked Examples
 
 ### Example 1: Punnett Square for Cystic Fibrosis
-**Problem:** Both parents are carriers of cystic fibrosis (heterozygous, Cc). What is the probability their child will have cystic fibrosis?
-**Solution:** Cross Cc x Cc. Punnett square: C from one parent along top, C and c from other down side. Results: CC (unaffected, 25%), Cc (carrier, 50%), cc (affected, 25%). Probability of having cystic fibrosis = 25%.
+
+**Problem:** Both parents are carriers of cystic fibrosis (heterozygous, Cc). What is the
+probability their child will have cystic fibrosis? **Solution:** Cross Cc x Cc. Punnett square: C
+from one parent along top, C and c from other down side. Results: CC (unaffected, 25%), Cc (carrier,
+50%), cc (affected, 25%). Probability of having cystic fibrosis = 25%.
 
 ### Example 2: Calculating Magnification
-**Problem:** A cell measures 4.5 mm in a micrograph at 400x magnification. What is the actual size in micrometres?
-**Solution:** Actual size = image size / magnification = 4.5 mm / 400 = 0.01125 mm = 11.25 micrometres. Remember: 1 mm = 1000 micrometres.
+
+**Problem:** A cell measures 4.5 mm in a micrograph at 400x magnification. What is the actual size
+in micrometres? **Solution:** Actual size = image size / magnification = 4.5 mm / 400 = 0.01125 mm =
+11.25 micrometres. Remember: 1 mm = 1000 micrometres.
 
 ### Example 3: Interpreting a Food Chain
-**Problem:** A food chain is: grass -> rabbit -> fox. If the grass contains 10,000 kJ of energy, how much energy is available to the fox? Assume 10% energy transfer efficiency.
-**Solution:** Rabbit receives 10% of 10,000 kJ = 1,000 kJ. Fox receives 10% of 1,000 kJ = 100 kJ. The remaining 90% at each level is lost through respiration, excretion, and heat.
+
+**Problem:** A food chain is: grass -> rabbit -> fox. If the grass contains 10,000 kJ of energy, how
+much energy is available to the fox? Assume 10% energy transfer efficiency. **Solution:** Rabbit
+receives 10% of 10,000 kJ = 1,000 kJ. Fox receives 10% of 1,000 kJ = 100 kJ. The remaining 90% at
+each level is lost through respiration, excretion, and heat.
 
 ## Summary
 
-GCSE Biology covers cell biology (structure, organelles, microscopy, mitosis, meiosis, stem cells), organisation (digestive system, circulatory system, respiratory system, nervous and endocrine systems), infection and response (pathogens, immune response, vaccination, antibiotics), bioenergetics (photosynthesis, respiration, metabolism), homeostasis (temperature, blood glucose, kidney function), inheritance (DNA, Punnett squares, genetic disorders, natural selection, genetic engineering), and ecology (ecosystems, food chains, nutrient cycles, human impact). Key exam skills include precise scientific terminology, structured answers for extended-response questions, and the ability to interpret data from graphs and tables.
+GCSE Biology covers cell biology (structure, organelles, microscopy, mitosis, meiosis, stem cells),
+organisation (digestive system, circulatory system, respiratory system, nervous and endocrine
+systems), infection and response (pathogens, immune response, vaccination, antibiotics),
+bioenergetics (photosynthesis, respiration, metabolism), homeostasis (temperature, blood glucose,
+kidney function), inheritance (DNA, Punnett squares, genetic disorders, natural selection, genetic
+engineering), and ecology (ecosystems, food chains, nutrient cycles, human impact). Key exam skills
+include precise scientific terminology, structured answers for extended-response questions, and the
+ability to interpret data from graphs and tables.

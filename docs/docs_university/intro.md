@@ -1,7 +1,9 @@
 ---
 title: University Notes
-description: 'University Intro.Md notes covering key definitions, core concepts, worked examples, and practice questions for rigorous study and thorough revision.'
-date: 2026-04-23T00:00:00.000Z
+description:
+  'University Intro.Md notes covering key definitions, core concepts, worked examples, and practice
+  questions for rigorous study and thorough revision.'
+date: 2026-06-01T00:00:00.000Z
 tags:
   - Mathematics
   - Physics

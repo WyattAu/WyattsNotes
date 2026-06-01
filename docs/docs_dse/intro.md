@@ -1,10 +1,12 @@
 ---
 id: intro
 title: Introduction to DSE
-description: 'DSE Intro.Md Introduction to DSE notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'DSE Intro.Md Introduction to DSE notes covering key definitions, core concepts, worked examples,
+  and practice questions for thorough preparation.'
 slug: intro
 sidebar_position: 1
-date: 2025-05-15T22:45:51.828Z
+date: 2026-06-01T00:00:00.000Z
 tags:
   - general
 categories:
