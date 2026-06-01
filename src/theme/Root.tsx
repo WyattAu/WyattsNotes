@@ -118,7 +118,7 @@ export default function Root({ children }: { children: React.ReactNode }): React
     if (typeof window !== 'undefined' && !window.Sentry && dsn) {
       const script = document.createElement('script');
 
-      script.src = 'https://browser.sentry-cdn.com/7.120.1/bundle.tracing.min.js';
+      script.src = 'https://browser.sentry-cdn.com/7.120.1/bundle.min.js';
       script.crossOrigin = 'anonymous';
 
       script.onload = () => {
@@ -128,15 +128,6 @@ export default function Root({ children }: { children: React.ReactNode }): React
               dsn,
               environment: process.env.NODE_ENV || 'production',
               sampleRate: 0.1,
-              tracesSampleRate: 0.05,
-              replaysSessionSampleRate: 0.01,
-              integrations: [
-                window.Sentry.browserTracingIntegration(),
-                window.Sentry.replayIntegration({
-                  maskAllText: false,
-                  blockAllMedia: false,
-                }),
-              ],
             });
           }
         };

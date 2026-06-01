@@ -166,48 +166,11 @@ export const sharedHeadTags: Config['headTags'] = [
   },
   {
     tagName: 'link',
-    attributes: { rel: 'dns-prefetch', href: 'https://cdn.jsdelivr.net' },
-  },
-  {
-    tagName: 'link',
     attributes: { rel: 'preconnect', href: 'https://cdn.jsdelivr.net' },
   },
   {
     tagName: 'link',
-    attributes: { rel: 'dns-prefetch', href: 'https://algolia.net' },
-  },
-  {
-    tagName: 'link',
     attributes: { rel: 'preconnect', href: 'https://algolia.net' },
-  },
-  {
-    tagName: 'link',
-    attributes: { rel: 'dns-prefetch', href: 'https://www.desmos.com' },
-  },
-  {
-    tagName: 'link',
-    attributes: { rel: 'preconnect', href: 'https://www.desmos.com' },
-  },
-  {
-    tagName: 'link',
-    attributes: { rel: 'dns-prefetch', href: 'https://www.geogebra.org' },
-  },
-  {
-    tagName: 'link',
-    attributes: { rel: 'preconnect', href: 'https://www.geogebra.org' },
-  },
-  {
-    tagName: 'link',
-    attributes: { rel: 'dns-prefetch', href: 'https://phet.colorado.edu' },
-  },
-  {
-    tagName: 'link',
-    attributes: { rel: 'preconnect', href: 'https://phet.colorado.edu' },
-  },
-  // Cloudflare Web Analytics (privacy-respecting, no cookies)
-  {
-    tagName: 'link',
-    attributes: { rel: 'dns-prefetch', href: 'https://static.cloudflareinsights.com' },
   },
   {
     tagName: 'link',

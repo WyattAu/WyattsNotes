@@ -231,7 +231,10 @@ const config = {
       ],
       copyright: `© ${new Date().getFullYear()} Wyatt Au. Content is licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPLv3</a>.`,
     },
-    prism: { ...sharedPrism, additionalLanguages: ['sql', 'python'] },
+    prism: {
+      ...sharedPrism,
+      additionalLanguages: [...sharedPrism.additionalLanguages, 'sql', 'python'],
+    },
     mermaid: sharedMermaid,
     zoom: sharedZoom,
   } satisfies Preset.ThemeConfig,

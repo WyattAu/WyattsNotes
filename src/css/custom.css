@@ -1,10 +1,5 @@
-/* Font Imports */
-@import 'katex/dist/katex.min.css';
-@import '~@fontsource/jetbrains-mono/400.css';
-@import '~@fontsource/jetbrains-mono/700.css';
-@import '~@fontsource/inter/400.css';
-@import '~@fontsource/inter/700.css';
-@import '~@fontsource/merriweather/400-italic.css';
+/* Fonts loaded via async CDN preloading in sharedHeadTags (docusaurus.shared.config.ts).
+   KaTeX CSS loaded conditionally via KatexLoader client module. */
 /* Base Color Variables */
 :root {
   /* Orange Primary Color Scheme */

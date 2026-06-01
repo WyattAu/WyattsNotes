@@ -76,7 +76,7 @@ export default function serviceWorkerPlugin(
 
       if (fs.existsSync(indexPath)) {
         let indexContent = fs.readFileSync(indexPath, 'utf-8');
-        const swRegister = `<script>
+        const swRegister = `<script defer>
 if('serviceWorker'in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('${baseUrl}${swFilename}')})}
 </script>`;
 
