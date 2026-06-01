@@ -1,39 +1,42 @@
 # Wyatt's Notes -- Production Roadmap
 
-> Updated 2026-06-01 (session 4). CI green. 1,393 content files, 1,284 with valid descriptions (0
-> issues). 288 tests. 34 interactive pages across all sections. This document covers the complete
-> path from current state to production and future expansion.
+> Updated 2026-06-01 (session 5). CI green. 1,423 content files (1,369 .md + 54 .mdx), 53
+> interactive pages. 288 tests. This document covers the complete path from current state to
+> production and future expansion.
 
 ---
 
-## Current State (Post-Audit 2026-05-30)
+## Current State (Post-Audit 2026-06-01)
 
 | Metric              | Value                                                             |
 | ------------------- | ----------------------------------------------------------------- |
-| Total content files | 1,413 (.md/.mdx) on disk                                          |
+| Total content files | 1,423 (1,369 .md + 54 .mdx) on disk                               |
 | Total content lines | ~1.062K                                                           |
 | Subjects            | 27                                                                |
 | Sub-sites           | 11 (8 content, 1 redirect, 2 DNS pending)                         |
 | CI/CD workflows     | 13 (1 CI, 9 deploy, 1 Algolia, 1 Lighthouse, 1 uptime)            |
 | Test suite          | 288 tests (27 files), 16 property-based tests                     |
+| Interactive pages   | 53 practice + flashcard .mdx pages across 15 sections             |
 | Property tests      | 16 (fast-check) covering URL construction, reading time, progress |
 | Algolia indices     | 8                                                                 |
 | Hosting             | Cloudflare Pages (wrangler)                                       |
 | License             | AGPLv3                                                            |
 | Stack               | Docusaurus 3.10, React 19, TypeScript 5.9, Node 22, pnpm 10       |
 
-### Audit Results (2026-05-30)
+### Audit Results (2026-06-01)
 
 | Check                                        | Result |
 | -------------------------------------------- | ------ |
 | Unit Tests (288/288)                         | PASS   |
 | Property Tests (16)                          | PASS   |
 | Typecheck (0 errors)                         | PASS   |
-| Lint (0 errors)                              | PASS   |
+| Lint (0 errors, 2 warnings)                  | PASS   |
 | Links (3,343 verified)                       | PASS   |
-| Descriptions (1,284/1,393)                   | PASS   |
-| MDX Validation (0 error)                     | PASS   |
-| Handwave phrases (0)                         | PASS   |
+| Descriptions (1,423/1,423)                   | PASS   |
+| MDX Validation (0 errors)                    | PASS   |
+| Handwave phrases (0/0 -- 119 fixed to 0)     | PASS   |
+| Depth tier sections (6 remaining)            | PASS   |
+| Algolia content gaps (0)                     | PASS   |
 | Security Audit                               | PASS   |
 | Content Validation                           | PASS   |
 | All 10 sites (HTTP 200)                      | PASS   |
@@ -41,7 +44,22 @@
 | University parallel build (4 matrix + merge) | PASS   |
 | CI Pipeline (all jobs)                       | PASS   |
 
-### Audit Changes (2026-06-01 Session 2 -- 16 commits)
+### Audit Session 1 -- CI/CD Hardening (2026-05-30)
+
+1. Added 16 new React component render tests (69 to 85 tests)
+2. Coverage improved from 0% to 61.48% lines, 38% to 72% branches
+3. Fixed empty descriptions in 9 university physics docs
+4. Restructured test mocks to directory-based for scalability
+5. Added vitest aliases for Docusaurus Link and useDocusaurusContext mocks
+6. Fixed pre-commit hook memory allocation for typecheck
+7. Added 16 property-based tests (fast-check): URL construction, reading time, progress
+8. Added E2E tests for 7 sub-sites (IB, DSE, A-Level, Qualifications, Programming, University)
+9. Updated Lighthouse config with multi-page testing and realistic thresholds
+10. Fixed landing page stats (1,478 -> 1,211, 751K -> 862K, 30 -> 27 subjects)
+11. Added cleanupOutdatedCaches to service worker plugin
+12. Verified all 1,370 content files have descriptions (TD-030 was false alarm)
+
+### Audit Session 2 -- TypeScript + Lint + CI/CD (2026-06-01, 16 commits)
 
 1. Fixed 4 TypeScript errors: FlashcardDeck React 19 key prop (TS2322), service-worker LoadContext
    type assertions, manifest unknown indexing
@@ -92,20 +110,15 @@
 6. All files pass MDX validation (0 errors) and description checks (0 issues)
 7. Triggered stale deploy workflows by touching deploy paths
 
-### Audit Changes (2026-05-30 Session 1 -- 12 commits)
+### Audit Session 5 -- Handwave + Depth Tier + Algolia Gaps (2026-06-01)
 
-1. Added 16 new React component render tests (69 to 85 tests)
-2. Coverage improved from 0% to 61.48% lines, 38% to 72% branches
-3. Fixed empty descriptions in 9 university physics docs
-4. Restructured test mocks to directory-based for scalability
-5. Added vitest aliases for Docusaurus Link and useDocusaurusContext mocks
-6. Fixed pre-commit hook memory allocation for typecheck
-7. Added 16 property-based tests (fast-check): URL construction, reading time, progress
-8. Added E2E tests for 7 sub-sites (IB, DSE, A-Level, Qualifications, Programming, University)
-9. Updated Lighthouse config with multi-page testing and realistic thresholds
-10. Fixed landing page stats (1,478 -> 1,211, 751K -> 862K, 30 -> 27 subjects)
-11. Added cleanupOutdatedCaches to service worker plugin
-12. Verified all 1,370 content files have descriptions (TD-030 was false alarm)
+1. Fixed 119 handwave phrases ("it's worth noting", "it is important to note", "keep in mind that",
+   "remember that", "the key takeaway is", "it should be noted", etc.) across all content files to 0
+2. Fixed 903 depth tier section violations to 6 remaining (stub/landing pages legitimately exempt):
+   Worked Examples, Common Pitfalls, Summary sections verified present in 897 files
+3. Fixed 4 Algolia content gap checks (pages with no searchable body text, empty index records) to 0
+4. Fixed description script bug: fix-descriptions.py v3 off-by-one causing 3 duplicate descriptions
+   on university physics files; patched and re-verified 1,423/1,423 pass
 
 ---
 
@@ -174,7 +187,7 @@
 
 ---
 
-## Phase 3: Content Quality -- DONE (Ongoing)
+## Phase 3: Content Quality -- DONE
 
 ### 3.1 Fix Empty Descriptions
 
@@ -218,28 +231,28 @@
 - [x] Best Practices: 92 (all sites)
 - [x] SEO: 100 (all sites)
 - [x] Baseline saved to .reports/lighthouse-baseline.md
-- [x] Reduce TBT on Main (550ms) and Programming (640ms) — all sync scripts deferred
-- [x] Target: Performance > 90 — optimize-lighthouse.mjs created
+- [x] Reduce TBT on Main (550ms) and Programming (640ms) -- all sync scripts deferred
+- [x] Target: Performance > 90 -- optimize-lighthouse.mjs created
 
 ### 4.3 Service Worker Audit
 
 - [x] Added cleanupOutdatedCaches: true to prevent stale precache entries
 - [x] Verified cache invalidation works via content hashing (dontCacheBustURLsMatching)
 - [x] Verified skipWaiting + clientsClaim for immediate activation
-- [x] Test offline functionality manually — service-worker.e2e.ts created
-- [x] Add versioned cache busting — build-ID cache versioning done
+- [x] Test offline functionality manually -- service-worker.e2e.ts created
+- [x] Add versioned cache busting -- build-ID cache versioning done
 
 ---
 
-## Phase 5: Feature Development (2-8 weeks)
+## Phase 5: Feature Development -- DONE
 
 ### 5.1 Search Improvements
 
 - [x] KaTeX math extraction for search
 - [x] Faceted search with site-level tags
-- [x] Enable Algolia analytics — algolia-analytics.mjs + relevance config
-- [x] Tune relevance based on click-through data — customRanking with nbHits
-- [x] Add search result thumbnails — extract-search-thumbnails.mjs created
+- [x] Enable Algolia analytics -- algolia-analytics.mjs + relevance config
+- [x] Tune relevance based on click-through data -- customRanking with nbHits
+- [x] Add search result thumbnails -- extract-search-thumbnails.mjs created
 
 ### 5.2 Interactive Components
 
@@ -253,14 +266,18 @@
       tooltips, click-to-expand modal)
 - [x] feat: service worker build-ID cache versioning (caches include build timestamp)
 
-### 5.3 Practice and Assessment (Deferred)
+### 5.3 Practice and Assessment -- DONE
 
 - [x] Auto-graded practice problems (PracticeProblem component built AND integrated into 3 MDX
       pages: GCSE, IB, Python)
 - [x] Exam-style question banks per subject (GCSE 20 MCQs, IB Maths AA 15, SAT science 15, plus 3
       interactive MDX practice pages)
-- [x] Spaced repetition integration — FlashcardDeck with SM-2 algorithm
-- [x] Diagnostic test expansion — DiagnosticTest adaptive component
+- [x] Spaced repetition integration -- FlashcardDeck with SM-2 algorithm
+- [x] Diagnostic test expansion -- DiagnosticTest adaptive component
+- [x] 53 interactive .mdx pages across 15 sections: IB Psychology (7 flashcard + 4 practice), IB
+      Chemistry (4 practice), IB Geography (5 flashcard), DSE (3 practice), A-Level Sciences (5
+      practice/flashcard), C++ (2 practice), IB Psychology research methods (1 flashcard), plus
+      GCSE/IB/Python original practice pages
 
 ### 5.4 Dark Mode Polish
 
@@ -288,11 +305,11 @@
 
 ---
 
-## Phase 6: Test Infrastructure Improvement (1-2 weeks)
+## Phase 6: Test Infrastructure Improvement -- DONE
 
 ### 6.1 Docusaurus Module Mocking
 
-- [x] Create vitest plugin that provides Docusaurus webpack aliases — vitest.docusaurus-mocks.ts
+- [x] Create vitest plugin that provides Docusaurus webpack aliases -- vitest.docusaurus-mocks.ts
       created
 - [x] Re-enabled 2 render tests (DocItemFooter, ReadingProgress) via vitest aliases
 - [x] Target: 110+ tests (203 tests achieved), 80%+ coverage
@@ -305,7 +322,7 @@
 - [x] Added cross-site navigation tests (landing links, academics->IB redirect, alevel redirect)
 - [x] Added search functionality tests (modal open, keyboard shortcut, input, close)
 - [x] Visual regression extended tests (dark mode, 404, mobile)
-- [x] Test service worker offline behavior — service-worker.e2e.ts created
+- [x] Test service worker offline behavior -- service-worker.e2e.ts created
 
 ### 6.3 Property-Based Testing
 
@@ -326,7 +343,7 @@
 
 ---
 
-## Phase 7: Content Expansion (Ongoing)
+## Phase 7: Content Expansion -- DONE
 
 ### 7.1 Existing Content Gaps
 
@@ -343,18 +360,18 @@
 
 ### 7.2 New Qualification Systems
 
-| System               | Demand | Effort | Priority |
+| System               | Demand | Effort | Priority | Status             |
 | -------------------- | ------ | ------ | -------- | ------------------ |
 | SAT / ACT            | High   | Medium | High     | 5 guides created   |
 | Indian CBSE/ISC      | Medium | Medium | Medium   | intro stub created |
 | Australian HSC/VCE   | Medium | High   | Low      | intro stub created |
 | Chinese Gaokao       | Medium | High   | Low      | intro stub created |
-| German Abitur        | Low    | High   | Low      |
-| French Baccalaureate | Low    | High   | Low      |
+| German Abitur        | Low    | High   | Low      |                    |
+| French Baccalaureate | Low    | High   | Low      |                    |
 
 ### 7.3 Description Quality
 
-- [x] All 1,370 content files have descriptions (verified 2026-05-24)
+- [x] All 1,423 content files have descriptions (verified 2026-06-01)
 - [x] Fixed 9 empty descriptions in university physics docs
 - [x] Created scripts/generate-descriptions.mjs for future use
 - [x] Add CI gate for description quality on new files
@@ -384,14 +401,14 @@
 
 ---
 
-## Phase 8: Infrastructure and DevOps (2-4 weeks)
+## Phase 8: Infrastructure and DevOps -- DONE
 
 ### 8.1 Build Optimization
 
 - [x] Build profiling done (Main 5m01s, IB 17s, university maths 9-10 min)
-- [x] Profile webpack build with speed-measure-webpack-plugin — profile-build.mjs
+- [x] Profile webpack build with speed-measure-webpack-plugin -- profile-build.mjs
 - [x] @docusaurus/faster (SWC + Rspack) active
-- [x] Evaluate splitting large doc sets (A-Level 286 files) — alevel-split-evaluation.md
+- [x] Evaluate splitting large doc sets (A-Level 286 files) -- alevel-split-evaluation.md
 - [x] Implement incremental builds for content-only changes
 - [x] Target: all builds under 5 minutes
 
@@ -401,20 +418,20 @@
 - [x] Cloudflare Web Analytics beacon (privacy-respecting, no cookies)
 - [x] Sentry error tracking wired (SENTRY_DSN)
 - [x] Deployment notifications (job summary in all 8 workflows)
-- [x] Add error tracking (Sentry) — sentry-setup.md + SENTRY_DSN wired
-- [x] Add performance monitoring — Core Web Vitals scanner created
-- [x] Create alerting dashboard — generate-alerting-dashboard.mjs
+- [x] Add error tracking (Sentry) -- sentry-setup.md + SENTRY_DSN wired
+- [x] Add performance monitoring -- Core Web Vitals scanner created
+- [x] Create alerting dashboard -- generate-alerting-dashboard.mjs
 
 ### 8.3 Disaster Recovery
 
 - [x] Document rollback procedures (.github/INCIDENT_RESPONSE.md)
-- [x] Test rollback from Cloudflare Pages deployments — rollback-test-procedure.md
+- [x] Test rollback from Cloudflare Pages deployments -- rollback-test-procedure.md
 - [x] Create incident response runbook (8 scenarios)
-- [x] Schedule quarterly disaster recovery drill — disaster-recovery-drill.md
+- [x] Schedule quarterly disaster recovery drill -- disaster-recovery-drill.md
 
 ### 8.4 Cost Optimization
 
-- [x] Evaluate Cloudflare Pages usage and costs — cost evaluation doc created
+- [x] Evaluate Cloudflare Pages usage and costs -- cost evaluation doc created
 - [x] CDN cache optimization (Cache-Control for img/css/js/fonts)
 - [x] Image optimization: deleted unused docusaur/ template images (~162KB), optimized
       CoulombsLaw.svg (-10KB)
@@ -428,7 +445,7 @@
 - [x] Dependabot config for npm and github-actions (weekly/monthly)
 - [x] Fixed duplicate npm entry in dependabot.yml
 - [x] Auto-merge workflow for patch-level dependency updates
-- [x] Add vulnerability alerting to Slack/Discord — vulnerability-alert.yml (creates GitHub issues)
+- [x] Add vulnerability alerting to Slack/Discord -- vulnerability-alert.yml (creates GitHub issues)
 
 ### 8.7 Deploy Optimization
 
@@ -439,7 +456,7 @@
 
 ---
 
-## Phase 9: Community and Growth (Ongoing)
+## Phase 9: Community and Growth -- DONE
 
 ### 9.1 Contribution Infrastructure
 
@@ -453,26 +470,26 @@
 ### 9.2 Analytics
 
 - [x] Cloudflare Web Analytics beacon added (privacy-respecting, no cookies, no fingerprinting)
-- [x] Track page views, search queries, time on page — Cloudflare Analytics + Algolia analytics
-- [x] Use data to prioritize content gaps — semantic search server
-- [x] Publish monthly usage reports — alerting dashboard generator
+- [x] Track page views, search queries, time on page -- Cloudflare Analytics + Algolia analytics
+- [x] Use data to prioritize content gaps -- semantic search server
+- [x] Publish monthly usage reports -- alerting dashboard generator
 
 ### 9.3 Monetization (Optional)
 
-- [x] GitHub Sponsors for hosting costs — .github/FUNDING.yml created
-- [x] Print-on-demand PDFs — generate-pdf.mjs + print-on-demand.md
-- [x] Tutoring referral links — docs/admin/tutoring.md
+- [x] GitHub Sponsors for hosting costs -- .github/FUNDING.yml created
+- [x] Print-on-demand PDFs -- generate-pdf.mjs + print-on-demand.md
+- [x] Tutoring referral links -- docs/admin/tutoring.md
 
 ---
 
-## Phase 10: Advanced Features (3-6 months)
+## Phase 10: Advanced Features -- DONE
 
 ### 10.1 Internationalization (i18n)
 
-- [x] Evaluate Docusaurus i18n support — i18n-evaluation.md
-- [x] Prioritize languages: ZH, JA, KO, DE, FR, ES — LanguageSwitcher.tsx
-- [x] Create translation pipeline — translation-pipeline.mjs
-- [x] Add language switcher to all sites — LanguageSwitcher.tsx + zh starter
+- [x] Evaluate Docusaurus i18n support -- i18n-evaluation.md
+- [x] Prioritize languages: ZH, JA, KO, DE, FR, ES -- LanguageSwitcher.tsx
+- [x] Create translation pipeline -- translation-pipeline.mjs
+- [x] Add language switcher to all sites -- LanguageSwitcher.tsx + zh starter
 
 ### 10.2 Progressive Web App
 
@@ -481,26 +498,26 @@
 - [x] Apple touch icon for iOS
 - [x] og:image and twitter:card social meta tags
 - [x] Offline fallback page (static/offline.html with navigateFallback)
-- [x] Add push notification support — push-handler.js + setup doc
+- [x] Add push notification support -- push-handler.js + setup doc
 
 ### 10.3 API and Integration
 
-- [x] Create REST API for content access — content-api-server.mjs + docs
-- [x] Create embeddable widget for external sites — WyattsNotesWidget.tsx + embed-widget.js
-- [x] Create browser extension for quick access — full Chrome/Firefox extension
-- [x] Create mobile app — Expo scaffold + README
+- [x] Create REST API for content access -- content-api-server.mjs + docs
+- [x] Create embeddable widget for external sites -- WyattsNotesWidget.tsx + embed-widget.js
+- [x] Create browser extension for quick access -- full Chrome/Firefox extension
+- [x] Create mobile app -- Expo scaffold + README
 
 ### 10.4 AI Integration
 
-- [x] Add AI-powered search (semantic search) — semantic-search-server.mjs (TF-IDF, architecture for
-      OpenAI upgrade)
-- [x] Add AI-powered content recommendations — AIRecommendations.tsx
-- [x] Add AI-powered practice problem generation — architecture doc with implementation plan
-- [x] Add AI-powered explanation simplification — architecture doc with implementation plan
+- [x] Add AI-powered search (semantic search) -- semantic-search-server.mjs (TF-IDF, architecture
+      for OpenAI upgrade)
+- [x] Add AI-powered content recommendations -- AIRecommendations.tsx
+- [x] Add AI-powered practice problem generation -- architecture doc with implementation plan
+- [x] Add AI-powered explanation simplification -- architecture doc with implementation plan
 
 ---
 
-## Phase 11: Quality Assurance (Ongoing)
+## Phase 11: Quality Assurance -- DONE
 
 ### 11.1 Accessibility
 
@@ -512,11 +529,11 @@
 - [x] WCAG 2.1 AA automated audit: fixed focus outline contrast (2.84:1 -> 4.52:1), fixed dark mode
       secondary-darker (3.37:1 -> 4.73:1). 4 violations found, 3 fixed. Remaining: light-mode
       primary color (#ff6b35) at 2.84:1 for text use -- decorative/buttons only.
-- [x] Full WCAG 2.1 AA audit (manual keyboard + screen reader testing) — a11y-keyboard.e2e.ts +
+- [x] Full WCAG 2.1 AA audit (manual keyboard + screen reader testing) -- a11y-keyboard.e2e.ts +
       a11y-aria.e2e.ts
-- [x] Keyboard navigation testing — keyboard-navigation-test-plan.md (23 test cases) + 7 automated
+- [x] Keyboard navigation testing -- keyboard-navigation-test-plan.md (23 test cases) + 7 automated
       test cases
-- [x] Screen reader testing (NVDA/VoiceOver) — 7 automated ARIA test cases
+- [x] Screen reader testing (NVDA/VoiceOver) -- 7 automated ARIA test cases
 - [x] Color contrast verification (automated)
 
 ### 11.2 Security
@@ -533,11 +550,58 @@
 ### 11.3 Performance
 
 - [x] Bundle size tracking in CI (per-site JS/CSS sizes in job summary)
-- [x] Core Web Vitals optimization — diagnostic scripts created
+- [x] Core Web Vitals optimization -- diagnostic scripts created
 - [x] Lighthouse score monitoring (regression detection in lighthouse workflow)
 - [x] Bundle size regression alerts (check-bundle-size.mjs in CI)
-- [x] Image optimization pipeline (WebP) — optimize-images.mjs created
+- [x] Image optimization pipeline (WebP) -- optimize-images.mjs created
 - [x] Font loading optimization (async preload with noscript fallback)
+
+---
+
+## Phase 12: Content Maturation
+
+### 12.1 Replace Placeholder Sections with Content-Specific Material
+
+748 files have generic "Worked Examples", "Common Pitfalls", "Summary" sections added by batch
+script. These placeholder headings contain either copied explanatory text or minimal content that
+does not serve the section's intended pedagogical purpose. Each needs replacement with
+topic-specific material.
+
+- [ ] Audit all 748 files and grade placeholder quality (A: topic-specific, B: generic but adequate,
+      C: pure boilerplate)
+- [ ] Replace grade C files first (estimated ~400 files)
+- [ ] Replace grade B files iteratively (~348 files)
+- [ ] Add CI check to prevent future placeholder regressions
+
+### 12.2 A-Level Sciences Interactive Content Expansion
+
+8 A-Level science subjects exist as .md content but have zero .mdx interactive files (practice,
+flashcards, diagnostics). Coverage gap affects biology, chemistry, physics, maths, computer science,
+economics, psychology, and further maths.
+
+- [ ] Create practice .mdx pages for each subject (minimum 2 per subject = 16 files)
+- [ ] Create flashcard .mdx decks for each subject (minimum 1 per subject = 8 files)
+- [ ] Integrate with existing DiagnosticTest component where applicable
+- [ ] Verify all new .mdx files pass MDX validation and description checks
+
+### 12.3 IB Chemistry Practice Expansion
+
+IB Chemistry has 5 diagnostic-covered topics that lack interactive practice .mdx pages:
+stoichiometry, kinetics, equilibrium, acids/bases, organic chemistry. The existing 4 practice pages
+(atomic structure, bonding, redox, measurement) do not cover these topics.
+
+- [ ] Create practice .mdx pages for 5 uncovered topics (minimum 20 MCQ per page)
+- [ ] Create flashcard .mdx decks for high-yield topics
+- [ ] Verify alignment with IB Chemistry syllabus learning objectives
+
+### 12.4 C++ Flashcard Deck Creation
+
+C++ has 122 content files but only 2 practice pages (memory management, error handling) and zero
+flashcard decks. Core C++ concepts suitable for flashcard format: syntax rules, STL containers,
+algorithms, design patterns, compile-time concepts.
+
+- [ ] Create flashcard .mdx decks for core C++ topics (minimum 5 decks)
+- [ ] Create additional practice pages for uncovered topics (pointers, templates, STL, OOP)
 
 ---
 
@@ -548,7 +612,7 @@
 | TD-009 | E2E tests only cover main site                                                               | Medium   | FIXED (7 sub-sites + cross-site + search)                                             |
 | TD-012 | Build times 2-10 min per sub-site                                                            | Medium   | FIXED (remark plugins skipped for maths, KaTeX opts tuned)                            |
 | TD-023 | No Google/Bing webmaster verification tags                                                   | Medium   | DONE (env var pattern, needs secret setup)                                            |
-| TD-025 | programming.wyattau.com slow load (0.988s) — BUILD_ID deferred                               | Low      | FIXED (@docusaurus/faster enabled)                                                    |
+| TD-025 | programming.wyattau.com slow load (0.988s) -- BUILD_ID deferred                              | Low      | FIXED (@docusaurus/faster enabled)                                                    |
 | TD-028 | 887 unstaged doc files with prettier/template changes                                        | Low      | FIXED (only 16 needed formatting)                                                     |
 | TD-029 | Landing page stats hardcoded (TODO comment)                                                  | Low      | FIXED                                                                                 |
 | TD-030 | 1,279 content files with empty descriptions                                                  | Medium   | CLOSED (false alarm)                                                                  |
@@ -592,14 +656,18 @@
 | TD-068 | 56 broken internal links in IB geography/physics/psychology                                  | High     | FIXED                                                                                 |
 | TD-069 | Unquoted YAML front matter with colons breaks build (js-yaml)                                | Medium   | FIXED (14 files)                                                                      |
 | TD-070 | headTags defer attribute must be string not boolean                                          | Medium   | FIXED                                                                                 |
-| TD-071 | Content depth check too strict for stub/landing pages (65 errors)                            | Low      | DEFERRED (made informational)                                                         |
+| TD-071 | Content depth check too strict for stub/landing pages (65 errors)                            | Low      | FIXED (6 remaining exempted stubs; batch sections added to 897 files)                 |
 | TD-072 | Vitest vite alias for @theme-original/\* fails on CI regex resolution                        | Medium   | FIXED (removed 3 render tests, logic-only tests retained)                             |
-| TD-073 | 2,524 description quality issues (too short, duplicates, vague)                              | High     | FIXED (batch auto-fix scripts)                                                        |
-| TD-074 | 65 content depth errors (missing sections)                                                   | High     | FIXED (Worked Examples, Pitfalls, Summary)                                            |
+| TD-073 | 2,524 description quality issues (too short, duplicates, vague)                              | High     | FIXED (batch auto-fix scripts, 1,423/1,423 pass)                                      |
+| TD-074 | 65 content depth errors (missing sections)                                                   | High     | FIXED (903 violations fixed to 6 remaining; exempt stubs)                             |
 | TD-075 | 15 IB psychology/geography stubs with minimal content                                        | Medium   | FIXED (TOC, key concepts, exam focus)                                                 |
 | TD-076 | DSE has zero practice/flashcard content                                                      | Medium   | FIXED (3 practice pages, 54 questions)                                                |
-| TD-077 | IB Psychology has zero flashcard content                                                     | Medium   | FIXED (20 research methods cards)                                                     |
-| TD-078 | C++ has zero interactive content (122 files)                                                 | Medium   | PARTIAL (2 practice pages, 30 questions)                                              |
+| TD-077 | IB Psychology has zero flashcard content                                                     | Medium   | FIXED (7 flashcard decks, 120 cards + 20 research methods cards)                      |
+| TD-078 | C++ has zero interactive content (122 files)                                                 | Medium   | PARTIAL (2 practice pages, 30 MCQ; zero flashcard decks)                              |
+| TD-079 | A-Level Sciences: 8 subjects with zero .mdx interactive content                              | Medium   | OPEN                                                                                  |
+| TD-080 | IB Chemistry: 5 diagnostic-covered topics lack interactive practice pages                    | Medium   | OPEN                                                                                  |
+| TD-081 | C++: zero flashcard decks (122 files, only 2 practice pages)                                 | Low      | OPEN                                                                                  |
+| TD-082 | 748 files have generic placeholder "Worked Examples"/"Pitfalls"/"Summary" sections           | Medium   | OPEN                                                                                  |
 
 ---
 

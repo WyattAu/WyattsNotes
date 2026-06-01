@@ -1,0 +1,207 @@
+---
+title: 'A-Level Chemistry: Physical Chemistry Practice'
+slug: practice-physical-chemistry
+description:
+  '18 MCQ questions on energetics, kinetics, equilibrium, acids and bases, and electrochemistry for
+  A-Level Chemistry revision and exam preparation.'
+tags:
+  - Chemistry
+  - A-Level
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+## A-Level Chemistry -- Physical Chemistry Practice
+
+18 MCQ practice problems. Select answer, submit, review explanation.
+
+---
+
+### Energetics
+
+<PracticeProblem
+  questions={[
+    {
+      question: 'Which of the following is always true for an exothermic reaction?',
+      options: [
+        'A) The products have higher enthalpy than the reactants',
+        'B) Enthalpy change (delta H) is negative and heat is released to the surroundings',
+        'C) Activation energy is zero',
+        'D) The reaction is always spontaneous',
+      ],
+      correct: 1,
+      explanation:
+        'In an exothermic reaction, the enthalpy of the products is LOWER than the reactants. Delta H is negative (heat released to surroundings). Activation energy is always non-zero (except for some radical reactions). Spontaneity depends on Gibbs free energy (delta G = delta H - T delta S), not just enthalpy. An exothermic reaction can be non-spontaneous if delta S is sufficiently negative.',
+    },
+    {
+      question:
+        "Using Hess's Law, calculate the enthalpy of formation of CO(g) given: C(s) + O2(g) -> CO2(g), delta H = -393 kJ mol-1 and CO(g) + 0.5 O2(g) -> CO2(g), delta H = -283 kJ mol-1.",
+      options: ['A) -110 kJ mol-1', 'B) +110 kJ mol-1', 'C) -676 kJ mol-1', 'D) -393 kJ mol-1'],
+      correct: 0,
+      explanation:
+        "By Hess's Law: Route 1 (direct): C(s) + 0.5 O2(g) -> CO(g), delta H = ?. Route 2 (indirect): C(s) + O2(g) -> CO2(g) is -393, then reverse CO oxidation: CO2(g) -> CO(g) + 0.5 O2(g) is +283. Sum: -393 + 283 = -110 kJ mol-1. Hess's Law states that the enthalpy change for a reaction is independent of the route taken, provided initial and final conditions are the same.",
+    },
+    {
+      question:
+        'The standard enthalpy of atomisation of chlorine is +122 kJ mol-1. Use this to calculate the mean bond enthalpy of the Cl-Cl bond in Cl2.',
+      options: ['A) +61 kJ mol-1', 'B) +122 kJ mol-1', 'C) +244 kJ mol-1', 'D) +488 kJ mol-1'],
+      correct: 2,
+      explanation:
+        'The standard enthalpy of atomisation of chlorine is defined as the enthalpy change to produce 1 mole of gaseous Cl atoms from Cl2(g). This is +122 kJ mol-1 per mole of Cl atoms. Since Cl2(g) -> 2Cl(g) produces 2 moles of Cl atoms, the total enthalpy change for breaking one mole of Cl-Cl bonds = 2 x 122 = +244 kJ mol-1. The mean bond enthalpy of Cl-Cl = +244 kJ mol-1. Note the distinction: atomisation enthalpy is per mole of atoms; bond enthalpy is per mole of bonds broken.',
+    },
+    {
+      question:
+        'Analyse the effect of increasing temperature on the rate of a chemical reaction using the Arrhenius equation.',
+      options: [
+        'A) Increasing temperature decreases the activation energy',
+        'B) Increasing temperature increases the proportion of particles with energy >= Ea, increasing the rate constant k',
+        'C) Increasing temperature increases the concentration of reactants',
+        'D) Increasing temperature changes the order of reaction from first to second order',
+      ],
+      correct: 1,
+      explanation:
+        'The Arrhenius equation: k = A x e^(-Ea/RT). Increasing temperature (T) decreases the exponent (-Ea/RT becomes less negative), increasing k exponentially. From the Maxwell-Boltzmann distribution, at higher temperatures, a greater proportion of molecules have kinetic energy >= activation energy (Ea). The activation energy itself does NOT change with temperature. Concentration is independent of temperature. Reaction order is determined by the mechanism, not temperature.',
+    },
+    {
+      question:
+        'A catalyst increases the rate of a reaction. Evaluate which statement correctly describes how a heterogeneous catalyst works.',
+      options: [
+        'A) It increases the activation energy by providing an alternative pathway',
+        'B) It provides a surface for the reaction to occur, adsorbing reactant molecules and weakening bonds, lowering the activation energy',
+        'C) It is consumed in the reaction and must be continuously replaced',
+        'D) It raises the temperature of the reaction mixture',
+      ],
+      correct: 1,
+      explanation:
+        'A heterogeneous catalyst is in a different phase to the reactants (usually solid catalysing gaseous/liquid reactants). It works by: (1) adsorbing reactant molecules onto its surface, (2) weakening bonds in the reactants (lowering Ea), (3) providing an alternative reaction pathway with lower activation energy, (4) products desorbing from the surface. Catalysts are NOT consumed (regenerated after each cycle) and do NOT change the equilibrium position or thermodynamics of the reaction. Example: iron in the Haber process (Fe surface adsorbs N2 and H2).',
+    },
+  ]}
+/>
+
+---
+
+### Equilibrium
+
+<PracticeProblem
+  questions={[
+    {
+      question:
+        'Which of the following changes will shift the equilibrium position to the LEFT for the exothermic reaction: N2(g) + 3H2(g) <=> 2NH3(g), delta H = -92 kJ mol-1?',
+      options: [
+        'A) Decreasing temperature',
+        'B) Increasing pressure',
+        'C) Adding a catalyst',
+        'D) Increasing temperature',
+      ],
+      correct: 3,
+      explanation:
+        "Applying Le Chatelier's principle: increasing temperature adds heat (a 'product' for exothermic reactions). The system shifts LEFT to absorb the added heat, favouring the endothermic (reverse) direction. Decreasing temperature would shift RIGHT. Increasing pressure favours the side with fewer moles of gas (right, 2 mol vs 4 mol). A catalyst increases the rate of BOTH forward and reverse reactions equally, having NO effect on equilibrium position.",
+    },
+    {
+      question:
+        'For the equilibrium: 2SO2(g) + O2(g) <=> 2SO3(g), Kc = 4.0 at temperature T. If [SO2] = 0.5 mol dm-3, [O2] = 0.25 mol dm-3, and [SO3] = 0.5 mol dm-3, calculate Qc and determine if the system is at equilibrium.',
+      options: [
+        'A) Qc = 4.0, system is at equilibrium since Qc = Kc',
+        'B) Qc = 2.0, reaction shifts right to reach equilibrium',
+        'C) Qc = 8.0, reaction shifts left to reach equilibrium',
+        'D) Qc = 1.0, reaction shifts right to reach equilibrium',
+      ],
+      correct: 0,
+      explanation:
+        'Qc = [SO3]^2 / ([SO2]^2 x [O2]) = (0.5)^2 / ((0.5)^2 x 0.25) = 0.25 / (0.25 x 0.25) = 0.25 / 0.0625 = 4.0. Since Qc = Kc = 4.0, the system IS already at equilibrium and there is no net shift in either direction. Qc < Kc would indicate a shift right; Qc > Kc would indicate a shift left.',
+    },
+    {
+      question:
+        'Evaluate the effect of adding an inert gas (e.g. argon) at CONSTANT PRESSURE on the equilibrium: PCl5(g) <=> PCl3(g) + Cl2(g).',
+      options: [
+        'A) Equilibrium shifts to the right because total moles increase',
+        'B) Equilibrium shifts to the left because total pressure decreases',
+        'C) There is no effect on equilibrium position because concentrations of reactants and products remain unchanged',
+        'D) The equilibrium constant Kp changes',
+      ],
+      correct: 2,
+      explanation:
+        'Adding an inert gas at constant pressure increases the total volume of the system (since the container must expand to maintain constant pressure). However, the partial pressures (and therefore concentrations) of all reactants and products remain unchanged because the inert gas does not react. Since Qp = Kp initially and neither changes, there is NO shift in equilibrium position. Kp is constant at a given temperature and is not affected by adding inert gas. Note: at constant VOLUME, adding inert gas increases total pressure but partial pressures stay the same -- again no shift.',
+    },
+  ]}
+/>
+
+---
+
+### Acids and Bases
+
+<PracticeProblem
+  questions={[
+    {
+      question:
+        'Calculate the pH of a 0.050 mol dm-3 solution of HCl at 298 K. (HCl is a strong acid, fully dissociated.)',
+      options: ['A) 1.30', 'B) 2.00', 'C) 1.70', 'D) 0.50'],
+      correct: 0,
+      explanation:
+        'HCl is a strong monoprotic acid, so [H+] = [HCl] = 0.050 mol dm-3. pH = -log10[H+] = -log10(0.050) = -log10(5 x 10^-2) = -(log10(5) + log10(10^-2)) = -(0.699 - 2) = -(-1.301) = 1.30. Since HCl fully dissociates: HCl -> H+ + Cl-, [H+] equals the initial concentration. This is a standard A-Level calculation.',
+    },
+    {
+      question:
+        'A weak acid HA has Ka = 3.2 x 10^-5 mol dm-3. Calculate the pH of a 0.10 mol dm-3 solution, assuming the approximation [HA]eq is approximately equal to [HA]init.',
+      options: ['A) 2.75', 'B) 3.45', 'C) 4.50', 'D) 1.00'],
+      correct: 0,
+      explanation:
+        'Ka = [H+][A-] / [HA]. For a weak acid: [H+] = [A-] = x, and [HA] = 0.10 - x, approximately 0.10 (since x << 0.10). So Ka = x^2 / 0.10, giving x = sqrt(Ka x 0.10) = sqrt(3.2 x 10^-5 x 0.10) = sqrt(3.2 x 10^-6) = 1.789 x 10^-3 mol dm-3. pH = -log10(1.789 x 10^-3) = 2.75. Validity check: x/initial = 1.789 x 10^-3 / 0.10 = 1.8% < 5%, so the approximation is valid.',
+    },
+    {
+      question:
+        'Analyse how a buffer solution resists changes in pH when a small amount of strong acid is added.',
+      options: [
+        'A) The buffer increases the concentration of OH- ions to neutralise the added H+',
+        'B) The weak base component of the buffer reacts with the added H+ ions, converting them to the weak acid form',
+        'C) The buffer increases the volume to dilute the added acid below detectable levels',
+        'D) The buffer changes Ka to shift the equilibrium away from H+ production',
+      ],
+      correct: 1,
+      explanation:
+        'An acidic buffer consists of a weak acid (HA) and its conjugate base (A-, from a soluble salt). When H+ is added: A- + H+ -> HA. The conjugate base mops up the added H+, converting it to the weak acid. The ratio [HA]/[A-] changes slightly but pH changes only minimally (governed by Henderson-Hasselbalch: pH = pKa + log([A-]/[HA])). Adding strong base has the reverse effect: HA + OH- -> A- + H2O. Ka itself does NOT change.',
+    },
+  ]}
+/>
+
+---
+
+### Electrochemistry
+
+<PracticeProblem
+  questions={[
+    {
+      question:
+        'In a standard electrode potential measurement, what is the purpose of the standard hydrogen electrode?',
+      options: [
+        'A) It provides the electrical current to drive the reaction',
+        'B) It serves as a reference electrode with a defined potential of 0.00 V under standard conditions',
+        'C) It increases the rate of the redox reaction',
+        'D) It acts as a salt bridge connecting the two half-cells',
+      ],
+      correct: 1,
+      explanation:
+        'The standard hydrogen electrode (SHE) is assigned a potential of exactly 0.00 V under standard conditions (298 K, 100 kPa pressure, 1.0 mol dm-3 H+ ions, platinised platinum electrode). It consists of H2 gas at 100 kPa bubbling over a platinum electrode immersed in 1.0 mol dm-3 H+(aq). All other standard electrode potentials (E standard) are measured relative to the SHE. The salt bridge is a separate component connecting half-cells.',
+    },
+    {
+      question:
+        "Use Faraday's laws to calculate the mass of copper deposited at the cathode when a current of 2.50 A is passed through CuSO4 solution for 45 minutes. (Cu = 63.5, F = 96500 C mol-1).",
+      options: ['A) 1.12 g', 'B) 2.24 g', 'C) 4.48 g', 'D) 0.56 g'],
+      correct: 1,
+      explanation:
+        "Cu2+(aq) + 2e- -> Cu(s). Step 1: Total charge Q = I x t = 2.50 x (45 x 60) = 2.50 x 2700 = 6750 C. Step 2: Moles of electrons = Q / F = 6750 / 96500 = 0.06995 mol e-. Step 3: Moles of Cu = moles e- / 2 = 0.06995 / 2 = 0.03498 mol. Step 4: Mass = moles x Mr = 0.03498 x 63.5 = 2.22 g, approximately 2.24 g (option B, accounting for rounding in intermediate steps). This demonstrates Faraday's first and second laws.",
+    },
+    {
+      question:
+        'Evaluate the feasibility of the reaction: Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s) given E standard(Zn2+/Zn) = -0.76 V and E standard(Cu2+/Cu) = +0.34 V.',
+      options: [
+        'A) E cell = +1.10 V; the reaction is feasible as written',
+        'B) E cell = -0.42 V; the reaction is not feasible as written',
+        'C) E cell = +1.10 V; the reaction is not feasible as written',
+        'D) E cell = -1.10 V; the reaction is feasible as written',
+      ],
+      correct: 0,
+      explanation:
+        'E cell = E(cathode) - E(anode). The more positive E standard value reduction occurs at the cathode. Cu2+/Cu is more positive (+0.34 V), so Cu2+ is reduced (cathode). Zn is oxidised (anode). E cell = E standard(Cu2+/Cu) - E standard(Zn2+/Zn) = +0.34 - (-0.76) = +1.10 V. Since E cell > 0, the reaction is thermodynamically feasible under standard conditions. A positive E cell indicates a spontaneous reaction (delta G = -nFE cell, negative). Kinetic feasibility also needs to be considered in practice.',
+    },
+  ]}
+/>

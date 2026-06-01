@@ -1,0 +1,175 @@
+---
+title: 'A-Level Psychology Flashcards: Memory'
+slug: flashcards-memory
+description:
+  'A-Level Psychology flashcards on memory: multi-store model, working memory model, schemas,
+  reconstructive memory, forgetting curves, eyewitness testimony, and cognitive interviews.'
+tags:
+  - Psychology
+  - A-Level
+  - Flashcards
+---
+
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## A-Level Psychology: Memory -- Flashcard Deck
+
+20 flashcards with spaced repetition. Press Space to flip, then rate your recall (1-4).
+
+---
+
+<FlashcardDeck
+  deckId="alevel-psychology-memory"
+  title="A-Level Psychology: Memory"
+  description="Multi-store model, working memory, schemas, reconstructive memory, forgetting, eyewitness testimony, and cognitive interviews"
+  cards={[
+    {
+      id: 'msm-1',
+      front: 'Describe the Multi-Store Model of memory proposed by Atkinson and Shiffrin (1968).',
+      back: 'The Multi-Store Model (MSM) proposes memory consists of three stores: (1) Sensory register -- receives information from senses, duration < 0.5 seconds, capacity is large. (2) Short-term memory (STM) -- encodes mainly acoustically, duration 18-30 seconds, capacity 7+/-2 items (Miller, 1956). (3) Long-term memory (LTM) -- encodes mainly semantically, potentially unlimited duration and capacity. Information flows through the stores via attention (sensory to STM) and rehearsal (STM to LTM). Retrieval transfers information from LTM back to STM.',
+      tags: ['msm', 'models'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'msm-2',
+      front: 'What evidence supports and challenges the Multi-Store Model of memory?',
+      back: 'Support: (1) Primacy-recency effect in free recall (Glanzer and Cunitz, 1966) -- primacy reflects LTM storage, recency reflects STM. (2) Brain damage cases: Clive Wearing has damaged hippocampus -- intact STM but no LTM, supporting separate stores. (3) Case ofKF: brain-damaged patient with impaired STM but intact LTM. Challenges: (1) MSM is too simplistic -- the working memory model (Baddeley and Hitch) shows STM is not a unitary store. (2) Not all rehearsal leads to LTM -- depth of processing matters (Craik and Lockhart, 1972). (3) LTM encoding is not only semantic -- also visual and acoustic.',
+      tags: ['msm', 'evaluation'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'wmm-1',
+      front: 'Describe the Working Memory Model proposed by Baddeley and Hitch (1974).',
+      back: 'The Working Memory Model (WMM) replaced the unitary STM concept with a multi-component system: (1) Central executive -- allocates attention and coordinates the slave systems, has limited capacity. (2) Phonological loop -- processes auditory information; has two parts: phonological store (holds inner speech, 2 seconds) and articulatory rehearsal process (maintains information through subvocal rehearsal). (3) Visuo-spatial sketchpad -- stores and processes visual and spatial information (mental imagery). (4) Episodic buffer (added 2000) -- temporary store integrating information from phonological loop, visuo-spatial sketchpad, and LTM into a coherent episode.',
+      tags: ['wmm', 'models'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'wmm-2',
+      front: 'What evidence supports the Working Memory Model?',
+      back: '(1) Dual-task performance: participants can perform a visual task and verbal task simultaneously with minimal interference (Baddeley et al.), supporting separate visuo-spatial and phonological systems. Performing two verbal tasks simultaneously causes interference, supporting a single phonological loop. (2) Brain imaging: different brain areas activate during spatial vs verbal working memory tasks (Smith and Jonides, 1997). (3) Case ofPV: patient with impaired phonological loop but intact visuo-spatial sketchpad -- could perform visual but not verbal tasks. (4) Word length effect: shorter words are recalled better (Baddeley et al., 1975) because they can be rehearsed more times within the phonological loop.',
+      tags: ['wmm', 'evidence'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ltm-1',
+      front: 'What are the three main types of long-term memory and give an example of each.',
+      back: '(1) Episodic memory -- personal experiences and events, stored with context of time and place. Example: remembering your first day of school. (2) Semantic memory -- general knowledge and facts, independent of personal experience. Example: knowing that Paris is the capital of France. (3) Procedural memory -- skills and routines, often unconscious. Example: riding a bicycle or typing on a keyboard. Tulving (1985) proposed this distinction. Episodic and semantic are declarative (explicit) memories; procedural is non-declarative (implicit). Evidence: brain damage can affect one type but not others (e.g., Clive Wearing had intact procedural but impaired episodic memory).',
+      tags: ['ltm', 'types'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ltm-2',
+      front:
+        'Describe the case of Clive Wearing and explain what it demonstrates about long-term memory.',
+      back: 'Clive Wearing contracted herpes simplex encephalitis in 1985, which destroyed his hippocampus and parts of his temporal lobes. He has profound anterograde amnesia (cannot form new episodic memories -- his memory lasts approximately 7-30 seconds) and severe retrograde amnesia (cannot recall most of his past). However, he retains: (1) Procedural memory -- he can still play the piano and conduct music. (2) Emotional memory -- he recognises his wife Deborah and shows joy on seeing her. (3) Semantic memory -- he knows facts about music. This case supports the WMM and demonstrates that LTM is not unitary -- different types of LTM are stored in different brain regions and can be independently damaged.',
+      tags: ['ltm', 'case-studies'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'schema-1',
+      front: 'What are schemas and how do they influence memory, according to Bartlett (1932)?',
+      back: 'Schemas (Bartlett, 1932) are mental frameworks or packages of knowledge about the world, built from past experience. They organise incoming information and help us make sense of new experiences. Bartlett demonstrated schema influence in his "War of the Ghosts" study: English participants read a Native American ghost story and recalled it by altering details to fit their own cultural schemas (e.g., replacing "canoes" with "boats", removing supernatural elements). This shows memory is reconstructive -- we do not passively record information but actively reconstruct it using schemas, leading to distortions and inaccuracies.',
+      tags: ['schemas', 'reconstructive'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'schema-2',
+      front:
+        'What is reconstructive memory and how does it differ from the idea of memory as a video recording?',
+      back: 'Reconstructive memory (Bartlett, 1932) is the theory that we actively reconstruct memories when retrieving them, rather than replaying an exact recording. Memories are assembled from fragments using schemas, leading to distortions. This contrasts with the "video recording" metaphor of memory, which is incorrect because: (1) Memories change each time they are retrieved (reconsolidation). (2) We fill in gaps with plausible information based on schemas. (3) Misleading post-event information can alter original memories (Loftus and Palmer). (4) Memory is not a perfect archive -- forgetting, confabulation, and source monitoring errors are common.',
+      tags: ['schemas', 'reconstructive'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'evidence-1',
+      front:
+        "Describe Loftus and Palmer's (1974) study on the effect of leading questions on eyewitness testimony.",
+      back: 'Loftus and Palmer showed participants films of car accidents and asked questions using different verbs: "About how fast were the cars going when they HIT each other?" vs SMASHED vs COLLIDED vs CONTACTED. The verb used significantly affected speed estimates: SMASHED produced the highest estimates (40.5 mph), CONTACTED the lowest (31.8 mph). In a second experiment, participants asked with SMASHED were more likely to report broken glass (16%) a week later than those asked with HIT (7%), even though no glass was present. This demonstrates the misinformation effect -- post-event information alters memory.',
+      tags: ['eyewitness', 'loftus'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'evidence-2',
+      front:
+        "Evaluate Loftus and Palmer's research on eyewitness testimony. What are its strengths and limitations?",
+      back: 'Strengths: (1) High experimental control -- laboratory setting allows causal conclusions about leading questions. (2) Reliable findings -- the effect has been replicated many times. (3) Real-world application -- influenced police interview guidelines (e.g., avoiding leading questions). (4) Supporting evidence: Loftus et al. (1987) "lost in the mall" study showed false memories can be implanted. Limitations: (1) Low ecological validity -- watching a video is not the same as witnessing a real crime (real witnesses have higher arousal). (2) Demand characteristics -- participants may have guessed the aim. (3) Yuille and Cutshall (1986) found real witnesses were not affected by misleading questions, challenging the generalisability.',
+      tags: ['eyewitness', 'evaluation'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'forgetting-1',
+      front:
+        'Describe two explanations for forgetting from long-term memory: interference and retrieval failure.',
+      back: '(1) Interference (McGeoch, 1932) -- information in LTM becomes confused or overwritten by other information. Proactive interference: old memories disrupt recall of new information (e.g., learning French then Spanish, old French words interfere). Retroactive interference: new information disrupts recall of old information (e.g., learning a new phone number replaces the old one). (2) Retrieval failure (Tulving, 1972) -- memories are stored in LTM but cannot be accessed because the correct retrieval cues are absent. The encoding specificity principle (Tulving and Thomson, 1973) states recall is better when cues at retrieval match those at encoding (context-dependent and state-dependent memory).',
+      tags: ['forgetting', 'explanations'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'forgetting-2',
+      front: 'What is the forgetting curve and who proposed it?',
+      back: 'The forgetting curve (Ebbinghaus, 1885) shows the pattern of memory loss over time. Ebbinghaus memorised nonsense syllables and tested his recall at different intervals. His results showed: within 20 minutes, about 60% is forgotten; within 1 hour, about 66%; within 9 hours, about 72%; within 1 day, about 75%; within 1 month, about 80%. The curve is steepest initially and then flattens, showing most forgetting occurs shortly after learning. Ebbinghaus used nonsense syllables to control for prior knowledge and schemas. The curve supports the theory that forgetting occurs primarily through decay and lack of rehearsal. Spaced repetition (reviewing at increasing intervals) counters this curve.',
+      tags: ['forgetting', 'curves'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'forgetting-3',
+      front:
+        'How does the theory of retrieval failure (cue-dependent forgetting) explain forgetting, and what evidence supports it?',
+      back: "Tulving (1972) proposed that forgetting occurs when we lack the appropriate retrieval cues to access stored memories. The encoding specificity principle states that cues present at encoding are most effective at retrieval. Evidence: (1) Godden and Baddeley (1975) -- divers learned words on land or underwater; recall was best in the same environment (context-dependent memory). (2) Carter and Cassaday (1998) -- participants learned words while on antihistamine or placebo; recall was best in the same drug state (state-dependent memory). (3) Baddeley (1975) found context had limited effect in real-world settings, challenging the theory's generalisability.",
+      tags: ['forgetting', 'retrieval'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ewt-1',
+      front: 'What factors affect the accuracy of eyewitness testimony (EWT)?',
+      back: '(1) Anxiety -- the weapon focus effect (Loftus et al., 1987): witnesses focus on the weapon and recall less about the perpetrator. Moderate anxiety may improve accuracy (Christianson, 1992), but high anxiety impairs it. (2) Age -- children and elderly are less accurate witnesses (Parker et al., 1995; Coxon and Valentine, 1997). (3) Cognitive interview techniques can improve accuracy. (4) Leading questions alter memory (Loftus and Palmer, 1974). (5) Post-event discussion with other witnesses contaminates memory through misinformation. (6) Confidence is not a reliable indicator of accuracy (Loftus, 1979) -- confident witnesses may be wrong.',
+      tags: ['eyewitness', 'factors'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ewt-2',
+      front: 'What is the cognitive interview and what are its four main techniques?',
+      back: 'The cognitive interview (Fisher and Geiselman, 1992) was developed to improve EWT accuracy using psychological principles. Four main techniques: (1) Report everything -- recall every detail, even trivial ones, to trigger other memories. (2) Reinstate context -- mentally recreate the physical and emotional environment at the time of the event (context-dependent recall). (3) Reverse the order -- recount events in reverse chronological order to disrupt schema-driven reconstruction. (4) Change perspective -- describe events from different perspectives (e.g., what the perpetrator would have seen) to provide new retrieval cues. Research shows the cognitive interview increases the amount of correct information recalled by 25-45% compared to standard police interviews.',
+      tags: ['eyewitness', 'cognitive-interview'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ewt-3',
+      front: 'Evaluate the cognitive interview technique. What are its strengths and limitations?',
+      back: 'Strengths: (1) Supported by meta-analysis: Geiselman et al. (1985) found 45% more correct information recalled. (2) Real-world application: adopted by many UK and US police forces. (3) Does not significantly increase false information compared to standard interviews (Milne and Bull, 2002). (4) Based on established memory theories (cue-dependency, context reinstatement). Limitations: (1) Time-consuming to conduct (Kebbell and Wagstaff, 1999), impractical for routine policing. (2) Some officers are inadequately trained. (3) Fisher et al. (1987) found the enhanced cognitive interview (adding rapport-building) was more effective than the original. (4) May increase distress in vulnerable witnesses.',
+      tags: ['eyewitness', 'evaluation'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'interference-1',
+      front: 'Compare proactive and retroactive interference with examples.',
+      back: 'Proactive interference (PI): old learning disrupts new learning. Example: learning a new phone number but still dialling the old one. Underwood and Postman (1960) found PI was stronger when participants had learned more word lists beforehand. Retroactive interference (RI): new learning disrupts old memories. Example: moving house and being unable to recall your old postcode. Both types of interference explain why similar material interferes more (proactive interference is stronger when old and new lists are similar). Interference is strongest when the information is similar in content and was learned in the same context.',
+      tags: ['forgetting', 'interference'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'interference-2',
+      front: 'What evidence supports interference theory as an explanation for forgetting?',
+      back: '(1) McGeoch and McDonald (1931): participants learned a word list, then rested or learned a second list. Those who learned the second list showed more forgetting of the first list (retroactive interference). (2) Underwood (1949): the more previous lists participants learned, the poorer their recall of the current list (proactive interference). (3) Baddeley and Hitch (1977): rugby players recalled names of teams they played in the current season (high accuracy) but were less accurate for previous seasons, supporting RI over time. Limitation: interference is a lab-based concept and may not fully explain all real-world forgetting.',
+      tags: ['forgetting', 'interference'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'iap-1',
+      front:
+        'What is the Information Processing approach to memory and how does the Multi-Store Model exemplify it?',
+      back: 'The Information Processing approach (derived from computer science) views the mind as processing information like a computer: input (sensory information) is encoded, stored, and retrieved (output). The MSM (Atkinson and Shiffrin, 1968) exemplifies this: sensory register receives input (like a keyboard), STM processes and temporarily stores (like RAM), LTM is the permanent store (like a hard drive). Information flows linearly through the system. Strength: provides a clear, testable framework. Weakness: oversimplifies memory -- later models (WMM) show STM is not unitary, and the approach ignores the constructive nature of memory (schemas, reconstruction).',
+      tags: ['msm', 'information-processing'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'reconstructive-1',
+      front:
+        "How does Bartlett's War of the Ghosts study (1932) demonstrate reconstructive memory?",
+      back: 'Bartlett had English participants read a Native American folk tale "War of the Ghosts" (from the Chinook people), which contained unfamiliar supernatural elements (ghosts, canoes, seals). He tested recall at increasing intervals (15 minutes to months). Participants systematically altered the story to fit their own cultural schemas: "canoes" became "boats", "hunting seals" became "fishing", supernatural ghost elements were rationalised or omitted, and the story became shorter and more coherent. This demonstrated that memory is reconstructive -- we do not passively reproduce information but actively reshape it using our existing schemas to make it culturally familiar and logical.',
+      tags: ['schemas', 'bartlett'],
+      difficulty: 'medium',
+    },
+  ]}
+/>
