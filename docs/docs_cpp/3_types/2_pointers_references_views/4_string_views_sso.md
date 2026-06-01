@@ -1,6 +1,8 @@
 ---
 title: String Views and Small String Optimization
-description: 'C++ Programming String Views and Small String Optimization notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming String Views and Small String Optimization notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -730,3 +732,8 @@ optimization, including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

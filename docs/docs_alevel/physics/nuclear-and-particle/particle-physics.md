@@ -1,6 +1,8 @@
 ---
 title: Particle Physics
-description: 'A-Level Particle Physics notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
+description:
+  'A-Level Particle Physics notes covering key definitions, core concepts, worked examples, and
+  practice questions for structured learning and effective revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]
@@ -25,7 +27,7 @@ The Standard Model classifies all known fundamental particles and their interact
 | --------------- | ----------------------- | ----------------- | ----------------- | ----------------- |
 | Electromagnetic | Photon ($\gamma$)       | Charged particles | Infinite          | $\sim 10^{-2}$    |
 | Strong (colour) | Gluon ($g$)             | Quarks, gluons    | $\sim 10^{-15}$ m | $\sim 1$          |
-| Weak            | $W^\pm$, $Z^0$            | All fermions      | $\sim 10^{-18}$ m | $\sim 10^{-6}$    |
+| Weak            | $W^\pm$, $Z^0$          | All fermions      | $\sim 10^{-18}$ m | $\sim 10^{-6}$    |
 | Gravitational   | Graviton (hypothetical) | All mass/energy   | Infinite          | $\sim 10^{-39}$   |
 
 ## 2. Quarks
@@ -132,14 +134,14 @@ Interaction (which does not conserve strangeness).
 
 In all particle interactions, the following quantities are **always conserved**:
 
-| Quantity                             | Conserved in all interactions? |
-| ------------------------------------ | ------------------------------ |
-| Energy                               | Yes                            |
-| Momentum                             | Yes                            |
-| Electric charge                      | Yes                            |
+| Quantity                                 | Conserved in all interactions? |
+| ---------------------------------------- | ------------------------------ |
+| Energy                                   | Yes                            |
+| Momentum                                 | Yes                            |
+| Electric charge                          | Yes                            |
 | Lepton number ($L_e$, $L_\mu$, $L_\tau$) | Yes                            |
-| Baryon number ($B$)                  | Yes                            |
-| Strangeness ($S$)                    | Strong and EM only (not weak)  |
+| Baryon number ($B$)                      | Yes                            |
+| Strangeness ($S$)                        | Strong and EM only (not weak)  |
 
 :::warning Warning **not** by the weak interaction. Strange particles are always produced in pairs
 (associated production) Via the strong interaction (conserving $S$) but decay individually via the
@@ -502,3 +504,14 @@ m). The discrepancy suggests an experimental issue or different scattering geome
 
 4. Confusing scalar and vector quantities — always check whether direction matters for the quantity
    in question.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

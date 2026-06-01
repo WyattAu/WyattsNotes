@@ -1,7 +1,9 @@
 ---
 id: tls-internals
 title: TLS Internals
-description: 'TLS Internals notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
+description:
+  'TLS Internals notes covering key definitions, core concepts, worked examples, and practice
+  questions for efficient exam preparation and mastery.'
 slug: tls-internals
 tags:
   - Networking
@@ -891,3 +893,8 @@ evidence, and real-world applications.
 
 Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
 and evaluate experimental evidence critically.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

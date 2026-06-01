@@ -3,7 +3,9 @@ title: Chronicle of a Death Foretold
 tags:
   - english
 slug: chronicle-death-foretold
-description: 'IB English Chronicle of a Death Foretold notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
+description:
+  'IB English Chronicle of a Death Foretold notes covering key definitions, core concepts, worked
+  examples, and practice questions for complete revision.'
 ---
 
 ## Author Context
@@ -813,3 +815,8 @@ Management strategies. :::
 3. Describing the content of a text without analysing the language techniques the writer uses.
 
 4. Ignoring context — always consider the social, historical, and literary context of the text.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

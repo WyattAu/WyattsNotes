@@ -1,7 +1,9 @@
 ---
 id: binary-search-trees
 title: Binary Search Trees and Balanced Trees
-description: 'Algorithms Binary Search Trees and Balanced notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'Algorithms Binary Search Trees and Balanced notes covering key definitions, core concepts, worked
+  examples, and practice questions for revision.'
 slug: binary-search-trees
 ---
 
@@ -1130,3 +1132,8 @@ balanced trees, including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

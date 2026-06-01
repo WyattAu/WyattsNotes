@@ -1,6 +1,8 @@
 ---
 title: Alkanes
-description: 'A-Level Chemistry Alkanes notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
+description:
+  'A-Level Chemistry Alkanes notes covering key definitions, core concepts, worked examples, and
+  practice questions for structured learning and effective revision.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -547,7 +549,8 @@ mixture of alkanes and alkenes. Free radical mechanism. Used to produce ethene.
 
 $, $
 \mathrm{C}_{10}\mathrm{H}_{22} \xrightarrow{\Delta} \mathrm{C}_8\mathrm{H}_{18} + \mathrm{C}_2\mathrm{H}_4
-$, $
+$,
+$
 
 **Catalytic cracking:** Lower temperature ($450^\circ\mathrm{C}$) with a zeolite catalyst. Produces
 branched alkanes and cycloalkanes (better for petrol, higher octane rating).
@@ -586,21 +589,25 @@ $, $
 
 $, $
 \mathrm{Cl}\cdot + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_3 \to \mathrm{HCl} + \mathrm{CH}_2\cdot\mathrm{CH}_2\mathrm{CH}_3 \quad (\text{abstracts a primary H})
-$, $
+$,
+$
 
 $, $
 \mathrm{CH}_2\cdot\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{Cl}_2 \to \mathrm{CH}_2\mathrm{ClCH}_2\mathrm{CH}_3 + \mathrm{Cl}\cdot
-$, $
+$,
+$
 
 **Propagation (pathway to 2-chloropropane):**
 
 $, $
 \mathrm{Cl}\cdot + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_3 \to \mathrm{HCl} + \mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_3 \quad (\text{abstracts a secondary H})
-$, $
+$,
+$
 
 $, $
 \mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_3 + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{CHClCH}_3 + \mathrm{Cl}\cdot
-$, $
+$,
+$
 
 **Termination:**
 
@@ -931,3 +938,8 @@ and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

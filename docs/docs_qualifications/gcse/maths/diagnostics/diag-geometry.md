@@ -1,6 +1,8 @@
 ---
 title: 'Geometry -- Diagnostic Tests'
-description: 'GCSE Maths Geometry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
+description:
+  'GCSE Maths Geometry -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for complete revision.'
 slug: diag-geometry
 hide_table_of_contents: true
 ---
@@ -172,3 +174,19 @@ $= 500 \times \frac{27}{125} = 500 \times 0.216 = 108$ g.
 If both solids are made of the same material (same density), the weight ratio equals the volume
 ratio (27:125). If the solids are made of different materials, the weight ratio would differ. Since
 the question does not specify, assuming same material, the weight ratio equals the volume ratio.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

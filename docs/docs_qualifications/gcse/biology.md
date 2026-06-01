@@ -224,7 +224,7 @@ contains key concepts, definitions, and essential facts. Use this alongside the
 | Bacteria      | Salmonella, MRSA         | Single-celled; reproduce by binary fission; very small (1--10 micrometres) |
 | Viruses       | HIV, influenza, COVID-19 | Not living; replicate inside host cells; much smaller than bacteria        |
 | Fungi         | Athlete's foot, thrush   | Can be single-celled (yeasts) or multicellular                             |
-| Protists      | Malaria (Plasmodium)     | Usually single-celled; often transferred by vectors                        |
+| Protists      | Malaria (Plasmodium)     | In most cases single-celled; often transferred by vectors                  |
 
 ### 3.2 Disease Transmission
 

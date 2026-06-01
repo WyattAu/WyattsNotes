@@ -1,7 +1,9 @@
 ---
 id: layer2-and-ethernet
 title: Layer 2 and Ethernet
-description: 'Layer 2 and Ethernet notes covering key definitions, core concepts, worked examples, and practice questions for efficient learning and effective revision.'
+description:
+  'Layer 2 and Ethernet notes covering key definitions, core concepts, worked examples, and practice
+  questions for efficient learning and effective revision.'
 slug: layer2-and-ethernet
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -1038,3 +1040,8 @@ key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -634,7 +634,8 @@ $, $
 
 $, $
 H = \frac{500}{\pi \cdot \left(\frac{500}{\pi}\right)^{2/3}} = \left(\frac{500}{\pi}\right)^{1/3} \approx 5.42 \mathrm{ cm}
-$, $
+$,
+$
 
 The optimal open-top can has $h = r$I.e., height equals radius.
 
@@ -819,7 +820,8 @@ $, $
 
 $, $
 \frac`\{dA}``\{dt}` = 2\pi r \frac`\{dr}``\{dt}` = 2\pi(4)(0.5) = 4\pi \mathrm{ cm}^2\mathrm{/s}
-$, $
+$,
+$
 
 ### Question 6 (Paper 2 style)
 
@@ -920,3 +922,8 @@ and building a personal test matrix. :::
 | ----------------- | ------- | ------------------------------------------------------------------------------------------------------ |
 | [Differentiation] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/10-differentiation) |
 | [Differentiation] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/5-calculus/2_differentiation)                              |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

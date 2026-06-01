@@ -1,6 +1,8 @@
 ---
 title: Compilers
-description: 'University Computer Science Compilers notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
+description:
+  'University Computer Science Compilers notes covering key definitions, core concepts, worked
+  examples, and practice questions for solid revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -29,14 +31,14 @@ Source Code
 
 A data structure maintained throughout compilation storing:
 
-| Entry             | Description                     |
-| ----------------- | ------------------------------- |
-| Name              | Lexeme / identifier             |
-| Kind              | Variable, function, type, etc.  |
-| Type              | Int, float, struct, array       |
-| Scope             | Block, function, file           |
-| Offset            | Memory location                 |
-| Attributes        | Array dimensions, parameters    |
+| Entry      | Description                    |
+| ---------- | ------------------------------ |
+| Name       | Lexeme / identifier            |
+| Kind       | Variable, function, type, etc. |
+| Type       | Int, float, struct, array      |
+| Scope      | Block, function, file          |
+| Offset     | Memory location                |
+| Attributes | Array dimensions, parameters   |
 
 ## 2. Lexical Analysis
 
@@ -55,18 +57,19 @@ Tokens:  <TYPE, "int"> <ID, "x"> <OP, "="> <INT_LIT, "42"> <OP, "+"> <ID, "y"> <
 
 ### 2.2 Regular Expressions for Tokens
 
-| Token       | Regular Expression                                    |
-| ----------- | ----------------------------------------------------- |
-| Identifier  | `[a-zA-Z_][a-zA-Z0-9_]*`                              |
-| Integer     | `[0-9]+`                                              |
-| Float       | `[0-9]+\.[0-9]+([eE][+-]?[0-9]+)?`                    |
-| Keyword     | `if | else | while | return | int | ...`             |
-| Operator    | `+ | - | * | / | == | != | <= | >=`                   |
-| Whitespace  | `[ \t\n\r]+` (skip)                                   |
+| Token      | Regular Expression                 |
+| ---------- | ---------------------------------- | ---- | ----- | ------ | --- | ---- | --- | --- |
+| Identifier | `[a-zA-Z_][a-zA-Z0-9_]*`           |
+| Integer    | `[0-9]+`                           |
+| Float      | `[0-9]+\.[0-9]+([eE][+-]?[0-9]+)?` |
+| Keyword    | `if                                | else | while | return | int | ...` |
+| Operator   | `+                                 | -    | \*    | /      | ==  | !=   | <=  | >=` |
+| Whitespace | `[ \t\n\r]+` (skip)                |
 
 ### 2.3 Finite Automata for Lexing
 
-Build a DFA from token regexes using Thompson's construction + subset construction. The DFA accepts the longest matching prefix (maximal munch).
+Build a DFA from token regexes using Thompson's construction + subset construction. The DFA accepts
+the longest matching prefix (maximal munch).
 
 ```
 LEXER(source):
@@ -83,7 +86,8 @@ LEXER(source):
 
 ### 2.4 Handling Ambiguity
 
-**Maximal munch:** Always match the longest possible token. `123abc` → `123` `abc`, not `1` `2` `3` `abc`.
+**Maximal munch:** Always match the longest possible token. `123abc` → `123` `abc`, not `1` `2` `3`
+`abc`.
 
 **Keyword priority:** Keywords override identifiers. `if` → keyword `if`, not identifier `if`.
 
@@ -126,6 +130,7 @@ F  → ( E ) | id
 ```
 
 **Associativity:**
+
 - Left-associative ($a - b - c = (a - b) - c$): $E \to E \text{ op } T$
 - Right-associative ($a = b = c \Rightarrow a = (b = c)$): $E \to T \text{ op } E$
 
@@ -134,6 +139,7 @@ F  → ( E ) | id
 **LL(1):** Left-to-right scan, Leftmost derivation, 1 token of lookahead.
 
 **Requirements:**
+
 1. No left recursion.
 2. The grammar is factored (no common prefixes).
 
@@ -204,17 +210,17 @@ LR_PARSE(input):
 
 **LR parsing table = ACTION + GOTO:**
 
-| State | ACTION                                   | GOTO       |
-| ----- | ---------------------------------------- | ---------- |
-|       | Shift to state, Reduce by production    | Go to state on nonterminal |
+| State | ACTION                               | GOTO                       |
+| ----- | ------------------------------------ | -------------------------- |
+|       | Shift to state, Reduce by production | Go to state on nonterminal |
 
 ### 3.6 LR Variants
 
-| Variant     | Power          | Table Size | Construction Cost |
-| ----------- | -------------- | ---------- | ----------------- |
-| SLR(1)      | Least powerful | Small      | Low               |
-| LALR(1)     | Medium         | Medium     | Medium            |
-| LR(1)       | Most powerful  | Large      | High              |
+| Variant | Power          | Table Size | Construction Cost |
+| ------- | -------------- | ---------- | ----------------- |
+| SLR(1)  | Least powerful | Small      | Low               |
+| LALR(1) | Medium         | Medium     | Medium            |
+| LR(1)   | Most powerful  | Large      | High              |
 
 **SLR(1):** Uses FOLLOW sets for reduce decisions. May miss valid reductions.
 
@@ -259,7 +265,8 @@ FACTOR():
         error("unexpected token")
 ```
 
-**Pros:** Clear, extensible, good error messages. **Cons:** Manual construction, no automatic generation.
+**Pros:** Clear, extensible, good error messages. **Cons:** Manual construction, no automatic
+generation.
 
 ## 4. Abstract Syntax Tree (AST)
 
@@ -273,6 +280,7 @@ AST:         BinOp('+', Var('x'), BinOp('*', Num(42), Var('y')))
 ```
 
 **Rules for AST construction:**
+
 - Remove punctuation tokens (parentheses, commas).
 - Collapse chains of single-child nodes.
 - Use operator-specific node types.
@@ -322,11 +330,11 @@ TYPE_CHECK(node):
 
 **Type coercion rules:**
 
-| Expression       | Rule                              |
-| ---------------- | --------------------------------- |
-| `int + int`      | `int`                            |
-| `int + float`    | `float` (coerce int to float)     |
-| `int / int`      | `int` (integer division)         |
+| Expression    | Rule                          |
+| ------------- | ----------------------------- |
+| `int + int`   | `int`                         |
+| `int + float` | `float` (coerce int to float) |
+| `int / int`   | `int` (integer division)      |
 
 ### 5.2 Type Inference
 
@@ -415,7 +423,8 @@ TAC:
 
 ### 6.2 Static Single Assignment (SSA)
 
-Every variable is defined exactly once. New versions introduced at merge points using $\phi$-functions.
+Every variable is defined exactly once. New versions introduced at merge points using
+$\phi$-functions.
 
 ```
 Before SSA:
@@ -434,7 +443,8 @@ After SSA:
 
 **Dominance:** Node $d$ dominates node $n$ if every path from entry to $n$ passes through $d$.
 
-**Dominance frontier:** The set of nodes where dominance ends — exactly where $\phi$-functions are placed.
+**Dominance frontier:** The set of nodes where dominance ends — exactly where $\phi$-functions are
+placed.
 
 ```
 INSERT_PHI_FUNCTIONS():
@@ -451,7 +461,9 @@ INSERT_PHI_FUNCTIONS():
 ### 6.3 Control Flow Graph (CFG)
 
 A directed graph where:
-- **Nodes** are basic blocks (sequences of instructions with one entry, one exit, no branches in between).
+
+- **Nodes** are basic blocks (sequences of instructions with one entry, one exit, no branches in
+  between).
 - **Edges** represent possible control flow.
 
 **Basic block construction:**
@@ -469,11 +481,11 @@ BUILD_BASIC_BLOCKS(instructions):
 
 ### 7.1 Optimization Levels
 
-| Level              | When Applied       | Scope                     |
-| ------------------ | ------------------ | ------------------------- |
-| Local              | Within basic block | Single block              |
-| Global             | Within a function  | Single function with CFG  |
-| Interprocedural    | Across functions   | Whole program             |
+| Level           | When Applied       | Scope                    |
+| --------------- | ------------------ | ------------------------ |
+| Local           | Within basic block | Single block             |
+| Global          | Within a function  | Single function with CFG |
+| Interprocedural | Across functions   | Whole program            |
 
 ### 7.2 Common Optimizations
 
@@ -564,12 +576,12 @@ Iterate until convergence (fixed point).
 
 **Other analyses:**
 
-| Analysis              | Purpose                           |
-| --------------------- | --------------------------------- |
-| Live variable analysis | Optimize register allocation     |
-| Available expressions | Enable CSE                        |
-| Very busy expressions | Enable code motion                |
-| Constant propagation  | Fold constants                    |
+| Analysis               | Purpose                      |
+| ---------------------- | ---------------------------- |
+| Live variable analysis | Optimize register allocation |
+| Available expressions  | Enable CSE                   |
+| Very busy expressions  | Enable code motion           |
+| Constant propagation   | Fold constants               |
 
 ### 7.4 Register Allocation
 
@@ -596,7 +608,8 @@ REGISTER_ALLOCATE(interference_graph, k_registers):
     return allocation
 ```
 
-**NP-hard** in general; heuristic algorithms (simplify, coalesce, freeze, spill-and-reload) work well in practice.
+**NP-hard** as a general principle; heuristic algorithms (simplify, coalesce, freeze,
+spill-and-reload) work well in practice.
 
 ## 8. Code Generation
 
@@ -653,44 +666,64 @@ add:
 
 ## 9. Common Pitfalls
 
-1. **Left recursion in LL grammars causes infinite loops.** A rule like $E \to E + T$ causes a recursive descent parser to loop. Always eliminate left recursion before building an LL parser.
+1. **Left recursion in LL grammars causes infinite loops.** A rule like $E \to E + T$ causes a
+   recursive descent parser to loop. Always eliminate left recursion before building an LL parser.
 
-2. **FIRST/FOLLOW set computation errors.** Incorrect sets lead to parsing table conflicts. Remember: $\epsilon \in \text{FIRST}(\alpha)$ only if $\alpha$ can derive the empty string.
+2. **FIRST/FOLLOW set computation errors.** Incorrect sets lead to parsing table conflicts.
+   Remember: $\epsilon \in \text{FIRST}(\alpha)$ only if $\alpha$ can derive the empty string.
 
-3. **Forgetting to insert $\phi$-functions at dominance frontiers.** SSA requires $\phi$-functions precisely at points where control flow merges. Placing them incorrectly leads to wrong data flow.
+3. **Forgetting to insert $\phi$-functions at dominance frontiers.** SSA requires $\phi$-functions
+   precisely at points where control flow merges. Placing them incorrectly leads to wrong data flow.
 
-4. **Incorrect interference graph for register allocation.** Two variables interfere only if they are simultaneously live. If one's definition kills the other before use, they do not interfere.
+4. **Incorrect interference graph for register allocation.** Two variables interfere only if they
+   are simultaneously live. If one's definition kills the other before use, they do not interfere.
 
-5. **Confusing parse trees and ASTs.** Parse trees preserve all grammar productions (including punctuation). ASTs abstract away syntactic details to represent semantic structure.
+5. **Confusing parse trees and ASTs.** Parse trees preserve all grammar productions (including
+   punctuation). ASTs abstract away syntactic details to represent semantic structure.
 
-6. **Semantic analysis after code generation.** Type errors and scope violations must be caught during semantic analysis, before optimization and code generation. Fixing them later is much harder.
+6. **Semantic analysis after code generation.** Type errors and scope violations must be caught
+   during semantic analysis, before optimization and code generation. Fixing them later is much
+   harder.
 
-7. **Ignoring phase ordering issues.** Some optimizations interfere with others. The order of optimization passes affects the final result. Common order: SSA construction → constant propagation → dead code elimination → loop optimizations → register allocation.
+7. **Ignoring phase ordering issues.** Some optimizations interfere with others. The order of
+   optimization passes affects the final result. Common order: SSA construction → constant
+   propagation → dead code elimination → loop optimizations → register allocation.
 
 ## Worked Examples
 
 ### Example 1: Constructing an LL(1) Parse Table
-**Problem:** Given the grammar: E -> T E', E' -> + T E' | epsilon, T -> F T', T' -> * F T' | epsilon, F -> ( E ) | id. Construct the FIRST and FOLLOW sets for E'.
-**Solution:** FIRST(E') = FIRST(T E') = {id, (} union {+} = {id, (, +}. FIRST(T) = {id, (}. FOLLOW(E') = FOLLOW(E) = {$, )}. The LL(1) parse table entry for E' with lookahead +: E' -> + T E'. For lookahead id or (: E' -> epsilon. For lookahead $ or ): E' -> epsilon. Since epsilon is in FIRST(E') and FOLLOW(E') overlaps with FIRST(E'), entries for FOLLOW symbols map to the epsilon production.
+
+**Problem:** Given the grammar: E -> T E', E' -> + T E' | epsilon, T -> F T', T' -> \* F T' |
+epsilon, F -> ( E ) | id. Construct the FIRST and FOLLOW sets for E'. **Solution:** FIRST(E') =
+FIRST(T E') = {id, (} union {+} = {id, (, +}. FIRST(T) = {id, (}. FOLLOW(E') = FOLLOW(E) = {$, )}.
+The LL(1) parse table entry for E' with lookahead +: E' -> + T E'. For lookahead id or (: E' ->
+epsilon. For lookahead $ or ): E' -> epsilon. Since epsilon is in FIRST(E') and FOLLOW(E') overlaps
+with FIRST(E'), entries for FOLLOW symbols map to the epsilon production.
 
 ### Example 2: Three-Address Code Generation
-**Problem:** Generate three-address code for: x = (a + b) * (c - d).
-**Solution:** t1 = a + b; t2 = c - d; t3 = t1 * t2; x = t3. The three-address code uses temporary variables t1, t2, t3. Each instruction has at most one operator on the right side. A basic block contains these four instructions in sequence.
+
+**Problem:** Generate three-address code for: x = (a + b) _ (c - d). **Solution:** t1 = a + b; t2 =
+c - d; t3 = t1 _ t2; x = t3. The three-address code uses temporary variables t1, t2, t3. Each
+instruction has at most one operator on the right side. A basic block contains these four
+instructions in sequence.
 
 ## Summary
 
 - **Lexical analysis** converts source to tokens using regex and finite automata.
 - **Parsing** builds parse trees from tokens using LL (top-down) or LR (bottom-up) methods.
 - **ASTs** abstract away grammar details to represent program structure.
-- **Semantic analysis** performs type checking, type inference (Hindley-Milner), and scope resolution.
+- **Semantic analysis** performs type checking, type inference (Hindley-Milner), and scope
+  resolution.
 - **IR** (three-address code, SSA) provides a platform-independent program representation.
-- **Optimization** includes constant folding, dead code elimination, CSE, loop optimization, and register allocation via graph coloring.
-- **Code generation** maps IR to target machine instructions with instruction selection and scheduling.
+- **Optimization** includes constant folding, dead code elimination, CSE, loop optimization, and
+  register allocation via graph coloring.
+- **Code generation** maps IR to target machine instructions with instruction selection and
+  scheduling.
 
 ## Cross-References
 
-| Topic | Link |
-|-------|------|
+| Topic                         | Link                                                                    |
+| ----------------------------- | ----------------------------------------------------------------------- |
 | Automata and Formal Languages | [View](/docs/university/computer-science/automata-and-formal-languages) |
-| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |
-| Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |
+| Algorithm Design              | [View](/docs/university/computer-science/algorithm-design)              |
+| Complexity Theory             | [View](/docs/university/computer-science/complexity-theory)             |

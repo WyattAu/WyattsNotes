@@ -1,6 +1,8 @@
 ---
 title: Equations and Inequalities
-description: 'A-Level Maths Equations and Inequalities notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'A-Level Maths Equations and Inequalities notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -222,9 +224,9 @@ Y &\geq 2x
 \end{aligned}
 $$
 
-This defines a polygon bounded by the lines $x + y = 6$, $x = 0$, $y = 0$And $y = 2x$. The Vertices are
-$(0, 0)$$(0, 6)$And the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$ $x = 2$$y = 4$. So the
-third vertex is $(2, 4)$.
+This defines a polygon bounded by the lines $x + y = 6$, $x = 0$, $y = 0$And $y = 2x$. The Vertices
+are $(0, 0)$$(0, 6)$And the intersection of $x + y = 6$ with $y = 2x$: $3x = 6$ $x = 2$$y = 4$. So
+the third vertex is $(2, 4)$.
 
 </details>
 
@@ -948,3 +950,14 @@ building a personal test matrix. :::
 
 4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
    around.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

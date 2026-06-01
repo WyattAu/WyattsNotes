@@ -330,9 +330,9 @@ The ideal gas model makes the following assumptions:
 
 | Law              | Relationship            | Constant Quantity |
 | :--------------- | :---------------------- | :---------------- |
-| Boyle's Law      | $P \propto \frac{1}{V}$ | $T$, $n$            |
-| Charles's Law    | $V \propto T$           | $P$, $n$            |
-| Gay-Lussac's Law | $P \propto T$           | $V$, $n$            |
+| Boyle's Law      | $P \propto \frac{1}{V}$ | $T$, $n$          |
+| Charles's Law    | $V \propto T$           | $P$, $n$          |
+| Gay-Lussac's Law | $P \propto T$           | $V$, $n$          |
 
 All of these are unified in the **ideal gas equation**:
 
@@ -478,3 +478,14 @@ Kg$^{-1}$$L_v = 2.26 \times 10^6$ J kg$^{-1}$)
    in question.
 
 4. Rounding intermediate answers too early, which compounds errors in multi-step calculations.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

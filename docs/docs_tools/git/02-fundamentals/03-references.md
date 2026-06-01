@@ -1,6 +1,8 @@
 ---
 title: References
-description: 'Git References notes covering key definitions, core concepts, worked examples, and practice questions for rigorous review and exam preparation.'
+description:
+  'Git References notes covering key definitions, core concepts, worked examples, and practice
+  questions for rigorous review and exam preparation.'
 date: 2025-06-03T01:00:00.000Z
 tags:
   - git
@@ -350,3 +352,14 @@ Searches multiple ref namespaces.
 
 4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
    applications.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

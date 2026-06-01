@@ -1,6 +1,8 @@
 ---
 title: Stream Buffers and Locale Facets
-description: 'C++ Programming Stream Buffers and Locale Facets notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'C++ Programming Stream Buffers and Locale Facets notes covering key definitions, core concepts,
+  worked examples, and practice questions for rigorous revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -623,3 +625,14 @@ void stream_state_demo() {
 
 4. Not making connections between different topics within the subject to build a coherent
    understanding.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

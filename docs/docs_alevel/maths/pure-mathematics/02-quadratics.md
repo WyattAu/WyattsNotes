@@ -1,6 +1,8 @@
 ---
 title: Quadratics
-description: 'A-Level Maths Quadratics notes covering key definitions, core concepts, worked examples, and practice questions for structured study and thorough revision.'
+description:
+  'A-Level Maths Quadratics notes covering key definitions, core concepts, worked examples, and
+  practice questions for structured study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -184,9 +186,12 @@ $f\left(-\frac{b}{2a}\right) = -\frac◆LB◆\Delta◆RB◆◆LB◆4a◆RB◆$. 
 - $\Delta < 0$: the vertex lies on the same side of the $x$-axis as the direction the parabola
   opens, so the graph never meets the axis.
 
-<DesmosGraph title="Quadratic Graph and the Discriminant" expressions={["a*x^2+b*x+c"]} width={800} height={500} />
+<DesmosGraph title="Quadratic Graph and the Discriminant" expressions={["a*x^2+b*x+c"]} width={800}
+height={500} />
 
-Adjust sliders `a`, `b`, `c` to see how the quadratic $y = ax^2 + bx + c$ changes. Observe how the discriminant $\Delta = b^2 - 4ac$ determines whether the curve crosses, touches, or misses the $x$-axis.
+Adjust sliders `a`, `b`, `c` to see how the quadratic $y = ax^2 + bx + c$ changes. Observe how the
+discriminant $\Delta = b^2 - 4ac$ determines whether the curve crosses, touches, or misses the
+$x$-axis.
 
 Furthermore, when $\Delta < 0$:
 
@@ -438,8 +443,8 @@ to the quadratic $az^2 + bz + c = 0$.
 | $a\left(x + \frac{1}{x}\right)^2 + b\left(x + \frac{1}{x}\right) + c = 0$ | $z = x + \frac{1}{x}$ | $az^2 + bz + c = 0$ |
 
 :::warning After solving the reduced quadratic for $z$You must substitute back to find $x$. Discard
-any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires
-$z \geq 0$, $z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
+any values of $z$ that are incompatible with the substitution (e.g., $z = x^2$ requires $z \geq 0$,
+$z = p^x$ requires $z > 0$). Always verify solutions in the original equation. :::
 
 <details>
 <summary>Example</summary>
@@ -1077,3 +1082,14 @@ building a personal test matrix. :::
 
 4. Rounding too early in multi-step calculations — carry full precision through and round only the
    final answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

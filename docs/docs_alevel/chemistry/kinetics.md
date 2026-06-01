@@ -1,6 +1,8 @@
 ---
 title: Chemical Kinetics
-description: 'A-Level Chemistry Chemical Kinetics notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
+description:
+  'A-Level Chemistry Chemical Kinetics notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -38,14 +40,14 @@ Units of rate: $\mathrm{mol\,dm^{-3}\,s^{-1}}$.
 
 ### Methods of Measuring Rate
 
-| Method          | Observable                  | Suitable Reactions                                                   |
-| --------------- | --------------------------- | -------------------------------------------------------------------- |
+| Method          | Observable                  | Suitable Reactions                                                     |
+| --------------- | --------------------------- | ---------------------------------------------------------------------- |
 | Gas collection  | Volume of gas vs time       | Reactions producing gaseous products ($\mathrm{CO}_2$, $\mathrm{H}_2$) |
-| Mass loss       | Mass decrease vs time       | Reactions producing gas from a solid in an open vessel               |
-| Colorimetry     | Absorbance vs time          | Reactions involving coloured species                                 |
-| Titration       | Concentration by quenching  | Slow reactions; samples withdrawn and quenched                       |
-| Conductivity    | Conductance vs time         | Reactions changing the number or type of ions                        |
-| Clock reactions | Time to reach a fixed point | Initial rate determination (e.g. Iodine clock)                       |
+| Mass loss       | Mass decrease vs time       | Reactions producing gas from a solid in an open vessel                 |
+| Colorimetry     | Absorbance vs time          | Reactions involving coloured species                                   |
+| Titration       | Concentration by quenching  | Slow reactions; samples withdrawn and quenched                         |
+| Conductivity    | Conductance vs time         | Reactions changing the number or type of ions                          |
+| Clock reactions | Time to reach a fixed point | Initial rate determination (e.g. Iodine clock)                         |
 
 ## Collision Theory
 
@@ -1064,3 +1066,8 @@ theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

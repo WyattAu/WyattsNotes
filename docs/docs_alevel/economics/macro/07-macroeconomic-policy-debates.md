@@ -1,6 +1,8 @@
 ---
 title: Macroeconomic Policy Debates
-description: 'A-Level Economics Macroeconomic Policy Debates notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
+description:
+  'A-Level Economics Macroeconomic Policy Debates notes covering key definitions, core concepts,
+  worked examples, and practice questions for systematic revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -1394,3 +1396,9 @@ inflation target, triggering a gilt market crisis and forcing a policy reversal.
 
 4. Neglecting to consider the ceteris paribus assumption when analysing multi-variable economic
    scenarios.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

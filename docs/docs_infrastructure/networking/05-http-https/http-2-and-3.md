@@ -1,7 +1,9 @@
 ---
 id: http-2-and-3
 title: HTTP/2 and HTTP/3
-description: 'HTTP/2 and HTTP/3 notes covering key definitions, core concepts, worked examples, and practice questions for structured review and exam preparation.'
+description:
+  'HTTP/2 and HTTP/3 notes covering key definitions, core concepts, worked examples, and practice
+  questions for structured review and exam preparation.'
 slug: http-2-and-3
 tags:
   - Networking
@@ -922,3 +924,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

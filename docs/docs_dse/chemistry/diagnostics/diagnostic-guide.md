@@ -1,6 +1,8 @@
 ---
 title: 'DSE Chemistry Diagnostic Tests -- Guide'
-description: 'DSE Chemistry Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
+description:
+  'DSE Chemistry Diagnostic Tests notes covering key definitions, core concepts, worked examples,
+  and practice questions for comprehensive revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -71,3 +73,19 @@ Every diagnostic file contains:
 8. `diag-electrochemistry.md` -- Redox, electrode potentials, electrolysis, corrosion
 9. `diag-carbon-chemistry.md` -- Alkanes, alkenes, alcohols, carboxylic acids, polymers
 10. `diag-organic-chemistry.md` -- Functional groups, reactions, mechanisms, isomerism
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

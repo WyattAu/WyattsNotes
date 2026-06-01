@@ -1,6 +1,8 @@
 ---
 title: Fundamental Types
-description: 'C++ Programming Fundamental Types notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'C++ Programming Fundamental Types notes covering key definitions, core concepts, worked examples,
+  and practice questions for in-depth revision.'
 date: 2025-12-12T04:26:41.621Z
 tags:
   - cpp
@@ -582,3 +584,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

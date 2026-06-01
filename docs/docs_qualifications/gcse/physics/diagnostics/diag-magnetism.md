@@ -1,6 +1,8 @@
 ---
 title: 'Magnetism and Electromagnetism -- Diagnostic Tests'
-description: 'GCSE Physics Magnetism and Electromagnetism -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'GCSE Physics Magnetism and Electromagnetism -- Diagnostic notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 slug: diag-magnetism
 hide_table_of_contents: true
 ---
@@ -196,3 +198,19 @@ This force opposes the motion (by Lenz's law). An equal and opposite external fo
 applied to maintain the constant speed. The work done by this force is converted to electrical
 energy in the coil (which is then dissipated as heat in the resistance). This demonstrates the
 conservation of energy: mechanical work $\to$ electrical energy $\to$ thermal energy.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

@@ -1,6 +1,8 @@
 ---
 title: Constraint Subsumption and Overload Resolution
-description: 'C++ Programming Constraint Subsumption and Overload notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Constraint Subsumption and Overload notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -911,3 +913,8 @@ underlying theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

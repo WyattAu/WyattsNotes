@@ -1,6 +1,8 @@
 ---
 title: National Income and Macroeconomic Indicators
-description: 'DSE Economics National Income and Macroeconomic Indicators notes covering key definitions, core concepts, worked practice questions for supplementary revision.'
+description:
+  'DSE Economics National Income and Macroeconomic Indicators notes covering key definitions, core
+  concepts, worked practice questions for supplementary revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1579,7 +1581,6 @@ macroeconomic indicators, including key models, evidence, and policy implication
 
 **Key concepts include:**
 
-
 - aggregate demand and supply
 - fiscal and monetary policy
 - inflation and unemployment
@@ -1591,3 +1592,8 @@ success in this subject.
 
 > > > > > > > Stashed
 > > > > > > > changes:docs/docs_dse/Economics/national-income-and-macroeconomic-indicators.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: 'A-Level Further Maths -- Diagnostic Guide'
-description: 'A-Level Further Maths -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
+description:
+  'A-Level Further Maths -- Diagnostic notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -124,3 +126,19 @@ Maclaurin Series
 4. Integration Tests combine skills across pure maths topics -- these mirror A-Level exam style.
 5. Practise writing proofs with clear logical steps.
 6. Pay special attention to convergence conditions for series and Maclaurin expansions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

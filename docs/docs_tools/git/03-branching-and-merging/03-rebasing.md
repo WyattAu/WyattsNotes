@@ -1,6 +1,8 @@
 ---
 title: Rebasing
-description: 'Git Rebasing notes covering key definitions, core concepts, worked examples, and practice questions for effective study and examination practice.'
+description:
+  'Git Rebasing notes covering key definitions, core concepts, worked examples, and practice
+  questions for effective study and examination practice.'
 date: 2025-06-03T04:00:00.000Z
 tags:
   - git
@@ -408,3 +410,14 @@ $ git rebase main
 
 4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
    sorted input.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

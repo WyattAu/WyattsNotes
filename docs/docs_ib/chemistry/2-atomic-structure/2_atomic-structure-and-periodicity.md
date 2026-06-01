@@ -112,9 +112,9 @@ Each shell contains subshells, designated by the azimuthal quantum number $l$:
 | $n$ | Subshells ($l$ values) | Maximum electrons |
 | --- | ---------------------- | ----------------- |
 | $1$ | $1s$                   | $2$               |
-| $2$ | $2s$, $2p$               | $8$               |
-| $3$ | $3s$, $3p$, $3d$           | $18$              |
-| $4$ | $4s$, $4p$, $4d$, $4f$       | $32$              |
+| $2$ | $2s$, $2p$             | $8$               |
+| $3$ | $3s$, $3p$, $3d$       | $18$              |
+| $4$ | $4s$, $4p$, $4d$, $4f$ | $32$              |
 
 The maximum number of electrons in shell $n$ is $2n^2$.
 
@@ -169,7 +169,8 @@ $(n + l)$ values are equal, the orbital with lower $n$ fills first.
 
 $, $
 1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p \lt 7s \lt 5f \lt 6d \lt 7p
-$, $
+$,
+$
 
 ### Writing Electron Configurations
 
@@ -220,7 +221,8 @@ $, $
 2s\quad \boxed{\uparrow\downarrow} \\
 2p\quad \boxed{\uparrow}\quad\boxed{\uparrow}\quad\boxed{\uparrow}
 \end`\{array}`
-$, $
+$,
+$
 
 All three $2p$ electrons are unpaired with parallel spins, following Hund's rule.
 
@@ -1487,3 +1489,14 @@ For the A-Level treatment of this topic, see
 
 4. Confusing the terms 'molar' and 'molecular' — molar refers to per mole ($\text{mol}^{-1}$), while
    molecular refers to individual molecules.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

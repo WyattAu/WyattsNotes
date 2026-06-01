@@ -302,7 +302,8 @@ $, $
 \int x^2 \sin x\,dx &= -x^2 \cos x + 2\left(x\sin x - \int \sin x\,dx\right) \\[6pt]
 &= -x^2 \cos x + 2x\sin x + 2\cos x + C
 \end`\{aligned}`
-$, $
+$,
+$
 
 </details>
 :::
@@ -395,7 +396,8 @@ $, $
 &= \int \sin x\,dx - \int \sin x \cos^2 x\,dx \\[6pt]
 &= -\cos x + \frac{\cos^3 x}{3} + C
 \end`\{aligned}`
-$, $
+$,
+$
 
 (using $u = \cos x$$du = -\sin x\,dx$ for the second integral)
 
@@ -436,7 +438,8 @@ Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$$2x \geq x^2$.
 
 $, $
 A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
-$, $
+$,
+$
 
 </details>
 :::
@@ -534,7 +537,8 @@ $, $
 &= \left[2t^2 - 2t^3\right]_0^{2/3} + \left[2t^3 - 2t^2\right]_{2/3}^3 \\[6pt]
 &= \frac{8}{27} + \left(36 - \left(-\frac{8}{27}\right)\right) = \frac{8}{27} + 36 + \frac{8}{27} = \frac{988}{27} \approx 36.6 \mathrm{ m}
 \end`\{aligned}`
-$, $
+$,
+$
 
 </details>
 :::
@@ -600,7 +604,8 @@ $, $
 \int_3^1 [3f(x) - 2g(x)]\,dx &= -\int_1^3 [3f(x) - 2g(x)]\,dx \\[6pt]
 &= -\left(3 \cdot 5 - 2 \cdot (-2)\right) = -(15 + 4) = -19
 \end`\{aligned}`
-$, $
+$,
+$
 
 </details>
 :::
@@ -678,7 +683,8 @@ $, $
 \int_1^{\infty} \frac{1}{x^2}\,dx &= \lim_{t \to \infty} \int_1^t x^{-2}\,dx = \lim_{t \to \infty} \left[-\frac{1}{x}\right]_1^t \\[6pt]
 &= \lim_{t \to \infty} \left(-\frac{1}{t} + 1\right) = 1
 \end`\{aligned}`
-$, $
+$,
+$
 
 The integral converges to $1$. (Consistent with the $p$-test: $p = 2 > 1$.)
 
@@ -689,7 +695,8 @@ $, $
 \int_0^1 \frac{1}{\sqrt{x}}\,dx &= \lim_{t \to 0^+} \int_t^1 x^{-1/2}\,dx = \lim_{t \to 0^+} \Big[2\sqrt{x}\Big]_t^1 \\[6pt]
 &= \lim_{t \to 0^+} (2 - 2\sqrt{t}) = 2
 \end`\{aligned}`
-$, $
+$,
+$
 
 The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} < 1$.)
 
@@ -887,7 +894,8 @@ $, $
 \int \frac{x^2}{x^2 - 1}\,dx &= \int \left(1 + \frac{1}{2(x-1)} - \frac{1}{2(x+1)}\right)\,dx \\[6pt]
 &= x + \frac{1}{2}\ln|x-1| - \frac{1}{2}\ln|x+1| + C
 \end`\{aligned}`
-$, $
+$,
+$
 
 </details>
 :::
@@ -974,3 +982,14 @@ $, $
 5. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
 6. Cancelling terms instead of factors — $\frac{ab + ac}{a}$ simplifies to $b + c$, not $bc$.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

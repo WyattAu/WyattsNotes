@@ -1,6 +1,8 @@
 ---
 title: Labour Markets
-description: 'A-Level Economics Labour Markets notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
+description:
+  'A-Level Economics Labour Markets notes covering key definitions, core concepts, worked examples,
+  and practice questions for solid exam preparation and revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -1036,8 +1038,8 @@ gap is multifaceted, requiring a comprehensive policy response.
 
 **Example.** A firm's labour demand (MRPL) is $MRPL = 200 - 2L$. Labour supply is $w = 40 + L$.
 
-**Competitive equilibrium:**
-$200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$, $w = 93.33$.
+**Competitive equilibrium:** $200 - 2L = 40 + L \Rightarrow 160 = 3L \Rightarrow L = 53.33$,
+$w = 93.33$.
 
 **Trade union negotiates a wage of $\pounds 120$:** At $w = 120$The firm hires workers up to the
 point where $MRPL = 120$: $200 - 2L = 120 \Rightarrow L = 40$.
@@ -1371,3 +1373,9 @@ may drive platforms underground or offshore, leaving workers with no protection 
 
 4. Using circular reasoning by assuming the conclusion when evaluating economic policy
    effectiveness.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

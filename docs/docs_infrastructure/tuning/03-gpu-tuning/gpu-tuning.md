@@ -1,7 +1,9 @@
 ---
 id: gpu-tuning
 title: GPU Tuning
-description: 'GPU Tuning notes covering key definitions, core concepts, worked examples, and practice questions for thorough learning and effective revision.'
+description:
+  'GPU Tuning notes covering key definitions, core concepts, worked examples, and practice questions
+  for thorough learning and effective revision.'
 slug: gpu-tuning
 ---
 
@@ -823,3 +825,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

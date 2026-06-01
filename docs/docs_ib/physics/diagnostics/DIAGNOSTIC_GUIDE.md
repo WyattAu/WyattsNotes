@@ -1,6 +1,8 @@
 ---
 title: IB Physics Diagnostic Guide
-description: 'IB Physics Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for in-depth learning and effective revision.'
+description:
+  'IB Physics Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for in-depth learning and effective revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -184,3 +186,19 @@ rubric.
 These questions correspond to the hardest questions found on IB Physics Paper 2 (SL/HL) and Paper 3.
 They target band 7 understanding. Students scoring below "Proficient" on multiple topics should
 prioritise revision over extension work.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

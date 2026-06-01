@@ -1,7 +1,9 @@
 ---
 id: dev-environment
 title: Development Environment Setup
-description: 'General Development Environment Setup notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'General Development Environment Setup notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective revision.'
 slug: dev-environment
 ---
 
@@ -824,3 +826,8 @@ including key theories, case studies, and management strategies.
 
 Using specific case studies and data to support arguments is essential for achieving the highest
 marks in geography assessments.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

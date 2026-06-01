@@ -413,7 +413,8 @@ $, $
 
 $, $
 \alpha + \beta + \gamma = -\frac{b}{a}, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}, \quad \alpha\beta\gamma = -\frac{d}{a}
-$, $
+$,
+$
 
 ---
 
@@ -586,7 +587,8 @@ $, $
 
 $, $
 (f^{-1} \circ f)(x) = f^{-1}\!\left(\frac{x}{x+2}\right) = \frac{2 \cdot \frac{x}{x+2}}{1 - \frac{x}{x+2}} = \frac{\frac{2x}{x+2}}{\frac{2}{x+2}} = x
-$, $
+$,
+$
 
 ### Question 2 (Paper 2 style)
 
@@ -945,3 +947,8 @@ and building a personal test matrix. :::
 | [Functions] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/05-functions) |
 | [Functions] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/2-functions/1_functions)                             |
 | [Functions] | DSE     | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/1_functions)                            |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

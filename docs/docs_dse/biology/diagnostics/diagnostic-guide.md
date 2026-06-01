@@ -1,6 +1,8 @@
 ---
 title: 'DSE Biology Diagnostic Tests -- Guide'
-description: 'DSE Biology Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and mastery.'
+description:
+  'DSE Biology Diagnostic Tests notes covering key definitions, core concepts, worked examples, and
+  practice questions for focused exam preparation and mastery.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -71,3 +73,19 @@ Every diagnostic file contains:
 7. `diag-biodiversity-conservation.md` -- Species diversity, conservation methods, sustainability
 8. `diag-microorganisms-biotechnology.md` -- Bacteria, viruses, fermentation, genetic engineering
    applications
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

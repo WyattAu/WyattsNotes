@@ -1,6 +1,8 @@
 ---
 title: Analytical Techniques
-description: 'A-Level Chemistry Analytical Techniques notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
+description:
+  'A-Level Chemistry Analytical Techniques notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough revision.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -1029,3 +1031,8 @@ underlying theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

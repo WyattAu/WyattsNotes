@@ -1,6 +1,8 @@
 ---
 title: Data Representation
-description: 'DSE Ict Data Representation notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and revision.'
+description:
+  'DSE Ict Data Representation notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear exam preparation and revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -208,7 +210,8 @@ Step 1: Convert 6.625 to binary.
 
 Integer part: $6 = 110$
 
-Fractional part: $0.625 \times 2 = 1.25 \to 1$, $0.25 \times 2 = 0.5 \to 0$ $0.5 \times 2 = 1.0 \to 1$
+Fractional part: $0.625 \times 2 = 1.25 \to 1$, $0.25 \times 2 = 0.5 \to 0$
+$0.5 \times 2 = 1.0 \to 1$
 
 So $6.625_{10} = 110.101_2$
 
@@ -1352,7 +1355,6 @@ including key principles and practical applications.
 
 **Key concepts include:**
 
-
 - core concepts and definitions
 - key principles and frameworks
 - practical applications
@@ -1363,3 +1365,8 @@ A thorough understanding of these concepts, combined with regular practice and r
 for mastery of this topic.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/data-representation.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

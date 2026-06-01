@@ -1,6 +1,8 @@
 ---
 title: International Trade and Finance
-description: 'DSE Economics International Trade and Finance notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
+description:
+  'DSE Economics International Trade and Finance notes covering key definitions, core concepts,
+  worked examples, and practice questions for practical revision.'
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]
@@ -1537,15 +1539,15 @@ development.
 <details>
 <summary>Solution</summary>
 
-(a) **Free trade:** $P = 50$. $Q_d = 750$, $Q_s = 300$. Imports = 450. CS = 56,250. PS = 4,500. Total
-welfare = 60,750.
+(a) **Free trade:** $P = 50$. $Q_d = 750$, $Q_s = 300$. Imports = 450. CS = 56,250. PS = 4,500.
+Total welfare = 60,750.
 
 **ISI (50% tariff):** $P = 75$. $Q_d = 625$, $Q_s = 550$. Imports = 75. CS = 39,062.5. PS = 15,125.
 Tariff revenue = 1,875. Welfare = 56,062.5. DWL = 4,687.5.
 
-**EP (5% tariff + subsidy 20):** Consumer price = 52.5. Producer receives 72.5.
-$Q_d = 737.5$, $Q_s = 525$. Imports = 212.5. CS = 54,391. PS = 13,781. Subsidy cost = 10,500. Tariff
-revenue = 531. Net welfare = 58,203. DWL = 2,547.
+**EP (5% tariff + subsidy 20):** Consumer price = 52.5. Producer receives 72.5. $Q_d = 737.5$,
+$Q_s = 525$. Imports = 212.5. CS = 54,391. PS = 13,781. Subsidy cost = 10,500. Tariff revenue = 531.
+Net welfare = 58,203. DWL = 2,547.
 
 (b) EP has smaller DWL (2,547 vs 4,687.5). The subsidy distorts production (overproduction) but
 keeps prices low for consumers. The tariff distorts both production and consumption, creating larger
@@ -1572,7 +1574,6 @@ key concepts, experimental evidence, and real-world applications.
 
 **Key concepts include:**
 
-
 - key biological principles and concepts
 - experimental methods and data analysis
 - applications of biology in medicine and industry
@@ -1583,3 +1584,8 @@ Success requires the ability to recall specific factual content, apply knowledge
 and evaluate experimental evidence critically.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/international-trade-and-finance.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

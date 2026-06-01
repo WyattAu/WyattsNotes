@@ -292,7 +292,9 @@ $$
 <!-- prettier-ignore -->
 <DesmosGraph title="Projectile Trajectory" expressions={["y=x*tan(a)-\\frac{4.9*x^2}{v^2*cos(a)^2}"]} width={800} height={500} />
 
-Adjust slider `a` (launch angle $\theta$, try 0 to 1.57 rad) and `v` (initial speed, try 5 to 20) to explore how angle and speed affect the parabolic trajectory. Notice that $\theta = 45°$ gives maximum range.
+Adjust slider `a` (launch angle $\theta$, try 0 to 1.57 rad) and `v` (initial speed, try 5 to 20) to
+explore how angle and speed affect the parabolic trajectory. Notice that $\theta = 45°$ gives
+maximum range.
 
 ### Maximum Range
 
@@ -939,3 +941,8 @@ self-marking and building a personal test matrix. :::
 | [Kinematics (Physics)] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/mechanics/02-kinematics) |
 | [Kinematics (Physics)] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/1-space-time-and-motion/1_kinematics)          |
 | [Kinematics (Physics)] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/1-mechanics/1_forces-and-motion)             |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

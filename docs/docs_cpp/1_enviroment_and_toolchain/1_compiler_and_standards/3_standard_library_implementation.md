@@ -1,6 +1,8 @@
 ---
 title: Standard Library Implementation
-description: 'C++ Programming Standard Library Implementation notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'C++ Programming Standard Library Implementation notes covering key definitions, core concepts,
+  worked examples, and practice questions for rigorous revision.'
 date: 2025-12-10T04:57:07.543Z
 tags:
   - cpp
@@ -765,3 +767,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: 'Ratio, Proportion, and Rates of Change -- Diagnostic Tests'
-description: 'GCSE Maths Ratio, Proportion, and Rates of Change -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'GCSE Maths Ratio, Proportion, and Rates of Change -- notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 slug: diag-ratio-proportion
 hide_table_of_contents: true
 ---
@@ -156,3 +158,19 @@ the product is genuinely cheapest in the UK market, (2) there are transaction co
 taxes) not reflected in the exchange rate, or (3) the market is not perfectly efficient. PPP
 predicts that over time, either the pound should depreciate or the foreign prices should adjust to
 equalise costs.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

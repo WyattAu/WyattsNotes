@@ -1,7 +1,9 @@
 ---
 id: owasp-top-10
 title: OWASP Top 10 (2021) Detailed
-description: 'OWASP Top 10 (2021) Detailed notes covering key definitions, core concepts, worked examples, and practice questions for rigorous review and exam preparation.'
+description:
+  'OWASP Top 10 (2021) Detailed notes covering key definitions, core concepts, worked examples, and
+  practice questions for rigorous review and exam preparation.'
 slug: owasp-top-10
 ---
 
@@ -686,3 +688,8 @@ including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

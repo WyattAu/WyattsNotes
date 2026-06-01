@@ -1,6 +1,8 @@
 ---
 title: 'Statistics -- Diagnostic Tests'
-description: 'GCSE Maths Statistics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'GCSE Maths Statistics -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for efficient revision.'
 slug: diag-statistics
 hide_table_of_contents: true
 ---
@@ -225,3 +227,19 @@ $P(\text{one of each) = \frac{15 \times 21}{36 \times 35} \times 2 = \frac{630}{
 
 (d)
 $P(\text{exactly 2 red in 3) = \frac{\binom{15}{2} \times \binom{21}{1}}{\binom{36}{3}} = \frac{105 \times 21}{7140} = \frac{2205}{7140} = \frac{441}{1428} = \frac{147}{476} \approx 0.309$.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

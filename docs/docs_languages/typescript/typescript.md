@@ -1,6 +1,8 @@
 ---
 title: TypeScript -- Course Overview
-description: 'Typescript Course Overview notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
+description:
+  'Typescript Course Overview notes covering key definitions, core concepts, worked examples, and
+  practice questions for systematic exam preparation and revision.'
 slug: typescript
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
@@ -97,11 +99,11 @@ Interdependent.
 
 ## Common Pitfalls
 
-1. Using `any` as a shortcut — it disables all type checking for a value and propagates
-   unsoundness. Prefer `unknown` when the type is genuinely unknown.
+1. Using `any` as a shortcut — it disables all type checking for a value and propagates unsoundness.
+   Prefer `unknown` when the type is genuinely unknown.
 
-2. Relying on type assertions (`as`) instead of proper narrowing — every `as` bypasses the compiler's
-   verification and can introduce runtime errors that TypeScript was supposed to prevent.
+2. Relying on type assertions (`as`) instead of proper narrowing — every `as` bypasses the
+   compiler's verification and can introduce runtime errors that TypeScript was supposed to prevent.
 
 3. Forgetting that `interface` declarations merge while `type` aliases do not — accidental merging
    can cause subtle bugs in large codebases where the same interface name is used across files.
@@ -123,3 +125,14 @@ Interdependent.
    `exactOptionalPropertyTypes` for maximum safety.
 6. **Avoid type assertions (`as`)** — prefer type guards and narrowing. Every `as` is a hole in the
    type system that the compiler cannot verify.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

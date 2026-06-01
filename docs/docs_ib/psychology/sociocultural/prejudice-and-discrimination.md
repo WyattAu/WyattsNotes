@@ -1,6 +1,8 @@
 ---
 title: Prejudice and Discrimination
-description: 'IB Psychology Prejudice and Discrimination notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'IB Psychology Prejudice and Discrimination notes covering key definitions, core concepts, worked
+  examples, and practice questions for efficient revision.'
 slug: prejudice-and-discrimination
 ---
 
@@ -274,3 +276,14 @@ For an overview of sociocultural topics, see
 
 4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
    applications.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

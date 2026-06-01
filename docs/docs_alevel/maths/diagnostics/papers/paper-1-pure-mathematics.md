@@ -1,6 +1,8 @@
 ---
 title: 'Paper 1 -- Pure Mathematics -- Full Diagnostic Exam'
-description: 'A-Level Maths Paper 1 -- Pure Mathematics -- Full notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Maths Paper 1 -- Pure Mathematics -- Full notes covering key definitions, core concepts,
+  worked examples, and practice questions for revision.'
 slug: diag-paper-1-pure
 hide_table_of_contents: true
 ---
@@ -144,8 +146,8 @@ The function $f(x) = x^3 - 2x + 2$ has a root near $x = -1.77$.
 
 **(a)** Show that $f(x) = 0$ has exactly one real root.
 
-**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$, $x_2$And $x_3$.
-Describe the behaviour of the iteration.
+**(b)** Apply the Newton-Raphson formula with initial value $x_0 = 0$. Compute $x_1$, $x_2$And
+$x_3$. Describe the behaviour of the iteration.
 
 **(c)** Explain why the iteration fails to converge.
 
@@ -657,3 +659,19 @@ in a 2-cycle between $x = 0$ and $x = 1$.
 | Q13       | Proof                       |       5 | Necessary vs sufficient conditions, counterexamples, logical equivalence                                 |
 | Q14       | Numerical Methods           |       5 | Newton-Raphson divergence, 2-cycle behaviour, geometric interpretation of failure                        |
 | **Total** |                             | **100** |                                                                                                          |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

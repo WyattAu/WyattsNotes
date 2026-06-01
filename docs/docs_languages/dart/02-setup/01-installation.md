@@ -1,6 +1,8 @@
 ---
 title: Installation
-description: 'Dart Installation notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and examination practice.'
+description:
+  'Dart Installation notes covering key definitions, core concepts, worked examples, and practice
+  questions for thorough study and examination practice.'
 date: 2025-07-12T15:51:40.399Z
 tags:
   - Dart
@@ -449,3 +451,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

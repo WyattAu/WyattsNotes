@@ -1,6 +1,8 @@
 ---
 title: Sparse Checkout and Partial Clone
-description: 'Git Sparse Checkout and Partial Clone notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'Git Sparse Checkout and Partial Clone notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam readiness.'
 slug: sparse-checkout-and-partial-clone
 ---
 
@@ -819,3 +821,8 @@ theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -64,7 +64,7 @@ depression, challenging the monoamine hypothesis.
 
 ## Exam Strategy
 
-For Paper 1 SAQs within the abnormal option, questions typically ask students to outline one
+For Paper 1 SAQs within the abnormal option, questions in most cases ask students to outline one
 explanation of a disorder or one treatment approach. Prepare biological and cognitive explanations
 for both OCD and depression. For OCD biology: serotonin hypothesis, CSTC circuit. For OCD cognitive:
 Salkovskis (1985), thought-action fusion. For depression biology: monoamine hypothesis, HPA axis.

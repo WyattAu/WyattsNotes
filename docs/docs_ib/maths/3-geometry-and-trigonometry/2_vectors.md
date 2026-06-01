@@ -166,7 +166,8 @@ $, $
 \begin`\{pmatrix}`
  a_x - b_x \\ a_y - b_y \\ a_z - b_z
 \end`\{pmatrix}`
-$, $
+$,
+$
 
 ### Scalar Multiplication
 
@@ -225,7 +226,8 @@ $, $
 
 $, $
 \cos\theta = \frac{2}{5\sqrt{6}} = \frac{2}{5\sqrt{6}}, \quad \theta = \arccos\left(\frac{2}{5\sqrt{6}}\right) \approx 80.7^{\circ}
-$, $
+$,
+$
 
 ## Cross Product (Vector Product)
 
@@ -246,7 +248,8 @@ $, $
 \begin`\{pmatrix}`
  a_y b_z - a_z b_y \\ a_z b_x - a_x b_z \\ a_x b_y - a_y b_x
 \end`\{pmatrix}`
-$, $
+$,
+$
 
 This can be written as a determinant:
 
@@ -257,7 +260,8 @@ $, $
  a_x & a_y & a_z\\
  b_x & b_y & b_z
 \end`\{vmatrix}`
-$, $
+$,
+$
 
 ### Properties of the Cross Product
 
@@ -293,7 +297,8 @@ $, $
 \begin`\{pmatrix}`
  -3 \\ 6 \\ -3
 \end`\{pmatrix}`
-$, $
+$,
+$
 
 ## Intersections
 
@@ -315,8 +320,7 @@ To find where line $\bm{r} = \bm{a} + t\bm{b}$ intersects plane $\bm{r} \cdot \h
    $, $
    (\bm{a} + t\bm{b}) \cdot \hat{n} = d
    $, $
-2. Solve for $t$:
-   $, $
+2. Solve for $t$: $, $
    t = \frac{d - \bm{a} \cdot \hat{n}}{\bm{b} \cdot \hat{n}}
    $, $
 3. If $\bm{b} \cdot \hat{n} = 0$The line is parallel to the plane (no intersection or lies in the
@@ -753,3 +757,8 @@ applying these mathematical techniques.
 | --------- | ------- | ---------------------------------------------------------------------------------------------- |
 | [Vectors] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/12-vectors) |
 | [Vectors] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/3-geometry-and-trigonometry/2_vectors)             |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: 'Paper 3 -- Mechanics -- Full Diagnostic Exam'
-description: 'A-Level Maths Paper 3 -- Mechanics -- Full Diagnostic Exam notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Maths Paper 3 -- Mechanics -- Full Diagnostic Exam notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 slug: diag-paper-3-mechanics
 hide_table_of_contents: true
 ---
@@ -114,7 +116,8 @@ The particle is at rest at $t = 1$ s and $t = 5$ s.
 
 **(b)** First, determine the sign of $v$ in each interval.
 
-For $0 \lt t \lt 1$: test $t = 0.5$, $v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative direction).
+For $0 \lt t \lt 1$: test $t = 0.5$, $v = 3 - 0.25 - 5 = -2.25 \lt 0$ (moving in negative
+direction).
 
 For $1 \lt t \lt 5$: test $t = 3$, $v = 18 - 9 - 5 = 4 \gt 0$ (moving in positive direction).
 
@@ -335,3 +338,19 @@ $$\Delta\text{KE} = 77 - \frac{49}{3} = \frac{231 - 49}{3} = \frac{182}{3} \appr
 | Q4        | Energy and Work          |     10 | $P = Fv$ derivation, maximum speed, decreasing acceleration at constant power, integration for time      |
 | Q5        | Momentum                 |     10 | Sign convention consistency, conservation of momentum, coefficient of restitution, energy classification |
 | **Total** |                          | **50** |                                                                                                          |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

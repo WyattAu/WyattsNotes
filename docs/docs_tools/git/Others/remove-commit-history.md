@@ -1,7 +1,9 @@
 ---
 title: Remove Commit History
 date: 2025-06-02T21:52:46.700Z
-description: 'Git Remove Commit History notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
+description:
+  'Git Remove Commit History notes covering key definitions, core concepts, worked examples, and
+  practice questions for systematic revision.'
 tags:
   - git
 categories:
@@ -94,3 +96,14 @@ git push
 These operations are **destructive**. Anyone who has cloned or forked the repository will have
 mismatched histories. Coordinate with all contributors before rewriting history. Force-pushing to
 shared branches should only be done during agreed maintenance windows.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

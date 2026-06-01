@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to TrueNAS
-description: 'Introduction to TrueNAS notes covering key definitions, core concepts, worked examples, and practice questions for solid learning and effective revision.'
+description:
+  'Introduction to TrueNAS notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid learning and effective revision.'
 slug: intro
 sidebar_position: 1
 ---
@@ -75,3 +77,19 @@ A few assumptions about the reader and the environment:
 For hardware recommendations, refer to the TrueNAS hardware guide. The critical requirements are ECC
 RAM, an HBA in IT mode (not a RAID controller), and enough RAM for the ARC (32 GB minimum for a
 Dedicated NAS, 64 GB recommended).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

@@ -1,6 +1,8 @@
 ---
 title: Oscillations
-description: 'A-Level Physics Oscillations notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and examination practice.'
+description:
+  'A-Level Physics Oscillations notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted study and examination practice.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -109,8 +111,8 @@ $$E_{\mathrm{total}} = E_k + E_p = \frac{1}{2}m\omega^2(A^2 - x^2) + \frac{1}{2}
 
 $$\boxed{E_{\mathrm{total}} = \frac{1}{2}m\omega^2 A^2 = \mathrm{constant}}$$
 
-**Proof that total energy is constant.** The total energy depends only on $m$, $\omega$And $A$ — None
-of which change during the motion. Therefore $E_{\mathrm{total}}$ is conserved. $\square$
+**Proof that total energy is constant.** The total energy depends only on $m$, $\omega$And $A$ —
+None of which change during the motion. Therefore $E_{\mathrm{total}}$ is conserved. $\square$
 
 **Intuition.** Energy oscillates between kinetic and potential forms. At the equilibrium ($x = 0$),
 All energy is kinetic. At the turning points ($x = \pm A$), all energy is potential. The total is
@@ -711,3 +713,14 @@ self-marking and building a personal test matrix. :::
 
 4. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

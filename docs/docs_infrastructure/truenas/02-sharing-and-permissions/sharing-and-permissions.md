@@ -1,7 +1,9 @@
 ---
 id: sharing-and-permissions
 title: Sharing and Permissions
-description: 'Sharing and Permissions notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
+description:
+  'Sharing and Permissions notes covering key definitions, core concepts, worked examples, and
+  practice questions for in-depth exam preparation and revision.'
 slug: sharing-and-permissions
 ---
 
@@ -1010,3 +1012,8 @@ including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

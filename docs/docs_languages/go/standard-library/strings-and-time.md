@@ -6,7 +6,9 @@ tags:
   - Go
 categories:
   - Go
-description: Go's strings and time packages. String manipulation with Contains, HasPrefix, Split, Join, Builder, and Replace. Time parsing, formatting, durations, timers,.
+description:
+  Go's strings and time packages. String manipulation with Contains, HasPrefix, Split, Join,
+  Builder, and Replace. Time parsing, formatting, durations, timers,.
 ---
 
 ## strings Package
@@ -294,8 +296,8 @@ t1.Equal(t2)  // true
 4. **Comparing times with ==.** Use `t1.Equal(t2)` instead. Two `time.Time` values in different
    locations representing the same instant are not `==`, but `Equal` returns `true`.
 
-5. **Leaking timers and tickers.** `time.NewTimer` and `time.NewTicker` create resources that must be
-   stopped. Failing to call `Stop()` leaks a goroutine. Always use `defer`.
+5. **Leaking timers and tickers.** `time.NewTimer` and `time.NewTicker` create resources that must
+   be stopped. Failing to call `Stop()` leaks a goroutine. Always use `defer`.
 
 6. **Using time.After in a loop.** Each call creates a new timer that cannot be stopped. In a loop,
    this leaks timers. Use `time.NewTimer` with `Stop()` instead.
@@ -324,3 +326,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

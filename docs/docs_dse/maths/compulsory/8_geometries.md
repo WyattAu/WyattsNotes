@@ -1,6 +1,8 @@
 ---
 title: Geometries
-description: 'DSE Maths Geometries notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision and exam readiness.'
+description:
+  'DSE Maths Geometries notes covering key definitions, core concepts, worked examples, and practice
+  questions for systematic revision and exam readiness.'
 date: 2025-06-03T16:20:00.000Z
 tags:
   - Maths
@@ -91,7 +93,8 @@ $, $
 \begin{aligned}
  x = \frac{mx_2 + nx_1}{m + n}, \qquad y = \frac{my_2 + ny_1}{m + n}
 \end{aligned}
-$, $
+$,
+$
 
 The midpoint formula is the special case where $m = n = 1$.
 
@@ -373,7 +376,8 @@ $, $
  \mathrm{Circumference} &= 2\pi r = \pi d \\
  \mathrm{Area} &= \pi r^2
 \end{aligned}
-$, $
+$,
+$
 
 Where $r$ is the radius and $d = 2r$ is the diameter.
 
@@ -386,7 +390,8 @@ $, $
  \mathrm{Arc length} &= l = r\theta \\
  \mathrm{Area of sector} &= A = \frac{1}{2}r^2\theta
 \end{aligned}
-$, $
+$,
+$
 
 When the angle is given in degrees ($\theta^\circ$), first convert to radians:
 $\theta = \theta^\circ \times \frac{\pi}{180}$.
@@ -479,7 +484,8 @@ $, $
 \begin{aligned}
  \sin\phi = \frac{|Al + Bm + Cn|}{\sqrt{A^2 + B^2 + C^2}\sqrt{l^2 + m^2 + n^2}}
 \end{aligned}
-$, $
+$,
+$
 
 #### Angle Between Two Planes
 
@@ -490,7 +496,8 @@ $, $
 \begin{aligned}
  \cos\theta = \frac{|A_1 A_2 + B_1 B_2 + C_1 C_2|}{\sqrt{A_1^2 + B_1^2 + C_1^2}\sqrt{A_2^2 + B_2^2 + C_2^2}}
 \end{aligned}
-$, $
+$,
+$
 
 #### Angle Between Two Lines in 3D
 
@@ -501,7 +508,8 @@ $, $
 \begin{aligned}
  \cos\theta = \frac{|l_1 l_2 + m_1 m_2 + n_1 n_2|}{\sqrt{l_1^2 + m_1^2 + n_1^2}\sqrt{l_2^2 + m_2^2 + n_2^2}}
 \end{aligned}
-$, $
+$,
+$
 
 #### Distance from a Point to a Plane
 
@@ -1057,3 +1065,9 @@ right-angled at $A$.
 4. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
    using previous work.
    > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/geometries.md
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

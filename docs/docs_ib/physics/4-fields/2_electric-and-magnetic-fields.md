@@ -463,8 +463,8 @@ Is approximately zero.
    a charged oil drop allows the determination of the elementary charge. The key equation is
    $q = mgd/V$.
 
-6. **Capacitors:** Remember that capacitance depends only on the geometry of the plates ($A$, $d$) and
-   the dielectric, not on the charge or voltage. The energy stored can be expressed in three
+6. **Capacitors:** Remember that capacitance depends only on the geometry of the plates ($A$, $d$)
+   and the dielectric, not on the charge or voltage. The energy stored can be expressed in three
    equivalent forms — use the one that matches your given data.
 
 7. **Unit conversions:** Electric fields are often in V/m or N/C (equivalent). Capacitance is in
@@ -791,3 +791,8 @@ and past paper questions, is essential for success in examinations.
 | [Magnetic Fields] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/fields/02-magnetic-fields)           |
 | [Magnetic Fields] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/4-fields/2_electric-and-magnetic-fields)                   |
 | [Magnetic Fields] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/3-electricity-and-magnetism/2_electricity-and-magnetism) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Supply-Side Policy
-description: 'A-Level Economics Supply-Side Policy notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'A-Level Economics Supply-Side Policy notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -847,8 +849,8 @@ and the new LRAS. But the adjustment process depends on expectations.
 
 **If the SRAS shifts right enough to reach the new LRAS at $Y = 600$:**
 
-New SRAS: $Y = 3P - 500$. $1000 - 2P = 3P - 500 \Rightarrow 1500 = 5P \Rightarrow P = 300$, $Y = 400$.
-This does not work either.
+New SRAS: $Y = 3P - 500$. $1000 - 2P = 3P - 500 \Rightarrow 1500 = 5P \Rightarrow P = 300$,
+$Y = 400$. This does not work either.
 
 Let me reconsider. The SRAS must intersect AD at $Y = 600$: $$600 = 1000 - 2P \Rightarrow P = 200$$
 
@@ -1294,3 +1296,9 @@ imbalances were addressed.
    decrease (shift) of the demand curve.
 
 4. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

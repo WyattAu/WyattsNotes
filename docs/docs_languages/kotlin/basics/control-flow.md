@@ -1,6 +1,8 @@
 ---
 title: Control Flow
-description: 'Kotlin Control Flow notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
+description:
+  'Kotlin Control Flow notes covering key definitions, core concepts, worked examples, and practice
+  questions for systematic exam preparation and revision.'
 slug: control-flow
 date: 2026-04-18
 tags:
@@ -320,3 +322,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

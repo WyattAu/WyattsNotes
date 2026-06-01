@@ -1,6 +1,8 @@
 ---
 title: 'Waves -- Diagnostic Tests'
-description: 'GCSE Physics Waves -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'GCSE Physics Waves -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured preparation.'
 slug: diag-waves
 hide_table_of_contents: true
 ---
@@ -192,3 +194,19 @@ produce sharper images (better resolution). This is analogous to optical microsc
 wavelengths provide finer detail. However, higher frequency ultrasound is more rapidly absorbed by
 tissue, limiting penetration depth. Medical imaging balances resolution and penetration by selecting
 appropriate frequencies ( 1--15 MHz depending on the application).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

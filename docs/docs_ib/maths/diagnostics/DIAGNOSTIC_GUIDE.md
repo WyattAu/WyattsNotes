@@ -1,6 +1,8 @@
 ---
 title: Diagnostic Test Guide
-description: 'IB Maths Diagnostic Test notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'IB Maths Diagnostic Test notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -318,3 +320,19 @@ achieving PASS on the majority of individual Unit tests.
 Copy this template into a personal notes file. Populate it as you complete each Diagnostic. Use one
 row per topic with columns: Unit Test, Integration Test, Notes, Date. All 14 topics are listed in
 the Coverage Map (Section 7).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

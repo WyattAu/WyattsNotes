@@ -4,7 +4,9 @@ tags:
   - IB
   - History
 slug: the-cold-war
-description: 'IB History The Cold War notes covering key definitions, core concepts, worked examples, and practice questions for solid review and exam preparation.'
+description:
+  'IB History The Cold War notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid review and exam preparation.'
 ---
 
 ## The Cold War: A Systems-Level Analysis (1945--1991)
@@ -1116,3 +1118,14 @@ His reforms.
 
 4. Presenting a one-sided argument without considering alternative interpretations or
    counter-evidence.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

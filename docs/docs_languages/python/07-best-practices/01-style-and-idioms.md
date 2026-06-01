@@ -1,6 +1,8 @@
 ---
 title: Style and Idioms
-description: 'Python Style and Idioms notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and revision.'
+description:
+  'Python Style and Idioms notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective exam preparation and revision.'
 date: 2025-06-04T16:00:00.000Z
 tags:
   - Python
@@ -1311,3 +1313,14 @@ Fixed immediately, not discovered weeks later during code review.
 
 4. Writing pseudocode that is too language-specific rather than using standard algorithmic
    constructs.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

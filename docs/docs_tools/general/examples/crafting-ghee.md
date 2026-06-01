@@ -1,6 +1,8 @@
 ---
 title: Crafting Ghee
-description: 'General Crafting Ghee notes covering key definitions, core concepts, worked examples, and practice questions for complete study and thorough revision.'
+description:
+  'General Crafting Ghee notes covering key definitions, core concepts, worked examples, and
+  practice questions for complete study and thorough revision.'
 date: 2025-07-21T02:18:57.576Z
 tags:
   - food
@@ -103,3 +105,14 @@ discard water layer. Removes water-soluble impurities.
 
 4. Memorising content without understanding the underlying principles — this leads to poor
    application in unfamiliar contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

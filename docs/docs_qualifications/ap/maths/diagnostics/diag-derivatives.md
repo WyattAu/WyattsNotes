@@ -1,6 +1,8 @@
 ---
 title: 'Derivatives -- Diagnostic Tests'
-description: 'Qualifications Maths Derivatives -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'Qualifications Maths Derivatives -- Diagnostic Tests notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-04-14
 tags:
   - ap
@@ -246,3 +248,19 @@ The common misconception: students apply FTC part 1 without the chain rule when 
 functions of $x$ rather than $x$ itself. The correct formula is:
 
 $$\frac{d}{dx}\int_{a(x)}^{b(x)} f(t)\,dt = f(b(x)) \cdot b'(x) - f(a(x)) \cdot a'(x)$$
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

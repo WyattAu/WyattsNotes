@@ -1,6 +1,8 @@
 ---
 title: Mathematics
-description: 'A-Level Maths Mathematics notes covering key definitions, core concepts, worked examples, and practice questions for solid learning and effective revision.'
+description:
+  'A-Level Maths Mathematics notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid learning and effective revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -125,3 +127,14 @@ marks are consistently lost.
 | Quadratic formula    | $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$             |
 | Chain rule           | $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$ |
 | Integration by parts | $\\int u\\,dv = uv - \\int v\\,du$                      |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

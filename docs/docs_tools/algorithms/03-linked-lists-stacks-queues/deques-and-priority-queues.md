@@ -1,7 +1,9 @@
 ---
 id: deques-and-priority-queues
 title: Deques and Priority Queues
-description: 'Algorithms Deques and Priority Queues notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'Algorithms Deques and Priority Queues notes covering key definitions, core concepts, worked
+  examples, and practice questions for clear revision.'
 slug: deques-and-priority-queues
 ---
 
@@ -1027,3 +1029,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,7 +1,9 @@
 ---
 id: stress-testing
 title: Stress Testing and Validation
-description: 'Stress Testing and Validation notes covering key definitions, core concepts, worked examples, and practice questions for effective review and exam preparation.'
+description:
+  'Stress Testing and Validation notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective review and exam preparation.'
 slug: stress-testing
 ---
 
@@ -885,3 +887,8 @@ including key studies, methodologies, and evaluations.
 
 Critical evaluation of theories and evidence, using specific studies to support arguments, is
 essential for examination success.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

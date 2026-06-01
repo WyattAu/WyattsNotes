@@ -1,6 +1,8 @@
 ---
 title: Classes and Inheritance
-description: 'Dart Classes and Inheritance notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
+description:
+  'Dart Classes and Inheritance notes covering key definitions, core concepts, worked examples, and
+  practice questions for methodical exam preparation and mastery.'
 date: 2025-07-20T10:00:00.000Z
 tags:
   - dart
@@ -389,3 +391,14 @@ Syntactic sugar for static function calls. This means they cannot be used polymo
 
 4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
    data).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Graph Algorithms
-description: 'A-Level Computer Science Graph Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'A-Level Computer Science Graph Algorithms notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -897,3 +899,14 @@ which may differ from the MST. These are different optimisation problems with di
 
 4. Confusing the domain and range of functions, or not considering restrictions (e.g., denominator
    cannot be zero).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

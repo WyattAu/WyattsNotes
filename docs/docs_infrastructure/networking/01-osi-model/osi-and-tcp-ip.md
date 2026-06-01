@@ -1,7 +1,9 @@
 ---
 id: osi-and-tcp-ip
 title: OSI and TCP/IP Models
-description: 'OSI and TCP/IP Models notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
+description:
+  'OSI and TCP/IP Models notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear exam preparation and mastery.'
 slug: osi-and-tcp-ip
 sidebar_position: 2
 tags:
@@ -839,3 +841,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

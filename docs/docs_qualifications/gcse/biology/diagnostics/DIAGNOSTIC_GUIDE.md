@@ -1,6 +1,8 @@
 ---
 title: 'GCSE Biology -- Diagnostic Guide'
-description: 'GCSE Biology -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for effective study and thorough revision.'
+description:
+  'GCSE Biology -- Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective study and thorough revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -86,3 +88,19 @@ Cell Biology (cell division)
 5. If you score FAIL, review the source file before retrying.
 6. Integration Tests combine topics across biology -- these are essential for Paper 2 preparation.
 7. Practise using the correct scientific terminology consistently.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

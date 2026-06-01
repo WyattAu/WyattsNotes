@@ -1,6 +1,8 @@
 ---
 title: Hosting With Gitea On TrueNAS
-description: 'Git Hosting With Gitea On TrueNAS notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
+description:
+  'Git Hosting With Gitea On TrueNAS notes covering key definitions, core concepts, worked examples,
+  and practice questions for systematic revision.'
 date: 2025-06-13T18:10:33.853Z
 tags:
   - git
@@ -91,3 +93,14 @@ WireGuard is recommended.
   (`DB_MAX_OPEN_CONNS = 50`). Move the database to a dedicated SSD dataset.
 - **Repository migration**: Use the Gitea admin panel `Site Administration > Repository Migration`
   to import repositories from GitHub, GitLab, or another Gitea instance.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

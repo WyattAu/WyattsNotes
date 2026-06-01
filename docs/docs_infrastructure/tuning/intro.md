@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Hardware Tuning
-description: 'Introduction to Hardware Tuning notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'Introduction to Hardware Tuning notes covering key definitions, core concepts, worked examples,
+  and practice questions for focused revision.'
 slug: intro
 sidebar_position: 1
 ---
@@ -259,3 +261,19 @@ Is handled entirely by the OS and firmware. You cannot undervolt or overclock Ap
 
 - **WHEA Errors** — Windows Hardware Error Architecture errors. Logged when the CPU detects and
   corrects internal errors. Even corrected errors indicate instability and should not be ignored.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

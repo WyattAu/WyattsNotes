@@ -1,7 +1,9 @@
 ---
 id: tls-in-practice
 title: TLS in Practice
-description: 'TLS in Practice notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
+description:
+  'TLS in Practice notes covering key definitions, core concepts, worked examples, and practice
+  questions for solid exam preparation and revision.'
 slug: tls-in-practice
 ---
 
@@ -639,3 +641,8 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

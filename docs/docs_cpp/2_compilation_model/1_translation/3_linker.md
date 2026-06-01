@@ -1,6 +1,8 @@
 ---
 title: Linker
-description: 'C++ Programming Linker notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and revision.'
+description:
+  'C++ Programming Linker notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear exam preparation and revision.'
 date: 2025-12-11T23:31:53.376Z
 tags:
   - cpp
@@ -764,3 +766,8 @@ and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

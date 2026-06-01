@@ -247,12 +247,12 @@ To counteract the increasing Coulomb repulsion between protons.
 
 ### Types of Radioactive Decay
 
-| Decay                  | Emission                           | Change                                | Example                                                       |
-| :--------------------- | :--------------------------------- | :------------------------------------ | :------------------------------------------------------------ |
+| Decay                  | Emission                           | Change                                  | Example                                                       |
+| :--------------------- | :--------------------------------- | :-------------------------------------- | :------------------------------------------------------------ |
 | Alpha ($\alpha$)       | $^4_2\mathrm{He}$ (helium nucleus) | $Z \to Z - 2$, $A \to A - 4$            | $^{238}_{92}\mathrm{U} \to ^{234}_{90}\mathrm{Th} + \alpha$   |
 | Beta-minus ($\beta^-$) | $e^-$ (electron) + $\bar{\nu}_e$   | $n \to p$: $Z \to Z + 1$, $A$ unchanged | $^{14}_6\mathrm{C} \to ^{14}_7\mathrm{N} + e^- + \bar{\nu}_e$ |
 | Beta-plus ($\beta^+$)  | $e^+$ (positron) + $\nu_e$         | $p \to n$: $Z \to Z - 1$, $A$ unchanged | $^{11}_6\mathrm{C} \to ^{11}_5\mathrm{B} + e^+ + \nu_e$       |
-| Gamma ($\gamma$)       | High-energy photon                 | No change in $Z$ or $A$               | Excited nucleus de-excites                                    |
+| Gamma ($\gamma$)       | High-energy photon                 | No change in $Z$ or $A$                 | Excited nucleus de-excites                                    |
 
 ### The Decay Law
 
@@ -260,8 +260,8 @@ Radioactive decay is a random process governed by:
 
 $$N = N_0 e^{-\lambda t}$$
 
-Where $N$ is the number of undecayed nuclei at time $t$, $N_0$ is the initial number, and $\lambda$ Is
-the **decay constant**.
+Where $N$ is the number of undecayed nuclei at time $t$, $N_0$ is the initial number, and $\lambda$
+Is the **decay constant**.
 
 **Activity** (rate of decay): $A = -\dfrac{dN}{dt} = \lambda N = A_0 e^{-\lambda t}$Measured in
 **becquerels** ($\mathrm{Bq}$), where $1\,\mathrm{Bq} = 1$ decay per second.
@@ -599,7 +599,7 @@ Quantum tunneling is responsible for alpha decay, tunnel diodes, and scanning tu
 | :-------------- | :---------------------- | :---------------- | :-------------------------- |
 | Strong          | Gluon                   | 1                 | $\sim 10^{-15}\,\mathrm{m}$ |
 | Electromagnetic | Photon                  | $\sim 10^{-2}$    | Infinite                    |
-| Weak            | $W$, $Z$ bosons           | $\sim 10^{-6}$    | $\sim 10^{-18}\,\mathrm{m}$ |
+| Weak            | $W$, $Z$ bosons         | $\sim 10^{-6}$    | $\sim 10^{-18}\,\mathrm{m}$ |
 | Gravitational   | Graviton (hypothetical) | $\sim 10^{-38}$   | Infinite                    |
 
 ---
@@ -978,3 +978,14 @@ Approximately $3.2\,\mathrm{kg}$ of $^{235}\mathrm{U}$ is consumed per day.
 | [Quantum Physics] | A-Level    | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/nuclear-physics/03-quantum-physics)    |
 | [Quantum Physics] | IB         | [View](https://ib.wyattau.com/docs/ib/physics/5-nuclear-and-quantum-physics/1_quantum-and-nuclear-physics) |
 | [Quantum Physics] | University | [View](https://university.wyattau.com/docs/physics/5-quantum-mechanics/1_quantum-mechanics)                |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

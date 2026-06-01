@@ -1,6 +1,8 @@
 ---
 title: C-Interop and FFI
-description: 'C++ Programming C-Interop and FFI notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'C++ Programming C-Interop and FFI notes covering key definitions, core concepts, worked examples,
+  and practice questions for analytical revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -768,3 +770,8 @@ experimental methods, and applications relevant to the specification.
 
 A strong understanding of these principles, combined with regular practice of quantitative problems
 and past paper questions, is essential for success in examinations.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

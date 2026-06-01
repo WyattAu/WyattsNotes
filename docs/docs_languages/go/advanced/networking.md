@@ -1,6 +1,8 @@
 ---
 title: Networking
-description: 'Go Networking notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and examination practice.'
+description:
+  'Go Networking notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted study and examination practice.'
 slug: go/networking
 date: 2026-05-31
 tags:
@@ -422,13 +424,13 @@ client := &http.Client{
 5. **Insecure TLS in production.** `insecure.NewCredentials()` is for development only. Production
    clients must use proper CA verification.
 
-6. **WebSocket origin check disabled.** `CheckOrigin: func(r *http.Request) bool { return true }`
-   is convenient but opens the server to cross-site WebSocket hijacking. Validate origins in
+6. **WebSocket origin check disabled.** `CheckOrigin: func(r *http.Request) bool { return true }` is
+   convenient but opens the server to cross-site WebSocket hijacking. Validate origins in
    production.
 
 7. **HTTP/2 server misconfiguration.** `http.Server` automatically supports HTTP/2 when using
-   `ListenAndServeTLS`. Do not configure HTTP/2 via `h2` package separately unless you have a specific
-   reason.
+   `ListenAndServeTLS`. Do not configure HTTP/2 via `h2` package separately unless you have a
+   specific reason.
 
 ## Summary
 
@@ -440,3 +442,8 @@ client := &http.Client{
 - gRPC uses protocol buffers for schema and `grpc.Dial` / `grpc.NewServer` for implementation.
 - `net.Resolver` with `PreferGo: true` bypasses the system resolver for custom DNS.
 - `crypto/tls` handles server certs, client certs (mTLS), and custom CA pools.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

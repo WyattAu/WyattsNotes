@@ -1,6 +1,8 @@
 ---
 title: 'Electricity -- Diagnostic Tests'
-description: 'GCSE Physics Electricity -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'GCSE Physics Electricity -- Diagnostic Tests notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam readiness.'
 slug: diag-electricity
 hide_table_of_contents: true
 ---
@@ -59,10 +61,10 @@ $P = VI_{\text{total} = 10 \times 4.17 = 41.7$ W. (Or: $P = V^2/R = 100/2.4 = 41
 
 ### UT-3: Electrical Power and Energy
 
-**Question:** (a) Derive the three formulas for electrical power: $P = VI$, $P = I^2R$And $P = V^2/R$.
-(b) A heater rated at 2000 W is used for 3 hours per day for 30 days. Calculate the total energy in
-kWh and the cost at 28p per kWh. (c) A 12 V car battery has a capacity of 50 Ah. Calculate the total
-energy stored and how long it can power a 60 W light bulb.
+**Question:** (a) Derive the three formulas for electrical power: $P = VI$, $P = I^2R$And
+$P = V^2/R$. (b) A heater rated at 2000 W is used for 3 hours per day for 30 days. Calculate the
+total energy in kWh and the cost at 28p per kWh. (c) A 12 V car battery has a capacity of 50 Ah.
+Calculate the total energy stored and how long it can power a 60 W light bulb.
 
 **Solution:**
 
@@ -164,3 +166,19 @@ The output voltage drops from 4.5 V to 0.82 V as temperature rises from $25^\cir
 $100^\circ\text{C$. This changing voltage can be measured by a microcontroller or voltmeter, and a
 calibration curve can convert the voltage reading to a temperature. The larger the change in
 voltage, the more sensitive and accurate the temperature sensor.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

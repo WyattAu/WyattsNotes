@@ -1,6 +1,8 @@
 ---
 title: Acids, Bases & Buffers
-description: 'A-Level Chemistry Acids, Bases & Buffers notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
+description:
+  'A-Level Chemistry Acids, Bases & Buffers notes covering key definitions, core concepts, worked
+  examples, and practice questions for study and revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -106,7 +108,8 @@ Water undergoes autoionisation:
 
 $, $
 2\mathrm{H}_2\mathrm{O}(l) \rightleftharpoons \mathrm{H}_3\mathrm{O}^+(aq) + \mathrm{OH}^-(aq)
-$, $
+$,
+$
 
 Simplified:
 
@@ -479,7 +482,8 @@ $, $
 
 $, $
 K_a = \frac◆LB◆[\mathrm{H}^+]^2◆RB◆◆LB◆c◆RB◆ = \frac◆LB◆(1.00 \times 10^{-3})^2◆RB◆◆LB◆0.050◆RB◆ = \frac◆LB◆1.00 \times 10^{-6}◆RB◆◆LB◆0.050◆RB◆ = 2.0 \times 10^{-5}\,\mathrm{mol/dm}^3
-$, $
+$,
+$
 
 $, $
 \mathrm{p}K_a = -\log_{10}(2.0 \times 10^{-5}) = 4.70
@@ -516,7 +520,8 @@ $[\mathrm{CH}_3\mathrm{COO}^-] = 0.0100/0.150 = 0.0667\,\mathrm{mol/dm}^3$
 
 $, $
 \mathrm{pH} = 4.76 + \log_{10}\left(\frac{0.0667}{0.0667}\right) = 4.76 + \log_{10}(1) = 4.76 + 0 = 4.76
-$, $
+$,
+$
 
 The buffer pH equals the $\mathrm{p}K_a$ because $[\mathrm{acid}] = [\mathrm{salt}]$. This is the
 most effective buffer composition.
@@ -1261,3 +1266,8 @@ underlying theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

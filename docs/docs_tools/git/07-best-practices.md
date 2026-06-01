@@ -1,6 +1,8 @@
 ---
 title: Best Practices
-description: 'Git Best Practices notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
+description:
+  'Git Best Practices notes covering key definitions, core concepts, worked examples, and practice
+  questions for structured learning and effective revision.'
 date: 2025-06-03T16:00:00.000Z
 tags:
   - git
@@ -313,3 +315,14 @@ git config --global alias.save "stash push -m"
 
 4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
    sorted input.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

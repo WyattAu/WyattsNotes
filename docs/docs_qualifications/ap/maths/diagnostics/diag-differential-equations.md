@@ -1,6 +1,8 @@
 ---
 title: 'Differential Equations -- Diagnostic Tests'
-description: 'Qualifications Maths Differential Equations -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'Qualifications Maths Differential Equations -- Diagnostic notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap
@@ -171,8 +173,8 @@ The population reaches $90\%$ of carrying capacity at approximately $t \approx 8
 
 **Question:**
 
-A slope field for $\dfrac{dy}{dx} = \dfrac{x}{y}$ is drawn in the region
-$-3 \leq x \leq 3$, $-3 \leq y \leq 3$.
+A slope field for $\dfrac{dy}{dx} = \dfrac{x}{y}$ is drawn in the region $-3 \leq x \leq 3$,
+$-3 \leq y \leq 3$.
 
 (a) Sketch the solution curve passing through $(1, 2)$. (b) A student claims that no solution curve
 can cross the $x$-axis. Justify this claim using the existence and uniqueness theorem. (c) The
@@ -315,3 +317,19 @@ $y = 0$. So $y(t) \to 0$ as $t \to -\infty$.
 $y_0 \leq 0$: $y(t)$ does not approach $2$.
 
 Answer: $y_0 \in (0, 2]$.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

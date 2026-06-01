@@ -1,6 +1,8 @@
 ---
 title: 'A-Level Biology -- Diagnostic Test Guide'
-description: 'A-Level Biology -- Diagnostic Test notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'A-Level Biology -- Diagnostic Test notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam readiness.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -60,3 +62,19 @@ Each topic file contains **3 unit tests** (single-topic depth) and **3 integrati
 - **Genetics/DNA**: semi-conservative replication; transcription and translation; codon degeneracy;
   epistasis; genetic engineering techniques
 - **Ecology**: GPP vs NPP; succession; nutrient cycles; human impact; conservation strategies
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

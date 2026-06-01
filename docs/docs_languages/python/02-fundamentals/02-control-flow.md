@@ -1,6 +1,8 @@
 ---
 title: Control Flow
-description: 'Python Control Flow notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
+description:
+  'Python Control Flow notes covering key definitions, core concepts, worked examples, and practice
+  questions for in-depth exam preparation and revision.'
 date: 2025-06-04T11:00:00.000Z
 tags:
   - Python
@@ -1055,3 +1057,14 @@ Resource management.
 
 4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
    implementation in code.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

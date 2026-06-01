@@ -1,7 +1,9 @@
 ---
 id: authentication
 title: Authentication and Authorization
-description: 'Authentication and Authorization notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'Authentication and Authorization notes covering key definitions, core concepts, worked examples,
+  and practice questions for exam readiness.'
 slug: authentication
 sidebar_position: 4
 ---
@@ -830,3 +832,8 @@ including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -659,12 +659,12 @@ Since $f(x) = \dfrac{3x^2}{8}$ is increasing on $[0, 2]$The mode is $x = 2$.
 | Binomial     | $B(n, p)$          | $np$   | $np(1-p)$         |
 | Normal       | $N(\mu, \sigma^2)$ | $\mu$  | $\sigma^2$        |
 
-| Key Formula             | Expression                                |
-| ----------------------- | ----------------------------------------- |
-| Addition rule           | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
-| Conditional probability | $P(A\|B) = \dfrac{P(A \cap B)}{P(B)}$     |
+| Key Formula             | Expression                                   |
+| ----------------------- | -------------------------------------------- |
+| Addition rule           | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$    |
+| Conditional probability | $P(A\|B) = \dfrac{P(A \cap B)}{P(B)}$        |
 | Bayes' theorem          | $P(A\|B) = \dfrac{P(B\|A) \cdot P(A)}{P(B)}$ |
-| Standardisation         | $Z = \dfrac{X - \mu}{\sigma}$             |
+| Standardisation         | $Z = \dfrac{X - \mu}{\sigma}$                |
 
 :::tip[Exam Strategy]
 
@@ -881,3 +881,8 @@ and building a personal test matrix. :::
 | [Probability] | IB         | [View](https://ib.wyattau.com/docs/ib/maths/4-statistics-and-probability/1_probability)            |
 | [Probability] | DSE        | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/11_probability)                           |
 | [Probability] | University | [View](https://university.wyattau.com/docs/mathematics/8-probability-and-statistics/1_probability) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

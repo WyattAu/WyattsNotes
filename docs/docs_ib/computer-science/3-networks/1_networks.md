@@ -520,8 +520,8 @@ Write the network address, first usable address, and broadcast address for the f
 <details>
 <summary>Answer 1</summary>
 
-A) We need $2^n \ge 10$. With $n = 4$, $2^4 = 16 \ge 10$. Minimum subnet bits: 4. B) Original Prefix:
-`/24`. New prefix: `/24 + 4 = /28`. Subnet mask: `255.255.255.240`. C) Remaining host bits:
+A) We need $2^n \ge 10$. With $n = 4$, $2^4 = 16 \ge 10$. Minimum subnet bits: 4. B) Original
+Prefix: `/24`. New prefix: `/24 + 4 = /28`. Subnet mask: `255.255.255.240`. C) Remaining host bits:
 $8 - 4 = 4$. Usable hosts: $2^4 - 2 = 14$ per subnet. D) Block size: $256 - 240 = 16$. First subnet:
 Network = `192.168.10.0`First usable = `192.168.10.1`Broadcast = `192.168.10.15`.
 
@@ -664,3 +664,14 @@ Encryption with the speed of symmetric encryption.
 | [Networks] | IB         | [View](https://ib.wyattau.com/docs/ib/computer-science/3-networks/1_networks)                             |
 | [Networks] | DSE        | [View](https://dse.wyattau.com/docs/dse/ict/4-networking-and-internet/1_internet-and-data-communications) |
 | [Networks] | University | [View](https://university.wyattau.com/docs/computing/3-computer-networks/1_computer-networks)             |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

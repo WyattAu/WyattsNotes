@@ -1,6 +1,8 @@
 ---
 title: Macroeconomic Performance
-description: 'A-Level Economics Macroeconomic Performance notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'A-Level Economics Macroeconomic Performance notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -1373,3 +1375,9 @@ better on liveability indicators.
 
 4. Confusing nominal and real values — always adjust for inflation when comparing monetary values
    across time.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

@@ -1,6 +1,8 @@
 ---
 title: Properties of Materials
-description: 'A-Level Physics Properties of Materials notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'A-Level Physics Properties of Materials notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam preparation.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - Physics
@@ -606,3 +608,8 @@ self-marking and building a personal test matrix. :::
 
 4. Misidentifying the system boundary when applying conservation laws — define what is included
    before writing equations.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

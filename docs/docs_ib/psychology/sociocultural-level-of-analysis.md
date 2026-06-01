@@ -59,7 +59,7 @@ generalisability of BLOA and CLOA findings.
 
 ## Exam Focus
 
-Paper 1 questions on the SCLOA typically require:
+Paper 1 questions on the SCLOA in most cases require:
 
 - Outlining one or more principles of the SCLOA and discussing their implications.
 - Describing and evaluating a study relevant to the SCLOA (e.g., Tajfel et al., Asch, Berry).

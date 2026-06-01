@@ -1,6 +1,8 @@
 ---
 title: Limits and Continuity
-description: 'Qualifications Maths Limits and Continuity notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'Qualifications Maths Limits and Continuity notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 date: 2026-04-14
 tags:
   - ap
@@ -73,8 +75,8 @@ Left limit $= -1$Right limit $= 1$. The limit does not exist.
 This is proved using the squeeze theorem and the geometric inequality $\sin x \lt x \lt \tan x$ for
 $0 \lt x \lt \frac{\pi}{2}$Which gives $\cos x \lt \frac{\sin x}{x} \lt 1$.
 
-As $x \to 0^+$, $\cos x \to 1$So by the squeeze theorem, $\frac{\sin x}{x} \to 1$. A similar Argument
-applies from the left. $\blacksquare$
+As $x \to 0^+$, $\cos x \to 1$So by the squeeze theorem, $\frac{\sin x}{x} \to 1$. A similar
+Argument applies from the left. $\blacksquare$
 
 **Proof of the geometric inequality $\sin x \lt x \lt \tan x$ for $0 \lt x \lt \frac{\pi}{2}$.**
 Consider a unit circle sector with angle $x$. The area of triangle $OAP$ (with altitude $\sin x$) is
@@ -958,3 +960,8 @@ including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

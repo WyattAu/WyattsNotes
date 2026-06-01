@@ -1,6 +1,8 @@
 ---
 title: Electrochemistry
-description: 'A-Level Electrochemistry notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and examination preparation.'
+description:
+  'A-Level Electrochemistry notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid revision and examination preparation.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -101,7 +103,8 @@ The SHE is the reference electrode:
 
 $, $
 2\mathrm{H}^+(aq, 1\,\mathrm{mol/dm}^3) + 2e^- \rightleftharpoons \mathrm{H}_2(g, 100\,\mathrm{kPa})
-$, $
+$,
+$
 
 By definition, $E^\circ(\mathrm{H}^+/\mathrm{H}_2) = 0.00\,\mathrm{V}$.
 
@@ -213,7 +216,8 @@ $, $
 
 $, $
 E = 1.10 - \frac{0.0592}{2}\log_{10}(0.005) = 1.10 - 0.0296 \times (-2.30) = 1.10 + 0.068 = 1.17\,\mathrm{V}
-$, $
+$,
+$
 
 The non-standard cell EMF is higher than the standard value because the product ion
 ($\mathrm{Zn}^{2+}$) concentration is lower and the reactant ion ($\mathrm{Cu}^{2+}$) concentration
@@ -226,7 +230,8 @@ concentrations. The cell EMF arises purely from the concentration difference:
 
 $, $
 E_\mathrm{cell} = -\frac{0.0592}{n}\log_{10}\frac◆LB◆[\mathrm{M}^{n+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{M}^{n+}]_\mathrm{concentrated}◆RB◆
-$, $
+$,
+$
 
 **Example:** A $\mathrm{Cu}/\mathrm{Cu}^{2+}$ concentration cell with
 $[\mathrm{Cu}^{2+}]_\mathrm{left} = 0.001\,\mathrm{mol/dm}^3$ and
@@ -292,7 +297,8 @@ For the $\mathrm{H}_2/\mathrm{O}_2$ fuel cell at $298\,\mathrm{K}$:
 
 $, $
 \Delta G^\circ = -2 \times 237 = -474\,\mathrm{kJ/mol}, \quad \Delta H^\circ = -2 \times 286 = -572\,\mathrm{kJ/mol}
-$, $
+$,
+$
 
 $, $
 \text{Efficiency} = \frac{474}{572} \times 100 = 83\%
@@ -672,7 +678,8 @@ $n = 2$ electrons transferred.
 
 $, $
 \Delta G^\circ = -nFE^\circ_\mathrm{cell} = -2 \times 96485 \times 1.56 = -301,000\,\mathrm{J/mol} = -301\,\mathrm{kJ/mol}
-$, $
+$,
+$
 
 The large negative $\Delta G^\circ$ confirms that the reaction is strongly spontaneous under
 standard conditions.
@@ -709,7 +716,8 @@ Using $pV = nRT$:
 
 $, $
 V = \frac{nRT}{p} = \frac◆LB◆0.00467 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{11.57}{100000} = 1.16 \times 10^{-4}\,\mathrm{m}^3 = 0.116\,\mathrm{dm}^3 = 116\,\mathrm{cm}^3
-$, $
+$,
+$
 
 </details>
 
@@ -729,23 +737,27 @@ equation. (c) Identify the anode and cathode and explain the direction of electr
 
 $, $
 \mathrm{Cu}(s) \mid \mathrm{Cu}^{2+}(0.00100\,\mathrm{mol/dm}^3) \parallel \mathrm{Cu}^{2+}(1.00\,\mathrm{mol/dm}^3) \mid \mathrm{Cu}(s)
-$, $
+$,
+$
 
 (b) The overall reaction is:
 
 $, $
 \mathrm{Cu}^{2+}(\text{concentrated}) + \mathrm{Cu}(s) \rightleftharpoons \mathrm{Cu}(s) + \mathrm{Cu}^{2+}(\text{dilute})
-$, $
+$,
+$
 
 Using the Nernst equation:
 
 $, $
 E_\mathrm{cell} = E^\circ_\mathrm{cell} - \frac{RT}{nF}\ln Q = 0 - \frac{RT}{2F}\ln\frac◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{dilute}◆RB◆◆LB◆[\mathrm{Cu}^{2+}]_\mathrm{concentrated}◆RB◆
-$, $
+$,
+$
 
 $, $
 E_\mathrm{cell} = -\frac{0.02569}{2}\ln\frac{0.00100}{1.00} = -0.01285 \times \ln(10^{-3}) = -0.01285 \times (-6.908) = +0.0888\,\mathrm{V}
-$, $
+$,
+$
 
 (c) The half-cell with the lower concentration ($0.00100\,\mathrm{mol/dm}^3$) is the anode
 (oxidation: $\mathrm{Cu} \to \mathrm{Cu}^{2+} + 2e^-$). The half-cell with the higher concentration
@@ -844,9 +856,11 @@ The cell potential is slightly higher than $E^\circ$ because the lower product c
 **Lead-acid accumulator:**
 
 - Anode (discharge):
-  $\mathrm{Pb}(s) + \mathrm{SO}_4^{2-}(aq) \rightleftharpoons \mathrm{PbSO}_4(s) + 2e^-$, $E^\circ = -0.36\,\mathrm{V}$
+  $\mathrm{Pb}(s) + \mathrm{SO}_4^{2-}(aq) \rightleftharpoons \mathrm{PbSO}_4(s) + 2e^-$,
+  $E^\circ = -0.36\,\mathrm{V}$
 - Cathode (discharge):
-  $\mathrm{PbO}_2(s) + \mathrm{SO}_4^{2-}(aq) + 4\mathrm{H}^+(aq) + 2e^- \rightleftharpoons \mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$, $E^\circ = +1.69\mathrm{V}$
+  $\mathrm{PbO}_2(s) + \mathrm{SO}_4^{2-}(aq) + 4\mathrm{H}^+(aq) + 2e^- \rightleftharpoons \mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l)$,
+  $E^\circ = +1.69\mathrm{V}$
 
 $E^\circ_\mathrm{cell} = 1.69 - (-0.36) = 2.05\,\mathrm{V}$
 
@@ -1002,3 +1016,8 @@ theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

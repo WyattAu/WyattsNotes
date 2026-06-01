@@ -6,16 +6,18 @@ tags:
   - IB History
 categories:
   - IB History
-description: IB History guide to Democratic States for Paper 2. Covers Weimar Germany, the United States in the 1920s-30s, Republican Spain, comparative analysis,.
+description:
+  IB History guide to Democratic States for Paper 2. Covers Weimar Germany, the United States in the
+  1920s-30s, Republican Spain, comparative analysis,.
 ---
 
 # Democratic States: Challenges and Crises (1918--1939)
 
 This document covers the IB History topic on Democratic States for Paper 2. It examines three case
 studies of democratic states facing severe challenges — Weimar Germany, the United States during the
-Great Depression, and the Spanish Second Republic — and analyses the conditions that enabled democratic
-systems to survive or collapse. Comparative analysis and historiographical perspectives are integrated
-throughout.
+Great Depression, and the Spanish Second Republic — and analyses the conditions that enabled
+democratic systems to survive or collapse. Comparative analysis and historiographical perspectives
+are integrated throughout.
 
 ---
 
@@ -25,8 +27,8 @@ throughout.
 
 - Established in the town of Weimar (not Berlin) in August 1919, amid political instability
 - Key features:
-  - **President**: elected every seven years, with extensive emergency powers under Article 48 — could
-    rule by decree in times of crisis
+  - **President**: elected every seven years, with extensive emergency powers under Article 48 —
+    could rule by decree in times of crisis
   - **Reichstag**: elected by proportional representation — ensured fair representation but produced
     fragmented parliaments with many small parties
   - **Chancellor**: appointed by the President, required the confidence of the Reichstag
@@ -42,12 +44,12 @@ throughout.
 **Political Violence and Extremism**
 
 - The new republic faced violent opposition from both left and right
-- **Left-wing threats**: Spartacist Uprising (January 1919) — communist revolt suppressed by the Freikorps
-  (paramilitary units); the Bavarian Soviet Republic (April 1919)
-- **Right-wing threats**: the Kapp Putsch (March 1920) — right-wing attempt to overthrow the government;
-  political assassinations (Matthias Erzberger, Walther Rathenau)
-- The judiciary was biased towards the right: left-wing offenders received harsh sentences, right-wing
-  offenders received lenient treatment
+- **Left-wing threats**: Spartacist Uprising (January 1919) — communist revolt suppressed by the
+  Freikorps (paramilitary units); the Bavarian Soviet Republic (April 1919)
+- **Right-wing threats**: the Kapp Putsch (March 1920) — right-wing attempt to overthrow the
+  government; political assassinations (Matthias Erzberger, Walther Rathenau)
+- The judiciary was biased towards the right: left-wing offenders received harsh sentences,
+  right-wing offenders received lenient treatment
 
 **The Treaty of Versailles**
 
@@ -59,8 +61,10 @@ throughout.
 
 **Hyperinflation (1923)**
 
-- Germany defaulted on reparations payments in 1922; France and Belgium occupied the Ruhr in response
-- The government ordered passive resistance and printed money to support workers — triggering hyperinflation
+- Germany defaulted on reparations payments in 1922; France and Belgium occupied the Ruhr in
+  response
+- The government ordered passive resistance and printed money to support workers — triggering
+  hyperinflation
 - By November 1923, the exchange rate was 4.2 trillion marks to the dollar
 - Savings were destroyed; the middle class was ruined; social unrest intensified
 - The crisis led to the Beer Hall Putsch (November 1923) and growing support for extremist parties
@@ -72,8 +76,8 @@ throughout.
 - No party ever won a majority in the Reichstag; coalition governments were unstable and short-lived
 - Between 1919 and 1933, there were 20 different cabinets
 - Extremist parties (NSDAP and KPD) gained ground as the moderate parties lost support
-- Voter turnout was high — people had not lost faith in democracy itself, but in the specific parties
-  that had governed under the Weimar system
+- Voter turnout was high — people had not lost faith in democracy itself, but in the specific
+  parties that had governed under the Weimar system
 
 ### 1.3 The Stresemann Era (1923--1929)
 
@@ -81,8 +85,8 @@ throughout.
   death in 1929
 - Key achievements:
   - **Dawes Plan (1924)**: restructured reparations payments; American loans flowed into Germany
-  - **Locarno Treaties (1925)**: Germany accepted its western borders (but not eastern borders); this
-    improved relations with France and Britain
+  - **Locarno Treaties (1925)**: Germany accepted its western borders (but not eastern borders);
+    this improved relations with France and Britain
   - **League of Nations (1926)**: Germany was admitted, restoring its international standing
   - **Kellogg-Briand Pact (1928)**: Germany signed the international agreement to renounce war
   - **Young Plan (1929)**: further reduced and restructured reparations
@@ -97,14 +101,16 @@ throughout.
 - American loans were recalled; industrial production collapsed; unemployment soared to 6 million by
   1932
 - Chancellor Bruning (1930--1932) pursued deflationary austerity policies, which worsened the crisis
-- Presidential elections (1932): Hindenburg was re-elected; Hitler received 36.8% in the second round
+- Presidential elections (1932): Hindenburg was re-elected; Hitler received 36.8% in the second
+  round
 - The NSDAP became the largest party in the Reichstag in July 1932 (37.3%) and November 1932 (33.1%)
 - Coalition negotiations failed; Papen and Schleicher pursued authoritarian solutions
-- Hitler was appointed Chancellor on 30 January 1933 by Hindenburg, who was persuaded by conservative
-  elites
+- Hitler was appointed Chancellor on 30 January 1933 by Hindenburg, who was persuaded by
+  conservative elites
 - Within months, the Enabling Act (March 1933) effectively ended the Weimar Republic
 - The Weimar Republic did not collapse because democracy was inherently flawed — it was destroyed by
-  a combination of economic crisis, political miscalculation, and the deliberate actions of its enemies
+  a combination of economic crisis, political miscalculation, and the deliberate actions of its
+  enemies
 
 ---
 
@@ -123,26 +129,27 @@ throughout.
 
 **Social and Cultural Change**
 
-- Prohibition (1920--1933): the 18th Amendment banned the manufacture, sale, and transport of alcohol
+- Prohibition (1920--1933): the 18th Amendment banned the manufacture, sale, and transport of
+  alcohol
   - Led to the rise of organised crime (bootlegging, speakeasies)
   - Widely flouted and ultimately repealed (21st Amendment, 1933)
 - Jazz Age: cultural revolution in music, dance, fashion, and social mores
-- Women's rights: the 19th Amendment (1920) granted women the right to vote; the "flapper" symbolised
-  a new generation of independent women
+- Women's rights: the 19th Amendment (1920) granted women the right to vote; the "flapper"
+  symbolised a new generation of independent women
 - The "Red Scare" (1919--1920): fear of communist subversion led to the Palmer Raids and deportation
   of suspected radicals
 - Nativism: immigration restriction (Immigration Acts of 1921 and 1924); the resurgence of the KKK;
   the Sacco and Vanzetti case (1927)
-- Racial tensions: the "New Negro" movement and the Harlem Renaissance; continued lynching and segregation
-  in the South
+- Racial tensions: the "New Negro" movement and the Harlem Renaissance; continued lynching and
+  segregation in the South
 
 **Isolationism**
 
 - The USA rejected the Treaty of Versailles and did not join the League of Nations
 - Isolationism was driven by disillusionment with WWI, anti-immigrant sentiment, and a belief that
   American interests were best served by avoiding European entanglements
-- The Washington Naval Conference (1921--1922) and the Kellogg-Briand Pact (1928) were expressions of
-  American preference for arms limitation and disarmament over collective security
+- The Washington Naval Conference (1921--1922) and the Kellogg-Briand Pact (1928) were expressions
+  of American preference for arms limitation and disarmament over collective security
 - The Neutrality Acts (1935--1937) codified isolationist policy by restricting arms sales and travel
   to belligerent nations
 
@@ -187,21 +194,23 @@ throughout.
 
 - **Banking**: Emergency Banking Act (1933) — bank holiday; the FDIC insured deposits; restored
   confidence
-- **Agriculture**: Agricultural Adjustment Act (AAA) — paid farmers to reduce production to raise prices
-- **Industry**: National Industrial Recovery Act (NIRA) — established industry codes for wages, hours,
-  and prices (later declared unconstitutional)
+- **Agriculture**: Agricultural Adjustment Act (AAA) — paid farmers to reduce production to raise
+  prices
+- **Industry**: National Industrial Recovery Act (NIRA) — established industry codes for wages,
+  hours, and prices (later declared unconstitutional)
 - **Employment**: Civilian Conservation Corps (CCC) — employed young men in conservation projects;
   Public Works Administration (PWA) — funded large-scale public works
-- **Relief**: Federal Emergency Relief Administration (FERA) — provided direct relief to the unemployed
+- **Relief**: Federal Emergency Relief Administration (FERA) — provided direct relief to the
+  unemployed
 
 **Second New Deal (1935--1938)**
 
 - **Social Security Act (1935)**: established old-age pensions, unemployment insurance, and aid to
   dependent children — the most significant and lasting achievement of the New Deal
-- **Wagner Act (1935)**: protected workers' rights to organise and bargain collectively; led to a surge
-  in union membership
-- **Works Progress Administration (WPA)**: the largest New Deal employment programme — employed millions
-  in construction, arts, and public service projects
+- **Wagner Act (1935)**: protected workers' rights to organise and bargain collectively; led to a
+  surge in union membership
+- **Works Progress Administration (WPA)**: the largest New Deal employment programme — employed
+  millions in construction, arts, and public service projects
 - **Wealth Tax Act (1935)**: increased taxes on the wealthy
 
 **Limitations of the New Deal**
@@ -248,8 +257,8 @@ throughout.
 - **Right-wing criticism**: reforms were too radical, especially anti-clerical measures
 - Violence escalated: church burnings, political assassinations, street fighting
 - Elections in 1933 brought a right-wing government to power under Lerroux; reforms were reversed
-- Elections in February 1936 produced a narrow victory for the left-wing Popular Front (a coalition of
-  republicans, socialists, and communists)
+- Elections in February 1936 produced a narrow victory for the left-wing Popular Front (a coalition
+  of republicans, socialists, and communists)
 - Political violence intensified: over 300 political killings between February and July 1936
 
 ### 3.2 The Spanish Civil War (1936--1939)
@@ -258,8 +267,8 @@ throughout.
 
 - A military revolt began on 17 July 1936 in Morocco, led by General Francisco Franco
 - The revolt quickly spread to mainland Spain but failed to take Madrid, Barcelona, or Valencia
-- Spain was divided: the Republic controlled the east, centre, and south; the Nationalists controlled
-  the north and west
+- Spain was divided: the Republic controlled the east, centre, and south; the Nationalists
+  controlled the north and west
 - The war became an international ideological conflict:
   - **Republic**: supported by the USSR (military advisors, equipment), International Brigades
     (volunteers from 53 countries), and Mexico
@@ -286,8 +295,8 @@ throughout.
 - Franco captured Barcelona (January 1939) and Madrid (March 1939)
 - The war ended on 1 April 1939
 
-- Casualties: approximately 500,000 dead; 200,000 executed by the Nationalists after the war; 450,000
-  refugees fled to France
+- Casualties: approximately 500,000 dead; 200,000 executed by the Nationalists after the war;
+  450,000 refugees fled to France
 
 ### 3.3 Franco's Regime
 
@@ -308,8 +317,8 @@ throughout.
 
 ### 4.1 Democratic Challenges Across Nations
 
-- All three democracies faced severe economic crises: hyperinflation in Germany, the Great Depression
-  in the USA, and economic backwardness in Spain
+- All three democracies faced severe economic crises: hyperinflation in Germany, the Great
+  Depression in the USA, and economic backwardness in Spain
 - All three experienced political polarisation and the rise of extremism
 - All three faced challenges to the established order from both left and right
 - However, the outcomes were very different:
@@ -321,18 +330,19 @@ throughout.
 
 - Economic crisis was the most significant common factor across all three cases
 - In Germany, hyperinflation and then the Great Depression destroyed faith in democracy
-- In the USA, the Great Depression nearly overwhelmed the democratic system but ultimately strengthened
-  it through the New Deal
+- In the USA, the Great Depression nearly overwhelmed the democratic system but ultimately
+  strengthened it through the New Deal
 - In Spain, economic backwardness (particularly the agrarian question) was a root cause of political
   instability
 
 ### 4.3 Rise of Extremism
 
-- Extremism thrives when moderate politics fails to deliver solutions to economic and social problems
+- Extremism thrives when moderate politics fails to deliver solutions to economic and social
+  problems
 - In all three cases, the failure of mainstream politicians to address economic grievances created
   space for radicals
-- The strength of democratic institutions, the presence of a democratic tradition, and the quality of
-  leadership were crucial factors in determining whether democracy survived
+- The strength of democratic institutions, the presence of a democratic tradition, and the quality
+  of leadership were crucial factors in determining whether democracy survived
 
 ---
 
@@ -340,8 +350,9 @@ throughout.
 
 ### 5.1 Structural vs Contingent Explanations
 
-- **Structuralists** argue that the fate of these democracies was determined by underlying structural
-  factors: economic conditions, class structures, institutional weaknesses, geopolitical pressures
+- **Structuralists** argue that the fate of these democracies was determined by underlying
+  structural factors: economic conditions, class structures, institutional weaknesses, geopolitical
+  pressures
   - Weimar's proportional representation and Article 48 were structural weaknesses that made the
     republic vulnerable
   - The USA's federal system and strong democratic tradition were structural strengths
@@ -371,19 +382,19 @@ throughout.
 
 ## 6. Common Pitfalls
 
-1. **Conflating economic crisis with political collapse**: Economic crisis does not automatically lead to
-   the fall of democracy. The USA in the 1930s demonstrates that democracies can survive severe
-   economic shocks.
+1. **Conflating economic crisis with political collapse**: Economic crisis does not automatically
+   lead to the fall of democracy. The USA in the 1930s demonstrates that democracies can survive
+   severe economic shocks.
 2. **Presenting democracy as the default**: For most of human history, most societies have not been
    democratic. Democracy is fragile and requires active maintenance.
 3. **Ignoring the role of leadership**: The quality of political leadership (Stresemann, Roosevelt,
    vs Bruning, Hindenburg) was crucial in each case.
-4. **Teleological thinking**: Avoid the assumption that the outcomes (Nazi Germany, New Deal America,
-   Franco's Spain) were predetermined. History is contingent.
-5. **Neglecting social and cultural factors**: Economic and political factors alone cannot explain the
-   fate of these democracies. Social divisions, cultural attitudes, and religious factors were also
-   important.
-6. **Over-simplifying the Spanish Civil War**: The war was not simply "democracy vs fascism" — it
+4. **Teleological thinking**: Avoid the assumption that the outcomes (Nazi Germany, New Deal
+   America, Franco's Spain) were predetermined. History is contingent.
+5. **Neglecting social and cultural factors**: Economic and political factors alone cannot explain
+   the fate of these democracies. Social divisions, cultural attitudes, and religious factors were
+   also important.
+6. **Over-simplifying the Spanish Civil War**: The war was not directly "democracy vs fascism" — it
    involved complex ideological conflicts within both the Republican and Nationalist camps.
 7. **Ignoring international context**: The fate of these democracies was profoundly influenced by
    international events and trends, including the Great Depression, the rise of fascism, and the
@@ -401,3 +412,8 @@ democracy even in the face of severe economic collapse. Spain illustrated how de
 and the absence of a democratic tradition could lead to civil war and authoritarian rule. The
 comparative study of these cases provides essential insights into the conditions that enable
 democracies to survive and the factors that contribute to their downfall.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

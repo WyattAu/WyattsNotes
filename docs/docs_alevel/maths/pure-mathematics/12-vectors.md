@@ -1,6 +1,8 @@
 ---
 title: Vectors
-description: 'A-Level Maths Vectors notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive study and thorough revision.'
+description:
+  'A-Level Maths Vectors notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -317,8 +319,8 @@ $d = \left|\begin{pmatrix}1/3\\2/3\\-2/3\end{pmatrix}\right| = \sqrt◆LB◆\dfr
 
 ### 9.1 Definition
 
-**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$, $\mathbf{b}$ $\mathbf{c}$
-is
+**Definition.** The **scalar triple product** of three vectors $\mathbf{a}$, $\mathbf{b}$
+$\mathbf{c}$ is
 
 $$[\mathbf{a},\, \mathbf{b},\, \mathbf{c}] = \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$$
 
@@ -857,3 +859,14 @@ building a personal test matrix. :::
 
 6. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
    conditions in definite integrals.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

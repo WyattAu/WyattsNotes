@@ -1,6 +1,8 @@
 ---
 title: Nervous System
-description: 'DSE Biology Nervous System notes covering key definitions, core concepts, worked examples, and practice questions for rigorous study and examination practice.'
+description:
+  'DSE Biology Nervous System notes covering key definitions, core concepts, worked examples, and
+  practice questions for rigorous study and examination practice.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1089,7 +1091,6 @@ experimental evidence, and real-world applications.
 
 **Key concepts include:**
 
-
 - key biological principles and concepts
 - experimental methods and data analysis
 - applications of biology in medicine and industry
@@ -1100,3 +1101,8 @@ Success requires the ability to recall specific factual content, apply knowledge
 and evaluate experimental evidence critically.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/nervous-system.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

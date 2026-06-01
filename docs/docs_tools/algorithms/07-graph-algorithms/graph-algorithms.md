@@ -1,7 +1,9 @@
 ---
 id: graph-algorithms
 title: Graph Algorithms
-description: 'Algorithms Graph Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'Algorithms Graph Algorithms notes covering key definitions, core concepts, worked examples, and
+  practice questions for thorough preparation.'
 slug: graph-algorithms
 ---
 
@@ -1011,3 +1013,8 @@ key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

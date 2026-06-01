@@ -1,6 +1,8 @@
 ---
 title: Classes and Inheritance
-description: 'Java Classes and Inheritance notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
+description:
+  'Java Classes and Inheritance notes covering key definitions, core concepts, worked examples, and
+  practice questions for efficient exam preparation and mastery.'
 date: 2025-06-05T12:00:00.000Z
 tags: ['java']
 categories: ['java']
@@ -1458,3 +1460,8 @@ graph TD
 
 4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
    implementation in code.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Electrostatics
-description: 'Qualifications Physics Electrostatics notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'Qualifications Physics Electrostatics notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed preparation.'
 date: 2026-05-05
 tags:
   - ap
@@ -551,3 +553,8 @@ experimental methods, and applications relevant to the specification.
 
 A strong understanding of these principles, combined with regular practice of quantitative problems
 and past paper questions, is essential for success in examinations.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

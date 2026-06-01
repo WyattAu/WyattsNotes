@@ -2099,8 +2099,8 @@ This is the same logarithmic pattern as binary search: each iteration halves the
 
 **Common Pitfalls -- Computational Complexity**
 
-- **Confusing $O(n \log n)$ with $O(n)$:** These are different classes. For
-  $n = 10^6$, $n \log_2 n \approx 2 \times 10^7$ while $n = 10^6$ -- a factor of 20 difference.
+- **Confusing $O(n \log n)$ with $O(n)$:** These are different classes. For $n = 10^6$,
+  $n \log_2 n \approx 2 \times 10^7$ while $n = 10^6$ -- a factor of 20 difference.
 - **Adding complexities incorrectly:** Sequential loops use the sum rule:
   $O(f) + O(g) = O(\max(f, g))$. Only multiply for nested loops.
 - **Ignoring the worst case:** An algorithm that is $O(n)$ average but $O(n^2)$ worst case may be
@@ -2788,3 +2788,14 @@ _If you get this wrong, revise: [Queues](#queues) and
 | ------------------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------- |
 | [Algorithms and Data Structures (Advanced)] | IB         | [View](https://ib.wyattau.com/docs/ib/computer-science/4-computational-thinking/2_algorithms-and-data-structures)       |
 | [Algorithms and Data Structures (Advanced)] | University | [View](https://university.wyattau.com/docs/computing/2-algorithms-and-data-structures/1_algorithms-and-data-structures) |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

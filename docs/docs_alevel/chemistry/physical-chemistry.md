@@ -1,6 +1,8 @@
 ---
 title: Physical Chemistry
-description: 'A-Level Physical Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision and exam readiness.'
+description:
+  'A-Level Physical Chemistry notes covering key definitions, core concepts, worked examples, and
+  practice questions for systematic revision and exam readiness.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -16,7 +18,8 @@ sidebar_position: 1
 Comprehensive study guide covering the core physical chemistry topics for A-Level examinations
 across all major exam boards.
 
-:::info Board Coverage AQA Paper 1 & 2 | Edexcel A Paper 1 & 2 | OCR (A) Paper 1 & 2 | CIE Paper 2 & 4 :::
+:::info Board Coverage AQA Paper 1 & 2 | Edexcel A Paper 1 & 2 | OCR (A) Paper 1 & 2 | CIE Paper 2 &
+4 :::
 
 ---
 
@@ -24,15 +27,14 @@ across all major exam boards.
 
 ### Subatomic Particles
 
-| Particle   | Relative Mass | Relative Charge | Location   |
-| ---------- | ------------- | --------------- | ---------- |
-| Proton     | 1             | +1              | Nucleus    |
-| Neutron    | 1             | 0               | Nucleus    |
-| Electron   | $\frac{1}{1836}$ | $-1$        | Shells     |
+| Particle | Relative Mass    | Relative Charge | Location |
+| -------- | ---------------- | --------------- | -------- |
+| Proton   | 1                | +1              | Nucleus  |
+| Neutron  | 1                | 0               | Nucleus  |
+| Electron | $\frac{1}{1836}$ | $-1$            | Shells   |
 
-**Atomic number ($Z$)** = number of protons
-**Mass number ($A$)** = protons + neutrons
-**Isotopes** = same $Z$, different $A$ (different number of neutrons)
+**Atomic number ($Z$)** = number of protons **Mass number ($A$)** = protons + neutrons **Isotopes**
+= same $Z$, different $A$ (different number of neutrons)
 
 ### Electron Configuration
 
@@ -46,6 +48,7 @@ Electrons fill shells in order: 1 → 2 → 3 → 4...
 | 4     | 32                | K – Kr          |
 
 **Exceptions to remember:**
+
 - Chromium: $[\mathrm{Ar}]\,3d^5\,4s^1$ (not $3d^4\,4s^2$)
 - Copper: $[\mathrm{Ar}]\,3d^{10}\,4s^1$ (not $3d^9\,4s^2$)
 
@@ -56,9 +59,13 @@ Electrons fill shells in order: 1 → 2 → 3 → 4...
 $$\mathrm{X}(g) \to \mathrm{X}^+(g) + e^-$$
 
 **Trends:**
-- **Across a period:** generally increases (greater nuclear charge, same shielding, smaller atomic radius)
-- **Down a group:** decreases (increased shielding, larger atomic radius outweighs greater nuclear charge)
-- **Dips** between Group 2 and 13 ($s \to p$ sub-shell, $p$ electrons are higher energy and slightly shielded)
+
+- **Across a period:** generally increases (greater nuclear charge, same shielding, smaller atomic
+  radius)
+- **Down a group:** decreases (increased shielding, larger atomic radius outweighs greater nuclear
+  charge)
+- **Dips** between Group 2 and 13 ($s \to p$ sub-shell, $p$ electrons are higher energy and slightly
+  shielded)
 - **Dips** between Group 15 and 16 (pairing repulsion in the $p$ orbital)
 
 ### Mass Spectrometry
@@ -102,21 +109,23 @@ $$A_r = \frac{\sum(m_i \times a_i)}{\sum a_i}$$
 - Decreases down a group (increased shielding)
 - F is the most electronegative element (Pauling scale: 4.0)
 
-A **polar bond** arises when there is an electronegativity difference between bonded atoms ($\delta^+$
-and $\delta^-$ charges). A **polar molecule** requires both polar bonds AND an asymmetrical shape (e.g.
-$\mathrm{H_2O}$ is polar; $\mathrm{CO_2}$ is non-polar despite polar bonds).
+A **polar bond** arises when there is an electronegativity difference between bonded atoms
+($\delta^+$ and $\delta^-$ charges). A **polar molecule** requires both polar bonds AND an
+asymmetrical shape (e.g. $\mathrm{H_2O}$ is polar; $\mathrm{CO_2}$ is non-polar despite polar
+bonds).
 
 ### Intermolecular Forces
 
-| Force              | Strength | Occurs Between                    | Example                       |
-| ------------------ | -------- | --------------------------------- | ----------------------------- |
-| London (dispersion)| Weakest  | All molecules                     | All                           |
-| Dipole-dipole      | Moderate | Polar molecules                   | $\mathrm{HCl}$, $\mathrm{SO_2}$ |
-| Hydrogen bonding   | Strongest| Molecules with $\mathrm{N, O, F}$ bonded to H | $\mathrm{H_2O}$, $\mathrm{NH_3}$, $\mathrm{HF}$ |
+| Force               | Strength  | Occurs Between                                | Example                                         |
+| ------------------- | --------- | --------------------------------------------- | ----------------------------------------------- |
+| London (dispersion) | Weakest   | All molecules                                 | All                                             |
+| Dipole-dipole       | Moderate  | Polar molecules                               | $\mathrm{HCl}$, $\mathrm{SO_2}$                 |
+| Hydrogen bonding    | Strongest | Molecules with $\mathrm{N, O, F}$ bonded to H | $\mathrm{H_2O}$, $\mathrm{NH_3}$, $\mathrm{HF}$ |
 
 **London forces** increase with: more electrons (larger $A_r$), larger surface area (chain length).
 
 **Hydrogen bonds** are the strongest intermolecular force and explain:
+
 - High boiling point of water
 - The anomalous density of ice (open lattice)
 - Solubility of polar molecules
@@ -129,19 +138,19 @@ $\mathrm{H_2O}$ is polar; $\mathrm{CO_2}$ is non-polar despite polar bonds).
 
 $$\Delta H = H_{\text{products}} - H_{\text{reactants}}$$
 
-| Type                    | Definition                                                         |
-| ----------------------- | ----------------------------------------------------------------- |
-| Standard enthalpy of formation ($\Delta_f H^\ominus$) | Enthalpy change when 1 mol of compound forms from elements in standard states |
-| Standard enthalpy of combustion ($\Delta_c H^\ominus$) | Enthalpy change when 1 mol of substance burns completely in $\mathrm{O_2}$ |
-| Standard enthalpy of neutralisation | Enthalpy change per mole of water formed from acid–base reaction |
+| Type                                                   | Definition                                                                    |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| Standard enthalpy of formation ($\Delta_f H^\ominus$)  | Enthalpy change when 1 mol of compound forms from elements in standard states |
+| Standard enthalpy of combustion ($\Delta_c H^\ominus$) | Enthalpy change when 1 mol of substance burns completely in $\mathrm{O_2}$    |
+| Standard enthalpy of neutralisation                    | Enthalpy change per mole of water formed from acid–base reaction              |
 
-**Exothermic:** $\Delta H < 0$ (energy released to surroundings)
-**Endothermic:** $\Delta H > 0$ (energy absorbed from surroundings)
+**Exothermic:** $\Delta H < 0$ (energy released to surroundings) **Endothermic:** $\Delta H > 0$
+(energy absorbed from surroundings)
 
 ### Hess's Law
 
-The enthalpy change for a reaction is independent of the route taken — it depends only on initial and
-final states.
+The enthalpy change for a reaction is independent of the route taken — the answer varies by context
+only on initial and final states.
 
 $$\Delta H_{\text{reaction}} = \sum \Delta H_f^\ominus(\text{products}) - \sum \Delta H_f^\ominus(\text{reactants})$$
 
@@ -188,12 +197,13 @@ $$\text{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$$
 
 ### Initial Rates Method
 
-Measure initial rate at various concentrations. Plot $\ln(\text{rate})$ vs $\ln(\text{concentration})$ to find order (gradient = order).
+Measure initial rate at various concentrations. Plot $\ln(\text{rate})$ vs
+$\ln(\text{concentration})$ to find order (gradient = order).
 
 ### Rate-Determining Step
 
 The slowest step in a multi-step mechanism determines the overall rate. The reactants appearing in
-the rate equation are typically involved in or before the rate-determining step.
+the rate equation are in most cases involved in or before the rate-determining step.
 
 ### Arrhenius Equation
 
@@ -202,6 +212,7 @@ $$k = A e^{-E_a / RT}$$
 $$\ln k = \ln A - \frac{E_a}{RT}$$
 
 A plot of $\ln k$ vs $\frac{1}{T}$ gives a straight line:
+
 - **Gradient** = $-\frac{E_a}{R}$
 - **Y-intercept** = $\ln A$
 
@@ -220,12 +231,12 @@ A plot of $\ln k$ vs $\frac{1}{T}$ gives a straight line:
 
 If a system at equilibrium is subjected to a change, the equilibrium shifts to oppose that change.
 
-| Change              | Effect on Equilibrium                                    |
-| ------------------- | -------------------------------------------------------- |
-| Increase [reactant] | Shifts to products                                       |
-| Increase pressure   | Shifts to fewer moles of gas                             |
-| Increase temperature| Shifts endothermic direction                             |
-| Add catalyst        | No shift — speeds up both forward and reverse equally    |
+| Change               | Effect on Equilibrium                                 |
+| -------------------- | ----------------------------------------------------- |
+| Increase [reactant]  | Shifts to products                                    |
+| Increase pressure    | Shifts to fewer moles of gas                          |
+| Increase temperature | Shifts endothermic direction                          |
+| Add catalyst         | No shift — speeds up both forward and reverse equally |
 
 ### Equilibrium Constants
 
@@ -244,10 +255,10 @@ $$K_p = \frac{(p_{\mathrm{C}})^c(p_{\mathrm{D}})^d}{(p_{\mathrm{A}})^a(p_{\mathr
 
 ### Industrial Processes
 
-| Process       | Equation                                        | Conditions Chosen                         | Reason                                |
-| ------------- | ----------------------------------------------- | ----------------------------------------- | ------------------------------------- |
-| Haber         | $\mathrm{N_2 + 3H_2 \rightleftharpoons 2NH_3}$ | 450 °C, 200 atm, $\mathrm{Fe}$ catalyst  | Compromise: lower $T$ favoured, but too slow; high $P$ favoured but expensive |
-| Contact       | $\mathrm{2SO_2 + O_2 \rightleftharpoons 2SO_3}$ | 450 °C, 1–2 atm, $\mathrm{V_2O_5}$ catalyst | High $T$ for rate, moderate $P$ for cost |
+| Process | Equation                                        | Conditions Chosen                           | Reason                                                                        |
+| ------- | ----------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------- |
+| Haber   | $\mathrm{N_2 + 3H_2 \rightleftharpoons 2NH_3}$  | 450 °C, 200 atm, $\mathrm{Fe}$ catalyst     | Compromise: lower $T$ favoured, but too slow; high $P$ favoured but expensive |
+| Contact | $\mathrm{2SO_2 + O_2 \rightleftharpoons 2SO_3}$ | 450 °C, 1–2 atm, $\mathrm{V_2O_5}$ catalyst | High $T$ for rate, moderate $P$ for cost                                      |
 
 ---
 
@@ -262,7 +273,8 @@ $$\mathrm{pH} = -\log_{10}[\mathrm{H}^+]$$
 
 ### Strong vs Weak Acids
 
-- **Strong acids** fully dissociate ($\mathrm{HCl}$, $\mathrm{HNO_3}$, $\mathrm{H_2SO_4}$ first proton)
+- **Strong acids** fully dissociate ($\mathrm{HCl}$, $\mathrm{HNO_3}$, $\mathrm{H_2SO_4}$ first
+  proton)
 - **Weak acids** partially dissociate — equilibrium established
 
 ### Acid Dissociation Constant ($K_a$)
@@ -301,10 +313,11 @@ Choose an indicator whose range falls within the vertical section of the titrati
 ### Oxidation States
 
 Rules for assigning oxidation states:
+
 1. Elements in their standard state = 0
 2. Monatomic ions = their charge
-3. Oxygen usually = $-2$ (except in peroxides: $-1$)
-4. Hydrogen usually = $+1$ (except in metal hydrides: $-1$)
+3. Oxygen in most cases = $-2$ (except in peroxides: $-1$)
+4. Hydrogen in most cases = $+1$ (except in metal hydrides: $-1$)
 5. Sum of oxidation states in a neutral compound = 0
 
 ### Half-Equations
@@ -327,25 +340,25 @@ If $E^\ominus_{\text{cell}} > 0$, the reaction is feasible under standard condit
 
 - **Standard electrode potential** ($E^\ominus$): measured at 298 K, 100 kPa, 1 mol dm$^{-3}$
 - A more positive $E^\ominus$ indicates a greater tendency to be reduced
-- **Limitations:** $E^\ominus > 0$ is necessary but **not sufficient** for a reaction to occur (kinetics and
-  non-standard conditions also matter)
+- **Limitations:** $E^\ominus > 0$ is necessary but **not sufficient** for a reaction to occur
+  (kinetics and non-standard conditions also matter)
 
 ---
 
 ## 8. Key Equations Reference
 
-| Topic          | Equation                                                                 | Notes                                  |
-| -------------- | ------------------------------------------------------------------------ | -------------------------------------- |
-| Ionisation     | $\mathrm{pH} = -\log[\mathrm{H}^+]$                                     |                                        |
-| $K_a$          | $K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}$              |                                        |
-| Buffer         | $\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$| Henderson-Hasselbalch                  |
-| Arrhenius      | $k = Ae^{-E_a/RT}$                                                       |                                        |
-| Rate           | $\text{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$                            |                                        |
-| Equilibrium $K_c$ | $K_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}$ |                                      |
-| Equilibrium $K_p$ | $K_p = \frac{(p_C)^c(p_D)^d}{(p_A)^a(p_B)^b}$                          | Gas phase only                         |
-| Hess           | $\Delta H = \sum \Delta H_f(\text{products}) - \sum \Delta H_f(\text{reactants})$ |                            |
-| Calorimetry    | $q = mc\Delta T$                                                         |                                        |
-| Cell potential | $E^\ominus_{\text{cell}} = E^\ominus_{\text{red}} - E^\ominus_{\text{ox}}$ |                                      |
+| Topic             | Equation                                                                          | Notes                 |
+| ----------------- | --------------------------------------------------------------------------------- | --------------------- |
+| Ionisation        | $\mathrm{pH} = -\log[\mathrm{H}^+]$                                               |                       |
+| $K_a$             | $K_a = \frac{[\mathrm{H}^+][\mathrm{A}^-]}{[\mathrm{HA}]}$                        |                       |
+| Buffer            | $\mathrm{pH} = \mathrm{p}K_a + \log\frac{[\mathrm{A}^-]}{[\mathrm{HA}]}$          | Henderson-Hasselbalch |
+| Arrhenius         | $k = Ae^{-E_a/RT}$                                                                |                       |
+| Rate              | $\text{Rate} = k[\mathrm{A}]^m[\mathrm{B}]^n$                                     |                       |
+| Equilibrium $K_c$ | $K_c = \frac{[\mathrm{C}]^c[\mathrm{D}]^d}{[\mathrm{A}]^a[\mathrm{B}]^b}$         |                       |
+| Equilibrium $K_p$ | $K_p = \frac{(p_C)^c(p_D)^d}{(p_A)^a(p_B)^b}$                                     | Gas phase only        |
+| Hess              | $\Delta H = \sum \Delta H_f(\text{products}) - \sum \Delta H_f(\text{reactants})$ |                       |
+| Calorimetry       | $q = mc\Delta T$                                                                  |                       |
+| Cell potential    | $E^\ominus_{\text{cell}} = E^\ominus_{\text{red}} - E^\ominus_{\text{ox}}$        |                       |
 
 ---
 
@@ -362,14 +375,14 @@ If $E^\ominus_{\text{cell}} > 0$, the reaction is feasible under standard condit
 
 4. **Forgetting units for $K_c$ and $k$.** Always calculate and include units.
 
-5. **Misapplying Le Chatelier's principle to catalysts.** A catalyst has no effect on the
-   position of equilibrium — only the rate at which equilibrium is reached.
+5. **Misapplying Le Chatelier's principle to catalysts.** A catalyst has no effect on the position
+   of equilibrium — only the rate at which equilibrium is reached.
 
-6. **Balancing half-equations incorrectly.** Always balance atoms first, then charges, using electrons.
-   Multiply to equalise electrons before combining.
+6. **Balancing half-equations incorrectly.** Always balance atoms first, then charges, using
+   electrons. Multiply to equalise electrons before combining.
 
-7. **Using $\Delta H_f^\ominus$ for elements.** By definition, the standard enthalpy of formation
-   of an element in its standard state is zero.
+7. **Using $\Delta H_f^\ominus$ for elements.** By definition, the standard enthalpy of formation of
+   an element in its standard state is zero.
 
 ---
 
@@ -386,5 +399,15 @@ Physical chemistry underpins all other branches of chemistry. The key themes are
 - **Redox** links to electrochemistry and energy transfer
 
 Mastery requires connecting these concepts: for example, understanding how a catalyst affects both
-kinetics and equilibrium arguments, or how Le Chatelier's principle relates quantitatively to changes
-in $K_c$.
+kinetics and equilibrium arguments, or how Le Chatelier's principle relates quantitatively to
+changes in $K_c$.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

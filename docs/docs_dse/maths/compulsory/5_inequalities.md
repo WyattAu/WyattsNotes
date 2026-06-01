@@ -1,6 +1,8 @@
 ---
 title: Inequalities
-description: 'DSE Maths Inequalities notes covering key definitions, core concepts, worked examples, and practice questions for clear revision and examination preparation.'
+description:
+  'DSE Maths Inequalities notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear revision and examination preparation.'
 date: 2025-06-03T16:21:00.000Z
 tags:
   - Maths
@@ -483,7 +485,8 @@ Since $a = 1 > 0$The parabola opens upward. The expression is positive outside t
 
 Solution: $k < -2$ or $k > 3$I.e., $(-\infty, -2) \cup (3, \infty)$.
 
-7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$, $|x - 2| \leq 3$And $x > 0$.
+7. **Question:** Solve the system of inequalities $x^2 - 5x + 4 \leq 0$, $|x - 2| \leq 3$And
+$x > 0$.
 </details>
 <summary>Answer</summary>
 From $x^2 - 5x + 4 \leq 0$: $(x-1)(x-4) \leq 0 \implies 1 \leq x \leq 4$.
@@ -896,3 +899,9 @@ requires using previous work.
 4. Forgetting to check that solutions satisfy the original equation (especially with squaring both
    sides or dividing by variables).
    > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/inequalities.md
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

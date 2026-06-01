@@ -1,6 +1,8 @@
 ---
 title: Thread Execution (std::jthread) and Hardware Mapping
-description: 'C++ Programming Thread Execution (std::jthread) and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Thread Execution (std::jthread) and notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -572,3 +574,8 @@ This topic covers the key events, causes, and consequences related to thread exe
 
 The ability to construct well-supported, analytical arguments using a range of evidence is key to
 success in history.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

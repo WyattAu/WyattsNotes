@@ -1,6 +1,8 @@
 ---
 title: Momentum
-description: 'A-Level Maths Momentum notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
+description:
+  'A-Level Maths Momentum notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -97,8 +99,8 @@ $$J = \int_{t_1}^{t_2}F(t)\,dt$$
 
 ### 4.1 Direct collisions
 
-For a one-dimensional collision between masses $m_1$ and $m_2$ with velocities $u_1$, $u_2$ before And
-$v_1$, $v_2$ after:
+For a one-dimensional collision between masses $m_1$ and $m_2$ with velocities $u_1$, $u_2$ before
+And $v_1$, $v_2$ after:
 
 $$m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$$
 
@@ -275,10 +277,11 @@ $3(1.5) + 2(-3\sin\theta) = 0 \implies 4.5 = 6\sin\theta \implies \sin\theta = 0
 $\theta \approx 48.6^\circ$.
 
 The slight discrepancy arises from rounding $1.5\sqrt{3}$. Using exact values:
-$1.5\sqrt{3} = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $12 - 4.5\sqrt{3} = 12 - \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$.
-From $y$: $\sin\theta = 0.75$, $\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From
-$x$: $\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated
-speeds Are not exactly consistent with momentum conservation — a useful check in exam problems.
+$1.5\sqrt{3} = \frac◆LB◆3\sqrt{3}◆RB◆◆LB◆2◆RB◆$,
+$12 - 4.5\sqrt{3} = 12 - \frac◆LB◆9\sqrt{3}◆RB◆◆LB◆2◆RB◆$. From $y$: $\sin\theta = 0.75$,
+$\cos\theta = \sqrt{1 - 0.5625} = \sqrt{0.4375} \approx 0.6614$. From $x$:
+$\cos\theta = (12 - 4.5\sqrt{3})/6 \approx 0.701$. These are not equal, indicating the stated speeds
+Are not exactly consistent with momentum conservation — a useful check in exam problems.
 
 <hr />
 
@@ -318,8 +321,8 @@ direction of each sphere after collision.
 
 **Before collision:**
 
-- $A$:
-  $u_{A,\parallel} = 5\cos 30° = \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$, $u_{A,\perp} = 5\sin 30° = 2.5$
+- $A$: $u_{A,\parallel} = 5\cos 30° = \frac◆LB◆5\sqrt{3}◆RB◆◆LB◆2◆RB◆$,
+  $u_{A,\perp} = 5\sin 30° = 2.5$
 - $B$: $u_{B,\parallel} = 0$, $u_{B,\perp} = 0$
 
 **After collision (perpendicular unchanged):**
@@ -634,7 +637,8 @@ if $v_2 \gt v_1$. This gives $e \lt 0$ which isn't physical.
 
 Let me re-examine. With original convention (positive = direction of $m$ body before collision):
 
-$u_1 = u$, $u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt 0$ $v_2 \lt 0$.
+$u_1 = u$, $u_2 = -2u$. Both after: move in direction of $u_2$ initially, so $v_1 \lt 0$
+$v_2 \lt 0$.
 
 $v_1 + 2v_2 = -3u$. $e = \dfrac{v_2 - v_1}{u - (-2u)} = \dfrac{v_2 - v_1}{3u}$.
 
@@ -913,3 +917,14 @@ building a personal test matrix. :::
 
 4. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
    first.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

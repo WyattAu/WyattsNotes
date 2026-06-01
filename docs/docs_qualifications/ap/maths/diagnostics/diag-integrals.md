@@ -1,6 +1,8 @@
 ---
 title: 'Integrals -- Diagnostic Tests'
-description: 'Qualifications Maths Integrals -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
+description:
+  'Qualifications Maths Integrals -- Diagnostic Tests notes covering key definitions, core concepts,
+  worked examples, and practice questions for detailed revision.'
 date: 2026-04-14
 tags:
   - ap
@@ -237,8 +239,8 @@ By comparison with $\displaystyle\int_0^1 x^{p-1}\,dx$ (converges iff $p - 1 > -
 
 The first integral converges iff $p > 0$.
 
-**As $x \to \infty$** (second integral): When
-$x > 1$, $\frac{1}{2} \lt \frac{1}{1+x} \lt \frac{1}{x}$So:
+**As $x \to \infty$** (second integral): When $x > 1$,
+$\frac{1}{2} \lt \frac{1}{1+x} \lt \frac{1}{x}$So:
 
 $$\frac{x^{p-1}}{2} \lt \frac{x^{p-1}}{1+x} \lt x^{p-2}$$
 
@@ -299,5 +301,21 @@ Since $4 = 4$, $F$ **is differentiable** at $x = 2$With $F'(2) = 4 = f(2)$.
 
 (c) The student is **incorrect**. Although $f$ has a corner at $x = 2$ ($f$ changes from slope $+2$
 to slope $-2$), $f$ is continuous at $x = 2$ ($f(2^-) = 4 = f(2^+)$). By FTC part 1, since $f$ is
-continuous at $x = 2$, $F$ is differentiable at $x = 2$ with $F'(2) = f(2) = 4$. Integration "smooths"
-the corner: $F$ is continuously differentiable even though $f$ is not.
+continuous at $x = 2$, $F$ is differentiable at $x = 2$ with $F'(2) = f(2) = 4$. Integration
+"smooths" the corner: $F$ is continuously differentiable even though $f$ is not.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

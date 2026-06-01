@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Security
-description: 'Introduction to Security notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and thorough revision.'
+description:
+  'Introduction to Security notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted study and thorough revision.'
 slug: intro
 sidebar_position: 1
 ---
@@ -91,3 +93,19 @@ Administration. The focus is on understanding how security controls work at the 
 And why they fail when they do.
 
 :::
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

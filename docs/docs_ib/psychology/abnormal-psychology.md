@@ -55,7 +55,7 @@ attention to cultural variation in symptom expression and help-seeking behaviour
 
 ## Exam Focus
 
-Paper 2 questions on abnormal psychology typically require:
+Paper 2 questions on abnormal psychology in most cases require:
 
 - Explaining one or more disorders using at least two levels of analysis (biological, cognitive,
   sociocultural).
@@ -95,7 +95,8 @@ culture-specific concepts, but the problem persists.
   physiological causes; cognitive treatments (CBT, cognitive restructuring) target thought patterns.
   Ensure the treatment matches the explanation.
 - **Listing studies without evaluation:** When citing a study (e.g., Gottesman, Beck), always
-  evaluate its methodology, sample, and generalisability rather than simply describing its findings.
+  evaluate its methodology, sample, and generalisability rather than directly describing its
+  findings.
 - **Not addressing comorbidity:** Many disorders co-occur (e.g., depression and anxiety). Discussing
   comorbidity shows deeper understanding of abnormal psychology.
 

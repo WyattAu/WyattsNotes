@@ -1,6 +1,8 @@
 ---
 title: AP Physics
-description: 'Qualifications AP Physics notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and revision.'
+description:
+  'Qualifications AP Physics notes covering key definitions, core concepts, worked examples, and
+  practice questions for efficient exam preparation and revision.'
 date: 2026-04-14
 tags:
   - ap
@@ -66,3 +68,19 @@ to prepare you for both the multiple-choice and free-response sections.
   often the hardest step
 - Review vector operations (cross product, dot product) frequently as they are fundamental to both
   mechanics and electromagnetism
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

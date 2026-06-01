@@ -1,6 +1,8 @@
 ---
 title: Basic Economic Concepts
-description: 'DSE Economics Basic Economic Concepts notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'DSE Economics Basic Economic Concepts notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]
@@ -1458,7 +1460,6 @@ including key models, evidence, and policy implications.
 
 **Key concepts include:**
 
-
 - economic models and theories
 - data analysis and interpretation
 - policy evaluation
@@ -1469,3 +1470,8 @@ The ability to apply these theories to real-world data and evaluate policy decis
 success in this subject.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/basic-economic-concepts.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

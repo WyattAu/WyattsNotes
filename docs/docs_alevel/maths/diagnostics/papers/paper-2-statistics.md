@@ -1,6 +1,8 @@
 ---
 title: 'Paper 2 -- Statistics -- Full Diagnostic Exam'
-description: 'A-Level Maths Paper 2 -- Statistics -- Full Diagnostic Exam notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Maths Paper 2 -- Statistics -- Full Diagnostic Exam notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 slug: diag-paper-2-statistics
 hide_table_of_contents: true
 ---
@@ -449,3 +451,19 @@ statistically significant result.
 | Q4        | Statistical Distributions  |     10 | Binomial conditions, distribution identification, independence and fixed trials         |
 | Q5        | Hypothesis Testing         |     10 | P-value calculation, correct conclusion language, Type I/II errors, sample size effects |
 | **Total** |                            | **50** |                                                                                         |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

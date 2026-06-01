@@ -1,6 +1,8 @@
 ---
 title: Sequences and Series
-description: 'A-Level Maths Sequences and Series notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'A-Level Maths Sequences and Series notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -206,7 +208,8 @@ $$
 $$
 
 _Proof of $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$._ This is the arithmetic series with $a = 1$
-$d = 1$, $n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)}{2}$. $\blacksquare$
+$d = 1$, $n$ terms. By the formula: $S_n = \frac{n}{2}(2 + (n-1)) = \frac{n(n+1)}{2}$.
+$\blacksquare$
 
 <hr />
 
@@ -842,3 +845,14 @@ building a personal test matrix. :::
 
 4. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
    conditions in definite integrals.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

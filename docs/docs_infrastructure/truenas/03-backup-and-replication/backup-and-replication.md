@@ -1,7 +1,9 @@
 ---
 id: backup-and-replication
 title: Backup and Replication
-description: 'Backup and Replication notes covering key definitions, core concepts, worked examples, and practice questions for focused study and examination practice.'
+description:
+  'Backup and Replication notes covering key definitions, core concepts, worked examples, and
+  practice questions for focused study and examination practice.'
 slug: backup-and-replication
 ---
 
@@ -1066,3 +1068,8 @@ key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

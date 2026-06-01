@@ -1,6 +1,8 @@
 ---
 title: Special Member Function Generation Rules
-description: 'C++ Programming Special Member Function Generation Rules notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Special Member Function Generation Rules notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -673,3 +675,8 @@ generation rules, including key theorems, methods, and problem-solving approache
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

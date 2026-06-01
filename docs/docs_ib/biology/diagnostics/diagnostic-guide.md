@@ -1,6 +1,8 @@
 ---
 title: 'IB Biology -- Diagnostic Guide'
-description: 'IB Biology -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for structured study and thorough revision.'
+description:
+  'IB Biology -- Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for structured study and thorough revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -9,14 +11,14 @@ hide_table_of_contents: true
 
 ## Coverage Map
 
-| Diagnostic File             | Topics Covered                                                                           | Source Files           |
-| --------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- |
-| `diag-cell-biology.md`      | Cell theory, prokaryotic vs eukaryotic, organelles, membrane transport, cell division    | `1-cell-biology/1_cell-biology.md`      |
+| Diagnostic File             | Topics Covered                                                                           | Source Files                                 |
+| --------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------- |
+| `diag-cell-biology.md`      | Cell theory, prokaryotic vs eukaryotic, organelles, membrane transport, cell division    | `1-cell-biology/1_cell-biology.md`           |
 | `diag-molecular-biology.md` | DNA replication, transcription, translation, PCR, enzyme function, gene expression       | `2-molecular-biology/1_molecular-biology.md` |
-| `diag-genetics.md`          | Monohybrid/dihybrid crosses, chi-squared, sex linkage, Hardy-Weinberg, pedigree analysis | `3-genetics/1_genetics.md`          |
-| `diag-ecology.md`           | Energy flow, carbon/nitrogen cycles, population growth, biodiversity, conservation       | `4-ecology/1_ecology.md`           |
-| `diag-human-physiology.md`  | Action potentials, synapses, hormones, kidney function, immune system, gas exchange      | `6-human-physiology/1_human-physiology.md`  |
-| `diag-plant-biology.md`     | Photosynthesis, transpiration, mineral transport, plant hormones, reproduction           | `7-plant-biology/1_plant-biology.md`     |
+| `diag-genetics.md`          | Monohybrid/dihybrid crosses, chi-squared, sex linkage, Hardy-Weinberg, pedigree analysis | `3-genetics/1_genetics.md`                   |
+| `diag-ecology.md`           | Energy flow, carbon/nitrogen cycles, population growth, biodiversity, conservation       | `4-ecology/1_ecology.md`                     |
+| `diag-human-physiology.md`  | Action potentials, synapses, hormones, kidney function, immune system, gas exchange      | `6-human-physiology/1_human-physiology.md`   |
+| `diag-plant-biology.md`     | Photosynthesis, transpiration, mineral transport, plant hormones, reproduction           | `7-plant-biology/1_plant-biology.md`         |
 
 ## Grading Rubric
 
@@ -93,3 +95,19 @@ Human Physiology (largely independent)
    apply knowledge across topics, which is what IB exams require.
 6. Pay particular attention to the quantitative aspects (calculations, statistical tests) as these
    are frequently tested and easy marks when done correctly.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

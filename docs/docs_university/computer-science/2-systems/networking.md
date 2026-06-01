@@ -1,6 +1,8 @@
 ---
 title: Networking
-description: 'University Computer Science Networking notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'University Computer Science Networking notes covering key definitions, core concepts, worked
+  examples, and practice questions for efficient revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -14,24 +16,24 @@ slug: networking
 
 ### 1.1 OSI Model (7 Layers)
 
-| Layer | Name               | Function                          | Examples                    |
-| ----- | ------------------ | --------------------------------- | --------------------------- |
-| 7     | Application        | User interface, application logic | HTTP, DNS, SMTP, FTP        |
-| 6     | Presentation       | Data formatting, encryption       | TLS/SSL, JPEG, ASCII        |
-| 5     | Session            | Dialog control, synchronization   | NetBIOS, RPC                |
-| 4     | Transport          | End-to-end reliability            | TCP, UDP                    |
-| 3     | Network            | Routing, logical addressing        | IP, ICMP, OSPF, BGP         |
-| 2     | Data Link          | Framing, error detection          | Ethernet, Wi-Fi, PPP        |
-| 1     | Physical           | Bit transmission over medium      | Cables, fiber, radio waves  |
+| Layer | Name         | Function                          | Examples                   |
+| ----- | ------------ | --------------------------------- | -------------------------- |
+| 7     | Application  | User interface, application logic | HTTP, DNS, SMTP, FTP       |
+| 6     | Presentation | Data formatting, encryption       | TLS/SSL, JPEG, ASCII       |
+| 5     | Session      | Dialog control, synchronization   | NetBIOS, RPC               |
+| 4     | Transport    | End-to-end reliability            | TCP, UDP                   |
+| 3     | Network      | Routing, logical addressing       | IP, ICMP, OSPF, BGP        |
+| 2     | Data Link    | Framing, error detection          | Ethernet, Wi-Fi, PPP       |
+| 1     | Physical     | Bit transmission over medium      | Cables, fiber, radio waves |
 
 ### 1.2 TCP/IP Model (4 Layers)
 
-| TCP/IP Layer | OSI Layers        | Protocols                    |
-| ------------ | ----------------- | ---------------------------- |
-| Application  | 5, 6, 7           | HTTP, DNS, SMTP, FTP, TLS    |
-| Transport    | 4                 | TCP, UDP                     |
-| Internet     | 3                 | IP, ICMP, ARP                |
-| Network Access | 1, 2            | Ethernet, Wi-Fi, MAC        |
+| TCP/IP Layer   | OSI Layers | Protocols                 |
+| -------------- | ---------- | ------------------------- |
+| Application    | 5, 6, 7    | HTTP, DNS, SMTP, FTP, TLS |
+| Transport      | 4          | TCP, UDP                  |
+| Internet       | 3          | IP, ICMP, ARP             |
+| Network Access | 1, 2       | Ethernet, Wi-Fi, MAC      |
 
 ### 1.3 Encapsulation
 
@@ -54,13 +56,13 @@ Application data
 
 **Encoding schemes:**
 
-| Scheme         | Description                                     |
-| -------------- | ----------------------------------------------- |
-| NRZ-L          | High = 0, Low = 1 (or vice versa)              |
-| NRZ-I          | Transition at 1, no transition at 0            |
-| Manchester     | Transition at midpoint: low→high = 1, high→low = 0 |
+| Scheme                  | Description                                                |
+| ----------------------- | ---------------------------------------------------------- |
+| NRZ-L                   | High = 0, Low = 1 (or vice versa)                          |
+| NRZ-I                   | Transition at 1, no transition at 0                        |
+| Manchester              | Transition at midpoint: low→high = 1, high→low = 0         |
 | Differential Manchester | Transition at start of each bit; no mid-bit transition = 1 |
-| 4B/5B          | 4 data bits encoded as 5 bits (80% efficiency)  |
+| 4B/5B                   | 4 data bits encoded as 5 bits (80% efficiency)             |
 
 ### 2.2 Bandwidth and Data Rate
 
@@ -74,26 +76,31 @@ where $B$ = bandwidth (Hz), $V$ = signal levels.
 
 $$C = B \log_2(1 + \text{SNR})$$
 
-where SNR = signal-to-noise ratio (power ratio). If $\text{SNR}_{\text{dB}} = 30$, then $\text{SNR} = 10^{30/10} = 1000$.
+where SNR = signal-to-noise ratio (power ratio). If $\text{SNR}_{\text{dB}} = 30$, then
+$\text{SNR} = 10^{30/10} = 1000$.
 
 ### 2.3 Multiplexing
 
-**FDM (Frequency-Division Multiplexing):** Divide bandwidth into frequency bands, each carrying a separate signal.
+**FDM (Frequency-Division Multiplexing):** Divide bandwidth into frequency bands, each carrying a
+separate signal.
 
-**TDM (Time-Division Multiplexing):** Divide time into slots, each carrying data from a different source.
+**TDM (Time-Division Multiplexing):** Divide time into slots, each carrying data from a different
+source.
 
-**WDM (Wavelength-Division Multiplexing):** FDM over fiber optics using different wavelengths (colors) of light.
+**WDM (Wavelength-Division Multiplexing):** FDM over fiber optics using different wavelengths
+(colors) of light.
 
-**Statistical TDM:** Dynamically allocate time slots based on demand (more efficient than synchronous TDM).
+**Statistical TDM:** Dynamically allocate time slots based on demand (more efficient than
+synchronous TDM).
 
 ### 2.4 Transmission Media
 
-| Medium           | Bandwidth        | Distance         | Use              |
-| ---------------- | ---------------- | ---------------- | ---------------- |
-| Twisted pair     | Up to 1 Gbps     | Up to 100m       | LAN (Cat 5e/6/7) |
-| Coaxial cable    | Up to 10 Gbps    | Up to 500m       | Cable TV         |
-| Fiber optic      | Up to 100 Tbps   | Up to 100km      | Backbone, WAN    |
-| Radio (Wi-Fi)    | Up to 9.6 Gbps   | Up to 100m       | WLAN             |
+| Medium        | Bandwidth      | Distance    | Use              |
+| ------------- | -------------- | ----------- | ---------------- |
+| Twisted pair  | Up to 1 Gbps   | Up to 100m  | LAN (Cat 5e/6/7) |
+| Coaxial cable | Up to 10 Gbps  | Up to 500m  | Cable TV         |
+| Fiber optic   | Up to 100 Tbps | Up to 100km | Backbone, WAN    |
+| Radio (Wi-Fi) | Up to 9.6 Gbps | Up to 100m  | WLAN             |
 
 ## 3. Data Link Layer
 
@@ -126,7 +133,8 @@ BIT_STUFF(data):
 
 ### 3.2 Error Detection
 
-**Parity check:** Add 1 bit so total 1s is even (even parity) or odd (odd parity). Detects single-bit errors.
+**Parity check:** Add 1 bit so total 1s is even (even parity) or odd (odd parity). Detects
+single-bit errors.
 
 **Checksum:** Sum all 16-bit words, take 1's complement. Used in TCP, UDP, IP.
 
@@ -140,7 +148,8 @@ Given message $M(x)$ and generator polynomial $G(x)$:
 4. Transmit $M(x) \cdot x^r + R(x)$.
 5. Receiver divides by $G(x)$; zero remainder = no error.
 
-**Detection capability:** Detects all single-bit errors, all double-bit errors, all odd-number errors, and any burst of length $\leq r$.
+**Detection capability:** Detects all single-bit errors, all double-bit errors, all odd-number
+errors, and any burst of length $\leq r$.
 
 ### 3.3 Error Correction
 
@@ -156,11 +165,14 @@ For $m$ data bits, use $r$ parity bits where $2^r \geq m + r + 1$.
 
 ### 3.4 MAC Protocols
 
-**ALOHA:** Transmit anytime. If collision, wait random time and retransmit. Throughput: $\sim 18.4\%$.
+**ALOHA:** Transmit anytime. If collision, wait random time and retransmit. Throughput:
+$\sim 18.4\%$.
 
-**Slotted ALOHA:** Time divided into slots. Transmit only at slot boundaries. Throughput: $\sim 36.8\%$.
+**Slotted ALOHA:** Time divided into slots. Transmit only at slot boundaries. Throughput:
+$\sim 36.8\%$.
 
 **CSMA/CD (Carrier Sense Multiple Access with Collision Detection):**
+
 1. Sense channel: idle → transmit; busy → wait.
 2. While transmitting, detect collisions.
 3. On collision: send jam signal, wait (binary exponential backoff), retry.
@@ -169,7 +181,8 @@ $$\text{Backoff time} = \text{rand}(0, 2^k - 1) \times \text{slot time}$$
 
 where $k = \min(\text{retries}, 10)$. Used in Ethernet (IEEE 802.3).
 
-**CSMA/CA (Collision Avoidance):** Used in Wi-Fi (802.11). Uses RTS/CTS handshake to reserve the channel before transmitting.
+**CSMA/CA (Collision Avoidance):** Used in Wi-Fi (802.11). Uses RTS/CTS handshake to reserve the
+channel before transmitting.
 
 ```
 CSMA_CA(sender, receiver):
@@ -189,17 +202,18 @@ CSMA_CA(sender, receiver):
 
 **IPv4 address:** 32 bits, written as 4 octets (e.g., 192.168.1.1).
 
-**IPv6 address:** 128 bits, written as 8 groups of 4 hex digits (e.g., 2001:0db8:85a3::8a2e:0370:7334).
+**IPv6 address:** 128 bits, written as 8 groups of 4 hex digits (e.g.,
+2001:0db8:85a3::8a2e:0370:7334).
 
 **IPv4 address classes:**
 
-| Class | Range              | Default Subnet | Max Hosts         |
-| ----- | ------------------ | -------------- | ----------------- |
-| A     | 0.0.0.0 – 127.255.255.255 | /8   | $2^{24} - 2$      |
-| B     | 128.0.0.0 – 191.255.255.255 | /16 | $2^{16} - 2$      |
-| C     | 192.0.0.0 – 223.255.255.255 | /24 | $2^8 - 2$        |
-| D     | 224.0.0.0 – 239.255.255.255 | Multicast |
-| E     | 240.0.0.0 – 255.255.255.255 | Reserved |
+| Class | Range                       | Default Subnet | Max Hosts    |
+| ----- | --------------------------- | -------------- | ------------ |
+| A     | 0.0.0.0 – 127.255.255.255   | /8             | $2^{24} - 2$ |
+| B     | 128.0.0.0 – 191.255.255.255 | /16            | $2^{16} - 2$ |
+| C     | 192.0.0.0 – 223.255.255.255 | /24            | $2^8 - 2$    |
+| D     | 224.0.0.0 – 239.255.255.255 | Multicast      |
+| E     | 240.0.0.0 – 255.255.255.255 | Reserved       |
 
 ### 4.2 Subnetting and CIDR
 
@@ -232,6 +246,7 @@ Translates private IP addresses to a public IP address for Internet access:
 $$\text{Private: } (10.0.0.0/8, \ 172.16.0.0/12, \ 192.168.0.0/16)$$
 
 **NAT types:**
+
 - **Static NAT:** One-to-one mapping.
 - **Dynamic NAT:** Pool of public IPs, assigned on demand.
 - **PAT (NAT overload):** Maps multiple private IPs to one public IP using port numbers.
@@ -239,6 +254,7 @@ $$\text{Private: } (10.0.0.0/8, \ 172.16.0.0/12, \ 192.168.0.0/16)$$
 ### 4.4 Routing Protocols
 
 **RIP (Routing Information Protocol):**
+
 - Distance-vector protocol. Uses **Bellman-Ford** algorithm.
 - Metric: **hop count** (max 15 hops).
 - Sends entire routing table every 30 seconds.
@@ -258,22 +274,24 @@ RIP_UPDATE(router):
 ```
 
 **OSPF (Open Shortest Path First):**
+
 - Link-state protocol. Uses **Dijkstra's** algorithm.
 - Each router has a complete map of the network topology.
 - Floods LSA (Link State Advertisements) on topology changes.
 - Fast convergence. Supports areas for scalability.
 
 **BGP (Border Gateway Protocol):**
+
 - Path-vector protocol. Used for **inter-AS (autonomous system)** routing.
 - Exchanges reachability information between ASes.
 - Policy-based routing (economic, political considerations).
 - **eBGP** (between ASes) and **iBGP** (within an AS).
 
-| Protocol | Type            | Algorithm      | Metric        | Scope     | Convergence |
-| -------- | --------------- | -------------- | ------------- | --------- | ----------- |
-| RIP      | Distance-vector | Bellman-Ford   | Hop count     | AS        | Slow        |
-| OSPF     | Link-state      | Dijkstra       | Cost (custom) | Area/AS   | Fast        |
-| BGP      | Path-vector     | Policy-based   | AS path       | Internet  | Varies      |
+| Protocol | Type            | Algorithm    | Metric        | Scope    | Convergence |
+| -------- | --------------- | ------------ | ------------- | -------- | ----------- |
+| RIP      | Distance-vector | Bellman-Ford | Hop count     | AS       | Slow        |
+| OSPF     | Link-state      | Dijkstra     | Cost (custom) | Area/AS  | Fast        |
+| BGP      | Path-vector     | Policy-based | AS path       | Internet | Varies      |
 
 ## 5. Transport Layer
 
@@ -295,7 +313,8 @@ RIP_UPDATE(router):
 - **Flow controlled:** Receiver controls sender's rate.
 - **Congestion controlled:** Sender adjusts to network conditions.
 
-**TCP header:** 20 bytes minimum (src port, dst port, seq number, ack number, flags, window, checksum, urgent pointer, options).
+**TCP header:** 20 bytes minimum (src port, dst port, seq number, ack number, flags, window,
+checksum, urgent pointer, options).
 
 ### 5.3 TCP Three-Way Handshake
 
@@ -314,13 +333,13 @@ Client                              Server
 
 **Acknowledgments:** Cumulative; ACK $n$ means all bytes up to $n-1$ received.
 
-**Retransmission:** On timeout (RTO = estimated RTT + 4 * RTT deviation):
+**Retransmission:** On timeout (RTO = estimated RTT + 4 \* RTT deviation):
 
 $$\text{EstimatedRTT} = (1-\alpha) \cdot \text{EstimatedRTT} + \alpha \cdot \text{SampleRTT}$$
 
 $$\text{DevRTT} = (1-\beta) \cdot \text{DevRTT} + \beta \cdot |\text{SampleRTT} - \text{EstimatedRTT}|$$
 
-Typically $\alpha = 0.125$, $\beta = 0.25$.
+In most cases $\alpha = 0.125$, $\beta = 0.25$.
 
 **Fast retransmit:** 3 duplicate ACKs trigger immediate retransmission without waiting for timeout.
 
@@ -339,7 +358,8 @@ Receiver maintains:
 ```
 
 - **Zero window probe:** When window is 0, sender sends probes to detect when window opens.
-- **Silly Window Syndrome:** Avoided by Nagle's algorithm (sender buffers small segments) and Clark's solution (receiver doesn't advertise small windows).
+- **Silly Window Syndrome:** Avoided by Nagle's algorithm (sender buffers small segments) and
+  Clark's solution (receiver doesn't advertise small windows).
 
 ### 5.6 TCP Congestion Control
 
@@ -367,12 +387,12 @@ TCP_SLOW_START():
 
 **Phases:**
 
-| Phase              | cwnd Growth    | Trigger                   |
-| ------------------ | -------------- | ------------------------- |
-| Slow start         | Exponential    | Connection start, timeout |
-| Congestion avoidance | Linear       | cwnd ≥ ssthresh           |
-| Fast recovery      | —              | 3 duplicate ACKs          |
-| Timeout (RTO)      | Reset to 1 MSS | Timeout                   |
+| Phase                | cwnd Growth    | Trigger                   |
+| -------------------- | -------------- | ------------------------- |
+| Slow start           | Exponential    | Connection start, timeout |
+| Congestion avoidance | Linear         | cwnd ≥ ssthresh           |
+| Fast recovery        | —              | 3 duplicate ACKs          |
+| Timeout (RTO)        | Reset to 1 MSS | Timeout                   |
 
 ## 6. Application Layer
 
@@ -380,16 +400,17 @@ TCP_SLOW_START():
 
 **Request methods:**
 
-| Method   | Purpose              | Idempotent | Has body |
-| -------- | -------------------- | ---------- | -------- |
-| GET      | Retrieve resource    | Yes        | No       |
-| POST     | Create/submit data    | No         | Yes      |
-| PUT      | Replace resource     | Yes        | Yes      |
-| DELETE   | Remove resource       | Yes        | No       |
-| PATCH    | Partial update       | No         | Yes      |
-| HEAD     | Get headers only     | Yes        | No       |
+| Method | Purpose            | Idempotent | Has body |
+| ------ | ------------------ | ---------- | -------- |
+| GET    | Retrieve resource  | Yes        | No       |
+| POST   | Create/submit data | No         | Yes      |
+| PUT    | Replace resource   | Yes        | Yes      |
+| DELETE | Remove resource    | Yes        | No       |
+| PATCH  | Partial update     | No         | Yes      |
+| HEAD   | Get headers only   | Yes        | No       |
 
 **Status codes:**
+
 - **2xx:** Success (200 OK, 201 Created)
 - **3xx:** Redirection (301 Moved Permanently, 304 Not Modified)
 - **4xx:** Client error (400 Bad Request, 401 Unauthorized, 404 Not Found)
@@ -397,12 +418,12 @@ TCP_SLOW_START():
 
 **HTTP/1.1 vs HTTP/2 vs HTTP/3:**
 
-| Feature       | HTTP/1.1       | HTTP/2         | HTTP/3           |
-| ------------- | -------------- | -------------- | ---------------- |
-| Transport     | TCP            | TCP            | QUIC (UDP)       |
-| Connections   | 1 per domain   | Multiplexed    | Multiplexed      |
-| Header format | Text           | HPACK compressed | QPACK          |
-| Ordering      | HOL blocking   | HOL on TCP     | No HOL           |
+| Feature       | HTTP/1.1     | HTTP/2           | HTTP/3      |
+| ------------- | ------------ | ---------------- | ----------- |
+| Transport     | TCP          | TCP              | QUIC (UDP)  |
+| Connections   | 1 per domain | Multiplexed      | Multiplexed |
+| Header format | Text         | HPACK compressed | QPACK       |
+| Ordering      | HOL blocking | HOL on TCP       | No HOL      |
 
 ### 6.2 DNS (Domain Name System)
 
@@ -410,14 +431,14 @@ Hierarchical, distributed database mapping domain names to IP addresses.
 
 **Record types:**
 
-| Type  | Purpose                          |
-| ----- | -------------------------------- |
-| A     | IPv4 address                     |
-| AAAA  | IPv6 address                     |
-| CNAME | Canonical name (alias)           |
-| MX    | Mail exchange server             |
-| NS    | Authoritative name server        |
-| TXT   | Text data                        |
+| Type  | Purpose                   |
+| ----- | ------------------------- |
+| A     | IPv4 address              |
+| AAAA  | IPv6 address              |
+| CNAME | Canonical name (alias)    |
+| MX    | Mail exchange server      |
+| NS    | Authoritative name server |
+| TXT   | Text data                 |
 
 **Resolution process:**
 
@@ -454,55 +475,80 @@ QUIT                // Close
 
 ### 6.4 Other Application Protocols
 
-| Protocol | Port | Purpose                    |
-| -------- | ---- | -------------------------- |
+| Protocol | Port  | Purpose                      |
+| -------- | ----- | ---------------------------- |
 | FTP      | 20/21 | File transfer (control/data) |
-| SSH      | 22   | Secure shell              |
-| DHCP     | 67/68| Auto IP configuration      |
-| IMAP     | 143  | Email access (server-side) |
-| POP3     | 110  | Email download            |
-| HTTPS    | 443  | HTTP over TLS             |
-| DNS      | 53   | Name resolution            |
+| SSH      | 22    | Secure shell                 |
+| DHCP     | 67/68 | Auto IP configuration        |
+| IMAP     | 143   | Email access (server-side)   |
+| POP3     | 110   | Email download               |
+| HTTPS    | 443   | HTTP over TLS                |
+| DNS      | 53    | Name resolution              |
 
 ## 7. Common Pitfalls
 
-1. **Confusing TCP and UDP use cases.** TCP adds overhead for reliability, flow control, and congestion control. Use UDP for low-latency applications where occasional packet loss is acceptable (gaming, streaming, DNS).
+1. **Confusing TCP and UDP use cases.** TCP adds overhead for reliability, flow control, and
+   congestion control. Use UDP for low-latency applications where occasional packet loss is
+   acceptable (gaming, streaming, DNS).
 
-2. **Forgetting the TCP three-way handshake cost.** Every TCP connection requires a full round trip before data transfer begins. For short-lived connections, this overhead is significant. Use connection pooling.
+2. **Forgetting the TCP three-way handshake cost.** Every TCP connection requires a full round trip
+   before data transfer begins. For short-lived connections, this overhead is significant. Use
+   connection pooling.
 
-3. **Underestimating the importance of MTU.** If a packet exceeds the Maximum Transmission Unit, it gets fragmented. Fragmentation increases overhead and reassembly complexity. Path MTU discovery helps avoid this.
+3. **Underestimating the importance of MTU.** If a packet exceeds the Maximum Transmission Unit, it
+   gets fragmented. Fragmentation increases overhead and reassembly complexity. Path MTU discovery
+   helps avoid this.
 
-4. **Ignoring subnet mask errors.** An incorrect subnet mask causes packets to be sent to the wrong gateway or subnet. Always double-check CIDR notation and subnet masks.
+4. **Ignoring subnet mask errors.** An incorrect subnet mask causes packets to be sent to the wrong
+   gateway or subnet. Always double-check CIDR notation and subnet masks.
 
-5. **Misunderstanding ARP (Address Resolution Protocol).** ARP maps IP to MAC addresses and is broadcast-based. It works only within a broadcast domain. Routers use their own MAC addresses, not the destination's.
+5. **Misunderstanding ARP (Address Resolution Protocol).** ARP maps IP to MAC addresses and is
+   broadcast-based. It works only within a broadcast domain. Routers use their own MAC addresses,
+   not the destination's.
 
-6. **HTTP/1.1 head-of-line blocking.** In HTTP/1.1, one slow response blocks subsequent responses on the same TCP connection. This is solved by HTTP/2 multiplexing or opening multiple connections.
+6. **HTTP/1.1 head-of-line blocking.** In HTTP/1.1, one slow response blocks subsequent responses on
+   the same TCP connection. This is solved by HTTP/2 multiplexing or opening multiple connections.
 
-7. **DNS caching issues.** Long TTL values improve performance but delay propagation of changes. Short TTL values increase DNS query volume. Choose based on how often records change.
+7. **DNS caching issues.** Long TTL values improve performance but delay propagation of changes.
+   Short TTL values increase DNS query volume. Choose based on how often records change.
 
 ## Worked Examples
 
 ### Example 1: Subnet Calculation
-**Problem:** An organisation has IP address 192.168.1.0/24 and needs to create 6 subnets of roughly equal size. Determine the subnet mask and the address range for each subnet.
-**Solution:** 6 subnets requires 3 bits (2^3 = 8 subnets). New mask: /24 + 3 = /27 (255.255.255.224). Block size: 256 - 224 = 32 addresses per subnet (30 usable). Subnets: 192.168.1.0/27 (hosts 1-30), 192.168.1.32/27 (hosts 33-62), 192.168.1.64/27 (hosts 65-94), 192.168.1.96/27 (hosts 97-126), 192.168.1.128/27 (hosts 129-158), 192.168.1.160/27 (hosts 161-190), 192.168.1.192/27, 192.168.1.224/27.
+
+**Problem:** An organisation has IP address 192.168.1.0/24 and needs to create 6 subnets of roughly
+equal size. Determine the subnet mask and the address range for each subnet. **Solution:** 6 subnets
+requires 3 bits (2^3 = 8 subnets). New mask: /24 + 3 = /27 (255.255.255.224). Block size: 256 - 224
+= 32 addresses per subnet (30 usable). Subnets: 192.168.1.0/27 (hosts 1-30), 192.168.1.32/27 (hosts
+33-62), 192.168.1.64/27 (hosts 65-94), 192.168.1.96/27 (hosts 97-126), 192.168.1.128/27 (hosts
+129-158), 192.168.1.160/27 (hosts 161-190), 192.168.1.192/27, 192.168.1.224/27.
 
 ### Example 2: TCP Three-Way Handshake
+
 **Problem:** Describe the TCP three-way handshake and explain the purpose of each segment's flags.
-**Solution:** Client sends SYN (seq=x). Server responds with SYN-ACK (seq=y, ack=x+1). Client sends ACK (ack=y+1). The SYN flag requests connection establishment and carries the initial sequence number. The SYN-ACK acknowledges the client's SYN and provides the server's initial sequence number. The final ACK acknowledges the server's SYN. After this exchange, both sides have established their sequence numbers and the connection is established for full-duplex data transfer.
+**Solution:** Client sends SYN (seq=x). Server responds with SYN-ACK (seq=y, ack=x+1). Client sends
+ACK (ack=y+1). The SYN flag requests connection establishment and carries the initial sequence
+number. The SYN-ACK acknowledges the client's SYN and provides the server's initial sequence number.
+The final ACK acknowledges the server's SYN. After this exchange, both sides have established their
+sequence numbers and the connection is established for full-duplex data transfer.
 
 ## Summary
 
-- **OSI model** (7 layers) and **TCP/IP model** (4 layers) organize network functionality into abstraction layers with encapsulation.
-- **Physical layer** handles signal encoding, bandwidth (Nyquist/Shannon), and multiplexing (FDM, TDM, WDM).
-- **Data link layer** manages framing, error detection (CRC), error correction (Hamming codes), and medium access (CSMA/CD, CSMA/CA).
+- **OSI model** (7 layers) and **TCP/IP model** (4 layers) organize network functionality into
+  abstraction layers with encapsulation.
+- **Physical layer** handles signal encoding, bandwidth (Nyquist/Shannon), and multiplexing (FDM,
+  TDM, WDM).
+- **Data link layer** manages framing, error detection (CRC), error correction (Hamming codes), and
+  medium access (CSMA/CD, CSMA/CA).
 - **Network layer** handles IP addressing, subnetting (CIDR), NAT, and routing (RIP, OSPF, BGP).
-- **Transport layer** provides UDP (fast, unreliable) and TCP (reliable, ordered, flow-controlled, congestion-controlled).
+- **Transport layer** provides UDP (fast, unreliable) and TCP (reliable, ordered, flow-controlled,
+  congestion-controlled).
 - **Application layer** includes HTTP, DNS, SMTP, and other end-user protocols.
 
 ## Cross-References
 
-| Topic | Link |
-|-------|------|
-| Databases | [View](/docs/university/computer-science/databases) |
+| Topic               | Link                                                          |
+| ------------------- | ------------------------------------------------------------- |
+| Databases           | [View](/docs/university/computer-science/databases)           |
 | Distributed Systems | [View](/docs/university/computer-science/distributed-systems) |
-| Operating Systems | [View](/docs/university/computer-science/operating-systems) |
+| Operating Systems   | [View](/docs/university/computer-science/operating-systems)   |

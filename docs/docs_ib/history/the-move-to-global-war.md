@@ -4,7 +4,9 @@ tags:
   - IB
   - History
 slug: the-move-to-global-war
-description: 'IB History The Move to Global War notes covering key definitions, core concepts, worked examples, and practice questions for clear review and exam preparation.'
+description:
+  'IB History The Move to Global War notes covering key definitions, core concepts, worked examples,
+  and practice questions for clear review and exam preparation.'
 ---
 
 # The Move to Global War
@@ -1173,3 +1175,14 @@ Court), are the direct institutional descendants of Nuremberg.
 
 4. Confusing causes, events, and consequences — be clear about chronological and causal
    relationships.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

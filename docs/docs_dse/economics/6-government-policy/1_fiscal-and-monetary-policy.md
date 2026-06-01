@@ -1,6 +1,8 @@
 ---
 title: Fiscal and Monetary Policy
-description: 'DSE Economics Fiscal and Monetary Policy notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'DSE Economics Fiscal and Monetary Policy notes covering key definitions, core concepts, worked
+  examples, and practice questions for rigorous revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1388,7 +1390,6 @@ policy, including key models, evidence, and policy implications.
 
 **Key concepts include:**
 
-
 - aggregate demand and supply
 - fiscal and monetary policy
 - inflation and unemployment
@@ -1399,3 +1400,8 @@ The ability to apply these theories to real-world data and evaluate policy decis
 success in this subject.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/fiscal-and-monetary-policy.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

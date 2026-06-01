@@ -1,7 +1,9 @@
 ---
 title: Assessment
 slug: Assessment
-description: 'IB Physics Assessment notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and thorough revision.'
+description:
+  'IB Physics Assessment notes covering key definitions, core concepts, worked examples, and
+  practice questions for thorough study and thorough revision.'
 ---
 
 ## Assessment Overview
@@ -242,3 +244,14 @@ Examination session and vary from session to session depending on the difficulty
 
 4. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

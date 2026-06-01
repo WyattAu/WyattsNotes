@@ -1,6 +1,8 @@
 ---
 title: Fiscal Policy
-description: 'IB Economics Fiscal Policy notes covering key definitions, core concepts, worked examples, and practice questions for complete study and examination practice.'
+description:
+  'IB Economics Fiscal Policy notes covering key definitions, core concepts, worked examples, and
+  practice questions for complete study and examination practice.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]
@@ -339,3 +341,8 @@ $200$ billion, full crowding out has occurred and the fiscal policy is ineffecti
   deliberate action
 - **Fiscal rules** (debt-to-GDP targets, balanced budget amendments) constrain discretionary policy
 - Key calculations: fiscal multiplier ($k = 1/(1-MPC)$), tax multiplier, balanced budget multiplier
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

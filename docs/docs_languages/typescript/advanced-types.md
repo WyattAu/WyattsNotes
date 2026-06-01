@@ -6,7 +6,9 @@ tags:
   - TypeScript
 categories:
   - TypeScript
-description: "Advanced TypeScript type system features: conditional types, mapped types, template literal types, variadic tuples, recursive types, type-level programming,."
+description:
+  'Advanced TypeScript type system features: conditional types, mapped types, template literal
+  types, variadic tuples, recursive types, type-level programming,.'
 ---
 
 ## Conditional Types: Internals and Advanced `infer`
@@ -33,8 +35,8 @@ parameter `T` distributes: `Exclude<'a', 'a'> | Exclude<'b', 'a'> | Exclude<'c',
 type NonNullable<T> = T extends null | undefined ? never : T;
 ```
 
-Given `NonNullable<string | null | undefined>`, distribution produces `string | never | never`, which
-reduces to `string`.
+Given `NonNullable<string | null | undefined>`, distribution produces `string | never | never`,
+which reduces to `string`.
 
 ### Inferred Return Types with Multiple `infer`
 
@@ -73,8 +75,8 @@ const a = unwrap([1, 2, 3]);
 const b = unwrap('hello');
 ```
 
-`a` is inferred as `number` because `T` is `number[]` and `Unwrap<number[]>` resolves to `number`. `b`
-is inferred as `string` because `Unwrap<string>` falls through to the `else` branch.
+`a` is inferred as `number` because `T` is `number[]` and `Unwrap<number[]>` resolves to `number`.
+`b` is inferred as `string` because `Unwrap<string>` falls through to the `else` branch.
 
 ### `infer` with `extends` Constraint
 
@@ -97,8 +99,8 @@ The constraint rejects tuples whose first element is not `string`.
 
 ### Mapped Type Modifiers (`+`, `-`, `?`)
 
-Mapped types support three modifiers: `?` (optional), `readonly`, and their negations. The `+` prefix
-is the default and is usually omitted. The `-` prefix removes a modifier:
+Mapped types support three modifiers: `?` (optional), `readonly`, and their negations. The `+`
+prefix is the default and is in most cases omitted. The `-` prefix removes a modifier:
 
 ```ts
 type MakeOptional<T> = { [K in keyof T]?: T[K] };
@@ -179,20 +181,20 @@ type C = Capitalize<'hello'>;
 type D = Uncapitalize<'Hello'>;
 ```
 
-These work only on single string literal types, not on arbitrary unions or template expressions. They
-are defined in `lib.es5.d.ts` as intrinsic types (their implementations are built into the compiler).
+These work only on single string literal types, not on arbitrary unions or template expressions.
+They are defined in `lib.es5.d.ts` as intrinsic types (their implementations are built into the
+compiler).
 
 ### Type-Safe Route Parameter Extraction
 
 Template literal types enable extracting route parameters from URL patterns:
 
 ```ts
-type ExtractParams<T extends string> =
-  T extends `${string}:${infer Param}/${infer Rest}`
-    ? { [K in Param | keyof ExtractParams<Rest>]: string }
-    : T extends `${string}:${infer Param}`
-      ? { [K in Param]: string }
-      : {};
+type ExtractParams<T extends string> = T extends `${string}:${infer Param}/${infer Rest}`
+  ? { [K in Param | keyof ExtractParams<Rest>]: string }
+  : T extends `${string}:${infer Param}`
+    ? { [K in Param]: string }
+    : {};
 
 type UserParams = ExtractParams<'/users/:userId/posts/:postId'>;
 type UserParams = {
@@ -222,14 +224,13 @@ The last line is an error because `100` lacks a unit suffix.
 ### Recursive Template Matching for CamelCase to SnakeCase
 
 ```ts
-type CamelToSnakeCase<S extends string> =
-  S extends `${infer Head}${infer Tail}`
-    ? Head extends Uppercase<Head>
-      ? Head extends Lowercase<Head>
-        ? `${Lowercase<Head>}${CamelToSnakeCase<Tail>}`
-        : `_${Lowercase<Head>}${CamelToSnakeCase<Tail>}`
-      : `${Head}${CamelToSnakeCase<Tail>}`
-    : S;
+type CamelToSnakeCase<S extends string> = S extends `${infer Head}${infer Tail}`
+  ? Head extends Uppercase<Head>
+    ? Head extends Lowercase<Head>
+      ? `${Lowercase<Head>}${CamelToSnakeCase<Tail>}`
+      : `_${Lowercase<Head>}${CamelToSnakeCase<Tail>}`
+    : `${Head}${CamelToSnakeCase<Tail>}`
+  : S;
 
 type A = CamelToSnakeCase<'helloWorld'>;
 type B = CamelToSnakeCase<'getHTTPResponse'>;
@@ -274,9 +275,7 @@ type Pipe<Fns extends readonly any[]> = Fns extends readonly [
   : never;
 
 function pipe<Fns extends readonly [(...args: any[]) => any, ...Array<(arg: any) => any>]>(
-  ...fns: Fns & Pipe<Fns> extends (arg: any) => any
-    ? Fns
-    : [{ error: 'Functions do not compose' }]
+  ...fns: Fns & Pipe<Fns> extends (arg: any) => any ? Fns : [{ error: 'Functions do not compose' }]
 ): Pipe<Fns> {
   return ((value: any) => fns.reduce((v, fn) => fn(v), value)) as any;
 }
@@ -306,13 +305,7 @@ type R = [3, 2, 1];
 A complete JSON type representation that covers all valid JSON values:
 
 ```ts
-type Json =
-  | string
-  | number
-  | boolean
-  | null
-  | Json[]
-  | { [key: string]: Json };
+type Json = string | number | boolean | null | Json[] | { [key: string]: Json };
 
 function parseJson(input: string): Json {
   return JSON.parse(input);
@@ -362,9 +355,7 @@ type DeepPick<T, Keys extends string> = T extends object
 ```ts
 type PathKeys<T> = T extends object
   ? {
-      [K in keyof T & string]: T[K] extends object
-        ? K | `${K}.${PathKeys<T[K]>}`
-        : K;
+      [K in keyof T & string]: T[K] extends object ? K | `${K}.${PathKeys<T[K]>}` : K;
     }[keyof T & string]
   : never;
 
@@ -386,9 +377,7 @@ type BuildTuple<N extends number, T extends any[] = []> = T['length'] extends N
   ? T
   : BuildTuple<N, [...T, any]>;
 
-type Multiply<A extends number, B extends number> = [
-  ...BuildTuple<A>,
-] extends [any, ...infer Rest]
+type Multiply<A extends number, B extends number> = [...BuildTuple<A>] extends [any, ...infer Rest]
   ? Rest['length'] extends infer R extends number
     ? B extends 0
       ? 0
@@ -417,19 +406,22 @@ type Product = 12;
 ### Fibonacci Sequence
 
 ```ts
-type Fibonacci<N extends number, Current extends any[] = [any], Prev extends any[] = []> =
-  Current['length'] extends N
-    ? Current['length'] extends infer R extends number
-      ? R
-      : never
-    : Fibonacci<N, [...Current, ...Prev], Current>;
+type Fibonacci<
+  N extends number,
+  Current extends any[] = [any],
+  Prev extends any[] = [],
+> = Current['length'] extends N
+  ? Current['length'] extends infer R extends number
+    ? R
+    : never
+  : Fibonacci<N, [...Current, ...Prev], Current>;
 
 type F5 = Fibonacci<7>;
 type F5 = 13;
 ```
 
-**Common Pitfall:** Type-level arithmetic hits TypeScript's recursion depth limit (~9999 since TS 4.5,
-~1000 before). Keep values small and prefer runtime computation for anything non-trivial.
+**Common Pitfall:** Type-level arithmetic hits TypeScript's recursion depth limit (~9999 since TS
+4.5, ~1000 before). Keep values small and prefer runtime computation for anything non-trivial.
 
 ### Type-Level String Length
 
@@ -461,8 +453,8 @@ type Result = 50;
 
 ### `UniqueSymbol` for Singleton Branding
 
-`UniqueSymbol` creates truly unique symbols that cannot be replicated, providing stronger branding than
-string brands:
+`UniqueSymbol` creates truly unique symbols that cannot be replicated, providing stronger branding
+than string brands:
 
 ```ts
 const USD: unique symbol = Symbol('USD');
@@ -509,26 +501,17 @@ function createBranded<T, B extends string>(
 type Email = Branded<string, 'Email'>;
 type HexColor = Branded<string, 'HexColor'>;
 
-const email = createBranded<string, 'Email'>(
-  'user@example.com',
-  'Email',
-  (v) => v.includes('@'),
-);
+const email = createBranded<string, 'Email'>('user@example.com', 'Email', (v) => v.includes('@'));
 
-const color = createBranded<string, 'HexColor'>(
-  '#ff0000',
-  'HexColor',
-  (v) => /^#[0-9a-f]{6}$/i.test(v),
+const color = createBranded<string, 'HexColor'>('#ff0000', 'HexColor', (v) =>
+  /^#[0-9a-f]{6}$/i.test(v),
 );
 ```
 
 ### Branded Type Guards for Runtime Safety
 
 ```ts
-function isBranded<T, B extends string>(
-  value: unknown,
-  brand: B,
-): value is Branded<T, B> {
+function isBranded<T, B extends string>(value: unknown, brand: B): value is Branded<T, B> {
   return (
     typeof value === 'object' &&
     value !== null &&
@@ -722,7 +705,9 @@ type VisitorHandlers = {
 };
 
 interface Visitor {
-  visit<K extends AstNode['kind']>(node: Extract<AstNode, { kind: K }>): ReturnType<VisitorHandlers[K]>;
+  visit<K extends AstNode['kind']>(
+    node: Extract<AstNode, { kind: K }>,
+  ): ReturnType<VisitorHandlers[K]>;
 }
 
 function createVisitor(partial: Partial<VisitorHandlers>): Visitor {
@@ -743,10 +728,14 @@ const evaluator = createVisitor({
     const left = Number(evaluator.visit(node.left));
     const right = Number(evaluator.visit(node.right));
     switch (node.operator) {
-      case '+': return left + right;
-      case '-': return left - right;
-      case '*': return left * right;
-      case '/': return left / right;
+      case '+':
+        return left + right;
+      case '-':
+        return left - right;
+      case '*':
+        return left * right;
+      case '/':
+        return left / right;
     }
   },
   call(node) {
@@ -810,8 +799,10 @@ bus.on('startup', ({ timestamp }) => {
 ## Worked Examples
 
 ### Example 1: Building a Type-Safe API Response Handler
-**Problem:** Create a type that extracts the success data type from a discriminated union of API responses.
-**Solution:**
+
+**Problem:** Create a type that extracts the success data type from a discriminated union of API
+responses. **Solution:**
+
 ```ts
 type ApiResponse<T> =
   | { status: 'success'; data: T; timestamp: number }
@@ -822,19 +813,24 @@ type SuccessData<R> = R extends ApiResponse<infer D> ? D : never;
 type User = SuccessData<ApiResponse<{ id: string; name: string }>>;
 // type User = { id: string; name: string }
 
-type ErrorMessage<R> = R extends ApiResponse<infer _> ? never :
-  R extends { message: infer M } ? M : never;
+type ErrorMessage<R> =
+  R extends ApiResponse<infer _> ? never : R extends { message: infer M } ? M : never;
 ```
-`infer` in the conditional type extracts the generic parameter `T` from the success variant. The union distribution does not apply here because `T` is not a naked type parameter being distributed over.
+
+`infer` in the conditional type extracts the generic parameter `T` from the success variant. The
+union distribution does not apply here because `T` is not a naked type parameter being distributed
+over.
 
 ### Example 2: Type-Safe Event Emitter
-**Problem:** Create an `EventEmitter` that only allows emitting and listening to valid event types with correct payload types.
-**Solution:**
+
+**Problem:** Create an `EventEmitter` that only allows emitting and listening to valid event types
+with correct payload types. **Solution:**
+
 ```ts
 interface EventMap {
   'user:login': { userId: string; timestamp: number };
   'user:logout': { userId: string };
-  'error': { code: number; message: string };
+  error: { code: number; message: string };
 }
 
 class TypedEmitter<M extends Record<string, unknown>> {
@@ -847,24 +843,27 @@ class TypedEmitter<M extends Record<string, unknown>> {
   }
 
   emit<K extends keyof M>(event: K, payload: M[K]): void {
-    this.handlers.get(event)?.forEach(h => h(payload));
+    this.handlers.get(event)?.forEach((h) => h(payload));
   }
 }
 
 const emitter = new TypedEmitter<EventMap>();
-emitter.on('user:login', (p) => { console.log(p.userId); });
+emitter.on('user:login', (p) => {
+  console.log(p.userId);
+});
 emitter.emit('user:login', { userId: 'abc', timestamp: 123 });
 emitter.emit('user:login', { userId: 'abc' }); // Error: missing timestamp
 ```
-The mapped type over `EventMap` ensures each event key maps to its correct payload type. Attempting to emit with the wrong payload shape produces a compile error.
+
+The mapped type over `EventMap` ensures each event key maps to its correct payload type. Attempting
+to emit with the wrong payload shape produces a compile error.
 
 ### Example 3: Recursive Deep Partial
-**Problem:** Make all properties in a nested object type optional, recursively.
-**Solution:**
+
+**Problem:** Make all properties in a nested object type optional, recursively. **Solution:**
+
 ```ts
-type DeepPartial<T> = T extends object
-  ? { [K in keyof T]?: DeepPartial<T[K]> }
-  : T;
+type DeepPartial<T> = T extends object ? { [K in keyof T]?: DeepPartial<T[K]> } : T;
 
 interface Config {
   db: { host: string; port: number; auth: { user: string; pass: string } };
@@ -874,7 +873,9 @@ interface Config {
 type PartialConfig = DeepPartial<Config>;
 // { db?: { host?: string; port?: number; auth?: { user?: string; pass?: string } }; cache?: { ttl?: number; maxSize?: number } }
 ```
-The recursive conditional type checks whether `T` is an object at each nesting level, making each property optional. Primitive values (string, number) fall through unchanged.
+
+The recursive conditional type checks whether `T` is an object at each nesting level, making each
+property optional. Primitive values (string, number) fall through unchanged.
 
 ### Pitfall 1: `keyof T` Includes `symbol` Keys
 
@@ -993,8 +994,8 @@ const obj = { name: 'Ada', extra: true };
 accept(obj);
 ```
 
-This compiles because `obj` is not an object literal in the call expression. Use `satisfies` (TS 4.9+)
-or explicit typing to catch excess properties:
+This compiles because `obj` is not an object literal in the call expression. Use `satisfies` (TS
+4.9+) or explicit typing to catch excess properties:
 
 ```ts
 accept({ name: 'Ada', extra: true });
@@ -1004,11 +1005,14 @@ This version is an error because the object literal is directly assigned.
 
 ## Common Pitfalls
 
-1. **Using template literals with generic string types.** Conditional types only decompose literal types, not generic string. FirstChar<string> evaluates to string for both inferences.
-2. **Relying on conditional types in extends clauses.** A conditional type used as a constraint is not evaluated during constraint checking.
-3. **Hitting TypeScript recursion depth limits.** Type-level arithmetic exceeds the recursion limit (~9999) for values above about 1000.
-4. **Forgetting that keyof includes symbol keys.** keyof T returns string | number | symbol for most objects. Use keyof T & string for string-only keys.
-
+1. **Using template literals with generic string types.** Conditional types only decompose literal
+   types, not generic string. FirstChar<string> evaluates to string for both inferences.
+2. **Relying on conditional types in extends clauses.** A conditional type used as a constraint is
+   not evaluated during constraint checking.
+3. **Hitting TypeScript recursion depth limits.** Type-level arithmetic exceeds the recursion limit
+   (~9999) for values above about 1000.
+4. **Forgetting that keyof includes symbol keys.** keyof T returns string | number | symbol for most
+   objects. Use keyof T & string for string-only keys.
 
 ## Summary
 
@@ -1021,19 +1025,19 @@ abstractions.
   conditional types; constrained `infer` (TS 4.7+) restricts inferred types.
 - Mapped type modifiers: `+`/`-`/`?` control optionality and readonly status; key remapping with
   `as` combines with value transformation.
-- Template literal intrinsics: `Uppercase`, `Lowercase`, `Capitalize`, `Uncapitalize` operate on literal
-  types only; recursive template matching enables string case conversion.
+- Template literal intrinsics: `Uppercase`, `Lowercase`, `Capitalize`, `Uncapitalize` operate on
+  literal types only; recursive template matching enables string case conversion.
 - Variadic tuple types: spread and rest in tuple positions enable type-safe `pipe`, `concat`, and
   `reverse`; `readonly` preservation propagates through tuple operations.
 - Recursive types: JSON type, deep `Omit`/`Pick`, and path-key extraction for type-safe deep access.
-- Type-level programming: multiplication via repeated addition, Fibonacci sequences, and string length
-  computation use tuple-length arithmetic.
+- Type-level programming: multiplication via repeated addition, Fibonacci sequences, and string
+  length computation use tuple-length arithmetic.
 - Branded types: `UniqueSymbol` for singleton branding, branded newtypes with validation, and type
   guards for runtime safety.
 - Declaration files: `declare module`, `declare global`, module augmentation, and triple-slash
   directives.
-- Utility type patterns: state machine types, AST visitor pattern, and type-safe pub/sub with wildcard
-  handlers.
+- Utility type patterns: state machine types, AST visitor pattern, and type-safe pub/sub with
+  wildcard handlers.
 
-Understanding these concepts thoroughly is essential for both examinations and practical programming,
-and requires both theoretical knowledge and hands-on practice.
+Understanding these concepts thoroughly is essential for both examinations and practical
+programming, and requires both theoretical knowledge and hands-on practice.

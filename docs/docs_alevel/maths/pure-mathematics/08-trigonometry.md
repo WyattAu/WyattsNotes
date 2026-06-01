@@ -1,6 +1,8 @@
 ---
 title: Trigonometry
-description: 'A-Level Maths Trigonometry notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'A-Level Maths Trigonometry notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -84,7 +86,8 @@ Dividing by $\sin^2\theta$ (where $\sin\theta \neq 0$):
 
 $$\cot^2\theta + 1 = \cosec^2\theta$$
 
-<DesmosGraph title="sin, cos, and tan on the Unit Circle" expressions={["\\sin(x)", "\\cos(x)", "\\tan(x)"]} width={800} height={500} />
+<DesmosGraph title="sin, cos, and tan on the Unit Circle" expressions={["\\sin(x)", "\\cos(x)",
+"\\tan(x)"]} width={800} height={500} />
 
 <hr />
 
@@ -432,7 +435,8 @@ The logical error of assuming what you are trying to prove.
 ### 9.2 Strategy 2: Express Everything in Sine and Cosine
 
 Replace $\tan$, $\sec$, $\csc$, $\cot$ with their definitions in terms of $\sin$ and $\cos$:
-$\tan\theta = \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆$, $\sec\theta = \frac◆LB◆1◆RB◆◆LB◆\cos\theta◆RB◆$Etc.
+$\tan\theta = \frac◆LB◆\sin\theta◆RB◆◆LB◆\cos\theta◆RB◆$,
+$\sec\theta = \frac◆LB◆1◆RB◆◆LB◆\cos\theta◆RB◆$Etc.
 
 ### 9.3 Strategy 3: Use Known Identities
 
@@ -900,3 +904,14 @@ building a personal test matrix. :::
    conditions in definite integrals.
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

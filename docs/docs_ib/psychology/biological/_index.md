@@ -55,10 +55,10 @@ and the Caspi et al. (2003) GxE study are the highest-yield studies for genetics
 neuroplasticity, memorise Rosenzweig and Bennett (1972) and Draganski et al. (2004); for brain
 imaging, know Haxby et al. (2001) and the strengths and limitations of at least three techniques.
 
-For Paper 1 ERQs, questions typically require an essay addressing a general principle or research
-method. Use three to four studies, ensuring each is described with methodology, findings, and
-evaluation. Structure responses with a clear introduction stating the principle, body paragraphs for
-each study (description followed by evaluation), and a conclusion that synthesises findings.
+For Paper 1 ERQs, questions in most cases require an essay addressing a general principle or
+research method. Use three to four studies, ensuring each is described with methodology, findings,
+and evaluation. Structure responses with a clear introduction stating the principle, body paragraphs
+for each study (description followed by evaluation), and a conclusion that synthesises findings.
 Methodology questions are common: be prepared to compare twin studies, adoption studies, and
 neuroimaging techniques in terms of their ability to establish causation versus correlation.
 
@@ -71,7 +71,7 @@ research.
 For the Internal Assessment, BLOA offers well-established experimental paradigms with clear
 operationalisable variables. Popular designs include the Stroop effect (interference in colour-word
 processing), reaction time studies comparing conditions (single vs. dual task), and memory
-experiments manipulating levels of processing. Ensure the independent variable is clearly
+experiments manipulating levels of processing. Ensure the independent variable is evidently
 manipulated and the dependent variable is objectively measurable. Biological topics must be framed
 in terms of their relevance to behaviour rather than physiology alone -- the IA assesses psychology,
 not neuroscience.

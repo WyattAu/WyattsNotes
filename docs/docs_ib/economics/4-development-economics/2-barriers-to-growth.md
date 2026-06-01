@@ -1,6 +1,8 @@
 ---
 title: Barriers to Growth
-description: 'IB Economics Barriers to Growth notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'IB Economics Barriers to Growth notes covering key definitions, core concepts, worked examples,
+  and practice questions for clear revision.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]
@@ -832,3 +834,8 @@ structural transformation.
   disease, corruption, and conflict
 - **Debt relief** (HIPC initiative) aims to break the debt trap for heavily indebted poor countries
 - Key diagrams: poverty trap cycle, Lewis model labour transfer, Harrod-Domar savings-investment gap
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

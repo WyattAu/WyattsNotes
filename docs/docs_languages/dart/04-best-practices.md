@@ -1,6 +1,8 @@
 ---
 title: Best Practices
-description: 'Dart Best Practices notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and mastery.'
+description:
+  'Dart Best Practices notes covering key definitions, core concepts, worked examples, and practice
+  questions for effective exam preparation and mastery.'
 date: 2025-07-17T20:40:50.912Z
 tags:
   - dart
@@ -129,3 +131,14 @@ slug: practices
 
 4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
    sorted input.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: The Financial Sector
-description: 'A-Level Economics The Financial Sector notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
+description:
+  'A-Level Economics The Financial Sector notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -1200,3 +1202,9 @@ largest component of household wealth.
    data).
 
 4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

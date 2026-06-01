@@ -1,6 +1,8 @@
 ---
 title: Aggregate Demand and Aggregate Supply
-description: 'A-Level Economics Aggregate Demand and Aggregate Supply notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Economics Aggregate Demand and Aggregate Supply notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -1169,3 +1171,9 @@ the financing method (tax-funded vs debt-funded).
 
 4. Neglecting to consider the ceteris paribus assumption when analysing multi-variable economic
    scenarios.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

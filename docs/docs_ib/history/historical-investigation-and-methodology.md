@@ -4,7 +4,9 @@ tags:
   - IB
   - History
 slug: historical-investigation-and-methodology
-description: 'IB History Historical Investigation and Methodology notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'IB History Historical Investigation and Methodology notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam readiness.'
 ---
 
 # Historical Investigation and Methodology
@@ -739,3 +741,8 @@ methodology, including historical interpretations and evidence.
 
 The ability to construct well-supported, analytical arguments using a range of evidence is key to
 success in history.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

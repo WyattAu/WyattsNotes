@@ -1,6 +1,8 @@
 ---
 title: Natural Selection
-description: 'Qualifications Biology Natural Selection notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'Qualifications Biology Natural Selection notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 date: 2026-04-14
 tags:
   - ap
@@ -821,8 +823,8 @@ Divergence. The two species diverged approximately 1.33 million years ago.
 
 A mainland population of birds has allele frequencies $p(A) = 0.8$, $q(a) = 0.2$ for a gene
 Controlling beak shape. Five birds colonise a new island. By chance, the founders have the
-Genotypes: $AA$, $Aa$, $Aa$, $aa$, $Aa$. Calculate the allele frequencies in the founder population. Has
-genetic drift increased or decreased the frequency of allele $a$?
+Genotypes: $AA$, $Aa$, $Aa$, $aa$, $Aa$. Calculate the allele frequencies in the founder population.
+Has genetic drift increased or decreased the frequency of allele $a$?
 
 </details>
 
@@ -889,3 +891,8 @@ experimental evidence, and real-world applications.
 
 Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
 and evaluate experimental evidence critically.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

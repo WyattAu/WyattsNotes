@@ -1,6 +1,8 @@
 ---
 title: Associative and Unordered Containers
-description: 'C++ Programming Associative and Unordered Containers notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'C++ Programming Associative and Unordered Containers notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -742,3 +744,14 @@ For performance-critical code where ordered iteration is not needed, consider al
 
 4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
    necessarily tight.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

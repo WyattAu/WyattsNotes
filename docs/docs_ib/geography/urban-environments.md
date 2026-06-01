@@ -97,7 +97,7 @@ specific district, slum formation on the urban fringe).
 
 ## Exam Focus
 
-Paper 1 questions on urban environments typically require:
+Paper 1 questions on urban environments in most cases require:
 
 - Explaining the causes and consequences of urbanisation using case studies from contrasting
   countries (e.g., urbanisation in Nigeria vs. the United Kingdom).
@@ -147,7 +147,7 @@ developing countries.
 
 - **Describing urban models without evaluation:** The Burgess, Hoyt, and multiple nuclei models all
   have significant limitations. Always evaluate their applicability to a specific city rather than
-  simply describing them.
+  directly describing them.
 - **Equating urbanisation with urban growth:** Urbanisation is the increasing proportion of people
   living in urban areas (a rate); urban growth is the absolute increase in urban population. A
   country can have high urban growth without rapid urbanisation if the rural population is also

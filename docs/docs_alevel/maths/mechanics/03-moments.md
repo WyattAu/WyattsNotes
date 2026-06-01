@@ -1,6 +1,8 @@
 ---
 title: Moments
-description: 'A-Level Maths Moments notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
+description:
+  'A-Level Maths Moments notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid exam preparation and revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -853,3 +855,14 @@ building a personal test matrix. :::
 
 4. Incorrectly applying $\vec{F} = m\vec{a}$ when forces are not collinear — resolve into components
    first.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,7 +1,9 @@
 ---
 id: redis
 title: Redis Deep Dive
-description: 'Redis Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for complete revision and examination preparation.'
+description:
+  'Redis Deep Dive notes covering key definitions, core concepts, worked examples, and practice
+  questions for complete revision and examination preparation.'
 slug: redis
 ---
 
@@ -1006,3 +1008,8 @@ theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

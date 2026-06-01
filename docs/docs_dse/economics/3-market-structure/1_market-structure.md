@@ -1,6 +1,8 @@
 ---
 title: Market Structure and Theory of the Firm
-description: 'DSE Economics Market Structure and Theory of the Firm notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'DSE Economics Market Structure and Theory of the Firm notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1950,7 +1952,6 @@ theory of the firm, including key models, evidence, and policy implications.
 
 **Key concepts include:**
 
-
 - economic models and theories
 - data analysis and interpretation
 - policy evaluation
@@ -1961,3 +1962,8 @@ The ability to apply these theories to real-world data and evaluate policy decis
 success in this subject.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/market-structure-and-theory-of-the-firm.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

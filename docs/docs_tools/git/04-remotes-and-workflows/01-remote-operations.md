@@ -1,6 +1,8 @@
 ---
 title: Remote Operations
-description: 'Git Remote Operations notes covering key definitions, core concepts, worked examples, and practice questions for efficient learning and effective revision.'
+description:
+  'Git Remote Operations notes covering key definitions, core concepts, worked examples, and
+  practice questions for efficient learning and effective revision.'
 date: 2025-06-03T06:00:00.000Z
 tags:
   - git
@@ -449,3 +451,14 @@ $ git push -u origin feature-auth
 
 4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
    sorted input.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

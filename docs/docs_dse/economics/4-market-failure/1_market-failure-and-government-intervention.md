@@ -1,6 +1,8 @@
 ---
 title: Market Failure and Government Intervention
-description: 'DSE Economics Market Failure and Government Intervention notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'DSE Economics Market Failure and Government Intervention notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1346,7 +1348,6 @@ underlying theory, practical implementation, and key applications.
 
 **Key concepts include:**
 
-
 - core concepts and terminology
 - algorithms and computational thinking
 - practical implementation
@@ -1357,3 +1358,8 @@ Understanding these concepts thoroughly is essential for both examinations and p
 programming, and requires both theoretical knowledge and hands-on practice.
 
 > > > > > > > Stashed changes:docs/docs_dse/Economics/market-failure-and-government-intervention.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

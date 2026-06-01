@@ -1,6 +1,8 @@
 ---
 title: CPM.cmake
-description: 'C++ Programming CPM.cmake notes covering key definitions, core concepts, worked examples, and practice questions for structured study and thorough revision.'
+description:
+  'C++ Programming CPM.cmake notes covering key definitions, core concepts, worked examples, and
+  practice questions for structured study and thorough revision.'
 date: 2025-12-11T04:34:32.158Z
 tags:
   - cpp
@@ -716,3 +718,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

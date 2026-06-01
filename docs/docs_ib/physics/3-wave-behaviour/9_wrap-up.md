@@ -524,3 +524,14 @@ $$f' = f\left(\frac{v}{v + v_s}\right) = 800\left(\frac{343}{343 + 30}\right) = 
 
 4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -57,7 +57,7 @@ translating biological inputs into behaviour that is further shaped by social co
 
 ## Exam Focus
 
-Paper 1 questions on the CLOA typically require:
+Paper 1 questions on the CLOA in most cases require:
 
 - Outlining one or more principles of the CLOA and discussing their implications.
 - Describing and evaluating a study relevant to the CLOA (e.g., Loftus and Palmer, Baddeley, Tversky

@@ -1,7 +1,9 @@
 ---
 id: storage-tuning
 title: Storage Tuning
-description: 'Storage Tuning notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
+description:
+  'Storage Tuning notes covering key definitions, core concepts, worked examples, and practice
+  questions for focused exam preparation and revision.'
 slug: storage-tuning
 ---
 
@@ -910,3 +912,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

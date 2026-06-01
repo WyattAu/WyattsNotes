@@ -6,15 +6,17 @@ tags:
   - Dart
 categories:
   - Dart
-description: "Dart testing: unit tests, widget tests, integration tests, mocking, test-driven development, golden tests, code coverage, and Flutter testing patterns."
+description:
+  'Dart testing: unit tests, widget tests, integration tests, mocking, test-driven development,
+  golden tests, code coverage, and Flutter testing patterns.'
 ---
 
 ## Unit Testing
 
-Unit tests validate individual functions, methods, and classes in isolation. They are the fastest tests
-to run, the cheapest to maintain, and the most valuable for catching logic errors early. The standard
-test framework in Dart is the `test` package, which provides a lightweight API inspired by other xUnit
-frameworks.
+Unit tests validate individual functions, methods, and classes in isolation. They are the fastest
+tests to run, the cheapest to maintain, and the most valuable for catching logic errors early. The
+standard test framework in Dart is the `test` package, which provides a lightweight API inspired by
+other xUnit frameworks.
 
 ### The test Package
 
@@ -37,8 +39,9 @@ void main() {
 
 ### Organizing Tests with group
 
-Groups allow you to nest related tests under a shared setup and teardown. This is not just aesthetics —
-shared setup reduces duplication and ensures each test in the group operates on a consistent state.
+Groups allow you to nest related tests under a shared setup and teardown. This is not just
+aesthetics — shared setup reduces duplication and ensures each test in the group operates on a
+consistent state.
 
 ```dart
 void main() {
@@ -121,8 +124,8 @@ dart test --reporter json  # JSON output for CI pipelines
 ## Mocking
 
 Mocking substitutes real dependencies with test doubles that record interactions and return
-programmed responses. This isolates the unit under test from external state — databases, network calls,
-file systems — making tests deterministic and fast.
+programmed responses. This isolates the unit under test from external state — databases, network
+calls, file systems — making tests deterministic and fast.
 
 ### mockito Package
 
@@ -172,8 +175,8 @@ void main() {
 
 ### Programming Responses
 
-`when` and `thenReturn` handle synchronous returns. `thenAnswer` provides access to invocation arguments
-for dynamic responses. `thenThrow` programs exceptions.
+`when` and `thenReturn` handle synchronous returns. `thenAnswer` provides access to invocation
+arguments for dynamic responses. `thenThrow` programs exceptions.
 
 ```dart
 when(mockRepo.getById(any)).thenAnswer((invocation) async {
@@ -213,9 +216,9 @@ verify(mockRepo.save(argThat(isA<User>())));
 
 ## Widget Testing
 
-Widget tests (component tests in Flutter terminology) render a single widget in a test environment and
-verify its behavior — layout, interaction, state changes — without running the full application. They
-are slower than unit tests but orders of magnitude faster than integration tests.
+Widget tests (component tests in Flutter terminology) render a single widget in a test environment
+and verify its behavior — layout, interaction, state changes — without running the full application.
+They are slower than unit tests but orders of magnitude faster than integration tests.
 
 ### Setting Up Widget Tests
 
@@ -304,9 +307,9 @@ testWidgets('displays data after fetch', (tester) async {
 
 ## Integration Testing
 
-Integration tests run the entire application in a real environment — a simulator, emulator, or physical
-device. They validate end-to-end flows: navigation, data persistence, network interactions, platform
-channels.
+Integration tests run the entire application in a real environment — a simulator, emulator, or
+physical device. They validate end-to-end flows: navigation, data persistence, network interactions,
+platform channels.
 
 ### IntegrationTestWidget
 
@@ -349,8 +352,8 @@ flutter test integration_test --coverage         # With coverage
 
 ### App-Level Testing Patterns
 
-Integration tests are not limited to UI flows. They can verify deep links, push notification handling,
-background execution, and platform channel communication.
+Integration tests are not limited to UI flows. They can verify deep links, push notification
+handling, background execution, and platform channel communication.
 
 ```dart
 testWidgets('deep link opens correct screen', (tester) async {
@@ -410,8 +413,8 @@ flutter test --update-goldens test/button_test.dart  # Regenerate specific test
 
 ### Platform-Specific Goldens
 
-Different platforms render differently — text rendering, shadows, and anti-aliasing vary between macOS,
-Linux, Windows, and mobile. Use platform-specific golden directories:
+Different platforms render differently — text rendering, shadows, and anti-aliasing vary between
+macOS, Linux, Windows, and mobile. Use platform-specific golden directories:
 
 ```dart
 testWidgets('card renders correctly', (tester) async {
@@ -429,8 +432,8 @@ testWidgets('card renders correctly', (tester) async {
 
 ### Pixel-Level Testing Considerations
 
-Golden tests are sensitive to environment differences. Font availability, anti-aliasing algorithms, and
-DPI scaling can cause false positives. Strategies to manage flakiness:
+Golden tests are sensitive to environment differences. Font availability, anti-aliasing algorithms,
+and DPI scaling can cause false positives. Strategies to manage flakiness:
 
 - Run golden tests on a single consistent CI environment
 - Use `threshold` to allow a small percentage of pixel difference
@@ -478,8 +481,8 @@ test('emits expected values', () {
 
 ### fakeAsync and flushMicrotasks
 
-The `fake_async` package gives you control over the event loop. Timers, microtasks, and periodic timers
-all become deterministic.
+The `fake_async` package gives you control over the event loop. Timers, microtasks, and periodic
+timers all become deterministic.
 
 ```dart
 import 'package:fake_async/fake_async.dart';
@@ -519,9 +522,9 @@ test('service retries on failure', () async {
 
 ## Test-Driven Development in Dart
 
-Test-driven development (TDD) is a discipline where you write the test before the implementation. The
-cycle is: write a failing test (Red), write the minimal code to pass it (Green), improve the design
-while keeping tests green (Refactor).
+Test-driven development (TDD) is a discipline where you write the test before the implementation.
+The cycle is: write a failing test (Red), write the minimal code to pass it (Green), improve the
+design while keeping tests green (Refactor).
 
 ### The Red-Green-Refactor Cycle
 
@@ -531,8 +534,8 @@ while keeping tests green (Refactor).
 
 ### Dart-Specific TDD Considerations
 
-Dart's null safety and strong type system make TDD more productive. The compiler catches a category of
-errors that would otherwise require tests in dynamically-typed languages, so Dart TDD focuses on
+Dart's null safety and strong type system make TDD more productive. The compiler catches a category
+of errors that would otherwise require tests in dynamically-typed languages, so Dart TDD focuses on
 behavioral correctness rather than type safety.
 
 ```dart
@@ -627,12 +630,13 @@ random inputs and asserts nothing will generate coverage but provides no value. 
 - Branch coverage over line coverage — both branches of an if statement should be tested
 - Edge case coverage — empty collections, null inputs, boundary values
 - Integration coverage — are the units wired together correctly?
-- Mutation testing — tools like `mutation_test` flip operators and assertions to check if tests catch the change
+- Mutation testing — tools like `mutation_test` flip operators and assertions to check if tests
+  catch the change
 
 ## Flutter Testing Patterns
 
-Flutter applications use reactive state management, navigation, and dependency injection patterns that
-require specific testing approaches.
+Flutter applications use reactive state management, navigation, and dependency injection patterns
+that require specific testing approaches.
 
 ### Provider Testing
 
@@ -711,40 +715,45 @@ testWidgets('navigates to detail on tap', (tester) async {
 
 ## Common Pitfalls
 
-1. **Testing implementation instead of behavior.** If you refactor the internals and tests break, the
-   tests are coupled to implementation. Write tests against the public interface — inputs and outputs —
-   not internal method calls. Verify behavior, not mechanics.
+1. **Testing implementation instead of behavior.** If you refactor the internals and tests break,
+   the tests are coupled to implementation. Write tests against the public interface — inputs and
+   outputs — not internal method calls. Verify behavior, not mechanics.
 
-2. **Over-mocking.** If every dependency is mocked, tests verify mocks interacting with mocks, not the
-   real logic. Mock external boundaries (network, file system, databases). Do not mock the domain layer
-   or value objects.
+2. **Over-mocking.** If every dependency is mocked, tests verify mocks interacting with mocks, not
+   the real logic. Mock external boundaries (network, file system, databases). Do not mock the
+   domain layer or value objects.
 
-3. **Ignoring async ordering.** `pump()` renders one frame. `pumpAndSettle()` waits for all animations
-   and microtasks. Using the wrong one causes flaky tests — either timing out on infinite animations
-   or not advancing far enough to see state changes.
+3. **Ignoring async ordering.** `pump()` renders one frame. `pumpAndSettle()` waits for all
+   animations and microtasks. Using the wrong one causes flaky tests — either timing out on infinite
+   animations or not advancing far enough to see state changes.
 
 4. **Test interdependence.** Tests that depend on order, shared mutable state, or external services
-   fail unpredictably. Each test must set up its own state and clean up after itself. Use `setUp` and
-   `tearDown`, not global variables.
+   fail unpredictably. Each test must set up its own state and clean up after itself. Use `setUp`
+   and `tearDown`, not global variables.
 
 5. **Golden test flakiness on CI.** Different machines render differently. Pin font versions, use a
-   containerized environment, or run golden tests only on a single platform in CI. Accept a small pixel
-   threshold if anti-aliasing varies.
+   containerized environment, or run golden tests only on a single platform in CI. Accept a small
+   pixel threshold if anti-aliasing varies.
 
 6. **Not testing error paths.** Happy-path tests are easy. Error-path tests — what happens when the
-   network fails, the database is corrupt, the input is malformed — are where the bugs live. Every test
-   group should have at least one error case.
+   network fails, the database is corrupt, the input is malformed — are where the bugs live. Every
+   test group should have at least one error case.
 
-7. **Coverage without quality.** A high coverage number from low-quality tests provides a false sense
-   of security. A single well-structured test that exercises a real edge case is worth more than ten
-   tests that assert nothing meaningful.
+7. **Coverage without quality.** A high coverage number from low-quality tests provides a false
+   sense of security. A single well-structured test that exercises a real edge case is worth more
+   than ten tests that assert nothing meaningful.
 
 ## Summary
 
 Dart and Flutter provide a layered testing framework: unit tests for logic, widget tests for UI
-components, and integration tests for full application flows. Mocking with mockito isolates units from
-their dependencies. Golden tests catch visual regressions that logic tests cannot. `fakeAsync` gives
-deterministic control over time for testing async code. Coverage tools measure test breadth but not
-depth — pair them with mutation testing and code review. The greatest risk in any testing strategy is
-not what you fail to test, but what you test incorrectly — a false-passing test is worse than no test
-at all.
+components, and integration tests for full application flows. Mocking with mockito isolates units
+from their dependencies. Golden tests catch visual regressions that logic tests cannot. `fakeAsync`
+gives deterministic control over time for testing async code. Coverage tools measure test breadth
+but not depth — pair them with mutation testing and code review. The greatest risk in any testing
+strategy is not what you fail to test, but what you test incorrectly — a false-passing test is worse
+than no test at all.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

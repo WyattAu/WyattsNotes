@@ -129,3 +129,14 @@ Read the modules in order. Each module builds on the previous one and assumes yo
 the key results. Code examples can be edited live in the embedded Compiler Explorer iframe above.
 
 <!-- Last reviewed: 2026-06-01 -->
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

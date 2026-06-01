@@ -1,6 +1,8 @@
 ---
 title: Name Mangling
-description: 'C++ Programming Name Mangling notes covering key definitions, core concepts, worked examples, and practice questions for focused study and thorough revision.'
+description:
+  'C++ Programming Name Mangling notes covering key definitions, core concepts, worked examples, and
+  practice questions for focused study and thorough revision.'
 date: 2025-12-12T02:56:28.878Z
 tags:
   - cpp
@@ -752,3 +754,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Research Methods in Psychology
-description: 'IB Research Methods in Psychology notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'IB Research Methods in Psychology notes covering key definitions, core concepts, worked examples,
+  and practice questions for detailed preparation.'
 slug: research-methods
 ---
 
@@ -421,3 +423,14 @@ Association (APA). Key conventions include:
 
 4. Failing to discuss ethical issues (informed consent, deception, debriefing, right to withdraw)
    when evaluating studies.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

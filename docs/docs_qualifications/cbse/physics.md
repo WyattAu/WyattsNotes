@@ -1,7 +1,9 @@
 ---
 title: CBSE Physics Study Guide
 date: 2026-05-31
-description: 'Qualifications Physics.Md CBSE Physics Study notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'Qualifications Physics.Md CBSE Physics Study notes covering key definitions, core concepts,
+  worked examples, and practice questions for effective preparation.'
 tags:
   - cbse
   - physics
@@ -12,12 +14,12 @@ slug: physics
 
 ## Overview
 
-This guide covers the **CBSE Class 11 and 12 Physics** syllabus (NCERT). It is organised by topic with
-key concepts, equations, and exam-focused advice.
+This guide covers the **CBSE Class 11 and 12 Physics** syllabus (NCERT). It is organised by topic
+with key concepts, equations, and exam-focused advice.
 
-The CBSE Class 12 Physics board exam carries **70 marks** (theory) + **30 marks** (practical). The theory
-paper includes MCQs, very-short-answer (1-mark), short-answer (2-3 marks), and long-answer (5-mark)
-questions. Numerical problems carry approximately 15--20 marks.
+The CBSE Class 12 Physics board exam carries **70 marks** (theory) + **30 marks** (practical). The
+theory paper includes MCQs, very-short-answer (1-mark), short-answer (2-3 marks), and long-answer
+(5-mark) questions. Numerical problems carry approximately 15--20 marks.
 
 ---
 
@@ -54,14 +56,14 @@ law to each, then use the constraint (common acceleration for connected strings)
 
 **Moment of inertia** (key results):
 
-| Body | $I$ (about given axis) |
-| --- | --- |
-| Thin rod (centre) | $\frac{1}{12}ML^2$ |
-| Thin rod (end) | $\frac{1}{3}ML^2$ |
-| Solid cylinder/disc | $\frac{1}{2}MR^2$ |
-| Hollow cylinder | $MR^2$ |
-| Solid sphere | $\frac{2}{5}MR^2$ |
-| Hollow sphere | $\frac{2}{3}MR^2$ |
+| Body                | $I$ (about given axis) |
+| ------------------- | ---------------------- |
+| Thin rod (centre)   | $\frac{1}{12}ML^2$     |
+| Thin rod (end)      | $\frac{1}{3}ML^2$      |
+| Solid cylinder/disc | $\frac{1}{2}MR^2$      |
+| Hollow cylinder     | $MR^2$                 |
+| Solid sphere        | $\frac{2}{5}MR^2$      |
+| Hollow sphere       | $\frac{2}{3}MR^2$      |
 
 **Parallel axis theorem:** $I = I_{\text{cm}} + Md^2$
 
@@ -69,7 +71,8 @@ law to each, then use the constraint (common acceleration for connected strings)
 
 **Torque:** $\vec{\tau} = \vec{r} \times \vec{F}$
 
-**Angular momentum:** $\vec{L} = I\vec{\omega}$; conservation: $\vec{\tau}_{\text{net}} = 0 \Rightarrow \vec{L} = \text{const}$
+**Angular momentum:** $\vec{L} = I\vec{\omega}$; conservation:
+$\vec{\tau}_{\text{net}} = 0 \Rightarrow \vec{L} = \text{const}$
 
 **Rolling without slipping:** $v = R\omega$
 
@@ -113,7 +116,8 @@ law to each, then use the constraint (common acceleration for connected strings)
 
 ### 2.2 Laws of Thermodynamics
 
-**Zeroth law:** If $A$ is in thermal equilibrium with $B$ and $C$, then $B$ and $C$ are in thermal equilibrium.
+**Zeroth law:** If $A$ is in thermal equilibrium with $B$ and $C$, then $B$ and $C$ are in thermal
+equilibrium.
 
 **First law:** $\Delta Q = \Delta U + \Delta W$
 
@@ -128,12 +132,12 @@ law to each, then use the constraint (common acceleration for connected strings)
 
 **Thermodynamic processes:**
 
-| Process | $\Delta U$ | $\Delta Q$ | $\Delta W$ |
-| --- | --- | --- | --- |
-| Isothermal | $0$ | $nRT\ln(V_f/V_i)$ | $nRT\ln(V_f/V_i)$ |
-| Adiabatic | $nC_V\Delta T$ | $0$ | $-\Delta U$ |
-| Isobaric | $nC_V\Delta T$ | $nC_P\Delta T$ | $P\Delta V$ |
-| Isochoric | $nC_V\Delta T$ | $nC_V\Delta T$ | $0$ |
+| Process    | $\Delta U$     | $\Delta Q$        | $\Delta W$        |
+| ---------- | -------------- | ----------------- | ----------------- |
+| Isothermal | $0$            | $nRT\ln(V_f/V_i)$ | $nRT\ln(V_f/V_i)$ |
+| Adiabatic  | $nC_V\Delta T$ | $0$               | $-\Delta U$       |
+| Isobaric   | $nC_V\Delta T$ | $nC_P\Delta T$    | $P\Delta V$       |
+| Isochoric  | $nC_V\Delta T$ | $nC_V\Delta T$    | $0$               |
 
 ### 2.3 Kinetic Theory of Gases
 
@@ -174,7 +178,8 @@ where $\dfrac{1}{4\pi\varepsilon_0} = 9 \times 10^9\;\text{N m}^2\text{ C}^{-2}$
 
 **Parallel plate capacitor:** $C = \frac{\varepsilon_0 A}{d}$
 
-**With dielectric:** $C = \frac{\varepsilon_0 \kappa A}{d}$ where $\kappa$ is the dielectric constant.
+**With dielectric:** $C = \frac{\varepsilon_0 \kappa A}{d}$ where $\kappa$ is the dielectric
+constant.
 
 **Energy stored:** $U = \frac{1}{2}CV^2 = \frac{Q^2}{2C} = \frac{1}{2}QV$
 
@@ -246,7 +251,8 @@ $$\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}}$$
 
 ### 5.4 AC Circuits
 
-**RMS voltage and current:** $V_{\text{rms}} = \frac{V_0}{\sqrt{2}}$; $I_{\text{rms}} = \frac{I_0}{\sqrt{2}}$
+**RMS voltage and current:** $V_{\text{rms}} = \frac{V_0}{\sqrt{2}}$;
+$I_{\text{rms}} = \frac{I_0}{\sqrt{2}}$
 
 **Impedance in series RLC:** $Z = \sqrt{R^2 + (X_L - X_C)^2}$
 
@@ -266,7 +272,8 @@ where $X_L = \omega L$ and $X_C = \frac{1}{\omega C}$.
 
 **Snell's law:** $n_1\sin\theta_1 = n_2\sin\theta_2$
 
-**Total internal reflection:** occurs when $\theta_1 > \theta_c = \sin^{-1}\left(\frac{n_2}{n_1}\right)$ for $n_1 > n_2$.
+**Total internal reflection:** occurs when
+$\theta_1 > \theta_c = \sin^{-1}\left(\frac{n_2}{n_1}\right)$ for $n_1 > n_2$.
 
 ### 6.2 Lenses and Optical Instruments
 
@@ -343,39 +350,40 @@ where $\phi = h\nu_0$ is the work function and $\nu_0$ is the threshold frequenc
 
 ## 8. Key Equations
 
-| Topic | Equation |
-| --- | --- |
-| Newton's second law | $\vec{F} = m\vec{a}$ |
-| Kinetic energy | $K = \frac{1}{2}mv^2$ |
-| Gravitational force | $F = Gm_1 m_2/r^2$ |
-| First law of thermodynamics | $\Delta Q = \Delta U + \Delta W$ |
-| Ideal gas law | $PV = nRT$ |
-| Coulomb's law | $F = \frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}$ |
-| Ohm's law | $V = IR$ |
-| Faraday's law | $\mathcal{E} = -d\Phi_B/dt$ |
-| Lens formula | $1/v - 1/u = 1/f$ |
-| Photoelectric effect | $K_{\max} = h\nu - \phi$ |
-| De Broglie wavelength | $\lambda = h/mv$ |
-| Bohr energy levels | $E_n = -13.6\,Z^2/n^2\;\text{eV}$ |
-| Radioactive decay | $N = N_0 e^{-\lambda t}$ |
+| Topic                       | Equation                                             |
+| --------------------------- | ---------------------------------------------------- |
+| Newton's second law         | $\vec{F} = m\vec{a}$                                 |
+| Kinetic energy              | $K = \frac{1}{2}mv^2$                                |
+| Gravitational force         | $F = Gm_1 m_2/r^2$                                   |
+| First law of thermodynamics | $\Delta Q = \Delta U + \Delta W$                     |
+| Ideal gas law               | $PV = nRT$                                           |
+| Coulomb's law               | $F = \frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}$ |
+| Ohm's law                   | $V = IR$                                             |
+| Faraday's law               | $\mathcal{E} = -d\Phi_B/dt$                          |
+| Lens formula                | $1/v - 1/u = 1/f$                                    |
+| Photoelectric effect        | $K_{\max} = h\nu - \phi$                             |
+| De Broglie wavelength       | $\lambda = h/mv$                                     |
+| Bohr energy levels          | $E_n = -13.6\,Z^2/n^2\;\text{eV}$                    |
+| Radioactive decay           | $N = N_0 e^{-\lambda t}$                             |
 
 ---
 
 ## 9. Exam Tips
 
-1. **Draw diagrams for every problem.** Free-body diagrams, circuit diagrams, and ray diagrams earn marks
-   and clarify your thinking.
+1. **Draw diagrams for every problem.** Free-body diagrams, circuit diagrams, and ray diagrams earn
+   marks and clarify your thinking.
 2. **Show dimensional analysis checks.** If you are unsure of a derived formula, substitute SI units
    to verify dimensional consistency.
-3. **Use SI units consistently.** Convert everything to metres, kilograms, seconds, amperes, kelvin before
-   calculating. Very common source of lost marks.
+3. **Use SI units consistently.** Convert everything to metres, kilograms, seconds, amperes, kelvin
+   before calculating. Very common source of lost marks.
 4. **State assumptions.** In mechanics problems, explicitly note "frictionless surface", "no air
    resistance", etc. This demonstrates understanding.
 5. **Memorise standard values.** $g = 9.8\;\text{m/s}^2$, $e = 1.6 \times 10^{-19}\;\text{C}$,
    $c = 3 \times 10^8\;\text{m/s}$, $h = 6.63 \times 10^{-34}\;\text{J s}$.
-6. **Practise numericals from NCERT exemplar.** CBSE numericals are typically NCERT-level with minor
-   modifications.
-7. **Label circuit diagrams clearly.** Show current direction, polarity of cells, and junction points.
+6. **Practise numericals from NCERT exemplar.** CBSE numericals are in most cases NCERT-level with
+   minor modifications.
+7. **Label circuit diagrams evidently.** Show current direction, polarity of cells, and junction
+   points.
 
 ---
 
@@ -383,14 +391,14 @@ where $\phi = h\nu_0$ is the work function and $\nu_0$ is the threshold frequenc
 
 1. **Forgetting to convert units.** Using cm instead of m, or grams instead of kg, throws off the
    entire calculation.
-2. **Incorrect sign conventions in lenses and mirrors.** Always state your convention (e.g., distances
-   measured from the lens/mirror along the incident ray direction are positive).
+2. **Incorrect sign conventions in lenses and mirrors.** Always state your convention (e.g.,
+   distances measured from the lens/mirror along the incident ray direction are positive).
 3. **Mixing up emf and terminal voltage.** Terminal voltage $V = \mathcal{E} - Ir$ for a discharging
    cell; internal resistance $r$ reduces the terminal voltage.
 4. **Applying Gauss's law without symmetry.** The law is only directly solvable when the field has
    sufficient symmetry (spherical, cylindrical, or planar).
-5. **Ignoring Lenz's law in EMI problems.** The induced current must oppose the change in flux; getting
-   the direction wrong loses marks.
+5. **Ignoring Lenz's law in EMI problems.** The induced current must oppose the change in flux;
+   getting the direction wrong loses marks.
 6. **Confusing $B$ and $H$ fields.** $B$ is magnetic flux density (tesla), $H = B/\mu_0$ is magnetic
    field strength (A/m). In most CBSE problems, $B$ is what is used.
 7. **Writing "heat is lost" instead of specifying the mechanism.** In thermodynamics, distinguish
@@ -399,17 +407,37 @@ where $\phi = h\nu_0$ is the work function and $\nu_0$ is the threshold frequenc
 ## Worked Examples
 
 ### Example 1: Kirchhoff's Laws Problem
-**Problem:** Two cells of emf 2V (internal resistance 0.5 ohm) and 4V (internal resistance 1 ohm) are connected in parallel across a 5 ohm external resistor. Find the current through each cell.
-**Solution:** Let I1 flow from the 2V cell and I2 from the 4V cell. By Kirchhoff's junction rule: I1 + I2 = I (current through 5 ohm resistor). Loop equation for 2V cell: 2 - 0.5I1 = 5(I1 + I2). Loop equation for 4V cell: 4 - I2 = 5(I1 + I2). From second equation: 4 - I2 = 5I1 + 5I2 => 4 = 5I1 + 6I2. From first: 2 - 0.5I1 = 5I1 + 5I2 => 2 = 5.5I1 + 5I2. Subtracting: 2 = -0.5I1 + I2 => I2 = 2 + 0.5I1. Substituting into 4 = 5I1 + 6(2 + 0.5I1) = 5I1 + 12 + 3I1 = 8I1 + 12. So 8I1 = -8, I1 = -1A. The 2V cell is being charged. I2 = 2 + 0.5(-1) = 1.5A. Current through 5 ohm: 0.5A.
+
+**Problem:** Two cells of emf 2V (internal resistance 0.5 ohm) and 4V (internal resistance 1 ohm)
+are connected in parallel across a 5 ohm external resistor. Find the current through each cell.
+**Solution:** Let I1 flow from the 2V cell and I2 from the 4V cell. By Kirchhoff's junction rule:
+I1 + I2 = I (current through 5 ohm resistor). Loop equation for 2V cell: 2 - 0.5I1 = 5(I1 + I2).
+Loop equation for 4V cell: 4 - I2 = 5(I1 + I2). From second equation: 4 - I2 = 5I1 + 5I2 => 4 =
+5I1 + 6I2. From first: 2 - 0.5I1 = 5I1 + 5I2 => 2 = 5.5I1 + 5I2. Subtracting: 2 = -0.5I1 + I2 => I2
+= 2 + 0.5I1. Substituting into 4 = 5I1 + 6(2 + 0.5I1) = 5I1 + 12 + 3I1 = 8I1 + 12. So 8I1 = -8, I1 =
+-1A. The 2V cell is being charged. I2 = 2 + 0.5(-1) = 1.5A. Current through 5 ohm: 0.5A.
 
 ### Example 2: Young's Double Slit Calculation
-**Problem:** Light of wavelength 600 nm passes through double slits separated by 0.1 mm. The screen is 1.5 m away. Find the fringe width.
-**Solution:** Fringe width beta = lambda * D / d = (600 x 10^-9)(1.5) / (0.1 x 10^-3) = 9 x 10^-3 m = 9 mm. The bright fringes are 9 mm apart.
+
+**Problem:** Light of wavelength 600 nm passes through double slits separated by 0.1 mm. The screen
+is 1.5 m away. Find the fringe width. **Solution:** Fringe width beta = lambda \* D / d = (600 x
+10^-9)(1.5) / (0.1 x 10^-3) = 9 x 10^-3 m = 9 mm. The bright fringes are 9 mm apart.
 
 ### Example 3: Photoelectric Effect
-**Problem:** Light of wavelength 400 nm falls on a metal with work function 2.0 eV. Find the maximum kinetic energy of emitted photoelectrons. (h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s, 1 eV = 1.6 x 10^-19 J)
-**Solution:** E_photon = hc/lambda = (6.63 x 10^-34)(3 x 10^8) / (400 x 10^-9) = 4.97 x 10^-19 J = 3.11 eV. K_max = E_photon - phi = 3.11 - 2.0 = 1.11 eV. Since K_max > 0, photoelectrons are emitted.
+
+**Problem:** Light of wavelength 400 nm falls on a metal with work function 2.0 eV. Find the maximum
+kinetic energy of emitted photoelectrons. (h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s, 1 eV = 1.6 x
+10^-19 J) **Solution:** E_photon = hc/lambda = (6.63 x 10^-34)(3 x 10^8) / (400 x 10^-9) = 4.97 x
+10^-19 J = 3.11 eV. K_max = E_photon - phi = 3.11 - 2.0 = 1.11 eV. Since K_max > 0, photoelectrons
+are emitted.
 
 ## Summary
 
-CBSE Physics covers mechanics (Newton's laws, work-energy, rotational motion, gravitation, fluids), thermodynamics (laws, kinetic theory), electrostatics (Coulomb's law, Gauss's law, capacitance), current electricity (Ohm's law, Kirchhoff's laws, Wheatstone bridge), magnetism and electromagnetic induction (Biot-Savart, Faraday's law, AC circuits), optics (reflection, refraction, wave optics), and modern physics (photoelectric effect, atomic structure, nuclear physics, semiconductors). The theory paper is 70 marks and practicals are 30 marks. Key exam strategies include drawing diagrams, using SI units consistently, showing dimensional analysis checks, and practising NCERT exemplar numericals.
+CBSE Physics covers mechanics (Newton's laws, work-energy, rotational motion, gravitation, fluids),
+thermodynamics (laws, kinetic theory), electrostatics (Coulomb's law, Gauss's law, capacitance),
+current electricity (Ohm's law, Kirchhoff's laws, Wheatstone bridge), magnetism and electromagnetic
+induction (Biot-Savart, Faraday's law, AC circuits), optics (reflection, refraction, wave optics),
+and modern physics (photoelectric effect, atomic structure, nuclear physics, semiconductors). The
+theory paper is 70 marks and practicals are 30 marks. Key exam strategies include drawing diagrams,
+using SI units consistently, showing dimensional analysis checks, and practising NCERT exemplar
+numericals.

@@ -1,6 +1,8 @@
 ---
 title: 'Forces -- Diagnostic Tests'
-description: 'GCSE Physics Forces -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'GCSE Physics Forces -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for efficient revision.'
 slug: diag-forces
 hide_table_of_contents: true
 ---
@@ -170,3 +172,19 @@ Immediately after opening: the parachute suddenly increases the drag force drama
 784 N). The resultant force is now upward ($F_d \gt W$), causing the skydiver to decelerate rapidly.
 As speed decreases, drag decreases until it equals weight again at the new, lower terminal velocity
 of 5 m/s.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

@@ -1,7 +1,9 @@
 ---
 id: tcp-and-udp
 title: TCP and UDP
-description: 'TCP and UDP notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and thorough revision.'
+description:
+  'TCP and UDP notes covering key definitions, core concepts, worked examples, and practice
+  questions for thorough study and thorough revision.'
 slug: tcp-and-udp
 sidebar_position: 4
 tags:
@@ -802,3 +804,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

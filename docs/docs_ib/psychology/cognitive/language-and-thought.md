@@ -1,6 +1,8 @@
 ---
 title: Language and Thought
-description: 'IB Psychology Language and Thought notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'IB Psychology Language and Thought notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 slug: language-and-thought
 ---
 
@@ -274,3 +276,14 @@ For an overview of cognitive topics, see
    beyond the sample.
 
 4. Confusing correlation and causation in psychological research evidence.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

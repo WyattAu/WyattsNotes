@@ -1,7 +1,9 @@
 ---
 id: unsafe-rust
 title: Unsafe Rust
-description: 'Rust Unsafe Rust notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and revision.'
+description:
+  'Rust Unsafe Rust notes covering key definitions, core concepts, worked examples, and practice
+  questions for complete exam preparation and revision.'
 slug: unsafe-rust
 ---
 
@@ -941,3 +943,8 @@ evidence, and real-world applications.
 
 Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
 and evaluate experimental evidence critically.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

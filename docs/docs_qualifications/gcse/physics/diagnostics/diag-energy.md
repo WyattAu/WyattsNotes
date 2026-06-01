@@ -1,6 +1,8 @@
 ---
 title: 'Energy -- Diagnostic Tests'
-description: 'GCSE Physics Energy -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'GCSE Physics Energy -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 slug: diag-energy
 hide_table_of_contents: true
 ---
@@ -180,3 +182,19 @@ flood ecosystems and disrupt fish migration; nuclear produces radioactive waste;
 pollution and climate change. Even "clean" energy requires manufacturing, transportation, and
 infrastructure, all of which have carbon footprints and ecological impacts. The goal is to minimise
 rather than eliminate impact.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

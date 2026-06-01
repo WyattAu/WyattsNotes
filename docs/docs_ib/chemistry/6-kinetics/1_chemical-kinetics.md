@@ -147,11 +147,11 @@ $$
 \mathrm{Units of } k = \frac{\mathrm{mol/(L}\cdot\mathrm{s)}}{(\mathrm{mol/L})^{m+n}} = (\mathrm{mol/L})^{1-(m+n)}\cdot\mathrm{s}^{-1}
 $$
 
-| Overall Order | Units of $k$            |
-| ------------- | ----------------------- |
-| 0             | mol/(L$\cdot$S)         |
-| 1             | s$^{-1}$                |
-| 2             | L/(mol$\cdot$S)         |
+| Overall Order | Units of $k$              |
+| ------------- | ------------------------- |
+| 0             | mol/(L$\cdot$S)           |
+| 1             | s$^{-1}$                  |
+| 2             | L/(mol$\cdot$S)           |
 | 3             | L$^2$/(mol$^2$, $\cdot$s) |
 
 ### Zero-Order Reactions
@@ -1096,3 +1096,8 @@ $$k_{320} = 3.494 \times 2.0 \times 10^{-3} = 6.99 \times 10^{-3}\mathrm{ s}^{-1
 | [Chemical Kinetics] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/kinetics)                                |
 | [Chemical Kinetics] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/6-kinetics/1_chemical-kinetics)                           |
 | [Chemical Kinetics] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/3-chemical-kinetics-and-energetics/1_chemical-kinetics) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

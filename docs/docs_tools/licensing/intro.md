@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Licensing
-description: 'Licensing Introduction to Licensing notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'Licensing Introduction to Licensing notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 slug: intro
 sidebar_position: 1
 ---
@@ -224,3 +226,19 @@ This licensing section is divided into two parts:
   Unlicense, WTFPL, BSL, SSPL), compliance obligations for distribution, linking, containers, and
   SaaS, practical guidance for dependency auditing, a comparison table across all major dimensions,
   and common pitfalls.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

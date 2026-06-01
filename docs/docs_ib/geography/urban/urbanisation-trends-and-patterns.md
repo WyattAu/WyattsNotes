@@ -1,6 +1,8 @@
 ---
 title: Urbanisation Trends and Patterns
-description: 'IB Geography Urbanisation Trends and Patterns notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'IB Geography Urbanisation Trends and Patterns notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused preparation.'
 slug: urbanisation-trends-and-patterns
 ---
 
@@ -259,3 +261,14 @@ At [../urban-environments](../urban-environments).
 
 4. Misreading the question, particularly with 'hence' vs 'hence or otherwise' — the former requires
    using previous work.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

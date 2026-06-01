@@ -1,6 +1,8 @@
 ---
 title: Linker Configuration
-description: 'C++ Programming Linker Configuration notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'C++ Programming Linker Configuration notes covering key definitions, core concepts, worked
+  examples, and practice questions for in-depth revision.'
 date: 2025-12-10T05:29:40.734Z
 tags:
   - cpp
@@ -818,3 +820,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

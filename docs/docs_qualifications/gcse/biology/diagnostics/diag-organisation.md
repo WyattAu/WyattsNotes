@@ -1,6 +1,8 @@
 ---
 title: 'Organisation -- Diagnostic Tests'
-description: 'GCSE Biology Organisation -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'GCSE Biology Organisation -- Diagnostic Tests notes covering key definitions, core concepts,
+  worked examples, and practice questions for in-depth revision.'
 slug: diag-organisation
 hide_table_of_contents: true
 ---
@@ -212,3 +214,19 @@ spinal cord and back, not to the brain. (2) Fewer synapses (gaps between neurons
 reducing transmission time. (3) The response is automatic and does not require conscious processing
 in the brain, which takes additional time. This speed is critical for survival -- it allows the body
 to respond to danger (e.g., touching a hot object) before the brain has even registered the pain.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

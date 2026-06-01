@@ -1,6 +1,8 @@
 ---
 title: Binary Formats
-description: 'C++ Programming Binary Formats notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'C++ Programming Binary Formats notes covering key definitions, core concepts, worked examples,
+  and practice questions for structured revision.'
 date: 2025-12-12T01:09:24.824Z
 tags:
   - cpp
@@ -774,3 +776,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

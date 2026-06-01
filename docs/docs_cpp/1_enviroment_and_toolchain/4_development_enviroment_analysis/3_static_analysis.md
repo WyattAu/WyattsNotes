@@ -1,6 +1,8 @@
 ---
 title: Static Analysis
-description: 'C++ Programming Static Analysis notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'C++ Programming Static Analysis notes covering key definitions, core concepts, worked examples,
+  and practice questions for in-depth revision.'
 date: 2025-12-11T06:39:06.995Z
 tags:
   - cpp
@@ -735,3 +737,8 @@ theories, case studies, and management strategies.
 
 Using specific case studies and data to support arguments is essential for achieving the highest
 marks in geography assessments.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

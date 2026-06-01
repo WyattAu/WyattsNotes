@@ -166,7 +166,8 @@ And show at least one full period . :::
 <!-- prettier-ignore -->
 <DesmosGraph title="Trigonometric Functions: y = A sin(Bx + C) + D" expressions={["A\sin(Bx+C)+D", "A\cos(Bx+C)+D", "A\tan(Bx+C)+D"]} width={800} height={500} />
 
-Use the sliders to see how changing $a$, $b$, $c$And $d$ in $y = a\sin(bx + c) + d$ affects the Graph.
+Use the sliders to see how changing $a$, $b$, $c$And $d$ in $y = a\sin(bx + c) + d$ affects the
+Graph.
 
 ## Trigonometric Identities
 
@@ -389,7 +390,8 @@ $$
 
 $, $
 B = \frac{8\sin 30^{\circ}}{\sin 45^{\circ}} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
-$, $
+$,
+$
 
 ### Worked Example: Cosine Rule
 
@@ -399,7 +401,8 @@ $, $
 
 $, $
 \cos C = \frac{5^2 + 7^2 - 8^2}{2 \times 5 \times 7} = \frac{25 + 49 - 64}{70} = \frac{10}{70} = \frac{1}{7}
-$, $
+$,
+$
 
 $, $
 C = \arccos\left(\frac{1}{7}\right) \approx 81.8^{\circ}
@@ -477,7 +480,8 @@ Find angle $B$ using the sine rule:
 
 $, $
 \frac{\sin B}{8} = \frac{\sin 65^{\circ}}{12} \implies \sin B = \frac{2\sin 65^{\circ}}{3} \approx 0.604
-$, $
+$,
+$
 
 Since $b \lt a$There is only one solution: $B \approx 37.2^\circ$So $C = 77.8^\circ$.
 
@@ -500,7 +504,8 @@ Using the cosine rule:
 
 $, $
 AC = \sqrt{15^2 + 20^2 - 2(15)(20)\cos 120^{\circ}} = \sqrt{225 + 400 + 300} = \sqrt{925} = 5\sqrt{37} \approx 30.4 \mathrm{ km}
-$, $
+$,
+$
 
 To find the bearing, find angle $C$:
 
@@ -520,7 +525,8 @@ $, $
 \cos\theta &= k \implies \theta = \arccos(k) + 2n\pi \mathrm{ or } \theta = -\arccos(k) + 2n\pi\\
 \tan\theta &= k \implies \theta = \arctan(k) + n\pi
 \end`\{aligned}`
-$, $
+$,
+$
 
 Where $n \in \mathbb{Z}$.
 
@@ -534,7 +540,8 @@ Let $u = 2x$So $u \in [0, 4\pi]$.
 
 $, $
 \sin u = \frac{1}{2} \implies u = \frac{\pi}{6}, \frac{5\pi}{6}, 2\pi + \frac{\pi}{6}, 2\pi + \frac{5\pi}{6}
-$, $
+$,
+$
 
 $, $
 U = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{13\pi}{6}, \frac{17\pi}{6}
@@ -850,7 +857,8 @@ Using the cosine rule:
 
 $, $
 \cos R = \frac{13^2 + 14^2 - 15^2}{2 \times 13 \times 14} = \frac{169 + 196 - 225}{364} = \frac{140}{364} = \frac{5}{13}
-$, $
+$,
+$
 
 $, $
 R = \arccos\frac{5}{13} \approx 67.4^{\circ}
@@ -869,7 +877,8 @@ Starting from the LHS:
 
 $, $
 \tan^2 x - \sin^2 x = \frac{\sin^2 x}{\cos^2 x} - \sin^2 x = \sin^2 x\left(\frac{1}{\cos^2 x} - 1\right) = \sin^2 x \cdot \frac{1 - \cos^2 x}{\cos^2 x} = \sin^2 x \cdot \frac{\sin^2 x}{\cos^2 x} = \tan^2 x \sin^2 x = \mathrm{RHS}
-$, $
+$,
+$
 
 </details>
 
@@ -923,7 +932,8 @@ Alternatively, using the tangent:
 
 $, $
 \tan\theta = \frac{3}{\sqrt{41}} \implies \theta = \arctan\frac{3}{\sqrt{41}} \approx 25.1^{\circ}
-$, $
+$,
+$
 
 </details>
 
@@ -970,3 +980,8 @@ applying these mathematical techniques.
 | [Trigonometry] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/08-trigonometry) |
 | [Trigonometry] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/3-geometry-and-trigonometry/1_trigonometry)             |
 | [Trigonometry] | DSE     | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/10_trigonometry)                           |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

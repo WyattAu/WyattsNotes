@@ -1,6 +1,8 @@
 ---
 title: Types and Variables
-description: 'Java Types and Variables notes covering key definitions, core concepts, worked examples, and practice questions for solid study and examination practice.'
+description:
+  'Java Types and Variables notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid study and examination practice.'
 date: 2025-06-05T10:00:00.000Z
 tags: ['java']
 categories: ['java']
@@ -900,3 +902,8 @@ The Java type system reflects a series of deliberate tradeoffs:
    data).
 
 4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

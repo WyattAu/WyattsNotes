@@ -972,7 +972,8 @@ $, $
 
 $, $
 X = \frac{-7.5 \times 10^{-3} + \sqrt{(7.5 \times 10^{-3})^2 + 4 \times 7.5 \times 10^{-4}}}{2}
-$, $
+$,
+$
 
 $, $
 X = \frac{-7.5 \times 10^{-3} + \sqrt{5.625 \times 10^{-5} + 3.0 \times 10^{-3}}}{2}
@@ -984,7 +985,8 @@ $, $
 
 $, $
 X = \frac{-7.5 \times 10^{-3} + 5.528 \times 10^{-2}}{2} = \frac{4.778 \times 10^{-2}}{2} = 2.389 \times 10^{-2}
-$, $
+$,
+$
 
 $, $
 [\mathrm{H}^+] \approx 0.0239\mathrm{ mol/L}
@@ -1030,3 +1032,8 @@ to unfamiliar contexts, particularly in calculation and practical questions.
 | [Acids and Bases] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/acids-bases)                       |
 | [Acids and Bases] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/8-acids-and-bases/1_acids-and-bases)                |
 | [Acids and Bases] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/5-acids-bases/1_acids-bases-and-electrochemistry) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

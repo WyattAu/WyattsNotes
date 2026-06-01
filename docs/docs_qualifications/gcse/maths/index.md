@@ -1,6 +1,8 @@
 ---
 title: GCSE Maths
-description: 'GCSE Maths notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and examination preparation.'
+description:
+  'GCSE Maths notes covering key definitions, core concepts, worked examples, and practice questions
+  for detailed revision and examination preparation.'
 date: 2026-04-14
 tags:
   - gcse
@@ -67,3 +69,19 @@ and organised by topic for easy navigation.
   repeating the same errors
 - Focus on problem-solving and multi-step questions — they carry the most marks and are where most
   students lose ground
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

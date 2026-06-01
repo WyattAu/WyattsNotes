@@ -6,7 +6,9 @@ tags:
   - Go
 categories:
   - Go
-description: Go project architecture and best practices. Directory layout, package structure, dependency management, interface design, layered architecture, and the.
+description:
+  Go project architecture and best practices. Directory layout, package structure, dependency
+  management, interface design, layered architecture, and the.
 ---
 
 ## Standard Go Project Layout
@@ -526,7 +528,8 @@ go test -tags=integration ./...
    `cmd/`, and `api/` directories. Start flat and add structure as the codebase grows.
 
 2. **Circular imports.** Go's compiler enforces acyclic imports. If A needs B and B needs A, extract
-   shared code into a third package. Planning package dependencies before writing code prevents this.
+   shared code into a third package. Planning package dependencies before writing code prevents
+   this.
 
 3. **God packages.** A package named `common`, `util`, or `misc` that accumulates unrelated helpers
    is a code smell. Place functions near the types they operate on.
@@ -561,3 +564,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

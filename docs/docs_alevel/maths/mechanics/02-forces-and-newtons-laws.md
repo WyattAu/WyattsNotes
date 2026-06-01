@@ -485,9 +485,9 @@ If a body in equilibrium is acted upon by exactly three coplanar forces, then:
 
 ### 11.3 Lami's theorem
 
-If three coplanar forces $F_1$, $F_2$, $F_3$ act on a body in equilibrium, and $\theta_1$ is the Angle
-between $F_2$ and $F_3$, $\theta_2$ is the angle between $F_1$ and $F_3$And $\theta_3$ is The angle
-between $F_1$ and $F_2$Then:
+If three coplanar forces $F_1$, $F_2$, $F_3$ act on a body in equilibrium, and $\theta_1$ is the
+Angle between $F_2$ and $F_3$, $\theta_2$ is the angle between $F_1$ and $F_3$And $\theta_3$ is The
+angle between $F_1$ and $F_2$Then:
 
 $$\frac◆LB◆F_1◆RB◆◆LB◆\sin\theta_1◆RB◆ = \frac◆LB◆F_2◆RB◆◆LB◆\sin\theta_2◆RB◆ = \frac◆LB◆F_3◆RB◆◆LB◆\sin\theta_3◆RB◆$$
 
@@ -1030,3 +1030,14 @@ building a personal test matrix. :::
 
 4. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

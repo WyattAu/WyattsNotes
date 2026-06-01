@@ -1782,3 +1782,14 @@ END IF
 | [Programming Constructs] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/programming/01-programming-constructs) |
 | [Programming Constructs] | IB      | [View](https://ib.wyattau.com/docs/ib/computer-science/7-control/1_programming-fundamentals)                   |
 | [Programming Constructs] | DSE     | [View](https://dse.wyattau.com/docs/dse/ict/3-programming-and-databases/1_programming-fundamentals)            |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

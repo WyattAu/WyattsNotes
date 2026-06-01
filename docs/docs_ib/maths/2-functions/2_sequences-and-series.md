@@ -895,3 +895,8 @@ and building a personal test matrix. :::
 | [Sequences and Series] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/maths/pure-mathematics/06-sequences-and-series) |
 | [Sequences and Series] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/2-functions/2_sequences-and-series)                             |
 | [Sequences and Series] | DSE     | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/6_sequences-and-series)                            |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

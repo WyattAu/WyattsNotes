@@ -1,7 +1,9 @@
 ---
 id: ssh
 title: SSH
-description: 'SSH notes covering key definitions, core concepts, worked examples, and practice questions for clear study and thorough revision.'
+description:
+  'SSH notes covering key definitions, core concepts, worked examples, and practice questions for
+  clear study and thorough revision.'
 slug: ssh
 sidebar_position: 2
 ---
@@ -881,3 +883,8 @@ and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

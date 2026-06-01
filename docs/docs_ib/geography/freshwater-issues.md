@@ -102,7 +102,7 @@ responses. Confusion between similar terms is a common source of lost marks on P
 
 ## Exam Focus
 
-Paper 1 questions on freshwater typically require:
+Paper 1 questions on freshwater in most cases require:
 
 - Explaining the physical and human causes of water scarcity using specific case studies (e.g., the
   Colorado River basin, sub-Saharan Africa).

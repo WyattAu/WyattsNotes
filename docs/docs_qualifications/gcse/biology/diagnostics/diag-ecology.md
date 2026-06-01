@@ -1,6 +1,8 @@
 ---
 title: 'Ecology -- Diagnostic Tests'
-description: 'GCSE Biology Ecology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'GCSE Biology Ecology -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for clear revision.'
 slug: diag-ecology
 hide_table_of_contents: true
 ---
@@ -229,3 +231,19 @@ variable (soil pH) and species distribution (daisy abundance).
 **Hypothesis:** "Daisies are more abundant in soil with a pH greater than 6.5" or "Soil pH affects
 the distribution of daisies, with higher pH favouring daisy growth." The investigation does not
 prove causation -- other factors (light, moisture, competition) may also be correlated with pH.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

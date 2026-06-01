@@ -1,6 +1,8 @@
 ---
 title: Integrals
-description: 'Qualifications Maths Integrals notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision and exam readiness.'
+description:
+  'Qualifications Maths Integrals notes covering key definitions, core concepts, worked examples,
+  and practice questions for thorough revision and exam readiness.'
 date: 2026-04-14
 tags:
   - ap
@@ -335,7 +337,8 @@ Let $u = 1 + x^2$$du = 2x\, dx$. When $x = 0$$u = 1$. When $x = 1, u = 2$.
 
 $, $
 \int_0^1 x\sqrt{1 + x^2}\, dx = \frac{1}{2}\int_1^2 \sqrt{u}\, du = \frac{1}{2}\left[\frac{2u^{3/2}}{3}\right]_1^2 = \frac{1}{3}(2\sqrt{2} - 1)
-$, $
+$,
+$
 
 :::
 
@@ -510,7 +513,8 @@ Let $u = x^2$$du = 2x\, dx$:
 
 $, $
 \int_0^{\infty} xe^{-x^2}\, dx = \frac{1}{2}\int_0^{\infty} e^{-u}\, du = \frac{1}{2}\left[-e^{-u}\right]_0^{\infty} = \frac{1}{2}(0 + 1) = \frac{1}{2}
-$, $
+$,
+$
 
 :::
 
@@ -664,7 +668,8 @@ Let $u = 1 + x$$du = dx$:
 
 $, $
 L = \int_1^4 \sqrt{u}\, du = \left[\frac{2u^{3/2}}{3}\right]_1^4 = \frac{2}{3}(8 - 1) = \frac{14}{3}
-$, $
+$,
+$
 
 :::
 
@@ -870,3 +875,8 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Chemical Equilibrium
-description: 'A-Level Chemistry Chemical Equilibrium notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'A-Level Chemistry Chemical Equilibrium notes covering key definitions, core concepts, worked
+  examples, and practice questions for methodical revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -157,7 +159,8 @@ Partial pressures ($p_i = x_i \times 200$):
 
 $, $
 K_p = \frac◆LB◆(p_{\mathrm{SO}_3})^2◆RB◆◆LB◆(p_{\mathrm{SO}_2})^2 \times p_{\mathrm{O}_2}◆RB◆ = \frac◆LB◆(100.0)^2◆RB◆◆LB◆(66.7)^2 \times 33.3◆RB◆ = \frac{10000}{148074} = 0.0675\,\mathrm{kPa}^{-1}
-$, $
+$,
+$
 
 ## Homogeneous and Heterogeneous Equilibria
 
@@ -193,7 +196,8 @@ The quantitative relationship is given by the **van 't Hoff equation**:
 
 $, $
 \ln\left(\frac{K_2}{K_1}\right) = -\frac◆LB◆\Delta H^\circ◆RB◆◆LB◆R◆RB◆\left(\frac{1}{T_2} - \frac{1}{T_1}\right)
-$, $
+$,
+$
 
 This is analogous to the Arrhenius equation (see [Chemical Kinetics](./chemical-kinetics)).
 
@@ -237,7 +241,8 @@ $\Delta n_g = 2 - (1 + 3) = -2$.
 
 $, $
 K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2} = \frac◆LB◆6.0 \times 10^{-2}◆RB◆◆LB◆(8.314 \times 500)^2◆RB◆ = \frac{0.060}{(4157)^2} = \frac◆LB◆0.060◆RB◆◆LB◆1.728 \times 10^7◆RB◆ = 3.5 \times 10^{-9}\,\mathrm{Pa^{-2}}
-$, $
+$,
+$
 
 Note: if $K_c$ is in $\mathrm{mol/dm^3}$$R$ must be in consistent units. Alternatively, work in
 $\mathrm{atm}$: $R = 0.0821\,\mathrm{dm^3\,atm\,mol^{-1}\,K^{-1}}$.
@@ -327,7 +332,8 @@ $, $
 
 $, $
 S = \sqrt[3]{\frac{K_{sp}}{4}} = \sqrt[3]{\frac◆LB◆1.4 \times 10^{-8}◆RB◆◆LB◆4◆RB◆} = \sqrt[3]{3.5 \times 10^{-9}} = 1.52 \times 10^{-3}\,\mathrm{mol/dm}^3
-$, $
+$,
+$
 
 ### Precipitation Prediction
 
@@ -346,13 +352,15 @@ common ion shifts the dissolution equilibrium to the left, suppressing dissoluti
 
 $, $
 S = \sqrt{K_{sp}} = \sqrt◆LB◆1.8 \times 10^{-10}◆RB◆ = 1.34 \times 10^{-5}\,\mathrm{mol/dm}^3
-$, $
+$,
+$
 
 In $0.10\,\mathrm{mol/dm}^3$ $\mathrm{NaCl}$ solution:
 
 $, $
 [\mathrm{Ag}^+] = \frac◆LB◆K_{sp}◆RB◆◆LB◆[\mathrm{Cl}^-]◆RB◆ = \frac◆LB◆1.8 \times 10^{-10}◆RB◆◆LB◆0.10◆RB◆ = 1.8 \times 10^{-9}\,\mathrm{mol/dm}^3
-$, $
+$,
+$
 
 The solubility is reduced by a factor of approximately $10^4$.
 
@@ -581,7 +589,8 @@ Verification:
 
 $, $
 K_p = \frac◆LB◆p(\mathrm{PCl}_3) \times p(\mathrm{Cl}_2)◆RB◆◆LB◆p(\mathrm{PCl}_5)◆RB◆ = \frac◆LB◆95 \times 95◆RB◆◆LB◆10◆RB◆ = \frac{9025}{10} = 902.5\,\mathrm{kPa}
-$, $
+$,
+$
 
 This does not equal $K_p = 12.5\,\mathrm{kPa}$Indicating that the given data is inconsistent with
 $K_p = 12.5\,\mathrm{kPa}$. Either the total pressure or the $\mathrm{Cl}_2$ partial pressure is
@@ -613,7 +622,8 @@ Using the quadratic formula:
 
 $, $
 X = \frac◆LB◆412.5 \pm \sqrt{412.5^2 - 4 \times 40000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm \sqrt{170156 - 160000}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm \sqrt{10156}◆RB◆◆LB◆2◆RB◆ = \frac◆LB◆412.5 \pm 100.8◆RB◆◆LB◆2◆RB◆
-$, $
+$,
+$
 
 $x = 256.7$ or $x = 155.9$. Since $p(\mathrm{PCl}_3) = 200 - x$ must be positive,
 $x = 155.9\,\mathrm{kPa}$.
@@ -643,14 +653,16 @@ $, $
 
 $, $
 S = \sqrt[3]{\frac◆LB◆3.9 \times 10^{-11}◆RB◆◆LB◆4◆RB◆} = \sqrt[3]{9.75 \times 10^{-12}} = 2.14 \times 10^{-4}\,\mathrm{mol/dm}^3
-$, $
+$,
+$
 
 (b) In $0.050\,\mathrm{mol/dm}^3$ $\mathrm{CaCl}_2$:
 $[\mathrm{Ca}^{2+}]_\mathrm{from\ CaCl_2} = 0.050\,\mathrm{mol/dm}^3$.
 
 $, $
 K_{sp} = [\mathrm{Ca}^{2+}]_\mathrm{total}[\mathrm{F}^-]^2 = (0.050 + s)(2s)^2 \approx 0.050 \times 4s^2
-$, $
+$,
+$
 
 (The approximation $0.050 + s \approx 0.050$ is valid because $s$ will be very small compared to
 $0.050$.)
@@ -711,7 +723,8 @@ $p(\mathrm{N}_2\mathrm{O}_4) = \frac{1.00 - x}{1.00 + x} \times p_\mathrm{total}
 
 $, $
 K_p = \frac◆LB◆p(\mathrm{NO}_2)^2◆RB◆◆LB◆p(\mathrm{N}_2\mathrm{O}_4)◆RB◆ = \frac{(2x)^2}{(1.00 - x)(1.00 + x)} \times p_\mathrm{total} = \frac{4x^2}{1 - x^2} \times p_\mathrm{total}
-$, $
+$,
+$
 
 Since $K_p = 0.115\,\mathrm{atm} = 0.115 \times 101325 = 11652\,\mathrm{Pa}$:
 
@@ -1036,3 +1049,8 @@ underlying theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

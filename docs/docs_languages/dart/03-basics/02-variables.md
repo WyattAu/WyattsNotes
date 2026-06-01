@@ -1,6 +1,8 @@
 ---
 title: Variables
-description: 'Dart Variables notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision and exam readiness.'
+description:
+  'Dart Variables notes covering key definitions, core concepts, worked examples, and practice
+  questions for methodical revision and exam readiness.'
 date: 2025-07-13T20:44:32.129Z
 tags:
   - dart
@@ -534,3 +536,14 @@ Directly.
 
 4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
    implementation in code.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

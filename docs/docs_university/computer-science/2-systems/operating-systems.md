@@ -1,6 +1,8 @@
 ---
 title: Operating Systems
-description: 'University Computer Science Operating Systems notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'University Computer Science Operating Systems notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused preparation.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -33,15 +35,15 @@ New → Ready → Running → Waiting → Ready → ... → Terminated
 
 The OS maintains a PCB for each process containing:
 
-| Field              | Description                     |
-| ------------------ | ------------------------------- |
-| PID                | Process identifier              |
-| State              | Current state (ready, running…) |
-| PC                 | Program counter                 |
-| Registers          | CPU register values             |
-| Memory limits      | Base/limit or page table        |
-| I/O status         | Open files, devices             |
-| Scheduling info    | Priority, queues                |
+| Field           | Description                     |
+| --------------- | ------------------------------- |
+| PID             | Process identifier              |
+| State           | Current state (ready, running…) |
+| PC              | Program counter                 |
+| Registers       | CPU register values             |
+| Memory limits   | Base/limit or page table        |
+| I/O status      | Open files, devices             |
+| Scheduling info | Priority, queues                |
 
 ### 1.3 Context Switch
 
@@ -56,25 +58,27 @@ CONTEXT_SWITCH(old_process, new_process):
     transfer control to new_process
 ```
 
-**Cost:** Typically $O(\mu s)$ to $O(ms)$, includes TLB flush overhead.
+**Cost:** In most cases $O(\mu s)$ to $O(ms)$, includes TLB flush overhead.
 
 ### 1.4 Threads
 
-A **thread** is a lightweight unit of execution within a process. Threads share the process's address space but have their own:
+A **thread** is a lightweight unit of execution within a process. Threads share the process's
+address space but have their own:
 
 - Stack
 - Registers (PC, SP)
 - Thread-local storage
 
-| Aspect          | Process            | Thread              |
-| --------------- | ------------------ | -------------------- |
-| Creation cost   | High               | Low                  |
-| Context switch  | High (TLB flush)   | Low (same address space) |
-| Memory          | Separate           | Shared               |
-| Communication    | IPC required       | Shared memory        |
-| Failure         | Independent        | One crash kills all  |
+| Aspect         | Process          | Thread                   |
+| -------------- | ---------------- | ------------------------ |
+| Creation cost  | High             | Low                      |
+| Context switch | High (TLB flush) | Low (same address space) |
+| Memory         | Separate         | Shared                   |
+| Communication  | IPC required     | Shared memory            |
+| Failure        | Independent      | One crash kills all      |
 
 **Types:**
+
 - **Kernel threads:** Managed by the OS (full concurrency, slower switching).
 - **User threads:** Managed by a library (fast, but blocking one blocks all unless M:N model).
 - **M:N model:** $M$ user threads mapped to $N$ kernel threads.
@@ -83,14 +87,14 @@ A **thread** is a lightweight unit of execution within a process. Threads share 
 
 ### 2.1 Scheduling Criteria
 
-| Criterion             | Goal                            |
-| --------------------- | ------------------------------- |
-| CPU utilization       | Keep CPU busy                   |
-| Throughput            | Maximize processes completed    |
-| Turnaround time       | Minimize (completion - arrival) |
-| Waiting time          | Minimize time in ready queue    |
-| Response time         | Minimize time to first response |
-| Fairness              | Equal share for equal priority  |
+| Criterion       | Goal                            |
+| --------------- | ------------------------------- |
+| CPU utilization | Keep CPU busy                   |
+| Throughput      | Maximize processes completed    |
+| Turnaround time | Minimize (completion - arrival) |
+| Waiting time    | Minimize time in ready queue    |
+| Response time   | Minimize time to first response |
+| Fairness        | Equal share for equal priority  |
 
 ### 2.2 First-Come, First-Served (FCFS)
 
@@ -102,7 +106,8 @@ FCFS:
         run process to completion
 ```
 
-**Non-preemptive.** Simple but suffers from the **convoy effect**: short processes wait behind long ones.
+**Non-preemptive.** Simple but suffers from the **convoy effect**: short processes wait behind long
+ones.
 
 ### 2.3 Shortest Job First (SJF)
 
@@ -115,7 +120,8 @@ SJF:
 
 **Optimal** (minimizes average waiting time), but requires knowing burst times in advance.
 
-**Shortest Remaining Time First (SRTF):** Preemptive version—when a new process arrives with shorter remaining time, preempt current process.
+**Shortest Remaining Time First (SRTF):** Preemptive version—when a new process arrives with shorter
+remaining time, preempt current process.
 
 ### 2.4 Round Robin (RR)
 
@@ -130,10 +136,10 @@ ROUND_ROBIN(ready_queue, time_quantum):
 
 **Preemptive.** Fair allocation. Choosing time quantum:
 
-| Quantum | Effect                              |
-| ------- | ----------------------------------- |
-| Too small | Excessive context switching      |
-| Too large | Degenerates to FCFS               |
+| Quantum       | Effect                       |
+| ------------- | ---------------------------- |
+| Too small     | Excessive context switching  |
+| Too large     | Degenerates to FCFS          |
 | Rule of thumb | ~10-100x context switch time |
 
 ### 2.5 Priority Scheduling
@@ -169,19 +175,20 @@ MLFQ:
 
 ### 2.7 Comparison
 
-| Algorithm     | Preemptive | Starvation | Fairness | Avg Waiting |
-| ------------- | ---------- | ---------- | -------- | ----------- |
-| FCFS          | No         | No         | High     | Poor        |
-| SJF           | Optional   | Yes        | Low      | Optimal     |
-| RR            | Yes        | No         | High     | Moderate    |
-| Priority     | Optional   | Yes        | Low      | Varies      |
-| MLFQ          | Yes        | With aging | High     | Good        |
+| Algorithm | Preemptive | Starvation | Fairness | Avg Waiting |
+| --------- | ---------- | ---------- | -------- | ----------- |
+| FCFS      | No         | No         | High     | Poor        |
+| SJF       | Optional   | Yes        | Low      | Optimal     |
+| RR        | Yes        | No         | High     | Moderate    |
+| Priority  | Optional   | Yes        | Low      | Varies      |
+| MLFQ      | Yes        | With aging | High     | Good        |
 
 ## 3. Synchronization
 
 ### 3.1 Race Conditions
 
-A **race condition** occurs when multiple threads access shared data concurrently and the outcome depends on the execution order.
+A **race condition** occurs when multiple threads access shared data concurrently and the outcome
+depends on the execution order.
 
 **Example (increment):**
 
@@ -198,7 +205,8 @@ store r1, x        store r2, x
 **Requirements for a correct solution:**
 
 1. **Mutual exclusion:** At most one thread in the critical section at a time.
-2. **Progress:** If no thread is in the critical section and some want to enter, only those not in the remainder section decide.
+2. **Progress:** If no thread is in the critical section and some want to enter, only those not in
+   the remainder section decide.
 3. **Bounded waiting:** No thread waits forever to enter.
 
 ### 3.3 Mutex (Locks)
@@ -241,6 +249,7 @@ SIGNAL(S):        // V(S), up
 ```
 
 **Types:**
+
 - **Binary semaphore:** $S \in \{0, 1\}$ — acts like a mutex.
 - **Counting semaphore:** $S \geq 0$ — controls access to a resource with multiple instances.
 
@@ -309,7 +318,8 @@ PHILOSOPHER(i):
         SIGNAL(forks[(i+1) % 5])
 ```
 
-**Deadlock risk:** All pick up left fork simultaneously. Fix: pick up lower-numbered fork first, or allow at most 4 philosophers to eat.
+**Deadlock risk:** All pick up left fork simultaneously. Fix: pick up lower-numbered fork first, or
+allow at most 4 philosophers to eat.
 
 ### 3.6 Monitors
 
@@ -363,8 +373,10 @@ Deadlock requires all four conditions simultaneously (**Coffman conditions**):
 ### 4.2 Resource-Allocation Graph
 
 A directed graph where:
+
 - **Vertices:** Processes (circles) and resources (squares).
-- **Edges:** Request edge $P_i \to R_j$ (process $i$ requests resource $j$); Assignment edge $R_j \to P_i$ (resource $j$ is held by process $i$).
+- **Edges:** Request edge $P_i \to R_j$ (process $i$ requests resource $j$); Assignment edge
+  $R_j \to P_i$ (resource $j$ is held by process $i$).
 
 **Deadlock exists** iff the graph contains a cycle and each resource has only one instance.
 
@@ -372,16 +384,17 @@ A directed graph where:
 
 Eliminate one of the four conditions:
 
-| Condition       | Prevention Strategy                           |
-| --------------- | --------------------------------------------- |
-| Mutual exclusion | Not possible for non-sharable resources      |
-| Hold and wait   | Require all resources before execution       |
-| No preemption   | Preempt resources from waiting processes     |
-| Circular wait   | Impose total ordering on resource types       |
+| Condition        | Prevention Strategy                      |
+| ---------------- | ---------------------------------------- |
+| Mutual exclusion | Not possible for non-sharable resources  |
+| Hold and wait    | Require all resources before execution   |
+| No preemption    | Preempt resources from waiting processes |
+| Circular wait    | Impose total ordering on resource types  |
 
 ### 4.4 Deadlock Avoidance: Banker's Algorithm
 
-**Safe state:** A state where there exists a sequence $\langle P_1, P_2, \ldots, P_n \rangle$ such that each $P_i$ can obtain all needed resources and terminate.
+**Safe state:** A state where there exists a sequence $\langle P_1, P_2, \ldots, P_n \rangle$ such
+that each $P_i$ can obtain all needed resources and terminate.
 
 ```
 BANKERS(Available, Max, Allocation, Need):
@@ -408,7 +421,8 @@ BANKERS(Available, Max, Allocation, Need):
 
 ### 4.5 Deadlock Detection
 
-Similar to Banker's, but checks if any process is stuck (not whether granting a request leads to a safe state).
+Similar to Banker's, but checks if any process is stuck (not whether granting a request leads to a
+safe state).
 
 ```
 DEADLOCK_DETECT(Available, Allocation, Request):
@@ -438,14 +452,14 @@ DEADLOCK_DETECT(Available, Allocation, Request):
 
 ### 5.1 Address Binding
 
-| Binding time    | Scheme              | Flexibility |
-| --------------- | ------------------- | ----------- |
-| Compile time    | Absolute addresses  | None        |
-| Load time       | Relocatable         | Low         |
-| Run time        | Dynamic (MMU)       | High        |
+| Binding time | Scheme             | Flexibility |
+| ------------ | ------------------ | ----------- |
+| Compile time | Absolute addresses | None        |
+| Load time    | Relocatable        | Low         |
+| Run time     | Dynamic (MMU)      | High        |
 
-**Logical address:** Generated by the CPU (program view).
-**Physical address:** Actual memory location (hardware view).
+**Logical address:** Generated by the CPU (program view). **Physical address:** Actual memory
+location (hardware view).
 
 **MMU (Memory Management Unit):** Translates logical to physical addresses at runtime.
 
@@ -456,18 +470,19 @@ DEADLOCK_DETECT(Available, Allocation, Request):
 
 **Allocation strategies:**
 
-| Strategy    | Description                                      |
-| ----------- | ------------------------------------------------ |
-| First-fit   | Allocate first block large enough                |
-| Best-fit    | Allocate smallest block that fits                |
-| Worst-fit   | Allocate largest block                           |
-| Next-fit    | Continue from last allocation point             |
+| Strategy  | Description                         |
+| --------- | ----------------------------------- |
+| First-fit | Allocate first block large enough   |
+| Best-fit  | Allocate smallest block that fits   |
+| Worst-fit | Allocate largest block              |
+| Next-fit  | Continue from last allocation point |
 
 **Compaction:** Relocate processes to consolidate free space. Requires dynamic relocation.
 
 ### 5.3 Paging
 
-Divide physical memory into **frames** of size $F$ bytes. Divide logical memory into **pages** of the same size.
+Divide physical memory into **frames** of size $F$ bytes. Divide logical memory into **pages** of
+the same size.
 
 **Page table:** Maps page numbers to frame numbers.
 
@@ -516,19 +531,22 @@ TLB_LOOKUP(page_number):
     return frame
 ```
 
-**Hit ratio:** Fraction of accesses resolved by TLB (typically 95-99%).
+**Hit ratio:** Fraction of accesses resolved by TLB (in most cases 95-99%).
 
 **Effective access time:**
 
 $$\text{EAT} = h \cdot t_{\text{TLB}} + (1 - h) \cdot (t_{\text{mem}} + t_{\text{TLB}})$$
 
-With TLB + two-level page table: $\text{EAT} = h(t_{\text{TLB}} + t_{\text{mem}}) + (1-h)(t_{\text{TLB}} + 2 \cdot t_{\text{mem}})$.
+With TLB + two-level page table:
+$\text{EAT} = h(t_{\text{TLB}} + t_{\text{mem}}) + (1-h)(t_{\text{TLB}} + 2 \cdot t_{\text{mem}})$.
 
 ### 5.7 Multi-Level Page Tables
 
-For 32-bit addresses with 4KB pages: $2^{20}$ page table entries. With 4-byte entries: 4MB per process.
+For 32-bit addresses with 4KB pages: $2^{20}$ page table entries. With 4-byte entries: 4MB per
+process.
 
-**Two-level page table:** Outer page table (page directory) + inner page tables. Only allocate inner tables for pages in use.
+**Two-level page table:** Outer page table (page directory) + inner page tables. Only allocate inner
+tables for pages in use.
 
 For 64-bit systems: often 4-level page tables (PGD → PUD → PMD → PTE).
 
@@ -536,7 +554,8 @@ For 64-bit systems: often 4-level page tables (PGD → PUD → PMD → PTE).
 
 ### 6.1 Concept
 
-**Virtual memory** allows execution of processes not completely in physical memory. Uses **demand paging**: pages loaded only when accessed.
+**Virtual memory** allows execution of processes not completely in physical memory. Uses **demand
+paging**: pages loaded only when accessed.
 
 ```
 PAGE_FAULT_HANDLER(page_number):
@@ -549,7 +568,8 @@ PAGE_FAULT_HANDLER(page_number):
 
 ### 6.2 Page Replacement Algorithms
 
-**Optimal (OPT):** Replace the page that will not be used for the longest time in the future. Theoretically optimal, not implementable.
+**Optimal (OPT):** Replace the page that will not be used for the longest time in the future.
+Theoretically optimal, not implementable.
 
 ```
 OPTIMAL(pages, frames):
@@ -593,13 +613,13 @@ LRU(pages, frames):
 
 ### 6.3 Page Replacement Comparison
 
-| Algorithm | Belady's Anomaly | Stack Property | Practical? |
-| --------- | ---------------- | -------------- | ---------- |
-| Optimal   | No               | Yes            | No         |
-| LRU       | No               | Yes            | Yes        |
-| FIFO      | Yes              | No             | Yes        |
-| Clock     | No (approx LRU)  | No             | Yes        |
-| Second-chance | No (approx LRU)| No            | Yes        |
+| Algorithm     | Belady's Anomaly | Stack Property | Practical? |
+| ------------- | ---------------- | -------------- | ---------- |
+| Optimal       | No               | Yes            | No         |
+| LRU           | No               | Yes            | Yes        |
+| FIFO          | Yes              | No             | Yes        |
+| Clock         | No (approx LRU)  | No             | Yes        |
+| Second-chance | No (approx LRU)  | No             | Yes        |
 
 ### 6.4 Thrashing
 
@@ -607,7 +627,8 @@ When a process spends more time paging than executing.
 
 $$\text{Thrashing occurs when } \sum \text{working sets} > \text{available frames}$$
 
-**Working set model:** $W(t, \Delta) =$ set of pages referenced in the last $\Delta$ memory references.
+**Working set model:** $W(t, \Delta) =$ set of pages referenced in the last $\Delta$ memory
+references.
 
 **Solution:** Reduce degree of multiprogramming or increase physical memory.
 
@@ -618,48 +639,74 @@ $$\text{Thrashing occurs when } \sum \text{working sets} > \text{available frame
 **Proportional allocation:** $f_i = \frac{s_i}{\sum s_j} \cdot m$ where $s_i$ = size of process $i$.
 
 **Local vs. global replacement:**
+
 - **Local:** Replace from this process's frames only.
 - **Global:** Replace from any process's frames (more flexible, harder to predict).
 
 ## 7. Common Pitfalls
 
-1. **Deadlock from wrong lock ordering.** Always acquire locks in a consistent global order to prevent circular wait. Inconsistent ordering is the most common cause of deadlocks in practice.
+1. **Deadlock from wrong lock ordering.** Always acquire locks in a consistent global order to
+   prevent circular wait. Inconsistent ordering is the most common cause of deadlocks in practice.
 
-2. **Using semaphores as mutexes without understanding blocking semantics.** A binary semaphore used for mutual exclusion behaves differently from a mutex when a thread that already holds it tries to acquire it again (deadlock vs. recursive behavior).
+2. **Using semaphores as mutexes without understanding blocking semantics.** A binary semaphore used
+   for mutual exclusion behaves differently from a mutex when a thread that already holds it tries
+   to acquire it again (deadlock vs. recursive behavior).
 
-3. **Ignoring Belady's anomaly with FIFO.** More frames can cause more page faults with FIFO. If guaranteed optimal behavior is needed, use LRU or a stack-based algorithm.
+3. **Ignoring Belady's anomaly with FIFO.** More frames can cause more page faults with FIFO. If
+   guaranteed optimal behavior is needed, use LRU or a stack-based algorithm.
 
-4. **Starvation in priority scheduling.** Without aging, low-priority processes may never execute. Always implement aging or a time-slicing mechanism.
+4. **Starvation in priority scheduling.** Without aging, low-priority processes may never execute.
+   Always implement aging or a time-slicing mechanism.
 
-5. **Context switch overhead.** Switching too frequently (tiny time quantum in RR) wastes CPU time. The quantum should be at least an order of magnitude larger than the context switch time.
+5. **Context switch overhead.** Switching too frequently (tiny time quantum in RR) wastes CPU time.
+   The quantum should be at least an order of magnitude larger than the context switch time.
 
-6. **Race conditions from incorrect synchronization.** Protecting the critical section is not enough if shared variables are accessed outside the critical section. Every shared variable access must be protected.
+6. **Race conditions from incorrect synchronization.** Protecting the critical section is not enough
+   if shared variables are accessed outside the critical section. Every shared variable access must
+   be protected.
 
-7. **TLB coherence issues on context switch.** Process-specific TLB entries must be invalidated or tagged with an address space ID (ASID) on context switch to prevent one process from using another's translations.
+7. **TLB coherence issues on context switch.** Process-specific TLB entries must be invalidated or
+   tagged with an address space ID (ASID) on context switch to prevent one process from using
+   another's translations.
 
 ## Worked Examples
 
 ### Example 1: CPU Scheduling -- Round Robin
-**Problem:** Four processes arrive at time 0 with burst times: P1=8, P2=4, P3=2, P4=1 (time quantum = 2). Calculate turnaround and waiting times.
-**Solution:** Gantt: P1(0-2), P2(2-4), P3(4-6), P4(6-7), P1(7-9), P2(9-11), P1(11-13), P1(13-15). Turnaround: P1=15, P2=11, P3=6, P4=7. Waiting = turnaround - burst: P1=7, P2=7, P3=4, P4=6. Average waiting = 6.0.
+
+**Problem:** Four processes arrive at time 0 with burst times: P1=8, P2=4, P3=2, P4=1 (time quantum
+= 2). Calculate turnaround and waiting times. **Solution:** Gantt: P1(0-2), P2(2-4), P3(4-6),
+P4(6-7), P1(7-9), P2(9-11), P1(11-13), P1(13-15). Turnaround: P1=15, P2=11, P3=6, P4=7. Waiting =
+turnaround - burst: P1=7, P2=7, P3=4, P4=6. Average waiting = 6.0.
 
 ### Example 2: Deadlock Detection with Banker's Algorithm
-**Problem:** A system has 3 resource types and 5 processes. Available = (3, 3, 2). Max matrix shows P1=(7,5,3), P2=(3,2,2), P3=(9,0,2), P4=(2,2,2), P5=(4,3,3). Allocation: P1=(0,1,0), P2=(2,0,0), P3=(3,0,2), P4=(2,1,1), P5=(0,0,2). Is the system in a safe state?
-**Solution:** Need = Max - Allocation: P1=(7,4,3), P2=(1,2,2), P3=(6,0,0), P4=(0,1,1), P5=(4,3,1). Available = (3,3,2). P2 can be satisfied: Available + P2 alloc = (3,3,2)+(2,0,0) = (5,3,2). Then P4: (5,3,2)+(2,1,1)=(7,4,3). Then P1: (7,4,3)+(0,1,0)=(7,5,3). Then P3: (7,5,3)+(3,0,2)=(10,5,5). Then P5. Safe sequence: P2, P4, P1, P3, P5.
+
+**Problem:** A system has 3 resource types and 5 processes. Available = (3, 3, 2). Max matrix shows
+P1=(7,5,3), P2=(3,2,2), P3=(9,0,2), P4=(2,2,2), P5=(4,3,3). Allocation: P1=(0,1,0), P2=(2,0,0),
+P3=(3,0,2), P4=(2,1,1), P5=(0,0,2). Is the system in a safe state? **Solution:** Need = Max -
+Allocation: P1=(7,4,3), P2=(1,2,2), P3=(6,0,0), P4=(0,1,1), P5=(4,3,1). Available = (3,3,2). P2 can
+be satisfied: Available + P2 alloc = (3,3,2)+(2,0,0) = (5,3,2). Then P4: (5,3,2)+(2,1,1)=(7,4,3).
+Then P1: (7,4,3)+(0,1,0)=(7,5,3). Then P3: (7,5,3)+(3,0,2)=(10,5,5). Then P5. Safe sequence: P2, P4,
+P1, P3, P5.
 
 ## Summary
 
-- **Processes** are heavyweight units with separate address spaces; **threads** are lightweight and share memory within a process.
-- **Scheduling algorithms** (FCFS, SJF, RR, priority, MLFQ) trade off throughput, latency, and fairness.
-- **Synchronization** uses mutexes, semaphores, monitors, and condition variables to enforce mutual exclusion and coordinate threads.
-- **Deadlock** requires four conditions simultaneously; prevented by eliminating one, avoided with Banker's algorithm, or detected and recovered from.
-- **Paging** eliminates external fragmentation; **segmentation** preserves logical structure. **TLB** caches translations for fast address resolution.
-- **Virtual memory** (demand paging) allows programs larger than physical memory. Page replacement (OPT, LRU, FIFO, Clock) minimizes page faults.
+- **Processes** are heavyweight units with separate address spaces; **threads** are lightweight and
+  share memory within a process.
+- **Scheduling algorithms** (FCFS, SJF, RR, priority, MLFQ) trade off throughput, latency, and
+  fairness.
+- **Synchronization** uses mutexes, semaphores, monitors, and condition variables to enforce mutual
+  exclusion and coordinate threads.
+- **Deadlock** requires four conditions simultaneously; prevented by eliminating one, avoided with
+  Banker's algorithm, or detected and recovered from.
+- **Paging** eliminates external fragmentation; **segmentation** preserves logical structure.
+  **TLB** caches translations for fast address resolution.
+- **Virtual memory** (demand paging) allows programs larger than physical memory. Page replacement
+  (OPT, LRU, FIFO, Clock) minimizes page faults.
 
 ## Cross-References
 
-| Topic | Link |
-|-------|------|
-| Databases | [View](/docs/university/computer-science/databases) |
+| Topic               | Link                                                          |
+| ------------------- | ------------------------------------------------------------- |
+| Databases           | [View](/docs/university/computer-science/databases)           |
 | Distributed Systems | [View](/docs/university/computer-science/distributed-systems) |
-| Networking | [View](/docs/university/computer-science/networking) |
+| Networking          | [View](/docs/university/computer-science/networking)          |

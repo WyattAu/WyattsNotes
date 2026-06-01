@@ -1,6 +1,8 @@
 ---
 title: Symbol Visibility
-description: 'C++ Programming Symbol Visibility notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'C++ Programming Symbol Visibility notes covering key definitions, core concepts, worked examples,
+  and practice questions for structured preparation.'
 date: 2025-12-11T21:24:11.468Z
 tags:
   - cpp
@@ -541,3 +543,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

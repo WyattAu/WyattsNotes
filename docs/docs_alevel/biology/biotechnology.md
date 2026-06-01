@@ -1,6 +1,8 @@
 ---
 title: Biotechnology
-description: 'A-Level Biology Biotechnology notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and mastery.'
+description:
+  'A-Level Biology Biotechnology notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective exam preparation and mastery.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -2300,3 +2302,9 @@ vitamin A) in the endosperm of the rice grain. It was developed to address vitam
    incorrectly.
 
 4. Confusing correlation with causation when evaluating experimental data and drawing conclusions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

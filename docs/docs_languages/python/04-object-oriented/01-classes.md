@@ -1,6 +1,8 @@
 ---
 title: Classes and Inheritance
-description: 'Python Classes and Inheritance notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
+description:
+  'Python Classes and Inheritance notes covering key definitions, core concepts, worked examples,
+  and practice questions for focused exam preparation and revision.'
 date: 2025-06-04T13:00:00.000Z
 tags:
   - Python
@@ -1051,3 +1053,14 @@ Of these mechanisms addresses a separate concern, and they compose without confl
 
 4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
    necessarily tight.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

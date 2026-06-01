@@ -1,6 +1,8 @@
 ---
 title: DSE Physics
-description: 'DSE Physics notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision and examination preparation.'
+description:
+  'DSE Physics notes covering key definitions, core concepts, worked examples, and practice
+  questions for in-depth revision and examination preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics
@@ -434,8 +436,8 @@ For multiplication/division and powers: add percentage uncertainties in quadratu
 
 $$z = x^a y^b \implies \frac{\Delta z}{z} = \sqrt{\left(a\frac{\Delta x}{x}\right)^2 + \left(b\frac{\Delta y}{y}\right)^2}$$
 
-**Example:** $A = \frac{1}{2}mv^2$ with
-$m = (0.200 \pm 0.002) \mathrm{ kg}$, $v = (3.0 \pm 0.1) \mathrm{ m/s}$:
+**Example:** $A = \frac{1}{2}mv^2$ with $m = (0.200 \pm 0.002) \mathrm{ kg}$,
+$v = (3.0 \pm 0.1) \mathrm{ m/s}$:
 
 $$A = \frac{1}{2}(0.200)(3.0)^2 = 0.90 \mathrm{ J}$$
 
@@ -639,3 +641,9 @@ If you get this wrong, revise: Optics / Curved Mirrors
 
 4. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

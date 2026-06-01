@@ -1,6 +1,8 @@
 ---
 title: Homeostasis
-description: 'DSE Biology Homeostasis notes covering key definitions, core concepts, worked examples, and practice questions for complete study and examination practice.'
+description:
+  'DSE Biology Homeostasis notes covering key definitions, core concepts, worked examples, and
+  practice questions for complete study and examination practice.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1090,7 +1092,6 @@ experimental evidence, and real-world applications.
 
 **Key concepts include:**
 
-
 - photosynthesis (light-dependent and independent)
 - transpiration and water transport
 - plant hormones and tropisms
@@ -1101,3 +1102,8 @@ Success requires the ability to recall specific factual content, apply knowledge
 and evaluate experimental evidence critically.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/homeostasis.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

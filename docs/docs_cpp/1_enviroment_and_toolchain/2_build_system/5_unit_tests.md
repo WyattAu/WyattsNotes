@@ -1,6 +1,8 @@
 ---
 title: Unit Testing
-description: 'C++ Programming Unit Testing notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'C++ Programming Unit Testing notes covering key definitions, core concepts, worked examples, and
+  practice questions for methodical revision.'
 date: 2025-12-10T19:05:13.846Z
 tags:
   - cpp
@@ -608,3 +610,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

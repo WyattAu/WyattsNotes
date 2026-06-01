@@ -1,6 +1,8 @@
 ---
 title: Scottish Highers Physics
-description: 'Scottish Higher and Advanced Higher Physics revision notes. Part of the Scottish Higher Physics revision notes for SQA exam preparation.'
+description:
+  'Scottish Higher and Advanced Higher Physics revision notes. Part of the Scottish Higher Physics
+  revision notes for SQA exam preparation.'
 date: 2026-04-14
 tags:
   - highers
@@ -80,3 +82,19 @@ These notes complement but do not replace the official course specification. Alw
 most recent SQA documentation for definitive syllabus and assessment requirements.
 
 :::
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

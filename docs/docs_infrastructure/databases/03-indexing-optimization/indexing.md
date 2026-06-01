@@ -1,7 +1,9 @@
 ---
 id: indexing
 title: Indexing and Optimization
-description: 'Indexing and Optimization notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
+description:
+  'Indexing and Optimization notes covering key definitions, core concepts, worked examples, and
+  practice questions for methodical exam preparation and mastery.'
 slug: indexing
 sidebar_position: 1
 tags:
@@ -908,3 +910,8 @@ underlying theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,7 +1,9 @@
 ---
 id: trees-and-graphs
 title: Trees and Graphs
-description: 'Algorithms Trees and Graphs notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
+description:
+  'Algorithms Trees and Graphs notes covering key definitions, core concepts, worked examples, and
+  practice questions for systematic revision.'
 slug: trees-and-graphs
 ---
 
@@ -943,3 +945,8 @@ key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

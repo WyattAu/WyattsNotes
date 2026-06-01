@@ -58,8 +58,8 @@ extend the core with greater mathematical rigour and are only assessed at HL.
 - Covers core + AHL (for HL) across all five themes.
 - No calculator allowed. Questions test qualitative understanding, estimations, and basic
   arithmetic.
-- Strategy: eliminate obviously wrong options first. For estimation questions, check the order of
-  magnitude before selecting an answer.
+- Strategy: eliminate it follows that wrong options first. For estimation questions, check the order
+  of magnitude before selecting an answer.
 
 ### Paper 2 (Structured Response)
 
@@ -202,3 +202,14 @@ and improves your ability to tackle synoptic questions.
 2. Misapplying the conservation laws (energy, momentum) when external forces are present.
 3. Forgetting to convert units (especially degrees to radians, and temperature scales).
 4. Neglecting significant figures and uncertainty in final answers.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

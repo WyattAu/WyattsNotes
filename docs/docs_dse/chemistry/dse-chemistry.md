@@ -1,6 +1,8 @@
 ---
 title: DSE Chemistry
-description: 'DSE Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
+description:
+  'DSE Chemistry notes covering key definitions, core concepts, worked examples, and practice
+  questions for in-depth exam preparation and revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry
@@ -447,3 +449,9 @@ Lower concentration of $\mathrm{H^+}$ ions than a strong acid of the same concen
 
 5. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
    overall charge.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

@@ -1,6 +1,8 @@
 ---
 title: Debugger
-description: 'C++ Programming Debugger notes covering key definitions, core concepts, worked examples, and practice questions for effective revision and exam readiness.'
+description:
+  'C++ Programming Debugger notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective revision and exam readiness.'
 date: 2025-12-11T06:24:14.105Z
 tags:
   - cpp
@@ -583,3 +585,8 @@ case studies, and management strategies.
 
 Using specific case studies and data to support arguments is essential for achieving the highest
 marks in geography assessments.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

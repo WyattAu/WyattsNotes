@@ -1,6 +1,8 @@
 ---
 title: Machine Learning Fundamentals
-description: 'University Computer Science Machine Learning Fundamentals notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'University Computer Science Machine Learning Fundamentals notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -18,7 +20,8 @@ Given features $\mathbf{x} \in \mathbb{R}^d$, predict a continuous target $y$:
 
 $$\hat{y} = \mathbf{w}^T \mathbf{x} + b = w_1 x_1 + w_2 x_2 + \cdots + w_d x_d + b$$
 
-In matrix form (with bias absorbed): $\hat{y} = \mathbf{w}^T \mathbf{x}$ where $\mathbf{x} = [1, x_1, \ldots, x_d]^T$.
+In matrix form (with bias absorbed): $\hat{y} = \mathbf{w}^T \mathbf{x}$ where
+$\mathbf{x} = [1, x_1, \ldots, x_d]^T$.
 
 ### 1.2 Ordinary Least Squares (OLS)
 
@@ -31,6 +34,7 @@ $$\mathcal{L}(\mathbf{w}) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \mathbf{w}^T \math
 $$\mathbf{w}^* = (X^T X)^{-1} X^T \mathbf{y}$$
 
 **Assumptions:**
+
 - $X^T X$ is invertible (features are not linearly dependent).
 - OLS is unbiased: $\mathbb{E}[\hat{\mathbf{w}}] = \mathbf{w}_{\text{true}}$.
 
@@ -50,9 +54,9 @@ GRADIENT_DESCENT(X, y, α, iterations):
 
 **Learning rate $\alpha$:** Too large → divergence; too small → slow convergence.
 
-**Batch gradient descent:** Uses all $n$ examples per step.
-**Stochastic gradient descent (SGD):** Uses one example per step. Noisy but fast.
-**Mini-batch SGD:** Uses $B$ examples per step. Balances efficiency and stability.
+**Batch gradient descent:** Uses all $n$ examples per step. **Stochastic gradient descent (SGD):**
+Uses one example per step. Noisy but fast. **Mini-batch SGD:** Uses $B$ examples per step. Balances
+efficiency and stability.
 
 ### 1.4 Variants
 
@@ -109,6 +113,7 @@ where $y_{ik} = 1$ if example $i$ belongs to class $k$, else $0$.
 ### 3.1 Structure
 
 A tree where:
+
 - **Internal nodes** test a feature (e.g., "is $x_1 \leq 3$?").
 - **Leaves** assign a class label (or regression value).
 - **Branches** correspond to test outcomes.
@@ -226,13 +231,13 @@ Layer l=2 (output):  z[2] = W[2]a[1] + b[2]
 
 ### 4.3 Activation Functions
 
-| Function     | Formula                      | Range    | Properties                  |
-| ------------ | ---------------------------- | -------- | --------------------------- |
-| **Sigmoid**  | $\sigma(z) = \frac{1}{1+e^{-z}}$ | $(0, 1)$ | Smooth, vanishing gradient  |
-| **Tanh**     | $\tanh(z) = \frac{e^z-e^{-z}}{e^z+e^{-z}}$ | $(-1, 1)$ | Zero-centered             |
-| **ReLU**     | $\text{ReLU}(z) = \max(0, z)$ | $[0, \infty)$ | Fast, but "dead neurons"   |
-| **Leaky ReLU**| $\max(\alpha z, z)$, $\alpha = 0.01$ | $(-\infty, \infty)$ | Fixes dead neurons   |
-| **Softmax**  | $\frac{e^{z_k}}{\sum_j e^{z_j}}$ | $(0, 1)^K$ | For multi-class output    |
+| Function       | Formula                                    | Range               | Properties                 |
+| -------------- | ------------------------------------------ | ------------------- | -------------------------- |
+| **Sigmoid**    | $\sigma(z) = \frac{1}{1+e^{-z}}$           | $(0, 1)$            | Smooth, vanishing gradient |
+| **Tanh**       | $\tanh(z) = \frac{e^z-e^{-z}}{e^z+e^{-z}}$ | $(-1, 1)$           | Zero-centered              |
+| **ReLU**       | $\text{ReLU}(z) = \max(0, z)$              | $[0, \infty)$       | Fast, but "dead neurons"   |
+| **Leaky ReLU** | $\max(\alpha z, z)$, $\alpha = 0.01$       | $(-\infty, \infty)$ | Fixes dead neurons         |
+| **Softmax**    | $\frac{e^{z_k}}{\sum_j e^{z_j}}$           | $(0, 1)^K$          | For multi-class output     |
 
 ### 4.4 Backpropagation
 
@@ -267,14 +272,15 @@ BACKWARD(x, y):
 
 **Update rule (SGD):**
 
-$$W[l] \leftarrow W[l] - \alpha \cdot dW[l]$$
-$$b[l] \leftarrow b[l] - \alpha \cdot db[l]$$
+$$W[l] \leftarrow W[l] - \alpha \cdot dW[l]$$ $$b[l] \leftarrow b[l] - \alpha \cdot db[l]$$
 
 ### 4.5 Universal Approximation Theorem
 
-A feedforward neural network with a single hidden layer containing a finite number of neurons can approximate any continuous function on compact subsets of $\mathbb{R}^d$ to arbitrary precision.
+A feedforward neural network with a single hidden layer containing a finite number of neurons can
+approximate any continuous function on compact subsets of $\mathbb{R}^d$ to arbitrary precision.
 
-**Caveat:** The theorem does not say the network will *learn* easily, or that a shallow network is practical.
+**Caveat:** The theorem does not say the network will _learn_ readily, or that a shallow network is
+practical.
 
 ## 5. Loss Functions
 
@@ -312,12 +318,12 @@ $$\mathcal{L}_{\text{hinge}} = \max(0, 1 - y \cdot \hat{y})$$
 
 ### 5.3 Loss Selection Guide
 
-| Task            | Loss Function              |
-| --------------- | -------------------------- |
-| Regression      | MSE, MAE, Huber           |
-| Binary          | Binary Cross-Entropy       |
-| Multi-class     | Categorical Cross-Entropy  |
-| Imbalanced      | Focal loss, weighted CE    |
+| Task        | Loss Function             |
+| ----------- | ------------------------- |
+| Regression  | MSE, MAE, Huber           |
+| Binary      | Binary Cross-Entropy      |
+| Multi-class | Categorical Cross-Entropy |
+| Imbalanced  | Focal loss, weighted CE   |
 
 ## 6. Regularization
 
@@ -325,13 +331,15 @@ $$\mathcal{L}_{\text{hinge}} = \max(0, 1 - y \cdot \hat{y})$$
 
 $$\mathcal{L}_{\text{L1}} = \mathcal{L}_{\text{base}} + \lambda \sum_{j=1}^{d} |w_j|$$
 
-**Effect:** Produces **sparse** solutions (drives some weights to exactly zero). Useful for feature selection.
+**Effect:** Produces **sparse** solutions (drives some weights to exactly zero). Useful for feature
+selection.
 
 ### 6.2 L2 Regularization (Ridge)
 
 $$\mathcal{L}_{\text{L2}} = \mathcal{L}_{\text{base}} + \lambda \sum_{j=1}^{d} w_j^2 = \mathcal{L}_{\text{base}} + \lambda \|\mathbf{w}\|^2$$
 
-**Effect:** Penalizes large weights. Shrinks all weights toward zero but rarely makes them exactly zero.
+**Effect:** Penalizes large weights. Shrinks all weights toward zero but rarely makes them exactly
+zero.
 
 **Update rule (L2):**
 
@@ -358,7 +366,8 @@ DROPOUT_LAYER(a, p, training):
         return a
 ```
 
-**Effect:** Prevents co-adaptation of neurons. Implicit ensemble of sub-networks. Test time: no dropout (use full network, scaled by $1-p$).
+**Effect:** Prevents co-adaptation of neurons. Implicit ensemble of sub-networks. Test time: no
+dropout (use full network, scaled by $1-p$).
 
 ### 6.5 Early Stopping
 
@@ -384,20 +393,20 @@ EARLY_STOPPING(train_fn, patience):
 
 ### 6.6 Regularization Comparison
 
-| Method        | Effect                     | When to Use                    |
-| ------------- | -------------------------- | ------------------------------ |
-| L1 (Lasso)    | Sparsity, feature selection | Many irrelevant features       |
-| L2 (Ridge)    | Weight shrinkage           | All features potentially useful |
-| Elastic Net   | Both                       | Correlated features            |
-| Dropout       | Prevents co-adaptation     | Neural networks                |
-| Early stopping | Prevents overfitting     | All models, especially NNs     |
+| Method         | Effect                      | When to Use                     |
+| -------------- | --------------------------- | ------------------------------- |
+| L1 (Lasso)     | Sparsity, feature selection | Many irrelevant features        |
+| L2 (Ridge)     | Weight shrinkage            | All features potentially useful |
+| Elastic Net    | Both                        | Correlated features             |
+| Dropout        | Prevents co-adaptation      | Neural networks                 |
+| Early stopping | Prevents overfitting        | All models, especially NNs      |
 
 ## 7. Evaluation Metrics
 
 ### 7.1 Confusion Matrix
 
-|                | Predicted Positive | Predicted Negative |
-| -------------- | ------------------ | ------------------ |
+|                     | Predicted Positive  | Predicted Negative  |
+| ------------------- | ------------------- | ------------------- |
 | **Actual Positive** | TP (True Positive)  | FN (False Negative) |
 | **Actual Negative** | FP (False Positive) | TN (True Negative)  |
 
@@ -423,14 +432,17 @@ $$F_\beta = (1 + \beta^2) \cdot \frac{\text{Precision} \cdot \text{Recall}}{(\be
 
 ### 7.3 ROC Curve and AUC
 
-**ROC curve:** Plots TPR (Recall) vs. FPR ($\frac{FP}{FP + TN}$) at various classification thresholds.
+**ROC curve:** Plots TPR (Recall) vs. FPR ($\frac{FP}{FP + TN}$) at various classification
+thresholds.
 
 **AUC (Area Under Curve):**
+
 - AUC = 1.0: Perfect classifier.
 - AUC = 0.5: Random guessing.
 - AUC < 0.5: Worse than random (invert predictions).
 
-**Interpretation:** Probability that a randomly chosen positive example is ranked higher than a randomly chosen negative example.
+**Interpretation:** Probability that a randomly chosen positive example is ranked higher than a
+randomly chosen negative example.
 
 ### 7.4 Regression Metrics
 
@@ -482,30 +494,34 @@ $$\text{Irreducible Error} = \sigma^2_\epsilon$$
 
 ### 8.2 Tradeoff
 
-| Model Complexity | Bias        | Variance   | Total Error |
-| ---------------- | ----------- | ---------- | ----------- |
-| Low (underfit)   | High        | Low        | High        |
-| Optimal          | Moderate    | Moderate   | Minimal     |
-| High (overfit)   | Low         | High       | High        |
+| Model Complexity | Bias     | Variance | Total Error |
+| ---------------- | -------- | -------- | ----------- |
+| Low (underfit)   | High     | Low      | High        |
+| Optimal          | Moderate | Moderate | Minimal     |
+| High (overfit)   | Low      | High     | High        |
 
 ### 8.3 Overfitting and Underfitting
 
 **Overfitting:** Model learns noise in training data. Training error $\ll$ validation error.
 
 **Signs:**
+
 - High training accuracy, low validation accuracy.
 - Large gap between training and test performance.
 
 **Remedies:**
+
 - More training data.
 - Reduce model complexity (fewer parameters, shallower tree, smaller network).
 - Regularization (L1, L2, dropout).
 - Early stopping.
 - Cross-validation for hyperparameter tuning.
 
-**Underfitting:** Model fails to capture the underlying pattern. Both training and validation error are high.
+**Underfitting:** Model fails to capture the underlying pattern. Both training and validation error
+are high.
 
 **Remedies:**
+
 - Increase model complexity.
 - Add more features.
 - Reduce regularization.
@@ -521,44 +537,73 @@ Plot training and validation error vs. training set size:
 
 ## 9. Common Pitfalls
 
-1. **Training without splitting data.** Evaluating on training data gives overly optimistic metrics. Always use train/validation/test splits or cross-validation.
+1. **Training without splitting data.** Evaluating on training data gives overly optimistic metrics.
+   Always use train/validation/test splits or cross-validation.
 
-2. **Using accuracy on imbalanced datasets.** A 99% negative dataset with a model that always predicts negative achieves 99% accuracy but learns nothing. Use precision, recall, F1, or AUC instead.
+2. **Using accuracy on imbalanced datasets.** A 99% negative dataset with a model that always
+   predicts negative achieves 99% accuracy but learns nothing. Use precision, recall, F1, or AUC
+   instead.
 
-3. **Leaking information from test to train.** Fitting preprocessing (scaling, imputation) on the entire dataset before splitting. Fit transformers on training data only, then apply to validation/test.
+3. **Leaking information from test to train.** Fitting preprocessing (scaling, imputation) on the
+   entire dataset before splitting. Fit transformers on training data only, then apply to
+   validation/test.
 
-4. **Ignoring feature scaling.** Gradient descent converges faster with standardized features. Unscaled features cause slow convergence and may bias regularized models.
+4. **Ignoring feature scaling.** Gradient descent converges faster with standardized features.
+   Unscaled features cause slow convergence and may bias regularized models.
 
-5. **Setting learning rate too high or too low.** Too high: loss diverges or oscillates. Too low: training is prohibitively slow. Use learning rate schedules or adaptive optimizers (Adam, RMSprop).
+5. **Setting learning rate too high or too low.** Too high: loss diverges or oscillates. Too low:
+   training is prohibitively slow. Use learning rate schedules or adaptive optimizers (Adam,
+   RMSprop).
 
-6. **Overfitting to validation set through hyperparameter tuning.** Repeated tuning on the same validation set causes "validation leakage." Use nested cross-validation or a held-out test set touched only once.
+6. **Overfitting to validation set through hyperparameter tuning.** Repeated tuning on the same
+   validation set causes "validation leakage." Use nested cross-validation or a held-out test set
+   touched only once.
 
-7. **Ignoring data distribution shifts.** If training and test data come from different distributions (e.g., different time periods), model performance may degrade. Monitor for covariate shift and concept drift.
+7. **Ignoring data distribution shifts.** If training and test data come from different
+   distributions (e.g., different time periods), model performance may degrade. Monitor for
+   covariate shift and concept drift.
 
 ## Worked Examples
 
 ### Example 1: Perceptron Learning Algorithm
-**Problem:** Train a perceptron to learn the AND function with inputs (0,0)->0, (0,1)->0, (1,0)->0, (1,1)->1. Initial weights w=(0,0), bias b=0, learning rate eta=1.
-**Solution:** (0,0): 0>=0, correct. (0,1): 0>=0, correct. (1,0): 0>=0, correct. (1,1): 0>=0, incorrect. Update: w1+=1*1=1, w2+=1*1=1, b+=-1*0=0. Next epoch: (1,1): 1+1=2>=0, correct. (0,1): 0+1=1>=0, correct (should be 0 -- error). Update: w1+=1*0=1, w2+=1*(-1)=0, b+=-1*1=-1. (0,1): 0+0-1=-1<0, correct. (1,0): 1+0-1=0>=0, correct (should be 0 -- error). Update: w1+=1*(-1)=0, w2+=1*0=0, b+=-1*(-1)=0. Converged: (0,0)->0, (0,1)->0, (1,0)->0, (1,1)->0 (wrong!). Perceptron with this update rule may not converge for all functions.
+
+**Problem:** Train a perceptron to learn the AND function with inputs (0,0)->0, (0,1)->0, (1,0)->0,
+(1,1)->1. Initial weights w=(0,0), bias b=0, learning rate eta=1. **Solution:** (0,0): 0>=0,
+correct. (0,1): 0>=0, correct. (1,0): 0>=0, correct. (1,1): 0>=0, incorrect. Update: w1+=1*1=1,
+w2+=1*1=1, b+=-1*0=0. Next epoch: (1,1): 1+1=2>=0, correct. (0,1): 0+1=1>=0, correct (should be 0 --
+error). Update: w1+=1*0=1, w2+=1*(-1)=0, b+=-1*1=-1. (0,1): 0+0-1=-1<0, correct. (1,0): 1+0-1=0>=0,
+correct (should be 0 -- error). Update: w1+=1*(-1)=0, w2+=1*0=0, b+=-1\*(-1)=0. Converged: (0,0)->0,
+(0,1)->0, (1,0)->0, (1,1)->0 (wrong!). Perceptron with this update rule may not converge for all
+functions.
 
 ### Example 2: K-Nearest Neighbours Classification
-**Problem:** Given training data: (1,1)->A, (1,3)->A, (3,1)->B, (3,3)->B. Classify the point (2,2) using k=3.
-**Solution:** Distances: to (1,1)=sqrt(2)=1.41 (A), to (1,3)=sqrt(2)=1.41 (A), to (3,1)=sqrt(2)=1.41 (B), to (3,3)=sqrt(2)=1.41 (B). All distances are equal. Nearest 3 points depend on tie-breaking; any combination of 3 points yields either 2A+1B or 2B+1A. The point (2,2) lies equidistant from all training data, so the classification is ambiguous.
+
+**Problem:** Given training data: (1,1)->A, (1,3)->A, (3,1)->B, (3,3)->B. Classify the point (2,2)
+using k=3. **Solution:** Distances: to (1,1)=sqrt(2)=1.41 (A), to (1,3)=sqrt(2)=1.41 (A), to
+(3,1)=sqrt(2)=1.41 (B), to (3,3)=sqrt(2)=1.41 (B). All distances are equal. Nearest 3 points depend
+on tie-breaking; any combination of 3 points yields either 2A+1B or 2B+1A. The point (2,2) lies
+equidistant from all training data, so the classification is ambiguous.
 
 ## Summary
 
-- **Linear regression** (OLS, gradient descent) predicts continuous targets; **logistic regression** predicts probabilities for binary classification.
-- **Decision trees** split on features using impurity measures (Gini, entropy); ensembles (Random Forest, Gradient Boosting) improve performance.
-- **Neural networks** learn hierarchical features through backpropagation with activation functions (ReLU, sigmoid, softmax).
+- **Linear regression** (OLS, gradient descent) predicts continuous targets; **logistic regression**
+  predicts probabilities for binary classification.
+- **Decision trees** split on features using impurity measures (Gini, entropy); ensembles (Random
+  Forest, Gradient Boosting) improve performance.
+- **Neural networks** learn hierarchical features through backpropagation with activation functions
+  (ReLU, sigmoid, softmax).
 - **Loss functions** (MSE, cross-entropy, Huber) measure prediction error and guide optimization.
-- **Regularization** (L1, L2, dropout, early stopping) prevents overfitting by penalizing complexity.
-- **Evaluation metrics** (accuracy, precision, recall, F1, ROC-AUC, $R^2$) must match the task and class distribution.
-- **Bias-variance tradeoff** guides model complexity: underfitting (high bias) vs. overfitting (high variance).
+- **Regularization** (L1, L2, dropout, early stopping) prevents overfitting by penalizing
+  complexity.
+- **Evaluation metrics** (accuracy, precision, recall, F1, ROC-AUC, $R^2$) must match the task and
+  class distribution.
+- **Bias-variance tradeoff** guides model complexity: underfitting (high bias) vs. overfitting (high
+  variance).
 
 ## Cross-References
 
-| Topic | Link |
-|-------|------|
-| Algorithms Overview | [View](/docs_infrastructure/cs/algorithms-overview) |
-| Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |
-| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |
+| Topic               | Link                                                        |
+| ------------------- | ----------------------------------------------------------- |
+| Algorithms Overview | [View](/docs_infrastructure/cs/algorithms-overview)         |
+| Complexity Theory   | [View](/docs/university/computer-science/complexity-theory) |
+| Algorithm Design    | [View](/docs/university/computer-science/algorithm-design)  |

@@ -986,3 +986,8 @@ For the A-Level treatment of this topic, see
 | [Thermodynamics (Chemistry)] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/thermodynamics)                   |
 | [Thermodynamics (Chemistry)] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/5-energetics/1_thermochemistry)                    |
 | [Thermodynamics (Chemistry)] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/3-chemical-kinetics-and-energetics/2_energetics) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

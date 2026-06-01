@@ -1,6 +1,8 @@
 ---
 title: Biodiversity, Classification and Evolution
-description: 'A-Level Biology Biodiversity, Classification and Evolution notes covering key definitions, core concepts, worked practice questions for analytical revision.'
+description:
+  'A-Level Biology Biodiversity, Classification and Evolution notes covering key definitions, core
+  concepts, worked practice questions for analytical revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -948,8 +950,8 @@ years:
 | 1    | 360  | 480  | 160  | 1000  | 0.60      | 0.40      |
 | 2    | 324  | 432  | 144  | 900   | 0.60      | 0.40      |
 
-The allele frequencies have not changed ($p = 0.60$, $q = 0.40$ in both years). The population appears
-to be in Hardy-Weinberg equilibrium.
+The allele frequencies have not changed ($p = 0.60$, $q = 0.40$ in both years). The population
+appears to be in Hardy-Weinberg equilibrium.
 
 **Chi-squared test:** expected values in Year 2 based on H-W: $p^2 \times 900 = 324$ ($BB$),
 $2pq \times 900 = 432$ ($Bb$), $q^2 \times 900 = 144$ ($bb$). These match the observed exactly,
@@ -2018,3 +2020,14 @@ A dichotomous key is a tool used to identify organisms based on a series of pair
    process is being described.
 
 4. Forgetting to include control variables in experimental design, leading to invalid conclusions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

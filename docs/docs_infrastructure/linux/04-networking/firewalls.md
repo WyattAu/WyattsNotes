@@ -1,7 +1,9 @@
 ---
 id: firewalls
 title: Linux Firewalls
-description: 'Linux Firewalls notes covering key definitions, core concepts, worked examples, and practice questions for focused study and thorough revision.'
+description:
+  'Linux Firewalls notes covering key definitions, core concepts, worked examples, and practice
+  questions for focused study and thorough revision.'
 slug: firewalls
 sidebar_position: 2
 ---
@@ -971,3 +973,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -61,7 +61,7 @@ contexts during adolescence.
 
 ## Exam Strategy
 
-For Paper 1 SAQs, developmental questions typically ask students to explain one theory of
+For Paper 1 SAQs, developmental questions in most cases ask students to explain one theory of
 attachment, cognitive development, or adolescent development. Attachment is the most frequently
 tested area: prepare Bowlby's key principles (monotropy, critical period, internal working models)
 with Ainsworth's Strange Situation as empirical evidence. For cognitive development, memorise

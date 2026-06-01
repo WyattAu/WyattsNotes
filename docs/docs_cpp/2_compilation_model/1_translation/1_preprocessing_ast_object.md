@@ -1,6 +1,8 @@
 ---
 title: Preprocessing and AST Generation, and Object Code
-description: 'C++ Programming Preprocessing and AST Generation, and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Preprocessing and AST Generation, and notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
@@ -571,3 +573,14 @@ Writing it into the appropriate location in the machine code.
 
 4. Not making connections between different topics within the subject to build a coherent
    understanding.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

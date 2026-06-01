@@ -1,6 +1,8 @@
 ---
 title: 'Cell Biology -- Diagnostic Tests'
-description: 'GCSE Cell Biology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'GCSE Cell Biology -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for in-depth revision.'
 slug: diag-cell-biology
 hide_table_of_contents: true
 ---
@@ -200,3 +202,19 @@ osmosis. (2) The diffusion distance from the cell membrane to the centre of the 
 slowing down the rate of exchange. (3) The cell cannot sustain its metabolic demands. Small cells
 have a large SA:V ratio, ensuring efficient exchange. This is why large organisms are multicellular
 (many small cells rather than one giant cell) and why cells divide when they reach a certain size.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

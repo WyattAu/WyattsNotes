@@ -1,6 +1,8 @@
 ---
 title: A Level Computer Science — Diagnostic Test
-description: 'A-Level A Level Computer Science — Diagnostic Test notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'A-Level A Level Computer Science — Diagnostic Test notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -631,3 +633,14 @@ Problem set on that page.
 
 4. Writing pseudocode that is too language-specific rather than using standard algorithmic
    constructs.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

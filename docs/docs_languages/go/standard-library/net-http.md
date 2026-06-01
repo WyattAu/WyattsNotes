@@ -6,14 +6,16 @@ tags:
   - Go
 categories:
   - Go
-description: 'Go net/http notes covering key definitions, core concepts, worked examples, and practice questions for systematic learning and effective revision.'
+description:
+  'Go net/http notes covering key definitions, core concepts, worked examples, and practice
+  questions for systematic learning and effective revision.'
 ---
 
 ## Introduction
 
-Go's `net/http` package provides everything needed to build HTTP servers and clients. It ships
-With the standard library -- no frameworks, no external dependencies. For most services, `net/http`
-Is sufficient on its own or with minimal layering.
+Go's `net/http` package provides everything needed to build HTTP servers and clients. It ships With
+the standard library -- no frameworks, no external dependencies. For most services, `net/http` Is
+sufficient on its own or with minimal layering.
 
 ```go
 import (
@@ -188,8 +190,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-`http.Error` sets `Content-Type: text/plain; charset=utf-8`, the status code, and writes the
-Message as the body.
+`http.Error` sets `Content-Type: text/plain; charset=utf-8`, the status code, and writes the Message
+as the body.
 
 ## JSON API
 
@@ -325,8 +327,8 @@ func main() {
 
 ## Middleware
 
-Middleware is a function that takes an `http.Handler` and returns an `http.Handler`. It wraps
-The handler to add pre/post-processing logic.
+Middleware is a function that takes an `http.Handler` and returns an `http.Handler`. It wraps The
+handler to add pre/post-processing logic.
 
 ### Middleware Pattern
 
@@ -366,8 +368,8 @@ func main() {
 }
 ```
 
-Middleware is applied in reverse order of wrapping. `authMiddleware` runs first on the request,
-Then `loggingMiddleware` runs around the inner call. The response flows back out in reverse.
+Middleware is applied in reverse order of wrapping. `authMiddleware` runs first on the request, Then
+`loggingMiddleware` runs around the inner call. The response flows back out in reverse.
 
 ### Recovery Middleware
 
@@ -517,10 +519,10 @@ Returns. The `context.WithTimeout` ensures shutdown does not hang indefinitely.
 
 ### Server Timeouts
 
-| Timeout        | Purpose                                    |
-| -------------- | ------------------------------------------ |
-| `ReadTimeout`  | Max time to read the entire request        |
-| `WriteTimeout` | Max time to write the response             |
+| Timeout        | Purpose                                     |
+| -------------- | ------------------------------------------- |
+| `ReadTimeout`  | Max time to read the entire request         |
+| `WriteTimeout` | Max time to write the response              |
 | `IdleTimeout`  | Max time a keep-alive connection stays open |
 
 Without these timeouts, a slow client can hold a goroutine indefinitely, eventually exhausting
@@ -573,8 +575,8 @@ Downstream operations.
 6. **Trailing slashes in routes.** `/users` and `/users/` are different routes. `/users/` matches
    `/users/123` but `/users` does not. Be explicit about trailing slashes.
 
-7. **Not checking request body errors.** `r.Body` is a stream. If the client disconnects mid-request,
-   Reading from `r.Body` returns an error. Always check errors from `r.Body` reads.
+7. **Not checking request body errors.** `r.Body` is a stream. If the client disconnects
+   mid-request, Reading from `r.Body` returns an error. Always check errors from `r.Body` reads.
 
 ## Summary
 
@@ -591,3 +593,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

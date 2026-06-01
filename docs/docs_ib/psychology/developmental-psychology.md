@@ -22,7 +22,7 @@ practices as documented by Van IJzendoorn and Kroonenberg). Similarly, cognitive
 shaped by biological maturation (Piaget's stage-related neurological changes), cognitive mechanisms
 (schemata, accommodation, assimilation), and cultural tools and interactions (Vygotsky's ZPD,
 language as a mediator of thought). Adolescent development illustrates this integration most
-clearly: identity formation involves prefrontal cortex maturation (biological), formal operational
+evidently: identity formation involves prefrontal cortex maturation (biological), formal operational
 thought (cognitive), and social context (peers, culture, media). Students should approach
 developmental psychology questions by selecting one primary level of analysis for depth while
 acknowledging the contributions of the others.
@@ -61,7 +61,7 @@ acknowledging the contributions of the others.
 
 ## Exam Focus
 
-Paper 2 questions on developmental psychology typically require:
+Paper 2 questions on developmental psychology in most cases require:
 
 - Explaining one developmental theory using empirical evidence (e.g., Bowlby's attachment theory
   with Ainsworth's Strange Situation study).

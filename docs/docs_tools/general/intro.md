@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to General Notes
-description: 'General Introduction to General notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'General Introduction to General notes covering key definitions, core concepts, worked examples,
+  and practice questions for rigorous revision.'
 slug: intro
 sidebar_position: 1
 date: 2025-05-15T22:45:51.828Z
@@ -102,3 +104,19 @@ Unlocks React components, interactive tabs, and custom JSX — but also imposes 
   indexing.
 
 Refer to `markdown-constructs.md` in this section for the full MDX feature reference.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

@@ -1,7 +1,9 @@
 ---
 id: locking-and-deadlocks
 title: Locking and Deadlocks
-description: 'Locking and Deadlocks notes covering key definitions, core concepts, worked examples, and practice questions for focused study and thorough revision.'
+description:
+  'Locking and Deadlocks notes covering key definitions, core concepts, worked examples, and
+  practice questions for focused study and thorough revision.'
 slug: locking-and-deadlocks
 ---
 
@@ -952,3 +954,8 @@ underlying theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

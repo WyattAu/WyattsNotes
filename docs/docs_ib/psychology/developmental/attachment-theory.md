@@ -1,6 +1,8 @@
 ---
 title: Attachment Theory
-description: 'IB Psychology Attachment Theory notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
+description:
+  'IB Psychology Attachment Theory notes covering key definitions, core concepts, worked examples,
+  and practice questions for systematic revision.'
 slug: attachment-theory
 ---
 
@@ -261,3 +263,14 @@ For an overview of developmental topics, see
 
 4. Neglecting to consider multiple scales (local, regional, national, global) in geographical
    analysis.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

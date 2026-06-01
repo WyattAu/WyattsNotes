@@ -1,6 +1,8 @@
 ---
 title: Organic Chemistry
-description: 'A-Level Organic Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for effective revision and exam readiness.'
+description:
+  'A-Level Organic Chemistry notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective revision and exam readiness.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -539,9 +541,9 @@ acids).
 
 #### Gas Chromatography (GC)
 
-The mobile phase is an inert carrier gas (e.g. $\mathrm{He}$, $\mathrm{N}_2$). The stationary phase is
-a high-boiling liquid coated on the inside of a capillary column. Separation depends on volatility
-and interaction with the stationary phase.
+The mobile phase is an inert carrier gas (e.g. $\mathrm{He}$, $\mathrm{N}_2$). The stationary phase
+is a high-boiling liquid coated on the inside of a capillary column. Separation depends on
+volatility and interaction with the stationary phase.
 
 The **retention time** is the time from injection to detection. It is characteristic of a compound
 under fixed conditions.
@@ -587,23 +589,23 @@ reach the starting material.
 
 **Key interconversions:**
 
-| Target          | From                      | Reagents/conditions                                                    |
-| --------------- | ------------------------- | ---------------------------------------------------------------------- |
+| Target          | From                      | Reagents/conditions                                                      |
+| --------------- | ------------------------- | ------------------------------------------------------------------------ |
 | Alkene          | Alcohol                   | Dehydration: conc. $\mathrm{H}_2\mathrm{SO}_4$, $170^\circ\mathrm{C}$    |
-| Alkene          | Halogenoalkane            | Elimination: $\mathrm{KOH}$ in ethanol, heat                           |
+| Alkene          | Halogenoalkane            | Elimination: $\mathrm{KOH}$ in ethanol, heat                             |
 | Alcohol         | Alkene                    | Hydration: $\mathrm{H}_3\mathrm{PO}_4$, $300^\circ\mathrm{C}$ (indirect) |
-| Alcohol         | Halogenoalkane            | SN2: aqueous $\mathrm{NaOH}$                                           |
-| Halogenoalkane  | Alcohol                   | $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$ / conc. $\mathrm{HBr}$            |
-| Aldehyde        | Primary alcohol           | Distillation with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$    |
-| Carboxylic acid | Primary alcohol           | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$          |
-| Ketone          | Secondary alcohol         | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$          |
-| Primary amine   | Halogenoalkane            | Excess $\mathrm{NH}_3$                                                 |
-| Primary amine   | Nitrile                   | $\mathrm{LiAlH}_4$                                                     |
-| Nitrile         | Halogenoalkane            | $\mathrm{KCN}$ (adds one carbon)                                       |
-| Ester           | Carboxylic acid + alcohol | Conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                                  |
-| Amide           | Acyl chloride + ammonia   | Room temperature                                                       |
-| Phenylamine     | Nitrobenzene              | $\mathrm{Sn/HCl}$ then $\mathrm{NaOH}$                                 |
-| Nitrobenzene    | Benzene                   | $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$50--60$^\circ\mathrm{C}$   |
+| Alcohol         | Halogenoalkane            | SN2: aqueous $\mathrm{NaOH}$                                             |
+| Halogenoalkane  | Alcohol                   | $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$ / conc. $\mathrm{HBr}$              |
+| Aldehyde        | Primary alcohol           | Distillation with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$      |
+| Carboxylic acid | Primary alcohol           | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$            |
+| Ketone          | Secondary alcohol         | Reflux with acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$            |
+| Primary amine   | Halogenoalkane            | Excess $\mathrm{NH}_3$                                                   |
+| Primary amine   | Nitrile                   | $\mathrm{LiAlH}_4$                                                       |
+| Nitrile         | Halogenoalkane            | $\mathrm{KCN}$ (adds one carbon)                                         |
+| Ester           | Carboxylic acid + alcohol | Conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                                    |
+| Amide           | Acyl chloride + ammonia   | Room temperature                                                         |
+| Phenylamine     | Nitrobenzene              | $\mathrm{Sn/HCl}$ then $\mathrm{NaOH}$                                   |
+| Nitrobenzene    | Benzene                   | $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$50--60$^\circ\mathrm{C}$     |
 
 ### Worked Example: Synthesis of Propanoic Acid from Propene
 
@@ -687,19 +689,19 @@ $\mathrm{C}_6\mathrm{H}_4(\mathrm{OH})\mathrm{COOH} + \mathrm{CH}_3\mathrm{OH} \
 
 ### Common Reagents Summary
 
-| Reagent                                                | Primary function                                                            |
-| ------------------------------------------------------ | --------------------------------------------------------------------------- |
-| $\mathrm{NaBH}_4$                                      | Reduces C=O (aldehydes, ketones) to alcohols                                |
-| $\mathrm{LiAlH}_4$                                     | Reduces C=O (including carboxylic acids, esters, amides) to alcohols/amines |
-| Acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$      | Oxidises alcohols (primary to acid/aldehyde, secondary to ketone)           |
-| $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$                   | Converts alcohol to halogenoalkane                                          |
+| Reagent                                                  | Primary function                                                            |
+| -------------------------------------------------------- | --------------------------------------------------------------------------- |
+| $\mathrm{NaBH}_4$                                        | Reduces C=O (aldehydes, ketones) to alcohols                                |
+| $\mathrm{LiAlH}_4$                                       | Reduces C=O (including carboxylic acids, esters, amides) to alcohols/amines |
+| Acidified $\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$        | Oxidises alcohols (primary to acid/aldehyde, secondary to ketone)           |
+| $\mathrm{PBr}_3$ / $\mathrm{SOCl}_2$                     | Converts alcohol to halogenoalkane                                          |
 | Conc. $\mathrm{H}_2\mathrm{SO}_4$, $170^\circ\mathrm{C}$ | Dehydrates alcohol to alkene                                                |
-| $\mathrm{NaOH}(aq)$                                    | SN2 substitution of halogenoalkane to alcohol                               |
-| $\mathrm{KCN}$                                         | SN2 substitution, adds CN (one extra carbon)                                |
-| $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$           | Nitration of arene                                                          |
-| $\mathrm{AlCl}_3$ + $\mathrm{RCOCl}$                   | Friedel-Crafts acylation                                                    |
-| $\mathrm{NaNO}_2 / \mathrm{HCl}$0--5$^\circ\mathrm{C}$ | Diazotisation of primary aromatic amine                                     |
-| $\mathrm{Sn} / \mathrm{HCl}$                           | Reduces nitro group to amine                                                |
+| $\mathrm{NaOH}(aq)$                                      | SN2 substitution of halogenoalkane to alcohol                               |
+| $\mathrm{KCN}$                                           | SN2 substitution, adds CN (one extra carbon)                                |
+| $\mathrm{HNO}_3 / \mathrm{H}_2\mathrm{SO}_4$             | Nitration of arene                                                          |
+| $\mathrm{AlCl}_3$ + $\mathrm{RCOCl}$                     | Friedel-Crafts acylation                                                    |
+| $\mathrm{NaNO}_2 / \mathrm{HCl}$0--5$^\circ\mathrm{C}$   | Diazotisation of primary aromatic amine                                     |
+| $\mathrm{Sn} / \mathrm{HCl}$                             | Reduces nitro group to amine                                                |
 
 ## Required Practical Techniques in Organic Chemistry
 
@@ -855,20 +857,23 @@ justify your choice of reagents.
 
 $, $
 \mathrm{C}_6\mathrm{H}_6 \xrightarrow{\mathrm{CH}_3\mathrm{Cl},\,\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3
-$, $
+$,
+$
 
 **Step 2:** Nitration (methyl is ortho/para directing, so a mixture of ortho and para is produced;
 para is the major product for steric reasons):
 
 $, $
 \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3 \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4} 4\text{-nitrotoluene (major)} + 2\text{-nitrotoluene (minor)}
-$, $
+$,
+$
 
 **Step 3:** Oxidation of the methyl group to carboxylic acid:
 
 $, $
 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{CH}_3)(\mathrm{NO}_2) \xrightarrow{\mathrm{KMnO}_4,\,\Delta} 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{COOH})(\mathrm{NO}_2)
-$, $
+$,
+$
 
 The nitro group must be installed **before** oxidation because the carboxylic acid group is
 meta-directing and deactivating. If the carboxylic acid were installed first, nitration would give
@@ -927,3 +932,8 @@ theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

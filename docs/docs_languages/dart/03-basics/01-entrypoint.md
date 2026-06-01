@@ -1,6 +1,8 @@
 ---
 title: Entry Point
-description: 'Dart Entry Point notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision and examination preparation.'
+description:
+  'Dart Entry Point notes covering key definitions, core concepts, worked examples, and practice
+  questions for efficient revision and examination preparation.'
 date: 2025-07-12T15:49:11.104Z
 tags:
   - Dart
@@ -456,3 +458,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

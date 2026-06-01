@@ -1,6 +1,8 @@
 ---
 title: Algebraic Expressions
-description: 'A-Level Maths Algebraic Expressions notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'A-Level Maths Algebraic Expressions notes covering key definitions, core concepts, worked
+  examples, and practice questions for rigorous revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -40,7 +42,8 @@ $, $
 \frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{b}◆RB◆ &= \sqrt◆LB◆\frac{a}{b}◆RB◆ \\
 (\sqrt{a})^n &= a^{n/2}
 \end{aligned}
-$, $
+$,
+$
 
 These follow directly from the laws of indices (which we prove in Section 2), since
 $\sqrt{a} = a^{1/2}$.
@@ -54,7 +57,8 @@ $, $
 \begin{aligned}
 \frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ &= \frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ \cdot \frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{a}◆RB◆ = \frac◆LB◆\sqrt{a}◆RB◆◆LB◆a◆RB◆
 \end{aligned}
-$, $
+$,
+$
 
 For a denominator of the form $a + b\sqrt{c}$Multiply by the _conjugate_ $a - b\sqrt{c}$:
 
@@ -62,7 +66,8 @@ $, $
 \begin{aligned}
 \frac◆LB◆1◆RB◆◆LB◆a + b\sqrt{c}◆RB◆ &= \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆(a + b\sqrt{c})(a - b\sqrt{c})◆RB◆ = \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆a^2 - b^2 c◆RB◆
 \end{aligned}
-$, $
+$,
+$
 
 :::warning A common error is to "rationalise" by splitting the fraction:
 $\frac◆LB◆a + b\sqrt{c}◆RB◆◆LB◆d◆RB◆ \neq \frac{a}{d} + b\sqrt◆LB◆\frac{c}{d}◆RB◆$ . Always
@@ -184,7 +189,8 @@ $, $
 \begin{aligned}
 (a - b)(a + b) &= a^2 + ab - ab - b^2 = a^2 - b^2 \quad \blacksquare
 \end{aligned}
-$, $
+$,
+$
 
 ### 3.3 Factorising Cubics
 
@@ -212,7 +218,8 @@ X^3 + 2x^2 - 5x + 6 &= (x - 1)(x^2) + \mathrm{remainder of } x^3 - x^2 \\
 &= (x - 1)(x^2 + 3x - 2) - 2(x - 1) \\
 &= (x - 1)(x^2 + 3x - 2) + 4
 \end{aligned}
-$, $
+$,
+$
 
 So the quotient is $x^2 + 3x - 2$ with remainder $4$.
 
@@ -287,7 +294,8 @@ F(2) &= 2^3 - 3(2)^2 + 4 = 8 - 12 + 4 = 0
 \end{aligned}
 $$
 
-Since $f(2) = 0$, $(x - 2)$ is a factor. To find the remaining factor, we perform polynomial Division:
+Since $f(2) = 0$, $(x - 2)$ is a factor. To find the remaining factor, we perform polynomial
+Division:
 
 $$
 \begin{aligned}
@@ -457,8 +465,8 @@ $$\frac{2x + 1}{(x + 3)(x - 2)} = \frac{1}{x + 3} + \frac{1}{x - 2}$$
 
 <hr />
 
-**Problem 7.** Given $f(x) = x^4 - x^3 - 7x^2 + x + 6$Show that $(x - 1)$, $(x + 1)$And $(x - 3)$ are
-all factors, and hence factorise $f(x)$ completely.
+**Problem 7.** Given $f(x) = x^4 - x^3 - 7x^2 + x + 6$Show that $(x - 1)$, $(x + 1)$And $(x - 3)$
+are all factors, and hence factorise $f(x)$ completely.
 
 <details>
 <summary>Solution</summary>
@@ -668,3 +676,14 @@ building a personal test matrix. :::
 
 4. Losing marks by not showing sufficient working — always write out each step, especially in proof
    questions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

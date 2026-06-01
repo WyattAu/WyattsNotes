@@ -115,8 +115,8 @@ Molecular formula: C$_6$H$_{12}$O$_6$ (glucose).
 
 ### Hydrated Salts
 
-A hydrated salt contains water of crystallisation. The formula is written as, for example,
-CuSO$_4$, $\cdot$5H$\_2$O.
+A hydrated salt contains water of crystallisation. The formula is written as, for example, CuSO$_4$,
+$\cdot$5H$\_2$O.
 
 To find the number of water molecules:
 
@@ -672,8 +672,8 @@ Constants, and $m$ is molality.
 
 :::info[Example]
 
-$12.5\mathrm{ g}$ of hydrated magnesium sulfate, MgSO$_4$, $\cdot$xH$_2$O, is heated to constant mass
-Of $6.1\mathrm{ g}$.
+$12.5\mathrm{ g}$ of hydrated magnesium sulfate, MgSO$_4$, $\cdot$xH$_2$O, is heated to constant
+mass Of $6.1\mathrm{ g}$.
 
 Mass of water lost $= 12.5 - 6.1 = 6.4\mathrm{ g}$.
 
@@ -1062,3 +1062,8 @@ For the A-Level treatment of this topic, see
 | [Stoichiometry] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/quantitative-chemistry)            |
 | [Stoichiometry] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/1-stoichiometry/1_stoichiometric-relationships)     |
 | [Stoichiometry] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/2-stoichiometry/1_mole-concept-and-stoichiometry) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

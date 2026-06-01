@@ -1,6 +1,8 @@
 ---
 title: Floating Point Representation
-description: 'A-Level Computer Science Floating Point Representation notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Computer Science Floating Point Representation notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -774,3 +776,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Hash Tables
-description: 'A-Level Computer Science Hash Tables notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'A-Level Computer Science Hash Tables notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam readiness.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -881,3 +883,14 @@ Available for insertion.
 
 6. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
    data).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

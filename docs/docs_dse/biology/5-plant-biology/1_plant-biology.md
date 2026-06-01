@@ -1,6 +1,8 @@
 ---
 title: Plant Biology
-description: 'DSE Plant Biology notes covering key definitions, core concepts, worked examples, and practice questions for targeted revision and examination preparation.'
+description:
+  'DSE Plant Biology notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted revision and examination preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1057,15 +1059,15 @@ If light were switched off:
 Plants require a range of mineral ions for healthy growth. These are absorbed from the soil solution
 by root hair cells, primarily through active transport (against the concentration gradient).
 
-| Mineral Ion | Symbol                             | Function                                                                          | Deficiency Symptom                                            |
-| ----------- | ---------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Mineral Ion | Symbol                               | Function                                                                          | Deficiency Symptom                                            |
+| ----------- | ------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | Nitrogen    | $\mathrm{NO}_3^-$, $\mathrm{NH}_4^+$ | Component of amino acids, proteins, nucleic acids, chlorophyll                    | Chlorosis (yellowing of older leaves); stunted growth         |
-| Phosphorus  | $\mathrm{PO}_4^{3-}$               | Component of ATP, nucleic acids (DNA, RNA), phospholipids                         | Poor root growth; dark green or purplish leaves               |
-| Potassium   | $\mathrm{K}^+$                     | Osmoregulation; opening and closing of stomata; enzyme activation                 | Yellow leaves with dead tips; weak stems                      |
-| Magnesium   | $\mathrm{Mg}^{2+}$                 | Central atom in the chlorophyll molecule; enzyme activator                        | Chlorosis of older leaves (chlorophyll cannot be synthesised) |
-| Calcium     | $\mathrm{Ca}^{2+}$                 | Component of the middle lamella (calcium pectate); involved in cell division      | Stunted growth; meristems die                                 |
-| Iron        | $\mathrm{Fe}^{2+}$/Fe$^{3+}$       | Required for chlorophyll synthesis (as a cofactor, not a component)               | Chlorosis of YOUNG leaves (iron is immobile in the plant)     |
-| Sulphur     | $\mathrm{SO}_4^{2-}$               | Component of some amino acids (cysteine, methionine); component of some coenzymes | Chlorosis of young leaves                                     |
+| Phosphorus  | $\mathrm{PO}_4^{3-}$                 | Component of ATP, nucleic acids (DNA, RNA), phospholipids                         | Poor root growth; dark green or purplish leaves               |
+| Potassium   | $\mathrm{K}^+$                       | Osmoregulation; opening and closing of stomata; enzyme activation                 | Yellow leaves with dead tips; weak stems                      |
+| Magnesium   | $\mathrm{Mg}^{2+}$                   | Central atom in the chlorophyll molecule; enzyme activator                        | Chlorosis of older leaves (chlorophyll cannot be synthesised) |
+| Calcium     | $\mathrm{Ca}^{2+}$                   | Component of the middle lamella (calcium pectate); involved in cell division      | Stunted growth; meristems die                                 |
+| Iron        | $\mathrm{Fe}^{2+}$/Fe$^{3+}$         | Required for chlorophyll synthesis (as a cofactor, not a component)               | Chlorosis of YOUNG leaves (iron is immobile in the plant)     |
+| Sulphur     | $\mathrm{SO}_4^{2-}$                 | Component of some amino acids (cysteine, methionine); component of some coenzymes | Chlorosis of young leaves                                     |
 
 ### Nitrogen as a Limiting Nutrient
 
@@ -1781,7 +1783,6 @@ experimental evidence, and real-world applications.
 
 **Key concepts include:**
 
-
 - photosynthesis (light-dependent and independent)
 - transpiration and water transport
 - plant hormones and tropisms
@@ -1792,3 +1793,8 @@ Success requires the ability to recall specific factual content, apply knowledge
 and evaluate experimental evidence critically.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/plant-biology.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

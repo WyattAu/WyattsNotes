@@ -1,6 +1,8 @@
 ---
 title: Ninja Build System and Parrallelism
-description: 'C++ Programming Ninja Build System and Parrallelism notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'C++ Programming Ninja Build System and Parrallelism notes covering key definitions, core
+  concepts, worked examples, and practice questions for focused revision.'
 date: 2025-12-10T06:02:22.685Z
 tags:
   - cpp
@@ -737,3 +739,8 @@ parrallelism, including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

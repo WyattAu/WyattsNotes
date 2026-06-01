@@ -6,15 +6,17 @@ tags:
   - IB History
 categories:
   - IB History
-description: IB History guide to the Cold War for Paper 2. Covers origins, key crises (Korea, Cuba, Berlin, Hungary, Prague, Afghanistan), detente, end of the Cold War,.
+description:
+  IB History guide to the Cold War for Paper 2. Covers origins, key crises (Korea, Cuba, Berlin,
+  Hungary, Prague, Afghanistan), detente, end of the Cold War,.
 ---
 
 # The Cold War (1945--1991)
 
-This document covers the IB History Cold War topic for Paper 2. It traces the development, escalation,
-and resolution of superpower rivalry between the United States and the Soviet Union, examining the major
-crises, periods of detente, and the eventual collapse of the Soviet bloc. Historiographical perspectives
-are integrated throughout to support high-scoring essay responses.
+This document covers the IB History Cold War topic for Paper 2. It traces the development,
+escalation, and resolution of superpower rivalry between the United States and the Soviet Union,
+examining the major crises, periods of detente, and the eventual collapse of the Soviet bloc.
+Historiographical perspectives are integrated throughout to support high-scoring essay responses.
 
 ---
 
@@ -23,8 +25,8 @@ are integrated throughout to support high-scoring essay responses.
 ### 1.1 Yalta and Potsdam Conferences
 
 The wartime alliance between the USA, UK, and USSR began to fracture even before the defeat of Nazi
-Germany. The conferences at Yalta (February 1945) and Potsdam (July--August 1945) exposed fundamental
-differences between the Allies over the post-war settlement of Europe.
+Germany. The conferences at Yalta (February 1945) and Potsdam (July--August 1945) exposed
+fundamental differences between the Allies over the post-war settlement of Europe.
 
 **Yalta Conference (4--11 February 1945)**
 
@@ -48,7 +50,8 @@ differences between the Allies over the post-war settlement of Europe.
 
 ### 1.2 The Truman Doctrine
 
-On 12 March 1947, President Truman addressed Congress outlining what became known as the Truman Doctrine:
+On 12 March 1947, President Truman addressed Congress outlining what became known as the Truman
+Doctrine:
 
 - The USA would provide political, military, and economic assistance to all democratic nations under
   threat from authoritarian forces
@@ -57,7 +60,7 @@ On 12 March 1947, President Truman addressed Congress outlining what became know
 - $400 million in aid to Greece and Turkey
 - Marked the end of isolationist policy and the beginning of containment
 - The doctrine was ideological — it framed the conflict as a struggle between freedom and tyranny
-- It did not specifically name the USSR but was clearly directed against Soviet expansion
+- It did not specifically name the USSR but was evidently directed against Soviet expansion
 
 ### 1.3 The Marshall Plan
 
@@ -70,18 +73,19 @@ Officially the European Recovery Programme (ERP), announced by Secretary of Stat
 - Conditional on cooperation between recipient nations and adoption of free-market policies
 - Stalin rejected the plan for the USSR and Eastern Europe, calling it "dollar imperialism"
 - The USSR established Comecon (Council for Mutual Economic Assistance) as a rival programme in 1949
-- The Marshall Plan was highly effective — Western European industrial production exceeded pre-war levels
-  by 1952
+- The Marshall Plan was highly effective — Western European industrial production exceeded pre-war
+  levels by 1952
 - It consolidated the division of Europe into Western and Soviet blocs
 
 ### 1.4 The Berlin Blockade and Airlift (1948--1949)
 
-- The Western Allies introduced a new currency (the Deutschmark) in their zones of Germany and Berlin
-  (June 1948)
-- Stalin saw this as a threat to the Soviet economy and responded by blocking all road, rail, and canal
-  access to West Berlin (24 June 1948)
+- The Western Allies introduced a new currency (the Deutschmark) in their zones of Germany and
+  Berlin (June 1948)
+- Stalin saw this as a threat to the Soviet economy and responded by blocking all road, rail, and
+  canal access to West Berlin (24 June 1948)
 - 2.5 million people in West Berlin were cut off from supplies
-- The Western Allies responded with the Berlin Airlift — a massive operation to supply the city by air
+- The Western Allies responded with the Berlin Airlift — a massive operation to supply the city by
+  air
   - At its peak, planes were landing in West Berlin every 30 seconds
   - Over 2 million tons of supplies were delivered
   - 277,000 flights over 462 days
@@ -97,8 +101,8 @@ Officially the European Recovery Programme (ERP), announced by Secretary of Stat
 
 - Signed 4 April 1949 in Washington
 - Collective security organisation: an attack on one member is an attack on all (Article 5)
-- Original members: USA, UK, France, Canada, Italy, Belgium, Netherlands, Luxembourg, Denmark, Norway,
-  Iceland, Portugal
+- Original members: USA, UK, France, Canada, Italy, Belgium, Netherlands, Luxembourg, Denmark,
+  Norway, Iceland, Portugal
 - West Germany joined in 1955 — this was a key trigger for the Warsaw Pact
 - First peacetime military alliance the USA had entered
 - Integrated military command under a Supreme Allied Commander (initially Eisenhower)
@@ -107,8 +111,10 @@ Officially the European Recovery Programme (ERP), announced by Secretary of Stat
 **Warsaw Pact**
 
 - Signed 14 May 1955 in Warsaw
-- Collective security organisation for the Soviet bloc in response to West German rearmament and NATO
-- Members: USSR, Albania (withdrew 1968), Bulgaria, Czechoslovakia, East Germany, Hungary, Poland, Romania
+- Collective security organisation for the Soviet bloc in response to West German rearmament and
+  NATO
+- Members: USSR, Albania (withdrew 1968), Bulgaria, Czechoslovakia, East Germany, Hungary, Poland,
+  Romania
 - Provided a formal structure for Soviet control over Eastern European militaries
 - Allowed the USSR to maintain troops in Eastern Europe legally
 - Dissolved 31 March 1991
@@ -121,17 +127,18 @@ Officially the European Recovery Programme (ERP), announced by Secretary of Stat
 
 - Korea divided at the 38th parallel after WWII: Soviet north, US south
 - North Korean forces invaded South Korea on 25 June 1950, led by Kim Il-sung with Soviet backing
-- The UN Security Council authorised military intervention (the USSR was boycotting the Council and could
-  not veto)
-- UN forces (predominantly American) under MacArthur pushed North Korean forces back to the Yalu River
+- The UN Security Council authorised military intervention (the USSR was boycotting the Council and
+  could not veto)
+- UN forces (predominantly American) under MacArthur pushed North Korean forces back to the Yalu
+  River
 - China entered the war in October 1950 when UN forces approached the Yalu — 300,000 Chinese troops
   crossed the border
 - The war became a stalemate around the 38th parallel
 - MacArthur wanted to use nuclear weapons against China; Truman dismissed him (April 1951)
 - Armistice signed 27 July 1953 — Korea remained divided at approximately the 38th parallel
 - Casualties: approximately 5 million, mostly Korean civilians
-- Significance: first "hot war" of the Cold War; demonstrated the limits of containment; China emerged as
-  a major Cold War actor
+- Significance: first "hot war" of the Cold War; demonstrated the limits of containment; China
+  emerged as a major Cold War actor
 
 ### 2.2 Hungarian Uprising (1956)
 
@@ -154,7 +161,8 @@ Officially the European Recovery Programme (ERP), announced by Secretary of Stat
 
 ### 2.3 Berlin Wall (1961)
 
-- Between 1949 and 1961, approximately 2.5 million East Germans fled to the West, many through Berlin
+- Between 1949 and 1961, approximately 2.5 million East Germans fled to the West, many through
+  Berlin
 - This "brain drain" of skilled workers severely damaged the East German economy
 - Khrushchev gave East German leader Walter Ulbricht permission to close the border
 - Construction of the Berlin Wall began on 13 August 1961
@@ -186,7 +194,8 @@ The closest the world came to nuclear war.
 - Soviet ships approached the quarantine line
 - For several days, the world stood on the brink of nuclear war
 - Intense negotiations between Kennedy and Khrushchev
-- Secret agreement: Kennedy would remove US Jupiter missiles from Turkey (to be completed within 6 months)
+- Secret agreement: Kennedy would remove US Jupiter missiles from Turkey (to be completed within 6
+  months)
 - Public agreement: USSR would remove missiles from Cuba; USA would pledge not to invade Cuba
 - The crisis ended on 28 October when Khrushchev announced the removal of Soviet missiles
 
@@ -214,7 +223,8 @@ The closest the world came to nuclear war.
   - Dubcek was arrested and taken to Moscow; he was replaced by Husak
   - Czechoslovakia returned to orthodox communism
 - Civilian resistance was non-violent — the "Prague Spring" became a symbol of peaceful resistance
-- The Brezhnev Doctrine was used to justify the suppression of any reform movement in the Eastern bloc
+- The Brezhnev Doctrine was used to justify the suppression of any reform movement in the Eastern
+  bloc
 - Significance: demonstrated that the USSR would not tolerate reform even when it was popular and
   internally driven; reinforced the division of Europe
 
@@ -225,9 +235,10 @@ The closest the world came to nuclear war.
 - The Soviet Union invaded Afghanistan on 24 December 1979
   - 100,000 Soviet troops entered the country
   - Installed Babrak Karmal as the new leader
-  - Aimed to prop up the communist government and prevent Islamic fundamentalism from spreading to the
-    Soviet Central Asian republics
-- The Mujahideen received support from the USA, Pakistan, Saudi Arabia, and China (Operation Cyclone)
+  - Aimed to prop up the communist government and prevent Islamic fundamentalism from spreading to
+    the Soviet Central Asian republics
+- The Mujahideen received support from the USA, Pakistan, Saudi Arabia, and China (Operation
+  Cyclone)
   - CIA supplied Stinger missiles which were effective against Soviet helicopters
 - The war became a "Soviet Vietnam" — a long, costly, and unpopular conflict
   - Approximately 15,000 Soviet soldiers killed
@@ -259,14 +270,14 @@ The closest the world came to nuclear war.
 
 - Signed on 1 August 1975 by 35 nations (USA, Canada, USSR, and most European states)
 - Three "baskets":
-  1. **Security**: recognition of post-WWII European borders (the USSR gained formal recognition of its
-     territorial gains)
+  1. **Security**: recognition of post-WWII European borders (the USSR gained formal recognition of
+     its territorial gains)
   2. **Cooperation**: economic, scientific, and technological cooperation
   3. **Human Rights**: fundamental freedoms, including freedom of thought, conscience, and religion
 - Basket Three became a powerful tool for dissident movements in Eastern Europe (e.g., Charter 77 in
   Czechoslovakia, Helsinki monitoring groups in the USSR)
-- The Helsinki Final Act established the Conference on Security and Cooperation in Europe (CSCE), later
-  the Organisation for Security and Cooperation in Europe (OSCE)
+- The Helsinki Final Act established the Conference on Security and Cooperation in Europe (CSCE),
+  later the Organisation for Security and Cooperation in Europe (OSCE)
 
 ### 3.3 Nixon's Visit to China (1972)
 
@@ -276,8 +287,8 @@ The closest the world came to nuclear war.
 - Ping-pong diplomacy (1971) helped break the ice
 - China was admitted to the UN in 1971, replacing Taiwan
 - The visit exploited the Sino-Soviet split and put pressure on the USSR
-- Significance: shifted the global balance of power; initiated China's integration into the international
-  system; demonstrated the complexity of Cold War alliances
+- Significance: shifted the global balance of power; initiated China's integration into the
+  international system; demonstrated the complexity of Cold War alliances
 
 ### 3.4 Nuclear Arms Control
 
@@ -299,8 +310,8 @@ The closest the world came to nuclear war.
 - Key agreements:
   - Treaty of Moscow (1970): recognised post-war borders, renounced use of force
   - Treaty of Warsaw (1970): recognised the Oder-Neisse line as Poland's western border
-  - Basic Treaty with East Germany (1972): recognised the GDR as a sovereign state (while maintaining
-    the goal of German reunification)
+  - Basic Treaty with East Germany (1972): recognised the GDR as a sovereign state (while
+    maintaining the goal of German reunification)
 - Brandt won the Nobel Peace Prize in 1971
 - Ostpolitik reduced tensions in Europe and facilitated the Helsinki process
 - Critics argued it legitimised the division of Germany and the Soviet domination of Eastern Europe
@@ -316,8 +327,8 @@ Mikhail Gorbachev became General Secretary of the Communist Party in March 1985.
 **Glasnost ("Openness")**
 
 - Relaxation of censorship and increased freedom of speech
-- Allowed open discussion of previously taboo topics: Stalin's purges, the Chernobyl disaster (April 1986),
-  economic failures
+- Allowed open discussion of previously taboo topics: Stalin's purges, the Chernobyl disaster (April
+  1986), economic failures
 - Enabled the emergence of dissident movements and nationalist organisations
 - Unintended consequence: exposed the incompetence and corruption of the Soviet system, undermining
   legitimacy
@@ -342,9 +353,10 @@ Mikhail Gorbachev became General Secretary of the Communist Party in March 1985.
 - Mass protests in East Germany throughout 1989
 - Hungary opened its border with Austria (May 1989), allowing East Germans to escape to the West
 - Hundreds of thousands of East Germans fled through Hungary and Czechoslovakia
-- Mass demonstrations in Leipzig ("Monday demonstrations") grew from hundreds to hundreds of thousands
-- Gorbachev visited East Berlin in October 1989 and stated that each country should follow its own path
-  — implicitly rejecting the Brezhnev Doctrine
+- Mass demonstrations in Leipzig ("Monday demonstrations") grew from hundreds to hundreds of
+  thousands
+- Gorbachev visited East Berlin in October 1989 and stated that each country should follow its own
+  path — implicitly rejecting the Brezhnev Doctrine
 - East German leader Honecker was replaced by Krenz in October 1989
 - On 9 November 1989, an ill-prepared press conference by Gunter Schabowski led to the borders being
   opened
@@ -355,7 +367,8 @@ Mikhail Gorbachev became General Secretary of the Communist Party in March 1985.
 ### 4.3 Reunification of Germany (1990)
 
 - Helmut Kohl announced a ten-point plan for German reunification (November 1989)
-- The "Two Plus Four" negotiations: the two Germanys plus the four wartime powers (USA, USSR, UK, France)
+- The "Two Plus Four" negotiations: the two Germanys plus the four wartime powers (USA, USSR, UK,
+  France)
 - Treaty on the Final Settlement with Respect to Germany (12 September 1990):
   - Germany regained full sovereignty
   - Confirmed Germany's existing borders (Oder-Neisse line)
@@ -363,8 +376,8 @@ Mikhail Gorbachev became General Secretary of the Communist Party in March 1985.
   - Soviet troops to withdraw from East Germany by 1994
 - Germany was formally reunited on 3 October 1990
 - East Germany was absorbed into the Federal Republic
-- Significance: the most dramatic symbol of the end of the Cold War; raised fears of German dominance in
-  Europe but ultimately stabilised under NATO and EU membership
+- Significance: the most dramatic symbol of the end of the Cold War; raised fears of German
+  dominance in Europe but ultimately stabilised under NATO and EU membership
 
 ### 4.4 Dissolution of the USSR
 
@@ -390,16 +403,18 @@ Mikhail Gorbachev became General Secretary of the Communist Party in March 1985.
 
 - Dominant in the USA during the 1950s and 1960s
 - Places primary responsibility for the Cold War on the USSR and Stalin's expansionist ambitions
-- Stalin's ideology of world revolution and the inherent aggressiveness of communism were the driving
-  forces
+- Stalin's ideology of world revolution and the inherent aggressiveness of communism were the
+  driving forces
 - The USA was forced into a defensive posture by Soviet aggression
 - Key historians: George Kennan, Arthur Schlesinger Jr., Herbert Feis
 
 **Revisionist School**
 
-- Emerged in the 1960s and 1970s, influenced by the Vietnam War and critical views of US foreign policy
+- Emerged in the 1960s and 1970s, influenced by the Vietnam War and critical views of US foreign
+  policy
 - Places primary responsibility on the USA and American capitalism's need for global markets
-- The USSR was primarily defensive, reacting to American economic imperialism and nuclear intimidation
+- The USSR was primarily defensive, reacting to American economic imperialism and nuclear
+  intimidation
 - The Marshall Plan was economic aggression; NATO was a provocative military alliance
 - The USA used atomic diplomacy to intimidate the USSR
 - Key historians: William Appleman Williams, Gabriel Kolko, Gar Alperovitz
@@ -415,41 +430,42 @@ Mikhail Gorbachev became General Secretary of the Communist Party in March 1985.
 
 ### 5.2 Responsibility for Cold War Origins
 
-- **Was the Cold War inevitable?** Structuralists argue that two ideologically opposed superpowers with
-  competing visions for the post-war world would inevitably clash
-- **Could it have been avoided?** Contingentists point to specific decisions and missed opportunities:
-  Roosevelt's death, the bomb, Stalin's intransigence
+- **Was the Cold War inevitable?** Structuralists argue that two ideologically opposed superpowers
+  with competing visions for the post-war world would inevitably clash
+- **Could it have been avoided?** Contingentists point to specific decisions and missed
+  opportunities: Roosevelt's death, the bomb, Stalin's intransigence
 - The opening of Soviet archives after 1991 provided new evidence but did not produce a single
   definitive answer
 
 ### 5.3 Inevitability of Soviet Collapse
 
-- **Internalist arguments**: The Soviet economy was unsustainable; the command economy could not compete
-  with Western capitalism; Gorbachev's reforms accelerated an inevitable collapse
-- **Externalist arguments**: The arms race (particularly Reagan's military build-up and SDI) bankrupted
-  the Soviet economy; the Afghanistan war drained resources; Western pressure forced the USSR to the
-  negotiating table
-- **Accidental collapse argument**: Gorbachev did not intend to destroy the Soviet system; his reforms
-  unleashed nationalist forces that spiralled beyond control
+- **Internalist arguments**: The Soviet economy was unsustainable; the command economy could not
+  compete with Western capitalism; Gorbachev's reforms accelerated an inevitable collapse
+- **Externalist arguments**: The arms race (particularly Reagan's military build-up and SDI)
+  bankrupted the Soviet economy; the Afghanistan war drained resources; Western pressure forced the
+  USSR to the negotiating table
+- **Accidental collapse argument**: Gorbachev did not intend to destroy the Soviet system; his
+  reforms unleashed nationalist forces that spiralled beyond control
 
 ---
 
 ## 6. Essay Writing Tips
 
-1. **Establish clear timelines**: Cold War questions often span decades. Chronological structure works
-   well — show change over time rather than treating events as isolated incidents.
+1. **Establish clear timelines**: Cold War questions often span decades. Chronological structure
+   works well — show change over time rather than treating events as isolated incidents.
 2. **Evaluate causation**: Avoid listing events. For each crisis, identify causes, course, and
    consequences — and explain their relative significance.
-3. **Use historiography deliberately**: Don't just name historians. Explain how their interpretations
-   differ and why, then take a reasoned position.
+3. **Use historiography deliberately**: Don't just name historians. Explain how their
+   interpretations differ and why, then take a reasoned position.
 4. **Balance depth and breadth**: The IB rewards detailed knowledge of specific events combined with
    awareness of the broader Cold War context.
-5. **Consider multiple perspectives**: Always address both superpower perspectives. Soviet motivations
-   (security, ideology, historical experience of invasion) are just as important as American ones.
+5. **Consider multiple perspectives**: Always address both superpower perspectives. Soviet
+   motivations (security, ideology, historical experience of invasion) are just as important as
+   American ones.
 6. **Link crises**: Show how events influenced each other. The Hungarian Uprising affected the Cuban
    Missile Crisis; the Suez Crisis distracted from Hungary; Afghanistan ended detente.
-7. **Define terms**: Concepts like "containment", "detente", "brinkmanship" and "domino theory" should be
-   precisely defined and applied.
+7. **Define terms**: Concepts like "containment", "detente", "brinkmanship" and "domino theory"
+   should be precisely defined and applied.
 
 ---
 
@@ -457,27 +473,32 @@ Mikhail Gorbachev became General Secretary of the Communist Party in March 1985.
 
 1. **Presenting the Cold War as a simple binary**: The reality was far more complex, involving
    intermediate powers, economic factors, and internal dynamics within both blocs.
-2. **Anachronism**: Judging past actions with present knowledge. The fear of communism in the 1950s was
-   genuine and had historical roots, even if it seems exaggerated in retrospect.
-3. **Ignoring the Third World**: Cold War competition in Africa, Asia, and Latin America was central, not
-   peripheral. Proxy wars were a defining feature.
-4. **Confusing correlation with causation**: Just because two events happened in sequence does not mean
-   one caused the other. Always assess the relationship critically.
+2. **Anachronism**: Judging past actions with present knowledge. The fear of communism in the 1950s
+   was genuine and had historical roots, even if it seems exaggerated in retrospect.
+3. **Ignoring the Third World**: Cold War competition in Africa, Asia, and Latin America was
+   central, not peripheral. Proxy wars were a defining feature.
+4. **Confusing correlation with causation**: Just because two events happened in sequence does not
+   mean one caused the other. Always assess the relationship critically.
 5. **Overstating Soviet unity**: The Eastern bloc was not monolithic. Tito's Yugoslavia, Sino-Soviet
    split, and Romanian independence demonstrate significant variation.
-6. **Neglecting economic factors**: The Cold War was fundamentally an economic competition. Arms spending,
-   trade policy, and economic performance were crucial.
+6. **Neglecting economic factors**: The Cold War was fundamentally an economic competition. Arms
+   spending, trade policy, and economic performance were crucial.
 7. **Writing a narrative instead of an argument**: Essays must have a clear thesis supported by
-   evidence, not simply tell the story of the Cold War chronologically.
+   evidence, not directly tell the story of the Cold War chronologically.
 
 ---
 
 ## 8. Summary
 
 The Cold War was a global struggle between two ideologically opposed superpowers that shaped
-international relations for nearly half a century. It began from the breakdown of the wartime alliance
-and competing visions for the post-war order, manifested through a series of crises that brought the
-world to the brink of nuclear war, and ended with the collapse of the Soviet system under the weight
-of its own contradictions and the pressures of reform. The historiographical debate remains alive:
-orthodox, revisionist, and post-revisionist interpretations continue to offer competing explanations
-for the origins, course, and conclusion of the conflict.
+international relations for nearly half a century. It began from the breakdown of the wartime
+alliance and competing visions for the post-war order, manifested through a series of crises that
+brought the world to the brink of nuclear war, and ended with the collapse of the Soviet system
+under the weight of its own contradictions and the pressures of reform. The historiographical debate
+remains alive: orthodox, revisionist, and post-revisionist interpretations continue to offer
+competing explanations for the origins, course, and conclusion of the conflict.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -352,7 +352,8 @@ Large amplitudes (nonlinear regime), the principle breaks down.
 
 ### Constructive and Destructive Interference
 
-<DesmosGraph title="Wave Superposition" expressions={["\\sin(x)", "\\sin(2x)", "\\sin(x)+\\sin(2x)"]} width={800} height={500} />
+<DesmosGraph title="Wave Superposition" expressions={["\\sin(x)", "\\sin(2x)",
+"\\sin(x)+\\sin(2x)"]} width={800} height={500} />
 
 - **Constructive:** waves in phase; amplitudes add.
 - **Destructive:** waves in antiphase (out of phase by $\pi$); amplitudes cancel.
@@ -523,3 +524,14 @@ Single-slit diffraction envelope.
 | -------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------ |
 | [Superposition and Interference] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/waves/02-superposition-and-interference) |
 | [Superposition and Interference] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/3-wave-behaviour/4_wave-phenomena)                             |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

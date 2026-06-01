@@ -1,6 +1,8 @@
 ---
 title: Memory Models
-description: 'IB Psychology Memory Models notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'IB Psychology Memory Models notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective revision.'
 slug: memory-models
 ---
 
@@ -312,3 +314,14 @@ For an overview of cognitive topics, see
 
 4. Confusing an algorithm with a program — an algorithm is a step-by-step procedure, not its
    implementation in code.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -102,7 +102,7 @@ Essay.
 
 ## Exam Focus
 
-Paper 2 questions on climate change typically require:
+Paper 2 questions on climate change in most cases require:
 
 - Explaining the causes of climate change with reference to atmospheric processes and human
   activity.

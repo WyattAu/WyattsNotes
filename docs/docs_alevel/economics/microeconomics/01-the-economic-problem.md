@@ -1,6 +1,8 @@
 ---
 title: The Economic Problem
-description: 'A-Level Economics The Economic Problem notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'A-Level Economics The Economic Problem notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -708,8 +710,8 @@ used, requiring larger sacrifices of consumer goods.
 
 **Example.** The PPF shifts outward due to economic growth.
 
-**Capital accumulation.** If the economy produces at $K = 60$, $C = 64$And the capital stock grows at
-5% per year:
+**Capital accumulation.** If the economy produces at $K = 60$, $C = 64$And the capital stock grows
+at 5% per year:
 
 $$K_{t+1} = K_t + 0.05K_t = 1.05K_t$$
 
@@ -984,3 +986,9 @@ consumer goods at any given level of capital goods production.
 
 4. Using circular reasoning by assuming the conclusion when evaluating economic policy
    effectiveness.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

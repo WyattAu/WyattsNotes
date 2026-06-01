@@ -482,12 +482,12 @@ The increasing deviation reflects the increasing number of lone pairs compressin
 
 #### 5 Electron Domains
 
-| Notation    | Shape                | Bond Angles                     | Example |
-| ----------- | -------------------- | ------------------------------- | ------- |
-| AX$_5$      | Trigonal bipyramidal | 90$\degree$120$\degree$         | PCl$_5$ |
+| Notation    | Shape                | Bond Angles                       | Example |
+| ----------- | -------------------- | --------------------------------- | ------- |
+| AX$_5$      | Trigonal bipyramidal | 90$\degree$120$\degree$           | PCl$_5$ |
 | AX$_4$E     | Seesaw               | $\lt 90\degree$, $\lt 120\degree$ | SF$_4$  |
-| AX$_3$E$_2$ | T-shaped             | $\lt 90\degree$                 | ClF$_3$ |
-| AX$_2$E$_3$ | Linear               | 180$\degree$                    | XeF$_2$ |
+| AX$_3$E$_2$ | T-shaped             | $\lt 90\degree$                   | ClF$_3$ |
+| AX$_2$E$_3$ | Linear               | 180$\degree$                      | XeF$_2$ |
 
 In a trigonal bipyramidal arrangement, lone pairs always occupy **equatorial positions** because
 This minimises repulsion (equatorial positions have two 90$\degree$ interactions vs three
@@ -1037,21 +1037,21 @@ $$
 
 ### VSEPR Quick Reference
 
-| Domains | Lone Pairs | Shape                | Angle                           | Example |
-| ------- | ---------- | -------------------- | ------------------------------- | ------- |
-| 2       | 0          | Linear               | 180$\degree$                    | CO$_2$  |
-| 3       | 0          | Trigonal planar      | 120$\degree$                    | BF$_3$  |
-| 3       | 1          | Bent                 | $\lt 120\degree$                | SO$_2$  |
-| 4       | 0          | Tetrahedral          | 109.5$\degree$                  | CH$_4$  |
-| 4       | 1          | Trigonal pyramidal   | $\lt 109.5\degree$              | NH$_3$  |
-| 4       | 2          | Bent                 | $\lt 109.5\degree$              | H$_2$O  |
-| 5       | 0          | Trigonal bipyramidal | 90$\degree$120$\degree$         | PCl$_5$ |
+| Domains | Lone Pairs | Shape                | Angle                             | Example |
+| ------- | ---------- | -------------------- | --------------------------------- | ------- |
+| 2       | 0          | Linear               | 180$\degree$                      | CO$_2$  |
+| 3       | 0          | Trigonal planar      | 120$\degree$                      | BF$_3$  |
+| 3       | 1          | Bent                 | $\lt 120\degree$                  | SO$_2$  |
+| 4       | 0          | Tetrahedral          | 109.5$\degree$                    | CH$_4$  |
+| 4       | 1          | Trigonal pyramidal   | $\lt 109.5\degree$                | NH$_3$  |
+| 4       | 2          | Bent                 | $\lt 109.5\degree$                | H$_2$O  |
+| 5       | 0          | Trigonal bipyramidal | 90$\degree$120$\degree$           | PCl$_5$ |
 | 5       | 1          | Seesaw               | $\lt 90\degree$, $\lt 120\degree$ | SF$_4$  |
-| 5       | 2          | T-shaped             | $\lt 90\degree$                 | ClF$_3$ |
-| 5       | 3          | Linear               | 180$\degree$                    | XeF$_2$ |
-| 6       | 0          | Octahedral           | 90$\degree$                     | SF$_6$  |
-| 6       | 1          | Square pyramidal     | $\lt 90\degree$                 | BrF$_5$ |
-| 6       | 2          | Square planar        | 90$\degree$                     | XeF$_4$ |
+| 5       | 2          | T-shaped             | $\lt 90\degree$                   | ClF$_3$ |
+| 5       | 3          | Linear               | 180$\degree$                      | XeF$_2$ |
+| 6       | 0          | Octahedral           | 90$\degree$                       | SF$_6$  |
+| 6       | 1          | Square pyramidal     | $\lt 90\degree$                   | BrF$_5$ |
+| 6       | 2          | Square planar        | 90$\degree$                       | XeF$_4$ |
 
 ### Hybridization Quick Reference
 
@@ -1220,3 +1220,8 @@ For the A-Level treatment of this topic, see
 | [Chemical Bonding] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/bonding-and-structure)                          |
 | [Chemical Bonding] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/4-chemical-bonding/1_chemical-bonding)                           |
 | [Chemical Bonding] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/1-atomic-structure-and-bonding/1_atomic-structure-and-bonding) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Conan
-description: 'C++ Programming Conan notes covering key definitions, core concepts, worked examples, and practice questions for effective learning and effective revision.'
+description:
+  'C++ Programming Conan notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective learning and effective revision.'
 date: 2025-12-11T05:01:52.356Z
 tags:
   - cpp
@@ -798,3 +800,8 @@ and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

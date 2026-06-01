@@ -1,7 +1,9 @@
 ---
 id: vpn-and-tunneling
 title: VPN and Tunneling
-description: 'VPN and Tunneling notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision and exam readiness.'
+description:
+  'VPN and Tunneling notes covering key definitions, core concepts, worked examples, and practice
+  questions for in-depth revision and exam readiness.'
 slug: vpn-and-tunneling
 ---
 
@@ -608,3 +610,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

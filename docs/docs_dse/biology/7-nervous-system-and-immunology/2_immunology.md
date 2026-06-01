@@ -1,6 +1,8 @@
 ---
 title: Immunology
-description: 'DSE Biology Immunology notes covering key definitions, core concepts, worked examples, and practice questions for clear review and exam preparation.'
+description:
+  'DSE Biology Immunology notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear review and exam preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1088,7 +1090,6 @@ $$\text{Herd immunity threshold} = 1 - \frac{1}{R_0}$$
 
 ## Common Pitfalls
 
-
 1. Using anecdotal evidence or small sample sizes as though they constitute robust scientific data.
 
    > > > > > > > Stashed changes:docs/docs_dse/Biology/immunology.md
@@ -1101,3 +1102,14 @@ which process is being described.
 4. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
    change in tertiary structure.
    > > > > > > > Stashed changes:docs/docs_dse/Biology/immunology.md
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

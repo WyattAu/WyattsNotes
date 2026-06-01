@@ -1,6 +1,8 @@
 ---
 title: Pointers
-description: 'C++ Programming Pointers notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and examination preparation.'
+description:
+  'C++ Programming Pointers notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid revision and examination preparation.'
 date: 2026-01-03T01:32:50.298Z
 tags:
   - cpp
@@ -794,3 +796,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Data Representation in Programming
-description: 'A-Level Computer Science Data Representation in Programming notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Computer Science Data Representation in Programming notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -545,3 +547,14 @@ For revision on number representation, see
 
 4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
    applications.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

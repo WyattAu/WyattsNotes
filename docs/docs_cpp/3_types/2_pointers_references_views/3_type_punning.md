@@ -1,6 +1,8 @@
 ---
 title: Type Punning and the Strict Aliasing Rule
-description: 'C++ Programming Type Punning and the Strict Aliasing Rule notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Type Punning and the Strict Aliasing Rule notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -850,3 +852,8 @@ aliasing rule, including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

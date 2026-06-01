@@ -1,6 +1,8 @@
 ---
 title: Ecology
-description: 'A-Level Biology Ecology notes covering key definitions, core concepts, worked examples, and practice questions for methodical learning and effective revision.'
+description:
+  'A-Level Biology Ecology notes covering key definitions, core concepts, worked examples, and
+  practice questions for methodical learning and effective revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -1817,10 +1819,10 @@ self-marking and building a personal test matrix. :::
 
 ### 33.3 Decomposers and Detritivores
 
-| Type         | Organisms                                   | Role                                                                                                                                                                          |
-| ------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type         | Organisms                                   | Role                                                                                                                                                                            |
+| ------------ | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Decomposers  | Fungi, bacteria                             | Secrete extracellular enzymes; break down dead organic matter; release inorganic nutrients ($\mathrm{NH_4^+}$, $\mathrm{PO_4^{3-}}$) back into the soil for producers to absorb |
-| Detritivores | Earthworms, woodlice, maggots, dung beetles | Ingest dead organic matter; digest it internally; speed up decomposition by breaking material into smaller pieces (increasing surface area for decomposers)                   |
+| Detritivores | Earthworms, woodlice, maggots, dung beetles | Ingest dead organic matter; digest it internally; speed up decomposition by breaking material into smaller pieces (increasing surface area for decomposers)                     |
 
 ## 34. Nitrogen Cycle
 
@@ -1849,12 +1851,12 @@ self-marking and building a personal test matrix. :::
 
 ### 35.2 Key Difference from the Carbon and Nitrogen Cycles
 
-| Feature               | Carbon and Nitrogen                         | Phosphorus                                                                   |
-| --------------------- | ------------------------------------------- | ---------------------------------------------------------------------------- |
+| Feature               | Carbon and Nitrogen                           | Phosphorus                                                                   |
+| --------------------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
 | Atmospheric component | Significant ($\mathrm{CO_2}$, $\mathrm{N_2}$) | Negligible (no major gaseous phase)                                          |
-| Main reservoir        | Atmosphere (N); atmosphere and oceans (C)   | Rocks and sediments                                                          |
-| Rate of cycling       | Fast (days to years)                        | Slow (millions of years for the sedimentary component)                       |
-| Bottleneck            | Recycling through decomposers is efficient  | Phosphorus is often a limiting factor in ecosystems because it cycles slowly |
+| Main reservoir        | Atmosphere (N); atmosphere and oceans (C)     | Rocks and sediments                                                          |
+| Rate of cycling       | Fast (days to years)                          | Slow (millions of years for the sedimentary component)                       |
+| Bottleneck            | Recycling through decomposers is efficient    | Phosphorus is often a limiting factor in ecosystems because it cycles slowly |
 
 ## 37. Water Pollution
 
@@ -1993,3 +1995,9 @@ impossible to address with traditional field methods alone.
    'phospholipid bilayer' not 'membrane').
 
 4. Failing to link structure to function when describing biological molecules, cells, or organs.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

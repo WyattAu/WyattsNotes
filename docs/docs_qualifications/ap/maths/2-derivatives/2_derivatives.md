@@ -1,6 +1,8 @@
 ---
 title: Derivatives
-description: 'Qualifications Maths Derivatives notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'Qualifications Maths Derivatives notes covering key definitions, core concepts, worked examples,
+  and practice questions for structured preparation.'
 date: 2026-04-14
 tags:
   - ap
@@ -154,7 +156,8 @@ $\frac{F(x+h) - F(x)}{h}$ by adding and subtracting $f(x+h)g(x)$:
 
 $, $
 \frac{f(x+h)g(x+h) - f(x)g(x)}{h} = f(x+h)\frac{g(x+h) - g(x)}{h} + g(x)\frac{f(x+h) - f(x)}{h}
-$, $
+$,
+$
 
 Taking limits as $h \to 0$ gives the result. $\blacksquare$
 
@@ -177,7 +180,8 @@ $, $
 
 $, $
 F'(x) = \frac{f'(x)}{g(x)} - \frac{f(x)g'(x)}{[g(x)]^2} = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}
-$, $
+$,
+$
 
 $\blacksquare$
 
@@ -206,7 +210,8 @@ Let $\Delta u = g(x+h) - g(x)$. Then:
 
 $, $
 \frac{f(g(x+h)) - f(g(x))}{h} = \frac{f(u + \Delta u) - f(u)}{h} = [f'(u) + k(\Delta u)] \cdot \frac{\Delta u}{h}
-$, $
+$,
+$
 
 Taking $h \to 0$: $\Delta u \to 0$ (since $g$ is differentiable, hence continuous), so
 $k(\Delta u) \to 0$Giving:
@@ -237,7 +242,8 @@ Apply the chain rule twice:
 
 $, $
 \frac{d}{dx}\left[\sin^3(2x)\right] = 3\sin^2(2x) \cdot \cos(2x) \cdot 2 = 6\sin^2(2x)\cos(2x)
-$, $
+$,
+$
 
 :::
 
@@ -261,7 +267,8 @@ Apply the chain rule twice:
 
 $, $
 \frac{d}{dx}\left[e^{\sqrt{3x+1}}\right] = e^{\sqrt{3x+1}} \cdot \frac{d}{dx}\!\left[(3x+1)^{1/2}\right] = e^{\sqrt{3x+1}} \cdot \frac{1}{2}(3x+1)^{-1/2} \cdot 3 = \frac{3e^{\sqrt{3x+1}}}{2\sqrt{3x+1}}
-$, $
+$,
+$
 
 :::
 
@@ -283,17 +290,20 @@ $, $
 
 $, $
 \frac{d}{dx}[\sin x] = \lim_{h \to 0} \frac{\sin(x+h) - \sin x}{h} = \lim_{h \to 0} \frac{\sin x \cos h + \cos x \sin h - \sin x}{h}
-$, $
+$,
+$
 
 $, $
 = \lim_{h \to 0}\!\left[\sin x \cdot \frac{\cos h - 1}{h} + \cos x \cdot \frac{\sin h}{h}\right] = \sin x \cdot 0 + \cos x \cdot 1 = \cos x
-$, $
+$,
+$
 
 ### Proof that $\displaystyle\frac{d}{dx}[\tan x] = \sec^2 x$
 
 $, $
 \frac{d}{dx}[\tan x] = \frac{d}{dx}\!\left[\frac{\sin x}{\cos x}\right] = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x} = \frac{\cos^2 x + \sin^2 x}{\cos^2 x} = \frac{1}{\cos^2 x} = \sec^2 x
-$, $
+$,
+$
 
 $\blacksquare$
 
@@ -311,7 +321,8 @@ $, $
 
 $, $
 \frac{d}{dx}[e^x] = \lim_{h \to 0} \frac{e^{x+h} - e^x}{h} = e^x \lim_{h \to 0} \frac{e^h - 1}{h} = e^x \cdot 1 = e^x
-$, $
+$,
+$
 
 Where we used $\displaystyle\lim_{h \to 0} \frac{e^h - 1}{h} = 1$.
 
@@ -334,7 +345,8 @@ $\blacksquare$
 
 $, $
 \frac{d}{dx}[\arcsin x] = \frac{1}{\sqrt{1 - x^2}} \qquad \frac{d}{dx}[\arccos x] = \frac{-1}{\sqrt{1 - x^2}}
-$, $
+$,
+$
 
 $, $
 \frac{d}{dx}[\arctan x] = \frac{1}{1 + x^2}
@@ -417,7 +429,8 @@ Differentiating again:
 
 $, $
 \frac{d^2y}{dx^2} = \frac{d}{dx}\!\left(-\frac{x}{y}\right) = -\frac{y - x\frac{dy}{dx}}{y^2} = -\frac{y - x(-x/y)}{y^2} = -\frac{y^2 + x^2}{y^3} = -\frac{25}{y^3}
-$, $
+$,
+$
 
 :::
 
@@ -990,3 +1003,8 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

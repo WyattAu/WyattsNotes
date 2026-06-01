@@ -1,6 +1,8 @@
 ---
 title: Markdown & MDX Constructs
-description: 'General Markdown & MDX Constructs notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'General Markdown & MDX Constructs notes covering key definitions, core concepts, worked examples,
+  and practice questions for analytical revision.'
 date: 2025-05-15T22:45:51.828Z
 tags:
   - general
@@ -445,3 +447,14 @@ are generally fine.
 
 4. Memorising content without understanding the underlying principles — this leads to poor
    application in unfamiliar contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

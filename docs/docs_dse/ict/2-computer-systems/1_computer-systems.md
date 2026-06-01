@@ -1,7 +1,9 @@
 ---
 id: dse-ict-computer-systems
 title: Fundamentals of Computer Systems
-description: 'DSE Ict Fundamentals of Computer Systems notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'DSE Ict Fundamentals of Computer Systems notes covering key definitions, core concepts, worked
+  examples, and practice questions for methodical revision.'
 slug: computer-systems
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, ICT]
@@ -956,7 +958,6 @@ systems, including key principles and practical applications.
 
 **Key concepts include:**
 
-
 - core concepts and definitions
 - key principles and frameworks
 - practical applications
@@ -967,3 +968,8 @@ A thorough understanding of these concepts, combined with regular practice and r
 for mastery of this topic.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/computer-systems.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

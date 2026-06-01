@@ -1,6 +1,8 @@
 ---
 title: Neuroplasticity and Neurotransmission
-description: 'IB Psychology Neuroplasticity and Neurotransmission notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'IB Psychology Neuroplasticity and Neurotransmission notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam preparation.'
 slug: neuroplasticity-and-neurotransmission
 ---
 
@@ -353,3 +355,14 @@ For an overview of these topics at the biological level of analysis, see
    constructs.
 
 4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

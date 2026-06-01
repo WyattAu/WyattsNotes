@@ -1,6 +1,8 @@
 ---
 title: Submodules
-description: 'Git Submodules notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and mastery.'
+description:
+  'Git Submodules notes covering key definitions, core concepts, worked examples, and practice
+  questions for thorough exam preparation and mastery.'
 date: 2025-06-03T11:00:00.000Z
 tags:
   - git
@@ -224,3 +226,14 @@ submodule-update:
    sorted input.
 
 4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

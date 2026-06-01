@@ -66,10 +66,15 @@ def build_index_to_docs_mapping(configs: list[Path]) -> dict[str, list[str]]:
         if not algolia_indices:
             algolia_indices = re.findall(r"createAlgoliaConfig\('([^']+)'\)", text)
         for d in doc_dirs:
+            top_dir = d.split("/")[0]
+            key = f"docs_{top_dir}"
             for idx in algolia_indices:
-                mapping.setdefault(idx, []).append(f"docs_{d}")
+                if key not in mapping.get(idx, []):
+                    mapping.setdefault(idx, []).append(key)
             if not algolia_indices:
-                mapping.setdefault(f"wyattsnotes_{d}", []).append(f"docs_{d}")
+                fk = f"wyattsnotes_{top_dir}"
+                if key not in mapping.get(fk, []):
+                    mapping.setdefault(fk, []).append(key)
     return mapping
 
 

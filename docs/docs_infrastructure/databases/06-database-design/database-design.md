@@ -1,7 +1,9 @@
 ---
 id: database-design
 title: Database Design
-description: 'Database Design notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and exam readiness.'
+description:
+  'Database Design notes covering key definitions, core concepts, worked examples, and practice
+  questions for detailed revision and exam readiness.'
 slug: database-design
 sidebar_position: 1
 tags:
@@ -925,3 +927,8 @@ theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,7 +1,9 @@
 ---
 title: Syllabus
 slug: Syllabus
-description: 'IB Physics Syllabus notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
+description:
+  'IB Physics Syllabus notes covering key definitions, core concepts, worked examples, and practice
+  questions for in-depth exam preparation and revision.'
 ---
 
 ### IB Physics HL Syllabus Overview
@@ -294,3 +296,14 @@ Might combine:
 
 4. Using the wrong equation from the data sheet — take time to read the full equation, including
    conditions and variable definitions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

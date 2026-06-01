@@ -56,9 +56,9 @@ depression and OCD.
 
 ## Exam Strategy
 
-For Paper 1 SAQs, CLOA questions typically ask students to outline or explain one model, one theory,
-or one study related to a cognitive process. Memory models are the most frequently tested area:
-prepare Atkinson and Shiffrin (1968), Baddeley and Hitch (1974), and Bartlett (1932) with full
+For Paper 1 SAQs, CLOA questions in most cases ask students to outline or explain one model, one
+theory, or one study related to a cognitive process. Memory models are the most frequently tested
+area: prepare Atkinson and Shiffrin (1968), Baddeley and Hitch (1974), and Bartlett (1932) with full
 methodology, findings, and evaluation. For thinking and decision making, memorise the availability
 heuristic (Tversky and Kahneman, 1973) and the Linda problem (conjunction fallacy, 1983). For
 language and thought, have Boroditsky (2001) and Winawer et al. (2007) ready.
@@ -105,7 +105,7 @@ that make recall more consistent with prior knowledge.
 ## Common Pitfalls
 
 - **Confusing availability and representativeness heuristics:** The availability heuristic judges
-  frequency based on how easily examples come to mind; the representativeness heuristic judges
+  frequency based on how readily examples come to mind; the representativeness heuristic judges
   probability based on similarity to a prototype. Know the distinction with examples.
 - **Stating that schema theory is "wrong":** Schema theory is not falsified by reconstructive errors
   -- the errors are the predicted outcome of schema-driven processing. The limitation is that

@@ -1,6 +1,8 @@
 ---
 title: Hypothesis Testing
-description: 'A-Level Maths Hypothesis Testing notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'A-Level Maths Hypothesis Testing notes covering key definitions, core concepts, worked examples,
+  and practice questions for effective revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -516,7 +518,8 @@ Under $H_0$: $X \sim B(20, 0.5)$.
 For each tail, we need $P(X \leq c_L) \leq 0.05$ and $P(X \geq c_U) \leq 0.05$.
 
 Lower: $P(X \leq 5) \approx 0.0207 \leq 0.05$, $P(X \leq 6) \approx 0.0577 \gt 0.05$. So $c_L = 5$.
-Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$, $P(X \geq 14) \approx 0.0577 \gt 0.05$. So $c_U = 15$.
+Upper: $P(X \geq 15) \approx 0.0207 \leq 0.05$, $P(X \geq 14) \approx 0.0577 \gt 0.05$. So
+$c_U = 15$.
 
 Critical region: $X \leq 5$ or $X \geq 15$. Actual significance level: $2 \times 0.0207 = 0.0414$.
 
@@ -782,3 +785,14 @@ building a personal test matrix. :::
 
 4. Losing marks by not showing sufficient working — always write out each step, especially in proof
    questions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

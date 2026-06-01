@@ -1,6 +1,8 @@
 ---
 title: 'GCSE Maths -- Diagnostic Guide'
-description: 'GCSE Maths -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
+description:
+  'GCSE Maths -- Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for efficient exam preparation and mastery.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -92,3 +94,19 @@ Geometry (area, perimeter)
    Paper 3 preparation.
 7. Common pitfalls to watch: percentage change vs percentage of, confusing median and mean,
    forgetting units in compound measures.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

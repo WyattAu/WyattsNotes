@@ -152,7 +152,8 @@ When $x = 0$: $u = 0$. When $x = 1$: $u = 1$.
 
 $, $
 \int_0^1 xe^{x^2}\,dx = \frac{1}{2}\int_0^1 e^u\,du = \frac{1}{2}\big[e^u\big]_0^1 = \frac{1}{2}(e - 1)
-$, $
+$,
+$
 
 :::
 
@@ -176,7 +177,8 @@ Alternatively, let $x = 2\sin\theta$So $dx = 2\cos\theta\,d\theta$:
 
 $, $
 \int \frac{2\cos\theta}{2\cos\theta}\,d\theta = \int 1\,d\theta = \theta + C = \arcsin\!\left(\frac{x}{2}\right) + C
-$, $
+$,
+$
 
 :::
 
@@ -364,7 +366,8 @@ For $0 \le x \le 2$: $2x \ge x^2$.
 
 $, $
 \mathrm{Area} = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
-$, $
+$,
+$
 
 :::
 
@@ -376,7 +379,8 @@ Zeros: $x^2 - 4 = 0 \implies x = \pm 2$.
 
 $, $
 \mathrm{Area} = \int_{-2}^{2} |x^2 - 4|\,dx = 2\int_0^2 (4 - x^2)\,dx = 2\left[4x - \frac{x^3}{3}\right]_0^2 = 2\left(8 - \frac{8}{3}\right) = \frac{32}{3}
-$, $
+$,
+$
 
 :::
 
@@ -428,7 +432,8 @@ $x = \sqrt{y}$From $y = 0$ to $y = 1$.
 
 $, $
 V = \pi\int_0^1 (\sqrt{y})^2\,dy = \pi\int_0^1 y\,dy = \pi\left[\frac{y^2}{2}\right]_0^1 = \frac{\pi}{2}
-$, $
+$,
+$
 
 :::
 
@@ -448,7 +453,8 @@ Intersection: $x = x^2 \implies x = 0$ or $x = 1$.
 
 $, $
 V = \pi\int_0^1 \left(x^2 - x^4\right)\,dx = \pi\left[\frac{x^3}{3} - \frac{x^5}{5}\right]_0^1 = \pi\left(\frac{1}{3} - \frac{1}{5}\right) = \frac{2\pi}{15}
-$, $
+$,
+$
 
 :::
 
@@ -481,7 +487,8 @@ A particle moves with velocity $v(t) = t^2 - 4t + 3\mathrm{ m/s}$ for $0 \le t \
 
 $, $
 S = \int_0^5 (t^2 - 4t + 3)\,dt = \left[\frac{t^3}{3} - 2t^2 + 3t\right]_0^5 = \frac{125}{3} - 50 + 15 = \frac{40}{3}\mathrm{ m}
-$, $
+$,
+$
 
 **(b)** Find the total distance travelled.
 
@@ -499,7 +506,8 @@ $, $
 
 $, $
 = \frac{4}{3} + \left|-\frac{4}{3}\right| + \frac{20}{3} = \frac{4}{3} + \frac{4}{3} + \frac{20}{3} = \frac{28}{3}\mathrm{ m}
-$, $
+$,
+$
 
 :::
 
@@ -527,7 +535,8 @@ Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^2}\,dx$ converges.
 
 $, $
 \int_1^{\infty} \frac{1}{x^2}\,dx = \lim_{b \to \infty}\int_1^b x^{-2}\,dx = \lim_{b \to \infty}\left[-\frac{1}{x}\right]_1^b = \lim_{b \to \infty}\left(-\frac{1}{b} + 1\right) = 1
-$, $
+$,
+$
 
 The integral converges to $1$.
 
@@ -539,7 +548,8 @@ Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x}\,dx$ converges.
 
 $, $
 \int_1^{\infty} \frac{1}{x}\,dx = \lim_{b \to \infty}[\ln x]_1^b = \lim_{b \to \infty}\ln b = \infty
-$, $
+$,
+$
 
 The integral diverges.
 
@@ -557,7 +567,8 @@ Using the identity $\sin^2 x = \dfrac{1 - \cos 2x}{2}$:
 
 $, $
 \int_0^{\pi/2} \frac{1 - \cos 2x}{2}\,dx = \frac{1}{2}\left[x - \frac{\sin 2x}{2}\right]_0^{\pi/2} = \frac{1}{2}\left(\frac{\pi}{2} - 0\right) = \frac{\pi}{4}
-$, $
+$,
+$
 
 ### Question 2 (Paper 2 style)
 
@@ -569,7 +580,8 @@ Zeros: $x = 0$ and $x = 2$. The curve is below the axis (opens upward).
 
 $, $
 \mathrm{Area} = \int_0^2 |x(x-2)|\,dx = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
-$, $
+$,
+$
 
 **(b)** Find the volume when $R$ is rotated $360\degree$ about the $x$-axis.
 
@@ -579,11 +591,13 @@ $, $
 
 $, $
 = \pi\int_0^2 (x^4 - 4x^3 + 4x^2)\,dx = \pi\left[\frac{x^5}{5} - x^4 + \frac{4x^3}{3}\right]_0^2
-$, $
+$,
+$
 
 $, $
 = \pi\left(\frac{32}{5} - 16 + \frac{32}{3}\right) = \pi \cdot \frac{16}{15} = \frac{16\pi}{15}
-$, $
+$,
+$
 
 ### Question 3 (Paper 2 style)
 
@@ -615,11 +629,13 @@ Let $u = x$$dv = e^{2x}\,dx$. Then $du = dx$$v = \dfrac{1}{2}e^{2x}$.
 
 $, $
 \int_0^1 xe^{2x}\,dx = \left[\frac{1}{2}xe^{2x}\right]_0^1 - \frac{1}{2}\int_0^1 e^{2x}\,dx = \frac{e^2}{2} - \frac{1}{2}\left[\frac{e^{2x}}{2}\right]_0^1
-$, $
+$,
+$
 
 $, $
 = \frac{e^2}{2} - \frac{e^2}{4} + \frac{1}{4} = \frac{e^2}{4} + \frac{1}{4} = \frac{e^2 + 1}{4}
-$, $
+$,
+$
 
 ### Question 5 (Paper 2 style)
 
@@ -656,7 +672,8 @@ Check if $v = 0$: $3t^2 - 2t + 4 = 0$. Discriminant $= 4 - 48 \lt 0$So $v \gt 0$
 
 $, $
 \mathrm{Distance} = \int_0^3 v\,dt = \int_0^3 (3t^2 - 2t + 4)\,dt = \left[t^3 - t^2 + 4t\right]_0^3 = 27 - 9 + 12 = 30\mathrm{ m}
-$, $
+$,
+$
 
 ### Question 6 (Paper 2 style)
 
@@ -665,11 +682,13 @@ volume.
 
 $, $
 V = \pi\int_0^2 [(e^x)^2 - 1^2]\,dx = \pi\int_0^2 (e^{2x} - 1)\,dx = \pi\left[\frac{e^{2x}}{2} - x\right]_0^2
-$, $
+$,
+$
 
 $, $
 = \pi\left(\frac{e^4}{2} - 2 - \frac{1}{2} + 0\right) = \pi\left(\frac{e^4}{2} - \frac{5}{2}\right) = \frac{\pi(e^4 - 5)}{2}
-$, $
+$,
+$
 
 ---
 
@@ -798,7 +817,8 @@ Let $u = 3x$$du = 3\,dx$:
 
 $, $
 = \frac{1}{3}\int \frac{1}{4 + u^2}\,du = \frac{1}{3} \cdot \frac{1}{2}\arctan\frac{u}{2} + C = \frac{1}{6}\arctan\frac{3x}{2} + C
-$, $
+$,
+$
 
 :::
 
@@ -824,7 +844,8 @@ Let $u = \ln x$$dv = x^2\,dx$. Then $du = \dfrac{1}{x}\,dx$$v = \dfrac{x^3}{3}$.
 
 $, $
 \int x^2 \ln x\,dx = \frac{x^3}{3}\ln x - \int \frac{x^3}{3} \cdot \frac{1}{x}\,dx = \frac{x^3}{3}\ln x - \frac{1}{3}\int x^2\,dx
-$, $
+$,
+$
 
 $, $
 = \frac{x^3}{3}\ln x - \frac{x^3}{9} + C
@@ -846,7 +867,8 @@ For a parametric curve $(x(t), y(t))$ from $t = t_1$ to $t = t_2$:
 
 $, $
 L = \int_{t_1}^{t_2} \sqrt{\left(\frac`\{dx}``\{dt}`\right)^2 + \left(\frac`\{dy}``\{dt}`\right)^2}\,dt
-$, $
+$,
+$
 
 :::info[Example]
 
@@ -862,15 +884,18 @@ $, $
 
 $, $
 1 + \left(\frac`\{dy}``\{dx}`\right)^2 = \frac{x^4}{4} + \frac{1}{2} + \frac{1}{4x^4} = \left(\frac{x^2}{2} + \frac{1}{2x^2}\right)^2
-$, $
+$,
+$
 
 $, $
 L = \int_1^3 \left(\frac{x^2}{2} + \frac{1}{2x^2}\right)\,dx = \left[\frac{x^3}{6} - \frac{1}{2x}\right]_1^3
-$, $
+$,
+$
 
 $, $
 = \left(\frac{27}{6} - \frac{1}{6}\right) - \left(\frac{1}{6} - \frac{1}{2}\right) = \frac{26}{6} + \frac{1}{3} = \frac{14}{3}
-$, $
+$,
+$
 
 :::
 
@@ -890,7 +915,8 @@ Find the mean value of $f(x) = x^2$ over $[0, 3]$.
 
 $, $
 \bar{f} = \frac{1}{3}\int_0^3 x^2\,dx = \frac{1}{3}\left[\frac{x^3}{3}\right]_0^3 = \frac{1}{3} \times 9 = 3
-$, $
+$,
+$
 
 :::
 
@@ -906,15 +932,18 @@ Let $u = x$$dv = \cos 2x\,dx$. Then $du = dx$$v = \dfrac{\sin 2x}{2}$.
 
 $, $
 \int_0^{\pi/4} x\cos 2x\,dx = \left[\frac{x\sin 2x}{2}\right]_0^{\pi/4} - \frac{1}{2}\int_0^{\pi/4}\sin 2x\,dx
-$, $
+$,
+$
 
 $, $
 = \left(\frac{\pi/4 \times 1}{2} - 0\right) - \frac{1}{2}\left[-\frac{\cos 2x}{2}\right]_0^{\pi/4}
-$, $
+$,
+$
 
 $, $
 = \frac{\pi}{8} - \frac{1}{2}\left(-\frac{0}{2} + \frac{1}{2}\right) = \frac{\pi}{8} - \frac{1}{4}
-$, $
+$,
+$
 
 ### Question 8 (Paper 2 style)
 
@@ -926,7 +955,8 @@ For $0 \le x \le 1$: $\sqrt{x} \ge x^3$.
 
 $, $
 \mathrm{Area} = \int_0^1 (\sqrt{x} - x^3)\,dx = \left[\frac{2x^{3/2}}{3} - \frac{x^4}{4}\right]_0^1 = \frac{2}{3} - \frac{1}{4} = \frac{5}{12}
-$, $
+$,
+$
 
 ### Question 9 (Paper 1 style)
 
@@ -1006,3 +1036,8 @@ and building a personal test matrix. :::
 - Area between curves: $\int |f(x) - g(x)|\,dx$
 - Volume of revolution: $V = \pi\int y^2\,dx$
 - Techniques: substitution, integration by parts (LIATE), partial fractions
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

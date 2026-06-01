@@ -1,7 +1,9 @@
 ---
 id: zfs-deep-dive
 title: ZFS Deep Dive
-description: 'ZFS Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
+description:
+  'ZFS Deep Dive notes covering key definitions, core concepts, worked examples, and practice
+  questions for clear exam preparation and mastery.'
 slug: zfs-deep-dive
 ---
 
@@ -999,3 +1001,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

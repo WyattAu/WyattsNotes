@@ -1,6 +1,8 @@
 ---
 title: Python Internals
-description: 'Python Internals notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
+description:
+  'Python Internals notes covering key definitions, core concepts, worked examples, and practice
+  questions for focused exam preparation and revision.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python
@@ -882,3 +884,8 @@ experimental evidence, and real-world applications.
 
 Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
 and evaluate experimental evidence critically.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

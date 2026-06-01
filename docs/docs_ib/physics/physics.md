@@ -1,7 +1,9 @@
 ---
 title: Physics
 slug: physics
-description: 'IB Physics notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision and examination preparation.'
+description:
+  'IB Physics notes covering key definitions, core concepts, worked examples, and practice questions
+  for comprehensive revision and examination preparation.'
 ---
 
 ## IB Physics -- Course Overview
@@ -1384,3 +1386,8 @@ methods, and applications relevant to the specification.
 
 A strong understanding of these principles, combined with regular practice of quantitative problems
 and past paper questions, is essential for success in examinations.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

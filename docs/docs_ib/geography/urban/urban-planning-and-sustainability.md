@@ -1,6 +1,8 @@
 ---
 title: Urban Planning and Sustainability
-description: 'IB Geography Urban Planning and Sustainability notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'IB Geography Urban Planning and Sustainability notes covering key definitions, core concepts,
+  worked examples, and practice questions for analytical revision.'
 slug: urban-planning-and-sustainability
 ---
 
@@ -258,3 +260,14 @@ For related topics, see [./urbanisation-trends-and-patterns](./urbanisation-tren
 
 4. Losing marks by not showing sufficient working — always write out each step, especially in proof
    questions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Type-Safe Formatting (std::format, std::print)
-description: 'C++ Programming Type-Safe Formatting (std::format, notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Type-Safe Formatting (std::format, notes covering key definitions, core concepts,
+  worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -712,3 +714,14 @@ int main() {
 
 4. Memorising content without understanding the underlying principles — this leads to poor
    application in unfamiliar contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

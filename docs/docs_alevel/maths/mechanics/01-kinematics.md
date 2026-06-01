@@ -1,6 +1,8 @@
 ---
 title: Kinematics
-description: 'A-Level Maths Kinematics notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision and exam readiness.'
+description:
+  'A-Level Maths Kinematics notes covering key definitions, core concepts, worked examples, and
+  practice questions for rigorous revision and exam readiness.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -818,3 +820,14 @@ building a personal test matrix. :::
 
 4. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Databases
-description: 'University Computer Science Databases notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'University Computer Science Databases notes covering key definitions, core concepts, worked
+  examples, and practice questions for efficient revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -14,7 +16,8 @@ slug: databases
 
 ### 1.1 Fundamentals
 
-A **relation** is a set of tuples over a relation schema $R(A_1, A_2, \ldots, A_n)$ where each $A_i$ is an attribute from domain $D_i$.
+A **relation** is a set of tuples over a relation schema $R(A_1, A_2, \ldots, A_n)$ where each $A_i$
+is an attribute from domain $D_i$.
 
 **Key terms:**
 
@@ -26,13 +29,13 @@ A **relation** is a set of tuples over a relation schema $R(A_1, A_2, \ldots, A_
 
 ### 1.2 Keys
 
-| Key Type           | Definition                                            |
-| ------------------ | ----------------------------------------------------- |
-| **Superkey**       | A set of attributes that uniquely identifies a tuple   |
-| **Candidate key**  | A minimal superkey (no proper subset is a superkey)  |
-| **Primary key**    | A chosen candidate key                               |
-| **Foreign key**    | References the primary key of another relation        |
-| **Composite key**  | A key consisting of multiple attributes              |
+| Key Type          | Definition                                           |
+| ----------------- | ---------------------------------------------------- |
+| **Superkey**      | A set of attributes that uniquely identifies a tuple |
+| **Candidate key** | A minimal superkey (no proper subset is a superkey)  |
+| **Primary key**   | A chosen candidate key                               |
+| **Foreign key**   | References the primary key of another relation       |
+| **Composite key** | A key consisting of multiple attributes              |
 
 ### 1.3 Relational Algebra
 
@@ -50,7 +53,8 @@ $$R \bowtie_{\text{condition}} S = \sigma_{\text{condition}}(R \times S)$$
 
 **Natural join** ($\bowtie$): Join on all shared attributes, eliminating duplicates.
 
-**Outer joins:** Left ($\leftarrow \bowtie$), right ($\bowtie \rightarrow$), full ($\leftarrow \bowtie \rightarrow$): include unmatched tuples with NULLs.
+**Outer joins:** Left ($\leftarrow \bowtie$), right ($\bowtie \rightarrow$), full
+($\leftarrow \bowtie \rightarrow$): include unmatched tuples with NULLs.
 
 **Other operations:**
 
@@ -160,7 +164,8 @@ FROM Students;
 
 ### 3.1 Functional Dependencies
 
-A **functional dependency** $X \to Y$ holds in relation $R$ if for any two tuples $t_1, t_2$ in $R$: if $t_1[X] = t_2[X]$, then $t_1[Y] = t_2[Y]$.
+A **functional dependency** $X \to Y$ holds in relation $R$ if for any two tuples $t_1, t_2$ in $R$:
+if $t_1[X] = t_2[X]$, then $t_1[Y] = t_2[Y]$.
 
 **Armstrong's Axioms:**
 
@@ -169,6 +174,7 @@ A **functional dependency** $X \to Y$ holds in relation $R$ if for any two tuple
 3. **Transitivity:** If $X \to Y$ and $Y \to Z$, then $X \to Z$.
 
 **Derived rules:**
+
 - **Union:** $X \to Y$ and $X \to Z$ implies $X \to YZ$.
 - **Decomposition:** $X \to YZ$ implies $X \to Y$ and $X \to Z$.
 - **Pseudotransitivity:** $X \to Y$ and $WY \to Z$ implies $WX \to Z$.
@@ -191,6 +197,7 @@ CLOSURE(X, F):
 ```
 
 **Minimal cover:** A minimal set of FDs equivalent to $F$ where:
+
 1. No FD can be derived from others (irredundant).
 2. Every FD has a single attribute on the right.
 3. No attribute on the left can be removed.
@@ -199,7 +206,8 @@ CLOSURE(X, F):
 
 **1NF (First Normal Form):** All attributes have atomic (indivisible) values. No repeating groups.
 
-**2NF:** 1NF and no partial dependencies. Every non-prime attribute is fully dependent on the entire candidate key.
+**2NF:** 1NF and no partial dependencies. Every non-prime attribute is fully dependent on the entire
+candidate key.
 
 $$X \to Y \text{ is a partial dependency if } Y \text{ is non-prime and } X \text{ is a proper subset of a candidate key}$$
 
@@ -223,12 +231,12 @@ DECOMPOSE(R, F):
 
 ### 3.4 Normal Form Comparison
 
-| Normal Form | Eliminates                    | May have                     |
-| ----------- | ----------------------------- | ---------------------------- |
-| 1NF         | Multivalued attributes        | Partial, transitive deps     |
-| 2NF         | Partial dependencies          | Transitive dependencies      |
-| 3NF         | Transitive dependencies       | BCNF violations              |
-| BCNF        | All FDs not from superkeys    | Lossy decomposition possible  |
+| Normal Form | Eliminates                 | May have                     |
+| ----------- | -------------------------- | ---------------------------- |
+| 1NF         | Multivalued attributes     | Partial, transitive deps     |
+| 2NF         | Partial dependencies       | Transitive dependencies      |
+| 3NF         | Transitive dependencies    | BCNF violations              |
+| BCNF        | All FDs not from superkeys | Lossy decomposition possible |
 
 ## 4. Indexing
 
@@ -251,11 +259,11 @@ A **B+ tree** of order $d$ is a balanced search tree optimized for disk access:
 
 **Operations:**
 
-| Operation   | Time       | Disk Accesses     |
-| ----------- | ---------- | ----------------- |
-| Search      | $O(\log_d n)$ | $O(\log_d n)$   |
-| Insert      | $O(\log_d n)$ | $O(\log_d n)$   |
-| Delete      | $O(\log_d n)$ | $O(\log_d n)$   |
+| Operation   | Time              | Disk Accesses     |
+| ----------- | ----------------- | ----------------- |
+| Search      | $O(\log_d n)$     | $O(\log_d n)$     |
+| Insert      | $O(\log_d n)$     | $O(\log_d n)$     |
+| Delete      | $O(\log_d n)$     | $O(\log_d n)$     |
 | Range query | $O(\log_d n + k)$ | $O(\log_d n + k)$ |
 
 **Choice of $d$:** $d$ is chosen so that one node fits in one disk block.
@@ -271,16 +279,18 @@ HASH_INDEX(key):
 ```
 
 **Dynamic hashing approaches:**
-- **Extendible hashing:** Directory of pointers to buckets; directory doubles when a bucket overflows.
+
+- **Extendible hashing:** Directory of pointers to buckets; directory doubles when a bucket
+  overflows.
 - **Linear hashing:** Buckets split incrementally in a round-robin fashion.
 
-| Aspect     | B+ Tree           | Hash Index       |
-| ---------- | ----------------- | ---------------- |
-| Exact match| $O(\log n)$       | $O(1)$ avg       |
-| Range query| Efficient         | Inefficient      |
-| Insert     | $O(\log n)$       | $O(1)$ avg       |
-| Space      | Variable          | Variable         |
-| Order      | Maintains key order | No ordering    |
+| Aspect      | B+ Tree             | Hash Index  |
+| ----------- | ------------------- | ----------- |
+| Exact match | $O(\log n)$         | $O(1)$ avg  |
+| Range query | Efficient           | Inefficient |
+| Insert      | $O(\log n)$         | $O(1)$ avg  |
+| Space       | Variable            | Variable    |
+| Order       | Maintains key order | No ordering |
 
 ### 4.3 Bitmap Indexes
 
@@ -299,7 +309,8 @@ R4     |  0  |  0   |  1   |
 
 ### 4.4 Composite Indexes
 
-**Multi-column B+ tree:** Index on $(A, B)$ supports queries on $A$ alone or $(A, B)$, but not $B$ alone.
+**Multi-column B+ tree:** Index on $(A, B)$ supports queries on $A$ alone or $(A, B)$, but not $B$
+alone.
 
 **Covering index:** An index that contains all columns needed by a query, avoiding table lookups.
 
@@ -307,31 +318,32 @@ R4     |  0  |  0   |  1   |
 
 ### 5.1 ACID Properties
 
-| Property | Description                                             |
-| -------- | ------------------------------------------------------- |
-| **Atomicity** | All operations succeed or none do (all-or-nothing)    |
+| Property        | Description                                                     |
+| --------------- | --------------------------------------------------------------- |
+| **Atomicity**   | All operations succeed or none do (all-or-nothing)              |
 | **Consistency** | Transaction transforms database from one valid state to another |
-| **Isolation** | Concurrent transactions don't interfere                |
-| **Durability** | Once committed, changes survive crashes                |
+| **Isolation**   | Concurrent transactions don't interfere                         |
+| **Durability**  | Once committed, changes survive crashes                         |
 
 ### 5.2 Isolation Levels
 
-| Level              | Dirty Read | Non-repeatable Read | Phantom Read |
-| ------------------ | ----------- | ------------------- | ------------ |
-| Read Uncommitted   | Yes         | Yes                 | Yes          |
-| Read Committed     | No          | Yes                 | Yes          |
-| Repeatable Read    | No          | No                  | Yes          |
-| Serializable      | No          | No                  | No           |
+| Level            | Dirty Read | Non-repeatable Read | Phantom Read |
+| ---------------- | ---------- | ------------------- | ------------ |
+| Read Uncommitted | Yes        | Yes                 | Yes          |
+| Read Committed   | No         | Yes                 | Yes          |
+| Repeatable Read  | No         | No                  | Yes          |
+| Serializable     | No         | No                  | No           |
 
 **Anomaly definitions:**
+
 - **Dirty read:** Reading uncommitted data from another transaction.
 - **Non-repeatable read:** Same query returns different results within a transaction.
 - **Phantom read:** New rows appear in a repeated range query.
 
 ### 5.3 Two-Phase Locking (2PL)
 
-**Growing phase:** Acquire locks, do not release any.
-**Shrinking phase:** Release locks, do not acquire any.
+**Growing phase:** Acquire locks, do not release any. **Shrinking phase:** Release locks, do not
+acquire any.
 
 ```
 TWO_PHASE_LOCKING(transaction):
@@ -345,6 +357,7 @@ TWO_PHASE_LOCKING(transaction):
 ```
 
 **Variants:**
+
 - **Strict 2PL:** All locks held until commit/abort. Prevents cascading aborts.
 - **Rigorous 2PL:** Write locks held until commit. A common practical choice.
 
@@ -366,10 +379,10 @@ Used by PostgreSQL, MySQL (InnoDB), Oracle.
 ### 5.5 Concurrency Control Comparison
 
 | Method     | Locking Overhead | Deadlocks | Performance (read-heavy) | Performance (write-heavy) |
-| ---------- | ---------------- | --------- | ----------------------- | ------------------------ |
-| 2PL        | High             | Yes       | Moderate                | Good                     |
-| MVCC       | Low              | No        | Excellent               | Moderate                 |
-| Optimistic | Low              | No        | Good                    | Poor (high conflict)     |
+| ---------- | ---------------- | --------- | ------------------------ | ------------------------- |
+| 2PL        | High             | Yes       | Moderate                 | Good                      |
+| MVCC       | Low              | No        | Excellent                | Moderate                  |
+| Optimistic | Low              | No        | Good                     | Poor (high conflict)      |
 
 ## 6. Query Optimization
 
@@ -388,13 +401,13 @@ SQL Query
 
 Used to transform queries for efficiency:
 
-| Rule                          | Equivalence                           |
-| ----------------------------- | ------------------------------------- |
-| Selection pushdown            | $\sigma_c(R \bowtie S) = \sigma_c(R) \bowtie S$ if $c$ uses only $R$ |
-| Join commutativity            | $R \bowtie S = S \bowtie R$           |
-| Join associativity            | $(R \bowtie S) \bowtie T = R \bowtie (S \bowtie T)$ |
-| Selection cascade             | $\sigma_{c1}(\sigma_{c2}(R)) = \sigma_{c1 \wedge c2}(R)$ |
-| Projection pushdown           | Push projections as early as possible |
+| Rule                | Equivalence                                                          |
+| ------------------- | -------------------------------------------------------------------- |
+| Selection pushdown  | $\sigma_c(R \bowtie S) = \sigma_c(R) \bowtie S$ if $c$ uses only $R$ |
+| Join commutativity  | $R \bowtie S = S \bowtie R$                                          |
+| Join associativity  | $(R \bowtie S) \bowtie T = R \bowtie (S \bowtie T)$                  |
+| Selection cascade   | $\sigma_{c1}(\sigma_{c2}(R)) = \sigma_{c1 \wedge c2}(R)$             |
+| Projection pushdown | Push projections as early as possible                                |
 
 ### 6.3 Join Algorithms
 
@@ -478,43 +491,63 @@ The query planner chooses the cheapest plan based on cost estimates.
 
 ## 7. Common Pitfalls
 
-1. **Not normalizing enough.** Storing denormalized data leads to update anomalies, insertion anomalies, and deletion anomalies. Aim for at least 3NF.
+1. **Not normalizing enough.** Storing denormalized data leads to update anomalies, insertion
+   anomalies, and deletion anomalies. Aim for at least 3NF.
 
-2. **Over-normalizing.** Excessive normalization causes many joins, degrading read performance. Denormalize deliberately when reads dominate and data is rarely updated.
+2. **Over-normalizing.** Excessive normalization causes many joins, degrading read performance.
+   Denormalize deliberately when reads dominate and data is rarely updated.
 
-3. **Missing indexes on foreign keys.** Joins on unindexed foreign keys cause full table scans. Always index columns used in JOIN, WHERE, and ORDER BY clauses.
+3. **Missing indexes on foreign keys.** Joins on unindexed foreign keys cause full table scans.
+   Always index columns used in JOIN, WHERE, and ORDER BY clauses.
 
-4. **Choosing wrong isolation level.** Serializable prevents all anomalies but is the slowest. Read Committed is usually sufficient for most applications.
+4. **Choosing wrong isolation level.** Serializable prevents all anomalies but is the slowest. Read
+   Committed is in most cases sufficient for most applications.
 
-5. **N+1 query problem.** Executing one query to get a list, then N individual queries for related data. Fix with JOINs or batched fetching.
+5. **N+1 query problem.** Executing one query to get a list, then N individual queries for related
+   data. Fix with JOINs or batched fetching.
 
-6. **Ignoring the query optimizer.** Writing overly complex SQL when a simpler equivalent would let the optimizer choose a better plan. Always check EXPLAIN output.
+6. **Ignoring the query optimizer.** Writing overly complex SQL when a simpler equivalent would let
+   the optimizer choose a better plan. Always check EXPLAIN output.
 
-7. **Cascading deletes without consideration.** Foreign key ON DELETE CASCADE can accidentally delete large amounts of data. Use it carefully, and consider soft deletes for audit trails.
+7. **Cascading deletes without consideration.** Foreign key ON DELETE CASCADE can accidentally
+   delete large amounts of data. Use it carefully, and consider soft deletes for audit trails.
 
 ## Worked Examples
 
 ### Example 1: SQL Query with Joins and Aggregation
-**Problem:** Given tables Students(sid, name, major_id) and Majors(mid, name, dept), write a query to find the department with the most students.
-**Solution:** SELECT m.dept, COUNT(s.sid) AS num_students FROM Majors m JOIN Students s ON m.mid = s.major_id GROUP BY m.dept ORDER BY num_students DESC LIMIT 1;
+
+**Problem:** Given tables Students(sid, name, major_id) and Majors(mid, name, dept), write a query
+to find the department with the most students. **Solution:** SELECT m.dept, COUNT(s.sid) AS
+num_students FROM Majors m JOIN Students s ON m.mid = s.major_id GROUP BY m.dept ORDER BY
+num_students DESC LIMIT 1;
 
 ### Example 2: Normalisation to 3NF
-**Problem:** A relation R(A, B, C, D, E) has functional dependencies: AB -> C, C -> D, D -> E. Normalise to 3NF.
-**Solution:** Candidate keys: {A, B}. Partial dependencies: C depends on AB (not partial). No partial dependencies (since AB is the key). Transitive dependencies: C -> D and D -> E violate 3NF (D and E do not depend on the key directly, only through C). Decompose into R1(A, B, C), R2(C, D), R3(D, E). All are in 3NF. Lossless join is guaranteed because R1 intersection R2 = {C} is a candidate key for R2.
+
+**Problem:** A relation R(A, B, C, D, E) has functional dependencies: AB -> C, C -> D, D -> E.
+Normalise to 3NF. **Solution:** Candidate keys: {A, B}. Partial dependencies: C depends on AB (not
+partial). No partial dependencies (since AB is the key). Transitive dependencies: C -> D and D -> E
+violate 3NF (D and E do not depend on the key directly, only through C). Decompose into R1(A, B, C),
+R2(C, D), R3(D, E). All are in 3NF. Lossless join is guaranteed because R1 intersection R2 = {C} is
+a candidate key for R2.
 
 ## Summary
 
-- The **relational model** organizes data into relations with keys and foreign keys, manipulated via relational algebra.
-- **SQL** provides DDL (schema definition), DML (data manipulation), joins, subqueries, aggregation, and window functions.
-- **Normalization** (1NF → BCNF) eliminates anomalies through functional dependency analysis and decomposition.
-- **Indexing** (B+ trees, hash indexes, bitmap indexes) accelerates query performance, each suited to different access patterns.
+- The **relational model** organizes data into relations with keys and foreign keys, manipulated via
+  relational algebra.
+- **SQL** provides DDL (schema definition), DML (data manipulation), joins, subqueries, aggregation,
+  and window functions.
+- **Normalization** (1NF → BCNF) eliminates anomalies through functional dependency analysis and
+  decomposition.
+- **Indexing** (B+ trees, hash indexes, bitmap indexes) accelerates query performance, each suited
+  to different access patterns.
 - **Transactions** enforce ACID properties via isolation levels, 2PL, and MVCC.
-- **Query optimization** transforms logical plans using equivalence rules, selects join algorithms, and estimates costs.
+- **Query optimization** transforms logical plans using equivalence rules, selects join algorithms,
+  and estimates costs.
 
 ## Cross-References
 
-| Topic | Link |
-|-------|------|
+| Topic               | Link                                                          |
+| ------------------- | ------------------------------------------------------------- |
 | Distributed Systems | [View](/docs/university/computer-science/distributed-systems) |
-| Networking | [View](/docs/university/computer-science/networking) |
-| Operating Systems | [View](/docs/university/computer-science/operating-systems) |
+| Networking          | [View](/docs/university/computer-science/networking)          |
+| Operating Systems   | [View](/docs/university/computer-science/operating-systems)   |

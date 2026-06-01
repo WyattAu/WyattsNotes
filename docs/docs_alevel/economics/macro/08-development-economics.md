@@ -1,6 +1,8 @@
 ---
 title: Development Economics
-description: 'A-Level Development Economics notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and revision.'
+description:
+  'A-Level Development Economics notes covering key definitions, core concepts, worked examples, and
+  practice questions for thorough exam preparation and revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - Economics
@@ -1195,3 +1197,9 @@ approximately 20%.
    decrease (shift) of the demand curve.
 
 4. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

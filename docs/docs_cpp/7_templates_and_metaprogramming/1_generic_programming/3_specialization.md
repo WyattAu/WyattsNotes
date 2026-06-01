@@ -1,6 +1,8 @@
 ---
 title: Explicit and Partial Specialization
-description: 'C++ Programming Explicit and Partial Specialization notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'C++ Programming Explicit and Partial Specialization notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -860,3 +862,8 @@ theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

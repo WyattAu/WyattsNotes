@@ -1,7 +1,9 @@
 ---
 id: oauth-deep-dive
 title: OAuth 2.0 Deep Dive
-description: 'OAuth 2.0 Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
+description:
+  'OAuth 2.0 Deep Dive notes covering key definitions, core concepts, worked examples, and practice
+  questions for solid study and thorough revision.'
 slug: oauth-deep-dive
 ---
 
@@ -557,3 +559,8 @@ key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

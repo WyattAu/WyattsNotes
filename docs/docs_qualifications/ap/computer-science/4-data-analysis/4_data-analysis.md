@@ -1,6 +1,8 @@
 ---
 title: Data Analysis
-description: 'Qualifications Computer Science Data Analysis notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
+description:
+  'Qualifications Computer Science Data Analysis notes covering key definitions, core concepts,
+  worked examples, and practice questions for complete revision.'
 date: 2026-04-14
 tags:
   - ap
@@ -942,3 +944,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

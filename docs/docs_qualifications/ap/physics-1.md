@@ -1,6 +1,8 @@
 ---
 title: AP Physics 1 Study Guide
-description: 'Qualifications Physics 1.Md AP Physics 1 Study notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'Qualifications Physics 1.Md AP Physics 1 Study notes covering key definitions, core concepts,
+  worked examples, and practice questions for methodical revision.'
 date: 2026-05-31
 tags:
   - ap
@@ -12,21 +14,21 @@ slug: physics-1
 
 # AP Physics 1 Study Guide
 
-Comprehensive study guide for AP Physics 1 (Algebra-Based), aligned with the College Board Course and Exam
-Description. Covers mechanics and rotational motion with emphasis on conceptual understanding and
-problem-solving.
+Comprehensive study guide for AP Physics 1 (Algebra-Based), aligned with the College Board Course
+and Exam Description. Covers mechanics and rotational motion with emphasis on conceptual
+understanding and problem-solving.
 
 ## 1. Kinematics
 
 ### Displacement, Velocity, and Acceleration
 
-| Quantity | Type | Definition | SI Unit |
-| -------- | ---- | ---------- | ------- |
-| Displacement | Vector | Change in position, $\Delta \vec{r}$ | m |
-| Distance | Scalar | Total path length | m |
-| Velocity | Vector | Rate of change of displacement | m/s |
-| Speed | Scalar | Rate of change of distance | m/s |
-| Acceleration | Vector | Rate of change of velocity | m/s$^2$ |
+| Quantity     | Type   | Definition                           | SI Unit |
+| ------------ | ------ | ------------------------------------ | ------- |
+| Displacement | Vector | Change in position, $\Delta \vec{r}$ | m       |
+| Distance     | Scalar | Total path length                    | m       |
+| Velocity     | Vector | Rate of change of displacement       | m/s     |
+| Speed        | Scalar | Rate of change of distance           | m/s     |
+| Acceleration | Vector | Rate of change of velocity           | m/s$^2$ |
 
 ### One-Dimensional Kinematics
 
@@ -55,7 +57,8 @@ independent of each other (superposition principle).
 
 ### Projectile Motion
 
-For a projectile launched with initial speed $v_0$ at angle $\theta$ above the horizontal (ignoring air resistance):
+For a projectile launched with initial speed $v_0$ at angle $\theta$ above the horizontal (ignoring
+air resistance):
 
 $$
 v_{0x} = v_0 \cos\theta, \quad v_{0y} = v_0 \sin\theta
@@ -98,8 +101,8 @@ acceleration $g \approx 9.8\ \text{m/s}^2$ near Earth's surface, regardless of m
 
 ### Newton's Laws
 
-**First Law (Inertia):** An object at rest stays at rest and an object in motion stays in motion with
-the same speed and in the same direction unless acted upon by a net external force.
+**First Law (Inertia):** An object at rest stays at rest and an object in motion stays in motion
+with the same speed and in the same direction unless acted upon by a net external force.
 
 **Second Law:** The net force on an object equals its mass times its acceleration:
 
@@ -109,15 +112,16 @@ $$
 
 This is a vector equation — apply separately in each direction.
 
-**Third Law:** For every action force there is an equal and opposite reaction force. Forces always come
-in pairs acting on different objects.
+**Third Law:** For every action force there is an equal and opposite reaction force. Forces always
+come in pairs acting on different objects.
 
 ### Free-Body Diagrams
 
 1. Isolate the object of interest
 2. Draw arrows for every force acting **on** the object
 3. Forces act **on** the object; the object's forces act on other things
-4. Common forces: weight ($mg$), normal force ($N$), tension ($T$), friction ($f$), applied force ($F$)
+4. Common forces: weight ($mg$), normal force ($N$), tension ($T$), friction ($f$), applied force
+   ($F$)
 
 ### Friction
 
@@ -125,8 +129,8 @@ in pairs acting on different objects.
 
 **Kinetic friction:** $f_k = \mu_k N$ (opposes motion; constant magnitude)
 
-where $\mu_s$ and $\mu_k$ are coefficients of static and kinetic friction respectively, and $N$ is the
-normal force.
+where $\mu_s$ and $\mu_k$ are coefficients of static and kinetic friction respectively, and $N$ is
+the normal force.
 
 ### Inclined Planes
 
@@ -153,8 +157,8 @@ $$
 
 ### Uniform Circular Motion
 
-An object moving in a circle of radius $r$ at constant speed $v$ has a centripetal acceleration directed
-towards the centre:
+An object moving in a circle of radius $r$ at constant speed $v$ has a centripetal acceleration
+directed towards the centre:
 
 $$
 a_c = \frac{v^2}{r}
@@ -194,8 +198,8 @@ $$
 W = Fd\cos\theta
 $$
 
-where $\theta$ is the angle between the force and the displacement. Work is positive when the force has
-a component in the direction of displacement and negative when opposing displacement.
+where $\theta$ is the angle between the force and the displacement. Work is positive when the force
+has a component in the direction of displacement and negative when opposing displacement.
 
 For a variable force:
 
@@ -324,8 +328,8 @@ $$
 x_{\text{cm}} = \frac{m_1 x_1 + m_2 x_2 + \cdots}{m_1 + m_2 + \cdots}
 $$
 
-The centre of mass of a system moves as if all external forces act on a single particle of total mass
-located at the centre of mass.
+The centre of mass of a system moves as if all external forces act on a single particle of total
+mass located at the centre of mass.
 
 ## 5. Rotational Motion
 
@@ -359,14 +363,14 @@ For continuous objects: $I = \int r^2\, dm$
 
 Common moments of inertia:
 
-| Object | Rotational Inertia |
-| ------ | ------------------ |
-| Solid disc/cylinder (axis through centre) | $\dfrac{1}{2}MR^2$ |
-| Hoop/ring (axis through centre) | $MR^2$ |
-| Solid sphere | $\dfrac{2}{5}MR^2$ |
-| Thin rod (axis through centre) | $\dfrac{1}{12}ML^2$ |
-| Thin rod (axis through end) | $\dfrac{1}{3}ML^2$ |
-| Point mass at distance $r$ | $mr^2$ |
+| Object                                    | Rotational Inertia  |
+| ----------------------------------------- | ------------------- |
+| Solid disc/cylinder (axis through centre) | $\dfrac{1}{2}MR^2$  |
+| Hoop/ring (axis through centre)           | $MR^2$              |
+| Solid sphere                              | $\dfrac{2}{5}MR^2$  |
+| Thin rod (axis through centre)            | $\dfrac{1}{12}ML^2$ |
+| Thin rod (axis through end)               | $\dfrac{1}{3}ML^2$  |
+| Point mass at distance $r$                | $mr^2$              |
 
 ### Angular Momentum
 
@@ -376,7 +380,8 @@ $$
 
 For a point mass: $L = mvr_\perp$
 
-**Conservation of angular momentum:** When no net external torque acts on a system, $I\omega$ is constant:
+**Conservation of angular momentum:** When no net external torque acts on a system, $I\omega$ is
+constant:
 
 $$
 I_i\omega_i = I_f\omega_f
@@ -516,14 +521,14 @@ $$
 
 ## 8. Exam Tips
 
-1. **Draw a free-body diagram for every problem.** It earns points, organises your thinking, and helps
-   identify all forces. Never skip this step on the free-response section.
+1. **Draw a free-body diagram for every problem.** It earns points, organises your thinking, and
+   helps identify all forces. Never skip this step on the free-response section.
 2. **Check dimensions and units at every step.** If your answer has units of kg·m/s when you expect
    joules, there is an error. Dimensional analysis catches many mistakes quickly.
-3. **Define your coordinate system.** State which direction is positive and where the origin is. This
-   prevents sign errors and makes your reasoning clear to the grader.
-4. **Distinguish between vector and scalar quantities.** Displacement is not distance; velocity is not
-   speed. The AP exam frequently tests this distinction.
+3. **Define your coordinate system.** State which direction is positive and where the origin is.
+   This prevents sign errors and makes your reasoning clear to the grader.
+4. **Distinguish between vector and scalar quantities.** Displacement is not distance; velocity is
+   not speed. The AP exam frequently tests this distinction.
 5. **Apply conservation laws first.** Before writing out Newton's second law for every object, check
    whether conservation of energy or momentum solves the problem more efficiently.
 6. **Explain your reasoning in words.** The AP Physics 1 exam emphasises conceptual understanding.
@@ -536,17 +541,17 @@ $$
 1. **Confusing mass and weight.** Mass is an intrinsic property measured in kg; weight is the
    gravitational force $mg$ measured in newtons. An object has the same mass on the Moon but
    different weight.
-2. **Including internal forces in $\vec{F}_{\text{net}}$.** Only external forces contribute to the net
-   force on a system. The tension in a rope between two parts of the same system is an internal force
-   and cancels out.
+2. **Including internal forces in $\vec{F}_{\text{net}}$.** Only external forces contribute to the
+   net force on a system. The tension in a rope between two parts of the same system is an internal
+   force and cancels out.
 3. **Forgetting the normal force is not always $mg$.** On an incline, $N = mg\cos\theta$. In an
    accelerating lift, $N = m(g \pm a)$. Always derive $N$ from Newton's second law.
 4. **Mixing up centripetal and centrifugal forces.** "Centrifugal force" is a fictitious force that
    appears in a rotating reference frame. In an inertial frame, only the centripetal force (directed
    towards the centre) acts on the object.
-5. **Using the wrong collision formula.** Only use elastic collision equations when kinetic energy is
-   conserved. For perfectly inelastic collisions, use conservation of momentum alone and set final
-   velocities equal.
+5. **Using the wrong collision formula.** Only use elastic collision equations when kinetic energy
+   is conserved. For perfectly inelastic collisions, use conservation of momentum alone and set
+   final velocities equal.
 6. **Incorrect rotational inertia.** Do not assume $I = MR^2$ for all objects. A solid disc has
    $I = \tfrac{1}{2}MR^2$; a solid sphere has $I = \tfrac{2}{5}MR^2$. Know the common values.
 7. **Applying the small-angle approximation outside its range.** The pendulum formula
@@ -555,16 +560,26 @@ $$
 
 ## 10. Summary
 
-| Topic | Key Ideas |
-| ----- | --------- |
-| Kinematics | Displacement, velocity, acceleration, projectile motion, free fall, motion graphs |
-| Dynamics | Newton's three laws, free-body diagrams, friction, inclined planes, circular motion |
-| Work and Energy | Work, work-energy theorem, kinetic/potential energy, conservation of energy, power |
-| Momentum | Impulse-momentum theorem, conservation of momentum, elastic and inelastic collisions |
+| Topic             | Key Ideas                                                                               |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| Kinematics        | Displacement, velocity, acceleration, projectile motion, free fall, motion graphs       |
+| Dynamics          | Newton's three laws, free-body diagrams, friction, inclined planes, circular motion     |
+| Work and Energy   | Work, work-energy theorem, kinetic/potential energy, conservation of energy, power      |
+| Momentum          | Impulse-momentum theorem, conservation of momentum, elastic and inelastic collisions    |
 | Rotational Motion | Torque, rotational inertia, angular momentum, conservation of angular momentum, rolling |
-| Oscillations | SHM, mass-spring systems, pendulums, energy in oscillations |
+| Oscillations      | SHM, mass-spring systems, pendulums, energy in oscillations                             |
 
 AP Physics 1 rewards deep conceptual understanding over memorisation. Focus on building physical
-intuition — ask yourself *why* an object behaves as it does before reaching for an equation. Practise
-explaining your reasoning clearly in writing, as the free-response section heavily weights qualitative
-explanations alongside quantitative solutions.
+intuition — ask yourself _why_ an object behaves as it does before reaching for an equation.
+Practise explaining your reasoning evidently in writing, as the free-response section heavily
+weights qualitative explanations alongside quantitative solutions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

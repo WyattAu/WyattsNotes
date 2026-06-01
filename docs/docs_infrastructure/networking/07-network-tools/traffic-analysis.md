@@ -1,7 +1,9 @@
 ---
 id: traffic-analysis
 title: Traffic Analysis
-description: 'Traffic Analysis notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision and examination preparation.'
+description:
+  'Traffic Analysis notes covering key definitions, core concepts, worked examples, and practice
+  questions for comprehensive revision and examination preparation.'
 slug: traffic-analysis
 tags:
   - Networking
@@ -871,3 +873,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

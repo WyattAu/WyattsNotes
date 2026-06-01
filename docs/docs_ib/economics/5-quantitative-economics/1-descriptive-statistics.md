@@ -1,6 +1,8 @@
 ---
 title: Descriptive Statistics
-description: 'IB Economics Descriptive Statistics notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'IB Economics Descriptive Statistics notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam preparation.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]
@@ -2477,3 +2479,8 @@ Information can be optimal even when the expected NPV is positive.
 - **IS-LM analysis** models the interaction between the goods market (IS) and money market (LM)
 - **Regression analysis** estimates relationships between variables; $R^2$ measures goodness of fit
 - Key formulae: GDP deflator, real interest rate, multiplier, compound interest, present value
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

@@ -1,6 +1,8 @@
 ---
 title: Language Server Protocol Configuration
-description: 'C++ Programming Language Server Protocol Configuration notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Language Server Protocol Configuration notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2025-12-11T06:09:37.943Z
 tags:
   - cpp
@@ -849,3 +851,8 @@ configuration, including key theories, case studies, and management strategies.
 
 Using specific case studies and data to support arguments is essential for achieving the highest
 marks in geography assessments.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

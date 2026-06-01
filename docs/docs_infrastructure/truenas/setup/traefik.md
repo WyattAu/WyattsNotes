@@ -1,6 +1,8 @@
 ---
 title: Setup Traefik
-description: 'Setup Traefik notes covering key definitions, core concepts, worked examples, and practice questions for clear revision and exam readiness.'
+description:
+  'Setup Traefik notes covering key definitions, core concepts, worked examples, and practice
+  questions for clear revision and exam readiness.'
 date: 2025-07-21T18:30:46.381Z
 tags:
   - truenas
@@ -574,3 +576,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

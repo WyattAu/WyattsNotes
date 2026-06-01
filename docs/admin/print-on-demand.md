@@ -118,8 +118,8 @@ Royalties are calculated differently across services:
 
 - **KDP**: Royalty = (60% of list price) - (per-page print cost) - (fixed charge). Print cost varies
   by page count, page size, and colour (black-and-white interior vs. full colour).
-- **IngramSpark**: Royalty = (list price) - (wholesale discount, typically 40-55%) - (print cost).
-  The wholesale discount is configurable but affects whether retailers will stock the book.
+- **IngramSpark**: Royalty = (list price) - (wholesale discount, in most cases 40-55%) - (print
+  cost). The wholesale discount is configurable but affects whether retailers will stock the book.
 - **Lulu**: Revenue = (list price) - (print cost). Lulu takes no additional percentage on direct
   sales through the Lulu bookstore. For distribution to Amazon and other retailers, Lulu applies a
   distribution fee.

@@ -61,7 +61,7 @@ findings, and evaluation. For cultural norms, have Hofstede's individualism-coll
 with Berry (1967) or Bond and Smith (1996) ready. For prejudice, memorise Steele and Aronson (1995)
 on stereotype threat and the Clark doll studies (1939, 1947).
 
-For Paper 1 ERQs, questions typically require students to discuss how social or cultural factors
+For Paper 1 ERQs, questions in most cases require students to discuss how social or cultural factors
 influence behaviour, or to evaluate one theory of intergroup relations. Use SIT as the central
 theoretical framework, supported by the minimal group paradigm, Robbers Cave, and Cialdini et al.
 (1976) on BIRG. When addressing cultural influences, integrate Hofstede's dimensions with Bond and

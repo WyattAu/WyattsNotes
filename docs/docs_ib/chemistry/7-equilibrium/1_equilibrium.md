@@ -982,3 +982,8 @@ $$\mathrm{pH} = -\log(5.83 \times 10^{-3}) = 2.23$$
 | [Chemical Equilibrium] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/equilibrium)           |
 | [Chemical Equilibrium] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/7-equilibrium/1_equilibrium)            |
 | [Chemical Equilibrium] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/4-equilibrium/1_chemical-equilibrium) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

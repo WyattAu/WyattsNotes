@@ -1,6 +1,8 @@
 ---
 title: Git Objects
-description: 'Git Objects notes covering key definitions, core concepts, worked examples, and practice questions for targeted review and exam preparation.'
+description:
+  'Git Objects notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted review and exam preparation.'
 date: 2025-06-03T00:00:00.000Z
 tags:
   - git
@@ -401,3 +403,14 @@ Use '--' to separate paths from revisions, like this:
    constructs.
 
 6. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

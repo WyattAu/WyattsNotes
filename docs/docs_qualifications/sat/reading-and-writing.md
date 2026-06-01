@@ -1,7 +1,9 @@
 ---
 title: Reading and Writing
 date: 2026-05-30
-description: 'SAT Reading And Writing.Md Reading and Writing notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'SAT Reading And Writing.Md Reading and Writing notes covering key definitions, core concepts,
+  worked examples, and practice questions for efficient revision.'
 tags:
   - sat
   - reading
@@ -18,17 +20,18 @@ split into two adaptive modules of 27 questions each (32 minutes per module). Al
 multiple-choice with four answer options.
 
 Questions are organised by passage -- each passage (or pair of passages) is accompanied by a set of
-questions that test a range of skills. Unlike the paper-based SAT, the digital version presents shorter
-passages (typically 25-150 words) with a single question per passage (or occasionally two).
+questions that test a range of skills. Unlike the paper-based SAT, the digital version presents
+shorter passages (in most cases 25-150 words) with a single question per passage (or occasionally
+two).
 
 ### Content Domains
 
-| Domain                              | Approximate Weight | Question Count |
-| ----------------------------------- | ----------------- | ------------- |
-| **Information and Ideas**           | ~26%              | 12-14         |
-| **Craft and Structure**             | ~28%              | 13-15         |
-| **Standard English Conventions**    | ~26%              | 12-14         |
-| **Expression of Ideas**             | ~20%              | 11-13         |
+| Domain                           | Approximate Weight | Question Count |
+| -------------------------------- | ------------------ | -------------- |
+| **Information and Ideas**        | ~26%               | 12-14          |
+| **Craft and Structure**          | ~28%               | 13-15          |
+| **Standard English Conventions** | ~26%               | 12-14          |
+| **Expression of Ideas**          | ~20%               | 11-13          |
 
 ---
 
@@ -60,9 +63,9 @@ determine how a claim is supported by specific evidence.
 4. The correct answer will be directly supported by the text -- avoid answers that require
    assumptions or outside knowledge.
 
-> **Key principle:** The correct answer must be both _true_ according to the passage and _responsive_
-> to the specific question asked. Many wrong answers are true statements that do not answer the
-> question.
+> **Key principle:** The correct answer must be both _true_ according to the passage and
+> _responsive_ to the specific question asked. Many wrong answers are true statements that do not
+> answer the question.
 
 #### Words in Context
 
@@ -77,8 +80,8 @@ passage_, not its most common dictionary definition.
 4. The correct answer must maintain the logical flow and meaning of the passage.
 
 > **Key principle:** Many answer choices will be valid definitions of the word, but only one will be
-> the correct meaning _in context_. Pay attention to connotation (positive/negative tone) and
-> part of speech.
+> the correct meaning _in context_. Pay attention to connotation (positive/negative tone) and part
+> of speech.
 
 #### Standard English Conventions
 
@@ -120,8 +123,8 @@ These questions ask about the overall purpose, structure, or rhetorical strategy
 
 #### Paired Passages
 
-Some questions reference two related passages. You may be asked to compare the authors' perspectives,
-identify a shared theme, or determine how one passage relates to the other.
+Some questions reference two related passages. You may be asked to compare the authors'
+perspectives, identify a shared theme, or determine how one passage relates to the other.
 
 **Strategy:**
 
@@ -151,7 +154,7 @@ The digital SAT tests grammar through passage-based questions rather than isolat
 
 - Pronouns must agree in number and person with their antecedents.
   - Correct: "Each student must submit _his or her_ assignment."
-  - Watch for ambiguous antecedents -- the pronoun should clearly refer to a specific noun.
+  - Watch for ambiguous antecedents -- the pronoun should evidently refer to a specific noun.
 
 **Parallel Structure:**
 
@@ -184,7 +187,7 @@ The digital SAT tests grammar through passage-based questions rather than isolat
 
 - Introduce a list, explanation, or quotation after an independent clause.
   - Correct: "There are three stages: planning, execution, and review."
-- Do not use a colon after a verb or preposition that naturally introduces a list.
+- Do not use a colon after a verb or preposition that by definition introduces a list.
 
 **Dashes:**
 
@@ -202,14 +205,14 @@ The digital SAT tests grammar through passage-based questions rather than isolat
 
 Transition words signal the logical relationship between ideas. Common categories:
 
-| Relationship    | Transitions                               |
-| --------------- | ----------------------------------------- |
-| Addition        | furthermore, moreover, additionally, also |
-| Contrast        | however, nevertheless, on the other hand, conversely |
-| Cause/Effect    | therefore, consequently, as a result, thus |
-| Emphasis        | indeed, in fact, notably, significantly    |
-| Sequence        | first, subsequently, finally, meanwhile   |
-| Example         | for instance, specifically, such as        |
+| Relationship | Transitions                                          |
+| ------------ | ---------------------------------------------------- |
+| Addition     | furthermore, moreover, additionally, also            |
+| Contrast     | however, nevertheless, on the other hand, conversely |
+| Cause/Effect | therefore, consequently, as a result, thus           |
+| Emphasis     | indeed, in fact, notably, significantly              |
+| Sequence     | first, subsequently, finally, meanwhile              |
+| Example      | for instance, specifically, such as                  |
 
 **Strategy for transition questions:**
 
@@ -232,6 +235,7 @@ the foundational skill:
 3. **Match** the textual evidence to the correct answer choice.
 
 Avoid answers that:
+
 - Are plausible but not stated or implied in the passage.
 - Require outside knowledge.
 - Misrepresent the author's tone or intent.
@@ -258,45 +262,45 @@ Identifying the main idea requires distinguishing between:
 
 1. Ask: "What is the author trying to convince me of?" The answer is the thesis.
 2. Ask: "What is this passage about?" The answer is the topic.
-3. The main idea is typically stated in the first or last sentence of the passage.
-4. Avoid answer choices that are too broad (beyond the scope of the passage) or too narrow
-   (focusing on a single detail).
+3. The main idea is in most cases stated in the first or last sentence of the passage.
+4. Avoid answer choices that are too broad (beyond the scope of the passage) or too narrow (focusing
+   on a single detail).
 
 ### Rhetorical Analysis
 
 The SAT tests your ability to identify rhetorical strategies:
 
-| Strategy       | Purpose                                  | Example Signal                         |
-| -------------- | ---------------------------------------- | -------------------------------------- |
-| **Analogy**    | Clarify a concept by comparison           | "like," "similar to," "just as"       |
-| **Appeal to emotion** | Persuade through feeling       | Vivid imagery, emotional language     |
-| **Appeal to logic**   | Persuade through reason        | Statistics, logical arguments         |
-| **Appeal to authority** | Persuade through expertise     | Citations, expert testimony           |
-| **Repetition** | Emphasise a point                        | Repeated words or phrases             |
-| **Contrast**   | Highlight differences                    | "whereas," "unlike," "on the contrary" |
+| Strategy                | Purpose                         | Example Signal                         |
+| ----------------------- | ------------------------------- | -------------------------------------- |
+| **Analogy**             | Clarify a concept by comparison | "like," "similar to," "just as"        |
+| **Appeal to emotion**   | Persuade through feeling        | Vivid imagery, emotional language      |
+| **Appeal to logic**     | Persuade through reason         | Statistics, logical arguments          |
+| **Appeal to authority** | Persuade through expertise      | Citations, expert testimony            |
+| **Repetition**          | Emphasise a point               | Repeated words or phrases              |
+| **Contrast**            | Highlight differences           | "whereas," "unlike," "on the contrary" |
 
 ---
 
 ## Common Pitfalls
 
-1. **Choosing answers that are true but irrelevant.** Many wrong answer choices state facts that
-   are not supported by the passage or that fail to answer the specific question asked. Always verify
+1. **Choosing answers that are true but irrelevant.** Many wrong answer choices state facts that are
+   not supported by the passage or that fail to answer the specific question asked. Always verify
    that the answer is both true _and_ responsive.
 
 2. **Ignoring context for Words in Context questions.** Do not rely on dictionary definitions alone.
    The SAT deliberately uses common words in uncommon ways. Always read the surrounding sentence.
 
-3. **Over-relying on outside knowledge.** The SAT tests your ability to reason from the passage,
-   not your prior knowledge of the topic. An answer that contradicts the passage is wrong, even if
-   it is factually correct.
+3. **Over-relying on outside knowledge.** The SAT tests your ability to reason from the passage, not
+   your prior knowledge of the topic. An answer that contradicts the passage is wrong, even if it is
+   factually correct.
 
 4. **Failing to read the full sentence for grammar questions.** Many grammar errors become apparent
    only when you read the complete sentence, including clauses before and after the underlined
    portion.
 
-5. **Misidentifying the logical relationship for transition questions.** Before choosing a transition
-   word, read both the preceding and following sentences. Many students focus only on the sentence
-   containing the blank.
+5. **Misidentifying the logical relationship for transition questions.** Before choosing a
+   transition word, read both the preceding and following sentences. Many students focus only on the
+   sentence containing the blank.
 
 6. **Spending too much time on difficult questions.** On an adaptive test, time management is
    critical. If a question is taking more than 90 seconds, flag it and move on. You can return to it
@@ -317,5 +321,10 @@ Standard English Conventions, and Expression of Ideas. Success depends on:
 - Applying evidence-based reasoning to every answer choice.
 - Managing time effectively across 54 questions in 64 minutes.
 
-The key to a high Reading & Writing score is disciplined, passage-based reasoning: every correct answer
-is grounded in the text.
+The key to a high Reading & Writing score is disciplined, passage-based reasoning: every correct
+answer is grounded in the text.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

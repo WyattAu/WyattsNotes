@@ -1,6 +1,8 @@
 ---
 title: Undervolting and Overclocking
-description: 'Undervolting and Overclocking notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'Undervolting and Overclocking notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear revision.'
 date: 2025-06-12T16:37:43.317Z
 categories:
   - general
@@ -636,3 +638,8 @@ including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

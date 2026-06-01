@@ -1,6 +1,8 @@
 ---
 title: CMake Targets Properties and Generator Expressions
-description: 'C++ Programming CMake Targets Properties and Generator notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming CMake Targets Properties and Generator notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2025-12-10T05:41:36.284Z
 tags:
   - cpp
@@ -600,3 +602,8 @@ generator expressions, including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

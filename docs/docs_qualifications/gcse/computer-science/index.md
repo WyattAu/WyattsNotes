@@ -1,6 +1,8 @@
 ---
 title: GCSE Computer Science
-description: 'GCSE Computer Science notes covering key definitions, core concepts, worked examples, and practice questions for targeted learning and effective revision.'
+description:
+  'GCSE Computer Science notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted learning and effective revision.'
 date: 2026-04-14
 tags:
   - gcse
@@ -68,3 +70,19 @@ mapped to the national curriculum and organised by topic for easy navigation.
   repeating the same errors
 - Pay attention to the programming project requirements for your exam board — understanding the
   assessment criteria helps maximise your grade
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

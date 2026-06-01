@@ -1,7 +1,9 @@
 ---
 id: dynamic-programming
 title: Dynamic Programming
-description: 'Algorithms Dynamic Programming notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'Algorithms Dynamic Programming notes covering key definitions, core concepts, worked examples,
+  and practice questions for detailed preparation.'
 slug: dynamic-programming
 ---
 
@@ -434,9 +436,9 @@ Intervals depend on shorter ones).
 
 ### Matrix Chain Multiplication
 
-Given a chain of matrices with dimensions $d_0 \times d_1$, $d_1 \times d_2$..., $d_{n-1} \times
-D_n$,
-find the minimum number of scalar multiplications to compute the product.
+Given a chain of matrices with dimensions $d_0 \times d_1$, $d_1 \times d_2$...,
+$d_{n-1} \times
+D_n$, find the minimum number of scalar multiplications to compute the product.
 
 $$dp[i][j] = \min_{i \le k \lt j} (dp[i][k] + dp[k+1][j] + d_i \cdot d_{k+1} \cdot d_{j+1})$$
 
@@ -955,3 +957,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

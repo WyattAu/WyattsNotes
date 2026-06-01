@@ -1,6 +1,8 @@
 ---
 title: 'Sequences and Series -- Diagnostic Tests [BC Only]'
-description: 'Qualifications Maths Sequences and Series -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'Qualifications Maths Sequences and Series -- Diagnostic notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap
@@ -263,3 +265,19 @@ $$\int_N^{\infty}\frac{du}{u^{1.01}} = \frac{N^{-0.01}}{0.01} = 100N^{-0.01}$$
 Setting $100N^{-0.01} \lt 0.001$: $N^{-0.01} \lt 0.00001$So $N^{0.01} > 100000$Giving
 $N > 100000^{100}$. Still impractical. The series $\sum \frac{1}{n(\ln n)^p}$ converges very slowly
 for $p$ near $1$.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

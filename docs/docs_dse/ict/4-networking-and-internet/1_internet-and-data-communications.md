@@ -1,7 +1,9 @@
 ---
 id: dse-ict-internet-and-data-communications
 title: Internet and Data Communications
-description: 'DSE Ict Internet and Data Communications notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
+description:
+  'DSE Ict Internet and Data Communications notes covering key definitions, core concepts, worked
+  examples, and practice questions for comprehensive revision.'
 slug: internet-and-data-communications
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, ICT]
@@ -1019,7 +1021,6 @@ communications, including key principles and practical applications.
 
 **Key concepts include:**
 
-
 - core concepts and definitions
 - key principles and frameworks
 - practical applications
@@ -1030,3 +1031,8 @@ A thorough understanding of these concepts, combined with regular practice and r
 for mastery of this topic.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/internet-and-data-communications.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -881,8 +881,8 @@ Majority votes yes (2 or 3 yes votes). Derive the Boolean expression and count t
 - $(1,01)$ and $(1,11)$: horizontal pair → $A \cdot C$
 - $(1,11)$ and $(1,10)$: horizontal pair → $A \cdot B$
 
-Essential prime implicants: $BC$, $AC$, $AB$ (each covers a minterm that no other group covers: $m_3$
-only by $BC$$m_5$ only by $AC$$m_6$ only by $AB$).
+Essential prime implicants: $BC$, $AC$, $AB$ (each covers a minterm that no other group covers:
+$m_3$ only by $BC$$m_5$ only by $AC$$m_6$ only by $AB$).
 
 $$F = A \cdot B + A \cdot C + B \cdot C$$
 
@@ -1357,3 +1357,8 @@ programming, and requires both theoretical knowledge and hands-on practice.
 | --------------- | ------- | -------------------------------------------------------------------------------------------------------- |
 | [Boolean Logic] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/fundamentals/03-boolean-algebra) |
 | [Boolean Logic] | IB      | [View](https://ib.wyattau.com/docs/ib/computer-science/4-computational-thinking/1_boolean-logic)         |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

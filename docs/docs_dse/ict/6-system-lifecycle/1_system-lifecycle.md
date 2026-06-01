@@ -1,6 +1,8 @@
 ---
 title: System Lifecycle
-description: 'DSE Ict System Lifecycle notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and mastery.'
+description:
+  'DSE Ict System Lifecycle notes covering key definitions, core concepts, worked examples, and
+  practice questions for in-depth exam preparation and mastery.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -747,7 +749,6 @@ including key principles and practical applications.
 
 **Key concepts include:**
 
-
 - core concepts and definitions
 - key principles and frameworks
 - practical applications
@@ -758,3 +759,8 @@ A thorough understanding of these concepts, combined with regular practice and r
 for mastery of this topic.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/system-lifecycle.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

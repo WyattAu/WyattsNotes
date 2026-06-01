@@ -1,6 +1,8 @@
 ---
 title: Nuclear Physics
-description: 'DSE Nuclear Physics notes covering key definitions, core concepts, worked examples, and practice questions for targeted learning and effective revision.'
+description:
+  'DSE Nuclear Physics notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted learning and effective revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -1998,7 +2000,6 @@ where the count rate is lower.
 
 ## Common Pitfalls
 
-
 1. Confusing atomic number (protons) with mass number (protons + neutrons).
 
    > > > > > > > Stashed changes:docs/docs_dse/Physics/nuclear-physics.md
@@ -2017,3 +2018,9 @@ substance.
 6. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.
    > > > > > > > Stashed changes:docs/docs_dse/Physics/nuclear-physics.md
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

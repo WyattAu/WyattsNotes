@@ -1,6 +1,8 @@
 ---
 title: 'Inheritance, Variation and Evolution -- Diagnostic Tests'
-description: 'GCSE Biology Inheritance, Variation and Evolution -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'GCSE Biology Inheritance, Variation and Evolution -- notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 slug: diag-inheritance-variation-evolution
 hide_table_of_contents: true
 ---
@@ -234,3 +236,19 @@ consider unethical (it involves the destruction of human embryos). It could be s
 towards "designer babies" -- selecting embryos for non-medical traits. There are also concerns about
 accessibility (expensive, not available to all) and the message it sends about the value of people
 with genetic conditions.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

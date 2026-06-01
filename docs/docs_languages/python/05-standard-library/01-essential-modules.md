@@ -1,6 +1,8 @@
 ---
 title: Essential Modules
-description: 'Python Essential Modules notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive study and thorough revision.'
+description:
+  'Python Essential Modules notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive study and thorough revision.'
 date: 2025-06-04T14:00:00.000Z
 tags:
   - Python
@@ -1130,3 +1132,14 @@ For more complex date arithmetic (business days, holidays, recurrence rules), th
 
 4. Forgetting that $O(n \log n)$ average-case for quicksort becomes $O(n^2)$ worst-case on already
    sorted input.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

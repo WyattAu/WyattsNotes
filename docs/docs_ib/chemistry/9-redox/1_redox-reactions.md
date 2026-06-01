@@ -560,7 +560,8 @@ By Faraday's Second Law:
 
 $, $
 \frac{m(\mathrm{Na})}{m(\mathrm{Al})} = \frac{\mathrm{Equiv. Mass of Na}}{\mathrm{Equiv. Mass of Al}}
-$, $
+$,
+$
 
 $, $
 \frac{2.30}{m(\mathrm{Al})} = \frac{23.0}{9.0}
@@ -589,7 +590,8 @@ The Fe$^{2+}$ ions further react:
 
 $, $
 4\mathrm{Fe}^{2+}(aq) + \mathrm{O}_2(g) + 6\mathrm{H}_2\mathrm{O}(l) \to 4\mathrm{Fe(OH)}_3(s)
-$, $
+$,
+$
 
 $\mathrm{Fe(OH)}_3$ dehydrates to form rust:
 $\mathrm{Fe}_2\mathrm{O}_3 \cdot n\mathrm{H}_2\mathrm{O}$.
@@ -745,7 +747,8 @@ Simplify (cancel 6 H$^+$ and 3 H$_2$O):
 
 $, $
 \mathrm{Cr}_2\mathrm{O}_7^{2-} + 8\mathrm{H}^+ + 3\mathrm{SO}_3^{2-} \to 2\mathrm{Cr}^{3+} + 3\mathrm{SO}_4^{2-} + 4\mathrm{H}_2\mathrm{O}
-$, $
+$,
+$
 
 </details>
 
@@ -1022,3 +1025,8 @@ to unfamiliar contexts, particularly in calculation and practical questions.
 | ----------------- | ---- | ------------------------------------------------------------------------------------------------------------ |
 | [Redox Reactions] | IB   | [View](https://ib.wyattau.com/docs/ib/chemistry/9-redox/1_redox-reactions)                                   |
 | [Redox Reactions] | DSE  | [View](https://dse.wyattau.com/docs/dse/chemistry/6-redox-and-electrochemistry/1_redox-and-electrochemistry) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

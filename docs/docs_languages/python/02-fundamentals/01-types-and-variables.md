@@ -1,6 +1,8 @@
 ---
 title: Types and Variables
-description: 'Python Types and Variables notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'Python Types and Variables notes covering key definitions, core concepts, worked examples, and
+  practice questions for structured preparation.'
 date: 2025-06-04T10:00:00.000Z
 tags:
   - Python
@@ -980,3 +982,14 @@ Using classes.
 
 4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
    data).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -60,13 +60,13 @@ course and connects closely to themes of development, resource management, and u
   women of childbearing age in a youthful population structure. India and Nigeria illustrate this:
   even as TFR declines, absolute population continues to grow for decades.
 - **Ageing population** -- a population structure characterised by a high proportion of elderly
-  people (typically 65+), resulting from low fertility rates and increasing life expectancy. Japan,
-  Germany, and Italy face challenges including labour shortages, increased healthcare and pension
-  costs, and the need for immigration to sustain economic output.
+  people (in most cases 65+), resulting from low fertility rates and increasing life expectancy.
+  Japan, Germany, and Italy face challenges including labour shortages, increased healthcare and
+  pension costs, and the need for immigration to sustain economic output.
 
 ## Exam Focus
 
-Paper 2 questions on population typically require:
+Paper 2 questions on population in most cases require:
 
 - Describing and explaining population distribution patterns at a global or regional scale.
 - Evaluating the applicability of the DTM to a specific country using demographic data.
@@ -123,7 +123,7 @@ directly to several other areas of the IB Geography syllabus and is a frequent s
 questions on Paper 2 and Paper 3.
 
 - **Freshwater issues:** Rapid population growth in arid regions exacerbates physical water
-  scarcity. Sub-Saharan Africa illustrates this clearly: countries with Stage 2 demographics face
+  scarcity. Sub-Saharan Africa illustrates this evidently: countries with Stage 2 demographics face
   both high population growth and limited freshwater access, creating a compound crisis. The
   Colorado River basin demonstrates how population pressure (Las Vegas, Phoenix) intensifies demand
   on an already over-allocated river system, where allocation agreements made in the 1920s could not

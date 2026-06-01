@@ -1,7 +1,9 @@
 ---
 id: web-security
 title: Web Security
-description: 'Web Security notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
+description:
+  'Web Security notes covering key definitions, core concepts, worked examples, and practice
+  questions for methodical exam preparation and mastery.'
 slug: web-security
 sidebar_position: 5
 ---
@@ -820,3 +822,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

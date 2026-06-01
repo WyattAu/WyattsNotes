@@ -1,6 +1,8 @@
 ---
 title: Testing
-description: 'Go Testing notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and exam readiness.'
+description:
+  'Go Testing notes covering key definitions, core concepts, worked examples, and practice questions
+  for solid revision and exam readiness.'
 slug: go/testing
 date: 2026-05-31
 tags:
@@ -247,8 +249,8 @@ func BenchmarkParallel(b *testing.B) {
 
 ## Fuzzing
 
-Go 1.18+ includes built-in fuzzing. Fuzz tests find inputs that trigger panics, assertion failures, or
-other violations:
+Go 1.18+ includes built-in fuzzing. Fuzz tests find inputs that trigger panics, assertion failures,
+or other violations:
 
 ```go
 func FuzzReverse(f *testing.F) {
@@ -269,11 +271,11 @@ func FuzzReverse(f *testing.F) {
 go test -fuzz=FuzzReverse -fuzztime=30s
 ```
 
-When a crash is found, the failing input is saved to `testdata/fuzz/FuzzReverse/` and will be replayed
-on subsequent test runs. The corpus grows over time, providing better coverage.
+When a crash is found, the failing input is saved to `testdata/fuzz/FuzzReverse/` and will be
+replayed on subsequent test runs. The corpus grows over time, providing better coverage.
 
-Supported fuzz types: `string`, `[]byte`, `int`, `int8`, `int16`, `int32`, `int64`, `uint`, `float32`,
-`float64`, `bool`.
+Supported fuzz types: `string`, `[]byte`, `int`, `int8`, `int16`, `int32`, `int64`, `uint`,
+`float32`, `float64`, `bool`.
 
 ## Integration Testing
 
@@ -350,8 +352,8 @@ fi
 
 ## Common Pitfalls
 
-1. **Testing implementation details.** Test behaviour, not internals. If you use `reflect` to inspect
-   unexported fields in tests, reconsider the design.
+1. **Testing implementation details.** Test behaviour, not internals. If you use `reflect` to
+   inspect unexported fields in tests, reconsider the design.
 
 2. **Not using table-driven tests.** Copy-pasting test functions creates maintenance burden. Use
    table-driven tests for any function with multiple input/output cases.
@@ -359,17 +361,18 @@ fi
 3. **Flaky tests from time or concurrency.** Use `testing.Short()` to skip slow tests. Use
    deterministic test doubles instead of real time or network in unit tests.
 
-4. **Ignoring benchmark allocations.** Always run benchmarks with `-benchmem`. A single allocation in a
-   hot path can dominate performance.
+4. **Ignoring benchmark allocations.** Always run benchmarks with `-benchmem`. A single allocation
+   in a hot path can dominate performance.
 
-5. **Low coverage on error paths.** Test both happy path and error paths. Use `go test -coverprofile`
-   to identify uncovered code.
+5. **Low coverage on error paths.** Test both happy path and error paths. Use
+   `go test -coverprofile` to identify uncovered code.
 
 6. **Modifying global state in tests.** Tests that modify package-level variables can interfere with
    each other. Use `t.Parallel()` where possible and isolate state per test.
 
-7. **Over-mocking.** Over-reliance on mocks produces tests that pass but code that fails in production.
-   Prefer thin wrappers around real dependencies and integration tests for critical paths.
+7. **Over-mocking.** Over-reliance on mocks produces tests that pass but code that fails in
+   production. Prefer thin wrappers around real dependencies and integration tests for critical
+   paths.
 
 ## Summary
 
@@ -382,3 +385,8 @@ fi
 - Built-in fuzzing (`go test -fuzz`) finds edge cases with coverage-guided input generation.
 - `httptest` enables handler tests without starting a real server.
 - `go test -coverprofile` generates profiles for HTML reports and CI enforcement.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

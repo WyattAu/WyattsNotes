@@ -1,6 +1,8 @@
 ---
 title: A-Level Physics Diagnostic Guide
-description: 'A-Level Physics Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for targeted exam preparation and mastery.'
+description:
+  'A-Level Physics Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted exam preparation and mastery.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -191,3 +193,19 @@ For each topic test (6 questions, max 24 marks):
 | Radioactivity        | Beta decay neutrino                            | UT-3            |
 | Nuclear Energy       | Binding energy per nucleon curve               | UT-2            |
 | Nuclear Energy       | Mass defect = binding energy                   | UT-1            |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

@@ -1,6 +1,8 @@
 ---
 title: Futures, Promises, and Async Flows
-description: 'C++ Programming Futures, Promises, and Async Flows notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'C++ Programming Futures, Promises, and Async Flows notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -583,3 +585,8 @@ Manual `stop_token` integration as shown above is the recommended approach. :::
 
 4. Not making connections between different topics within the subject to build a coherent
    understanding.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

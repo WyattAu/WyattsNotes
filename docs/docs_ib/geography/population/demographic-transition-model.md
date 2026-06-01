@@ -1,6 +1,8 @@
 ---
 title: Demographic Transition Model
-description: 'IB Geography Demographic Transition Model notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
+description:
+  'IB Geography Demographic Transition Model notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough revision.'
 slug: demographic-transition-model
 ---
 
@@ -250,3 +252,14 @@ For related topics, see [./migration-theories-and-patterns](./migration-theories
 
 4. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
    conditions in definite integrals.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

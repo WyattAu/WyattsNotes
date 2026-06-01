@@ -66,7 +66,7 @@ critically and use quantitative indicators alongside qualitative evidence.
 
 ## Exam Focus
 
-Paper 2 and Paper 1 questions on economic development typically require:
+Paper 2 and Paper 1 questions on economic development in most cases require:
 
 - Comparing the utility of different development indicators for assessing a country's level of
   development.

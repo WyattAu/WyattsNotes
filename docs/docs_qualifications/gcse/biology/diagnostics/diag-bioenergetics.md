@@ -1,6 +1,8 @@
 ---
 title: 'Bioenergetics -- Diagnostic Tests'
-description: 'GCSE Biology Bioenergetics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
+description:
+  'GCSE Biology Bioenergetics -- Diagnostic Tests notes covering key definitions, core concepts,
+  worked examples, and practice questions for solid revision.'
 slug: diag-bioenergetics
 hide_table_of_contents: true
 ---
@@ -200,3 +202,19 @@ the next trophic level.
 exponentially: $100\% \to 10\% \to 1\% \to 0.1\% \to 0.01\%$. After 4--5 levels, the energy
 available is too small to support a viable population of predators. There is insufficient energy to
 sustain another trophic level.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

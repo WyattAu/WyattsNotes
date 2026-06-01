@@ -1,6 +1,8 @@
 ---
 title: Dependency Injection
-description: 'Dart Dependency Injection notes covering key definitions, core concepts, worked examples, and practice questions for in-depth learning and effective revision.'
+description:
+  'Dart Dependency Injection notes covering key definitions, core concepts, worked examples, and
+  practice questions for in-depth learning and effective revision.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart
@@ -1163,3 +1165,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

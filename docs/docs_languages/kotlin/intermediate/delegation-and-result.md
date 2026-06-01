@@ -6,7 +6,9 @@ tags:
   - Kotlin
 categories:
   - Kotlin
-description: "Kotlin delegation patterns: by lazy, by observable, by vetoable, and class delegation. The Result type for error handling, sealed class pattern, and."
+description:
+  'Kotlin delegation patterns: by lazy, by observable, by vetoable, and class delegation. The Result
+  type for error handling, sealed class pattern, and.'
 ---
 
 ## Property Delegation
@@ -63,11 +65,11 @@ val unsafeValue: String by lazy(LazyThreadSafetyMode.NONE) {
 }
 ```
 
-| Mode            | Behavior                                                              |
-|-----------------|-----------------------------------------------------------------------|
-| `SYNCHRONIZED`  | Default. Uses double-checked locking. Thread-safe, slight overhead.  |
-| `PUBLICATION`   | Allows multiple threads to initialize. First returned value is kept. |
-| `NONE`          | No thread safety guarantees. Fastest, single-threaded use only.       |
+| Mode           | Behavior                                                             |
+| -------------- | -------------------------------------------------------------------- |
+| `SYNCHRONIZED` | Default. Uses double-checked locking. Thread-safe, slight overhead.  |
+| `PUBLICATION`  | Allows multiple threads to initialize. First returned value is kept. |
+| `NONE`         | No thread safety guarantees. Fastest, single-threaded use only.      |
 
 ### When Not to Use lazy
 
@@ -145,8 +147,8 @@ var percentage: Int by Delegates.vetoable(50) { _, _, newValue ->
 }
 ```
 
-When the veto callback returns `false`, the property retains its previous value. Use `vetoable`
-when you need to enforce invariants on property changes.
+When the veto callback returns `false`, the property retains its previous value. Use `vetoable` when
+you need to enforce invariants on property changes.
 
 ## by Delegates.notNull()
 
@@ -330,15 +332,15 @@ val combined: Result<Int> = Result.success(10).zip(Result.success(20)) { x, y ->
 
 ### Result vs Exceptions
 
-| Aspect           | Result                              | Exceptions                    |
-|------------------|-------------------------------------|-------------------------------|
-| Explicitness     | Must be handled in the type system  | Can be ignored at call site   |
-| Composability    | Chains with `map`, `flatMap`        | Requires try/catch blocks     |
-| Performance      | No stack trace allocation on happy path | Stack trace on every throw |
-| Use case         | Expected failures, domain errors    | System failures, bugs         |
+| Aspect        | Result                                  | Exceptions                  |
+| ------------- | --------------------------------------- | --------------------------- |
+| Explicitness  | Must be handled in the type system      | Can be ignored at call site |
+| Composability | Chains with `map`, `flatMap`            | Requires try/catch blocks   |
+| Performance   | No stack trace allocation on happy path | Stack trace on every throw  |
+| Use case      | Expected failures, domain errors        | System failures, bugs       |
 
-Use `Result` for expected failures that are part of the domain logic. Use exceptions for
-programming errors, system failures, and cases where the caller cannot meaningfully recover.
+Use `Result` for expected failures that are part of the domain logic. Use exceptions for programming
+errors, system failures, and cases where the caller cannot meaningfully recover.
 
 ### Migrating to Result
 
@@ -376,21 +378,21 @@ fun fetchUserProfile(userId: Long): Result<Profile> {
 - **Using `by lazy` with `var`.** `lazy` only works with `val` properties. Using it with `var` is a
   compilation error. For late-initialized mutable properties, use `lateinit var` or
   `Delegates.notNull()`.
-- **Accessing `lateinit var` before initialization.** This throws `UninitializedPropertyAccessException`.
-  Use `::propertyName.isInitialized` to check if a `lateinit` property has been set.
-- **Overusing `Delegates.observable` for complex state management.** For reactive UI state,
-  consider `StateFlow` or `LiveData` which integrate with the coroutine and lifecycle ecosystems.
-- **Ignoring the `Result` exception.** `result.getOrNull()` silently discards the error. Always handle
-  the failure case explicitly with `onFailure`, `fold`, or `getOrElse`.
-- **Nesting `runCatching` blocks without recovery.** Nested `runCatching` wraps exceptions
-  multiple times. Use `mapCatching` or `flatMap` to chain operations within a single `Result`
-  context.
-- **Using class delegation to bypass interface contracts.** The `by` keyword delegates all
-  interface methods. If the delegate does not fully satisfy the interface contract, override the
-  specific methods to enforce invariants.
+- **Accessing `lateinit var` before initialization.** This throws
+  `UninitializedPropertyAccessException`. Use `::propertyName.isInitialized` to check if a
+  `lateinit` property has been set.
+- **Overusing `Delegates.observable` for complex state management.** For reactive UI state, consider
+  `StateFlow` or `LiveData` which integrate with the coroutine and lifecycle ecosystems.
+- **Ignoring the `Result` exception.** `result.getOrNull()` silently discards the error. Always
+  handle the failure case explicitly with `onFailure`, `fold`, or `getOrElse`.
+- **Nesting `runCatching` blocks without recovery.** Nested `runCatching` wraps exceptions multiple
+  times. Use `mapCatching` or `flatMap` to chain operations within a single `Result` context.
+- **Using class delegation to bypass interface contracts.** The `by` keyword delegates all interface
+  methods. If the delegate does not fully satisfy the interface contract, override the specific
+  methods to enforce invariants.
 - **Using `SYNCHRONIZED` lazy in single-threaded contexts unnecessarily.** The default
-  `LazyThreadSafetyMode.SYNCHRONIZED` adds synchronization overhead. Use `NONE` when the property
-  is only accessed from a single thread (e.g., in an Android Activity or a confined coroutine).
+  `LazyThreadSafetyMode.SYNCHRONIZED` adds synchronization overhead. Use `NONE` when the property is
+  only accessed from a single thread (e.g., in an Android Activity or a confined coroutine).
 
 ## Summary
 
@@ -408,3 +410,8 @@ for property delegation, interface delegation, and functional error handling.
 Understanding delegation and Result patterns reduces boilerplate, improves code reuse, and makes
 error handling more explicit and composable. Practice these patterns with real-world scenarios to
 build fluency.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Concurrency
-description: 'Java Concurrency notes covering key definitions, core concepts, worked examples, and practice questions for targeted exam preparation and mastery.'
+description:
+  'Java Concurrency notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted exam preparation and mastery.'
 date: 2025-06-05T15:00:00.000Z
 tags: ['java']
 categories: ['java']
@@ -1199,3 +1201,8 @@ structure (the scope is lexically scoped via try-with-resources).
 
 4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
    necessarily tight.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

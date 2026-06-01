@@ -1,7 +1,9 @@
 ---
 title: Syllabus
 slug: Syllabus
-description: 'IB Maths Syllabus notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
+description:
+  'IB Maths Syllabus notes covering key definitions, core concepts, worked examples, and practice
+  questions for solid exam preparation and revision.'
 ---
 
 ### IB Mathematics AA HL/SL Syllabus Overview
@@ -369,15 +371,16 @@ Manipulation.
 
 - [Number and Algebra](1-number-and-algebra/1_number-and-algebra.md) -- arithmetic and geometric
   sequences, sigma notation, binomial theorem
-- [Complex Numbers](1-number-and-algebra/2_complex-numbers.md) -- complex numbers in Cartesian, polar, and Euler
-  form; De Moivre's theorem; roots of polynomials
-- [Trigonometry](3-geometry-and-trigonometry/1_trigonometry.md) -- trigonometric functions, identities,
-  sine and cosine rules
-- [Vectors](3-geometry-and-trigonometry/2_vectors.md) -- vector operations, scalar and cross products,
-  lines and planes
+- [Complex Numbers](1-number-and-algebra/2_complex-numbers.md) -- complex numbers in Cartesian,
+  polar, and Euler form; De Moivre's theorem; roots of polynomials
+- [Trigonometry](3-geometry-and-trigonometry/1_trigonometry.md) -- trigonometric functions,
+  identities, sine and cosine rules
+- [Vectors](3-geometry-and-trigonometry/2_vectors.md) -- vector operations, scalar and cross
+  products, lines and planes
 - [Integration](5-calculus/4_integration) -- antiderivatives, definite integration, area,
   integration techniques
-- [Logic (Discrete Maths)](6-discrete-mathematics/1_logic.md) -- propositional logic, truth tables, proof
+- [Logic (Discrete Maths)](6-discrete-mathematics/1_logic.md) -- propositional logic, truth tables,
+  proof
 - [Maths Index](maths.md) -- overview of all mathematics notes
 
 ---
@@ -561,3 +564,14 @@ If you get this wrong, revise: Separable differential equations (HL, Topic 5).
    using previous work.
 
 2. Cancelling terms instead of factors — $\frac{ab + ac}{a}$ simplifies to $b + c$, not $bc$.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

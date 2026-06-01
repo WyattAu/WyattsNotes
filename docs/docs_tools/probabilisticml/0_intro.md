@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Probabilistic ML
-description: 'Probabilisticml Introduction to notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'Probabilisticml Introduction to notes covering key definitions, core concepts, worked examples,
+  and practice questions for revision.'
 slug: intro
 sidebar_position: 1
 date: 2026-01-07T07:50:21.312Z
@@ -94,3 +96,14 @@ machine learning:
 - **Entropy**: $H(X) = -\\sum_x p(x) \\log p(x)$ measures the uncertainty in a random variable.
 - **Cross-entropy**: $H(p, q) = -\\sum_x p(x) \\log q(x)$ is the objective function for
   classification.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

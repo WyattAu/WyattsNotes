@@ -1,6 +1,8 @@
 ---
 title: Microorganisms and Biotechnology
-description: 'DSE Biology Microorganisms and Biotechnology notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
+description:
+  'DSE Biology Microorganisms and Biotechnology notes covering key definitions, core concepts,
+  worked examples, and practice questions for comprehensive revision.'
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Biology]
 categories: [DSE, Biology]
@@ -1538,7 +1540,6 @@ key concepts, experimental evidence, and real-world applications.
 
 **Key concepts include:**
 
-
 - Mendelian inheritance
 - gene expression and regulation
 - mutations and genetic variation
@@ -1549,3 +1550,8 @@ Success requires the ability to recall specific factual content, apply knowledge
 and evaluate experimental evidence critically.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/microorganisms-and-biotechnology.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

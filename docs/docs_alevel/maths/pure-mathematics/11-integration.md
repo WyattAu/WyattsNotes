@@ -1,6 +1,8 @@
 ---
 title: Integration
-description: 'A-Level Maths Integration notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and thorough revision.'
+description:
+  'A-Level Maths Integration notes covering key definitions, core concepts, worked examples, and
+  practice questions for thorough study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -593,3 +595,14 @@ building a personal test matrix. :::
 
 6. Forgetting to check that solutions satisfy the original equation (especially with squaring both
    sides or dividing by variables).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Thermodynamics
-description: 'A-Level Physics Thermodynamics notes covering key definitions, core concepts, worked examples, and practice questions for focused study and thorough revision.'
+description:
+  'A-Level Physics Thermodynamics notes covering key definitions, core concepts, worked examples,
+  and practice questions for focused study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -621,3 +623,14 @@ $\square$
 
 6. Misidentifying the system boundary when applying conservation laws — define what is included
    before writing equations.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

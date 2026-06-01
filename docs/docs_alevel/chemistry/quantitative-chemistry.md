@@ -1,6 +1,8 @@
 ---
 title: Quantitative Chemistry (Stoichiometry)
-description: 'A-Level Quantitative Chemistry (Stoichiometry) notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
+description:
+  'A-Level Quantitative Chemistry (Stoichiometry) notes covering key definitions, core concepts,
+  worked examples, and practice questions for practical revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -204,7 +206,8 @@ Stoichiometry: $n(\mathrm{NaOH}) = n(\mathrm{HCl}) = 2.15 \times 10^{-3}\,\mathr
 
 $, $
 C(\mathrm{NaOH}) = \frac◆LB◆2.15 \times 10^{-3}◆RB◆◆LB◆0.0250◆RB◆ = 0.0860\,\mathrm{mol/dm}^3
-$, $
+$,
+$
 
 ### Redox Titrations
 
@@ -213,7 +216,8 @@ $\mathrm{Fe}^{2+}$ with $\mathrm{MnO}_4^-$:
 
 $, $
 5\mathrm{Fe}^{2+}(aq) + \mathrm{MnO}_4^-(aq) + 8\mathrm{H}^+(aq) \to 5\mathrm{Fe}^{3+}(aq) + \mathrm{Mn}^{2+}(aq) + 4\mathrm{H}_2\mathrm{O}(l)
-$, $
+$,
+$
 
 Potassium manganate(VII) is self-indicating: the purple $\mathrm{MnO}_4^-$ is decolourised until the
 endpoint, when a persistent pink colour appears.
@@ -238,7 +242,8 @@ $, $
 
 $, $
 N(\mathrm{HCl}\mathrm{ remaining}) = n(\mathrm{NaOH}) = 1.00 \times 0.0245 = 0.0245\,\mathrm{mol}
-$, $
+$,
+$
 
 $, $
 N(\mathrm{HCl}\mathrm{ reacted}) = 0.0500 - 0.0245 = 0.0255\,\mathrm{mol}
@@ -286,7 +291,8 @@ $100\,\mathrm{kPa}$ and $298\,\mathrm{K}$.
 
 $, $
 V = \frac{nRT}{p} = \frac◆LB◆0.500 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{1239}{100000} = 0.01239\,\mathrm{m}^3 = 12.4\,\mathrm{dm}^3
-$, $
+$,
+$
 
 ### Deviations from Ideality
 
@@ -369,21 +375,25 @@ that cannot be measured directly.
 
 $, $
 \mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g) \quad \Delta H_1 = -394\,\mathrm{kJ/mol}
-$, $
+$,
+$
 
 $, $
 \mathrm{H}_2(g) + \tfrac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l) \quad \Delta H_2 = -286\,\mathrm{kJ/mol}
-$, $
+$,
+$
 
 $, $
 \mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) \quad \Delta H_c = -890\,\mathrm{kJ/mol}
-$, $
+$,
+$
 
 Using Hess's Law:
 
 $, $
 \Delta H_f^\circ(\mathrm{CH}_4) = \Delta H_1 + 2\Delta H_2 - \Delta H_c = -394 + 2(-286) - (-890) = -394 - 572 + 890 = -76\,\mathrm{kJ/mol}
-$, $
+$,
+$
 
 ### Bond Enthalpies
 
@@ -784,7 +794,8 @@ $, $
 
 $, $
 V = \frac{nRT}{p} = \frac◆LB◆0.0999 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{247.6}{100000} = 2.48 \times 10^{-3}\,\mathrm{m}^3 = 2.48\,\mathrm{dm}^3
-$, $
+$,
+$
 
 Alternatively, using molar volume: $V = 0.0999 \times 24.0 = 2.40\,\mathrm{dm}^3$ (close but not
 exact because the molar volume approximation depends on the conditions).
@@ -992,8 +1003,8 @@ advantage of addition reactions in green chemistry.
    significant figures as the least precise measurement. If a mass is given as $2.5\,\mathrm{g}$ (2
    s.f.), the answer should be to 2 s.f.
 
-5. **Ideal gas equation units:** $p$ must be in pascals ($\mathrm{Pa}$), $V$ in $\mathrm{m}^3$, $n$ in
-   mol, $T$ in $\mathrm{K}$. Common conversions:
+5. **Ideal gas equation units:** $p$ must be in pascals ($\mathrm{Pa}$), $V$ in $\mathrm{m}^3$, $n$
+   in mol, $T$ in $\mathrm{K}$. Common conversions:
    $1\,\mathrm{atm} = 101325\,\mathrm{Pa}$$1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$1\,\mathrm{cm}^3 = 10^{-6}\,\mathrm{m}^3$.
 
 ## Exam-Style Questions with Full Mark Schemes
@@ -1018,8 +1029,8 @@ answer to 3 s.f.).
 <summary>Q2 (6 marks)</summary>
 
 $2.00\,\mathrm{g}$ of impure calcium carbonate reacts with excess hydrochloric acid, producing
-$480\,\mathrm{cm}^3$ of $\mathrm{CO}_2$ at room temperature and pressure
-($101\,\mathrm{kPa}$, $298\,\mathrm{K}$).
+$480\,\mathrm{cm}^3$ of $\mathrm{CO}_2$ at room temperature and pressure ($101\,\mathrm{kPa}$,
+$298\,\mathrm{K}$).
 
 (a) Calculate the percentage purity of the calcium carbonate. (4 marks)
 
@@ -1122,3 +1133,8 @@ reactions, underlying theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

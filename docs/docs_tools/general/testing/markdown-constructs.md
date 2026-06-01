@@ -1,6 +1,8 @@
 ---
 title: Markdown Constructs
-description: 'General Markdown Constructs notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'General Markdown Constructs notes covering key definitions, core concepts, worked examples, and
+  practice questions for exam readiness.'
 date: 2025-05-29T19:20:34.906Z
 tags:
   - CS
@@ -83,3 +85,14 @@ Inline math: $E = mc^2$ and $\nabla \times \mathbf{E} = -\frac{\partial \mathbf{
 Block math with aligned equations:
 
 $$\begin{aligned} \nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\ \nabla \cdot \mathbf{B} &= 0 \end{aligned}$$
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

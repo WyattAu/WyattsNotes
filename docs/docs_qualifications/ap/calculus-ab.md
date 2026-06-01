@@ -1,6 +1,8 @@
 ---
 title: AP Calculus AB Study Guide
-description: 'Qualifications Calculus Ab.Md AP Calculus AB Study notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'Qualifications Calculus Ab.Md AP Calculus AB Study notes covering key definitions, core concepts,
+  worked examples, and practice questions for in-depth revision.'
 date: 2026-05-31
 tags:
   - ap
@@ -12,8 +14,8 @@ slug: calculus-ab
 
 # AP Calculus AB Study Guide
 
-Comprehensive study guide for AP Calculus AB, aligned with the College Board Course and Exam Description.
-Covers all AB-only topics: limits, derivatives, integrals, and differential equations.
+Comprehensive study guide for AP Calculus AB, aligned with the College Board Course and Exam
+Description. Covers all AB-only topics: limits, derivatives, integrals, and differential equations.
 
 ## 1. Limits and Continuity
 
@@ -36,18 +38,19 @@ $$
 
 If $\lim_{x \to a} f(x)$ and $\lim_{x \to a} g(x)$ both exist, then:
 
-| Law | Expression |
-| --- | ---------- |
-| Sum | $\lim (f + g) = \lim f + \lim g$ |
-| Difference | $\lim (f - g) = \lim f - \lim g$ |
-| Product | $\lim (fg) = (\lim f)(\lim g)$ |
-| Quotient | $\lim (f / g) = \dfrac{\lim f}{\lim g}$, provided $\lim g \neq 0$ |
-| Power | $\lim f^n = (\lim f)^n$ |
-| Constant multiple | $\lim cf = c \lim f$ |
+| Law               | Expression                                                        |
+| ----------------- | ----------------------------------------------------------------- |
+| Sum               | $\lim (f + g) = \lim f + \lim g$                                  |
+| Difference        | $\lim (f - g) = \lim f - \lim g$                                  |
+| Product           | $\lim (fg) = (\lim f)(\lim g)$                                    |
+| Quotient          | $\lim (f / g) = \dfrac{\lim f}{\lim g}$, provided $\lim g \neq 0$ |
+| Power             | $\lim f^n = (\lim f)^n$                                           |
+| Constant multiple | $\lim cf = c \lim f$                                              |
 
 ### Squeeze Theorem
 
-If $g(x) \leq f(x) \leq h(x)$ for all $x$ near $a$ (except possibly at $a$), and $\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L$, then $\lim_{x \to a} f(x) = L$.
+If $g(x) \leq f(x) \leq h(x)$ for all $x$ near $a$ (except possibly at $a$), and
+$\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L$, then $\lim_{x \to a} f(x) = L$.
 
 Commonly used to evaluate $\displaystyle\lim_{x \to 0} \frac{\sin x}{x} = 1$.
 
@@ -67,12 +70,13 @@ Types of discontinuity:
 
 ### Intermediate Value Theorem (IVT)
 
-If $f$ is continuous on $[a, b]$ and $N$ is any value between $f(a)$ and $f(b)$, then there exists at
-least one $c \in (a, b)$ such that $f(c) = N$.
+If $f$ is continuous on $[a, b]$ and $N$ is any value between $f(a)$ and $f(b)$, then there exists
+at least one $c \in (a, b)$ such that $f(c) = N$.
 
 ### L'Hopital's Rule
 
-If $\displaystyle\lim_{x \to a} \frac{f(x)}{g(x)}$ produces an indeterminate form $\frac{0}{0}$ or $\frac{\pm\infty}{\pm\infty}$, then:
+If $\displaystyle\lim_{x \to a} \frac{f(x)}{g(x)}$ produces an indeterminate form $\frac{0}{0}$ or
+$\frac{\pm\infty}{\pm\infty}$, then:
 
 $$
 \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
@@ -120,39 +124,41 @@ $$
 
 ### Derivatives of Common Functions
 
-| Function $f(x)$ | Derivative $f'(x)$ |
-| --------------- | ------------------ |
-| $c$ (constant) | $0$ |
-| $x^n$ | $nx^{n-1}$ |
-| $\sin x$ | $\cos x$ |
-| $\cos x$ | $-\sin x$ |
-| $\tan x$ | $\sec^2 x$ |
-| $\sec x$ | $\sec x \tan x$ |
-| $\csc x$ | $-\csc x \cot x$ |
-| $\cot x$ | $-\csc^2 x$ |
-| $e^x$ | $e^x$ |
-| $\ln x$ | $\dfrac{1}{x}$ |
-| $a^x$ | $a^x \ln a$ |
-| $\log_a x$ | $\dfrac{1}{x \ln a}$ |
-| $\arcsin x$ | $\dfrac{1}{\sqrt{1 - x^2}}$ |
-| $\arccos x$ | $\dfrac{-1}{\sqrt{1 - x^2}}$ |
-| $\arctan x$ | $\dfrac{1}{1 + x^2}$ |
+| Function $f(x)$ | Derivative $f'(x)$           |
+| --------------- | ---------------------------- |
+| $c$ (constant)  | $0$                          |
+| $x^n$           | $nx^{n-1}$                   |
+| $\sin x$        | $\cos x$                     |
+| $\cos x$        | $-\sin x$                    |
+| $\tan x$        | $\sec^2 x$                   |
+| $\sec x$        | $\sec x \tan x$              |
+| $\csc x$        | $-\csc x \cot x$             |
+| $\cot x$        | $-\csc^2 x$                  |
+| $e^x$           | $e^x$                        |
+| $\ln x$         | $\dfrac{1}{x}$               |
+| $a^x$           | $a^x \ln a$                  |
+| $\log_a x$      | $\dfrac{1}{x \ln a}$         |
+| $\arcsin x$     | $\dfrac{1}{\sqrt{1 - x^2}}$  |
+| $\arccos x$     | $\dfrac{-1}{\sqrt{1 - x^2}}$ |
+| $\arctan x$     | $\dfrac{1}{1 + x^2}$         |
 
 ### Implicit Differentiation
 
 When $y$ is defined implicitly as a function of $x$, differentiate both sides with respect to $x$,
-treating $y$ as a function of $x$ (using the chain rule where needed), then solve for $\dfrac{dy}{dx}$.
+treating $y$ as a function of $x$ (using the chain rule where needed), then solve for
+$\dfrac{dy}{dx}$.
 
 ### Higher-Order Derivatives
 
-The second derivative $f''(x) = \dfrac{d^2y}{dx^2}$ gives the rate of change of the first derivative.
-The $n$-th derivative is denoted $f^{(n)}(x)$.
+The second derivative $f''(x) = \dfrac{d^2y}{dx^2}$ gives the rate of change of the first
+derivative. The $n$-th derivative is denoted $f^{(n)}(x)$.
 
 ## 3. Applications of Derivatives
 
 ### Mean Value Theorem (MVT)
 
-If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists at least one $c \in (a, b)$ such that:
+If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists at least one
+$c \in (a, b)$ such that:
 
 $$
 f'(c) = \frac{f(b) - f(a)}{b - a}
@@ -162,7 +168,8 @@ $$
 
 - $f$ is **increasing** on an interval if $f'(x) > 0$ for all $x$ in that interval
 - $f$ is **decreasing** on an interval if $f'(x) < 0$ for all $x$ in that interval
-- A **critical number** is an interior point $c$ of the domain where $f'(c) = 0$ or $f'(c)$ does not exist
+- A **critical number** is an interior point $c$ of the domain where $f'(c) = 0$ or $f'(c)$ does not
+  exist
 
 ### Concavity and Inflection Points
 
@@ -173,16 +180,18 @@ $$
 ### Local and Global Extrema
 
 **First Derivative Test:** At a critical point $c$:
+
 - $f'$ changes from positive to negative $\Rightarrow$ local maximum
 - $f'$ changes from negative to positive $\Rightarrow$ local minimum
 
 **Second Derivative Test:** At a critical point $c$ where $f'(c) = 0$:
+
 - $f''(c) > 0 \Rightarrow$ local minimum
 - $f''(c) < 0 \Rightarrow$ local maximum
 - $f''(c) = 0 \Rightarrow$ inconclusive
 
-A **global maximum/minimum** is the absolute largest/smallest value of $f$ on its entire domain. Check
-endpoints, critical points, and any discontinuities.
+A **global maximum/minimum** is the absolute largest/smallest value of $f$ on its entire domain.
+Check endpoints, critical points, and any discontinuities.
 
 ### Optimisation Problems
 
@@ -202,6 +211,7 @@ endpoints, critical points, and any discontinuities.
 ### Curve Sketching
 
 Procedure:
+
 1. Find domain, intercepts, and symmetry
 2. Identify asymptotes (vertical, horizontal, slant)
 3. Find the first derivative — determine increasing/decreasing intervals and local extrema
@@ -233,7 +243,8 @@ where $\Delta x = \dfrac{b - a}{n}$ and $x_i^*$ is a sample point in the $i$-th 
 - **Left sum:** $x_i^* = x_{i-1}$
 - **Right sum:** $x_i^* = x_i$
 - **Midpoint sum:** $x_i^* = \dfrac{x_{i-1} + x_i}{2}$
-- **Trapezoidal rule:** $\displaystyle\int_a^b f(x)\, dx \approx \frac{\Delta x}{2}\left[f(a) + 2\sum_{i=1}^{n-1}f(x_i) + f(b)\right]$
+- **Trapezoidal rule:**
+  $\displaystyle\int_a^b f(x)\, dx \approx \frac{\Delta x}{2}\left[f(a) + 2\sum_{i=1}^{n-1}f(x_i) + f(b)\right]$
 
 ### Definite Integrals
 
@@ -247,7 +258,8 @@ Properties:
 
 ### Fundamental Theorem of Calculus (FTC)
 
-**Part 1:** If $f$ is continuous on $[a, b]$, then the function $F(x) = \int_a^x f(t)\, dt$ is differentiable and:
+**Part 1:** If $f$ is continuous on $[a, b]$, then the function $F(x) = \int_a^x f(t)\, dt$ is
+differentiable and:
 
 $$
 F'(x) = f(x)
@@ -313,9 +325,9 @@ $$
 ### Slope Fields
 
 A slope field (direction field) is a graphical representation of a first-order differential equation
-$\dfrac{dy}{dx} = f(x, y)$. At each point $(x, y)$ on a grid, a short line segment is drawn with slope
-$f(x, y)$. Solutions to the differential equation are curves that are tangent to the line segments at
-every point.
+$\dfrac{dy}{dx} = f(x, y)$. At each point $(x, y)$ on a grid, a short line segment is drawn with
+slope $f(x, y)$. Solutions to the differential equation are curves that are tangent to the line
+segments at every point.
 
 ### Exponential Growth and Decay
 
@@ -389,19 +401,20 @@ $$
 ## 7. Exam Tips
 
 1. **Show all working.** The AP exam awards partial credit for correct intermediate steps even when
-   the final answer is wrong. Write out every step clearly.
-2. **Justify your answers.** On free-response questions, explicitly state which theorem, test, or rule
-   you are applying (e.g., "by the Intermediate Value Theorem" or "by the Second Derivative Test").
+   the final answer is wrong. Write out every step evidently.
+2. **Justify your answers.** On free-response questions, explicitly state which theorem, test, or
+   rule you are applying (e.g., "by the Intermediate Value Theorem" or "by the Second Derivative
+   Test").
 3. **Check your calculator's mode.** Ensure radians mode is selected before evaluating trigonometric
    expressions. This is one of the most common sources of error.
-4. **Master u-substitution.** Many integration problems on the AP exam can be solved with a well-chosen
-   substitution. Practise identifying the inner function and its derivative.
-5. **Verify answers graphically.** On the calculator-active section, use your calculator to sketch graphs
-   and check that your analytical results (extrema, inflection points, intercepts) match.
+4. **Master u-substitution.** Many integration problems on the AP exam can be solved with a
+   well-chosen substitution. Practise identifying the inner function and its derivative.
+5. **Verify answers graphically.** On the calculator-active section, use your calculator to sketch
+   graphs and check that your analytical results (extrema, inflection points, intercepts) match.
 6. **Do not leave blanks.** Even if you cannot complete a problem, write down relevant formulas,
    diagrams, or reasoning — partial credit may be awarded.
-7. **Time management.** Spend roughly 15 minutes per free-response question. If stuck, move on and return
-   later.
+7. **Time management.** Spend roughly 15 minutes per free-response question. If stuck, move on and
+   return later.
 
 ## 8. Common Mistakes
 
@@ -410,31 +423,41 @@ $$
 2. **Sign errors in the quotient rule.** The correct order is numerator-derivative times denominator
    minus numerator times denominator-derivative: $\dfrac{f'g - fg'}{g^2}$. Getting this backwards
    changes the sign.
-3. **Dropping the constant of integration.** When finding antiderivatives, always include $+ C$.
-   On free-response questions, the constant is essential for solving initial value problems.
+3. **Dropping the constant of integration.** When finding antiderivatives, always include $+ C$. On
+   free-response questions, the constant is essential for solving initial value problems.
 4. **Confusing average rate of change with instantaneous rate of change.** Average rate of change is
    $\dfrac{f(b) - f(a)}{b - a}$ (a slope of a secant line); instantaneous rate of change is $f'(a)$
    (slope of a tangent line).
 5. **Misapplying L'Hopital's rule.** Only use L'Hopital's rule for indeterminate forms $\frac{0}{0}$
    or $\frac{\pm\infty}{\pm\infty}$. Always verify the indeterminate form before differentiating.
 6. **Incorrect limits in u-substitution.** When using substitution on a definite integral, either
-   transform the limits of integration to $u$-values or substitute back to $x$ before evaluating.
-   Do not mix old and new limits.
+   transform the limits of integration to $u$-values or substitute back to $x$ before evaluating. Do
+   not mix old and new limits.
 7. **Confusing the MVT with the IVT.** The MVT guarantees a point where the instantaneous rate of
    change equals the average rate of change ($f'(c)$). The IVT guarantees a point where the function
    takes on a specific value ($f(c) = N$). Know the difference.
 
 ## 9. Summary
 
-| Topic | Key Ideas |
-| ----- | --------- |
-| Limits and Continuity | Evaluating limits, limit laws, Squeeze theorem, IVT, L'Hopital's rule, continuity conditions |
-| Differentiation | Power/product/quotient/chain rules, implicit differentiation, derivatives of all standard functions |
-| Applications of Derivatives | MVT, increasing/decreasing, concavity, extrema, optimisation, related rates, curve sketching |
-| Integration | Antiderivatives, Riemann sums, FTC parts 1 and 2, u-substitution, area between curves |
-| Differential Equations | Separable equations, slope fields, exponential growth/decay |
+| Topic                       | Key Ideas                                                                                           |
+| --------------------------- | --------------------------------------------------------------------------------------------------- |
+| Limits and Continuity       | Evaluating limits, limit laws, Squeeze theorem, IVT, L'Hopital's rule, continuity conditions        |
+| Differentiation             | Power/product/quotient/chain rules, implicit differentiation, derivatives of all standard functions |
+| Applications of Derivatives | MVT, increasing/decreasing, concavity, extrema, optimisation, related rates, curve sketching        |
+| Integration                 | Antiderivatives, Riemann sums, FTC parts 1 and 2, u-substitution, area between curves               |
+| Differential Equations      | Separable equations, slope fields, exponential growth/decay                                         |
 
 The AP Calculus AB exam tests your ability to apply these concepts in both multiple-choice and
 free-response formats. Focus on understanding why each rule works — the AP exam rewards conceptual
 understanding as much as mechanical computation. Practise past papers under timed conditions and
 review every mistake to build confidence and accuracy.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

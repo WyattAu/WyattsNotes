@@ -4,7 +4,9 @@ tags:
   - IB
   - English
 slug: poetry-analysis-guide
-description: 'IB Poetry Analysis Guide for IB English notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'IB Poetry Analysis Guide for IB English notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused preparation.'
 ---
 
 # Poetry Analysis Guide for IB English
@@ -728,3 +730,8 @@ english, including key terminology, approaches, and critical perspectives.
 
 Developing a precise analytical vocabulary and practising close reading are essential for strong
 performance in this area.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

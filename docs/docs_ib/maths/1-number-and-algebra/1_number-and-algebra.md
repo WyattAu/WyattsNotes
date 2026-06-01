@@ -125,8 +125,8 @@ $$f: X \to Y$$
 
 - $f_1: \mathbb{R}^+ \to \mathbb{R},\; f(x) = \pm\sqrt{x}$ — Since $x$ maps to two values, $f_1$ is
   not a function.
-- $f_2: \mathbb{R} \to \mathbb{R},\; f_2(x) = \frac{1}{x}$ — At $x = 0$, $f_2(0)$ is undefined, so not
-  every element of the domain is mapped. Redefine as
+- $f_2: \mathbb{R} \to \mathbb{R},\; f_2(x) = \frac{1}{x}$ — At $x = 0$, $f_2(0)$ is undefined, so
+  not every element of the domain is mapped. Redefine as
   $f_2: \mathbb{R} \setminus \{0\} \to \mathbb{R}$.
 - $f_3: \emptyset \to Y$ — Since no elements are in the domain, uniqueness is vacuously satisfied.
   This is a valid (empty) function.
@@ -933,3 +933,8 @@ key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

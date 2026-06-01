@@ -1,6 +1,8 @@
 ---
 title: Relational Databases
-description: 'A-Level Computer Science Relational Databases notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'A-Level Computer Science Relational Databases notes covering key definitions, core concepts,
+  worked examples, and practice questions for efficient revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience
@@ -1147,3 +1149,14 @@ Example result:
 
 4. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
    overall charge.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

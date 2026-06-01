@@ -1,6 +1,8 @@
 ---
 title: A Level Mathematics Diagnostic Test
-description: 'A-Level Maths A Level Mathematics Diagnostic Test notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
+description:
+  'A-Level Maths A Level Mathematics Diagnostic Test notes covering key definitions, core concepts,
+  worked examples, and practice questions for study and revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -516,3 +518,14 @@ Use the revision links under each question to jump directly to the relevant topi
    conditions in definite integrals.
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

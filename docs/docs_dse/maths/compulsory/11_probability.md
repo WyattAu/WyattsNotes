@@ -1,6 +1,8 @@
 ---
 title: Probability
-description: 'DSE Maths Probability notes covering key definitions, core concepts, worked examples, and practice questions for detailed exam preparation and revision.'
+description:
+  'DSE Maths Probability notes covering key definitions, core concepts, worked examples, and
+  practice questions for detailed exam preparation and revision.'
 date: 2025-06-03T12:07:31.077Z
 tags:
   - Maths
@@ -445,7 +447,8 @@ $, $
  &= P(A)(1 - P(B)) \\
  &= P(A) \cdot P(B') \quad \square
 \end{aligned}
-$, $
+$,
+$
 
 <details>
 <summary>Example</summary>
@@ -519,7 +522,8 @@ $, $
  P(A \mid B) &= \frac{P(A \cap B)}{P(B)} \\
  &= \frac{P(B \mid A) \cdot P(A)}{P(B)} \quad \square
 \end{aligned}
-$, $
+$,
+$
 
 Bayes' theorem "reverses" the conditioning: it expresses $P(A \mid B)$ in terms of $P(B \mid A)$.
 This is the mathematical foundation of statistical inference -- updating beliefs given evidence.
@@ -542,7 +546,8 @@ $, $
 \begin{aligned}
  P(A) &= \sum_{i=1}^{n} P(A \cap B_i) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i) \quad \square
 \end{aligned}
-$, $
+$,
+$
 
 ### Extended Bayes' Theorem
 
@@ -554,7 +559,8 @@ $, $
 \begin{aligned}
  P(B_j \mid E) = \frac{P(E \mid B_j) \cdot P(B_j)}{\displaystyle\sum_{i=1}^{n} P(E \mid B_i) \cdot P(B_i)}
 \end{aligned}
-$, $
+$,
+$
 
 The denominator is $P(E)$ computed via the law of total probability.
 
@@ -579,7 +585,8 @@ $, $
  &= \frac{0.0095}{0.0095 + 0.0198} \\
  &= \frac{0.0095}{0.0293} \approx 0.324
 \end{aligned}
-$, $
+$,
+$
 
 Despite a 95% accurate test, a positive result only means about 32.4% chance of disease. This
 Counterintuitive result occurs because the disease is rare -- false positives vastly outnumber true
@@ -601,7 +608,8 @@ $, $
  &= \frac{0.01}{0.01 + 0.009 + 0.01} \\
  &= \frac{0.01}{0.029} \approx 0.345
 \end{aligned}
-$, $
+$,
+$
 
 Despite $M_3$ having the highest defect rate, it only accounts for about 34.5% of defective items
 Because it produces the smallest share of total output.
@@ -678,7 +686,8 @@ $, $
 \begin{aligned}
  P = \frac{7}{10} \times \frac{3}{9} \times \frac{2}{8} = \frac{42}{720} = \frac{7}{120}
 \end{aligned}
-$, $
+$,
+$
 
 Case 2: Defective, then Good, then Defective:
 
@@ -686,7 +695,8 @@ $, $
 \begin{aligned}
  P = \frac{3}{10} \times \frac{7}{9} \times \frac{2}{8} = \frac{42}{720} = \frac{7}{120}
 \end{aligned}
-$, $
+$,
+$
 
 Total probability (addition rule for mutually exclusive cases):
 
@@ -694,7 +704,8 @@ $, $
 \begin{aligned}
  P = \frac{7}{120} + \frac{7}{120} = \frac{14}{120} = \frac{7}{60}
 \end{aligned}
-$, $
+$,
+$
 
 ---
 
@@ -724,7 +735,8 @@ $, $
 \begin{aligned}
  P(\mathrm{at least 2 heads}) = \binom{3}{2}\left(\frac{1}{2}\right)^3 + \binom{3}{3}\left(\frac{1}{2}\right)^3 = \frac{3}{8} + \frac{1}{8} = \frac{1}{2}
 \end{aligned}
-$, $
+$,
+$
 
 2. **Question:** In a group of 50 students, 30 play basketball, 25 play football, and 10 play
 Neither. A student is chosen at random. Find the probability that the student plays both sports.
@@ -804,7 +816,8 @@ $, $
 \begin{aligned}
  P(A' \cap B') = P(A') \cdot P(B') = (1 - 0.3)(1 - 0.5) = 0.7 \times 0.5 = 0.35
 \end{aligned}
-$, $
+$,
+$
 
 Verification via complement: $P(A' \cap B') = P((A \cup B)') = 1 - P(A \cup B)$.
 
@@ -813,7 +826,8 @@ $, $
  P(A \cup B) &= P(A) + P(B) - P(A \cap B) = 0.3 + 0.5 - 0.15 = 0.65 \\
  P(A' \cap B') &= 1 - 0.65 = 0.35 \quad \checkmark
 \end{aligned}
-$, $
+$,
+$
 
 6. **Question:** Two events $A$ and $B$ satisfy $P(A) = \frac{1}{3}$$P(B) = \frac{1}{4}$And
 $P(A \cup B) = \frac{5}{12}$. Determine whether $A$ and $B$ are independent.
@@ -927,7 +941,8 @@ $, $
  &= 1 - \frac{1}{2} + \frac{1}{12} \\
  &= \frac{12}{12} - \frac{6}{12} + \frac{1}{12} = \frac{7}{12}
 \end{aligned}
-$, $
+$,
+$
 
 12. **Question:** A test for a condition has a sensitivity of 90% and a specificity of 95%. The
 Condition prevalence in the population is 1%. Find the positive predictive value
@@ -1025,3 +1040,9 @@ denominator cannot be zero).
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
    > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/probability.md
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

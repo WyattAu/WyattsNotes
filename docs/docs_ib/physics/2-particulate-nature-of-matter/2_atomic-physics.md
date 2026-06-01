@@ -366,7 +366,8 @@ $$
 :::info[Example]
 
 Calculate the binding energy of the helium-4 nucleus. ($m_p = 1.00728\mathrm{ u}$
-$m_n = 1.00867\mathrm{ u}$, $m_{\alpha} = 4.00151\mathrm{ u}$ $1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
+$m_n = 1.00867\mathrm{ u}$, $m_{\alpha} = 4.00151\mathrm{ u}$
+$1\mathrm{ u} = 931.5\mathrm{ MeV}/c^2$)
 
 $$
 \Delta m = 2(1.00728) + 2(1.00867) - 4.00151 = 2.01456 + 2.01734 - 4.00151 = 0.03039\mathrm{ u}
@@ -843,3 +844,8 @@ self-marking and building a personal test matrix. :::
 
 6. Neglecting air resistance or assuming ideal conditions when the question specifies a real-world
    scenario.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,7 +1,9 @@
 ---
 title: Irish Leaving Certificate
 date: 2026-04-14
-description: 'ILC Intro.Md Irish Leaving Certificate notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
+description:
+  'ILC Intro.Md Irish Leaving Certificate notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed revision.'
 tags:
   - ILC
   - Introduction
@@ -115,3 +117,19 @@ Resources for revision.
 
 :::info Past papers and marking schemes are available free of charge from the SEC website. Working
 Through past papers under timed conditions is one of the most effective preparation strategies. :::
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

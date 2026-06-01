@@ -1,6 +1,8 @@
 ---
 title: Exponentials and Logarithms
-description: 'A-Level Maths Exponentials and Logarithms notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'A-Level Maths Exponentials and Logarithms notes covering key definitions, core concepts, worked
+  examples, and practice questions for in-depth revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -615,3 +617,14 @@ building a personal test matrix. :::
 
 4. Incorrectly applying integration by parts by choosing $u$ and $\frac{dv}{dx}$ the wrong way
    around.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

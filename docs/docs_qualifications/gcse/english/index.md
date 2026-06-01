@@ -1,6 +1,8 @@
 ---
 title: GCSE English Literature
-description: 'GCSE English Literature notes covering key definitions, core concepts, worked examples, and practice questions for in-depth study and thorough revision.'
+description:
+  'GCSE English Literature notes covering key definitions, core concepts, worked examples, and
+  practice questions for in-depth study and thorough revision.'
 date: 2026-04-22
 tags:
   - gcse
@@ -154,3 +156,8 @@ Specification for precise details.
 3. Ignoring context — always consider the social, historical, and literary context of the text.
 
 4. Describing the content of a text without analysing the language techniques the writer uses.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

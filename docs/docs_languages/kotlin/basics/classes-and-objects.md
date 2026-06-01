@@ -1,6 +1,8 @@
 ---
 title: Classes and Objects
-description: 'Kotlin Classes and Objects notes covering key definitions, core concepts, worked examples, and practice questions for effective study and examination practice.'
+description:
+  'Kotlin Classes and Objects notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective study and examination practice.'
 slug: classes-and-objects
 date: 2026-04-18
 tags:
@@ -393,3 +395,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

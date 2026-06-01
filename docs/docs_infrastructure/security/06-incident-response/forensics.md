@@ -1,7 +1,9 @@
 ---
 id: forensics
 title: Digital Forensics Basics
-description: 'Digital Forensics Basics notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and examination practice.'
+description:
+  'Digital Forensics Basics notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted study and examination practice.'
 slug: forensics
 ---
 
@@ -634,3 +636,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

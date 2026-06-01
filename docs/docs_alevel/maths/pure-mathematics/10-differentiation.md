@@ -1,6 +1,8 @@
 ---
 title: Differentiation
-description: 'A-Level Maths Differentiation notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'A-Level Maths Differentiation notes covering key definitions, core concepts, worked examples, and
+  practice questions for rigorous revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -221,8 +223,8 @@ $$f''(x) = \frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right)$$
 
 There are three types:
 
-| Type                | Condition                        | Shape   |
-| ------------------- | -------------------------------- | ------- |
+| Type                | Condition                          | Shape   |
+| ------------------- | ---------------------------------- | ------- |
 | Maximum             | $f'(a) = 0$, $f''(a) \lt 0$        | $\cap$  |
 | Minimum             | $f'(a) = 0$, $f''(a) \gt 0$        | $\cup$  |
 | Point of inflection | $f'(a) = 0$, $f''(a) = 0$ (may be) | S-shape |
@@ -635,3 +637,14 @@ building a personal test matrix. :::
 
 6. Rounding too early in multi-step calculations — carry full precision through and round only the
    final answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

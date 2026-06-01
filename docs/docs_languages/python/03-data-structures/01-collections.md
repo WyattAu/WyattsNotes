@@ -1,6 +1,8 @@
 ---
 title: Collections
-description: 'Python Collections notes covering key definitions, core concepts, worked examples, and practice questions for detailed exam preparation and mastery.'
+description:
+  'Python Collections notes covering key definitions, core concepts, worked examples, and practice
+  questions for detailed exam preparation and mastery.'
 date: 2025-06-04T12:00:00.000Z
 tags:
   - Python
@@ -1060,3 +1062,14 @@ graph TD
 
 4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
    applications.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

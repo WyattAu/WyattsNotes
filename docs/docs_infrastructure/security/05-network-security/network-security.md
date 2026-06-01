@@ -1,7 +1,9 @@
 ---
 id: network-security
 title: Network Security
-description: 'Network Security notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
+description:
+  'Network Security notes covering key definitions, core concepts, worked examples, and practice
+  questions for in-depth exam preparation and revision.'
 slug: network-security
 sidebar_position: 6
 ---
@@ -832,3 +834,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

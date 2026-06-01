@@ -1,6 +1,8 @@
 ---
 title: Proof
-description: 'A-Level Maths Proof notes covering key definitions, core concepts, worked examples, and practice questions for targeted exam preparation and revision.'
+description:
+  'A-Level Maths Proof notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted exam preparation and revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
@@ -555,3 +557,14 @@ building a personal test matrix. :::
 
 4. Forgetting the $+c$ constant of integration in indefinite integrals, or misusing boundary
    conditions in definite integrals.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

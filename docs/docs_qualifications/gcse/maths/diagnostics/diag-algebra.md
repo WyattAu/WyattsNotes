@@ -1,6 +1,8 @@
 ---
 title: 'Algebra -- Diagnostic Tests'
-description: 'GCSE Maths Algebra -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
+description:
+  'GCSE Maths Algebra -- Diagnostic Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for practical revision.'
 slug: diag-algebra
 hide_table_of_contents: true
 ---
@@ -166,3 +168,19 @@ $15p = 15$$p = \pounds 1$ per km. $f = 18 - 10 = \pounds 8$.
 $8 \lt 0.5d$. $d \gt 16$.
 
 The first company is cheaper for journeys longer than 16 km.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

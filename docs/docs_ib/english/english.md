@@ -3,7 +3,9 @@ title: English
 tags:
   - english
 slug: english
-description: 'IB English notes covering key definitions, core concepts, worked examples, and practice questions for rigorous learning and effective revision.'
+description:
+  'IB English notes covering key definitions, core concepts, worked examples, and practice questions
+  for rigorous learning and effective revision.'
 ---
 
 ## IB English A: Language and Literature -- Course Overview
@@ -354,3 +356,14 @@ Throughout all assessed work:
    not stand alone.
 
 4. Ignoring context — always consider the social, historical, and literary context of the text.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-mole-concept-stoichiometry
 title: Chemistry - Mole Concept and Stoichiometry
-description: 'DSE Chemistry - Mole Concept and Stoichiometry notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'DSE Chemistry - Mole Concept and Stoichiometry notes covering key definitions, core concepts,
+  worked examples, and practice questions for analytical revision.'
 slug: mole-concept-and-stoichiometry
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -874,7 +876,6 @@ including key reactions, underlying theories, and practical applications.
 
 **Key concepts include:**
 
-
 - key chemical principles and theories
 - mathematical relationships in chemistry
 - practical techniques and apparatus
@@ -885,3 +886,8 @@ Mastery of these concepts requires both theoretical understanding and the abilit
 to unfamiliar contexts, particularly in calculation and practical questions.
 
 > > > > > > > Stashed changes:docs/docs_dse/Chemistry/mole-concept-and-stoichiometry.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

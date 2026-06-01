@@ -1,7 +1,9 @@
 ---
 id: dns-architecture
 title: DNS Architecture and Operations
-description: 'DNS Architecture and Operations notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'DNS Architecture and Operations notes covering key definitions, core concepts, worked examples,
+  and practice questions for effective preparation.'
 slug: dns-architecture
 tags:
   - Networking
@@ -863,3 +865,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

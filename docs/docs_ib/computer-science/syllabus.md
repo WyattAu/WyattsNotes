@@ -1,7 +1,9 @@
 ---
 title: Syllabus
 slug: syllabus
-description: 'IB Computer Science Syllabus notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and mastery.'
+description:
+  'IB Computer Science Syllabus notes covering key definitions, core concepts, worked examples, and
+  practice questions for systematic exam preparation and mastery.'
 ---
 
 # IB Computer Science Syllabus Overview
@@ -293,14 +295,15 @@ Work.
 
 ## Topic Pages
 
-- [Computer Organization](2-computer-organization/1_computer-organization.md) -- processor architecture, memory,
-  and instruction cycle
+- [Computer Organization](2-computer-organization/1_computer-organization.md) -- processor
+  architecture, memory, and instruction cycle
 - [Networks](3-networks/1_networks.md) -- network models, protocols, and data transmission
-- [System Design](1-system-fundamentals/1_system-design.md) -- system planning, stakeholder analysis, and design
-  methodologies
-- [System in Organization](1-system-fundamentals/2_system-organization.md) -- systems in context, integration, and
-  organizational impact
-- [OOP / Java](8-object-oriented-programming/1_object-oriented-programming.md) -- object-oriented programming concepts and Java-specific notes
+- [System Design](1-system-fundamentals/1_system-design.md) -- system planning, stakeholder
+  analysis, and design methodologies
+- [System in Organization](1-system-fundamentals/2_system-organization.md) -- systems in context,
+  integration, and organizational impact
+- [OOP / Java](8-object-oriented-programming/1_object-oriented-programming.md) -- object-oriented
+  programming concepts and Java-specific notes
 
 ## Common Pitfalls
 
@@ -315,3 +318,14 @@ Work.
 
 4. Writing pseudocode that is too language-specific rather than using standard algorithmic
    constructs.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

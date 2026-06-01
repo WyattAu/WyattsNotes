@@ -1,6 +1,8 @@
 ---
 title: CMake Presets and Toolchain Files
-description: 'C++ Programming CMake Presets and Toolchain Files notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'C++ Programming CMake Presets and Toolchain Files notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam preparation.'
 date: 2025-12-10T06:16:47.022Z
 tags:
   - cpp
@@ -561,3 +563,8 @@ files, including key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

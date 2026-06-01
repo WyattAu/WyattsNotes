@@ -1,6 +1,8 @@
 ---
 title: Office Applications in Depth
-description: 'DSE Ict Office Applications in Depth notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'DSE Ict Office Applications in Depth notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1042,7 +1044,6 @@ depth, including key principles and practical applications.
 
 **Key concepts include:**
 
-
 - core concepts and definitions
 - key principles and frameworks
 - practical applications
@@ -1053,3 +1054,8 @@ A thorough understanding of these concepts, combined with regular practice and r
 for mastery of this topic.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/office-applications-depth.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

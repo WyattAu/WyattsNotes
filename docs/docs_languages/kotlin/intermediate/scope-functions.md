@@ -6,13 +6,15 @@ tags:
   - Kotlin
 categories:
   - Kotlin
-description: "Kotlin scope functions: let, apply, run, also, with, and withContext. Understanding when to use each, receiver vs context lambda, chaining patterns, and."
+description:
+  'Kotlin scope functions: let, apply, run, also, with, and withContext. Understanding when to use
+  each, receiver vs context lambda, chaining patterns, and.'
 ---
 
 ## Introduction
 
-Scope functions execute a block of code within the context of an object. Kotlin provides five built-in
-scope functions (`let`, `apply`, `run`, `also`, `with`) and one coroutine-specific function
+Scope functions execute a block of code within the context of an object. Kotlin provides five
+built-in scope functions (`let`, `apply`, `run`, `also`, `with`) and one coroutine-specific function
 (`withContext`). They differ in two dimensions: whether the block receives the object as `this`
 (receiver) or as `it` (argument), and what the block returns (the object itself or the block's
 result).
@@ -262,13 +264,13 @@ used only when thread or context changes are needed.
 
 ## Choosing the Right Function
 
-| Function   | Context | Returns        | Primary Use                     |
-|------------|---------|----------------|---------------------------------|
-| `let`      | `it`    | block result   | Null safety, transforms        |
-| `run`      | `this`  | block result   | Compute result from object      |
-| `with`     | `this`  | block result   | Multiple operations on object  |
-| `apply`    | `this`  | receiver       | Configuration, initialization   |
-| `also`     | `it`    | receiver       | Side effects, logging, debug   |
+| Function | Context | Returns      | Primary Use                   |
+| -------- | ------- | ------------ | ----------------------------- |
+| `let`    | `it`    | block result | Null safety, transforms       |
+| `run`    | `this`  | block result | Compute result from object    |
+| `with`   | `this`  | block result | Multiple operations on object |
+| `apply`  | `this`  | receiver     | Configuration, initialization |
+| `also`   | `it`    | receiver     | Side effects, logging, debug  |
 
 Use the following decision process:
 
@@ -362,3 +364,8 @@ each function, how they differ in context and return type, and how to combine th
 
 Understanding scope functions thoroughly improves readability and reduces boilerplate in Kotlin
 code. Practice each function with realistic examples to build fluency.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

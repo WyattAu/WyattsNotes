@@ -1,6 +1,8 @@
 ---
 title: A-Level Chemistry Diagnostic Guide
-description: 'A-Level Chemistry Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'A-Level Chemistry Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective preparation.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -200,7 +202,7 @@ Each diagnostic test contains questions rated by difficulty and type:
 | diag-bonding-structure        | VSEPR, intermolecular forces, ionic/covalent bonding             | bonding-and-structure.md                                                                          |
 | diag-quantitative-chemistry   | Moles, titration, gas calculations, uncertainties                | quantitative-chemistry.md                                                                         |
 | diag-kinetics                 | Rate equations, Arrhenius, mechanisms, catalysts                 | kinetics.md                                                                                       |
-| diag-equilibrium              | $K_c$, $K_p$Le Chatelier, heterogeneous equilibrium                | equilibrium.md                                                                                    |
+| diag-equilibrium              | $K_c$, $K_p$Le Chatelier, heterogeneous equilibrium              | equilibrium.md                                                                                    |
 | diag-thermodynamics           | Enthalpy, entropy, Gibbs energy, Born-Haber                      | thermodynamics.md, entropy-and-gibbs.md, born-haber-cycles.md                                     |
 | diag-acids-bases              | pH, weak acids, buffers, titration curves, indicators            | acids-bases.md                                                                                    |
 | diag-electrochemistry         | Electrode potentials, cells, electrolysis, feasibility           | electrochemistry.md                                                                               |
@@ -251,3 +253,19 @@ integration tests.
 | Blank answer                                | Knowledge gap          | Return to core content notes; work through relevant worked examples   |
 | Partial credit only                         | Incomplete explanation | Practice writing full explanations with all key marking points        |
 | Runs out of time                            | Poor time management   | Practice under timed conditions; skip hard questions and return later |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

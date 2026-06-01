@@ -1,6 +1,8 @@
 ---
 title: Branching Strategies
-description: 'Git Branching Strategies notes covering key definitions, core concepts, worked examples, and practice questions for targeted exam preparation and revision.'
+description:
+  'Git Branching Strategies notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted exam preparation and revision.'
 date: 2025-06-03T07:00:00.000Z
 tags:
   - git
@@ -349,3 +351,14 @@ echo "export default { extends: ['@commitlint/config-conventional'] };" > commit
 
 4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
    data).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

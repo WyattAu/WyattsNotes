@@ -1,6 +1,8 @@
 ---
 title: Graph Algorithms
-description: 'University Computer Science Graph Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'University Computer Science Graph Algorithms notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -41,6 +43,7 @@ BFS(G, s):
 **Time:** $O(V + E)$ with adjacency list.
 
 **Properties:**
+
 - Produces a **BFS tree** with shortest-path distances.
 - $v.dist$ = shortest-path distance from $s$ to $v$ (unweighted graphs).
 
@@ -74,6 +77,7 @@ DFS_VISIT(G, u):
 **Time:** $O(V + E)$.
 
 **Properties:**
+
 - Parenthesis theorem: intervals $[u.d, u.f]$ are either nested or disjoint.
 - Classification of edges:
   - **Tree edges:** Part of DFS forest.
@@ -83,18 +87,19 @@ DFS_VISIT(G, u):
 
 ### 1.3 BFS vs DFS
 
-| Property        | BFS              | DFS                |
-| --------------- | ---------------- | ------------------ |
-| Data structure  | Queue            | Stack (recursion)  |
-| Explores        | Level by level   | Branch by branch   |
-| Shortest path   | Yes (unweighted) | No                 |
-| Space           | $O(V)$           | $O(V)$             |
-| Time            | $O(V + E)$       | $O(V + E)$         |
-| Applications    | Shortest paths, levels | Topological sort, SCC, cycles |
+| Property       | BFS                    | DFS                           |
+| -------------- | ---------------------- | ----------------------------- |
+| Data structure | Queue                  | Stack (recursion)             |
+| Explores       | Level by level         | Branch by branch              |
+| Shortest path  | Yes (unweighted)       | No                            |
+| Space          | $O(V)$                 | $O(V)$                        |
+| Time           | $O(V + E)$             | $O(V + E)$                    |
+| Applications   | Shortest paths, levels | Topological sort, SCC, cycles |
 
 ## 2. Topological Sort
 
-A **topological ordering** of a DAG is a linear ordering of vertices such that for every directed edge $(u, v)$, $u$ appears before $v$.
+A **topological ordering** of a DAG is a linear ordering of vertices such that for every directed
+edge $(u, v)$, $u$ appears before $v$.
 
 ### 2.1 DFS-Based Topological Sort
 
@@ -125,11 +130,12 @@ TOPOPOLOGICAL_SORT_KAHN(G):
     return order
 ```
 
-**Time:** $O(V + E)$. Detects cycles naturally (if output length $\neq |V|$).
+**Time:** $O(V + E)$. Detects cycles by definition (if output length $\neq |V|$).
 
 ## 3. Strongly Connected Components
 
-A **strongly connected component** (SCC) of a directed graph is a maximal set of vertices such that every vertex is reachable from every other.
+A **strongly connected component** (SCC) of a directed graph is a maximal set of vertices such that
+every vertex is reachable from every other.
 
 ### 3.1 Kosaraju's Algorithm
 
@@ -175,7 +181,8 @@ STRONGCONNECT(v):
 
 **Time:** $O(V + E)$. Single pass DFS.
 
-**Key insight:** `lowlink` tracks the earliest reachable vertex in the stack. When `v.lowlink == v.index`, `v` is the root of an SCC.
+**Key insight:** `lowlink` tracks the earliest reachable vertex in the stack. When
+`v.lowlink == v.index`, `v` is the root of an SCC.
 
 ## 4. Shortest Path Algorithms
 
@@ -206,7 +213,8 @@ RELAX(u, v, w):
 
 **Time:** $O((V + E) \log V)$ with binary heap. $O(V \log V + E)$ with Fibonacci heap.
 
-**Correctness:** Relies on the fact that once a vertex is extracted (added to $S$), its distance is final. This holds only for non-negative weights.
+**Correctness:** Relies on the fact that once a vertex is extracted (added to $S$), its distance is
+final. This holds only for non-negative weights.
 
 ### 4.2 Bellman-Ford Algorithm
 
@@ -230,6 +238,7 @@ BELLMAN_FORD(G, w, s):
 **Time:** $O(VE)$.
 
 **Properties:**
+
 - After $i$ iterations, $v.dist$ is at most the shortest path using $\leq i$ edges.
 - If no negative cycles exist, after $|V|-1$ iterations distances are correct.
 
@@ -257,12 +266,12 @@ FLOYD_WARSHALL(W):
 
 ### 4.4 Comparison
 
-| Algorithm       | Source    | Weights      | Negative | Time              | Space  |
-| --------------- | --------- | ------------ | -------- | ----------------- | ------ |
-| BFS             | Single    | Unit         | N/A      | $O(V + E)$        | $O(V)$ |
-| Dijkstra        | Single    | Non-negative | No       | $O((V+E) \log V)$ | $O(V)$ |
-| Bellman-Ford    | Single    | Any          | Yes      | $O(VE)$           | $O(V)$ |
-| Floyd-Warshall  | All pairs | Any          | Yes      | $O(V^3)$          | $O(V^2)$|
+| Algorithm      | Source    | Weights      | Negative | Time              | Space    |
+| -------------- | --------- | ------------ | -------- | ----------------- | -------- |
+| BFS            | Single    | Unit         | N/A      | $O(V + E)$        | $O(V)$   |
+| Dijkstra       | Single    | Non-negative | No       | $O((V+E) \log V)$ | $O(V)$   |
+| Bellman-Ford   | Single    | Any          | Yes      | $O(VE)$           | $O(V)$   |
+| Floyd-Warshall | All pairs | Any          | Yes      | $O(V^3)$          | $O(V^2)$ |
 
 ### 4.5 Johnson's Algorithm
 
@@ -280,12 +289,15 @@ All-pairs shortest paths, efficient for sparse graphs.
 
 ### 5.1 Definition
 
-Given a connected, undirected graph $G = (V, E)$ with weight function $w$, an MST is a subset $T \subseteq E$ that:
+Given a connected, undirected graph $G = (V, E)$ with weight function $w$, an MST is a subset
+$T \subseteq E$ that:
+
 1. Connects all vertices (spanning).
 2. Is a tree ($|T| = |V| - 1$ edges, acyclic).
 3. Minimizes total weight $\sum_{e \in T} w(e)$.
 
-**Cut property:** Let $(S, V \setminus S)$ be any cut of $G$. The minimum-weight crossing edge is in some MST.
+**Cut property:** Let $(S, V \setminus S)$ be any cut of $G$. The minimum-weight crossing edge is in
+some MST.
 
 **Cycle property:** For any cycle $C$ in $G$, the maximum-weight edge in $C$ is not in any MST.
 
@@ -327,22 +339,24 @@ PRIM(G, r):
 
 **Time:** $O(E \log V)$ with binary heap. $O(E + V \log V)$ with Fibonacci heap.
 
-**Correctness:** Grows a single tree, always adding the lightest edge connecting the tree to a vertex outside.
+**Correctness:** Grows a single tree, always adding the lightest edge connecting the tree to a
+vertex outside.
 
 ### 5.4 Comparison
 
-| Property    | Kruskal | Prim   |
-| ----------- | ------- | ------ |
-| Strategy    | Edge-based | Vertex-based |
-| Best for    | Sparse graphs | Dense graphs |
-| Data structure | Union-Find | Priority queue |
-| Time        | $O(E \log E)$ | $O(E \log V)$ |
+| Property       | Kruskal       | Prim           |
+| -------------- | ------------- | -------------- |
+| Strategy       | Edge-based    | Vertex-based   |
+| Best for       | Sparse graphs | Dense graphs   |
+| Data structure | Union-Find    | Priority queue |
+| Time           | $O(E \log E)$ | $O(E \log V)$  |
 
 ## 6. Network Flow
 
 ### 6.1 Flow Network
 
 A **flow network** $G = (V, E)$ is a directed graph with:
+
 - Capacity $c(u,v) \geq 0$ for each edge.
 - A **source** $s$ and **sink** $t$.
 - No edges into $s$ or out of $t$ (wlog).
@@ -377,7 +391,8 @@ FORD_FULKERSON(G, s, t):
 
 ### 6.3 Edmonds-Karp Algorithm
 
-Ford-Fulkerson where augmenting paths are found by **BFS** (shortest augmenting path in terms of edges).
+Ford-Fulkerson where augmenting paths are found by **BFS** (shortest augmenting path in terms of
+edges).
 
 **Time:** $O(VE^2)$.
 
@@ -387,11 +402,13 @@ Ford-Fulkerson where augmenting paths are found by **BFS** (shortest augmenting 
 
 $$|f^*| = c(S^*, T^*)$$
 
-where $S^*$ is the set of vertices reachable from $s$ in the residual graph when no augmenting path exists, and $T^* = V \setminus S^*$.
+where $S^*$ is the set of vertices reachable from $s$ in the residual graph when no augmenting path
+exists, and $T^* = V \setminus S^*$.
 
 ### 6.5 Applications of Max-Flow
 
-**Bipartite matching:** Create a source connected to left partition (capacity 1), right partition connected to sink (capacity 1), original edges (capacity 1). Max flow = max matching.
+**Bipartite matching:** Create a source connected to left partition (capacity 1), right partition
+connected to sink (capacity 1), original edges (capacity 1). Max flow = max matching.
 
 **Multiple sources/sinks:** Add super-source and super-sink with infinite-capacity edges.
 
@@ -401,7 +418,8 @@ where $S^*$ is the set of vertices reachable from $s$ in the residual graph when
 
 ### 7.1 Definition
 
-Given a bipartite graph $G = (L, R, E)$, find a maximum matching: a set of edges with no shared vertices.
+Given a bipartite graph $G = (L, R, E)$, find a maximum matching: a set of edges with no shared
+vertices.
 
 ### 7.2 Hopcroft-Karp Algorithm
 
@@ -462,44 +480,65 @@ where $N(S)$ is the set of neighbors of $S$ in $R$.
 
 ## 8. Common Pitfalls
 
-1. **Using Dijkstra with negative weights.** Dijkstra's greedy extraction assumes finalized distances, which fails with negative edges. Use Bellman-Ford or add a potential function.
+1. **Using Dijkstra with negative weights.** Dijkstra's greedy extraction assumes finalized
+   distances, which fails with negative edges. Use Bellman-Ford or add a potential function.
 
-2. **Forgetting to initialize all distances in Floyd-Warshall.** The distance matrix must be initialized with actual edge weights for adjacent vertices and $\infty$ for non-adjacent pairs (except diagonal = 0).
+2. **Forgetting to initialize all distances in Floyd-Warshall.** The distance matrix must be
+   initialized with actual edge weights for adjacent vertices and $\infty$ for non-adjacent pairs
+   (except diagonal = 0).
 
-3. **Confusing BFS and DFS edge classification.** Back edges in DFS indicate cycles in directed graphs, but the same concept does not directly apply to BFS.
+3. **Confusing BFS and DFS edge classification.** Back edges in DFS indicate cycles in directed
+   graphs, but the same concept does not directly apply to BFS.
 
-4. **Ignoring the difference between Kruskal and Prim.** Kruskal is edge-centric (uses Union-Find), Prim is vertex-centric (uses a priority queue). Choose based on graph density.
+4. **Ignoring the difference between Kruskal and Prim.** Kruskal is edge-centric (uses Union-Find),
+   Prim is vertex-centric (uses a priority queue). Choose based on graph density.
 
-5. **Applying max-flow algorithms to disconnected graphs.** Ensure the graph has a valid source-to-sink path before running Ford-Fulkerson. An isolated vertex produces trivial results.
+5. **Applying max-flow algorithms to disconnected graphs.** Ensure the graph has a valid
+   source-to-sink path before running Ford-Fulkerson. An isolated vertex produces trivial results.
 
-6. **Mistaking augmenting path for shortest path.** In Ford-Fulkerson, any augmenting path works, but Edmonds-Karp specifically uses BFS for shortest augmenting paths to guarantee $O(VE^2)$.
+6. **Mistaking augmenting path for shortest path.** In Ford-Fulkerson, any augmenting path works,
+   but Edmonds-Karp specifically uses BFS for shortest augmenting paths to guarantee $O(VE^2)$.
 
-7. **Not handling self-loops and parallel edges in MST algorithms.** Kruskal naturally handles them (sort includes all edges), but Prim may need adjustment depending on the adjacency representation.
+7. **Not handling self-loops and parallel edges in MST algorithms.** Kruskal by definition handles
+   them (sort includes all edges), but Prim may need adjustment depending on the adjacency
+   representation.
 
 ## Worked Examples
 
 ### Example 1: Dijkstra's Shortest Path
-**Problem:** Find the shortest path from node A to all other nodes in a graph with edges: A->B(4), A->C(2), B->D(3), B->E(1), C->B(1), C->D(5), D->E(2).
-**Solution:** Initial: dist(A)=0, dist(B)=inf, dist(C)=inf, dist(D)=inf, dist(E)=inf. Process A: dist(B)=4, dist(C)=2. Process C: dist(B)=min(4, 2+1)=3, dist(D)=min(inf, 2+5)=7. Process B: dist(D)=min(7, 3+3)=6, dist(E)=min(inf, 3+1)=4. Process E: dist(D)=min(6, 4+2)=6. Process D: no improvement. Final: A=0, C=2, B=3, E=4, D=6. Path to E: A->C->B->E (length 4).
+
+**Problem:** Find the shortest path from node A to all other nodes in a graph with edges: A->B(4),
+A->C(2), B->D(3), B->E(1), C->B(1), C->D(5), D->E(2). **Solution:** Initial: dist(A)=0, dist(B)=inf,
+dist(C)=inf, dist(D)=inf, dist(E)=inf. Process A: dist(B)=4, dist(C)=2. Process C: dist(B)=min(4,
+2+1)=3, dist(D)=min(inf, 2+5)=7. Process B: dist(D)=min(7, 3+3)=6, dist(E)=min(inf, 3+1)=4. Process
+E: dist(D)=min(6, 4+2)=6. Process D: no improvement. Final: A=0, C=2, B=3, E=4, D=6. Path to E:
+A->C->B->E (length 4).
 
 ### Example 2: Topological Sort
-**Problem:** Given a DAG with edges: A->B, A->C, B->D, C->D, D->E. Find a valid topological ordering.
-**Solution:** Using Kahn's algorithm: in-degrees: A=0, B=1, C=1, D=2, E=1. Queue: [A]. Process A: remove edges to B, C. Queue: [B, C]. Process B: remove edge to D (in-degree D becomes 1). Process C: remove edge to D (in-degree D becomes 0). Queue: [D]. Process D: remove edge to E. Queue: [E]. Process E. Topological order: A, B, C, D, E (or A, C, B, D, E -- both valid).
+
+**Problem:** Given a DAG with edges: A->B, A->C, B->D, C->D, D->E. Find a valid topological
+ordering. **Solution:** Using Kahn's algorithm: in-degrees: A=0, B=1, C=1, D=2, E=1. Queue: [A].
+Process A: remove edges to B, C. Queue: [B, C]. Process B: remove edge to D (in-degree D becomes 1).
+Process C: remove edge to D (in-degree D becomes 0). Queue: [D]. Process D: remove edge to E. Queue:
+[E]. Process E. Topological order: A, B, C, D, E (or A, C, B, D, E -- both valid).
 
 ## Summary
 
-- **BFS** finds shortest paths in unweighted graphs; **DFS** explores depth-first and enables topological sort and SCC detection.
+- **BFS** finds shortest paths in unweighted graphs; **DFS** explores depth-first and enables
+  topological sort and SCC detection.
 - **Topological sort** works on DAGs using DFS finish times or Kahn's indegree algorithm.
 - **SCCs** are found by Kosaraju's (two DFS passes) or Tarjan's (single DFS with lowlink).
-- **Shortest paths:** Dijkstra ($O((V+E)\log V)$, non-negative), Bellman-Ford ($O(VE)$, negative), Floyd-Warshall ($O(V^3)$, all pairs).
+- **Shortest paths:** Dijkstra ($O((V+E)\log V)$, non-negative), Bellman-Ford ($O(VE)$, negative),
+  Floyd-Warshall ($O(V^3)$, all pairs).
 - **MST:** Kruskal ($O(E \log E)$) and Prim ($O(E \log V)$), both based on cut/cycle properties.
 - **Max-flow:** Ford-Fulkerson/Edmonds-Karp ($O(VE^2)$), with max-flow min-cut theorem.
-- **Bipartite matching:** Hopcroft-Karp ($O(E\sqrt{V})$) for unweighted, Hungarian ($O(n^3)$) for weighted.
+- **Bipartite matching:** Hopcroft-Karp ($O(E\sqrt{V})$) for unweighted, Hungarian ($O(n^3)$) for
+  weighted.
 
 ## Cross-References
 
-| Topic | Link |
-|-------|------|
-| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |
-| Data Structures | [View](/docs/university/computer-science/data-structures) |
+| Topic             | Link                                                        |
+| ----------------- | ----------------------------------------------------------- |
+| Algorithm Design  | [View](/docs/university/computer-science/algorithm-design)  |
+| Data Structures   | [View](/docs/university/computer-science/data-structures)   |
 | Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |

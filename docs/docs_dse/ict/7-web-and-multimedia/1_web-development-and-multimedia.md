@@ -1,6 +1,8 @@
 ---
 title: Web Development and Multimedia
-description: 'DSE Ict Web Development and Multimedia notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'DSE Ict Web Development and Multimedia notes covering key definitions, core concepts, worked
+  examples, and practice questions for analytical revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1065,7 +1067,6 @@ multimedia, including key theories, case studies, and management strategies.
 
 **Key concepts include:**
 
-
 - geographical concepts and theories
 - case studies and examples
 - data analysis and fieldwork techniques
@@ -1076,3 +1077,8 @@ Using specific case studies and data to support arguments is essential for achie
 marks in geography assessments.
 
 > > > > > > > Stashed changes:docs/docs_dse/ICT/web-development-and-multimedia.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

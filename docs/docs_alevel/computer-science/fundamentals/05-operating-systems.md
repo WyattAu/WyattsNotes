@@ -1,6 +1,8 @@
 ---
 title: Operating Systems
-description: 'A-Level Computer Science Operating Systems notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'A-Level Computer Science Operating Systems notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - ComputerScience
@@ -732,3 +734,14 @@ The same file, and the owner can modify the ACL to add or revoke permissions at 
    sorted input.
 
 4. Confusing authentication (who you are) with authorisation (what you can do) in security contexts.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

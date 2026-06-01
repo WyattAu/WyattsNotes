@@ -1,6 +1,8 @@
 ---
 title: Atomic Structure and Periodicity
-description: 'University Chemistry Atomic Structure and Periodicity notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'University Chemistry Atomic Structure and Periodicity notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -16,12 +18,12 @@ slug: university-chemistry/atomic-structure-and-periodicity
 
 Each atomic orbital is characterized by four quantum numbers:
 
-| Quantum Number | Symbol | Allowed Values                        |
-| --------------- | ------ | ------------------------------------- |
-| Principal       | $n$    | $1, 2, 3, \ldots$                     |
-| Azimuthal       | $\ell$ | $0, 1, 2, \ldots, n - 1$              |
-| Magnetic        | $m_\ell$ | $-\ell, \ldots, 0, \ldots, \ell$   |
-| Spin            | $m_s$  | $+\frac{1}{2}, -\frac{1}{2}$           |
+| Quantum Number | Symbol   | Allowed Values                   |
+| -------------- | -------- | -------------------------------- |
+| Principal      | $n$      | $1, 2, 3, \ldots$                |
+| Azimuthal      | $\ell$   | $0, 1, 2, \ldots, n - 1$         |
+| Magnetic       | $m_\ell$ | $-\ell, \ldots, 0, \ldots, \ell$ |
+| Spin           | $m_s$    | $+\frac{1}{2}, -\frac{1}{2}$     |
 
 Orbital types: $\ell = 0$ ($s$), $\ell = 1$ ($p$), $\ell = 2$ ($d$), $\ell = 3$ ($f$).
 
@@ -58,14 +60,15 @@ due to repulsion by other electrons.
 
 ### 2.1 Slater's Rules
 
-**Theorem 2 (Slater's Rules):** The effective nuclear charge $Z_{\text{eff}}$ experienced by an electron
-is:
+**Theorem 2 (Slater's Rules):** The effective nuclear charge $Z_{\text{eff}}$ experienced by an
+electron is:
 
 $$Z_{\text{eff}} = Z - S$$
 
 where $Z$ is the atomic number and $S$ is the shielding constant.
 
 **Calculation of $S$:**
+
 1. Write the electron configuration in groups: $(1s)(2s,2p)(3s,3p)(3d)(4s,4p)(4d)(4f)\ldots$
 2. Electrons in groups **to the right** contribute nothing to $S$.
 3. **Same group** ($ns$, $np$): Each other electron contributes $0.35$ (except $1s$: $0.30$).
@@ -76,9 +79,8 @@ where $Z$ is the atomic number and $S$ is the shielding constant.
 **Example 1:** Calculate $Z_{\text{eff}}$ for a 3p electron in chlorine ($Z = 17$, configuration
 $1s^2\,2s^2\,2p^6\,3s^2\,3p^5$).
 
-Same group (other 3p electrons): $4 \times 0.35 = 1.40$
-$n - 1$ shell (3s + 2s2p): $2 \times 0.85 + 8 \times 0.85 = 8.50$
-$n - 2$ and below (1s): $2 \times 1.00 = 2.00$
+Same group (other 3p electrons): $4 \times 0.35 = 1.40$ $n - 1$ shell (3s + 2s2p):
+$2 \times 0.85 + 8 \times 0.85 = 8.50$ $n - 2$ and below (1s): $2 \times 1.00 = 2.00$
 
 $$S = 1.40 + 8.50 + 2.00 = 11.90$$
 
@@ -88,7 +90,8 @@ $\blacksquare$
 
 ### 2.2 Periodic Consequences
 
-Higher $Z_{\text{eff}}$ $\implies$ smaller atomic radius, higher ionization energy, greater electronegativity.
+Higher $Z_{\text{eff}}$ $\implies$ smaller atomic radius, higher ionization energy, greater
+electronegativity.
 
 ## 3. Periodic Trends
 
@@ -98,29 +101,32 @@ Higher $Z_{\text{eff}}$ $\implies$ smaller atomic radius, higher ionization ener
 element (covalent radius) or nearest neighbors in a metallic crystal (metallic radius).
 
 **Trends:**
+
 - **Down a group:** Atomic radius increases (additional shells, $n$ increases).
 - **Across a period (left to right):** Atomic radius decreases ($Z_{\text{eff}}$ increases, pulling
   electrons closer).
 
 $$r \propto \frac{n^2}{Z_{\text{eff}}}$$
 
-**Example 2:** Atomic radii (pm):
-Na (186) > Mg (160) > Al (143) > Si (117) > P (110) > S (104) > Cl (99) > Ar (71)
+**Example 2:** Atomic radii (pm): Na (186) > Mg (160) > Al (143) > Si (117) > P (110) > S (104) > Cl
+(99) > Ar (71)
 
 $\blacksquare$
 
 ### 3.2 Ionization Energy
 
-**Definition 5 (First Ionization Energy):** The energy required to remove the outermost electron from
-a gaseous atom:
+**Definition 5 (First Ionization Energy):** The energy required to remove the outermost electron
+from a gaseous atom:
 
 $$\text{X}(g) \to \text{X}^+(g) + e^- \quad \Delta H = \text{IE}_1$$
 
 **Trends:**
+
 - Increases across a period (larger $Z_{\text{eff}}$).
 - Decreases down a group (larger radius, electron farther from nucleus).
 
 **Exceptions:**
+
 - $\text{IE}(\text{Be}) > \text{IE}(\text{B})$: 2s$^2$ is a filled, stable subshell.
 - $\text{IE}(\text{N}) > \text{IE}(\text{O})$: 2p$^4$ has paired electrons (repulsion).
 
@@ -131,15 +137,18 @@ The jump from $\text{IE}_3$ to $\text{IE}_4$ for aluminum indicates removal from
 
 ### 3.3 Electron Affinity
 
-**Definition 6 (Electron Affinity):** The energy released when an electron is added to a gaseous atom:
+**Definition 6 (Electron Affinity):** The energy released when an electron is added to a gaseous
+atom:
 
 $$\text{X}(g) + e^- \to \text{X}^-(g) \quad \Delta H = \text{EA}$$
 
 **Trends:**
+
 - Generally becomes more negative across a period (halogens have the most negative EA).
 - Less negative down a group.
 
 **Notable exceptions:**
+
 - Noble gases: Positive EA (endothermic).
 - Group 2 (Be, Mg): Filled s-subshell $\implies$ small EA.
 - Group 15 (N): Half-filled p-subshell $\implies$ small EA.
@@ -160,6 +169,7 @@ $$\chi_M = \frac{\text{IE} + \text{EA}}{2}$$
 (normalized to Pauling scale)
 
 **Trends:**
+
 - Increases across a period (F is most electronegative: $\chi = 3.98$).
 - Decreases down a group.
 - Cesium ($\chi = 0.79$) is the least electronegative.
@@ -168,8 +178,9 @@ $$\chi_M = \frac{\text{IE} + \text{EA}}{2}$$
 
 ### 4.1 Relativistic Effects
 
-**Definition 8 (Relativistic Effects):** For heavy elements (high $Z$), inner-shell electrons move at
-speeds approaching $c$. This causes:
+**Definition 8 (Relativistic Effects):** For heavy elements (high $Z$), inner-shell electrons move
+at speeds approaching $c$. This causes:
+
 - **Contraction of $s$ and $p$ orbitals:** Increased effective mass $\implies$ smaller Bohr radius.
 - **Expansion of $d$ and $f$ orbitals:** Better shielding of $d/f$ electrons $\implies$ larger.
 - **Gold's color:** Relativistic contraction shifts the $5d \to 6s$ transition into the visible.
@@ -193,15 +204,16 @@ poorly shield the nuclear charge. Each element has a slightly smaller radius tha
 $$\text{La}^{3+} (103 \text{ pm}) > \text{Lu}^{3+} (86 \text{ pm})$$
 
 **Consequences:**
-- **Post-lanthanide $d$-block elements** (Hf, Ta, W, Re, Os, Ir, Pt, Au) are nearly the same
-  size as their period 5 counterparts (Zr, Nb, Mo, Tc, Ru, Rh, Pd, Ag).
+
+- **Post-lanthanide $d$-block elements** (Hf, Ta, W, Re, Os, Ir, Pt, Au) are nearly the same size as
+  their period 5 counterparts (Zr, Nb, Mo, Tc, Ru, Rh, Pd, Ag).
 - Hf and Zr are extremely similar chemically (difficult to separate).
 - Pt and Pd are more similar than expected.
 
 ### 4.4 Inert Pair Effect
 
-**Definition 10 (Inert Pair Effect):** For heavier p-block elements (particularly Group 13–15),
-the $ns^2$ electron pair is reluctant to participate in bonding, favoring lower oxidation states:
+**Definition 10 (Inert Pair Effect):** For heavier p-block elements (particularly Group 13–15), the
+$ns^2$ electron pair is reluctant to participate in bonding, favoring lower oxidation states:
 
 $$\text{Tl}^+ > \text{Tl}^{3+}, \quad \text{Pb}^{2+} > \text{Pb}^{4+}, \quad \text{Bi}^{3+} > \text{Bi}^{5+}$$
 
@@ -211,18 +223,20 @@ $$\text{Tl}^+ > \text{Tl}^{3+}, \quad \text{Pb}^{2+} > \text{Pb}^{4+}, \quad \te
 
 - **Atomic radius:** Decreases across a series due to increasing $Z_{\text{eff}}$ (d electrons
   shield poorly). The decrease is smaller than in the main group.
-- **Ionization energies:** Relatively uniform across a series; second and third rows have higher
-  IE due to lanthanide contraction.
+- **Ionization energies:** Relatively uniform across a series; second and third rows have higher IE
+  due to lanthanide contraction.
 - **Melting points:** Peak around Group 6 (Cr, Mo, W) due to maximum d-bonding.
-- **Oxidation states:** Range from +1 to +7; common oxidation states depend on electronic configuration
-  and ligand field stabilization.
+- **Oxidation states:** Range from +1 to +7; common oxidation states depend on electronic
+  configuration and ligand field stabilization.
 
 ## 5. Electronic Configuration Anomalies
 
 ### 5.1 Chromium and Copper
 
-- **Cr ($Z = 24$):** $[\text{Ar}]\,3d^5\,4s^1$ (not $3d^4\,4s^2$) — half-filled $d$-subshell is more stable.
-- **Cu ($Z = 29$):** $[\text{Ar}]\,3d^{10}\,4s^1$ (not $3d^9\,4s^2$) — filled $d$-subshell is more stable.
+- **Cr ($Z = 24$):** $[\text{Ar}]\,3d^5\,4s^1$ (not $3d^4\,4s^2$) — half-filled $d$-subshell is more
+  stable.
+- **Cu ($Z = 29$):** $[\text{Ar}]\,3d^{10}\,4s^1$ (not $3d^9\,4s^2$) — filled $d$-subshell is more
+  stable.
 
 Similar anomalies: Mo ($4d^5\,5s^1$), Ag ($4d^{10}\,5s^1$), Au ($5d^{10}\,6s^1$).
 
@@ -239,8 +253,8 @@ For $d^5$: $C(5,2) = 10$ pairs of parallel spins (maximum exchange stabilization
 
 ### 6.1 Transition Metal Ions
 
-When transition metals form cations, the $ns$ electrons are lost first (even though $ns$ fills before
-$(n-1)d$):
+When transition metals form cations, the $ns$ electrons are lost first (even though $ns$ fills
+before $(n-1)d$):
 
 $$\text{Fe}: [\text{Ar}]\,3d^6\,4s^2 \to \text{Fe}^{2+}: [\text{Ar}]\,3d^6$$
 $$\text{Fe}: [\text{Ar}]\,3d^6\,4s^2 \to \text{Fe}^{3+}: [\text{Ar}]\,3d^5$$
@@ -249,7 +263,8 @@ $$\text{Fe}: [\text{Ar}]\,3d^6\,4s^2 \to \text{Fe}^{3+}: [\text{Ar}]\,3d^5$$
 
 **Definition 11 (Isoelectronic):** Species with the same number of electrons.
 
-Radius trend: $\text{O}^{2-} > \text{F}^- > \text{Ne} > \text{Na}^+ > \text{Mg}^{2+} > \text{Al}^{3+}$
+Radius trend:
+$\text{O}^{2-} > \text{F}^- > \text{Ne} > \text{Na}^+ > \text{Mg}^{2+} > \text{Al}^{3+}$
 
 For isoelectronic ions: higher nuclear charge $\implies$ smaller radius.
 
@@ -283,10 +298,10 @@ Trend: Basicity increases down a group; acidity increases across a period.
 2. **Confusing atomic radius definitions.** Covalent, metallic, van der Waals, and ionic radii are
    measured differently and cannot be directly compared. **Fix:** Use consistent definitions when
    comparing trends.
-3. **Wrong ionization energy trend exceptions.** Be > B and N > O are due to subshell stability,
-   not errors. **Fix:** Remember that filled and half-filled subshells are more stable.
-4. **Assuming the 4s orbital fills before 3d and empties before 3d.** 4s fills before 3d, but
-   loses electrons before 3d when ionized. **Fix:** In transition metal ions, always remove $ns$ first.
+3. **Wrong ionization energy trend exceptions.** Be > B and N > O are due to subshell stability, not
+   errors. **Fix:** Remember that filled and half-filled subshells are more stable.
+4. **Assuming the 4s orbital fills before 3d and empties before 3d.** 4s fills before 3d, but loses
+   electrons before 3d when ionized. **Fix:** In transition metal ions, always remove $ns$ first.
 5. **Ignoring relativistic effects for heavy elements.** Properties of 5d elements (Hf–Au) differ
    significantly from what non-relativistic predictions would suggest. **Fix:** Account for
    lanthanide contraction and relativistic stabilization of $s$ orbitals.
@@ -294,7 +309,8 @@ Trend: Basicity increases down a group; acidity increases across a period.
    the process is more favorable. **Fix:** Conventionally, EA is reported as a positive number when
    energy is released (some sources differ — check the convention).
 7. **Overgeneralizing diagonal relationships.** Li–Mg and Be–Al are the strongest; B–Si is weaker.
-   **Fix:** Diagonal relationships are trends, not absolute rules; always consider specific chemistry.
+   **Fix:** Diagonal relationships are trends, not absolute rules; always consider specific
+   chemistry.
 
 ## Summary
 
@@ -305,23 +321,36 @@ Trend: Basicity increases down a group; acidity increases across a period.
 - **Lanthanide contraction:** Poor shielding by 4f electrons; post-lanthanide $d$-block elements are
   similar in size to their period 5 counterparts.
 - **Inert pair effect:** Heavy p-block elements favor lower oxidation states ($ns^2$ inert).
-- **Relativistic effects:** Significant for 5d and 6p elements; gold's color, mercury's liquid state.
+- **Relativistic effects:** Significant for 5d and 6p elements; gold's color, mercury's liquid
+  state.
 
 ## Worked Examples
 
 ### Example 1: Predicting Ionisation Energy Trends
-**Problem:** Explain why the first ionisation energy of aluminium (578 kJ/mol) is lower than that of magnesium (738 kJ/mol), despite aluminium being to the right of magnesium in period 3.
-**Solution:** Magnesium has the electron configuration [Ne]3s^2. Removing one electron requires breaking a filled s-subshell (stable configuration). Aluminium has [Ne]3s^2 3p^1. The 3p electron is higher in energy and more effectively shielded than the 3s electrons, so it is removed more easily. This is a general trend: the ionisation energy drops slightly when moving from a filled s-subshell to a p-subshell element.
+
+**Problem:** Explain why the first ionisation energy of aluminium (578 kJ/mol) is lower than that of
+magnesium (738 kJ/mol), despite aluminium being to the right of magnesium in period 3. **Solution:**
+Magnesium has the electron configuration [Ne]3s^2. Removing one electron requires breaking a filled
+s-subshell (stable configuration). Aluminium has [Ne]3s^2 3p^1. The 3p electron is higher in energy
+and more effectively shielded than the 3s electrons, so it is removed more readily. This is a
+general trend: the ionisation energy drops slightly when moving from a filled s-subshell to a
+p-subshell element.
 
 ### Example 2: Lanthanide Contraction Effect
-**Problem:** Explain why the atomic radius of Zr (160 pm) is nearly identical to that of Hf (159 pm), despite Hf being in the period below Zr.
-**Solution:** The lanthanide contraction is caused by poor shielding of 4f electrons. As nuclear charge increases across the lanthanides (Ce to Lu), the effective nuclear charge felt by outer electrons increases significantly, pulling them closer. This contraction (~15 pm total) compensates for the expected increase in radius from adding a new shell, making Zr and Hf nearly identical in size. This explains their similar chemical properties and the difficulty of separating them.
+
+**Problem:** Explain why the atomic radius of Zr (160 pm) is nearly identical to that of Hf (159
+pm), despite Hf being in the period below Zr. **Solution:** The lanthanide contraction is caused by
+poor shielding of 4f electrons. As nuclear charge increases across the lanthanides (Ce to Lu), the
+effective nuclear charge felt by outer electrons increases significantly, pulling them closer. This
+contraction (~15 pm total) compensates for the expected increase in radius from adding a new shell,
+making Zr and Hf nearly identical in size. This explains their similar chemical properties and the
+difficulty of separating them.
 
 ## Cross-References
 
-| Topic                    | Site        | Link                                                                  |
-| ------------------------ | ----------- | --------------------------------------------------------------------- |
-| Quantum Chemistry        | WyattsNotes | [View](/docs/university/chemistry/quantum-chemistry)                  |
-| Coordination Chemistry   | WyattsNotes | [View](/docs/university/chemistry/coordination-chemistry)             |
-| Main-Group Chemistry     | WyattsNotes | [View](/docs/university/chemistry/main-group-chemistry)              |
-| Atomic Structure — LibreTexts | LibreTexts | [View](https://chem.libretexts.org/Bookshelves/General_Chemistry/)   |
+| Topic                         | Site        | Link                                                               |
+| ----------------------------- | ----------- | ------------------------------------------------------------------ |
+| Quantum Chemistry             | WyattsNotes | [View](/docs/university/chemistry/quantum-chemistry)               |
+| Coordination Chemistry        | WyattsNotes | [View](/docs/university/chemistry/coordination-chemistry)          |
+| Main-Group Chemistry          | WyattsNotes | [View](/docs/university/chemistry/main-group-chemistry)            |
+| Atomic Structure — LibreTexts | LibreTexts  | [View](https://chem.libretexts.org/Bookshelves/General_Chemistry/) |

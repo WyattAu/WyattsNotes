@@ -996,3 +996,8 @@ $-\mathrm{OH}$ group. No reaction occurs (the orange solution remains orange).
 | [Organic Chemistry] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/chemistry/organic-chemistry/introduction) |
 | [Organic Chemistry] | IB      | [View](https://ib.wyattau.com/docs/ib/chemistry/10-organic-chemistry/1_organic-chemistry)        |
 | [Organic Chemistry] | DSE     | [View](https://dse.wyattau.com/docs/dse/chemistry/7-organic-chemistry/1_organic-chemistry)       |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Trigonometry
-description: 'DSE Maths Trigonometry notes covering key definitions, core concepts, worked examples, and practice questions for complete revision and exam readiness.'
+description:
+  'DSE Maths Trigonometry notes covering key definitions, core concepts, worked examples, and
+  practice questions for complete revision and exam readiness.'
 date: 2025-06-03T16:22:00.000Z
 tags:
   - Maths
@@ -300,7 +302,8 @@ $, $
 \begin{aligned}
  \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{Z}
 \end{aligned}
-$, $
+$,
+$
 
 **For $\cos\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arccos k$ be the principal value
 In $[0^\circ, 180^\circ]$:
@@ -374,7 +377,8 @@ $, $
  a^2 &= b^2 + c^2 - 2bc\cos A \\[4pt]
  \cos A &= \frac{b^2 + c^2 - a^2}{2bc}
 \end{aligned}
-$, $
+$,
+$
 
 The cosine rule generalises the Pythagorean theorem and is most useful for side-side-side (SSS) or
 Side-angle-side (SAS) configurations.
@@ -385,7 +389,8 @@ $, $
 \begin{aligned}
  \mathrm{Area} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
 \end{aligned}
-$, $
+$,
+$
 
 This is derived from the standard formula
 $\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height}$Where the height is
@@ -780,8 +785,8 @@ $$= \sqrt{2}\!\left(\sin\theta \cdot \frac{\sqrt{2}}{2} + \cos\theta \cdot \frac
 
 </details>
 
-**DSE Practice 2.** In $\triangle ABC$, $a = 5$, $b = 7$, $c = 8$. Find (a) the largest angle, (b) the
-area.
+**DSE Practice 2.** In $\triangle ABC$, $a = 5$, $b = 7$, $c = 8$. Find (a) the largest angle, (b)
+the area.
 
 <details>
 <summary>Solution</summary>
@@ -851,8 +856,8 @@ $$h \approx 19.8 \text{ m}$$
 
 </details>
 
-**DSE Practice 5.** In $\triangle ABC$, $a = 6$, $B = 45^\circ$And the area is $9\sqrt{2}$. Find the two
-possible values of $b$.
+**DSE Practice 5.** In $\triangle ABC$, $a = 6$, $B = 45^\circ$And the area is $9\sqrt{2}$. Find the
+two possible values of $b$.
 
 <details>
 <summary>Solution</summary>
@@ -985,3 +990,9 @@ way around.
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
    > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/trigonometry.md
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

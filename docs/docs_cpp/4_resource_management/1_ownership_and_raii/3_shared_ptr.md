@@ -1,6 +1,8 @@
 ---
 title: Shared Ownership (std::shared_ptr) and Control Block
-description: 'C++ Programming Shared Ownership (std::shared_ptr) and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Shared Ownership (std::shared_ptr) and notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -777,3 +779,8 @@ This topic covers the essential concepts and techniques related to shared owners
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: DSE Physics Diagnostic Guide
-description: 'DSE Physics Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'DSE Physics Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for thorough preparation.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -186,3 +188,14 @@ Sum all 10 topic scores (max 240):
 - Start with the prerequisite topics in the chain above
 - Build up from basic definitions and concepts
 - Use the unit tests as learning exercises (read the solution, then attempt similar problems)
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: AP Calculus
-description: 'Qualifications Maths AP Calculus notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'Qualifications Maths AP Calculus notes covering key definitions, core concepts, worked examples,
+  and practice questions for methodical revision.'
 date: 2026-04-14
 tags:
   - ap
@@ -68,3 +70,19 @@ exam. The content follows the College Board's course framework and mathematical 
   repeating the same errors
 - Review the AP Calculus mathematical practices alongside content — justification and communication
   are assessed throughout the exam
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

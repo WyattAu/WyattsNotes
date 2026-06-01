@@ -1,6 +1,8 @@
 ---
 title: Channels and Concurrency Patterns
-description: 'Go Channels and Concurrency Patterns notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'Go Channels and Concurrency Patterns notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused preparation.'
 slug: channels
 date: 2026-04-18
 tags:
@@ -374,3 +376,8 @@ theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

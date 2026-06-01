@@ -6,7 +6,9 @@ tags:
   - Go
 categories:
   - Go
-description: Data races and race conditions in Go. Detecting races with go test -race, the sync/atomic package for lock-free programming, sync.
+description:
+  Data races and race conditions in Go. Detecting races with go test -race, the sync/atomic package
+  for lock-free programming, sync.
 ---
 
 ## What is a Data Race?
@@ -69,11 +71,11 @@ Previous write at 0x... by goroutine 6:
 ```
 
 The race detector has false negatives (it cannot catch all races) but no false positives. A reported
-race is always a real bug. However, the race detector only catches races that are exercised during the
-run -- if a particular interleaving does not occur, the race is not reported.
+race is always a real bug. However, the race detector only catches races that are exercised during
+the run -- if a particular interleaving does not occur, the race is not reported.
 
-The race detector slows programs by 2-20x and uses 5-10x more memory. Enable it in tests and CI,
-not in production.
+The race detector slows programs by 2-20x and uses 5-10x more memory. Enable it in tests and CI, not
+in production.
 
 ## Common Race Patterns
 
@@ -396,8 +398,8 @@ if err := g.Wait(); err != nil {
    re-check the condition in a `for` loop.
 
 5. **Ignoring errgroup errors.** `g.Wait()` returns the first non-nil error from any goroutine.
-   Always check it. Other goroutines continue running even after the first error -- use `WithContext`
-   to cancel remaining goroutines on the first error:
+   Always check it. Other goroutines continue running even after the first error -- use
+   `WithContext` to cancel remaining goroutines on the first error:
 
 ```go
 g, ctx := errgroup.WithContext(context.Background())
@@ -407,7 +409,7 @@ g.Go(func() error {
 ```
 
 6. **CAS without retry.** `CompareAndSwap` can fail if another goroutine modified the value between
-   the load and the swap. Always retry in a loop, or use `Add` when the operation is simply an
+   the load and the swap. Always retry in a loop, or use `Add` when the operation is directly an
    increment.
 
 7. **Leaking goroutines with errgroup.** If `g.Go` panics, `g.Wait` re-panics. Always recover or
@@ -430,3 +432,8 @@ theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

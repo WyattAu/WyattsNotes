@@ -1,6 +1,8 @@
 ---
 title: Population Policies
-description: 'IB Geography Population Policies notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
+description:
+  'IB Geography Population Policies notes covering key definitions, core concepts, worked examples,
+  and practice questions for solid study and thorough revision.'
 slug: population-policies
 ---
 
@@ -252,3 +254,14 @@ For related topics, see [./demographic-transition-model](./demographic-transitio
    conditions in definite integrals.
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

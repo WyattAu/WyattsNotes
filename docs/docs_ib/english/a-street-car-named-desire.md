@@ -3,7 +3,9 @@ title: A Streetcar Named Desire
 tags:
   - english
 slug: streetcar-named-desire
-description: 'IB English A Streetcar Named Desire notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'IB English A Streetcar Named Desire notes covering key definitions, core concepts, worked
+  examples, and practice questions for in-depth revision.'
 ---
 
 ## Author Context
@@ -496,3 +498,8 @@ Blanche can wash but she cannot wash away the past.
 
 4. Mixing up Big O, Big $\Omega$, and Big $\Theta$ notation — Big O is an upper bound, not
    necessarily tight.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

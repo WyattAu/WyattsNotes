@@ -1,6 +1,8 @@
 ---
 title: 'DSE Economics -- Diagnostic Guide'
-description: 'DSE Economics -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for solid study and examination practice.'
+description:
+  'DSE Economics -- Diagnostic notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid study and examination practice.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -360,3 +362,19 @@ solution.
 6. **Distinguish between equity and efficiency:** Many government intervention questions require
    weighing equity (fairness) against efficiency (maximising total surplus). Acknowledge the
    trade-off and explain why the optimal policy depends on society's preferences.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

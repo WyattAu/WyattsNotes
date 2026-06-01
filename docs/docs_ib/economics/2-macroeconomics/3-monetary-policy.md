@@ -1,6 +1,8 @@
 ---
 title: Monetary Policy
-description: 'IB Economics Monetary Policy notes covering key definitions, core concepts, worked examples, and practice questions for rigorous review and exam preparation.'
+description:
+  'IB Economics Monetary Policy notes covering key definitions, core concepts, worked examples, and
+  practice questions for rigorous review and exam preparation.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]
@@ -668,8 +670,8 @@ Where:
 **Short-run Phillips curve:** for a given $\pi^e$There is a trade-off between $\pi$ and $u$. The
 central bank can reduce $u$ below $u_n$ by creating unexpected inflation ($\pi > \pi^e$).
 
-**Long-run Phillips curve:** when $\pi = \pi^e$, $u = u_n$. The long-run Phillips curve is Vertical at
-the natural rate.
+**Long-run Phillips curve:** when $\pi = \pi^e$, $u = u_n$. The long-run Phillips curve is Vertical
+at the natural rate.
 
 ### The Sacrifice Ratio
 
@@ -801,3 +803,8 @@ Inflation is approximately 5%.
 - **Quantitative easing** is used when conventional monetary policy is constrained by the zero lower
   bound
 - Key calculations: CPI, inflation rate, real interest rate ($r \approx i - \pi^e$)
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

@@ -3,7 +3,9 @@ title: Maths
 tags:
   - maths
 slug: maths
-description: 'IB Maths notes covering key definitions, core concepts, worked examples, and practice questions for in-depth learning and effective revision.'
+description:
+  'IB Maths notes covering key definitions, core concepts, worked examples, and practice questions
+  for in-depth learning and effective revision.'
 ---
 
 ## IB Mathematics -- Analysis and Approaches (AA) -- Course Overview
@@ -202,8 +204,8 @@ $\mathbf{b} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix}$.
 <summary>Solution</summary>
 
 - **Dot product:** $\mathbf{a} \cdot \mathbf{b} = (2)(4) + (3)(-1) + (-1)(2) = 8 - 3 - 2 = 3$
-- **Magnitudes:**
-  $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$, $\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
+- **Magnitudes:** $\lvert \mathbf{a} \rvert = \sqrt{4 + 9 + 1} = \sqrt{14}$,
+  $\lvert \mathbf{b} \rvert = \sqrt{16 + 1 + 4} = \sqrt{21}$
 - **Angle:**
   $\cos \theta = \dfrac{\mathbf{a} \cdot \mathbf{b}}{\lvert \mathbf{a} \rvert \lvert \mathbf{b} \rvert} = \dfrac{3}{\sqrt{14} \cdot \sqrt{21}} = \dfrac{3}{\sqrt{294}} = \dfrac{3}{17.15} = 0.1749$
 - $\theta = \arccos(0.1749) = 79.9$ degrees
@@ -812,3 +814,14 @@ If you get this wrong, revise: Exponential growth and separable differential equ
 3. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
 
 4. Cancelling terms instead of factors — $\frac{ab + ac}{a}$ simplifies to $b + c$, not $bc$.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

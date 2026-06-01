@@ -1325,8 +1325,8 @@ $y$-axis with scale factor $3$. Find the single matrix and describe its effect o
 
 $$M = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix}$$
 
-The unit square (area = 1) is mapped to a rectangle with vertices $(0,0)$, $(2,0)$, $(2,3)$, $(0,3)$. The
-new area is $6$.
+The unit square (area = 1) is mapped to a rectangle with vertices $(0,0)$, $(2,0)$, $(2,3)$,
+$(0,3)$. The new area is $6$.
 
 Area scale factor: $|\det(M)| = 6$.
 
@@ -1479,3 +1479,8 @@ $$= \frac{1}{2}\begin{pmatrix} 1 & 81 \\ -1 & 81 \end{pmatrix}\begin{pmatrix} 1 
 | ---------- | ------- | ------------------------------------------------------------------------------------------------------- |
 | [Matrices] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/further-maths/pure-mathematics/02-matrices) |
 | [Matrices] | IB      | [View](https://ib.wyattau.com/docs/ib/maths/3-geometry-and-trigonometry/3_matrices-and-transformations) |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

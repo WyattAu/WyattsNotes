@@ -1,6 +1,8 @@
 ---
 title: A-Level Chemistry
-description: 'A-Level Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for complete review and exam preparation.'
+description:
+  'A-Level Chemistry notes covering key definitions, core concepts, worked examples, and practice
+  questions for complete review and exam preparation.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -349,3 +351,8 @@ structure before proceeding.
 
 4. Writing half-equations without balancing charges or atoms — always check electrons, hydrogen
    ions, and water molecules.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Build Caching
-description: 'C++ Programming Build Caching notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
+description:
+  'C++ Programming Build Caching notes covering key definitions, core concepts, worked examples, and
+  practice questions for study and revision.'
 date: 2025-12-10T06:21:00.670Z
 tags:
   - cpp
@@ -764,3 +766,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

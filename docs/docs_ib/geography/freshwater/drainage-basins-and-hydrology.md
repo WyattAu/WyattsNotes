@@ -1,6 +1,8 @@
 ---
 title: Drainage Basins and Hydrology
-description: 'IB Geography Drainage Basins and Hydrology notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'IB Geography Drainage Basins and Hydrology notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 slug: drainage-basins-and-hydrology
 ---
 
@@ -253,3 +255,14 @@ For an overview of freshwater issues and management, see
 
 4. Rounding too early in multi-step calculations — carry full precision through and round only the
    final answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,7 +1,9 @@
 ---
 id: intro
 title: Introduction to Linux
-description: 'Introduction to Linux notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and exam readiness.'
+description:
+  'Introduction to Linux notes covering key definitions, core concepts, worked examples, and
+  practice questions for detailed revision and exam readiness.'
 slug: intro
 sidebar_position: 1
 ---
@@ -135,3 +137,19 @@ Editing files). The focus is on depth — understanding _how_ things work, not j
 Run.
 
 :::
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

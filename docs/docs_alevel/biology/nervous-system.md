@@ -1,6 +1,8 @@
 ---
 title: Nervous System
-description: 'A-Level Biology Nervous System notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision and exam readiness.'
+description:
+  'A-Level Biology Nervous System notes covering key definitions, core concepts, worked examples,
+  and practice questions for in-depth revision and exam readiness.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -374,14 +376,14 @@ intensity of the stimulus.
 
 ### 7.2 Other Receptor Types
 
-| Receptor Type    | Stimulus Detected                                                       | Location                                                        |
-| ---------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------- |
-| Mechanoreceptors | Pressure, vibration, sound                                              | Skin, inner ear (cochlea)                                       |
-| Thermoreceptors  | Temperature changes                                                     | Skin, hypothalamus                                              |
+| Receptor Type    | Stimulus Detected                                                         | Location                                                        |
+| ---------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Mechanoreceptors | Pressure, vibration, sound                                                | Skin, inner ear (cochlea)                                       |
+| Thermoreceptors  | Temperature changes                                                       | Skin, hypothalamus                                              |
 | Chemoreceptors   | Chemical concentration (e.g., $\mathrm{O_2}$, $\mathrm{CO_2}$Glucose, pH) | Carotid bodies, aortic bodies, taste buds, olfactory epithelium |
-| Photoreceptors   | Light                                                                   | Retina (rods and cones)                                         |
-| Nociceptors      | Pain (tissue damage)                                                    | Skin, joints, internal organs                                   |
-| Proprioceptors   | Body position, limb movement                                            | Muscles, tendons, joints                                        |
+| Photoreceptors   | Light                                                                     | Retina (rods and cones)                                         |
+| Nociceptors      | Pain (tissue damage)                                                      | Skin, joints, internal organs                                   |
+| Proprioceptors   | Body position, limb movement                                              | Muscles, tendons, joints                                        |
 
 ## 8. Muscle Contraction: The Sliding Filament Mechanism
 
@@ -1375,13 +1377,13 @@ difficulty with coordination and balance.
 
 ### 23.1 Types of Sensory Receptors
 
-| Receptor Type   | Stimulus                                                          | Location                                                    | Example                                       |
-| --------------- | ----------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------- |
-| Mechanoreceptor | Mechanical deformation (pressure, stretch, vibration)             | Skin, inner ear, muscles                                    | Pacinian corpuscle, hair cells in cochlea     |
-| Thermoreceptor  | Temperature change                                                | Skin, hypothalamus                                          | Warm and cold receptors in dermis             |
+| Receptor Type   | Stimulus                                                            | Location                                                    | Example                                       |
+| --------------- | ------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------- |
+| Mechanoreceptor | Mechanical deformation (pressure, stretch, vibration)               | Skin, inner ear, muscles                                    | Pacinian corpuscle, hair cells in cochlea     |
+| Thermoreceptor  | Temperature change                                                  | Skin, hypothalamus                                          | Warm and cold receptors in dermis             |
 | Chemoreceptor   | Chemical concentration ($\mathrm{O_2}$, $\mathrm{CO_2}$Glucose, pH) | Carotid body, aortic body, taste buds, olfactory epithelium | Carotid body (detects blood $p\mathrm{CO_2}$) |
-| Photoreceptor   | Light intensity (rods) and wavelength (cones)                     | Retina                                                      | Rods and cones                                |
-| Baroreceptor    | Blood pressure change                                             | Aortic arch, carotid sinus                                  | Aortic baroreceptors                          |
+| Photoreceptor   | Light intensity (rods) and wavelength (cones)                       | Retina                                                      | Rods and cones                                |
+| Baroreceptor    | Blood pressure change                                               | Aortic arch, carotid sinus                                  | Aortic baroreceptors                          |
 
 ### 23.2 The Pacinian Corpuscle: Mechanism
 
@@ -1571,7 +1573,7 @@ mechanism of action:
 | Receptor Type                  | Hormone Type                                                           | Mechanism                                                                                                                                                                           | Speed                     |
 | ------------------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | Intracellular (nuclear)        | Steroid hormones (testosterone, oestrogen, cortisol), thyroid hormones | Hormone diffuses through the membrane; binds to intracellular receptor; hormone-receptor complex enters nucleus; acts as a transcription factor, directly affecting gene expression | Slow (hours to days)      |
-| Cell surface (GPCR)            | Peptide hormones (insulin, glucagon, ADH), adrenaline                  | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG}$, $\mathrm{Ca^{2+}}$); amplifies signal                                     | Fast (seconds to minutes) |
+| Cell surface (GPCR)            | Peptide hormones (insulin, glucagon, ADH), adrenaline                  | Hormone binds to G-protein coupled receptor; activates second messenger cascade (cAMP, $\mathrm{IP_3/DAG}$, $\mathrm{Ca^{2+}}$); amplifies signal                                   | Fast (seconds to minutes) |
 | Cell surface (tyrosine kinase) | Insulin, growth factors                                                | Hormone binds to receptor tyrosine kinase; autophosphorylation; activates intracellular signalling cascade (MAPK, PI3K)                                                             | Minutes to hours          |
 
 ### 27.3 Second Messengers
@@ -2319,3 +2321,8 @@ so no light is detected.
 3. Forgetting to include control variables in experimental design, leading to invalid conclusions.
 
 4. Confusing correlation with causation when evaluating experimental data and drawing conclusions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

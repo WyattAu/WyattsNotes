@@ -1,7 +1,9 @@
 ---
 id: query-optimization
 title: Query Optimization
-description: 'Query Optimization notes covering key definitions, core concepts, worked examples, and practice questions for rigorous exam preparation and mastery.'
+description:
+  'Query Optimization notes covering key definitions, core concepts, worked examples, and practice
+  questions for rigorous exam preparation and mastery.'
 slug: query-optimization
 ---
 
@@ -986,3 +988,8 @@ theories, and practical applications.
 
 Mastery of these concepts requires both theoretical understanding and the ability to apply knowledge
 to unfamiliar contexts, particularly in calculation and practical questions.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -726,7 +726,8 @@ Group B: $n = 25$$\bar{x} = 68$$s = 10$
 
 $, $
 \bar{x}_{\mathrm{overall}} = \frac{30 \times 72 + 25 \times 68}{55} = \frac{2160 + 1700}{55} = \frac{3860}{55} = 70.2
-$, $
+$,
+$
 
 **(b)** Comment on the spread of the two groups.
 
@@ -909,3 +910,8 @@ and building a personal test matrix. :::
 | ------------ | ---- | -------------------------------------------------------------------------------------- |
 | [Statistics] | IB   | [View](https://ib.wyattau.com/docs/ib/maths/4-statistics-and-probability/2_statistics) |
 | [Statistics] | DSE  | [View](https://dse.wyattau.com/docs/dse/maths/compulsory/12_dispersion)                |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Bit Manipulation
-description: 'C++ Programming Bit Manipulation notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'C++ Programming Bit Manipulation notes covering key definitions, core concepts, worked examples,
+  and practice questions for structured revision.'
 date: 2025-12-12T22:12:51.318Z
 tags:
   - cpp
@@ -647,3 +649,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Resource Management and Move Semantics
-description: 'C++ Programming Resource Management and Move Semantics notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Resource Management and Move Semantics notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-03-31T00:00:00.000Z
 tags:
   - cpp
@@ -145,3 +147,14 @@ handling completes the picture with robust failure modes.
 3. Is the argument only read? → Pass by `const&`.
 4. Is the argument stored? → Pass by value and move internally (`T param` then
    `member = std::move(param)`).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

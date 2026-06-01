@@ -1,6 +1,8 @@
 ---
 title: Git Directory Structure
-description: 'Git Directory Structure notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive exam preparation and mastery.'
+description:
+  'Git Directory Structure notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive exam preparation and mastery.'
 date: 2025-06-03T12:00:00.000Z
 tags:
   - git
@@ -266,3 +268,14 @@ Always **back up** the `.git` directory before attempting recovery. Some operati
    incorrectly.
 
 4. Failing to link structure to function when describing biological molecules, cells, or organs.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

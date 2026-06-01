@@ -1,6 +1,8 @@
 ---
 title: Magnetism
-description: 'Qualifications Physics Magnetism notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'Qualifications Physics Magnetism notes covering key definitions, core concepts, worked examples,
+  and practice questions for exam readiness.'
 date: 2026-05-05
 tags:
   - ap
@@ -123,7 +125,8 @@ $$
 DB = \frac{\mu_0}{4\pi}\frac{I\, dz}{r^2}\sin\theta
 $$
 
-Where $\sin\theta = R/r$ and $r = \sqrt{z^2 + R^2}$. Let $z = R\tan\phi$, $dz = R\sec^2\phi\, d\phi$:
+Where $\sin\theta = R/r$ and $r = \sqrt{z^2 + R^2}$. Let $z = R\tan\phi$,
+$dz = R\sec^2\phi\, d\phi$:
 
 $$
 DB = \frac{\mu_0 I}{4\pi} \frac{R\sec^2\phi\, d\phi}{R^2\sec^2\phi} \cdot \sin\phi = \frac{\mu_0 I}{4\pi R}\sin\phi\, d\phi
@@ -702,3 +705,8 @@ methods, and applications relevant to the specification.
 
 A strong understanding of these principles, combined with regular practice of quantitative problems
 and past paper questions, is essential for success in examinations.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

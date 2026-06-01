@@ -1,6 +1,8 @@
 ---
 title: Sequences and Series
-description: 'DSE Maths Sequences and Series notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'DSE Maths Sequences and Series notes covering key definitions, core concepts, worked examples,
+  and practice questions for clear revision.'
 date: 2025-08-16T17:59:54.768Z
 tags:
   - maths
@@ -938,7 +940,6 @@ including key theorems, methods, and problem-solving approaches.
 
 **Key concepts include:**
 
-
 - arithmetic and geometric sequences
 - series and sigma notation
 - recurrence relations
@@ -949,3 +950,8 @@ Regular practice with a variety of question types is essential to build fluency 
 applying these mathematical techniques.
 
 > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/sequences-and-series.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

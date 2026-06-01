@@ -1,6 +1,8 @@
 ---
 title: Cells
-description: 'A-Level Biology Cells notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision and examination preparation.'
+description:
+  'A-Level Biology Cells notes covering key definitions, core concepts, worked examples, and
+  practice questions for in-depth revision and examination preparation.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -343,8 +345,8 @@ the time mitosis Starts, each chromosome already consists of two identical siste
 
 The cell cycle consists of:
 
-- **Interphase** ($G_1$, $S$, $G_2$): cell growth and DNA replication. This accounts for approximately
-  90% of the cycle.
+- **Interphase** ($G_1$, $S$, $G_2$): cell growth and DNA replication. This accounts for
+  approximately 90% of the cycle.
 - **Mitosis** ($M$ phase): nuclear division.
 - **Cytokinesis**: cytoplasmic division.
 
@@ -1973,3 +1975,8 @@ differential centrifugation.
 
 4. Confusing DNA replication (S phase) with transcription or translation — be clear about which
    process is being described.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Email and Application Protocols
-description: 'Email and Application Protocols notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'Email and Application Protocols notes covering key definitions, core concepts, worked examples,
+  and practice questions for methodical revision.'
 date: 2026-04-09T00:00:00.000Z
 tags:
   - Networking
@@ -1258,3 +1260,14 @@ _mta-sts.example.com. IN TXT "v=STSv1; id=2026040901"
 3. Not practising with past papers or exercises under timed conditions.
 
 4. Ignoring feedback from marked work and failing to address recurring weaknesses.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

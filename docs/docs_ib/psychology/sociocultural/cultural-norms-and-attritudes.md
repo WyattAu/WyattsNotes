@@ -1,6 +1,8 @@
 ---
 title: Cultural Norms and Attitudes
-description: 'IB Psychology Cultural Norms and Attitudes notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'IB Psychology Cultural Norms and Attitudes notes covering key definitions, core concepts, worked
+  examples, and practice questions for in-depth revision.'
 slug: cultural-norms-and-attitudes
 ---
 
@@ -253,3 +255,14 @@ For an overview of sociocultural topics, see
 
 4. Misunderstanding the difference between a stack (LIFO) and a queue (FIFO) in data structure
    applications.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

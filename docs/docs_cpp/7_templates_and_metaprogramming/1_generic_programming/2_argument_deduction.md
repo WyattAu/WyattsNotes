@@ -1,6 +1,8 @@
 ---
 title: Argument Deduction (Class and Function)
-description: 'C++ Programming Argument Deduction (Class and Function) notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Argument Deduction (Class and Function) notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -867,3 +869,8 @@ function), including key theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

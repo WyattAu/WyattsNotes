@@ -1,7 +1,9 @@
 ---
 id: cryptography
 title: Cryptography
-description: 'Cryptography notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive exam preparation and revision.'
+description:
+  'Cryptography notes covering key definitions, core concepts, worked examples, and practice
+  questions for comprehensive exam preparation and revision.'
 slug: cryptography
 sidebar_position: 3
 ---
@@ -816,3 +818,8 @@ theorems, methods, and problem-solving approaches.
 
 Regular practice with a variety of question types is essential to build fluency and confidence in
 applying these mathematical techniques.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

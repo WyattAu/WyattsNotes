@@ -5,15 +5,16 @@ tags:
   - ib
 slug: ib-maths/practice-functions-and-algebra
 description:
-  'Interactive IB Maths practice with auto-graded questions. Covers functions, algebra,
-  sequences, and binomial theorem.'
+  'Interactive IB Maths practice with auto-graded questions. Covers functions, algebra, sequences,
+  and binomial theorem.'
 ---
 
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ## IB Maths — Functions and Algebra Practice
 
-8 auto-graded practice problems at medium to hard difficulty, aligned to the IB Mathematics syllabus (SL/HL). Select an answer, submit, and review the explanation.
+8 auto-graded practice problems at medium to hard difficulty, aligned to the IB Mathematics syllabus
+(SL/HL). Select an answer, submit, and review the explanation.
 
 ---
 
@@ -21,7 +22,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="Find the domain of f(x) = √(x² − 4) / (x² − 9)."
-  options={['x ≤ −2 or x ≥ 2, x ≠ ±3', 'x > 2 or x < −2', 'All real numbers except x = ±3', '−2 ≤ x ≤ 2, x ≠ ±3']}
+  options={[
+    'x ≤ −2 or x ≥ 2, x ≠ ±3',
+    'x > 2 or x < −2',
+    'All real numbers except x = ±3',
+    '−2 ≤ x ≤ 2, x ≠ ±3',
+  ]}
   correctAnswer={0}
   explanation="The numerator √(x² − 4) requires x² − 4 ≥ 0, so x ≤ −2 or x ≥ 2. The denominator x² − 9 ≠ 0, so x ≠ ±3. Combining: x ≤ −2 or x ≥ 2, x ≠ ±3."
   difficulty="medium"
@@ -91,6 +97,6 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
   question="In the expansion of (1 + 2x)⁸, find the term independent of x."
   options={['256', '128', '64', '1']}
   correctAnswer={0}
-  explanation="The term independent of x has x⁰. From C(8,k)(2x)^k = C(8,k)(2^k)(x^k), we need k = 0 for x⁰. This gives C(8,0)(1) = 1. But that seems too simple. Actually the constant term (independent of x) is when k = 0: C(8,0)(1)(2x)⁰ = 1. However, if the question means the coefficient of x⁰ in the full expansion, it is simply 1 from the first term. If we consider (1 + 2x)⁸ expanded, the constant is 1, but the coefficients of x terms are large. The answer is 1."
+  explanation="The term independent of x has x⁰. From C(8,k)(2x)^k = C(8,k)(2^k)(x^k), we need k = 0 for x⁰. This gives C(8,0)(1) = 1. But that seems too simple. Actually the constant term (independent of x) is when k = 0: C(8,0)(1)(2x)⁰ = 1. However, if the question means the coefficient of x⁰ in the full expansion, it is directly 1 from the first term. If we consider (1 + 2x)⁸ expanded, the constant is 1, but the coefficients of x terms are large. The answer is 1."
   difficulty="hard"
 />

@@ -4,7 +4,9 @@ tags:
   - IB
   - English
 slug: chronicle-of-a-death-foretold-analysis
-description: 'IB English Chronicle of a Death Foretold — Close Reading notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'IB English Chronicle of a Death Foretold — Close Reading notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 ---
 
 # Chronicle of a Death Foretold: Close Reading and Analysis
@@ -990,3 +992,14 @@ Following pairings are especially productive:
    not stand alone.
 
 4. Ignoring context — always consider the social, historical, and literary context of the text.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

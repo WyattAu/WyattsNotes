@@ -855,3 +855,8 @@ self-marking and building a personal test matrix. :::
 | [Wave Properties] | A-Level | [View](https://alevel-maths-physics.wyattau.com/docs/alevel/physics/waves/01-wave-properties) |
 | [Wave Properties] | IB      | [View](https://ib.wyattau.com/docs/ib/physics/3-wave-behaviour/2_wave-properties)             |
 | [Wave Properties] | DSE     | [View](https://dse.wyattau.com/docs/dse/physics/2-waves/1_waves-and-sound)                    |
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

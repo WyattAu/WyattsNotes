@@ -1,6 +1,8 @@
 ---
 title: Adolescent Development
-description: 'IB Psychology Adolescent Development notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
+description:
+  'IB Psychology Adolescent Development notes covering key definitions, core concepts, worked
+  examples, and practice questions for complete revision.'
 slug: adolescent-development
 ---
 
@@ -272,3 +274,14 @@ For an overview of developmental topics, see
 3. Confusing weather and climate, or short-term events with long-term trends.
 
 4. Failing to distinguish between primary and secondary data sources in geographical research.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

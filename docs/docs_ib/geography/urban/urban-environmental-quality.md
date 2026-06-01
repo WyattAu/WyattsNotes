@@ -1,6 +1,8 @@
 ---
 title: Urban Environmental Quality
-description: 'IB Geography Urban Environmental Quality notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'IB Geography Urban Environmental Quality notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 slug: urban-environmental-quality
 ---
 
@@ -252,3 +254,14 @@ At [../urban-environments](../urban-environments).
    sides or dividing by variables).
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

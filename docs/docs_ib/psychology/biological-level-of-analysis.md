@@ -57,7 +57,7 @@ to any IB Psychology question benefits from acknowledging this multilevel comple
 
 ## Exam Focus
 
-Paper 1 questions on the BLOA typically require:
+Paper 1 questions on the BLOA in most cases require:
 
 - Outlining one or more principles of the BLOA and discussing their implications.
 - Describing and evaluating a study relevant to the BLOA (e.g., Maguire et al., Caspi et al.).

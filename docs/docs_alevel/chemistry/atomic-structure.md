@@ -1,6 +1,8 @@
 ---
 title: Atomic Structure & Periodicity
-description: 'A-Level Chemistry Atomic Structure & Periodicity notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'A-Level Chemistry Atomic Structure & Periodicity notes covering key definitions, core concepts,
+  worked examples, and practice questions for analytical revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -102,12 +104,12 @@ with benzene ($\mathrm{C}_6\mathrm{H}_6$, $M_r = 78$). The M+1 peak intensity
 
 Each electron in an atom is described by four quantum numbers:
 
-| Quantum Number | Symbol   | Values                          | Describes                             |
-| -------------- | -------- | ------------------------------- | ------------------------------------- |
-| Principal      | $n$      | $1, 2, 3, \ldots$               | Energy level / shell                  |
+| Quantum Number | Symbol   | Values                          | Describes                                 |
+| -------------- | -------- | ------------------------------- | ----------------------------------------- |
+| Principal      | $n$      | $1, 2, 3, \ldots$               | Energy level / shell                      |
 | Azimuthal      | $\ell$   | $0, 1, \ldots, n-1$             | Subshell type ($0 = s$, $1 = p$, $2 = d$) |
-| Magnetic       | $m_\ell$ | $-\ell, -\ell+1, \ldots, +\ell$ | Orbital orientation                   |
-| Spin           | $m_s$    | $+\tfrac{1}{2}, -\tfrac{1}{2}$  | Electron spin direction               |
+| Magnetic       | $m_\ell$ | $-\ell, -\ell+1, \ldots, +\ell$ | Orbital orientation                       |
+| Spin           | $m_s$    | $+\tfrac{1}{2}, -\tfrac{1}{2}$  | Electron spin direction                   |
 
 ### Subshell Capacities
 
@@ -951,3 +953,8 @@ self-marking and building a personal test matrix. :::
 
 4. Forgetting to balance equations before performing calculations — always check that atoms and
    charges balance on both sides.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

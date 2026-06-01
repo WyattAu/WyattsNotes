@@ -1,7 +1,9 @@
 ---
 id: arrays-and-strings
 title: Arrays and Strings
-description: 'Algorithms Arrays and Strings notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'Algorithms Arrays and Strings notes covering key definitions, core concepts, worked examples, and
+  practice questions for focused preparation.'
 slug: arrays-and-strings
 ---
 
@@ -893,3 +895,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

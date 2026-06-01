@@ -1,6 +1,8 @@
 ---
 title: Supervised Learning
-description: 'Probabilisticml Supervised Learning notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'Probabilisticml Supervised Learning notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused revision.'
 date: 2026-01-07T08:38:26.907Z
 tags:
   - ML
@@ -87,3 +89,14 @@ process of the model, it maybe benefitial to use a asymmetric loss function $\ma
 
 4. Not making connections between different topics within the subject to build a coherent
    understanding.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

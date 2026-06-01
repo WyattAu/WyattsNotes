@@ -1,6 +1,8 @@
 ---
 title: Evolution
-description: 'DSE Biology Evolution notes covering key definitions, core concepts, worked examples, and practice questions for complete review and exam preparation.'
+description:
+  'DSE Biology Evolution notes covering key definitions, core concepts, worked examples, and
+  practice questions for complete review and exam preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1243,7 +1245,6 @@ experimental evidence, and real-world applications.
 
 **Key concepts include:**
 
-
 - cell structure (prokaryotic vs eukaryotic)
 - cell ultrastructure (organelles)
 - microscopy and resolution
@@ -1254,3 +1255,8 @@ Success requires the ability to recall specific factual content, apply knowledge
 and evaluate experimental evidence critically.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/evolution.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

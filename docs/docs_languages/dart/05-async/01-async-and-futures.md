@@ -1,6 +1,8 @@
 ---
 title: Async and Futures
-description: 'Dart Async and Futures notes covering key definitions, core concepts, worked examples, and practice questions for targeted exam preparation and revision.'
+description:
+  'Dart Async and Futures notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted exam preparation and revision.'
 date: 2025-07-20T11:00:00.000Z
 tags:
   - dart
@@ -457,3 +459,8 @@ implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

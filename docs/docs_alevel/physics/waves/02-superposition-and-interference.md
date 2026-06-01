@@ -1,6 +1,8 @@
 ---
 title: Superposition and Interference
-description: 'A-Level Physics Superposition and Interference notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'A-Level Physics Superposition and Interference notes covering key definitions, core concepts,
+  worked examples, and practice questions for analytical revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -725,3 +727,8 @@ equations, experimental methods, and applications relevant to the specification.
 
 A strong understanding of these principles, combined with regular practice of quantitative problems
 and past paper questions, is essential for success in examinations.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

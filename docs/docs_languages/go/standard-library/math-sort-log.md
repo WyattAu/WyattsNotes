@@ -6,12 +6,15 @@ tags:
   - Go
 categories:
   - Go
-description: Go's math package for numerical operations, sort package for sorting slices and custom comparators, and log/slog for structured logging in Go 1.21+.
+description:
+  Go's math package for numerical operations, sort package for sorting slices and custom
+  comparators, and log/slog for structured logging in Go 1.21+.
 ---
 
 ## The math Package
 
-The `math` package provides basic constants and mathematical functions for floating-point arithmetic.
+The `math` package provides basic constants and mathematical functions for floating-point
+arithmetic.
 
 ### Constants
 
@@ -270,12 +273,12 @@ slog.Error("connection failed", "err", err)
 
 ### Log Levels
 
-| Level    | Method        | Typical Use              |
-| -------- | ------------- | ------------------------ |
-| DEBUG    | `slog.Debug`  | Verbose development info |
-| INFO     | `slog.Info`   | Normal operations        |
-| WARN     | `slog.Warn`   | Potential issues         |
-| ERROR    | `slog.Error`  | Failures needing action  |
+| Level | Method       | Typical Use              |
+| ----- | ------------ | ------------------------ |
+| DEBUG | `slog.Debug` | Verbose development info |
+| INFO  | `slog.Info`  | Normal operations        |
+| WARN  | `slog.Warn`  | Potential issues         |
+| ERROR | `slog.Error` | Failures needing action  |
 
 ### Handlers
 
@@ -368,16 +371,16 @@ handler(ctx)
 
 ## Choosing Between log and log/slog
 
-| Aspect       | `log`              | `log/slog`              |
-| ------------ | ------------------ | ----------------------- |
-| Structured   | No (text only)     | Yes (key-value pairs)   |
-| Levels       | Manual flags       | Built-in Debug/Info/Warn/Error |
-| Output       | Stderr by default  | Configurable handler    |
-| Go version   | All               | Go 1.21+                |
-| Machine-parse| No                 | JSON handler            |
+| Aspect        | `log`             | `log/slog`                     |
+| ------------- | ----------------- | ------------------------------ |
+| Structured    | No (text only)    | Yes (key-value pairs)          |
+| Levels        | Manual flags      | Built-in Debug/Info/Warn/Error |
+| Output        | Stderr by default | Configurable handler           |
+| Go version    | All               | Go 1.21+                       |
+| Machine-parse | No                | JSON handler                   |
 
-Use `log/slog` for new code. Use `log` only for simple scripts or maintaining legacy code that
-Does not benefit from structured output.
+Use `log/slog` for new code. Use `log` only for simple scripts or maintaining legacy code that Does
+not benefit from structured output.
 
 ### Migration from log to slog
 
@@ -401,8 +404,8 @@ slog.Info("user logged in", "username", username, "ip", ip)
    is true, not the index of a found element. If the element does not exist, the returned index is
    the insertion point. Always verify with an equality check.
 
-4. **Logging sensitive data.** Never log passwords, tokens, or PII. Use `slog.StringValue("REDACTED")`
-   or implement `LogValue()` on types containing sensitive fields.
+4. **Logging sensitive data.** Never log passwords, tokens, or PII. Use
+   `slog.StringValue("REDACTED")` or implement `LogValue()` on types containing sensitive fields.
 
 5. **Setting slog level globally without configuration.** Hardcoding `slog.LevelDebug` in production
    generates excessive log volume. Use environment variables or configuration to set the log level.
@@ -429,3 +432,8 @@ theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

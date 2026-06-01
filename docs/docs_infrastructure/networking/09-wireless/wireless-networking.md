@@ -1,7 +1,9 @@
 ---
 id: wireless-networking
 title: Wireless Networking
-description: 'Wireless Networking notes covering key definitions, core concepts, worked examples, and practice questions for targeted revision and examination preparation.'
+description:
+  'Wireless Networking notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted revision and examination preparation.'
 slug: wireless-networking
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -935,3 +937,8 @@ key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

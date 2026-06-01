@@ -1,7 +1,9 @@
 ---
 id: cloud-security
 title: Cloud Security
-description: 'Cloud Security notes covering key definitions, core concepts, worked examples, and practice questions for targeted review and exam preparation.'
+description:
+  'Cloud Security notes covering key definitions, core concepts, worked examples, and practice
+  questions for targeted review and exam preparation.'
 slug: cloud-security
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z
@@ -911,3 +913,8 @@ principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

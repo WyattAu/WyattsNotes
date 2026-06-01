@@ -1,6 +1,8 @@
 ---
 title: 'A-Level Economics -- Diagnostic Guide'
-description: 'A-Level Economics -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
+description:
+  'A-Level Economics -- Diagnostic notes covering key definitions, core concepts, worked examples,
+  and practice questions for complete revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---
@@ -442,3 +444,19 @@ When time is limited, focus on the highest-yield topics:
 |    8     | Development economics (Solow, poverty traps) | Synoptic essay topics                                    |
 |    9     | Labour markets (monopsony, trade unions)     | Applied micro, less frequently tested                    |
 |    10    | Distribution of income (Gini, tax systems)   | Often combined with other topics                         |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

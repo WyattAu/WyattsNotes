@@ -1,6 +1,8 @@
 ---
 title: Polynomials
-description: 'DSE Maths Polynomials notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive review and exam preparation.'
+description:
+  'DSE Maths Polynomials notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive review and exam preparation.'
 date: 2025-06-03T13:29:40.310Z
 tags:
   - Maths
@@ -968,3 +970,9 @@ $$2(1)^3 + p(1)^2 - 5(1) + 3 = 4 \implies 2 + p - 5 + 3 = 4 \implies p = 4$$
 
 4. Dropping negative signs during algebraic manipulation — substitute back to verify your answer.
    > > > > > > > Stashed changes:docs/docs_dse/Maths/compulsory/polynomials.md
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

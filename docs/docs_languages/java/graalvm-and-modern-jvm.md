@@ -1,6 +1,8 @@
 ---
 title: GraalVM and Modern JVM
-description: 'Java GraalVM and Modern JVM notes covering key definitions, core concepts, worked examples, and practice questions for detailed learning and effective revision.'
+description:
+  'Java GraalVM and Modern JVM notes covering key definitions, core concepts, worked examples, and
+  practice questions for detailed learning and effective revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Java
@@ -1453,3 +1455,8 @@ practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Template Instantiation, Monomorphization, and Code Bloat
-description: 'C++ Programming Template Instantiation, Monomorphization, notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'C++ Programming Template Instantiation, Monomorphization, notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
@@ -914,3 +916,8 @@ including underlying theory, practical implementation, and key applications.
 
 Understanding these concepts thoroughly is essential for both examinations and practical
 programming, and requires both theoretical knowledge and hands-on practice.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

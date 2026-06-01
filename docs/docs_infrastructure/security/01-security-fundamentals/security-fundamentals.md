@@ -1,7 +1,9 @@
 ---
 id: security-fundamentals
 title: Security Fundamentals
-description: 'Security Fundamentals notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive learning and effective revision.'
+description:
+  'Security Fundamentals notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive learning and effective revision.'
 slug: security-fundamentals
 sidebar_position: 2
 ---
@@ -841,3 +843,8 @@ key principles and practical applications.
 
 A thorough understanding of these concepts, combined with regular practice and review, is essential
 for mastery of this topic.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

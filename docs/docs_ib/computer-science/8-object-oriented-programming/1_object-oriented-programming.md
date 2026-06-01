@@ -603,3 +603,14 @@ void selectionSort(int[] arr) {
 | ----------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | [Object-Oriented Programming] | A-Level | [View](https://alevel-sciences.wyattau.com/docs/alevel/computer-science/programming/02-object-oriented-programming) |
 | [Object-Oriented Programming] | IB      | [View](https://ib.wyattau.com/docs/ib/computer-science/8-object-oriented-programming/1_object-oriented-programming) |
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

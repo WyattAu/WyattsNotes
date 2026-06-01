@@ -1,6 +1,8 @@
 ---
 title: Market Failure
-description: 'IB Economics Market Failure notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'IB Economics Market Failure notes covering key definitions, core concepts, worked examples, and
+  practice questions for thorough preparation.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]
@@ -651,10 +653,10 @@ the externality.
 
 ### Example 2: Public Good Provision
 
-A lighthouse costs $1,000,000$ to build and provides $50$ of benefit to each of $30,000$ ships
-per year ($1,500,000$ total benefit). No private firm will build it because ships cannot be
-excluded from using the light (non-excludable). Government provision is necessary because total
-benefit ($1,500,000$) exceeds cost ($1,000,000$).
+A lighthouse costs $1,000,000$ to build and provides $50$ of benefit to each of $30,000$ ships per
+year ($1,500,000$ total benefit). No private firm will build it because ships cannot be excluded
+from using the light (non-excludable). Government provision is necessary because total benefit
+($1,500,000$) exceeds cost ($1,000,000$).
 
 ## Summary
 
@@ -670,3 +672,8 @@ benefit ($1,500,000$) exceeds cost ($1,000,000$).
   consequences
 - Key diagrams: negative externality (MSC > MPC), positive externality (MSB > MPB), tax/subsidy
   welfare analysis
+
+## Common Pitfalls
+
+- Confusing terminology or concepts that appear similar but have distinct meanings.
+- Overlooking key assumptions or boundary conditions that limit applicability.

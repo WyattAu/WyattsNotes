@@ -1,6 +1,8 @@
 ---
 title: The International Economy
-description: 'A-Level Economics The International Economy notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'A-Level Economics The International Economy notes covering key definitions, core concepts, worked
+  examples, and practice questions for rigorous revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics
@@ -1167,3 +1169,9 @@ deterioration.
 
 4. Stating that 'enzymes are denatured by heat' without specifying that high temperatures cause the
    change in tertiary structure.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.

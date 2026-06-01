@@ -1,6 +1,8 @@
 ---
 title: Depression
-description: 'IB Psychology Depression notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
+description:
+  'IB Psychology Depression notes covering key definitions, core concepts, worked examples, and
+  practice questions for efficient exam preparation and mastery.'
 slug: depression
 ---
 
@@ -261,3 +263,14 @@ For an overview of abnormal psychology topics, see [Abnormal Psychology](../abno
 
 4. Describing a study without evaluating its methodology (e.g., sample, controls, ecological
    validity).
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

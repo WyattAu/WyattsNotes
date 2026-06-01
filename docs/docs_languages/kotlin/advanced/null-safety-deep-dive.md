@@ -1,6 +1,8 @@
 ---
 title: Null Safety Deep Dive
-description: 'Kotlin Null Safety Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and revision.'
+description:
+  'Kotlin Null Safety Deep Dive notes covering key definitions, core concepts, worked examples, and
+  practice questions for complete exam preparation and revision.'
 slug: kotlin/null-safety-deep-dive
 date: 2026-05-31
 tags:
@@ -59,8 +61,8 @@ val displayName = if (name != null) name else "Anonymous"
 
 ### let Scope
 
-`let` executes a block only when the receiver is non-null. Inside the block, `it` is the
-non-null unwrapped value:
+`let` executes a block only when the receiver is non-null. Inside the block, `it` is the non-null
+unwrapped value:
 
 ```kotlin
 name?.let {
@@ -90,8 +92,8 @@ fun process(user: User?) {
 
 ### !! Operator
 
-The `!!` operator asserts that a value is non-null. If it is null, a `KotlinNullPointerException`
-is thrown at runtime:
+The `!!` operator asserts that a value is non-null. If it is null, a `KotlinNullPointerException` is
+thrown at runtime:
 
 ```kotlin
 val name: String? = getName()
@@ -129,8 +131,8 @@ val len = name!!.length  // only when you truly guarantee non-null
 ### Platform Types
 
 When calling Java code, Kotlin does not know whether a value can be null. Such types are called
-**platform types** and represented as `String!` (in the IDE). The compiler allows both nullable
-and non-null usage:
+**platform types** and represented as `String!` (in the IDE). The compiler allows both nullable and
+non-null usage:
 
 ```java
 // Java
@@ -159,6 +161,7 @@ public String getNickname() { return nickname; }
 ```
 
 Supported annotation packages:
+
 - `org.jetbrains.annotations` (JetBrains)
 - `javax.annotation` (JSR-305)
 - `androidx.annotation` (Android)
@@ -209,9 +212,10 @@ fun String?.requireNonEmpty(): String {
 ### Limitations
 
 Contracts have limitations:
+
 - They only work with `inline` functions.
-- They cannot express complex relationships (e.g., "if the function returns false, then the parameter
-  is null").
+- They cannot express complex relationships (e.g., "if the function returns false, then the
+  parameter is null").
 - `contract` blocks are experimental in some compiler versions.
 
 ## Collections and Null
@@ -300,8 +304,8 @@ prove it covers the null case.
 1. **Confusing `List<String?>` with `List<String>?`.** `List<String?>` is a non-null list whose
    elements may be null. `List<String>?` is a nullable list whose elements are non-null.
 
-2. **Using !! on platform types from Java.** Java return values may be null at runtime regardless
-   of how you use them in Kotlin. Always prefer safe calls or explicit null checks on Java data.
+2. **Using !! on platform types from Java.** Java return values may be null at runtime regardless of
+   how you use them in Kotlin. Always prefer safe calls or explicit null checks on Java data.
 
 3. **Forgetting to handle null in when expressions.** When a `when` block is used as an expression
    and the subject is nullable, omitting the `null` branch is a compile error. Add it explicitly.
@@ -322,8 +326,8 @@ prove it covers the null case.
 6. **Overusing !! in tests.** `!!` is common in test code but hides bugs. Prefer `requireNotNull`
    with a descriptive message or use test assertion libraries that give clear failure messages.
 
-7. **Forgetting that `lateinit` does not make a type nullable.** `lateinit var` bypasses null
-   safety for non-null initialization. Accessing it before assignment throws
+7. **Forgetting that `lateinit` does not make a type nullable.** `lateinit var` bypasses null safety
+   for non-null initialization. Accessing it before assignment throws
    `UninitializedPropertyAccessException`, not NPE.
 
 ## Summary
@@ -334,5 +338,11 @@ prove it covers the null case.
 - `!!` forces non-null with an NPE on null — prefer `requireNotNull` for better errors.
 - Java interop uses platform types — annotate Java APIs with `@Nullable`/`@NotNull`.
 - Smart casts after null checks are powered by compiler contracts on `inline` functions.
-- `filterNotNull` and `mapNotNull` remove null elements; understand `List<String?>` vs `List<String>?`.
+- `filterNotNull` and `mapNotNull` remove null elements; understand `List<String?>` vs
+  `List<String>?`.
 - Sealed classes guarantee exhaustive `when`; handle `null` branches explicitly when nullable.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

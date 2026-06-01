@@ -1,6 +1,8 @@
 ---
 title: Water Scarcity and Management
-description: 'IB Geography Water Scarcity and Management notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'IB Geography Water Scarcity and Management notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured preparation.'
 slug: water-scarcity-and-management
 ---
 
@@ -235,3 +237,14 @@ For related topics, see [./drainage-basins-and-hydrology](./drainage-basins-and-
 
 4. Rounding too early in multi-step calculations — carry full precision through and round only the
    final answer.
+
+## Summary
+
+The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
+the definitions, applying the formulas or frameworks, and evaluating strengths and limitations of
+each approach.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Human Reproduction and Homeostasis
-description: 'DSE Biology Human Reproduction and Homeostasis notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'DSE Biology Human Reproduction and Homeostasis notes covering key definitions, core concepts,
+  worked examples, and practice questions for clear revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE
@@ -1742,7 +1744,6 @@ key concepts, experimental evidence, and real-world applications.
 
 **Key concepts include:**
 
-
 - Mendelian inheritance
 - gene expression and regulation
 - mutations and genetic variation
@@ -1753,3 +1754,8 @@ Success requires the ability to recall specific factual content, apply knowledge
 and evaluate experimental evidence critically.
 
 > > > > > > > Stashed changes:docs/docs_dse/Biology/human-reproduction-and-homeostasis.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

@@ -1,6 +1,8 @@
 ---
 title: Collections Framework
-description: 'Java Collections Framework notes covering key definitions, core concepts, worked examples, and practice questions for rigorous exam preparation and revision.'
+description:
+  'Java Collections Framework notes covering key definitions, core concepts, worked examples, and
+  practice questions for rigorous exam preparation and revision.'
 date: 2025-06-05T13:00:00.000Z
 tags: ['java']
 categories: ['java']
@@ -1199,3 +1201,8 @@ System.out.println(nullSafeTree);  // [null, Alice]
 
 4. Forgetting edge cases in algorithm design (e.g., empty input, single element, already sorted
    data).
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

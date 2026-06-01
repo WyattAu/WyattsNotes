@@ -1,6 +1,8 @@
 ---
 title: JIT Compilation and Deoptimization
-description: 'Java JIT Compilation and Deoptimization notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'Java JIT Compilation and Deoptimization notes covering key definitions, core concepts, worked
+  examples, and practice questions for efficient revision.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']
@@ -639,3 +641,8 @@ concepts, experimental evidence, and real-world applications.
 
 Success requires the ability to recall specific factual content, apply knowledge to novel scenarios,
 and evaluate experimental evidence critically.
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.

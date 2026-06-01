@@ -1,7 +1,9 @@
 ---
 id: dse-economics-demand-supply-markets
 title: Economics - Demand, Supply, and Markets
-description: 'DSE Economics - Demand, Supply, and Markets notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'DSE Economics - Demand, Supply, and Markets notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed preparation.'
 slug: economics-demand-supply-markets
 ---
 
@@ -1258,7 +1260,6 @@ If you get this wrong, revise: [Price Controls and Welfare](#price-controls-and-
 
 ## Common Pitfalls
 
-
 1. Failing to evaluate both strengths and weaknesses of economic models, not just listing them.
 
    > > > > > > > Stashed changes:docs/docs_dse/Economics/demand-supply-markets.md
@@ -1270,3 +1271,8 @@ along) or a decrease (shift) of the demand curve.
 
 4. Forgetting to distinguish between short-run and long-run effects in macroeconomic analysis.
    > > > > > > > Stashed changes:docs/docs_dse/Economics/demand-supply-markets.md
+
+## Worked Examples
+
+Worked examples demonstrating the application of key concepts are covered in the detailed sub-pages
+linked above.
