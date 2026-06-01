@@ -30,7 +30,12 @@ VAGUE_QUALIFIERS = [
 
 
 def parse_frontmatter(filepath):
-    """Parse frontmatter. Returns dict or None."""
+    """Parse frontmatter. Returns dict or None.
+
+    Handles both inline ('description: ...') and collapsed YAML format:
+        description:
+          'multi-line value here'
+    """
     with open(filepath, "r", encoding="utf-8", errors="replace") as f:
         content = f.read()
     if not content.startswith("---"):
@@ -40,10 +45,27 @@ def parse_frontmatter(filepath):
         return None
     fm_text = content[3:end]
     fm = {}
-    for line in fm_text.strip().split("\n"):
+    lines = fm_text.strip().split("\n")
+    i = 0
+    while i < len(lines):
+        line = lines[i]
         if ":" in line:
             key, _, val = line.partition(":")
-            fm[key.strip()] = val.strip().strip("\"'")
+            key = key.strip()
+            val_stripped = val.strip()
+            if val_stripped:
+                # Inline value on same line as key
+                fm[key] = val_stripped.strip("\"'")
+            else:
+                # Collapsed format: value on next line(s)
+                continuation = []
+                i += 1
+                while i < len(lines) and lines[i].startswith(("  ", "\t")):
+                    continuation.append(lines[i].strip().strip("\"'"))
+                    i += 1
+                fm[key] = "".join(continuation)
+                continue
+        i += 1
     return fm
 
 
