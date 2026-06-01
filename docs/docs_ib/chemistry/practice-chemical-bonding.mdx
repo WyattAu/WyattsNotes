@@ -1,0 +1,104 @@
+---
+title: 'Chemical Bonding Practice (Interactive)'
+tags:
+  - chemistry
+  - ib
+slug: ib-chemistry/practice-chemical-bonding
+description:
+  'Interactive IB Chemistry chemical bonding practice with auto-graded questions. Covers ionic and
+  covalent bonding, VSEPR, hybridisation, and intermolecular forces.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## IB Chemistry — Chemical Bonding Practice
+
+8 auto-graded practice problems at medium to hard difficulty, aligned to the IB Chemistry syllabus
+(SL/HL). Select an answer, submit, and review the explanation.
+
+---
+
+### Bonding Types
+
+<PracticeProblem
+  question="Which compound has the highest lattice energy?"
+  options={['MgO', 'NaCl', 'CaF₂', 'LiF']}
+  correctAnswer={0}
+  explanation="Lattice energy depends on the charges of the ions and the distance between them (U ∝ |q₁q₂|/r). MgO has Mg²⁺ and O²⁻ ions (charges of +2 and -2), giving |q₁q₂| = 4. NaCl has Na⁺ and Cl⁻ (|q₁q₂| = 1). CaF₂ has Ca²⁺ and F⁻ (|q₁q₂| = 2 per F⁻). LiF has Li⁺ and F⁻ (|q₁q₂| = 1). Although the ionic radii vary, the dominant factor is the product of charges. MgO, with |q₁q₂| = 4, has the highest lattice energy."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which molecule is non-polar despite having polar covalent bonds?"
+  options={['CCl₄', 'HCl', 'CH₃Cl', 'NH₃']}
+  correctAnswer={0}
+  explanation="CCl₄ has a tetrahedral geometry with four identical C-Cl bonds. The bond dipoles point from C to each Cl. Due to the symmetry of the tetrahedral arrangement, the four bond dipoles cancel out completely, resulting in a net dipole moment of zero. HCl is diatomic and polar. CH₃Cl has three C-H and one C-Cl bond; the dipoles do not cancel. NH₃ has a trigonal pyramidal shape; the N-H dipoles do not cancel, giving a net dipole moment."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The bond enthalpy of the C≡C triple bond is 839 kJ mol⁻¹, while C=C is 614 kJ mol⁻¹ and C-C is 347 kJ mol⁻¹. The bond length of C-C is 154 pm. What is the approximate C≡C bond length?"
+  options={['120 pm', '134 pm', '140 pm', '110 pm']}
+  correctAnswer={0}
+  explanation="Bond length is inversely related to bond order (and bond enthalpy). A triple bond is shorter than a double bond, which is shorter than a single bond. C-C single bond = 154 pm, C=C double bond ≈ 134 pm, and C≡C triple bond ≈ 120 pm. The higher bond enthalpy of 839 kJ mol⁻¹ for the triple bond confirms the strongest (and shortest) bond. The correct value from data booklet tables is approximately 120 pm."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In metallic bonding, how does increasing charge density of the cation affect the melting point of the metal?"
+  options={[
+    'Higher charge density leads to a higher melting point due to stronger electrostatic attraction between cations and the delocalised electron sea.',
+    'Higher charge density leads to a lower melting point because the cations repel each other more strongly.',
+    'Charge density has no effect on melting point; only the number of delocalised electrons matters.',
+    'Higher charge density leads to a lower melting point because the ions are smaller and can move more freely.',
+  ]}
+  correctAnswer={0}
+  explanation="The strength of metallic bonding depends on: (1) the number of delocalised electrons per atom (charge on the cation), and (2) the ionic radius (smaller radius = stronger attraction). Charge density = charge/radius ratio. Higher charge density means stronger electrostatic attraction between the positive metal ions and the delocalised electrons, requiring more energy to overcome, hence a higher melting point. For example, Mg (2+, small radius) has a higher melting point (650°C) than Na (1+, larger radius, 98°C)."
+  difficulty="hard"
+/>
+
+---
+
+### Molecular Geometry and Intermolecular Forces
+
+<PracticeProblem
+  question="What is the molecular geometry of XeF₄ according to VSEPR theory?"
+  options={['Square planar', 'Tetrahedral', 'See-saw', 'Square pyramidal']}
+  correctAnswer={0}
+  explanation="XeF₄ has 8 + 4(7) = 36 valence electrons, or 18 electron pairs. The Xe atom has 4 bonding pairs and 2 lone pairs. The electron domain geometry is octahedral (6 domains). The two lone pairs position themselves opposite each other (trans) to minimise repulsion, resulting in a square planar molecular geometry. This is analogous to the arrangement in molecules like ICl₄⁻."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which statement correctly describes the intermolecular forces present in liquid CH₃OH (methanol)?"
+  options={[
+    'Hydrogen bonding, dipole-dipole forces, and London dispersion forces',
+    'Only hydrogen bonding',
+    'Only dipole-dipole forces and London dispersion forces',
+    'Covalent bonding and London dispersion forces',
+  ]}
+  correctAnswer={0}
+  explanation="CH₃OH (methanol) has an O-H bond, which allows hydrogen bonding (the strongest intermolecular force present). The molecule is also polar (C-O and O-H bond dipoles do not cancel in the tetrahedral-like arrangement), so dipole-dipole forces are present. London dispersion forces exist between all molecules, regardless of polarity. Therefore, all three types of intermolecular forces are present, with hydrogen bonding being the dominant one. Covalent bonding is an intramolecular force, not intermolecular."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the hybridisation of the central atom in SF₆?"
+  options={['sp³d²', 'sp³d', 'sp³', 'd²sp³']}
+  correctAnswer={0}
+  explanation="SF₆ has 6 bonding pairs around the central S atom and no lone pairs. The steric number is 6. To accommodate 6 bonding domains, the S atom undergoes sp³d² hybridisation, using one s, three p, and two d orbitals to form six equivalent hybrid orbitals arranged in an octahedral geometry. The IB data booklet notation uses sp³d² (not d²sp³, which implies a different orbital ordering sometimes used in transition metal complexes)."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="When comparing NH₃ (boiling point -33°C) and PH₃ (boiling point -88°C), which factor best explains why NH₃ has a significantly higher boiling point despite PH₃ having greater London dispersion forces?"
+  options={[
+    'NH₃ can form hydrogen bonds between molecules, which are much stronger than the dipole-dipole and London dispersion forces in PH₃.',
+    'NH₃ has a smaller molar mass, making it more volatile.',
+    'PH₃ has stronger covalent bonds within each molecule.',
+    'NH₃ molecules are smaller and pack together more efficiently.',
+  ]}
+  correctAnswer={0}
+  explanation="NH₃ has an N-H bond, allowing hydrogen bonding between molecules. Hydrogen bonding is a particularly strong type of dipole-dipole interaction involving H bonded to N, O, or F. PH₃ cannot form hydrogen bonds (P is not electronegative enough). While PH₃ does have greater London dispersion forces (more electrons, larger electron cloud), hydrogen bonding in NH₃ (20-40 kJ mol⁻¹) is much stronger than London dispersion forces (~2-20 kJ mol⁻¹), and this difference dominates, resulting in NH₃ having a much higher boiling point."
+  difficulty="medium"
+/>

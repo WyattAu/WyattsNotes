@@ -1,0 +1,99 @@
+---
+title: 'Atomic Structure Practice (Interactive)'
+tags:
+  - chemistry
+  - ib
+slug: ib-chemistry/practice-atomic-structure
+description:
+  'Interactive IB Chemistry atomic structure practice with auto-graded questions. Covers electron
+  configuration, quantum numbers, isotopes, and periodic trends.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## IB Chemistry — Atomic Structure Practice
+
+8 auto-graded practice problems at medium to hard difficulty, aligned to the IB Chemistry syllabus
+(SL/HL). Select an answer, submit, and review the explanation.
+
+---
+
+### Electron Configuration
+
+<PracticeProblem
+  question="What is the ground state electron configuration of Fe (Z = 26) using noble gas notation?"
+  options={['[Ar] 3d⁶ 4s²', '[Ar] 3d⁸', '[Ar] 4s² 3d⁶', '[Ar] 3d⁵ 4s²']}
+  correctAnswer={0}
+  explanation="Fe has 26 electrons. Noble gas core: [Ar] accounts for 18 electrons. Remaining 8 electrons: 4s fills first (2 electrons), then 3d (6 electrons). The noble gas notation is [Ar] 3d⁶ 4s². Note: in writing configurations, the 3d orbital is conventionally written before 4s, even though 4s fills first."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which set of quantum numbers (n, l, mₗ, mₛ) is valid for an electron in a 4f orbital?"
+  options={['4, 3, 0, +½', '4, 2, 3, +½', '3, 3, 0, +½', '4, 3, 4, +½']}
+  correctAnswer={0}
+  explanation="For a 4f orbital: n = 4 (principal), l = 3 (f-orbital, since l = 0→s, 1→p, 2→d, 3→f). mₗ can range from -l to +l, so -3, -2, -1, 0, +1, +2, +3. mₗ = 0 is valid. mₛ = +½ or -½, so +½ is valid. Option B has l = 2 (d, not f). Option C has n = 3 but l = 3, which is invalid (l < n). Option D has mₗ = 4, exceeding the allowed range of -3 to +3."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="An element has the ground state electron configuration [Ne] 3s² 3p⁵. What is its most likely position in the periodic table?"
+  options={['Period 3, Group 17', 'Period 3, Group 15', 'Period 2, Group 17', 'Period 3, Group 16']}
+  correctAnswer={0}
+  explanation="[Ne] is the noble gas core for period 3. The valence electrons are 3s² 3p⁵, giving 7 valence electrons total. Elements with 7 valence electrons are in Group 17 (the halogens). The highest principal quantum number is 3, placing it in Period 3. This element is chlorine (Cl, Z = 17)."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The atomic emission spectrum of hydrogen contains a line at 434 nm (violet, Balmer series). Which transition produces this line?"
+  options={['n = 5 → n = 2', 'n = 4 → n = 2', 'n = 3 → n = 1', 'n = 6 → n = 2']}
+  correctAnswer={0}
+  explanation="The Balmer series involves transitions to n = 2. Using the Rydberg equation: 1/λ = R_H(1/n_f² - 1/n_i²). For n_f = 2: n_i = 5 gives 1/λ = R_H(1/4 - 1/25) = R_H(0.25 - 0.04) = 0.21R_H. λ = 1/(0.21 × 1.097 × 10⁷) ≈ 434 nm. This matches the given wavelength. The Balmer series visible lines are: n=3→2 (656 nm, red), n=4→2 (486 nm, blue-green), n=5→2 (434 nm, violet), n=6→2 (410 nm, violet)."
+  difficulty="hard"
+/>
+
+---
+
+### Periodic Trends and Atomic Structure
+
+<PracticeProblem
+  question="The relative atomic mass of boron is 10.81. Boron has two naturally occurring isotopes: ¹⁰B (10.01 u) and ¹¹B (11.01 u). What is the approximate percentage abundance of ¹⁰B?"
+  options={['20%', '50%', '80%', '10%']}
+  correctAnswer={0}
+  explanation="Let x be the fraction of ¹⁰B. Then 10.01x + 11.01(1 - x) = 10.81. Expanding: 10.01x + 11.01 - 11.01x = 10.81. Simplifying: 11.01 - x = 10.81, so x = 0.20 = 20%. Therefore, ¹⁰B has approximately 20% abundance and ¹¹B has approximately 80% abundance."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The first ionisation energy of aluminium is lower than that of magnesium. Which explanation is correct?"
+  options={[
+    'Aluminium has a 3p electron which is shielded more effectively and at a higher energy than the 3s electrons of magnesium.',
+    'Aluminium has a smaller nuclear charge than magnesium.',
+    'The 3p electron in aluminium is closer to the nucleus than the 3s electrons in magnesium.',
+    'Aluminium has a smaller atomic radius than magnesium.',
+  ]}
+  correctAnswer={0}
+  explanation="Both Al and Mg are in Period 3. Mg has electron configuration [Ne] 3s²; its first ionisation removes a 3s electron. Al has configuration [Ne] 3s² 3p¹; its first ionisation removes a 3p electron. Although Al has a greater nuclear charge (Z = 13 vs Z = 12), the 3p orbital is slightly higher in energy and more effectively shielded than the 3s orbital. The increased shielding effect outweighs the increased nuclear charge, making the 3p electron easier to remove. This is a classic exception to the general increasing trend across a period."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A sample of chlorine gas consists of two isotopes, ³⁵Cl and ³⁷Cl, in a 3:1 ratio. In a mass spectrum of Cl₂ molecules, what is the ratio of the heights of the M (70), M+2 (72), and M+4 (74) peaks?"
+  options={['9:6:1', '3:1:0', '6:6:1', '9:3:1']}
+  correctAnswer={0}
+  explanation="For Cl₂, the molecule can consist of: two ³⁵Cl atoms (³⁵Cl-³⁵Cl, m/z = 70), one ³⁵Cl and one ³⁷Cl (³⁵Cl-³⁷Cl, m/z = 72), or two ³⁷Cl atoms (³⁷Cl-³⁷Cl, m/z = 74). Using probability: P(³⁵Cl) = 3/4, P(³⁷Cl) = 1/4. Peak at 70: (3/4)² = 9/16. Peak at 72: 2 × (3/4) × (1/4) = 6/16 (factor of 2 because two arrangements exist). Peak at 74: (1/4)² = 1/16. Ratio = 9:6:1."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Which statement about subatomic particles is correct?"
+  options={[
+    'A neutron has a slightly greater mass than a proton and no electric charge.',
+    'An electron has approximately the same mass as a proton but opposite charge.',
+    'The mass of a proton is approximately 1/1836 of the mass of an electron.',
+    'Neutrons are found in the nucleus and also orbit the nucleus in electron shells.',
+  ]}
+  correctAnswer={0}
+  explanation="A neutron has a mass of approximately 1.0087 u and carries no electric charge. A proton has a mass of approximately 1.0073 u, so the neutron is slightly heavier. Option B is incorrect: an electron has a mass of approximately 1/1836 of a proton. Option C has the ratio inverted. Option D is incorrect: only electrons orbit the nucleus in shells; neutrons are confined to the nucleus along with protons."
+  difficulty="medium"
+/>

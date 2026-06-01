@@ -1,0 +1,269 @@
+---
+title: 'A-Level Computer Science Practice: Algorithms'
+slug: practice-algorithms
+description:
+  'A-Level Computer Science multiple choice practice on algorithms covering searching, sorting,
+  Big-O notation, and graph algorithms.'
+tags:
+  - Computer Science
+  - A-Level
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## A-Level Computer Science Practice: Algorithms
+
+18 MCQ practice problems on algorithms. Select an answer, submit, and review the explanation.
+Questions follow A-Level examination style and cover Big-O notation, searching and sorting
+algorithms, graph algorithms, algorithm design paradigms, and tracing.
+
+---
+
+### Big-O Notation
+
+<PracticeProblem
+  questions={[
+    {
+      question:
+        'Which of the following is the correct time complexity of accessing an element in an array by its index?',
+      options: ['A) O(1)', 'B) O(n)', 'C) O(log n)', 'D) O(n^2)'],
+      correct: 0,
+      explanation:
+        'Array access by index is O(1) -- constant time. This is because arrays use contiguous memory, so calculating the address of any element requires a simple arithmetic calculation: base_address + (index * element_size). Regardless of the array size, access takes the same time.',
+    },
+    {
+      question:
+        'Order the following time complexities from most efficient to least efficient: O(n log n), O(n), O(2^n), O(log n), O(1).',
+      options: [
+        'A) O(1) < O(log n) < O(n) < O(n log n) < O(2^n)',
+        'B) O(log n) < O(1) < O(n) < O(n log n) < O(2^n)',
+        'C) O(1) < O(n) < O(log n) < O(n log n) < O(2^n)',
+        'D) O(2^n) < O(n log n) < O(n) < O(log n) < O(1)',
+      ],
+      correct: 0,
+      explanation:
+        'The correct order from most efficient (fastest-growing function) to least efficient (slowest-growing function) is: O(1) < O(log n) < O(n) < O(n log n) < O(2^n). O(1) is constant regardless of input size. O(log n) grows very slowly (e.g., binary search). O(n) grows linearly. O(n log n) grows slightly faster than linear (e.g., merge sort). O(2^n) grows exponentially and is impractical for large inputs.',
+    },
+    {
+      question:
+        'An algorithm has time complexity O(n^2). If the input size doubles from n to 2n, approximately how much longer will the algorithm take?',
+      options: [
+        'A) Twice as long',
+        'B) Three times as long',
+        'C) Four times as long',
+        'D) Eight times as long',
+      ],
+      correct: 2,
+      explanation:
+        'If T(n) = O(n^2), then doubling the input: T(2n) is proportional to (2n)^2 = 4n^2. So the new time is approximately 4 times the original time. In general, for O(n^k), doubling input increases time by 2^k. For O(n^2), this is 2^2 = 4. This is why O(n^2) algorithms become impractical for large datasets.',
+    },
+  ]}
+/>
+
+### Searching Algorithms
+
+<PracticeProblem
+  questions={[
+    {
+      question: 'What precondition must be satisfied before performing a binary search on a list?',
+      options: [
+        'A) The list must contain only integers',
+        'B) The list must be sorted',
+        'C) The list must have an odd number of elements',
+        'D) The list must contain no duplicate values',
+      ],
+      correct: 1,
+      explanation:
+        'Binary search requires the list (or array) to be sorted before the search can begin. The algorithm works by repeatedly dividing the search interval in half and comparing the middle element to the target value. If the list is unsorted, the comparison logic fails because we cannot determine which half to discard.',
+    },
+    {
+      question: 'What is the worst-case time complexity of binary search?',
+      options: ['A) O(1)', 'B) O(n)', 'C) O(log n)', 'D) O(n log n)'],
+      correct: 2,
+      explanation:
+        'Binary search has O(log n) worst-case time complexity because each comparison eliminates half of the remaining elements. For an array of n elements, the maximum number of comparisons is ceil(log2(n)). For example, searching 1024 elements requires at most 10 comparisons (2^10 = 1024). The best case is O(1) when the middle element is the target.',
+    },
+    {
+      question:
+        'When performing a linear search, how many comparisons are needed in the worst case to find that an element is NOT in a list of n elements?',
+      options: [
+        'A) n/2 comparisons',
+        'B) n - 1 comparisons',
+        'C) n comparisons',
+        'D) log n comparisons',
+      ],
+      correct: 2,
+      explanation:
+        'In the worst case (element not in list or element is the last item), linear search checks every element, requiring n comparisons. The algorithm examines each element one by one from start to finish. This gives O(n) time complexity for linear search in both average and worst cases. The best case is O(1) when the target is the first element.',
+    },
+  ]}
+/>
+
+### Sorting Algorithms
+
+<PracticeProblem
+  questions={[
+    {
+      question: 'Which sorting algorithm has the best worst-case time complexity?',
+      options: ['A) Bubble sort', 'B) Insertion sort', 'C) Quick sort', 'D) Merge sort'],
+      correct: 3,
+      explanation:
+        'Merge sort has O(n log n) worst-case time complexity, making it the most efficient in the worst case among these options. Bubble sort and insertion sort are both O(n^2) in the worst case. Quick sort is O(n^2) in the worst case (when the pivot is always the smallest or largest element), though it has O(n log n) average case. Merge sort guarantees O(n log n) regardless of input.',
+    },
+    {
+      question: 'What is a stable sorting algorithm and which of the following is stable?',
+      options: [
+        'A) A stable algorithm always produces the same output; bubble sort',
+        'B) A stable algorithm preserves the relative order of equal elements; merge sort',
+        'C) A stable algorithm has O(1) space complexity; quick sort',
+        'D) A stable algorithm always completes in O(n log n); insertion sort',
+      ],
+      correct: 1,
+      explanation:
+        'A stable sorting algorithm preserves the relative order of elements with equal sort keys. Merge sort is stable because when merging two halves, equal elements from the left half are placed before equal elements from the right half. Bubble sort and insertion sort are also stable. Quick sort is generally NOT stable (the partitioning step can change the relative order of equal elements). Stability matters when sorting by multiple criteria.',
+    },
+    {
+      question:
+        'During one pass of bubble sort on the array [5, 3, 8, 1, 4], what is the state of the array after the first complete pass?',
+      options: [
+        'A) [3, 5, 1, 4, 8]',
+        'B) [3, 1, 4, 5, 8]',
+        'C) [5, 3, 1, 4, 8]',
+        'D) [1, 3, 4, 5, 8]',
+      ],
+      correct: 0,
+      explanation:
+        'Bubble sort compares adjacent pairs and swaps if out of order. Starting with [5, 3, 8, 1, 4]: compare 5 and 3: swap -> [3, 5, 8, 1, 4]. Compare 5 and 8: no swap. Compare 8 and 1: swap -> [3, 5, 1, 8, 4]. Compare 8 and 4: swap -> [3, 5, 1, 4, 8]. After one complete pass, the largest element (8) bubbles to its correct position at the end.',
+    },
+  ]}
+/>
+
+### Graph Algorithms
+
+<PracticeProblem
+  questions={[
+    {
+      question:
+        "Which data structure would you use to implement Dijkstra's shortest path algorithm and why?",
+      options: [
+        'A) A stack, to backtrack the shortest path',
+        'B) A priority queue (min-heap), to always process the vertex with the smallest known distance next',
+        'C) A queue (FIFO), to process vertices in the order they are discovered',
+        'D) A hash table, to store distances in constant time',
+      ],
+      correct: 1,
+      explanation:
+        "Dijkstra's algorithm uses a priority queue (commonly a min-heap) to always select the unvisited vertex with the smallest tentative distance. This is crucial because once a vertex is dequeued, its shortest distance is confirmed. A simple FIFO queue (used in BFS) would not work because BFS does not account for weighted edges. A stack is used for DFS, not Dijkstra.",
+    },
+    {
+      question:
+        'What is the key difference between BFS (breadth-first search) and DFS (depth-first search)?',
+      options: [
+        'A) BFS uses a stack; DFS uses a queue',
+        'B) BFS explores neighbours first (level by level); DFS explores as deep as possible along each branch before backtracking',
+        'C) BFS only works on directed graphs; DFS only works on undirected graphs',
+        'D) BFS always finds the shortest path; DFS always finds the longest path',
+      ],
+      correct: 1,
+      explanation:
+        'BFS explores all neighbours at the current depth before moving to the next level (uses a queue/FIFO). DFS explores as far along a branch as possible before backtracking (uses a stack/LIFO or recursion). BFS can find the shortest path in unweighted graphs. DFS is often used for topological sorting, cycle detection, and maze solving.',
+    },
+    {
+      question:
+        'For a graph with V vertices and E edges, what is the space complexity difference between an adjacency matrix and an adjacency list?',
+      options: [
+        'A) Both are O(V + E)',
+        'B) Adjacency matrix is O(V^2); adjacency list is O(V + E)',
+        'C) Adjacency matrix is O(E); adjacency list is O(V)',
+        'D) Both are O(V^2)',
+      ],
+      correct: 1,
+      explanation:
+        'An adjacency matrix uses a V x V matrix regardless of edge count, so space is O(V^2). An adjacency list stores a list of neighbours for each vertex, using O(V + E) space -- V for the array of lists plus E total across all lists. Adjacency matrices are faster for edge lookups O(1) but wasteful for sparse graphs. Adjacency lists are more space-efficient for sparse graphs.',
+    },
+  ]}
+/>
+
+### Algorithm Design
+
+<PracticeProblem
+  questions={[
+    {
+      question: 'Merge sort is an example of which algorithm design paradigm?',
+      options: [
+        'A) Greedy algorithm',
+        'B) Divide and conquer',
+        'C) Dynamic programming',
+        'D) Brute force',
+      ],
+      correct: 1,
+      explanation:
+        'Merge sort uses divide and conquer: it divides the array into two halves, recursively sorts each half, then merges the two sorted halves. The divide step splits the problem into smaller subproblems, the conquer step solves them recursively, and the combine step merges the solutions. This paradigm yields O(n log n) time complexity.',
+    },
+    {
+      question: 'Which statement correctly describes a greedy algorithm?',
+      options: [
+        'A) It explores all possible solutions before choosing the best one',
+        'B) It makes the locally optimal choice at each step, hoping to find a global optimum',
+        'C) It stores all subproblem solutions in a table to avoid redundant computation',
+        'D) It always guarantees the optimal solution for any problem',
+      ],
+      correct: 1,
+      explanation:
+        "A greedy algorithm makes the best (locally optimal) choice at each step without reconsidering previous decisions. It is efficient but does NOT always produce the optimal solution. Examples where greedy works: Dijkstra's shortest path, Huffman coding, fractional knapsack. Examples where greedy fails: 0/1 knapsack, travelling salesman problem.",
+    },
+    {
+      question: 'What distinguishes dynamic programming from plain recursion?',
+      options: [
+        'A) Dynamic programming uses iteration only; recursion is never used',
+        'B) Dynamic programming solves subproblems independently without overlap',
+        'C) Dynamic programming stores results of overlapping subproblems to avoid recomputation (memoisation or tabulation)',
+        'D) Dynamic programming always runs in O(1) time',
+      ],
+      correct: 2,
+      explanation:
+        'Dynamic programming (DP) optimises recursive solutions by storing the results of overlapping subproblems so they are computed only once. Memoisation (top-down) stores results in a lookup table during recursion. Tabulation (bottom-up) builds a table iteratively from smaller subproblems. This transforms exponential-time naive recursion into polynomial time when overlapping subproblems exist.',
+    },
+  ]}
+/>
+
+### Tracing Algorithms
+
+<PracticeProblem
+  questions={[
+    {
+      question:
+        'Given the code: FOR i = 1 TO 3, FOR j = 1 TO i, PRINT i * j. How many times is PRINT executed?',
+      options: ['A) 3', 'B) 6', 'C) 9', 'D) 12'],
+      correct: 1,
+      explanation:
+        'Tracing the nested loop: i=1: j=1, prints 1 (1 execution). i=2: j=1 prints 2, j=2 prints 4 (2 executions). i=3: j=1 prints 3, j=2 prints 6, j=3 prints 9 (3 executions). Total = 1 + 2 + 3 = 6 executions. This is a triangular number pattern: the sum of integers from 1 to n.',
+    },
+    {
+      question:
+        'What is the output of this algorithm? x = 10, WHILE x > 1: x = x / 2, PRINT x. Stop when x <= 1.',
+      options: [
+        'A) 5, 2.5, 1.25, 0.625',
+        'B) 5, 2.5, 1.25',
+        'C) 20, 10, 5, 2.5, 1.25',
+        'D) 5, 3, 2, 1',
+      ],
+      correct: 1,
+      explanation:
+        'Tracing: x = 10. First iteration: x = 10/2 = 5, print 5 (5 > 1, continue). Second: x = 5/2 = 2.5, print 2.5 (2.5 > 1, continue). Third: x = 2.5/2 = 1.25, print 1.25 (1.25 > 1, continue). Fourth: x = 1.25/2 = 0.625. Check condition: 0.625 > 1 is false, loop ends without printing. Output: 5, 2.5, 1.25.',
+    },
+    {
+      question:
+        'In a quick sort, the first partition on the array [7, 2, 9, 4, 3, 8] uses the first element (7) as pivot. After partitioning, what are the left partition, pivot position, and right partition?',
+      options: [
+        'A) Left: [2, 4, 3], Pivot: 7, Right: [9, 8]',
+        'B) Left: [2, 3, 4], Pivot: 7, Right: [8, 9]',
+        'C) Left: [3, 4, 2], Pivot: 7, Right: [8, 9]',
+        'D) Left: [2, 4, 3, 7], Pivot: 9, Right: [8]',
+      ],
+      correct: 0,
+      explanation:
+        'Using Lomuto partition scheme with pivot = 7: scan from left, moving elements less than 7 to the left side. Elements < 7: 2, 4, 3. Elements >= 7: 7 (pivot itself), 9, 8. After partitioning: [2, 4, 3 | 7 | 9, 8]. The left partition is [2, 4, 3], pivot 7 is in its correct sorted position (index 3), and the right partition is [9, 8]. Note that elements within partitions are not yet sorted; quick sort then recursively sorts each partition.',
+    },
+  ]}
+/>

@@ -1,0 +1,99 @@
+---
+title: 'Redox and Electrochemistry Practice (Interactive)'
+tags:
+  - chemistry
+  - ib
+slug: ib-chemistry/practice-redox-electrochemistry
+description:
+  'Interactive IB Chemistry redox and electrochemistry practice with auto-graded questions. Covers
+  oxidation states, half-equations, cell potentials, and electrolysis.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## IB Chemistry — Redox and Electrochemistry Practice
+
+8 auto-graded practice problems at medium to hard difficulty, aligned to the IB Chemistry syllabus
+(SL/HL). Select an answer, submit, and review the explanation.
+
+---
+
+### Redox Reactions
+
+<PracticeProblem
+  question="What is the oxidation state of chromium in the dichromate ion, Cr₂O₇²⁻?"
+  options={['+6', '+3', '+7', '+12']}
+  correctAnswer={0}
+  explanation="Using the rules for oxidation states: oxygen is -2 (except in peroxides). Let x be the oxidation state of Cr. 2(x) + 7(-2) = -2. 2x - 14 = -2. 2x = +12. x = +6. Each chromium atom in Cr₂O₇²⁻ has an oxidation state of +6."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In the reaction: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O, which species is the reducing agent?"
+  options={['Fe²⁺', 'MnO₄⁻', 'H⁺', 'Fe³⁺']}
+  correctAnswer={0}
+  explanation="The reducing agent is the species that gets oxidised (loses electrons). Mn in MnO₄⁻ goes from +7 to +2 (reduction, gains 5e⁻). Fe²⁺ goes to Fe³⁺ (oxidation, loses 1e⁻). Since Fe²⁺ causes the reduction of MnO₄⁻ by donating electrons, Fe²⁺ is the reducing agent. Conversely, MnO₄⁻ is the oxidising agent (it gets reduced)."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Balance the following redox equation in acidic solution: Cr₂O₇²⁻ + Fe²⁺ → Cr³⁺ + Fe³⁺. What is the coefficient of H⁺ in the balanced equation?"
+  options={['14', '7', '2', '6']}
+  correctAnswer={0}
+  explanation="Step 1 - Half-equations. Reduction: Cr₂O₇²⁻ → 2Cr³⁺. Balance O with H₂O: Cr₂O₇²⁻ → 2Cr³⁺ + 7H₂O. Balance H with H⁺: 14H⁺ + Cr₂O₇²⁻ → 2Cr³⁺ + 7H₂O. Balance charge: 14(+) + (-2) = +12 on left; 2(+3) = +6 on right. Add 6e⁻ to left: 6e⁻ + 14H⁺ + Cr₂O₇²⁻ → 2Cr³⁺ + 7H₂O. Oxidation: Fe²⁺ → Fe³⁺ + e⁻. Multiply by 6: 6Fe²⁺ → 6Fe³⁺ + 6e⁻. Combine: 6Fe²⁺ + 14H⁺ + Cr₂O₇²⁻ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O. The coefficient of H⁺ is 14."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A 0.0250 mol dm⁻³ solution of KMnO₄ is used to titrate 25.0 cm³ of an acidified Fe²⁺ solution. The average titre volume is 21.3 cm³. Calculate the concentration of Fe²⁺ in the original solution. (The reaction: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O)"
+  options={['0.213 mol dm⁻³', '0.1065 mol dm⁻³', '0.0426 mol dm⁻³', '0.3195 mol dm⁻³']}
+  correctAnswer={1}
+  explanation="Moles of MnO₄⁻ = c × V = 0.0250 × 0.0213 = 5.325 × 10⁻⁴ mol. From the balanced equation, 1 mol MnO₄⁻ reacts with 5 mol Fe²⁺. Moles of Fe²⁺ = 5 × 5.325 × 10⁻⁴ = 2.6625 × 10⁻³ mol. Concentration of Fe²⁺ = n/V = 2.6625 × 10⁻³ / 0.0250 = 0.1065 mol dm⁻³. Option A (0.213) is a common error from forgetting the 5:1 stoichiometric ratio."
+  difficulty="hard"
+/>
+
+---
+
+### Electrochemistry
+
+<PracticeProblem
+  question="A voltaic cell is constructed with Zn|Zn²⁺ (1.0 mol dm⁻³) and Cu|Cu²⁺ (1.0 mol dm⁻³). Given E°(Zn²⁺/Zn) = -0.76 V and E°(Cu²⁺/Cu) = +0.34 V, what is the standard cell potential?"
+  options={['+1.10 V', '-1.10 V', '+0.42 V', '+0.76 V']}
+  correctAnswer={0}
+  explanation="In a voltaic cell, the more negative E° value represents the anode (oxidation). Zn²⁺/Zn has the more negative E° (-0.76 V), so Zn is oxidised: Zn → Zn²⁺ + 2e⁻. Cu²⁺/Cu has the more positive E° (+0.34 V), so Cu²⁺ is reduced: Cu²⁺ + 2e⁻ → Cu. E°cell = E°(cathode) - E°(anode) = +0.34 - (-0.76) = +0.34 + 0.76 = +1.10 V. The positive value confirms the cell reaction is spontaneous."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In the electrolysis of molten NaCl using inert electrodes, what products form at the anode and cathode respectively?"
+  options={[
+    'Chlorine gas at the anode and sodium metal at the cathode',
+    'Hydrogen gas at the cathode and chlorine gas at the anode',
+    'Oxygen gas at the anode and sodium hydroxide at the cathode',
+    'Sodium ions at the anode and chloride ions at the cathode',
+  ]}
+  correctAnswer={0}
+  explanation="In molten NaCl electrolysis (not aqueous), the only ions present are Na⁺ and Cl⁻. At the cathode (negative electrode): Na⁺ + e⁻ → Na(l) (sodium metal is produced). At the anode (positive electrode): 2Cl⁻ → Cl₂(g) + 2e⁻ (chlorine gas is produced). In aqueous NaCl, H₂ would be produced at the cathode instead (H⁺ is preferentially reduced over Na⁺ in water), but since the electrolyte is molten, Na metal forms. The key distinction is molten vs aqueous."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="How long (in minutes) must a current of 2.50 A be passed through molten Al₂O₃ to deposit 5.40 g of aluminium? (M_Al = 27.0, F = 96500 C mol⁻¹)"
+  options={['386 min', '193 min', '77.2 min', '64.3 min']}
+  correctAnswer={0}
+  explanation="The half-equation is: Al³⁺ + 3e⁻ → Al. Three moles of electrons are required per mole of Al. Moles of Al = 5.40/27.0 = 0.200 mol. Total charge required: Q = 3 × F × n(Al) = 3 × 96500 × 0.200 = 57900 C. Using Q = It: t = Q/I = 57900/2.50 = 23160 s. Converting to minutes: 23160/60 = 386 min."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="What is the function of the salt bridge in a voltaic cell?"
+  options={[
+    'It maintains electrical neutrality by allowing ions to flow between the two half-cells, completing the circuit.',
+    'It provides electrons to flow from the anode to the cathode.',
+    'It prevents the reaction from occurring by keeping the solutions separate.',
+    'It increases the cell potential by adding extra ions to the solutions.',
+  ]}
+  correctAnswer={0}
+  explanation="The salt bridge contains an inert electrolyte (such as KNO₃ or KCl) in a gel. As the voltaic cell operates, positive charge builds up in the anode half-cell (as metal ions enter solution) and negative charge builds up in the cathode half-cell (as cations are removed from solution). Without the salt bridge, this charge imbalance would quickly stop the reaction. The salt bridge allows anions to flow to the anode half-cell and cations to the cathode half-cell, maintaining electrical neutrality so the cell can continue to operate. Electrons flow through the external wire, not through the salt bridge."
+  difficulty="medium"
+/>
