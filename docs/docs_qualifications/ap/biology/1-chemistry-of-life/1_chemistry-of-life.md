@@ -1,8 +1,6 @@
 ---
 title: Chemistry of Life
-description:
-  'Chemistry of Life — Elements and Compounds (CED Unit 1); Essential Elements; Bonding in
-  Biological Molecules; Water (CED Unit 1).'
+description: 'Qualifications Biology Chemistry of Life notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 date: 2026-04-14
 tags:
   - ap

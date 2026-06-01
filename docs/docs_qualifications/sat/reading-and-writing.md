@@ -1,9 +1,7 @@
 ---
 title: Reading and Writing
 date: 2026-05-30
-description:
-  'SAT Reading & Writing section notes covering passage comprehension, vocabulary in context,
-  grammar conventions, and evidence-based reasoning strategies.'
+description: 'SAT Reading And Writing.Md Reading and Writing notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 tags:
   - sat
   - reading

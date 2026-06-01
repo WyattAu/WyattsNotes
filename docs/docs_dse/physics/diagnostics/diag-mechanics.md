@@ -1,8 +1,6 @@
 ---
 title: 'Mechanics -- Diagnostic Tests'
-description:
-  'Hardest DSE Physics mechanics questions: advanced SUVAT selection, projectile motion
-  independence, displacement sign conventions, and multi-stage motion.'
+description: 'DSE Physics Mechanics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: diag-mechanics
 hide_table_of_contents: true
 ---

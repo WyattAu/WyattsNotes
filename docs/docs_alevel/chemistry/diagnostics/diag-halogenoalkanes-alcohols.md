@@ -1,8 +1,6 @@
 ---
 title: 'Halogenoalkanes, Alcohols -- Diagnostic Tests'
-description:
-  Diagnostic tests for nucleophilic substitution, elimination, and oxidation reactions at the
-  hardest A-Level Chemistry standard.
+description: 'A-Level Chemistry Halogenoalkanes, Alcohols -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-halogenoalkanes-alcohols
 hide_table_of_contents: true
 ---

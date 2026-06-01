@@ -1,8 +1,6 @@
 ---
 title: 'Sequences and Series -- Diagnostic Tests'
-description:
-  Hard diagnostic tests for sequences and series covering convergence, sigma notation, recurrence
-  relations, telescoping sums, and tolerance bounds.
+description: 'A-Level Maths Sequences and Series -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-sequences-and-series
 hide_table_of_contents: true
 ---

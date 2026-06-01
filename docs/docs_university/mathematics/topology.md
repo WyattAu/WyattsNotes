@@ -6,7 +6,7 @@ tags:
   - University Maths
 categories:
   - University Maths
-description: "University-level topology: topological spaces, open and closed sets, continuity, compactness, connectedness, metric spaces, separation axioms, and introduction to algebraic topology."
+description: "University-level topology: topological spaces, open and closed sets, continuity, compactness, connectedness, metric spaces, separation axioms, and."
 ---
 
 ## 1. Introduction to Topology
@@ -511,3 +511,19 @@ For a closed orientable surface of genus $g$: $\chi = 2 - 2g$.
 | $T_0$–$T_4$ | Increasingly strong separation axioms |
 | Fundamental group $\pi_1$ | Homotopy classes of loops; a topological invariant |
 | Euler characteristic $\chi$ | $V - E + F$; classifies compact surfaces |
+
+## Worked Examples
+
+### Example 1: Determining if a Collection is a Topology
+**Problem:** Is the collection tau = {empty set, {a}, {b}, {a,b,c}} a topology on X = {a,b,c}?
+**Solution:** Check axioms: (1) empty set and X are in tau. (2) Finite unions: {a} union {b} = {a,b}, which is NOT in tau. Therefore tau is not a topology. To fix it, we would need to include {a,b}.
+
+### Example 2: Continuous Function Proof
+**Problem:** Show that the function f: R -> R defined by f(x) = x^2 is continuous with respect to the standard topology.
+**Solution:** Let U be an open set in R. f^{-1}(U) = {x : x^2 in U}. For any open interval (a, b) with a >= 0, the preimage is (-sqrt(b), -sqrt(a)) union (sqrt(a), sqrt(b)), which is a union of open intervals (open). For negative intervals, the preimage is empty or R. Since the preimage of any basis element is open, f is continuous.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Abstract Algebra | [View](/docs/university/mathematics/abstract-algebra) |

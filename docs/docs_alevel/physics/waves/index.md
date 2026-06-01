@@ -1,9 +1,7 @@
 ---
 sidebar_label: Waves
 sidebar_position: 2
-description:
-  'Rigorous A-Level physics notes covering Waves. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'A-Level Physics Waves notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and revision.'
 ---
 
 # Waves

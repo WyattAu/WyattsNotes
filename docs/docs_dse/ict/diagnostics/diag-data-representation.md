@@ -1,8 +1,6 @@
 ---
 title: 'Data Representation -- Diagnostic Tests'
-description:
-  'DSE ICT diagnostic tests for data representation: binary, hexadecimal, character encoding, data
-  compression, image and audio representation.'
+description: 'DSE Ict Data Representation -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: diag-data-representation
 hide_table_of_contents: true
 ---

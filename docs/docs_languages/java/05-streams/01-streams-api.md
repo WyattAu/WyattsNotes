@@ -1,8 +1,6 @@
 ---
 title: Streams API
-description:
-  'Streams API — Stream vs Collection; Design Decision: Why Streams Are Lazy; Stream Pipeline
-  Architecture; Creating Streams.'
+description: 'Java Streams API notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
 date: 2025-06-05T14:00:00.000Z
 tags: ['java']
 categories: ['java']

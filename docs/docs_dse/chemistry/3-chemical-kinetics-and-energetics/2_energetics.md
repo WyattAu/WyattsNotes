@@ -1,9 +1,7 @@
 ---
 id: dse-chemistry-energetics
 title: Chemistry - Energetics / Thermochemistry
-description:
-  "DSE Chemistry notes covering enthalpy changes, standard enthalpy of
-  formation/combustion/neutralisation, Hess's Law and energy cycles, bond enthalpies,"
+description: 'DSE Chemistry - Energetics / Thermochemistry notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 slug: energetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]

@@ -1,7 +1,6 @@
 ---
 title: Balance of Payments
-description:
-  'IB Economics — BOP accounts, current account, capital account, FDI, multinational corporations.'
+description: 'IB Economics Balance of Payments notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

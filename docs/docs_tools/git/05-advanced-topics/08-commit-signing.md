@@ -1,8 +1,6 @@
 ---
 title: Commit Signing
-description:
-  'Commit Signing — Why Sign Commits; The Threat Model; Anyone can claim to be anyone; Identity
-  Verification with worked examples and exam-style questions.'
+description: 'Git Commit Signing notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision and examination preparation.'
 slug: commit-signing
 ---
 

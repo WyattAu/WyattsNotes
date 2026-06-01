@@ -1,9 +1,7 @@
 ---
 title: Mathematics
 date: 2026-05-30
-description:
-  'SAT Mathematics section notes covering algebra, advanced math, problem solving, data analysis,
-  geometry, trigonometry, and calculator strategies.'
+description: 'SAT Mathematics.Md Mathematics notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and thorough revision.'
 tags:
   - sat
   - maths

@@ -1,8 +1,6 @@
 ---
 title: Custom Formatting with std::formatter
-description:
-  'C++: Custom Formatting with std::formatter — Custom Formatting: Extending `std::formatter`; 6.1
-  `std::formatter<T, CharT>` Specialization [N4950 §22.14.4].'
+description: 'C++ Programming Custom Formatting with std::formatter notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

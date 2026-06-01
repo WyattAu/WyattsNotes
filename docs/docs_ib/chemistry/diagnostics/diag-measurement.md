@@ -1,8 +1,6 @@
 ---
 title: 'Measurement and Data Processing -- Diagnostic Tests'
-description:
-  'Diagnostic tests for IB Chemistry measurement and data processing: uncertainty propagation,
-  significant figures, graphical analysis, and error identification.'
+description: 'IB Chemistry Measurement and Data Processing -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-measurement
 hide_table_of_contents: true
 ---

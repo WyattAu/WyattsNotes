@@ -1,8 +1,6 @@
 ---
 title: Metaclasses and Class Creation
-description:
-  'Metaclasses and Class Creation — How Class Statements Work; `type()` as Metaclass; Custom
-  Metaclasses; `__new__`: Controlling Class Creation.'
+description: 'Python Metaclasses and Class Creation notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

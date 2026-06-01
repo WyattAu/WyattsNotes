@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Python
-description:
-  'Rigorous programming language Python notes covering Introduction to Python. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Python Introduction to Python notes covering key definitions, core concepts, worked examples, and practice questions for complete study and thorough revision.'
 slug: intro
 sidebar_position: 1
 tags:

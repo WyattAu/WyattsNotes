@@ -1,8 +1,6 @@
 ---
 title: 'Momentum -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for momentum covering sign convention traps, impulse as a vector,
-  coefficient of restitution edge cases, 2D collisions, and'
+description: 'A-Level Maths Momentum -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 slug: diag-momentum
 hide_table_of_contents: true
 ---

@@ -1,9 +1,7 @@
 ---
 title: Syllabus
 slug: Syllabus
-description:
-  'Rigorous IB mathematics notes covering Syllabus. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Maths Syllabus notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
 ---
 
 ### IB Mathematics AA HL/SL Syllabus Overview

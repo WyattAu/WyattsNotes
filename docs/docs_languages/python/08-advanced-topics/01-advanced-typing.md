@@ -1,8 +1,6 @@
 ---
 title: Advanced Type System
-description:
-  'Advanced Type System — `@overload` — Multiple Signatures for One Function; Mechanism; Overloads
-  with `@staticmethod` and `@classmethod`; Limitations.'
+description: 'Python Advanced Type System notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

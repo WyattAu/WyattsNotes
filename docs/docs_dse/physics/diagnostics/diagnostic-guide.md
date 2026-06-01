@@ -1,8 +1,6 @@
 ---
 title: DSE Physics Diagnostic Guide
-description:
-  'Complete guide to DSE Physics diagnostic testing with topic coverage map, prerequisite chains,
-  grading rubric, and study recommendations.'
+description: 'DSE Physics Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

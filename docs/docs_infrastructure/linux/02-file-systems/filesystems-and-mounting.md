@@ -1,9 +1,7 @@
 ---
 id: filesystems-and-mounting
 title: File Systems and Mounting
-description:
-  'File Systems and Mounting — Virtual File System (VFS) Layer for comprehensive revision and
-  examination preparation. and examination pre.'
+description: 'File Systems and Mounting notes covering key definitions, core concepts, worked examples, and practice questions for systematic study and examination practice.'
 slug: filesystems-and-mounting
 sidebar_position: 1
 ---

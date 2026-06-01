@@ -1,9 +1,7 @@
 ---
 id: oauth-deep-dive
 title: OAuth 2.0 Deep Dive
-description:
-  'OAuth 2.0 Deep Dive — OAuth 2.0 Overview; Roles; Grant Types; Authorization Code Grant (with
-  PKCE) with worked examples and exam-style questions.'
+description: 'OAuth 2.0 Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
 slug: oauth-deep-dive
 ---
 

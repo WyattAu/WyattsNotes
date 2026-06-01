@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  Master close reading and critical approaches for A-Level English. Covers feminist, Marxist,
-  postcolonial, and psychoanalytic criticism with practical frameworks.
+description: 'A-Level English Literary Analysis notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 slug: literary-analysis
 ---
 

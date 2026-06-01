@@ -1,9 +1,7 @@
 ---
 id: osi-and-tcp-ip
 title: OSI and TCP/IP Models
-description:
-  'OSI and TCP/IP Models — Why Reference Models Matter for Systems Engineers; The End-to-End
-  Principle; The OSI 7-Layer Model; Layer 1: Physical.'
+description: 'OSI and TCP/IP Models notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
 slug: osi-and-tcp-ip
 sidebar_position: 2
 tags:

@@ -1,8 +1,6 @@
 ---
 title: Generics and Type Erasure
-description:
-  'Generics and Type Erasure — Why Generics; Before Java 5: Raw Types and Casting; Generic Classes,
-  Interfaces, and Methods; Generic Classes.'
+description: 'Java Generics and Type Erasure notes covering key definitions, core concepts, worked examples, and practice questions for complete review and exam preparation.'
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java

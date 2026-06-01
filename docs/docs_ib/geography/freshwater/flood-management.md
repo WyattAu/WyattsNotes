@@ -1,8 +1,6 @@
 ---
 title: Flood Management
-description:
-  'Rigorous IB geography notes covering Flood Management. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Geography Flood Management notes covering key definitions, core concepts, worked examples, and practice questions for rigorous exam preparation and revision.'
 slug: flood-management
 ---
 

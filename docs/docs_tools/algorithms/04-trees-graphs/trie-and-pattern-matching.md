@@ -1,9 +1,7 @@
 ---
 id: trie-and-pattern-matching
 title: Tries and String Algorithms
-description:
-  'Tries and String Algorithms — Trie (Prefix Tree); Node Definition; Operations; Complexity
-  Analysis with worked examples and exam-style questions.'
+description: 'Algorithms Tries and String Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: trie-and-pattern-matching
 ---
 

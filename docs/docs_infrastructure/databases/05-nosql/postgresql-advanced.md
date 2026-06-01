@@ -1,9 +1,7 @@
 ---
 id: postgresql-advanced
 title: PostgreSQL Advanced
-description:
-  'PostgreSQL Advanced — Extensions Ecosystem; Installing Extensions; PostGIS; pg_trgm with worked
-  examples and exam-style questions.'
+description: 'PostgreSQL Advanced notes covering key definitions, core concepts, worked examples, and practice questions for detailed study and thorough revision.'
 slug: postgresql-advanced
 ---
 

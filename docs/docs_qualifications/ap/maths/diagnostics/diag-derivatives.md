@@ -1,8 +1,6 @@
 ---
 title: 'Derivatives -- Diagnostic Tests'
-description:
-  'Diagnostic tests targeting the hardest AP Calculus derivative questions including chain rule
-  compositions, implicit differentiation, related rates,'
+description: 'Qualifications Maths Derivatives -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-04-14
 tags:
   - ap

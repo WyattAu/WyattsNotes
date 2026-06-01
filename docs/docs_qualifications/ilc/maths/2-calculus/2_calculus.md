@@ -1,8 +1,6 @@
 ---
 title: Calculus
-description:
-  'Calculus — Differentiation; The Derivative; Differentiation from First Principles (HL); Proof of
-  the Product Rule (HL). and examination.'
+description: 'ILC Maths Calculus notes covering key definitions, core concepts, worked examples, and practice questions for detailed exam preparation and revision.'
 date: 2026-04-14
 tags:
   - ilc

@@ -1,8 +1,6 @@
 ---
 title: 'Radioactivity -- Diagnostic Tests'
-description:
-  Diagnostic tests for half-life, decay equations, activity, alpha-beta-gamma radiation, and nuclear
-  decay chains at maximum A-Level Physics difficulty.
+description: 'A-Level Physics Radioactivity -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 slug: diag-radioactivity
 hide_table_of_contents: true
 ---

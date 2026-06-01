@@ -1,8 +1,6 @@
 ---
 title: Statistics and Probability
-description:
-  'Statistics and Probability — Higher Statistics; Measures of Central Tendency and Spread;
-  Interquartile Range and Box Plots; Probability.'
+description: 'Scottish Highers Maths Statistics and Probability notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 date: 2026-04-14
 tags:
   - highers

@@ -1,8 +1,6 @@
 ---
 title: Reflection
-description:
-  'Reflection — reflect.Type and reflect.Value; Kind vs Type; Modifying Values; Inspecting Fields
-  with worked examples and exam-style questions.'
+description: 'Go Reflection notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and examination practice.'
 slug: reflection
 date: 2026-04-18
 tags:

@@ -8,9 +8,7 @@ tags:
 categories:
   - alevel
   - history
-description:
-  Master A-Level History source analysis, essay structure, historiography, and argumentation
-  techniques for exam success.
+description: 'A-Level History Historical Skills notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 ---
 
 # Historical Skills

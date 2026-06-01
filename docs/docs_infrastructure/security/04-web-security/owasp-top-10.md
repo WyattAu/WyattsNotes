@@ -1,9 +1,7 @@
 ---
 id: owasp-top-10
 title: OWASP Top 10 (2021) Detailed
-description:
-  'OWASP Top 10 (2021) Detailed — A01: Broken Access Control; IDOR (Insecure Direct Object
-  Reference) for thorough revision and examination preparation.'
+description: 'OWASP Top 10 (2021) Detailed notes covering key definitions, core concepts, worked examples, and practice questions for rigorous review and exam preparation.'
 slug: owasp-top-10
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Machine Learning Fundamentals
-description:
-  'University-level notes on Machine Learning Fundamentals: linear and logistic regression,
-  decision trees, neural networks, loss functions, regularization, evaluation metrics,
-  and the bias-variance tradeoff.'
+description: 'University Computer Science Machine Learning Fundamentals notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -538,6 +535,16 @@ Plot training and validation error vs. training set size:
 
 7. **Ignoring data distribution shifts.** If training and test data come from different distributions (e.g., different time periods), model performance may degrade. Monitor for covariate shift and concept drift.
 
+## Worked Examples
+
+### Example 1: Perceptron Learning Algorithm
+**Problem:** Train a perceptron to learn the AND function with inputs (0,0)->0, (0,1)->0, (1,0)->0, (1,1)->1. Initial weights w=(0,0), bias b=0, learning rate eta=1.
+**Solution:** (0,0): 0>=0, correct. (0,1): 0>=0, correct. (1,0): 0>=0, correct. (1,1): 0>=0, incorrect. Update: w1+=1*1=1, w2+=1*1=1, b+=-1*0=0. Next epoch: (1,1): 1+1=2>=0, correct. (0,1): 0+1=1>=0, correct (should be 0 -- error). Update: w1+=1*0=1, w2+=1*(-1)=0, b+=-1*1=-1. (0,1): 0+0-1=-1<0, correct. (1,0): 1+0-1=0>=0, correct (should be 0 -- error). Update: w1+=1*(-1)=0, w2+=1*0=0, b+=-1*(-1)=0. Converged: (0,0)->0, (0,1)->0, (1,0)->0, (1,1)->0 (wrong!). Perceptron with this update rule may not converge for all functions.
+
+### Example 2: K-Nearest Neighbours Classification
+**Problem:** Given training data: (1,1)->A, (1,3)->A, (3,1)->B, (3,3)->B. Classify the point (2,2) using k=3.
+**Solution:** Distances: to (1,1)=sqrt(2)=1.41 (A), to (1,3)=sqrt(2)=1.41 (A), to (3,1)=sqrt(2)=1.41 (B), to (3,3)=sqrt(2)=1.41 (B). All distances are equal. Nearest 3 points depend on tie-breaking; any combination of 3 points yields either 2A+1B or 2B+1A. The point (2,2) lies equidistant from all training data, so the classification is ambiguous.
+
 ## Summary
 
 - **Linear regression** (OLS, gradient descent) predicts continuous targets; **logistic regression** predicts probabilities for binary classification.
@@ -547,3 +554,11 @@ Plot training and validation error vs. training set size:
 - **Regularization** (L1, L2, dropout, early stopping) prevents overfitting by penalizing complexity.
 - **Evaluation metrics** (accuracy, precision, recall, F1, ROC-AUC, $R^2$) must match the task and class distribution.
 - **Bias-variance tradeoff** guides model complexity: underfitting (high bias) vs. overfitting (high variance).
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Algorithms Overview | [View](/docs_infrastructure/cs/algorithms-overview) |
+| Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |
+| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |

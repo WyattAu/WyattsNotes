@@ -1,8 +1,6 @@
 ---
 title: CMake Presets and Toolchain Files
-description:
-  'C++: CMake Presets and Toolchain Files — 1. Toolchain Files (`*.cmake`); Anatomy of a Robust
-  Toolchain File; toolchain-clang.cmake; 1. Force Compilers.'
+description: 'C++ Programming CMake Presets and Toolchain Files notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2025-12-10T06:16:47.022Z
 tags:
   - cpp

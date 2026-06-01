@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  Learn to analyse poetry at A-Level with detailed guidance on form, meter, rhythm, imagery, sound
-  devices, tone, and anthology study approaches.
+description: 'A-Level English Poetry Analysis notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 slug: poetry-analysis
 ---
 

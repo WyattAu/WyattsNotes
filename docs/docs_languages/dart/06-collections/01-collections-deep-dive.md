@@ -1,8 +1,6 @@
 ---
 title: Collections Deep Dive
-description:
-  'Collections Deep Dive — Iterable Interface; Core Transformation Methods; map(); where() with
-  worked examples and exam-style questions.'
+description: 'Dart Collections Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and mastery.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

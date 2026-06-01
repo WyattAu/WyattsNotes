@@ -1,8 +1,6 @@
 ---
 title: 'Electric Fields -- Diagnostic Tests'
-description:
-  Diagnostic tests for Coulomb's law, electric field strength, electric potential, and
-  equipotentials at maximum A-Level Physics difficulty.
+description: 'A-Level Physics Electric Fields -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-electric-fields
 hide_table_of_contents: true
 ---

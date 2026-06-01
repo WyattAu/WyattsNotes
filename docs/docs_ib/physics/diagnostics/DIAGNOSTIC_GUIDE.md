@@ -1,8 +1,6 @@
 ---
 title: IB Physics Diagnostic Guide
-description:
-  Comprehensive guide to the 12-topic IB Physics diagnostic test suite, covering prerequisite
-  chains, grading rubrics, and usage instructions.
+description: 'IB Physics Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for in-depth learning and effective revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

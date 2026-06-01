@@ -1,8 +1,6 @@
 ---
 title: Alignment and Layout
-description:
-  'C++: Alignment and Layout — 1. Natural Alignment; The Rules of Alignment; Inspection Tools; 2.
-  Structure Padding and Layout.'
+description: 'C++ Programming Alignment and Layout notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2025-12-12T05:45:45.940Z
 tags:
   - cpp

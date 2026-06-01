@@ -1,9 +1,7 @@
 ---
 id: interior-mutability
 title: Interior Mutability
-description:
-  'Interior Mutability — The Shared Reference Contract; `UnsafeCell<T>` — The Primitive; Why
-  `UnsafeCell` Exists; `UnsafeCell` and `Sync`.'
+description: 'Rust Interior Mutability notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
 slug: interior-mutability
 ---
 

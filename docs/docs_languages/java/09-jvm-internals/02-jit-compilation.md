@@ -1,8 +1,6 @@
 ---
 title: JIT Compilation and Deoptimization
-description:
-  'JIT Compilation and Deoptimization — Interpreter vs JIT Compilation; C1 and C2 Compilers; Tiered
-  Compilation; Tiered compilation is the default since Java 8.'
+description: 'Java JIT Compilation and Deoptimization notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']

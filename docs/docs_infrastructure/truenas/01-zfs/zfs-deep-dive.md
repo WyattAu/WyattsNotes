@@ -1,9 +1,7 @@
 ---
 id: zfs-deep-dive
 title: ZFS Deep Dive
-description:
-  'TrueNAS: ZFS Deep Dive — ZFS Architecture; The Three Layers; Copy-on-Write Transaction Model;
-  Merkle Tree and Checksumming.'
+description: 'ZFS Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
 slug: zfs-deep-dive
 ---
 

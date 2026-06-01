@@ -1,8 +1,6 @@
 ---
 title: Annotations and Reflection
-description:
-  'Annotations and Reflection — Built-in Annotations; @Override; @Deprecated; @SuppressWarnings with
-  worked examples and exam-style questions.'
+description: 'Java Annotations and Reflection notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java

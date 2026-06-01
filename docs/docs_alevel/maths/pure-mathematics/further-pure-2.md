@@ -1,8 +1,6 @@
 ---
 title: Further Pure Mathematics 2
-description:
-  'A-Level Further Mathematics notes on Further Pure 2: Board Coverage; 1. Further Complex Numbers; 2.
-  Groups; 3. Further Calculus; 4. Vectors and 3D Geometry; 5. Conics; 6. Common Mistakes.'
+description: 'A-Level Maths Further Pure Mathematics 2 notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 date: 2026-05-31
 tags:
   - Maths
@@ -353,4 +351,30 @@ $$\frac{x\cos\theta}{a} + \frac{y\sin\theta}{b} = 1$$
    $y = b\tan\theta$. Do not use $\cosh$ and $\sinh$ unless the question specifies the rectangular hyperbola
    $xy = c^2$.
 7. **Series solution recurrence with wrong initial terms.** When equating coefficients in series solutions,
-   carefully determine $a_0$ and $a_1$ from initial conditions before deriving the recurrence for $a_n$.
+    carefully determine $a_0$ and $a_1$ from initial conditions before deriving the recurrence for $a_n$.
+
+## Worked Examples
+
+### Example 1: Finding a Reduction Formula
+**Problem:** Find a reduction formula for $I_n = \int_0^{\pi/2} \cos^n x\,dx$ where $n \geq 0$.
+**Solution:** Use integration by parts with $u = \cos^{n-1}x$ and $dv = \cos x\,dx$:
+$$u = \cos^{n-1}x \implies du = -(n-1)\cos^{n-2}x\sin x\,dx, \quad v = \sin x$$
+$$I_n = \left[\cos^{n-1}x\sin x\right]_0^{\pi/2} + (n-1)\int_0^{\pi/2}\cos^{n-2}x\sin^2 x\,dx$$
+The boundary term vanishes. Replace $\sin^2 x = 1 - \cos^2 x$:
+$$I_n = (n-1)\int_0^{\pi/2}\cos^{n-2}x\,dx - (n-1)\int_0^{\pi/2}\cos^n x\,dx = (n-1)I_{n-2} - (n-1)I_n$$
+$$nI_n = (n-1)I_{n-2} \implies I_n = \frac{n-1}{n}I_{n-2}$$
+With $I_0 = \pi/2$ and $I_1 = 1$.
+
+### Example 2: Proving a Group Isomorphism
+**Problem:** Show that the group $(\{1, -1, i, -i\}, \times)$ is isomorphic to the cyclic group $(\mathbb{Z}_4, +)$.
+**Solution:** Define $\phi: \mathbb{Z}_4 \to \{1, -1, i, -i\}$ by $\phi(k) = i^k$. Check: $\phi$ is bijective and $\phi(a + b) = i^{a+b} = i^a \cdot i^b = \phi(a)\phi(b)$. The multiplication table of $\{1, -1, i, -i\}$ matches the addition table of $\mathbb{Z}_4$ under this mapping, confirming the isomorphism.
+
+## Common Pitfalls
+
+- **Omitting axioms when checking groups:** All four axioms (closure, associativity, identity, inverses) must be verified. Associativity is often assumed but should be checked or stated.
+- **Wrong reduction formula boundary terms:** Always evaluate $[uv]$ at the limits. If the boundary term is non-zero, it must be included in the formula.
+- **Confusing $\cosh^{-1}$ domain:** $\cosh^{-1} x$ is defined only for $x \geq 1$. Applying it to values outside this domain produces an error.
+
+## Summary
+
+Further Pure 2 extends FP1 material through further complex numbers (Euler's relation, geometry in the complex plane), group theory (axioms, subgroups, cyclic groups, isomorphism, homomorphisms), further calculus (Maclaurin and Taylor series, series solutions, reduction formulae), vectors in 3D (scalar and vector products, lines, planes, shortest distances), and conics (focus-directrix properties, parametric and Cartesian equations, tangents and normals).

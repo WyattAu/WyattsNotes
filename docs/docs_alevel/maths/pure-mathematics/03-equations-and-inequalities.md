@@ -1,8 +1,6 @@
 ---
 title: Equations and Inequalities
-description:
-  'A-Level Mathematics notes on Equations and Inequalities: Board Coverage; 1. Linear Simultaneous
-  Equations; 2. Linear-Quadratic Simultaneous Equations.'
+description: 'A-Level Maths Equations and Inequalities notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

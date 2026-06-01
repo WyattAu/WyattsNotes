@@ -1,8 +1,6 @@
 ---
 title: 'Cell Biology -- Diagnostic Tests'
-description:
-  'Diagnostic tests for IB Biology cell biology: prokaryotic vs eukaryotic cells, organelle
-  functions, membrane structure, and cell division.'
+description: 'IB Cell Biology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 slug: diag-cell-biology
 hide_table_of_contents: true
 ---

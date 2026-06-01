@@ -1,8 +1,6 @@
 ---
 title: A-Level Chemistry Diagnostic Guide
-description:
-  Comprehensive guide to the 13-topic A-Level Chemistry diagnostic test suite, covering prerequisite
-  chains, grading rubrics, and usage instructions.
+description: 'A-Level Chemistry Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

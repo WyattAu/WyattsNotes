@@ -1,8 +1,6 @@
 ---
 title: Range Materialization (std::ranges::to)
-description:
-  'C++: Range Materialization (std::ranges::to) — `std::ranges::to<T>` (C++23); Converting Lazy
-  Views to Eager Containers. and examination.'
+description: 'C++ Programming Range Materialization (std::ranges::to) notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

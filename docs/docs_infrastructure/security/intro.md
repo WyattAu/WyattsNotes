@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Security
-description:
-  'Information security fundamentals — threat modeling, cryptography, authentication, web security,
-  network security, and incident response.'
+description: 'Introduction to Security notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and thorough revision.'
 slug: intro
 sidebar_position: 1
 ---

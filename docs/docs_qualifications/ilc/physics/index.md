@@ -1,6 +1,6 @@
 ---
 title: Irish LC Physics
-description: 'Irish Leaving Certificate Physics revision notes for Higher and Ordinary Level'
+description: 'Irish Leaving Certificate Physics revision notes for Higher and Ordinary Level. Part of the Irish LC Physics notes for State Examination preparation.'
 date: 2026-04-14
 tags:
   - ilc

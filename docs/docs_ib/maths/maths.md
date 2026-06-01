@@ -3,9 +3,7 @@ title: Maths
 tags:
   - maths
 slug: maths
-description:
-  'Rigorous IB mathematics notes covering Maths. Includes definitions, derivations, worked examples,
-  and exam-style problems.'
+description: 'IB Maths notes covering key definitions, core concepts, worked examples, and practice questions for in-depth learning and effective revision.'
 ---
 
 ## IB Mathematics -- Analysis and Approaches (AA) -- Course Overview

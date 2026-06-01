@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Databases
-description:
-  'Rigorous infrastructure and DevOps notes covering Introduction to Databases. Includes
-  definitions, derivations, worked examples, and exam-style problems.'
+description: 'Introduction to Databases notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
 slug: intro
 sidebar_position: 1
 tags:

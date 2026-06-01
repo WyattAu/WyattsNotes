@@ -1,9 +1,7 @@
 ---
 id: authentication
 title: Authentication and Authorization
-description:
-  'Authentication and Authorization — Authentication vs Authorization; Password Storage; How Not to
-  Store Passwords; How to Store Passwords.'
+description: 'Authentication and Authorization notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: authentication
 sidebar_position: 4
 ---

@@ -1,8 +1,6 @@
 ---
 title: Dependency Resolution
-description:
-  'C++: Dependency Resolution — The C++ Package Management Problem; The ABI Matrix; Distribution
-  Models; 1. System Package Managers (The "Distro" Model).'
+description: 'C++ Programming Dependency Resolution notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2025-12-11T03:49:07.185Z
 tags:
   - cpp

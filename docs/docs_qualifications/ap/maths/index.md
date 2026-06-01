@@ -1,8 +1,6 @@
 ---
 title: AP Calculus
-description:
-  'AP Calculus AB/BC revision notes covering limits, derivatives, integrals, differential equations,
-  and sequences and series.'
+description: 'Qualifications Maths AP Calculus notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-04-14
 tags:
   - ap

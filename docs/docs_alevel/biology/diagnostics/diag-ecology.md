@@ -1,8 +1,6 @@
 ---
 title: 'Ecology -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on ecosystems, populations, succession, nutrient cycles, human
-  impact, and conservation strategies.
+description: 'A-Level Biology Ecology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: diag-ecology
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: Genetics and Behaviour
-description:
-  'Comprehensive coverage of twin studies, adoption studies, heritability, gene-environment
-  interaction, epigenetics, and key research for IB Psychology.'
+description: 'IB Psychology Genetics and Behaviour notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 slug: genetics-and-behaviour
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Tooling and Configuration
-description:
-  'Tooling and Configuration — tsconfig.json: Core Configuration; Compiler Options Reference;
-  Language and Environment; Module Resolution.'
+description: 'Typescript Tooling and Configuration notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 slug: typescript-tooling-and-configuration
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

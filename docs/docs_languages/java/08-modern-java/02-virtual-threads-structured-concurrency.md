@@ -1,8 +1,6 @@
 ---
 title: Virtual Threads and Structured Concurrency
-description:
-  'Virtual Threads and Structured Concurrency — Project Loom and Virtual Threads (JEP 444, Java 21);
-  The Problem with Platform Threads; What Is a Virtual Thread.'
+description: 'Java Virtual Threads and Structured Concurrency notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']

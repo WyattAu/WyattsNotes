@@ -8,9 +8,7 @@ tags:
 categories:
   - alevel
   - history
-description:
-  Explore Tudor England from Henry VII's consolidation to Elizabeth I's religious settlement,
-  foreign policy, and the succession crisis.
+description: 'A-Level History Tudor England 1485-1603 notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 ---
 
 # Tudor England 1485-1603

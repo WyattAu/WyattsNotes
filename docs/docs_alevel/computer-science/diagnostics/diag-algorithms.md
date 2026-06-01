@@ -1,8 +1,6 @@
 ---
 title: 'Algorithms -- Diagnostic Tests'
-description:
-  'Diagnostic tests for A-Level CS algorithms: Big O notation, sorting comparisons, searching
-  algorithms, and algorithm trace tables.'
+description: 'A-Level Computer Science Algorithms -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-algorithms
 hide_table_of_contents: true
 ---

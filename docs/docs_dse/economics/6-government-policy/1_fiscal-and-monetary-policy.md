@@ -1,8 +1,6 @@
 ---
 title: Fiscal and Monetary Policy
-description:
-  'DSE Economics notes on fiscal and monetary policy covering government spending, taxation, money
-  supply, interest rates, inflation, and unemployment.'
+description: 'DSE Economics Fiscal and Monetary Policy notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

@@ -1,8 +1,6 @@
 ---
 title: Trade and Aid
-description:
-  'IB Economics — foreign aid, FDI, sustainable development, microfinance, technology leapfrogging,
-  SDGs.'
+description: 'IB Economics Trade and Aid notes covering key definitions, core concepts, worked examples, and practice questions for detailed study and examination practice.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

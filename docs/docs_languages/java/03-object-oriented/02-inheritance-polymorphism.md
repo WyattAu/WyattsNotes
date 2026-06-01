@@ -1,9 +1,7 @@
 ---
 id: inheritance-polymorphism
 title: Inheritance and Polymorphism
-description:
-  'Inheritance and Polymorphism — Inheritance; The `extends` Keyword; Method Overriding with
-  `@Override`; The `super` Keyword.'
+description: 'Java Inheritance and Polymorphism notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and exam readiness.'
 slug: inheritance-polymorphism
 ---
 

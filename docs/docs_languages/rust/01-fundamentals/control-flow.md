@@ -1,9 +1,7 @@
 ---
 id: control-flow
 title: Control Flow and Pattern Matching
-description:
-  'Control Flow and Pattern Matching — `if` / `else`; `else if` Chains; Conditional Assignment
-  Patterns; Blocks as Expressions.'
+description: 'Rust Control Flow and Pattern Matching notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 slug: control-flow
 ---
 

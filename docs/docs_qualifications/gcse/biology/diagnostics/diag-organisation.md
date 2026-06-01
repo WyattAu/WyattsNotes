@@ -1,8 +1,6 @@
 ---
 title: 'Organisation -- Diagnostic Tests'
-description:
-  'GCSE Biology diagnostic tests for organisation: digestive system, enzymes, circulatory system,
-  respiratory system, nervous system.'
+description: 'GCSE Biology Organisation -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: diag-organisation
 hide_table_of_contents: true
 ---

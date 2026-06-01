@@ -1,8 +1,6 @@
 ---
 title: Debugger
-description:
-  'C++: Debugger — Debug Information Architecture; 1. DWARF (Linux / macOS / MinGW); 2. PDB (Windows
-  MSVC); Debug Information Levels.'
+description: 'C++ Programming Debugger notes covering key definitions, core concepts, worked examples, and practice questions for effective revision and exam readiness.'
 date: 2025-12-11T06:24:14.105Z
 tags:
   - cpp

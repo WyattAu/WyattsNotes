@@ -1,8 +1,6 @@
 ---
 title: Human Body Systems
-description:
-  'Human Body Systems — The Circulatory System; Structure (OL/HL); The Heart (OL/HL); Blood Vessels
-  (OL/HL) with worked examples and exam-style questions.'
+description: 'ILC Biology Human Body Systems notes covering key definitions, core concepts, worked examples, and practice questions for thorough review and exam preparation.'
 date: 2026-04-14
 tags:
   - ilc

@@ -1,9 +1,7 @@
 ---
 id: context-managers
 title: Context Managers and the with Statement
-description:
-  'Context Managers and the with Statement — The with Statement for comprehensive revision and
-  examination preparation. and examination pr.'
+description: 'Python Context Managers and the with Statement notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 slug: context-managers
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Preprocessing and AST Generation, and Object Code
-description:
-  'C++: Preprocessing and AST Generation, and Object Code — Stage 1: The Preprocessor; Mechanics;
-  Inspection; -E: Run preprocessor only.'
+description: 'C++ Programming Preprocessing and AST Generation, and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';

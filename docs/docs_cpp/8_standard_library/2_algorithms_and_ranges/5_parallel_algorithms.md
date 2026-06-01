@@ -1,8 +1,6 @@
 ---
 title: Parallel Algorithms
-description:
-  'C++: Parallel Algorithms — Execution Policies; Formal Semantics of Execution Policies for
-  thorough revision and examination preparation.'
+description: 'C++ Programming Parallel Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

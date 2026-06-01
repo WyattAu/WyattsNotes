@@ -1,8 +1,6 @@
 ---
 title: Waves and Radiation
-description:
-  'Waves and Radiation — Higher Waves; Wave Properties; Why the Distinction Between Transverse and
-  Longitudinal Matters; Derivation of the Wave Equation.'
+description: 'Scottish Highers Physics Waves and Radiation notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-04-14
 tags:
   - highers

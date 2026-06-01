@@ -1,8 +1,6 @@
 ---
 title: Trigonometry
-description:
-  'DSE Mathematics trigonometry notes covering trigonometric ratios, sine and cosine rules,
-  trigonometric identities, solving equations, and 3D problems.'
+description: 'DSE Maths Trigonometry notes covering key definitions, core concepts, worked examples, and practice questions for complete revision and exam readiness.'
 date: 2025-06-03T16:22:00.000Z
 tags:
   - Maths

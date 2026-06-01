@@ -1,8 +1,6 @@
 ---
 title: Thermodynamics and Statistical Mechanics
-description:
-  'University-level notes on Thermodynamics and Statistical Mechanics: 1. The Laws of
-  Thermodynamics; 1.1 Zeroth Law; 1.2 First Law; 1.3 Second Law.'
+description: 'University Physics Thermodynamics and Statistical Mechanics notes covering key definitions, core concepts, worked practice questions for practical revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

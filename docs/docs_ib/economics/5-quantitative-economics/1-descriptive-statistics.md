@@ -1,8 +1,6 @@
 ---
 title: Descriptive Statistics
-description:
-  'IB Economics — real vs nominal, compound interest, CBA, Lorenz curve, Gini, poverty, HDI,
-  multiplier, Keynesian cross, IS-LM.'
+description: 'IB Economics Descriptive Statistics notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

@@ -1,8 +1,6 @@
 ---
 title: Enums and Modules
-description:
-  'Enums and Modules — Numeric Enums; Explicit Values; Computed Values; String Enums with worked
-  examples and exam-style questions.'
+description: 'Typescript Enums and Modules notes covering key definitions, core concepts, worked examples, and practice questions for complete revision and exam readiness.'
 slug: typescript-enums-and-modules
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

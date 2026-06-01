@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Licensing
-description:
-  'Rigorous software tools notes covering Introduction to Licensing. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Licensing Introduction to Licensing notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: intro
 sidebar_position: 1
 ---

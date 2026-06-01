@@ -1,8 +1,6 @@
 ---
 title: Computing Systems
-description:
-  "Computing Systems — Hardware Components; The Fetch-Decode-Execute Cycle; Binary and Data
-  Representation; Two's Complement."
+description: 'Qualifications Computer Science Computing Systems notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-04-14
 tags:
   - ap

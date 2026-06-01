@@ -1,8 +1,6 @@
 ---
 title: Unit Testing
-description:
-  'C++: Unit Testing — CTest Architecture; Dependency Management Strategy; 1. GoogleTest
-  Integration; CMake Implementation.'
+description: 'C++ Programming Unit Testing notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2025-12-10T19:05:13.846Z
 tags:
   - cpp

@@ -1,8 +1,6 @@
 ---
 title: Electricity and Magnetism
-description:
-  'DSE Physics electricity and magnetism notes covering electric fields, potential, capacitance,
-  magnetic fields, electromagnetic induction, and AC circuits.'
+description: 'DSE Physics Electricity and Magnetism notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE

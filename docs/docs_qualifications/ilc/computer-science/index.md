@@ -1,7 +1,6 @@
 ---
 title: Irish LC Computer Science
-description:
-  'Irish Leaving Certificate Computer Science revision notes for Higher and Ordinary Level'
+description: 'ILC Irish LC Computer Science notes covering key definitions, core concepts, worked examples, and practice questions for in-depth review and exam preparation.'
 date: 2026-04-14
 tags:
   - ilc

@@ -1,8 +1,6 @@
 ---
 title: DSE Chemistry
-description:
-  'Complete DSE Chemistry revision notes covering atomic structure, bonding, stoichiometry,
-  energetics, kinetics, equilibrium, redox, electrochemistry, and'
+description: 'DSE Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and revision.'
 slug: chemistry
 hide_table_of_contents: true
 ---

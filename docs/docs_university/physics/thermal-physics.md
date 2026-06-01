@@ -1,10 +1,6 @@
 ---
 title: Thermal Physics
-description:
-  'Comprehensive university-level notes on thermal physics covering the laws of thermodynamics,
-  statistical mechanics and ensemble theory, the grand canonical ensemble, Fermi-Dirac and
-  Bose-Einstein statistics, Fermi gases, Bose-Einstein condensation, the Ising model, phase
-  transitions, Landau theory, the fluctuation-dissipation theorem, and the Debye model of solids.'
+description: 'University Thermal Physics notes covering key definitions, core concepts, worked examples, and practice questions for complete learning and effective revision.'
 date: 2026-04-26T00:00:00.000Z
 tags:
   - Physics

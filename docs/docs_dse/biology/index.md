@@ -1,8 +1,6 @@
 ---
 title: DSE Biology
-description:
-  'Complete DSE Biology revision notes covering cell biology, biochemistry, human physiology,
-  genetics, evolution, ecology, plant biology, and biotechnology with'
+description: 'DSE Biology notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision and examination preparation.'
 slug: biology
 hide_table_of_contents: true
 ---

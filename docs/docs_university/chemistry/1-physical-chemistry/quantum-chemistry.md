@@ -1,8 +1,6 @@
 ---
 title: Quantum Chemistry
-description:
-  "University-level notes on Quantum Chemistry: 1. The Schrodinger Equation; 1.1 Postulates of
-  Quantum Mechanics; 1.2 The Time-Independent Schrodinger Equation."
+description: 'University Quantum Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -452,6 +450,16 @@ where $E_0$ is the true ground state energy. This underpins the Hartree-Fock and
 - **Huckel theory:** $\pi$-electron approximation; aromaticity ($4n + 2$ rule).
 - **Born-Oppenheimer:** Separates electronic and nuclear motion; defines the PES.
 - **Variational principle:** Any trial energy $\geq E_0$; basis for computational methods.
+
+## Worked Examples
+
+### Example 1: Calculating the Energy of a Hydrogen Atom
+**Problem:** Calculate the energy of the n=3 level of a hydrogen atom and the wavelength of the photon emitted in the transition n=3 to n=2.
+**Solution:** E_n = -13.6/n^2 eV. E_3 = -13.6/9 = -1.51 eV. E_2 = -13.6/4 = -3.40 eV. Delta E = E_3 - E_2 = -1.51 - (-3.40) = 1.89 eV. lambda = hc/Delta E = 1240 eV nm / 1.89 eV = 656 nm (in the visible range, H-alpha line).
+
+### Example 2: HOMO-LUMO Gap and MO Diagram
+**Problem:** For O2, the molecular orbital ordering has pi_2p below sigma_2p. What is the bond order, and is O2 paramagnetic?
+**Solution:** Electron configuration of O2 (12 electrons): sigma_2s^2 sigma_2s*^2 sigma_2p_z^2 pi_2p_x^2 pi_2p_y^2 pi_2p_x*^1 pi_2p_y*^1. Bond order = (1/2)(bonding - antibonding) = (1/2)(8 - 4) = 2. Since there are two unpaired electrons in the pi_2p* orbitals, O2 is paramagnetic.
 
 ## Cross-References
 

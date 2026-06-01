@@ -1,8 +1,6 @@
 ---
 title: Brain Imaging Techniques
-description:
-  'Comprehensive coverage of fMRI, PET, EEG, TMS, lesion studies, their strengths, limitations, and
-  ethical considerations for IB Psychology.'
+description: 'IB Psychology Brain Imaging Techniques notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 slug: brain-imaging-techniques
 ---
 

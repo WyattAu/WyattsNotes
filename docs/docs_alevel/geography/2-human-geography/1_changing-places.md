@@ -3,9 +3,7 @@ title: Changing Places
 date: 2026-05-21
 tags: [alevel, alevel-geography]
 categories: [alevel, geography, human-geography]
-description:
-  Sense of place, endogenous and exogenous factors, demographic and cultural change, economic
-  change, and urban regeneration with case studies.
+description: 'A-Level Geography Changing Places notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 ---
 
 # Changing Places

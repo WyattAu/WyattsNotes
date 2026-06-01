@@ -3,9 +3,7 @@ title: History
 tags:
   - history
 slug: history
-description:
-  'Rigorous IB history notes covering History. Includes definitions, derivations, worked examples,
-  and exam-style problems.'
+description: 'IB History notes covering key definitions, core concepts, worked examples, and practice questions for systematic review and exam preparation.'
 ---
 
 ## IB History -- Course Overview

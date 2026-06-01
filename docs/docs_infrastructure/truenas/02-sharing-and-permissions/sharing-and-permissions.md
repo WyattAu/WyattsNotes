@@ -1,9 +1,7 @@
 ---
 id: sharing-and-permissions
 title: Sharing and Permissions
-description:
-  'Sharing and Permissions — SMB/CIFS; SMB Protocol Overview; SMB Dialect Negotiation; SMB3 Features
-  in Detail with worked examples and exam-style questions.'
+description: 'Sharing and Permissions notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
 slug: sharing-and-permissions
 ---
 

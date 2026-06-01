@@ -1,6 +1,6 @@
 ---
 title: Scottish Highers Chemistry
-description: 'Scottish Higher and Advanced Higher Chemistry revision notes'
+description: 'Scottish Higher and Advanced Higher Chemistry revision notes. Part of the Scottish Higher Chemistry revision notes for SQA exam preparation.'
 date: 2026-04-14
 tags:
   - highers

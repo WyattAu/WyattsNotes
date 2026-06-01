@@ -1,8 +1,6 @@
 ---
 title: RTTI, dynamic_cast, and typeid
-description:
-  'C++: RTTI, dynamic_cast, and typeid — 4.1 Run-Time Type Information (RTTI); RTTI Implementation
-  in the Itanium ABI for thorough revision and examination.'
+description: 'C++ Programming RTTI, dynamic_cast, and typeid notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

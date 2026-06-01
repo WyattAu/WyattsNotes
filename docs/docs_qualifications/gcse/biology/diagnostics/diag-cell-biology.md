@@ -1,8 +1,6 @@
 ---
 title: 'Cell Biology -- Diagnostic Tests'
-description:
-  'GCSE Biology diagnostic tests for cell biology: cell structure, specialised cells, microscopy,
-  cell division, osmosis, diffusion.'
+description: 'GCSE Cell Biology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: diag-cell-biology
 hide_table_of_contents: true
 ---

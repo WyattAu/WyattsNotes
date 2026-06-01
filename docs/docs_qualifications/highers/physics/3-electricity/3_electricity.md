@@ -1,8 +1,6 @@
 ---
 title: Electricity
-description:
-  "Electricity — Electric Charge and Current; Drift Velocity; Potential Difference, EMF, and
-  Resistance; Why Ohm's Law Is Not a Universal Law."
+description: 'Scottish Highers Physics Electricity notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-14
 tags:
   - highers

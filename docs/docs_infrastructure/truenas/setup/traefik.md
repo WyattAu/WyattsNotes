@@ -1,8 +1,6 @@
 ---
 title: Setup Traefik
-description:
-  'Setup Traefik — Why Traefik; Prerequisites; Traefik Concepts; Docker Compose Deployment with
-  worked examples and exam-style questions.'
+description: 'Setup Traefik notes covering key definitions, core concepts, worked examples, and practice questions for clear revision and exam readiness.'
 date: 2025-07-21T18:30:46.381Z
 tags:
   - truenas

@@ -1,8 +1,6 @@
 ---
 title: Market Failure
-description:
-  'IB Economics — externalities, public goods, information asymmetry, government intervention and
-  failure.'
+description: 'IB Economics Market Failure notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

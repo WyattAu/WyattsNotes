@@ -1,8 +1,6 @@
 ---
 title: 'Integration -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for integration covering integration by parts selection, substitution limit
-  errors, absolute value traps, and area calculation pitfalls'
+description: 'A-Level Maths Integration -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 slug: diag-integration
 hide_table_of_contents: true
 ---

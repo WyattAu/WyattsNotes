@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Algorithms
-description:
-  'Algorithm fundamentals — complexity analysis, data structures, sorting, graph algorithms, dynamic
-  programming, and problem-solving patterns.'
+description: 'Algorithms Introduction to Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 slug: intro
 sidebar_position: 1
 ---

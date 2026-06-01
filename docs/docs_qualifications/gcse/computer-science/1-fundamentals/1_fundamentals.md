@@ -1,8 +1,6 @@
 ---
 title: Data Representation
-description:
-  'Data Representation — 1. Binary; 1.1 The Binary Number System; 1.2 Converting Between Binary and
-  Denary; 1.3 Units of Data.'
+description: 'GCSE Computer Science Data Representation notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-04-14
 tags:
   - gcse

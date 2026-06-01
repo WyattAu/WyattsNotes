@@ -1,8 +1,6 @@
 ---
 title: Evolution
-description:
-  'DSE Biology evolution notes covering natural selection, evidence for evolution, population
-  genetics, Hardy-Weinberg principle, genetic drift, speciation,'
+description: 'DSE Biology Evolution notes covering key definitions, core concepts, worked examples, and practice questions for complete review and exam preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

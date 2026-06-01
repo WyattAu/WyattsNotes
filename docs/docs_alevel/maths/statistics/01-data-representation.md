@@ -1,8 +1,6 @@
 ---
 title: Data Representation
-description:
-  'A-Level Mathematics notes on Data Representation: Board Coverage; 1. Measures of Central
-  Tendency; 1.1 Mean; 1.2 The mean minimises the sum of squared deviat.'
+description: 'A-Level Maths Data Representation notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

@@ -6,9 +6,7 @@ tags:
   - alevel-psychology
 categories:
   - alevel-psychology
-description:
-  Covers the six major psychological approaches — behaviourism, social learning theory, cognitive,
-  biological, psychodynamic, and humanistic — for A-Level Psychology.
+description: 'A-Level Approaches in Psychology notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: approaches-in-psychology
 ---
 

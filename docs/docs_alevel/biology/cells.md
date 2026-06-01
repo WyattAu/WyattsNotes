@@ -1,8 +1,6 @@
 ---
 title: Cells
-description:
-  'A-Level Biology notes on Cells: 1. Cell Theory and Microscopy for comprehensive revision and
-  examination preparation. and examination p.'
+description: 'A-Level Biology Cells notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision and examination preparation.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

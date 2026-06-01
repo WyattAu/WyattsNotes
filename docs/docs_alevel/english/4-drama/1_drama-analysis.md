@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  Master drama analysis for A-Level English with guidance on stagecraft, dramatic structure,
-  characterisation, dialogue, and theatrical context.
+description: 'A-Level English Drama Analysis notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and mastery.'
 slug: drama-analysis
 ---
 

@@ -1,9 +1,7 @@
 ---
 id: storage-tuning
 title: Storage Tuning
-description:
-  'Storage Tuning — Storage Hierarchy; Storage Technologies Compared; Choosing the Right Storage;
-  NVMe Protocol with worked examples and exam-style questions.'
+description: 'Storage Tuning notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
 slug: storage-tuning
 ---
 

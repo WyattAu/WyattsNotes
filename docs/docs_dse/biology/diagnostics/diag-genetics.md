@@ -1,8 +1,6 @@
 ---
 title: 'Genetics -- Diagnostic Tests'
-description:
-  'Challenging DSE biology diagnostic questions on Genetics -- Diagnostic Tests. With full worked
-  solutions and examiner commentary.'
+description: 'DSE Biology Genetics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 slug: diag-genetics
 hide_table_of_contents: true
 ---

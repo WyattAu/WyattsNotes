@@ -1,8 +1,6 @@
 ---
 title: Software Design and Development
-description:
-  'Software Design and Development — Higher Software Design; Software Development Process; Analysis
-  and Design; Data Modelling.'
+description: 'Scottish Highers Computer Science Software Design and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - highers

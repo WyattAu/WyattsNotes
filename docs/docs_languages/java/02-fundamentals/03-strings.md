@@ -1,9 +1,7 @@
 ---
 id: strings
 title: Strings and Text Processing
-description:
-  'Strings and Text Processing — The `String` Class; Immutability; String Pool (Intern Pool);
-  `intern()` with worked examples and exam-style questions.'
+description: 'Java Strings and Text Processing notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: strings
 ---
 

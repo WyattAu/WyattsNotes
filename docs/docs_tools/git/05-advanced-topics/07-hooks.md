@@ -1,8 +1,6 @@
 ---
 title: Git Hooks
-description:
-  'Git Hooks — Hook Lifecycle; When Hooks Run; Hook Discovery; Point Git to a custom hooks directory
-  with worked examples and exam-style questions.'
+description: 'Git Hooks notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and mastery.'
 slug: git-hooks
 ---
 

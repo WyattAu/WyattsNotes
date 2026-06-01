@@ -8,9 +8,7 @@ tags:
 categories:
   - alevel
   - history
-description:
-  Study the British Empire's commercial expansion, Atlantic trade, Indian involvement, slavery,
-  imperial wars, and imperial ideology from 1688-1763.
+description: 'A-Level History The British Empire c1688-1763 notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 ---
 
 # The British Empire c1688-1763

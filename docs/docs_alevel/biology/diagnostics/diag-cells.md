@@ -1,8 +1,6 @@
 ---
 title: 'Cells -- Diagnostic Tests'
-description:
-  'Hardest diagnostic questions on cell structure: prokaryotic vs eukaryotic comparison, organelle
-  function, fluid mosaic membrane model, and microscopy'
+description: 'A-Level Biology Cells -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 slug: diag-cells
 hide_table_of_contents: true
 ---

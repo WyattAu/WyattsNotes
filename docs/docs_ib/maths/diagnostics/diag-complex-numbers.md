@@ -1,8 +1,6 @@
 ---
 title: 'Complex Numbers -- Diagnostic Tests'
-description:
-  Hardest IB Mathematics diagnostic tests for complex numbers covering De Moivre branch cuts, roots
-  of unity, polar conversion, and Euler's formula.
+description: 'IB Maths Complex Numbers -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: diag-complex-numbers
 hide_table_of_contents: true
 ---

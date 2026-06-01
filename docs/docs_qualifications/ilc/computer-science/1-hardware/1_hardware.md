@@ -1,8 +1,6 @@
 ---
 title: Computer Systems
-description:
-  'Computer Systems — The Von Neumann Architecture (OL/HL); The CPU (OL/HL); The
-  Fetch-Decode-Execute Cycle (OL/HL); Buses (HL).'
+description: 'ILC Computer Science Computer Systems notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-04-14
 tags:
   - ilc

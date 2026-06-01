@@ -1,8 +1,6 @@
 ---
 title: Null Safety Deep Dive
-description:
-  'Kotlin Null Safety — nullable types, safe calls, elvis operator, not-null assertions, Java interop,
-  contracts, collections and null, sealed classes, and common pitfalls.'
+description: 'Kotlin Null Safety Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and revision.'
 slug: kotlin/null-safety-deep-dive
 date: 2026-05-31
 tags:

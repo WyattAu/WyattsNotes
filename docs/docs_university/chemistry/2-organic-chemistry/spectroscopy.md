@@ -1,8 +1,6 @@
 ---
 title: Spectroscopy
-description:
-  "University-level notes on Organic Spectroscopy: 1. UV-Vis Spectroscopy; 1.1 Beer-Lambert Law;
-  1.2 Conjugation Effects."
+description: 'University Chemistry Spectroscopy notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -347,6 +345,16 @@ $\blacksquare$
 - **2D NMR:** COSY (H–H connectivity), HSQC (one-bond H–C), HMBC (long-range H–C), NOESY (spatial).
 - **MS:** Molecular weight, formula (HRMS), fragmentation patterns, isotopic patterns.
 - **Structure elucidation:** Combine all techniques systematically with DoU calculation.
+
+## Worked Examples
+
+### Example 1: Interpreting an IR Spectrum
+**Problem:** A compound with molecular formula C4H8O shows a strong IR absorption at 1715 cm^-1 and no absorption above 3000 cm^-1 except at 2850-2950 cm^-1. What functional group is present?
+**Solution:** The absorption at 1715 cm^-1 indicates a carbonyl (C=O) stretch. The absence of broad O-H absorption above 3000 cm^-1 rules out a carboxylic acid. The absence of N-H stretch rules out an amide. The sharp, moderate-wavenumber carbonyl is consistent with an aldehyde (no O-H, but C-H stretch around 2720 cm^-1 should be checked). Given C4H8O and one C=O: likely butanal (CH3CH2CH2CHO) or butanone (CH3CH2COCH3).
+
+### Example 2: Degree of Unsaturation Calculation
+**Problem:** A compound with molecular formula C6H6O has the following spectroscopic data: IR: 3300 (broad), 1600, 1500 cm^-1. 1H NMR: 7.2 (5H, multiplet), 4.5 (1H, singlet), 2.0 (1H, singlet, exchanges with D2O). Identify the compound.
+**Solution:** DoU = 2C + 2 + N - H/2 - X/2 = 12 + 2 - 3 = 4. IR at 3300 (broad) indicates O-H (phenol or alcohol). 1600, 1500 cm^-1: aromatic ring (DoU >= 4). 1H NMR: 5H multiplet at 7.2 ppm = monosubstituted benzene. 1H singlet at 4.5 ppm = CH attached to O. 1H singlet at 2.0 ppm exchanging with D2O = OH. Compound: phenol (C6H5OH).
 
 ## Cross-References
 

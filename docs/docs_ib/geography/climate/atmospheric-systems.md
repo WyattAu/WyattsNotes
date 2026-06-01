@@ -1,8 +1,6 @@
 ---
 title: Atmospheric Systems
-description:
-  'Rigorous IB geography notes covering Atmospheric Systems. Includes definitions, derivations,
-  worked examples, and exam-style problems.'
+description: 'IB Geography Atmospheric Systems notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 slug: atmospheric-systems
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Control Flow
-description:
-  'Control Flow — If / Else; Initialization Statement; Idiomatic Error Check; Switch with worked
-  examples and exam-style questions.'
+description: 'Go Control Flow notes covering key definitions, core concepts, worked examples, and practice questions for focused revision and exam readiness.'
 slug: control-flow
 date: 2026-04-18
 tags:

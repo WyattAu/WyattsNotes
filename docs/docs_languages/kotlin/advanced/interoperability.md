@@ -1,8 +1,6 @@
 ---
 title: Java Interoperability
-description:
-  'Java Interoperability — Calling Java from Kotlin; Getters and Setters; Nullability and Platform
-  Types; Handling Platform Types.'
+description: 'Kotlin Java Interoperability notes covering key definitions, core concepts, worked examples, and practice questions for clear learning and effective revision.'
 slug: interoperability
 date: 2026-04-18
 tags:

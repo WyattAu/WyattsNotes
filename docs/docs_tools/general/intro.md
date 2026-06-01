@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to General Notes
-description:
-  'Rigorous software tools notes covering Introduction to General Notes. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'General Introduction to General notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 slug: intro
 sidebar_position: 1
 date: 2025-05-15T22:45:51.828Z

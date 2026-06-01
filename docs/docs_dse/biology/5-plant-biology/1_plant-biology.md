@@ -1,8 +1,6 @@
 ---
 title: Plant Biology
-description:
-  'DSE Biology plant biology notes covering photosynthesis, leaf structure, transpiration, transport
-  in plants, plant hormones, and reproduction.'
+description: 'DSE Plant Biology notes covering key definitions, core concepts, worked examples, and practice questions for targeted revision and examination preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

@@ -1,9 +1,7 @@
 ---
 id: dse-chemistry-acids-bases-electrochemistry
 title: Chemistry - Acids, Bases, and Electrochemistry
-description:
-  'DSE Chemistry notes covering acid-base theories, pH calculations, salt preparation, redox
-  reactions, electrolysis, and electrochemical cells.'
+description: 'DSE Chemistry - Acids, Bases, and Electrochemistry notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: chemistry-acids-bases-electrochemistry
 ---
 

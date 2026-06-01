@@ -1,9 +1,7 @@
 ---
 id: trees-and-graphs
 title: Trees and Graphs
-description:
-  'Trees and Graphs — Tree Terminology; Binary Trees; Classifications; Node Definition with worked
-  examples and exam-style questions.'
+description: 'Algorithms Trees and Graphs notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 slug: trees-and-graphs
 ---
 

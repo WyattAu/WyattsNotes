@@ -1,8 +1,6 @@
 ---
 title: 'Waves and Optics -- Diagnostic Tests'
-description:
-  "Hardest DSE waves-optics questions: diffraction conditions, interference path differences,
-  polarization, EM spectrum, and Young's double slit analysis."
+description: 'DSE Physics Waves and Optics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-waves-optics
 hide_table_of_contents: true
 ---

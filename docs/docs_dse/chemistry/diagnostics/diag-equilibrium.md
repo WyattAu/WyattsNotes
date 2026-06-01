@@ -1,8 +1,6 @@
 ---
 title: 'Chemical Equilibrium -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Chemical Equilibrium -- Diagnostic Tests. With
-  full worked solutions and examiner commentary.'
+description: 'DSE Chemistry Chemical Equilibrium -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-chemical-equilibrium
 hide_table_of_contents: true
 ---

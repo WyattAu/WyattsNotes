@@ -1,8 +1,6 @@
 ---
 title: Main-Group Chemistry
-description:
-  "University-level notes on Main-Group Chemistry: 1. Group 1-2 Metals; 1.1 Alkali and Alkaline
-  Earth Metals; 1.2 s-Block Compounds."
+description: 'University Main-Group Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for rigorous review and exam preparation.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -360,6 +358,16 @@ S (S$_8$/polymeric), Se (gray/red/black).
 - **Group 16:** O$_3$, H$_2$O (anomalous), S allotropes; sulfur oxoacids.
 - **Group 17:** F$_2$–I$_2$ reactivity trends; interhalogens; oxoacids of Cl.
 - **Group 18:** Xe compounds (XeF$_2$, XeF$_4$, XeF$_6$); 3-center-4-electron bonding model.
+
+## Worked Examples
+
+### Example 1: Predicting Acid-Base Behaviour of Oxides
+**Problem:** Classify the following oxides as acidic, basic, or amphoteric: Na2O, Al2O3, P4O10, SO3, MgO.
+**Solution:** Na2O: basic (Group 1 metal oxide, forms NaOH in water). Al2O3: amphoteric (Group 13, reacts with both acids and bases). P4O10: acidic (non-metal oxide of a high-oxidation-state element, forms H3PO4). SO3: acidic (non-metal oxide, forms H2SO4). MgO: basic (Group 2 metal oxide, forms Mg(OH)2). The trend across a period is from basic (left) to acidic (right).
+
+### Example 2: Silicon vs Carbon Chemistry
+**Problem:** Explain why silicon does not form stable double bonds with oxygen (analogous to carbon dioxide), and why SiO2 forms a giant covalent lattice rather than discrete molecules.
+**Solution:** The Si=O pi bond is weaker than the C=O pi bond because silicon's 3p orbitals have poor overlap with oxygen's 2p orbitals (size mismatch and reduced p-p overlap). Instead, Si forms four single Si-O bonds, each of which is strong (partial d-p pi bonding provides additional stabilisation). This leads to a 3D network of SiO4 tetrahedra (quartz) rather than discrete SiO2 molecules. This is why silicon carbonyl analogues do not exist and why silica has a very high melting point.
 
 ## Cross-References
 

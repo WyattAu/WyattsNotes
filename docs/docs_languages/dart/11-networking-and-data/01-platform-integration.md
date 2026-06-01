@@ -1,8 +1,6 @@
 ---
 title: Platform Integration
-description:
-  'Platform Integration — Platform Checks; Platform Class; defaultTargetPlatform;
-  Theme.of(context).platform with worked examples and exam-style questions.'
+description: 'Dart Platform Integration notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive study and thorough revision.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

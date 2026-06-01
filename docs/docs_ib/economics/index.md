@@ -1,8 +1,6 @@
 ---
 title: IB Economics
-description:
-  'Complete IB Economics notes covering microeconomics, macroeconomics, international economics,
-  development economics, quantitative methods, and game theory.'
+description: 'IB Economics notes covering key definitions, core concepts, worked examples, and practice questions for targeted revision and exam readiness.'
 slug: economics
 tags: [ib, ib-economics]
 categories: [ib-economics]

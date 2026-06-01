@@ -1,8 +1,6 @@
 ---
 title: Pattern Matching
-description:
-  'Dart: Pattern Matching — Pattern Matching Overview; Refutable vs Irrefutable Patterns; Where
-  Patterns Appear; Logical Patterns.'
+description: 'Dart Pattern Matching notes covering key definitions, core concepts, worked examples, and practice questions for detailed study and thorough revision.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

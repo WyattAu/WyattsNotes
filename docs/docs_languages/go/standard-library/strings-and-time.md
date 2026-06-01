@@ -6,7 +6,7 @@ tags:
   - Go
 categories:
   - Go
-description: Go's strings and time packages. String manipulation with Contains, HasPrefix, Split, Join, Builder, and Replace. Time parsing, formatting, durations, timers, and tickers.
+description: Go's strings and time packages. String manipulation with Contains, HasPrefix, Split, Join, Builder, and Replace. Time parsing, formatting, durations, timers,.
 ---
 
 ## strings Package

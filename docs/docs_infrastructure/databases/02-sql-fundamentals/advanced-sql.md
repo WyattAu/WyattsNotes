@@ -1,9 +1,7 @@
 ---
 id: advanced-sql
 title: Advanced SQL
-description:
-  'Advanced SQL — Window Functions Deep Dive; Window Function Anatomy; Framing Clauses; ROWS vs
-  RANGE vs GROUPS with worked examples and exam-style questions.'
+description: 'Advanced SQL notes covering key definitions, core concepts, worked examples, and practice questions for targeted learning and effective revision.'
 slug: advanced-sql
 ---
 

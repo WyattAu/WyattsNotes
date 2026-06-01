@@ -1,9 +1,7 @@
 ---
 id: text-processing
 title: Text Processing
-description:
-  'Text Processing — Regular Expressions; BRE vs ERE vs PCRE; Character Classes and Anchors;
-  Quantifiers with worked examples and exam-style questions.'
+description: 'Text Processing notes covering key definitions, core concepts, worked examples, and practice questions for solid review and exam preparation.'
 slug: text-processing
 sidebar_position: 3
 ---

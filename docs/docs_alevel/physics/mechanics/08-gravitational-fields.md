@@ -1,8 +1,6 @@
 ---
 title: Gravitational Fields
-description:
-  "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Gravitation; 2. Gravitational
-  Field Strength; 3. Gravitational Potential."
+description: 'A-Level Physics Gravitational Fields notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

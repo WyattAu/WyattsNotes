@@ -1,8 +1,6 @@
 ---
 title: Electrical Circuits
-description:
-  "DSE Physics electrical circuits notes covering Ohm's law, series and parallel circuits,
-  resistance, Kirchhoff's laws, and electrical energy and power."
+description: 'DSE Physics Electrical Circuits notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

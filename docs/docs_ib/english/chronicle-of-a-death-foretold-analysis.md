@@ -4,10 +4,7 @@ tags:
   - IB
   - English
 slug: chronicle-of-a-death-foretold-analysis
-description:
-  'Rigorous IB English notes covering Chronicle of a Death Foretold  Close Rea. Includes
-  definitions, derivations, worked examples, and exam-style problems. and analysis for the
-  International Baccalaureate.'
+description: 'IB English Chronicle of a Death Foretold — Close Reading notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 ---
 
 # Chronicle of a Death Foretold: Close Reading and Analysis

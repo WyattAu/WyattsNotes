@@ -1,8 +1,6 @@
 ---
 title: Heredity
-description:
-  'Heredity — Meiosis and Sexual Life Cycles (CED Unit 5); Chromosome Terminology; Meiosis Overview;
-  Meiosis I (Reductional Division).'
+description: 'Qualifications Biology Heredity notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-14
 tags:
   - ap

@@ -1,6 +1,6 @@
 ---
 title: Scottish Highers Physics
-description: 'Scottish Higher and Advanced Higher Physics revision notes'
+description: 'Scottish Higher and Advanced Higher Physics revision notes. Part of the Scottish Higher Physics revision notes for SQA exam preparation.'
 date: 2026-04-14
 tags:
   - highers

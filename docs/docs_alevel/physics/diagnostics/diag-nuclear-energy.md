@@ -1,8 +1,6 @@
 ---
 title: 'Nuclear Energy -- Diagnostic Tests'
-description:
-  Diagnostic tests for mass defect, binding energy, fission, fusion, and nuclear reactions at
-  maximum A-Level Physics difficulty.
+description: 'A-Level Physics Nuclear Energy -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-nuclear-energy
 hide_table_of_contents: true
 ---

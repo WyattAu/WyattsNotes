@@ -1,8 +1,6 @@
 ---
 title: Database Systems (Advanced)
-description:
-  'University-level notes on Advanced Database Systems: 1. Advanced Relational Algebra; 1.1
-  Relational Algebra Equivalences; 1.2 Query Optimisation via Algebra.'
+description: 'University Computing Database Systems (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing

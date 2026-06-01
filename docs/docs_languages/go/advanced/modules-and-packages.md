@@ -1,8 +1,6 @@
 ---
 title: Modules and Packages
-description:
-  'Modules and Packages — Packages; Package Naming Conventions; Import Paths; Internal Package with
-  worked examples and exam-style questions.'
+description: 'Go Modules and Packages notes covering key definitions, core concepts, worked examples, and practice questions for detailed study and examination practice.'
 slug: modules-and-packages
 date: 2026-04-18
 tags:

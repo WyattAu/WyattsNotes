@@ -1,7 +1,7 @@
 ---
 title: Individual Oral Commentary Guide
 slug: english/individual-oral-commentary
-description: Complete guide to the IB English Individual Oral Commentary (IOC). Covers extract selection, preparation strategies, 10-minute commentary structure, marking criteria, sample annotations, and practice framework.
+description: Complete guide to the IB English Individual Oral Commentary (IOC). Covers extract selection, preparation strategies, 10-minute commentary structure, marking.
 ---
 
 # Individual Oral Commentary Guide

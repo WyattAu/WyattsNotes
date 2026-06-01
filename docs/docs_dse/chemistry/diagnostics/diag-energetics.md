@@ -1,8 +1,6 @@
 ---
 title: 'Energetics / Thermochemistry -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on energetics / thermochemistry within the DSE specification, each
-  with a full worked solution.
+description: 'DSE Energetics / Thermochemistry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-energetics-thermochemistry
 hide_table_of_contents: true
 ---

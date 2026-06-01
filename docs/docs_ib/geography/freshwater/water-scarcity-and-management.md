@@ -1,8 +1,6 @@
 ---
 title: Water Scarcity and Management
-description:
-  'Physical and economic water scarcity, water stress indices, supply-side and demand-side
-  management strategies, and case studies for IB Geography.'
+description: 'IB Geography Water Scarcity and Management notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 slug: water-scarcity-and-management
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Quantum Mechanics
-description:
-  'University-level notes on Quantum Mechanics: 1. Historical Motivation; 1.1 Failures of Classical
-  Physics; 1.2 Key Experiments.'
+description: 'University Physics Quantum Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics

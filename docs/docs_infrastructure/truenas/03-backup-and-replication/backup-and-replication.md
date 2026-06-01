@@ -1,9 +1,7 @@
 ---
 id: backup-and-replication
 title: Backup and Replication
-description:
-  'Backup and Replication — The 3-2-1 Backup Rule; ZFS Snapshots; Snapshot Lifecycle; Snapshot Types
-  with worked examples and exam-style questions.'
+description: 'Backup and Replication notes covering key definitions, core concepts, worked examples, and practice questions for focused study and examination practice.'
 slug: backup-and-replication
 ---
 

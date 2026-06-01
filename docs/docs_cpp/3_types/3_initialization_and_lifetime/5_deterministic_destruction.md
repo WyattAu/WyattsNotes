@@ -1,8 +1,6 @@
 ---
 title: Deterministic Destruction
-description:
-  'C++: Deterministic Destruction — Destructor Semantics; When Destructors Run; The
-  Reverse-Construction-Order Guarantee. and examination.'
+description: 'C++ Programming Deterministic Destruction notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

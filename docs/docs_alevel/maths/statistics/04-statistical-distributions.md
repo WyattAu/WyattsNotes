@@ -1,8 +1,6 @@
 ---
 title: Statistical Distributions
-description:
-  'A-Level Mathematics notes on Statistical Distributions: Board Coverage; 1. Discrete Random
-  Variables; 1.1 Definition; 1.2 Expectation and variance.'
+description: 'A-Level Maths Statistical Distributions notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

@@ -1,8 +1,6 @@
 ---
 title: Worktrees
-description:
-  'Worktrees — "error: Your local changes would be overwritten";. work on feature.;. work on main.;.
-  work on feature-auth. for thorough revision and examination p.'
+description: 'Git Worktrees notes covering key definitions, core concepts, worked examples, and practice questions for detailed learning and effective revision.'
 date: 2025-06-03T17:00:00.000Z
 tags:
   - git

@@ -1,8 +1,6 @@
 ---
 title: 'Complex Numbers -- Diagnostic Tests'
-description:
-  "A-Level Further Maths diagnostic tests for complex numbers: Argand diagrams, modulus-argument
-  form, De Moivre's theorem, roots of unity."
+description: 'A-Level Further Maths Complex Numbers -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-further-complex-numbers
 hide_table_of_contents: true
 ---

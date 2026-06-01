@@ -1,8 +1,6 @@
 ---
 title: Metaprogramming
-description:
-  'Metaprogramming — Reflection; Class References; Property References; Function References with
-  worked examples and exam-style questions.'
+description: 'Kotlin Metaprogramming notes covering key definitions, core concepts, worked examples, and practice questions for complete study and thorough revision.'
 slug: metaprogramming
 date: 2026-04-18
 tags:

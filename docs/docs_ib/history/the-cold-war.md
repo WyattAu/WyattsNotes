@@ -4,9 +4,7 @@ tags:
   - IB
   - History
 slug: the-cold-war
-description:
-  'Rigorous IB history notes covering The Cold War. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB History The Cold War notes covering key definitions, core concepts, worked examples, and practice questions for solid review and exam preparation.'
 ---
 
 ## The Cold War: A Systems-Level Analysis (1945--1991)

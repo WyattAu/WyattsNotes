@@ -1,8 +1,6 @@
 ---
 title: Energy and Work (Extended)
-description:
-  'A-Level Mathematics notes on Energy and Work (Extended): Energy and Work (Extended Treatment); 1.
-  Work Done by a Force; 1.1 Definition.'
+description: 'A-Level Maths Energy and Work (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

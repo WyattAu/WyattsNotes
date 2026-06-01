@@ -6,7 +6,7 @@ tags:
   - Go
 categories:
   - Go
-description: Data races and race conditions in Go. Detecting races with go test -race, the sync/atomic package for lock-free programming, sync.Pool for memory reuse, and common concurrency pitfalls.
+description: Data races and race conditions in Go. Detecting races with go test -race, the sync/atomic package for lock-free programming, sync.
 ---
 
 ## What is a Data Race?

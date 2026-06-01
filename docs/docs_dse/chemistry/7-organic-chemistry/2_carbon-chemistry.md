@@ -1,8 +1,6 @@
 ---
 title: Chemistry - Carbon Chemistry
-description:
-  'DSE Chemistry carbon chemistry notes covering hydrocarbons, alkanes, alkenes, alcohols,
-  carboxylic acids, polymers, and macromolecules.'
+description: 'DSE Chemistry - Carbon Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry

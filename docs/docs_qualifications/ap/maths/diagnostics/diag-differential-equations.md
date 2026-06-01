@@ -1,8 +1,6 @@
 ---
 title: 'Differential Equations -- Diagnostic Tests'
-description:
-  "Diagnostic tests targeting the hardest AP Calculus differential equation questions including
-  separable equations, Euler's method, slope fields, logistic"
+description: 'Qualifications Maths Differential Equations -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap

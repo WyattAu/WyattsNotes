@@ -1,8 +1,6 @@
 ---
 title: Climate Adaptation and Mitigation
-description:
-  'Rigorous IB geography notes covering Climate Adaptation and Mitigation. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'IB Geography Climate Adaptation and Mitigation notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 slug: climate-adaptation-and-mitigation
 ---
 

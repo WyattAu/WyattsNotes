@@ -1,8 +1,6 @@
 ---
 title: 'Combinatorics -- Diagnostic Tests'
-description:
-  'Diagnostic tests for DSE Combinatorics: permutations, combinations, binomial theorem,
-  restrictions, and common order-versus-selection errors.'
+description: 'DSE Maths Combinatorics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: diag-../compulsory/13_permutations-and-combinations
 hide_table_of_contents: true
 ---

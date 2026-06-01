@@ -1,8 +1,6 @@
 ---
 title: 'Energy -- Diagnostic Tests'
-description:
-  'GCSE Physics diagnostic tests for energy: energy stores, transfers, conservation, efficiency,
-  specific heat capacity, work and power.'
+description: 'GCSE Physics Energy -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: diag-energy
 hide_table_of_contents: true
 ---

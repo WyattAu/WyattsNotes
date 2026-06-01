@@ -1,8 +1,6 @@
 ---
 title: Supply-Side Policy
-description:
-  'IB Economics — aggregate demand and supply, supply-side policies, economic growth, business
-  cycles, Laffer curve.'
+description: 'IB Economics Supply-Side Policy notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

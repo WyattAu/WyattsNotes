@@ -1,8 +1,6 @@
 ---
 title: Database Design and Development
-description:
-  'Database Design and Development — Higher Database Design; Flat Files vs. Relational Databases;
-  Relational Database Concepts; Entity-Relationship Modelling.'
+description: 'Scottish Highers Computer Science Database Design and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - highers

@@ -1,9 +1,7 @@
 ---
 id: dse-biology-cell-biology-and-biochemistry
 title: Biology - Cell Biology and Biochemistry
-description:
-  'DSE Biology notes covering cell structure, organelles, biological molecules, enzymes, membrane
-  transport, and cellular processes.'
+description: 'DSE Biology - Cell Biology and Biochemistry notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 slug: biology-cell-biology-and-biochemistry
 ---
 

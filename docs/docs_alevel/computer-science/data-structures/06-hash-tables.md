@@ -1,8 +1,6 @@
 ---
 title: Hash Tables
-description:
-  'A-Level Computer Science notes on Hash Tables: 1. Introduction; Definition; The Core Idea; 2.
-  Hash Functions with worked examples and exam-style questions.'
+description: 'A-Level Computer Science Hash Tables notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

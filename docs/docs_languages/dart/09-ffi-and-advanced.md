@@ -1,8 +1,6 @@
 ---
 title: FFI and Advanced Topics
-description:
-  'FFI and Advanced Topics — Null Safety Deep Dive; Sound vs Unsounded Null Safety; Nullable and
-  Non-Nullable Types; Null Assertion Operator (`!`).'
+description: 'Dart FFI and Advanced Topics notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - Dart

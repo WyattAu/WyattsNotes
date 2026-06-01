@@ -1,8 +1,6 @@
 ---
 title: Entry Point
-description:
-  'Entry Point — Program Entry; main() Function Variants; Command-Line Arguments; Output: with
-  worked examples and exam-style questions.'
+description: 'Dart Entry Point notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision and examination preparation.'
 date: 2025-07-12T15:49:11.104Z
 tags:
   - Dart

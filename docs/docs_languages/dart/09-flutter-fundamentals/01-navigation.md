@@ -1,8 +1,6 @@
 ---
 title: Navigation
-description:
-  'Navigation — Navigator 1.0; Basic Push and Pop; Passing Data to a Route; Returning Data from a
-  Route with worked examples and exam-style questions.'
+description: 'Dart Navigation notes covering key definitions, core concepts, worked examples, and practice questions for focused revision and examination preparation.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

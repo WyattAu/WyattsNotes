@@ -1,8 +1,6 @@
 ---
 title: Class Loading and Memory Model
-description:
-  'Java: Class Loading and Memory Model — Class Loading; The Delegation Model; Bootstrap Class
-  Loader; Platform Class Loader.'
+description: 'Java Class Loading and Memory Model notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']

@@ -1,8 +1,6 @@
 ---
 title: Homeostasis
-description:
-  'A-Level Biology notes on Homeostasis: principles, negative and positive feedback, blood glucose
-  regulation, temperature regulation, osmoregulation, heart rate r'
+description: 'A-Level Biology Homeostasis notes covering key definitions, core concepts, worked examples, and practice questions for rigorous study and examination practice.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

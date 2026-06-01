@@ -1,8 +1,6 @@
 ---
 title: Thread-Local Storage (TLS)
-description:
-  'C++: Thread-Local Storage (TLS) — `thread_local` Keyword and Storage Duration; Formal Storage
-  Duration Hierarchy; `thread_local` at Class Scope.'
+description: 'C++ Programming Thread-Local Storage (TLS) notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

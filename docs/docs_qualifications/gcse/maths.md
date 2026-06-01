@@ -1,9 +1,7 @@
 ---
 title: GCSE Maths Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive GCSE Maths revision guide covering Number, Algebra, Geometry, Statistics,
-  key formulas, exam tips and common mistakes.'
+description: 'GCSE Maths.Md Maths Study notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 tags:
   - gcse
   - maths
@@ -416,18 +414,30 @@ $$P(B \mid A) = \frac{P(A \text{ and } B)}{P(A)}$$
 
 ---
 
-## 7. Common Mistakes
+## Common Pitfalls
 
-1. **Cancelling incorrectly in fractions.** $\frac{a + b}{a + c} \neq \frac{b}{c}$. You cannot cancel terms across addition — only factors can be cancelled.
-
-2. **Forgetting the negative sign when squaring.** $(-3)^2 = 9$, not $-9$. The square of any real number is non-negative. On a calculator, use brackets: $(-3)^2$.
-
+1. **Cancelling incorrectly in fractions.** $\frac{a + b}{a + c} \neq \frac{b}{c}$. You cannot cancel terms across addition -- only factors can be cancelled.
+2. **Forgetting the negative sign when squaring.** $(-3)^2 = 9$, not $-9$. The square of any real number is non-negative.
 3. **Confusing the radius and diameter.** The area formula uses $r^2$ not $d^2$. Always check whether a question gives you the radius or the diameter before substituting.
+4. **Rounding too early in multi-step calculations.** Carry forward the full calculator value and round only the final answer.
+5. **Writing inequalities the wrong way round.** When multiplying or dividing an inequality by a negative number, reverse the inequality sign.
+6. **Using the wrong trigonometric ratio.** Always label the triangle first, then apply SOH CAH TOA systematically.
+7. **Forgetting units in the final answer.** Always include correct units.
 
-4. **Rounding too early in multi-step calculations.** Carry forward the full calculator value (store it in memory or use ANS) and round only the final answer. Rounding at intermediate stages accumulates error.
+## Worked Examples
 
-5. **Writing inequalities the wrong way round.** When multiplying or dividing an inequality by a negative number, reverse the inequality sign. $-2x > 6$ becomes $x < -3$, not $x > -3$.
+### Example 1: Solving a Quadratic by Factorising
+**Problem:** Solve x^2 - 5x + 6 = 0.
+**Solution:** Find two numbers that multiply to 6 and add to -5: -2 and -3. Factorise: (x - 2)(x - 3) = 0. Therefore x = 2 or x = 3.
 
-6. **Using the wrong trigonometric ratio.** Always label the triangle first — identify the hypotenuse (longest side, opposite the right angle), the side opposite the given angle, and the side adjacent to it. Then apply SOH CAH TOA systematically.
+### Example 2: Using the Sine Rule
+**Problem:** In triangle ABC, angle A = 42 degrees, angle B = 67 degrees, side a = 8 cm. Find side b.
+**Solution:** Angle C = 180 - 42 - 67 = 71 degrees. By the sine rule: b/sin(67) = 8/sin(42). b = 8 x sin(67) / sin(42) = 8 x 0.921 / 0.669 = 11.0 cm (to 3 s.f.).
 
-7. **Forgetting units in the final answer.** Always include correct units (cm², m³, kg, £, etc.). If the question asks for a specific form (e.g. "in kilometres per hour"), convert and state the units clearly.
+### Example 3: Tree Diagram Probability
+**Problem:** A bag contains 3 red and 2 blue counters. Two counters are drawn without replacement. Find the probability that both are red.
+**Solution:** P(first red) = 3/5. P(second red | first red) = 2/4 = 1/2. P(both red) = 3/5 x 1/2 = 3/10.
+
+## Summary
+
+GCSE Mathematics covers number (fractions, decimals, percentages, ratio, standard form, bounds), algebra (simplifying, expanding, factorising, solving equations, inequalities, sequences, functions, graphs), geometry (angles, circles, Pythagoras, trigonometry, transformations, vectors), and statistics (averages, grouped data, scatter graphs, cumulative frequency, box plots, probability, tree diagrams, conditional probability). Key exam skills include showing all working, reading questions twice to identify exact requirements, estimating answers to check reasonableness, and managing time at roughly one mark per minute.

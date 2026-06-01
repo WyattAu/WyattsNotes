@@ -1,9 +1,7 @@
 ---
 id: advanced-data-structures
 title: Advanced Data Structures
-description:
-  'Advanced Data Structures — Segment Tree; Range Sum Query; Range Min/Max Query; Lazy Propagation
-  with worked examples and exam-style questions.'
+description: 'Algorithms Advanced Data Structures notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 slug: advanced-data-structures
 ---
 

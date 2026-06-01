@@ -1,8 +1,6 @@
 ---
 title: 'Kinematics -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for kinematics covering displacement-distance traps, SUVAT selection,
-  vertical motion sign errors, projectile edge cases, and'
+description: 'A-Level Maths Kinematics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: diag-kinematics
 hide_table_of_contents: true
 ---

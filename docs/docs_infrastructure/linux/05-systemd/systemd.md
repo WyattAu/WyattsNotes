@@ -1,9 +1,7 @@
 ---
 id: systemd
 title: Systemd
-description:
-  'Systemd — Design Principles; Unit Types; Finding Unit Files; Show the search path with worked
-  examples and exam-style questions.'
+description: 'Systemd notes covering key definitions, core concepts, worked examples, and practice questions for systematic review and exam preparation.'
 slug: systemd
 sidebar_position: 1
 ---

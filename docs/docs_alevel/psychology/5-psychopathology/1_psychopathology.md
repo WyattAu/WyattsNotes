@@ -6,9 +6,7 @@ tags:
   - alevel-psychology
 categories:
   - alevel-psychology
-description:
-  Covers definitions of abnormality, depression, phobias, and OCD with behavioural, cognitive, and
-  biological explanations and treatments for A-Level Psychology.
+description: 'A-Level Psychology Psychopathology notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 slug: psychopathology
 ---
 

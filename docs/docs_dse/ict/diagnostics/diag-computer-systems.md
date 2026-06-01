@@ -1,8 +1,6 @@
 ---
 title: 'Computer Systems -- Diagnostic Tests'
-description:
-  'DSE ICT diagnostic tests for computer systems: CPU architecture, Von Neumann model,
-  fetch-decode-execute cycle, memory hierarchy, I/O devices.'
+description: 'DSE Ict Computer Systems -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 slug: diag-computer-systems
 hide_table_of_contents: true
 ---

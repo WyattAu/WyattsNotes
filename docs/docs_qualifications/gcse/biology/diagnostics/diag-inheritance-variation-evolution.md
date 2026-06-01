@@ -1,8 +1,6 @@
 ---
 title: 'Inheritance, Variation and Evolution -- Diagnostic Tests'
-description:
-  'GCSE Biology diagnostic tests for inheritance: DNA, genetics, natural selection, evolution,
-  genetic engineering, selective breeding.'
+description: 'GCSE Biology Inheritance, Variation and Evolution -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-inheritance-variation-evolution
 hide_table_of_contents: true
 ---

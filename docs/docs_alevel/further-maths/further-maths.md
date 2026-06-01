@@ -1,8 +1,6 @@
 ---
 title: Further Mathematics
-description:
-  'A-Level Further Maths notes on Further Mathematics: Board Coverage for comprehensive revision and
-  examination preparation.'
+description: 'A-Level Further Maths Further Mathematics notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - Maths

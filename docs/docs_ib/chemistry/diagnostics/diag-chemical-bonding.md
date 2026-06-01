@@ -1,8 +1,6 @@
 ---
 title: 'Chemical Bonding -- Diagnostic Tests'
-description:
-  'Diagnostic tests for IB Chemistry chemical bonding: VSEPR, hybridisation, intermolecular forces,
-  bond polarity, and metallic bonding.'
+description: 'IB Chemistry Chemical Bonding -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-chemical-bonding
 hide_table_of_contents: true
 ---

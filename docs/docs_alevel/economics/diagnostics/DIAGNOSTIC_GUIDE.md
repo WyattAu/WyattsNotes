@@ -1,8 +1,6 @@
 ---
 title: 'A-Level Economics -- Diagnostic Guide'
-description:
-  'Comprehensive guide to A-Level Economics diagnostic tests with coverage map, grading rubric,
-  prerequisite chains, and timing recommendations.'
+description: 'A-Level Economics -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

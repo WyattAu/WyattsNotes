@@ -1,8 +1,6 @@
 ---
 title: Bisect
-description:
-  'Bisect — Binary Search for Bugs; Why Manual Debugging Fails; Basic Usage; Mark the current commit
-  as bad (bug is present).'
+description: 'Git Bisect notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and revision.'
 date: 2025-06-03T10:00:00.000Z
 tags:
   - git

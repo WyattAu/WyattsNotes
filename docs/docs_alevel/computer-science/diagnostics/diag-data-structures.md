@@ -1,8 +1,6 @@
 ---
 title: 'Data Structures -- Diagnostic Tests'
-description:
-  'Challenging A-Level computer science diagnostic questions on Data Structures -- Diagnostic Tests.
-  With full worked solutions and examiner commentary.'
+description: 'A-Level Computer Science Data Structures -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-data-structures
 hide_table_of_contents: true
 ---

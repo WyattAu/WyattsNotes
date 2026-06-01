@@ -1,8 +1,6 @@
 ---
 title: 'IB Biology -- Diagnostic Guide'
-description:
-  'Comprehensive guide to IB Biology diagnostic tests with coverage map, grading rubric,
-  prerequisite chains, and timing recommendations.'
+description: 'IB Biology -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for structured study and thorough revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

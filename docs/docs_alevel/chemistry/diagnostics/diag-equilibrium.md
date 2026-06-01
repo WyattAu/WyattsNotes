@@ -1,8 +1,6 @@
 ---
 title: 'Chemical Equilibrium -- Diagnostic Tests'
-description:
-  Diagnostic tests for Le Chatelier's principle, Kc, Kp, and industrial processes at the hardest
-  A-Level Chemistry standard.
+description: 'A-Level Chemistry Chemical Equilibrium -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-equilibrium
 hide_table_of_contents: true
 ---

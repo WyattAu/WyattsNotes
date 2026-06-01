@@ -1,10 +1,6 @@
 ---
 title: Classical Mechanics
-description:
-  "Comprehensive university-level notes on classical mechanics covering Newtonian mechanics,
-  Lagrangian and Hamiltonian formulations, Noether's theorem, central force problems, rigid body
-  dynamics, small oscillations and normal modes, nonlinear dynamics and chaos, and an introduction
-  to classical field theory."
+description: 'University Physics Classical Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics

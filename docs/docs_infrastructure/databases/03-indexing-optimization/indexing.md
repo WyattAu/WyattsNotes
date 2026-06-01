@@ -1,9 +1,7 @@
 ---
 id: indexing
 title: Indexing and Optimization
-description:
-  'Indexing and Optimization — Why Indexes Matter; B-Tree Structure; Node Anatomy; B-Tree vs B+ Tree
-  with worked examples and exam-style questions.'
+description: 'Indexing and Optimization notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
 slug: indexing
 sidebar_position: 1
 tags:

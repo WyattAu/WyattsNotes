@@ -1,8 +1,6 @@
 ---
 title: vcpkg
-description:
-  'C++: vcpkg — Complete Manifest Example; Architectural Components; Baseline Mechanics; 2. Registry
-  Federation with worked examples and exam-style questions.'
+description: 'C++ Programming vcpkg notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
 date: 2025-12-11T04:55:37.164Z
 tags:
   - cpp

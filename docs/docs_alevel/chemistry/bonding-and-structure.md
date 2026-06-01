@@ -1,8 +1,6 @@
 ---
 title: Bonding & Structure
-description:
-  'A-Level Chemistry notes on Bonding & Structure: Ionic Bonding; Formation; Structure of Ionic
-  Compounds; Properties of Ionic Compounds.'
+description: 'A-Level Chemistry Bonding & Structure notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

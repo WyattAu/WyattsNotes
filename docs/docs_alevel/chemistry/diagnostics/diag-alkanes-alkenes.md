@@ -1,8 +1,6 @@
 ---
 title: 'Alkanes and Alkenes -- Diagnostic Tests'
-description:
-  Diagnostic tests for free radical substitution, electrophilic addition, and reaction mechanisms at
-  the hardest A-Level Chemistry standard.
+description: 'A-Level Chemistry Alkanes and Alkenes -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-alkanes-alkenes
 hide_table_of_contents: true
 ---

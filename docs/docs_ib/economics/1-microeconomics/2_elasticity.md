@@ -1,6 +1,6 @@
 ---
 title: Elasticity
-description: 'IB Economics — price, income, and cross-price elasticity of demand and supply.'
+description: 'IB Economics — price, income, and cross-price elasticity of demand and supply. Aligned with the IB Economics HL/SL syllabus for Paper 1 and Paper 2 examination.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

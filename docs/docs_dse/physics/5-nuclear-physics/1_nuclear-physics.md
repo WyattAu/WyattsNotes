@@ -1,8 +1,6 @@
 ---
 title: Nuclear Physics
-description:
-  'DSE Physics nuclear physics notes covering radioactivity, alpha beta gamma radiation, half-life,
-  nuclear reactions, fission, fusion, and binding energy.'
+description: 'DSE Nuclear Physics notes covering key definitions, core concepts, worked examples, and practice questions for targeted learning and effective revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE

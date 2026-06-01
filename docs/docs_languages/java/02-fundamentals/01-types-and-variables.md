@@ -1,8 +1,6 @@
 ---
 title: Types and Variables
-description:
-  'Types and Variables — JVM Architecture and Memory Model; Stack vs Heap vs Metaspace; Where
-  Variables Live; Primitive Types.'
+description: 'Java Types and Variables notes covering key definitions, core concepts, worked examples, and practice questions for solid study and examination practice.'
 date: 2025-06-05T10:00:00.000Z
 tags: ['java']
 categories: ['java']

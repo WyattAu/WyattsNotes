@@ -1,8 +1,6 @@
 ---
 title: Mathematics
-description:
-  'A-Level Mathematics notes on Mathematics: Board Coverage; Course Structure; Statistics; Mechanics
-  with worked examples and exam-style questions.'
+description: 'A-Level Maths Mathematics notes covering key definitions, core concepts, worked examples, and practice questions for solid learning and effective revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

@@ -6,7 +6,7 @@ tags:
   - IB History
 categories:
   - IB History
-description: IB History guide to the Causes and Effects of Wars for Paper 2. Covers WWI and WWII in depth, comparative analysis of causes and consequences, historiographical debates, essay writing tips, and common pitfalls.
+description: IB History guide to the Causes and Effects of Wars for Paper 2. Covers WWI and WWII in depth, comparative analysis of causes and consequences,.
 ---
 
 # Causes and Effects of Wars

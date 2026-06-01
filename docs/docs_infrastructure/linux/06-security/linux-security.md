@@ -1,9 +1,7 @@
 ---
 id: linux-security
 title: Linux Security
-description:
-  'Linux Security — User and Group Model; User and Group Files; View user information; Create user
-  with worked examples and exam-style questions.'
+description: 'Linux Security notes covering key definitions, core concepts, worked examples, and practice questions for targeted revision and examination preparation.'
 slug: linux-security
 sidebar_position: 1
 ---

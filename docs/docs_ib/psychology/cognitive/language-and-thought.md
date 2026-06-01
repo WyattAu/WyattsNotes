@@ -1,8 +1,6 @@
 ---
 title: Language and Thought
-description:
-  'Detailed coverage of the Sapir-Whorf hypothesis, linguistic relativity, bilingualism, language
-  acquisition theories, and key research for IB Psychology.'
+description: 'IB Psychology Language and Thought notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: language-and-thought
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Newton's Laws of Motion
-description:
-  "Newton's Laws of Motion — Newton's First Law -- Inertia (CED Unit 2); Inertial Reference Frames;
-  Mass and Inertia for thorough revision and examination pr."
+description: 'Qualifications Physics Newton\'s Laws of Motion notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-04-14
 tags:
   - ap

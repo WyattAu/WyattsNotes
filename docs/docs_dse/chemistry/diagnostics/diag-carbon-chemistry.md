@@ -1,8 +1,6 @@
 ---
 title: 'Carbon Chemistry -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Carbon Chemistry -- Diagnostic Tests. With full
-  worked solutions and examiner commentary.'
+description: 'DSE Carbon Chemistry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 slug: diag-carbon-chemistry
 hide_table_of_contents: true
 ---

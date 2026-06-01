@@ -1,8 +1,6 @@
 ---
 title: Graphs
-description:
-  'A-Level Computer Science notes on Graphs: 1. Graph Fundamentals; Definition; Terminology; 2.
-  Graph Representations with worked examples and exam-style questi.'
+description: 'A-Level Computer Science Graphs notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

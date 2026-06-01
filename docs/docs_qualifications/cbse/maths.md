@@ -1,10 +1,7 @@
 ---
 title: CBSE Mathematics Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive CBSE Class 11-12 Mathematics study guide covering Sets and Functions, Algebra, Calculus,
-  Coordinate Geometry, Trigonometry, Probability and Statistics. Includes key formulas, exam tips, and
-  common mistakes.'
+description: 'Qualifications Maths.Md CBSE Mathematics Study notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 tags:
   - cbse
   - maths
@@ -431,7 +428,7 @@ $$P(X = r) = \binom{n}{r} p^r (1-p)^{n-r}$$
 
 ---
 
-## 9. Common Mistakes
+## Common Pitfalls
 
 1. **Forgetting the constant of integration** $+C$ in indefinite integrals — this is penalised in almost every paper.
 2. **Incorrect domain for inverse trig functions.** Remember: $\sin^{-1}$ maps to $[-\pi/2, \pi/2]$; $\cos^{-1}$ maps to $[0, \pi]$.
@@ -440,3 +437,21 @@ $$P(X = r) = \binom{n}{r} p^r (1-p)^{n-r}$$
 5. **Applying L'Hôpital's rule to non-indeterminate forms.** Always verify the limit is $0/0$ or $\infty/\infty$ first.
 6. **Missing absolute values** in $\int \frac{1}{x}\,dx = \ln|x| + C$ and in area calculations.
 7. **Incorrectly applying the second derivative test.** When $f''(x_0) = 0$, you must use the first derivative test — do not conclude "no max/min".
+
+## Worked Examples
+
+### Example 1: Finding the Area Under a Curve
+**Problem:** Find the area enclosed by y = x^2, the x-axis, and the lines x = 0 and x = 2.
+**Solution:** Area = integral from 0 to 2 of x^2 dx = [x^3/3] from 0 to 2 = 8/3 - 0 = 8/3 square units. Since y >= 0 on this interval, no absolute value is needed.
+
+### Example 2: Solving a System Using Matrices
+**Problem:** Solve: 2x + y = 5, x - y = 1.
+**Solution:** In matrix form AX = B, where A = [[2,1],[1,-1]], B = [[5],[1]]. |A| = (2)(-1) - (1)(1) = -3. Since |A| != 0, unique solution exists. A^{-1} = (1/-3)[[-1,-1],[-1,2]] = (1/3)[[1,1],[1,-2]]. X = A^{-1}B = (1/3)[[1,1],[1,-2]][[5],[1]] = (1/3)[[6],[3]] = [[2],[1]]. So x = 2, y = 1.
+
+### Example 3: Probability Using Bayes' Theorem
+**Problem:** A disease affects 1% of a population. A test has 99% sensitivity (true positive rate) and 95% specificity (true negative rate). A person tests positive. What is the probability they actually have the disease?
+**Solution:** Let D = disease, T = positive test. P(D) = 0.01, P(D') = 0.99. P(T|D) = 0.99, P(T|D') = 1 - 0.95 = 0.05. P(T) = P(T|D)P(D) + P(T|D')P(D') = 0.99(0.01) + 0.05(0.99) = 0.0099 + 0.0495 = 0.0594. P(D|T) = P(T|D)P(D)/P(T) = 0.0099/0.0594 = 0.1667 or approximately 16.7%. Despite a positive test, the probability of having the disease is only about 1/6 due to the low prior probability.
+
+## Summary
+
+CBSE Mathematics covers sets and functions, algebra (matrices, determinants, complex numbers, quadratics), calculus (limits, derivatives, integration, applications), coordinate geometry (straight lines, conic sections), trigonometry (identities, equations, inverse functions, properties of triangles), and probability and statistics (measures of central tendency, variance, binomial distribution, Bayes' theorem). The theory paper is 80 marks and the internal assessment is 20 marks. Key exam strategies include showing all working, managing time, memorising NCERT formulas, and practising previous-year papers.

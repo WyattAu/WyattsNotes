@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Git
-description:
-  'Introduction to Git — What is Git; Design Philosophy; 1. Distributed by Default; 2. Snapshots,
-  Not Diffs with worked examples and exam-style questions.'
+description: 'Git Introduction to Git notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2025-06-02T21:50:00.000Z
 tags:
   - git

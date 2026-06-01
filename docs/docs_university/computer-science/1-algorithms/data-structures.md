@@ -1,8 +1,6 @@
 ---
 title: Data Structures
-description:
-  'University-level notes on Data Structures: arrays, linked lists, stacks, queues,
-  hash tables, trees, heaps, graphs, tries, and amortized analysis.'
+description: 'University Computer Science Data Structures notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -588,6 +586,16 @@ Amortized cost: $O(1)$ per insert.
 
 7. **Misunderstanding B-tree parameter $t$.** The minimum degree $t$ determines the range of keys per node ($t-1$ to $2t-1$). Setting $t$ too small yields tall trees; setting it too large wastes memory per node. Choose $t$ based on disk block size.
 
+## Worked Examples
+
+### Example 1: Building a Binary Search Tree
+**Problem:** Insert the sequence 5, 3, 7, 1, 4, 6, 8 into an initially empty BST. What is the height and the inorder traversal?
+**Solution:** Root=5. 3 goes left, 7 goes right. 1 goes left of 3, 4 goes right of 3. 6 goes left of 7, 8 goes right of 7. Height = 3 (levels 0-3). Inorder traversal: 1, 3, 4, 5, 6, 7, 8 (sorted order). The BST is balanced in this case.
+
+### Example 2: Hash Table Collision Resolution
+**Problem:** Insert keys 10, 22, 31, 4, 15, 28, 17 into a hash table of size 7 using chaining with h(k) = k mod 7.
+**Solution:** h(10)=3, h(22)=1, h(31)=3, h(4)=4, h(15)=1, h(28)=0, h(17)=3. Slot 0: [28]. Slot 1: [22, 15]. Slot 3: [10, 31, 17]. Slot 4: [4]. Slots 2, 5, 6: empty. Load factor = 7/7 = 1. Average search time with chaining = O(1 + alpha) = O(2).
+
 ## Summary
 
 - **Arrays** give $O(1)$ random access; **linked lists** give $O(1)$ insert/delete at known positions.
@@ -598,3 +606,11 @@ Amortized cost: $O(1)$ per insert.
 - **Graphs** are represented via adjacency lists (sparse) or matrices (dense).
 - **Tries** enable efficient prefix search in $O(m)$ time.
 - **Amortized analysis** (aggregate, accounting, potential) bounds total cost of a sequence, not individual operations.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |
+| Graph Algorithms | [View](/docs/university/computer-science/graph-algorithms) |
+| Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |

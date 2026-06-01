@@ -1,9 +1,7 @@
 ---
 id: ownership
 title: Ownership and Borrowing
-description:
-  'Ownership and Borrowing — The Ownership Rules; Move Semantics; What Moves and What Copies; The
-  `Copy` Trait with worked examples and exam-style questions.'
+description: 'Rust Ownership and Borrowing notes covering key definitions, core concepts, worked examples, and practice questions for systematic review and exam preparation.'
 slug: ownership
 ---
 

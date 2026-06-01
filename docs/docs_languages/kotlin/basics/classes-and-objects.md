@@ -1,8 +1,6 @@
 ---
 title: Classes and Objects
-description:
-  'Classes and Objects — Classes; Primary Constructor; Secondary Constructors; Visibility Modifiers
-  with worked examples and exam-style questions.'
+description: 'Kotlin Classes and Objects notes covering key definitions, core concepts, worked examples, and practice questions for effective study and examination practice.'
 slug: classes-and-objects
 date: 2026-04-18
 tags:

@@ -1,8 +1,6 @@
 ---
 title: Synthesis
-description:
-  "University-level notes on Organic Synthesis: 1. Retrosynthetic Analysis; 1.1 Disconnections
-  and Synthons; 1.2 Functional Group Interconversions."
+description: 'University Chemistry Synthesis notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -384,6 +382,16 @@ Enzymes provide extremely high enantioselectivity under mild conditions:
 - **Multistep design:** Convergent > linear; minimize steps; maximize atom economy.
 - **Asymmetric synthesis:** Chiral auxiliaries, chiral catalysts (Sharpless, Noyori, Jacobsen),
   biocatalysis; enantiomeric excess as the metric.
+
+## Worked Examples
+
+### Example 1: Retrosynthetic Analysis of an Alcohol
+**Problem:** Propose a synthesis of 2-pentanol (CH3CH2CH2CH(OH)CH3) from starting materials of three or fewer carbons.
+**Solution:** Retrosynthesis: 2-pentanol -> Grignard addition to butanal: CH3CH2CH2CHO + CH3MgBr -> 2-pentanol. Butanal can be made from oxidation of 1-butanol or from a Wittig reaction. The Grignard reagent CH3MgBr is made from methyl bromide and Mg. Route: CH3CH2CH2CH2OH (oxidise with PCC) -> CH3CH2CH2CHO + CH3MgBr (dry ether) -> 2-pentanol. All starting materials are within 4 carbons; butanal can alternatively be prepared via hydroboration-oxidation of 1-butene.
+
+### Example 2: Protecting Group Strategy
+**Problem:** Convert 4-hydroxybutanal to 4-(2-hydroxyethyl)phenyl ketone via a Grignard reaction with PhMgBr.
+**Solution:** The hydroxyl group interferes with the Grignard reagent. Protect as a TBS ether: 4-hydroxybutanal + TBSCl, imidazole -> 4-(TBSO)butanal. React with PhMgBr (adds to the aldehyde) -> TBS-protected alcohol. Deprotect with TBAF in THF to give the target. Alternatively, protect as an acetal using ethylene glycol and TsOH, then deprotect with aqueous acid after the Grignard addition.
 
 ## Cross-References
 

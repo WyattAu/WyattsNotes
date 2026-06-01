@@ -1,8 +1,6 @@
 ---
 title: Computational Thinking
-description:
-  'AP Computer Science: Computational Thinking — What Is Computational Thinking? (CED Unit 1); Four
-  Pillars; Abstraction (CED Unit 2); Why Abstraction Matters.'
+description: 'Qualifications Computer Science Computational Thinking notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap

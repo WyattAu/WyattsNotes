@@ -1,8 +1,6 @@
 ---
 title: Generics
-description:
-  'Generics — Type Parameters; Constraints; Built-in Constraints; Custom Constraints with worked
-  examples and exam-style questions.'
+description: 'Go Generics notes covering key definitions, core concepts, worked examples, and practice questions for complete learning and effective revision.'
 slug: generics
 date: 2026-04-18
 tags:

@@ -1,8 +1,6 @@
 ---
 title: 'Hypothesis Testing -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for hypothesis testing covering one-tailed and two-tailed tests, Type I and
-  II errors, critical regions, p-values, and test power at'
+description: 'A-Level Maths Hypothesis Testing -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-hypothesis-testing
 hide_table_of_contents: true
 ---

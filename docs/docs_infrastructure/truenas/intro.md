@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to TrueNAS
-description:
-  'Rigorous infrastructure and DevOps notes covering Introduction to TrueNAS. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Introduction to TrueNAS notes covering key definitions, core concepts, worked examples, and practice questions for solid learning and effective revision.'
 slug: intro
 sidebar_position: 1
 ---

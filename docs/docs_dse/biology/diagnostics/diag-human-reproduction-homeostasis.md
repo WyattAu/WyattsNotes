@@ -1,8 +1,6 @@
 ---
 title: 'Human Reproduction and Homeostasis -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on human reproduction and homeostasis within the DSE specification,
-  each with a full worked solution.
+description: 'DSE Biology Human Reproduction and Homeostasis -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-human-reproduction-homeostasis
 hide_table_of_contents: true
 ---

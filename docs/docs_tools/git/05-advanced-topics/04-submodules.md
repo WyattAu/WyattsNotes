@@ -1,8 +1,6 @@
 ---
 title: Submodules
-description:
-  'Submodules — `.gitmodules` File; Tree Entry; Basic Operations; Adding a Submodule with worked
-  examples and exam-style questions.'
+description: 'Git Submodules notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and mastery.'
 date: 2025-06-03T11:00:00.000Z
 tags:
   - git

@@ -6,7 +6,7 @@ tags:
   - University Maths
 categories:
   - University Maths
-description: "University-level abstract algebra: groups, rings, fields, homomorphisms, quotient structures, Sylow theorems, Galois theory, and applications to number theory and cryptography."
+description: "University-level abstract algebra: groups, rings, fields, homomorphisms, quotient structures, Sylow theorems, Galois theory, and applications to number theory."
 ---
 
 ## 1. Introduction
@@ -470,3 +470,19 @@ Security relies on the **discrete logarithm problem**: given $g$ and $g^a$, find
 | Solvability | Polynomial solvable by radicals $\Leftrightarrow$ Galois group is solvable |
 | Abel–Ruffini | General quintic (degree $\geq 5$) is not solvable by radicals |
 | Fermat's little theorem | $a^{p-1} \equiv 1 \pmod{p}$; consequence of Lagrange's theorem |
+
+## Worked Examples
+
+### Example 1: Proving a Subgroup
+**Problem:** Prove that the set of even permutations in S_n forms a subgroup (the alternating group A_n).
+**Solution:** A permutation is even if it can be expressed as an even number of transpositions. Identity: 0 transpositions (even). Closure: product of two even permutations has an even total number of transpositions. Inverse: reversing the sequence of transpositions preserves parity. Therefore A_n is a subgroup of S_n.
+
+### Example 2: Calculating the Order of an Element
+**Problem:** Find the order of the element (1 2 3)(4 5) in S_5.
+**Solution:** The order of a permutation is the LCM of the cycle lengths. The cycles are (1 2 3) of length 3 and (4 5) of length 2. Order = lcm(3, 2) = 6. The element (1 2 3)(4 5)^6 = identity.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Topology | [View](/docs/university/mathematics/topology) |

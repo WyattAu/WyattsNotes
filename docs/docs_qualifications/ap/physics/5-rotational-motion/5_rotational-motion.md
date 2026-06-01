@@ -1,8 +1,6 @@
 ---
 title: Rotational Motion
-description:
-  'Rotational Motion — Rotational Kinematics (CED Unit 7); Angular Quantities; Angular Velocity and
-  Acceleration; Constant Angular Acceleration Equations.'
+description: 'Qualifications Physics Rotational Motion notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-14
 tags:
   - ap

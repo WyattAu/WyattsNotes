@@ -1,8 +1,6 @@
 ---
 title: Mechanics
-description:
-  'Mechanics — Scalars and Vectors; Resolving Vectors into Components; Vector Addition; Equations of
-  Motion (Kinematics), ensuring thorough understanding.'
+description: 'Scottish Highers Physics Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-04-14
 tags:
   - highers

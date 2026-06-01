@@ -1,9 +1,7 @@
 ---
 id: productivity
 title: Developer Productivity
-description:
-  'Developer Productivity — Time Management; The Pomodoro Technique; Time Blocking; Deep Work with
-  worked examples and exam-style questions.'
+description: 'General Developer Productivity notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 slug: productivity
 ---
 

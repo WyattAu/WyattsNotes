@@ -1,6 +1,6 @@
 ---
 title: Irish LC Mathematics
-description: 'Irish Leaving Certificate Mathematics revision notes for Higher and Ordinary Level'
+description: 'Irish Leaving Certificate Mathematics revision notes for Higher and Ordinary Level. Part of the Irish LC Mathematics notes for State Examination preparation.'
 date: 2026-04-14
 tags:
   - ilc

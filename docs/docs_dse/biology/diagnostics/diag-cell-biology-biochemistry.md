@@ -1,8 +1,6 @@
 ---
 title: 'Cell Biology and Biochemistry -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on cell biology and biochemistry within the DSE specification, each
-  with a full worked solution.
+description: 'DSE Cell Biology and Biochemistry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-cell-biology-biochemistry
 hide_table_of_contents: true
 ---

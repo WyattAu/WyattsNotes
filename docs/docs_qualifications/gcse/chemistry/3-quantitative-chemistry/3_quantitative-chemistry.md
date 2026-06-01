@@ -1,8 +1,6 @@
 ---
 title: Quantitative Chemistry
-description:
-  'Quantitative Chemistry — 1. Relative Formula Mass; 1.1 Calculating Relative Formula Mass; 1.2
-  Conservation of Mass and Balancing Equations.'
+description: 'GCSE Quantitative Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 date: 2026-04-14
 tags:
   - gcse

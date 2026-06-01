@@ -1,8 +1,6 @@
 ---
 title: 'Magnetism and Electromagnetism -- Diagnostic Tests'
-description:
-  'GCSE Physics diagnostic tests for magnetism and electromagnetism: magnetic fields,
-  electromagnets, the motor effect, electromagnetic induction.'
+description: 'GCSE Physics Magnetism and Electromagnetism -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-magnetism
 hide_table_of_contents: true
 ---

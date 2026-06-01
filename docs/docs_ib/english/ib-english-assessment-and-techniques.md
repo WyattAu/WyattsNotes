@@ -4,10 +4,7 @@ tags:
   - IB
   - English
 slug: ib-english-assessment-and-techniques
-description:
-  'Rigorous IB English notes covering IB English Assessment and Analytical Techniques. Includes
-  definitions, derivations, worked examples, and exam-style problems. for the International
-  Baccalaureate.'
+description: 'IB English Assessment and Analytical Techniques notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 ---
 
 # IB English Assessment and Analytical Techniques

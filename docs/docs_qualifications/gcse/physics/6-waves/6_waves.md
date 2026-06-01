@@ -1,8 +1,6 @@
 ---
 title: Waves
-description:
-  'Waves — 1.2 Why the Distinction Matters; 1.3 Wave Terminology; 1.4 The Wave Equation; 1.5
-  Derivation of the Wave Equation.'
+description: 'GCSE Physics Waves notes covering key definitions, core concepts, worked examples, and practice questions for effective revision and exam readiness.'
 date: 2026-04-14
 tags:
   - gcse

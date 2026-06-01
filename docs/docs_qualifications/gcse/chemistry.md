@@ -1,10 +1,7 @@
 ---
 title: GCSE Chemistry Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive GCSE Chemistry revision guide covering Atomic Structure, Bonding, Chemical Changes,
-  Quantitative Chemistry, Organic Chemistry, Chemical Analysis, Rate of Reaction, key definitions,
-  exam tips and common mistakes.'
+description: 'GCSE Chemistry.Md Chemistry Study notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 tags:
   - gcse
   - chemistry
@@ -502,13 +499,13 @@ If a system at equilibrium is subjected to a change, the equilibrium shifts to *
 
 ---
 
-## 10. Common Mistakes
+## Common Pitfalls
 
 1. **Using 2.8.8 instead of 2.8.1 for potassium.** Potassium has atomic number 19. The electron configuration is 2.8.8.1 (not 2.8.8, which is argon with 18 electrons). The extra electron goes into the fourth shell because the third shell can only hold 8 electrons at GCSE level.
 
 2. **Confusing empirical and molecular formula.** The empirical formula is the simplest ratio. For glucose ($\text{C}_6\text{H}_{12}\text{O}_6$), the molecular formula is $\text{C}_6\text{H}_{12}\text{O}_6$ and the empirical formula is $\text{CH}_2\text{O}$. They are only the same when the simplest ratio equals the actual ratio.
 
-3. **Not balancing equations before doing mole calculations.** Always check the stoichiometry. If the equation says 2 moles of product, then 1 mole of reactant gives 2 moles of product — the ratio matters for every calculation.
+3. **Not balancing equations before doing mole calculations.** Always check the stoichiometry. If the equation says 2 moles of product, then 1 mole of reactant gives 2 moles of product -- the ratio matters for every calculation.
 
 4. **Mixing up flame test colours.** Sodium is yellow, potassium is lilac (must be viewed through cobalt blue glass to distinguish from sodium contamination), copper is blue-green. Learn them as a mnemonic or visual association.
 
@@ -517,3 +514,21 @@ If a system at equilibrium is subjected to a change, the equilibrium shifts to *
 6. **Leaving the empirical formula as a decimal ratio.** If you get 1 : 1.5, multiply both by 2 to get 2 : 3. Empirical formulas must always use whole numbers. If you get 1 : 1.33, multiply by 3 to get 3 : 4.
 
 7. **Stating "the equilibrium shifts to the left" without explaining why.** Le Chatelier's principle questions require you to state both the direction of the shift AND the reasoning (which change is being opposed). For example: "The equilibrium shifts to the right because increasing temperature opposes the endothermic direction, which is the backward reaction, so the forward (exothermic) reaction is favoured to absorb the excess heat."
+
+## Worked Examples
+
+### Example 1: Mole Calculation
+**Problem:** What mass of carbon dioxide is produced when 12 g of carbon is burned completely in oxygen?
+**Solution:** Equation: C + O2 -> CO2. Mr(C) = 12, so moles of C = 12/12 = 1 mol. Ratio C:CO2 is 1:1, so moles of CO2 = 1 mol. Mr(CO2) = 44, so mass = 1 x 44 = 44 g.
+
+### Example 2: Titration Calculation
+**Problem:** 25.0 cm^3 of sodium hydroxide solution reacts with 20.0 cm^3 of 0.100 mol/dm^3 hydrochloric acid. Calculate the concentration of NaOH.
+**Solution:** HCl + NaOH -> NaCl + H2O. Moles of HCl = 0.100 x (20.0/1000) = 0.002 mol. Ratio 1:1, so moles of NaOH = 0.002 mol. Concentration = 0.002 / (25.0/1000) = 0.080 mol/dm^3.
+
+### Example 3: Yield Calculation
+**Problem:** 10 g of CaCO3 is heated to produce CaO and CO2. 5.0 g of CaO is obtained. Calculate the percentage yield. (Mr CaCO3 = 100, Mr CaO = 56)
+**Solution:** CaCO3 -> CaO + CO2. Moles CaCO3 = 10/100 = 0.1 mol. Theoretical moles CaO = 0.1 mol. Theoretical mass = 0.1 x 56 = 5.6 g. Percentage yield = (5.0/5.6) x 100 = 89.3%.
+
+## Summary
+
+GCSE Chemistry covers atomic structure (subatomic particles, isotopes, electron configuration), bonding (ionic, covalent, metallic, intermolecular forces), chemical changes (reactivity series, displacement, extraction, acids and bases, electrolysis), quantitative chemistry (moles, reacting masses, yield, atom economy), organic chemistry (alkanes, alkenes, alcohols, carboxylic acids, polymers), chemical analysis (chromatography, flame tests, instrumental methods), and rate of reaction (collision theory, factors affecting rate, Le Chatelier's principle). Key exam skills include balancing equations with state symbols, showing all working in calculations, and applying Le Chatelier's principle with full reasoning.

@@ -1,9 +1,7 @@
 ---
 id: greedy-algorithms
 title: Greedy Algorithms
-description:
-  'Greedy algorithm design: the exchange argument, matroid theory, scheduling problems, graph
-  algorithms, and conditions under which greedy strategies are optimal.'
+description: 'Algorithms Greedy Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: greedy-algorithms
 ---
 

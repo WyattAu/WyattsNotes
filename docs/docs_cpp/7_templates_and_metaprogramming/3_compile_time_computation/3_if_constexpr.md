@@ -1,8 +1,6 @@
 ---
 title: Compile-Time Branching and Constexpr Functions
-description:
-  'Rigorous C++ programming notes on Compile Comprehensive study guide with definitions,
-  derivations, and exam-focused problems.'
+description: 'C++ Programming Compile-Time Branching and Constexpr notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

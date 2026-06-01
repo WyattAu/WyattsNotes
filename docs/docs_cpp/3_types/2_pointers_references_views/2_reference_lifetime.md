@@ -1,8 +1,6 @@
 ---
 title: Reference And Lifetime
-description:
-  'C++: Reference And Lifetime — 1. Architectural Implementation; Assembly Inspection; Memory Layout
-  (Class Members); 2. Nullability and Invariants.'
+description: 'C++ Programming Reference And Lifetime notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 date: 2026-01-03T04:13:20.675Z
 tags:
   - cpp

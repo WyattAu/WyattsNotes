@@ -1,8 +1,6 @@
 ---
 title: Widgets and Lifecycle
-description:
-  'Widgets and Lifecycle — 1. What is a Widget; 2. Widget Types; StatelessWidget; StatefulWidget
-  with worked examples and exam-style questions.'
+description: 'Dart Widgets and Lifecycle notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and exam readiness.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

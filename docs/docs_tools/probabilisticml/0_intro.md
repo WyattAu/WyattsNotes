@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Probabilistic ML
-description:
-  'Probabilistic machine learning: Introduction to Probabilistic ML — Abstract; Notes Format,
-  covering core concepts and practical techniques.'
+description: 'Probabilisticml Introduction to notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: intro
 sidebar_position: 1
 date: 2026-01-07T07:50:21.312Z

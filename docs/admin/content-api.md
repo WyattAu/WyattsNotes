@@ -216,3 +216,38 @@ import { WyattsNotesClient } from '@wyattsnotes/api-client';
 const client = new WyattsNotesClient({ apiKey: 'wn_live_...' });
 const subjects = await client.subjects.list();
 ```
+
+## Worked Examples
+
+### Example 1: Fetching IB Mathematics HL Topics
+**Problem:** Retrieve page 1 of topics for the IB subject (slug `ib`), showing up to 10 results.
+**Solution:**
+```
+GET /api/v1/subjects/ib/topics?page=1&per_page=10
+```
+Headers: `X-API-Key: wn_live_abc123def456`
+
+Expected response contains `"data"` array with topic objects including slug, name, description, and content_count. Check `X-RateLimit-Remaining` to confirm quota.
+
+### Example 2: Searching for Quadratic Content
+**Problem:** Search all subjects for content mentioning "quadratic equations", limited to A-Level results.
+**Solution:**
+```
+GET /api/v1/search?q=quadratic+equations&subject=alevel-maths-physics
+```
+Returns a paginated list with snippets and URLs. If `total_pages` > 1, follow the `"next"` link.
+
+### Example 3: Handling Rate Limits
+**Problem:** Your integration hits a 429 response. How do you recover?
+**Solution:** Inspect the `Retry-After` header (if present) or the `X-RateLimit-Reset` timestamp. Pause requests until the window resets, then resume. Implement exponential backoff as a safety measure.
+
+## Common Pitfalls
+
+- **Missing API key header:** Requests without `X-API-Key` return 401. Verify the header is set before every request.
+- **Ignoring pagination:** The `"data"` array is paginated. Always check `meta.total_pages` and follow `"next"` links rather than assuming a single page contains all results.
+- **Hardcoding base URLs:** Different deployment environments (staging, production) use different base URLs. Use an environment variable for the base URL.
+- **Parsing errors without checking status codes:** Always check the HTTP status code and the `code` field in error responses before parsing `"data"`.
+
+## Summary
+
+The Content REST API provides paginated, authenticated access to subjects, topics, content pages, and search across all WyattsNotes qualification levels. All endpoints require an API key and return a consistent JSON envelope with data, metadata, and pagination links. Rate limits are enforced at 100 requests per minute per key.

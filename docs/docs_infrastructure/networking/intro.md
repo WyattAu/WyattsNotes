@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Networking
-description:
-  'Comprehensive infrastructure and DevOps networking notes on Introduction to Networking. Presents
-  core theory, worked examples, and problem-solving strategies.'
+description: 'Introduction to Networking notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision and exam readiness.'
 slug: intro
 sidebar_position: 1
 tags:

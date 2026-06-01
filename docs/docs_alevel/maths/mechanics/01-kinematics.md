@@ -1,8 +1,6 @@
 ---
 title: Kinematics
-description:
-  'A-Level Mathematics notes on Kinematics: Board Coverage; 1. Fundamental Quantities; 1.1
-  Definitions; 1.2 Relationships via calculus.'
+description: 'A-Level Maths Kinematics notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision and exam readiness.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

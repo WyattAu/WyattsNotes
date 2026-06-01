@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  Develop strategies for analysing unseen texts under exam conditions. Covers timed analysis,
-  annotation techniques, essay planning, and structuring responses to unseen passages.
+description: 'A-Level English Unseen Text Analysis notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 slug: unseen-text-analysis
 ---
 

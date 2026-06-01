@@ -6,7 +6,7 @@ tags:
   - University Physics
 categories:
   - University Physics
-description: "University-level thermodynamics: laws of thermodynamics, entropy, free energy, thermodynamic potentials, phase transitions, statistical mechanics foundations, and applications to engines and refrigerators."
+description: "University-level thermodynamics: laws of thermodynamics, entropy, free energy, thermodynamic potentials, phase transitions, statistical mechanics foundations,."
 ---
 
 ## 1. Introduction
@@ -481,3 +481,20 @@ That is, 60.2% efficiency in the ideal Otto cycle. Real engines achieve roughly 
 | Electromagnetism | [View](/docs/university/physics/electromagnetism) |
 | MIT 5.60 Thermodynamics | [View](https://ocw.mit.edu/courses/5-60-thermodynamics-kinetics-fall-2008/) |
 | Stanford Statistical Mechanics | [View](https://web.stanford.edu/~peastwood/statmech/) |
+
+## Worked Examples
+
+### Example 1: Carnot Efficiency Calculation
+**Problem:** A Carnot engine operates between a hot reservoir at 600 K and a cold reservoir at 300 K. If the engine absorbs 1000 J of heat per cycle, how much work is done and how much heat is rejected?
+**Solution:** Efficiency eta = 1 - T_c/T_h = 1 - 300/600 = 0.50 (50%). Work = eta * Q_h = 0.50 * 1000 = 500 J. Q_c = Q_h - W = 1000 - 500 = 500 J. The engine rejects 500 J of heat to the cold reservoir per cycle.
+
+### Example 2: Entropy Change of Phase Transition
+**Problem:** Calculate the entropy change when 1 mol of ice melts at 0 degrees C. Delta H_fusion = 6.01 kJ/mol.
+**Solution:** Delta S = q_rev/T = Delta H_fusion / T = 6010 J / 273.15 K = 22.0 J K^-1 mol^-1. The entropy increases because the solid (ordered) becomes liquid (more disordered).
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Quantum Mechanics II | [View](/docs/university/physics/quantum-mechanics-ii) |
+| Kinetic Theory | [View](/docs/university/physics/kinetic-theory) |

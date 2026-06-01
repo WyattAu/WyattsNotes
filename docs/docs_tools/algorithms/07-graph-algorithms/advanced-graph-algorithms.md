@@ -1,9 +1,7 @@
 ---
 id: advanced-graph-algorithms
 title: Advanced Graph Algorithms
-description:
-  "Advanced Graph Algorithms — Strongly Connected Components; Kosaraju's Algorithm. with additional
-  techniques and methods."
+description: 'Algorithms Advanced Graph Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: advanced-graph-algorithms
 ---
 

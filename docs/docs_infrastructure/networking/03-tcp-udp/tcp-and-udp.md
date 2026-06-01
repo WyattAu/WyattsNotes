@@ -1,9 +1,7 @@
 ---
 id: tcp-and-udp
 title: TCP and UDP
-description:
-  'TCP and UDP — The Transport Layer in Context; UDP (User Datagram Protocol); UDP Header; UDP
-  Characteristics with worked examples and exam-style questions.'
+description: 'TCP and UDP notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and thorough revision.'
 slug: tcp-and-udp
 sidebar_position: 4
 tags:

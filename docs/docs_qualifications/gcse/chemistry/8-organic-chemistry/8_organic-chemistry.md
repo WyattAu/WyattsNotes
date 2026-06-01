@@ -1,8 +1,6 @@
 ---
 title: Organic Chemistry
-description:
-  'Organic Chemistry — 1.2 Hydrocarbons; 1.3 Homologous Series; 1.4 Naming Organic Compounds; 2.
-  Alkanes with worked examples and exam-style questions.'
+description: 'GCSE Organic Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for clear study and thorough revision.'
 date: 2026-04-14
 tags:
   - gcse

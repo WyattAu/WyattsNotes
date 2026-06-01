@@ -1,8 +1,6 @@
 ---
 title: 'Moments -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for moments covering perpendicular distance errors, pivot selection,
-  uniform beam pitfalls, tilting conditions, non-uniform bodies, and'
+description: 'A-Level Maths Moments -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 slug: diag-moments
 hide_table_of_contents: true
 ---

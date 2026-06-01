@@ -4,9 +4,7 @@ tags:
   - maths
   - ib
 slug: analysis-and-approaches-question-bank
-description:
-  'IB Mathematics AA exam-style question bank with full mark schemes. Covers Algebra and Functions,
-  Geometry and Trigonometry, Statistics and Probability, and Calculus.'
+description: 'IB Mathematics Analysis and Approaches notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 ---
 
 ## IB Mathematics AA — Question Bank

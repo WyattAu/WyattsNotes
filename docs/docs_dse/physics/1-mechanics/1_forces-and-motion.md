@@ -1,8 +1,6 @@
 ---
 title: Forces and Motion
-description:
-  "DSE Physics forces and motion notes covering Newton's laws, friction, projectile motion, circular
-  motion, momentum, and impulse with worked examples."
+description: 'DSE Physics Forces and Motion notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

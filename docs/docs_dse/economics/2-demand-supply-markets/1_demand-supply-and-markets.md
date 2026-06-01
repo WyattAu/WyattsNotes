@@ -1,9 +1,7 @@
 ---
 id: dse-economics-demand-supply-markets
 title: Economics - Demand, Supply, and Markets
-description:
-  'DSE Economics notes covering demand and supply analysis, market equilibrium, elasticity,
-  government intervention, and market failure.'
+description: 'DSE Economics - Demand, Supply, and Markets notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: economics-demand-supply-markets
 ---
 

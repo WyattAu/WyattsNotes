@@ -1,6 +1,6 @@
 ---
 title: Scottish Highers Biology
-description: 'Scottish Higher and Advanced Higher Biology revision notes'
+description: 'Scottish Higher and Advanced Higher Biology revision notes. Part of the Scottish Higher Biology revision notes for SQA exam preparation.'
 date: 2026-04-14
 tags:
   - highers

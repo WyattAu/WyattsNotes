@@ -1,8 +1,6 @@
 ---
 title: CMake Targets Properties and Generator Expressions
-description:
-  'C++: CMake Targets Properties and Generator Expressions — The Target-Centric Model; 1. Defining
-  Targets; 1. Executable: Compiles sources into a binary.'
+description: 'C++ Programming CMake Targets Properties and Generator notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2025-12-10T05:41:36.284Z
 tags:
   - cpp

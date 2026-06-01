@@ -1,8 +1,6 @@
 ---
 title: National Income and Macroeconomic Indicators
-description:
-  'DSE Economics notes on national income and macroeconomic indicators covering GDP measurement,
-  inflation, unemployment, economic growth, and living standards.'
+description: 'DSE Economics National Income and Macroeconomic Indicators notes covering key definitions, core concepts, worked practice questions for supplementary revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

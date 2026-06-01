@@ -1,8 +1,6 @@
 ---
 title: Light and Waves
-description:
-  'International LC Physics: Light and Waves — Wave Properties; Types of Waves (OL/HL); Why the
-  Distinction Matters; Wave Terminology (OL/HL).'
+description: 'ILC Physics Light and Waves notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and examination practice.'
 date: 2026-04-14
 tags:
   - ilc

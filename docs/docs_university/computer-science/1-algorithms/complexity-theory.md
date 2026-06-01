@@ -1,8 +1,6 @@
 ---
 title: Complexity Theory
-description:
-  'University-level notes on Complexity Theory: asymptotic notation, complexity classes
-  P, NP, NP-hard, NP-complete, reductions, Cook''s theorem, and approximation algorithms.'
+description: 'University Computer Science Complexity Theory notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -362,6 +360,16 @@ Some problems cannot be approximated within any constant factor unless P = NP.
 
 7. **Using wrong reduction type.** Karp (many-one) reductions map yes-instances to yes-instances and no-instances to no-instances. Turing reductions (which use $L_2$ as a subroutine) are more general but give weaker results for NP-hardness.
 
+## Worked Examples
+
+### Example 1: Proving a Language is in P
+**Problem:** Prove that the language PATH = {(G, u, v) : G is a directed graph with a path from u to v} is in P.
+**Solution:** BFS or DFS from u in G takes O(V + E) time, which is polynomial in the input size. If v is reached, accept; otherwise reject. Since there exists a polynomial-time algorithm, PATH is in P.
+
+### Example 2: NP-Completeness Reduction
+**Problem:** Prove that 3-SAT is NP-hard by reducing from SAT.
+**Solution:** Given a CNF formula phi, transform each clause into a set of exactly 3 literals. For clauses with 1 literal (l), replace with (l OR x OR NOT x) where x is a new variable. For clauses with 2 literals (l1 OR l2), replace with (l1 OR l2 OR x) AND (l1 OR l2 OR NOT x). This produces an equisatisfiable 3-CNF formula in polynomial time. Therefore, 3-SAT is NP-hard. Since 3-SAT is in NP, it is NP-complete.
+
 ## Summary
 
 - **Asymptotic notation** ($O$, $\Omega$, $\Theta$, $o$, $\omega$) describes growth rates of functions.
@@ -371,3 +379,11 @@ Some problems cannot be approximated within any constant factor unless P = NP.
 - **Polynomial reductions** propagate hardness: if $L_1 \leq_p L_2$ and $L_1$ is NP-hard, then $L_2$ is NP-hard.
 - **Approximation algorithms** provide near-optimal solutions in polynomial time with provable guarantees.
 - **Hardness of approximation** shows limits on how well NP-hard problems can be approximated.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |
+| Data Structures | [View](/docs/university/computer-science/data-structures) |
+| Graph Algorithms | [View](/docs/university/computer-science/graph-algorithms) |

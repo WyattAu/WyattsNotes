@@ -1,8 +1,6 @@
 ---
 title: Type Traits and Static Reflection Patterns
-description:
-  'C++: Type Traits and Static Reflection Patterns — The `<type_traits>` Header; `std::enable_if`
-  and SFINAE; Tag Dispatch.'
+description: 'C++ Programming Type Traits and Static Reflection Patterns notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -6,7 +6,7 @@ tags:
   - IB History
 categories:
   - IB History
-description: IB History guide to Authoritarian States for Paper 2. Covers Hitler and Nazi Germany, Mussolini and Fascist Italy, Stalin and the Soviet Union, comparative analysis, historiographical debates, and common pitfalls.
+description: IB History guide to Authoritarian States for Paper 2. Covers Hitler and Nazi Germany, Mussolini and Fascist Italy, Stalin and the Soviet Union, comparative.
 ---
 
 # Authoritarian States (20th Century)

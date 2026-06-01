@@ -1,9 +1,7 @@
 ---
 id: protocols-dunder-methods
 title: Protocols and Dunder Methods
-description:
-  "Protocols and Dunder Methods — Data Model Protocols; \_\_init\_\_ and \_\_new\_\_; \_\_repr\_\_
-  and \_\_str\_\_ for thorough revision and examination prepar."
+description: 'Python Protocols and Dunder Methods notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: protocols-dunder-methods
 ---
 

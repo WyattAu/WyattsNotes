@@ -1,9 +1,7 @@
 ---
 id: cargo-and-ecosystem
 title: Cargo and Ecosystem
-description:
-  'Cargo and Ecosystem — Cargo.toml Structure; Package Metadata Fields; Workspace Management;
-  Workspace Cargo.toml with worked examples and exam-style questions.'
+description: 'Rust Cargo and Ecosystem notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and mastery.'
 slug: cargo-and-ecosystem
 ---
 

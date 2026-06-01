@@ -1,9 +1,7 @@
 ---
 id: security-fundamentals
 title: Security Fundamentals
-description:
-  'Security Fundamentals — The CIA Triad; Confidentiality; Integrity; Availability with worked
-  examples and exam-style questions.'
+description: 'Security Fundamentals notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive learning and effective revision.'
 slug: security-fundamentals
 sidebar_position: 2
 ---

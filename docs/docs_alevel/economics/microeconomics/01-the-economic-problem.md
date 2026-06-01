@@ -1,8 +1,6 @@
 ---
 title: The Economic Problem
-description:
-  'A-Level Economics notes on The Economic Problem: 1. Fundamental Concepts for comprehensive
-  revision and examination preparation.'
+description: 'A-Level Economics The Economic Problem notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

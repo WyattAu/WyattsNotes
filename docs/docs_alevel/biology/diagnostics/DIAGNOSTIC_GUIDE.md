@@ -1,8 +1,6 @@
 ---
 title: 'A-Level Biology -- Diagnostic Test Guide'
-description:
-  'Challenging A-Level biology diagnostic questions on A-Level Biology -- Diagnostic Test Guide.
-  With full worked solutions and examiner commentary.'
+description: 'A-Level Biology -- Diagnostic Test notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

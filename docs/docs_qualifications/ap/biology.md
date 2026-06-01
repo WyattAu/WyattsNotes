@@ -1,7 +1,6 @@
 ---
 title: AP Biology Study Guide
-description:
-  'AP Biology study guide covering the chemistry of life, cell structure and function, cellular energetics, cell communication and cell cycle, heredity, evolution, key terms, and exam tips.'
+description: 'Qualifications Biology.Md AP Biology Study notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-05-31
 tags:
   - ap

@@ -1,8 +1,6 @@
 ---
 title: Networks and the Internet
-description:
-  'AP Computer Science: Networks and the Internet — The Internet (CED Unit 4); History and
-  Architecture; Internet Architecture; IP Addresses.'
+description: 'Qualifications Computer Science Networks and the Internet notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap

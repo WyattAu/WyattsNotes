@@ -1,9 +1,7 @@
 ---
 id: dse-biology-cell-biology
 title: Biology - Cell Biology
-description:
-  'DSE Biology notes covering prokaryotic and eukaryotic cell structure, organelles, microscopy,
-  cell membrane structure, transport mechanisms, and cell division (mitosis and meiosis).'
+description: 'DSE Biology - Cell Biology notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 slug: cell-biology
 tags: [DSE, Biology]
 categories: [DSE, Biology]
@@ -177,3 +175,24 @@ $$\text{Magnification} = \frac{\text{Image size}}{\text{Actual size}}$$
 | Genetic variation    | No                 | Yes (crossing over, independent assortment) |
 | Function            | Growth, repair     | Gamete production      |
 | Where               | Somatic cells      | Germ cells (gonads)    |
+
+## Worked Examples
+
+### Example 1: Calculating Actual Size from a Micrograph
+**Problem:** A cell in a light micrograph measures 45 mm across. The magnification is $\times 400$. Calculate the actual size of the cell in $\mu$m.
+**Solution:**
+$$\text{Actual size} = \frac{\text{Image size}}{\text{Magnification}} = \frac{45\ \text{mm}}{400} = 0.1125\ \text{mm} = 112.5\ \mu\text{m}$$
+
+### Example 2: Distinguishing Mitosis and Meiosis
+**Problem:** A cell has 46 chromosomes and undergoes division. After division, each daughter cell has 23 chromosomes. Was this mitosis or meiosis? Explain.
+**Solution:** This was meiosis. Mitosis produces daughter cells with the same chromosome number as the parent (diploid to diploid). The halving from 46 to 23 (diploid to haploid) is characteristic of meiosis, which produces gametes.
+
+## Common Pitfalls
+
+- **Confusing resolution and magnification:** Magnification enlarges the image; resolution determines the clarity of detail. Electron microscopes have higher resolution (not just higher magnification) than light microscopes.
+- **Mixing up osmosis direction:** Water moves from less negative water potential to more negative water potential (high water concentration to low), not the other way around.
+- **Stating mitosis produces "identical cells" without qualification:** Mitosis produces genetically identical cells only in ideal conditions. DNA mutations can introduce variation.
+
+## Summary
+
+Cell biology covers the structure and function of prokaryotic and eukaryotic cells, including organelle functions, the fluid mosaic model of cell membranes, transport mechanisms (passive, active, bulk), and cell division (mitosis and meiosis). Microscopy techniques (light and electron) and the ability to calculate actual size from magnification are essential practical skills for the DSE exam.

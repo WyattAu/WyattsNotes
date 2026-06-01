@@ -1,8 +1,6 @@
 ---
 title: Generators (std::generator)
-description:
-  'C++: Generators (std::generator) — Generators (`std::generator<T>`) and Synchronous Yielding;
-  `std::generator<T>` (C++23); `co_yield` as Syntactic Sugar.'
+description: 'C++ Programming Generators (std::generator) notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

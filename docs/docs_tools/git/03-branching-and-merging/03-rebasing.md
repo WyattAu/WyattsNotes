@@ -1,8 +1,6 @@
 ---
 title: Rebasing
-description:
-  'Rebasing — Merge vs Rebase: Visual Comparison; How Rebase Works Internally; Basic Rebase; Rebase
-  the current branch onto main.'
+description: 'Git Rebasing notes covering key definitions, core concepts, worked examples, and practice questions for effective study and examination practice.'
 date: 2025-06-03T04:00:00.000Z
 tags:
   - git

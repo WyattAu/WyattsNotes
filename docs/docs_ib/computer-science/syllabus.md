@@ -1,9 +1,7 @@
 ---
 title: Syllabus
 slug: syllabus
-description:
-  'Rigorous IB computer science notes covering Syllabus. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Computer Science Syllabus notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and mastery.'
 ---
 
 # IB Computer Science Syllabus Overview

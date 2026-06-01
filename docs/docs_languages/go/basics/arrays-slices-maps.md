@@ -1,8 +1,6 @@
 ---
 title: Arrays, Slices, and Maps
-description:
-  'Arrays, Slices, and Maps — Arrays; Array Length; Slices; Creating Slices with worked examples and
-  exam-style questions, ensuring thorough understanding.'
+description: 'Go Arrays, Slices, and Maps notes covering key definitions, core concepts, worked examples, and practice questions for efficient review and exam preparation.'
 slug: arrays-slices-maps
 date: 2026-04-18
 tags:

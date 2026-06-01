@@ -1,9 +1,7 @@
 ---
 id: network-tools
 title: Network Tools
-description:
-  'Networking: Network Tools — Diagnostic Methodology; The OSI-Layer Approach; Check interface
-  status; Check link speed and duplex.'
+description: 'Network Tools notes covering key definitions, core concepts, worked examples, and practice questions for effective study and thorough revision.'
 slug: network-tools
 sidebar_position: 8
 tags:

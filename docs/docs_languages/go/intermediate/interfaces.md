@@ -1,8 +1,6 @@
 ---
 title: Interfaces
-description:
-  'Interfaces — Interface Basics; Interface Composition; The Empty Interface; When to Use `any` with
-  worked examples and exam-style questions.'
+description: 'Go Interfaces notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive learning and effective revision.'
 slug: interfaces
 date: 2026-04-18
 tags:

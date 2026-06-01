@@ -1,8 +1,6 @@
 ---
 title: Coroutines
-description:
-  'Coroutines — Core Concepts; Setup; Suspend Functions; Coroutine Builders with worked examples and
-  exam-style questions, ensuring thorough understanding.'
+description: 'Kotlin Coroutines notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
 slug: coroutines
 date: 2026-04-18
 tags:

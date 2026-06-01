@@ -1,8 +1,6 @@
 ---
 title: 'Correlation and Regression -- Diagnostic Tests'
-description:
-  Hard diagnostic tests for correlation and regression covering PMCC, Spearman's rank, coding
-  effects, residual analysis, and hypothesis testing for correlation.
+description: 'A-Level Maths Correlation and Regression -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-correlation-and-regression
 hide_table_of_contents: true
 ---

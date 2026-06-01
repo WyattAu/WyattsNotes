@@ -1,8 +1,6 @@
 ---
 title: Organic Chemistry
-description:
-  'DSE Chemistry organic chemistry notes covering hydrocarbons, functional groups, reaction
-  mechanisms, polymers, and organic synthesis with worked examples.'
+description: 'DSE Organic Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for effective learning and effective revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE

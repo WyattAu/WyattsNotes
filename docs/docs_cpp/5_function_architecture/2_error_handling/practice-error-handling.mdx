@@ -1,0 +1,159 @@
+---
+title: C++ Error Handling Practice (Interactive)
+tags:
+  - cpp
+slug: cpp/practice-error-handling
+description:
+  'Interactive C++ practice with 15 auto-graded MCQs on error handling: exceptions, try/catch,
+  noexcept, std::error_code, custom exceptions, RAII, and stack unwinding.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## C++ -- Error Handling Practice
+
+15 auto-graded MCQ questions covering exceptions, try/catch blocks, noexcept, std::error_code, custom exception hierarchies, RAII-based error handling, and stack unwinding. Select an answer, submit, and review the explanation.
+
+---
+
+### Exceptions and try/catch
+
+<PracticeProblem
+  question="What happens when an exception is thrown but no matching catch block is found anywhere in the call stack?"
+  options={['The exception is silently ignored and execution continues', 'std::terminate() is called, which by default aborts the program', 'The exception is caught by the operating system and logged', 'The throwing function re-executes with default parameters']}
+  correctAnswer={1}
+  explanation="If a thrown exception propagates through all stack frames without being caught, the runtime calls std::terminate(). By default, terminate calls abort(), which ends the process with a core dump. You can customise this behaviour by calling std::set_terminate() to install your own handler."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In `try { /* ... */ } catch (std::runtime_error&amp; e) { /* ... */ }`, what happens if a std::logic_error is thrown inside the try block?"
+  options={['It is caught because std::logic_error derives from std::exception', 'It is NOT caught because std::logic_error is not a std::runtime_error', 'The catch block catches it and casts it to std::runtime_error', 'A compilation error occurs']}
+  correctAnswer={1}
+  explanation="Catch clauses match by type. std::runtime_error and std::logic_error are sibling classes, both deriving from std::exception but neither from the other. A catch for std::runtime_error&amp; does not catch std::logic_error. To catch both, catch std::exception&amp; or add a second catch block. Polymorphic catch works through the inheritance hierarchy."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the correct order for multiple catch blocks handling related exception types?"
+  options={['Base class first, then derived classes', 'Derived classes first, then base classes', 'Order does not matter', 'Only one catch block is allowed per try']}
+  correctAnswer={1}
+  explanation="Catch blocks are evaluated top-to-bottom. A catch for a base class matches objects of derived types, so placing the base class catch first would intercept all derived exceptions and the derived catches would be unreachable (dead code). Derived-type catches must precede base-type catches."
+  difficulty="medium"
+/>
+
+---
+
+### noexcept
+
+<PracticeProblem
+  question="What does the noexcept specifier guarantee and what happens if a noexcept function actually throws?"
+  options={['The function is optimised to run faster; the throw is ignored', 'The function promises not to throw, and if it does throw, std::terminate() is called immediately', 'The throw is deferred until the function returns', 'The compiler replaces the throw with a return statement']}
+  correctAnswer={1}
+  explanation="noexcept (or noexcept(true)) is a contract that the function will not propagate exceptions. If an exception escapes a noexcept function, std::terminate() is called without unwinding further. This allows the compiler to optimise code paths (no unwind tables needed) and enables container move operations that provide the strong exception guarantee."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What does `noexcept(false)` mean and when would you use it?"
+  options={['The function is guaranteed to throw an exception', 'The function may throw; noexcept(false) is the default for most functions', 'The function never returns', 'The function catches all exceptions internally']}
+  correctAnswer={1}
+  explanation="noexcept(false) explicitly declares that the function may throw. This is the default for ordinary functions, so it is rarely needed explicitly. It becomes useful in conditional noexcept expressions, e.g. noexcept(noexcept(std::declval&lt;T&gt;().swap(other))) to propagate the noexcept status of another function."
+  difficulty="medium"
+/>
+
+---
+
+### std::error_code and error handling strategies
+
+<PracticeProblem
+  question="What advantage does std::error_code have over throwing exceptions for error reporting?"
+  options={['It is always faster than exceptions', 'It provides a value-based, non-throwing error mechanism suitable for performance-critical or exception-averse code', 'It automatically retries failed operations', 'It replaces all exception types with a single integer code']}
+  correctAnswer={1}
+  explanation="std::error_code encapsulates an error value and an error category (a std::error_category), providing structured, comparable error information without heap allocation or stack unwinding. It is useful in: low-latency code (trading, games), C interop, systems programming, and destructors where throwing is prohibited. It pairs with std::error_condition for portable error checking."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is std::expected (C++23) and how does it differ from std::optional for error handling?"
+  options={['It is identical to std::optional but with a different name', 'It holds either a value or an error object, making the error type explicit rather than absent', 'It throws the error if the value is absent', 'It is a C-style union wrapper']}
+  correctAnswer={1}
+  explanation="std::expected&lt;T, E&gt; holds either a value of type T or an error of type E. Unlike std::optional (which represents absence with no reason), expected carries the error, enabling callers to inspect why the operation failed. It supports value(), error(), has_value(), and monadic operations (and_then, or_else, transform). It avoids exceptions entirely while preserving rich error information."
+  difficulty="hard"
+/>
+
+---
+
+### Custom Exceptions
+
+<PracticeProblem
+  question="When creating a custom exception class, from which standard library class should it typically derive and why?"
+  options={['std::string for convenient message storage', 'std::runtime_error or std::exception (via a standard-derived class) to integrate with the standard hierarchy', 'std::error_code for consistency with system error codes', 'No base class is needed; any class can be thrown']}
+  correctAnswer={1}
+  explanation="Deriving from std::runtime_error or std::logic_error (which themselves derive from std::exception) ensures your custom exception integrates with the standard exception hierarchy. This allows callers to catch it via catch (const std::exception&amp; e) while still being able to catch it specifically. It also provides the what() method for a description string."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the canonical pattern for implementing what() in a custom exception class?"
+  options={['Override what() to return a dynamically constructed string each time it is called', 'Store the message in the constructor and return it from an overridden what() as const char*', 'Return a fixed string literal from a static method', 'what() is automatically generated by the compiler and should not be overridden']}
+  correctAnswer={1}
+  explanation="Store the error message (typically a std::string or const char*) in the constructor. Override what() to return that stored message as const char*. This ensures the message is available even during stack unwinding when temporary objects may be destroyed. std::runtime_error already implements this pattern, so deriving from it avoids manual implementation."
+  difficulty="medium"
+/>
+
+---
+
+### RAII and Exception Safety
+
+<PracticeProblem
+  question="What are the three levels of exception safety guarantees in C++?"
+  options={['No-throw, basic, and strong guarantee', 'Try-guarantee, catch-guarantee, and throw-guarantee', 'Safe, safer, and safest guarantee', 'Compile-time, link-time, and runtime guarantee']}
+  correctAnswer={0}
+  explanation="No-throw guarantee: the operation will not throw (e.g. destructors, swap, move constructors). Basic guarantee: if an exception is thrown, no resources leak and objects remain in a valid (but unspecified) state. Strong guarantee: if an exception is thrown, the operation has no effect -- the program state is rolled back to exactly what it was before the call (commit-or-rollback semantics)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Why must destructors never throw exceptions in C++?"
+  options={['It is merely a style guideline with no technical consequence', 'If a destructor throws during stack unwinding caused by another exception, std::terminate() is called', 'The compiler automatically marks destructors as noexcept', 'Throwing from a destructor causes a compilation error']}
+  correctAnswer={1}
+  explanation="Destructors are implicitly noexcept (in C++11 and later). If an exception is already active (stack unwinding in progress) and a destructor throws, the runtime calls std::terminate() because it cannot handle two simultaneous exceptions. This is why destructors should swallow errors or use error codes rather than throwing."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="How does the copy-and-swap idiom provide the strong exception guarantee?"
+  options={['By catching all exceptions and retrying the operation', 'By creating a modified copy, then swapping (noexcept) with the original; if the copy fails, the original is untouched', 'By preventing any exceptions from being thrown during copy', 'By using std::move instead of std::copy']}
+  correctAnswer={1}
+  explanation="The idiom: (1) create a local copy of the object with the desired modifications. (2) If any step throws, the copy is destroyed (stack unwinding) and the original is unchanged. (3) Once the copy succeeds, swap it with the original using a noexcept swap. If swap throws, the state is still valid (basic guarantee). If swap succeeds, the old object is destroyed, completing the commit-or-rollback."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="What does catch(...) do and why should it typically be the last catch block?"
+  options={['It catches all return values; it has no ordering requirement', 'It catches all exceptions of any type and must be last because it matches everything, making subsequent catches unreachable', 'It catches only std::exception and its derived types', 'It prevents stack unwinding entirely'}
+  correctAnswer={1}
+  explanation="catch(...) is an ellipsis catch handler that matches any thrown exception, regardless of type. Because it matches everything, placing it before any typed catch block would make those blocks unreachable dead code. It is commonly used as a last-resort handler to log unexpected exceptions and rethrow, or to translate C++ exceptions into error codes at API boundaries."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the purpose of std::current_exception() and when is it useful?"
+  options={['It returns the last exception thrown in any thread at any time', 'It retrieves the currently handled exception object inside a catch block, enabling rethrowing or exception_ptr propagation across threads', 'It creates a new exception of the same type as the active one', 'It clears the active exception from the stack']}
+  correctAnswer={1}
+  explanation="std::current_exception() returns a std::exception_ptr referring to the exception currently being handled (valid only within a catch block). This is essential for passing exceptions between threads: one thread can capture an exception_ptr via std::current_exception() and a second thread can rethrow it with std::rethrow_exception(). This is the mechanism used by std::future and std::promise to propagate exceptions across async boundaries."
+  difficulty="hard"
+/>
+
+---
+
+### Stack Unwinding
+
+<PracticeProblem
+  question="During stack unwinding after an exception, are objects allocated with new on the heap automatically destroyed?"
+  options={['Yes, all objects are destroyed during unwinding', 'No, only stack-local objects are destroyed; heap objects without smart pointers are leaked', 'Yes, but only if they were allocated in the throwing function', 'No, nothing is destroyed during unwinding']}
+  correctAnswer={1}
+  explanation="Stack unwinding destroys only automatic (stack-local) objects whose constructors completed. Heap memory allocated with new is not tracked by the unwinding mechanism. If the only pointer to a heap object is a local variable, the pointer itself is destroyed but the heap object leaks (the memory is not freed). This is precisely why smart pointers (unique_ptr, shared_ptr) exist: their destructors call delete, providing RAII cleanup for heap objects during unwinding."
+  difficulty="medium"
+/>

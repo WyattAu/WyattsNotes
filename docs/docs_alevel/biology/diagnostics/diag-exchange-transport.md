@@ -1,8 +1,6 @@
 ---
 title: 'Exchange and Transport -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on gas exchange, digestion, haemoglobin dissociation curves, xylem
-  and phloem transport, transpiration, and mass flow.
+description: 'A-Level Biology Exchange and Transport -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-exchange-transport
 hide_table_of_contents: true
 ---

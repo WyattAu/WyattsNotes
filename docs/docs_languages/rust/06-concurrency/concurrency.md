@@ -1,9 +1,7 @@
 ---
 id: concurrency
 title: Concurrency
-description:
-  'Concurrency — OS Threads; Spawning Threads; Moving Data into Threads; Thread Return Values with
-  worked examples and exam-style questions.'
+description: 'Rust Concurrency notes covering key definitions, core concepts, worked examples, and practice questions for clear study and thorough revision.'
 slug: concurrency
 ---
 

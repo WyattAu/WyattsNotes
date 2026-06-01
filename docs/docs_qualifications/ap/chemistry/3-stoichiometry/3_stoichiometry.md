@@ -1,8 +1,6 @@
 ---
 title: Stoichiometry
-description:
-  "Stoichiometry — The Mole Concept (CED Unit 1); Avogadro's Number; Molar Mass; Conversions with
-  worked examples and exam-style questions."
+description: 'Qualifications Chemistry Stoichiometry notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-04-14
 tags:
   - ap

@@ -1,8 +1,6 @@
 ---
 title: Statics (Extended)
-description:
-  'A-Level Mathematics notes on Statics (Extended): Statics (Extended Treatment); 1. Moments; 1.1
-  Definition; 1.2 Moment of a force at an angle.'
+description: 'A-Level Maths Statics (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

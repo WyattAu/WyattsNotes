@@ -1,8 +1,6 @@
 ---
 title: Web Design and Development
-description:
-  'Web Design and Development — Higher Web Design; How the Web Works; HTML (HyperText Markup
-  Language); CSS (Cascading Style Sheets).'
+description: 'Scottish Highers Computer Science Web Design and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - highers

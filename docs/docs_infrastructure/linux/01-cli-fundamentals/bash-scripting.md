@@ -1,9 +1,7 @@
 ---
 id: bash-scripting
 title: Bash Scripting
-description:
-  'Bash Scripting — Conditional Expressions; if / elif / else / fi; test / [ / [[; POSIX test —
-  requires quoting with worked examples and exam-style questions.'
+description: 'Bash Scripting notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and revision.'
 slug: bash-scripting
 sidebar_position: 4
 ---

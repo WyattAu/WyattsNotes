@@ -1,8 +1,6 @@
 ---
 title: Advanced Patterns
-description:
-  'Advanced Patterns — Conditional Types: Deep Dive; Distributive Conditional Types; Preventing
-  Distribution; Distribution Rules Summary.'
+description: 'Typescript Advanced Patterns notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 slug: typescript-advanced-patterns
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

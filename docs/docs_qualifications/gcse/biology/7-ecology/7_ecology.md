@@ -1,8 +1,6 @@
 ---
 title: Ecology
-description:
-  'Ecology — 1. Ecosystems and Levels of Organisation; 1.1 Levels of Organisation in an Ecosystem;
-  1.2 Biotic and Abiotic Factors; 1.3 Adaptations.'
+description: 'GCSE Biology Ecology notes covering key definitions, core concepts, worked examples, and practice questions for targeted learning and effective revision.'
 date: 2026-04-14
 tags:
   - gcse

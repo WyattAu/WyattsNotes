@@ -1,9 +1,7 @@
 ---
 id: network-security
 title: Network Security
-description:
-  'Network Security — Firewalls; Firewall Types; Stateful Inspection; nftables example: stateful
-  firewall rules with worked examples and exam-style questions.'
+description: 'Network Security notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
 slug: network-security
 sidebar_position: 6
 ---

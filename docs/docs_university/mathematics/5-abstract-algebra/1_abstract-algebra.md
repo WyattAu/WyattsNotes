@@ -1,8 +1,6 @@
 ---
 title: Abstract Algebra
-description:
-  'University-level Mathematics: Abstract Algebra — 1. Groups; 1.1 Definition of a Group; 1.2
-  Examples; 1.3 Dihedral Groups.'
+description: 'University Mathematics Abstract Algebra notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics

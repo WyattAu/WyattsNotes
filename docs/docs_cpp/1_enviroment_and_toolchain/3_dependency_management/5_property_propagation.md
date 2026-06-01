@@ -1,8 +1,6 @@
 ---
 title: Property Propagation
-description:
-  'C++: Property Propagation — The Visibility Scopes; 1. PRIVATE (Encapsulation); 2. INTERFACE
-  (Propagation); 3. PUBLIC (Transitivity).'
+description: 'C++ Programming Property Propagation notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2025-12-11T05:21:57.536Z
 tags:
   - cpp

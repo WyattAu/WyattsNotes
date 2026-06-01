@@ -1,8 +1,6 @@
 ---
 title: Records, Sealed Classes, and Pattern Matching
-description:
-  'Records, Sealed Classes, and Pattern Matching — Records (JEP 395, Java 16); Syntax and Basic
-  Usage; The Generated Methods; Compact Constructors.'
+description: 'Java Records, Sealed Classes, and Pattern Matching notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags: ['java']
 categories: ['java']

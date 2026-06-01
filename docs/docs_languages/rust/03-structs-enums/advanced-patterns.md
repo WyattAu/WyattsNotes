@@ -1,9 +1,7 @@
 ---
 id: advanced-patterns
 title: Advanced Struct and Enum Patterns
-description:
-  'Advanced Struct and Enum Patterns — Newtype Pattern; Type Safety Through Wrapping; Memory Layout;
-  `impl Deref` for Transparent Access.'
+description: 'Rust Advanced Struct and Enum Patterns notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 slug: advanced-patterns
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: 'Proof -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for proof covering contradiction rigour, induction base cases,
-  counterexample construction, necessary versus sufficient conditions, and'
+description: 'A-Level Maths Proof -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: diag-proof
 hide_table_of_contents: true
 ---

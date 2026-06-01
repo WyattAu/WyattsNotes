@@ -1,9 +1,7 @@
 ---
 id: async-deep-dive
 title: Async Deep Dive
-description:
-  'Async Deep Dive — The Future Trait; `Context` and `Waker`; Polling Model; How `async fn` Desugars
-  with worked examples and exam-style questions.'
+description: 'Rust Async Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
 slug: async-deep-dive
 ---
 

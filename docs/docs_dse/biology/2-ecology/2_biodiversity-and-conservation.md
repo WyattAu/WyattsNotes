@@ -1,8 +1,6 @@
 ---
 title: Biodiversity and Conservation
-description:
-  'DSE Biology biodiversity and conservation notes covering classification systems, five-kingdom
-  system, binomial nomenclature, species richness, and conservation'
+description: 'DSE Biology Biodiversity and Conservation notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

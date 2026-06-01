@@ -1,8 +1,6 @@
 ---
 title: Static Analysis
-description:
-  'C++: Static Analysis — 1. Clang-Tidy (The AST Linter); Capabilities; Configuration Architecture
-  (`.clang-tidy`); Enable specific checks.'
+description: 'C++ Programming Static Analysis notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2025-12-11T06:39:06.995Z
 tags:
   - cpp

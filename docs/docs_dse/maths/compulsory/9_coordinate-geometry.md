@@ -1,8 +1,6 @@
 ---
 title: Coordinate Geometry
-description:
-  'DSE Mathematics coordinate geometry notes covering straight lines, circles, equations of curves,
-  distance formula, midpoint formula, and locus problems.'
+description: 'DSE Maths Coordinate Geometry notes covering key definitions, core concepts, worked examples, and practice questions for in-depth study and thorough revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

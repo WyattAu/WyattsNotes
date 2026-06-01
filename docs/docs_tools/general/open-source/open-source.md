@@ -1,9 +1,7 @@
 ---
 id: open-source
 title: Open Source Contribution Guide
-description:
-  'Open Source Contribution Guide — Why Contribute to Open Source; Finding the Right Project. with
-  additional techniques and methods.'
+description: 'General Open Source Contribution notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: open-source
 ---
 

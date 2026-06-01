@@ -1,8 +1,6 @@
 ---
 title: 'Thermodynamics -- Diagnostic Tests'
-description:
-  'Hardest IB Physics thermodynamics diagnostic tests covering ideal gas law limitations, first law
-  sign conventions, isothermal vs adiabatic processes, and'
+description: 'IB Physics Thermodynamics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 slug: diag-thermodynamics
 hide_table_of_contents: true
 ---

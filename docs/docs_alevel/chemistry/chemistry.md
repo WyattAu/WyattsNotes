@@ -1,8 +1,6 @@
 ---
 title: A-Level Chemistry
-description:
-  'A-Level Chemistry notes on A-Level Chemistry: Board Coverage for comprehensive revision and
-  examination preparation. and examination pr.'
+description: 'A-Level Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for complete review and exam preparation.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

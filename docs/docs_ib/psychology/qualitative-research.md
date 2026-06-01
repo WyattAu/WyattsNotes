@@ -1,8 +1,6 @@
 ---
 title: Qualitative Research (HL)
-description:
-  'Comprehensive coverage of qualitative research methods for IB Psychology HL, including paradigm
-  differences, interviews, observations, content analysis, case'
+description: 'IB Psychology Qualitative Research (HL) notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: qualitative-research
 ---
 

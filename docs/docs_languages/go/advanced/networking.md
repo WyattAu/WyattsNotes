@@ -1,7 +1,6 @@
 ---
 title: Networking
-description:
-  'Go Networking — TCP/UDP, HTTP client/server, WebSockets, gRPC, DNS, TLS/SSL, and common pitfalls.'
+description: 'Go Networking notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and examination practice.'
 slug: go/networking
 date: 2026-05-31
 tags:

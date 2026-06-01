@@ -1,8 +1,6 @@
 ---
 title: Biological Molecules
-description:
-  'A-Level Biology notes on Biological Molecules: Water, Carbohydrates, Lipids, Proteins,
-  Nucleic Acids, Enzymes, and Inorganic Ions with key tests and common mistakes.'
+description: 'A-Level Biology Biological Molecules notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

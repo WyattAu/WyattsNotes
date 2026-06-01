@@ -1,8 +1,6 @@
 ---
 title: 'Gravitational Fields -- Diagnostic Tests'
-description:
-  'Hardest IB Physics gravitational fields diagnostic tests covering field inside a uniform sphere,
-  negative gravitational potential, escape velocity derivation,'
+description: 'IB Physics Gravitational Fields -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-gravitational-fields
 hide_table_of_contents: true
 ---

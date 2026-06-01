@@ -1,8 +1,6 @@
 ---
 title: Nervous System
-description:
-  'A-Level Biology notes on the Nervous System: neuron structure, resting and action potentials,
-  synaptic transmission, neurotransmitters, reflex arcs, sensory rec'
+description: 'A-Level Biology Nervous System notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision and exam readiness.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

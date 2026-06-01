@@ -1,8 +1,6 @@
 ---
 title: Research Methods in Psychology
-description:
-  'Comprehensive coverage of research methods for IB Psychology, including research designs,
-  variables, sampling, reliability, validity, ethics, and data analysis.'
+description: 'IB Research Methods in Psychology notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: research-methods
 ---
 

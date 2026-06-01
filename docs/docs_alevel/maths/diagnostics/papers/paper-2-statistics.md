@@ -1,8 +1,6 @@
 ---
 title: 'Paper 2 -- Statistics -- Full Diagnostic Exam'
-description:
-  'Challenging A-Level mathematics diagnostic questions on Paper 2 -- Statistics -- Full Diagnostic
-  Exam. With full worked solutions and examiner commentary.'
+description: 'A-Level Maths Paper 2 -- Statistics -- Full Diagnostic Exam notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-paper-2-statistics
 hide_table_of_contents: true
 ---

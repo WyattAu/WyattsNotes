@@ -1,9 +1,7 @@
 ---
 id: shell-basics
 title: Shell Basics
-description:
-  'Shell Basics — Shell Invocation; Interactive vs Non-Interactive; POSIX Shell vs Bash; Command
-  Structure with worked examples and exam-style questions.'
+description: 'Shell Basics notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and thorough revision.'
 slug: shell-basics
 sidebar_position: 1
 ---

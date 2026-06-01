@@ -1,8 +1,6 @@
 ---
 title: Algorithms (Advanced)
-description:
-  'University-level notes on Advanced Algorithms: 1. Network Flow; 1.1 Maximum Flow; 1.2
-  Ford-Fulkerson Method; 1.3 Edmonds-Karp Algorithm.'
+description: 'University Computing Algorithms (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing

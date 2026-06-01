@@ -6,7 +6,7 @@ tags:
   - IB History
 categories:
   - IB History
-description: IB History guide to the Cold War for Paper 2. Covers origins, key crises (Korea, Cuba, Berlin, Hungary, Prague, Afghanistan), detente, end of the Cold War, historiographical debates, and essay writing tips.
+description: IB History guide to the Cold War for Paper 2. Covers origins, key crises (Korea, Cuba, Berlin, Hungary, Prague, Afghanistan), detente, end of the Cold War,.
 ---
 
 # The Cold War (1945--1991)

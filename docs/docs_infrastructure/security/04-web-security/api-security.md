@@ -1,9 +1,7 @@
 ---
 id: api-security
 title: API Security
-description:
-  'API Security — Stateless Authentication Per Request; Authentication Methods; API Keys; Simple API
-  key in header with worked examples and exam-style questions.'
+description: 'API Security notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and revision.'
 slug: api-security
 ---
 

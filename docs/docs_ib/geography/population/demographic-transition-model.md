@@ -1,8 +1,6 @@
 ---
 title: Demographic Transition Model
-description:
-  'The DTM stages, critique and limitations, population pyramids, dependency ratios, demographic
-  dividend, and case studies for IB Geography.'
+description: 'IB Geography Demographic Transition Model notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 slug: demographic-transition-model
 ---
 

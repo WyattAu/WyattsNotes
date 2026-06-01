@@ -1,8 +1,6 @@
 ---
 title: Magnetic Fields
-description:
-  'A-Level Physics notes on Magnetic Fields: 1. Magnetic Flux Density; 2. Force on a Moving Charge;
-  3. Circular Motion in a Magnetic Field.'
+description: 'A-Level Physics Magnetic Fields notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]

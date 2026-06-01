@@ -1,8 +1,6 @@
 ---
 title: Geometry and Trigonometry
-description:
-  'Geometry and Trigonometry — Coordinate Geometry; Distance Formula (OL/HL); Midpoint Formula
-  (OL/HL); Slope (Gradient) (OL/HL).'
+description: 'ILC Maths Geometry and Trigonometry notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-04-14
 tags:
   - ilc

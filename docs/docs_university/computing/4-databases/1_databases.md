@@ -1,8 +1,6 @@
 ---
 title: Database Systems
-description:
-  'University-level notes on Database Systems: 1.1 What is a Database; 1.2 Database Architecture;
-  1.3 Data Models; 1.4 Comparison of Data Models.'
+description: 'University Computing Database Systems notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing

@@ -1,8 +1,6 @@
 ---
 title: IMO Preparation
-description:
-  'Comprehensive preparation guide for the International Mathematical Olympiad (IMO): advanced
-  number theory, combinatorics, algebra, geometry, worked solutions, s'
+description: 'University Admissions IMO Preparation notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics

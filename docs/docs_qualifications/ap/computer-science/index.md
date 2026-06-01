@@ -1,8 +1,6 @@
 ---
 title: AP Computer Science
-description:
-  'AP Computer Science revision notes covering computational thinking, computing systems,
-  algorithms, data analysis, and networks.'
+description: 'Qualifications AP Computer Science notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 date: 2026-04-14
 tags:
   - ap

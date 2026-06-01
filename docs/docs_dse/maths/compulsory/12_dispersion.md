@@ -1,8 +1,6 @@
 ---
 title: Dispersion
-description:
-  'DSE Mathematics ./4-statistics-and-probability/2_statistics notes on measures of dispersion
-  covering range, interquartile range, variance...'
+description: 'DSE Maths Dispersion notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and revision.'
 date: 2025-06-03T16:18:22.480Z
 tags:
   - Maths

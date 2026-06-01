@@ -1,9 +1,7 @@
 ---
 id: cryptography
 title: Cryptography
-description:
-  "Cryptography — Foundations; Cryptographic Primitives; Kerckhoffs's Principle; Symmetric
-  Encryption with worked examples and exam-style questions."
+description: 'Cryptography notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive exam preparation and revision.'
 slug: cryptography
 sidebar_position: 3
 ---

@@ -1,8 +1,6 @@
 ---
 title: 'Electricity and Magnetism -- Diagnostic Tests'
-description:
-  'Hardest DSE electromagnetism questions: Faraday and Lenz laws, motor effect forces, transformer
-  efficiency, electromagnetic induction, and back EMF.'
+description: 'DSE Physics Electricity and Magnetism -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-electricity-magnetism
 hide_table_of_contents: true
 ---

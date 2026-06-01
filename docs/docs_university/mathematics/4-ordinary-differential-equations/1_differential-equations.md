@@ -1,8 +1,6 @@
 ---
 title: Differential Equations
-description:
-  'University-level notes on Differential Equations: 1. Introduction and Classification; 1.1 Basic
-  Definitions; 1.2 Classification of ODEs.'
+description: 'University Mathematics Differential Equations notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics

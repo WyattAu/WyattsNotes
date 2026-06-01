@@ -1,8 +1,6 @@
 ---
 title: Probability
-description:
-  'DSE Mathematics probability notes covering sample spaces, events, conditional probability,
-  addition and multiplication rules, and probability distributions.'
+description: 'DSE Maths Probability notes covering key definitions, core concepts, worked examples, and practice questions for detailed exam preparation and revision.'
 date: 2025-06-03T12:07:31.077Z
 tags:
   - Maths

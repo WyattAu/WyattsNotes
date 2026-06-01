@@ -1,8 +1,6 @@
 ---
 title: 'Quadratics -- Diagnostic Tests'
-description:
-  'Diagnostic tests for DSE Quadratics: discriminant analysis, quadratic formula, factorisation,
-  completing the square, and hidden quadratics.'
+description: 'DSE Maths Quadratics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: diag-quadratics
 hide_table_of_contents: true
 ---

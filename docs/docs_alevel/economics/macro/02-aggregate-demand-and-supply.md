@@ -1,8 +1,6 @@
 ---
 title: Aggregate Demand and Aggregate Supply
-description:
-  'A-Level Economics notes on Aggregate Demand and Aggregate Supply: 1. Aggregate Demand; 1.1
-  Definition and Components; 1.2 The Shape of the AD Curve.'
+description: 'A-Level Economics Aggregate Demand and Aggregate Supply notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

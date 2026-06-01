@@ -1,9 +1,7 @@
 ---
 sidebar_label: Databases
 sidebar_position: 7
-description:
-  'Rigorous A-Level computer science notes covering Databases. Includes definitions, derivations,
-  worked examples, and exam-style problems.'
+description: 'A-Level Computer Science Databases notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 sidebar_custom_props:
   some_prop: true
 ---

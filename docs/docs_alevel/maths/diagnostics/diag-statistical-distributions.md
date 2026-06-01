@@ -1,8 +1,6 @@
 ---
 title: 'Statistical Distributions -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for statistical distributions covering binomial, normal, Poisson,
-  continuity correction, and combining independent normal variables at'
+description: 'A-Level Maths Statistical Distributions -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-statistical-distributions
 hide_table_of_contents: true
 ---

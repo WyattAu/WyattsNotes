@@ -1,8 +1,6 @@
 ---
 title: Genetics
-description:
-  'DSE Biology genetics notes covering Mendelian inheritance, monohybrid and dihybrid crosses,
-  sex-linked inheritance, genetic crosses, and molecular genetics.'
+description: 'DSE Biology Genetics notes covering key definitions, core concepts, worked examples, and practice questions for structured exam preparation and mastery.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

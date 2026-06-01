@@ -1,8 +1,6 @@
 ---
 title: State Management
-description:
-  'State Management — Why setState Alone Does Not Scale; setState and InheritedWidget; How setState
-  Works; Scope Limitations.'
+description: 'Dart State Management notes covering key definitions, core concepts, worked examples, and practice questions for clear revision and exam readiness.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Dart

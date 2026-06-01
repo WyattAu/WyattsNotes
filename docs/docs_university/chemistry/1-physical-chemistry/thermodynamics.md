@@ -1,8 +1,6 @@
 ---
 title: Thermodynamics
-description:
-  "University-level notes on Thermodynamics: 1. The Laws of Thermodynamics; 1.1 The Zeroth and
-  First Laws; 1.2 Internal Energy and Enthalpy."
+description: 'University Chemistry Thermodynamics notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -428,6 +426,16 @@ $$K = \prod_i a_i^{\nu_i}$$
 - **Clausius-Clapeyron:** $\ln(P_2/P_1) = -(\Delta H/R)(1/T_2 - 1/T_1)$; describes vapor pressure vs
   temperature.
 - **Equilibrium:** $\Delta_r G^\circ = -RT\ln K$; van't Hoff equation for temperature dependence.
+
+## Worked Examples
+
+### Example 1: Clausius-Clapeyron Calculation
+**Problem:** The boiling point of water is 100 degrees C at 1 atm. The enthalpy of vaporization is 40.7 kJ/mol. Calculate the boiling point at 0.8 atm.
+**Solution:** ln(P2/P1) = -(Delta H_vap/R)(1/T2 - 1/T1). ln(0.8/1.0) = -(40700/8.314)(1/T2 - 1/373). -0.2231 = -4893(1/T2 - 0.00268). 1/T2 = 0.00268 + 0.2231/4893 = 0.00268 + 4.56e-5 = 0.002726. T2 = 366.8 K = 93.7 degrees C.
+
+### Example 2: Calculating Gibbs Free Energy of Reaction
+**Problem:** For the reaction N2(g) + 3H2(g) -> 2NH3(g), Delta H = -92.4 kJ/mol, Delta S = -198.8 J K^-1 mol^-1. At 298 K, determine if the reaction is spontaneous.
+**Solution:** Delta G = Delta H - T Delta S = -92,400 - 298(-198.8) = -92,400 + 59,200 = -33,200 J/mol = -33.2 kJ/mol. Delta G < 0, so the reaction is spontaneous at 298 K. At what T does it become non-spontaneous? Delta G = 0 when T = Delta H/Delta S = 92,400/198.8 = 464.8 K.
 
 ## Cross-References
 

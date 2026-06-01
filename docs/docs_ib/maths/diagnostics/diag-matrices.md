@@ -1,8 +1,6 @@
 ---
 title: 'Matrices -- Diagnostic Tests'
-description:
-  'Hardest IB Mathematics diagnostic tests for matrices covering non-commutativity, eigenvalues with
-  complex roots, diagonalisation for matrix powers, and inverse'
+description: 'IB Maths Matrices -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: diag-matrices
 hide_table_of_contents: true
 ---

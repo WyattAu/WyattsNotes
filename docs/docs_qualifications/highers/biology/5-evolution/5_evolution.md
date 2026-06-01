@@ -1,8 +1,6 @@
 ---
 title: Life on Earth
-description:
-  'Life on Earth — Higher Biodiversity and Evolution; Classification; Biodiversity; Sampling
-  Techniques with worked examples and exam-style questions.'
+description: 'Scottish Highers Biology Life on Earth notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 date: 2026-04-14
 tags:
   - highers

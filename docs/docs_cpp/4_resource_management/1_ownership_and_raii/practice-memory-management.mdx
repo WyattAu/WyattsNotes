@@ -1,0 +1,163 @@
+---
+title: C++ Memory Management Practice (Interactive)
+tags:
+  - cpp
+slug: cpp/practice-memory-management
+description:
+  'Interactive C++ practice with 15 auto-graded MCQs on memory management: stack vs heap, pointers,
+  references, smart pointers, RAII, memory leaks, and alignment.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## C++ -- Memory Management Practice
+
+15 auto-graded MCQ questions covering stack vs heap allocation, pointers, references, smart pointers, RAII, memory leaks, new/delete, sizeof, and alignment. Select an answer, submit, and review the explanation.
+
+---
+
+### Stack vs Heap
+
+<PracticeProblem
+  question="Where is memory allocated for a local variable declared inside a function, and what is the lifetime of that memory?"
+  options={['Heap; persists until explicitly freed', 'Stack; automatically freed when the function returns', 'Heap; freed at program termination', 'Static data segment; persists for the program lifetime']}
+  correctAnswer={1}
+  explanation="Local variables are allocated on the stack. Their memory is automatically reclaimed when the enclosing scope (typically the function body) exits. No manual deallocation is needed. This makes stack allocation fast but limited in size (typically a few MB depending on the platform)."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What happens when a function recursively calls itself too many times without a proper base case?"
+  options={['Heap memory is exhausted and new fails', 'The program terminates with a stack overflow', 'The compiler detects the error at build time', 'Memory is automatically moved to the heap']}
+  correctAnswer={1}
+  explanation="Each recursive call pushes a new stack frame onto the call stack. Without a base case, frames accumulate until the stack space is exhausted, causing a stack overflow. The stack size is limited (commonly 1--8 MB), so deep recursion is inherently risky."
+  difficulty="easy"
+/>
+
+---
+
+### Pointers and References
+
+<PracticeProblem
+  question="What is printed by `int a = 10; int* p = &amp;a; *p = 20; std::cout &lt;&lt; a;`?"
+  options={['10', '20', 'A memory address', 'Undefined behaviour']}
+  correctAnswer={1}
+  explanation="p is a pointer that stores the address of a. Dereferencing p with *p accesses the value at that address, which is a itself. Assigning 20 to *p modifies a. Therefore a becomes 20 and the output is 20."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the key difference between a pointer and a reference in C++?"
+  options={['References can be reassigned to refer to different objects', 'Pointers must be initialised; references need not be', 'References must be initialised and cannot be reseated; pointers can be null and reassigned', 'There is no practical difference in modern C++']}
+  correctAnswer={2}
+  explanation="A reference is an alias for an existing object, must be bound at initialisation, and cannot be changed to refer to a different object. A pointer is a separate object storing an address, can be null, and can be reassigned to point to different objects throughout its lifetime."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What does `nullptr` provide that `NULL` or `0` does not when used as a pointer literal?"
+  options={['It is faster to dereference', 'It has a distinct type (std::nullptr_t) preventing accidental overload resolution to an integer', 'It automatically frees the pointed-to memory', 'It works only with smart pointers']}
+  correctAnswer={1}
+  explanation="nullptr has type std::nullptr_t, which is implicitly convertible to any pointer type but not to integer types. This prevents ambiguous overload resolution: calling f(nullptr) will match f(int*) rather than f(int) when both overloads exist. NULL and 0 are integer literals and can cause unintended overload matches."
+  difficulty="medium"
+/>
+
+---
+
+### new and delete
+
+<PracticeProblem
+  question="Why should you never use delete[] on memory allocated with new (without brackets), and vice versa?"
+  options={['The compiler will reject the code at compile time', 'The behaviour is undefined and may corrupt the heap', 'It will leak exactly one element of the array', 'It is harmless because the allocator handles both uniformly']}
+  correctAnswer={1}
+  explanation="Using mismatched new/delete forms causes undefined behaviour. new calls operator new and constructs one object; delete calls the destructor once. new[] may allocate extra memory to store the array count and constructs multiple objects; delete[] reads that count and destructs all elements. Mismatching them means destructors are called incorrectly and the heap metadata is corrupted."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What does `new (std::nothrow) int` do differently from `new int`?"
+  options={['It does not call the constructor', 'It returns nullptr instead of throwing std::bad_alloc if allocation fails', 'It allocates on the stack', 'It bypasses the heap allocator entirely']}
+  correctAnswer={1}
+  explanation="By default, new throws std::bad_alloc if the heap cannot satisfy the request. The nothrow version returns nullptr on failure instead, allowing the caller to check the return value without exception handling. This is the C++ analogue of malloc returning NULL in C."
+  difficulty="medium"
+/>
+
+---
+
+### Smart Pointers
+
+<PracticeProblem
+  question="What is the primary purpose of std::unique_ptr and can it be copied?"
+  options={['Shared ownership; yes, it can be freely copied', 'Exclusive ownership of heap memory; it cannot be copied, only moved', 'Automatic garbage collection via a background thread; it can be copied', 'Reference-counted thread-safe ownership; it can be copied']}
+  correctAnswer={1}
+  explanation="std::unique_ptr models exclusive ownership: exactly one unique_ptr owns the managed object at any time. Its copy constructor and copy assignment are deleted, preventing accidental double ownership. Ownership can be transferred via move semantics (std::move). When the unique_ptr is destroyed, delete is called automatically."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="When does a std::shared_ptr use a control block and what does it store?"
+  options={['Only when converted from unique_ptr; it stores the type name', 'Always on construction; it stores the strong reference count, weak reference count, allocator, and deleter', 'Never; reference counts are stored inline in the shared_ptr itself', 'Only when make_shared is used; it stores a single strong count']}
+  correctAnswer={1}
+  explanation="A control block is allocated alongside the managed object. It stores: the strong reference count (number of shared_ptr instances), the weak reference count (number of weak_ptr instances), the custom deleter (if any), and the allocator (if provided). When the strong count reaches zero, the object is destroyed. When both counts reach zero, the control block itself is freed."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="What is the advantage of using std::make_unique over directly calling new to construct a std::unique_ptr?"
+  options={['It allows the unique_ptr to be copied', 'It avoids a separate heap allocation for the control block', 'It is exception-safe (no intermediate raw pointer) and may reduce allocations by combining object and control block memory', 'It is the only way to construct a unique_ptr with a custom deleter']}
+  correctAnswer={2}
+  explanation="std::make_unique&lt;T&gt;(args...) performs a single heap allocation for the object, whereas constructing a unique_ptr via new followed by the unique_ptr constructor could leak if the constructor throws between the new expression and the unique_ptr taking ownership. make_unique is also more concise and prevents accidental leaks from bare new expressions."
+  difficulty="medium"
+/>
+
+---
+
+### RAII
+
+<PracticeProblem
+  question="What does RAII stand for and how does it prevent resource leaks?"
+  options={['Random Access Instruction Interleave; it interleaves memory accesses', 'Resource Acquisition Is Initialisation; resources are acquired in constructors and released in destructors', 'Runtime Allocation Integrity Inspection; it checks allocations at runtime', 'Reference Aliasing Is Illegal; it prevents aliasing bugs']}
+  correctAnswer={1}
+  explanation="RAII binds resource lifetime to object lifetime: a resource (heap memory, file handle, lock, socket) is acquired in a constructor and released in the corresponding destructor. Because stack-local objects are destroyed automatically when a scope exits (even via exceptions), RAII guarantees cleanup without manual try/catch or goto, eliminating leaks."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="How does a destructor behave during stack unwinding caused by an exception?"
+  options={['Destructors are skipped to improve unwinding speed', 'Each fully constructed local object on the stack has its destructor called in reverse order of construction', 'Only the destructor of the throwing object is called', 'Destructors are called but may themselves throw, replacing the active exception']}
+  correctAnswer={1}
+  explanation="During stack unwinding, the runtime destroys all fully constructed automatic objects in the current scope and all enclosing scopes, in reverse order of their construction. This is a core guarantee of RAII: even if an exception propagates, destructors still run, releasing resources. Destructors should never throw (std::terminate is called if a destructor throws during unwinding)."
+  difficulty="medium"
+/>
+
+---
+
+### sizeof and Alignment
+
+<PracticeProblem
+  question="What does sizeof(int) return on a typical 64-bit system, and is the result a compile-time constant?"
+  options={['8 bytes; it is a runtime value', '4 bytes; it is a compile-time constant', 'It depends on whether int is signed or unsigned', '4 bytes; it is a runtime value determined by the OS']}
+  correctAnswer={1}
+  explanation="On virtually all modern 64-bit platforms (LP64 or LLP64 data models), sizeof(int) is 4 bytes (32 bits). sizeof is a compile-time operator (except when applied to variable-length arrays in C). It returns size_t, an unsigned integer type. The C++ standard guarantees sizeof(char) == 1 but does not specify the size of int beyond requiring it to be at least 16 bits."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is memory alignment and why does the compiler insert padding between struct members?"
+  options={['Alignment is the size of the entire struct in bytes; padding is added for aesthetic reasons', 'Alignment ensures each member starts at an address that is a multiple of its type\'s alignment requirement, improving hardware access speed', 'Padding is added to prevent buffer overflow attacks', 'Alignment is only relevant for heap-allocated objects']}
+  correctAnswer={1}
+  explanation="Each type has an alignment requirement (typically equal to its size for primitive types: alignof(int) == 4, alignof(double) == 8). The CPU can fetch aligned addresses in a single memory transaction; unaligned accesses may require multiple cycles or fault on some architectures. The compiler inserts padding bytes between struct members and after the last member so each member satisfies its alignment constraint, at the cost of increased struct size."
+  difficulty="hard"
+/>
+
+---
+
+### Memory Leaks
+
+<PracticeProblem
+  question="Which of the following scenarios most reliably causes a memory leak in C++?"
+  options={['Declaring a large stack-allocated array in main()', 'Allocating with new and losing the last pointer to that memory without deleting it', 'Passing a large object by value to a function', 'Returning a reference to a local variable from a function']}
+  correctAnswer={1}
+  explanation="A memory leak occurs when heap memory is allocated (via new/malloc) and the program loses all pointers to that allocation without freeing it. The memory remains allocated but unreachable for the rest of the program lifetime. Passing by value copies (no leak). Returning a reference to a local is undefined behaviour (dangling reference), not a leak. Stack memory is always reclaimed."
+  difficulty="medium"
+/>

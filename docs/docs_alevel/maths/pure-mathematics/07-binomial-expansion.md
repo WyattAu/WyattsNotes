@@ -1,8 +1,6 @@
 ---
 title: Binomial Expansion
-description:
-  "A-Level Mathematics notes on Binomial Expansion: Board Coverage; 1. Pascal's Triangle; 2.
-  Binomial Coefficients; 2.1 Properties of Binomial Coefficients."
+description: 'A-Level Maths Binomial Expansion notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

@@ -1,8 +1,6 @@
 ---
 title: Cultural Norms and Attitudes
-description:
-  "Comprehensive coverage of Hofstede's cultural dimensions, individualism versus collectivism,
-  conformity across cultures, acculturation, and key research for IB"
+description: 'IB Psychology Cultural Norms and Attitudes notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: cultural-norms-and-attitudes
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Testing
-description:
-  'Go Testing — go test fundamentals, test helpers, table-driven tests, mocking, benchmarking,
-  fuzzing, integration testing, coverage, and common pitfalls.'
+description: 'Go Testing notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and exam readiness.'
 slug: go/testing
 date: 2026-05-31
 tags:

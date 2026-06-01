@@ -1,8 +1,6 @@
 ---
 title: Coroutine Handle, Promise Type, and Awaiter
-description:
-  'C++: Coroutine Handle, Promise Type, and Awaiter — The Coroutine Machinery Overview; `co_await`
-  Expression Semantics [N4950 §9.5.4.3].'
+description: 'C++ Programming Coroutine Handle, Promise Type, and Awaiter notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

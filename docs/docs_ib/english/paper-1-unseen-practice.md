@@ -1,7 +1,7 @@
 ---
 title: Paper 1 Unseen Practice
 slug: english/paper-1-unseen-practice
-description: Practice unseen passages for IB English Paper 1 with guided analysis. Includes prose extracts, poetry, speeches, advertisements, and visual texts with annotated commentary demonstrating close reading technique.
+description: Practice unseen passages for IB English Paper 1 with guided analysis. Includes prose extracts, poetry, speeches, advertisements, and visual texts with.
 ---
 
 # Paper 1 Unseen Practice

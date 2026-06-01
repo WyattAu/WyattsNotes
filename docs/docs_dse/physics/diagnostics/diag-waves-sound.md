@@ -1,8 +1,6 @@
 ---
 title: 'Waves and Sound -- Diagnostic Tests'
-description:
-  'Hardest DSE waves questions: standing wave formation, wave speed calculations, longitudinal wave
-  properties, and harmonics identification.'
+description: 'DSE Physics Waves and Sound -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 slug: diag-waves-sound
 hide_table_of_contents: true
 ---

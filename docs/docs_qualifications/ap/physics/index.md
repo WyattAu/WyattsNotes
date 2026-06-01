@@ -1,8 +1,6 @@
 ---
 title: AP Physics
-description:
-  'AP Physics revision notes covering kinematics, dynamics, energy, momentum, rotation,
-  electrostatics, circuits, and magnetism.'
+description: 'Qualifications AP Physics notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and revision.'
 date: 2026-04-14
 tags:
   - ap

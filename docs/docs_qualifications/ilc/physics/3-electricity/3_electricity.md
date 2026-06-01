@@ -1,8 +1,6 @@
 ---
 title: Electricity
-description:
-  'Electricity — Electric Charge and Current; Electric Charge (OL/HL); Electric Current (OL/HL);
-  Current in Terms of Electron Flow (HL).'
+description: 'ILC Physics Electricity notes covering key definitions, core concepts, worked examples, and practice questions for clear revision and examination preparation.'
 date: 2026-04-14
 tags:
   - ilc

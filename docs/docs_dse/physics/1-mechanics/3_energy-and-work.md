@@ -1,8 +1,6 @@
 ---
 title: Energy and Work
-description:
-  'DSE Physics energy and work notes covering work done, kinetic energy, potential energy,
-  conservation of energy, power, and efficiency calculations.'
+description: 'DSE Physics Energy and Work notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

@@ -1,8 +1,6 @@
 ---
 title: 'Energy and Work -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for energy and work covering work-energy principle, power-velocity
-  subtleties, elastic potential energy, variable force work, and'
+description: 'A-Level Maths Energy and Work -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-energy-and-work
 hide_table_of_contents: true
 ---

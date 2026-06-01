@@ -1,8 +1,6 @@
 ---
 title: Data Representation
-description:
-  'DSE ICT notes on data representation covering binary, hexadecimal, character encoding, image and
-  audio representation, compression, and error detection.'
+description: 'DSE Ict Data Representation notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

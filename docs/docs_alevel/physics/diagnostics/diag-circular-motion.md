@@ -1,8 +1,6 @@
 ---
 title: 'Circular Motion -- Diagnostic Tests'
-description:
-  Diagnostic tests for centripetal acceleration, horizontal and vertical circles, angular velocity,
-  and banked curves at maximum A-Level Physics difficulty.
+description: 'A-Level Physics Circular Motion -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-circular-motion
 hide_table_of_contents: true
 ---

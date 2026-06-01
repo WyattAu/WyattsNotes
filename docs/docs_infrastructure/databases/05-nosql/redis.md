@@ -1,9 +1,7 @@
 ---
 id: redis
 title: Redis Deep Dive
-description:
-  'Redis Deep Dive — Architecture Overview; Single-Threaded Event Loop; redis.conf; Memory Model
-  with worked examples and exam-style questions.'
+description: 'Redis Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for complete revision and examination preparation.'
 slug: redis
 ---
 

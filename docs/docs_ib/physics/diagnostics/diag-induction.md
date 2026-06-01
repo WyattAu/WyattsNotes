@@ -1,8 +1,6 @@
 ---
 title: 'Induction -- Diagnostic Tests'
-description:
-  'Hardest IB Physics induction diagnostic tests covering Faraday and Lenz distinction, flux linkage
-  calculation, back EMF in motors, and transformer efficiency'
+description: 'IB Physics Induction -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 slug: diag-induction
 hide_table_of_contents: true
 ---

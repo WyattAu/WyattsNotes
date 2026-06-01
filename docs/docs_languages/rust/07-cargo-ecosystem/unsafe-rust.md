@@ -1,9 +1,7 @@
 ---
 id: unsafe-rust
 title: Unsafe Rust
-description:
-  'Unsafe Rust — What `unsafe` Enables; Raw Pointers; `*const T` and `*mut T`; Creating Raw Pointers
-  with worked examples and exam-style questions.'
+description: 'Rust Unsafe Rust notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and revision.'
 slug: unsafe-rust
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Graph Algorithms
-description:
-  "A-Level Computer Science notes on Graph Algorithms: 1. Dijkstra's Algorithm (Revisited); Priority
-  Queue Optimisation; Bidirectional Dijkstra; 2. A* Search A."
+description: 'A-Level Computer Science Graph Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

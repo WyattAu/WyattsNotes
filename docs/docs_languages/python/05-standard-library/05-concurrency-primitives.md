@@ -1,9 +1,7 @@
 ---
 id: concurrency-primitives
 title: Concurrency Primitives
-description:
-  'Concurrency Primitives — threading Module; Creating Threads; Thread Subclassing; Daemon Threads
-  with worked examples and exam-style questions.'
+description: 'Python Concurrency Primitives notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and mastery.'
 slug: concurrency-primitives
 ---
 

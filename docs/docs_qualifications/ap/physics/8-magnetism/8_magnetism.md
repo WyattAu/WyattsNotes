@@ -1,8 +1,6 @@
 ---
 title: Magnetism
-description:
-  "Magnetism -- Magnetic Force, Biot-Savart Law, Ampere's Law, Faraday's Law, Lenz's Law,
-  Inductance, RL and LC Circuits, and Maxwell's Equations (AP Physics C: E&"
+description: 'Qualifications Physics Magnetism notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-05-05
 tags:
   - ap

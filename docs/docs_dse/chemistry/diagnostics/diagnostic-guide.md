@@ -1,8 +1,6 @@
 ---
 title: 'DSE Chemistry Diagnostic Tests -- Guide'
-description:
-  'Challenging DSE chemistry diagnostic questions on DSE Chemistry Diagnostic Tests -- Guide. With
-  full worked solutions and examiner commentary.'
+description: 'DSE Chemistry Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

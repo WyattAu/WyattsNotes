@@ -1,8 +1,6 @@
 ---
 title: Properties of Materials
-description:
-  "A-Level Physics notes on Properties of Materials: 1. Hooke's Law; Springs in Series and Parallel;
-  2. Stress and Strain; 3. Young's Modulus."
+description: 'A-Level Physics Properties of Materials notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - Physics

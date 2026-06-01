@@ -1,8 +1,6 @@
 ---
 title: 'Market Failure and Government Intervention -- Diagnostic Tests'
-description:
-  'DSE Economics diagnostic tests for market failure: externalities, public goods, information
-  asymmetry, government intervention methods.'
+description: 'DSE Economics Market Failure and Government Intervention -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-market-failure
 hide_table_of_contents: true
 ---

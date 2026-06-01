@@ -1,8 +1,6 @@
 ---
 title: Atomic Structure
-description:
-  'Atomic Structure — Subatomic Particles (OL/HL); Atomic Number and Mass Number; Isotopes (OL/HL);
-  Relative Atomic Mass (OL/HL).'
+description: 'ILC Chemistry Atomic Structure notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-04-14
 tags:
   - ilc

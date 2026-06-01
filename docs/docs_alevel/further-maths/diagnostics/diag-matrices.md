@@ -1,8 +1,6 @@
 ---
 title: 'Matrices -- Diagnostic Tests'
-description:
-  'A-Level Further Maths diagnostic tests for matrices: operations, inverses, transformations,
-  eigenvalues, 3x3 determinants.'
+description: 'A-Level Further Maths Matrices -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-further-matrices
 hide_table_of_contents: true
 ---

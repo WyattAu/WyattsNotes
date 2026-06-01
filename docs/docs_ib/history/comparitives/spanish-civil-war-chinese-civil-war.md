@@ -3,9 +3,7 @@ title: Spanish Civil War and Chinese Civil War
 tags:
   - history
 slug: spanish-civil-war-chinese-civil-war
-description:
-  'Rigorous IB history notes covering Spanish Civil War and Chinese Civil War. Includes definitions,
-  derivations, worked examples, and exam-style problems. International Baccalaureate.'
+description: 'IB History Spanish Civil War and Chinese Civil War notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 ---
 
 ## Brief

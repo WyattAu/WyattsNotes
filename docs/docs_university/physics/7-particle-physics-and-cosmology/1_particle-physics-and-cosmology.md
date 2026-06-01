@@ -1,10 +1,6 @@
 ---
 title: Particle Physics and Cosmology
-description:
-  'Comprehensive university-level notes on particle physics and cosmology covering the Standard
-  Model of particle physics, gauge symmetry and electroweak unification, conservation laws, Feynman
-  diagrams, the Higgs mechanism, group theory, running coupling constants, Big Bang cosmology,
-  neutrino physics, and theories beyond the Standard Model.'
+description: 'University Particle Physics and Cosmology notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

@@ -1,9 +1,7 @@
 ---
 id: package-management
 title: Package Management
-description:
-  'Package Management — Package Formats; Package Anatomy; Inspect a DEB package without installing;
-  Inspect an RPM package without installing.'
+description: 'Package Management notes covering key definitions, core concepts, worked examples, and practice questions for clear study and examination practice.'
 slug: package-management
 sidebar_position: 1
 ---

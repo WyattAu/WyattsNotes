@@ -1,9 +1,7 @@
 ---
 id: cpu-fundamentals
 title: CPU Architecture and Tuning
-description:
-  'CPU Architecture and Tuning — Microarchitecture Overview; Instruction Pipeline; Fetch and Decode;
-  Out-of-Order Execution.'
+description: 'CPU Architecture and Tuning notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 slug: cpu-fundamentals
 ---
 

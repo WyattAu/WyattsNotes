@@ -1,9 +1,7 @@
 ---
 title: Maths Question Bank
 date: 2026-05-30
-description:
-  'GCSE Maths exam-style question bank with worked solutions. Covers Number, Algebra, Geometry,
-  Statistics, and Ratio and Proportion.'
+description: 'GCSE Maths Question Bank.Md Maths notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 tags:
   - gcse
   - maths

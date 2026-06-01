@@ -1,8 +1,6 @@
 ---
 title: Statistics
-description:
-  'Statistics — 1. Data Collection; 1.1 Types of Data; 1.2 Sampling Methods; 1.3 Bias in Data
-  Collection with worked examples and exam-style questions.'
+description: 'GCSE Maths Statistics notes covering key definitions, core concepts, worked examples, and practice questions for complete study and examination practice.'
 date: 2026-04-14
 tags:
   - gcse

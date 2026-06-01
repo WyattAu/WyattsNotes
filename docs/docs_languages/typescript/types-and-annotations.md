@@ -1,8 +1,6 @@
 ---
 title: Types and Annotations
-description:
-  'Types and Annotations — Primitive Types; The `any`, `unknown`, `never`, and `void` Types; `any`;
-  `unknown` with worked examples and exam-style questions.'
+description: 'Typescript Types and Annotations notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 slug: typescript-types-and-annotations
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

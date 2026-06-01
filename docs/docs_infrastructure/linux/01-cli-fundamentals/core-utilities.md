@@ -1,9 +1,7 @@
 ---
 id: core-utilities
 title: Core Utilities
-description:
-  'Core Utilities — GNU Coreutils Overview; Text Processing Pipeline Patterns; `grep` — Pattern
-  Matching; Basic pattern matching.'
+description: 'Core Utilities notes covering key definitions, core concepts, worked examples, and practice questions for rigorous learning and effective revision.'
 slug: core-utilities
 sidebar_position: 2
 ---

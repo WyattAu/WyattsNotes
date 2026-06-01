@@ -1,9 +1,7 @@
 ---
 id: maps-and-sets
 title: Maps and Sets
-description:
-  'Maps and Sets — The `Map` Interface; Map Implementations; `HashMap`; `LinkedHashMap` with worked
-  examples and exam-style questions.'
+description: 'Java Maps and Sets notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive study and thorough revision.'
 slug: maps-and-sets
 ---
 

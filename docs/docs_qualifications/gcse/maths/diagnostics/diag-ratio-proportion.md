@@ -1,8 +1,6 @@
 ---
 title: 'Ratio, Proportion, and Rates of Change -- Diagnostic Tests'
-description:
-  'GCSE Maths diagnostic tests for ratio, proportion, and rates of change: ratio problems, compound
-  measures, speed/density, growth and decay.'
+description: 'GCSE Maths Ratio, Proportion, and Rates of Change -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-ratio-proportion
 hide_table_of_contents: true
 ---

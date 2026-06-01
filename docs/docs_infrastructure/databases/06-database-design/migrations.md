@@ -1,9 +1,7 @@
 ---
 id: migrations
 title: Schema Migrations
-description:
-  'Databases: Schema Migrations — Why Migrations Matter; Migration Tools; Flyway; Naming convention:
-  V{version}__{description}.sql.'
+description: 'Schema Migrations notes covering key definitions, core concepts, worked examples, and practice questions for efficient review and exam preparation.'
 slug: migrations
 ---
 

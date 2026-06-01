@@ -1,8 +1,6 @@
 ---
 title: Probability Theory
-description:
-  'University-level notes on Probability Theory: 1. Probability Spaces; 1.1 Sample Spaces and
-  Events; 1.2 Probability Measures; 1.3 Conditional Probability and Ind'
+description: 'University Mathematics Probability Theory notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-26T00:00:00.000Z
 tags:
   - Mathematics

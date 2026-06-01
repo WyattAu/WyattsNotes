@@ -1,8 +1,6 @@
 ---
 title: Chemistry - Redox and Electrochemistry
-description:
-  'DSE Chemistry redox and electrochemistry notes covering oxidation-reduction reactions,
-  electrolysis, electrochemical cells, and industrial applications.'
+description: 'DSE Chemistry - Redox and Electrochemistry notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry

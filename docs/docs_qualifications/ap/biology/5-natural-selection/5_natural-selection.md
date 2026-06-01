@@ -1,8 +1,6 @@
 ---
 title: Natural Selection
-description:
-  'Natural Selection — Evidence for Evolution; Hardy-Weinberg Equilibrium (CED Unit 7); Equations;
-  Conditions for Hardy-Weinberg Equilibrium.'
+description: 'Qualifications Biology Natural Selection notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2026-04-14
 tags:
   - ap

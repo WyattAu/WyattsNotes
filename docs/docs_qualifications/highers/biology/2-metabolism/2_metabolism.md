@@ -1,8 +1,6 @@
 ---
 title: Metabolism and Survival
-description:
-  'Metabolism and Survival — Metabolism; Enzymes; Michaelis-Menten Kinetics; Cellular Respiration
-  with worked examples and exam-style questions.'
+description: 'Scottish Highers Biology Metabolism and Survival notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 date: 2026-04-14
 tags:
   - highers

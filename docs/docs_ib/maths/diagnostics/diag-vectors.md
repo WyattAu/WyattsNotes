@@ -1,8 +1,6 @@
 ---
 title: 'Vectors -- Diagnostic Tests'
-description:
-  Hardest IB Mathematics diagnostic tests for vectors covering skew lines, scalar triple product,
-  reflection in planes, and point-to-plane distance.
+description: 'IB Maths Vectors -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: diag-vectors
 hide_table_of_contents: true
 ---

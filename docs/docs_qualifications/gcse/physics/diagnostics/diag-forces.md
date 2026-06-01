@@ -1,8 +1,6 @@
 ---
 title: 'Forces -- Diagnostic Tests'
-description:
-  "GCSE Physics diagnostic tests for forces: Newton's laws, weight and mass, resultant forces,
-  Hooke's law, momentum, pressure."
+description: 'GCSE Physics Forces -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 slug: diag-forces
 hide_table_of_contents: true
 ---

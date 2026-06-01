@@ -1,8 +1,6 @@
 ---
 title: Work, Energy and Power
-description:
-  'A-Level Physics notes on Work, Energy and Power: 1. Work Done by a Force; 2. Kinetic Energy; 3.
-  Gravitational Potential Energy; 4. Elastic Potential Energy.'
+description: 'A-Level Physics Work, Energy and Power notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

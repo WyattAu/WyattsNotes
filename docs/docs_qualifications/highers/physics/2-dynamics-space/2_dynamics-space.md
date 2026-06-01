@@ -1,8 +1,6 @@
 ---
 title: Dynamics and Space
-description:
-  'Dynamics and Space — Higher Dynamics; Motion in a Straight Line; Graphical Analysis; Extracting
-  Information from Graphs.'
+description: 'Scottish Highers Physics Dynamics and Space notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2026-04-14
 tags:
   - highers

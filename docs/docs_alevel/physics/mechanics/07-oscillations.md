@@ -1,8 +1,6 @@
 ---
 title: Oscillations
-description:
-  'A-Level Physics notes on Oscillations: 1. Simple Harmonic Motion — Definition; 2. The SHM
-  Equation and Its Solutions; Derived Quantities.'
+description: 'A-Level Physics Oscillations notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and examination practice.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

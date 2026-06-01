@@ -1,8 +1,6 @@
 ---
 title: STEP Preparation
-description:
-  'Comprehensive preparation guide for the Sixth Term Examination Paper (STEP): algebra, calculus,
-  vectors, probability, geometry, worked solutions, and exam techn'
+description: 'University Admissions STEP Preparation notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics

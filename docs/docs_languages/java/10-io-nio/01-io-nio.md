@@ -1,8 +1,6 @@
 ---
 title: I/O, NIO, and the Path API
-description:
-  'I/O, NIO, and the Path API — Classic I/O (java.io); InputStream and OutputStream Hierarchy;
-  Reader and Writer Hierarchy, ensuring thorough understanding.'
+description: 'Java I/O, NIO, and the Path API notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java

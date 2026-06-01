@@ -1,8 +1,6 @@
 ---
 title: Carbonyl Compounds
-description:
-  'A-Level Chemistry notes on Carbonyl Compounds: Aldehydes vs Ketones; Nucleophilic Addition;
-  Reaction with HCN (Cyanohydrin Formation); Reduction with NaBH$_4$.'
+description: 'A-Level Chemistry Carbonyl Compounds notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

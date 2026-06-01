@@ -1,8 +1,6 @@
 ---
 title: 'GCSE Physics -- Diagnostic Guide'
-description:
-  'Comprehensive guide to GCSE Physics diagnostic tests with coverage map, grading rubric,
-  prerequisite chains, and timing recommendations.'
+description: 'GCSE Physics -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and mastery.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

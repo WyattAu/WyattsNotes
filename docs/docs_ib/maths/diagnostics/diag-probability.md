@@ -1,8 +1,6 @@
 ---
 title: 'Probability -- Diagnostic Tests'
-description:
-  Hardest IB Mathematics diagnostic tests for probability covering conditional probability,
-  independence confusion, Bayes theorem, and counting with restrictions.
+description: 'IB Maths Probability -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: diag-probability
 hide_table_of_contents: true
 ---

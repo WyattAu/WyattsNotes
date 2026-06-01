@@ -1,8 +1,6 @@
 ---
 title: 'Kinematics -- Diagnostic Tests'
-description:
-  Diagnostic tests covering SUVAT equations, projectile motion, displacement-time and velocity-time
-  graphs, and relative motion at maximum A-Level difficulty.
+description: 'A-Level Physics Kinematics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 slug: diag-kinematics
 hide_table_of_contents: true
 ---

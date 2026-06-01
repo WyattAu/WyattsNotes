@@ -6,9 +6,7 @@ tags:
   - alevel-psychology
 categories:
   - alevel-psychology
-description:
-  Covers animal and human attachment studies, Bowlby's evolutionary theory, Ainsworth's Strange
-  Situation, deprivation, institutionalisation, and childhood influence for A-Level Psychology.
+description: 'A-Level Psychology Attachment notes covering key definitions, core concepts, worked examples, and practice questions for structured review and exam preparation.'
 slug: attachment
 ---
 

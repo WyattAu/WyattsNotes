@@ -1,8 +1,6 @@
 ---
 title: TypeScript -- Course Overview
-description:
-  'TypeScript: TypeScript -- Course Overview — What Is TypeScript; Relationship to JavaScript; Key
-  Language Features; The Toolchain.'
+description: 'Typescript Course Overview notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
 slug: typescript
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]

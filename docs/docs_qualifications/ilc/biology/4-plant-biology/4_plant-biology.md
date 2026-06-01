@@ -1,8 +1,6 @@
 ---
 title: Plant Biology
-description:
-  'Plant Biology — Plant Structure; Plant Tissues (OL/HL); Leaf Structure (OL/HL); Root Structure
-  (OL/HL) with worked examples and exam-style questions.'
+description: 'ILC Plant Biology notes covering key definitions, core concepts, worked examples, and practice questions for complete learning and effective revision.'
 date: 2026-04-14
 tags:
   - ilc

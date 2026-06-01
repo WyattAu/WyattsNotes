@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  Learn to compare texts effectively for A-Level English. Covers thematic links, structural
-  comparison, contextual connections, and essay frameworks for comparative questions.
+description: 'A-Level English Comparative Analysis notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: comparative-analysis
 ---
 

@@ -6,9 +6,7 @@ tags:
   - alevel-psychology
 categories:
   - alevel-psychology
-description:
-  Covers nature vs nurture, free will vs determinism, holism vs reductionism, idiographic vs
-  nomothetic, and biases in psychology for A-Level Psychology.
+description: 'A-Level Psychology Issues and Debates notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: issues-and-debates
 ---
 

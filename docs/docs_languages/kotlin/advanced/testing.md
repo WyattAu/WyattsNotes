@@ -1,8 +1,6 @@
 ---
 title: Testing
-description:
-  'Testing — Dependencies; JUnit 5 Basics; Test Annotations; Assertion Libraries with worked
-  examples and exam-style questions.'
+description: 'Kotlin Testing notes covering key definitions, core concepts, worked examples, and practice questions for complete revision and exam readiness.'
 slug: testing
 date: 2026-04-18
 tags:

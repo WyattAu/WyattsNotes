@@ -1,8 +1,6 @@
 ---
 title: Modern Texts and Poetry
-description:
-  'GCSE English: Modern Texts and Poetry — 1. Modern Texts (Post-1914); 1.1 Modern Drama; 1.2 Modern
-  Prose; An Inspector Calls.'
+description: 'GCSE English Modern Texts and Poetry notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-04-22
 tags:
   - gcse

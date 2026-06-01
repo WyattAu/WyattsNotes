@@ -1,8 +1,6 @@
 ---
 title: 'Heat and Gases -- Diagnostic Tests'
-description:
-  'Hardest DSE heat questions: specific vs latent heat, gas law unit conversions, kinetic theory
-  derivations, PV work, and thermodynamic processes.'
+description: 'DSE Physics Heat and Gases -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-heat-gases
 hide_table_of_contents: true
 ---

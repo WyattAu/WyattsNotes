@@ -66,3 +66,28 @@ Configure notifications in Sentry:
    - Page loads (FCP, LCP)
    - Client-side navigation (SPA route changes)
 4. Set **performance alerts** for when transaction duration exceeds p95 threshold.
+
+## Worked Examples
+
+### Example 1: Verifying Error Tracking After Deployment
+**Problem:** After deploying to production, confirm that Sentry is receiving errors correctly.
+**Solution:** Open the deployed site in a browser, open DevTools console, and run:
+```js
+throw new Error('Sentry test error');
+```
+Check the Sentry project issues page within 30 seconds. If the error appears with the correct release tag (matching the commit SHA), the integration is working.
+
+### Example 2: Setting Up a Slack Alert for New Issues
+**Problem:** Configure Sentry to post to `#wyattsnotes-alerts` whenever a new issue is created.
+**Solution:** In Sentry, go to Settings > Integrations > Slack and connect your workspace. Then create an Alert Rule: Alerts > Create Alert > Issue alerts > New issue > Action: Send notification to Slack > channel `#wyattsnotes-alerts`.
+
+## Common Pitfalls
+
+- **DSN stored in plaintext:** Never commit the DSN to the repository. Always store it as a GitHub Secret (`SENTRY_DSN`) and inject it at build time.
+- **Performance sample rate too high in production:** A sample rate of 1.0 sends every transaction to Sentry, which can quickly exhaust your quota. Reduce to 0.1 (10%) for production deployments.
+- **Missing source maps:** Without source maps, Sentry shows minified code in stack traces, making errors nearly impossible to debug. Ensure `sentry-cli` uploads source maps during the build step.
+- **Alert fatigue from overly sensitive rules:** Set metric alert thresholds conservatively (e.g., >1% error rate over 5 minutes) to avoid flooding your notification channel with noise.
+
+## Summary
+
+Sentry provides error monitoring and performance tracking for WyattsNotes. Setup involves creating a project, storing the DSN as a GitHub Secret, and configuring alert rules. Source maps are uploaded at build time, and releases are tagged automatically via the deploy workflow. Performance monitoring should use a reduced sample rate in production.

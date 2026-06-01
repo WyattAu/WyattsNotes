@@ -1,8 +1,6 @@
 ---
 title: Exception Handling
-description:
-  'Exception Handling — Exception Hierarchy; When to Use Checked vs Unchecked; Common Exceptions;
-  try-catch-finally Mechanics.'
+description: 'Java Exception Handling notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
 date: 2026-04-04T00:00:00.000Z
 tags:
   - Java

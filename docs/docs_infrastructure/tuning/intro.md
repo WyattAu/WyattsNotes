@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Hardware Tuning
-description:
-  'Rigorous infrastructure and DevOps notes covering Introduction to Hardware Tuning. Includes
-  definitions, derivations, worked examples, and exam-style problems.'
+description: 'Introduction to Hardware Tuning notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 slug: intro
 sidebar_position: 1
 ---

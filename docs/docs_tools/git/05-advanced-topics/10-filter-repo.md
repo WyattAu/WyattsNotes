@@ -1,8 +1,6 @@
 ---
 title: Filter-Repo (History Rewriting)
-description:
-  'Filter-Repo (History Rewriting) — What filter-repo Is; Why filter-branch Was Problematic. with
-  additional techniques and methods.'
+description: 'Git Filter-Repo (History Rewriting) notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 slug: filter-repo
 ---
 

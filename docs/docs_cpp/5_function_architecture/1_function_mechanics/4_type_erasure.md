@@ -1,8 +1,6 @@
 ---
 title: Type Erasure — Function Pointers, std::function, std::move_only_function
-description:
-  'C++: Type Erasure — Function Pointers, std::function, std::move_only_function — Type Erasure:
-  Function Pointers, std::function, std::move_only_function.'
+description: 'C++ Programming Type Erasure — Function Pointers, notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

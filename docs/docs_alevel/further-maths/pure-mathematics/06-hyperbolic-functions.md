@@ -1,8 +1,6 @@
 ---
 title: Hyperbolic Functions
-description:
-  'A-Level Further Maths notes on Hyperbolic Functions: Board Coverage for comprehensive revision
-  and examination preparation.'
+description: 'A-Level Further Maths Hyperbolic Functions notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

@@ -1,8 +1,6 @@
 ---
 title: 'Maclaurin and Taylor Series -- Diagnostic Tests'
-description:
-  'A-Level Further Maths diagnostic tests for Maclaurin series: standard expansions, radius of
-  convergence, differentiation and integration of series.'
+description: 'A-Level Further Maths Maclaurin and Taylor Series -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-maclaurin-taylor-series
 hide_table_of_contents: true
 ---

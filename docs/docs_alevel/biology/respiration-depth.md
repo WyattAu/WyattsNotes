@@ -1,8 +1,6 @@
 ---
 title: Respiration (In Depth)
-description:
-  'A-Level Biology notes on Respiration: glycolysis, link reaction, Krebs cycle, oxidative
-  phosphorylation, respiratory quotient, anaerobic respiration, respirator'
+description: 'A-Level Biology Respiration (In Depth) notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

@@ -1,9 +1,7 @@
 ---
 id: io-redirection
 title: I/O Redirection and Pipes
-description:
-  'I/O Redirection and Pipes — File Descriptors; Standard File Descriptors; View file descriptors
-  for a process; 0 -> /dev/pts/0.'
+description: 'I/O Redirection and Pipes notes covering key definitions, core concepts, worked examples, and practice questions for in-depth study and thorough revision.'
 slug: io-redirection
 sidebar_position: 2
 ---

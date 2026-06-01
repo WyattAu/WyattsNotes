@@ -6,7 +6,7 @@ tags:
   - Machine Learning
 categories:
   - Machine Learning
-description: "Advanced machine learning topics: transformers and attention mechanisms, generative adversarial networks, variational autoencoders, reinforcement learning, transfer learning, and model deployment."
+description: "Advanced machine learning topics: transformers and attention mechanisms, generative adversarial networks, variational autoencoders, reinforcement learning,."
 ---
 
 ## Attention Mechanisms and Transformers
@@ -444,7 +444,19 @@ between input and output changes) are the two primary failure modes.
 - **Input feature tracking** — monitor that feature distributions, null rates, and value ranges remain
   within training-time bounds
 
-## Common Pitfalls
+## Worked Examples
+
+### Example 1: Computing Self-Attention
+**Problem:** Given input sequence X with two tokens, compute self-attention with d_k = 4. Token A = [1, 0, 1, 0], Token B = [0, 1, 0, 1]. W_Q, W_K, W_V are identity matrices. Compute attention weights.
+**Solution:** Q = K = V = X. QK^T = [[2, 0], [0, 2]]. Divide by sqrt(4) = 2: [[1, 0], [0, 1]]. Softmax: [[1, 0], [0, 1]]. Output = V (identity attention). Token A attends 100% to itself, Token B attends 100% to itself. This occurs because orthogonal queries produce zero dot products.
+
+### Example 2: Fine-Tuning a Pretrained Model
+**Problem:** Fine-tune a BERT-base model (12 layers, hidden_size=768, 12 attention heads) for a binary classification task with 1000 labelled examples.
+**Solution:** Load the model with `from_pretrained`. Add a classification head: `Linear(768, 2)`. Freeze all encoder parameters. Train only the head with Adam (lr=1e-4) for 10 epochs. If validation loss plateaus, unfreeze the top 4 encoder layers with lr=1e-5 and continue training. Use binary cross-entropy loss.
+
+### Example 3: PPO Update Calculation
+**Problem:** At time step t, the old policy assigns probability 0.3 to action a_t, and the new policy assigns 0.5. The advantage is A_t = 0.8. epsilon = 0.2. Compute the clipped objective.
+**Solution:** r_t(θ) = 0.5/0.3 = 1.667. Clipped r_t in [1-0.2, 1+0.2] = [0.8, 1.2]. r_t = 1.667 is clipped to 1.2. L(θ) = min(1.667 × 0.8, 1.2 × 0.8) = min(1.333, 0.96) = 0.96. The clip prevents the destructively large update from the high probability ratio.
 
 1. **Treating accuracy as the only metric.** A model that is 99.5% accurate on an imbalanced dataset
    with a 99% majority class is performing worse than random guessing on the minority class. Use
@@ -473,6 +485,14 @@ between input and output changes) are the two primary failure modes.
 7. **Not versioning data and models.** A model is a function of its training data, code, and
    hyperparameters. If you cannot reproduce the exact conditions under which a model was trained, you
    cannot debug it, retrain it, or roll back to a previous version.
+
+## Common Pitfalls
+
+1. **Confusing the roles of generator and discriminator loss functions.** The generator minimizes the discriminator's output, not maximizes it. The discriminator maximizes real vs. fake classification accuracy. Getting this wrong produces nonsensical training loops.
+2. **Using RL without proper reward scaling.** In PPO and policy gradient methods, unnormalised reward signals cause gradient explosion or vanishing. Rewards should be standardised (zero mean, unit variance) before use.
+3. **Applying transfer learning without domain adaptation.** A model pretrained on ImageNet will perform poorly on medical or satellite imagery without fine-tuning or domain-specific adaptation.
+4. **Overfitting the validation set through extensive hyperparameter search.** Running thousands of configurations against the same validation set implicitly fits to it. Use nested cross-validation or a separate test set.
+
 
 ## Summary
 

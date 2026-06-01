@@ -1,8 +1,6 @@
 ---
 title: Chemical Reactions
-description:
-  'GCSE Chemistry: Chemical Reactions — 1. Writing Chemical Equations; 1.1 Word Equations; 1.2
-  Symbol Equations; 1.3 State Symbols.'
+description: 'GCSE Chemistry Chemical Reactions notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 date: 2026-04-14
 tags:
   - gcse

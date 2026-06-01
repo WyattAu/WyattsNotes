@@ -1,8 +1,6 @@
 ---
 title: Correlation and Regression (Extended)
-description:
-  'A-Level Mathematics notes on Correlation and Regression (Extended): Correlation and Regression
-  (Extended Treatment); 1. Scatter Diagrams; 1.1 Interpretation.'
+description: 'A-Level Maths Correlation and Regression (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

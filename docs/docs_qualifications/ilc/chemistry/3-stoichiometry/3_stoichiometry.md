@@ -1,8 +1,6 @@
 ---
 title: Stoichiometry and Formulae
-description:
-  "Stoichiometry and Formulae — The Mole Concept (OL/HL); Avogadro's Number; Molar Mass; Conversions
-  with worked examples and exam-style questions."
+description: 'ILC Chemistry Stoichiometry and Formulae notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-14
 tags:
   - ilc

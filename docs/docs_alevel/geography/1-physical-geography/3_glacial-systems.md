@@ -3,9 +3,7 @@ title: Glacial Systems and Landscapes
 date: 2026-05-21
 tags: [alevel, alevel-geography]
 categories: [alevel, geography, physical-geography]
-description:
-  Glacial processes, erosional and depositional landforms, periglacial environments, and climate
-  reconstruction using glacial evidence.
+description: 'A-Level Geography Glacial Systems and Landscapes notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 ---
 
 # Glacial Systems and Landscapes

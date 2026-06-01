@@ -1,8 +1,6 @@
 ---
 title: Pull Requests
-description:
-  'Pull Requests — What is a Pull Request; Anatomy of a Good Pull Request; Title; Description with
-  worked examples and exam-style questions.'
+description: 'Git Pull Requests notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and mastery.'
 date: 2025-06-03T15:00:00.000Z
 tags:
   - git

@@ -1,8 +1,6 @@
 ---
 title: 'A-Level Maths -- Diagnostic Test Guide'
-description:
-  'Challenging A-Level mathematics diagnostic questions on A-Level Maths -- Diagnostic Test Guide.
-  With full worked solutions and examiner commentary.'
+description: 'A-Level Maths -- Diagnostic Test notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

@@ -1,9 +1,7 @@
 ---
 id: file-permissions
 title: File Permissions and ACLs
-description:
-  'File Permissions and ACLs — Unix Permission Model; Permission Bits; Octal Notation; Viewing
-  Permissions with worked examples and exam-style questions.'
+description: 'File Permissions and ACLs notes covering key definitions, core concepts, worked examples, and practice questions for targeted revision and exam readiness.'
 slug: file-permissions
 sidebar_position: 2
 ---

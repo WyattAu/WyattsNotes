@@ -1,8 +1,6 @@
 ---
 title: Functions
-description:
-  'DSE Mathematics functions notes covering domain and range, function notation, linear functions,
-  quadratic functions, and graph sketching techniques.'
+description: 'DSE Maths Functions notes covering key definitions, core concepts, worked examples, and practice questions for in-depth study and examination practice.'
 date: 2025-06-03T16:18:52.976Z
 tags:
   - Maths

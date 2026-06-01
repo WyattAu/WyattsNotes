@@ -8,7 +8,7 @@ tags:
   - science
 categories:
   - SAT
-description: General Science practice problems with step-by-step solutions. Covers biology, chemistry, physics, and earth science, including data interpretation and experimental analysis questions.
+description: General Science practice problems with step-by-step solutions. Covers biology, chemistry, physics, and earth science, including data interpretation and.
 ---
 
 ## Overview
@@ -408,3 +408,31 @@ of measurement, type of light source, and CO₂ concentration in the water.
 **Answer:** (a) Independent: lamp distance; Dependent: bubble rate. (b) Approximately inverse
 relationship ($1/d$), deviating from the strict inverse square law due to limiting factors. (c) Plant
 type, water volume, water temperature, light source type, CO₂ concentration.
+
+## Worked Examples
+
+### Example 1: Analysing an Experimental Design
+**Problem:** A student measures the rate of a chemical reaction at different temperatures. The student records the time for a colour change and repeats each measurement twice. Evaluate the experimental method and suggest one improvement.
+**Approach:** Identify strengths (repetition improves reliability, controlled variable is temperature) and weaknesses (only two repeats is insufficient for reliable averages, no mention of controlling other variables such as concentration or catalyst presence). Improvement: increase to at least 3-5 repeats per temperature, or use a data logger for more precise timing.
+
+### Example 2: Interpreting a Data Table
+**Problem:** A table shows the concentration of dissolved oxygen in a river at four sampling points: A (upstream) = 8.2 mg/L, B (near factory) = 3.1 mg/L, C (downstream) = 5.5 mg/L, D (far downstream) = 7.8 mg/L. Explain the pattern.
+**Approach:** Dissolved oxygen decreases near the factory (point B) due to pollution that increases biological oxygen demand from decomposing organic matter. It recovers downstream (C, D) as the river naturally re-oxygenates through aeration and photosynthesis. The recovery is not complete at C, suggesting ongoing effects, but near-complete at D indicates the river has sufficient self-purification capacity.
+
+## Common Pitfalls
+
+- **Confusing independent and dependent variables.** The independent variable is the one the experimenter changes; the dependent variable is the one measured. Mixing these up leads to incorrect conclusions about causation.
+- **Stating a correlation implies causation.** Just because two variables change together does not mean one causes the other. SAT science questions frequently test this distinction.
+- **Forgetting to mention controlled variables.** Every experiment has variables that must be kept constant. Omitting them from an experimental design answer loses marks.
+- **Describing data without using numbers.** Vague descriptions like "the value increases" are insufficient. Reference specific data points to support claims.
+
+## Summary
+
+The SAT science question bank covers experimental design (identifying variables, evaluating methods, suggesting improvements), data interpretation (tables, graphs, identifying patterns and anomalies), and scientific reasoning (correlation vs. causation, drawing conclusions, evaluating evidence). Questions span biology (photosynthesis, cell biology, ecology), chemistry (reactions, bonding, rates), and physics (electricity, forces, waves). Key exam skills include precise use of scientific terminology, reference to specific data points, and understanding of experimental controls.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| SAT Advanced Strategies | [View](/docs_qualifications/sat/advanced-strategies) |
+| SAT Math Strategies | [View](/docs_qualifications/sat/math-strategies) |

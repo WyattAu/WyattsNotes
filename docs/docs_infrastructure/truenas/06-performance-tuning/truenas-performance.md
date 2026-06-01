@@ -1,9 +1,7 @@
 ---
 id: truenas-performance
 title: TrueNAS Performance Tuning
-description:
-  'TrueNAS Performance Tuning — ARC Sizing and Tuning; How the ARC Works; Default ARC Sizing; Tuning
-  ARC Size with worked examples and exam-style questions.'
+description: 'TrueNAS Performance Tuning notes covering key definitions, core concepts, worked examples, and practice questions for solid learning and effective revision.'
 slug: truenas-performance
 ---
 

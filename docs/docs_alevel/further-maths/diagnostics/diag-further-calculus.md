@@ -1,8 +1,6 @@
 ---
 title: 'Further Calculus -- Diagnostic Tests'
-description:
-  'A-Level Further Maths diagnostic tests for further calculus: improper integrals, volumes of
-  revolution, parametric differentiation, arc length.'
+description: 'A-Level Further Maths Further Calculus -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-further-calculus
 hide_table_of_contents: true
 ---

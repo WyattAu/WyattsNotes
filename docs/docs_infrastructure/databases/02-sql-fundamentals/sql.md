@@ -1,9 +1,7 @@
 ---
 id: sql
 title: SQL Fundamentals
-description:
-  'SQL Fundamentals — SQL Standards and Dialects; Data Definition Language (DDL); CREATE TABLE;
-  Column Data Types with worked examples and exam-style questions.'
+description: 'SQL Fundamentals notes covering key definitions, core concepts, worked examples, and practice questions for clear review and exam preparation.'
 slug: sql
 sidebar_position: 1
 tags:

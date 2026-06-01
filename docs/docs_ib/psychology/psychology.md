@@ -1,8 +1,6 @@
 ---
 title: IB Psychology (SL/HL)
-description:
-  'Rigorous IB notes covering IB Psychology (SL/HL). Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Psychology (SL/HL) notes covering key definitions, core concepts, worked examples, and practice questions for effective review and exam preparation.'
 slug: psychology
 ---
 

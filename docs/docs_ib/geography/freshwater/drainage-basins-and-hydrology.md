@@ -1,8 +1,6 @@
 ---
 title: Drainage Basins and Hydrology
-description:
-  'Drainage basin systems, the hydrological cycle, storm hydrograph interpretation, and factors
-  affecting discharge for IB Geography.'
+description: 'IB Geography Drainage Basins and Hydrology notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 slug: drainage-basins-and-hydrology
 ---
 

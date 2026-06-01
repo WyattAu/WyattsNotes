@@ -1,8 +1,6 @@
 ---
 title: Projections and Callable Objects
-description:
-  'C++: Projections and Callable Objects — Projections: Transforming Elements During Algorithm
-  Execution; `std::ranges::sort` with Projection.'
+description: 'C++ Programming Projections and Callable Objects notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

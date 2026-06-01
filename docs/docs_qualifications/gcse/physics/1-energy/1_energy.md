@@ -1,8 +1,6 @@
 ---
 title: Energy
-description:
-  'Energy — 1.4 Why "Stores and Transfers" Matters; 2.2 Why the Factor of One-Half; 2.5 Proof That
-  the Final Speed Is Independent of Mass.'
+description: 'GCSE Physics Energy notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - gcse

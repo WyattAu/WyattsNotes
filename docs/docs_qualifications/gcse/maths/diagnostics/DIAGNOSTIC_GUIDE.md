@@ -1,8 +1,6 @@
 ---
 title: 'GCSE Maths -- Diagnostic Guide'
-description:
-  'Comprehensive guide to GCSE Maths diagnostic tests with coverage map, grading rubric,
-  prerequisite chains, and timing recommendations.'
+description: 'GCSE Maths -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

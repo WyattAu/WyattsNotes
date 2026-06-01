@@ -1,8 +1,6 @@
 ---
 title: Genetics and Evolution
-description:
-  'Genetics and Evolution — DNA Structure (OL/HL); The Double Helix (OL/HL); DNA Replication (HL);
-  Protein Synthesis (HL). and examination.'
+description: 'ILC Biology Genetics and Evolution notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-04-14
 tags:
   - ilc

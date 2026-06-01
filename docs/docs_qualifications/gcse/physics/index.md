@@ -1,7 +1,6 @@
 ---
 title: GCSE Physics
-description:
-  'GCSE Physics revision notes covering energy, electricity, forces, waves and electromagnetism.'
+description: 'GCSE Physics notes covering key definitions, core concepts, worked examples, and practice questions for detailed review and exam preparation.'
 date: 2026-04-14
 tags:
   - gcse

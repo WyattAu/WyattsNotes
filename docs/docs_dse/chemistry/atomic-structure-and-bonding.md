@@ -1,10 +1,7 @@
 ---
 id: dse-chemistry-atomic-structure-and-bonding
 title: Chemistry - Atomic Structure and Bonding
-description:
-  'DSE Chemistry notes covering atomic structure, electron configuration, periodic trends,
-  ionic bonding, covalent bonding, metallic bonding, intermolecular forces, and physical
-  properties linked to structure.'
+description: 'DSE Chemistry - Atomic Structure and Bonding notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: atomic-structure-and-bonding
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -207,3 +204,23 @@ To predict the physical properties of a substance:
 2. Consider the **strength of bonding/forces**
 3. Predict: melting/boiling point, electrical conductivity, solubility
 4. Explain in terms of the bonding model
+
+## Worked Examples
+
+### Example 1: Predicting Physical Properties
+**Problem:** Predict the melting point, electrical conductivity (solid and molten), and solubility in water for silicon dioxide ($\mathrm{SiO_2}$).
+**Solution:** $\mathrm{SiO_2}$ has a giant covalent structure. Each Si atom is bonded to 4 O atoms in a continuous network. Therefore: very high melting point (strong covalent bonds throughout), does not conduct electricity (no free electrons or ions), and is insoluble in water (giant covalent structures are not attracted by water molecules).
+
+### Example 2: Identifying Bond Type from Properties
+**Problem:** A substance melts at 801 °C, conducts electricity when molten but not when solid, and dissolves in water. Identify the type of bonding present.
+**Solution:** High melting point rules out simple covalent. Conducts when molten but not solid is characteristic of ionic compounds (ions free to move in liquid state but locked in lattice when solid). Solubility in water confirms ionic bonding (polar water molecules attract and separate the ions).
+
+## Common Pitfalls
+
+- **Confusing ionic and metallic conductivity:** Ionic compounds conduct only when molten or aqueous (mobile ions). Metals conduct in all states (delocalised electrons).
+- **Stating graphite is an insulator:** Graphite has delocalised electrons between its layers and does conduct electricity, unlike diamond.
+- **Ignoring exceptions in electron configuration:** Chromium ($[\mathrm{Ar}]\,3d^5\,4s^1$) and copper ($[\mathrm{Ar}]\,3d^{10}\,4s^1$) are exceptions to the standard filling order due to the stability of half-filled and fully filled d-subshells.
+
+## Summary
+
+Atomic structure and bonding covers subatomic particles, electron configuration, periodic trends, and the four main types of bonding: ionic (electron transfer, giant lattice), covalent (electron sharing, simple and giant structures), metallic (delocalised electron sea), and intermolecular forces (London, dipole-dipole, hydrogen bonding). The type of bonding determines physical properties including melting point, conductivity, and solubility.

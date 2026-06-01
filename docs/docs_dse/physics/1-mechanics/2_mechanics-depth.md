@@ -1,9 +1,7 @@
 ---
 id: dse-physics-mechanics
 title: Physics - Mechanics
-description:
-  'Rigorous DSE physics notes covering Physics - Mechanics. Includes definitions, derivations,
-  worked examples, and exam-style problems.'
+description: 'DSE Physics - Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
 slug: physics-mechanics
 ---
 

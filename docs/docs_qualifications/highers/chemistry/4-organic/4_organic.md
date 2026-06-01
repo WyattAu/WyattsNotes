@@ -1,8 +1,6 @@
 ---
 title: Organic Chemistry
-description:
-  'Organic Chemistry — Hydrocarbons; Comparison of Hydrocarbons; IUPAC Nomenclature; Isomerism with
-  worked examples and exam-style questions.'
+description: 'Scottish Highers Organic Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 date: 2026-04-14
 tags:
   - highers

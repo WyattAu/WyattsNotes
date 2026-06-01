@@ -1,8 +1,6 @@
 ---
 title: Goroutines and Synchronization
-description:
-  'Goroutines and Synchronization — Goroutines; The Goroutine Scheduler; sync.WaitGroup; WaitGroup
-  Gotcha with worked examples and exam-style questions.'
+description: 'Go routines and Synchronization notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 slug: goroutines
 date: 2026-04-18
 tags:

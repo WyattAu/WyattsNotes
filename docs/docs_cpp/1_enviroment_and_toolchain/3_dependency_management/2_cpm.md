@@ -1,8 +1,6 @@
 ---
 title: CPM.cmake
-description:
-  'C++: CPM.cmake — Architectural Mechanism; The ABI Guarantee; Proof of Reproducibility Guarantee;
-  Bootstrapping (Zero-Dependency Setup).'
+description: 'C++ Programming CPM.cmake notes covering key definitions, core concepts, worked examples, and practice questions for structured study and thorough revision.'
 date: 2025-12-11T04:34:32.158Z
 tags:
   - cpp

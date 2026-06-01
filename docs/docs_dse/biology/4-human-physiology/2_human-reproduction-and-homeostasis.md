@@ -1,8 +1,6 @@
 ---
 title: Human Reproduction and Homeostasis
-description:
-  'DSE Biology human reproduction and homeostasis notes covering male and female reproductive
-  systems, menstrual cycle, homeostatic mechanisms, and feedback loops.'
+description: 'DSE Biology Human Reproduction and Homeostasis notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

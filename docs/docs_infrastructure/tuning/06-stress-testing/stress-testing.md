@@ -1,9 +1,7 @@
 ---
 id: stress-testing
 title: Stress Testing and Validation
-description:
-  'Stress Testing and Validation — Why Stress Test; The Cost of Insufficient Testing; CPU Stress
-  Tests; Prime95 with worked examples and exam-style questions.'
+description: 'Stress Testing and Validation notes covering key definitions, core concepts, worked examples, and practice questions for effective review and exam preparation.'
 slug: stress-testing
 ---
 

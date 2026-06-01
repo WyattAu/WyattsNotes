@@ -1,8 +1,6 @@
 ---
 title: 'Vectors -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for vectors covering scalar products, shortest distance to a line, skew and
-  intersecting lines, angle between planes, and 3D geometry at'
+description: 'A-Level Maths Vectors -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: diag-vectors
 hide_table_of_contents: true
 ---

@@ -1,9 +1,7 @@
 ---
 id: types-and-variables
 title: Types and Variables
-description:
-  'Types and Variables — Integer Types; Integer Literals; Integer Overflow; Sizing and Alignment
-  with worked examples and exam-style questions.'
+description: 'Rust Types and Variables notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive exam preparation and mastery.'
 slug: types-and-variables
 ---
 

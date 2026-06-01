@@ -1,9 +1,6 @@
 ---
 title: DSE ICT
-description:
-  'Complete DSE Information and Communication Technology revision notes covering data
-  representation, computer systems, programming, networking, office automation, system lifecycle,
-  web development, and network security.'
+description: 'DSE ICT notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and exam readiness.'
 slug: ict
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: TMUA Preparation
-description:
-  'Comprehensive preparation guide for the Test of Mathematics for University Admission (TMUA):
-  mathematical reasoning, logic, proof, statistics, modelling, and wo'
+description: 'University Admissions TMUA Preparation notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics

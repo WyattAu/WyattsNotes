@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Rust
-description:
-  'Rigorous programming language Rust notes covering Introduction to Rust. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Rust Introduction to Rust notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
 slug: intro
 sidebar_position: 1
 ---

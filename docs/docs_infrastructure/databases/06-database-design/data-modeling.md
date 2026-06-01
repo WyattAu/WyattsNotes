@@ -1,9 +1,7 @@
 ---
 id: data-modeling
 title: Data Modeling Patterns
-description:
-  'Databases: Data Modeling Patterns — Normalization Review; When to Stop Normalizing; 3NF vs
-  Denormalization; When to Denormalize.'
+description: 'Data Modeling Patterns notes covering key definitions, core concepts, worked examples, and practice questions for detailed review and exam preparation.'
 slug: data-modeling
 ---
 

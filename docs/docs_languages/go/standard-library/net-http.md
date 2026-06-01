@@ -6,10 +6,7 @@ tags:
   - Go
 categories:
   - Go
-description:
-  'net/http — Go''s standard library HTTP package. Covers handlers, routing, middleware,
-  request/response handling, JSON APIs, HTTP clients, static files, and production
-  patterns.'
+description: 'Go net/http notes covering key definitions, core concepts, worked examples, and practice questions for systematic learning and effective revision.'
 ---
 
 ## Introduction

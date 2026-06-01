@@ -1,8 +1,6 @@
 ---
 title: 'Acids, Bases and Buffers -- Diagnostic Tests'
-description:
-  Diagnostic tests for pH, Ka, Kb, Kw, buffer calculations, and titration curves at the hardest
-  A-Level Chemistry standard.
+description: 'A-Level Chemistry Acids, Bases and Buffers -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-acids-bases
 hide_table_of_contents: true
 ---

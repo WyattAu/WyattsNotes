@@ -1,8 +1,6 @@
 ---
 title: 'Differentiation -- Diagnostic Tests'
-description:
-  "Hardest IB Mathematics diagnostic tests for differentiation covering implicit differentiation
-  second derivatives, L'Hopital repeated application, related rates"
+description: 'IB Maths Differentiation -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 slug: diag-differentiation
 hide_table_of_contents: true
 ---

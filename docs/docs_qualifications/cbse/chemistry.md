@@ -1,9 +1,7 @@
 ---
 title: CBSE Chemistry Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive CBSE Class 11-12 Chemistry study guide covering Physical Chemistry, Inorganic Chemistry,
-  Organic Chemistry. Includes key definitions, exam tips, and common mistakes.'
+description: 'Qualifications Chemistry.Md CBSE Chemistry Study notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 tags:
   - cbse
   - chemistry
@@ -384,7 +382,7 @@ Watson-Crick base pairing: A--T (2 H-bonds), G--C (3 H-bonds).
 
 ---
 
-## 6. Common Mistakes
+## Common Pitfalls
 
 1. **Confusing oxidation state and coordination number.** Oxidation state is the charge on the central metal;
    coordination number is the number of ligand donor atoms bonded to it.
@@ -401,3 +399,21 @@ Watson-Crick base pairing: A--T (2 H-bonds), G--C (3 H-bonds).
 7. **Not distinguishing between physisorption and chemisorption.** Physisorption is weak, reversible, and
    non-specific; chemisorption is strong, often irreversible, and highly specific. Both may occur together
    at different temperature ranges.
+
+## Worked Examples
+
+### Example 1: Calculating pH and Buffer Capacity
+**Problem:** A buffer solution is prepared by mixing 0.1 mol CH3COOH (pKa = 4.74) and 0.1 mol CH3COONa in 1 L of solution. Calculate the pH. Then find the pH after adding 0.01 mol HCl.
+**Solution:** Using Henderson-Hasselbalch: pH = pKa + log([A-]/[HA]) = 4.74 + log(0.1/0.1) = 4.74. After adding 0.01 mol HCl, it reacts with CH3COO-: new [A-] = 0.09, new [HA] = 0.11. pH = 4.74 + log(0.09/0.11) = 4.74 + log(0.818) = 4.74 - 0.087 = 4.65.
+
+### Example 2: Determining Oxidation States in Redox
+**Problem:** Balance the redox reaction: Cr2O7^2- + Fe^2+ + H+ -> Cr^3+ + Fe^3+ + H2O.
+**Solution:** Cr goes from +6 to +3 (gain 3e- per Cr atom, 2 Cr atoms = 6e- gained). Fe goes from +2 to +3 (lose 1e- per Fe). LCM of electrons: 6. Multiply Fe^2+ by 6. Balancing atoms: Cr2O7^2- + 6Fe^2+ + 14H+ -> 2Cr^3+ + 6Fe^3+ + 7H2O. Check: charge: left = -2 + 12 + 14 = +24, right = 6 + 18 = +24. Balanced.
+
+### Example 3: First-Order Kinetics Half-Life
+**Problem:** A first-order reaction has a rate constant k = 0.0693 min^-1. What fraction of the reactant remains after 20 minutes?
+**Solution:** t_1/2 = 0.693/0.0693 = 10 min. In 20 minutes, that is 2 half-lives. Fraction remaining = (1/2)^2 = 0.25, or 25%. Alternatively: [A] = [A]_0 e^{-kt} = [A]_0 e^{-0.0693 x 20} = [A]_0 e^{-1.386} = [A]_0 x 0.250.
+
+## Summary
+
+CBSE Chemistry covers three branches. Physical chemistry includes atomic structure, bonding, thermodynamics (delta G = delta H - T delta S), equilibrium (Le Chatelier's principle, Kc, Kp), electrochemistry (Nernst equation), kinetics (first-order rate laws, Arrhenius equation), and solutions (colligative properties). Inorganic chemistry covers periodic trends, s-block and p-block properties, transition metal chemistry (variable oxidation states, coordination compounds, crystal field theory). Organic chemistry covers IUPAC nomenclature, hydrocarbons, halogen derivatives (SN1, SN2, E1, E2), oxygen compounds, nitrogen compounds, polymers, and biomolecules. Key exam skills include balancing equations, arrow-pushing mechanisms, and applying named reactions.

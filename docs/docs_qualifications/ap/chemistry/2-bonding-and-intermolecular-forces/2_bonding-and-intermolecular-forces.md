@@ -1,8 +1,6 @@
 ---
 title: Bonding and Intermolecular Forces
-description:
-  'Bonding and Intermolecular Forces — Chemical Bonds (CED Units 2-3); Types of Bonds; Ionic
-  Bonding; Derivation: Born-Haber Cycle and Lattice Energy.'
+description: 'Qualifications Chemistry Bonding and Intermolecular Forces notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap

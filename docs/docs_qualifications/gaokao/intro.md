@@ -1,9 +1,7 @@
 ---
 title: Introduction to Gaokao Notes
 date: 2026-05-30
-description:
-  'Chinese Gaokao (高考) exam preparation notes. Includes subject structure, scoring system, provincial
-  variations, and study strategies for China national college entrance examination.'
+description: 'Qualifications Intro.Md Introduction to Gaokao notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 tags:
   - gaokao
 categories:

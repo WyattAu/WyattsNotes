@@ -1,8 +1,6 @@
 ---
 title: Crafting Ghee
-description:
-  'Crafting Ghee — Objective; Ingredients & Tools; Procedure; Region-Specific Adjustments with
-  worked examples and exam-style questions.'
+description: 'General Crafting Ghee notes covering key definitions, core concepts, worked examples, and practice questions for complete study and thorough revision.'
 date: 2025-07-21T02:18:57.576Z
 tags:
   - food

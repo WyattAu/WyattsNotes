@@ -1,9 +1,7 @@
 ---
 title: Assessment
 slug: assessment
-description:
-  'Rigorous IB computer science notes covering Assessment. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Computer Science Assessment notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 ---
 
 # Assessment objective

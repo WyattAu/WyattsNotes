@@ -1,9 +1,7 @@
 ---
 id: build-tools
 title: Build Tools and Dependency Management
-description:
-  'Build Tools and Dependency Management — Project Structure Conventions; Maven; POM Structure;
-  Lifecycle Phases with worked examples and exam-style questions.'
+description: 'Java Build Tools and Dependency Management notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 slug: build-tools
 ---
 

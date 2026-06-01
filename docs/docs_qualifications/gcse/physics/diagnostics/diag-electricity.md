@@ -1,8 +1,6 @@
 ---
 title: 'Electricity -- Diagnostic Tests'
-description:
-  "GCSE Physics diagnostic tests for electricity: current, voltage, resistance, series and parallel
-  circuits, Ohm's law, power."
+description: 'GCSE Physics Electricity -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-electricity
 hide_table_of_contents: true
 ---

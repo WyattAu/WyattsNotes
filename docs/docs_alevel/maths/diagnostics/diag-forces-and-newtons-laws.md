@@ -1,8 +1,6 @@
 ---
 title: "Forces and Newton's Laws -- Diagnostic Tests"
-description:
-  "Hard diagnostic tests for forces and Newton's laws covering friction inequalities, inclined plane
-  resolution, connected particle systems, third-law pairs, and"
+description: 'A-Level Maths Forces and Newton\'s Laws -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-forces-and-newtons-laws
 hide_table_of_contents: true
 ---

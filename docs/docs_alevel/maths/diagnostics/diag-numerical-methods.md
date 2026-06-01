@@ -1,8 +1,6 @@
 ---
 title: 'Numerical Methods -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for numerical methods covering Newton-Raphson divergence, fixed-point
-  iteration convergence, bisection method, trapezium rule accuracy,'
+description: 'A-Level Maths Numerical Methods -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-numerical-methods
 hide_table_of_contents: true
 ---

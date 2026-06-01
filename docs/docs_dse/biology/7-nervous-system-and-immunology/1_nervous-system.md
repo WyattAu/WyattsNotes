@@ -1,8 +1,6 @@
 ---
 title: Nervous System
-description:
-  'DSE Biology nervous system notes covering neuron structure, resting and action potentials,
-  synaptic transmission, reflex arcs, sense organs, brain structure,'
+description: 'DSE Biology Nervous System notes covering key definitions, core concepts, worked examples, and practice questions for rigorous study and examination practice.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

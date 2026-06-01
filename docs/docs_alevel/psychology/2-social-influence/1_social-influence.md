@@ -6,9 +6,7 @@ tags:
   - alevel-psychology
 categories:
   - alevel-psychology
-description:
-  Covers conformity, obedience, resistance to social influence, minority influence, and social
-  change with key studies by Asch, Milgram, and Moscovici for A-Level Psychology.
+description: 'A-Level Psychology Social Influence notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: social-influence
 ---
 

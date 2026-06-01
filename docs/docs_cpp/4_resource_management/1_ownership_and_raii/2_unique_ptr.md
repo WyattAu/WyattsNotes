@@ -1,8 +1,6 @@
 ---
 title: Unique Ownership (std::unique_ptr) and EBO
-description:
-  'C++: Unique Ownership (std::unique_ptr) and EBO — 2.1 Definition; 2.2 Construction:
-  `std::make_unique`; 2.3 Move-Only Semantics; 2.4 Custom Deleters.'
+description: 'C++ Programming Unique Ownership (std::unique_ptr) and EBO notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

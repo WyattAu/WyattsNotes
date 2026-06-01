@@ -1,9 +1,7 @@
 ---
 id: http
 title: HTTP
-description:
-  'HTTP — Methods; Status Codes; Connection Management; Chunked Transfer Encoding with worked
-  examples and exam-style questions.'
+description: 'HTTP notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and exam readiness.'
 slug: http
 sidebar_position: 6
 tags:

@@ -1,9 +1,7 @@
 ---
 id: dns
 title: DNS
-description:
-  'DNS — Domain Levels; FQDN (Fully Qualified Domain Name); Root Name Servers; TLD Name Servers with
-  worked examples and exam-style questions.'
+description: 'DNS notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and mastery.'
 slug: dns
 sidebar_position: 5
 tags:

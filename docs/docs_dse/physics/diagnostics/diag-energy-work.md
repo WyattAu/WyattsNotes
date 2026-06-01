@@ -1,8 +1,6 @@
 ---
 title: 'Energy and Work -- Diagnostic Tests'
-description:
-  'Hardest DSE energy questions: work done at angles, power-velocity relation, efficiency chains,
-  and energy conservation with non-conservative forces.'
+description: 'DSE Physics Energy and Work -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: diag-energy-work
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: 'Integrals -- Diagnostic Tests'
-description:
-  'Diagnostic tests targeting the hardest AP Calculus integral questions including Riemann sums, FTC
-  subtleties, integration techniques, area and volume'
+description: 'Qualifications Maths Integrals -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 date: 2026-04-14
 tags:
   - ap

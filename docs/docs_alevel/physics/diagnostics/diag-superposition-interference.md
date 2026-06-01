@@ -1,8 +1,6 @@
 ---
 title: 'Superposition and Interference -- Diagnostic Tests'
-description:
-  Diagnostic tests for two-source interference, diffraction gratings, stationary waves, and path
-  difference analysis at maximum A-Level Physics difficulty.
+description: 'A-Level Physics Superposition and Interference -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-superposition-interference
 hide_table_of_contents: true
 ---

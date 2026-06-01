@@ -1,9 +1,7 @@
 ---
 id: lifetimes
 title: Lifetimes
-description:
-  'Lifetimes — Lifetime Annotation Syntax; Multiple Lifetime Parameters; Input Lifetime Binding;
-  Static Lifetime with worked examples and exam-style questions.'
+description: 'Rust Lifetimes notes covering key definitions, core concepts, worked examples, and practice questions for structured study and thorough revision.'
 slug: lifetimes
 ---
 

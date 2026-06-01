@@ -3,9 +3,7 @@ title: A-Level Geography
 date: 2026-05-21
 tags: [alevel, alevel-geography]
 categories: [alevel, geography]
-description:
-  Comprehensive A-Level Geography revision notes covering physical geography, human geography, and
-  fieldwork methodology.
+description: 'A-Level Geography notes covering key definitions, core concepts, worked examples, and practice questions for solid study and examination practice.'
 ---
 
 # A-Level Geography

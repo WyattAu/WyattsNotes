@@ -1,8 +1,6 @@
 ---
 title: 'Chemical Kinetics -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Chemical Kinetics -- Diagnostic Tests. With
-  full worked solutions and examiner commentary.'
+description: 'DSE Chemistry Chemical Kinetics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-chemical-kinetics
 hide_table_of_contents: true
 ---

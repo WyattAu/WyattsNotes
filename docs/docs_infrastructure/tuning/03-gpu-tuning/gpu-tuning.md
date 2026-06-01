@@ -1,9 +1,7 @@
 ---
 id: gpu-tuning
 title: GPU Tuning
-description:
-  'Hardware tuning: GPU Tuning — GPU Architecture Overview; CUDA Cores and Streaming
-  Multiprocessors; Memory Bandwidth; ROPs and TMUs.'
+description: 'GPU Tuning notes covering key definitions, core concepts, worked examples, and practice questions for thorough learning and effective revision.'
 slug: gpu-tuning
 ---
 

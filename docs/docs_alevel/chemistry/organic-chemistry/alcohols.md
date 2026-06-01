@@ -1,8 +1,6 @@
 ---
 title: Alcohols
-description:
-  'A-Level Chemistry notes on Alcohols: Classification; Physical Properties; Boiling Points;
-  Solubility with worked examples and exam-style questions.'
+description: 'A-Level Chemistry Alcohols notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

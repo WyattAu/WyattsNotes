@@ -1,9 +1,7 @@
 ---
 title: GCSE English Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive GCSE English revision guide covering Paper 1 (Fiction and Creative Writing),
-  Paper 2 (Non-Fiction and Transactional Writing), Spoken Language, key skills, exam tips and common mistakes.'
+description: 'GCSE English.Md English Study notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 tags:
   - gcse
   - english
@@ -333,22 +331,40 @@ Use the PETAL method for analytical paragraphs:
 
 ---
 
-## 6. Common Mistakes
+## Common Pitfalls
 
 1. **Narrating instead of analysing**: describing what happens in the text without explaining how the
-   writer creates effects. "The boy was scared" is narration; "The writer conveys the boy's fear
-   through the semantic field of violence and the short, fragmented sentence structure" is analysis.
+    writer creates effects. "The boy was scared" is narration; "The writer conveys the boy's fear
+    through the semantic field of violence and the short, fragmented sentence structure" is analysis.
 2. **Feature spotting without explaining effect**: listing techniques without explaining their impact
-   on the reader. "The writer uses a simile and a metaphor" is insufficient; you must explain what
-   each technique achieves.
+    on the reader. "The writer uses a simile and a metaphor" is insufficient; you must explain what
+    each technique achieves.
 3. **Using generic, undeveloped quotations**: selecting a long passage and making vague comments.
-   Select specific, significant words or phrases and analyse them in detail.
+    Select specific, significant words or phrases and analyse them in detail.
 4. **Forgetting the format in transactional writing**: writing a speech that reads like an essay, or
-   a letter that has no greeting or sign-off. Always match your writing to the specified format.
+    a letter that has no greeting or sign-off. Always match your writing to the specified format.
 5. **Writing a story instead of a descriptive piece**: if the question asks for a description, do
-   not introduce characters and a plot. Description focuses on creating an image, mood, or
-   atmosphere.
+    not introduce characters and a plot. Description focuses on creating an image, mood, or
+    atmosphere.
 6. **Failing to compare in Paper 2**: when asked to compare, you must address similarities and/or
-   differences between both texts. Discussing one text in isolation scores very few marks.
+    differences between both texts. Discussing one text in isolation scores very few marks.
 7. **Poor time management**: spending too long on early questions and rushing the final, highest-mark
-   questions. The last question is usually worth the most marks — allocate your time accordingly.
+    questions. The last question is usually worth the most marks — allocate your time accordingly.
+
+## Worked Examples
+
+### Example 1: Analysing Language Effect
+**Question:** How does the writer use language to present the setting in this extract?
+**Approach:** Identify 2-3 techniques. For each, quote a specific word or phrase, name the technique, explain the effect on the reader, and link to the overall atmosphere. For example: "The simile 'the house loomed like a spectre' creates a sense of menace, as 'loomed' suggests something large and threatening, while 'spectre' implies a ghostly, unnatural presence. This establishes an atmosphere of dread."
+
+### Example 2: Writing a Persuasive Speech
+**Task:** Write a speech arguing for or against school uniform.
+**Approach:** Open with a clear position statement and rhetorical hook. Use three main arguments (e.g., equality and reducing bullying, practicality and cost, school identity and preparation for work). Include a counterargument (e.g., "opponents argue uniform stifles self-expression") and rebut it. Close with a call to action. Use rule of three, rhetorical questions, and varied sentence structures.
+
+### Example 3: Comparing Two Non-Fiction Texts
+**Question:** Compare how both writers present their views on technology.
+**Approach:** Identify a similarity (both use statistics to support their arguments) and a difference (Text A is positive and forward-looking; Text B is cautionary). For each point, provide evidence from both texts with short embedded quotations. Use comparative connectives (similarly, in contrast, whereas, on the other hand).
+
+## Summary
+
+GCSE English Language covers Paper 1 (fiction reading and creative writing) and Paper 2 (non-fiction reading and transactional writing). Key reading skills include analysing language techniques (simile, metaphor, pathetic fallacy, semantic field), structural techniques (sentence length, paragraphing, shifts in focus), and comparing writers' viewpoints and methods. Key writing skills include descriptive writing (sensory detail, show-don't-tell), narrative writing (plot structure, character development), transactional writing (format, persuasive techniques), and the PETAL paragraph structure for analytical responses. The spoken language endorsement assesses presentation skills.

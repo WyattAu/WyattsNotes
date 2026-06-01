@@ -1,9 +1,7 @@
 ---
 id: nio-deep-dive
 title: NIO Deep Dive
-description:
-  'NIO Deep Dive — NIO Overview; Buffer vs Stream; Buffers; `ByteBuffer` including key definitions,
-  derivations, and problem-solving techniques.'
+description: 'Java NIO Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and revision.'
 slug: nio-deep-dive
 ---
 

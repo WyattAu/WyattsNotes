@@ -1,8 +1,6 @@
 ---
 title: Compilers
-description:
-  'University-level notes on Compilers: lexical analysis, parsing, semantic analysis,
-  intermediate representations, optimization, and code generation.'
+description: 'University Computer Science Compilers notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -669,6 +667,16 @@ add:
 
 7. **Ignoring phase ordering issues.** Some optimizations interfere with others. The order of optimization passes affects the final result. Common order: SSA construction → constant propagation → dead code elimination → loop optimizations → register allocation.
 
+## Worked Examples
+
+### Example 1: Constructing an LL(1) Parse Table
+**Problem:** Given the grammar: E -> T E', E' -> + T E' | epsilon, T -> F T', T' -> * F T' | epsilon, F -> ( E ) | id. Construct the FIRST and FOLLOW sets for E'.
+**Solution:** FIRST(E') = FIRST(T E') = {id, (} union {+} = {id, (, +}. FIRST(T) = {id, (}. FOLLOW(E') = FOLLOW(E) = {$, )}. The LL(1) parse table entry for E' with lookahead +: E' -> + T E'. For lookahead id or (: E' -> epsilon. For lookahead $ or ): E' -> epsilon. Since epsilon is in FIRST(E') and FOLLOW(E') overlaps with FIRST(E'), entries for FOLLOW symbols map to the epsilon production.
+
+### Example 2: Three-Address Code Generation
+**Problem:** Generate three-address code for: x = (a + b) * (c - d).
+**Solution:** t1 = a + b; t2 = c - d; t3 = t1 * t2; x = t3. The three-address code uses temporary variables t1, t2, t3. Each instruction has at most one operator on the right side. A basic block contains these four instructions in sequence.
+
 ## Summary
 
 - **Lexical analysis** converts source to tokens using regex and finite automata.
@@ -678,3 +686,11 @@ add:
 - **IR** (three-address code, SSA) provides a platform-independent program representation.
 - **Optimization** includes constant folding, dead code elimination, CSE, loop optimization, and register allocation via graph coloring.
 - **Code generation** maps IR to target machine instructions with instruction selection and scheduling.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Automata and Formal Languages | [View](/docs/university/computer-science/automata-and-formal-languages) |
+| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |
+| Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |

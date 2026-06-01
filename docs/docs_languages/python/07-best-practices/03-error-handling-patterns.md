@@ -1,9 +1,7 @@
 ---
 id: error-handling-patterns
 title: Error Handling Patterns
-description:
-  'Python: Error Handling Patterns — Exception Hierarchy; Catching by Hierarchy; Defining Custom
-  Exceptions; Base Exception Class.'
+description: 'Python Error Handling Patterns notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 slug: error-handling-patterns
 ---
 

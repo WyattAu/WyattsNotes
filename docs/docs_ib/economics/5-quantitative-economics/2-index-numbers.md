@@ -1,8 +1,6 @@
 ---
 title: Index Numbers
-description:
-  'IB Economics — index number construction, weighting, chaining, splicing, Laspeyres and Paasche
-  indices.'
+description: 'IB Economics Index Numbers notes covering key definitions, core concepts, worked examples, and practice questions for focused revision and exam readiness.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

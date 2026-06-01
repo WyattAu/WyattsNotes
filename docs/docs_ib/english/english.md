@@ -3,9 +3,7 @@ title: English
 tags:
   - english
 slug: english
-description:
-  'Rigorous IB English notes covering English. Includes definitions, derivations, worked examples,
-  and exam-style problems.'
+description: 'IB English notes covering key definitions, core concepts, worked examples, and practice questions for rigorous learning and effective revision.'
 ---
 
 ## IB English A: Language and Literature -- Course Overview

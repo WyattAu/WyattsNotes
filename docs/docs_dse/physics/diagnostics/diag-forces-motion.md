@@ -1,8 +1,6 @@
 ---
 title: 'Forces and Motion -- Diagnostic Tests'
-description:
-  'Hardest DSE forces questions: action-reaction pairs, normal force on inclined planes, connected
-  bodies, and friction misconceptions.'
+description: 'DSE Physics Forces and Motion -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-forces-motion
 hide_table_of_contents: true
 ---

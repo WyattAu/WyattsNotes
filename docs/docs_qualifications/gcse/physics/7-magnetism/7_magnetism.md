@@ -1,8 +1,6 @@
 ---
 title: Magnetism and Electromagnetism
-description:
-  'Magnetism and Electromagnetism — 1. Magnets and Magnetic Fields; 1.1 Magnetic Materials; 1.2 Why
-  Induced Magnetism Causes Attraction; 1.3 Magnetic Domains.'
+description: 'GCSE Physics Magnetism and Electromagnetism notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-14
 tags:
   - gcse

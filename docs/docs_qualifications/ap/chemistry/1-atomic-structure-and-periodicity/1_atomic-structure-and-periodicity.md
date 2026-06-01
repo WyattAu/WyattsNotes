@@ -1,8 +1,6 @@
 ---
 title: Atomic Structure and Periodicity
-description:
-  'Atomic Structure and Periodicity — Atomic Theory and Structure (CED Unit 1); Key Historical
-  Developments; Derivation: Rutherford Scattering and the Nucleus.'
+description: 'Qualifications Chemistry Atomic Structure and Periodicity notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap

@@ -1,8 +1,6 @@
 ---
 title: Computer Science
-description:
-  'IB Computer Science notes covering computational thinking, system design, data structures,
-  algorithms, networking, databases, and ethical considerations.'
+description: 'IB Computer Science notes covering key definitions, core concepts, worked examples, and practice questions for clear learning and effective revision.'
 slug: computer-science
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Kinematics (Extended)
-description:
-  'A-Level Mathematics notes on Kinematics (Extended): Kinematics (Extended Treatment); 1. Equations
-  of Motion (SUVAT) -- Rigorous Derivation.'
+description: 'A-Level Maths Kinematics (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

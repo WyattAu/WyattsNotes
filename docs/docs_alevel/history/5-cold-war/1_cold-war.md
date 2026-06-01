@@ -8,9 +8,7 @@ tags:
 categories:
   - alevel
   - history
-description:
-  Trace the Cold War from its origins through key crises including Berlin, Korea, Cuba, Vietnam,
-  détente, and the collapse of the USSR.
+description: 'A-Level History The Cold War 1945-1991 notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 ---
 
 # The Cold War 1945-1991

@@ -4,9 +4,7 @@ tags:
   - IB
   - History
 slug: the-move-to-global-war
-description:
-  'Rigorous IB history notes covering The Move to Global War. Includes definitions, derivations,
-  worked examples, and exam-style problems.'
+description: 'IB History The Move to Global War notes covering key definitions, core concepts, worked examples, and practice questions for clear review and exam preparation.'
 ---
 
 # The Move to Global War

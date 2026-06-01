@@ -1,8 +1,6 @@
 ---
 title: Atomic Structure
-description:
-  'Atomic Structure — 1. The Atom; 1.1 Subatomic Particles; 1.2 History of the Atom; 1.3 The
-  Rutherford Scattering Experiment.'
+description: 'GCSE Chemistry Atomic Structure notes covering key definitions, core concepts, worked examples, and practice questions for solid review and exam preparation.'
 date: 2026-04-14
 tags:
   - gcse

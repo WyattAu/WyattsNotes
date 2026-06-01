@@ -1,8 +1,6 @@
 ---
 title: 'Acids, Bases and Salts -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Acids, Bases and Salts -- Diagnostic Tests.
-  With full worked solutions and examiner commentary.'
+description: 'DSE Chemistry Acids, Bases and Salts -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-acids-bases-and-salts
 hide_table_of_contents: true
 ---

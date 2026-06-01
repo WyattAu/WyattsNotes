@@ -1,8 +1,6 @@
 ---
 title: Chemical Kinetics
-description:
-  "University-level notes on Chemical Kinetics: 1. Rate Laws; 1.1 Rate of Reaction; 1.2 Order of
-  Reaction."
+description: 'University Chemistry Chemical Kinetics notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -446,6 +444,16 @@ intermediates. Can measure rate constants up to $\sim 10^{12}$ s$^{-1}$.
 - **Michaelis-Menten:** $v = V_{\max}[S]/(K_M + [S])$; Lineweaver-Burk plot for parameter extraction.
 - **Chain reactions:** Initiation, propagation, termination; chain length $\nu$.
 - **Enzyme inhibition:** Competitive, uncompetitive, noncompetitive effects on $K_M$ and $V_{\max}$.
+
+## Worked Examples
+
+### Example 1: Determining Reaction Order from Initial Rate Data
+**Problem:** For the reaction A + 2B -> C, experiments yield: [A]=0.1, [B]=0.1, Rate=0.002; [A]=0.2, [B]=0.1, Rate=0.004; [A]=0.1, [B]=0.2, Rate=0.002. Determine the rate law.
+**Solution:** Doubling [A] (experiments 1 to 2) doubles the rate: order in A = 1. Doubling [B] (experiments 1 to 3) does not change the rate: order in B = 0. Rate law: v = k[A]. Rate constant k = 0.002/0.1 = 0.02 mol^-1 L s^-1.
+
+### Example 2: Arrhenius Plot Analysis
+**Problem:** The rate constant doubles when temperature increases from 300 K to 310 K. Calculate the activation energy (R = 8.314 J mol^-1 K^-1).
+**Solution:** ln(k2/k1) = (Ea/R)(1/T1 - 1/T2). ln(2) = (Ea/8.314)(1/300 - 1/310) = (Ea/8.314)(10/93000). Ea = 0.693 x 8.314 x 93000/10 = 53,570 J/mol = 53.6 kJ/mol.
 
 ## Cross-References
 

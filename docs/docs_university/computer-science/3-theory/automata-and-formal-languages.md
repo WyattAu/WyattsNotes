@@ -1,8 +1,6 @@
 ---
 title: Automata and Formal Languages
-description:
-  'University-level notes on Automata and Formal Languages: DFA, NFA, regular expressions,
-  context-free grammars, pushdown automata, Turing machines, and decidability.'
+description: 'University Computer Science Automata and Formal Languages notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -492,6 +490,16 @@ A property is **non-trivial** if it holds for some TMs and not for others.
 
 7. **Assuming more tape heads make TMs more powerful.** Multi-tape TMs are equivalent to single-tape TMs. No variant of the standard TM increases computational power (only efficiency).
 
+## Worked Examples
+
+### Example 1: Designing a Finite Automaton
+**Problem:** Design a DFA over {0, 1} that accepts strings containing the substring "010".
+**Solution:** States: q0 (start, scanning for first 0), q1 (saw 0, waiting for 1), q2 (saw 01, waiting for 0), q3 (accepting, saw 010). Transitions: q0 on 0 -> q1, q0 on 1 -> q0. q1 on 1 -> q2, q1 on 0 -> q1. q2 on 0 -> q3, q2 on 1 -> q0. q3 on 0 -> q3, q3 on 1 -> q3. The DFA has 4 states and transitions back to earlier states when partial matches are broken.
+
+### Example 2: Context-Free Grammar for a Language
+**Problem:** Write a CFG that generates the language L = {a^n b^n c^n : n >= 1}.
+**Solution:** S -> aBC. B -> aBB (this ensures more a's push B's onto the middle). C -> cD. D -> cDD (this ensures more c's match). B -> b (terminal). D -> d (terminal). Wait -- this generates a^n b^n c^m which is wrong. The language a^n b^n c^n is not context-free (proven by the pumping lemma for CFLs). No CFG exists for this language. This is a common exam trick question.
+
 ## Summary
 
 - **DFA** and **NFA** recognize the same **regular languages**, convertible via subset construction.
@@ -503,3 +511,11 @@ A property is **non-trivial** if it holds for some TMs and not for others.
 - **Turing machines** are the most powerful model; equivalent to lambda calculus and recursive functions.
 - **Church-Turing thesis:** TMs capture all algorithmic computation.
 - **Halting problem** is undecidable (diagonalization). **Rice's theorem** generalizes undecidability.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Compilers | [View](/docs/university/computer-science/compilers) |
+| Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |
+| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |

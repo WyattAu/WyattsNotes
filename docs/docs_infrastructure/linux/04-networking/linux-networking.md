@@ -1,9 +1,7 @@
 ---
 id: linux-networking
 title: Linux Networking
-description:
-  'Linux Networking — Network Interface Management (iproute2); Interface Configuration; List all
-  network interfaces; Bring interface up/down.'
+description: 'Linux Networking notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive exam preparation and revision.'
 slug: linux-networking
 sidebar_position: 1
 ---

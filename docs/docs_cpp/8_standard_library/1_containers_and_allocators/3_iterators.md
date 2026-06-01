@@ -1,8 +1,6 @@
 ---
 title: Iterator Categories, Traversal, and Invalidation
-description:
-  'C++: Iterator Categories, Traversal, and Invalidation — Legacy Iterator Categories; Iterator
-  Traits; Sentinel Iterators (C++20) vs Traditional End Iterators.'
+description: 'C++ Programming Iterator Categories, Traversal, and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

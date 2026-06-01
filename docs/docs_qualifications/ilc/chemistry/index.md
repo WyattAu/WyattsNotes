@@ -1,6 +1,6 @@
 ---
 title: Irish LC Chemistry
-description: 'Irish Leaving Certificate Chemistry revision notes for Higher and Ordinary Level'
+description: 'Irish Leaving Certificate Chemistry revision notes for Higher and Ordinary Level. Part of the Irish LC Chemistry notes for State Examination preparation.'
 date: 2026-04-14
 tags:
   - ilc

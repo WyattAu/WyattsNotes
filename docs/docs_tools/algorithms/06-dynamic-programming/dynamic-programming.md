@@ -1,9 +1,7 @@
 ---
 id: dynamic-programming
 title: Dynamic Programming
-description:
-  'Dynamic Programming — DP Fundamentals; Top-Down (Memoisation) vs Bottom-Up (Tabulation); 1D DP;
-  Climbing Stairs with worked examples and exam-style questions.'
+description: 'Algorithms Dynamic Programming notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: dynamic-programming
 ---
 

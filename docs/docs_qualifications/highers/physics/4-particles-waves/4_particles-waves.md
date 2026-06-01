@@ -1,8 +1,6 @@
 ---
 title: Particles and Waves
-description:
-  'Particles and Waves — Quantum Physics; Wave-Particle Duality; Why the Photoelectric Effect
-  Disproves the Wave Theory of Light; De Broglie Wavelength.'
+description: 'Scottish Highers Physics Particles and Waves notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 date: 2026-04-14
 tags:
   - highers

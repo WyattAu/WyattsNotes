@@ -1,8 +1,6 @@
 ---
 title: String Views and Small String Optimization
-description:
-  'C++: String Views and Small String Optimization — 1. `std::string` Ownership Model; The Heap
-  Allocation Problem; What `std::string` Actually Stores.'
+description: 'C++ Programming String Views and Small String Optimization notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

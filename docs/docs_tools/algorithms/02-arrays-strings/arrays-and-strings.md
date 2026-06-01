@@ -1,9 +1,7 @@
 ---
 id: arrays-and-strings
 title: Arrays and Strings
-description:
-  'Arrays and Strings — Array Fundamentals; Memory Layout and Cache Behaviour; Dynamic Arrays;
-  String Representation with worked examples and exam-style questions.'
+description: 'Algorithms Arrays and Strings notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 slug: arrays-and-strings
 ---
 

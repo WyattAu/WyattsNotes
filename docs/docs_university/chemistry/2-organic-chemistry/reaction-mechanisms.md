@@ -1,8 +1,6 @@
 ---
 title: Reaction Mechanisms
-description:
-  "University-level notes on Organic Reaction Mechanisms: 1. Nucleophilic Substitution; 1.1 SN1
-  and SN2 Mechanisms; 1.2 Factors Affecting Substitution."
+description: 'University Chemistry Reaction Mechanisms notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -356,6 +354,16 @@ No regioselectivity; products are typically mixtures.
 - **Carbocation stability:** 3° > 2° > 1° > CH$_3^+$; enhanced by resonance and hyperconjugation.
 - **Pericyclic reactions:** Diels-Alder, Cope, Claisen; governed by Woodward-Hoffmann rules.
 - **Electrophilic aromatic substitution:** Activating/deactivating groups control rate and directing.
+
+## Worked Examples
+
+### Example 1: Predicting SN1 vs SN2 Outcome
+**Problem:** Predict the mechanism and product when (1-bromo-1-methylpropyl)benzene reacts with NaCN in ethanol. The substrate is a tertiary benzylic halide.
+**Solution:** The tertiary benzylic carbon stabilises the carbocation through resonance with the benzene ring. SN1 is strongly favoured over SN2 (steric hindrance from the benzene ring and three alkyl groups). The carbocation is stabilised, leading to a racemic product (if the nucleophile attacks from both faces). Product: (1-cyano-1-methylpropyl)benzene, formed as a racemic mixture.
+
+### Example 2: Diels-Alder Regioselectivity
+**Problem:** Predict the product of the Diels-Alder reaction between 1,3-butadiene and methyl vinyl ketone (MVK). Include regiochemistry.
+**Solution:** MVK is an electron-deficient dienophile. The diene (butadiene) is electron-rich. The endo transition state is favoured (Alder endo rule). Regiochemistry: the carbonyl group ends up ortho to the newly formed double bond in the cyclohexene product. Product: 4-acetylcyclohexene (endo). The reaction proceeds thermally [4+2] suprafacially.
 
 ## Cross-References
 

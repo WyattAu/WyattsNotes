@@ -1,8 +1,6 @@
 ---
 title: Cell Biology
-description:
-  'Cell Biology — Cell Theory (OL/HL); Prokaryotic and Eukaryotic Cells (OL/HL); Prokaryotic Cells
-  (Bacteria) for thorough revision and examination preparation.'
+description: 'ILC Cell Biology notes covering key definitions, core concepts, worked examples, and practice questions for detailed review and exam preparation.'
 date: 2026-04-14
 tags:
   - ilc

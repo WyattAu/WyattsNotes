@@ -1,8 +1,6 @@
 ---
 title: Modern Physics
-description:
-  'Modern Physics — The Photoelectric Effect (HL); Phenomenon; Key Observations; Why Classical Wave
-  Theory Fails with worked examples and exam-style questions.'
+description: 'ILC Modern Physics notes covering key definitions, core concepts, worked examples, and practice questions for focused learning and effective revision.'
 date: 2026-04-14
 tags:
   - ilc

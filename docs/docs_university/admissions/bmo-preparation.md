@@ -1,8 +1,6 @@
 ---
 title: BMO Preparation
-description:
-  'Comprehensive preparation guide for the British Mathematical Olympiad (BMO) Round 1 and Round 2:
-  number theory, combinatorics, algebra, geometry, worked solutio'
+description: 'University Admissions BMO Preparation notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-05-05T00:00:00.000Z
 tags:
   - Mathematics

@@ -1,9 +1,7 @@
 ---
 title: Scottish Highers
 date: 2026-04-14
-description:
-  'Rigorous qualification exam notes covering Scottish Highers. Includes definitions, derivations,
-  worked examples, and exam-style problems.'
+description: 'Scottish Highers Intro.Md notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 tags:
   - Highers
   - Advanced Highers

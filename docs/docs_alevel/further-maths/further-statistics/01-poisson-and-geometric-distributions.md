@@ -1,8 +1,6 @@
 ---
 title: Poisson and Geometric Distributions
-description:
-  'A-Level Further Maths notes on Poisson and Geometric Distributions: Board Coverage; 1. The
-  Poisson Distribution; 1.1 Definition.'
+description: 'A-Level Further Maths Poisson and Geometric Distributions notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

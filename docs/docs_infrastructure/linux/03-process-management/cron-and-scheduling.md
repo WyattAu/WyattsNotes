@@ -1,9 +1,7 @@
 ---
 id: cron-and-scheduling
 title: Cron and Task Scheduling
-description:
-  'Cron and Task Scheduling — cron Daemon; Check if cron is running; Start/enable cron; Crontab
-  Format with worked examples and exam-style questions.'
+description: 'Cron and Task Scheduling notes covering key definitions, core concepts, worked examples, and practice questions for methodical study and examination practice.'
 slug: cron-and-scheduling
 sidebar_position: 2
 ---

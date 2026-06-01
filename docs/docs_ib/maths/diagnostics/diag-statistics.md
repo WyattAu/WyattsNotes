@@ -1,8 +1,6 @@
 ---
 title: 'Statistics -- Diagnostic Tests'
-description:
-  Hardest IB Mathematics diagnostic tests for statistics covering grouped data, box plot skew, PMCC
-  with coded data, and regression pitfalls.
+description: 'IB Maths Statistics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 slug: diag-statistics
 hide_table_of_contents: true
 ---

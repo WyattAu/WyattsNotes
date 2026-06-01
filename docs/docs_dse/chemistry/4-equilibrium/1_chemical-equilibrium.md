@@ -1,9 +1,7 @@
 ---
 id: dse-chemistry-chemical-equilibrium
 title: Chemistry - Chemical Equilibrium
-description:
-  "DSE Chemistry notes covering dynamic equilibrium, Le Chatelier's principle, equilibrium constant
-  Kc, effect of changes on equilibrium, Haber process, Contact"
+description: 'DSE Chemistry - Chemical Equilibrium notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: chemical-equilibrium
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]

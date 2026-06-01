@@ -1,8 +1,6 @@
 ---
 title: Operating Systems
-description:
-  'A-Level Computer Science notes on Operating Systems: 1. What is an Operating System?; Definition;
-  Kernel Mode vs User Mode; System Calls.'
+description: 'A-Level Computer Science Operating Systems notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - ComputerScience

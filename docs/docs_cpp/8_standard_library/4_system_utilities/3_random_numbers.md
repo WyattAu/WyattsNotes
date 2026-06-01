@@ -1,8 +1,6 @@
 ---
 title: Random Number Generation
-description:
-  'C++ standard library: Random Number Generation — Random Number Engines; Distributions; Seeded
-  Random Number Generation; Engines:.'
+description: 'C++ Programming Random Number Generation notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

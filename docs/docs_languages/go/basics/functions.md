@@ -1,8 +1,6 @@
 ---
 title: Functions
-description:
-  'Functions — Function Declaration; Named Return Values; Passing a Slice to a Variadic Function;
-  Variadic with Other Parameters.'
+description: 'Go Functions notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
 slug: functions
 date: 2026-04-18
 tags:

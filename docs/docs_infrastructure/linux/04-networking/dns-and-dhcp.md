@@ -1,9 +1,7 @@
 ---
 id: dns-and-dhcp
 title: DNS and DHCP on Linux
-description:
-  'DNS and DHCP on Linux — DNS Resolution on Linux; /etc/resolv.conf; Search domains appended to
-  unqualified names; Sortlist for address ordering (rarely used).'
+description: 'DNS and DHCP on Linux notes covering key definitions, core concepts, worked examples, and practice questions for solid study and examination practice.'
 slug: dns-and-dhcp
 sidebar_position: 2
 ---

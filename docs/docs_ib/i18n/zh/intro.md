@@ -1,7 +1,6 @@
 ---
 title: IB笔记简介
-description:
-  '涵盖IB文凭课程各科目的严谨笔记。包括定义、推导、例题和考试模拟题。涵盖计算机科学（HL/SL）、数学及其他考试科目。'
+description: 'IB I18N 笔记简介 notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and revision.'
 slug: /i18n/zh/intro
 ---
 

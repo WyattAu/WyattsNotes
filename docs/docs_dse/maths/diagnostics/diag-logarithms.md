@@ -1,8 +1,6 @@
 ---
 title: 'Logarithms -- Diagnostic Tests'
-description:
-  'Diagnostic tests for DSE Logarithms: log laws, equations, change of base, domain restrictions,
-  and common fallacies like log distribution.'
+description: 'DSE Maths Logarithms -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 slug: diag-logarithms
 hide_table_of_contents: true
 ---

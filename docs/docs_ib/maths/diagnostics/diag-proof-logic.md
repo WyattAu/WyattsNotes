@@ -1,8 +1,6 @@
 ---
 title: 'Proof and Logic -- Diagnostic Tests'
-description:
-  Hardest IB Mathematics diagnostic tests for proof and logic covering necessary vs sufficient
-  conditions, contrapositive, quantifier negation, and proof methods.
+description: 'IB Maths Proof and Logic -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-proof-logic
 hide_table_of_contents: true
 ---

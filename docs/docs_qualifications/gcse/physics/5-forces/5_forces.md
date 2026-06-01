@@ -1,8 +1,6 @@
 ---
 title: Forces
-description:
-  'Forces — 1. Force Diagrams and Vector Quantities; 1.1 Scalars and Vectors; 1.2 Why the
-  Distinction Matters; 1.3 Force Diagrams.'
+description: 'GCSE Physics Forces notes covering key definitions, core concepts, worked examples, and practice questions for focused revision and examination preparation.'
 date: 2026-04-14
 tags:
   - gcse

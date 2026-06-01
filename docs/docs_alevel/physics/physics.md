@@ -1,8 +1,6 @@
 ---
 title: Physics
-description:
-  'A-Level Physics notes on Physics: Board Coverage; Course Structure; Core Modules; Assessment with
-  worked examples and exam-style questions.'
+description: 'A-Level Physics notes covering key definitions, core concepts, worked examples, and practice questions for methodical study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

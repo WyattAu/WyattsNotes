@@ -1,8 +1,6 @@
 ---
 title: Standard Library I/O
-description:
-  'Standard Library I/O — The io Package; io.Reader Contract; io.Copy; io.TeeReader with worked
-  examples and exam-style questions.'
+description: 'Go Standard Library I/O notes covering key definitions, core concepts, worked examples, and practice questions for focused revision and exam readiness.'
 slug: io
 date: 2026-04-18
 tags:

@@ -1,8 +1,6 @@
 ---
 title: 'Fundamentals -- Diagnostic Tests'
-description:
-  "Diagnostic tests for A-Level CS fundamentals: binary/hex conversion, two's complement, floating
-  point, and Boolean algebra."
+description: 'A-Level Computer Science Fundamentals -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-fundamentals
 hide_table_of_contents: true
 ---

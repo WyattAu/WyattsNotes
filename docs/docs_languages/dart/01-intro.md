@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Dart & Flutter
-description:
-  'Introduction to Dart & Flutter — Abstract; Dart Introduction; Flutter Introduction; Where Dart
-  Runs with worked examples and exam-style questions.'
+description: 'Dart Introduction to Dart & Flutter notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 slug: intro
 sidebar_position: 1
 ---

@@ -1,10 +1,7 @@
 ---
 id: dse-physics-kinematics
 title: Physics - Kinematics
-description:
-  'DSE Physics notes covering scalars and vectors, distance and displacement, speed and velocity,
-  acceleration, equations of motion, projectile motion, stopping distance, and acceleration due
-  to gravity.'
+description: 'DSE Physics - Kinematics notes covering key definitions, core concepts, worked examples, and practice questions for rigorous study and thorough revision.'
 slug: kinematics
 tags: [DSE, Physics]
 categories: [DSE, Physics]
@@ -237,3 +234,29 @@ Note how braking distance increases much more than thinking distance as speed in
 | Projectile (range)     | $R = \frac{v_0^2\sin 2\theta}{g}$          |                                |
 | Projectile (max height)| $H = \frac{(v_0\sin\theta)^2}{2g}$          |                                |
 | Vector resolution      | $F_x = F\cos\theta;\ F_y = F\sin\theta$    |                                |
+
+## Worked Examples
+
+### Example 1: Solving a Projectile Motion Problem
+**Problem:** A ball is thrown from ground level with initial velocity $15\ \mathrm{m\,s^{-1}}$ at an angle of $30°$ above the horizontal. Find the maximum height and the horizontal range.
+**Solution:** Resolve: $v_x = 15\cos 30° = 13.0\ \mathrm{m\,s^{-1}}$, $v_y = 15\sin 30° = 7.5\ \mathrm{m\,s^{-1}}$.
+Maximum height: $H = \dfrac{v_y^2}{2g} = \dfrac{7.5^2}{2 \times 9.81} = 2.87\ \text{m}$.
+Time of flight: $t = \dfrac{2v_y}{g} = \dfrac{2 \times 7.5}{9.81} = 1.53\ \text{s}$.
+Range: $R = v_x \times t = 13.0 \times 1.53 = 19.9\ \text{m}$.
+
+### Example 2: Stopping Distance Calculation
+**Problem:** A car travelling at $20\ \mathrm{m\,s^{-1}}$ (approximately 45 mph) has a reaction time of 0.6 s. Braking deceleration is $6.0\ \mathrm{m\,s^{-2}}$. Calculate the total stopping distance.
+**Solution:** Thinking distance $= v \times t_{\text{reaction}} = 20 \times 0.6 = 12\ \text{m}$.
+For braking: $v^2 = u^2 + 2as$ with $v = 0$, $u = 20$, $a = -6.0$.
+$0 = 400 + 2(-6.0)s \implies s = 33.3\ \text{m}$.
+Total stopping distance $= 12 + 33.3 = 45.3\ \text{m}$.
+
+## Common Pitfalls
+
+- **Using distance instead of displacement in suvat equations:** The suvat equations apply to displacement, not total distance travelled. For projectile motion, use the vertical component for height calculations.
+- **Forgetting that horizontal velocity is constant:** In projectile motion, there is no horizontal acceleration (air resistance is neglected in DSE). Do not apply $v = u + at$ to the horizontal component.
+- **Confusing speed and velocity:** Speed is a scalar; velocity is a vector. A ball thrown vertically upward has constant acceleration (downward) even at the highest point where its velocity is momentarily zero.
+
+## Summary
+
+Kinematics covers the distinction between scalars and vectors, the equations of uniformly accelerated motion (suvat), projectile motion (independent horizontal and vertical components), stopping distance (thinking and braking components), and graphical interpretations of motion (displacement-time and velocity-time graphs). The acceleration due to gravity ($g \approx 9.81\ \mathrm{m\,s^{-2}}$) is constant for free fall near Earth's surface.

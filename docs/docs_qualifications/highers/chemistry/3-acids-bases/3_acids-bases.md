@@ -1,8 +1,6 @@
 ---
 title: Acids and Bases
-description:
-  'Acids and Bases — Definitions; Strong and Weak Acids; Comparison of Strong and Weak Acids; The pH
-  Scale with worked examples and exam-style questions.'
+description: 'Scottish Highers Chemistry Acids and Bases notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-04-14
 tags:
   - highers

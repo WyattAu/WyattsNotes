@@ -3,9 +3,7 @@ title: Water and Carbon Cycles
 date: 2026-05-21
 tags: [alevel, alevel-geography]
 categories: [alevel, geography, physical-geography]
-description:
-  Drainage basin hydrology, the water budget, the carbon cycle, feedback mechanisms, and climate
-  change impacts on global cycles.
+description: 'A-Level Geography Water and Carbon Cycles notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 ---
 
 # Water and Carbon Cycles

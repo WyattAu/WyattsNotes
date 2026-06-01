@@ -1,8 +1,6 @@
 ---
 title: Physical Chemistry
-description:
-  'A-Level Chemistry notes on Physical Chemistry: Atomic Structure, Bonding, Energetics,
-  Kinetics, Equilibrium, Acids and Bases, Redox, and Key Equations.'
+description: 'A-Level Physical Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision and exam readiness.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry

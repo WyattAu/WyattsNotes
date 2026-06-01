@@ -1,8 +1,6 @@
 ---
 title: Neuroplasticity and Neurotransmission
-description:
-  'Detailed coverage of synaptic transmission, neurotransmitters, agonists and antagonists,
-  neuroplasticity mechanisms, and key research studies for IB Psychology.'
+description: 'IB Psychology Neuroplasticity and Neurotransmission notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: neuroplasticity-and-neurotransmission
 ---
 

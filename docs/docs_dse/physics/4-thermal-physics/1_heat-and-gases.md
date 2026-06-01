@@ -1,8 +1,6 @@
 ---
 title: Heat and Gases
-description:
-  'DSE Physics heat and gases notes covering temperature scales, specific heat capacity, latent
-  heat, ideal gas laws, kinetic theory, and thermodynamic processes.'
+description: 'DSE Physics Heat and Gases notes covering key definitions, core concepts, worked examples, and practice questions for structured review and exam preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

@@ -1,7 +1,6 @@
 ---
 title: GCSE Maths
-description:
-  'GCSE Mathematics revision notes covering number, algebra, ratio, geometry and statistics.'
+description: 'GCSE Maths notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and examination preparation.'
 date: 2026-04-14
 tags:
   - gcse

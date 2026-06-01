@@ -1,8 +1,6 @@
 ---
 title: References
-description:
-  'References — Reference Types; Branches; Create a branch; Equivalent to: echo $(git rev-parse
-  HEAD) >.git/refs/heads/feature-login.'
+description: 'Git References notes covering key definitions, core concepts, worked examples, and practice questions for rigorous review and exam preparation.'
 date: 2025-06-03T01:00:00.000Z
 tags:
   - git

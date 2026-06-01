@@ -1,8 +1,6 @@
 ---
 title: Cell Biology
-description:
-  'Cell Biology — 1. Cell Structure; 1.1 Plant and Animal Cells; 1.2 Eukaryotic and Prokaryotic
-  Cells; 1.3 Cell Specialisation.'
+description: 'GCSE Cell Biology notes covering key definitions, core concepts, worked examples, and practice questions for methodical study and thorough revision.'
 date: 2026-04-14
 tags:
   - gcse

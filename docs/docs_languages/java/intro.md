@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Java
-description:
-  'Rigorous programming language notes covering Introduction to Java. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Java Introduction to Java notes covering key definitions, core concepts, worked examples, and practice questions for structured review and exam preparation.'
 slug: intro
 sidebar_position: 1
 ---

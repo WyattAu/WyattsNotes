@@ -1,8 +1,6 @@
 ---
 title: International Trade and Finance
-description:
-  'DSE Economics notes on international trade and finance covering comparative advantage, trade
-  policies, balance of payments, exchange rates, and trading blocs.'
+description: 'DSE Economics International Trade and Finance notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Economics]
 categories: [DSE, Economics]

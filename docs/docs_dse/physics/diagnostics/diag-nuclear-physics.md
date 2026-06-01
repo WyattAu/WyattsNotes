@@ -1,8 +1,6 @@
 ---
 title: 'Nuclear Physics -- Diagnostic Tests'
-description:
-  'Hardest DSE nuclear questions: half-life calculations, binding energy per nucleon, radioactive
-  decay chains, mass-energy equivalence, and nuclear reactions.'
+description: 'DSE Nuclear Physics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 slug: diag-nuclear-physics
 hide_table_of_contents: true
 ---

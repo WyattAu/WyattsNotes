@@ -1,9 +1,7 @@
 ---
 id: structs-and-enums
 title: Structs and Enums
-description:
-  'Structs and Enums — Structs; Unit Structs; Tuple Structs; Named-Field Structs with worked
-  examples and exam-style questions.'
+description: 'Rust Structs and Enums notes covering key definitions, core concepts, worked examples, and practice questions for clear study and thorough revision.'
 slug: structs-and-enums
 ---
 

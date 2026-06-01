@@ -1,8 +1,6 @@
 ---
 title: 'Organic Chemistry Introduction -- Diagnostic Tests'
-description:
-  'Challenging A-Level chemistry diagnostic questions on Organic Chemistry Introduction --
-  Diagnostic Tests. With full worked solutions and examiner commentary.'
+description: 'A-Level Organic Chemistry Introduction -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-organic-introduction
 hide_table_of_contents: true
 ---

@@ -6,7 +6,7 @@ tags:
   - SAT
 categories:
   - SAT
-description: Advanced SAT test-taking strategies including time management, process of elimination, calculator techniques, reading annotation methods, grammar quick rules, and a full practice test schedule.
+description: Advanced SAT test-taking strategies including time management, process of elimination, calculator techniques, reading annotation methods, grammar quick rules,.
 ---
 
 ## Advanced SAT Strategies
@@ -264,3 +264,36 @@ After each practice test, spend at least 60 minutes reviewing:
 3. **Identify patterns** — if 3+ mistakes are in the same topic, that topic needs dedicated study.
 4. **Update your strategy** — if a particular strategy didn't work (e.g., you spent too long on hard
    questions), adjust your approach for the next test.
+
+## Worked Examples
+
+### Example 1: Applying the Two-Pass System
+**Scenario:** You are on question 8 of 22 in a Math module, 14 minutes elapsed. The question involves a complex system of equations that you cannot solve quickly.
+**Approach:** Mark the question and move on. Question 8 should take under 95 seconds. Spending 3+ minutes here risks losing time on questions 9-22. Return to it on pass 2 with remaining time.
+
+### Example 2: Strategic Elimination on a Reading Question
+**Question:** "Which choice best describes the main purpose of the passage?"
+**Options:** A) To argue that technology is harmful. B) To analyse screen time effects on cognitive development. C) To persuade schools to ban smartphones. D) To compare approaches to digital literacy.
+**Approach:** Eliminate A (too extreme -- passage discusses specific effects). Eliminate C (never advocates banning). Eliminate D (analyses one study, not multiple approaches). B is the most precise match.
+
+### Example 3: Desmos Graphing Strategy
+**Problem:** For what value of x does f(x) = x^3 - 6x^2 + 11x - 6 have a local minimum?
+**Approach:** Type f(x) into Desmos. Identify the x-coordinate of the lowest point. Read from graph (approximately x = 2.42). Verify: f'(x) = 3x^2 - 12x + 11. Set to 0: x = (12 +/- sqrt(144-132))/6 = (12 +/- 2sqrt(3))/6. x = 2 - sqrt(3)/3 (max) or x = 2 + sqrt(3)/3 (min). The min is at x = 2 + 0.577 = 2.577.
+
+## Common Pitfalls
+
+- **Spending too long on early questions.** The two-pass system prevents this. Easy and hard questions are weighted equally within a module.
+- **Not using elimination on every question.** Even eliminating one option improves expected score from 25% to 33%.
+- **Re-reading the entire passage for every question.** Read once with the question in mind. For subsequent questions, scan for specific content.
+
+## Summary
+
+Advanced SAT strategies include time management (two-pass system, benchmark times), process of elimination (elimination ladder, when to stop and guess), calculator techniques (Desmos power techniques, when to use vs. avoid), reading annotation (three-read approach, trap patterns), grammar rules (Big Six, transition words), and math patterns (answer choices summing to coefficients, testing middle values, symmetry). A 10-week practice schedule with full-length tests, targeted review, and test-day simulation builds the stamina and strategy needed for peak performance.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| SAT Overview | [View](/docs_qualifications/sat/sat-overview) |
+| SAT Math Strategies | [View](/docs_qualifications/sat/math-strategies) |
+| SAT Reading Strategies | [View](/docs_qualifications/sat/reading-strategies) |

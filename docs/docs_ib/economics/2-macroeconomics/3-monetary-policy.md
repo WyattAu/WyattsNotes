@@ -1,8 +1,6 @@
 ---
 title: Monetary Policy
-description:
-  'IB Economics — interest rates, money supply, inflation, monetary transmission, quantitative
-  easing.'
+description: 'IB Economics Monetary Policy notes covering key definitions, core concepts, worked examples, and practice questions for rigorous review and exam preparation.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

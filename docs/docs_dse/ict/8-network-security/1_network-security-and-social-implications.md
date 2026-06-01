@@ -1,8 +1,6 @@
 ---
 title: Network Security and Social Implications
-description:
-  'DSE ICT notes on network security and social implications covering cybersecurity threats,
-  encryption, authentication, privacy, legal frameworks, and digital'
+description: 'DSE Ict Network Security and Social Implications notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

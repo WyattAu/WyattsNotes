@@ -1,8 +1,6 @@
 ---
 title: 'Integration -- Diagnostic Tests'
-description:
-  'Hardest IB Mathematics diagnostic tests for integration covering integration by parts with cyclic
-  integrals, partial fractions with irreducible quadratics,'
+description: 'IB Maths Integration -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 slug: diag-integration
 hide_table_of_contents: true
 ---

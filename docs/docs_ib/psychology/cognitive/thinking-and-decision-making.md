@@ -1,8 +1,6 @@
 ---
 title: Thinking and Decision Making
-description:
-  'Detailed coverage of heuristics, cognitive biases, dual-process theories, prospect theory, and
-  key research by Tversky, Kahneman, and Ariely for IB Psychology.'
+description: 'IB Psychology Thinking and Decision Making notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 slug: thinking-and-decision-making
 ---
 

@@ -1,9 +1,7 @@
 ---
 id: cooling
 title: Cooling Systems
-description:
-  'Hardware tuning: Cooling Systems — Heat Transfer Fundamentals; Three Mechanisms of Heat Transfer;
-  Thermal Resistance; Thermal Paste.'
+description: 'Cooling Systems notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision and examination preparation.'
 slug: cooling
 ---
 

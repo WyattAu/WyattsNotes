@@ -1,9 +1,7 @@
 ---
 id: packaging-distribution
 title: Packaging and Distribution
-description:
-  'Packaging and Distribution — pyproject.toml; Minimal pyproject.toml; PEP 621 Metadata Fields;
-  Tool Sections with worked examples and exam-style questions.'
+description: 'Python Packaging and Distribution notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 slug: packaging-distribution
 ---
 

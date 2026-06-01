@@ -1,8 +1,6 @@
 ---
 title: Work, Energy, and Power
-description:
-  'Work, Energy, and Power — Work (CED Unit 4); Definition; Why the Dot Product; Work by a Variable
-  Force (AP Physics C), ensuring thorough understanding.'
+description: 'Qualifications Physics Work, Energy, and Power notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 date: 2026-04-14
 tags:
   - ap

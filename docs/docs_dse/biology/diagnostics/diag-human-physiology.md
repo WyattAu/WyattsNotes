@@ -1,8 +1,6 @@
 ---
 title: 'Human Physiology -- Diagnostic Tests'
-description:
-  'Challenging DSE biology diagnostic questions on Human Physiology -- Diagnostic Tests. With full
-  worked solutions and examiner commentary.'
+description: 'DSE Biology Human Physiology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-human-physiology
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: Data Analysis
-description:
-  'Data Analysis — Data Structures (CED Unit 3, AP CS A); Arrays; ArrayList (AP CS A); 2D Arrays
-  with worked examples and exam-style questions.'
+description: 'Qualifications Computer Science Data Analysis notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 date: 2026-04-14
 tags:
   - ap

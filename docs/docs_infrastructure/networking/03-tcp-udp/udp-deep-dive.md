@@ -1,9 +1,7 @@
 ---
 id: udp-deep-dive
 title: UDP Deep Dive
-description:
-  'UDP Deep Dive — UDP Header Structure; Source Port Considerations; Maximum Datagram Size; View
-  current UDP buffer sizes. and examination.'
+description: 'UDP Deep Dive notes covering key definitions, core concepts, worked examples, and practice questions for systematic learning and effective revision.'
 slug: udp-deep-dive
 tags:
   - Networking

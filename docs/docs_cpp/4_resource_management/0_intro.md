@@ -1,8 +1,6 @@
 ---
 title: Resource Management and Move Semantics
-description:
-  'C++: Resource Management and Move Semantics — Ownership and RAII (Module 10):; Function
-  Architecture (Module 12):; Error Handling (Module 13):.'
+description: 'C++ Programming Resource Management and Move Semantics notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-03-31T00:00:00.000Z
 tags:
   - cpp

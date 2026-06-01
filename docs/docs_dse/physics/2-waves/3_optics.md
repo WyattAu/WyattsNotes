@@ -1,8 +1,6 @@
 ---
 title: Optics
-description:
-  'DSE Physics optics notes covering reflection, refraction, total internal reflection, lenses,
-  optical instruments, and the electromagnetic spectrum.'
+description: 'DSE Physics Optics notes covering key definitions, core concepts, worked examples, and practice questions for focused learning and effective revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

@@ -1,8 +1,6 @@
 ---
 title: Advanced Genetics
-description:
-  'A-Level Biology notes on Advanced Genetics: epistasis, linkage, chi-squared test, sex linkage,
-  Hardy-Weinberg extended, genetic drift, selection, speciation, ph'
+description: 'A-Level Biology Advanced Genetics notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

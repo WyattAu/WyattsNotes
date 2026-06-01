@@ -1,8 +1,6 @@
 ---
 title: Measuring Development
-description:
-  'Development indicators including HDI, GNI, GII, MPI, composite indices critique, alternative
-  measures, and limitations of GDP for IB Geography.'
+description: 'IB Geography Measuring Development notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 slug: measuring-development
 ---
 

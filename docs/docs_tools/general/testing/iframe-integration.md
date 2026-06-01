@@ -1,8 +1,6 @@
 ---
 title: Iframe Integration
-description:
-  'Iframe Integration — Godbolt; Dartpad; Security Considerations; The `sandbox` Attribute with
-  worked examples and exam-style questions.'
+description: 'General Iframe Integration notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2025-07-11T23:22:50.056Z
 tags:
   - CS

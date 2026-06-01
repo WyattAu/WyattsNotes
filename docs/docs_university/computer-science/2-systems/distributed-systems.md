@@ -1,9 +1,6 @@
 ---
 title: Distributed Systems
-description:
-  'University-level notes on Distributed Systems: CAP theorem, consistency models,
-  consensus (Paxos, Raft), replication, partitioning, fault tolerance, and
-  distributed transactions.'
+description: 'University Computer Science Distributed Systems notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -502,6 +499,16 @@ $$V \leq W \iff V[j] \leq W[j] \text{ for all } j$$
 
 7. **Relying on physical clocks for ordering.** Physical clocks drift and have limited precision. Use logical clocks (Lamport, vector) for ordering in distributed algorithms.
 
+## Worked Examples
+
+### Example 1: Vector Clock Causality
+**Problem:** Three events: A at process P1 (VC: 1,0,0), B at P1 (VC: 2,0,0), C at P2 (VC: 0,1,0) which received message from A. Is A -> C?
+**Solution:** Event A has VC (1,0,0). Process P2 receives A's message before event C, so C's VC includes A's clock: C = max(A, local event) = max((1,0,0), (0,1,0)) = (1,1,0). Since VC(C) >= VC(A) component-wise, A happened before C (A -> C). Event B has VC (2,0,0), which does not causally precede C (0 < 1 at P2's counter). B and C are concurrent.
+
+### Example 2: Consensus with Paxos
+**Problem:** A cluster of 5 acceptors receives Prepare messages from a proposer with ballot number 10. Acceptors 1, 3, 5 respond with ballot 10 and no previously accepted value. Acceptors 2, 4 respond with ballot 7 and accepted value V_old. What value is chosen?
+**Solution:** The proposer must use the highest-numbered accepted value among the quorum responses. Acceptors 2 and 4 accepted V_old with ballot 7. Since the proposer has a majority quorum ({1,2,3} or {2,3,4} etc.), and at least two acceptors returned V_old, the proposer issues Accept messages with ballot 10 and value V_old. Once a majority accepts, V_old is chosen.
+
 ## Summary
 
 - **CAP theorem:** Distributed systems trade consistency for availability during partitions (PACELC extends this).
@@ -512,3 +519,11 @@ $$V \leq W \iff V[j] \leq W[j] \text{ for all } j$$
 - **Fault tolerance** handles crash failures ($n \geq 2f+1$) and Byzantine failures ($n \geq 3f+1$).
 - **Distributed transactions:** 2PC (atomic but blocking), saga (eventual, non-blocking).
 - **Time and ordering:** Lamport clocks capture happens-before; vector clocks distinguish concurrent events.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Databases | [View](/docs/university/computer-science/databases) |
+| Networking | [View](/docs/university/computer-science/networking) |
+| Operating Systems | [View](/docs/university/computer-science/operating-systems) |

@@ -1,9 +1,7 @@
 ---
 title: Wrap Up
 slug: wrap-up
-description:
-  'Rigorous IB physics notes covering the course wrap-up. Includes a summary of key concepts across
-  all five thematic areas, review strategies, and exam-style practice questions.'
+description: 'IB Physics Wrap Up notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and examination practice.'
 ---
 
 # IB Physics -- Course Wrap-Up

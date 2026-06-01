@@ -1,8 +1,6 @@
 ---
 title: 'Probability -- Diagnostic Tests'
-description:
-  'Diagnostic tests for DSE Probability: conditional probability, independence, tree diagrams, and
-  common fallacies in probability reasoning.'
+description: 'DSE Maths Probability -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 slug: diag-probability
 hide_table_of_contents: true
 ---

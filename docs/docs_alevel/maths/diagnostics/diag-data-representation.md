@@ -1,8 +1,6 @@
 ---
 title: 'Data Representation -- Diagnostic Tests'
-description:
-  Rigorous diagnostic tests for data representation covering outlier effects, misleading histograms,
-  box plot skewness, data coding, and cumulative frequency.
+description: 'A-Level Maths Data Representation -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-data-representation
 hide_table_of_contents: true
 ---

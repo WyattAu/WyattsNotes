@@ -1,8 +1,6 @@
 ---
 title: Quadratics
-description:
-  'DSE Mathematics quadratic equations notes covering factorisation, completing the square,
-  quadratic formula, discriminant, and graphs of quadratic functions.'
+description: 'DSE Maths Quadratics notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

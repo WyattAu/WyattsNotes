@@ -1,7 +1,6 @@
 ---
 title: AP Calculus AB Study Guide
-description:
-  'AP Calculus AB study guide covering limits, differentiation, applications of derivatives, integration, differential equations, key formulas, and exam tips.'
+description: 'Qualifications Calculus Ab.Md AP Calculus AB Study notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-05-31
 tags:
   - ap

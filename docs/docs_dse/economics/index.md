@@ -1,8 +1,6 @@
 ---
 title: DSE Economics
-description:
-  'Complete DSE Economics revision notes covering microeconomics, macroeconomics, market structure,
-  fiscal and monetary policy, international trade, and money and'
+description: 'DSE Economics notes covering key definitions, core concepts, worked examples, and practice questions for in-depth study and examination practice.'
 slug: economics
 hide_table_of_contents: true
 ---

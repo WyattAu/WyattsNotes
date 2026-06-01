@@ -1,9 +1,7 @@
 ---
 id: dse-physics-waves-and-optics
 title: Physics - Waves and Optics
-description:
-  'Rigorous DSE physics notes covering Physics - Waves and Optics. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'DSE Physics - Waves and Optics notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 slug: physics-waves-and-optics
 ---
 

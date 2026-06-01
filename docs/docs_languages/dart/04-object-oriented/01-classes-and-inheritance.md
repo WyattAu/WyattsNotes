@@ -1,8 +1,6 @@
 ---
 title: Classes and Inheritance
-description:
-  'Dart: Classes and Inheritance — Class Fundamentals; Class Declaration; Constructor Variants,
-  covering core concepts and practical techniques.'
+description: 'Dart Classes and Inheritance notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
 date: 2025-07-20T10:00:00.000Z
 tags:
   - dart

@@ -1,8 +1,6 @@
 ---
 title: Classes and Inheritance
-description:
-  'Classes and Inheritance — Class Definition; Output when the module loads: "Class body is
-  executing right now"; `__init__` and `self`.'
+description: 'Python Classes and Inheritance notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
 date: 2025-06-04T13:00:00.000Z
 tags:
   - Python

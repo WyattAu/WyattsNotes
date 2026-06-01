@@ -1,9 +1,7 @@
 ---
 id: hashing-and-hash-tables
 title: Hashing and Hash Tables
-description:
-  'Hashing and Hash Tables — Hash Function Fundamentals; Desirable Properties; Avalanche Criterion;
-  Uniformity with worked examples and exam-style questions.'
+description: 'Algorithms Hashing and Hash Tables notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 slug: hashing-and-hash-tables
 ---
 

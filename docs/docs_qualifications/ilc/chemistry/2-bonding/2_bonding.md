@@ -1,8 +1,6 @@
 ---
 title: Bonding
-description:
-  'Bonding — Coordinate (Dative) Covalent Bond (HL); Electronegativity and Bond Polarity (OL/HL);
-  Pauling Scale; Dipole Moments (HL).'
+description: 'ILC Chemistry Bonding notes covering key definitions, core concepts, worked examples, and practice questions for rigorous study and examination practice.'
 date: 2026-04-14
 tags:
   - ilc

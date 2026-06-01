@@ -1,8 +1,6 @@
 ---
 title: Web Development and Multimedia
-description:
-  'DSE ICT notes on web development and multimedia covering HTML, CSS, JavaScript, web hosting,
-  multimedia design principles, and user interface design.'
+description: 'DSE Ict Web Development and Multimedia notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

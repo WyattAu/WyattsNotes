@@ -1,8 +1,6 @@
 ---
 title: 'Waves -- Diagnostic Tests'
-description:
-  'GCSE Physics diagnostic tests for waves: wave properties, electromagnetic spectrum, reflection,
-  refraction, sound waves.'
+description: 'GCSE Physics Waves -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 slug: diag-waves
 hide_table_of_contents: true
 ---

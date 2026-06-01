@@ -1,8 +1,6 @@
 ---
 title: Standard Library Implementation
-description:
-  'C++: Standard Library Implementation — The Major Implementations; 1. libstdc++ (The GNU Standard
-  C++ Library); 2. libc++ ( The LLVM C++ Standard Library).'
+description: 'C++ Programming Standard Library Implementation notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 date: 2025-12-10T04:57:07.543Z
 tags:
   - cpp

@@ -1,8 +1,6 @@
 ---
 title: Data Structures (Advanced)
-description:
-  'University-level notes on Advanced Data Structures: 1. Balanced Search Trees; 1.1 Red-Black
-  Trees; 1.2 B-Trees and B+ Trees; 1.3 Tries and Prefix Trees.'
+description: 'University Computing Data Structures (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing

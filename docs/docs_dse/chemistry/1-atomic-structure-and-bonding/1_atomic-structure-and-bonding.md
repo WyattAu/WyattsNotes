@@ -1,9 +1,7 @@
 ---
 id: dse-chemistry-atomic-structure-and-bonding
 title: Chemistry - Atomic Structure and Bonding
-description:
-  'DSE Chemistry notes on atomic structure, electron configurations, periodic trends, ionic bonding,
-  covalent bonding, and intermolecular forces.'
+description: 'DSE Chemistry - Atomic Structure and Bonding notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 slug: chemistry-atomic-structure-and-bonding
 ---
 

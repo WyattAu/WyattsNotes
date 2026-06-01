@@ -1,8 +1,6 @@
 ---
 title: Shakespeare
-description:
-  'Shakespeare — 2.1 Elizabethan and Jacobean England; 2.2 The Globe Theatre; 2.3 Acting Companies;
-  3.1 Iambic Pentameter. and examination.'
+description: 'GCSE English Shakespeare notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and thorough revision.'
 date: 2026-04-22
 tags:
   - gcse

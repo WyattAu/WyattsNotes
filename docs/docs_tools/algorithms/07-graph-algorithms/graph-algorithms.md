@@ -1,9 +1,7 @@
 ---
 id: graph-algorithms
 title: Graph Algorithms
-description:
-  "Graph Algorithms — Shortest Paths; Dijkstra's Algorithm; Bellman-Ford Algorithm; Floyd-Warshall
-  Algorithm with worked examples and exam-style questions."
+description: 'Algorithms Graph Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: graph-algorithms
 ---
 

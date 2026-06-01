@@ -1,9 +1,7 @@
 ---
 title: Syllabus
 slug: Syllabus
-description:
-  'Rigorous IB physics notes covering Syllabus. Includes definitions, derivations, worked examples,
-  and exam-style problems.'
+description: 'IB Physics Syllabus notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
 ---
 
 ### IB Physics HL Syllabus Overview

@@ -1,8 +1,6 @@
 ---
 title: Trees
-description:
-  'A-Level Computer Science notes on Trees: 1. Tree Fundamentals; Definition; Terminology;
-  Properties with worked examples and exam-style questions.'
+description: 'A-Level Computer Science Trees notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

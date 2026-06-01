@@ -1,8 +1,6 @@
 ---
 title: Alkanes
-description:
-  'A-Level Chemistry notes on Alkanes: Structure and Bonding for comprehensive revision and
-  examination preparation. and examination prepa.'
+description: 'A-Level Chemistry Alkanes notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

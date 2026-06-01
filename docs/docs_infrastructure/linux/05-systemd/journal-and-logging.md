@@ -1,9 +1,7 @@
 ---
 id: journal-and-logging
 title: Journal and Logging
-description:
-  'Journal and Logging — systemd-journald Architecture; Log Sources; Storage Modes; Check current
-  storage mode with worked examples and exam-style questions.'
+description: 'Journal and Logging notes covering key definitions, core concepts, worked examples, and practice questions for effective study and thorough revision.'
 slug: journal-and-logging
 sidebar_position: 2
 ---

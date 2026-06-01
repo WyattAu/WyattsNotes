@@ -6,9 +6,7 @@ tags:
   - alevel-psychology
 categories:
   - alevel-psychology
-description:
-  Comprehensive guide to A-Level Psychology research methods covering experimental and
-  non-experimental designs, sampling, ethics, data analysis, and inferential statistics.
+description: 'A-Level Psychology Research Methods notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: research-methods
 ---
 

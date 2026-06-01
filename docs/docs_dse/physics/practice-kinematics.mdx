@@ -1,0 +1,181 @@
+---
+title: "DSE Physics Practice: Kinematics"
+slug: practice-kinematics
+description: "DSE Physics multiple choice practice problems on kinematics covering scalars, vectors, displacement, velocity, acceleration, equations of motion, and projectile motion."
+tags:
+  - DSE
+  - Physics
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## DSE Physics Practice: Kinematics
+
+18 MCQ practice problems on kinematics. Select an answer, submit, and review the explanation. Questions follow the DSE examination style and cover the full kinematics syllabus.
+
+---
+
+### Scalars and Vectors
+
+<PracticeProblem
+  questions={[
+    {
+      question: "Which of the following quantities is a scalar?",
+      options: ["A) Velocity", "B) Displacement", "C) Speed", "D) Force"],
+      correct: 2,
+      explanation: "Speed has magnitude only and no direction, making it a scalar. Velocity has both magnitude and direction (a vector). Displacement is the straight-line distance from start to finish in a given direction. Force has magnitude and direction."
+    },
+    {
+      question: "A student walks 3 km east and then 4 km north. What is the student's displacement?",
+      options: ["A) 7 km", "B) 5 km at 53 degrees east of north", "C) 5 km", "D) 7 km at 37 degrees east of north"],
+      correct: 1,
+      explanation: "Displacement is the straight-line distance from start to finish. By Pythagoras: sqrt(3^2 + 4^2) = 5 km. The direction is arctan(3/4) = 36.9 degrees east of north, approximately 37 degrees. Distance walked would be 7 km, but displacement is only 5 km."
+    },
+    {
+      question: "Two forces of 5 N and 12 N act at right angles to each other. What is the magnitude of the resultant force?",
+      options: ["A) 7 N", "B) 13 N", "C) 17 N", "D) 8.5 N"],
+      correct: 1,
+      explanation: "Using the tip-to-tail method or vector addition: R = sqrt(5^2 + 12^2) = sqrt(25 + 144) = sqrt(169) = 13 N. The resultant acts at arctan(5/12) = 22.6 degrees to the 12 N force."
+    },
+  ]}
+/>
+
+### Distance, Displacement, Speed and Velocity
+
+<PracticeProblem
+  questions={[
+    {
+      question: "A car travels along a circular track of circumference 400 m and returns to its starting point after completing one lap in 20 s. What is the car's average speed and average velocity respectively?",
+      options: ["A) 20 m/s, 20 m/s", "B) 20 m/s, 0 m/s", "C) 0 m/s, 0 m/s", "D) 0 m/s, 20 m/s"],
+      correct: 1,
+      explanation: "Average speed = total distance / total time = 400/20 = 20 m/s. Average velocity = total displacement / total time = 0/20 = 0 m/s (displacement is zero since the car returns to its starting point)."
+    },
+    {
+      question: "A runner completes a 100 m race in 12 seconds. What is the runner's average speed?",
+      options: ["A) 8.33 m/s", "B) 12 m/s", "C) 1200 m/s", "D) 0.083 m/s"],
+      correct: 0,
+      explanation: "Average speed = total distance / total time = 100/12 = 8.33 m/s. This is a scalar quantity; no direction is specified."
+    },
+    {
+      question: "An object moves 10 m east in 2 s, then 10 m west in 4 s. What is its average velocity for the entire journey?",
+      options: ["A) 0 m/s", "B) 3.33 m/s east", "C) 2.5 m/s west", "D) 1.67 m/s west"],
+      correct: 0,
+      explanation: "Total displacement = 10 - 10 = 0 m (returns to start). Average velocity = displacement / time = 0/6 = 0 m/s. Although the object moved a total distance of 20 m (giving average speed 3.33 m/s), the displacement is zero."
+    },
+  ]}
+/>
+
+### Acceleration and Graphs
+
+<PracticeProblem
+  questions={[
+    {
+      question: "A velocity-time graph shows a straight line passing through the origin with a positive gradient. This represents:",
+      options: ["A) An object at rest", "B) Uniform acceleration from rest", "C) Constant velocity", "D) Deceleration"],
+      correct: 1,
+      explanation: "A straight line through the origin on a v-t graph with positive gradient means velocity is directly proportional to time (v = at), which is uniform acceleration starting from rest (u = 0). The gradient equals the acceleration."
+    },
+    {
+      question: "The area under a velocity-time graph from t = 0 to t = 5 s represents:",
+      options: ["A) The acceleration of the object", "B) The distance travelled by the object", "C) The displacement of the object", "D) The average speed of the object"],
+      correct: 2,
+      explanation: "The area under a velocity-time graph equals the displacement (not distance). If the velocity becomes negative at any point, the area below the time axis represents negative displacement. Displacement = integral of v dt."
+    },
+    {
+      question: "An object moving with constant deceleration comes to rest in 4 s after travelling 60 m. What was its initial velocity?",
+      options: ["A) 15 m/s", "B) 30 m/s", "C) 20 m/s", "D) 10 m/s"],
+      correct: 1,
+      explanation: "Using v = u + at: v = 0, a = -a0, t = 4, so u = 4*a0. Using s = ut + 0.5at^2: 60 = u(4) + 0.5(-a0)(16). But a0 = u/4, so 60 = 4u - 2u = 2u. Therefore u = 30 m/s."
+    },
+  ]}
+/>
+
+### Equations of Motion (SUVAT)
+
+<PracticeProblem
+  questions={[
+    {
+      question: "A ball is thrown vertically upward with initial velocity 15 m/s. How high does it rise? (Take g = 10 m/s^2)",
+      options: ["A) 11.25 m", "B) 15 m", "C) 22.5 m", "D) 7.5 m"],
+      correct: 0,
+      explanation: "Using v^2 = u^2 + 2as with v = 0 (at maximum height), u = 15, a = -10. 0 = 225 + 2(-10)s. s = 225/20 = 11.25 m."
+    },
+    {
+      question: "A car accelerates uniformly from rest at 2 m/s^2 for 6 seconds. What distance does it travel?",
+      options: ["A) 36 m", "B) 12 m", "C) 24 m", "D) 48 m"],
+      correct: 0,
+      explanation: "Using s = ut + 0.5at^2 with u = 0, a = 2, t = 6. s = 0 + 0.5(2)(36) = 36 m."
+    },
+    {
+      question: "A stone is dropped from a cliff of height 45 m. How long does it take to reach the ground? (g = 10 m/s^2, ignore air resistance)",
+      options: ["A) 3 s", "B) 4.5 s", "C) 9 s", "D) 2 s"],
+      correct: 0,
+      explanation: "Using s = ut + 0.5gt^2 with u = 0, s = 45, g = 10. 45 = 0.5(10)t^2 = 5t^2. t^2 = 9. t = 3 s."
+    },
+  ]}
+/>
+
+### Projectile Motion
+
+<PracticeProblem
+  questions={[
+    {
+      question: "In projectile motion (neglecting air resistance), which of the following statements is correct?",
+      options: [
+        "A) The horizontal acceleration is g downwards",
+        "B) The vertical component of velocity is constant",
+        "C) The horizontal component of velocity remains constant",
+        "D) The acceleration is zero throughout the flight"
+      ],
+      correct: 2,
+      explanation: "In projectile motion with no air resistance, the horizontal acceleration is zero (no horizontal force), so the horizontal component of velocity is constant. The vertical acceleration is g (gravity, approximately 9.81 m/s^2 downwards), so the vertical component changes continuously."
+    },
+    {
+      question: "A ball is projected horizontally from a cliff of height 80 m with speed 20 m/s. How far from the base of the cliff does the ball land? (g = 10 m/s^2)",
+      options: ["A) 40 m", "B) 80 m", "C) 160 m", "D) 20 m"],
+      correct: 1,
+      explanation: "Time to fall: s = 0.5gt^2, 80 = 5t^2, t = 4 s. Horizontal distance = v_x * t = 20 * 4 = 80 m. The vertical and horizontal motions are independent."
+    },
+    {
+      question: "For a projectile launched at an angle theta to the horizontal with initial speed v0, the horizontal range is maximum when:",
+      options: [
+        "A) theta = 30 degrees",
+        "B) theta = 45 degrees",
+        "C) theta = 60 degrees",
+        "D) theta = 90 degrees"
+      ],
+      correct: 1,
+      explanation: "The range formula is R = (v0^2 sin 2*theta) / g. This is maximised when sin(2*theta) = 1, which occurs when 2*theta = 90 degrees, i.e., theta = 45 degrees. At this angle, complementary angles (e.g., 30 and 60 degrees) give the same range."
+    },
+  ]}
+/>
+
+### Stopping Distance
+
+<PracticeProblem
+  questions={[
+    {
+      question: "A driver's reaction time is 0.8 s. When the driver sees a hazard while travelling at 25 m/s, what is the thinking distance?",
+      options: ["A) 25 m", "B) 12.5 m", "C) 20 m", "D) 31.25 m"],
+      correct: 2,
+      explanation: "Thinking distance = speed x reaction time = 25 x 0.8 = 20 m. This is the distance the car travels before the driver begins braking."
+    },
+    {
+      question: "Which of the following factors increases the braking distance but NOT the thinking distance?",
+      options: [
+        "A) Higher speed",
+        "B) Worn tyres",
+        "C) Alcohol consumption",
+        "D) Wet road surface"
+      ],
+      correct: 1,
+      explanation: "Worn tyres reduce friction between tyres and road, increasing braking distance. Higher speed increases both thinking and braking distance. Alcohol consumption increases reaction time (thus thinking distance) but does not directly affect braking distance. Wet roads reduce friction (increasing braking distance) but do not affect thinking distance."
+    },
+    {
+      question: "If a car's speed doubles from 20 m/s to 40 m/s, by what factor does its braking distance increase, assuming constant braking deceleration?",
+      options: ["A) Doubles", "B) Triples", "C) Quadruples", "D) Remains the same"],
+      correct: 2,
+      explanation: "Using v^2 = u^2 + 2as with v = 0: braking distance s = u^2/(2a). If speed doubles (u -> 2u), s -> (2u)^2/(2a) = 4u^2/(2a) = 4s. Braking distance increases by a factor of 4 (quadruples)."
+    },
+  ]}
+/>

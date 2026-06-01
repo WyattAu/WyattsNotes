@@ -1,8 +1,6 @@
 ---
 title: Energy and Work
-description:
-  'A-Level Mathematics notes on Energy and Work: Board Coverage; 1. Work Done; 1.1 Definition and
-  derivation; 2. Kinetic Energy.'
+description: 'A-Level Maths Energy and Work notes covering key definitions, core concepts, worked examples, and practice questions for efficient study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

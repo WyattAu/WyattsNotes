@@ -1,8 +1,6 @@
 ---
 title: Integrals
-description:
-  'Integrals — Basic Integration Rules; The Power Rule for Integration; Riemann Sums and the
-  Definite Integral (CED Unit 6); Riemann Sums.'
+description: 'Qualifications Maths Integrals notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision and exam readiness.'
 date: 2026-04-14
 tags:
   - ap

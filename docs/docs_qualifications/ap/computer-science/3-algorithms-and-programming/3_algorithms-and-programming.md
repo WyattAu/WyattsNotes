@@ -1,8 +1,6 @@
 ---
 title: Algorithms and Programming
-description:
-  'Algorithms and Programming — Sorting Algorithms (CED Unit 3) for comprehensive revision and
-  examination preparation. and examination pr.'
+description: 'Qualifications Computer Science Algorithms and Programming notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap

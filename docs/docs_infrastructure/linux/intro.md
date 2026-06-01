@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to Linux
-description:
-  'Comprehensive Linux reference — CLI, file systems, process management, networking, systemd,
-  security, and package management.'
+description: 'Introduction to Linux notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and exam readiness.'
 slug: intro
 sidebar_position: 1
 ---

@@ -1,8 +1,6 @@
 ---
 title: Types and Variables
-description:
-  'Types and Variables — val and var; Basic Types; Implicit Conversions; Type Inference with worked
-  examples and exam-style questions.'
+description: 'Kotlin Types and Variables notes covering key definitions, core concepts, worked examples, and practice questions for targeted exam preparation and revision.'
 slug: types-and-variables
 date: 2026-04-18
 tags:

@@ -1,8 +1,6 @@
 ---
 title: Population Policies
-description:
-  'Pro-natalist policies, anti-natalist policies, population control ethics, gender equality and
-  fertility, and case studies for IB Geography.'
+description: 'IB Geography Population Policies notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
 slug: population-policies
 ---
 

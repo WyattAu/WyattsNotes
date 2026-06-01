@@ -1,8 +1,6 @@
 ---
 title: Operating Systems
-description:
-  'University-level notes on Operating Systems: processes, threads, scheduling,
-  synchronization, deadlock, memory management, and virtual memory.'
+description: 'University Computer Science Operating Systems notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -639,6 +637,16 @@ $$\text{Thrashing occurs when } \sum \text{working sets} > \text{available frame
 
 7. **TLB coherence issues on context switch.** Process-specific TLB entries must be invalidated or tagged with an address space ID (ASID) on context switch to prevent one process from using another's translations.
 
+## Worked Examples
+
+### Example 1: CPU Scheduling -- Round Robin
+**Problem:** Four processes arrive at time 0 with burst times: P1=8, P2=4, P3=2, P4=1 (time quantum = 2). Calculate turnaround and waiting times.
+**Solution:** Gantt: P1(0-2), P2(2-4), P3(4-6), P4(6-7), P1(7-9), P2(9-11), P1(11-13), P1(13-15). Turnaround: P1=15, P2=11, P3=6, P4=7. Waiting = turnaround - burst: P1=7, P2=7, P3=4, P4=6. Average waiting = 6.0.
+
+### Example 2: Deadlock Detection with Banker's Algorithm
+**Problem:** A system has 3 resource types and 5 processes. Available = (3, 3, 2). Max matrix shows P1=(7,5,3), P2=(3,2,2), P3=(9,0,2), P4=(2,2,2), P5=(4,3,3). Allocation: P1=(0,1,0), P2=(2,0,0), P3=(3,0,2), P4=(2,1,1), P5=(0,0,2). Is the system in a safe state?
+**Solution:** Need = Max - Allocation: P1=(7,4,3), P2=(1,2,2), P3=(6,0,0), P4=(0,1,1), P5=(4,3,1). Available = (3,3,2). P2 can be satisfied: Available + P2 alloc = (3,3,2)+(2,0,0) = (5,3,2). Then P4: (5,3,2)+(2,1,1)=(7,4,3). Then P1: (7,4,3)+(0,1,0)=(7,5,3). Then P3: (7,5,3)+(3,0,2)=(10,5,5). Then P5. Safe sequence: P2, P4, P1, P3, P5.
+
 ## Summary
 
 - **Processes** are heavyweight units with separate address spaces; **threads** are lightweight and share memory within a process.
@@ -647,3 +655,11 @@ $$\text{Thrashing occurs when } \sum \text{working sets} > \text{available frame
 - **Deadlock** requires four conditions simultaneously; prevented by eliminating one, avoided with Banker's algorithm, or detected and recovered from.
 - **Paging** eliminates external fragmentation; **segmentation** preserves logical structure. **TLB** caches translations for fast address resolution.
 - **Virtual memory** (demand paging) allows programs larger than physical memory. Page replacement (OPT, LRU, FIFO, Clock) minimizes page faults.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Databases | [View](/docs/university/computer-science/databases) |
+| Distributed Systems | [View](/docs/university/computer-science/distributed-systems) |
+| Networking | [View](/docs/university/computer-science/networking) |

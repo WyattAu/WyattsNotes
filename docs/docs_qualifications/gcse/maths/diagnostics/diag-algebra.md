@@ -1,8 +1,6 @@
 ---
 title: 'Algebra -- Diagnostic Tests'
-description:
-  'GCSE Maths diagnostic tests for algebra: solving equations, rearranging formulas, simultaneous
-  equations, quadratic equations, inequalities.'
+description: 'GCSE Maths Algebra -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 slug: diag-algebra
 hide_table_of_contents: true
 ---

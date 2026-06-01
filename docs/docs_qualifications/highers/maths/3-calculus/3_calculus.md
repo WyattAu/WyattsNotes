@@ -1,8 +1,6 @@
 ---
 title: Further Calculus
-description:
-  'Further Calculus — Further Differentiation; Implicit Differentiation; Parametric Differentiation;
-  Differentiation of Inverse Trigonometric Functions.'
+description: 'Scottish Highers Maths Further Calculus notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 date: 2026-04-14
 tags:
   - highers

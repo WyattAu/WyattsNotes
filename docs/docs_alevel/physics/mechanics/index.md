@@ -1,9 +1,7 @@
 ---
 sidebar_label: Mechanics
 sidebar_position: 1
-description:
-  'Rigorous A-Level physics notes covering Mechanics. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'A-Level Physics Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for in-depth review and exam preparation.'
 ---
 
 # Mechanics

@@ -6,7 +6,7 @@ tags:
   - TypeScript
 categories:
   - TypeScript
-description: "Advanced TypeScript type system features: conditional types, mapped types, template literal types, variadic tuples, recursive types, type-level programming, and practical design patterns for complex type scenarios."
+description: "Advanced TypeScript type system features: conditional types, mapped types, template literal types, variadic tuples, recursive types, type-level programming,."
 ---
 
 ## Conditional Types: Internals and Advanced `infer`
@@ -807,7 +807,74 @@ bus.on('startup', ({ timestamp }) => {
 });
 ```
 
-## Common Pitfalls
+## Worked Examples
+
+### Example 1: Building a Type-Safe API Response Handler
+**Problem:** Create a type that extracts the success data type from a discriminated union of API responses.
+**Solution:**
+```ts
+type ApiResponse<T> =
+  | { status: 'success'; data: T; timestamp: number }
+  | { status: 'error'; message: string; code: number }
+  | { status: 'loading' };
+
+type SuccessData<R> = R extends ApiResponse<infer D> ? D : never;
+type User = SuccessData<ApiResponse<{ id: string; name: string }>>;
+// type User = { id: string; name: string }
+
+type ErrorMessage<R> = R extends ApiResponse<infer _> ? never :
+  R extends { message: infer M } ? M : never;
+```
+`infer` in the conditional type extracts the generic parameter `T` from the success variant. The union distribution does not apply here because `T` is not a naked type parameter being distributed over.
+
+### Example 2: Type-Safe Event Emitter
+**Problem:** Create an `EventEmitter` that only allows emitting and listening to valid event types with correct payload types.
+**Solution:**
+```ts
+interface EventMap {
+  'user:login': { userId: string; timestamp: number };
+  'user:logout': { userId: string };
+  'error': { code: number; message: string };
+}
+
+class TypedEmitter<M extends Record<string, unknown>> {
+  private handlers = new Map<keyof M, Set<Function>>();
+
+  on<K extends keyof M>(event: K, handler: (payload: M[K]) => void): () => void {
+    if (!this.handlers.has(event)) this.handlers.set(event, new Set());
+    this.handlers.get(event)!.add(handler);
+    return () => this.handlers.get(event)!.delete(handler);
+  }
+
+  emit<K extends keyof M>(event: K, payload: M[K]): void {
+    this.handlers.get(event)?.forEach(h => h(payload));
+  }
+}
+
+const emitter = new TypedEmitter<EventMap>();
+emitter.on('user:login', (p) => { console.log(p.userId); });
+emitter.emit('user:login', { userId: 'abc', timestamp: 123 });
+emitter.emit('user:login', { userId: 'abc' }); // Error: missing timestamp
+```
+The mapped type over `EventMap` ensures each event key maps to its correct payload type. Attempting to emit with the wrong payload shape produces a compile error.
+
+### Example 3: Recursive Deep Partial
+**Problem:** Make all properties in a nested object type optional, recursively.
+**Solution:**
+```ts
+type DeepPartial<T> = T extends object
+  ? { [K in keyof T]?: DeepPartial<T[K]> }
+  : T;
+
+interface Config {
+  db: { host: string; port: number; auth: { user: string; pass: string } };
+  cache: { ttl: number; maxSize: number };
+}
+
+type PartialConfig = DeepPartial<Config>;
+// { db?: { host?: string; port?: number; auth?: { user?: string; pass?: string } }; cache?: { ttl?: number; maxSize?: number } }
+```
+The recursive conditional type checks whether `T` is an object at each nesting level, making each property optional. Primitive values (string, number) fall through unchanged.
 
 ### Pitfall 1: `keyof T` Includes `symbol` Keys
 
@@ -934,6 +1001,14 @@ accept({ name: 'Ada', extra: true });
 ```
 
 This version is an error because the object literal is directly assigned.
+
+## Common Pitfalls
+
+1. **Using template literals with generic string types.** Conditional types only decompose literal types, not generic string. FirstChar<string> evaluates to string for both inferences.
+2. **Relying on conditional types in extends clauses.** A conditional type used as a constraint is not evaluated during constraint checking.
+3. **Hitting TypeScript recursion depth limits.** Type-level arithmetic exceeds the recursion limit (~9999) for values above about 1000.
+4. **Forgetting that keyof includes symbol keys.** keyof T returns string | number | symbol for most objects. Use keyof T & string for string-only keys.
+
 
 ## Summary
 

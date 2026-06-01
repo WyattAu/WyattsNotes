@@ -1,8 +1,6 @@
 ---
 title: Networking and Security
-description:
-  'Networking and Security — Network Fundamentals (OL/HL); Types of Network; Client-Server vs
-  Peer-to-Peer (OL/HL); Network Topologies (OL/HL).'
+description: 'ILC Computer Science Networking and Security notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 date: 2026-04-14
 tags:
   - ilc

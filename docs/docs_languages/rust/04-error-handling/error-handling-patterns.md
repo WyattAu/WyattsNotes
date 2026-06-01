@@ -1,9 +1,7 @@
 ---
 id: error-handling-patterns
 title: Error Handling Patterns
-description:
-  'Error Handling Patterns — Error Design Philosophy; Errors as Values vs Exceptions; Defining Error
-  Types; Enum-Based Error Types.'
+description: 'Rust Error Handling Patterns notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision and exam readiness.'
 slug: error-handling-patterns
 ---
 

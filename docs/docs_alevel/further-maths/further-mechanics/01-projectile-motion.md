@@ -1,8 +1,6 @@
 ---
 title: Projectile Motion
-description:
-  'A-Level Further Maths notes on Projectile Motion: Board Coverage; 1. Equations of Motion; 1.1
-  Setting up the problem; 1.2 Horizontal motion (constant velocity).'
+description: 'A-Level Further Maths Projectile Motion notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

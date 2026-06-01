@@ -1,8 +1,6 @@
 ---
 title: Constant Expressions
-description:
-  'C++: Constant Expressions — The Keyword Taxonomy; `const`: Immutability, Not Compile-Time;
-  `const` at Namespace Scope. and examination.'
+description: 'C++ Programming Constant Expressions notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -1,8 +1,6 @@
 ---
 title: Social Identity Theory
-description:
-  "Comprehensive coverage of Tajfel and Turner's social identity theory, in-group and out-group
-  dynamics, realistic conflict theory, and key research for IB"
+description: 'IB Psychology Social Identity Theory notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: social-identity-theory
 ---
 

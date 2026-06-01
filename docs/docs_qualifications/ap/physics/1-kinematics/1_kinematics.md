@@ -1,8 +1,6 @@
 ---
 title: Kinematics
-description:
-  'Kinematics — Displacement, Velocity, and Acceleration (CED Unit 1); Scalar vs Vector Quantities;
-  Definitions Using Calculus; Constant Acceleration Equations.'
+description: 'Qualifications Physics Kinematics notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-04-14
 tags:
   - ap

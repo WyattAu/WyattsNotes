@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  Comprehensive A-Level English Literature and Language notes covering literary analysis, poetry,
-  prose, drama, Shakespeare, comparative analysis, and unseen texts.
+description: 'A-Level English notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision and examination preparation.'
 slug: alevel-english
 ---
 

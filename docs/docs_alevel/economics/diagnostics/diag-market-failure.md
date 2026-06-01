@@ -1,8 +1,6 @@
 ---
 title: 'Market Failure -- Diagnostic Tests'
-description:
-  'Diagnostic tests for A-Level Economics market failure: externalities, public goods, government
-  intervention, and welfare analysis.'
+description: 'A-Level Economics Market Failure -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-market-failure
 hide_table_of_contents: true
 ---

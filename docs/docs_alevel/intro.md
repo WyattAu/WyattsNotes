@@ -1,9 +1,7 @@
 ---
 id: intro
 title: A Level Notes
-description:
-  'Rigorous A Level revision notes covering Mathematics, Physics, Computer Science, and Economics
-  across AQA, Edexcel, OCR, and CIE boards.'
+description: 'A-Level Intro.Md A Level notes covering key definitions, core concepts, worked examples, and practice questions for focused revision and exam readiness.'
 slug: intro
 sidebar_position: 1
 date: 2025-06-02T16:25:28.480Z

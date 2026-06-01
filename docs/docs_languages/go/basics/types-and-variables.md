@@ -1,8 +1,6 @@
 ---
 title: Types and Variables
-description:
-  'Types and Variables — Integer Types; Integer Overflow; Floating-Point Types; Boolean Type with
-  worked examples and exam-style questions.'
+description: 'Go Types and Variables notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision and exam readiness.'
 slug: types-and-variables
 date: 2026-04-18
 tags:

@@ -1,8 +1,6 @@
 ---
 title: Kinetics and Equilibrium
-description:
-  'Kinetics and Equilibrium — Chemical Kinetics (CED Unit 5); Rate of Reaction; Rate Law;
-  Determining the Rate Law from Initial Rate Data.'
+description: 'Qualifications Chemistry Kinetics and Equilibrium notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-14
 tags:
   - ap

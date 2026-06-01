@@ -1,8 +1,6 @@
 ---
 title: Biodiversity, Classification and Evolution
-description:
-  'A-Level Biology notes on Biodiversity, Classification and Evolution: 1. Biodiversity; 1.1
-  Defining Biodiversity; 1.2 Measuring Species Diversity.'
+description: 'A-Level Biology Biodiversity, Classification and Evolution notes covering key definitions, core concepts, worked practice questions for analytical revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

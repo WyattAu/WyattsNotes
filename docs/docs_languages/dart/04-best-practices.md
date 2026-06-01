@@ -1,8 +1,6 @@
 ---
 title: Best Practices
-description:
-  'Best Practices — Null Safety; Typing; Concurrency; Collections including key definitions,
-  derivations, and problem-solving techniques.'
+description: 'Dart Best Practices notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and mastery.'
 date: 2025-07-17T20:40:50.912Z
 tags:
   - dart

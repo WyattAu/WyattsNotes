@@ -6,9 +6,7 @@ tags:
   - alevel-psychology
 categories:
   - alevel-psychology
-description:
-  Covers the multi-store model, working memory model, types of long-term memory, eyewitness
-  testimony, cognitive interview, and theories of forgetting for A-Level Psychology.
+description: 'A-Level Psychology Memory notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and revision.'
 slug: memory
 ---
 

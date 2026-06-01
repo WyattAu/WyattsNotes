@@ -1,8 +1,6 @@
 ---
 title: Algebra
-description:
-  'Algebra — 1.1 Simplifying Expressions; 1.2 Expanding Brackets; 1.3 Factorisation; 2. Solving
-  Equations with worked examples and exam-style questions.'
+description: 'GCSE Maths Algebra notes covering key definitions, core concepts, worked examples, and practice questions for rigorous exam preparation and revision.'
 date: 2026-04-14
 tags:
   - gcse

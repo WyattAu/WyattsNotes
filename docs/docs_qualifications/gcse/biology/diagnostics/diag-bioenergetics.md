@@ -1,8 +1,6 @@
 ---
 title: 'Bioenergetics -- Diagnostic Tests'
-description:
-  'GCSE Biology diagnostic tests for bioenergetics: photosynthesis, respiration, limiting factors,
-  metabolic rate, anaerobic respiration.'
+description: 'GCSE Biology Bioenergetics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: diag-bioenergetics
 hide_table_of_contents: true
 ---

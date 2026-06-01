@@ -1,8 +1,6 @@
 ---
 title: Theory of the Firm
-description:
-  'IB Economics — market structures, perfect and imperfect competition, oligopoly, monopoly,
-  production theory.'
+description: 'IB Economics Theory of the Firm notes covering key definitions, core concepts, worked examples, and practice questions for complete study and thorough revision.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

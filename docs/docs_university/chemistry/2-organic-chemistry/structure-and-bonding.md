@@ -1,8 +1,6 @@
 ---
 title: Structure and Bonding
-description:
-  "University-level notes on Organic Structure and Bonding: 1. Hybridization; 1.1 sp, sp2, sp3
-  Hybridization; 1.2 VSEPR Theory."
+description: 'University Chemistry Structure and Bonding notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -374,6 +372,16 @@ for polar substituents near a reaction center.
 - **Stereochemistry:** R/S system for chiral centers; E/Z for double bonds; enantiomers vs diastereomers.
 - **Conformational analysis:** Newman projections; cyclohexane chair conformations; A-values determine
   substituent preferences.
+
+## Worked Examples
+
+### Example 1: Determining Molecular Geometry
+**Problem:** Predict the geometry and bond angle around the central carbon in CH3NO2 (nitromethane).
+**Solution:** The central carbon is sp3 hybridised (tetrahedral geometry for the C-H bonds, approximately 109.5 degrees). The nitrogen is sp2 hybridised with a formal positive charge. The two N-O bonds are equivalent due to resonance. The C-N bond length is shorter than a typical C-N single bond due to partial double bond character from resonance delocalisation.
+
+### Example 2: Analysing Conformational Energy
+**Problem:** For methylcyclohexane, determine which conformation is more stable (equatorial vs axial methyl) and calculate the energy difference.
+**Solution:** The equatorial conformation is more stable. The A-value for a methyl group is 1.7 kcal/mol. At room temperature (kT = 0.6 kcal/mol), the equilibrium constant K = exp(-Delta G/RT) = exp(-1.7/0.6) = exp(-2.83) = 0.059. The equatorial:axial ratio is approximately 17:1, meaning about 94% of molecules are in the equatorial conformation at room temperature.
 
 ## Cross-References
 

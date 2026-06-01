@@ -1,8 +1,6 @@
 ---
 title: Cryptography
-description:
-  'University-level notes on Cryptography: symmetric encryption, asymmetric encryption,
-  hash functions, digital signatures, key exchange, PKI, and post-quantum cryptography.'
+description: 'University Computer Science Cryptography notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -526,6 +524,16 @@ ML-KEM_DECAP(sk, c):
 
 7. **Rolling your own crypto.** Custom cryptographic schemes almost always have subtle vulnerabilities. Use well-vetted libraries (libsodium, OpenSSL, BoringSSL) and standard algorithms.
 
+## Worked Examples
+
+### Example 1: RSA Encryption and Decryption
+**Problem:** Alice chooses primes p=11, q=13. Her public key is (e=7, n). Bob wants to send the message M=5. Compute the ciphertext and show that decryption recovers M.
+**Solution:** n = 11*13 = 143. phi(n) = (11-1)(13-1) = 120. e=7. d = e^-1 mod phi(n). Extended Euclidean: 7*17 = 119 = 120 - 1, so d = 17. Ciphertext C = 5^7 mod 143 = 78125 mod 143 = 47. Decryption: M = 47^17 mod 143. Compute: 47^2 mod 143 = 2209 mod 143 = 86. 47^4 mod 143 = 86^2 mod 143 = 7396 mod 143 = 20. 47^8 mod 143 = 20^2 mod 143 = 400 mod 143 = 14. 47^16 mod 143 = 14^2 mod 143 = 196 mod 143 = 53. 47^17 = 53*47 mod 143 = 2491 mod 143 = 5. M = 5 recovered.
+
+### Example 2: Diffie-Hellman Key Exchange
+**Problem:** Alice and Bob agree on prime p=23 and generator g=5. Alice chooses private a=6, Bob chooses private b=15. Calculate their shared secret.
+**Solution:** Alice sends A = g^a mod p = 5^6 mod 23 = 15625 mod 23 = 8. Bob sends B = g^b mod p = 5^15 mod 23. 5^2=2, 5^4=4, 5^8=16, 5^15=16*4*2*5 mod 23 = 640 mod 23 = 19. Shared secret (Alice): B^a mod p = 19^6 mod 23 = 47045881 mod 23 = 2. Shared secret (Bob): A^b mod p = 8^15 mod 23 = 2. Both compute the same shared secret: 2.
+
 ## Summary
 
 - **Symmetric encryption** (AES) is efficient for bulk data; block cipher modes (CBC, CTR, GCM) add security properties.
@@ -536,3 +544,11 @@ ML-KEM_DECAP(sk, c):
 - **PKI** (X.509 certificates, CAs) provides a trust hierarchy for public key distribution.
 - **Zero-knowledge proofs** enable verification without revealing secrets.
 - **Post-quantum cryptography** (ML-KEM, ML-DSA) protects against future quantum attacks using lattice-based and hash-based schemes.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Algorithms Overview | [View](/docs_infrastructure/cs/algorithms-overview) |
+| Network Security | [View](/docs_university/computer-science/networking) |
+| Distributed Systems | [View](/docs_university/computer-science/distributed-systems) |

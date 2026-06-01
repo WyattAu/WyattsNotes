@@ -1,9 +1,7 @@
 ---
 id: cloud-security
 title: Cloud Security
-description:
-  'Cloud Security — Shared Responsibility Model; IaaS (Infrastructure as a Service); PaaS (Platform
-  as a Service); SaaS (Software as a Service).'
+description: 'Cloud Security notes covering key definitions, core concepts, worked examples, and practice questions for targeted review and exam preparation.'
 slug: cloud-security
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z

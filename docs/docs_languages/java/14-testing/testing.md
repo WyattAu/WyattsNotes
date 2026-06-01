@@ -1,9 +1,7 @@
 ---
 id: testing
 title: Testing in Java
-description:
-  'Testing in Java — JUnit 5; Core Annotations; Assertions; Test Lifecycle including key
-  definitions, derivations, and problem-solving techniques.'
+description: 'Java Testing in Java notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision and examination preparation.'
 slug: testing
 ---
 

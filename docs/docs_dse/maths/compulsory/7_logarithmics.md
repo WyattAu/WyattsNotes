@@ -1,8 +1,6 @@
 ---
 title: Logarithms
-description:
-  'DSE Mathematics logarithm notes covering logarithmic laws, solving exponential and logarithmic
-  equations, change of base formula, and real-world applications.'
+description: 'DSE Maths Logarithms notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and revision.'
 date: 2025-06-03T16:19:00.000Z
 tags:
   - Maths

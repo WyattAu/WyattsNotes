@@ -1,8 +1,6 @@
 ---
 title: 'Macroeconomic Policy -- Diagnostic Tests'
-description:
-  'Diagnostic tests for A-Level macroeconomics: AD/AS model, fiscal and monetary policy, Phillips
-  curve, and the multiplier.'
+description: 'A-Level Economics Macroeconomic Policy -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-macroeconomic-policy
 hide_table_of_contents: true
 ---

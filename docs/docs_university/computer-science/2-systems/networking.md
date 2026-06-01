@@ -1,8 +1,6 @@
 ---
 title: Networking
-description:
-  'University-level notes on Networking: OSI and TCP/IP models, physical layer,
-  data link layer, network layer, transport layer, and application layer protocols.'
+description: 'University Computer Science Networking notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -482,6 +480,16 @@ QUIT                // Close
 
 7. **DNS caching issues.** Long TTL values improve performance but delay propagation of changes. Short TTL values increase DNS query volume. Choose based on how often records change.
 
+## Worked Examples
+
+### Example 1: Subnet Calculation
+**Problem:** An organisation has IP address 192.168.1.0/24 and needs to create 6 subnets of roughly equal size. Determine the subnet mask and the address range for each subnet.
+**Solution:** 6 subnets requires 3 bits (2^3 = 8 subnets). New mask: /24 + 3 = /27 (255.255.255.224). Block size: 256 - 224 = 32 addresses per subnet (30 usable). Subnets: 192.168.1.0/27 (hosts 1-30), 192.168.1.32/27 (hosts 33-62), 192.168.1.64/27 (hosts 65-94), 192.168.1.96/27 (hosts 97-126), 192.168.1.128/27 (hosts 129-158), 192.168.1.160/27 (hosts 161-190), 192.168.1.192/27, 192.168.1.224/27.
+
+### Example 2: TCP Three-Way Handshake
+**Problem:** Describe the TCP three-way handshake and explain the purpose of each segment's flags.
+**Solution:** Client sends SYN (seq=x). Server responds with SYN-ACK (seq=y, ack=x+1). Client sends ACK (ack=y+1). The SYN flag requests connection establishment and carries the initial sequence number. The SYN-ACK acknowledges the client's SYN and provides the server's initial sequence number. The final ACK acknowledges the server's SYN. After this exchange, both sides have established their sequence numbers and the connection is established for full-duplex data transfer.
+
 ## Summary
 
 - **OSI model** (7 layers) and **TCP/IP model** (4 layers) organize network functionality into abstraction layers with encapsulation.
@@ -490,3 +498,11 @@ QUIT                // Close
 - **Network layer** handles IP addressing, subnetting (CIDR), NAT, and routing (RIP, OSPF, BGP).
 - **Transport layer** provides UDP (fast, unreliable) and TCP (reliable, ordered, flow-controlled, congestion-controlled).
 - **Application layer** includes HTTP, DNS, SMTP, and other end-user protocols.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Databases | [View](/docs/university/computer-science/databases) |
+| Distributed Systems | [View](/docs/university/computer-science/distributed-systems) |
+| Operating Systems | [View](/docs/university/computer-science/operating-systems) |

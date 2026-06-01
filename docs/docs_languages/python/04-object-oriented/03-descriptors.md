@@ -1,9 +1,7 @@
 ---
 id: descriptors
 title: Descriptors and Properties
-description:
-  'Descriptors and Properties — Descriptor Protocol; Data vs Non-Data Descriptors; Instance
-  attribute overrides non-data descriptor; Data descriptor always wins.'
+description: 'Python Descriptors and Properties notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 slug: descriptors
 ---
 

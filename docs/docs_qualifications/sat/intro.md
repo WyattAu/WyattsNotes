@@ -1,9 +1,7 @@
 ---
 title: Introduction to SAT Notes
 date: 2026-05-30
-description:
-  'Rigorous qualification exam SAT notes covering Introduction to SAT Notes. Includes definitions,
-  strategies, worked examples, and exam-style problems.'
+description: 'SAT Intro.Md Introduction to SAT notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 tags:
   - sat
 categories:

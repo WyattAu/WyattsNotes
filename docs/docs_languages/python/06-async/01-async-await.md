@@ -1,8 +1,6 @@
 ---
 title: Async and Await
-description:
-  'Async and Await — The Problem: Concurrency in a Single-Threaded Interpreter; The Global
-  Interpreter Lock (GIL); What the GIL Is; Why the GIL Exists.'
+description: 'Python Async and Await notes covering key definitions, core concepts, worked examples, and practice questions for in-depth learning and effective revision.'
 date: 2025-06-04T15:00:00.000Z
 tags:
   - Python

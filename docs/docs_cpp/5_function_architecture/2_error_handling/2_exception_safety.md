@@ -1,8 +1,6 @@
 ---
 title: Exception Safety Guarantees
-description:
-  'C++: Exception Safety Guarantees — 2.1 No-Throw Guarantee (Strongest); Conditional `noexcept` and
-  Exception Propagation; Destructors and `noexcept`.'
+description: 'C++ Programming Exception Safety Guarantees notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

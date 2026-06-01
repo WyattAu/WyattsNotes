@@ -1,9 +1,7 @@
 ---
 title: Introduction to AP Notes
 date: 2026-04-14
-description:
-  'Rigorous qualification exam AP notes covering Introduction to AP Notes. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Qualifications Intro.Md Introduction to AP notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 tags:
   - ap
 categories:

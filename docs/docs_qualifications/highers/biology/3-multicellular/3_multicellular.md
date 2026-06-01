@@ -1,8 +1,6 @@
 ---
 title: Multicellular Organisms
-description:
-  'Multicellular Organisms — Stem Cells and Differentiation for comprehensive revision and
-  examination preparation. and examination prepar.'
+description: 'Scottish Highers Biology Multicellular Organisms notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-04-14
 tags:
   - highers

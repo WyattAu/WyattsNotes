@@ -1,8 +1,6 @@
 ---
 title: DSE Mathematics
-description:
-  'Complete DSE Mathematics (Compulsory Part) revision notes covering algebra, functions, coordinate
-  geometry, trigonometry, probability,...'
+description: 'DSE Maths Mathematics notes covering key definitions, core concepts, worked examples, and practice questions for clear study and thorough revision.'
 slug: maths
 hide_table_of_contents: true
 ---

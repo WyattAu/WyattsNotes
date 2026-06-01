@@ -1,8 +1,6 @@
 ---
 title: Analytical Techniques
-description:
-  'A-Level Chemistry notes on Analytical Techniques: Mass Spectrometry (MS); Instrument Overview;
-  The Molecular Ion ($\mathrm{M}^{+\bullet}$); Isotopic Peaks.'
+description: 'A-Level Chemistry Analytical Techniques notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

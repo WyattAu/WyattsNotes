@@ -1,8 +1,6 @@
 ---
 title: 'Trigonometry -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for trigonometry covering ambiguous sine rule cases, identity pitfalls,
-  periodicity traps, harmonic form, and inverse function domain'
+description: 'A-Level Maths Trigonometry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-trigonometry
 hide_table_of_contents: true
 ---

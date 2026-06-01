@@ -1,9 +1,7 @@
 ---
 title: GCSE Physics Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive GCSE Physics revision guide covering Energy, Forces and Motion, Waves, Electricity,
-  Magnetism, Particle Model, Radioactivity, key equations, exam tips and common mistakes.'
+description: 'GCSE Physics.Md Physics Study notes covering key definitions, core concepts, worked examples, and practice questions for structured review and exam preparation.'
 tags:
   - gcse
   - physics
@@ -483,18 +481,30 @@ Background radiation is always present from natural and artificial sources: rado
 
 ---
 
-## 10. Common Mistakes
+## Common Pitfalls
 
 1. **Confusing mass and weight.** Mass is measured in kilograms and does not change; weight is a force measured in newtons and depends on the gravitational field strength. Writing "weight in kg" is always incorrect.
+2. **Forgetting to convert units.** Speed in km/h must be converted to m/s before using $v = f\lambda$ or $F = ma$. Common conversions: 1 km = 1000 m, 1 hour = 3600 s, 1 g = 0.001 kg.
+3. **Misidentifying alpha and beta properties.** Alpha is heavy, slow, and highly ionising but poorly penetrating (stopped by paper). Beta is lighter, faster, moderately ionising, and moderately penetrating (stopped by aluminium).
+4. **Drawing current the wrong way in circuits.** Conventional current flows from positive to negative (the long line on a cell symbol).
+5. **Assuming the gradient of a V-I graph always equals resistance.** For a filament lamp, resistance = $V/I$ at a point, not the gradient.
+6. **Forgetting that temperature must be in kelvin for gas calculations.** $0^\circ C = 273 K$. Always convert before substituting.
+7. **Writing incomplete half-life answers.** Always state "the time taken for half of the radioactive nuclei to decay" or "half the activity to decrease".
 
-2. **Forgetting to convert units.** Speed in km/h must be converted to m/s before using $v = f\lambda$ or $F = ma$. Common conversions: 1 km = 1000 m, 1 hour = 3600 s, 1 g = 0.001 kg, 1 cm = 0.01 m.
+## Worked Examples
 
-3. **Misidentifying alpha and beta properties.** Alpha is heavy, slow, and highly ionising but poorly penetrating (stopped by paper). Beta is lighter, faster, moderately ionising, and moderately penetrating (stopped by aluminium). Do not mix these up.
+### Example 1: Kinetic Energy Calculation
+**Problem:** A car of mass 1200 kg is travelling at 20 m/s. Calculate its kinetic energy. If the driver brakes and the car stops in 40 m, calculate the average braking force.
+**Solution:** Ek = 0.5 x 1200 x 20^2 = 240,000 J = 240 kJ. Using work-energy: W = F x s = Ek, so F = 240,000 / 40 = 6000 N.
 
-4. **Drawing current the wrong way in circuits.** Conventional current flows from positive to negative (the long line on a cell symbol). Electrons actually flow the other way, but in circuit diagrams we always use conventional current.
+### Example 2: Transformer Calculation
+**Problem:** A step-down transformer has 2000 turns on its primary coil and 100 turns on its secondary. The input voltage is 230 V. Calculate the output voltage.
+**Solution:** Vp/Vs = np/ns. 230/Vs = 2000/100 = 20. Vs = 230/20 = 11.5 V.
 
-5. **Assuming the gradient of a V-I graph always equals resistance.** For a filament lamp, resistance = $V/I$ at a point, not the gradient. The gradient of $V$ against $I$ is the reciprocal of resistance. For a straight-line graph through the origin, gradient and $V/I$ happen to be the same.
+### Example 3: Half-Life Calculation
+**Problem:** A sample of iodine-131 has an activity of 800 Bq. The half-life of iodine-131 is 8 days. What will the activity be after 32 days?
+**Solution:** 32 days / 8 days per half-life = 4 half-lives. Activity = 800 x (1/2)^4 = 800 x 1/16 = 50 Bq.
 
-6. **Forgetting that temperature must be in kelvin for gas calculations.** $0°C = 273 K$. If a question involves the pressure law or temperature in gas equations, always convert to kelvin before substituting.
+## Summary
 
-7. **Writing incomplete half-life answers.** Always state that "half-life is the time taken for half of the radioactive nuclei to decay" or "half the activity to decrease" — simply saying "the time for it to halve" is too vague and may not score full marks.
+GCSE Physics covers energy (stores, transfers, efficiency, specific heat capacity, specific latent heat), forces and motion (speed, velocity, acceleration, Newton's laws, momentum, stopping distance), waves (transverse and longitudinal, EM spectrum, reflection, refraction, sound), electricity (current, potential difference, resistance, series and parallel circuits, I-V characteristics, mains electricity, power), magnetism (magnetic fields, electromagnets, motor effect, generators, transformers, National Grid), particle model of matter (states, gas laws), and radioactivity (atomic structure, alpha/beta/gamma, half-life, uses and dangers). Key exam skills include memorising required equations, showing all working with units, and distinguishing scalar and vector quantities.

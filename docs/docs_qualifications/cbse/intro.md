@@ -1,9 +1,7 @@
 ---
 title: Introduction to CBSE Notes
 date: 2026-05-30
-description:
-  'Rigorous qualification exam CBSE notes covering Introduction to CBSE Notes. Includes definitions,
-  strategies, worked examples, and exam-style problems.'
+description: 'Qualifications Intro.Md Introduction to CBSE notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 tags:
   - cbse
 categories:

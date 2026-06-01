@@ -1,8 +1,6 @@
 ---
 title: 'Chemical Kinetics -- Diagnostic Tests'
-description:
-  Diagnostic tests for rate equations, reaction orders, Arrhenius equation, and catalysts at the
-  hardest A-Level Chemistry standard.
+description: 'A-Level Chemistry Chemical Kinetics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-kinetics
 hide_table_of_contents: true
 ---

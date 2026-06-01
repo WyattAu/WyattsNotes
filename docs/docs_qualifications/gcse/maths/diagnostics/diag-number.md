@@ -1,8 +1,6 @@
 ---
 title: 'Number -- Diagnostic Tests'
-description:
-  'GCSE Maths diagnostic tests for number: fractions, decimals, percentages, HCF/LCM, bounds,
-  standard form, and ratio problems.'
+description: 'GCSE Maths Number -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 slug: diag-number
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: Waves and Sound
-description:
-  'DSE Physics waves and sound notes covering wave properties, transverse and longitudinal waves,
-  sound waves, the Doppler effect, and standing waves.'
+description: 'DSE Physics Waves and Sound notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

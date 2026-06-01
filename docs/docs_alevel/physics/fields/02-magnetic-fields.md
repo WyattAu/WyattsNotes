@@ -1,8 +1,6 @@
 ---
 title: Magnetic Fields
-description:
-  'A-Level Physics notes on Magnetic Fields: 1. Magnetic Force on a Current-Carrying Wire; Magnetic
-  Force on a Moving Charge.'
+description: 'A-Level Physics Magnetic Fields notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

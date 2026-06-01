@@ -1,8 +1,6 @@
 ---
 title: Treatment Evaluation
-description:
-  'Comprehensive coverage of evaluating psychological treatments including ethics, effectiveness,
-  cultural considerations, drug therapy versus psychotherapy, and'
+description: 'IB Psychology Treatment Evaluation notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 slug: treatment-evaluation
 ---
 

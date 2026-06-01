@@ -1,8 +1,6 @@
 ---
 title: 'Geometry -- Diagnostic Tests'
-description:
-  "GCSE Maths diagnostic tests for geometry: Pythagoras' theorem, trigonometry, circle theorems,
-  area and volume, transformations."
+description: 'GCSE Maths Geometry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
 slug: diag-geometry
 hide_table_of_contents: true
 ---

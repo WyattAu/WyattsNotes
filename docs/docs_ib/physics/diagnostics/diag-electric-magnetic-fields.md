@@ -1,8 +1,6 @@
 ---
 title: 'Electric and Magnetic Fields -- Diagnostic Tests'
-description:
-  'Hardest IB Physics electric and magnetic fields diagnostic tests covering Coulomb superposition,
-  field line topology, magnetic force perpendicularity, and'
+description: 'IB Physics Electric and Magnetic Fields -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-electric-magnetic-fields
 hide_table_of_contents: true
 ---

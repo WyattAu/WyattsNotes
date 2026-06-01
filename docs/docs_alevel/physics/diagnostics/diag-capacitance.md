@@ -1,8 +1,6 @@
 ---
 title: 'Capacitance -- Diagnostic Tests'
-description:
-  Diagnostic tests for parallel plate capacitors, energy storage, RC circuit charging and
-  discharging, and time constants at maximum A-Level Physics difficulty.
+description: 'A-Level Physics Capacitance -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 slug: diag-capacitance
 hide_table_of_contents: true
 ---

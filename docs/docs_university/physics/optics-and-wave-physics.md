@@ -1,10 +1,6 @@
 ---
 title: Optics and Wave Physics
-description:
-  "Comprehensive university-level notes on optics and wave physics covering the wave equation
-  derived from Maxwell's equations, electromagnetic wave propagation, interference, diffraction
-  theory, polarization, geometric optics, Fourier optics, coherence theory, laser physics, Fresnel
-  equations, dispersion, optical fibres, nonlinear optics, and computational imaging."
+description: 'University Optics and Wave Physics notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

@@ -1,8 +1,6 @@
 ---
 title: Gravitational Fields
-description:
-  "A-Level Physics notes on Gravitational Fields: 1. Newton's Law of Universal Gravitation;
-  Geometric Origin of the Inverse Square Law."
+description: 'A-Level Physics Gravitational Fields notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]

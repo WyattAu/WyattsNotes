@@ -1,8 +1,6 @@
 ---
 title: Measurements and Error Analysis
-description:
-  'A-Level Physics notes on Measurements and Error Analysis: 1. Systematic and Random Errors;
-  Systematic Errors; Random Errors; 2. Uncertainty Analysis.'
+description: 'A-Level Physics Measurements and Error Analysis notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

@@ -1,8 +1,6 @@
 ---
 title: Barriers to Growth
-description:
-  'IB Economics — poverty trap, debt, institutional failure, demographic pressures, Harrod-Domar,
-  Lewis model, dual economy.'
+description: 'IB Economics Barriers to Growth notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

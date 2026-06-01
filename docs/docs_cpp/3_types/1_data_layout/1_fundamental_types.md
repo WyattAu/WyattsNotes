@@ -1,8 +1,6 @@
 ---
 title: Fundamental Types
-description:
-  'C++: Fundamental Types — The Data Models (LP64 vs. LLP64); Data Model Comparison; The `long` Trap
-  for thorough revision and examination preparation.'
+description: 'C++ Programming Fundamental Types notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2025-12-12T04:26:41.621Z
 tags:
   - cpp

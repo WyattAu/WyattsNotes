@@ -1,9 +1,7 @@
 ---
 title: GCSE Notes
 date: 2026-04-14
-description:
-  'Rigorous qualification exam notes covering GCSE Notes. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'GCSE Intro.Md notes covering key definitions, core concepts, worked examples, and practice questions for focused study and thorough revision.'
 tags:
   - gcse
 categories:

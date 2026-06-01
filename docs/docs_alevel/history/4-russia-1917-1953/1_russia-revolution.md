@@ -8,9 +8,7 @@ tags:
 categories:
   - alevel
   - history
-description:
-  Examine Russia from the Tsarist collapse through revolution, civil war, Stalinism, purges, WWII,
-  and the origins of the Cold War.
+description: 'A-Level History Russia 1917-1953 notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 ---
 
 # Russia 1917-1953

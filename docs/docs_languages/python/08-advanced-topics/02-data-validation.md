@@ -1,8 +1,6 @@
 ---
 title: Data Validation
-description:
-  'Data Validation — Pydantic v2; BaseModel; Field Types; Automatic Type Coercion with worked
-  examples and exam-style questions.'
+description: 'Python Data Validation notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

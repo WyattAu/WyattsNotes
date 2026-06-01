@@ -1,8 +1,6 @@
 ---
 title: Cell Biology
-description:
-  'Cell Biology — Cell Structure; Cell Ultrastructure; The Fluid Mosaic Model; Membrane Transport
-  with worked examples and exam-style questions.'
+description: 'Scottish Highers Cell Biology notes covering key definitions, core concepts, worked examples, and practice questions for detailed exam preparation and revision.'
 date: 2026-04-14
 tags:
   - highers

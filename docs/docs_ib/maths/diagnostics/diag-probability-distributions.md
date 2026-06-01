@@ -1,8 +1,6 @@
 ---
 title: 'Probability Distributions -- Diagnostic Tests'
-description:
-  'Hardest IB Mathematics diagnostic tests for probability distributions covering binomial
-  conditions, normal sign errors, Poisson approximation, and linear'
+description: 'IB Maths Probability Distributions -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-probability-distributions
 hide_table_of_contents: true
 ---

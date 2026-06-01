@@ -1,8 +1,6 @@
 ---
 title: Coordination Chemistry
-description:
-  "University-level notes on Coordination Chemistry: 1. Crystal Field Theory; 1.1 Octahedral
-  and Tetrahedral Fields; 1.2 Spectrochemical Series."
+description: 'University Coordination Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -366,6 +364,16 @@ transitions ($\varepsilon \sim 1$–$100$).
 - **Magnetism:** $\mu_{\text{eff}} = \sqrt{n(n+2)}\,\mu_B$; spin-only formula for first-row metals.
 - **Stability:** Irving-Williams series; chelate effect (entropy-driven).
 - **Color:** d–d transitions (weak, $\epsilon \sim 10$) and charge transfer (strong, $\epsilon \sim 10^4$).
+
+## Worked Examples
+
+### Example 1: CFSE Calculation
+**Problem:** Calculate the crystal field stabilisation energy for [CoF6]^3- (high-spin, octahedral) and [Co(CN)6]^3- (low-spin, octahedral). Co^3+ has d^6 configuration. Delta_o for F- is 15,000 cm^-1 and for CN- is 33,000 cm^-1.
+**Solution:** High-spin [CoF6]^3-: t2g^4 eg^2. CFSE = 4(-0.4 Delta_o) + 2(0.6 Delta_o) = -1.6 + 1.2 = -0.4 Delta_o = -0.4 x 15,000 = -6,000 cm^-1 = -71.8 kJ/mol. Low-spin [Co(CN)6]^3-: t2g^6 eg^0. CFSE = 6(-0.4 Delta_o) + 0 = -2.4 Delta_o = -2.4 x 33,000 = -79,200 cm^-1 = -947.5 kJ/mol. The low-spin complex is much more stabilised.
+
+### Example 2: Isomer Counting
+**Problem:** How many geometric isomers does [Co(NH3)2(en)2]^2+ have, and how many are optically active? (en = ethylenediamine, bidentate)
+**Solution:** The bidentate ligands occupy two coordination sites each. Possible arrangements: cis and trans for the NH3 pairs relative to each other. In the cis form, the two en ligands can be arranged as fac (with N atoms on a triangular face) or mer (with N atoms in a meridian). Total geometric isomers: 3 (cis-fac, cis-mer, trans). The cis-fac and cis-mer forms are chiral (no plane of symmetry), so there are 2 pairs of enantiomers.
 
 ## Cross-References
 

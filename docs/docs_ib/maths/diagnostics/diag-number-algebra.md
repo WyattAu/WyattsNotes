@@ -1,8 +1,6 @@
 ---
 title: 'Number and Algebra -- Diagnostic Tests'
-description:
-  Hardest IB Mathematics diagnostic tests for number and algebra covering sigma notation, binomial
-  theorem, permutations, logarithms, and proof by induction.
+description: 'IB Maths Number and Algebra -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 slug: diag-number-algebra
 hide_table_of_contents: true
 ---

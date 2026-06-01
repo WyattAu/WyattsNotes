@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  In-depth guide to studying Shakespeare at A-Level, covering language, recurring themes, historical
-  context, performance history, and critical interpretation.
+description: 'A-Level English Shakespeare notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: shakespeare
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: GCSE Biology Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive GCSE Biology revision guide covering Cell Biology, Organisation, Infection and Response,
-  Bioenergetics, Homeostasis, Inheritance, Ecology, key definitions, exam tips and common mistakes.'
+description: 'GCSE Biology.Md Biology Study notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 tags:
   - gcse
   - biology
@@ -618,7 +616,7 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
 
 ---
 
-## 10. Common Mistakes
+## Common Pitfalls
 
 1. **Confusing mitosis and meiosis**: mitosis produces identical cells for growth and repair; meiosis
    produces genetically different cells for reproduction. Mix this up and you lose easy marks.
@@ -636,3 +634,21 @@ Ratio: 3 brown : 1 blue (phenotype) or 1 BB : 2 Bb : 1 bb (genotype)
    and moves against the gradient.
 7. **Using vague language in extended answers**: "the heart pumps blood" is too vague. Specify which
    chamber pumps blood where and whether it is oxygenated or deoxygenated. Precision earns marks.
+
+## Worked Examples
+
+### Example 1: Punnett Square for Cystic Fibrosis
+**Problem:** Both parents are carriers of cystic fibrosis (heterozygous, Cc). What is the probability their child will have cystic fibrosis?
+**Solution:** Cross Cc x Cc. Punnett square: C from one parent along top, C and c from other down side. Results: CC (unaffected, 25%), Cc (carrier, 50%), cc (affected, 25%). Probability of having cystic fibrosis = 25%.
+
+### Example 2: Calculating Magnification
+**Problem:** A cell measures 4.5 mm in a micrograph at 400x magnification. What is the actual size in micrometres?
+**Solution:** Actual size = image size / magnification = 4.5 mm / 400 = 0.01125 mm = 11.25 micrometres. Remember: 1 mm = 1000 micrometres.
+
+### Example 3: Interpreting a Food Chain
+**Problem:** A food chain is: grass -> rabbit -> fox. If the grass contains 10,000 kJ of energy, how much energy is available to the fox? Assume 10% energy transfer efficiency.
+**Solution:** Rabbit receives 10% of 10,000 kJ = 1,000 kJ. Fox receives 10% of 1,000 kJ = 100 kJ. The remaining 90% at each level is lost through respiration, excretion, and heat.
+
+## Summary
+
+GCSE Biology covers cell biology (structure, organelles, microscopy, mitosis, meiosis, stem cells), organisation (digestive system, circulatory system, respiratory system, nervous and endocrine systems), infection and response (pathogens, immune response, vaccination, antibiotics), bioenergetics (photosynthesis, respiration, metabolism), homeostasis (temperature, blood glucose, kidney function), inheritance (DNA, Punnett squares, genetic disorders, natural selection, genetic engineering), and ecology (ecosystems, food chains, nutrient cycles, human impact). Key exam skills include precise scientific terminology, structured answers for extended-response questions, and the ability to interpret data from graphs and tables.

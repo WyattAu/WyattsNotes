@@ -1,11 +1,6 @@
 ---
 title: Thermodynamics and Statistical Mechanics
-description:
-  'Comprehensive university-level notes on thermodynamics and statistical mechanics covering the
-  laws of thermodynamics, thermodynamic potentials and Maxwell relations, heat engines and
-  refrigerators, entropy and free energy, phase transitions, the Boltzmann distribution, partition
-  functions, quantum statistical mechanics, the grand canonical ensemble, kinetic theory, and
-  information theory.'
+description: 'University Physics Thermodynamics and Statistical Mechanics notes covering key definitions, core concepts, worked practice questions for analytical revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

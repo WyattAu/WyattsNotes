@@ -1,6 +1,6 @@
 ---
 title: Irish LC Biology
-description: 'Irish Leaving Certificate Biology revision notes for Higher and Ordinary Level'
+description: 'Irish Leaving Certificate Biology revision notes for Higher and Ordinary Level. Part of the Irish LC Biology notes for State Examination preparation.'
 date: 2026-04-14
 tags:
   - ilc

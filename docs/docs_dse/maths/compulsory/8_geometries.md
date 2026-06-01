@@ -1,8 +1,6 @@
 ---
 title: Geometries
-description:
-  'DSE Mathematics geometry notes covering 2D and 3D geometry, circle theorems, trigonometric
-  identities, vector geometry, and coordinate...'
+description: 'DSE Maths Geometries notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision and exam readiness.'
 date: 2025-06-03T16:20:00.000Z
 tags:
   - Maths

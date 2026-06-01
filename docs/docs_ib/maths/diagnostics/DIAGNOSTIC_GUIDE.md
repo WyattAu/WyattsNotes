@@ -1,8 +1,6 @@
 ---
 title: Diagnostic Test Guide
-description:
-  'Challenging IB mathematics diagnostic questions on Diagnostic Test Guide. With full worked
-  solutions and examiner commentary.'
+description: 'IB Maths Diagnostic Test notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

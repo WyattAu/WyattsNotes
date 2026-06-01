@@ -1,8 +1,6 @@
 ---
 title: Urban Environmental Quality
-description:
-  'Urban microclimates, air quality management, waste management strategies, urban sprawl, and
-  brownfield vs greenfield development for IB Geography.'
+description: 'IB Geography Urban Environmental Quality notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 slug: urban-environmental-quality
 ---
 

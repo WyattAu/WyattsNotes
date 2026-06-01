@@ -1,8 +1,6 @@
 ---
 title: 'Rotational Motion -- Diagnostic Tests'
-description:
-  'Hardest IB Physics rotational motion diagnostic tests covering torque perpendicular distance,
-  parallel axis theorem, angular momentum conservation, and'
+description: 'IB Physics Rotational Motion -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-rotational-motion
 hide_table_of_contents: true
 ---

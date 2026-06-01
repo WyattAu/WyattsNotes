@@ -1,8 +1,6 @@
 ---
 title: 'Microorganisms and Biotechnology -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on microorganisms and biotechnology within the DSE specification,
-  each with a full worked solution.
+description: 'DSE Biology Microorganisms and Biotechnology -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-microorganisms-biotechnology
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: Evolution and Ecology
-description:
-  'DSE Biology evolution and ecology notes covering natural selection, evidence for evolution,
-  population ecology, nutrient cycles, and human impact on ecosystems.'
+description: 'DSE Biology Evolution and Ecology notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE

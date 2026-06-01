@@ -1,8 +1,6 @@
 ---
 title: Cross-compilation Toolchains
-description:
-  'C++: Cross-compilation Toolchains — The Architecture of a Cross-Toolchain; 1. The Cross-Compiler;
-  2. The Sysroot; 3. The Binutils.'
+description: 'C++ Programming Cross-compilation Toolchains notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 date: 2025-12-10T05:18:46.463Z
 tags:
   - cpp

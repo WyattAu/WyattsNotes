@@ -1,8 +1,6 @@
 ---
 title: 'Plant Biology -- Diagnostic Tests'
-description:
-  'Challenging DSE biology diagnostic questions on Plant Biology -- Diagnostic Tests. With full
-  worked solutions and examiner commentary.'
+description: 'DSE Plant Biology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 slug: diag-plant-biology
 hide_table_of_contents: true
 ---

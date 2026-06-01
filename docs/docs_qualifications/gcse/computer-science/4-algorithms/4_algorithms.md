@@ -1,8 +1,6 @@
 ---
 title: Algorithms
-description:
-  'Algorithms — 1. What Is an Algorithm?; 1.2 Standard Flowchart Symbols; 2.1 Linear Search; 2.2
-  Binary Search with worked examples and exam-style questions.'
+description: 'GCSE Computer Science Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - gcse

@@ -1,8 +1,6 @@
 ---
 title: 'Differential Equations -- Diagnostic Tests'
-description:
-  'Hardest IB Mathematics diagnostic tests for differential equations covering separable equations
-  with lost solutions, integrating factor sign errors, second'
+description: 'IB Maths Differential Equations -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-differential-equations
 hide_table_of_contents: true
 ---

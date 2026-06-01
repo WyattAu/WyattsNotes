@@ -1,8 +1,6 @@
 ---
 title: Experimental Design
-description:
-  'A-Level Physics notes on Experimental Design: Independent, Dependent, and Control Variables;
-  Identifying Variables: Worked Examples; Control Variables in Depth.'
+description: 'A-Level Physics Experimental Design notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

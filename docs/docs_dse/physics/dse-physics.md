@@ -1,8 +1,6 @@
 ---
 title: DSE Physics
-description:
-  'DSE Physics overview covering the full syllabus including mechanics, waves, electricity and
-  magnetism, heat, nuclear physics, and astronomical physics.'
+description: 'DSE Physics notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision and examination preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics

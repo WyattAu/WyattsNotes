@@ -1,8 +1,6 @@
 ---
 title: GCSE Computer Science
-description:
-  'GCSE Computer Science revision notes covering fundamentals, hardware, networks, algorithms and
-  programming.'
+description: 'GCSE Computer Science notes covering key definitions, core concepts, worked examples, and practice questions for targeted learning and effective revision.'
 date: 2026-04-14
 tags:
   - gcse

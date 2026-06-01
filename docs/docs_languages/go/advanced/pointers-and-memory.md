@@ -1,8 +1,6 @@
 ---
 title: Pointers and Memory
-description:
-  'Pointers and Memory — Pointer Basics; Zero Value; Pointer Semantics; Returning Pointers to Local
-  Variables with worked examples and exam-style questions.'
+description: 'Go Pointers and Memory notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive study and examination practice.'
 slug: pointers-and-memory
 date: 2026-04-18
 tags:

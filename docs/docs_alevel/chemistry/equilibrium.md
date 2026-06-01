@@ -1,8 +1,6 @@
 ---
 title: Chemical Equilibrium
-description:
-  "A-Level Chemistry notes on Chemical Equilibrium: Dynamic Equilibrium; Le Chatelier's Principle;
-  Equilibrium Constant $K_c$; Units of $K_c$."
+description: 'A-Level Chemistry Chemical Equilibrium notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

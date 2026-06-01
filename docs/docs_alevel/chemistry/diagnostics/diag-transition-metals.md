@@ -1,8 +1,6 @@
 ---
 title: 'Transition Metals -- Diagnostic Tests'
-description:
-  Diagnostic tests for d-orbitals, complexes, colour, variable oxidation states, and catalysis at
-  the hardest A-Level Chemistry standard.
+description: 'A-Level Chemistry Transition Metals -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-transition-metals
 hide_table_of_contents: true
 ---

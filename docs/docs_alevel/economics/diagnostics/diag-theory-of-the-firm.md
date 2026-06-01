@@ -1,8 +1,6 @@
 ---
 title: 'Theory of the Firm -- Diagnostic Tests'
-description:
-  'Diagnostic tests for A-Level Economics theory of the firm: profit maximisation, costs, market
-  structures, and game theory.'
+description: 'A-Level Economics Theory of the Firm -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-theory-of-the-firm
 hide_table_of_contents: true
 ---

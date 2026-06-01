@@ -1,8 +1,6 @@
 ---
 title: AP Biology
-description:
-  'AP Biology revision notes covering chemistry of life, cell structure, cellular energetics,
-  heredity, and natural selection.'
+description: 'Qualifications AP Biology notes covering key definitions, core concepts, worked examples, and practice questions for detailed exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - ap

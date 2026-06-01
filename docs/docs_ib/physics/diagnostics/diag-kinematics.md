@@ -1,8 +1,6 @@
 ---
 title: 'Kinematics -- Diagnostic Tests'
-description:
-  'Hardest IB Physics kinematics diagnostic tests covering projectile sign conventions, non-standard
-  v-t graphs, two-stage motion, inclined plane projectiles, and'
+description: 'IB Physics Kinematics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 slug: diag-kinematics
 hide_table_of_contents: true
 ---

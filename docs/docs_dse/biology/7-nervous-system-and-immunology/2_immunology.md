@@ -1,8 +1,6 @@
 ---
 title: Immunology
-description:
-  'DSE Biology immunology notes covering pathogens, innate immunity, adaptive immunity, antibodies,
-  vaccination, memory cells, autoimmune diseases, allergies, and'
+description: 'DSE Biology Immunology notes covering key definitions, core concepts, worked examples, and practice questions for clear review and exam preparation.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

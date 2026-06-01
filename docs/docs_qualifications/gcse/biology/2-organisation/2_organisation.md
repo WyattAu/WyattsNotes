@@ -1,8 +1,6 @@
 ---
 title: Organisation
-description:
-  'Organisation — 1. The Digestive System; 1.1 Overview; 1.2 Enzymes; 1.3 Digestive Enzymes with
-  worked examples and exam-style questions.'
+description: 'GCSE Biology Organisation notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
 date: 2026-04-14
 tags:
   - gcse

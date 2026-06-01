@@ -1,8 +1,6 @@
 ---
 title: Ecology
-description:
-  'Ecology — Ecosystems; Definitions (OL/HL); Biotic and Abiotic Factors (OL/HL); Feeding
-  Relationships with worked examples and exam-style questions.'
+description: 'ILC Biology Ecology notes covering key definitions, core concepts, worked examples, and practice questions for efficient review and exam preparation.'
 date: 2026-04-14
 tags:
   - ilc

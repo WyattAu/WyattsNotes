@@ -1,9 +1,7 @@
 ---
 id: os-security
 title: OS Security
-description:
-  'OS Security — Linux Security Hardening; SSH Hardening; Fail2ban; File Permissions with worked
-  examples and exam-style questions.'
+description: 'OS Security notes covering key definitions, core concepts, worked examples, and practice questions for effective review and exam preparation.'
 slug: os-security
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z

@@ -1,8 +1,6 @@
 ---
 title: 'Functions -- Diagnostic Tests'
-description:
-  'Diagnostic tests for DSE Functions: domain restrictions, composite functions, inverse functions,
-  and graph transformations with common misconceptions.'
+description: 'DSE Maths Functions -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 slug: diag-functions
 hide_table_of_contents: true
 ---

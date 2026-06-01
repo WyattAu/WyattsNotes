@@ -1,8 +1,6 @@
 ---
 title: Exponential Distribution and Continuous Random Variables
-description:
-  'A-Level Further Maths notes on Exponential Distribution and Continuous Random Variables: Board
-  Coverage; 1. Continuous Random Variables.'
+description: 'A-Level Further Maths Exponential Distribution and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

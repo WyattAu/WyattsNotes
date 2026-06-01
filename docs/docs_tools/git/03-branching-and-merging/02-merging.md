@@ -1,8 +1,6 @@
 ---
 title: Merging
-description:
-  'Merging — The Merge Operation; What `git merge` Actually Does; The Three-Way Merge Algorithm;
-  Finding the Common Ancestor.'
+description: 'Git Merging notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and revision.'
 date: 2025-06-03T03:00:00.000Z
 tags:
   - git

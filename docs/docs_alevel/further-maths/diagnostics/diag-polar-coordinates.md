@@ -1,8 +1,6 @@
 ---
 title: 'Polar Coordinates -- Diagnostic Tests'
-description:
-  'Challenging A-Level further mathematics diagnostic questions on Polar Coordinates -- Diagnostic
-  Tests. With full worked solutions and examiner commentary.'
+description: 'A-Level Further Maths Polar Coordinates -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-polar-coordinates
 hide_table_of_contents: true
 ---

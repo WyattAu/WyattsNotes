@@ -1,8 +1,6 @@
 ---
 title: 'Paper 3 -- Mechanics -- Full Diagnostic Exam'
-description:
-  'Challenging A-Level mathematics diagnostic questions on Paper 3 -- Mechanics -- Full Diagnostic
-  Exam. With full worked solutions and examiner commentary.'
+description: 'A-Level Maths Paper 3 -- Mechanics -- Full Diagnostic Exam notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-paper-3-mechanics
 hide_table_of_contents: true
 ---

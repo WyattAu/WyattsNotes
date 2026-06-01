@@ -1,8 +1,6 @@
 ---
 title: 'Theory of Computation -- Diagnostic Tests'
-description:
-  'Diagnostic tests for A-Level CS theory of computation: finite state machines, regular
-  expressions, Turing machines, and the halting problem.'
+description: 'A-Level Computer Science Theory of Computation -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-theory-of-computation
 hide_table_of_contents: true
 ---

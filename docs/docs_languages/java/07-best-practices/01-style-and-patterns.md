@@ -1,8 +1,6 @@
 ---
 title: Style and Patterns
-description:
-  'Style and Patterns — Naming Conventions; Packages; Classes and Interfaces; Methods with worked
-  examples and exam-style questions.'
+description: 'Java Style and Patterns notes covering key definitions, core concepts, worked examples, and practice questions for detailed study and thorough revision.'
 date: 2025-06-05T16:00:00.000Z
 tags: ['java']
 categories: ['java']

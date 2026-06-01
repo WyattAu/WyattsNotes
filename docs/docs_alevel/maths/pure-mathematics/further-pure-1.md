@@ -1,9 +1,6 @@
 ---
 title: Further Pure Mathematics 1
-description:
-  'A-Level Further Mathematics notes on Further Pure 1: Board Coverage; 1. Complex Numbers; 2.
-  Matrices; 3. Further Calculus; 4. Polar Coordinates; 5. Hyperbolic Functions; 6. Proof; 7. Common
-  Mistakes.'
+description: 'A-Level Maths Further Pure Mathematics 1 notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 date: 2026-05-31
 tags:
   - Maths
@@ -345,3 +342,27 @@ A single counterexample is sufficient to disprove a universal claim.
    the $n = k + 1$ case. Simply writing the $n = k + 1$ expression is not enough.
 7. **Incorrect auxiliary equation roots.** For repeated roots, the solution is $(Ax + B)e^{mx}$, not
    $Ae^{mx} + Be^{mx}$ (which is only valid for distinct real roots).
+
+## Worked Examples
+
+### Example 1: Solving a Second Order Differential Equation
+**Problem:** Solve $\dfrac{d^2y}{dx^2} - 5\dfrac{dy}{dx} + 6y = 0$ given $y(0) = 1$ and $y'(0) = 5$.
+**Solution:** Auxiliary equation: $m^2 - 5m + 6 = 0$, giving $m = 2$ or $m = 3$ (distinct real roots).
+$$y = Ae^{2x} + Be^{3x}$$
+$y(0) = A + B = 1$. $y' = 2Ae^{2x} + 3Be^{3x}$, so $y'(0) = 2A + 3B = 5$.
+Solving: $B = 3$, $A = -2$. Solution: $y = 3e^{3x} - 2e^{2x}$.
+
+### Example 2: Polar Curve Area
+**Problem:** Find the area enclosed by one loop of the curve $r = a\sin 2\theta$.
+**Solution:** One loop is traced as $\theta$ goes from $0$ to $\pi/2$ (where $r$ returns to zero).
+$$A = \frac{1}{2}\int_0^{\pi/2} a^2\sin^2 2\theta\,d\theta = \frac{a^2}{2}\int_0^{\pi/2}\frac{1 - \cos 4\theta}{2}\,d\theta = \frac{a^2}{4}\left[\theta - \frac{\sin 4\theta}{4}\right]_0^{\pi/2} = \frac{a^2\pi}{8}$$
+
+## Common Pitfalls
+
+- **Confusing the principal argument:** For points in the third and fourth quadrants, the argument must be given as a negative angle (e.g., $-3\pi/4$, not $5\pi/4$).
+- **Matrix multiplication order:** $AB \neq BA$. When solving $A\mathbf{x} = \mathbf{b}$, compute $A^{-1}\mathbf{b}$, not $\mathbf{b}A^{-1}$.
+- **Wrong polar area formula:** Use $\frac{1}{2}\int r^2\,d\theta$, not $\int r\,d\theta$. The extra $r/2$ factor is frequently missed.
+
+## Summary
+
+Further Pure 1 covers complex numbers (modulus-argument form, de Moivre, roots of unity, loci), matrices (operations, determinants, transformations, invariants), further calculus (integration by parts, standard integrals, first and second order ODEs), polar coordinates, hyperbolic functions, and proof techniques (induction, contradiction, counterexamples). Mastery of these topics is essential before progressing to Further Pure 2.

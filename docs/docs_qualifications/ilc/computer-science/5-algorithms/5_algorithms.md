@@ -1,8 +1,6 @@
 ---
 title: Computational Thinking
-description:
-  'Computational Thinking — Decomposition (OL/HL); Pattern Recognition (OL/HL); Abstraction (OL/HL);
-  Algorithm Design (OL/HL).'
+description: 'ILC Computer Science Computational Thinking notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-04-14
 tags:
   - ilc

@@ -1,8 +1,6 @@
 ---
 title: 'Organic Chemistry -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Organic Chemistry -- Diagnostic Tests. With
-  full worked solutions and examiner commentary.'
+description: 'DSE Organic Chemistry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: diag-organic-chemistry
 hide_table_of_contents: true
 ---

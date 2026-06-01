@@ -1,8 +1,6 @@
 ---
 title: Market Failure and Government Intervention
-description:
-  'DSE Economics notes on market failure and government intervention covering externalities, public
-  goods, information asymmetry, taxation, and regulation.'
+description: 'DSE Economics Market Failure and Government Intervention notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

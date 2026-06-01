@@ -1,9 +1,6 @@
 ---
 title: Introduction to IB Notes
-description:
-  'Rigorous IB notes covering Introduction to IB Notes. Includes definitions, derivations, worked
-  examples, and exam-style problems. Covers Computer Science (HL/SL), Mathematics, and other
-  examined subjects.'
+description: 'IB Intro.Md Introduction to IB notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: /intro
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Databases
-description:
-  'University-level notes on Databases: relational model, SQL, normalization,
-  indexing, transactions, ACID, and query optimization.'
+description: 'University Computer Science Databases notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -494,6 +492,16 @@ The query planner chooses the cheapest plan based on cost estimates.
 
 7. **Cascading deletes without consideration.** Foreign key ON DELETE CASCADE can accidentally delete large amounts of data. Use it carefully, and consider soft deletes for audit trails.
 
+## Worked Examples
+
+### Example 1: SQL Query with Joins and Aggregation
+**Problem:** Given tables Students(sid, name, major_id) and Majors(mid, name, dept), write a query to find the department with the most students.
+**Solution:** SELECT m.dept, COUNT(s.sid) AS num_students FROM Majors m JOIN Students s ON m.mid = s.major_id GROUP BY m.dept ORDER BY num_students DESC LIMIT 1;
+
+### Example 2: Normalisation to 3NF
+**Problem:** A relation R(A, B, C, D, E) has functional dependencies: AB -> C, C -> D, D -> E. Normalise to 3NF.
+**Solution:** Candidate keys: {A, B}. Partial dependencies: C depends on AB (not partial). No partial dependencies (since AB is the key). Transitive dependencies: C -> D and D -> E violate 3NF (D and E do not depend on the key directly, only through C). Decompose into R1(A, B, C), R2(C, D), R3(D, E). All are in 3NF. Lossless join is guaranteed because R1 intersection R2 = {C} is a candidate key for R2.
+
 ## Summary
 
 - The **relational model** organizes data into relations with keys and foreign keys, manipulated via relational algebra.
@@ -502,3 +510,11 @@ The query planner chooses the cheapest plan based on cost estimates.
 - **Indexing** (B+ trees, hash indexes, bitmap indexes) accelerates query performance, each suited to different access patterns.
 - **Transactions** enforce ACID properties via isolation levels, 2PL, and MVCC.
 - **Query optimization** transforms logical plans using equivalence rules, selects join algorithms, and estimates costs.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Distributed Systems | [View](/docs/university/computer-science/distributed-systems) |
+| Networking | [View](/docs/university/computer-science/networking) |
+| Operating Systems | [View](/docs/university/computer-science/operating-systems) |

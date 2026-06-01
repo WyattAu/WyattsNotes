@@ -1,8 +1,6 @@
 ---
 title: Atomic Operations and Lock-Free Programming
-description:
-  'C++: Atomic Operations and Lock-Free Programming — `std::atomic<T>`; `std::atomic_ref<T>`
-  (C++20); Atomic Operations; `std::atomic_flag`.'
+description: 'C++ Programming Atomic Operations and Lock-Free Programming notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

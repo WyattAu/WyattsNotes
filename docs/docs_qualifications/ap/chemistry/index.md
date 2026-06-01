@@ -1,8 +1,6 @@
 ---
 title: AP Chemistry
-description:
-  'AP Chemistry revision notes covering atomic structure, bonding, stoichiometry, thermodynamics,
-  kinetics and equilibrium.'
+description: 'Qualifications AP Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - ap

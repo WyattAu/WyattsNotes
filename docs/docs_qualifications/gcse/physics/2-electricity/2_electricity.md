@@ -1,8 +1,6 @@
 ---
 title: Electricity
-description:
-  'Electricity — 1. Electrical Circuits; 1.1 Circuit Symbols; 1.2 Current, Potential Difference, and
-  Resistance; 1.3 What Current Actually Is.'
+description: 'GCSE Physics Electricity notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - gcse

@@ -1,8 +1,6 @@
 ---
 title: Polynomials
-description:
-  'DSE Mathematics polynomial notes covering polynomial division, factor theorem, remainder theorem,
-  roots of equations, and polynomial graphs.'
+description: 'DSE Maths Polynomials notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive review and exam preparation.'
 date: 2025-06-03T13:29:40.310Z
 tags:
   - Maths

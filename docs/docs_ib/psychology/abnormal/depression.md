@@ -1,8 +1,6 @@
 ---
 title: Depression
-description:
-  'Comprehensive coverage of biological, cognitive, and sociocultural explanations of depression,
-  treatments including SSRIs and CBT, and key research for IB'
+description: 'IB Psychology Depression notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
 slug: depression
 ---
 

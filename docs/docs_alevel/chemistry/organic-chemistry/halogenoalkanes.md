@@ -1,8 +1,6 @@
 ---
 title: Halogenoalkanes
-description:
-  'A-Level Chemistry notes on Halogenoalkanes: Classification; Nucleophilic Substitution; The SN2
-  Mechanism; The SN1 Mechanism.'
+description: 'A-Level Chemistry Halogenoalkanes notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry

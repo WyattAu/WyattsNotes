@@ -1,8 +1,6 @@
 ---
 title: 'Hyperbolic Functions -- Diagnostic Tests'
-description:
-  'A-Level Further Maths diagnostic tests for hyperbolic functions: definitions, identities,
-  calculus, inverse hyperbolic functions.'
+description: 'A-Level Further Maths Hyperbolic Functions -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-hyperbolic-functions
 hide_table_of_contents: true
 ---

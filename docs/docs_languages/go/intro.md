@@ -1,8 +1,6 @@
 ---
 title: Introduction to Go
-description:
-  'Rigorous programming language notes covering Introduction to Go. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Go Introduction to Go notes covering key definitions, core concepts, worked examples, and practice questions for focused study and examination practice.'
 slug: intro
 date: 2026-04-18
 tags:

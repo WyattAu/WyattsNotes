@@ -1,8 +1,6 @@
 ---
 title: Quantum Physics
-description:
-  "A-Level Physics notes on Quantum Physics: 1. The Photoelectric Effect; Observations; Einstein's
-  Explanation (1905); Derivation of the Photoelectric Equation."
+description: 'A-Level Quantum Physics notes covering key definitions, core concepts, worked examples, and practice questions for clear revision and exam readiness.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics

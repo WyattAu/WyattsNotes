@@ -1,8 +1,6 @@
 ---
 title: 'Statistics -- Diagnostic Tests'
-description:
-  'GCSE Maths diagnostic tests for statistics: averages from grouped data, histograms, cumulative
-  frequency, box plots, scatter graphs.'
+description: 'GCSE Maths Statistics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 slug: diag-statistics
 hide_table_of_contents: true
 ---

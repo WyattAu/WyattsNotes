@@ -1,9 +1,7 @@
 ---
 id: dse-chemistry-chemical-kinetics
 title: Chemistry - Chemical Kinetics
-description:
-  'DSE Chemistry notes covering rate of reaction, measuring rates, factors affecting rate, collision
-  theory, activation energy, Maxwell-Boltzmann distribution,'
+description: 'DSE Chemistry - Chemical Kinetics notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
 slug: chemical-kinetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]

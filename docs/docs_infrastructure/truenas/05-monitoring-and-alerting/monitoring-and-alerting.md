@@ -1,9 +1,7 @@
 ---
 id: monitoring-and-alerting
 title: Monitoring and Alerting
-description:
-  'Monitoring and Alerting — TrueNAS Built-in Monitoring; Dashboard; System Information; SMART Tests
-  with worked examples and exam-style questions.'
+description: 'Monitoring and Alerting notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and mastery.'
 slug: monitoring-and-alerting
 ---
 
@@ -845,8 +843,7 @@ groups:
           severity: warning
         annotations:
           summary: 'ZFS pool {{ $labels.pool }} is above 85% capacity'
-          description:
-            'Pool {{ $labels.pool }} is using {{ $value | humanizePercentage }} of its capacity.'
+description: 'Monitoring and Alerting notes covering key definitions, core concepts, worked examples, and practice questions for complete exam preparation and mastery.'
 ```
 
 ## Log Analysis Deep Dive

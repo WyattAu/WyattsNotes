@@ -1,10 +1,7 @@
 ---
 title: CBSE Physics Study Guide
 date: 2026-05-31
-description:
-  'Comprehensive CBSE Class 11-12 Physics study guide covering Mechanics, Thermodynamics, Electrostatics,
-  Current Electricity, Magnetism and EMI, Optics, Modern Physics. Includes key equations, exam tips,
-  and common mistakes.'
+description: 'Qualifications Physics.Md CBSE Physics Study notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 tags:
   - cbse
   - physics
@@ -382,7 +379,7 @@ where $\phi = h\nu_0$ is the work function and $\nu_0$ is the threshold frequenc
 
 ---
 
-## 10. Common Mistakes
+## Common Pitfalls
 
 1. **Forgetting to convert units.** Using cm instead of m, or grams instead of kg, throws off the
    entire calculation.
@@ -398,3 +395,21 @@ where $\phi = h\nu_0$ is the work function and $\nu_0$ is the threshold frequenc
    field strength (A/m). In most CBSE problems, $B$ is what is used.
 7. **Writing "heat is lost" instead of specifying the mechanism.** In thermodynamics, distinguish
    between heat transfer by conduction, convection, and radiation.
+
+## Worked Examples
+
+### Example 1: Kirchhoff's Laws Problem
+**Problem:** Two cells of emf 2V (internal resistance 0.5 ohm) and 4V (internal resistance 1 ohm) are connected in parallel across a 5 ohm external resistor. Find the current through each cell.
+**Solution:** Let I1 flow from the 2V cell and I2 from the 4V cell. By Kirchhoff's junction rule: I1 + I2 = I (current through 5 ohm resistor). Loop equation for 2V cell: 2 - 0.5I1 = 5(I1 + I2). Loop equation for 4V cell: 4 - I2 = 5(I1 + I2). From second equation: 4 - I2 = 5I1 + 5I2 => 4 = 5I1 + 6I2. From first: 2 - 0.5I1 = 5I1 + 5I2 => 2 = 5.5I1 + 5I2. Subtracting: 2 = -0.5I1 + I2 => I2 = 2 + 0.5I1. Substituting into 4 = 5I1 + 6(2 + 0.5I1) = 5I1 + 12 + 3I1 = 8I1 + 12. So 8I1 = -8, I1 = -1A. The 2V cell is being charged. I2 = 2 + 0.5(-1) = 1.5A. Current through 5 ohm: 0.5A.
+
+### Example 2: Young's Double Slit Calculation
+**Problem:** Light of wavelength 600 nm passes through double slits separated by 0.1 mm. The screen is 1.5 m away. Find the fringe width.
+**Solution:** Fringe width beta = lambda * D / d = (600 x 10^-9)(1.5) / (0.1 x 10^-3) = 9 x 10^-3 m = 9 mm. The bright fringes are 9 mm apart.
+
+### Example 3: Photoelectric Effect
+**Problem:** Light of wavelength 400 nm falls on a metal with work function 2.0 eV. Find the maximum kinetic energy of emitted photoelectrons. (h = 6.63 x 10^-34 J s, c = 3 x 10^8 m/s, 1 eV = 1.6 x 10^-19 J)
+**Solution:** E_photon = hc/lambda = (6.63 x 10^-34)(3 x 10^8) / (400 x 10^-9) = 4.97 x 10^-19 J = 3.11 eV. K_max = E_photon - phi = 3.11 - 2.0 = 1.11 eV. Since K_max > 0, photoelectrons are emitted.
+
+## Summary
+
+CBSE Physics covers mechanics (Newton's laws, work-energy, rotational motion, gravitation, fluids), thermodynamics (laws, kinetic theory), electrostatics (Coulomb's law, Gauss's law, capacitance), current electricity (Ohm's law, Kirchhoff's laws, Wheatstone bridge), magnetism and electromagnetic induction (Biot-Savart, Faraday's law, AC circuits), optics (reflection, refraction, wave optics), and modern physics (photoelectric effect, atomic structure, nuclear physics, semiconductors). The theory paper is 70 marks and practicals are 30 marks. Key exam strategies include drawing diagrams, using SI units consistently, showing dimensional analysis checks, and practising NCERT exemplar numericals.

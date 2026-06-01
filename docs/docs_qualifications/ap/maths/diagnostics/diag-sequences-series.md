@@ -1,8 +1,6 @@
 ---
 title: 'Sequences and Series -- Diagnostic Tests [BC Only]'
-description:
-  'Diagnostic tests targeting the hardest AP Calculus BC sequence and series questions including
-  convergence tests, Taylor series, power series, Lagrange error'
+description: 'Qualifications Maths Sequences and Series -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap

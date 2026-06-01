@@ -1,8 +1,6 @@
 ---
 title: Cognitive Development
-description:
-  "Comprehensive coverage of Piaget's stages, Vygotsky's sociocultural theory, theory of mind, moral
-  development, brain development, and key research for IB"
+description: 'IB Psychology Cognitive Development notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 slug: cognitive-development
 ---
 

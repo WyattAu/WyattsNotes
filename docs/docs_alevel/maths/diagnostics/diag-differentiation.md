@@ -1,8 +1,6 @@
 ---
 title: 'Differentiation -- Diagnostic Tests'
-description:
-  'Hard diagnostic tests for differentiation covering chain rule depth, implicit differentiation
-  pitfalls, second derivative notation, and parametric methods at'
+description: 'A-Level Maths Differentiation -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-differentiation
 hide_table_of_contents: true
 ---

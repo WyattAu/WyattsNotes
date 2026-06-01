@@ -1,8 +1,6 @@
 ---
 title: 'Atomic Structure and Atomic Theory -- Diagnostic Tests'
-description:
-  'Diagnostic tests for IB Chemistry atomic structure: electron configuration, quantum numbers,
-  periodic trends, and isotopic calculations.'
+description: 'IB Chemistry Atomic Structure and Atomic Theory -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-atomic-structure
 hide_table_of_contents: true
 ---

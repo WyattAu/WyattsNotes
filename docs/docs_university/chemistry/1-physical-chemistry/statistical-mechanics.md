@@ -1,8 +1,6 @@
 ---
 title: Statistical Mechanics
-description:
-  "University-level notes on Statistical Mechanics: 1. Microstates and Macrostates; 1.1
-  Microcanonical Ensemble; 1.2 Boltzmann Distribution."
+description: 'University Chemistry Statistical Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -435,6 +433,16 @@ leading to critical opalescence.
   high $T$ and low density.
 - **Equipartition:** Each quadratic degree of freedom contributes $\frac{1}{2}k_BT$; fails for
   quantum regime.
+
+## Worked Examples
+
+### Example 1: Calculating Entropy of an Ideal Gas
+**Problem:** Calculate the molar entropy of neon (Ne, monatomic, M = 20.18 g/mol) at 298 K and 1 atm using the Sackur-Tetrode equation.
+**Solution:** S = R[ln((2pi m k_B T/h^2)^(3/2) * (k_B T/P) * e^(5/2))]. With standard values, m = 20.18 x 10^-3 / 6.022e23 = 3.35 x 10^-26 kg. After substitution: S_m = 146.2 J K^-1 mol^-1 (literature value: 146.3 J K^-1 mol^-1).
+
+### Example 2: Boltzmann Distribution for a Two-Level System
+**Problem:** A molecule has two energy levels: epsilon_0 = 0 and epsilon_1 = 5.0 x 10^-21 J. At T = 300 K, calculate the fraction of molecules in the excited state.
+**Solution:** Boltzmann factor = exp(-epsilon_1/k_B T) = exp(-5.0e-21/(1.38e-23 x 300)) = exp(-1.208) = 0.299. Fraction in excited state = 0.299/(1 + 0.299) = 0.230 or 23.0%.
 
 ## Cross-References
 

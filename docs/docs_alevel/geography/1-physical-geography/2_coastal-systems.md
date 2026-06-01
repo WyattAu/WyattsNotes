@@ -3,9 +3,7 @@ title: Coastal Systems and Landscapes
 date: 2026-05-21
 tags: [alevel, alevel-geography]
 categories: [alevel, geography, physical-geography]
-description:
-  Waves, erosion, transportation, deposition, coastal landforms, and coastal management strategies
-  with real-world case studies.
+description: 'A-Level Geography Coastal Systems and Landscapes notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 ---
 
 # Coastal Systems and Landscapes

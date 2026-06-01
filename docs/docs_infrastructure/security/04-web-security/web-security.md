@@ -1,9 +1,7 @@
 ---
 id: web-security
 title: Web Security
-description:
-  'Web Security — OWASP Top 10 (2021); Cross-Site Scripting (XSS); Types of XSS; Reflected XSS with
-  worked examples and exam-style questions.'
+description: 'Web Security notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
 slug: web-security
 sidebar_position: 5
 ---

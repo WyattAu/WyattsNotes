@@ -1,8 +1,6 @@
 ---
 title: Channels and Concurrency Patterns
-description:
-  'Channels and Concurrency Patterns — Channel Review; Select; Select with Default; Select Timeout
-  with worked examples and exam-style questions.'
+description: 'Go Channels and Concurrency Patterns notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 slug: channels
 date: 2026-04-18
 tags:

@@ -1,8 +1,6 @@
 ---
 title: Derivatives
-description:
-  'Derivatives — The Derivative as a Limit (CED Unit 2); Interpretations of the Derivative;
-  Differentiability and Continuity; Where Differentiability Fails.'
+description: 'Qualifications Maths Derivatives notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-14
 tags:
   - ap

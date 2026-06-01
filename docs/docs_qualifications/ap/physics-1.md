@@ -1,7 +1,6 @@
 ---
 title: AP Physics 1 Study Guide
-description:
-  'AP Physics 1 study guide covering kinematics, dynamics, work and energy, momentum, rotational motion, oscillations, key equations, and exam tips.'
+description: 'Qualifications Physics 1.Md AP Physics 1 Study notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-05-31
 tags:
   - ap

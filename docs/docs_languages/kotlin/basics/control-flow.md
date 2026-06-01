@@ -1,8 +1,6 @@
 ---
 title: Control Flow
-description:
-  'Control Flow — if/else as Expression; when Expression; Basic Matching; Exhaustiveness with worked
-  examples and exam-style questions.'
+description: 'Kotlin Control Flow notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
 slug: control-flow
 date: 2026-04-18
 tags:

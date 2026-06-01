@@ -1,8 +1,6 @@
 ---
 title: Operator Overloading
-description:
-  'C++: Operator Overloading — Complete List of Overloadable Operators; Non-Overloadable Operators;
-  4.2 Member vs Non-Member Overloads.'
+description: 'C++ Programming Operator Overloading notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -1,8 +1,6 @@
 ---
 title: 'Electromagnetism Unification -- Diagnostic Tests'
-description:
-  "Diagnostic tests for Maxwell's equations context, electromagnetic wave properties, Faraday's and
-  Lenz's laws, and EM wave applications at maximum A-Level"
+description: 'A-Level Physics Electromagnetism Unification -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-electromagnetism-unification
 hide_table_of_contents: true
 ---

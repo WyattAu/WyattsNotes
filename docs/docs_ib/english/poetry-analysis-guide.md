@@ -4,9 +4,7 @@ tags:
   - IB
   - English
 slug: poetry-analysis-guide
-description:
-  'Rigorous IB English notes covering Poetry Analysis Guide for IB English. Includes definitions,
-  derivations, worked examples, and exam-style problems. Baccalaureate.'
+description: 'IB Poetry Analysis Guide for IB English notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 ---
 
 # Poetry Analysis Guide for IB English

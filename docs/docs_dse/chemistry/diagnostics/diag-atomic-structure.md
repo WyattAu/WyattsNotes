@@ -1,8 +1,6 @@
 ---
 title: 'Atomic Structure -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Atomic Structure -- Diagnostic Tests. With full
-  worked solutions and examiner commentary.'
+description: 'DSE Chemistry Atomic Structure -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-atomic-structure
 hide_table_of_contents: true
 ---

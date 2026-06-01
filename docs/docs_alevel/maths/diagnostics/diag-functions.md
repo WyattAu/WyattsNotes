@@ -1,8 +1,6 @@
 ---
 title: 'Functions -- Diagnostic Tests'
-description:
-  Hard diagnostic tests for functions covering domain restrictions, inverse functions, composite
-  functions, even/odd properties, and graphical transformations.
+description: 'A-Level Maths Functions -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 slug: diag-functions
 hide_table_of_contents: true
 ---

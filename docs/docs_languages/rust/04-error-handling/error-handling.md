@@ -1,9 +1,7 @@
 ---
 id: error-handling
 title: Error Handling
-description:
-  'Error Handling — Panic vs Result; Panics; Stack Unwinding vs Abort; `std::panic::catch_unwind`
-  with worked examples and exam-style questions.'
+description: 'Rust Error Handling notes covering key definitions, core concepts, worked examples, and practice questions for effective revision and exam readiness.'
 slug: error-handling
 ---
 

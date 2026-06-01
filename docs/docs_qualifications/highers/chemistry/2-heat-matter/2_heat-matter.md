@@ -1,8 +1,6 @@
 ---
 title: Energy and Matter
-description:
-  "Energy and Matter — Higher Energetics; Enthalpy Changes; Types of Enthalpy Change; Hess's Law
-  with worked examples and exam-style questions."
+description: 'Scottish Highers Chemistry Energy and Matter notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-04-14
 tags:
   - highers

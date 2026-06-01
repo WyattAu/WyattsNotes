@@ -1,8 +1,6 @@
 ---
 title: Anxiety Disorders
-description:
-  'Comprehensive coverage of phobias, OCD, biological, behavioural, and cognitive explanations,
-  treatments, and key research for IB Psychology.'
+description: 'IB Psychology Anxiety Disorders notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 slug: anxiety-disorders
 ---
 

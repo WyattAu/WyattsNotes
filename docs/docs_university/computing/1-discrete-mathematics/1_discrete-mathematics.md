@@ -1,8 +1,6 @@
 ---
 title: Discrete Mathematics
-description:
-  'University-level notes on Discrete Mathematics: 1. Propositional and Predicate Logic; 1.1
-  Propositional Logic; 1.2 Predicate Logic.'
+description: 'University Computing Discrete Mathematics notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Computing

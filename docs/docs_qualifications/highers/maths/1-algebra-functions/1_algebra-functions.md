@@ -1,8 +1,6 @@
 ---
 title: Algebra and Calculus
-description:
-  'SQA Higher Mathematics: Algebra and Calculus — Higher Algebra; Functions and Notation; Quadratic
-  Functions; Domain and Range:.'
+description: 'Scottish Highers Maths Algebra and Calculus notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-04-14
 tags:
   - highers

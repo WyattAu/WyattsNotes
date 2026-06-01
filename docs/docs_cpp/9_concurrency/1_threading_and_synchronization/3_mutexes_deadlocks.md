@@ -1,8 +1,6 @@
 ---
 title: Mutexes, Shared Locks, and Deadlock Prevention
-description:
-  'C++: Mutexes, Shared Locks, and Deadlock Prevention — `std::mutex`; Implementation: POSIX
-  `pthread_mutex_t`; Uncontended vs Contended Lock Performance.'
+description: 'C++ Programming Mutexes, Shared Locks, and Deadlock notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

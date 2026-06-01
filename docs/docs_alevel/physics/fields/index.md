@@ -1,9 +1,7 @@
 ---
 sidebar_label: Fields
 sidebar_position: 4
-description:
-  'Rigorous A-Level physics notes covering Fields. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'A-Level Physics Fields notes covering key definitions, core concepts, worked examples, and practice questions for detailed learning and effective revision.'
 ---
 
 # Fields

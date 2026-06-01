@@ -1,8 +1,6 @@
 ---
 title: Conflict Resolution
-description:
-  'Conflict Resolution — Understanding Conflicts; When Conflicts Occur; Conflict Markers; Multi-Base
-  Conflicts with worked examples and exam-style questions.'
+description: 'Git Conflict Resolution notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 date: 2025-06-03T05:00:00.000Z
 tags:
   - git

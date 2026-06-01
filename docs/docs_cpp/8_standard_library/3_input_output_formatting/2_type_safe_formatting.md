@@ -1,8 +1,6 @@
 ---
 title: Type-Safe Formatting (std::format, std::print)
-description:
-  'Rigorous C++ programming notes on Type Rigorous treatment with definitions, proofs, worked
-  examples, and exam questions.'
+description: 'C++ Programming Type-Safe Formatting (std::format, notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

@@ -1,8 +1,6 @@
 ---
 title: IB Geography
-description:
-  'Rigorous IB geography notes covering IB Geography. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Geography notes covering key definitions, core concepts, worked examples, and practice questions for clear review and exam preparation.'
 slug: geography
 ---
 

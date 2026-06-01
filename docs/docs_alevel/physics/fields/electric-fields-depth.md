@@ -1,8 +1,6 @@
 ---
 title: Electric Fields
-description:
-  "A-Level Physics notes on Electric Fields: 1. Coulomb's Law; Superposition Principle; Comparison
-  with Gravitational Force; 2. Electric Field Strength."
+description: 'A-Level Physics Electric Fields notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]

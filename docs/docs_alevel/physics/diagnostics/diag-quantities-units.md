@@ -1,8 +1,6 @@
 ---
 title: 'Quantities and Units -- Diagnostic Tests'
-description:
-  Diagnostic tests for SI units, dimensional analysis, uncertainty propagation, and significant
-  figures at the hardest A-Level Physics standard.
+description: 'A-Level Physics Quantities and Units -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-quantities-units
 hide_table_of_contents: true
 ---

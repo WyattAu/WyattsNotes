@@ -1,8 +1,6 @@
 ---
 title: Classes and Inheritance
-description:
-  'Classes and Inheritance — Class Declaration; Constructors; No-Arg Constructor; Parameterized
-  Constructor with worked examples and exam-style questions.'
+description: 'Java Classes and Inheritance notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
 date: 2025-06-05T12:00:00.000Z
 tags: ['java']
 categories: ['java']

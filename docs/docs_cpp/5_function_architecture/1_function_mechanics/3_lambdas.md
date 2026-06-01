@@ -1,8 +1,6 @@
 ---
 title: Lambda Expressions — Capture Layouts and Closure Types
-description:
-  'C++: Lambda Expressions — Capture Layouts and Closure Types — Lambda Expressions: Capture Layouts
-  and Closure Types; 3.1 Syntax and Structure [N4950 §8.1.5].'
+description: 'C++ Programming Lambda Expressions — Capture Layouts and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

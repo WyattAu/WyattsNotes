@@ -1,9 +1,7 @@
 ---
 id: ssh
 title: SSH
-description:
-  'SSH — Transport Layer; Authentication Layer; Connection Layer; Client Configuration with worked
-  examples and exam-style questions.'
+description: 'SSH notes covering key definitions, core concepts, worked examples, and practice questions for clear study and thorough revision.'
 slug: ssh
 sidebar_position: 2
 ---

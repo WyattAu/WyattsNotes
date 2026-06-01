@@ -1,8 +1,6 @@
 ---
 title: 'Wave Properties -- Diagnostic Tests'
-description:
-  'Hardest IB Physics wave properties diagnostic tests covering intensity-amplitude relationship, EM
-  spectrum wave speed, string wave speed derivation, and'
+description: 'IB Physics Wave Properties -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 slug: diag-wave-properties
 hide_table_of_contents: true
 ---

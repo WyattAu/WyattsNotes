@@ -1,9 +1,7 @@
 ---
 id: transactions
 title: Transactions and Concurrency
-description:
-  'Transactions and Concurrency — ACID Properties; Atomicity; Consistency; Isolation with worked
-  examples and exam-style questions.'
+description: 'Transactions and Concurrency notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 slug: transactions
 sidebar_position: 1
 tags:

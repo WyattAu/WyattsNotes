@@ -1,10 +1,6 @@
 ---
 title: Solid State Physics
-description:
-  'Comprehensive university-level notes on solid state physics covering crystal structures and
-  Bravais lattices, the reciprocal lattice, diffraction, lattice vibrations and phonons, electronic
-  band structure, semiconductor physics, superconductivity, transport properties, crystal defects,
-  magnetism in solids, topological insulators, and many-body physics.'
+description: 'University Solid State Physics notes covering key definitions, core concepts, worked examples, and practice questions for clear study and examination practice.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics

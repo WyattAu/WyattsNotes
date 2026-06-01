@@ -1,8 +1,6 @@
 ---
 title: Economics
-description:
-  'A-Level Economics notes on Economics: Board Coverage; Course Structure; Assessment; How to Use
-  These Notes with worked examples and exam-style questions.'
+description: 'A-Level Economics notes covering key definitions, core concepts, worked examples, and practice questions for detailed study and thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

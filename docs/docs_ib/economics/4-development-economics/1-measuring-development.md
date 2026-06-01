@@ -1,6 +1,6 @@
 ---
 title: Measuring Development
-description: 'IB Economics — GDP, HDI, Gini coefficient, Lorenz curve, composite indicators.'
+description: 'IB Economics — GDP, HDI, Gini coefficient, Lorenz curve, composite indicators. Aligned with the IB Economics HL/SL syllabus for Paper 1 and Paper 2 examination.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

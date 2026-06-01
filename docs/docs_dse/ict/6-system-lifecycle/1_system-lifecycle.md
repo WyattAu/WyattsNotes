@@ -1,8 +1,6 @@
 ---
 title: System Lifecycle
-description:
-  'DSE ICT notes on the system development lifecycle covering analysis, design, implementation,
-  testing, documentation, evaluation, maintenance, feasibility'
+description: 'DSE Ict System Lifecycle notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and mastery.'
 date: 2026-04-08T00:00:00.000Z
 tags:
   - DSE

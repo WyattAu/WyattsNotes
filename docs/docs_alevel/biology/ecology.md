@@ -1,8 +1,6 @@
 ---
 title: Ecology
-description:
-  'A-Level Biology notes on Ecology: 1. Ecosystems; 1.1 Definitions; 1.2 Trophic Levels; 1.3
-  Ecological Productivity with worked examples and exam-style questions.'
+description: 'A-Level Biology Ecology notes covering key definitions, core concepts, worked examples, and practice questions for methodical learning and effective revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

@@ -1,8 +1,6 @@
 ---
 title: Chemical Kinetics
-description:
-  'A-Level Chemistry notes on Chemical Kinetics: Rate of Reaction; Methods of Measuring Rate;
-  Collision Theory; Activation Energy ($E_a$).'
+description: 'A-Level Chemistry Chemical Kinetics notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry

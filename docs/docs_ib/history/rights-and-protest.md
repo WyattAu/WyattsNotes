@@ -6,7 +6,7 @@ tags:
   - IB History
 categories:
   - IB History
-description: IB History guide to the Rights and Protest prescribed topic. Covers civil rights in the USA 1954-1965, apartheid South Africa, and Indigenous rights movements, with key figures, events, and historiographical debates for Paper 2.
+description: IB History guide to the Rights and Protest prescribed topic. Covers civil rights in the USA 1954-1965, apartheid South Africa, and Indigenous rights.
 ---
 
 # Rights and Protest

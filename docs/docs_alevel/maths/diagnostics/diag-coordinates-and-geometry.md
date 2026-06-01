@@ -1,8 +1,6 @@
 ---
 title: 'Coordinates and Geometry -- Diagnostic Tests'
-description:
-  Hard diagnostic tests for coordinate geometry covering circle-line intersection, three-point
-  circles, vector equations, and transformation matrices.
+description: 'A-Level Maths Coordinates and Geometry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-coordinates-and-geometry
 hide_table_of_contents: true
 ---

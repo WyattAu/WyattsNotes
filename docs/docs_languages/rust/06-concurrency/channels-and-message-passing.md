@@ -1,9 +1,7 @@
 ---
 id: channels-and-message-passing
 title: Channels and Message Passing
-description:
-  'Channels and Message Passing — Channel Fundamentals; Channel Categories; `std::sync::mpsc`; Basic
-  Usage with worked examples and exam-style questions.'
+description: 'Rust Channels and Message Passing notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: channels-and-message-passing
 ---
 

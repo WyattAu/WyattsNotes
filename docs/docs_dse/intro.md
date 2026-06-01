@@ -1,9 +1,7 @@
 ---
 id: intro
 title: Introduction to DSE
-description:
-  'Rigorous DSE notes covering Introduction to DSE. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'DSE Intro.Md Introduction to DSE notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: intro
 sidebar_position: 1
 date: 2025-05-15T22:45:51.828Z

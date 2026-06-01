@@ -1,8 +1,6 @@
 ---
 title: 'Quadratics -- Diagnostic Tests'
-description:
-  Hard diagnostic tests for quadratics covering discriminant analysis, hidden quadratics, Vieta's
-  formulas, simultaneous equations, and non-standard forms.
+description: 'A-Level Maths Quadratics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 slug: diag-quadratics
 hide_table_of_contents: true
 ---

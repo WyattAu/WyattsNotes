@@ -1,8 +1,6 @@
 ---
 title: 'Sequences and Series -- Diagnostic Tests'
-description:
-  'Diagnostic tests for DSE Sequences and Series: arithmetic and geometric progressions, sigma
-  notation, convergence, and recurrence relations.'
+description: 'DSE Maths Sequences and Series -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-sequences-series
 hide_table_of_contents: true
 ---

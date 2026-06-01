@@ -1,8 +1,6 @@
 ---
 title: GCSE Biology
-description:
-  'GCSE Biology revision notes covering cell biology, organisation, bioenergetics, inheritance,
-  ecology and more.'
+description: 'GCSE Biology notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
 date: 2026-04-14
 tags:
   - gcse

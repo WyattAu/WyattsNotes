@@ -1,8 +1,6 @@
 ---
 title: Genetics and DNA
-description:
-  'A-Level Biology notes on Genetics and DNA: 1. DNA Structure and Replication; 1.1 The Structure of
-  DNA; 1.2 DNA Replication; 2. Protein Synthesis.'
+description: 'A-Level Biology Genetics and DNA notes covering key definitions, core concepts, worked examples, and practice questions for focused review and exam preparation.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

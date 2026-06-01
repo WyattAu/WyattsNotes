@@ -1,8 +1,6 @@
 ---
 title: Permutations and Combinations
-description:
-  'DSE Mathematics notes on permutations and combinations covering factorial notation, arrangement
-  problems, selection problems, and the binomial expansion.'
+description: 'DSE Maths Permutations and Combinations notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

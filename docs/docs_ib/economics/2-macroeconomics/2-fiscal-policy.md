@@ -1,7 +1,6 @@
 ---
 title: Fiscal Policy
-description:
-  'IB Economics — government spending, taxation, budget deficits, crowding out, fiscal rules.'
+description: 'IB Economics Fiscal Policy notes covering key definitions, core concepts, worked examples, and practice questions for complete study and examination practice.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

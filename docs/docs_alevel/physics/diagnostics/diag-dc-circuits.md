@@ -1,8 +1,6 @@
 ---
 title: 'DC Circuits -- Diagnostic Tests'
-description:
-  Diagnostic tests for Kirchhoff's laws, internal resistance, potential dividers, and Thevenin
-  equivalent circuits at maximum A-Level Physics difficulty.
+description: 'A-Level Physics DC Circuits -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 slug: diag-dc-circuits
 hide_table_of_contents: true
 ---

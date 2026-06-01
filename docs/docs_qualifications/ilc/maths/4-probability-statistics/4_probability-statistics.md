@@ -1,8 +1,6 @@
 ---
 title: Probability and Statistics
-description:
-  'Probability and Statistics — Counting Principles; Fundamental Counting Principle (OL/HL);
-  Permutations (OL/HL); Combinations (OL/HL).'
+description: 'ILC Maths Probability and Statistics notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 date: 2026-04-14
 tags:
   - ilc

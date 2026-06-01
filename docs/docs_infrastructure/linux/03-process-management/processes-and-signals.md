@@ -1,9 +1,7 @@
 ---
 id: processes-and-signals
 title: Processes and Signals
-description:
-  'Processes and Signals — Process Lifecycle; Creating Processes: `fork`, `exec`, `wait`; `fork(2)`;
-  `execve(2)` with worked examples and exam-style questions.'
+description: 'Processes and Signals notes covering key definitions, core concepts, worked examples, and practice questions for focused learning and effective revision.'
 slug: processes-and-signals
 sidebar_position: 1
 ---

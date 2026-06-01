@@ -1,9 +1,7 @@
 ---
 id: tls-internals
 title: TLS Internals
-description:
-  'TLS Internals — TLS Architecture; Record Layer; Handshake Protocol; Alert Protocol with worked
-  examples and exam-style questions.'
+description: 'TLS Internals notes covering key definitions, core concepts, worked examples, and practice questions for efficient exam preparation and mastery.'
 slug: tls-internals
 tags:
   - Networking

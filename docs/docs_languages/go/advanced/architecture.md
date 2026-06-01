@@ -6,7 +6,7 @@ tags:
   - Go
 categories:
   - Go
-description: Go project architecture and best practices. Directory layout, package structure, dependency management, interface design, layered architecture, and the standard Go project layout.
+description: Go project architecture and best practices. Directory layout, package structure, dependency management, interface design, layered architecture, and the.
 ---
 
 ## Standard Go Project Layout

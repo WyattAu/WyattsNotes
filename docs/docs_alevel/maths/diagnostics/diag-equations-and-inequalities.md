@@ -1,8 +1,6 @@
 ---
 title: 'Equations and Inequalities -- Diagnostic Tests'
-description:
-  Hard diagnostic tests for equations and inequalities covering modulus functions, rational
-  inequalities, simultaneous systems, and hidden constraints at A-Level.
+description: 'A-Level Maths Equations and Inequalities -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-equations-and-inequalities
 hide_table_of_contents: true
 ---

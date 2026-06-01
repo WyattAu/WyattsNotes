@@ -1,7 +1,6 @@
 ---
 title: Exchange Rates
-description:
-  'IB Economics — exchange rate systems, determination, floating and fixed rates, currency crises.'
+description: 'IB Economics Exchange Rates notes covering key definitions, core concepts, worked examples, and practice questions for effective revision and exam readiness.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

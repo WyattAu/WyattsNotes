@@ -1,8 +1,6 @@
 ---
 title: Development Enviroment
-description:
-  'Development Enviroment — Virtual Devices; Physical Devices; Compiling and Running; Project
-  Structure with worked examples and exam-style questions.'
+description: 'Dart Development Enviroment notes covering key definitions, core concepts, worked examples, and practice questions for complete study and examination practice.'
 date: 2025-07-13T19:11:38.762Z
 tags:
   - dart

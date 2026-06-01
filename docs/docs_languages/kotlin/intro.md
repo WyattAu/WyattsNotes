@@ -1,8 +1,6 @@
 ---
 title: Introduction to Kotlin
-description:
-  'Rigorous programming language notes covering Introduction to Kotlin. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'Kotlin Introduction to Kotlin notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 slug: intro
 date: 2026-04-18
 tags:

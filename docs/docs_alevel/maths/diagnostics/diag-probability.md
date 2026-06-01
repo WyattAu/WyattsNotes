@@ -1,8 +1,6 @@
 ---
 title: 'Probability -- Diagnostic Tests'
-description:
-  'Rigorous diagnostic tests for probability covering independence, conditional probability, Venn
-  diagrams, tree diagrams, and probability distributions at'
+description: 'A-Level Maths Probability -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-probability
 hide_table_of_contents: true
 ---

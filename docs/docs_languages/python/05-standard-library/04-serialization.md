@@ -1,9 +1,7 @@
 ---
 id: serialization
 title: Serialization and Data Formats
-description:
-  'Serialization and Data Formats — JSON; Encoding and Decoding; Serialize to string; Deserialize
-  from string with worked examples and exam-style questions.'
+description: 'Python Serialization and Data Formats notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: serialization
 ---
 

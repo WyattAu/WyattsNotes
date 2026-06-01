@@ -1,8 +1,6 @@
 ---
 title: Limits and Continuity
-description:
-  'Limits and Continuity — Intuitive Notion of a Limit (CED Unit 1); Left-Hand and Right-Hand
-  Limits; Common Limits; The Squeeze Theorem.'
+description: 'Qualifications Maths Limits and Continuity notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2026-04-14
 tags:
   - ap

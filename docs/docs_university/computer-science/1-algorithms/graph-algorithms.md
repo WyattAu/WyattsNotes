@@ -1,8 +1,6 @@
 ---
 title: Graph Algorithms
-description:
-  'University-level notes on Graph Algorithms: BFS, DFS, shortest paths, minimum spanning
-  trees, network flow, strongly connected components, and bipartite matching.'
+description: 'University Computer Science Graph Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Computer Science
@@ -478,6 +476,16 @@ where $N(S)$ is the set of neighbors of $S$ in $R$.
 
 7. **Not handling self-loops and parallel edges in MST algorithms.** Kruskal naturally handles them (sort includes all edges), but Prim may need adjustment depending on the adjacency representation.
 
+## Worked Examples
+
+### Example 1: Dijkstra's Shortest Path
+**Problem:** Find the shortest path from node A to all other nodes in a graph with edges: A->B(4), A->C(2), B->D(3), B->E(1), C->B(1), C->D(5), D->E(2).
+**Solution:** Initial: dist(A)=0, dist(B)=inf, dist(C)=inf, dist(D)=inf, dist(E)=inf. Process A: dist(B)=4, dist(C)=2. Process C: dist(B)=min(4, 2+1)=3, dist(D)=min(inf, 2+5)=7. Process B: dist(D)=min(7, 3+3)=6, dist(E)=min(inf, 3+1)=4. Process E: dist(D)=min(6, 4+2)=6. Process D: no improvement. Final: A=0, C=2, B=3, E=4, D=6. Path to E: A->C->B->E (length 4).
+
+### Example 2: Topological Sort
+**Problem:** Given a DAG with edges: A->B, A->C, B->D, C->D, D->E. Find a valid topological ordering.
+**Solution:** Using Kahn's algorithm: in-degrees: A=0, B=1, C=1, D=2, E=1. Queue: [A]. Process A: remove edges to B, C. Queue: [B, C]. Process B: remove edge to D (in-degree D becomes 1). Process C: remove edge to D (in-degree D becomes 0). Queue: [D]. Process D: remove edge to E. Queue: [E]. Process E. Topological order: A, B, C, D, E (or A, C, B, D, E -- both valid).
+
 ## Summary
 
 - **BFS** finds shortest paths in unweighted graphs; **DFS** explores depth-first and enables topological sort and SCC detection.
@@ -487,3 +495,11 @@ where $N(S)$ is the set of neighbors of $S$ in $R$.
 - **MST:** Kruskal ($O(E \log E)$) and Prim ($O(E \log V)$), both based on cut/cycle properties.
 - **Max-flow:** Ford-Fulkerson/Edmonds-Karp ($O(VE^2)$), with max-flow min-cut theorem.
 - **Bipartite matching:** Hopcroft-Karp ($O(E\sqrt{V})$) for unweighted, Hungarian ($O(n^3)$) for weighted.
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Algorithm Design | [View](/docs/university/computer-science/algorithm-design) |
+| Data Structures | [View](/docs/university/computer-science/data-structures) |
+| Complexity Theory | [View](/docs/university/computer-science/complexity-theory) |

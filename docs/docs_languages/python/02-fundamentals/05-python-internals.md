@@ -1,8 +1,6 @@
 ---
 title: Python Internals
-description:
-  'Python Internals — CPython Architecture Overview; Other Implementations; The Object Model;
-  `PyObject` with worked examples and exam-style questions.'
+description: 'Python Internals notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

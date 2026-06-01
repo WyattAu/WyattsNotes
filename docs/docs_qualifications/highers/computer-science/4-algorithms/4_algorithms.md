@@ -1,8 +1,6 @@
 ---
 title: Algorithms and Data Structures
-description:
-  'Algorithms and Data Structures — Algorithm Complexity; Big O Notation; Comparing Algorithms;
-  Best, Average, and Worst Case.'
+description: 'Scottish Highers Computer Science Algorithms and Data notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - highers

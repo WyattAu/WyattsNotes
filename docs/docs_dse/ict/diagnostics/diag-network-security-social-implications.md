@@ -1,8 +1,6 @@
 ---
 title: 'Network Security and Social Implications -- Diagnostic Tests'
-description:
-  'DSE ICT diagnostic tests for network security and social implications: malware, encryption, data
-  protection, legal/ethical issues, privacy.'
+description: 'DSE Ict Network Security and Social Implications -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-network-security-social-implications
 hide_table_of_contents: true
 ---

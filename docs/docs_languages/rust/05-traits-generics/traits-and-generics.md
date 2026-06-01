@@ -1,9 +1,7 @@
 ---
 id: traits-and-generics
 title: Traits and Generics
-description:
-  'Traits and Generics — Trait Definition and Implementation; Defining a Trait; Implementing a
-  Trait; Orphan Rule with worked examples and exam-style questions.'
+description: 'Rust Traits and Generics notes covering key definitions, core concepts, worked examples, and practice questions for in-depth study and examination practice.'
 slug: traits-and-generics
 ---
 

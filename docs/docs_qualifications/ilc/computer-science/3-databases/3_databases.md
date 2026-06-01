@@ -1,8 +1,6 @@
 ---
 title: Data and Databases
-description:
-  'Data and Databases — Data Representation; Text Encoding (OL/HL); Images (OL/HL); Sound (HL) with
-  worked examples and exam-style questions.'
+description: 'ILC Computer Science Data and Databases notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 date: 2026-04-14
 tags:
   - ilc

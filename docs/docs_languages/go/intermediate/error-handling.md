@@ -1,8 +1,6 @@
 ---
 title: Error Handling
-description:
-  'Error Handling — The Error Interface; Idiomatic Error Pattern; Sentinel Errors; Custom Error
-  Types with worked examples and exam-style questions.'
+description: 'Go Error Handling notes covering key definitions, core concepts, worked examples, and practice questions for clear learning and effective revision.'
 slug: error-handling
 date: 2026-04-18
 tags:

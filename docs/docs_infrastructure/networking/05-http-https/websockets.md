@@ -1,9 +1,7 @@
 ---
 id: websockets
 title: WebSockets
-description:
-  'WebSockets — HTTP Upgrade Handshake; Client Request; Server Response; Handshake Validation with
-  worked examples and exam-style questions.'
+description: 'WebSockets notes covering key definitions, core concepts, worked examples, and practice questions for clear review and exam preparation.'
 slug: websockets
 tags:
   - Networking

@@ -1,8 +1,6 @@
 ---
 title: DSE Mathematics Diagnostic Guide
-description:
-  'Comprehensive guide for DSE Mathematics diagnostic testing: purpose, grading rubric, prerequisite
-  chains, coverage map, and self-assessment framework.'
+description: 'DSE Maths Mathematics Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

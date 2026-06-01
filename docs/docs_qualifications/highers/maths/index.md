@@ -1,6 +1,6 @@
 ---
 title: Scottish Highers Mathematics
-description: 'Scottish Higher and Advanced Higher Mathematics revision notes'
+description: 'Scottish Higher and Advanced Higher Mathematics revision notes. Part of the Scottish Higher Mathematics revision notes for SQA exam preparation.'
 date: 2026-04-14
 tags:
   - highers

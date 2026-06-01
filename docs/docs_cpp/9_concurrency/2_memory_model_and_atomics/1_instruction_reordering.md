@@ -1,8 +1,6 @@
 ---
 title: Instruction Reordering and Happens-Before
-description:
-  'C++: Instruction Reordering and Happens-Before — The As-If Rule and Compiler Reordering; Formal
-  Definition of the As-If Rule.'
+description: 'C++ Programming Instruction Reordering and Happens-Before notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

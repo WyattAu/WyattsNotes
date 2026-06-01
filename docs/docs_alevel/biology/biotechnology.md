@@ -1,8 +1,6 @@
 ---
 title: Biotechnology
-description:
-  'A-Level Biology notes on Biotechnology: recombinant DNA technology, PCR, gel electrophoresis, DNA
-  sequencing, genetic engineering, gene therapy, stem cells, CRI'
+description: 'A-Level Biology Biotechnology notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and mastery.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

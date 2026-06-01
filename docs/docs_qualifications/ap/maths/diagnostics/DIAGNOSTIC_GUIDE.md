@@ -1,8 +1,6 @@
 ---
 title: AP Calculus Diagnostic Guide
-description:
-  Comprehensive guide to using AP Calculus AB/BC diagnostic tests for self-assessment, topic mastery
-  verification, and targeted study planning.
+description: 'Qualifications Maths AP Calculus Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 date: 2026-04-14
 tags:
   - ap

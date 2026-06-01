@@ -1,8 +1,6 @@
 ---
 title: 'Programming and OOP -- Diagnostic Tests'
-description:
-  'Challenging A-Level computer science diagnostic questions on Programming and OOP -- Diagnostic
-  Tests. With full worked solutions and examiner commentary.'
+description: 'A-Level Computer Science Programming and OOP -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-programming
 hide_table_of_contents: true
 ---

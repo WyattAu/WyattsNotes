@@ -1,8 +1,6 @@
 ---
 title: Human Physiology
-description:
-  'DSE Biology human physiology notes covering nutrition, digestive system, circulatory system,
-  respiratory system, excretory system, and nervous system.'
+description: 'DSE Biology Human Physiology notes covering key definitions, core concepts, worked examples, and practice questions for focused study and examination practice.'
 date: 2026-04-08T00:00:00.000Z
 tags: [DSE, Biology]
 categories: [DSE, Biology]

@@ -1,8 +1,6 @@
 ---
 title: Solid-State Chemistry
-description:
-  "University-level notes on Solid-State Chemistry: 1. Crystal Structures; 1.1 Unit Cells and
-  Lattices; 1.2 Coordination Numbers."
+description: 'University Solid-State Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -417,6 +415,16 @@ Examples:
 - **X-ray diffraction:** Bragg's law $n\lambda = 2d\sin\theta$; Miller indices; systematic absences.
 - **Nanomaterials:** Quantum confinement; high surface-to-volume ratio; quantum dots, nanotubes.
 - **Zeolites:** Porous aluminosilicates; ion exchange, molecular sieves, catalysis.
+
+## Worked Examples
+
+### Example 1: Calculating Density from Unit Cell Parameters
+**Problem:** Sodium chloride crystallises in a face-centred cubic structure with a = 564 pm. Calculate the density of NaCl. (M_Na = 23.0, M_Cl = 35.5 g/mol, N_A = 6.022 x 10^23).
+**Solution:** NaCl unit cell contains 4 Na+ and 4 Cl- ions (FCC arrangement). Molar mass of NaCl = 58.5 g/mol. Mass of unit cell = (4 x 58.5) / (6.022 x 10^23) = 3.886 x 10^-22 g. Volume = a^3 = (564 x 10^-10 cm)^3 = 1.795 x 10^-22 cm^3. Density = 3.886 x 10^-22 / 1.795 x 10^-22 = 2.17 g/cm^3. Literature value: 2.16 g/cm^3.
+
+### Example 2: Predicting Stoichiometry from Radius Ratio
+**Problem:** NaCl has r(Na+) = 102 pm and r(Cl-) = 181 pm. Determine the expected coordination geometry using the radius ratio rule.
+**Solution:** Radius ratio = r+/r- = 102/181 = 0.564. For 0.414 < r+/r- < 0.732, the predicted coordination number is 6 (octahedral), matching the observed NaCl (rock salt) structure. If the ratio were below 0.414, tetrahedral (ZnS) coordination would be expected. If above 0.732, cubic (CsCl) coordination.
 
 ## Cross-References
 

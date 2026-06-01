@@ -1,8 +1,6 @@
 ---
 title: CLI Tools
-description:
-  'CLI Tools — sys.argv Basics; argparse; ArgumentParser; Positional Arguments with worked examples
-  and exam-style questions.'
+description: 'Python CLI Tools notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision and exam readiness.'
 date: 2026-04-05T00:00:00.000Z
 tags:
   - Python

@@ -1,9 +1,7 @@
 ---
 sidebar_label: Statistics
 sidebar_position: 2
-description:
-  'Rigorous A-Level mathematics notes covering Statistics. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'A-Level Maths Statistics notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision and exam readiness.'
 ---
 
 # Statistics

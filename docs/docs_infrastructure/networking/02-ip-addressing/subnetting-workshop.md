@@ -1,9 +1,7 @@
 ---
 id: subnetting-workshop
 title: Subnetting Workshop
-description:
-  'Subnetting Workshop — Binary Method: Step by Step; The Subnet Mask in Binary; Step-by-Step
-  Method; Verifying with a Shortcut.'
+description: 'Subnetting Workshop notes covering key definitions, core concepts, worked examples, and practice questions for targeted exam preparation and revision.'
 slug: subnetting-workshop
 tags:
   - Networking

@@ -1,8 +1,6 @@
 ---
 title: International Trade
-description:
-  'IB Economics — comparative advantage, free trade, trade protection, economic integration, WTO,
-  globalisation.'
+description: 'IB Economics International Trade notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]

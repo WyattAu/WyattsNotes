@@ -1,9 +1,7 @@
 ---
 id: incident-response
 title: Incident Response
-description:
-  'Incident Response — Preparation; Playbooks; Tools and Infrastructure; Tabletop Exercises with
-  worked examples and exam-style questions.'
+description: 'Incident Response notes covering key definitions, core concepts, worked examples, and practice questions for solid study and thorough revision.'
 slug: incident-response
 sidebar_position: 7
 ---

@@ -1,8 +1,6 @@
 ---
 title: Collections
-description:
-  'Collections — Collection Hierarchy; List; List Operations; Set Operations with worked examples
-  and exam-style questions.'
+description: 'Kotlin Collections notes covering key definitions, core concepts, worked examples, and practice questions for structured revision and exam readiness.'
 slug: collections
 date: 2026-04-18
 tags:

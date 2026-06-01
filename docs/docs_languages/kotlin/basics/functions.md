@@ -1,8 +1,6 @@
 ---
 title: Functions
-description:
-  'Functions — Function Declarations; Default Parameters; Mixing Positional and Named Arguments;
-  Named Arguments with worked examples and exam-style questions.'
+description: 'Kotlin Functions notes covering key definitions, core concepts, worked examples, and practice questions for solid exam preparation and mastery.'
 slug: functions
 date: 2026-04-18
 tags:

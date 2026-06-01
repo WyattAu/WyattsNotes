@@ -1,8 +1,6 @@
 ---
 title: Number Sets and Sequences
-description:
-  'Number Sets and Sequences — Number Systems; Classification (OL/HL); Properties of Real Numbers
-  (OL/HL); Irrational Numbers (HL).'
+description: 'ILC Maths Number Sets and Sequences notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 date: 2026-04-14
 tags:
   - ilc

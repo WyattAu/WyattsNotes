@@ -1,8 +1,6 @@
 ---
 title: 'Evolution and Ecology -- Diagnostic Tests'
-description:
-  'Challenging DSE biology diagnostic questions on Evolution and Ecology -- Diagnostic Tests. With
-  full worked solutions and examiner commentary.'
+description: 'DSE Biology Evolution and Ecology -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
 slug: diag-evolution-ecology
 hide_table_of_contents: true
 ---

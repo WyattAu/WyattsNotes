@@ -1,8 +1,6 @@
 ---
 title: 'Quantitative Chemistry -- Diagnostic Tests'
-description:
-  Diagnostic tests for moles, reacting masses, gas volumes, titrations, and yield at the hardest
-  A-Level Chemistry standard.
+description: 'A-Level Quantitative Chemistry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-quantitative-chemistry
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: Sustainable Development Goals
-description:
-  'The SDG framework, geography-relevant SDGs, progress tracking, implementation challenges, SDG
-  conflicts, and case studies for IB Geography.'
+description: 'IB Geography Sustainable Development Goals notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: sustainable-development-goals
 ---
 

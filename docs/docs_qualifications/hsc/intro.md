@@ -1,9 +1,7 @@
 ---
 title: Introduction to HSC/VCE Notes
 date: 2026-05-30
-description:
-  'Australian Higher School Certificate (HSC) and Victorian Certificate of Education (VCE) exam preparation
-  notes. Includes subject structure, assessment details, ATAR calculation, and study strategies.'
+description: 'Qualifications Intro.Md Introduction to HSC/VCE notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 tags:
   - hsc
   - vce

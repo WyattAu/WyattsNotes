@@ -1,8 +1,6 @@
 ---
 title: DSE Chemistry
-description:
-  'DSE Chemistry overview notes covering the full syllabus including atomic structure, bonding,
-  stoichiometry, energetics, kinetics, equilibrium, and organic'
+description: 'DSE Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for in-depth exam preparation and revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Chemistry

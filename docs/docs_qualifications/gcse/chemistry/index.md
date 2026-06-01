@@ -1,8 +1,6 @@
 ---
 title: GCSE Chemistry
-description:
-  'GCSE Chemistry revision notes covering atomic structure, bonding, quantitative chemistry,
-  chemical changes and organic chemistry.'
+description: 'GCSE Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for clear learning and effective revision.'
 date: 2026-04-14
 tags:
   - gcse

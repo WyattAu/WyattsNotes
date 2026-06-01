@@ -1,8 +1,6 @@
 ---
 title: Migration Theories and Patterns
-description:
-  "Migration types, Lee's migration model, Ravenstein's laws, push-pull factors, barriers to
-  migration, and case studies for IB Geography."
+description: 'IB Geography Migration Theories and Patterns notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 slug: migration-theories-and-patterns
 ---
 

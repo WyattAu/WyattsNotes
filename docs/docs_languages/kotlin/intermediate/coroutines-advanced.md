@@ -6,7 +6,7 @@ tags:
   - Kotlin
 categories:
   - Kotlin
-description: "Advanced Kotlin coroutines: Flow error handling, sharing flows, flow lifecycle, coroutine context elements, testing coroutines with TestDispatchers, debugging, and production patterns."
+description: "Advanced Kotlin coroutines: Flow error handling, sharing flows, flow lifecycle, coroutine context elements, testing coroutines with TestDispatchers,."
 ---
 
 This document builds on the coroutine fundamentals covered in
@@ -451,7 +451,60 @@ delay(1000)
 scope.cancel()  // cancels parent and all descendants
 ```
 
-## Common Pitfalls
+## Worked Examples
+
+### Example 1: Implementing a Retry with Exponential Backoff
+**Problem:** Implement a retry function that retries a failing suspend function with exponential backoff (delays of 1s, 2s, 4s) up to 3 attempts.
+**Solution:**
+```kotlin
+suspend fun <T> retryWithBackoff(maxAttempts: Int = 3, block: suspend () -> T): T {
+    var lastException: Exception? = null
+    repeat(maxAttempts) { attempt ->
+        try {
+            return block()
+        } catch (e: CancellationException) {
+            throw e
+        } catch (e: Exception) {
+            lastException = e
+            if (attempt < maxAttempts - 1) delay(1000L * (1L shl attempt))
+        }
+    }
+    throw lastException!!
+}
+```
+The delay doubles each attempt: 1s, 2s. If all 3 attempts fail, the last exception is rethrown. CancellationException is always rethrown to preserve structured concurrency.
+
+### Example 2: Merging Two Flows with Error Recovery
+**Problem:** Merge a user profile flow and a settings flow, emitting a combined state. If the settings flow fails, emit a fallback default.
+**Solution:**
+```kotlin
+data class UiState(val user: User? = null, val settings: Settings = Settings())
+
+fun mergeStates(userFlow: Flow<User>, settingsFlow: Flow<Settings>): Flow<UiState> =
+    combine(
+        userFlow.catch { e -> emit(null) },
+        settingsFlow.catch { e -> emit(Settings()) }
+    ) { user, settings -> UiState(user, settings) }
+```
+Each flow catches its own errors independently. If one fails, the other continues. The combined flow emits whenever either source emits.
+
+### Example 3: Testing a StateFlow with Turbine
+**Problem:** Test that a ViewModel increments a counter when `increment()` is called and resets when `reset()` is called.
+**Solution:**
+```kotlin
+@Test
+fun counterIncrementsAndResets() = runTest {
+    val vm = CounterViewModel()
+    assertEquals(0, vm.count.value)
+    vm.increment()
+    assertEquals(1, vm.count.value)
+    vm.increment()
+    assertEquals(2, vm.count.value)
+    vm.reset()
+    assertEquals(0, vm.count.value)
+}
+```
+In a `runTest` block, `StandardTestDispatcher` makes all coroutines execute eagerly but in the correct order. No delays are needed for StateFlow tests since values update synchronously.
 
 - **Catching `CancellationException` in generic catch blocks.** Always rethrow it. Silently catching
   it prevents cancellation from propagating, leading to leaked coroutines.
@@ -467,6 +520,14 @@ scope.cancel()  // cancels parent and all descendants
   resume on different threads.
 - **Testing with `runBlocking` instead of `runTest`.** `runBlocking` does not control virtual time,
   making tests with `delay` slow and non-deterministic.
+
+## Common Pitfalls
+
+1. **Catching CancellationException in a generic catch block.** Always rethrow CancellationException. Silently catching it prevents cancellation from propagating, causing leaked coroutines.
+2. **Using StateFlow for one-time events.** StateFlow conflates values and replays the latest to new collectors. One-time events must use SharedFlow with replay=0.
+3. **Testing with runBlocking instead of runTest.** runBlocking does not control virtual time. Always use runTest with TestDispatchers for deterministic tests.
+4. **Forgetting that flow{} is cold and lazy.** Each collect call re-executes the entire upstream. Use shareIn for side-effecting sources.
+
 
 ## Summary
 

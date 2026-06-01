@@ -1,9 +1,7 @@
 ---
 id: intro
 title: C++ Systems Programming
-description:
-  'C++: C++ Systems Programming — Interactive Examples; How to Use These Notes; Part 1 — Environment
-  and Toolchain (Modules 1–4).'
+description: 'C++ Programming C++ Systems Programming notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 slug: /intro
 sidebar_position: 1
 ---

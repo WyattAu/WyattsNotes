@@ -1,8 +1,6 @@
 ---
 title: 'Electrochemistry -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Electrochemistry -- Diagnostic Tests. With full
-  worked solutions and examiner commentary.'
+description: 'DSE Electrochemistry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-electrochemistry
 hide_table_of_contents: true
 ---

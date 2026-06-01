@@ -6,9 +6,7 @@ tags:
   - alevel-english
 categories:
   - alevel-english
-description:
-  Develop your prose analysis skills for A-Level English. Covers narrative voice, characterisation,
-  setting, theme, structure, and genre conventions in novels and short stories.
+description: 'A-Level English Prose Analysis notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 slug: prose-analysis
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: 'Stoichiometry and Mole Concept -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on stoichiometry and mole concept within the DSE specification, each
-  with a full worked solution.
+description: 'DSE Chemistry Stoichiometry and Mole Concept -- Diagnostic notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-stoichiometry-and-mole-concept
 hide_table_of_contents: true
 ---

@@ -1,9 +1,7 @@
 ---
 id: dns-architecture
 title: DNS Architecture and Operations
-description:
-  'DNS Architecture and Operations — DNS Infrastructure Components; Registrars; Registries; TLD
-  Operators with worked examples and exam-style questions.'
+description: 'DNS Architecture and Operations notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 slug: dns-architecture
 tags:
   - Networking

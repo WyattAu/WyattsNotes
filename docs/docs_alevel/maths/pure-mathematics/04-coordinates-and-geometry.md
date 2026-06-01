@@ -1,8 +1,6 @@
 ---
 title: Coordinates and Geometry
-description:
-  'A-Level Mathematics notes on Coordinates and Geometry: Board Coverage; 1. The Coordinate Plane;
-  2. Straight Lines; 2.1 Gradient.'
+description: 'A-Level Maths Coordinates and Geometry notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

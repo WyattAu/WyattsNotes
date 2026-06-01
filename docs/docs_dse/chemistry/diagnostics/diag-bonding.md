@@ -1,8 +1,6 @@
 ---
 title: 'Bonding -- Diagnostic Tests'
-description:
-  'Challenging DSE chemistry diagnostic questions on Bonding -- Diagnostic Tests. With full worked
-  solutions and examiner commentary.'
+description: 'DSE Chemistry Bonding -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 slug: diag-bonding
 hide_table_of_contents: true
 ---

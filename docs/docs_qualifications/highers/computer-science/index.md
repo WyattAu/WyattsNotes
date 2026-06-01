@@ -1,6 +1,6 @@
 ---
 title: Scottish Highers Computer Science
-description: 'Scottish Higher and Advanced Higher Computer Science revision notes'
+description: 'Scottish Higher and Advanced Higher Computer Science revision notes. Part of the Scottish Higher Computer Science revision notes for SQA exam preparation.'
 date: 2026-04-14
 tags:
   - highers

@@ -6,7 +6,7 @@ tags:
   - University Physics
 categories:
   - University Physics
-description: "Advanced quantum mechanics: perturbation theory applications, angular momentum coupling, identical particles, quantum scattering, relativistic QM, and introduction to quantum field theory concepts."
+description: "Advanced quantum mechanics: perturbation theory applications, angular momentum coupling, identical particles, quantum scattering, relativistic QM, and."
 ---
 
 ## 1. Perturbation Theory: Advanced Applications
@@ -555,3 +555,20 @@ Grover's algorithm is provably optimal for unstructured search (Bennett et al., 
 | Electromagnetism | [View](/docs/university/physics/electromagnetism) |
 | MIT 8.05 Quantum Physics II | [View](https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/) |
 | MIT 8.06 Quantum Physics III | [View](https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2018/) |
+
+## Worked Examples
+
+### Example 1: Hydrogen Atom Radial Wavefunction
+**Problem:** Calculate the most probable radius for the electron in the ground state of hydrogen (1s orbital).
+**Solution:** The radial probability density P(r) = 4r^2 |R_10(r)|^2 = (4/a_0^3) r^2 exp(-2r/a_0). Set dP/dr = 0: d/dr [r^2 exp(-2r/a_0)] = 0. r(2 - 2r/a_0) exp(-2r/a_0) = 0. Solutions: r = 0, r = a_0. The most probable radius is r = a_0 = 0.529 Angstrom, which is the Bohr radius.
+
+### Example 2: Spin-Orbit Coupling Energy
+**Problem:** Calculate the spin-orbit coupling energy for a single valence electron in the 2p state of hydrogen-like sodium (Z_eff = 11).
+**Solution:** The spin-orbit coupling energy is Delta E = (Z_eff^4 * alpha^2 * E_n) / (n * l * (l + 1/2) * (l + 1)), where alpha = 1/137. For n=2, l=1: the 2p level splits into 2p_{3/2} and 2p_{1/2}. The splitting is Delta E proportional to Z_eff^4 * alpha^2 * E_n / n^3, which gives the D-line splitting observed in the sodium spectrum (589.0 nm and 589.6 nm).
+
+## Cross-References
+
+| Topic | Link |
+|-------|------|
+| Quantum Mechanics I | [View](/docs/university/physics/quantum-mechanics) |
+| Thermodynamics | [View](/docs/university/physics/thermodynamics) |

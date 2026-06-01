@@ -1,8 +1,6 @@
 ---
 title: Network Proxy
-description:
-  'Network Proxy — Using Nginx Proxy Manager; Perquisite including key definitions, derivations, and
-  problem-solving techniques.'
+description: 'Network Proxy notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision and exam readiness.'
 date: 2025-07-25T20:52:26.185Z
 tags:
   - truenas

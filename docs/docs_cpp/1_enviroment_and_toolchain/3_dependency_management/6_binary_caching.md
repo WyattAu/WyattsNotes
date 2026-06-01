@@ -1,8 +1,6 @@
 ---
 title: Binary Caching
-description:
-  'C++: Binary Caching — The Artifact Registry Architecture; Industry Standard Registries;
-  Configuration (`VCPKG_BINARY_SOURCES`).'
+description: 'C++ Programming Binary Caching notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
 date: 2025-12-11T05:47:27.269Z
 tags:
   - cpp

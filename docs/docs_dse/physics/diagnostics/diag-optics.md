@@ -1,8 +1,6 @@
 ---
 title: 'Optics -- Diagnostic Tests'
-description:
-  'Hardest DSE optics questions: thin lens sign conventions, real vs virtual images, total internal
-  reflection, compound lens systems, and optical instruments.'
+description: 'DSE Physics Optics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-optics
 hide_table_of_contents: true
 ---

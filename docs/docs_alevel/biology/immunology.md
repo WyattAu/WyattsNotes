@@ -1,8 +1,6 @@
 ---
 title: Immunology
-description:
-  'A-Level Biology notes on Immunology: innate immunity, adaptive immunity, cell-mediated response,
-  humoral response, antibodies, autoimmune diseases, vaccination,'
+description: 'A-Level Biology Immunology notes covering key definitions, core concepts, worked examples, and practice questions for clear revision and exam readiness.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

@@ -1,9 +1,7 @@
 ---
 title: Assessment
 slug: Assessment
-description:
-  'Rigorous IB physics notes covering Assessment. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Physics Assessment notes covering key definitions, core concepts, worked examples, and practice questions for thorough study and thorough revision.'
 ---
 
 ## Assessment Overview

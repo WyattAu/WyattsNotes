@@ -1,9 +1,7 @@
 ---
 title: Physics
 slug: physics
-description:
-  'Rigorous IB physics notes covering Physics. Includes definitions, derivations, worked examples,
-  and exam-style problems.'
+description: 'IB Physics notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision and examination preparation.'
 ---
 
 ## IB Physics -- Course Overview

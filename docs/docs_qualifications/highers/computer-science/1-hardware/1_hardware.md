@@ -1,8 +1,6 @@
 ---
 title: Computer Systems
-description:
-  'Computer Systems — Data Representation; Representing Numbers; Representing Text; Representing
-  Images with worked examples and exam-style questions.'
+description: 'Scottish Highers Computer Science Computer Systems notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
 date: 2026-04-14
 tags:
   - highers

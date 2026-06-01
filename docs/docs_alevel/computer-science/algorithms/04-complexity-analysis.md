@@ -1,8 +1,6 @@
 ---
 title: Complexity Analysis
-description:
-  'A-Level Computer Science notes on Complexity Analysis: 1. Formal Definitions; Asymptotic
-  Notation; Big-O (Upper Bound); Big-Omega (Lower Bound).'
+description: 'A-Level Computer Science Complexity Analysis notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

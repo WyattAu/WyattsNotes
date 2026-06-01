@@ -1,8 +1,6 @@
 ---
 title: 'DSE Biology Diagnostic Tests -- Guide'
-description:
-  'Challenging DSE biology diagnostic questions on DSE Biology Diagnostic Tests -- Guide. With full
-  worked solutions and examiner commentary.'
+description: 'DSE Biology Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and mastery.'
 slug: diagnostic-guide
 hide_table_of_contents: true
 ---

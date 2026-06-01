@@ -1,8 +1,6 @@
 ---
 title: 'Electrical Circuits -- Diagnostic Tests'
-description:
-  "Hardest DSE circuit questions: Kirchhoff's laws with multiple loops, internal resistance
-  analysis, potentiometer circuits, and RC transients."
+description: 'DSE Physics Electrical Circuits -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-electrical-circuits
 hide_table_of_contents: true
 ---

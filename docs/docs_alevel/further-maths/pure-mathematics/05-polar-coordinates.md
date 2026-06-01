@@ -1,8 +1,6 @@
 ---
 title: Polar Coordinates
-description:
-  'A-Level Further Maths notes on Polar Coordinates: Board Coverage; 1. Converting Between Cartesian
-  and Polar; 1.1 Definitions; 1.2 Converting from polar to Ca.'
+description: 'A-Level Further Maths Polar Coordinates notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

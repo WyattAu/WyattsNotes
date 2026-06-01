@@ -1,8 +1,6 @@
 ---
 title: Programming
-description:
-  'Programming — 1.1 Variables and Constants; Variables; Constants (convention: UPPER_CASE); 1.2
-  Input and Output with worked examples and exam-style questions.'
+description: 'GCSE Computer Science Programming notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
 date: 2026-04-14
 tags:
   - gcse

@@ -1,8 +1,6 @@
 ---
 title: Computer Systems
-description:
-  'GCSE Computer Science: Computer Systems — 1. CPU Architecture; 1.1 Components of the CPU; 1.2
-  Registers; 1.3 The Fetch-Decode-Execute Cycle.'
+description: 'GCSE Computer Science Computer Systems notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 date: 2026-04-14
 tags:
   - gcse

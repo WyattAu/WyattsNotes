@@ -1,8 +1,6 @@
 ---
 title: Photosynthesis (In Depth)
-description:
-  'A-Level Biology notes on Photosynthesis: light-dependent reactions, Calvin cycle, limiting
-  factors, CO2 concentration, temperature, light intensity, chloroplast'
+description: 'A-Level Biology Photosynthesis (In Depth) notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology

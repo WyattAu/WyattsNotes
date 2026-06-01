@@ -1,8 +1,6 @@
 ---
 title: Probability
-description:
-  'A-Level Mathematics notes on Probability: Board Coverage for comprehensive revision and
-  examination preparation. and examination prepar.'
+description: 'A-Level Maths Probability notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths

@@ -1,8 +1,6 @@
 ---
 title: Template Instantiation, Monomorphization, and Code Bloat
-description:
-  'C++: Template Instantiation, Monomorphization, and Code Bloat — Function Templates and Class
-  Templates; Two-Phase Name Lookup.'
+description: 'C++ Programming Template Instantiation, Monomorphization, notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

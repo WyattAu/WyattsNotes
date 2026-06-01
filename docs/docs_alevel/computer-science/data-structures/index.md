@@ -1,9 +1,7 @@
 ---
 sidebar_label: Data Structures
 sidebar_position: 2
-description:
-  'Rigorous A-Level computer science notes covering Data Structures. Includes definitions,
-  derivations, worked examples, and exam-style problems.'
+description: 'A-Level Computer Science Data Structures notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
 sidebar_custom_props:
   some_prop: true
 ---

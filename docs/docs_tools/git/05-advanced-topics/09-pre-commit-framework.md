@@ -1,8 +1,6 @@
 ---
 title: The pre-commit Framework
-description:
-  'The pre-commit Framework — What pre-commit Is; Installation; Installing the Framework; Install
-  via pip with worked examples and exam-style questions.'
+description: 'Git The pre-commit Framework notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
 slug: pre-commit-framework
 ---
 

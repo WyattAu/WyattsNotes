@@ -1,9 +1,7 @@
 ---
 id: binary-search-trees
 title: Binary Search Trees and Balanced Trees
-description:
-  'Binary Search Trees and Balanced Trees — Binary Search Tree Fundamentals; Node Definition;
-  Search; Insert with worked examples and exam-style questions.'
+description: 'Algorithms Binary Search Trees and Balanced notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: binary-search-trees
 ---
 

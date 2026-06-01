@@ -1,8 +1,6 @@
 ---
 title: 'Atomic and Nuclear Physics -- Diagnostic Tests'
-description:
-  'Hardest IB Physics atomic and nuclear diagnostic tests covering Bohr model limitations, binding
-  energy per nucleon, radioactive decay statistics, and'
+description: 'IB Atomic and Nuclear Physics -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
 slug: diag-atomic-nuclear
 hide_table_of_contents: true
 ---

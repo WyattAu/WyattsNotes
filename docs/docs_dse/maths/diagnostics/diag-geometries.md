@@ -1,8 +1,6 @@
 ---
 title: 'Geometries -- Diagnostic Tests'
-description:
-  'Diagnostic tests for DSE Geometries: circle theorems, coordinate geometry
-  ./1-number-and-algebra/3_proof-and-logics, vector geometry, and geometric reasoning.'
+description: 'DSE Maths Geometries -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
 slug: diag-geometries
 hide_table_of_contents: true
 ---

@@ -1,8 +1,6 @@
 ---
 title: Real Analysis
-description:
-  'University-level notes on Real Analysis: 1. The Real Number System; 1.1 Field Axioms; 1.2 Order
-  and the Completeness Axiom; 1.3 Supremum and Infimum.'
+description: 'University Mathematics Real Analysis notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics

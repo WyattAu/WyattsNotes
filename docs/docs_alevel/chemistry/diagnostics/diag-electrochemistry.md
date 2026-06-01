@@ -1,8 +1,6 @@
 ---
 title: 'Electrochemistry -- Diagnostic Tests'
-description:
-  Diagnostic tests for electrode potentials, electrochemical cells, electrolysis, and Faraday's laws
-  at the hardest A-Level Chemistry standard.
+description: 'A-Level Electrochemistry -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
 slug: diag-electrochemistry
 hide_table_of_contents: true
 ---

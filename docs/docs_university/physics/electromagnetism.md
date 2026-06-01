@@ -1,10 +1,6 @@
 ---
 title: Electromagnetism
-description:
-  "Comprehensive university-level notes on electromagnetism covering Maxwell's equations in integral
-  and differential form, electrostatics, magnetostatics, electrodynamics, electromagnetic wave
-  propagation, gauge transformations, special relativity and its connection to electromagnetism,
-  radiation from accelerating charges, waveguides, and plasma physics."
+description: 'University Physics Electromagnetism notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics

@@ -1,8 +1,6 @@
 ---
 title: 'Genetics and DNA -- Diagnostic Tests'
-description:
-  Hardest diagnostic questions on DNA replication, Meselson-Stahl experiment, protein synthesis,
-  epistasis, sex linkage, PCR, and genetic engineering.
+description: 'A-Level Biology Genetics and DNA -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 slug: diag-genetics-dna
 hide_table_of_contents: true
 ---

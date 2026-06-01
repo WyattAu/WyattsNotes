@@ -1,8 +1,6 @@
 ---
 title: 'Thermodynamics and Energetics -- Diagnostic Tests'
-description:
-  Diagnostic tests for enthalpy, Hess's law, Born-Haber cycles, entropy, and Gibbs free energy at
-  the hardest A-Level Chemistry standard.
+description: 'A-Level Chemistry Thermodynamics and Energetics -- notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
 slug: diag-thermodynamics
 hide_table_of_contents: true
 ---

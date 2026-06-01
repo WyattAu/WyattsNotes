@@ -1,8 +1,6 @@
 ---
 title: Geographic Skills
-description:
-  'Rigorous IB geography notes covering Geographic Skills. Includes definitions, derivations, worked
-  examples, and exam-style problems.'
+description: 'IB Geography Geographic Skills notes covering key definitions, core concepts, worked examples, and practice questions for efficient review and exam preparation.'
 slug: geographic-skills
 ---
 

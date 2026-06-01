@@ -1,8 +1,6 @@
 ---
 title: Geometry and Trigonometry
-description:
-  'Geometry and Trigonometry — Higher Trigonometry; Trigonometric Functions; Radians; Trigonometric
-  Identities with worked examples and exam-style questions.'
+description: 'Scottish Highers Maths Geometry and Trigonometry notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
 date: 2026-04-14
 tags:
   - highers

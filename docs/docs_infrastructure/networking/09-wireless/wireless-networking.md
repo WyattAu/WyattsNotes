@@ -1,9 +1,7 @@
 ---
 id: wireless-networking
 title: Wireless Networking
-description:
-  'Wireless Networking — RF Fundamentals; Electromagnetic Waves; Decibel Scale; SNR and SINR with
-  worked examples and exam-style questions.'
+description: 'Wireless Networking notes covering key definitions, core concepts, worked examples, and practice questions for targeted revision and examination preparation.'
 slug: wireless-networking
 sidebar_position: 2
 date: 2026-04-08T00:00:00.000Z

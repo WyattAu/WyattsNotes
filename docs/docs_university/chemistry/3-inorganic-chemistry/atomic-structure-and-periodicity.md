@@ -1,8 +1,6 @@
 ---
 title: Atomic Structure and Periodicity
-description:
-  "University-level notes on Atomic Structure and Periodicity: 1. Atomic Orbitals; 1.1 Quantum
-  Numbers and Orbital Shapes; 1.2 Effective Nuclear Charge."
+description: 'University Chemistry Atomic Structure and Periodicity notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
 date: 2026-05-31T00:00:00.000Z
 tags:
   - Chemistry
@@ -308,6 +306,16 @@ Trend: Basicity increases down a group; acidity increases across a period.
   similar in size to their period 5 counterparts.
 - **Inert pair effect:** Heavy p-block elements favor lower oxidation states ($ns^2$ inert).
 - **Relativistic effects:** Significant for 5d and 6p elements; gold's color, mercury's liquid state.
+
+## Worked Examples
+
+### Example 1: Predicting Ionisation Energy Trends
+**Problem:** Explain why the first ionisation energy of aluminium (578 kJ/mol) is lower than that of magnesium (738 kJ/mol), despite aluminium being to the right of magnesium in period 3.
+**Solution:** Magnesium has the electron configuration [Ne]3s^2. Removing one electron requires breaking a filled s-subshell (stable configuration). Aluminium has [Ne]3s^2 3p^1. The 3p electron is higher in energy and more effectively shielded than the 3s electrons, so it is removed more easily. This is a general trend: the ionisation energy drops slightly when moving from a filled s-subshell to a p-subshell element.
+
+### Example 2: Lanthanide Contraction Effect
+**Problem:** Explain why the atomic radius of Zr (160 pm) is nearly identical to that of Hf (159 pm), despite Hf being in the period below Zr.
+**Solution:** The lanthanide contraction is caused by poor shielding of 4f electrons. As nuclear charge increases across the lanthanides (Ce to Lu), the effective nuclear charge felt by outer electrons increases significantly, pulling them closer. This contraction (~15 pm total) compensates for the expected increase in radius from adding a new shell, making Zr and Hf nearly identical in size. This explains their similar chemical properties and the difficulty of separating them.
 
 ## Cross-References
 

@@ -1,8 +1,6 @@
 ---
 title: Best Practices
-description:
-  'Best Practices — Recommended Global Configuration; Identity; Default branch; Pull strategy:
-  rebase instead of merge (cleaner history).'
+description: 'Git Best Practices notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
 date: 2025-06-03T16:00:00.000Z
 tags:
   - git

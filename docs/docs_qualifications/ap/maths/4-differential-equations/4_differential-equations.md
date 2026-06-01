@@ -1,8 +1,6 @@
 ---
 title: Differential Equations
-description:
-  'Differential Equations — First-Order Separable Equations; Separability Test; Worked Example:
-  Separation with Partial Fractions.'
+description: 'Qualifications Maths Differential Equations notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
 date: 2026-04-14
 tags:
   - ap

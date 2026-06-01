@@ -1,8 +1,6 @@
 ---
 title: Bioenergetics
-description:
-  'Bioenergetics — 1. Photosynthesis; 1.1 The Equation; 1.2 Where Photosynthesis Occurs; 1.3 Factors
-  Affecting the Rate of Photosynthesis.'
+description: 'GCSE Biology Bioenergetics notes covering key definitions, core concepts, worked examples, and practice questions for detailed review and exam preparation.'
 date: 2026-04-14
 tags:
   - gcse

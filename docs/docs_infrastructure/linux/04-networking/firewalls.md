@@ -1,9 +1,7 @@
 ---
 id: firewalls
 title: Linux Firewalls
-description:
-  'Linux Firewalls — Netfilter Framework; Hooks; Tables; Chains including key definitions,
-  derivations, and problem-solving techniques.'
+description: 'Linux Firewalls notes covering key definitions, core concepts, worked examples, and practice questions for focused study and thorough revision.'
 slug: firewalls
 sidebar_position: 2
 ---

@@ -1,9 +1,7 @@
 ---
 id: garbage-collection
 title: Garbage Collection
-description:
-  'Garbage Collection — GC Fundamentals; What Is Garbage?; GC Roots; Reachability Phases with worked
-  examples and exam-style questions.'
+description: 'Java Garbage Collection notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and exam readiness.'
 slug: garbage-collection
 ---
 

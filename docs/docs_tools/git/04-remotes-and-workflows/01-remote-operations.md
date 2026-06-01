@@ -1,8 +1,6 @@
 ---
 title: Remote Operations
-description:
-  'Remote Operations — Distributed Architecture; Bare vs Non-Bare Repositories; Create a bare
-  repository; Clone from a bare repository.'
+description: 'Git Remote Operations notes covering key definitions, core concepts, worked examples, and practice questions for efficient learning and effective revision.'
 date: 2025-06-03T06:00:00.000Z
 tags:
   - git

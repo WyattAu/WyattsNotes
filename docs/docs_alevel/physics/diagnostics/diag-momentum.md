@@ -1,8 +1,6 @@
 ---
 title: 'Momentum -- Diagnostic Tests'
-description:
-  Diagnostic tests for conservation of momentum, impulse, elastic and inelastic collisions, and
-  vector momentum problems at A-Level Physics maximum difficulty.
+description: 'A-Level Physics Momentum -- Diagnostic Tests notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
 slug: diag-momentum
 hide_table_of_contents: true
 ---

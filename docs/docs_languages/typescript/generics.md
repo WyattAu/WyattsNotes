@@ -1,8 +1,6 @@
 ---
 title: Generics
-description:
-  'A rigorous treatment of parametric polymorphism in TypeScript: generic functions, interfaces,
-  utility types, conditional types, mapped types, and variance.'
+description: 'Typescript Generics notes covering key definitions, core concepts, worked examples, and practice questions for focused study and examination practice.'
 slug: typescript-generics
 date: 2026-04-22T00:00:00.000Z
 tags: [TypeScript]
