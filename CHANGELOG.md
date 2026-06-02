@@ -2,6 +2,42 @@
 
 All notable changes to Wyatt's Notes will be documented in this file.
 
+## [2026-06-02] - Code Quality, CI/CD Optimization, UI/UX Audit
+
+### Fixed
+
+- ESLint prettier error in `docusaurus.programming.config.ts` (trailing whitespace)
+- Removed dead `animRef` code from `CircuitBuilder.tsx` (useRef created but never assigned)
+- Replaced `useState(true)` with constant in `DiagnosticTest.tsx` (showTimer never toggled)
+- Added `AIRecommendations` to barrel export in `components/interactive/index.ts`
+- Fixed unsafe `__SENTRY_DSN__` access via global type augmentation in `global.d.ts`
+- Removed unused SentryBrowserSDK methods from `global.d.ts`
+
+### Changed
+
+- Extracted PeriodicTable element data into `elements-data.ts` (1181 lines of data separated from
+  component)
+- Converted lighthouse.yml from 8 duplicated jobs to matrix strategy (283 -> 110 lines)
+- Added `id: build` to `deploy-main.yml` build step (deployment summary now reports actual duration)
+- Added timeout-minutes to `dependabot-auto-merge.yml`
+- Commented out DNS-pending sites in `uptime.yml` (prevented false failure alerts)
+- Added duplicate issue detection to `vulnerability-alert.yml`
+- Fixed concurrency group keys in `lighthouse.yml` and `algolia-index.yml`
+
+### Improved
+
+- UI: Removed brutalist violations (border-radius on code blocks, blockquotes, widget)
+- Accessibility: Added `aria-expanded` to TOCSidebar toggle button
+- Accessibility: Added `role="status"` and `aria-live="polite"` to search loading indicator
+- Accessibility: Added `<h2>` heading to principles section on landing page
+- Accessibility: Fixed localStorage JSON.parse safety in TOCSidebar
+- Performance: Refactored ReadingProgress from useState to useRef (eliminates React re-renders
+  during scroll)
+- Performance: Moved static `subjectGroups` data outside Home component
+- Contrast: Fixed dark mode contrast ratio on search indexCard hover
+- Contrast: Increased DocItemFooter reading time opacity from 0.6 to 0.75
+- Tests: Removed unnecessary `async` from TOCSidebar test act() wrappers
+
 ## [2026-05-13] - Bulk Description Fix, Test Verification, Final Hardening
 
 ### Added

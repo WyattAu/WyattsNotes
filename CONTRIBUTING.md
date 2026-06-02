@@ -2,121 +2,210 @@
 
 ## Prerequisites
 
-- Node.js 22 (see [.nvmrc](./.nvmrc))
-- pnpm 10+ (see `package.json` `engines` field)
+| Tool    | Version | Reference                    |
+| ------- | ------- | ---------------------------- |
+| Node.js | 22.x    | `.nvmrc`                     |
+| pnpm    | 10.x    | `package.json` engines field |
 
-## Setup
-
-1. Fork this repo
-2. `pnpm install`
-3. `pnpm start`
-
-## Build and Preview
-
+```bash
+nvm install 22
+nvm use 22
+npm install -g pnpm@10
 ```
-pnpm build --config docusaurus.ib.config.ts && pnpm serve
-```
+
+## Development Setup
+
+1. Fork the repository
+2. Clone the fork locally:
+
+   ```bash
+   git clone https://github.com/<username>/WyattsNotes.git
+   cd WyattsNotes
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+4. Start the dev server:
+
+   ```bash
+   pnpm start
+   ```
+
+5. Build and preview a single sub-site:
+
+   ```bash
+   pnpm build --config docusaurus.ib.config.ts && pnpm serve
+   ```
 
 ## Pre-commit Checks
 
-Enforced via `lint-staged` on staged files:
+Enforced via Husky (`.husky/pre-commit`) and lint-staged on every commit.
 
-- TypeScript typecheck (`tsc --noEmit`)
-- ESLint
-- Unit tests (`vitest`)
-- MDX validation
-- Link checking (2,844+ links, 0 broken)
-- Depth tier validation
-- Description validation
+### Blocking (commit fails if any of these fail)
 
-## Guidelines
+| Check                           | Command                     | Scope             |
+| ------------------------------- | --------------------------- | ----------------- |
+| Lint-staged (ESLint + Prettier) | `lint-staged`               | Staged files only |
+| TypeScript typecheck            | `tsc --noEmit`              | Entire project    |
+| Unit tests                      | `vitest run` (120s timeout) | Entire test suite |
+| MDX validation                  | `validate-mdx.py`           | All docs          |
+| Relative link check             | `check-links.py`            | All docs          |
 
-### Contribution Related Guidance
+### Informational (warns but does not block)
 
-- Branch naming: `staging/feat/description`, `staging/fix/description`.
-- Since `staging` branch is periodically reviewed and merged into `main` by admin, you are
-  encouraged to start a pull request against the staging branch.
-- Use `pnpm lint` and `pnpm format` before committing.
+| Check                      | Command                          |
+| -------------------------- | -------------------------------- |
+| Content depth tiers        | `check-depth-tiers.py`           |
+| Description quality        | `check-descriptions.py`          |
+| Forward references         | `check-forward-refs.py`          |
+| Hand-wave phrase detection | `check-handwaves.py`             |
+| Search index coverage      | `check-search-index-coverage.py` |
 
-### CI Pipeline
+To bypass all checks in an emergency (not recommended for normal use):
 
-All pull requests run through the following checks:
+```bash
+SKIP_PRECHECK=1 git commit -m "message"
+```
 
-- Lint + Typecheck + Build
-- Unit tests (`vitest`)
-- Security audit
-- Content validation (MDX, links, depth tiers, descriptions)
-- External link checking
+## Branch Naming Convention
 
-### Code Review
+Prefix branches with `staging/` followed by the type and description:
 
-All CI checks must pass before merge.
+```
+staging/feat/add-periodic-table-component
+staging/fix/resolve-broken-anchor-links
+staging/refactor/extract-shared-config
+staging/docs/update-contributing-guide
+```
 
-### Formatting and Structure
+All PRs target the `staging` branch. The `staging` branch is periodically reviewed and merged into
+`main` by the maintainer.
 
-#### Naming Conventions
+## Commit Message Format
 
-| Type                 | Convention                                                    | Examples                                        |
-| -------------------- | ------------------------------------------------------------- | ----------------------------------------------- |
-| **Folders**          | lowercase-kebab                                               | `api-reference/`, `data-models/`                |
-| **Markdown Files**   | lowercase-kebab                                               | `getting-started.md`, `api-v3.md`               |
-| **React Components** | camelCase                                                     | `themeToggle.tsx`, `codeBlock.js`               |
-| **Utility Files**    | camelCase                                                     | `formatDate.js`, `stringUtils.ts`               |
-| **Assets/Images**    | lowercase_snake for tags, lowercase-kebab for each identifier | `Logo_ib-logo.webp`, `diagram_carnot-cycle.svg` |
-| **Config Files**     | camelCase                                                     | `sidebarItems.js`, `footerLinks.js`             |
-| **Variables**        | camelCase                                                     | `currentUser`, `pageMetadata`                   |
-| **Constants**        | UPPER_SNAKE_CASE                                              | `API_ENDPOINT`, `MAX_ITEMS`                     |
+[Conventional Commits](https://www.conventionalcommits.org/) are required.
 
-#### File Structure Principles
+```
+<type>(<scope>): <description>
 
-- **Documentation Content** (`docs/docs_*/`):
-  - Ensure nesting is less than 5 levels.
-  - Group related topics in folders (e.g., `maths/calculus/`)
-  - Name files by topic, not section titles (e.g., `rate-limiting.md` vs `api-rate-limits.md`)
-  -
-- **Custom Code** (`src/`):
-  - Separate components by:
+[optional body]
+```
 
-    ```
-    src/
-    ├── layout/
-    ├── hooks/
-    ├── context/
-    └── theme/
-    ```
+| Type       | Purpose                                    |
+| ---------- | ------------------------------------------ |
+| `feat`     | New feature                                |
+| `fix`      | Bug fix                                    |
+| `refactor` | Code restructuring without behavior change |
+| `docs`     | Documentation changes                      |
+| `test`     | Adding or updating tests                   |
+| `chore`    | Maintenance, tooling, config               |
+| `perf`     | Performance improvement                    |
+| `style`    | Formatting, whitespace (no logic change)   |
+| `ci`       | CI/CD configuration                        |
+| `build`    | Build system or dependencies               |
 
-- **Static Assets** (`static/`):
-  - Use subfolders: `/img`, `/fonts`, `/pdfs` \*\* For images: Prefer WebP format, use `_` for
-    multiword names (`error_404.webp`)
+Examples:
 
-#### Sidebar Ordering
+```
+feat(interactive): add periodic table element data module
+fix(search): resolve localStorage JSON.parse crash in TOCSidebar
+refactor(core): extract shared Docusaurus config into shared module
+```
 
-Inorder to be consistent with the ordering of the sidebar, documents and folder containing documents
-should be prefix with `01-`, where `01` should replaced by the desire index on the sidebar.
+## CI Pipeline Stages
 
-#### Content Quality
+All PRs run through the CI workflow. Jobs are conditionally executed based on the detected change
+type (`content`, `code`, `dependency`, or `none`).
 
-- All content must comply with the standards defined in
-  [CONTENT_STANDARD.md](./CONTENT_STANDARD.md).
-- Write for a technical audience: rigorous, deterministic, proof-based.
-- Include Common Pitfalls sections where applicable.
-- Every claim must be verifiable; cite sources where appropriate.
+### Required to Pass (blocks merge)
 
-#### Documentation Requirements
+| Stage              | Jobs                                                     |
+| ------------------ | -------------------------------------------------------- |
+| Static Analysis    | Lint, Typecheck                                          |
+| Build              | Docusaurus build (all 9 sub-sites), bundle size check    |
+| Unit Tests         | Vitest (288 tests)                                       |
+| Content Validation | MDX validation, relative link check, description quality |
+| External Links     | lychee link checker (PRs only)                           |
 
-- Front matter: Use required metadata:
+### Conditional
 
-  ```yaml
-  ---
-  title: Combinatorics
-  date: 2025-06-03T11:59:39.630Z
-  tags:
-    - Maths
-    - DSE
-  categories:
-    - Maths
-  slug: combinatorics
-  ---
-  ```
+| Stage                  | Condition                       |
+| ---------------------- | ------------------------------- |
+| Security Audit         | Dependency changes only         |
+| Lighthouse CI          | PRs only (after build succeeds) |
+| E2E Tests (Playwright) | PRs only                        |
+| Algolia Reindex        | Post-merge on `main` only       |
 
-  This can be easily managed using VSCode plugin `eliostruyf.vscode-front-matter`
+## Code Review Requirements
+
+1. All CI checks must pass before merge
+2. At least one approval is required
+3. Automated dependabot patch updates are auto-approved and auto-merged
+
+## Content Quality Standards
+
+All documentation content must comply with the standards defined in
+[CONTENT_STANDARD.md](./CONTENT_STANDARD.md). Key requirements:
+
+- Write for a technical audience: rigorous, deterministic, proof-based
+- Include "Common Pitfalls" sections where applicable
+- Every claim must be verifiable; cite sources where appropriate
+- Avoid vague qualifiers ("obviously", "clearly", "intuitively")
+
+## Frontmatter Requirements
+
+Every documentation file must include frontmatter with the following fields:
+
+```yaml
+---
+title: Topic Title
+date: 2026-06-02T00:00:00.000Z
+tags:
+  - SubjectTag
+  - ExamLevel
+categories:
+  - CategoryName
+slug: topic-slug
+description: A concise 120-160 character description of the page content.
+---
+```
+
+| Field         | Required | Constraint                                  |
+| ------------- | -------- | ------------------------------------------- |
+| `title`       | Yes      | Human-readable page title                   |
+| `date`        | Yes      | ISO 8601 datetime                           |
+| `tags`        | Yes      | Subject and level tags                      |
+| `categories`  | Yes      | Categorization                              |
+| `slug`        | Yes      | URL-safe identifier                         |
+| `description` | Yes      | 120-160 characters, unique across all files |
+
+Frontmatter can be managed using the VS Code plugin `eliostruyf.vscode-front-matter`.
+
+## Formatting Conventions
+
+| Type             | Convention                        | Example                          |
+| ---------------- | --------------------------------- | -------------------------------- |
+| Folders          | `lowercase-kebab`                 | `api-reference/`, `data-models/` |
+| Markdown files   | `lowercase-kebab`                 | `getting-started.md`             |
+| React components | `camelCase`                       | `themeToggle.tsx`                |
+| Utility files    | `camelCase`                       | `formatDate.ts`                  |
+| Assets (images)  | `lowercase_snake` with tag prefix | `Logo_ib-logo.webp`              |
+| Config files     | `camelCase`                       | `sidebarItems.js`                |
+| Variables        | `camelCase`                       | `currentUser`                    |
+| Constants        | `UPPER_SNAKE_CASE`                | `API_ENDPOINT`                   |
+
+### Sidebar Ordering
+
+Documents and folders must be prefixed with a numeric index for consistent sidebar ordering:
+
+```
+01-introduction/
+  01-overview.md
+  02-prerequisites.md
+02-core-concepts/
+  01-definitions.md
+```
