@@ -1,6 +1,8 @@
 ---
 title: Born-Haber Cycles
-description: 'A-Level Chemistry Born-Haber Cycles notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'A-Level Chemistry Born-Haber Cycles notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused preparation.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -250,9 +252,9 @@ Knowledge of the crystal structure (Madelung constant).
 
 Lattice enthalpy becomes more exothermic as the product of ion charges increases:
 
-$, $
+$$
 \mathrm{NaCl}\,(-788) \lt \mathrm{MgO}\,(-3844) \lt \mathrm{Al}_2\mathrm{O}_3\,(-15916\,\mathrm{kJ/mol})
-$, $
+$$
 
 The Coulombic energy is proportional to $z^+ z^-$So doubling the charge roughly quadruples the
 Lattice enthalpy.
@@ -262,13 +264,13 @@ Lattice enthalpy.
 For ions of the same charge, lattice enthalpy becomes more exothermic as ionic radii decrease (ions
 Can approach more closely, increasing Coulombic attraction):
 
-$, $
+$$
 \mathrm{NaCl}\,(-788) \gt \mathrm{NaBr}\,(-740) \gt \mathrm{NaI}\,(-704)
-$, $
+$$
 
-$, $
+$$
 \mathrm{LiF}\,(-1036) \gt \mathrm{NaF}\,(-924) \gt \mathrm{KF}\,(-822)
-$, $
+$$
 
 ### Polarisation and Covalent Character (Fajans' Rules)
 
@@ -325,17 +327,17 @@ Calculate the lattice enthalpy of calcium fluoride ($\mathrm{CaF}_2$) given:
 
 For $\mathrm{CaF}_2$: one $\mathrm{Ca}$ atom and two $\mathrm{F}$ atoms are involved.
 
-$, $
+$$
 \Delta H_\mathrm{lat}^\circ = \Delta H_f^\circ - \Delta H_\mathrm{at}^\circ(\mathrm{Ca}) - 2\Delta H_\mathrm{at}^\circ(\mathrm{F}) - \mathrm{IE}_1 - \mathrm{IE}_2 - 2\mathrm{EA}_1
-$, $
+$$
 
-$, $
+$$
 \Delta H_\mathrm{lat}^\circ = -1220 - 178 - 2(79) - 590 - 1145 - 2(-328)
-$, $
+$$
 
-$, $
+$$
 \Delta H_\mathrm{lat}^\circ = -1220 - 178 - 158 - 590 - 1145 + 656 = -2635\,\mathrm{kJ/mol}
-$, $
+$$
 
 </details>
 
@@ -382,9 +384,9 @@ For MgO: $z^+ z^- = 2 \times 2 = 4$$r_0 \approx 72 + 140 = 212\,\mathrm{pm}$.
 The charge product for MgO is 4 times that of NaCl, and the ionic separation is smaller. The
 combined effect gives:
 
-$, $
+$$
 \frac◆LB◆\Delta H_\mathrm{lat}(\mathrm{MgO})◆RB◆◆LB◆\Delta H_\mathrm{lat}(\mathrm{NaCl})◆RB◆ \approx \frac{4}{1} \times \frac{283}{212} \approx 5.3
-$, $
+$$
 
 This ratio ($5.3$) is close to the experimental ratio ($3844/788 = 4.9$), confirming that the
 primary factor is the product of ionic charges. The higher charges produce much stronger Coulombic
@@ -447,9 +449,9 @@ greatly increased lattice enthalpy of the $2+$ compound. This is the thermodynam
 The solubility of an ionic compound depends on the balance between lattice enthalpy and hydration
 enthalpy:
 
-$, $
+$$
 \Delta H_\mathrm{sol}^\circ = \Delta H_\mathrm{lat,diss}^\circ + \Delta H_\mathrm{hyd}^\circ
-$, $
+$$
 
 For a salt to be soluble, $\Delta G_\mathrm{sol}^\circ$ must be negative. Since
 $\Delta G = \Delta H - T\Delta S$And $\Delta S_\mathrm{sol}$ is positive for simple salts (ions
@@ -496,9 +498,9 @@ character.
 
 The Born-Lande equation calculates the theoretical lattice enthalpy assuming perfect ionic bonding:
 
-$, $
+$$
 \Delta H_\mathrm{lat}^\circ = -\frac◆LB◆N_A M z^+ z^- e^2◆RB◆◆LB◆4\pi\varepsilon_0 r_0◆RB◆\left(1 - \frac{1}{n}\right)
-$, $
+$$
 
 Where $N_A$ is Avogadro's number, $M$ is the Madelung constant (depends on crystal structure), $z^+$
 and $z^-$ are the ionic charges, $r_0$ is the internuclear distance, and $n$ is the Born exponent
@@ -634,9 +636,8 @@ explains the very high melting point ($2072^\circ\mathrm{C}$) and hardness of al
 
 **Trend analysis:** The lattice enthalpy becomes less exothermic down Group 2 as the cation radius
 increases. The electrostatic attraction between the cation and the chloride ions decreases with
-increasing distance (the $1/r$ term in the Born-Lande equation). The anion
-($\mathrm{Cl}^-$, $r = 181\,\mathrm{pm}$) is constant, so the trend is driven entirely by the changing
-cation size.
+increasing distance (the $1/r$ term in the Born-Lande equation). The anion ($\mathrm{Cl}^-$,
+$r = 181\,\mathrm{pm}$) is constant, so the trend is driven entirely by the changing cation size.
 
 ### Example 4: Enthalpy of Solution Calculation
 

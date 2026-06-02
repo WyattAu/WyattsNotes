@@ -1,6 +1,8 @@
 ---
 title: Atomic Structure and Periodicity
-description: 'Qualifications Chemistry Atomic Structure and Periodicity notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'Qualifications Chemistry Atomic Structure and Periodicity notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-14
 tags:
   - ap
@@ -143,9 +145,9 @@ Six sets, corresponding to 6 electrons in the 2p subshell.
 
 Electrons fill orbitals from lowest to highest energy. The order is:
 
-$, $
+$$
 1s \lt 2s \lt 2p \lt 3s \lt 3p \lt 4s \lt 3d \lt 4p \lt 5s \lt 4d \lt 5p \lt 6s \lt 4f \lt 5d \lt 6p
-$, $
+$$
 
 The apparent anomaly ($4s$ before $3d$) arises because the 4s orbital has lower energy when empty,
 But once electrons occupy the 3d subshell, the energy levels shift and 3d drops below 4s. This has
@@ -193,18 +195,18 @@ Half-filled ($d^5$) or fully filled ($d^{10}$) subshell maximises this exchange 
 
 Write the electron configuration for Fe ($Z = 26$).
 
-$, $
+$$
 \mathrm{Fe: [\mathrm{Ar]\,4s^2 3d^6
-$, $
+$$
 
 Orbital diagram for $3d^6$:
 
-$, $
+$$
 \begin{array}{ccccc}
 \uparrow\downarrow & \uparrow\downarrow & \uparrow\downarrow & \uparrow & \uparrow \\
 M_\ell = -2 & -1 & 0 & 1 & 2
 \end{array}
-$, $
+$$
 
 The 4s electrons fill first but are written after 3d by convention.
 
@@ -233,9 +235,9 @@ Particularly stable. This explains why Mn$^{2+}$ is a common oxidation state for
 
 Light exhibits both wave and particle properties:
 
-$, $
+$$
 E = h\nu = \frac{hc}{\lambda}
-$, $
+$$
 
 Where $h = 6.626 \times 10^{-34} \mathrm{ J\cdot\mathrm{s$ (Planck's constant),
 $c = 3.00 \times 10^8 \mathrm{ m/s$$\nu$ is frequency, and $\lambda$ is wavelength.
@@ -253,9 +255,9 @@ The most negative (lowest) energy. As $n \to \infty$$E_n \to 0$Which is the ioni
 
 The radius of the $n$Th orbit:
 
-$, $
+$$
 R_n = n^2 a_0 = n^2 \times 0.529 \mathrm{ \AA
-$, $
+$$
 
 Where $a_0$ is the Bohr radius.
 

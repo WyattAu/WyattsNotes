@@ -36,14 +36,13 @@ the algebraic numbers, and they arise whenever we solve equations of degree 2 or
 
 For positive real numbers $a$ and $b$:
 
-$, $
+$$
 \begin{aligned}
 \sqrt{a}\sqrt{b} &= \sqrt{ab} \\
 \frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{b}◆RB◆ &= \sqrt◆LB◆\frac{a}{b}◆RB◆ \\
 (\sqrt{a})^n &= a^{n/2}
 \end{aligned}
-$,
-$
+$$
 
 These follow directly from the laws of indices (which we prove in Section 2), since
 $\sqrt{a} = a^{1/2}$.
@@ -53,21 +52,19 @@ Numerator and denominator by the surd (or its conjugate) to eliminate it.
 
 For a denominator of the form $\sqrt{a}$Multiply by $\frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{a}◆RB◆$:
 
-$, $
+$$
 \begin{aligned}
 \frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ &= \frac◆LB◆1◆RB◆◆LB◆\sqrt{a}◆RB◆ \cdot \frac◆LB◆\sqrt{a}◆RB◆◆LB◆\sqrt{a}◆RB◆ = \frac◆LB◆\sqrt{a}◆RB◆◆LB◆a◆RB◆
 \end{aligned}
-$,
-$
+$$
 
 For a denominator of the form $a + b\sqrt{c}$Multiply by the _conjugate_ $a - b\sqrt{c}$:
 
-$, $
+$$
 \begin{aligned}
 \frac◆LB◆1◆RB◆◆LB◆a + b\sqrt{c}◆RB◆ &= \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆(a + b\sqrt{c})(a - b\sqrt{c})◆RB◆ = \frac◆LB◆a - b\sqrt{c}◆RB◆◆LB◆a^2 - b^2 c◆RB◆
 \end{aligned}
-$,
-$
+$$
 
 :::warning A common error is to "rationalise" by splitting the fraction:
 $\frac◆LB◆a + b\sqrt{c}◆RB◆◆LB◆d◆RB◆ \neq \frac{a}{d} + b\sqrt◆LB◆\frac{c}{d}◆RB◆$ . Always
@@ -185,12 +182,11 @@ Factorisation is the reverse of expansion. The key techniques are:
 
 _Proof._ Direct expansion:
 
-$, $
+$$
 \begin{aligned}
 (a - b)(a + b) &= a^2 + ab - ab - b^2 = a^2 - b^2 \quad \blacksquare
 \end{aligned}
-$,
-$
+$$
 
 ### 3.3 Factorising Cubics
 
@@ -208,7 +204,7 @@ State the general theorem.
 
 **Example.** Divide $x^3 + 2x^2 - 5x + 6$ by $x - 1$.
 
-$, $
+$$
 \begin{aligned}
 X^3 + 2x^2 - 5x + 6 &= (x - 1)(x^2) + \mathrm{remainder of } x^3 - x^2 \\
 &= (x - 1)(x^2) + 3x^2 - 5x + 6 \\
@@ -218,8 +214,7 @@ X^3 + 2x^2 - 5x + 6 &= (x - 1)(x^2) + \mathrm{remainder of } x^3 - x^2 \\
 &= (x - 1)(x^2 + 3x - 2) - 2(x - 1) \\
 &= (x - 1)(x^2 + 3x - 2) + 4
 \end{aligned}
-$,
-$
+$$
 
 So the quotient is $x^2 + 3x - 2$ with remainder $4$.
 

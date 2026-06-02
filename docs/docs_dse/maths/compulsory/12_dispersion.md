@@ -1,6 +1,8 @@
 ---
 title: Dispersion
-description: 'DSE Maths Dispersion notes covering key definitions, core concepts, worked examples, and practice questions for effective exam preparation and revision.'
+description:
+  'DSE Maths Dispersion notes covering key definitions, core concepts, worked examples, and practice
+  questions for effective exam preparation and revision.'
 date: 2025-06-03T16:18:22.480Z
 tags:
   - Maths
@@ -328,12 +330,12 @@ The between-group variation caused by the difference in means.
 
 Combined mean: $\bar{x}_c = \frac{6(10)+4(20)}{10} = 14$.
 
-$, $
+$$
 \begin{aligned}
  \sigma_c^2 &= \frac{6(4) + 4(9) + 6(10-14)^2 + 4(20-14)^2}{10} \\
  &= \frac{24 + 36 + 96 + 144}{10} = \frac{300}{10} = 30
 \end{aligned}
-$, $
+$$
 
 ## Applications
 
@@ -342,11 +344,11 @@ $, $
 The **coefficient of variation (CV)** allows comparison of variability between datasets measured in
 Different units or with vastly different means:
 
-$, $
+$$
 \begin{aligned}
  \mathrm{CV} = \frac{\sigma}{\bar{x}} \times 100\%
 \end{aligned}
-$, $
+$$
 
 A larger CV indicates greater relative dispersion.
 
@@ -446,7 +448,8 @@ deviation.
   &= \frac{1920 + 720 + 307.2 + 460.8}{50} \\
   &= \frac{3408}{50} = 68.16
   \end{aligned}
-  $, $
+  $,
+  $
 - Combined standard deviation: $\sigma_c = \sqrt{68.16} \approx 8.26$.
 
 5. **Question:** The following are the lifetimes (in hours) of $10$ light bulbs:
@@ -518,7 +521,8 @@ Estimate the median weight from the cumulative frequency distribution.
   &= 139.5 + \frac{5}{20} \times 20 \\
   &= 139.5 + 5 = 144.5 \mathrm{ g}
   \end{aligned}
-  $, $
+  $,
+  $
 
 10. **Question:** For the dataset $\{3, 7, 7, 2, 9, 5, 1, 8, 6, 4\}$Find $\sum x_i$$\sum x_i^2$ The
 mean, and the population variance. Verify your variance using both the definition formula and The

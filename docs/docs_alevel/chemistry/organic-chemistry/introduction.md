@@ -1,6 +1,8 @@
 ---
 title: Organic Chemistry Introduction
-description: 'A-Level Organic Chemistry Introduction notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
+description:
+  'A-Level Organic Chemistry Introduction notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough revision.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -15,8 +17,8 @@ slug: organic-chemistry-introduction
 Organic chemistry is the study of the structure, properties, composition, reactions, and preparation
 Of carbon-containing compounds. Carbon occupies a unique position in the periodic table: its ability
 To form four covalent bonds, catenate (form chains and rings), and hybridise in multiple
-Configurations ($sp^3$, $sp^2$, $sp$) produces a combinatorial space of molecules that dwarfs all Other
-branches of chemistry combined.
+Configurations ($sp^3$, $sp^2$, $sp$) produces a combinatorial space of molecules that dwarfs all
+Other branches of chemistry combined.
 
 This module serves as the conceptual foundation for every subsequent organic topic. It defines the
 Systematic rules for naming, classifying, and reasoning about organic molecules.
@@ -594,9 +596,9 @@ distinguish between isobaric formulas.
 
 ### Step 2: Calculate the Degree of Unsaturation (Index of Hydrogen Deficiency)
 
-$, $
+$$
 \text{DoU} = \frac{2C + 2 + N - H - X}{2}
-$, $
+$$
 
 Where $C$ = number of carbons, $H$ = hydrogens, $N$ = nitrogens, $X$ = halogens. Oxygen does not
 affect the DoU.

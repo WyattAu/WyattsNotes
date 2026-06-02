@@ -1,6 +1,8 @@
 ---
 title: Modern Physics
-description: 'ILC Modern Physics notes covering key definitions, core concepts, worked examples, and practice questions for focused learning and effective revision.'
+description:
+  'ILC Modern Physics notes covering key definitions, core concepts, worked examples, and practice
+  questions for focused learning and effective revision.'
 date: 2026-04-14
 tags:
   - ilc
@@ -600,17 +602,17 @@ Higher $A$ can gain stability by fissioning (moving left).
 Nucleon. ($m(\mathrm{^1H}) = 1.0078\mathrm{ u$$m_n = 1.0087\mathrm{ u$
 $1\mathrm{ u = 931.5\mathrm{ MeV/c^2$).
 
-$, $
+$$
 \Delta m = 2(1.0078) + 2(1.0087) - 4.0026 = 2.0156 + 2.0174 - 4.0026 = 0.0304\mathrm{ u
-$, $
+$$
 
-$, $
+$$
 E_b = 0.0304 \times 931.5 = 28.3\mathrm{ MeV
-$, $
+$$
 
-$, $
+$$
 \frac{E_b}{A} = \frac{28.3}{4} = 7.08\mathrm{ MeV/nucleon
-$, $
+$$
 
 ### Radioactivity (OL/HL)
 
@@ -663,22 +665,22 @@ Statistical property: it does not mean that individual nuclei "wait" for $t_{1/2
 Each nucleus has a fixed probability of decaying per unit time, and the half-life emerges from the
 Statistics of large numbers.
 
-$, $
+$$
 N = N_0 \left(\frac{1}{2}\right)^{t/t_{1/2}}
-$, $
+$$
 
-$, $
+$$
 N = N_0 e^{-\lambda t}
-$, $
+$$
 
 Where $\lambda = \frac{\ln 2}{t_{1/2}}$ is the **decay constant**, the probability of decay per unit
 Time per nucleus.
 
 The **activity** $A$ (rate of decay) is:
 
-$, $
+$$
 A = \lambda N = -\frac{dN}{dt}
-$, $
+$$
 
 Activity is measured in becquerels (Bq), where $1\mathrm{ Bq = 1\mathrm{ decay/s$.
 
@@ -687,19 +689,19 @@ Activity is measured in becquerels (Bq), where $1\mathrm{ Bq = 1\mathrm{ decay/s
 Starting from the definition of the decay constant: each nucleus has probability $\lambda \, dt$ of
 Decaying in a short time interval $dt$. For $N$ nuclei:
 
-$, $
+$$
 DN = -\lambda N \, dt
-$, $
+$$
 
-$, $
+$$
 \frac{dN}{N} = -\lambda \, dt
-$, $
+$$
 
 Integrating:
 
-$, $
+$$
 \ln N = -\lambda t + C
-$, $
+$$
 
 At $t = 0$$N = N_0$So $C = \ln N_0$:
 

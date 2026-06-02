@@ -58,10 +58,10 @@ Increasing temperature:
 
 | Law          | Relationship    | Condition held constant |
 | ------------ | --------------- | ----------------------- |
-| Boyle's      | $P \propto 1/V$ | $n$, $T$                  |
-| Charles's    | $V \propto T$   | $n$, $P$                  |
-| Gay-Lussac's | $P \propto T$   | $n$, $V$                  |
-| Avogadro's   | $V \propto n$   | $P$, $T$                  |
+| Boyle's      | $P \propto 1/V$ | $n$, $T$                |
+| Charles's    | $V \propto T$   | $n$, $P$                |
+| Gay-Lussac's | $P \propto T$   | $n$, $V$                |
+| Avogadro's   | $V \propto n$   | $P$, $T$                |
 
 Combining: $PV \propto nT$Giving the ideal gas equation:
 
@@ -473,48 +473,48 @@ and the total pressure.
 <details>
 <summary>Solution</summary>
 
-$, $
+$$
 N(\mathrm{H}_2) = \frac{2.00}{2.02} = 0.990\mathrm{ mol}
-$, $
+$$
 
-$, $
+$$
 N(\mathrm{N}_2) = \frac{14.0}{28.0} = 0.500\mathrm{ mol}
-$, $
+$$
 
-$, $
+$$
 N_{\mathrm{total}} = 0.990 + 0.500 = 1.490\mathrm{ mol}
-$, $
+$$
 
-$, $
+$$
 T = 27\degree\mathrm{C} = 300\mathrm{ K}
-$, $
+$$
 
 Using the ideal gas law for the total mixture
 ($R = 8.314 \times 10^{-2}\mathrm{ L \cdot kPa/(mol \cdot K)}$):
 
-$, $
+$$
 P_{\mathrm{total}} = \frac{n_{\mathrm{total}}RT}{V} = \frac{1.490 \times 8.314 \times 10^{-2} \times 300}{10.0} = \frac{371.6}{10.0} = 371.6\mathrm{ kPa}
-$, $
+$$
 
 Mole fractions:
 
-$, $
+$$
 X_{\mathrm{H}_2} = \frac{0.990}{1.490} = 0.664
-$, $
+$$
 
-$, $
+$$
 X_{\mathrm{N}_2} = \frac{0.500}{1.490} = 0.336
-$, $
+$$
 
 Partial pressures:
 
-$, $
+$$
 P_{\mathrm{H}_2} = 0.664 \times 371.6 = 247\mathrm{ kPa}
-$, $
+$$
 
-$, $
+$$
 P_{\mathrm{N}_2} = 0.336 \times 371.6 = 125\mathrm{ kPa}
-$, $
+$$
 
 Check: $247 + 125 = 372\mathrm{ kPa}$ (rounding difference from $371.6\mathrm{ kPa}$).
 
@@ -703,8 +703,8 @@ The integrated Clausius-Clapeyron equation:
 
 $$\ln\!\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{\mathrm{vap}}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
 
-Substituting: $P_1 = 2.34\;\mathrm{kPa}$, $T_1 = 293\;\mathrm{K}$
-$P_2 = 7.38\;\mathrm{kPa}$, $T_2 = 313\;\mathrm{K}$
+Substituting: $P_1 = 2.34\;\mathrm{kPa}$, $T_1 = 293\;\mathrm{K}$ $P_2 = 7.38\;\mathrm{kPa}$,
+$T_2 = 313\;\mathrm{K}$
 
 $$\ln\!\left(\frac{7.38}{2.34}\right) = -\frac{\Delta H_{\mathrm{vap}}}{8.314}\left(\frac{1}{313} - \frac{1}{293}\right)$$
 
@@ -818,14 +818,13 @@ $500\;\mathrm{K}$ and $100\;\mathrm{atm}$ for the same gas.
 <details>
 <summary>Problem 14: Extended Response -- Phase Diagram Interpretation</summary>
 
-The phase diagram of a substance shows a triple point at
-$T = 150\;\mathrm{K}$, $P = 0.5\;\mathrm{atm}$A normal melting point of $180\;\mathrm{K}$And a
-critical point at $T = 350\;\mathrm{K}$, $P = 45\;\mathrm{atm}$. The solid-liquid boundary has a
-positive slope. (a) Sketch the phase diagram. (b) Describe what happens when the substance at
-$200\;\mathrm{K}$ and $1.0\;\mathrm{atm}$ is compressed to $50\;\mathrm{atm}$ at constant
-temperature. (c) Explain why the solid-liquid boundary has a positive slope for this substance but a
-negative slope for water. (d) At what minimum temperature can the substance be liquefied by pressure
-alone?
+The phase diagram of a substance shows a triple point at $T = 150\;\mathrm{K}$,
+$P = 0.5\;\mathrm{atm}$A normal melting point of $180\;\mathrm{K}$And a critical point at
+$T = 350\;\mathrm{K}$, $P = 45\;\mathrm{atm}$. The solid-liquid boundary has a positive slope. (a)
+Sketch the phase diagram. (b) Describe what happens when the substance at $200\;\mathrm{K}$ and
+$1.0\;\mathrm{atm}$ is compressed to $50\;\mathrm{atm}$ at constant temperature. (c) Explain why the
+solid-liquid boundary has a positive slope for this substance but a negative slope for water. (d) At
+what minimum temperature can the substance be liquefied by pressure alone?
 
 </details>
 
@@ -856,9 +855,9 @@ alone?
   is an upper bound.
 
 - **Ignoring the role of unit conversions in gas density calculations**: Gas density
-  $\rho = PM/(RT)$ requires $P$ in $\mathrm{Pa}$, $M$ in
-  $\mathrm{kg/mol}$, $R = 8.314\;\mathrm{J/(mol \cdot K)}$And $T$ in $\mathrm{K}$ to get density in
-  $\mathrm{kg/m}^3$. Using $M$ in $\mathrm{g/mol}$ gives a result that is off by a factor of 1000.
+  $\rho = PM/(RT)$ requires $P$ in $\mathrm{Pa}$, $M$ in $\mathrm{kg/mol}$,
+  $R = 8.314\;\mathrm{J/(mol \cdot K)}$And $T$ in $\mathrm{K}$ to get density in $\mathrm{kg/m}^3$.
+  Using $M$ in $\mathrm{g/mol}$ gives a result that is off by a factor of 1000.
 
 ---
 

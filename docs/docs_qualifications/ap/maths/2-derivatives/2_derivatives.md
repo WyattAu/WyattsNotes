@@ -147,41 +147,39 @@ Let $c$ be a constant and $n$ a real number:
 
 ### Product Rule
 
-$, $
+$$
 \frac{d}{dx}[f(x) \cdot g(x)] = f'(x)g(x) + f(x)g'(x)
-$, $
+$$
 
 **Proof sketch.** Write $F(x) = f(x)g(x)$ and expand the difference quotient
 $\frac{F(x+h) - F(x)}{h}$ by adding and subtracting $f(x+h)g(x)$:
 
-$, $
+$$
 \frac{f(x+h)g(x+h) - f(x)g(x)}{h} = f(x+h)\frac{g(x+h) - g(x)}{h} + g(x)\frac{f(x+h) - f(x)}{h}
-$,
-$
+$$
 
 Taking limits as $h \to 0$ gives the result. $\blacksquare$
 
 ### Quotient Rule
 
-$, $
+$$
 \frac{d}{dx}\!\left[\frac{f(x)}{g(x)}\right] = \frac{g(x)f'(x) - f(x)g'(x)}{[g(x)]^2}
-$, $
+$$
 
 **Proof.** Let $F(x) = \frac{f(x)}{g(x)}$So $f(x) = F(x)g(x)$. Differentiating using the product
 Rule:
 
-$, $
+$$
 F'(x) = F'(x)g(x) + F(x)g'(x)
-$, $
+$$
 
-$, $
+$$
 F'(x)g(x) = f'(x) - F(x)g'(x) = f'(x) - \frac{f(x)}{g(x)}g'(x)
-$, $
+$$
 
-$, $
+$$
 F'(x) = \frac{f'(x)}{g(x)} - \frac{f(x)g'(x)}{[g(x)]^2} = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}
-$,
-$
+$$
 
 $\blacksquare$
 
@@ -189,9 +187,9 @@ $\blacksquare$
 
 ### Chain Rule
 
-$, $
+$$
 \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
-$, $
+$$
 
 **Why the chain rule works.** If $y = f(u)$ and $u = g(x)$Then
 $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$. This is a cancellation of the $du$ terms
@@ -199,26 +197,25 @@ $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$. This is a cancellation of t
 
 **Proof of the chain rule.** Let $u = g(x)$ and define:
 
-$, $
+$$
 K(h) = \frac{f(u + h) - f(u)}{h} - f'(u) \quad \mathrm{when  h \ne 0, \quad k(0) = 0
-$, $
+$$
 
 Then $\displaystyle\lim_{h \to 0} k(h) = 0$ and $f(u+h) - f(u) = [f'(u) + k(h)] \cdot h$ for all
 $h$.
 
 Let $\Delta u = g(x+h) - g(x)$. Then:
 
-$, $
+$$
 \frac{f(g(x+h)) - f(g(x))}{h} = \frac{f(u + \Delta u) - f(u)}{h} = [f'(u) + k(\Delta u)] \cdot \frac{\Delta u}{h}
-$,
-$
+$$
 
 Taking $h \to 0$: $\Delta u \to 0$ (since $g$ is differentiable, hence continuous), so
 $k(\Delta u) \to 0$Giving:
 
-$, $
+$$
 F'(g(x)) \cdot g'(x)
-$, $
+$$
 
 $\blacksquare$
 
@@ -228,9 +225,9 @@ Find $\displaystyle\frac{d}{dx}\left[(3x^2 + 1)^5\right]$.
 
 Let $u = 3x^2 + 1$So $y = u^5$.
 
-$, $
+$$
 \frac{dy}{dx} = 5u^4 \cdot \frac{du}{dx} = 5(3x^2 + 1)^4 \cdot 6x = 30x(3x^2 + 1)^4
-$, $
+$$
 
 :::
 
@@ -240,10 +237,9 @@ Find $\displaystyle\frac{d}{dx}\left[\sin^3(2x)\right]$.
 
 Apply the chain rule twice:
 
-$, $
+$$
 \frac{d}{dx}\left[\sin^3(2x)\right] = 3\sin^2(2x) \cdot \cos(2x) \cdot 2 = 6\sin^2(2x)\cos(2x)
-$,
-$
+$$
 
 :::
 
@@ -253,9 +249,9 @@ Find $\displaystyle\frac{d}{dx}\left[\ln(\sin x)\right]$.
 
 Let $u = \sin x$So $y = \ln u$.
 
-$, $
+$$
 \frac{dy}{dx} = \frac{1}{\sin x} \cdot \cos x = \cot x
-$, $
+$$
 
 :::
 
@@ -265,64 +261,59 @@ Find $\displaystyle\frac{d}{dx}\left[e^{\sqrt{3x+1}}\right]$.
 
 Apply the chain rule twice:
 
-$, $
+$$
 \frac{d}{dx}\left[e^{\sqrt{3x+1}}\right] = e^{\sqrt{3x+1}} \cdot \frac{d}{dx}\!\left[(3x+1)^{1/2}\right] = e^{\sqrt{3x+1}} \cdot \frac{1}{2}(3x+1)^{-1/2} \cdot 3 = \frac{3e^{\sqrt{3x+1}}}{2\sqrt{3x+1}}
-$,
-$
+$$
 
 :::
 
 ## Derivatives of Trigonometric Functions
 
-$, $
+$$
 \frac{d}{dx}[\sin x] = \cos x \qquad \frac{d}{dx}[\cos x] = -\sin x
-$, $
+$$
 
-$, $
+$$
 \frac{d}{dx}[\tan x] = \sec^2 x \qquad \frac{d}{dx}[\cot x] = -\csc^2 x
-$, $
+$$
 
-$, $
+$$
 \frac{d}{dx}[\sec x] = \sec x \tan x \qquad \frac{d}{dx}[\csc x] = -\csc x \cot x
-$, $
+$$
 
 ### Proof that $\displaystyle\frac{d}{dx}[\sin x] = \cos x$
 
-$, $
+$$
 \frac{d}{dx}[\sin x] = \lim_{h \to 0} \frac{\sin(x+h) - \sin x}{h} = \lim_{h \to 0} \frac{\sin x \cos h + \cos x \sin h - \sin x}{h}
-$,
-$
+$$
 
-$, $
+$$
 = \lim_{h \to 0}\!\left[\sin x \cdot \frac{\cos h - 1}{h} + \cos x \cdot \frac{\sin h}{h}\right] = \sin x \cdot 0 + \cos x \cdot 1 = \cos x
-$,
-$
+$$
 
 ### Proof that $\displaystyle\frac{d}{dx}[\tan x] = \sec^2 x$
 
-$, $
+$$
 \frac{d}{dx}[\tan x] = \frac{d}{dx}\!\left[\frac{\sin x}{\cos x}\right] = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x} = \frac{\cos^2 x + \sin^2 x}{\cos^2 x} = \frac{1}{\cos^2 x} = \sec^2 x
-$,
-$
+$$
 
 $\blacksquare$
 
 ## Derivatives of Exponential and Logarithmic Functions
 
-$, $
+$$
 \frac{d}{dx}[e^x] = e^x \qquad \frac{d}{dx}[a^x] = a^x \ln a
-$, $
+$$
 
-$, $
+$$
 \frac{d}{dx}[\ln x] = \frac{1}{x} \qquad \frac{d}{dx}[\log_a x] = \frac{1}{x \ln a}
-$, $
+$$
 
 ### Proof that $\displaystyle\frac{d}{dx}[e^x] = e^x$
 
-$, $
+$$
 \frac{d}{dx}[e^x] = \lim_{h \to 0} \frac{e^{x+h} - e^x}{h} = e^x \lim_{h \to 0} \frac{e^h - 1}{h} = e^x \cdot 1 = e^x
-$,
-$
+$$
 
 Where we used $\displaystyle\lim_{h \to 0} \frac{e^h - 1}{h} = 1$.
 
@@ -335,22 +326,21 @@ $\frac{dy}{dx} = \frac{1}{e^y} = \frac{1}{x}$. $\blacksquare$
 
 Write $a^x = e^{x \ln a}$. Then:
 
-$, $
+$$
 \frac{d}{dx}[a^x] = \frac{d}{dx}[e^{x \ln a}] = e^{x \ln a} \cdot \ln a = a^x \ln a
-$, $
+$$
 
 $\blacksquare$
 
 ## Inverse Trigonometric Derivatives
 
-$, $
+$$
 \frac{d}{dx}[\arcsin x] = \frac{1}{\sqrt{1 - x^2}} \qquad \frac{d}{dx}[\arccos x] = \frac{-1}{\sqrt{1 - x^2}}
-$,
-$
+$$
 
-$, $
+$$
 \frac{d}{dx}[\arctan x] = \frac{1}{1 + x^2}
-$, $
+$$
 
 **Derivation of $\arcsin x$.** Let $y = \arcsin x$So $x = \sin y$. Differentiating:
 $1 = \cos y \cdot
@@ -375,9 +365,9 @@ Find $\displaystyle\frac{dy}{dx}$ for $x^2 + y^2 = 25$.
 
 Differentiate both sides with respect to $x$:
 
-$, $
+$$
 2x + 2y\frac{dy}{dx} = 0 \implies \frac{dy}{dx} = -\frac{x}{y}
-$, $
+$$
 
 :::
 
@@ -387,9 +377,9 @@ Find the equation of the tangent line to $x^2 + y^2 = 25$ at the point $(3, 4)$.
 
 From the previous example, $\displaystyle\frac{dy}{dx} = -\frac{x}{y}$. At $(3, 4)$:
 
-$, $
+$$
 \left.\frac{dy}{dx}\right|_{(3,4)} = -\frac{3}{4}
-$, $
+$$
 
 The tangent line is $y - 4 = -\frac{3}{4}(x - 3)$Or $3x + 4y = 25$.
 
@@ -401,21 +391,21 @@ Find $\displaystyle\frac{dy}{dx}$ for $x^3 + y^3 = 6xy$.
 
 Differentiate implicitly:
 
-$, $
+$$
 3x^2 + 3y^2\frac{dy}{dx} = 6y + 6x\frac{dy}{dx}
-$, $
+$$
 
-$, $
+$$
 3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2
-$, $
+$$
 
-$, $
+$$
 \frac{dy}{dx}(3y^2 - 6x) = 6y - 3x^2
-$, $
+$$
 
-$, $
+$$
 \frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}
-$, $
+$$
 
 :::
 
@@ -427,10 +417,9 @@ We have $\frac{dy}{dx} = -\frac{x}{y}$.
 
 Differentiating again:
 
-$, $
+$$
 \frac{d^2y}{dx^2} = \frac{d}{dx}\!\left(-\frac{x}{y}\right) = -\frac{y - x\frac{dy}{dx}}{y^2} = -\frac{y - x(-x/y)}{y^2} = -\frac{y^2 + x^2}{y^3} = -\frac{25}{y^3}
-$,
-$
+$$
 
 :::
 
@@ -440,21 +429,21 @@ Find $\displaystyle\frac{dy}{dx}$ for $e^{xy} + y = x^2$.
 
 Differentiate implicitly with respect to $x$:
 
-$, $
+$$
 E^{xy}\!\left(y + x\frac{dy}{dx}\right) + \frac{dy}{dx} = 2x
-$, $
+$$
 
-$, $
+$$
 E^{xy} \cdot y + e^{xy} \cdot x \frac{dy}{dx} + \frac{dy}{dx} = 2x
-$, $
+$$
 
-$, $
+$$
 \frac{dy}{dx}(xe^{xy} + 1) = 2x - ye^{xy}
-$, $
+$$
 
-$, $
+$$
 \frac{dy}{dx} = \frac{2x - ye^{xy}}{xe^{xy} + 1}
-$, $
+$$
 
 :::
 
@@ -462,9 +451,9 @@ $, $
 
 The second derivative is the derivative of the first derivative:
 
-$, $
+$$
 F''(x) = \frac{d}{dx}[f'(x)] = \frac{d^2y}{dx^2}
-$, $
+$$
 
 Similarly, $f'''(x)$$f^{(4)}(x)$Etc. Denote higher-order derivatives.
 
@@ -575,13 +564,13 @@ Use linear approximation to estimate $\sqrt{4.1}$.
 
 Let $f(x) = \sqrt{x}$$a = 4$.
 
-$, $
+$$
 F'(x) = \frac{1}{2\sqrt{x}} \implies f(4) = 2, \quad f'(4) = \frac{1}{4}
-$, $
+$$
 
-$, $
+$$
 \sqrt{4.1} \approx 2 + \frac{1}{4}(4.1 - 4) = 2 + 0.025 = 2.025
-$, $
+$$
 
 (The actual value is approximately 2.02485.)
 
@@ -705,17 +694,17 @@ A farmer has 200 ft of fencing. Find the dimensions of the rectangular pen that 
 
 Let $x$ and $y$ be the dimensions. Then $2x + 2y = 200$So $y = 100 - x$.
 
-$, $
+$$
 A = xy = x(100 - x) = 100x - x^2
-$, $
+$$
 
-$, $
+$$
 \frac{dA}{dx} = 100 - 2x = 0 \implies x = 50
-$, $
+$$
 
-$, $
+$$
 \frac{d^2A}{dx^2} = -2 \lt 0 \quad \mathrm{(confirms maximum)
-$, $
+$$
 
 So $x = 50$$y = 50$And the maximum area is $2500 \mathrm{ ft^2$.
 

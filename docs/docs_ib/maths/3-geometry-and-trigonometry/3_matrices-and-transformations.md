@@ -922,9 +922,9 @@ Encrypt blocks of text. It demonstrates a direct application of matrices in cryp
 
 **Decryption:** Apply the inverse of the key matrix modulo 26:
 
-$, $
+$$
 \mathbf{p} = K^{-1}\mathbf{c} \pmod{26}
-$, $
+$$
 
 The key matrix $K$ must be invertible modulo 26, which requires $\det(K)$ to be coprime to 26 (i.e.
 $\gcd(\det(K), 26) = 1$).
@@ -967,9 +967,9 @@ Matrices are fundamental to 2D and 3D computer graphics. Every transformation of
 Matrix multiplications, 2D points $(x, y)$ are extended to homogeneous coordinates $(x, y, 1)$. A
 Translation by $(t_x, t_y)$ is then:
 
-$, $
+$$
 T = \begin`\{pmatrix}` 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end`\{pmatrix}`
-$, $
+$$
 
 Rotation and scaling in homogeneous coordinates use $3 \times 3$ matrices with the bottom row
 $(0, 0, 1)$.
@@ -999,9 +999,9 @@ The entry $p_{ij}$ represents the probability of moving from state $i$ to state 
 
 **State evolution.** If $\mathbf{s}^{(k)}$ is the state probability vector at step $k$Then:
 
-$, $
+$$
 \mathbf{s}^{(k)} = \mathbf{s}^{(0)} P^k
-$, $
+$$
 
 **Steady state.** A steady-state (stationary) vector $\mathbf{s}$ satisfies
 $\mathbf{s}P = \mathbf{s}$Or equivalently, $\mathbf{s}(P - I) = \mathbf{0}$. This means $\mathbf{s}$

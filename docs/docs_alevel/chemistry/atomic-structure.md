@@ -281,9 +281,9 @@ charge cations are even smaller: $\mathrm{Fe}^{3+} \lt \mathrm{Fe}^{2+} \lt \mat
 repulsion, causing the electron cloud to expand. For isoelectronic species (same number of
 electrons), the ionic radius decreases with increasing nuclear charge:
 
-$, $
+$$
 \mathrm{O}^{2-} \gt \mathrm{F}^- \gt \mathrm{Na}^+ \gt \mathrm{Mg}^{2+} \gt \mathrm{Al}^{3+}
-$, $
+$$
 
 All have the neon electron configuration ($1s^2 2s^2 2p^6$), but nuclear charge increases from 8
 to 13.
@@ -301,20 +301,20 @@ nuclear charge from a valence electron. A simplified model (Slater's rules) assi
 
 ### Effective Nuclear Charge ($Z_\mathrm{eff}$)
 
-$, $
+$$
 Z_\mathrm{eff} = Z - \sigma
-$, $
+$$
 
 **Worked Example.** For potassium ($Z = 19$Configuration $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1$), the
 shielding experienced by the $4s$ electron:
 
-$, $
+$$
 \sigma = (8 \times 0.85) + (10 \times 1.00) = 6.8 + 10.0 = 16.8
-$, $
+$$
 
-$, $
+$$
 Z_\mathrm{eff} = 19 - 16.8 = 2.2
-$, $
+$$
 
 This low effective nuclear charge explains why the $4s$ electron is so lost (low first ionisation
 energy of K).

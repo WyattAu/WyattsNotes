@@ -194,30 +194,28 @@ with a standard solution of known concentration.
 $0.100\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$. The mean titre is $21.5\,\mathrm{cm}^3$. Calculate the
 concentration of $\mathrm{NaOH}$.
 
-$, $
+$$
 \mathrm{NaOH} + \mathrm{HCl} \to \mathrm{NaCl} + \mathrm{H}_2\mathrm{O}
-$, $
+$$
 
-$, $
+$$
 N(\mathrm{HCl}) = 0.100 \times 0.0215 = 2.15 \times 10^{-3}\,\mathrm{mol}
-$, $
+$$
 
 Stoichiometry: $n(\mathrm{NaOH}) = n(\mathrm{HCl}) = 2.15 \times 10^{-3}\,\mathrm{mol}$.
 
-$, $
+$$
 C(\mathrm{NaOH}) = \frac◆LB◆2.15 \times 10^{-3}◆RB◆◆LB◆0.0250◆RB◆ = 0.0860\,\mathrm{mol/dm}^3
-$,
-$
+$$
 
 ### Redox Titrations
 
 Redox titrations use oxidation-reduction reactions. A common example is the titration of
 $\mathrm{Fe}^{2+}$ with $\mathrm{MnO}_4^-$:
 
-$, $
+$$
 5\mathrm{Fe}^{2+}(aq) + \mathrm{MnO}_4^-(aq) + 8\mathrm{H}^+(aq) \to 5\mathrm{Fe}^{3+}(aq) + \mathrm{Mn}^{2+}(aq) + 4\mathrm{H}_2\mathrm{O}(l)
-$,
-$
+$$
 
 Potassium manganate(VII) is self-indicating: the purple $\mathrm{MnO}_4^-$ is decolourised until the
 endpoint, when a persistent pink colour appears.
@@ -232,34 +230,33 @@ with $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{HCl}$ (excess).
 requires $24.5\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ for neutralisation. Find
 the identity of metal $\mathrm{M}$.
 
-$, $
+$$
 \mathrm{MCO}_3 + 2\mathrm{HCl} \to \mathrm{MCl}_2 + \mathrm{CO}_2 + \mathrm{H}_2\mathrm{O}
-$, $
+$$
 
-$, $
+$$
 N(\mathrm{HCl}\mathrm{ added}) = 1.00 \times 0.0500 = 0.0500\,\mathrm{mol}
-$, $
+$$
 
-$, $
+$$
 N(\mathrm{HCl}\mathrm{ remaining}) = n(\mathrm{NaOH}) = 1.00 \times 0.0245 = 0.0245\,\mathrm{mol}
-$,
-$
+$$
 
-$, $
+$$
 N(\mathrm{HCl}\mathrm{ reacted}) = 0.0500 - 0.0245 = 0.0255\,\mathrm{mol}
-$, $
+$$
 
-$, $
+$$
 N(\mathrm{MCO}_3) = \frac{0.0255}{2} = 0.01275\,\mathrm{mol}
-$, $
+$$
 
-$, $
+$$
 M_r(\mathrm{MCO}_3) = \frac{2.00}{0.01275} = 156.9
-$, $
+$$
 
-$, $
+$$
 A_r(\mathrm{M}) = 156.9 - 60.0 = 96.9
-$, $
+$$
 
 The metal is **barium** ($A_r = 137.3$ is closest for Group 2; recalculating:
 $M_r = 2.00/0.01275 = 156.9$; $A_r(\mathrm{M}) = 156.9 - 12.0 - 48.0 = 96.9$Which corresponds to
@@ -274,9 +271,9 @@ $\mathrm{CaCO}_3$ or $\mathrm{MgCO}_3$.
 
 ## The Ideal Gas Equation
 
-$, $
+$$
 PV = nRT
-$, $
+$$
 
 | Symbol | Meaning      | SI Unit                                                       |
 | ------ | ------------ | ------------------------------------------------------------- |
@@ -289,10 +286,9 @@ $, $
 **Worked Example.** Calculate the volume occupied by $0.500\,\mathrm{mol}$ of an ideal gas at
 $100\,\mathrm{kPa}$ and $298\,\mathrm{K}$.
 
-$, $
+$$
 V = \frac{nRT}{p} = \frac◆LB◆0.500 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{1239}{100000} = 0.01239\,\mathrm{m}^3 = 12.4\,\mathrm{dm}^3
-$,
-$
+$$
 
 ### Deviations from Ideality
 
@@ -308,9 +304,9 @@ slowly, so intermolecular forces have a greater effect).
 
 The **van der Waals equation** corrects for these:
 
-$, $
+$$
 \left(p + \frac{an^2}{V^2}\right)(V - nb) = nRT
-$, $
+$$
 
 Where $a$ corrects for intermolecular forces and $b$ corrects for molecular volume. This is beyond
 A-Level but useful for understanding the direction of deviations.
@@ -321,9 +317,9 @@ A-Level but useful for understanding the direction of deviations.
 
 For a reaction in solution:
 
-$, $
+$$
 Q = mc\Delta T
-$, $
+$$
 
 | Symbol     | Meaning                | Unit                                         |
 | ---------- | ---------------------- | -------------------------------------------- |
@@ -334,9 +330,9 @@ $, $
 
 Then:
 
-$, $
+$$
 \Delta H = -\frac{q}{n}
-$, $
+$$
 
 (negative because exothermic reactions release heat to the surroundings).
 
@@ -345,25 +341,25 @@ $50.0\,\mathrm{cm}^3$ of $1.00\,\mathrm{mol/dm}^3$ $\mathrm{NaOH}$ in a polystyr
 temperature rises from $19.5^\circ\mathrm{C}$ to $26.3^\circ\mathrm{C}$. Calculate the enthalpy of
 neutralisation.
 
-$, $
+$$
 M = 50.0 + 50.0 = 100.0\,\mathrm{g}
-$, $
+$$
 
-$, $
+$$
 \Delta T = 26.3 - 19.5 = 6.8\,\mathrm{K}
-$, $
+$$
 
-$, $
+$$
 Q = 100.0 \times 4.18 \times 6.8 = 2842\,\mathrm{J} = 2.842\,\mathrm{kJ}
-$, $
+$$
 
-$, $
+$$
 N(\mathrm{HCl}) = 1.00 \times 0.0500 = 0.0500\,\mathrm{mol}
-$, $
+$$
 
-$, $
+$$
 \Delta H = -\frac{2.842}{0.0500} = -56.8\,\mathrm{kJ/mol}
-$, $
+$$
 
 ### Hess's Law
 
@@ -373,36 +369,32 @@ that cannot be measured directly.
 
 **Worked Example.** Calculate $\Delta H_f^\circ$ of $\mathrm{CH}_4$ given:
 
-$, $
+$$
 \mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g) \quad \Delta H_1 = -394\,\mathrm{kJ/mol}
-$,
-$
+$$
 
-$, $
+$$
 \mathrm{H}_2(g) + \tfrac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l) \quad \Delta H_2 = -286\,\mathrm{kJ/mol}
-$,
-$
+$$
 
-$, $
+$$
 \mathrm{CH}_4(g) + 2\mathrm{O}_2(g) \to \mathrm{CO}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) \quad \Delta H_c = -890\,\mathrm{kJ/mol}
-$,
-$
+$$
 
 Using Hess's Law:
 
-$, $
+$$
 \Delta H_f^\circ(\mathrm{CH}_4) = \Delta H_1 + 2\Delta H_2 - \Delta H_c = -394 + 2(-286) - (-890) = -394 - 572 + 890 = -76\,\mathrm{kJ/mol}
-$,
-$
+$$
 
 ### Bond Enthalpies
 
 The **mean bond enthalpy** is the average enthalpy change when one mole of a specified type of bond
 is broken in the gaseous state, averaged over a range of compounds.
 
-$, $
+$$
 \Delta H \approx \sum \mathrm{(bonds broken)} - \sum \mathrm{(bonds formed)}
-$, $
+$$
 
 **Worked Example.** Estimate the enthalpy of combustion of $\mathrm{CH}_4$ using bond enthalpies
 ($\mathrm{kJ/mol}$):
@@ -784,18 +776,17 @@ $1\,\mathrm{dm}^3 = 10^{-3}\,\mathrm{m}^3$$100\,\mathrm{kPa} = 10^5\,\mathrm{Pa}
 Calculate the volume of $\mathrm{CO}_2$ produced at $298\,\mathrm{K}$ and $100\,\mathrm{kPa}$ when
 $10.0\,\mathrm{g}$ of calcium carbonate decomposes.
 
-$, $
+$$
 \mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2
-$, $
+$$
 
-$, $
+$$
 N(\mathrm{CaCO}_3) = \frac{10.0}{100.1} = 0.0999\,\mathrm{mol} = n(\mathrm{CO}_2)
-$, $
+$$
 
-$, $
+$$
 V = \frac{nRT}{p} = \frac◆LB◆0.0999 \times 8.314 \times 298◆RB◆◆LB◆100 \times 10^3◆RB◆ = \frac{247.6}{100000} = 2.48 \times 10^{-3}\,\mathrm{m}^3 = 2.48\,\mathrm{dm}^3
-$,
-$
+$$
 
 Alternatively, using molar volume: $V = 0.0999 \times 24.0 = 2.40\,\mathrm{dm}^3$ (close but not
 exact because the molar volume approximation depends on the conditions).
@@ -815,9 +806,9 @@ exact because the molar volume approximation depends on the conditions).
 
 For a measurement $x \pm \Delta x$:
 
-$, $
+$$
 \text{Percentage uncertainty} = \frac◆LB◆\Delta x◆RB◆◆LB◆x◆RB◆ \times 100\%
-$, $
+$$
 
 ### Combining Uncertainties
 

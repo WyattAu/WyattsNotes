@@ -1,6 +1,8 @@
 ---
 title: Entropy and Gibbs Free Energy
-description: 'A-Level Chemistry Entropy and Gibbs Free Energy notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'A-Level Chemistry Entropy and Gibbs Free Energy notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam preparation.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -180,8 +182,8 @@ $$
 \Delta G^\circ = -RT\ln K
 $$
 
-Where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $T$ is in Kelvin, and $K$ is the equilibrium Constant
-(dimensionless, using activities).
+Where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $T$ is in Kelvin, and $K$ is the equilibrium
+Constant (dimensionless, using activities).
 
 This equation is one of the most powerful in chemistry because it connects thermodynamic data to
 Measurable equilibrium constants.
@@ -601,9 +603,9 @@ $$
 
 $\Delta H^\circ = +82\,\mathrm{kJ/mol}$$\Delta S^\circ = +170\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
-$, $
+$$
 \Delta G^\circ = 82000 - 500 \times 170 = 82000 - 85000 = -3000\,\mathrm{J/mol}
-$, $
+$$
 
 $\Delta G^\circ < 0$So the decomposition is spontaneous at $500\,\mathrm{K}$. (The threshold
 temperature is $T = 82000/170 = 482\,\mathrm{K}$.)
@@ -728,12 +730,12 @@ proceeds to the right until equilibrium is reached).
 
 ### Practical Applications: Gibbs Energy in Industry
 
-| Industrial Process                         | Reaction                                                           | $\Delta H^\circ$ (kJ/mol) | $\Delta S^\circ$ (J/mol/K) | $T_\text{threshold}$ (K)                                              |
-| ------------------------------------------ | ------------------------------------------------------------------ | ------------------------- | -------------------------- | --------------------------------------------------------------------- |
+| Industrial Process                         | Reaction                                                           | $\Delta H^\circ$ (kJ/mol) | $\Delta S^\circ$ (J/mol/K) | $T_\text{threshold}$ (K)                                                |
+| ------------------------------------------ | ------------------------------------------------------------------ | ------------------------- | -------------------------- | ----------------------------------------------------------------------- |
 | Haber process                              | $\mathrm{N}_2 + 3\mathrm{H}_2 \to 2\mathrm{NH}_3$                  | $-92$                     | $-199$                     | Not applicable ($\Delta H < 0$, $\Delta S < 0$: spontaneous at low $T$) |
-| Contact process                            | $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$                 | $-198$                    | $-190$                     | Not applicable                                                        |
-| Thermal decomposition of $\mathrm{CaCO}_3$ | $\mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$                 | $+178$                    | $+161$                     | $1106$                                                                |
-| Roasting of $\mathrm{ZnS}$                 | $2\mathrm{ZnS} + 3\mathrm{O}_2 \to 2\mathrm{ZnO} + 2\mathrm{SO}_2$ | $-880$                    | $+100$                     | Spontaneous at all $T$                                                |
+| Contact process                            | $2\mathrm{SO}_2 + \mathrm{O}_2 \to 2\mathrm{SO}_3$                 | $-198$                    | $-190$                     | Not applicable                                                          |
+| Thermal decomposition of $\mathrm{CaCO}_3$ | $\mathrm{CaCO}_3 \to \mathrm{CaO} + \mathrm{CO}_2$                 | $+178$                    | $+161$                     | $1106$                                                                  |
+| Roasting of $\mathrm{ZnS}$                 | $2\mathrm{ZnS} + 3\mathrm{O}_2 \to 2\mathrm{ZnO} + 2\mathrm{SO}_2$ | $-880$                    | $+100$                     | Spontaneous at all $T$                                                  |
 
 ## Exam-Style Questions with Full Mark Schemes
 
@@ -771,7 +773,8 @@ Explain why the entropy change for the reaction
 $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ is positive, and calculate
 $\Delta S^\circ$ given the following standard entropies:
 
-$S^\circ(\mathrm{N}_2\mathrm{O}_4) = 304\,\mathrm{J\,mol^{-1}\,K^{-1}}$, $S^\circ(\mathrm{NO}_2) = 240\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+$S^\circ(\mathrm{N}_2\mathrm{O}_4) = 304\,\mathrm{J\,mol^{-1}\,K^{-1}}$,
+$S^\circ(\mathrm{NO}_2) = 240\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 **Mark Scheme:**
 

@@ -132,32 +132,32 @@ Where $v_x$, $v_y$$v_z$ are the components along the $x$$y$And $z$ axes respecti
 
 The magnitude of a vector is its length:
 
-$, $
+$$
 |`\bm{v}`| = \sqrt{v_x^2 + v_y^2 + v_z^2}
-$, $
+$$
 
 ### Unit Vector
 
 A unit vector has magnitude $1$. The unit vector in the direction of $\bm{v}$ is:
 
-$, $
+$$
 \hat{v} = \frac{\bm{v}}{|\bm{v}|}
-$, $
+$$
 
 ### Position Vector
 
 A position vector describes the position of a point relative to the origin $O$:
 
-$, $
+$$
 \overrightarrow`\{OP}` =
 \begin`\{pmatrix}`
  x \\ y \\ z
 \end`\{pmatrix}`
-$, $
+$$
 
 ### Vector Addition and Subtraction
 
-$, $
+$$
 \bm{a} + \bm{b} =
 \begin`\{pmatrix}`
  a_x + b_x \\ a_y + b_y \\ a_z + b_z
@@ -166,17 +166,16 @@ $, $
 \begin`\{pmatrix}`
  a_x - b_x \\ a_y - b_y \\ a_z - b_z
 \end`\{pmatrix}`
-$,
-$
+$$
 
 ### Scalar Multiplication
 
-$, $
+$$
 K\bm{v} =
 \begin`\{pmatrix}`
  kv_x \\ kv_y \\ kv_z
 \end`\{pmatrix}`
-$, $
+$$
 
 ## Dot Product (Scalar Product)
 
@@ -184,23 +183,23 @@ $, $
 
 The dot product of two vectors produces a scalar:
 
-$, $
+$$
 \bm{a} \cdot \bm{b} = |\bm{a}||\bm{b}|\cos\theta
-$, $
+$$
 
 Where $\theta$ is the angle between the vectors ($0 \le \theta \le \pi$).
 
 ### Component Form
 
-$, $
+$$
 \bm{a} \cdot \bm{b} = a_x b_x + a_y b_y + a_z b_z
-$, $
+$$
 
 ### Finding the Angle Between Vectors
 
-$, $
+$$
 \cos\theta = \frac{\bm{a} \cdot \bm{b}}{|\bm{a}||\bm{b}|}
-$, $
+$$
 
 ### Properties of the Dot Product
 
@@ -216,18 +215,17 @@ $\bm{b} = \begin{pmatrix} 3 \\ 0 \\ 4 \end{pmatrix}$.
 
 **Solution:**
 
-$, $
+$$
 \bm{a} \cdot \bm{b} = (2)(3) + (1)(0) + (-1)(4) = 6 + 0 - 4 = 2
-$, $
+$$
 
-$, $
+$$
 |`\bm{a}`| `= \sqrt{4 + 1 + 1} = \sqrt{6}, \quad` |`\bm{b}`| = \sqrt{9 + 0 + 16} = 5
-$, $
+$$
 
-$, $
+$$
 \cos\theta = \frac{2}{5\sqrt{6}} = \frac{2}{5\sqrt{6}}, \quad \theta = \arccos\left(\frac{2}{5\sqrt{6}}\right) \approx 80.7^{\circ}
-$,
-$
+$$
 
 ## Cross Product (Vector Product)
 
@@ -235,33 +233,31 @@ $
 
 The cross product of two vectors produces a vector perpendicular to both:
 
-$, $
+$$
 |`\bm{a} \times \bm{b}`| = |`\bm{a}`||`\bm{b}`|\sin\theta
-$, $
+$$
 
 The direction is given by the right-hand rule.
 
 ### Component Form
 
-$, $
+$$
 \bm{a} \times \bm{b} =
 \begin`\{pmatrix}`
  a_y b_z - a_z b_y \\ a_z b_x - a_x b_z \\ a_x b_y - a_y b_x
 \end`\{pmatrix}`
-$,
-$
+$$
 
 This can be written as a determinant:
 
-$, $
+$$
 \bm{a} \times \bm{b} =
 \begin`\{vmatrix}`
  \hat{i} & \hat{j} & \hat{k}\\
  a_x & a_y & a_z\\
  b_x & b_y & b_z
 \end`\{vmatrix}`
-$,
-$
+$$
 
 ### Properties of the Cross Product
 
@@ -284,7 +280,7 @@ And $\bm{b} = \begin{pmatrix} 4 \\ 5 \\ 6 \end{pmatrix}$.
 
 **Solution:**
 
-$, $
+$$
 \bm{a} \times \bm{b} =
 \begin`\{pmatrix}`
  (2)(6) - (3)(5) \\ (3)(4) - (1)(6) \\ (1)(5) - (2)(4)
@@ -297,8 +293,7 @@ $, $
 \begin`\{pmatrix}`
  -3 \\ 6 \\ -3
 \end`\{pmatrix}`
-$,
-$
+$$
 
 ## Intersections
 

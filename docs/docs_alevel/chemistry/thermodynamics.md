@@ -1,6 +1,8 @@
 ---
 title: Thermodynamics & Energetics
-description: 'A-Level Chemistry Thermodynamics & Energetics notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'A-Level Chemistry Thermodynamics & Energetics notes covering key definitions, core concepts,
+  worked examples, and practice questions for methodical revision.'
 date: 2026-04-21T00:00:00.000Z
 tags:
   - Chemistry
@@ -134,7 +136,8 @@ The enthalpy change when one mole of a substance is completely burned in excess 
 standard conditions.
 
 - Combustion reactions are always exothermic ($\Delta H_c^\circ \lt 0$).
-- The products must be in their standard states ($\mathrm{CO}_2(g)$, $\mathrm{H}_2\mathrm{O}(l)$Etc.).
+- The products must be in their standard states ($\mathrm{CO}_2(g)$,
+  $\mathrm{H}_2\mathrm{O}(l)$Etc.).
 
 ### Standard Enthalpy of Atomisation ($\Delta H_\mathrm{at}^\circ$)
 
@@ -289,17 +292,17 @@ $$
 Given:
 $S^\circ(\mathrm{CaCO}_3) = 92.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{CaO}) = 38.1\,\mathrm{J\,mol^{-1}\,K^{-1}}$$S^\circ(\mathrm{CO}_2) = 213.7\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
-$, $
+$$
 \Delta S^\circ = (38.1 + 213.7) - 92.9 = 251.8 - 92.9 = +158.9\,\mathrm{J\,mol^{-1}\,K^{-1}}
-$, $
+$$
 
 The entropy increases because a gas is produced from a solid (more microstates).
 
 ### Entropy Change of the Surroundings
 
-$, $
+$$
 \Delta S_\mathrm{surroundings} = -\frac◆LB◆\Delta H◆RB◆◆LB◆T◆RB◆
-$, $
+$$
 
 For an exothermic reaction ($\Delta H \lt 0$), $\Delta S_\mathrm{surroundings} \gt 0$ (the
 surroundings gain heat, increasing their disorder).
@@ -310,9 +313,9 @@ surroundings gain heat, increasing their disorder).
 
 The Gibbs free energy combines enthalpy and entropy into a single criterion for spontaneity:
 
-$, $
+$$
 \Delta G = \Delta H - T\Delta S
-$, $
+$$
 
 | $\Delta G$       | Spontaneity                                      |
 | ---------------- | ------------------------------------------------ |
@@ -324,15 +327,15 @@ This is valid at constant temperature and pressure (standard laboratory conditio
 
 ### Standard Gibbs Free Energy Change ($\Delta G^\circ$)
 
-$, $
+$$
 \Delta G^\circ = \Delta H^\circ - T\Delta S^\circ
-$, $
+$$
 
 The relationship between $\Delta G^\circ$ and the equilibrium constant:
 
-$, $
+$$
 \Delta G^\circ = -RT\ln K
-$, $
+$$
 
 Where $R = 8.314\,\mathrm{J\,mol^{-1}\,K^{-1}}$ and $T$ is in Kelvin.
 
@@ -353,9 +356,9 @@ When $\Delta G^\circ \gt 0$: $K \lt 1$ (reactants favoured).
 
 **Worked Example.** For the thermal decomposition of $\mathrm{CaCO}_3$:
 
-$, $
+$$
 \mathrm{CaCO}_3(s) \to \mathrm{CaO}(s) + \mathrm{CO}_2(g)
-$, $
+$$
 
 $\Delta H^\circ = +178\,\mathrm{kJ/mol}$$\Delta S^\circ = +160\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
@@ -369,16 +372,16 @@ Above $1113\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontane
 
 ### Gibbs-Helmholtz Equation
 
-$, $
+$$
 \left(\frac◆LB◆\partial (\Delta G/T)◆RB◆◆LB◆\partial T◆RB◆\right)_p = -\frac◆LB◆\Delta H◆RB◆◆LB◆T^2◆RB◆
-$, $
+$$
 
 This shows how $\Delta G/T$ varies with temperature. In the simplified form used at A-Level, it
 justifies the linear relationship:
 
-$, $
+$$
 \Delta G = \Delta H - T\Delta S
-$, $
+$$
 
 A plot of $\Delta G$ vs $T$ is linear with gradient $= -\Delta S$ and y-intercept $= \Delta H$.
 
@@ -387,9 +390,9 @@ A plot of $\Delta G$ vs $T$ is linear with gradient $= -\Delta S$ and y-intercep
 The relationship between $\Delta G^\circ$ and the equilibrium constant $K$ is one of the most
 important equations in physical chemistry:
 
-$, $
+$$
 \Delta G^\circ = -RT\ln K
-$, $
+$$
 
 This equation allows prediction of the equilibrium position from thermodynamic data:
 
@@ -401,9 +404,9 @@ This equation allows prediction of the equilibrium position from thermodynamic d
 $\mathrm{N}_2\mathrm{O}_4(g) \rightleftharpoons 2\mathrm{NO}_2(g)$ given
 $\Delta G^\circ = +4.72\,\mathrm{kJ/mol}$.
 
-$, $
+$$
 K = \exp\left(\frac◆LB◆-\Delta G^\circ◆RB◆◆LB◆RT◆RB◆\right) = \exp\left(\frac◆LB◆-4720◆RB◆◆LB◆8.314 \times 298◆RB◆\right) = \exp(-1.904) = 0.149
-$, $
+$$
 
 $K = 0.149$So reactants ($\mathrm{N}_2\mathrm{O}_4$) are favoured at equilibrium.
 
@@ -411,13 +414,13 @@ $K = 0.149$So reactants ($\mathrm{N}_2\mathrm{O}_4$) are favoured at equilibrium
 
 Combining the two equations:
 
-$, $
+$$
 -RT\ln K = \Delta H^\circ - T\Delta S^\circ
-$, $
+$$
 
-$, $
+$$
 \ln K = -\frac◆LB◆\Delta H^\circ◆RB◆◆LB◆RT◆RB◆ + \frac◆LB◆\Delta S^\circ◆RB◆◆LB◆R◆RB◆
-$, $
+$$
 
 This is the van 't Hoff equation (linear form), which is identical in structure to the Arrhenius
 equation.
@@ -429,9 +432,9 @@ equation.
 **Coffee-cup calorimetry:** A polystyrene cup minimises heat exchange with the surroundings. The
 heat absorbed by the solution equals the heat released by the reaction:
 
-$, $
+$$
 Q = mc\Delta T
-$, $
+$$
 
 Where $m$ is the mass of solution (g), $c$ is the specific heat capacity
 ($4.18\,\mathrm{J\,g^{-1}\,K^{-1}}$ for water), and $\Delta T$ is the temperature change.
@@ -463,9 +466,9 @@ enthalpies in preference to bond enthalpies when both are available.
 The enthalpy of neutralisation is the enthalpy change when one mole of water is formed from the
 reaction of an acid and a base:
 
-$, $
+$$
 \mathrm{H}^+(aq) + \mathrm{OH}^-(aq) \to \mathrm{H}_2\mathrm{O}(l) \quad \Delta H^\circ_\mathrm{neut} = -57.9\,\mathrm{kJ/mol}
-$, $
+$$
 
 This value is approximately constant for all strong acid-strong base reactions because the net ionic
 equation is always the same. Weak acid-strong base or strong acid-weak base neutralisations have
@@ -492,13 +495,13 @@ Formation: $\mathrm{C}(s) + 2\mathrm{H}_2(g) \to \mathrm{CH}_4(g)$
 
 By Hess's Law, route the formation through combustion:
 
-$, $
+$$
 \Delta H_f^\circ + \Delta H_3 = \Delta H_1 + 2\Delta H_2
-$, $
+$$
 
-$, $
+$$
 \Delta H_f^\circ = -394 + 2(-286) - (-890) = -394 - 572 + 890 = -76\,\mathrm{kJ/mol}
-$, $
+$$
 
 ## Common Pitfalls
 
@@ -543,24 +546,24 @@ available for all species in the reaction (e.g. For gaseous atoms or free radica
 
 Calculate $\Delta H$ for the reaction:
 
-$, $
+$$
 \mathrm{N}_2(g) + 3\mathrm{H}_2(g) \to 2\mathrm{NH}_3(g)
-$, $
+$$
 
 Using mean bond enthalpies:
 $\mathrm{N}\equiv\mathrm{N} = 945\,\mathrm{kJ/mol}$$\mathrm{H}-\mathrm{H} = 436\,\mathrm{kJ/mol}$$\mathrm{N}-\mathrm{H} = 391\,\mathrm{kJ/mol}$.
 
-$, $
+$$
 \text{Bonds broken} = 1 \times \mathrm{N}\equiv\mathrm{N} + 3 \times \mathrm{H}-\mathrm{H} = 945 + 3(436) = 2253\,\mathrm{kJ/mol}
-$, $
+$$
 
-$, $
+$$
 \text{Bonds formed} = 6 \times \mathrm{N}-\mathrm{H} = 6(391) = 2346\,\mathrm{kJ/mol}
-$, $
+$$
 
-$, $
+$$
 \Delta H = 2253 - 2346 = -93\,\mathrm{kJ/mol}
-$, $
+$$
 
 The experimental value is $-92\,\mathrm{kJ/mol}$Showing good agreement.
 
@@ -573,9 +576,9 @@ The experimental value is $-92\,\mathrm{kJ/mol}$Showing good agreement.
 - **Lattice formation enthalpy:** Enthalpy change when one mole of an ionic lattice is formed from
   its gaseous ions (exothermic, always negative).
 
-$, $
+$$
 \Delta H_\mathrm{latt}(\mathrm{dissociation}) = -\Delta H_\mathrm{latt}(\mathrm{formation})
-$, $
+$$
 
 ### Factors Affecting Lattice Enthalpy
 
@@ -615,13 +618,13 @@ Steps (values are illustrative):
 
 Lattice enthalpy (formation):
 
-$, $
+$$
 \Delta H_\mathrm{latt} = \Delta H_f^\circ - (\text{Steps 1--5}) = -796 - (178 + 590 + 1145 + 244 - 728)
-$, $
+$$
 
-$, $
+$$
 \Delta H_\mathrm{latt} = -796 - 1435 = -2231\,\mathrm{kJ/mol}
-$, $
+$$
 
 ## Applications of Thermodynamics
 
@@ -656,9 +659,9 @@ penalty. High pressure shifts equilibrium towards products (fewer moles of gas).
 
 Calculate $\Delta G^\circ$ at $298\,\mathrm{K}$ for the reaction:
 
-$, $
+$$
 2\mathrm{NO}(g) + \mathrm{O}_2(g) \to 2\mathrm{NO}_2(g)
-$, $
+$$
 
 Given:
 $\Delta H^\circ = -114\,\mathrm{kJ/mol}$$\Delta S^\circ = -146\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
@@ -713,9 +716,9 @@ $1 \times \mathrm{C}\equiv\mathrm{C} + 2 \times \mathrm{C}-\mathrm{H} + 2 \times
 Bonds formed:
 $1 \times \mathrm{C}-\mathrm{C} + 6 \times \mathrm{C}-\mathrm{H} = 347 + 6(413) = 347 + 2478 = 2825\,\mathrm{kJ/mol}$
 
-$, $
+$$
 \Delta H = \sum(\text{bonds broken}) - \sum(\text{bonds formed}) = 2537 - 2825 = -288\,\mathrm{kJ/mol}
-$, $
+$$
 
 The reaction is exothermic, as expected for hydrogenation. Note that mean bond enthalpies are used,
 so this is an estimate. The experimental value is approximately $-312\,\mathrm{kJ/mol}$; the
@@ -729,9 +732,9 @@ $\mathrm{HC}\equiv\mathrm{CH}$ differs from the mean value used.
 
 The decomposition of ammonium chloride:
 
-$, $
+$$
 \mathrm{NH}_4\mathrm{Cl}(s) \to \mathrm{NH}_3(g) + \mathrm{HCl}(g)
-$, $
+$$
 
 Has $\Delta H^\circ = +176\,\mathrm{kJ/mol}$ and
 $\Delta S^\circ = +285\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
@@ -748,9 +751,9 @@ molecules both contribute to a large positive entropy change.
 
 (b) At the threshold of spontaneity, $\Delta G^\circ = 0$:
 
-$, $
+$$
 T = \frac◆LB◆\Delta H^\circ◆RB◆◆LB◆\Delta S^\circ◆RB◆ = \frac◆LB◆176 \times 10^3◆RB◆◆LB◆285◆RB◆ = 618\,\mathrm{K} = 345^\circ\mathrm{C}
-$, $
+$$
 
 Above $618\,\mathrm{K}$$\Delta G^\circ \lt 0$ and the decomposition is spontaneous.
 
@@ -904,8 +907,10 @@ $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l)$.
 Given data:
 
 - $\mathrm{C}(s) + \mathrm{O}_2(g) \to \mathrm{CO}_2(g)$, $\Delta H = -393.5\,\mathrm{kJ/mol}$
-- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -285.8\,\mathrm{kJ/mol}$
-- $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$, $\Delta H = -1367\,\mathrm{kJ/mol}$
+- $\mathrm{H}_2(g) + \frac{1}{2}\mathrm{O}_2(g) \to \mathrm{H}_2\mathrm{O}(l)$,
+  $\Delta H = -285.8\,\mathrm{kJ/mol}$
+- $\mathrm{C}_2\mathrm{H}_5\mathrm{OH}(l) + 3\mathrm{O}_2(g) \to 2\mathrm{CO}_2(g) + 3\mathrm{H}_2\mathrm{O}(l)$,
+  $\Delta H = -1367\,\mathrm{kJ/mol}$
 
 By Hess's Law:
 
@@ -922,7 +927,8 @@ thermodynamically feasible at $1500\,\mathrm{K}$?
 
 $$\mathrm{TiO}_2(s) + 2\mathrm{C}(s) \to \mathrm{Ti}(s) + 2\mathrm{CO}(g)$$
 
-$\Delta H^\circ = +877\,\mathrm{kJ/mol}$, $\Delta S^\circ = +193\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
+$\Delta H^\circ = +877\,\mathrm{kJ/mol}$,
+$\Delta S^\circ = +193\,\mathrm{J\,K^{-1}\mathrm{mol}^{-1}$
 
 $$\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = 877000 - 1500 \times 193 = 877000 - 289500 = 587500\,\mathrm{J/mol} = +588\,\mathrm{kJ/mol}$$
 

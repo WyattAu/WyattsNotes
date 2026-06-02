@@ -67,9 +67,9 @@ For a strong monoprotic acid of concentration $c$: $[\mathrm{H}^+] = c$.
 
 A weak acid is partially dissociated in aqueous solution:
 
-$, $
+$$
 \mathrm{HA}(aq) \rightleftharpoons \mathrm{H}^+(aq) + \mathrm{A}^-(aq)
-$, $
+$$
 
 The position of equilibrium lies to the left. The degree of dissociation $\alpha$ is the fraction of
 acid molecules that dissociate. For weak acids, $\alpha \ll 1$.
@@ -90,9 +90,9 @@ Common weak bases: $\mathrm{NH}_3$Amines, $\mathrm{CO}_3^{2-}$$\mathrm{HCO}_3^-$
 
 The pH is defined as:
 
-$, $
+$$
 \mathrm{pH} = -\log_{10}[\mathrm{H}^+]
-$, $
+$$
 
 Where $[\mathrm{H}^+]$ is in $\mathrm{mol/dm}^3$.
 
@@ -106,20 +106,19 @@ Where $[\mathrm{H}^+]$ is in $\mathrm{mol/dm}^3$.
 
 Water undergoes autoionisation:
 
-$, $
+$$
 2\mathrm{H}_2\mathrm{O}(l) \rightleftharpoons \mathrm{H}_3\mathrm{O}^+(aq) + \mathrm{OH}^-(aq)
-$,
-$
+$$
 
 Simplified:
 
-$, $
+$$
 \mathrm{H}_2\mathrm{O}(l) \rightleftharpoons \mathrm{H}^+(aq) + \mathrm{OH}^-(aq)
-$, $
+$$
 
-$, $
+$$
 K_w = [\mathrm{H}^+][\mathrm{OH}^-]
-$, $
+$$
 
 At $25^\circ\mathrm{C}$: $K_w = 1.0 \times 10^{-14}\,\mathrm{mol^2\,dm^{-6}}$.
 
@@ -462,9 +461,9 @@ $[\mathrm{CH}_3\mathrm{COOH}] = 1.50 \times 10^{-3} / 0.0350 = 0.0429\,\mathrm{m
 
 $[\mathrm{CH}_3\mathrm{COO}^-] = 1.00 \times 10^{-3} / 0.0350 = 0.0286\,\mathrm{mol/dm}^3$
 
-$, $
+$$
 \mathrm{pH} = 4.76 + \log_{10}\left(\frac{0.0286}{0.0429}\right) = 4.76 - 0.176 = 4.58
-$, $
+$$
 
 </details>
 
@@ -476,18 +475,17 @@ $K_a$ and $\mathrm{p}K_a$.
 
 **Solution:**
 
-$, $
+$$
 [\mathrm{H}^+] = 10^{-3.00} = 1.00 \times 10^{-3}\,\mathrm{mol/dm}^3
-$, $
+$$
 
-$, $
+$$
 K_a = \frac◆LB◆[\mathrm{H}^+]^2◆RB◆◆LB◆c◆RB◆ = \frac◆LB◆(1.00 \times 10^{-3})^2◆RB◆◆LB◆0.050◆RB◆ = \frac◆LB◆1.00 \times 10^{-6}◆RB◆◆LB◆0.050◆RB◆ = 2.0 \times 10^{-5}\,\mathrm{mol/dm}^3
-$,
-$
+$$
 
-$, $
+$$
 \mathrm{p}K_a = -\log_{10}(2.0 \times 10^{-5}) = 4.70
-$, $
+$$
 
 </details>
 
@@ -518,10 +516,9 @@ $[\mathrm{CH}_3\mathrm{COOH}] = 0.0100/0.150 = 0.0667\,\mathrm{mol/dm}^3$
 
 $[\mathrm{CH}_3\mathrm{COO}^-] = 0.0100/0.150 = 0.0667\,\mathrm{mol/dm}^3$
 
-$, $
+$$
 \mathrm{pH} = 4.76 + \log_{10}\left(\frac{0.0667}{0.0667}\right) = 4.76 + \log_{10}(1) = 4.76 + 0 = 4.76
-$,
-$
+$$
 
 The buffer pH equals the $\mathrm{p}K_a$ because $[\mathrm{acid}] = [\mathrm{salt}]$. This is the
 most effective buffer composition.
@@ -544,9 +541,9 @@ $[\mathrm{CH}_3\mathrm{COOH}] = 2.168 \times 10^{-3}/0.0300 = 0.0723\,\mathrm{mo
 
 $[\mathrm{CH}_3\mathrm{COO}^-] = 1.168 \times 10^{-3}/0.0300 = 0.0389\,\mathrm{mol/dm}^3$
 
-$, $
+$$
 \mathrm{pH} = 4.76 + \log_{10}\left(\frac{0.0389}{0.0723}\right) = 4.76 - 0.269 = 4.49
-$, $
+$$
 
 PH change = $4.76 - 4.49 = 0.27$ units. The buffer resists the pH change effectively.
 

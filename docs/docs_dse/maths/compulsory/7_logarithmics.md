@@ -1,6 +1,8 @@
 ---
 title: Logarithms
-description: 'DSE Maths Logarithms notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and revision.'
+description:
+  'DSE Maths Logarithms notes covering key definitions, core concepts, worked examples, and practice
+  questions for clear exam preparation and revision.'
 date: 2025-06-03T16:19:00.000Z
 tags:
   - Maths
@@ -87,8 +89,8 @@ These two identities express the fact that the logarithmic and exponential funct
 
 ## Laws of Logarithms
 
-The following laws are essential for manipulating logarithmic expressions. In all cases,
-$a \gt 0$, $a \neq 1$And the arguments of all logarithms are positive.
+The following laws are essential for manipulating logarithmic expressions. In all cases, $a \gt 0$,
+$a \neq 1$And the arguments of all logarithms are positive.
 
 ### Product Rule
 
@@ -459,9 +461,9 @@ Function, which depends on whether the base is greater than or less than 1.
 
 When $a > 1$$\log_a x$ is strictly increasing, so the inequality sign is **preserved**:
 
-$, $
+$$
 \log_a x \gt \log_a y \iff x \gt y
-$, $
+$$
 
 ### Case 2: Base $0 \lt{} a \lt{} 1$
 

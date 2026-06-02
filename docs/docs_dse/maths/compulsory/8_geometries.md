@@ -45,11 +45,11 @@ $$
 
 The midpoint $M$ of the line segment joining $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$ is:
 
-$, $
+$$
 \begin{aligned}
  M = \left( \frac{x_1 + x_2}{2},\; \frac{y_1 + y_2}{2} \right)
 \end{aligned}
-$, $
+$$
 
 The midpoint is the average of the respective coordinates of the two endpoints.
 
@@ -63,11 +63,11 @@ The midpoint is the average of the respective coordinates of the two endpoints.
 The gradient $m$ of the line passing through $P_1(x_1, y_1)$ and $P_2(x_2, y_2)$Where
 $x_1 \neq x_2$Measures the rate of change of $y$ with respect to $x$:
 
-$, $
+$$
 \begin{aligned}
  m = \frac{y_2 - y_1}{x_2 - x_1} = \tan\theta
 \end{aligned}
-$, $
+$$
 
 Where $\theta$ is the angle the line makes with the positive $x$-axis. A vertical line (where
 $x_1 = x_2$) has an undefined gradient. Key gradient values include:
@@ -89,12 +89,11 @@ $x_1 = x_2$) has an undefined gradient. Key gradient values include:
 If point $P(x, y)$ divides the line segment joining $A(x_1, y_1)$ and $B(x_2, y_2)$ in the ratio
 $m : n$ (internally), then:
 
-$, $
+$$
 \begin{aligned}
  x = \frac{mx_2 + nx_1}{m + n}, \qquad y = \frac{my_2 + ny_1}{m + n}
 \end{aligned}
-$,
-$
+$$
 
 The midpoint formula is the special case where $m = n = 1$.
 
@@ -104,11 +103,11 @@ A straight line in the Cartesian plane can be expressed in several equivalent fo
 
 ### Slope-Intercept Form
 
-$, $
+$$
 \begin{aligned}
  y = mx + c
 \end{aligned}
-$, $
+$$
 
 Where $m$ is the gradient and $c$ is the $y$-intercept. This form is most useful when the gradient
 And $y$-intercept are known or can be determined.
@@ -117,11 +116,11 @@ And $y$-intercept are known or can be determined.
 
 Given a point $(x_1, y_1)$ on the line and the gradient $m$:
 
-$, $
+$$
 \begin{aligned}
  y - y_1 = m(x - x_1)
 \end{aligned}
-$, $
+$$
 
 This is the most versatile form for deriving the equation of a line from partial information.
 
@@ -129,31 +128,31 @@ This is the most versatile form for deriving the equation of a line from partial
 
 Given two distinct points $(x_1, y_1)$ and $(x_2, y_2)$ on the line:
 
-$, $
+$$
 \begin{aligned}
  \frac{y - y_1}{x - x_1} = \frac{y_2 - y_1}{x_2 - x_1}
 \end{aligned}
-$, $
+$$
 
 ### Intercept Form
 
 If the line has $x$-intercept $a$ and $y$-intercept $b$ (both non-zero):
 
-$, $
+$$
 \begin{aligned}
  \frac{x}{a} + \frac{y}{b} = 1
 \end{aligned}
-$, $
+$$
 
 ### General Form
 
 Every straight line can be written in the general form:
 
-$, $
+$$
 \begin{aligned}
  Ax + By + C = 0
 \end{aligned}
-$, $
+$$
 
 Where $A$$B$$C$ are constants and $A$ and $B$ are not both zero. The gradient is $m = -\frac{A}{B}$
 and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
@@ -171,20 +170,20 @@ and the $y$-intercept is $c = -\frac{C}{B}$ (when $B \neq 0$).
 Two non-vertical lines with gradients $m_1$ and $m_2$ are parallel if and only if their gradients
 Are equal:
 
-$, $
+$$
 \begin{aligned}
  m_1 = m_2
 \end{aligned}
-$, $
+$$
 
 In the general form $Ax + By + C = 0$Two lines $A_1x + B_1y + C_1 = 0$ and $A_2x + B_2y + C_2 = 0$
 Are parallel if and only if:
 
-$, $
+$$
 \begin{aligned}
  \frac{A_1}{A_2} = \frac{B_1}{B_2} \neq \frac{C_1}{C_2}
 \end{aligned}
-$, $
+$$
 
 If all three ratios are equal, the lines are coincident (the same line).
 
@@ -193,19 +192,19 @@ If all three ratios are equal, the lines are coincident (the same line).
 Two non-vertical lines with gradients $m_1$ and $m_2$ are perpendicular if and only if the product
 Of their gradients equals $-1$:
 
-$, $
+$$
 \begin{aligned}
  m_1 \cdot m_2 = -1
 \end{aligned}
-$, $
+$$
 
 In the general form, two lines are perpendicular if and only if:
 
-$, $
+$$
 \begin{aligned}
  A_1 A_2 + B_1 B_2 = 0
 \end{aligned}
-$, $
+$$
 
 <details>
 <summary>Examples</summary>
@@ -371,13 +370,12 @@ $$
 
 ### Circles
 
-$, $
+$$
 \begin{aligned}
  \mathrm{Circumference} &= 2\pi r = \pi d \\
  \mathrm{Area} &= \pi r^2
 \end{aligned}
-$,
-$
+$$
 
 Where $r$ is the radius and $d = 2r$ is the diameter.
 
@@ -385,24 +383,23 @@ Where $r$ is the radius and $d = 2r$ is the diameter.
 
 For an arc subtending an angle $\theta$ (in radians) at the centre of a circle of radius $r$:
 
-$, $
+$$
 \begin{aligned}
  \mathrm{Arc length} &= l = r\theta \\
  \mathrm{Area of sector} &= A = \frac{1}{2}r^2\theta
 \end{aligned}
-$,
-$
+$$
 
 When the angle is given in degrees ($\theta^\circ$), first convert to radians:
 $\theta = \theta^\circ \times \frac{\pi}{180}$.
 
 The area of a segment (the region between a chord and the corresponding arc) is:
 
-$, $
+$$
 \begin{aligned}
  \mathrm{Area of segment} = \frac{1}{2}r^2(\theta - \sin\theta)
 \end{aligned}
-$, $
+$$
 
 <details>
 <summary>Examples</summary>
@@ -466,11 +463,11 @@ $$
 - **Intercept form**: If the plane has $x$-intercept $a$$y$-intercept $b$And $z$-intercept $c$ (all
   non-zero):
 
-$, $
+$$
 \begin{aligned}
  \frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1
 \end{aligned}
-$, $
+$$
 
 ### Angles Between Lines and Planes
 
@@ -480,46 +477,43 @@ The angle $\phi$ between a line with direction vector $\mathbf{d} = (l, m, n)$ a
 Normal $\mathbf{n} = (A, B, C)$ is defined as the complement of the angle between $\mathbf{d}$ and
 $\mathbf{n}$:
 
-$, $
+$$
 \begin{aligned}
  \sin\phi = \frac{|Al + Bm + Cn|}{\sqrt{A^2 + B^2 + C^2}\sqrt{l^2 + m^2 + n^2}}
 \end{aligned}
-$,
-$
+$$
 
 #### Angle Between Two Planes
 
 The angle $\theta$ between two planes with normals $\mathbf{n_1} = (A_1, B_1, C_1)$ and
 $\mathbf{n_2} = (A_2, B_2, C_2)$ is:
 
-$, $
+$$
 \begin{aligned}
  \cos\theta = \frac{|A_1 A_2 + B_1 B_2 + C_1 C_2|}{\sqrt{A_1^2 + B_1^2 + C_1^2}\sqrt{A_2^2 + B_2^2 + C_2^2}}
 \end{aligned}
-$,
-$
+$$
 
 #### Angle Between Two Lines in 3D
 
 For two lines with direction vectors $\mathbf{d_1} = (l_1, m_1, n_1)$ and
 $\mathbf{d_2} = (l_2, m_2, n_2)$:
 
-$, $
+$$
 \begin{aligned}
  \cos\theta = \frac{|l_1 l_2 + m_1 m_2 + n_1 n_2|}{\sqrt{l_1^2 + m_1^2 + n_1^2}\sqrt{l_2^2 + m_2^2 + n_2^2}}
 \end{aligned}
-$,
-$
+$$
 
 #### Distance from a Point to a Plane
 
 The perpendicular distance from point $P(x_0, y_0, z_0)$ to the plane $Ax + By + Cz + D = 0$ is:
 
-$, $
+$$
 \begin{aligned}
  d = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}
 \end{aligned}
-$, $
+$$
 
 <details>
 <summary>Examples</summary>

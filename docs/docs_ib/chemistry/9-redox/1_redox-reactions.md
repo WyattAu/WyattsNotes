@@ -558,18 +558,17 @@ mass of Al = $27.0/3 = 9.0\mathrm{ g/equiv}$.
 
 By Faraday's Second Law:
 
-$, $
+$$
 \frac{m(\mathrm{Na})}{m(\mathrm{Al})} = \frac{\mathrm{Equiv. Mass of Na}}{\mathrm{Equiv. Mass of Al}}
-$,
-$
+$$
 
-$, $
+$$
 \frac{2.30}{m(\mathrm{Al})} = \frac{23.0}{9.0}
-$, $
+$$
 
-$, $
+$$
 M(\mathrm{Al}) = \frac{2.30 \times 9.0}{23.0} = 0.900\mathrm{ g}
-$, $
+$$
 
 </details>
 
@@ -588,10 +587,9 @@ $\mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^- \to 4\mathrm{OH}^-(aq)$
 
 The Fe$^{2+}$ ions further react:
 
-$, $
+$$
 4\mathrm{Fe}^{2+}(aq) + \mathrm{O}_2(g) + 6\mathrm{H}_2\mathrm{O}(l) \to 4\mathrm{Fe(OH)}_3(s)
-$,
-$
+$$
 
 $\mathrm{Fe(OH)}_3$ dehydrates to form rust:
 $\mathrm{Fe}_2\mathrm{O}_3 \cdot n\mathrm{H}_2\mathrm{O}$.
@@ -745,10 +743,9 @@ $\mathrm{Cr}_2\mathrm{O}_7^{2-} + 14\mathrm{H}^+ + 3\mathrm{SO}_3^{2-} + 3\mathr
 
 Simplify (cancel 6 H$^+$ and 3 H$_2$O):
 
-$, $
+$$
 \mathrm{Cr}_2\mathrm{O}_7^{2-} + 8\mathrm{H}^+ + 3\mathrm{SO}_3^{2-} \to 2\mathrm{Cr}^{3+} + 3\mathrm{SO}_4^{2-} + 4\mathrm{H}_2\mathrm{O}
-$,
-$
+$$
 
 </details>
 
@@ -776,9 +773,9 @@ Answer:
 (a) Cathode: Ag$^+$/Ag, $E^\circ = +0.80\mathrm{ V}$. Anode: Zn$^{2+}$/Zn,
 $E^\circ = -0.76\mathrm{ V}$.
 
-$, $
+$$
 E^\circ_{\mathrm{cell}} = 0.80 - (-0.76) = +1.56\mathrm{ V}
-$, $
+$$
 
 (b) $\mathrm{Zn}(s) \mid \mathrm{Zn}^{2+}(aq) \parallel \mathrm{Ag}^+(aq) \mid \mathrm{Ag}(s)$
 

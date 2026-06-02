@@ -1,6 +1,8 @@
 ---
 title: Atomic Structure
-description: 'ILC Chemistry Atomic Structure notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'ILC Chemistry Atomic Structure notes covering key definitions, core concepts, worked examples,
+  and practice questions for exam readiness.'
 date: 2026-04-14
 tags:
   - ilc
@@ -165,9 +167,9 @@ For the $p$ subshell).
 When hydrogen atoms absorb energy, electrons are excited to higher energy levels. When they return
 To lower levels, they emit photons:
 
-$, $
+$$
 \Delta E = E_{\mathrm{higher} - E_{\mathrm{lower} = hf = \frac{hc}{\lambda}
-$, $
+$$
 
 **Balmer series** (transitions to $n = 2$): visible light.
 
@@ -629,7 +631,8 @@ And scanning electron microscopy (SEM) are two common types.
     pattern.
 
 12. Calculate the de Broglie wavelength of an electron travelling at $2.0 \times 10^6 \mathrm{ m/s$.
-    (Mass of electron $= 9.11 \times 10^{-31} \mathrm{ kg$, $h = 6.63 \times 10^{-34} \mathrm{ J s$.)
+    (Mass of electron $= 9.11 \times 10^{-31} \mathrm{ kg$,
+    $h = 6.63 \times 10^{-34} \mathrm{ J s$.)
 
 13. Explain why potassium ($Z = 19$) is placed after argon ($Z = 18$) in the periodic table, despite
     argon having a filled $3p$ subshell and potassium having an electron in the $4s$ subshell.

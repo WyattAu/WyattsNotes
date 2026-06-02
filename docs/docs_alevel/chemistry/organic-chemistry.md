@@ -855,25 +855,22 @@ justify your choice of reagents.
 
 **Step 1:** Friedel-Crafts alkylation to install a methyl group:
 
-$, $
+$$
 \mathrm{C}_6\mathrm{H}_6 \xrightarrow{\mathrm{CH}_3\mathrm{Cl},\,\mathrm{AlCl}_3} \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3
-$,
-$
+$$
 
 **Step 2:** Nitration (methyl is ortho/para directing, so a mixture of ortho and para is produced;
 para is the major product for steric reasons):
 
-$, $
+$$
 \mathrm{C}_6\mathrm{H}_5\mathrm{CH}_3 \xrightarrow{\mathrm{HNO}_3/\mathrm{H}_2\mathrm{SO}_4} 4\text{-nitrotoluene (major)} + 2\text{-nitrotoluene (minor)}
-$,
-$
+$$
 
 **Step 3:** Oxidation of the methyl group to carboxylic acid:
 
-$, $
+$$
 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{CH}_3)(\mathrm{NO}_2) \xrightarrow{\mathrm{KMnO}_4,\,\Delta} 4\text{-}\mathrm{C}_6\mathrm{H}_4(\mathrm{COOH})(\mathrm{NO}_2)
-$,
-$
+$$
 
 The nitro group must be installed **before** oxidation because the carboxylic acid group is
 meta-directing and deactivating. If the carboxylic acid were installed first, nitration would give

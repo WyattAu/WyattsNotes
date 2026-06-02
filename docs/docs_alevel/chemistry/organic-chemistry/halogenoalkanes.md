@@ -1,6 +1,8 @@
 ---
 title: Halogenoalkanes
-description: 'A-Level Chemistry Halogenoalkanes notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'A-Level Chemistry Halogenoalkanes notes covering key definitions, core concepts, worked examples,
+  and practice questions for focused preparation.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -79,15 +81,15 @@ The rate equation because it participates only in the fast second step.
 
 Step 1 (slow, rate-determining): Heterolytic fission of the C--Br bond to form a carbocation:
 
-$, $
+$$
 (\mathrm{CH}_3)_3\mathrm{CBr} \to (\mathrm{CH}_3)_3\mathrm{C}^+ + \mathrm{Br}^-
-$, $
+$$
 
 Step 2 (fast): Nucleophilic attack on the carbocation:
 
-$, $
+$$
 (\mathrm{CH}_3)_3\mathrm{C}^+ + \mathrm{OH}^- \to (\mathrm{CH}_3)_3\mathrm{COH}
-$, $
+$$
 
 **Stereochemistry:** Racemisation at the chiral centre. The planar carbocation intermediate can be
 Attacked from either face with equal probability, producing a 50:50 mixture of enantiomers
@@ -282,19 +284,19 @@ The choice of solvent can determine which mechanism operates:
 
 In the stratosphere, UV radiation breaks CFCs into chlorine radicals:
 
-$, $
+$$
 \mathrm{CFCl}_3 \xrightarrow{\mathrm{UV}} \mathrm{CFCl}_2\cdot + \mathrm{Cl}\cdot
-$, $
+$$
 
 The chlorine radical catalytically destroys ozone:
 
-$, $
+$$
 \mathrm{Cl}\cdot + \mathrm{O}_3 \to \mathrm{ClO}\cdot + \mathrm{O}_2
-$, $
+$$
 
-$, $
+$$
 \mathrm{ClO}\cdot + \mathrm{O}_3 \to \mathrm{Cl}\cdot + 2\mathrm{O}_2
-$, $
+$$
 
 Net reaction: $2\mathrm{O}_3 \to 3\mathrm{O}_2$
 
@@ -431,15 +433,15 @@ from butan-1-ol. State all reagents and conditions.
 
 Step 1: Convert butan-1-ol to 1-bromobutane using $\mathrm{PBr}_3$ (or concentrated $\mathrm{HBr}$):
 
-$, $
+$$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{OH} \xrightarrow{\mathrm{PBr}_3} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br}
-$, $
+$$
 
 Step 2: Nucleophilic substitution with cyanide ion:
 
-$, $
+$$
 \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{Br} \xrightarrow{\mathrm{KCN},\,\text{ethanol, reflux}} \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_2\mathrm{CH}_2\mathrm{CN}
-$, $
+$$
 
 The mechanism is SN2 (primary halogenoalkane). The cyanide ion attacks from the opposite side of the
 C--Br bond, giving the nitrile with an extended carbon chain (one extra carbon). $\mathrm{KCN}$ is

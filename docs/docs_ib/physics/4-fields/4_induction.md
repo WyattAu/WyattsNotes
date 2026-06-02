@@ -459,21 +459,21 @@ Model a thin annular ring at radius $r$ of width $dr$. The EMF induced in the ri
 $d\epsilon = 2\pi B\omega r^2$And its resistance is $dR = \rho \cdot 2\pi r / (t\,dr)$. The power In
 the ring is:
 
-$, $
+$$
 DP = \frac{(d\epsilon)^2}`\{dR}` = \frac{2\pi B^2\omega^2 r^3\,t\,dr}{\rho}
-$, $
+$$
 
 Integrating from $r = 0$ to $R$:
 
-$, $
+$$
 P = \int_0^R \frac{2\pi B^2\omega^2 r^3\,t}{\rho}\,dr = \frac{\pi B^2\omega^2 t R^4}{2\rho}
-$, $
+$$
 
 Substituting:
 
-$, $
+$$
 P = \frac{\pi(0.80)^2(300)^2(5.0 \times 10^{-3})(0.15)^4}{2(1.7 \times 10^{-8})} \approx 1.4 \times 10^{7}\mathrm{ W}
-$, $
+$$
 
 :::warning This model assumes the entire disc is immersed in the field. In practice only a localized
 Region passes through the field gap, so actual dissipation is far lower. The key result is the
@@ -491,15 +491,15 @@ Voltage. This is called the **back EMF** ($\epsilon_{\mathrm{back}}$).
 
 The net voltage driving current through the motor coil is:
 
-$, $
+$$
 V_{\mathrm{net}} = V_{\mathrm{supply}} - \epsilon_{\mathrm{back}}
-$, $
+$$
 
 And the current in the motor is:
 
-$, $
+$$
 I = \frac{V_{\mathrm{supply}} - \epsilon_{\mathrm{back}}}{R}
-$, $
+$$
 
 Where $R$ is the total resistance of the motor windings.
 
@@ -517,9 +517,9 @@ Where $R$ is the total resistance of the motor windings.
 
 The mechanical power output of the motor is:
 
-$, $
+$$
 P_{\mathrm{mech}} = \epsilon_{\mathrm{back}} \cdot I
-$, $
+$$
 
 By energy conservation, $V_{\mathrm{supply}} \cdot I = \epsilon_{\mathrm{back}} \cdot I + I^2 R$.
 
@@ -582,13 +582,13 @@ Uniformly in $0.040\mathrm{ s}$. Calculate the average EMF induced in the coil.
 <details>
 <summary>Solution</summary>
 
-$, $
+$$
 \Delta\Phi_B = B\,\Delta A\cos\theta = (0.30)(0.10 \times 0.05)(1) - 0 = 1.5 \times 10^{-3}\mathrm{ Wb}
-$, $
+$$
 
-$, $
+$$
 \epsilon = N\frac{\Delta\Phi_B}{\Delta t} = 100 \times \frac{1.5 \times 10^{-3}}{0.040} = 3.75\mathrm{ V}
-$, $
+$$
 
 </details>
 
@@ -600,9 +600,9 @@ $30^\circ$ to a magnetic field of $0.25\mathrm{ T}$. Calculate the induced EMF.
 <details>
 <summary>Solution</summary>
 
-$, $
+$$
 \epsilon = Blv\sin\theta = (0.25)(0.60)(8.0)\sin 30^{\circ} = (0.25)(0.60)(8.0)(0.500) = 0.60\mathrm{ V}
-$, $
+$$
 
 </details>
 
@@ -617,21 +617,21 @@ Turns, (b) the secondary current, (c) the primary current (ideal).
 
 (a)
 
-$, $
+$$
 N_s = N_p \times \frac{V_s}{V_p} = 200 \times \frac{2400}{120} = 4000
-$, $
+$$
 
 (b)
 
-$, $
+$$
 I_s = \frac{V_s}{R_L} = \frac{2400}{100} = 24\mathrm{ A}
-$, $
+$$
 
 (c)
 
-$, $
+$$
 I_p = I_s \times \frac{N_s}{N_p} = 24 \times \frac{4000}{200} = 480\mathrm{ A}
-$, $
+$$
 
 Check: $V_p I_p = 120 \times 480 = 57\,600\mathrm{ W}$
 $V_s I_s = 2400 \times 24 = 57\,600\mathrm{ W}$.
@@ -666,20 +666,20 @@ Calculate: (a) the self-inductance of the solenoid, (b) the EMF induced in the s
 
 (a)
 
-$, $
+$$
 L = \frac{\mu_0 N^2 A}{l} = \frac{(4\pi \times 10^{-7})(500)^2(4.0 \times 10^{-3})}{0.50} = 2.51 \times 10^{-3}\mathrm{ H} = 2.51\mathrm{ mH}
-$, $
+$$
 
 (b) The field inside the solenoid is $B = \mu_0(N/l)I$So the flux through one secondary turn is
 $\Phi_B = \mu_0(N/l)IA$. The rate of change:
 
-$, $
+$$
 \frac{\Delta\Phi_B}{\Delta t} = \mu_0 \frac{N}{l}A \frac{\Delta I}{\Delta t} = (4\pi \times 10^{-7}) \cdot 1000 \cdot (4.0 \times 10^{-3}) \cdot 30 = 1.508 \times 10^{-4}\mathrm{ Wb s}^{-1}
-$, $
+$$
 
-$, $
+$$
 \epsilon_{\mathrm{secondary}} = N_s \frac{\Delta\Phi_B}{\Delta t} = 50 \times 1.508 \times 10^{-4} = 7.54\mathrm{ mV}
-$, $
+$$
 
 </details>
 
@@ -695,15 +695,15 @@ Field (moving at $2.0\mathrm{ m s}^{-1}$), calculate: (a) the induced EMF, (b) t
 
 (a) As the ring enters, the flux increases at rate $\Delta\Phi_B/\Delta t = B \cdot 2r \cdot v$:
 
-$, $
+$$
 \epsilon = B \cdot 2r \cdot v = (0.80)(0.080)(2.0) = 0.128\mathrm{ V}
-$, $
+$$
 
 (b)
 
-$, $
+$$
 I = \frac{\epsilon}{R} = \frac{0.128}{0.50} = 0.256\mathrm{ A}
-$, $
+$$
 
 (c) By Lenz's law, the induced current creates a field opposing the increasing downward flux, so the
 Force on the ring is **upward**, opposing the fall.
@@ -764,15 +764,15 @@ During the decay.
 
 (a)
 
-$, $
+$$
 E = \frac{1}{2}LI^2 = \frac{1}{2}(0.50)(4.0)^2 = 4.0\mathrm{ J}
-$, $
+$$
 
 (b)
 
-$, $
+$$
 \epsilon = L\frac{\Delta I}{\Delta t} = (0.50)\frac{4.0 - 0}{0.020} = 100\mathrm{ V}
-$, $
+$$
 
 The negative sign (from Lenz's law) indicates the EMF opposes the decrease in current, but the
 Question asks for the magnitude.
@@ -791,25 +791,25 @@ RMS EMF.
 
 (a)
 
-$, $
+$$
 \Phi_B(t) = NAB(t) = (150)(2.0 \times 10^{-3})(0.50\sin 120\pi t) = 0.150\sin(120\pi t)\mathrm{ Wb}
-$, $
+$$
 
 (b)
 
-$, $
+$$
 \epsilon(t) = -\frac{d\Phi_B}`\{dt}` = -(0.150)(120\pi)\cos(120\pi t) = -56.5\cos(120\pi t)\mathrm{ V}
-$, $
+$$
 
-$, $
+$$
 \epsilon_0 = 56.5\mathrm{ V}
-$, $
+$$
 
 (c)
 
-$, $
+$$
 \epsilon_{\mathrm{rms}} = \frac{\epsilon_0}{\sqrt{2}} = \frac{56.5}{\sqrt{2}} = 40.0\mathrm{ V}
-$, $
+$$
 
 </details>
 

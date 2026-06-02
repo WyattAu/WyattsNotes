@@ -1,6 +1,8 @@
 ---
 title: Complex Numbers
-description: 'A-Level Further Maths Complex Numbers notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'A-Level Further Maths Complex Numbers notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed preparation.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -284,13 +286,13 @@ Describes a point moving around the unit circle at a rate determined by $\theta$
 
 The standard laws of indices extend :
 
-$, $
+$$
 \begin{aligned}
 Z_1 z_2 &= r_1 r_2 \, e^{i(\theta_1 + \theta_2)} & &\mathrm{(arguments add)} \\
 \frac{z_1}{z_2} &= \frac{r_1}{r_2} \, e^{i(\theta_1 - \theta_2)} & &\mathrm{(arguments subtract)} \\
 Z^n &= r^n e^{in\theta} & &\mathrm{(argument multiplies)}
 \end{aligned}
-$, $
+$$
 
 :::info info with the $\cos\theta + i\sin\theta$ form. All boards require De Moivre's theorem. :::
 
@@ -987,7 +989,7 @@ Argand diagrams and polar form $(r, \theta)$ connect to polar coordinates. See
 | Argument                      | $\arg(z) = \arctan(b/a)$ (adjusting for quadrant)         |
 | Euler's formula               | $e^{i\theta} = \cos\theta+i\sin\theta$                    |
 | De Moivre                     | $(\cos\theta+i\sin\theta)^n = \cos n\theta+i\sin n\theta$ |
-| $n$-th roots of unity         | $z_k = e^{2\pi ik/n}$, $k = 0, \ldots, n-1$                 |
+| $n$-th roots of unity         | $z_k = e^{2\pi ik/n}$, $k = 0, \ldots, n-1$               |
 | Locus: circle                 | $                                                         | z-a | =r$                              |
 | Locus: perpendicular bisector | $                                                         | z-a | =                                | z-b | $   |
 | Locus: half-line              | $\arg(z-a) = \theta$                                      |

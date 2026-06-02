@@ -1,6 +1,8 @@
 ---
 title: Number Sets and Sequences
-description: 'ILC Maths Number Sets and Sequences notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'ILC Maths Number Sets and Sequences notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused preparation.'
 date: 2026-04-14
 tags:
   - ilc
@@ -19,13 +21,13 @@ Concepts underpin much of the algebra and calculus in the Leaving Certificate co
 
 ### Classification (OL/HL)
 
-| Symbol       | Name             | Description                                                                |
-| ------------ | ---------------- | -------------------------------------------------------------------------- |
-| $\mathbb{N}$ | Natural numbers  | $\{1, 2, 3, \ldots\}$ (some definitions include 0)                         |
-| $\mathbb{Z}$ | Integers         | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$                                      |
+| Symbol       | Name             | Description                                                                  |
+| ------------ | ---------------- | ---------------------------------------------------------------------------- |
+| $\mathbb{N}$ | Natural numbers  | $\{1, 2, 3, \ldots\}$ (some definitions include 0)                           |
+| $\mathbb{Z}$ | Integers         | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$                                        |
 | $\mathbb{Q}$ | Rational numbers | Numbers expressible as $\frac{p}{q}$ where $p, q \in \mathbb{Z}$, $q \neq 0$ |
-| $\mathbb{R}$ | Real numbers     | All rational and irrational numbers                                        |
-| $\mathbb{C}$ | Complex numbers  | Numbers of the form $a + bi$ where $a, b \in \mathbb{R}$                   |
+| $\mathbb{R}$ | Real numbers     | All rational and irrational numbers                                          |
+| $\mathbb{C}$ | Complex numbers  | Numbers of the form $a + bi$ where $a, b \in \mathbb{R}$                     |
 
 The inclusions are:
 $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$.
@@ -47,8 +49,8 @@ The real numbers satisfy the following axioms:
 **Inverse elements:** For every $a$There exists $-a$ such that $a + (-a) = 0$. For every
 $a \neq 0$There exists $a^{-1}$ such that $a \cdot a^{-1} = 1$.
 
-**Ordered field properties:** For any $a, b \in \mathbb{R}$Exactly one of $a \lt b$, $a = b$ $a \gt b$
-holds. The order is compatible with addition and multiplication by positive numbers.
+**Ordered field properties:** For any $a, b \in \mathbb{R}$Exactly one of $a \lt b$, $a = b$
+$a \gt b$ holds. The order is compatible with addition and multiplication by positive numbers.
 
 ### Irrational Numbers (HL)
 
@@ -610,15 +612,15 @@ Finding the roots of the characteristic equation $\lambda^2 - a\lambda - b = 0$.
 
 Characteristic equation: $\lambda^2 - \lambda - 1 = 0$.
 
-$, $
+$$
 \lambda = \frac{1 \pm \sqrt{5}}{2}
-$, $
+$$
 
 The general solution is:
 
-$, $
+$$
 F_n = A\left(\frac{1 + \sqrt{5}}{2}\right)^n + B\left(\frac{1 - \sqrt{5}}{2}\right)^n
-$, $
+$$
 
 ## Worked Examples
 

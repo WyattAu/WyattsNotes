@@ -1,6 +1,8 @@
 ---
 title: International Trade
-description: 'IB Economics International Trade notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'IB Economics International Trade notes covering key definitions, core concepts, worked examples,
+  and practice questions for focused revision.'
 date: 2026-05-21
 tags: [ib, ib-economics]
 categories: [ib-economics]
@@ -1578,17 +1580,17 @@ prices, driven by structural shifts in global demand.
 
 During a super-cycle upswing:
 
-$, $
+$$
 \text{ToT improve} \implies \text{Higher export revenue} \implies \text{Higher government
 savings} \implies \text{Higher investment}
-$, $
+$$
 
 During a super-cycle downswing:
 
-$, $
+$$
 \text{ToT deteriorate} \implies \text{Lower export revenue} \implies \text{Fiscal deficits} \implies
 \text{Debt accumulation}
-$, $
+$$
 
 The volatility of commodity prices makes fiscal planning extremely difficult for Commodity-dependent
 developing countries.
@@ -2230,8 +2232,7 @@ A country imports 1,000 units at a world price of $10. A $2 tariff reduces impor
 raises the domestic price to $12.
 
 - Government revenue: $2 \times 800 = \$1,600$
-- Consumer surplus loss: area of trapezoid
-  $= \frac{1}{2} \times (1,000 + 800) \times 2 = \$1,800$
+- Consumer surplus loss: area of trapezoid $= \frac{1}{2} \times (1,000 + 800) \times 2 = \$1,800$
 - Producer surplus gain: area of triangle above supply curve $= \$150$
 - Deadweight loss: $\$1,800 - \$1,600 - \$150 = \$50$ (consumption distortion + production
   distortion)

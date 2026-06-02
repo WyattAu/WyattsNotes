@@ -388,10 +388,9 @@ $$
 
 **Solution:**
 
-$, $
+$$
 B = \frac{8\sin 30^{\circ}}{\sin 45^{\circ}} = \frac{4}{\frac{\sqrt{2}}{2}} = 4\sqrt{2} \approx 5.66 \mathrm{ cm}
-$,
-$
+$$
 
 ### Worked Example: Cosine Rule
 
@@ -399,14 +398,13 @@ $
 
 **Solution:**
 
-$, $
+$$
 \cos C = \frac{5^2 + 7^2 - 8^2}{2 \times 5 \times 7} = \frac{25 + 49 - 64}{70} = \frac{10}{70} = \frac{1}{7}
-$,
-$
+$$
 
-$, $
+$$
 C = \arccos\left(\frac{1}{7}\right) \approx 81.8^{\circ}
-$, $
+$$
 
 ## Ambiguous Case of the Sine Rule
 
@@ -426,9 +424,9 @@ Given sides $a$ and $b$ and angle $A$ (where $a$ is opposite $A$):
 
 When $\sin B = k$ where $0 \lt k \lt 1$There are two possible values for $B$:
 
-$, $
+$$
 B_1 = \arcsin(k) \quad \mathrm{and} \quad B_2 = 180^{\circ} - \arcsin(k)
-$, $
+$$
 
 Both may be valid since $B_1 + B_2 = 180^\circ$ (so if $A + B_1 \lt 180^\circ$Check whether
 $A + B_2 \lt 180^\circ$ as well).
@@ -478,16 +476,15 @@ $c_2 = \frac{7\sin 26.8^{\circ}}{\sin 40^{\circ}} \approx 4.89$
 
 Find angle $B$ using the sine rule:
 
-$, $
+$$
 \frac{\sin B}{8} = \frac{\sin 65^{\circ}}{12} \implies \sin B = \frac{2\sin 65^{\circ}}{3} \approx 0.604
-$,
-$
+$$
 
 Since $b \lt a$There is only one solution: $B \approx 37.2^\circ$So $C = 77.8^\circ$.
 
-$, $
+$$
 \mathrm{Area} = \frac{1}{2}(12)(8)\sin 77.8^{\circ} \approx 47.0 \mathrm{ square units}
-$, $
+$$
 
 ### Worked Example: Bearing Problem
 
@@ -502,16 +499,15 @@ angle at $B$ is $180^{\circ} - 60^{\circ} = 120^\circ$.
 
 Using the cosine rule:
 
-$, $
+$$
 AC = \sqrt{15^2 + 20^2 - 2(15)(20)\cos 120^{\circ}} = \sqrt{225 + 400 + 300} = \sqrt{925} = 5\sqrt{37} \approx 30.4 \mathrm{ km}
-$,
-$
+$$
 
 To find the bearing, find angle $C$:
 
-$, $
+$$
 \frac{\sin C}{15} = \frac{\sin 120^{\circ}}{5\sqrt{37}} \implies C \approx 25.3^{\circ}
-$, $
+$$
 
 The bearing from $C$ to $A$ is $360^{\circ} - 110^{\circ} - 25.3^{\circ} \approx 225^\circ$.
 
@@ -519,14 +515,13 @@ The bearing from $C$ to $A$ is $360^{\circ} - 110^{\circ} - 25.3^{\circ} \approx
 
 ### General Solutions
 
-$, $
+$$
 \begin`\{aligned}`
 \sin\theta &= k \implies \theta = \arcsin(k) + 2n\pi \mathrm{ or } \theta = \pi - \arcsin(k) + 2n\pi\\
 \cos\theta &= k \implies \theta = \arccos(k) + 2n\pi \mathrm{ or } \theta = -\arccos(k) + 2n\pi\\
 \tan\theta &= k \implies \theta = \arctan(k) + n\pi
 \end`\{aligned}`
-$,
-$
+$$
 
 Where $n \in \mathbb{Z}$.
 
@@ -538,18 +533,17 @@ Where $n \in \mathbb{Z}$.
 
 Let $u = 2x$So $u \in [0, 4\pi]$.
 
-$, $
+$$
 \sin u = \frac{1}{2} \implies u = \frac{\pi}{6}, \frac{5\pi}{6}, 2\pi + \frac{\pi}{6}, 2\pi + \frac{5\pi}{6}
-$,
-$
+$$
 
-$, $
+$$
 U = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{13\pi}{6}, \frac{17\pi}{6}
-$, $
+$$
 
-$, $
+$$
 X = \frac{u}{2} = \frac{\pi}{12}, \frac{5\pi}{12}, \frac{13\pi}{12}, \frac{17\pi}{12}
-$, $
+$$
 
 ### Worked Example: Factoring
 
@@ -559,13 +553,13 @@ $, $
 
 Let $u = \cos x$:
 
-$, $
+$$
 2u^2 - u - 1 = 0 \implies (2u + 1)(u - 1) = 0
-$, $
+$$
 
-$, $
+$$
 U = -\frac{1}{2} \mathrm{ or } u = 1
-$, $
+$$
 
 - $\cos x = -\frac{1}{2} \implies x = \frac{2\pi}{3}, \frac{4\pi}{3}$
 - $\cos x = 1 \implies x = 0$
@@ -580,19 +574,19 @@ So $x = 0, \frac{2\pi}{3}, \frac{4\pi}{3}$.
 
 Replace $\cos^2 x$ with $1 - \sin^2 x$:
 
-$, $
+$$
 \sin^2 x = 3(1 - \sin^2 x) \implies \sin^2 x = 3 - 3\sin^2 x \implies 4\sin^2 x = 3
-$, $
+$$
 
-$, $
+$$
 \sin^2 x = \frac{3}{4} \implies \sin x = \pm\frac{\sqrt{3}}{2}
-$, $
+$$
 
 Since $\sin x \gt 0$ in quadrants I and II, and $\sin x \lt 0$ in quadrants III and IV:
 
-$, $
+$$
 X = \frac{\pi}{3}, \frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}
-$, $
+$$
 
 ### Worked Example: Equations Involving $\tan$
 
@@ -855,14 +849,13 @@ The largest angle is opposite the longest side, so it is angle $R$ (opposite $r 
 
 Using the cosine rule:
 
-$, $
+$$
 \cos R = \frac{13^2 + 14^2 - 15^2}{2 \times 13 \times 14} = \frac{169 + 196 - 225}{364} = \frac{140}{364} = \frac{5}{13}
-$,
-$
+$$
 
-$, $
+$$
 R = \arccos\frac{5}{13} \approx 67.4^{\circ}
-$, $
+$$
 
 </details>
 
@@ -875,10 +868,9 @@ $, $
 
 Starting from the LHS:
 
-$, $
+$$
 \tan^2 x - \sin^2 x = \frac{\sin^2 x}{\cos^2 x} - \sin^2 x = \sin^2 x\left(\frac{1}{\cos^2 x} - 1\right) = \sin^2 x \cdot \frac{1 - \cos^2 x}{\cos^2 x} = \sin^2 x \cdot \frac{\sin^2 x}{\cos^2 x} = \tan^2 x \sin^2 x = \mathrm{RHS}
-$,
-$
+$$
 
 </details>
 
@@ -890,13 +882,13 @@ Value.
 
 **Solution:**
 
-$, $
+$$
 R = \sqrt{1^2 + (\sqrt{3})^2} = \sqrt{1 + 3} = 2
-$, $
+$$
 
-$, $
+$$
 \tan\alpha = \frac{\sqrt{3}}{1} = \sqrt{3} \implies \alpha = \frac{\pi}{3}
-$, $
+$$
 
 So $\sin x + \sqrt{3}\cos x = 2\sin\left(x + \frac{\pi}{3}\right)$.
 
@@ -920,20 +912,19 @@ The projection of this diagonal onto the base has length $\sqrt{5^2 + 4^2} = \sq
 The angle $\theta$ between the space diagonal and its projection onto the base is the angle with the
 Base:
 
-$, $
+$$
 \sin\theta = \frac{3}{5\sqrt{2}} = \frac{3\sqrt{2}}{10}
-$, $
+$$
 
-$, $
+$$
 \theta = \arcsin\frac{3\sqrt{2}}{10} \approx 25.1^{\circ}
-$, $
+$$
 
 Alternatively, using the tangent:
 
-$, $
+$$
 \tan\theta = \frac{3}{\sqrt{41}} \implies \theta = \arctan\frac{3}{\sqrt{41}} \approx 25.1^{\circ}
-$,
-$
+$$
 
 </details>
 

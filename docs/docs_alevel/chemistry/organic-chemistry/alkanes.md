@@ -487,9 +487,9 @@ $8408\,\mathrm{kJ/mol}$
 Bonds formed: $4 \times 2 \times \mathrm{C=O}$ ($8 \times 805 = 6440$) +
 $5 \times 2 \times \mathrm{O-H}$ ($10 \times 464 = 4640$) = $11080\,\mathrm{kJ/mol}$
 
-$, $
+$$
 \Delta H_c = 8408 - 11080 = -2672\,\mathrm{kJ/mol}
-$, $
+$$
 
 The literature value is $-2877\,\mathrm{kJ/mol}$. The discrepancy arises from using mean bond
 enthalpies rather than specific values for butane and its products.
@@ -547,10 +547,9 @@ breaks large molecules into smaller, more useful ones:
 **Thermal cracking:** High temperature ($400$--$900^\circ\mathrm{C}$) and pressure. Produces a
 mixture of alkanes and alkenes. Free radical mechanism. Used to produce ethene.
 
-$, $
+$$
 \mathrm{C}_{10}\mathrm{H}_{22} \xrightarrow{\Delta} \mathrm{C}_8\mathrm{H}_{18} + \mathrm{C}_2\mathrm{H}_4
-$,
-$
+$$
 
 **Catalytic cracking:** Lower temperature ($450^\circ\mathrm{C}$) with a zeolite catalyst. Produces
 branched alkanes and cycloalkanes (better for petrol, higher octane rating).
@@ -581,47 +580,43 @@ major product.
 
 **Initiation:**
 
-$, $
+$$
 \mathrm{Cl}_2 \xrightarrow{\mathrm{UV}} 2\mathrm{Cl}\cdot
-$, $
+$$
 
 **Propagation (pathway to 1-chloropropane):**
 
-$, $
+$$
 \mathrm{Cl}\cdot + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_3 \to \mathrm{HCl} + \mathrm{CH}_2\cdot\mathrm{CH}_2\mathrm{CH}_3 \quad (\text{abstracts a primary H})
-$,
-$
+$$
 
-$, $
+$$
 \mathrm{CH}_2\cdot\mathrm{CH}_2\mathrm{CH}_3 + \mathrm{Cl}_2 \to \mathrm{CH}_2\mathrm{ClCH}_2\mathrm{CH}_3 + \mathrm{Cl}\cdot
-$,
-$
+$$
 
 **Propagation (pathway to 2-chloropropane):**
 
-$, $
+$$
 \mathrm{Cl}\cdot + \mathrm{CH}_3\mathrm{CH}_2\mathrm{CH}_3 \to \mathrm{HCl} + \mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_3 \quad (\text{abstracts a secondary H})
-$,
-$
+$$
 
-$, $
+$$
 \mathrm{CH}_3\mathrm{CH}\cdot\mathrm{CH}_3 + \mathrm{Cl}_2 \to \mathrm{CH}_3\mathrm{CHClCH}_3 + \mathrm{Cl}\cdot
-$,
-$
+$$
 
 **Termination:**
 
-$, $
+$$
 \mathrm{Cl}\cdot + \mathrm{Cl}\cdot \to \mathrm{Cl}_2
-$, $
+$$
 
-$, $
+$$
 \mathrm{Cl}\cdot + \mathrm{R}\cdot \to \mathrm{RCl}
-$, $
+$$
 
-$, $
+$$
 \mathrm{R}\cdot + \mathrm{R}'\cdot \to \mathrm{RR}'
-$, $
+$$
 
 (where R and R' are any organic radicals formed)
 
@@ -648,16 +643,16 @@ the alkane.
 
 Mass of $\mathrm{CO}_2$ absorbed $= 30.8\,\mathrm{g}$.
 
-$, $
+$$
 N(\mathrm{CO}_2) = \frac{30.8}{44.0} = 0.700\,\mathrm{mol}
-$, $
+$$
 
 If the alkane has formula $\mathrm{C}_n\mathrm{H}_{2n+2}$Combustion produces $n$ moles of
 $\mathrm{CO}_2$:
 
-$, $
+$$
 N = 0.700
-$, $
+$$
 
 Molar mass of alkane $= 10.0/0.700 \times (1/n)$... Wait:
 $n(\text{alkane}) = n(\mathrm{CO}_2)/n_\mathrm{C}$.

@@ -405,16 +405,15 @@ For $ax^n + bx^{n-1} + \cdots = 0$ with roots $\alpha, \beta, \gamma, \ldots$:
 
 **Quadratic** ($ax^2 + bx + c = 0$):
 
-$, $
+$$
 \alpha + \beta = -\frac{b}{a}, \quad \alpha\beta = \frac{c}{a}
-$, $
+$$
 
 **Cubic** ($ax^3 + bx^2 + cx + d = 0$):
 
-$, $
+$$
 \alpha + \beta + \gamma = -\frac{b}{a}, \quad \alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}, \quad \alpha\beta\gamma = -\frac{d}{a}
-$,
-$
+$$
 
 ---
 
@@ -422,9 +421,9 @@ $
 
 ### Linear Inequalities
 
-$, $
+$$
 Ax + b \gt 0 \implies x \gt -\frac{b}{a} \quad (\mathrm{if } a \gt 0)
-$, $
+$$
 
 :::warning[Exam Tip]
 
@@ -440,9 +439,9 @@ Factorise the quadratic and use a sign diagram (or test points in each interval)
 
 Solve $x^2 - 5x + 6 \le 0$.
 
-$, $
+$$
 (x - 2)(x - 3) \le 0
-$, $
+$$
 
 The product is non-positive when $2 \le x \le 3$.
 
@@ -452,29 +451,29 @@ Solution: $[2, 3]$.
 
 ### Absolute Value Inequalities
 
-$, $
+$$
 |ax + b| \le c \iff -c \le ax + b \le c
-$, $
+$$
 
-$, $
+$$
 |ax + b| \ge c \iff ax + b \le -c \quad \mathrm{or} \quad ax + b \ge c
-$, $
+$$
 
 :::info[Example]
 
 Solve $|2x - 3| \lt 5$.
 
-$, $
+$$
 -5 \lt 2x - 3 \lt 5
-$, $
+$$
 
-$, $
+$$
 -2 \lt 2x \lt 8
-$, $
+$$
 
-$, $
+$$
 -1 \lt x \lt 4
-$, $
+$$
 
 Solution: $(-1, 4)$.
 
@@ -507,13 +506,13 @@ Solve simultaneously: $y = x^2 - 4x + 3$ and $y = 2x - 3$.
 
 Substitute: $2x - 3 = x^2 - 4x + 3$.
 
-$, $
+$$
 X^2 - 6x + 6 = 0
-$, $
+$$
 
-$, $
+$$
 X = \frac{6 \pm \sqrt{36 - 24}}{2} = \frac{6 \pm 2\sqrt{3}}{2} = 3 \pm \sqrt{3}
-$, $
+$$
 
 When $x = 3 + \sqrt{3}$: $y = 2(3 + \sqrt{3}) - 3 = 3 + 2\sqrt{3}$.
 
@@ -527,9 +526,9 @@ When $x = 3 - \sqrt{3}$: $y = 2(3 - \sqrt{3}) - 3 = 3 - 2\sqrt{3}$.
 
 ### Definition
 
-$, $
+$$
 |x| = \begin`\{cases}` x & x \ge 0 \\ -x & x \lt 0 \end`\{cases}`
-$, $
+$$
 
 ### Graph
 
@@ -567,28 +566,27 @@ Given $f(x) = \dfrac{x}{x + 2}$ and $g(x) = 2x - 1$:
 
 **(a)** Find $(f \circ g)(x)$ and state its domain.
 
-$, $
+$$
 (f \circ g)(x) = f(2x - 1) = \frac{2x - 1}{2x - 1 + 2} = \frac{2x - 1}{2x + 1}
-$, $
+$$
 
 Domain: $2x + 1 \neq 0 \implies x \neq -\dfrac{1}{2}$.
 
 **(b)** Find $f^{-1}(x)$.
 
-$, $
+$$
 Y = \frac{x}{x+2} \implies y(x+2) = x \implies xy + 2y = x \implies x(1-y) = 2y
-$, $
+$$
 
-$, $
+$$
 F^{-1}(x) = \frac{2x}{1 - x}, \quad x \neq 1
-$, $
+$$
 
 **(c)** Verify that $f^{-1} \circ f$ is the identity function.
 
-$, $
+$$
 (f^{-1} \circ f)(x) = f^{-1}\!\left(\frac{x}{x+2}\right) = \frac{2 \cdot \frac{x}{x+2}}{1 - \frac{x}{x+2}} = \frac{\frac{2x}{x+2}}{\frac{2}{x+2}} = x
-$,
-$
+$$
 
 ### Question 2 (Paper 2 style)
 
@@ -596,9 +594,9 @@ The function $f$ is defined by $f(x) = 2x^2 - 12x + 13$ for $x \ge 3$.
 
 **(a)** Express $f(x)$ in the form $a(x - h)^2 + k$.
 
-$, $
+$$
 F(x) = 2(x^2 - 6x) + 13 = 2(x - 3)^2 - 18 + 13 = 2(x - 3)^2 - 5
-$, $
+$$
 
 **(b)** Find the range of $f$.
 
@@ -608,9 +606,9 @@ Range: $[-5, \infty)$.
 
 **(c)** Find $f^{-1}(x)$ and state its domain.
 
-$, $
+$$
 Y = 2(x-3)^2 - 5 \implies y + 5 = 2(x-3)^2 \implies (x-3)^2 = \frac{y+5}{2}
-$, $
+$$
 
 Since $x \ge 3$$x - 3 \ge 0$:
 
@@ -832,17 +830,17 @@ The function $f$ is defined as $f(x) = \dfrac{2x + 3}{x - 1}$ for $x \in \mathbb
 
 **(a)** Find the inverse function $f^{-1}$.
 
-$, $
+$$
 Y = \frac{2x + 3}{x - 1} \implies y(x-1) = 2x + 3 \implies yx - y = 2x + 3
-$, $
+$$
 
-$, $
+$$
 X(y - 2) = y + 3 \implies x = \frac{y + 3}{y - 2}
-$, $
+$$
 
-$, $
+$$
 F^{-1}(x) = \frac{x + 3}{x - 2}, \quad x \neq 2
-$, $
+$$
 
 **(b)** State the domain and range of $f^{-1}$.
 
@@ -852,25 +850,25 @@ Range of $f^{-1}$: $y \neq 1$ (which equals the domain of $f$).
 
 **(c)** Find the value of $x$ such that $f(x) = f^{-1}(x)$.
 
-$, $
+$$
 \frac{2x+3}{x-1} = \frac{x+3}{x-2}
-$, $
+$$
 
-$, $
+$$
 (2x+3)(x-2) = (x+3)(x-1)
-$, $
+$$
 
-$, $
+$$
 2x^2 - x - 6 = x^2 + 2x - 3
-$, $
+$$
 
-$, $
+$$
 X^2 - 3x - 3 = 0
-$, $
+$$
 
-$, $
+$$
 X = \frac{3 \pm \sqrt{9+12}}{2} = \frac{3 \pm \sqrt{21}}{2}
-$, $
+$$
 
 ### Question 7 (Paper 2 style)
 
@@ -878,9 +876,9 @@ Given $f(x) = x^2 - 4x + 3$ and $g(x) = 2x - 1$:
 
 **(a)** Find $(g \circ f)(x)$ and its range.
 
-$, $
+$$
 (g \circ f)(x) = g(x^2 - 4x + 3) = 2(x^2 - 4x + 3) - 1 = 2x^2 - 8x + 5
-$, $
+$$
 
 Completing the square: $2(x - 2)^2 - 3$.
 
@@ -888,13 +886,13 @@ Range: $[-3, \infty)$.
 
 **(b)** Find the set of values of $x$ for which $(f \circ g)(x) \lt 0$.
 
-$, $
+$$
 (f \circ g)(x) = (2x-1)^2 - 4(2x-1) + 3 = 4x^2 - 4x + 1 - 8x + 4 + 3 = 4x^2 - 12x + 8
-$, $
+$$
 
-$, $
+$$
 4x^2 - 12x + 8 \lt 0 \implies x^2 - 3x + 2 \lt 0 \implies (x-1)(x-2) \lt 0
-$, $
+$$
 
 Solution: $1 \lt x \lt 2$.
 

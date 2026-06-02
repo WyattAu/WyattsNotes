@@ -281,9 +281,9 @@ Alternative to repeated application of the formula.
 
 Let $u = x$$dv = e^x\,dx$. Then $du = dx$ and $v = e^x$.
 
-$, $
+$$
 \int x e^x\,dx = xe^x - \int e^x\,dx = xe^x - e^x + C = (x - 1)e^x + C
-$, $
+$$
 
 **Find $\int x^2 \sin x\,dx$**
 
@@ -291,19 +291,18 @@ Apply integration by parts twice.
 
 First: $u = x^2$$dv = \sin x\,dx$So $du = 2x\,dx$$v = -\cos x$.
 
-$, $
+$$
 \int x^2 \sin x\,dx = -x^2 \cos x + 2\int x \cos x\,dx
-$, $
+$$
 
 Second: $u = x$$dv = \cos x\,dx$So $du = dx$$v = \sin x$.
 
-$, $
+$$
 \begin`\{aligned}`
 \int x^2 \sin x\,dx &= -x^2 \cos x + 2\left(x\sin x - \int \sin x\,dx\right) \\[6pt]
 &= -x^2 \cos x + 2x\sin x + 2\cos x + C
 \end`\{aligned}`
-$,
-$
+$$
 
 </details>
 :::
@@ -330,17 +329,17 @@ Integrand into a sum of simpler fractions.
 
 Decompose: $\dfrac{5x + 1}{(x+1)(x-2)} = \dfrac{A}{x+1} + \dfrac{B}{x-2}$
 
-$, $
+$$
 5x + 1 = A(x - 2) + B(x + 1)
-$, $
+$$
 
 Setting $x = -1$: $-5 + 1 = A(-3) \implies A = \frac{4}{3}$
 
 Setting $x = 2$: $10 + 1 = B(3) \implies B = \frac{11}{3}$
 
-$, $
+$$
 \int \frac{5x + 1}{(x+1)(x-2)}\,dx = \frac{4}{3}\ln|x+1| + \frac{11}{3}\ln|x-2| + C
-$, $
+$$
 
 </details>
 :::
@@ -351,25 +350,25 @@ Several standard techniques apply to integrals involving trigonometric functions
 
 **Pythagorean identities for conversion:**
 
-$, $
+$$
 \sin^2 x = \frac{1 - \cos 2x}{2}, \qquad \cos^2 x = \frac{1 + \cos 2x}{2}
-$, $
+$$
 
 These are used to reduce the power of trigonometric functions in integrands.
 
 **Products to sums:**
 
-$, $
+$$
 \sin A \cos B = \frac{1}{2}[\sin(A+B) + \sin(A-B)]
-$, $
+$$
 
-$, $
+$$
 \cos A \cos B = \frac{1}{2}[\cos(A-B) + \cos(A+B)]
-$, $
+$$
 
-$, $
+$$
 \sin A \sin B = \frac{1}{2}[\cos(A-B) - \cos(A+B)]
-$, $
+$$
 
 **Using substitution with trigonometric derivatives:** Recall that $\dfrac{d}{dx}(\sin x) = \cos x$
 And $\dfrac{d}{dx}(\cos x) = -\sin x$. Many trigonometric integrals yield to $u$-substitution when
@@ -384,20 +383,19 @@ $\dfrac{d}{dx}(\tan x) = \sec^2 x$.
  <summary>Expand</summary>
  **Find $\int \sin^2 x\,dx$**
 
-$, $
+$$
 \int \sin^2 x\,dx = \int \frac{1 - \cos 2x}{2}\,dx = \frac{x}{2} - \frac{\sin 2x}{4} + C
-$, $
+$$
 
 **Find $\int \sin^3 x\,dx$**
 
-$, $
+$$
 \begin`\{aligned}`
 \int \sin^3 x\,dx &= \int \sin x (1 - \cos^2 x)\,dx \\[6pt]
 &= \int \sin x\,dx - \int \sin x \cos^2 x\,dx \\[6pt]
 &= -\cos x + \frac{\cos^3 x}{3} + C
 \end`\{aligned}`
-$,
-$
+$$
 
 (using $u = \cos x$$du = -\sin x\,dx$ for the second integral)
 
@@ -436,10 +434,9 @@ Where the curves are expressed as $x = f(y)$ and $x = g(y)$.
 
 Intersection: $x^2 = 2x \implies x = 0$ or $x = 2$. On $[0, 2]$$2x \geq x^2$.
 
-$, $
+$$
 A = \int_0^2 (2x - x^2)\,dx = \left[x^2 - \frac{x^3}{3}\right]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}
-$,
-$
+$$
 
 </details>
 :::
@@ -524,21 +521,20 @@ Total distance in the first 3 seconds.**
 
 Displacement:
 
-$, $
+$$
 \int_0^3 (6t^2 - 4t)\,dt = \left[2t^3 - 2t^2\right]_0^3 = 54 - 18 = 36 \mathrm{ m}
-$, $
+$$
 
 Total distance: find when $v(t) = 0$: $6t^2 - 4t = 0 \implies t = 0$ or $t = \frac{2}{3}$.
 
-$, $
+$$
 \begin`\{aligned}`
 \mathrm{Distance} &= \int_0^{2/3} |6t^2 - 4t|\,dt + \int_{2/3}^3 |6t^2 - 4t|\,dt \\[6pt]
 &= \int_0^{2/3} (4t - 6t^2)\,dt + \int_{2/3}^3 (6t^2 - 4t)\,dt \\[6pt]
 &= \left[2t^2 - 2t^3\right]_0^{2/3} + \left[2t^3 - 2t^2\right]_{2/3}^3 \\[6pt]
 &= \frac{8}{27} + \left(36 - \left(-\frac{8}{27}\right)\right) = \frac{8}{27} + 36 + \frac{8}{27} = \frac{988}{27} \approx 36.6 \mathrm{ m}
 \end`\{aligned}`
-$,
-$
+$$
 
 </details>
 :::
@@ -552,29 +548,29 @@ Simplifying computations.
 
 ### Linearity
 
-$, $
+$$
 \int_a^b [k f(x) + l g(x)]\,dx = k\int_a^b f(x)\,dx + l\int_a^b g(x)\,dx
-$, $
+$$
 
 For constants $k, l \in \mathbb{R}$.
 
 ### Reversal of Limits
 
-$, $
+$$
 \int_a^b f(x)\,dx = -\int_b^a f(x)\,dx
-$, $
+$$
 
 ### Interval of Zero Length
 
-$, $
+$$
 \int_a^a f(x)\,dx = 0
-$, $
+$$
 
 ### Additivity Over Intervals
 
-$, $
+$$
 \int_a^b f(x)\,dx = \int_a^c f(x)\,dx + \int_c^b f(x)\,dx
-$, $
+$$
 
 For any $c \in [a, b]$.
 
@@ -589,9 +585,9 @@ $\displaystyle\int_a^b f(x)\,dx \geq \int_a^b g(x)\,dx$.
 
 If $m \leq f(x) \leq M$ for all $x \in [a, b]$Then:
 
-$, $
+$$
 M(b - a) \leq \int_a^b f(x)\,dx \leq M(b - a)
-$, $
+$$
 
 :::info[Examples]
 
@@ -599,13 +595,12 @@ $, $
  <summary>Expand</summary>
  **Given $\int_1^3 f(x)\,dx = 5$ and $\int_1^3 g(x)\,dx = -2$Find $\int_3^1 [3f(x) - 2g(x)]\,dx$.**
 
-$, $
+$$
 \begin`\{aligned}`
 \int_3^1 [3f(x) - 2g(x)]\,dx &= -\int_1^3 [3f(x) - 2g(x)]\,dx \\[6pt]
 &= -\left(3 \cdot 5 - 2 \cdot (-2)\right) = -(15 + 4) = -19
 \end`\{aligned}`
-$,
-$
+$$
 
 </details>
 :::
@@ -620,17 +615,17 @@ Interval of integration.
 
 ### Type 1: Infinite Limits of Integration
 
-$, $
+$$
 \int_a^{\infty} f(x)\,dx = \lim_{t \to \infty} \int_a^t f(x)\,dx
-$, $
+$$
 
-$, $
+$$
 \int_{-\infty}^b f(x)\,dx = \lim_{t \to -\infty} \int_t^b f(x)\,dx
-$, $
+$$
 
-$, $
+$$
 \int_{-\infty}^{\infty} f(x)\,dx = \int_{-\infty}^c f(x)\,dx + \int_c^{\infty} f(x)\,dx
-$, $
+$$
 
 Both limits must converge independently for the integral to converge.
 
@@ -638,21 +633,21 @@ Both limits must converge independently for the integral to converge.
 
 If $f$ has a vertical asymptote at $x = a$:
 
-$, $
+$$
 \int_a^b f(x)\,dx = \lim_{t \to a^+} \int_t^b f(x)\,dx
-$, $
+$$
 
 If $f$ has a vertical asymptote at $x = b$:
 
-$, $
+$$
 \int_a^b f(x)\,dx = \lim_{t \to b^-} \int_a^t f(x)\,dx
-$, $
+$$
 
 If $f$ has a vertical asymptote at an interior point $x = c \in (a, b)$:
 
-$, $
+$$
 \int_a^b f(x)\,dx = \lim_{t \to c^-} \int_a^t f(x)\,dx + \lim_{t \to c^+} \int_t^b f(x)\,dx
-$, $
+$$
 
 ### Convergence and Divergence
 
@@ -662,9 +657,9 @@ Otherwise.
 **$p$-test for convergence:** The integral $\displaystyle\int_1^{\infty} \frac{1}{x^p}\,dx$
 Converges if and only if $p > 1$In which case:
 
-$, $
+$$
 \int_1^{\infty} \frac{1}{x^p}\,dx = \frac{1}{p - 1}
-$, $
+$$
 
 Similarly, $\displaystyle\int_0^1 \frac{1}{x^p}\,dx$ converges if and only if $p < 1$.
 
@@ -678,25 +673,23 @@ Diverges, then $\int_a^{\infty} g(x)\,dx$ also diverges.
  <summary>Expand</summary>
  **Determine whether $\displaystyle\int_1^{\infty} \frac{1}{x^2}\,dx$ converges.**
 
-$, $
+$$
 \begin`\{aligned}`
 \int_1^{\infty} \frac{1}{x^2}\,dx &= \lim_{t \to \infty} \int_1^t x^{-2}\,dx = \lim_{t \to \infty} \left[-\frac{1}{x}\right]_1^t \\[6pt]
 &= \lim_{t \to \infty} \left(-\frac{1}{t} + 1\right) = 1
 \end`\{aligned}`
-$,
-$
+$$
 
 The integral converges to $1$. (Consistent with the $p$-test: $p = 2 > 1$.)
 
 **Determine whether $\displaystyle\int_0^1 \frac{1}{\sqrt{x}}\,dx$ converges.**
 
-$, $
+$$
 \begin`\{aligned}`
 \int_0^1 \frac{1}{\sqrt{x}}\,dx &= \lim_{t \to 0^+} \int_t^1 x^{-1/2}\,dx = \lim_{t \to 0^+} \Big[2\sqrt{x}\Big]_t^1 \\[6pt]
 &= \lim_{t \to 0^+} (2 - 2\sqrt{t}) = 2
 \end`\{aligned}`
-$,
-$
+$$
 
 The integral converges to $2$. (Consistent with the $p$-test: $p = \frac{1}{2} < 1$.)
 
@@ -772,19 +765,19 @@ $$
  <summary>Find the volume of revolution when the region bounded by $y = \ln x$$x = e$And the $x$-axis is rotated about the $x$-axis.</summary>
  The curve $y = \ln x$ meets the $x$-axis at $x = 1$.
 
-$, $
+$$
 \begin`\{aligned}`
 V &= \pi \int_1^e (\ln x)^2\,dx
 \end`\{aligned}`
-$, $
+$$
 
 Integration by parts with $u = (\ln x)^2$$dv = dx$: $du = \dfrac{2\ln x}{x}\,dx$$v = x$.
 
-$, $
+$$
 \begin`\{aligned}`
 \int (\ln x)^2\,dx &= x(\ln x)^2 - 2\int \ln x\,dx
 \end`\{aligned}`
-$, $
+$$
 
 Apply parts again for $\int \ln x\,dx$: $u = \ln x$$dv = dx$So $\int \ln x\,dx = x\ln x - x$.
 
@@ -889,13 +882,12 @@ $1 = A(x+1) + B(x-1)$
 
 $x = 1$: $A = \dfrac{1}{2}$$x = -1$: $B = -\dfrac{1}{2}$
 
-$, $
+$$
 \begin`\{aligned}`
 \int \frac{x^2}{x^2 - 1}\,dx &= \int \left(1 + \frac{1}{2(x-1)} - \frac{1}{2(x+1)}\right)\,dx \\[6pt]
 &= x + \frac{1}{2}\ln|x-1| - \frac{1}{2}\ln|x+1| + C
 \end`\{aligned}`
-$,
-$
+$$
 
 </details>
 :::
@@ -928,19 +920,19 @@ $$
 Second application on $\int e^x \sin x\,dx$: $u = e^x$$dv = \sin x\,dx$So $du = e^x\,dx$
 $v = -\cos x$.
 
-$, $
+$$
 \int e^x \sin x\,dx = -e^x \cos x + \int e^x \cos x\,dx = -e^x \cos x + I
-$, $
+$$
 
 Substituting back:
 
-$, $
+$$
 I = e^x \sin x - (-e^x \cos x + I) = e^x \sin x + e^x \cos x - I
-$, $
+$$
 
-$, $
+$$
 2I = e^x (\sin x + \cos x) \implies I = \frac{e^x (\sin x + \cos x)}{2} + C
-$, $
+$$
 
 </details>
 :::

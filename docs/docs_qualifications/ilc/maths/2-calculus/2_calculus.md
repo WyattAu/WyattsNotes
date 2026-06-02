@@ -1,6 +1,8 @@
 ---
 title: Calculus
-description: 'ILC Maths Calculus notes covering key definitions, core concepts, worked examples, and practice questions for detailed exam preparation and revision.'
+description:
+  'ILC Maths Calculus notes covering key definitions, core concepts, worked examples, and practice
+  questions for detailed exam preparation and revision.'
 date: 2026-04-14
 tags:
   - ilc
@@ -279,8 +281,8 @@ $$
 
 Stationary points occur where $f'(x) = 0$. Use the second derivative to classify:
 
-| Condition               | Type              |
-| ----------------------- | ----------------- |
+| Condition                 | Type              |
+| ------------------------- | ----------------- |
 | $f'(x) = 0$, $f''(x) > 0$ | Local minimum     |
 | $f'(x) = 0$, $f''(x) < 0$ | Local maximum     |
 | $f'(x) = 0$, $f''(x) = 0$ | Test inconclusive |
@@ -571,40 +573,40 @@ Use **LIATE** (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential)
 
 Let $u = x$$dv = e^x \, dx$. Then $du = dx$$v = e^x$.
 
-$, $
+$$
 \int x e^x \, dx = x e^x - \int e^x \, dx = x e^x - e^x + C = e^x(x - 1) + C
-$, $
+$$
 
 **Example:** Evaluate $\int x^2 \cos x \, dx$.
 
 Let $u = x^2$$dv = \cos x \, dx$. Then $du = 2x \, dx$$v = \sin x$.
 
-$, $
+$$
 \int x^2 \cos x \, dx = x^2 \sin x - \int 2x \sin x \, dx
-$, $
+$$
 
 Apply integration by parts again for $\int x \sin x \, dx$:
 
 Let $u = x$$dv = \sin x \, dx$. Then $du = dx$$v = -\cos x$.
 
-$, $
+$$
 \int x \sin x \, dx = -x\cos x + \int \cos x \, dx = -x\cos x + \sin x + C
-$, $
+$$
 
 Therefore:
 
-$, $
+$$
 \int x^2 \cos x \, dx = x^2 \sin x - 2(-x\cos x + \sin x) + C = x^2 \sin x + 2x\cos x - 2\sin x + C
-$, $
+$$
 
 **Example (HL):** Evaluate $\int e^x \sin x \, dx$ using the "cyclic" integration by parts
 Technique.
 
 Let $u = \sin x$$dv = e^x\,dx$. Then $du = \cos x\,dx$$v = e^x$.
 
-$, $
+$$
 I = \int e^x \sin x\,dx = e^x \sin x - \int e^x \cos x\,dx
-$, $
+$$
 
 Apply integration by parts to $\int e^x \cos x\,dx$: let $u = \cos x$$dv = e^x\,dx$.
 

@@ -511,15 +511,15 @@ From (ii): $a - b + c = 1$.
 
 Substituting $a = -(d+2)$$b = 2d-3$$c = 3d$ into (i):
 
-$, $
+$$
 27 + 9(-d-2) + 3(2d-3) + 3d = 27 - 9d - 18 + 6d - 9 + 3d = 0
-$, $
+$$
 
 This simplifies to $0 = 0$Which is consistent. From (ii):
 
-$, $
+$$
 -1 - d - 2 + 3 - 2d + 3d = 0 \implies 0 = 0
-$, $
+$$
 
 We need one more condition. Since the leading coefficient is $1$ and $f(x) = (x-3)(x+1)(x - d)$We
 Must have the constant term $c = 3d$. But $f(x)$ has constant term $c$. Comparing: $c = 3d$. We have
@@ -533,13 +533,13 @@ _only_ stated factors, and the problem asks us to factorize completely, we obser
 Two known linear factors has a third linear factor. By Vieta, $\alpha + \beta + \gamma = -a$And
 $\alpha\beta\gamma = -c$. With $\alpha = 3, \beta = -1$:
 
-$, $
+$$
 3 + (-1) + \gamma = -a \implies 2 + \gamma = -a
-$, $
+$$
 
-$, $
+$$
 3 \cdot (-1) \cdot \gamma = -c \implies -3\gamma = -c \implies c = 3\gamma
-$, $
+$$
 
 There are infinitely many cubics with $(x-3)$ and $(x+1)$ as factors. Assuming the problem intends a
 Monic cubic (which it is, with leading coefficient $1$), we write $f(x) = (x-3)(x+1)(x - d)$ where
@@ -552,9 +552,9 @@ $a = -(d+2)$$b = 2d - 3$$c = 3d$And $f(x) = (x-3)(x+1)(x-d)$ for any real $d$.
 <summary>Answer</summary>
 Let $u = x^2$:
 
-$, $
+$$
 U^2 - 5u + 4 = (u-1)(u-4) = (x^2 - 1)(x^2 - 4) = (x-1)(x+1)(x-2)(x+2)
-$, $
+$$
 
 6. **Question:** If $\alpha$ and $\beta$ are roots of $3x^2 - 8x + 2 = 0$Find the value of
 $\alpha^3 + \beta^3$ without solving the equation.

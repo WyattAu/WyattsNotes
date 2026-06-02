@@ -298,30 +298,29 @@ The general solutions (in degrees) are:
 **For $\sin\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arcsin k$ be the principal value
 In $[-90^\circ, 90^\circ]$:
 
-$, $
+$$
 \begin{aligned}
  \theta = 360^\circ n + \alpha \quad \mathrm{or} \quad \theta = 360^\circ n + (180^\circ - \alpha), \quad n \in \mathbb{Z}
 \end{aligned}
-$,
-$
+$$
 
 **For $\cos\theta = k$** (where $-1 \leq k \leq 1$), let $\alpha = \arccos k$ be the principal value
 In $[0^\circ, 180^\circ]$:
 
-$, $
+$$
 \begin{aligned}
  \theta = 360^\circ n \pm \alpha, \quad n \in \mathbb{Z}
 \end{aligned}
-$, $
+$$
 
 **For $\tan\theta = k$** (for all real $k$), let $\alpha = \arctan k$ be the principal value in
 $(-90^\circ, 90^\circ)$:
 
-$, $
+$$
 \begin{aligned}
  \theta = 180^\circ n + \alpha, \quad n \in \mathbb{Z}
 \end{aligned}
-$, $
+$$
 
 In radians, replace $360^\circ$ with $2\pi$ and $180^\circ$ with $\pi$.
 
@@ -358,11 +357,11 @@ Many trigonometric equations require algebraic manipulation before they can be s
 
 For any triangle $ABC$ with sides $a$$b$$c$ opposite the respective angles:
 
-$, $
+$$
 \begin{aligned}
  \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
 \end{aligned}
-$, $
+$$
 
 The sine rule is most useful when one side-side-angle (SSA) or angle-angle-side (AAS) configuration
 Is known. In the ambiguous SSA case, two distinct triangles may satisfy the given conditions (the
@@ -372,25 +371,23 @@ Is known. In the ambiguous SSA case, two distinct triangles may satisfy the give
 
 For any triangle $ABC$ with sides $a$$b$$c$ opposite the respective angles:
 
-$, $
+$$
 \begin{aligned}
  a^2 &= b^2 + c^2 - 2bc\cos A \\[4pt]
  \cos A &= \frac{b^2 + c^2 - a^2}{2bc}
 \end{aligned}
-$,
-$
+$$
 
 The cosine rule generalises the Pythagorean theorem and is most useful for side-side-side (SSS) or
 Side-angle-side (SAS) configurations.
 
 ### Area of a Triangle Using Trigonometry
 
-$, $
+$$
 \begin{aligned}
  \mathrm{Area} = \frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
 \end{aligned}
-$,
-$
+$$
 
 This is derived from the standard formula
 $\mathrm{Area} = \frac{1}{2} \times \mathrm{base} \times \mathrm{height}$Where the height is

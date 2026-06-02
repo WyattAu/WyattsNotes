@@ -440,15 +440,14 @@ $A$ and $B'$$A'$ and $B$$A'$ and $B'$.
 
 _Proof._ We show $A$ and $B'$ are independent. The others follow by identical reasoning.
 
-$, $
+$$
 \begin{aligned}
  P(A \cap B') &= P(A) - P(A \cap B) &\quad&\mathrm{(since } A = (A \cap B) \cup (A \cap B') \mathrm{)} \\
  &= P(A) - P(A) \cdot P(B) &\quad&\mathrm{(by independence)} \\
  &= P(A)(1 - P(B)) \\
  &= P(A) \cdot P(B') \quad \square
 \end{aligned}
-$,
-$
+$$
 
 <details>
 <summary>Example</summary>
@@ -507,23 +506,22 @@ Verified or explicitly stated. :::
 
 For two events $A$ and $B$ with $P(A) \gt 0$ and $P(B) \gt 0$:
 
-$, $
+$$
 \begin{aligned}
  P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
 \end{aligned}
-$, $
+$$
 
 ### Proof
 
 Starting from the definition of conditional probability and the multiplication rule:
 
-$, $
+$$
 \begin{aligned}
  P(A \mid B) &= \frac{P(A \cap B)}{P(B)} \\
  &= \frac{P(B \mid A) \cdot P(A)}{P(B)} \quad \square
 \end{aligned}
-$,
-$
+$$
 
 Bayes' theorem "reverses" the conditioning: it expresses $P(A \mid B)$ in terms of $P(B \mid A)$.
 This is the mathematical foundation of statistical inference -- updating beliefs given evidence.
@@ -533,21 +531,20 @@ This is the mathematical foundation of statistical inference -- updating beliefs
 If $B_1, B_2, \ldots, B_n$ form a **partition** of $S$ (pairwise mutually exclusive, exhaustive, and
 $P(B_i) \gt 0$ for all $i$), then for any event $A$:
 
-$, $
+$$
 \begin{aligned}
  P(A) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i)
 \end{aligned}
-$, $
+$$
 
 _Proof._ Since the $B_i$ partition $S$The events $A \cap B_1, A \cap B_2, \ldots, A \cap B_n$ are
 Pairwise mutually exclusive and their union equals $A$. By Axiom 3:
 
-$, $
+$$
 \begin{aligned}
  P(A) &= \sum_{i=1}^{n} P(A \cap B_i) = \sum_{i=1}^{n} P(A \mid B_i) \cdot P(B_i) \quad \square
 \end{aligned}
-$,
-$
+$$
 
 ### Extended Bayes' Theorem
 
@@ -555,12 +552,11 @@ Combining Bayes' theorem with the law of total probability gives the most useful
 $B_1, \ldots, B_n$ partition $S$ and $A$ is one of them (say $A = B_j$), then for any event $E$ with
 $P(E) \gt 0$:
 
-$, $
+$$
 \begin{aligned}
  P(B_j \mid E) = \frac{P(E \mid B_j) \cdot P(B_j)}{\displaystyle\sum_{i=1}^{n} P(E \mid B_i) \cdot P(B_i)}
 \end{aligned}
-$,
-$
+$$
 
 The denominator is $P(E)$ computed via the law of total probability.
 
@@ -578,15 +574,14 @@ Let $D$ = has disease, $D'$ = no disease, $+$ = tests positive. The partition is
 
 By Bayes' theorem:
 
-$, $
+$$
 \begin{aligned}
  P(D \mid +) &= \frac{P(+ \mid D) \cdot P(D)}{P(+ \mid D) \cdot P(D) + P(+ \mid D') \cdot P(D')} \\
  &= \frac{0.95 \times 0.01}{0.95 \times 0.01 + 0.02 \times 0.99} \\
  &= \frac{0.0095}{0.0095 + 0.0198} \\
  &= \frac{0.0095}{0.0293} \approx 0.324
 \end{aligned}
-$,
-$
+$$
 
 Despite a 95% accurate test, a positive result only means about 32.4% chance of disease. This
 Counterintuitive result occurs because the disease is rare -- false positives vastly outnumber true
@@ -601,15 +596,14 @@ Is randomly selected and found to be defective. What is the probability it came 
 
 Let $D$ = defective. The partition is $\{M_1, M_2, M_3\}$.
 
-$, $
+$$
 \begin{aligned}
  P(M_3 \mid D) &= \frac{P(D \mid M_3) \cdot P(M_3)}{P(D \mid M_1) \cdot P(M_1) + P(D \mid M_2) \cdot P(M_2) + P(D \mid M_3) \cdot P(M_3)} \\
  &= \frac{0.05 \times 0.20}{0.02 \times 0.50 + 0.03 \times 0.30 + 0.05 \times 0.20} \\
  &= \frac{0.01}{0.01 + 0.009 + 0.01} \\
  &= \frac{0.01}{0.029} \approx 0.345
 \end{aligned}
-$,
-$
+$$
 
 Despite $M_3$ having the highest defect rate, it only accounts for about 34.5% of defective items
 Because it produces the smallest share of total output.
@@ -682,30 +676,27 @@ And the third is defective.
 
 Case 1: Good, then Defective, then Defective:
 
-$, $
+$$
 \begin{aligned}
  P = \frac{7}{10} \times \frac{3}{9} \times \frac{2}{8} = \frac{42}{720} = \frac{7}{120}
 \end{aligned}
-$,
-$
+$$
 
 Case 2: Defective, then Good, then Defective:
 
-$, $
+$$
 \begin{aligned}
  P = \frac{3}{10} \times \frac{7}{9} \times \frac{2}{8} = \frac{42}{720} = \frac{7}{120}
 \end{aligned}
-$,
-$
+$$
 
 Total probability (addition rule for mutually exclusive cases):
 
-$, $
+$$
 \begin{aligned}
  P = \frac{7}{120} + \frac{7}{120} = \frac{14}{120} = \frac{7}{60}
 \end{aligned}
-$,
-$
+$$
 
 ---
 
@@ -723,20 +714,19 @@ At least two heads means 2 or 3 heads:
 - 2 heads: $\\{HHT, HTH, THH\\}$3 outcomes.
 - 3 heads: $\\{HHH\\}$1 outcome.
 
-$, $
+$$
 \begin{aligned}
  P(\mathrm{at least 2 heads}) = \frac{4}{8} = \frac{1}{2}
 \end{aligned}
-$, $
+$$
 
 Alternatively, using the binomial formula:
 
-$, $
+$$
 \begin{aligned}
  P(\mathrm{at least 2 heads}) = \binom{3}{2}\left(\frac{1}{2}\right)^3 + \binom{3}{3}\left(\frac{1}{2}\right)^3 = \frac{3}{8} + \frac{1}{8} = \frac{1}{2}
 \end{aligned}
-$,
-$
+$$
 
 2. **Question:** In a group of 50 students, 30 play basketball, 25 play football, and 10 play
 Neither. A student is chosen at random. Find the probability that the student plays both sports.
@@ -790,19 +780,19 @@ Find $P(A \cup B)$.
 
 From $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$:
 
-$, $
+$$
 \begin{aligned}
  P(A \cap B) = P(A \mid B) \cdot P(B) = 0.4 \times 0.5 = 0.2
 \end{aligned}
-$, $
+$$
 
 By the addition rule:
 
-$, $
+$$
 \begin{aligned}
  P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.6 + 0.5 - 0.2 = 0.9
 \end{aligned}
-$, $
+$$
 
 5. **Question:** A and B are independent events with $P(A) = 0.3$ and $P(B) = 0.5$. Find
 $P(A' \cap B')$.
@@ -812,22 +802,20 @@ $P(A' \cap B')$.
 By the complement independence theorem, since $A$ and $B$ are independent, $A'$ and $B'$ are also
 Independent:
 
-$, $
+$$
 \begin{aligned}
  P(A' \cap B') = P(A') \cdot P(B') = (1 - 0.3)(1 - 0.5) = 0.7 \times 0.5 = 0.35
 \end{aligned}
-$,
-$
+$$
 
 Verification via complement: $P(A' \cap B') = P((A \cup B)') = 1 - P(A \cup B)$.
 
-$, $
+$$
 \begin{aligned}
  P(A \cup B) &= P(A) + P(B) - P(A \cap B) = 0.3 + 0.5 - 0.15 = 0.65 \\
  P(A' \cap B') &= 1 - 0.65 = 0.35 \quad \checkmark
 \end{aligned}
-$,
-$
+$$
 
 6. **Question:** Two events $A$ and $B$ satisfy $P(A) = \frac{1}{3}$$P(B) = \frac{1}{4}$And
 $P(A \cup B) = \frac{5}{12}$. Determine whether $A$ and $B$ are independent.
@@ -934,15 +922,14 @@ $P(A \cup B \cup C)$.
 
 Using the three-event addition rule:
 
-$, $
+$$
 \begin{aligned}
  P(A \cup B \cup C) &= P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C) \\
  &= \frac{1}{3} + \frac{1}{3} + \frac{1}{3} - \frac{1}{6} - \frac{1}{6} - \frac{1}{6} + \frac{1}{12} \\
  &= 1 - \frac{1}{2} + \frac{1}{12} \\
  &= \frac{12}{12} - \frac{6}{12} + \frac{1}{12} = \frac{7}{12}
 \end{aligned}
-$,
-$
+$$
 
 12. **Question:** A test for a condition has a sensitivity of 90% and a specificity of 95%. The
 Condition prevalence in the population is 1%. Find the positive predictive value

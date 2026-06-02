@@ -319,15 +319,15 @@ $$
 Transition metal complexes are coloured due to $d$-$d$ transitions. The energy gap between split
 $d$-orbitals corresponds to visible light:
 
-$, $
+$$
 \Delta E = \frac`\{hc}`{\lambda}
-$, $
+$$
 
 **Spectrochemical series** (increasing $\Delta$):
 
-$, $
+$$
 \mathrm{I}^- \lt \mathrm{Br}^- \lt \mathrm{Cl}^- \lt \mathrm{F}^- \lt \mathrm{H}_2\mathrm{O} \lt \mathrm{NH}_3 \lt \mathrm{en} \lt \mathrm{CN}^- \lt \mathrm{CO}
-$, $
+$$
 
 ### Catalytic Properties
 
@@ -444,23 +444,23 @@ Deduce what happens, and write the overall ionic equations.
 Chlorine is more reactive than both bromine and iodine (higher position in Group 17), so it
 displaces both halide ions:
 
-$, $
+$$
 \mathrm{Cl}_2(aq) + 2\mathrm{KBr}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{Br}_2(aq)
-$, $
+$$
 
-$, $
+$$
 \mathrm{Cl}_2(aq) + 2\mathrm{KI}(aq) \to 2\mathrm{KCl}(aq) + \mathrm{I}_2(aq)
-$, $
+$$
 
 In ionic form:
 
-$, $
+$$
 \mathrm{Cl}_2(aq) + 2\mathrm{Br}^-(aq) \to 2\mathrm{Cl}^-(aq) + \mathrm{Br}_2(aq)
-$, $
+$$
 
-$, $
+$$
 \mathrm{Cl}_2(aq) + 2\mathrm{I}^-(aq) \to 2\mathrm{Cl}^-(aq) + \mathrm{I}_2(aq)
-$, $
+$$
 
 Observations: the solution turns orange-brown due to dissolved $\mathrm{Br}_2$ and violet due to
 $\mathrm{I}_2$. If cyclohexane is added and shaken, $\mathrm{Br}_2$ appears orange in the organic
@@ -478,9 +478,9 @@ the equation for the reaction. Compare this with $\mathrm{P}_4\mathrm{O}_{10}$ d
 
 $\mathrm{Na}_2\mathrm{O}$ is an ionic, basic oxide. It reacts with water to form sodium hydroxide:
 
-$, $
+$$
 \mathrm{Na}_2\mathrm{O}(s) + \mathrm{H}_2\mathrm{O}(l) \to 2\mathrm{NaOH}(aq)
-$, $
+$$
 
 Since $\mathrm{NaOH}$ is a strong base, the solution pH is well above 7 ( 12--14 depending on
 concentration).
@@ -488,9 +488,9 @@ concentration).
 $\mathrm{P}_4\mathrm{O}_{10}$ is a covalent, acidic oxide. It reacts with water to form phosphoric
 acid:
 
-$, $
+$$
 \mathrm{P}_4\mathrm{O}_{10}(s) + 6\mathrm{H}_2\mathrm{O}(l) \to 4\mathrm{H}_3\mathrm{PO}_4(aq)
-$, $
+$$
 
 Phosphoric acid is a weak acid, giving a pH in the range 1--2 for a moderately concentrated
 solution. The trend from strongly basic ($\mathrm{Na}_2\mathrm{O}$) to acidic

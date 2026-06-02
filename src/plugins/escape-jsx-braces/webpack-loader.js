@@ -236,5 +236,62 @@ module.exports = function (source) {
     i++;
   }
 
-  return parts.join('');
+  // Second pass: escape any remaining { that MDX would parse as JSX expressions.
+  // After the LaTeX command pass, all \cmd{...} patterns have been processed.
+  // Any remaining { in text is likely set notation or literal braces that
+  // MDX will try to evaluate as JavaScript, causing acorn parse errors.
+  //
+  // Strategy: find { not preceded by \ and scan for matching }.
+  // If the content between looks like text (not code), escape the braces.
+  // Replace with private-use-area placeholders that the remark plugin will restore.
+  const result = parts.join('');
+
+  // Replace standalone {text} patterns (not preceded by backslash)
+  // that MDX would parse as JSX flow expressions.
+  // Use a simple approach: find { that is NOT preceded by \ and NOT part of
+  // a JSX attribute (preceded by =).
+  const PLACEHOLDER_LB = '\uE000'; // Private use area (same as existing convention)
+  const PLACEHOLDER_RB = '\uE001';
+
+  const output = [];
+  let pos = 0;
+  while (pos < result.length) {
+    if (result[pos] === '{' && pos > 0 && result[pos - 1] !== '\\') {
+      // Check if this is inside a JSX context (preceded by =)
+      // by looking backwards for JSX attribute pattern
+      let isJsxAttr = false;
+      if (pos > 1 && result[pos - 1] === '=') {
+        isJsxAttr = true;
+      }
+
+      if (!isJsxAttr) {
+        // Try to find matching }
+        let depth = 1;
+        let j = pos + 1;
+        const found = false;
+        while (j < result.length && depth > 0) {
+          if (result[j] === '{' && result[j - 1] !== '\\') depth++;
+          else if (result[j] === '}' && result[j - 1] !== '\\') depth--;
+          j++;
+        }
+        if (depth === 0) {
+          // Found matching brace. Check if content looks like text (set notation).
+          // If it contains commas, spaces, or common math symbols, escape it.
+          const inner = result.substring(pos + 1, j - 1);
+          if (inner.length > 0 && inner.length < 500 && /[,\s\w]/.test(inner)) {
+            // Looks like text/set notation - escape it
+            output.push(PLACEHOLDER_LB);
+            output.push(inner);
+            output.push(PLACEHOLDER_RB);
+            pos = j;
+            continue;
+          }
+        }
+      }
+    }
+    output.push(result[pos]);
+    pos++;
+  }
+
+  return output.join('');
 };

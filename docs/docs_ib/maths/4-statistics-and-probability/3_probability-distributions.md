@@ -782,9 +782,9 @@ For margin 1 ml at 95%: $n = (1.960 \times 5/1)^2 = 96.04$Round up to 97.
 
 For any random variables $X$$Y$ and constants $a$$b$:
 
-$, $
+$$
 E(aX + bY) = aE(X) + bE(Y)
-$, $
+$$
 
 This is the **linearity of expectation** and holds always, even without independence.
 
@@ -792,21 +792,21 @@ This is the **linearity of expectation** and holds always, even without independ
 
 For **independent** $X$ and $Y$:
 
-$, $
+$$
 \mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y)
-$, $
+$$
 
-$, $
+$$
 \mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y), \quad \mathrm{Var}(X - Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)
-$, $
+$$
 
 Note the plus sign even for differences: subtracting a variable still adds variability.
 
 The general formula (not necessarily independent):
 
-$, $
+$$
 \mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y) + 2\mathrm{Cov}(X, Y)
-$, $
+$$
 
 Where $\mathrm{Cov}(X, Y) = E(XY) - E(X)E(Y) = 0$ when $X$ and $Y$ are independent.
 
@@ -821,21 +821,21 @@ $\mathrm{Var}(X+Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$ requires independence.
 
 If $X_1, \ldots, X_n$ are iid with mean $\mu$ and variance $\sigma^2$:
 
-$, $
+$$
 E(X_1 + \cdots + X_n) = n\mu, \quad \mathrm{Var}(X_1 + \cdots + X_n) = n\sigma^2
-$, $
+$$
 
-$, $
+$$
 E(\bar{X}) = \mu, \quad \mathrm{Var}(\bar{X}) = \frac{\sigma^2}{n}
-$, $
+$$
 
 ### Combining Normal Variables
 
 If $X \sim N(\mu_X, \sigma_X^2)$ and $Y \sim N(\mu_Y, \sigma_Y^2)$ are independent, then:
 
-$, $
+$$
 AX + bY \sim N(a\mu_X + b\mu_Y, a^2\sigma_X^2 + b^2\sigma_Y^2)
-$, $
+$$
 
 This is exact (not an approximation) for normal variables, and requires no CLT.
 

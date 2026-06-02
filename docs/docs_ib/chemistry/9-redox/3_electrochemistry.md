@@ -799,20 +799,20 @@ $$
 
 For $\mathrm{Cu}^{2+} + 2e^- \to \mathrm{Cu}$$n = 2$:
 
-$, $
+$$
 N(\mathrm{Cu}) = \frac{n_e}{2} = \frac{0.06995}{2} = 0.03498\mathrm{ mol}
-$, $
+$$
 
-$, $
+$$
 M(\mathrm{Cu}) = 0.03498 \times 63.55 = 2.22\mathrm{ g}
-$, $
+$$
 
 **Example 2:** What current is needed to deposit $5.00\mathrm{ g}$ of aluminum from
 $\mathrm{Al}_2\mathrm{O}_3$ in $2.00$ hours?
 
-$, $
+$$
 N(\mathrm{Al}) = \frac{5.00}{26.98} = 0.1853\mathrm{ mol}
-$, $
+$$
 
 For $\mathrm{Al}^{3+} + 3e^- \to \mathrm{Al}$$n = 3$:
 
@@ -841,14 +841,13 @@ $$
 
 For $2\mathrm{Cl}^- \to \mathrm{Cl}_2 + 2e^-$$n = 2$:
 
-$, $
+$$
 N(\mathrm{Cl}_2) = \frac{0.09326}{2} = 0.04663\mathrm{ mol}
-$, $
+$$
 
-$, $
+$$
 V(\mathrm{Cl}_2) = nRT/P = 0.04663 \times 22.7\mathrm{ dm}^3 = 1.06\mathrm{ dm}^3 \mathrm{ at STP}
-$,
-$
+$$
 
 :::info[IB Exam Tip]
 
@@ -864,10 +863,9 @@ $24.0\mathrm{ dm}^3\mathrm{/mol}$ at RTP ($298\mathrm{ K}$$100\mathrm{ kPa}$).
 In practice, not all the current is used for the desired reaction. **Current efficiency** is defined
 As:
 
-$, $
+$$
 \mathrm{Current efficiency} = \frac{\mathrm{actual mass deposited}}{\mathrm{theoretical mass deposited}} \times 100\%
-$,
-$
+$$
 
 Side reactions (e.g., water electrolysis) and impurities reduce current efficiency.
 
@@ -916,19 +914,19 @@ The PEM allows only $\mathrm{H}^+$ ions to pass. Both electrodes contain a plati
 
 The theoretical maximum efficiency of a fuel cell is:
 
-$, $
+$$
 \mathrm{Efficiency} = \frac{\Delta G^\circ}{\Delta H^\circ} \times 100\%
-$, $
+$$
 
 For the hydrogen fuel cell:
 
-$, $
+$$
 \Delta G^\circ = -237\mathrm{ kJ/mol}, \quad \Delta H^\circ = -286\mathrm{ kJ/mol}
-$, $
+$$
 
-$, $
+$$
 \mathrm{Maximum efficiency} = \frac{237}{286} \times 100\% = 83\%
-$, $
+$$
 
 Actual operating efficiencies are lower due to activation overpotential, ohmic losses, and mass
 Transport limitations, $40\mathrm{-}60\%$.
@@ -971,22 +969,21 @@ Rusting is an electrochemical process involving two half-reactions:
 
 **Anode region** (oxidation of iron):
 
-$, $
+$$
 \mathrm{Fe}(s) \to \mathrm{Fe}^{2+}(aq) + 2e^-
-$, $
+$$
 
 **Cathode region** (reduction of oxygen):
 
-$, $
+$$
 \mathrm{O}_2(g) + 2\mathrm{H}_2\mathrm{O}(l) + 4e^- \to 4\mathrm{OH}^-(aq)
-$, $
+$$
 
 The $\mathrm{Fe}^{2+}$ ions then react with $\mathrm{OH}^-$ and oxygen to form rust:
 
-$, $
+$$
 4\mathrm{Fe}^{2+}(aq) + \mathrm{O}_2(g) + 4\mathrm{OH}^-(aq) + 2\mathrm{H}_2\mathrm{O}(l) \to 4\mathrm{Fe(OH)}_3(s)
-$,
-$
+$$
 
 $\mathrm{Fe(OH)}_3$ dehydrates to form $\mathrm{Fe}_2\mathrm{O}_3 \cdot n\mathrm{H}_2\mathrm{O}$
 (rust), which is a flaky, porous solid that does not protect the underlying metal.
@@ -1021,10 +1018,9 @@ Serves two purposes:
    than iron, $E^\circ = -0.76\mathrm{ V}$ vs. $E^\circ = -0.44\mathrm{ V}$) and is preferentially
    oxidized, protecting the iron.
 
-$, $
+$$
 \mathrm{Zn}(s) \to \mathrm{Zn}^{2+}(aq) + 2e^- \quad (\mathrm{zinc oxidized, iron protected})
-$,
-$
+$$
 
 #### 3. Sacrificial Anodes (Cathodic Protection)
 
@@ -1079,15 +1075,13 @@ $\mathrm{Cu}(s) \mid \mathrm{Cu}^{2+}(0.10\mathrm{ M}) \parallel \mathrm{Cu}^{2+
 Since $E^\circ_{\mathrm{cell}} = 0$ (same half-reaction), the potential comes from the Nernst
 Equation:
 
-$, $
+$$
 E_{\mathrm{cell}} = E^\circ_{\mathrm{cell}} - \frac{0.0592}{n}\log_{10}\frac{[\mathrm{Cu}^{2+}]_{\mathrm{anode}}}{[\mathrm{Cu}^{2+}]_{\mathrm{cathode}}}
-$,
-$
+$$
 
-$, $
+$$
 E_{\mathrm{cell}} = 0 - \frac{0.0592}{2}\log_{10}\frac{0.10}{1.0} = -\frac{0.0592}{2} \times (-1) = +0.0296\mathrm{ V}
-$,
-$
+$$
 
 The half-cell with the lower concentration undergoes oxidation (anode), and the half-cell with the
 Higher concentration undergoes reduction (cathode). The cell operates until the concentrations
@@ -1109,10 +1103,9 @@ Sulfuric acid ($\mathrm{H}_2\mathrm{SO}_4$) as the electrolyte.
 
 **Charging (reverse reaction):**
 
-$, $
+$$
 2\mathrm{PbSO}_4(s) + 2\mathrm{H}_2\mathrm{O}(l) \to \mathrm{Pb}(s) + \mathrm{PbO}_2(s) + 2\mathrm{H}_2\mathrm{SO}_4(aq)
-$,
-$
+$$
 
 The state of charge can be determined by measuring the density of the electrolyte. As the battery
 Discharges, $\mathrm{H}_2\mathrm{SO}_4$ is consumed and $\mathrm{H}_2\mathrm{O}$ is produced,
@@ -1242,10 +1235,9 @@ $V(\mathrm{O}_2) = 0.00233 \times 24.0 = 0.0560\mathrm{ dm}^3$
 
 A galvanic cell is constructed as follows:
 
-$, $
+$$
 \mathrm{Ni}(s) \mid \mathrm{Ni}^{2+}(0.010\mathrm{ M}) \parallel \mathrm{Ag}^+(1.0\mathrm{ M}) \mid \mathrm{Ag}(s)
-$,
-$
+$$
 
 Given: $E^\circ(\mathrm{Ni}^{2+}/\mathrm{Ni}) = -0.25\mathrm{ V}$
 $E^\circ(\mathrm{Ag}^+/\mathrm{Ag}) = +0.80\mathrm{ V}$
