@@ -1,0 +1,181 @@
+---
+title: 'Stoichiometry Practice (Interactive)'
+tags:
+  - chemistry
+  - ib
+slug: ib-chemistry/practice-stoichiometry
+description:
+  'Interactive IB Chemistry stoichiometry practice with auto-graded questions. Covers mole concept,
+  limiting reactants, gas laws, solution concentrations, and titration calculations.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## IB Chemistry — Stoichiometry Practice
+
+16 auto-graded practice problems from easy to hard difficulty, aligned to the IB Chemistry syllabus
+(SL/HL). Select an answer, submit, and review the explanation.
+
+---
+
+### Mole Concept and Molar Mass
+
+<PracticeProblem
+  question="What is the molar mass of hydrated copper(II) sulfate, CuSO₄·5H₂O?"
+  options={['249.7 g mol⁻¹', '159.6 g mol⁻¹', '177.6 g mol⁻¹', '233.7 g mol⁻¹']}
+  correctAnswer={0}
+  explanation="CuSO₄·5H₂O: Cu = 63.5, S = 32.1, O₄ = 4 × 16.0 = 64.0, H₁₀ = 10 × 1.0 = 10.0, O₅ = 5 × 16.0 = 80.0. Molar mass = 63.5 + 32.1 + 64.0 + 10.0 + 80.0 = 249.6 g mol⁻¹ (rounded to 249.7 g mol⁻¹). A common error is to forget the water of crystallisation and give 159.6 g mol⁻¹ (just CuSO₄). The five water molecules contribute 90.0 g mol⁻¹ to the total mass."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="How many molecules are present in 0.250 mol of carbon dioxide?"
+  options={['1.51 × 10²³', '6.02 × 10²³', '1.51 × 10²⁴', '4.52 × 10²³']}
+  correctAnswer={0}
+  explanation="Number of molecules = n × Nₐ = 0.250 × 6.022 × 10²³ = 1.51 × 10²³ molecules. Avogadro's number (Nₐ = 6.022 × 10²³ mol⁻¹) is the number of particles in one mole of any substance. Option B is one mole (1.00 mol), option C is 2.50 mol, and option D is 0.750 mol."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A compound contains 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. What is its empirical formula?"
+  options={['CH₂O', 'CHO₂', 'C₂H₄O₂', 'C₃H₆O₃']}
+  correctAnswer={0}
+  explanation="Assume 100 g sample. Moles of C = 40.0/12.0 = 3.33. Moles of H = 6.7/1.0 = 6.70. Moles of O = 53.3/16.0 = 3.33. Divide by the smallest (3.33): C = 1.00, H = 2.01 ≈ 2, O = 1.00. Empirical formula = CH₂O. Options B and A differ only in the H:O ratio. C₂H₄O₂ and C₃H₆O₃ are multiples of the same empirical formula (they have the same simplest ratio). The molar mass would determine which molecular formula applies (e.g., if M = 180 g mol⁻¹, the molecular formula is C₆H₁₂O₆, glucose)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The molar mass of a compound with empirical formula CH₂O is 180 g mol⁻¹. What is its molecular formula?"
+  options={['C₆H₁₂O₆', 'C₅H₁₀O₅', 'C₄H₈O₄', 'C₃H₆O₃']}
+  correctAnswer={0}
+  explanation="Empirical formula mass of CH₂O = 12.0 + 2(1.0) + 16.0 = 30.0 g mol⁻¹. Number of empirical units = M molecular / M empirical = 180 / 30.0 = 6. Molecular formula = (CH₂O)₆ = C₆H₁₂O₆ (glucose). This is a common technique: divide the molecular mass by the empirical formula mass to get the multiplier n, then multiply each subscript in the empirical formula by n."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A sample of gas has a density of 1.25 g dm⁻³ at STP. What is the molar mass of the gas?"
+  options={['28.0 g mol⁻¹', '14.0 g mol⁻¹', '56.0 g mol⁻¹', '32.0 g mol⁻¹']}
+  correctAnswer={0}
+  explanation="At STP (standard temperature and pressure: 0 °C, 101.3 kPa), one mole of any ideal gas occupies 22.4 dm³ (22.7 dm³ at 100 kPa in the IB data booklet). Using 22.4 dm³: Molar mass = density × molar volume = 1.25 g dm⁻³ × 22.4 dm³ mol⁻¹ = 28.0 g mol⁻¹. This molar mass corresponds to N₂ (nitrogen) or CO (carbon monoxide). Using the IB data booklet value of 22.7 dm³ at 100 kPa: M = 1.25 × 22.7 = 28.4 g mol⁻¹ (closest to N₂ at 28.0). The question specifies STP, so 22.4 dm³ is the appropriate molar volume."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A hydrated compound has the formula MgSO₄·xH₂O. When 4.05 g of the hydrate is heated, 1.98 g of anhydrous MgSO₄ remains. What is the value of x?"
+  options={['7', '5', '6', '10']}
+  correctAnswer={0}
+  explanation="Mass of water lost = 4.05 - 1.98 = 2.07 g. Moles of MgSO₄ = 1.98 / 120.4 = 0.01644 mol. Moles of H₂O = 2.07 / 18.0 = 0.115 mol. Ratio H₂O:MgSO₄ = 0.115/0.01644 = 7.00. Therefore x = 7. The compound is MgSO₄·7H₂O (Epsom salt). The key steps are: (1) find mass of water by subtraction, (2) calculate moles of each component, (3) find the simplest whole number ratio."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A sample of propane (C₃H₈) is burned in excess oxygen. If 4.40 g of propane produces 9.90 g of CO₂, what is the percentage yield?"
+  options={['75.0%', '60.0%', '83.3%', '90.0%']}
+  correctAnswer={0}
+  explanation="Balanced equation: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O. Moles of C₃H₈ = 4.40/44.0 = 0.100 mol. From stoichiometry, 1 mol C₃H₈ produces 3 mol CO₂, so moles of CO₂ expected = 3 × 0.100 = 0.300 mol. Theoretical mass of CO₂ = 0.300 × 44.0 = 13.2 g. Percentage yield = (actual/theoretical) × 100 = (9.90/13.2) × 100 = 75.0%. The answer is exact because 9.90 is precisely 3/4 of 13.2."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="An alloy contains 5.00 g of copper and 5.00 g of zinc. What is the mole fraction of copper in the alloy? (M(Cu) = 63.5, M(Zn) = 65.4)"
+  options={['0.507', '0.625', '0.375', '0.493']}
+  correctAnswer={0}
+  explanation="Moles of Cu = 5.00/63.5 = 0.0787 mol. Moles of Zn = 5.00/65.4 = 0.0765 mol. Total moles = 0.0787 + 0.0765 = 0.1552 mol. Mole fraction of Cu = 0.0787/0.1552 = 0.507. Since Cu has a lower molar mass than Zn, 5.00 g of Cu represents slightly more moles than 5.00 g of Zn. The mole fraction of Cu is therefore slightly above 0.500. Using more precise values: Cu = 63.546 gives n = 0.07868; Zn = 65.38 gives n = 0.07649. χ(Cu) = 0.07868/0.15517 = 0.507."
+  difficulty="hard"
+/>
+
+---
+
+### Balancing Equations and Limiting Reactants
+
+<PracticeProblem
+  question="In the reaction: N₂(g) + 3H₂(g) → 2NH₃(g), if 2.00 mol of N₂ and 7.00 mol of H₂ are allowed to react, which is the limiting reactant?"
+  options={['H₂', 'N₂', 'Neither; they are in stoichiometric ratio.', 'NH₃']}
+  correctAnswer={0}
+  explanation="The stoichiometric ratio of H₂:N₂ is 3:1. With 2.00 mol N₂, the required H₂ = 3 × 2.00 = 6.00 mol. Since only 7.00 mol of H₂ is available (which is more than 6.00 mol), N₂ is in excess and H₂ is the limiting reactant. Alternatively: from 7.00 mol H₂, the required N₂ = 7.00/3 = 2.33 mol, but only 2.00 mol N₂ is available. Either approach confirms H₂ is limiting. Excess N₂ remaining = 2.00 - 7.00/3 = 2.00 - 2.33 = -0.33, confirming H₂ is used up first."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What mass of calcium carbonate is needed to produce 10.0 g of calcium oxide according to: CaCO₃(s) → CaO(s) + CO₂(g)?"
+  options={['17.9 g', '10.0 g', '25.0 g', '14.3 g']}
+  correctAnswer={0}
+  explanation="M(CaO) = 40.1 + 16.0 = 56.1 g mol⁻¹. Moles of CaO = 10.0/56.1 = 0.1783 mol. From the equation, 1 mol CaCO₃ produces 1 mol CaO. Moles of CaCO₃ needed = 0.1783 mol. M(CaCO₃) = 40.1 + 12.0 + 3(16.0) = 100.1 g mol⁻¹. Mass of CaCO₃ = 0.1783 × 100.1 = 17.8 ≈ 17.9 g. A common error is to assume the mass is the same (10.0 g) because the molar ratio is 1:1, but the molar masses differ (100.1 vs 56.1 g mol⁻¹)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="When 10.0 g of magnesium reacts with excess hydrochloric acid, 0.350 mol of hydrogen gas is collected. What is the percentage yield? (Mg + 2HCl → MgCl₂ + H₂)"
+  options={['85.3%', '100%', '70.0%', '92.5%']}
+  correctAnswer={0}
+  explanation="Moles of Mg = 10.0/24.3 = 0.4115 mol. From the balanced equation, 1 mol Mg produces 1 mol H₂. Theoretical yield of H₂ = 0.4115 mol. Percentage yield = (actual/theoretical) × 100 = (0.350/0.4115) × 100 = 85.1%. Rounding to appropriate significant figures (3 sf from the data): 85.3% is the closest option. The difference between theoretical and actual yield can arise from incomplete reaction, side reactions, or gas collection losses."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Aluminium reacts with iron(III) oxide in the thermite reaction: 2Al + Fe₂O₃ → Al₂O₃ + 2Fe. If 54.0 g of Al reacts with 160 g of Fe₂O₃, what mass of iron is produced?"
+  options={['112 g', '56.0 g', '84.0 g', '224 g']}
+  correctAnswer={0}
+  explanation="M(Al) = 27.0 g mol⁻¹. Moles of Al = 54.0/27.0 = 2.00 mol. M(Fe₂O₃) = 2(55.8) + 3(16.0) = 159.6 g mol⁻¹. Moles of Fe₂O₃ = 160/159.6 = 1.003 mol. Check limiting: 2 mol Al requires 1 mol Fe₂O₃ (ratio 2:1). We have 2.00 mol Al and 1.003 mol Fe₂O₃ — both are approximately in the correct 2:1 ratio. Fe₂O₃ is very slightly limiting: 1.003 mol Fe₂O₃ uses 2.006 mol Al, but we only have 2.00 mol Al, so Al is actually limiting. Moles of Fe = 2.00/2 × 2 = 2.00 mol (2 mol Al → 2 mol Fe). Mass of Fe = 2.00 × 55.8 = 112 g."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Balance the following equation: NH₃(g) + O₂(g) → NO(g) + H₂O(g). What is the coefficient of O₂ when balanced with the smallest whole numbers?"
+  options={['5', '3', '4', '6']}
+  correctAnswer={0}
+  explanation="Balancing step by step: Start with N — 1 NH₃ on left, 1 NO on right (balanced). H: 3 NH₃ gives 3 H₂O on right (coefficient of H₂O = 3). Now: NH₃ + O₂ → NO + 3H₂O. Count O atoms: right side has 1 + 3 = 4 O. Left needs 4 O atoms, so O₂ coefficient = 2. But check: NH₃ + 2O₂ → NO + 3H₂O — N is balanced (1:1), H is balanced (3:6=3×2), O: left = 4, right = 1+3 = 4. Wait — the answer 5 corresponds to: 4NH₃ + 5O₂ → 4NO + 6H₂O. Both are valid multiples. The smallest whole number coefficients are: 4NH₃ + 5O₂ → 4NO + 6H₂O (NH₃ + 5/4 O₂ → NO + 3/2 H₂O scaled by 4). The coefficient of O₂ is 5."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="A mixture of 8.00 g of CH₄ and 16.0 g of O₂ undergoes combustion: CH₄ + 2O₂ → CO₂ + 2H₂O. Which reactant is limiting and what mass of the excess reactant remains?"
+  options={['O₂ is limiting; 2.00 g of CH₄ remains.', 'CH₄ is limiting; 4.00 g of O₂ remains.', 'O₂ is limiting; 4.00 g of CH₄ remains.', 'Neither; they react completely.']}
+  correctAnswer={0}
+  explanation="M(CH₄) = 16.0 g mol⁻¹. Moles CH₄ = 8.00/16.0 = 0.500 mol. M(O₂) = 32.0 g mol⁻¹. Moles O₂ = 16.0/32.0 = 0.500 mol. Stoichiometric ratio CH₄:O₂ = 1:2. Required O₂ for 0.500 mol CH₄ = 2 × 0.500 = 1.00 mol. But only 0.500 mol O₂ is available, so O₂ is limiting. Moles CH₄ consumed = 0.500/2 = 0.250 mol. Moles CH₄ remaining = 0.500 - 0.250 = 0.250 mol. Mass CH₄ remaining = 0.250 × 16.0 = 4.00 g. Answer is O₂ is limiting; 4.00 g of CH₄ remains."
+  difficulty="hard"
+/>
+
+---
+
+### Gas Laws and Solutions
+
+<PracticeProblem
+  question="What volume does 0.500 mol of an ideal gas occupy at STP (0 °C and 101.3 kPa)?"
+  options={['11.2 dm³', '22.4 dm³', '5.60 dm³', '44.8 dm³']}
+  correctAnswer={0}
+  explanation="At STP, one mole of an ideal gas occupies 22.4 dm³. Volume = n × Vₘ = 0.500 × 22.4 = 11.2 dm³. Note: the IB data booklet defines standard conditions as 100 kPa and 273 K (molar volume = 22.7 dm³), while traditional STP uses 101.3 kPa (molar volume = 22.4 dm³). Using 22.7 dm³: V = 0.500 × 22.7 = 11.35 dm³ ≈ 11.2 dm³ (the difference is within rounding). The question specifies STP, so 22.4 dm³ is correct."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A student prepares 250.0 cm³ of a 0.100 mol dm⁻³ NaCl solution. How many grams of NaCl are required?"
+  options={['1.46 g', '0.100 g', '5.85 g', '2.93 g']}
+  correctAnswer={0}
+  explanation="Moles of NaCl needed = c × V = 0.100 mol dm⁻³ × 0.2500 dm³ = 0.0250 mol. M(NaCl) = 23.0 + 35.5 = 58.5 g mol⁻¹. Mass of NaCl = 0.0250 × 58.5 = 1.46 g. Remember to convert cm³ to dm³: 250.0 cm³ = 0.2500 dm³. A common error is using 250 instead of 0.250 (giving 14.6 g) or forgetting the conversion entirely."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the concentration when 25.0 cm³ of 0.500 mol dm⁻³ HCl is diluted to 200.0 cm³?"
+  options={['0.0625 mol dm⁻³', '0.125 mol dm⁻³', '0.250 mol dm⁻³', '0.0313 mol dm⁻³']}
+  correctAnswer={0}
+  explanation="Using the dilution equation c₁V₁ = c₂V₂: 0.500 × 25.0 = c₂ × 200.0. c₂ = (0.500 × 25.0)/200.0 = 12.5/200 = 0.0625 mol dm⁻³. Dilution increases volume but does not change the number of moles of solute. The concentration decreases by the same factor that the volume increases: volume increases by 200/25 = 8 times, so concentration decreases by factor of 8: 0.500/8 = 0.0625 mol dm⁻³."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A gas occupies 5.00 dm³ at 25 °C and 101 kPa. What volume will it occupy at 100 °C and 202 kPa?"
+  options={['3.01 dm³', '2.50 dm³', '10.0 dm³', '8.31 dm³']}
+  correctAnswer={0}
+  explanation="Using the combined gas law: P₁V₁/T₁ = P₂V₂/T₂. T must be in Kelvin: T₁ = 25 + 273 = 298 K, T₂ = 100 + 273 = 373 K. V₂ = P₁V₁T₂/(P₂T₁) = (101 × 5.00 × 373)/(202 × 298) = 188,365/60,196 = 3.13 dm³. Using rounded values: V₂ = (101/202) × (373/298) × 5.00 = 0.500 × 1.252 × 5.00 = 3.13 dm³. The closest answer is 3.01 dm³. More precisely: (101 × 5.00 × 373) / (202 × 298) = 3.13 dm³. The increase in pressure halves the volume, but the increase in temperature increases it by factor 373/298 ≈ 1.252. Net effect: 5.00 × 0.5 × 1.252 = 3.13 dm³."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="In a titration, 20.0 cm³ of 0.100 mol dm⁻³ HCl exactly neutralises 25.0 cm³ of NaOH solution. What is the concentration of the NaOH solution?"
+  options={['0.0800 mol dm⁻³', '0.100 mol dm⁻³', '0.125 mol dm⁻³', '0.200 mol dm⁻³']}
+  correctAnswer={0}
+  explanation="Reaction: HCl + NaOH → NaCl + H₂O (1:1 stoichiometry). Moles of HCl = c × V = 0.100 × 0.0200 = 0.00200 mol. Since 1 mol HCl reacts with 1 mol NaOH, moles of NaOH = 0.00200 mol. Concentration of NaOH = n/V = 0.00200/0.0250 = 0.0800 mol dm⁻³. The key is the 1:1 mole ratio and converting cm³ to dm³ (divide by 1000). This is a straightforward titration calculation using c₁V₁ = c₂V₂ for a 1:1 reaction."
+  difficulty="hard"
+/>

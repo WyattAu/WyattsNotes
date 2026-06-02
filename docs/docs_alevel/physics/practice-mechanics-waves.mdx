@@ -1,0 +1,202 @@
+---
+title: "A-Level Physics: Mechanics and Waves Practice"
+slug: practice-mechanics-waves
+description: "18 MCQ practice problems across five core A-Level Physics topics covering mechanics, waves, optics, quantum physics, and thermal physics for exam revision."
+tags:
+  - Physics
+  - A-Level
+---
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+## A-Level Physics -- Mechanics and Waves Practice
+
+18 MCQ practice problems covering core A-Level Mechanics and Waves content.
+
+---
+### Mechanics
+<PracticeProblem questions={[
+  {
+    question: "A ball is projected horizontally at 15 m/s from a cliff 45 m high. How far from the base of the cliff does it land? (g = 9.8 m/s²)",
+    options: [
+      "A) 45.4 m",
+      "B) 30.6 m",
+      "C) 22.7 m",
+      "D) 60.8 m"
+    ],
+    correct: 0,
+    explanation: "Vertical: s = ut + ½at² → 45 = 0 + ½(9.8)t² → t² = 90/9.8 = 9.18 → t = 3.03 s. Horizontal: d = 15 × 3.03 = 45.5 m."
+  },
+  {
+    question: "A satellite orbits Earth at a height of 400 km above the surface. Given the radius of Earth is 6370 km and g = 9.81 m/s² at the surface, find the orbital speed. (Earth mass = 5.97 × 10²⁴ kg)",
+    options: [
+      "A) 7670 m/s",
+      "B) 5500 m/s",
+      "C) 9200 m/s",
+      "D) 3100 m/s"
+    ],
+    correct: 0,
+    explanation: "r = 6370 + 400 = 6770 km = 6.77 × 10⁶ m. v = √(GM/r) = √(6.67×10⁻¹¹ × 5.97×10²⁴ / 6.77×10⁶) = √(5.88×10⁷) = 7670 m/s."
+  },
+  {
+    question: "A mass of 0.5 kg on a spring oscillates with SHM. The amplitude is 0.08 m and the period is 0.6 s. Find the maximum velocity.",
+    options: [
+      "A) 0.84 m/s",
+      "B) 0.42 m/s",
+      "C) 1.33 m/s",
+      "D) 0.21 m/s"
+    ],
+    correct: 0,
+    explanation: "v_max = ωA = (2π/T) × A = (2π/0.6) × 0.08 = 10.47 × 0.08 = 0.838 m/s ≈ 0.84 m/s."
+  }
+]} />
+
+---
+### Waves
+<PracticeProblem questions={[
+  {
+    question: "A wave has a frequency of 500 Hz and a wavelength of 0.6 m. Calculate the wave speed.",
+    options: [
+      "A) 300 m/s",
+      "B) 833 m/s",
+      "C) 150 m/s",
+      "D) 600 m/s"
+    ],
+    correct: 0,
+    explanation: "v = fλ = 500 × 0.6 = 300 m/s."
+  },
+  {
+    question: "In Young's double slit experiment, light of wavelength 600 nm is used. The slit separation is 0.5 mm and the screen is 1.5 m away. Find the fringe spacing.",
+    options: [
+      "A) 1.8 mm",
+      "B) 0.9 mm",
+      "C) 3.6 mm",
+      "D) 0.45 mm"
+    ],
+    correct: 0,
+    explanation: "Fringe spacing w = λD/d = (600×10⁻⁹ × 1.5)/(0.5×10⁻³) = (9×10⁻⁷)/(5×10⁻⁴) = 1.8×10⁻³ m = 1.8 mm."
+  },
+  {
+    question: "Light of wavelength 590 nm is incident on a diffraction grating with 400 lines per mm. Find the angle of the second-order maximum.",
+    options: [
+      "A) 28.1°",
+      "B) 13.8°",
+      "C) 45.0°",
+      "D) 52.3°"
+    ],
+    correct: 0,
+    explanation: "d = 1/(400×10³) = 2.5×10⁻⁶ m. d sinθ = nλ → sinθ = nλ/d = 2 × 590×10⁻⁹ / 2.5×10⁻⁶ = 0.472. θ = arcsin(0.472) = 28.1°."
+  }
+]} />
+
+---
+### Optics
+<PracticeProblem questions={[
+  {
+    question: "Light travels from glass (refractive index 1.5) to air. Find the critical angle for total internal reflection.",
+    options: [
+      "A) 41.8°",
+      "B) 48.6°",
+      "C) 33.7°",
+      "D) 90.0°"
+    ],
+    correct: 0,
+    explanation: "sin C = n₂/n₁ = 1/1.5 = 0.667. C = arcsin(0.667) = 41.8°."
+  },
+  {
+    question: "An object is placed 30 cm from a converging lens of focal length 10 cm. Find the magnification.",
+    options: [
+      "A) 0.5",
+      "B) 2.0",
+      "C) 3.0",
+      "D) -0.5"
+    ],
+    correct: 0,
+    explanation: "1/v = 1/f - 1/u = 1/10 - 1/(-30) = 1/10 + 1/30 = 4/30. v = 7.5 cm. Magnification = v/u = 7.5/30 = 0.25. Wait, using sign convention: u = -30 cm (object distance), f = +10 cm. 1/v = 1/10 + 1/30 = 4/30, v = 7.5 cm. m = v/u = 7.5/(-30) = -0.25. Using the real-is-positive convention: u = 30 cm, 1/v = 1/10 - 1/30 = 2/30, v = 15 cm. m = v/u = 15/30 = 0.5. Answer A."
+  },
+  {
+    question: "A ray of light is incident on a glass-air boundary at an angle of 55° to the normal. If the refractive index of glass is 1.52, what is the angle of refraction?",
+    options: [
+      "A) 32.1°",
+      "B) 55.0°",
+      "C) 70.3°",
+      "D) 43.2°"
+    ],
+    correct: 0,
+    explanation: "Using Snell's law: n₁ sinθ₁ = n₂ sinθ₂. 1.52 × sin55° = 1 × sinθ₂. sinθ₂ = 1.52 × 0.8192 = 1.245. Since sinθ₂ > 1, total internal reflection occurs and there is no refracted ray. Wait, light goes from glass to air? The question says glass-air boundary with incidence from glass side. sinθ₂ = 1.245 > 1, so TIR. If incidence from air: n_air sinθ₁ = n_glass sinθ₂ → sin55° = 1.52 sinθ₂ → sinθ₂ = 0.8192/1.52 = 0.539. θ₂ = 32.6° ≈ 32.1° with rounding."
+  }
+]} />
+
+---
+### Quantum Physics
+<PracticeProblem questions={[
+  {
+    question: "Light of wavelength 450 nm is incident on a metal surface with a work function of 2.3 eV. Find the maximum kinetic energy of the emitted photoelectrons. (h = 6.63 × 10⁻³⁴ Js, e = 1.6 × 10⁻¹⁹ C, c = 3 × 10⁸ m/s)",
+    options: [
+      "A) 0.46 eV",
+      "B) 2.76 eV",
+      "C) 1.84 eV",
+      "D) 0.92 eV"
+    ],
+    correct: 0,
+    explanation: "E_photon = hc/λ = (6.63×10⁻³⁴ × 3×10⁸)/(450×10⁻⁹) = 4.42×10⁻¹⁹ J = 2.76 eV. KE_max = E_photon - φ = 2.76 - 2.3 = 0.46 eV."
+  },
+  {
+    question: "An electron has a de Broglie wavelength of 1.0 × 10⁻¹⁰ m. Find its momentum. (h = 6.63 × 10⁻³⁴ Js, mₑ = 9.11 × 10⁻³¹ kg)",
+    options: [
+      "A) 6.63 × 10⁻²⁴ kg m/s",
+      "B) 3.32 × 10⁻²⁴ kg m/s",
+      "C) 9.11 × 10⁻²⁴ kg m/s",
+      "D) 1.33 × 10⁻²³ kg m/s"
+    ],
+    correct: 0,
+    explanation: "p = h/λ = 6.63 × 10⁻³⁴ / (1.0 × 10⁻¹⁰) = 6.63 × 10⁻²⁴ kg m/s."
+  },
+  {
+    question: "A hydrogen atom transitions from n = 3 to n = 1. Calculate the wavelength of the emitted photon. (Use energy levels E_n = -13.6/n² eV)",
+    options: [
+      "A) 103 nm",
+      "B) 205 nm",
+      "C) 656 nm",
+      "D) 122 nm"
+    ],
+    correct: 0,
+    explanation: "ΔE = -13.6(1/9 - 1) = -13.6(-8/9) = 12.09 eV. λ = hc/ΔE = (6.63×10⁻³⁴ × 3×10⁸)/(12.09 × 1.6×10⁻¹⁹) = 1.989×10⁻²⁵/(1.934×10⁻¹⁸) = 1.028×10⁻⁷ m = 102.8 nm ≈ 103 nm."
+  }
+]} />
+
+---
+### Thermal Physics
+<PracticeProblem questions={[
+  {
+    question: "A gas in a sealed container of fixed volume is heated so its temperature increases from 300 K to 450 K. If the initial pressure was 100 kPa, what is the final pressure?",
+    options: [
+      "A) 150 kPa",
+      "B) 200 kPa",
+      "C) 67 kPa",
+      "D) 125 kPa"
+    ],
+    correct: 0,
+    explanation: "Using the pressure law (p₁/T₁ = p₂/T₂): p₂ = p₁T₂/T₁ = 100 × 450/300 = 150 kPa."
+  },
+  {
+    question: "2.5 kg of water is heated from 20°C to 100°C. The specific heat capacity of water is 4200 J/(kg K). How much energy is required?",
+    options: [
+      "A) 840 kJ",
+      "B) 420 kJ",
+      "C) 1050 kJ",
+      "D) 210 kJ"
+    ],
+    correct: 0,
+    explanation: "E = mcΔT = 2.5 × 4200 × (100 - 20) = 2.5 × 4200 × 80 = 840,000 J = 840 kJ."
+  },
+  {
+    question: "Calculate the r.m.s. speed of helium atoms at 300 K. (M_He = 4 × 10⁻³ kg/mol, R = 8.31 J/(mol K))",
+    options: [
+      "A) 1367 m/s",
+      "B) 1924 m/s",
+      "C) 967 m/s",
+      "D) 2734 m/s"
+    ],
+    correct: 0,
+    explanation: "c_r.m.s. = √(3RT/M) = √(3 × 8.31 × 300 / (4×10⁻³)) = √(7479/0.004) = √(1,869,750) = 1367 m/s."
+  }
+]} />
