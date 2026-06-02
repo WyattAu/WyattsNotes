@@ -1,0 +1,255 @@
+---
+title: "DSE Mathematics: Compulsory Practice"
+slug: practice-compulsory
+description: "DSE Mathematics MCQ practice on compulsory topics including surds, quadratic equations, functions, coordinate geometry, trigonometry, and sequences for HKDSE preparation."
+tags:
+  - DSE
+  - Mathematics
+  - Practice
+---
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+## DSE Mathematics -- Compulsory Part Practice
+
+18 MCQ practice problems on the compulsory part of the HKDSE Mathematics curriculum. Select an answer, submit, and review the explanation. Questions cover number systems, quadratics, functions, coordinate geometry, trigonometry, and sequences.
+
+---
+
+### Number Systems and Surds
+
+<PracticeProblem
+  questions={[
+    {
+      question: "Simplify sqrt(50) - sqrt(8) + sqrt(32).",
+      options: [
+        "A) 5sqrt(2)",
+        "B) 7sqrt(2)",
+        "C) 9sqrt(2)",
+        "D) 3sqrt(2)"
+      ],
+      correct: 1,
+      explanation: "sqrt(50) = 5sqrt(2), sqrt(8) = 2sqrt(2), sqrt(32) = 4sqrt(2). So 5sqrt(2) - 2sqrt(2) + 4sqrt(2) = (5 - 2 + 4)sqrt(2) = 7sqrt(2)."
+    },
+    {
+      question: "Rationalise the denominator of 6 / (sqrt(3) - sqrt(2)).",
+      options: [
+        "A) 6sqrt(3) + 6sqrt(2)",
+        "B) 2sqrt(3) + 2sqrt(2)",
+        "C) 3sqrt(3) + 3sqrt(2)",
+        "D) 6(sqrt(3) + sqrt(2))"
+      ],
+      correct: 0,
+      explanation: "Multiply numerator and denominator by the conjugate (sqrt(3) + sqrt(2)): 6(sqrt(3) + sqrt(2)) / ((sqrt(3) - sqrt(2))(sqrt(3) + sqrt(2))) = 6(sqrt(3) + sqrt(2)) / (3 - 2) = 6(sqrt(3) + sqrt(2)) / 1 = 6sqrt(3) + 6sqrt(2)."
+    },
+    {
+      question: "If 2^(2x) = 16, find the value of x.",
+      options: [
+        "A) 2",
+        "B) 3",
+        "C) 4",
+        "D) 8"
+      ],
+      correct: 0,
+      explanation: "2^(2x) = 16 = 2^4. Since the bases are equal, the exponents are equal: 2x = 4, so x = 2."
+    }
+  ]}
+/>
+
+### Quadratic Equations
+
+<PracticeProblem
+  questions={[
+    {
+      question: "Solve x^2 - 5x + 6 = 0 by factorisation.",
+      options: [
+        "A) x = 1, 6",
+        "B) x = 2, 3",
+        "C) x = -2, -3",
+        "D) x = -1, -6"
+      ],
+      correct: 1,
+      explanation: "x^2 - 5x + 6 = (x - 2)(x - 3) = 0. Therefore x = 2 or x = 3. Checking: when x = 2: 4 - 10 + 6 = 0 (correct). When x = 3: 9 - 15 + 6 = 0 (correct)."
+    },
+    {
+      question: "For the quadratic equation 2x^2 - 4x + 3 = 0, determine the nature of the roots using the discriminant.",
+      options: [
+        "A) Two distinct real roots",
+        "B) One repeated real root",
+        "C) No real roots (two complex conjugate roots)",
+        "D) Cannot be determined"
+      ],
+      correct: 2,
+      explanation: "The discriminant is b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8. Since the discriminant is negative (Delta < 0), there are no real roots. The equation has two complex conjugate roots: x = (4 +/- sqrt(-8)) / 4 = 1 +/- i*sqrt(2)/2."
+    },
+    {
+      question: "Express x^2 + 6x + 2 in the form (x + a)^2 + b by completing the square.",
+      options: [
+        "A) (x + 3)^2 - 7",
+        "B) (x + 6)^2 - 34",
+        "C) (x + 3)^2 + 11",
+        "D) (x + 6)^2 + 2"
+      ],
+      correct: 0,
+      explanation: "x^2 + 6x + 2 = (x^2 + 6x + 9) - 9 + 2 = (x + 3)^2 - 7. The coefficient of x is 6, so we take half of 6, which is 3, and square it to get 9. We add 9 and subtract 9 to complete the square."
+    }
+  ]}
+/>
+
+### Functions and Graphs
+
+<PracticeProblem
+  questions={[
+    {
+      question: "Given f(x) = 2x + 1 and g(x) = x^2, find the composite function gf(x).",
+      options: [
+        "A) 2x^2 + 1",
+        "B) (2x + 1)^2",
+        "C) 4x^2 + 4x + 1",
+        "D) 2x^2 + 2x"
+      ],
+      correct: 1,
+      explanation: "gf(x) means g(f(x)). First find f(x) = 2x + 1, then substitute into g: g(2x + 1) = (2x + 1)^2 = 4x^2 + 4x + 1. Note that fg(x) would be different: fg(x) = f(g(x)) = f(x^2) = 2x^2 + 1."
+    },
+    {
+      question: "If f(x) = 2x - 3, find the inverse function f^(-1)(x).",
+      options: [
+        "A) (x + 3) / 2",
+        "B) (x - 3) / 2",
+        "C) 2x + 3",
+        "D) 1 / (2x - 3)"
+      ],
+      correct: 0,
+      explanation: "Let y = 2x - 3. Swap x and y: x = 2y - 3. Solve for y: x + 3 = 2y, so y = (x + 3) / 2. Therefore f^(-1)(x) = (x + 3) / 2. Verification: f(f^(-1)(x)) = f((x+3)/2) = 2(x+3)/2 - 3 = x + 3 - 3 = x."
+    },
+    {
+      question: "Find the domain of f(x) = sqrt(2x - 4).",
+      options: [
+        "A) x > 2",
+        "B) x >= 2",
+        "C) All real numbers",
+        "D) x < 2"
+      ],
+      correct: 1,
+      explanation: "For the square root to be defined (as a real number), the expression under the square root must be non-negative: 2x - 4 >= 0, so 2x >= 4, x >= 2. The domain is {x : x >= 2} or [2, infinity). The range is {y : y >= 0} or [0, infinity)."
+    }
+  ]}
+/>
+
+### Coordinate Geometry
+
+<PracticeProblem
+  questions={[
+    {
+      question: "Find the equation of the line passing through (2, 3) with gradient 4.",
+      options: [
+        "A) y = 4x - 5",
+        "B) y = 4x + 5",
+        "C) y = 4x - 11",
+        "D) y = 4x + 3"
+      ],
+      correct: 0,
+      explanation: "Using the point-gradient form: y - y1 = m(x - x1). Substituting (2, 3) and m = 4: y - 3 = 4(x - 2), so y - 3 = 4x - 8, therefore y = 4x - 5."
+    },
+    {
+      question: "Find the distance between points A(3, -1) and B(7, 4).",
+      options: [
+        "A) sqrt(41)",
+        "B) sqrt(56)",
+        "C) sqrt(16)",
+        "D) 9"
+      ],
+      correct: 0,
+      explanation: "Distance formula: d = sqrt((x2 - x1)^2 + (y2 - y1)^2) = sqrt((7 - 3)^2 + (4 - (-1))^2) = sqrt(16 + 25) = sqrt(41)."
+    },
+    {
+      question: "The equation x^2 + y^2 - 6x + 8y + 5 = 0 represents a circle. Find its radius.",
+      options: [
+        "A) sqrt(20) = 2sqrt(5)",
+        "B) sqrt(25) = 5",
+        "C) sqrt(44)",
+        "D) sqrt(14)"
+      ],
+      correct: 0,
+      explanation: "Rewrite by completing squares: x^2 - 6x + y^2 + 8y = -5. (x^2 - 6x + 9) + (y^2 + 8y + 16) = -5 + 9 + 16 = 20. So (x - 3)^2 + (y + 4)^2 = 20. The centre is (3, -4) and radius r = sqrt(20) = 2sqrt(5)."
+    }
+  ]}
+/>
+
+### Trigonometry
+
+<PracticeProblem
+  questions={[
+    {
+      question: "In a right-angled triangle, the hypotenuse is 13 cm and one leg is 5 cm. Find sin(theta) where theta is the angle opposite the 5 cm leg.",
+      options: [
+        "A) 5/13",
+        "B) 12/13",
+        "C) 5/12",
+        "D) 13/12"
+      ],
+      correct: 0,
+      explanation: "The other leg = sqrt(13^2 - 5^2) = sqrt(169 - 25) = sqrt(144) = 12 cm. sin(theta) = opposite / hypotenuse = 5/13. cos(theta) = 12/13, tan(theta) = 5/12. This is the well-known 5-12-13 Pythagorean triple."
+    },
+    {
+      question: "Solve 2cos(x) - 1 = 0 for 0 <= x < 360 degrees.",
+      options: [
+        "A) x = 60 degrees only",
+        "B) x = 60 degrees and 300 degrees",
+        "C) x = 30 degrees and 150 degrees",
+        "D) x = 120 degrees and 240 degrees"
+      ],
+      correct: 1,
+      explanation: "2cos(x) - 1 = 0, so cos(x) = 1/2. For 0 <= x < 360, cos(x) = 1/2 when x = 60 degrees and x = 300 degrees (since cosine is positive in quadrants I and IV). This is a standard angle: cos(60) = 1/2."
+    },
+    {
+      question: "In triangle ABC, AB = 8 cm, AC = 5 cm, and angle BAC = 60 degrees. Use the cosine rule to find BC.",
+      options: [
+        "A) sqrt(89 - 40) = 7",
+        "B) sqrt(64 + 25 - 80*cos(60)) = sqrt(89 - 40) = sqrt(49) = 7 cm",
+        "C) sqrt(64 + 25 + 40) = sqrt(129)",
+        "D) sqrt(89 - 40sqrt(3))"
+      ],
+      correct: 1,
+      explanation: "Cosine rule: a^2 = b^2 + c^2 - 2bc*cos(A). BC^2 = 8^2 + 5^2 - 2(8)(5)cos(60) = 64 + 25 - 80(1/2) = 89 - 40 = 49. BC = 7 cm. The cosine rule is used when two sides and the included angle are known."
+    }
+  ]}
+/>
+
+### Sequences and Series
+
+<PracticeProblem
+  questions={[
+    {
+      question: "Find the 10th term of the arithmetic sequence 3, 7, 11, 15, ...",
+      options: [
+        "A) 39",
+        "B) 43",
+        "C) 40",
+        "D) 37"
+      ],
+      correct: 0,
+      explanation: "First term a = 3, common difference d = 7 - 3 = 4. The nth term is a_n = a + (n-1)d. For n = 10: a_10 = 3 + 9(4) = 3 + 36 = 39."
+    },
+    {
+      question: "Find the sum of the first 20 terms of the arithmetic sequence 2, 5, 8, 11, ...",
+      options: [
+        "A) 610",
+        "B) 630",
+        "C) 590",
+        "D) 600"
+      ],
+      correct: 0,
+      explanation: "a = 2, d = 3. The 20th term: a_20 = 2 + 19(3) = 2 + 57 = 59. Sum S_20 = (n/2)(a_1 + a_n) = (20/2)(2 + 59) = 10 x 61 = 610."
+    },
+    {
+      question: "Find the sum to infinity of the geometric series 8 + 4 + 2 + 1 + ...",
+      options: [
+        "A) 14",
+        "B) 16",
+        "C) 12",
+        "D) Infinity"
+      ],
+      correct: 1,
+      explanation: "First term a = 8, common ratio r = 4/8 = 0.5. Since |r| < 1, the series converges and S_inf = a / (1 - r) = 8 / (1 - 0.5) = 8 / 0.5 = 16."
+    }
+  ]}
+/>

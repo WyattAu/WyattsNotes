@@ -1,0 +1,160 @@
+---
+title: Calculus Flashcards
+tags:
+  - maths
+  - ib
+slug: ib-maths/flashcards-calculus
+description:
+  'Twenty interactive calculus flashcards covering differentiation rules, integration techniques,
+  differential equations, and applications for IB Maths AA/AI revision.'
+---
+
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+<FlashcardDeck
+  deckId="ib-maths-calculus"
+  title="IB Maths Calculus"
+  description="Key calculus concepts for IB Maths SL and HL, including differentiation, integration, and differential equations."
+  cards={[
+    {
+      id: "ib-maths-calculus-001",
+      front: "State the power rule for differentiation.",
+      back: "If y = xⁿ, then dy/dx = nxⁿ⁻¹. For example: d/dx(x⁵) = 5x⁴, d/dx(√x) = d/dx(x^(1/2)) = (1/2)x^(-1/2) = 1/(2√x).",
+      tags: ["differentiation", "rules"],
+      difficulty: "easy"
+    },
+    {
+      id: "ib-maths-calculus-002",
+      front: "State the chain rule for differentiation.",
+      back: "If y = f(g(x)), then dy/dx = f'(g(x)) · g'(x). Equivalently: dy/dx = (dy/du)(du/dx) where u = g(x). Example: y = (3x+1)⁵ → dy/dx = 5(3x+1)⁴ · 3 = 15(3x+1)⁴.",
+      tags: ["differentiation", "rules"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-003",
+      front: "State the product rule for differentiation.",
+      back: "If y = u(x) · v(x), then dy/dx = u'v + uv'. Example: y = x² sin x → dy/dx = 2x sin x + x² cos x.",
+      tags: ["differentiation", "rules"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-004",
+      front: "State the quotient rule for differentiation.",
+      back: "If y = u/v, then dy/dx = (u'v − uv')/v². Example: y = (x+1)/(x−1) → dy/dx = ((1)(x−1) − (x+1)(1))/(x−1)² = (x−1−x−1)/(x−1)² = −2/(x−1)².",
+      tags: ["differentiation", "rules"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-005",
+      front: "State the second derivative test for classifying stationary points.",
+      back: "If f'(a) = 0: f''(a) > 0 → local minimum at x = a; f''(a) < 0 → local maximum at x = a; f''(a) = 0 → test is inconclusive (use first derivative test or higher derivatives).",
+      tags: ["differentiation", "applications"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-006",
+      front: "How do you differentiate implicitly?",
+      back: "Differentiate both sides with respect to x, treating y as a function of x. When differentiating a term in y, multiply by dy/dx. Example: x² + y² = 25 → 2x + 2y(dy/dx) = 0 → dy/dx = −x/y.",
+      tags: ["differentiation", "implicit"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-007",
+      front: "What are the steps for solving related rates problems?",
+      back: "1) Identify the quantities and their rates. 2) Write an equation relating the quantities. 3) Differentiate both sides with respect to time t. 4) Substitute known values and solve for the unknown rate. Example: for a sphere, dV/dt = 4πr² · dr/dt.",
+      tags: ["differentiation", "applications"],
+      difficulty: "hard"
+    },
+    {
+      id: "ib-maths-calculus-008",
+      front: "State the power rule for integration (reverse differentiation).",
+      back: "∫xⁿ dx = xⁿ⁺¹/(n+1) + C, for n ≠ −1. When n = −1: ∫x⁻¹ dx = ln|x| + C. Example: ∫3x⁴ dx = 3x⁵/5 + C.",
+      tags: ["integration", "rules"],
+      difficulty: "easy"
+    },
+    {
+      id: "ib-maths-calculus-009",
+      front: "What is a definite integral and how is it evaluated?",
+      back: "∫ₐᵇ f(x) dx = F(b) − F(a), where F(x) is an antiderivative of f(x). It represents the signed area under the curve y = f(x) from x = a to x = b. Example: ∫₀² 2x dx = [x²]₀² = 4 − 0 = 4.",
+      tags: ["integration", "definite"],
+      difficulty: "easy"
+    },
+    {
+      id: "ib-maths-calculus-010",
+      front: "How do you find the area under a curve y = f(x) between x = a and x = b?",
+      back: "Area = ∫ₐᵇ f(x) dx, provided f(x) ≥ 0 in [a, b]. If f(x) < 0 in some region, take the absolute value or integrate |f(x)|. For area between two curves: Area = ∫ₐᵇ |f(x) − g(x)| dx.",
+      tags: ["integration", "applications"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-011",
+      front: "Outline the method of integration by substitution.",
+      back: "Choose a substitution u = g(x) to simplify the integral. Rewrite the integral in terms of u: ∫f(x) dx = ∫f(x(u)) · (dx/du) du. Find the antiderivative in terms of u, then substitute back. Example: ∫2x(x²+1)³ dx: let u = x²+1, du = 2x dx → ∫u³ du = u⁴/4 = (x²+1)⁴/4 + C.",
+      tags: ["integration", "techniques"],
+      difficulty: "hard"
+    },
+    {
+      id: "ib-maths-calculus-012",
+      front: "State the formula for integration by parts.",
+      back: "∫u dv = uv − ∫v du. Choose u using LIATE (Logarithmic, Inverse trig, Algebraic, Trig, Exponential). Example: ∫x eˣ dx: u = x, dv = eˣ dx → ∫x eˣ dx = x eˣ − ∫eˣ dx = x eˣ − eˣ + C = eˣ(x−1) + C.",
+      tags: ["integration", "techniques"],
+      difficulty: "hard"
+    },
+    {
+      id: "ib-maths-calculus-013",
+      front: "How do you calculate the volume of revolution about the x-axis?",
+      back: "V = π∫ₐᵇ [f(x)]² dx, where the region bounded by y = f(x), the x-axis, x = a, and x = b is rotated 360° about the x-axis. Example: y = x² from 0 to 2: V = π∫₀² x⁴ dx = π[x⁵/5]₀² = 32π/5.",
+      tags: ["integration", "volumes"],
+      difficulty: "hard"
+    },
+    {
+      id: "ib-maths-calculus-014",
+      front: "How do you solve a first-order separable differential equation?",
+      back: "Rearrange to: f(y) dy = g(x) dx. Integrate both sides: ∫f(y) dy = ∫g(x) dx + C. Example: dy/dx = xy → (1/y)dy = x dx → ln|y| = x²/2 + C → y = Ae^(x²/2).",
+      tags: ["differential equations"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-015",
+      front: "What is the rate of change and how does it relate to calculus?",
+      back: "The rate of change of a quantity y with respect to time t is dy/dt. Using the chain rule: dy/dt = (dy/dx)(dx/dt). If y = f(x) and x = g(t), this links the rates. Example: for a circle dA/dt = 2πr · dr/dt.",
+      tags: ["differentiation", "applications"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-016",
+      front: "State the key kinematics formulas using calculus.",
+      back: "Displacement s, velocity v = ds/dt, acceleration a = dv/dt = d²s/dt². To find displacement from velocity: s = ∫v dt. To find velocity from acceleration: v = ∫a dt. Also: v² = u² + 2as (constant acceleration).",
+      tags: ["kinematics", "applications"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-017",
+      front: "What are the three types of stationary points and how are they identified?",
+      back: "Local maximum: f'(a) = 0, f''(a) < 0. Local minimum: f'(a) = 0, f''(a) > 0. Point of inflexion: f'(a) = 0, f''(a) = 0 with sign change in f''. Use the second derivative test or check sign of f' on either side of a.",
+      tags: ["differentiation", "stationary points"],
+      difficulty: "easy"
+    },
+    {
+      id: "ib-maths-calculus-018",
+      front: "What are the steps for solving an optimisation problem?",
+      back: "1) Define variables and write the quantity to optimise as a function. 2) Determine any constraints and use them to reduce to one variable. 3) Differentiate and set the derivative to zero (find critical points). 4) Verify it is a maximum/minimum (second derivative or first derivative test). 5) State the answer in context.",
+      tags: ["differentiation", "optimisation"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-019",
+      front: "What is the trapezium rule for approximating definite integrals?",
+      back: "∫ₐᵇ f(x) dx ≈ h/2 [y₀ + 2(y₁ + y₂ + ... + yₙ₋₁) + yₙ], where h = (b−a)/n and yᵢ = f(xᵢ). This divides the area into n trapezia. The approximation improves as n increases. Error decreases as O(h²).",
+      tags: ["integration", "numerical"],
+      difficulty: "medium"
+    },
+    {
+      id: "ib-maths-calculus-020",
+      front: "Explain parametric differentiation. How do you find dy/dx and d²y/dx²?",
+      back: "Given x = f(t), y = g(t): dy/dx = (dy/dt)/(dx/dt) = g'(t)/f'(t). For the second derivative: d²y/dx² = (d/dt(dy/dx))/(dx/dt). Example: x = 2t, y = t²+1 → dy/dx = 2t/2 = t, d²y/dx² = (1)/(2) = 1/2.",
+      tags: ["differentiation", "parametric"],
+      difficulty: "hard"
+    }
+  ]}
+/>
