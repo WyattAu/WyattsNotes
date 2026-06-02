@@ -16,6 +16,15 @@ const DIFFICULTY_COLORS: Record<Difficulty, string> = {
   hard: '#e74c3c',
 };
 
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 export function PracticeProblem({
   question,
   options,
@@ -130,15 +139,16 @@ export function PracticeProblem({
         </span>
       </div>
 
-      <div
+      <p
         style={{
           fontSize: '1.15rem',
           fontWeight: 600,
           marginBottom: 16,
           color: 'var(--ifm-font-color-base)',
         }}
-        dangerouslySetInnerHTML={{ __html: question }}
-      />
+      >
+        {escapeHtml(question)}
+      </p>
 
       <div role="group" aria-label="Answer options">
         {options.map((opt, i) => (
@@ -150,14 +160,14 @@ export function PracticeProblem({
             type="button"
             role="radio"
             aria-checked={selected === i}
-            aria-label={`Option ${String.fromCharCode(65 + i)}: ${opt}`}
+            aria-label={`Option ${String.fromCharCode(65 + i)}: ${escapeHtml(String(opt))}`}
             tabIndex={selected === i ? 0 : -1}
             disabled={submitted}
             onClick={() => !submitted && setSelected(i)}
             style={getOptionStyle(i)}
           >
             <span style={{ fontWeight: 600, marginRight: 8 }}>{String.fromCharCode(65 + i)}.</span>
-            {opt}
+            {typeof opt === 'string' ? opt : ''}
           </button>
         ))}
       </div>
@@ -207,3 +217,4 @@ export function PracticeProblem({
     </div>
   );
 }
+export default PracticeProblem;

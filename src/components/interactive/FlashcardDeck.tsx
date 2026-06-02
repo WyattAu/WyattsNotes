@@ -835,3 +835,5 @@ function ActionButton({
     </button>
   );
 }
+
+export default FlashcardDeck;

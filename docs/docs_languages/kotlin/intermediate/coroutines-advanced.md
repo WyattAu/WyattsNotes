@@ -6,11 +6,13 @@ tags:
   - Kotlin
 categories:
   - Kotlin
-description: "Advanced Kotlin coroutines: Flow error handling, sharing flows, flow lifecycle, coroutine context elements, testing coroutines with TestDispatchers,."
+description:
+  'Advanced Kotlin coroutines: Flow error handling, sharing flows, flow lifecycle, coroutine context
+  elements, testing coroutines with TestDispatchers,.'
 ---
 
 This document builds on the coroutine fundamentals covered in
-[coroutines](/docs_languages/kotlin/intermediate/coroutines/). It assumes familiarity with suspend
+[coroutines](/docs/languages/kotlin/intermediate/coroutines). It assumes familiarity with suspend
 functions, coroutine builders, dispatchers, structured concurrency, and basic Flow usage.
 
 ## Flow Error Handling
@@ -51,9 +53,9 @@ numbersFromApi()
 
 ### flow {} Wrapper for Exception Safety
 
-Wrapping emit calls inside `flow {}` ensures exceptions are properly propagated through the
-operator chain. The builder enforces the context preservation rule and guarantees exceptions are
-caught by downstream `catch` operators.
+Wrapping emit calls inside `flow {}` ensures exceptions are properly propagated through the operator
+chain. The builder enforces the context preservation rule and guarantees exceptions are caught by
+downstream `catch` operators.
 
 ```kotlin
 fun safeNumbers(): Flow<Int> = flow {
@@ -130,12 +132,12 @@ execution to be observed by multiple collectors simultaneously.
 
 ### StateFlow vs SharedFlow
 
-| Feature              | StateFlow                     | SharedFlow                              |
-| --------------------- | ----------------------------- | --------------------------------------- |
-| Initial value         | Required (always has a value) | Optional (no initial value by default) |
-| Replays to new collector | Latest value (replay = 1)  | Configurable replay cache               |
-| Conflation            | Always conflates (latest)     | Configurable                            |
-| Use case              | State holding (ViewModel)     | Event broadcasting (navigation, toasts) |
+| Feature                  | StateFlow                     | SharedFlow                              |
+| ------------------------ | ----------------------------- | --------------------------------------- |
+| Initial value            | Required (always has a value) | Optional (no initial value by default)  |
+| Replays to new collector | Latest value (replay = 1)     | Configurable replay cache               |
+| Conflation               | Always conflates (latest)     | Configurable                            |
+| Use case                 | State holding (ViewModel)     | Event broadcasting (navigation, toasts) |
 
 ### StateFlow
 
@@ -288,11 +290,11 @@ replace the inherited value while everything else is preserved.
 
 `kotlinx-coroutines-test` provides dispatchers that make timing deterministic:
 
-| Dispatcher                    | Behavior                                             |
-| ----------------------------- | ---------------------------------------------------- |
-| `StandardTestDispatcher()`    | Executes eagerly but respects ordering and delays    |
-| `UnconfinedTestDispatcher()`  | Executes immediately on the current thread            |
-| `TestDispatcher` (Main)       | Replaces `Dispatchers.Main` in tests                  |
+| Dispatcher                   | Behavior                                          |
+| ---------------------------- | ------------------------------------------------- |
+| `StandardTestDispatcher()`   | Executes eagerly but respects ordering and delays |
+| `UnconfinedTestDispatcher()` | Executes immediately on the current thread        |
+| `TestDispatcher` (Main)      | Replaces `Dispatchers.Main` in tests              |
 
 ### runTest
 
@@ -431,9 +433,9 @@ suspend fun fetchWithFallback(): Data = supervisorScope {
 }
 ```
 
-| Scope            | Child failure behavior               |
-| ---------------- | ------------------------------------ |
-| `coroutineScope` | Cancels all siblings, propagates up |
+| Scope             | Child failure behavior              |
+| ----------------- | ----------------------------------- |
+| `coroutineScope`  | Cancels all siblings, propagates up |
 | `supervisorScope` | Only the failing child is cancelled |
 
 ### Cancelling Hierarchies
@@ -454,8 +456,10 @@ scope.cancel()  // cancels parent and all descendants
 ## Worked Examples
 
 ### Example 1: Implementing a Retry with Exponential Backoff
-**Problem:** Implement a retry function that retries a failing suspend function with exponential backoff (delays of 1s, 2s, 4s) up to 3 attempts.
-**Solution:**
+
+**Problem:** Implement a retry function that retries a failing suspend function with exponential
+backoff (delays of 1s, 2s, 4s) up to 3 attempts. **Solution:**
+
 ```kotlin
 suspend fun <T> retryWithBackoff(maxAttempts: Int = 3, block: suspend () -> T): T {
     var lastException: Exception? = null
@@ -472,11 +476,15 @@ suspend fun <T> retryWithBackoff(maxAttempts: Int = 3, block: suspend () -> T): 
     throw lastException!!
 }
 ```
-The delay doubles each attempt: 1s, 2s. If all 3 attempts fail, the last exception is rethrown. CancellationException is always rethrown to preserve structured concurrency.
+
+The delay doubles each attempt: 1s, 2s. If all 3 attempts fail, the last exception is rethrown.
+CancellationException is always rethrown to preserve structured concurrency.
 
 ### Example 2: Merging Two Flows with Error Recovery
-**Problem:** Merge a user profile flow and a settings flow, emitting a combined state. If the settings flow fails, emit a fallback default.
-**Solution:**
+
+**Problem:** Merge a user profile flow and a settings flow, emitting a combined state. If the
+settings flow fails, emit a fallback default. **Solution:**
+
 ```kotlin
 data class UiState(val user: User? = null, val settings: Settings = Settings())
 
@@ -486,11 +494,15 @@ fun mergeStates(userFlow: Flow<User>, settingsFlow: Flow<Settings>): Flow<UiStat
         settingsFlow.catch { e -> emit(Settings()) }
     ) { user, settings -> UiState(user, settings) }
 ```
-Each flow catches its own errors independently. If one fails, the other continues. The combined flow emits whenever either source emits.
+
+Each flow catches its own errors independently. If one fails, the other continues. The combined flow
+emits whenever either source emits.
 
 ### Example 3: Testing a StateFlow with Turbine
-**Problem:** Test that a ViewModel increments a counter when `increment()` is called and resets when `reset()` is called.
-**Solution:**
+
+**Problem:** Test that a ViewModel increments a counter when `increment()` is called and resets when
+`reset()` is called. **Solution:**
+
 ```kotlin
 @Test
 fun counterIncrementsAndResets() = runTest {
@@ -504,14 +516,16 @@ fun counterIncrementsAndResets() = runTest {
     assertEquals(0, vm.count.value)
 }
 ```
-In a `runTest` block, `StandardTestDispatcher` makes all coroutines execute eagerly but in the correct order. No delays are needed for StateFlow tests since values update synchronously.
+
+In a `runTest` block, `StandardTestDispatcher` makes all coroutines execute eagerly but in the
+correct order. No delays are needed for StateFlow tests since values update synchronously.
 
 - **Catching `CancellationException` in generic catch blocks.** Always rethrow it. Silently catching
   it prevents cancellation from propagating, leading to leaked coroutines.
 - **Using `StateFlow` for event streams.** `StateFlow` conflates emissions and replays the latest
   value to new collectors. Use `SharedFlow` with `replay = 0` for one-time events.
-- **Collecting Flow in `launch` without lifecycle awareness.** Use `collectAsStateWithLifecycle`
-  in Compose or `repeatOnLifecycle` in ViewModel to tie collection to the correct lifecycle.
+- **Collecting Flow in `launch` without lifecycle awareness.** Use `collectAsStateWithLifecycle` in
+  Compose or `repeatOnLifecycle` in ViewModel to tie collection to the correct lifecycle.
 - **Calling `collect` inside another Flow operator.** `collect` is a terminal operator that
   suspends. Use `flatMapLatest` or `flatMapConcat` instead.
 - **Forgetting that `flowOf` and `flow {}` are cold.** Each `collect` re-executes the entire
@@ -523,11 +537,15 @@ In a `runTest` block, `StandardTestDispatcher` makes all coroutines execute eage
 
 ## Common Pitfalls
 
-1. **Catching CancellationException in a generic catch block.** Always rethrow CancellationException. Silently catching it prevents cancellation from propagating, causing leaked coroutines.
-2. **Using StateFlow for one-time events.** StateFlow conflates values and replays the latest to new collectors. One-time events must use SharedFlow with replay=0.
-3. **Testing with runBlocking instead of runTest.** runBlocking does not control virtual time. Always use runTest with TestDispatchers for deterministic tests.
-4. **Forgetting that flow{} is cold and lazy.** Each collect call re-executes the entire upstream. Use shareIn for side-effecting sources.
-
+1. **Catching CancellationException in a generic catch block.** Always rethrow
+   CancellationException. Silently catching it prevents cancellation from propagating, causing
+   leaked coroutines.
+2. **Using StateFlow for one-time events.** StateFlow conflates values and replays the latest to new
+   collectors. One-time events must use SharedFlow with replay=0.
+3. **Testing with runBlocking instead of runTest.** runBlocking does not control virtual time.
+   Always use runTest with TestDispatchers for deterministic tests.
+4. **Forgetting that flow{} is cold and lazy.** Each collect call re-executes the entire upstream.
+   Use shareIn for side-effecting sources.
 
 ## Summary
 
