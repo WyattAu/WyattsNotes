@@ -44,14 +44,14 @@ describe('TOCSidebar (render)', () => {
     expect(screen.getByText('Section 3')).toBeInTheDocument();
   });
 
-  it('toggles visibility on button click', async () => {
+  it('toggles visibility on button click', () => {
     render(<TOCSidebar toc={mockToc} />);
 
     const toggleBtn = screen.getByLabelText('Toggle TOC');
 
     expect(toggleBtn).toHaveTextContent('Hide TOC');
 
-    await act(async () => {
+    act(() => {
       toggleBtn.click();
     });
 
@@ -66,12 +66,12 @@ describe('TOCSidebar (render)', () => {
     expect(screen.getByLabelText('Toggle TOC')).toHaveTextContent('Show TOC');
   });
 
-  it('persists visibility to localStorage on toggle', async () => {
+  it('persists visibility to localStorage on toggle', () => {
     render(<TOCSidebar toc={mockToc} />);
 
     expect(localStorageMock.setItem).toHaveBeenCalledWith('tocVisible', 'true');
 
-    await act(async () => {
+    act(() => {
       screen.getByLabelText('Toggle TOC').click();
     });
 
