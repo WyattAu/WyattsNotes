@@ -1,9 +1,13 @@
 ---
-title: "ILC Flashcards: Chemistry"
+title: 'ILC Flashcards: Chemistry'
 slug: flashcards-chemistry-ilc
-description: "Interactive chemistry flashcards for International Foundation programmes covering atomic structure, bonding, thermochemistry, kinetics, equilibrium, organic chemistry, and laboratory skills."
-tags: [[ILC], Chemistry, Flashcards]
+description:
+  'Interactive chemistry flashcards for International Foundation programmes covering atomic
+  structure, bonding, thermochemistry, kinetics, equilibrium, organic chemistry, and laboratory
+  skills.'
+tags: [ILC, Chemistry, Flashcards]
 ---
+
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 <FlashcardDeck
@@ -11,25 +15,153 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
   title="ILC Chemistry"
   description="Atomic structure, periodic trends, chemical bonding, stoichiometry, thermochemistry, kinetics, equilibrium, acids and bases, electrochemistry, organic chemistry, polymers, and laboratory techniques."
   cards={[
-    {id:"ilc-chemistry-001", front:"Define atomic number, mass number, and describe the electron configuration of sodium (Na, Z=11).", back:"Atomic number Z = number of protons. Mass number A = protons + neutrons. Sodium: 11 electrons in configuration 1s² 2s² 2p⁶ 3s¹. Valence electron in the 3s orbital. Sodium belongs to Group 1 (alkali metals) and Period 3, readily losing one electron to form Na⁺.", tags:["atomic structure"], difficulty:"easy"},
-    {id:"ilc-chemistry-002", front:"State the ideal gas law and define standard temperature and pressure (STP).", back:"Ideal gas law: PV = nRT, where P is pressure, V is volume, n is moles, R = 8.314 J/(mol·K) is the gas constant, T is temperature in Kelvin. STP: T = 273.15 K (0°C), P = 100 kPa (1 bar). At STP, one mole of an ideal gas occupies 22.7 L.", tags:["gas laws"], difficulty:"easy"},
-    {id:"ilc-chemistry-003", front:"Define a mole. Calculate the number of moles in 12 g of carbon-12.", back:"A mole is the amount of substance containing exactly 6.022 × 10²³ particles (Avogadro's number, Nₐ). For carbon-12: molar mass = 12 g/mol. Moles = mass/molar mass = 12 g / 12 g/mol = 1 mol. The mole bridges the atomic scale to the macroscopic scale.", tags:["stoichiometry"], difficulty:"easy"},
-    {id:"ilc-chemistry-004", front:"Define pH. Calculate the pH of a 0.01 M HCl solution.", back:"pH = -log₁₀[H⁺]. HCl is a strong acid that fully dissociates, so [H⁺] = 0.01 M = 10⁻² M. pH = -log₁₀(10⁻²) = 2. The pH scale runs from 0 to 14; acidic solutions have pH < 7, neutral is 7, basic solutions have pH > 7.", tags:["acids and bases"], difficulty:"easy"},
-    {id:"ilc-chemistry-005", front:"Name the first ten alkanes and state the general formula for alkanes.", back:"Methane (CH₄), ethane (C₂H₆), propane (C₃H₈), butane (C₄H₁₀), pentane (C₅H₁₂), hexane (C₆H₁₄), heptane (C₇H₁₆), octane (C₈H₁₈), nonane (C₉H₂₀), decane (C₁₀H₂₂). General formula: CₙH₂ₙ₊₂. Alkanes are saturated hydrocarbons containing only single C-C and C-H bonds.", tags:["organic chemistry"], difficulty:"easy"},
-    {id:"ilc-chemistry-006", front:"Describe three types of chemical bonding: ionic, covalent, and metallic.", back:"Ionic: Transfer of electrons from metal to non-metal, forming cations and anions held by electrostatic attraction (e.g., NaCl). Covalent: Sharing of electron pairs between non-metals (e.g., H₂O). Metallic: Delocalized electrons in a lattice of positive metal ions, enabling conductivity and malleability (e.g., Cu, Fe).", tags:["chemical bonding"], difficulty:"medium"},
-    {id:"ilc-chemistry-007", front:"State Hess's law and explain its significance in thermochemistry.", back:"Hess's law: The total enthalpy change of a reaction is the same regardless of the pathway taken; it depends only on the initial and final states. This allows calculation of enthalpy changes for reactions that are difficult to measure directly by using known enthalpy changes of intermediate steps.", tags:["thermochemistry"], difficulty:"medium"},
-    {id:"ilc-chemistry-008", front:"Describe the collision theory of chemical kinetics. What factors affect reaction rate?", back:"For a reaction to occur, particles must collide with sufficient energy (≥ activation energy Eₐ) and proper orientation. Factors affecting rate: concentration (more collisions), temperature (more particles with energy ≥ Eₐ), surface area (more exposure), catalyst (lowers Eₐ by providing an alternative pathway).", tags:["chemical kinetics"], difficulty:"medium"},
-    {id:"ilc-chemistry-009", front:"State Le Chatelier's principle. How does it predict equilibrium shifts?", back:"If a system at equilibrium is subjected to a change in concentration, temperature, or pressure, the system shifts to counteract the change and restore equilibrium. Increase concentration of a reactant → equilibrium shifts toward products. Increase temperature for an exothermic reaction → shifts toward reactants.", tags:["chemical equilibrium"], difficulty:"medium"},
-    {id:"ilc-chemistry-010", front:"Define Ka and explain how to calculate it for a weak acid.", back:"Ka (acid dissociation constant) measures the strength of a weak acid. For HA ⇌ H⁺ + A⁻: Ka = [H⁺][A⁻]/[HA]. A larger Ka means a stronger weak acid. The relationship pKa = -log₁₀Ka parallels pH. For weak acids: pH ≈ (1/2)(pKa - log₁₀[HA]), assuming [H⁺] ≈ [A⁻].", tags:["acids and bases"], difficulty:"medium"},
-    {id:"ilc-chemistry-011", front:"Explain the rules for assigning oxidation numbers.", back:"Rules: (1) Elements in their standard state: oxidation number = 0. (2) Monatomic ions: oxidation number = charge. (3) Oxygen is usually -2 (except peroxides: -1). (4) Hydrogen is usually +1 (except metal hydrides: -1). (5) Sum of oxidation numbers in a neutral compound = 0; in an ion = charge.", tags:["redox reactions"], difficulty:"medium"},
-    {id:"ilc-chemistry-012", front:"Describe the structure and function of a voltaic (galvanic) cell.", back:"A voltaic cell converts chemical energy to electrical energy. It consists of two half-cells connected by a salt bridge and external wire. At the anode (negative electrode), oxidation occurs: metal loses electrons. At the cathode (positive electrode), reduction occurs: ions gain electrons. Electrons flow through the external circuit from anode to cathode.", tags:["electrochemistry"], difficulty:"medium"},
-    {id:"ilc-chemistry-013", front:"Describe the four main types of organic reactions with examples.", back:"Substitution: An atom/group is replaced (e.g., CH₄ + Cl₂ → CH₃Cl + HCl). Addition: Atoms are added across a double bond (e.g., C₂H₄ + Br₂ → C₂H₄Br₂). Elimination: Atoms/groups removed to form double bond (e.g., C₂H₅Br + KOH → C₂H₄ + KBr + H₂O). Oxidation: Gain of O or loss of H (e.g., alcohol → aldehyde → carboxylic acid).", tags:["organic reactions"], difficulty:"medium"},
-    {id:"ilc-chemistry-014", front:"Describe the common separation techniques: distillation, filtration, chromatography, and crystallization.", back:"Distillation: Separates liquids by differences in boiling points. Filtration: Separates insoluble solids from liquids using a filter. Chromatography: Separates components based on differential affinity to stationary/mobile phases. Crystallization: Purifies solids by dissolving in hot solvent and cooling to form crystals.", tags:["separation techniques"], difficulty:"medium"},
-    {id:"ilc-chemistry-015", front:"Describe the periodic trends: atomic radius, ionization energy, and electronegativity across a period and down a group.", back:"Atomic radius: Decreases across a period (increased nuclear charge pulls electrons closer), increases down a group (more electron shells). Ionization energy: Increases across a period (harder to remove electrons), decreases down a group. Electronegativity: Increases across a period, decreases down a group.", tags:["periodic trends"], difficulty:"medium"},
-    {id:"ilc-chemistry-016", front:"Describe how to perform a titration to determine the concentration of an unknown acid.", back:"Rinse burette with the standard base solution, fill it, and record the initial volume. Pipette a measured volume of the unknown acid into a flask with a few drops of indicator (e.g., phenolphthalein). Slowly add base from the burette until a persistent colour change indicates the endpoint. Record final volume. Repeat for concordant results. Calculate concentration using stoichiometry.", tags:["analytical chemistry"], difficulty:"hard"},
-    {id:"ilc-chemistry-017", front:"Explain how buffer solutions resist changes in pH. Give an example of an acidic buffer.", back:"A buffer contains a weak acid and its conjugate base (or weak base and its conjugate acid). When a small amount of acid is added, the conjugate base neutralizes it. When base is added, the weak acid neutralizes it. Example: Ethanoic acid (CH₃COOH) and sodium ethanoate (CH₃COONa). pH of buffer = pKa + log₁₀([A⁻]/[HA]).", tags:["acids and bases"], difficulty:"hard"},
-    {id:"ilc-chemistry-018", front:"Compare addition and condensation polymerization with examples.", back:"Addition polymerization: Monomers with C=C double bonds join without losing any atoms. The polymer is the only product. Example: polyethene from ethene, PVC from chloroethene. Condensation polymerization: Monomers join with the loss of small molecules (e.g., H₂O, HCl). Example: nylon-6,6 from hexanedioic acid and 1,6-diaminohexane, polyester from dicarboxylic acid and diol.", tags:["polymers"], difficulty:"hard"},
-    {id:"ilc-chemistry-019", front:"Calculate the standard electrode potential of a cell from two half-reactions. What does a positive E°cell indicate?", back:"E°cell = E°cathode - E°anode (using standard reduction potentials). Example: Zn²⁺/Zn (E° = -0.76 V) and Cu²⁺/Cu (E° = +0.34 V). Cell: Zn(s)|Zn²⁺||Cu²⁺|Cu(s). E°cell = 0.34 - (-0.76) = +1.10 V. A positive E°cell indicates a spontaneous (thermodynamically favorable) reaction.", tags:["electrochemistry"], difficulty:"hard"},
-    {id:"ilc-chemistry-020", front:"Describe the three main states of matter and the kinetic molecular theory that explains phase transitions.", back:"Solid: Particles vibrate about fixed positions; strong intermolecular forces; definite shape and volume. Liquid: Particles slide past each other; moderate forces; definite volume but not shape. Gas: Particles move freely; weak forces; no definite shape or volume. Phase transitions: melting (solid→liquid), vaporization (liquid→gas), sublimation (solid→gas).", tags:["states of matter"], difficulty:"hard"}
+    {
+      id: 'ilc-chemistry-001',
+      front:
+        'Define atomic number, mass number, and describe the electron configuration of sodium (Na, Z=11).',
+      back: 'Atomic number Z = number of protons. Mass number A = protons + neutrons. Sodium: 11 electrons in configuration 1s² 2s² 2p⁶ 3s¹. Valence electron in the 3s orbital. Sodium belongs to Group 1 (alkali metals) and Period 3, readily losing one electron to form Na⁺.',
+      tags: ['atomic structure'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ilc-chemistry-002',
+      front: 'State the ideal gas law and define standard temperature and pressure (STP).',
+      back: 'Ideal gas law: PV = nRT, where P is pressure, V is volume, n is moles, R = 8.314 J/(mol·K) is the gas constant, T is temperature in Kelvin. STP: T = 273.15 K (0°C), P = 100 kPa (1 bar). At STP, one mole of an ideal gas occupies 22.7 L.',
+      tags: ['gas laws'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ilc-chemistry-003',
+      front: 'Define a mole. Calculate the number of moles in 12 g of carbon-12.',
+      back: "A mole is the amount of substance containing exactly 6.022 × 10²³ particles (Avogadro's number, Nₐ). For carbon-12: molar mass = 12 g/mol. Moles = mass/molar mass = 12 g / 12 g/mol = 1 mol. The mole bridges the atomic scale to the macroscopic scale.",
+      tags: ['stoichiometry'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ilc-chemistry-004',
+      front: 'Define pH. Calculate the pH of a 0.01 M HCl solution.',
+      back: 'pH = -log₁₀[H⁺]. HCl is a strong acid that fully dissociates, so [H⁺] = 0.01 M = 10⁻² M. pH = -log₁₀(10⁻²) = 2. The pH scale runs from 0 to 14; acidic solutions have pH < 7, neutral is 7, basic solutions have pH > 7.',
+      tags: ['acids and bases'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ilc-chemistry-005',
+      front: 'Name the first ten alkanes and state the general formula for alkanes.',
+      back: 'Methane (CH₄), ethane (C₂H₆), propane (C₃H₈), butane (C₄H₁₀), pentane (C₅H₁₂), hexane (C₆H₁₄), heptane (C₇H₁₆), octane (C₈H₁₈), nonane (C₉H₂₀), decane (C₁₀H₂₂). General formula: CₙH₂ₙ₊₂. Alkanes are saturated hydrocarbons containing only single C-C and C-H bonds.',
+      tags: ['organic chemistry'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ilc-chemistry-006',
+      front: 'Describe three types of chemical bonding: ionic, covalent, and metallic.',
+      back: 'Ionic: Transfer of electrons from metal to non-metal, forming cations and anions held by electrostatic attraction (e.g., NaCl). Covalent: Sharing of electron pairs between non-metals (e.g., H₂O). Metallic: Delocalized electrons in a lattice of positive metal ions, enabling conductivity and malleability (e.g., Cu, Fe).',
+      tags: ['chemical bonding'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-007',
+      front: "State Hess's law and explain its significance in thermochemistry.",
+      back: "Hess's law: The total enthalpy change of a reaction is the same regardless of the pathway taken; it depends only on the initial and final states. This allows calculation of enthalpy changes for reactions that are difficult to measure directly by using known enthalpy changes of intermediate steps.",
+      tags: ['thermochemistry'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-008',
+      front:
+        'Describe the collision theory of chemical kinetics. What factors affect reaction rate?',
+      back: 'For a reaction to occur, particles must collide with sufficient energy (≥ activation energy Eₐ) and proper orientation. Factors affecting rate: concentration (more collisions), temperature (more particles with energy ≥ Eₐ), surface area (more exposure), catalyst (lowers Eₐ by providing an alternative pathway).',
+      tags: ['chemical kinetics'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-009',
+      front: "State Le Chatelier's principle. How does it predict equilibrium shifts?",
+      back: 'If a system at equilibrium is subjected to a change in concentration, temperature, or pressure, the system shifts to counteract the change and restore equilibrium. Increase concentration of a reactant → equilibrium shifts toward products. Increase temperature for an exothermic reaction → shifts toward reactants.',
+      tags: ['chemical equilibrium'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-010',
+      front: 'Define Ka and explain how to calculate it for a weak acid.',
+      back: 'Ka (acid dissociation constant) measures the strength of a weak acid. For HA ⇌ H⁺ + A⁻: Ka = [H⁺][A⁻]/[HA]. A larger Ka means a stronger weak acid. The relationship pKa = -log₁₀Ka parallels pH. For weak acids: pH ≈ (1/2)(pKa - log₁₀[HA]), assuming [H⁺] ≈ [A⁻].',
+      tags: ['acids and bases'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-011',
+      front: 'Explain the rules for assigning oxidation numbers.',
+      back: 'Rules: (1) Elements in their standard state: oxidation number = 0. (2) Monatomic ions: oxidation number = charge. (3) Oxygen is usually -2 (except peroxides: -1). (4) Hydrogen is usually +1 (except metal hydrides: -1). (5) Sum of oxidation numbers in a neutral compound = 0; in an ion = charge.',
+      tags: ['redox reactions'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-012',
+      front: 'Describe the structure and function of a voltaic (galvanic) cell.',
+      back: 'A voltaic cell converts chemical energy to electrical energy. It consists of two half-cells connected by a salt bridge and external wire. At the anode (negative electrode), oxidation occurs: metal loses electrons. At the cathode (positive electrode), reduction occurs: ions gain electrons. Electrons flow through the external circuit from anode to cathode.',
+      tags: ['electrochemistry'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-013',
+      front: 'Describe the four main types of organic reactions with examples.',
+      back: 'Substitution: An atom/group is replaced (e.g., CH₄ + Cl₂ → CH₃Cl + HCl). Addition: Atoms are added across a double bond (e.g., C₂H₄ + Br₂ → C₂H₄Br₂). Elimination: Atoms/groups removed to form double bond (e.g., C₂H₅Br + KOH → C₂H₄ + KBr + H₂O). Oxidation: Gain of O or loss of H (e.g., alcohol → aldehyde → carboxylic acid).',
+      tags: ['organic reactions'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-014',
+      front:
+        'Describe the common separation techniques: distillation, filtration, chromatography, and crystallization.',
+      back: 'Distillation: Separates liquids by differences in boiling points. Filtration: Separates insoluble solids from liquids using a filter. Chromatography: Separates components based on differential affinity to stationary/mobile phases. Crystallization: Purifies solids by dissolving in hot solvent and cooling to form crystals.',
+      tags: ['separation techniques'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-015',
+      front:
+        'Describe the periodic trends: atomic radius, ionization energy, and electronegativity across a period and down a group.',
+      back: 'Atomic radius: Decreases across a period (increased nuclear charge pulls electrons closer), increases down a group (more electron shells). Ionization energy: Increases across a period (harder to remove electrons), decreases down a group. Electronegativity: Increases across a period, decreases down a group.',
+      tags: ['periodic trends'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ilc-chemistry-016',
+      front:
+        'Describe how to perform a titration to determine the concentration of an unknown acid.',
+      back: 'Rinse burette with the standard base solution, fill it, and record the initial volume. Pipette a measured volume of the unknown acid into a flask with a few drops of indicator (e.g., phenolphthalein). Slowly add base from the burette until a persistent colour change indicates the endpoint. Record final volume. Repeat for concordant results. Calculate concentration using stoichiometry.',
+      tags: ['analytical chemistry'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ilc-chemistry-017',
+      front:
+        'Explain how buffer solutions resist changes in pH. Give an example of an acidic buffer.',
+      back: 'A buffer contains a weak acid and its conjugate base (or weak base and its conjugate acid). When a small amount of acid is added, the conjugate base neutralizes it. When base is added, the weak acid neutralizes it. Example: Ethanoic acid (CH₃COOH) and sodium ethanoate (CH₃COONa). pH of buffer = pKa + log₁₀([A⁻]/[HA]).',
+      tags: ['acids and bases'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ilc-chemistry-018',
+      front: 'Compare addition and condensation polymerization with examples.',
+      back: 'Addition polymerization: Monomers with C=C double bonds join without losing any atoms. The polymer is the only product. Example: polyethene from ethene, PVC from chloroethene. Condensation polymerization: Monomers join with the loss of small molecules (e.g., H₂O, HCl). Example: nylon-6,6 from hexanedioic acid and 1,6-diaminohexane, polyester from dicarboxylic acid and diol.',
+      tags: ['polymers'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ilc-chemistry-019',
+      front:
+        'Calculate the standard electrode potential of a cell from two half-reactions. What does a positive E°cell indicate?',
+      back: 'E°cell = E°cathode - E°anode (using standard reduction potentials). Example: Zn²⁺/Zn (E° = -0.76 V) and Cu²⁺/Cu (E° = +0.34 V). Cell: Zn(s)|Zn²⁺||Cu²⁺|Cu(s). E°cell = 0.34 - (-0.76) = +1.10 V. A positive E°cell indicates a spontaneous (thermodynamically favorable) reaction.',
+      tags: ['electrochemistry'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ilc-chemistry-020',
+      front:
+        'Describe the three main states of matter and the kinetic molecular theory that explains phase transitions.',
+      back: 'Solid: Particles vibrate about fixed positions; strong intermolecular forces; definite shape and volume. Liquid: Particles slide past each other; moderate forces; definite volume but not shape. Gas: Particles move freely; weak forces; no definite shape or volume. Phase transitions: melting (solid→liquid), vaporization (liquid→gas), sublimation (solid→gas).',
+      tags: ['states of matter'],
+      difficulty: 'hard',
+    },
   ]}
 />
