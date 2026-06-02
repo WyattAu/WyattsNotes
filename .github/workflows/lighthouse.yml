@@ -4,7 +4,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: lighthouse-${{ github.event.workflow_run.head_branch || github.ref || 'scheduled' }}
+  group: lighthouse-${{ github.ref_name || 'scheduled' }}
   cancel-in-progress: true
 
 on:
