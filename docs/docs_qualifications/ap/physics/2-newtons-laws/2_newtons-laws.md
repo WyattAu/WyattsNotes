@@ -1,6 +1,8 @@
 ---
 title: Newton's Laws of Motion
-description: 'Qualifications Physics Newton\'s Laws of Motion notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
+description:
+  "Qualifications Physics Newton's Laws of Motion notes covering key definitions, core concepts,
+  worked examples, and practice questions for study and revision."
 date: 2026-04-14
 tags:
   - ap
@@ -418,8 +420,8 @@ Hyperbolas. Circular orbits are a special case of elliptical orbits with eccentr
 6. A $1500 \mathrm{ kg$ car rounds a banked curve of radius 100 m at $20 \mathrm{ m/s$. The banking
    angle is $15^\circ$. Find the minimum coefficient of static friction.
 
-7. Three blocks of masses $m_1$, $m_2$And $m_3$ are connected by strings on a frictionless table, with
-   $m_3$ hanging off the edge over a pulley. Derive the acceleration in terms of the masses.
+7. Three blocks of masses $m_1$, $m_2$And $m_3$ are connected by strings on a frictionless table,
+   with $m_3$ hanging off the edge over a pulley. Derive the acceleration in terms of the masses.
 
 8. A $5.0 \mathrm{ kg$ block is on a frictionless table connected to a $3.0 \mathrm{ kg$ block
    hanging over the edge. Find the acceleration of the system and the tension in the string.

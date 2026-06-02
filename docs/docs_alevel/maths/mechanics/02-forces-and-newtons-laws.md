@@ -1,6 +1,8 @@
 ---
 title: Forces and Newton's Laws
-description: 'A-Level Maths Forces and Newton\'s Laws notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  "A-Level Maths Forces and Newton's Laws notes covering key definitions, core concepts, worked
+  examples, and practice questions for clear revision."
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Maths
