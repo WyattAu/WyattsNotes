@@ -4,7 +4,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: algolia
+  group: algolia-${{ github.event_name == 'workflow_dispatch' && inputs.site || 'scheduled' }}
   cancel-in-progress: true
 
 on:

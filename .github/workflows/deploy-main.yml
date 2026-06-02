@@ -59,6 +59,7 @@ jobs:
             docusaurus-main-
 
       - name: Build
+        id: build
         run: pnpm run build
         env:
           NODE_OPTIONS: --max-old-space-size=7168

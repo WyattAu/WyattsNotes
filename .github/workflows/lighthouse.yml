@@ -4,7 +4,9 @@ permissions:
   contents: read
 
 concurrency:
-  group: lighthouse
+  group:
+    lighthouse-${{ github.event_name == 'workflow_dispatch' && inputs.site ||
+    github.event.workflow_run.head_branch || 'scheduled' }}
   cancel-in-progress: true
 
 on:
@@ -40,14 +42,54 @@ on:
           - university
 
 jobs:
-  lighthouse-main:
-    name: Lighthouse - Main
-    if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy Main Site to
-      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
-      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'main'))
+  lighthouse:
+    name: Lighthouse - ${{ matrix.name }}
+    if: |
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
+        (matrix.trigger == '*' || matrix.trigger == github.event.workflow_run.name)) ||
+      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == matrix.key))
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - key: main
+            name: Main
+            url: https://wyattsnotes.wyattau.com
+            trigger: Deploy Main Site to Cloudflare Pages
+          - key: academics
+            name: Academics
+            url: https://academics.wyattau.com
+            trigger: Deploy Academics to Cloudflare Pages
+          - key: alevel
+            name: A-Levels
+            url: https://alevel.wyattau.com
+            trigger: Deploy A-Level Maths & Physics to Cloudflare Pages
+          - key: alevel
+            name: A-Levels
+            url: https://alevel.wyattau.com
+            trigger: Deploy A-Level Sciences to Cloudflare Pages
+          - key: ib
+            name: IB
+            url: https://ib.wyattau.com
+            trigger: Deploy IB to Cloudflare Pages
+          - key: dse
+            name: DSE
+            url: https://dse.wyattau.com
+            trigger: Deploy DSE to Cloudflare Pages
+          - key: qualifications
+            name: Qualifications
+            url: https://qualifications.wyattau.com
+            trigger: Deploy Qualifications to Cloudflare Pages
+          - key: programming
+            name: Programming
+            url: https://programming.wyattau.com
+            trigger: Deploy Programming to Cloudflare Pages
+          - key: university
+            name: University
+            url: https://university.wyattau.com
+            trigger: Deploy University to Cloudflare Pages
     steps:
       - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v6
@@ -56,228 +98,15 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run:
-          pnpm lighthouse -- --collect.url=https://wyattsnotes.wyattau.com
-          --collect.startServerCommand=""
+      - run: pnpm lighthouse -- --collect.url=${{ matrix.url }} --collect.startServerCommand=""
       - name: Lighthouse summary
         if: always()
         run: node scripts/lighthouse-summary.mjs
         env:
-          SITE_NAME: 'main'
+          SITE_NAME: ${{ matrix.key }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: lighthouse-main-results
+          name: lighthouse-${{ matrix.key }}-results
           path: .lighthouseci
-
-  lighthouse-academics:
-    name: Lighthouse - Academics
-    if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy Academics to
-      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
-      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'academics'))
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run:
-          pnpm lighthouse -- --collect.url=https://academics.wyattau.com
-          --collect.startServerCommand=""
-      - name: Lighthouse summary
-        if: always()
-        run: node scripts/lighthouse-summary.mjs
-        env:
-          SITE_NAME: 'academics'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-academics-results
-          path: .lighthouseci
-
-  lighthouse-alevel:
-    name: Lighthouse - A-Levels
-    if:
-      (github.event_name == 'workflow_run' && (github.event.workflow_run.name == 'Deploy A-Level
-      Maths & Physics to Cloudflare Pages' || github.event.workflow_run.name == 'Deploy A-Level
-      Sciences to Cloudflare Pages') && github.event.workflow_run.conclusion == 'success') ||
-      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
-      'alevel'))
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run:
-          pnpm lighthouse -- --collect.url=https://alevel.wyattau.com
-          --collect.startServerCommand=""
-      - name: Lighthouse summary
-        if: always()
-        run: node scripts/lighthouse-summary.mjs
-        env:
-          SITE_NAME: 'alevel'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-alevel-results
-          path: .lighthouseci
-
-  lighthouse-ib:
-    name: Lighthouse - IB
-    if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy IB to
-      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
-      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'ib'))
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm lighthouse -- --collect.url=https://ib.wyattau.com --collect.startServerCommand=""
-      - name: Lighthouse summary
-        if: always()
-        run: node scripts/lighthouse-summary.mjs
-        env:
-          SITE_NAME: 'ib'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-ib-results
-          path: .lighthouseci
-
-  lighthouse-dse:
-    name: Lighthouse - DSE
-    if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy DSE to
-      Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') || (github.event_name
-      == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site == 'dse'))
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run:
-          pnpm lighthouse -- --collect.url=https://dse.wyattau.com --collect.startServerCommand=""
-      - name: Lighthouse summary
-        if: always()
-        run: node scripts/lighthouse-summary.mjs
-        env:
-          SITE_NAME: 'dse'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-dse-results
-          path: .lighthouseci
-
-  lighthouse-qualifications:
-    name: Lighthouse - Qualifications
-    if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy
-      Qualifications to Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') ||
-      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
-      'qualifications'))
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run:
-          pnpm lighthouse -- --collect.url=https://qualifications.wyattau.com
-          --collect.startServerCommand=""
-      - name: Lighthouse summary
-        if: always()
-        run: node scripts/lighthouse-summary.mjs
-        env:
-          SITE_NAME: 'qualifications'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-qualifications-results
-          path: .lighthouseci
-
-  lighthouse-programming:
-    name: Lighthouse - Programming
-    if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy Programming
-      to Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') ||
-      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
-      'programming'))
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run:
-          pnpm lighthouse -- --collect.url=https://programming.wyattau.com
-          --collect.startServerCommand=""
-      - name: Lighthouse summary
-        if: always()
-        run: node scripts/lighthouse-summary.mjs
-        env:
-          SITE_NAME: 'programming'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-programming-results
-          path: .lighthouseci
-
-  lighthouse-university:
-    name: Lighthouse - University
-    if:
-      (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'Deploy University
-      to Cloudflare Pages' && github.event.workflow_run.conclusion == 'success') ||
-      (github.event_name == 'workflow_dispatch' && (inputs.site == 'all' || inputs.site ==
-      'university'))
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run:
-          pnpm lighthouse -- --collect.url=https://university.wyattau.com
-          --collect.startServerCommand=""
-      - name: Lighthouse summary
-        if: always()
-        run: node scripts/lighthouse-summary.mjs
-        env:
-          SITE_NAME: 'university'
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: lighthouse-university-results
-          path: .lighthouseci
+          retention-days: 7
