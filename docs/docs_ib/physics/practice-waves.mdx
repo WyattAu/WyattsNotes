@@ -1,0 +1,49 @@
+---
+title: "IB Physics: Waves Practice"
+slug: practice-waves
+description: "Interactive IB Physics waves practice with 16 MCQs on wave properties, the electromagnetic spectrum, refraction, diffraction, interference, standing waves, and the Doppler effect."
+tags: [Physics, IB Physics, Practice]
+---
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+## IB Physics -- Waves Practice
+
+16 MCQ practice problems covering core IB Physics wave behaviour content, from basic wave properties to interference, standing waves, and the Doppler effect.
+---
+### Wave Properties and the Wave Equation
+
+<PracticeProblem questions={[
+  {question: "Which of the following is a longitudinal wave?", options: ["A) Light wave", "B) Water wave on the surface of a pond", "C) Sound wave in air", "D) Wave on a vibrating string"], correct: 2, explanation: "Sound waves in air are longitudinal — particles oscillate parallel to the direction of wave propagation. Light and string waves are transverse. Water surface waves are a combination of transverse and longitudinal."},
+  {question: "A wave has frequency 440 Hz and wavelength 0.78 m. What is its speed?", options: ["A) 564 m s⁻¹", "B) 343 m s⁻¹", "C) 219 m s⁻¹", "D) 440 m s⁻¹"], correct: 1, explanation: "Using v = fλ = 440 × 0.78 = 343.2 m s⁻¹ ≈ 343 m s⁻¹. This is the speed of sound in air at room temperature — 440 Hz is concert A."},
+  {question: "A wave has a period of 0.025 s. What is its frequency?", options: ["A) 40 Hz", "B) 25 Hz", "C) 0.025 Hz", "D) 250 Hz"], correct: 0, explanation: "Frequency f = 1/T = 1/0.025 = 40 Hz. Period and frequency are reciprocals."},
+  {question: "The amplitude of a transverse wave is 0.15 m and its wavelength is 2.0 m. What is the distance between a crest and the nearest trough?", options: ["A) 0.30 m", "B) 1.0 m", "C) 0.15 m", "D) 2.0 m"], correct: 0, explanation: "The distance between a crest and the nearest trough is twice the amplitude (the peak-to-peak distance in the vertical direction) = 2 × 0.15 = 0.30 m. Note this is NOT the wavelength, which is the distance between consecutive crests."}
+]} />
+
+---
+### Electromagnetic Spectrum and Refraction
+
+<PracticeProblem questions={[
+  {question: "In the electromagnetic spectrum, which type of radiation has the longest wavelength?", options: ["A) Infrared", "B) Ultraviolet", "C) Gamma rays", "D) Radio waves"], correct: 3, explanation: "The electromagnetic spectrum in order of increasing frequency (decreasing wavelength): radio, microwave, infrared, visible, ultraviolet, X-ray, gamma. Radio waves have the longest wavelengths (metres to kilometres)."},
+  {question: "Light travels from air (n = 1.00) into glass (n = 1.50) at an angle of incidence of 30°. What is the angle of refraction?", options: ["A) 19.5°", "B) 45.0°", "C) 20.0°", "D) 30.0°"], correct: 0, explanation: "Using Snell's law: n₁ sin θ₁ = n₂ sin θ₂. 1.00 × sin 30° = 1.50 × sin θ₂. 0.500 = 1.50 × sin θ₂. sin θ₂ = 0.333. θ₂ = 19.5°. Light bends towards the normal when entering a denser medium."},
+  {question: "The critical angle for a glass-air interface is 42°. What is the refractive index of the glass?", options: ["A) 1.50", "B) 1.33", "C) 1.67", "D) 1.49"], correct: 0, explanation: "At the critical angle, the refracted ray travels along the boundary: sin θ_c = 1/n (for glass to air). n = 1/sin 42° = 1/0.6691 = 1.495 ≈ 1.50."},
+  {question: "Monochromatic light of wavelength 600 nm in air enters a medium of refractive index 1.33. What is its wavelength in the medium?", options: ["A) 451 nm", "B) 600 nm", "C) 798 nm", "D) 225 nm"], correct: 0, explanation: "Wavelength in medium: λ_medium = λ_air / n = 600 / 1.33 = 451 nm. Frequency remains unchanged, but speed and wavelength decrease in a denser medium."},
+  {question: "Total internal reflection can occur when light travels from:", options: ["A) Air to water", "B) Water to air", "C) Air to glass", "D) Any medium to a less dense medium"], correct: 1, explanation: "Total internal reflection requires light to travel from a denser medium (higher n) to a less dense medium (lower n), AND the angle of incidence must exceed the critical angle. Water to air satisfies the first condition, as does glass to air."}
+]} />
+
+---
+### Diffraction, Interference and Standing Waves
+
+<PracticeProblem questions={[
+  {question: "For destructive interference to occur between two coherent sources, the path difference must be:", options: ["A) nλ (where n = 0, 1, 2, ...)", "B) (n + 0.5)λ (where n = 0, 1, 2, ...)", "C) 2nλ", "D) Zero only"], correct: 1, explanation: "Destructive interference occurs when the path difference is (n + ½)λ, meaning the waves arrive half a wavelength out of phase and cancel. Constructive interference occurs at path differences of nλ."},
+  {question: "Two coherent sources are 0.50 mm apart. Interference fringes are observed on a screen 2.0 m away. If the fringe spacing is 2.4 mm, what is the wavelength of the light?", options: ["A) 600 nm", "B) 480 nm", "C) 550 nm", "D) 700 nm"], correct: 0, explanation: "Using the double-slit formula: λ = ax/D where a = slit spacing, D = screen distance, x = fringe spacing. λ = (0.50 × 10⁻³ × 2.4 × 10⁻³) / 2.0 = 1.2 × 10⁻⁶ / 2.0 = 6.0 × 10⁻⁷ m = 600 nm."},
+  {question: "A standing wave on a string fixed at both ends has a frequency of 120 Hz for the third harmonic. What is the fundamental frequency?", options: ["A) 30 Hz", "B) 40 Hz", "C) 60 Hz", "D) 360 Hz"], correct: 1, explanation: "For a standing wave, the nth harmonic frequency is f_n = n × f₁. The third harmonic (n=3) is 120 Hz, so f₁ = 120/3 = 40 Hz. The fundamental frequency is always the lowest frequency at which a standing wave can form."},
+  {question: "Sound waves of frequency 850 Hz are diffracted through a doorway of width 0.90 m. The speed of sound is 340 m s⁻¹. What is the angle of the first diffraction minimum from the central maximum?", options: ["A) 26.5°", "B) 48.6°", "C) 22.2°", "D) 13.3°"], correct: 0, explanation: "λ = v/f = 340/850 = 0.400 m. For single slit diffraction: sin θ = λ/a = 0.400/0.90 = 0.444. θ = 26.4° ≈ 26.5°. Diffraction is significant when λ is comparable to or larger than the slit width."}
+]} />
+
+---
+### Doppler Effect and Polarization
+
+<PracticeProblem questions={[
+  {question: "A police car sounding a siren of frequency 512 Hz moves towards a stationary observer at 30 m s⁻¹. What frequency does the observer hear? (Speed of sound = 340 m s⁻¹)", options: ["A) 560 Hz", "B) 544 Hz", "C) 480 Hz", "D) 512 Hz"], correct: 0, explanation: "Using the Doppler equation for a moving source: f_observed = f_source × v/(v − v_source) = 512 × 340/(340 − 30) = 512 × 340/310 = 512 × 1.097 = 561.5 Hz ≈ 560 Hz. The observed frequency is higher when the source approaches."},
+  {question: "Only transverse waves can be polarized because:", options: ["A) They travel faster than longitudinal waves", "B) Their oscillations are perpendicular to the direction of propagation", "C) They require a medium to travel through", "D) They have a higher frequency than longitudinal waves"], correct: 1, explanation: "Polarization restricts the plane of oscillation. Transverse waves oscillate perpendicular to propagation, so their oscillation plane can be restricted. Longitudinal waves oscillate parallel to propagation and cannot be polarized. Polarization is evidence that light is a transverse wave."},
+  {question: "A standing wave on a string 1.50 m long, fixed at both ends, has three antinodes. If the wave speed is 300 m s⁻¹, what is the frequency?", options: ["A) 200 Hz", "B) 100 Hz", "C) 300 Hz", "D) 600 Hz"], correct: 2, explanation: "Three antinodes means the third harmonic. The wavelength in the third harmonic: λ₃ = 2L/3 = 2(1.50)/3 = 1.00 m. f₃ = v/λ₃ = 300/1.00 = 300 Hz. For fixed ends, harmonics have n = 1, 2, 3... antinodes = n."}
+]} />

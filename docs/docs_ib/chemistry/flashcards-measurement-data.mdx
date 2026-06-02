@@ -1,0 +1,167 @@
+---
+title: "IB Chemistry Flashcards: Measurement and Data Processing"
+slug: ib-chemistry/measurement-data-flashcards
+tags:
+  - IB Chemistry
+categories:
+  - IB Chemistry
+description:
+  'Interactive flashcards for IB Chemistry measurement and data processing covering uncertainty, significant
+  figures, errors, propagation of uncertainty, titration errors, and graphical analysis techniques.'
+---
+
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## IB Chemistry — Measurement and Data Processing Flashcards
+
+20 interactive flashcards. Press Space to flip, rate 1-4.
+
+---
+
+<FlashcardDeck
+  deckId="ib-chem-measurement-data"
+  title="IB Chemistry: Measurement and Data Processing"
+  description="Uncertainty, significant figures, errors in measurement, propagation of uncertainty, titration errors, and graphical analysis."
+  cards={[
+    {
+      id: 'ib-chem-measurement-data-001',
+      front: 'Define absolute uncertainty, percentage uncertainty, and fractional uncertainty. How are they related?',
+      back: 'Absolute uncertainty: the range of values within which the true value likely lies (with units). Example: 25.0 +/- 0.5 cm3. Fractional uncertainty = absolute uncertainty / measured value (dimensionless). Percentage uncertainty = fractional uncertainty x 100%. Example: 25.0 +/- 0.5 cm3 has fractional uncertainty = 0.5/25.0 = 0.020, percentage uncertainty = 2.0%. The percentage uncertainty is most useful for comparing the precision of different measurements. Smaller percentage uncertainty indicates more precise measurement.',
+      tags: ['uncertainty'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-measurement-data-002',
+      front: 'State the rules for significant figures and determine the number of significant figures in 0.00450.',
+      back: 'Rules: (1) All non-zero digits are significant. (2) Zeros between non-zero digits are significant. (3) Leading zeros are NOT significant (placeholders). (4) Trailing zeros after a decimal point ARE significant. (5) Trailing zeros without a decimal point are ambiguous. 0.00450 has 3 significant figures: the 4, 5, and the trailing 0 (after the decimal, indicating precision to 3 decimal places). Leading zeros (0.00) are not significant. In IB Chemistry, final answers should be given to the same number of significant figures as the least precise measurement.',
+      tags: ['significant figures'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-measurement-data-003',
+      front: 'Explain the difference between precision and accuracy. Use a dartboard analogy.',
+      back: 'Accuracy: how close a measurement is to the true/accepted value (like darts near the bullseye). Precision: how close repeated measurements are to each other (like darts grouped tightly together). High accuracy, high precision: darts clustered at the bullseye. Low accuracy, high precision: darts clustered together but away from the bullseye (systematic error). High accuracy, low precision: darts scattered around the bullseye. Low accuracy, low precision: darts scattered and away from the bullseye (both random and systematic errors).',
+      tags: ['precision', 'accuracy'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-measurement-data-004',
+      front: 'Distinguish between random errors and systematic errors. Give an example of each.',
+      back: 'Random errors: cause measurements to scatter above and below the true value. They affect precision. Cannot be eliminated but reduced by repeating measurements and averaging. Example: fluctuating room temperature, parallax error in reading a burette, electrical noise. Systematic errors: consistently shift all measurements in the same direction by the same amount. They affect accuracy. Example: a balance that reads 0.10 g too high (zero error), using a thermometer that reads 2 C low, consistently reading a meniscus from above instead of below.',
+      tags: ['random errors', 'systematic errors'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-measurement-data-005',
+      front: 'How do you propagate uncertainty when multiplying or dividing measured values?',
+      back: 'For multiplication and division: add the percentage uncertainties of all measured values. Example: mass = 2.50 +/- 0.01 g (%uncertainty = 0.4%), volume = 25.0 +/- 0.5 cm3 (%uncertainty = 2.0%). Concentration = mass/(M x V). Percentage uncertainty in concentration = 0.4% + 0% (molar mass has no uncertainty) + 2.0% = 2.4%. For addition and subtraction: add the absolute uncertainties. Example: initial burette reading 0.50 +/- 0.05, final 25.50 +/- 0.05. Volume = 25.00 +/- 0.10 cm3 (absolute uncertainties add).',
+      tags: ['propagation of uncertainty'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-006',
+      front: 'How do you propagate uncertainty when adding or subtracting measured values?',
+      back: 'For addition and subtraction: add the absolute uncertainties. Example: mass of beaker + contents = 52.35 +/- 0.01 g. Mass of empty beaker = 25.12 +/- 0.01 g. Mass of contents = 52.35 - 25.12 = 27.23 +/- 0.02 g. The absolute uncertainties add because each measurement could independently be at the extreme of its range. Note: this is different from multiplication/division where percentage uncertainties are added. Always identify the mathematical operation first, then choose the appropriate method.',
+      tags: ['propagation of uncertainty'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-007',
+      front: 'What are common sources of error in titration experiments?',
+      back: 'Random errors: reading the burette at eye level, drop size, swirling, endpoint detection. Systematic errors: indicator choice (wrong pH range), air bubbles in burette tip, impure standard solution, not accounting for temperature, parallax error (consistently reading from above/below), dirty glassware affecting volumes. To reduce errors: rinse burette with solution (not water), remove air bubbles, read at eye level at the bottom of the meniscus, use a white tile behind the flask, perform rough then accurate titrations, and repeat for concordant results (within 0.10 cm3).',
+      tags: ['titration errors'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-008',
+      front: 'How do you draw a best-fit line on a graph and determine the slope and intercept with uncertainty?',
+      back: 'Best-fit line: a straight line drawn through the data points that represents the general trend, with approximately equal numbers of points above and below. Draw error bars on each point (from uncertainty). The steepest and shallowest reasonable lines through the error bars give the uncertainty in the slope. Slope (gradient) = change in y / change in x. y-intercept: where the line crosses the y-axis (value of y when x = 0). Uncertainty in slope = (max slope - min slope) / 2. Use the IB data booklet graph paper conventions for scale and labelling.',
+      tags: ['graphical analysis'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-009',
+      front: 'Explain how to use the IB Chemistry data booklet for reference values and equations.',
+      back: 'The IB data booklet provides: physical constants (R, F, NA, etc.), atomic masses, thermodynamic data (delta Hf, S), electrochemical data (E values), Ka/Kb values, spectral data, mathematical relationships, and qualitative analysis notes. Always reference the data booklet for: (1) molar masses and atomic numbers, (2) standard electrode potentials, (3) acid dissociation constants, (4) enthalpy of formation data for Hess\'s Law calculations, (5) spectral absorption ranges for colour identification. Data booklet values carry their own significant figures.',
+      tags: ['data booklet'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-010',
+      front: 'What are the rules for recording and presenting experimental data in a results table?',
+      back: 'Rules: (1) All data in a table (raw and processed). (2) Columns with clear headers and units in the header only (not in each cell). (3) Independent variable in the first column. (4) All raw data recorded to the precision of the measuring instrument. (5) Processed data shows correct number of significant figures. (6) Uncertainties included for measured values. (7) No calculations shown in the data table (show working separately). (8) Consistent decimal places within columns. Example: header "Volume of NaOH / cm3" (not "Volume (cm3)" in a separate cell).',
+      tags: ['recording data'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-011',
+      front: 'What is an anomalous result and how should you handle it?',
+      back: 'An anomalous (outlier) result is a data point that does not fit the expected pattern, deviating significantly from other values. It may result from a measurement error, procedural mistake, or contamination. Handling: (1) Identify visually (point far from the trend line or outside the scatter of other points). (2) Do NOT simply discard it — first investigate the cause. (3) If a clear error is identified (e.g., air bubble in burette), the result can be excluded with justification. (4) If no clear cause, keep the result or repeat the measurement. (5) Mark anomalous points on graphs and explain in the evaluation.',
+      tags: ['anomalous results'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-012',
+      front: 'Explain the importance of repeating measurements and how to report the mean with uncertainty.',
+      back: 'Repeating measurements reduces the effect of random errors and allows calculation of the mean (average) and standard deviation. For n repeated measurements of the same quantity: report the mean with the uncertainty as half the range (or standard deviation). Example: three burette readings of 24.50, 24.55, 24.52 cm3. Mean = (24.50 + 24.55 + 24.52)/3 = 24.52 cm3. Range = 24.55 - 24.50 = 0.05. Report as 24.52 +/- 0.03 cm3. More repetitions give better precision. In titrations, use concordant results (within 0.10 cm3) and calculate the average of the concordant values.',
+      tags: ['repeating measurements'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-013',
+      front: 'State the typical uncertainty associated with common laboratory apparatus.',
+      back: 'Burette: +/- 0.05 cm3 per reading (so +/- 0.10 cm3 for a titre = initial + final reading uncertainty). Pipette (25.0 cm3): +/- 0.05 cm3 (one reading). Volumetric flask (250.0 cm3): +/- 0.15 cm3. Measuring cylinder (100 cm3): +/- 0.5 cm3 (much less precise than burette/pipette). Digital balance (2 dp): +/- 0.01 g. Thermometer (-10 to 110 C): +/- 0.5 C. Stopwatch: +/- 0.01 s (but human reaction time adds uncertainty). The apparatus chosen must be appropriate for the required precision — always use the most precise apparatus available.',
+      tags: ['apparatus uncertainty'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-measurement-data-014',
+      front: 'Compare the uncertainties of a burette, pipette, and measuring cylinder. Which gives the most precise volume?',
+      back: 'Burette (50 cm3): +/- 0.05 cm3 per reading, total uncertainty for a titre = +/- 0.10 cm3. Precision: to 0.10 cm3 (2 decimal places). Pipette (25.0 cm3): +/- 0.05 cm3 (single reading). Precision: to 0.1 cm3 (1 decimal place, 3 significant figures). Measuring cylinder (100 cm3): +/- 0.5 cm3. Precision: to 1 cm3 (whole number). The burette and pipette have similar absolute uncertainty but the burette is used for variable volumes (measuring change). For highest precision volume measurements: use a pipette (for a fixed volume) or burette (for variable volume). Measuring cylinders are the least precise and should be avoided for quantitative work.',
+      tags: ['volume uncertainty'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-measurement-data-015',
+      front: 'How do you calculate the percentage uncertainty in a titration result?',
+      back: 'A titration volume has uncertainty from two burette readings: titre = final reading - initial reading. Each reading has uncertainty +/- 0.05 cm3, so total absolute uncertainty = 0.05 + 0.05 = 0.10 cm3. Percentage uncertainty = (0.10 / titre volume) x 100%. Example: titre = 24.50 cm3. Percentage uncertainty = (0.10/24.50) x 100 = 0.41%. For the overall titration, combine uncertainties from volume and concentration: %uncertainty(concentration of unknown) = %uncertainty(titre) + %uncertainty(pipette) + %uncertainty(standard concentration) + %uncertainty(molar mass if applicable).',
+      tags: ['titration uncertainty'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-measurement-data-016',
+      front: 'Explain how to choose an appropriate indicator for a titration based on the pH at the equivalence point.',
+      back: 'The indicator colour change range must overlap with the steep portion of the titration curve at the equivalence point. Strong acid-strong base: equivalence at pH 7, very steep curve. Any indicator with range in pH 3-11 works (e.g., phenolphthalein 8.2-10.0, methyl orange 3.1-4.4, bromothymol blue 6.0-7.6). Weak acid-strong base: equivalence pH > 7 (e.g., ~8.7 for ethanoic acid/NaOH). Use phenolphthalein (8.2-10.0). Strong acid-weak base: equivalence pH < 7 (e.g., ~5.3 for HCl/NH3). Use methyl orange (3.1-4.4) or methyl red (4.4-6.2). Using the wrong indicator gives a systematic error in the titre volume.',
+      tags: ['indicator choice'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-measurement-data-017',
+      front: 'How do you determine the uncertainty in a calculated result involving both multiplication and addition?',
+      back: 'Break the calculation into steps. Apply the appropriate rule at each step: addition/subtraction uses absolute uncertainties; multiplication/division uses percentage uncertainties. Example: to find mass of product from a titration: (1) titre volume V = final - initial: add absolute uncertainties to get delta V. (2) moles = c x V: add percentage uncertainties of c and V. (3) mass = moles x M: add percentage uncertainty of moles to zero (M from data booklet, assumed exact). Combine step by step. For complex expressions: convert all to percentage uncertainties, add, then convert back to absolute uncertainty at the end.',
+      tags: ['propagation of uncertainty'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-measurement-data-018',
+      front: 'Explain how to calculate the mass uncertainty when weighing by difference using a digital balance.',
+      back: 'Weighing by difference: (1) Place container on balance, record mass (m1). (2) Add/subtract substance, record new mass (m2). (3) Mass of substance = m2 - m1 or m1 - m2. Each balance reading has uncertainty +/- 0.01 g (2 dp balance). Absolute uncertainty = 0.01 + 0.01 = 0.02 g. Percentage uncertainty = (0.02 / mass of substance) x 100%. Example: m1 = 25.32 +/- 0.01 g, m2 = 27.85 +/- 0.01 g. Mass transferred = 2.53 +/- 0.02 g. Percentage uncertainty = (0.02/2.53) x 100 = 0.79%. Weighing a small mass gives a larger percentage uncertainty than weighing a large mass.',
+      tags: ['mass uncertainty'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-measurement-data-019',
+      front: 'Describe how to identify and correct for parallax error when reading liquid levels in glassware.',
+      back: 'Parallax error: reading a liquid level from an angle rather than at eye level, causing a systematic error. In a burette: always read the bottom of the meniscus at eye level. If consistently reading from above, volumes will be underestimated; from below, overestimated. Correction: position your eye at the same level as the meniscus, with the meniscus touching or just behind the graduated mark. Use a white card behind the burette to make the meniscus more visible. A consistent parallax error affects all readings equally, so the titre (difference) may partially cancel the error, but the absolute volumes are wrong.',
+      tags: ['parallax error'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-measurement-data-020',
+      front: 'How do you calculate and report the temperature uncertainty in an enthalpy determination experiment?',
+      back: 'Temperature uncertainty comes from the thermometer precision (typically +/- 0.5 C) and the timing of readings. For calorimetry: delta T = T(final) - T(initial). Absolute uncertainty in delta T = 0.5 + 0.5 = 1.0 C (assuming the same thermometer). Percentage uncertainty in delta T = (1.0/delta T) x 100%. Example: delta T = 8.5 C. %uncertainty = (1.0/8.5) x 100 = 11.8%. Since q = mc delta T, the total %uncertainty in q = %uncertainty(m) + %uncertainty(c) + %uncertainty(delta T). The temperature measurement is often the largest source of uncertainty. To reduce it, use a more precise thermometer or increase the temperature change.',
+      tags: ['temperature uncertainty'],
+      difficulty: 'hard',
+    },
+  ]}
+/>

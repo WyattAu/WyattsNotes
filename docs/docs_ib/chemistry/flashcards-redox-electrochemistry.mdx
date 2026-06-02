@@ -1,0 +1,167 @@
+---
+title: "IB Chemistry Flashcards: Redox and Electrochemistry"
+slug: ib-chemistry/redox-electrochemistry-flashcards
+tags:
+  - IB Chemistry
+categories:
+  - IB Chemistry
+description:
+  'Interactive flashcards for IB Chemistry redox and electrochemistry covering oxidation states, half-equations,
+  standard electrode potentials, electrochemical cells, electrolysis, and Faraday\'s laws.'
+---
+
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## IB Chemistry — Redox and Electrochemistry Flashcards
+
+20 interactive flashcards. Press Space to flip, rate 1-4.
+
+---
+
+<FlashcardDeck
+  deckId="ib-chem-redox-electrochemistry"
+  title="IB Chemistry: Redox and Electrochemistry"
+  description="Oxidation states, redox equations, electrode potentials, electrochemical cells, electrolysis, and Faraday's laws."
+  cards={[
+    {
+      id: 'ib-chem-redox-electrochemistry-001',
+      front: 'State the rules for assigning oxidation states.',
+      back: 'Rules: (1) Elements in their standard state = 0 (e.g., O2, Na(s), Cl2). (2) Monatomic ions = charge of ion (Na+ = +1, O2- = -2). (3) In compounds: O is usually -2 (except peroxides -1, OF2 +2), H is +1 (except metal hydrides -1). (4) Sum of oxidation states in a neutral compound = 0; in a polyatomic ion = charge of ion. (5) Group 1 = +1, Group 2 = +2, Al = +3 in compounds. (6) F = -1 in all compounds (most electronegative).',
+      tags: ['oxidation states'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-002',
+      front: 'Define oxidation and reduction in terms of electron transfer and oxidation state.',
+      back: 'Oxidation: loss of electrons, increase in oxidation state (OIL — Oxidation Is Loss). Reduction: gain of electrons, decrease in oxidation state (RIG — Reduction Is Gain). Together: OIL RIG. Oxidation states: oxidised species has its oxidation state increased; reduced species has its oxidation state decreased. Example: Fe -> Fe2+ + 2e- (Fe is oxidised, oxidation state 0 to +2). Cu2+ + 2e- -> Cu (Cu2+ is reduced, oxidation state +2 to 0).',
+      tags: ['oxidation', 'reduction'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-003',
+      front: 'Define oxidizing agent and reducing agent. Give an example of each.',
+      back: 'Oxidizing agent (oxidant): a species that causes oxidation by accepting electrons — it is itself reduced. Example: MnO4- in acid (Mn goes from +7 to +2). Reducing agent (reductant): a species that causes reduction by donating electrons — it is itself oxidized. Example: Fe2+ (Fe goes from +2 to +3). Strong oxidizing agents: F2, MnO4-, Cr2O7 2-, Cl2. Strong reducing agents: alkali metals, Zn, I-.',
+      tags: ['oxidizing agent', 'reducing agent'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-004',
+      front: 'How do you write and balance a half-equation for a redox reaction in acidic solution?',
+      back: 'Steps: (1) Write the skeleton equation with the species being oxidized/reduced. (2) Balance all atoms except O and H. (3) Balance O by adding H2O. (4) Balance H by adding H+. (5) Balance charge by adding electrons (e-). Example: MnO4- -> Mn2+: (1) MnO4- -> Mn2+, (2) Mn balanced, (3) MnO4- + 8H+ -> Mn2+ + 4H2O, (4) already balanced, (5) charge left = +7, right = +2, add 5e- to left: MnO4- + 8H+ + 5e- -> Mn2+ + 4H2O.',
+      tags: ['half-equations'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-005',
+      front: 'How do you combine two half-equations to form a balanced overall redox equation?',
+      back: 'Steps: (1) Write both balanced half-equations. (2) Multiply each by the appropriate factor so that the number of electrons lost equals the number gained (electrons cancel). (3) Add the equations together. (4) Cancel species that appear on both sides. Example: Fe2+ -> Fe3+ + e- and MnO4- + 8H+ + 5e- -> Mn2+ + 4H2O. Multiply Fe equation by 5: 5Fe2+ -> 5Fe3+ + 5e-. Add: 5Fe2+ + MnO4- + 8H+ -> 5Fe3+ + Mn2+ + 4H2O.',
+      tags: ['balancing redox'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-006',
+      front: 'What is a standard electrode potential (E) and how is it measured?',
+      back: 'Standard electrode potential (E) is the potential difference measured when a half-cell is connected to a standard hydrogen electrode (SHE) under standard conditions (298 K, 100 kPa, 1.0 mol dm-3 solutions). The SHE is assigned E = 0.00 V by definition. A positive E indicates the species is more easily reduced than H+ (stronger oxidizing agent than H+). A negative E indicates the species is less easily reduced than H+. Values are from the IB data booklet.',
+      tags: ['standard electrode potentials'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-007',
+      front: 'How do you calculate the standard cell potential (Ecell) for an electrochemical cell?',
+      back: 'Ecell = E(reduction) - E(oxidation) = E(cathode) - E(anode). The cathode is where reduction occurs (higher E value); the anode is where oxidation occurs (lower E value). Example: Zn | Zn2+ || Cu2+ | Cu. E(Zn2+/Zn) = -0.76 V, E(Cu2+/Cu) = +0.34 V. Ecell = 0.34 - (-0.76) = +1.10 V. A positive Ecell indicates the reaction is spontaneous (feasible) under standard conditions. The larger the Ecell, the more spontaneous the reaction.',
+      tags: ['cell potential'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-008',
+      front: 'Describe the structure and operation of a voltaic (galvanic) cell. Use Zn-Cu as an example.',
+      back: 'A voltaic cell converts chemical energy to electrical energy. Components: two half-cells connected by a salt bridge (or porous barrier) and external wire. Zn-Cu cell: Zn | Zn2+(1 mol dm-3) || Cu2+(1 mol dm-3) | Cu. Anode (oxidation): Zn -> Zn2+ + 2e- (Zn electrode dissolves). Cathode (reduction): Cu2+ + 2e- -> Cu (Cu deposits on electrode). Electrons flow from Zn to Cu through the external wire. The salt bridge (e.g., KNO3) maintains electrical neutrality by allowing ion migration.',
+      tags: ['voltaic cell', 'electrochemical cell'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-009',
+      front: 'How can you use standard electrode potentials to predict if a redox reaction is spontaneous?',
+      back: 'A reaction is spontaneous (thermodynamically feasible) if Ecell > 0. To check: identify the species present, look up their E values, determine which would be reduced (higher E) and which oxidized (lower E), then calculate Ecell = E(cathode) - E(anode). Example: Will Cl2 oxidize Fe2+ to Fe3+? E(Cl2/Cl-) = +1.36 V, E(Fe3+/Fe2+) = +0.77 V. Ecell = 1.36 - 0.77 = +0.59 V > 0, so yes. A reaction with Ecell > +0.30 V is considered practically spontaneous.',
+      tags: ['reactivity series', 'predictions'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-010',
+      front: 'Explain the difference between electrolysis of molten salts and aqueous solutions.',
+      back: 'Molten electrolysis: only the salt ions are present. Example: molten NaCl: Na+ reduced at cathode (Na(l)), Cl- oxidized at anode (Cl2(g)). Aqueous electrolysis: water can also be reduced or oxidized, competing with the ions. At cathode: if the metal is more reactive than hydrogen (more negative E), H2O is reduced (2H2O + 2e- -> H2 + 2OH-). At anode: if the anion is a halide (except F-), the halide is oxidized; otherwise, H2O is oxidized (2H2O -> O2 + 4H+ + 4e-).',
+      tags: ['electrolysis'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-011',
+      front: 'State Faraday\'s laws of electrolysis and the key equation.',
+      back: 'Faraday\'s first law: the mass of substance deposited or liberated at an electrode is proportional to the quantity of charge passed. Faraday\'s second law: the masses of different substances deposited by the same quantity of charge are proportional to their molar masses divided by the number of electrons transferred. Key equation: Q = It = nF, where Q = charge (C), I = current (A), t = time (s), n = moles of electrons, F = Faraday constant = 96500 C mol-1. Mass = (It x M) / (z x F), where z = electrons transferred per ion.',
+      tags: ['Faraday\'s laws'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-012',
+      front: 'How do you predict the products of electrolysis of aqueous CuSO4 using inert (platinum) electrodes?',
+      back: 'At the cathode: Cu2+ and H2O compete. Since E(Cu2+/Cu) = +0.34 V > E(H2O/H2) = -0.83 V, Cu2+ is preferentially reduced: Cu2+ + 2e- -> Cu(s). Copper deposits on the cathode. At the anode: SO4 2- and H2O compete. SO4 2- is not a halide, so H2O is oxidized: 2H2O -> O2 + 4H+ + 4e-. Overall: 2Cu2+ + 2H2O -> 2Cu + O2 + 4H+. The solution becomes acidic (H+ ions produced) and blue colour fades as Cu2+ is removed.',
+      tags: ['electrolysis', 'aqueous'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-013',
+      front: 'Describe the process of electroplating and give an example.',
+      back: 'Electroplating uses electrolysis to coat a conductive object with a thin layer of metal. The object to be plated is the cathode; the plating metal is the anode (which dissolves to replenish metal ions). Example: plating silver onto a spoon. Cathode (spoon): Ag+ + e- -> Ag(s). Anode (silver): Ag(s) -> Ag+ + e-. Electrolyte: AgNO3 solution. Conditions: low current for smooth, even coating. Electroplating protects against corrosion, improves appearance, and increases surface hardness.',
+      tags: ['electroplating'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-014',
+      front: 'What is a fuel cell and how does a hydrogen-oxygen fuel cell work?',
+      back: 'A fuel cell generates electricity continuously from a fuel (H2) and oxidant (O2) supplied from external sources. Unlike batteries, fuel cells do not run down. H2-O2 fuel cell: Anode: 2H2 -> 4H+ + 4e- (or 2H2 + 4OH- -> 4H2O + 4e- in alkaline). Cathode: O2 + 4H+ + 4e- -> 2H2O (acidic). Overall: 2H2 + O2 -> 2H2O. Ecell = 1.23 V. Used in space vehicles and electric vehicles. Advantages: high efficiency, no pollution (only water), continuous operation as long as fuel is supplied.',
+      tags: ['fuel cells'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-015',
+      front: 'Explain the process of rusting (corrosion of iron) and methods of prevention.',
+      back: 'Rusting: iron reacts with O2 and H2O in an electrochemical process. Anode (Fe): Fe -> Fe2+ + 2e-. Cathode: O2 + 2H2O + 4e- -> 4OH-. Fe2+ + OH- -> Fe(OH)2 -> Fe2O3.xH2O (rust). Requires O2 and water. Prevention methods: (1) Barrier methods: painting, oiling, plastic coating (prevent O2/H2O contact). (2) Galvanizing: coating with Zn (sacrificial protection, Zn more reactive). (3) Cathodic protection: attaching Mg or Zn blocks (more reactive, corrodes preferentially). (4) Alloying: stainless steel (Fe + Cr + Ni, Cr forms protective oxide layer).',
+      tags: ['corrosion', 'rusting'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-016',
+      front: 'Explain how to determine the oxidation state of an element in a complex ion such as Cr2O7 2-.',
+      back: 'Use rule: sum of oxidation states = overall charge of ion. For Cr2O7 2-: let x = oxidation state of Cr. 2(x) + 7(-2) = -2. 2x - 14 = -2. 2x = 12. x = +6. Each Cr atom has oxidation state +6. In MnO4-: x + 4(-2) = -1, x = +7. In SO4 2-: x + 4(-2) = -2, x = +6. In VO2+: x + 2(-2) = +1, x = +5. In Fe3O4: 3x + 4(-2) = 0, x = +8/3 (average). Fe3O4 contains both Fe2+ and Fe3+ (mixed oxidation state).',
+      tags: ['oxidation states', 'complex ions'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-017',
+      front: 'Balance the redox equation: Cr2O7 2- + Fe2+ + H+ -> Cr3+ + Fe3+ + H2O in acidic solution.',
+      back: 'Half-equations: Cr2O7 2- + 14H+ + 6e- -> 2Cr3+ + 7H2O (reduction, Cr from +6 to +3). Fe2+ -> Fe3+ + e- (oxidation, Fe from +2 to +3). Multiply Fe half-equation by 6: 6Fe2+ -> 6Fe3+ + 6e-. Add: Cr2O7 2- + 6Fe2+ + 14H+ -> 2Cr3+ + 6Fe3+ + 7H2O. Check: Cr balanced (2:2), Fe balanced (6:6), O balanced (7:7), H balanced (14:14), charge: -2 + 12 + 14 = +24 on left; 6 + 18 = +24 on right. Balanced.',
+      tags: ['balancing redox'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-018',
+      front: 'Explain disproportionation using chlorine as an example. How do you identify if disproportionation occurs?',
+      back: 'Disproportionation: the same element is simultaneously oxidized and reduced. Example: Cl2 + 2NaOH -> NaCl + NaClO + H2O. Cl goes from 0 (in Cl2) to -1 (in NaCl, reduced) and +1 (in NaClO, oxidized). Identification: check if the element exists in at least three oxidation states and the reaction produces products where the element is in both higher and lower oxidation states than the reactant. Mn: 2MnO4- + 2H2O -> MnO2 + MnO4 2- + 4OH- (Mn goes from +7 to +4 and +6). Cu2O + H2SO4 -> Cu + CuSO4 is also disproportionation.',
+      tags: ['disproportionation'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-019',
+      front: 'Calculate the mass of copper deposited when a current of 2.50 A is passed through CuSO4 solution for 45.0 minutes. (M(Cu) = 63.5 g mol-1)',
+      back: 'Time = 45.0 min = 2700 s. Q = It = 2.50 x 2700 = 6750 C. Moles of electrons = Q/F = 6750/96500 = 0.06995 mol. Cu2+ + 2e- -> Cu, so moles of Cu = 0.06995/2 = 0.03498 mol. Mass of Cu = 0.03498 x 63.5 = 2.22 g. Key steps: (1) convert time to seconds, (2) calculate charge, (3) divide by F to get moles of electrons, (4) account for stoichiometry (2e- per Cu), (5) convert moles to mass. Always check the number of electrons per ion deposited.',
+      tags: ['Faraday\'s laws', 'calculations'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'ib-chem-redox-electrochemistry-020',
+      front: 'Explain how to use the electrochemical series to predict reactions between halogens and halide ions.',
+      back: 'More reactive halogens (higher E value for X2/X-) can oxidize halide ions below them in the electrochemical series. E values: F2/F- = +2.87 V, Cl2/Cl- = +1.36 V, Br2/Br- = +1.07 V, I2/I- = +0.54 V. Cl2 (E = +1.36) can oxidize Br- (E = +1.07) and I- (E = +0.54) because Ecell > 0. Ecell for Cl2 + 2Br- -> 2Cl- + Br2 = 1.36 - 1.07 = +0.29 V > 0 (spontaneous). I2 cannot oxidize Cl- or Br- (Ecell would be negative). Reactivity: F2 > Cl2 > Br2 > I2.',
+      tags: ['electrochemical series', 'halogens'],
+      difficulty: 'hard',
+    },
+  ]}
+/>

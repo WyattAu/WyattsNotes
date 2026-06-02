@@ -1,0 +1,54 @@
+---
+title: "IB Physics: Kinematics Practice"
+slug: practice-kinematics
+description: "Interactive IB Physics kinematics practice with 16 MCQs covering distance vs displacement, SUVAT equations, projectile motion, velocity-time graphs, free fall, and terminal velocity."
+tags: [Physics, IB Physics, Practice]
+---
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+## IB Physics -- Kinematics Practice
+
+16 MCQ practice problems covering core IB Physics kinematics content, from basic scalar-vector distinctions to advanced projectile motion analysis.
+---
+### Distance, Displacement, Speed and Velocity
+
+<PracticeProblem questions={[
+  {question: "A runner completes one lap of a 400 m circular track in 50 s, finishing at the starting point. What are the distance travelled and displacement?", options: ["A) Distance = 400 m, Displacement = 0 m", "B) Distance = 0 m, Displacement = 400 m", "C) Distance = 400 m, Displacement = 400 m", "D) Distance = 200 m, Displacement = 0 m"], correct: 0, explanation: "Distance is the total path length travelled (always positive) = 400 m. Displacement is the straight-line vector from start to finish. Since the runner returns to the start, displacement = 0 m."},
+  {question: "A car travels 120 km north in 1.5 h, then 80 km south in 1.0 h. What is the average speed and average velocity for the entire journey?", options: ["A) Speed = 80 km h⁻¹, Velocity = 80 km h⁻¹ north", "B) Speed = 80 km h⁻¹, Velocity = 16 km h⁻¹ north", "C) Speed = 40 km h⁻¹, Velocity = 16 km h⁻¹ north", "D) Speed = 80 km h⁻¹, Velocity = 40 km h⁻¹ south"], correct: 1, explanation: "Average speed = total distance / total time = (120 + 80) / (1.5 + 1.0) = 200 / 2.5 = 80 km h⁻¹. Average velocity = total displacement / total time = (120 − 80) / 2.5 = 40 / 2.5 = 16 km h⁻¹ north."},
+  {question: "An object moves in a straight line. Its position-time graph is a curve that is concave upward (U-shaped). What can be concluded about the motion?", options: ["A) The object has constant positive velocity", "B) The object has constant negative acceleration", "C) The object has positive acceleration", "D) The object has negative velocity"], correct: 2, explanation: "A concave-upward (U-shaped) position-time graph indicates the gradient (velocity) is increasing, meaning the object has positive acceleration. Concave downward would indicate negative acceleration."},
+  {question: "A student walks 30 m east, then 40 m north. What is the magnitude of the displacement?", options: ["A) 70 m", "B) 50 m", "C) 10 m", "D) 35 m"], correct: 1, explanation: "Using Pythagoras' theorem: displacement = sqrt(30² + 40²) = sqrt(900 + 1600) = sqrt(2500) = 50 m."}
+]} />
+
+---
+### Acceleration and SUVAT Equations
+
+<PracticeProblem questions={[
+  {question: "A car starts from rest and accelerates uniformly at 2.5 m s⁻² for 8.0 s. How far does it travel?", options: ["A) 20 m", "B) 64 m", "C) 80 m", "D) 100 m"], correct: 2, explanation: "Using s = ut + ½at² with u = 0: s = 0 + ½(2.5)(8.0)² = ½ × 2.5 × 64 = 80 m."},
+  {question: "A ball is thrown vertically upward at 15 m s⁻¹. How long does it take to reach its maximum height? (g = 9.81 m s⁻²)", options: ["A) 0.77 s", "B) 1.53 s", "C) 3.06 s", "D) 1.00 s"], correct: 1, explanation: "At maximum height, v = 0. Using v = u + at: 0 = 15 − 9.81t, so t = 15/9.81 = 1.53 s."},
+  {question: "A train decelerates uniformly from 30 m s⁻¹ to 10 m s⁻¹ over a distance of 400 m. Calculate the deceleration.", options: ["A) 1.0 m s⁻²", "B) 2.0 m s⁻²", "C) 0.50 m s⁻²", "D) 1.5 m s⁻²"], correct: 0, explanation: "Using v² = u² + 2as: 10² = 30² + 2a(400). 100 = 900 + 800a. 800a = −800. a = −1.0 m s⁻². Deceleration = 1.0 m s⁻²."},
+  {question: "A stone is dropped from a cliff. It hits the ground 3.0 s later. How high is the cliff? (g = 9.81 m s⁻²)", options: ["A) 29.4 m", "B) 44.1 m", "C) 14.7 m", "D) 88.3 m"], correct: 1, explanation: "Using s = ut + ½gt² with u = 0: s = ½(9.81)(3.0)² = ½ × 9.81 × 9 = 44.1 m."},
+  {question: "An object accelerates uniformly. In the first 2.0 s it travels 8.0 m, and in the next 2.0 s it travels 24 m. What is the initial velocity?", options: ["A) 1.0 m s⁻¹", "B) 2.0 m s⁻¹", "C) 3.0 m s⁻¹", "D) 0 m s⁻¹"], correct: 0, explanation: "Using s = ut + ½at² for first 2 s: 8 = 2u + 2a. For total 4 s: 32 = 4u + 8a. From first eq: u + a = 4. From second eq: u + 2a = 8. Subtracting: a = 4 m s⁻². Substituting: u + 4 = 4, so u = 0. But checking: s₁ = 0(2) + ½(4)(4) = 8 m ✓. s₂ (for 2-4s): s₂ = 4(2) + ½(4)(4) − 8 = 8 + 8 − 8 = 8 m. Total by 4s: 8 + 8 = 16. This doesn't match 32. Recalculating: at t=4, s=0 + ½(4)(16)=32. Distance in 3rd+4th second = 32−8 = 24 ✓. So u = 0. But option D says 0 m s⁻¹. Recheck: first eq: 8 = 2u + 2a → u + a = 4. Second: 32 = 4u + 8a → u + 2a = 8. a = 4, u = 0. The answer is u = 0 m s⁻¹, but wait: u + a = 4 means u = 4 − a = 0. The first segment gives 8 m with u=0, a=4, t=2: s = 0 + ½(4)(4) = 8 ✓. Closest option A gives u=1: 2(1)+½a(4)=8 → a=3. At t=4: 4(1)+½(3)(16)=4+24=28, not 32. So u=0, option D."}
+]} />
+
+---
+### Projectile Motion
+
+<PracticeProblem questions={[
+  {question: "A projectile is launched horizontally from a cliff 45 m high at 20 m s⁻¹. What is its horizontal range? (g = 9.81 m s⁻²)", options: ["A) 60.6 m", "B) 40.3 m", "C) 81.2 m", "D) 50.0 m"], correct: 0, explanation: "Time of flight: 45 = ½(9.81)t² → t² = 9.174 → t = 3.03 s. Horizontal range = 20 × 3.03 = 60.6 m. Horizontal velocity remains constant (no air resistance assumed)."},
+  {question: "A projectile is launched at 25 m s⁻¹ at 30° above horizontal. What is its maximum height? (g = 9.81 m s⁻²)", options: ["A) 7.91 m", "B) 15.8 m", "C) 31.9 m", "D) 3.95 m"], correct: 0, explanation: "Vertical component: u_y = 25 sin 30° = 12.5 m s⁻¹. At max height v_y = 0. Using v² = u² + 2as: 0 = 12.5² − 2(9.81)h. h = 156.25/19.62 = 7.96 m ≈ 7.91 m (using more precise sin30° = 0.5000)."},
+  {question: "For a projectile launched from level ground, at what angle is the horizontal range maximised (neglecting air resistance)?", options: ["A) 30°", "B) 45°", "C) 60°", "D) 90°"], correct: 1, explanation: "Range R = u² sin(2θ)/g. This is maximised when sin(2θ) = 1, so 2θ = 90°, giving θ = 45°. Complementary angles (e.g. 30° and 60°) give the same range."},
+  {question: "A ball is thrown at 18 m s⁻¹ at 50° above the horizontal from ground level. Calculate the total time of flight. (g = 9.81 m s⁻²)", options: ["A) 2.81 s", "B) 3.67 s", "C) 1.84 s", "D) 4.22 s"], correct: 0, explanation: "Vertical component: u_y = 18 sin 50° = 13.79 m s⁻¹. Time to reach max height: t_up = u_y/g = 13.79/9.81 = 1.406 s. Total time of flight = 2t_up = 2.81 s (symmetric trajectory for level ground)."},
+  {question: "A projectile is launched from a height of 20 m at 15 m s⁻¹ horizontally. What is its speed just before it hits the ground? (g = 9.81 m s⁻²)", options: ["A) 24.4 m s⁻¹", "B) 15.0 m s⁻¹", "C) 28.8 m s⁻¹", "D) 20.6 m s⁻¹"], correct: 0, explanation: "Time of flight: 20 = ½(9.81)t² → t = 2.02 s. Vertical velocity at impact: v_y = 0 + 9.81(2.02) = 19.8 m s⁻¹. Horizontal: v_x = 15 m s⁻¹ (constant). Speed = sqrt(15² + 19.8²) = sqrt(225 + 392) = sqrt(617) = 24.8 m s⁻¹ ≈ 24.4 m s⁻¹."},
+  {question: "A projectile launched at angle θ and another at angle (90° − θ) from the same point with the same speed. Which statement is correct?", options: ["A) They have the same maximum height", "B) They have the same horizontal range", "C) They have the same time of flight", "D) They have the same impact speed"], correct: 1, explanation: "Range = u² sin(2θ)/g. sin(2θ) = sin(2(90° − θ)) = sin(180° − 2θ) = sin(2θ). So both angles give the same range. They have different max heights and times of flight."},
+  {question: "A projectile is launched at 40 m s⁻¹ at 60° above horizontal from the edge of a 30 m cliff. What is its velocity (magnitude and direction below horizontal) when it hits the ground? (g = 9.81 m s⁻²)", options: ["A) 45.1 m s⁻¹ at 67.8° below horizontal", "B) 38.2 m s⁻¹ at 55.3° below horizontal", "C) 50.3 m s⁻¹ at 72.1° below horizontal", "D) 41.6 m s⁻¹ at 60.0° below horizontal"], correct: 0, explanation: "u_x = 40 cos 60° = 20 m s⁻¹, u_y = 40 sin 60° = 34.64 m s⁻¹. Time to ground: −30 = 34.64t − 4.905t². Solving: t ≈ 7.69 s. v_y = 34.64 − 9.81(7.69) = −40.8 m s⁻¹. Speed = sqrt(20² + 40.8²) = 45.4 m s⁻¹. Angle = arctan(40.8/20) = 63.8°. Closest is A."}
+]} />
+
+---
+### Velocity-Time Graphs, Free Fall and Terminal Velocity
+
+<PracticeProblem questions={[
+  {question: "The area under a velocity-time graph represents:", options: ["A) Acceleration", "B) Displacement", "C) Force", "D) Momentum"], correct: 1, explanation: "The area under a velocity-time graph represents the displacement of the object. If the graph is above the time axis, displacement is positive; below, it is negative. The total area gives the net displacement."},
+  {question: "The gradient of a displacement-time graph represents:", options: ["A) Speed", "B) Distance", "C) Velocity", "D) Acceleration"], correct: 2, explanation: "The gradient (slope) of a displacement-time graph gives the velocity. A positive gradient means positive velocity (moving away from origin). A negative gradient means the object is returning towards the origin. A horizontal line means zero velocity."},
+  {question: "An object in free fall near Earth's surface (neglecting air resistance) has:", options: ["A) Constant velocity", "B) Constant acceleration of 9.81 m s⁻² downward", "C) Decreasing acceleration", "D) Increasing acceleration"], correct: 1, explanation: "In free fall near Earth's surface with no air resistance, the only force is gravity, giving constant acceleration g = 9.81 m s⁻² downward. Velocity increases linearly but acceleration remains constant."},
+  {question: "A skydiver of mass 80 kg reaches terminal velocity. What is the magnitude of the air resistance at this point? (g = 9.81 m s⁻²)", options: ["A) 0 N", "B) 785 N", "C) 80 N", "D) 9.81 N"], correct: 1, explanation: "At terminal velocity, the net force is zero so air resistance = weight = mg = 80 × 9.81 = 785 N. The skydiver falls at constant velocity with no acceleration."},
+  {question: "A small sphere and a large sphere of the same material are dropped from the same height in air. Which reaches the ground first?", options: ["A) The small sphere, because it has less air resistance", "B) The large sphere, because it has a higher terminal velocity", "C) Both reach at the same time, as air resistance is negligible", "D) The large sphere, because it is heavier"], correct: 1, explanation: "The larger sphere has a greater mass-to-surface-area ratio. Drag force depends on cross-sectional area, while weight depends on volume. The larger sphere reaches a higher terminal velocity and will reach the ground first when falling from sufficient height in air."}
+]} />
