@@ -4,25 +4,26 @@ tags:
   - java
 slug: java/practice-oop
 description:
-  'Interactive Java practice with auto-graded questions. Test your knowledge of classes,
-  interfaces, generics, and collections.'
+  'Interactive Java practice with auto-graded questions. Test your knowledge of classes, interfaces,
+  generics, and collections.'
 ---
 
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ## Java — OOP Practice
 
-8 auto-graded practice problems covering Java OOP concepts. Select an answer, submit, and review the explanation.
+8 auto-graded practice problems covering Java OOP concepts. Select an answer, submit, and review the
+explanation.
 
 ---
 
 ### Classes
 
 <PracticeProblem
-  question="Given `class Animal { void speak() { System.out.println(\"..."); } }` and `class Dog extends Animal { void speak() { System.out.println(\"Woof\"); } }`, what does `((Animal) new Dog()).speak()` print?"
+  question='Given `class Animal { void speak() { System.out.println("..."); } }` and `class Dog extends Animal { void speak() { System.out.println("Woof"); } }`, what does `((Animal) new Dog()).speak()` print?'
   options={['\"Woof\"', '\"...\"', 'Compilation error', 'ClassCastException']}
   correctAnswer={0}
-  explanation="Java uses dynamic dispatch for instance methods. Even though the reference type is `Animal`, the actual object is a `Dog`. At runtime, Java calls `Dog`'s overridden `speak()` method, printing \"Woof\". This is polymorphism in action."
+  explanation='Java uses dynamic dispatch for instance methods. Even though the reference type is `Animal`, the actual object is a `Dog`. At runtime, Java calls `Dog`&apos;s overridden `speak()` method, printing "Woof". This is polymorphism in action.'
   difficulty="easy"
 />
 
@@ -40,7 +41,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="In Java 8+, can an interface have a method with a body?"
-  options={['Yes, using the `default` keyword', 'No, interface methods must always be abstract', 'Yes, but only static methods', 'Only in abstract classes']}
+  options={[
+    'Yes, using the `default` keyword',
+    'No, interface methods must always be abstract',
+    'Yes, but only static methods',
+    'Only in abstract classes',
+  ]}
   correctAnswer={0}
   explanation="Since Java 8, interfaces can have `default` methods with implementations. This allows adding new methods to existing interfaces without breaking implementing classes. Interfaces can also have `static` methods with bodies."
   difficulty="easy"
@@ -48,7 +54,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="Which of the following is a valid functional interface?"
-  options={['interface Printer { void print(String s); }', 'interface Printer { void print(String s); void close(); }', 'interface Printer { String toString(); }', 'abstract class Printer { abstract void print(); }']}
+  options={[
+    'interface Printer { void print(String s); }',
+    'interface Printer { void print(String s); void close(); }',
+    'interface Printer { String toString(); }',
+    'abstract class Printer { abstract void print(); }',
+  ]}
   correctAnswer={0}
   explanation="A functional interface has exactly one abstract method. `interface Printer { void print(String s); }` has one abstract method and qualifies. The second option has two abstract methods. The third has zero (it inherits `toString` from Object). The fourth is an abstract class, not an interface."
   difficulty="medium"
@@ -60,7 +71,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What does `<T extends Number>` mean in a generic class declaration?"
-  options={['T must be Number or a subclass of Number', 'T must be exactly Number', 'T can be any type that Number extends', 'T must implement the Number interface']}
+  options={[
+    'T must be Number or a subclass of Number',
+    'T must be exactly Number',
+    'T can be any type that Number extends',
+    'T must implement the Number interface',
+  ]}
   correctAnswer={0}
   explanation="The `extends` keyword in generics specifies an upper bound. `<T extends Number>` means T can be `Number` or any subclass (`Integer`, `Double`, etc.). This allows the generic code to call methods defined in `Number` like `intValue()` or `doubleValue()`."
   difficulty="medium"
@@ -68,7 +84,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What is the difference between `List<?>` and `List<Object>`?"
-  options={['List<?> can hold any type; List<Object> can only hold Object references', 'They are identical', 'List<?> cannot hold any elements', 'List<Object> is more permissive than List<?>']}
+  options={[
+    'List<?> can hold any type; List<Object> can only hold Object references',
+    'They are identical',
+    'List<?> cannot hold any elements',
+    'List<Object> is more permissive than List<?>',
+  ]}
   correctAnswer={0}
   explanation="`List<?>` is a wildcard type that can reference a list of any specific type but you cannot add elements (except null). `List<Object>` specifically means a list that can hold any Object. You can add any Object to `List<Object>` but not to `List<?>`. They are not the same."
   difficulty="hard"
@@ -87,9 +108,9 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 />
 
 <PracticeProblem
-  question="What does `Optional.ofNullable(null).orElse(\"default\")` return?"
+  question='What does `Optional.ofNullable(null).orElse("default")` return?'
   options={['\"default\"', 'null', 'Optional[default]', 'NoSuchElementException']}
   correctAnswer={0}
-  explanation="`Optional.ofNullable(null)` creates an empty Optional. `orElse(\"default\")` returns the provided default value when the Optional is empty. So the result is the string \"default\"."
+  explanation='`Optional.ofNullable(null)` creates an empty Optional. `orElse("default")` returns the provided default value when the Optional is empty. So the result is the string "default".'
   difficulty="easy"
 />

@@ -194,7 +194,12 @@ submit, and review the explanation.
 
 <PracticeProblem
   question="What does catch(...) do and why should it in most cases be the last catch block?"
-  options={['It catches all return values; it has no ordering requirement', 'It catches all exceptions of any type and must be last because it matches everything, making subsequent catches unreachable', 'It catches only std::exception and its derived types', 'It prevents stack unwinding entirely'}
+  options={[
+    'It catches all return values; it has no ordering requirement',
+    'It catches all exceptions of any type and must be last because it matches everything, making subsequent catches unreachable',
+    'It catches only std::exception and its derived types',
+    'It prevents stack unwinding entirely',
+  ]}
   correctAnswer={1}
   explanation="catch(...) is an ellipsis catch handler that matches any thrown exception, regardless of type. Because it matches everything, placing it before any typed catch block would make those blocks unreachable dead code. It is commonly used as a last-resort handler to log unexpected exceptions and rethrow, or to translate C++ exceptions into error codes at API boundaries."
   difficulty="easy"

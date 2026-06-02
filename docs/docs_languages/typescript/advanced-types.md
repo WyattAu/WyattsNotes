@@ -1006,7 +1006,7 @@ This version is an error because the object literal is directly assigned.
 ## Common Pitfalls
 
 1. **Using template literals with generic string types.** Conditional types only decompose literal
-   types, not generic string. FirstChar<string> evaluates to string for both inferences.
+   types, not generic string. FirstChar&lt;string&gt; evaluates to string for both inferences.
 2. **Relying on conditional types in extends clauses.** A conditional type used as a constraint is
    not evaluated during constraint checking.
 3. **Hitting TypeScript recursion depth limits.** Type-level arithmetic exceeds the recursion limit
