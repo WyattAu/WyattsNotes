@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 
 export interface CircuitComponent {
   id: string;
@@ -643,15 +643,6 @@ export const CircuitBuilder: React.FC = () => {
   const [results, setResults] = useState<CalcResult | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const svgRef = useRef<HTMLDivElement>(null);
-  const animRef = useRef<number>(0);
-
-  useEffect(() => {
-    return () => {
-      if (animRef.current) {
-        cancelAnimationFrame(animRef.current);
-      }
-    };
-  }, []);
 
   const addComponent = useCallback(
     (type: CircuitComponent['type']) => {

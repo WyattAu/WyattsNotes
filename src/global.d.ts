@@ -16,13 +16,12 @@ interface SentryBrowserSDK {
     replaysSessionSampleRate?: number;
     integrations?: unknown[];
   }): void;
-  browserTracingIntegration(): unknown;
-  replayIntegration(options?: { maskAllText?: boolean; blockAllMedia?: boolean }): unknown;
 }
 
 declare global {
   interface Window {
     Sentry?: SentryBrowserSDK;
+    __SENTRY_DSN__?: string;
   }
 }
 

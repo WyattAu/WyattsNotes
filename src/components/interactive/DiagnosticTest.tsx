@@ -122,7 +122,7 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
   );
   const [startTime] = useState(Date.now());
   const [elapsed, setElapsed] = useState(0);
-  const [showTimer] = useState(true);
+  const showTimer = true;
 
   const questionOrder = useMemo(() => {
     const order: string[] = [];

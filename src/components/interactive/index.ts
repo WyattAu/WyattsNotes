@@ -1,3 +1,4 @@
+export { AIRecommendations } from './AIRecommendations';
 export { CircuitBuilder } from './CircuitBuilder';
 export { DesmosGraph } from './DesmosGraph';
 export { DiagnosticTest } from './DiagnosticTest';
