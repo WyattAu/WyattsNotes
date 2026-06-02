@@ -1,0 +1,164 @@
+---
+title: "A-Level Further Maths Flashcards: Further Statistics"
+slug: flashcards-further-statistics
+description: "20 interactive flashcards for A-Level Further Maths further statistics covering PMF, E(X), Var(X), coding, continuous distributions, hypothesis testing, t-distribution, chi-squared, and power of tests."
+tags:
+  - Further Maths
+  - A-Level
+  - Flashcards
+---
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## A-Level Further Maths -- Further Statistics Flashcards
+
+20 flashcards with spaced repetition. Press Space to flip, then rate your recall (1--4).
+
+---
+
+<FlashcardDeck
+  deckId="alevel-further-maths-statistics"
+  title="A-Level Further Maths: Further Statistics"
+  description="PMF, PDF, E(X), Var(X), coding, continuous distributions, t-distribution, chi-squared, hypothesis testing, power"
+  cards={[
+    {
+      id: 'alevel-further-stats-001',
+      front: 'What is the difference between a probability mass function (PMF) and a probability density function (PDF)?',
+      back: 'PMF: defined for discrete random variables. P(X=x) gives the probability of X taking the exact value x. Σ P(X=x) = 1. PDF: defined for continuous random variables. P(X=x) = 0 for any single value. Probabilities are found by integrating: P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx. ∫₋∞^∞ f(x) dx = 1.',
+      tags: ['distributions'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'alevel-further-stats-002',
+      front: 'State the definition of E(X) for a discrete random variable and explain its meaning.',
+      back: 'E(X) = Σ x·P(X=x) over all possible values of x. This is the expected value or long-run average of X. It is a weighted average of all possible values, weighted by their probabilities. E(X) may not be a value that X can actually take (e.g. expected number on a die = 3.5).',
+      tags: ['expectation'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'alevel-further-stats-003',
+      front: 'State the definition of E(X) for a continuous random variable with PDF f(x).',
+      back: 'E(X) = ∫₋∞^∞ x·f(x) dx. This is the continuous analogue of Σ x·P(X=x). For a bounded distribution on [a,b]: E(X) = ∫ₐᵇ x·f(x) dx. The expected value is the "centre of mass" of the probability distribution.',
+      tags: ['expectation'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'alevel-further-stats-004',
+      front: 'State Var(X) = E(X²) - [E(X)]² and explain why this form is preferred over Var(X) = E[(X - μ)²].',
+      back: 'Var(X) = E(X²) - [E(X)]². Both are equivalent, but E(X²) - [E(X)]² is easier to compute because E(X²) = Σ x²·P(X=x) (or ∫ x²f(x)dx) avoids expanding (X-μ)². This form also directly shows variance ≥ 0 since E(X²) ≥ [E(X)]² by Jensen\'s inequality.',
+      tags: ['variance'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'alevel-further-stats-005',
+      front: 'How does coding Y = aX + b affect E(X) and Var(X)? State the general rules.',
+      back: 'E(Y) = aE(X) + b. Var(Y) = a²Var(X). The mean scales by a and shifts by b. The variance scales by a² only; adding a constant b does not change the spread. Standard deviation: σ_Y = |a|σ_X. These rules are fundamental for working with coded data in exam questions.',
+      tags: ['coding'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-006',
+      front: 'State the rules for linear combinations of independent random variables X and Y.',
+      back: 'E(aX + bY) = aE(X) + bE(Y). Var(aX + bY) = a²Var(X) + b²Var(Y). For independent X and Y, the covariance is zero so no covariance term appears. E(XY) = E(X)E(Y) for independent variables. If X and Y are NOT independent: Var(aX + bY) = a²Var(X) + b²Var(Y) + 2abCov(X,Y).',
+      tags: ['linear-combinations'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-007',
+      front: 'Define the moment generating function (MGF) M_X(t) = E(e^(tX)) and state its key uses.',
+      back: 'M_X(t) = E(e^(tX)) = Σ e^(tx)P(X=x) (discrete) or ∫ e^(tx)f(x)dx (continuous). Key uses: (1) E(X) = M\'_X(0), (2) E(X²) = M\'\'_X(0), (3) Var(X) = M\'\'_X(0) - [M\'_X(0)]², (4) If X and Y are independent: M_{X+Y}(t) = M_X(t) × M_Y(t). The MGF uniquely determines the distribution.',
+      tags: ['mgf'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'alevel-further-stats-008',
+      front: 'State the Central Limit Theorem (CLT) and explain its importance in statistics.',
+      back: 'If X₁, X₂, ..., Xₙ are independent, identically distributed random variables with mean μ and variance σ², then for large n: X̄ ≈ N(μ, σ²/n). Specifically, (X̄ - μ)/(σ/√n) → N(0,1) as n → ∞. This holds regardless of the shape of the original distribution. It justifies using normal distributions for inference about means even when the population distribution is unknown.',
+      tags: ['clt'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-009',
+      front: 'Describe the chi-squared distribution and state when it is used.',
+      back: 'If Z₁, Z₂, ..., Zₖ are independent standard normal variables, then ΣZᵢ² ~ χ²(k) with k degrees of freedom. It is always positive (right-skewed). Mean = k, Variance = 2k. Used for: goodness of fit tests, tests of independence (contingency tables), and confidence intervals for variance of a normal population. As k increases, χ²(k) approaches N(k, 2k).',
+      tags: ['chi-squared'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-010',
+      front: 'Explain how to determine the degrees of freedom for a chi-squared goodness of fit test.',
+      back: 'For a goodness of fit test with k categories: degrees of freedom = k - 1. However, if parameters of the hypothesised distribution were estimated from the data, subtract 1 for each parameter estimated. For a normal distribution fitted to data with μ and σ² estimated: df = k - 1 - 2 = k - 3. For Poisson with λ estimated: df = k - 1 - 1 = k - 2.',
+      tags: ['chi-squared'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'alevel-further-stats-011',
+      front: 'Compare the t-distribution with the standard normal distribution. When do you use each?',
+      back: 'The t-distribution is bell-shaped and symmetric like the normal, but has heavier tails (more probability in the tails). As degrees of freedom ν increase, t(ν) → N(0,1). Use t when: σ is unknown and estimated by s, and/or the sample size is small (n < 30). Use z when: σ is known, or n is large (CLT applies). For ν > 30, t and z are practically identical.',
+      tags: ['t-distribution'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-012',
+      front: 'State the formula and procedure for a confidence interval using the t-distribution.',
+      back: 'CI for μ: x̄ ± t_(ν, α/2) × (s/√n) where ν = n - 1 degrees of freedom. Steps: (1) Calculate x̄ and s from the sample. (2) Choose confidence level (e.g. 95% → α = 0.05). (3) Look up t_(n-1, α/2) from t-tables. (4) CI = x̄ ± t × s/√n. The t-value is larger than the z-value, giving a wider interval reflecting the extra uncertainty from estimating σ.',
+      tags: ['confidence-intervals'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-013',
+      front: 'Outline the extended steps for conducting a hypothesis test.',
+      back: '(1) State H₀ and H₁ clearly. (2) Identify the significance level α and whether the test is one-tailed or two-tailed. (3) Determine the test statistic and its distribution under H₀. (4) Calculate the test statistic from sample data. (5) Find the critical region or calculate the p-value. (6) Compare test statistic with critical value(s), or compare p-value with α. (7) Make a decision: reject or fail to reject H₀. (8) State the conclusion in context.',
+      tags: ['hypothesis-testing'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-014',
+      front: 'Define Type I error (α) and give a practical example.',
+      back: 'Type I error: rejecting H₀ when H₀ is true (false positive). Probability = α = significance level. Example: A medical test diagnoses a healthy patient as diseased. If the test uses α = 0.05, then 5% of healthy patients will be incorrectly diagnosed. The consequence depends on the context: convicting an innocent person, approving an ineffective drug, etc.',
+      tags: ['errors'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'alevel-further-stats-015',
+      front: 'Define Type II error (β) and explain its relationship to the true parameter value.',
+      back: 'Type II error: failing to reject H₀ when H₀ is false (false negative). Probability = β. β depends on: the true value of the parameter, the significance level α, and the sample size n. β is largest when the true parameter is just slightly different from H₀, and decreases as the true parameter moves further from H₀. β decreases as n increases or as α increases.',
+      tags: ['errors'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-016',
+      front: 'Define the power of a statistical test and explain the factors that affect it.',
+      back: 'Power = P(reject H₀ | H₀ is false) = 1 - β. It measures the test\'s ability to detect a false H₀. Factors increasing power: (1) Larger sample size n. (2) Larger effect size (difference between H₀ and true value). (3) Larger significance level α. (4) Using a one-tailed test. (5) Smaller population variance σ². A power of 0.8 (80%) is commonly used as a target in study design.',
+      tags: ['power'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-017',
+      front: 'Define the critical region of a hypothesis test and explain how it is determined.',
+      back: 'The critical region (rejection region) is the set of values of the test statistic for which H₀ is rejected. It is determined by the significance level α and whether the test is one-tailed or two-tailed. For a two-tailed test at α = 0.05: critical region is the top 2.5% and bottom 2.5% of the sampling distribution under H₀. For one-tailed: the critical region is the extreme 5% in the direction of H₁.',
+      tags: ['critical-region'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-018',
+      front: 'Define the p-value and explain how it is used in hypothesis testing.',
+      back: 'The p-value is the probability of obtaining a test statistic at least as extreme as the observed value, assuming H₀ is true. Decision rule: reject H₀ if p-value < α. A small p-value provides evidence against H₀. p-value is NOT the probability that H₀ is true. The p-value depends on the observed data and is a random variable: more extreme data gives smaller p-values.',
+      tags: ['p-value'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'alevel-further-stats-019',
+      front: 'Describe the chi-squared goodness of fit test procedure and conditions for validity.',
+      back: 'Purpose: test whether observed data fits a hypothesised distribution. Procedure: (1) State H₀: data follows specified distribution. (2) Calculate expected frequencies Eᵢ = n × pᵢ. (3) Compute χ² = Σ (Oᵢ - Eᵢ)²/Eᵢ. (4) Compare with critical value from χ²(k-1) table. Conditions: all Eᵢ ≥ 5 (combine categories if needed), observations are independent, n is sufficiently large.',
+      tags: ['chi-squared'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'alevel-further-stats-020',
+      front: 'Describe the chi-squared test for association in a contingency table and state Yates\' correction.',
+      back: 'Purpose: test whether two categorical variables are associated/independent. H₀: the variables are independent. Expected frequency: Eᵢⱼ = (row total × column total) / grand total. Test statistic: χ² = Σ (Oᵢⱼ - Eᵢⱼ)²/Eᵢⱼ. df = (r-1)(c-1). Yates\' correction: for a 2×2 table, use (|O - E| - 0.5)²/E instead. This continuity correction reduces χ², making the test more conservative and preventing over-rejection of H₀ with small samples.',
+      tags: ['chi-squared'],
+      difficulty: 'hard',
+    }
+  ]}
+/>

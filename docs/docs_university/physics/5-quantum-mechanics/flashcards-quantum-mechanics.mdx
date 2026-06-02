@@ -1,0 +1,164 @@
+---
+title: "Quantum Mechanics Flashcards"
+slug: flashcards-quantum-mechanics
+description: "University quantum mechanics flashcards covering the Schrodinger equation, operators, angular momentum, spin, perturbation theory, tunneling, density matrices, and entanglement."
+tags:
+  - University
+  - Physics
+  - Flashcards
+---
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## University Physics -- Quantum Mechanics Flashcards
+
+20 interactive flashcards. Press Space to flip, rate 1-4.
+
+---
+
+<FlashcardDeck
+  deckId="university-physics-quantum-mechanics"
+  title="University Physics -- Quantum Mechanics"
+  description="Wave functions, Schrodinger equation, operators, angular momentum, spin, perturbation theory, tunneling, and entanglement"
+  cards={[
+    {
+      id: 'university-physics-quantum-mechanics-001',
+      front: 'State the Born interpretation of the wave function.',
+      back: 'The wave function Psi(x, t) is a probability amplitude. |Psi(x, t)|^2 dx gives the probability of finding the particle between x and x + dx at time t. The wave function must be single-valued, continuous, and square-integrable: integral |Psi|^2 dx = 1 (normalization). The Born interpretation is a fundamental postulate connecting the mathematical formalism to physical measurement outcomes.',
+      tags: ['wave-function'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-002',
+      front: 'Write the time-dependent and time-independent Schrodinger equations.',
+      back: 'Time-dependent: i hbar partial Psi/partial t = H Psi = [-(hbar^2/2m) del^2 + V(x)] Psi. Time-independent: H psi(x) = E psi(x), i.e., [-(hbar^2/2m) del^2 + V(x)] psi = E psi. The time-independent equation gives stationary states psi_n with energies E_n. The full time-dependent solution is Psi(x,t) = sum_n c_n psi_n(x) exp(-i E_n t / hbar).',
+      tags: ['schrodinger-equation'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-003',
+      front: 'Define Hermitian operators and explain their role as observables in quantum mechanics.',
+      back: 'An operator A is Hermitian if A = A^dagger, meaning integral phi* A psi dx = (integral psi* A phi dx)* for all valid states. Hermitian operators have real eigenvalues (measurable quantities) and orthogonal eigenvectors. Every observable in quantum mechanics is represented by a Hermitian operator. The set of eigenvalues forms the spectrum of possible measurement outcomes.',
+      tags: ['operators'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-004',
+      front: 'State the eigenvalue equation for a quantum mechanical operator.',
+      back: 'A psi_n = a_n psi_n, where A is an operator, psi_n is an eigenfunction, and a_n is the corresponding eigenvalue. For a Hermitian operator, eigenvalues a_n are real and eigenfunctions corresponding to distinct eigenvalues are orthogonal. The set {psi_n} forms a complete basis, so any state can be expanded as Psi = sum_n c_n psi_n. The probability of measuring a_n is |c_n|^2.',
+      tags: ['eigenvalue-equation'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-005',
+      front: 'State the Heisenberg uncertainty principle in its formal mathematical form.',
+      back: 'For two observables A and B: Delta A . Delta B >= |<[A,B]>| / 2, where Delta A = sqrt(<A^2> - <A>^2) is the standard deviation and [A,B] = AB - BA is the commutator. For position and momentum: Delta x . Delta p >= hbar/2. For energy and time: Delta E . Delta t >= hbar/2 (where Delta t is the lifetime of the state). This is a fundamental limit, not a measurement limitation.',
+      tags: ['uncertainty-principle'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-006',
+      front: 'Give the energy levels and wave functions for a particle in a 1D infinite square well.',
+      back: 'E_n = (n^2 pi^2 hbar^2)/(2mL^2) for n = 1, 2, 3, ... Wave functions: psi_n(x) = sqrt(2/L) sin(n pi x / L) for 0 < x < L, zero elsewhere. The ground state (n=1) has energy E_1 > 0 (zero-point energy). Energy levels scale as n^2 and spacing increases with n. The probability distribution has n nodes for the nth state.',
+      tags: ['particle-in-a-box'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-007',
+      front: 'Define the creation and annihilation operators for the quantum harmonic oscillator.',
+      back: 'a = sqrt(m omega / 2 hbar) (x + i p / m omega) and a^dagger = sqrt(m omega / 2 hbar) (x - i p / m omega). Commutation: [a, a^dagger] = 1. Energy eigenstates: a^dagger |n> = sqrt(n+1) |n+1> (raises energy) and a |n> = sqrt(n) |n-1> (lowers energy). Energy levels: E_n = (n + 1/2) hbar omega. The Hamiltonian is H = hbar omega (a^dagger a + 1/2).',
+      tags: ['harmonic-oscillator'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-008',
+      front: 'State the commutation relations for angular momentum operators L^2, L_x, L_y, L_z.',
+      back: '[L_x, L_y] = i hbar L_z, [L_y, L_z] = i hbar L_x, [L_z, L_x] = i hbar L_y (cyclic). [L^2, L_i] = 0 for i = x, y, z. Simultaneous eigenstates of L^2 and L_z: Y_lm(theta, phi). Eigenvalues: L^2 |lm> = hbar^2 l(l+1) |lm> and L_z |lm> = hbar m |lm>, where l = 0, 1, 2, ... and m = -l, ..., l. L^2 and one component (conventionally L_z) can be measured simultaneously; different L_i cannot.',
+      tags: ['angular-momentum'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-009',
+      front: 'State the quantum numbers for the hydrogen atom and their allowed values.',
+      back: 'Three quantum numbers arise from separation in spherical coordinates: (1) Principal: n = 1, 2, 3, ... (determines energy E_n = -13.6/n^2 eV). (2) Orbital angular momentum: l = 0, 1, ..., n-1 (determines L^2 = hbar^2 l(l+1)). (3) Magnetic: m = -l, ..., l (determines L_z = hbar m). A fourth quantum number, spin ms = +/-1/2, is added for the electron. The degeneracy of each level is n^2 (ignoring spin).',
+      tags: ['hydrogen-atom'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-010',
+      front: 'Write the Pauli matrices and state their key properties.',
+      back: 'sigma_x = [[0,1],[1,0]], sigma_y = [[0,-i],[i,0]], sigma_z = [[1,0],[0,-1]]. Properties: sigma_i^2 = I, [sigma_i, sigma_j] = 2i epsilon_{ijk} sigma_k, {sigma_i, sigma_j} = 2 delta_{ij} I. Spin-1/2 operators: S_i = (hbar/2) sigma_i. Any 2x2 Hermitian matrix can be written as a linear combination of the Pauli matrices and the identity.',
+      tags: ['spin'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-011',
+      front: 'Describe the Stern-Gerlach experiment and its significance.',
+      back: 'A beam of silver atoms passes through an inhomogeneous magnetic field and splits into two discrete beams, not a continuous spread. This demonstrates: (1) angular momentum is quantized (space quantization), (2) the electron has intrinsic spin of 1/2 (the two beams correspond to ms = +1/2 and ms = -1/2). Repeated measurements in different orientations show quantum measurement is non-commutative: measuring along one axis erases information about perpendicular axes.',
+      tags: ['stern-gerlach'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-012',
+      front: 'State the Pauli exclusion principle and its consequences for multi-electron atoms.',
+      back: 'No two identical fermions can occupy the same quantum state simultaneously. For electrons: no two electrons in an atom can share the same set of four quantum numbers (n, l, m, ms). Consequences: (1) determines the electron configuration of atoms (Aufbau principle), (2) explains the structure of the periodic table, (3) underlies the stability of matter -- degeneracy pressure prevents collapse of white dwarfs and neutron stars.',
+      tags: ['pauli-exclusion'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-013',
+      front: 'Distinguish between bosons and fermions and explain their statistical behaviour.',
+      back: 'Bosons have integer spin (0, 1, 2, ...) and obey Bose-Einstein statistics: any number can occupy the same state (e.g., photons, phonons). Fermions have half-integer spin (1/2, 3/2, ...) and obey Fermi-Dirac statistics: at most one per state due to Pauli exclusion (e.g., electrons, protons, neutrons). The spin-statistics theorem proves this connection between spin and statistics from relativistic QFT.',
+      tags: ['identical-particles'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-014',
+      front: 'State the formula for first-order time-independent perturbation theory.',
+      back: 'For H = H_0 + lambda V, the first-order energy correction is E_n^(1) = <psi_n^(0) | V | psi_n^(0)>, the expectation value of V in the unperturbed state. The first-order wave function correction is psi_n^(1) = sum_{m!=n} <psi_m^(0) | V | psi_n^(0)> / (E_n^(0) - E_m^(0)) |psi_m^(0)>. This breaks down when E_n^(0) = E_m^(0) (degenerate case requires degenerate perturbation theory). Valid when lambda is small compared to energy level spacings.',
+      tags: ['perturbation-theory'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-015',
+      front: 'Describe the variational method and its application to estimating ground state energies.',
+      back: 'For any trial wave function psi_trial (normalized), <H> = <psi_trial | H | psi_trial> >= E_0 (the true ground state energy). By choosing trial functions with variational parameters and minimizing <H>, one obtains an upper bound on E_0. The accuracy depends on how well the trial function captures the true ground state character. Commonly used for helium atom, molecules, and systems where exact solutions are unavailable.',
+      tags: ['variational-method'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-016',
+      front: 'Describe the WKB approximation for tunneling through a potential barrier.',
+      back: 'The WKB approximation applies when the potential varies slowly compared to the de Broglie wavelength. For a barrier V(x) > E between x1 and x2, the transmission coefficient is approximately T ~ exp(-2 integral_{x1}^{x2} kappa(x) dx), where kappa(x) = sqrt(2m(V(x) - E)) / hbar. The Gamow factor in the exponent determines the tunneling probability. This explains alpha decay, field emission, and scanning tunneling microscopy.',
+      tags: ['tunneling'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-017',
+      front: 'State the measurement postulate (projection postulate) of quantum mechanics.',
+      back: 'When a measurement of observable A is made on state |Psi> and result a_n is obtained, the state collapses (is projected) onto the corresponding eigenstate |a_n>: |Psi> -> |a_n><a_n|Psi> / ||<a_n|Psi>||. The probability of obtaining a_n is P(a_n) = |<a_n|Psi>|^2. This postulate introduces irreducible randomness and the "collapse" that distinguishes quantum measurement from classical measurement.',
+      tags: ['measurement'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-018',
+      front: 'Define a wave packet and explain the trade-off between spatial localization and momentum spread.',
+      back: 'A wave packet is a superposition of plane waves: Psi(x,0) = integral A(k) exp(ikx) dk, where A(k) is peaked around a central wavenumber k_0. The Gaussian wave packet is the minimum uncertainty state: Delta x . Delta p = hbar/2. A narrow spatial packet (small Delta x) requires a broad momentum distribution (large Delta k), and vice versa. This is a direct consequence of Fourier analysis and the uncertainty principle.',
+      tags: ['wave-packet'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-019',
+      front: 'Define the density matrix and explain its use for mixed states.',
+      back: 'The density operator is rho = sum_n p_n |psi_n><psi_n| for a statistical mixture of states |psi_n> with probabilities p_n. For a pure state: rho = |Psi><Psi|. Properties: Tr(rho) = 1, rho^dagger = rho. The expectation value of observable A is <A> = Tr(rho A). The von Neumann entropy S = -k_B Tr(rho ln rho) measures mixedness: S = 0 for pure states, S > 0 for mixed states. The density matrix naturally handles decoherence.',
+      tags: ['density-matrix'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-quantum-mechanics-020',
+      front: 'Define entanglement and give an example of an entangled state.',
+      back: 'A state is entangled if it cannot be written as a product |psi>_A tensor |phi>_B. Example: the Bell state |Phi+> = (|00> + |11>) / sqrt(2) for two qubits. Measuring one qubit instantly determines the other, regardless of separation. Entanglement is a resource for quantum computing, quantum teleportation, and quantum cryptography. It cannot be created by local operations and classical communication alone (monogamy of entanglement).',
+      tags: ['entanglement'],
+      difficulty: 'hard',
+    },
+  ]}
+/>

@@ -1,0 +1,164 @@
+---
+title: "Classical Mechanics Flashcards"
+slug: flashcards-classical-mechanics
+description: "University-level classical mechanics flashcards covering Newton's laws, Lagrangian and Hamiltonian mechanics, Noether's theorem, rigid body dynamics, and canonical transformations."
+tags:
+  - University
+  - Physics
+  - Flashcards
+---
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## University Physics -- Classical Mechanics Flashcards
+
+20 interactive flashcards. Press Space to flip, rate 1-4.
+
+---
+
+<FlashcardDeck
+  deckId="university-physics-classical-mechanics"
+  title="University Physics -- Classical Mechanics"
+  description="Newton's laws, Lagrangian and Hamiltonian mechanics, rigid body dynamics, canonical transformations, and scattering theory"
+  cards={[
+    {
+      id: 'university-physics-classical-mechanics-001',
+      front: 'State Newton\'s First Law (Law of Inertia) in its formal form.',
+      back: 'A body remains in its state of rest or uniform motion in a straight line unless acted upon by a net external force. Mathematically: if F_net = 0, then dv/dt = 0, so v = constant. This defines inertial reference frames -- frames in which this law holds are called inertial frames.',
+      tags: ['newtons-laws'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-classical-mechanics-002',
+      front: 'State Newton\'s Second Law in its formal, general form.',
+      back: 'The rate of change of momentum of a body equals the net external force acting on it: F_net = dp/dt, where p = mv. For constant mass: F = ma. This law is frame-dependent and strictly valid only in inertial frames. It defines the relationship between force, mass, and acceleration that underpins all of classical mechanics.',
+      tags: ['newtons-laws'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-classical-mechanics-003',
+      front: 'State Newton\'s Third Law (Action-Reaction) and note its limitations.',
+      back: 'If body A exerts a force F_AB on body B, then body B exerts an equal and opposite force F_BA = -F_AB on body A. The forces act on different bodies and are simultaneous. Limitations: (1) forces must be of the same type (both gravitational, both electromagnetic, etc.), (2) the law assumes instantaneous action, which fails in relativistic or field-mediated interactions.',
+      tags: ['newtons-laws'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-classical-mechanics-004',
+      front: 'State the Euler-Lagrange equation for a system with generalized coordinates.',
+      back: 'For a system with Lagrangian L(q, q_dot, t) = T - V, the equations of motion are: d/dt (partial L / partial q_dot_i) - (partial L / partial q_i) = 0 for each generalized coordinate q_i. This single scalar equation replaces Newton\'s vector force laws and automatically handles constraint forces. The Euler-Lagrange equation follows from Hamilton\'s principle of stationary action.',
+      tags: ['lagrangian-mechanics'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-005',
+      front: 'Write the Lagrangian for a particle in a central potential V(r) and derive the conserved quantities.',
+      back: 'L = (1/2)m(r_dot^2 + r^2 theta_dot^2) - V(r). Since L is independent of theta (cyclic coordinate), the conjugate momentum p_theta = partial L / partial theta_dot = mr^2 theta_dot is conserved -- this is the angular momentum. Since L has no explicit time dependence, the Hamiltonian H (energy) is also conserved. This reduces the 2D problem to an effective 1D radial equation.',
+      tags: ['lagrangian-mechanics'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-006',
+      front: 'State Hamilton\'s equations of motion in terms of generalized coordinates and momenta.',
+      back: 'Given the Hamiltonian H(q, p, t), the equations of motion are: dq_i/dt = partial H / partial p_i and dp_i/dt = -partial H / partial q_i for each i. These are 2n first-order equations replacing n second-order Euler-Lagrange equations. They define a symplectic flow in phase space, preserving the phase space volume (Liouville\'s theorem).',
+      tags: ['hamiltonian-mechanics'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-007',
+      front: 'State Noether\'s theorem and give the conservation law for time translation symmetry.',
+      back: 'Noether\'s theorem: for every continuous symmetry of the action, there exists a corresponding conserved quantity. Time translation symmetry (L independent of t) implies conservation of energy (H is constant). Spatial translation symmetry implies conservation of linear momentum. Rotational symmetry implies conservation of angular momentum. The conserved current is derived from the infinitesimal symmetry transformation.',
+      tags: ['noethers-theorem'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-008',
+      front: 'State the result for the central force problem: what is the orbit equation and the condition for closed orbits?',
+      back: 'The orbit satisfies d^2u/dtheta^2 + u = -m/(L^2 u^2) F(1/u), where u = 1/r and L is the angular momentum. The orbit is closed only when F(r) = -k/r^2 (inverse square, e.g., gravity) or F(r) = -kr (harmonic oscillator, Bertrand\'s theorem). Other central forces produce precessing open orbits. Bound orbits for 1/r^2 are conic sections: ellipses (E<0), parabolas (E=0), hyperbolas (E>0).',
+      tags: ['central-force'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-classical-mechanics-009',
+      front: 'Sketch the derivation of Kepler\'s three laws from Newton\'s law of gravitation.',
+      back: '(1) First law (elliptical orbits): from F = -GMm/r^2 r_hat and the orbit equation, u = 1/r = (GMm^2/L^2)(1 + e cos theta), which is a conic section with eccentricity e. (2) Second law (equal areas): dA/dt = L/(2m) = constant, since L is conserved for a central force. (3) Third law (T^2 proportional to a^3): integrating over one period gives T = 2pi m a^{3/2} / sqrt(GM(M+m)), and for M >> m, T^2 = (4pi^2/GM) a^3.',
+      tags: ['keplers-laws'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-classical-mechanics-010',
+      front: 'Define the moment of inertia tensor for a rigid body and write its components.',
+      back: 'The moment of inertia tensor is I_{ij} = integral rho(r) (r^2 delta_{ij} - r_i r_j) dV, where rho(r) is the mass density. In matrix form: I = [[I_xx, -I_xy, -I_xz], [-I_xy, I_yy, -I_yz], [-I_xz, -I_yz, I_zz]]. Diagonal elements are moments of inertia about coordinate axes; off-diagonal elements are products of inertia. The tensor is real, symmetric, and positive definite, so it can be diagonalized to principal axes.',
+      tags: ['rigid-body'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-011',
+      front: 'State Euler\'s equations of motion for a rigid body rotating about its centre of mass.',
+      back: 'I_1 d(omega_1)/dt - (I_2 - I_3) omega_2 omega_3 = tau_1, and cyclic permutations for axes 2 and 3. Here I_1, I_2, I_3 are principal moments of inertia, omega_i are angular velocity components along principal axes, and tau_i are external torque components. These equations describe free rotation (tau=0 gives precession) and are essential for understanding the stability of rotation about different axes.',
+      tags: ['rigid-body'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-classical-mechanics-012',
+      front: 'Describe the method for finding normal modes of a system undergoing small oscillations.',
+      back: 'Expand the potential V and kinetic energy T about equilibrium to second order: T = (1/2) T_{ij} q_dot_i q_dot_j and V = (1/2) V_{ij} q_i q_j. The eigenvalue problem V_{ij} q_j = omega^2 T_{ij} q_j gives the normal mode frequencies omega_alpha. Each normal mode has all coordinates oscillating at the same frequency with fixed phase relationships. The general solution is a superposition of all normal modes.',
+      tags: ['normal-modes'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-013',
+      front: 'State Hamilton\'s principle of least action.',
+      back: 'The actual path taken by a system between two points in configuration space at times t1 and t2 is the one that makes the action stationary (delta S = 0), where S = integral_{t1}^{t2} L(q, q_dot, t) dt. "Stationary" means the first variation vanishes. The condition delta S = 0 yields the Euler-Lagrange equations. The action is typically minimized (hence "least action") but stationary is the precise condition.',
+      tags: ['variational-principles'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-014',
+      front: 'Define the Legendre transform and explain its role in going from Lagrangian to Hamiltonian mechanics.',
+      back: 'The Legendre transform of a function f(x) with respect to variable x is g(p) = px - f(x), where p = df/dx. In mechanics: the Hamiltonian is the Legendre transform of the Lagrangian with respect to generalized velocities: H(q, p) = p_i q_dot_i - L(q, q_dot), where p_i = partial L / partial q_dot_i. This transforms from (q, q_dot) to (q, p) as independent variables, converting second-order Euler-Lagrange equations to first-order Hamilton\'s equations.',
+      tags: ['legendre-transform'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-015',
+      front: 'Define canonical transformations and state their generating function types.',
+      back: 'A canonical transformation (Q, P) -> (q, p) preserves the form of Hamilton\'s equations. It is generated by a function F such that the new Hamiltonian K(Q, P) = H + partial F/partial t. Four types of generating functions exist: F_1(q, Q, t), F_2(q, P, t), F_3(p, Q, t), F_4(p, P, t), related by Legendre transforms. Example: F_2 = q_i P_i generates the identity transformation.',
+      tags: ['canonical-transformations'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-classical-mechanics-016',
+      front: 'Define the Poisson bracket and state its relation to time evolution.',
+      back: 'The Poisson bracket of two functions f and g is {f, g} = sum_i (partial f/partial q_i)(partial g/partial p_i) - (partial f/partial p_i)(partial g/partial q_i). Properties: antisymmetric ({f,g} = -{g,f}), bilinear, satisfies the Jacobi identity. Time evolution: df/dt = {f, H} + partial f/partial t. Fundamental brackets: {q_i, q_j} = 0, {p_i, p_j} = 0, {q_i, p_j} = delta_{ij}. These are the classical analogues of quantum commutators.',
+      tags: ['poisson-brackets'],
+      difficulty: 'hard',
+    },
+    {
+      id: 'university-physics-classical-mechanics-017',
+      front: 'State Liouville\'s theorem and explain its physical significance.',
+      back: 'Liouville\'s theorem: the phase space distribution function rho(q, p, t) is constant along trajectories in phase space, i.e., drho/dt = {rho, H} + partial rho/partial t = 0 for a conservative system. Equivalently, the phase space volume occupied by an ensemble of systems is conserved under Hamiltonian flow. Significance: an ensemble of states behaves like an incompressible fluid in phase space, and the number of states in any volume element is preserved.',
+      tags: ['phase-space'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-018',
+      front: 'Define phase space and action-angle variables for integrable systems.',
+      back: 'Phase space is the 2n-dimensional space of all generalized coordinates q_i and conjugate momenta p_i. For an integrable system with n constants of motion, action-angle variables (J_i, theta_i) are a special set of canonical coordinates where: J_i = (1/2pi) closed_oint p_i dq_i (the action) and theta_i evolves linearly: theta_i(t) = theta_i(0) + omega_i t. The frequencies are omega_i = partial H/partial J_i. Actions are adiabatic invariants.',
+      tags: ['action-angle'],
+      difficulty: 'easy',
+    },
+    {
+      id: 'university-physics-classical-mechanics-019',
+      front: 'State the key concepts of scattering theory: cross section, impact parameter, and differential cross section.',
+      back: 'The impact parameter b is the perpendicular distance between the initial trajectory and the scattering centre. The differential cross section d(sigma)/d(Omega) = (b/sin theta) |db/dtheta| gives the probability of scattering into solid angle d(Omega) at angle theta. The total cross section sigma = integral d(sigma)/d(Omega) d(Omega). For Rutherford scattering: d(sigma)/d(Omega) = (k/4E)^2 csc^4(theta/2).',
+      tags: ['scattering'],
+      difficulty: 'medium',
+    },
+    {
+      id: 'university-physics-classical-mechanics-020',
+      front: 'Describe the two-body problem and the concept of reduced mass.',
+      back: 'The two-body problem with masses m1, m2 interacting via central force F(r) separates into: (1) centre-of-mass motion: R = (m1 r1 + m2 r2)/(m1+m2), which moves freely. (2) Relative motion: r = r1 - r2 with reduced mass mu = m1 m2 / (m1 + m2), governed by mu r_ddot = F(r). The problem reduces to an equivalent one-body problem with mass mu in the central potential. This greatly simplifies analysis of gravitational and molecular interactions.',
+      tags: ['two-body'],
+      difficulty: 'easy',
+    },
+  ]}
+/>
