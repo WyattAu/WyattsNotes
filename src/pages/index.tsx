@@ -343,6 +343,7 @@ export default function Home(): React.ReactNode {
       </main>
 
       <section className={styles.principles}>
+        <h2 className={styles.sectionTitle}>Principles</h2>
         <div className={styles.principle}>
           <span className={styles.principleIndex}>01</span>
           <h3 className={styles.principleTitle}>Free &amp; Open Source</h3>

@@ -72,7 +72,7 @@ const WyattsNotesWidget: React.FC<WyattsNotesWidgetProps> = ({
     width: typeof width === 'number' ? `${String(width)}px` : String(width),
     maxWidth: '100%',
     overflow: 'hidden',
-    borderRadius: '8px',
+    borderRadius: 0,
     border: theme === 'dark' ? '1px solid #444' : '1px solid #e0e0e0',
     background: theme === 'dark' ? '#1a1a2e' : '#fff',
   };

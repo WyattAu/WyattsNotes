@@ -308,6 +308,19 @@
 
 /* ═══ PRINCIPLES ═══ */
 
+.sectionTitle {
+  grid-column: 1 / -1;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  margin: 0;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
 .principles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

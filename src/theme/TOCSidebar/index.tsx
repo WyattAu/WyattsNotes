@@ -20,7 +20,11 @@ const TOCSidebar: React.FC<TOCSidebarProps> = ({ toc }) => {
     const storedVisibility = localStorage.getItem('tocVisible');
 
     if (storedVisibility !== null) {
-      setVisibility(JSON.parse(storedVisibility) as boolean);
+      try {
+        setVisibility(JSON.parse(storedVisibility) as boolean);
+      } catch {
+        // ignore corrupt value
+      }
     }
   }, []);
 
@@ -34,6 +38,7 @@ const TOCSidebar: React.FC<TOCSidebarProps> = ({ toc }) => {
         <div className={clsx(styles.sidebar, isVisible ? styles.visible : styles.hidden)}>
           <button
             aria-label="Toggle TOC"
+            aria-expanded={isVisible}
             className={clsx('button button--secondary button--sm', styles.btnToggle)}
             onClick={() => setVisibility((v) => !v)}
           >

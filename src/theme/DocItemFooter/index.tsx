@@ -37,7 +37,7 @@ export default function DocItemFooterWrapper(props: DocItemFooterProps): React.R
         <div
           style={{
             textAlign: 'center',
-            opacity: 0.6,
+            opacity: 0.75,
             fontSize: '0.85rem',
             marginBottom: '1rem',
           }}

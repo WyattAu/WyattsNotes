@@ -116,7 +116,11 @@ function SearchInput({
         <circle cx="11" cy="11" r="8" />
         <path d="m21 21-4.35-4.35" />
       </svg>
-      {isLoading && <div className={styles.loadingIndicator}>Searching...</div>}
+      {isLoading && (
+        <div className={styles.loadingIndicator} role="status" aria-live="polite">
+          Searching...
+        </div>
+      )}
     </div>
   );
 }

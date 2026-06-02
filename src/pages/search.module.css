@@ -213,6 +213,10 @@
   color: #fff;
 }
 
+[data-theme='dark'] .indexCard:hover {
+  color: #000;
+}
+
 .indexCardTitle {
   font-weight: 700;
   font-size: 0.9375rem;
