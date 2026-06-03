@@ -2,7 +2,12 @@
 /**
  * Preprocesses .md/.mdx files to fix patterns that cause MDX parsing errors.
  *
- * Three transformations are applied in order:
+ * Four transformations are applied in order:
+ *
+ * 0. Ensure blank line after import/export before non-ESM content.
+ *    MDX's ESM collector treats the line after an import/export as a continuation
+ *    if it's not blank. Markdown headings/content between import and const blocks
+ *    get swallowed as JS, causing "Could not parse import/exports with acorn".
  *
  * 1. Collapse multi-line const/export const array declarations to single lines.
  *    MDX's ESM collector only collects lines starting with `import`, `export`,
@@ -74,7 +79,52 @@ const ESCAPE_CMDS = new Set([
 ]);
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Transformation 1: Collapse multi-line const/export const array declarations
+// Transformation 0: Ensure blank line after import/export before non-ESM
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * MDX's ESM collector (micromark-extension-mdxjs-esm) treats the next line
+ * after import/export as a continuation if it's not blank. If markdown content
+ * (headings, text) appears between an import and a later const declaration,
+ * the collector swallows the markdown as part of the ESM block, and acorn
+ * fails to parse it.
+ *
+ * Fix: insert a blank line after any import/export line that is immediately
+ * followed by non-blank, non-ESM content (not import/export/const/{).
+ */
+function ensureBlankLineAfterImport(source) {
+  const lines = source.split('\n');
+  const isEsmStart = (line) => /^\s*(import |export )/.test(line) || /^\s*\{/.test(line);
+  const isEsmContinue = (line) => /^\s*(import |export |const |let |var |{|})/.test(line);
+  const isBlank = (line) => line.trim() === '';
+
+  // Skip frontmatter
+  let frontmatterEnd = 0;
+  if (lines[0]?.trim() === '---') {
+    for (let i = 1; i < lines.length; i++) {
+      if (lines[i].trim() === '---') {
+        frontmatterEnd = i + 1;
+        break;
+      }
+    }
+  }
+
+  const result = [];
+  for (let i = 0; i < lines.length; i++) {
+    result.push(lines[i]);
+    if (i >= frontmatterEnd && isEsmStart(lines[i]) && i + 1 < lines.length) {
+      const nextLine = lines[i + 1];
+      if (!isBlank(nextLine) && !isEsmContinue(nextLine) && !isEsmStart(nextLine)) {
+        // Insert blank line
+        result.push('');
+      }
+    }
+  }
+  return result.join('\n');
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Transformation 1: Collapse multi-line const arrays to single lines
 // ─────────────────────────────────────────────────────────────────────────────
 
 function collapseConstArrays(source) {
@@ -359,8 +409,9 @@ function diamondifySuperscriptSubscript(source) {
 function processFile(filepath) {
   const content = fs.readFileSync(filepath, 'utf8');
 
-  // Apply transformations in order: collapse → autolinks → latex braces → superscripts
-  let processed = collapseConstArrays(content);
+  // Apply transformations in order: blank lines → collapse → autolinks → latex braces → superscripts
+  let processed = ensureBlankLineAfterImport(content);
+  processed = collapseConstArrays(processed);
   processed = fixAutolinks(processed);
   processed = diamondifyLatexBraces(processed);
   processed = diamondifySuperscriptSubscript(processed);
