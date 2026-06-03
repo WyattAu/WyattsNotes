@@ -17,267 +17,178 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Literary Analysis
 
-<PracticeProblem
-  questions={[
-    {
-      question:
-        'Which type of narrative voice provides access to the thoughts and feelings of only one character?',
-      options: [
-        'A) Omniscient third-person narrator',
-        'B) Limited third-person narrator',
-        'C) Unreliable first-person narrator',
-        'D) Objective second-person narrator',
-      ],
-      correct: 1,
-      explanation:
-        "A limited third-person narrator (also called focalised narration) restricts access to one character's interiority. Wayne C. Booth's 'The Rhetoric of Fiction' (1961) distinguishes between omniscient and limited narrators by degree of access to characters' consciousness.",
-    },
-    {
-      question:
-        "In Fitzgerald's 'The Great Gatsby', the green light symbolises which abstract concept most centrally?",
-      options: [
-        'A) The inevitability of moral decay',
-        "B) Gatsby's unreachable desire and the American Dream",
-        'C) The corruption of wealth in 1920s society',
-        'D) The futility of social mobility',
-      ],
-      correct: 1,
-      explanation:
-        "The green light at the end of Daisy's dock represents Gatsby's longing and, by extension, the elusive promise of the American Dream. As Nick observes, Gatsby 'stretched out his arms toward the dark water in a curious way' -- the light embodies desire that recedes as one approaches it.",
-    },
-    {
-      question: 'A writer uses pathetic fallacy when they:',
-      options: [
-        'A) Evoke pity through depicting vulnerable characters',
-        'B) Attribute human emotions to inanimate nature or weather',
-        'C) Use weather to mirror or foreshadow emotional states in the narrative',
-        'D) Describe landscape in excessive, overly ornate detail',
-      ],
-      correct: 2,
-      explanation:
-        "Although John Ruskin coined 'pathetic fallacy' in 'Modern Painters' (1856) to describe the attribution of emotion to nature, in A-Level English usage it refers specifically to weather or environment mirroring emotional states. Shakespeare's storm in 'King Lear' is the classic example.",
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'Which type of narrative voice provides access to the
+thoughts and feelings of only one character?', options: [ 'A) Omniscient third-person narrator', 'B)
+Limited third-person narrator', 'C) Unreliable first-person narrator', 'D) Objective second-person
+narrator', ], correct: 1, explanation: "A limited third-person narrator (also called focalised
+narration) restricts access to one character's interiority. Wayne C. Booth's 'The Rhetoric of
+Fiction' (1961) distinguishes between omniscient and limited narrators by degree of access to
+characters' consciousness.", }, { question: "In Fitzgerald's 'The Great Gatsby', the green light
+symbolises which abstract concept most centrally?", options: [ 'A) The inevitability of moral
+decay', "B) Gatsby's unreachable desire and the American Dream", 'C) The corruption of wealth in
+1920s society', 'D) The futility of social mobility', ], correct: 1, explanation: "The green light
+at the end of Daisy's dock represents Gatsby's longing and, by extension, the elusive promise of the
+American Dream. As Nick observes, Gatsby 'stretched out his arms toward the dark water in a curious
+way' -- the light embodies desire that recedes as one approaches it.", }, { question: 'A writer uses
+pathetic fallacy when they:', options: [ 'A) Evoke pity through depicting vulnerable characters',
+'B) Attribute human emotions to inanimate nature or weather', 'C) Use weather to mirror or
+foreshadow emotional states in the narrative', 'D) Describe landscape in excessive, overly ornate
+detail', ], correct: 2, explanation: "Although John Ruskin coined 'pathetic fallacy' in 'Modern
+Painters' (1856) to describe the attribution of emotion to nature, in A-Level English usage it
+refers specifically to weather or environment mirroring emotional states. Shakespeare's storm in
+'King Lear' is the classic example.", }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Poetry Analysis
 
-<PracticeProblem
-  questions={[
-    {
-      question: 'Iambic pentameter consists of which metrical pattern?',
-      options: [
-        'A) Five pairs of unstressed-stressed syllables per line',
-        'B) Five stressed syllables followed by five unstressed syllables',
-        'C) Ten unstressed syllables per line with no regular stress pattern',
-        'D) Five groups of three syllables with the stress on the middle syllable',
-      ],
-      correct: 0,
-      explanation:
-        "Iambic pentameter: five iambs (unstressed-stressed pairs) per line, totalling ten syllables. Philip Hobsbaum in 'Metre, Rhythm and Verse Form' (1996) traces its dominance in English from Chaucer through Milton to the present day.",
-    },
-    {
-      question: 'Enjambment is most effectively used to achieve which effect?',
-      options: [
-        'A) Create a regular, predictable rhythm across the poem',
-        'B) Carry meaning and momentum across line boundaries, creating tension or fluidity',
-        'C) Emphasise the final word of each line through isolation',
-        'D) Signal a shift in speaker or tone between stanzas',
-      ],
-      correct: 1,
-      explanation:
-        "Enjambment -- where a sentence or clause continues beyond the line ending -- propels the reader forward and creates ambiguity about where emphasis falls. William Empson in 'Seven Types of Ambiguity' (1930) argues enjambment generates semantic multiplicity by disrupting the natural pause at line-ends.",
-    },
-    {
-      question:
-        'A poet uses sibilance throughout a stanza. Which of the following is the most likely critical interpretation?',
-      options: [
-        'A) It creates a harsh, discordant tone suggesting conflict',
-        "B) It produces a hushed, secretive or sinister atmosphere through repeated 's' sounds",
-        'C) It signals a shift in rhyme scheme from ABAB to free verse',
-        'D) It mimics the natural rhythms of everyday speech patterns',
-      ],
-      correct: 1,
-      explanation:
-        "Sibilance (repetition of 's' sounds) creates a whispering, hushed, or sometimes sinister effect. In Keats' 'Ode to a Nightingale', sibilance in 'season of mists and mellow fruitfulness' evokes softness. In Plath's work, sibilance often generates menace. Sound device analysis requires linking auditory effect to semantic meaning (AO2).",
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'Iambic pentameter consists of which metrical pattern?',
+options: [ 'A) Five pairs of unstressed-stressed syllables per line', 'B) Five stressed syllables
+followed by five unstressed syllables', 'C) Ten unstressed syllables per line with no regular stress
+pattern', 'D) Five groups of three syllables with the stress on the middle syllable', ], correct: 0,
+explanation: "Iambic pentameter: five iambs (unstressed-stressed pairs) per line, totalling ten
+syllables. Philip Hobsbaum in 'Metre, Rhythm and Verse Form' (1996) traces its dominance in English
+from Chaucer through Milton to the present day.", }, { question: 'Enjambment is most effectively
+used to achieve which effect?', options: [ 'A) Create a regular, predictable rhythm across the
+poem', 'B) Carry meaning and momentum across line boundaries, creating tension or fluidity', 'C)
+Emphasise the final word of each line through isolation', 'D) Signal a shift in speaker or tone
+between stanzas', ], correct: 1, explanation: "Enjambment -- where a sentence or clause continues
+beyond the line ending -- propels the reader forward and creates ambiguity about where emphasis
+falls. William Empson in 'Seven Types of Ambiguity' (1930) argues enjambment generates semantic
+multiplicity by disrupting the natural pause at line-ends.", }, { question: 'A poet uses sibilance
+throughout a stanza. Which of the following is the most likely critical interpretation?', options: [
+'A) It creates a harsh, discordant tone suggesting conflict', "B) It produces a hushed, secretive or
+sinister atmosphere through repeated 's' sounds", 'C) It signals a shift in rhyme scheme from ABAB
+to free verse', 'D) It mimics the natural rhythms of everyday speech patterns', ], correct: 1,
+explanation: "Sibilance (repetition of 's' sounds) creates a whispering, hushed, or sometimes
+sinister effect. In Keats' 'Ode to a Nightingale', sibilance in 'season of mists and mellow
+fruitfulness' evokes softness. In Plath's work, sibilance often generates menace. Sound device
+analysis requires linking auditory effect to semantic meaning (AO2).", }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Drama Analysis
 
-<PracticeProblem
-  questions={[
-    {
-      question:
-        "In Arthur Miller's 'Death of a Salesman', what function do stage directions primarily serve?",
-      options: [
-        "A) They reveal characters' inner thoughts to the audience directly",
-        'B) They provide only practical lighting and blocking instructions for performers',
-        'C) They construct a realist psychological framework that shapes interpretation of dialogue and action',
-        'D) They break the fourth wall by addressing the audience directly',
-      ],
-      correct: 2,
-      explanation:
-        "Miller's stage directions are extraordinarily detailed and function as narrative prose that guides interpretation. The description of the Loman house as 'towering angular shapes behind it, surrounding it on all sides' (Miller, 1949) encodes Willy's entrapment visually. This distinguishes realist drama from expressionist or absurdist staging.",
-    },
-    {
-      question: 'Dramatic irony occurs when:',
-      options: [
-        'A) A character says the opposite of what they mean for rhetorical effect',
-        'B) The audience knows something that a character does not, creating tension or humour',
-        'C) A character delivers a lengthy speech revealing their inner thoughts',
-        'D) The resolution of a play contradicts the expectations set up in the exposition',
-      ],
-      correct: 1,
-      explanation:
-        "Dramatic irony -- audience knowledge exceeding character knowledge -- is central to Sophoclean tragedy and Shakespearean drama. In 'Othello', the audience knows Iago's deceit while Othello does not, generating tragic suspense. J. L. Styan in 'The Elements of Drama' (1960) identifies it as the primary engine of dramatic tension.",
-    },
-    {
-      question: 'A soliloquy differs from an aside in that a soliloquy:',
-      options: [
-        'A) Is always delivered by a character of high social status',
-        'B) Is a lengthy speech where a character speaks their thoughts aloud, usually alone on stage',
-        'C) Involves two characters debating opposing viewpoints directly',
-        'D) Is whispered to another character while the rest of the stage freezes',
-      ],
-      correct: 1,
-      explanation:
-        "A soliloquy is an extended speech by a character alone on stage, revealing inner consciousness. Shakespeare's 'To be or not to be' (Hamlet, Act 3 Scene 1) is paradigmatic. An aside, by contrast, is a brief remark to the audience or to oneself while other characters remain on stage, who supposedly cannot hear it.",
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: "In Arthur Miller's 'Death of a Salesman', what function do
+stage directions primarily serve?", options: [ "A) They reveal characters' inner thoughts to the
+audience directly", 'B) They provide only practical lighting and blocking instructions for
+performers', 'C) They construct a realist psychological framework that shapes interpretation of
+dialogue and action', 'D) They break the fourth wall by addressing the audience directly', ],
+correct: 2, explanation: "Miller's stage directions are extraordinarily detailed and function as
+narrative prose that guides interpretation. The description of the Loman house as 'towering angular
+shapes behind it, surrounding it on all sides' (Miller, 1949) encodes Willy's entrapment visually.
+This distinguishes realist drama from expressionist or absurdist staging.", }, { question: 'Dramatic
+irony occurs when:', options: [ 'A) A character says the opposite of what they mean for rhetorical
+effect', 'B) The audience knows something that a character does not, creating tension or humour',
+'C) A character delivers a lengthy speech revealing their inner thoughts', 'D) The resolution of a
+play contradicts the expectations set up in the exposition', ], correct: 1, explanation: "Dramatic
+irony -- audience knowledge exceeding character knowledge -- is central to Sophoclean tragedy and
+Shakespearean drama. In 'Othello', the audience knows Iago's deceit while Othello does not,
+generating tragic suspense. J. L. Styan in 'The Elements of Drama' (1960) identifies it as the
+primary engine of dramatic tension.", }, { question: 'A soliloquy differs from an aside in that a
+soliloquy:', options: [ 'A) Is always delivered by a character of high social status', 'B) Is a
+lengthy speech where a character speaks their thoughts aloud, usually alone on stage', 'C) Involves
+two characters debating opposing viewpoints directly', 'D) Is whispered to another character while
+the rest of the stage freezes', ], correct: 1, explanation: "A soliloquy is an extended speech by a
+character alone on stage, revealing inner consciousness. Shakespeare's 'To be or not to be' (Hamlet,
+Act 3 Scene 1) is paradigmatic. An aside, by contrast, is a brief remark to the audience or to
+oneself while other characters remain on stage, who supposedly cannot hear it.", }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Prose Analysis
 
-<PracticeProblem
-  questions={[
-    {
-      question: 'Free indirect discourse is best defined as:',
-      options: [
-        'A) Dialogue without quotation marks, blending character speech into narration',
-        "B) A narrative style that merges third-person narration with a character's idiom, thoughts, and perspective without explicit reporting tags",
-        'C) A first-person narrator who deliberately lies or misrepresents events',
-        'D) A technique where the narrator directly addresses the reader in a conversational tone',
-      ],
-      correct: 1,
-      explanation:
-        "Free indirect discourse (FID) was identified by the French critic Charles Bally in 1912 and popularised in English literary criticism by Dorrit Cohn in 'Transparent Minds' (1978). Jane Austen is a canonical practitioner: 'What could she mean by that?' merges the narrator's voice with Elizabeth Bennet's perspective without 'she thought' or 'she wondered'.",
-    },
-    {
-      question: 'A non-linear narrative structure is most likely employed by an author to:',
-      options: [
-        'A) Reduce the length of the novel and simplify the plot',
-        'B) Mimic the fragmentary, non-chronological nature of memory and consciousness',
-        'C) Conform to the conventions of Victorian serial publication',
-        'D) Eliminate the need for character development entirely',
-      ],
-      correct: 1,
-      explanation:
-        "Non-linear narrative disrupts chronological sequence to reflect how memory actually functions -- associatively and non-sequentially. Modernist writers like Woolf ('Mrs Dalloway', 1925) and postmodernists like Faulkner ('The Sound and the Fury', 1929) use temporal fragmentation to represent consciousness. David Lodge in 'The Art of Fiction' (1992) argues form must embody theme.",
-    },
-    {
-      question:
-        "A prose text is described as having a 'stable, ironic tone'. Which combination of features most likely produces this?",
-      options: [
-        'A) Short sentences, exclamatory punctuation, and intensifiers',
-        'B) Detached narration, understatement, and discrepancies between what is stated and what is implied',
-        'C) Stream of consciousness, fragmented syntax, and interior monologue',
-        'D) Elevated diction, classical allusions, and periodic sentence structure',
-      ],
-      correct: 1,
-      explanation:
-        "Irony in prose tone relies on a gap between surface statement and underlying meaning, often achieved through understatement or a calmly detached narrator describing absurd or significant events with apparent indifference. Austen's opening to 'Pride and Prejudice' -- 'It is a truth universally acknowledged...' -- deploys exactly this stable ironic tone through controlled diction and semantic discrepancy.",
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'Free indirect discourse is best defined as:', options: [
+'A) Dialogue without quotation marks, blending character speech into narration', "B) A narrative
+style that merges third-person narration with a character's idiom, thoughts, and perspective without
+explicit reporting tags", 'C) A first-person narrator who deliberately lies or misrepresents
+events', 'D) A technique where the narrator directly addresses the reader in a conversational tone',
+], correct: 1, explanation: "Free indirect discourse (FID) was identified by the French critic
+Charles Bally in 1912 and popularised in English literary criticism by Dorrit Cohn in 'Transparent
+Minds' (1978). Jane Austen is a canonical practitioner: 'What could she mean by that?' merges the
+narrator's voice with Elizabeth Bennet's perspective without 'she thought' or 'she wondered'.", }, {
+question: 'A non-linear narrative structure is most likely employed by an author to:', options: [
+'A) Reduce the length of the novel and simplify the plot', 'B) Mimic the fragmentary,
+non-chronological nature of memory and consciousness', 'C) Conform to the conventions of Victorian
+serial publication', 'D) Eliminate the need for character development entirely', ], correct: 1,
+explanation: "Non-linear narrative disrupts chronological sequence to reflect how memory actually
+functions -- associatively and non-sequentially. Modernist writers like Woolf ('Mrs Dalloway', 1925)
+and postmodernists like Faulkner ('The Sound and the Fury', 1929) use temporal fragmentation to
+represent consciousness. David Lodge in 'The Art of Fiction' (1992) argues form must embody theme.",
+}, { question: "A prose text is described as having a 'stable, ironic tone'. Which combination of
+features most likely produces this?", options: [ 'A) Short sentences, exclamatory punctuation, and
+intensifiers', 'B) Detached narration, understatement, and discrepancies between what is stated and
+what is implied', 'C) Stream of consciousness, fragmented syntax, and interior monologue', 'D)
+Elevated diction, classical allusions, and periodic sentence structure', ], correct: 1, explanation:
+"Irony in prose tone relies on a gap between surface statement and underlying meaning, often
+achieved through understatement or a calmly detached narrator describing absurd or significant
+events with apparent indifference. Austen's opening to 'Pride and Prejudice' -- 'It is a truth
+universally acknowledged...' -- deploys exactly this stable ironic tone through controlled diction
+and semantic discrepancy.", }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Shakespeare
 
-<PracticeProblem
-  questions={[
-    {
-      question:
-        "Which historical context is most relevant to understanding the political themes in Shakespeare's 'Macbeth'?",
-      options: [
-        'A) The Industrial Revolution and its impact on rural communities',
-        'B) The Stuart succession crisis and contemporary anxieties about regicide and divine right',
-        'C) The Norman Conquest and feudal land ownership systems',
-        'D) The Enlightenment and the rise of scientific rationalism',
-      ],
-      correct: 1,
-      explanation:
-        "'Macbeth' (c. 1606) was written during James I's reign, shortly after the Gunpowder Plot (1605). The play's obsessive concern with legitimate succession, the divine right of kings, and the consequences of regicide directly reflect Jacobean anxieties. E. A. J. Honigmann in 'Shakespeare: Seven Tragedies' (1962) argues the play is a 'state tragedy' as much as a psychological one.",
-    },
-    {
-      question:
-        "In 'Othello', Iago's manipulation of Othello is best understood through which dramatic technique?",
-      options: [
-        'A) Comic relief that undercuts the seriousness of the tragedy',
-        "B) Persuasive rhetoric and the deliberate exploitation of Othello's outsider status",
-        'C) Deux ex machina that resolves the central conflict',
-        'D) Chorus narration that provides moral commentary on the action',
-      ],
-      correct: 1,
-      explanation:
-        "Iago uses rhetorical strategies -- especially the 'honest' reputation he has cultivated and the 'ocular proof' he fabricates -- to exploit Othello's vulnerability as a Black man in Venetian society. F. R. Leavis in 'The Common Pursuit' (1952) famously argued Othello is 'self-dramatising' and egotistical, though Edward Said's 'Orientalism' (1978) offers a more productive framework for reading racial othering in the play.",
-    },
-    {
-      question:
-        "Shakespeare's use of the tragic flaw (hamartia) in 'King Lear' centres on which character failing?",
-      options: [
-        'A) Ambition and lust for political power',
-        'B) Jealousy and suspicion towards those closest to him',
-        'C) Failure of judgement in dividing his kingdom and inability to perceive true loyalty',
-        'D) Hesitation and overthinking that prevents decisive action',
-      ],
-      correct: 2,
-      explanation:
-        "Lear's hamartia -- following Aristotle's 'Poetics' -- is his catastrophic misjudgement: dividing his kingdom based on a love test, banishing Cordelia and Kent. His inability to distinguish appearance from reality drives the tragedy. A. C. Bradley in 'Shakespearean Tragedy' (1904) identifies this as a failure of moral perception that leads to suffering and eventual anagnorisis (recognition).",
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: "Which historical context is most relevant to understanding
+the political themes in Shakespeare's 'Macbeth'?", options: [ 'A) The Industrial Revolution and its
+impact on rural communities', 'B) The Stuart succession crisis and contemporary anxieties about
+regicide and divine right', 'C) The Norman Conquest and feudal land ownership systems', 'D) The
+Enlightenment and the rise of scientific rationalism', ], correct: 1, explanation: "'Macbeth'
+(c. 1606) was written during James I's reign, shortly after the Gunpowder Plot (1605). The play's
+obsessive concern with legitimate succession, the divine right of kings, and the consequences of
+regicide directly reflect Jacobean anxieties. E. A. J. Honigmann in 'Shakespeare: Seven Tragedies'
+(1962) argues the play is a 'state tragedy' as much as a psychological one.", }, { question: "In
+'Othello', Iago's manipulation of Othello is best understood through which dramatic technique?",
+options: [ 'A) Comic relief that undercuts the seriousness of the tragedy', "B) Persuasive rhetoric
+and the deliberate exploitation of Othello's outsider status", 'C) Deux ex machina that resolves the
+central conflict', 'D) Chorus narration that provides moral commentary on the action', ], correct:
+1, explanation: "Iago uses rhetorical strategies -- especially the 'honest' reputation he has
+cultivated and the 'ocular proof' he fabricates -- to exploit Othello's vulnerability as a Black man
+in Venetian society. F. R. Leavis in 'The Common Pursuit' (1952) famously argued Othello is
+'self-dramatising' and egotistical, though Edward Said's 'Orientalism' (1978) offers a more
+productive framework for reading racial othering in the play.", }, { question: "Shakespeare's use of
+the tragic flaw (hamartia) in 'King Lear' centres on which character failing?", options: [ 'A)
+Ambition and lust for political power', 'B) Jealousy and suspicion towards those closest to him',
+'C) Failure of judgement in dividing his kingdom and inability to perceive true loyalty', 'D)
+Hesitation and overthinking that prevents decisive action', ], correct: 2, explanation: "Lear's
+hamartia -- following Aristotle's 'Poetics' -- is his catastrophic misjudgement: dividing his
+kingdom based on a love test, banishing Cordelia and Kent. His inability to distinguish appearance
+from reality drives the tragedy. A. C. Bradley in 'Shakespearean Tragedy' (1904) identifies this as
+a failure of moral perception that leads to suffering and eventual anagnorisis (recognition).", },
+];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Comparative Analysis
 
-<PracticeProblem
-  questions={[
-    {
-      question: "When comparing two texts using AQA's AO3, a student should primarily focus on:",
-      options: [
-        'A) Summarising the plots of both texts in alternating paragraphs',
-        'B) Exploring connections and contrasts between texts informed by different contexts, interpretations, and critical perspectives',
-        'C) Identifying which text is objectively better written',
-        'D) Counting the number of shared themes and listing them',
-      ],
-      correct: 1,
-      explanation:
-        "AO3 requires demonstrating understanding of the significance and influence of contexts, and making connections between texts through the lens of different interpretations. This means moving beyond surface thematic overlap to explore how context shapes meaning. AQA's mark scheme rewards integrated comparison -- not sequential description of each text.",
-    },
-    {
-      question:
-        'Which comparative framework is most useful for analysing how two texts from different periods treat the same theme?',
-      options: [
-        'A) Close reading of one text followed by close reading of the other',
-        'B) Contextual comparison examining how different literary periods, social conditions, and authorial positions produce different treatments of a shared concern',
-        'C) Selecting the longest text as the primary reference and noting deviations in the shorter text',
-        'D) Comparing the number of characters in each text',
-      ],
-      correct: 1,
-      explanation:
-        "Comparative analysis across periods requires contextual grounding. For example, comparing Keats' treatment of mortality in 'Ode to a Nightingale' (1819) with Sylvia Plath's in 'Lady Lazarus' (1965) demands understanding Romantic vs. Confessional poetic traditions, their historical moments, and how each poet's context shapes their engagement with the theme. This fulfils AO3 while enabling AO2-level analysis of method.",
-    },
-    {
-      question: 'A strong comparative essay thesis must:',
-      options: [
-        'A) State that both texts are similar and different in various ways',
-        'B) Assert a specific, arguable position about the relationship between texts that can be developed through integrated analysis',
-        'C) Provide a brief biography of each author and summarise historical context',
-        'D) List every literary technique used in both texts',
-      ],
-      correct: 1,
-      explanation:
-        "An effective comparative thesis identifies a precise argument about the relationship between texts -- for instance, 'While both Atwood and Orwell use dystopian settings to critique totalitarianism, Atwood's focus on gendered oppression through Gilead's theocratic framework offers a distinctly feminist intervention that Orwell's politically-oriented '1984' does not anticipate.' This moves beyond descriptive comparison to analytical argument.",
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: "When comparing two texts using AQA's AO3, a student should
+primarily focus on:", options: [ 'A) Summarising the plots of both texts in alternating paragraphs',
+'B) Exploring connections and contrasts between texts informed by different contexts,
+interpretations, and critical perspectives', 'C) Identifying which text is objectively better
+written', 'D) Counting the number of shared themes and listing them', ], correct: 1, explanation:
+"AO3 requires demonstrating understanding of the significance and influence of contexts, and making
+connections between texts through the lens of different interpretations. This means moving beyond
+surface thematic overlap to explore how context shapes meaning. AQA's mark scheme rewards integrated
+comparison -- not sequential description of each text.", }, { question: 'Which comparative framework
+is most useful for analysing how two texts from different periods treat the same theme?', options: [
+'A) Close reading of one text followed by close reading of the other', 'B) Contextual comparison
+examining how different literary periods, social conditions, and authorial positions produce
+different treatments of a shared concern', 'C) Selecting the longest text as the primary reference
+and noting deviations in the shorter text', 'D) Comparing the number of characters in each text', ],
+correct: 1, explanation: "Comparative analysis across periods requires contextual grounding. For
+example, comparing Keats' treatment of mortality in 'Ode to a Nightingale' (1819) with Sylvia
+Plath's in 'Lady Lazarus' (1965) demands understanding Romantic vs. Confessional poetic traditions,
+their historical moments, and how each poet's context shapes their engagement with the theme. This
+fulfils AO3 while enabling AO2-level analysis of method.", }, { question: 'A strong comparative
+essay thesis must:', options: [ 'A) State that both texts are similar and different in various
+ways', 'B) Assert a specific, arguable position about the relationship between texts that can be
+developed through integrated analysis', 'C) Provide a brief biography of each author and summarise
+historical context', 'D) List every literary technique used in both texts', ], correct: 1,
+explanation: "An effective comparative thesis identifies a precise argument about the relationship
+between texts -- for instance, 'While both Atwood and Orwell use dystopian settings to critique
+totalitarianism, Atwood's focus on gendered oppression through Gilead's theocratic framework offers
+a distinctly feminist intervention that Orwell's politically-oriented '1984' does not anticipate.'
+This moves beyond descriptive comparison to analytical argument.", }, ];
+
+<PracticeProblem questions={practiceQuestions} />

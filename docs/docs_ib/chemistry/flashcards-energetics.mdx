@@ -20,158 +20,134 @@ cycles, calorimetry, bond enthalpies, entropy, and Gibbs free energy.
 
 ---
 
+const flashcardData = [ { id: 'energetics-001', front: 'Define standard enthalpy of formation (ΔHf°)
+and give an example.', back: 'Standard enthalpy of formation: the enthalpy change when one mole of a
+compound is formed from its elements in their standard states under standard conditions (298 K, 100
+kPa). ΔHf° of an element in its standard state is zero (e.g. ΔHf°[Na(s)] = 0, ΔHf°[O₂(g)] = 0).
+Example: ΔHf°[H₂O(l)] = −286 kJ/mol means forming 1 mol of liquid water from H₂(g) and O₂(g)
+releases 286 kJ.', tags: ['enthalpy', 'definitions'], difficulty: 'easy', }, { id: 'energetics-002',
+front: 'Define standard enthalpy of combustion (ΔHc°) and state its sign convention.', back:
+'Standard enthalpy of combustion: the enthalpy change when one mole of a substance is completely
+burned in oxygen under standard conditions (298 K, 100 kPa). Always exothermic: ΔHc° < 0 (negative).
+Example: ΔHc°[CH₄(g)] = −890 kJ/mol. Complete combustion means all C → CO₂, all H → H₂O(l).
+Incomplete combustion produces CO and/or C (soot) instead.', tags: ['enthalpy', 'definitions'],
+difficulty: 'easy', }, { id: 'energetics-003', front: 'Define standard enthalpy of neutralization
+(ΔHn°) and state its typical value.', back: 'Standard enthalpy of neutralization: the enthalpy
+change when one mole of water is formed from the reaction between an acid and a base under standard
+conditions. For strong acid-strong base reactions, ΔHn° ≈ −57 kJ/mol (always similar because the net
+ionic equation is always H⁺(aq) + OH⁻(aq) → H₂O(l)). Weak acids/bases give less exothermic values
+because energy is absorbed to dissociate the weak acid/base.', tags: ['enthalpy', 'definitions'],
+difficulty: 'easy', }, { id: 'energetics-004', front: 'Explain the terms exothermic and endothermic
+in terms of enthalpy change and energy profile diagrams.', back: 'Exothermic: ΔH < 0 (negative).
+Products have less enthalpy than reactants. Energy is released to the surroundings (temperature
+increases). Energy profile: products lower than reactants. Endothermic: ΔH > 0 (positive). Products
+have more enthalpy than reactants. Energy is absorbed from the surroundings (temperature decreases).
+Energy profile: products higher than reactants. Activation energy (Ea) is the minimum energy needed
+for the reaction to occur.', tags: ['enthalpy', 'energy profiles'], difficulty: 'easy', }, { id:
+'energetics-005', front: "What is Hess's Law and how is it used to calculate enthalpy changes?",
+back: "Hess's Law: the total enthalpy change for a reaction is independent of the route taken — it
+depends only on the initial and final states. Used by constructing alternative pathways using known
+enthalpy values. Two common methods: 1) Using ΔHf° values: ΔHrxn = ΣΔHf°(products) −
+ΣΔHf°(reactants). 2) Using ΔHc° values: ΔHrxn = ΣΔHc°(reactants) − ΣΔHc°(products).", tags: ["Hess's
+Law"], difficulty: 'easy', }, { id: 'energetics-006', front: 'Describe the calorimetry experiment to
+determine the enthalpy of combustion of a fuel.', back: 'A known mass of fuel is burned to heat a
+known volume of water. Measure the temperature change of the water. Use q = mcΔT to calculate heat
+absorbed by water (c = 4.18 J g⁻¹ K⁻¹ for water). Divide by moles of fuel burned to get ΔHc.
+Assumptions: all heat from combustion transfers to water (significant error in practice — heat lost
+to surroundings), no incomplete combustion, constant density of water (1 g/mL).', tags:
+['calorimetry'], difficulty: 'medium', }, { id: 'energetics-007', front: 'Describe how to perform
+calorimetry for a displacement or neutralization reaction in solution.', back: 'Mix known volumes
+and concentrations of two solutions in an insulated (polystyrene) cup. Record the highest
+temperature reached. Calculate moles of reactants from c × V (in L). Heat evolved: q = mcΔT where m
+= total mass of solution (assume density 1.00 g/mL), c = 4.18 J g⁻¹ K⁻¹. ΔH = −q/n (negative because
+exothermic). Divide by moles of limiting reactant (or per mole of water formed for
+neutralization).', tags: ['calorimetry'], difficulty: 'medium', }, { id: 'energetics-008', front:
+'What are the sources of error in calorimetry experiments and how can they be reduced?', back:
+'Errors: 1) Heat loss to surroundings (reduce with insulation/lid). 2) Incomplete combustion of
+fuel. 3) Non-standard conditions (not exactly 298 K, 100 kPa). 4) Heat absorbed by the calorimeter
+itself (not just the water). 5) Evaporation of fuel before combustion. Improvements: use a bomb
+calorimeter (sealed, measures all heat), repeat and average, use a spirit burner with a wick cap
+between readings.', tags: ['calorimetry', 'errors'], difficulty: 'medium', }, { id:
+'energetics-009', front: 'Explain the difference between mean bond enthalpy and specific bond
+enthalpy.', back: 'Mean bond enthalpy: average value of bond enthalpy for a given type of bond
+across a range of different compounds (e.g. mean C–H bond enthalpy = +413 kJ/mol, averaged over
+methane, ethane, etc.). Specific bond enthalpy: the exact enthalpy change to break a specific bond
+in a specific molecule (e.g. the first C–H bond broken in CH₄ is +435 kJ/mol). Mean values are used
+in calculations because specific values vary with the molecular environment.', tags: ['bond
+enthalpies'], difficulty: 'medium', }, { id: 'energetics-010', front: 'How do you use bond
+enthalpies to calculate the enthalpy change of a reaction?', back: 'ΔH = Σ(bond enthalpies of bonds
+broken in reactants) − Σ(bond enthalpies of bonds formed in products). Breaking bonds is endothermic
+(+), forming bonds is exothermic (−). The result gives an estimate of ΔH. Example: H₂(g) + Cl₂(g) →
+2HCl(g). Bonds broken: H–H (436) + Cl–Cl (242) = 678. Bonds formed: 2 × H–Cl (2 × 431) = 862. ΔH =
+678 − 862 = −184 kJ/mol.', tags: ['bond enthalpies', 'calculations'], difficulty: 'medium', }, { id:
+'energetics-011', front: "Why do bond enthalpy calculations differ from experimental (Hess's Law)
+values?", back: "Bond enthalpy calculations use mean values averaged over different molecules,
+whereas the actual bond strength varies depending on the molecular environment. Additionally, bond
+enthalpy data are for gaseous state only — state changes (e.g. solid → gas) are not accounted for.
+The difference is typically 5–10 kJ/mol but can be larger for reactions involving liquids or solids.
+Hess's Law gives more accurate results.", tags: ['bond enthalpies', "Hess's Law", 'errors'],
+difficulty: 'medium', }, { id: 'energetics-012', front: 'Define standard enthalpy of atomization
+(ΔHatom°) and give examples.', back: 'Standard enthalpy of atomization: the enthalpy change when one
+mole of gaseous atoms is formed from an element in its standard state under standard conditions.
+Always endothermic (energy required to break bonds). Examples: ΔHatom°[Na(s)] = +108 kJ/mol (break
+metallic bonds), ΔHatom°[Cl₂(g)] = +122 kJ/mol (break Cl–Cl covalent bond), ΔHatom°[C(graphite)] =
++717 kJ/mol. These values are used in Born-Haber cycles.', tags: ['enthalpy', 'definitions',
+'Born-Haber'], difficulty: 'medium', }, { id: 'energetics-013', front: 'Describe a Born-Haber cycle
+and list all the enthalpy changes involved.', back: "A Born-Haber cycle is an application of Hess's
+Law that calculates the lattice enthalpy of an ionic compound from other measurable enthalpy
+changes. Steps (for NaCl): 1) ΔHatom of metal (Na(s) → Na(g)). 2) ΔHatom of non-metal (½Cl₂(g) →
+Cl(g)). 3) Ionization energy of metal (Na(g) → Na⁺(g) + e⁻). 4) Electron affinity of non-metal
+(Cl(g) + e⁻ → Cl⁻(g)). 5) Lattice enthalpy (Na⁺(g) + Cl⁻(g) → NaCl(s)). Apply Hess's Law around the
+cycle.", tags: ['Born-Haber cycles'], difficulty: 'hard', }, { id: 'energetics-014', front: 'Explain
+the first and second electron affinities and why the second electron affinity is endothermic.',
+back: 'First electron affinity: enthalpy change when one electron is added to a gaseous atom.
+Usually exothermic (e.g. Cl(g) + e⁻ → Cl⁻(g), ΔH = −349 kJ/mol — attractive force between nucleus
+and added electron). Second electron affinity: adding an electron to a negative ion (e.g. O⁻(g) + e⁻
+→ O²⁻(g)). Endothermic (+798 kJ/mol) because the incoming electron is repelled by the already
+negative ion — energy is required to overcome this repulsion.', tags: ['Born-Haber cycles',
+'electron affinity'], difficulty: 'hard', }, { id: 'energetics-015', front: 'Define entropy (S) and
+explain how it relates to disorder and the number of microstates.', back: 'Entropy is a measure of
+the disorder or randomness of a system (units: J K⁻¹ mol⁻¹). More disordered = higher entropy.
+Factors that increase entropy: more particles in the system, higher temperature, more possible
+microstates (arrangements). Gases have much higher entropy than liquids, which have higher entropy
+than solids. Entropy is a state function: ΔS depends only on initial and final states. The third law
+of thermodynamics: S = 0 for a perfect crystal at 0 K.', tags: ['entropy'], difficulty: 'hard', }, {
+id: 'energetics-016', front: 'Predict the sign of the entropy change for physical and chemical
+processes.', back: 'ΔS > 0 (entropy increases): melting, boiling, sublimation (solid → liquid →
+gas), dissolution of ionic solids (more particles), thermal decomposition (fewer moles of gas
+produced is not always; depends), reactions producing more gas molecules. ΔS < 0 (entropy
+decreases): freezing, condensation, deposition, reactions producing fewer gas molecules or a solid
+from gases. Example: N₂O₄(g) → 2NO₂(g) has ΔS > 0 (1 mol gas → 2 mol gas).', tags: ['entropy',
+'predictions'], difficulty: 'hard', }, { id: 'energetics-017', front: 'State the Gibbs free energy
+equation and explain how ΔG determines feasibility.', back: 'ΔG = ΔH − TΔS (at constant temperature
+and pressure). ΔG < 0: reaction is feasible (spontaneous). ΔG = 0: reaction is at equilibrium. ΔG >
+0: reaction is non-spontaneous (not feasible). The equation shows that an endothermic reaction
+(ΔH > 0) can be spontaneous if TΔS is large enough (high temperature and ΔS > 0). An exothermic
+reaction (ΔH < 0) can be non-spontaneous if −TΔS > ΔH.', tags: ['Gibbs free energy', 'feasibility'],
+difficulty: 'hard', }, { id: 'energetics-018', front: 'Use Gibbs free energy to determine the
+temperature at which a reaction becomes feasible.', back: 'A reaction becomes feasible when ΔG = 0,
+so T = ΔH/ΔS (using absolute values). For ΔH > 0 and ΔS > 0: the reaction is feasible above a
+certain temperature (T > ΔH/ΔS). For ΔH < 0 and ΔS < 0: the reaction is feasible below a certain
+temperature (T < ΔH/ΔS). Units must be consistent: convert ΔH to J/mol or ΔS to kJ K⁻¹ mol⁻¹. This
+assumes ΔH and ΔS do not change significantly with temperature.', tags: ['Gibbs free energy',
+'feasibility', 'calculations'], difficulty: 'hard', }, { id: 'energetics-019', front: 'How does the
+standard Gibbs free energy relate to the equilibrium constant (K)?', back: 'ΔG° = −RT ln K, where R
+= 8.31 J K⁻¹ mol⁻¹ and T is temperature in Kelvin. When ΔG° < 0: ln K > 0, so K > 1 (products
+favoured at equilibrium). When ΔG° > 0: ln K < 0, so K < 1 (reactants favoured at equilibrium). When
+ΔG° = 0: K = 1 (equilibrium lies halfway). This equation connects thermodynamics with equilibrium
+chemistry — a negative ΔG° means the reaction will proceed substantially to products.', tags:
+['Gibbs free energy', 'equilibrium'], difficulty: 'hard', }, { id: 'energetics-020', front: 'Explain
+the thermodynamic reasons why some reactions are feasible but have a very slow rate.', back:
+'Thermodynamic feasibility (ΔG < 0) only tells us a reaction can occur, not how fast. The rate
+depends on kinetics, specifically the activation energy (Ea). Example: diamond → graphite (ΔG < 0,
+feasible) but the rate is immeasurably slow at room temperature due to extremely high Ea. Catalysis
+lowers Ea without changing ΔG or ΔH. Rusting of iron is thermodynamically spontaneous (ΔG < 0) but
+slow without water as a catalyst. Thermodynamics vs kinetics: "possible" vs "practical".', tags:
+['Gibbs free energy', 'kinetics', 'feasibility'], difficulty: 'hard', }, ];
+
 <FlashcardDeck
   deckId="ib-chemistry-energetics"
   title="IB Chemistry: Energetics"
   description="Enthalpy, Hess's Law, Born-Haber cycles, calorimetry, bond enthalpies, entropy, and Gibbs free energy."
-  cards={[
-    {
-      id: 'energetics-001',
-      front: 'Define standard enthalpy of formation (ΔHf°) and give an example.',
-      back: 'Standard enthalpy of formation: the enthalpy change when one mole of a compound is formed from its elements in their standard states under standard conditions (298 K, 100 kPa). ΔHf° of an element in its standard state is zero (e.g. ΔHf°[Na(s)] = 0, ΔHf°[O₂(g)] = 0). Example: ΔHf°[H₂O(l)] = −286 kJ/mol means forming 1 mol of liquid water from H₂(g) and O₂(g) releases 286 kJ.',
-      tags: ['enthalpy', 'definitions'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'energetics-002',
-      front: 'Define standard enthalpy of combustion (ΔHc°) and state its sign convention.',
-      back: 'Standard enthalpy of combustion: the enthalpy change when one mole of a substance is completely burned in oxygen under standard conditions (298 K, 100 kPa). Always exothermic: ΔHc° < 0 (negative). Example: ΔHc°[CH₄(g)] = −890 kJ/mol. Complete combustion means all C → CO₂, all H → H₂O(l). Incomplete combustion produces CO and/or C (soot) instead.',
-      tags: ['enthalpy', 'definitions'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'energetics-003',
-      front: 'Define standard enthalpy of neutralization (ΔHn°) and state its typical value.',
-      back: 'Standard enthalpy of neutralization: the enthalpy change when one mole of water is formed from the reaction between an acid and a base under standard conditions. For strong acid-strong base reactions, ΔHn° ≈ −57 kJ/mol (always similar because the net ionic equation is always H⁺(aq) + OH⁻(aq) → H₂O(l)). Weak acids/bases give less exothermic values because energy is absorbed to dissociate the weak acid/base.',
-      tags: ['enthalpy', 'definitions'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'energetics-004',
-      front:
-        'Explain the terms exothermic and endothermic in terms of enthalpy change and energy profile diagrams.',
-      back: 'Exothermic: ΔH < 0 (negative). Products have less enthalpy than reactants. Energy is released to the surroundings (temperature increases). Energy profile: products lower than reactants. Endothermic: ΔH > 0 (positive). Products have more enthalpy than reactants. Energy is absorbed from the surroundings (temperature decreases). Energy profile: products higher than reactants. Activation energy (Ea) is the minimum energy needed for the reaction to occur.',
-      tags: ['enthalpy', 'energy profiles'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'energetics-005',
-      front: "What is Hess's Law and how is it used to calculate enthalpy changes?",
-      back: "Hess's Law: the total enthalpy change for a reaction is independent of the route taken — it depends only on the initial and final states. Used by constructing alternative pathways using known enthalpy values. Two common methods: 1) Using ΔHf° values: ΔHrxn = ΣΔHf°(products) − ΣΔHf°(reactants). 2) Using ΔHc° values: ΔHrxn = ΣΔHc°(reactants) − ΣΔHc°(products).",
-      tags: ["Hess's Law"],
-      difficulty: 'easy',
-    },
-    {
-      id: 'energetics-006',
-      front:
-        'Describe the calorimetry experiment to determine the enthalpy of combustion of a fuel.',
-      back: 'A known mass of fuel is burned to heat a known volume of water. Measure the temperature change of the water. Use q = mcΔT to calculate heat absorbed by water (c = 4.18 J g⁻¹ K⁻¹ for water). Divide by moles of fuel burned to get ΔHc. Assumptions: all heat from combustion transfers to water (significant error in practice — heat lost to surroundings), no incomplete combustion, constant density of water (1 g/mL).',
-      tags: ['calorimetry'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energetics-007',
-      front:
-        'Describe how to perform calorimetry for a displacement or neutralization reaction in solution.',
-      back: 'Mix known volumes and concentrations of two solutions in an insulated (polystyrene) cup. Record the highest temperature reached. Calculate moles of reactants from c × V (in L). Heat evolved: q = mcΔT where m = total mass of solution (assume density 1.00 g/mL), c = 4.18 J g⁻¹ K⁻¹. ΔH = −q/n (negative because exothermic). Divide by moles of limiting reactant (or per mole of water formed for neutralization).',
-      tags: ['calorimetry'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energetics-008',
-      front:
-        'What are the sources of error in calorimetry experiments and how can they be reduced?',
-      back: 'Errors: 1) Heat loss to surroundings (reduce with insulation/lid). 2) Incomplete combustion of fuel. 3) Non-standard conditions (not exactly 298 K, 100 kPa). 4) Heat absorbed by the calorimeter itself (not just the water). 5) Evaporation of fuel before combustion. Improvements: use a bomb calorimeter (sealed, measures all heat), repeat and average, use a spirit burner with a wick cap between readings.',
-      tags: ['calorimetry', 'errors'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energetics-009',
-      front: 'Explain the difference between mean bond enthalpy and specific bond enthalpy.',
-      back: 'Mean bond enthalpy: average value of bond enthalpy for a given type of bond across a range of different compounds (e.g. mean C–H bond enthalpy = +413 kJ/mol, averaged over methane, ethane, etc.). Specific bond enthalpy: the exact enthalpy change to break a specific bond in a specific molecule (e.g. the first C–H bond broken in CH₄ is +435 kJ/mol). Mean values are used in calculations because specific values vary with the molecular environment.',
-      tags: ['bond enthalpies'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energetics-010',
-      front: 'How do you use bond enthalpies to calculate the enthalpy change of a reaction?',
-      back: 'ΔH = Σ(bond enthalpies of bonds broken in reactants) − Σ(bond enthalpies of bonds formed in products). Breaking bonds is endothermic (+), forming bonds is exothermic (−). The result gives an estimate of ΔH. Example: H₂(g) + Cl₂(g) → 2HCl(g). Bonds broken: H–H (436) + Cl–Cl (242) = 678. Bonds formed: 2 × H–Cl (2 × 431) = 862. ΔH = 678 − 862 = −184 kJ/mol.',
-      tags: ['bond enthalpies', 'calculations'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energetics-011',
-      front: "Why do bond enthalpy calculations differ from experimental (Hess's Law) values?",
-      back: "Bond enthalpy calculations use mean values averaged over different molecules, whereas the actual bond strength varies depending on the molecular environment. Additionally, bond enthalpy data are for gaseous state only — state changes (e.g. solid → gas) are not accounted for. The difference is typically 5–10 kJ/mol but can be larger for reactions involving liquids or solids. Hess's Law gives more accurate results.",
-      tags: ['bond enthalpies', "Hess's Law", 'errors'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energetics-012',
-      front: 'Define standard enthalpy of atomization (ΔHatom°) and give examples.',
-      back: 'Standard enthalpy of atomization: the enthalpy change when one mole of gaseous atoms is formed from an element in its standard state under standard conditions. Always endothermic (energy required to break bonds). Examples: ΔHatom°[Na(s)] = +108 kJ/mol (break metallic bonds), ΔHatom°[Cl₂(g)] = +122 kJ/mol (break Cl–Cl covalent bond), ΔHatom°[C(graphite)] = +717 kJ/mol. These values are used in Born-Haber cycles.',
-      tags: ['enthalpy', 'definitions', 'Born-Haber'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energetics-013',
-      front: 'Describe a Born-Haber cycle and list all the enthalpy changes involved.',
-      back: "A Born-Haber cycle is an application of Hess's Law that calculates the lattice enthalpy of an ionic compound from other measurable enthalpy changes. Steps (for NaCl): 1) ΔHatom of metal (Na(s) → Na(g)). 2) ΔHatom of non-metal (½Cl₂(g) → Cl(g)). 3) Ionization energy of metal (Na(g) → Na⁺(g) + e⁻). 4) Electron affinity of non-metal (Cl(g) + e⁻ → Cl⁻(g)). 5) Lattice enthalpy (Na⁺(g) + Cl⁻(g) → NaCl(s)). Apply Hess's Law around the cycle.",
-      tags: ['Born-Haber cycles'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'energetics-014',
-      front:
-        'Explain the first and second electron affinities and why the second electron affinity is endothermic.',
-      back: 'First electron affinity: enthalpy change when one electron is added to a gaseous atom. Usually exothermic (e.g. Cl(g) + e⁻ → Cl⁻(g), ΔH = −349 kJ/mol — attractive force between nucleus and added electron). Second electron affinity: adding an electron to a negative ion (e.g. O⁻(g) + e⁻ → O²⁻(g)). Endothermic (+798 kJ/mol) because the incoming electron is repelled by the already negative ion — energy is required to overcome this repulsion.',
-      tags: ['Born-Haber cycles', 'electron affinity'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'energetics-015',
-      front:
-        'Define entropy (S) and explain how it relates to disorder and the number of microstates.',
-      back: 'Entropy is a measure of the disorder or randomness of a system (units: J K⁻¹ mol⁻¹). More disordered = higher entropy. Factors that increase entropy: more particles in the system, higher temperature, more possible microstates (arrangements). Gases have much higher entropy than liquids, which have higher entropy than solids. Entropy is a state function: ΔS depends only on initial and final states. The third law of thermodynamics: S = 0 for a perfect crystal at 0 K.',
-      tags: ['entropy'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'energetics-016',
-      front: 'Predict the sign of the entropy change for physical and chemical processes.',
-      back: 'ΔS > 0 (entropy increases): melting, boiling, sublimation (solid → liquid → gas), dissolution of ionic solids (more particles), thermal decomposition (fewer moles of gas produced is not always; depends), reactions producing more gas molecules. ΔS < 0 (entropy decreases): freezing, condensation, deposition, reactions producing fewer gas molecules or a solid from gases. Example: N₂O₄(g) → 2NO₂(g) has ΔS > 0 (1 mol gas → 2 mol gas).',
-      tags: ['entropy', 'predictions'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'energetics-017',
-      front: 'State the Gibbs free energy equation and explain how ΔG determines feasibility.',
-      back: 'ΔG = ΔH − TΔS (at constant temperature and pressure). ΔG < 0: reaction is feasible (spontaneous). ΔG = 0: reaction is at equilibrium. ΔG > 0: reaction is non-spontaneous (not feasible). The equation shows that an endothermic reaction (ΔH > 0) can be spontaneous if TΔS is large enough (high temperature and ΔS > 0). An exothermic reaction (ΔH < 0) can be non-spontaneous if −TΔS > ΔH.',
-      tags: ['Gibbs free energy', 'feasibility'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'energetics-018',
-      front:
-        'Use Gibbs free energy to determine the temperature at which a reaction becomes feasible.',
-      back: 'A reaction becomes feasible when ΔG = 0, so T = ΔH/ΔS (using absolute values). For ΔH > 0 and ΔS > 0: the reaction is feasible above a certain temperature (T > ΔH/ΔS). For ΔH < 0 and ΔS < 0: the reaction is feasible below a certain temperature (T < ΔH/ΔS). Units must be consistent: convert ΔH to J/mol or ΔS to kJ K⁻¹ mol⁻¹. This assumes ΔH and ΔS do not change significantly with temperature.',
-      tags: ['Gibbs free energy', 'feasibility', 'calculations'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'energetics-019',
-      front: 'How does the standard Gibbs free energy relate to the equilibrium constant (K)?',
-      back: 'ΔG° = −RT ln K, where R = 8.31 J K⁻¹ mol⁻¹ and T is temperature in Kelvin. When ΔG° < 0: ln K > 0, so K > 1 (products favoured at equilibrium). When ΔG° > 0: ln K < 0, so K < 1 (reactants favoured at equilibrium). When ΔG° = 0: K = 1 (equilibrium lies halfway). This equation connects thermodynamics with equilibrium chemistry — a negative ΔG° means the reaction will proceed substantially to products.',
-      tags: ['Gibbs free energy', 'equilibrium'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'energetics-020',
-      front:
-        'Explain the thermodynamic reasons why some reactions are feasible but have a very slow rate.',
-      back: 'Thermodynamic feasibility (ΔG < 0) only tells us a reaction can occur, not how fast. The rate depends on kinetics, specifically the activation energy (Ea). Example: diamond → graphite (ΔG < 0, feasible) but the rate is immeasurably slow at room temperature due to extremely high Ea. Catalysis lowers Ea without changing ΔG or ΔH. Rusting of iron is thermodynamically spontaneous (ΔG < 0) but slow without water as a catalyst. Thermodynamics vs kinetics: "possible" vs "practical".',
-      tags: ['Gibbs free energy', 'kinetics', 'feasibility'],
-      difficulty: 'hard',
-    },
-  ]}
+  cards={flashcardData}
 />

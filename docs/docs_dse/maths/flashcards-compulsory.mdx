@@ -1,36 +1,121 @@
 ---
-title: "DSE Mathematics Flashcards: Compulsory Part"
+title: 'DSE Mathematics Flashcards: Compulsory Part'
 slug: flashcards-compulsory
-description: "DSE Mathematics flashcards on the compulsory syllabus covering indices, surds, quadratics, functions, coordinate geometry, trigonometry, and sequences and series for HKDSE revision."
+description:
+  'DSE Mathematics flashcards on the compulsory syllabus covering indices, surds, quadratics,
+  functions, coordinate geometry, trigonometry, and sequences and series for HKDSE revision.'
 tags:
   - DSE
   - Mathematics
   - Flashcards
 ---
+
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 ## DSE Mathematics -- Compulsory Part Flashcards
 
-20 interactive flashcards. Press Space to flip, rate 1-4.
----
-<FlashcardDeck deckId="dse-maths-compulsory" title="DSE Mathematics: Compulsory Part" description="Master indices, surds, quadratics, functions, coordinate geometry, trigonometry, and sequences for the HKDSE Mathematics exam." cards={[
-{id:"dse-maths-compulsory-001", front:"State the laws of indices.", back:"(1) a^m x a^n = a^(m+n). (2) a^m / a^n = a^(m-n). (3) (a^m)^n = a^(mn). (4) a^0 = 1 (a != 0). (5) a^(-m) = 1/a^m. (6) a^(1/n) = nth root of a. These laws apply when a > 0 for real number results, and are fundamental for simplifying algebraic expressions in the DSE syllabus.", tags:["indices"], difficulty:"easy"},
-{id:"dse-maths-compulsory-002", front:"Simplify sqrt(12) + sqrt(27) - sqrt(75).", back:"Express each surd in simplest form: sqrt(12) = 2sqrt(3), sqrt(27) = 3sqrt(3), sqrt(75) = 5sqrt(3). Then 2sqrt(3) + 3sqrt(3) - 5sqrt(3) = 0. Only like surds (same radicand) can be combined by adding or subtracting coefficients. Always simplify each surd first by extracting the largest perfect square factor.", tags:["surds"], difficulty:"easy"},
-{id:"dse-maths-compulsory-003", front:"State the quadratic formula and explain when it is used.", back:"For ax^2 + bx + c = 0 (a != 0), the quadratic formula is x = (-b +/- sqrt(b^2 - 4ac)) / (2a). It is used when a quadratic equation cannot be easily factorised, or when exact solutions (including surds) are required. It always works for any quadratic equation and provides both roots directly.", tags:["quadratics"], difficulty:"easy"},
-{id:"dse-maths-compulsory-004", front:"State the discriminant and explain how it determines the nature of roots.", back:"The discriminant is Delta = b^2 - 4ac. (1) Delta > 0: two distinct real roots. (2) Delta = 0: one repeated real root (two equal roots). (3) Delta < 0: no real roots (two complex conjugate roots). The discriminant tells you about the nature of roots without solving the equation. In DSE, questions often ask you to find values of k for which the equation has equal roots (Delta = 0).", tags:["discriminant"], difficulty:"medium"},
-{id:"dse-maths-compulsory-005", front:"Explain how to complete the square for the expression x^2 + bx.", back:"To complete the square of x^2 + bx: take half of b, square it, then add and subtract. x^2 + bx = (x + b/2)^2 - (b/2)^2 = (x + b/2)^2 - b^2/4. This technique is used to find the vertex of a parabola, solve quadratic equations, and determine maximum or minimum values. Example: x^2 + 6x = (x + 3)^2 - 9.", tags:["completing-square"], difficulty:"medium"},
-{id:"dse-maths-compulsory-006", front:"State the factor theorem and give an example of its use.", back:"Factor theorem: if f(a) = 0, then (x - a) is a factor of f(x). Example: to factorise x^3 - 6x^2 + 11x - 6, try f(1) = 1 - 6 + 11 - 6 = 0, so (x - 1) is a factor. Divide to get (x - 1)(x^2 - 5x + 6) = (x - 1)(x - 2)(x - 3). The factor theorem is useful for factorising cubic and higher-degree polynomials.", tags:["factor-theorem"], difficulty:"medium"},
-{id:"dse-maths-compulsory-007", front:"State the remainder theorem and give an example of its use.", back:"Remainder theorem: when f(x) is divided by (x - a), the remainder is f(a). Example: find the remainder when f(x) = 2x^3 - 3x + 5 is divided by (x - 2). Remainder = f(2) = 2(8) - 3(2) + 5 = 16 - 6 + 5 = 15. This is much faster than performing polynomial long division when only the remainder is needed.", tags:["remainder-theorem"], difficulty:"medium"},
-{id:"dse-maths-compulsory-008", front:"Define the domain of a function.", back:"The domain of a function f is the set of all possible input values (x-values) for which the function is defined. For real-valued functions: (1) Denominators must not be zero: f(x) = 1/(x-2) has domain x != 2. (2) Square roots require non-negative values: f(x) = sqrt(x-3) has domain x >= 3. (3) Logarithms require positive arguments: f(x) = ln(x) has domain x > 0.", tags:["functions"], difficulty:"easy"},
-{id:"dse-maths-compulsory-009", front:"Define the range of a function.", back:"The range of a function f is the set of all possible output values (y-values) that the function can produce. Finding the range depends on the type of function. For quadratic functions, find the vertex to determine the maximum or minimum. For f(x) = x^2 + 2, the range is y >= 2 (since x^2 >= 0). For rational functions, consider horizontal asymptotes and turning points.", tags:["functions"], difficulty:"medium"},
-{id:"dse-maths-compulsory-010", front:"Explain how to find a composite function gf(x).", back:"gf(x) = g(f(x)): substitute the output of f into g. Steps: (1) Write down f(x). (2) Replace every x in g(x) with the expression f(x). Example: f(x) = 2x + 1, g(x) = x^2. Then gf(x) = g(2x + 1) = (2x + 1)^2 = 4x^2 + 4x + 1. Important: gf(x) is generally not equal to fg(x). Check whether the domain changes after composition.", tags:["composite-function"], difficulty:"medium"},
-{id:"dse-maths-compulsory-011", front:"Explain how to find the inverse function f^(-1)(x).", back:"To find the inverse: (1) Replace f(x) with y. (2) Swap x and y. (3) Solve for y in terms of x. (4) Replace y with f^(-1)(x). Example: f(x) = 3x + 2. Step 1: y = 3x + 2. Step 2: x = 3y + 2. Step 3: x - 2 = 3y, y = (x - 2)/3. Step 4: f^(-1)(x) = (x - 2)/3. The inverse reflects the graph across y = x.", tags:["inverse-function"], difficulty:"medium"},
-{id:"dse-maths-compulsory-012", front:"State the distance formula between two points A(x1, y1) and B(x2, y2).", back:"Distance d = sqrt((x2 - x1)^2 + (y2 - y1)^2). This is derived from Pythagoras' theorem: the horizontal difference and vertical difference form the two legs of a right triangle, and the distance between the points is the hypotenuse. Example: distance between (1, 2) and (4, 6) = sqrt((4-1)^2 + (6-2)^2) = sqrt(9 + 16) = 5.", tags:["coordinate-geometry"], difficulty:"medium"},
-{id:"dse-maths-compulsory-013", front:"State the midpoint formula.", back:"The midpoint M of the line segment joining A(x1, y1) and B(x2, y2) is M = ((x1 + x2)/2, (y1 + y2)/2). Example: midpoint of (2, 4) and (6, 10) is ((2+6)/2, (4+10)/2) = (4, 7). The midpoint is the average of the x-coordinates and the average of the y-coordinates.", tags:["coordinate-geometry"], difficulty:"easy"},
-{id:"dse-maths-compulsory-014", front:"State the formula for the gradient of a line joining two points.", back:"The gradient m of the line joining (x1, y1) and (x2, y2) is m = (y2 - y1) / (x2 - x1). A positive gradient means the line slopes upward from left to right. A negative gradient means it slopes downward. A zero gradient means the line is horizontal (y = constant). The gradient is undefined for a vertical line (x = constant).", tags:["coordinate-geometry"], difficulty:"medium"},
-{id:"dse-maths-compulsory-015", front:"State the point-gradient form of the equation of a straight line.", back:"y - y1 = m(x - x1), where m is the gradient and (x1, y1) is a point on the line. This is the most versatile form for finding the equation of a line when given a point and the gradient. Example: line through (3, -1) with gradient 2: y - (-1) = 2(x - 3), so y + 1 = 2x - 6, giving y = 2x - 7.", tags:["coordinate-geometry"], difficulty:"medium"},
-{id:"dse-maths-compulsory-016", front:"State the relationship between the gradients of perpendicular lines.", back:"If two lines are perpendicular, the product of their gradients is -1: m1 * m2 = -1. Equivalently, m2 = -1/m1 (the negative reciprocal). Example: if a line has gradient 3, any line perpendicular to it has gradient -1/3. Parallel lines have equal gradients: m1 = m2. A horizontal line (m = 0) is perpendicular to a vertical line (undefined gradient).", tags:["coordinate-geometry"], difficulty:"medium"},
-{id:"dse-maths-compulsory-017", front:"State the standard equation of a circle and explain how to find its centre and radius.", back:"Standard form: (x - a)^2 + (y - b)^2 = r^2, where (a, b) is the centre and r is the radius. General form: x^2 + y^2 + Dx + Ey + F = 0. To convert general to standard, complete the square for both x and y terms. Example: x^2 + y^2 - 4x + 6y - 3 = 0 becomes (x-2)^2 + (y+3)^2 = 16, so centre (2, -3), radius 4.", tags:["coordinate-geometry"], difficulty:"hard"},
-{id:"dse-maths-compulsory-018", front:"State SOHCAHTOA and the definitions of sin, cos, and tan.", back:"SOHCAHTOA: Sine = Opposite/Hypotenuse. Cosine = Adjacent/Hypotenuse. Tangent = Opposite/Adjacent. These ratios apply in a right-angled triangle. Key relationships: sin^2(x) + cos^2(x) = 1, tan(x) = sin(x)/cos(x). Memorise common values: sin(30) = 1/2, sin(45) = 1/sqrt(2), sin(60) = sqrt(3)/2.", tags:["trigonometry"], difficulty:"easy"},
-{id:"dse-maths-compulsory-019", front:"State the sine rule and the cosine rule.", back:"Sine rule (used for AAS, ASA, SSA): a/sin(A) = b/sin(B) = c/sin(C). Cosine rule (used for SAS, SSS): a^2 = b^2 + c^2 - 2bc*cos(A). Rearranged: cos(A) = (b^2 + c^2 - a^2) / (2bc). The sine rule is simpler but can give two solutions (ambiguous case) for obtuse angles. The cosine rule is unambiguous and is used when the sine rule cannot be applied directly.", tags:["trigonometry"], difficulty:"hard"},
-{id:"dse-maths-compulsory-020", front:"State the formulae for arithmetic and geometric sequences and series.", back:"Arithmetic: nth term a_n = a + (n-1)d. Sum S_n = (n/2)(2a + (n-1)d) = (n/2)(a + a_n). Geometric: nth term a_n = ar^(n-1). Sum S_n = a(1-r^n)/(1-r) for r != 1. Sum to infinity S_inf = a/(1-r) for |r| < 1. Sigma notation: sum from r=1 to n of f(r) is written as the sum symbol with limits 1 and n.", tags:["sequences-series"], difficulty:"hard"}
-]} />
+## 20 interactive flashcards. Press Space to flip, rate 1-4.
+
+const flashcardData = [ {id:"dse-maths-compulsory-001", front:"State the laws of indices.",
+back:"(1) a^m x a^n = a^(m+n). (2) a^m / a^n = a^(m-n). (3) (a^m)^n = a^(mn). (4) a^0 = 1 (a != 0).
+(5) a^(-m) = 1/a^m. (6) a^(1/n) = nth root of a. These laws apply when a > 0 for real number
+results, and are fundamental for simplifying algebraic expressions in the DSE syllabus.",
+tags:["indices"], difficulty:"easy"}, {id:"dse-maths-compulsory-002", front:"Simplify sqrt(12) +
+sqrt(27) - sqrt(75).", back:"Express each surd in simplest form: sqrt(12) = 2sqrt(3), sqrt(27) =
+3sqrt(3), sqrt(75) = 5sqrt(3). Then 2sqrt(3) + 3sqrt(3) - 5sqrt(3) = 0. Only like surds (same
+radicand) can be combined by adding or subtracting coefficients. Always simplify each surd first by
+extracting the largest perfect square factor.", tags:["surds"], difficulty:"easy"},
+{id:"dse-maths-compulsory-003", front:"State the quadratic formula and explain when it is used.",
+back:"For ax^2 + bx + c = 0 (a != 0), the quadratic formula is x = (-b +/- sqrt(b^2 - 4ac)) / (2a).
+It is used when a quadratic equation cannot be easily factorised, or when exact solutions (including
+surds) are required. It always works for any quadratic equation and provides both roots directly.",
+tags:["quadratics"], difficulty:"easy"}, {id:"dse-maths-compulsory-004", front:"State the
+discriminant and explain how it determines the nature of roots.", back:"The discriminant is Delta =
+b^2 - 4ac. (1) Delta > 0: two distinct real roots. (2) Delta = 0: one repeated real root (two equal
+roots). (3) Delta < 0: no real roots (two complex conjugate roots). The discriminant tells you about
+the nature of roots without solving the equation. In DSE, questions often ask you to find values of
+k for which the equation has equal roots (Delta = 0).", tags:["discriminant"], difficulty:"medium"},
+{id:"dse-maths-compulsory-005", front:"Explain how to complete the square for the expression x^2 +
+bx.", back:"To complete the square of x^2 + bx: take half of b, square it, then add and subtract.
+x^2 + bx = (x + b/2)^2 - (b/2)^2 = (x + b/2)^2 - b^2/4. This technique is used to find the vertex of
+a parabola, solve quadratic equations, and determine maximum or minimum values. Example: x^2 + 6x =
+(x + 3)^2 - 9.", tags:["completing-square"], difficulty:"medium"}, {id:"dse-maths-compulsory-006",
+front:"State the factor theorem and give an example of its use.", back:"Factor theorem: if f(a) = 0,
+then (x - a) is a factor of f(x). Example: to factorise x^3 - 6x^2 + 11x - 6, try f(1) = 1 - 6 +
+11 - 6 = 0, so (x - 1) is a factor. Divide to get (x - 1)(x^2 - 5x + 6) = (x - 1)(x - 2)(x - 3). The
+factor theorem is useful for factorising cubic and higher-degree polynomials.",
+tags:["factor-theorem"], difficulty:"medium"}, {id:"dse-maths-compulsory-007", front:"State the
+remainder theorem and give an example of its use.", back:"Remainder theorem: when f(x) is divided by
+(x - a), the remainder is f(a). Example: find the remainder when f(x) = 2x^3 - 3x + 5 is divided by
+(x - 2). Remainder = f(2) = 2(8) - 3(2) + 5 = 16 - 6 + 5 = 15. This is much faster than performing
+polynomial long division when only the remainder is needed.", tags:["remainder-theorem"],
+difficulty:"medium"}, {id:"dse-maths-compulsory-008", front:"Define the domain of a function.",
+back:"The domain of a function f is the set of all possible input values (x-values) for which the
+function is defined. For real-valued functions: (1) Denominators must not be zero: f(x) = 1/(x-2)
+has domain x != 2. (2) Square roots require non-negative values: f(x) = sqrt(x-3) has domain x >= 3.
+(3) Logarithms require positive arguments: f(x) = ln(x) has domain x > 0.", tags:["functions"],
+difficulty:"easy"}, {id:"dse-maths-compulsory-009", front:"Define the range of a function.",
+back:"The range of a function f is the set of all possible output values (y-values) that the
+function can produce. Finding the range depends on the type of function. For quadratic functions,
+find the vertex to determine the maximum or minimum. For f(x) = x^2 + 2, the range is y >= 2 (since
+x^2 >= 0). For rational functions, consider horizontal asymptotes and turning points.",
+tags:["functions"], difficulty:"medium"}, {id:"dse-maths-compulsory-010", front:"Explain how to find
+a composite function gf(x).", back:"gf(x) = g(f(x)): substitute the output of f into g. Steps: (1)
+Write down f(x). (2) Replace every x in g(x) with the expression f(x). Example: f(x) = 2x + 1, g(x)
+= x^2. Then gf(x) = g(2x + 1) = (2x + 1)^2 = 4x^2 + 4x + 1. Important: gf(x) is generally not equal
+to fg(x). Check whether the domain changes after composition.", tags:["composite-function"],
+difficulty:"medium"}, {id:"dse-maths-compulsory-011", front:"Explain how to find the inverse
+function f^(-1)(x).", back:"To find the inverse: (1) Replace f(x) with y. (2) Swap x and y. (3)
+Solve for y in terms of x. (4) Replace y with f^(-1)(x). Example: f(x) = 3x + 2. Step 1: y = 3x + 2.
+Step 2: x = 3y + 2. Step 3: x - 2 = 3y, y = (x - 2)/3. Step 4: f^(-1)(x) = (x - 2)/3. The inverse
+reflects the graph across y = x.", tags:["inverse-function"], difficulty:"medium"},
+{id:"dse-maths-compulsory-012", front:"State the distance formula between two points A(x1, y1) and
+B(x2, y2).", back:"Distance d = sqrt((x2 - x1)^2 + (y2 - y1)^2). This is derived from Pythagoras'
+theorem: the horizontal difference and vertical difference form the two legs of a right triangle,
+and the distance between the points is the hypotenuse. Example: distance between (1, 2) and (4, 6) =
+sqrt((4-1)^2 + (6-2)^2) = sqrt(9 + 16) = 5.", tags:["coordinate-geometry"], difficulty:"medium"},
+{id:"dse-maths-compulsory-013", front:"State the midpoint formula.", back:"The midpoint M of the
+line segment joining A(x1, y1) and B(x2, y2) is M = ((x1 + x2)/2, (y1 + y2)/2). Example: midpoint of
+(2, 4) and (6, 10) is ((2+6)/2, (4+10)/2) = (4, 7). The midpoint is the average of the x-coordinates
+and the average of the y-coordinates.", tags:["coordinate-geometry"], difficulty:"easy"},
+{id:"dse-maths-compulsory-014", front:"State the formula for the gradient of a line joining two
+points.", back:"The gradient m of the line joining (x1, y1) and (x2, y2) is m = (y2 - y1) / (x2 -
+x1). A positive gradient means the line slopes upward from left to right. A negative gradient means
+it slopes downward. A zero gradient means the line is horizontal (y = constant). The gradient is
+undefined for a vertical line (x = constant).", tags:["coordinate-geometry"], difficulty:"medium"},
+{id:"dse-maths-compulsory-015", front:"State the point-gradient form of the equation of a straight
+line.", back:"y - y1 = m(x - x1), where m is the gradient and (x1, y1) is a point on the line. This
+is the most versatile form for finding the equation of a line when given a point and the gradient.
+Example: line through (3, -1) with gradient 2: y - (-1) = 2(x - 3), so y + 1 = 2x - 6, giving y =
+2x - 7.", tags:["coordinate-geometry"], difficulty:"medium"}, {id:"dse-maths-compulsory-016",
+front:"State the relationship between the gradients of perpendicular lines.", back:"If two lines are
+perpendicular, the product of their gradients is -1: m1 * m2 = -1. Equivalently, m2 = -1/m1 (the
+negative reciprocal). Example: if a line has gradient 3, any line perpendicular to it has gradient
+-1/3. Parallel lines have equal gradients: m1 = m2. A horizontal line (m = 0) is perpendicular to a
+vertical line (undefined gradient).", tags:["coordinate-geometry"], difficulty:"medium"},
+{id:"dse-maths-compulsory-017", front:"State the standard equation of a circle and explain how to
+find its centre and radius.", back:"Standard form: (x - a)^2 + (y - b)^2 = r^2, where (a, b) is the
+centre and r is the radius. General form: x^2 + y^2 + Dx + Ey + F = 0. To convert general to
+standard, complete the square for both x and y terms. Example: x^2 + y^2 - 4x + 6y - 3 = 0 becomes
+(x-2)^2 + (y+3)^2 = 16, so centre (2, -3), radius 4.", tags:["coordinate-geometry"],
+difficulty:"hard"}, {id:"dse-maths-compulsory-018", front:"State SOHCAHTOA and the definitions of
+sin, cos, and tan.", back:"SOHCAHTOA: Sine = Opposite/Hypotenuse. Cosine = Adjacent/Hypotenuse.
+Tangent = Opposite/Adjacent. These ratios apply in a right-angled triangle. Key relationships:
+sin^2(x) + cos^2(x) = 1, tan(x) = sin(x)/cos(x). Memorise common values: sin(30) = 1/2, sin(45) =
+1/sqrt(2), sin(60) = sqrt(3)/2.", tags:["trigonometry"], difficulty:"easy"},
+{id:"dse-maths-compulsory-019", front:"State the sine rule and the cosine rule.", back:"Sine rule
+(used for AAS, ASA, SSA): a/sin(A) = b/sin(B) = c/sin(C). Cosine rule (used for SAS, SSS): a^2 =
+b^2 + c^2 - 2bc*cos(A). Rearranged: cos(A) = (b^2 + c^2 - a^2) / (2bc). The sine rule is simpler but
+can give two solutions (ambiguous case) for obtuse angles. The cosine rule is unambiguous and is
+used when the sine rule cannot be applied directly.", tags:["trigonometry"], difficulty:"hard"},
+{id:"dse-maths-compulsory-020", front:"State the formulae for arithmetic and geometric sequences and
+series.", back:"Arithmetic: nth term a_n = a + (n-1)d. Sum S_n = (n/2)(2a + (n-1)d) = (n/2)(a +
+a_n). Geometric: nth term a_n = ar^(n-1). Sum S_n = a(1-r^n)/(1-r) for r != 1. Sum to infinity S_inf
+= a/(1-r) for |r| < 1. Sigma notation: sum from r=1 to n of f(r) is written as the sum symbol with
+limits 1 and n.", tags:["sequences-series"], difficulty:"hard"} ];
+
+<FlashcardDeck
+  deckId="dse-maths-compulsory"
+  title="DSE Mathematics: Compulsory Part"
+  description="Master indices, surds, quadratics, functions, coordinate geometry, trigonometry, and sequences for the HKDSE Mathematics exam."
+  cards={flashcardData}
+/>

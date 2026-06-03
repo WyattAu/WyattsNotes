@@ -1,7 +1,9 @@
 ---
-title: "DSE Biology Practice: Cell Biology"
+title: 'DSE Biology Practice: Cell Biology'
 slug: practice-cell-biology
-description: "DSE Biology multiple choice practice on cell biology covering prokaryotic and eukaryotic cells, organelles, membrane transport, and cell division."
+description:
+  'DSE Biology multiple choice practice on cell biology covering prokaryotic and eukaryotic cells,
+  organelles, membrane transport, and cell division.'
 tags:
   - DSE
   - Biology
@@ -11,131 +13,100 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ## DSE Biology Practice: Cell Biology
 
-18 MCQ practice problems on cell biology. Select an answer, submit, and review the explanation. Questions follow the DSE examination style and cover prokaryotic vs. eukaryotic cells, organelles, membrane structure and transport, and cell division.
+18 MCQ practice problems on cell biology. Select an answer, submit, and review the explanation.
+Questions follow the DSE examination style and cover prokaryotic vs. eukaryotic cells, organelles,
+membrane structure and transport, and cell division.
 
 ---
 
 ### Prokaryotic vs. Eukaryotic Cells
 
-<PracticeProblem
-  questions={[
-    {
-      question: "Which of the following is a feature of prokaryotic cells but NOT eukaryotic cells?",
-      options: [
-        "A) Presence of a cell wall",
-        "B) Absence of a membrane-bound nucleus",
-        "C) Presence of ribosomes",
-        "D) Presence of DNA"
-      ],
-      correct: 1,
-      explanation: "Prokaryotic cells lack a true membrane-bound nucleus; their DNA is a circular chromosome in the nucleoid region. Both prokaryotic and eukaryotic cells can have cell walls (bacteria have peptidoglycan; plants have cellulose), both have ribosomes (though different sizes: 70S vs 80S), and both contain DNA."
-    },
-    {
-      question: "A student observes a cell under a light microscope and notes that it has no visible nucleus, is approximately 2 micrometres in diameter, and has a cell wall. The cell is most likely:",
-      options: ["A) An animal cell", "B) A plant cell", "C) A bacterium", "D) A virus"],
-      correct: 2,
-      explanation: "The small size (0.5-5 micrometres), absence of a visible nucleus, and presence of a cell wall are characteristic of a prokaryotic cell (bacterium). Animal cells have no cell wall. Plant cells are much larger (10-100 micrometres) and have a visible nucleus. Viruses are not cells and are too small to see with a light microscope."
-    },
-    {
-      question: "Which type of ribosome is found in the cytoplasm of a eukaryotic cell?",
-      options: ["A) 70S", "B) 60S", "C) 80S", "D) 50S"],
-      correct: 2,
-      explanation: "Eukaryotic cytoplasmic ribosomes are 80S (composed of 60S and 40S subunits). 70S ribosomes (30S + 50S) are found in prokaryotes and in eukaryotic organelles of prokaryotic origin (mitochondria and chloroplasts)."
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: "Which of the following is a feature of prokaryotic cells
+but NOT eukaryotic cells?", options: [ "A) Presence of a cell wall", "B) Absence of a membrane-bound
+nucleus", "C) Presence of ribosomes", "D) Presence of DNA" ], correct: 1, explanation: "Prokaryotic
+cells lack a true membrane-bound nucleus; their DNA is a circular chromosome in the nucleoid region.
+Both prokaryotic and eukaryotic cells can have cell walls (bacteria have peptidoglycan; plants have
+cellulose), both have ribosomes (though different sizes: 70S vs 80S), and both contain DNA." }, {
+question: "A student observes a cell under a light microscope and notes that it has no visible
+nucleus, is approximately 2 micrometres in diameter, and has a cell wall. The cell is most likely:",
+options: ["A) An animal cell", "B) A plant cell", "C) A bacterium", "D) A virus"], correct: 2,
+explanation: "The small size (0.5-5 micrometres), absence of a visible nucleus, and presence of a
+cell wall are characteristic of a prokaryotic cell (bacterium). Animal cells have no cell wall.
+Plant cells are much larger (10-100 micrometres) and have a visible nucleus. Viruses are not cells
+and are too small to see with a light microscope." }, { question: "Which type of ribosome is found
+in the cytoplasm of a eukaryotic cell?", options: ["A) 70S", "B) 60S", "C) 80S", "D) 50S"], correct:
+2, explanation: "Eukaryotic cytoplasmic ribosomes are 80S (composed of 60S and 40S subunits). 70S
+ribosomes (30S + 50S) are found in prokaryotes and in eukaryotic organelles of prokaryotic origin
+(mitochondria and chloroplasts)." }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Cell Organelles
 
-<PracticeProblem
-  questions={[
-    {
-      question: "Which organelle is the primary site of aerobic respiration?",
-      options: ["A) Golgi apparatus", "B) Smooth endoplasmic reticulum", "C) Mitochondrion", "D) Lysosome"],
-      correct: 2,
-      explanation: "Mitochondria are the site of aerobic respiration, producing ATP through the Krebs cycle (in the matrix) and oxidative phosphorylation (on the inner membrane/cristae). They have a double membrane with the inner membrane folded into cristae to increase surface area."
-    },
-    {
-      question: "Which organelle is responsible for modifying, packaging, and sorting proteins for secretion?",
-      options: ["A) Rough endoplasmic reticulum", "B) Golgi apparatus", "C) Lysosome", "D) Smooth endoplasmic reticulum"],
-      correct: 1,
-      explanation: "The Golgi apparatus receives proteins from the rough ER in vesicles, modifies them (e.g., adding carbohydrates to form glycoproteins), packages them into secretory vesicles, and sorts them for transport to their final destinations (plasma membrane, lysosomes, or secretion outside the cell)."
-    },
-    {
-      question: "A cell containing many ribosomes on its endoplasmic reticulum and a large amount of rough ER is specialised for:",
-      options: ["A) Lipid synthesis", "B) Detoxification", "C) Protein synthesis", "D) Energy production"],
-      correct: 2,
-      explanation: "The rough endoplasmic reticulum is studded with ribosomes and is the site of protein synthesis for secretion and membrane proteins. Cells specialised for protein secretion (e.g., pancreatic acinar cells, plasma cells) have extensive rough ER. Smooth ER handles lipid synthesis and detoxification."
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: "Which organelle is the primary site of aerobic
+respiration?", options: ["A) Golgi apparatus", "B) Smooth endoplasmic reticulum", "C)
+Mitochondrion", "D) Lysosome"], correct: 2, explanation: "Mitochondria are the site of aerobic
+respiration, producing ATP through the Krebs cycle (in the matrix) and oxidative phosphorylation (on
+the inner membrane/cristae). They have a double membrane with the inner membrane folded into cristae
+to increase surface area." }, { question: "Which organelle is responsible for modifying, packaging,
+and sorting proteins for secretion?", options: ["A) Rough endoplasmic reticulum", "B) Golgi
+apparatus", "C) Lysosome", "D) Smooth endoplasmic reticulum"], correct: 1, explanation: "The Golgi
+apparatus receives proteins from the rough ER in vesicles, modifies them (e.g., adding carbohydrates
+to form glycoproteins), packages them into secretory vesicles, and sorts them for transport to their
+final destinations (plasma membrane, lysosomes, or secretion outside the cell)." }, { question: "A
+cell containing many ribosomes on its endoplasmic reticulum and a large amount of rough ER is
+specialised for:", options: ["A) Lipid synthesis", "B) Detoxification", "C) Protein synthesis", "D)
+Energy production"], correct: 2, explanation: "The rough endoplasmic reticulum is studded with
+ribosomes and is the site of protein synthesis for secretion and membrane proteins. Cells
+specialised for protein secretion (e.g., pancreatic acinar cells, plasma cells) have extensive rough
+ER. Smooth ER handles lipid synthesis and detoxification." }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Cell Membrane and Transport
 
-<PracticeProblem
-  questions={[
-    {
-      question: "According to the fluid mosaic model, the cell membrane is composed mainly of:",
-      options: [
-        "A) A rigid layer of proteins with embedded lipids",
-        "B) A phospholipid bilayer with embedded proteins",
-        "C) A carbohydrate layer with scattered nucleic acids",
-        "D) A single layer of phospholipids with cholesterol on the outside"
-      ],
-      correct: 1,
-      explanation: "The fluid mosaic model describes the membrane as a phospholipid bilayer with proteins embedded in it (integral/transmembrane and peripheral). The phospholipids can move laterally (fluid), and the proteins are scattered throughout (mosaic). Cholesterol is also present between phospholipids, regulating membrane fluidity."
-    },
-    {
-      question: "Glucose molecules move from a region of high concentration to a region of low concentration across a cell membrane without any energy input. This process is called:",
-      options: ["A) Active transport", "B) Osmosis", "C) Facilitated diffusion", "D) Simple diffusion"],
-      correct: 3,
-      explanation: "Simple diffusion is the passive movement of molecules from high to low concentration directly through the phospholipid bilayer, requiring no energy and no carrier protein. Small non-polar molecules (O2, CO2) diffuse this way. Osmosis specifically refers to the diffusion of water molecules. Facilitated diffusion also moves molecules passively but requires a carrier protein."
-    },
-    {
-      question: "Root hair cells absorb mineral ions from soil even when the concentration of ions in the soil is lower than inside the cell. This process requires:",
-      options: ["A) Osmosis", "B) Simple diffusion", "C) Active transport", "D) Exocytosis"],
-      correct: 2,
-      explanation: "Active transport moves molecules against the concentration gradient (from low to high concentration) and requires both carrier proteins and energy from ATP hydrolysis. Root hair cells actively absorb mineral ions (e.g., K+, NO3-) from soil against the gradient to maintain cellular ion concentrations."
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: "According to the fluid mosaic model, the cell membrane is
+composed mainly of:", options: [ "A) A rigid layer of proteins with embedded lipids", "B) A
+phospholipid bilayer with embedded proteins", "C) A carbohydrate layer with scattered nucleic
+acids", "D) A single layer of phospholipids with cholesterol on the outside" ], correct: 1,
+explanation: "The fluid mosaic model describes the membrane as a phospholipid bilayer with proteins
+embedded in it (integral/transmembrane and peripheral). The phospholipids can move laterally
+(fluid), and the proteins are scattered throughout (mosaic). Cholesterol is also present between
+phospholipids, regulating membrane fluidity." }, { question: "Glucose molecules move from a region
+of high concentration to a region of low concentration across a cell membrane without any energy
+input. This process is called:", options: ["A) Active transport", "B) Osmosis", "C) Facilitated
+diffusion", "D) Simple diffusion"], correct: 3, explanation: "Simple diffusion is the passive
+movement of molecules from high to low concentration directly through the phospholipid bilayer,
+requiring no energy and no carrier protein. Small non-polar molecules (O2, CO2) diffuse this way.
+Osmosis specifically refers to the diffusion of water molecules. Facilitated diffusion also moves
+molecules passively but requires a carrier protein." }, { question: "Root hair cells absorb mineral
+ions from soil even when the concentration of ions in the soil is lower than inside the cell. This
+process requires:", options: ["A) Osmosis", "B) Simple diffusion", "C) Active transport", "D)
+Exocytosis"], correct: 2, explanation: "Active transport moves molecules against the concentration
+gradient (from low to high concentration) and requires both carrier proteins and energy from ATP
+hydrolysis. Root hair cells actively absorb mineral ions (e.g., K+, NO3-) from soil against the
+gradient to maintain cellular ion concentrations." }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Cell Division
 
-<PracticeProblem
-  questions={[
-    {
-      question: "Mitosis produces daughter cells that are:",
-      options: [
-        "A) Genetically identical diploid cells",
-        "B) Genetically different haploid cells",
-        "C) Genetically identical haploid cells",
-        "D) Genetically different diploid cells"
-      ],
-      correct: 0,
-      explanation: "Mitosis produces two genetically identical diploid (2n) daughter cells from one diploid parent cell. It is used for growth, repair, and asexual reproduction. Meiosis produces four genetically different haploid (n) daughter cells for sexual reproduction."
-    },
-    {
-      question: "During meiosis, crossing over occurs during which phase?",
-      options: [
-        "A) Prophase I",
-        "B) Metaphase I",
-        "C) Anaphase I",
-        "D) Prophase II"
-      ],
-      correct: 0,
-      explanation: "Crossing over (recombination) occurs during prophase I of meiosis, when homologous chromosomes pair up as bivalents. Non-sister chromatids exchange segments of DNA, creating new combinations of alleles on the same chromosome. This is a key source of genetic variation."
-    },
-    {
-      question: "Which of the following is NOT a source of genetic variation in meiosis?",
-      options: [
-        "A) Crossing over",
-        "B) Independent assortment of homologous chromosomes",
-        "C) Random fertilisation",
-        "D) DNA replication"
-      ],
-      correct: 3,
-      explanation: "DNA replication produces identical copies of DNA and does not introduce variation. The three sources of variation in meiosis are: crossing over (prophase I), independent assortment (metaphase I -- random alignment of homologous chromosome pairs at the equator), and random fertilisation (any sperm can fertilise any egg)."
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: "Mitosis produces daughter cells that are:", options: [ "A)
+Genetically identical diploid cells", "B) Genetically different haploid cells", "C) Genetically
+identical haploid cells", "D) Genetically different diploid cells" ], correct: 0, explanation:
+"Mitosis produces two genetically identical diploid (2n) daughter cells from one diploid parent
+cell. It is used for growth, repair, and asexual reproduction. Meiosis produces four genetically
+different haploid (n) daughter cells for sexual reproduction." }, { question: "During meiosis,
+crossing over occurs during which phase?", options: [ "A) Prophase I", "B) Metaphase I", "C)
+Anaphase I", "D) Prophase II" ], correct: 0, explanation: "Crossing over (recombination) occurs
+during prophase I of meiosis, when homologous chromosomes pair up as bivalents. Non-sister
+chromatids exchange segments of DNA, creating new combinations of alleles on the same chromosome.
+This is a key source of genetic variation." }, { question: "Which of the following is NOT a source
+of genetic variation in meiosis?", options: [ "A) Crossing over", "B) Independent assortment of
+homologous chromosomes", "C) Random fertilisation", "D) DNA replication" ], correct: 3, explanation:
+"DNA replication produces identical copies of DNA and does not introduce variation. The three
+sources of variation in meiosis are: crossing over (prophase I), independent assortment (metaphase I
+-- random alignment of homologous chromosome pairs at the equator), and random fertilisation (any
+sperm can fertilise any egg)." }, ];
+
+<PracticeProblem questions={practiceQuestions} />

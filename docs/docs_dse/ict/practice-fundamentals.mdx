@@ -1,219 +1,152 @@
 ---
-title: "DSE ICT: Fundamentals Practice"
+title: 'DSE ICT: Fundamentals Practice'
 slug: practice-fundamentals
-description: "DSE ICT MCQ practice on fundamentals covering data representation, computer architecture, programming concepts, and networking topologies and protocols for HKDSE exam preparation."
+description:
+  'DSE ICT MCQ practice on fundamentals covering data representation, computer architecture,
+  programming concepts, and networking topologies and protocols for HKDSE exam preparation.'
 tags:
   - DSE
   - ICT
   - Practice
 ---
+
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 ## DSE ICT -- Fundamentals Practice
 
-16 MCQ practice problems on ICT fundamentals. Select an answer, submit, and review the explanation. Questions follow the DSE examination style and cover data representation, computer systems, programming, and networking.
+16 MCQ practice problems on ICT fundamentals. Select an answer, submit, and review the explanation.
+Questions follow the DSE examination style and cover data representation, computer systems,
+programming, and networking.
 
 ---
 
 ### Data Representation
 
-<PracticeProblem
-  questions={[
-    {
-      question: "Convert the binary number 1101011 to decimal.",
-      options: [
-        "A) 107",
-        "B) 109",
-        "C) 105",
-        "D) 111"
-      ],
-      correct: 0,
-      explanation: "Working from right to left: 1(2^0) + 1(2^1) + 0(2^2) + 1(2^3) + 0(2^4) + 1(2^5) + 1(2^6) = 1 + 2 + 0 + 8 + 0 + 32 + 64 = 107."
-    },
-    {
-      question: "What is the hexadecimal equivalent of the binary number 10101100?",
-      options: [
-        "A) A8",
-        "B) AC",
-        "C) B4",
-        "D) BC"
-      ],
-      correct: 1,
-      explanation: "Split the binary into groups of 4 bits: 1010 1100. 1010 = A (decimal 10), 1100 = C (decimal 12). So the hexadecimal equivalent is AC. Each hex digit represents exactly 4 binary digits, making conversion straightforward."
-    },
-    {
-      question: "Which of the following statements about Unicode is correct?",
-      options: [
-        "A) Unicode can represent only English characters",
-        "B) Unicode uses a fixed 8-bit encoding for all characters",
-        "C) Unicode is a character encoding standard that supports characters from multiple languages and scripts",
-        "D) Unicode is identical to ASCII"
-      ],
-      correct: 2,
-      explanation: "Unicode is a universal character encoding standard that supports characters from virtually all writing systems worldwide, including Chinese, Arabic, and mathematical symbols. It uses up to 21 bits, supporting over 1 million characters. ASCII uses 7 bits (128 characters) and is a subset of Unicode. UTF-8 is a variable-length Unicode encoding (1-4 bytes)."
-    },
-    {
-      question: "In the BCD (Binary Coded Decimal) system, how many bits are used to represent each decimal digit?",
-      options: [
-        "A) 2 bits",
-        "B) 4 bits",
-        "C) 8 bits",
-        "D) 16 bits"
-      ],
-      correct: 1,
-      explanation: "BCD uses 4 bits to represent each decimal digit (0-9). For example, decimal 25 is represented as 0010 0101 in BCD. Since 4 bits can represent 16 values (0-15) but only 10 are used (0-9), BCD is less storage-efficient than pure binary. However, BCD avoids rounding errors in financial calculations, making it useful in accounting systems."
-    }
-  ]}
-/>
+const practiceQuestions = [ { question: "Convert the binary number 1101011 to decimal.", options: [
+"A) 107", "B) 109", "C) 105", "D) 111" ], correct: 0, explanation: "Working from right to left:
+1(2^0) + 1(2^1) + 0(2^2) + 1(2^3) + 0(2^4) + 1(2^5) + 1(2^6) = 1 + 2 + 0 + 8 + 0 + 32 + 64 = 107."
+}, { question: "What is the hexadecimal equivalent of the binary number 10101100?", options: [ "A)
+A8", "B) AC", "C) B4", "D) BC" ], correct: 1, explanation: "Split the binary into groups of 4 bits:
+1010 1100. 1010 = A (decimal 10), 1100 = C (decimal 12). So the hexadecimal equivalent is AC. Each
+hex digit represents exactly 4 binary digits, making conversion straightforward." }, { question:
+"Which of the following statements about Unicode is correct?", options: [ "A) Unicode can represent
+only English characters", "B) Unicode uses a fixed 8-bit encoding for all characters", "C) Unicode
+is a character encoding standard that supports characters from multiple languages and scripts", "D)
+Unicode is identical to ASCII" ], correct: 2, explanation: "Unicode is a universal character
+encoding standard that supports characters from virtually all writing systems worldwide, including
+Chinese, Arabic, and mathematical symbols. It uses up to 21 bits, supporting over 1 million
+characters. ASCII uses 7 bits (128 characters) and is a subset of Unicode. UTF-8 is a
+variable-length Unicode encoding (1-4 bytes)." }, { question: "In the BCD (Binary Coded Decimal)
+system, how many bits are used to represent each decimal digit?", options: [ "A) 2 bits", "B) 4
+bits", "C) 8 bits", "D) 16 bits" ], correct: 1, explanation: "BCD uses 4 bits to represent each
+decimal digit (0-9). For example, decimal 25 is represented as 0010 0101 in BCD. Since 4 bits can
+represent 16 values (0-15) but only 10 are used (0-9), BCD is less storage-efficient than pure
+binary. However, BCD avoids rounding errors in financial calculations, making it useful in
+accounting systems." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Computer Systems
 
-<PracticeProblem
-  questions={[
-    {
-      question: "Which component of the CPU performs arithmetic operations such as addition and subtraction?",
-      options: [
-        "A) Control Unit (CU)",
-        "B) Arithmetic Logic Unit (ALU)",
-        "C) Accumulator",
-        "D) Program Counter (PC)"
-      ],
-      correct: 1,
-      explanation: "The Arithmetic Logic Unit (ALU) performs arithmetic operations (addition, subtraction, multiplication, division) and logical operations (AND, OR, NOT, comparison). The Control Unit (CU) coordinates and controls all CPU activities. The Accumulator temporarily stores results of ALU operations. The Program Counter holds the address of the next instruction to be fetched."
-    },
-    {
-      question: "In the fetch-decode-execute cycle, what happens during the decode phase?",
-      options: [
-        "A) The instruction is copied from memory into the instruction register",
-        "B) The control unit interprets the instruction and prepares the necessary signals for execution",
-        "C) The ALU performs the operation specified by the instruction",
-        "D) The result is written back to memory or a register"
-      ],
-      correct: 1,
-      explanation: "During the decode phase, the Control Unit decodes the instruction in the Instruction Register -- it determines what operation needs to be performed and which data is needed. The CU then generates the appropriate control signals for the execute phase. Fetch: copy instruction from memory (address in PC) into the Instruction Register. Execute: carry out the operation."
-    },
-    {
-      question: "Which of the following correctly distinguishes the Von Neumann architecture from the Harvard architecture?",
-      options: [
-        "A) Von Neumann has separate CPU and memory; Harvard has them combined",
-        "B) Von Neumann uses a single shared memory for data and instructions; Harvard uses separate memory for data and instructions",
-        "C) Von Neumann can execute multiple instructions simultaneously; Harvard cannot",
-        "D) Harvard architecture uses magnetic cores while Von Neumann uses semiconductor memory"
-      ],
-      correct: 1,
-      explanation: "Von Neumann architecture uses a single unified memory space for both data and instructions, accessed through the same bus system. This creates the 'Von Neumann bottleneck' as data and instructions cannot be fetched simultaneously. Harvard architecture uses separate memory and separate buses for data and instructions, allowing simultaneous fetching, which improves performance."
-    },
-    {
-      question: "What is the purpose of registers in a CPU?",
-      options: [
-        "A) To provide long-term storage of large amounts of data",
-        "B) To provide very fast temporary storage locations within the CPU for data and instructions currently being processed",
-        "C) To connect the CPU to external peripheral devices",
-        "D) To manage the computer's operating system"
-      ],
-      correct: 1,
-      explanation: "Registers are small, extremely fast storage locations within the CPU itself. They hold data and instructions that the CPU is currently processing. Common registers include: Program Counter (PC), Instruction Register (IR), Memory Address Register (MAR), Memory Data Register (MDR), Accumulator (ACC), and General Purpose Registers. Registers are faster than cache and RAM but very limited in number."
-    }
-  ]}
-/>
+const practiceQuestions = [ { question: "Which component of the CPU performs arithmetic operations
+such as addition and subtraction?", options: [ "A) Control Unit (CU)", "B) Arithmetic Logic Unit
+(ALU)", "C) Accumulator", "D) Program Counter (PC)" ], correct: 1, explanation: "The Arithmetic
+Logic Unit (ALU) performs arithmetic operations (addition, subtraction, multiplication, division)
+and logical operations (AND, OR, NOT, comparison). The Control Unit (CU) coordinates and controls
+all CPU activities. The Accumulator temporarily stores results of ALU operations. The Program
+Counter holds the address of the next instruction to be fetched." }, { question: "In the
+fetch-decode-execute cycle, what happens during the decode phase?", options: [ "A) The instruction
+is copied from memory into the instruction register", "B) The control unit interprets the
+instruction and prepares the necessary signals for execution", "C) The ALU performs the operation
+specified by the instruction", "D) The result is written back to memory or a register" ], correct:
+1, explanation: "During the decode phase, the Control Unit decodes the instruction in the
+Instruction Register -- it determines what operation needs to be performed and which data is needed.
+The CU then generates the appropriate control signals for the execute phase. Fetch: copy instruction
+from memory (address in PC) into the Instruction Register. Execute: carry out the operation." }, {
+question: "Which of the following correctly distinguishes the Von Neumann architecture from the
+Harvard architecture?", options: [ "A) Von Neumann has separate CPU and memory; Harvard has them
+combined", "B) Von Neumann uses a single shared memory for data and instructions; Harvard uses
+separate memory for data and instructions", "C) Von Neumann can execute multiple instructions
+simultaneously; Harvard cannot", "D) Harvard architecture uses magnetic cores while Von Neumann uses
+semiconductor memory" ], correct: 1, explanation: "Von Neumann architecture uses a single unified
+memory space for both data and instructions, accessed through the same bus system. This creates the
+'Von Neumann bottleneck' as data and instructions cannot be fetched simultaneously. Harvard
+architecture uses separate memory and separate buses for data and instructions, allowing
+simultaneous fetching, which improves performance." }, { question: "What is the purpose of registers
+in a CPU?", options: [ "A) To provide long-term storage of large amounts of data", "B) To provide
+very fast temporary storage locations within the CPU for data and instructions currently being
+processed", "C) To connect the CPU to external peripheral devices", "D) To manage the computer's
+operating system" ], correct: 1, explanation: "Registers are small, extremely fast storage locations
+within the CPU itself. They hold data and instructions that the CPU is currently processing. Common
+registers include: Program Counter (PC), Instruction Register (IR), Memory Address Register (MAR),
+Memory Data Register (MDR), Accumulator (ACC), and General Purpose Registers. Registers are faster
+than cache and RAM but very limited in number." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Programming Concepts
 
-<PracticeProblem
-  questions={[
-    {
-      question: "Which programming construct is used when a set of instructions needs to be repeated a specific number of times?",
-      options: [
-        "A) IF statement",
-        "B) FOR loop",
-        "C) Procedure call",
-        "D) Variable assignment"
-      ],
-      correct: 1,
-      explanation: "A FOR loop (count-controlled loop) is used when the number of iterations is known in advance. It has an initial value, a condition for termination, and an increment/decrement. A WHILE loop is a condition-controlled loop used when the number of iterations is not known. IF statements are for selection (conditional execution), not repetition."
-    },
-    {
-      question: "What is the output of the following pseudocode?\nSET x = 5\nSET y = 10\nIF x > y THEN\n  PRINT \"A\"\nELSE IF x == y THEN\n  PRINT \"B\"\nELSE\n  PRINT \"C\"\nENDIF",
-      options: [
-        "A) A",
-        "B) B",
-        "C) C",
-        "D) No output"
-      ],
-      correct: 2,
-      explanation: "x = 5, y = 10. The condition x > y (5 > 10) is false, so we move to ELSE IF. The condition x == y (5 == 10) is also false, so we move to ELSE and PRINT \"C\". The output is C."
-    },
-    {
-      question: "Which of the following correctly describes an array?",
-      options: [
-        "A) A single variable that stores one value at a time",
-        "B) A data structure that stores a collection of items of the same data type under a single name, accessed by an index",
-        "C) A function that returns multiple values",
-        "D) A conditional statement that tests multiple conditions"
-      ],
-      correct: 1,
-      explanation: "An array is a data structure that stores multiple values of the same data type in contiguous memory locations under a single variable name. Each element is accessed using an index (starting from 0 in most languages). Arrays allow efficient storage and retrieval of collections of data, and enable processing with loops. Example: scores[0] = 85, scores[1] = 92, etc."
-    },
-    {
-      question: "What is the advantage of using a function (or procedure) in programming?",
-      options: [
-        "A) It increases the execution speed of every program automatically",
-        "B) It promotes code reusability, readability, and easier debugging by breaking a program into manageable modules",
-        "C) It eliminates the need for variables",
-        "D) It allows the program to run without an operating system"
-      ],
-      correct: 1,
-      explanation: "Functions (or procedures/subprograms) are named blocks of code that perform a specific task. Advantages: (1) Reusability -- write once, call multiple times. (2) Abstraction -- hide complex implementation details. (3) Readability -- well-named functions make code self-documenting. (4) Easier debugging and testing -- isolate and test individual modules. (5) Teamwork -- different programmers can work on different functions."
-    }
-  ]}
-/>
+const practiceQuestions = [ { question: "Which programming construct is used when a set of
+instructions needs to be repeated a specific number of times?", options: [ "A) IF statement", "B)
+FOR loop", "C) Procedure call", "D) Variable assignment" ], correct: 1, explanation: "A FOR loop
+(count-controlled loop) is used when the number of iterations is known in advance. It has an initial
+value, a condition for termination, and an increment/decrement. A WHILE loop is a
+condition-controlled loop used when the number of iterations is not known. IF statements are for
+selection (conditional execution), not repetition." }, { question: "What is the output of the
+following pseudocode?\nSET x = 5\nSET y = 10\nIF x > y THEN\n PRINT \"A\"\nELSE IF x == y THEN\n
+PRINT \"B\"\nELSE\n PRINT \"C\"\nENDIF", options: [ "A) A", "B) B", "C) C", "D) No output" ],
+correct: 2, explanation: "x = 5, y = 10. The condition x > y (5 > 10) is false, so we move to ELSE
+IF. The condition x == y (5 == 10) is also false, so we move to ELSE and PRINT \"C\". The output is
+C." }, { question: "Which of the following correctly describes an array?", options: [ "A) A single
+variable that stores one value at a time", "B) A data structure that stores a collection of items of
+the same data type under a single name, accessed by an index", "C) A function that returns multiple
+values", "D) A conditional statement that tests multiple conditions" ], correct: 1, explanation: "An
+array is a data structure that stores multiple values of the same data type in contiguous memory
+locations under a single variable name. Each element is accessed using an index (starting from 0 in
+most languages). Arrays allow efficient storage and retrieval of collections of data, and enable
+processing with loops. Example: scores[0] = 85, scores[1] = 92, etc." }, { question: "What is the
+advantage of using a function (or procedure) in programming?", options: [ "A) It increases the
+execution speed of every program automatically", "B) It promotes code reusability, readability, and
+easier debugging by breaking a program into manageable modules", "C) It eliminates the need for
+variables", "D) It allows the program to run without an operating system" ], correct: 1,
+explanation: "Functions (or procedures/subprograms) are named blocks of code that perform a specific
+task. Advantages: (1) Reusability -- write once, call multiple times. (2) Abstraction -- hide
+complex implementation details. (3) Readability -- well-named functions make code self-documenting.
+(4) Easier debugging and testing -- isolate and test individual modules. (5) Teamwork -- different
+programmers can work on different functions." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Networking
 
-<PracticeProblem
-  questions={[
-    {
-      question: "In a star network topology, what happens if the central hub or switch fails?",
-      options: [
-        "A) Only the directly connected devices stop communicating; other devices continue to function normally",
-        "B) The entire network stops functioning",
-        "C) Data is rerouted automatically through remaining connections",
-        "D) Only wireless devices are affected"
-      ],
-      correct: 1,
-      explanation: "In a star topology, all devices connect to a single central hub or switch. If the central device fails, the entire network becomes inoperative because all communication must pass through it. However, if one peripheral device fails, only that device is affected and the rest of the network continues to function. This is a key advantage over bus and ring topologies."
-    },
-    {
-      question: "Which layer of the OSI model is responsible for routing data packets between different networks?",
-      options: [
-        "A) Data Link Layer (Layer 2)",
-        "B) Transport Layer (Layer 4)",
-        "C) Network Layer (Layer 3)",
-        "D) Application Layer (Layer 7)"
-      ],
-      correct: 2,
-      explanation: "The Network Layer (Layer 3) is responsible for logical addressing (IP addresses) and routing -- determining the best path for data packets to travel across multiple networks. Routers operate at this layer. The Data Link Layer handles node-to-node delivery on the same network. The Transport Layer ensures reliable end-to-end delivery. The Application Layer provides user-facing services."
-    },
-    {
-      question: "Which of the following correctly describes the TCP/IP protocol suite?",
-      options: [
-        "A) A single protocol for transmitting data over the internet",
-        "B) A collection of protocols organised into layers that govern data communication on the internet",
-        "C) A hardware specification for network interface cards",
-        "D) A programming language for web development"
-      ],
-      correct: 1,
-      explanation: "TCP/IP (Transmission Control Protocol / Internet Protocol) is a suite of protocols organised into four layers: Application Layer (HTTP, FTP, SMTP), Transport Layer (TCP, UDP), Internet Layer (IP, ICMP), and Network Access Layer (Ethernet, Wi-Fi). TCP provides reliable, connection-oriented data transmission. IP handles addressing and routing. Together they form the foundation of internet communication."
-    },
-    {
-      question: "Which network topology connects all devices in a single continuous cable (trunk) and uses terminators at both ends?",
-      options: [
-        "A) Star topology",
-        "B) Ring topology",
-        "C) Bus topology",
-        "D) Mesh topology"
-      ],
-      correct: 2,
-      explanation: "A bus topology uses a single backbone cable (bus/trunk) to which all devices are connected. Terminators at both ends prevent signal reflection. Advantages: simple, cheap, easy to set up for small networks. Disadvantages: if the main cable fails, the entire network goes down; performance degrades as more devices are added; difficult to troubleshoot. Common in early Ethernet networks (10BASE2)."
-    }
-  ]}
-/>
+const practiceQuestions = [ { question: "In a star network topology, what happens if the central hub
+or switch fails?", options: [ "A) Only the directly connected devices stop communicating; other
+devices continue to function normally", "B) The entire network stops functioning", "C) Data is
+rerouted automatically through remaining connections", "D) Only wireless devices are affected" ],
+correct: 1, explanation: "In a star topology, all devices connect to a single central hub or switch.
+If the central device fails, the entire network becomes inoperative because all communication must
+pass through it. However, if one peripheral device fails, only that device is affected and the rest
+of the network continues to function. This is a key advantage over bus and ring topologies." }, {
+question: "Which layer of the OSI model is responsible for routing data packets between different
+networks?", options: [ "A) Data Link Layer (Layer 2)", "B) Transport Layer (Layer 4)", "C) Network
+Layer (Layer 3)", "D) Application Layer (Layer 7)" ], correct: 2, explanation: "The Network Layer
+(Layer 3) is responsible for logical addressing (IP addresses) and routing -- determining the best
+path for data packets to travel across multiple networks. Routers operate at this layer. The Data
+Link Layer handles node-to-node delivery on the same network. The Transport Layer ensures reliable
+end-to-end delivery. The Application Layer provides user-facing services." }, { question: "Which of
+the following correctly describes the TCP/IP protocol suite?", options: [ "A) A single protocol for
+transmitting data over the internet", "B) A collection of protocols organised into layers that
+govern data communication on the internet", "C) A hardware specification for network interface
+cards", "D) A programming language for web development" ], correct: 1, explanation: "TCP/IP
+(Transmission Control Protocol / Internet Protocol) is a suite of protocols organised into four
+layers: Application Layer (HTTP, FTP, SMTP), Transport Layer (TCP, UDP), Internet Layer (IP, ICMP),
+and Network Access Layer (Ethernet, Wi-Fi). TCP provides reliable, connection-oriented data
+transmission. IP handles addressing and routing. Together they form the foundation of internet
+communication." }, { question: "Which network topology connects all devices in a single continuous
+cable (trunk) and uses terminators at both ends?", options: [ "A) Star topology", "B) Ring
+topology", "C) Bus topology", "D) Mesh topology" ], correct: 2, explanation: "A bus topology uses a
+single backbone cable (bus/trunk) to which all devices are connected. Terminators at both ends
+prevent signal reflection. Advantages: simple, cheap, easy to set up for small networks.
+Disadvantages: if the main cable fails, the entire network goes down; performance degrades as more
+devices are added; difficult to troubleshoot. Common in early Ethernet networks (10BASE2)." } ];
+
+<PracticeProblem questions={practiceQuestions} />

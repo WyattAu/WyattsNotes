@@ -1,48 +1,211 @@
 ---
-title: "IB Psychology: Abnormal Psychology Practice"
+title: 'IB Psychology: Abnormal Psychology Practice'
 slug: practice-abnormal
-description: "18 MCQ questions on normality definitions, phobias, depression, treatment approaches, and research methods in abnormal psychology for IB Psychology revision."
+description:
+  '18 MCQ questions on normality definitions, phobias, depression, treatment approaches, and
+  research methods in abnormal psychology for IB Psychology revision.'
 tags: [Psychology, IB Psychology, Practice]
 ---
+
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 ## IB Psychology -- Abnormal Psychology Practice
 
-18 MCQ practice problems covering core IB Psychology abnormal psychology content.
----
+## 18 MCQ practice problems covering core IB Psychology abnormal psychology content.
+
 ### Normality Definitions
-<PracticeProblem questions={[
-  {question: "The 'statistical infrequency' definition of abnormality classifies behaviour as abnormal if it:", options: ["A) Violates widely accepted moral standards", "B) Occurs rarely in the statistical distribution of the population", "C) Prevents an individual from carrying out daily activities", "D) Differs from the ideals of positive mental health"], correct: 1, explanation: "Statistical infrequency defines abnormality based on how common or rare a behaviour is within a population. Behaviours that fall at the statistical extremes (typically the top or bottom 2.5%) are considered abnormal. For example, an IQ below 70 or above 130 is statistically infrequent. However, this definition has limitations -- statistically rare behaviours are not always undesirable (e.g., genius-level intelligence)."},
-  {question: "Which definition of abnormality suggests that behaviour is abnormal if it deviates from implicit social rules and expectations?", options: ["A) Statistical infrequency", "B) Deviation from social norms", "C) Failure to function adequately", "D) Deviation from ideal mental health"], correct: 1, explanation: "Deviation from social norms defines abnormality as behaviour that violates unwritten rules about what is acceptable in a particular society or culture. Examples include inappropriate emotional expressions or breaches of social etiquette. The main limitation is that social norms vary across cultures and change over time, making this definition culturally relative and potentially pathologising normal cultural practices."},
-  {question: "Jahoda's (1958) 'deviation from ideal mental health' definition identifies abnormality by the absence of:", options: ["A) Statistical normality across multiple psychological measures", "B) Criteria for optimal psychological functioning, such as self-actualisation and resistance to stress", "C) Compliance with social norms and expectations", "D) Any symptoms of distress reported by the individual"], correct: 1, explanation: "Jahoda identified six criteria for ideal mental health: positive attitudes towards the self, growth and self-actualisation, integration, autonomy, accurate perception of reality, and environmental mastery. Deviation from these ideals indicates abnormality. The limitation is that very few people meet all six criteria, making the definition overly inclusive -- virtually everyone could be classified as 'abnormal' under this standard."}
-]} />
+
+const practiceQuestions = [ {question: "The 'statistical infrequency' definition of abnormality
+classifies behaviour as abnormal if it:", options: ["A) Violates widely accepted moral standards",
+"B) Occurs rarely in the statistical distribution of the population", "C) Prevents an individual
+from carrying out daily activities", "D) Differs from the ideals of positive mental health"],
+correct: 1, explanation: "Statistical infrequency defines abnormality based on how common or rare a
+behaviour is within a population. Behaviours that fall at the statistical extremes (typically the
+top or bottom 2.5%) are considered abnormal. For example, an IQ below 70 or above 130 is
+statistically infrequent. However, this definition has limitations -- statistically rare behaviours
+are not always undesirable (e.g., genius-level intelligence)."}, {question: "Which definition of
+abnormality suggests that behaviour is abnormal if it deviates from implicit social rules and
+expectations?", options: ["A) Statistical infrequency", "B) Deviation from social norms", "C)
+Failure to function adequately", "D) Deviation from ideal mental health"], correct: 1, explanation:
+"Deviation from social norms defines abnormality as behaviour that violates unwritten rules about
+what is acceptable in a particular society or culture. Examples include inappropriate emotional
+expressions or breaches of social etiquette. The main limitation is that social norms vary across
+cultures and change over time, making this definition culturally relative and potentially
+pathologising normal cultural practices."}, {question: "Jahoda's (1958) 'deviation from ideal mental
+health' definition identifies abnormality by the absence of:", options: ["A) Statistical normality
+across multiple psychological measures", "B) Criteria for optimal psychological functioning, such as
+self-actualisation and resistance to stress", "C) Compliance with social norms and expectations",
+"D) Any symptoms of distress reported by the individual"], correct: 1, explanation: "Jahoda
+identified six criteria for ideal mental health: positive attitudes towards the self, growth and
+self-actualisation, integration, autonomy, accurate perception of reality, and environmental
+mastery. Deviation from these ideals indicates abnormality. The limitation is that very few people
+meet all six criteria, making the definition overly inclusive -- virtually everyone could be
+classified as 'abnormal' under this standard."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Phobias
-<PracticeProblem questions={[
-  {question: "According to the two-process model of phobia acquisition (Mowrer, 1947), phobias are:", options: ["A) Entirely genetic in origin with no learning component", "B) Maintained by a combination of classical conditioning (acquisition) and operant conditioning (maintenance through negative reinforcement)", "C) Caused solely by operant conditioning without any classical conditioning component", "D) The result of cognitive distortions without any behavioural component"], correct: 1, explanation: "Mowrer's two-process model explains phobia acquisition and maintenance through two learning processes. Classical conditioning explains acquisition: a neutral stimulus (e.g., a dog) becomes associated with an unconditioned stimulus (being bitten), creating a conditioned fear response. Operant conditioning explains maintenance: avoiding the feared stimulus (avoidance behaviour) is negatively reinforced because it reduces anxiety, strengthening the avoidance and preventing extinction."},
-  {question: "Systematic desensitisation, developed by Wolpe (1958), is based on which psychological principle?", options: ["A) Punishment suppresses unwanted behaviour", "B) Fear cannot coexist with a state of deep relaxation, so pairing the feared stimulus with relaxation reduces anxiety", "C) Flooding the patient with fear extinguishes the response through exhaustion", "D) Cognitive restructuring eliminates irrational beliefs about the feared stimulus"], correct: 1, explanation: "Wolpe's systematic desensitisation is based on counterconditioning -- the principle that fear and relaxation are mutually incompatible states. The treatment involves three steps: constructing an anxiety hierarchy (least to most feared situations), learning relaxation techniques (progressive muscle relaxation or breathing exercises), and gradually exposing the patient to each stimulus on the hierarchy while maintaining relaxation. Research by McGlynn et al. supports its effectiveness."},
-  {question: "Flooding as a treatment for phobias differs from systematic desensitisation in that flooding:", options: ["A) Uses relaxation techniques throughout the treatment", "B) Exposes the patient to the most feared stimulus immediately and at full intensity", "C) Takes place over several months with gradual exposure", "D) Only works for specific phobias but not social phobias"], correct: 1, explanation: "Flooding involves immediate and intense exposure to the most feared stimulus without any gradual build-up or relaxation training. The theory is that prolonged exposure without any negative consequences will lead to extinction of the fear response through habituation. While it can be effective in fewer sessions than systematic desensitisation, it is highly traumatic for many patients and raises significant ethical concerns regarding informed consent and psychological harm."}
-]} />
+
+const practiceQuestions = [ {question: "According to the two-process model of phobia acquisition
+(Mowrer, 1947), phobias are:", options: ["A) Entirely genetic in origin with no learning component",
+"B) Maintained by a combination of classical conditioning (acquisition) and operant conditioning
+(maintenance through negative reinforcement)", "C) Caused solely by operant conditioning without any
+classical conditioning component", "D) The result of cognitive distortions without any behavioural
+component"], correct: 1, explanation: "Mowrer's two-process model explains phobia acquisition and
+maintenance through two learning processes. Classical conditioning explains acquisition: a neutral
+stimulus (e.g., a dog) becomes associated with an unconditioned stimulus (being bitten), creating a
+conditioned fear response. Operant conditioning explains maintenance: avoiding the feared stimulus
+(avoidance behaviour) is negatively reinforced because it reduces anxiety, strengthening the
+avoidance and preventing extinction."}, {question: "Systematic desensitisation, developed by Wolpe
+(1958), is based on which psychological principle?", options: ["A) Punishment suppresses unwanted
+behaviour", "B) Fear cannot coexist with a state of deep relaxation, so pairing the feared stimulus
+with relaxation reduces anxiety", "C) Flooding the patient with fear extinguishes the response
+through exhaustion", "D) Cognitive restructuring eliminates irrational beliefs about the feared
+stimulus"], correct: 1, explanation: "Wolpe's systematic desensitisation is based on
+counterconditioning -- the principle that fear and relaxation are mutually incompatible states. The
+treatment involves three steps: constructing an anxiety hierarchy (least to most feared situations),
+learning relaxation techniques (progressive muscle relaxation or breathing exercises), and gradually
+exposing the patient to each stimulus on the hierarchy while maintaining relaxation. Research by
+McGlynn et al. supports its effectiveness."}, {question: "Flooding as a treatment for phobias
+differs from systematic desensitisation in that flooding:", options: ["A) Uses relaxation techniques
+throughout the treatment", "B) Exposes the patient to the most feared stimulus immediately and at
+full intensity", "C) Takes place over several months with gradual exposure", "D) Only works for
+specific phobias but not social phobias"], correct: 1, explanation: "Flooding involves immediate and
+intense exposure to the most feared stimulus without any gradual build-up or relaxation training.
+The theory is that prolonged exposure without any negative consequences will lead to extinction of
+the fear response through habituation. While it can be effective in fewer sessions than systematic
+desensitisation, it is highly traumatic for many patients and raises significant ethical concerns
+regarding informed consent and psychological harm."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Depression
-<PracticeProblem questions={[
-  {question: "Beck's cognitive triad (1979) proposes that depression is maintained by negative views in three areas. These are:", options: ["A) The self, the world, and the future", "B) The past, the present, and the future", "C) Thoughts, feelings, and behaviours", "D) Biological, psychological, and social factors"], correct: 0, explanation: "Beck's cognitive triad identifies three types of negative cognition that maintain depression: negative views about the self (worthless, unlovable), the world (unfair, demanding, unrewarding), and the future (hopeless, nothing will improve). These negative automatic thoughts are activated by cognitive biases such as overgeneralisation, catastrophising, and selective abstraction, which distort reality and perpetuate the depressive state."},
-  {question: "Ellis's ABC model (1962) explains emotional disturbance as resulting from:", options: ["A) Activating events alone, regardless of beliefs", "B) Beliefs about activating events -- specifically irrational beliefs that convert ordinary events into emotional distress", "C) Consequences of childhood trauma that cannot be changed", "D) Biological imbalances that create irrational beliefs"], correct: 1, explanation: "Ellis's Rational Emotive Behaviour Therapy (REBT) uses the ABC model: A (Activating event) triggers B (Belief) which produces C (Consequence -- emotional and behavioural response). Ellis argued that it is not the event itself but the irrational beliefs about the event that cause emotional distress. Common irrational beliefs include musturbation (demanding that things must be a certain way) and awfulising (believing consequences will be catastrophic)."},
-  {question: "Seligman's learned helplessness theory (1975) explains depression as resulting from:", options: ["A) Excessive levels of serotonin in the brain", "B) The repeated experience of uncontrollable negative events leading to a belief that one has no control over outcomes", "C) A genetic predisposition activated by environmental triggers", "D) Faulty cognitive schemas developed in childhood"], correct: 1, explanation: "Seligman demonstrated through experiments with dogs that exposure to uncontrollable aversive stimuli leads to learned helplessness -- a passive acceptance of negative outcomes and failure to act even when escape becomes possible. Abramson et al. (1978) reformulated this as the attributional reformulation: individuals who attribute negative events to internal, stable, and global causes are most vulnerable to depression. This model links environmental experience to cognitive patterns."}
-]} />
+
+const practiceQuestions = [ {question: "Beck's cognitive triad (1979) proposes that depression is
+maintained by negative views in three areas. These are:", options: ["A) The self, the world, and the
+future", "B) The past, the present, and the future", "C) Thoughts, feelings, and behaviours", "D)
+Biological, psychological, and social factors"], correct: 0, explanation: "Beck's cognitive triad
+identifies three types of negative cognition that maintain depression: negative views about the self
+(worthless, unlovable), the world (unfair, demanding, unrewarding), and the future (hopeless,
+nothing will improve). These negative automatic thoughts are activated by cognitive biases such as
+overgeneralisation, catastrophising, and selective abstraction, which distort reality and perpetuate
+the depressive state."}, {question: "Ellis's ABC model (1962) explains emotional disturbance as
+resulting from:", options: ["A) Activating events alone, regardless of beliefs", "B) Beliefs about
+activating events -- specifically irrational beliefs that convert ordinary events into emotional
+distress", "C) Consequences of childhood trauma that cannot be changed", "D) Biological imbalances
+that create irrational beliefs"], correct: 1, explanation: "Ellis's Rational Emotive Behaviour
+Therapy (REBT) uses the ABC model: A (Activating event) triggers B (Belief) which produces C
+(Consequence -- emotional and behavioural response). Ellis argued that it is not the event itself
+but the irrational beliefs about the event that cause emotional distress. Common irrational beliefs
+include musturbation (demanding that things must be a certain way) and awfulising (believing
+consequences will be catastrophic)."}, {question: "Seligman's learned helplessness theory (1975)
+explains depression as resulting from:", options: ["A) Excessive levels of serotonin in the brain",
+"B) The repeated experience of uncontrollable negative events leading to a belief that one has no
+control over outcomes", "C) A genetic predisposition activated by environmental triggers", "D)
+Faulty cognitive schemas developed in childhood"], correct: 1, explanation: "Seligman demonstrated
+through experiments with dogs that exposure to uncontrollable aversive stimuli leads to learned
+helplessness -- a passive acceptance of negative outcomes and failure to act even when escape
+becomes possible. Abramson et al. (1978) reformulated this as the attributional reformulation:
+individuals who attribute negative events to internal, stable, and global causes are most vulnerable
+to depression. This model links environmental experience to cognitive patterns."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Treatment
-<PracticeProblem questions={[
-  {question: "SSRIs (selective serotonin reuptake inhibitors) treat depression by:", options: ["A) Destroying excess serotonin in the synaptic cleft", "B) Blocking the reuptake of serotonin, increasing its availability at synapses", "C) Stimulating the release of dopamine from presynaptic neurons", "D) Increasing the production of GABA in the brain"], correct: 1, explanation: "SSRIs (e.g., fluoxetine/Prozac) work by selectively blocking the serotonin transporter (SERT) protein on presynaptic neurons, preventing the reuptake of serotonin from the synaptic cleft. This increases the concentration of serotonin available to bind to postsynaptic receptors, which is believed to alleviate depressive symptoms. The therapeutic effect typically takes 2-4 weeks to develop, suggesting downstream neural adaptations beyond the immediate neurochemical change."},
-  {question: "Which of the following is a valid ethical concern regarding the use of ECT (electroconvulsive therapy)?", options: ["A) It requires patients to sign away their right to withdraw from treatment", "B) It can cause memory loss and confusion, and the mechanism of action is not fully understood, raising questions about informed consent", "C) It is only effective for schizophrenia, not for depression", "D) It has been completely replaced by drug therapy and is no longer used"], correct: 1, explanation: "ECT involves passing an electrical current through the brain to induce a seizure under general anaesthesia. While effective for severe depression (particularly treatment-resistant cases), it can cause short-term memory loss, confusion, and in rare cases long-term cognitive impairment. The exact mechanism is not fully understood. Ethical concerns include ensuring genuine informed consent when patients may not be competent to make decisions, and balancing potential benefits against known risks of cognitive side effects."},
-  {question: "CBT (Cognitive Behavioural Therapy) for depression combines:", options: ["A) Drug therapy with psychodynamic psychotherapy", "B) Cognitive restructuring techniques with behavioural activation strategies", "C) Psychoanalysis with behavioural conditioning", "D) Group therapy with family therapy"], correct: 1, explanation: "CBT for depression combines cognitive techniques (identifying and challenging negative automatic thoughts and core beliefs using Beck's or Ellis's frameworks) with behavioural strategies (behavioural activation -- scheduling pleasurable and mastery activities to counteract avoidance and withdrawal). The cognitive component addresses distorted thinking patterns, while the behavioural component breaks the cycle of inactivity and low mood. Meta-analyses show CBT is as effective as drug therapy for mild to moderate depression."},
-  {question: "TCAs (tricyclic antidepressants) differ from SSRIs in that TCAs:", options: ["A) Target only serotonin reuptake", "B) Block reuptake of both serotonin and noradrenaline, leading to more side effects", "C) Are a newer class of drug with fewer side effects", "D) Work by inhibiting monoamine oxidase rather than blocking reuptake"], correct: 1, explanation: "TCAs (e.g., amitriptyline, imipramine) are an older class of antidepressant that block the reuptake of serotonin and noradrenaline. They are effective but have significant side effects including dry mouth, sedation, weight gain, and cardiac effects, making them less prescribed than SSRIs for first-line treatment. MAOIs (monoamine oxidase inhibitors) work by inhibiting the enzyme that breaks down monoamine neurotransmitters, requiring dietary restrictions to prevent dangerous interactions with tyramine-rich foods."},
-  {question: "Which biological explanation for depression has the strongest research support?", options: ["A) The idea that depression is caused solely by childhood trauma", "B) The monoamine hypothesis that depression is linked to low levels of serotonin, noradrenaline, and dopamine in synaptic clefts", "C) The theory that depression is entirely learned through operant conditioning", "D) The idea that depression results from excessive dopamine activity"], correct: 1, explanation: "The monoamine hypothesis proposes that depression is caused by a deficiency of monoamine neurotransmitters (serotonin, noradrenaline, and dopamine) at synaptic clefts. This is supported by the effectiveness of drugs that increase monoamine availability (SSRIs, TCAs, MAOIs) in treating depression. However, the hypothesis has limitations: antidepressants increase monoamine levels within hours but therapeutic effects take weeks, suggesting more complex mechanisms. Recent research also implicates neurogenesis, inflammation, and HPA axis dysregulation in depression's aetiology."}
-]} />
+
+const practiceQuestions = [ {question: "SSRIs (selective serotonin reuptake inhibitors) treat
+depression by:", options: ["A) Destroying excess serotonin in the synaptic cleft", "B) Blocking the
+reuptake of serotonin, increasing its availability at synapses", "C) Stimulating the release of
+dopamine from presynaptic neurons", "D) Increasing the production of GABA in the brain"], correct:
+1, explanation: "SSRIs (e.g., fluoxetine/Prozac) work by selectively blocking the serotonin
+transporter (SERT) protein on presynaptic neurons, preventing the reuptake of serotonin from the
+synaptic cleft. This increases the concentration of serotonin available to bind to postsynaptic
+receptors, which is believed to alleviate depressive symptoms. The therapeutic effect typically
+takes 2-4 weeks to develop, suggesting downstream neural adaptations beyond the immediate
+neurochemical change."}, {question: "Which of the following is a valid ethical concern regarding the
+use of ECT (electroconvulsive therapy)?", options: ["A) It requires patients to sign away their
+right to withdraw from treatment", "B) It can cause memory loss and confusion, and the mechanism of
+action is not fully understood, raising questions about informed consent", "C) It is only effective
+for schizophrenia, not for depression", "D) It has been completely replaced by drug therapy and is
+no longer used"], correct: 1, explanation: "ECT involves passing an electrical current through the
+brain to induce a seizure under general anaesthesia. While effective for severe depression
+(particularly treatment-resistant cases), it can cause short-term memory loss, confusion, and in
+rare cases long-term cognitive impairment. The exact mechanism is not fully understood. Ethical
+concerns include ensuring genuine informed consent when patients may not be competent to make
+decisions, and balancing potential benefits against known risks of cognitive side effects."},
+{question: "CBT (Cognitive Behavioural Therapy) for depression combines:", options: ["A) Drug
+therapy with psychodynamic psychotherapy", "B) Cognitive restructuring techniques with behavioural
+activation strategies", "C) Psychoanalysis with behavioural conditioning", "D) Group therapy with
+family therapy"], correct: 1, explanation: "CBT for depression combines cognitive techniques
+(identifying and challenging negative automatic thoughts and core beliefs using Beck's or Ellis's
+frameworks) with behavioural strategies (behavioural activation -- scheduling pleasurable and
+mastery activities to counteract avoidance and withdrawal). The cognitive component addresses
+distorted thinking patterns, while the behavioural component breaks the cycle of inactivity and low
+mood. Meta-analyses show CBT is as effective as drug therapy for mild to moderate depression."},
+{question: "TCAs (tricyclic antidepressants) differ from SSRIs in that TCAs:", options: ["A) Target
+only serotonin reuptake", "B) Block reuptake of both serotonin and noradrenaline, leading to more
+side effects", "C) Are a newer class of drug with fewer side effects", "D) Work by inhibiting
+monoamine oxidase rather than blocking reuptake"], correct: 1, explanation: "TCAs (e.g.,
+amitriptyline, imipramine) are an older class of antidepressant that block the reuptake of serotonin
+and noradrenaline. They are effective but have significant side effects including dry mouth,
+sedation, weight gain, and cardiac effects, making them less prescribed than SSRIs for first-line
+treatment. MAOIs (monoamine oxidase inhibitors) work by inhibiting the enzyme that breaks down
+monoamine neurotransmitters, requiring dietary restrictions to prevent dangerous interactions with
+tyramine-rich foods."}, {question: "Which biological explanation for depression has the strongest
+research support?", options: ["A) The idea that depression is caused solely by childhood trauma",
+"B) The monoamine hypothesis that depression is linked to low levels of serotonin, noradrenaline,
+and dopamine in synaptic clefts", "C) The theory that depression is entirely learned through operant
+conditioning", "D) The idea that depression results from excessive dopamine activity"], correct: 1,
+explanation: "The monoamine hypothesis proposes that depression is caused by a deficiency of
+monoamine neurotransmitters (serotonin, noradrenaline, and dopamine) at synaptic clefts. This is
+supported by the effectiveness of drugs that increase monoamine availability (SSRIs, TCAs, MAOIs) in
+treating depression. However, the hypothesis has limitations: antidepressants increase monoamine
+levels within hours but therapeutic effects take weeks, suggesting more complex mechanisms. Recent
+research also implicates neurogenesis, inflammation, and HPA axis dysregulation in depression's
+aetiology."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Research Methods in Abnormal Psychology
-<PracticeProblem questions={[
-  {question: "Case studies are commonly used in abnormal psychology research. A key strength of case studies is that they:", options: ["A) Provide highly generalisable findings applicable to the entire population", "B) Allow in-depth, detailed investigation of rare or unusual conditions that cannot be studied experimentally", "C) Eliminate researcher bias through standardised procedures", "D) Establish cause-and-effect relationships between variables"], correct: 1, explanation: "Case studies (such as Freud's case of Little Hans or case studies of rare disorders) provide rich, detailed qualitative data about individual cases that would be impossible to obtain through other methods. They are particularly valuable for studying rare conditions and generating hypotheses for further research. However, their limitations include lack of generalisability, potential researcher bias, inability to establish causation, and difficulty in replication."},
-  {question: "Longitudinal studies in abnormal psychology are valuable because they:", options: ["A) Are quick and inexpensive to conduct", "B) Allow researchers to examine changes and development in psychological conditions over extended time periods", "C) Eliminate the confounding effects of individual differences", "D) Always use experimental designs with random allocation"], correct: 1, explanation: "Longitudinal studies track the same participants over months or years, allowing researchers to observe the development, course, and outcomes of psychological disorders over time. They can identify risk factors, onset patterns, and the long-term effects of treatments. However, they are expensive, time-consuming, and vulnerable to attrition (participants dropping out), which can introduce bias if those who leave differ systematically from those who remain."},
-  {question: "When evaluating research methods in abnormal psychology, validity refers to:", options: ["A) The consistency of results when a study is repeated", "B) Whether the research actually measures what it claims to measure and can be generalised beyond the study context", "C) The statistical significance of the results obtained", "D) The ethical approval granted to the study by an institutional review board"], correct: 1, explanation: "Validity encompasses several types: internal validity (whether the study establishes a true cause-and-effect relationship), ecological validity (whether findings generalise to real-world settings), construct validity (whether the operationalisation accurately represents the theoretical concept), and population validity (whether findings generalise beyond the sample). In abnormal psychology, validity is particularly important because measures of mental health must accurately capture the constructs they claim to measure, such as depression severity or phobia intensity."},
-  {question: "In abnormal psychology research, the concept of reliability refers to:", options: ["A) Whether the study has been published in a peer-reviewed journal", "B) The consistency of a measure or research finding when it is repeated under the same conditions", "C) The extent to which findings apply to different cultural contexts", "D) The ethical approval status of the research protocol"], correct: 1, explanation: "Reliability refers to the consistency and reproducibility of measurements or findings. Types include test-retest reliability (consistency over time), inter-rater reliability (agreement between different observers), and internal consistency (whether items on a measure correlate with each other). In abnormal psychology, reliability is crucial for diagnostic tools -- for example, DSM-5 diagnostic criteria must be applied consistently by different clinicians. Low reliability undermines validity: a measure cannot be valid if it is not reliable."}
-]} />
+
+const practiceQuestions = [ {question: "Case studies are commonly used in abnormal psychology
+research. A key strength of case studies is that they:", options: ["A) Provide highly generalisable
+findings applicable to the entire population", "B) Allow in-depth, detailed investigation of rare or
+unusual conditions that cannot be studied experimentally", "C) Eliminate researcher bias through
+standardised procedures", "D) Establish cause-and-effect relationships between variables"], correct:
+1, explanation: "Case studies (such as Freud's case of Little Hans or case studies of rare
+disorders) provide rich, detailed qualitative data about individual cases that would be impossible
+to obtain through other methods. They are particularly valuable for studying rare conditions and
+generating hypotheses for further research. However, their limitations include lack of
+generalisability, potential researcher bias, inability to establish causation, and difficulty in
+replication."}, {question: "Longitudinal studies in abnormal psychology are valuable because they:",
+options: ["A) Are quick and inexpensive to conduct", "B) Allow researchers to examine changes and
+development in psychological conditions over extended time periods", "C) Eliminate the confounding
+effects of individual differences", "D) Always use experimental designs with random allocation"],
+correct: 1, explanation: "Longitudinal studies track the same participants over months or years,
+allowing researchers to observe the development, course, and outcomes of psychological disorders
+over time. They can identify risk factors, onset patterns, and the long-term effects of treatments.
+However, they are expensive, time-consuming, and vulnerable to attrition (participants dropping
+out), which can introduce bias if those who leave differ systematically from those who remain."},
+{question: "When evaluating research methods in abnormal psychology, validity refers to:", options:
+["A) The consistency of results when a study is repeated", "B) Whether the research actually
+measures what it claims to measure and can be generalised beyond the study context", "C) The
+statistical significance of the results obtained", "D) The ethical approval granted to the study by
+an institutional review board"], correct: 1, explanation: "Validity encompasses several types:
+internal validity (whether the study establishes a true cause-and-effect relationship), ecological
+validity (whether findings generalise to real-world settings), construct validity (whether the
+operationalisation accurately represents the theoretical concept), and population validity (whether
+findings generalise beyond the sample). In abnormal psychology, validity is particularly important
+because measures of mental health must accurately capture the constructs they claim to measure, such
+as depression severity or phobia intensity."}, {question: "In abnormal psychology research, the
+concept of reliability refers to:", options: ["A) Whether the study has been published in a
+peer-reviewed journal", "B) The consistency of a measure or research finding when it is repeated
+under the same conditions", "C) The extent to which findings apply to different cultural contexts",
+"D) The ethical approval status of the research protocol"], correct: 1, explanation: "Reliability
+refers to the consistency and reproducibility of measurements or findings. Types include test-retest
+reliability (consistency over time), inter-rater reliability (agreement between different
+observers), and internal consistency (whether items on a measure correlate with each other). In
+abnormal psychology, reliability is crucial for diagnostic tools -- for example, DSM-5 diagnostic
+criteria must be applied consistently by different clinicians. Low reliability undermines validity:
+a measure cannot be valid if it is not reliable."} ];
+
+<PracticeProblem questions={practiceQuestions} />

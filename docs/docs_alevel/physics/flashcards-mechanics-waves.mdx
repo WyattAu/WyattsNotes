@@ -1,12 +1,16 @@
 ---
-title: "A-Level Physics Flashcards: Mechanics and Waves"
+title: 'A-Level Physics Flashcards: Mechanics and Waves'
 slug: flashcards-mechanics-waves
-description: "20 interactive flashcards covering A-Level Physics mechanics and waves topics including SUVAT, Newton's laws, SHM, wave equations, quantum physics and thermal physics for spaced repetition revision."
+description:
+  "20 interactive flashcards covering A-Level Physics mechanics and waves topics including SUVAT,
+  Newton's laws, SHM, wave equations, quantum physics and thermal physics for spaced repetition
+  revision."
 tags:
   - Physics
   - A-Level
   - Flashcards
 ---
+
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ## A-Level Physics -- Mechanics and Waves Flashcards
@@ -15,150 +19,100 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
+const flashcardData = [ { id: 'suvat-1', front: 'State the four SUVAT equations and the conditions
+under which they are used.', back: 'v = u + at, s = ut + ½at², v² = u² + 2as, s = ½(u+v)t. Used for
+constant acceleration in a straight line. Acceleration must be uniform throughout.', tags:
+['mechanics', 'kinematics'], difficulty: 'easy', }, { id: 'proj-1', front: 'State three key facts
+about projectile motion in A-Level Physics.', back: 'The horizontal and vertical components of
+motion are independent. The horizontal velocity is constant (ignoring air resistance). The vertical
+motion is subject to constant acceleration g. The trajectory is parabolic.', tags: ['mechanics',
+'projectiles'], difficulty: 'easy', }, { id: 'newton-1', front: 'State Newton\'s three laws of
+motion.', back: 'First: An object remains at rest or moves with constant velocity unless acted on by
+a resultant force. Second: F = ma, where F is the resultant force, m is mass, a is acceleration.
+Third: If A exerts a force on B, then B exerts an equal and opposite force on A.', tags:
+['mechanics', 'forces'], difficulty: 'easy', }, { id: 'work-1', front: 'State the work-energy
+theorem and the equation for conservation of mechanical energy.', back: 'Work done = change in
+kinetic energy: W = ΔKE = ½mv² - ½mu². Conservation of energy (no resistive forces): ½mv² + mgh =
+constant. Total energy at any point equals total energy at any other point.', tags: ['mechanics',
+'energy'], difficulty: 'easy', }, { id: 'momentum-1', front: 'State the principle of conservation of
+linear momentum and the impulse-momentum equation.', back: 'Total momentum before = total momentum
+after (in a closed system with no external forces): Σp_before = Σp_after. Impulse = change in
+momentum: FΔt = Δp = mΔv. Impulse has units Ns.', tags: ['mechanics', 'momentum'], difficulty:
+'easy', }, { id: 'shm-1', front: 'Define simple harmonic motion and state the equations for
+displacement, velocity and acceleration.', back: 'SHM: acceleration is directly proportional to
+displacement from equilibrium and directed towards it: a = -ω²x. Displacement: x = A cos(ωt) or x =
+A sin(ωt). Velocity: v = ±ω√(A² - x²). Maximum speed v_max = ωA at equilibrium. Period T = 2π/ω.',
+tags: ['mechanics', 'shm'], difficulty: 'medium', }, { id: 'wave-1', front: 'State the wave equation
+and define all terms. What is the relationship between frequency, period and wavelength?', back: 'v
+= fλ where v = wave speed, f = frequency (Hz), λ = wavelength (m). Period T = 1/f. So v = λ/T. For
+EM waves in a vacuum: c = fλ where c = 3 × 10⁸ m/s.', tags: ['waves'], difficulty: 'easy', }, { id:
+'diff-1', front: 'What conditions must be met for observable diffraction? How does slit width affect
+the diffraction pattern?', back: 'Diffraction is most pronounced when the wavelength is similar to
+or larger than the size of the gap/obstacle. Narrower slit → wider diffraction pattern (more
+spreading). Wider slit → narrower central maximum. Single slit: central maximum width is
+proportional to λ/a.', tags: ['waves', 'diffraction'], difficulty: 'medium', }, { id: 'young-1',
+front: 'State the formula for Young\'s double slit experiment and explain each term.', back: 'Fringe
+spacing: w = λD/d where w = distance between adjacent bright fringes, λ = wavelength, D = distance
+from slits to screen, d = slit separation. For bright fringes: d sinθ = nλ (n = 0, 1, 2, ...). For
+dark fringes: d sinθ = (n + ½)λ.', tags: ['waves', 'interference'], difficulty: 'medium', }, { id:
+'photo-1', front: 'State the photoelectric equation and explain each term. What does it predict
+about threshold frequency?', back: 'hf = φ + KE_max where h = Planck constant, f = frequency of
+incident light, φ = work function of metal, KE_max = maximum kinetic energy of photoelectrons.
+Threshold frequency: f₀ = φ/h. If f < f₀, no electrons are emitted regardless of intensity.', tags:
+['quantum', 'photoelectric'], difficulty: 'medium', }, { id: 'de-broglie-1', front: 'State the de
+Broglie equation and explain its significance.', back: 'λ = h/p = h/(mv) where λ = de Broglie
+wavelength, h = Planck constant, p = momentum, m = mass, v = velocity. All matter exhibits wave-like
+properties. Significant for very small particles (e.g. electrons). An electron accelerated through V
+volts: λ = h/√(2meV).', tags: ['quantum'], difficulty: 'medium', }, { id: 'wave-particle-1', front:
+'Give two pieces of evidence for wave-particle duality.', back: 'Wave nature of light: diffraction
+(Young\'s double slit), interference patterns. Particle nature of light: photoelectric effect
+(Einstein), Compton scattering. Wave nature of electrons: electron diffraction through thin crystals
+(Davisson-Germer experiment). Particle nature of electrons: discrete energy levels, discrete
+spectral lines.', tags: ['quantum'], difficulty: 'medium', }, { id: 'gas-1', front: 'State the
+assumptions of the kinetic theory of gases.', back: 'A gas consists of many small particles in rapid
+random motion. Collisions between particles and walls are perfectly elastic. The volume of particles
+is negligible compared to volume of container. Intermolecular forces are negligible (except during
+collisions). Time of collisions is negligible compared to time between collisions. Gravitational
+effects on particles are negligible.', tags: ['thermal'], difficulty: 'medium', }, { id:
+'spec-heat-1', front: 'Define specific heat capacity and specific latent heat. Give the equations.',
+back: 'Specific heat capacity c: energy needed to raise the temperature of 1 kg of a substance by 1
+K without change of state. E = mcΔT. Specific latent heat l: energy needed to change the state of 1
+kg of substance at constant temperature. E = ml (latent heat of fusion: solid to liquid; latent heat
+of vaporisation: liquid to gas).', tags: ['thermal'], difficulty: 'easy', }, { id: 'latent-heat-1',
+front: 'Explain why the temperature of a substance remains constant during a change of state using
+kinetic theory.', back: 'During melting or boiling, energy is used to break intermolecular bonds
+rather than increase kinetic energy. The potential energy of the molecules increases but the average
+kinetic energy (and thus temperature) remains constant. This is why heating curves show plateaus at
+melting and boiling points.', tags: ['thermal'], difficulty: 'medium', }, { id: 'circular-1', front:
+'State the equations for circular motion including angular velocity, centripetal acceleration and
+centripetal force.', back: 'Angular velocity: ω = 2π/T = 2πf. Linear speed: v = ωr. Centripetal
+acceleration: a = v²/r = ω²r. Centripetal force: F = mv²/r = mω²r. The force always acts towards the
+centre of the circle and is perpendicular to the velocity.', tags: ['mechanics', 'circular-motion'],
+difficulty: 'medium', }, { id: 'doppler-1', front: 'State the Doppler effect equation for a moving
+source and explain the red shift of light from distant galaxies.', back: 'Observed frequency:
+f_observed = f_source × (v / (v ± v_source)) where v is wave speed and v_source is source speed. +
+when source moves away (lower frequency, red shift), - when approaching (higher frequency, blue
+shift). Red shift of galactic light provides evidence for the expanding universe.', tags: ['waves',
+'doppler'], difficulty: 'medium', }, { id: 'shm-energy-1', front: 'Describe the energy changes
+during one complete oscillation of a mass-spring system in SHM.', back: 'At maximum displacement
+(amplitude): KE = 0, PE = maximum (½kA²). At equilibrium: KE = maximum (½mv_max²), PE = 0. Total
+energy E = ½kA² = ½mω²A² is constant. KE and PE interchange sinusoidally. Energy-time graphs: KE = E
+sin²(ωt), PE = E cos²(ωt).', tags: ['mechanics', 'shm', 'energy'], difficulty: 'hard', }, { id:
+'standing-waves-1', front: 'Describe the features of standing waves and state the conditions for
+standing waves on a string fixed at both ends.', back: 'Standing waves: nodes (zero amplitude) and
+antinodes (maximum amplitude) at fixed positions. All particles between adjacent nodes are in phase.
+Adjacent segments are in antiphase. Wavelength: λₙ = 2L/n where n = 1, 2, 3, ... for a string of
+length L. Fundamental frequency (1st harmonic): f₁ = v/(2L). nth harmonic: fₙ = nv/(2L) = nf₁.',
+tags: ['waves', 'standing-waves'], difficulty: 'hard', }, { id: 'em-spectrum-1', front: 'List the
+regions of the electromagnetic spectrum in order of increasing wavelength and state the typical
+wavelength ranges for visible light and X-rays.', back: 'Gamma rays, X-rays, UV, visible, infrared,
+microwaves, radio waves (increasing wavelength, decreasing frequency, decreasing energy). Visible
+light: approximately 400 nm (violet) to 700 nm (red). X-rays: approximately 0.01 nm to 10 nm. Energy
+of photon: E = hf = hc/λ.', tags: ['waves', 'em-spectrum'], difficulty: 'medium', } ];
+
 <FlashcardDeck
   deckId="alevel-physics-mechanics-waves"
   title="A-Level Physics: Mechanics and Waves"
   description="SUVAT, Newton's laws, SHM, waves, quantum physics, thermal physics"
-  cards={[
-    {
-      id: 'suvat-1',
-      front: 'State the four SUVAT equations and the conditions under which they are used.',
-      back: 'v = u + at, s = ut + ½at², v² = u² + 2as, s = ½(u+v)t. Used for constant acceleration in a straight line. Acceleration must be uniform throughout.',
-      tags: ['mechanics', 'kinematics'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'proj-1',
-      front: 'State three key facts about projectile motion in A-Level Physics.',
-      back: 'The horizontal and vertical components of motion are independent. The horizontal velocity is constant (ignoring air resistance). The vertical motion is subject to constant acceleration g. The trajectory is parabolic.',
-      tags: ['mechanics', 'projectiles'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'newton-1',
-      front: 'State Newton\'s three laws of motion.',
-      back: 'First: An object remains at rest or moves with constant velocity unless acted on by a resultant force. Second: F = ma, where F is the resultant force, m is mass, a is acceleration. Third: If A exerts a force on B, then B exerts an equal and opposite force on A.',
-      tags: ['mechanics', 'forces'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'work-1',
-      front: 'State the work-energy theorem and the equation for conservation of mechanical energy.',
-      back: 'Work done = change in kinetic energy: W = ΔKE = ½mv² - ½mu². Conservation of energy (no resistive forces): ½mv² + mgh = constant. Total energy at any point equals total energy at any other point.',
-      tags: ['mechanics', 'energy'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'momentum-1',
-      front: 'State the principle of conservation of linear momentum and the impulse-momentum equation.',
-      back: 'Total momentum before = total momentum after (in a closed system with no external forces): Σp_before = Σp_after. Impulse = change in momentum: FΔt = Δp = mΔv. Impulse has units Ns.',
-      tags: ['mechanics', 'momentum'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'shm-1',
-      front: 'Define simple harmonic motion and state the equations for displacement, velocity and acceleration.',
-      back: 'SHM: acceleration is directly proportional to displacement from equilibrium and directed towards it: a = -ω²x. Displacement: x = A cos(ωt) or x = A sin(ωt). Velocity: v = ±ω√(A² - x²). Maximum speed v_max = ωA at equilibrium. Period T = 2π/ω.',
-      tags: ['mechanics', 'shm'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'wave-1',
-      front: 'State the wave equation and define all terms. What is the relationship between frequency, period and wavelength?',
-      back: 'v = fλ where v = wave speed, f = frequency (Hz), λ = wavelength (m). Period T = 1/f. So v = λ/T. For EM waves in a vacuum: c = fλ where c = 3 × 10⁸ m/s.',
-      tags: ['waves'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'diff-1',
-      front: 'What conditions must be met for observable diffraction? How does slit width affect the diffraction pattern?',
-      back: 'Diffraction is most pronounced when the wavelength is similar to or larger than the size of the gap/obstacle. Narrower slit → wider diffraction pattern (more spreading). Wider slit → narrower central maximum. Single slit: central maximum width is proportional to λ/a.',
-      tags: ['waves', 'diffraction'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'young-1',
-      front: 'State the formula for Young\'s double slit experiment and explain each term.',
-      back: 'Fringe spacing: w = λD/d where w = distance between adjacent bright fringes, λ = wavelength, D = distance from slits to screen, d = slit separation. For bright fringes: d sinθ = nλ (n = 0, 1, 2, ...). For dark fringes: d sinθ = (n + ½)λ.',
-      tags: ['waves', 'interference'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'photo-1',
-      front: 'State the photoelectric equation and explain each term. What does it predict about threshold frequency?',
-      back: 'hf = φ + KE_max where h = Planck constant, f = frequency of incident light, φ = work function of metal, KE_max = maximum kinetic energy of photoelectrons. Threshold frequency: f₀ = φ/h. If f < f₀, no electrons are emitted regardless of intensity.',
-      tags: ['quantum', 'photoelectric'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'de-broglie-1',
-      front: 'State the de Broglie equation and explain its significance.',
-      back: 'λ = h/p = h/(mv) where λ = de Broglie wavelength, h = Planck constant, p = momentum, m = mass, v = velocity. All matter exhibits wave-like properties. Significant for very small particles (e.g. electrons). An electron accelerated through V volts: λ = h/√(2meV).',
-      tags: ['quantum'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'wave-particle-1',
-      front: 'Give two pieces of evidence for wave-particle duality.',
-      back: 'Wave nature of light: diffraction (Young\'s double slit), interference patterns. Particle nature of light: photoelectric effect (Einstein), Compton scattering. Wave nature of electrons: electron diffraction through thin crystals (Davisson-Germer experiment). Particle nature of electrons: discrete energy levels, discrete spectral lines.',
-      tags: ['quantum'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gas-1',
-      front: 'State the assumptions of the kinetic theory of gases.',
-      back: 'A gas consists of many small particles in rapid random motion. Collisions between particles and walls are perfectly elastic. The volume of particles is negligible compared to volume of container. Intermolecular forces are negligible (except during collisions). Time of collisions is negligible compared to time between collisions. Gravitational effects on particles are negligible.',
-      tags: ['thermal'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'spec-heat-1',
-      front: 'Define specific heat capacity and specific latent heat. Give the equations.',
-      back: 'Specific heat capacity c: energy needed to raise the temperature of 1 kg of a substance by 1 K without change of state. E = mcΔT. Specific latent heat l: energy needed to change the state of 1 kg of substance at constant temperature. E = ml (latent heat of fusion: solid to liquid; latent heat of vaporisation: liquid to gas).',
-      tags: ['thermal'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'latent-heat-1',
-      front: 'Explain why the temperature of a substance remains constant during a change of state using kinetic theory.',
-      back: 'During melting or boiling, energy is used to break intermolecular bonds rather than increase kinetic energy. The potential energy of the molecules increases but the average kinetic energy (and thus temperature) remains constant. This is why heating curves show plateaus at melting and boiling points.',
-      tags: ['thermal'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'circular-1',
-      front: 'State the equations for circular motion including angular velocity, centripetal acceleration and centripetal force.',
-      back: 'Angular velocity: ω = 2π/T = 2πf. Linear speed: v = ωr. Centripetal acceleration: a = v²/r = ω²r. Centripetal force: F = mv²/r = mω²r. The force always acts towards the centre of the circle and is perpendicular to the velocity.',
-      tags: ['mechanics', 'circular-motion'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'doppler-1',
-      front: 'State the Doppler effect equation for a moving source and explain the red shift of light from distant galaxies.',
-      back: 'Observed frequency: f_observed = f_source × (v / (v ± v_source)) where v is wave speed and v_source is source speed. + when source moves away (lower frequency, red shift), - when approaching (higher frequency, blue shift). Red shift of galactic light provides evidence for the expanding universe.',
-      tags: ['waves', 'doppler'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'shm-energy-1',
-      front: 'Describe the energy changes during one complete oscillation of a mass-spring system in SHM.',
-      back: 'At maximum displacement (amplitude): KE = 0, PE = maximum (½kA²). At equilibrium: KE = maximum (½mv_max²), PE = 0. Total energy E = ½kA² = ½mω²A² is constant. KE and PE interchange sinusoidally. Energy-time graphs: KE = E sin²(ωt), PE = E cos²(ωt).',
-      tags: ['mechanics', 'shm', 'energy'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'standing-waves-1',
-      front: 'Describe the features of standing waves and state the conditions for standing waves on a string fixed at both ends.',
-      back: 'Standing waves: nodes (zero amplitude) and antinodes (maximum amplitude) at fixed positions. All particles between adjacent nodes are in phase. Adjacent segments are in antiphase. Wavelength: λₙ = 2L/n where n = 1, 2, 3, ... for a string of length L. Fundamental frequency (1st harmonic): f₁ = v/(2L). nth harmonic: fₙ = nv/(2L) = nf₁.',
-      tags: ['waves', 'standing-waves'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'em-spectrum-1',
-      front: 'List the regions of the electromagnetic spectrum in order of increasing wavelength and state the typical wavelength ranges for visible light and X-rays.',
-      back: 'Gamma rays, X-rays, UV, visible, infrared, microwaves, radio waves (increasing wavelength, decreasing frequency, decreasing energy). Visible light: approximately 400 nm (violet) to 700 nm (red). X-rays: approximately 0.01 nm to 10 nm. Energy of photon: E = hf = hc/λ.',
-      tags: ['waves', 'em-spectrum'],
-      difficulty: 'medium',
-    }
-  ]}
+  cards={flashcardData}
 />

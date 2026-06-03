@@ -2,8 +2,8 @@
 title: Microeconomics Flashcards
 date: 2026-05-31
 description:
-  'Interactive flashcard deck for IB Economics Microeconomics revision. Spaced repetition
-  covering demand and supply, market structures, market failure, costs, and government intervention.'
+  'Interactive flashcard deck for IB Economics Microeconomics revision. Spaced repetition covering
+  demand and supply, market structures, market failure, costs, and government intervention.'
 tags:
   - Economics
   - IB
@@ -20,115 +20,78 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
+const flashcardData = [ { id: 'ds-1', front: 'State the law of demand and explain why the demand
+curve slopes downward.', back: 'As price increases, quantity demanded decreases (ceteris paribus).
+Reasons: substitution effect (consumers switch to cheaper alternatives), income effect (higher
+prices reduce purchasing power), diminishing marginal utility.', tags: ['demand-and-supply'],
+difficulty: 'easy', }, { id: 'ds-2', front: 'What are the main determinants of price elasticity of
+demand (PED)?', back: 'Availability of substitutes (more substitutes → more elastic), proportion of
+income spent (larger share → more elastic), necessity vs luxury (luxuries → more elastic), time
+period (longer → more elastic), definition of market (narrow → more elastic).', tags:
+['demand-and-supply'], difficulty: 'medium', }, { id: 'ds-3', front: 'Define income elasticity of
+demand (YED) and interpret positive vs negative values.', back: 'YED = %ΔQd / %ΔY. YED > 0: normal
+good (demand rises with income). YED > 1: luxury good. 0 < YED < 1: necessity. YED < 0: inferior
+good (demand falls as income rises, e.g. own-brand products).', tags: ['demand-and-supply'],
+difficulty: 'medium', }, { id: 'ms-1', front: 'State five key characteristics of perfect
+competition.', back: 'Many buyers and sellers (price takers), homogeneous (identical) products,
+perfect information, no barriers to entry or exit, firms earn normal profit in the long run, firm
+faces perfectly elastic demand curve.', tags: ['market-structures'], difficulty: 'easy', }, { id:
+'ms-2', front: 'State the key features of a monopoly and explain why it can earn abnormal profit in
+the long run.', back: 'Single seller, unique product with no close substitutes, high barriers to
+entry (legal, natural, or strategic), price maker. Earns abnormal (supernormal) profit in the long
+run because barriers prevent new firms from entering and competing away the profit.', tags:
+['market-structures'], difficulty: 'medium', }, { id: 'ms-3', front: 'What is an oligopoly and what
+is its most distinctive feature?', back: 'A market dominated by a few large firms with high barriers
+to entry. The most distinctive feature is interdependence — each firm\'s decisions (price, output,
+advertising) directly affect and are affected by rivals\' actions. This leads to strategic
+behaviour, price rigidity (kinked demand curve), and potential collusion.', tags:
+['market-structures'], difficulty: 'medium', }, { id: 'mf-1', front: 'What is a negative externality
+and how does it cause market failure?', back: 'A negative externality is a spill-over cost imposed
+on a third party not involved in the transaction. It causes market failure because the private cost
+< social cost, so the free market overproduces (quantity exceeds socially optimal level). The MSC
+curve lies above the MPC curve.', tags: ['market-failure'], difficulty: 'medium', }, { id: 'mf-2',
+front: 'Define a public good and explain why the free market fails to provide it.', back: 'A public
+good is non-excludable (cannot prevent non-payers from consuming) and non-rivalrous (one person\'s
+consumption does not reduce availability for others). The free market underprovides because of the
+free-rider problem — rational individuals will not pay, knowing they can consume for free.', tags:
+['market-failure'], difficulty: 'medium', }, { id: 'mf-3', front: 'What is information failure
+(asymmetric information) and give an example?', back: 'Occurs when buyers or sellers have unequal or
+incomplete information, leading to market failure. Examples: asymmetric information in healthcare
+(patients cannot judge doctor quality), adverse selection in insurance (high-risk individuals more
+likely to buy), moral hazard (insured individuals take more risks).', tags: ['market-failure'],
+difficulty: 'hard', }, { id: 'cost-1', front: 'Distinguish between fixed costs and variable costs
+with examples.', back: 'Fixed costs (FC) do not vary with output in the short run: rent, salaries,
+insurance. Variable costs (VC) change directly with output: raw materials, hourly wages, electricity
+for production. Total cost TC = FC + VC. Average total cost ATC = AFC + AVC.', tags: ['costs'],
+difficulty: 'easy', }, { id: 'cost-2', front: 'Define economies of scale and explain the difference
+between internal and external economies.', back: 'Economies of scale: long-run average cost falls as
+output increases. Internal: within the firm (purchasing, technical, managerial, financial
+economies). External: industry-wide benefits (skilled labour pool, infrastructure, supplier
+networks). Diseconomies of scale occur when LRAC rises due to coordination problems.', tags:
+['costs'], difficulty: 'medium', }, { id: 'cost-3', front: 'What causes diseconomies of scale and
+how do they affect the firm?', back: 'Diseconomies of scale occur when LRAC increases as the firm
+grows. Causes: communication difficulties across large organisations, worker alienation and reduced
+motivation, management inefficiency, coordination overhead. The firm becomes too large to operate
+efficiently.', tags: ['costs'], difficulty: 'medium', }, { id: 'gi-1', front: 'How does an indirect
+(specific) tax correct a negative externality?', back: 'An indirect tax equal to the marginal
+external cost shifts the supply curve upward/leftward, internalising the externality. The new
+equilibrium reduces quantity to the socially optimal level. The tax burden is shared between
+consumers (higher price) and producers (lower net price) depending on PED and PES.', tags:
+['government-intervention'], difficulty: 'medium', }, { id: 'gi-2', front: 'How does a subsidy
+correct a positive externality?', back: 'A positive externality means social benefit > private
+benefit, causing underproduction. A subsidy lowers production costs, shifting the supply curve
+downward/rightward. This increases quantity toward the socially optimal level. The subsidy should
+equal the marginal external benefit for allocative efficiency.', tags: ['government-intervention'],
+difficulty: 'medium', }, { id: 'gi-3', front: 'What is a price ceiling and what problems can it
+cause?', back: 'A price ceiling is a legal maximum price set below the equilibrium price, intended
+to make essential goods affordable (e.g. rent control, food price caps). Problems: shortages (Qd >
+Qs), black markets, reduced quality, misallocation of resources, and reduced producer surplus
+leading to lower supply in the long run.', tags: ['government-intervention'], difficulty: 'medium',
+}, ];
+
 <FlashcardDeck
   deckId="ib-economics-microeconomics"
   title="IB Economics — Microeconomics"
   description="Demand and supply, market structures, market failure, costs, and government intervention"
-  cards={[
-    {
-      id: 'ds-1',
-      front: 'State the law of demand and explain why the demand curve slopes downward.',
-      back: 'As price increases, quantity demanded decreases (ceteris paribus). Reasons: substitution effect (consumers switch to cheaper alternatives), income effect (higher prices reduce purchasing power), diminishing marginal utility.',
-      tags: ['demand-and-supply'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'ds-2',
-      front: 'What are the main determinants of price elasticity of demand (PED)?',
-      back: 'Availability of substitutes (more substitutes → more elastic), proportion of income spent (larger share → more elastic), necessity vs luxury (luxuries → more elastic), time period (longer → more elastic), definition of market (narrow → more elastic).',
-      tags: ['demand-and-supply'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'ds-3',
-      front: 'Define income elasticity of demand (YED) and interpret positive vs negative values.',
-      back: 'YED = %ΔQd / %ΔY. YED > 0: normal good (demand rises with income). YED > 1: luxury good. 0 < YED < 1: necessity. YED < 0: inferior good (demand falls as income rises, e.g. own-brand products).',
-      tags: ['demand-and-supply'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'ms-1',
-      front: 'State five key characteristics of perfect competition.',
-      back: 'Many buyers and sellers (price takers), homogeneous (identical) products, perfect information, no barriers to entry or exit, firms earn normal profit in the long run, firm faces perfectly elastic demand curve.',
-      tags: ['market-structures'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'ms-2',
-      front: 'State the key features of a monopoly and explain why it can earn abnormal profit in the long run.',
-      back: 'Single seller, unique product with no close substitutes, high barriers to entry (legal, natural, or strategic), price maker. Earns abnormal (supernormal) profit in the long run because barriers prevent new firms from entering and competing away the profit.',
-      tags: ['market-structures'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'ms-3',
-      front: 'What is an oligopoly and what is its most distinctive feature?',
-      back: 'A market dominated by a few large firms with high barriers to entry. The most distinctive feature is interdependence — each firm\'s decisions (price, output, advertising) directly affect and are affected by rivals\' actions. This leads to strategic behaviour, price rigidity (kinked demand curve), and potential collusion.',
-      tags: ['market-structures'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'mf-1',
-      front: 'What is a negative externality and how does it cause market failure?',
-      back: 'A negative externality is a spill-over cost imposed on a third party not involved in the transaction. It causes market failure because the private cost < social cost, so the free market overproduces (quantity exceeds socially optimal level). The MSC curve lies above the MPC curve.',
-      tags: ['market-failure'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'mf-2',
-      front: 'Define a public good and explain why the free market fails to provide it.',
-      back: 'A public good is non-excludable (cannot prevent non-payers from consuming) and non-rivalrous (one person\'s consumption does not reduce availability for others). The free market underprovides because of the free-rider problem — rational individuals will not pay, knowing they can consume for free.',
-      tags: ['market-failure'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'mf-3',
-      front: 'What is information failure (asymmetric information) and give an example?',
-      back: 'Occurs when buyers or sellers have unequal or incomplete information, leading to market failure. Examples: asymmetric information in healthcare (patients cannot judge doctor quality), adverse selection in insurance (high-risk individuals more likely to buy), moral hazard (insured individuals take more risks).',
-      tags: ['market-failure'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'cost-1',
-      front: 'Distinguish between fixed costs and variable costs with examples.',
-      back: 'Fixed costs (FC) do not vary with output in the short run: rent, salaries, insurance. Variable costs (VC) change directly with output: raw materials, hourly wages, electricity for production. Total cost TC = FC + VC. Average total cost ATC = AFC + AVC.',
-      tags: ['costs'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'cost-2',
-      front: 'Define economies of scale and explain the difference between internal and external economies.',
-      back: 'Economies of scale: long-run average cost falls as output increases. Internal: within the firm (purchasing, technical, managerial, financial economies). External: industry-wide benefits (skilled labour pool, infrastructure, supplier networks). Diseconomies of scale occur when LRAC rises due to coordination problems.',
-      tags: ['costs'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'cost-3',
-      front: 'What causes diseconomies of scale and how do they affect the firm?',
-      back: 'Diseconomies of scale occur when LRAC increases as the firm grows. Causes: communication difficulties across large organisations, worker alienation and reduced motivation, management inefficiency, coordination overhead. The firm becomes too large to operate efficiently.',
-      tags: ['costs'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gi-1',
-      front: 'How does an indirect (specific) tax correct a negative externality?',
-      back: 'An indirect tax equal to the marginal external cost shifts the supply curve upward/leftward, internalising the externality. The new equilibrium reduces quantity to the socially optimal level. The tax burden is shared between consumers (higher price) and producers (lower net price) depending on PED and PES.',
-      tags: ['government-intervention'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gi-2',
-      front: 'How does a subsidy correct a positive externality?',
-      back: 'A positive externality means social benefit > private benefit, causing underproduction. A subsidy lowers production costs, shifting the supply curve downward/rightward. This increases quantity toward the socially optimal level. The subsidy should equal the marginal external benefit for allocative efficiency.',
-      tags: ['government-intervention'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gi-3',
-      front: 'What is a price ceiling and what problems can it cause?',
-      back: 'A price ceiling is a legal maximum price set below the equilibrium price, intended to make essential goods affordable (e.g. rent control, food price caps). Problems: shortages (Qd > Qs), black markets, reduced quality, misallocation of resources, and reduced producer surplus leading to lower supply in the long run.',
-      tags: ['government-intervention'],
-      difficulty: 'medium',
-    },
-  ]}
+  cards={flashcardData}
 />

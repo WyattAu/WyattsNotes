@@ -1,240 +1,148 @@
 ---
-title: "A-Level Maths: Mechanics Practice"
+title: 'A-Level Maths: Mechanics Practice'
 slug: practice-mechanics
-description: "18 MCQ practice problems across six mechanics topics including kinematics, forces, work and energy, moments, momentum, and dynamics for A-Level Maths revision."
+description:
+  '18 MCQ practice problems across six mechanics topics including kinematics, forces, work and
+  energy, moments, momentum, and dynamics for A-Level Maths revision.'
 tags:
   - Maths
   - A-Level
 ---
+
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 ## A-Level Maths -- Mechanics Practice
 
 18 MCQ practice problems covering core A-Level Mechanics content.
 
 ---
+
 ### Kinematics
-<PracticeProblem questions={[
-  {
-    question: "A ball is thrown vertically upwards with speed 12 m/s. How long does it take to return to its starting point? (Take g = 9.8 m/s²)",
-    options: [
-      "A) 2.45 s",
-      "B) 1.22 s",
-      "C) 4.90 s",
-      "D) 1.83 s"
-    ],
-    correct: 0,
-    explanation: "Using v = u + at, at maximum height v = 0: 0 = 12 - 9.8t → t = 1.224 s. Time to go up and come back = 2 × 1.224 = 2.45 s."
-  },
-  {
-    question: "A velocity-time graph consists of a straight line from (0,0) to (4,8) then a horizontal line to (8,8). Find the total distance travelled.",
-    options: [
-      "A) 48 m",
-      "B) 40 m",
-      "C) 56 m",
-      "D) 32 m"
-    ],
-    correct: 0,
-    explanation: "First section (0 to 4s): area = ½ × 4 × 8 = 16 m. Second section (4 to 8s): area = 4 × 8 = 32 m. Total = 16 + 32 = 48 m."
-  },
-  {
-    question: "A projectile is launched at 20 m/s at an angle of 30° to the horizontal. Find the maximum height reached. (g = 9.8 m/s²)",
-    options: [
-      "A) 5.10 m",
-      "B) 10.2 m",
-      "C) 3.06 m",
-      "D) 7.65 m"
-    ],
-    correct: 0,
-    explanation: "Vertical component: u_y = 20sin30° = 10 m/s. Using v² = u² + 2as: 0 = 100 - 2(9.8)s → s = 100/19.6 = 5.10 m."
-  }
-]} />
+
+const practiceQuestions = [ { question: "A ball is thrown vertically upwards with speed 12 m/s. How
+long does it take to return to its starting point? (Take g = 9.8 m/s²)", options: [ "A) 2.45 s", "B)
+1.22 s", "C) 4.90 s", "D) 1.83 s" ], correct: 0, explanation: "Using v = u + at, at maximum height v
+= 0: 0 = 12 - 9.8t → t = 1.224 s. Time to go up and come back = 2 × 1.224 = 2.45 s." }, { question:
+"A velocity-time graph consists of a straight line from (0,0) to (4,8) then a horizontal line to
+(8,8). Find the total distance travelled.", options: [ "A) 48 m", "B) 40 m", "C) 56 m", "D) 32 m" ],
+correct: 0, explanation: "First section (0 to 4s): area = ½ × 4 × 8 = 16 m. Second section (4 to
+8s): area = 4 × 8 = 32 m. Total = 16 + 32 = 48 m." }, { question: "A projectile is launched at 20
+m/s at an angle of 30° to the horizontal. Find the maximum height reached. (g = 9.8 m/s²)", options:
+[ "A) 5.10 m", "B) 10.2 m", "C) 3.06 m", "D) 7.65 m" ], correct: 0, explanation: "Vertical
+component: u_y = 20sin30° = 10 m/s. Using v² = u² + 2as: 0 = 100 - 2(9.8)s → s = 100/19.6 = 5.10 m."
+} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Forces and Newton's Laws
-<PracticeProblem questions={[
-  {
-    question: "A 5 kg block on a rough horizontal surface is pushed by a horizontal force of 30 N. If the coefficient of friction is 0.4, find the acceleration. (g = 9.8 m/s²)",
-    options: [
-      "A) 2.08 m/s²",
-      "B) 3.00 m/s²",
-      "C) 1.96 m/s²",
-      "D) 2.50 m/s²"
-    ],
-    correct: 0,
-    explanation: "Friction F = μR = 0.4 × 5 × 9.8 = 19.6 N. Net force = 30 - 19.6 = 10.4 N. a = F/m = 10.4/5 = 2.08 m/s²."
-  },
-  {
-    question: "Two particles of mass 3 kg and 5 kg are connected by a light inextensible string passing over a smooth pulley. Find the acceleration of the system. (g = 9.8 m/s²)",
-    options: [
-      "A) 2.45 m/s²",
-      "B) 3.50 m/s²",
-      "C) 1.23 m/s²",
-      "D) 4.90 m/s²"
-    ],
-    correct: 0,
-    explanation: "For the system: (5g - 3g) = (5 + 3)a → 2g = 8a → a = 2g/8 = g/4 = 9.8/4 = 2.45 m/s²."
-  },
-  {
-    question: "A particle of mass 2 kg is placed on a smooth plane inclined at 30° to the horizontal. Find the acceleration down the plane. (g = 9.8 m/s²)",
-    options: [
-      "A) 4.9 m/s²",
-      "B) 9.8 m/s²",
-      "C) 2.45 m/s²",
-      "D) 8.49 m/s²"
-    ],
-    correct: 0,
-    explanation: "Component of weight down the plane = mgsin30° = 2 × 9.8 × 0.5 = 9.8 N. Since the plane is smooth, a = F/m = 9.8/2 = 4.9 m/s²."
-  }
-]} />
+
+const practiceQuestions = [ { question: "A 5 kg block on a rough horizontal surface is pushed by a
+horizontal force of 30 N. If the coefficient of friction is 0.4, find the acceleration. (g = 9.8
+m/s²)", options: [ "A) 2.08 m/s²", "B) 3.00 m/s²", "C) 1.96 m/s²", "D) 2.50 m/s²" ], correct: 0,
+explanation: "Friction F = μR = 0.4 × 5 × 9.8 = 19.6 N. Net force = 30 - 19.6 = 10.4 N. a = F/m =
+10.4/5 = 2.08 m/s²." }, { question: "Two particles of mass 3 kg and 5 kg are connected by a light
+inextensible string passing over a smooth pulley. Find the acceleration of the system. (g = 9.8
+m/s²)", options: [ "A) 2.45 m/s²", "B) 3.50 m/s²", "C) 1.23 m/s²", "D) 4.90 m/s²" ], correct: 0,
+explanation: "For the system: (5g - 3g) = (5 + 3)a → 2g = 8a → a = 2g/8 = g/4 = 9.8/4 = 2.45 m/s²."
+}, { question: "A particle of mass 2 kg is placed on a smooth plane inclined at 30° to the
+horizontal. Find the acceleration down the plane. (g = 9.8 m/s²)", options: [ "A) 4.9 m/s²", "B) 9.8
+m/s²", "C) 2.45 m/s²", "D) 8.49 m/s²" ], correct: 0, explanation: "Component of weight down the
+plane = mgsin30° = 2 × 9.8 × 0.5 = 9.8 N. Since the plane is smooth, a = F/m = 9.8/2 = 4.9 m/s²." }
+];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Work, Energy and Power
-<PracticeProblem questions={[
-  {
-    question: "A car of mass 1200 kg accelerates from rest to 25 m/s. How much work is done by the engine? (Ignore resistive forces.)",
-    options: [
-      "A) 375 kJ",
-      "B) 750 kJ",
-      "C) 30 kJ",
-      "D) 300 kJ"
-    ],
-    correct: 0,
-    explanation: "Work done = change in KE = ½mv² - 0 = ½ × 1200 × 25² = 600 × 625 = 375,000 J = 375 kJ."
-  },
-  {
-    question: "A 2 kg object is released from rest at a height of 10 m. Find its speed just before it hits the ground, using energy conservation. (g = 9.8 m/s²)",
-    options: [
-      "A) 14 m/s",
-      "B) 9.9 m/s",
-      "C) 19.8 m/s",
-      "D) 7.0 m/s"
-    ],
-    correct: 0,
-    explanation: "mgh = ½mv² → v² = 2gh = 2 × 9.8 × 10 = 196 → v = √196 = 14 m/s."
-  },
-  {
-    question: "A motor lifts a 200 kg load through a height of 15 m in 10 s. What is the power output of the motor? (g = 9.8 m/s²)",
-    options: [
-      "A) 2940 W",
-      "B) 1960 W",
-      "C) 5880 W",
-      "D) 980 W"
-    ],
-    correct: 0,
-    explanation: "Work done = mgh = 200 × 9.8 × 15 = 29,400 J. Power = work/time = 29,400/10 = 2,940 W = 2.94 kW."
-  }
-]} />
+
+const practiceQuestions = [ { question: "A car of mass 1200 kg accelerates from rest to 25 m/s. How
+much work is done by the engine? (Ignore resistive forces.)", options: [ "A) 375 kJ", "B) 750 kJ",
+"C) 30 kJ", "D) 300 kJ" ], correct: 0, explanation: "Work done = change in KE = ½mv² - 0 = ½ × 1200
+× 25² = 600 × 625 = 375,000 J = 375 kJ." }, { question: "A 2 kg object is released from rest at a
+height of 10 m. Find its speed just before it hits the ground, using energy conservation. (g = 9.8
+m/s²)", options: [ "A) 14 m/s", "B) 9.9 m/s", "C) 19.8 m/s", "D) 7.0 m/s" ], correct: 0,
+explanation: "mgh = ½mv² → v² = 2gh = 2 × 9.8 × 10 = 196 → v = √196 = 14 m/s." }, { question: "A
+motor lifts a 200 kg load through a height of 15 m in 10 s. What is the power output of the motor?
+(g = 9.8 m/s²)", options: [ "A) 2940 W", "B) 1960 W", "C) 5880 W", "D) 980 W" ], correct: 0,
+explanation: "Work done = mgh = 200 × 9.8 × 15 = 29,400 J. Power = work/time = 29,400/10 = 2,940 W =
+2.94 kW." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Moments
-<PracticeProblem questions={[
-  {
-    question: "A uniform rod AB of length 3 m and mass 8 kg is pivoted at A. A force of 60 N is applied vertically upwards at B. Find the magnitude of the reaction at the pivot. (g = 9.8 m/s²)",
-    options: [
-      "A) 81.6 N",
-      "B) 78.4 N",
-      "C) 18.4 N",
-      "D) 60 N"
-    ],
-    correct: 0,
-    explanation: "Taking moments about A: 60 × 3 - 8 × 9.8 × 1.5 = 0 for equilibrium check. Sum of vertical forces: R + 60 = 8 × 9.8 = 78.4 N → R = 18.4 N. The pivot reaction is 18.4 N. Correction: R = 78.4 - 60 = 18.4 N."
-  },
-  {
-    question: "A non-uniform plank AB of length 4 m and mass 20 kg is supported at A and at a point C, 1 m from B. The reaction at A is 120 N. Find the distance of the centre of mass from A. (g = 9.8 m/s²)",
-    options: [
-      "A) 1.64 m",
-      "B) 2.00 m",
-      "C) 2.36 m",
-      "D) 1.20 m"
-    ],
-    correct: 0,
-    explanation: "Weight = 20 × 9.8 = 196 N. Taking moments about A: R_C × 3 - 196 × x̄ = 0. R_C = 196 - 120 = 76 N. So 76 × 3 = 196x̄ → x̄ = 228/196 = 1.163... Wait: let me recalculate. R_A = 120, so R_C = 196 - 120 = 76 N. Moments about A: 76 × 3 = 196 × x̄ → x̄ = 228/196 = 1.16 m. None match exactly. The closest intended answer uses moments about C: 120 × 3 = 196 × (3 - x̄) → 360 = 196(3-x̄) → 3-x̄ = 360/196 = 1.837 → x̄ = 1.16 m. Using rounding: approximately 1.16 m, closest to D. The correct answer is 1.16 m."
-  },
-  {
-    question: "A uniform ladder of length 5 m and mass 15 kg rests against a smooth vertical wall with its base on rough horizontal ground. The ladder makes an angle of 65° with the ground. Find the minimum coefficient of friction at the ground. (g = 9.8 m/s²)",
-    options: [
-      "A) 0.233",
-      "B) 0.117",
-      "C) 0.466",
-      "D) 0.350"
-    ],
-    correct: 0,
-    explanation: "Weight = 15 × 9.8 = 147 N. The wall is smooth, so reaction R_w is horizontal. Resolving vertically: R_g = 147 N. Taking moments about the base: R_w × 5sin65° = 147 × 2.5cos65°. R_w = 147 × 2.5cos65° / (5sin65°) = 147 × tan65°/2 ≈ 147 × 0.4663/2. R_w = 147 × 0.4663 = 68.5. Wait: R_w = (147 × 2.5 × cos65°)/(5 × sin65°) = (147/2) × cot65° = 73.5 × 0.4663 = 34.27 N. F = μR_g → μ = 34.27/147 = 0.233."
-  }
-]} />
+
+const practiceQuestions = [ { question: "A uniform rod AB of length 3 m and mass 8 kg is pivoted at
+A. A force of 60 N is applied vertically upwards at B. Find the magnitude of the reaction at the
+pivot. (g = 9.8 m/s²)", options: [ "A) 81.6 N", "B) 78.4 N", "C) 18.4 N", "D) 60 N" ], correct: 0,
+explanation: "Taking moments about A: 60 × 3 - 8 × 9.8 × 1.5 = 0 for equilibrium check. Sum of
+vertical forces: R + 60 = 8 × 9.8 = 78.4 N → R = 18.4 N. The pivot reaction is 18.4 N. Correction: R
+= 78.4 - 60 = 18.4 N." }, { question: "A non-uniform plank AB of length 4 m and mass 20 kg is
+supported at A and at a point C, 1 m from B. The reaction at A is 120 N. Find the distance of the
+centre of mass from A. (g = 9.8 m/s²)", options: [ "A) 1.64 m", "B) 2.00 m", "C) 2.36 m", "D) 1.20
+m" ], correct: 0, explanation: "Weight = 20 × 9.8 = 196 N. Taking moments about A: R_C × 3 - 196 × x̄
+= 0. R_C = 196 - 120 = 76 N. So 76 × 3 = 196x̄ → x̄ = 228/196 = 1.163... Wait: let me recalculate. R_A
+= 120, so R_C = 196 - 120 = 76 N. Moments about A: 76 × 3 = 196 × x̄ → x̄ = 228/196 = 1.16 m. None
+match exactly. The closest intended answer uses moments about C: 120 × 3 = 196 × (3 - x̄) → 360 =
+196(3-x̄) → 3-x̄ = 360/196 = 1.837 → x̄ = 1.16 m. Using rounding: approximately 1.16 m, closest to D.
+The correct answer is 1.16 m." }, { question: "A uniform ladder of length 5 m and mass 15 kg rests
+against a smooth vertical wall with its base on rough horizontal ground. The ladder makes an angle
+of 65° with the ground. Find the minimum coefficient of friction at the ground. (g = 9.8 m/s²)",
+options: [ "A) 0.233", "B) 0.117", "C) 0.466", "D) 0.350" ], correct: 0, explanation: "Weight = 15 ×
+9.8 = 147 N. The wall is smooth, so reaction R_w is horizontal. Resolving vertically: R_g = 147 N.
+Taking moments about the base: R_w × 5sin65° = 147 × 2.5cos65°. R_w = 147 × 2.5cos65° / (5sin65°) =
+147 × tan65°/2 ≈ 147 × 0.4663/2. R_w = 147 × 0.4663 = 68.5. Wait: R_w = (147 × 2.5 × cos65°)/(5 ×
+sin65°) = (147/2) × cot65° = 73.5 × 0.4663 = 34.27 N. F = μR_g → μ = 34.27/147 = 0.233." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Momentum
-<PracticeProblem questions={[
-  {
-    question: "A 3 kg ball moving at 5 m/s collides with a stationary 2 kg ball. After the collision, the 3 kg ball moves at 2 m/s in the same direction. Find the velocity of the 2 kg ball.",
-    options: [
-      "A) 4.5 m/s",
-      "B) 3.0 m/s",
-      "C) 7.5 m/s",
-      "D) 5.5 m/s"
-    ],
-    correct: 0,
-    explanation: "Conservation of momentum: 3(5) + 2(0) = 3(2) + 2(v). 15 = 6 + 2v → 2v = 9 → v = 4.5 m/s."
-  },
-  {
-    question: "A 4 kg object experiences an impulse of 24 Ns. If it was initially moving at 3 m/s, find its final velocity.",
-    options: [
-      "A) 9 m/s",
-      "B) 6 m/s",
-      "C) 12 m/s",
-      "D) 3 m/s"
-    ],
-    correct: 0,
-    explanation: "Impulse = change in momentum = m(v - u). 24 = 4(v - 3) → v - 3 = 6 → v = 9 m/s."
-  },
-  {
-    question: "Two particles of equal mass m collide head-on with speeds u and 2u respectively. After the collision they move in opposite directions. If the collision is elastic, find the final speeds.",
-    options: [
-      "A) Each moves at u/2 in opposite directions",
-      "B) Each rebounds with speed 2u and u respectively",
-      "C) They exchange velocities: first moves at 2u, second at u",
-      "D) Both move at 3u/2 in the same direction"
-    ],
-    correct: 0,
-    explanation: "For an elastic collision of equal masses, the particles exchange velocities. The first particle (moving at u) rebounds at 2u, and the second (moving at 2u towards it) rebounds at u. Actually, equal mass elastic collisions result in velocity exchange: particle 1 final = 2u (in original direction of particle 2), particle 2 final = u (in original direction of particle 1). But since they're head-on, the signs reverse. Momentum: mu - 2mu = -mu. After: m(v₁) + m(v₂) = -mu and KE conserved. The answer is they exchange velocities, with directions reversed. Answer C is closest: they exchange velocities."
-  }
-]} />
+
+const practiceQuestions = [ { question: "A 3 kg ball moving at 5 m/s collides with a stationary 2 kg
+ball. After the collision, the 3 kg ball moves at 2 m/s in the same direction. Find the velocity of
+the 2 kg ball.", options: [ "A) 4.5 m/s", "B) 3.0 m/s", "C) 7.5 m/s", "D) 5.5 m/s" ], correct: 0,
+explanation: "Conservation of momentum: 3(5) + 2(0) = 3(2) + 2(v). 15 = 6 + 2v → 2v = 9 → v = 4.5
+m/s." }, { question: "A 4 kg object experiences an impulse of 24 Ns. If it was initially moving at 3
+m/s, find its final velocity.", options: [ "A) 9 m/s", "B) 6 m/s", "C) 12 m/s", "D) 3 m/s" ],
+correct: 0, explanation: "Impulse = change in momentum = m(v - u). 24 = 4(v - 3) → v - 3 = 6 → v = 9
+m/s." }, { question: "Two particles of equal mass m collide head-on with speeds u and 2u
+respectively. After the collision they move in opposite directions. If the collision is elastic,
+find the final speeds.", options: [ "A) Each moves at u/2 in opposite directions", "B) Each rebounds
+with speed 2u and u respectively", "C) They exchange velocities: first moves at 2u, second at u",
+"D) Both move at 3u/2 in the same direction" ], correct: 0, explanation: "For an elastic collision
+of equal masses, the particles exchange velocities. The first particle (moving at u) rebounds at 2u,
+and the second (moving at 2u towards it) rebounds at u. Actually, equal mass elastic collisions
+result in velocity exchange: particle 1 final = 2u (in original direction of particle 2), particle 2
+final = u (in original direction of particle 1). But since they're head-on, the signs reverse.
+Momentum: mu - 2mu = -mu. After: m(v₁) + m(v₂) = -mu and KE conserved. The answer is they exchange
+velocities, with directions reversed. Answer C is closest: they exchange velocities." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Dynamics of Particles
-<PracticeProblem questions={[
-  {
-    question: "A 6 kg block is placed on a rough plane inclined at 35° to the horizontal. The coefficient of friction is 0.3. Find the acceleration if the block is released from rest. (g = 9.8 m/s²)",
-    options: [
-      "A) 3.24 m/s²",
-      "B) 1.86 m/s²",
-      "C) 4.90 m/s²",
-      "D) 0.62 m/s²"
-    ],
-    correct: 0,
-    explanation: "Component down plane = mgsin35° = 6 × 9.8 × sin35° = 33.74 N. Normal reaction R = mgcos35° = 6 × 9.8 × cos35° = 48.17 N. Friction = μR = 0.3 × 48.17 = 14.45 N. Net force = 33.74 - 14.45 = 19.29 N. a = 19.29/6 = 3.22 m/s²."
-  },
-  {
-    question: "Two masses of 4 kg and 6 kg are connected by a string over a smooth pulley on an incline. The 4 kg mass hangs vertically and the 6 kg mass is on a smooth plane at 30°. Find the acceleration.",
-    options: [
-      "A) 1.40 m/s²",
-      "B) 2.80 m/s²",
-      "C) 0.98 m/s²",
-      "D) 4.20 m/s²"
-    ],
-    correct: 0,
-    explanation: "For the 4 kg mass: T - 4g = -4a. For the 6 kg mass on the incline: T - 6gsin30° = 6a. Subtracting: 6gsin30° - 4g = 10a → 29.4 - 39.2 = 10a. Wait: T - 4g = -4a → T = 4g - 4a. T - 6g(0.5) = 6a → T = 6a + 3g. Equating: 4g - 4a = 6a + 3g → g = 10a → a = g/10 = 0.98 m/s²."
-  },
-  {
-    question: "A force of F = (3i + 4j) N acts on a particle of mass 2 kg initially at rest. Find the magnitude of the velocity after 3 seconds.",
-    options: [
-      "A) 7.5 m/s",
-      "B) 10.5 m/s",
-      "C) 5.0 m/s",
-      "D) 15.0 m/s"
-    ],
-    correct: 0,
-    explanation: "|F| = √(9+16) = 5 N. a = F/m = 5/2 = 2.5 m/s². v = u + at = 0 + 2.5 × 3 = 7.5 m/s. Alternatively: a = (1.5i + 2j), v = (4.5i + 6j), |v| = √(20.25+36) = √56.25 = 7.5 m/s."
-  }
-]} />
+
+const practiceQuestions = [ { question: "A 6 kg block is placed on a rough plane inclined at 35° to
+the horizontal. The coefficient of friction is 0.3. Find the acceleration if the block is released
+from rest. (g = 9.8 m/s²)", options: [ "A) 3.24 m/s²", "B) 1.86 m/s²", "C) 4.90 m/s²", "D) 0.62
+m/s²" ], correct: 0, explanation: "Component down plane = mgsin35° = 6 × 9.8 × sin35° = 33.74 N.
+Normal reaction R = mgcos35° = 6 × 9.8 × cos35° = 48.17 N. Friction = μR = 0.3 × 48.17 = 14.45 N.
+Net force = 33.74 - 14.45 = 19.29 N. a = 19.29/6 = 3.22 m/s²." }, { question: "Two masses of 4 kg
+and 6 kg are connected by a string over a smooth pulley on an incline. The 4 kg mass hangs
+vertically and the 6 kg mass is on a smooth plane at 30°. Find the acceleration.", options: [ "A)
+1.40 m/s²", "B) 2.80 m/s²", "C) 0.98 m/s²", "D) 4.20 m/s²" ], correct: 0, explanation: "For the 4 kg
+mass: T - 4g = -4a. For the 6 kg mass on the incline: T - 6gsin30° = 6a. Subtracting: 6gsin30° - 4g
+= 10a → 29.4 - 39.2 = 10a. Wait: T - 4g = -4a → T = 4g - 4a. T - 6g(0.5) = 6a → T = 6a + 3g.
+Equating: 4g - 4a = 6a + 3g → g = 10a → a = g/10 = 0.98 m/s²." }, { question: "A force of F = (3i +
+4j) N acts on a particle of mass 2 kg initially at rest. Find the magnitude of the velocity after 3
+seconds.", options: [ "A) 7.5 m/s", "B) 10.5 m/s", "C) 5.0 m/s", "D) 15.0 m/s" ], correct: 0,
+explanation: "|F| = √(9+16) = 5 N. a = F/m = 5/2 = 2.5 m/s². v = u + at = 0 + 2.5 × 3 = 7.5 m/s.
+Alternatively: a = (1.5i + 2j), v = (4.5i + 6j), |v| = √(20.25+36) = √56.25 = 7.5 m/s." } ];
+
+<PracticeProblem questions={practiceQuestions} />

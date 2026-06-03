@@ -11,150 +11,102 @@ description:
 
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
+const flashcardData = [ { id: "ib-maths-statistics-001", front: "Define the mean, median, and
+mode.", back: "Mean: sum of all values divided by the number of values (x̄ = Σxᵢ/n). Median: the
+middle value when data is ordered (or average of two middle values for even n). Mode: the most
+frequently occurring value. A data set can have no mode, one mode, or multiple modes.", tags:
+["descriptive statistics", "measures of central tendency"], difficulty: "easy" }, { id:
+"ib-maths-statistics-002", front: "How do you calculate the mean of grouped data?", back: "Estimated
+mean = Σ(fᵢ × mᵢ)/Σfᵢ, where fᵢ is the frequency of class i and mᵢ is the midpoint of class i.
+Example: class 10-20 with frequency 5 gives contribution 5 × 15 = 75. This is an estimate since
+individual values within each class are unknown.", tags: ["descriptive statistics", "grouped data"],
+difficulty: "easy" }, { id: "ib-maths-statistics-003", front: "State the variance formula for a
+population and a sample.", back: "Population variance: σ² = Σ(xᵢ − μ)²/N. Sample variance: s² = Σ(xᵢ
+− x̄)²/(n−1) (using Bessel's correction). For frequency data: σ² = Σfᵢ(xᵢ − x̄)²/Σfᵢ. Variance is
+always non-negative; σ = 0 only when all values are identical.", tags: ["descriptive statistics",
+"spread"], difficulty: "medium" }, { id: "ib-maths-statistics-004", front: "What is standard
+deviation and how does it relate to variance?", back: "Standard deviation σ = √(variance). It
+measures the typical distance of data points from the mean, in the same units as the data. For X ~
+N(μ, σ²), approximately 68% of data lies within μ ± σ, 95% within μ ± 2σ, and 99.7% within μ ± 3σ.",
+tags: ["descriptive statistics", "spread"], difficulty: "easy" }, { id: "ib-maths-statistics-005",
+front: "State the addition and multiplication rules of probability.", back: "Addition rule: P(A ∪ B)
+= P(A) + P(B) − P(A ∩ B). For mutually exclusive events: P(A ∪ B) = P(A) + P(B). Multiplication
+rule: P(A ∩ B) = P(A|B) · P(B). For independent events: P(A ∩ B) = P(A) · P(B).", tags:
+["probability", "rules"], difficulty: "medium" }, { id: "ib-maths-statistics-006", front: "What is
+the difference between independent and mutually exclusive events?", back: "Independent: P(A ∩ B) =
+P(A) · P(B); the occurrence of one does not affect the other. Mutually exclusive (disjoint): P(A ∩
+B) = 0; they cannot occur simultaneously. If two events are both independent AND have non-zero
+probability, they cannot be mutually exclusive (and vice versa).", tags: ["probability",
+"definitions"], difficulty: "medium" }, { id: "ib-maths-statistics-007", front: "What are the four
+conditions for a binomial distribution B(n, p)?", back: "1) Fixed number of trials (n). 2) Each
+trial has exactly two outcomes (success/failure). 3) Probability of success (p) is constant for each
+trial. 4) Trials are independent. Example: number of sixes in 10 dice rolls follows B(10, 1/6).",
+tags: ["probability", "binomial"], difficulty: "easy" }, { id: "ib-maths-statistics-008", front:
+"State the mean and variance of a binomial distribution B(n, p).", back: "Mean: E(X) = np. Variance:
+Var(X) = np(1 − p). Standard deviation: σ = √(np(1 − p)). Example: X ~ B(20, 0.3) → E(X) = 6, Var(X)
+= 20(0.3)(0.7) = 4.2, σ = √4.2 ≈ 2.05.", tags: ["probability", "binomial"], difficulty: "easy" }, {
+id: "ib-maths-statistics-009", front: "What are the key properties of the normal distribution N(μ,
+σ²)?", back: "Bell-shaped, symmetric about the mean μ. Mean = median = mode = μ. Total area under
+the curve = 1. Defined for all real x. Empirical rule: 68% within μ ± σ, 95% within μ ± 2σ, 99.7%
+within μ ± 3σ. The standard normal is Z ~ N(0, 1) where Z = (X − μ)/σ.", tags: ["probability",
+"normal"], difficulty: "medium" }, { id: "ib-maths-statistics-010", front: "What is the standard
+normal distribution Z and how is it used?", back: "Z ~ N(0, 1) is obtained by standardising: Z = (X
+− μ)/σ. Any normal variable X ~ N(μ, σ²) can be converted to Z. Use Z-tables or a GDC to find
+probabilities: P(Z < a) = Φ(a). Example: P(X < 85) for X ~ N(70, 10²): Z = (85−70)/10 = 1.5, P(Z <
+1.5) ≈ 0.9332.", tags: ["probability", "normal"], difficulty: "medium" }, { id:
+"ib-maths-statistics-011", front: "How do you use the inverse normal distribution?", back: "Given a
+probability p, find the value x such that P(X < x) = p. For Z ~ N(0,1): use the inverse normal
+function (invNorm on GDC). For X ~ N(μ, σ²): x = μ + σ × z_p, where z_p = invNorm(p). Example: 90th
+percentile of N(100, 15²): x = 100 + 15(1.282) ≈ 119.2.", tags: ["probability", "normal"],
+difficulty: "hard" }, { id: "ib-maths-statistics-012", front: "How do you interpret Pearson's
+product-moment correlation coefficient (PMCC), r?", back: "r ranges from −1 to +1. r = +1: perfect
+positive linear correlation. r = −1: perfect negative linear correlation. r = 0: no linear
+correlation. |r| > 0.8: strong correlation. 0.5 < |r| < 0.8: moderate. |r| < 0.5: weak. Always check
+the scatter plot — r only measures linear association.", tags: ["correlation", "PMCC"], difficulty:
+"medium" }, { id: "ib-maths-statistics-013", front: "State the equation of the least squares
+regression line of y on x.", back: "y = a + bx, where b = S_xy/S_xx = Σ(xᵢ−x̄)(yᵢ−ȳ) / Σ(xᵢ−x̄)² and a
+= ȳ − bx̄. The line minimises Σ(yᵢ − (a+bxᵢ))². The regression line of y on x passes through (x̄, ȳ).
+Note: the regression line of x on y is different: x = a' + b'y, with b' = S_xy/S_yy.", tags:
+["correlation", "regression"], difficulty: "hard" }, { id: "ib-maths-statistics-014", front: "What
+are the steps in conducting a hypothesis test?", back: "1) State H₀ and H₁. 2) Choose significance
+level α (commonly 0.05 or 0.10). 3) Identify the test statistic and its distribution under H₀. 4)
+Calculate the test statistic or p-value from sample data. 5) Compare p-value to α, or statistic to
+critical value(s). 6) Make decision: reject or fail to reject H₀. 7) State conclusion in context.",
+tags: ["hypothesis testing", "method"], difficulty: "medium" }, { id: "ib-maths-statistics-015",
+front: "What is a null hypothesis (H₀) and when is it rejected?", back: "H₀ states there is no
+effect, no difference, or no association (e.g., μ = 50, ρ = 0). The alternative H₁ claims otherwise
+(e.g., μ ≠ 50, μ > 50). H₀ is rejected when the p-value is less than the significance level α, or
+when the test statistic falls in the critical region.", tags: ["hypothesis testing", "definitions"],
+difficulty: "easy" }, { id: "ib-maths-statistics-016", front: "What is a significance level and what
+does α = 0.05 mean?", back: "The significance level α is the probability of incorrectly rejecting H₀
+when it is true (Type I error). α = 0.05 means we accept a 5% risk of falsely rejecting H₀. Common
+values: 0.01 (strict), 0.05 (standard), 0.10 (lenient). Lower α reduces Type I error but increases
+Type II error.", tags: ["hypothesis testing", "significance"], difficulty: "medium" }, { id:
+"ib-maths-statistics-017", front: "Define Type I and Type II errors in hypothesis testing.", back:
+"Type I error: rejecting H₀ when it is true (false positive). Probability = α. Type II error:
+failing to reject H₀ when it is false (false negative). Probability = β. The power of a test is 1 −
+β = P(rejecting H₀ | H₀ is false). Increasing sample size reduces both error types.", tags:
+["hypothesis testing", "errors"], difficulty: "hard" }, { id: "ib-maths-statistics-018", front:
+"When and how do you perform a chi-squared test?", back: "Chi-squared tests are used for: (1)
+Goodness of fit: does observed data fit an expected distribution? (2) Independence: are two
+categorical variables independent? Test statistic: χ² = Σ(Oᵢ − Eᵢ)²/Eᵢ. Compare to critical value
+from χ² distribution with degrees of freedom ν. If χ²_calc > χ²_crit, reject H₀. Conditions: all Eᵢ
+≥ 5.", tags: ["hypothesis testing", "chi-squared"], difficulty: "hard" }, { id:
+"ib-maths-statistics-019", front: "What is a contingency table and how is it used in a chi-squared
+test for independence?", back: "A contingency table displays observed frequencies of two categorical
+variables in rows and columns. Expected frequency for each cell: Eᵢⱼ = (row total × column total) /
+grand total. Degrees of freedom: ν = (rows − 1)(cols − 1). The test checks whether the variables are
+independent or associated.", tags: ["hypothesis testing", "chi-squared"], difficulty: "hard" }, {
+id: "ib-maths-statistics-020", front: "What is Spearman's rank correlation coefficient and when is
+it used?", back: "rₛ measures the strength and direction of monotonic (not necessarily linear)
+association between two variables ranked in order. Formula: rₛ = 1 − 6Σdᵢ²/(n(n²−1)) where dᵢ = rank
+difference (for data with no tied ranks). Values range from −1 to +1. Use when data is ordinal or
+when the relationship is non-linear but monotonic.", tags: ["correlation", "Spearman"], difficulty:
+"hard" } ];
+
 <FlashcardDeck
   deckId="ib-maths-statistics"
   title="IB Maths Statistics and Probability"
   description="Key statistics and probability concepts for IB Maths SL and HL, including distributions, hypothesis testing, and regression."
-  cards={[
-    {
-      id: "ib-maths-statistics-001",
-      front: "Define the mean, median, and mode.",
-      back: "Mean: sum of all values divided by the number of values (x̄ = Σxᵢ/n). Median: the middle value when data is ordered (or average of two middle values for even n). Mode: the most frequently occurring value. A data set can have no mode, one mode, or multiple modes.",
-      tags: ["descriptive statistics", "measures of central tendency"],
-      difficulty: "easy"
-    },
-    {
-      id: "ib-maths-statistics-002",
-      front: "How do you calculate the mean of grouped data?",
-      back: "Estimated mean = Σ(fᵢ × mᵢ)/Σfᵢ, where fᵢ is the frequency of class i and mᵢ is the midpoint of class i. Example: class 10-20 with frequency 5 gives contribution 5 × 15 = 75. This is an estimate since individual values within each class are unknown.",
-      tags: ["descriptive statistics", "grouped data"],
-      difficulty: "easy"
-    },
-    {
-      id: "ib-maths-statistics-003",
-      front: "State the variance formula for a population and a sample.",
-      back: "Population variance: σ² = Σ(xᵢ − μ)²/N. Sample variance: s² = Σ(xᵢ − x̄)²/(n−1) (using Bessel's correction). For frequency data: σ² = Σfᵢ(xᵢ − x̄)²/Σfᵢ. Variance is always non-negative; σ = 0 only when all values are identical.",
-      tags: ["descriptive statistics", "spread"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-004",
-      front: "What is standard deviation and how does it relate to variance?",
-      back: "Standard deviation σ = √(variance). It measures the typical distance of data points from the mean, in the same units as the data. For X ~ N(μ, σ²), approximately 68% of data lies within μ ± σ, 95% within μ ± 2σ, and 99.7% within μ ± 3σ.",
-      tags: ["descriptive statistics", "spread"],
-      difficulty: "easy"
-    },
-    {
-      id: "ib-maths-statistics-005",
-      front: "State the addition and multiplication rules of probability.",
-      back: "Addition rule: P(A ∪ B) = P(A) + P(B) − P(A ∩ B). For mutually exclusive events: P(A ∪ B) = P(A) + P(B). Multiplication rule: P(A ∩ B) = P(A|B) · P(B). For independent events: P(A ∩ B) = P(A) · P(B).",
-      tags: ["probability", "rules"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-006",
-      front: "What is the difference between independent and mutually exclusive events?",
-      back: "Independent: P(A ∩ B) = P(A) · P(B); the occurrence of one does not affect the other. Mutually exclusive (disjoint): P(A ∩ B) = 0; they cannot occur simultaneously. If two events are both independent AND have non-zero probability, they cannot be mutually exclusive (and vice versa).",
-      tags: ["probability", "definitions"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-007",
-      front: "What are the four conditions for a binomial distribution B(n, p)?",
-      back: "1) Fixed number of trials (n). 2) Each trial has exactly two outcomes (success/failure). 3) Probability of success (p) is constant for each trial. 4) Trials are independent. Example: number of sixes in 10 dice rolls follows B(10, 1/6).",
-      tags: ["probability", "binomial"],
-      difficulty: "easy"
-    },
-    {
-      id: "ib-maths-statistics-008",
-      front: "State the mean and variance of a binomial distribution B(n, p).",
-      back: "Mean: E(X) = np. Variance: Var(X) = np(1 − p). Standard deviation: σ = √(np(1 − p)). Example: X ~ B(20, 0.3) → E(X) = 6, Var(X) = 20(0.3)(0.7) = 4.2, σ = √4.2 ≈ 2.05.",
-      tags: ["probability", "binomial"],
-      difficulty: "easy"
-    },
-    {
-      id: "ib-maths-statistics-009",
-      front: "What are the key properties of the normal distribution N(μ, σ²)?",
-      back: "Bell-shaped, symmetric about the mean μ. Mean = median = mode = μ. Total area under the curve = 1. Defined for all real x. Empirical rule: 68% within μ ± σ, 95% within μ ± 2σ, 99.7% within μ ± 3σ. The standard normal is Z ~ N(0, 1) where Z = (X − μ)/σ.",
-      tags: ["probability", "normal"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-010",
-      front: "What is the standard normal distribution Z and how is it used?",
-      back: "Z ~ N(0, 1) is obtained by standardising: Z = (X − μ)/σ. Any normal variable X ~ N(μ, σ²) can be converted to Z. Use Z-tables or a GDC to find probabilities: P(Z < a) = Φ(a). Example: P(X < 85) for X ~ N(70, 10²): Z = (85−70)/10 = 1.5, P(Z < 1.5) ≈ 0.9332.",
-      tags: ["probability", "normal"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-011",
-      front: "How do you use the inverse normal distribution?",
-      back: "Given a probability p, find the value x such that P(X < x) = p. For Z ~ N(0,1): use the inverse normal function (invNorm on GDC). For X ~ N(μ, σ²): x = μ + σ × z_p, where z_p = invNorm(p). Example: 90th percentile of N(100, 15²): x = 100 + 15(1.282) ≈ 119.2.",
-      tags: ["probability", "normal"],
-      difficulty: "hard"
-    },
-    {
-      id: "ib-maths-statistics-012",
-      front: "How do you interpret Pearson's product-moment correlation coefficient (PMCC), r?",
-      back: "r ranges from −1 to +1. r = +1: perfect positive linear correlation. r = −1: perfect negative linear correlation. r = 0: no linear correlation. |r| > 0.8: strong correlation. 0.5 < |r| < 0.8: moderate. |r| < 0.5: weak. Always check the scatter plot — r only measures linear association.",
-      tags: ["correlation", "PMCC"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-013",
-      front: "State the equation of the least squares regression line of y on x.",
-      back: "y = a + bx, where b = S_xy/S_xx = Σ(xᵢ−x̄)(yᵢ−ȳ) / Σ(xᵢ−x̄)² and a = ȳ − bx̄. The line minimises Σ(yᵢ − (a+bxᵢ))². The regression line of y on x passes through (x̄, ȳ). Note: the regression line of x on y is different: x = a' + b'y, with b' = S_xy/S_yy.",
-      tags: ["correlation", "regression"],
-      difficulty: "hard"
-    },
-    {
-      id: "ib-maths-statistics-014",
-      front: "What are the steps in conducting a hypothesis test?",
-      back: "1) State H₀ and H₁. 2) Choose significance level α (commonly 0.05 or 0.10). 3) Identify the test statistic and its distribution under H₀. 4) Calculate the test statistic or p-value from sample data. 5) Compare p-value to α, or statistic to critical value(s). 6) Make decision: reject or fail to reject H₀. 7) State conclusion in context.",
-      tags: ["hypothesis testing", "method"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-015",
-      front: "What is a null hypothesis (H₀) and when is it rejected?",
-      back: "H₀ states there is no effect, no difference, or no association (e.g., μ = 50, ρ = 0). The alternative H₁ claims otherwise (e.g., μ ≠ 50, μ > 50). H₀ is rejected when the p-value is less than the significance level α, or when the test statistic falls in the critical region.",
-      tags: ["hypothesis testing", "definitions"],
-      difficulty: "easy"
-    },
-    {
-      id: "ib-maths-statistics-016",
-      front: "What is a significance level and what does α = 0.05 mean?",
-      back: "The significance level α is the probability of incorrectly rejecting H₀ when it is true (Type I error). α = 0.05 means we accept a 5% risk of falsely rejecting H₀. Common values: 0.01 (strict), 0.05 (standard), 0.10 (lenient). Lower α reduces Type I error but increases Type II error.",
-      tags: ["hypothesis testing", "significance"],
-      difficulty: "medium"
-    },
-    {
-      id: "ib-maths-statistics-017",
-      front: "Define Type I and Type II errors in hypothesis testing.",
-      back: "Type I error: rejecting H₀ when it is true (false positive). Probability = α. Type II error: failing to reject H₀ when it is false (false negative). Probability = β. The power of a test is 1 − β = P(rejecting H₀ | H₀ is false). Increasing sample size reduces both error types.",
-      tags: ["hypothesis testing", "errors"],
-      difficulty: "hard"
-    },
-    {
-      id: "ib-maths-statistics-018",
-      front: "When and how do you perform a chi-squared test?",
-      back: "Chi-squared tests are used for: (1) Goodness of fit: does observed data fit an expected distribution? (2) Independence: are two categorical variables independent? Test statistic: χ² = Σ(Oᵢ − Eᵢ)²/Eᵢ. Compare to critical value from χ² distribution with degrees of freedom ν. If χ²_calc > χ²_crit, reject H₀. Conditions: all Eᵢ ≥ 5.",
-      tags: ["hypothesis testing", "chi-squared"],
-      difficulty: "hard"
-    },
-    {
-      id: "ib-maths-statistics-019",
-      front: "What is a contingency table and how is it used in a chi-squared test for independence?",
-      back: "A contingency table displays observed frequencies of two categorical variables in rows and columns. Expected frequency for each cell: Eᵢⱼ = (row total × column total) / grand total. Degrees of freedom: ν = (rows − 1)(cols − 1). The test checks whether the variables are independent or associated.",
-      tags: ["hypothesis testing", "chi-squared"],
-      difficulty: "hard"
-    },
-    {
-      id: "ib-maths-statistics-020",
-      front: "What is Spearman's rank correlation coefficient and when is it used?",
-      back: "rₛ measures the strength and direction of monotonic (not necessarily linear) association between two variables ranked in order. Formula: rₛ = 1 − 6Σdᵢ²/(n(n²−1)) where dᵢ = rank difference (for data with no tied ranks). Values range from −1 to +1. Use when data is ordinal or when the relationship is non-linear but monotonic.",
-      tags: ["correlation", "Spearman"],
-      difficulty: "hard"
-    }
-  ]}
+  cards={flashcardData}
 />

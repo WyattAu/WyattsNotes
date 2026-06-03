@@ -21,263 +21,177 @@ elasticity, market failure, government intervention, theory of the firm, and mar
 
 ### Demand and Supply
 
-<PracticeProblem
-  questions={[
-    {
-      question:
-        'An increase in the price of coffee causes a movement along the demand curve. What is this effect called?',
-      options: [
-        'A) An increase in demand',
-        'B) A decrease in demand',
-        'C) A contraction in demand',
-        'D) A shift in demand',
-      ],
-      correct: 2,
-      explanation:
-        "A movement along a demand curve caused by a change in the good's own price is called a contraction (decrease in quantity demanded) when price rises, or an extension (increase in quantity demanded) when price falls. A 'shift' in demand refers to a change caused by non-price factors (income, preferences, prices of substitutes/complements). 'Demand' refers to the entire curve, not a single point.",
-    },
-    {
-      question: 'Consumer surplus is defined as:',
-      options: [
-        'A) The revenue earned by producers above their costs',
-        'B) The difference between what consumers are willing to pay and what they actually pay',
-        'C) The total expenditure by consumers on a good',
-        'D) The profit made by firms in a competitive market',
-      ],
-      correct: 1,
-      explanation:
-        'Consumer surplus is the difference between the maximum price a consumer is willing to pay and the actual market price they pay. Graphically, it is the area below the demand curve and above the market price, up to the equilibrium quantity. Producer surplus is the analogous concept for producers: the area above the supply curve and below the market price.',
-    },
-    {
-      question:
-        'If the government imposes a price ceiling below the equilibrium price, the likely outcome is:',
-      options: [
-        'A) A surplus (excess supply) of the good',
-        'B) No change in the market',
-        'C) A shortage (excess demand) of the good',
-        'D) An increase in the quality of the good supplied',
-      ],
-      correct: 2,
-      explanation:
-        'A price ceiling set below the equilibrium price creates excess demand (shortage) because at the artificially low price, quantity demanded exceeds quantity supplied. The shortage may lead to black markets, rationing, queues, and reduced quality as suppliers cut corners. This is commonly seen with rent controls, where the quantity of housing supplied falls while demand rises.',
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'An increase in the price of coffee causes a movement along
+the demand curve. What is this effect called?', options: [ 'A) An increase in demand', 'B) A
+decrease in demand', 'C) A contraction in demand', 'D) A shift in demand', ], correct: 2,
+explanation: "A movement along a demand curve caused by a change in the good's own price is called a
+contraction (decrease in quantity demanded) when price rises, or an extension (increase in quantity
+demanded) when price falls. A 'shift' in demand refers to a change caused by non-price factors
+(income, preferences, prices of substitutes/complements). 'Demand' refers to the entire curve, not a
+single point.", }, { question: 'Consumer surplus is defined as:', options: [ 'A) The revenue earned
+by producers above their costs', 'B) The difference between what consumers are willing to pay and
+what they actually pay', 'C) The total expenditure by consumers on a good', 'D) The profit made by
+firms in a competitive market', ], correct: 1, explanation: 'Consumer surplus is the difference
+between the maximum price a consumer is willing to pay and the actual market price they pay.
+Graphically, it is the area below the demand curve and above the market price, up to the equilibrium
+quantity. Producer surplus is the analogous concept for producers: the area above the supply curve
+and below the market price.', }, { question: 'If the government imposes a price ceiling below the
+equilibrium price, the likely outcome is:', options: [ 'A) A surplus (excess supply) of the good',
+'B) No change in the market', 'C) A shortage (excess demand) of the good', 'D) An increase in the
+quality of the good supplied', ], correct: 2, explanation: 'A price ceiling set below the
+equilibrium price creates excess demand (shortage) because at the artificially low price, quantity
+demanded exceeds quantity supplied. The shortage may lead to black markets, rationing, queues, and
+reduced quality as suppliers cut corners. This is commonly seen with rent controls, where the
+quantity of housing supplied falls while demand rises.', }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Price Elasticity
 
-<PracticeProblem
-  questions={[
-    {
-      question:
-        'If the price of a good rises by 10% and the quantity demanded falls by 25%, what is the price elasticity of demand?',
-      options: ['A) -0.4 (inelastic)', 'B) -2.5 (elastic)', 'C) +0.4', 'D) -25'],
-      correct: 1,
-      explanation:
-        'PED = (% change in quantity demanded) / (% change in price) = -25% / 10% = -2.5. Since the absolute value (2.5) is greater than 1, demand is price elastic. Consumers are highly responsive to price changes. For elastic goods, a price increase leads to a proportionally larger fall in quantity demanded, causing total revenue to decrease.',
-    },
-    {
-      question:
-        'If demand for a good is price inelastic (PED = -0.3) and the price is increased, what happens to total revenue?',
-      options: [
-        'A) Total revenue decreases',
-        'B) Total revenue increases',
-        'C) Total revenue stays the same',
-        'D) It depends on income elasticity',
-      ],
-      correct: 1,
-      explanation:
-        'When PED is inelastic (|PED| < 1), a price increase causes total revenue to increase. This is because the percentage increase in price is proportionally larger than the percentage decrease in quantity demanded. TR = P x Q: although Q falls, P rises by a greater proportion, so TR increases. Conversely, cutting the price of an inelastic good would reduce total revenue.',
-    },
-    {
-      question:
-        'Two goods have a cross-price elasticity of demand (XED) of +2.5. What is the relationship between these goods?',
-      options: [
-        'A) They are complements',
-        'B) They are substitutes with close substitutability',
-        'C) They are unrelated goods',
-        'D) They are inferior goods',
-      ],
-      correct: 1,
-      explanation:
-        'XED = (% change in quantity demanded of good A) / (% change in price of good B). A positive XED indicates the goods are substitutes (an increase in the price of one leads to an increase in demand for the other). XED = +2.5 suggests close substitutes since the response is strong. Negative XED indicates complements. XED near 0 indicates unrelated goods.',
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'If the price of a good rises by 10% and the quantity
+demanded falls by 25%, what is the price elasticity of demand?', options: ['A) -0.4 (inelastic)',
+'B) -2.5 (elastic)', 'C) +0.4', 'D) -25'], correct: 1, explanation: 'PED = (% change in quantity
+demanded) / (% change in price) = -25% / 10% = -2.5. Since the absolute value (2.5) is greater than
+1, demand is price elastic. Consumers are highly responsive to price changes. For elastic goods, a
+price increase leads to a proportionally larger fall in quantity demanded, causing total revenue to
+decrease.', }, { question: 'If demand for a good is price inelastic (PED = -0.3) and the price is
+increased, what happens to total revenue?', options: [ 'A) Total revenue decreases', 'B) Total
+revenue increases', 'C) Total revenue stays the same', 'D) It depends on income elasticity', ],
+correct: 1, explanation: 'When PED is inelastic (|PED| < 1), a price increase causes total revenue
+to increase. This is because the percentage increase in price is proportionally larger than the
+percentage decrease in quantity demanded. TR = P x Q: although Q falls, P rises by a greater
+proportion, so TR increases. Conversely, cutting the price of an inelastic good would reduce total
+revenue.', }, { question: 'Two goods have a cross-price elasticity of demand (XED) of +2.5. What is
+the relationship between these goods?', options: [ 'A) They are complements', 'B) They are
+substitutes with close substitutability', 'C) They are unrelated goods', 'D) They are inferior
+goods', ], correct: 1, explanation: 'XED = (% change in quantity demanded of good A) / (% change in
+price of good B). A positive XED indicates the goods are substitutes (an increase in the price of
+one leads to an increase in demand for the other). XED = +2.5 suggests close substitutes since the
+response is strong. Negative XED indicates complements. XED near 0 indicates unrelated goods.', },
+];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Market Failure
 
-<PracticeProblem
-  questions={[
-    {
-      question: 'Which of the following is an example of a negative externality?',
-      options: [
-        'A) A factory training workers who may leave for other firms',
-        'B) Pollution from a factory affecting the health of nearby residents',
-        'C) A vaccination programme reducing disease spread',
-        'D) A beautiful garden maintained by a homeowner for neighbours to enjoy',
-      ],
-      correct: 1,
-      explanation:
-        "A negative externality is a spill-over cost imposed on third parties not involved in the transaction. Factory pollution creates external costs (health problems, environmental damage) borne by nearby residents, not the factory or its customers. Options A, C, and D are positive externalities (external benefits). The social cost of production exceeds the private cost, leading to overproduction from society's perspective.",
-    },
-    {
-      question: 'Which of the following is a characteristic of a public good?',
-      options: [
-        'A) It is rivalrous and excludable',
-        'B) It is non-rivalrous and non-excludable',
-        'C) It is provided only by the private sector',
-        'D) It has no opportunity cost of production',
-      ],
-      correct: 1,
-      explanation:
-        "Public goods are both non-rivalrous (one person's consumption does not reduce availability for others) and non-excludable (you cannot prevent non-payers from using the good). This creates the free-rider problem: no individual has incentive to pay, so private firms underprovide these goods. Examples: national defence, street lighting, public parks. Merit goods (e.g., education, healthcare) are different -- they are excludable and rivalrous but are underconsumed due to information gaps.",
-    },
-    {
-      question: 'The tragedy of the commons occurs because:',
-      options: [
-        'A) Public goods are overprovided by the government',
-        'B) Individuals exploit shared resources for personal gain, depleting the resource for everyone',
-        'C) Private firms charge prices that are too low',
-        'D) Governments regulate markets too strictly',
-      ],
-      correct: 1,
-      explanation:
-        'The tragedy of the commons describes a situation where a shared resource (common-pool resource) is depleted through overuse because individual users have incentive to consume as much as possible before others do. Each individual benefits from their own consumption but shares the cost of depletion with everyone, creating a negative externality. Examples: overfishing, deforestation, groundwater depletion. Solutions include regulation, tradable permits, and privatisation.',
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'Which of the following is an example of a negative
+externality?', options: [ 'A) A factory training workers who may leave for other firms', 'B)
+Pollution from a factory affecting the health of nearby residents', 'C) A vaccination programme
+reducing disease spread', 'D) A beautiful garden maintained by a homeowner for neighbours to enjoy',
+], correct: 1, explanation: "A negative externality is a spill-over cost imposed on third parties
+not involved in the transaction. Factory pollution creates external costs (health problems,
+environmental damage) borne by nearby residents, not the factory or its customers. Options A, C, and
+D are positive externalities (external benefits). The social cost of production exceeds the private
+cost, leading to overproduction from society's perspective.", }, { question: 'Which of the following
+is a characteristic of a public good?', options: [ 'A) It is rivalrous and excludable', 'B) It is
+non-rivalrous and non-excludable', 'C) It is provided only by the private sector', 'D) It has no
+opportunity cost of production', ], correct: 1, explanation: "Public goods are both non-rivalrous
+(one person's consumption does not reduce availability for others) and non-excludable (you cannot
+prevent non-payers from using the good). This creates the free-rider problem: no individual has
+incentive to pay, so private firms underprovide these goods. Examples: national defence, street
+lighting, public parks. Merit goods (e.g., education, healthcare) are different -- they are
+excludable and rivalrous but are underconsumed due to information gaps.", }, { question: 'The
+tragedy of the commons occurs because:', options: [ 'A) Public goods are overprovided by the
+government', 'B) Individuals exploit shared resources for personal gain, depleting the resource for
+everyone', 'C) Private firms charge prices that are too low', 'D) Governments regulate markets too
+strictly', ], correct: 1, explanation: 'The tragedy of the commons describes a situation where a
+shared resource (common-pool resource) is depleted through overuse because individual users have
+incentive to consume as much as possible before others do. Each individual benefits from their own
+consumption but shares the cost of depletion with everyone, creating a negative externality.
+Examples: overfishing, deforestation, groundwater depletion. Solutions include regulation, tradable
+permits, and privatisation.', }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Government Intervention
 
-<PracticeProblem
-  questions={[
-    {
-      question:
-        'An indirect tax (e.g., on cigarettes) is most effective at reducing consumption when demand for the good is:',
-      options: [
-        'A) Perfectly inelastic',
-        'B) Price elastic',
-        'C) Income inelastic',
-        'D) Unit elastic',
-      ],
-      correct: 1,
-      explanation:
-        'When demand is price elastic, an indirect tax causes a proportionally larger fall in quantity demanded than the price increase, so consumption falls significantly. However, this creates a tension: governments often tax inelastic goods (like cigarettes and alcohol) precisely to maximise tax revenue, accepting that consumption reduction will be small. For maximum reduction in consumption (e.g., of a harmful good), you want elastic demand, but for maximum tax revenue, you want inelastic demand.',
-    },
-    {
-      question:
-        'A subsidy on a good with a positive externality will shift the supply curve and result in:',
-      options: [
-        'A) A leftward shift of supply, higher price, lower quantity',
-        'B) A rightward shift of supply, lower price, higher quantity',
-        'C) A leftward shift of demand, lower price, lower quantity',
-        'D) No change in equilibrium',
-      ],
-      correct: 1,
-      explanation:
-        'A subsidy reduces the costs of production for firms, shifting the supply curve to the right (downward). The new equilibrium has a lower market price and higher quantity traded. This moves the market closer to the socially optimal output where MSC = MSB. For goods with positive externalities (e.g., education, vaccinations), the free market underproduces, and a subsidy corrects this market failure by encouraging higher output.',
-    },
-    {
-      question: 'What is a cost-benefit analysis used for in government decision-making?',
-      options: [
-        'A) To calculate the profit of a private firm',
-        'B) To compare the total social costs and social benefits of a project to determine whether it is worthwhile',
-        'C) To determine the optimal tax rate for a good',
-        'D) To measure the price elasticity of demand for a product',
-      ],
-      correct: 1,
-      explanation:
-        'Cost-benefit analysis (CBA) is a systematic approach used by governments to evaluate whether a project or policy is socially desirable. It adds up all private costs, external costs, private benefits, and external benefits, then compares the total social cost with the total social benefit. A project is justified if total social benefit exceeds total social cost. Challenges include assigning monetary values to non-market goods (e.g., environmental impact, quality of life) and discounting future costs/benefits.',
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'An indirect tax (e.g., on cigarettes) is most effective at
+reducing consumption when demand for the good is:', options: [ 'A) Perfectly inelastic', 'B) Price
+elastic', 'C) Income inelastic', 'D) Unit elastic', ], correct: 1, explanation: 'When demand is
+price elastic, an indirect tax causes a proportionally larger fall in quantity demanded than the
+price increase, so consumption falls significantly. However, this creates a tension: governments
+often tax inelastic goods (like cigarettes and alcohol) precisely to maximise tax revenue, accepting
+that consumption reduction will be small. For maximum reduction in consumption (e.g., of a harmful
+good), you want elastic demand, but for maximum tax revenue, you want inelastic demand.', }, {
+question: 'A subsidy on a good with a positive externality will shift the supply curve and result
+in:', options: [ 'A) A leftward shift of supply, higher price, lower quantity', 'B) A rightward
+shift of supply, lower price, higher quantity', 'C) A leftward shift of demand, lower price, lower
+quantity', 'D) No change in equilibrium', ], correct: 1, explanation: 'A subsidy reduces the costs
+of production for firms, shifting the supply curve to the right (downward). The new equilibrium has
+a lower market price and higher quantity traded. This moves the market closer to the socially
+optimal output where MSC = MSB. For goods with positive externalities (e.g., education,
+vaccinations), the free market underproduces, and a subsidy corrects this market failure by
+encouraging higher output.', }, { question: 'What is a cost-benefit analysis used for in government
+decision-making?', options: [ 'A) To calculate the profit of a private firm', 'B) To compare the
+total social costs and social benefits of a project to determine whether it is worthwhile', 'C) To
+determine the optimal tax rate for a good', 'D) To measure the price elasticity of demand for a
+product', ], correct: 1, explanation: 'Cost-benefit analysis (CBA) is a systematic approach used by
+governments to evaluate whether a project or policy is socially desirable. It adds up all private
+costs, external costs, private benefits, and external benefits, then compares the total social cost
+with the total social benefit. A project is justified if total social benefit exceeds total social
+cost. Challenges include assigning monetary values to non-market goods (e.g., environmental impact,
+quality of life) and discounting future costs/benefits.', }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Theory of the Firm
 
-<PracticeProblem
-  questions={[
-    {
-      question: 'A profit-maximising firm will produce at the output level where:',
-      options: [
-        'A) Average total cost is minimised',
-        'B) Marginal cost equals marginal revenue (MC = MR)',
-        'C) Total revenue is maximised',
-        'D) Average variable cost equals marginal cost',
-      ],
-      correct: 1,
-      explanation:
-        'A profit-maximising firm produces where MC = MR. At outputs below this point, MR > MC, so producing one more unit adds more to revenue than to cost, increasing profit. At outputs above this point, MC > MR, so the last unit costs more than the revenue it generates, reducing profit. Producing where MC = MR maximises the difference between total revenue and total cost. If MC = MR and MC is rising, this is the profit-maximising output.',
-    },
-    {
-      question: 'Economies of scale occur when:',
-      options: [
-        'A) A firm increases its advertising budget and sells more',
-        'B) Long-run average cost falls as output increases due to increased scale of production',
-        'C) Short-run marginal cost equals average total cost',
-        'D) A firm grows by acquiring competitors',
-      ],
-      correct: 1,
-      explanation:
-        'Economies of scale occur when increasing the scale of production leads to a fall in long-run average cost (LRAC). Types include: purchasing economies (bulk buying discounts), technical economies (larger more efficient machinery), financial economies (lower borrowing rates), managerial economies (specialist managers), and risk-bearing economies (spreading risk across a wider product range). Diseconomies of scale occur when LRAC rises as the firm grows too large (communication problems, coordination difficulties).',
-    },
-    {
-      question:
-        'In the short run, a firm will continue to produce even if it is making a loss provided that:',
-      options: [
-        'A) Total revenue exceeds total cost',
-        'B) Price (average revenue) covers average variable cost, even if it does not cover average total cost',
-        'C) Marginal revenue exceeds average total cost',
-        'D) Fixed costs are zero',
-      ],
-      correct: 1,
-      explanation:
-        'In the short run, a firm should continue producing if price >= AVC (average variable cost), even if it cannot cover total costs. At this point, revenue covers all variable costs and contributes something towards fixed costs. If the firm shut down, it would still have to pay fixed costs and earn zero revenue, so its loss would equal total fixed costs. By producing, its loss is less than total fixed costs. The shutdown point is where P = AVC.',
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'A profit-maximising firm will produce at the output level
+where:', options: [ 'A) Average total cost is minimised', 'B) Marginal cost equals marginal revenue
+(MC = MR)', 'C) Total revenue is maximised', 'D) Average variable cost equals marginal cost', ],
+correct: 1, explanation: 'A profit-maximising firm produces where MC = MR. At outputs below this
+point, MR > MC, so producing one more unit adds more to revenue than to cost, increasing profit. At
+outputs above this point, MC > MR, so the last unit costs more than the revenue it generates,
+reducing profit. Producing where MC = MR maximises the difference between total revenue and total
+cost. If MC = MR and MC is rising, this is the profit-maximising output.', }, { question: 'Economies
+of scale occur when:', options: [ 'A) A firm increases its advertising budget and sells more', 'B)
+Long-run average cost falls as output increases due to increased scale of production', 'C) Short-run
+marginal cost equals average total cost', 'D) A firm grows by acquiring competitors', ], correct: 1,
+explanation: 'Economies of scale occur when increasing the scale of production leads to a fall in
+long-run average cost (LRAC). Types include: purchasing economies (bulk buying discounts), technical
+economies (larger more efficient machinery), financial economies (lower borrowing rates), managerial
+economies (specialist managers), and risk-bearing economies (spreading risk across a wider product
+range). Diseconomies of scale occur when LRAC rises as the firm grows too large (communication
+problems, coordination difficulties).', }, { question: 'In the short run, a firm will continue to
+produce even if it is making a loss provided that:', options: [ 'A) Total revenue exceeds total
+cost', 'B) Price (average revenue) covers average variable cost, even if it does not cover average
+total cost', 'C) Marginal revenue exceeds average total cost', 'D) Fixed costs are zero', ],
+correct: 1, explanation: 'In the short run, a firm should continue producing if price >= AVC
+(average variable cost), even if it cannot cover total costs. At this point, revenue covers all
+variable costs and contributes something towards fixed costs. If the firm shut down, it would still
+have to pay fixed costs and earn zero revenue, so its loss would equal total fixed costs. By
+producing, its loss is less than total fixed costs. The shutdown point is where P = AVC.', }, ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Market Structures
 
-<PracticeProblem
-  questions={[
-    {
-      question:
-        'Which market structure is characterised by many firms, homogeneous products, perfect information, and freedom of entry and exit?',
-      options: [
-        'A) Monopoly',
-        'B) Oligopoly',
-        'C) Perfect competition',
-        'D) Monopolistic competition',
-      ],
-      correct: 2,
-      explanation:
-        'Perfect competition has these key features: many buyers and sellers (price takers), homogeneous (identical) products, perfect information (all market participants have full knowledge), and free entry and exit (no barriers). In the long run, firms earn normal profit (zero economic profit) because any supernormal profit attracts new entrants, increasing supply and driving the price down until only normal profit remains.',
-    },
-    {
-      question: 'A natural monopoly exists when:',
-      options: [
-        'A) A single firm has a legal patent preventing competition',
-        'B) A single firm can supply the entire market at a lower average cost than two or more firms due to very high fixed costs and economies of scale',
-        'C) The government decides to only allow one firm to operate in an industry',
-        'D) A firm is the only seller of a luxury good',
-      ],
-      correct: 1,
-      explanation:
-        'A natural monopoly arises when one firm can produce for the entire market at a lower long-run average cost than two or more firms. This in most cases occurs in industries with very high fixed costs (e.g., water supply, electricity grid, rail networks) where the LRAC curve falls continuously over the relevant output range. The high fixed costs create a natural barrier to entry. Examples include water utilities and national electricity grids.',
-    },
-    {
-      question:
-        'In an oligopoly, firms may engage in tacit collusion through price leadership. This occurs when:',
-      options: [
-        'A) One firm is legally appointed as the price setter by the government',
-        'B) The dominant firm sets the price and other firms follow, without explicit agreement, to avoid price wars',
-        'C) All firms secretly agree to set prices above the competitive level',
-        "D) Firms ignore competitors' prices and set prices based only on their own costs",
-      ],
-      correct: 1,
-      explanation:
-        "Tacit (implicit) collusion occurs when firms coordinate behaviour without formal agreement, avoiding illegal cartel behaviour while still achieving collusive outcomes. Price leadership involves one firm (in most cases the largest, the 'dominant firm') changing price and others following. This allows firms to maintain prices above competitive levels without direct communication. Other forms of tacit collusion include price rigidity (kinked demand curve theory), capacity constraints, and market sharing conventions.",
-    },
-  ]}
-/>
+const practiceQuestions = [ { question: 'Which market structure is characterised by many firms,
+homogeneous products, perfect information, and freedom of entry and exit?', options: [ 'A)
+Monopoly', 'B) Oligopoly', 'C) Perfect competition', 'D) Monopolistic competition', ], correct: 2,
+explanation: 'Perfect competition has these key features: many buyers and sellers (price takers),
+homogeneous (identical) products, perfect information (all market participants have full knowledge),
+and free entry and exit (no barriers). In the long run, firms earn normal profit (zero economic
+profit) because any supernormal profit attracts new entrants, increasing supply and driving the
+price down until only normal profit remains.', }, { question: 'A natural monopoly exists when:',
+options: [ 'A) A single firm has a legal patent preventing competition', 'B) A single firm can
+supply the entire market at a lower average cost than two or more firms due to very high fixed costs
+and economies of scale', 'C) The government decides to only allow one firm to operate in an
+industry', 'D) A firm is the only seller of a luxury good', ], correct: 1, explanation: 'A natural
+monopoly arises when one firm can produce for the entire market at a lower long-run average cost
+than two or more firms. This in most cases occurs in industries with very high fixed costs (e.g.,
+water supply, electricity grid, rail networks) where the LRAC curve falls continuously over the
+relevant output range. The high fixed costs create a natural barrier to entry. Examples include
+water utilities and national electricity grids.', }, { question: 'In an oligopoly, firms may engage
+in tacit collusion through price leadership. This occurs when:', options: [ 'A) One firm is legally
+appointed as the price setter by the government', 'B) The dominant firm sets the price and other
+firms follow, without explicit agreement, to avoid price wars', 'C) All firms secretly agree to set
+prices above the competitive level', "D) Firms ignore competitors' prices and set prices based only
+on their own costs", ], correct: 1, explanation: "Tacit (implicit) collusion occurs when firms
+coordinate behaviour without formal agreement, avoiding illegal cartel behaviour while still
+achieving collusive outcomes. Price leadership involves one firm (in most cases the largest, the
+'dominant firm') changing price and others following. This allows firms to maintain prices above
+competitive levels without direct communication. Other forms of tacit collusion include price
+rigidity (kinked demand curve theory), capacity constraints, and market sharing conventions.", }, ];
+
+<PracticeProblem questions={practiceQuestions} />

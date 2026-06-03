@@ -1,12 +1,15 @@
 ---
 title: AP Calculus AB Practice
 slug: practice-calculus-ab
-description: "16 MCQ practice problems for AP Calculus AB covering limits and continuity, differentiation techniques, integration, and differential equations."
+description:
+  '16 MCQ practice problems for AP Calculus AB covering limits and continuity, differentiation
+  techniques, integration, and differential equations.'
 tags:
   - ap
   - ap-maths
   - Practice
 ---
+
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ## AP Calculus AB -- Practice
@@ -17,122 +20,88 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Limits and Continuity
 
-<PracticeProblem questions={[
-  {
-    question: "Evaluate: lim(x→∞) (3x² - 2x + 1) / (x² + 5x - 3)",
-    options: ["A) ∞", "B) 0", "C) 3", "D) 1"],
-    correct: 2,
-    explanation: "Divide numerator and denominator by x²: lim = (3 - 2/x + 1/x²) / (1 + 5/x - 3/x²). As x→∞, terms with x in denominator → 0. Result = 3/1 = 3."
-  },
-  {
-    question: "Use the Squeeze Theorem to evaluate lim(x→0) x² sin(1/x).",
-    options: ["A) 0", "B) Does not exist", "C) 1", "D) ∞"],
-    correct: 0,
-    explanation: "For all x ≠ 0: -1 ≤ sin(1/x) ≤ 1, so -x² ≤ x²sin(1/x) ≤ x². As x→0, both -x² → 0 and x² → 0. By the Squeeze Theorem, lim(x→0) x²sin(1/x) = 0."
-  },
-  {
-    question: "Evaluate: lim(x→0) (eˣ - 1 - x) / x²",
-    options: ["A) 1/2", "B) 1", "C) 0", "D) ∞"],
-    correct: 0,
-    explanation: "Direct substitution gives 0/0. Apply L'Hopital's Rule: lim = lim(eˣ - 1)/(2x). Still 0/0. Apply L'Hopital again: lim = lim(eˣ/2) = 1/2."
-  },
-  {
-    question: "For what value of k is f(x) = (x² - 4)/(x - 2) for x ≠ 2 and f(x) = k for x = 2 continuous at x = 2?",
-    options: ["A) 2", "B) 4", "C) 0", "D) No value makes f continuous"],
-    correct: 1,
-    explanation: "For continuity: lim(x→2) f(x) = f(2) = k. lim(x→2) (x²-4)/(x-2) = lim(x→2) (x+2) = 4. So k = 4."
-  }
-]} />
+const practiceQuestions = [ { question: "Evaluate: lim(x→∞) (3x² - 2x + 1) / (x² + 5x - 3)",
+options: ["A) ∞", "B) 0", "C) 3", "D) 1"], correct: 2, explanation: "Divide numerator and
+denominator by x²: lim = (3 - 2/x + 1/x²) / (1 + 5/x - 3/x²). As x→∞, terms with x in denominator
+→ 0. Result = 3/1 = 3." }, { question: "Use the Squeeze Theorem to evaluate lim(x→0) x² sin(1/x).",
+options: ["A) 0", "B) Does not exist", "C) 1", "D) ∞"], correct: 0, explanation: "For all x ≠ 0: -1
+≤ sin(1/x) ≤ 1, so -x² ≤ x²sin(1/x) ≤ x². As x→0, both -x² → 0 and x² → 0. By the Squeeze Theorem,
+lim(x→0) x²sin(1/x) = 0." }, { question: "Evaluate: lim(x→0) (eˣ - 1 - x) / x²", options: ["A) 1/2",
+"B) 1", "C) 0", "D) ∞"], correct: 0, explanation: "Direct substitution gives 0/0. Apply L'Hopital's
+Rule: lim = lim(eˣ - 1)/(2x). Still 0/0. Apply L'Hopital again: lim = lim(eˣ/2) = 1/2." }, {
+question: "For what value of k is f(x) = (x² - 4)/(x - 2) for x ≠ 2 and f(x) = k for x = 2
+continuous at x = 2?", options: ["A) 2", "B) 4", "C) 0", "D) No value makes f continuous"], correct:
+1, explanation: "For continuity: lim(x→2) f(x) = f(2) = k. lim(x→2) (x²-4)/(x-2) = lim(x→2) (x+2)
+= 4. So k = 4." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
 
 ### Differentiation
 
-<PracticeProblem questions={[
-  {
-    question: "Find dy/dx for y = (3x² + 1)⁵.",
-    options: ["A) 5(3x² + 1)⁴ · 6x", "B) 5(3x² + 1)⁴", "C) 30x(3x² + 1)⁵", "D) 15x(3x² + 1)⁴"],
-    correct: 0,
-    explanation: "By the chain rule: dy/dx = 5(3x² + 1)⁴ · d/dx(3x² + 1) = 5(3x² + 1)⁴ · 6x = 30x(3x² + 1)⁴."
-  },
-  {
-    question: "Find dy/dx using implicit differentiation for x³ + y³ = 6xy.",
-    options: ["A) (2y - x²)/(y² - 2x)", "B) (6y - 3x²)/(3y² - 6x)", "C) -x²/y²", "D) (y² - x²)/(2x - 2y)"],
-    correct: 0,
-    explanation: "Differentiate: 3x² + 3y²(dy/dx) = 6y + 6x(dy/dx). Rearrange: 3y²(dy/dx) - 6x(dy/dx) = 6y - 3x². dy/dx(3y² - 6x) = 6y - 3x². dy/dx = (6y - 3x²)/(3y² - 6x) = (2y - x²)/(y² - 2x)."
-  },
-  {
-    question: "A 15 ft ladder leans against a wall. The bottom slides away at 0.5 ft/s. How fast is the top sliding down when the bottom is 9 ft from the wall?",
-    options: ["A) 0.45 ft/s", "B) 0.375 ft/s", "C) 0.6 ft/s", "D) 0.5 ft/s"],
-    correct: 1,
-    explanation: "x² + y² = 225. When x = 9: y = √(225-81) = √144 = 12 ft. Differentiate: 2x(dx/dt) + 2y(dy/dt) = 0. dy/dt = -x(dx/dt)/y = -9(0.5)/12 = -0.375 ft/s. The negative sign means the top slides down."
-  },
-  {
-    question: "Find the second derivative of y = x·eˣ and determine where the curve is concave up.",
-    options: ["A) y'' = (2+x)eˣ; concave up for x > -2", "B) y'' = (2+x)eˣ; concave up for x < -2", "C) y'' = xeˣ; concave up for x > 0", "D) y'' = (x+2)eˣ; concave up for all x"],
-    correct: 0,
-    explanation: "y' = eˣ + xeˣ = (1+x)eˣ. y'' = eˣ + (1+x)eˣ = (2+x)eˣ. Since eˣ > 0 always, y'' > 0 when 2 + x > 0, i.e. x > -2. The curve is concave up for x > -2."
-  }
-]} />
+const practiceQuestions = [ { question: "Find dy/dx for y = (3x² + 1)⁵.", options: ["A) 5(3x² + 1)⁴
+· 6x", "B) 5(3x² + 1)⁴", "C) 30x(3x² + 1)⁵", "D) 15x(3x² + 1)⁴"], correct: 0, explanation: "By the
+chain rule: dy/dx = 5(3x² + 1)⁴ · d/dx(3x² + 1) = 5(3x² + 1)⁴ · 6x = 30x(3x² + 1)⁴." }, { question:
+"Find dy/dx using implicit differentiation for x³ + y³ = 6xy.", options: ["A) (2y - x²)/(y² - 2x)",
+"B) (6y - 3x²)/(3y² - 6x)", "C) -x²/y²", "D) (y² - x²)/(2x - 2y)"], correct: 0, explanation:
+"Differentiate: 3x² + 3y²(dy/dx) = 6y + 6x(dy/dx). Rearrange: 3y²(dy/dx) - 6x(dy/dx) = 6y - 3x².
+dy/dx(3y² - 6x) = 6y - 3x². dy/dx = (6y - 3x²)/(3y² - 6x) = (2y - x²)/(y² - 2x)." }, { question: "A
+15 ft ladder leans against a wall. The bottom slides away at 0.5 ft/s. How fast is the top sliding
+down when the bottom is 9 ft from the wall?", options: ["A) 0.45 ft/s", "B) 0.375 ft/s", "C) 0.6
+ft/s", "D) 0.5 ft/s"], correct: 1, explanation: "x² + y² = 225. When x = 9: y = √(225-81) = √144 =
+12 ft. Differentiate: 2x(dx/dt) + 2y(dy/dt) = 0. dy/dt = -x(dx/dt)/y = -9(0.5)/12 = -0.375 ft/s. The
+negative sign means the top slides down." }, { question: "Find the second derivative of y = x·eˣ and
+determine where the curve is concave up.", options: ["A) y'' = (2+x)eˣ; concave up for x > -2", "B)
+y'' = (2+x)eˣ; concave up for x < -2", "C) y'' = xeˣ; concave up for x > 0", "D) y'' = (x+2)eˣ;
+concave up for all x"], correct: 0, explanation: "y' = eˣ + xeˣ = (1+x)eˣ. y'' = eˣ + (1+x)eˣ =
+(2+x)eˣ. Since eˣ > 0 always, y'' > 0 when 2 + x > 0, i.e. x > -2. The curve is concave up for x >
+-2." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
 
 ### Integration
 
-<PracticeProblem questions={[
-  {
-    question: "Express the limit of a Riemann sum: lim(n→∞) Σᵢ₌₁ⁿ (3/n)·(1 + 3i/n)² as a definite integral.",
-    options: ["A) ∫₀³ (1+x)² dx", "B) ∫₁³ (1+x)² dx", "C) ∫₀¹ (1+3x)² dx", "D) ∫₀³ (1+3x)² dx"],
-    correct: 0,
-    explanation: "Δx = 3/n, xᵢ = 0 + i(3/n) = 3i/n. f(xᵢ) = (1 + 3i/n)² = (1 + xᵢ)². The Riemann sum is Σ f(xᵢ)Δx from i=1 to n, which converges to ∫₀³ (1+x)² dx as n→∞."
-  },
-  {
-    question: "Evaluate: ∫₀¹ 2x·√(x² + 1) dx",
-    options: ["A) 2(√2 - 1)/3", "B) (2√2 - 1)/3", "C) 2√2/3", "D) 2(2√2 - 1)/3"],
-    correct: 0,
-    explanation: "Let u = x² + 1, du = 2x dx. ∫₀¹ √u du = [2u^(3/2)/3]₁² = (2/3)(2√2 - 1) = 2(2√2 - 1)/3. Wait: limits change: when x=0, u=1; x=1, u=2. ∫₁² u^(1/2) du = [2u^(3/2)/3]₁² = (2/3)(2^(3/2) - 1) = (2/3)(2√2 - 1). This is D."
-  },
-  {
-    question: "Find the area bounded by y = x², y = 0, x = 1, and x = 2.",
-    options: ["A) 7/3", "B) 1", "C) 8/3", "D) 3"],
-    correct: 0,
-    explanation: "Area = ∫₁² x² dx = [x³/3]₁² = 8/3 - 1/3 = 7/3."
-  },
-  {
-    question: "The Fundamental Theorem of Calculus states that d/dx[∫ₐˣ f(t) dt] = f(x). Use this to find d/dx[∫₁^(x²) sin(t) dt].",
-    options: ["A) 2x sin(x²)", "B) sin(x²)", "C) cos(x²) · 2x", "D) x² sin(x²)"],
-    correct: 0,
-    explanation: "By the FTC with the chain rule: d/dx[∫₁^(x²) sin(t) dt] = sin(x²) · d/dx(x²) = sin(x²) · 2x = 2x sin(x²). The upper limit is x², not x, so the chain rule gives the extra factor of 2x."
-  }
-]} />
+const practiceQuestions = [ { question: "Express the limit of a Riemann sum: lim(n→∞) Σᵢ₌₁ⁿ
+(3/n)·(1 + 3i/n)² as a definite integral.", options: ["A) ∫₀³ (1+x)² dx", "B) ∫₁³ (1+x)² dx", "C)
+∫₀¹ (1+3x)² dx", "D) ∫₀³ (1+3x)² dx"], correct: 0, explanation: "Δx = 3/n, xᵢ = 0 + i(3/n) = 3i/n.
+f(xᵢ) = (1 + 3i/n)² = (1 + xᵢ)². The Riemann sum is Σ f(xᵢ)Δx from i=1 to n, which converges to ∫₀³
+(1+x)² dx as n→∞." }, { question: "Evaluate: ∫₀¹ 2x·√(x² + 1) dx", options: ["A) 2(√2 - 1)/3", "B)
+(2√2 - 1)/3", "C) 2√2/3", "D) 2(2√2 - 1)/3"], correct: 0, explanation: "Let u = x² + 1, du = 2x dx.
+∫₀¹ √u du = [2u^(3/2)/3]₁² = (2/3)(2√2 - 1) = 2(2√2 - 1)/3. Wait: limits change: when x=0, u=1; x=1,
+u=2. ∫₁² u^(1/2) du = [2u^(3/2)/3]₁² = (2/3)(2^(3/2) - 1) = (2/3)(2√2 - 1). This is D." }, {
+question: "Find the area bounded by y = x², y = 0, x = 1, and x = 2.", options: ["A) 7/3", "B) 1",
+"C) 8/3", "D) 3"], correct: 0, explanation: "Area = ∫₁² x² dx = [x³/3]₁² = 8/3 - 1/3 = 7/3." }, {
+question: "The Fundamental Theorem of Calculus states that d/dx[∫ₐˣ f(t) dt] = f(x). Use this to
+find d/dx[∫₁^(x²) sin(t) dt].", options: ["A) 2x sin(x²)", "B) sin(x²)", "C) cos(x²) · 2x", "D) x²
+sin(x²)"], correct: 0, explanation: "By the FTC with the chain rule: d/dx[∫₁^(x²) sin(t) dt] =
+sin(x²) · d/dx(x²) = sin(x²) · 2x = 2x sin(x²). The upper limit is x², not x, so the chain rule
+gives the extra factor of 2x." } ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
 
 ### Differential Equations
 
-<PracticeProblem questions={[
-  {
-    question: "Solve the separable differential equation: dy/dx = xy, given y(0) = 5.",
-    options: ["A) y = 5e^(x²/2)", "B) y = 5eˣ", "C) y = 5x", "D) y = e^(x²/2)"],
-    correct: 0,
-    explanation: "Separate: dy/y = x dx. Integrate: ln|y| = x²/2 + C. At x=0: ln5 = 0 + C → C = ln5. So ln|y| = x²/2 + ln5 → y = 5e^(x²/2)."
-  },
-  {
-    question: "A slope field for dy/dx = x/y is drawn. At the point (1, 2), what is the slope of the line segment in the slope field?",
-    options: ["A) 1/2", "B) 2", "C) -1/2", "D) 1"],
-    correct: 0,
-    explanation: "At (1, 2): dy/dx = x/y = 1/2. The slope field segment at this point has slope 1/2."
-  },
-  {
-    question: "Use Euler's method with step size h = 0.5 to approximate y(1) for dy/dx = x + y, y(0) = 1.",
-    options: ["A) 3.0", "B) 3.25", "C) 2.75", "D) 3.5"],
-    correct: 0,
-    explanation: "Step 1: x=0, y=1. dy/dx = 0+1 = 1. y₁ = 1 + 0.5(1) = 1.5. Step 2: x=0.5, y=1.5. dy/dx = 0.5+1.5 = 2. y₂ = 1.5 + 0.5(2) = 2.5. So y(1) ≈ 2.5. Wait, let me redo: after step 1 y=1.5 at x=0.5, after step 2: slope = 0.5+1.5=2, y=1.5+1=2.5. Answer is C) 2.75? Let me check with 3 steps (h=1/3): step 1: x=1/3, y=1+1/3(1/3)=1+1/9=10/9. Hmm, with h=0.5 the answer is 2.5."
-  },
-  {
-    question: "A population grows according to dy/dt = 0.02y. If the initial population is 1000, how long does it take to double?",
-    options: ["A) 50 years", "B) 34.7 years", "C) 69.3 years", "D) 20 years"],
-    correct: 1,
-    explanation: "Solution: y = 1000e^(0.02t). For doubling: 2000 = 1000e^(0.02t) → e^(0.02t) = 2 → 0.02t = ln2 → t = ln2/0.02 = 0.693/0.02 = 34.65 years ≈ 34.7 years."
-  }
-]} />
+const practiceQuestions = [ { question: "Solve the separable differential equation: dy/dx = xy,
+given y(0) = 5.", options: ["A) y = 5e^(x²/2)", "B) y = 5eˣ", "C) y = 5x", "D) y = e^(x²/2)"],
+correct: 0, explanation: "Separate: dy/y = x dx. Integrate: ln|y| = x²/2 + C. At x=0: ln5 = 0 + C →
+C = ln5. So ln|y| = x²/2 + ln5 → y = 5e^(x²/2)." }, { question: "A slope field for dy/dx = x/y is
+drawn. At the point (1, 2), what is the slope of the line segment in the slope field?", options:
+["A) 1/2", "B) 2", "C) -1/2", "D) 1"], correct: 0, explanation: "At (1, 2): dy/dx = x/y = 1/2. The
+slope field segment at this point has slope 1/2." }, { question: "Use Euler's method with step size
+h = 0.5 to approximate y(1) for dy/dx = x + y, y(0) = 1.", options: ["A) 3.0", "B) 3.25", "C) 2.75",
+"D) 3.5"], correct: 0, explanation: "Step 1: x=0, y=1. dy/dx = 0+1 = 1. y₁ = 1 + 0.5(1) = 1.5. Step
+2: x=0.5, y=1.5. dy/dx = 0.5+1.5 = 2. y₂ = 1.5 + 0.5(2) = 2.5. So y(1) ≈ 2.5. Wait, let me redo:
+after step 1 y=1.5 at x=0.5, after step 2: slope = 0.5+1.5=2, y=1.5+1=2.5. Answer is C) 2.75? Let me
+check with 3 steps (h=1/3): step 1: x=1/3, y=1+1/3(1/3)=1+1/9=10/9. Hmm, with h=0.5 the answer is
+2.5." }, { question: "A population grows according to dy/dt = 0.02y. If the initial population is
+1000, how long does it take to double?", options: ["A) 50 years", "B) 34.7 years", "C) 69.3 years",
+"D) 20 years"], correct: 1, explanation: "Solution: y = 1000e^(0.02t). For doubling: 2000 =
+1000e^(0.02t) → e^(0.02t) = 2 → 0.02t = ln2 → t = ln2/0.02 = 0.693/0.02 = 34.65 years ≈ 34.7 years."
+} ];
+
+<PracticeProblem questions={practiceQuestions} />

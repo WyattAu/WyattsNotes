@@ -17,94 +17,119 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
+const flashcardData = [ { front: "State Hess's Law and explain its significance in calculating
+enthalpy changes.", back: "Hess's Law states that the enthalpy change for a reaction is the same
+regardless of the route taken, provided initial and final conditions are the same. This allows
+indirect determination of enthalpy changes that cannot be measured directly (e.g. enthalpy of
+formation of methane from elements) by constructing enthalpy cycles using measurable data (e.g.
+combustion enthalpies).", }, { front: 'Define standard enthalpy change of formation (delta Hf
+standard).', back: 'The standard enthalpy change of formation is the enthalpy change when 1 mole of
+a compound is formed from its constituent elements in their standard states under standard
+conditions (100 kPa, 298 K). For elements in their standard states, delta Hf = 0 by definition.
+Example: delta Hf of H2O(l) = -286 kJ mol-1 from H2(g) + 0.5 O2(g).', }, { front: 'What is the
+difference between bond dissociation enthalpy and mean bond enthalpy?', back: 'Bond dissociation
+enthalpy is the energy required to break a SPECIFIC bond in a SPECIFIC molecule (e.g. the first O-H
+bond in water). Mean bond enthalpy is the AVERAGE energy for that type of bond across a range of
+compounds. Mean bond enthalpies are less precise because the strength of a given bond varies
+depending on the molecular environment. Data book values are mean bond enthalpies.', }, { front:
+'Explain the Maxwell-Boltzmann distribution curve and the effect of temperature on it.', back: 'The
+Maxwell-Boltzmann distribution shows the distribution of molecular energies in a gas at a given
+temperature. The curve starts at the origin, peaks, and tails towards high energy. Key features:
+most molecules have moderate energy; few have very high or very low energy. Increasing temperature:
+peak shifts right (higher average energy), curve flattens and broadens, and a greater proportion of
+molecules have energy >= Ea (activation energy). Area under both curves is the same (same number of
+molecules).', }, { front: 'Describe the initial rates method for determining the rate equation
+experimentally.', back: '1) Repeat the experiment varying ONE reactant concentration while keeping
+others constant. 2) Measure the initial rate (before significant concentration changes). 3) Plot
+initial rate vs concentration: linear = first order; constant rate = zero order; quadratic = second
+order. 4) Repeat for each reactant. The rate constant k is determined by substituting known rate,
+orders, and concentrations into rate = k[A]^m[B]^n.', }, { front: "State Le Chatelier's principle
+and give an example applied to the Haber process.", back: "Le Chatelier's principle: if a system at
+equilibrium is subjected to a change in concentration, pressure, or temperature, the equilibrium
+shifts to oppose the change. Haber process: N2(g) + 3H2(g) <=> 2NH3(g), exothermic. Increasing
+pressure: equilibrium shifts right (fewer gas moles, 2 vs 4). Decreasing temperature: equilibrium
+shifts right (exothermic direction). In practice, compromise conditions used (200 atm, 450 degrees
+C, Fe catalyst).", }, { front: 'Compare the equilibrium constants Kc and Kp.', back: 'Kc uses molar
+concentrations (mol dm-3) and applies to solutions and gas-phase systems. Kp uses partial pressures
+(atm or kPa) and applies only to gas-phase systems. Both depend only on temperature, not on
+concentration, pressure, or catalyst. Units depend on the stoichiometry of the reaction. Kc equals
+Kp when the total number of gas moles is unchanged in the reaction. Both are thermodynamic
+equilibrium constants indicating the position of equilibrium.', }, { front: 'Explain why a catalyst
+does not change the equilibrium position.', back: 'A catalyst provides an alternative reaction
+pathway with LOWER activation energy (Ea). It increases the rate of BOTH the forward AND reverse
+reactions EQUALLY. Since the ratio of forward and reverse rates remains unchanged, the equilibrium
+position (and hence Kc/Kp) is unaffected. The system reaches equilibrium FASTER but the same
+proportions of products and reactants are obtained at equilibrium.', }, { front: 'Derive the
+expression for the ionic product of water, Kw.', back: 'Water undergoes autoprotolysis: H2O(l) +
+H2O(l) <=> H3O+(aq) + OH-(aq), or simplified: H2O(l) <=> H+(aq) + OH-(aq). Kw = [H+][OH-] at 298 K,
+Kw = 1.0 x 10^-14 mol^2 dm-6 (unitless in practice). This is temperature-dependent (endothermic, so
+Kw increases with temperature). In pure water: [H+] = [OH-] = 1.0 x 10^-7 mol dm-3, pH = 7. For any
+aqueous solution: [H+] = Kw / [OH-].', }, { front: 'Describe how to carry out a titration to
+determine the concentration of a weak acid using a strong base, and sketch the pH curve.', back: '1)
+Pipette a known volume of weak acid into a flask, add indicator or pH meter. 2) Slowly add strong
+base (NaOH) from a burette, recording pH after each addition. 3) The pH curve starts low (pH 3-4),
+has a buffer region (gradual rise), then a STEEP vertical section near the equivalence point (pH
+jumps from approx. 7 to 10), then levels off. 4) Equivalence point is at pH > 7 (basic) since the
+salt of a weak acid + strong base is alkaline. Methyl orange is NOT suitable; phenolphthalein is
+appropriate.', }, { front: 'Define Ka (acid dissociation constant) and explain its use in comparing
+acid strengths.', back: 'Ka = [H+][A-] / [HA] for a weak acid HA <=> H+ + A-. It measures the extent
+of dissociation: larger Ka = stronger acid (greater dissociation). Ka is temperature-dependent. pKa
+= -log10(Ka); lower pKa = stronger acid. For weak acids, [H+] = sqrt(Ka x [HA]) assuming [HA]init
+approximately equals [HA]eq (valid when Ka is small and concentration not too dilute). Range: strong
+acids Ka >> 1, weak acids Ka typically 10^-3 to 10^-10.', }, { front: 'What is a buffer solution and
+how is an acidic buffer prepared?', back: 'A buffer resists changes in pH when small amounts of acid
+or base are added. An acidic buffer is prepared by mixing a weak acid (HA) with its conjugate base
+(A-) as a soluble salt. Example: ethanoic acid (CH3COOH) + sodium ethanoate (CH3COONa). The
+Henderson-Hasselbalch equation: pH = pKa + log10([A-]/[HA]). Buffer capacity is maximised when [HA]
+= [A-] (pH = pKa).', }, { front: 'Explain the function of a salt bridge in an electrochemical
+cell.', back: 'A salt bridge (or porous partition) completes the electrical circuit by allowing ion
+flow between the two half-cells without allowing the solutions to mix directly. It maintains
+electrical neutrality: as electrons flow through the external wire, cations in the salt bridge
+migrate towards the cathode and anions towards the anode, balancing charge buildup. Common
+compositions: KNO3(aq) or KCl(aq) with a gel (agar) to prevent convection.', }, { front: 'Describe
+standard electrode potential and how E cell values are calculated.', back: 'Standard electrode
+potential (E standard) is the potential difference between a half-cell and the standard hydrogen
+electrode under standard conditions (298 K, 100 kPa, 1.0 mol dm-3). E cell = E standard(cathode,
+reduction) - E standard(anode, reduction). The half-cell with the MORE positive E standard undergoes
+reduction (cathode). If E cell > 0, the reaction is thermodynamically feasible under standard
+conditions (delta G = -nFE cell).', }, { front: "State Faraday's first and second laws of
+electrolysis.", back: "Faraday's First Law: the amount of substance deposited or liberated at an
+electrode is proportional to the quantity of charge passed. m = (Q x M) / (n x F) where Q = It, M =
+molar mass, n = electrons transferred, F = 96500 C mol-1. Faraday's Second Law: when the same
+quantity of charge is passed through different electrolytes, the amounts of substances deposited are
+proportional to their equivalent weights (M/n).", }, { front: 'Compare conventional
+(non-rechargeable) and rechargeable electrochemical cells.', back: 'Conventional (primary) cells:
+the redox reaction is irreversible. Once reactants are consumed, the cell cannot be regenerated.
+Examples: zinc-carbon, alkaline batteries. Rechargeable (secondary) cells: the redox reaction is
+reversible by applying an external current. During charging, the spontaneous cell reaction is
+reversed. Examples: lead-acid batteries (Pb/PbO2/H2SO4), lithium-ion cells. Fuel cells are
+different: reactants are continuously supplied.', }, { front: 'Explain how the Arrhenius equation
+relates rate constant to temperature.', back: 'Arrhenius equation: k = A x e^(-Ea/RT). k = rate
+constant, A = pre-exponential factor (frequency of successful collisions), Ea = activation energy (J
+mol-1), R = gas constant (8.314 J K-1 mol-1), T = temperature (K). Logarithmic form: ln(k) = ln(A) -
+Ea/(RT). Plotting ln(k) vs 1/T gives a straight line: gradient = -Ea/R, y-intercept = ln(A). A 10 K
+rise approximately doubles the rate (for reactions with Ea around 50 kJ mol-1).', }, { front: 'What
+is the Born-Haber cycle and what does it calculate?', back: "The Born-Haber cycle is an application
+of Hess's Law to ionic compounds. It constructs an enthalpy cycle using measurable enthalpy changes
+to calculate the lattice enthalpy (which cannot be measured directly). Steps include: enthalpy of
+atomisation, ionisation energy, electron affinity, lattice enthalpy, enthalpy of formation. Lattice
+enthalpy is defined as the enthalpy change when 1 mole of an ionic solid is formed from its gaseous
+ions (exothermic).", }, { front: "Define the term 'activation energy' and explain its role in
+determining reaction rate.", back: 'Activation energy (Ea) is the minimum energy that colliding
+particles must possess for a successful reaction to occur -- enough to break existing bonds and
+initiate product formation. Only particles with energy >= Ea can react on collision. Higher Ea means
+fewer particles have sufficient energy, so slower rate. Catalysts work by providing an alternative
+pathway with a lower Ea. The Arrhenius equation quantifies this: k = A x e^(-Ea/RT).', }, { front:
+'Describe the titration curve for a strong acid-strong base titration.', back: 'The pH curve starts
+very low (pH approx. 1 for 0.1 M HCl), rises slowly initially, then has a very steep vertical
+section around the equivalence point (pH jumps from approx. 4 to 10 within 1-2 drops), then levels
+off at high pH. At the equivalence point: pH = 7 (neutral salt). Any indicator with a colour change
+in the range pH 4-10 is suitable (e.g. phenolphthalein pH 8.2-10.0, methyl orange pH 3.1-4.4,
+universal indicator). The curve is steeper than for weak acid-strong base.', }, ];
+
 <FlashcardDeck
   deckId="alevel-chemistry-physical-chemistry"
   title="A-Level Chemistry: Physical Chemistry"
   description="Core physical chemistry concepts for A-Level Chemistry revision"
-  cards={[
-    {
-      front: "State Hess's Law and explain its significance in calculating enthalpy changes.",
-      back: "Hess's Law states that the enthalpy change for a reaction is the same regardless of the route taken, provided initial and final conditions are the same. This allows indirect determination of enthalpy changes that cannot be measured directly (e.g. enthalpy of formation of methane from elements) by constructing enthalpy cycles using measurable data (e.g. combustion enthalpies).",
-    },
-    {
-      front: 'Define standard enthalpy change of formation (delta Hf standard).',
-      back: 'The standard enthalpy change of formation is the enthalpy change when 1 mole of a compound is formed from its constituent elements in their standard states under standard conditions (100 kPa, 298 K). For elements in their standard states, delta Hf = 0 by definition. Example: delta Hf of H2O(l) = -286 kJ mol-1 from H2(g) + 0.5 O2(g).',
-    },
-    {
-      front: 'What is the difference between bond dissociation enthalpy and mean bond enthalpy?',
-      back: 'Bond dissociation enthalpy is the energy required to break a SPECIFIC bond in a SPECIFIC molecule (e.g. the first O-H bond in water). Mean bond enthalpy is the AVERAGE energy for that type of bond across a range of compounds. Mean bond enthalpies are less precise because the strength of a given bond varies depending on the molecular environment. Data book values are mean bond enthalpies.',
-    },
-    {
-      front:
-        'Explain the Maxwell-Boltzmann distribution curve and the effect of temperature on it.',
-      back: 'The Maxwell-Boltzmann distribution shows the distribution of molecular energies in a gas at a given temperature. The curve starts at the origin, peaks, and tails towards high energy. Key features: most molecules have moderate energy; few have very high or very low energy. Increasing temperature: peak shifts right (higher average energy), curve flattens and broadens, and a greater proportion of molecules have energy >= Ea (activation energy). Area under both curves is the same (same number of molecules).',
-    },
-    {
-      front: 'Describe the initial rates method for determining the rate equation experimentally.',
-      back: '1) Repeat the experiment varying ONE reactant concentration while keeping others constant. 2) Measure the initial rate (before significant concentration changes). 3) Plot initial rate vs concentration: linear = first order; constant rate = zero order; quadratic = second order. 4) Repeat for each reactant. The rate constant k is determined by substituting known rate, orders, and concentrations into rate = k[A]^m[B]^n.',
-    },
-    {
-      front: "State Le Chatelier's principle and give an example applied to the Haber process.",
-      back: "Le Chatelier's principle: if a system at equilibrium is subjected to a change in concentration, pressure, or temperature, the equilibrium shifts to oppose the change. Haber process: N2(g) + 3H2(g) <=> 2NH3(g), exothermic. Increasing pressure: equilibrium shifts right (fewer gas moles, 2 vs 4). Decreasing temperature: equilibrium shifts right (exothermic direction). In practice, compromise conditions used (200 atm, 450 degrees C, Fe catalyst).",
-    },
-    {
-      front: 'Compare the equilibrium constants Kc and Kp.',
-      back: 'Kc uses molar concentrations (mol dm-3) and applies to solutions and gas-phase systems. Kp uses partial pressures (atm or kPa) and applies only to gas-phase systems. Both depend only on temperature, not on concentration, pressure, or catalyst. Units depend on the stoichiometry of the reaction. Kc equals Kp when the total number of gas moles is unchanged in the reaction. Both are thermodynamic equilibrium constants indicating the position of equilibrium.',
-    },
-    {
-      front: 'Explain why a catalyst does not change the equilibrium position.',
-      back: 'A catalyst provides an alternative reaction pathway with LOWER activation energy (Ea). It increases the rate of BOTH the forward AND reverse reactions EQUALLY. Since the ratio of forward and reverse rates remains unchanged, the equilibrium position (and hence Kc/Kp) is unaffected. The system reaches equilibrium FASTER but the same proportions of products and reactants are obtained at equilibrium.',
-    },
-    {
-      front: 'Derive the expression for the ionic product of water, Kw.',
-      back: 'Water undergoes autoprotolysis: H2O(l) + H2O(l) <=> H3O+(aq) + OH-(aq), or simplified: H2O(l) <=> H+(aq) + OH-(aq). Kw = [H+][OH-] at 298 K, Kw = 1.0 x 10^-14 mol^2 dm-6 (unitless in practice). This is temperature-dependent (endothermic, so Kw increases with temperature). In pure water: [H+] = [OH-] = 1.0 x 10^-7 mol dm-3, pH = 7. For any aqueous solution: [H+] = Kw / [OH-].',
-    },
-    {
-      front:
-        'Describe how to carry out a titration to determine the concentration of a weak acid using a strong base, and sketch the pH curve.',
-      back: '1) Pipette a known volume of weak acid into a flask, add indicator or pH meter. 2) Slowly add strong base (NaOH) from a burette, recording pH after each addition. 3) The pH curve starts low (pH 3-4), has a buffer region (gradual rise), then a STEEP vertical section near the equivalence point (pH jumps from approx. 7 to 10), then levels off. 4) Equivalence point is at pH > 7 (basic) since the salt of a weak acid + strong base is alkaline. Methyl orange is NOT suitable; phenolphthalein is appropriate.',
-    },
-    {
-      front:
-        'Define Ka (acid dissociation constant) and explain its use in comparing acid strengths.',
-      back: 'Ka = [H+][A-] / [HA] for a weak acid HA <=> H+ + A-. It measures the extent of dissociation: larger Ka = stronger acid (greater dissociation). Ka is temperature-dependent. pKa = -log10(Ka); lower pKa = stronger acid. For weak acids, [H+] = sqrt(Ka x [HA]) assuming [HA]init approximately equals [HA]eq (valid when Ka is small and concentration not too dilute). Range: strong acids Ka >> 1, weak acids Ka typically 10^-3 to 10^-10.',
-    },
-    {
-      front: 'What is a buffer solution and how is an acidic buffer prepared?',
-      back: 'A buffer resists changes in pH when small amounts of acid or base are added. An acidic buffer is prepared by mixing a weak acid (HA) with its conjugate base (A-) as a soluble salt. Example: ethanoic acid (CH3COOH) + sodium ethanoate (CH3COONa). The Henderson-Hasselbalch equation: pH = pKa + log10([A-]/[HA]). Buffer capacity is maximised when [HA] = [A-] (pH = pKa).',
-    },
-    {
-      front: 'Explain the function of a salt bridge in an electrochemical cell.',
-      back: 'A salt bridge (or porous partition) completes the electrical circuit by allowing ion flow between the two half-cells without allowing the solutions to mix directly. It maintains electrical neutrality: as electrons flow through the external wire, cations in the salt bridge migrate towards the cathode and anions towards the anode, balancing charge buildup. Common compositions: KNO3(aq) or KCl(aq) with a gel (agar) to prevent convection.',
-    },
-    {
-      front: 'Describe standard electrode potential and how E cell values are calculated.',
-      back: 'Standard electrode potential (E standard) is the potential difference between a half-cell and the standard hydrogen electrode under standard conditions (298 K, 100 kPa, 1.0 mol dm-3). E cell = E standard(cathode, reduction) - E standard(anode, reduction). The half-cell with the MORE positive E standard undergoes reduction (cathode). If E cell > 0, the reaction is thermodynamically feasible under standard conditions (delta G = -nFE cell).',
-    },
-    {
-      front: "State Faraday's first and second laws of electrolysis.",
-      back: "Faraday's First Law: the amount of substance deposited or liberated at an electrode is proportional to the quantity of charge passed. m = (Q x M) / (n x F) where Q = It, M = molar mass, n = electrons transferred, F = 96500 C mol-1. Faraday's Second Law: when the same quantity of charge is passed through different electrolytes, the amounts of substances deposited are proportional to their equivalent weights (M/n).",
-    },
-    {
-      front: 'Compare conventional (non-rechargeable) and rechargeable electrochemical cells.',
-      back: 'Conventional (primary) cells: the redox reaction is irreversible. Once reactants are consumed, the cell cannot be regenerated. Examples: zinc-carbon, alkaline batteries. Rechargeable (secondary) cells: the redox reaction is reversible by applying an external current. During charging, the spontaneous cell reaction is reversed. Examples: lead-acid batteries (Pb/PbO2/H2SO4), lithium-ion cells. Fuel cells are different: reactants are continuously supplied.',
-    },
-    {
-      front: 'Explain how the Arrhenius equation relates rate constant to temperature.',
-      back: 'Arrhenius equation: k = A x e^(-Ea/RT). k = rate constant, A = pre-exponential factor (frequency of successful collisions), Ea = activation energy (J mol-1), R = gas constant (8.314 J K-1 mol-1), T = temperature (K). Logarithmic form: ln(k) = ln(A) - Ea/(RT). Plotting ln(k) vs 1/T gives a straight line: gradient = -Ea/R, y-intercept = ln(A). A 10 K rise approximately doubles the rate (for reactions with Ea around 50 kJ mol-1).',
-    },
-    {
-      front: 'What is the Born-Haber cycle and what does it calculate?',
-      back: "The Born-Haber cycle is an application of Hess's Law to ionic compounds. It constructs an enthalpy cycle using measurable enthalpy changes to calculate the lattice enthalpy (which cannot be measured directly). Steps include: enthalpy of atomisation, ionisation energy, electron affinity, lattice enthalpy, enthalpy of formation. Lattice enthalpy is defined as the enthalpy change when 1 mole of an ionic solid is formed from its gaseous ions (exothermic).",
-    },
-    {
-      front:
-        "Define the term 'activation energy' and explain its role in determining reaction rate.",
-      back: 'Activation energy (Ea) is the minimum energy that colliding particles must possess for a successful reaction to occur -- enough to break existing bonds and initiate product formation. Only particles with energy >= Ea can react on collision. Higher Ea means fewer particles have sufficient energy, so slower rate. Catalysts work by providing an alternative pathway with a lower Ea. The Arrhenius equation quantifies this: k = A x e^(-Ea/RT).',
-    },
-    {
-      front: 'Describe the titration curve for a strong acid-strong base titration.',
-      back: 'The pH curve starts very low (pH approx. 1 for 0.1 M HCl), rises slowly initially, then has a very steep vertical section around the equivalence point (pH jumps from approx. 4 to 10 within 1-2 drops), then levels off at high pH. At the equivalence point: pH = 7 (neutral salt). Any indicator with a colour change in the range pH 4-10 is suitable (e.g. phenolphthalein pH 8.2-10.0, methyl orange pH 3.1-4.4, universal indicator). The curve is steeper than for weak acid-strong base.',
-    },
-  ]}
+  cards={flashcardData}
 />

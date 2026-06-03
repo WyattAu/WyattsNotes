@@ -1,42 +1,189 @@
 ---
-title: "IB Geography: Urban Environments Practice"
+title: 'IB Geography: Urban Environments Practice'
 slug: practice-urban-environments
-description: "16 MCQ questions on urbanisation trends, urban stress, sustainable strategies, and urban sprawl for IB Geography exam revision and practice."
+description:
+  '16 MCQ questions on urbanisation trends, urban stress, sustainable strategies, and urban sprawl
+  for IB Geography exam revision and practice.'
 tags: [Geography, IB Geography, Practice]
 ---
+
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 ## IB Geography -- Urban Environments Practice
 
-16 MCQ practice problems covering core IB Geography urban environments content.
----
+## 16 MCQ practice problems covering core IB Geography urban environments content.
+
 ### Urbanisation Trends
-<PracticeProblem questions={[
-  {question: "A megacity is defined by the United Nations as a city with a population exceeding:", options: ["A) 1 million", "B) 5 million", "C) 10 million", "D) 20 million"], correct: 2, explanation: "The UN defines a megacity as an urban agglomeration with over 10 million inhabitants. As of 2023, there are approximately 37 megacities worldwide, with Tokyo-Yokohama (approximately 37 million), Delhi (approximately 33 million), and Shanghai (approximately 29 million) being the largest. Most megacity growth is now occurring in developing countries in Asia and Africa, particularly Lagos, Dhaka, and Kinshasa."},
-  {question: "The rate of urbanisation is currently highest in:", options: ["A) Western Europe", "B) Sub-Saharan Africa and South Asia", "C) North America", "D) East Asia"], correct: 1, explanation: "While the highest levels of urbanisation (percentage of population living in urban areas) are in developed regions (North America ~83%, Europe ~75%), the highest rates of urbanisation (the speed at which the proportion is increasing) are in sub-Saharan Africa and South Asia. Countries like Nigeria, Ethiopia, and Bangladesh are experiencing rapid rural-to-urban migration driven by push factors (rural poverty, conflict, environmental degradation) and pull factors (employment, services, perceived opportunities)."},
-  {question: "Counter-urbanisation refers to:", options: ["A) The movement of people from urban areas to rural areas", "B) Urban growth in developing countries", "C) The decline of megacities globally", "D) Movement of people from one city to another city"], correct: 0, explanation: "Counter-urbanisation is the movement of people from urban areas to rural areas, observed mainly in developed countries since the 1970s. It is driven by push factors (congestion, high housing costs, pollution, crime in cities) and pull factors (desire for larger homes, improved quality of life, telecommuting, retirement). This process has been facilitated by improved transport and communications technology. It is distinct from suburbanisation, which involves movement to the urban fringe."}
-]} />
+
+const practiceQuestions = [ {question: "A megacity is defined by the United Nations as a city with a
+population exceeding:", options: ["A) 1 million", "B) 5 million", "C) 10 million", "D) 20 million"],
+correct: 2, explanation: "The UN defines a megacity as an urban agglomeration with over 10 million
+inhabitants. As of 2023, there are approximately 37 megacities worldwide, with Tokyo-Yokohama
+(approximately 37 million), Delhi (approximately 33 million), and Shanghai (approximately 29
+million) being the largest. Most megacity growth is now occurring in developing countries in Asia
+and Africa, particularly Lagos, Dhaka, and Kinshasa."}, {question: "The rate of urbanisation is
+currently highest in:", options: ["A) Western Europe", "B) Sub-Saharan Africa and South Asia", "C)
+North America", "D) East Asia"], correct: 1, explanation: "While the highest levels of urbanisation
+(percentage of population living in urban areas) are in developed regions (North America ~83%,
+Europe ~75%), the highest rates of urbanisation (the speed at which the proportion is increasing)
+are in sub-Saharan Africa and South Asia. Countries like Nigeria, Ethiopia, and Bangladesh are
+experiencing rapid rural-to-urban migration driven by push factors (rural poverty, conflict,
+environmental degradation) and pull factors (employment, services, perceived opportunities)."},
+{question: "Counter-urbanisation refers to:", options: ["A) The movement of people from urban areas
+to rural areas", "B) Urban growth in developing countries", "C) The decline of megacities globally",
+"D) Movement of people from one city to another city"], correct: 0, explanation:
+"Counter-urbanisation is the movement of people from urban areas to rural areas, observed mainly in
+developed countries since the 1970s. It is driven by push factors (congestion, high housing costs,
+pollution, crime in cities) and pull factors (desire for larger homes, improved quality of life,
+telecommuting, retirement). This process has been facilitated by improved transport and
+communications technology. It is distinct from suburbanisation, which involves movement to the urban
+fringe."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Urban Stress
-<PracticeProblem questions={[
-  {question: "Traffic congestion in megacities contributes to urban stress primarily through:", options: ["A) Reduced access to green spaces", "B) Air pollution, noise pollution, lost economic productivity, and increased journey times reducing quality of life", "C) Increased property values in city centres", "D) Improved public transport investment"], correct: 1, explanation: "Traffic congestion is a major source of urban stress. It generates air pollution (particulate matter, NO2, CO2) contributing to respiratory diseases, noise pollution affecting health and wellbeing, and economic costs through lost productivity and wasted fuel. In cities like Mumbai, Beijing, and Nairobi, average commuting times can exceed 2 hours each way. Congestion also disproportionately affects lower-income residents who cannot afford to live centrally or use private transport."},
-  {question: "Informal housing (slums) in developing world cities result from:", options: ["A) Excessive government planning and regulation", "B) Rapid urbanisation outpacing the provision of affordable housing, infrastructure, and services", "C) Deliberate government policy to segregate populations", "D) Declining urban populations reducing housing demand"], correct: 1, explanation: "Informal settlements (slums, favelas, bidonvilles) develop when rural-to-urban migration exceeds the capacity of cities to provide housing, infrastructure, and services. Over 1 billion people live in slums globally, lacking adequate access to clean water, sanitation, healthcare, and secure tenure. Kibera in Nairobi, Dharavi in Mumbai, and Rocinha in Rio de Janeiro are prominent examples. Rapid urbanisation without corresponding investment in housing and infrastructure drives their growth."},
-  {question: "Urban waste management is a growing challenge because:", options: ["A) Waste volumes are declining in most cities", "B) Growing populations, rising consumption, and inadequate collection infrastructure lead to pollution, health hazards, and environmental degradation", "C) Modern recycling technology has solved waste disposal problems", "D) Waste management is primarily a rural rather than urban issue"], correct: 1, explanation: "Urban areas generate enormous and growing waste volumes. High-income cities produce 1-2 kg of solid waste per person per day; developing cities generate 0.5-1 kg but with inadequate collection and disposal infrastructure. Unmanaged waste leads to open dumping, water pollution, disease vectors (rats, mosquitoes breeding in waste), blocked drainage causing floods, and air pollution from burning waste. Cities like Manila, Jakarta, and Lagos face severe waste management crises."},
-  {question: "Urban heat island effect refers to:", options: ["A) Cooler temperatures in city centres due to shade from tall buildings", "B) Higher temperatures in urban areas compared to surrounding rural areas due to heat absorption by buildings, roads, and reduced vegetation", "C) The warming effect of coastal cities due to ocean currents", "D) Temperature variations between different districts within a city"], correct: 1, explanation: "The urban heat island (UHI) effect causes urban areas to be 1-7 degrees C warmer than surrounding rural areas. This is caused by dark surfaces (asphalt, concrete) absorbing and storing solar radiation, buildings blocking wind flow, waste heat from vehicles and air conditioning, lack of vegetation and evapotranspiration, and reduced surface water. The UHI effect increases energy demand for cooling, worsens air pollution through ozone formation, and disproportionately affects vulnerable populations during heatwaves. Green roofs, urban forestry, and reflective surfaces can mitigate the effect."}
-]} />
+
+const practiceQuestions = [ {question: "Traffic congestion in megacities contributes to urban stress
+primarily through:", options: ["A) Reduced access to green spaces", "B) Air pollution, noise
+pollution, lost economic productivity, and increased journey times reducing quality of life", "C)
+Increased property values in city centres", "D) Improved public transport investment"], correct: 1,
+explanation: "Traffic congestion is a major source of urban stress. It generates air pollution
+(particulate matter, NO2, CO2) contributing to respiratory diseases, noise pollution affecting
+health and wellbeing, and economic costs through lost productivity and wasted fuel. In cities like
+Mumbai, Beijing, and Nairobi, average commuting times can exceed 2 hours each way. Congestion also
+disproportionately affects lower-income residents who cannot afford to live centrally or use private
+transport."}, {question: "Informal housing (slums) in developing world cities result from:",
+options: ["A) Excessive government planning and regulation", "B) Rapid urbanisation outpacing the
+provision of affordable housing, infrastructure, and services", "C) Deliberate government policy to
+segregate populations", "D) Declining urban populations reducing housing demand"], correct: 1,
+explanation: "Informal settlements (slums, favelas, bidonvilles) develop when rural-to-urban
+migration exceeds the capacity of cities to provide housing, infrastructure, and services. Over 1
+billion people live in slums globally, lacking adequate access to clean water, sanitation,
+healthcare, and secure tenure. Kibera in Nairobi, Dharavi in Mumbai, and Rocinha in Rio de Janeiro
+are prominent examples. Rapid urbanisation without corresponding investment in housing and
+infrastructure drives their growth."}, {question: "Urban waste management is a growing challenge
+because:", options: ["A) Waste volumes are declining in most cities", "B) Growing populations,
+rising consumption, and inadequate collection infrastructure lead to pollution, health hazards, and
+environmental degradation", "C) Modern recycling technology has solved waste disposal problems", "D)
+Waste management is primarily a rural rather than urban issue"], correct: 1, explanation: "Urban
+areas generate enormous and growing waste volumes. High-income cities produce 1-2 kg of solid waste
+per person per day; developing cities generate 0.5-1 kg but with inadequate collection and disposal
+infrastructure. Unmanaged waste leads to open dumping, water pollution, disease vectors (rats,
+mosquitoes breeding in waste), blocked drainage causing floods, and air pollution from burning
+waste. Cities like Manila, Jakarta, and Lagos face severe waste management crises."}, {question:
+"Urban heat island effect refers to:", options: ["A) Cooler temperatures in city centres due to
+shade from tall buildings", "B) Higher temperatures in urban areas compared to surrounding rural
+areas due to heat absorption by buildings, roads, and reduced vegetation", "C) The warming effect of
+coastal cities due to ocean currents", "D) Temperature variations between different districts within
+a city"], correct: 1, explanation: "The urban heat island (UHI) effect causes urban areas to be 1-7
+degrees C warmer than surrounding rural areas. This is caused by dark surfaces (asphalt, concrete)
+absorbing and storing solar radiation, buildings blocking wind flow, waste heat from vehicles and
+air conditioning, lack of vegetation and evapotranspiration, and reduced surface water. The UHI
+effect increases energy demand for cooling, worsens air pollution through ozone formation, and
+disproportionately affects vulnerable populations during heatwaves. Green roofs, urban forestry, and
+reflective surfaces can mitigate the effect."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Sustainable Urban Strategies
-<PracticeProblem questions={[
-  {question: "The concept of a 'smart city' involves:", options: ["A) Building exclusively new cities with no historical preservation", "B) Using digital technology and data analytics to improve urban services, efficiency, sustainability, and quality of life", "C) Banning private vehicles entirely within city limits", "D) Focusing exclusively on economic growth without environmental considerations"], correct: 1, explanation: "Smart cities use ICT (information and communication technology) and IoT (Internet of Things) sensors to collect data on transport, energy use, air quality, waste, and water systems. This data is analysed to optimise services: smart traffic management reduces congestion, smart grids balance energy supply and demand, smart waste systems optimise collection routes, and real-time air quality monitoring informs public health responses. Singapore, Barcelona, and Copenhagen are leading smart city examples."},
-  {question: "Urban renewal as a sustainable strategy typically involves:", options: ["A) Demolishing all existing buildings and starting from scratch", "B) Regenerating declining urban areas through a combination of redevelopment, renovation, infrastructure improvement, and community engagement", "C) Moving all residents to suburban areas", "D) Focusing investment exclusively on new commercial developments"], correct: 1, explanation: "Urban renewal (or regeneration) aims to revitalise declining urban areas through integrated approaches: redeveloping brownfield sites (contaminated or underused former industrial land), renovating existing housing stock, improving transport links and public spaces, creating employment opportunities, and engaging local communities in planning. The London Docklands regeneration and Barcelona's transformation for the 1992 Olympics are often-cited examples. Successful renewal balances economic development with social equity and environmental improvement."},
-  {question: "Sustainable transport planning in cities aims to:", options: ["A) Maximise private car use to improve individual mobility", "B) Reduce car dependency through investment in public transit, cycling infrastructure, and pedestrian zones while promoting mixed-use development", "C) Build more highways and parking facilities", "D) Relocate industries to reduce commuter traffic without changing transport modes"], correct: 1, explanation: "Sustainable transport strategies include: investing in high-quality public transit (bus rapid transit systems like Curitiba's, metro systems, integrated ticketing), dedicated cycling infrastructure (Copenhagen, Amsterdam), pedestrianisation of city centres, congestion charging (London, Singapore), car-free zones, and mixed-use zoning that reduces travel distances. These approaches aim to reduce emissions, improve air quality, promote health through active transport, and ensure equitable access to urban opportunities. Curitiba's BRT system carries approximately 2 million passengers daily."},
-  {question: "Green cities as a sustainable urban strategy incorporate:", options: ["A) Only the colour of buildings and infrastructure", "B) Green roofs, urban parks, tree-lined streets, sustainable building materials, and renewable energy to reduce environmental impact", "C) Mandatory agriculture within all urban boundaries", "D) The removal of all industrial activities from urban areas"], correct: 1, explanation: "Green city initiatives aim to reduce the environmental footprint of urban areas through: green roofs and walls (reducing stormwater runoff and the urban heat island effect), urban parks and green corridors (improving air quality, biodiversity, and mental health), sustainable building materials and energy-efficient design, renewable energy systems, sustainable water management, and urban agriculture. Cities like Copenhagen, Freiburg, and Singapore are recognised as leaders. Singapore mandates green building standards through its Green Mark scheme and has integrated nature throughout the cityscape."}
-]} />
+
+const practiceQuestions = [ {question: "The concept of a 'smart city' involves:", options: ["A)
+Building exclusively new cities with no historical preservation", "B) Using digital technology and
+data analytics to improve urban services, efficiency, sustainability, and quality of life", "C)
+Banning private vehicles entirely within city limits", "D) Focusing exclusively on economic growth
+without environmental considerations"], correct: 1, explanation: "Smart cities use ICT (information
+and communication technology) and IoT (Internet of Things) sensors to collect data on transport,
+energy use, air quality, waste, and water systems. This data is analysed to optimise services: smart
+traffic management reduces congestion, smart grids balance energy supply and demand, smart waste
+systems optimise collection routes, and real-time air quality monitoring informs public health
+responses. Singapore, Barcelona, and Copenhagen are leading smart city examples."}, {question:
+"Urban renewal as a sustainable strategy typically involves:", options: ["A) Demolishing all
+existing buildings and starting from scratch", "B) Regenerating declining urban areas through a
+combination of redevelopment, renovation, infrastructure improvement, and community engagement", "C)
+Moving all residents to suburban areas", "D) Focusing investment exclusively on new commercial
+developments"], correct: 1, explanation: "Urban renewal (or regeneration) aims to revitalise
+declining urban areas through integrated approaches: redeveloping brownfield sites (contaminated or
+underused former industrial land), renovating existing housing stock, improving transport links and
+public spaces, creating employment opportunities, and engaging local communities in planning. The
+London Docklands regeneration and Barcelona's transformation for the 1992 Olympics are often-cited
+examples. Successful renewal balances economic development with social equity and environmental
+improvement."}, {question: "Sustainable transport planning in cities aims to:", options: ["A)
+Maximise private car use to improve individual mobility", "B) Reduce car dependency through
+investment in public transit, cycling infrastructure, and pedestrian zones while promoting mixed-use
+development", "C) Build more highways and parking facilities", "D) Relocate industries to reduce
+commuter traffic without changing transport modes"], correct: 1, explanation: "Sustainable transport
+strategies include: investing in high-quality public transit (bus rapid transit systems like
+Curitiba's, metro systems, integrated ticketing), dedicated cycling infrastructure (Copenhagen,
+Amsterdam), pedestrianisation of city centres, congestion charging (London, Singapore), car-free
+zones, and mixed-use zoning that reduces travel distances. These approaches aim to reduce emissions,
+improve air quality, promote health through active transport, and ensure equitable access to urban
+opportunities. Curitiba's BRT system carries approximately 2 million passengers daily."}, {question:
+"Green cities as a sustainable urban strategy incorporate:", options: ["A) Only the colour of
+buildings and infrastructure", "B) Green roofs, urban parks, tree-lined streets, sustainable
+building materials, and renewable energy to reduce environmental impact", "C) Mandatory agriculture
+within all urban boundaries", "D) The removal of all industrial activities from urban areas"],
+correct: 1, explanation: "Green city initiatives aim to reduce the environmental footprint of urban
+areas through: green roofs and walls (reducing stormwater runoff and the urban heat island effect),
+urban parks and green corridors (improving air quality, biodiversity, and mental health),
+sustainable building materials and energy-efficient design, renewable energy systems, sustainable
+water management, and urban agriculture. Cities like Copenhagen, Freiburg, and Singapore are
+recognised as leaders. Singapore mandates green building standards through its Green Mark scheme and
+has integrated nature throughout the cityscape."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ### Urban Sprawl
-<PracticeProblem questions={[
-  {question: "Urban sprawl is best described as:", options: ["A) The vertical expansion of cities through high-rise development", "B) The uncontrolled, low-density horizontal expansion of urban areas into surrounding rural land", "C) The decline of inner-city areas as populations move outward", "D) The planned expansion of cities along public transport corridors"], correct: 1, explanation: "Urban sprawl is the uncontrolled outward expansion of urban areas characterised by low-density development on previously rural land at the urban fringe. It typically takes the form of housing estates, shopping centres, and business parks built on greenfield land, with heavy reliance on private car transport. Sprawl consumes agricultural land, increases infrastructure costs (longer roads, utilities), fragments habitats, increases car dependency and emissions, and reduces social cohesion. It is prevalent in North American and Australian cities."},
-  {question: "The difference between brownfield and greenfield development sites is that:", options: ["A) Brownfield sites have never been built on, greenfield sites have been previously developed", "B) Brownfield sites are previously developed (often former industrial) land that may require remediation, while greenfield sites are undeveloped rural land", "C) Brownfield sites are always in city centres, greenfield sites are always in rural areas", "D) There is no environmental difference between the two types of site"], correct: 1, explanation: "Brownfield sites are previously developed or contaminated land, often former industrial, commercial, or military sites that may require environmental remediation before redevelopment. They are typically located within or near existing urban areas with access to infrastructure. Greenfield sites are previously undeveloped agricultural or natural land at the urban fringe. Sustainable urban planning generally prefers brownfield development because it reuses existing infrastructure, preserves agricultural land and ecosystems, and supports urban compaction. However, brownfield remediation costs can be high."},
-  {question: "Edge cities, as described by Garreau (1991), are:", options: ["A) Cities that develop on the edges of international borders", "B) Suburban business centres that develop at the junctions of major highway intersections on the urban periphery, with their own commercial and employment functions", "C) The oldest parts of cities, typically found at the centre", "D) Planned satellite towns built to relieve overcrowding in the main city"], correct: 1, explanation: "Garreau identified 'edge cities' as significant urban nodes that develop on the urban periphery, typically at the intersection of major highways. They contain office space, retail centres, entertainment, and housing, creating self-contained urban functions that reduce dependence on the traditional central business district. Examples include Tysons Corner (Washington DC area), Schaumburg (Chicago), and Croydon (London). Edge cities represent a decentralisation of urban economic activity and are both a consequence and a driver of urban sprawl."},
-  {question: "Urban sprawl is most prevalent in which type of country?", options: ["A) Small island nations with limited land area", "B) High-income countries with abundant land, high car ownership, and limited planning restrictions, particularly the USA and Australia", "C) Densely populated developing countries", "D) Countries with strong central planning and land use regulation"], correct: 1, explanation: "Urban sprawl is most prevalent in high-income countries with abundant land, high car ownership, weak land-use planning, and a cultural preference for low-density suburban living. The USA is the archetype -- American cities have much lower population densities than European or Asian cities. Cities like Atlanta, Houston, and Los Angeles spread over enormous areas with car-dependent suburbs. Australia's cities (Sydney, Melbourne) also exhibit significant sprawl. In contrast, European cities with stronger planning traditions and higher fuel prices have more compact urban forms."},
-  {question: "Primate cities differ from other large cities in that they:", options: ["A) Are always capital cities located on coastlines", "B) Are disproportionately larger than all other cities in the country, dominating the country's economic, political, and cultural life", "C) Have a population of exactly 10 million", "D) Are exclusively found in developed countries"], correct: 1, explanation: "Primate cities are cities that are significantly larger -- often at least twice the size -- of the country's second-largest city and dominate national urban systems. Examples include Bangkok (Thailand), Paris (France), Lima (Peru), and Ulaanbaatar (Mongolia). Primate city dominance is common in developing countries where colonial histories, centralised government investment, and economic concentration in the capital have drawn migration away from secondary cities."}
-]} />
+
+const practiceQuestions = [ {question: "Urban sprawl is best described as:", options: ["A) The
+vertical expansion of cities through high-rise development", "B) The uncontrolled, low-density
+horizontal expansion of urban areas into surrounding rural land", "C) The decline of inner-city
+areas as populations move outward", "D) The planned expansion of cities along public transport
+corridors"], correct: 1, explanation: "Urban sprawl is the uncontrolled outward expansion of urban
+areas characterised by low-density development on previously rural land at the urban fringe. It
+typically takes the form of housing estates, shopping centres, and business parks built on
+greenfield land, with heavy reliance on private car transport. Sprawl consumes agricultural land,
+increases infrastructure costs (longer roads, utilities), fragments habitats, increases car
+dependency and emissions, and reduces social cohesion. It is prevalent in North American and
+Australian cities."}, {question: "The difference between brownfield and greenfield development sites
+is that:", options: ["A) Brownfield sites have never been built on, greenfield sites have been
+previously developed", "B) Brownfield sites are previously developed (often former industrial) land
+that may require remediation, while greenfield sites are undeveloped rural land", "C) Brownfield
+sites are always in city centres, greenfield sites are always in rural areas", "D) There is no
+environmental difference between the two types of site"], correct: 1, explanation: "Brownfield sites
+are previously developed or contaminated land, often former industrial, commercial, or military
+sites that may require environmental remediation before redevelopment. They are typically located
+within or near existing urban areas with access to infrastructure. Greenfield sites are previously
+undeveloped agricultural or natural land at the urban fringe. Sustainable urban planning generally
+prefers brownfield development because it reuses existing infrastructure, preserves agricultural
+land and ecosystems, and supports urban compaction. However, brownfield remediation costs can be
+high."}, {question: "Edge cities, as described by Garreau (1991), are:", options: ["A) Cities that
+develop on the edges of international borders", "B) Suburban business centres that develop at the
+junctions of major highway intersections on the urban periphery, with their own commercial and
+employment functions", "C) The oldest parts of cities, typically found at the centre", "D) Planned
+satellite towns built to relieve overcrowding in the main city"], correct: 1, explanation: "Garreau
+identified 'edge cities' as significant urban nodes that develop on the urban periphery, typically
+at the intersection of major highways. They contain office space, retail centres, entertainment, and
+housing, creating self-contained urban functions that reduce dependence on the traditional central
+business district. Examples include Tysons Corner (Washington DC area), Schaumburg (Chicago), and
+Croydon (London). Edge cities represent a decentralisation of urban economic activity and are both a
+consequence and a driver of urban sprawl."}, {question: "Urban sprawl is most prevalent in which
+type of country?", options: ["A) Small island nations with limited land area", "B) High-income
+countries with abundant land, high car ownership, and limited planning restrictions, particularly
+the USA and Australia", "C) Densely populated developing countries", "D) Countries with strong
+central planning and land use regulation"], correct: 1, explanation: "Urban sprawl is most prevalent
+in high-income countries with abundant land, high car ownership, weak land-use planning, and a
+cultural preference for low-density suburban living. The USA is the archetype -- American cities
+have much lower population densities than European or Asian cities. Cities like Atlanta, Houston,
+and Los Angeles spread over enormous areas with car-dependent suburbs. Australia's cities (Sydney,
+Melbourne) also exhibit significant sprawl. In contrast, European cities with stronger planning
+traditions and higher fuel prices have more compact urban forms."}, {question: "Primate cities
+differ from other large cities in that they:", options: ["A) Are always capital cities located on
+coastlines", "B) Are disproportionately larger than all other cities in the country, dominating the
+country's economic, political, and cultural life", "C) Have a population of exactly 10 million", "D)
+Are exclusively found in developed countries"], correct: 1, explanation: "Primate cities are cities
+that are significantly larger -- often at least twice the size -- of the country's second-largest
+city and dominate national urban systems. Examples include Bangkok (Thailand), Paris (France), Lima
+(Peru), and Ulaanbaatar (Mongolia). Primate city dominance is common in developing countries where
+colonial histories, centralised government investment, and economic concentration in the capital
+have drawn migration away from secondary cities."} ];
+
+<PracticeProblem questions={practiceQuestions} />

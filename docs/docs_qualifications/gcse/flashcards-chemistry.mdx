@@ -1,12 +1,16 @@
 ---
 title: GCSE Chemistry Flashcards
 slug: flashcards-chemistry
-description: "20 interactive flashcards for GCSE Chemistry (AQA/Edexcel) covering atomic structure, bonding, states of matter, reactions, acids, electrolysis, and organic chemistry for spaced repetition revision."
+description:
+  '20 interactive flashcards for GCSE Chemistry (AQA/Edexcel) covering atomic structure, bonding,
+  states of matter, reactions, acids, electrolysis, and organic chemistry for spaced repetition
+  revision.'
 tags:
   - gcse
   - chemistry
   - Flashcards
 ---
+
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ## GCSE Chemistry -- Flashcard Deck
@@ -15,150 +19,137 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
+const flashcardData = [ { id: 'gcse-chem-001', front: 'Describe the structure of an atom. Where are
+protons, neutrons, and electrons found?', back: 'Protons and neutrons are in the nucleus (centre).
+Electrons orbit in electron shells (energy levels) around the nucleus. Proton: positive charge, mass
+≈ 1 amu. Neutron: no charge, mass ≈ 1 amu. Electron: negative charge, mass ≈ 0 (negligible). Atomic
+number = number of protons. Mass number = protons + neutrons. In a neutral atom: protons =
+electrons.', tags: ['atomic-structure'], difficulty: 'easy', }, { id: 'gcse-chem-002', front:
+'Define isotopes and explain why isotopes of the same element have the same chemical properties.',
+back: 'Isotopes are atoms of the same element with the same number of protons but different numbers
+of neutrons (different mass numbers). Example: carbon-12 and carbon-14. They have the same chemical
+properties because chemical behaviour depends on electron configuration, which is determined by the
+number of protons, not neutrons. Physical properties (density, melting point) may differ slightly.',
+tags: ['atomic-structure'], difficulty: 'easy', }, { id: 'gcse-chem-003', front: 'Describe the
+arrangement of elements in the periodic table. What do the group number and period number tell
+you?', back: 'Elements are arranged in order of increasing atomic number. Group number (columns
+1-7): tells you the number of electrons in the outer shell (valence electrons). All elements in a
+group have similar chemical properties. Period number (rows): tells you the number of electron
+shells. Group 1: alkali metals (reactive). Group 7: halogens (reactive non-metals). Group 0/8: noble
+gases (unreactive).', tags: ['periodic-table'], difficulty: 'easy', }, { id: 'gcse-chem-004', front:
+'Describe ionic bonding. Give an example using sodium and chlorine.', back: 'Ionic bonding occurs
+between a metal and a non-metal. Electrons are transferred from the metal to the non-metal, forming
+positive and negative ions which are held together by strong electrostatic attraction. Na → Na⁺ + e⁻
+(loses 1 electron). Cl + e⁻ → Cl⁻ (gains 1 electron). NaCl is an ionic lattice: alternating Na⁺ and
+Cl⁻ ions in a giant crystal structure. High melting point, conducts when molten or dissolved.',
+tags: ['bonding'], difficulty: 'medium', }, { id: 'gcse-chem-005', front: 'Describe covalent
+bonding. Give examples of simple covalent molecules.', back: 'Covalent bonding occurs between
+non-metals. Atoms share pairs of electrons to achieve a full outer shell. Each shared pair is one
+covalent bond. Examples: H₂ (single bond), O₂ (double bond), N₂ (triple bond), H₂O (two single
+bonds), CH₄ (four single bonds), CO₂ (two double bonds). Simple covalent molecules have low
+melting/boiling points (weak intermolecular forces between molecules). They do not conduct
+electricity.', tags: ['bonding'], difficulty: 'medium', }, { id: 'gcse-chem-006', front: 'Describe
+metallic bonding and explain the key properties of metals that result from it.', back: 'Metallic
+bonding: metal atoms lose their outer electrons to form a "sea" of delocalised electrons. Positive
+metal ions are held in a lattice by attraction to the delocalised electrons. Properties: high
+melting point (strong bonding), good electrical conductor (delocalised electrons carry charge),
+malleable and ductile (layers of ions can slide), shiny (delocalised electrons reflect light).
+Alloys are harder because different-sized atoms distort the layers.', tags: ['bonding'], difficulty:
+'medium', }, { id: 'gcse-chem-007', front: 'Describe the three states of matter (solid, liquid, gas)
+in terms of particle arrangement, movement, and energy.', back: 'Solid: particles in fixed
+positions, vibrate about fixed points, regular lattice, lowest energy. Liquid: particles close
+together but can move past each other, no regular arrangement, medium energy. Gas: particles far
+apart, move rapidly in random directions, fill their container, highest kinetic energy. Changes of
+state: melting (solid→liquid), boiling (liquid→gas) require energy input (endothermic). Condensing
+and freezing release energy (exothermic).', tags: ['states-of-matter'], difficulty: 'easy', }, { id:
+'gcse-chem-008', front: 'What is diffusion? State and explain the factors that affect the rate of
+diffusion.', back: 'Diffusion is the net movement of particles from an area of higher concentration
+to an area of lower concentration, resulting from random particle motion. Factors affecting rate:
+temperature (higher = faster, more kinetic energy), concentration gradient (steeper = faster),
+particle mass (lighter particles diffuse faster, e.g. ammonia vs. hydrogen chloride in the glass
+tube experiment). Smaller particles diffuse faster.', tags: ['states-of-matter'], difficulty:
+'medium', }, { id: 'gcse-chem-009', front: 'Describe fractional distillation of crude oil and
+explain how it separates hydrocarbon fractions.', back: 'Crude oil is a mixture of hydrocarbons. The
+fractionating column works at different temperatures from bottom (hot) to top (cool). Longer-chain
+hydrocarbons (higher boiling points) condense near the bottom as thick, dark liquids (bitumen, fuel
+oil). Shorter-chain hydrocarbons (lower boiling points) condense near the top as volatile gases
+(refinery gas, petrol, naphtha). Each fraction contains hydrocarbons with similar boiling points.',
+tags: ['organic-chemistry'], difficulty: 'medium', }, { id: 'gcse-chem-010', front: 'Describe paper
+chromatography and how it separates mixtures.', back: 'Chromatography separates dissolved
+substances. A spot of the mixture is placed on chromatography paper near the bottom. The paper is
+placed in a solvent, which travels up the paper by capillary action. Different substances travel at
+different speeds depending on their solubility and attraction to the paper. The Rf value = distance
+travelled by spot / distance travelled by solvent. Rf values between 0 and 1 help identify
+substances.', tags: ['separation-techniques'], difficulty: 'medium', }, { id: 'gcse-chem-011',
+front: 'State five factors that affect the rate of a chemical reaction and explain each.', back:
+'(1) Temperature: higher temperature increases kinetic energy → more frequent and more energetic
+collisions. (2) Concentration (of solutions): higher concentration → more particles per volume →
+more frequent collisions. (3) Pressure (of gases): higher pressure → more particles per volume →
+more collisions. (4) Surface area (of solids): larger surface area → more particles exposed → more
+collisions. (5) Catalyst: lowers activation energy without being consumed → more successful
+collisions at a given temperature.', tags: ['rates-of-reaction'], difficulty: 'medium', }, { id:
+'gcse-chem-012', front: 'Define exothermic and endothermic reactions. Give two examples of each.',
+back: 'Exothermic: releases energy to surroundings (temperature increases). Energy of products <
+energy of reactants. Examples: combustion, neutralisation, respiration, oxidation. Endothermic:
+absorbs energy from surroundings (temperature decreases). Energy of products > energy of reactants.
+Examples: thermal decomposition (e.g. CaCO₃ → CaO + CO₂), photosynthesis, dissolving ammonium
+nitrate in water. Activation energy is the minimum energy needed for a reaction to start.', tags:
+['energy-changes'], difficulty: 'medium', }, { id: 'gcse-chem-013', front: 'Describe the pH scale
+and the properties of acids and bases.', back: 'pH scale: 0-14. pH < 7: acidic (lower = stronger
+acid). pH = 7: neutral. pH > 7: alkaline (higher = stronger alkali). Acids produce H⁺ ions in
+solution. Bases/alkalis produce OH⁻ ions. Strong acids (HCl, H₂SO₄, HNO₃) fully dissociate. Weak
+acids partially dissociate. Universal indicator: red (strong acid) → orange/yellow → green (neutral)
+→ blue → purple (strong alkali). pH + pOH = 14.', tags: ['acids-and-bases'], difficulty: 'easy', },
+{ id: 'gcse-chem-014', front: 'State the reactivity series of metals (most reactive to least
+reactive) and describe displacement reactions.', back: 'Reactivity series: potassium, sodium,
+lithium, calcium, magnesium, aluminium, (carbon), zinc, iron, tin, lead, (hydrogen), copper, silver,
+gold, platinum. A more reactive metal displaces a less reactive metal from its compound. Example:
+iron + copper sulphate → iron sulphate + copper (iron displaces copper because iron is more
+reactive). Carbon can displace metals below it in the series (used in extraction). Hydrogen is used
+as a reference point.', tags: ['reactivity'], difficulty: 'medium', }, { id: 'gcse-chem-015', front:
+'Describe displacement reactions of halogens. Which halogen displaces which?', back: 'Reactivity
+decreases down Group 7: fluorine > chlorine > bromine > iodine. A more reactive halogen displaces a
+less reactive halogen from its compound. Example: Cl₂ + 2KBr → 2KCl + Br₂ (chlorine displaces
+bromine). Cl₂ + 2KI → 2KCl + I₂ (chlorine displaces iodine). Br₂ cannot displace chlorine (less
+reactive). Displacement reactions are redox reactions: the more reactive halogen is reduced (gains
+electrons) and the less reactive is oxidised (loses electrons).', tags: ['reactivity'], difficulty:
+'hard', }, { id: 'gcse-chem-016', front: 'Define electrolysis and describe what happens at the
+electrodes during the electrolysis of molten lead(II) bromide.', back: 'Electrolysis: the
+decomposition of an ionic compound using electricity. Requires a liquid electrolyte (molten or
+aqueous) and two electrodes (cathode = negative, anode = positive). PbBr₂(l) electrolysis: at the
+cathode (-): Pb²⁺ + 2e⁻ → Pb (lead metal forms). At the anode (+): 2Br⁻ → Br₂ + 2e⁻ (bromine gas
+forms). The overall process requires energy. Reduction occurs at the cathode, oxidation at the anode
+(RED CAT OX AN).', tags: ['electrolysis'], difficulty: 'hard', }, { id: 'gcse-chem-017', front:
+'Describe crude oil formation, its composition, and the products of fractional distillation.', back:
+'Crude oil formed from remains of plankton buried under sediment over millions of years, subjected
+to heat and pressure. It is a mixture of hydrocarbons (mainly alkanes). Fractional distillation
+separates it into fractions: refinery gas (C1-C4, bottled gas), petrol/gasoline (C5-C10, fuel for
+cars), naphtha (C5-C10, feedstock for chemicals), kerosene/paraffin (C10-C16, jet fuel), diesel oil
+(C14-C20), fuel oil (C20-C40), bitumen (C50+, road surfaces). Shorter chains = more volatile, lower
+boiling point, burn more easily.', tags: ['organic-chemistry'], difficulty: 'medium', }, { id:
+'gcse-chem-018', front: 'Describe alkanes. State their general formula, naming rules, and key
+properties.', back: 'General formula: CₙH₂ₙ₊₂. Saturated hydrocarbons (single bonds only). Naming:
+meth- (1C), eth- (2C), prop- (3C), but- (4C), pent- (5C). Properties: less reactive than alkenes,
+undergo combustion to produce CO₂ and H₂O. As chain length increases: higher boiling point, higher
+viscosity, less volatile. Methane (CH₄) is the simplest alkane (natural gas). Alkanes are used as
+fuels.', tags: ['organic-chemistry'], difficulty: 'easy', }, { id: 'gcse-chem-019', front: 'Describe
+alkenes and the test to identify them. What is addition polymerisation?', back: 'General formula:
+CₙH₂ₙ. Unsaturated hydrocarbons (contain a C=C double bond). Test: add bromine water — turns from
+orange/brown to colourless (the double bond opens and bromine adds across it). Addition
+polymerisation: many alkene monomers join to form a long polymer chain. Example: ethene →
+poly(ethene). No other product is formed. The repeat unit has the same atoms as the monomer but with
+the double bond opened.', tags: ['organic-chemistry'], difficulty: 'hard', }, { id: 'gcse-chem-020',
+front: 'State the rules for balancing chemical equations. Why must equations be balanced?', back:
+'Rules: (1) Write the word equation. (2) Write correct formulae for all reactants and products. (3)
+Count atoms of each element on both sides. (4) Adjust coefficients (never change subscripts) until
+both sides have equal numbers of each atom. (5) State symbols: (g), (l), (s), (aq). Equations must
+be balanced because of the law of conservation of mass: no atoms are created or destroyed in a
+chemical reaction. The total mass of reactants = total mass of products.', tags: ['reactions'],
+difficulty: 'hard', } ];
+
 <FlashcardDeck
   deckId="gcse-chemistry"
   title="GCSE Chemistry"
   description="Atomic structure, bonding, states of matter, rates, reactions, acids, electrolysis, organic chemistry"
-  cards={[
-    {
-      id: 'gcse-chem-001',
-      front: 'Describe the structure of an atom. Where are protons, neutrons, and electrons found?',
-      back: 'Protons and neutrons are in the nucleus (centre). Electrons orbit in electron shells (energy levels) around the nucleus. Proton: positive charge, mass ≈ 1 amu. Neutron: no charge, mass ≈ 1 amu. Electron: negative charge, mass ≈ 0 (negligible). Atomic number = number of protons. Mass number = protons + neutrons. In a neutral atom: protons = electrons.',
-      tags: ['atomic-structure'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'gcse-chem-002',
-      front: 'Define isotopes and explain why isotopes of the same element have the same chemical properties.',
-      back: 'Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons (different mass numbers). Example: carbon-12 and carbon-14. They have the same chemical properties because chemical behaviour depends on electron configuration, which is determined by the number of protons, not neutrons. Physical properties (density, melting point) may differ slightly.',
-      tags: ['atomic-structure'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'gcse-chem-003',
-      front: 'Describe the arrangement of elements in the periodic table. What do the group number and period number tell you?',
-      back: 'Elements are arranged in order of increasing atomic number. Group number (columns 1-7): tells you the number of electrons in the outer shell (valence electrons). All elements in a group have similar chemical properties. Period number (rows): tells you the number of electron shells. Group 1: alkali metals (reactive). Group 7: halogens (reactive non-metals). Group 0/8: noble gases (unreactive).',
-      tags: ['periodic-table'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'gcse-chem-004',
-      front: 'Describe ionic bonding. Give an example using sodium and chlorine.',
-      back: 'Ionic bonding occurs between a metal and a non-metal. Electrons are transferred from the metal to the non-metal, forming positive and negative ions which are held together by strong electrostatic attraction. Na → Na⁺ + e⁻ (loses 1 electron). Cl + e⁻ → Cl⁻ (gains 1 electron). NaCl is an ionic lattice: alternating Na⁺ and Cl⁻ ions in a giant crystal structure. High melting point, conducts when molten or dissolved.',
-      tags: ['bonding'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-005',
-      front: 'Describe covalent bonding. Give examples of simple covalent molecules.',
-      back: 'Covalent bonding occurs between non-metals. Atoms share pairs of electrons to achieve a full outer shell. Each shared pair is one covalent bond. Examples: H₂ (single bond), O₂ (double bond), N₂ (triple bond), H₂O (two single bonds), CH₄ (four single bonds), CO₂ (two double bonds). Simple covalent molecules have low melting/boiling points (weak intermolecular forces between molecules). They do not conduct electricity.',
-      tags: ['bonding'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-006',
-      front: 'Describe metallic bonding and explain the key properties of metals that result from it.',
-      back: 'Metallic bonding: metal atoms lose their outer electrons to form a "sea" of delocalised electrons. Positive metal ions are held in a lattice by attraction to the delocalised electrons. Properties: high melting point (strong bonding), good electrical conductor (delocalised electrons carry charge), malleable and ductile (layers of ions can slide), shiny (delocalised electrons reflect light). Alloys are harder because different-sized atoms distort the layers.',
-      tags: ['bonding'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-007',
-      front: 'Describe the three states of matter (solid, liquid, gas) in terms of particle arrangement, movement, and energy.',
-      back: 'Solid: particles in fixed positions, vibrate about fixed points, regular lattice, lowest energy. Liquid: particles close together but can move past each other, no regular arrangement, medium energy. Gas: particles far apart, move rapidly in random directions, fill their container, highest kinetic energy. Changes of state: melting (solid→liquid), boiling (liquid→gas) require energy input (endothermic). Condensing and freezing release energy (exothermic).',
-      tags: ['states-of-matter'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'gcse-chem-008',
-      front: 'What is diffusion? State and explain the factors that affect the rate of diffusion.',
-      back: 'Diffusion is the net movement of particles from an area of higher concentration to an area of lower concentration, resulting from random particle motion. Factors affecting rate: temperature (higher = faster, more kinetic energy), concentration gradient (steeper = faster), particle mass (lighter particles diffuse faster, e.g. ammonia vs. hydrogen chloride in the glass tube experiment). Smaller particles diffuse faster.',
-      tags: ['states-of-matter'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-009',
-      front: 'Describe fractional distillation of crude oil and explain how it separates hydrocarbon fractions.',
-      back: 'Crude oil is a mixture of hydrocarbons. The fractionating column works at different temperatures from bottom (hot) to top (cool). Longer-chain hydrocarbons (higher boiling points) condense near the bottom as thick, dark liquids (bitumen, fuel oil). Shorter-chain hydrocarbons (lower boiling points) condense near the top as volatile gases (refinery gas, petrol, naphtha). Each fraction contains hydrocarbons with similar boiling points.',
-      tags: ['organic-chemistry'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-010',
-      front: 'Describe paper chromatography and how it separates mixtures.',
-      back: 'Chromatography separates dissolved substances. A spot of the mixture is placed on chromatography paper near the bottom. The paper is placed in a solvent, which travels up the paper by capillary action. Different substances travel at different speeds depending on their solubility and attraction to the paper. The Rf value = distance travelled by spot / distance travelled by solvent. Rf values between 0 and 1 help identify substances.',
-      tags: ['separation-techniques'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-011',
-      front: 'State five factors that affect the rate of a chemical reaction and explain each.',
-      back: '(1) Temperature: higher temperature increases kinetic energy → more frequent and more energetic collisions. (2) Concentration (of solutions): higher concentration → more particles per volume → more frequent collisions. (3) Pressure (of gases): higher pressure → more particles per volume → more collisions. (4) Surface area (of solids): larger surface area → more particles exposed → more collisions. (5) Catalyst: lowers activation energy without being consumed → more successful collisions at a given temperature.',
-      tags: ['rates-of-reaction'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-012',
-      front: 'Define exothermic and endothermic reactions. Give two examples of each.',
-      back: 'Exothermic: releases energy to surroundings (temperature increases). Energy of products < energy of reactants. Examples: combustion, neutralisation, respiration, oxidation. Endothermic: absorbs energy from surroundings (temperature decreases). Energy of products > energy of reactants. Examples: thermal decomposition (e.g. CaCO₃ → CaO + CO₂), photosynthesis, dissolving ammonium nitrate in water. Activation energy is the minimum energy needed for a reaction to start.',
-      tags: ['energy-changes'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-013',
-      front: 'Describe the pH scale and the properties of acids and bases.',
-      back: 'pH scale: 0-14. pH < 7: acidic (lower = stronger acid). pH = 7: neutral. pH > 7: alkaline (higher = stronger alkali). Acids produce H⁺ ions in solution. Bases/alkalis produce OH⁻ ions. Strong acids (HCl, H₂SO₄, HNO₃) fully dissociate. Weak acids partially dissociate. Universal indicator: red (strong acid) → orange/yellow → green (neutral) → blue → purple (strong alkali). pH + pOH = 14.',
-      tags: ['acids-and-bases'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'gcse-chem-014',
-      front: 'State the reactivity series of metals (most reactive to least reactive) and describe displacement reactions.',
-      back: 'Reactivity series: potassium, sodium, lithium, calcium, magnesium, aluminium, (carbon), zinc, iron, tin, lead, (hydrogen), copper, silver, gold, platinum. A more reactive metal displaces a less reactive metal from its compound. Example: iron + copper sulphate → iron sulphate + copper (iron displaces copper because iron is more reactive). Carbon can displace metals below it in the series (used in extraction). Hydrogen is used as a reference point.',
-      tags: ['reactivity'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-015',
-      front: 'Describe displacement reactions of halogens. Which halogen displaces which?',
-      back: 'Reactivity decreases down Group 7: fluorine > chlorine > bromine > iodine. A more reactive halogen displaces a less reactive halogen from its compound. Example: Cl₂ + 2KBr → 2KCl + Br₂ (chlorine displaces bromine). Cl₂ + 2KI → 2KCl + I₂ (chlorine displaces iodine). Br₂ cannot displace chlorine (less reactive). Displacement reactions are redox reactions: the more reactive halogen is reduced (gains electrons) and the less reactive is oxidised (loses electrons).',
-      tags: ['reactivity'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'gcse-chem-016',
-      front: 'Define electrolysis and describe what happens at the electrodes during the electrolysis of molten lead(II) bromide.',
-      back: 'Electrolysis: the decomposition of an ionic compound using electricity. Requires a liquid electrolyte (molten or aqueous) and two electrodes (cathode = negative, anode = positive). PbBr₂(l) electrolysis: at the cathode (-): Pb²⁺ + 2e⁻ → Pb (lead metal forms). At the anode (+): 2Br⁻ → Br₂ + 2e⁻ (bromine gas forms). The overall process requires energy. Reduction occurs at the cathode, oxidation at the anode (RED CAT OX AN).',
-      tags: ['electrolysis'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'gcse-chem-017',
-      front: 'Describe crude oil formation, its composition, and the products of fractional distillation.',
-      back: 'Crude oil formed from remains of plankton buried under sediment over millions of years, subjected to heat and pressure. It is a mixture of hydrocarbons (mainly alkanes). Fractional distillation separates it into fractions: refinery gas (C1-C4, bottled gas), petrol/gasoline (C5-C10, fuel for cars), naphtha (C5-C10, feedstock for chemicals), kerosene/paraffin (C10-C16, jet fuel), diesel oil (C14-C20), fuel oil (C20-C40), bitumen (C50+, road surfaces). Shorter chains = more volatile, lower boiling point, burn more easily.',
-      tags: ['organic-chemistry'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'gcse-chem-018',
-      front: 'Describe alkanes. State their general formula, naming rules, and key properties.',
-      back: 'General formula: CₙH₂ₙ₊₂. Saturated hydrocarbons (single bonds only). Naming: meth- (1C), eth- (2C), prop- (3C), but- (4C), pent- (5C). Properties: less reactive than alkenes, undergo combustion to produce CO₂ and H₂O. As chain length increases: higher boiling point, higher viscosity, less volatile. Methane (CH₄) is the simplest alkane (natural gas). Alkanes are used as fuels.',
-      tags: ['organic-chemistry'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'gcse-chem-019',
-      front: 'Describe alkenes and the test to identify them. What is addition polymerisation?',
-      back: 'General formula: CₙH₂ₙ. Unsaturated hydrocarbons (contain a C=C double bond). Test: add bromine water — turns from orange/brown to colourless (the double bond opens and bromine adds across it). Addition polymerisation: many alkene monomers join to form a long polymer chain. Example: ethene → poly(ethene). No other product is formed. The repeat unit has the same atoms as the monomer but with the double bond opened.',
-      tags: ['organic-chemistry'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'gcse-chem-020',
-      front: 'State the rules for balancing chemical equations. Why must equations be balanced?',
-      back: 'Rules: (1) Write the word equation. (2) Write correct formulae for all reactants and products. (3) Count atoms of each element on both sides. (4) Adjust coefficients (never change subscripts) until both sides have equal numbers of each atom. (5) State symbols: (g), (l), (s), (aq). Equations must be balanced because of the law of conservation of mass: no atoms are created or destroyed in a chemical reaction. The total mass of reactants = total mass of products.',
-      tags: ['reactions'],
-      difficulty: 'hard',
-    }
-  ]}
+  cards={flashcardData}
 />

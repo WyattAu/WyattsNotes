@@ -1,12 +1,16 @@
 ---
-title: "A-Level Further Maths Flashcards: Further Mechanics"
+title: 'A-Level Further Maths Flashcards: Further Mechanics'
 slug: flashcards-further-mechanics
-description: "20 interactive flashcards for A-Level Further Maths mechanics covering SHM, damped and forced oscillations, circular motion, gravitation, orbits, impulse and dimensional analysis for spaced repetition revision."
+description:
+  '20 interactive flashcards for A-Level Further Maths mechanics covering SHM, damped and forced
+  oscillations, circular motion, gravitation, orbits, impulse and dimensional analysis for spaced
+  repetition revision.'
 tags:
   - Further Maths
   - A-Level
   - Flashcards
 ---
+
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ## A-Level Further Maths -- Further Mechanics Flashcards
@@ -15,150 +19,115 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
+const flashcardData = [ { id: 'shm-derivation', front: 'Derive the equation of SHM for a mass on a
+spring (Hooke\'s law) and for a simple pendulum.', back: 'Mass-spring: F = -kx (Hooke\'s law), ma =
+-kx → d²x/dt² = -(k/m)x → ω² = k/m, T = 2π√(m/k). Simple pendulum: restoring force F = -mg sinθ ≈
+-mgx/L for small angles. d²x/dt² = -(g/L)x → ω² = g/L, T = 2π√(L/g). Both give a = -ω²x confirming
+SHM.', tags: ['shm'], difficulty: 'medium', }, { id: 'shm-energy', front: 'Derive the energy
+equations for SHM and state the total energy in terms of mass, angular velocity and amplitude.',
+back: 'KE = ½mv² = ½mω²(A² - x²). PE (spring) = ½kx² = ½mω²x² (since k = mω²). Total E = ½mω²A² =
+constant. At equilibrium (x=0): KE = ½mω²A² (max), PE = 0. At amplitude (x=A): KE = 0, PE = ½mω²A²
+(max). KE + PE = ½mω²A² at all times.', tags: ['shm', 'energy'], difficulty: 'medium', }, { id:
+'damped-light', front: 'Classify the three types of damped oscillation and describe the motion in
+each case.', back: 'Light damping (underdamped): b² < 4mω₀². Oscillates with exponentially
+decreasing amplitude. Displacement: x = Ae^(-bt/2m) cos(ωt + φ) where ω = √(ω₀² - (b/2m)²). Heavy
+damping (overdamped): b² > 4mω₀². No oscillation; returns slowly to equilibrium. Critical damping:
+b² = 4mω₀². Fastest return to equilibrium without oscillation.', tags: ['damped-oscillations'],
+difficulty: 'medium', }, { id: 'forced-oscillations', front: 'Describe forced oscillations and the
+effect of the driving frequency on the amplitude of oscillation.', back: 'When a periodic driving
+force is applied to a damped oscillator, the system oscillates at the driving frequency (not the
+natural frequency). The amplitude depends on the driving frequency: maximum amplitude occurs at
+resonance when the driving frequency ≈ natural frequency. The peak amplitude is larger for lighter
+damping. Phase difference between driving force and displacement changes from 0 to π as driving
+frequency increases.', tags: ['forced-oscillations'], difficulty: 'hard', }, { id: 'resonance',
+front: 'Define resonance and state the factors that affect the amplitude at resonance.', back:
+'Resonance occurs when the driving frequency equals the natural frequency of the system, causing
+maximum amplitude. Maximum amplitude at resonance = F₀/(bω₀) for damping constant b. Lighter damping
+→ sharper, taller resonance peak. Heavier damping → broader, shorter peak. At resonance with
+critical damping, amplitude is F₀/(2mω₀²). Practical examples: tuning fork, microwave oven, swing.',
+tags: ['resonance'], difficulty: 'medium', }, { id: 'angular-vel', front: 'Define angular velocity
+and relate it to linear velocity and centripetal acceleration.', back: 'Angular velocity ω = dθ/dt =
+2π/T = 2πf (rad/s). Linear velocity v = ωr (tangential to circle). Centripetal acceleration a_c =
+v²/r = ω²r (directed towards centre). Centripetal force F_c = mv²/r = mω²r. Angular acceleration α =
+dω/dt. For non-uniform circular motion: tangential acceleration a_t = rα.', tags:
+['circular-motion'], difficulty: 'easy', }, { id: 'grav-field', front: 'State Newton\'s law of
+gravitation and the equations for gravitational field strength and gravitational potential.', back:
+'F = GMm/r² (force between two point masses). Gravitational field strength g = GM/r² (force per unit
+mass, directed towards the mass). Gravitational potential V = -GM/r (potential energy per unit mass,
+always negative). g = -dV/dr. At the surface of Earth: g ≈ 9.81 m/s². Potential is zero at
+infinity.', tags: ['gravitation'], difficulty: 'easy', }, { id: 'escape-vel', front: 'Derive the
+escape velocity formula and calculate it for Earth. (M_E = 5.97 × 10²⁴ kg, R_E = 6.37 × 10⁶ m, G =
+6.67 × 10⁻¹¹ N m²/kg²)', back: 'For escape: ½mv² = GMm/r → v_esc = √(2GM/r). All KE converts to PE.
+At infinity, KE = 0 and PE = 0. For Earth: v_esc = √(2 × 6.67×10⁻¹¹ × 5.97×10²⁴ / 6.37×10⁶) = √(1.25
+× 10⁸) = 11,200 m/s ≈ 11.2 km/s.', tags: ['gravitation', 'escape-velocity'], difficulty: 'medium',
+}, { id: 'kepler-laws', front: 'State Kepler\'s three laws of planetary motion.', back: 'First:
+Planets orbit in ellipses with the Sun at one focus. Second: A line from Sun to planet sweeps out
+equal areas in equal times (planet moves faster when closer to Sun). Third: T² ∝ r³ for all planets
+(T²/r³ = constant = 4π²/GM_sun). The third law can be derived from equating gravitational force with
+centripetal force.', tags: ['orbits'], difficulty: 'easy', }, { id: 'orbital-period', front: 'Derive
+the orbital period formula for a satellite in circular orbit and calculate the period of a
+geostationary satellite.', back: 'GMm/r² = mω²r → ω² = GM/r³. T = 2π/ω = 2π√(r³/GM). Geostationary:
+T = 24 hrs = 86400 s. r³ = GMT²/(4π²) = (6.67×10⁻¹¹ × 5.97×10²⁴ × 86400²)/(4π²) = 7.54×10²². r =
+4.23×10⁷ m ≈ 42,300 km from centre (35,900 km above surface).', tags: ['orbits'], difficulty:
+'hard', }, { id: 'impulse-variable', front: 'How do you calculate impulse for a variable force? Give
+the integral formula.', back: 'Impulse J = ∫F dt from t₁ to t₂ = change in momentum = Δp = m(v₂ -
+v₁). For a force given as a function of time F(t), integrate with respect to time. Graphically,
+impulse equals the area under the force-time graph. For variable force F(s) over displacement: work
+done W = ∫F ds.', tags: ['impulse', 'momentum'], difficulty: 'medium', }, { id: 'variable-force',
+front: 'A particle of mass m moves under a variable force F = 3x² (in newtons, x in metres). Find
+the work done moving from x = 1 to x = 3 and the velocity gained.', back: 'Work done W = ∫₁³ 3x² dx
+= [x³]₁³ = 27 - 1 = 26 J. Using work-energy theorem: W = ½mv² - ½mu². If starting from rest (u = 0):
+26 = ½mv² → v = √(52/m). For m = 2 kg: v = √26 = 5.1 m/s.', tags: ['work-energy',
+'variable-forces'], difficulty: 'medium', }, { id: 'dim-analysis-basic', front: 'State the base
+quantities and their SI units used in dimensional analysis.', back: 'Mass [M] (kg), Length [L] (m),
+Time [T] (s), Electric Current [I] (A), Temperature [θ] (K), Amount of substance [N] (mol), Luminous
+intensity [J] (cd). In A-Level mechanics, the three base dimensions are M, L, T. Example: force F =
+MLT⁻² (since F = ma = kg·m/s²). Energy E = ML²T⁻².', tags: ['dimensional-analysis'], difficulty:
+'easy', }, { id: 'dim-analysis-use', front: 'How can dimensional analysis be used to check the
+correctness of a physical equation or to derive a formula?', back: 'Both sides of an equation must
+have the same dimensions. To check: write dimensions of each term and verify they match. To derive:
+assume the form y = kxᵃyᵇzᶜ, substitute dimensions and solve for a, b, c. Example: T = 2π√(L/g). RHS
+dimensions: √(L/(LT⁻²)) = √(T²) = T. Matches LHS. Note: dimensional analysis cannot determine
+dimensionless constants (e.g. 2π).', tags: ['dimensional-analysis'], difficulty: 'medium', }, { id:
+'elastic-collision', front: 'State the conditions for an elastic collision and the relationship
+between coefficient of restitution and relative velocities.', back: 'Elastic collision: both
+momentum and kinetic energy are conserved. Coefficient of restitution e = (speed of
+separation)/(speed of approach) = |v₂ - v₁|/|u₁ - u₂|. For perfectly elastic: e = 1. For perfectly
+inelastic: e = 0 (objects stick together). General: 0 ≤ e ≤ 1. KE is lost when e < 1.', tags:
+['collisions'], difficulty: 'easy', }, { id: 'stability-criteria', front: 'Describe the criteria for
+the stability of equilibrium for a body and relate to the position of the centre of mass.', back:
+'Stable equilibrium: when displaced, the centre of mass rises. The body returns to its original
+position. Unstable equilibrium: when displaced, the centre of mass falls. The body moves away from
+its original position. Neutral equilibrium: the centre of mass stays at the same height (e.g. a
+sphere on a flat surface). Tipping occurs when the line of action of weight falls outside the base
+of support.', tags: ['stability', 'equilibrium'], difficulty: 'medium', }, { id: 'banked-curve',
+front: 'Derive the expression for the ideal banking angle of a road curve for a vehicle travelling
+at speed v without relying on friction.', back: 'For a banked angle θ: the normal reaction N has
+components N cosθ = mg (vertical equilibrium) and N sinθ = mv²/r (centripetal force). Dividing: tanθ
+= v²/(rg). So the ideal angle θ = arctan(v²/(rg)). For higher speeds, friction also contributes. The
+faster the design speed, the steeper the banking angle required.', tags: ['circular-motion',
+'banking'], difficulty: 'hard', }, { id: 'grav-pe-work', front: 'Explain the difference between gΔh
+and GMm(1/r₁ - 1/r₂) for gravitational potential energy changes.', back: 'Near Earth\'s surface
+(small height changes): ΔPE = mgΔh is a good approximation. For large distances: ΔPE = GMm(1/r₁ -
+1/r₂) = -GMm/r₂ - (-GMm/r₁) using V = -GM/r. Note: ΔPE is positive when moving away from the mass.
+The two formulas agree when Δh << r because gΔh ≈ GMmΔh/r² × Δh/... Actually gΔh works because g ≈
+GM/R² near the surface.', tags: ['gravitation', 'energy'], difficulty: 'hard', }, { id:
+'critical-damping-use', front: 'Give three practical examples where critical damping is desirable
+and explain why.', back: 'Car suspension: critical damping prevents oscillation after hitting a bump
+for comfort and safety. Door closers: critically damped so the door closes quickly without bouncing
+back. Voltmeters/ammeters: the needle is critically damped to settle at the reading without
+oscillating. In each case, critical damping gives the fastest return to equilibrium without
+overshoot.', tags: ['damped-oscillations', 'applications'], difficulty: 'medium', }, { id:
+'energy-in-damped', front: 'Describe how total mechanical energy decreases in a damped oscillator
+and relate it to the damping constant.', back: 'In damped SHM, total energy decays exponentially:
+E(t) = E₀e^(-bt/m) where b is the damping constant and m is mass. The amplitude decays as A(t) =
+A₀e^(-bt/2m) (half the exponent since E ∝ A²). The rate of energy loss = power dissipated =
+bω²A₀²/2m × e^(-bt/m). Energy is lost as heat due to the damping force doing negative work.', tags:
+['damped-oscillations', 'energy'], difficulty: 'hard', } ];
+
 <FlashcardDeck
   deckId="alevel-further-maths-mechanics"
   title="A-Level Further Maths: Further Mechanics"
   description="SHM, damped oscillations, resonance, gravitation, orbits, variable forces, dimensional analysis"
-  cards={[
-    {
-      id: 'shm-derivation',
-      front: 'Derive the equation of SHM for a mass on a spring (Hooke\'s law) and for a simple pendulum.',
-      back: 'Mass-spring: F = -kx (Hooke\'s law), ma = -kx → d²x/dt² = -(k/m)x → ω² = k/m, T = 2π√(m/k). Simple pendulum: restoring force F = -mg sinθ ≈ -mgx/L for small angles. d²x/dt² = -(g/L)x → ω² = g/L, T = 2π√(L/g). Both give a = -ω²x confirming SHM.',
-      tags: ['shm'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'shm-energy',
-      front: 'Derive the energy equations for SHM and state the total energy in terms of mass, angular velocity and amplitude.',
-      back: 'KE = ½mv² = ½mω²(A² - x²). PE (spring) = ½kx² = ½mω²x² (since k = mω²). Total E = ½mω²A² = constant. At equilibrium (x=0): KE = ½mω²A² (max), PE = 0. At amplitude (x=A): KE = 0, PE = ½mω²A² (max). KE + PE = ½mω²A² at all times.',
-      tags: ['shm', 'energy'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'damped-light',
-      front: 'Classify the three types of damped oscillation and describe the motion in each case.',
-      back: 'Light damping (underdamped): b² < 4mω₀². Oscillates with exponentially decreasing amplitude. Displacement: x = Ae^(-bt/2m) cos(ωt + φ) where ω = √(ω₀² - (b/2m)²). Heavy damping (overdamped): b² > 4mω₀². No oscillation; returns slowly to equilibrium. Critical damping: b² = 4mω₀². Fastest return to equilibrium without oscillation.',
-      tags: ['damped-oscillations'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'forced-oscillations',
-      front: 'Describe forced oscillations and the effect of the driving frequency on the amplitude of oscillation.',
-      back: 'When a periodic driving force is applied to a damped oscillator, the system oscillates at the driving frequency (not the natural frequency). The amplitude depends on the driving frequency: maximum amplitude occurs at resonance when the driving frequency ≈ natural frequency. The peak amplitude is larger for lighter damping. Phase difference between driving force and displacement changes from 0 to π as driving frequency increases.',
-      tags: ['forced-oscillations'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'resonance',
-      front: 'Define resonance and state the factors that affect the amplitude at resonance.',
-      back: 'Resonance occurs when the driving frequency equals the natural frequency of the system, causing maximum amplitude. Maximum amplitude at resonance = F₀/(bω₀) for damping constant b. Lighter damping → sharper, taller resonance peak. Heavier damping → broader, shorter peak. At resonance with critical damping, amplitude is F₀/(2mω₀²). Practical examples: tuning fork, microwave oven, swing.',
-      tags: ['resonance'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'angular-vel',
-      front: 'Define angular velocity and relate it to linear velocity and centripetal acceleration.',
-      back: 'Angular velocity ω = dθ/dt = 2π/T = 2πf (rad/s). Linear velocity v = ωr (tangential to circle). Centripetal acceleration a_c = v²/r = ω²r (directed towards centre). Centripetal force F_c = mv²/r = mω²r. Angular acceleration α = dω/dt. For non-uniform circular motion: tangential acceleration a_t = rα.',
-      tags: ['circular-motion'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'grav-field',
-      front: 'State Newton\'s law of gravitation and the equations for gravitational field strength and gravitational potential.',
-      back: 'F = GMm/r² (force between two point masses). Gravitational field strength g = GM/r² (force per unit mass, directed towards the mass). Gravitational potential V = -GM/r (potential energy per unit mass, always negative). g = -dV/dr. At the surface of Earth: g ≈ 9.81 m/s². Potential is zero at infinity.',
-      tags: ['gravitation'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'escape-vel',
-      front: 'Derive the escape velocity formula and calculate it for Earth. (M_E = 5.97 × 10²⁴ kg, R_E = 6.37 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m²/kg²)',
-      back: 'For escape: ½mv² = GMm/r → v_esc = √(2GM/r). All KE converts to PE. At infinity, KE = 0 and PE = 0. For Earth: v_esc = √(2 × 6.67×10⁻¹¹ × 5.97×10²⁴ / 6.37×10⁶) = √(1.25 × 10⁸) = 11,200 m/s ≈ 11.2 km/s.',
-      tags: ['gravitation', 'escape-velocity'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'kepler-laws',
-      front: 'State Kepler\'s three laws of planetary motion.',
-      back: 'First: Planets orbit in ellipses with the Sun at one focus. Second: A line from Sun to planet sweeps out equal areas in equal times (planet moves faster when closer to Sun). Third: T² ∝ r³ for all planets (T²/r³ = constant = 4π²/GM_sun). The third law can be derived from equating gravitational force with centripetal force.',
-      tags: ['orbits'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'orbital-period',
-      front: 'Derive the orbital period formula for a satellite in circular orbit and calculate the period of a geostationary satellite.',
-      back: 'GMm/r² = mω²r → ω² = GM/r³. T = 2π/ω = 2π√(r³/GM). Geostationary: T = 24 hrs = 86400 s. r³ = GMT²/(4π²) = (6.67×10⁻¹¹ × 5.97×10²⁴ × 86400²)/(4π²) = 7.54×10²². r = 4.23×10⁷ m ≈ 42,300 km from centre (35,900 km above surface).',
-      tags: ['orbits'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'impulse-variable',
-      front: 'How do you calculate impulse for a variable force? Give the integral formula.',
-      back: 'Impulse J = ∫F dt from t₁ to t₂ = change in momentum = Δp = m(v₂ - v₁). For a force given as a function of time F(t), integrate with respect to time. Graphically, impulse equals the area under the force-time graph. For variable force F(s) over displacement: work done W = ∫F ds.',
-      tags: ['impulse', 'momentum'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'variable-force',
-      front: 'A particle of mass m moves under a variable force F = 3x² (in newtons, x in metres). Find the work done moving from x = 1 to x = 3 and the velocity gained.',
-      back: 'Work done W = ∫₁³ 3x² dx = [x³]₁³ = 27 - 1 = 26 J. Using work-energy theorem: W = ½mv² - ½mu². If starting from rest (u = 0): 26 = ½mv² → v = √(52/m). For m = 2 kg: v = √26 = 5.1 m/s.',
-      tags: ['work-energy', 'variable-forces'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'dim-analysis-basic',
-      front: 'State the base quantities and their SI units used in dimensional analysis.',
-      back: 'Mass [M] (kg), Length [L] (m), Time [T] (s), Electric Current [I] (A), Temperature [θ] (K), Amount of substance [N] (mol), Luminous intensity [J] (cd). In A-Level mechanics, the three base dimensions are M, L, T. Example: force F = MLT⁻² (since F = ma = kg·m/s²). Energy E = ML²T⁻².',
-      tags: ['dimensional-analysis'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'dim-analysis-use',
-      front: 'How can dimensional analysis be used to check the correctness of a physical equation or to derive a formula?',
-      back: 'Both sides of an equation must have the same dimensions. To check: write dimensions of each term and verify they match. To derive: assume the form y = kxᵃyᵇzᶜ, substitute dimensions and solve for a, b, c. Example: T = 2π√(L/g). RHS dimensions: √(L/(LT⁻²)) = √(T²) = T. Matches LHS. Note: dimensional analysis cannot determine dimensionless constants (e.g. 2π).',
-      tags: ['dimensional-analysis'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'elastic-collision',
-      front: 'State the conditions for an elastic collision and the relationship between coefficient of restitution and relative velocities.',
-      back: 'Elastic collision: both momentum and kinetic energy are conserved. Coefficient of restitution e = (speed of separation)/(speed of approach) = |v₂ - v₁|/|u₁ - u₂|. For perfectly elastic: e = 1. For perfectly inelastic: e = 0 (objects stick together). General: 0 ≤ e ≤ 1. KE is lost when e < 1.',
-      tags: ['collisions'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'stability-criteria',
-      front: 'Describe the criteria for the stability of equilibrium for a body and relate to the position of the centre of mass.',
-      back: 'Stable equilibrium: when displaced, the centre of mass rises. The body returns to its original position. Unstable equilibrium: when displaced, the centre of mass falls. The body moves away from its original position. Neutral equilibrium: the centre of mass stays at the same height (e.g. a sphere on a flat surface). Tipping occurs when the line of action of weight falls outside the base of support.',
-      tags: ['stability', 'equilibrium'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'banked-curve',
-      front: 'Derive the expression for the ideal banking angle of a road curve for a vehicle travelling at speed v without relying on friction.',
-      back: 'For a banked angle θ: the normal reaction N has components N cosθ = mg (vertical equilibrium) and N sinθ = mv²/r (centripetal force). Dividing: tanθ = v²/(rg). So the ideal angle θ = arctan(v²/(rg)). For higher speeds, friction also contributes. The faster the design speed, the steeper the banking angle required.',
-      tags: ['circular-motion', 'banking'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'grav-pe-work',
-      front: 'Explain the difference between gΔh and GMm(1/r₁ - 1/r₂) for gravitational potential energy changes.',
-      back: 'Near Earth\'s surface (small height changes): ΔPE = mgΔh is a good approximation. For large distances: ΔPE = GMm(1/r₁ - 1/r₂) = -GMm/r₂ - (-GMm/r₁) using V = -GM/r. Note: ΔPE is positive when moving away from the mass. The two formulas agree when Δh << r because gΔh ≈ GMmΔh/r² × Δh/... Actually gΔh works because g ≈ GM/R² near the surface.',
-      tags: ['gravitation', 'energy'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'critical-damping-use',
-      front: 'Give three practical examples where critical damping is desirable and explain why.',
-      back: 'Car suspension: critical damping prevents oscillation after hitting a bump for comfort and safety. Door closers: critically damped so the door closes quickly without bouncing back. Voltmeters/ammeters: the needle is critically damped to settle at the reading without oscillating. In each case, critical damping gives the fastest return to equilibrium without overshoot.',
-      tags: ['damped-oscillations', 'applications'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'energy-in-damped',
-      front: 'Describe how total mechanical energy decreases in a damped oscillator and relate it to the damping constant.',
-      back: 'In damped SHM, total energy decays exponentially: E(t) = E₀e^(-bt/m) where b is the damping constant and m is mass. The amplitude decays as A(t) = A₀e^(-bt/2m) (half the exponent since E ∝ A²). The rate of energy loss = power dissipated = bω²A₀²/2m × e^(-bt/m). Energy is lost as heat due to the damping force doing negative work.',
-      tags: ['damped-oscillations', 'energy'],
-      difficulty: 'hard',
-    }
-  ]}
+  cards={flashcardData}
 />

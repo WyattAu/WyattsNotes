@@ -20,115 +20,48 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
+const flashcardData = [ { id: 'algebra-1', front: 'State the quadratic formula.', back: 'x = (−b ±
+√(b² − 4ac)) / 2a, used to solve ax² + bx + c = 0 when factoring is difficult.', tags: ['algebra'],
+difficulty: 'easy', }, { id: 'algebra-2', front: 'How do you factor x² − 9?', back: 'Difference of
+squares: x² − 9 = (x + 3)(x − 3). As a general principle, a² − b² = (a + b)(a − b).', tags:
+['algebra'], difficulty: 'easy', }, { id: 'algebra-3', front: 'Solve the system: x + y = 10 and 2x −
+y = 5.', back: 'Add equations: 3x = 15 → x = 5. Substitute: 5 + y = 10 → y = 5. Solution: (5, 5).',
+tags: ['algebra'], difficulty: 'medium', }, { id: 'geometry-1', front: 'What is the area of a
+triangle with base 10 and height 6?', back: 'Area = ½ × base × height = ½ × 10 × 6 = 30 square
+units.', tags: ['geometry'], difficulty: 'easy', }, { id: 'geometry-2', front: 'Write the equation
+of a circle with centre (3, −2) and radius 5.', back: '(x − h)² + (y − k)² = r² → (x − 3)² + (y +
+2)² = 25.', tags: ['geometry'], difficulty: 'medium', }, { id: 'geometry-3', front: 'List three
+common Pythagorean triples.', back: '(3, 4, 5), (5, 12, 13), (8, 15, 17). Multiples like (6, 8, 10)
+are also valid triples.', tags: ['geometry'], difficulty: 'easy', }, { id: 'statistics-1', front:
+'What is the difference between mean, median, and mode?', back: 'Mean: sum of values ÷ count.
+Median: middle value when ordered. Mode: most frequently occurring value. A dataset can have
+multiple modes but only one mean and one median.', tags: ['statistics'], difficulty: 'easy', }, {
+id: 'statistics-2', front: 'What does standard deviation measure?', back: 'The average distance of
+each data point from the mean. A larger standard deviation means the data is more spread out.
+Formula uses the square root of the variance.', tags: ['statistics'], difficulty: 'medium', }, { id:
+'statistics-3', front: 'What is P(A or B) if A and B are mutually exclusive events?', back: 'P(A or
+B) = P(A) + P(B). For overlapping events: P(A or B) = P(A) + P(B) − P(A and B).', tags:
+['statistics'], difficulty: 'medium', }, { id: 'advanced-1', front: 'If f(x) = 2x + 3, what is
+f(f(1))?', back: 'f(1) = 2(1) + 3 = 5. Then f(5) = 2(5) + 3 = 13.', tags: ['advanced'], difficulty:
+'easy', }, { id: 'advanced-2', front: 'Simplify i⁴⁵ where i = √(−1).', back: 'i cycles every 4: i¹ =
+i, i² = −1, i³ = −i, i⁴ = 1. 45 ÷ 4 = 11 remainder 1, so i⁴⁵ = i¹ = i.', tags: ['advanced'],
+difficulty: 'hard', }, { id: 'advanced-3', front: 'State sin²θ + cos²θ = ? and its implications.',
+back: 'sin²θ + cos²θ = 1 (Pythagorean identity). From this: sin²θ = 1 − cos²θ and cos²θ = 1 − sin²θ.
+Divide by sin²θ or cos²θ to derive 1 + tan²θ = sec²θ or 1 + cot²θ = csc²θ.', tags: ['advanced'],
+difficulty: 'medium', }, { id: 'strategy-1', front: 'What is the Plugging In strategy for SAT
+Math?', back: 'When a question has variables in the answers, choose simple numbers (e.g., 2, 3, 100)
+for the variables, calculate the result, then check which answer choice matches.', tags:
+['strategy'], difficulty: 'easy', }, { id: 'strategy-2', front: 'How should you manage time on the
+SAT Math section?', back: 'No-calculator: ~75 seconds per question. Calculator: ~85 seconds per
+question. Flag and skip hard questions; come back. Never spend more than 2 minutes on one question
+in the first pass.', tags: ['strategy'], difficulty: 'easy', }, { id: 'strategy-3', front: 'How do
+you use the elimination strategy effectively?', back: 'Eliminate it follows that wrong answers
+first. Use units/dimensions to check. Estimate approximate answers. If stuck between two, check edge
+cases or substitute values from answer choices.', tags: ['strategy'], difficulty: 'medium', }, ];
+
 <FlashcardDeck
   deckId="sat-math"
   title="SAT Math"
   description="Algebra, geometry, statistics, advanced topics, and strategies"
-  cards={[
-    {
-      id: 'algebra-1',
-      front: 'State the quadratic formula.',
-      back: 'x = (−b ± √(b² − 4ac)) / 2a, used to solve ax² + bx + c = 0 when factoring is difficult.',
-      tags: ['algebra'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'algebra-2',
-      front: 'How do you factor x² − 9?',
-      back: 'Difference of squares: x² − 9 = (x + 3)(x − 3). As a general principle, a² − b² = (a + b)(a − b).',
-      tags: ['algebra'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'algebra-3',
-      front: 'Solve the system: x + y = 10 and 2x − y = 5.',
-      back: 'Add equations: 3x = 15 → x = 5. Substitute: 5 + y = 10 → y = 5. Solution: (5, 5).',
-      tags: ['algebra'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'geometry-1',
-      front: 'What is the area of a triangle with base 10 and height 6?',
-      back: 'Area = ½ × base × height = ½ × 10 × 6 = 30 square units.',
-      tags: ['geometry'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'geometry-2',
-      front: 'Write the equation of a circle with centre (3, −2) and radius 5.',
-      back: '(x − h)² + (y − k)² = r² → (x − 3)² + (y + 2)² = 25.',
-      tags: ['geometry'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'geometry-3',
-      front: 'List three common Pythagorean triples.',
-      back: '(3, 4, 5), (5, 12, 13), (8, 15, 17). Multiples like (6, 8, 10) are also valid triples.',
-      tags: ['geometry'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'statistics-1',
-      front: 'What is the difference between mean, median, and mode?',
-      back: 'Mean: sum of values ÷ count. Median: middle value when ordered. Mode: most frequently occurring value. A dataset can have multiple modes but only one mean and one median.',
-      tags: ['statistics'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'statistics-2',
-      front: 'What does standard deviation measure?',
-      back: 'The average distance of each data point from the mean. A larger standard deviation means the data is more spread out. Formula uses the square root of the variance.',
-      tags: ['statistics'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'statistics-3',
-      front: 'What is P(A or B) if A and B are mutually exclusive events?',
-      back: 'P(A or B) = P(A) + P(B). For overlapping events: P(A or B) = P(A) + P(B) − P(A and B).',
-      tags: ['statistics'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'advanced-1',
-      front: 'If f(x) = 2x + 3, what is f(f(1))?',
-      back: 'f(1) = 2(1) + 3 = 5. Then f(5) = 2(5) + 3 = 13.',
-      tags: ['advanced'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'advanced-2',
-      front: 'Simplify i⁴⁵ where i = √(−1).',
-      back: 'i cycles every 4: i¹ = i, i² = −1, i³ = −i, i⁴ = 1. 45 ÷ 4 = 11 remainder 1, so i⁴⁵ = i¹ = i.',
-      tags: ['advanced'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'advanced-3',
-      front: 'State sin²θ + cos²θ = ? and its implications.',
-      back: 'sin²θ + cos²θ = 1 (Pythagorean identity). From this: sin²θ = 1 − cos²θ and cos²θ = 1 − sin²θ. Divide by sin²θ or cos²θ to derive 1 + tan²θ = sec²θ or 1 + cot²θ = csc²θ.',
-      tags: ['advanced'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'strategy-1',
-      front: 'What is the Plugging In strategy for SAT Math?',
-      back: 'When a question has variables in the answers, choose simple numbers (e.g., 2, 3, 100) for the variables, calculate the result, then check which answer choice matches.',
-      tags: ['strategy'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'strategy-2',
-      front: 'How should you manage time on the SAT Math section?',
-      back: 'No-calculator: ~75 seconds per question. Calculator: ~85 seconds per question. Flag and skip hard questions; come back. Never spend more than 2 minutes on one question in the first pass.',
-      tags: ['strategy'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'strategy-3',
-      front: 'How do you use the elimination strategy effectively?',
-      back: 'Eliminate it follows that wrong answers first. Use units/dimensions to check. Estimate approximate answers. If stuck between two, check edge cases or substitute values from answer choices.',
-      tags: ['strategy'],
-      difficulty: 'medium',
-    },
-  ]}
+  cards={flashcardData}
 />

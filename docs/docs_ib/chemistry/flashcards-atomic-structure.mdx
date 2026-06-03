@@ -1,5 +1,5 @@
 ---
-title: "IB Chemistry Flashcards: Atomic Structure"
+title: 'IB Chemistry Flashcards: Atomic Structure'
 slug: ib-chemistry/atomic-structure-flashcards
 date: 2026-06-02
 tags:
@@ -7,161 +7,134 @@ tags:
 categories:
   - IB Chemistry
 description:
-  'Interactive flashcards for IB Chemistry atomic structure. Test your knowledge of atomic models, subatomic particles, isotopes, mass spectrometry, electron configurations, and periodic trends.'
+  'Interactive flashcards for IB Chemistry atomic structure. Test your knowledge of atomic models,
+  subatomic particles, isotopes, mass spectrometry, electron configurations, and periodic trends.'
 ---
 
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ## Atomic Structure Flashcards
 
-20 flashcards covering IB Chemistry atomic structure — atomic models, subatomic particles, isotopes, mass spectrometry, electron configurations, and periodic trends.
+20 flashcards covering IB Chemistry atomic structure — atomic models, subatomic particles, isotopes,
+mass spectrometry, electron configurations, and periodic trends.
 
 ---
+
+const flashcardData = [ { id: 'atomic-structure-001', front: 'What are the relative masses and
+charges of protons, neutrons, and electrons?', back: 'Proton: mass ≈ 1 u (1.673 × 10⁻²⁷ kg), charge
+= +1. Neutron: mass ≈ 1 u (1.675 × 10⁻²⁷ kg), charge = 0. Electron: mass ≈ 1/1840 u (9.109 × 10⁻³¹
+kg), charge = −1. Protons and neutrons are nucleons in the nucleus; electrons occupy orbitals
+outside the nucleus.', tags: ['subatomic particles'], difficulty: 'easy', }, { id:
+'atomic-structure-002', front: 'Define isotopes and explain how they differ.', back: 'Isotopes are
+atoms of the same element with the same number of protons but different numbers of neutrons. They
+have identical chemical properties (same electron configuration) but different physical properties
+(different mass, leading to different densities, rates of diffusion, and behaviour in mass
+spectrometry). Example: ¹²C and ¹³C (6 protons each, 6 vs 7 neutrons).', tags: ['isotopes'],
+difficulty: 'easy', }, { id: 'atomic-structure-003', front: 'Describe Dalton\'s atomic model and its
+key postulates.', back: 'Dalton\'s model (1803): 1) All matter is made of indivisible atoms. 2)
+Atoms of a given element are identical in mass and properties. 3) Atoms of different elements have
+different masses. 4) Compounds are formed by combinations of atoms in simple whole-number ratios.
+Limitation: did not account for subatomic particles or isotopes.', tags: ['atomic models',
+'Dalton'], difficulty: 'easy', }, { id: 'atomic-structure-004', front: 'Describe Thomson\'s "plum
+pudding" model and the evidence behind it.', back: 'Thomson (1897) discovered the electron using
+cathode ray tubes (deflected by electric and magnetic fields). His model: atoms are positively
+charged spheres with negatively charged electrons embedded throughout (like plums in a pudding).
+This was the first model to include subatomic particles.', tags: ['atomic models', 'Thomson'],
+difficulty: 'easy', }, { id: 'atomic-structure-005', front: 'Describe Rutherford\'s nuclear model
+and the evidence from the gold foil experiment.', back: 'Rutherford (1911) fired alpha particles at
+thin gold foil. Most passed through, some were deflected, a few bounced back. Conclusion: atoms have
+a small, dense, positively charged nucleus (contains most of the mass). Electrons orbit the nucleus
+in mostly empty space. Nuclear atom model replaced the plum pudding model.', tags: ['atomic models',
+'Rutherford'], difficulty: 'easy', }, { id: 'atomic-structure-006', front: 'How does a mass
+spectrometer work? Describe the key stages.', back: '1) Ionization: sample vaporized and bombarded
+with electrons to form positive ions (M → M⁺ + e⁻). 2) Acceleration: ions accelerated by electric
+field (all gain the same kinetic energy). 3) Deflection: ions deflected by magnetic field — lighter
+ions deflected more (r ∝ √(m/z)). 4) Detection: ions hit detector, producing a current proportional
+to abundance.', tags: ['mass spectrometry'], difficulty: 'medium', }, { id: 'atomic-structure-007',
+front: 'How do you calculate the relative atomic mass from a mass spectrum?', back: 'Ar = Σ(isotope
+mass × relative abundance) / Σ(relative abundances). Use the m/z values and their peak heights
+(relative abundances) from the spectrum. Example: if Cl has peaks at 35 (75.8%) and 37 (24.2%), then
+Ar = (35 × 75.8 + 37 × 24.2) / 100 = 35.48. The weighted average accounts for all naturally
+occurring isotopes.', tags: ['mass spectrometry', 'isotopes'], difficulty: 'medium', }, { id:
+'atomic-structure-008', front: 'State the Aufbau principle, Pauli exclusion principle, and Hund\'s
+rule.', back: 'Aufbau principle: electrons fill orbitals from lowest energy to highest (1s → 2s → 2p
+→ 3s → 3p → 4s → 3d...). Pauli exclusion principle: each orbital holds a maximum of two electrons
+with opposite spins (↑↓). Hund\'s rule: electrons occupy degenerate orbitals singly first with
+parallel spins before pairing up.', tags: ['electron configuration'], difficulty: 'medium', }, { id:
+'atomic-structure-009', front: 'Write the electron configuration for iron (Fe, Z=26) and identify
+the 3d and 4s subshell filling.', back: 'Fe: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s² or [Ar] 3d⁶ 4s². When
+writing configurations: 4s fills before 3d (Aufbau), but 4s electrons are removed before 3d when
+forming cations (Fe²⁺ = [Ar] 3d⁶, Fe³⁺ = [Ar] 3d⁵). The 3d subshell is more stable when half-filled
+(d⁵) or fully filled (d¹⁰).', tags: ['electron configuration', 'transition metals'], difficulty:
+'medium', }, { id: 'atomic-structure-010', front: 'Describe the Bohr model and how it explains
+atomic emission spectra.', back: 'Bohr (1913): electrons orbit the nucleus in fixed energy levels
+(n=1, 2, 3...). Electrons can jump between levels by absorbing or emitting photons of specific
+energy: ΔE = E₂ − E₁ = hf = hc/λ. Emission spectra show bright lines at wavelengths corresponding to
+transitions to lower energy levels. Limitation: only works for hydrogen; cannot explain spectra of
+multi-electron atoms.', tags: ['atomic models', 'Bohr', 'emission spectra'], difficulty: 'medium',
+}, { id: 'atomic-structure-011', front: 'Explain the difference between emission and absorption
+spectra.', back: 'Emission spectrum: produced when excited electrons fall to lower energy levels,
+emitting photons at specific wavelengths — observed as bright lines on a dark background (line
+spectrum). Absorption spectrum: produced when atoms absorb photons of specific energies, promoting
+electrons to higher levels — observed as dark lines on a continuous spectrum. Both are
+characteristic of each element.', tags: ['emission spectra', 'absorption spectra'], difficulty:
+'medium', }, { id: 'atomic-structure-012', front: 'Describe the shapes of s, p, and d orbitals.',
+back: 's orbital: spherical (1 orbital per subshell, holds 2 electrons). p orbital: dumbbell-shaped,
+three orientations (px, py, pz) along the x, y, z axes (3 orbitals per subshell, holds 6 electrons).
+d orbital: clover-shaped (four of the five) or dumbbell with a ring (dz²), five orientations (5
+orbitals per subshell, holds 10 electrons).', tags: ['orbitals', 'electron configuration'],
+difficulty: 'medium', }, { id: 'atomic-structure-013', front: 'State the trends in first ionization
+energy across Period 2 and explain the anomalies.', back: 'General trend: increases across the
+period (increasing nuclear charge, same shielding). Anomalies: Be to B — drop because B\'s outer
+electron is in a 2p orbital (higher energy, further from nucleus, easier to remove). N to O — drop
+because O\'s extra electron pairs in a 2p orbital, experiencing electron-electron repulsion (less
+energy needed to remove a paired electron).', tags: ['ionization energy', 'periodic trends'],
+difficulty: 'medium', }, { id: 'atomic-structure-014', front: 'State the trend in first ionization
+energy down a group and explain why.', back: 'First ionization energy decreases down a group.
+Despite increasing nuclear charge, the atomic radius increases significantly, so the outermost
+electron is further from the nucleus. Shielding by inner electron shells also increases, reducing
+the effective nuclear charge experienced by the outer electron. Both factors make it easier to
+remove the outer electron.', tags: ['ionization energy', 'periodic trends'], difficulty: 'medium',
+}, { id: 'atomic-structure-015', front: 'Explain the relationship between successive ionization
+energies and electron configuration.', back: 'Successive ionization energies increase because
+electrons are removed from a progressively more positive ion (stronger attraction). Large jumps
+indicate removal of an electron from a new energy level closer to the nucleus. Example: for Na, IE₁
+<< IE₂ because IE₁ removes the 3s¹ electron, while IE₂ removes a 2p electron from a lower energy
+level (closer, more strongly held).', tags: ['ionization energy', 'electron configuration'],
+difficulty: 'hard', }, { id: 'atomic-structure-016', front: 'Define electronegativity on the Pauling
+scale and state the periodic trends.', back: 'Electronegativity: the ability of an atom to attract
+the bonding electron pair in a covalent bond (Pauling scale, dimensionless). Fluorine is the most
+electronegative element (4.0). Trend: increases across a period (increasing nuclear charge,
+decreasing atomic radius). Decreases down a group (increasing atomic radius and shielding reduce
+pull on bonding electrons). Noble gases are excluded.', tags: ['electronegativity', 'periodic
+trends'], difficulty: 'hard', }, { id: 'atomic-structure-017', front: 'State and explain the trends
+in atomic radius across a period and down a group.', back: 'Across a period: atomic radius
+decreases. Increasing nuclear charge pulls electrons closer while shielding remains similar (same
+shell). Down a group: atomic radius increases. Additional electron shells are added, so outer
+electrons are further from the nucleus despite increased nuclear charge. Covalent radius: half the
+distance between nuclei of two bonded atoms of the same element.', tags: ['atomic radius', 'periodic
+trends'], difficulty: 'hard', }, { id: 'atomic-structure-018', front: 'Describe the quantum
+mechanical model of the atom.', back: 'The quantum mechanical model (Schrodinger, 1926) describes
+electrons as probability clouds (orbitals) rather than orbits. Electrons are described by four
+quantum numbers: principal (n), azimuthal (l), magnetic (ml), and spin (ms). The Heisenberg
+uncertainty principle states we cannot simultaneously know the exact position and momentum of an
+electron. Orbitals represent regions of highest probability of finding an electron.', tags: ['atomic
+models', 'quantum mechanics'], difficulty: 'hard', }, { id: 'atomic-structure-019', front: 'How do
+you interpret a mass spectrum of a diatomic element such as Cl₂?', back: 'Cl has two isotopes: ³⁵Cl
+(75.8%) and ³⁷Cl (24.2%). Cl₂ produces molecules with three possible masses: ³⁵Cl–³⁵Cl (m/z = 70,
+tallest peak), ³⁵Cl–³⁷Cl (m/z = 72, roughly twice ³⁷Cl–³⁷Cl), and ³⁷Cl–³⁷Cl (m/z = 74, smallest).
+The ratio is approximately 9:6:1. The molecular ion peak (M⁺) appears at m/z = 70 (lightest, most
+abundant isotope combination).', tags: ['mass spectrometry', 'isotopes'], difficulty: 'hard', }, {
+id: 'atomic-structure-020', front: 'Explain the exception to the Aufbau principle in chromium and
+copper.', back: 'Cr (Z=24) is [Ar] 3d⁵ 4s¹ (not 3d⁴ 4s²) because a half-filled d subshell (d⁵) is
+more stable. Cu (Z=29) is [Ar] 3d¹⁰ 4s¹ (not 3d⁹ 4s²) because a fully filled d subshell (d¹⁰) is
+more stable. Both exceptions arise because the extra stability from half-filled or fully filled d
+subshells outweighs the energy cost of promoting a 4s electron into the 3d subshell.', tags:
+['electron configuration', 'transition metals', 'Aufbau'], difficulty: 'hard', }, ];
 
 <FlashcardDeck
   deckId="ib-chemistry-atomic-structure"
   title="IB Chemistry: Atomic Structure"
   description="Atomic models, subatomic particles, isotopes, mass spectrometry, electron configurations, and periodic trends."
-  cards={[
-    {
-      id: 'atomic-structure-001',
-      front: 'What are the relative masses and charges of protons, neutrons, and electrons?',
-      back: 'Proton: mass ≈ 1 u (1.673 × 10⁻²⁷ kg), charge = +1. Neutron: mass ≈ 1 u (1.675 × 10⁻²⁷ kg), charge = 0. Electron: mass ≈ 1/1840 u (9.109 × 10⁻³¹ kg), charge = −1. Protons and neutrons are nucleons in the nucleus; electrons occupy orbitals outside the nucleus.',
-      tags: ['subatomic particles'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'atomic-structure-002',
-      front: 'Define isotopes and explain how they differ.',
-      back: 'Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons. They have identical chemical properties (same electron configuration) but different physical properties (different mass, leading to different densities, rates of diffusion, and behaviour in mass spectrometry). Example: ¹²C and ¹³C (6 protons each, 6 vs 7 neutrons).',
-      tags: ['isotopes'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'atomic-structure-003',
-      front: 'Describe Dalton\'s atomic model and its key postulates.',
-      back: 'Dalton\'s model (1803): 1) All matter is made of indivisible atoms. 2) Atoms of a given element are identical in mass and properties. 3) Atoms of different elements have different masses. 4) Compounds are formed by combinations of atoms in simple whole-number ratios. Limitation: did not account for subatomic particles or isotopes.',
-      tags: ['atomic models', 'Dalton'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'atomic-structure-004',
-      front: 'Describe Thomson\'s "plum pudding" model and the evidence behind it.',
-      back: 'Thomson (1897) discovered the electron using cathode ray tubes (deflected by electric and magnetic fields). His model: atoms are positively charged spheres with negatively charged electrons embedded throughout (like plums in a pudding). This was the first model to include subatomic particles.',
-      tags: ['atomic models', 'Thomson'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'atomic-structure-005',
-      front: 'Describe Rutherford\'s nuclear model and the evidence from the gold foil experiment.',
-      back: 'Rutherford (1911) fired alpha particles at thin gold foil. Most passed through, some were deflected, a few bounced back. Conclusion: atoms have a small, dense, positively charged nucleus (contains most of the mass). Electrons orbit the nucleus in mostly empty space. Nuclear atom model replaced the plum pudding model.',
-      tags: ['atomic models', 'Rutherford'],
-      difficulty: 'easy',
-    },
-    {
-      id: 'atomic-structure-006',
-      front: 'How does a mass spectrometer work? Describe the key stages.',
-      back: '1) Ionization: sample vaporized and bombarded with electrons to form positive ions (M → M⁺ + e⁻). 2) Acceleration: ions accelerated by electric field (all gain the same kinetic energy). 3) Deflection: ions deflected by magnetic field — lighter ions deflected more (r ∝ √(m/z)). 4) Detection: ions hit detector, producing a current proportional to abundance.',
-      tags: ['mass spectrometry'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-007',
-      front: 'How do you calculate the relative atomic mass from a mass spectrum?',
-      back: 'Ar = Σ(isotope mass × relative abundance) / Σ(relative abundances). Use the m/z values and their peak heights (relative abundances) from the spectrum. Example: if Cl has peaks at 35 (75.8%) and 37 (24.2%), then Ar = (35 × 75.8 + 37 × 24.2) / 100 = 35.48. The weighted average accounts for all naturally occurring isotopes.',
-      tags: ['mass spectrometry', 'isotopes'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-008',
-      front: 'State the Aufbau principle, Pauli exclusion principle, and Hund\'s rule.',
-      back: 'Aufbau principle: electrons fill orbitals from lowest energy to highest (1s → 2s → 2p → 3s → 3p → 4s → 3d...). Pauli exclusion principle: each orbital holds a maximum of two electrons with opposite spins (↑↓). Hund\'s rule: electrons occupy degenerate orbitals singly first with parallel spins before pairing up.',
-      tags: ['electron configuration'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-009',
-      front: 'Write the electron configuration for iron (Fe, Z=26) and identify the 3d and 4s subshell filling.',
-      back: 'Fe: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s² or [Ar] 3d⁶ 4s². When writing configurations: 4s fills before 3d (Aufbau), but 4s electrons are removed before 3d when forming cations (Fe²⁺ = [Ar] 3d⁶, Fe³⁺ = [Ar] 3d⁵). The 3d subshell is more stable when half-filled (d⁵) or fully filled (d¹⁰).',
-      tags: ['electron configuration', 'transition metals'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-010',
-      front: 'Describe the Bohr model and how it explains atomic emission spectra.',
-      back: 'Bohr (1913): electrons orbit the nucleus in fixed energy levels (n=1, 2, 3...). Electrons can jump between levels by absorbing or emitting photons of specific energy: ΔE = E₂ − E₁ = hf = hc/λ. Emission spectra show bright lines at wavelengths corresponding to transitions to lower energy levels. Limitation: only works for hydrogen; cannot explain spectra of multi-electron atoms.',
-      tags: ['atomic models', 'Bohr', 'emission spectra'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-011',
-      front: 'Explain the difference between emission and absorption spectra.',
-      back: 'Emission spectrum: produced when excited electrons fall to lower energy levels, emitting photons at specific wavelengths — observed as bright lines on a dark background (line spectrum). Absorption spectrum: produced when atoms absorb photons of specific energies, promoting electrons to higher levels — observed as dark lines on a continuous spectrum. Both are characteristic of each element.',
-      tags: ['emission spectra', 'absorption spectra'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-012',
-      front: 'Describe the shapes of s, p, and d orbitals.',
-      back: 's orbital: spherical (1 orbital per subshell, holds 2 electrons). p orbital: dumbbell-shaped, three orientations (px, py, pz) along the x, y, z axes (3 orbitals per subshell, holds 6 electrons). d orbital: clover-shaped (four of the five) or dumbbell with a ring (dz²), five orientations (5 orbitals per subshell, holds 10 electrons).',
-      tags: ['orbitals', 'electron configuration'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-013',
-      front: 'State the trends in first ionization energy across Period 2 and explain the anomalies.',
-      back: 'General trend: increases across the period (increasing nuclear charge, same shielding). Anomalies: Be to B — drop because B\'s outer electron is in a 2p orbital (higher energy, further from nucleus, easier to remove). N to O — drop because O\'s extra electron pairs in a 2p orbital, experiencing electron-electron repulsion (less energy needed to remove a paired electron).',
-      tags: ['ionization energy', 'periodic trends'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-014',
-      front: 'State the trend in first ionization energy down a group and explain why.',
-      back: 'First ionization energy decreases down a group. Despite increasing nuclear charge, the atomic radius increases significantly, so the outermost electron is further from the nucleus. Shielding by inner electron shells also increases, reducing the effective nuclear charge experienced by the outer electron. Both factors make it easier to remove the outer electron.',
-      tags: ['ionization energy', 'periodic trends'],
-      difficulty: 'medium',
-    },
-    {
-      id: 'atomic-structure-015',
-      front: 'Explain the relationship between successive ionization energies and electron configuration.',
-      back: 'Successive ionization energies increase because electrons are removed from a progressively more positive ion (stronger attraction). Large jumps indicate removal of an electron from a new energy level closer to the nucleus. Example: for Na, IE₁ << IE₂ because IE₁ removes the 3s¹ electron, while IE₂ removes a 2p electron from a lower energy level (closer, more strongly held).',
-      tags: ['ionization energy', 'electron configuration'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'atomic-structure-016',
-      front: 'Define electronegativity on the Pauling scale and state the periodic trends.',
-      back: 'Electronegativity: the ability of an atom to attract the bonding electron pair in a covalent bond (Pauling scale, dimensionless). Fluorine is the most electronegative element (4.0). Trend: increases across a period (increasing nuclear charge, decreasing atomic radius). Decreases down a group (increasing atomic radius and shielding reduce pull on bonding electrons). Noble gases are excluded.',
-      tags: ['electronegativity', 'periodic trends'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'atomic-structure-017',
-      front: 'State and explain the trends in atomic radius across a period and down a group.',
-      back: 'Across a period: atomic radius decreases. Increasing nuclear charge pulls electrons closer while shielding remains similar (same shell). Down a group: atomic radius increases. Additional electron shells are added, so outer electrons are further from the nucleus despite increased nuclear charge. Covalent radius: half the distance between nuclei of two bonded atoms of the same element.',
-      tags: ['atomic radius', 'periodic trends'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'atomic-structure-018',
-      front: 'Describe the quantum mechanical model of the atom.',
-      back: 'The quantum mechanical model (Schrodinger, 1926) describes electrons as probability clouds (orbitals) rather than orbits. Electrons are described by four quantum numbers: principal (n), azimuthal (l), magnetic (ml), and spin (ms). The Heisenberg uncertainty principle states we cannot simultaneously know the exact position and momentum of an electron. Orbitals represent regions of highest probability of finding an electron.',
-      tags: ['atomic models', 'quantum mechanics'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'atomic-structure-019',
-      front: 'How do you interpret a mass spectrum of a diatomic element such as Cl₂?',
-      back: 'Cl has two isotopes: ³⁵Cl (75.8%) and ³⁷Cl (24.2%). Cl₂ produces molecules with three possible masses: ³⁵Cl–³⁵Cl (m/z = 70, tallest peak), ³⁵Cl–³⁷Cl (m/z = 72, roughly twice ³⁷Cl–³⁷Cl), and ³⁷Cl–³⁷Cl (m/z = 74, smallest). The ratio is approximately 9:6:1. The molecular ion peak (M⁺) appears at m/z = 70 (lightest, most abundant isotope combination).',
-      tags: ['mass spectrometry', 'isotopes'],
-      difficulty: 'hard',
-    },
-    {
-      id: 'atomic-structure-020',
-      front: 'Explain the exception to the Aufbau principle in chromium and copper.',
-      back: 'Cr (Z=24) is [Ar] 3d⁵ 4s¹ (not 3d⁴ 4s²) because a half-filled d subshell (d⁵) is more stable. Cu (Z=29) is [Ar] 3d¹⁰ 4s¹ (not 3d⁹ 4s²) because a fully filled d subshell (d¹⁰) is more stable. Both exceptions arise because the extra stability from half-filled or fully filled d subshells outweighs the energy cost of promoting a 4s electron into the 3d subshell.',
-      tags: ['electron configuration', 'transition metals', 'Aufbau'],
-      difficulty: 'hard',
-    },
-  ]}
+  cards={flashcardData}
 />

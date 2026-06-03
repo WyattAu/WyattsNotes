@@ -1,49 +1,114 @@
 ---
-title: "IB Physics: Thermal Physics Practice"
+title: 'IB Physics: Thermal Physics Practice'
 slug: practice-thermal-physics
-description: "Interactive IB Physics thermal physics practice with 16 MCQs on temperature, specific heat capacity, latent heat, ideal gas laws, molecular kinetic theory, and calorimetry."
+description:
+  'Interactive IB Physics thermal physics practice with 16 MCQs on temperature, specific heat
+  capacity, latent heat, ideal gas laws, molecular kinetic theory, and calorimetry.'
 tags: [Physics, IB Physics, Practice]
 ---
+
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 ## IB Physics -- Thermal Physics Practice
 
-16 MCQ practice problems covering core IB Physics thermal physics content, from temperature scales to molecular kinetic theory and ideal gas behaviour.
----
+## 16 MCQ practice problems covering core IB Physics thermal physics content, from temperature scales to molecular kinetic theory and ideal gas behaviour.
+
 ### Temperature and Internal Energy
 
-<PracticeProblem questions={[
-  {question: "What is 37 °C in kelvin?", options: ["A) −236 K", "B) 310 K", "C) 236 K", "D) 273 K"], correct: 1, explanation: "T(K) = T(°C) + 273.15 = 37 + 273.15 = 310.15 K ≈ 310 K."},
-  {question: "The internal energy of an ideal gas is:", options: ["A) The total potential energy of all molecules", "B) The sum of the kinetic and potential energies of all molecules", "C) The total random kinetic energy of all molecules", "D) The heat contained within the gas"], correct: 2, explanation: "For an ideal gas, there are no intermolecular forces, so potential energy = 0. Internal energy is entirely the total random kinetic energy of all molecules: U = N × (3/2)k_B T = (3/2)nRT."},
-  {question: "Which temperature change represents the largest increase in internal energy for a fixed amount of ideal gas?", options: ["A) 1 °C to 2 °C", "B) 100 K to 200 K", "C) −10 °C to 10 °C", "D) 20 °C to 40 °C"], correct: 1, explanation: "For an ideal gas, ΔU ∝ ΔT. A) ΔT = 1 K. B) ΔT = 100 K. C) ΔT = 20 K. D) ΔT = 20 K. The largest ΔT is B at 100 K. Internal energy depends only on temperature for an ideal monatomic gas."},
-  {question: "The average kinetic energy of a molecule in an ideal gas is directly proportional to:", options: ["A) The pressure of the gas", "B) The volume of the gas", "C) The absolute temperature of the gas", "D) The mass of the molecule"], correct: 2, explanation: "The average kinetic energy per molecule is (3/2)k_B T, directly proportional to absolute temperature T. This is a fundamental result of the kinetic theory of gases and holds regardless of pressure or volume changes."}
-]} />
+const practiceQuestions = [ {question: "What is 37 °C in kelvin?", options: ["A) −236 K", "B) 310
+K", "C) 236 K", "D) 273 K"], correct: 1, explanation: "T(K) = T(°C) + 273.15 = 37 + 273.15 = 310.15
+K ≈ 310 K."}, {question: "The internal energy of an ideal gas is:", options: ["A) The total
+potential energy of all molecules", "B) The sum of the kinetic and potential energies of all
+molecules", "C) The total random kinetic energy of all molecules", "D) The heat contained within the
+gas"], correct: 2, explanation: "For an ideal gas, there are no intermolecular forces, so potential
+energy = 0. Internal energy is entirely the total random kinetic energy of all molecules: U = N ×
+(3/2)k_B T = (3/2)nRT."}, {question: "Which temperature change represents the largest increase in
+internal energy for a fixed amount of ideal gas?", options: ["A) 1 °C to 2 °C", "B) 100 K to 200 K",
+"C) −10 °C to 10 °C", "D) 20 °C to 40 °C"], correct: 1, explanation: "For an ideal gas, ΔU ∝ ΔT. A)
+ΔT = 1 K. B) ΔT = 100 K. C) ΔT = 20 K. D) ΔT = 20 K. The largest ΔT is B at 100 K. Internal energy
+depends only on temperature for an ideal monatomic gas."}, {question: "The average kinetic energy of
+a molecule in an ideal gas is directly proportional to:", options: ["A) The pressure of the gas",
+"B) The volume of the gas", "C) The absolute temperature of the gas", "D) The mass of the
+molecule"], correct: 2, explanation: "The average kinetic energy per molecule is (3/2)k_B T,
+directly proportional to absolute temperature T. This is a fundamental result of the kinetic theory
+of gases and holds regardless of pressure or volume changes."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Specific Heat Capacity and Latent Heat
 
-<PracticeProblem questions={[
-  {question: "200 g of water at 80 °C is mixed with 300 g of water at 20 °C. Assuming no heat loss to the surroundings, what is the final temperature? (c_water = 4180 J kg⁻¹ K⁻¹)", options: ["A) 44 °C", "B) 50 °C", "C) 38 °C", "D) 56 °C"], correct: 0, explanation: "Heat lost by hot water = heat gained by cold water: 0.200 × 4180 × (80 − T_f) = 0.300 × 4180 × (T_f − 20). 160 − 2T_f = 3T_f − 60. 5T_f = 220. T_f = 44 °C."},
-  {question: "How much energy is required to melt 0.50 kg of ice at 0 °C to water at 0 °C? (Specific latent heat of fusion of water = 3.34 × 10⁵ J kg⁻¹)", options: ["A) 1.67 × 10⁵ J", "B) 3.34 × 10⁵ J", "C) 6.68 × 10⁵ J", "D) 8.37 × 10⁴ J"], correct: 0, explanation: "Q = mL_f = 0.50 × 3.34 × 10⁵ = 1.67 × 10⁵ J. During melting, temperature remains constant while energy breaks intermolecular bonds."},
-  {question: "A 2.0 kW electric heater is used to heat 1.5 kg of water from 15 °C to boiling. How long does it take? (c_water = 4180 J kg⁻¹ K⁻¹)", options: ["A) 133 s", "B) 267 s", "C) 200 s", "D) 400 s"], correct: 1, explanation: "Q = mcΔT = 1.5 × 4180 × (100 − 15) = 1.5 × 4180 × 85 = 532,950 J. Time t = Q/P = 532,950 / 2000 = 266.5 s ≈ 267 s."},
-  {question: "500 g of iron at 200 °C is dropped into 1.0 kg of water at 20 °C. What is the final temperature? (c_iron = 450 J kg⁻¹ K⁻¹, c_water = 4180 J kg⁻¹ K⁻¹)", options: ["A) 28 °C", "B) 32 °C", "C) 36 °C", "D) 24 °C"], correct: 0, explanation: "Heat lost by iron = heat gained by water: 0.500 × 450 × (200 − T_f) = 1.0 × 4180 × (T_f − 20). 225(200 − T_f) = 4180(T_f − 20). 45,000 − 225T_f = 4180T_f − 83,600. 4405T_f = 128,600. T_f = 29.2 °C ≈ 28 °C."},
-  {question: "A 100 g piece of ice at −10 °C is heated until it becomes steam at 100 °C. What total energy is required? (c_ice = 2100 J kg⁻¹ K⁻¹, c_water = 4180 J kg⁻¹ K⁻¹, L_f = 3.34 × 10⁵ J kg⁻¹, L_v = 2.26 × 10⁶ J kg⁻¹)", options: ["A) 3.03 × 10⁵ J", "B) 2.71 × 10⁵ J", "C) 1.85 × 10⁵ J", "D) 4.52 × 10⁵ J"], correct: 0, explanation: "Four stages: 1) Ice −10 to 0: Q₁ = 0.100 × 2100 × 10 = 2100 J. 2) Melting: Q₂ = 0.100 × 3.34 × 10⁵ = 33,400 J. 3) Water 0 to 100: Q₃ = 0.100 × 4180 × 100 = 41,800 J. 4) Vaporizing: Q₄ = 0.100 × 2.26 × 10⁶ = 226,000 J. Total = 2100 + 33,400 + 41,800 + 226,000 = 303,300 J ≈ 3.03 × 10⁵ J."}
-]} />
+const practiceQuestions = [ {question: "200 g of water at 80 °C is mixed with 300 g of water at 20
+°C. Assuming no heat loss to the surroundings, what is the final temperature? (c_water = 4180 J kg⁻¹
+K⁻¹)", options: ["A) 44 °C", "B) 50 °C", "C) 38 °C", "D) 56 °C"], correct: 0, explanation: "Heat
+lost by hot water = heat gained by cold water: 0.200 × 4180 × (80 − T_f) = 0.300 × 4180 × (T_f −
+20). 160 − 2T_f = 3T_f − 60. 5T_f = 220. T_f = 44 °C."}, {question: "How much energy is required to
+melt 0.50 kg of ice at 0 °C to water at 0 °C? (Specific latent heat of fusion of water = 3.34 × 10⁵
+J kg⁻¹)", options: ["A) 1.67 × 10⁵ J", "B) 3.34 × 10⁵ J", "C) 6.68 × 10⁵ J", "D) 8.37 × 10⁴ J"],
+correct: 0, explanation: "Q = mL_f = 0.50 × 3.34 × 10⁵ = 1.67 × 10⁵ J. During melting, temperature
+remains constant while energy breaks intermolecular bonds."}, {question: "A 2.0 kW electric heater
+is used to heat 1.5 kg of water from 15 °C to boiling. How long does it take? (c_water = 4180 J kg⁻¹
+K⁻¹)", options: ["A) 133 s", "B) 267 s", "C) 200 s", "D) 400 s"], correct: 1, explanation: "Q = mcΔT
+= 1.5 × 4180 × (100 − 15) = 1.5 × 4180 × 85 = 532,950 J. Time t = Q/P = 532,950 / 2000 = 266.5 s ≈
+267 s."}, {question: "500 g of iron at 200 °C is dropped into 1.0 kg of water at 20 °C. What is the
+final temperature? (c_iron = 450 J kg⁻¹ K⁻¹, c_water = 4180 J kg⁻¹ K⁻¹)", options: ["A) 28 °C", "B)
+32 °C", "C) 36 °C", "D) 24 °C"], correct: 0, explanation: "Heat lost by iron = heat gained by water:
+0.500 × 450 × (200 − T_f) = 1.0 × 4180 × (T_f − 20). 225(200 − T_f) = 4180(T_f − 20). 45,000 −
+225T_f = 4180T_f − 83,600. 4405T_f = 128,600. T_f = 29.2 °C ≈ 28 °C."}, {question: "A 100 g piece of
+ice at −10 °C is heated until it becomes steam at 100 °C. What total energy is required? (c_ice =
+2100 J kg⁻¹ K⁻¹, c_water = 4180 J kg⁻¹ K⁻¹, L_f = 3.34 × 10⁵ J kg⁻¹, L_v = 2.26 × 10⁶ J kg⁻¹)",
+options: ["A) 3.03 × 10⁵ J", "B) 2.71 × 10⁵ J", "C) 1.85 × 10⁵ J", "D) 4.52 × 10⁵ J"], correct: 0,
+explanation: "Four stages: 1) Ice −10 to 0: Q₁ = 0.100 × 2100 × 10 = 2100 J. 2) Melting: Q₂ = 0.100
+× 3.34 × 10⁵ = 33,400 J. 3) Water 0 to 100: Q₃ = 0.100 × 4180 × 100 = 41,800 J. 4) Vaporizing: Q₄ =
+0.100 × 2.26 × 10⁶ = 226,000 J. Total = 2100 + 33,400 + 41,800 + 226,000 = 303,300 J ≈ 3.03 × 10⁵
+J."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Ideal Gas Law and Kinetic Theory
 
-<PracticeProblem questions={[
-  {question: "A gas is enclosed in a container at pressure 1.5 × 10⁵ Pa and temperature 300 K. If the temperature is increased to 450 K at constant volume, what is the new pressure?", options: ["A) 1.0 × 10⁵ Pa", "B) 2.25 × 10⁵ Pa", "C) 2.0 × 10⁵ Pa", "D) 1.5 × 10⁵ Pa"], correct: 1, explanation: "Using Gay-Lussac's law (P/T = constant at constant V): P₂/T₂ = P₁/T₁. P₂ = P₁ × T₂/T₁ = 1.5 × 10⁵ × 450/300 = 2.25 × 10⁵ Pa."},
-  {question: "Which of the following is NOT an assumption of the kinetic theory for an ideal gas?", options: ["A) Molecules are point particles with negligible volume", "B) Molecules exert no forces on each other except during collisions", "C) All collisions between molecules are elastic", "D) All molecules move at the same speed"], correct: 3, explanation: "The kinetic theory assumes molecules have a distribution of speeds (Maxwell-Boltzmann distribution), not that all move at the same speed. The other options are all valid assumptions of the ideal gas model."},
-  {question: "A sample of gas occupies 4.0 × 10⁻³ m³ at pressure 2.0 × 10⁵ Pa and temperature 280 K. How many moles of gas are present? (R = 8.31 J mol⁻¹ K⁻¹)", options: ["A) 0.34 mol", "B) 0.68 mol", "C) 1.36 mol", "D) 0.17 mol"], correct: 0, explanation: "Using PV = nRT: n = PV/(RT) = (2.0 × 10⁵ × 4.0 × 10⁻³)/(8.31 × 280) = 800/2326.8 = 0.344 mol ≈ 0.34 mol."},
-  {question: "The root-mean-square speed of gas molecules doubles. By what factor does the absolute temperature change?", options: ["A) Doubles", "B) Quadruples", "C) Remains the same", "D) Increases by factor of sqrt(2)"], correct: 1, explanation: "From (3/2)k_B T = (1/2)m(v_rms)²: v_rms = sqrt(3k_B T/m). If v_rms doubles, then T must quadruple (since v_rms ∝ sqrt(T))."}
-]} />
+const practiceQuestions = [ {question: "A gas is enclosed in a container at pressure 1.5 × 10⁵ Pa
+and temperature 300 K. If the temperature is increased to 450 K at constant volume, what is the new
+pressure?", options: ["A) 1.0 × 10⁵ Pa", "B) 2.25 × 10⁵ Pa", "C) 2.0 × 10⁵ Pa", "D) 1.5 × 10⁵ Pa"],
+correct: 1, explanation: "Using Gay-Lussac's law (P/T = constant at constant V): P₂/T₂ = P₁/T₁. P₂ =
+P₁ × T₂/T₁ = 1.5 × 10⁵ × 450/300 = 2.25 × 10⁵ Pa."}, {question: "Which of the following is NOT an
+assumption of the kinetic theory for an ideal gas?", options: ["A) Molecules are point particles
+with negligible volume", "B) Molecules exert no forces on each other except during collisions", "C)
+All collisions between molecules are elastic", "D) All molecules move at the same speed"], correct:
+3, explanation: "The kinetic theory assumes molecules have a distribution of speeds
+(Maxwell-Boltzmann distribution), not that all move at the same speed. The other options are all
+valid assumptions of the ideal gas model."}, {question: "A sample of gas occupies 4.0 × 10⁻³ m³ at
+pressure 2.0 × 10⁵ Pa and temperature 280 K. How many moles of gas are present? (R = 8.31 J mol⁻¹
+K⁻¹)", options: ["A) 0.34 mol", "B) 0.68 mol", "C) 1.36 mol", "D) 0.17 mol"], correct: 0,
+explanation: "Using PV = nRT: n = PV/(RT) = (2.0 × 10⁵ × 4.0 × 10⁻³)/(8.31 × 280) = 800/2326.8 =
+0.344 mol ≈ 0.34 mol."}, {question: "The root-mean-square speed of gas molecules doubles. By what
+factor does the absolute temperature change?", options: ["A) Doubles", "B) Quadruples", "C) Remains
+the same", "D) Increases by factor of sqrt(2)"], correct: 1, explanation: "From (3/2)k_B T =
+(1/2)m(v_rms)²: v_rms = sqrt(3k_B T/m). If v_rms doubles, then T must quadruple (since v_rms ∝
+sqrt(T))."} ];
+
+<PracticeProblem questions={practiceQuestions} />
 
 ---
+
 ### Pressure-Volume Work and Phase Changes
 
-<PracticeProblem questions={[
-  {question: "A gas expands at constant pressure of 1.0 × 10⁵ Pa from 2.0 × 10⁻³ m³ to 5.0 × 10⁻³ m³. How much work does the gas do?", options: ["A) 300 J", "B) 200 J", "C) 500 J", "D) 150 J"], correct: 0, explanation: "Work done by gas at constant pressure: W = PΔV = 1.0 × 10⁵ × (5.0 − 2.0) × 10⁻³ = 1.0 × 10⁵ × 3.0 × 10⁻³ = 300 J."},
-  {question: "During a phase change from liquid to gas at constant temperature:", options: ["A) Internal energy decreases", "B) Internal energy increases as potential energy increases", "C) Average kinetic energy of molecules increases", "D) The substance does work on the surroundings but internal energy is unchanged"], correct: 1, explanation: "During vaporization at constant temperature, kinetic energy (related to temperature) stays constant. The added energy increases the potential energy of molecules as they move further apart, overcoming intermolecular forces. Internal energy increases due to increased PE."},
-  {question: "A fixed mass of gas at constant temperature has its volume halved. What happens to the pressure?", options: ["A) Pressure halves", "B) Pressure doubles", "C) Pressure remains the same", "D) Pressure quadruples"], correct: 1, explanation: "Boyle's law: at constant temperature, P₁V₁ = P₂V₂. If V is halved, P doubles. P₂ = P₁V₁/(V₁/2) = 2P₁. This is because molecules collide more frequently with the walls of the smaller container."}
-]} />
+const practiceQuestions = [ {question: "A gas expands at constant pressure of 1.0 × 10⁵ Pa from 2.0
+× 10⁻³ m³ to 5.0 × 10⁻³ m³. How much work does the gas do?", options: ["A) 300 J", "B) 200 J", "C)
+500 J", "D) 150 J"], correct: 0, explanation: "Work done by gas at constant pressure: W = PΔV = 1.0
+× 10⁵ × (5.0 − 2.0) × 10⁻³ = 1.0 × 10⁵ × 3.0 × 10⁻³ = 300 J."}, {question: "During a phase change
+from liquid to gas at constant temperature:", options: ["A) Internal energy decreases", "B) Internal
+energy increases as potential energy increases", "C) Average kinetic energy of molecules increases",
+"D) The substance does work on the surroundings but internal energy is unchanged"], correct: 1,
+explanation: "During vaporization at constant temperature, kinetic energy (related to temperature)
+stays constant. The added energy increases the potential energy of molecules as they move further
+apart, overcoming intermolecular forces. Internal energy increases due to increased PE."},
+{question: "A fixed mass of gas at constant temperature has its volume halved. What happens to the
+pressure?", options: ["A) Pressure halves", "B) Pressure doubles", "C) Pressure remains the same",
+"D) Pressure quadruples"], correct: 1, explanation: "Boyle's law: at constant temperature, P₁V₁ =
+P₂V₂. If V is halved, P doubles. P₂ = P₁V₁/(V₁/2) = 2P₁. This is because molecules collide more
+frequently with the walls of the smaller container."} ];
+
+<PracticeProblem questions={practiceQuestions} />

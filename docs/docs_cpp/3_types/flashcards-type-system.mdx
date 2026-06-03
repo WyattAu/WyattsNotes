@@ -1,11 +1,14 @@
 ---
-title: "C++ Flashcards: Type System"
+title: 'C++ Flashcards: Type System'
 slug: flashcards-type-system
-description: "Interactive flashcards on C++ types, casts, value categories, references, const, constexpr, enum class, type traits, and strict aliasing rules."
+description:
+  'Interactive flashcards on C++ types, casts, value categories, references, const, constexpr, enum
+  class, type traits, and strict aliasing rules.'
 tags:
   - C++
   - Flashcards
 ---
+
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ## C++ -- Type System Flashcards
@@ -14,30 +17,106 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
+const flashcardData = [ { id: "cpp-type-system-001", front: "What is the difference between `int`
+and `std::size_t`?", back: "`int` is a signed integer type of implementation-defined size (typically
+32 bits). `std::size_t` is an unsigned type defined in `<cstddef>` guaranteed to hold the size of
+any object. Use `std::size_t` for sizes, counts, and indices into arrays/containers.", tags:
+["fundamental-types", "size-t"], difficulty: "easy" }, { id: "cpp-type-system-002", front: "What is
+`auto` in C++ and what does it do?", back: "`auto` (C++11) deduces the type of a variable from its
+initializer: `auto x = 42;` deduces `int`. Uses template argument deduction rules. Strips top-level
+`const` and references unless explicitly specified: `const auto& x = ...`. Reduces verbosity and
+improves maintainability.", tags: ["auto", "type-deduction"], difficulty: "easy" }, { id:
+"cpp-type-system-003", front: "What is the difference between `float` and `double`?", back: "`float`
+is single-precision (typically 32-bit, ~7 decimal digits). `double` is double-precision (typically
+64-bit, ~15 decimal digits). `double` is the default floating-point type in C++. Use `float` only
+when memory/bandwidth is constrained.", tags: ["fundamental-types", "floating-point"], difficulty:
+"easy" }, { id: "cpp-type-system-004", front: "What is `nullptr_t` and why was `nullptr`
+introduced?", back: "`nullptr` (C++11) is of type `std::nullptr_t`, a distinct null pointer constant
+that cannot be confused with integer zero. Unlike the `NULL` macro (often `0` or `0L`), `nullptr`
+resolves overload resolution unambiguously and is type-safe.", tags: ["nullptr", "c++11"],
+difficulty: "easy" }, { id: "cpp-type-system-005", front: "What does `enum class` (scoped enum)
+provide over a plain `enum`?", back: "`enum class` (C++11) introduces a scoped enum whose
+enumerators do not leak into the enclosing scope. It does not implicitly convert to `int`,
+preventing accidental comparisons. Requires explicit qualification: `Color::Red`. Can specify an
+underlying type: `enum class Color : uint8_t { Red, Green }`.", tags: ["enums", "enum-class",
+"c++11"], difficulty: "easy" }, { id: "cpp-type-system-006", front: "What is the difference between
+an lvalue and an rvalue?", back: "An **lvalue** has a name and persists beyond a single expression
+-- you can take its address (`&x`). An **rvalue** is a temporary value that does not persist beyond
+the expression -- you cannot take its address. `int x = 42;` -- `x` is an lvalue, `42` is an
+rvalue.", tags: ["value-categories"], difficulty: "medium" }, { id: "cpp-type-system-007", front:
+"What is `decltype` and how does it differ from `auto`?", back: "`decltype(entity)` deduces the
+declared type of an entity or expression without stripping references or const.
+`int x = 0; decltype(x)` is `int`. `decltype(x&)` is `int&`. Unlike `auto`, `decltype` preserves
+reference and const qualifiers and handles `decltype((x))` differently (reference type).", tags:
+["decltype", "type-deduction"], difficulty: "medium" }, { id: "cpp-type-system-008", front: "What
+are the five value categories in C++11 and beyond?", back: "**lvalue**: named, persists. **xvalue**:
+expiring value (result of `std::move`). **prvalue**: pure rvalue (literal, temporary). **glvalue**:
+lvalue or xvalue. **rvalue**: xvalue or prvalue. Mnemonic: glvalue + prvalue are the complete set;
+lvalue + xvalue = glvalue; xvalue + prvalue = rvalue.", tags: ["value-categories", "glvalue",
+"prvalue", "xvalue"], difficulty: "medium" }, { id: "cpp-type-system-009", front: "What is the
+difference between `static_cast`, `dynamic_cast`, `const_cast`, and `reinterpret_cast`?", back:
+"`static_cast`: compile-time checked, upcasts safe, downcasts unchecked. `dynamic_cast`:
+runtime-checked, for polymorphic downcasts (returns `nullptr` for pointers, throws for refs).
+`const_cast`: adds/removes `const`/`volatile`. `reinterpret_cast`: low-level bit reinterpretation,
+inherently unsafe.", tags: ["casts"], difficulty: "medium" }, { id: "cpp-type-system-010", front:
+"What is a forwarding reference (universal reference) and how is it declared?", back: "A forwarding
+reference is `T&&` where `T` is a deduced template parameter. It binds to both lvalues and rvalues:
+`template<typename T> void f(T&& x)`. Unlike `Widget&&` (an rvalue reference), `T&&` collapses to
+`T&` when passed an lvalue. Use with `std::forward`.", tags: ["references", "forwarding-reference",
+"templates"], difficulty: "medium" }, { id: "cpp-type-system-011", front: "What does `constexpr` do
+and how does it differ from `const`?", back: "`constexpr` (C++11) declares that a variable or
+function can be evaluated at compile time: `constexpr int sq(int x) { return x * x; }`. `const` only
+means read-only (runtime). `constexpr` enables compile-time computation, template parameters, and
+array sizing with computed values.", tags: ["constexpr", "const", "compile-time"], difficulty:
+"medium" }, { id: "cpp-type-system-012", front: "What is `const` and how does `const` correctness
+improve code?", back: "`const` declares a variable as read-only after initialization. `const`
+correctness means marking parameters, return values, and member functions as `const` wherever
+possible: `int f() const`. This prevents accidental mutation, enables compiler optimization, and
+communicates intent clearly.", tags: ["const", "qualifiers"], difficulty: "medium" }, { id:
+"cpp-type-system-013", front: "What is the difference between implicit and explicit type
+conversion?", back: "Implicit conversion happens automatically by the compiler (e.g., `int` to
+`double`, derived-to-base pointer). Explicit conversion requires a cast or constructor call. Mark
+converting constructors as `explicit` (C++11) to prevent unintended implicit conversions:
+`explicit Widget(int);`.", tags: ["conversions", "explicit"], difficulty: "medium" }, { id:
+"cpp-type-system-014", front: "What does `sizeof` return and when is it evaluated?", back:
+"`sizeof(expr)` or `sizeof(type)` returns `std::size_t` -- the number of bytes occupied by a type or
+expression (excluding padding sometimes, with `sizeof...(T)` for packs). It is a compile-time
+constant (never evaluates its operand for expressions) usable in templates and array sizing.", tags:
+["sizeof", "operators"], difficulty: "medium" }, { id: "cpp-type-system-015", front: "What is
+`volatile` and when should it be used?", back: "`volatile` tells the compiler that a variable may
+change outside the current thread's control (e.g., memory-mapped I/O, signal handlers). Prevents
+optimization of reads/writes. Rarely needed in standard C++; not a substitute for atomic operations
+in multithreaded code (`std::atomic` instead).", tags: ["volatile", "qualifiers"], difficulty:
+"medium" }, { id: "cpp-type-system-016", front: "What is strict aliasing and what are its
+consequences?", back: "The strict aliasing rule states that accessing an object through a
+pointer/reference of a different type (except `char*`/`unsigned char*`) is undefined behavior.
+`int x; float* fp = reinterpret_cast<float*>(&x); *fp = 1.0f;` is UB. Compilers rely on this for
+optimization. Use `memcpy` or `std::bit_cast` (C++20) instead.", tags: ["strict-aliasing", "ub",
+"optimization"], difficulty: "hard" }, { id: "cpp-type-system-017", front: "What is `consteval`
+(C++20) and how does it differ from `constexpr`?", back: "`consteval` (C++20, also called
+\"immediate function\") requires that the function is evaluated at compile time -- it **cannot** be
+called at runtime. `constexpr` allows both compile-time and runtime evaluation. Use `consteval` when
+compile-time-only evaluation is desired for safety.", tags: ["consteval", "c++20", "constexpr"],
+difficulty: "hard" }, { id: "cpp-type-system-018", front: "What is `constinit` (C++20) and what
+problem does it solve?", back: "`constinit` (C++20) guarantees that a variable with static storage
+duration is initialized at compile time (zero-initialization or constant initialization), preventing
+the static initialization order fiasco. Unlike `const`, the variable is not `const` -- it can be
+modified at runtime after initialization.", tags: ["constinit", "c++20", "static-initialization"],
+difficulty: "hard" }, { id: "cpp-type-system-019", front: "What is `alignof` and why does alignment
+matter?", back: "`alignof(T)` returns the alignment requirement of type `T` in bytes. Proper
+alignment is required for correct hardware access and performance (e.g., SSE/AVX requires 16/32-byte
+alignment). Misaligned access on some architectures causes hardware faults. Use `alignas(N)` to
+specify custom alignment.", tags: ["alignof", "alignas", "memory-layout"], difficulty: "hard" }, {
+id: "cpp-type-system-020", front: "What is the difference between reference collapsing rules for
+`T&&`?", back: "Reference collapsing occurs during template argument deduction and typedef
+formation. Rules: `T& &` becomes `T&`, `T& &&` becomes `T&`, `T&& &` becomes `T&`, `T&& &&` becomes
+`T&&`. Only an rvalue reference to an rvalue reference collapses to an rvalue reference. This is why
+`std::forward` works.", tags: ["references", "reference-collapsing", "templates"], difficulty:
+"hard" }, ];
+
 <FlashcardDeck
   deckId="cpp-type-system"
   title="C++ Type System Flashcards"
   description="Interactive flashcards on C++ types, casts, value categories, references, const, constexpr, enum class, type traits, and strict aliasing rules."
-  cards={[
-    { id: "cpp-type-system-001", front: "What is the difference between `int` and `std::size_t`?", back: "`int` is a signed integer type of implementation-defined size (typically 32 bits). `std::size_t` is an unsigned type defined in `<cstddef>` guaranteed to hold the size of any object. Use `std::size_t` for sizes, counts, and indices into arrays/containers.", tags: ["fundamental-types", "size-t"], difficulty: "easy" },
-    { id: "cpp-type-system-002", front: "What is `auto` in C++ and what does it do?", back: "`auto` (C++11) deduces the type of a variable from its initializer: `auto x = 42;` deduces `int`. Uses template argument deduction rules. Strips top-level `const` and references unless explicitly specified: `const auto& x = ...`. Reduces verbosity and improves maintainability.", tags: ["auto", "type-deduction"], difficulty: "easy" },
-    { id: "cpp-type-system-003", front: "What is the difference between `float` and `double`?", back: "`float` is single-precision (typically 32-bit, ~7 decimal digits). `double` is double-precision (typically 64-bit, ~15 decimal digits). `double` is the default floating-point type in C++. Use `float` only when memory/bandwidth is constrained.", tags: ["fundamental-types", "floating-point"], difficulty: "easy" },
-    { id: "cpp-type-system-004", front: "What is `nullptr_t` and why was `nullptr` introduced?", back: "`nullptr` (C++11) is of type `std::nullptr_t`, a distinct null pointer constant that cannot be confused with integer zero. Unlike the `NULL` macro (often `0` or `0L`), `nullptr` resolves overload resolution unambiguously and is type-safe.", tags: ["nullptr", "c++11"], difficulty: "easy" },
-    { id: "cpp-type-system-005", front: "What does `enum class` (scoped enum) provide over a plain `enum`?", back: "`enum class` (C++11) introduces a scoped enum whose enumerators do not leak into the enclosing scope. It does not implicitly convert to `int`, preventing accidental comparisons. Requires explicit qualification: `Color::Red`. Can specify an underlying type: `enum class Color : uint8_t { Red, Green }`.", tags: ["enums", "enum-class", "c++11"], difficulty: "easy" },
-    { id: "cpp-type-system-006", front: "What is the difference between an lvalue and an rvalue?", back: "An **lvalue** has a name and persists beyond a single expression -- you can take its address (`&x`). An **rvalue** is a temporary value that does not persist beyond the expression -- you cannot take its address. `int x = 42;` -- `x` is an lvalue, `42` is an rvalue.", tags: ["value-categories"], difficulty: "medium" },
-    { id: "cpp-type-system-007", front: "What is `decltype` and how does it differ from `auto`?", back: "`decltype(entity)` deduces the declared type of an entity or expression without stripping references or const. `int x = 0; decltype(x)` is `int`. `decltype(x&)` is `int&`. Unlike `auto`, `decltype` preserves reference and const qualifiers and handles `decltype((x))` differently (reference type).", tags: ["decltype", "type-deduction"], difficulty: "medium" },
-    { id: "cpp-type-system-008", front: "What are the five value categories in C++11 and beyond?", back: "**lvalue**: named, persists. **xvalue**: expiring value (result of `std::move`). **prvalue**: pure rvalue (literal, temporary). **glvalue**: lvalue or xvalue. **rvalue**: xvalue or prvalue. Mnemonic: glvalue + prvalue are the complete set; lvalue + xvalue = glvalue; xvalue + prvalue = rvalue.", tags: ["value-categories", "glvalue", "prvalue", "xvalue"], difficulty: "medium" },
-    { id: "cpp-type-system-009", front: "What is the difference between `static_cast`, `dynamic_cast`, `const_cast`, and `reinterpret_cast`?", back: "`static_cast`: compile-time checked, upcasts safe, downcasts unchecked. `dynamic_cast`: runtime-checked, for polymorphic downcasts (returns `nullptr` for pointers, throws for refs). `const_cast`: adds/removes `const`/`volatile`. `reinterpret_cast`: low-level bit reinterpretation, inherently unsafe.", tags: ["casts"], difficulty: "medium" },
-    { id: "cpp-type-system-010", front: "What is a forwarding reference (universal reference) and how is it declared?", back: "A forwarding reference is `T&&` where `T` is a deduced template parameter. It binds to both lvalues and rvalues: `template<typename T> void f(T&& x)`. Unlike `Widget&&` (an rvalue reference), `T&&` collapses to `T&` when passed an lvalue. Use with `std::forward`.", tags: ["references", "forwarding-reference", "templates"], difficulty: "medium" },
-    { id: "cpp-type-system-011", front: "What does `constexpr` do and how does it differ from `const`?", back: "`constexpr` (C++11) declares that a variable or function can be evaluated at compile time: `constexpr int sq(int x) { return x * x; }`. `const` only means read-only (runtime). `constexpr` enables compile-time computation, template parameters, and array sizing with computed values.", tags: ["constexpr", "const", "compile-time"], difficulty: "medium" },
-    { id: "cpp-type-system-012", front: "What is `const` and how does `const` correctness improve code?", back: "`const` declares a variable as read-only after initialization. `const` correctness means marking parameters, return values, and member functions as `const` wherever possible: `int f() const`. This prevents accidental mutation, enables compiler optimization, and communicates intent clearly.", tags: ["const", "qualifiers"], difficulty: "medium" },
-    { id: "cpp-type-system-013", front: "What is the difference between implicit and explicit type conversion?", back: "Implicit conversion happens automatically by the compiler (e.g., `int` to `double`, derived-to-base pointer). Explicit conversion requires a cast or constructor call. Mark converting constructors as `explicit` (C++11) to prevent unintended implicit conversions: `explicit Widget(int);`.", tags: ["conversions", "explicit"], difficulty: "medium" },
-    { id: "cpp-type-system-014", front: "What does `sizeof` return and when is it evaluated?", back: "`sizeof(expr)` or `sizeof(type)` returns `std::size_t` -- the number of bytes occupied by a type or expression (excluding padding sometimes, with `sizeof...(T)` for packs). It is a compile-time constant (never evaluates its operand for expressions) usable in templates and array sizing.", tags: ["sizeof", "operators"], difficulty: "medium" },
-    { id: "cpp-type-system-015", front: "What is `volatile` and when should it be used?", back: "`volatile` tells the compiler that a variable may change outside the current thread's control (e.g., memory-mapped I/O, signal handlers). Prevents optimization of reads/writes. Rarely needed in standard C++; not a substitute for atomic operations in multithreaded code (`std::atomic` instead).", tags: ["volatile", "qualifiers"], difficulty: "medium" },
-    { id: "cpp-type-system-016", front: "What is strict aliasing and what are its consequences?", back: "The strict aliasing rule states that accessing an object through a pointer/reference of a different type (except `char*`/`unsigned char*`) is undefined behavior. `int x; float* fp = reinterpret_cast<float*>(&x); *fp = 1.0f;` is UB. Compilers rely on this for optimization. Use `memcpy` or `std::bit_cast` (C++20) instead.", tags: ["strict-aliasing", "ub", "optimization"], difficulty: "hard" },
-    { id: "cpp-type-system-017", front: "What is `consteval` (C++20) and how does it differ from `constexpr`?", back: "`consteval` (C++20, also called \"immediate function\") requires that the function is evaluated at compile time -- it **cannot** be called at runtime. `constexpr` allows both compile-time and runtime evaluation. Use `consteval` when compile-time-only evaluation is desired for safety.", tags: ["consteval", "c++20", "constexpr"], difficulty: "hard" },
-    { id: "cpp-type-system-018", front: "What is `constinit` (C++20) and what problem does it solve?", back: "`constinit` (C++20) guarantees that a variable with static storage duration is initialized at compile time (zero-initialization or constant initialization), preventing the static initialization order fiasco. Unlike `const`, the variable is not `const` -- it can be modified at runtime after initialization.", tags: ["constinit", "c++20", "static-initialization"], difficulty: "hard" },
-    { id: "cpp-type-system-019", front: "What is `alignof` and why does alignment matter?", back: "`alignof(T)` returns the alignment requirement of type `T` in bytes. Proper alignment is required for correct hardware access and performance (e.g., SSE/AVX requires 16/32-byte alignment). Misaligned access on some architectures causes hardware faults. Use `alignas(N)` to specify custom alignment.", tags: ["alignof", "alignas", "memory-layout"], difficulty: "hard" },
-    { id: "cpp-type-system-020", front: "What is the difference between reference collapsing rules for `T&&`?", back: "Reference collapsing occurs during template argument deduction and typedef formation. Rules: `T& &` becomes `T&`, `T& &&` becomes `T&`, `T&& &` becomes `T&`, `T&& &&` becomes `T&&`. Only an rvalue reference to an rvalue reference collapses to an rvalue reference. This is why `std::forward` works.", tags: ["references", "reference-collapsing", "templates"], difficulty: "hard" },
-  ]}
+  cards={flashcardData}
 />
