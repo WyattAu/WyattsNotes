@@ -294,43 +294,12 @@ function diamondifySuperscriptSubscript(source) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Transformation 5: Diamondify standalone {text} patterns
+// NOTE: Transformation 5 (diamondifyStandaloneBraces) was REMOVED.
+// It was too aggressive — diamondified JSX children {children} and JS
+// object literals {key: value}. Standalone set notation {1,2,3} should use
+// \{...\} in source. JSX expressions are handled by the remark plugin
+// (src/plugins/escape-jsx-braces/index.js).
 // ─────────────────────────────────────────────────────────────────────────────
-//
-// MDX treats any {content} as a JSX expression. Set notation like {1,2,3},
-// LaTeX environment names like \begin{aligned}, and other brace pairs in
-// math context trigger acorn parsing errors.
-//
-// Skip JSX attribute context (preceded by =) and already-escaped braces.
-
-function diamondifyStandaloneBraces(source) {
-  const output = [];
-  let pos = 0;
-
-  while (pos < source.length) {
-    if (source[pos] === '{' && pos > 0 && source[pos - 1] !== '\\' && source[pos - 1] !== '=') {
-      let depth = 1;
-      let j = pos + 1;
-      while (j < source.length && depth > 0) {
-        if (source[j] === '{' && source[j - 1] !== '\\') depth++;
-        else if (source[j] === '}' && source[j - 1] !== '\\') depth--;
-        j++;
-      }
-      if (depth === 0) {
-        const inner = source.substring(pos + 1, j - 1);
-        if (inner.length > 0 && inner.length < 500 && /[,\s\w]/.test(inner)) {
-          output.push(LB + inner + RB);
-          pos = j;
-          continue;
-        }
-      }
-    }
-    output.push(source[pos]);
-    pos++;
-  }
-
-  return output.join('');
-}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Orchestrator
@@ -339,12 +308,11 @@ function diamondifyStandaloneBraces(source) {
 function processFile(filepath) {
   const content = fs.readFileSync(filepath, 'utf8');
 
-  // Apply transformations in order: collapse → autolinks → latex braces → superscripts → standalone braces
+  // Apply transformations in order: collapse → autolinks → latex braces → superscripts
   let processed = collapseConstArrays(content);
   processed = fixAutolinks(processed);
   processed = diamondifyLatexBraces(processed);
   processed = diamondifySuperscriptSubscript(processed);
-  processed = diamondifyStandaloneBraces(processed);
 
   if (processed !== content) {
     fs.writeFileSync(filepath, processed);
