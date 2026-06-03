@@ -226,9 +226,10 @@ function readBraceGroup(source, pos) {
   let depth = 0;
   const start = pos;
   while (pos < source.length) {
-    if (source[pos] === '\n') break; // Safety: don't cross line boundaries
-    if (source[pos] === '{') depth++;
-    else if (source[pos] === '}') {
+    const ch = source[pos];
+    if (ch === '\n') break; // Safety: don't cross line boundaries
+    if (ch === '{') depth++;
+    else if (ch === '}') {
       depth--;
       if (depth === 0) {
         pos++;
@@ -268,6 +269,18 @@ function diamondifyLatexBraces(source) {
 
         // Process each brace group
         while (i < source.length && source[i] === '{') {
+          // Safety: check if the brace group has a matching } on the same line
+          const lineEnd = source.indexOf('\n', i);
+          const searchEnd = lineEnd === -1 ? source.length : lineEnd;
+          const restOfLine = source.substring(i, searchEnd);
+          const closeBrace = restOfLine.lastIndexOf('}');
+          if (closeBrace === -1) {
+            // No matching } on this line — skip to avoid corrupting content
+            parts.push(source[i]);
+            i++;
+            break;
+          }
+
           const [argContent, endPos] = readBraceGroup(source, i);
           parts.push(LB + diamondifyBraces(argContent) + RB);
           i = endPos;
