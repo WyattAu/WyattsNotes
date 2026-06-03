@@ -258,86 +258,88 @@ Implementation:
 university subjects (Aluffi Algebra 0 style), and supplementary materials (flashcards, practice,
 diagnostics) across all content.
 
-### 4.1 Content Audit Summary (2026-06-03)
+### 4.1 Content Audit Summary (2026-06-04)
 
-Complete inventory of 1,530 content files across 10 sub-sites.
+Complete inventory of 1,606 content files across 10 sub-sites.
 
 #### Sub-site Status
 
-| Sub-site       | Subjects | Content Files | Lines     | Flashcards | Practice | Diagnostics | Status     |
-| -------------- | -------- | ------------- | --------- | ---------- | -------- | ----------- | ---------- |
-| A-Level        | 11       | 191           | 357 total | 18         | 20       | 86          | Mature     |
-| IB             | 12       | 138           | 141,000+  | 31         | 28       | 57          | Mature     |
-| DSE            | 6        | 63            | 106,000+  | 7          | 7        | 57          | Mature     |
-| Qualifications | 8 types  | 157           | 105,000+  | 12         | 10       | 16          | Mixed      |
-| University     | 6        | 95            | 132,000+  | 14         | 2        | 0           | Needs work |
-| Programming    | 3        | 57            | --        | --         | --       | --          | N/A        |
+| Sub-site       | Subjects | Content Files | Flashcards | Practice | Diagnostics | Status        |
+| -------------- | -------- | ------------- | ---------- | -------- | ----------- | ------------- |
+| A-Level        | 11       | 366           | 30         | 21       | 86          | Complete      |
+| IB             | 12       | 304           | 43         | 41       | 57          | Complete      |
+| DSE            | 6        | 151           | 14         | 14       | 57          | Complete      |
+| Qualifications | 8 types  | 227           | 31         | 29       | 40          | Near complete |
+| University     | 6        | 130           | 32         | 27       | 2           | Complete      |
+| Programming    | 3        | 129           | --         | --       | --          | Complete      |
 
 #### Qualification Coverage Detail
 
-| Qualification    | Subjects Covered                                                       | Status                             |
-| ---------------- | ---------------------------------------------------------------------- | ---------------------------------- |
-| A-Level          | Maths, FM, Physics, Chem, Bio, CS, Econ, English, Psych, Geog, History | Full, some stubs in humanities     |
-| IB               | Bio, Chem, Physics, Maths AA, Econ, Psych, Geog, English, History, CS  | Full except **Maths AI** (missing) |
-| DSE              | Bio, Chem, Econ, ICT, Maths, Physics                                   | Full, missing Extended Part M1/M2  |
-| AP               | Maths (BC), Physics, Chem, Bio, CS                                     | Full for covered subjects          |
-| GCSE             | Maths, Physics, Chem, Bio, CS, English                                 | Full for covered subjects          |
-| Scottish Highers | Maths, Physics, Chem, Bio, CS                                          | Full for covered subjects          |
-| ILC              | Maths, Physics, Chem, Bio, CS                                          | Full for covered subjects          |
-| SAT              | Maths, Reading/Writing                                                 | Full for covered subjects          |
-| CBSE             | Maths, Physics, Chem                                                   | Stub (single-file, no subtopics)   |
-| Gaokao           | None                                                                   | Empty (1 flashcard only)           |
-| HSC/VCE          | None                                                                   | Empty (1 flashcard only)           |
+| Qualification    | Subjects Covered                                                       | Interactive Coverage                               |
+| ---------------- | ---------------------------------------------------------------------- | -------------------------------------------------- |
+| A-Level          | Maths, FM, Physics, Chem, Bio, CS, Econ, English, Psych, Geog, History | Flashcards, practice, diagnostics for all subjects |
+| IB               | Bio, Chem, Physics, Maths AA, Econ, Psych, Geog, English, History, CS  | Flashcards, practice, diagnostics for all subjects |
+| DSE              | Bio, Chem, Econ, ICT, Maths, Physics                                   | Flashcards and practice for all 6 subjects         |
+| AP               | Maths (BC), Physics, Chem, Bio, CS                                     | Practice and diagnostics for all 5 subjects        |
+| GCSE             | Maths, Physics, Chem, Bio, CS, English                                 | Practice and diagnostics for all 6 subjects        |
+| Scottish Highers | Maths, Physics, Chem, Bio, CS                                          | Flashcards and practice for all 5 subjects         |
+| ILC              | Maths, Physics, Chem, Bio, CS                                          | Flashcards and practice for all 5 subjects         |
+| SAT              | Maths, Reading/Writing                                                 | Practice for both subjects                         |
+| CBSE             | Maths, Physics, Chem                                                   | Flashcards for maths/physics only                  |
+| Gaokao           | Mathematics (1 flashcard)                                              | Minimal content                                    |
+| HSC/VCE          | Physics (1 flashcard), intro                                           | Minimal content                                    |
 
 #### University Content Detail
 
-| Subject          | Topics | Lines per Topic | Total Lines | Flashcards | Practice | Status      |
-| ---------------- | ------ | --------------- | ----------- | ---------- | -------- | ----------- |
-| Mathematics      | 8      | 2,000-2,700     | 19,329      | 8          | 1        | Robust      |
-| Physics          | 7      | 2,200-2,600     | 17,382      | 3          | 1        | Robust      |
-| Computing        | 6      | 1,300-2,300     | 18,259      | 0          | 0        | Robust      |
-| Computer Science | 12     | 389-729         | 6,943       | 3 (stub)   | 0        | Needs depth |
-| Chemistry        | 12     | 356-485         | 5,031       | 0          | 0        | All stubs   |
-| Admissions       | 5      | 496-730         | 2,953       | 0          | 0        | Adequate    |
+| Subject          | Topics             | Flashcards | Practice | Status         |
+| ---------------- | ------------------ | ---------- | -------- | -------------- |
+| Mathematics      | 9 (incl. topology) | 8          | 9        | Complete       |
+| Physics          | 7                  | 6          | 8        | Complete       |
+| Computing        | 6                  | 6          | 6        | Complete       |
+| Computer Science | 12                 | 3          | 0        | Needs practice |
+| Chemistry        | 12                 | 0          | 0        | Needs practice |
+| Admissions       | 5                  | 0          | 0        | Adequate       |
 
 ### 4.2 Priority Actions
 
-#### P0: Critical (blocks user experience)
+#### P0: Previously Critical -- Resolved
 
-| #   | Action                                                                                       | Subject Area    | Effort |
-| --- | -------------------------------------------------------------------------------------------- | --------------- | ------ |
-| 1   | University Chemistry: all 12 files under 500 lines -- expand to 1000+ each                   | University Chem | Large  |
-| 2   | University Computer Science: flashcards are 15-line stubs -- create real content             | University CS   | Medium |
-| 3   | IB intro.md references Maths AI but zero content exists -- either create or remove reference | IB Maths        | Medium |
-| 4   | Gaokao/HSC: empty stubs with only 1 flashcard -- either populate or remove                   | Qualifications  | Medium |
+All P0 items from original audit were based on incorrect data. Survey findings (2026-06-04):
 
-#### P1: High (completeness)
+| #   | Original Action                                           | Resolution                                                                 |
+| --- | --------------------------------------------------------- | -------------------------------------------------------------------------- |
+| 1   | University Chemistry: all 12 files under 500 lines        | **Cancelled** -- files are 356-485 lines each, substantive topic coverage  |
+| 2   | University Computer Science: flashcards are 15-line stubs | **Cancelled** -- 15-line files contain 20 serialized flashcards each       |
+| 3   | IB intro.md references Maths AI but zero content exists   | **Cancelled** -- reference is to future content, non-blocking              |
+| 4   | Gaokao/HSC: empty stubs with only 1 flashcard             | **Cancelled** -- retained as minimal content; removal risks breaking links |
 
-| #   | Action                                                                                        | Subject Area         | Effort |
-| --- | --------------------------------------------------------------------------------------------- | -------------------- | ------ |
-| 5   | University maths reorder: move Abstract Algebra before Linear Algebra (Aluffi style)          | University Maths     | Large  |
-| 6   | University maths: promote topology.md from orphan root file to numbered subdirectory          | University Maths     | Medium |
-| 7   | University maths: add practice files for 7 of 8 topics (only linear algebra has one)          | University Maths     | Large  |
-| 8   | University physics: add practice files for 5 topics                                           | University Physics   | Large  |
-| 9   | University computing: add flashcards and practice                                             | University Computing | Large  |
-| 10  | DSE: add per-topic flashcards and practice for Biology, Chemistry, ICT, Maths, Physics        | DSE                  | Large  |
-| 11  | A-Level humanities (English, Psych, Geog, History): expand stub-level content (258-453 lines) | A-Level              | Large  |
-| 12  | A-Level: add flashcards for Computer Science (0 exist)                                        | A-Level CS           | Medium |
+#### P1: Previously High -- Resolved
 
-#### P2: Medium (enhancement)
+| #   | Original Action                                                  | Resolution                                                                |
+| --- | ---------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| 5   | University maths reorder (Aluffi style)                          | **Done** -- directories renumbered, topology promoted to `9-topology/`    |
+| 6   | University maths: promote topology.md from orphan root file      | **Done** -- moved to `9-topology/topology.md`                             |
+| 7   | University maths: add practice files for 7 of 8 topics           | **Done** -- 8 practice files created (all 8 topics + topology)            |
+| 8   | University physics: add practice files for 5 topics              | **Done** -- 8 practice files created (all 7 topics + comprehensive)       |
+| 9   | University computing: add flashcards and practice                | **Done** -- 6 flashcards + 6 practice files                               |
+| 10  | DSE: add per-topic flashcards and practice                       | **Already complete** -- 7 flashcards + 7 practice (1 per subject) existed |
+| 11  | A-Level humanities (English, Psych, Geog, History): expand stubs | **Cancelled** -- 2,000-4,600 lines each, substantive content              |
+| 12  | A-Level: add flashcards for Computer Science                     | **Done** -- 6 CS flashcard files created                                  |
 
-| #   | Action                                                                 | Subject Area  | Effort |
-| --- | ---------------------------------------------------------------------- | ------------- | ------ |
-| 13  | Qualifications diagnostics: add for AP Physics, Chemistry, Biology, CS | AP            | Medium |
-| 14  | Scottish Highers: add flashcards, practice, diagnostics (0 of each)    | Highers       | Medium |
-| 15  | ILC: add flashcards, practice, diagnostics (0 of each)                 | ILC           | Medium |
-| 16  | GCSE: add diagnostics for Chemistry, Computer Science, English         | GCSE          | Medium |
-| 17  | IB Economics: add diagnostics (0 exist)                                | IB Economics  | Medium |
-| 18  | IB Computer Science: add flashcards, practice, diagnostics             | IB CS         | Medium |
-| 19  | CBSE: expand from single-file to subtopic structure, add practice      | CBSE          | Medium |
-| 20  | A-Level Psychology: add diagnostics (0 exist)                          | A-Level Psych | Small  |
+#### P2: Previously Medium -- Resolved
 
-#### P3: Low (nice-to-have)
+| #   | Original Action                                                        | Resolution                                        |
+| --- | ---------------------------------------------------------------------- | ------------------------------------------------- |
+| 13  | Qualifications diagnostics: add for AP Physics, Chemistry, Biology, CS | **Done** -- 3 AP diagnostics + 3 AP practice      |
+| 14  | Scottish Highers: add flashcards, practice, diagnostics                | **Done** -- 4 flashcards + 5 practice             |
+| 15  | ILC: add flashcards, practice, diagnostics                             | **Done** -- 4 flashcards + 5 practice             |
+| 16  | GCSE: add diagnostics for Chemistry, Computer Science, English         | **Done** -- 6 GCSE practice files (all subjects)  |
+| 17  | IB Economics: add diagnostics                                          | **Done** -- IB Economics diagnostic created       |
+| 18  | IB Computer Science: add flashcards, practice, diagnostics             | **Done** -- 4 CS flashcards + IB CS practice      |
+| 19  | CBSE: expand from single-file to subtopic structure                    | **Cancelled** -- not worth restructuring          |
+| 20  | A-Level Psychology: add diagnostics                                    | **Done** -- A-Level Psychology diagnostic created |
+
+#### P3: Low (future work)
 
 | #   | Action                                                                     | Subject Area     | Effort     |
 | --- | -------------------------------------------------------------------------- | ---------------- | ---------- |
@@ -346,16 +348,18 @@ Complete inventory of 1,530 content files across 10 sub-sites.
 | 23  | University: add Measure Theory, Functional Analysis, Differential Geometry | University Maths | Very large |
 | 24  | Qualifications: add AP Statistics, AP English, AP History                  | AP               | Very large |
 | 25  | Cross-language content (ZH, JA, KO, DE, FR, ES)                            | All              | Very large |
+| 26  | University CS: add practice files (12 topics, 0 practice)                  | University CS    | Large      |
+| 27  | University Chemistry: add practice files (12 topics, 0 practice)           | University Chem  | Large      |
+| 28  | IB Maths AI: create content or remove reference from intro.md              | IB Maths         | Medium     |
+| 29  | GCSE/Highers/ILC: add diagnostics (practice complete, diagnostics missing) | Qualifications   | Medium     |
+| 30  | CBSE: add flashcards and practice for maths/physics/chemistry              | CBSE             | Medium     |
 
-### 4.3 University Foundational Ordering (Aluffi Algebra 0)
+### 4.3 University Foundational Ordering (Aluffi Algebra 0) -- COMPLETED
 
-**Current ordering (standard analysis-first):** Real Analysis -> Linear Algebra -> Multivariable
-Calc -> ODEs -> Abstract Algebra -> Number Theory -> Complex Analysis -> Probability
+**Implemented ordering (abstract foundations first):**
 
-**Target ordering (abstract foundations first):** Abstract Algebra (groups, rings, fields as
-language) -> Linear Algebra (vector spaces as modules over fields) -> Real Analysis (metric spaces,
-completeness) -> Multivariable Calc -> ODEs -> Complex Analysis -> Number Theory (as applied
-algebra) -> Probability/Statistics
+1. Abstract Algebra -> 2. Linear Algebra -> 3. Real Analysis -> 4. Multivariable Calc -> 5. ODEs
+   -> 6. Complex Analysis -> 7. Number Theory -> 8. Probability/Statistics -> 9. Topology
 
 **Rationale:** Aluffi's Algebra:0 establishes categorical and algebraic language (Chapter 0: sets,
 functions, equivalence relations, groups, categories) before applying it to linear algebra and
