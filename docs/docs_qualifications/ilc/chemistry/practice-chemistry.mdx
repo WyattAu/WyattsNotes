@@ -1,0 +1,113 @@
+---
+title: 'Chemistry Practice (Interactive)'
+tags:
+  - ilc
+  - chemistry
+slug: ilc-chemistry/practice-chemistry
+description:
+  'Interactive ILC chemistry practice with auto-graded questions. Covers atomic structure, bonding,
+  stoichiometry, acids and bases, and organic chemistry.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## ILC -- Chemistry Practice
+
+10 auto-graded practice problems. Select an answer, submit, and review the explanation.
+
+---
+
+### Atomic Structure
+
+<PracticeProblem
+  question="What is the electron configuration of a potassium atom (atomic number 19)?"
+  options={['2,8,8,1', '2,8,1', '2,1,8,8', '2,8,9']}
+  correctAnswer={0}
+  explanation="Potassium has 19 electrons. These fill shells in order: first shell holds 2 electrons, second shell holds 8, third shell holds 8, and the fourth shell holds the remaining 1 electron. The configuration is 2,8,8,1. This places potassium in Group 1 (one outer electron) and Period 4 (four occupied shells). The alternative notation using subshells is [Ar] 4s1."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The first ionisation energies of elements across Period 3 generally increase, but there is a notable decrease between magnesium (Mg) and aluminium (Al). What is the reason for this decrease?"
+  options={['Aluminium's outermost electron is in a 3p subshell, which is higher in energy and more easily removed than the 3s electron of magnesium', 'Aluminium has a smaller nuclear charge than magnesium', 'Magnesium has a completely filled 3p subshell that is more stable', 'The atomic radius of aluminium is significantly larger than magnesium']}
+  correctAnswer={0}
+  explanation="Magnesium has the electron configuration [Ne] 3s2, so its first ionisation energy removes a 3s electron from a paired configuration. Aluminium has the configuration [Ne] 3s2 3p1, and its first ionisation energy removes the single 3p electron. The 3p subshell is slightly higher in energy and further from the nucleus on average than 3s, so the electron is less tightly held and easier to remove, causing the drop in first ionisation energy."
+  difficulty="hard"
+/>
+
+### Bonding
+
+<PracticeProblem
+  question="Which type of bonding involves the sharing of electron pairs between atoms, and can be either polar or non-polar depending on the electronegativity difference?"
+  options={['Covalent bonding', 'Ionic bonding', 'Metallic bonding', 'Van der Waals forces']}
+  correctAnswer={0}
+  explanation="Covalent bonding involves the sharing of electron pairs between non-metal atoms. If the two atoms have equal or similar electronegativity (e.g., H-H, Cl-Cl), the bond is non-polar with equal electron sharing. If there is a significant electronegativity difference (e.g., H-Cl), the bond is polar with unequal sharing, creating partial charges. Ionic bonding involves electron transfer, metallic bonding involves a delocalised sea of electrons, and Van der Waals forces are weak intermolecular attractions."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the molecular shape of a molecule of methane (CH4), according to VSEPR theory?"
+  options={['Tetrahedral', 'Trigonal planar', 'Linear', 'Bent (angular)']}
+  correctAnswer={0}
+  explanation="Methane (CH4) has four bonding pairs of electrons around the central carbon atom with no lone pairs. According to VSEPR theory, four electron domains repel each other to maximise separation, adopting a tetrahedral arrangement with bond angles of approximately 109.5 degrees. Trigonal planar occurs with three bonding pairs (e.g., BF3, 120 degrees). Linear occurs with two bonding pairs (e.g., CO2, 180 degrees). Bent occurs with two bonding pairs and one or two lone pairs (e.g., H2O)."
+  difficulty="medium"
+/>
+
+### Stoichiometry
+
+<PracticeProblem
+  question="What volume of gas is produced at room temperature and pressure (RTP) when 0.5 mol of magnesium reacts completely with excess hydrochloric acid? The equation is: Mg + 2HCl -> MgCl2 + H2 (molar volume at RTP = 24 dm3/mol)."
+  options={['12 dm3', '6 dm3', '24 dm3', '48 dm3']}
+  correctAnswer={0}
+  explanation="From the balanced equation, 1 mol of Mg produces 1 mol of H2 gas. If 0.5 mol of Mg reacts completely, it produces 0.5 mol of H2. Using the molar volume at RTP (24 dm3 per mol): volume = 0.5 mol x 24 dm3/mol = 12 dm3. The key steps are: check the molar ratio from the balanced equation (1:1), multiply moles of Mg by the ratio to get moles of H2, then use the molar volume to convert to volume."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A solution of sodium hydroxide has a concentration of 0.2 mol/dm3. What volume of this solution is required to prepare 250 cm3 of a 0.05 mol/dm3 solution by dilution?"
+  options={['62.5 cm3', '50 cm3', '100 cm3', '125 cm3']}
+  correctAnswer={0}
+  explanation="Using the dilution formula c1V1 = c2V2: 0.2 x V1 = 0.05 x 250. Solving: V1 = (0.05 x 250) / 0.2 = 12.5 / 0.2 = 62.5 cm3. You need to measure 62.5 cm3 of the concentrated NaOH solution and dilute it with water to a total volume of 250 cm3. The remaining 187.5 cm3 of water is added to reach the final volume. This formula works because the number of moles of solute remains constant during dilution."
+  difficulty="hard"
+/>
+
+### Acids and Bases
+
+<PracticeProblem
+  question="What is the pH of a solution with a hydrogen ion concentration of 0.001 mol/dm3?"
+  options={['3', '1', '11', '4']}
+  correctAnswer={0}
+  explanation="pH is calculated using the formula pH = -log10[H+], where [H+] is the hydrogen ion concentration in mol/dm3. For [H+] = 0.001 = 1 x 10^-3 mol/dm3: pH = -log10(10^-3) = 3. Since pH 3 is below 7, the solution is acidic. Each unit change in pH represents a tenfold change in hydrogen ion concentration. A pH of 1 would mean [H+] = 0.1 mol/dm3, which is 100 times more concentrated."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In a titration, 25.0 cm3 of 0.1 mol/dm3 sodium hydroxide is neutralised by sulfuric acid of unknown concentration. If 12.5 cm3 of the acid is required, what is the concentration of the sulfuric acid? The balanced equation is: 2NaOH + H2SO4 -> Na2SO4 + 2H2O."
+  options={['0.1 mol/dm3', '0.2 mol/dm3', '0.05 mol/dm3', '0.25 mol/dm3']}
+  correctAnswer={0}
+  explanation="First calculate moles of NaOH: n = c x V = 0.1 x (25/1000) = 0.0025 mol. From the balanced equation, the molar ratio is 2NaOH : 1H2SO4, so moles of H2SO4 = 0.0025 / 2 = 0.00125 mol. Concentration of H2SO4 = n / V = 0.00125 / (12.5/1000) = 0.00125 / 0.0125 = 0.1 mol/dm3. Remember to convert volumes from cm3 to dm3 by dividing by 1000, and always use the balanced equation to find the molar ratio."
+  difficulty="hard"
+/>
+
+### Organic Chemistry
+
+<PracticeProblem
+  question="Which homologous series has the general formula CnH2n and contains a carbon-carbon double bond?"
+  options={['Alkenes', 'Alkanes', 'Alcohols', 'Carboxylic acids']}
+  correctAnswer={0}
+  explanation="Alkenes have the general formula CnH2n and contain at least one C=C double bond, making them unsaturated hydrocarbons. Alkanes have the general formula CnH2n+2 with only single bonds (saturated). Alcohols have the general formula CnH2n+1OH. Carboxylic acids have the general formula CnH2n+1COOH. The double bond in alkenes makes them more reactive than alkanes, allowing addition reactions such as hydrogenation and hydration."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which type of isomerism describes molecules that have the same molecular formula but different structural arrangements of atoms?"
+  options={[
+    'Structural isomerism (chain, positional, or functional group)',
+    'Stereoisomerism (geometric or optical)',
+    'Isotopes',
+    'Allotropes',
+  ]}
+  correctAnswer={0}
+  explanation="Structural isomerism occurs when compounds share the same molecular formula but differ in how their atoms are bonded (the structural arrangement). The three types are: chain isomers (different carbon skeleton arrangements, e.g., butane vs isobutane), positional isomers (same functional group but different positions, e.g., propan-1-ol vs propan-2-ol), and functional group isomers (different functional groups, e.g., ethanol vs methoxymethane). Stereoisomerism involves the same bonds but different spatial arrangements. Isotopes are atoms of the same element with different neutron numbers."
+  difficulty="medium"
+/>

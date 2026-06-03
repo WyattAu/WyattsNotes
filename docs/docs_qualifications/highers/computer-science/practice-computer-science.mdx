@@ -1,0 +1,158 @@
+---
+title: Computer Science Practice (Interactive)
+tags:
+  - scottish-highers
+  - computer-science
+slug: highers-computer-science/practice-computer-science
+description:
+  'Interactive Scottish Highers computer science practice with auto-graded questions. Covers
+  hardware, software, databases, algorithms, and networks.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## Scottish Highers -- Computer Science Practice
+
+10 auto-graded practice problems. Select an answer, submit, and review the explanation.
+
+---
+
+### Hardware: CPU, Registers, and Fetch-Decode-Execute
+
+<PracticeProblem
+  question="During the fetch-decode-execute cycle, which register holds the address of the next instruction to be fetched from memory?"
+  options={[
+    'The Program Counter (PC), also known as the Instruction Pointer, holds the memory address of the next instruction to be fetched.',
+    'The Memory Address Register (MAR) holds the address of the next instruction to be fetched.',
+    'The Accumulator (ACC) holds the address of the next instruction to be fetched.',
+    'The Instruction Register (IR) holds the address of the next instruction to be fetched.',
+  ]}
+  correctAnswer={0}
+  explanation="The Program Counter (PC) is a special-purpose register that always contains the memory address of the next instruction to be fetched. When the fetch stage begins, the contents of the PC are copied to the Memory Address Register (MAR), which then communicates with memory to retrieve the instruction. Once fetched, the instruction is placed in the Instruction Register (IR) for decoding. The PC is then incremented (or updated for branch instructions) to point to the following instruction. The MAR temporarily holds the address being accessed, the IR holds the current instruction, and the Accumulator holds intermediate arithmetic results. The PC is fundamental to sequential program execution."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A processor has a clock speed of 3.2 GHz. How many clock cycles occur in one second, and what is the time taken for one clock cycle?"
+  options={[
+    '3.2 billion cycles per second; one cycle takes approximately 0.3125 nanoseconds.',
+    '3.2 million cycles per second; one cycle takes approximately 312.5 nanoseconds.',
+    '3.2 thousand cycles per second; one cycle takes approximately 0.3125 microseconds.',
+    '3.2 billion cycles per second; one cycle takes approximately 3.125 nanoseconds.',
+  ]}
+  correctAnswer={0}
+  explanation="A clock speed of 3.2 GHz means 3.2 gigahertz, which is 3.2 billion cycles per second (since 1 GHz = 1,000,000,000 Hz = 10^9 Hz). The time for one clock cycle is the reciprocal of the clock frequency: T = 1/f = 1 / (3.2 x 10^9) = 3.125 x 10^-10 seconds = 0.3125 nanoseconds. The clock speed determines how many basic operations the CPU can perform per second, though the actual number of instructions completed per cycle depends on the processor architecture (pipelining, superscalar execution). A higher clock speed generally means faster processing but also generates more heat."
+  difficulty="medium"
+/>
+
+### Software: Operating Systems and Utilities
+
+<PracticeProblem
+  question="Which function of an operating system manages the allocation of CPU time to different processes and ensures that each process receives a fair share of processing time?"
+  options={[
+    'Process scheduling, which uses algorithms such as round-robin or priority-based scheduling to allocate CPU time slices to processes in the ready queue.',
+    'Memory management, which assigns RAM addresses to running programs and handles virtual memory allocation.',
+    'File management, which organises data on storage devices into directories and manages read/write access.',
+    'Device management, which controls communication between the CPU and peripheral devices through device drivers.',
+  ]}
+  correctAnswer={0}
+  explanation="Process scheduling is the operating system function responsible for deciding which process gets CPU time and for how long. The scheduler maintains a ready queue of processes waiting to execute and uses scheduling algorithms to allocate CPU time. In round-robin scheduling, each process is given a fixed time slice (quantum) in turn; if the process does not finish within its quantum, it is returned to the back of the queue. Priority-based scheduling assigns priorities to processes and the CPU is given to the highest-priority ready process. Memory management handles RAM allocation, file management handles storage organisation, and device management handles peripheral communication -- these are separate OS functions."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the primary difference between system software and application software, and which of the following correctly classifies a disk defragmenter?"
+  options={[
+    'System software manages hardware and provides a platform for other software; application software performs tasks for the user. A disk defragmenter is a system utility, which is a type of system software.',
+    'System software performs user-facing tasks; application software manages hardware. A disk defragmenter is application software.',
+    'System software is written in high-level languages; application software is written in machine code. A disk defragmenter is application software.',
+    'System software can only run on one type of computer; application software is portable across all platforms. A disk defragmenter is neither system nor application software.',
+  ]}
+  correctAnswer={0}
+  explanation="System software manages and controls the hardware components of a computer and provides a platform upon which application software can run. Examples include operating systems, compilers, interpreters, and system utilities. Application software is designed to perform specific tasks for end users, such as word processors, web browsers, and games. A disk defragmenter is a system utility -- it reorganises fragmented data on a hard disk to improve read/write performance. System utilities are a subset of system software, so the disk defragmenter is classified as system software. Understanding this distinction is important for organising software categories in the Scottish Highers curriculum."
+  difficulty="easy"
+/>
+
+### Databases: Relational Model, SQL, and Normalisation
+
+<PracticeProblem
+  question="Given a table of students with columns (studentID, firstName, lastName, subject, teacherName, teacherEmail), which normal form does this table violate and what is the specific issue?"
+  options={[
+    'It violates Second Normal Form (2NF) because teacherName and teacherEmail depend on subject rather than on studentID, creating a partial dependency on a composite key or a transitive dependency.',
+    'It violates First Normal Form (1NF) because the table contains repeating groups of data across multiple rows.',
+    'It violates Third Normal Form (3NF) because studentID is not unique in the table and there are no primary key constraints.',
+    'It does not violate any normal form; the table is fully normalised and all attributes are fully dependent on the primary key.',
+  ]}
+  correctAnswer={0}
+  explanation="This table demonstrates a transitive dependency, which violates Third Normal Form (3NF). The 3NF rule states that no non-key attribute should depend on another non-key attribute. In this table, studentID is the primary key. While firstName and lastName depend directly on studentID, the attributes teacherName and teacherEmail depend on the subject column, not directly on studentID. If multiple students study the same subject, the teacher information is repeated. To normalise, the table should be split: one table for students (studentID, firstName, lastName, subject) and another for subjects (subject, teacherName, teacherEmail) with subject as the primary key of the second table. This eliminates data redundancy and update anomalies."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Which SQL statement correctly returns the first names of all students who scored above 70 in Mathematics, sorted by score in descending order?"
+  options={[
+    "SELECT firstName FROM students WHERE subject = 'Mathematics' AND score > 70 ORDER BY score DESC;",
+    "SELECT firstName FROM students WHERE subject = 'Mathematics' OR score > 70 SORT BY score DESCENDING;",
+    "GET firstName FROM students HAVING subject = 'Mathematics' AND score > 70 ORDER score DESC;",
+    "SHOW firstName FROM students WHERE subject EQUALS 'Mathematics' AND score GREATER_THAN 70 ORDER BY score DESC;",
+  ]}
+  correctAnswer={0}
+  explanation="The correct SQL query uses SELECT to specify the column to retrieve (firstName), FROM to identify the table (students), WHERE to filter rows using two conditions joined by AND (subject equals 'Mathematics' AND score is greater than 70), and ORDER BY to sort the results by the score column in descending order (DESC). The other options contain incorrect SQL syntax: 'SORT BY' is not valid SQL (it should be ORDER BY), 'GET' is not a valid SQL command, 'HAVING' is used with GROUP BY not WHERE conditions, and 'SHOW', 'EQUALS', and 'GREATER_THAN' are not valid SQL keywords. SQL syntax must be precise and follow the standard structure of SELECT-FROM-WHERE-ORDER BY."
+  difficulty="medium"
+/>
+
+### Algorithms: Big O Notation, Searching, and Sorting
+
+<PracticeProblem
+  question="What is the time complexity of binary search on a sorted array of n elements, and what precondition must be met for binary search to work correctly?"
+  options={[
+    'Time complexity is O(log n), and the array must be sorted before binary search can be applied.',
+    'Time complexity is O(n), and the array must be sorted before binary search can be applied.',
+    'Time complexity is O(log n), and the array can be in any order for binary search to work.',
+    'Time complexity is O(n log n), and the array must be sorted before binary search can be applied.',
+  ]}
+  correctAnswer={0}
+  explanation="Binary search has a time complexity of O(log n) because it repeatedly divides the search space in half. Starting with the middle element, if the target is less than the middle element, the search continues in the left half; if greater, it continues in the right half. This halving process means that for an array of n elements, at most log2(n) comparisons are needed. The critical precondition is that the data must be sorted -- binary search will not produce correct results on unsorted data. For comparison, linear search has O(n) complexity because it may need to check every element. The logarithmic complexity of binary search makes it significantly more efficient for large sorted datasets."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which sorting algorithm has an average time complexity of O(n log n) but can degrade to O(n squared) in the worst case, and what causes this worst-case performance?"
+  options={[
+    'Quick sort; worst case occurs when the pivot selection consistently results in the most unbalanced partitions, such as when the array is already sorted and the first element is always chosen as pivot.',
+    'Merge sort; worst case occurs when the array contains duplicate elements that cannot be properly compared during the merge phase.',
+    'Bubble sort; worst case occurs when the array is sorted in reverse order, requiring multiple passes with no swaps.',
+    'Insertion sort; worst case occurs when the array is already sorted and the algorithm unnecessarily compares adjacent elements.',
+  ]}
+  correctAnswer={0}
+  explanation="Quick sort has an average-case time complexity of O(n log n) due to the divide-and-conquer approach of partitioning the array around a pivot. However, if the pivot selection consistently produces highly unbalanced partitions (e.g., always picking the smallest or largest element as the pivot), the depth of recursion becomes n and each level processes n elements, giving O(n squared) worst-case complexity. This commonly occurs when the array is already sorted (or reverse sorted) and the first or last element is used as the pivot. This can be mitigated by using a random pivot or median-of-three pivot selection. Merge sort always has O(n log n) regardless of input, while bubble sort and insertion sort are both O(n squared) in all cases except best case."
+  difficulty="hard"
+/>
+
+### Networks: TCP/IP, Security, and Protocols
+
+<PracticeProblem
+  question="In the TCP/IP model, which layer is responsible for routing data packets between different networks, and which protocol operates at this layer?"
+  options={[
+    'The Internet layer, where the IP (Internet Protocol) handles logical addressing and routing of packets between source and destination across multiple networks.',
+    'The Transport layer, where TCP handles routing of packets between different networks using port numbers.',
+    'The Network Access layer, where Ethernet handles logical addressing and inter-network routing using MAC addresses.',
+    'The Application layer, where HTTP handles routing of packets between networks using domain names.',
+  ]}
+  correctAnswer={0}
+  explanation="The TCP/IP model consists of four layers: Application, Transport, Internet, and Network Access. The Internet layer is responsible for logical addressing and routing of data packets across interconnected networks. The Internet Protocol (IP) operates at this layer, assigning IP addresses to devices and determining the best path (routing) for packets from source to destination. The Transport layer (TCP/UDP) handles end-to-end communication and uses port numbers. The Network Access layer (Ethernet, Wi-Fi) handles physical transmission and uses MAC addresses for local network delivery. The Application layer (HTTP, FTP, SMTP) provides network services to applications. IP is the fundamental protocol that enables inter-network communication."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which network security measure encrypts data transmitted between a client and a web server, and what protocol is commonly used to establish this secure connection?"
+  options={[
+    'SSL/TLS encryption is used, with HTTPS (HTTP Secure) being the protocol that uses TLS to encrypt data transmitted between client and server.',
+    'A firewall is used, with FTPS being the protocol that encrypts data by filtering packets at the network boundary.',
+    'MAC address filtering is used, with SSH being the protocol that encrypts web traffic using key pairs.',
+    'WPA2 encryption is used, with SMTP being the protocol that secures client-server communication through password authentication.',
+  ]}
+  correctAnswer={0}
+  explanation="SSL (Secure Sockets Layer) and its successor TLS (Transport Layer Security) are cryptographic protocols that encrypt data transmitted between a client (web browser) and a server. HTTPS (HTTP Secure) is the protocol that implements TLS encryption on top of HTTP. When a user connects to a website using HTTPS, the browser and server perform a TLS handshake to establish a secure encrypted connection, exchange certificates to verify the server's identity, and then transmit all data in encrypted form. This protects sensitive information (passwords, credit card numbers) from being intercepted during transmission. SSL is now considered insecure and has been deprecated in favour of TLS. A firewall filters traffic, MAC filtering restricts network access by device, and WPA2 secures wireless networks -- none of these encrypt transmitted web data."
+  difficulty="easy"
+/>

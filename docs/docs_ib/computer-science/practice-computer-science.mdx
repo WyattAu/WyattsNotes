@@ -1,0 +1,142 @@
+---
+title: IB Computer Science Practice (Interactive)
+tags:
+  - ib
+  - computer-science
+slug: ib/computer-science/practice-computer-science
+description:
+  'Interactive IB Computer Science practice with auto-graded questions. Covers system fundamentals,
+  computer organization, networks, algorithms, data structures, databases, and OOP.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## IB -- Computer Science Practice
+
+10 auto-graded practice problems. Select an answer, submit, and review the explanation.
+
+---
+
+### System Fundamentals
+
+<PracticeProblem
+  question="A school is implementing a new online grading system. Which of the following groups would be considered a stakeholder in this system?"
+  options={[
+    'Teachers, students, parents, and the school administration',
+    'Only the software developers who created the system',
+    'Only the students who will view their grades',
+    'The computers and servers that run the software',
+  ]}
+  correctAnswer={0}
+  explanation="Stakeholders are all individuals or groups who have an interest in or are affected by a system. In this case, teachers (who input grades), students (who view grades), parents (who monitor progress), and school administration (who manage the system and generate reports) are all stakeholders because the system directly impacts their workflows and needs. Software developers are involved in creating the system but are not the primary stakeholders of its operation. Hardware components are resources, not stakeholders."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which component of the IPO (Input-Process-Output) model describes the transformation of raw data into meaningful information?"
+  options={['Processing', 'Output', 'Input', 'Storage']}
+  correctAnswer={0}
+  explanation="In the IPO model, processing is the stage where raw data is transformed, calculated, sorted, or otherwise manipulated to produce meaningful information. Input involves collecting and entering data into the system. Output presents the processed information to the user in a usable format. Storage is not one of the three core IPO components, though it supports the process. Processing is what converts input data into useful output information, such as calculating a grade average from individual test scores."
+  difficulty="easy"
+/>
+
+---
+
+### Computer Organization
+
+<PracticeProblem
+  question="Which of the following Boolean expressions evaluates to true when the inputs are A = true, B = false, and C = true?"
+  options={['(A AND B) OR C', '(A AND B) AND C', 'A AND (B AND C)', 'NOT A AND NOT C']}
+  correctAnswer={0}
+  explanation="Evaluating each option: (A AND B) OR C = (true AND false) OR true = false OR true = true. (A AND B) AND C = (true AND false) AND true = false AND true = false. A AND (B AND C) = true AND (false AND true) = true AND false = false. NOT A AND NOT C = false AND false = false. Only the first expression evaluates to true. This demonstrates how AND requires both operands to be true, while OR requires only one."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which of the following statements correctly describes the difference between RAM and ROM?"
+  options={[
+    'RAM is volatile memory that loses its contents when power is turned off, while ROM is non-volatile memory that retains its contents permanently',
+    'RAM stores the BIOS, while ROM stores user data',
+    'RAM is read-only and ROM is read-write',
+    'RAM is slower than ROM in all computer architectures',
+  ]}
+  correctAnswer={0}
+  explanation="RAM (Random Access Memory) is volatile, meaning it requires constant power to maintain stored data. When the computer is turned off, all data in RAM is lost. ROM (Read-Only Memory) is non-volatile and retains its contents even without power, making it suitable for storing firmware like the BIOS that the computer needs at startup. RAM is used for actively running programs and data, while ROM stores permanent instructions. RAM is generally faster than ROM."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In the Von Neumann architecture, which component is responsible for fetching, decoding, and executing instructions?"
+  options={[
+    'CPU (Central Processing Unit)',
+    'RAM (Random Access Memory)',
+    'ALU (Arithmetic Logic Unit)',
+    'Bus',
+  ]}
+  correctAnswer={0}
+  explanation="The CPU (Central Processing Unit) is the component that fetches instructions from memory, decodes them to determine the operation, and executes them. The CPU contains the control unit (which coordinates fetching and decoding), the ALU (which performs arithmetic and logical operations), and registers (for temporary storage). While the ALU is a part of the CPU that handles calculations, the CPU as a whole is responsible for the complete fetch-decode-execute cycle. RAM provides the stored instructions and data, and the bus provides the data pathway."
+  difficulty="medium"
+/>
+
+---
+
+### Networks and Algorithms
+
+<PracticeProblem
+  question="In the TCP/IP model, which layer is responsible for routing data packets between networks?"
+  options={['Internet layer', 'Transport layer', 'Application layer', 'Network access layer']}
+  correctAnswer={0}
+  explanation="The Internet layer (also called the network layer) is responsible for logical addressing (IP addresses) and routing packets across interconnected networks. Protocols at this layer include IP, ICMP, and ARP. The transport layer (TCP, UDP) handles end-to-end communication and reliability. The application layer provides services directly to user applications. The network access layer handles physical transmission of frames. Routing decisions, including determining the best path for packets, occur at the Internet layer."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the time complexity of binary search on a sorted array of n elements?"
+  options={['O(log n)', 'O(n)', 'O(n log n)', 'O(1)']}
+  correctAnswer={0}
+  explanation="Binary search works by repeatedly dividing the sorted array in half. With each comparison, it eliminates half of the remaining elements. Starting with n elements, after k comparisons, n/2^k elements remain. The search terminates when n/2^k = 1, so k = log2(n). This gives O(log n) time complexity. For example, searching 1,000,000 elements requires at most about 20 comparisons. This is significantly more efficient than linear search's O(n) but requires the array to be pre-sorted."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A hash table uses a hash function to map keys to array indices. If two different keys produce the same hash value, this is called a collision. Which of the following is a common method for resolving collisions?"
+  options={[
+    'Chaining, where each array index holds a linked list of all key-value pairs that hash to that index',
+    'Increasing the size of the key until it produces a unique hash value',
+    'Storing only the first key and discarding subsequent keys that collide',
+    'Re-sorting the entire array after each insertion',
+  ]}
+  correctAnswer={0}
+  explanation="Chaining (also called open hashing) resolves collisions by storing a linked list (or other data structure) at each hash table index. When a collision occurs, the new key-value pair is simply appended to the list at that index. This allows multiple entries to share the same hash index. Other collision resolution methods include open addressing (linear probing, quadratic probing, double hashing) where the algorithm searches for the next available slot. Chaining is simple to implement and handles high load factors well."
+  difficulty="hard"
+/>
+
+---
+
+### Data Structures, Databases, and OOP
+
+<PracticeProblem
+  question="Which SQL command is used to retrieve all columns from a table named Students where the Grade column has a value greater than 85?"
+  options={[
+    'SELECT * FROM Students WHERE Grade > 85',
+    'GET * FROM Students WHERE Grade > 85',
+    'FETCH ALL FROM Students HAVING Grade > 85',
+    'RETRIEVE * FROM Students WITH Grade > 85',
+  ]}
+  correctAnswer={0}
+  explanation="The correct SQL syntax is SELECT * FROM Students WHERE Grade > 85. SELECT retrieves data, * selects all columns, FROM specifies the table, and WHERE filters rows based on a condition. GET, FETCH, and RETRIEVE are not valid SQL commands. HAVING is used with GROUP BY for filtering aggregated results, not for simple row-level filtering. SQL uses WHERE for row filtering and HAVING for group-level filtering."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In object-oriented programming, polymorphism allows objects of different classes to be treated as objects of a common superclass. Which of the following is the best example of polymorphism?"
+  options={[
+    'A method called draw() is defined in a Shape superclass, and Circle and Rectangle subclasses each override draw() with their own implementation',
+    'A class inherits all properties from its parent class without modification',
+    'A variable can only hold one type of data at a time',
+    'A class contains only private attributes with no public methods',
+  ]}
+  correctAnswer={0}
+  explanation="Polymorphism (meaning many forms) allows a single interface to represent different underlying implementations. When a Shape superclass defines a draw() method, and subclasses Circle and Rectangle each provide their own override of draw(), calling draw() on a Shape reference will execute the appropriate subclass implementation. This is called runtime polymorphism (method overriding). The key aspect is that the same method call produces different behavior depending on the actual object type. Simple inheritance without overriding does not demonstrate polymorphism."
+  difficulty="hard"
+/>

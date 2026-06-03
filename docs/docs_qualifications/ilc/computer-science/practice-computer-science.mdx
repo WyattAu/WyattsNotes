@@ -1,0 +1,120 @@
+---
+title: 'Computer Science Practice (Interactive)'
+tags:
+  - ilc
+  - computer-science
+slug: ilc-computer-science/practice-computer-science
+description:
+  'Interactive ILC computer science practice with auto-graded questions. Covers hardware,
+  programming, databases, networks, and algorithms.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## ILC -- Computer Science Practice
+
+10 auto-graded practice problems. Select an answer, submit, and review the explanation.
+
+---
+
+### Hardware
+
+<PracticeProblem
+  question="Which component of the CPU performs arithmetic operations (addition, subtraction, multiplication, division) and logical operations (AND, OR, NOT)?"
+  options={['Arithmetic Logic Unit (ALU)', 'Control Unit (CU)', 'Cache memory', 'Register']}
+  correctAnswer={0}
+  explanation="The Arithmetic Logic Unit (ALU) is the part of the CPU that carries out all arithmetic and logical calculations. The Control Unit (CU) coordinates and manages the fetch-decode-execute cycle, directing signals between components. Cache memory is fast memory that stores frequently accessed data close to the CPU to reduce access time. Registers are small, fast storage locations within the CPU that hold data being processed, such as the program counter and accumulator."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the purpose of virtual memory in a computer system?"
+  options={[
+    'To extend available RAM by using secondary storage (e.g., hard drive) as additional memory space',
+    'To speed up CPU processing by storing frequently used instructions in L1 cache',
+    'To protect the operating system from unauthorised user access',
+    'To convert binary data into hexadecimal for display purposes',
+  ]}
+  correctAnswer={0}
+  explanation="Virtual memory is a memory management technique that uses secondary storage (typically the hard drive) as an extension of RAM. When RAM is full, the operating system moves less frequently used data (pages) to a swap file or paging file on the hard drive, freeing RAM for active processes. If a program needs data that has been swapped out, it is paged back into RAM. This prevents out-of-memory errors and allows systems to run programs that require more memory than physically available RAM, though it is slower than actual RAM."
+  difficulty="medium"
+/>
+
+### Programming
+
+<PracticeProblem
+  question="What is the output of the following pseudocode after the loop completes?
+
+x = 1 FOR i = 1 TO 4 x = x \* i NEXT i OUTPUT x" options={['24', '10', '16', '4']} correctAnswer={0}
+explanation="The loop multiplies x by each value of i from 1 to 4. Initially x = 1. i=1: x = 1 x 1
+= 1. i=2: x = 1 x 2 = 2. i=3: x = 2 x 3 = 6. i=4: x = 6 x 4 = 24. This computes 4 factorial (4!).
+The result is 24, which is the product of all positive integers from 1 to 4." difficulty="easy" />
+
+<PracticeProblem
+  question="Which programming concept describes a function that calls itself to solve a problem by breaking it into smaller, identical sub-problems?"
+  options={['Recursion', 'Iteration', 'Encapsulation', 'Polymorphism']}
+  correctAnswer={0}
+  explanation="Recursion is when a function calls itself with a modified parameter to solve a smaller instance of the same problem. Every recursive function must have a base case (stopping condition) to prevent infinite recursion, and a recursive step that moves towards the base case. For example, a recursive factorial function computes n! by calling factorial(n-1). Iteration uses loops instead of self-calls. Encapsulation bundles data and methods within a class. Polymorphism allows objects of different classes to be treated through a common interface."
+  difficulty="medium"
+/>
+
+### Databases
+
+<PracticeProblem
+  question="In a relational database, which SQL command is used to retrieve specific columns from a table, filtering rows based on a condition?"
+  options={[
+    'SELECT with a WHERE clause',
+    'UPDATE with a SET clause',
+    'INSERT INTO with VALUES',
+    'DELETE with a WHERE clause',
+  ]}
+  correctAnswer={0}
+  explanation="The SELECT statement retrieves data from a database. The basic syntax is: SELECT column1, column2 FROM tablename WHERE condition. For example, SELECT name, age FROM students WHERE age > 16 retrieves the name and age columns for all students older than 16. UPDATE modifies existing records. INSERT adds new records. DELETE removes records. The WHERE clause is used with SELECT, UPDATE, and DELETE to filter rows based on specified conditions."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which normal form requires that every non-key attribute in a table must be fully functionally dependent on the entire primary key, not just part of it?"
+  options={[
+    'Second Normal Form (2NF)',
+    'First Normal Form (1NF)',
+    'Third Normal Form (3NF)',
+    'Boyce-Codd Normal Form (BCNF)',
+  ]}
+  correctAnswer={0}
+  explanation="Second Normal Form (2NF) applies to tables with composite primary keys (primary keys made of two or more columns). It requires that the table is already in 1NF (no repeating groups, atomic values) and that every non-key attribute depends on the entire primary key, not just a subset. Partial dependency occurs when a non-key attribute depends on only part of a composite key, which is resolved by splitting the table. 1NF requires atomic values. 3NF goes further by removing transitive dependencies where non-key attributes depend on other non-key attributes."
+  difficulty="hard"
+/>
+
+### Networks
+
+<PracticeProblem
+  question="Which network topology connects all devices to a single central device (hub, switch, or router), and is the most common topology for small-to-medium LANs?"
+  options={['Star topology', 'Ring topology', 'Bus topology', 'Mesh topology']}
+  correctAnswer={0}
+  explanation="In a star topology, every device is connected to a central hub, switch, or router via individual cables. If one cable fails, only that device is affected, making it reliable and easy to troubleshoot. The central device manages all communication. In a ring topology, devices form a circular loop. In a bus topology, all devices share a single backbone cable. In a mesh topology, every device connects to every other device, providing maximum redundancy but at high cost."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In symmetric encryption, which of the following statements is correct?"
+  options={[
+    'The same key is used for both encryption and decryption',
+    'Two different keys are used: a public key for encryption and a private key for decryption',
+    'No key is required; the algorithm alone secures the data',
+    'A hash function converts plaintext to ciphertext irreversibly',
+  ]}
+  correctAnswer={0}
+  explanation="Symmetric encryption uses a single shared secret key for both encryption and decryption. Both the sender and recipient must have access to the same key, which must be kept private. Examples include AES (Advanced Encryption Standard) and DES (Data Encryption Standard). Asymmetric encryption (such as RSA) uses a public key for encryption and a different private key for decryption. Hash functions are one-way functions that produce a fixed-length digest and are not reversible, so they do not encrypt data."
+  difficulty="medium"
+/>
+
+### Algorithms
+
+<PracticeProblem
+  question="A sorting algorithm has a worst-case time complexity of O(n^2). For an input of 1,000 elements, approximately how many operations might be performed in the worst case?"
+  options={['1,000,000', '10,000', '1,000', '500,000']}
+  correctAnswer={0}
+  explanation="With a time complexity of O(n^2), the number of operations scales with the square of the input size n. For n = 1,000: n^2 = 1,000^2 = 1,000,000 operations in the worst case. This is why O(n^2) algorithms (such as bubble sort, selection sort, and insertion sort) become impractical for large datasets. More efficient sorting algorithms like merge sort and quicksort have average-case complexity of O(n log n), which for n = 1,000 gives approximately 10,000 operations."
+  difficulty="medium"
+/>

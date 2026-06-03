@@ -1,0 +1,156 @@
+---
+title: Biology Practice (Interactive)
+tags:
+  - scottish-highers
+  - biology
+slug: highers-biology/practice-biology
+description:
+  'Interactive Scottish Highers biology practice with auto-graded questions. Covers cell biology,
+  metabolism, multicellular organisms, genetics, and evolution.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## Scottish Highers -- Biology Practice
+
+10 auto-graded practice problems. Select an answer, submit, and review the explanation.
+
+---
+
+### Cell Biology: Membranes and Transport
+
+<PracticeProblem
+  question="Which statement correctly describes the fluid mosaic model of cell membranes?"
+  options={[
+    'Phospholipids form a bilayer with proteins embedded within or attached to the surface, allowing lateral movement of components.',
+    'Proteins form a rigid lattice surrounding a static phospholipid core with no lateral movement permitted.',
+    'Cholesterol molecules form the primary structural layer, with phospholipids and proteins scattered on the exterior.',
+    'Carbohydrates form the bilayer matrix, with phospholipids and proteins floating freely inside the cytoplasm.',
+  ]}
+  correctAnswer={0}
+  explanation="The fluid mosaic model proposes that the phospholipid bilayer is fluid, meaning individual phospholipid molecules can move laterally within their own layer. Proteins are embedded within (intrinsic/integral) or attached to the surface (extrinsic/peripheral) of this bilayer. Cholesterol is present between phospholipids to maintain membrane fluidity at varying temperatures. This model was proposed by Singer and Nicolson in 1972 and is the accepted model for cell membrane structure at Scottish Highers level."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Sodium-potassium pumps actively transport sodium and potassium ions across the cell membrane. What is the correct ratio and direction of ion movement per cycle of the pump?"
+  options={[
+    '3 Na+ ions moved out of the cell and 2 K+ ions moved into the cell.',
+    '2 Na+ ions moved out of the cell and 3 K+ ions moved into the cell.',
+    '3 Na+ ions moved into the cell and 2 K+ ions moved out of the cell.',
+    '2 Na+ ions moved into the cell and 3 K+ ions moved out of the cell.',
+  ]}
+  correctAnswer={0}
+  explanation="The sodium-potassium pump uses ATP to transport 3 sodium ions (Na+) out of the cell and 2 potassium ions (K+) into the cell per cycle. This creates an electrochemical gradient: the inside of the cell becomes more negative relative to the outside (membrane potential). This gradient is essential for secondary active transport (co-transport), nerve impulse transmission, and maintaining osmotic balance. The pump is an example of primary active transport since it directly hydrolyses ATP."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A red blood cell is placed in a solution and observed to shrink. Which statement correctly describes the solution and the net movement of water?"
+  options={[
+    'The solution is hypertonic, and water moves out of the cell by osmosis into the surrounding solution.',
+    'The solution is hypotonic, and water moves into the cell by osmosis causing it to burst.',
+    'The solution is isotonic, and there is no net movement of water so the cell maintains its shape.',
+    'The solution is hypertonic, and water moves into the cell by active transport to restore turgor pressure.',
+  ]}
+  correctAnswer={0}
+  explanation="When a red blood cell shrinks (crenation), it has been placed in a hypertonic solution -- one with a higher solute concentration (lower water potential) than the cell's cytoplasm. Water moves from the higher water potential inside the cell to the lower water potential outside by osmosis through the partially permeable membrane. This net outflow causes the cell to shrink. In a hypotonic solution the cell would swell (and potentially burst as animal cells lack a cell wall), and in an isotonic solution there would be no net movement of water."
+  difficulty="easy"
+/>
+
+### Metabolism: ATP, Respiration, and Photosynthesis
+
+<PracticeProblem
+  question="During aerobic respiration, in which stage of cellular respiration is the majority of ATP produced, and what is the role of the electron transport chain in this process?"
+  options={[
+    'Oxidative phosphorylation; electrons from NADH and FADH2 pass along carriers in the inner mitochondrial membrane, releasing energy used to pump protons and drive ATP synthase.',
+    'Glycolysis; glucose is split into pyruvate in the cytoplasm, directly generating a large ATP yield without requiring oxygen.',
+    'The Krebs cycle; carbon dioxide is released and NADH is produced in the mitochondrial matrix, directly synthesising ATP via substrate-level phosphorylation.',
+    'The link reaction; pyruvate is converted to acetyl-CoA in the matrix, and the released energy is directly used to phosphorylate ADP.',
+  ]}
+  correctAnswer={0}
+  explanation="Oxidative phosphorylation produces approximately 34 out of the total 38 ATP molecules from one molecule of glucose. NADH and FADH2 donate electrons to the electron transport chain on the inner mitochondrial membrane (cristae). As electrons pass between carrier proteins, energy is released and used to pump protons (H+) from the matrix into the intermembrane space, creating a proton gradient (proton motive force). Protons flow back through ATP synthase, driving the synthesis of ATP from ADP and inorganic phosphate. Oxygen acts as the final electron acceptor, combining with protons and electrons to form water."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="In the light-dependent reactions of photosynthesis, what is the primary role of photosystem II and what product is released as a by-product?"
+  options={[
+    'Photosystem II absorbs light energy at 680 nm, exciting electrons that are passed to the electron transport chain; water is split (photolysis) releasing oxygen as a by-product.',
+    'Photosystem II absorbs light energy at 700 nm, exciting electrons that are used to fix carbon dioxide; oxygen is released from the Calvin cycle.',
+    'Photosystem II generates NADPH directly from water splitting; carbon dioxide is released as a by-product of photolysis.',
+    'Photosystem II absorbs light at 680 nm and donates electrons directly to NADP+; hydrogen ions are released as a by-product of the reaction.',
+  ]}
+  correctAnswer={0}
+  explanation="Photosystem II (PSII) contains chlorophyll a that absorbs light primarily at a wavelength of 680 nm (P680). The absorbed energy excites electrons, which are passed to the electron transport chain. To replace these lost electrons, water molecules are split in a process called photolysis: 2H2O becomes 4H+ + 4e- + O2. The oxygen released is a by-product. The electrons pass through the chain, generating a proton gradient that drives ATP synthesis via chemiosmosis. Photosystem I (PSI, P700) then re-energises the electrons for the production of NADPH."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="ATP is described as the universal energy currency of cells. Which structural feature of ATP makes it particularly suitable for this role?"
+  options={[
+    'The three phosphate groups contain high-energy bonds; hydrolysis of the terminal phosphate releases energy that can be directly used for cellular processes.',
+    'The adenine base stores large amounts of energy in its nitrogen-containing ring that is released during respiration.',
+    'The ribose sugar provides the primary energy source for cells through glycolysis when ATP is hydrolysed.',
+    'The molecule contains four phosphate groups arranged in a circular structure that releases energy when broken symmetrically.',
+  ]}
+  correctAnswer={0}
+  explanation="ATP (adenosine triphosphate) consists of adenine, ribose, and three phosphate groups. The bonds between the phosphate groups (phosphoanhydride bonds) are high-energy bonds. When the terminal phosphate is hydrolysed by ATPase enzymes, ATP becomes ADP (adenosine diphosphate) and inorganic phosphate (Pi), releasing energy that can directly drive cellular processes such as active transport, muscle contraction, protein synthesis, and nerve impulse transmission. ATP can be rapidly re-synthesised from ADP and Pi through phosphorylation during respiration or photosynthesis, making it an efficient and recyclable energy carrier."
+  difficulty="easy"
+/>
+
+### Multicellular Organisms: Cell Differentiation and Stem Cells
+
+<PracticeProblem
+  question="Which type of stem cell has the greatest differentiation potential, and where are these cells typically found in the human body?"
+  options={[
+    'Totipotent stem cells, found in the early embryo (morula stage) up to the blastocyst, capable of differentiating into any cell type including extra-embryonic tissues like the placenta.',
+    'Pluripotent stem cells, found in the blastocyst inner cell mass, capable of differentiating into any cell type but not extra-embryonic tissues.',
+    'Multipotent stem cells, found in adult bone marrow, capable of differentiating into a limited range of cell types within a specific tissue.',
+    'Unipotent stem cells, found in the epidermis, capable of differentiating into only one specific cell type.',
+  ]}
+  correctAnswer={0}
+  explanation="Totipotent stem cells have the widest differentiation potential. They can develop into any of the over 200 cell types in the human body as well as extra-embryonic tissues such as the placenta and umbilical cord. They exist only in the earliest stages of development (from the zygote to approximately the 4-8 cell morula stage). By the blastocyst stage, the inner cell mass contains pluripotent stem cells which can form all body cell types but not extra-embryonic tissues. Multipotent stem cells (e.g., in bone marrow) are more restricted, and unipotent stem cells can produce only one cell type. Totipotency gives the greatest range and is therefore the correct answer."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="During cell differentiation, what is the primary mechanism that causes different cell types to express different proteins despite containing the same genetic information?"
+  options={[
+    'Gene expression is regulated so that only certain genes are transcribed and translated in each cell type; not all genes are switched on in every cell.',
+    'Different cell types contain different DNA sequences in their nuclei, with each tissue having unique chromosomes.',
+    'Proteins are randomly assembled in each cell, and chance determines which cell type a cell will become during development.',
+    'All genes are transcribed in every cell type, but the ribosomes selectively translate only the mRNA molecules appropriate for that cell.',
+  ]}
+  correctAnswer={0}
+  explanation="Every somatic cell in a multicellular organism contains the same DNA (same genes), but different cell types express different subsets of these genes. This selective gene expression is controlled by transcription factors, regulatory DNA sequences (promoters, enhancers), epigenetic modifications (DNA methylation, histone acetylation), and cell signalling molecules. For example, a muscle cell expresses genes for actin and myosin while a pancreatic beta cell expresses the insulin gene. This regulation occurs primarily at the transcription stage -- determining which genes are transcribed into mRNA -- although post-transcriptional regulation also plays a role."
+  difficulty="hard"
+/>
+
+### Genetics: DNA Replication, Protein Synthesis, and Mutations
+
+<PracticeProblem
+  question="A mutation changes a DNA triplet code from CAG to TAG in a gene. What type of mutation is this, and what is its most likely effect on the resulting protein?"
+  options={[
+    'A substitution mutation (point mutation) that may cause a nonsense mutation, replacing a glutamine codon with a stop codon, resulting in a truncated and possibly non-functional protein.',
+    'An insertion mutation that shifts the reading frame, causing all downstream amino acids to change and producing a completely different protein sequence.',
+    'A deletion mutation that removes a single nucleotide, altering the reading frame and causing extensive changes to the protein structure.',
+    'A silent mutation that changes one nucleotide but still codes for the same amino acid due to the degeneracy of the genetic code.',
+  ]}
+  correctAnswer={0}
+  explanation="This is a substitution (point) mutation -- a single nucleotide base is replaced (C to T). The original codon CAG codes for glutamine. The mutated codon TAG is a stop codon, which signals the ribosome to terminate translation prematurely. This type of substitution that creates a premature stop codon is called a nonsense mutation. The resulting protein is likely to be truncated (shorter than normal) and may be non-functional or degraded by cellular quality control mechanisms. This contrasts with missense mutations (which change one amino acid to another), silent mutations (which do not change the amino acid), and frameshift mutations (caused by insertions or deletions that shift the reading frame)."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="During DNA replication, which enzyme is responsible for joining Okazaki fragments on the lagging strand, and in what direction is the lagging strand synthesised relative to the replication fork?"
+  options={[
+    'DNA ligase joins Okazaki fragments; the lagging strand is synthesised discontinuously in the 5-prime to 3-prime direction, away from the replication fork.',
+    'DNA polymerase joins Okazaki fragments; the lagging strand is synthesised continuously in the 3-prime to 5-prime direction, towards the replication fork.',
+    'Primase joins Okazaki fragments; the lagging strand is synthesised continuously in the 5-prime to 3-prime direction, towards the replication fork.',
+    'Helicase joins Okazaki fragments; the lagging strand is synthesised discontinuously in the 3-prime to 5-prime direction, away from the replication fork.',
+  ]}
+  correctAnswer={0}
+  explanation="DNA replication is semi-conservative and the two strands are synthesised differently. The leading strand is synthesised continuously in the 5-prime to 3-prime direction towards the replication fork by DNA polymerase III. The lagging strand is synthesised discontinuously in the 5-prime to 3-prime direction but away from the replication fork, producing short fragments called Okazaki fragments. These fragments are initially synthesised with RNA primers laid down by primase. DNA ligase then seals the gaps between adjacent Okazaki fragments by catalysing the formation of phosphodiester bonds, creating a continuous strand. DNA polymerase I removes the RNA primers and replaces them with DNA nucleotides before ligation occurs."
+  difficulty="medium"
+/>

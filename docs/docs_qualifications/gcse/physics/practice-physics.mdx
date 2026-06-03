@@ -1,0 +1,128 @@
+---
+title: Physics Practice (Interactive)
+tags:
+  - gcse
+  - physics
+slug: gcse-physics/practice-physics
+description:
+  'Interactive GCSE physics practice with auto-graded questions. Covers energy, electricity, forces,
+  waves, and magnetism.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## GCSE -- Physics Practice
+
+10 auto-graded practice problems. Select an answer, submit, and review the explanation.
+
+---
+
+### Energy
+
+<PracticeProblem
+  question="Which of the following describes the conservation of energy?"
+  options={[
+    'Energy cannot be created or destroyed, only transferred from one store to another',
+    'Energy is always increasing in a closed system',
+    'Energy can be destroyed during energy transfers',
+    'Energy is stored only as kinetic and gravitational potential energy',
+  ]}
+  correctAnswer={0}
+  explanation="The principle of conservation of energy states that the total energy in a closed system remains constant. Energy can be transferred between stores (kinetic, thermal, gravitational potential, elastic potential, chemical, nuclear, and others) but the total amount never changes. Some energy is usually dissipated (spread out) to the thermal store of the surroundings, making it less useful but not lost."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A car of mass 800 kg is travelling at 20 m/s. What is its kinetic energy?"
+  options={['160,000 J', '8,000 J', '32,000 J', '16,000 J']}
+  correctAnswer={0}
+  explanation="Kinetic energy = 0.5 x mass x velocity^2 = 0.5 x 800 x 20^2 = 0.5 x 800 x 400 = 160,000 J (or 160 kJ). The velocity is squared, which means doubling the speed quadruples the kinetic energy. This is an important concept for understanding vehicle safety and braking distances."
+  difficulty="medium"
+/>
+
+### Electricity
+
+<PracticeProblem
+  question="A circuit has a voltage of 12 V across a resistor and a current of 3 A flowing through it. What is the resistance of the resistor?"
+  options={['4 ohms', '36 ohms', '9 ohms', '15 ohms']}
+  correctAnswer={0}
+  explanation="Using Ohm's law: V = IR, rearranged as R = V/I. R = 12 / 3 = 4 ohms. Ohm's law states that the current through a conductor is directly proportional to the voltage across it, provided the temperature remains constant. This relationship is fundamental to circuit calculations and is represented graphically by a straight line through the origin on a V-I graph."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Two resistors of 6 ohms and 3 ohms are connected in series. What is the total resistance?"
+  options={['9 ohms', '2 ohms', '18 ohms', '4 ohms']}
+  correctAnswer={0}
+  explanation="In a series circuit, the total resistance is the sum of the individual resistances: R_total = R1 + R2 = 6 + 3 = 9 ohms. This is because the current has to pass through each resistor one after the other, so they add together. In a parallel circuit, the combined resistance would be less than the smallest individual resistance, which is a key difference."
+  difficulty="medium"
+/>
+
+### Forces
+
+<PracticeProblem
+  question="According to Newton's third law, when a person pushes against a wall, what is the reaction force?"
+  options={['The wall pushes back on the person with an equal and opposite force', 'Gravity pulls the person towards the ground', 'The wall exerts friction on the person's feet', 'The air resistance acts against the person's motion']}
+  correctAnswer={0}
+  explanation="Newton's third law states that for every action, there is an equal and opposite reaction. When a person pushes on a wall, the wall pushes back on the person with the same magnitude of force in the opposite direction. These two forces act on different objects (the person and the wall), are the same type of force, and are equal in size but opposite in direction."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A skydiver jumps from a plane. At what point do they reach terminal velocity?"
+  options={[
+    'When the upward air resistance equals the downward force of gravity, so the resultant force is zero',
+    'When they first exit the plane and begin accelerating',
+    'When air resistance reaches its maximum possible value',
+    'When the force of gravity becomes zero at a certain altitude',
+  ]}
+  correctAnswer={0}
+  explanation="Terminal velocity is reached when the drag force (air resistance) equals the weight (gravitational force) acting on the falling object. At this point, the resultant force is zero, so the object stops accelerating and falls at a constant speed. Before terminal velocity, weight exceeds drag so the object accelerates. The greater the surface area, the lower the terminal velocity."
+  difficulty="hard"
+/>
+
+### Waves
+
+<PracticeProblem
+  question="A wave has a frequency of 5 Hz and a wavelength of 2 m. What is its wave speed?"
+  options={['10 m/s', '2.5 m/s', '7 m/s', '3 m/s']}
+  correctAnswer={0}
+  explanation="The wave equation is: wave speed = frequency x wavelength (v = f x lambda). Substituting: v = 5 x 2 = 10 m/s. This equation applies to all types of waves, including sound waves, light waves, and water waves. If you know any two of the three quantities, you can calculate the third. Rearranging: f = v / lambda or lambda = v / f."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which type of electromagnetic radiation has the longest wavelength?"
+  options={['Radio waves', 'Microwaves', 'Infrared', 'Visible light']}
+  correctAnswer={0}
+  explanation="The electromagnetic spectrum is arranged by wavelength from longest to shortest: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays. Radio waves have the longest wavelength (up to several kilometres) and the lowest frequency. Gamma rays have the shortest wavelength and the highest frequency. All electromagnetic waves travel at the same speed in a vacuum (3 x 10^8 m/s)."
+  difficulty="medium"
+/>
+
+### Magnetism
+
+<PracticeProblem
+  question="How can you increase the strength of an electromagnet?"
+  options={[
+    'Increase the current flowing through the coil or increase the number of turns on the coil',
+    'Reverse the direction of the current in the coil',
+    'Use a plastic core instead of an iron core',
+    'Decrease the voltage across the coil',
+  ]}
+  correctAnswer={0}
+  explanation="The strength of an electromagnet can be increased by increasing the current through the coil, increasing the number of turns of wire on the coil, or using a core made of a magnetic material such as soft iron. An iron core concentrates the magnetic field lines, making the electromagnet much stronger. Reversing the current reverses the polarity but does not change the strength."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In a step-up transformer, which of the following is true?"
+  options={[
+    'The voltage in the secondary coil is greater than in the primary coil, and there are more turns on the secondary coil',
+    'The current in the secondary coil is greater than in the primary coil',
+    'The voltage in the secondary coil is lower than in the primary coil',
+    'The number of turns on the primary coil is greater than on the secondary coil',
+  ]}
+  correctAnswer={0}
+  explanation="A step-up transformer increases the voltage from primary to secondary coil. This is achieved by having more turns of wire on the secondary coil than on the primary coil. The relationship is: V_s / V_p = N_s / N_p. Although the voltage increases, the power (approximately) stays the same, so the current in the secondary coil decreases. Step-up transformers are used at power stations to increase voltage for efficient transmission through the National Grid."
+  difficulty="hard"
+/>
