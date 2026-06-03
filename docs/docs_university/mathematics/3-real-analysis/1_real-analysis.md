@@ -1,6 +1,8 @@
 ---
 title: Real Analysis
-description: 'University Mathematics Real Analysis notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'University Mathematics Real Analysis notes covering key definitions, core concepts, worked
+  examples, and practice questions for in-depth revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics
@@ -637,8 +639,8 @@ Classified as:
 - **Essential (or infinite/oscillatory):** At least one one-sided limit does not exist.
 
 **Proposition 4.3.** Polynomials are continuous on $\mathbb{R}$. Rational functions $p(x)/q(x)$ are
-Continuous wherever $q(x) \neq 0$. The functions $\sin x$, $\cos x$, $e^x$, $\ln x$ are continuous On
-their domains.
+Continuous wherever $q(x) \neq 0$. The functions $\sin x$, $\cos x$, $e^x$, $\ln x$ are continuous
+On their domains.
 
 **Theorem 4.1 (Algebra of Continuous Functions).** If $f$ and $g$ are continuous at $a$Then $f+g$
 $f-g$, $fg$And (where defined) $f/g$ are continuous at $a$.
@@ -686,10 +688,10 @@ That $c = \sup(S)$.
 
 Therefore $f(c) = y$. $\blacksquare$
 
-_Alternative .../1-number-and-algebra/3_proof-and-logic (bisection)._ Set $a_0 = a$, $b_0 = b$. Given
-$[a_n, b_n]$ with $f(a_n) \lt y \lt f(b_n)$ Let $m_n = (a_n + b_n)/2$. If $f(m_n) \geq y$Set
-$a_{n+1} = a_n$, $b_{n+1} = m_n$. If $f(m_n) \lt y$ Set $a_{n+1} = m_n$, $b_{n+1} = b_n$. Either way,
-$f(a_n) \lt y \leq f(b_n)$ and $b_n - a_n = (b-a)/2^n \to 0$. By the nested interval property,
+_Alternative .../1-number-and-algebra/3_proof-and-logic (bisection)._ Set $a_0 = a$, $b_0 = b$.
+Given $[a_n, b_n]$ with $f(a_n) \lt y \lt f(b_n)$ Let $m_n = (a_n + b_n)/2$. If $f(m_n) \geq y$Set
+$a_{n+1} = a_n$, $b_{n+1} = m_n$. If $f(m_n) \lt y$ Set $a_{n+1} = m_n$, $b_{n+1} = b_n$. Either
+way, $f(a_n) \lt y \leq f(b_n)$ and $b_n - a_n = (b-a)/2^n \to 0$. By the nested interval property,
 $a_n \to c$ and $b_n \to c$. By continuity, $f(c) = \lim f(a_n) \leq y$ And
 $f(c) = \lim f(b_n) \geq y$So $f(c) = y$. $\blacksquare$
 
@@ -832,8 +834,8 @@ $|x - a| \lt \delta$:
 
 $$|\sin x - \sin a| \leq |x - a| \lt \delta = \varepsilon$$
 
-Since $\delta = \varepsilon$ works independently of $a$, $\sin x$ is actually **uniformly continuous**
-On $\mathbb{R}$. The same argument works for $\cos x$. $\blacksquare$
+Since $\delta = \varepsilon$ works independently of $a$, $\sin x$ is actually **uniformly
+continuous** On $\mathbb{R}$. The same argument works for $\cos x$. $\blacksquare$
 
 </details>
 
@@ -1092,9 +1094,8 @@ The radius of convergence is $R = 1$ and the interval of convergence is $(-1, 1]
 <details>
 <summary>Worked Example: Compute the Taylor expansion of $\cos x$ about $a = \pi/3$ with remainder bound</summary>
 
-_Solution._ Compute derivatives:
-$f(x) = \cos x$, $f'(x) = -\sin x$, $f''(x) = -\cos x$, $f'''(x) = \sin x$ $f^{(4)}(x) = \cos x$.
-Evaluated at $a = \pi/3$:
+_Solution._ Compute derivatives: $f(x) = \cos x$, $f'(x) = -\sin x$, $f''(x) = -\cos x$,
+$f'''(x) = \sin x$ $f^{(4)}(x) = \cos x$. Evaluated at $a = \pi/3$:
 
 $f(\pi/3) = 1/2$, $f'(\pi/3) = -\sqrt{3}/2$, $f''(\pi/3) = -1/2$, $f'''(\pi/3) = \sqrt{3}/2$.
 
@@ -1250,8 +1251,8 @@ Integral. Hence $F(b) - F(a) = \int_a^b f(x)\, dx$. $\blacksquare$
 
 **Problem.** Compute $\int_0^1 x^2\, dx$ from the definition.
 
-_Solution._ Let $P_n = \{0, 1/n, 2/n, \ldots, 1\}$. On $[x_{i-1}, x_i] = [(i-1)/n, i/n]$, $f(x) = x^2$
-Has $M_i = (i/n)^2$ and $m_i = ((i-1)/n)^2$.
+_Solution._ Let $P_n = \{0, 1/n, 2/n, \ldots, 1\}$. On $[x_{i-1}, x_i] = [(i-1)/n, i/n]$,
+$f(x) = x^2$ Has $M_i = (i/n)^2$ and $m_i = ((i-1)/n)^2$.
 
 $$U(f, P_n) = \sum_{i=1}^{n} \frac{i^2}{n^2} \cdot \frac{1}{n} = \frac{1}{n^3} \sum_{i=1}^{n} i^2 = \frac{1}{n^3} \cdot \frac{n(n+1)(2n+1)}{6}$$
 
@@ -1849,7 +1850,8 @@ not Uniformly continuous on $(0, 1)$. (Trick question --- see solution.)
 
 _Solution._ **Continuity at $0$:** Given $\varepsilon > 0$Choose $\delta = \varepsilon$. For
 $|x - 0| = |x| \lt \delta$: $|f(x) - f(0)| = |x \sin(1/x)| \leq |x| \lt \delta = \varepsilon$. So
-$f$ is continuous at $0$. For $x \neq 0$, $f$ is a product of continuous functions, hence continuous.
+$f$ is continuous at $0$. For $x \neq 0$, $f$ is a product of continuous functions, hence
+continuous.
 
 **On uniform continuity:** Actually, $f(x) = x\sin(1/x)$ **is** uniformly continuous on $(0, 1)$!
 Here is why: $f$ extends continuously to $[0, 1]$ (define $f(0) = 0$). By the Heine-Cantor theorem

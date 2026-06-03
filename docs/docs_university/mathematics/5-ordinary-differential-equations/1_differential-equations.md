@@ -1,6 +1,8 @@
 ---
 title: Differential Equations
-description: 'University Mathematics Differential Equations notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'University Mathematics Differential Equations notes covering key definitions, core concepts,
+  worked examples, and practice questions for detailed preparation.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics
@@ -47,9 +49,8 @@ Differential equations arise throughout the natural sciences. A few canonical ex
 3. **Logistic population growth.** $\frac{dP}{dt} = rP\left(1 - \frac{P}{K}\right)$A first-order
    nonlinear (Bernoulli) ODE.
 
-4. **Lotka-Volterra predator-prey model.**
-   $\frac{dx}{dt} = x(\alpha - \beta y)$, $\frac{dy}{dt} = y(-\gamma + \delta x)$A coupled nonlinear
-   system.
+4. **Lotka-Volterra predator-prey model.** $\frac{dx}{dt} = x(\alpha - \beta y)$,
+   $\frac{dy}{dt} = y(-\gamma + \delta x)$A coupled nonlinear system.
 
 5. **RC circuit.** The charge $q(t)$ on a capacitor satisfies $R\frac{dq}{dt} + \frac{q}{C} = V(t)$
    a first-order linear ODE.
@@ -748,16 +749,18 @@ $$x'' + 2\gamma x' + \omega_0^2 x = \frac{F(t)}{m}$$
 
 The homogeneous solution depends on the discriminant $\gamma^2 - \omega_0^2$:
 
-| Condition                 | Type        | Homogeneous Solution                                                                                  |
-| ------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
+| Condition                 | Type        | Homogeneous Solution                                                                                    |
+| ------------------------- | ----------- | ------------------------------------------------------------------------------------------------------- |
 | $\gamma^2 \lt \omega_0^2$ | Underdamped | $e^{-\gamma t}(c_1 \cos(\omega_d t) + c_2 \sin(\omega_d t))$, $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ |
-| $\gamma^2 = \omega_0^2$   | Critical    | $e^{-\gamma t}(c_1 + c_2 t)$                                                                          |
+| $\gamma^2 = \omega_0^2$   | Critical    | $e^{-\gamma t}(c_1 + c_2 t)$                                                                            |
 | $\gamma^2 > \omega_0^2$   | Overdamped  | $c_1 e^{r_1 t} + c_2 e^{r_2 t}$, $r_{1,2} = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$                   |
 
 <!-- prettier-ignore -->
 <DesmosGraph title="Damped Harmonic Oscillator" expressions={["e^{-c*x}\\cos(w*x)", "e^{-c*x}", "-e^{-c*x}"]} width={800} height={400} />
 
-The underdamped oscillation $e^{-\gamma t}\cos(\omega_d t)$ (blue) decays inside the envelope $\pm e^{-\gamma t}$ (green/red). Adjust sliders `c` (damping $\gamma$) and `w` (damped frequency $\omega_d$) to explore different regimes.
+The underdamped oscillation $e^{-\gamma t}\cos(\omega_d t)$ (blue) decays inside the envelope
+$\pm e^{-\gamma t}$ (green/red). Adjust sliders `c` (damping $\gamma$) and `w` (damped frequency
+$\omega_d$) to explore different regimes.
 
 ### 3.17 Common Pitfalls for Second-Order ODEs
 
@@ -897,8 +900,8 @@ From the first row: $-i\sqrt{2}\, v_1 - 2v_2 = 0$So $v_2 = -\frac{i\sqrt{2}}{2}v
 With $v_1 = 2$:
 $\mathbf{v} = \begin{pmatrix} 2 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
 
-So
-$\mathbf{a} = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
+So $\mathbf{a} = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$,
+$\mathbf{b} = \begin{pmatrix} 0 \\ -\sqrt{2} \end{pmatrix}$.
 
 $\mathbf{x}(t) = c_1\left[\mathbf{a}\cos(\sqrt{2}\, t) - \mathbf{b}\sin(\sqrt{2}\, t)\right] + c_2\left[\mathbf{a}\sin(\sqrt{2}\, t) + \mathbf{b}\cos(\sqrt{2}\, t)\right]$
 
@@ -973,14 +976,14 @@ _Proof of (4)._ From (3) with $s = -t$: $e^{At}e^{-At} = e^{A(t-t)} = e^0 = I$. 
 For the linear system $\mathbf{x}' = A\mathbf{x}$ with $A$ a $2 \times 2$ matrix, the qualitative
 Behaviour near the origin is determined by the eigenvalues:
 
-| Eigenvalues                                 | Phase Portrait  | Stability             |
-| ------------------------------------------- | --------------- | --------------------- |
-| $\lambda_1, \lambda_2 \lt 0$Real, distinct  | Stable node     | Asymptotically stable |
-| $\lambda_1, \lambda_2 > 0$Real, distinct    | Unstable node   | Unstable              |
-| $\lambda_1 \lt 0 \lt \lambda_2$             | Saddle point    | Unstable              |
+| Eigenvalues                                   | Phase Portrait  | Stability             |
+| --------------------------------------------- | --------------- | --------------------- |
+| $\lambda_1, \lambda_2 \lt 0$Real, distinct    | Stable node     | Asymptotically stable |
+| $\lambda_1, \lambda_2 > 0$Real, distinct      | Unstable node   | Unstable              |
+| $\lambda_1 \lt 0 \lt \lambda_2$               | Saddle point    | Unstable              |
 | $\lambda = \alpha \pm i\beta$, $\alpha \lt 0$ | Stable spiral   | Asymptotically stable |
 | $\lambda = \alpha \pm i\beta$, $\alpha > 0$   | Unstable spiral | Unstable              |
-| $\lambda = \pm i\beta$                      | Center          | (Marginally) stable   |
+| $\lambda = \pm i\beta$                        | Center          | (Marginally) stable   |
 
 _Remark._ The **trace-determinant plane** provides a convenient classification. Let
 $\tau = \mathrm{tr}(A)$ and $\Delta = \det(A)$. The eigenvalues satisfy
@@ -997,7 +1000,9 @@ Stability is determined by the sign of $\tau$: stable if $\tau \lt 0$Unstable if
 <!-- prettier-ignore -->
 <DesmosGraph title="Trace-Determinant Plane: Stability Classification" expressions={["y^2-x^2/4=0", "y=0", "x=0"]} width={800} height={600} />
 
-The trace-determinant plane classifies 2D linear systems. The parabola $\tau^2 = 4\Delta$ separates real from complex eigenvalues; the $\tau = 0$ line separates stable from unstable. The `x`-axis represents the trace $\tau$ and the `y`-axis represents $\Delta$.
+The trace-determinant plane classifies 2D linear systems. The parabola $\tau^2 = 4\Delta$ separates
+real from complex eigenvalues; the $\tau = 0$ line separates stable from unstable. The `x`-axis
+represents the trace $\tau$ and the `y`-axis represents $\Delta$.
 
 ### 4.10 Nonhomogeneous Systems
 
@@ -1848,14 +1853,14 @@ $\mathbf{f}(\mathbf{x}^*) = \mathbf{0}$.
 Let $A = J\mathbf{f}(\mathbf{x}^*)$ be the Jacobian at the critical point. The eigenvalues of $A$
 Determine the local stability:
 
-| Eigenvalues of $A$                   | Type            | Stability             |
-| ------------------------------------ | --------------- | --------------------- |
-| Both real, negative                  | Stable node     | Asymptotically stable |
-| Both real, positive                  | Unstable node   | Unstable              |
-| Real, opposite signs                 | Saddle point    | Unstable              |
+| Eigenvalues of $A$                    | Type            | Stability             |
+| ------------------------------------- | --------------- | --------------------- |
+| Both real, negative                   | Stable node     | Asymptotically stable |
+| Both real, positive                   | Unstable node   | Unstable              |
+| Real, opposite signs                  | Saddle point    | Unstable              |
 | Complex, $\mathrm{Re}(\lambda) \lt 0$ | Stable spiral   | Asymptotically stable |
 | Complex, $\mathrm{Re}(\lambda) > 0$   | Unstable spiral | Unstable              |
-| Purely imaginary                     | Center          | (Marginally) stable   |
+| Purely imaginary                      | Center          | (Marginally) stable   |
 
 ### 9.3 Lyapunov Stability
 
@@ -1954,8 +1959,8 @@ Jacobian: $J = \begin{pmatrix} 2 - y & -x \\ y & x - 1 \end{pmatrix}$.
 At $(0, 0)$: $J = \begin{pmatrix} 2 & 0 \\ 0 & -1 \end{pmatrix}$. Eigenvalues $2$ and $-1$: **saddle
 point** (unstable).
 
-At $(1, 2)$: $J = \begin{pmatrix} 0 & -1 \\ 2 & 0 \end{pmatrix}$.
-$\det(J) = 2 > 0$, $\mathrm{tr}(J) = 0$. Eigenvalues $\pm i\sqrt{2}$: **center**.
+At $(1, 2)$: $J = \begin{pmatrix} 0 & -1 \\ 2 & 0 \end{pmatrix}$. $\det(J) = 2 > 0$,
+$\mathrm{tr}(J) = 0$. Eigenvalues $\pm i\sqrt{2}$: **center**.
 
 _Remark._ For the linearized system, the center is (marginally) stable. However, for the Nonlinear
 Lotka-Volterra system, the trajectories are actually closed orbits surrounding $(1, 2)$. This can be
@@ -1971,8 +1976,8 @@ The competing species model is:
 $$x' = x(r_1 - a_{11}x - a_{12}y), \quad y' = y(r_2 - a_{21}x - a_{22}y)$$
 
 Where $r_i > 0$ are growth rates and $a_{ij} > 0$ are competition coefficients. The four critical
-Points are $(0, 0)$, $(r_1/a_{11}, 0)$, $(0, r_2/a_{22})$And the coexistence point $(x^*, y^*)$ where
-both $x'$ and $y'$ vanish.
+Points are $(0, 0)$, $(r_1/a_{11}, 0)$, $(0, r_2/a_{22})$And the coexistence point $(x^*, y^*)$
+where both $x'$ and $y'$ vanish.
 
 The stability of the coexistence point determines whether both species survive. If
 $a_{11}a_{22} > a_{12}a_{21}$Coexistence is stable; otherwise, one species drives the other To
@@ -2021,8 +2026,8 @@ $W \equiv 0$ everywhere or $W \neq 0$ everywhere. Check Abel's identity. :::
 
 ### 9.9 Worked Example: Lyapunov Function
 
-**Problem.** Show that $(0, 0)$ is asymptotically stable for the system
-$x' = -x - y^3$, $y' = x^3 - y$.
+**Problem.** Show that $(0, 0)$ is asymptotically stable for the system $x' = -x - y^3$,
+$y' = x^3 - y$.
 
 <details>
 <summary>Solution</summary>
@@ -2086,8 +2091,8 @@ Classify the ODE $y'' + xy' + e^x y = \cos x$ by order, linearity, and homogenei
 <details>
 <summary>Solution</summary>
 
-_Solution._ Second-order (highest derivative is $y''$), linear ($y$, $y'$, $y''$ appear linearly With
-coefficient functions of $x$ only), nonhomogeneous ($\cos x \neq 0$). $\blacksquare$
+_Solution._ Second-order (highest derivative is $y''$), linear ($y$, $y'$, $y''$ appear linearly
+With coefficient functions of $x$ only), nonhomogeneous ($\cos x \neq 0$). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 1.2 (Classification of ODEs).
 
@@ -2376,11 +2381,13 @@ For $\lambda = i$: $\begin{pmatrix} -i & -1 \\ 1 & -i \end{pmatrix}\mathbf{v} = 
 $-iv_1 - v_2 = 0 \implies v_2 = -iv_1$. With $v_1 = 1$:
 $\mathbf{v} = \begin{pmatrix} 1 \\ -i \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} + i\begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
-$\mathbf{a} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
+$\mathbf{a} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$,
+$\mathbf{b} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$.
 
 $\mathbf{x}(t) = c_1 \begin{pmatrix} \cos t \\ -\sin t \end{pmatrix} + c_2 \begin{pmatrix} \sin t \\ \cos t \end{pmatrix}$.
 
-Equivalently: $x_1(t) = c_1 \cos t + c_2 \sin t$, $x_2(t) = -c_1 \sin t + c_2 \cos t$. $\blacksquare$
+Equivalently: $x_1(t) = c_1 \cos t + c_2 \sin t$, $x_2(t) = -c_1 \sin t + c_2 \cos t$.
+$\blacksquare$
 
 _If you get this wrong, revise:_ Section 4.2, Case 3.
 
@@ -2510,12 +2517,12 @@ $x = 0 \implies y = 0$. Critical point: $(0, 0)$. $x = 1 \implies y = 1$. Critic
 
 Jacobian: $J = \begin{pmatrix} -2x & 1 \\ 1 & -2y \end{pmatrix}$.
 
-At $(0, 0)$: $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$.
-$\mathrm{tr}(J) = 0$, $\det(J) = -1 \lt 0$. **Saddle point** (unstable).
+At $(0, 0)$: $J = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$. $\mathrm{tr}(J) = 0$,
+$\det(J) = -1 \lt 0$. **Saddle point** (unstable).
 
-At $(1, 1)$: $J = \begin{pmatrix} -2 & 1 \\ 1 & -2 \end{pmatrix}$.
-$\mathrm{tr}(J) = -4 \lt 0$, $\det(J) = 3 > 0$. $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct
-negative real eigenvalues. **Stable node** (asymptotically stable). $\blacksquare$
+At $(1, 1)$: $J = \begin{pmatrix} -2 & 1 \\ 1 & -2 \end{pmatrix}$. $\mathrm{tr}(J) = -4 \lt 0$,
+$\det(J) = 3 > 0$. $\tau^2 - 4\Delta = 16 - 12 = 4 > 0$. Two distinct negative real eigenvalues.
+**Stable node** (asymptotically stable). $\blacksquare$
 
 _If you get this wrong, revise:_ Section 9.2 (Linearization and Stability) and Section 4.9 (Phase
 Portrait Analysis).

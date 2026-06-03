@@ -1,6 +1,8 @@
 ---
 title: Number Theory
-description: 'University Mathematics Number Theory notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
+description:
+  'University Mathematics Number Theory notes covering key definitions, core concepts, worked
+  examples, and practice questions for practical revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics
@@ -110,8 +112,8 @@ $$\gcd(a,b) \cdot \mathrm{lcm}(a,b) = \prod_{i=1}^k p_i^{\alpha_i + \beta_i} = a
 <details>
 <summary>Solution</summary>
 
-First, $\gcd(252, 105)$. Using the Euclidean algorithm:
-$252 = 2 \cdot 105 + 42$, $105 = 2 \cdot 42 + 21$, $42 = 2 \cdot 21 + 0$. So $\gcd(252, 105) = 21$.
+First, $\gcd(252, 105)$. Using the Euclidean algorithm: $252 = 2 \cdot 105 + 42$,
+$105 = 2 \cdot 42 + 21$, $42 = 2 \cdot 21 + 0$. So $\gcd(252, 105) = 21$.
 
 By the identity: $\mathrm{lcm}(252, 105) = 252 \cdot 105 / 21 = 252 \cdot 5 = 1260$.
 
@@ -437,8 +439,9 @@ $r_1 = r_2$ (since $|r_1 - r_2| \lt m$). $\blacksquare$
 
 _Proof of (2)._ $m \mid (a - b)$ and $d \mid m$So $d \mid (a - b)$. $\blacksquare$
 
-_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$So $\mathrm{lcm}(m_1, \ldots, m_k) \mid (a-b)$
-By definition of the lcm. Hence $a \equiv b \pmod{\mathrm{lcm}(m_1, \ldots, m_k)}$. $\blacksquare$
+_Proof of (3)._ We have $m_i \mid (a - b)$ for each $i$So
+$\mathrm{lcm}(m_1, \ldots, m_k) \mid (a-b)$ By definition of the lcm. Hence
+$a \equiv b \pmod{\mathrm{lcm}(m_1, \ldots, m_k)}$. $\blacksquare$
 
 **Proposition 4.6.** If $a \equiv b \pmod{m}$ and $f(x) = c_k x^k + \cdots + c_1 x + c_0$ is a
 Polynomial with integer coefficients, then $f(a) \equiv f(b) \pmod{m}$.
@@ -551,7 +554,8 @@ $23 = 3 \cdot 7 + 2 \equiv 2 \pmod{7}$. $\blacksquare$
 
 ### 5.3 More Worked Examples
 
-**Problem.** Solve the system: $x \equiv 3 \pmod{7}$, $x \equiv 5 \pmod{11}$, $x \equiv 2 \pmod{13}$.
+**Problem.** Solve the system: $x \equiv 3 \pmod{7}$, $x \equiv 5 \pmod{11}$,
+$x \equiv 2 \pmod{13}$.
 
 <details>
 <summary>Solution</summary>
@@ -597,8 +601,8 @@ lcm follows from Proposition 4.5(3). $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-$\gcd(6, 10) = 2$. Check: $3 \equiv 5 \pmod{2}$? $3 \bmod 2 = 1$, $5 \bmod 2 = 1$. Yes, so a Solution
-exists.
+$\gcd(6, 10) = 2$. Check: $3 \equiv 5 \pmod{2}$? $3 \bmod 2 = 1$, $5 \bmod 2 = 1$. Yes, so a
+Solution exists.
 
 $x \equiv 3 \pmod{6}$ means $x = 6k + 3$. Substituting: $6k + 3 \equiv 5 \pmod{10}$So
 $6k \equiv 2 \pmod{10}$. Dividing by $\gcd(6, 10) = 2$: $3k \equiv 1 \pmod{5}$Giving
@@ -615,8 +619,8 @@ $x \equiv 8 \pmod{20}$ has a solution.
 <details>
 <summary>Solution</summary>
 
-Check pairwise compatibility: $\gcd(12, 15) = 3$. $5 \equiv 3 \pmod{3}$?
-$5 \bmod 3 = 2$, $3 \bmod 3 = 0$. No! $2 \neq 0$.
+Check pairwise compatibility: $\gcd(12, 15) = 3$. $5 \equiv 3 \pmod{3}$? $5 \bmod 3 = 2$,
+$3 \bmod 3 = 0$. No! $2 \neq 0$.
 
 Therefore the system has no solution. $\blacksquare$
 
@@ -646,8 +650,8 @@ when divided by $25$. Find the smallest such $N$.
 $M = 8 \cdot 9 \cdot 25 = 1800$.
 
 $M_1 = 225$. $225b_1 \equiv 1 \pmod{8}$. $225 \equiv 1 \pmod{8}$So $b_1 = 1$. $M_2 = 200$.
-$200b_2 \equiv 1 \pmod{9}$. $200 = 22 \cdot 9 + 2$So $2b_2 \equiv 1 \pmod{9}$, $b_2 = 5$. $M_3 = 72$.
-$72b_3 \equiv 1 \pmod{25}$. $72 = 2 \cdot 25 + 22$So $22b_3 \equiv 1 \pmod{25}$.
+$200b_2 \equiv 1 \pmod{9}$. $200 = 22 \cdot 9 + 2$So $2b_2 \equiv 1 \pmod{9}$, $b_2 = 5$.
+$M_3 = 72$. $72b_3 \equiv 1 \pmod{25}$. $72 = 2 \cdot 25 + 22$So $22b_3 \equiv 1 \pmod{25}$.
 $22 \equiv -3 \pmod{25}$. We need $-3b_3 \equiv 1$So $3b_3 \equiv 24$, $b_3 = 8$.
 
 $N = 3 \cdot 1 \cdot 225 + 1 \cdot 5 \cdot 200 + 7 \cdot 8 \cdot 72 = 675 + 1000 + 4032 = 5707$.
@@ -860,8 +864,8 @@ To test whether $g$ is a primitive root modulo $p$ (where $p$ is prime), it suff
 $g^{(p-1)/q} \not\equiv 1 \pmod{p}$ for every prime divisor $q$ of $p - 1$.
 
 **Proposition 7.7.** Let $p$ be prime and $g \in (\mathbb{Z}/p\mathbb{Z})^*$. Then $g$ is a
-primitive Root modulo $p$ if and only if for every prime
-$q \mid (p - 1)$, $g^{(p-1)/q} \not\equiv 1 \pmod{p}$.
+primitive Root modulo $p$ if and only if for every prime $q \mid (p - 1)$,
+$g^{(p-1)/q} \not\equiv 1 \pmod{p}$.
 
 _Proof._ If $g$ is a primitive root, $\mathrm{ord_p}(g) = p - 1$. If $g^{(p-1)/q} \equiv 1 \pmod{p}$
 For some prime $q \mid (p-1)$Then $\mathrm{ord_p}(g) \mid (p-1)/q \lt p-1$Contradiction.
@@ -931,16 +935,15 @@ solving the DLP.
 <summary>Solution</summary>
 
 First, verify $2$ is a primitive root modulo $19$: $\phi(19) = 18$Prime factors of $18$ are $2$ and
-$3$. $2^{18/2} = 2^9 = 512$.
-$512 / 19 = 26.9\ldots$, $26 \cdot 19 = 494$, $512 - 494 = 18 \equiv -1 \pmod{19}$.
-$2^{18/3} = 2^6 = 64$. $64 / 19 = 3.4\ldots$, $64 - 57 = 7 \not\equiv 1 \pmod{19}$. Confirmed.
+$3$. $2^{18/2} = 2^9 = 512$. $512 / 19 = 26.9\ldots$, $26 \cdot 19 = 494$,
+$512 - 494 = 18 \equiv -1 \pmod{19}$. $2^{18/3} = 2^6 = 64$. $64 / 19 = 3.4\ldots$,
+$64 - 57 = 7 \not\equiv 1 \pmod{19}$. Confirmed.
 
-Compute powers of $2$ modulo $19$:
-$2^1 = 2$, $2^2 = 4$, $2^3 = 8$, $2^4 = 16 \equiv -3$, $2^5 = 32 \equiv 13 \equiv -6$
-$2^6 = 64 \equiv 7$, $2^7 = 14$, $2^8 = 28 \equiv 9$, $2^9 = 18 \equiv -1$
-$2^{10} \equiv -2 \equiv 17$, $2^{11} \equiv -4 \equiv 15$, $2^{12} \equiv -8 \equiv 11$
-$2^{13} \equiv -16 \equiv 3$, $2^{14} = 6$, $2^{15} = 12$, $2^{16} = 24 \equiv 5$
-$2^{17} = 10$, $2^{18} = 20 \equiv 1$.
+Compute powers of $2$ modulo $19$: $2^1 = 2$, $2^2 = 4$, $2^3 = 8$, $2^4 = 16 \equiv -3$,
+$2^5 = 32 \equiv 13 \equiv -6$ $2^6 = 64 \equiv 7$, $2^7 = 14$, $2^8 = 28 \equiv 9$,
+$2^9 = 18 \equiv -1$ $2^{10} \equiv -2 \equiv 17$, $2^{11} \equiv -4 \equiv 15$,
+$2^{12} \equiv -8 \equiv 11$ $2^{13} \equiv -16 \equiv 3$, $2^{14} = 6$, $2^{15} = 12$,
+$2^{16} = 24 \equiv 5$ $2^{17} = 10$, $2^{18} = 20 \equiv 1$.
 
 From $2^7 = 14 \pmod{19}$We get $\mathrm{ind_2}(14) = 7$. $\blacksquare$
 
@@ -954,7 +957,8 @@ From $2^7 = 14 \pmod{19}$We get $\mathrm{ind_2}(14) = 7$. $\blacksquare$
 Taking indices base $2$: $\mathrm{ind_2}(6^x) = \mathrm{ind_2}(11)$.
 $x \cdot \mathrm{ind_2}(6) \equiv \mathrm{ind_2}(11) \pmod{18}$.
 
-From the table: $\mathrm{ind_2}(6) = 14$ and $\mathrm{ind_2}(11) = 12$. So $14x \equiv 12 \pmod{18}$.
+From the table: $\mathrm{ind_2}(6) = 14$ and $\mathrm{ind_2}(11) = 12$. So
+$14x \equiv 12 \pmod{18}$.
 
 $\gcd(14, 18) = 2$ and $2 \mid 12$So solutions exist. Divide by $2$: $7x \equiv 6 \pmod{9}$.
 $7^{-1} \equiv 4 \pmod{9}$ (since $7 \cdot 4 = 28 \equiv 1$). So
@@ -1177,8 +1181,8 @@ $[a_0; a_1, a_2, \ldots]$.
 
 For an irrational number $\alpha$The continued fraction expansion is computed recursively:
 
-$a_0 = \lfloor \alpha \rfloor$, $\alpha_1 = 1/(\alpha - a_0)$, $a_1 = \lfloor \alpha_1 \rfloor$And So
-on.
+$a_0 = \lfloor \alpha \rfloor$, $\alpha_1 = 1/(\alpha - a_0)$, $a_1 = \lfloor \alpha_1 \rfloor$And
+So on.
 
 **Example.**
 $\sqrt{2} = 1 + (\sqrt{2} - 1) = 1 + \frac{1}{\sqrt{2} + 1} = 1 + \frac{1}{2 + (\sqrt{2} - 1)}$. So
@@ -1354,8 +1358,8 @@ $m = 6$: $n = 1$: $\gcd(6,1) = 1$, $(35, 12, 37)$. $n = 5$: $(11, 60, 61)$ but $
 $n = 2$: $(45, 28, 53)$ but $c > 50$. $n = 4$: $(33, 56, 65)$ but $c > 50$. $n = 6$:
 $\gcd(7,6) = 1$, $(13, 84, 85)$ but $c > 50$.
 
-Primitive triples with $c \leq 50$:
-$(3,4,5)$, $(5,12,13)$, $(15,8,17)$, $(7,24,25)$, $(21,20,29)$, $(9,40,41)$, $(35,12,37)$. $\blacksquare$
+Primitive triples with $c \leq 50$: $(3,4,5)$, $(5,12,13)$, $(15,8,17)$, $(7,24,25)$, $(21,20,29)$,
+$(9,40,41)$, $(35,12,37)$. $\blacksquare$
 
 </details>
 
@@ -1391,8 +1395,8 @@ $n = 1$: $(3, 2)$. $n = 2$: $(17, 12)$. $n = 3$: $(99, 70)$. $n = 4$: $(577, 408
 
 $\sqrt{3} = [1; \overline{1, 2}]$Period $\ell = 2$ (even).
 
-Convergents: $p_0/q_0 = 1/1$, $p_1/q_1 = 2/1$. $a_2 = 2$:
-$p_2 = 2 \cdot 2 + 1 = 5$, $q_2 = 2 \cdot 1 + 1 = 3$.
+Convergents: $p_0/q_0 = 1/1$, $p_1/q_1 = 2/1$. $a_2 = 2$: $p_2 = 2 \cdot 2 + 1 = 5$,
+$q_2 = 2 \cdot 1 + 1 = 3$.
 
 Since $\ell = 2$ is even, the fundamental solution is
 $(p_{\ell-1}, q_{\ell-1}) = (p_1, q_1) = (2, 1)$.
@@ -1490,8 +1494,8 @@ $1 + 2i = -i(2 - i)$. So up to associates, $5 = (2 + i)(2 - i)$. $\blacksquare$
 <summary>Solution</summary>
 
 Since $13 \equiv 1 \pmod{4}$It factors in $\mathbb{Z}[i]$. We need $a^2 + b^2 = 13$ with
-$a, b \in \mathbb{Z}$. Trying: $a^2 \leq 13$So $a \in \\{0, 1, 2, 3\\}$. $a = 2$: $b^2 = 9$, $b = 3$.
-So $13 = 2^2 + 3^2 = (2 + 3i)(2 - 3i)$.
+$a, b \in \mathbb{Z}$. Trying: $a^2 \leq 13$So $a \in \\{0, 1, 2, 3\\}$. $a = 2$: $b^2 = 9$,
+$b = 3$. So $13 = 2^2 + 3^2 = (2 + 3i)(2 - 3i)$.
 
 Verification: $(2 + 3i)(2 - 3i) = 4 + 9 = 13$. Both $2 + 3i$ and $2 - 3i$ are Gaussian primes Since
 $N(2 + 3i) = 13$ is prime. $\blacksquare$
@@ -1511,8 +1515,8 @@ $N(\alpha) = N(\beta)N(\gamma) = p$So one of $N(\beta), N(\gamma)$ equals $1$Mak
 unit. Conversely, if $\alpha$ is irreducible, then $N(\alpha)$ has no nontrivial Factorizations
 compatible with factorizations of $\alpha$. $\blacksquare$
 
-**Problem.** Determine whether the following Gaussian integers are irreducible:
-$3 + 4i$, $6 + 7i$, $2 + 5i$.
+**Problem.** Determine whether the following Gaussian integers are irreducible: $3 + 4i$, $6 + 7i$,
+$2 + 5i$.
 
 <details>
 <summary>Solution</summary>
@@ -1693,11 +1697,11 @@ factors Over prime powers as $\prod_{p \mid n} (1 - 1/p)$. $\blacksquare$
 $60 = 2^2 \cdot 3 \cdot 5$. The divisors of $60$ are
 $\\{1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60\\}$.
 
-$\mu$ is nonzero only for squarefree divisors:
-$\mu(1) = 1$, $\mu(2) = -1$, $\mu(3) = -1$, $\mu(5) = -1$, $\mu(6) = 1$, $\mu(10) = 1$, $\mu(15) = 1$, $\mu(30) = -1$.
+$\mu$ is nonzero only for squarefree divisors: $\mu(1) = 1$, $\mu(2) = -1$, $\mu(3) = -1$,
+$\mu(5) = -1$, $\mu(6) = 1$, $\mu(10) = 1$, $\mu(15) = 1$, $\mu(30) = -1$.
 
-$\sigma(60) = 168$, $\sigma(30) = 72$, $\sigma(20) = 42$, $\sigma(15) = 24$
-$\sigma(12) = 28$, $\sigma(10) = 18$, $\sigma(6) = 12$, $\sigma(1) = 1$.
+$\sigma(60) = 168$, $\sigma(30) = 72$, $\sigma(20) = 42$, $\sigma(15) = 24$ $\sigma(12) = 28$,
+$\sigma(10) = 18$, $\sigma(6) = 12$, $\sigma(1) = 1$.
 
 $\sum_{d \mid 60} \mu(d)\sigma(60/d) = 1 \cdot 168 + (-1) \cdot 72 + (-1) \cdot 42 + (-1) \cdot 24 + 1 \cdot 28 + 1 \cdot 18 + 1 \cdot 12 + (-1) \cdot 1 = 168 - 72 - 42 - 24 + 28 + 18 + 12 - 1 = 87$.
 
@@ -1810,8 +1814,8 @@ $6 \cdot 11 - 6 - 11 = 66 - 17 = 49$ cents.
 Verification: $49 = 6x + 11y$ requires $y$ odd (since $49 - 11y$ must be even). $y = 1$: $38/6$
 (no). $y = 3$: $16/6$ (no). $y = 5$: $-6/6$ (negative). So $49$ is indeed not representable.
 
-$50 = 6 \cdot 4 + 11 \cdot 2$, $51 = 6 \cdot 5 + 11 \cdot 1$, $52 = 6 \cdot 7 + 11 \cdot 0$. All Values
-$50$ and above are representable. $\blacksquare$
+$50 = 6 \cdot 4 + 11 \cdot 2$, $51 = 6 \cdot 5 + 11 \cdot 1$, $52 = 6 \cdot 7 + 11 \cdot 0$. All
+Values $50$ and above are representable. $\blacksquare$
 
 </details>
 
@@ -1881,8 +1885,8 @@ $\blacksquare$
 _Proof._ If $n = ab$ with $b$ odd, then $2^{2^n} + 1 = (2^{2^a})^{2^{n-a}} + 1$And we can factor
 $x^{2^k} + 1 = (x^{2^{k-1}} + 1)^2 - 2x^{2^{k-1}}$Which allows induction. $\blacksquare$
 
-The known Fermat primes are $F_0 = 3$, $F_1 = 5$, $F_2 = 17$, $F_3 = 257$, $F_4 = 65537$. No others are
-known, and it is conjectured that these are the only ones.
+The known Fermat primes are $F_0 = 3$, $F_1 = 5$, $F_2 = 17$, $F_3 = 257$, $F_4 = 65537$. No others
+are known, and it is conjectured that these are the only ones.
 
 ## 14. Additional Results
 
@@ -1992,8 +1996,8 @@ Such that for all coprime positive integers $a, b, c$ with $a + b = c$:
 
 $$c \lt K_\varepsilon \cdot \mathrm{rad}(abc)^{1 + \varepsilon}$$
 
-Where $\mathrm{rad}(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct prime
-Factors).
+Where $\mathrm{rad}(n) = \prod_{p \mid n} p$ is the **radical** of $n$ (the product of distinct
+prime Factors).
 
 The abc conjecture is one of the most important open problems in number theory. It implies:
 
@@ -2077,8 +2081,8 @@ $\gcd(a, m) \mid b$. If not, there is no solution. If $\gcd(a, m) = d > 1$Divide
 remember that the modulus becomes $m/d$. :::
 
 :::caution Common Pitfall Primitive roots do not exist for all moduli. A primitive root modulo $n$
-Exists only for $n = 2$, $n = 4$, $n = p^k$Or $n = 2p^k$ where $p$ is an odd prime. For example, There
-is no primitive root modulo $8$ or modulo $15$. :::
+Exists only for $n = 2$, $n = 4$, $n = p^k$Or $n = 2p^k$ where $p$ is an odd prime. For example,
+There is no primitive root modulo $8$ or modulo $15$. :::
 
 :::caution Common Pitfall In the division algorithm $a = bq + r$The remainder satisfies
 $0 \leq r \lt b$ when $b > 0$. When $a$ is negative, the quotient $q$ is also negative (or zero).
@@ -2116,7 +2120,8 @@ $\gcd(a, b) \cdot \mathrm{lcm}(a, b) = ab$.
 <details>
 <summary>Solution</summary>
 
-$1071 = 2 \cdot 462 + 147$, $462 = 3 \cdot 147 + 21$, $147 = 7 \cdot 21 + 0$. So $\gcd(1071, 462) = 21$.
+$1071 = 2 \cdot 462 + 147$, $462 = 3 \cdot 147 + 21$, $147 = 7 \cdot 21 + 0$. So
+$\gcd(1071, 462) = 21$.
 
 $\mathrm{lcm}(1071, 462) = 1071 \cdot 462 / 21 = 1071 \cdot 22 = 23562$.
 
@@ -2133,8 +2138,8 @@ Find integers $x, y$ such that $356x + 204y = \gcd(356, 204)$.
 <details>
 <summary>Solution</summary>
 
-$356 = 1 \cdot 204 + 152$, $204 = 1 \cdot 152 + 52$, $152 = 2 \cdot 52 + 48$, $52 = 1 \cdot 48 + 4$, $48 = 12 \cdot 4 + 0$.
-$\gcd(356, 204) = 4$.
+$356 = 1 \cdot 204 + 152$, $204 = 1 \cdot 152 + 52$, $152 = 2 \cdot 52 + 48$, $52 = 1 \cdot 48 + 4$,
+$48 = 12 \cdot 4 + 0$. $\gcd(356, 204) = 4$.
 
 Back-substituting: $4 = 52 - 48 = 52 - (152 - 2 \cdot 52) = 3 \cdot 52 - 152$.
 $= 3(204 - 152) - 152 = 3 \cdot 204 - 4 \cdot 152$.
@@ -2264,8 +2269,9 @@ $n \equiv 3 \pmod{5}$And $n \equiv 4 \pmod{7}$.
 
 $M = 2 \cdot 3 \cdot 5 \cdot 7 = 210$.
 
-$M_1 = 105$, $105b_1 \equiv 1 \pmod{2}$, $b_1 = 1$. $M_2 = 70$, $70b_2 \equiv 1 \pmod{3}$, $b_2 = 1$.
-$M_3 = 42$, $42b_3 \equiv 1 \pmod{5}$, $b_3 = 3$. $M_4 = 30$, $30b_4 \equiv 1 \pmod{7}$, $b_4 = 4$.
+$M_1 = 105$, $105b_1 \equiv 1 \pmod{2}$, $b_1 = 1$. $M_2 = 70$, $70b_2 \equiv 1 \pmod{3}$,
+$b_2 = 1$. $M_3 = 42$, $42b_3 \equiv 1 \pmod{5}$, $b_3 = 3$. $M_4 = 30$, $30b_4 \equiv 1 \pmod{7}$,
+$b_4 = 4$.
 
 $x = 1 \cdot 1 \cdot 105 + 2 \cdot 1 \cdot 70 + 3 \cdot 3 \cdot 42 + 4 \cdot 4 \cdot 30$
 $= 105 + 140 + 378 + 480 = 1103$.
@@ -2285,8 +2291,8 @@ Determine whether the system $x \equiv 7 \pmod{12}$, $x \equiv 1 \pmod{18}$ has 
 <details>
 <summary>Solution</summary>
 
-$\gcd(12, 18) = 6$. Check: $7 \equiv 1 \pmod{6}$? $7 \bmod 6 = 1$, $1 \bmod 6 = 1$. Yes, so a Solution
-exists.
+$\gcd(12, 18) = 6$. Check: $7 \equiv 1 \pmod{6}$? $7 \bmod 6 = 1$, $1 \bmod 6 = 1$. Yes, so a
+Solution exists.
 
 $x = 12k + 7$. Then $12k + 7 \equiv 1 \pmod{18}$So $12k \equiv -6 \equiv 12 \pmod{18}$. Dividing by
 $\gcd(12, 18) = 6$: $2k \equiv 2 \pmod{3}$So $k \equiv 1 \pmod{3}$.
@@ -2333,8 +2339,8 @@ _If you get this wrong, revise:_ Section 6.3, Corollary 6.5.
 
 ### Problem 13 (RSA)
 
-In an RSA system, $p = 11$, $q = 3$, $e = 7$. The ciphertext $c = 26$ is received. Find the Plaintext
-$m$.
+In an RSA system, $p = 11$, $q = 3$, $e = 7$. The ciphertext $c = 26$ is received. Find the
+Plaintext $m$.
 
 <details>
 <summary>Solution</summary>
@@ -2378,7 +2384,8 @@ Determine whether $3$ is a primitive root modulo $19$.
 
 $\phi(19) = 18$. Prime divisors of $18$: $2$ and $3$. Check $3^9$ and $3^6$.
 
-$3^2 = 9$, $3^4 = 81 \equiv 5 \pmod{19}$, $3^6 = 3^4 \cdot 3^2 \equiv 5 \cdot 9 = 45 \equiv 7 \pmod{19}$.
+$3^2 = 9$, $3^4 = 81 \equiv 5 \pmod{19}$,
+$3^6 = 3^4 \cdot 3^2 \equiv 5 \cdot 9 = 45 \equiv 7 \pmod{19}$.
 $3^9 = 3^6 \cdot 3^3 \equiv 7 \cdot 27 = 189 \equiv 18 \equiv -1 \pmod{19}$.
 
 $3^6 \equiv 7 \not\equiv 1$ and $3^9 \equiv -1 \not\equiv 1 \pmod{19}$. Therefore $3$ is a primitive
@@ -2454,9 +2461,8 @@ $e = [2; 1, 2, 1, 1, 4, 1, 1, 6, 1, \ldots]$. We need $p_4/q_4 = [2; 1, 2, 1, 1]
 $p_{-1} = 1$, $p_0 = 2$. $q_{-1} = 0$, $q_0 = 1$.
 
 $a_1 = 1$: $p_1 = 1 \cdot 2 + 1 = 3$, $q_1 = 1 \cdot 1 + 0 = 1$. $a_2 = 2$:
-$p_2 = 2 \cdot 3 + 2 = 8$, $q_2 = 2 \cdot 1 + 1 = 3$. $a_3 = 1$:
-$p_3 = 1 \cdot 8 + 3 = 11$, $q_3 = 1 \cdot 3 + 1 = 4$. $a_4 = 1$:
-$p_4 = 1 \cdot 11 + 8 = 19$, $q_4 = 1 \cdot 4 + 3 = 7$.
+$p_2 = 2 \cdot 3 + 2 = 8$, $q_2 = 2 \cdot 1 + 1 = 3$. $a_3 = 1$: $p_3 = 1 \cdot 8 + 3 = 11$,
+$q_3 = 1 \cdot 3 + 1 = 4$. $a_4 = 1$: $p_4 = 1 \cdot 11 + 8 = 19$, $q_4 = 1 \cdot 4 + 3 = 7$.
 
 $p_4/q_4 = 19/7 \approx 2.714\ldots$
 

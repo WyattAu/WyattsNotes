@@ -1,6 +1,8 @@
 ---
 title: Complex Analysis
-description: 'University Mathematics Complex Analysis notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'University Mathematics Complex Analysis notes covering key definitions, core concepts, worked
+  examples, and practice questions for analytical revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics
@@ -194,8 +196,8 @@ $n$.
 
 _Proof._ The sum
 $\sum_{k=0}^{n-1} \omega^k = \frac{1 - \omega^n}{1 - \omega} = \frac{1 - 1}{1 - \omega} = 0$
-Provided $\omega \neq 1$. For $j$ not divisible by $n$, $\omega^j$ is a non-trivial root of unity, So
-the same argument applies. $\blacksquare$
+Provided $\omega \neq 1$. For $j$ not divisible by $n$, $\omega^j$ is a non-trivial root of unity,
+So the same argument applies. $\blacksquare$
 
 <details>
 <summary>Solution</summary>
@@ -304,8 +306,8 @@ Differentiable at $0$ but not analytic anywhere (no neighbourhood of $0$ is anal
 
 **Problem.** Show that $f(z) = z\bar{z} + z$ is differentiable only at $z = 0$.
 
-$f(z) = |z|^2 + z = (x^2 + y^2 + x) + iy$. $u_x = 2x + 1$, $u_y = 2y$, $v_x = 0$, $v_y = 1$. CR equations:
-$2x + 1 = 1 \Rightarrow x = 0$And $2y = 0 \Rightarrow y = 0$. At $(0, 0)$:
+$f(z) = |z|^2 + z = (x^2 + y^2 + x) + iy$. $u_x = 2x + 1$, $u_y = 2y$, $v_x = 0$, $v_y = 1$. CR
+equations: $2x + 1 = 1 \Rightarrow x = 0$And $2y = 0 \Rightarrow y = 0$. At $(0, 0)$:
 $f'(0) = \lim_{h \to 0} \frac{h\bar{h} + h}{h} = \lim_{h \to 0} (\bar{h} + 1) = 1$. So $f$ is
 differentiable at $z = 0$ only, hence nowhere analytic.
 
@@ -390,8 +392,8 @@ And $\frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y}$. $\blacksqu
 **Theorem 3.2.** If $u$ and $v$ have continuous first partial derivatives on an open set $U$ and
 Satisfy the Cauchy-Riemann equations on $U$Then $f = u + iv$ is analytic on $U$.
 
-_Proof._ Since $u_x, u_y, v_x, v_y$ are continuous on $U$, $u$ and $v$ are (real) differentiable. Let
-$\Delta z = \Delta x + i\Delta y$. By real differentiability:
+_Proof._ Since $u_x, u_y, v_x, v_y$ are continuous on $U$, $u$ and $v$ are (real) differentiable.
+Let $\Delta z = \Delta x + i\Delta y$. By real differentiability:
 
 $u(x + \Delta x, y + \Delta y) - u(x, y) = u_x\,\Delta x + u_y\,\Delta y + \varepsilon_1$
 $v(x + \Delta x, y + \Delta y) - v(x, y) = v_x\,\Delta x + v_y\,\Delta y + \varepsilon_2$
@@ -1367,7 +1369,8 @@ of $T(z) = z$).
 <details>
 <summary>Solution</summary>
 
-**Problem.** Find the Möbius transformation mapping $0 \mapsto i$, $1 \mapsto 0$, $\infty \mapsto -i$.
+**Problem.** Find the Möbius transformation mapping $0 \mapsto i$, $1 \mapsto 0$,
+$\infty \mapsto -i$.
 
 $T(z) = \frac{az + b}{cz + d}$ with $T(0) = i \Rightarrow b/d = i \Rightarrow b = id$.
 $T(1) = 0 \Rightarrow a = -b = -id$. $T(\infty) = -i \Rightarrow a/c = -i \Rightarrow c = d$.

@@ -29,8 +29,8 @@
 
 | Metric                 | Value                                                       |
 | ---------------------- | ----------------------------------------------------------- |
-| Sub-sites              | 9 deployed on Cloudflare Pages                              |
-| Content files          | 1,211 documentation files                                   |
+| Sub-sites              | 10 deployed on Cloudflare Pages                             |
+| Content files          | 1,530 documentation files                                   |
 | Content lines          | ~862,000 lines                                              |
 | Subjects covered       | 27                                                          |
 | Interactive pages      | 131+ practice and flashcard .mdx pages across 20+ sections  |
@@ -254,29 +254,120 @@ Implementation:
 
 ## Phase 4: Content Expansion
 
-**Duration:** Ongoing **Goal:** Expand qualification coverage, university notes, programming
-languages, and multi-lingual content.
+**Duration:** Ongoing **Goal:** Full syllabus coverage for exam subjects, foundational ordering for
+university subjects (Aluffi Algebra 0 style), and supplementary materials (flashcards, practice,
+diagnostics) across all content.
 
-### 4.1 Qualification Coverage Expansion
+### 4.1 Content Audit Summary (2026-06-03)
 
-| Qualification           | Current State       | Target State          | Priority |
-| ----------------------- | ------------------- | --------------------- | -------- |
-| A-Level Further Maths   | Partial stubs       | Full topic coverage   | High     |
-| IB Additional Subjects  | Core subjects done  | Extend to all HL/SL   | High     |
-| DSE Full Coverage       | 6 interactive pages | Complete all subjects | Medium   |
-| AP (Advanced Placement) | 5 guides            | Full exam prep        | Medium   |
-| Indian CBSE/ISC         | Intro stub          | Core subjects         | Low      |
-| Australian HSC/VCE      | Intro stub          | Core subjects         | Low      |
+Complete inventory of 1,530 content files across 10 sub-sites.
 
-### 4.2 University Notes Expansion
+#### Sub-site Status
 
-| Subject Area     | Current Coverage                                    | Target Coverage                                             |
-| ---------------- | --------------------------------------------------- | ----------------------------------------------------------- |
-| Mathematics      | Abstract algebra, number theory, linear algebra     | Complex analysis, topology, measure theory, PDEs            |
-| Physics          | Electromagnetism, quantum mechanics, thermodynamics | Statistical mechanics, general relativity, particle physics |
-| Computer Science | N/A                                                 | Algorithms, data structures, OS, networking                 |
+| Sub-site       | Subjects | Content Files | Lines     | Flashcards | Practice | Diagnostics | Status     |
+| -------------- | -------- | ------------- | --------- | ---------- | -------- | ----------- | ---------- |
+| A-Level        | 11       | 191           | 357 total | 18         | 20       | 86          | Mature     |
+| IB             | 12       | 138           | 141,000+  | 31         | 28       | 57          | Mature     |
+| DSE            | 6        | 63            | 106,000+  | 7          | 7        | 57          | Mature     |
+| Qualifications | 8 types  | 157           | 105,000+  | 12         | 10       | 16          | Mixed      |
+| University     | 6        | 95            | 132,000+  | 14         | 2        | 0           | Needs work |
+| Programming    | 3        | 57            | --        | --         | --       | --          | N/A        |
 
-### 4.3 Programming Language Expansion
+#### Qualification Coverage Detail
+
+| Qualification    | Subjects Covered                                                       | Status                             |
+| ---------------- | ---------------------------------------------------------------------- | ---------------------------------- |
+| A-Level          | Maths, FM, Physics, Chem, Bio, CS, Econ, English, Psych, Geog, History | Full, some stubs in humanities     |
+| IB               | Bio, Chem, Physics, Maths AA, Econ, Psych, Geog, English, History, CS  | Full except **Maths AI** (missing) |
+| DSE              | Bio, Chem, Econ, ICT, Maths, Physics                                   | Full, missing Extended Part M1/M2  |
+| AP               | Maths (BC), Physics, Chem, Bio, CS                                     | Full for covered subjects          |
+| GCSE             | Maths, Physics, Chem, Bio, CS, English                                 | Full for covered subjects          |
+| Scottish Highers | Maths, Physics, Chem, Bio, CS                                          | Full for covered subjects          |
+| ILC              | Maths, Physics, Chem, Bio, CS                                          | Full for covered subjects          |
+| SAT              | Maths, Reading/Writing                                                 | Full for covered subjects          |
+| CBSE             | Maths, Physics, Chem                                                   | Stub (single-file, no subtopics)   |
+| Gaokao           | None                                                                   | Empty (1 flashcard only)           |
+| HSC/VCE          | None                                                                   | Empty (1 flashcard only)           |
+
+#### University Content Detail
+
+| Subject          | Topics | Lines per Topic | Total Lines | Flashcards | Practice | Status      |
+| ---------------- | ------ | --------------- | ----------- | ---------- | -------- | ----------- |
+| Mathematics      | 8      | 2,000-2,700     | 19,329      | 8          | 1        | Robust      |
+| Physics          | 7      | 2,200-2,600     | 17,382      | 3          | 1        | Robust      |
+| Computing        | 6      | 1,300-2,300     | 18,259      | 0          | 0        | Robust      |
+| Computer Science | 12     | 389-729         | 6,943       | 3 (stub)   | 0        | Needs depth |
+| Chemistry        | 12     | 356-485         | 5,031       | 0          | 0        | All stubs   |
+| Admissions       | 5      | 496-730         | 2,953       | 0          | 0        | Adequate    |
+
+### 4.2 Priority Actions
+
+#### P0: Critical (blocks user experience)
+
+| #   | Action                                                                                       | Subject Area    | Effort |
+| --- | -------------------------------------------------------------------------------------------- | --------------- | ------ |
+| 1   | University Chemistry: all 12 files under 500 lines -- expand to 1000+ each                   | University Chem | Large  |
+| 2   | University Computer Science: flashcards are 15-line stubs -- create real content             | University CS   | Medium |
+| 3   | IB intro.md references Maths AI but zero content exists -- either create or remove reference | IB Maths        | Medium |
+| 4   | Gaokao/HSC: empty stubs with only 1 flashcard -- either populate or remove                   | Qualifications  | Medium |
+
+#### P1: High (completeness)
+
+| #   | Action                                                                                        | Subject Area         | Effort |
+| --- | --------------------------------------------------------------------------------------------- | -------------------- | ------ |
+| 5   | University maths reorder: move Abstract Algebra before Linear Algebra (Aluffi style)          | University Maths     | Large  |
+| 6   | University maths: promote topology.md from orphan root file to numbered subdirectory          | University Maths     | Medium |
+| 7   | University maths: add practice files for 7 of 8 topics (only linear algebra has one)          | University Maths     | Large  |
+| 8   | University physics: add practice files for 5 topics                                           | University Physics   | Large  |
+| 9   | University computing: add flashcards and practice                                             | University Computing | Large  |
+| 10  | DSE: add per-topic flashcards and practice for Biology, Chemistry, ICT, Maths, Physics        | DSE                  | Large  |
+| 11  | A-Level humanities (English, Psych, Geog, History): expand stub-level content (258-453 lines) | A-Level              | Large  |
+| 12  | A-Level: add flashcards for Computer Science (0 exist)                                        | A-Level CS           | Medium |
+
+#### P2: Medium (enhancement)
+
+| #   | Action                                                                 | Subject Area  | Effort |
+| --- | ---------------------------------------------------------------------- | ------------- | ------ |
+| 13  | Qualifications diagnostics: add for AP Physics, Chemistry, Biology, CS | AP            | Medium |
+| 14  | Scottish Highers: add flashcards, practice, diagnostics (0 of each)    | Highers       | Medium |
+| 15  | ILC: add flashcards, practice, diagnostics (0 of each)                 | ILC           | Medium |
+| 16  | GCSE: add diagnostics for Chemistry, Computer Science, English         | GCSE          | Medium |
+| 17  | IB Economics: add diagnostics (0 exist)                                | IB Economics  | Medium |
+| 18  | IB Computer Science: add flashcards, practice, diagnostics             | IB CS         | Medium |
+| 19  | CBSE: expand from single-file to subtopic structure, add practice      | CBSE          | Medium |
+| 20  | A-Level Psychology: add diagnostics (0 exist)                          | A-Level Psych | Small  |
+
+#### P3: Low (nice-to-have)
+
+| #   | Action                                                                     | Subject Area     | Effort     |
+| --- | -------------------------------------------------------------------------- | ---------------- | ---------- |
+| 21  | DSE: add Geography and History subjects                                    | DSE              | Large      |
+| 22  | DSE Maths: add Extended Part M1/M2 content                                 | DSE Maths        | Medium     |
+| 23  | University: add Measure Theory, Functional Analysis, Differential Geometry | University Maths | Very large |
+| 24  | Qualifications: add AP Statistics, AP English, AP History                  | AP               | Very large |
+| 25  | Cross-language content (ZH, JA, KO, DE, FR, ES)                            | All              | Very large |
+
+### 4.3 University Foundational Ordering (Aluffi Algebra 0)
+
+**Current ordering (standard analysis-first):** Real Analysis -> Linear Algebra -> Multivariable
+Calc -> ODEs -> Abstract Algebra -> Number Theory -> Complex Analysis -> Probability
+
+**Target ordering (abstract foundations first):** Abstract Algebra (groups, rings, fields as
+language) -> Linear Algebra (vector spaces as modules over fields) -> Real Analysis (metric spaces,
+completeness) -> Multivariable Calc -> ODEs -> Complex Analysis -> Number Theory (as applied
+algebra) -> Probability/Statistics
+
+**Rationale:** Aluffi's Algebra:0 establishes categorical and algebraic language (Chapter 0: sets,
+functions, equivalence relations, groups, categories) before applying it to linear algebra and
+number theory. This gives students the abstract vocabulary that then permeates all subsequent
+subjects, making linear algebra about modules, real analysis about metric spaces over fields, and
+complex analysis about analytic functions on algebraically closed fields.
+
+**Within Abstract Algebra:** Internal ordering IS already Aluffi-compliant (Groups -> Subgroups ->
+Lagrange -> Normal/Quotient -> Homomorphisms -> Group Actions -> Sylow -> Rings -> Ideals ->
+Polynomial Rings -> EDs/PIDs/UFDs -> Field Theory -> Galois Theory).
+
+### 4.4 Programming Language Expansion
 
 | Language | Current Lines | Target Lines | Priority |
 | -------- | ------------- | ------------ | -------- |

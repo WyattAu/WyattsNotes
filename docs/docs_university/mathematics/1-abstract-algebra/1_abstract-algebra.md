@@ -1,6 +1,8 @@
 ---
 title: Abstract Algebra
-description: 'University Mathematics Abstract Algebra notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'University Mathematics Abstract Algebra notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Mathematics
@@ -78,16 +80,16 @@ $$(a_1\ a_2\ \ldots\ a_k) = (a_1\ a_k)(a_1\ a_{k-1})\cdots(a_1\ a_2)$$
 The number of transpositions in a factorization is not unique, but its **parity** is.
 
 **Proposition 1.6.** The **sign** of a permutation $\sigma$Defined by
-$\mathrm{sgn}(\sigma) = (-1)^{N(\sigma)}$ Where $N(\sigma)$ is the number of inversions of $\sigma$Is
-a well-defined group homomorphism $\mathrm{sgn} : S_n \to \{1, -1\}$. Its kernel is the **alternating
-group** $A_n$ of even permutations.
+$\mathrm{sgn}(\sigma) = (-1)^{N(\sigma)}$ Where $N(\sigma)$ is the number of inversions of
+$\sigma$Is a well-defined group homomorphism $\mathrm{sgn} : S_n \to \{1, -1\}$. Its kernel is the
+**alternating group** $A_n$ of even permutations.
 
 _Proof._ We first show $\mathrm{sgn}$ is a homomorphism. For any transposition $\tau$ and any
 Permutation $\sigma$Multiplying by $\tau$ changes the number of inversions by an odd number, So
 $\mathrm{sgn}(\tau\sigma) = -\mathrm{sgn}(\sigma)$. For any $\sigma, \rho \in S_n$Write $\rho$ As a
 product of $k$ transpositions. Then
-$\mathrm{sgn}(\sigma\rho) = (-1)^k\mathrm{sgn}(\sigma) = \mathrm{sgn}(\sigma)\mathrm{sgn}(\rho)$. The
-kernel is precisely the set of even permutations, and $|A_n| = n!/2$. $\blacksquare$
+$\mathrm{sgn}(\sigma\rho) = (-1)^k\mathrm{sgn}(\sigma) = \mathrm{sgn}(\sigma)\mathrm{sgn}(\rho)$.
+The kernel is precisely the set of even permutations, and $|A_n| = n!/2$. $\blacksquare$
 
 **Proposition 1.7.** The number of $k$-cycles in $S_n$ is $\frac{n!}{k(n-k)!}$.
 
@@ -283,8 +285,8 @@ $$\langle S \rangle = \{s_1^{\epsilon_1} s_2^{\epsilon_2} \cdots s_k^{\epsilon_k
 
 When $S = \{g_1, \ldots, g_n\}$We write $\langle g_1, \ldots, g_n \rangle$.
 
-**Example.** In $S_3$, $\langle (1\ 2), (2\ 3) \rangle = S_3$ since
-$(1\ 2)(2\ 3) = (1\ 2\ 3)$, $(1\ 2\ 3)(1\ 2) = (1\ 3)$And we obtain all six elements.
+**Example.** In $S_3$, $\langle (1\ 2), (2\ 3) \rangle = S_3$ since $(1\ 2)(2\ 3) = (1\ 2\ 3)$,
+$(1\ 2\ 3)(1\ 2) = (1\ 3)$And we obtain all six elements.
 
 **Example.** In $D_4$, $\langle r^2, s \rangle = \{e, r^2, s, r^2s\} \cong V_4$ (the Klein
 four-group).
@@ -674,12 +676,12 @@ $\psi(gh) = c_{gh}$And
 $c_{gh}(x) = ghx(gh)^{-1} = g(hxh^{-1})g^{-1} = c_g(c_h(x)) = (c_g \circ c_h)(x)$. The image is
 $\mathrm{Inn}(G)$. The kernel is
 $\{g \in G : c_g = \mathrm{id}\} = \{g \in G : gxg^{-1} = x
-\ \mathrm{for\ all\ x} \in G\} = Z(G)$. By
-the first isomorphism theorem, $\mathrm{Inn}(G) \cong G/Z(G)$. $\blacksquare$
+\ \mathrm{for\ all\ x} \in G\} = Z(G)$.
+By the first isomorphism theorem, $\mathrm{Inn}(G) \cong G/Z(G)$. $\blacksquare$
 
 **Example.** $\mathrm{Aut}(S_3) \cong S_3$. Since $Z(S_3) = \{e\}$We have
-$\mathrm{Inn}(S_3) \cong S_3$. Since $|\mathrm{Aut}(S_3)| \leq |S_3|! = 6$ (automorphisms permute the
-three elements of order $2$), And $\mathrm{Inn}(S_3)$ already has $6$ elements, we get
+$\mathrm{Inn}(S_3) \cong S_3$. Since $|\mathrm{Aut}(S_3)| \leq |S_3|! = 6$ (automorphisms permute
+the three elements of order $2$), And $\mathrm{Inn}(S_3)$ already has $6$ elements, we get
 $\mathrm{Aut}(S_3) = \mathrm{Inn}(S_3) \cong S_3$.
 
 **Example.** $\mathrm{Aut}(\mathbb{Z}/n\mathbb{Z}) \cong (\mathbb{Z}/n\mathbb{Z})^*$The group of
@@ -710,8 +712,8 @@ So $H' \trianglelefteq G$. The remaining claims are immediate. $\blacksquare$
 
 **Example.** $D_n = \mathbb{Z}/n\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ where the action of
 $\mathbb{Z}/2\mathbb{Z}$ on $\mathbb{Z}/n\mathbb{Z}$ sends $k \mapsto -k$ (inversion). Explicitly:
-$(a, 0)(b, 0) = (a + b, 0)$, $(a, 0)(b, 1) = (a + b, 1)$
-$(a, 1)(b, 0) = (a - b, 1)$, $(a, 1)(b, 1) = (a - b, 0)$.
+$(a, 0)(b, 0) = (a + b, 0)$, $(a, 0)(b, 1) = (a + b, 1)$ $(a, 1)(b, 0) = (a - b, 1)$,
+$(a, 1)(b, 1) = (a - b, 0)$.
 
 **Problem.** Show that there are exactly two groups of order $6$: $\mathbb{Z}/6\mathbb{Z}$ and
 $S_3$.
@@ -790,8 +792,8 @@ $$|\mathrm{Orb}(x)| = [G : \mathrm{Stab}(x)] = \frac{|G|}{|\mathrm{Stab}(x)|}$$
 _Proof._ Define $\phi : G \to \mathrm{Orb}(x)$ by $\phi(g) = g \cdot x$. Then $g$ and $h$ have the
 same Image iff $g \cdot x = h \cdot x$ iff $h^{-1}g \cdot x = x$ iff $h^{-1}g \in \mathrm{Stab}(x)$
 Iff $g \in h\,\mathrm{Stab}(x)$. So the fibers of $\phi$ are precisely the cosets of
-$\mathrm{Stab}(x)$ And there are $[G : \mathrm{Stab}(x)]$ of them, each mapping to a distinct element
-of $\mathrm{Orb}(x)$. $\blacksquare$
+$\mathrm{Stab}(x)$ And there are $[G : \mathrm{Stab}(x)]$ of them, each mapping to a distinct
+element of $\mathrm{Orb}(x)$. $\blacksquare$
 
 ### 6.3 Burnside's Lemma
 
@@ -803,8 +805,8 @@ $$\frac{1}{|G|} \sum_{g \in G} |\mathrm{Fix}(g)|$$
 Where $\mathrm{Fix}(g) = \{x \in X : g \cdot x = x\}$.
 
 _Proof._ Count the set $S = \{(g, x) \in G \times X : g \cdot x = x\}$ in two ways. Grouping by $g$:
-$|S| = \sum_{g \in G} |\mathrm{Fix}(g)|$. Grouping by $x$: $|S| = \sum_{x \in X} |\mathrm{Stab}(x)|$.
-For $x$ in orbit $O$, $|\mathrm{Stab}(x)| = |G|/|O|$. So
+$|S| = \sum_{g \in G} |\mathrm{Fix}(g)|$. Grouping by $x$:
+$|S| = \sum_{x \in X} |\mathrm{Stab}(x)|$. For $x$ in orbit $O$, $|\mathrm{Stab}(x)| = |G|/|O|$. So
 $\sum_{x \in O} |\mathrm{Stab}(x)| = |O| \cdot |G|/|O| = |G|$. Summing over all orbits:
 $|S| = |G| \cdot (\mathrm{number\ of\ orbits})$. $\blacksquare$
 
@@ -907,8 +909,8 @@ divisible by $p$. By the orbit-stabilizer theorem, $|\mathrm{Stab}(S)| = |G|/|\m
 divisible by $p^n$. For $s \in S$Left multiplication by $s$ is a bijection $S \to sS$And
 $sS \subseteq S$ since $\mathrm{Stab}(S) \cdot S = S$. Since $|sS| = |S| = p^n$We get $sS = S$So
 $s \in \mathrm{Stab}(S)$. Thus $S \subseteq \mathrm{Stab}(S)$Giving $p^n \leq |\mathrm{Stab}(S)|$.
-Since $|\mathrm{Stab}(S)|$ divides $p^n m$ and is divisible by $p^n$We have $|\mathrm{Stab}(S)| = p^n$
-And $\mathrm{Stab}(S)$ is a Sylow $p$-subgroup. $\blacksquare$
+Since $|\mathrm{Stab}(S)|$ divides $p^n m$ and is divisible by $p^n$We have
+$|\mathrm{Stab}(S)| = p^n$ And $\mathrm{Stab}(S)$ is a Sylow $p$-subgroup. $\blacksquare$
 
 ### 7.3 Applications
 
@@ -917,8 +919,8 @@ Is cyclic.
 
 _Proof._ By Sylow's third theorem, $n_q \equiv 1 \pmod{q}$ and $n_q$ divides $p$. Since $p \lt q$
 $n_q = 1$So the Sylow $q$-subgroup $Q$ is normal. Similarly, $n_p \equiv 1 \pmod{p}$ and $n_p$
-Divides $q$. Since $p \nmid (q-1)$, $n_p \neq q$So $n_p = 1$And the Sylow $p$-subgroup $P$ Is normal.
-Since $P \cap Q = \{e\}$ (their orders are coprime) and $|PQ| = pq = |G|$ We have
+Divides $q$. Since $p \nmid (q-1)$, $n_p \neq q$So $n_p = 1$And the Sylow $p$-subgroup $P$ Is
+normal. Since $P \cap Q = \{e\}$ (their orders are coprime) and $|PQ| = pq = |G|$ We have
 $G \cong P \times Q \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z} \cong \mathbb{Z}/pq\mathbb{Z}$.
 $\blacksquare$
 
@@ -977,8 +979,8 @@ $n_3 \in \{1, 4\}$. The Sylow $3$-subgroups are generated by $3$-cycles. There a
 $\binom{4}{3} \cdot 2 = 8$ elements of order $3$And each subgroup of order $3$ Contains $2$ such
 elements. So $n_3 = 8/2 = 4$.
 
-The four Sylow $3$-subgroups are:
-$\langle (1\ 2\ 3) \rangle$, $\langle (1\ 2\ 4) \rangle$, $\langle (1\ 3\ 4) \rangle$, $\langle (2\ 3\ 4) \rangle$.
+The four Sylow $3$-subgroups are: $\langle (1\ 2\ 3) \rangle$, $\langle (1\ 2\ 4) \rangle$,
+$\langle (1\ 3\ 4) \rangle$, $\langle (2\ 3\ 4) \rangle$.
 
 **Sylow $2$-subgroups** (order $8$). $n_2 \equiv 1 \pmod{2}$ and $n_2$ divides $3$ So
 $n_2 \in \{1, 3\}$. A Sylow $2$-subgroup is isomorphic to $D_4$ (the dihedral group of order $8$).
@@ -1137,9 +1139,8 @@ $\phi(a+bi)\phi(c+di) = (a+2b)(c+2d) + 5\mathbb{Z} = (ac + 2ad + 2bc + 4bd) + 5\
 These differ by $5bd + 5\mathbb{Z} = 0 + 5\mathbb{Z}$ since $5bd$ is a multiple of $5$. So $\phi$
 preserves Multiplication. Additivity is clear. Also $\phi(1) = 1 + 5\mathbb{Z}$. ✓
 
-Surjectivity:
-$\phi(1) = 1$, $\phi(i) = 2$, $\phi(2) = 2$, $\phi(2i) = 4$, $\phi(1+i) = 3$, $\phi(1+2i) = 5 \equiv 0$. We
-get all residues $0, 1, 2, 3, 4$So $\phi$ is surjective.
+Surjectivity: $\phi(1) = 1$, $\phi(i) = 2$, $\phi(2) = 2$, $\phi(2i) = 4$, $\phi(1+i) = 3$,
+$\phi(1+2i) = 5 \equiv 0$. We get all residues $0, 1, 2, 3, 4$So $\phi$ is surjective.
 
 Kernel: $\ker(\phi) = \{a + bi : a + 2b \equiv 0 \pmod{5}\}$. For example, $1 + 2i \in \ker(\phi)$
 since $1 + 4 = 5 \equiv 0 \pmod{5}$. Also $(1 + 2i)(1 - 2i) = 5 \in \ker(\phi)$. In fact,
@@ -1253,7 +1254,8 @@ $\mathbb{Z}/(mn) \cong \mathbb{Z}/(m) \times \mathbb{Z}/(n)$.
 _Proof._ Apply Theorem 9.5 with $I = (m)$, $J = (n)$. Since $\gcd(m, n) = 1$We have
 $(m) + (n) = (1) = \mathbb{Z}$. Also $(m) \cap (n) = (\mathrm{lcm}(m, n)) = (mn)$. $\blacksquare$
 
-**Problem.** Find all solutions to $x \equiv 2 \pmod{3}$, $x \equiv 3 \pmod{5}$, $x \equiv 1 \pmod{7}$.
+**Problem.** Find all solutions to $x \equiv 2 \pmod{3}$, $x \equiv 3 \pmod{5}$,
+$x \equiv 1 \pmod{7}$.
 
 <details>
 <summary>Solution</summary>
@@ -1350,8 +1352,8 @@ $\gcd(x^4 + x^3 + x^2 + x + 1, x^3 + 1) = 1$. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-_Solution._ By the rational root theorem, possible rational roots are $\pm 1, \pm 3$.
-$f(1) = -1$, $f(-1) = 7$, $f(3) = 216$, $f(-3) = -269$. No rational roots.
+_Solution._ By the rational root theorem, possible rational roots are $\pm 1, \pm 3$. $f(1) = -1$,
+$f(-1) = 7$, $f(3) = 216$, $f(-3) = -269$. No rational roots.
 
 Since $\deg(f) = 5$If $f$ is reducible, it must have an irreducible factor of degree $1$ or $2$. No
 degree-$1$ factor means no rational root. We check for degree-$2$ factors by reducing modulo $2$:
@@ -1545,8 +1547,8 @@ $\blacksquare$
 <summary>Solution</summary>
 
 _Solution._ The minimal polynomial of $\sqrt[4]{2}$ is $x^4 - 2$ (irreducible by Eisenstein with
-$p = 2$), So $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$. The roots of $x^4 - 2$ are
-$\sqrt[4]{2}$, $i\sqrt[4]{2}$ $-\sqrt[4]{2}$, $-i\sqrt[4]{2}$. The root $i\sqrt[4]{2}$ is not in
+$p = 2$), So $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$. The roots of $x^4 - 2$ are $\sqrt[4]{2}$,
+$i\sqrt[4]{2}$ $-\sqrt[4]{2}$, $-i\sqrt[4]{2}$. The root $i\sqrt[4]{2}$ is not in
 $\mathbb{Q}(\sqrt[4]{2}) \subset \mathbb{R}$.
 
 Therefore $\mathbb{Q}(\sqrt[4]{2})$ is not the splitting field of $x^4 - 2$And
@@ -1620,8 +1622,8 @@ the splitting field of a separable polynomial over $F$.
 
 **Problem.** Find the Galois group of $x^3 - 2$ over $\mathbb{Q}$.
 
-_Solution._ The roots of $x^3 - 2$ are $\sqrt[3]{2}$, $\omega\sqrt[3]{2}$, $\omega^2\sqrt[3]{2}$ Where
-$\omega = e^{2\pi i/3}$ is a primitive cube root of unity. The splitting field is
+_Solution._ The roots of $x^3 - 2$ are $\sqrt[3]{2}$, $\omega\sqrt[3]{2}$, $\omega^2\sqrt[3]{2}$
+Where $\omega = e^{2\pi i/3}$ is a primitive cube root of unity. The splitting field is
 $E = \mathbb{Q}(\sqrt[3]{2}, \omega)$. We have
 $[E : \mathbb{Q}] = [E : \mathbb{Q}(\sqrt[3]{2})]
 \cdot [\mathbb{Q}(\sqrt[3]{2}) : \mathbb{Q}] = 2 \cdot 3 = 6$.
@@ -1685,8 +1687,9 @@ $\mathrm{Gal}(x^3 - 3x + 1) = A_3 \cong \mathbb{Z}/3\mathbb{Z}$.
 <details>
 <summary>Solution</summary>
 
-_Solution._ The roots are $\alpha_1 = \sqrt[4]{2}$, $\alpha_2 = i\sqrt[4]{2}$, $\alpha_3 = -\sqrt[4]{2}$
-$\alpha_4 = -i\sqrt[4]{2}$. The splitting field is $E = \mathbb{Q}(\sqrt[4]{2}, i)$.
+_Solution._ The roots are $\alpha_1 = \sqrt[4]{2}$, $\alpha_2 = i\sqrt[4]{2}$,
+$\alpha_3 = -\sqrt[4]{2}$ $\alpha_4 = -i\sqrt[4]{2}$. The splitting field is
+$E = \mathbb{Q}(\sqrt[4]{2}, i)$.
 
 $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$ (since $x^4 - 2$ is irreducible by Eisenstein).
 $i \notin \mathbb{Q}(\sqrt[4]{2}) \subset \mathbb{R}$So $[E : \mathbb{Q}(\sqrt[4]{2})] = 2$. Thus
@@ -1819,11 +1822,11 @@ Taking all products, the six abelian groups of order 72 are:
 _Solution._ Suppose $N \trianglelefteq S_4$ with $|N| = 8$. By Lagrange, $[S_4 : N] = 24/8 = 3$. The
 action of $S_4$ on the cosets of $N$ gives a homomorphism $\phi : S_4 \to S_3$. Since $N$ is normal,
 $\ker(\phi) \subseteq N$So $|\ker(\phi)|$ divides $8$. Since $\mathrm{im}(\phi) \subseteq S_3$ has
-order dividing $6$, $|\ker(\phi)|$ divides $24/6 = 4$. But $|\ker(\phi)|$ divides $8$So $|\ker(\phi)|$
-divides $\gcd(8, 4) = 4$. Since $\ker(\phi) \subseteq N$ and $|N| = 8$And $|\ker(\phi)|$ divides
-$4$This is possible. However, we need $\ker(\phi) = N$ (since $N$ is the kernel of the action on
-cosets). Then $|\ker(\phi)| = 8$Contradicting $|\ker(\phi)| \leq 4$. So no such $N$ exists.
-$\blacksquare$
+order dividing $6$, $|\ker(\phi)|$ divides $24/6 = 4$. But $|\ker(\phi)|$ divides $8$So
+$|\ker(\phi)|$ divides $\gcd(8, 4) = 4$. Since $\ker(\phi) \subseteq N$ and $|N| = 8$And
+$|\ker(\phi)|$ divides $4$This is possible. However, we need $\ker(\phi) = N$ (since $N$ is the
+kernel of the action on cosets). Then $|\ker(\phi)| = 8$Contradicting $|\ker(\phi)| \leq 4$. So no
+such $N$ exists. $\blacksquare$
 
 ### 15.2 Ring Theory Example
 
@@ -1867,8 +1870,8 @@ _Solution._ This result is known as the **Schur-Zassenhaus theorem**. We prove a
 $H$ is abelian. Let $|H| = m$ and $[G : H] = n$ with $\gcd(m, n) = 1$.
 
 Consider the action of $G$ on $H$ by conjugation. Since $H$ is abelian and normal, $G$ acts by
-Automorphisms on $H$. The group of automorphisms of $H$, $\mathrm{Aut}(H)$Has order dividing $|H|!$But
-we need a more refined argument.
+Automorphisms on $H$. The group of automorphisms of $H$, $\mathrm{Aut}(H)$Has order dividing
+$|H|!$But we need a more refined argument.
 
 Here is a cleaner approach for the case when one factor is cyclic. Let $G/H = \langle gH \rangle$ be
 cyclic (which always holds when $[G : H]$ is the smallest prime dividing $|G|$). Pick a
@@ -1934,19 +1937,19 @@ These are the only two possibilities, so there are exactly two groups of order $
 
 The following table summarizes the classification of groups of small order:
 
-| Order | Groups                                                                                                                                           |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1     | $\{e\}$                                                                                                                                          |
-| 2     | $\mathbb{Z}/2\mathbb{Z}$                                                                                                                         |
-| 3     | $\mathbb{Z}/3\mathbb{Z}$                                                                                                                         |
-| 4     | $\mathbb{Z}/4\mathbb{Z}$, $V_4$                                                                                                                    |
-| 5     | $\mathbb{Z}/5\mathbb{Z}$                                                                                                                         |
-| 6     | $\mathbb{Z}/6\mathbb{Z}$, $S_3$                                                                                                                    |
-| 7     | $\mathbb{Z}/7\mathbb{Z}$                                                                                                                         |
+| Order | Groups                                                                                                                                                   |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | $\{e\}$                                                                                                                                                  |
+| 2     | $\mathbb{Z}/2\mathbb{Z}$                                                                                                                                 |
+| 3     | $\mathbb{Z}/3\mathbb{Z}$                                                                                                                                 |
+| 4     | $\mathbb{Z}/4\mathbb{Z}$, $V_4$                                                                                                                          |
+| 5     | $\mathbb{Z}/5\mathbb{Z}$                                                                                                                                 |
+| 6     | $\mathbb{Z}/6\mathbb{Z}$, $S_3$                                                                                                                          |
+| 7     | $\mathbb{Z}/7\mathbb{Z}$                                                                                                                                 |
 | 8     | $\mathbb{Z}/8\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, $(\mathbb{Z}/2\mathbb{Z})^3$, $D_4$, $Q_8$                             |
-| 9     | $\mathbb{Z}/9\mathbb{Z}$, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$                                                                   |
-| 10    | $\mathbb{Z}/10\mathbb{Z}$, $D_5$                                                                                                                   |
-| 11    | $\mathbb{Z}/11\mathbb{Z}$                                                                                                                        |
+| 9     | $\mathbb{Z}/9\mathbb{Z}$, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$                                                                         |
+| 10    | $\mathbb{Z}/10\mathbb{Z}$, $D_5$                                                                                                                         |
+| 11    | $\mathbb{Z}/11\mathbb{Z}$                                                                                                                                |
 | 12    | $\mathbb{Z}/12\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, $A_4$, $D_6$, $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/4\mathbb{Z}$ |
 
 **Proposition 16.1.** Every group of prime order is cyclic, and every group of order $p^2$ (where
@@ -1958,7 +1961,8 @@ _Proof._ For prime order, see Section 3.3. For order $p^2$See Corollary 6.6. $\b
 **Proposition 16.2.** There are exactly five groups of order $8$.
 
 _Proof._ The abelian groups of order $8$ are classified by the structure theorem:
-$\mathbb{Z}/8\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, $(\mathbb{Z}/2\mathbb{Z})^3$.
+$\mathbb{Z}/8\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$,
+$(\mathbb{Z}/2\mathbb{Z})^3$.
 
 For non-abelian groups of order $8$: by Theorem 6.5, $|Z(G)| \geq 2$. If $|Z(G)| = 4$ Then $G/Z(G)$
 has order $2$ and is cyclic, making $G$ abelian (contradiction). So $|Z(G)| = 2$ and
@@ -2090,10 +2094,12 @@ normal.
 <details>
 <summary>Solution</summary>
 
-_Solution._ $D_4 = \{e, r, r^2, r^3, s, rs, r^2s, r^3s\}$ where $r^4 = e$, $s^2 = e$, $srs = r^{-1}$.
+_Solution._ $D_4 = \{e, r, r^2, r^3, s, rs, r^2s, r^3s\}$ where $r^4 = e$, $s^2 = e$,
+$srs = r^{-1}$.
 
 Elements of order $2$: $r^2$, $s$, $rs$, $r^2s$, $r^3s$. So there are five subgroups of order $2$:
-$\langle r^2 \rangle$, $\langle s \rangle$, $\langle rs \rangle$, $\langle r^2s \rangle$, $\langle r^3s \rangle$.
+$\langle r^2 \rangle$, $\langle s \rangle$, $\langle rs \rangle$, $\langle r^2s \rangle$,
+$\langle r^3s \rangle$.
 
 For normality: $r r^2 r^{-1} = r^2$ and $s r^2 s = r^{-2} = r^2$So
 $\langle r^2 \rangle \trianglelefteq D_4$. But
@@ -2134,10 +2140,10 @@ $1$), $\langle 6 \rangle = \{0, 6\}$ (order $2$), $\langle 4 \rangle = \{0, 4, 8
 $\langle 3 \rangle = \{0, 3, 6, 9\}$ (order $4$), $\langle 2 \rangle = \{0, 2, 4, 6, 8, 10\}$ (order
 $6$), $\langle 1 \rangle = \mathbb{Z}/12\mathbb{Z}$ (order $12$).
 
-The subgroup lattice (Hasse diagram): $\mathbb{Z}/12\mathbb{Z}$ connects to
-$\langle 2 \rangle$, $\langle 3 \rangle$, $\langle 4 \rangle$. $\langle 2 \rangle$ connects to
-$\langle 4 \rangle$ and $\langle 6 \rangle$. $\langle 3 \rangle$ connects to $\langle 6 \rangle$.
-$\langle 4 \rangle$ and $\langle 6 \rangle$ connect to $\{0\}$. $\blacksquare$
+The subgroup lattice (Hasse diagram): $\mathbb{Z}/12\mathbb{Z}$ connects to $\langle 2 \rangle$,
+$\langle 3 \rangle$, $\langle 4 \rangle$. $\langle 2 \rangle$ connects to $\langle 4 \rangle$ and
+$\langle 6 \rangle$. $\langle 3 \rangle$ connects to $\langle 6 \rangle$. $\langle 4 \rangle$ and
+$\langle 6 \rangle$ connect to $\{0\}$. $\blacksquare$
 
 </details>
 
@@ -2150,8 +2156,8 @@ and verify $H$ is not normal.
 <summary>Solution</summary>
 
 _Solution._ $H = \{e, (1\ 2\ 3\ 4), (1\ 3)(2\ 4), (1\ 4\ 3\ 2)\}$ has order $4$ $[S_4 : H] = 6$.
-Choose representatives from $S_4 \setminus H$E.g., $(1\ 2)$, $(1\ 3)$ $(2\ 3)$, $(1\ 2\ 3)$, $(1\ 3\ 2)$.
-The six cosets are: $H$, $(1\ 2)H$, $(1\ 3)H$, $(2\ 3)H$, $(1\ 2\ 3)H$, $(1\ 3\ 2)H$.
+Choose representatives from $S_4 \setminus H$E.g., $(1\ 2)$, $(1\ 3)$ $(2\ 3)$, $(1\ 2\ 3)$,
+$(1\ 3\ 2)$. The six cosets are: $H$, $(1\ 2)H$, $(1\ 3)H$, $(2\ 3)H$, $(1\ 2\ 3)H$, $(1\ 3\ 2)H$.
 
 To show $H$ is not normal: $(1\ 2)(1\ 2\ 3\ 4)(1\ 2) = (2\ 1\ 3\ 4) = (1\ 3\ 4\ 2) \notin H$ (since
 $(1\ 3\ 4\ 2)$ is not among the four elements of $H$ listed above). $\blacksquare$
@@ -2183,10 +2189,10 @@ _If you get this wrong, revise: Section 3.5, Corollary 3.7._
 <summary>Solution</summary>
 
 _Solution._ $Q_8 = \{1, -1, i, -i, j, -j, k, -k\}$ with $|Q_8| = 8$ and $Z(Q_8) = \{1, -1\}$ of
-order $2$. The quotient has order $4$. The cosets are
-$Z = \{1, -1\}$, $iZ = \{i, -i\}$, $jZ = \{j, -j\}$, $kZ = \{k, -k\}$. Every non-identity element
-satisfies $(iZ)^2 = i^2Z = (-1)Z = Z$So every element has order $1$ or $2$. The quotient is abelian
-(since $Z(Q_8)$ contains the commutator subgroup). Thus
+order $2$. The quotient has order $4$. The cosets are $Z = \{1, -1\}$, $iZ = \{i, -i\}$,
+$jZ = \{j, -j\}$, $kZ = \{k, -k\}$. Every non-identity element satisfies
+$(iZ)^2 = i^2Z = (-1)Z = Z$So every element has order $1$ or $2$. The quotient is abelian (since
+$Z(Q_8)$ contains the commutator subgroup). Thus
 $Q_8 / Z(Q_8) \cong V_4 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$. $\blacksquare$
 
 </details>
@@ -2277,8 +2283,8 @@ _If you get this wrong, revise: Section 6.2, Theorem 6.2._
 _Solution._ $|S_3| = 6 = 2 \cdot 3$. Sylow $2$-subgroups have order $2$. $n_2 \equiv 1 \pmod{2}$ and
 $n_2$ divides $3$So $n_2 \in \{1, 3\}$. The elements of order $2$ in $S_3$ are the three
 transpositions: $(1\ 2)$, $(1\ 3)$, $(2\ 3)$. Each generates a subgroup of order $2$:
-$\langle (1\ 2) \rangle$, $\langle (1\ 3) \rangle$, $\langle (2\ 3) \rangle$. So $n_2 = 3$ and the three
-Sylow $2$-subgroups are these. $\blacksquare$
+$\langle (1\ 2) \rangle$, $\langle (1\ 3) \rangle$, $\langle (2\ 3) \rangle$. So $n_2 = 3$ and the
+three Sylow $2$-subgroups are these. $\blacksquare$
 
 </details>
 
@@ -2313,9 +2319,9 @@ _Solution._ $n_7 \equiv 1 \pmod{7}$ and $n_7$ divides $3$. Since $7 \nmid (3 - 1
 $n_7 = 1$. So the Sylow $7$-subgroup $Q \cong \mathbb{Z}/7\mathbb{Z}$ is normal.
 
 $n_3 \equiv 1 \pmod{3}$ and $n_3$ divides $7$So $n_3 \in \{1, 7\}$. If $n_3 = 1$Both Sylow subgroups
-are normal and $G \cong \mathbb{Z}/21\mathbb{Z}$ (abelian). If $n_3 = 7$, $G$ is a semidirect product
-$\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ Which is non-abelian. This group exists: it
-is the unique non-abelian group of order $21$. So $G$ need not be abelian. $\blacksquare$
+are normal and $G \cong \mathbb{Z}/21\mathbb{Z}$ (abelian). If $n_3 = 7$, $G$ is a semidirect
+product $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ Which is non-abelian. This group
+exists: it is the unique non-abelian group of order $21$. So $G$ need not be abelian. $\blacksquare$
 
 </details>
 
@@ -2410,12 +2416,12 @@ By the tower law: $[\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}] = 2 \cdot 2 = 4
 
 The Galois group consists of four automorphisms determined by their action on $\sqrt{2}$ and
 $\sqrt{3}$: $\mathrm{id}$: $\sqrt{2} \mapsto \sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$ $\sigma$:
-$\sqrt{2} \mapsto -\sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$ $\tau$:
-$\sqrt{2} \mapsto \sqrt{2}$, $\sqrt{3} \mapsto -\sqrt{3}$ $\sigma\tau$:
-$\sqrt{2} \mapsto -\sqrt{2}$, $\sqrt{3} \mapsto -\sqrt{3}$
+$\sqrt{2} \mapsto -\sqrt{2}$, $\sqrt{3} \mapsto \sqrt{3}$ $\tau$: $\sqrt{2} \mapsto \sqrt{2}$,
+$\sqrt{3} \mapsto -\sqrt{3}$ $\sigma\tau$: $\sqrt{2} \mapsto -\sqrt{2}$,
+$\sqrt{3} \mapsto -\sqrt{3}$
 
-Since all non-identity elements have order
-$2$, $\mathrm{Gal}(\mathbb{Q}(\sqrt{2}, \sqrt{3})/\mathbb{Q}) \cong V_4$. $\blacksquare$
+Since all non-identity elements have order $2$,
+$\mathrm{Gal}(\mathbb{Q}(\sqrt{2}, \sqrt{3})/\mathbb{Q}) \cong V_4$. $\blacksquare$
 
 </details>
 
@@ -2596,7 +2602,7 @@ document.
 | Index 2 subgroups are normal                            | Corollary 3.7      |
 | First Isomorphism Theorem                               | Theorem 5.3        |
 | Correspondence Theorem                                  | Theorem 5.6        |
-| $\mathrm{Inn}(G) \cong G/Z(G)$                           | Proposition 5.7    |
+| $\mathrm{Inn}(G) \cong G/Z(G)$                          | Proposition 5.7    |
 | Orbit-Stabilizer Theorem                                | Theorem 6.2        |
 | Class Equation                                          | Theorem 6.4        |
 | Center of $p$-group is non-trivial                      | Theorem 6.5        |
