@@ -1,0 +1,347 @@
+---
+title: 'AP US History Diagnostic Test'
+slug: diagnostic-test
+description:
+  'AP US History diagnostic test covering colonial America, Revolution, Civil War,
+  industrialisation, Progressivism, and modern America for exam preparation.'
+tags:
+  - ap
+  - ap-history
+---
+
+import DiagnosticTest from '@site/src/components/interactive/DiagnosticTest';
+
+## AP US History Diagnostic Test
+
+This diagnostic test covers the full AP US History syllabus. There are 20 questions spanning 5 core
+topic areas. The test uses adaptive difficulty, selecting questions based on your performance to
+target areas of weakness.
+
+**Recommended time:** 35 minutes. The test presents up to 15 questions drawn from the pool,
+adaptively ordered by your answers.
+
+---
+
+## How the Diagnostic Scoring Works
+
+After completing the test, you receive a results breakdown:
+
+- **Topic Breakdown** -- each topic shows your score, colour-coded green (strong, 80%+), amber
+  (moderate, 50-79%), or red (weak, below 50%).
+- **Strengths** -- topics where you scored 80% or above.
+- **Needs Improvement** -- topics where you scored below 50%.
+- **Recommended Study Topics** -- all topics where you did not score in the strong range.
+
+The adaptive engine targets weak topics first, so your weakest areas are tested more thoroughly. Use
+the results to prioritise which topic pages to revise.
+
+---
+
+export const questions = [
+  {
+    id: 'ca1',
+    topic: 'Colonial America',
+    difficulty: 1,
+    question:
+      'Which colonial region was most characterised by small-scale farming, religious diversity, and a relatively egalitarian social structure?',
+    options: ['New England', 'Middle Colonies', 'Southern Colonies', 'Caribbean Colonies'],
+    correctIndex: 1,
+    explanation:
+      'The Middle Colonies (New York, New Jersey, Pennsylvania, Delaware) were the most diverse and egalitarian region. Pennsylvania, founded by William Penn as a Quaker haven, attracted settlers of many religious denominations. The economy was based on small to medium farms rather than plantation agriculture. The region had no established church, and its social structure was more fluid than the aristocratic South or the religiously uniform New England.',
+  },
+  {
+    id: 'ca2',
+    topic: 'Colonial America',
+    difficulty: 2,
+    question: 'The headright system, used primarily in the Southern colonies, was designed to:',
+    options: [
+      'Protect the rights of Native American landowners',
+      'Encourage settlement by granting land to those who paid for their own passage or the passage of others',
+      'Establish a theocratic government based on biblical law',
+      'Create a system of collective land ownership among settlers',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The headright system granted 50 acres of land to each person who paid for their own passage to the colony, and additional land for each additional person whose passage they sponsored. This system was used in Virginia and other Southern colonies to encourage immigration and provide a labour force. It also benefited wealthy planters who could accumulate large estates by sponsoring many indentured servants. The system promoted the expansion of plantation agriculture and the growth of the planter elite.',
+  },
+  {
+    id: 'ca3',
+    topic: 'Colonial America',
+    difficulty: 3,
+    question:
+      'The Salem witch trials (1692-1693) are best understood in the context of which broader historical developments?',
+    options: [
+      'Resistance to British taxation policies',
+      'Religious anxiety, social tensions, and frontier instability in Puritan New England',
+      'Conflict between French and British colonists over territorial claims',
+      'The early stages of the Enlightenment challenging religious authority',
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Salem witch trials emerged from a complex combination of factors: Puritan religious anxieties about the devil's influence, social tensions between wealthy and poorer Salem residents, recent Indian attacks on the frontier that created a climate of fear, and generational conflicts within the community. The trials resulted in 20 executions and ended when the governor dissolved the special court. They reflected the broader religious intensity and social stresses of late 17th-century Puritan New England.",
+  },
+  {
+    id: 'ca4',
+    topic: 'Colonial America',
+    difficulty: 4,
+    question:
+      'The Atlantic slave trade had the greatest demographic and economic impact on which colonial region?',
+    options: ['New England', 'Middle Colonies', 'Southern Colonies', 'All regions equally'],
+    correctIndex: 2,
+    explanation:
+      'The Southern Colonies were most transformed by the Atlantic slave trade. The development of plantation agriculture (tobacco in Virginia and Maryland, rice and indigo in South Carolina) created enormous demand for enslaved labour. By 1750, enslaved Africans constituted approximately 40% of the Southern population, with even higher concentrations in South Carolina. The slave-based economy shaped social hierarchy, political power, and economic development throughout the region, creating deep racial and class divisions that persisted for centuries.',
+  },
+  {
+    id: 'rv1',
+    topic: 'Revolution and Early Republic',
+    difficulty: 1,
+    question:
+      'The Declaration of Independence (1776) primarily drew upon which intellectual tradition?',
+    options: [
+      'Divine right of kings',
+      'Enlightenment ideas of natural rights and social contract',
+      'Feudal obligations and hierarchy',
+      'Mercantilist economic theory',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Thomas Jefferson\'s Declaration of Independence drew heavily on Enlightenment philosophy, particularly John Locke\'s theories of natural rights and the social contract. Locke argued that all people possess inalienable rights to life, liberty, and property, and that governments derive their just powers from the consent of the governed. Jefferson adapted these ideas (changing "property" to "the pursuit of happiness") to justify the American colonies\' break from Britain, arguing that King George III had violated the colonists\' natural rights.',
+  },
+  {
+    id: 'rv2',
+    topic: 'Revolution and Early Republic',
+    difficulty: 2,
+    question: 'The Federalist Papers were written primarily to:',
+    options: [
+      'Argue against ratification of the Constitution',
+      'Support ratification of the Constitution by explaining its structure and defending its principles',
+      'Propose amendments to the Constitution known as the Bill of Rights',
+      'Document the proceedings of the Constitutional Convention',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The Federalist Papers (written by Alexander Hamilton, James Madison, and John Jay under the pseudonym "Publius") were a series of 85 essays published in New York newspapers between 1787 and 1788. Their primary purpose was to persuade New Yorkers to ratify the proposed Constitution by explaining the need for a stronger federal government, defending the separation of powers, and addressing concerns about potential tyranny. They remain the most important commentary on the Constitution and are frequently cited in Supreme Court decisions.',
+  },
+  {
+    id: 'rv3',
+    topic: 'Revolution and Early Republic',
+    difficulty: 3,
+    question:
+      "Thomas Jefferson's Louisiana Purchase (1803) presented a constitutional dilemma because:",
+    options: [
+      'The territory was claimed by both France and Spain simultaneously',
+      'The Constitution did not explicitly grant the president power to acquire foreign territory',
+      'Congress refused to appropriate funds for the purchase',
+      'The Federalists demanded the territory be returned to Native American tribes',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Jefferson, a strict constructionist who believed the federal government should exercise only powers explicitly granted by the Constitution, faced an irony when he purchased the Louisiana Territory. The Constitution contained no provision for presidential acquisition of foreign territory. Jefferson ultimately used his treaty-making powers to justify the purchase, and the Senate ratified the treaty. This episode illustrates the tension between strict and loose constitutional interpretation that has characterised American politics since the founding.',
+  },
+  {
+    id: 'rv4',
+    topic: 'Revolution and Early Republic',
+    difficulty: 4,
+    question:
+      "The Marshall Court's decision in Marbury v. Madison (1803) established which principle of American government?",
+    options: [
+      'The supremacy of state courts over federal courts',
+      'Judicial review -- the power of federal courts to declare laws unconstitutional',
+      "The president's right to remove judicial appointees at will",
+      'Congressional authority to regulate interstate commerce',
+    ],
+    correctIndex: 1,
+    explanation:
+      "Marbury v. Madison (1803) established the principle of judicial review -- the Supreme Court's power to determine whether laws passed by Congress or actions taken by the executive branch are constitutional. Chief Justice John Marshall, in a masterful legal opinion, declared that the law granting Marbury his commission was unconstitutional. This decision significantly strengthened the judiciary as a co-equal branch of government and remains one of the most important cases in American constitutional law.",
+  },
+  {
+    id: 'cw1',
+    topic: 'Civil War and Reconstruction',
+    difficulty: 1,
+    question: 'The Emancipation Proclamation (1863) freed enslaved people in which areas?',
+    options: [
+      'All states in the Union and Confederacy',
+      'Only in the border states that remained loyal to the Union',
+      'Only in areas currently in rebellion against the Union (Confederate states)',
+      'Only in the Northern states',
+    ],
+    correctIndex: 2,
+    explanation:
+      "Lincoln's Emancipation Proclamation (issued January 1, 1863) declared free all enslaved people in areas currently in rebellion against the Union. It did NOT free enslaved people in the border states (Maryland, Delaware, Kentucky, Missouri) that remained in the Union, nor in areas of the Confederacy already under Union control. The proclamation was a wartime measure under Lincoln's authority as commander-in-chief, and its practical effect depended on Union military advances. It transformed the Civil War into a war for freedom as well as union.",
+  },
+  {
+    id: 'cw2',
+    topic: 'Civil War and Reconstruction',
+    difficulty: 2,
+    question:
+      'Which of the following best describes the economic impact of the Civil War on the Northern economy?',
+    options: [
+      'Severe economic depression caused by disruption of Southern trade',
+      'Economic boom driven by industrial expansion, government contracts, and wartime production',
+      'No significant change in the Northern economy',
+      'Collapse of the manufacturing sector due to labour shortages',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The Civil War stimulated the Northern economy significantly. Government demand for weapons, uniforms, food, and transportation infrastructure fuelled industrial expansion. The war accelerated the growth of railroads, steel production, and manufacturing. Congress passed legislation that further promoted economic development, including the Pacific Railway Act, the Homestead Act, and the Morrill Land-Grant College Act. The war effectively completed the Industrial Revolution in the North, laying the foundation for post-war economic dominance.',
+  },
+  {
+    id: 'cw3',
+    topic: 'Civil War and Reconstruction',
+    difficulty: 3,
+    question: 'The Compromise of 1877 effectively ended Reconstruction by:',
+    options: [
+      'Passing a constitutional amendment to limit federal authority in the South',
+      'Withdrawing federal troops from the South in exchange for Republican Rutherford B. Hayes winning the disputed 1876 election',
+      'Repealing the 13th, 14th, and 15th Amendments',
+      'Establishing a coalition government between Republicans and Democrats in the South',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The Compromise of 1877 resolved the disputed 1876 presidential election between Republican Rutherford B. Hayes and Democrat Samuel Tilden. In exchange for Democrats accepting Hayes as president, Republicans agreed to withdraw the remaining federal troops from the South, effectively ending military Reconstruction. This allowed Southern Democrats (Redeemers) to regain control of state governments, leading to the establishment of Jim Crow laws, the disenfranchisement of Black voters, and the rollback of many Reconstruction-era reforms.',
+  },
+  {
+    id: 'gw1',
+    topic: 'Gilded Age and Progressivism',
+    difficulty: 1,
+    question: 'Which of the following was a key feature of the Gilded Age economy?',
+    options: [
+      'Government regulation of large corporations and monopolies',
+      'Rapid industrialisation and the rise of powerful business leaders known as robber barons or captains of industry',
+      'A shift from industrial to agricultural employment',
+      'Decreasing wealth inequality due to labour reform',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The Gilded Age (1870s-1900) was characterised by rapid industrialisation, the rise of massive corporations and monopolies, and the accumulation of enormous wealth by a small number of business leaders (Rockefeller in oil, Carnegie in steel, Morgan in finance, Vanderbilt in railroads). While this period saw tremendous economic growth, it also produced extreme wealth inequality, poor working conditions, political corruption, and frequent labour conflicts. Mark Twain coined the term "Gilded Age" to suggest that the surface prosperity masked deeper social problems.',
+  },
+  {
+    id: 'gw2',
+    topic: 'Gilded Age and Progressivism',
+    difficulty: 2,
+    question:
+      'The Populist movement of the 1890s was primarily a response to the economic struggles of which group?',
+    options: [
+      'Urban factory workers in the Northeast',
+      'Southern and Western farmers facing low crop prices, high railroad rates, and debt',
+      'African Americans in the segregated South',
+      'Immigrants in industrial cities',
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Populist (People's) Party emerged primarily from the economic distress of Southern and Western farmers who faced declining crop prices, rising railroad shipping rates, high interest rates, and mounting debt. Populists advocated for government regulation of railroads, a graduated income tax, free silver (increasing the money supply to cause inflation and ease debt burdens), and direct election of senators. While the party declined after the 1896 election, many of its reforms were later adopted by the Progressive movement.",
+  },
+  {
+    id: 'gw3',
+    topic: 'Gilded Age and Progressivism',
+    difficulty: 3,
+    question: 'The Progressive Era reform of initiative, referendum, and recall was intended to:',
+    options: [
+      'Strengthen the power of political party bosses',
+      'Give citizens more direct control over government and reduce the influence of special interests',
+      'Expand federal authority over state governments',
+      'Restrict immigration from Southern and Eastern Europe',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Initiative (citizens can propose laws by petition), referendum (citizens can vote to approve or reject laws passed by the legislature), and recall (citizens can remove elected officials before their term expires) were Progressive Era reforms designed to make government more democratic and responsive to ordinary citizens rather than special interests and political machines. These reforms were particularly associated with Western states and were part of a broader Progressive effort to combat political corruption and increase public participation in government.',
+  },
+  {
+    id: 'ma1',
+    topic: 'Modern America',
+    difficulty: 1,
+    question:
+      "The GI Bill (Servicemen's Readjustment Act of 1944) provided which major benefits to World War II veterans?",
+    options: [
+      'Free housing and guaranteed government employment',
+      'Low-cost mortgages, tuition payments for college, and unemployment benefits',
+      'Automatic promotion in the military reserves',
+      'Tax exemptions for the duration of their post-war careers',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The GI Bill provided returning WWII veterans with low-cost home loans (mortgages), tuition payments for college or vocational training, and unemployment compensation. It had a transformative effect on American society: millions of veterans attended college (dramatically expanding higher education), purchased homes (fueling suburban growth), and entered the middle class. The GI Bill was one of the most successful social welfare programmes in US history and played a major role in creating the post-war middle-class prosperity.',
+  },
+  {
+    id: 'ma2',
+    topic: 'Modern America',
+    difficulty: 2,
+    question:
+      'The civil rights strategy of nonviolent direct action, including sit-ins and freedom rides, was primarily associated with which organisation?',
+    options: [
+      'The National Association for the Advancement of Colored People (NAACP)',
+      'The Southern Christian Leadership Conference (SCLC) and the Student Nonviolent Coordinating Committee (SNCC)',
+      'The Black Panther Party',
+      'The Nation of Islam',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The SCLC (led by Martin Luther King Jr.) and SNCC (a student-led organisation) were the primary advocates of nonviolent direct action. SCLC organised major campaigns including the Montgomery Bus Boycott, Birmingham campaign, and the March on Washington. SNCC organised sit-ins at lunch counters, freedom rides, and voter registration drives in the Deep South. While the NAACP focused on legal strategies (Brown v. Board), the SCLC and SNCC used mass protest and civil disobedience to challenge segregation directly.',
+  },
+  {
+    id: 'ma3',
+    topic: 'Modern America',
+    difficulty: 3,
+    question:
+      'The Vietnam War significantly impacted American society in which of the following ways?',
+    options: [
+      'It unified public opinion behind government foreign policy',
+      'It caused deep social divisions, undermined trust in government, and contributed to a powerful anti-war movement',
+      'It strengthened the military draft system for future conflicts',
+      'It led to immediate economic prosperity and full employment',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The Vietnam War was the first "television war," bringing images of combat into American living rooms and eroding public support. It created deep generational, political, and cultural divisions between "hawks" (supporters) and "doves" (opponents). The war undermined trust in government following the Pentagon Papers and revelations about misleading official statements. It fueled the anti-war movement, contributed to the youth counterculture, and led to the abolition of the draft (replaced by the all-volunteer force in 1973). The war\'s legacy continued to shape American foreign policy for decades.',
+  },
+  {
+    id: 'ma4',
+    topic: 'Modern America',
+    difficulty: 4,
+    question:
+      'The Reagan administration\'s economic policy of "supply-side economics" (often called "Reaganomics") was based on which theoretical approach?',
+    options: [
+      'Keynesian demand-side economics with increased government spending',
+      'Reducing taxes and government regulation to stimulate investment and economic growth',
+      'Nationalising major industries to ensure economic stability',
+      'Establishing fixed wages and prices to control inflation',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Reaganomics was based on supply-side economic theory, which held that reducing marginal tax rates and government regulation would stimulate investment, production, and economic growth. The key policies were significant tax cuts (Economic Recovery Tax Act of 1981), deregulation of industry, reduced social welfare spending, and increased military spending. This approach marked a significant shift from the Keynesian demand-side policies that had dominated since the New Deal. Critics argued that the policies disproportionately benefited the wealthy and contributed to growing income inequality and large budget deficits.',
+  },
+  {
+    id: 'ma5',
+    topic: 'Modern America',
+    difficulty: 5,
+    question:
+      'Which of the following best describes the significance of the September 11, 2001 attacks on American foreign policy?',
+    options: [
+      'It led to immediate US withdrawal from all overseas military engagements',
+      'It triggered the War on Terror, invasions of Afghanistan and Iraq, expanded executive power, and reshaped national security policy',
+      'It had no lasting impact on American foreign policy or domestic governance',
+      'It resulted in improved diplomatic relations with all Middle Eastern nations',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The 9/11 attacks fundamentally reshaped American foreign and domestic policy. The Bush administration launched the War on Terror, invading Afghanistan to remove the Taliban and pursue al-Qaeda (2001) and Iraq based on claims of WMDs (2003). Domestically, the Patriot Act expanded government surveillance powers, the Department of Homeland Security was created, and debates about national security vs civil liberties intensified. The wars had long-lasting consequences: nation-building challenges, massive expenditure, increased anti-American sentiment, and a permanent shift towards counterterrorism as a central US foreign policy priority.',
+  },
+];
+
+export const handleComplete = (results) => {
+  console.log('Diagnostic test completed:', results);
+};
+
+<DiagnosticTest subject="AP US History" questions={questions} onComplete={handleComplete} />
+
+---
+
+## Topic Coverage
+
+| Topic                      | Questions | Revision Guide                                                |
+| -------------------------- | --------- | ------------------------------------------------------------- |
+| Colonial America           | 4         | [Periods 1-2](/docs/qualifications/ap/history/1-periods-1-2/) |
+| Revolution and Early Rep.  | 4         | [Periods 3-4](/docs/qualifications/ap/history/2-periods-3-4/) |
+| Civil War and Reconstruct. | 3         | [Period 5](/docs/qualifications/ap/history/3-period-5/)       |
+| Gilded Age and Progress.   | 3         | [Periods 6-7](/docs/qualifications/ap/history/4-period-6/)    |
+| Modern America             | 6         | [Periods 7-9](/docs/qualifications/ap/history/5-period-7/)    |

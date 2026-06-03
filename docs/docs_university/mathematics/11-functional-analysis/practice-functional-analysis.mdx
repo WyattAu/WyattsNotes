@@ -1,0 +1,141 @@
+---
+title: Functional Analysis Practice (Interactive)
+tags:
+  - mathematics
+  - university
+slug: university-mathematics/practice-functional-analysis
+description:
+  'Interactive university functional analysis practice with auto-graded questions. Covers Banach
+  spaces, Hilbert spaces, bounded operators, and the four fundamental theorems.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Mathematics -- Functional Analysis Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Banach and Hilbert Spaces
+
+<PracticeProblem
+  question="Which of the following norms on $C[0,1]$ makes it a Banach space?"
+  options={[
+    '$\\|f\\|_\\infty = \\sup_{x \\in [0,1]} |f(x)|$',
+    '$\\|f\\|_1 = \\int_0^1 |f(x)|\\, dx$',
+    '$\\|f\\|_p = \\left(\\int_0^1 |f(x)|^p\\, dx\\right)^{1/p}$ for $1 \\leq p < \\infty$',
+    '$\\|f\\| = |f(0)|$',
+  ]}
+  correctAnswer={0}
+  explanation="$(C[0,1], \|\cdot\|_\infty)$ is complete: uniform limits of continuous functions are continuous. The $L^p$ norms ($1 \leq p < \infty$) do not yield completeness because $L^p$-limits of continuous functions may not be continuous (the completion of $C[0,1]$ in $L^p$-norm is $L^p[0,1]$). The norm $\|f\| = |f(0)|$ fails positive definiteness: any $f$ with $f(0) = 0$ has zero norm."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In a Hilbert space $H$, which of the following characterizes when a norm comes from an inner product?"
+  options={[
+    'The parallelogram law: $\\|x+y\\|^2 + \\|x-y\\|^2 = 2\\|x\\|^2 + 2\\|y\\|^2$',
+    'The triangle inequality',
+    'Homogeneity: $\\|\\alpha x\\| = |\\alpha| \\|x\\|$',
+    'Positive definiteness: $\\|x\\| = 0$ iff $x = 0$',
+  ]}
+  correctAnswer={0}
+  explanation="The Jordan-von Neumann theorem states that a norm $\|\cdot\|$ on a vector space comes from an inner product if and only if it satisfies the parallelogram law. The triangle inequality, homogeneity, and positive definiteness hold for all norms. The parallelogram law is specific to inner product norms and fails, for example, in $\ell^1$ or $\ell^\infty$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Let $e_n$ be the standard basis in $\\ell^2$. Which statement is true?"
+  options={[
+    '$e_n \\to 0$ strongly (in norm) as $n \\to \\infty$',
+    '$e_n \\rightharpoonup 0$ weakly but $\\|e_n\\| = 1$ for all $n$',
+    '$e_n$ has no weakly convergent subsequence',
+    '$e_n$ converges weakly to some nonzero element',
+  ]}
+  correctAnswer={0}
+  explanation="For any $y \in \ell^2$, $\langle e_n, y\rangle = y_n \to 0$ as $n \to \infty$ (since $\sum |y_n|^2 < \infty$ implies $y_n \to 0$). So $e_n \rightharpoonup 0$ weakly. But $\|e_n\| = 1$ for all $n$, so $e_n$ does not converge in norm to $0$. This is a standard example showing weak convergence is strictly weaker than strong convergence."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Let $T : \\ell^2 \\to \\ell^2$ be the right shift operator $T(x_1, x_2, \\ldots) = (0, x_1, x_2, \\ldots)$. What is $\\|T\\|$?"
+  options={['$0$', '$1$', '$\\sqrt{2}$', '$2$']}
+  correctAnswer={0}
+  explanation="$\|T\| = \sup_{\|x\|_2 = 1} \|Tx\|_2 = \sup_{\|x\|_2 = 1} \sqrt{\sum |x_n|^2} = \sup_{\|x\|_2 = 1} \|x\|_2 = 1$. The right shift is an isometry: it preserves the $\ell^2$ norm. Its adjoint is the left shift $T^*(x_1, x_2, \ldots) = (x_2, x_3, \ldots)$, which has norm $1$ but is not an isometry (it kills $x_1$)."
+  difficulty="easy"
+/>
+
+---
+
+### Fundamental Theorems
+
+<PracticeProblem
+  question="Let $T : X \\to Y$ be a bijective bounded linear operator. Under what condition is $T^{-1}$ guaranteed to be bounded?"
+  options={[
+    '$X$ and $Y$ must both be Banach spaces',
+    '$X$ must be finite-dimensional',
+    '$Y$ must be separable',
+    '$T$ must have closed range',
+  ]}
+  correctAnswer={0}
+  explanation="By the Bounded Inverse Theorem (a corollary of the Open Mapping Theorem), if $T : X \to Y$ is a bijective bounded operator between Banach spaces, then $T^{-1} : Y \to X$ is bounded. Completeness of both spaces is essential. Without it, $T^{-1}$ may be unbounded even if $T$ is bounded and bijective."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which theorem guarantees that if $\\{T_n\\}$ is a sequence of bounded operators with $\\sup_n \\|T_n x\\| < \\infty$ for each $x$, then $\\sup_n \\|T_n\\| < \\infty$?"
+  options={[
+    'Hahn-Banach Theorem',
+    'Uniform Boundedness Principle',
+    'Closed Graph Theorem',
+    'Riesz Representation Theorem',
+  ]}
+  correctAnswer={0}
+  explanation="The Uniform Boundedness Principle (Banach-Steinhaus) states: if $X$ is a Banach space and $\{T_\alpha\} \subseteq \mathcal{B}(X, Y)$ is pointwise bounded, then $\sup_\alpha \|T_\alpha\| < \infty$. The proof relies on the Baire Category Theorem. The Hahn-Banach theorem is about extending functionals; the Closed Graph Theorem characterizes boundedness via closed graphs."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Why does the Closed Graph Theorem fail for the differentiation operator $Tf = f'$ on $C[0,1]$ with the supremum norm?"
+  options={[
+    "Because $T$ is not linear",
+    "Because $C^1[0,1]$ is not complete under the $\\|\\cdot\\|_\\infty$ norm of $C[0,1]$",
+    "Because $T$ is not defined on all of $C[0,1]$",
+    "Both (b) and (c) are reasons",
+  ]}
+  correctAnswer={0}
+  explanation"The differentiation operator $Tf = f'$ is defined on $C^1[0,1]$, which is not complete under the $\|\cdot\|_\infty$ norm of $C[0,1]$ (the completion is $C[0,1]$). The Closed Graph Theorem requires both domain and codomain to be Banach spaces. Since $C^1[0,1]$ with this norm is not complete, the theorem does not apply, and indeed $T$ is unbounded (consider $f_n(x) = x^n$)."
+  difficulty="hard"
+/>
+
+---
+
+### Compact Operators and Spectral Theory
+
+<PracticeProblem
+  question="Which of the following is true about a compact operator $T$ on an infinite-dimensional Banach space?"
+  options={[
+    '$T$ maps the closed unit ball to a compact set',
+    '$T$ is always injective',
+    '$T$ has a bounded inverse',
+    '$T$ preserves the dimension of the unit ball',
+  ]}
+  correctAnswer={0}
+  explanation="A compact operator $T$ maps the closed unit ball to a relatively compact set (its closure is compact). In infinite dimensions, the closed unit ball is never compact (Riesz's Lemma), so a compact operator must 'compress' the ball. Compact operators are never invertible on infinite-dimensional spaces: if $T$ were invertible, then $T^{-1}(TB_X) = B_X$ would be compact, contradicting that $B_X$ is not compact."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Let $T$ be a compact self-adjoint operator on a separable Hilbert space $H$. Which statement about its eigenvalues is false?"
+  options={[
+    'All nonzero eigenvalues have finite multiplicity',
+    'The nonzero eigenvalues can accumulate only at $0$',
+    'The eigenvectors form an orthonormal basis for $H$',
+    '$T$ has exactly one eigenvalue',
+  ]}
+  correctAnswer={0}
+  explanation="$T$ can have any number of nonzero eigenvalues (countably many, accumulating only at $0$). For example, the diagonal operator $T(x_1, x_2, \ldots) = (\lambda_1 x_1, \lambda_2 x_2, \ldots)$ with $\lambda_n = 1/n$ has infinitely many eigenvalues. The other statements are true: nonzero eigenvalues have finite multiplicity (compactness), eigenvectors form an orthonormal basis, and nonzero eigenvalues accumulate only at $0$."
+  difficulty="hard"
+/>

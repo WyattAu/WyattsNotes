@@ -1,0 +1,123 @@
+---
+title: 'University CS Practice: Algorithms'
+slug: practice-algorithms
+description:
+  'University-level practice problems on algorithms covering algorithm design paradigms, time
+  complexity analysis, divide-and-conquer, dynamic programming, greedy algorithms, and amortized
+  analysis.'
+tags: [University, Computer Science, Practice]
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# University CS -- Algorithms Practice Problems
+
+10 MCQ questions covering algorithm design paradigms, complexity analysis, divide-and-conquer,
+dynamic programming, greedy algorithms, and amortized analysis. Select an option to check your
+answer and view the explanation.
+
+---
+
+## Algorithm Design Paradigms and Complexity
+
+<PracticeProblem
+  question="Which algorithm design paradigm does Merge Sort belong to?"
+  options={['Divide and Conquer', 'Dynamic Programming', 'Greedy', 'Backtracking']}
+  correctAnswer={0}
+  explanation="Merge Sort divides the array into two halves, recursively sorts each half, and then merges the two sorted halves. The divide step is trivial (splitting at the midpoint), the conquer step is the recursive calls, and the combine step is the merge operation. This is the classic divide-and-conquer pattern."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the time complexity of finding the $k$-th smallest element in an unsorted array of $n$ elements using the expected-time QuickSelect algorithm?"
+  options={[
+    '$O(n)$ expected, $O(n^2)$ worst case',
+    '$O(n \\log n)$ expected',
+    '$O(n)$ worst case',
+    '$O(\\log n)$ expected',
+  ]}
+  correctAnswer={0}
+  explanation="QuickSelect uses a random pivot and recurses on only one partition. Expected number of comparisons is $O(n)$ (similar analysis to expected Quicksort, but recursing on only one side). However, with a bad pivot (e.g., always smallest element), it degrades to $O(n^2)$. The median-of-medians variant guarantees $O(n)$ worst case."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Consider the recurrence $T(n) = 3T(n/2) + n^2$. Using the Master Theorem, what is the asymptotic bound for $T(n)$?"
+  options={[
+    '$\\Theta(n^2)$',
+    '$\\Theta(n^{\\log_2 3})$',
+    '$\\Theta(n^2 \\log n)$',
+    '$\\Theta(n^{\\log_2 3} \\log n)$',
+  ]}
+  correctAnswer={0}
+  explanation="Here $a = 3$, $b = 2$, so $d = \\log_b(a) = \\log_2 3 \\approx 1.585$. Since $f(n) = n^2 = \\Omega(n^c)$ where $c = 2 > d = 1.585$, and $a f(n/b) = 3(n/2)^2 = 0.75 n^2 \\leq k \\cdot n^2$ for $k = 0.75 < 1$, we are in Case 3: $T(n) = \\Theta(f(n)) = \\Theta(n^2)$."
+  difficulty="hard"
+/>
+
+## Divide and Conquer and Dynamic Programming
+
+<PracticeProblem
+  question="What is the time complexity of the matrix chain multiplication problem solved by dynamic programming for $n$ matrices?"
+  options={['$O(n^3)$', '$O(n^2)$', '$O(2^n)$', '$O(n^4)$']}
+  correctAnswer={0}
+  explanation="The DP approach uses a table $m[i,j]$ for all $1 \\leq i \\leq j \\leq n$, giving $O(n^2)$ entries. Each entry is computed by minimizing over $O(n)$ split points, taking $O(n)$ time per entry. Total time: $O(n^2 \\times n) = O(n^3)$. Space complexity is $O(n^2)$ for the table and another $O(n^2)$ for storing the optimal split points."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The Floyd-Warshall algorithm for all-pairs shortest paths on a graph with $n$ vertices has a time complexity of:"
+  options={['$O(n^3)$', '$O(n^2 \\log n)$', '$O(n^2)$', '$O(nm)$ where $m$ is the number of edges']}
+  correctAnswer={0}
+  explanation="Floyd-Warshall uses three nested loops: for each intermediate vertex $k$ ($1$ to $n$), for each pair of vertices $(i, j)$, update $d[i][j] = \\min(d[i][j], d[i][k] + d[k][j])$. Total: $n \\times n \\times n = O(n^3)$. It handles negative edge weights but not negative cycles. Works on dense graphs with adjacency matrix representation."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The 0/1 knapsack problem has optimal substructure and overlapping subproblems. What is the space-optimised DP solution's complexity?"
+  options={[
+    '$O(nW)$ time, $O(W)$ space',
+    '$O(nW)$ time, $O(nW)$ space',
+    '$O(2^n)$ time, $O(n)$ space',
+    '$O(n^2)$ time, $O(n)$ space',
+  ]}
+  correctAnswer={0}
+  explanation="The standard DP table is $dp[i][w]$ of size $O(n \\times W)$, giving $O(nW)$ time and space. Since $dp[i][w]$ depends only on $dp[i-1][...]$ (the previous row), we can reduce to a 1D array of size $W$, giving $O(nW)$ time and $O(W)$ space. Note: this is pseudopolynomial since $W$ is a numeric value, not the input size."
+  difficulty="medium"
+/>
+
+## Greedy Algorithms and Amortized Analysis
+
+<PracticeProblem
+  question="Which greedy strategy is used in Huffman coding to construct an optimal prefix-free code?"
+  options={[
+    'Repeatedly merge the two trees with the smallest frequencies',
+    'Repeatedly merge the two trees with the largest frequencies',
+    'Build a balanced binary tree from all characters',
+    'Assign fixed-length codes to all characters',
+  ]}
+  correctAnswer={0}
+  explanation="Huffman's algorithm builds the tree bottom-up: maintain a min-priority queue of trees keyed by frequency, repeatedly extract the two minimum-frequency trees, merge them, and insert back. This greedy strategy produces an optimal prefix-free code. The proof uses exchange argument: any optimal solution can be transformed into the Huffman solution without increasing cost."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Dijkstra's algorithm fails to find shortest paths when the graph contains negative edge weights. Which algorithm should be used instead?"
+  options={['Bellman-Ford algorithm', "Kruskal's algorithm", 'BFS', 'A* search algorithm']}
+  correctAnswer={0}
+  explanation="The Bellman-Ford algorithm correctly handles negative edge weights (but not negative cycles reachable from the source). It relaxes all edges $|V|-1$ times, guaranteeing shortest paths if no negative cycles exist. Time complexity is $O(VE)$. Dijkstra's greedy choice fails with negative edges because a shorter path through unvisited vertices may be discovered later."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In amortized analysis, what is the amortized cost of a sequence of $n$ push and pop operations on a dynamic array that doubles its size when full (starting from size 1)?"
+  options={[
+    '$O(1)$ per operation',
+    '$O(\\log n)$ per operation',
+    '$O(n)$ per operation',
+    '$O(\\sqrt{n})$ per operation',
+  ]}
+  correctAnswer={0}
+  explanation="Using the aggregate method: total cost of $n$ operations is at most $cn$ (each element is pushed once, popped once, and copied at most $O(\\log n)$ times across resizings). By the accounting or potential method, each push charges $O(1)$ amortized cost (3 units: 1 for the push, 2 saved toward the next resize). Amortized cost per operation is $O(1)$, even though individual operations may cost $O(n)$."
+  difficulty="hard"
+/>

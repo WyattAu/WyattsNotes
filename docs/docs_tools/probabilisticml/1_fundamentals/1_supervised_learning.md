@@ -77,6 +77,109 @@ However, it maybe beneficial how non binary determination of misclassification a
 more similar to each other presented in having common features, therefore to Guide the training
 process of the model, it maybe benefitial to use a asymmetric loss function $\mathcal{l}$
 
+## Regression
+
+Where classification predicts discrete labels, regression predicts continuous outputs
+$y \in
+\mathbb{R}$. The training set $D = \{(x_n, y_n)\}_{n=1}^N$ is used to learn a function
+$f:
+\mathbb{R}^D \to \mathbb{R}$ that maps features to a real-valued target. Examples include
+predicting house prices from square footage, temperature from sensor readings, or financial returns
+from market indicators.
+
+### Loss Functions
+
+The choice of loss function encodes assumptions about the data-generating process and the cost of
+prediction errors:
+
+| Loss Function | Formula                              | Sensitivity          | Use Case                       |
+| ------------- | ------------------------------------ | -------------------- | ------------------------------ | ------------------ | -------------------------- |
+| Squared (L2)  | $\sum (y_n - \hat{y}_n)^2$           | High to outliers     | Gaussian noise assumption      |
+| Absolute (L1) | $\sum                                | y_n - \hat{y}\_n     | $                              | Robust to outliers | Laplacian noise assumption |
+| Huber         | Hybrid L1/L2 with threshold $\delta$ | Tunable              | Balanced robustness/smoothness |
+| Cross-entropy | $-\sum y_n \log \hat{y}_n$           | N/A (classification) | Probabilistic classification   |
+
+The squared error loss is the negative log-likelihood of a Gaussian likelihood:
+$p(y \mid x, \theta) = \mathcal{N}(y; f(x; \theta), \sigma^2)$. The absolute error corresponds to a
+Laplacian likelihood.
+
+### Optimization
+
+Given a loss function $\mathcal{L}(\theta)$, the goal of training is to find parameters that
+minimize it. Two estimation paradigms dominate:
+
+1. **Maximum Likelihood Estimation (MLE)**:
+   $\hat{\theta}_{\mathrm{MLE}} = \arg\min_\theta \mathcal{L}(\theta) = \arg\max_\theta
+   \prod_{n=1}^N p(y_n \mid x_n, \theta)$.
+   Finds the single best parameter setting but can overfit when $N$ is small relative to model
+   capacity.
+
+2. **Maximum A Posteriori (MAP)**:
+   $\hat{\theta}_{\mathrm{MAP}} = \arg\max_\theta p(\theta \mid \mathcal{D}) = \arg\max_\theta
+   p(\mathcal{D} \mid \theta) p(\theta)$.
+   The prior $p(\theta)$ regularizes the estimate, pulling $\hat{\theta}$ toward plausible values.
+
+Gradient descent is the workhorse optimizer. The parameter update rule:
+
+$$\theta^{(t+1)} = \theta^{(t)} - \eta \nabla_\theta \mathcal{L}(\theta^{(t)})$$
+
+where $\eta$ is the learning rate. Key variants:
+
+- **Batch gradient descent**: uses all $N$ examples per update. Stable but expensive per step.
+- **Stochastic gradient descent (SGD)**: uses one example per update. Noisy gradients but fast.
+- **Mini-batch SGD**: uses $B$ examples per update. Balances stability and speed, the standard in
+  deep learning.
+
+Learning rate scheduling (cosine decay, warm restarts) and adaptive methods (Adam, AdamW) are
+critical for convergence in practice.
+
+### Overfitting and Underfitting
+
+The bias-variance decomposition frames generalization error:
+
+$$\text{Generalization Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Noise}$$
+
+- **Underfitting (high bias)**: the model is too simple to capture the true data-generating
+  distribution. High training error and high test error. Remedy: increase model capacity, add
+  features, reduce regularization.
+- **Overfitting (high variance)**: the model memorizes training data. Low training error but high
+  test error. Remedy: increase training data, add regularization, use early stopping, apply dropout.
+- **Good fit**: captures the underlying pattern without memorizing noise. Training and test error
+  are both low and close together.
+
+Common regularization techniques:
+
+- **L2 (weight decay)**: adds $\lambda \|\theta\|_2^2$ to the loss. Shrinks weights toward zero
+  uniformly.
+- **L1**: adds $\lambda \|\theta\|_1$ to the loss. Encourages sparsity, driving some weights to
+  exactly zero.
+- **Dropout**: randomly zeroes activations with probability $p$ during training. Prevents feature
+  co-adaptation.
+- **Early stopping**: halts training when validation loss rises, even as training loss falls.
+
+### Evaluation Metrics
+
+For regression:
+
+- **Mean Squared Error (MSE)**: $\frac{1}{N}\sum(y_n - \hat{y}_n)^2$. Differentiable, but penalizes
+  large errors quadratically.
+- **Mean Absolute Error (MAE)**: $\frac{1}{N}\sum|y_n - \hat{y}_n|$. More robust to outliers.
+- **$R^2$ score**: $1 - \frac{\sum(y_n - \hat{y}_n)^2}{\sum(y_n - \bar{y})^2}$. Proportion of
+  variance explained. Ranges from $-\infty$ to $1$.
+
+For classification:
+
+- **Accuracy**: $\frac{\text{correct}}{N}$. Simple but misleading on imbalanced datasets.
+- **Precision**: $\frac{\text{TP}}{\text{TP} + \text{FP}}$. Important when false positives are
+  costly.
+- **Recall**: $\frac{\text{TP}}{\text{TP} + \text{FN}}$. Important when false negatives are costly.
+- **F1 score**: harmonic mean of precision and recall. Balances both concerns.
+- **ROC-AUC**: area under the receiver operating characteristic curve. Threshold-independent ranking
+  quality measure.
+
+The choice of metric should align with the downstream consequences of prediction errors, not just
+statistical convenience.
+
 ## Common Pitfalls
 
 1. Memorising content without understanding the underlying principles — this leads to poor

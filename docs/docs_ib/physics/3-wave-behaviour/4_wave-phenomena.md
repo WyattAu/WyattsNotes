@@ -499,7 +499,7 @@ Single-slit diffraction envelope.
 - **A-Level Waves:** [Physics](https://alevel.wyattau.com/docs/physics/physics)
 - **DSE Waves and Sound:** [Waves and Sound](https://dse.wyattau.com/docs/dse/physics/2-waves)
 - **University Wave Physics:**
-  [Optics and Wave Physics](https://university.wyattau.com/docs/physics/optics-and-wave-physics)
+  [Optics and Wave Physics](https://university.wyattau.com/docs/physics/4-optics-and-waves/1_optics-and-wave-physics)
 
 ## Common Pitfalls
 

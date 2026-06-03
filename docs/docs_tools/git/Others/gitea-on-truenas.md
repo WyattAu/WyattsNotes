@@ -94,6 +94,33 @@ WireGuard is recommended.
 - **Repository migration**: Use the Gitea admin panel `Site Administration > Repository Migration`
   to import repositories from GitHub, GitLab, or another Gitea instance.
 
+### Administration Tips
+
+1. **User management**: Restrict public registration under `Site Administration > Account Options`
+   to prevent unauthorized sign-ups. Use invitations or OAuth2 for controlled access.
+2. **LFS configuration**: Enable Git Large File Storage in `app.ini` under `[server]` with
+   `LFS_START_SERVER = true`. Allocate a dedicated dataset for LFS objects as they grow quickly.
+3. **Repository limits**: Set `MAX_FILE_SIZE`, `MAX_REPO_FILES`, and `DEFAULT_PUSH_CREATE_PRIVATE`
+   in `app.ini` to prevent abuse and manage storage consumption.
+4. **CI/CD runners**: Gitea Actions supports container-based CI/CD. Deploy the `act_runner` as a
+   separate container on TrueNAS and register it with the Gitea instance via
+   `Site Administration > Actions > Runners`.
+
+### Reverse Proxy and Header Configuration
+
+When using Traefik or Nginx as a reverse proxy in front of Gitea, set the following in `app.ini`
+under `[server]`:
+
+```ini
+ROOT_URL = https://git.example.com/
+DOMAIN = git.example.com
+SSH_PORT = 22
+PROTOCOL = https
+```
+
+Traefik automatically sets `X-Forwarded-For` and `X-Forwarded-Proto` headers. If Gitea shows
+incorrect redirect URLs, verify these headers are passed through correctly.
+
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding

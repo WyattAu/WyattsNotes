@@ -94,6 +94,31 @@ discard water layer. Removes water-soluble impurities.
 
 - add 1 tsp dried organic rose petals or curry leaves during Phase 2 - strain out before jarring.
 
+### Storage and Shelf Life
+
+| Condition         | Expected Shelf Life | Notes                                                  |
+| ----------------- | ------------------- | ------------------------------------------------------ |
+| Room temp, sealed | 3--6 months         | Dark cupboard, away from heat sources.                 |
+| Refrigerated      | 6--12 months        | Ghee solidifies; re-liquefy by gentle warming.         |
+| Frozen            | Up to 18 months     | Portion into small jars to avoid repeated freeze-thaw. |
+
+### Quality Indicators
+
+1. **Aroma**: Fresh ghee has a sweet, nutty smell. A sour or rancid odor signals oxidation.
+2. **Color**: Golden-yellow when fresh. Moderate darkening is normal; excessive darkening indicates
+   oxidation.
+3. **Texture**: Smooth and grain-free when melted. Granular texture after storage is harmless (fatty
+   acid crystallisation).
+4. **Taste**: Rich, buttery with toasted notes. Bitterness means the solids were overcooked.
+
+### Ghee from Different Fat Sources
+
+While butter is the standard input, ghee-style clarified fats can be produced from other dairy:
+cultured butter yields a tangier profile, while cream-separated ghee has a milder flavour. Non-dairy
+alternatives (coconut oil, cocoa butter) follow a similar clarification process but lack
+casein-derived Maillard complexity. Adjust temperatures downward by $5--10\degree C$ when working
+with lower-fat starting materials to avoid scorching.
+
 ## Common Pitfalls
 
 1. Ignoring feedback from marked work and failing to address recurring weaknesses.

@@ -1,0 +1,108 @@
+---
+title: 'Algorithms and Data Structures -- Practice Problems'
+description:
+  'University Algorithms and Data Structures -- Practice Problems with MCQ questions covering
+  sorting, searching, trees, hash tables, and complexity analysis for self-assessment and revision.'
+slug: practice-algorithms-data-structures
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Algorithms and Data Structures -- Practice Problems
+
+## Sorting and Searching
+
+<PracticeProblem
+  question="What is the worst-case time complexity of quicksort when the pivot is always chosen as the first element and the input is already sorted?"
+  options={['$O(n^2)$', '$O(n \\log n)$', '$O(n)$', '$O(\\log n)$']}
+  correctAnswer={0}
+  explanation="When the input is sorted and the pivot is always the first element, quicksort degrades to its worst case. Each partition step only removes one element (the pivot), producing subproblems of size $n-1$, $n-2$, ..., 1. The recurrence $T(n) = T(n-1) + O(n)$ solves to $O(n^2)$. Randomized pivot selection avoids this pathological case in practice."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which sorting algorithm is guaranteed to run in $O(n \\log n)$ time in the worst case and is also a stable sort?"
+  options={['Merge sort', 'Quicksort', 'Heapsort', 'Shell sort']}
+  correctAnswer={0}
+  explanation="Merge sort guarantees $O(n \\log n)$ in all cases because it always divides the array in half and merges in linear time. It is also stable because equal elements retain their relative order during the merge step. Quicksort has $O(n^2)$ worst case, heapsort is not stable, and shell sort has no $O(n \\log n)$ worst-case guarantee."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="How many comparisons does binary search perform in the worst case on a sorted array of $n = 1024$ elements?"
+  options={['10', '11', '9', '1024']}
+  correctAnswer={0}
+  explanation="Binary search halves the search space each step. After $k$ comparisons, the remaining space is $n / 2^k$. We need $2^k \\geq n$, so $k \\geq \\log_2(1024) = 10$. Therefore, the worst case requires exactly 10 comparisons. The number of comparisons is $\\lfloor \\log_2 n \\rfloor + 1$ for $n$ elements."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which of the following is the correct asymptotic lower bound for comparison-based sorting?"
+  options={['$\\Omega(n \\log n)$', '$\\Omega(n^2)$', '$\\Omega(n)$', '$\\Omega(\\log n)$']}
+  correctAnswer={0}
+  explanation="The comparison-based sorting lower bound of $\\Omega(n \\log n)$ arises from decision tree analysis. A comparison-based sort on $n$ elements must distinguish among $n!$ possible permutations. A binary decision tree of height $h$ has at most $2^h$ leaves, so we need $2^h \\geq n!$, giving $h \\geq \\log_2(n!) = \\Omega(n \\log n)$. Algorithms like radix sort bypass this bound by not using comparisons."
+  difficulty="medium"
+/>
+
+## Trees and Hash Tables
+
+<PracticeProblem
+  question="What is the maximum number of nodes at depth $d$ (root at depth 0) in a binary tree?"
+  options={['$2^d$', '$2^{d+1}$', '$2^d - 1$', '$d$']}
+  correctAnswer={0}
+  explanation="In a binary tree, each node can have at most 2 children. At depth 0 there is at most 1 node, at depth 1 at most 2, at depth 2 at most 4, and so on. By induction, the maximum number of nodes at depth $d$ is $2^d$. A complete binary tree achieves this maximum at every level. A perfect binary tree of height $h$ has $2^{h+1} - 1$ total nodes."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In an AVL tree, after inserting a node causes an imbalance at some ancestor, what is the worst-case height of an AVL tree with $n$ nodes?"
+  options={['$O(\\log n)$', '$O(n)$', '$O(\\sqrt{n})$', '$O(n \\log n)$']}
+  correctAnswer={0}
+  explanation="An AVL tree maintains the balance invariant: for every node, the heights of the left and right subtrees differ by at most 1. This constraint guarantees $h = O(\\log n)$. Specifically, the minimum number of nodes in an AVL tree of height $h$ is $F_{h+2} - 1$ (related to Fibonacci numbers), yielding $h \\leq 1.44 \\log_2(n+2) - 0.328$. Rotations during insertion restore balance in $O(1)$ time."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A hash table uses chaining with a load factor $\\alpha = n/m$. What is the expected time complexity of an unsuccessful search?"
+  options={['$O(\\alpha)$', '$O(\\log \\alpha)$', '$O(1)$', '$O(n)$']}
+  correctAnswer={0}
+  explanation="With chaining, an unsuccessful search must traverse the entire chain for the computed bucket. Under uniform hashing, the expected chain length at any bucket is $\\alpha = n/m$. Therefore, the expected time for an unsuccessful search is $O(\\alpha)$. For successful search, the expected time is $O(1 + \\alpha/2)$. When $\\alpha$ is kept constant (e.g., by resizing), both operations are $O(1)$ expected."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In a red-black tree, which property ensures that the longest path from root to leaf is at most twice the shortest path?"
+  options={[
+    'Every node is either red or black, and no two consecutive red nodes appear on any path',
+    'The root is always black',
+    'Every leaf (NIL) is black',
+    'All paths from a node to its descendant NIL nodes contain the same number of black nodes',
+  ]}
+  correctAnswer={0}
+  explanation="The key property is that no red node can have a red child (the "no red-red" constraint). Combined with the equal-black-height property, this bounds the ratio. The shortest possible root-to-leaf path has all black nodes, and the longest alternates red-black. Since red nodes cannot be consecutive, the longest path has at most twice as many nodes as the shortest, guaranteeing $O(\\log n)$ height."
+  difficulty="hard"
+/>
+
+## Complexity Analysis and Advanced Topics
+
+<PracticeProblem
+  question="What is the time complexity of finding the $k$-th smallest element in an unsorted array using the randomized quickselect algorithm?"
+  options={['$O(n)$ expected', '$O(n \\log n)$ worst case', '$O(n^2)$ expected', '$O(k \\log n)$']}
+  correctAnswer={0}
+  explanation="Randomized quickselect has $O(n)$ expected time. Like quicksort, it partitions around a pivot but recurses into only one side. The expected recurrence is $T(n) = T(n/2) + O(n)$, solving to $O(n)$. The worst case is $O(n^2)$ (same degenerate case as quicksort), but the median-of-medians variant guarantees $O(n)$ worst case at the cost of a larger constant factor."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="What is the amortized time complexity of inserting $n$ elements into a dynamic array that doubles in size when full?"
+  options={[
+    '$O(1)$ per insertion',
+    '$O(n)$ per insertion',
+    '$O(\\log n)$ per insertion',
+    '$O(n^2)$ total',
+  ]}
+  correctAnswer={0}
+  explanation="Although individual insertions may trigger an $O(n)$ resize, the amortized cost is $O(1)$. When the array doubles from size $m$ to $2m$, the copy costs $O(m)$, but this cost is spread across the $m$ insertions since the last resize. Each of those $m$ insertions is charged $O(1)$ for the copy plus $O(1)$ for the insertion itself, giving $O(1)$ amortized. The total cost for $n$ insertions is $O(n)$."
+  difficulty="medium"
+/>

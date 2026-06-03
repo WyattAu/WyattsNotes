@@ -1,0 +1,364 @@
+---
+title: 'AP Statistics Diagnostic Test'
+slug: diagnostic-test
+description:
+  'AP Statistics diagnostic test covering exploring data, probability, sampling, inference, and
+  regression for exam preparation.'
+tags:
+  - ap
+  - ap-statistics
+---
+
+import DiagnosticTest from '@site/src/components/interactive/DiagnosticTest';
+
+## AP Statistics Diagnostic Test
+
+This diagnostic test covers the full AP Statistics syllabus. There are 20 questions spanning 4 core
+topics. The test uses adaptive difficulty, selecting questions based on your performance to target
+areas of weakness.
+
+**Recommended time:** 30 minutes. The test presents up to 15 questions drawn from the pool,
+adaptively ordered by your answers.
+
+---
+
+## How the Diagnostic Scoring Works
+
+After completing the test, you receive a results breakdown:
+
+- **Topic Breakdown** -- each topic shows your score, colour-coded green (strong, 80%+), amber
+  (moderate, 50-79%), or red (weak, below 50%).
+- **Strengths** -- topics where you scored 80% or above.
+- **Needs Improvement** -- topics where you scored below 50%.
+- **Recommended Study Topics** -- all topics where you did not score in the strong range.
+
+The adaptive engine targets weak topics first, so your weakest areas are tested more thoroughly. Use
+the results to prioritise which topic pages to revise.
+
+---
+
+export const questions = [
+  {
+    id: 'ed1',
+    topic: 'Exploring Data',
+    difficulty: 1,
+    question:
+      'Which measure of centre is most resistant to outliers?',
+    options: ['Mean', 'Median', 'Standard deviation', 'Range'],
+    correctIndex: 1,
+    explanation:
+      'The median is the most resistant measure of centre because it depends only on the position of the middle value(s), not on the magnitude of extreme values. The mean is sensitive to outliers because every data point contributes to its value. Standard deviation and range are measures of spread, not centre, and both are affected by outliers.',
+  },
+  {
+    id: 'ed2',
+    topic: 'Exploring Data',
+    difficulty: 2,
+    question:
+      'A distribution is described as skewed to the right. Which statement is true about the relationship between the mean and the median?',
+    options: [
+      'Mean > Median',
+      'Mean < Median',
+      'Mean = Median',
+      'The relationship cannot be determined from skewness alone',
+    ],
+    correctIndex: 0,
+    explanation:
+      'In a right-skewed (positively skewed) distribution, the tail extends to the right. The mean is pulled in the direction of the tail (towards larger values) more than the median, so the mean is greater than the median. Conversely, in a left-skewed distribution, the mean is less than the median. In a symmetric distribution, mean equals median.',
+  },
+  {
+    id: 'ed3',
+    topic: 'Exploring Data',
+    difficulty: 3,
+    question:
+      'A boxplot shows Q1 = 25, Q2 (median) = 40, Q3 = 55, and whiskers extending to 10 and 70. What is the interquartile range (IQR), and what value would be considered an outlier using the 1.5 x IQR rule?',
+    options: [
+      'IQR = 30; outliers below -20 or above 100',
+      'IQR = 30; outliers below -5 or above 85',
+      'IQR = 15; outliers below 2.5 or above 77.5',
+      'IQR = 60; outliers below -50 or above 120',
+    ],
+    correctIndex: 0,
+    explanation:
+      'IQR = Q3 - Q1 = 55 - 25 = 30. The 1.5 x IQR rule defines outliers as values below Q1 - 1.5(IQR) = 25 - 1.5(30) = 25 - 45 = -20, or above Q3 + 1.5(IQR) = 55 + 45 = 100. Since no data points fall below -20 or above 70 (the upper whisker), there are no outliers in this dataset.',
+  },
+  {
+    id: 'ed4',
+    topic: 'Exploring Data',
+    difficulty: 4,
+    question:
+      'The correlation coefficient between two variables is r = -0.85. Which statement correctly describes this relationship?',
+    options: [
+      'A strong positive linear relationship',
+      'A strong negative linear relationship',
+      'A weak negative linear relationship',
+      'No linear relationship',
+    ],
+    correctIndex: 1,
+    explanation:
+      'A correlation coefficient of r = -0.85 indicates a strong negative linear relationship. The magnitude (0.85, close to 1) indicates the strength of the linear relationship, and the negative sign indicates the direction: as one variable increases, the other tends to decrease. Correlations with |r| > 0.7 are generally considered strong.',
+  },
+  {
+    id: 'se1',
+    topic: 'Sampling and Experimentation',
+    difficulty: 1,
+    question:
+      'A researcher selects every 10th person from a list of registered voters. What type of sampling method is this?',
+    options: ['Simple random sampling', 'Stratified sampling', 'Systematic sampling', 'Cluster sampling'],
+    correctIndex: 2,
+    explanation:
+      'Systematic sampling selects every kth element from an ordered list after a random starting point. In this case, every 10th person is selected. Simple random sampling would randomly select any individual with equal probability. Stratified sampling divides the population into groups and samples from each. Cluster sampling selects entire groups (clusters) at random.',
+  },
+  {
+    id: 'se2',
+    topic: 'Sampling and Experimentation',
+    difficulty: 2,
+    question:
+      'In a randomised controlled experiment, what is the primary purpose of random assignment?',
+    options: [
+      'To ensure the sample is representative of the population',
+      'To create groups that are similar in all respects except for the treatment',
+      'To increase the sample size',
+      'To eliminate the placebo effect',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Random assignment distributes both known and unknown confounding variables evenly across treatment and control groups, making the groups comparable at the start of the experiment. This allows the researcher to attribute any observed differences in outcomes to the treatment rather than to pre-existing differences between groups. Random sampling (not random assignment) is what makes the sample representative of the population.',
+  },
+  {
+    id: 'se3',
+    topic: 'Sampling and Experimentation',
+    difficulty: 3,
+    question:
+      'A study finds that students who eat breakfast score higher on maths tests. The researcher concludes that eating breakfast causes improved maths performance. What is the most significant flaw in this conclusion?',
+    options: [
+      'The sample size was too small',
+      'Confounding variables may explain the relationship (e.g., socioeconomic status)',
+      'The study used a convenience sample',
+      'Breakfast was not randomly assigned',
+    ],
+    correctIndex: 3,
+    explanation:
+      'The most fundamental flaw is that this appears to be an observational study, not an experiment. Since breakfast consumption was not randomly assigned, confounding variables (such as socioeconomic status, parental involvement, sleep quality, or overall health) may explain the observed association. Students who eat breakfast may come from families with more resources and support, which independently contribute to academic performance. Without random assignment, we cannot establish causation.',
+  },
+  {
+    id: 'se4',
+    topic: 'Sampling and Experimentation',
+    difficulty: 4,
+    question:
+      'A double-blind experiment is conducted to test a new drug. Which individuals are 'blind' to the treatment assignment?',
+    options: [
+      'Only the patients',
+      'Only the researchers measuring outcomes',
+      'Both the patients and the researchers measuring outcomes',
+      'The statisticians analysing the data',
+    ],
+    correctIndex: 2,
+    explanation:
+      'In a double-blind experiment, neither the participants (patients) nor the researchers who interact with participants and measure outcomes know who is receiving the treatment and who is receiving the placebo. This eliminates both the placebo effect (patients expecting improvement) and experimenter bias (researchers unconsciously influencing results or measurements). Single-blind means only the participants are unaware.',
+  },
+  {
+    id: 'pr1',
+    topic: 'Probability',
+    difficulty: 1,
+    question:
+      'If P(A) = 0.3 and P(B | A) = 0.6, what is P(A and B)?',
+    options: ['0.18', '0.6', '0.9', '0.42'],
+    correctIndex: 0,
+    explanation:
+      'By the multiplication rule: P(A and B) = P(A) x P(B | A) = 0.3 x 0.6 = 0.18. This represents the probability that both events A and B occur, where B is conditional on A having occurred.',
+  },
+  {
+    id: 'pr2',
+    topic: 'Probability',
+    difficulty: 2,
+    question:
+      'A binomial experiment has n = 20 trials and probability of success p = 0.3. What are the mean and standard deviation of this binomial distribution?',
+    options: [
+      'Mean = 6, SD = 2.05',
+      'Mean = 6, SD = 4.2',
+      'Mean = 10, SD = 2.45',
+      'Mean = 6, SD = 1.45',
+    ],
+    correctIndex: 0,
+    explanation:
+      'For a binomial distribution: mean = n x p = 20 x 0.3 = 6, and standard deviation = sqrt(n x p x (1-p)) = sqrt(20 x 0.3 x 0.7) = sqrt(4.2) = approximately 2.05. These formulas give the expected number of successes and the spread of the distribution of successes across repeated experiments.',
+  },
+  {
+    id: 'pr3',
+    topic: 'Probability',
+    difficulty: 3,
+    question:
+      'The Central Limit Theorem states that:',
+    options: [
+      'The sample mean is always normally distributed regardless of sample size',
+      'For large sample sizes, the sampling distribution of the sample mean is approximately normal regardless of the population distribution',
+      'The population distribution must be normal for the sample mean to be normally distributed',
+      'The standard deviation of the sampling distribution equals the population standard deviation',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The Central Limit Theorem (CLT) states that for sufficiently large sample sizes (typically n >= 30), the sampling distribution of the sample mean will be approximately normal regardless of the shape of the population distribution. The mean of the sampling distribution equals the population mean, and the standard deviation equals sigma/sqrt(n). This is one of the most important theorems in statistics because it justifies the use of normal-based inference for means.',
+  },
+  {
+    id: 'pr4',
+    topic: 'Probability',
+    difficulty: 4,
+    question:
+      'A random variable X has E(X) = 10 and Var(X) = 16. What are E(3X + 2) and Var(3X + 2)?',
+    options: [
+      'E = 32, Var = 48',
+      'E = 32, Var = 144',
+      'E = 30, Var = 16',
+      'E = 32, Var = 52',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Using the rules of expected value and variance for linear transformations: E(aX + b) = aE(X) + b, so E(3X + 2) = 3(10) + 2 = 32. Var(aX + b) = a-squared x Var(X), so Var(3X + 2) = 9 x 16 = 144. Note that adding a constant (b) changes the mean but not the variance, and multiplying by a constant (a) scales the variance by a-squared.',
+  },
+  {
+    id: 'si1',
+    topic: 'Statistical Inference',
+    difficulty: 1,
+    question:
+      'A 99% confidence interval is wider than a 95% confidence interval for the same data. Why?',
+    options: [
+      'A higher confidence level requires a larger critical value (z*) to capture the parameter more often',
+      'The sample size is smaller for 99% intervals',
+      'The standard error is larger for 99% intervals',
+      '99% intervals use a different formula',
+    ],
+    correctIndex: 0,
+    explanation:
+      'A higher confidence level requires a wider interval because the critical value z* is larger. For 95%, z* = 1.96; for 99%, z* = 2.576. A wider interval provides more confidence that it captures the true parameter. There is a fundamental trade-off between confidence level and precision (width of the interval). The sample size and standard error are the same; only z* changes.',
+  },
+  {
+    id: 'si2',
+    topic: 'Statistical Inference',
+    difficulty: 2,
+    question:
+      'A hypothesis test yields a p-value of 0.002. Which statement is the most accurate interpretation?',
+    options: [
+      'There is a 0.2% probability that the null hypothesis is true',
+      'If the null hypothesis were true, the probability of obtaining a test statistic as extreme as or more extreme than the observed value is 0.002',
+      'The alternative hypothesis is true with 99.8% certainty',
+      'The probability of a Type I error is 0.002',
+    ],
+    correctIndex: 1,
+    explanation:
+      'A p-value is the probability of obtaining a test statistic as extreme as or more extreme than the observed value, assuming the null hypothesis is true. It is NOT the probability that the null hypothesis is true. A small p-value (like 0.002) provides strong evidence against the null hypothesis, suggesting the observed data would be very unlikely if H0 were true. The probability of a Type I error is the significance level alpha, not the p-value.',
+  },
+  {
+    id: 'si3',
+    topic: 'Statistical Inference',
+    difficulty: 3,
+    question:
+      'A researcher tests H0: p = 0.5 vs Ha: p > 0.5 with a sample of n = 200 and obtains a test statistic of z = 2.33. What is the approximate p-value?',
+    options: [
+      '0.0099',
+      '0.0198',
+      '0.4901',
+      '0.9802',
+    ],
+    correctIndex: 0,
+    explanation:
+      'This is a one-sided (right-tailed) test. Using the standard normal distribution table, z = 2.33 corresponds to a left-tail area of approximately 0.9901. For a right-tailed test, the p-value is the area to the right of z: 1 - 0.9901 = 0.0099. If this were a two-sided test, the p-value would be 2 x 0.0099 = 0.0198. Always check the direction of the alternative hypothesis when computing the p-value.',
+  },
+  {
+    id: 'si4',
+    topic: 'Statistical Inference',
+    difficulty: 5,
+    question:
+      'Which of the following conditions must be met to use a t-procedure for a confidence interval for a population mean?',
+    options: [
+      'The population must be normally distributed',
+      'The sample size must be at least 30',
+      'Either the population is normal or the sample size is sufficiently large (n >= 30)',
+      'The standard deviation must be known',
+    ],
+    correctIndex: 2,
+    explanation:
+      'A t-procedure for a population mean requires that either the population is approximately normal (checked via a histogram or normal probability plot) OR the sample size is sufficiently large (n >= 30 as a rule of thumb, based on the CLT). The t-procedure is used precisely when the population standard deviation is unknown (estimated from the sample). If sigma were known, we would use a z-procedure instead.',
+  },
+  {
+    id: 'rg1',
+    topic: 'Regression',
+    difficulty: 1,
+    question:
+      'In a scatterplot, a pattern of points sloping upward from left to right indicates which type of relationship?',
+    options: [
+      'Positive association',
+      'Negative association',
+      'No association',
+      'Nonlinear association',
+    ],
+    correctIndex: 0,
+    explanation:
+      'Points sloping upward from left to right indicate a positive association: as the x-variable increases, the y-variable tends to increase. A negative association would show points sloping downward. No association means no discernible pattern. A nonlinear association would show a curved pattern rather than a linear one.',
+  },
+  {
+    id: 'rg2',
+    topic: 'Regression',
+    difficulty: 2,
+    question:
+      'The residual for a data point is calculated as:',
+    options: [
+      'Predicted y minus actual y',
+      'Actual y minus predicted y',
+      'The slope of the regression line',
+      'The correlation coefficient',
+    ],
+    correctIndex: 1,
+    explanation:
+      'A residual is the difference between the observed (actual) y-value and the predicted y-value from the regression line: residual = y - y-hat. Positive residuals indicate the point is above the line (the model underpredicts), and negative residuals indicate the point is below the line (the model overpredicts). The sum of residuals is always zero for a least-squares regression line.',
+  },
+  {
+    id: 'rg3',
+    topic: 'Regression',
+    difficulty: 3,
+    question:
+      'A residual plot shows a clear U-shaped pattern. What does this indicate about the regression model?',
+    options: [
+      'The model is a good fit for the data',
+      'A nonlinear model would be more appropriate than a linear model',
+      'There are no outliers in the data',
+      'The variance of the residuals is constant',
+    ],
+    correctIndex: 1,
+    explanation:
+      'A U-shaped (or curved) pattern in a residual plot indicates that the relationship between x and y is not linear. The linear model systematically overpredicts at some ranges of x and underpredicts at others. A nonlinear model (such as quadratic or exponential) would better capture the relationship. A good linear fit would show residuals randomly scattered around zero with no discernible pattern.',
+  },
+  {
+    id: 'rg4',
+    topic: 'Regression',
+    difficulty: 4,
+    question:
+      'An influential point is removed from a dataset, causing the slope of the regression line to change dramatically. What is most likely true about this point?',
+    options: [
+      'It has a small residual and extreme x-value',
+      'It has a large residual and moderate x-value',
+      'It is close to the mean of x and y',
+      'It lies on the regression line',
+    ],
+    correctIndex: 0,
+    explanation:
+      'An influential point is one whose removal significantly changes the regression line (slope, intercept, or both). Points with extreme x-values (far from the mean of x) and relatively small residuals are the most influential because they exert high leverage on the line. Even a point close to the regression line can be highly influential if it has an extreme x-value. Points with large residuals are outliers but not necessarily influential.',
+  },
+];
+
+export const handleComplete = (results) => {
+  console.log('Diagnostic test completed:', results);
+};
+
+<DiagnosticTest subject="AP Statistics" questions={questions} onComplete={handleComplete} />
+
+---
+
+## Topic Coverage
+
+| Topic                   | Questions | Revision Guide                                                             |
+| ----------------------- | --------- | -------------------------------------------------------------------------- |
+| Exploring Data          | 4         | [Exploring Data](/docs/qualifications/ap/statistics/1-exploring-data/)     |
+| Sampling and Experiment | 4         | [Sampling](/docs/qualifications/ap/statistics/2-sampling-experimentation/) |
+| Probability             | 4         | [Probability](/docs/qualifications/ap/statistics/3-probability/)           |
+| Statistical Inference   | 4         | [Inference](/docs/qualifications/ap/statistics/4-statistical-inference/)   |
+| Regression Analysis     | 4         | [Regression](/docs/qualifications/ap/statistics/5-regression/)             |

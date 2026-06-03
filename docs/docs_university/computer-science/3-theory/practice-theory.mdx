@@ -1,0 +1,123 @@
+---
+title: 'University CS Practice: Theory'
+slug: practice-theory
+description:
+  'University-level practice problems on theory covering automata theory (DFA/NFA/PDA), compiler
+  phases, symmetric/asymmetric cryptography, and ML fundamentals.'
+tags: [University, Computer Science, Practice]
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# University CS -- Theory Practice Problems
+
+10 MCQ questions covering automata theory, compiler phases, cryptography, and machine learning
+fundamentals. Select an option to check your answer and view the explanation.
+
+---
+
+## Automata Theory and Formal Languages
+
+<PracticeProblem
+  question="Which of the following languages can be recognised by a deterministic finite automaton (DFA)?"
+  options={['$L = \\{a^n b^n \\mid n \\geq 0\\}$', '$L = \\{w \\mid w \\text{ contains an even number of 0s}\\}$', '$L = \\{a^p \\mid p \\text{ is prime}\\}$', '$L = \\{ww^R \\mid w \\in \\{0,1\\}^*\\}$']}
+  correctAnswer={1}
+  explanation="A DFA can recognise languages requiring finite memory. \"Even number of 0s\" needs only 2 states (parity). The other languages are context-free or context-sensitive: $a^n b^n$ requires counting ($n$ states needed for each $n$ -- infinite for DFA), $a^p$ (primes) is not regular, and $ww^R$ (palindromes) requires a stack. Correction: the correct answer is the second option; its correctAnswer index is 1 (0-indexed), meaning the second option is correct."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A pushdown automaton (PDA) with a single stack can recognise exactly which class of languages?"
+  options={[
+    'Context-free languages (CFLs)',
+    'Regular languages only',
+    'Context-sensitive languages',
+    'Recursively enumerable languages',
+  ]}
+  correctAnswer={0}
+  explanation="A PDA (with one stack) recognises exactly the class of context-free languages (CFLs). The stack provides unbounded but LIFO memory, sufficient for matching well-nested structures like balanced parentheses or $a^n b^n$. Two stacks make a PDA equivalent in power to a Turing machine. Deterministic PDAs (DPDAs) recognise a proper subset of CFLs (the deterministic CFLs)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Convert the regular expression $(a + b)^*aba(a + b)^*$ to an NFA. Which of the following is true about the language it describes?"
+  options={['All strings over $\\{a, b\\}$ containing \"aba\" as a substring', 'All strings that start with \"aba\"', 'All strings over $\\{a, b\\}$ of length at least 3', 'All strings ending with \"aba\"']}
+  correctAnswer={0}
+  explanation="The regex $(a+b)^*aba(a+b)^*$ matches any string that contains the substring \"aba\" anywhere within it. The $(a+b)^*$ before allows any prefix, \"aba\" anchors the required substring, and $(a+b)^*$ after allows any suffix. The minimal DFA for this language has 4 states, tracking the longest suffix that matches a prefix of \"aba\"."
+  difficulty="medium"
+/>
+
+## Compiler Design
+
+<PracticeProblem
+  question="In which phase of compilation is the abstract syntax tree (AST) constructed?"
+  options={[
+    'Semantic Analysis',
+    'Lexical Analysis',
+    'Syntax Analysis (Parsing)',
+    'Code Generation',
+  ]}
+  correctAnswer={2}
+  explanation="The AST is constructed during syntax analysis (parsing), which takes the token stream from the lexical analyser and builds a tree representation according to the grammar rules. The parser verifies syntactic correctness and produces the AST. Semantic analysis then annotates the AST with type information and checks semantic rules. The correct answer is the third option (index 2, 0-indexed)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the output of a lexical analyser?"
+  options={['A stream of tokens', 'An abstract syntax tree', 'Intermediate code', 'Machine code']}
+  correctAnswer={0}
+  explanation="The lexical analyser (scanner) reads the source code character by character and groups characters into tokens -- the smallest meaningful units (keywords, identifiers, operators, literals, etc.). Each token has a type and an optional value (lexeme). This token stream is then passed to the parser for syntax analysis."
+  difficulty="easy"
+/>
+
+## Cryptography
+
+<PracticeProblem
+  question="In RSA encryption, if $n = pq = 35$ and the public exponent $e = 5$, what is the private exponent $d$?"
+  options={['$5$', '$11$', '$7$', '$13$']}
+  correctAnswer={0}
+  explanation("$n = 35 = 5 \\times 7$, so $p = 5$, $q = 7$. Euler's totient: $\\phi(n) = (5-1)(7-1) = 24$. The private exponent $d$ satisfies $e \\cdot d \\equiv 1 \\pmod{\\phi(n)}$, i.e., $5d \\equiv 1 \\pmod{24}$. Checking: $5 \\times 5 = 25 \\equiv 1 \\pmod{24}$, so $d = 5$. Note: this is a degenerate case since $e = d = 5$; in practice, $e$ and $d$ would differ."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Which symmetric encryption mode of operation converts a block cipher into a stream cipher by XORing the ciphertext of the previous block with the plaintext of the current block before encryption?"
+  options={[
+    'Cipher Block Chaining (CBC)',
+    'Electronic Codebook (ECB)',
+    'Counter (CTR)',
+    'Output Feedback (OFB)',
+  ]}
+  correctAnswer={0}
+  explanation="In CBC mode, each plaintext block is XORed with the previous ciphertext block (or IV for the first block) before encryption: $C_i = E_K(P_i \\oplus C_{i-1})$. This creates a chain dependency, so identical plaintext blocks produce different ciphertext blocks. ECB mode encrypts each block independently (insecure for patterns). CTR turns the block cipher into a stream cipher by encrypting a counter."
+  difficulty="medium"
+/>
+
+## Machine Learning Fundamentals
+
+<PracticeProblem
+  question="In supervised learning, which algorithm is inherently designed for both classification and regression by building an ensemble of decision trees, using random feature subsets at each split?"
+  options={[
+    'Random Forest',
+    'K-Nearest Neighbours (KNN)',
+    'Linear Regression',
+    'K-Means Clustering',
+  ]}
+  correctAnswer={0}
+  explanation="Random Forest builds multiple decision trees on bootstrapped samples of the training data, each using a random subset of features at every split. For classification, it uses majority voting; for regression, it averages the predictions. This ensemble approach reduces overfitting (variance) compared to individual decision trees. KNN and K-Means are not ensemble methods; linear regression is a parametric method."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In the bias-variance trade-off, which of the following statements is correct?"
+  options={[
+    'Increasing model complexity decreases bias but increases variance',
+    'Increasing model complexity decreases both bias and variance',
+    'Decreasing model complexity increases both bias and variance',
+    'Bias and variance are independent of model complexity',
+  ]}
+  correctAnswer={0}
+  explanation="The bias-variance trade-off is a fundamental concept in ML. High bias (underfitting) occurs with simple models that cannot capture the true pattern. High variance (overfitting) occurs with complex models that fit noise in the training data. Increasing complexity reduces bias (better fit to training data) but increases variance (more sensitive to training set fluctuations). The optimal model balances both to minimise total error (bias$^2$ + variance + noise)."
+  difficulty="hard"
+/>

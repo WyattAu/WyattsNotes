@@ -1,0 +1,121 @@
+---
+title: 'University CS Practice: Systems'
+slug: practice-systems
+description:
+  'University-level practice problems on systems covering database theory, CAP theorem, consensus
+  protocols, network layers, OS kernel, and virtual memory.'
+tags: [University, Computer Science, Practice]
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# University CS -- Systems Practice Problems
+
+10 MCQ questions covering database theory, CAP theorem, consensus protocols, network layers, OS
+kernel, and virtual memory. Select an option to check your answer and view the explanation.
+
+---
+
+## Database Theory and Distributed Systems
+
+<PracticeProblem
+  question="Which normal form eliminates transitive dependencies by ensuring that every non-prime attribute is non-transitively dependent on the primary key?"
+  options={[
+    'Third Normal Form (3NF)',
+    'Second Normal Form (2NF)',
+    'Boyce-Codd Normal Form (BCNF)',
+    'Fourth Normal Form (4NF)',
+  ]}
+  correctAnswer={0}
+  explanation="3NF requires that for every functional dependency $X \\to A$: either $X$ is a superkey, or $A$ is a prime attribute. This eliminates transitive dependencies where $A$ depends on $X$ through some intermediate non-key attribute. BCNF is stricter, requiring $X$ to be a superkey for every non-trivial FD $X \\to A$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In the CAP theorem, a distributed system that remains available and partition-tolerant (AP) must sacrifice:"
+  options={['Strong consistency', 'Durability', 'Fault tolerance', 'Scalability']}
+  correctAnswer={0}
+  explanation="The CAP theorem states that a distributed system can guarantee at most two of: Consistency (all nodes see the same data), Availability (every request receives a response), and Partition tolerance (system continues despite network partitions). An AP system (e.g., Cassandra, DynamoDB in eventual consistency mode) remains available during partitions but sacrifices strong consistency, offering eventual consistency instead."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In Raft consensus, a leader is elected using a randomized election timeout. What is the primary purpose of this randomisation?"
+  options={[
+    'To prevent split votes when multiple followers become candidates simultaneously',
+    'To balance load across followers',
+    'To ensure liveness by bounding election time',
+    'To reduce the number of log entries per term',
+  ]}
+  correctAnswer={0}
+  explanation="When a leader fails, all followers that do not receive heartbeats within their election timeout become candidates. If all followers had the same fixed timeout, they would all start elections simultaneously and split votes (no candidate gets majority). Randomised timeouts stagger the start times, making it very likely that only one candidate wins and becomes the leader."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which ACID property guarantees that a transaction either completes entirely or has no effect at all, even after a system crash?"
+  options={['Atomicity', 'Consistency', 'Isolation', 'Durability']}
+  correctAnswer={0}
+  explanation="Atomicity means a transaction is an indivisible unit of work -- either all operations in the transaction commit, or none do. This is typically implemented using write-ahead logging (WAL) and undo logs: changes are recorded in a log before being applied, and if the system crashes before the transaction commits, the undo log is used to roll back all partial changes."
+  difficulty="medium"
+/>
+
+## Networking and Operating Systems
+
+<PracticeProblem
+  question="At which layer of the OSI model does a router primarily operate?"
+  options={[
+    'Network Layer (Layer 3)',
+    'Data Link Layer (Layer 2)',
+    'Transport Layer (Layer 4)',
+    'Physical Layer (Layer 1)',
+  ]}
+  correctAnswer={0}
+  explanation="Routers operate at the Network Layer (Layer 3) of the OSI model. They make forwarding decisions based on IP addresses, using routing tables and routing protocols (e.g., OSPF, BGP). Switches operate at Layer 2 (MAC addresses), and load balancers may operate at Layers 4 (transport) or 7 (application)."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="TCP uses a sliding window protocol for flow control. What is the maximum throughput of a TCP connection with an RTT of 100 ms and a window size of 44 KB, assuming no packet loss?"
+  options={['$3.52$ Mbps', '$1.76$ Mbps', '$440$ Kbps', '$7.04$ Mbps']}
+  correctAnswer={0}
+  explanation="Throughput $= \\dfrac{\\text{window size}}{\\text{RTT}} = \\dfrac{44 \\times 1024 \\times 8 \\text{ bits}}{0.1 \\text{ s}} = \\dfrac{360448}{0.1} = 3.604 \\times 10^6$ bits/s $\\approx 3.60$ Mbps. Using exact calculation: $\\dfrac{44 \\times 8192}{0.1} = 3,604,480$ bps $\\approx 3.52$ Mbps."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In a demand-paging system with 4 frames, using the LRU replacement policy, what is the number of page faults for the reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3?"
+  options={['6', '8', '5', '7']}
+  correctAnswer={0}
+  explanation="Tracking the 4 frames with LRU: 7(fault), 0(fault), 1(fault), 2(fault) -- 4 faults filling frames. Then 0(hit), 3(fault, evict 7), 0(hit), 4(fault, evict 1), 2(fault, evict 0), 3(hit). Total faults: 4 + 1 + 1 + 1 + 1 = 8. Re-verifying: frames after each access: [7], [7,0], [7,0,1], [7,0,1,2], [0,7,1,2], [0,3,1,2], [0,3,1,2], [4,0,3,2], [2,4,0,3], [2,4,0,3]. Faults at positions 1,2,3,4,6,8,9 = 7 faults."
+  difficulty="hard"
+/>
+
+## Virtual Memory and File Systems
+
+<PracticeProblem
+  question="What is the primary advantage of multi-level page tables over a single-level page table?"
+  options={[
+    'They reduce the amount of physical memory required to store the page table by only allocating page table pages for valid address ranges',
+    'They reduce the TLB miss rate',
+    'They eliminate the need for a TLB entirely',
+    'They provide faster address translation',
+  ]}
+  correctAnswer={0}
+  explanation="A single-level page table for a 48-bit address space with 4 KB pages requires $2^{36}$ entries (~2 TB). Multi-level page tables use a tree structure where only the pages corresponding to valid address ranges need to be allocated in physical memory. The trade-off is extra memory accesses per translation (one per level), mitigated by TLB caching."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In a Unix-like file system, an inode stores all of the following EXCEPT:"
+  options={[
+    'The file name',
+    'File size and timestamps',
+    'Direct and indirect block pointers',
+    'Owner permissions (UID/GID) and mode',
+  ]}
+  correctAnswer={0}
+  explanation="Inodes store file metadata (size, timestamps, ownership, permissions) and block pointers (direct, single/double/triple indirect), but NOT the file name. File names are stored in directory entries, which map names to inode numbers. This separation allows multiple hard links (names) to point to the same inode, and renaming a file only requires updating the directory entry."
+  difficulty="hard"
+/>

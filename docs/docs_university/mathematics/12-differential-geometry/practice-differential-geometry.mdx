@@ -1,0 +1,149 @@
+---
+title: Differential Geometry Practice (Interactive)
+tags:
+  - mathematics
+  - university
+slug: university-mathematics/practice-differential-geometry
+description:
+  'Interactive university differential geometry practice with auto-graded questions. Covers smooth
+  manifolds, differential forms, Riemannian geometry, and curvature.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Mathematics -- Differential Geometry Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Smooth Manifolds and Tangent Spaces
+
+<PracticeProblem
+  question="Which of the following is NOT required for a topological space $M$ to be a topological manifold?"
+  options={[
+    '$M$ must be compact',
+    '$M$ must be Hausdorff',
+    '$M$ must be second countable',
+    '$M$ must be locally Euclidean',
+  ]}
+  correctAnswer={0}
+  explanation="A topological manifold must be (1) Hausdorff, (2) second countable, and (3) locally Euclidean. Compactness is NOT required. Many important manifolds are non-compact, including $\mathbb{R}^n$ itself, any open subset of $\mathbb{R}^n$, and the cotangent bundle of any compact manifold."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Let $f : \\mathbb{R}^2 \\to \\mathbb{R}$ be $f(x, y) = x^2 + y^2$. What is $df$ at the point $(1, 1)$?"
+  options={['$2\\, dx + 2\\, dy$', '$2x\\, dx + 2y\\, dy$', '$dx + dy$', '$2\\, dx - 2\\, dy$']}
+  correctAnswer={0}
+  explanation="$df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy = 2x\, dx + 2y\, dy$. At $(1, 1)$, this evaluates to $2\, dx + 2\, dy$. The differential $df$ at a point is a covector (a 1-form) in the cotangent space $T_p^*\mathbb{R}^2$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The tangent bundle $TM$ of an $n$-dimensional manifold $M$ has dimension:"
+  options={['$n^2$', '$2n$', '$n$', '$n + 1$']}
+  correctAnswer={0}
+  explanation="$TM = \bigsqcup_{p \in M} T_p M$ where each fiber $T_p M$ is $n$-dimensional and the base $M$ is $n$-dimensional. With its natural smooth structure, $TM$ is a manifold of dimension $2n$. For example, $T\mathbb{R}^2 \cong \mathbb{R}^2 \times \mathbb{R}^2 = \mathbb{R}^4$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="If $[X, Y] = 0$ for smooth vector fields $X$ and $Y$ on $M$, what can you conclude about their flows?"
+  options={[
+    "The flows commute: $\\Phi_t^X \\circ \\Phi_s^Y = \\Phi_s^Y \\circ \\Phi_t^X$ wherever defined",
+    "$X$ and $Y$ are linearly dependent",
+    "$X$ and $Y$ have no integral curves",
+    "The Lie derivative $\\mathcal{L}_X Y$ is nonzero",
+  ]}
+  correctAnswer={0}
+  explanation"The Lie bracket $[X, Y]$ measures the non-commutativity of the flows of $X$ and $Y$. If $[X, Y] = 0$, the flows commute: $\Phi_t^X \circ \Phi_s^Y(p) = \Phi_s^Y \circ \Phi_t^X(p)$ wherever both sides are defined. The converse is also true for complete flows. Vanishing Lie bracket means $Y$ is invariant under the flow of $X$: $\mathcal{L}_X Y = 0$."
+  difficulty="medium"
+/>
+
+---
+
+### Differential Forms
+
+<PracticeProblem
+  question="If $\\omega$ is a $k$-form on an $n$-manifold $M$, what is the largest possible degree of $d\\omega$?"
+  options={[
+    "$n$",
+    "$n + 1$",
+    "$k + 1$",
+    "$2k$",
+  ]}
+  correctAnswer={0}
+  explanation"$d\omega$ is a $(k+1)$-form, but on an $n$-dimensional manifold, all $(n+1)$-forms are identically zero (since the tangent space has dimension $n$, there are no nonzero alternating $(n+1)$-linear functionals). So the largest non-trivial exterior derivative produces an $n$-form. The space of $k$-forms is trivial for $k > n$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="By Stokes' theorem, $\\int_{\\partial D} \\omega = \\int_D d\\omega$. If $\\omega = x\\, dy$ on $D = [0, 1]^2 \\subseteq \\mathbb{R}^2$, what is $\\int_{\\partial D} x\\, dy$?"
+  options={[
+    "$0$",
+    "$1$",
+    "$-1$",
+    "$2$",
+  ]}
+  correctAnswer={0}
+  explanation"$d\omega = d(x\, dy) = dx \wedge dy$. So $\int_D d\omega = \int_D dx \wedge dy = \int_0^1 \int_0^1 dx\, dy = 1$. By Stokes' theorem, $\int_{\partial D} x\, dy = 1$. Direct computation: on the right edge ($x = 1, y: 0 \to 1$), $\int x\, dy = \int_0^1 1\, dy = 1$. On the left edge ($x = 0$), the contribution is $0$. Top and bottom edges ($dy = 0$) contribute nothing."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="If $\\alpha$ is a closed 1-form ($d\\alpha = 0$) on a simply connected manifold $M$, what can you conclude?"
+  options={[
+    "$\\alpha$ is exact: $\\alpha = df$ for some smooth function $f$",
+    "$\\alpha$ is identically zero",
+    "$\\alpha$ is a constant multiple of the volume form",
+    "$\\alpha$ can never be exact",
+  ]}
+  correctAnswer={0}
+  explanation"By the Poincare lemma (or de Rham cohomology), on a simply connected manifold, every closed 1-form is exact: $d\alpha = 0$ implies $\alpha = df$ for some $f \in C^\infty(M)$. This is equivalent to the fundamental theorem of line integrals: the line integral of $\alpha$ along a curve depends only on the endpoints."
+  difficulty="medium"
+/>
+
+---
+
+### Riemannian Geometry and Curvature
+
+<PracticeProblem
+  question="What is the Gaussian curvature of the standard 2-sphere $S^2$ with radius $R$?"
+  options={[
+    "$1/R^2$",
+    "$1$",
+    "$R^2$",
+    "$0$",
+  ]}
+  correctAnswer={0}
+  explanation"The Gaussian curvature of an $n$-sphere $S^n(R)$ of radius $R$ is $K = 1/R^2$. For the unit sphere ($R = 1$), $K = 1$. The total curvature is $\int_{S^2} K\, dA = (1/R^2) \cdot 4\pi R^2 = 4\pi = 2\pi \chi(S^2)$, confirming the Gauss-Bonnet theorem with $\chi(S^2) = 2$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which of the following is NOT a symmetry of the Riemann curvature tensor $R_{ijkl}$?"
+  options={[
+    "$R_{ijkl} = R_{ikjl}$",
+    "$R_{ijkl} = -R_{jikl}$",
+    "$R_{ijkl} = -R_{ijlk}$",
+    "$R_{ijkl} = R_{klij}$",
+  ]}
+  correctAnswer={0}
+  explanation"The Riemann tensor satisfies: (1) $R_{ijkl} = -R_{jikl}$ (anti-symmetry in first pair), (2) $R_{ijkl} = -R_{ijlk}$ (anti-symmetry in second pair), (3) $R_{ijkl} = R_{klij}$ (pair interchange), and (4) the first Bianchi identity. It does NOT satisfy $R_{ijkl} = R_{ikjl}$ in general (swapping the second and third indices is not a symmetry)."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="By the Gauss-Bonnet theorem, what is the total Gaussian curvature $\\int_M K\\, dA$ of a torus $T^2$?"
+  options={[
+    "$4\\pi$",
+    "$0$",
+    "$-4\\pi$",
+    "$2\\pi$",
+  ]}
+  correctAnswer={0}
+  explanation"The Gauss-Bonnet theorem states $\int_M K\, dA = 2\pi \chi(M)$. The torus has Euler characteristic $\chi(T^2) = 0$ (genus 1: $\chi = 2 - 2g = 0$). Therefore the total Gaussian curvature is $2\pi \cdot 0 = 0$. A flat torus (the quotient of $\mathbb{R}^2$ by a lattice) has $K = 0$ everywhere, consistent with this result."
+  difficulty="hard"
+/>

@@ -1,0 +1,115 @@
+---
+title: 'CBSE Practice: Physics Class 12'
+slug: practice-physics
+description:
+  'CBSE Class 12 Physics practice problems with MCQ questions for self-assessment covering
+  electromagnetism, optics, wave optics, photoelectric effect, and semiconductor electronics.'
+tags: [CBSE, Physics, Practice]
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# CBSE Class 12 Physics -- Practice Problems
+
+10 MCQ questions covering electromagnetism, optics, wave optics, photoelectric effect, and
+semiconductor electronics from the NCERT syllabus. Select an option to check your answer and view
+the explanation.
+
+---
+
+## Electromagnetism and Optics
+
+<PracticeProblem
+  question="A circular coil of 100 turns, radius 10 cm, carries a current of 1 A. What is the magnetic field at the centre of the coil? ($\\mu_0 = 4\\pi \\times 10^{-7}$ T m A$^{-1}$)"
+  options={[
+    '$6.28 \\times 10^{-4}$ T',
+    '$3.14 \\times 10^{-4}$ T',
+    '$1.26 \\times 10^{-3}$ T',
+    '$2.00 \\times 10^{-5}$ T',
+  ]}
+  correctAnswer={0}
+  explanation="$B = \\dfrac{\\mu_0 n I}{2R} = \\dfrac{4\\pi \\times 10^{-7} \\times 100 \\times 1}{2 \\times 0.10} = \\dfrac{4\\pi \\times 10^{-5}}{0.2} = 2\\pi \\times 10^{-4} \\approx 6.28 \\times 10^{-4}$ T."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In Young's double-slit experiment using light of wavelength $\\lambda = 600$ nm, the fringe width is 2 mm. If the distance between the slits is doubled, the new fringe width will be:"
+  options={['1 mm', '4 mm', '2 mm', '0.5 mm']}
+  correctAnswer={0}
+  explanation="Fringe width $\\beta = \\dfrac{\\lambda D}{d}$, where $D$ is the distance to the screen and $d$ is the slit separation. If $d$ is doubled, $\\beta$ is halved. New fringe width $= \\dfrac{2}{2} = 1$ mm."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A convex lens of focal length 20 cm is placed in contact with a concave lens of focal length 30 cm. What is the power of the combination?"
+  options={['$+1.67$ D', '$-1.67$ D', '$+5.00$ D', '$+0.60$ D']}
+  correctAnswer={0}
+  explanation="$P_1 = \\dfrac{1}{f_1} = \\dfrac{1}{0.20} = +5$ D (convex). $P_2 = \\dfrac{1}{f_2} = \\dfrac{1}{-0.30} = -3.33$ D (concave). $P_{\\text{net}} = P_1 + P_2 = 5 - 3.33 = +1.67$ D. The equivalent focal length is $f = 1/P = 1/1.67 \\approx 60$ cm (convex)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A ray of light travelling in a denser medium strikes a rarer medium at an angle of incidence $i$. The reflected ray is completely polarised. The angle between the reflected and refracted rays is:"
+  options={['$90^\\circ$', '$0^\\circ$', '$180^\\circ$', '$i$']}
+  correctAnswer={0}
+  explanation="When the reflected ray is completely polarised, the angle of incidence equals Brewster's angle $i_B$. At Brewster's angle, the reflected and refracted rays are perpendicular to each other: $i_B + r = 90^\\circ$, where $r$ is the angle of refraction. Hence the angle between the reflected and refracted rays is always $90^\\circ$."
+  difficulty="medium"
+/>
+
+## Wave Optics and Photoelectric Effect
+
+<PracticeProblem
+  question="In a single-slit diffraction experiment, the width of the central maximum is found to be 4 mm. If the slit width is halved, the width of the central maximum becomes:"
+  options={['8 mm', '2 mm', '16 mm', '4 mm']}
+  correctAnswer={0}
+  explanation="The width of the central maximum in single-slit diffraction is $2y = \\dfrac{2\\lambda D}{a}$, where $a$ is the slit width. If $a$ is halved, $2y$ doubles. New width $= 2 \\times 4 = 8$ mm. Narrower slit produces broader diffraction pattern."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The work function of a metal surface is 2 eV. If light of wavelength 400 nm is incident on it, what is the maximum kinetic energy of the emitted photoelectrons? ($h = 6.63 \\times 10^{-34}$ J s, $c = 3 \\times 10^8$ m/s, $1$ eV $= 1.6 \\times 10^{-19}$ J)"
+  options={['$1.105$ eV', '$3.105$ eV', '$0.895$ eV', '$2.000$ eV']}
+  correctAnswer={0}
+  explanation="Energy of photon: $E = \\dfrac{hc}{\\lambda} = \\dfrac{6.63 \\times 10^{-34} \\times 3 \\times 10^8}{400 \\times 10^{-9}} = 4.97 \\times 10^{-19}$ J $= \\dfrac{4.97 \\times 10^{-19}}{1.6 \\times 10^{-19}} = 3.105$ eV. By Einstein's equation: $K_{\\max} = E - \\phi = 3.105 - 2.0 = 1.105$ eV."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The de Broglie wavelength associated with an electron accelerated through a potential difference of 100 V is approximately: ($m_e = 9.1 \\times 10^{-31}$ kg, $e = 1.6 \\times 10^{-19}$ C, $h = 6.63 \\times 10^{-34}$ J s)"
+  options={['0.123 nm', '1.23 nm', '0.0123 nm', '12.3 nm']}
+  correctAnswer={0}
+  explanation="$\\lambda = \\dfrac{h}{\\sqrt{2m_e eV}} = \\dfrac{6.63 \\times 10^{-34}}{\\sqrt{2 \\times 9.1 \\times 10^{-31} \\times 1.6 \\times 10^{-19} \\times 100}} = \\dfrac{6.63 \\times 10^{-34}}{\\sqrt{2.912 \\times 10^{-47}}} = \\dfrac{6.63 \\times 10^{-34}}{5.396 \\times 10^{-24}} = 1.228 \\times 10^{-10}$ m $= 0.1228$ nm $\\approx 0.123$ nm."
+  difficulty="hard"
+/>
+
+## Semiconductor Electronics
+
+<PracticeProblem
+  question="In a p-n junction diode, the potential barrier is approximately 0.3 V for Ge and 0.7 V for Si. If a Si diode is forward biased with a voltage of 0.5 V applied, what is the current through the diode?"
+  options={['Nearly zero', 'Moderately high', 'Very high', 'Cannot be determined']}
+  correctAnswer={0}
+  explanation="For a forward-biased Si diode, the applied voltage must exceed the knee voltage (barrier potential) of approximately 0.7 V before significant current flows. Since 0.5 V < 0.7 V, the current is negligibly small (nearly zero). The diode is technically forward biased but below the threshold for conduction."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In a transistor, the current gain $\\beta = 99$. If the base current $I_B = 20$ $\\mu$A, the collector current $I_C$ is:"
+  options={['1.98 mA', '2.00 mA', '0.20 mA', '0.99 mA']}
+  correctAnswer={0}
+  explanation="$\\beta = \\dfrac{I_C}{I_B}$, so $I_C = \\beta \\cdot I_B = 99 \\times 20 \\times 10^{-6} = 1980 \\times 10^{-6}$ A $= 1.98$ mA. The emitter current $I_E = I_C + I_B = 1.98 + 0.02 = 2.00$ mA."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In an LED (Light Emitting Diode), the colour of emitted light depends on:"
+  options={[
+    'The band gap energy of the semiconductor material',
+    'The intensity of forward current',
+    'The applied reverse voltage',
+    'The physical size of the diode',
+  ]}
+  correctAnswer={0}
+  explanation="The colour of light emitted by an LED is determined by the energy of photons released during electron-hole recombination across the band gap: $E = hc/\\lambda$. A wider band gap produces shorter wavelength (higher energy) light. For example, GaAs ($E_g \\approx 1.43$ eV) emits infrared; GaAsP ($\\approx 1.9$ eV) emits red; GaN ($\\approx 3.4$ eV) emits blue/violet."
+  difficulty="hard"
+/>

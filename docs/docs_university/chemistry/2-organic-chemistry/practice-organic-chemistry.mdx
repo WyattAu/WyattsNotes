@@ -1,0 +1,148 @@
+---
+title: 'Organic Chemistry -- Practice Problems'
+description:
+  'University Organic Chemistry -- Practice Problems with MCQ questions covering reaction
+  mechanisms, stereochemistry, spectroscopy, and synthesis for self-assessment and revision.'
+slug: practice-organic-chemistry
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Organic Chemistry -- Practice Problems
+
+## Reaction Mechanisms
+
+<PracticeProblem
+  question="In an $S_N1$ reaction, what is the rate-determining step?"
+  options={[
+    'Ionization of the substrate to form a carbocation intermediate',
+    'Nucleophilic attack on the carbocation',
+    'Deprotonation of the product',
+    'Simultaneous bond breaking and bond formation',
+  ]}
+  correctAnswer={0}
+  explanation="The $S_N1$ mechanism proceeds in two steps: (1) slow ionization to form a carbocation, and (2) fast nucleophilic attack. The first step is rate-determining because it involves breaking a C-LG bond without any bond forming, requiring significant energy to reach the transition state. The rate law is $\\text{rate} = k[RX]$, first-order in substrate only, since the nucleophile is not involved in the RDS."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which of the following statements about the E2 elimination mechanism is correct?"
+  options={[
+    'The reaction requires a strong base and proceeds via a single concerted step with anti-periplanar geometry',
+    'The reaction proceeds through a carbocation intermediate',
+    'The rate law is first-order in substrate only',
+    'The Zaitsev product is always the major product regardless of base stericity',
+  ]}
+  correctAnswer={0}
+  explanation="E2 is a concerted, bimolecular elimination: the base abstracts a beta-hydrogen while the leaving group departs, forming a double bond in a single step. The rate law is $\\text{rate} = k[substrate][base]$, second-order overall. The anti-periplanar geometry requirement means the H-C-C-LG dihedral angle must be approximately $180^\\circ$ for optimal orbital overlap. Bulky bases (e.g., tert-butoxide) favor the Hoffman product (less substituted alkene) due to steric hindrance."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In electrophilic aromatic substitution (EAS) of benzene with a nitro group already present, where does the second electrophile preferentially add?"
+  options={[
+    'Meta position, because the nitro group is a meta-directing deactivator',
+    'Ortho and para positions, because the nitro group is an ortho-para director',
+    'All positions equally, because the nitro group has no directing effect',
+    'Meta position, because the nitro group is a meta-directing activator',
+  ]}
+  correctAnswer={0}
+  explanation="The nitro group ($-\\text{NO}_2$) is strongly electron-withdrawing via both resonance and inductive effects. It withdraws electron density from the ortho and para positions through resonance, leaving the meta position relatively more electron-rich. The meta-directing effect makes the meta product predominant. Nitro groups are deactivators, so the overall reaction rate is slower than for unsubstituted benzene."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the major product when 2-methylbut-2-ene undergoes acid-catalyzed hydration with $\\text{H}_3\\text{O}^+$?"
+  options={[
+    '2-methylbutan-2-ol (tertiary alcohol, Markovnikov product)',
+    '2-methylbutan-1-ol (primary alcohol, anti-Markovnikov product)',
+    'A mixture of 2-methylbutan-2-ol and 3-methylbutan-2-ol',
+    '2-methylbutan-2-ol with rearrangement to a more stable carbocation',
+  ]}
+  correctAnswer={0}
+  explanation="Acid-catalyzed hydration follows Markovnikov's rule: the proton adds to the less substituted carbon, forming the more stable tertiary carbocation at C2. Water then attacks the carbocation, and deprotonation yields 2-methylbutan-2-ol (tertiary alcohol). No rearrangement occurs because the initial carbocation is already tertiary, the most stable possible. For anti-Markovnikov hydration, hydroboration-oxidation ($\\text{BH}_3$ then $\\text{H}_2\\text{O}_2/\\text{OH}^-$) would be used."
+  difficulty="medium"
+/>
+
+## Stereochemistry
+
+<PracticeProblem
+  question="A molecule with two chiral centers is described as meso. Which of the following is true?"
+  options={[
+    'The molecule has a plane of symmetry and is achiral despite having stereocenters',
+    'The molecule has no plane of symmetry and exists as a pair of enantiomers',
+    'The molecule has two chiral centers that are both $R$ configuration',
+    'The molecule cannot be optically active under any conditions',
+  ]}
+  correctAnswer={0}
+  explanation="A meso compound contains chiral centers but also has an internal plane of symmetry, making it achiral overall. The mirror images are superimposable. For example, $(2R,3S)$-tartaric acid is meso because it has a plane of symmetry between C2 and C3. A molecule with two different chiral centers and no symmetry element can have up to $2^2 = 4$ stereoisomers (2 pairs of enantiomers), or fewer if some are meso."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For the reaction of $(R)$-2-bromobutane with sodium methoxide ($\\text{NaOCH}_3$) in methanol, what is the stereochemical outcome of the major product?"
+  options={[
+    '$(S)$-2-methoxybutane, formed by inversion of configuration via $S_N2$',
+    '$(R)$-2-methoxybutane, formed by retention of configuration via $S_N2$',
+    'Racemic 2-methoxybutane, formed via $S_N1$ with carbocation intermediate',
+    '$(S)$-2-methoxybutane, formed via $S_N1$ with carbocation rearrangement',
+  ]}
+  correctAnswer={0}
+  explanation="Sodium methoxide is a strong nucleophile and methanol is a polar protic solvent favoring $S_N2$ for a primary substrate. 2-bromobutane is secondary, so both $S_N1$ and $S_N2$ are possible, but with a strong nucleophile like methoxide, $S_N2$ dominates. The $S_N2$ mechanism gives inversion of configuration (Walden inversion), converting $(R)$ to $(S)$. If a weak nucleophile were used in a polar protic solvent, $S_N1$ with racemization would dominate."
+  difficulty="hard"
+/>
+
+## Spectroscopy and Synthesis
+
+<PracticeProblem
+  question="In proton NMR spectroscopy, what does a triplet with integration of 3H at $\\delta \\approx 1.0$ ppm indicate?"
+  options={[
+    'A methyl group ($\\text{CH}_3$) adjacent to a $\\text{CH}_2$ group (coupling to 2 equivalent protons, $n+1=3$)',
+    'A methyl group adjacent to a $\\text{CH}$ group',
+    'Three equivalent protons on an aromatic ring',
+    'A methyl group that is not coupled to any neighbors',
+  ]}
+  correctAnswer={0}
+  explanation="A triplet arises from the $n+1$ rule: a methyl group ($\\text{CH}_3$, 3 protons) coupled to 2 equivalent neighboring protons ($n=2$) splits into $2+1=3$ peaks. The integration of 3 confirms it is a methyl group. A methyl next to a $\\text{CH}$ would appear as a doublet ($n=1$), and an uncoupled methyl would be a singlet. The chemical shift of ~1.0 ppm is typical for aliphatic methyl groups."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the correct order of reactivity for nucleophilic acyl substitution: acid chloride, anhydride, ester, amide?"
+  options={[
+    'Acid chloride > anhydride > ester > amide',
+    'Amide > ester > anhydride > acid chloride',
+    'Ester > acid chloride > amide > anhydride',
+    'Anhydride > acid chloride > amide > ester',
+  ]}
+  correctAnswer={0}
+  explanation="Reactivity in nucleophilic acyl substitution follows the leaving group ability: $\\text{Cl}^- > \\text{RCOO}^- > \\text{RO}^- > \\text{NH}_2^-$. Acid chlorides are the most reactive because chloride is the best leaving group and the carbonyl carbon is the most electrophilic (strong inductive withdrawal by Cl). Amides are the least reactive because $\\text{NH}_2$ is a poor leaving group and nitrogen donates electron density via resonance. This reactivity trend is central to designing synthetic sequences involving carbonyl transformations."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which reagent combination achieves a Grignard reaction to convert a ketone into a tertiary alcohol?"
+  options={[
+    '$\\text{RMgBr}$ followed by aqueous workup',
+    '$\\text{LiAlH}_4$ followed by aqueous workup',
+    '$\\text{NaBH}_4$ in methanol',
+    '$\\text{H}_2$ with Pd/C catalyst',
+  ]}
+  correctAnswer={0}
+  explanation="Grignard reagents ($\\text{RMgBr}$) add to the carbonyl carbon of ketones, forming a tetrahedral alkoxide intermediate. Aqueous workup protonates the alkoxide to give a tertiary alcohol (since the ketone already has two carbon substituents on the carbonyl). $\\text{LiAlH}_4$ reduces ketones to secondary alcohols, not tertiary. $\\text{NaBH}_4$ similarly gives secondary alcohols. The Grignard reaction is a powerful C-C bond-forming reaction."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In infrared spectroscopy, a strong broad absorption around 2500--3300 $\\text{cm}^{-1}$ and a strong absorption near 1700 $\\text{cm}^{-1}$ together indicate the presence of which functional group?"
+  options={[
+    'A carboxylic acid ($\\text{COOH}$)',
+    'An aldehyde ($\\text{CHO}$)',
+    'A ketone ($\\text{C=O}$)',
+    'An alcohol ($\\text{OH}$) and an ester',
+  ]}
+  correctAnswer={0}
+  explanation="The broad absorption at 2500--3300 $\\text{cm}^{-1}$ is characteristic of the O-H stretch in carboxylic acids, broadened by hydrogen bonding that creates a range of O-H bond strengths. The sharp absorption near 1700 $\\text{cm}^{-1}$ is the C=O stretch. Together, these are the diagnostic IR signature of carboxylic acids. Aldehydes show C=O near 1725 $\\text{cm}^{-1}$ but O-H only if present as an impurity; esters show C=O near 1735 $\\text{cm}^{-1}$ with additional C-O stretches."
+  difficulty="hard"
+/>

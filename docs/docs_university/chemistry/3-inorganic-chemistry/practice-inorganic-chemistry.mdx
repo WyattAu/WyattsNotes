@@ -1,0 +1,128 @@
+---
+title: 'Inorganic Chemistry -- Practice Problems'
+description:
+  'University Inorganic Chemistry -- Practice Problems with MCQ questions covering chemical bonding,
+  periodicity, coordination chemistry, and solid state chemistry for self-assessment and revision.'
+slug: practice-inorganic-chemistry
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Inorganic Chemistry -- Practice Problems
+
+## Chemical Bonding and Periodicity
+
+<PracticeProblem
+  question="According to molecular orbital theory, what is the bond order of the $\\text{O}_2$ molecule?"
+  options={['2', '1', '1.5', '3']}
+  correctAnswer={0}
+  explanation="For $\\text{O}_2$ (12 valence electrons), the MO filling order is $\\sigma_{2s}^2\\, \\sigma_{2s}^{*2}\\, \\sigma_{2p_z}^2\\, \\pi_{2p_x}^2\\, \\pi_{2p_y}^2\\, \\pi_{2p_x}^{*1}\\, \\pi_{2p_y}^{*1}$. Bond order $= (\\text{bonding} - \\text{antibonding})/2 = (8-4)/2 = 2$. The two unpaired electrons in the degenerate $\\pi^*$ orbitals explain $\\text{O}_2$'s paramagnetism, which cannot be explained by simple Lewis theory. This was one of the early triumphs of MO theory."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the correct explanation for why the first ionization energy of boron ($\\text{B}$) is lower than that of beryllium ($\\text{Be}$)?"
+  options={[
+    'Boron's $2p$ electron is shielded more effectively and is at a higher energy than beryllium's $2s$ electron',
+    'Boron has a larger atomic radius than beryllium',
+    'Boron has fewer protons than beryllium',
+    'Boron has a half-filled $p$ subshell which is unstable',
+  ]}
+  correctAnswer={0}
+  explanation="Be has the electron configuration $1s^2\\, 2s^2$, while B has $1s^2\\, 2s^2\\, 2p^1$. The $2p$ electron in boron is higher in energy than the $2s$ electrons and is also more effectively shielded by the $2s$ electrons. This makes the $2p$ electron easier to remove, giving B a lower first IE than Be despite B having one more proton. The general trend across period 2 is: Li < B < Be < C < O < N < F < Ne, with dips at B and O due to $s$-$p$ and $p$-$p$ sublevel changes."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In VSEPR theory, what is the molecular geometry of $\\text{XeF}_4$?"
+  options={['Square planar', 'Tetrahedral', 'Square pyramidal', 'Trigonal bipyramidal']}
+  correctAnswer={0}
+  explanation="Xe in $\\text{XeF}_4$ has 8 valence electrons plus 4 from bonding to F atoms, giving 12 electrons or 6 electron pairs around Xe. With 4 bonding pairs and 2 lone pairs, the electron pair geometry is octahedral. The lone pairs occupy axial positions to minimize repulsion, giving a square planar molecular geometry. The $\\text{XeF}_4$ molecule is an example of an $\\text{AX}_4\\text{E}_2$ VSEPR type."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Using crystal field theory, what happens to the $d$-orbital energies in an octahedral complex?"
+  options={[
+    'The $d_{x^2-y^2}$ and $d_{z^2}$ orbitals are raised in energy (the $e_g$ set) while the $d_{xy}$, $d_{xz}$, $d_{yz}$ orbitals are lowered (the $t_{2g}$ set)',
+    'All five $d$ orbitals are raised equally in energy',
+    'The $t_{2g}$ set is raised and the $e_g$ set is lowered',
+    'Only the $d_{z^2}$ orbital is affected',
+  ]}
+  correctAnswer={0}
+  explanation="In an octahedral field, the six ligands approach along the $\\pm x$, $\\pm y$, $\\pm z$ axes. The $d_{x^2-y^2}$ and $d_{z^2}$ orbitals (the $e_g$ set) point directly at the ligands and experience greater repulsion, raising their energy. The $d_{xy}$, $d_{xz}$, $d_{yz}$ orbitals (the $t_{2g}$ set) point between the axes and are relatively stabilized. The energy gap between them is $\\Delta_o$ (10 Dq). The barycenter is preserved: $2 E(e_g) + 3 E(t_{2g}) = 0$."
+  difficulty="medium"
+/>
+
+## Coordination Chemistry
+
+<PracticeProblem
+  question="The complex $[\\text{Co}(\text{NH}_3)_6]^{3+}$ is diamagnetic. What is the hybridization of the cobalt ion and the geometry of the complex?"
+  options={[
+    '$d^2sp^3$ hybridization, octahedral geometry, low-spin $d^6$',
+    '$sp^3d^2$ hybridization, octahedral geometry, high-spin $d^6$',
+    '$sp^3$ hybridization, tetrahedral geometry, high-spin $d^6$',
+    '$dsp^2$ hybridization, square planar geometry, low-spin $d^7$',
+  ]}
+  correctAnswer={0}
+  explanation="$\\text{Co}^{3+}$ has the electron configuration $3d^6$. With the strong-field ligand $\\text{NH}_3$, the $\\Delta_o$ is large enough to pair all six electrons in the $t_{2g}$ set ($t_{2g}^6\\, e_g^0$), giving a low-spin configuration with zero unpaired electrons (diamagnetic). The inner-orbital $d^2sp^3$ hybridization uses two of the $3d$ orbitals along with $4s$ and $4p$ orbitals. The complex is octahedral. In contrast, with a weak-field ligand like $\\text{F}^-$, $\\text{Co}^{3+}$ would be high-spin ($t_{2g}^4\\, e_g^2$) and paramagnetic."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="For the complex $[\\text{Ni}(\\text{CN})_4]^{2-}$, which statement is correct?"
+  options={[
+    'The complex is square planar and diamagnetic because $\\text{CN}^-$ is a strong-field ligand causing large $\\Delta$',
+    'The complex is tetrahedral and paramagnetic with two unpaired electrons',
+    'The complex is octahedral and low-spin',
+    'The complex is square planar and paramagnetic with two unpaired electrons',
+  ]}
+  correctAnswer={0}
+  explanation="$\\text{Ni}^{2+}$ has a $d^8$ configuration. With the strong-field ligand $\\text{CN}^-$, the $\\Delta$ is very large, favoring a square planar geometry which maximizes pairing: $d_{xy}^2\\, d_{xz}^2\\, d_{z^2}^2\\, d_{x^2-y^2}^0\\, d_{yz}^0$ with $dsp^2$ hybridization. All electrons are paired, making the complex diamagnetic. For $d^8$ ions with weak-field ligands (e.g., $\\text{NiCl}_4^{2-}$), the complex is tetrahedral and paramagnetic. The square planar geometry is typical for $d^8$ with strong-field ligands."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="According to the spectrochemical series, which of the following ligands produces the largest crystal field splitting ($\\Delta_o$)?"
+  options={['$\\text{CN}^-$', '$\\text{F}^-$', '$\\text{H}_2\\text{O}$', '$\\text{Cl}^-$']}
+  correctAnswer={0}
+  explanation="The spectrochemical series orders ligands by field strength: $\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^- < \\text{OH}^- < \\text{H}_2\\text{O} < \\text{NH}_3 < \\text{en} < \\text{CN}^- < \\text{CO}$. $\\text{CN}^-$ (cyanide) is a strong-field ligand that produces a large $\\Delta_o$ due to good $\\sigma$-donation and strong $\\pi$-backbonding into its empty $\\pi^*$ orbitals. $\\text{F}^-$ is a weak-field ligand. Ligands that are both strong $\\sigma$-donors and strong $\\pi$-acceptors produce the largest splitting."
+  difficulty="easy"
+/>
+
+## Solid State Chemistry
+
+<PracticeProblem
+  question="In a face-centered cubic (FCC) unit cell, how many atoms are there per unit cell?"
+  options={['4', '1', '2', '6']}
+  correctAnswer={0}
+  explanation="An FCC unit cell has atoms at all 8 corners (each shared among 8 cells, contributing $8 \\times 1/8 = 1$) and atoms at the centers of all 6 faces (each shared between 2 cells, contributing $6 \\times 1/2 = 3$). Total: $1 + 3 = 4$ atoms per unit cell. The coordination number is 12 and the atomic packing factor is 0.74, making FCC one of the two most efficiently packed arrangements (along with HCP)."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The ionic radii of $\\text{Na}^+$ and $\\text{Cl}^-$ are 102 pm and 181 pm respectively. What is the expected structure type of NaCl based on the radius ratio rule?"
+  options={[
+    'Octahedral coordination (rock salt structure), since $r^+/r^- = 0.56$ falls in the range 0.414--0.732',
+    'Tetrahedral coordination (zinc blende structure), since $r^+/r^- < 0.414$',
+    'Cubic coordination (CsCl structure), since $r^+/r^- > 0.732$',
+    'Linear coordination, since the ions are too different in size',
+  ]}
+  correctAnswer={0}
+  explanation="The radius ratio $r^+/r^- = 102/181 = 0.56$. According to the radius ratio rules: 0.225--0.414 predicts tetrahedral (CN=4), 0.414--0.732 predicts octahedral (CN=6), and 0.732--1.0 predicts cubic (CN=8). A ratio of 0.56 falls in the octahedral range, consistent with the observed rock salt (NaCl) structure where each $\\text{Na}^+$ is octahedrally coordinated by 6 $\\text{Cl}^-$ and vice versa. The radius ratio rule has limitations but provides a useful first approximation."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Schottky defects in an ionic crystal involve which of the following?"
+  options={[
+    'Equal numbers of cation and anion vacancies, maintaining overall electrical neutrality',
+    'A cation moving to an interstitial site, creating a vacancy-interstitial pair',
+    'Only anion vacancies, which are compensated by impurity ions',
+    'The substitution of a cation by one with a different charge',
+  ]}
+  correctAnswer={0}
+  explanation="A Schottky defect consists of a pair of vacancies: one cation and one anion are missing from their lattice sites. This maintains charge neutrality and stoichiometry. The number of Schottky defects increases with temperature according to $n_s \\approx N \\exp(-\\Delta H_s / 2k_B T)$. In contrast, a Frenkel defect involves an ion displaced to an interstitial site. NaCl predominantly forms Schottky defects, while AgCl predominantly forms Frenkel defects."
+  difficulty="hard"
+/>

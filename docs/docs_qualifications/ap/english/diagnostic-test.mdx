@@ -1,0 +1,324 @@
+---
+title: 'AP English Language Diagnostic Test'
+slug: diagnostic-test
+description:
+  'AP English Language diagnostic test covering rhetorical analysis, argument, synthesis, and close
+  reading for exam preparation.'
+tags:
+  - ap
+  - ap-english
+---
+
+import DiagnosticTest from '@site/src/components/interactive/DiagnosticTest';
+
+## AP English Language Diagnostic Test
+
+This diagnostic test covers the full AP English Language and Composition syllabus. There are 20
+questions spanning 4 core topics. The test uses adaptive difficulty, selecting questions based on
+your performance to target areas of weakness.
+
+**Recommended time:** 30 minutes. The test presents up to 15 questions drawn from the pool,
+adaptively ordered by your answers.
+
+---
+
+## How the Diagnostic Scoring Works
+
+After completing the test, you receive a results breakdown:
+
+- **Topic Breakdown** -- each topic shows your score, colour-coded green (strong, 80%+), amber
+  (moderate, 50-79%), or red (weak, below 50%).
+- **Strengths** -- topics where you scored 80% or above.
+- **Needs Improvement** -- topics where you scored below 50%.
+- **Recommended Study Topics** -- all topics where you did not score in the strong range.
+
+The adaptive engine targets weak topics first, so your weakest areas are tested more thoroughly. Use
+the results to prioritise which topic pages to revise.
+
+---
+
+export const questions = [
+  {
+    id: 'ra1',
+    topic: 'Rhetorical Analysis',
+    difficulty: 1,
+    question:
+      'Which of the following is NOT one of the three classical rhetorical appeals identified by Aristotle?',
+    options: ['Ethos', 'Pathos', 'Logos', 'Kairos'],
+    correctIndex: 3,
+    explanation:
+      "The three classical rhetorical appeals are ethos (appeal to credibility/character), pathos (appeal to emotion), and logos (appeal to logic/reason). Kairos refers to the timeliness or appropriateness of an argument but is not one of Aristotle's three primary appeals. Understanding ethos, pathos, and logos is foundational for rhetorical analysis on the AP exam.",
+  },
+  {
+    id: 'ra2',
+    topic: 'Rhetorical Analysis',
+    difficulty: 2,
+    question:
+      'An author begins an essay about poverty with a detailed story of a single family struggling to afford food. What rhetorical strategy is the author primarily using?',
+    options: [
+      'Statistical evidence to support a logical argument',
+      'A specific example to evoke empathy and establish the human dimension of an abstract issue',
+      'An analogy to compare poverty across different nations',
+      'A counterargument to refute opposing views',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Opening with a specific narrative about a real family is a pathos-driven strategy that personalises an abstract issue (poverty), making it emotionally resonant for the reader. This technique draws the audience in, creates empathy, and grounds subsequent analytical or statistical arguments in human experience. It is a common and effective rhetorical opening strategy in persuasive and expository writing.',
+  },
+  {
+    id: 'ra3',
+    topic: 'Rhetorical Analysis',
+    difficulty: 3,
+    question:
+      'Which sentence structure is characterised by placing the main clause at the end, preceded by subordinate clauses that build anticipation?',
+    options: ['Simple sentence', 'Periodic sentence', 'Loose (cumulative) sentence', 'Fragment'],
+    correctIndex: 1,
+    explanation:
+      'A periodic sentence delays the main point (independent clause) until the end, building tension or emphasis through a series of subordinate clauses or phrases before the climactic main clause. For example: "Despite the rain, despite the cold, despite the darkness that fell earlier each evening, she continued her daily walk to the cliffs." The main clause ("she continued her daily walk") comes at the end after three subordinate phrases.',
+  },
+  {
+    id: 'ra4',
+    topic: 'Rhetorical Analysis',
+    difficulty: 4,
+    question:
+      'In a satirical essay, an author proposes absurd solutions to real problems. What is the primary rhetorical purpose of this technique?',
+    options: [
+      'To sincerely advocate for the proposed solutions',
+      'To expose the absurdity of current approaches by exaggeration, compelling readers to reconsider their assumptions',
+      "To confuse the reader about the author's true position",
+      "To demonstrate the author's superior knowledge of the subject",
+    ],
+    correctIndex: 1,
+    explanation:
+      'Satire uses exaggeration, irony, and absurdity to expose and criticise real problems or flawed approaches. By proposing ridiculous solutions, the satirist highlights how inadequate or irrational current practices are, forcing readers to question assumptions they might otherwise accept uncritically. Jonathan Swift\'s "A Modest Proposal" is the classic example -- his suggestion that the Irish sell their children as food was not literal but a devastating critique of British economic policies.',
+  },
+  {
+    id: 'ra5',
+    topic: 'Rhetorical Analysis',
+    difficulty: 5,
+    question:
+      'Which term best describes the rhetorical situation concept that encompasses the speaker, occasion, audience, purpose, subject, and tone?',
+    options: ['The rhetorical triangle', 'SOAPStone', 'The Toulmin model', 'The enthymeme'],
+    correctIndex: 1,
+    explanation:
+      'SOAPStone is an acronym for Speaker, Occasion, Audience, Purpose, Subject, and Tone. It is a framework for analysing the rhetorical situation -- the context in which a text is produced and received. Understanding the full rhetorical situation is essential for effective analysis because the same rhetorical choices can have different effects in different contexts. The rhetorical triangle refers to ethos-pathos-logos; the Toulmin model structures arguments; an enthymeme is an implicit syllogism.',
+  },
+  {
+    id: 'ar1',
+    topic: 'Argument',
+    difficulty: 1,
+    question:
+      'Which of the following is the most effective way to establish credibility (ethos) in an argumentative essay?',
+    options: [
+      'Using complex vocabulary to appear knowledgeable',
+      'Citing reputable sources, acknowledging counterarguments, and demonstrating fair-minded reasoning',
+      'Agreeing with every possible viewpoint to avoid offence',
+      'Attacking the character of opposing writers',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Ethos (credibility) is established through demonstrating knowledge of the subject, using credible evidence, acknowledging and addressing opposing views fairly, and maintaining a measured, reasonable tone. Acknowledging counterarguments shows intellectual honesty and that the writer has considered multiple perspectives. Personal attacks (ad hominem) and unnecessarily complex language undermine credibility rather than building it.',
+  },
+  {
+    id: 'ar2',
+    topic: 'Argument',
+    difficulty: 2,
+    question:
+      'A writer claims: "If we allow students to grade their teachers, then soon students will be running the entire school." Which logical fallacy is most evident?',
+    options: ['Ad hominem', 'Slippery slope', 'Post hoc ergo propter hoc', 'Begging the question'],
+    correctIndex: 1,
+    explanation:
+      'The slippery slope fallacy assumes that a relatively small first step will inevitably lead to a chain of related (usually extreme) events without sufficient evidence for the causal chain. The writer jumps from a modest proposal (student evaluation of teachers) to an extreme consequence (students running the school) without establishing that one necessarily leads to the other.',
+  },
+  {
+    id: 'ar3',
+    topic: 'Argument',
+    difficulty: 3,
+    question:
+      'Which type of evidence would be LEAST effective in an argument about the health benefits of a new medication?',
+    options: [
+      'Clinical trial data from peer-reviewed research',
+      'Testimonials from patients who used the medication',
+      'Statistical analysis of side effects across thousands of patients',
+      'Expert analysis from a pharmacologist published in a medical journal',
+    ],
+    correctIndex: 1,
+    explanation:
+      'While patient testimonials are emotionally compelling (pathos), they are the least reliable form of evidence for evaluating the actual health benefits of a medication. Testimonials are anecdotal, subject to selection bias (only satisfied patients report), the placebo effect, and lack of controlled conditions. Clinical trial data, statistical analysis, and expert analysis provide more reliable, systematic evidence for evaluating medication effectiveness.',
+  },
+  {
+    id: 'ar4',
+    topic: 'Argument',
+    difficulty: 4,
+    question:
+      'A writer uses the phrase "some might argue" followed by an opposing viewpoint and then provides a rebuttal. What is this technique called and why is it effective?',
+    options: [
+      'Concession and refutation; it shows the writer has considered alternatives and strengthens the argument',
+      'Begging the question; it circularly assumes what it claims to prove',
+      'Straw man; it misrepresents the opposing view',
+      'Appeal to authority; it relies on unnamed experts',
+    ],
+    correctIndex: 0,
+    explanation:
+      "This is concession and refutation (also called counterargument and rebuttal). The writer concedes that an opposing view exists and then refutes it with evidence or reasoning. This technique is effective because: (1) it builds ethos by showing the writer is aware of multiple perspectives; (2) it anticipates and neutralises objections before the reader can raise them; (3) it demonstrates the strength of the writer's position by showing it can withstand opposing arguments.",
+  },
+  {
+    id: 'sy1',
+    topic: 'Synthesis',
+    difficulty: 1,
+    question: 'When writing a synthesis essay, the primary goal is to:',
+    options: [
+      'Summarise each source in order from strongest to weakest',
+      'Develop an original argument supported by evidence from multiple sources',
+      'Agree with the majority of the sources',
+      'Quote as much as possible from each source',
+    ],
+    correctIndex: 1,
+    explanation:
+      "A synthesis essay requires the writer to develop an original argument (thesis) that is supported and enriched by evidence drawn from multiple provided sources. The essay should go beyond merely summarising individual sources by making connections between them, identifying patterns or contradictions, and using the sources as evidence for the writer's own analytical position. The best synthesis essays demonstrate independent thinking while effectively integrating source material.",
+  },
+  {
+    id: 'sy2',
+    topic: 'Synthesis',
+    difficulty: 2,
+    question:
+      'When evaluating the credibility of a source for a synthesis essay, which factor is MOST important to consider?',
+    options: [
+      'The length of the source document',
+      "The author's expertise, the publication venue, the date of publication, and potential biases",
+      'Whether the source agrees with your thesis',
+      'The number of sources the author cited',
+    ],
+    correctIndex: 1,
+    explanation:
+      "Source credibility depends on multiple factors: the author's qualifications and expertise in the field, the reputation of the publication venue (peer-reviewed journal vs personal blog), the recency of the information (especially for fast-changing topics), and the potential biases or conflicts of interest. A source agreeing with your thesis does not make it credible; in fact, seeking only confirming sources can weaken an argument by ignoring relevant counter-evidence.",
+  },
+  {
+    id: 'sy3',
+    topic: 'Synthesis',
+    difficulty: 3,
+    question:
+      'Which method of incorporating source material demonstrates the strongest synthesis skills?',
+    options: [
+      'Using block quotations from three separate sources in consecutive paragraphs',
+      'Paraphrasing ideas from multiple sources and connecting them to support a single analytical point',
+      'Repeating the same statistic from one source throughout the essay',
+      "Listing each author's argument in a separate paragraph without connecting them",
+    ],
+    correctIndex: 1,
+    explanation:
+      'Strong synthesis involves weaving ideas from multiple sources together to support analytical points. Paraphrasing (rather than direct quotation) shows the writer has processed and understood the source material. Connecting ideas from different sources to a single analytical point demonstrates the ability to synthesise -- to see relationships, patterns, or contrasts between sources and use them to build an original argument.',
+  },
+  {
+    id: 'sy4',
+    topic: 'Synthesis',
+    difficulty: 4,
+    question:
+      'Two sources on education policy disagree: Source A advocates for standardised testing, while Source B argues against it. How should a writer best handle this contradiction in a synthesis essay?',
+    options: [
+      'Ignore Source B and only cite Source A',
+      'Acknowledge the disagreement, analyse why the sources reach different conclusions, and use both perspectives to develop a more nuanced argument',
+      'Conclude that since the sources disagree, no valid argument can be made',
+      'Cite both sources to support the same claim without acknowledging the disagreement',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Contradictions between sources are valuable analytical opportunities. The strongest approach acknowledges the disagreement, analyses the reasons for it (different methodologies, different values, different contexts), and uses the tension to develop a more nuanced argument. Perhaps both perspectives have merit in different contexts, or the disagreement reveals an important complexity that a one-sided approach would miss. Ignoring disagreement or pretending sources agree when they do not undermines credibility.',
+  },
+  {
+    id: 'cr1',
+    topic: 'Close Reading',
+    difficulty: 1,
+    question: 'The difference between denotation and connotation is best described as:',
+    options: [
+      'Denotation is the literal dictionary meaning; connotation is the emotional or cultural association of a word',
+      'Denotation refers to connotation in academic writing',
+      'Connotation is the literal meaning; denotation is the figurative meaning',
+      'They are the same thing',
+    ],
+    correctIndex: 0,
+    explanation:
+      'Denotation is the objective, literal dictionary definition of a word. Connotation refers to the emotional, cultural, or implied associations that a word carries beyond its literal meaning. For example, the words "thrifty" and "cheap" have similar denotations (spending little money) but very different connotations (positive vs negative). Understanding connotation is essential for close reading because word choice reveals the author\'s attitude and shapes the reader\'s response.',
+  },
+  {
+    id: 'cr2',
+    topic: 'Close Reading',
+    difficulty: 2,
+    question:
+      'An author writes: "The city breathed its familiar rhythm of sirens and subway rumbles." Which device is being used and what effect does it create?',
+    options: [
+      "Hyperbole; exaggerates the city's noise level",
+      'Personification; gives the city lifelike qualities, making the urban environment feel like a living organism',
+      "Metonymy; substitutes 'sirens' for 'emergency services'",
+      'Alliteration; creates a musical quality through repeated sounds',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The author uses personification by attributing the human act of "breathing" to the city, transforming the urban environment into something alive and organic. This makes the city feel like a living entity with its own natural rhythms, creating intimacy between the reader and the setting. "Breathed" suggests the city\'s sounds are as natural and rhythmic as breathing, normalising what might otherwise feel chaotic.',
+  },
+  {
+    id: 'cr3',
+    topic: 'Close Reading',
+    difficulty: 3,
+    question:
+      'In the sentence "She was not unkind, nor was she particularly generous," what rhetorical device is being used and what does it reveal about the author\'s stance?',
+    options: [
+      'Litotes (double negative understatement); it creates a deliberately noncommittal, measured tone that avoids strong judgement',
+      'Antithesis; it sharply contrasts two opposing ideas',
+      'Chiasmus; it reverses grammatical structures for emphasis',
+      'Parallelism; it creates rhythmic balance for persuasive effect',
+    ],
+    correctIndex: 0,
+    explanation:
+      'Litotes is a form of understatement using double negatives or negated antonyms to make an affirmative point (e.g., "not unkind" means "somewhat kind"). Here, the litotes creates a deliberately cautious, noncommittal tone -- the author is carefully avoiding strong praise or criticism. "Not unkind" and "not particularly generous" define the subject by what she is not rather than what she is, revealing an authorial stance of careful qualification and perhaps mild ambivalence.',
+  },
+  {
+    id: 'cr4',
+    topic: 'Close Reading',
+    difficulty: 4,
+    question:
+      'A passage shifts from long, flowing descriptive sentences in the first half to short, declarative sentences in the second half. This structural shift most likely serves to:',
+    options: [
+      "Demonstrate the author's lack of writing skill",
+      'Create a shift in pace and tone, possibly mirroring a thematic change from reflection to urgency or certainty',
+      'Confuse the reader for dramatic effect',
+      'Satisfy a word count requirement',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Structural shifts in sentence length and complexity almost always serve a rhetorical purpose. Long, flowing sentences create a contemplative, reflective, or leisurely pace (appropriate for description or introspection). Short, declarative sentences create urgency, emphasis, certainty, or tension. A shift from one to the other often mirrors a thematic shift: from description to action, from uncertainty to resolve, from dream to reality. Recognising these structural patterns is central to close reading.',
+  },
+  {
+    id: 'cr5',
+    topic: 'Close Reading',
+    difficulty: 5,
+    question:
+      'An author uses the word "precipitate" instead of "cause" in the sentence: "The economic policy precipitated a crisis." What effect does this word choice create compared to the more common alternative?',
+    options: [
+      'No significant effect; the words are synonymous',
+      'It conveys suddenness, urgency, and a sense of inevitable downward momentum that "cause" does not imply',
+      'It makes the sentence harder to read, weakening the argument',
+      'It suggests the crisis was beneficial',
+    ],
+    correctIndex: 1,
+    explanation:
+      '"Precipitate" carries connotations of suddenness, haste, and a forceful or even reckless triggering of events (the same root as precipitation -- something falling rapidly). Unlike the neutral "cause," "precipitated" implies the crisis came suddenly and with a sense of inevitability once set in motion. The word choice subtly evaluates the economic policy as not merely linked to the crisis but as having recklessly accelerated it, revealing the author\'s critical stance toward the policy without needing an explicit judgement.',
+  },
+];
+
+export const handleComplete = (results) => {
+  console.log('Diagnostic test completed:', results);
+};
+
+<DiagnosticTest subject="AP English Language" questions={questions} onComplete={handleComplete} />
+
+---
+
+## Topic Coverage
+
+| Topic               | Questions | Revision Guide                                                                |
+| ------------------- | --------- | ----------------------------------------------------------------------------- |
+| Rhetorical Analysis | 5         | [Rhetorical Analysis](/docs/qualifications/ap/english/1-rhetorical-analysis/) |
+| Argument            | 4         | [Argument](/docs/qualifications/ap/english/2-argument/)                       |
+| Synthesis           | 4         | [Synthesis](/docs/qualifications/ap/english/3-synthesis/)                     |
+| Close Reading       | 5         | [Close Reading](/docs/qualifications/ap/english/4-close-reading/)             |

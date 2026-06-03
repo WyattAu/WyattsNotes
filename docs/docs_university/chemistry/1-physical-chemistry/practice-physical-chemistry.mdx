@@ -1,0 +1,148 @@
+---
+title: 'Physical Chemistry -- Practice Problems'
+description:
+  'University Physical Chemistry -- Practice Problems with MCQ questions covering thermodynamics,
+  kinetics, quantum chemistry, and statistical mechanics for self-assessment and revision.'
+slug: practice-physical-chemistry
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Physical Chemistry -- Practice Problems
+
+## Thermodynamics
+
+<PracticeProblem
+  question="For a reversible isothermal expansion of an ideal gas from volume $V_1$ to $V_2$, what is the expression for the work done by the gas?"
+  options={[
+    '$w = -nRT \\ln(V_2 / V_1)$',
+    '$w = -nRT(V_2 - V_1)$',
+    '$w = -P_{\\text{ext}}(V_2 - V_1)$',
+    '$w = -nRT \\ln(V_1 / V_2)$',
+  ]}
+  correctAnswer={0}
+  explanation="For a reversible isothermal expansion, the work is $w = -\\int_{V_1}^{V_2} P\\, dV$. Since $P = nRT/V$ for an ideal gas, this gives $w = -nRT \\int_{V_1}^{V_2} dV/V = -nRT \\ln(V_2/V_1)$. The work is negative (done by the gas on surroundings) when $V_2 > V_1$. The irreversible case with constant external pressure uses $w = -P_{\\text{ext}}(V_2 - V_1)$, which gives less work."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which thermodynamic relation correctly expresses the Gibbs free energy change at constant temperature and pressure?"
+  options={[
+    '$\\Delta G = \\Delta H - T\\Delta S$',
+    '$\\Delta G = \\Delta H + T\\Delta S$',
+    '$\\Delta G = \\Delta A + P\\Delta V$',
+    '$\\Delta G = T\\Delta S - \\Delta H$',
+  ]}
+  correctAnswer={0}
+  explanation="The Gibbs free energy is defined as $G = H - TS$. At constant temperature, $\\Delta G = \\Delta H - T\\Delta S$. A negative $\\Delta G$ indicates a spontaneous process at constant $T$ and $P$. The Helmholtz free energy is $A = U - TS$, and $\\Delta G = \\Delta A + \\Delta(PV) = \\Delta A + P\\Delta V$ only when pressure is constant."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="For the reaction $2A + B \\rightarrow C$, what is the relationship between the rate of disappearance of $A$ and the rate of appearance of $C$?"
+  options={[
+    '$-\\frac{1}{2}\\frac{d[A]}{dt} = \\frac{d[C]}{dt}$',
+    '$-\\frac{d[A]}{dt} = 2\\frac{d[C]}{dt}$',
+    '$-\\frac{d[A]}{dt} = \\frac{d[C]}{dt}$',
+    '$\\frac{d[A]}{dt} = \\frac{d[C]}{dt}$',
+  ]}
+  correctAnswer={0}
+  explanation="The unified rate expression for $2A + B \\rightarrow C$ is $\\text{rate} = -\\frac{1}{2}\\frac{d[A]}{dt} = -\\frac{d[B]}{dt} = \\frac{d[C]}{dt}$. Since 2 moles of $A$ are consumed per mole of $C$ produced, $A$ disappears twice as fast as $C$ appears. The factor of $\\frac{1}{2}$ normalizes the rate so the same value is obtained regardless of which species is monitored."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The van 't Hoff equation relates the equilibrium constant to temperature. For an exothermic reaction ($\\Delta H < 0$), how does $K$ change as $T$ increases?"
+  options={[
+    '$K$ decreases',
+    '$K$ increases',
+    '$K$ remains constant',
+    '$K$ first increases then decreases',
+  ]}
+  correctAnswer={0}
+  explanation="The van 't Hoff equation is $\\frac{d\\ln K}{dT} = \\frac{\\Delta H^\\circ}{RT^2}$. For an exothermic reaction, $\\Delta H^\\circ < 0$, so $d\\ln K/dT < 0$, meaning $K$ decreases as temperature increases. This is consistent with Le Chatelier's principle: adding heat (raising $T$) shifts the equilibrium toward the reactants for an exothermic reaction."
+  difficulty="medium"
+/>
+
+## Chemical Kinetics
+
+<PracticeProblem
+  question="For a first-order reaction, what is the half-life $t_{1/2}$ in terms of the rate constant $k$?"
+  options={[
+    '$t_{1/2} = \\frac{\\ln 2}{k}$',
+    '$t_{1/2} = \\frac{1}{k[A]_0}$',
+    '$t_{1/2} = \\frac{\\ln 2}{k[A]_0}$',
+    '$t_{1/2} = \\frac{1}{2k}$',
+  ]}
+  correctAnswer={0}
+  explanation="For a first-order reaction, $[A] = [A]_0 e^{-kt}$. At the half-life, $[A] = [A]_0/2$, so $e^{-kt_{1/2}} = 1/2$, giving $t_{1/2} = \\ln 2 / k$. Crucially, the half-life of a first-order reaction is independent of the initial concentration. This distinguishes it from zero-order ($t_{1/2} = [A]_0 / 2k$) and second-order ($t_{1/2} = 1 / k[A]_0$) reactions."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In the Arrhenius equation $k = A e^{-E_a / RT}$, what does the pre-exponential factor $A$ physically represent?"
+  options={[
+    'The frequency of collisions with correct orientation',
+    'The activation energy of the reaction',
+    'The equilibrium constant',
+    'The rate constant at infinite temperature',
+  ]}
+  correctAnswer={0}
+  explanation="The pre-exponential factor $A$ represents the frequency of effective collisions between reactant molecules, including the steric (orientation) factor. It encapsulates how often molecules collide with the proper geometry for reaction. In transition state theory, $A = \\frac{k_B T}{h} e^{\\Delta S^\\ddagger / R}$, linking it to the entropy of activation. As $T \\to \\infty$, $k \\to A$, so $A$ is indeed the rate constant at infinite temperature."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For a consecutive reaction $A \\xrightarrow{k_1} B \\xrightarrow{k_2} C$ with $k_1 \\ll k_2$, which statement best describes the concentration of $B$?"
+  options={[
+    '$[B]$ remains small throughout; $B$ is consumed almost as fast as it is formed',
+    '$[B]$ reaches a large maximum before decaying',
+    '$[B]$ equals $[A]_0$ at all times',
+    '$[B]$ grows linearly with time',
+  ]}
+  correctAnswer={0}
+  explanation="When $k_2 \\gg k_1$, the intermediate $B$ is consumed much faster than it is produced. This is the steady-state approximation regime: $d[B]/dt \\approx k_1[A] - k_2[B] \\approx 0$, giving $[B] \\approx k_1[A]/k_2$, which remains small. The steady-state approximation is valid when the intermediate is highly reactive. The exact solution involves $[B] = \\frac{k_1[A]_0}{k_2 - k_1}(e^{-k_1 t} - e^{-k_2 t})$."
+  difficulty="hard"
+/>
+
+## Quantum Chemistry and Statistical Mechanics
+
+<PracticeProblem
+  question="What is the energy of a particle in a one-dimensional box of length $L$ in the quantum state with quantum number $n$?"
+  options={[
+    '$E_n = \\frac{n^2 h^2}{8mL^2}$',
+    '$E_n = \\frac{nh}{8mL^2}$',
+    '$E_n = \\frac{n^2 h^2}{2mL^2}$',
+    '$E_n = \\frac{h^2}{8mn^2 L^2}$',
+  ]}
+  correctAnswer={0}
+  explanation="Solving the Schrodinger equation for a particle in a 1D box of length $L$ with boundary conditions $\\psi(0) = \\psi(L) = 0$ yields energy levels $E_n = n^2 h^2 / (8mL^2)$, where $n = 1, 2, 3, ...$. The ground state ($n=1$) has energy $h^2/(8mL^2)$, and the energy gap between levels grows with $n^2$. This model illustrates quantization and is the basis for understanding electronic transitions in conjugated systems."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The Boltzmann distribution gives the probability of a molecule occupying energy level $\\epsilon_i$ at temperature $T$. What is the correct expression for the fraction of molecules in level $i$?"
+  options={[
+    '$\\frac{e^{-\\epsilon_i / k_B T}}{q}$ where $q = \\sum_j e^{-\\epsilon_j / k_B T}$',
+    '$\\frac{e^{-\\epsilon_i / k_B T}}{\\sum_i \\epsilon_i}$',
+    '$\\frac{\\epsilon_i e^{-\\epsilon_i / k_B T}}{\\int_0^\\infty \\epsilon \\, e^{-\\epsilon/k_B T} \\, d\\epsilon}$',
+    '$\\frac{e^{\\epsilon_i / k_B T}}{\\sum_j e^{\\epsilon_j / k_B T}}$',
+  ]}
+  correctAnswer={0}
+  explanation="The Boltzmann distribution states $n_i / N = e^{-\\epsilon_i / k_B T} / q$, where $q = \\sum_j g_j e^{-\\epsilon_j / k_B T}$ is the molecular partition function (including degeneracy $g_j$). The partition function normalizes the probabilities so they sum to 1. Higher energy levels are exponentially less populated. As $T \\to 0$, all molecules collapse into the ground state; as $T \\to \\infty$, the populations become more uniform."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="For a system of $N$ indistinguishable, non-interacting particles, what is the relationship between the molecular partition function $q$ and the canonical partition function $Q$?"
+  options={[
+    '$Q = \\frac{q^N}{N!}$ (Maxwell-Boltzmann limit)',
+    '$Q = q^N$',
+    '$Q = \\frac{q^N}{N}$',
+    '$Q = Nq^N$',
+  ]}
+  correctAnswer={0}
+  explanation="For indistinguishable particles in the classical (Maxwell-Boltzmann) limit where the number of available states far exceeds $N$, the canonical partition function is $Q = q^N / N!$. The $N!$ corrects for overcounting indistinguishable arrangements. The internal energy is $U = k_B T^2 (\\partial \\ln Q / \\partial T)$ and the Helmholtz free energy is $A = -k_B T \\ln Q$. For bosons and fermions at low temperature, quantum statistics (Bose-Einstein or Fermi-Dirac) must be used instead."
+  difficulty="hard"
+/>

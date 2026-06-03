@@ -66,6 +66,89 @@ $$
 \frac{\partial \rho}{\partial t} + \frac{\partial(\rho u_{i})}{\partial x_{i}} = 0
 $$
 
+### Admonitions
+
+Docusaurus supports admonition callouts using triple-colon syntax:
+
+```md
+:::note This is a note block. :::
+
+:::tip This is a tip block. :::
+
+:::warning This is a warning block. :::
+
+:::danger This is a danger block. :::
+```
+
+Custom titles are supported: `:::info[Custom Title]`
+
+### Tables
+
+Standard markdown tables use pipe-delimited rows with a header separator:
+
+| Feature   | Supported | Notes                                         |
+| --------- | --------- | --------------------------------------------- |
+| Basic     | Yes       | Pipe-delimited with `---` separator           |
+| Alignment | Yes       | `:---`, `:---:`, `---:` for left/center/right |
+| Colspan   | No        | Not supported in standard markdown; use HTML  |
+
+### Nested Lists and Checklists
+
+```md
+1. First item
+   - Sub-item with a nested point
+     - Further nesting
+2. Second item
+   - [ ] Unfinished task
+   - [x] Completed task
+```
+
+### Mermaid Diagrams
+
+Docusaurus renders Mermaid diagrams inside fenced code blocks tagged with `mermaid`:
+
+````md
+```mermaid
+graph TD
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Action A]
+    B -->|No| D[Action B]
+```
+````
+
+Supported diagram types include flowcharts, sequence diagrams, class diagrams, state diagrams, Gantt
+charts, pie charts, and git graphs.
+
+### Details / Collapsible Sections
+
+```md
+<details>
+  <summary>Click to expand</summary>
+  Hidden content here.
+</details>
+```
+
+### Tabs Component
+
+The tabs UI is provided via Docusaurus theme imports:
+
+```md
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="option-a" label="Option A">Content for A</TabItem>
+  <TabItem value="option-b" label="Option B">Content for B</TabItem>
+</Tabs>
+```
+
+Group tabs across the page with a shared `groupId` prop.
+
+### Inline HTML
+
+Docusaurus allows raw HTML when markdown constructs are insufficient. Common uses include styled
+`<div>` containers, `<iframe>` embeds, and `<details>` elements. Keep HTML usage minimal to maintain
+portability across renderers.
+
 ## Common Pitfalls
 
 1. Memorising content without understanding the underlying principles — this leads to poor

@@ -97,6 +97,50 @@ These operations are **destructive**. Anyone who has cloned or forked the reposi
 mismatched histories. Coordinate with all contributors before rewriting history. Force-pushing to
 shared branches should only be done during agreed maintenance windows.
 
+### Recovery After Accidental Force-Push
+
+If commits are lost after a force-push, several recovery paths exist:
+
+1. **From local reflog**: If the original commits still exist locally, `git reflog` lists previous
+   HEAD positions. Reset to the desired entry and re-push:
+   ```bash
+   git reflog
+   git reset --hard HEAD@{1}
+   git push --force
+   ```
+2. **From a collaborator's clone**: Another contributor who has not rebased can push the original
+   history back:
+   ```bash
+   git fetch https://github.com/collaborator/repo.git main
+   git reset --hard FETCH_HEAD
+   git push --force
+   ```
+3. **From GitHub dangling refs**: GitHub retains unreachable objects for approximately 30 days. The
+   GitHub API or the `git fsck --unreachable` command on a fresh clone can sometimes recover lost
+   commits.
+
+### Soft Reset Alternative
+
+Instead of creating an orphan branch, a softer approach collapses all history into one commit while
+preserving the full working tree state:
+
+```bash
+git reset --soft $(git rev-list --max-parents=0 HEAD)
+git commit --amend -m "Squashed initial commit"
+git push --force origin main
+```
+
+This avoids orphan branch bookkeeping and keeps the final diff intact in a single commit.
+
+### Notes on Shared Repositories
+
+Force-pushing to shared branches disrupts all collaborators. Before rewriting history:
+
+- Announce a maintenance window and coordinate with all contributors.
+- Ask collaborators to rebase their work onto the new history afterward.
+- For truly sensitive data (credentials, tokens), consider rotating the leaked secrets entirely
+  rather than relying solely on history removal, since forks and clones may retain the data.
+
 ## Summary
 
 The key principles covered in this topic are linked in the sub-pages above. Focus on understanding
