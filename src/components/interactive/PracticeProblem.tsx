@@ -2,12 +2,23 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
-export interface PracticeProblemProps {
+export interface PracticeQuestionData {
   question: string;
   options: string[];
-  correctAnswer: number;
+  correct?: number;
+  correctAnswer?: number;
   explanation: string;
-  difficulty: Difficulty;
+  difficulty?: Difficulty;
+}
+
+export interface PracticeProblemProps {
+  question?: string;
+  options?: string[];
+  correctAnswer?: number;
+  explanation?: string;
+  difficulty?: Difficulty;
+  /** Array of questions (DSE/Qualifications format) - renders all questions */
+  questions?: PracticeQuestionData[];
 }
 
 const DIFFICULTY_COLORS: Record<Difficulty, string> = {
@@ -25,13 +36,52 @@ function escapeHtml(text: string): string {
     .replace(/'/g, '&#39;');
 }
 
-export function PracticeProblem({
+export function PracticeProblem(props: PracticeProblemProps) {
+  // If `questions` array is passed, render all questions as a quiz
+  if (props.questions && props.questions.length > 0) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        {props.questions.map((q, idx) => (
+          <PracticeProblemItem
+            key={idx}
+            question={q.question}
+            options={q.options}
+            correctAnswer={q.correctAnswer ?? q.correct ?? 0}
+            explanation={q.explanation}
+            difficulty={q.difficulty ?? 'medium'}
+          />
+        ))}
+      </div>
+    );
+  }
+
+  // Single question mode (GCSE format)
+  return (
+    <PracticeProblemItem
+      question={props.question ?? ''}
+      options={props.options ?? []}
+      correctAnswer={props.correctAnswer ?? 0}
+      explanation={props.explanation ?? ''}
+      difficulty={props.difficulty ?? 'medium'}
+    />
+  );
+}
+
+/** Internal component that renders a single practice problem */
+function PracticeProblemItem({
   question,
   options,
   correctAnswer,
   explanation,
   difficulty,
-}: PracticeProblemProps) {
+}: {
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+  difficulty: Difficulty;
+  key?: number;
+}) {
   const [selected, setSelected] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);

@@ -326,7 +326,18 @@ function collapseConstArrays(source) {
   for (let r = replacements.length - 1; r >= 0; r--) {
     const rep = replacements[r];
     const before = lines.slice(0, rep.startLine).join('\n');
-    const after = lines.slice(rep.endLine + 1).join('\n');
+    let after = lines.slice(rep.endLine + 1).join('\n');
+    // Ensure blank line after the collapsed export const to prevent MDX ESM
+    // collector from swallowing the next line as continuation.
+    const nextNonBlank = after.split('\n').find((l) => l.trim() !== '');
+    const startsWithExport = /(?:^|\n)export\s+const\s+/.test(rep.replacement);
+    if (
+      startsWithExport &&
+      nextNonBlank &&
+      !/^\s*(import |export |const |let |var )/.test(nextNonBlank)
+    ) {
+      after = '\n' + after;
+    }
     source = before + '\n' + rep.replacement + '\n' + after;
     lines = source.split('\n');
   }
