@@ -50,7 +50,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: Escape LaTeX braces for MDX
+      - name: Preprocess MDX files
         run: node scripts/escape-latex-braces.js docs/docs_alevel
 
       - name: Cache Docusaurus build

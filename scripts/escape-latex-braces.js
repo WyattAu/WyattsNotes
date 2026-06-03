@@ -1,29 +1,29 @@
 #!/usr/bin/env node
 /**
- * Preprocesses .md/.mdx files to replace braces inside LaTeX command
- * arguments with diamond placeholders (◆LB◆/◆RB◆) that MDX won't
- * try to parse as JSX expressions.
+ * Preprocesses .md/.mdx files to fix patterns that cause MDX parsing errors.
  *
- * Problem: MDX's micromark parser treats {content} as JSX expressions.
- * LaTeX commands like \frac{Q_{\mathrm{enc}}}{\varepsilon_0} contain
- * braces that MDX can't parse as valid JS.
+ * Three transformations are applied in order:
  *
- * Solution: Replace { with ◆LB◆ and } with ◆RB◆ inside LaTeX command
- * arguments. The remark plugin (escape-jsx-braces) restores these to
- * { and } inside math/inlineMath nodes, so KaTeX receives correct
- * LaTeX with raw braces.
+ * 1. Collapse multi-line const/export const array declarations to single lines.
+ *    MDX's ESM collector only collects lines starting with `import`, `export`,
+ *    or `{`. A multi-line declaration only has its first line collected; acorn
+ *    receives incomplete JS and fails with "Could not parse import/exports".
+ *
+ * 2. Convert <URL> markdown autolinks to [url](url) syntax.
+ *    MDX parses <https://example.com> as a JSX tag and fails on the `/`.
+ *
+ * 3. Replace braces inside LaTeX command arguments with diamond placeholders
+ *    (◆LB◆/◆RB◆) that MDX won't try to parse as JSX expressions.
+ *    The remark plugin (escape-jsx-braces) restores these inside math nodes.
+ *
+ * 4. Replace ^{...} and _{...} LaTeX superscript/subscript patterns with
+ *    diamond placeholders. MDX parses these as JSX expressions and fails
+ *    when the content is not valid JS (e.g., e^{-0.0693 x 20}).
  *
  * Why diamonds, not \{ \}:
  * KaTeX interprets \{ and \} as LITERAL brace characters, not group
- * delimiters. So \mathbf\{E\} renders as "{E}" literally, not bold E.
- * Diamond placeholders are invisible to both MDX and KaTeX — they get
- * restored to { and } only inside math nodes by the remark plugin.
- *
- * Why ALWAYS diamondify (not conditional):
- * Even simple {a} inside \frac{a}{b} gets parsed by MDX as JSX
- * expression "a". The remark plugin converts mdxTextExpression nodes
- * to \{a\}, which KaTeX renders as literal "{a}". So ALL command
- * arguments must have braces diamondified.
+ * delimiters. Diamond placeholders are invisible to both MDX and KaTeX —
+ * they get restored to { and } only inside math nodes by the remark plugin.
  */
 
 const fs = require('fs');
@@ -73,6 +73,147 @@ const ESCAPE_CMDS = new Set([
   'lim',
 ]);
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Transformation 1: Collapse multi-line const/export const array declarations
+// ─────────────────────────────────────────────────────────────────────────────
+
+function collapseConstArrays(source) {
+  const re = /^(\s*)(export\s+)?const\s+(\w+)\s*=\s*\[/gm;
+  const replacements = [];
+
+  let match;
+  while ((match = re.exec(source)) !== null) {
+    const prefix = match[1];
+    const hasExport = !!match[2];
+    const bracketStart = match.index + match[0].length - 1;
+
+    // Skip if inside YAML frontmatter (before second ---)
+    let frontmatterEnd = -1;
+    if (source.startsWith('---')) {
+      const end = source.indexOf('---', 3);
+      if (end !== -1 && source[end + 3] === '\n') {
+        frontmatterEnd = end + 4;
+      } else if (end !== -1) {
+        frontmatterEnd = end + 3;
+      }
+    }
+    if (frontmatterEnd !== -1 && match.index < frontmatterEnd) continue;
+
+    // Character-by-character scan from [ to matching ]
+    let pos = bracketStart;
+    let depth = 0;
+    let inString = null;
+    let inTemplate = false;
+    let templateExprDepth = 0;
+    let endPos = -1;
+
+    while (pos < source.length) {
+      const ch = source[pos];
+
+      if (inString) {
+        if (ch === '\\' && pos + 1 < source.length) {
+          pos += 2;
+          continue;
+        }
+        if (ch === inString) {
+          inString = null;
+        }
+        pos++;
+        continue;
+      }
+
+      if (inTemplate) {
+        if (ch === '\\' && pos + 1 < source.length) {
+          pos += 2;
+          continue;
+        }
+        if (ch === '`' && templateExprDepth === 0) {
+          inTemplate = false;
+          pos++;
+          continue;
+        }
+        if (ch === '$' && pos + 1 < source.length && source[pos + 1] === '{') {
+          templateExprDepth++;
+          pos += 2;
+          continue;
+        }
+        if (ch === '{') {
+          templateExprDepth++;
+          pos++;
+          continue;
+        }
+        if (ch === '}') {
+          templateExprDepth--;
+          pos++;
+          continue;
+        }
+        pos++;
+        continue;
+      }
+
+      if (ch === '"' || ch === "'" || ch === '`') {
+        if (ch === '`') {
+          inTemplate = true;
+        } else {
+          inString = ch;
+        }
+        pos++;
+        continue;
+      }
+
+      if (ch === '[') depth++;
+      else if (ch === ']') {
+        depth--;
+        if (depth === 0) {
+          endPos = pos;
+          break;
+        }
+      }
+
+      pos++;
+    }
+
+    if (endPos === -1) continue;
+
+    const originalBlock = source.substring(match.index, endPos + 1);
+    let collapsed = originalBlock
+      .replace(/\n/g, ' ')
+      .replace(/\r/g, '')
+      .replace(/\t/g, ' ')
+      .replace(/  +/g, ' ');
+
+    if (!hasExport) {
+      collapsed = prefix + 'export ' + collapsed.trimStart();
+    }
+
+    replacements.push({
+      start: match.index,
+      end: endPos + 1,
+      replacement: collapsed,
+    });
+  }
+
+  // Apply replacements in reverse order to preserve offsets
+  for (let i = replacements.length - 1; i >= 0; i--) {
+    const r = replacements[i];
+    source = source.substring(0, r.start) + r.replacement + source.substring(r.end);
+  }
+
+  return source;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Transformation 2: Convert <URL> autolinks to markdown links
+// ─────────────────────────────────────────────────────────────────────────────
+
+function fixAutolinks(source) {
+  return source.replace(/<(https?:\/\/[^>\s]+)>/g, '[$1]($1)');
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Transformation 3: Diamondify braces inside LaTeX command arguments
+// ─────────────────────────────────────────────────────────────────────────────
+
 /**
  * Replace { with ◆LB◆ and } with ◆RB◆ in a string.
  */
@@ -103,11 +244,7 @@ function readBraceGroup(source, pos) {
   return [source.substring(start + 1), source.length];
 }
 
-/**
- * Process source text, replacing braces in LaTeX command arguments
- * with diamond placeholders.
- */
-function processSource(source) {
+function diamondifyLatexBraces(source) {
   let i = 0;
   const parts = [];
 
@@ -159,9 +296,57 @@ function processSource(source) {
   return parts.join('');
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Transformation 4: Diamondify ^{...} and _{...} superscript/subscript patterns
+// ─────────────────────────────────────────────────────────────────────────────
+
+function diamondifySuperscriptSubscript(source) {
+  const output = [];
+  let pos = 0;
+
+  while (pos < source.length) {
+    if (
+      source[pos] === '{' &&
+      pos > 0 &&
+      source[pos - 1] !== '\\' &&
+      (source[pos - 1] === '^' || source[pos - 1] === '_') &&
+      (pos < 2 || source[pos - 2] !== '\\')
+    ) {
+      // Read balanced brace group
+      let depth = 1;
+      let j = pos + 1;
+      while (j < source.length && depth > 0) {
+        if (source[j] === '{') depth++;
+        else if (source[j] === '}') depth--;
+        j++;
+      }
+      if (depth === 0) {
+        const inner = source.substring(pos + 1, j - 1);
+        output.push(LB + inner + RB);
+        pos = j;
+        continue;
+      }
+    }
+    output.push(source[pos]);
+    pos++;
+  }
+
+  return output.join('');
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Orchestrator
+// ─────────────────────────────────────────────────────────────────────────────
+
 function processFile(filepath) {
   const content = fs.readFileSync(filepath, 'utf8');
-  const processed = processSource(content);
+
+  // Apply transformations in order: collapse → autolinks → latex braces → superscripts
+  let processed = collapseConstArrays(content);
+  processed = fixAutolinks(processed);
+  processed = diamondifyLatexBraces(processed);
+  processed = diamondifySuperscriptSubscript(processed);
+
   if (processed !== content) {
     fs.writeFileSync(filepath, processed);
     return true;

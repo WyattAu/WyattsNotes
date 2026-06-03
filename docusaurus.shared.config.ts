@@ -304,7 +304,6 @@ export const sharedPresets: Config['presets'] = [
 // ---------------------------------------------------------------------------
 export function sharedPlugins(cacheId?: string) {
   return [
-    require.resolve('./src/plugins/mdx-preprocessing'),
     require.resolve('./src/plugins/fix-mermaid-elk'),
     [require.resolve('./src/plugins/service-worker'), { enable: true, cacheId }],
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],

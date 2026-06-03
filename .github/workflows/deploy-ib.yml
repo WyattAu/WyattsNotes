@@ -49,6 +49,9 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      - name: Preprocess MDX files
+        run: node scripts/escape-latex-braces.js docs/docs_ib
+
       - name: Cache Docusaurus build
         uses: actions/cache@v4
         with:
