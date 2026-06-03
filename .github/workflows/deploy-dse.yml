@@ -10,12 +10,15 @@ on:
       - 'docs/docs_dse/**'
       - 'sidebars/sidebar_dse.ts'
       - 'docusaurus.dse.config.ts'
+      - 'docusaurus.shared.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
       - 'src/components/**'
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'scripts/escape-latex-braces.js'
+      - '.github/workflows/deploy-dse.yml'
   workflow_dispatch:
 
 concurrency:

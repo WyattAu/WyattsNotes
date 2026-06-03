@@ -10,6 +10,7 @@ on:
       - 'docs/docs_alevel/**'
       - 'sidebars/sidebar_alevel*.ts'
       - 'docusaurus.alevel*.config.ts'
+      - 'docusaurus.shared.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
       - 'src/components/**'
@@ -17,6 +18,8 @@ on:
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'scripts/escape-latex-braces.js'
+      - '.github/workflows/deploy-alevel-maths-physics.yml'
   workflow_dispatch:
 
 concurrency:

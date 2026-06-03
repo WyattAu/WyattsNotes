@@ -12,12 +12,15 @@ on:
       - 'sidebars/sidebar_cpp.ts'
       - 'sidebars/sidebar_languages.ts'
       - 'docusaurus.programming.config.ts'
+      - 'docusaurus.shared.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
       - 'src/components/**'
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'scripts/escape-latex-braces.js'
+      - '.github/workflows/deploy-programming.yml'
   workflow_dispatch:
 
 concurrency:

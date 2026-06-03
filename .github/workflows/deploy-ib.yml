@@ -10,12 +10,15 @@ on:
       - 'docs/docs_ib/**'
       - 'sidebars/sidebar_ib.ts'
       - 'docusaurus.ib.config.ts'
+      - 'docusaurus.shared.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
       - 'src/components/**'
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'scripts/escape-latex-braces.js'
+      - '.github/workflows/deploy-ib.yml'
   workflow_dispatch:
 
 concurrency:

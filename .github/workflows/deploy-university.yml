@@ -21,6 +21,7 @@ on:
       - 'pnpm-lock.yaml'
       - 'scripts/escape-latex-braces.js'
       - 'scripts/generate-university-plugin-config.mjs'
+      - '.github/workflows/deploy-university.yml'
   workflow_dispatch:
 
 concurrency:

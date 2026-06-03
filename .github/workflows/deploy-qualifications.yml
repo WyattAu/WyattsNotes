@@ -10,12 +10,15 @@ on:
       - 'docs/docs_qualifications/**'
       - 'sidebars/sidebar_qualifications.ts'
       - 'docusaurus.qualifications.config.ts'
+      - 'docusaurus.shared.config.ts'
       - 'src/pages/**'
       - 'src/theme/**'
       - 'src/components/**'
       - 'static/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'scripts/escape-latex-braces.js'
+      - '.github/workflows/deploy-qualifications.yml'
   workflow_dispatch:
 
 concurrency:
