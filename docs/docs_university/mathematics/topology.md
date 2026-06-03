@@ -635,18 +635,19 @@ homeomorphic to exactly one of:
 
 ### Example 1: Determining if a Collection is a Topology
 
-**Problem:** Is the collection tau = {empty set, {a}, {b}, {a,b,c}} a topology on X = {a,b,c}?
-**Solution:** Check axioms: (1) empty set and X are in tau. (2) Finite unions: {a} union {b} =
-{a,b}, which is NOT in tau. Therefore tau is not a topology. To fix it, we would need to include
-{a,b}.
+**Problem:** Is the collection $\tau = \{\emptyset, \{a\}, \{b\}, \{a,b,c\}\}$ a topology on
+$X = \{a,b,c\}$? **Solution:** Check axioms: (1) $\emptyset$ and $X$ are in $\tau$. (2) Finite
+unions: $\{a\} \cup \{b\} = \{a,b\}$, which is NOT in $\tau$. Therefore $\tau$ is not a topology. To
+fix it, we would need to include $\{a,b\}$.
 
 ### Example 2: Continuous Function Proof
 
-**Problem:** Show that the function f: R -> R defined by f(x) = x^2 is continuous with respect to
-the standard topology. **Solution:** Let U be an open set in R. f^{-1}(U) = {x : x^2 in U}. For any
-open interval (a, b) with a >= 0, the preimage is (-sqrt(b), -sqrt(a)) union (sqrt(a), sqrt(b)),
-which is a union of open intervals (open). For negative intervals, the preimage is empty or R. Since
-the preimage of any basis element is open, f is continuous.
+**Problem:** Show that the function $f: \mathbb{R} \to \mathbb{R}$ defined by $f(x) = x^2$ is
+continuous with respect to the standard topology. **Solution:** Let $U$ be an open set in
+$\mathbb{R}$. $f^{-1}(U) = \{x : x^2 \in U\}$. For any open interval $(a, b)$ with $a \geq 0$, the
+preimage is $(-\sqrt{b}, -\sqrt{a}) \cup (\sqrt{a}, \sqrt{b})$, which is a union of open intervals
+(open). For negative intervals, the preimage is empty or $\mathbb{R}$. Since the preimage of any
+basis element is open, $f$ is continuous.
 
 ## Cross-References
 

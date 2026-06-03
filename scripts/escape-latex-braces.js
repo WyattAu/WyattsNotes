@@ -127,6 +127,79 @@ function ensureBlankLineAfterImport(source) {
 // Transformation 1: Collapse multi-line const arrays to single lines
 // ─────────────────────────────────────────────────────────────────────────────
 
+/**
+ * Escape unescaped apostrophes (single quotes) inside single-quoted JS string values
+ * in a collapsed export const line.
+ *
+ * The collapsed line has patterns like: { question: 'What is X's property?', ... }
+ * The apostrophe in "X's" breaks the single-quoted string. This function escapes it.
+ *
+ * Algorithm: walk through the line tracking single/double quote state.
+ * Inside single-quoted strings, escape any unescaped ' characters that are
+ * clearly apostrophes (preceded by a letter and followed by a letter or 's').
+ */
+function escapeApostrophesInStrings(line) {
+  let result = '';
+  let i = 0;
+  while (i < line.length) {
+    const ch = line[i];
+
+    // Double-quoted string: pass through unchanged (apostrophes are fine inside "")
+    if (ch === '"') {
+      let j = i + 1;
+      while (j < line.length) {
+        if (line[j] === '\\' && j + 1 < line.length) {
+          j += 2; // skip escaped char
+        } else if (line[j] === '"') {
+          j++; // closing quote
+          break;
+        } else {
+          j++;
+        }
+      }
+      result += line.substring(i, j);
+      i = j;
+      continue;
+    }
+
+    // Single-quoted string: escape apostrophes
+    if (ch === "'") {
+      result += ch;
+      i++;
+      // Scan through the string content
+      while (i < line.length) {
+        if (line[i] === '\\' && i + 1 < line.length) {
+          // Escaped character -- pass through
+          result += line[i] + line[i + 1];
+          i += 2;
+        } else if (line[i] === "'") {
+          // Potential closing quote or apostrophe.
+          const prev = result[result.length - 1];
+          const next = i + 1 < line.length ? line[i + 1] : '';
+          const isApostrophe = /[a-z]/.test(prev) && /[a-z]/.test(next);
+
+          if (isApostrophe) {
+            result += '\\' + "'";
+            i++;
+          } else {
+            result += "'";
+            i++;
+            break;
+          }
+        } else {
+          result += line[i];
+          i++;
+        }
+      }
+      continue;
+    }
+
+    result += ch;
+    i++;
+  }
+  return result;
+}
+
 function collapseConstArrays(source) {
   let lines = source.split('\n');
   const replacements = [];
@@ -191,6 +264,19 @@ function collapseConstArrays(source) {
       }
     }
 
+    // If no closing ]; on subsequent lines, check if the array is single-line
+    // (starts and ends on the same line, e.g. "const x = [{...}];")
+    if (endLine === -1) {
+      const lineContent = lines[i];
+      const lastBracket = lineContent.lastIndexOf(']');
+      if (lastBracket > 0) {
+        const after = lineContent.substring(lastBracket).trim();
+        if (after === '];' || after === ']; ') {
+          endLine = i;
+        }
+      }
+    }
+
     if (endLine === -1) {
       i++;
       continue;
@@ -228,6 +314,9 @@ function collapseConstArrays(source) {
         }
       }
     }
+
+    // Escape apostrophes inside single-quoted strings
+    collapsed = escapeApostrophesInStrings(collapsed);
 
     replacements.push({ startLine, endLine, replacement: collapsed });
     i = endLine + 1;
