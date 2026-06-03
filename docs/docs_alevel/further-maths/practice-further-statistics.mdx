@@ -20,7 +20,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Discrete Random Variables
 
-const practiceQuestions = [ { question: "A discrete random variable X has PMF P(X=x) = kx for x = 1,
+export const practiceQuestions = [ { question: "A discrete random variable X has PMF P(X=x) = kx for x = 1,
 2, 3. Find the value of k.", options: ["A) 1/3", "B) 1/6", "C) 1/9", "D) 1/2"], correct: 1,
 explanation: "The PMF must sum to 1: Σ P(X=x) = k(1+2+3) = 6k = 1, so k = 1/6." }, { question:
 "Given E(X) = 3 and Var(X) = 5, find E(X²).", options: ["A) 14", "B) 8", "C) 9", "D) 15"], correct:
@@ -40,7 +40,7 @@ independent, there is no covariance term." } ];
 
 ### Continuous Distributions
 
-const practiceQuestions = [ { question: "A continuous random variable X has PDF f(x) = kx for 0 ≤ x
+export const practiceQuestions = [ { question: "A continuous random variable X has PDF f(x) = kx for 0 ≤ x
 ≤ 2. Find the value of k.", options: ["A) 1/4", "B) 1/2", "C) 1", "D) 3/4"], correct: 1,
 explanation: "The total probability must equal 1: ∫₀² kx dx = k[x²/2]₀² = k(4/2) = 2k = 1, so k =
 1/2." }, { question: "X follows a continuous uniform distribution U(a, b). What is Var(X)?",
@@ -61,7 +61,7 @@ median m satisfies F(m) = 0.5, so m³ = 0.5, giving m = (0.5)^(1/3) = 1/2^(1/3).
 
 ### Hypothesis Testing Extensions
 
-const practiceQuestions = [ { question: "When should you use a t-test instead of a z-test for
+export const practiceQuestions = [ { question: "When should you use a t-test instead of a z-test for
 testing a population mean?", options: ["A) When the population standard deviation is unknown and the
 sample size is small", "B) When the sample size is greater than 30", "C) When the population is
 normally distributed with known variance", "D) When testing proportions rather than means"],
@@ -91,7 +91,7 @@ distribution with (k-1) degrees of freedom where k is the number of categories."
 
 ### Quality of Tests
 
-const practiceQuestions = [ { question: "Define Type I error in the context of hypothesis testing.",
+export const practiceQuestions = [ { question: "Define Type I error in the context of hypothesis testing.",
 options: ["A) Rejecting H₀ when H₀ is true", "B) Accepting H₀ when H₀ is false", "C) Rejecting H₁
 when H₁ is true", "D) The probability of making an incorrect decision"], correct: 0, explanation:
 "Type I error (false positive): rejecting the null hypothesis when it is actually true. The

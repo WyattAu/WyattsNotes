@@ -18,7 +18,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Algebra and Functions
 
-const practiceQuestions = [ { question: "Solve x² - 6x + 2 = 0, giving your answers in the form a ±
+export const practiceQuestions = [ { question: "Solve x² - 6x + 2 = 0, giving your answers in the form a ±
 √b.", options: ["A) 3 ± √7", "B) 6 ± √34", "C) 3 ± √11", "D) 2 ± √10"], correct: 0, explanation:
 "Using the quadratic formula: x = (6 ± √(36 - 8))/2 = (6 ± √28)/2 = (6 ± 2√7)/2 = 3 ± √7." }, {
 question: "Express (3x + 5)/(x² + 3x + 2) in partial fractions.", options: [ "A) 2/(x+1) + 1/(x+2)",
@@ -35,7 +35,7 @@ values of x for which |2x - 3| > 5.", options: [ "A) x > 4 or x < -1", "B) x > 4
 
 ### Coordinate Geometry
 
-const practiceQuestions = [ { question: "Find the equation of the perpendicular bisector of the line
+export const practiceQuestions = [ { question: "Find the equation of the perpendicular bisector of the line
 segment joining (2, 5) and (6, 1).", options: [ "A) y = x - 1", "B) y = -x + 7", "C) y = x + 1", "D)
 y = -x + 3" ], correct: 0, explanation: "Midpoint: ((2+6)/2, (5+1)/2) = (4, 3). Gradient of segment:
 (1-5)/(6-2) = -1. Perpendicular gradient = 1. Equation: y - 3 = 1(x - 4) → y = x - 1." }, {
@@ -53,7 +53,7 @@ has parametric equations x = 2t², y = 4t. Find dy/dx in terms of t.", options: 
 
 ### Trigonometry
 
-const practiceQuestions = [ { question: "Prove that (sinθ + cosθ)² = 1 + sin2θ for all θ.", options:
+export const practiceQuestions = [ { question: "Prove that (sinθ + cosθ)² = 1 + sin2θ for all θ.", options:
 [ "A) LHS = sin²θ + 2sinθcosθ + cos²θ = 1 + sin2θ = RHS", "B) LHS = sin²θ - 2sinθcosθ + cos²θ = 1 -
 sin2θ", "C) LHS = 2sinθcosθ + 2 = 1 + 2sinθcosθ = RHS", "D) LHS = 1 + 2cos²θ = 1 + sin2θ = RHS" ],
 correct: 0, explanation: "Expanding: (sinθ + cosθ)² = sin²θ + 2sinθcosθ + cos²θ. Using sin²θ + cos²θ
@@ -72,7 +72,7 @@ correct: 0, explanation: "R = √(3² + 4²) = 5. α = arctan(4/3) ≈ 0.927 rad
 
 ### Calculus -- Differentiation
 
-const practiceQuestions = [ { question: "Find dy/dx when y = (2x + 1)⁵(3x - 1)³ using the product
+export const practiceQuestions = [ { question: "Find dy/dx when y = (2x + 1)⁵(3x - 1)³ using the product
 rule.", options: [ "A) (2x+1)⁴(3x-1)²[15(3x-1) + 6(2x+1)]", "B) 5(2x+1)⁴ · 3(3x-1)²", "C)
 (2x+1)⁵(3x-1)² + (2x+1)⁴(3x-1)³", "D) 15(2x+1)⁴(3x-1)² + 6(2x+1)⁵(3x-1)²" ], correct: 0,
 explanation: "Let u = (2x+1)⁵, v = (3x-1)³. u' = 10(2x+1)⁴, v' = 9(3x-1)². dy/dx =
@@ -93,7 +93,7 @@ d²y/dx²=6 > 0 (min)." }, { question: "Given y = x²eˣ, find d²y/dx².", opti
 
 ### Calculus -- Integration
 
-const practiceQuestions = [ { question: "Evaluate ∫₀² (4x³ - 6x + 1) dx.", options: [ "A) 6", "B)
+export const practiceQuestions = [ { question: "Evaluate ∫₀² (4x³ - 6x + 1) dx.", options: [ "A) 6", "B)
 8", "C) 4", "D) 10" ], correct: 0, explanation: "∫(4x³ - 6x + 1)dx = x⁴ - 3x² + x. Evaluating from 0
 to 2: (16 - 12 + 2) - (0) = 6." }, { question: "Find the area enclosed by the curve y = x² - 4x + 3
 and the x-axis.", options: [ "A) 4/3", "B) 8/3", "C) 2/3", "D) 4" ], correct: 0, explanation: "x² -
@@ -110,7 +110,7 @@ and the x-axis.", options: [ "A) 4/3", "B) 8/3", "C) 2/3", "D) 4" ], correct: 0,
 
 ### Sequences and Series
 
-const practiceQuestions = [ { question: "The 3rd term of an arithmetic sequence is 14 and the 7th
+export const practiceQuestions = [ { question: "The 3rd term of an arithmetic sequence is 14 and the 7th
 term is 38. Find the first term and common difference.", options: [ "A) a = 2, d = 6", "B) a = 4, d
 = 5", "C) a = 6, d = 4", "D) a = -2, d = 8" ], correct: 0, explanation: "a + 2d = 14 and a + 6d
 = 38. Subtracting: 4d = 24 → d = 6. Then a + 12 = 14 → a = 2." }, { question: "Find the sum to

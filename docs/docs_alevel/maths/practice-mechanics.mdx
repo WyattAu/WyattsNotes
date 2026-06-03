@@ -18,7 +18,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Kinematics
 
-const practiceQuestions = [ { question: "A ball is thrown vertically upwards with speed 12 m/s. How
+export const practiceQuestions = [ { question: "A ball is thrown vertically upwards with speed 12 m/s. How
 long does it take to return to its starting point? (Take g = 9.8 m/s²)", options: [ "A) 2.45 s", "B)
 1.22 s", "C) 4.90 s", "D) 1.83 s" ], correct: 0, explanation: "Using v = u + at, at maximum height v
 = 0: 0 = 12 - 9.8t → t = 1.224 s. Time to go up and come back = 2 × 1.224 = 2.45 s." }, { question:
@@ -37,7 +37,7 @@ component: u_y = 20sin30° = 10 m/s. Using v² = u² + 2as: 0 = 100 - 2(9.8)s �
 
 ### Forces and Newton's Laws
 
-const practiceQuestions = [ { question: "A 5 kg block on a rough horizontal surface is pushed by a
+export const practiceQuestions = [ { question: "A 5 kg block on a rough horizontal surface is pushed by a
 horizontal force of 30 N. If the coefficient of friction is 0.4, find the acceleration. (g = 9.8
 m/s²)", options: [ "A) 2.08 m/s²", "B) 3.00 m/s²", "C) 1.96 m/s²", "D) 2.50 m/s²" ], correct: 0,
 explanation: "Friction F = μR = 0.4 × 5 × 9.8 = 19.6 N. Net force = 30 - 19.6 = 10.4 N. a = F/m =
@@ -57,7 +57,7 @@ plane = mgsin30° = 2 × 9.8 × 0.5 = 9.8 N. Since the plane is smooth, a = F/m 
 
 ### Work, Energy and Power
 
-const practiceQuestions = [ { question: "A car of mass 1200 kg accelerates from rest to 25 m/s. How
+export const practiceQuestions = [ { question: "A car of mass 1200 kg accelerates from rest to 25 m/s. How
 much work is done by the engine? (Ignore resistive forces.)", options: [ "A) 375 kJ", "B) 750 kJ",
 "C) 30 kJ", "D) 300 kJ" ], correct: 0, explanation: "Work done = change in KE = ½mv² - 0 = ½ × 1200
 × 25² = 600 × 625 = 375,000 J = 375 kJ." }, { question: "A 2 kg object is released from rest at a
@@ -75,7 +75,7 @@ explanation: "Work done = mgh = 200 × 9.8 × 15 = 29,400 J. Power = work/time =
 
 ### Moments
 
-const practiceQuestions = [ { question: "A uniform rod AB of length 3 m and mass 8 kg is pivoted at
+export const practiceQuestions = [ { question: "A uniform rod AB of length 3 m and mass 8 kg is pivoted at
 A. A force of 60 N is applied vertically upwards at B. Find the magnitude of the reaction at the
 pivot. (g = 9.8 m/s²)", options: [ "A) 81.6 N", "B) 78.4 N", "C) 18.4 N", "D) 60 N" ], correct: 0,
 explanation: "Taking moments about A: 60 × 3 - 8 × 9.8 × 1.5 = 0 for equilibrium check. Sum of
@@ -103,7 +103,7 @@ sin65°) = (147/2) × cot65° = 73.5 × 0.4663 = 34.27 N. F = μR_g → μ = 34.
 
 ### Momentum
 
-const practiceQuestions = [ { question: "A 3 kg ball moving at 5 m/s collides with a stationary 2 kg
+export const practiceQuestions = [ { question: "A 3 kg ball moving at 5 m/s collides with a stationary 2 kg
 ball. After the collision, the 3 kg ball moves at 2 m/s in the same direction. Find the velocity of
 the 2 kg ball.", options: [ "A) 4.5 m/s", "B) 3.0 m/s", "C) 7.5 m/s", "D) 5.5 m/s" ], correct: 0,
 explanation: "Conservation of momentum: 3(5) + 2(0) = 3(2) + 2(v). 15 = 6 + 2v → 2v = 9 → v = 4.5
@@ -128,7 +128,7 @@ velocities, with directions reversed. Answer C is closest: they exchange velocit
 
 ### Dynamics of Particles
 
-const practiceQuestions = [ { question: "A 6 kg block is placed on a rough plane inclined at 35° to
+export const practiceQuestions = [ { question: "A 6 kg block is placed on a rough plane inclined at 35° to
 the horizontal. The coefficient of friction is 0.3. Find the acceleration if the block is released
 from rest. (g = 9.8 m/s²)", options: [ "A) 3.24 m/s²", "B) 1.86 m/s²", "C) 4.90 m/s²", "D) 0.62
 m/s²" ], correct: 0, explanation: "Component down plane = mgsin35° = 6 × 9.8 × sin35° = 33.74 N.

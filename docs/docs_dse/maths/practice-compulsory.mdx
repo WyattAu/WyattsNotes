@@ -21,7 +21,7 @@ coordinate geometry, trigonometry, and sequences.
 
 ### Number Systems and Surds
 
-const practiceQuestions = [ { question: "Simplify sqrt(50) - sqrt(8) + sqrt(32).", options: [ "A)
+export const practiceQuestions = [ { question: "Simplify sqrt(50) - sqrt(8) + sqrt(32).", options: [ "A)
 5sqrt(2)", "B) 7sqrt(2)", "C) 9sqrt(2)", "D) 3sqrt(2)" ], correct: 1, explanation: "sqrt(50) =
 5sqrt(2), sqrt(8) = 2sqrt(2), sqrt(32) = 4sqrt(2). So 5sqrt(2) - 2sqrt(2) + 4sqrt(2) = (5 - 2 +
 4)sqrt(2) = 7sqrt(2)." }, { question: "Rationalise the denominator of 6 / (sqrt(3) - sqrt(2)).",
@@ -37,7 +37,7 @@ explanation: "2^(2x) = 16 = 2^4. Since the bases are equal, the exponents are eq
 
 ### Quadratic Equations
 
-const practiceQuestions = [ { question: "Solve x^2 - 5x + 6 = 0 by factorisation.", options: [ "A) x
+export const practiceQuestions = [ { question: "Solve x^2 - 5x + 6 = 0 by factorisation.", options: [ "A) x
 = 1, 6", "B) x = 2, 3", "C) x = -2, -3", "D) x = -1, -6" ], correct: 1, explanation: "x^2 - 5x + 6 =
 (x - 2)(x - 3) = 0. Therefore x = 2 or x = 3. Checking: when x = 2: 4 - 10 + 6 = 0 (correct). When x
 = 3: 9 - 15 + 6 = 0 (correct)." }, { question: "For the quadratic equation 2x^2 - 4x + 3 = 0,
@@ -55,7 +55,7 @@ is 3, and square it to get 9. We add 9 and subtract 9 to complete the square." }
 
 ### Functions and Graphs
 
-const practiceQuestions = [ { question: "Given f(x) = 2x + 1 and g(x) = x^2, find the composite
+export const practiceQuestions = [ { question: "Given f(x) = 2x + 1 and g(x) = x^2, find the composite
 function gf(x).", options: [ "A) 2x^2 + 1", "B) (2x + 1)^2", "C) 4x^2 + 4x + 1", "D) 2x^2 + 2x" ],
 correct: 1, explanation: "gf(x) means g(f(x)). First find f(x) = 2x + 1, then substitute into g:
 g(2x + 1) = (2x + 1)^2 = 4x^2 + 4x + 1. Note that fg(x) would be different: fg(x) = f(g(x)) = f(x^2)
@@ -72,7 +72,7 @@ The domain is {x : x >= 2} or [2, infinity). The range is {y : y >= 0} or [0, in
 
 ### Coordinate Geometry
 
-const practiceQuestions = [ { question: "Find the equation of the line passing through (2, 3) with
+export const practiceQuestions = [ { question: "Find the equation of the line passing through (2, 3) with
 gradient 4.", options: [ "A) y = 4x - 5", "B) y = 4x + 5", "C) y = 4x - 11", "D) y = 4x + 3" ],
 correct: 0, explanation: "Using the point-gradient form: y - y1 = m(x - x1). Substituting (2, 3) and
 m = 4: y - 3 = 4(x - 2), so y - 3 = 4x - 8, therefore y = 4x - 5." }, { question: "Find the distance
@@ -88,7 +88,7 @@ between points A(3, -1) and B(7, 4).", options: [ "A) sqrt(41)", "B) sqrt(56)", 
 
 ### Trigonometry
 
-const practiceQuestions = [ { question: "In a right-angled triangle, the hypotenuse is 13 cm and one
+export const practiceQuestions = [ { question: "In a right-angled triangle, the hypotenuse is 13 cm and one
 leg is 5 cm. Find sin(theta) where theta is the angle opposite the 5 cm leg.", options: [ "A) 5/13",
 "B) 12/13", "C) 5/12", "D) 13/12" ], correct: 0, explanation: "The other leg = sqrt(13^2 - 5^2) =
 sqrt(169 - 25) = sqrt(144) = 12 cm. sin(theta) = opposite / hypotenuse = 5/13. cos(theta) = 12/13,
@@ -108,7 +108,7 @@ sides and the included angle are known." } ];
 
 ### Sequences and Series
 
-const practiceQuestions = [ { question: "Find the 10th term of the arithmetic sequence 3, 7, 11, 15,
+export const practiceQuestions = [ { question: "Find the 10th term of the arithmetic sequence 3, 7, 11, 15,
 ...", options: [ "A) 39", "B) 43", "C) 40", "D) 37" ], correct: 0, explanation: "First term a = 3,
 common difference d = 7 - 3 = 4. The nth term is a_n = a + (n-1)d. For n = 10: a_10 = 3 + 9(4) = 3 +
 36 = 39." }, { question: "Find the sum of the first 20 terms of the arithmetic sequence 2, 5, 8, 11,

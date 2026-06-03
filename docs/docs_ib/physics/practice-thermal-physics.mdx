@@ -14,7 +14,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Temperature and Internal Energy
 
-const practiceQuestions = [ {question: "What is 37 °C in kelvin?", options: ["A) −236 K", "B) 310
+export const practiceQuestions = [ {question: "What is 37 °C in kelvin?", options: ["A) −236 K", "B) 310
 K", "C) 236 K", "D) 273 K"], correct: 1, explanation: "T(K) = T(°C) + 273.15 = 37 + 273.15 = 310.15
 K ≈ 310 K."}, {question: "The internal energy of an ideal gas is:", options: ["A) The total
 potential energy of all molecules", "B) The sum of the kinetic and potential energies of all
@@ -38,7 +38,7 @@ of gases and holds regardless of pressure or volume changes."} ];
 
 ### Specific Heat Capacity and Latent Heat
 
-const practiceQuestions = [ {question: "200 g of water at 80 °C is mixed with 300 g of water at 20
+export const practiceQuestions = [ {question: "200 g of water at 80 °C is mixed with 300 g of water at 20
 °C. Assuming no heat loss to the surroundings, what is the final temperature? (c_water = 4180 J kg⁻¹
 K⁻¹)", options: ["A) 44 °C", "B) 50 °C", "C) 38 °C", "D) 56 °C"], correct: 0, explanation: "Heat
 lost by hot water = heat gained by cold water: 0.200 × 4180 × (80 − T_f) = 0.300 × 4180 × (T_f −
@@ -69,7 +69,7 @@ J."} ];
 
 ### Ideal Gas Law and Kinetic Theory
 
-const practiceQuestions = [ {question: "A gas is enclosed in a container at pressure 1.5 × 10⁵ Pa
+export const practiceQuestions = [ {question: "A gas is enclosed in a container at pressure 1.5 × 10⁵ Pa
 and temperature 300 K. If the temperature is increased to 450 K at constant volume, what is the new
 pressure?", options: ["A) 1.0 × 10⁵ Pa", "B) 2.25 × 10⁵ Pa", "C) 2.0 × 10⁵ Pa", "D) 1.5 × 10⁵ Pa"],
 correct: 1, explanation: "Using Gay-Lussac's law (P/T = constant at constant V): P₂/T₂ = P₁/T₁. P₂ =
@@ -95,7 +95,7 @@ sqrt(T))."} ];
 
 ### Pressure-Volume Work and Phase Changes
 
-const practiceQuestions = [ {question: "A gas expands at constant pressure of 1.0 × 10⁵ Pa from 2.0
+export const practiceQuestions = [ {question: "A gas expands at constant pressure of 1.0 × 10⁵ Pa from 2.0
 × 10⁻³ m³ to 5.0 × 10⁻³ m³. How much work does the gas do?", options: ["A) 300 J", "B) 200 J", "C)
 500 J", "D) 150 J"], correct: 0, explanation: "Work done by gas at constant pressure: W = PΔV = 1.0
 × 10⁵ × (5.0 − 2.0) × 10⁻³ = 1.0 × 10⁵ × 3.0 × 10⁻³ = 300 J."}, {question: "During a phase change

@@ -20,7 +20,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Complex Numbers
 
-const practiceQuestions = [ { question: "What is the modulus of the complex number z = 3 - 4i?",
+export const practiceQuestions = [ { question: "What is the modulus of the complex number z = 3 - 4i?",
 options: ["A) 5", "B) 7", "C) √7", "D) 1"], correct: 0, explanation: "|z| = √(3² + (-4)²) =
 √(9 + 16) = √25 = 5." }, { question: "Express z = 1 + √3i in polar form re^(iθ) with θ in radians.",
 options: ["A) 2e^(iπ/3)", "B) 2e^(i2π/3)", "C) √2e^(iπ/3)", "D) 4e^(iπ/6)"], correct: 0,
@@ -39,7 +39,7 @@ sum to zero (coefficient of z^(n-1) is zero)." } ];
 
 ### Matrices
 
-const practiceQuestions = [ { question: "Given M = [[1,0,2],[3,1,-1],[0,2,1]], find the entry in row
+export const practiceQuestions = [ { question: "Given M = [[1,0,2],[3,1,-1],[0,2,1]], find the entry in row
 2, column 3 of M².", options: ["A) 5", "B) -3", "C) 7", "D) 0"], correct: 0, explanation: "Row 2 of
 M = [3,1,-1]. Column 3 of M = [2,-1,1]. Entry = 3(2)+1(-1)+(-1)(1) = 6-1-1 = 4. Wait, let me
 recalculate: 3(2)+1(-1)+(-1)(1) = 6-1-1 = 4. None match, so checking: actually row 2 col 3 of M² =
@@ -68,7 +68,7 @@ rotation of 90° anticlockwise about the z-axis. det(T) = 1, confirming rotation
 
 ### Proof by Induction
 
-const practiceQuestions = [ { question: "What is the first step in any proof by mathematical
+export const practiceQuestions = [ { question: "What is the first step in any proof by mathematical
 induction?", options: ["A) Assume the statement is true for n = k and prove for n = k + 1", "B)
 Prove the statement is true for the base case (e.g. n = 1)", "C) Prove the statement is true for all
 natural numbers directly", "D) Find a counterexample"], correct: 1, explanation: "The base case must
@@ -97,7 +97,7 @@ the multiplicative pattern of the top-right entry." } ];
 
 ### Hyperbolic Functions
 
-const practiceQuestions = [ { question: "Which of the following is the correct definition of cosh
+export const practiceQuestions = [ { question: "Which of the following is the correct definition of cosh
 x?", options: ["A) (e^x + e^(-x))/2", "B) (e^x - e^(-x))/2", "C) e^x - e^(-x)", "D) (e^x +
 e^(-x))/2i"], correct: 0, explanation: "cosh x = (e^x + e^(-x))/2. Compare with sinh x = (e^x -
 e^(-x))/2. The key identity is cosh²x - sinh²x = 1 (analogous to cos²x + sin²x = 1 but with a minus

@@ -18,7 +18,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ### Statistical Measures
 
-const practiceQuestions = [ { question: "The data set {3, 5, 7, 8, 12} has values coded as y = (x -
+export const practiceQuestions = [ { question: "The data set {3, 5, 7, 8, 12} has values coded as y = (x -
 8)/2. Find the mean of the coded values.", options: [ "A) -0.8", "B) -1.6", "C) 0.8", "D) 7.0" ],
 correct: 0, explanation: "Mean of original data = (3+5+7+8+12)/5 = 35/5 = 7. Mean of coded data =
 (7-8)/2 = -0.5. Wait: ȳ = (x̄ - 8)/2 = (7-8)/2 = -0.5. None of the options match exactly. Let me
@@ -43,7 +43,7 @@ question: "Find the interquartile range of the data set {3, 5, 7, 8, 9, 12, 14, 
 
 ### Probability
 
-const practiceQuestions = [ { question: "Events A and B are such that P(A) = 0.4, P(B) = 0.5 and
+export const practiceQuestions = [ { question: "Events A and B are such that P(A) = 0.4, P(B) = 0.5 and
 P(A|B) = 0.3. Find P(A ∪ B).", options: [ "A) 0.65", "B) 0.70", "C) 0.75", "D) 0.55" ], correct: 0,
 explanation: "P(A∩B) = P(B) × P(A|B) = 0.5 × 0.3 = 0.15. P(A∪B) = P(A) + P(B) - P(A∩B) = 0.4 + 0.5 -
 0.15 = 0.65." }, { question: "A bag contains 4 red and 6 blue balls. Two balls are drawn without
@@ -61,7 +61,7 @@ options: [ "A) 3/8", "B) 15/40", "C) 15/35", "D) 1/4" ], correct: 1, explanation
 
 ### Binomial Distribution
 
-const practiceQuestions = [ { question: "X ~ B(12, 0.3). Find P(X = 4).", options: [ "A) 0.2311",
+export const practiceQuestions = [ { question: "X ~ B(12, 0.3). Find P(X = 4).", options: [ "A) 0.2311",
 "B) 0.1678", "C) 0.3122", "D) 0.0914" ], correct: 0, explanation: "P(X=4) = ¹²C₄(0.3)⁴(0.7)⁸ = 495 ×
 0.0081 × 0.057648 = 495 × 0.000467 = 0.2311." }, { question: "A fair coin is tossed 10 times. Find
 the probability of getting exactly 7 heads.", options: [ "A) 0.1172", "B) 0.0547", "C) 0.2051", "D)
@@ -80,7 +80,7 @@ The exact value is approximately 0.246." } ];
 
 ### Normal Distribution
 
-const practiceQuestions = [ { question: "Given X ~ N(μ, σ²) with μ = 50 and σ = 6, find P(X < 44).",
+export const practiceQuestions = [ { question: "Given X ~ N(μ, σ²) with μ = 50 and σ = 6, find P(X < 44).",
 options: [ "A) 0.1587", "B) 0.3413", "C) 0.8413", "D) 0.0228" ], correct: 0, explanation: "z =
 (44-50)/6 = -1. P(Z < -1) = 1 - P(Z < 1) = 1 - 0.8413 = 0.1587." }, { question: "The heights of
 adult males are normally distributed with mean 175 cm and standard deviation 8 cm. Find the
@@ -97,7 +97,7 @@ explanation: "P(X > a) = 0.05 → P(X < a) = 0.95. z = 1.645. a = 100 + 1.645 ×
 
 ### Hypothesis Testing
 
-const practiceQuestions = [ { question: "A coin is tossed 15 times and lands on heads 11 times. Test
+export const practiceQuestions = [ { question: "A coin is tossed 15 times and lands on heads 11 times. Test
 at the 5% significance level whether the coin is biased towards heads. State the critical region.",
 options: [ "A) X ≥ 12 where X ~ B(15, 0.5). Since 11 < 12, do not reject H₀.", "B) X ≥ 11 where X ~
 B(15, 0.5). Since 11 ≥ 11, reject H₀.", "C) X ≥ 10 where X ~ B(15, 0.5). Since 11 ≥ 10, reject H₀.",
@@ -125,7 +125,7 @@ successes is 7 or more, we reject the null hypothesis H₀ in favour of H₁: p 
 
 ### Correlation and Regression
 
-const practiceQuestions = [ { question: "For a set of bivariate data, the product moment correlation
+export const practiceQuestions = [ { question: "For a set of bivariate data, the product moment correlation
 coefficient (PMCC) is calculated as r = 0.85. What does this indicate about the relationship between
 the variables?", options: [ "A) Strong positive linear correlation", "B) Weak positive linear
 correlation", "C) Strong negative linear correlation", "D) No linear correlation" ], correct: 0,

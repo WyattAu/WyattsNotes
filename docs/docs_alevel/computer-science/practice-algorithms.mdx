@@ -21,7 +21,7 @@ complexity analysis, algorithm design paradigms, and recursion.
 
 ### Searching Algorithms
 
-const practiceQuestions = [ { question: 'What precondition must be satisfied before performing a
+export const practiceQuestions = [ { question: 'What precondition must be satisfied before performing a
 binary search on a list?', options: [ 'A) The list must contain only integers', 'B) The list must be
 sorted', 'C) The list must have an odd number of elements', 'D) The list must contain no duplicate
 values', ], correct: 1, explanation: 'Binary search requires the list (or array) to be sorted. The
@@ -49,7 +49,7 @@ search. However, worst case is O(n) for non-uniform distributions.', }, ];
 
 ### Sorting Algorithms
 
-const practiceQuestions = [ { question: 'During one pass of bubble sort on the array [5, 3, 8, 1,
+export const practiceQuestions = [ { question: 'During one pass of bubble sort on the array [5, 3, 8, 1,
 4], what is the state after the first complete pass?', options: [ 'A) [3, 5, 1, 4, 8]', 'B) [3, 1,
 4, 5, 8]', 'C) [5, 3, 1, 4, 8]', 'D) [1, 3, 4, 5, 8]', ], correct: 0, explanation: 'Bubble sort
 compares adjacent pairs and swaps if out of order. Starting with [5, 3, 8, 1, 4]: compare 5 and 3,
@@ -77,7 +77,7 @@ recursively sorts each partition. The pivot 7 is in its final sorted position (i
 
 ### Graph Algorithms
 
-const practiceQuestions = [ { question: 'What is the key difference between BFS and DFS in terms of
+export const practiceQuestions = [ { question: 'What is the key difference between BFS and DFS in terms of
 the data structure used and exploration order?', options: [ 'A) BFS uses a stack and explores
 depth-first; DFS uses a queue and explores breadth-first', 'B) BFS uses a queue (FIFO) and explores
 neighbours level by level; DFS uses a stack (LIFO) and explores as deep as possible along each
@@ -111,7 +111,7 @@ binary heap is O(E log V).", }, ];
 
 ### Complexity Analysis
 
-const practiceQuestions = [ { question: 'Which of the following correctly orders time complexities
+export const practiceQuestions = [ { question: 'Which of the following correctly orders time complexities
 from most efficient to least efficient?', options: [ 'A) O(1) < O(log n) < O(n) < O(n log n) <
 O(n^2) < O(2^n)', 'B) O(log n) < O(1) < O(n) < O(n log n) < O(n^2)', 'C) O(1) < O(n) < O(log n) <
 O(n log n) < O(2^n)', 'D) O(2^n) < O(n^2) < O(n) < O(log n) < O(1)', ], correct: 0, explanation:
@@ -141,7 +141,7 @@ average but Omega(n^2) worst case.', }, ];
 
 ### Algorithm Design Paradigms
 
-const practiceQuestions = [ { question: 'Merge sort is an example of which algorithm design
+export const practiceQuestions = [ { question: 'Merge sort is an example of which algorithm design
 paradigm?', options: [ 'A) Greedy algorithm', 'B) Divide and conquer', 'C) Dynamic programming', 'D)
 Brute force', ], correct: 1, explanation: "Merge sort uses divide and conquer: divide the array into
 two halves (divide), recursively sort each half (conquer), then merge the two sorted halves
@@ -174,7 +174,7 @@ naive -> O(n) DP), knapsack, longest common subsequence, edit distance.', }, ];
 
 ### Recursion and Problem Solving
 
-const practiceQuestions = [ { question: 'What is the output of this recursive function when called
+export const practiceQuestions = [ { question: 'What is the output of this recursive function when called
 with f(4)? FUNCTION f(n): IF n == 0 THEN RETURN 1 ELSE RETURN n _ f(n - 1)', options: ['A) 4', 'B)
 16', 'C) 24', 'D) 10'], correct: 2, explanation: 'This function computes factorial recursively: f(4)
 = 4 _ f(3) = 4 _ 3 _ f(2) = 4 _ 3 _ 2 _ f(1) = 4 _ 3 _ 2 _ 1 _ f(0) = 4 _ 3 _ 2 _ 1 \* 1 = 24. The
