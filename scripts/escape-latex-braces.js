@@ -78,105 +78,64 @@ const ESCAPE_CMDS = new Set([
 // ─────────────────────────────────────────────────────────────────────────────
 
 function collapseConstArrays(source) {
-  const re = /^(\s*)(export\s+)?const\s+(\w+)\s*=\s*\[/gm;
+  let lines = source.split('\n');
   const replacements = [];
 
-  let match;
-  while ((match = re.exec(source)) !== null) {
+  let i = 0;
+  while (i < lines.length) {
+    const match = lines[i].match(/^(\s*)(export\s+)?const\s+(\w+)\s*=\s*\[/);
+    if (!match) {
+      i++;
+      continue;
+    }
+
     const prefix = match[1];
     const hasExport = !!match[2];
-    const bracketStart = match.index + match[0].length - 1;
+    const startLine = i;
 
     // Skip if inside YAML frontmatter (before second ---)
-    let frontmatterEnd = -1;
-    if (source.startsWith('---')) {
-      const end = source.indexOf('---', 3);
-      if (end !== -1 && source[end + 3] === '\n') {
-        frontmatterEnd = end + 4;
-      } else if (end !== -1) {
-        frontmatterEnd = end + 3;
-      }
+    // Frontmatter is always at the start of the file: lines 1 = ---, line N = ---
+    if (startLine < 2) {
+      i++;
+      continue;
     }
-    if (frontmatterEnd !== -1 && match.index < frontmatterEnd) continue;
-
-    // Character-by-character scan from [ to matching ]
-    let pos = bracketStart;
-    let depth = 0;
-    let inString = null;
-    let inTemplate = false;
-    let templateExprDepth = 0;
-    let endPos = -1;
-
-    while (pos < source.length) {
-      const ch = source[pos];
-
-      if (inString) {
-        if (ch === '\\' && pos + 1 < source.length) {
-          pos += 2;
-          continue;
-        }
-        if (ch === inString) {
-          inString = null;
-        }
-        pos++;
-        continue;
-      }
-
-      if (inTemplate) {
-        if (ch === '\\' && pos + 1 < source.length) {
-          pos += 2;
-          continue;
-        }
-        if (ch === '`' && templateExprDepth === 0) {
-          inTemplate = false;
-          pos++;
-          continue;
-        }
-        if (ch === '$' && pos + 1 < source.length && source[pos + 1] === '{') {
-          templateExprDepth++;
-          pos += 2;
-          continue;
-        }
-        if (ch === '{') {
-          templateExprDepth++;
-          pos++;
-          continue;
-        }
-        if (ch === '}') {
-          templateExprDepth--;
-          pos++;
-          continue;
-        }
-        pos++;
-        continue;
-      }
-
-      if (ch === '"' || ch === "'" || ch === '`') {
-        if (ch === '`') {
-          inTemplate = true;
-        } else {
-          inString = ch;
-        }
-        pos++;
-        continue;
-      }
-
-      if (ch === '[') depth++;
-      else if (ch === ']') {
-        depth--;
-        if (depth === 0) {
-          endPos = pos;
+    let frontmatterEnd = -1;
+    if (lines[0].trim() === '---') {
+      for (let j = 1; j < lines.length; j++) {
+        if (lines[j].trim() === '---') {
+          frontmatterEnd = j + 1;
           break;
         }
       }
-
-      pos++;
+    }
+    if (frontmatterEnd !== -1 && startLine < frontmatterEnd) {
+      i++;
+      continue;
     }
 
-    if (endPos === -1) continue;
+    // Scan forward for the closing ];
+    let endLine = -1;
+    for (let j = i + 1; j < lines.length; j++) {
+      const trimmed = lines[j].trim();
+      if (
+        trimmed === '];' ||
+        trimmed === ']' ||
+        trimmed.endsWith('];') ||
+        trimmed.endsWith(', ];')
+      ) {
+        endLine = j;
+        break;
+      }
+    }
 
-    const originalBlock = source.substring(match.index, endPos + 1);
-    let collapsed = originalBlock
+    if (endLine === -1) {
+      i++;
+      continue;
+    }
+
+    // Collect all lines from start to end
+    const block = lines.slice(startLine, endLine + 1).join('\n');
+    let collapsed = block
       .replace(/\n/g, ' ')
       .replace(/\r/g, '')
       .replace(/\t/g, ' ')
@@ -186,17 +145,17 @@ function collapseConstArrays(source) {
       collapsed = prefix + 'export ' + collapsed.trimStart();
     }
 
-    replacements.push({
-      start: match.index,
-      end: endPos + 1,
-      replacement: collapsed,
-    });
+    replacements.push({ startLine, endLine, replacement: collapsed });
+    i = endLine + 1;
   }
 
-  // Apply replacements in reverse order to preserve offsets
-  for (let i = replacements.length - 1; i >= 0; i--) {
-    const r = replacements[i];
-    source = source.substring(0, r.start) + r.replacement + source.substring(r.end);
+  // Apply replacements in reverse order
+  for (let r = replacements.length - 1; r >= 0; r--) {
+    const rep = replacements[r];
+    const before = lines.slice(0, rep.startLine).join('\n');
+    const after = lines.slice(rep.endLine + 1).join('\n');
+    source = before + '\n' + rep.replacement + '\n' + after;
+    lines = source.split('\n');
   }
 
   return source;
@@ -335,17 +294,57 @@ function diamondifySuperscriptSubscript(source) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Transformation 5: Diamondify standalone {text} patterns
+// ─────────────────────────────────────────────────────────────────────────────
+//
+// MDX treats any {content} as a JSX expression. Set notation like {1,2,3},
+// LaTeX environment names like \begin{aligned}, and other brace pairs in
+// math context trigger acorn parsing errors.
+//
+// Skip JSX attribute context (preceded by =) and already-escaped braces.
+
+function diamondifyStandaloneBraces(source) {
+  const output = [];
+  let pos = 0;
+
+  while (pos < source.length) {
+    if (source[pos] === '{' && pos > 0 && source[pos - 1] !== '\\' && source[pos - 1] !== '=') {
+      let depth = 1;
+      let j = pos + 1;
+      while (j < source.length && depth > 0) {
+        if (source[j] === '{' && source[j - 1] !== '\\') depth++;
+        else if (source[j] === '}' && source[j - 1] !== '\\') depth--;
+        j++;
+      }
+      if (depth === 0) {
+        const inner = source.substring(pos + 1, j - 1);
+        if (inner.length > 0 && inner.length < 500 && /[,\s\w]/.test(inner)) {
+          output.push(LB + inner + RB);
+          pos = j;
+          continue;
+        }
+      }
+    }
+    output.push(source[pos]);
+    pos++;
+  }
+
+  return output.join('');
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // Orchestrator
 // ─────────────────────────────────────────────────────────────────────────────
 
 function processFile(filepath) {
   const content = fs.readFileSync(filepath, 'utf8');
 
-  // Apply transformations in order: collapse → autolinks → latex braces → superscripts
+  // Apply transformations in order: collapse → autolinks → latex braces → superscripts → standalone braces
   let processed = collapseConstArrays(content);
   processed = fixAutolinks(processed);
   processed = diamondifyLatexBraces(processed);
   processed = diamondifySuperscriptSubscript(processed);
+  processed = diamondifyStandaloneBraces(processed);
 
   if (processed !== content) {
     fs.writeFileSync(filepath, processed);
