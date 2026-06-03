@@ -40,7 +40,7 @@ const config = {
         routeBasePath: '/docs/qualifications',
         sidebarPath: require.resolve('./sidebars/sidebar_qualifications.ts'),
         editUrl: 'https://github.com/WyattAu/WyattsNotes/edit/main/docs/docs_qualifications/{dir}',
-        ...createCommonDocsPluginConfig(),
+        ...createCommonDocsPluginConfig(true),
       },
     ],
   ],

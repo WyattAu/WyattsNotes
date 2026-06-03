@@ -18,7 +18,7 @@ import {
   sharedZoom,
 } from './docusaurus.shared.config';
 
-const commonDocsPluginConfig = createCommonDocsPluginConfig();
+const commonDocsPluginConfig = createCommonDocsPluginConfig(true);
 
 const algoliaConfig = createAlgoliaConfig('wyattsnotes_programming');
 

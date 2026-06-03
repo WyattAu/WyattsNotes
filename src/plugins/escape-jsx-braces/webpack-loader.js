@@ -1,32 +1,197 @@
 /**
- * Webpack loader: preprocesses .md/.mdx files to escape braces inside
- * LaTeX command arguments that MDX's micromark can't parse as valid JS.
+ * Webpack loader: preprocesses .md/.mdx files before MDX parsing.
  *
- * Problem 1: \dfrac{|\mathbf{a}|}{|\mathbf{n}|} — micromark sees \dfrac{...}
- * and tries to parse {|\mathbf{a}|} as JSX. Acorn fails on \mathbf.
+ * MDX's parser (micromark/acorn) fails on several valid markdown/LaTeX patterns.
+ * This loader runs as enforce:'pre' to fix the source before MDX sees it.
  *
- * Problem 2: \mathrm{PMK{}} — MDX sees the inner {} as an empty JSX
- * expression. The brace depth counter never reaches 0 because the
- * empty group {} inside makes the outer group unbalanced from the
- * parser's perspective.
- *
- * Solution: Replace { with \{ inside LaTeX command arguments when the
- * content contains backslashes, pipes, or nested braces. For commands
- * where the first brace group is always a simple text argument (like
- * \mathrm, \text, etc.), always escape the content regardless.
- * The remark plugin (escape-jsx-braces) then skips these already-
- * escaped braces and leaves them as-is for KaTeX.
- *
- * KaTeX interprets \{ and \} as literal braces in math mode, but inside
- * \dfrac arguments, \{...\} creates a LaTeX group (same as {...}).
- * So \dfrac\{|\mathbf{a}|\}\{|\mathbf{n}|\} renders identically to
- * \dfrac{|\mathbf{a}|}{|\mathbf{n}|}.
+ * Pipeline:
+ *   Pass 0:   collapseConstArrays — collapse multi-line const/export const array
+ *             declarations to single lines so MDX's ESM collector captures them.
+ *   Pass 0.5: fixAutolinks — convert <URL> markdown autolinks to [url](url) so
+ *             MDX doesn't parse them as JSX tags.
+ *   Pass 1:   escapeLatexCommandBraces — escape { and } inside LaTeX command
+ *             arguments that MDX parses as JSX expressions.
+ *   Pass 2:   escapeStandaloneBraces — escape standalone {text} and ^{...}/_{...}
+ *             patterns with private-use-area placeholders.
  */
 
 module.exports = function (source) {
-  // Commands whose first argument is a simple text label that should
-  // always have its braces escaped. These never need nested braces
-  // in their first argument for valid LaTeX rendering.
+  // ── Pass 0: Collapse multi-line const/export const array declarations ──
+  //
+  // MDX's ESM collector only collects lines starting with `import`, `export`,
+  // or `{`. A multi-line declaration like:
+  //   export const practiceQuestions = [
+  //     { question: 'What...', options: [...], correct: 1, },
+  //     ...
+  //   ]
+  // Only has the first line collected. Acorn receives incomplete JS and fails.
+  // Solution: collapse the entire array declaration to a single line.
+  source = collapseConstArrays(source);
+
+  // ── Pass 0.5: Convert <URL> autolinks to markdown links ──
+  //
+  // In markdown, <https://example.com> is an autolink. MDX parses it as a
+  // JSX tag <https://example.com/> and fails with "Unexpected character `/`".
+  source = source.replace(/<(https?:\/\/[^>\s]+)>/g, '[$1]($1)');
+
+  // ── Pass 1: Escape LaTeX command braces ──
+  //
+  // \dfrac{|\mathbf{a}|}{|\mathbf{n}|} — micromark sees \dfrac{...}
+  // and tries to parse {|\mathbf{a}|} as JSX. Acorn fails on \mathbf.
+  //
+  // \mathrm{PMK{}} — MDX sees the inner {} as an empty JSX expression.
+  //
+  // Solution: Replace { with \{ inside LaTeX command arguments when the
+  // content contains backslashes, pipes, or nested braces. For commands
+  // whose first brace group is always a simple text argument (like \mathrm,
+  // \text, etc.), always escape the content regardless.
+  source = escapeLatexCommandBraces(source);
+
+  // ── Pass 2: Escape standalone braces ──
+  //
+  // Any remaining { not part of a LaTeX command is likely set notation or
+  // literal braces that MDX will try to evaluate as JavaScript.
+  // Also handles ^{...} and _{...} LaTeX superscript/subscript patterns.
+  // Replace with private-use-area placeholders that the remark plugin restores.
+  source = escapeStandaloneBraces(source);
+
+  return source;
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Pass 0 implementation
+// ─────────────────────────────────────────────────────────────────────────────
+
+function collapseConstArrays(source) {
+  const re = /^(\s*)(export\s+)?const\s+(\w+)\s*=\s*\[/gm;
+  const replacements = [];
+
+  let match;
+  while ((match = re.exec(source)) !== null) {
+    const prefix = match[1];
+    const hasExport = !!match[2];
+    const bracketStart = match.index + match[0].length - 1;
+
+    // Skip if inside YAML frontmatter (before second ---)
+    let frontmatterEnd = -1;
+    if (source.startsWith('---')) {
+      const end = source.indexOf('---', 3);
+      if (end !== -1 && source[end + 3] === '\n') {
+        frontmatterEnd = end + 4;
+      } else if (end !== -1) {
+        frontmatterEnd = end + 3;
+      }
+    }
+    if (frontmatterEnd !== -1 && match.index < frontmatterEnd) continue;
+
+    // Character-by-character scan from [ to matching ]
+    let pos = bracketStart;
+    let depth = 0;
+    let inString = null;
+    let inTemplate = false;
+    let templateExprDepth = 0;
+    let endPos = -1;
+
+    while (pos < source.length) {
+      const ch = source[pos];
+
+      if (inString) {
+        if (ch === '\\' && pos + 1 < source.length) {
+          pos += 2;
+          continue;
+        }
+        if (ch === inString) {
+          inString = null;
+        }
+        pos++;
+        continue;
+      }
+
+      if (inTemplate) {
+        if (ch === '\\' && pos + 1 < source.length) {
+          pos += 2;
+          continue;
+        }
+        if (ch === '`' && templateExprDepth === 0) {
+          inTemplate = false;
+          pos++;
+          continue;
+        }
+        if (ch === '$' && pos + 1 < source.length && source[pos + 1] === '{') {
+          templateExprDepth++;
+          pos += 2;
+          continue;
+        }
+        if (ch === '{') {
+          templateExprDepth++;
+          pos++;
+          continue;
+        }
+        if (ch === '}') {
+          templateExprDepth--;
+          pos++;
+          continue;
+        }
+        pos++;
+        continue;
+      }
+
+      if (ch === '"' || ch === "'" || ch === '`') {
+        if (ch === '`') {
+          inTemplate = true;
+        } else {
+          inString = ch;
+        }
+        pos++;
+        continue;
+      }
+
+      if (ch === '[') depth++;
+      else if (ch === ']') {
+        depth--;
+        if (depth === 0) {
+          endPos = pos;
+          break;
+        }
+      }
+
+      pos++;
+    }
+
+    if (endPos === -1) continue;
+
+    const originalBlock = source.substring(match.index, endPos + 1);
+    let collapsed = originalBlock
+      .replace(/\n/g, ' ')
+      .replace(/\r/g, '')
+      .replace(/\t/g, ' ')
+      .replace(/  +/g, ' ');
+
+    if (!hasExport) {
+      collapsed = prefix + 'export ' + collapsed.trimStart();
+    }
+
+    replacements.push({
+      start: match.index,
+      end: endPos + 1,
+      replacement: collapsed,
+    });
+  }
+
+  // Apply replacements in reverse order to preserve offsets
+  for (let i = replacements.length - 1; i >= 0; i--) {
+    const r = replacements[i];
+    source = source.substring(0, r.start) + r.replacement + source.substring(r.end);
+  }
+
+  return source;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Pass 1 implementation
+// ─────────────────────────────────────────────────────────────────────────────
+
+function escapeLatexCommandBraces(source) {
   const ALWAYS_ESCAPE_CMDS = new Set([
     'mathrm',
     'text',
@@ -38,9 +203,6 @@ module.exports = function (source) {
     'mathnormal',
   ]);
 
-  // Commands whose arguments may contain other LaTeX commands with
-  // their own brace groups. Only escape when nested braces, backslashes,
-  // or pipes are detected inside the argument.
   const CONDITIONAL_ESCAPE_CMDS = new Set([
     'dfrac',
     'tfrac',
@@ -67,9 +229,7 @@ module.exports = function (source) {
   const parts = [];
 
   while (i < source.length) {
-    // Look for backslash followed by a command name
     if (source[i] === '\\' && i + 1 < source.length && /[a-zA-Z]/.test(source[i + 1])) {
-      // Read the full command name
       const cmdStart = i;
       let cmdEnd = i + 1;
       while (cmdEnd < source.length && /[a-zA-Z]/.test(source[cmdEnd])) {
@@ -80,7 +240,6 @@ module.exports = function (source) {
       const shouldConditionalEscape = CONDITIONAL_ESCAPE_CMDS.has(cmdName);
 
       if (shouldAlwaysEscape || shouldConditionalEscape) {
-        // Skip whitespace
         let pos = cmdEnd;
         while (pos < source.length && source[pos] in { ' ': 1, '\t': 1, '\n': 1 }) {
           pos++;
@@ -88,19 +247,15 @@ module.exports = function (source) {
 
         if (pos < source.length && source[pos] === '{') {
           if (shouldAlwaysEscape) {
-            // Always escape the first brace group for text commands.
-            // Read content up to the first matching } (depth 1→0).
             parts.push(source.substring(cmdStart, cmdEnd));
             i = cmdEnd;
 
-            // Skip whitespace to opening brace
             while (i < source.length && source[i] in { ' ': 1, '\t': 1, '\n': 1 }) {
               parts.push(source[i]);
               i++;
             }
 
             if (i < source.length && source[i] === '{') {
-              // Read the brace group, only tracking depth for the outer level
               let depth = 0;
               const start = i;
               while (i < source.length) {
@@ -116,14 +271,12 @@ module.exports = function (source) {
               }
 
               const argContent = source.substring(start + 1, i - 1);
-              // Escape all { and } in the argument content
               const escaped = argContent.replace(/\{/g, '\\{').replace(/\}/g, '\\}');
               parts.push('{' + escaped + '}');
             }
             continue;
           }
 
-          // Conditional escape: check if the brace group has problems
           let depth = 0;
           let j = pos;
           let hasProblem = false;
@@ -148,19 +301,13 @@ module.exports = function (source) {
           }
 
           if (depth !== 0) {
-            // Unbalanced braces — this means the first brace group contains
-            // nested empty groups like \mathrm{PMK{}} where the depth
-            // counter never returns to 0. Treat as problematic and escape
-            // the first brace group.
             hasProblem = true;
-            // Re-scan: read only the first balanced group (depth 1→0)
             depth = 0;
             j = pos;
             while (j < source.length) {
               if (source[j] === '{') {
                 depth++;
                 if (depth > 1) {
-                  // Skip the inner empty group entirely
                   let innerDepth = 1;
                   j++;
                   while (j < source.length && innerDepth > 0) {
@@ -179,13 +326,10 @@ module.exports = function (source) {
           }
 
           if (hasProblem) {
-            // Output the command name as-is
             parts.push(source.substring(cmdStart, cmdEnd));
             i = cmdEnd;
 
-            // Process each brace group, escaping { and } inside
             while (i < source.length) {
-              // Skip whitespace
               while (i < source.length && source[i] in { ' ': 1, '\t': 1, '\n': 1 }) {
                 parts.push(source[i]);
                 i++;
@@ -193,7 +337,6 @@ module.exports = function (source) {
 
               if (i >= source.length || source[i] !== '{') break;
 
-              // Read balanced {content}
               let d = 0;
               const start = i;
               let foundClose = false;
@@ -211,13 +354,11 @@ module.exports = function (source) {
               }
 
               if (!foundClose) {
-                // Truly unbalanced braces — output rest of content as-is
                 parts.push(source.substring(start));
                 break;
               }
 
               const argContent = source.substring(start + 1, i - 1);
-              // Escape { and } in the argument content
               const escaped = argContent.replace(/\{/g, '\\{').replace(/\}/g, '\\}');
               parts.push('{' + escaped + '}');
             }
@@ -226,7 +367,6 @@ module.exports = function (source) {
         }
       }
 
-      // Not a problematic command, output as-is
       parts.push(source.substring(cmdStart, cmdEnd));
       i = cmdEnd;
       continue;
@@ -236,50 +376,61 @@ module.exports = function (source) {
     i++;
   }
 
-  // Second pass: escape any remaining { that MDX would parse as JSX expressions.
-  // After the LaTeX command pass, all \cmd{...} patterns have been processed.
-  // Any remaining { in text is likely set notation or literal braces that
-  // MDX will try to evaluate as JavaScript, causing acorn parse errors.
-  //
-  // Strategy: find { not preceded by \ and scan for matching }.
-  // If the content between looks like text (not code), escape the braces.
-  // Replace with private-use-area placeholders that the remark plugin will restore.
-  const result = parts.join('');
+  return parts.join('');
+}
 
-  // Replace standalone {text} patterns (not preceded by backslash)
-  // that MDX would parse as JSX flow expressions.
-  // Use a simple approach: find { that is NOT preceded by \ and NOT part of
-  // a JSX attribute (preceded by =).
-  const PLACEHOLDER_LB = '\uE000'; // Private use area (same as existing convention)
+// ─────────────────────────────────────────────────────────────────────────────
+// Pass 2 implementation
+// ─────────────────────────────────────────────────────────────────────────────
+
+function escapeStandaloneBraces(source) {
+  const PLACEHOLDER_LB = '\uE000';
   const PLACEHOLDER_RB = '\uE001';
 
   const output = [];
   let pos = 0;
-  while (pos < result.length) {
-    if (result[pos] === '{' && pos > 0 && result[pos - 1] !== '\\') {
-      // Check if this is inside a JSX context (preceded by =)
-      // by looking backwards for JSX attribute pattern
+  while (pos < source.length) {
+    if (source[pos] === '{' && pos > 0 && source[pos - 1] !== '\\') {
+      // Check if this { is preceded by ^ or _ (not \), indicating
+      // LaTeX superscript/subscript like e^{-kt} or t_{1/2}.
+      // MDX parses the braces as JSX and fails on non-JS content.
+      if (source[pos - 1] === '^' || source[pos - 1] === '_') {
+        if (pos < 2 || source[pos - 2] !== '\\') {
+          let depth = 1;
+          let j = pos + 1;
+          while (j < source.length && depth > 0) {
+            if (source[j] === '{') depth++;
+            else if (source[j] === '}') depth--;
+            j++;
+          }
+          if (depth === 0) {
+            const inner = source.substring(pos + 1, j - 1);
+            output.push(PLACEHOLDER_LB);
+            output.push(inner);
+            output.push(PLACEHOLDER_RB);
+            pos = j;
+            continue;
+          }
+        }
+      }
+
+      // Check if this is inside a JSX attribute context (preceded by =)
       let isJsxAttr = false;
-      if (pos > 1 && result[pos - 1] === '=') {
+      if (pos > 1 && source[pos - 1] === '=') {
         isJsxAttr = true;
       }
 
       if (!isJsxAttr) {
-        // Try to find matching }
         let depth = 1;
         let j = pos + 1;
-        const found = false;
-        while (j < result.length && depth > 0) {
-          if (result[j] === '{' && result[j - 1] !== '\\') depth++;
-          else if (result[j] === '}' && result[j - 1] !== '\\') depth--;
+        while (j < source.length && depth > 0) {
+          if (source[j] === '{' && source[j - 1] !== '\\') depth++;
+          else if (source[j] === '}' && source[j - 1] !== '\\') depth--;
           j++;
         }
         if (depth === 0) {
-          // Found matching brace. Check if content looks like text (set notation).
-          // If it contains commas, spaces, or common math symbols, escape it.
-          const inner = result.substring(pos + 1, j - 1);
+          const inner = source.substring(pos + 1, j - 1);
           if (inner.length > 0 && inner.length < 500 && /[,\s\w]/.test(inner)) {
-            // Looks like text/set notation - escape it
             output.push(PLACEHOLDER_LB);
             output.push(inner);
             output.push(PLACEHOLDER_RB);
@@ -289,9 +440,9 @@ module.exports = function (source) {
         }
       }
     }
-    output.push(result[pos]);
+    output.push(source[pos]);
     pos++;
   }
 
   return output.join('');
-};
+}
