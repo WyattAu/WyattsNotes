@@ -1,0 +1,357 @@
+---
+title: 'A-Level Psychology Diagnostic Test'
+slug: diagnostic-test
+description:
+  'A-Level Psychology diagnostic test covering all 8 core topics: Research Methods, Social
+  Influence, Memory, Attachment, Psychopathology, Approaches, Biopsychology, and Issues and Debates.'
+tags:
+  - Psychology
+  - A-Level
+---
+
+import DiagnosticTest from '@site/src/components/interactive/DiagnosticTest';
+
+## A-Level Psychology Diagnostic Test
+
+This diagnostic test covers the full A-Level Psychology syllabus. There are 20 questions spanning
+all 8 core topics. The test uses adaptive difficulty, selecting questions based on your performance
+to target areas of weakness.
+
+**Recommended time:** 25 minutes. The test presents up to 15 questions drawn from the pool,
+adaptively ordered by your answers.
+
+---
+
+## How the Diagnostic Scoring Works
+
+After completing the test, you receive a results breakdown:
+
+- **Topic Breakdown** -- each topic shows your score, colour-coded green (strong, 80%+), amber
+  (moderate, 50-79%), or red (weak, below 50%).
+- **Strengths** -- topics where you scored 80% or above.
+- **Needs Improvement** -- topics where you scored below 50%.
+- **Recommended Study Topics** -- all topics where you did not score in the strong range.
+
+The adaptive engine targets weak topics first, so your weakest areas are tested more thoroughly. Use
+the results to prioritise which topic pages to revise.
+
+---
+
+export const questions = [
+  {
+    id: 'rm1',
+    topic: 'Research Methods',
+    difficulty: 2,
+    question: 'Which experimental design uses different participants in each condition?',
+    options: ['Repeated measures', 'Independent groups', 'Matched pairs', 'Quasi-experiment'],
+    correctIndex: 1,
+    explanation:
+      'In an independent groups design, participants are allocated to separate groups, each experiencing only one condition. This eliminates order effects but requires a larger sample and risks individual differences confounding results. Repeated measures uses the same participants in all conditions, and matched pairs pairs participants on key variables.',
+  },
+  {
+    id: 'rm2',
+    topic: 'Research Methods',
+    difficulty: 3,
+    question: 'A researcher uses a stratified sample. Which best describes this method?',
+    options: [
+      'Every member of the target population has an equal chance of being selected',
+      'Participants are selected based on accessibility and convenience',
+      'The population is divided into subgroups proportional to their representation, then participants are randomly selected from each',
+      'Participants are recruited through word of mouth from initial volunteer contacts',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Stratified sampling divides the population into relevant subgroups (strata) such as age or gender, then randomly selects a proportional number from each stratum. This preserves the population structure in the sample. Random sampling gives equal chance to all; opportunity sampling uses convenience; snowball sampling relies on referrals.',
+  },
+  {
+    id: 'rm3',
+    topic: 'Research Methods',
+    difficulty: 4,
+    question: 'In a repeated measures design, what is the primary purpose of counterbalancing?',
+    options: [
+      'To increase the sample size and improve statistical power',
+      'To control for order effects by alternating the sequence of conditions across participants',
+      'To ensure participants are matched on key variables before allocation',
+      'To reduce demand characteristics by providing misleading information about the study',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Counterbalancing controls for order effects (practice effects and fatigue effects) by varying the order in which conditions are presented. Half the participants receive condition A then B; the other half receive B then A. This balances out any advantage or disadvantage from order, making it easier to attribute differences between conditions to the independent variable rather than order.',
+  },
+  {
+    id: 'si1',
+    topic: 'Social Influence',
+    difficulty: 2,
+    question:
+      "In Asch's (1951) line judgement experiment, approximately what percentage of participants conformed on at least one trial?",
+    options: ['5%', '25%', '75%', '100%'],
+    correctIndex: 2,
+    explanation:
+      'Asch found that 75% of participants conformed on at least one trial, even though the correct answer was unambiguous. Overall conformity rate was 37% across all critical trials. This demonstrated normative social influence: participants knew the correct answer but conformed to avoid social disapproval. Conformity dropped to around 2.5% when responses were private.',
+  },
+  {
+    id: 'si2',
+    topic: 'Social Influence',
+    difficulty: 3,
+    question: "According to Milgram's Agency Theory, obedience occurs because...",
+    options: [
+      'People are naturally aggressive and enjoy harming others',
+      'People enter an agentic state, shifting responsibility to the authority figure',
+      'The authority figure uses physical threats to coerce compliance',
+      'Participants do not understand the consequences of their actions',
+    ],
+    correctIndex: 1,
+    explanation:
+      "Agency Theory (Milgram, 1973) proposes people operate in either an autonomous state (taking responsibility for their own actions) or an agentic state (acting as an agent of an authority, passing responsibility to them). In Milgram's study, participants entered the agentic state, believing the experimenter was responsible for the learner's welfare. Factors facilitating this include perceived legitimacy of the authority and the institutional setting.",
+  },
+  {
+    id: 'si3',
+    topic: 'Social Influence',
+    difficulty: 5,
+    question:
+      'What is the augmentation principle in the context of social change through minority influence?',
+    options: [
+      'The majority strengthens its position by recruiting more members to oppose the minority',
+      'A minority that takes risks and shows commitment makes the majority take their views more seriously',
+      'Conformity increases as the minority becomes invisible within the majority',
+      'Social change accelerates when the minority adopts majority viewpoints',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The augmentation principle (Nemeth) states that when a minority takes risks or suffers for their cause (e.g., imprisonment, violence), their arguments gain credibility. Extreme actions draw attention and make the moderate demands of the minority seem more reasonable by comparison. This was illustrated by the civil rights movement, where activists facing arrest and brutality made demands for equal rights appear more justified.',
+  },
+  {
+    id: 'mem1',
+    topic: 'Memory',
+    difficulty: 2,
+    question:
+      "According to Atkinson and Shiffrin's multi-store model, information passes through which three memory stores in order?",
+    options: [
+      'Sensory, episodic, semantic',
+      'Sensory, short-term, long-term',
+      'Working, short-term, long-term',
+      'Iconic, echoic, haptic',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The multi-store model (Atkinson and Shiffrin, 1968) proposes that information flows from sensory memory to short-term memory (via attention), then to long-term memory (via rehearsal). Sensory memory holds vast amounts of information very briefly (iconic: 0.5s; echoic: 2s). STM has limited capacity (7+/−2 items, Miller) and duration (18-30s without rehearsal). LTM has potentially unlimited capacity and duration.',
+  },
+  {
+    id: 'mem2',
+    topic: 'Memory',
+    difficulty: 3,
+    question:
+      "According to Baddeley and Hitch's working memory model, which component processes visual and spatial information?",
+    options: [
+      'Central executive',
+      'Phonological loop',
+      'Episodic buffer',
+      'Visuo-spatial sketchpad',
+    ],
+    correctIndex: 3,
+    explanation:
+      'The visuo-spatial sketchpad (Baddeley and Hitch, 1974) stores and manipulates visual and spatial information. It is divided into the visual cache (stores visual form) and the inner scribe (processes spatial arrangement). The central executive allocates attention but has no storage capacity. The phonological loop processes auditory information, and the episodic buffer (added in 2000) integrates information from all components.',
+  },
+  {
+    id: 'mem3',
+    topic: 'Memory',
+    difficulty: 4,
+    question:
+      "Bartlett's (1932) study of reconstructive memory using the 'War of the Ghosts' story demonstrated that...",
+    options: [
+      'Memory is an exact copy of events, like a video recording',
+      'Participants recalled the story more accurately when it matched their cultural background',
+      'Memory is reconstructed based on schemas, leading to systematic distortions that make unfamiliar stories more culturally familiar',
+      'Repeated recall of a story improves its accuracy over time',
+    ],
+    correctIndex: 2,
+    explanation:
+      "Bartlett found that Western participants distorted the Native American story 'War of the Ghosts' to fit their existing schemas. Ghosts and spiritual elements were rationalised or omitted; the narrative became more logical and conventional. This supports reconstructive memory theory: memory is not a passive recording but an active process where schemas fill in gaps and alter details. The story became shorter, more coherent, and more Western in tone with each recall.",
+  },
+  {
+    id: 'att1',
+    topic: 'Attachment',
+    difficulty: 2,
+    question: 'Lorenz (1935) studied imprinting in goslings. What did he find?',
+    options: [
+      'Goslings imprint on the first moving object they see, regardless of species',
+      'Goslings only imprint on their biological mother',
+      'Imprinting only occurs after a critical period of 72 hours',
+      'Goslings imprint equally on moving and stationary objects',
+    ],
+    correctIndex: 0,
+    explanation:
+      'Lorenz (1935) demonstrated that newly hatched goslings would follow the first moving object they saw during a critical period (approximately 13-16 hours). When Lorenz himself was the first moving object, goslings imprinted on him rather than their mother. This occurs in precocial species (born mobile) and is irreversible once established. The critical period concept was later developed by Bowlby into his theory of attachment.',
+  },
+  {
+    id: 'att2',
+    topic: 'Attachment',
+    difficulty: 3,
+    question:
+      "In Ainsworth's Strange Situation, what behaviour characterises an insecure-avoidant (Type A) infant?",
+    options: [
+      'The infant explores happily and is easily comforted by the mother on return',
+      'The infant shows high distress, seeks contact but simultaneously resists it',
+      'The infant does not seek proximity to the caregiver, shows little distress on separation, and avoids contact on return',
+      'The infant becomes disoriented, showing confused and contradictory behaviours',
+    ],
+    correctIndex: 2,
+    explanation:
+      "Insecure-avoidant infants (Type A, about 15% of Ainsworth's sample) show little distress when the mother leaves, ignore her when she returns, and avoid physical contact. They often treat strangers similarly to the caregiver. Ainsworth linked this to caregivers who are rejecting or insensitive to the infant's needs. By contrast, securely attached infants (Type B) are distressed by separation and easily comforted on return.",
+  },
+  {
+    id: 'psy1',
+    topic: 'Psychopathology',
+    difficulty: 2,
+    question:
+      'The two-process model of phobias (Mowrer, 1960) proposes that phobias are acquired and maintained through which two processes?',
+    options: [
+      'Classical conditioning and operant conditioning',
+      'Social learning and cognitive bias',
+      'Operant conditioning and observational learning',
+      'Biological predisposition and environmental triggers',
+    ],
+    correctIndex: 0,
+    explanation:
+      "Mowrer's two-process model (1960) explains phobia acquisition through classical conditioning (e.g., pairing a neutral stimulus like a dog with a frightening event) and maintenance through operant conditioning (avoidance of the feared stimulus is negatively reinforced by anxiety reduction). For example, if bitten by a dog (UCS), a person associates dogs (CS) with fear (UCR/CR), then avoids dogs, which reduces anxiety and reinforces the avoidance behaviour.",
+  },
+  {
+    id: 'psy2',
+    topic: 'Psychopathology',
+    difficulty: 4,
+    question:
+      'The definition of abnormality that states behaviour is abnormal if it deviates from social norms is criticised because...',
+    options: [
+      'It relies too heavily on statistical data and mathematical formulas',
+      'Social norms change over time and between cultures, making the definition subjective and inconsistent',
+      'It cannot be applied to any recognised form of mental disorder',
+      'It focuses exclusively on biological markers rather than observable behaviour',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Deviation from social norms defines abnormality as behaviour that violates unwritten rules of society. Key criticisms: (1) Social norms change over time (e.g., homosexuality was classified as a disorder until 1973); (2) norms differ between cultures (hearing voices is abnormal in Western cultures but valued in some African cultures); (3) some deviant behaviour is not a mental disorder (e.g., political protest). This makes the definition unreliable and ethnocentric.',
+  },
+  {
+    id: 'app1',
+    topic: 'Approaches',
+    difficulty: 2,
+    question: 'According to the behaviourist approach, learning is defined as...',
+    options: [
+      'A relatively permanent change in behaviour due to experience',
+      'An innate biological process determined by genetics',
+      'An unconscious conflict between the id, ego, and superego',
+      'A cognitive process of information processing and schema formation',
+    ],
+    correctIndex: 0,
+    explanation:
+      'The behaviourist approach (Watson, Skinner) defines learning as a relatively permanent change in behaviour resulting from experience. Behaviourists focus only on observable behaviour, rejecting mental processes as unscientific. Key processes include classical conditioning (Pavlov: associating stimuli) and operant conditioning (Skinner: reinforcement and punishment). Watson claimed he could take any infant and shape them into any profession through conditioning alone.',
+  },
+  {
+    id: 'app2',
+    topic: 'Approaches',
+    difficulty: 3,
+    question:
+      "In Bandura's social learning theory, which mediational process determines whether a learned behaviour is performed?",
+    options: ['Attention', 'Retention', 'Motor reproduction', 'Motivation'],
+    correctIndex: 3,
+    explanation:
+      "Bandura proposed four mediational processes that determine whether observed behaviour is imitated: (1) Attention -- noticing the model's behaviour; (2) Retention -- storing a mental representation; (3) Motor reproduction -- having the physical ability to replicate it; (4) Motivation -- deciding whether to perform it, based on expected reinforcement (vicarious, direct, or self-reinforcement). Motivation is the final stage that determines actual performance.",
+  },
+  {
+    id: 'app3',
+    topic: 'Approaches',
+    difficulty: 4,
+    question: 'The cognitive approach to psychology assumes that...',
+    options: [
+      'All behaviour is determined by unconscious conflicts from early childhood',
+      'Behaviour can be explained in terms of internal mental processes such as information processing and schema',
+      'All behaviour is learned through stimulus-response associations',
+      'Behaviour is entirely determined by genetic inheritance and biological predispositions',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The cognitive approach (Piaget, Beck, Ellis) views humans as information processors, using internal mental processes to explain behaviour. Key assumptions: (1) mediational processes exist between stimulus and response; (2) the mind works like a computer (input, processing, output); (3) schema influence how we perceive the world. Unlike behaviourism, cognitive psychology studies internal processes scientifically through controlled experiments and computer modelling.',
+  },
+  {
+    id: 'bio1',
+    topic: 'Biopsychology',
+    difficulty: 3,
+    question: 'The endocrine system communicates through the body using...',
+    options: [
+      'Electrical impulses transmitted rapidly along neurons',
+      'Hormones secreted into the bloodstream that travel to target organs',
+      'Neurotransmitters released across synaptic gaps between neurons',
+      'Reflex arcs processed through the spinal cord',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The endocrine system consists of glands that secrete hormones directly into the bloodstream. Hormones travel throughout the body but only affect target organs with compatible receptors. Communication is slower (seconds to days) but longer-lasting than the nervous system (milliseconds). Key glands include the pituitary (master gland), adrenal (stress hormones like cortisol and adrenaline), and thyroid (metabolism regulation).',
+  },
+  {
+    id: 'bio2',
+    topic: 'Biopsychology',
+    difficulty: 4,
+    question: 'Neuroplasticity refers to...',
+    options: [
+      'The inability of the adult brain to recover from any form of damage',
+      "The brain's ability to change and reorganise itself by forming new neural connections throughout life",
+      'A progressive and inevitable decline in brain function associated with normal ageing',
+      'The localisation of specific cognitive functions to particular brain regions',
+    ],
+    correctIndex: 1,
+    explanation:
+      "Neuroplasticity is the brain's capacity to reorganise by forming new neural pathways and synapses in response to experience, learning, or injury. Evidence includes: Maguire et al. (2000) found London taxi drivers had larger posterior hippocampi (spatial navigation); Draganski et al. (2006) showed jugglers developed increased grey matter after training; and recovery after stroke demonstrates functional recovery as undamaged areas take over functions.",
+  },
+  {
+    id: 'id1',
+    topic: 'Issues and Debates',
+    difficulty: 3,
+    question: 'What is the difference between free will and hard determinism?',
+    options: [
+      'Free will argues behaviour is determined by unconscious forces; hard determinism argues behaviour is chosen consciously',
+      'Free will suggests individuals have conscious control over their actions; hard determinism argues all behaviour is caused by prior events and no real choice exists',
+      'Free will and hard determinism are identical concepts expressed differently',
+      'Free will is a biological perspective; hard determinism is a cognitive perspective',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Hard determinism (Skinner, Freud, biological approach) argues that all behaviour has a cause and that free will is an illusion -- behaviour is determined by genetics, environment, or unconscious processes. Free will (humanistic approach, Rogers, Maslow) argues individuals have genuine choice and conscious control over their actions. Soft determinism offers a compromise: behaviour is mostly determined but people have some degree of free will in certain situations.',
+  },
+  {
+    id: 'id2',
+    topic: 'Issues and Debates',
+    difficulty: 4,
+    question:
+      'What is the difference between idiographic and nomothetic approaches to psychological research?',
+    options: [
+      'The idiographic approach studies individuals in depth to understand unique experiences; the nomothetic approach studies large groups to establish general laws and principles',
+      'The idiographic approach only uses experiments; the nomothetic approach only uses observational methods',
+      'The idiographic approach focuses on biological factors; the nomothetic approach focuses on psychological factors',
+      'The idiographic approach is always qualitative; the nomothetic approach is always quantitative',
+    ],
+    correctIndex: 0,
+    explanation:
+      'The idiographic approach (Freud, Rogers, case studies) focuses on the individual, seeking to understand unique personal experiences and subjective meaning. It produces rich, detailed data but findings cannot be generalised. The nomothetic approach (behaviourist, biological, experiments and large-scale studies) seeks to establish general laws of behaviour that apply to all people. Most approaches favour nomothetic methods, but humanistic psychology emphasises the idiographic approach.',
+  },
+];
+
+export const handleComplete = (results) => {
+  console.log('Diagnostic test completed:', results);
+};
+
+<DiagnosticTest subject="A-Level Psychology" questions={questions} onComplete={handleComplete} />
+
+---
+
+## Topic Coverage
+
+| Topic              | Questions | Revision Guide                                                      |
+| ------------------ | --------- | ------------------------------------------------------------------- |
+| Research Methods   | 3         | [Research Methods](/docs/alevel/psychology/1-research-methods/)     |
+| Social Influence   | 3         | [Social Influence](/docs/alevel/psychology/2-social-influence/)     |
+| Memory             | 3         | [Memory](/docs/alevel/psychology/3-memory/)                         |
+| Attachment         | 2         | [Attachment](/docs/alevel/psychology/4-attachment/)                 |
+| Psychopathology    | 2         | [Psychopathology](/docs/alevel/psychology/5-psychopathology/)       |
+| Approaches         | 3         | [Approaches](/docs/alevel/psychology/6-approaches/)                 |
+| Biopsychology      | 2         | [Biopsychology](/docs/alevel/psychology/7-biopsychology/)           |
+| Issues and Debates | 2         | [Issues and Debates](/docs/alevel/psychology/8-issues-and-debates/) |

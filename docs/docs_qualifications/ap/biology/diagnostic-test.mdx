@@ -1,0 +1,336 @@
+---
+title: 'AP Biology Diagnostic Test'
+slug: diagnostic-test
+description:
+  'AP Biology diagnostic test covering chemistry of life, cell structure, cellular energetics,
+  heredity, and natural selection.'
+tags:
+  - ap
+  - ap-biology
+---
+
+import DiagnosticTest from '@site/src/components/interactive/DiagnosticTest';
+
+## AP Biology Diagnostic Test
+
+This diagnostic test covers the full AP Biology syllabus. There are 20 questions spanning 5 core
+topics. The test uses adaptive difficulty, selecting questions based on your performance to target
+areas of weakness.
+
+**Recommended time:** 30 minutes. The test presents up to 15 questions drawn from the pool,
+adaptively ordered by your answers.
+
+---
+
+## How the Diagnostic Scoring Works
+
+After completing the test, you receive a results breakdown:
+
+- **Topic Breakdown** -- each topic shows your score, colour-coded green (strong, 80%+), amber
+  (moderate, 50-79%), or red (weak, below 50%).
+- **Strengths** -- topics where you scored 80% or above.
+- **Needs Improvement** -- topics where you scored below 50%.
+- **Recommended Study Topics** -- all topics where you did not score in the strong range.
+
+The adaptive engine targets weak topics first, so your weakest areas are tested more thoroughly. Use
+the results to prioritise which topic pages to revise.
+
+---
+
+export const questions = [
+  {
+    id: 'cl1',
+    topic: 'Chemistry of Life',
+    difficulty: 1,
+    question:
+      'Which property of water allows it to act as a solvent for many ionic and polar substances?',
+    options: ['Cohesion', 'Adhesion', 'High specific heat', 'Polarity'],
+    correctIndex: 3,
+    explanation:
+      "Water's polarity (unequal distribution of charge due to its bent molecular shape) allows it to form hydrogen bonds and dissolve ionic and polar substances. The partial negative oxygen attracts positive ions while the partial positive hydrogen attracts negative ions.",
+  },
+  {
+    id: 'cl2',
+    topic: 'Chemistry of Life',
+    difficulty: 2,
+    question: 'Carbon can form four covalent bonds because it has how many valence electrons?',
+    options: ['2', '4', '6', '8'],
+    correctIndex: 1,
+    explanation:
+      'Carbon has 4 valence electrons (electron configuration 1s&sup2; 2s&sup2; 2p&sup2;) and needs 4 more to complete its octet. This allows carbon to form 4 covalent bonds, making it the backbone of organic molecules and enabling the formation of diverse complex structures including chains, branched molecules, and rings.',
+  },
+  {
+    id: 'cl3',
+    topic: 'Chemistry of Life',
+    difficulty: 3,
+    question: 'Which macromolecule is the primary component of cell membranes in organisms?',
+    options: ['Proteins', 'Carbohydrates', 'Nucleic acids', 'Phospholipids'],
+    correctIndex: 3,
+    explanation:
+      "Phospholipids are the primary structural component of cell membranes. They have a hydrophilic phosphate head and hydrophobic fatty acid tails, forming a bilayer in aqueous environments. Proteins are embedded in or attached to this bilayer, but the membrane's fundamental structure is the phospholipid bilayer.",
+  },
+  {
+    id: 'cl4',
+    topic: 'Chemistry of Life',
+    difficulty: 4,
+    question:
+      'A protein is treated with an enzyme that breaks peptide bonds. Which level(s) of protein structure are destroyed?',
+    options: [
+      'Primary only',
+      'Primary and secondary only',
+      'Primary, secondary, and tertiary',
+      'All four levels',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Breaking peptide bonds destroys the primary structure (amino acid sequence). When the primary structure is destroyed, the secondary (alpha helices, beta sheets) and tertiary (overall 3D folding) structures also collapse because they depend on the intact chain. Quaternary structure may or may not be affected depending on whether the subunits are held together solely by peptide bonds or also by non-covalent interactions.',
+  },
+  {
+    id: 'cs1',
+    topic: 'Cell Structure',
+    difficulty: 1,
+    question:
+      'Which structure is present in prokaryotic cells but absent from eukaryotic animal cells?',
+    options: ['Nucleus', 'Ribosomes', 'Cell wall', 'Mitochondria'],
+    correctIndex: 2,
+    explanation:
+      'Prokaryotic cells have a cell wall made of peptidoglycan, which is absent from eukaryotic animal cells (though present in plants and fungi). Prokaryotes lack a membrane-bound nucleus and mitochondria. Both prokaryotes and eukaryotes have ribosomes, though prokaryotic ribosomes are smaller (70S vs 80S).',
+  },
+  {
+    id: 'cs2',
+    topic: 'Cell Structure',
+    difficulty: 2,
+    question: 'Which organelle is the primary site of lipid synthesis in eukaryotic cells?',
+    options: [
+      'Golgi apparatus',
+      'Smooth endoplasmic reticulum',
+      'Rough endoplasmic reticulum',
+      'Mitochondria',
+    ],
+    correctIndex: 1,
+    explanation:
+      'The smooth endoplasmic reticulum (SER) is the primary site of lipid synthesis, including phospholipids and steroids. It also detoxifies drugs and stores calcium ions. The rough ER is studded with ribosomes and is involved in protein synthesis. The Golgi apparatus modifies and packages molecules.',
+  },
+  {
+    id: 'cs3',
+    topic: 'Cell Structure',
+    difficulty: 3,
+    question: 'A cell has a high concentration of lysosomes. This cell most likely functions in...',
+    options: [
+      'Protein synthesis',
+      'Energy production',
+      'Breaking down cellular waste and debris',
+      'Cell division',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Lysosomes contain hydrolytic enzymes that digest macromolecules, cellular waste, and engulfed pathogens. A high concentration of lysosomes indicates the cell is involved in phagocytosis or autophagy, such as macrophages or other cells that break down materials. This is characteristic of cells in the immune system or those undergoing programmed cell death.',
+  },
+  {
+    id: 'cs4',
+    topic: 'Cell Structure',
+    difficulty: 4,
+    question:
+      'A toxin that destroys the microtubules of a cell would most directly affect which process?',
+    options: [
+      'DNA replication',
+      'Cellular respiration',
+      'Chromosome movement during mitosis',
+      'Transcription',
+    ],
+    correctIndex: 2,
+    explanation:
+      'Microtubules form the mitotic spindle, which is responsible for separating chromosomes during mitosis and meiosis. Destroying microtubules would prevent chromosome segregation, causing the cell cycle to arrest at metaphase. Microtubules are also involved in intracellular transport, cilia/flagella movement, and maintaining cell shape, but mitosis would be the most immediately affected.',
+  },
+  {
+    id: 'ce1',
+    topic: 'Cellular Energetics',
+    difficulty: 1,
+    question:
+      'ATP is often described as the "energy currency" of the cell. Which part of the ATP molecule stores the most energy?',
+    options: [
+      'The adenine base',
+      'The ribose sugar',
+      'The phosphate group bonds',
+      'The carbon backbone',
+    ],
+    correctIndex: 2,
+    explanation:
+      'The energy of ATP is stored in the high-energy phosphate bonds (especially the bond between the second and third phosphates). Hydrolysing ATP to ADP + P_i releases about 7.3 kcal/mol under standard conditions. The adenine and ribose do not store significant usable energy.',
+  },
+  {
+    id: 'ce2',
+    topic: 'Cellular Energetics',
+    difficulty: 2,
+    question: 'During which stage of cellular respiration is CO\u2082 produced?',
+    options: [
+      'Glycolysis only',
+      'The Krebs cycle (citric acid cycle)',
+      'The electron transport chain',
+      'Oxidative phosphorylation',
+    ],
+    correctIndex: 1,
+    explanation:
+      'CO\u2082 is produced during the Krebs cycle (also called the citric acid cycle) when pyruvate is fully oxidised. In the transition step, pyruvate is converted to acetyl-CoA, releasing one CO\u2082 per pyruvate. During the Krebs cycle itself, two more CO\u2082 molecules are released per acetyl-CoA. Glycolysis produces no CO\u2082; the electron transport chain produces water, not CO\u2082.',
+  },
+  {
+    id: 'ce3',
+    topic: 'Cellular Energetics',
+    difficulty: 3,
+    question: 'In the light-dependent reactions of photosynthesis, what is the role of water?',
+    options: [
+      'It provides electrons to replace those lost by photosystem II',
+      'It is the final electron acceptor in the electron transport chain',
+      'It combines with CO\u2082 to form glucose',
+      'It provides the energy to excite electrons in photosystem I',
+    ],
+    correctIndex: 0,
+    explanation:
+      'Water is split during photolysis at photosystem II, releasing electrons, protons (H+), and O\u2082. The electrons replace those lost by the excited chlorophyll in PSII. This is why water is essential -- without it, the electron transport chain cannot continue. The final electron acceptor is NADP+ (forming NADPH), and CO\u2082 fixation occurs in the Calvin cycle, not the light reactions.',
+  },
+  {
+    id: 'ce4',
+    topic: 'Cellular Energetics',
+    difficulty: 5,
+    question:
+      'A poison blocks the proton gradient across the inner mitochondrial membrane. Which process is most directly affected?',
+    options: [
+      'Glycolysis',
+      'Substrate-level phosphorylation',
+      'ATP synthesis by ATP synthase',
+      'Fermentation',
+    ],
+    correctIndex: 2,
+    explanation:
+      'ATP synthase uses the proton gradient (proton-motive force) across the inner mitochondrial membrane to drive the synthesis of ATP from ADP and P_i. Blocking this gradient stops chemiosmosis and oxidative phosphorylation. Glycolysis and fermentation occur in the cytoplasm and do not depend on the mitochondrial proton gradient.',
+  },
+  {
+    id: 'he1',
+    topic: 'Heredity',
+    difficulty: 1,
+    question:
+      'In a cross between two heterozygous individuals (Aa &times; Aa), what is the expected phenotypic ratio in the offspring?',
+    options: ['1:1', '3:1', '1:2:1', '9:3:3:1'],
+    correctIndex: 1,
+    explanation:
+      'A monohybrid cross between two heterozygotes (Aa &times; Aa) produces genotypes AA: Aa: aa in a 1:2:1 ratio. Assuming complete dominance, the phenotypic ratio is 3:1 (3 dominant phenotype : 1 recessive phenotype). The 1:2:1 is the genotypic ratio, not the phenotypic ratio.',
+  },
+  {
+    id: 'he2',
+    topic: 'Heredity',
+    difficulty: 3,
+    question:
+      'A dihybrid cross between two individuals heterozygous for two independently assorting genes (AaBb &times; AaBb) produces what phenotypic ratio?',
+    options: ['1:1', '3:1', '1:2:1', '9:3:3:1'],
+    correctIndex: 3,
+    explanation:
+      "Mendel's law of independent assortment means that two genes on different chromosomes or far apart on the same chromosome sort independently. A dihybrid cross (AaBb &times; AaBb) yields a 9:3:3:1 phenotypic ratio: 9 showing both dominant traits, 3 showing dominant A and recessive b, 3 showing recessive a and dominant B, and 1 showing both recessive traits.",
+  },
+  {
+    id: 'he3',
+    topic: 'Heredity',
+    difficulty: 4,
+    question:
+      'During meiosis, crossing over between homologous chromosomes occurs during which stage?',
+    options: ['Prophase I', 'Metaphase I', 'Prophase II', 'Telophase I'],
+    correctIndex: 0,
+    explanation:
+      'Crossing over (exchange of genetic material between non-sister chromatids of homologous chromosomes) occurs during prophase I of meiosis. This process creates new combinations of alleles on individual chromosomes, contributing to genetic variation. It is one of the three key events that create genetic diversity in meiosis (along with independent assortment and random fertilisation).',
+  },
+  {
+    id: 'he4',
+    topic: 'Heredity',
+    difficulty: 4,
+    question:
+      'A chi-square test yields a value of 7.82 with 3 degrees of freedom. At a 0.05 significance level, the critical value is 7.815. What conclusion is drawn?',
+    options: [
+      'Fail to reject the null hypothesis; the observed data fits the expected ratio',
+      'Reject the null hypothesis; the observed data deviates significantly from the expected ratio',
+      'The data is inconclusive; more trials are needed',
+      'The chi-square value proves the alternative hypothesis is true',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Since the chi-square value (7.82) exceeds the critical value (7.815), we reject the null hypothesis. This means the observed data deviates significantly from the expected ratio at the 0.05 significance level. There is less than 5% probability that this deviation occurred by chance alone, suggesting the observed ratios do not fit the predicted Mendelian ratios.',
+  },
+  {
+    id: 'ns1',
+    topic: 'Natural Selection',
+    difficulty: 1,
+    question: "Which of the following is NOT one of Darwin's conditions for natural selection?",
+    options: [
+      'Variation exists within a population',
+      'Traits are heritable',
+      'Individuals adapt during their lifetime and pass on acquired traits',
+      'Differential survival and reproduction',
+    ],
+    correctIndex: 2,
+    explanation:
+      "Darwin's natural selection requires: (1) variation in traits, (2) heritability of those traits, (3) differential survival/reproduction based on those traits, and (4) overproduction of offspring. Option C describes Lamarckian inheritance (acquired characteristics), which is not part of Darwin's theory of natural selection.",
+  },
+  {
+    id: 'ns2',
+    topic: 'Natural Selection',
+    difficulty: 3,
+    question:
+      'Two populations of the same species are separated by a mountain range and no longer interbreed. Over time, they develop distinct traits. This is an example of...',
+    options: [
+      'Convergent evolution',
+      'Allopatric speciation',
+      'Sympatric speciation',
+      'Genetic drift only',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Allopatric speciation occurs when populations are geographically separated (by a physical barrier like a mountain range, river, or ocean), preventing gene flow. Over time, the isolated populations accumulate different mutations and experience different selective pressures, eventually becoming distinct species. Sympatric speciation occurs without geographic separation.',
+  },
+  {
+    id: 'ns3',
+    topic: 'Natural Selection',
+    difficulty: 3,
+    question: 'Which of the following provides the strongest evidence for common ancestry?',
+    options: [
+      'Analogous structures like bird wings and bat wings',
+      'Homologous structures like the forelimbs of mammals',
+      'Vestigial structures like the human appendix',
+      'Both B and C',
+    ],
+    correctIndex: 3,
+    explanation:
+      'Both homologous structures (shared anatomical features derived from a common ancestor, like the forelimbs of whales, bats, and humans) and vestigial structures (remnants of features that served a function in ancestors but are reduced in modern species, like the appendix or pelvic bones in whales) provide strong evidence for common ancestry. Analogous structures result from convergent evolution and do not indicate common ancestry.',
+  },
+  {
+    id: 'ns4',
+    topic: 'Natural Selection',
+    difficulty: 5,
+    question:
+      'The Hardy-Weinberg equation p&sup2; + 2pq + q&sup2; = 1 assumes all of the following EXCEPT:',
+    options: [
+      'No mutations',
+      'Random mating',
+      'Large population size',
+      'Directional selection is occurring',
+    ],
+    correctIndex: 3,
+    explanation:
+      'The Hardy-Weinberg equilibrium assumes: (1) no mutations, (2) random mating, (3) no natural selection, (4) extremely large population size (no genetic drift), and (5) no gene flow (migration). Directional selection violates the "no natural selection" assumption and would cause allele frequencies to change over time, breaking the equilibrium.',
+  },
+];
+
+export const handleComplete = (results) => {
+  console.log('Diagnostic test completed:', results);
+};
+
+<DiagnosticTest subject="AP Biology" questions={questions} onComplete={handleComplete} />
+
+---
+
+## Topic Coverage
+
+| Topic               | Questions | Revision Guide                                                                                |
+| ------------------- | --------- | --------------------------------------------------------------------------------------------- |
+| Chemistry of Life   | 4         | [Chemistry of Life](/docs/qualifications/ap/biology/1-chemistry-of-life/)                     |
+| Cell Structure      | 4         | [Cell Structure and Function](/docs/qualifications/ap/biology/2-cell-structure-and-function/) |
+| Cellular Energetics | 4         | [Cellular Energetics](/docs/qualifications/ap/biology/3-cellular-energetics/)                 |
+| Heredity            | 4         | [Heredity](/docs/qualifications/ap/biology/4-heredity/)                                       |
+| Natural Selection   | 4         | [Natural Selection](/docs/qualifications/ap/biology/5-natural-selection/)                     |
