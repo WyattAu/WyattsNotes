@@ -1,0 +1,124 @@
+---
+title: Number Theory Practice (Interactive)
+tags:
+  - mathematics
+  - university
+slug: university-mathematics/practice-number-theory
+description:
+  'Interactive university number theory practice with auto-graded questions. Covers divisibility,
+  primes, modular arithmetic, quadratic reciprocity, and Diophantine equations.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Mathematics — Number Theory Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Divisibility and Primes
+
+<PracticeProblem
+  question="Use the Euclidean algorithm to find $\\gcd(481, 221)$. What is the result?"
+  options={['$13$', '$17$', '$7$', '$11$']}
+  correctAnswer={0}
+  explanation="$481 = 2 \\cdot 221 + 39$, so $\\gcd(481,221) = \\gcd(221,39)$. Then $221 = 5 \\cdot 39 + 26$, so $\\gcd(221,39) = \\gcd(39,26)$. Then $39 = 1 \\cdot 26 + 13$, so $\\gcd(39,26) = \\gcd(26,13)$. Finally $26 = 2 \\cdot 13 + 0$, so $\\gcd(481, 221) = 13$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="If $\\gcd(a, b) = 1$, which of the following must be true?"
+  options={[
+    '$\\gcd(a+b, ab) = 1$',
+    '$\\gcd(a^2, b^2) = 1$',
+    '$a$ and $b$ are both odd',
+    '$a + b$ is prime',
+  ]}
+  correctAnswer={0}
+  explanation="If $p \\mid (a+b)$ and $p \\mid ab$, then $p \\mid a$ or $p \\mid b$ by Euclid's lemma (since $p$ prime and $\\gcd(a,b)=1$ implies $p$ divides exactly one of $a,b$). If $p \\mid a$ and $p \\mid (a+b)$, then $p \\mid b$, contradicting $\\gcd(a,b)=1$. Similarly if $p \\mid b$. Therefore no prime divides both $a+b$ and $ab$, so $\\gcd(a+b, ab) = 1$. Option B is also true ($\\gcd(a^2,b^2) = \\gcd(a,b)^2 = 1$), but option A is the more interesting and commonly tested result."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which of the following is a complete set of residues modulo 5 that forms a reduced residue system?"
+  options={[
+    '$\\{1, 2, 3, 4\\}$',
+    '$\\{0, 1, 2, 3, 4\\}$',
+    '$\\{1, 3, 5, 7\\}$',
+    '$\\{2, 4, 6, 8\\}$',
+  ]}
+  correctAnswer={0}
+  explanation="A reduced residue system modulo $m$ consists of $\\phi(m)$ integers that are coprime to $m$ and pairwise incongruent modulo $m$. For $m = 5$, $\\phi(5) = 4$, and the reduced residue system is $\\{1, 2, 3, 4\\}$ (all integers from 1 to $m-1$ coprime to 5). Option B is a complete residue system but not reduced. Option C has 4 elements but $5 \\equiv 0 \\pmod{5}$. Option D includes 0 and 4 but $4 \\cdot 2 = 8 \\equiv 3$, not forming a valid reduced system."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Express $\\gcd(35, 21)$ as a linear combination of 35 and 21 using Bezout's identity."
+  options={[
+    '$(-1) \\cdot 35 + 2 \\cdot 21$',
+    '$3 \\cdot 35 + (-5) \\cdot 21$',
+    '$1 \\cdot 35 + (-2) \\cdot 21$',
+    '$(-2) \\cdot 35 + 3 \\cdot 21$',
+  ]}
+  correctAnswer={0}
+  explanation="The Euclidean algorithm gives $35 = 1 \\cdot 21 + 14$, then $21 = 1 \\cdot 14 + 7$, then $14 = 2 \\cdot 7 + 0$, so $\\gcd(35,21) = 7$. Back-substituting: $7 = 21 - 14 = 21 - (35 - 21) = 2 \\cdot 21 - 1 \\cdot 35 = 2 \\cdot 21 + (-1) \\cdot 35$. Verify: $2 \\cdot 21 - 35 = 42 - 35 = 7$."
+  difficulty="medium"
+/>
+
+---
+
+### Modular Arithmetic and Quadratic Reciprocity
+
+<PracticeProblem
+  question="Compute $2^{100} \\pmod{7}$."
+  options={['$2$', '$4$', '$1$', '$3$']}
+  correctAnswer={0}
+  explanation="By Fermat's little theorem, $2^6 \\equiv 1 \\pmod{7}$ (since $7$ is prime and $\\gcd(2,7)=1$). We have $100 = 16 \\cdot 6 + 4$, so $2^{100} = 2^{96} \\cdot 2^4 \\equiv 1^{16} \\cdot 16 \\equiv 16 \\equiv 2 \\pmod{7}$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Solve the system of congruences: $x \\equiv 2 \\pmod{3}$, $x \\equiv 3 \\pmod{5}$, $x \\equiv 2 \\pmod{7}$. What is $x \\pmod{105}$?"
+  options={['$23$', '$68$', '$53$', '$38$']}
+  correctAnswer={0}
+  explanation="By the Chinese Remainder Theorem, since $3, 5, 7$ are pairwise coprime, there is a unique solution modulo $105$. Check $x = 23$: $23 \\equiv 2 \\pmod{3}$ ($23 = 7 \\cdot 3 + 2$), $23 \\equiv 3 \\pmod{5}$ ($23 = 4 \\cdot 5 + 3$), $23 \\equiv 2 \\pmod{7}$ ($23 = 3 \\cdot 7 + 2$). All three congruences are satisfied, so $x \\equiv 23 \\pmod{105}$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Compute the Legendre symbol $\\left(\\dfrac{7}{11}\\right)$."
+  options={['$-1$', '$1$', '$0$', '$7$']}
+  correctAnswer={0}
+  explanation="By quadratic reciprocity: $\\left(\\frac{7}{11}\\right) \\left(\\frac{11}{7}\\right) = (-1)^{\\frac{6}{2} \\cdot \\frac{10}{2}} = (-1)^{15} = -1$. So $\\left(\\frac{7}{11}\\right) = -\\left(\\frac{11}{7}\\right) = -\\left(\\frac{4}{7}\\right) = -\\left(\\frac{2^2}{7}\\right)$. Since $\\left(\\frac{a^2}{p}\\right) = 1$ for $a \\not\\equiv 0 \\pmod{p}$, we get $\\left(\\frac{7}{11}\\right) = -1$. This means 7 is not a quadratic residue modulo 11."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is $\\phi(360)$, where $\\phi$ is Euler's totient function?"
+  options={['$96$', '$120$', '$72$', '$144$']}
+  correctAnswer={0}
+  explanation="Factor: $360 = 2^3 \\cdot 3^2 \\cdot 5$. Using the formula $\\phi(n) = n \\prod_{p \\mid n}(1 - 1/p)$: $\\phi(360) = 360 \\cdot \\frac{1}{2} \\cdot \\frac{2}{3} \\cdot \\frac{4}{5} = 360 \\cdot \\frac{8}{30} = 360 \\cdot \\frac{4}{15} = 96$. Alternatively: $\\phi(360) = 360(1 - 1/2)(1-1/3)(1-1/5) = 360 \\cdot 1/2 \\cdot 2/3 \\cdot 4/5 = 96$."
+  difficulty="medium"
+/>
+
+---
+
+### Diophantine Equations and Advanced Topics
+
+<PracticeProblem
+  question="Find the smallest positive solution to Pell's equation $x^2 - 2y^2 = 1$."
+  options={['$x = 3, y = 2$', '$x = 1, y = 0$', '$x = 17, y = 12$', '$x = 7, y = 5$']}
+  correctAnswer={0}
+  explanation="We seek the smallest positive integer solution with $y > 0$. Testing: $y=1$: $x^2 = 3$ (no integer $x$). $y=2$: $x^2 = 2 \\cdot 4 + 1 = 9$, so $x = 3$. Thus $(3, 2)$ is the fundamental solution. The trivial solution $(1, 0)$ gives $y=0$ which is not positive. All other positive solutions are generated by $(x + y\\sqrt{2}) = (3 + 2\\sqrt{2})^n$."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Find the number of distinct solutions $(x, y)$ with $0 \\leq x, y < 11$ satisfying $x^2 \\equiv y^2 \\pmod{11}$."
+  options={['$21$', '$11$', '$121$', '$33$']}
+  correctAnswer={0}
+  explanation="$x^2 \\equiv y^2 \\pmod{11}$ means $11 \\mid (x-y)(x+y)$. By Wilson's theorem, since 11 is prime, this means $x \\equiv y \\pmod{11}$ or $x \\equiv -y \\pmod{11}$. The solutions $x \\equiv y$ give 11 pairs $(x,x)$ for $x = 0, 1, \\ldots, 10$. The solutions $x \\equiv -y$ give pairs $(x, 11-x)$ for $x \\neq 0$ (since $x=0, y=0$ is already counted), giving 10 more. Total: $11 + 10 = 21$."
+  difficulty="hard"
+/>

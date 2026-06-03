@@ -1,0 +1,140 @@
+---
+title: Theory of Computation Practice (Interactive)
+tags:
+  - computing
+  - university
+slug: university-computing/practice-theory-of-computation
+description:
+  'Interactive university theory of computation practice with auto-graded questions. Covers automata
+  theory, regular languages, context-free grammars, Turing machines, and complexity classes.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Computing — Theory of Computation Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Automata and Regular Languages
+
+<PracticeProblem
+  question="A DFA M = (Q, Sigma, delta, q0, F) accepts a string w if and only if:"
+  options={[
+    'delta*(q0, w) is an element of F (the computation ends in an accepting state)',
+    'The computation visits every state in Q at least once',
+    'The length of w equals the number of states |Q|',
+    'Every transition in delta is used during the computation',
+  ]}
+  correctAnswer={0}
+  explanation="Formally, delta* is the extended transition function that maps (state, string) to the resulting state after processing the entire string. The DFA accepts w precisely when starting from q0 and following w symbol by symbol leads to a state in the set F of accepting states. No condition on visiting all states or matching string length to state count is required. The definition is purely about the final state reached."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="An NFA has states {0,1}, start state 0, accept state {1}, alphabet {a,b}, and transitions: delta(0,a)={0,1}, delta(0,b)={0}, delta(1,a)={1}, delta(1,b)={1}. Using subset construction, what is the start state of the equivalent DFA?"
+  options={['{0}', '{0,1}', '{1}', 'The empty set {}']}
+  correctAnswer={0}
+  explanation="The DFA start state is the epsilon-closure of the NFA start state. Since there are no epsilon-transitions, the epsilon-closure of {0} is just {0}. From {0}: on input a, delta_NFA({0},a) = {0,1} (union of delta(0,a) for all states in the set). On input b, delta_NFA({0},b) = {0}. The full DFA has two states: {0} (non-accepting) and {0,1} (accepting, since it contains NFA accept state 1)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="To prove that L = {a^n b^n : n >= 0} is not regular using the pumping lemma, for any pumping length p, which string s should you choose?"
+  options={['a^p b^p', 'a^(p+1) b^p', 'a^p b^(p+1)', '(ab)^p']}
+  correctAnswer={0}
+  explanation="Choose s = a^p b^p with |s| = 2p >= p. By the pumping lemma, s = xyz with |xy| <= p and |y| > 0. Since the first p symbols are all a's, y consists entirely of a's: y = a^k for some k > 0. Pumping down (i=0) gives xy^0z = a^(p-k) b^p, which has fewer a's than b's and is not in L. Alternatively, pumping up gives a^(p+k) b^p, also not in L. This contradicts the pumping lemma, proving L is not regular. The key insight is choosing a string where |xy| <= p forces y to lie entirely within the a's."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Minimize the following DFA. States: A (start), B, C (accept), D (accept). Alphabet {0,1}. Transitions: delta(A,0)=B, delta(A,1)=B; delta(B,0)=A, delta(B,1)=C; delta(C,0)=D, delta(C,1)=A; delta(D,0)=D, delta(D,1)=A. How many states does the minimized DFA have?"
+  options={[
+    '3: {A}, {B}, and {C,D}',
+    '2: {A,B} and {C,D}',
+    '4: no states can be merged',
+    '1: all states are equivalent',
+  ]}
+  correctAnswer={0}
+  explanation="Apply the table-filling (Myhill-Nerode) algorithm. Initially distinguish accepting from non-accepting states, marking pairs (A,C), (A,D), (B,C), (B,D). Check unmarked pair (A,B): on input 1, A->B and B->C. Since (B,C) is marked (distinguishable), (A,B) is distinguishable. Check (C,D): on 0, both go to D; on 1, both go to A. No distinction found, so C and D are equivalent. The minimized DFA merges C and D into a single state, yielding 3 states: {A}, {B}, {C,D}."
+  difficulty="hard"
+/>
+
+### Context-Free Grammars and Turing Machines
+
+<PracticeProblem
+  question="A context-free grammar G is ambiguous if and only if:"
+  options={[
+    'There exists a string in L(G) that has two or more distinct leftmost derivations (parse trees)',
+    'L(G) is an infinite language',
+    'G contains a production with more than 2 symbols on the right-hand side',
+    'G contains an epsilon production S -> epsilon',
+  ]}
+  correctAnswer={0}
+  explanation="Ambiguity means some string in the language can be derived in multiple ways, producing different parse trees. This matters because parse trees determine meaning -- e.g., in expression grammars, `a + b * c` should have a unique parse enforcing operator precedence. An inherently ambiguous language has no unambiguous CFG at all (e.g., {a^i b^j c^k : i=j or j=k, i,j,k > 0}). Note: ambiguity is a property of the grammar, but inherent ambiguity is a property of the language."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which statement about Chomsky Normal Form (CNF) for context-free grammars is correct?"
+  options={[
+    'Every production is A -> BC or A -> a; the start symbol may also have S -> epsilon',
+    'Every production must have exactly 2 symbols on the right-hand side',
+    'Epsilon productions are completely eliminated in all grammars converted to CNF',
+    'Only terminals can appear on the right-hand side of productions',
+  ]}
+  correctAnswer={0}
+  explanation="CNF requires all productions to be of the form A -> BC (two non-terminals) or A -> a (single terminal). The exception is that if the start symbol S can derive the empty string, then S -> epsilon is also allowed, provided S does not appear on the right side of any production. Epsilon productions for other variables are eliminated during conversion. The conversion process: (1) eliminate epsilon and unit productions, (2) eliminate useless symbols, (3) break long right-hand sides into chains of binary productions, (4) replace terminals in mixed productions with new variables."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="To accept L = {a^n b^n : n >= 0}, a Turing machine can use which core strategy?"
+  options={['Replace the leftmost a with X, move right to find the rightmost b, replace with Y, return left, and repeat', 'Count the a's, store the count in memory, then count the b's and compare', 'Convert the input to unary representation and compare lengths directly', 'Copy the a's to a second tape, then verify the second tape matches the b's']}
+  correctAnswer={0}
+  explanation="The standard single-tape TM works as follows: (1) Scan left to right to find the leftmost a, replace it with X, (2) continue right to find the rightmost b, replace it with Y, (3) move left back to the first X, (4) repeat. If the counts match, after processing all a's and b's the tape contains only X's followed by Y's, and the TM accepts. If the counts differ, the TM will find an a when looking for b (or vice versa) and rejects. This demonstrates how a TM uses its unbounded tape and head movement to match patterns that finite automata cannot handle."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which of the following problems is provably UNDECIDABLE?"
+  options={[
+    'Given a Turing machine M and input w, does M halt on w? (the Halting Problem)',
+    'Given a CFG G, is L(G) = the empty set?',
+    'Given a DFA M, is L(M) = Sigma* (the universal language)?',
+    'Given a regular expression R, is L(R) finite?',
+  ]}
+  correctAnswer={0}
+  explanation="The Halting Problem (does M halt on w?) was proven undecidable by Turing in 1936 via diagonalization. If a halting decider H existed, we could construct a machine D that on input M runs H(M, M) and does the opposite -- leading to a contradiction when D runs on its own description. The other three problems are all decidable: emptiness of CFG (CYK algorithm on productions), universality of DFA (check complement), and finiteness of regular languages (minimize DFA, check for cycles). Undecidability separates computability theory from the decidable subclasses."
+  difficulty="hard"
+/>
+
+### Complexity Classes
+
+<PracticeProblem
+  question="Which of the following problems is known to be in the complexity class P (solvable in polynomial time)?"
+  options={[
+    'Sorting a list of n integers into ascending order',
+    'Boolean satisfiability (SAT)',
+    'The Traveling Salesman Problem (finding the minimum-cost tour)',
+    'Graph 3-coloring (determining if a graph is 3-colorable)',
+  ]}
+  correctAnswer={0}
+  explanation="Sorting can be done in O(n log n) by merge sort or quicksort (average case), which is polynomial in the input size. SAT, TSP (optimization), and 3-coloring are all NP-complete problems. While SAT and 3-coloring are NP-complete, the TSP optimization problem is actually even harder (NP-hard, not known to be in NP). The class P contains all problems solvable by a deterministic Turing machine in time O(n^k) for some constant k. Sorting fits this with k=2 (since n log n < n^2 for sufficiently large n)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which statement about NP-completeness is correct?"
+  options={[
+    'If problem X is NP-complete and P is not equal to NP, then no polynomial-time algorithm exists for X',
+    'All problems in NP are automatically NP-complete',
+    'Every NP-complete problem has been proven to require exponential time',
+    'A problem is NP-complete if and only if it cannot be solved in polynomial time',
+  ]}
+  correctAnswer={0}
+  explanation="NP-completeness means: (1) X is in NP (solutions can be verified in polynomial time), and (2) every problem in NP is polynomial-time reducible to X. If P != NP, then no NP-complete problem has a polynomial-time algorithm. However, if P = NP, then all NP-complete problems would have polynomial-time solutions. This is conditional on the P vs NP question remaining unresolved. Not all NP problems are NP-complete (e.g., decision versions of problems in P are in NP but not NP-complete unless P = NP)."
+  difficulty="medium"
+/>

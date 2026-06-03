@@ -1,0 +1,156 @@
+---
+title: Particle Physics and Cosmology Practice (Interactive)
+tags:
+  - physics
+  - university
+slug: university-physics/practice-particle-physics-cosmology
+description:
+  'Interactive university particle physics and cosmology practice with auto-graded questions. Covers
+  the Standard Model, conservation laws, particle interactions, the Big Bang, and dark
+  matter/energy.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Physics — Particle Physics and Cosmology Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### The Standard Model and Symmetries
+
+<PracticeProblem
+  question="What is the electric charge of a bottom quark (b), and what is the weak isospin T_3 of its left-handed component in the Standard Model?"
+  options={[
+    'Q = -1/3 e; T_3 = -1/2',
+    'Q = -1/3 e; T_3 = +1/2',
+    'Q = +2/3 e; T_3 = -1/2',
+    'Q = -1/3 e; T_3 = 0',
+  ]}
+  correctAnswer={0}
+  explanation="The bottom quark is a down-type quark with charge Q = -1/3 e. Left-handed quarks form weak isospin doublets: (u, d')_L, (c, s')_L, (t, b')_L, where primes indicate CKM mixing. The upper component has T_3 = +1/2 and the lower component has T_3 = -1/2. So the left-handed bottom quark has T_3 = -1/2. The Gell-Mann--Nishijima relation Q = T_3 + Y/2 is satisfied with Y = -1/3."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The Z boson has a mass of 91.2 GeV/c^2. Using the relation m_Z = m_W/cos(theta_W) and the Weinberg angle theta_W approx 28.7 degrees, what is the predicted W boson mass?"
+  options={[
+    'm_W approx 80.4 GeV/c^2',
+    'm_W approx 91.2 GeV/c^2',
+    'm_W approx 65.2 GeV/c^2',
+    'm_W approx 105 GeV/c^2',
+  ]}
+  correctAnswer={0}
+  explanation="The electroweak unification relates the masses: m_W = m_Z·cos(theta_W). With theta_W = 28.7 degrees: cos(28.7) = 0.876. So m_W = 91.2 x 0.876 = 79.9 GeV/c^2 (approx 80.4 GeV/c^2 measured). This relation holds at tree level in the Standard Model; radiative corrections shift it slightly. The Weinberg angle parametrizes the mixing between the W^3 and B gauge bosons to produce the photon and Z boson."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The neutral kaon system K_0 and anti-K_0 violates CP symmetry. What is the approximate mass difference between the short-lived K_S and long-lived K_L states, and what does this imply?"
+  options={[
+    'Delta m = m_L - m_S approx 3.5 x 10^-12 MeV, implying CP violation in weak interactions',
+    'Delta m = m_L - m_S approx 0 (they are degenerate), implying CP conservation',
+    'Delta m = m_L - m_S approx 500 MeV, implying strong CP violation',
+    'Delta m = m_L - m_S approx 100 MeV, implying CPT violation',
+  ]}
+  correctAnswer={0}
+  explanation="The mass difference Delta m = m_L - m_S approx 3.5 x 10^-12 MeV = 3.5 x 10^-6 eV. This tiny mass splitting arises from K_0--anti-K_0 mixing via box diagrams involving W bosons. K_S decays quickly (tau approx 0.9 x 10^-10 s, CP-even, to 2 pions) while K_L decays slowly (tau approx 5.1 x 10^-8 s, mostly CP-odd, to 3 pions). The observation that K_L occasionally decays to 2 pions (at a rate of about 0.2%) was the first evidence of CP violation (Cronin and Fitch, 1964). CPT symmetry requires equal masses for particle and antiparticle, which remains conserved."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="In the Friedmann equation for a flat universe, H^2 = (8*pi*G/3)*rho, what is the critical density rho_c when H_0 = 70 km/s/Mpc? (G = 6.674 x 10^-11 m^3/(kg·s^2), 1 Mpc = 3.086 x 10^22 m)"
+  options={[
+    'rho_c approx 9.2 x 10^-27 kg/m^3',
+    'rho_c approx 5.0 x 10^-27 kg/m^3',
+    'rho_c approx 1.8 x 10^-26 kg/m^3',
+    'rho_c approx 2.3 x 10^-27 kg/m^3',
+  ]}
+  correctAnswer={0}
+  explanation="Converting H_0: H_0 = 70 km/s/Mpc = 70 x 10^3/(3.086 x 10^22) = 2.27 x 10^-18 s^-1. Critical density: rho_c = 3*H_0^2/(8*pi*G) = 3 x (2.27 x 10^-18)^2/(8 x 3.14159 x 6.674 x 10^-11) = 3 x 5.15 x 10^-36/(1.676 x 10^-9) = 1.546 x 10^-35/1.676 x 10^-9 = 9.22 x 10^-27 kg/m^3. This is equivalent to about 5.5 protons per cubic meter. The observed density is close to rho_c, consistent with a spatially flat universe. Of this, about 5% is baryonic matter, 27% dark matter, and 68% dark energy."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In a scattering experiment, 10^12 protons per second strike a target of thickness t = 1 mm and number density n = 6.0 x 10^28 m^-3. The detector registers 500 events per second for a total cross-section sigma. What is sigma?"
+  options={[
+    'sigma approx 8.3 x 10^-36 m^2 = 83 nb',
+    'sigma approx 5.0 x 10^-30 m^2 = 5.0 microbarn',
+    'sigma approx 1.7 x 10^-26 m^2 = 17 barn',
+    'sigma approx 3.0 x 10^-31 m^2 = 0.3 microbarn',
+  ]}
+  correctAnswer={0}
+  explanation="Event rate: R = N_p * n * t * sigma, where N_p = 10^12 s^-1 is the beam flux. Rearranging: sigma = R/(N_p * n * t) = 500/(10^12 x 6.0 x 10^28 x 10^-3) = 500/(6.0 x 10^37) = 8.33 x 10^-36 m^2. Converting: 8.33 x 10^-36 m^2 / 10^-28 = 8.33 x 10^-8 barn = 83.3 nb (nanobarns). One barn = 10^-28 m^2. This is a typical cross-section for electroweak processes at GeV energies. The cross-section sigma encodes the quantum mechanical probability of the scattering process."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A neutral pion (pi^0, mass 135.0 MeV/c^2) decays to two photons: pi^0 -> gamma + gamma. What is the minimum energy of each photon in the pion rest frame, and what symmetry consideration allows this electromagnetic decay despite the pi^0 being an isospin triplet member?"
+  options={[
+    'Each photon has energy 67.5 MeV; C-parity conservation permits the decay since C(pi^0) = +1 = (+1)(+1)',
+    'Each photon has energy 135 MeV; the decay violates C-parity',
+    'One photon has energy 0 and the other 135 MeV; angular momentum is not conserved',
+    'Each photon has energy 67.5 MeV; the decay violates isospin but conserves C-parity',
+  ]}
+  correctAnswer={0}
+  explanation="In the pion rest frame, momentum conservation requires the two photons be back-to-back with equal and opposite momenta. Energy conservation: m_pi c^2 = E_1 + E_2 = 135 MeV. With |p_1| = |p_2|, both photons have E = 67.5 MeV. The pi^0 is an eigenstate of C-parity with C(pi^0) = +1. Each photon has C = -1, so C(gamma)C(gamma) = (+1)(+1) = +1 = C(pi^0). C-parity is conserved. The electromagnetic interaction conserves C but violates isospin, which is why the neutral pion (I = 1) can decay electromagnetically. The lifetime tau(pi^0) approx 8.4 x 10^-17 s is characteristic of electromagnetic decays."
+  difficulty="hard"
+/>
+
+---
+
+### Cosmology, Dark Matter, and Dark Energy
+
+<PracticeProblem
+  question="The current best measurement of the Hubble constant gives H_0 approx 70 km/s/Mpc. What is the Hubble time t_H = 1/H_0, and how does it compare to the actual age of the universe (13.8 Gyr)?"
+  options={[
+    't_H = 14.0 Gyr, slightly larger than the actual age of 13.8 Gyr because the universe was matter-dominated and decelerating for much of its history',
+    't_H = 14.0 Gyr, exactly equal to the actual age',
+    't_H = 9.8 Gyr, much smaller than the actual age because dark energy causes acceleration',
+    't_H = 20.0 Gyr, much larger than the actual age due to inflation',
+  ]}
+  correctAnswer={0}
+  explanation="H_0 = 70 km/s/Mpc = 70 x (1000 m/s)/(3.086 x 10^22 m) = 2.27 x 10^-18 s^-1. Hubble time: t_H = 1/H_0 = 4.41 x 10^17 s = 14.0 Gyr. The actual age (13.8 Gyr) is slightly less than t_H because the expansion rate H(t) was larger in the past (matter-dominated deceleration dominated over recent dark-energy-driven acceleration). For a purely de Sitter (dark energy only) universe, the age would equal the Hubble time. For a matter-dominated flat universe, the age would be (2/3)t_H approx 9.3 Gyr."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The cosmic microwave background (CMB) has a thermal spectrum with temperature T = 2.725 K. At what wavelength does the spectrum peak, and what is the energy density of CMB photons?"
+  options={[
+    'Peak at lambda_max = 1.06 mm; energy density u = aT^4 = 4.2 x 10^-14 J/m^3',
+    'Peak at lambda_max = 1.90 mm; energy density u = 4.2 x 10^-14 J/m^3',
+    'Peak at lambda_max = 2.64 mm; energy density u = 2.1 x 10^-14 J/m^3',
+    'Peak at lambda_max = 0.50 mm; energy density u = 1.0 x 10^-13 J/m^3',
+  ]}
+  correctAnswer={0}
+  explanation="Wien's displacement law: lambda_max = b/T = 2.898 x 10^-3/2.725 = 1.064 x 10^-3 m = 1.06 mm (microwave regime). Energy density: u = aT^4, where a = 4*sigma/c = 4(5.67 x 10^-8)/(3.0 x 10^8) = 7.56 x 10^-16 J/(m^3·K^4). So u = 7.56 x 10^-16 x (2.725)^4 = 7.56 x 10^-16 x 55.2 = 4.17 x 10^-14 J/m^3. This corresponds to approximately 411 CMB photons per cm^3, making photons the most abundant particles in the universe by number."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Observations of galaxy rotation curves show velocities remaining flat at large radii, and gravitational lensing maps reveal more mass than visible matter by a factor of about 5. What are the leading particle candidates for non-baryonic cold dark matter, and what property must they share?"
+  options={[
+    'WIMPs (Weakly Interacting Massive Particles) and axions; both must interact gravitationally with normal matter but have very weak or no electromagnetic or strong interactions',
+    'Neutrinos and photons; both must be massless to avoid structure formation',
+    'Magnetic monopoles and primordial black holes; both must carry electric charge',
+    'Quarks and gluons; both must be confined to hadrons',
+  ]}
+  correctAnswer={0}
+  explanation="Dark matter candidates must be non-baryonic, collisionless (to form the observed large-scale structure), and stable on cosmological timescales. WIMPs (particles with mass 10 GeV to 1 TeV and weak-scale interactions) arise naturally in supersymmetry (neutralino). Axions (mass 10^-6 to 10^-3 eV) solve the strong CP problem and are produced via the misalignment mechanism. Both interact only via gravity and the weak force (WIMPs) or only gravitationally (axions), explaining why they are invisible electromagnetically. Standard neutrinos are hot dark matter and would suppress small-scale structure, inconsistent with observations."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="In the Friedmann equation for a flat universe, H^2 = (8*pi*G/3)*rho, what is the critical density rho_c when H_0 = 70 km/s/Mpc? (G = 6.674 x 10^-11 m^3/(kg·s^2), 1 Mpc = 3.086 x 10^22 m)"
+  options={[
+    'rho_c approx 9.2 x 10^-27 kg/m^3',
+    'rho_c approx 5.0 x 10^-27 kg/m^3',
+    'rho_c approx 1.8 x 10^-26 kg/m^3',
+    'rho_c approx 2.3 x 10^-27 kg/m^3',
+  ]}
+  correctAnswer={0}
+  explanation="Converting H_0: H_0 = 70 km/s/Mpc = 70 x 10^3/(3.086 x 10^22) = 2.27 x 10^-18 s^-1. Critical density: rho_c = 3*H_0^2/(8*pi*G) = 3 x (2.27 x 10^-18)^2/(8 x 3.14159 x 6.674 x 10^-11) = 3 x 5.15 x 10^-36/(1.676 x 10^-9) = 1.546 x 10^-35/1.676 x 10^-9 = 9.22 x 10^-27 kg/m^3. This is equivalent to about 5.5 protons per cubic meter. The observed density is close to rho_c, consistent with a spatially flat universe. Of this, about 5% is baryonic matter, 27% dark matter, and 68% dark energy."
+  difficulty="medium"
+/>

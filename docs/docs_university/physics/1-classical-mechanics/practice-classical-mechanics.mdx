@@ -5,15 +5,16 @@ tags:
   - university
 slug: university-physics/practice-classical-mechanics
 description:
-  'Interactive university classical mechanics practice with auto-graded questions. Covers Newton''s laws,
-  energy, oscillations, central forces, and Lagrangian mechanics.'
+  "Interactive university classical mechanics practice with auto-graded questions. Covers Newton's
+  laws, energy, oscillations, central forces, and Lagrangian mechanics."
 ---
 
 import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ## University Physics — Classical Mechanics Practice
 
-10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review the explanation.
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
 
 ---
 
@@ -29,7 +30,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="A 5 kg block sits on a surface with coefficient of static friction μₛ = 0.4 and kinetic friction μₖ = 0.3. A horizontal force of 15 N is applied. What is the friction force acting on the block? (g = 9.8 m/s²)"
-  options={['15 N — static friction matches the applied force since it is below maximum', '19.6 N', '14.7 N', '4.5 N']}
+  options={[
+    '15 N — static friction matches the applied force since it is below maximum',
+    '19.6 N',
+    '14.7 N',
+    '4.5 N',
+  ]}
   correctAnswer={0}
   explanation="Maximum static friction: fₛ(max) = μₛ · N = 0.4 × 5 × 9.8 = 19.6 N. Since applied force (15 N) < fₛ(max), the block does not move and static friction equals the applied force: fₛ = 15 N."
   difficulty="medium"
@@ -41,7 +47,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="A particle moves in a potential V(x) = ½kx² − αx³ with k, α > 0. How many equilibrium points exist and what type is x = 0?"
-  options={['Two equilibrium points; x = 0 is stable (local minimum)', 'Two equilibrium points; x = 0 is unstable (local maximum)', 'Three equilibrium points; x = 0 is an inflection point', 'One equilibrium point; x = 0 is stable']}
+  options={[
+    'Two equilibrium points; x = 0 is stable (local minimum)',
+    'Two equilibrium points; x = 0 is unstable (local maximum)',
+    'Three equilibrium points; x = 0 is an inflection point',
+    'One equilibrium point; x = 0 is stable',
+  ]}
   correctAnswer={0}
   explanation="dV/dx = kx − 3αx² = x(k − 3αx) = 0. Equilibria at x = 0 and x = k/(3α). At x = 0: d²V/dx² = k > 0, so it is stable (local minimum). At x = k/(3α): d²V/dx² = k − 6α(k/3α) = k − 2k = −k < 0, unstable (local maximum)."
   difficulty="medium"
@@ -89,7 +100,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="For a central force problem with potential V(r) = −k/r, what is the effective potential V_eff(r)?"
-  options={['V_eff(r) = L²/(2mr²) − k/r', 'V_eff(r) = −k/r', 'V_eff(r) = L²/(2mr²) + k/r', 'V_eff(r) = ½mv² − k/r']}
+  options={[
+    'V_eff(r) = L²/(2mr²) − k/r',
+    'V_eff(r) = −k/r',
+    'V_eff(r) = L²/(2mr²) + k/r',
+    'V_eff(r) = ½mv² − k/r',
+  ]}
   correctAnswer={0}
   explanation="In polar coordinates with angular momentum L conserved: V_eff(r) = L²/(2mr²) + V(r) = L²/(2mr²) − k/r. The L²/(2mr²) term is the centrifugal barrier. The effective potential has a minimum at r₀ = L²/(mk), giving stable circular orbits."
   difficulty="hard"
@@ -109,7 +125,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="For a simple pendulum with Lagrangian L = ½mL²θ̇² − mgL(1 − cosθ), what is the Euler-Lagrange equation?"
-  options={['mL²θ̈ + mgL sinθ = 0', 'mL²θ̈ − mgL sinθ = 0', 'mLθ̈ + mg sinθ = 0', 'mL²θ̈ + mgL cosθ = 0']}
+  options={[
+    'mL²θ̈ + mgL sinθ = 0',
+    'mL²θ̈ − mgL sinθ = 0',
+    'mLθ̈ + mg sinθ = 0',
+    'mL²θ̈ + mgL cosθ = 0',
+  ]}
   correctAnswer={0}
   explanation="Apply ∂L/∂θ − d/dt(∂L/∂θ̇) = 0. ∂L/∂θ = −mgL sinθ. ∂L/∂θ̇ = mL²θ̇. d/dt(∂L/∂θ̇) = mL²θ̈. So: −mgL sinθ − mL²θ̈ = 0 → mL²θ̈ + mgL sinθ = 0 → θ̈ + (g/L)sinθ = 0. For small angles: θ̈ + (g/L)θ = 0 (SHM with ω² = g/L)."
   difficulty="medium"

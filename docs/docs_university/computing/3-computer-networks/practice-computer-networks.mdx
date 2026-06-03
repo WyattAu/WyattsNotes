@@ -1,0 +1,130 @@
+---
+title: Computer Networks Practice (Interactive)
+tags:
+  - computing
+  - university
+slug: university-computing/practice-computer-networks
+description:
+  'Interactive university computer networks practice with auto-graded questions. Covers OSI/TCP-IP
+  layers, subnetting, TCP vs UDP, routing, error detection, and security.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Computing — Computer Networks Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### OSI/TCP-IP Layers and Encapsulation
+
+<PracticeProblem
+  question="Which TCP/IP layer is responsible for routing packets between different networks?"
+  options={[
+    'Network layer (Internet layer)',
+    'Transport layer',
+    'Data link layer',
+    'Application layer',
+  ]}
+  correctAnswer={0}
+  explanation="The Network layer (Internet layer in TCP/IP) handles logical addressing (IP addresses) and routing. Routers operate at this layer, selecting the best path for packets across interconnected networks. The transport layer handles end-to-end delivery (TCP/UDP). The data link layer handles node-to-node delivery on a single segment (MAC addresses). The application layer provides services to user programs."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="During encapsulation, in what order are headers added as data moves from the application down to the physical layer?"
+  options={[
+    'Application header, Transport header, Network header, Data Link header',
+    'Data Link, Network, Transport, Application',
+    'Network, Data Link, Transport, Application',
+    'Transport, Application, Data Link, Network',
+  ]}
+  correctAnswer={0}
+  explanation="Encapsulation wraps data with headers at each layer as it moves down the stack. Application layer creates the data. Transport layer adds TCP/UDP header (creating a segment). Network layer adds IP header (creating a packet). Data Link layer adds frame header and trailer (creating a frame). Physical layer converts to bits. This layered wrapping ensures each layer can operate independently."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which protocol operates at the Session layer of the OSI model?"
+  options={['NetBIOS', 'TCP', 'IP', 'HTTP']}
+  correctAnswer={0}
+  explanation="NetBIOS operates at the Session layer (Layer 5), managing session establishment, maintenance, and termination between applications. TCP operates at the Transport layer (Layer 4). IP operates at the Network layer (Layer 3). HTTP operates at the Application layer (Layer 7). The Session layer is absorbed into the Application layer in the simpler TCP/IP model."
+  difficulty="medium"
+/>
+
+### Subnetting and IP Addressing
+
+<PracticeProblem
+  question="Given the IP address 192.168.5.130/26, what is the network address?"
+  options={['192.168.5.128', '192.168.5.0', '192.168.5.64', '192.168.5.192']}
+  correctAnswer={0}
+  explanation="A /26 mask gives 255.255.255.192. The last octet mask in binary: 11000000 = 192. Bitwise AND on the last octet: 130 (10000010) AND 192 (11000000) = 128 (10000000). Network address: 192.168.5.128. Broadcast: 192.168.5.191. Usable hosts: 192.168.5.129 to 192.168.5.190 (62 hosts)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="How many usable host addresses are available in a /27 subnet?"
+  options={['30', '32', '31', '14']}
+  correctAnswer={0}
+  explanation="A /27 prefix leaves 32 - 27 = 5 host bits. Total addresses: 2^5 = 32. Subtract the network address and broadcast address: 32 - 2 = 30 usable hosts. General formula: 2^(32 - prefix_length) - 2 usable hosts per subnet."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="An organisation with network 10.0.0.0 needs at least 8 subnets. What is the minimum subnet mask?"
+  options={['/11', '/12', '/13', '/10']}
+  correctAnswer={0}
+  explanation="The default mask for 10.0.0.0 (Class A) is /8. To create 8 subnets, borrow 3 host bits (2^3 = 8). New mask: /8 + 3 = /11. This gives subnets: 10.0.0.0/11, 10.32.0.0/11, 10.64.0.0/11, ..., 10.224.0.0/11, each supporting 2^(32-11) - 2 = 2,097,150 usable hosts."
+  difficulty="hard"
+/>
+
+### Transport, Routing, and Security
+
+<PracticeProblem
+  question="Which statement correctly distinguishes TCP from UDP?"
+  options={[
+    'TCP provides reliable, ordered delivery with flow control; UDP provides unreliable, connectionless delivery',
+    'TCP is faster than UDP for real-time applications',
+    'UDP uses a three-way handshake; TCP does not',
+    'TCP and UDP both guarantee packet delivery',
+  ]}
+  correctAnswer={0}
+  explanation="TCP provides reliable, ordered, error-checked delivery via acknowledgements, retransmissions, sequence numbers, and flow control. UDP is connectionless with no guarantees of delivery, ordering, or error recovery, but has lower overhead and latency. TCP is used for web, email, file transfer. UDP is used for DNS, streaming, gaming where speed matters more than reliability."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the purpose of the TCP three-way handshake?"
+  options={[
+    'To synchronise sequence numbers and establish a reliable connection between both ends',
+    'To encrypt data before transmission',
+    'To resolve IP addresses to MAC addresses',
+    'To fragment large packets into smaller segments',
+  ]}
+  correctAnswer={0}
+  explanation="The three-way handshake: (1) Client sends SYN with initial sequence number. (2) Server replies with SYN-ACK, acknowledging the client's sequence number and sending its own. (3) Client sends ACK confirming the server's sequence number. This synchronises both ends and establishes parameters for reliable data transfer. Encryption is handled by TLS at a higher layer."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which routing protocol uses Dijkstra's shortest-path algorithm and maintains a complete link-state database?"
+  options={[
+    'OSPF (Open Shortest Path First)',
+    'RIP (Routing Information Protocol)',
+    'BGP (Border Gateway Protocol)',
+    'IGMP (Internet Group Management Protocol)',
+  ]}
+  correctAnswer={0}
+  explanation="OSPF is a link-state protocol: each router floods its local link information to all routers, building a complete topology map (link-state database), then independently runs Dijkstra's SPF algorithm to compute shortest paths. RIP is distance-vector using Bellman-Ford, sharing tables only with neighbours. BGP is path-vector for inter-domain routing. IGMP manages multicast group membership."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In CRC error detection with generator polynomial G(x) = x^3 + x + 1, how many redundant bits are appended?"
+  options={['3', '4', '1', '7']}
+  correctAnswer={0}
+  explanation="The number of redundant bits equals the degree of the generator polynomial. G(x) = x^3 + x + 1 has degree 3. Therefore 3 zero bits are appended to the data before modulo-2 division, and the 3-bit remainder replaces them. This CRC detects all single-bit and double-bit errors, any odd number of errors, and burst errors of length at most 3."
+  difficulty="medium"
+/>

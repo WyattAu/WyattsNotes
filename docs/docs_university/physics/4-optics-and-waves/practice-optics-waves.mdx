@@ -1,0 +1,137 @@
+---
+title: Optics and Waves Practice (Interactive)
+tags:
+  - physics
+  - university
+slug: university-physics/practice-optics-waves
+description:
+  'Interactive university optics and waves practice with auto-graded questions. Covers wave
+  mechanics, geometric optics, physical optics, polarization, and modern optics.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Physics — Optics and Waves Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+Covers wave mechanics (superposition, interference, diffraction, standing waves), geometric optics
+(Snell's law, lenses, mirrors, optical instruments), physical optics (Young's double slit,
+diffraction gratings, thin films), polarization (Malus's law, birefringence, Brewster's angle), and
+modern optics (laser fundamentals, interferometry).
+
+---
+
+### Wave Mechanics and Superposition
+
+<PracticeProblem
+  question="Two waves with amplitudes A_1 = 3.0 cm and A_2 = 4.0 cm interfere constructively at a point. What is the resultant amplitude at that point?"
+  options={['7.0 cm', '1.0 cm', '5.0 cm', '12.0 cm']}
+  correctAnswer={0}
+  explanation="For fully constructive interference, the waves are in phase and amplitudes add directly: A = A_1 + A_2 = 3.0 cm + 4.0 cm = 7.0 cm. For destructive interference (180 degrees out of phase), the amplitudes would subtract: A = |A_1 - A_2| = 1.0 cm."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A string of length 1.50 m is fixed at both ends. What are the wavelengths of the first three standing wave harmonics?"
+  options={[
+    '3.0 m, 1.5 m, and 1.0 m',
+    '6.0 m, 3.0 m, and 2.0 m',
+    '1.5 m, 0.75 m, and 0.50 m',
+    '1.5 m, 1.0 m, and 0.75 m',
+  ]}
+  correctAnswer={0}
+  explanation="For a string fixed at both ends, the standing wave wavelengths are lambda_n = 2L/n. lambda_1 = 2(1.50)/1 = 3.0 m (fundamental). lambda_2 = 2(1.50)/2 = 1.5 m (2nd harmonic). lambda_3 = 2(1.50)/3 = 1.0 m (3rd harmonic). The corresponding frequencies are f_n = n*v/(2L)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Two identical speakers emit sound at 343 Hz and are 3.0 m apart. A listener stands 4.0 m from one speaker and 5.0 m from the other. What type of interference does the listener experience? (v_sound = 343 m/s)"
+  options={[
+    'Constructive interference (path difference equals one wavelength)',
+    'Destructive interference (path difference equals half a wavelength)',
+    'Partial destructive interference (path difference equals three-quarters of a wavelength)',
+    'Complete silence (perfect destructive interference)',
+  ]}
+  correctAnswer={0}
+  explanation="Wavelength: lambda = v/f = 343/343 = 1.0 m. Path difference: delta = 5.0 - 4.0 = 1.0 m = 1*lambda. Since the path difference is an integer multiple of the wavelength, the waves arrive in phase, producing constructive interference and maximum amplitude at the listener's position."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Light of wavelength 600 nm passes through a single slit of width 0.10 mm. A diffraction pattern forms on a screen 2.0 m away. What is the width of the central maximum?"
+  options={['2.4 cm', '1.2 cm', '4.8 cm', '0.60 cm']}
+  correctAnswer={0}
+  explanation="For single-slit diffraction, the first minimum is at y_1 = L*lambda/a = 2.0 m * 600 x 10^-9 m / 0.10 x 10^-3 m = 1.2 x 10^-2 m = 1.2 cm. The central maximum extends from -y_1 to +y_1, so its full width is 2*y_1 = 2 * 1.2 cm = 2.4 cm. Wider slits produce narrower central maxima."
+  difficulty="hard"
+/>
+
+---
+
+### Geometric and Physical Optics
+
+<PracticeProblem
+  question="A concave mirror has a focal length of 20 cm. An object is placed 30 cm in front of the mirror. Where is the image formed, and what is its nature?"
+  options={[
+    '60 cm in front of the mirror, real and inverted',
+    '60 cm behind the mirror, virtual and upright',
+    '12 cm in front of the mirror, real and inverted',
+    '15 cm behind the mirror, virtual and upright',
+  ]}
+  correctAnswer={0}
+  explanation="Mirror equation: 1/f = 1/d_o + 1/d_i. 1/20 = 1/30 + 1/d_i, so 1/d_i = 1/20 - 1/30 = (3-2)/60 = 1/60. d_i = 60 cm. Positive d_i means the image is real (in front of the mirror). Magnification m = -d_i/d_o = -60/30 = -2, so the image is inverted and twice the object size."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In Young's double-slit experiment, the slits are 0.20 mm apart and the screen is 1.5 m away. The fourth bright fringe (m = 4) appears 1.5 cm from the central maximum. What is the wavelength of the light?"
+  options={['500 nm', '250 nm', '750 nm', '600 nm']}
+  correctAnswer={0}
+  explanation="Double-slit bright fringe condition: y_m = m*lambda*L/d. Solving for lambda: lambda = y_m * d / (m * L) = (1.5 x 10^-2 m)(0.20 x 10^-3 m) / (4 * 1.5 m) = 3.0 x 10^-6 / 6.0 = 5.0 x 10^-7 m = 500 nm (green light). The linear fringe spacing is lambda*L/d = 3.75 mm."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A thin film of oil (n = 1.45) of thickness 300 nm floats on water (n = 1.33). White light is incident normally. What is the longest visible wavelength that is strongly reflected?"
+  options={['580 nm', '870 nm', '435 nm', '348 nm']}
+  correctAnswer={0}
+  explanation="Reflection at the air-oil boundary has a pi phase shift (low to high n); the oil-water boundary has no shift (high to low n). With one phase reversal, constructive interference requires: 2*n*t = (m - 1/2)*lambda. lambda = 2*1.45*300 nm / (m - 1/2). For m = 1: lambda = 1740 nm (IR). For m = 2: lambda = 870/1.5 = 580 nm (visible yellow-green). For m = 3: lambda = 348 nm (UV). The longest visible wavelength strongly reflected is 580 nm."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="A convex lens made of glass (n = 1.52) has equal radii of curvature R_1 = +30 cm and R_2 = -30 cm. Using the lensmaker's equation, what is the focal length?"
+  options={['29.4 cm', '58.8 cm', '14.7 cm', '15.0 cm']}
+  correctAnswer={0}
+  explanation="Lensmaker's equation for a thin lens: 1/f = (n - 1)(1/R_1 - 1/R_2) = (1.52 - 1)(1/30 - 1/(-30)) = 0.52 * (1/30 + 1/30) = 0.52 * (2/30) = 0.52 * 0.0667 = 0.0347 cm^-1. f = 1/0.0347 = 28.8 cm, which rounds to approximately 29 cm. More precisely: 1/f = 0.52*(2/30) = 1.04/30, so f = 30/1.04 = 28.8 cm. For equal and opposite radii, the biconvex lens is symmetric."
+  difficulty="medium"
+/>
+
+---
+
+### Polarization and Modern Optics
+
+<PracticeProblem
+  question="Unpolarized light with intensity I_0 passes through a single ideal polarizer. What is the intensity of the transmitted light?"
+  options={['I_0 / 2', 'I_0', 'I_0 / 4', '0']}
+  correctAnswer={0}
+  explanation="Unpolarized light has electric field vectors in all directions perpendicular to propagation. A polarizer transmits only the component along its transmission axis. Averaging over all polarization angles: I_transmitted = <I_0*cos^2(theta)> = I_0/2. This holds regardless of the polarizer orientation."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="According to Malus's law, if linearly polarized light of intensity I_0 passes through a polarizer whose transmission axis is at 45 degrees to the polarization direction, what is the transmitted intensity?"
+  options={['I_0 / 2', 'I_0 / sqrt(2)', 'I_0 / 4', 'I_0 * cos(45 degrees)']}
+  correctAnswer={0}
+  explanation="Malus's law: I = I_0 * cos^2(theta) = I_0 * cos^2(45 degrees) = I_0 * (1/sqrt(2))^2 = I_0 * 1/2 = I_0/2. Note that the transmitted intensity is proportional to cos^2(theta), not cos(theta). At theta = 90 degrees (crossed polarizers), the transmitted intensity drops to zero."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A helium-neon laser (lambda = 632.8 nm) is used in a Michelson interferometer. How far must one mirror be moved to observe exactly 500 bright fringe shifts pass?"
+  options={['0.158 mm', '0.316 mm', '0.079 mm', '0.063 mm']}
+  correctAnswer={0}
+  explanation="Each fringe shift corresponds to a mirror displacement of lambda/2 (the light traverses the changed path twice). Total displacement: d = N * lambda / 2 = 500 * 632.8 x 10^-9 m / 2 = 500 * 316.4 x 10^-9 m = 1.582 x 10^-4 m = 0.158 mm. Michelson interferometers can measure displacements with sub-wavelength precision using fringe counting."
+  difficulty="hard"
+/>

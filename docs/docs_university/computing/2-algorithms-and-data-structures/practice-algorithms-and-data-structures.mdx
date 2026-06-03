@@ -1,0 +1,125 @@
+---
+title: Algorithms and Data Structures Practice (Interactive)
+tags:
+  - computing
+  - university
+slug: university-computing/practice-algorithms-and-data-structures
+description:
+  'Interactive university algorithms and data structures practice with auto-graded questions. Covers
+  complexity analysis, sorting, data structures, dynamic programming, and graph algorithms.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Computing — Algorithms and Data Structures Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Complexity Analysis and Sorting
+
+<PracticeProblem
+  question="Which of the following is the correct Big-O ordering from smallest to largest growth rate?"
+  options={[
+    'O(1), O(log n), O(n), O(n log n), O(n^2), O(2^n)',
+    'O(1), O(n), O(log n), O(n log n), O(n^2), O(2^n)',
+    'O(1), O(log n), O(n^2), O(n), O(n log n), O(2^n)',
+    'O(log n), O(1), O(n), O(n log n), O(n^2), O(2^n)',
+  ]}
+  correctAnswer={0}
+  explanation="Standard ordering by asymptotic growth: O(1) is constant, O(log n) grows sub-linearly, O(n) is linear, O(n log n) is linearithmic (e.g. merge sort), O(n^2) is quadratic, and O(2^n) is exponential. For large n: 1 < log n < n < n log n < n^2 < 2^n."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Using the Master theorem, what is the solution to T(n) = 4T(n/2) + n^2?"
+  options={['O(n^2 log n)', 'O(n^2)', 'O(n^3)', 'O(n log n)']}
+  correctAnswer={0}
+  explanation="T(n) = aT(n/b) + f(n) with a=4, b=2, f(n)=n^2. Compute n^(log_b(a)) = n^(log_2(4)) = n^2. Since f(n) = n^2 = Theta(n^2) = Theta(n^(log_b(a)), we are in Case 2 of the Master theorem. Case 2 gives T(n) = Theta(n^(log_b(a)) * log n) = Theta(n^2 log n), so T(n) = O(n^2 log n)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which sorting algorithm has O(n log n) worst-case time complexity, is in-place, but is NOT stable?"
+  options={['Heapsort', 'Merge sort', 'Insertion sort', 'Quicksort']}
+  correctAnswer={0}
+  explanation="Heapsort guarantees O(n log n) in all cases, uses O(1) extra space (in-place), but is not stable because heap sift operations can reverse the relative order of equal elements. Merge sort is stable but needs O(n) extra space. Quicksort is in-place but has O(n^2) worst-case. Insertion sort is stable and in-place but O(n^2)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which sorting algorithm has O(n) best-case time complexity on nearly-sorted data?"
+  options={['Insertion sort', 'Merge sort', 'Quicksort', 'Selection sort']}
+  correctAnswer={0}
+  explanation="Insertion sort runs in O(n) on nearly-sorted data because each element is close to its final position, requiring minimal comparisons and shifts. Best case (already sorted): n-1 comparisons, zero shifts. Merge sort is always O(n log n). Quicksort is O(n log n) average regardless of order. Selection sort is always O(n^2)."
+  difficulty="medium"
+/>
+
+### Data Structures
+
+<PracticeProblem
+  question="In a min-heap of 15 elements stored as a 1-indexed array, where is the largest element guaranteed to be?"
+  options={[
+    'In one of the leaf nodes (indices 8 to 15)',
+    'At index 1',
+    'At index 2 or 3',
+    'At index 15',
+  ]}
+  correctAnswer={0}
+  explanation="In a min-heap the root (index 1) holds the minimum. The heap property guarantees each parent is smaller than its children, but says nothing about ordering among siblings. The largest element must therefore be a leaf. In a 15-element 1-indexed array, leaves are at indices floor(15/2)+1 through 15, i.e., indices 8 to 15."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the worst-case time complexity of searching in a balanced BST with n nodes?"
+  options={['O(log n)', 'O(n)', 'O(n log n)', 'O(1)']}
+  correctAnswer={0}
+  explanation="A balanced BST (AVL or red-black) maintains height O(log n). Search traverses from root to leaf, visiting at most height nodes. Worst-case search: O(log n). An unbalanced BST can degenerate to a linked list with O(n) search, which is why self-balancing is important."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the average-case time complexity of inserting into a hash table with chaining and a constant load factor?"
+  options={['O(1)', 'O(log n)', 'O(n)', 'O(n^2)']}
+  correctAnswer={0}
+  explanation="With chaining, average chain length equals the load factor alpha = n/m. Each insertion hashes the key (O(1)) and traverses a chain of expected length alpha. When alpha is kept constant via resizing, the expected chain length is O(1), giving O(1) average-case insertion. Worst case is O(n) when all keys collide."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="After inserting 50 into a max-heap {45, 30, 38, 20, 10, 25, 15} (0-indexed array), what is the resulting array after heapify-up?"
+  options={[
+    '50, 30, 38, 20, 10, 25, 15, 45',
+    '50, 45, 38, 20, 10, 25, 15, 30',
+    '50, 30, 45, 20, 10, 38, 25, 15',
+    '45, 50, 38, 30, 10, 25, 15, 20',
+  ]}
+  correctAnswer={0}
+  explanation="Insert 50 at index 7: [45, 30, 38, 20, 10, 25, 15, 50]. Parent of index 7 is index 3 (value 20). 50 > 20, swap: [45, 30, 38, 50, 10, 25, 15, 20]. Parent of index 3 is index 1 (value 30). 50 > 30, swap: [45, 50, 38, 20, 10, 25, 15, 30]. Parent of index 1 is index 0 (value 45). 50 > 45, swap: [50, 30, 38, 20, 10, 25, 15, 45]. Result: 50, 30, 38, 20, 10, 25, 15, 45."
+  difficulty="hard"
+/>
+
+### Dynamic Programming and Graph Algorithms
+
+<PracticeProblem
+  question="What is the time complexity of Dijkstra's algorithm using an adjacency list and a binary min-heap?"
+  options={['O((V + E) log V)', 'O(V^2)', 'O(E log E)', 'O(V * E)']}
+  correctAnswer={0}
+  explanation="Each vertex is extracted from the heap once: O(V log V). Each edge causes at most one decrease-key at O(log V): O(E log V). Total: O(V log V + E log V) = O((V + E) log V). For dense graphs where E = O(V^2), this becomes O(V^2 log V). A Fibonacci heap improves this to O(V log V + E) with O(1) amortised decrease-key."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the time and space complexity of bottom-up tabulation for 0/1 knapsack with n items and capacity W?"
+  options={[
+    'O(nW) time, O(nW) space (reducible to O(W))',
+    'O(nW) time, O(n) space',
+    'O(2^n) time, O(n) space',
+    'O(n^2) time, O(n^2) space',
+  ]}
+  correctAnswer={0}
+  explanation="Bottom-up 0/1 knapsack builds a 2D table dp[i][w] for i in [0,n] and w in [0,W]. Each cell is O(1) to compute, giving O(nW) time and O(nW) space. Space is optimisable to O(W) using two 1D arrays since dp[i] depends only on dp[i-1]. This is pseudo-polynomial: W is numeric, not logarithmic in input size."
+  difficulty="hard"
+/>

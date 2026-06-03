@@ -1,0 +1,132 @@
+---
+title: Thermal Physics Practice (Interactive)
+tags:
+  - physics
+  - university
+slug: university-physics/practice-thermal-physics
+description:
+  'Interactive university thermal physics practice with auto-graded questions. Covers thermodynamic
+  laws, kinetic theory, heat transfer, phase transitions, and statistical mechanics.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Physics — Thermal Physics Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+Covers thermodynamic laws (Zeroth through Third Law, Carnot cycle, entropy), kinetic theory (ideal
+gas law, Maxwell-Boltzmann distribution, mean free path), heat transfer (conduction, convection,
+radiation), phase transitions (latent heat, Clausius-Clapeyron equation), and statistical mechanics
+fundamentals (partition functions, Boltzmann distribution).
+
+---
+
+### Thermodynamic Laws and Processes
+
+<PracticeProblem
+  question="Which law of thermodynamics establishes the concept of temperature and the transitive property of thermal equilibrium?"
+  options={[
+    'The Zeroth Law of Thermodynamics',
+    'The First Law of Thermodynamics',
+    'The Second Law of Thermodynamics',
+    'The Third Law of Thermodynamics',
+  ]}
+  correctAnswer={0}
+  explanation="The Zeroth Law states that if body A is in thermal equilibrium with body B, and body B is in thermal equilibrium with body C, then A is in thermal equilibrium with C. This transitive property justifies the use of a thermometer to define temperature as a state function shared by all bodies in mutual thermal equilibrium."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A Carnot refrigerator operates between reservoirs at 250 K and 350 K. What is its coefficient of performance as a refrigerator?"
+  options={['2.5', '3.5', '1.4', '0.71']}
+  correctAnswer={0}
+  explanation="For a Carnot refrigerator: COP_ref = T_c / (T_h - T_c) = 250 K / (350 K - 250 K) = 250 / 100 = 2.5. The COP of a refrigerator equals the heat extracted from the cold reservoir divided by the work input: COP = Q_c / W."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Two moles of a monatomic ideal gas (gamma = 5/3) undergo an adiabatic compression from 10.0 L to 5.0 L. If the initial temperature is 300 K, what is the final temperature?"
+  options={['476 K', '600 K', '424 K', '525 K']}
+  correctAnswer={0}
+  explanation="For an adiabatic process: T_1 * V_1^(gamma-1) = T_2 * V_2^(gamma-1). With gamma = 5/3, the exponent gamma - 1 = 2/3. T_2 = T_1 * (V_1/V_2)^(2/3) = 300 K * (10.0/5.0)^(2/3) = 300 K * 2^(2/3) = 300 K * 1.587 = 476 K. The temperature rises because compression work is converted entirely to internal energy (Q = 0)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Calculate the total change in entropy when 2.0 kg of ice at -10 degrees C is converted to water at 25 degrees C. (c_ice = 2090 J/(kg*K), c_water = 4180 J/(kg*K), L_f = 334 kJ/kg)"
+  options={['3.34 x 10^3 J/K', '2.45 x 10^3 J/K', '4.18 x 10^3 J/K', '1.82 x 10^3 J/K']}
+  correctAnswer={0}
+  explanation="Three stages of entropy change: (1) Warming ice from 263 K to 273 K: dS_1 = m*c_ice*ln(T_2/T_1) = 2.0*2090*ln(273/263) = 155.8 J/K. (2) Melting at 273 K: dS_2 = m*L_f/T_melt = 2.0*334000/273 = 2446.9 J/K. (3) Warming water from 273 K to 298 K: dS_3 = m*c_water*ln(298/273) = 2.0*4180*ln(298/273) = 731.8 J/K. Total dS = 155.8 + 2446.9 + 731.8 = 3334.5 J/K = 3.34 x 10^3 J/K."
+  difficulty="hard"
+/>
+
+---
+
+### Kinetic Theory and Heat Transfer
+
+<PracticeProblem
+  question="The root-mean-square speed of gas molecules is v_rms = sqrt(3kT/m). If the temperature of a gas is increased from 300 K to 1200 K, by what factor does v_rms change?"
+  options={['2', '4', '1.73 (sqrt(3))', '1.5']}
+  correctAnswer={0}
+  explanation="Since v_rms is proportional to sqrt(T), the scaling factor is sqrt(T_2/T_1) = sqrt(1200/300) = sqrt(4) = 2. Quadrupling the absolute temperature doubles the rms molecular speed. Note that doubling temperature gives a factor of sqrt(2), not 2."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A copper rod (k = 385 W/(m*K)) of length 0.50 m and cross-sectional area 2.0 x 10^-4 m^2 has one end at 100 degrees C and the other at 0 degrees C. What is the rate of heat conduction through the rod?"
+  options={['15.4 W', '7.7 W', '30.8 W', '3.85 W']}
+  correctAnswer={0}
+  explanation="By Fourier's law of heat conduction: dQ/dt = k * A * dT / L = 385 W/(m*K) * 2.0 x 10^-4 m^2 * 100 K / 0.50 m = 385 * 4.0 x 10^-2 = 15.4 W. The steady-state heat current flows from the hot end to the cold end at 15.4 W, independent of the rod's lateral dimensions."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The mean free path of nitrogen molecules (molecular diameter 3.7 x 10^-10 m) at STP (T = 273 K, P = 1.01 x 10^5 Pa) is approximately:"
+  options={['6.1 x 10^-8 m', '3.8 x 10^-7 m', '1.2 x 10^-9 m', '8.5 x 10^-6 m']}
+  correctAnswer={0}
+  explanation="Mean free path formula: lambda = kT / (sqrt(2) * pi * d^2 * P). Numerator: (1.38 x 10^-23 J/K)(273 K) = 3.77 x 10^-21 J. Denominator: sqrt(2) * pi * (3.7 x 10^-10 m)^2 * 1.01 x 10^5 Pa = 6.14 x 10^-14 J/m. lambda = 3.77 x 10^-21 / 6.14 x 10^-14 = 6.1 x 10^-8 m = 61 nm."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A black body at 5800 K (approximating the Sun) radiates according to the Stefan-Boltzmann law. What is its total power radiated per unit surface area?"
+  options={['6.42 x 10^7 W/m^2', '1.61 x 10^7 W/m^2', '3.21 x 10^7 W/m^2', '2.57 x 10^8 W/m^2']}
+  correctAnswer={0}
+  explanation="Stefan-Boltzmann law: P/A = sigma * T^4, where sigma = 5.67 x 10^-8 W/(m^2*K^4). P/A = 5.67 x 10^-8 * (5800)^4 = 5.67 x 10^-8 * 1.133 x 10^15 = 6.42 x 10^7 W/m^2. The Sun's surface temperature of 5800 K produces an enormous radiative flux, which decreases as 1/r^2 with distance."
+  difficulty="medium"
+/>
+
+---
+
+### Phase Transitions and Statistical Mechanics
+
+<PracticeProblem
+  question="What defines the critical point of a pure substance on its phase diagram?"
+  options={[
+    'The point where the liquid and gas phases become indistinguishable, at critical temperature T_c and critical pressure P_c',
+    'The temperature at which a solid sublimates directly to gas at 1 atm',
+    'The unique combination of temperature and pressure where all three phases coexist in equilibrium (the triple point)',
+    'The temperature below which a gas cannot be liquefied by any amount of pressure',
+  ]}
+  correctAnswer={0}
+  explanation="The critical point is the terminus of the liquid-vapor coexistence curve. At T_c and P_c, the densities of the liquid and gas phases become equal, the meniscus disappears, the latent heat of vaporization drops to zero, and the two phases merge into a single supercritical fluid. For water, T_c = 647 K and P_c = 22.1 MPa."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="For water, the enthalpy of vaporization is 40.7 kJ/mol and the vapor pressure at 100 degrees C is 1.0 atm. Using the Clausius-Clapeyron equation, estimate the vapor pressure at 90 degrees C."
+  options={['0.70 atm', '0.85 atm', '0.55 atm', '0.40 atm']}
+  correctAnswer={0}
+  explanation="Integrated Clausius-Clapeyron equation: ln(P_2/P_1) = -(Delta_H_vap / R)(1/T_2 - 1/T_1). Substituting: ln(P_2/1.0) = -(40700/8.314)(1/363 - 1/373) = -4895.5 * 7.39 x 10^-5 = -0.362. Therefore P_2 = e^(-0.362) = 0.696 atm, rounding to 0.70 atm. The exponential sensitivity to temperature explains why vapor pressure rises steeply near the boiling point."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A two-level system has energy states epsilon_0 = 0 and epsilon_1 = epsilon. The partition function is Z = 1 + exp(-epsilon/kT). What fraction of particles occupies the upper energy level when kT = epsilon?"
+  options={['26.9%', '36.8%', '50.0%', '13.5%']}
+  correctAnswer={0}
+  explanation="The Boltzmann distribution gives the fraction in the upper level: f_1 = exp(-epsilon/kT) / Z = exp(-1) / (1 + exp(-1)) = 0.3679 / 1.3679 = 0.269 = 26.9%. When kT = epsilon, the thermal energy matches the level spacing, so a significant minority of particles occupies the excited state. As T -> infinity, f_1 approaches 50%."
+  difficulty="hard"
+/>

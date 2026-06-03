@@ -1,0 +1,114 @@
+---
+title: 'University Computing Flashcards: Algorithms and Data Structures'
+slug: flashcards-algorithms-and-data-structures
+description:
+  '20 interactive flashcards on complexity analysis, sorting, searching, data structures, dynamic
+  programming, and graph algorithms for university-level Algorithms and Data Structures revision.'
+tags:
+  - University
+  - Computing
+  - Flashcards
+---
+
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## Computing -- Algorithms and Data Structures Flashcards
+
+20 interactive flashcards for university-level Algorithms and Data Structures. Press Space to flip,
+rate 1-4.
+
+---
+
+const flashcardData = [{id:"uni-cs-algorithms-and-data-structures-001",front:"What is the difference
+between Big-O, Big-Omega, and Big-Theta notation?",back:"Big-O (`O(g)`) is an asymptotic upper
+bound. Big-Omega (`Omega(g)`) is an asymptotic lower bound. Big-Theta (`Theta(g)`) is both an upper
+and lower bound, meaning tight asymptotic growth rate.",tags:["Complexity
+Analysis"],difficulty:"easy"},{id:"uni-cs-algorithms-and-data-structures-002",front:"State the
+Master Theorem for recurrences of the form `T(n) = aT(n/b) + f(n)`.",back:"Compare `f(n)` with
+`n^(log_b(a))`. Case 1: if `f(n) = O(n^(log_b(a) - e))`, then `T(n) = Theta(n^(log_b(a)))`. Case 2:
+if `f(n) = Theta(n^(log_b(a)))`, then `T(n) = Theta(n^(log_b(a)) * log n)`. Case 3: if
+`f(n) = Omega(n^(log_b(a) + e))`, then `T(n) = Theta(f(n))`.",tags:["Complexity
+Analysis"],difficulty:"hard"},{id:"uni-cs-algorithms-and-data-structures-003",front:"What is the
+worst-case time complexity of quicksort and what causes it?",back:"Worst case is `O(n^2)`, occurring
+when the pivot consistently divides the array unevenly (e.g. already sorted input with first/last
+element as pivot). Average case is
+`O(n log n)`.",tags:["Sorting"],difficulty:"easy"},{id:"uni-cs-algorithms-and-data-structures-004",front:"Is
+mergesort a stable sorting algorithm? What does stability mean?",back:"Yes, mergesort is stable.
+Stability means that equal elements retain their relative order from the input. This matters when
+sorting by multiple
+keys.",tags:["Sorting"],difficulty:"easy"},{id:"uni-cs-algorithms-and-data-structures-005",front:"Why
+is heapsort advantageous over mergesort in practice?",back:"Heapsort is `O(n log n)` worst-case and
+sorts in-place with `O(1)` auxiliary space, while mergesort requires `O(n)` additional space.
+However, heapsort is not stable and has poor cache
+performance.",tags:["Sorting"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-006",front:"What
+is the time complexity of binary search and what is its precondition?",back:"`O(log n)`. The input
+array must be sorted. It works by repeatedly halving the search interval by comparing the target
+with the middle
+element.",tags:["Searching"],difficulty:"easy"},{id:"uni-cs-algorithms-and-data-structures-007",front:"What
+is the average and worst-case time complexity of hash table lookup?",back:"Average case is `O(1)`
+with a good hash function and proper load factor. Worst case is `O(n)` when all keys collide into
+the same bucket
+(chain).",tags:["Searching"],difficulty:"easy"},{id:"uni-cs-algorithms-and-data-structures-008",front:"What
+are the worst-case heights of an unbalanced BST vs. an AVL tree with n nodes?",back:"Unbalanced BST:
+`O(n)` (degenerate to a linked list). AVL tree: `O(log n)`, specifically at most
+`1.44 * log2(n + 2)` height.",tags:["Data
+Structures"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-009",front:"What is the
+height of a binary heap with n elements and how are elements stored?",back:"Height is `O(log n)`,
+specifically `floor(log2(n))`. Elements are stored in a complete binary tree using an array where
+for index `i`: parent is `(i-1)/2`, left child is `2i+1`, right child is `2i+2`.",tags:["Data
+Structures"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-010",front:"What is the
+minimum degree `t` of a B-tree and how does it relate to the number of keys per node?",back:"Each
+non-root node has between `t-1` and `2t-1` keys, and between `t` and `2t` children. The root has at
+least 1 key. Larger `t` reduces tree height, reducing disk I/O.",tags:["Data
+Structures"],difficulty:"hard"},{id:"uni-cs-algorithms-and-data-structures-011",front:"What are the
+two key properties a problem must have for dynamic programming to apply?",back:"Optimal
+substructure: an optimal solution contains optimal solutions to subproblems. Overlapping
+subproblems: the same subproblems are solved multiple times, making memoization
+worthwhile.",tags:["Dynamic
+Programming"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-012",front:"What is
+the difference between top-down (memoization) and bottom-up dynamic programming?",back:"Top-down:
+recurse with caching, solving subproblems on demand. Bottom-up: iteratively fill a table from
+smallest subproblems upward. Bottom-up avoids recursion overhead and can use space
+optimization.",tags:["Dynamic
+Programming"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-013",front:"What is
+the time complexity of Dijkstra's algorithm with a min-heap priority
+queue?",back:"`O((V + E) log V)`. Each vertex is extracted from the heap `O(V)` times, and each edge
+potentially triggers a decrease-key operation `O(log V)`.",tags:["Graph
+Algorithms"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-014",front:"What
+condition must a graph satisfy for Dijkstra's algorithm to produce correct results?",back:"All edge
+weights must be non-negative. Dijkstra uses a greedy strategy that fails with negative weights
+because it assumes that once a vertex is finalised, a shorter path cannot exist.",tags:["Graph
+Algorithms"],difficulty:"easy"},{id:"uni-cs-algorithms-and-data-structures-015",front:"What is the
+time complexity of BFS and DFS on a graph represented as an adjacency list?",back:"Both are
+`O(V + E)`. BFS explores level by level using a queue. DFS explores depth-first using a stack (or
+recursion). They visit every vertex and edge once.",tags:["Graph
+Algorithms"],difficulty:"easy"},{id:"uni-cs-algorithms-and-data-structures-016",front:"Name two
+algorithms for finding a Minimum Spanning Tree and their time complexities.",back:"Prim's algorithm:
+`O(E log V)` with a binary heap. Kruskal's algorithm: `O(E log E)` using union-find with path
+compression. Both produce an MST for connected undirected weighted graphs.",tags:["Graph
+Algorithms"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-017",front:"What is
+topological sort and under what condition can it be performed?",back:"A linear ordering of vertices
+such that for every directed edge `u -> v`, `u` appears before `v`. Only possible on a Directed
+Acyclic Graph (DAG). Can be done via DFS with finishing times or Kahn's algorithm
+(indegree-based).",tags:["Graph
+Algorithms"],difficulty:"medium"},{id:"uni-cs-algorithms-and-data-structures-018",front:"What is
+amortized analysis and give a classic example.",back:"Amortized analysis averages the cost of
+operations over a sequence, giving a bound per operation even if individual operations are
+expensive. Classic example: dynamic array append is amortized `O(1)` despite occasional `O(n)`
+resizing.",tags:["Complexity
+Analysis"],difficulty:"hard"},{id:"uni-cs-algorithms-and-data-structures-019",front:"What is the
+Floyd-Warshall algorithm used for and what is its complexity?",back:"It finds all-pairs shortest
+paths in a weighted directed graph. Time complexity is `O(V^3)` and space complexity is `O(V^2)`. It
+works correctly with negative edge weights (but not negative cycles).",tags:["Graph
+Algorithms"],difficulty:"hard"},{id:"uni-cs-algorithms-and-data-structures-020",front:"How does a
+trie differ from a hash table for storing strings?",back:"A trie stores strings character by
+character in a tree structure, enabling prefix-based search in `O(m)` where `m` is the string
+length. Hash tables have `O(1)` average lookup but no prefix search capability.",tags:["Data
+Structures"],difficulty:"medium"}];
+
+<FlashcardDeck
+  deckId="uni-cs-algorithms-and-data-structures"
+  title="University Computing -- Algorithms and Data Structures"
+  description="20 interactive flashcards covering complexity analysis, sorting, searching, data structures, dynamic programming, and graph algorithms."
+  cards={flashcardData}
+/>

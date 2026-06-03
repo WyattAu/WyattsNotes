@@ -1,0 +1,140 @@
+---
+title: Databases Practice (Interactive)
+tags:
+  - computing
+  - university
+slug: university-computing/practice-databases
+description:
+  'Interactive university databases practice with auto-graded questions. Covers relational algebra,
+  SQL, normalization, transaction isolation, and indexing.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## University Computing — Databases Practice
+
+10 auto-graded practice problems at medium to hard difficulty. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Relational Algebra and SQL
+
+<PracticeProblem
+  question="What does the relational algebra operation sigma_{salary > 50000}(Employee) return?"
+  options={[
+    'All tuples from Employee where salary > 50000',
+    'A relation containing only the salary column',
+    'All tuples from Employee where salary <= 50000',
+    'The Cartesian product of Employee with itself',
+  ]}
+  correctAnswer={0}
+  explanation="The selection operation sigma (sigma) filters tuples from a relation based on a predicate. sigma_{salary > 50000}(Employee) scans every tuple in Employee and returns only those satisfying salary > 50000. It does not project (remove) columns and does not combine relations. Selection is the relational algebra equivalent of the SQL WHERE clause."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What does `SELECT S.name FROM Students S LEFT JOIN Enrollments E ON S.sid = E.sid WHERE E.cid IS NULL` return?"
+  options={[
+    'Students who are not enrolled in any course',
+    'Students enrolled in at least one course',
+    'All enrollments without a matching student record',
+    'All students along with their course enrollments',
+  ]}
+  correctAnswer={0}
+  explanation="LEFT JOIN returns all rows from the left table (Students) regardless of whether a match exists in Enrollments. When no matching enrollment exists, all columns from Enrollments are NULL. Filtering WHERE E.cid IS NULL selects only those unmatched rows -- students with zero enrollments. This is the standard SQL pattern for finding rows in one table absent from another."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Given Emp(eid, did, salary), which query correctly returns department IDs where the average salary exceeds 60000?"
+  options={[
+    'SELECT did FROM Emp GROUP BY did HAVING AVG(salary) > 60000',
+    'SELECT did FROM Emp WHERE AVG(salary) > 60000 GROUP BY did',
+    'SELECT did FROM Emp WHERE salary > 60000 GROUP BY did',
+    'SELECT did, AVG(salary) FROM Emp GROUP BY did WHERE AVG(salary) > 60000',
+  ]}
+  correctAnswer={0}
+  explanation="Aggregate functions like AVG cannot appear in a WHERE clause -- WHERE filters individual rows before grouping. The HAVING clause filters groups after GROUP BY has been applied. The correct pattern is: GROUP BY first, then HAVING with the aggregate condition. Option B is illegal SQL. Option C returns departments where any individual salary exceeds 60000, not where the average does. Option D places WHERE after GROUP BY, which is invalid syntax."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In SQL window functions, given values 100, 100, 80, which function assigns the unique integers 1, 2, 3 (no ties)?"
+  options={['ROW_NUMBER()', 'RANK()', 'DENSE_RANK()', 'COUNT(*) OVER (ORDER BY val)']}
+  correctAnswer={0}
+  explanation="ROW_NUMBER() always assigns a unique integer to each row regardless of ties, giving 1, 2, 3. RANK() assigns 1, 1, 3 (skips 2 after a tie). DENSE_RANK() assigns 1, 1, 2 (no gaps). COUNT(*) OVER (ORDER BY val) is a running count, not a ranking function. Key distinction: ROW_NUMBER breaks ties arbitrarily but guarantees uniqueness, making it the only option among these that produces 1, 2, 3 for tied values."
+  difficulty="hard"
+/>
+
+### Normalization and Transaction Isolation
+
+<PracticeProblem
+  question="A relation R is in Boyce-Codd Normal Form (BCNF) if and only if:"
+  options={[
+    'For every non-trivial FD X -> Y, X is a superkey of R',
+    'Every attribute in R is part of a candidate key',
+    'R is in 3NF and has no transitive dependencies',
+    'There are no repeating groups in R',
+  ]}
+  correctAnswer={0}
+  explanation="BCNF requires that for every non-trivial functional dependency X -> Y (where Y is not a subset of X), the determinant X must be a superkey. This is strictly stronger than 3NF, which allows exceptions when Y is a prime attribute (part of some candidate key). A relation in BCNF has no anomalies from functional dependencies. If X is not a superkey, the relation must be decomposed."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Given R(A,B,C,D) with functional dependencies {AB -> C, C -> D}, what is a valid BCNF decomposition?"
+  options={[
+    'R1(A,B,C) and R2(C,D)',
+    'R1(A,B,D) and R2(A,C,D)',
+    'R is already in BCNF since AB is a candidate key',
+    'R1(A,B), R2(B,C), and R3(C,D)',
+  ]}
+  correctAnswer={0}
+  explanation="Candidate key is AB (AB+ = {A,B,C,D}). Check BCNF violations: AB->C is fine (AB is a superkey). C->D violates BCNF because C+ = {C,D} does not include A or B, so C is not a superkey. Decompose on C->D: R1(C,D) where C is a superkey (in BCNF), and R2(A,B,C) where AB is a superkey and the only applicable FD AB->C satisfies BCNF. The decomposition preserves the original dependencies and is lossless."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Under the READ COMMITTED transaction isolation level, which statement is correct?"
+  options={[
+    'Dirty reads are prevented, but non-repeatable reads and phantom reads may still occur',
+    'All concurrency anomalies including phantom reads are prevented',
+    'Only phantom reads are prevented while dirty reads are possible',
+    'No anomalies are prevented at this level',
+  ]}
+  correctAnswer={0}
+  explanation="READ COMMITTED (level 2) prevents dirty reads by only allowing a transaction to read committed data from other transactions. However, between two reads of the same row, another transaction may modify and commit that row, causing a non-repeatable read. Similarly, phantom reads can occur if another transaction inserts new rows matching a query predicate between two range scans. Preventing non-repeatable reads requires REPEATABLE READ (level 3), and preventing phantoms requires SERIALIZABLE (level 4)."
+  difficulty="medium"
+/>
+
+### Indexing and Query Optimization
+
+<PracticeProblem
+  question="In a B+ tree of order 4 (maximum 4 child pointers per internal node), what is the minimum number of keys in a non-root internal node?"
+  options={['1', '2', '3', '0']}
+  correctAnswer={0}
+  explanation="A B+ tree of order m requires non-root internal nodes to have at least ceil(m/2) children. With m=4: minimum children = ceil(4/2) = 2. Since the number of keys equals the number of children minus 1, the minimum number of keys is 2 - 1 = 1. The root is exempt from this constraint and may have as few as 1 key (2 children). This minimum occupancy guarantee ensures the tree remains balanced after deletions."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Given R(a,b) with 1000 tuples (V(R,a)=100) and S(a,c) with 500 tuples (V(S,a)=100), estimate the size of R JOIN S on attribute a using the standard formula."
+  options={['5000', '1500', '500', '500000']}
+  correctAnswer={0}
+  explanation="The standard join size estimation formula is: |R JOIN S| = |R| x |S| / max(V(R,join_attr), V(S,join_attr)). Substituting: 1000 x 500 / max(100, 100) = 500000 / 100 = 5000. The max of the distinct-value counts represents the number of distinct join key values available. Each of those values matches approximately |R|/V(R,a) = 10 tuples in R and |S|/V(S,a) = 5 tuples in S, giving roughly 10 x 5 = 50 result tuples per distinct value, times 100 distinct values = 5000."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which index structure is most appropriate for efficiently answering range queries such as `WHERE price BETWEEN 50 AND 200`?"
+  options={[
+    'B+ tree index, because leaf nodes are linked for sequential range scans',
+    'Hash index, because it provides O(1) average lookup time',
+    'Bitmap index, because it is optimized for high-cardinality columns',
+    'A covering index without any specific tree structure',
+  ]}
+  correctAnswer={0}
+  explanation="B+ tree indexes store keys in sorted order within each node, and crucially, the leaf nodes are connected via sibling pointers forming a linked list. This allows a range query to find the starting point via tree traversal (O(log n)) and then scan sequentially through all matching leaves. Hash indexes support only equality lookups (O(1) average) but cannot perform range scans since data is distributed by hash buckets. Bitmap indexes are best for low-cardinality columns with Boolean operations, not range predicates."
+  difficulty="medium"
+/>
