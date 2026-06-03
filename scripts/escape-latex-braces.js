@@ -80,6 +80,18 @@ const ESCAPE_CMDS = new Set([
 function collapseConstArrays(source) {
   let lines = source.split('\n');
   const replacements = [];
+  const varCounts = {}; // Track duplicate variable names
+
+  // First pass: count occurrences of each variable name
+  const firstPassLines = source.split('\n');
+  for (const line of firstPassLines) {
+    const m = line.match(/(?:export\s+)?const\s+(\w+)\s*=\s*\[/);
+    if (m) {
+      varCounts[m[1]] = (varCounts[m[1]] || 0) + 1;
+    }
+  }
+
+  const varIndex = {}; // Track per-name index for renaming
 
   let i = 0;
   while (i < lines.length) {
@@ -91,6 +103,7 @@ function collapseConstArrays(source) {
 
     const prefix = match[1];
     const hasExport = !!match[2];
+    const varName = match[3];
     const startLine = i;
 
     // Skip if inside YAML frontmatter (before second ---)
@@ -145,6 +158,27 @@ function collapseConstArrays(source) {
       collapsed = prefix + 'export ' + collapsed.trimStart();
     }
 
+    // Rename duplicate variable names to avoid MDX "already declared" errors
+    if (varCounts[varName] > 1) {
+      varIndex[varName] = (varIndex[varName] || 0) + 1;
+      const idx = varIndex[varName];
+      const uniqueName = varName + idx;
+      collapsed = collapsed.replace(
+        new RegExp('(export\\s+const\\s+)' + varName + '(\\s*=)', 'g'),
+        '$1' + uniqueName + '$2',
+      );
+      // Also rename the JSX reference: {varName} → {uniqueName}
+      // Look ahead in the lines after the array for <Component ... {varName} />
+      for (let k = endLine + 1; k < Math.min(endLine + 10, lines.length); k++) {
+        if (lines[k].includes('{' + varName + '}')) {
+          lines[k] = lines[k].replace(
+            new RegExp('\\{' + varName + '\\}', 'g'),
+            '{' + uniqueName + '}',
+          );
+        }
+      }
+    }
+
     replacements.push({ startLine, endLine, replacement: collapsed });
     i = endLine + 1;
   }
@@ -184,11 +218,15 @@ function diamondifyBraces(content) {
  * Read a balanced brace group starting at position pos (which must be '{').
  * Returns [content, endPos] where content is the string between braces
  * and endPos is the position after the closing '}'.
+ *
+ * Safety: stops at first newline to avoid runaway reads from unmatched
+ * braces like \mathrm{word without closing }.
  */
 function readBraceGroup(source, pos) {
   let depth = 0;
   const start = pos;
   while (pos < source.length) {
+    if (source[pos] === '\n') break; // Safety: don't cross line boundaries
     if (source[pos] === '{') depth++;
     else if (source[pos] === '}') {
       depth--;
@@ -199,8 +237,8 @@ function readBraceGroup(source, pos) {
     }
     pos++;
   }
-  // Unbalanced braces — return rest of string
-  return [source.substring(start + 1), source.length];
+  // Unbalanced braces — return content up to newline or end
+  return [source.substring(start + 1, pos), pos];
 }
 
 function diamondifyLatexBraces(source) {
