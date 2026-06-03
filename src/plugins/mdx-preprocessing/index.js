@@ -18,22 +18,18 @@ const path = require('path');
 module.exports = function mdxPreprocessingPlugin() {
   return {
     name: 'mdx-preprocessing',
-    configureWebpack() {
-      return {
-        module: {
-          rules: [
-            {
-              test: /\.mdx?$/,
-              enforce: 'pre',
-              use: [
-                {
-                  loader: path.resolve(__dirname, '../escape-jsx-braces/webpack-loader.js'),
-                },
-              ],
-            },
-          ],
-        },
-      };
+    configureWebpack(config) {
+      // Modify the existing webpack config in-place
+      config.module.rules.push({
+        test: /\.mdx?$/,
+        enforce: 'pre',
+        use: [
+          {
+            loader: path.resolve(__dirname, '../escape-jsx-braces/webpack-loader.js'),
+          },
+        ],
+      });
+      return config;
     },
   };
 };
