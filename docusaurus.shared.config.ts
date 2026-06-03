@@ -304,6 +304,7 @@ export const sharedPresets: Config['presets'] = [
 // ---------------------------------------------------------------------------
 export function sharedPlugins(cacheId?: string) {
   return [
+    require.resolve('./src/plugins/mdx-preprocessing'),
     require.resolve('./src/plugins/fix-mermaid-elk'),
     [require.resolve('./src/plugins/service-worker'), { enable: true, cacheId }],
     ['docusaurus-plugin-image-zoom', { selector: '.markdown :not(a) > img' }],
@@ -395,24 +396,6 @@ export function sharedConfig(options: SharedConfigOptions) {
     clientModules: sharedClientModules,
     onBrokenLinks: 'throw',
     ...sharedCompilationConfig,
-    // Pre-loader for .md/.mdx files: collapses multi-line const arrays,
-    // fixes <URL> autolinks, and escapes LaTeX braces before MDX parsing.
-    // Runs BEFORE @docusaurus/mdx-loader so MDX receives clean source.
-    configureWebpack: {
-      module: {
-        rules: [
-          {
-            test: /\.mdx?$/,
-            enforce: 'pre' as const,
-            use: [
-              {
-                loader: require.resolve('./src/plugins/escape-jsx-braces/webpack-loader.js'),
-              },
-            ],
-          },
-        ],
-      },
-    },
     headTags: [
       ...sharedHeadTags,
       // Per-site social card images
