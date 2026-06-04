@@ -1,6 +1,8 @@
 ---
 title: Electromagnetism
-description: 'University Physics Electromagnetism notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
+description:
+  'University Physics Electromagnetism notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics
@@ -116,9 +118,9 @@ Where $\mathbf{K}_f$ is the free surface current density.
 
 ### 1.5 Worked Example: Deriving the Electromagnetic Wave Equation
 
-**Problem.** Starting from Maxwell's equations in free space ($\rho = 0$, $\mathbf{J} = \mathbf{0}$),
-Derive the wave equations for $\mathbf{E}$ and $\mathbf{B}$And show that the wave speed is
-$c = 1/\sqrt{\mu_0 \varepsilon_0}$.
+**Problem.** Starting from Maxwell's equations in free space ($\rho = 0$,
+$\mathbf{J} = \mathbf{0}$), Derive the wave equations for $\mathbf{E}$ and $\mathbf{B}$And show that
+the wave speed is $c = 1/\sqrt{\mu_0 \varepsilon_0}$.
 
 <details>
 <summary>Solution</summary>
@@ -169,7 +171,8 @@ $$\mathbf{E}(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0} \frac{q}{|\mathbf{r}|^2} 
 **Superposition Principle:** The field due to a collection of charges is the vector sum of
 individual Fields.
 
-<DesmosGraph title="Electric Field: 1/r^2 Dependence" expressions={["\\frac{k}{(x-d)^2}", "\\frac{-k}{(x+d)^2}", "\\frac{k}{(x-d)^2}+\\frac{-k}{(x+d)^2}"]} width={800} height={500} />
+<DesmosGraph title="Electric Field: 1/r^2 Dependence" expressions={["\\frac{k}{(x-d)^2}",
+"\\frac{-k}{(x+d)^2}", "\\frac{k}{(x-d)^2}+\\frac{-k}{(x+d)^2}"]} width={800} height={500} />
 
 ### 2.2 Gauss's Law Applications
 
@@ -1289,8 +1292,8 @@ $\varepsilon^{0123} = +1$. In matrix form:
 
 $$\tilde{F}^{\mu\nu} = \begin{pmatrix} 0 & -B_x & -B_y & -B_z \\ B_x & 0 & E_z/c & -E_y/c \\ B_y & -E_z/c & 0 & E_x/c \\ B_z & E_y/c & -E_x/c & 0 \end{pmatrix}$$
 
-The dual tensor is obtained from $F^{\mu\nu}$ by the replacement
-$\mathbf{E}/c \to -\mathbf{B}$, $\mathbf{B} \to \mathbf{E}/c$.
+The dual tensor is obtained from $F^{\mu\nu}$ by the replacement $\mathbf{E}/c \to -\mathbf{B}$,
+$\mathbf{B} \to \mathbf{E}/c$.
 
 **Lorentz force.** The four-force on a charge $q$ is:
 
@@ -1379,8 +1382,8 @@ _Cross-reference:_ Section 1.3, Section 4.5.
 </details>
 
 **Problem 2.** A point charge $q$ is placed at the centre of a dielectric sphere of radius $R$ And
-permittivity $\varepsilon$. Find $\mathbf{D}$, $\mathbf{E}$And $\mathbf{P}$ everywhere. Determine the
-bound surface charge density.
+permittivity $\varepsilon$. Find $\mathbf{D}$, $\mathbf{E}$And $\mathbf{P}$ everywhere. Determine
+the bound surface charge density.
 
 <details>
 <summary>Solution</summary>
@@ -1730,8 +1733,8 @@ _Cross-reference:_ Section 3.3, Section 3.6.
 </details>
 
 **Problem 14.** An iron ring of mean radius $R = 10$ cm, cross-sectional area $A = 4\ \mathrm{cm}^2$
-And relative permeability $\mu_r = 500$ has $N = 200$ turns carrying current $I = 2$ A. Find
-$B$, $H$, $M$And the total flux through the ring.
+And relative permeability $\mu_r = 500$ has $N = 200$ turns carrying current $I = 2$ A. Find $B$,
+$H$, $M$And the total flux through the ring.
 
 <details>
 <summary>Solution</summary>
@@ -2320,7 +2323,8 @@ $$\mathbf{g} = \frac{\mathbf{S}}{c^2} = \varepsilon_0\mathbf{E} \times \mathbf{B
 
 **Field angular momentum:** $\mathbf{L} = \int \mathbf{r} \times \mathbf{g}\, d^3r$.
 
-**Conservation:** $\frac{d}{dt}\left(\mathbf{p}_{\text{mech} + \mathbf{p}_{\text{field}\right) = 0}}$.
+**Conservation:**
+$\frac{d}{dt}\left(\mathbf{p}_{\text{mech} + \mathbf{p}_{\text{field}\right) = 0}}$.
 
 For a charge and a magnetic monopole (if they exist), the field angular momentum
 $\mathbf{L} = -qg\hat{\mathbf{r}}/(4\pi)$ is quantised in units of $\hbar/2$Leading to the Dirac

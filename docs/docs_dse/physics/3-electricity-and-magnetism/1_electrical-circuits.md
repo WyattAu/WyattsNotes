@@ -1,6 +1,8 @@
 ---
 title: Electrical Circuits
-description: 'DSE Physics Electrical Circuits notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'DSE Physics Electrical Circuits notes covering key definitions, core concepts, worked examples,
+  and practice questions for analytical revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -454,8 +456,8 @@ $$I_1 = \frac{12}{8} = 1.5 \mathrm{ A}, \quad I_2 = \frac{12}{24} = 0.5 \mathrm{
 
 $$I_{\mathrm{total}} = 1.5 + 0.5 = 2.0 \mathrm{ A}$$
 
-Verify:
-$R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$, $I = \frac{12}{6} = 2.0 \mathrm{ A}$
+Verify: $R_{\mathrm{total}} = \frac{8 \times 24}{8 + 24} = 6 \Omega$,
+$I = \frac{12}{6} = 2.0 \mathrm{ A}$
 
 If you get this wrong, revise: Series and Parallel Circuits
 
@@ -601,8 +603,8 @@ Defining $\rho = \frac{1}{ne\mu}$ (resistivity):
 
 $$R = \frac{\rho L}{A}$$
 
-This shows that resistivity is an intrinsic property of the material (dependent on $n$, $e$And $\mu$)
-and is independent of the conductor's dimensions.
+This shows that resistivity is an intrinsic property of the material (dependent on $n$, $e$And
+$\mu$) and is independent of the conductor's dimensions.
 
 ### Derivation: Maximum Power Transfer Theorem
 

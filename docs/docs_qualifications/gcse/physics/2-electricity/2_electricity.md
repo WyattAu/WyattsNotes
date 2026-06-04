@@ -1,6 +1,8 @@
 ---
 title: Electricity
-description: 'GCSE Physics Electricity notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and mastery.'
+description:
+  'GCSE Physics Electricity notes covering key definitions, core concepts, worked examples, and
+  practice questions for focused exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - gcse

@@ -1,6 +1,8 @@
 ---
 title: Dynamics and Space
-description: 'Scottish Highers Physics Dynamics and Space notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'Scottish Highers Physics Dynamics and Space notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 date: 2026-04-14
 tags:
   - highers
@@ -428,19 +430,19 @@ Redshifted by the expansion of space to microwave wavelengths.
 
 ## 15. Summary Table: Key Formulas
 
-| Topic                    | Formula                                  | Variables           | Notes                |
-| ------------------------ | ---------------------------------------- | ------------------- | -------------------- |
-| Centripetal acceleration | $a_c = v^2/r = \omega^2 r$               | $v$, $r$, $\omega$      | Always toward centre |
-| Centripetal force        | $F_c = mv^2/r$                           | $m$, $v$, $r$           | Net inward force     |
-| Universal gravitation    | $F = GMm/r^2$                            | $G$, $M$, $m$, $r$        | Inverse-square law   |
-| Gravitational field      | $g = GM/r^2$                             | $G$, $M$, $r$           | Force per unit mass  |
-| Gravitational PE         | $E_p = -GMm/r$                           | $G$, $M$, $m$, $r$        | Zero at infinity     |
-| Orbital speed            | $v = \sqrt{GM/r}$                        | $G$, $M$, $r$           | Circular orbit       |
-| Kepler's third law       | $T^2 = 4\pi^2 r^3 / (GM)$                | $T$, $r$, $G$, $M$        | $T^2 \propto r^3$    |
-| Escape velocity          | $v_e = \sqrt{2GM/r}$                     | $G$, $M$, $r$           | Independent of mass  |
+| Topic                    | Formula                                  | Variables             | Notes                |
+| ------------------------ | ---------------------------------------- | --------------------- | -------------------- |
+| Centripetal acceleration | $a_c = v^2/r = \omega^2 r$               | $v$, $r$, $\omega$    | Always toward centre |
+| Centripetal force        | $F_c = mv^2/r$                           | $m$, $v$, $r$         | Net inward force     |
+| Universal gravitation    | $F = GMm/r^2$                            | $G$, $M$, $m$, $r$    | Inverse-square law   |
+| Gravitational field      | $g = GM/r^2$                             | $G$, $M$, $r$         | Force per unit mass  |
+| Gravitational PE         | $E_p = -GMm/r$                           | $G$, $M$, $m$, $r$    | Zero at infinity     |
+| Orbital speed            | $v = \sqrt{GM/r}$                        | $G$, $M$, $r$         | Circular orbit       |
+| Kepler's third law       | $T^2 = 4\pi^2 r^3 / (GM)$                | $T$, $r$, $G$, $M$    | $T^2 \propto r^3$    |
+| Escape velocity          | $v_e = \sqrt{2GM/r}$                     | $G$, $M$, $r$         | Independent of mass  |
 | Wien's law               | $\lambda_{\max}T = 2.898 \times 10^{-3}$ | $\lambda_{\max}$, $T$ | Peak wavelength      |
-| Stefan-Boltzmann         | $L = 4\pi r^2\sigma T^4$                 | $L$$r$$\sigma$$T$   | Total power output   |
-| Hubble's law             | $v = H_0 d$                              | $v$$H_0$$d$         | Recession velocity   |
+| Stefan-Boltzmann         | $L = 4\pi r^2\sigma T^4$                 | $L$$r$$\sigma$$T$     | Total power output   |
+| Hubble's law             | $v = H_0 d$                              | $v$$H_0$$d$           | Recession velocity   |
 
 ## 16. Practice Questions (Additional)
 

@@ -1,6 +1,8 @@
 ---
 title: Linear Algebra
-description: 'University Mathematics Linear Algebra notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'University Mathematics Linear Algebra notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics
@@ -255,7 +257,8 @@ all $\alpha_j$ are zero.
 
 After relabelling, assume $\alpha_1 \neq 0$. Then
 $\mathbf{w}_1 = \alpha_1^{-1}(\mathbf{u}_k - \sum_{j=2}^m \alpha_j \mathbf{w}_j)$ So
-$\mathbf{w}_1 \in \mathrm{span}\{\mathbf{u}_k, \mathbf{w}_2, \ldots, \mathbf{w}_m\}$. It follows that
+$\mathbf{w}_1 \in \mathrm{span}\{\mathbf{u}_k, \mathbf{w}_2, \ldots, \mathbf{w}_m\}$. It follows
+that
 
 $$\mathrm{span}\{\mathbf{w}_1, \ldots, \mathbf{w}_m\} = \mathrm{span}\{\mathbf{u}_k, \mathbf{w}_2, \ldots, \mathbf{w}_m\} = V$$
 
@@ -350,9 +353,8 @@ $\blacksquare$
 
 </details>
 
-**Problem.** Determine whether the vectors
-$\mathbf{v}_1 = (1, 2, 3)$, $\mathbf{v}_2 = (4, 5, 6)$, $\mathbf{v}_3 = (7, 8, 9)$ form a basis For
-$\mathbb{R}^3$.
+**Problem.** Determine whether the vectors $\mathbf{v}_1 = (1, 2, 3)$, $\mathbf{v}_2 = (4, 5, 6)$,
+$\mathbf{v}_3 = (7, 8, 9)$ form a basis For $\mathbb{R}^3$.
 
 <details>
 <summary>Solution</summary>
@@ -797,8 +799,8 @@ $A^T(A\mathbf{x} - \mathbf{b}) = \mathbf{0}$ Or $A^T A \mathbf{x} = A^T \mathbf{
 column rank, then $\ker(A) = \{\mathbf{0}\}$ So $\ker(A^T A) = \ker(A) = \{\mathbf{0}\}$Meaning
 $A^T A$ is invertible. $\blacksquare$
 
-**Problem.** Find the least squares line $y = ax + b$ fitting the data points
-$(1, 1)$, $(2, 1)$, $(3, 3)$.
+**Problem.** Find the least squares line $y = ax + b$ fitting the data points $(1, 1)$, $(2, 1)$,
+$(3, 3)$.
 
 <details>
 <summary>Solution</summary>
@@ -1180,7 +1182,8 @@ _Proof._ $T(\mathbf{0}) = T(0 \cdot \mathbf{0}) = 0 \cdot T(\mathbf{0}) = \mathb
 $T(-\mathbf{v}) = T((-1)\mathbf{v}) = (-1)T(\mathbf{v}) = -T(\mathbf{v})$. Property (3) follows by
 Induction. $\blacksquare$
 
-<DesmosGraph title="2D Rotation of the Unit Circle" expressions={["x^2+y^2=1", "(x\\cos(a)-y\\sin(a),x\\sin(a)+y\\cos(a))"]} width={800} height={500} />
+<DesmosGraph title="2D Rotation of the Unit Circle" expressions={["x^2+y^2=1",
+"(x\\cos(a)-y\\sin(a),x\\sin(a)+y\\cos(a))"]} width={800} height={500} />
 
 ### 6.2 Matrix Representation
 
@@ -1240,10 +1243,11 @@ $\mathrm{im}(T) = W$.
 **Corollary 6.5.** If $\dim(V) = \dim(W) \lt \infty$Then $T$ is injective if and only if $T$ is
 surjective.
 
-_Proof._ If $T$ is injective, $\ker(T) = \{\mathbf{0}\}$So $\dim(\mathrm{im}(T)) = \dim(V) = \dim(W)$
-Hence $\mathrm{im}(T) = W$ (a subspace of full dimension equals the whole space). Conversely, If $T$
-is surjective, $\dim(\mathrm{im}(T)) = \dim(W) = \dim(V)$So $\dim(\ker(T)) = 0$Giving
-$\ker(T) = \{\mathbf{0}\}$. $\blacksquare$
+_Proof._ If $T$ is injective, $\ker(T) = \{\mathbf{0}\}$So
+$\dim(\mathrm{im}(T)) = \dim(V) = \dim(W)$ Hence $\mathrm{im}(T) = W$ (a subspace of full dimension
+equals the whole space). Conversely, If $T$ is surjective,
+$\dim(\mathrm{im}(T)) = \dim(W) = \dim(V)$So $\dim(\ker(T)) = 0$Giving $\ker(T) = \{\mathbf{0}\}$.
+$\blacksquare$
 
 ### 6.6 Change of Basis
 
@@ -1301,8 +1305,8 @@ _Proof._ Let $\{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ be a basis for $V$. Define
 $\{\varphi_1, \ldots, \varphi_n\} \subseteq V^*$ by $\varphi_i(\mathbf{e}_j) = \delta_{ij}$ (the
 Kronecker Delta). Each $\varphi_i$ is a well-defined linear functional since it is defined on a
 basis and Extended linearly. These are linearly independent: if $\sum c_i \varphi_i = 0$Then
-applying to $\mathbf{e}_j$ gives $c_j = 0$. They span $V^*$: for any
-$f \in V^*$, $f = \sum_{i=1}^n f(\mathbf{e}_i)\varphi_i$. $\blacksquare$
+applying to $\mathbf{e}_j$ gives $c_j = 0$. They span $V^*$: for any $f \in V^*$,
+$f = \sum_{i=1}^n f(\mathbf{e}_i)\varphi_i$. $\blacksquare$
 
 **Definition.** The **double dual** of $V$ is $V^{**} = (V^*)^*$.
 
@@ -1440,8 +1444,8 @@ $$\mathbf{u}_k = \mathbf{v}_k - \sum_{i=1}^{k-1} \langle \mathbf{v}_k, e_i \rang
 $\mathrm{span}\{e_1, \ldots, e_k\} = \mathrm{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$.
 
 _Proof._ By construction, $\mathbf{u}_k$ is $\mathbf{v}_k$ minus its projection onto
-$\mathrm{span}\{e_1, \ldots, e_{k-1}\} = \mathrm{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_{k-1}\}$. So
-$\mathbf{u}_k \in \mathrm{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ and
+$\mathrm{span}\{e_1, \ldots, e_{k-1}\} = \mathrm{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_{k-1}\}$.
+So $\mathbf{u}_k \in \mathrm{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ and
 $\mathbf{v}_k = \mathbf{u}_k + \sum_{i=1}^{k-1}\langle \mathbf{v}_k, e_i \rangle e_i \in \mathrm{span}\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$.
 Since each $e_i$ is a scalar multiple of $\mathbf{u}_i$The spans coincide. $\blacksquare$
 
@@ -1481,11 +1485,13 @@ Product.
 <details>
 <summary>Solution</summary>
 
-$\mathbf{u}_1 = \mathbf{v}_1 = (1, 1, 0)$, $\lVert \mathbf{u}_1 \rVert = \sqrt{2}$, $e_1 = \frac{1}{\sqrt{2}}(1, 1, 0)$.
+$\mathbf{u}_1 = \mathbf{v}_1 = (1, 1, 0)$, $\lVert \mathbf{u}_1 \rVert = \sqrt{2}$,
+$e_1 = \frac{1}{\sqrt{2}}(1, 1, 0)$.
 
 $\mathbf{u}_2 = \mathbf{v}_2 - \langle \mathbf{v}_2, e_1 \rangle e_1 = (1, 0, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0) = (1, 0, 1) - \frac{1}{2}(1, 1, 0) = (\frac{1}{2}, -\frac{1}{2}, 1)$
 
-$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$, $e_2 = \frac{1}{\sqrt{3/2}}(\frac{1}{2}, -\frac{1}{2}, 1) = \frac{1}{\sqrt{6}}(1, -1, 2)$.
+$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1/4 + 1} = \sqrt{3/2}$,
+$e_2 = \frac{1}{\sqrt{3/2}}(\frac{1}{2}, -\frac{1}{2}, 1) = \frac{1}{\sqrt{6}}(1, -1, 2)$.
 
 $\mathbf{u}_3 = \mathbf{v}_3 - \langle \mathbf{v}_3, e_1 \rangle e_1 - \langle \mathbf{v}_3, e_2 \rangle e_2$
 
@@ -1497,7 +1503,8 @@ $\mathbf{u}_3 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 1, 0)
 
 $= (-\frac{1}{2} - \frac{1}{6}, 1 - \frac{1}{2} + \frac{1}{6}, 1 - \frac{1}{3}) = (-\frac{2}{3}, \frac{2}{3}, \frac{2}{3})$
 
-$\lVert \mathbf{u}_3 \rVert = \sqrt{4/9 + 4/9 + 4/9} = \sqrt{4/3} = 2/\sqrt{3}$, $e_3 = \frac{\sqrt{3}}{2}(-\frac{2}{3}, \frac{2}{3}, \frac{2}{3}) = \frac{1}{\sqrt{3}}(-1, 1, 1)$.
+$\lVert \mathbf{u}_3 \rVert = \sqrt{4/9 + 4/9 + 4/9} = \sqrt{4/3} = 2/\sqrt{3}$,
+$e_3 = \frac{\sqrt{3}}{2}(-\frac{2}{3}, \frac{2}{3}, \frac{2}{3}) = \frac{1}{\sqrt{3}}(-1, 1, 1)$.
 
 **Verification:** $\langle e_1, e_2 \rangle = \frac{1}{\sqrt{12}}(1 - 1 + 0) = 0$. $\checkmark$
 $\langle e_1, e_3 \rangle = \frac{1}{\sqrt{6}}(-1 + 1 + 0) = 0$. $\checkmark$
@@ -1524,11 +1531,13 @@ distance from $\mathbf{v}$ to $W$.
 
 First, apply Gram--Schmidt to obtain an orthonormal basis for $W$.
 
-$\mathbf{u}_1 = (1, 0, 1)$, $\lVert \mathbf{u}_1 \rVert = \sqrt{2}$, $e_1 = \frac{1}{\sqrt{2}}(1, 0, 1)$.
+$\mathbf{u}_1 = (1, 0, 1)$, $\lVert \mathbf{u}_1 \rVert = \sqrt{2}$,
+$e_1 = \frac{1}{\sqrt{2}}(1, 0, 1)$.
 
 $\mathbf{u}_2 = (0, 1, 1) - \langle (0,1,1), e_1 \rangle e_1 = (0, 1, 1) - \frac{1}{\sqrt{2}} \cdot \frac{1}{\sqrt{2}}(1, 0, 1) = (0, 1, 1) - \frac{1}{2}(1, 0, 1) = (-\frac{1}{2}, 1, \frac{1}{2})$.
 
-$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1 + 1/4} = \sqrt{3/2}$, $e_2 = \frac{1}{\sqrt{6}}(-1, 2, 1)$.
+$\lVert \mathbf{u}_2 \rVert = \sqrt{1/4 + 1 + 1/4} = \sqrt{3/2}$,
+$e_2 = \frac{1}{\sqrt{6}}(-1, 2, 1)$.
 
 Now compute the projection:
 
@@ -1577,8 +1586,9 @@ $\blacksquare$
 - **Gram--Schmidt is numerically unstable.** For floating-point computation, modified Gram--Schmidt
   or Householder reflections are preferred.
 - **Orthogonal projection decomposes $\mathbf{v}$ uniquely.**
-  $\mathbf{v} = \mathrm{proj_W}(\mathbf{v}) + \mathbf{v}^\perp$ where $\mathbf{v}^\perp \in W^\perp$.
-  This decomposition is unique and is called the **orthogonal decomposition**.
+  $\mathbf{v} = \mathrm{proj_W}(\mathbf{v}) + \mathbf{v}^\perp$ where
+  $\mathbf{v}^\perp \in W^\perp$. This decomposition is unique and is called the **orthogonal
+  decomposition**.
 
 ---
 
@@ -1816,8 +1826,8 @@ Characteristic polynomial: $\lambda^3 - 5\lambda^2 + 6\lambda - 3 = 0$.
 Testing $\lambda = 1$: $1 - 5 + 6 - 3 = -1 \neq 0$. Testing $\lambda = 3$:
 $27 - 45 + 18 - 3 = -3 \neq 0$.
 
-By the trigonometric method for cubics or numerical approximation,
-$\lambda_1 \approx 3.35$, $\lambda_2 \approx 1.35$, $\lambda_3 \approx 0.30$.
+By the trigonometric method for cubics or numerical approximation, $\lambda_1 \approx 3.35$,
+$\lambda_2 \approx 1.35$, $\lambda_3 \approx 0.30$.
 
 The best rank-1 approximation uses only $\sigma_1 = \sqrt{\lambda_1} \approx 1.83$ and its
 corresponding singular vectors, yielding $A_1 = \sigma_1 \mathbf{u}_1 \mathbf{v}_1^T$ with error
@@ -1909,8 +1919,8 @@ $\mathcal{P}_2(\mathbb{R})$.
 <summary>Solution</summary>
 
 Suppose $a(1 - x) + b(1 + x) + cx^2 = 0$ as a polynomial. Then $(a + b) + (-a + b)x + cx^2 = 0$So
-$a + b = 0$, $-a + b = 0$, $c = 0$. From the first two equations: $2a = 0$So $a = 0$Then $b = 0$. Since
-$a = b = c = 0$The set is linearly independent.
+$a + b = 0$, $-a + b = 0$, $c = 0$. From the first two equations: $2a = 0$So $a = 0$Then $b = 0$.
+Since $a = b = c = 0$The set is linearly independent.
 
 _If you get this wrong, revise: Section 2.1 (Linear Independence)._
 
@@ -1927,15 +1937,15 @@ Row-reduce $A$:
 
 $$\begin{pmatrix} 1 & 2 & 1 & 4 \\ 2 & 4 & 0 & 6 \\ 3 & 6 & 1 & 10 \end{pmatrix} \xrightarrow{R_2 - 2R_1, R_3 - 3R_1} \begin{pmatrix} 1 & 2 & 1 & 4 \\ 0 & 0 & -2 & -2 \\ 0 & 0 & -2 & -2 \end{pmatrix} \xrightarrow{R_3 - R_2} \begin{pmatrix} 1 & 2 & 1 & 4 \\ 0 & 0 & -2 & -2 \\ 0 & 0 & 0 & 0 \end{pmatrix}$$
 
-Pivots are in columns 1 and 3. A basis for $\mathrm{col}(A)$ is $\{(1, 2, 3), (1, 0, 1)\}$ (the pivot
-columns of the original $A$). $\dim(\mathrm{col}(A)) = 2$.
+Pivots are in columns 1 and 3. A basis for $\mathrm{col}(A)$ is $\{(1, 2, 3), (1, 0, 1)\}$ (the
+pivot columns of the original $A$). $\dim(\mathrm{col}(A)) = 2$.
 
 _If you get this wrong, revise: Section 2.7 (Worked Examples)._
 
 </details>
 
-**Problem 5.** Let $U = \mathrm{span}\{(1, 0, 1), (0, 1, 1)\}$ and $W = \mathrm{span}\{(1, 1, 0)\}$ in
-$\mathbb{R}^3$. Verify the dimension formula $\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W)$.
+**Problem 5.** Let $U = \mathrm{span}\{(1, 0, 1), (0, 1, 1)\}$ and $W = \mathrm{span}\{(1, 1, 0)\}$
+in $\mathbb{R}^3$. Verify the dimension formula $\dim(U + W) = \dim(U) + \dim(W) - \dim(U \cap W)$.
 
 <details>
 <summary>Solution</summary>
@@ -2035,7 +2045,8 @@ $$\begin{aligned} x + y + z &= 1 \\ 2x + 2y + 2z &= 3 \\ x - y + z &= 0 \end{ali
 $$[A \mid \mathbf{b}] = \begin{pmatrix} 1 & 1 & 1 & 1 \\ 2 & 2 & 2 & 3 \\ 1 & -1 & 1 & 0 \end{pmatrix} \xrightarrow{R_2 - 2R_1, R_3 - R_1} \begin{pmatrix} 1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 \\ 0 & -2 & 0 & -1 \end{pmatrix}$$
 
 $\mathrm{rank}(A) = 2$ but $\mathrm{rank}([A \mid \mathbf{b}]) = 3$ (the row $[0\ 0\ 0\ 1]$ is
-Non-zero). Since $\mathrm{rank}(A) \neq \mathrm{rank}([A \mid \mathbf{b}])$The system is inconsistent.
+Non-zero). Since $\mathrm{rank}(A) \neq \mathrm{rank}([A \mid \mathbf{b}])$The system is
+inconsistent.
 
 _If you get this wrong, revise: Section 4.2 (Rouché--Capelli Theorem)._
 
@@ -2071,9 +2082,11 @@ $$A = \begin{pmatrix} 1 & 0 \\ 1 & 1 \\ 1 & 2 \end{pmatrix}, \quad \mathbf{b} = 
 <details>
 <summary>Solution</summary>
 
-$A^T A = \begin{pmatrix} 3 & 3 \\ 3 & 5 \end{pmatrix}$, $A^T \mathbf{b} = \begin{pmatrix} 2 \\ 3 \end{pmatrix}$.
+$A^T A = \begin{pmatrix} 3 & 3 \\ 3 & 5 \end{pmatrix}$,
+$A^T \mathbf{b} = \begin{pmatrix} 2 \\ 3 \end{pmatrix}$.
 
-$\det(A^T A) = 15 - 9 = 6$, $(A^T A)^{-1} = \frac{1}{6}\begin{pmatrix} 5 & -3 \\ -3 & 3 \end{pmatrix}$
+$\det(A^T A) = 15 - 9 = 6$,
+$(A^T A)^{-1} = \frac{1}{6}\begin{pmatrix} 5 & -3 \\ -3 & 3 \end{pmatrix}$
 
 $\hat{\mathbf{x}} = \frac{1}{6}\begin{pmatrix} 5 & -3 \\ -3 & 3 \end{pmatrix}\begin{pmatrix} 2 \\ 3 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 10 - 9 \\ -6 + 9 \end{pmatrix} = \frac{1}{6}\begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} 1/6 \\ 1/2 \end{pmatrix}$
 
@@ -2131,8 +2144,8 @@ _If you get this wrong, revise: Section 5.3 (Diagonalisation)._
 
 </details>
 
-**Problem 15.** Use the Cayley--Hamilton theorem to express $A^3$ as a linear combination of
-$A^2$, $A$ And $I$Where $A = \begin{pmatrix} 1 & 2 \\ -1 & 3 \end{pmatrix}$.
+**Problem 15.** Use the Cayley--Hamilton theorem to express $A^3$ as a linear combination of $A^2$,
+$A$ And $I$Where $A = \begin{pmatrix} 1 & 2 \\ -1 & 3 \end{pmatrix}$.
 
 <details>
 <summary>Solution</summary>
@@ -2275,7 +2288,8 @@ $$[T]_{\mathcal{B}} = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 2 \\ 0 & 0 & 0 \end{p
 
 $\ker(T) = \{p : p' = 0\} = \mathrm{span}\{1\}$So $\dim(\ker(T)) = 1$.
 
-$\mathrm{im}(T) = \{p' : p \in \mathcal{P}_2\} = \mathrm{span}\{1, x\}$So $\dim(\mathrm{im}(T)) = 2$.
+$\mathrm{im}(T) = \{p' : p \in \mathcal{P}_2\} = \mathrm{span}\{1, x\}$So
+$\dim(\mathrm{im}(T)) = 2$.
 
 Verify: $\dim(\ker(T)) + \dim(\mathrm{im}(T)) = 1 + 2 = 3 = \dim(\mathcal{P}_2)$. $\blacksquare$
 

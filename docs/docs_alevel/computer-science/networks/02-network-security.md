@@ -1,6 +1,8 @@
 ---
 title: Network Security
-description: 'A-Level Computer Science Network Security notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'A-Level Computer Science Network Security notes covering key definitions, core concepts, worked
+  examples, and practice questions for methodical revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

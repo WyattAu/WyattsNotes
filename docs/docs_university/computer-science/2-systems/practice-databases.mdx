@@ -1,0 +1,151 @@
+---
+title: 'Databases -- Practice Problems'
+description:
+  'University Databases -- Practice Problems with MCQ questions covering SQL, normalization, ACID
+  transactions, indexing, and query optimization for self-assessment and revision.'
+slug: practice-databases
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Databases -- Practice Problems
+
+10 MCQ questions covering SQL queries, normalization (1NF to BCNF), ACID properties, indexing
+strategies, and query optimization. Select an option to check your answer and view the explanation.
+
+---
+
+## SQL and Normalization
+
+<PracticeProblem
+  question="Which SQL clause filters aggregated results after grouping, as opposed to filtering individual rows before grouping?"
+  options={[
+    'HAVING filters after GROUP BY; WHERE filters before GROUP BY',
+    'WHERE filters after GROUP BY; HAVING filters before GROUP BY',
+    'Both WHERE and HAVING filter before GROUP BY',
+    'Neither filters aggregated results; you must use a subquery',
+  ]}
+  correctAnswer={0}
+  explanation"WHERE applies to individual rows before aggregation (filtering input to GROUP BY). HAVING applies to groups after aggregation (filtering the result of GROUP BY). Example: SELECT dept, AVG(salary) FROM emp GROUP BY dept HAVING COUNT(*) > 5 filters departments with more than 5 employees."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A relation $R(A, B, C, D, E)$ has functional dependencies $AB \\to C$, $C \\to D$, and $D \\to E$. Which normal forms are violated?"
+  options={[
+    '3NF and BCNF are violated (transitive dependencies $C \\to D \\to E$)',
+    'Only 2NF is violated',
+    'Only BCNF is violated; 3NF is satisfied',
+    'The relation is already in BCNF',
+  ]}
+  correctAnswer={0}
+  explanation"The candidate key is $\\{A, B\\}$. There are no partial dependencies (since AB is the key, and $C$ depends on all of AB). However, $C \\to D$ and $D \\to E$ are transitive dependencies: non-prime attributes $D$ and $E$ depend on $C$ rather than directly on the key. This violates 3NF (and BCNF). Decompose into $R_1(A,B,C)$, $R_2(C,D)$, $R_3(D,E)$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Boyce-Codd Normal Form (BCNF) requires that for every non-trivial functional dependency $X \\to Y$ in a relation:"
+  options={[
+    '$X$ must be a superkey',
+    '$X$ must be the primary key',
+    '$Y$ must be a prime attribute',
+    '$X$ must contain at least one prime attribute',
+  ]}
+  correctAnswer={0}
+  explanation"BCNF is stricter than 3NF: for every non-trivial FD $X \\to Y$, $X$ must be a superkey (a superset of some candidate key). 3NF allows $X \\to Y$ if $Y$ is a prime attribute, even when $X$ is not a superkey. BCNF decomposition may cause lossless-join issues that 3NF decomposition avoids."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In the relational algebra expression $\\sigma_{\\text{dept}='CS'}(\\pi_{\\text{name, gpa}}(\\text{Students}))$, in what order are the operations applied?"
+  options={[
+    'Projection first, then selection (inside out)',
+    'Selection first, then projection',
+    'Both are applied simultaneously',
+    'The order depends on the query optimizer',
+  ]}
+  correctAnswer={0}
+  explanation"Relational algebra is applied inside-out (like nested function calls). First, $\\pi_{\\text{name, gpa}}(\\text{Students})$ projects only the name and gpa columns from Students. Then, $\\sigma_{\\text{dept}='CS'}$ filters the projected result. A query optimizer might push the selection down before projection for efficiency (selection pushdown), but the expression as written applies projection first."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Armstrong's Axioms for functional dependencies include reflexivity ($Y \\subseteq X \\Rightarrow X \\to Y$), augmentation ($X \\to Y \\Rightarrow XZ \\to YZ$), and transitivity ($X \\to Y, Y \\to Z \\Rightarrow X \\to Z$). Which derived rule states that $X \\to Y$ and $X \\to Z$ implies $X \\to YZ$?"
+  options={[
+    'Union rule',
+    'Decomposition rule',
+    'Pseudotransitivity rule',
+    'Reflexivity rule',
+  ]}
+  correctAnswer={0}
+  explanation"The union rule: if $X \\to Y$ and $X \\to Z$, then $X \\to YZ$. Proof: from $X \\to Y$, by augmentation with $Z$: $XZ \\to YZ$. Since $X \\to Z$, by augmentation with $X$: $XX \\to XZ$, i.e., $X \\to XZ$. By transitivity: $X \\to YZ$. The decomposition rule is the reverse: $X \\to YZ$ implies $X \\to Y$ and $X \\to Z$."
+  difficulty="medium"
+/>
+
+## Indexing, Transactions, and Query Optimization
+
+<PracticeProblem
+  question="A B+ tree of order $d$ stores keys in internal nodes and all values in leaf nodes connected as a linked list. What makes B+ trees particularly efficient for range queries?"
+  options={[
+    'Leaves are linked, allowing sequential scan after finding the start key in $O(\\log_d n)$',
+    'Internal nodes store all data, enabling direct access',
+    'Hash-based lookups provide $O(1)$ range access',
+    'Bitmap indexes are used for range scans',
+  ]}
+  correctAnswer={0}
+  explanation"B+ tree leaves are connected via pointers forming a linked list in sorted order. A range query first finds the starting key in $O(\\log_d n)$, then scans sequentially through the leaf list. Total cost: $O(\\log_d n + k)$ where $k$ is the number of results. The parameter $d$ is chosen so one node fits in a disk block."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Under the REPEATABLE READ isolation level, which anomaly is still possible?"
+  options={[
+    'Phantom reads (new rows appear in a repeated range query)',
+    'Dirty reads (reading uncommitted data)',
+    'Non-repeatable reads (same query returns different results within a transaction)',
+    'Both dirty reads and non-repeatable reads',
+  ]}
+  correctAnswer={0}
+  explanation"REPEATABLE READ prevents dirty reads (no uncommitted data) and non-repeatable reads (locks acquired on read rows prevent modifications). However, it does not prevent phantom reads: new rows inserted by another transaction into the range of a repeated query will appear, because the locks are on existing rows, not on gaps in the range."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In Multi-Version Concurrency Control (MVCC), how are readers and writers handled to avoid blocking?"
+  options={[
+    'Readers see a consistent snapshot (old version); writers create new versions without blocking readers',
+    'Both readers and writers acquire exclusive locks on rows',
+    'Readers block writers and writers block readers',
+    'Only one transaction can access any row at any time',
+  ]}
+  correctAnswer={0}
+  explanation"MVCC maintains multiple versions of each row with version start/end timestamps. Readers see the version that was current when their transaction began (snapshot isolation), while writers create new versions. This eliminates reader-writer blocking. Garbage collection removes old versions no longer visible to any active transaction. Used by PostgreSQL and MySQL InnoDB."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Which join algorithm has cost $O(|R| + |S|)$ and is most efficient when one relation fits entirely in memory?"
+  options={[
+    'Hash join',
+    'Nested-loop join',
+    'Sort-merge join',
+    'Block nested-loop join',
+  ]}
+  correctAnswer={0}
+  explanation"The hash join has two phases: build (hash all tuples of the smaller relation $R$ into a hash table) and probe (scan $S$ and look up matches). Cost is $O(|R| + |S|)$. It requires $O(\\min(|R|, |S|))$ memory for the hash table. Nested-loop is $O(|R| \\cdot |S|)$. Sort-merge is $O(|R|\\log|R| + |S|\\log|S|)$."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Bitmap indexes are most appropriate for columns with which characteristic?"
+  options={[
+    'Low cardinality (few distinct values)',
+    'High cardinality (many distinct values)',
+    'Continuous numeric values',
+    'Variable-length text data',
+  ]}
+  correctAnswer={0}
+  explanation"Bitmap indexes store one bitmap per distinct value, where each bit represents whether a row has that value. For low-cardinality columns (e.g., gender, status flags), this is efficient: few bitmaps, fast bitwise AND/OR for queries. For high-cardinality columns, the number of bitmaps grows prohibitively. B+ tree or hash indexes are better for high-cardinality data."
+  difficulty="easy"
+/>

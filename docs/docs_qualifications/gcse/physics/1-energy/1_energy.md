@@ -1,6 +1,8 @@
 ---
 title: Energy
-description: 'GCSE Physics Energy notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and mastery.'
+description:
+  'GCSE Physics Energy notes covering key definitions, core concepts, worked examples, and practice
+  questions for thorough exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - gcse

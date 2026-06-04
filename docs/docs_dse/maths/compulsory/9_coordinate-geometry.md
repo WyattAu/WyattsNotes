@@ -1,6 +1,8 @@
 ---
 title: Coordinate Geometry
-description: 'DSE Maths Coordinate Geometry notes covering key definitions, core concepts, worked examples, and practice questions for in-depth study and thorough revision.'
+description:
+  'DSE Maths Coordinate Geometry notes covering key definitions, core concepts, worked examples, and
+  practice questions for in-depth study and thorough revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -394,9 +396,8 @@ $\ell_1 \cap \ell_2$: Adding the equations gives $2x = 8 \implies x = 4$, $y = 2
 
 $\ell_1 \cap \ell_3$: Subtracting $\ell_1$ from $\ell_3$ gives $x = 3$, $y = 3$. Vertex $B(3, 3)$.
 
-$\ell_2 \cap \ell_3$: Adding the equations gives
-$3x = 11 \implies x = \dfrac{11}{3}$, $y = \dfrac{5}{3}$. Vertex
-$C\!\left(\dfrac{11}{3}, \dfrac{5}{3}\right)$.
+$\ell_2 \cap \ell_3$: Adding the equations gives $3x = 11 \implies x = \dfrac{11}{3}$,
+$y = \dfrac{5}{3}$. Vertex $C\!\left(\dfrac{11}{3}, \dfrac{5}{3}\right)$.
 
 Using the area formula:
 
@@ -473,8 +474,8 @@ Verification: $(4-2)^2 + (1-1)^2 = 4 = r^2$. Correct.
    $d = \dfrac{|C_2 - C_1|}{\sqrt{A^2 + B^2}}$Ensure both equations have identical $A$ and $B$
    coefficients. If one equation is a scalar multiple of the other, rescale first.
 
-4. **Assuming two circles always intersect.** Two circles with centres $O_1$, $O_2$ and radii
-   $r_1$, $r_2$ intersect at two points only when $|r_1 - r_2| \lt d \lt r_1 + r_2$Where $d$ is the
+4. **Assuming two circles always intersect.** Two circles with centres $O_1$, $O_2$ and radii $r_1$,
+   $r_2$ intersect at two points only when $|r_1 - r_2| \lt d \lt r_1 + r_2$Where $d$ is the
    distance between centres.
 
 5. **Undefined slope of vertical lines.** The line $x = a$ has no defined slope. Never assign a
@@ -495,8 +496,8 @@ Verification: $(4-2)^2 + (1-1)^2 = 4 = r^2$. Correct.
 
 ## Exam-Style Problems
 
-**Problem 1.** The points $A(-2, 3)$, $B(4, 7)$And $C(k, -1)$ form a triangle with area $30$. Find the
-possible values of $k$.
+**Problem 1.** The points $A(-2, 3)$, $B(4, 7)$And $C(k, -1)$ form a triangle with area $30$. Find
+the possible values of $k$.
 
 <details>
 <summary>Solution</summary>

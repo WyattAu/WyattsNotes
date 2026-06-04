@@ -266,8 +266,8 @@ Conditions.
 
 | Initial condition                         | Preferred form                   | Rationale                      |
 | ----------------------------------------- | -------------------------------- | ------------------------------ |
-| Released from $x = A$ with $v = 0$        | $x = A\cos(\omega t)$            | $\cos(0) = 1$, $\sin(0) = 0$     |
-| Released from $x = 0$ with $v = v_{\max}$ | $x = A\sin(\omega t)$            | $\sin(0) = 0$, $\cos(0) = 1$     |
+| Released from $x = A$ with $v = 0$        | $x = A\cos(\omega t)$            | $\cos(0) = 1$, $\sin(0) = 0$   |
+| Released from $x = 0$ with $v = v_{\max}$ | $x = A\sin(\omega t)$            | $\sin(0) = 0$, $\cos(0) = 1$   |
 | General initial state                     | Either with appropriate $\phi_0$ | Phase angle absorbs the offset |
 
 The IB data booklet uses the sine convention ($x = x_0 \sin(\omega t + \Phi)$). Both conventions are

@@ -1,6 +1,8 @@
 ---
 title: Networks
-description: 'GCSE Computer Science Networks notes covering key definitions, core concepts, worked examples, and practice questions for effective revision and exam readiness.'
+description:
+  'GCSE Computer Science Networks notes covering key definitions, core concepts, worked examples,
+  and practice questions for effective revision and exam readiness.'
 date: 2026-04-14
 tags:
   - gcse

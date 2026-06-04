@@ -1,6 +1,8 @@
 ---
 title: Testing
-description: 'A-Level Computer Science Testing notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'A-Level Computer Science Testing notes covering key definitions, core concepts, worked examples,
+  and practice questions for effective revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - ComputerScience

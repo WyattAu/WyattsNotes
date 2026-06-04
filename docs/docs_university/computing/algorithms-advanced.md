@@ -1,6 +1,8 @@
 ---
 title: Algorithms (Advanced)
-description: 'University Computing Algorithms (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'University Computing Algorithms (Advanced) notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused revision.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing
@@ -100,12 +102,13 @@ $O(VE^2)$. $\blacksquare$
 
 Find the maximum flow from $s$ to $t$ in the following network:
 
-Edges with capacities:
-$s \xrightarrow{10} a$, $s \xrightarrow{8} b$, $a \xrightarrow{5} b$, $a \xrightarrow{7} c$, $a \xrightarrow{8} t$, $b \xrightarrow{10} c$, $b \xrightarrow{4} t$, $c \xrightarrow{6} t$.
+Edges with capacities: $s \xrightarrow{10} a$, $s \xrightarrow{8} b$, $a \xrightarrow{5} b$,
+$a \xrightarrow{7} c$, $a \xrightarrow{8} t$, $b \xrightarrow{10} c$, $b \xrightarrow{4} t$,
+$c \xrightarrow{6} t$.
 
-_Iteration 1:_ BFS finds $s \to a \to t$. Bottleneck = 8. Push 8. Residual:
-$s \xrightarrow{2} a$, $a \xrightarrow{8} t$ becomes $a \xrightarrow{0} t$ (saturated). Reverse
-$t \xrightarrow{8} a$. Flow: $|f| = 8$.
+_Iteration 1:_ BFS finds $s \to a \to t$. Bottleneck = 8. Push 8. Residual: $s \xrightarrow{2} a$,
+$a \xrightarrow{8} t$ becomes $a \xrightarrow{0} t$ (saturated). Reverse $t \xrightarrow{8} a$.
+Flow: $|f| = 8$.
 
 _Iteration 2:_ BFS finds $s \to a \to c \to t$. Bottleneck = $\min(2, 7, 6) = 2$. Push 2. Residual:
 $s \xrightarrow{0} a$ (saturated), $a \xrightarrow{5} c$, $c \xrightarrow{4} t$. Reverse edges:
@@ -128,8 +131,8 @@ saturated). Reverse: $a \xrightarrow{8} s$, $t \xrightarrow{8} a$.
 
 **Augmentation 2:** BFS: $s \to b \to t$. Residual = $\min(8, 4) = 4$.
 
-Flow after: $f(s,b) = 4$, $f(b,t) = 4$. Residual: $s \xrightarrow{4} b$, $b \xrightarrow{0} t$. Reverse:
-$b \xrightarrow{4} s$, $t \xrightarrow{4} b$.
+Flow after: $f(s,b) = 4$, $f(b,t) = 4$. Residual: $s \xrightarrow{4} b$, $b \xrightarrow{0} t$.
+Reverse: $b \xrightarrow{4} s$, $t \xrightarrow{4} b$.
 
 **Augmentation 3:** BFS: $s \to b \to c \to t$. Residual = $\min(4, 10, 6) = 4$.
 
@@ -220,7 +223,8 @@ maximum cost.
 
 Network with costs (shown as capacity/cost):
 
-$s \xrightarrow{3/2} a$, $s \xrightarrow{2/3} b$, $a \xrightarrow{2/1} b$, $a \xrightarrow{3/4} t$, $b \xrightarrow{1/2} t$, $b \xrightarrow{2/1} t$.
+$s \xrightarrow{3/2} a$, $s \xrightarrow{2/3} b$, $a \xrightarrow{2/1} b$, $a \xrightarrow{3/4} t$,
+$b \xrightarrow{1/2} t$, $b \xrightarrow{2/1} t$.
 
 Find minimum cost flow of value 4.
 
@@ -244,8 +248,8 @@ $\min(1, 3) = 1$. Push 1. Cost: $13 + 6 = 19$.
 
 Total flow = $2 + 1 + 1 = 4$. Total cost = 19.
 
-Flow assignment: $f(s,a) = 3$, $f(s,b) = 1$, $f(a,b) = 2$, $f(a,t) = 1$, $f(b,t) = 3$ (1 on first edge, 2 on
-second).
+Flow assignment: $f(s,a) = 3$, $f(s,b) = 1$, $f(a,b) = 2$, $f(a,t) = 1$, $f(b,t) = 3$ (1 on first
+edge, 2 on second).
 
 Verify: inflow at $s$ = $3 + 1 = 4$ = outflow at $t$ = $1 + 3 = 4$. ✓ Node $a$: inflow = 3, outflow
 = $2 + 1 = 3$. ✓ Node $b$: inflow = $1 + 2 = 3$Outflow = $1 + 2 = 3$. ✓
@@ -500,11 +504,11 @@ Compute prefix function:
 
 $\pi = [0, 0, 1, 2, 3, 0, 1]$.
 
-Search in $T = \text{abababaca}$: $i=0$: $T[0]=\text{a}=P[0]$, $k=1$. $i=1$: $T[1]=\text{b}=P[1]$, $k=2$.
-$i=2$: $T[2]=\text{a}=P[2]$, $k=3$. $i=3$: $T[3]=\text{b}=P[3]$, $k=4$. $i=4$: $T[4]=\text{a}=P[4]$, $k=5$.
-$i=5$: $T[5]=\text{b} \neq P[5]=\text{c}$. $k=\pi[4]=3$. $P[3]=\text{b}=T[5]$, $k=4$. $i=6$:
-$T[6]=\text{a}=P[4]$, $k=5$. $i=7$: $T[7]=\text{c}=P[5]$, $k=6$. $i=8$: $T[8]=\text{a}=P[6]$, $k=7=m$. Match
-at $8-7+1=2$.
+Search in $T = \text{abababaca}$: $i=0$: $T[0]=\text{a}=P[0]$, $k=1$. $i=1$: $T[1]=\text{b}=P[1]$,
+$k=2$. $i=2$: $T[2]=\text{a}=P[2]$, $k=3$. $i=3$: $T[3]=\text{b}=P[3]$, $k=4$. $i=4$:
+$T[4]=\text{a}=P[4]$, $k=5$. $i=5$: $T[5]=\text{b} \neq P[5]=\text{c}$. $k=\pi[4]=3$.
+$P[3]=\text{b}=T[5]$, $k=4$. $i=6$: $T[6]=\text{a}=P[4]$, $k=5$. $i=7$: $T[7]=\text{c}=P[5]$, $k=6$.
+$i=8$: $T[8]=\text{a}=P[6]$, $k=7=m$. Match at $8-7+1=2$.
 
 Pattern found at position 2.
 
@@ -654,11 +658,11 @@ $\blacksquare$
 
 ### 5.5 Inapproximability
 
-**Theorem 5.4 (PCP Theorem).** Unless $\text{P} = \text{NP}$There is no polynomial-time algorithm that
-approximates MAX-3SAT to within any constant factor better than $7/8$.
+**Theorem 5.4 (PCP Theorem).** Unless $\text{P} = \text{NP}$There is no polynomial-time algorithm
+that approximates MAX-3SAT to within any constant factor better than $7/8$.
 
-**Theorem 5.5.** Unless $\text{P} = \text{NP}$TSP (without triangle inequality) cannot be approximated
-to within any polynomial factor.
+**Theorem 5.5.** Unless $\text{P} = \text{NP}$TSP (without triangle inequality) cannot be
+approximated to within any polynomial factor.
 
 ## 6. Randomised Algorithms
 
@@ -761,8 +765,9 @@ amortised. Total: $O(V \log V + E)$. $\blacksquare$
 <details>
 <summary>Worked Example: Prim's Algorithm Step by Step</summary>
 
-Graph with 5 vertices and weighted edges:
-$A \xrightarrow{4} B$, $A \xrightarrow{1} C$, $B \xrightarrow{2} C$, $B \xrightarrow{5} D$, $C \xrightarrow{8} D$, $C \xrightarrow{7} E$, $D \xrightarrow{3} E$, $A \xrightarrow{6} E$.
+Graph with 5 vertices and weighted edges: $A \xrightarrow{4} B$, $A \xrightarrow{1} C$,
+$B \xrightarrow{2} C$, $B \xrightarrow{5} D$, $C \xrightarrow{8} D$, $C \xrightarrow{7} E$,
+$D \xrightarrow{3} E$, $A \xrightarrow{6} E$.
 
 Start at vertex $A$. Key values: $A = 0$, $B = \infty$, $C = \infty$, $D = \infty$, $E = \infty$.
 
@@ -979,8 +984,8 @@ $i = 3$: $i > r = 1$. Set $l = r = 3$. Compare: $S[0] = \text{a} \neq S[3] = \te
 $Z[3] = 0$. $r = 2$.
 
 $i = 4$: $i > r = 2$. Set $l = r = 4$. Compare: $S[0] = \text{a} = S[4] = \text{a}$, $r = 5$.
-$S[1] = \text{a} = S[5] = \text{a}$, $r = 6$. $S[2] = \text{b} = S[6] = \text{b}$, $r = 7$. $r = n = 7$Stop.
-$Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
+$S[1] = \text{a} = S[5] = \text{a}$, $r = 6$. $S[2] = \text{b} = S[6] = \text{b}$, $r = 7$.
+$r = n = 7$Stop. $Z[4] = 7 - 4 = 3$. Decrement $r$: $r = 6$.
 
 $i = 5$: $i = 5 \leq r = 6$. $k = i - l = 5 - 4 = 1$. $Z[k] = Z[1] = 1$.
 $r - i + 1 = 6 - 5 + 1 = 2$. $Z[k] = 1 < 2$So $Z[5] = 1$.
@@ -990,8 +995,8 @@ $Z[k] = 0 < r - i + 1 = 1$So $Z[6] = 0$.
 
 $Z = [\_, 1, 0, 0, 3, 1, 0]$.
 
-Pattern matching: To find pattern $P$ in text $T$, compute the Z-array of $P + \text{\$} + T$ and look
-for $Z$ values equal to $|P|$.
+Pattern matching: To find pattern $P$ in text $T$, compute the Z-array of $P + \text{\$} + T$ and
+look for $Z$ values equal to $|P|$.
 
 </details>
 
@@ -1188,35 +1193,35 @@ Let me compute key entries:
 
 - $dp[0][4]$ ($c..a$I.e., "chara"): $c \neq a$So $\max(dp[1][4], dp[0][3])$. $dp[1][4]$ ("hara"):
   $h \neq a$, $\max(dp[2][4], dp[1][3])$. $dp[2][4]$ ("ara"): $a = a$, $2 + dp[3][3] = 2 + 1 = 3$.
-  $dp[1][3]$ ("har"): $h \neq r$, $\max(dp[2][3], dp[1][2])$. $dp[2][3]$ ("ar"):
-  $a \neq r$, $\max(1, 1) = 1$. $dp[1][2]$ ("ha"): $h \neq a$, $\max(1, 1) = 1$. So
-  $dp[1][3] = 1$, $dp[1][4] = \max(3, 1) = 3$. $dp[0][3]$ ("char"):
-  $c \neq r$, $\max(dp[1][3], dp[0][2])$. $dp[0][2]$ ("cha"):
-  $c \neq a$, $\max(dp[1][2], dp[0][1]) = \max(1, 1) = 1$. $dp[0][3] = \max(1, 1) = 1$.
-  $dp[0][4] = \max(3, 1) = 3$.
+  $dp[1][3]$ ("har"): $h \neq r$, $\max(dp[2][3], dp[1][2])$. $dp[2][3]$ ("ar"): $a \neq r$,
+  $\max(1, 1) = 1$. $dp[1][2]$ ("ha"): $h \neq a$, $\max(1, 1) = 1$. So $dp[1][3] = 1$,
+  $dp[1][4] = \max(3, 1) = 3$. $dp[0][3]$ ("char"): $c \neq r$, $\max(dp[1][3], dp[0][2])$.
+  $dp[0][2]$ ("cha"): $c \neq a$, $\max(dp[1][2], dp[0][1]) = \max(1, 1) = 1$.
+  $dp[0][3] = \max(1, 1) = 1$. $dp[0][4] = \max(3, 1) = 3$.
 
-- $dp[3][8]$ ("racter"): $r = r$, $2 + dp[4][7] = 2 + dp[4][7]$. $dp[4][7]$ ("acte"):
-  $a \neq e$, $\max(dp[5][7], dp[4][6])$. $dp[5][7]$ ("cte"): $c \neq e$, $\max(dp[6][7], dp[5][6])$.
-  $dp[6][7]$ ("te"): $t \neq e$, $\max(1, 1) = 1$. $dp[5][6]$ ("ct"): $c \neq t$, $\max(1, 1) = 1$.
+- $dp[3][8]$ ("racter"): $r = r$, $2 + dp[4][7] = 2 + dp[4][7]$. $dp[4][7]$ ("acte"): $a \neq e$,
+  $\max(dp[5][7], dp[4][6])$. $dp[5][7]$ ("cte"): $c \neq e$, $\max(dp[6][7], dp[5][6])$. $dp[6][7]$
+  ("te"): $t \neq e$, $\max(1, 1) = 1$. $dp[5][6]$ ("ct"): $c \neq t$, $\max(1, 1) = 1$.
   $dp[5][7] = 1$. $dp[4][6]$ ("act"): $a \neq t$, $\max(dp[5][6], dp[4][5])$. $dp[4][5]$ ("ac"):
   $a \neq c$, $\max(1, 1) = 1$. $dp[4][6] = 1$. $dp[4][7] = \max(1, 1) = 1$. $dp[3][8] = 2 + 1 = 3$.
 
 - $dp[0][8]$ ("character"): $c \neq r$, $\max(dp[1][8], dp[0][7])$. $dp[1][8]$ ("haracter"):
-  $h \neq r$, $\max(dp[2][8], dp[1][7])$. $dp[2][8]$ ("aracter"):
-  $a \neq r$, $\max(dp[3][8], dp[2][7])$. $dp[3][8] = 3$ (computed above). $dp[2][7]$ ("aracte"):
-  $a \neq e$, $\max(dp[3][7], dp[2][6])$. $dp[3][7]$ ("racte"): $r \neq e$, $\max(dp[4][7], dp[3][6])$.
+  $h \neq r$, $\max(dp[2][8], dp[1][7])$. $dp[2][8]$ ("aracter"): $a \neq r$,
+  $\max(dp[3][8], dp[2][7])$. $dp[3][8] = 3$ (computed above). $dp[2][7]$ ("aracte"): $a \neq e$,
+  $\max(dp[3][7], dp[2][6])$. $dp[3][7]$ ("racte"): $r \neq e$, $\max(dp[4][7], dp[3][6])$.
   $dp[4][7] = 1$. $dp[3][6]$ ("ract"): $r \neq t$, $\max(dp[4][6], dp[3][5])$. $dp[4][6] = 1$.
   $dp[3][5]$ ("rac"): $r \neq c$, $\max(dp[4][5], dp[3][4])$. $dp[4][5] = 1$. $dp[3][4]$ ("ra"):
-  $r \neq a$, $\max(1, 1) = 1$. $dp[3][6] = 1$. $dp[3][7] = 1$. $dp[2][6]$ ("arac"):
-  $a \neq c$, $\max(dp[3][6], dp[2][5])$. $dp[2][5]$ ("ara"): $a = a$, $2 + dp[3][4] = 2 + 1 = 3$.
+  $r \neq a$, $\max(1, 1) = 1$. $dp[3][6] = 1$. $dp[3][7] = 1$. $dp[2][6]$ ("arac"): $a \neq c$,
+  $\max(dp[3][6], dp[2][5])$. $dp[2][5]$ ("ara"): $a = a$, $2 + dp[3][4] = 2 + 1 = 3$.
   $dp[2][6] = \max(1, 3) = 3$. $dp[2][7] = \max(1, 3) = 3$. $dp[2][8] = \max(3, 3) = 3$. $dp[1][7]$
   ("hacter"): $h \neq r$, $\max(dp[2][7], dp[1][6])$. $dp[1][6]$ ("hacter" minus last... "hact"):
-  $h \neq t$, $\max(dp[2][6], dp[1][5])$. $dp[1][5]$ ("hara"): $h \neq a$, $\max(dp[2][5], dp[1][4])$.
-  $dp[2][5] = 3$. $dp[1][4] = 3$ (computed above). $dp[1][5] = \max(3, 3) = 3$.
-  $dp[1][6] = \max(3, 3) = 3$. $dp[1][7] = \max(3, 3) = 3$. $dp[1][8] = \max(3, 3) = 3$.
+  $h \neq t$, $\max(dp[2][6], dp[1][5])$. $dp[1][5]$ ("hara"): $h \neq a$,
+  $\max(dp[2][5], dp[1][4])$. $dp[2][5] = 3$. $dp[1][4] = 3$ (computed above).
+  $dp[1][5] = \max(3, 3) = 3$. $dp[1][6] = \max(3, 3) = 3$. $dp[1][7] = \max(3, 3) = 3$.
+  $dp[1][8] = \max(3, 3) = 3$.
 
-$dp[0][7]$ ("characte"): $c \neq e$, $\max(dp[1][7], dp[0][6])$. $dp[0][6]$ ("charact"):
-$c \neq t$, $\max(dp[1][6], dp[0][5])$. $dp[0][5]$ ("charac"): $c = c$, $2 + dp[1][4] = 2 + 3 = 5$.
+$dp[0][7]$ ("characte"): $c \neq e$, $\max(dp[1][7], dp[0][6])$. $dp[0][6]$ ("charact"): $c \neq t$,
+$\max(dp[1][6], dp[0][5])$. $dp[0][5]$ ("charac"): $c = c$, $2 + dp[1][4] = 2 + 3 = 5$.
 $dp[0][6] = \max(3, 5) = 5$. $dp[0][7] = \max(3, 5) = 5$.
 
 $dp[0][8] = \max(3, 5) = 5$.
@@ -1522,11 +1527,12 @@ Trace the search through the text "ushers".
 10), (3, 4) using the divide-and-conquer algorithm.
 
 **Problem 14.** Apply the 2-approximation algorithm for metric TSP on 5 cities with distances:
-$d(A,B) = d(B,A) = 3$, $d(A,C) = 7$, $d(A,D) = 5$, $d(A,E) = 2$, $d(B,C) = 4$, $d(B,D) = 6$, $d(B,E) = 8$, $d(C,D) = 3$, $d(C,E) = 6$, $d(D,E) = 5$.
-Compute the MST, the Eulerian tour, and the shortcut tour.
+$d(A,B) = d(B,A) = 3$, $d(A,C) = 7$, $d(A,D) = 5$, $d(A,E) = 2$, $d(B,C) = 4$, $d(B,D) = 6$,
+$d(B,E) = 8$, $d(C,D) = 3$, $d(C,E) = 6$, $d(D,E) = 5$. Compute the MST, the Eulerian tour, and the
+shortcut tour.
 
-**Problem 15.** Apply the greedy set cover algorithm to:
-$U = \{1, 2, 3, 4, 5, 6\}$, $\mathcal{{'}S{}'} = \{S_1 = \{1, 2, 3\}, S_2 = \{2, 4\}, S_3 = \{3, 5, 6\}, S_4 = \{1, 4, 5\}, S_5 = \{4, 6\}\}$.
+**Problem 15.** Apply the greedy set cover algorithm to: $U = \{1, 2, 3, 4, 5, 6\}$,
+$\mathcal{{'}S{}'} = \{S_1 = \{1, 2, 3\}, S_2 = \{2, 4\}, S_3 = \{3, 5, 6\}, S_4 = \{1, 4, 5\}, S_5 = \{4, 6\}\}$.
 Compare with the optimal cover.
 
 <details>

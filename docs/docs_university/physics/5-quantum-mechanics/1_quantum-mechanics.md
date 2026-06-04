@@ -1,6 +1,8 @@
 ---
 title: Quantum Mechanics
-description: 'University Physics Quantum Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
+description:
+  'University Physics Quantum Mechanics notes covering key definitions, core concepts, worked
+  examples, and practice questions for practical revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics
@@ -1256,8 +1258,8 @@ radius.
 
 #### 6.5.3 Expectation Values for the Ground State
 
-**Example 6.1.** Calculate $\langle r \rangle$, $\langle r^2 \rangle$And $\langle 1/r \rangle$ for the
-Hydrogen ground state.
+**Example 6.1.** Calculate $\langle r \rangle$, $\langle r^2 \rangle$And $\langle 1/r \rangle$ for
+the Hydrogen ground state.
 
 <details>
 <summary>Solution</summary>
@@ -1374,9 +1376,9 @@ $$\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$$
 
 $$\sigma_x\sigma_y - \sigma_y\sigma_x = 2i\sigma_z$$
 
-Writing $\sigma_y = \begin{pmatrix} c & d \\ d^* & -c \end{pmatrix}$ and imposing
-$\sigma_y^2 = I$, $\sigma_y^\dagger = \sigma_y$ And the commutation relation, we find
-$c = 0$, $|d| = 1$And the commutator gives $d - d^* = 2i$ So $d = i$:
+Writing $\sigma_y = \begin{pmatrix} c & d \\ d^* & -c \end{pmatrix}$ and imposing $\sigma_y^2 = I$,
+$\sigma_y^\dagger = \sigma_y$ And the commutation relation, we find $c = 0$, $|d| = 1$And the
+commutator gives $d - d^* = 2i$ So $d = i$:
 
 $$\sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}$$
 
@@ -1501,8 +1503,8 @@ Given two angular momenta $\hat{\mathbf{J}}_1$ and $\hat{\mathbf{J}}_2$ with qua
 $j_1, m_1$ and $j_2, m_2$Define the total
 $\hat{\mathbf{J}} = \hat{\mathbf{J}}_1 + \hat{\mathbf{J}}_2$.
 
-**Compatible observables:** $\hat{J}^2$, $\hat{J}_z$, $\hat{J}_1^2$, $\hat{J}_2^2$ all commute. We label
-Simultaneous eigenstates as $|j_1, j_2; j, m\rangle$.
+**Compatible observables:** $\hat{J}^2$, $\hat{J}_z$, $\hat{J}_1^2$, $\hat{J}_2^2$ all commute. We
+label Simultaneous eigenstates as $|j_1, j_2; j, m\rangle$.
 
 **Clebsch-Gordan decomposition.** The total angular momentum quantum numbers range over:
 
@@ -1844,10 +1846,10 @@ decay of a typical heavy nucleus and comment on the exponential dependence on ba
 Raising/lowering operators, prove that $[\hat{L}^2, \hat{L}_\pm] = 0$. Then show that
 $\hat{L}_+|l,l\rangle = 0$ and hence derive the normalisation constant for $\hat{L}_+|l,m\rangle$.
 
-**15.** (Hydrogen atom) Calculate $\langle r \rangle$, $\langle r^2 \rangle$And $\langle 1/r \rangle$
-for the hydrogen atom ground state $\psi_{100}$. Compare $\langle r \rangle$ With the Bohr radius
-$a_0$. Use the virial theorem to relate $\langle T \rangle$ and $\langle V \rangle$ for The Coulomb
-potential.
+**15.** (Hydrogen atom) Calculate $\langle r \rangle$, $\langle r^2 \rangle$And
+$\langle 1/r \rangle$ for the hydrogen atom ground state $\psi_{100}$. Compare $\langle r \rangle$
+With the Bohr radius $a_0$. Use the virial theorem to relate $\langle T \rangle$ and
+$\langle V \rangle$ for The Coulomb potential.
 
 **16.** (Spin) An electron is in the spin state
 $|\psi\rangle = \frac{1}{\sqrt{3}}|\uparrow\rangle +
@@ -2038,9 +2040,9 @@ $$E = \left(\frac{121}{64} - \frac{121}{32}\right)\text{Ry} = -\frac{121}{64}\te
 The exact (non-relativistic) ground state energy is $-79.0$ eV, so the variational result is within
 2%.
 
-The effective charge $Z_{\text{eff} = 1.375 < 2}$ reflects the screening of the nuclear charge by the
-other electron: each electron partially shields the nucleus from the other, reducing the effective
-charge from $Z = 2$ to $Z_{\text{eff} \approx 1.375}$.
+The effective charge $Z_{\text{eff} = 1.375 < 2}$ reflects the screening of the nuclear charge by
+the other electron: each electron partially shields the nucleus from the other, reducing the
+effective charge from $Z = 2$ to $Z_{\text{eff} \approx 1.375}$.
 
 </details>
 
@@ -2320,8 +2322,8 @@ $$\kappa\cot(\kappa a) = -\kappa'$$
 As $|E| \to 0$: $\kappa' \to 0$So $\kappa\cot(\kappa a) \to 0$Giving $\kappa a = \pi/2$ (the
 threshold for the first bound state).
 
-(c) The scattering length $a_s = -\lim_{k \to 0}(\delta_0/k)$. As
-$\kappa a \to \pi/2$, $\tan(\kappa a) \to \infty$So:
+(c) The scattering length $a_s = -\lim_{k \to 0}(\delta_0/k)$. As $\kappa a \to \pi/2$,
+$\tan(\kappa a) \to \infty$So:
 
 $$\delta_0 \approx -ka + \arctan(\infty) = -ka + \pi/2$$
 

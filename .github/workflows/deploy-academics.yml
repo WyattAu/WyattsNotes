@@ -44,7 +44,7 @@ jobs:
           # Cloudflare Pages _redirects for 301 (SEO-friendly)
           echo "/* https://ib.wyattau.com/:splat 301" > build/_redirects
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
 

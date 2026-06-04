@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-chemical-kinetics
 title: Chemistry - Chemical Kinetics
-description: 'DSE Chemistry - Chemical Kinetics notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
+description:
+  'DSE Chemistry - Chemical Kinetics notes covering key definitions, core concepts, worked examples,
+  and practice questions for clear exam preparation and mastery.'
 slug: chemical-kinetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -39,14 +41,14 @@ Rate is expressed in mol dm$^{-3}$ s$^{-1}$ (change in concentration per unit ti
 
 ### Methods
 
-| Method            | Measured Quantity               | Suitable Reactions                                      |
-| ----------------- | ------------------------------- | ------------------------------------------------------- |
+| Method            | Measured Quantity               | Suitable Reactions                                        |
+| ----------------- | ------------------------------- | --------------------------------------------------------- |
 | Collection of gas | Volume of gas over time         | Reactions producing gas ($\mathrm{CO}_2$, $\mathrm{H}_2$) |
-| Mass loss         | Mass of flask over time         | Reactions producing gas                                 |
-| Titration         | Concentration at time intervals | Reactions where aliquots can be quenched                |
-| Colorimetry       | Absorbance over time            | Reactions involving colour change                       |
-| Conductivity      | Conductance over time           | Reactions producing/ consuming ions                     |
-| Clock reaction    | Time for observable change      | Initial rate determination                              |
+| Mass loss         | Mass of flask over time         | Reactions producing gas                                   |
+| Titration         | Concentration at time intervals | Reactions where aliquots can be quenched                  |
+| Colorimetry       | Absorbance over time            | Reactions involving colour change                         |
+| Conductivity      | Conductance over time           | Reactions producing/ consuming ions                       |
+| Clock reaction    | Time for observable change      | Initial rate determination                                |
 
 ### Gas Collection Methods
 
@@ -930,7 +932,6 @@ Powdering the solid increases surface area, further increasing the rate.
 | $\mathrm{Rate} \propto 1/t$                     | Clock reaction initial rate      |
 
 ## Worked Examples
-
 
 The reaction $\text{A} + \text{B} \rightarrow \text{C}$ has rate equation
 $\text{rate} = k[\text{A}][\text{B}]^2$. When $[\text{A}] = 0.10\,\text{mol\,dm}^{-3}$ and

@@ -1,6 +1,8 @@
 ---
 title: Particle Physics and Cosmology
-description: 'University Particle Physics and Cosmology notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'University Particle Physics and Cosmology notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics
@@ -86,8 +88,8 @@ To high precision at LEP and SLC.
 The fermions are organised into three **generations**, each with identical quantum numbers but
 Increasing mass:
 
-| Generation | Quarks                     | Charge       | Leptons          | Charge  |
-| ---------- | -------------------------- | ------------ | ---------------- | ------- |
+| Generation | Quarks                     | Charge         | Leptons            | Charge    |
+| ---------- | -------------------------- | -------------- | ------------------ | --------- |
 | I          | up ($u$), down ($d$)       | $+2/3$, $-1/3$ | $e$, $\nu_e$       | $-1$, $0$ |
 | II         | charm ($c$), strange ($s$) | $+2/3$, $-1/3$ | $\mu$, $\nu_\mu$   | $-1$, $0$ |
 | III        | top ($t$), bottom ($b$)    | $+2/3$, $-1/3$ | $\tau$, $\nu_\tau$ | $-1$, $0$ |
@@ -158,8 +160,8 @@ $d\bar{u}$ ($Q = -1$, $S = 0$).
 Since $X^0$ is a neutral meson ($q\bar{q}$), its quark content must combine the quarks From the
 decay products. The decay conserves strangeness if $X^0$ has $S = +1$So It contains one $\bar{s}$.
 
-The quantum numbers of $X^0$: $Q = 0$, $S = +1$. A meson with these properties Containing a $\bar{s}$
-quark must be:
+The quantum numbers of $X^0$: $Q = 0$, $S = +1$. A meson with these properties Containing a
+$\bar{s}$ quark must be:
 
 $$X^0 = K^0 = d\bar{s}$$
 
@@ -171,8 +173,9 @@ $$X^0 = K^0 = d\bar{s}$$
 ### 1.7 Gauge Bosons
 
 - **Photon ($\gamma$):** Massless, mediates the electromagnetic force. Couples to electric charge.
-- **$W^\pm$ and $Z^0$:** Massive ($m_W \approx 80.4$ GeV/$c^2$, $m_Z \approx 91.2$ GeV/$c^2$), mediate
-  the weak force. $W^\pm$ changes flavour (charged current); $Z^0$ does not (neutral current).
+- **$W^\pm$ and $Z^0$:** Massive ($m_W \approx 80.4$ GeV/$c^2$, $m_Z \approx 91.2$ GeV/$c^2$),
+  mediate the weak force. $W^\pm$ changes flavour (charged current); $Z^0$ does not (neutral
+  current).
 - **Gluons ($g$):** Eight massless gluons mediate the strong force. They carry colour charge
   themselves, leading to self-interaction (non-Abelian gauge theory).
 - **Higgs boson ($H$):** Scalar particle ($m_H \approx 125$ GeV/$c^2$), responsible for giving mass
@@ -188,8 +191,8 @@ eigenstates of quarks:
 
 $$\begin{pmatrix} d' \\ s' \\ b' \end{pmatrix} = V_{\mathrm{CKM} \begin{pmatrix} d \\ s \\ b \end{pmatrix}}$$
 
-Where $d'$, $s'$, $b'$ are the weak eigenstates that couple to the $W$ boson. The Magnitude of the CKM
-elements determines the relative rates of flavour-changing weak Decays.
+Where $d'$, $s'$, $b'$ are the weak eigenstates that couple to the $W$ boson. The Magnitude of the
+CKM elements determines the relative rates of flavour-changing weak Decays.
 
 The experimentally measured magnitudes are approximately:
 
@@ -252,18 +255,18 @@ hypercharge is generalised to $Y = B + S + C + B' + T$ when additional flavours 
 
 Verify the charges of the following hadrons:
 
-**(a) Proton ($uud$):** $B = 1$, $S = 0$, $C = 0$, $B' = 0$, $T = 0$. The proton belongs to The isospin
-doublet with $I = 1/2$, $I_3 = +1/2$.
+**(a) Proton ($uud$):** $B = 1$, $S = 0$, $C = 0$, $B' = 0$, $T = 0$. The proton belongs to The
+isospin doublet with $I = 1/2$, $I_3 = +1/2$.
 
 $$Q = \frac{1}{2} + \frac{1 + 0}{2} = \frac{1}{2} + \frac{1}{2} = 1 \quad \checkmark$$
 
-**(b) $\Xi^-$ ($ssd$):** $B = 1$, $S = -2$, $C = 0$, $B' = 0$, $T = 0$. The cascade Particle belongs to the
-isospin doublet with $I = 1/2$, $I_3 = -1/2$.
+**(b) $\Xi^-$ ($ssd$):** $B = 1$, $S = -2$, $C = 0$, $B' = 0$, $T = 0$. The cascade Particle belongs
+to the isospin doublet with $I = 1/2$, $I_3 = -1/2$.
 
 $$Q = -\frac{1}{2} + \frac{1 + (-2)}{2} = -\frac{1}{2} + \left(-\frac{1}{2}\right) = -1 \quad \checkmark$$
 
-**(c) $D^+$ ($c\bar{d}$):** $B = 0$, $S = 0$, $C = +1$, $B' = 0$, $T = 0$. The $D$ mesons form an isospin
-doublet with $I = 1/2$, $I_3 = +1/2$.
+**(c) $D^+$ ($c\bar{d}$):** $B = 0$, $S = 0$, $C = +1$, $B' = 0$, $T = 0$. The $D$ mesons form an
+isospin doublet with $I = 1/2$, $I_3 = +1/2$.
 
 $$Q = \frac{1}{2} + \frac{0 + 0 + 1}{2} = \frac{1}{2} + \frac{1}{2} = 1 \quad \checkmark$$
 
@@ -443,11 +446,11 @@ $$\mathcal{M}_t = \frac{e^2}{t}\,\bar{u}(p_3)\gamma^\mu u(p_1)\,\bar{u}(p_4)\gam
 
 $$\mathcal{M}_u = \frac{e^2}{u}\,\bar{u}(p_4)\gamma^\mu u(p_1)\,\bar{u}(p_3)\gamma_\mu u(p_2)$$
 
-And $t = (p_1 - p_3)^2$, $u = (p_1 - p_4)^2$ are Mandelstam variables. The minus sign Is a consequence
-of Fermi-Dirac .../4-statistics-and-probability/2_statistics and ensures the Pauli exclusion
-principle is Satisfied. When the two electrons scatter at $90^\circ$ in the CM frame, $t = u$ and
-the Two amplitudes cancel, giving $\mathcal{M} = 0$. This is the expected result: identical Fermions
-cannot be distinguished in the final state at $90^\circ$ scattering.
+And $t = (p_1 - p_3)^2$, $u = (p_1 - p_4)^2$ are Mandelstam variables. The minus sign Is a
+consequence of Fermi-Dirac .../4-statistics-and-probability/2_statistics and ensures the Pauli
+exclusion principle is Satisfied. When the two electrons scatter at $90^\circ$ in the CM frame,
+$t = u$ and the Two amplitudes cancel, giving $\mathcal{M} = 0$. This is the expected result:
+identical Fermions cannot be distinguished in the final state at $90^\circ$ scattering.
 
 </details>
 
@@ -827,8 +830,8 @@ The Gell-Mann--Okubo mass formula for the baryon octet is:
 
 $$\frac{1}{2}(N + \Xi) + \frac{3}{2}\Lambda = 2\Sigma$$
 
-Where $N$, $\Xi$, $\Lambda$, $\Sigma$ denote the average masses of the respective isospin Multiplets.
-Substituting the experimental values:
+Where $N$, $\Xi$, $\Lambda$, $\Sigma$ denote the average masses of the respective isospin
+Multiplets. Substituting the experimental values:
 
 $$N = \frac{m_p + m_n}{2} = \frac{938.3 + 939.6}{2} = 938.9\;\mathrm{MeV}$$
 $$\Xi = \frac{m_{\Xi^0} + m_{\Xi^-}}{2} = \frac{1314.9 + 1321.7}{2} = 1318.3\;\mathrm{MeV}$$
@@ -1113,10 +1116,10 @@ energy.
 
 ### 7.4 The Cosmic Microwave Background
 
-At $T \sim 3000$ K ($z \sim 1100$, $t \sim 380\,000$ years), the universe cooled enough for electrons
-And protons to combine into neutral hydrogen (**recombination**). Before this, photons were
-Continuously scattered by free electrons (the universe was opaque). After recombination, photons
-Decoupled and travelled freely.
+At $T \sim 3000$ K ($z \sim 1100$, $t \sim 380\,000$ years), the universe cooled enough for
+electrons And protons to combine into neutral hydrogen (**recombination**). Before this, photons
+were Continuously scattered by free electrons (the universe was opaque). After recombination,
+photons Decoupled and travelled freely.
 
 These photons have been redshifted by the expansion of the universe and are observed today as the
 **Cosmic Microwave Background (CMB)** at $T_0 \approx 2.725$ K, with a peak wavelength
@@ -1516,8 +1519,8 @@ $\exp(-im_i^2 L/(2E))$Leading to oscillations.
 
 $$P(\nu_\alpha \to \nu_\beta) = \sin^2(2\theta)\sin^2\left(\frac{\Delta m^2 L}{4E}\right)$$
 
-Where $\Delta m^2 = m_2^2 - m_1^2$, $\theta$ is the mixing angle, $L$ is the distance, and $E$ is the
-Energy.
+Where $\Delta m^2 = m_2^2 - m_1^2$, $\theta$ is the mixing angle, $L$ is the distance, and $E$ is
+the Energy.
 
 **Evidence:** The Solar Neutrino Problem (deficit of $\nu_e$ from the Sun, resolved by
 $\nu_e \to \nu_\mu, \nu_\tau$ oscillations) and atmospheric neutrino oscillations (Super-Kamiokande,
@@ -1913,7 +1916,8 @@ strength tensor.
 **Strong CP problem.** QCD allows a term
 $\mathcal{L}_\theta = \theta\frac{g_s^2}{32\pi^2}F_{\mu\nu}^a\tilde{F}^{a\mu\nu}$ in the Lagrangian.
 This gives the neutron an electric dipole moment $d_n \propto \theta$But experiments find
-$d_n < 1.8 \times 10^{-26}\,e\cdot\text{cm}$Implying $|\theta| < 10^{-10}$. Why is $\theta$ so small?
+$d_n < 1.8 \times 10^{-26}\,e\cdot\text{cm}$Implying $|\theta| < 10^{-10}$. Why is $\theta$ so
+small?
 
 **Axion solution.** The Peccei--Quinn mechanism (1977) promotes $\theta$ to a dynamical field ---
 the **axion** $a(x)$. The axion potential has a minimum at $\theta_{\text{eff} = 0}$Dynamically
@@ -2183,8 +2187,8 @@ $A_T = \pi(7.1\ \text{fm})^2$.
 **Solution:**
 
 (a) The transverse energy per unit rapidity is roughly
-$dE_T/dy \sim 1600 \times 0.5\ \text{GeV} \sim 800$ GeV (each charged particle carries $\sim 0.5$ GeV
-of $E_T$ on average).
+$dE_T/dy \sim 1600 \times 0.5\ \text{GeV} \sim 800$ GeV (each charged particle carries $\sim 0.5$
+GeV of $E_T$ on average).
 
 $$\epsilon = \frac{800\ \text{GeV}{(1\ \text{fm}/c) \times \pi \times (7.1\ \text{fm})^2} = \frac{800 \times 1.602 \times 10^{-10}\ \text{J}{10^{-15}\,\text{s} \times \pi \times 5.04 \times 10^{-30}\,\text{m}^2}}}$$
 

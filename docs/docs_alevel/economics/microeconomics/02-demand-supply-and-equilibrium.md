@@ -1,6 +1,8 @@
 ---
 title: Demand, Supply and Equilibrium
-description: 'A-Level Economics Demand, Supply and Equilibrium notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'A-Level Economics Demand, Supply and Equilibrium notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused revision.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Economics

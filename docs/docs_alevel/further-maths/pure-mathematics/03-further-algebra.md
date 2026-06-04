@@ -1,6 +1,8 @@
 ---
 title: Further Algebra
-description: 'A-Level Further Maths Further Algebra notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'A-Level Further Maths Further Algebra notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

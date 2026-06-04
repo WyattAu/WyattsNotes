@@ -1,6 +1,8 @@
 ---
 title: Geometry
-description: 'GCSE Maths Geometry notes covering key definitions, core concepts, worked examples, and practice questions for methodical study and thorough revision.'
+description:
+  'GCSE Maths Geometry notes covering key definitions, core concepts, worked examples, and practice
+  questions for methodical study and thorough revision.'
 date: 2026-04-14
 tags:
   - gcse
@@ -28,9 +30,9 @@ slug: 4-geometry
 
 **Theorem (Angle sum of a triangle).** The interior angles of any triangle sum to $180^{\circ}$.
 
-**Proof.** Let triangle $\triangle ABC$ have vertices $A$, $B$, $C$. Draw a line through $C$ Parallel to
-$AB$. Label the intersection points of this line with the exterior of the triangle as $D$ and $E$
-(so $D$ is on the side of $B$ and $E$ is on the side of $A$).
+**Proof.** Let triangle $\triangle ABC$ have vertices $A$, $B$, $C$. Draw a line through $C$
+Parallel to $AB$. Label the intersection points of this line with the exterior of the triangle as
+$D$ and $E$ (so $D$ is on the side of $B$ and $E$ is on the side of $A$).
 
 By alternate angles: $\angle B = \angle BCD$ and $\angle A = \angle ACE$.
 
@@ -237,8 +239,8 @@ Used when you know: an angle and its opposite side, plus one other angle or side
 Express the height as both $b \sin A$ and $a \sin B$. Setting equal: $b \sin A = a \sin B$Giving
 $\frac{a}{\sin A} = \frac{b}{\sin B}$. $\blacksquare$
 
-**Worked Example (Higher Tier).** In $\triangle ABC$, $a = 10$ cm, $A = 45^{\circ}$ $B = 70^{\circ}$.
-Find $b$.
+**Worked Example (Higher Tier).** In $\triangle ABC$, $a = 10$ cm, $A = 45^{\circ}$
+$B = 70^{\circ}$. Find $b$.
 
 $$\frac{b}{\sin 70^{\circ}} = \frac{10}{\sin 45^{\circ}}$$
 $$b = \frac{10 \sin 70^{\circ}}{\sin 45^{\circ}} = \frac{10 \times 0.9397}{0.7071} \approx 13.29 \mathrm{ cm$$
@@ -261,8 +263,8 @@ Used when you know: two sides and the included angle (to find the third side), o
 $$\cos A = \frac{25 + 49 - 64}{2 \times 5 \times 7} = \frac{10}{70} = \frac{1}{7}$$
 $$A = \cos^{-1}\!\left(\frac{1}{7}\right) = 81.8^{\circ} \mathrm{ (to 1 d.p.)$$
 
-**Worked Example (Higher Tier).** In $\triangle ABC$, $a = 12$ cm, $b = 8$ cm, $C = 60^{\circ}$. Find
-$c$.
+**Worked Example (Higher Tier).** In $\triangle ABC$, $a = 12$ cm, $b = 8$ cm, $C = 60^{\circ}$.
+Find $c$.
 
 $$c^2 = 144 + 64 - 2 \times 12 \times 8 \times \cos 60^{\circ}$$ $$c^2 = 208 - 96 = 112$$
 $$c = \sqrt{112} = 4\sqrt{7} \approx 10.58 \mathrm{ cm$$
@@ -377,8 +379,8 @@ Since $OA = OC$ (radii), $\triangle OAC$ is isosceles: $\angle OCA = \angle OAC 
 **Worked Example (Higher Tier).** $AB$ and $AC$ are tangents to a circle at points $B$ and $C$
 Respectively. Prove that $AB = AC$.
 
-Join $O$ to $A$, $B$And $C$. Since $OB$ and $OC$ are radii, and tangents are perpendicular to Radii at
-the point of contact, $\angle OBA = \angle OCA = 90^{\circ}$.
+Join $O$ to $A$, $B$And $C$. Since $OB$ and $OC$ are radii, and tangents are perpendicular to Radii
+at the point of contact, $\angle OBA = \angle OCA = 90^{\circ}$.
 
 $OA$ is common, and $OB = OC$ (radii). By RHS (right angle, hypotenuse, side),
 $\triangle OBA \cong
@@ -488,8 +490,8 @@ $\begin{pmatrix} 14 \\ 11 \end{pmatrix}$. Show that $A$$B$And $C$ are collinear.
 
 $$\overrightarrow{AB} = \begin{pmatrix} 6 \\ 4 \end{pmatrix}, \qquad \overrightarrow{BC} = \begin{pmatrix} 6 \\ 4 \end{pmatrix}$$
 
-Since $\overrightarrow{AB} = \overrightarrow{BC}$The vectors are parallel and share point $B$So
-$A$, $B$, $C$ are collinear. $\blacksquare$
+Since $\overrightarrow{AB} = \overrightarrow{BC}$The vectors are parallel and share point $B$So $A$,
+$B$, $C$ are collinear. $\blacksquare$
 
 ### 5.3 Column Vectors in Geometry
 
@@ -651,7 +653,8 @@ Height: $h = \sqrt{6^2 - (3\sqrt{2})^2} = \sqrt{36 - 18} = \sqrt{18} = 3\sqrt{2}
 6. Two similar cones have heights in the ratio $3 : 5$. The volume of the smaller cone is 108
    cm$^3$. Find the volume of the larger cone.
 
-7. $A$, $B$And $C$ are points on a circle with centre $O$. Angle $ABC = 55^{\circ}$. Find angle $AOC$.
+7. $A$, $B$And $C$ are points on a circle with centre $O$. Angle $ABC = 55^{\circ}$. Find angle
+   $AOC$.
 
 8. A triangle has sides 7 cm, 8 cm, and 10 cm. Determine whether it is acute, right-angled, or
    obtuse.

@@ -1,6 +1,8 @@
 ---
 title: Electricity and Magnetism
-description: 'DSE Physics Electricity and Magnetism notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'DSE Physics Electricity and Magnetism notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -1779,7 +1781,6 @@ $P = \frac{\varepsilon_{\mathrm{RMS}}^2}{R} = \frac{(26.7)^2}{50} = \frac{712.9}
 :::
 
 ## Common Pitfalls
-
 
 1. Confusing EMF and potential difference — EMF is the total energy per unit charge supplied; PD is
    the energy per unit charge transferred to a component.

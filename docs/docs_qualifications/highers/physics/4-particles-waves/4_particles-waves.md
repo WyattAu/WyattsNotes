@@ -1,6 +1,8 @@
 ---
 title: Particles and Waves
-description: 'Scottish Highers Physics Particles and Waves notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
+description:
+  'Scottish Highers Physics Particles and Waves notes covering key definitions, core concepts,
+  worked examples, and practice questions for systematic revision.'
 date: 2026-04-14
 tags:
   - highers
@@ -467,16 +469,16 @@ Antinodes at: $0.3 \mathrm{ m, 0.9 \mathrm{ m$ (2 antinodes)
 
 ## 16. Summary Table: Quantum and Wave Formulas
 
-| Topic           | Formula                         | Variables            | Notes                |
-| --------------- | ------------------------------- | -------------------- | -------------------- |
-| Photon energy   | $E = hf = hc/\lambda$           | $h$, $f$, $\lambda$      | Planck's constant    |
-| Photoelectric   | $E_k = hf - \phi$               | $h$, $f$, $\phi$         | Einstein's equation  |
-| De Broglie      | $\lambda = h/p = h/(mv)$        | $h$, $p$, $m$, $v$         | Matter waves         |
+| Topic           | Formula                         | Variables              | Notes                |
+| --------------- | ------------------------------- | ---------------------- | -------------------- |
+| Photon energy   | $E = hf = hc/\lambda$           | $h$, $f$, $\lambda$    | Planck's constant    |
+| Photoelectric   | $E_k = hf - \phi$               | $h$, $f$, $\phi$       | Einstein's equation  |
+| De Broglie      | $\lambda = h/p = h/(mv)$        | $h$, $p$, $m$, $v$     | Matter waves         |
 | Uncertainty     | $\Delta x \Delta p \ge \hbar/2$ | $\Delta x$, $\Delta p$ | Fundamental limit    |
-| Energy levels   | $\Delta E = hf = hc/\lambda$    | $h$, $f$, $\lambda$      | Spectral lines       |
-| Standing wave   | $f_n = nv/(2L)$                 | $n$, $v$, $L$            | String fixed at ends |
-| Closed pipe     | $f_n = nv/(4L)$                 | $n$ odd              | Only odd harmonics   |
-| Doppler (sound) | $f' = fv/(v \pm v_s)$           | $f$, $v$, $v_s$          | Approaching/receding |
+| Energy levels   | $\Delta E = hf = hc/\lambda$    | $h$, $f$, $\lambda$    | Spectral lines       |
+| Standing wave   | $f_n = nv/(2L)$                 | $n$, $v$, $L$          | String fixed at ends |
+| Closed pipe     | $f_n = nv/(4L)$                 | $n$ odd                | Only odd harmonics   |
+| Doppler (sound) | $f' = fv/(v \pm v_s)$           | $f$, $v$, $v_s$        | Approaching/receding |
 
 ## 17. Practice Questions (Additional)
 

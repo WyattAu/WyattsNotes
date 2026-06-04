@@ -1,6 +1,8 @@
 ---
 title: Data Structures (Advanced)
-description: 'University Computing Data Structures (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'University Computing Data Structures (Advanced) notes covering key definitions, core concepts,
+  worked examples, and practice questions for structured revision.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing
@@ -272,8 +274,8 @@ at least $t - 1$ keys, so $n \geq 2t^{h-1}(t-1) \geq 2t^{h-1} - 1$ (for $t \geq 
 **Corollary.** The height of a B-tree storing $n$ keys is
 $h \leq \log_t \frac{n+1}{2} = O(\log_t n)$.
 
-For example, with $t = 1001$ and $n = 10^9$, $h \leq \log_{1001}(5 \times 10^8) \approx 2.8$So at most
-3 disk accesses.
+For example, with $t = 1001$ and $n = 10^9$, $h \leq \log_{1001}(5 \times 10^8) \approx 2.8$So at
+most 3 disk accesses.
 
 #### 1.2.2 B-Tree Operations
 
@@ -857,14 +859,16 @@ Create two binomial heaps and merge them.
 Heap $H_1$: insert 3, 7, 1.
 
 - Insert 3: $H_1 = \{B_0: 3\}$
-- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link: $H_1 = \{B_1: \text{root}  3, \text{child}  7\}$
+- Insert 7: $H_1 = \{B_0: 3\} \cup \{B_0: 7\}$. Link:
+  $H_1 = \{B_1: \text{root}  3, \text{child}  7\}$
 - Insert 1: $H_1 = \{B_1: (3,7)\} \cup \{B_0: 1\}$. No linking (different degrees).
   $H_1 = \{B_0: 1, B_1: (3,7)\}$
 
 Heap $H_2$: insert 5, 2.
 
 - Insert 5: $H_2 = \{B_0: 5\}$
-- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link: $H_2 = \{B_1: \text{root}  2, \text{child}  5\}$
+- Insert 2: $H_2 = \{B_0: 5\} \cup \{B_0: 2\}$. Link:
+  $H_2 = \{B_1: \text{root}  2, \text{child}  5\}$
 
 Merge $H_1$ and $H_2$: $\{B_0: 1, B_1: (3,7)\} \cup \{B_1: (2,5)\}$.
 
@@ -1015,8 +1019,8 @@ $$A_k(j) = \begin{cases} 2j & \text{if}  k = 0 \\ 0 & \text{if}  j = 0 \text{ an
 
 $$\alpha(n) = \min\{k : A_k(1) \geq n\}$$
 
-**Key values:**
-$\alpha(1) = 0$, $\alpha(2) = 1$, $\alpha(4) = 2$, $\alpha(16) = 3$, $\alpha(2^{65536}) = 4$.
+**Key values:** $\alpha(1) = 0$, $\alpha(2) = 1$, $\alpha(4) = 2$, $\alpha(16) = 3$,
+$\alpha(2^{65536}) = 4$.
 
 For all practical purposes, $\alpha(n) \leq 4$.
 
@@ -1065,7 +1069,8 @@ An **interval tree** stores a set of intervals $[l_i, r_i]$ and supports:
 **Structure.** An augmented BST where:
 
 - In-order traversal of keys gives the intervals sorted by their left endpoint (or by midpoint).
-- Each node stores a key $x_{\mathrm{mid}}$ (the median endpoint) and a max-endpoint for the subtree.
+- Each node stores a key $x_{\mathrm{mid}}$ (the median endpoint) and a max-endpoint for the
+  subtree.
 
 **Query algorithm:** Starting at the root, compare $q$ with $x_{\mathrm{mid}}$:
 
@@ -1258,8 +1263,9 @@ Suffix array: $\mathrm{SA} = [6, 5, 3, 1, 0, 4, 2]$
 
 LCP array (LCP with previous suffix): $\mathrm{LCP}[0] = 0$ (undefined for first)
 $\mathrm{LCP}[1] = 0$ (LCP("$", "a$") = 0) $\mathrm{LCP}[2] = 1$ (LCP("a$", "ana$") = 1)
-$\mathrm{LCP}[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm{LCP}[4] = 0$ (LCP("anana$", "banana$") = 0)
-$\mathrm{LCP}[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm{LCP}[6] = 2$ (LCP("na$", "nana$") = 2)
+$\mathrm{LCP}[3] = 3$ (LCP("ana$", "anana$") = 3) $\mathrm{LCP}[4] = 0$ (LCP("anana$", "banana$")
+= 0) $\mathrm{LCP}[5] = 0$ (LCP("banana$", "na$") = 0) $\mathrm{LCP}[6] = 2$ (LCP("na$", "nana$")
+= 2)
 
 LCP array: $[0, 0, 1, 3, 0, 0, 2]$
 
@@ -1290,13 +1296,13 @@ A good potential function satisfies:
 
 **Common potential functions:**
 
-| Data structure | Potential function $\Phi$                                        |
-| -------------- | ---------------------------------------------------------------- |
+| Data structure | Potential function $\Phi$                                          |
+| -------------- | ------------------------------------------------------------------ |
 | Dynamic array  | $\Phi = 2 \cdot \mathrm{num} - \mathrm{size}$ (credit per element) |
-| Binary counter | $\Phi =$ number of 1-bits                                        |
-| Stack          | $\Phi =$ number of elements                                      |
-| Splay tree     | $\Phi = \sum_x \log(\mathrm{size}(x))$                            |
-| Union-Find     | $\Phi$ based on node levels                                      |
+| Binary counter | $\Phi =$ number of 1-bits                                          |
+| Stack          | $\Phi =$ number of elements                                        |
+| Splay tree     | $\Phi = \sum_x \log(\mathrm{size}(x))$                             |
+| Union-Find     | $\Phi$ based on node levels                                        |
 
 ### 7.3 Limitations of Amortised Analysis
 

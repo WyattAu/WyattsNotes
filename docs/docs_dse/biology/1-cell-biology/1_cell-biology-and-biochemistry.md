@@ -1,7 +1,9 @@
 ---
 id: dse-biology-cell-biology-and-biochemistry
 title: Biology - Cell Biology and Biochemistry
-description: 'DSE Biology - Cell Biology and Biochemistry notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'DSE Biology - Cell Biology and Biochemistry notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused revision.'
 slug: biology-cell-biology-and-biochemistry
 ---
 
@@ -157,7 +159,8 @@ Through , while large or charged molecules require transport proteins. :::
 Movement of molecules from a region of higher concentration to a region of lower concentration,
 Directly through the phospholipid bilayer.
 
-- Only for small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$Lipid-soluble substances)
+- Only for small, non-polar molecules (e.g., $\mathrm{O}_2$, $\mathrm{CO}_2$Lipid-soluble
+  substances)
 - Net movement stops at equilibrium (dynamic equilibrium)
 - Rate depends on: concentration gradient, temperature, surface area, distance
 
@@ -1432,7 +1435,7 @@ If you get this wrong, revise: Cellular Respiration in Detail
 | Location             | Cytoplasm (glycolysis) + mitochondria (link reaction, Krebs cycle, oxidative phosphorylation) | Cytoplasm only (glycolysis only)                                 |
 | Oxygen               | Required (final electron acceptor)                                                            | Not required                                                     |
 | Substrates           | Glucose                                                                                       | Glucose                                                          |
-| Products             | $\mathrm{CO}_2$, $\mathrm{H}_2\mathrm{O}$ATP (30-32)                                            | Lactate, ATP (2)                                                 |
+| Products             | $\mathrm{CO}_2$, $\mathrm{H}_2\mathrm{O}$ATP (30-32)                                          | Lactate, ATP (2)                                                 |
 | ATP yield            | Approximately 30-32 ATP per glucose                                                           | 2 ATP per glucose                                                |
 | NAD$^+$ regeneration | Via oxidative phosphorylation (electron transport chain)                                      | Via conversion of pyruvate to lactate (NADH oxidised to NAD$^+$) |
 

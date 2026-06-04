@@ -1,6 +1,8 @@
 ---
 title: Differential Equations
-description: 'A-Level Further Maths Differential Equations notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'A-Level Further Maths Differential Equations notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam readiness.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -1040,8 +1042,8 @@ Have zero, one, or multiple solutions, unlike IVPs which (for linear ODEs) have 
 
 ### 14.4 Phase portraits
 
-For autonomous 2D systems $\dot{x} = f(x,y)$, $\dot{y} = g(x,y)$The phase portrait shows Trajectories
-in the $xy$-plane. Key features:
+For autonomous 2D systems $\dot{x} = f(x,y)$, $\dot{y} = g(x,y)$The phase portrait shows
+Trajectories in the $xy$-plane. Key features:
 
 - Fixed points: where $\dot{x} = \dot{y} = 0$
 - Stability: determined by the eigenvalues of the Jacobian at each fixed point

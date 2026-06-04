@@ -1,6 +1,8 @@
 ---
 title: Optics
-description: 'DSE Physics Optics notes covering key definitions, core concepts, worked examples, and practice questions for focused learning and effective revision.'
+description:
+  'DSE Physics Optics notes covering key definitions, core concepts, worked examples, and practice
+  questions for focused learning and effective revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -671,10 +673,10 @@ Angle to the axis and the angle to the normal._
 
 <summary>Problem 15: Dispersion — Prism</summary>
 
-White light enters a glass prism ($n_{\mathrm{red}} = 1.51$, $n_{\mathrm{violet}} = 1.53$) at an Angle
-of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain why the violet Light
-is deviated more than the red light and calculate the angle of refraction for each colour at The
-first surface.
+White light enters a glass prism ($n_{\mathrm{red}} = 1.51$, $n_{\mathrm{violet}} = 1.53$) at an
+Angle of incidence of $45^\circ$. The prism has an apex angle of $60^\circ$. Explain why the violet
+Light is deviated more than the red light and calculate the angle of refraction for each colour at
+The first surface.
 
 <summary>Solution</summary>
 

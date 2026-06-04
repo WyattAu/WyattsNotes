@@ -1,6 +1,8 @@
 ---
 title: The 19th-Century Novel
-description: 'GCSE English The 19th-Century Novel notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'GCSE English The 19th-Century Novel notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam preparation.'
 date: 2026-04-22
 tags:
   - gcse

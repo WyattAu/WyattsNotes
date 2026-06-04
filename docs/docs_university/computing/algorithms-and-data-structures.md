@@ -1,6 +1,8 @@
 ---
 title: Algorithms and Data Structures
-description: 'University Computing Algorithms and Data Structures notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'University Computing Algorithms and Data Structures notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Computing
@@ -189,8 +191,8 @@ Merge sort divides into 2 subproblems of size $n/2$ and combines in $O(n)$ time.
 
 $$T(n) = 2T(n/2) + \Theta(n)$$
 
-Here $a = 2$, $b = 2$So $c = \log_2 2 = 1$. We have $f(n) = \Theta(n) = \Theta(n^c \log^0 n)$Which is
-Case 2 with $k = 0$.
+Here $a = 2$, $b = 2$So $c = \log_2 2 = 1$. We have $f(n) = \Theta(n) = \Theta(n^c \log^0 n)$Which
+is Case 2 with $k = 0$.
 
 Therefore $T(n) = \Theta(n^1 \log^1 n) = \Theta(n \log n)$.
 
@@ -215,8 +217,8 @@ Strassen's algorithm divides into 7 subproblems of size $n/2$ and combines in $O
 
 $$T(n) = 7T(n/2) + O(n^2)$$
 
-Here $a = 7$, $b = 2$So $c = \log_2 7 \approx 2.807$. We have $f(n) = O(n^2) = O(n^{c - \varepsilon})$
-with $\varepsilon = c - 2 \approx 0.807$Which is Case 1.
+Here $a = 7$, $b = 2$So $c = \log_2 7 \approx 2.807$. We have
+$f(n) = O(n^2) = O(n^{c - \varepsilon})$ with $\varepsilon = c - 2 \approx 0.807$Which is Case 1.
 
 Therefore $T(n) = \Theta(n^{\log_2 7}) = \Theta(n^{2.807})$.
 
@@ -415,8 +417,8 @@ $\mathrm{E}[Y_n] \leq \frac{1}{4} \sum_{i=0}^{n-1} \binom{n}{i} \mathrm{E}[Y_i] 
 Using the indicator random variable technique,
 $\mathrm{E}[Y_n] \leq \frac{c^{n+1}}{n^{3/2}} \sum_{i=0}^{n-1} \frac{i^{3/2}(n-1-i)^{3/2}}{c^i c^{n-1-i}} \leq c \cdot n^{3/2}$
 for some constant $c$. Taking logs gives
-$\mathrm{E}[X_n] = \mathrm{E}[\log Y_n] \leq \log \mathrm{E}[Y_n] = O(\log n)$ by Jensen's inequality.
-$\blacksquare$
+$\mathrm{E}[X_n] = \mathrm{E}[\log Y_n] \leq \log \mathrm{E}[Y_n] = O(\log n)$ by Jensen's
+inequality. $\blacksquare$
 
 #### 2.4.1 AVL Trees
 
@@ -447,9 +449,9 @@ rotations:
 
 **Theorem 2.4.** An AVL tree with $n$ nodes has height $h \leq 1.4404 \cdot \log_2(n + 2) - 1.3277$.
 
-_Proof._ Let $N(h)$ be the minimum number of nodes in an AVL tree of height $h$. We have
-$N(0) = 1$, $N(1) = 2$And $N(h) = 1 + N(h-1) + N(h-2)$ for $h \geq 2$. This is the Fibonacci
-recurrence, giving $N(h) = F_{h+3} - 1$. Using $F_h = \frac{\phi^h - \hat{\phi}^h}{\sqrt{5}}$ where
+_Proof._ Let $N(h)$ be the minimum number of nodes in an AVL tree of height $h$. We have $N(0) = 1$,
+$N(1) = 2$And $N(h) = 1 + N(h-1) + N(h-2)$ for $h \geq 2$. This is the Fibonacci recurrence, giving
+$N(h) = F_{h+3} - 1$. Using $F_h = \frac{\phi^h - \hat{\phi}^h}{\sqrt{5}}$ where
 $\phi = \frac{1+\sqrt{5}}{2}$We get $N(h) > \phi^h / \sqrt{5} - 1$So
 $h \lt \log_\phi(\sqrt{5}(n + 1)) \approx 1.4404 \log_2(n + 1)$. $\blacksquare$
 
@@ -652,14 +654,16 @@ strings.
 <details>
 <summary>Worked Example: Bloom Filter Operations Trace</summary>
 
-A Bloom filter has $m = 10$ bits, $k = 2$ hash functions:
-$h_1(x) = x \bmod 10$, $h_2(x) = (x \cdot 3) \bmod 10$.
+A Bloom filter has $m = 10$ bits, $k = 2$ hash functions: $h_1(x) = x \bmod 10$,
+$h_2(x) = (x \cdot 3) \bmod 10$.
 
 Insert 15: $h_1(15) = 5$, $h_2(15) = 5 \cdot 3 \bmod 10 = 5$. Set bit 5. Bit array: `0000010000`
 
-Insert 22: $h_1(22) = 2$, $h_2(22) = 22 \cdot 3 \bmod 10 = 6$. Set bits 2, 6. Bit array: `0010010100`
+Insert 22: $h_1(22) = 2$, $h_2(22) = 22 \cdot 3 \bmod 10 = 6$. Set bits 2, 6. Bit array:
+`0010010100`
 
-Insert 37: $h_1(37) = 7$, $h_2(37) = 37 \cdot 3 \bmod 10 = 1$. Set bits 1, 7. Bit array: `0110010110`
+Insert 37: $h_1(37) = 7$, $h_2(37) = 37 \cdot 3 \bmod 10 = 1$. Set bits 1, 7. Bit array:
+`0110010110`
 
 Query 22: $h_1(22) = 2$ (set), $h_2(22) = 6$ (set). Result: **possibly in set** (true positive).
 
@@ -794,12 +798,12 @@ A graph $G = (V, E)$ can be represented by:
 - **Adjacency list:** For each vertex, store a list of neighbours. Space: $O(V + E)$. Iterating over
   neighbours: $O(\mathrm{deg}(v))$.
 
-| Operation          | Adjacency Matrix | Adjacency List      |
-| ------------------ | ---------------- | ------------------- |
-| Space              | $O(V^2)$         | $O(V + E)$          |
+| Operation          | Adjacency Matrix | Adjacency List       |
+| ------------------ | ---------------- | -------------------- |
+| Space              | $O(V^2)$         | $O(V + E)$           |
 | Check edge $(u,v)$ | $O(1)$           | $O(\mathrm{deg}(u))$ |
 | Iterate neighbours | $O(V)$           | $O(\mathrm{deg}(v))$ |
-| Add edge           | $O(1)$           | $O(1)$              |
+| Add edge           | $O(1)$           | $O(1)$               |
 | Remove edge        | $O(1)$           | $O(\mathrm{deg}(u))$ |
 
 :::caution Common Pitfall Choosing the wrong graph representation can make an algorithm
@@ -824,8 +828,8 @@ MergeSort(A, l, r):
 
 **Theorem 3.1.** Merge sort runs in $O(n \log n)$ time in all cases (best, average, worst).
 
-_Proof._ The recurrence is $T(n) = 2T(n/2) + O(n)$. By the Master theorem (case 2):
-$a = 2$, $b = 2$, $f(n) = O(n) = O(n^{\log_b a})$So $T(n) = O(n \log n)$. $\blacksquare$
+_Proof._ The recurrence is $T(n) = 2T(n/2) + O(n)$. By the Master theorem (case 2): $a = 2$,
+$b = 2$, $f(n) = O(n) = O(n^{\log_b a})$So $T(n) = O(n \log n)$. $\blacksquare$
 
 **Theorem 3.2.** Merge sort is stable and requires $O(n)$ auxiliary space.
 
@@ -1225,8 +1229,8 @@ Dijkstra(G, w, s):
 
 **Theorem 4.7.** Dijkstra's algorithm correctly computes shortest paths from the source.
 
-_Proof._ We prove by induction on $|S|$ that when a vertex $u$ is added to $S$, $d[u] = \delta(s, u)$
-(the true shortest-path distance).
+_Proof._ We prove by induction on $|S|$ that when a vertex $u$ is added to $S$,
+$d[u] = \delta(s, u)$ (the true shortest-path distance).
 
 Base case: $s$ is the first vertex added, and $d[s] = 0 = \delta(s, s)$.
 
@@ -1389,8 +1393,8 @@ intermediate vertices from $\\{1, 2, \ldots, k\\}$. Then:
 
 **Theorem 4.10.** Floyd-Warshall runs in $O(V^3)$ time and $O(V^2)$ space.
 
-_Proof._ The triple nested loop ($k$, $i$, $j$) executes $V^3$ iterations, each doing $O(1)$ work. The
-distance matrix requires $V^2$ space. Note that $d_{ij}^{(k)}$ can overwrite $d_{ij}^{(k-1)}$ in
+_Proof._ The triple nested loop ($k$, $i$, $j$) executes $V^3$ iterations, each doing $O(1)$ work.
+The distance matrix requires $V^2$ space. Note that $d_{ij}^{(k)}$ can overwrite $d_{ij}^{(k-1)}$ in
 place because $d_{ik}^{(k)} = d_{ik}^{(k-1)}$ and $d_{kj}^{(k)} = d_{kj}^{(k-1)}$ (paths from $i$ to
 $k$ and $k$ to $j$ using vertices up to $k$ cannot be improved by going through $k$ again without a
 negative cycle). $\blacksquare$
@@ -1399,8 +1403,8 @@ negative cycle). $\blacksquare$
 <summary>Worked Example: Floyd-Warshall on 4 Vertices</summary>
 
 Find all-pairs shortest paths for the graph with vertices $\\{1, 2, 3, 4\\}$ and edges:
-$w(1,2) = 3$, $w(1,3) = 8$, $w(1,4) = -4$ $w(2,1) = 5$, $w(2,3) = 7$, $w(2,4) = 2$ $w(3,1) = 2$, $w(3,4) = -1$
-$w(4,1) = 6$, $w(4,3) = 9$.
+$w(1,2) = 3$, $w(1,3) = 8$, $w(1,4) = -4$ $w(2,1) = 5$, $w(2,3) = 7$, $w(2,4) = 2$ $w(3,1) = 2$,
+$w(3,4) = -1$ $w(4,1) = 6$, $w(4,3) = 9$.
 
 **Initial distance matrix $D^{(0)}$:**
 $$D^{(0)} = \begin{pmatrix} 0 & 3 & 8 & -4 \\ 5 & 0 & 7 & 2 \\ 2 & \infty & 0 & -1 \\ 6 & \infty & 9 & 0 \end{pmatrix}$$
@@ -1479,12 +1483,13 @@ the cut property, the minimum-weight crossing edge belongs to some MST. $\blacks
 <details>
 <summary>Worked Example: Kruskal's Algorithm</summary>
 
-Find the MST of the graph with edges (sorted by weight):
-$(D, E, 2)$, $(C, E, 3)$, $(A, B, 4)$, $(B, C, 5)$, $(B, E, 6)$, $(A, E, 7)$, $(A, D, 8)$, $(C, D, 9)$.
+Find the MST of the graph with edges (sorted by weight): $(D, E, 2)$, $(C, E, 3)$, $(A, B, 4)$,
+$(B, C, 5)$, $(B, E, 6)$, $(A, E, 7)$, $(A, D, 8)$, $(C, D, 9)$.
 
 Vertices: $\\{A, B, C, D, E\\}$.
 
-Sorted edges: $(D,E,2)$, $(C,E,3)$, $(A,B,4)$, $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$, $(C,D,9)$.
+Sorted edges: $(D,E,2)$, $(C,E,3)$, $(A,B,4)$, $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$,
+$(C,D,9)$.
 
 Process each edge:
 
@@ -1508,14 +1513,14 @@ Find the MST of the same graph starting from vertex $A$.
 
 Edges from $A$: $(A,B,4)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(A,B,4)$. Tree: $\\{A, B\\}$. Cost: 4.
 
-Edges crossing cut: $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(B,C,5)$. Tree: $\\{A, B, C\\}$.
-Cost: 9.
+Edges crossing cut: $(B,C,5)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(B,C,5)$. Tree:
+$\\{A, B, C\\}$. Cost: 9.
 
 Edges crossing cut: $(C,E,3)$, $(C,D,9)$, $(B,E,6)$, $(A,E,7)$, $(A,D,8)$. Minimum: $(C,E,3)$. Tree:
 $\\{A, B, C, E\\}$. Cost: 12.
 
-Edges crossing cut: $(D,E,2)$, $(C,D,9)$, $(A,D,8)$. Minimum: $(D,E,2)$. Tree: $\\{A, B, C, D, E\\}$.
-Cost: 14.
+Edges crossing cut: $(D,E,2)$, $(C,D,9)$, $(A,D,8)$. Minimum: $(D,E,2)$. Tree:
+$\\{A, B, C, D, E\\}$. Cost: 14.
 
 **MST:** $(A,B,4)$, $(B,C,5)$, $(C,E,3)$, $(D,E,2)$. Total weight: 14 (same as Kruskal's).
 
@@ -1615,10 +1620,11 @@ i=3:      0  1  1  4  5  6  6  9
 i=4:      0  1  1  4  5  7  8  9
 ```
 
-Maximum value: $dp[4][7] = 9$ (items 2 and 4: $w = 3 + 5 = 7$, $v = 4 + 7 = 11$ — let me recalculate).
+Maximum value: $dp[4][7] = 9$ (items 2 and 4: $w = 3 + 5 = 7$, $v = 4 + 7 = 11$ — let me
+recalculate).
 
-Correct: items 2 and 3 ($w=3+4=7$, $v=4+5=9$), or items 1, 2, 4 ($w=1+3+5=9 > 7$Not valid). Items 1, 3
-($w=1+4=5$, $v=1+5=6$), items 2, 4 ($w=3+5=8 > 7$). Optimal: items 2 and 3 ($w=3+4=7$, $v=4+5=9$).
+Correct: items 2 and 3 ($w=3+4=7$, $v=4+5=9$), or items 1, 2, 4 ($w=1+3+5=9 > 7$Not valid). Items 1,
+3 ($w=1+4=5$, $v=1+5=6$), items 2, 4 ($w=3+5=8 > 7$). Optimal: items 2 and 3 ($w=3+4=7$, $v=4+5=9$).
 
 </details>
 
@@ -1753,8 +1759,8 @@ Solution: 2 quarters + 1 dime + 3 pennies = $25 + 25 + 10 + 1 + 1 + 1 = 63$. 6 c
 **Problem.** Given a sequence $a_1, \ldots, a_n$Find the length of the longest strictly increasing
 subsequence (not necessarily contiguous).
 
-**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt i \mathrm{~and~} a_j \lt a_i\\}$With $dp[i] = 1$ if
-no such $j$ exists.
+**Recurrence:** $dp[i] = 1 + \max\\{dp[j] : j \lt i \mathrm{~and~} a_j \lt a_i\\}$With $dp[i] = 1$
+if no such $j$ exists.
 
 **Time:** $O(n^2)$. **Space:** $O(n)$.
 
@@ -1909,10 +1915,10 @@ approximation ratio is at most 2. $\blacksquare$
 **Theorem 6.4 (Metric TSP).** The Christofides algorithm is a $3/2$-approximation for TSP with the
 triangle inequality.
 
-_Proof._ The algorithm computes an MST ($\leq \mathrm{OPT}$), finds a minimum-weight perfect matching
-$M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{OPT}/2$), and combines them
-into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at most
-$\mathrm{MST} + \lvert M \rvert \leq \mathrm{OPT} + \mathrm{OPT}/2 = \frac{3}{2}\mathrm{OPT}$.
+_Proof._ The algorithm computes an MST ($\leq \mathrm{OPT}$), finds a minimum-weight perfect
+matching $M$ on the odd-degree vertices of the MST ($\lvert M \rvert \leq \mathrm{OPT}/2$), and
+combines them into an Eulerian tour which is shortcut to a Hamiltonian cycle. The total weight is at
+most $\mathrm{MST} + \lvert M \rvert \leq \mathrm{OPT} + \mathrm{OPT}/2 = \frac{3}{2}\mathrm{OPT}$.
 $\blacksquare$
 
 **Theorem 6.5 (Inapproximability).** Unless P = NP, TSP (general, without triangle inequality) has
@@ -1936,9 +1942,8 @@ $\blacksquare$
 <details>
 <summary>Worked Example: Greedy Set Cover</summary>
 
-Universe $U = \\{1, 2, 3, 4, 5, 6\\}$. Sets:
-$S_1 = \\{1, 2, 3\\}$, $S_2 = \\{2, 4\\}$, $S_3 = \\{3, 5, 6\\}$, $S_4 = \\{4, 5\\}$, $S_5 = \\{1, 4, 6\\}$.
-All sets have equal cost 1.
+Universe $U = \\{1, 2, 3, 4, 5, 6\\}$. Sets: $S_1 = \\{1, 2, 3\\}$, $S_2 = \\{2, 4\\}$,
+$S_3 = \\{3, 5, 6\\}$, $S_4 = \\{4, 5\\}$, $S_5 = \\{1, 4, 6\\}$. All sets have equal cost 1.
 
 **Greedy:**
 
@@ -2021,7 +2026,8 @@ Choose random base $a = 2$.
 
 Compute $a^d \bmod n = 2^{35} \bmod 561$.
 
-$2^5 = 32$, $2^{10} = 1024 \bmod 561 = 463$, $2^{20} = 463^2 \bmod 561 = 67$, $2^{35} = 2^{20} \cdot 2^{10} \cdot 2^5 \bmod 561 = 67 \cdot 463 \cdot 32 \bmod 561$.
+$2^5 = 32$, $2^{10} = 1024 \bmod 561 = 463$, $2^{20} = 463^2 \bmod 561 = 67$,
+$2^{35} = 2^{20} \cdot 2^{10} \cdot 2^5 \bmod 561 = 67 \cdot 463 \cdot 32 \bmod 561$.
 
 $67 \times 463 = 31021 \bmod 561 = 31021 - 55 \times 561 = 31021 - 30855 = 166$.
 $166 \times 32 = 5312 \bmod 561 = 5312 - 9 \times 561 = 5312 - 5049 = 263$.
@@ -2182,8 +2188,9 @@ $\Omega(n \log n)$ (not just the worst case).
 ### 7.4 Graph Algorithms (Problems 12--15)
 
 **Problem 12.** Run Dijkstra's algorithm on the following graph from source $A$. Show the state of
-the priority queue after each extraction. Edge weights:
-$A \xrightarrow{10} B$, $A \xrightarrow{3} C$, $C \xrightarrow{4} B$, $C \xrightarrow{8} D$, $C \xrightarrow{2} E$, $B \xrightarrow{7} D$, $E \xrightarrow{5} D$, $D \xrightarrow{6} B$.
+the priority queue after each extraction. Edge weights: $A \xrightarrow{10} B$,
+$A \xrightarrow{3} C$, $C \xrightarrow{4} B$, $C \xrightarrow{8} D$, $C \xrightarrow{2} E$,
+$B \xrightarrow{7} D$, $E \xrightarrow{5} D$, $D \xrightarrow{6} B$.
 
 **Problem 13.** Prove that if a graph has a negative-weight cycle reachable from the source, then
 Bellman-Ford will detect it.
@@ -2201,9 +2208,9 @@ all steps.
 amount $M$. Find the minimum number of coins needed to make exact change for $M$ (or report that it
 is impossible). Give a recurrence, prove correctness, and state the time and space complexity.
 
-**Problem 17.** Given a sequence of matrices
-$A_1 (2 \times 10)$, $A_2 (10 \times 50)$, $A_3 (50 \times 20)$, $A_4 (20 \times 5)$, $A_5 (5 \times 80)$Find
-the optimal parenthesisation using the matrix chain multiplication DP. Show the full DP table.
+**Problem 17.** Given a sequence of matrices $A_1 (2 \times 10)$, $A_2 (10 \times 50)$,
+$A_3 (50 \times 20)$, $A_4 (20 \times 5)$, $A_5 (5 \times 80)$Find the optimal parenthesisation
+using the matrix chain multiplication DP. Show the full DP table.
 
 ### 7.6 Advanced Topics (Problems 18--20)
 

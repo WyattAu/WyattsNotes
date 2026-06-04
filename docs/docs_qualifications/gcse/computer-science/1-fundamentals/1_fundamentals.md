@@ -1,6 +1,8 @@
 ---
 title: Data Representation
-description: 'GCSE Computer Science Data Representation notes covering key definitions, core concepts, worked examples, and practice questions for efficient revision.'
+description:
+  'GCSE Computer Science Data Representation notes covering key definitions, core concepts, worked
+  examples, and practice questions for efficient revision.'
 date: 2026-04-14
 tags:
   - gcse

@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-energetics
 title: Chemistry - Energetics / Thermochemistry
-description: 'DSE Chemistry - Energetics / Thermochemistry notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'DSE Chemistry - Energetics / Thermochemistry notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused preparation.'
 slug: energetics
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -878,7 +880,6 @@ $\Delta H = -5.936 / 0.100 = -59.4 \mathrm{ kJ/mol}$
 | $\Delta H_{\mathrm{sol}} = \Delta H_{\mathrm{latt}} + \Delta H_{\mathrm{hyd}}$                    | Solution enthalpy                  |
 
 ## Worked Examples
-
 
 Use the following data to calculate the enthalpy change for the reaction
 $\text{C}(s) + \frac{1}{2}\text{O}_2(g) \rightarrow \text{CO}(g)$:

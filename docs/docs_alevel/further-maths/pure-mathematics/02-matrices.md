@@ -1,6 +1,8 @@
 ---
 title: Matrices
-description: 'A-Level Further Maths Matrices notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'A-Level Further Maths Matrices notes covering key definitions, core concepts, worked examples,
+  and practice questions for clear revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

@@ -1,6 +1,8 @@
 ---
 title: Light and Waves
-description: 'ILC Physics Light and Waves notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and examination practice.'
+description:
+  'ILC Physics Light and Waves notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted study and examination practice.'
 date: 2026-04-14
 tags:
   - ilc

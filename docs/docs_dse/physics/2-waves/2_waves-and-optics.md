@@ -1,7 +1,9 @@
 ---
 id: dse-physics-waves-and-optics
 title: Physics - Waves and Optics
-description: 'DSE Physics - Waves and Optics notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'DSE Physics - Waves and Optics notes covering key definitions, core concepts, worked examples,
+  and practice questions for effective revision.'
 slug: physics-waves-and-optics
 ---
 
@@ -1366,7 +1368,6 @@ $$60 + D_m = 99.0^\circ \implies D_m = 39.0^\circ$$
 :::
 
 ## Common Pitfalls
-
 
 1. Confusing wave speed, frequency, and wavelength — remember $v = f\lambda$ relates all three.
 

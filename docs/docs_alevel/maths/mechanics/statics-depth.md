@@ -1,6 +1,8 @@
 ---
 title: Statics (Extended)
-description: 'A-Level Maths Statics (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'A-Level Maths Statics (Extended) notes covering key definitions, core concepts, worked examples,
+  and practice questions for effective revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

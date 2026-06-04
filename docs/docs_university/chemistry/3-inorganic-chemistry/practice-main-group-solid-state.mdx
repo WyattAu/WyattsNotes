@@ -1,0 +1,151 @@
+---
+title: 'Main-Group and Solid-State Chemistry -- Practice Problems'
+description:
+  'University Main-Group and Solid-State Chemistry -- Practice Problems with MCQ questions covering
+  periodic trends, Bravais lattices, crystal defects, and semiconductor properties.'
+slug: practice-main-group-solid-state
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Main-Group and Solid-State Chemistry -- Practice Problems
+
+10 MCQ questions covering main-group element trends, Bravais lattices, crystal structures, defects,
+and electronic properties of solids. Select an option to check your answer.
+
+---
+
+## Main-Group Chemistry
+
+<PracticeProblem
+  question="Lithium exhibits anomalous behavior compared to other Group 1 metals. Which property is incorrectly matched with its explanation?"
+  options={[
+    'Li forms Li$_2$O (normal oxide) -- correctly because small Li$^+$ stabilizes the small O$^{2-}$ anion',
+    'Li forms Li$_3$N readily -- this is NOT anomalous; all Group 1 metals form nitrides',
+    'LiCl is soluble in organic solvents -- correctly because high charge density gives LiCl covalent character',
+    'Li resembles Mg (diagonal relationship) -- correctly due to similar ionic radii and charge density',
+  ]}
+  correctAnswer={0}
+  explanation"Lithium's anomaly: Li$_2$O (not peroxide/superoxide like Na/K) because small Li$^+$ stabilizes small O$^{2-}$ over larger peroxide/superoxide anions. Li$_3$N forms readily (other Group 1 metals do not react with N$_2$). LiCl has significant covalent character (soluble in organic solvents). The diagonal relationship with Mg arises from similar $Z/r$ ratios. The incorrect statement is about nitrides: only Li forms a nitride among Group 1."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The diagonal relationship in the periodic table states that Li resembles Mg, Be resembles Al, and B resembles Si. This is because:"
+  options={[
+    'Elements diagonally adjacent have similar $Z/r$ ratios (charge density) and polarizing power',
+    'They are in the same group',
+    'They have the same number of valence electrons',
+    'They have identical atomic radii',
+  ]}
+  correctAnswer={0}
+  explanation"The diagonal relationship arises because moving right across a period increases $Z$ (and charge density) while moving down increases the ionic radius (decreasing charge density). These opposing effects partially cancel for diagonally adjacent elements, giving similar $Z/r$ ratios and polarizing power. Li/Mg both form covalent chlorides, carbonates that decompose on heating, and oxides/hydroxides with limited solubility."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Nitrogen is relatively inert (N$_2$ is unreactive) despite being in Group 15. This is due to:"
+  options={[
+    'The very strong N$\\equiv$N triple bond (bond energy 945 kJ/mol) and the absence of a dipole in N$_2$',
+    'Nitrogen having a full outer shell of 8 electrons',
+    'Nitrogen being a noble gas',
+    'The N$\\equiv$N bond being weaker than a single bond',
+  ]}
+  correctAnswer={0}
+  explanation"N$_2$ has a triple bond ($\\sigma + 2\\pi$) with bond energy 945 kJ/mol (one of the strongest bonds). Additionally, N$_2$ is nonpolar (no permanent dipole to facilitate reactions) and the HOMO-LUMO gap is large (electron pairs in bonding orbitals are held tightly). Breaking N$_2$ requires the Haber process (high T, P, Fe catalyst) or biological nitrogen fixation."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Carbon dioxide has the structure O=C=O with bond angles of 180 degrees. What hybridization and bonding description is correct?"
+  options={[
+    'The carbon is $sp$ hybridized; two $\\sigma$ bonds and two $\\pi$ bonds (one with each oxygen)',
+    'The carbon is $sp^2$ hybridized with three $\\sigma$ bonds and one $\\pi$ bond',
+    'The carbon is $sp^3$ hybridized',
+    'The carbon uses only $p$ orbitals for all bonding',
+  ]}
+  correctAnswer={0}
+  explanation"CO$_2$: carbon is $sp$ hybridized (linear, 180 degrees). Two $sp$ hybrid orbitals form $\\sigma$ bonds with oxygen atoms. Two unhybridized $p$ orbitals on carbon form two mutually perpendicular $\\pi$ bonds, one with each oxygen. Each oxygen also contributes one $p$ orbital to each $\\pi$ bond. The molecule has 2 $\\sigma$ and 2 $\\pi$ bonds, with bond order 2 for each C=O."
+  difficulty="easy"
+/>
+
+## Solid-State Chemistry
+
+<PracticeProblem
+  question="In a face-centered cubic (FCC) lattice, what is the coordination number, the number of atoms per unit cell, and the packing efficiency?"
+  options={[
+    'CN = 12, 4 atoms per unit cell, 74.0% packing efficiency',
+    'CN = 8, 2 atoms per unit cell, 68.0% packing efficiency',
+    'CN = 6, 1 atom per unit cell, 52.4% packing efficiency',
+    'CN = 12, 6 atoms per unit cell, 68.0% packing efficiency',
+  ]}
+  correctAnswer={0}
+  explanation"FCC: 8 corner atoms ($8 \\times 1/8 = 1$) + 6 face atoms ($6 \\times 1/2 = 3$) = 4 atoms per unit cell. Each atom has 12 nearest neighbours (CN=12). Packing fraction = $\\pi/(3\\sqrt{2}) \\approx 74.0\\%$ (maximum for equal spheres). Examples: Cu, Ag, Au, Al. BCC: CN=8, 2 atoms/cell, 68.0%. SC: CN=6, 1 atom/cell, 52.4%."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="NaCl has a face-centered cubic structure where Na$^+$ ions occupy octahedral holes of the Cl$^-$ FCC lattice. What is the coordination number of Na$^+$ and how many formula units are per unit cell?"
+  options={[
+    'CN = 6 (octahedral); 4 NaCl formula units per unit cell',
+    'CN = 4 (tetrahedral); 1 formula unit per unit cell',
+    'CN = 8 (cubic); 2 formula units per unit cell',
+    'CN = 6; 8 formula units per unit cell',
+  ]}
+  correctAnswer={0}
+  explanation"NaCl has a rock-salt structure: Cl$^-$ forms an FCC lattice (4 atoms/cell), Na$^+$ occupies all octahedral holes (4 per cell in FCC). Each Na$^+$ is surrounded by 6 Cl$^-$ (octahedral coordination). Total: 4 Na$^+$ + 4 Cl$^-$ = 4 NaCl formula units per unit cell. The lattice parameter $a$ relates to ionic radii: $a = 2(r_+ + r_-)$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Schottky defects in an ionic crystal involve:"
+  options={[
+    'Equal numbers of cation and anion vacancies (maintaining charge neutrality)',
+    'An interstitial atom and a vacancy at different sites',
+    'Only cation vacancies',
+    'Only anion vacancies',
+  ]}
+  correctAnswer={0}
+  explanation"Schottky defect: a cation-anion vacancy pair. Both a cation and an adjacent anion are missing from their lattice sites. This maintains charge neutrality (equal numbers of positive and negative charge removed) but creates lattice vacancies that increase entropy. Frenkel defect: an ion moves from a lattice site to an interstitial site, creating a vacancy-interstitial pair. Both increase entropy at $T > 0$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="An n-type semiconductor is created by doping silicon with phosphorus. What is the mechanism of conduction?"
+  options={[
+    'Phosphorus (Group 15) has one extra valence electron beyond the four needed for Si bonding; this electron enters the conduction band as a mobile charge carrier',
+    'Phosphorus creates holes in the valence band',
+    'Phosphorus changes the band gap of silicon',
+    'Phosphorus makes silicon an insulator',
+  ]}
+  correctAnswer={0}
+  explanation"Doping Si (Group 14, 4 valence electrons) with P (Group 15, 5 valence electrons): four P electrons form covalent bonds in the Si lattice, and the fifth electron is weakly bound and easily excited into the conduction band. These electrons are the majority carriers (n-type = negative carriers). Conversely, doping with B (Group 13, 3 valence electrons) creates holes (p-type)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The Bragg equation for X-ray diffraction from crystal planes is $n\\lambda = 2d\\sin\\theta$. For a simple cubic crystal with lattice parameter $a$, what is the interplanar spacing $d$ for the (110) planes?"
+  options={[
+    '$d_{110} = \\frac{a}{\\sqrt{1^2 + 1^2 + 0^2}} = \\frac{a}{\\sqrt{2}}$',
+    '$d_{110} = \\frac{a}{2}$',
+    '$d_{110} = a$',
+    '$d_{110} = \\frac{a}{\\sqrt{3}}$',
+  ]}
+  correctAnswer={0}
+  explanation"For a cubic lattice, $d_{hkl} = \\frac{a}{\\sqrt{h^2 + k^2 + l^2}}$. For (110): $d = a/\\sqrt{1+1+0} = a/\\sqrt{2}$. For (100): $d = a$. For (111): $d = a/\\sqrt{3}$. Higher Miller indices give smaller $d$ (more closely spaced planes), which diffract at higher angles $\\theta$. The Bragg equation determines which planes produce constructive interference."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The band theory of solids explains why metals conduct electricity and insulators do not. For an insulator with a band gap of 6 eV, which statement is correct?"
+  options={[
+    'The valence band is full, the conduction band is empty, and the 6 eV gap is too large for thermal excitation of electrons at room temperature ($k_BT \\approx 0.025$ eV)',
+    'The conduction band overlaps with the valence band',
+    'Electrons are easily promoted from the valence to the conduction band',
+    'The Fermi level lies within the conduction band',
+  ]}
+  correctAnswer={0}
+  explanation"In insulators ($E_g > 4$ eV), the valence band is completely filled and the conduction band is completely empty, with a large band gap between them. At room temperature ($k_BT \\approx 0.025$ eV), virtually no electrons can be thermally excited across a 6 eV gap. Metals have partially filled bands (or overlapping bands). Semiconductors ($E_g \\sim 0.1-3$ eV) allow some thermal excitation."
+  difficulty="hard"
+/>

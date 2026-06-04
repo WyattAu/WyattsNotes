@@ -1,6 +1,8 @@
 ---
 title: Electric Fields
-description: 'A-Level Physics Electric Fields notes covering key definitions, core concepts, worked examples, and practice questions for detailed revision.'
+description:
+  'A-Level Physics Electric Fields notes covering key definitions, core concepts, worked examples,
+  and practice questions for detailed revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]

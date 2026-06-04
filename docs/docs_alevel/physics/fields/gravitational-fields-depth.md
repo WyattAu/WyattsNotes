@@ -1,6 +1,8 @@
 ---
 title: Gravitational Fields
-description: 'A-Level Physics Gravitational Fields notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'A-Level Physics Gravitational Fields notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Physics, ALevel]
 categories: [Physics]

@@ -337,8 +337,8 @@ Where $h$ is the step size.
 - Update: $y_{n+1} = y_n + h \cdot m_n$.
 - Advance: $x_{n+1} = x_n + h$.
 
-**Example.** Use Euler's method with $h = 0.1$ to approximate $y(0.5)$ for
-$\dfrac{dy}{dx} = x + y$, $y(0) = 1$.
+**Example.** Use Euler's method with $h = 0.1$ to approximate $y(0.5)$ for $\dfrac{dy}{dx} = x + y$,
+$y(0) = 1$.
 
 | $n$ | $x_n$ | $y_n$ | $f(x_n, y_n) = x_n + y_n$ |
 | :-- | :---- | :---- | :------------------------ |

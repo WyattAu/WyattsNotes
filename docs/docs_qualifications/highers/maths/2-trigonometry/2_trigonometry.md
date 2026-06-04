@@ -1,6 +1,8 @@
 ---
 title: Geometry and Trigonometry
-description: 'Scottish Highers Maths Geometry and Trigonometry notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
+description:
+  'Scottish Highers Maths Geometry and Trigonometry notes covering key definitions, core concepts,
+  worked examples, and practice questions for solid revision.'
 date: 2026-04-14
 tags:
   - highers
@@ -625,8 +627,8 @@ $$s = 1 - t \quad (2)$$
 
 $$2 - s = -1 + 3t \quad (3)$$
 
-From (2): $s = 1 - t$. Substitute into (1): $1 + 2(1 - t) = 3 + t$So $3 - 2t = 3 + t$Giving
-$t = 0$, $s = 1$.
+From (2): $s = 1 - t$. Substitute into (1): $1 + 2(1 - t) = 3 + t$So $3 - 2t = 3 + t$Giving $t = 0$,
+$s = 1$.
 
 Check (3): $2 - 1 = -1 + 0$I.e., $1 = -1$. This is false, so the lines are **skew**.
 
@@ -755,7 +757,8 @@ See the examples integrated throughout the sections above.
 9. Find the perpendicular distance from the point $(1, 2, 3)$ to the line
    $\mathbf{r} = (0, 1, -1) + t(2, -1, 3)$.
 
-10. In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$ (there may be two solutions).
+10. In triangle $ABC$, $a = 7$, $b = 9$, $B = 55^\circ$. Find angle $A$ (there may be two
+    solutions).
 
 11. Solve $2\sin^2 x + 3\cos x - 3 = 0$ for $0 \le x \lt 2\pi$.
 

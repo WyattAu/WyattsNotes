@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-acids-bases-electrochemistry
 title: Chemistry - Acids, Bases, and Electrochemistry
-description: 'DSE Chemistry - Acids, Bases, and Electrochemistry notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'DSE Chemistry - Acids, Bases, and Electrochemistry notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam preparation.'
 slug: chemistry-acids-bases-electrochemistry
 ---
 
@@ -1175,7 +1177,6 @@ $[\mathrm{CH_3COO^-}]/[\mathrm{CH_3COOH}]$ increases slightly, but the pH change
 because the buffer system absorbs the added base. The buffer resists large pH changes.
 
 ## Common Pitfalls
-
 
 1. Assuming that a strong acid always has a lower pH than a weak acid without considering
    concentration.

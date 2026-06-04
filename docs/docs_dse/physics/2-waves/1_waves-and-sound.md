@@ -1,6 +1,8 @@
 ---
 title: Waves and Sound
-description: 'DSE Physics Waves and Sound notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
+description:
+  'DSE Physics Waves and Sound notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -351,7 +353,7 @@ $$E = hf = 6.63 \times 10^{-34} \times 5.64 \times 10^{14} = 3.74 \times 10^{-19
 | Constructive interference | Path difference $= n\lambda$        | Waves in phase                       |
 | Destructive interference  | Path difference $= (n+1/2)\lambda$  | Waves in antiphase                   |
 | Standing waves (string)   | $f_n = nv/(2L)$                     | All harmonics                        |
-| Standing waves (pipe)     | $f_n = nv/(4L)$, $n$ odd              | Odd harmonics only                   |
+| Standing waves (pipe)     | $f_n = nv/(4L)$, $n$ odd            | Odd harmonics only                   |
 | Sound intensity           | $I = P/(4\pi r^2)$                  | Inverse square law                   |
 | Intensity level           | $\beta = 10\log(I/I_0)$             | Decibels                             |
 | EM spectrum               | $c = f\lambda$                      | All EM waves at speed $c$            |

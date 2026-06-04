@@ -1,6 +1,8 @@
 ---
 title: Algorithms
-description: 'GCSE Computer Science Algorithms notes covering key definitions, core concepts, worked examples, and practice questions for clear exam preparation and mastery.'
+description:
+  'GCSE Computer Science Algorithms notes covering key definitions, core concepts, worked examples,
+  and practice questions for clear exam preparation and mastery.'
 date: 2026-04-14
 tags:
   - gcse

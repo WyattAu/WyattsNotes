@@ -1,6 +1,8 @@
 ---
 title: Solid State Physics
-description: 'University Solid State Physics notes covering key definitions, core concepts, worked examples, and practice questions for focused exam preparation and revision.'
+description:
+  'University Solid State Physics notes covering key definitions, core concepts, worked examples,
+  and practice questions for focused exam preparation and revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics
@@ -26,15 +28,15 @@ $$\mathbf{R} = n_1\mathbf{a}_1 + n_2\mathbf{a}_2 + n_3\mathbf{a}_3, \quad n_i \i
 
 There are **14 Bravais lattices** in three dimensions, classified into 7 crystal systems:
 
-| System       | Lattices     | Constraints                                                   |
-| ------------ | ------------ | ------------------------------------------------------------- |
-| Cubic        | SC, BCC, FCC | $a = b = c$, $\alpha = \beta = \gamma = 90^\circ$               |
-| Tetragonal   | P, I         | $a = b \neq c$, $\alpha = \beta = \gamma = 90^\circ$            |
-| Orthorhombic | P, C, I, F   | $a \neq b \neq c$, $\alpha = \beta = \gamma = 90^\circ$         |
-| Monoclinic   | P, C         | $a \neq b \neq c$, $\alpha = \gamma = 90^\circ \neq \beta$      |
-| Triclinic    | P            | $a \neq b \neq c$, $\alpha \neq \beta \neq \gamma$              |
+| System       | Lattices     | Constraints                                                       |
+| ------------ | ------------ | ----------------------------------------------------------------- |
+| Cubic        | SC, BCC, FCC | $a = b = c$, $\alpha = \beta = \gamma = 90^\circ$                 |
+| Tetragonal   | P, I         | $a = b \neq c$, $\alpha = \beta = \gamma = 90^\circ$              |
+| Orthorhombic | P, C, I, F   | $a \neq b \neq c$, $\alpha = \beta = \gamma = 90^\circ$           |
+| Monoclinic   | P, C         | $a \neq b \neq c$, $\alpha = \gamma = 90^\circ \neq \beta$        |
+| Triclinic    | P            | $a \neq b \neq c$, $\alpha \neq \beta \neq \gamma$                |
 | Hexagonal    | P            | $a = b \neq c$, $\alpha = \beta = 90^\circ$, $\gamma = 120^\circ$ |
-| Trigonal     | R            | $a = b = c$, $\alpha = \beta = \gamma \neq 90^\circ$            |
+| Trigonal     | R            | $a = b = c$, $\alpha = \beta = \gamma \neq 90^\circ$              |
 
 **Notation:** P = primitive, I = body-centred, F = face-centred, C = base-centred, R = rhombohedral.
 
@@ -274,8 +276,9 @@ $\mathbf{G}_{hkl} = h\mathbf{b}_1 + k\mathbf{b}_2 + l\mathbf{b}_3$ Is perpendicu
 real-space planes $(hkl)$And $\lvert\mathbf{G}_{hkl}\rvert = 2\pi/d_{hkl}$ where $d_{hkl}$ is the
 interplanar spacing.
 
-**Proof.** The plane $(hkl)$ has intercepts $\mathbf{a}_1/h$, $\mathbf{a}_2/k$, $\mathbf{a}_3/l$. Two
-vectors in this plane are $\mathbf{a}_2/k - \mathbf{a}_1/h$ and $\mathbf{a}_3/l - \mathbf{a}_1/h$.
+**Proof.** The plane $(hkl)$ has intercepts $\mathbf{a}_1/h$, $\mathbf{a}_2/k$, $\mathbf{a}_3/l$.
+Two vectors in this plane are $\mathbf{a}_2/k - \mathbf{a}_1/h$ and
+$\mathbf{a}_3/l - \mathbf{a}_1/h$.
 
 $\mathbf{G}_{hkl} \cdot (\mathbf{a}_2/k - \mathbf{a}_1/h) = (2\pi/k)k - (2\pi/h)h = 0$.
 
@@ -1081,8 +1084,8 @@ Electrons in an effective potential:
 
 $$\left[-\frac{\hbar^2}{2m}\nabla^2 + V_{\mathrm{eff}(\mathbf{r})\right]\psi_i(\mathbf{r}) = \varepsilon_i\psi_i(\mathbf{r})}$$
 
-Where $V_{\mathrm{eff} = V_{\mathrm{ext} + V_H[n] + V_{\mathrm{xc}[n]}}}$. Here $V_{\mathrm{ext}}$ is
-the External (ionic) potential, $V_H$ is the Hartree (classical Coulomb) potential, and
+Where $V_{\mathrm{eff} = V_{\mathrm{ext} + V_H[n] + V_{\mathrm{xc}[n]}}}$. Here $V_{\mathrm{ext}}$
+is the External (ionic) potential, $V_H$ is the Hartree (classical Coulomb) potential, and
 $V_{\mathrm{xc}}$ Is the exchange-correlation potential.
 
 The electron density is $n(\mathbf{r}) = \sum_i \lvert\psi_i(\mathbf{r})\rvert^2$ (summing over
@@ -1601,8 +1604,8 @@ Electrons near $\varepsilon_F$ can flip their spins in response to a field:
 $$\chi_P = \mu_0\mu_B^2\,g(\varepsilon_F) = \frac{3\mu_0\mu_B^2 N}{2\varepsilon_F}$$
 
 This is temperature-independent (up to corrections of order $(T/T_F)^2$), in contrast to the Curie
-Law. The ratio $\chi_P/\chi_{\mathrm{Curie} \sim T/T_F \sim 10^{-2}}$ at room temperature, Explaining
-why metals are only weakly paramagnetic.
+Law. The ratio $\chi_P/\chi_{\mathrm{Curie} \sim T/T_F \sim 10^{-2}}$ at room temperature,
+Explaining why metals are only weakly paramagnetic.
 
 ### 10.4 Ferromagnetism and the Mean-Field Theory
 
@@ -1730,9 +1733,9 @@ FCC, And explain why SC is rarely observed in elemental metals.
 **Problem 2.** Aluminium is FCC with $a = 0.405$ nm and $M = 26.98$ g/mol. Calculate the theoretical
 Density and compare with the experimental value ($2.70\ \mathrm{g}/cm^3$).
 
-**Problem 3.** A plane intercepts the crystallographic axes at $2a$, $3b$And $\infty c$. Determine the
-Miller indices. A direction passes through the origin and the point $(1, -1, 0)$ in units of lattice
-Constants. Write the direction indices.
+**Problem 3.** A plane intercepts the crystallographic axes at $2a$, $3b$And $\infty c$. Determine
+the Miller indices. A direction passes through the origin and the point $(1, -1, 0)$ in units of
+lattice Constants. Write the direction indices.
 
 **Problem 4.** Magnesium is HCP with $a = 0.321$ nm, $c = 0.521$ nm. Calculate the ideal $c/a$ ratio
 And the actual ratio. How many atoms are in the conventional cell?
@@ -1764,16 +1767,17 @@ Accurate approximation?
 **Problem 12.** Compare the Einstein and Debye predictions for $C_V/C_{\mathrm{Dulong}--Petit}$ as a
 Function of $T/\Theta$ at $T/\Theta = 0.1$, $0.5$And $1.0$.
 
-**Problem 13.** Sodium has $n = 2.65 \times 10^{28}\ \mathrm{m}^{-3}$ conduction electrons. Calculate
-The Fermi energy, Fermi wave vector, Fermi velocity, and Fermi temperature.
+**Problem 13.** Sodium has $n = 2.65 \times 10^{28}\ \mathrm{m}^{-3}$ conduction electrons.
+Calculate The Fermi energy, Fermi wave vector, Fermi velocity, and Fermi temperature.
 
 **Problem 14.** Using the tight-binding model for a 1D chain with nearest-neighbour hopping $t$: (a)
 find the effective mass at the band bottom and band top, and (b) calculate the density of states
 $g(\varepsilon)$ and show it diverges at the band edges.
 
 **Problem 15.** A silicon sample is doped with $N_D = 10^{22}\ \mathrm{m}^{-3}$ phosphorus atoms.
-Calculate the electron and hole concentrations at 300 K ($n_i = 1.5 \times 10^{16}\ \mathrm{m}^{-3}$)
-And the position of the Fermi level relative to the conduction band edge.
+Calculate the electron and hole concentrations at 300 K
+($n_i = 1.5 \times 10^{16}\ \mathrm{m}^{-3}$) And the position of the Fermi level relative to the
+conduction band edge.
 
 **Problem 16.** A p-n junction is made from Si with $N_A = 10^{23}\ \mathrm{m}^{-3}$ and
 $N_D = 10^{22}\ \mathrm{m}^{-3}$. Calculate the built-in potential and the depletion width at 300 K.
@@ -1799,8 +1803,8 @@ Ferromagnet above $T_C$. Express $C$ in terms of $N$, $\mu$And $k_B$.
   lattice points at $(\pm 2\pi/a)(\pm 1, \pm 1, \pm 1)/2$ form an FCC pattern.
 - _Problem 7:_ First five FCC reflections: (111), (200), (220), (311), (222). Use
   $2d\sin\theta = \lambda$ with $d = a/\sqrt{h^2+k^2+l^2}$.
-- _Problem 13:_ $\varepsilon_F = 3.24$ eV, $k_F = 9.22 \times 10^9$ m$^{-1}$, $v_F = 1.07 \times 10^6$
-  m/s, $T_F = 3.76 \times 10^4$ K.
+- _Problem 13:_ $\varepsilon_F = 3.24$ eV, $k_F = 9.22 \times 10^9$ m$^{-1}$,
+  $v_F = 1.07 \times 10^6$ m/s, $T_F = 3.76 \times 10^4$ K.
 - _Problem 15:_ $n = N_D = 10^{22}$ m$^{-3}$, $p = n_i^2/N_D = 2.25 \times 10^{10}$ m$^{-3}$
   $E_c - E_F = k_B T\ln(N_c/N_D) \approx 0.214$ eV.
 - _Problem 16:_ $V_0 = 0.716$ V, $W \approx 0.35$ $\mu$M.
@@ -1827,8 +1831,8 @@ The GL free energy functional:
 
 $$\mathcal{F} = \mathcal{F}_n + \alpha|\psi|^2 + \frac{\beta}{2}|\psi|^4 + \frac{1}{2m^*}\left|\left(-i\hbar\nabla - e^*\mathbf{A}\right)\psi\right|^2 + \frac{|\mathbf{B}|^2}{2\mu_0}$$
 
-Where $\alpha = \alpha_0(T - T_c)$ (negative below $T_c$), $\beta > 0$, $m^* = 2m_e$, $e^* = 2e$ (Cooper
-pair charge), and $\mathbf{A}$ is the vector potential.
+Where $\alpha = \alpha_0(T - T_c)$ (negative below $T_c$), $\beta > 0$, $m^* = 2m_e$, $e^* = 2e$
+(Cooper pair charge), and $\mathbf{A}$ is the vector potential.
 
 Minimising with respect to $\psi^*$ gives the **first GL equation**:
 
@@ -2189,7 +2193,8 @@ light-matter quasiparticles with dispersion:
 
 $$E_{\pm}(k) = \frac{1}{2}\left(E_{\text{cav}(k) + E_{\text{exc}(k)\right) \pm \frac{1}{2}\sqrt{\Omega_R^2 + \delta^2(k)}}}$$
 
-Where $\Omega_R$ is the Rabi splitting and $\delta = E_{\text{cav} - E_{\text{exc}}}$ is the detuning.
+Where $\Omega_R$ is the Rabi splitting and $\delta = E_{\text{cav} - E_{\text{exc}}}$ is the
+detuning.
 
 <details>
 <summary>Worked Example 15.1: MOSFET Drain Current</summary>

@@ -1,6 +1,8 @@
 ---
 title: Computer Systems
-description: 'GCSE Computer Science Computer Systems notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
+description:
+  'GCSE Computer Science Computer Systems notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough revision.'
 date: 2026-04-14
 tags:
   - gcse

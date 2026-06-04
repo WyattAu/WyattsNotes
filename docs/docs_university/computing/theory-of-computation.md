@@ -1,6 +1,8 @@
 ---
 title: Theory of Computation
-description: 'University Computing Theory of Computation notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'University Computing Theory of Computation notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing
@@ -163,9 +165,10 @@ $$M = (\{q_0, q_1, q_2\}, \{0, 1\}, \delta, q_0, \{q_0\})$$
 | $q_1$ | $q_2$              | $q_0$              |
 | $q_2$ | $q_1$              | $q_2$              |
 
-_Correctness._ By induction on input length. Base: $x = \varepsilon$, $\mathrm{val}(\varepsilon) = 0$
-DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where $r = \mathrm{val}(x) \bmod 3$), Then
-reading $b$ moves to $q_{(2r+b) \bmod 3}$Which equals $q_{\mathrm{val}(xb) \bmod 3}$. $\blacksquare$
+_Correctness._ By induction on input length. Base: $x = \varepsilon$,
+$\mathrm{val}(\varepsilon) = 0$ DFA is in $q_0$. Step: if after $x$ the DFA is in $q_r$ (where
+$r = \mathrm{val}(x) \bmod 3$), Then reading $b$ moves to $q_{(2r+b) \bmod 3}$Which equals
+$q_{\mathrm{val}(xb) \bmod 3}$. $\blacksquare$
 
 </details>
 
@@ -1221,8 +1224,8 @@ Whose tiles encode the computation history of $M$ on $w$. The tiles are designed
 Sequence corresponds to a valid accepting computation: the first tile starts the computation, middle
 Tiles enforce that each configuration follows from the previous by a valid transition, and the last
 Tile allows termination only if an accept state is reached. Thus the PCP instance has a solution iff
-$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_{\mathrm{TM}}$ would Be
-decidable — contradiction. $\blacksquare$
+$M$ accepts $w$. The construction is computable, so if PCP were decidable, $A_{\mathrm{TM}}$ would
+Be decidable — contradiction. $\blacksquare$
 
 **Modified PCP (MPCP).** In the modified version, the first tile used must be tile 1. MPCP is also
 Undecidable, and the reduction from PCP to MPCP adds a "prefix" tile that forces tile 1 to be used
@@ -1657,8 +1660,8 @@ Instance has a polynomial-time verifiable certificate.
 
 **Theorem 6.11.** If $\mathrm{NP} \neq \mathrm{coNP}$Then $\mathrm{P} \neq \mathrm{NP}$.
 
-_Proof._ If $\mathrm{P} = \mathrm{NP}$Then $\mathrm{P} = \mathrm{coNP}$ (since $\mathrm{P}$ Is closed
-under complement), so $\mathrm{NP} = \mathrm{coNP}$. The contrapositive gives the Result.
+_Proof._ If $\mathrm{P} = \mathrm{NP}$Then $\mathrm{P} = \mathrm{coNP}$ (since $\mathrm{P}$ Is
+closed under complement), so $\mathrm{NP} = \mathrm{coNP}$. The contrapositive gives the Result.
 $\blacksquare$
 
 **PSPACE.** The class of languages decidable in polynomial space:
@@ -1687,21 +1690,21 @@ $$\mathrm{L \subseteq \mathrm{NL \subseteq \mathrm{P \subseteq \mathrm{NP \subse
 
 $$\mathrm{P \subseteq \mathrm{NP \subseteq \mathrm{PH \subseteq \mathrm{PSPACE$$
 
-| Inclusion                                                     | Known to be proper? | Theorem used        |
-| ------------------------------------------------------------- | ------------------- | ------------------- |
-| $\mathrm{Regular} \subseteq \mathrm{CFL}$                       | Yes                 | Pumping lemma       |
-| $\mathrm{CFL} \subseteq \mathrm{Decidable}$                     | Yes                 | CYK algorithm       |
+| Inclusion                                                        | Known to be proper? | Theorem used        |
+| ---------------------------------------------------------------- | ------------------- | ------------------- |
+| $\mathrm{Regular} \subseteq \mathrm{CFL}$                        | Yes                 | Pumping lemma       |
+| $\mathrm{CFL} \subseteq \mathrm{Decidable}$                      | Yes                 | CYK algorithm       |
 | $\mathrm{Decidable} \subseteq \mathrm{TM}\mathrm{-recognisable}$ | Yes                 | Diagonalisation     |
-| $\mathrm{P} \subseteq \mathrm{EXPTIME}$                         | Yes                 | Time hierarchy      |
-| $\mathrm{P} \subseteq \mathrm{PSPACE}$                          | Yes                 | Space hierarchy     |
-| $\mathrm{NP} \subseteq \mathrm{PSPACE}$                         | Yes                 | Savitch's corollary |
-| $\mathrm{L} \subseteq \mathrm{NL}$                              | Unknown             |                     |
-| $\mathrm{P} \subseteq \mathrm{NP}$                              | Unknown             | Open problem        |
-| $\mathrm{NP} \subseteq \mathrm{coNP}$                           | Unknown             | Open problem        |
+| $\mathrm{P} \subseteq \mathrm{EXPTIME}$                          | Yes                 | Time hierarchy      |
+| $\mathrm{P} \subseteq \mathrm{PSPACE}$                           | Yes                 | Space hierarchy     |
+| $\mathrm{NP} \subseteq \mathrm{PSPACE}$                          | Yes                 | Savitch's corollary |
+| $\mathrm{L} \subseteq \mathrm{NL}$                               | Unknown             |                     |
+| $\mathrm{P} \subseteq \mathrm{NP}$                               | Unknown             | Open problem        |
+| $\mathrm{NP} \subseteq \mathrm{coNP}$                            | Unknown             | Open problem        |
 
-Both inclusions $\mathrm{P} \subseteq \mathrm{NP}$ and $\mathrm{NP} \subseteq \mathrm{PSPACE}$ are Known
-to be proper ($\mathrm{P} \neq \mathrm{PSPACE}$), but the status of $\mathrm{P}$ vs. $\mathrm{NP}$
-remains open.
+Both inclusions $\mathrm{P} \subseteq \mathrm{NP}$ and $\mathrm{NP} \subseteq \mathrm{PSPACE}$ are
+Known to be proper ($\mathrm{P} \neq \mathrm{PSPACE}$), but the status of $\mathrm{P}$ vs.
+$\mathrm{NP}$ remains open.
 
 :::caution Common Pitfall NP-completeness refers to **decision** problems. The optimisation versions
 (e.g., "find the shortest Tour") are NP-hard, not necessarily NP-complete. Also, "NP" stands for
@@ -1790,8 +1793,8 @@ regular using the pumping lemma. (b) Give a CFG for $L$ and prove it is correct.
 decidable? Justify.
 
 **Problem 20.** For each of the following languages, state the smallest complexity class (from
-$\mathrm{Regular}$, $\mathrm{CFL$, $\mathrm{Decidable}$, $\mathrm{NP$ $\mathrm{PSPACE$, $\mathrm{EXPTIME}$Or
-"undecidable") that is known to contain it. Justify each answer briefly.
+$\mathrm{Regular}$, $\mathrm{CFL$, $\mathrm{Decidable}$, $\mathrm{NP$ $\mathrm{PSPACE$,
+$\mathrm{EXPTIME}$Or "undecidable") that is known to contain it. Justify each answer briefly.
 
 (a) $\{0^n 1^n 0^n : n \geq 0\}$ (b) $\{\langle G \rangle : G \mathrm{ has} a Hamiltonian cycle\}$
 (c) $\{\langle G, k \rangle : G \mathrm{ has} a vertex cover of size  \leq k\}$ (d)
@@ -1819,14 +1822,15 @@ a string not in $L$.
 $L(M_1) \cap L(M_2) \neq \emptyset$ iff $M$ accepts $\varepsilon$ iff
 $\langle M \rangle \notin E_{\mathrm{TM}}$ (after adjusting for the specific reduction).
 
-**Problem 13.** If $\mathrm{P} = \mathrm{NP}$Then for any $L \in \mathrm{NP}$We have $L \in \mathrm{P}$.
-Since $\mathrm{P}$ is closed under complement, $\overline{L} \in \mathrm{P}
-\subseteq \mathrm{NP}$. So
-$\overline{L} \in \mathrm{NP}$ for every $L \in \mathrm{NP}$, meaning
-$\mathrm{NP} \subseteq \mathrm{coNP}$. By symmetry, $\mathrm{coNP} \subseteq \mathrm{NP}$.
+**Problem 13.** If $\mathrm{P} = \mathrm{NP}$Then for any $L \in \mathrm{NP}$We have
+$L \in \mathrm{P}$. Since $\mathrm{P}$ is closed under complement,
+$\overline{L} \in \mathrm{P}
+\subseteq \mathrm{NP}$. So $\overline{L} \in \mathrm{NP}$ for every
+$L \in \mathrm{NP}$, meaning $\mathrm{NP} \subseteq \mathrm{coNP}$. By symmetry,
+$\mathrm{coNP} \subseteq \mathrm{NP}$.
 
-**Problem 19.** (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$, $y$ is in the first $0^p$
-block. Pumping down gives $0^{p-k}1^p\#0^p1^p \notin L$. (b)
+**Problem 19.** (a) Let $w = 0^p 1^p \# 0^p 1^p \in L$. Since $|xy| \leq p$, $y$ is in the first
+$0^p$ block. Pumping down gives $0^{p-k}1^p\#0^p1^p \notin L$. (b)
 $S \to 0S0 \mid 1S1 \mid S\#S \mid \varepsilon$ (generate matched pairs on both sides of $\#$). (c)
 Yes — a TM can check the $\#$ symbol and verify both halves are reverses of each other.
 

@@ -1,6 +1,8 @@
 ---
 title: Operating Systems
-description: 'University Computing Operating Systems notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'University Computing Operating Systems notes covering key definitions, core concepts, worked
+  examples, and practice questions for methodical revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing
@@ -674,9 +676,9 @@ State.
 | $P_3$   | (2,1,1)    | (2,2,2) | (0,1,1) |
 | $P_4$   | (0,0,2)    | (4,3,3) | (4,3,1) |
 
-Safety check: $P_1$ has $\mathrm{Need} = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release $(2,0,0)$New
-$A = (5,3,2)$. Then $P_3$: $\mathrm{Need} = (0,1,1) \leq (5,3,2)$. Continuing, All processes can
-complete: system is **safe**.
+Safety check: $P_1$ has $\mathrm{Need} = (1,2,2) \leq (3,3,2) = A$. Execute $P_1$Release
+$(2,0,0)$New $A = (5,3,2)$. Then $P_3$: $\mathrm{Need} = (0,1,1) \leq (5,3,2)$. Continuing, All
+processes can complete: system is **safe**.
 
 <details>
 <summary>Worked Example 4.1 — Banker's Algorithm Step-by-Step</summary>
@@ -1320,8 +1322,8 @@ Capacity, increasing the window of vulnerability.
 <details>
 <summary>Worked Example 6.2 — RAID Capacity and Reliability</summary>
 
-Eight 2 TiB disks. $\mathrm{MTTF_}{\mathrm{disk} = 1.2 \times 10^6}$ hours, $T_{\mathrm{repair} = 24}$
-hours.
+Eight 2 TiB disks. $\mathrm{MTTF_}{\mathrm{disk} = 1.2 \times 10^6}$ hours,
+$T_{\mathrm{repair} = 24}$ hours.
 
 _RAID 0:_ Capacity = $8 \times 2 = 16$ TiB. No fault tolerance. MTTF =
 $\mathrm{MTTF_}{\mathrm{disk} / 8 = 150000}$ hours.
@@ -1695,8 +1697,8 @@ Using the same processes as Problem 3, compute the schedule under non-preemptive
 
 **Solution.** (Revision: §2.4)
 
-At $t = 0$Only $P_1$ is available. $P_1$ runs 0--10. At $t = 10$, $P_2$ (burst 5) and $P_3$ (burst 2)
-are both ready. SJF selects $P_3$Then $P_2$.
+At $t = 0$Only $P_1$ is available. $P_1$ runs 0--10. At $t = 10$, $P_2$ (burst 5) and $P_3$
+(burst 2) are both ready. SJF selects $P_3$Then $P_2$.
 
 Gantt: $\lvert P_1(10) \rvert P_3(2) \rvert P_2(5) \rvert$ at times 0, 10, 12, 17.
 

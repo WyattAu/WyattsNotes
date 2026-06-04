@@ -1,0 +1,151 @@
+---
+title: 'Compilers -- Practice Problems'
+description:
+  'University Compilers -- Practice Problems with MCQ questions covering lexical analysis, parsing,
+  ASTs, semantic analysis, optimization, and code generation for self-assessment and revision.'
+slug: practice-compilers
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Compilers -- Practice Problems
+
+10 MCQ questions covering lexical analysis, parsing (LL and LR), abstract syntax trees, intermediate
+representations, optimization, and code generation. Select an option to check your answer.
+
+---
+
+## Lexical Analysis and Parsing
+
+<PracticeProblem
+  question="In lexical analysis, the 'maximal munch' rule resolves ambiguity by always:"
+  options={[
+    'Matching the longest possible token from the current position',
+    'Matching the first valid token type in the grammar',
+    'Matching the shortest possible token to save memory',
+    'Preferting keywords over identifiers regardless of length',
+  ]}
+  correctAnswer={0}
+  explanation"Maximal munch: the lexer always matches the longest valid prefix as a single token. For example, '123abc' is tokenized as '123' (integer) then 'abc' (identifier), not '1', '2', '3', 'abc'. This is typically implemented by running the DFA and backtracking to the last accepting state when no further transitions are valid."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What two conditions must hold for a grammar to be LL(1) parseable?"
+  options={[
+    'No left recursion and the grammar must be factored (no common prefixes in productions)',
+    'The grammar must be right-recursive and all productions must have the same length',
+    'The grammar must be in Chomsky Normal Form',
+    'The grammar must have exactly one production per nonterminal',
+  ]}
+  correctAnswer={0}
+  explanation"LL(1) requires: (1) no left recursion ($A \\to A\\alpha$ causes infinite loop in recursive descent), eliminated by $A \\to \\beta A' \\mid \\gamma; A' \\to \\alpha A' \\mid \\epsilon$; and (2) left factoring ($A \\to \\alpha\\beta_1 \\mid \\alpha\\beta_2$ causes ambiguity with one lookahead), eliminated by $A \\to \\alpha A'; A' \\to \\beta_1 \\mid \\beta_2$. After these, the parsing table must have no conflicts."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In LR parsing, what is the difference between SLR(1), LALR(1), and LR(1) in terms of power and table size?"
+  options={[
+    'SLR(1) is least powerful with smallest tables; LALR(1) is medium; LR(1) is most powerful with largest tables',
+    'All three have identical power but different table construction costs',
+    'SLR(1) is most powerful; LR(1) is least powerful',
+    'LALR(1) is more powerful than LR(1)',
+  ]}
+  correctAnswer={0}
+  explanation"SLR(1) uses global FOLLOW sets for reduce decisions and may incorrectly reject valid strings or miss conflicts. LR(1) carries full lookahead context per state (most precise, largest tables). LALR(1) merges LR(1) states with the same core, losing some precision but keeping tables compact. LALR(1) is used by Yacc/Bison and handles most practical grammars."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In shift-reduce parsing, a shift-reduce conflict occurs when:"
+  options={[
+    'The parser cannot decide whether to shift the next input symbol onto the stack or to reduce by a production',
+    'Two different reductions are possible at the same state',
+    'The input is exhausted but the stack is not empty',
+    'The parser encounters an unexpected token',
+  ]}
+  correctAnswer={0}
+  explanation"A shift-reduce conflict means the ACTION table entry has both SHIFT and REDUCE for the same state and lookahead. A reduce-reduce conflict means two different productions can be reduced in the same state. SLR(1), LALR(1), and LR(1) progressively eliminate more conflicts. Resolving conflicts requires grammar modification or operator precedence declarations."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which FIRST set construction rule is correct for computing FIRST($\\alpha$) where $\\alpha$ is a string of grammar symbols?"
+  options={[
+    'If $\\alpha = Y\\beta$ and $\\epsilon \\in \\text{FIRST}(Y)$, then $\\text{FIRST}(\\alpha)$ includes $\\text{FIRST}(Y) \\setminus \\{\\epsilon\\} \\cup \\text{FIRST}(\\beta)$',
+    '$\\text{FIRST}(\\alpha) = \\text{FIRST}(\\text{first symbol of } \\alpha)$ only',
+    '$\\text{FIRST}(\\alpha) = \\text{FIRST}(\\text{last symbol of } \\alpha)$',
+    '$\\text{FIRST}(\\alpha)$ is always a singleton set',
+  ]}
+  correctAnswer={0}
+  explanation"For $\\alpha = Y_1 Y_2 \\ldots Y_k$: add FIRST($Y_1$) to FIRST($\\alpha$). If $\\epsilon \\in$ FIRST($Y_1$), also add FIRST($Y_2$). Continue until reaching $Y_i$ where $\\epsilon \\notin$ FIRST($Y_i$), or all symbols have $\\epsilon$-derivations (then $\\epsilon \\in$ FIRST($\\alpha$)). This cascading is key to computing FIRST for string arguments."
+  difficulty="hard"
+/>
+
+## Intermediate Representations, Optimization, and Code Generation
+
+<PracticeProblem
+  question="In Static Single Assignment (SSA) form, every variable is defined exactly once. Where are $\\phi$-functions placed?"
+  options={[
+    'At dominance frontiers: points where a variable definition from one path meets another path',
+    'At every basic block entry and exit',
+    'Only at loop headers',
+    'Only at function call sites',
+  ]}
+  correctAnswer={0}
+  explanation"A $\\phi$-function merges values from different control flow paths: $x_3 = \\phi(x_1, x_2)$ means $x_3$ takes $x_1$ or $x_2$ depending on which path was taken. $\\phi$-functions are placed at the dominance frontier of each block that defines a variable. The dominance frontier is exactly where different definitions of a variable can reach the same point."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="What is constant propagation and how does it enable constant folding?"
+  options={[
+    'Constant propagation tracks known constant values of variables; constant folding replaces constant expressions with their computed results',
+    'Constant propagation eliminates unreachable code; constant folding removes dead variables',
+    'Both are identical optimizations',
+    'Constant propagation replaces variables with register names; constant folding removes functions',
+  ]}
+  correctAnswer={0}
+  explanation"Constant propagation (a data-flow analysis) determines that a variable always has a known constant value at a program point. Once propagated, constant folding evaluates expressions involving only constants at compile time: e.g., $x = 10; y = x + 5$ becomes $x = 10; y = 15$. These are often applied together in sequence."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Register allocation using graph coloring models the problem by building an interference graph where:"
+  options={[
+    'Vertices are virtual registers and edges connect simultaneously live variables; coloring with $k$ colors assigns $k$ physical registers',
+    'Vertices are basic blocks and edges represent data flow',
+    'Vertices are instructions and edges represent dependencies',
+    'Vertices are physical registers and edges represent available registers',
+  ]}
+  correctAnswer={0}
+  explanation"The interference graph has one vertex per virtual register. An edge connects $v_i$ and $v_j$ if they are simultaneously live (one is defined while the other is used later). A valid $k$-coloring assigns $k$ physical registers such that no two interfering virtual registers share a register. This is NP-hard in general; heuristics (simplify, coalesce, spill) work well in practice."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the key difference between a parse tree and an Abstract Syntax Tree (AST)?"
+  options={[
+    'The AST abstracts away punctuation tokens, chains of single-child nodes, and uses operator-specific node types',
+    'The parse tree is smaller and the AST is larger',
+    'The AST preserves all grammar productions including whitespace',
+    'The parse tree uses binary branching and the AST uses n-ary branching only',
+  ]}
+  correctAnswer={0}
+  explanation"A parse tree preserves every grammar production, including parentheses, commas, and intermediate nonterminals (e.g., $E \\to E + T \\to T + F \\to \\text{id} + \\text{num}$). The AST simplifies this to $\\text{BinOp}(+, \\text{Var}(x), \\text{Num}(42))$, removing syntactic noise. ASTs are used for semantic analysis, optimization, and code generation."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which of the following is NOT a valid three-address code instruction?"
+  options={[
+    '$x = y + z + w$ (more than two operands on the right side)',
+    '$x = y \\text{ op } z$ (binary operation)',
+    '$\\text{goto } L$ (unconditional jump)',
+    '$x = y[i]$ (array access)',
+  ]}
+  correctAnswer={0}
+  explanation"Three-address code allows at most one operator and at most two operands on the right side of each instruction, plus one result on the left. The instruction $x = y + z + w$ has two operators and three operands, violating the three-address constraint. It would be split into $t_1 = y + z$ and $x = t_1 + w$."
+  difficulty="easy"
+/>

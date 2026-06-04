@@ -1,6 +1,8 @@
 ---
 title: Algebra
-description: 'ILC Maths Algebra notes covering key definitions, core concepts, worked examples, and practice questions for structured study and examination practice.'
+description:
+  'ILC Maths Algebra notes covering key definitions, core concepts, worked examples, and practice
+  questions for structured study and examination practice.'
 date: 2026-04-14
 tags:
   - ilc

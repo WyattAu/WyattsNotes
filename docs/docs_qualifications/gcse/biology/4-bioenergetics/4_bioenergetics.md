@@ -1,6 +1,8 @@
 ---
 title: Bioenergetics
-description: 'GCSE Biology Bioenergetics notes covering key definitions, core concepts, worked examples, and practice questions for detailed review and exam preparation.'
+description:
+  'GCSE Biology Bioenergetics notes covering key definitions, core concepts, worked examples, and
+  practice questions for detailed review and exam preparation.'
 date: 2026-04-14
 tags:
   - gcse
@@ -723,9 +725,9 @@ $\mathrm{CO_2$The rate is 10 bubbles/min. At 4% $\mathrm{CO_2$The rate is 10 bub
 
 Between 1% and 2%, the rate increases from 5 to 9 bubbles/min (an increase of 4). Between 2% and 3%,
 The rate increases from 9 to 10 (an increase of only 1). Between 3% and 4%, there is no increase at
-All. This shows that above 3% $\mathrm{CO_2$, $\mathrm{CO_2$ is no longer the limiting factor. Another
-Factor (light intensity or temperature) is now limiting, and increasing $\mathrm{CO_2$ further has
-no Effect.
+All. This shows that above 3% $\mathrm{CO_2$, $\mathrm{CO_2$ is no longer the limiting factor.
+Another Factor (light intensity or temperature) is now limiting, and increasing $\mathrm{CO_2$
+further has no Effect.
 
 ## 12. Higher Tier: Anaerobic Respiration in Sport
 

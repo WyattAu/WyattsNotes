@@ -1,6 +1,8 @@
 ---
 title: Momentum and Impulse
-description: 'Qualifications Physics Momentum and Impulse notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'Qualifications Physics Momentum and Impulse notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 date: 2026-04-14
 tags:
   - ap

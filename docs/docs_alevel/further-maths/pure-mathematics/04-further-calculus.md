@@ -1,6 +1,8 @@
 ---
 title: Further Calculus
-description: 'A-Level Further Maths Further Calculus notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'A-Level Further Maths Further Calculus notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -687,8 +689,8 @@ $$= \left[-\frac{2}{t+1}\right]_0^1 = -1 + 2 = \boxed{1}$$
 
 ### Example 8.5: Differentiation of parametric arc length
 
-**Problem.** A curve is given by $x = t - \sin t$, $y = 1 - \cos t$ for $0 \leq t \leq 2\pi$. Find The
-total arc length.
+**Problem.** A curve is given by $x = t - \sin t$, $y = 1 - \cos t$ for $0 \leq t \leq 2\pi$. Find
+The total arc length.
 
 **Solution.** $\dfrac{dx}{dt} = 1 - \cos t$, $\dfrac{dy}{dt} = \sin t$.
 

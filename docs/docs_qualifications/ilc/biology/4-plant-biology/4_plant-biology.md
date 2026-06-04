@@ -1,6 +1,8 @@
 ---
 title: Plant Biology
-description: 'ILC Plant Biology notes covering key definitions, core concepts, worked examples, and practice questions for complete learning and effective revision.'
+description:
+  'ILC Plant Biology notes covering key definitions, core concepts, worked examples, and practice
+  questions for complete learning and effective revision.'
 date: 2026-04-14
 tags:
   - ilc

@@ -1,6 +1,8 @@
 ---
 title: Rotational Motion
-description: 'Qualifications Physics Rotational Motion notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'Qualifications Physics Rotational Motion notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured preparation.'
 date: 2026-04-14
 tags:
   - ap
@@ -58,9 +60,9 @@ $$
 
 ### The Analogy Between Linear and Rotational Kinematics
 
-Every linear kinematic equation has a direct rotational analogue. Replace $x$ with $\theta$, $v$ With
-$\omega$And $a$ with $\alpha$. This is not a coincidence: it reflects the fact that rotation Is a
-one-dimensional motion in the angular coordinate. The mathematics is identical.
+Every linear kinematic equation has a direct rotational analogue. Replace $x$ with $\theta$, $v$
+With $\omega$And $a$ with $\alpha$. This is not a coincidence: it reflects the fact that rotation Is
+a one-dimensional motion in the angular coordinate. The mathematics is identical.
 
 :::info[Example]
 

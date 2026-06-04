@@ -1,6 +1,8 @@
 ---
 title: Maclaurin and Taylor Series
-description: 'A-Level Further Maths Maclaurin and Taylor Series notes covering key definitions, core concepts, worked examples, and practice questions for solid revision.'
+description:
+  'A-Level Further Maths Maclaurin and Taylor Series notes covering key definitions, core concepts,
+  worked examples, and practice questions for solid revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

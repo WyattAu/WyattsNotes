@@ -1,6 +1,8 @@
 ---
 title: Deducing This and CRTP
-description: 'C++ Programming Deducing This and CRTP notes covering key definitions, core concepts, worked examples, and practice questions for exam readiness.'
+description:
+  'C++ Programming Deducing This and CRTP notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam readiness.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

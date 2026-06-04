@@ -519,15 +519,15 @@ Actually, we need $P(8)$: two 4-cent stamps. $P(9)$: one 4-cent + one 5-cent. $P
 Stamps. $P(11)$: ... Hmm, $P(12)$: three 4-cent stamps. $P(13)$: two 4-cent + one 5-cent. $P(14)$:
 One 4-cent + two 5-cent. $P(15)$: three 5-cent stamps.
 
-Let us use base cases $P(12)$, $P(13)$, $P(14)$, $P(15)$. Strong inductive hypothesis: assume $P(j)$ For
-all $12 \le j \le k$Where $k \ge 15$.
+Let us use base cases $P(12)$, $P(13)$, $P(14)$, $P(15)$. Strong inductive hypothesis: assume $P(j)$
+For all $12 \le j \le k$Where $k \ge 15$.
 
 For $P(k+1)$: note that $(k+1) - 4 = k - 3 \ge 12$ (since $k \ge 15$). By strong IH, $P(k-3)$ holds,
 Meaning we can form $(k-3)$ cents. Adding one 4-cent stamp gives $(k-3) + 4 = k+1$ cents.
 
 By strong induction, $P(n)$ holds for all $n \ge 12$. But we should verify the smaller cases: $P(4)$
-Through $P(11)$. We find $P(4)$, $P(5)$, $P(8)$, $P(9)$$P(10)$ hold, but $P(6)$$P(7)$$P(11)$ Do not. So
-the correct statement is: all postage $n \ge 8$ except $n = 11$. Or: all $n \ge 12$.
+Through $P(11)$. We find $P(4)$, $P(5)$, $P(8)$, $P(9)$$P(10)$ hold, but $P(6)$$P(7)$$P(11)$ Do not.
+So the correct statement is: all postage $n \ge 8$ except $n = 11$. Or: all $n \ge 12$.
 
 The cleanest formulation: all $n \ge 12$ can be formed. Base cases $P(12)$ through $P(15)$.
 Inductive step as above.

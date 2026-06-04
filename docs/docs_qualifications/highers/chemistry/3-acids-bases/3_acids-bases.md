@@ -1,6 +1,8 @@
 ---
 title: Acids and Bases
-description: 'Scottish Highers Chemistry Acids and Bases notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'Scottish Highers Chemistry Acids and Bases notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 date: 2026-04-14
 tags:
   - highers

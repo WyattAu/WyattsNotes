@@ -1,6 +1,8 @@
 ---
 title: Probability and Statistics
-description: 'University Mathematics Probability and Statistics notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'University Mathematics Probability and Statistics notes covering key definitions, core concepts,
+  worked examples, and practice questions for effective revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics
@@ -186,7 +188,8 @@ to be defective. What is the Probability it was produced by machine A?
 
 Let $D$ = "defective" and $A$, $B$, $C$ denote production by each machine.
 
-$P(A) = 0.5$, $P(B) = 0.3$, $P(C) = 0.2$. $P(D \mid A) = 0.02$, $P(D \mid B) = 0.01$, $P(D \mid C) = 0.03$.
+$P(A) = 0.5$, $P(B) = 0.3$, $P(C) = 0.2$. $P(D \mid A) = 0.02$, $P(D \mid B) = 0.01$,
+$P(D \mid C) = 0.03$.
 
 $$P(A \mid D) = \frac{P(D \mid A)\, P(A)}{P(D \mid A)\, P(A) + P(D \mid B)\, P(B) + P(D \mid C)\, P(C)}$$
 
@@ -204,8 +207,8 @@ rigorously. :::
 ### 2.1 Definition
 
 A **random variable** is a measurable function $X : \Omega \to \mathbb{R}$. Measurability means that
-for every Borel Set
-$B \subseteq \mathbb{R}$, $\{X^{-1}(B) : \omega \in \Omega, X(\omega) \in B\} \in \mathcal{F}$.
+for every Borel Set $B \subseteq \mathbb{R}$,
+$\{X^{-1}(B) : \omega \in \Omega, X(\omega) \in B\} \in \mathcal{F}$.
 
 - **Discrete random variable**: takes values in a countable set.
 - **Continuous random variable**: has a probability density function (PDF).
@@ -416,8 +419,8 @@ $$P(X = k) = \binom{k-1}{r-1} p^r (1-p)^{k-r}, \quad k = r, r+1, \ldots$$
 
 $$E[X] = \frac{r}{p}, \quad \mathrm{Var}(X) = \frac{r(1-p)}{p^2}$$
 
-**Hypergeometric.** $X \sim \mathrm{Hypergeometric}(N, K, n)$: sampling $n$ items without replacement
-from a population Of $N$ containing $K$ "successes."
+**Hypergeometric.** $X \sim \mathrm{Hypergeometric}(N, K, n)$: sampling $n$ items without
+replacement from a population Of $N$ containing $K$ "successes."
 
 $$P(X = k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}, \quad k = \max(0, n + K - N), \ldots, \min(n, K)$$
 
@@ -544,7 +547,8 @@ _Verification that $E[X] = \mu$ for $Z \sim N(0, 1)$:_ The integrand $z \cdot \p
 function of $z$So $\int_{-\infty}^{\infty} z\, \phi(z)\, dz = 0$. For $X = \mu + \sigma Z$:
 $E[X] = \mu + \sigma \cdot 0 = \mu$.
 
-_Verification that $\mathrm{Var}(Z) = 1$:_ Integration by parts with $u = z$, $dv = z\, \phi(z)\, dz$:
+_Verification that $\mathrm{Var}(Z) = 1$:_ Integration by parts with $u = z$,
+$dv = z\, \phi(z)\, dz$:
 
 $$E[Z^2] = \int_{-\infty}^{\infty} z^2 \phi(z)\, dz = \left[-z\phi(z)\right]_{-\infty}^{\infty} + \int_{-\infty}^{\infty} \phi(z)\, dz = 0 + 1 = 1$$
 
@@ -819,7 +823,8 @@ For $t \lt \lambda$: $M_X(t) = \frac{\lambda}{\lambda - t}$.
 
 $M_X'(t) = \frac{\lambda}{(\lambda - t)^2}$So $E[X] = M_X'(0) = 1/\lambda$. $\blacksquare$
 
-**Problem 4.1.** Find $E[X^2]$ and $\mathrm{Var}(X)$ for $X \sim \mathrm{Exp}(\lambda)$ using the MGF.
+**Problem 4.1.** Find $E[X^2]$ and $\mathrm{Var}(X)$ for $X \sim \mathrm{Exp}(\lambda)$ using the
+MGF.
 
 <details>
 <summary>Solution</summary>
@@ -989,8 +994,8 @@ $$f(x,y) = \frac{1}{2\pi \sigma_X \sigma_Y \sqrt{1 - \rho^2}} \exp\left(-\frac{1
 
 $$M_{X,Y}(t_1, t_2) = \exp\left(\mu_X t_1 + \mu_Y t_2 + \frac{1}{2}(\sigma_X^2 t_1^2 + 2\rho\sigma_X\sigma_Y t_1 t_2 + \sigma_Y^2 t_2^2)\right)$$
 
-**Problem 5.4.** Let $(X, Y)$ be bivariate normal with
-$\mu_X = 0$, $\mu_Y = 0$, $\sigma_X = \sigma_Y = 1$, $\rho = 1/2$. Find $P(Y \gt 1 \mid X = 0.5)$.
+**Problem 5.4.** Let $(X, Y)$ be bivariate normal with $\mu_X = 0$, $\mu_Y = 0$,
+$\sigma_X = \sigma_Y = 1$, $\rho = 1/2$. Find $P(Y \gt 1 \mid X = 0.5)$.
 
 <details>
 <summary>Solution</summary>
@@ -1028,8 +1033,8 @@ Therefore $X$ and $Y$ are **not** independent. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-$E[X] = 0$, $E[Y] = E[X^2] = 1$And $E[XY] = E[X^3] = 0$ (since $X^3$ is an odd function of a symmetric
-distribution).
+$E[X] = 0$, $E[Y] = E[X^2] = 1$And $E[XY] = E[X^3] = 0$ (since $X^3$ is an odd function of a
+symmetric distribution).
 
 $$\mathrm{Cov}(X, Y) = E[XY] - E[X]E[Y] = 0 - 0 = 0$$
 
@@ -1602,9 +1607,9 @@ distinction is critical in scientific Reasoning. :::
 
 ## 9. Problem Set
 
-**Problem 1.** Let $A, B, C$ be events with $P(A) = 0.4$, $P(B) = 0.5$, $P(C) = 0.3$, $P(A \cap B) = 0.2$
-$P(A \cap C) = 0.1$, $P(B \cap C) = 0.15$And $P(A \cap B \cap C) = 0.05$. Compute
-$P(A \cup B \cup C)$.
+**Problem 1.** Let $A, B, C$ be events with $P(A) = 0.4$, $P(B) = 0.5$, $P(C) = 0.3$,
+$P(A \cap B) = 0.2$ $P(A \cap C) = 0.1$, $P(B \cap C) = 0.15$And $P(A \cap B \cap C) = 0.05$.
+Compute $P(A \cup B \cup C)$.
 
 <details>
 <summary>Solution</summary>
@@ -1791,7 +1796,8 @@ If you get this wrong, revise: Section 4.3 (MGFs).
 <details>
 <summary>Solution</summary>
 
-$X \sim \mathrm{Bin}(100, 0.3)$So $E[X] = 30$, $\mathrm{Var}(X) = 21$, $\sigma = \sqrt{21} \approx 4.583$.
+$X \sim \mathrm{Bin}(100, 0.3)$So $E[X] = 30$, $\mathrm{Var}(X) = 21$,
+$\sigma = \sqrt{21} \approx 4.583$.
 
 With continuity correction:
 
@@ -1872,8 +1878,8 @@ $$\mathrm{Power} = P(\bar{X} \gt 54.652 \mid \mu = 54) = P\left(Z \gt \frac{54.6
 
 If you get this wrong, revise: Section 8.6 (Z-Test) and Section 8.2 (Power).
 
-**Problem 16.** Let $X \sim \mathrm{Exp}(\lambda)$ and $Y \sim \mathrm{Exp}(\mu)$ be independent. Show
-that $P(X \lt Y) = \lambda / (\lambda + \mu)$.
+**Problem 16.** Let $X \sim \mathrm{Exp}(\lambda)$ and $Y \sim \mathrm{Exp}(\mu)$ be independent.
+Show that $P(X \lt Y) = \lambda / (\lambda + \mu)$.
 
 <details>
 <summary>Solution</summary>
@@ -1919,8 +1925,8 @@ $$\Lambda = \frac{L(\mu_0)}{L(\bar{x})} = \exp\left(-\frac{1}{2}\left[\sum(x_i -
 
 $$-2\log \Lambda = n(\bar{x} - \mu_0)^2 = \left(\frac{\bar{x} - \mu_0}{1/\sqrt{n}}\right)^2 = Z^2$$
 
-Under $H_0$, $Z^2 \sim \chi^2_1$So we reject when $|Z| \gt z_{\alpha/2}$. This is exactly the Z-test.
-$\blacksquare$
+Under $H_0$, $Z^2 \sim \chi^2_1$So we reject when $|Z| \gt z_{\alpha/2}$. This is exactly the
+Z-test. $\blacksquare$
 
 </details>
 

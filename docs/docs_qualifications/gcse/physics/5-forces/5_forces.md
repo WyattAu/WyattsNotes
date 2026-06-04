@@ -1,6 +1,8 @@
 ---
 title: Forces
-description: 'GCSE Physics Forces notes covering key definitions, core concepts, worked examples, and practice questions for focused revision and examination preparation.'
+description:
+  'GCSE Physics Forces notes covering key definitions, core concepts, worked examples, and practice
+  questions for focused revision and examination preparation.'
 date: 2026-04-14
 tags:
   - gcse

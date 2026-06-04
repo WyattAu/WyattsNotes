@@ -1,6 +1,8 @@
 ---
 title: Multivariable Calculus
-description: 'University Mathematics Multivariable Calculus notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'University Mathematics Multivariable Calculus notes covering key definitions, core concepts,
+  worked examples, and practice questions for effective preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Mathematics
@@ -22,8 +24,8 @@ $$\frac{\partial f}{\partial x_i}(\mathbf{a}) = \lim_{h \to 0} \frac{f(a_1, \ldo
 Provided the limit exists. This is the rate of change of $f$ in the direction of the $x_i$-axis,
 Holding all other variables fixed.
 
-**Notation.** Common notations for the partial derivative with respect to $x_i$ include
-$f_{x_i}$, $\partial_i f$And $\frac{\partial f}{\partial x_i}$. We use these interchangeably.
+**Notation.** Common notations for the partial derivative with respect to $x_i$ include $f_{x_i}$,
+$\partial_i f$And $\frac{\partial f}{\partial x_i}$. We use these interchangeably.
 
 ### 1.2 Clairaut's Theorem
 
@@ -268,8 +270,8 @@ $\frac{\partial z}{\partial y}$ at the point $(1, 1, 1)$.
 <details>
 <summary>Solution</summary>
 
-Let $F(x,y,z) = x^2 y + y^2 z + z^2 x - 3$. Then $F_x = 2xy + z^2$
-$F_y = x^2 + 2yz$, $F_z = y^2 + 2zx$.
+Let $F(x,y,z) = x^2 y + y^2 z + z^2 x - 3$. Then $F_x = 2xy + z^2$ $F_y = x^2 + 2yz$,
+$F_z = y^2 + 2zx$.
 
 At $(1,1,1)$: $F_x = 3$, $F_y = 3$, $F_z = 3$.
 
@@ -479,9 +481,8 @@ $$\iint_D f(x,y)\, dA = \iint_{D'} f(r\cos\theta, r\sin\theta)\, r\, dr\, d\thet
 
 $$\iiint_E f(x,y,z)\, dV = \iiint_{E'} f(r\cos\theta, r\sin\theta, z)\, r\, dr\, d\theta\, dz$$
 
-**Spherical coordinates:**
-$x = \rho\sin\phi\cos\theta$, $y = \rho\sin\phi\sin\theta$, $z = \rho\cos\phi$
-$\lvert J \rvert = \rho^2 \sin\phi$.
+**Spherical coordinates:** $x = \rho\sin\phi\cos\theta$, $y = \rho\sin\phi\sin\theta$,
+$z = \rho\cos\phi$ $\lvert J \rvert = \rho^2 \sin\phi$.
 
 $$\iiint_E f(x,y,z)\, dV = \iiint_{E'} f(\rho\sin\phi\cos\theta, \rho\sin\phi\sin\theta, \rho\cos\phi)\, \rho^2 \sin\phi\, d\rho\, d\phi\, d\theta$$
 
@@ -536,8 +537,8 @@ $x^2 + y^2 + z^2 \leq a^2$.
 <details>
 <summary>Solution</summary>
 
-Use spherical coordinates. In spherical: $x^2 + y^2 + z^2 = \rho^2$And $E'$ is
-$0 \leq \rho \leq a$, $0 \leq \phi \leq \pi$, $0 \leq \theta \leq 2\pi$.
+Use spherical coordinates. In spherical: $x^2 + y^2 + z^2 = \rho^2$And $E'$ is $0 \leq \rho \leq a$,
+$0 \leq \phi \leq \pi$, $0 \leq \theta \leq 2\pi$.
 
 $$\iiint_E (x^2 + y^2 + z^2)\, dV = \int_0^{2\pi} \int_0^{\pi} \int_0^a \rho^2 \cdot \rho^2 \sin\phi\, d\rho\, d\phi\, d\theta$$
 
@@ -561,7 +562,8 @@ $$= \int_0^{2\pi} \left[\frac{r^4}{4}\right]_0^2 d\theta = \int_0^{2\pi} 4\, d\t
 
 $\blacksquare$
 
-**Problem.** Evaluate $\iint_D \frac{y}{x}\, dA$ where $D$ is bounded by $y = x$, $y = 2x$And $x = 1$.
+**Problem.** Evaluate $\iint_D \frac{y}{x}\, dA$ where $D$ is bounded by $y = x$, $y = 2x$And
+$x = 1$.
 
 <details>
 <summary>Solution</summary>
@@ -809,8 +811,8 @@ _Remark._ Green's theorem is the special case of Stokes' theorem where $S$ is a 
 $\mathbb{R}^2$.
 
 **Problem.** Use Stokes' theorem to evaluate $\oint_C \mathbf{F} \cdot d\mathbf{r}$ where
-$\mathbf{F} = (y^2,\, xz,\, x^2)$ and $C$ is the triangle with vertices $(1,0,0)$, $(0,1,0)$ $(0,0,1)$
-traversed counterclockwise when viewed from above.
+$\mathbf{F} = (y^2,\, xz,\, x^2)$ and $C$ is the triangle with vertices $(1,0,0)$, $(0,1,0)$
+$(0,0,1)$ traversed counterclockwise when viewed from above.
 
 <details>
 <summary>Solution</summary>
@@ -1313,8 +1315,8 @@ Define:
 - **Binormal:** $\mathbf{B}(s) = \mathbf{T}(s) \times \mathbf{N}(s)$
 - **Torsion:** $\tau(s) = -\mathbf{B}'(s) \cdot \mathbf{N}(s)$
 
-The vectors $\mathbf{T}$, $\mathbf{N}$, $\mathbf{B}$ form the **Frenet--Serret frame**, an orthonormal
-Basis that moves with the curve.
+The vectors $\mathbf{T}$, $\mathbf{N}$, $\mathbf{B}$ form the **Frenet--Serret frame**, an
+orthonormal Basis that moves with the curve.
 
 **Theorem 5.2 (Frenet--Serret Formulas).**
 
@@ -1433,7 +1435,8 @@ $$\lVert \mathbf{r}_x \times \mathbf{r}_y \rVert = \sqrt{4x^2 + 4y^2 + 1}$$
 
 $$A = \iint_{x^2+y^2 \leq 4} \sqrt{4x^2 + 4y^2 + 1}\, dx\, dy$$
 
-Use polar coordinates: $x = r\cos\theta$, $y = r\sin\theta$, $0 \leq r \leq 2$, $0 \leq \theta \leq 2\pi$.
+Use polar coordinates: $x = r\cos\theta$, $y = r\sin\theta$, $0 \leq r \leq 2$,
+$0 \leq \theta \leq 2\pi$.
 
 $$A = \int_0^{2\pi} \int_0^2 \sqrt{4r^2 + 1}\, r\, dr\, d\theta$$
 
@@ -1497,7 +1500,8 @@ First octant.
 Parametrise the surface. Solve for $z = 4 - 2x - 2y$ where $x \geq 0$, $y \geq 0$, $z \geq 0$ I.e.,
 $2x + 2y \leq 4$ or $x + y \leq 2$.
 
-$\mathbf{r}(x,y) = (x,\, y,\, 4 - 2x - 2y)$, $D = \\{(x,y) : x \geq 0,\, y \geq 0,\, x + y \leq 2\\}$.
+$\mathbf{r}(x,y) = (x,\, y,\, 4 - 2x - 2y)$,
+$D = \\{(x,y) : x \geq 0,\, y \geq 0,\, x + y \leq 2\\}$.
 
 $\mathbf{r}_x = (1,\, 0,\, -2)$, $\mathbf{r}_y = (0,\, 1,\, -2)$.
 
@@ -1815,8 +1819,8 @@ If you get this wrong, revise: Section 3.7 Conservative Fields and Potential Fun
 
 ### Problem 20
 
-Evaluate the surface integral $\iint_S (x^2 + y^2)\, dS$ where $S$ is the cylinder
-$x^2 + y^2 = 4$, $0 \leq z \leq 3$.
+Evaluate the surface integral $\iint_S (x^2 + y^2)\, dS$ where $S$ is the cylinder $x^2 + y^2 = 4$,
+$0 \leq z \leq 3$.
 
 <details>
 <summary>Solution</summary>
@@ -1955,9 +1959,9 @@ $\int_C \mathbf{F} \cdot d\mathbf{r}$ where $C$ is any path from $(0, 0)$ to $(1
 <details>
 <summary>Solution</summary>
 
-Check:
-$\frac{\partial P}{\partial y} = e^{xy} + xye^{xy}$, $\frac{\partial Q}{\partial x} = e^{xy} + xye^{xy}$.
-These are equal, so $\mathbf{F}$ is conservative (on $\mathbb{R}^2$Which is connected).
+Check: $\frac{\partial P}{\partial y} = e^{xy} + xye^{xy}$,
+$\frac{\partial Q}{\partial x} = e^{xy} + xye^{xy}$. These are equal, so $\mathbf{F}$ is
+conservative (on $\mathbb{R}^2$Which is connected).
 
 Find $\phi$:
 

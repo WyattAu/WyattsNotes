@@ -1,6 +1,8 @@
 ---
 title: Atomic Structure
-description: 'GCSE Chemistry Atomic Structure notes covering key definitions, core concepts, worked examples, and practice questions for solid review and exam preparation.'
+description:
+  'GCSE Chemistry Atomic Structure notes covering key definitions, core concepts, worked examples,
+  and practice questions for solid review and exam preparation.'
 date: 2026-04-14
 tags:
   - gcse
@@ -507,14 +509,14 @@ And one 3d electron to form Fe$^{3+}$.
 
 ### 5.7 Comparing Group 1 Metals with Transition Metals
 
-| Property              | Group 1 metals | Transition metals                  |
-| --------------------- | -------------- | ---------------------------------- |
-| Melting point         | Relatively low | High                               |
-| Density               | Low            | High                               |
-| Reactivity with water | Very reactive  | Much less reactive (or unreactive) |
-| Oxidation states      | Always $1+$    | Variable (e.g. $2+$, $3+$ for iron)  |
-| Coloured compounds    | No             | Yes                                |
-| Catalytic activity    | No             | Common                             |
+| Property              | Group 1 metals | Transition metals                   |
+| --------------------- | -------------- | ----------------------------------- |
+| Melting point         | Relatively low | High                                |
+| Density               | Low            | High                                |
+| Reactivity with water | Very reactive  | Much less reactive (or unreactive)  |
+| Oxidation states      | Always $1+$    | Variable (e.g. $2+$, $3+$ for iron) |
+| Coloured compounds    | No             | Yes                                 |
+| Catalytic activity    | No             | Common                              |
 
 ### 5.8 Predicting Properties from Position in the Periodic Table
 

@@ -1,7 +1,9 @@
 ---
 id: dse-ict-programming-and-databases
 title: ICT - Programming and Databases
-description: 'DSE ICT - Programming and Databases notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'DSE ICT - Programming and Databases notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed preparation.'
 slug: ict-programming-and-databases
 ---
 

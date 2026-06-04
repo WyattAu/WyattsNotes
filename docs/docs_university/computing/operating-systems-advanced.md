@@ -1,6 +1,8 @@
 ---
 title: Operating Systems (Advanced)
-description: 'University Computing Operating Systems (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'University Computing Operating Systems (Advanced) notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam preparation.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing
@@ -843,8 +845,8 @@ The **Completely Fair Scheduler (CFS)** is the default process scheduler in Linu
    task's priority (niceness).
 2. CFS always picks the task with the smallest `vruntime`.
 3. The `vruntime` increment per tick is:
-   $\text{vruntime} += \text{actual}\_time \times \text{weight_0} / \text{weight}$Where $\text{weight}$
-   depends on the nice value.
+   $\text{vruntime} += \text{actual}\_time \times \text{weight_0} / \text{weight}$Where
+   $\text{weight}$ depends on the nice value.
 
 **Target latency.** CFS aims to give each task a fair share of CPU time within a "sched period"
 (target latency, 6 ms). If there are $n$ tasks, each gets $6/n$ ms per period.
@@ -1202,9 +1204,9 @@ resource types and $n$ is the number of processes), which may be prohibitive for
 **Problem 1.** A process calls `fork()` twice in sequence (not nested). Draw the process tree and
 determine how many processes exist. What if the parent calls `wait()` after each `fork()`?
 
-**Problem 2.** Three periodic real-time tasks with computation times and periods:
-$T_1 = (3, 6)$, $T_2 = (2, 8)$, $T_3 = (2, 12)$. Determine if they are schedulable under (a) RMS, and
-(b) EDF. Draw the schedule for the first 24 time units under each algorithm.
+**Problem 2.** Three periodic real-time tasks with computation times and periods: $T_1 = (3, 6)$,
+$T_2 = (2, 8)$, $T_3 = (2, 12)$. Determine if they are schedulable under (a) RMS, and (b) EDF. Draw
+the schedule for the first 24 time units under each algorithm.
 
 **Problem 3.** Compare the 1:1, N:1, and M:N thread models for an application with 1000 short-lived
 threads, each performing one blocking I/O operation. Which model is most appropriate and why?

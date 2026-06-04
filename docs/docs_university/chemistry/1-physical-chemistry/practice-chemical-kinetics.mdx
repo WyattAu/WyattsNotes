@@ -1,0 +1,151 @@
+---
+title: 'Chemical Kinetics -- Practice Problems'
+description:
+  'University Chemical Kinetics -- Practice Problems with MCQ questions covering rate laws,
+  integrated rate laws, reaction mechanisms, catalysis, and the Arrhenius equation.'
+slug: practice-chemical-kinetics
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Chemical Kinetics -- Practice Problems
+
+10 MCQ questions covering rate laws, integrated rate laws, reaction mechanisms, the Arrhenius
+equation, and catalysis. Select an option to check your answer and view the explanation.
+
+---
+
+## Rate Laws and Integrated Rate Laws
+
+<PracticeProblem
+  question="For a first-order reaction, the integrated rate law is $\\ln[A] = -kt + \\ln[A]_0$. What is the half-life in terms of the rate constant $k$?"
+  options={[
+    '$t_{1/2} = \\ln 2 / k = 0.693/k$',
+    '$t_{1/2} = [A]_0 / 2k$',
+    '$t_{1/2} = 1/k[A]_0$',
+    '$t_{1/2} = 1/k$',
+  ]}
+  correctAnswer={0}
+  explanation"At half-life: $[A] = [A]_0/2$, so $\\ln([A]_0/2) = -kt_{1/2} + \\ln[A]_0$, giving $-\\ln 2 = -kt_{1/2}$, thus $t_{1/2} = \\ln 2/k$. For a first-order reaction, the half-life is independent of the initial concentration. For zero-order: $t_{1/2} = [A]_0/2k$ (depends on $[A]_0$). For second-order: $t_{1/2} = 1/k[A]_0$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A plot of $\\ln[A]$ versus time yields a straight line with slope $-0.0231\\,\\text{s}^{-1}$. What is the order of the reaction and the rate constant?"
+  options={[
+    'First order; $k = 0.0231\\,\\text{s}^{-1}$',
+    'Zero order; $k = -0.0231\\,\\text{s}^{-1}$',
+    'Second order; $k = 0.0231\\,\\text{s}^{-1}$',
+    'First order; $k = 2.31\\,\\text{s}^{-1}$',
+  ]}
+  correctAnswer={0}
+  explanation"A straight line of $\\ln[A]$ vs. time indicates a first-order reaction, since $\\ln[A] = -kt + \\ln[A]_0$ is linear with slope $-k$. Here $k = 0.0231$ s$^{-1}$ and $t_{1/2} = 0.693/0.0231 = 30.0$ s. For second-order, a plot of $1/[A]$ vs. time would be linear. For zero-order, $[A]$ vs. time is linear."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="For the reaction $2\\text{NO}_2 \\to \\text{NO} + \\text{O}_2$, the experimental rate law is $v = k[\\text{NO}_2]^2$. This suggests the reaction is:"
+  options={[
+    'Second order overall and likely bimolecular (but the stoichiometric coefficient does not necessarily equal the order)',
+    'First order because the stoichiometry is 2:1:1',
+    'Termolecular because three molecules are involved',
+    'Zero order with respect to $\\text{NO}_2$',
+  ]}
+  correctAnswer={0}
+  explanation"The overall order is 2 (second order in $\\text{NO}_2$). The rate law is experimentally determined and does not necessarily match the stoichiometric coefficients. A second-order rate law suggests a bimolecular rate-determining step, but the actual mechanism might involve multiple steps with intermediates."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For a reaction with the experimental rate law $v = k[A]^2[B]$, if the concentration of $A$ is doubled and $B$ is tripled, by what factor does the rate increase?"
+  options={[
+    '$2^2 \\times 3 = 12$',
+    '$2 \\times 3 = 6$',
+    '$2 + 3 = 5$',
+    '$2^2 + 3 = 7$',
+  ]}
+  correctAnswer={0}
+  explanation"The rate is proportional to $[A]^2[B]$. Doubling $[A]$ gives a factor of $2^2 = 4$, and tripling $[B]$ gives a factor of $3$. The combined effect is $4 \\times 3 = 12$. The new rate is 12 times the original rate. This is a third-order reaction overall (second order in A, first in B)."
+  difficulty="easy"
+/>
+
+## Reaction Mechanisms and Catalysis
+
+<PracticeProblem
+  question="For a reaction mechanism with a slow rate-determining step followed by fast steps, what is the relationship between the rate law and the rate-determining step?"
+  options={[
+    'The rate law reflects the molecularity of the rate-determining step (for an elementary step)',
+    'The rate law always matches the overall stoichiometry',
+    'The rate law has no relationship to any individual step',
+    'The rate law is determined by the fastest step',
+  ]}
+  correctAnswer={0}
+  explanation"For an elementary (single molecular event) rate-determining step, the rate law directly reflects its molecularity. For example, if the RDS is $\\text{A} + \\text{B} \\to \\text{products}$ (bimolecular), the rate law is $v = k[A][B]$. If the RDS involves intermediates, the steady-state approximation or pre-equilibrium approximation may be needed to express the rate law in terms of reactants."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The steady-state approximation assumes that the concentration of reactive intermediates remains approximately constant during the reaction. Mathematically, this means:"
+  options={[
+    '$d[\\text{intermediate}]/dt \\approx 0$',
+    '$[\\text{intermediate}] = 0$ at all times',
+    '$d[\\text{intermediate}]/dt = k[\\text{reactants}]$',
+    '$[\\text{intermediate}] = [\\text{products}]$',
+  ]}
+  correctAnswer={0}
+  explanation"The steady-state approximation sets $d[\\text{I}]/dt = 0$, meaning the rate of formation equals the rate of consumption of the intermediate. This allows expressing $[\\text{I}]$ in terms of reactant concentrations without solving the full differential equations. It is valid when the intermediate is highly reactive (consumed rapidly after formation), so its concentration remains low and nearly constant."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The Arrhenius equation $k = A e^{-E_a/RT}$ relates the rate constant to temperature. What happens to the rate constant if the temperature increases from 300 K to 310 K for a reaction with $E_a = 50$ kJ/mol?"
+  options={[
+    'The rate constant approximately doubles ($k_{310}/k_{300} \\approx e^{50\\,000 \\cdot 10 / (8.314 \\cdot 300 \\cdot 310)} \\approx 2.0$)',
+    'The rate constant increases by a factor of 10',
+    'The rate constant decreases',
+    'The rate constant is unchanged',
+  ]}
+  correctAnswer={0}
+  explanation"Using the two-point Arrhenius form: $\\ln(k_2/k_1) = (E_a/R)(1/T_1 - 1/T_2) = (50000/8.314)(1/300 - 1/310) = 6014 \\times 0.0001074 = 0.645$. So $k_2/k_1 = e^{0.645} \\approx 1.91$, approximately doubling. The common rule of thumb is that the rate roughly doubles for every 10 K temperature increase near room temperature for typical activation energies."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In enzyme kinetics, the Michaelis-Menten equation $v = \\frac{V_{\\max}[S]}{K_M + [S]}$ gives the reaction velocity. What does $K_M$ represent?"
+  options={[
+    'The substrate concentration at which the velocity is half of $V_{\\max}$',
+    'The maximum velocity of the enzyme-catalyzed reaction',
+    'The equilibrium constant for enzyme-substrate binding',
+    'The minimum substrate concentration for the reaction to proceed',
+  ]}
+  correctAnswer={0}
+  explanation"When $[S] = K_M$: $v = V_{\\max}[S]/(K_M + [S]) = V_{\\max}/2$. $K_M$ equals $(k_{-1} + k_2)/k_1$ for the mechanism $\\text{E} + \\text{S} \\underset{k_{-1}}{\\overset{k_1}{\\rightleftharpoons}} \\text{ES} \\xrightarrow{k_2} \\text{E} + \\text{P}$. When $k_2 \\ll k_{-1}$, $K_M \\approx K_d$ (dissociation constant). A Lineweaver-Burk plot ($1/v$ vs $1/[S]$) yields $K_M$ from the $x$-intercept."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="A catalyst increases the rate of a chemical reaction. Which of the following is true about the catalyzed vs. uncatalyzed reaction?"
+  options={[
+    'The catalyst lowers the activation energy but does not change $\\Delta H$ or $\\Delta G^\\circ$; it provides an alternative pathway',
+    'The catalyst changes the equilibrium constant',
+    'The catalyst increases the activation energy to slow the reverse reaction',
+    'The catalyst is consumed in the reaction',
+  ]}
+  correctAnswer={0}
+  explanation"A catalyst provides an alternative reaction pathway with lower activation energy $E_a$. It accelerates both forward and reverse reactions equally, so the equilibrium constant $K$ (and thus $\\Delta G^\\circ$) is unchanged. $\\Delta H$ is also unchanged since it depends only on initial and final states. A true catalyst is not consumed in the reaction."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="For a consecutive reaction $\\text{A} \\xrightarrow{k_1} \\text{B} \\xrightarrow{k_2} \\text{C}$, under what condition does the concentration of intermediate B reach a maximum?"
+  options={[
+    'When $k_1[A] = k_2[B]$, i.e., the rate of formation of B equals the rate of consumption of B',
+    'When $[A] = [B] = [C]$',
+    'When $k_1 = k_2$',
+    'When $[A] = 0$',
+  ]}
+  correctAnswer={0}
+  explanation"B is formed from A ($d[B]/dt = k_1[A] - k_2[B]$) and consumed to give C. B reaches maximum concentration when $d[B]/dt = 0$, i.e., $k_1[A] = k_2[B]$. Before this point, B accumulates ($k_1[A] > k_2[B]$); after, B is consumed faster than formed ($k_2[B] > k_1[A]$). The time of maximum B depends on both rate constants."
+  difficulty="hard"
+/>

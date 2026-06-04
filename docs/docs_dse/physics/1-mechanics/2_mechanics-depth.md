@@ -1,7 +1,9 @@
 ---
 id: dse-physics-mechanics
 title: Physics - Mechanics
-description: 'DSE Physics - Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for systematic exam preparation and revision.'
+description:
+  'DSE Physics - Mechanics notes covering key definitions, core concepts, worked examples, and
+  practice questions for systematic exam preparation and revision.'
 slug: physics-mechanics
 ---
 
@@ -1680,7 +1682,6 @@ Minimum coefficient of static friction: $\mu_s = 0.51$.
 :::
 
 ## Common Pitfalls
-
 
 1. Confusing displacement with distance, or velocity with speed, particularly in graphs and
    calculations.

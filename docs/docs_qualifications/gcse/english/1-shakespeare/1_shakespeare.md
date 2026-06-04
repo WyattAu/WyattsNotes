@@ -1,6 +1,8 @@
 ---
 title: Shakespeare
-description: 'GCSE English Shakespeare notes covering key definitions, core concepts, worked examples, and practice questions for targeted study and thorough revision.'
+description:
+  'GCSE English Shakespeare notes covering key definitions, core concepts, worked examples, and
+  practice questions for targeted study and thorough revision.'
 date: 2026-04-22
 tags:
   - gcse

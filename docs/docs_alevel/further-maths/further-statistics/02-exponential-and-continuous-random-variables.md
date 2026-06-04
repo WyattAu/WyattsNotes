@@ -1,6 +1,8 @@
 ---
 title: Exponential Distribution and Continuous Random Variables
-description: 'A-Level Further Maths Exponential Distribution and notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Further Maths Exponential Distribution and notes covering key definitions, core concepts,
+  worked examples, and practice questions for revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -967,8 +969,8 @@ Distribution. See
 
 ## 12. Key Results Summary
 
-| Distribution            | PDF                                | $E(X)$                           | $\mathrm{Var}(X)$                  |
-| ----------------------- | ---------------------------------- | -------------------------------- | ---------------------------------- |
+| Distribution            | PDF                                  | $E(X)$                           | $\mathrm{Var}(X)$                  |
+| ----------------------- | ------------------------------------ | -------------------------------- | ---------------------------------- |
 | $\mathrm{Exp}(\lambda)$ | $\lambda e^{-\lambda x}$, $x \geq 0$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda◆RB◆$ | $\dfrac◆LB◆1◆RB◆◆LB◆\lambda^2◆RB◆$ |
 | $\mathrm{U}(a,b)$       | $\dfrac{1}{b-a}$, $a \leq x \leq b$  | $\dfrac{a+b}{2}$                 | $\dfrac{(b-a)^2}{12}$              |
 

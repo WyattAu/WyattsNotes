@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-chemical-equilibrium
 title: Chemistry - Chemical Equilibrium
-description: 'DSE Chemistry - Chemical Equilibrium notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'DSE Chemistry - Chemical Equilibrium notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed preparation.'
 slug: chemical-equilibrium
 tags: [DSE, Chemistry]
 categories: [DSE, Chemistry]
@@ -309,12 +311,12 @@ $$\mathrm{N}_{2(g)} + 3\mathrm{H}_{2(g)} \rightleftharpoons 2\mathrm{NH}_{3(g)} 
 
 ### Conditions Used
 
-| Condition   | Value                                                                    | Reason                                                                  |
-| ----------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
-| Temperature | 400--500$^\circ$C                                                        | Compromise: lower T favours yield but slows rate                        |
-| Pressure    | 150--250 atm                                                             | High pressure favours yield (fewer gas moles on right) but is expensive |
+| Condition   | Value                                                                      | Reason                                                                  |
+| ----------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Temperature | 400--500$^\circ$C                                                          | Compromise: lower T favours yield but slows rate                        |
+| Pressure    | 150--250 atm                                                               | High pressure favours yield (fewer gas moles on right) but is expensive |
 | Catalyst    | Iron (promoted with $\mathrm{K}_2\mathrm{O}$, $\mathrm{Al}_2\mathrm{O}_3$) | Increases rate without affecting equilibrium                            |
-| Recycle     | Unreacted $\mathrm{N}_2$ and $\mathrm{H}_2$ are recycled                 | Improves overall yield despite low single-pass conversion               |
+| Recycle     | Unreacted $\mathrm{N}_2$ and $\mathrm{H}_2$ are recycled                   | Improves overall yield despite low single-pass conversion               |
 
 ### Le Chatelier's Principle Applied
 
@@ -521,8 +523,8 @@ $$K_p = K_c(RT)^{-2} = \frac{K_c}{(RT)^2}$$
 If $\Delta n = 0$Then $K_p = K_c$.
 
 **Worked example 8:** For
-$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$, $K_c = 50.0$ at 700 K.
-Calculate $K_p$.
+$\mathrm{H}_{2(g)} + \mathrm{I}_{2(g)} \rightleftharpoons 2\mathrm{HI}_{(g)}$, $K_c = 50.0$ at 700
+K. Calculate $K_p$.
 
 <details>
 <summary>Answer</summary>
@@ -909,7 +911,6 @@ $$K = e^{2.179} = 8.84$$
 | $\Delta G = \Delta G^\circ + RT \ln Q$                              | Non-equilibrium free energy |
 
 ## Worked Examples
-
 
 Calculate the number of moles in $12.0\,\text{g}$ of $\text{NaOH}$ ($M_r = 40.0$).
 

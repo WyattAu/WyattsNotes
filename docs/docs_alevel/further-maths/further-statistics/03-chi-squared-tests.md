@@ -1,6 +1,8 @@
 ---
 title: Chi-Squared Tests
-description: 'A-Level Further Maths Chi-Squared Tests notes covering key definitions, core concepts, worked examples, and practice questions for rigorous revision.'
+description:
+  'A-Level Further Maths Chi-Squared Tests notes covering key definitions, core concepts, worked
+  examples, and practice questions for rigorous revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths

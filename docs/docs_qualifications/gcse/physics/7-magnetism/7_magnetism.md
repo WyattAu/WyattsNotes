@@ -1,6 +1,8 @@
 ---
 title: Magnetism and Electromagnetism
-description: 'GCSE Physics Magnetism and Electromagnetism notes covering key definitions, core concepts, worked examples, and practice questions for practical revision.'
+description:
+  'GCSE Physics Magnetism and Electromagnetism notes covering key definitions, core concepts, worked
+  examples, and practice questions for practical revision.'
 date: 2026-04-14
 tags:
   - gcse

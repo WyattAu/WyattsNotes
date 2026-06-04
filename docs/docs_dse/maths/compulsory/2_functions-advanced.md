@@ -1,6 +1,8 @@
 ---
 title: Functions (Advanced)
-description: 'DSE Maths Functions (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for solid learning and effective revision.'
+description:
+  'DSE Maths Functions (Advanced) notes covering key definitions, core concepts, worked examples,
+  and practice questions for solid learning and effective revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

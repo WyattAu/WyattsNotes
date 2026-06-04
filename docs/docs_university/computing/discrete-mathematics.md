@@ -1,6 +1,8 @@
 ---
 title: Discrete Mathematics
-description: 'University Computing Discrete Mathematics notes covering key definitions, core concepts, worked examples, and practice questions for detailed preparation.'
+description:
+  'University Computing Discrete Mathematics notes covering key definitions, core concepts, worked
+  examples, and practice questions for detailed preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Computing
@@ -134,20 +136,20 @@ connective Has **introduction rules** (how to _derive_ a formula with that conne
 
 **Rules of inference:**
 
-| Rule          | Premises                           | Conclusion  |
-| ------------- | ---------------------------------- | ----------- |
-| $\land$-I     | $A$, $B$                             | $A \land B$ |
-| $\land$-E$_1$ | $A \land B$                        | $A$         |
-| $\land$-E$_2$ | $A \land B$                        | $B$         |
-| $\lor$-I$_1$  | $A$                                | $A \lor B$  |
-| $\lor$-I$_2$  | $B$                                | $A \lor B$  |
+| Rule          | Premises                               | Conclusion  |
+| ------------- | -------------------------------------- | ----------- |
+| $\land$-I     | $A$, $B$                               | $A \land B$ |
+| $\land$-E$_1$ | $A \land B$                            | $A$         |
+| $\land$-E$_2$ | $A \land B$                            | $B$         |
+| $\lor$-I$_1$  | $A$                                    | $A \lor B$  |
+| $\lor$-I$_2$  | $B$                                    | $A \lor B$  |
 | $\lor$-E      | $A \lor B$, $A \vdash C$, $B \vdash C$ | $C$         |
-| $\to$-I       | $[A] \vdash B$                     | $A \to B$   |
-| $\to$-E       | $A$, $A \to B$                       | $B$         |
-| $\neg$-I      | $[A] \vdash \bot$                  | $\neg A$    |
-| $\neg$-E      | $A$, $\neg A$                        | $\bot$      |
-| DNE           | $\neg\neg A$                       | $A$         |
-| RAA           | $[\neg A] \vdash \bot$             | $A$         |
+| $\to$-I       | $[A] \vdash B$                         | $A \to B$   |
+| $\to$-E       | $A$, $A \to B$                         | $B$         |
+| $\neg$-I      | $[A] \vdash \bot$                      | $\neg A$    |
+| $\neg$-E      | $A$, $\neg A$                          | $\bot$      |
+| DNE           | $\neg\neg A$                           | $A$         |
+| RAA           | $[\neg A] \vdash \bot$                 | $A$         |
 
 Square brackets $[A]$ denote an assumption that is **discharged** after the rule is applied.
 
@@ -797,9 +799,9 @@ Differ by exactly $n$.
 Partition $\\{1, 2, \ldots, 2n\\}$ into $n$ pigeonholes: $\\{1, n+1\\}$, $\\{2, n+2\\}$, $\ldots$
 $\\{n, 2n\\}$. Each pair sums to $n + (n+k) = 2n + k$... Let me rephrase.
 
-Partition into $\\{1, n+1\\}$, $\\{2, n+2\\}$, $\ldots$, $\\{n, 2n\\}$. These are $n$ disjoint sets. If we
-select $n + 1$ integers from $\\{1, \ldots, 2n\\}$By the pigeonhole principle two must lie in the
-Same set $\\{i, n+i\\}$And their difference is $(n + i) - i = n$. $\blacksquare$
+Partition into $\\{1, n+1\\}$, $\\{2, n+2\\}$, $\ldots$, $\\{n, 2n\\}$. These are $n$ disjoint sets.
+If we select $n + 1$ integers from $\\{1, \ldots, 2n\\}$By the pigeonhole principle two must lie in
+the Same set $\\{i, n+i\\}$And their difference is $(n + i) - i = n$. $\blacksquare$
 
 </details>
 
@@ -980,9 +982,10 @@ With $V$ vertices, $E$ edges, and $F$ faces:
 
 $$V - E + F = 2$$
 
-_Proof sketch._ Build the graph edge by edge. Starting from a single vertex ($V = 1$, $E = 0$, $F = 1$),
-The quantity $V - E + F = 2$ is preserved when adding an edge: if the edge connects two components,
-$E$ and $V$ each increase by 1; if it splits a face, $E$ and $F$ each increase by 1. $\blacksquare$
+_Proof sketch._ Build the graph edge by edge. Starting from a single vertex ($V = 1$, $E = 0$,
+$F = 1$), The quantity $V - E + F = 2$ is preserved when adding an edge: if the edge connects two
+components, $E$ and $V$ each increase by 1; if it splits a face, $E$ and $F$ each increase by 1.
+$\blacksquare$
 
 **Corollary 5.6.** For a simple planar graph with $V \geq 3$: $E \leq 3V - 6$.
 
@@ -992,8 +995,8 @@ $\blacksquare$
 
 **Corollary 5.7.** $K_5$ and $K_{3,3}$ are not planar.
 
-_Proof._ $K_5$ has $V = 5$, $E = 10$But $10 \gt 3(5) - 6 = 9$. For $K_{3,3}$, $V = 6$, $E = 9$. Since
-$K_{3,3}$ has no triangles, every face has at least 4 edges, giving $4F \leq 2E$So
+_Proof._ $K_5$ has $V = 5$, $E = 10$But $10 \gt 3(5) - 6 = 9$. For $K_{3,3}$, $V = 6$, $E = 9$.
+Since $K_{3,3}$ has no triangles, every face has at least 4 edges, giving $4F \leq 2E$So
 $F \leq E/2 = 4.5$. But $V - E + F = 2$ gives $F = 2 - 6 + 9 = 5 \gt 4.5$. Contradiction.
 $\blacksquare$
 
@@ -1050,7 +1053,8 @@ Merged).
 <details>
 <summary>Solution</summary>
 
-Label the vertices of $C_4$ as $v_1, v_2, v_3, v_4$ with edges $v_1v_2$, $v_2v_3$, $v_3v_4$, $v_4v_1$.
+Label the vertices of $C_4$ as $v_1, v_2, v_3, v_4$ with edges $v_1v_2$, $v_2v_3$, $v_3v_4$,
+$v_4v_1$.
 
 Pick edge $e = v_1v_2$.
 
@@ -1160,9 +1164,9 @@ $12, 23, 34, 45, 51, 13, 35$. Does $G$ have an Euler circuit or Euler path?
 <details>
 <summary>Solution</summary>
 
-Degrees: $\deg(1) = 3$, $\deg(2) = 2$, $\deg(3) = 4$, $\deg(4) = 2$, $\deg(5) = 3$. Two vertices (1 and 5)
-have odd degree. Since exactly two vertices have odd degree, $G$ has an Euler Path (starting at 1,
-ending at 5) but no Euler circuit.
+Degrees: $\deg(1) = 3$, $\deg(2) = 2$, $\deg(3) = 4$, $\deg(4) = 2$, $\deg(5) = 3$. Two vertices (1
+and 5) have odd degree. Since exactly two vertices have odd degree, $G$ has an Euler Path (starting
+at 1, ending at 5) but no Euler circuit.
 
 One Euler path: $1 \to 2 \to 3 \to 4 \to 5 \to 3 \to 1 \to 5$. All 7 edges are used exactly once. ✓
 
@@ -1199,9 +1203,9 @@ $|N(\\{x\\})| \geq 1$ So $x$ has a neighbour, and we can match $x$ to it.
 
 Inductive step. Consider two cases.
 
-_Case 1:_ For every nonempty proper subset $S \subsetneq X$, $|N(S)| \gt |S|$. Pick any edge $xy$. In
-$G' = G - \\{x, y\\}$Hall's condition still holds (removing one element from each side preserves the
-Strict inequality). By the induction hypothesis, $X \setminus \\{x\\}$ can be matched in $G'$.
+_Case 1:_ For every nonempty proper subset $S \subsetneq X$, $|N(S)| \gt |S|$. Pick any edge $xy$.
+In $G' = G - \\{x, y\\}$Hall's condition still holds (removing one element from each side preserves
+the Strict inequality). By the induction hypothesis, $X \setminus \\{x\\}$ can be matched in $G'$.
 Adding $xy$ Gives the desired matching.
 
 _Case 2:_ There exists a nonempty proper $T \subsetneq X$ with $|N(T)| = |T|$. Match $T$ to $N(T)$
@@ -1229,8 +1233,8 @@ Check Hall's condition for every subset $S \subseteq X$:
   $N(\\{a, c, d\\}) = \\{1, 2, 3, 4, 5\\}$, $|N| = 5$. All triples have $|N| \geq 3$. ✓
 - $|S| = 4$: $N(X) = \\{1, 2, 3, 4, 5\\}$, $|N| = 5 \geq 4$. ✓
 
-Hall's condition is satisfied, so a matching exists. One such matching: $a$--$1$, $b$--$2$
-$c$--$3$, $d$--$4$.
+Hall's condition is satisfied, so a matching exists. One such matching: $a$--$1$, $b$--$2$ $c$--$3$,
+$d$--$4$.
 
 </details>
 
@@ -1667,8 +1671,8 @@ If you get this wrong, revise: Section 4.2.
 
 $|A_3| = 166$, $|A_7| = 71$, $|A_3 \cap A_7| = 23$. Divisible by 3 or 7: $166 + 71 - 23 = 214$.
 
-$|A_3 \cap A_5| = 33$, $|A_7 \cap A_5| = 14$, $|A_3 \cap A_7 \cap A_5| = 4$. Divisible by 3 or 7 **and**
-5: $33 + 14 - 4 = 43$.
+$|A_3 \cap A_5| = 33$, $|A_7 \cap A_5| = 14$, $|A_3 \cap A_7 \cap A_5| = 4$. Divisible by 3 or 7
+**and** 5: $33 + 14 - 4 = 43$.
 
 Divisible by 3 or 7 but not 5: $214 - 43 = 171$.
 
@@ -1740,8 +1744,8 @@ a matching covering $X$.
 <summary>Solution</summary>
 
 Neighbourhoods: $N(\\{1\\}) = \\{a, b\\}$, $N(\\{2\\}) = \\{b, c\\}$, $N(\\{3\\}) = \\{c, d\\}$.
-$N(\\{1, 2\\}) = \\{a, b, c\\}$, $N(\\{1, 3\\}) = \\{a, b, c, d\\}$, $N(\\{2, 3\\}) = \\{b, c, d\\}$.
-$N(\\{1, 2, 3\\}) = \\{a, b, c, d\\}$.
+$N(\\{1, 2\\}) = \\{a, b, c\\}$, $N(\\{1, 3\\}) = \\{a, b, c, d\\}$,
+$N(\\{2, 3\\}) = \\{b, c, d\\}$. $N(\\{1, 2, 3\\}) = \\{a, b, c, d\\}$.
 
 All satisfy $|N(S)| \geq |S|$. A matching: $1$--$a$, $2$--$b$, $3$--$c$.
 

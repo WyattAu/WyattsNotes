@@ -1,6 +1,8 @@
 ---
 title: Kinematics (Extended)
-description: 'A-Level Maths Kinematics (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
+description:
+  'A-Level Maths Kinematics (Extended) notes covering key definitions, core concepts, worked
+  examples, and practice questions for comprehensive revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
@@ -432,8 +434,8 @@ Angle below horizontal: $\theta = \arctan\!\left(\dfrac{34.3}{8}\right) \approx 
 ### Problem 5
 
 A particle moves in a straight line so that its acceleration is given by
-$a = 4 - 2s\;\mathrm{m\,s^{-2}}$ Where $s$ is the displacement from a fixed point. When
-$s = 0$, $v = 2\;\mathrm{m\,s^{-1}}$. Find the Maximum displacement.
+$a = 4 - 2s\;\mathrm{m\,s^{-2}}$ Where $s$ is the displacement from a fixed point. When $s = 0$,
+$v = 2\;\mathrm{m\,s^{-1}}$. Find the Maximum displacement.
 
 <details>
 <summary>Solution</summary>

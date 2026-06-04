@@ -1,6 +1,8 @@
 ---
 title: Database Systems
-description: 'University Computing Database Systems notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'University Computing Database Systems notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing
@@ -150,8 +152,8 @@ possible; `NULL`-padded otherwise.
 
 **Full outer join** $R \bowtie_{\mathrm{full} S}$: All tuples from both $R$ and $S$.
 
-**Division** $R \div S$: Tuples $t$ in $\pi_{R-S}(R)$ such that for every tuple
-$s \in S$, $(t, s)
+**Division** $R \div S$: Tuples $t$ in $\pi_{R-S}(R)$ such that for every tuple $s \in S$,
+$(t, s)
 \in R$.
 
 $$R \div S = \pi_{R-S}(R) - \pi_{R-S}\Bigl(\bigl(\pi_{R-S}(R) \times S\bigr) - R\Bigr)$$
@@ -722,8 +724,8 @@ A **prime attribute** is an attribute that belongs to some candidate key.
 _Proof._ BCNF requires $X$ to be a superkey for every non-trivial FD $X \to A$. 3NF allows $X$ to be
 A superkey **or** $A$ to be prime. Since the BCNF condition is stricter, every BCNF relation is in
 3NF. For the converse, consider $R(A, B, C)$ with FDs $AB \to C$ and $C \to B$. Candidate keys:
-$\\{AB\\}$, $\\{AC\\}$. $C \to B$ does not violate 3NF ($B$ is prime) but violates BCNF ($C$ is not a
-Superkey). $\blacksquare$
+$\\{AB\\}$, $\\{AC\\}$. $C \to B$ does not violate 3NF ($B$ is prime) but violates BCNF ($C$ is not
+a Superkey). $\blacksquare$
 
 ### 4.3 Decomposition
 
@@ -765,8 +767,8 @@ $\\{\mathrm{StudentID}, \mathrm{CourseID}\\} \to \mathrm{Grade}$.
 
 - Candidate key: $\\{\mathrm{StudentID}, \mathrm{CourseID}\\}$.
 - 1NF: satisfied (atomic values).
-- 2NF violation: $\mathrm{StudentID} \to \mathrm{StudentName}$ is a partial dependency (StudentID is a
-  proper subset of the key).
+- 2NF violation: $\mathrm{StudentID} \to \mathrm{StudentName}$ is a partial dependency (StudentID is
+  a proper subset of the key).
 - Decompose: `Student(StudentID, StudentName, Dept)` and `Enrolment(StudentID, CourseID, Grade)`.
   Both are in 3NF and BCNF.
 
@@ -775,8 +777,9 @@ $\\{\mathrm{Course}, \mathrm{Time}\\} \to \\{\mathrm{Instructor}, \mathrm{Room}\
 $\mathrm{Instructor} \to \mathrm{Room}$.
 
 - Candidate key: $\\{\mathrm{Course}, \mathrm{Time}\\}$.
-- 3NF: $\mathrm{Instructor} \to \mathrm{Room}$ -- Instructor is not a superkey, but Room is not prime.
-  Wait -- Room is **not** prime (not in any candidate key). So this actually violates 3NF too.
+- 3NF: $\mathrm{Instructor} \to \mathrm{Room}$ -- Instructor is not a superkey, but Room is not
+  prime. Wait -- Room is **not** prime (not in any candidate key). So this actually violates 3NF
+  too.
 
 Let us correct: `CourseOffering(Course, Instructor, Textbook)` with FDs:
 $\mathrm{Course} \to \mathrm{Instructor}$ $\mathrm{Instructor} \to \mathrm{Textbook}$.
@@ -789,15 +792,17 @@ Better example. `Class(Course, Instructor, Student)` with FDs:
 $\\{\mathrm{Course}, \mathrm{Student}\\} \to \mathrm{Instructor}$
 $\mathrm{Instructor} \to \mathrm{Course}$.
 
-- Candidate keys:
-  $\\{\mathrm{Course}, \mathrm{Student}\\}$, $\\{\mathrm{Instructor}, \mathrm{Student}\\}$.
+- Candidate keys: $\\{\mathrm{Course}, \mathrm{Student}\\}$,
+  $\\{\mathrm{Instructor}, \mathrm{Student}\\}$.
 - 3NF check for $\mathrm{Instructor} \to \mathrm{Course}$: Instructor is not a superkey. But Course
   **is** prime (in candidate key $\\{\mathrm{Course}, \mathrm{Student}\\}$). So 3NF is satisfied.
-- BCNF check: $\mathrm{Instructor} \to \mathrm{Course}$ violates BCNF (Instructor is not a superkey).
+- BCNF check: $\mathrm{Instructor} \to \mathrm{Course}$ violates BCNF (Instructor is not a
+  superkey).
 
 Decompose: `Teaches(Instructor, Course)` and `Attends(Instructor, Student)`. This is lossless
-($\mathrm{Instructor}$ is common and $\mathrm{Instructor} \to \mathrm{Course}$ holds in `Teaches`). But
-the dependency $\\{\mathrm{Course}, \mathrm{Student}\\} \to \mathrm{Instructor}$ is Not preserved.
+($\mathrm{Instructor}$ is common and $\mathrm{Instructor} \to \mathrm{Course}$ holds in `Teaches`).
+But the dependency $\\{\mathrm{Course}, \mathrm{Student}\\} \to \mathrm{Instructor}$ is Not
+preserved.
 
 **Theorem 4.4.** Not every relation can be decomposed into BCNF while preserving dependencies. 3NF
 Is the strongest normal form guaranteeing dependency-preserving, lossless-join decomposition.
@@ -1115,11 +1120,11 @@ AND/OR for multi-criteria queries.
 
 **Bitwise operations for query evaluation:**
 
-| Query                   | Bitmap operation                                      |
-| ----------------------- | ----------------------------------------------------- |
+| Query                   | Bitmap operation                                        |
+| ----------------------- | ------------------------------------------------------- |
 | $A = v_1$ AND $B = v_2$ | $\mathrm{bitmap_}{A,v_1}$ AND $\mathrm{bitmap_}{B,v_2}$ |
 | $A = v_1$ OR $A = v_2$  | $\mathrm{bitmap_}{A,v_1}$ OR $\mathrm{bitmap_}{A,v_2}$  |
-| $A \neq v_1$            | NOT $\mathrm{bitmap_}{A,v_1}$                          |
+| $A \neq v_1$            | NOT $\mathrm{bitmap_}{A,v_1}$                           |
 
 **Compression.** For columns with many distinct values, run-length encoding (WAH or BBC) compresses
 Bitmaps effectively while still supporting bitwise operations.
@@ -1135,7 +1140,7 @@ buffer Pool has $B$ pages and each disk page access costs one I/O.
 | ----------------------- | --------------------------------------------------------- |
 | Full table scan         | $\lceil n_R / B \rceil$ (or $n_R$ if $B$ pages available) |
 | B+ tree equality search | $\log_f(n_R)$ leaf + 1 data page                          |
-| B+ tree range search    | $\log_f(n_R)$ leaf + $\lvert\mathrm{range} pages\rvert$    |
+| B+ tree range search    | $\log_f(n_R)$ leaf + $\lvert\mathrm{range} pages\rvert$   |
 | Hash equality search    | 1 (ideal)                                                 |
 
 Where $f$ is the fanout (average number of children per internal node).

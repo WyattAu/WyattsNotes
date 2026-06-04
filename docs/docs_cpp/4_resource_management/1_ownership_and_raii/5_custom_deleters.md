@@ -1,6 +1,8 @@
 ---
 title: Common Pitfalls
-description: 'C++ Programming Common Pitfalls notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
+description:
+  'C++ Programming Common Pitfalls notes covering key definitions, core concepts, worked examples,
+  and practice questions for study and revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

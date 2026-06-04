@@ -1,6 +1,8 @@
 ---
 title: Poisson and Geometric Distributions
-description: 'A-Level Further Maths Poisson and Geometric Distributions notes covering key definitions, core concepts, worked examples, and practice questions for revision.'
+description:
+  'A-Level Further Maths Poisson and Geometric Distributions notes covering key definitions, core
+  concepts, worked examples, and practice questions for revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -250,8 +252,8 @@ $$P(X \leq r) = 1 - q^r = 1 - (1-p)^r$$
 **Example.** A bag contains red and blue balls. The probability of drawing a red ball is $p$. In an
 Experiment, the first red ball is drawn on the 10th draw. Test at the 5% level whether $p = 0.3$.
 
-$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so $p$
-may be smaller).
+$X \sim \mathrm{Geo}(0.3)$. $H_0: p = 0.3$, $H_1: p < 0.3$ (the ball took longer than expected, so
+$p$ may be smaller).
 
 $p\mathrm{-value} = P(X \geq 10) = (1-0.3)^{10-1} = 0.7^9 \approx 0.0404 < 0.05$.
 

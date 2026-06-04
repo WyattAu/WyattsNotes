@@ -1,6 +1,8 @@
 ---
 title: Waves and Radiation
-description: 'Scottish Highers Physics Waves and Radiation notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'Scottish Highers Physics Waves and Radiation notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused preparation.'
 date: 2026-04-14
 tags:
   - highers
@@ -447,10 +449,10 @@ Source of equal intensity adds 3 dB.
 
 | Topic               | Formula                             | Variables            | Notes                     |
 | ------------------- | ----------------------------------- | -------------------- | ------------------------- |
-| Wave speed          | $v = f\lambda$                      | $f$, $\lambda$         | Exact for periodic waves  |
-| Snell's law         | $n_1\sin\theta_1 = n_2\sin\theta_2$ | $n$, $\theta$          | Frequency unchanged       |
+| Wave speed          | $v = f\lambda$                      | $f$, $\lambda$       | Exact for periodic waves  |
+| Snell's law         | $n_1\sin\theta_1 = n_2\sin\theta_2$ | $n$, $\theta$        | Frequency unchanged       |
 | Critical angle      | $\sin\theta_c = n_2/n_1$            | $n_1 \gt n_2$        | Total internal reflection |
-| Double slit         | $w = \lambda L/d$                   | $\lambda$, $L$, $d$      | Fringe spacing            |
+| Double slit         | $w = \lambda L/d$                   | $\lambda$, $L$, $d$  | Fringe spacing            |
 | Diffraction grating | $d\sin\theta = n\lambda$            | $d$$\theta$$\lambda$ | $n$Th order maximum       |
 | Decibels            | $\beta = 10\log_{10}(I/I_0)$        | $I$$I_0$             | $I_0 = 10^{-12}$ W/m$^2$  |
 | Decay law           | $N = N_0 e^{-\lambda t}$            | $N_0$$\lambda$$t$    | Exponential decay         |

@@ -1,6 +1,8 @@
 ---
 title: Evolution and Ecology
-description: 'DSE Biology Evolution and Ecology notes covering key definitions, core concepts, worked examples, and practice questions for in-depth revision.'
+description:
+  'DSE Biology Evolution and Ecology notes covering key definitions, core concepts, worked examples,
+  and practice questions for in-depth revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE

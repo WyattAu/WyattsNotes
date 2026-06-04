@@ -1,6 +1,8 @@
 ---
 title: Organisation
-description: 'GCSE Biology Organisation notes covering key definitions, core concepts, worked examples, and practice questions for structured learning and effective revision.'
+description:
+  'GCSE Biology Organisation notes covering key definitions, core concepts, worked examples, and
+  practice questions for structured learning and effective revision.'
 date: 2026-04-14
 tags:
   - gcse

@@ -4,7 +4,9 @@ tags:
   - IB
   - English
 slug: ib-english-assessment-and-techniques
-description: 'IB English Assessment and Analytical Techniques notes covering key definitions, core concepts, worked examples, and practice questions for study and revision.'
+description:
+  'IB English Assessment and Analytical Techniques notes covering key definitions, core concepts,
+  worked examples, and practice questions for study and revision.'
 ---
 
 # IB English Assessment and Analytical Techniques

@@ -1,6 +1,8 @@
 ---
 title: Organic Chemistry
-description: 'GCSE Organic Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for clear study and thorough revision.'
+description:
+  'GCSE Organic Chemistry notes covering key definitions, core concepts, worked examples, and
+  practice questions for clear study and thorough revision.'
 date: 2026-04-14
 tags:
   - gcse

@@ -1,6 +1,8 @@
 ---
 title: Photosynthesis (In Depth)
-description: 'A-Level Biology Photosynthesis (In Depth) notes covering key definitions, core concepts, worked examples, and practice questions for effective preparation.'
+description:
+  'A-Level Biology Photosynthesis (In Depth) notes covering key definitions, core concepts, worked
+  examples, and practice questions for effective preparation.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -32,13 +34,13 @@ photosynthetic pigments and converted to chemical energy in the form of ATP and 
 
 ### 1.2 The Two Stages
 
-| Feature         | Light-Dependent Reactions                         | Light-Independent Reactions (Calvin Cycle)                     |
-| --------------- | ------------------------------------------------- | -------------------------------------------------------------- |
-| Location        | Thylakoid membranes of chloroplasts               | Stroma of chloroplasts                                         |
-| Light required? | Yes (directly)                                    | No (but requires the products of light reactions)              |
+| Feature         | Light-Dependent Reactions                           | Light-Independent Reactions (Calvin Cycle)                     |
+| --------------- | --------------------------------------------------- | -------------------------------------------------------------- |
+| Location        | Thylakoid membranes of chloroplasts                 | Stroma of chloroplasts                                         |
+| Light required? | Yes (directly)                                      | No (but requires the products of light reactions)              |
 | Inputs          | Light, $\mathrm{H_2O}$, $\mathrm{NADP^+}$ADP, $P_i$ | $\mathrm{CO_2}$ATP, $\mathrm{NADPH}$RuBP                       |
-| Outputs         | $\mathrm{O_2}$ATP, $\mathrm{NADPH}$               | $\mathrm{C_6H_{12}O_6}$ (via G3P), $\mathrm{NADP^+}$ADP, $P_i$ |
-| Main products   | Energy carriers (ATP, NADPH)                      | Triose phosphate (G3P), which can form glucose                 |
+| Outputs         | $\mathrm{O_2}$ATP, $\mathrm{NADPH}$                 | $\mathrm{C_6H_{12}O_6}$ (via G3P), $\mathrm{NADP^+}$ADP, $P_i$ |
+| Main products   | Energy carriers (ATP, NADPH)                        | Triose phosphate (G3P), which can form glucose                 |
 
 ## 2. Chloroplast Structure
 
@@ -1404,14 +1406,14 @@ mitigation:
 
 ### 23.1 Photosynthesis and Respiration: The Carbon Cycle
 
-| Process                          | Location                     | Inputs                                            | Outputs                                              |
-| -------------------------------- | ---------------------------- | ------------------------------------------------- | ---------------------------------------------------- |
-| Photosynthesis (light reactions) | Thylakoid membrane           | Light, $\mathrm{H_2O}$ADP, $\mathrm{NADP^+}$      | $\mathrm{O_2}$ATP, $\mathrm{NADPH}$                  |
-| Photosynthesis (Calvin cycle)    | Stroma                       | $\mathrm{CO_2}$ATP, $\mathrm{NADPH}$              | TP, GP, RuBP, ADP, $\mathrm{NADP^+}$                 |
-| Glycolysis                       | Cytoplasm                    | Glucose, ATP, $\mathrm{NAD^+}$                    | Pyruvate, ATP (net 2), $\mathrm{NADH}$               |
+| Process                          | Location                     | Inputs                                            | Outputs                                                |
+| -------------------------------- | ---------------------------- | ------------------------------------------------- | ------------------------------------------------------ |
+| Photosynthesis (light reactions) | Thylakoid membrane           | Light, $\mathrm{H_2O}$ADP, $\mathrm{NADP^+}$      | $\mathrm{O_2}$ATP, $\mathrm{NADPH}$                    |
+| Photosynthesis (Calvin cycle)    | Stroma                       | $\mathrm{CO_2}$ATP, $\mathrm{NADPH}$              | TP, GP, RuBP, ADP, $\mathrm{NADP^+}$                   |
+| Glycolysis                       | Cytoplasm                    | Glucose, ATP, $\mathrm{NAD^+}$                    | Pyruvate, ATP (net 2), $\mathrm{NADH}$                 |
 | Link reaction                    | Mitochondrial matrix         | Pyruvate, $\mathrm{NAD^+}$CoA                     | Acetyl CoA, $\mathrm{CO_2}$, $\mathrm{NADH}$           |
 | Krebs cycle                      | Mitochondrial matrix         | Acetyl CoA, $\mathrm{NAD^+}$FAD                   | $\mathrm{CO_2}$ATP, $\mathrm{NADH}$, $\mathrm{FADH_2}$ |
-| Oxidative phosphorylation        | Inner mitochondrial membrane | $\mathrm{NADH}$$\mathrm{FADH_2}$$\mathrm{O_2}$ADP | $\mathrm{H_2O}$ATP                                   |
+| Oxidative phosphorylation        | Inner mitochondrial membrane | $\mathrm{NADH}$$\mathrm{FADH_2}$$\mathrm{O_2}$ADP | $\mathrm{H_2O}$ATP                                     |
 
 The products of photosynthesis (glucose, $\mathrm{O_2}$) are the reactants of respiration. The
 products of respiration ($\mathrm{CO_2}$$\mathrm{H_2O}$) are the reactants of photosynthesis.

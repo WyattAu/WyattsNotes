@@ -1,6 +1,8 @@
 ---
 title: Database Systems (Advanced)
-description: 'University Computing Database Systems (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'University Computing Database Systems (Advanced) notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused revision.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing
@@ -349,13 +351,13 @@ of a secondary B+ tree index lookup is $\lceil R / (V(A, R) \cdot f_{rt}) \rceil
 
 ### 4.2 Join Algorithm Costs
 
-| Algorithm         | Cost                                                 | Best when                      |
-| ----------------- | ---------------------------------------------------- | ------------------------------ |
-| Nested-loop       | $B_r + B_r \cdot B_s$                                | Small relations, no index      |
-| Block nested-loop | $B_r + \lceil B_r / M - 1 \rceil \cdot B_s$          | $M$ blocks of memory           |
+| Algorithm         | Cost                                                  | Best when                      |
+| ----------------- | ----------------------------------------------------- | ------------------------------ |
+| Nested-loop       | $B_r + B_r \cdot B_s$                                 | Small relations, no index      |
+| Block nested-loop | $B_r + \lceil B_r / M - 1 \rceil \cdot B_s$           | $M$ blocks of memory           |
 | Index nested-loop | $B_r + R_r \cdot (\text{cost} of index lookup on  S)$ | Index on join attribute of $S$ |
 | Sort-merge        | $B_r + B_s + \text{sort} cost$                        | Both relations large           |
-| Hash join         | $3(B_r + B_s)$                                       | Equi-join, no order required   |
+| Hash join         | $3(B_r + B_s)$                                        | Equi-join, no order required   |
 
 Where $M$ is the number of available memory blocks.
 
@@ -836,8 +838,8 @@ A comprehensive summary of anomalies by isolation level:
 | Write skew          | Possible         | Possible       | Possible        | Prevented    |
 | Read skew           | Possible         | Possible       | Prevented       | Prevented    |
 
-**Read skew:** $T_1$ reads $A$ and $B$, $T_2$ updates $A$, $T_1$ reads $A$ again and sees a different
-value. Prevented by Repeatable Read (locks on read rows).
+**Read skew:** $T_1$ reads $A$ and $B$, $T_2$ updates $A$, $T_1$ reads $A$ again and sees a
+different value. Prevented by Repeatable Read (locks on read rows).
 
 **Write skew:** $T_1$ reads rows where $x + y > 10$Updates $x$; $T_2$ reads same rows, updates $y$.
 Both commit, but $x + y$ may now be $\leq 10$. NOT prevented by Repeatable Read (requires
@@ -854,8 +856,8 @@ Serializable).
 
 **Validation types:**
 
-| Type                | Check                                                                           | Cost                             |
-| ------------------- | ------------------------------------------------------------------------------- | -------------------------------- |
+| Type                | Check                                                                           | Cost                              |
+| ------------------- | ------------------------------------------------------------------------------- | --------------------------------- |
 | Backward validation | Check against committed transactions that finished after our read phase started | $O(\text{committed} since start)$ |
 | Forward validation  | Check against active transactions that started before our validation phase      | $O(\text{currently} active)$      |
 
@@ -872,7 +874,7 @@ overlapping transactions (reading/writing the same data), at most one commits.
 
 | Strategy           | Description                       | Hotspot risk                    |
 | ------------------ | --------------------------------- | ------------------------------- |
-| Hash partitioning  | $f(\text{key}) \mod n$             | Low                             |
+| Hash partitioning  | $f(\text{key}) \mod n$            | Low                             |
 | Range partitioning | Key ranges assigned to nodes      | High (skewed ranges)            |
 | Directory-based    | Lookup service maps keys to nodes | Low (directory is a bottleneck) |
 
@@ -984,11 +986,11 @@ $$\text{Cost} = B_r + R_r \cdot (\text{cost} per probe)$$
 
 Where $R_r$ is the number of records in $R$ and the cost per probe depends on the index:
 
-| Index type            | Cost per probe                                             |
-| --------------------- | ---------------------------------------------------------- |
+| Index type            | Cost per probe                                               |
+| --------------------- | ------------------------------------------------------------ |
 | B+ tree (clustered)   | $\lceil h + \text{matching} records / \text{fan}-out \rceil$ |
-| B+ tree (unclustered) | $\lceil h + \text{matching} records \rceil$                 |
-| Hash index            | $\approx 1.2$ (average)                                    |
+| B+ tree (unclustered) | $\lceil h + \text{matching} records \rceil$                  |
+| Hash index            | $\approx 1.2$ (average)                                      |
 
 <details>
 <summary>Worked Example: Join Cost Comparison</summary>
@@ -1164,9 +1166,9 @@ sort-merge join, and block nested-loop join.
 **Problem 4.** Write a single SQL query that, for each department, returns the top 3 employees by
 salary. Use window functions.
 
-**Problem 5.** Consider the relation $R(A, B, C, D, E)$ with functional dependencies:
-$AB \to C$, $C \to D$, $D \to E$, $E \to A$. Find all candidate keys, decompose into BCNF, and check if
-the decomposition is dependency-preserving.
+**Problem 5.** Consider the relation $R(A, B, C, D, E)$ with functional dependencies: $AB \to C$,
+$C \to D$, $D \to E$, $E \to A$. Find all candidate keys, decompose into BCNF, and check if the
+decomposition is dependency-preserving.
 
 **Problem 6.** The relation Teaching(course, teacher, textbook, room) has the constraint: "The
 teacher and textbook assigned to a course section are independent." What normal form does this

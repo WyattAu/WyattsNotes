@@ -1,6 +1,8 @@
 ---
 title: Mechanics
-description: 'ILC Physics Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive study and examination practice.'
+description:
+  'ILC Physics Mechanics notes covering key definitions, core concepts, worked examples, and
+  practice questions for comprehensive study and examination practice.'
 date: 2026-04-14
 tags:
   - ilc

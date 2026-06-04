@@ -1203,7 +1203,8 @@ $t \in \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆^d$.
 space $B$ (which may lack an inner product), $t$ belongs to the _dual space_ $B^*$And the
 characteristic function is defined as $\varphi_X(t) = \mathbb◆LB◆◆LB◆'◆RB◆E◆LB◆◆RB◆'◆RB◆\left[ e^◆LB◆i t(X)◆RB◆ \right]$
 where $t: B \to \mathbb◆LB◆◆LB◆'◆RB◆R◆LB◆◆RB◆'◆RB◆$ is a continuous linear functional. For Hilbert spaces, the
-Riesz Representation Theorem identifies $B^*$ with $B$Recovering the inner product formulation. :::
+Riesz Representation Theorem identifies $B^*$ with $B$Recovering the inner product formulation.
+:::
 
 ### Levy's Continuity Theorem
 
@@ -1226,7 +1227,8 @@ $\bar◆LB◆X◆RB◆_n = \frac◆LB◆1◆RB◆◆LB◆n◆RB◆\sum_◆LB◆i
 risk of a _single, fixed_ hypothesis converges to its true risk. To justify Empirical Risk
 Minimization (ERM) where we search for the _minimum_ across a hypothesis class
 $\mathcal◆LB◆◆LB◆'◆RB◆H◆LB◆◆RB◆'◆RB◆$We need the **Uniform Law of Large Numbers (ULLN)** to prevent overfitting.
-See Glivenko-Cantelli theorem. :::
+See Glivenko-Cantelli theorem.
+:::
 
 ### Central Limit Theorem (CLT)
 
@@ -1603,7 +1605,8 @@ conditional expectation (and for the Fréchet mean to be well-defined via Bochne
 cannot be an arbitrary metric space. It must be a subset of a vector space (specifically, a Banach
 space) where addition and scalar multiplication are defined, enabling the Bochner integral. For
 general metric spaces, the Fréchet mean is defined via the minimization formulation above, which
-does not require linear structure. :::
+does not require linear structure.
+:::
 
 ## Statistical Models and Information Geometry
 

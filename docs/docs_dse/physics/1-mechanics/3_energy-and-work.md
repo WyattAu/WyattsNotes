@@ -1,6 +1,8 @@
 ---
 title: Energy and Work
-description: 'DSE Physics Energy and Work notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'DSE Physics Energy and Work notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE

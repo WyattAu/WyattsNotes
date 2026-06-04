@@ -1,6 +1,8 @@
 ---
 title: Arenes
-description: 'A-Level Chemistry Arenes notes covering key definitions, core concepts, worked examples, and practice questions for methodical exam preparation and mastery.'
+description:
+  'A-Level Chemistry Arenes notes covering key definitions, core concepts, worked examples, and
+  practice questions for methodical exam preparation and mastery.'
 date: 2026-04-22T00:00:00.000Z
 tags:
   - Chemistry
@@ -232,13 +234,13 @@ substituent determines both the **rate** and the **position** of the second subs
 These groups donate electron density into the ring, activating it toward electrophilic substitution
 and directing the electrophile to the ortho (2-, 6-) and para (4-) positions.
 
-| Group                           | Mechanism                   | Relative activating power |
-| ------------------------------- | --------------------------- | ------------------------- |
+| Group                             | Mechanism                   | Relative activating power |
+| --------------------------------- | --------------------------- | ------------------------- |
 | $-\mathrm{NH}_2$, $-\mathrm{NHR}$ | Resonance donation (strong) | Very strong               |
-| $-\mathrm{OH}$                  | Resonance donation (strong) | Strong                    |
-| $-\mathrm{OR}$                  | Resonance donation          | Strong                    |
-| $-\mathrm{R}$ (alkyl)           | Inductive donation (weak)   | Weak                      |
-| $-\mathrm{C}_6\mathrm{H}_5$     | Resonance donation (weak)   | Weak                      |
+| $-\mathrm{OH}$                    | Resonance donation (strong) | Strong                    |
+| $-\mathrm{OR}$                    | Resonance donation          | Strong                    |
+| $-\mathrm{R}$ (alkyl)             | Inductive donation (weak)   | Weak                      |
+| $-\mathrm{C}_6\mathrm{H}_5$       | Resonance donation (weak)   | Weak                      |
 
 **Why ortho/para?** The resonance structures of the arenium ion intermediate show that ortho and
 para attack place the positive charge on the carbon bearing the electron-donating group, which can
@@ -249,13 +251,13 @@ stabilise the arenium ion through resonance. Meta attack does not allow this sta
 These groups withdraw electron density from the ring, deactivating it toward electrophilic
 substitution and directing the electrophile to the meta (3-, 5-) position.
 
-| Group                                   | Mechanism                                | Relative deactivating power |
-| --------------------------------------- | ---------------------------------------- | --------------------------- |
-| $-\mathrm{NO}_2$                        | Resonance withdrawal (strong)            | Very strong                 |
-| $-\mathrm{CN}$                          | Resonance withdrawal                     | Strong                      |
+| Group                                     | Mechanism                                | Relative deactivating power |
+| ----------------------------------------- | ---------------------------------------- | --------------------------- |
+| $-\mathrm{NO}_2$                          | Resonance withdrawal (strong)            | Very strong                 |
+| $-\mathrm{CN}$                            | Resonance withdrawal                     | Strong                      |
 | $-\mathrm{COOH}$, $-\mathrm{COR}$         | Resonance withdrawal                     | Strong                      |
-| $-\mathrm{SO}_3\mathrm{H}$              | Resonance withdrawal                     | Strong                      |
-| $-\mathrm{CF}_3$                        | Inductive withdrawal                     | Moderate                    |
+| $-\mathrm{SO}_3\mathrm{H}$                | Resonance withdrawal                     | Strong                      |
+| $-\mathrm{CF}_3$                          | Inductive withdrawal                     | Moderate                    |
 | Halogens ($-\mathrm{Cl}$, $-\mathrm{Br}$) | Inductive withdrawal, resonance donation | Weak deactivation           |
 
 **Why meta?** The resonance structures of the arenium ion for ortho or para attack place the

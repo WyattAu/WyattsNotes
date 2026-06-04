@@ -1,6 +1,8 @@
 ---
 title: Work, Energy, and Power
-description: 'Qualifications Physics Work, Energy, and Power notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'Qualifications Physics Work, Energy, and Power notes covering key definitions, core concepts,
+  worked examples, and practice questions for structured revision.'
 date: 2026-04-14
 tags:
   - ap

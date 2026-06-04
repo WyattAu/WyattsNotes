@@ -577,9 +577,9 @@ $$
 I = 0.50\mathrm{ A}
 $$
 
-The p.d. Across each resistor: $V_1 = 2.0\mathrm{ V}$, $V_2 = 3.0\mathrm{ V}$ $V_3 = 1.0\mathrm{ V}$.
-These sum to $6\mathrm{ V}$Which equals the net emf of $12 - 6 = 6\mathrm{ V}$Confirming energy
-conservation.
+The p.d. Across each resistor: $V_1 = 2.0\mathrm{ V}$, $V_2 = 3.0\mathrm{ V}$
+$V_3 = 1.0\mathrm{ V}$. These sum to $6\mathrm{ V}$Which equals the net emf of
+$12 - 6 = 6\mathrm{ V}$Confirming energy conservation.
 
 </details>
 
@@ -1392,8 +1392,8 @@ $$\eta = \frac{R}{R + r} = \frac{7.0}{7.0 + 3.0} = 70\%$$
 
 ### Problem 8
 
-In a Wheatstone bridge, $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$And $R_3 = 50\,\Omega$. Find the Value
-of the unknown resistance $R_4$ for which the galvanometer reads zero. If $R_4$ is instead
+In a Wheatstone bridge, $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$And $R_3 = 50\,\Omega$. Find the
+Value of the unknown resistance $R_4$ for which the galvanometer reads zero. If $R_4$ is instead
 $120\,\Omega$In which direction does current flow through the galvanometer?
 
 <details>

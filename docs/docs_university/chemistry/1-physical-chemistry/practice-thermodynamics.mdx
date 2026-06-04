@@ -1,0 +1,152 @@
+---
+title: 'Thermodynamics -- Practice Problems'
+description:
+  'University Thermodynamics -- Practice Problems with MCQ questions covering laws of
+  thermodynamics, entropy, free energy, phase equilibria, and electrochemistry for self-assessment
+  and revision.'
+slug: practice-thermodynamics
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Thermodynamics -- Practice Problems
+
+10 MCQ questions covering the laws of thermodynamics, entropy, Gibbs free energy, chemical
+equilibrium, phase diagrams, and electrochemistry. Select an option to check your answer.
+
+---
+
+## Laws of Thermodynamics and Entropy
+
+<PracticeProblem
+  question="For an ideal gas undergoing reversible isothermal expansion from volume $V_i$ to $V_f$, the work done by the gas is:"
+  options={[
+    '$w = -nRT\\ln(V_f/V_i)$',
+    '$w = -P\\Delta V$',
+    '$w = -nRT\\Delta T$',
+    '$w = -nC_V\\Delta T$',
+  ]}
+  correctAnswer={0}
+  explanation"For a reversible expansion of an ideal gas: $w = -\\int_{V_i}^{V_f} P\\,dV = -\\int_{V_i}^{V_f} \\frac{nRT}{V}dV = -nRT\\ln\\frac{V_f}{V_i}$. The negative sign indicates work done by the system. For $V_f > V_i$, $w < 0$ (work is done by the gas). Since the process is isothermal and the gas is ideal, $\\Delta U = 0$, so $q = -w = nRT\\ln(V_f/V_i)$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The entropy change for a reversible process is defined as $\\Delta S = q_{\\text{rev}}/T$. For an irreversible process, how is $\\Delta S$ calculated?"
+  options={[
+    'Design a reversible path between the same initial and final states and calculate $\\Delta S = \\int dq_{\\text{rev}}/T$ along that path',
+    '$\\Delta S = q_{\\text{irrev}}/T$',
+    '$\\Delta S = 0$ for all irreversible processes',
+    '$\\Delta S$ cannot be calculated for irreversible processes',
+  ]}
+  correctAnswer={0}
+  explanation"Entropy is a state function, so $\\Delta S$ depends only on initial and final states, not on the path. For an irreversible process, we design a reversible path connecting the same states and compute $\\Delta S = \\int dq_{\\text{rev}}/T$. We cannot use $q_{\\text{irrev}}/T$ because the inequality $dS > dq_{\\text{irrev}}/T$ holds."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For the reaction $\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$ at equilibrium with $K_p = 50.0$, if the initial partial pressures of $\\text{H}_2$ and $\\text{I}_2$ are both 0.10$ bar and no HI is present, what is the equilibrium partial pressure of HI?"
+  options={[
+    '0.155 bar',
+    '0.100 bar',
+    '0.200 bar',
+    '0.050 bar',
+  ]}
+  correctAnswer={0}
+  explanation"$K_p = \\frac{(p_{\\text{HI}})^2}{p_{\\text{H}_2} \\cdot p_{\\text{I}_2}} = 50.0$. Let $x$ = amount of HI formed. Then $p_{\\text{H}_2} = p_{\\text{I}_2} = 0.10 - x/2$ and $p_{\\text{HI}} = x$. So $\\frac{x^2}{(0.10-x/2)^2} = 50.0$, giving $\\frac{x}{0.10-x/2} = \\sqrt{50} \\approx 7.07$, so $x = 0.707(0.10-x/2) = 0.0707 - 0.354x$, thus $1.354x = 0.0707$, $x \\approx 0.0522$ bar. But let me re-check: $x/(0.10 - 0.5x) = 7.07$, $x = 0.707 - 3.535x$, $4.535x = 0.707$, $x = 0.156$ bar."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="The relationship between the equilibrium constant $K$ and the standard Gibbs free energy change is:"
+  options={[
+    '$\\Delta_r G^\\circ = -RT\\ln K$',
+    '$\\Delta_r G^\\circ = RT\\ln K$',
+    '$\\Delta_r G = -RT\\ln K$',
+    '$\\Delta_r G^\\circ = -nRT\\ln K$',
+  ]}
+  correctAnswer={0}
+  explanation"The fundamental relationship is $\\Delta_r G^\\circ = -RT\\ln K$ where $K$ is the dimensionless thermodynamic equilibrium constant. A large $K$ ($K \\gg 1$) means $\\Delta_r G^\\circ \\ll 0$ (products strongly favored). At equilibrium, $\\Delta_r G = 0$. For non-standard conditions: $\\Delta_r G = \\Delta_r G^\\circ + RT\\ln Q$ where $Q$ is the reaction quotient."
+  difficulty="easy"
+/>
+
+## Phase Equilibria and Electrochemistry
+
+<PracticeProblem
+  question="According to the Clausius-Clapeyron equation, the relationship between vapour pressure and temperature for a pure substance is:"
+  options={[
+    '$\\ln\\frac{P_2}{P_1} = -\\frac{\\Delta H_{\\text{vap}}}{R}\\left(\\frac{1}{T_2} - \\frac{1}{T_1}\\right)$',
+    '$\\ln P = \\Delta H_{\\text{vap}} \\cdot T + C$',
+    '$P_2/P_1 = T_2/T_1$',
+    '$\\ln P = -\\Delta S_{\\text{vap}}/R$',
+  ]}
+  correctAnswer={0}
+  explanation"The Clausius-Clapeyron equation (assuming $\\Delta H_{\\text{vap}}$ is constant) relates vapour pressures at two temperatures: $\\ln(P_2/P_1) = -\\frac{\\Delta H_{\\text{vap}}}{R}(1/T_2 - 1/T_1)$. This can be used to estimate $\\Delta H_{\\text{vap}}$ from vapour pressure data at different temperatures, or to extrapolate vapour pressure to a new temperature."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In a binary liquid mixture exhibiting positive deviation from Raoult's law, which of the following is true?"
+  options={[
+    'The A-B interactions are weaker than the average A-A and B-B interactions; the mixture has a minimum in the boiling point diagram',
+    'The A-B interactions are stronger than average; the mixture has a maximum boiling point',
+    'Raoult\'s law is obeyed exactly at all compositions',
+    'The mixture cannot form an azeotrope',
+  ]}
+  correctAnswer={0}
+  explanation"Positive deviation: $P_{\\text{total}} > x_A P_A^* + x_B P_B^*$ (Raoult's law prediction). This occurs when A-B interactions are weaker than A-A and B-B, making it easier for molecules to escape the liquid. The boiling point diagram shows a minimum (minimum-boiling azeotrope). Example: ethanol-water. Negative deviation (stronger A-B) gives maximum-boiling azeotropes."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For an electrochemical cell $\\text{Zn}\\,|\\,\\text{Zn}^{2+}\\,\\|\\,\\text{Cu}^{2+}\\,|\\,\\text{Cu}$, the standard cell potential $E^\\circ_{\\text{cell}}$ is related to $\\Delta_r G^\\circ$ by:"
+  options={[
+    '$\\Delta_r G^\\circ = -nFE^\\circ_{\\text{cell}}$ where $n$ is the number of moles of electrons transferred',
+    '$\\Delta_r G^\\circ = -nRT E^\\circ_{\\text{cell}}$',
+    '$\\Delta_r G^\\circ = nFE^\\circ_{\\text{cell}}$',
+    '$\\Delta_r G^\\circ = -RT\\ln E^\\circ_{\\text{cell}}$',
+  ]}
+  correctAnswer={0}
+  explanation"The relationship between Gibbs free energy and cell potential is $\\Delta_r G^\\circ = -nFE^\\circ_{\\text{cell}}$ where $n$ is moles of electrons transferred and $F = 96485$ C/mol is Faraday's constant. A positive $E^\\circ_{\\text{cell}}$ means $\\Delta_r G^\\circ < 0$ (spontaneous). The Nernst equation extends this to non-standard conditions: $E = E^\\circ - (RT/nF)\\ln Q$."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="The Gibbs phase rule states that $F = C - P + 2$. For a one-component system (C=1) at its triple point, how many degrees of freedom are there?"
+  options={[
+    '$F = 0$ (invariant point); temperature and pressure are fixed',
+    '$F = 1$ (temperature or pressure can vary)',
+    '$F = 2$ (both can vary independently)',
+    '$F = 3$',
+  ]}
+  correctAnswer={0}
+  explanation"At the triple point, three phases coexist ($P = 3$) for a single component ($C = 1$): $F = 1 - 3 + 2 = 0$. This means the triple point is invariant: both temperature and pressure are uniquely determined (for water: 273.16 K, 611 Pa). Along a phase boundary (two phases), $F = 1$ (univariant). In a single-phase region, $F = 2$."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For an ideal solution, the chemical potential of component $i$ is $\\mu_i = \\mu_i^\\circ + RT\\ln x_i$. What is the Gibbs free energy of mixing for an ideal binary solution of $n_A$ moles of A and $n_B$ moles of B?"
+  options={[
+    '$\\Delta_{\\text{mix}} G = nRT(x_A \\ln x_A + x_B \\ln x_B)$, which is always negative (spontaneous)',
+    '$\\Delta_{\\text{mix}} G = 0$ for ideal solutions',
+    '$\\Delta_{\\text{mix}} G = nRT(x_A + x_B)$',
+    '$\\Delta_{\\text{mix}} G$ is positive (non-spontaneous)',
+  ]}
+  correctAnswer={0}
+  explanation"For an ideal binary solution: $\\Delta_{\\text{mix}} G = nRT(x_A \\ln x_A + x_B \\ln x_B)$. Since $x_i < 1$, $\\ln x_i < 0$, so $\\Delta_{\\text{mix}} G < 0$ (spontaneous mixing). The entropy of mixing is $\\Delta_{\\text{mix}} S = -nR(x_A \\ln x_A + x_B \\ln x_B) > 0$. The enthalpy of mixing is zero ($\\Delta_{\\text{mix}} H = 0$), which defines an ideal solution."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="The van't Hoff equation describes how the equilibrium constant changes with temperature: $\\frac{d\\ln K}{dT} = \\frac{\\Delta H^\\circ}{RT^2}$. For an exothermic reaction ($\\Delta H^\\circ < 0$), increasing temperature will:"
+  options={[
+    'Decrease $K$, shifting the equilibrium toward reactants',
+    'Increase $K$, shifting the equilibrium toward products',
+    'Have no effect on $K$',
+    'Invert the sign of $\\Delta G^\\circ$',
+  ]}
+  correctAnswer={0}
+  explanation"For $\\Delta H^\\circ < 0$, $d\\ln K/dT < 0$, so $K$ decreases with increasing temperature. By Le Chatelier's principle, increasing temperature favors the endothermic direction (which absorbs the added heat). For an exothermic reaction, that means shifting toward reactants. The van't Hoff equation, integrated: $\\ln(K_2/K_1) = -\\frac{\\Delta H^\\circ}{R}(1/T_2 - 1/T_1)$."
+  difficulty="hard"
+/>

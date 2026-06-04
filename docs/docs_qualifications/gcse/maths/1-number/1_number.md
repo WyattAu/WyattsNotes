@@ -1,6 +1,8 @@
 ---
 title: Number
-description: 'GCSE Maths Number notes covering key definitions, core concepts, worked examples, and practice questions for effective study and examination practice.'
+description:
+  'GCSE Maths Number notes covering key definitions, core concepts, worked examples, and practice
+  questions for effective study and examination practice.'
 date: 2026-04-14
 tags:
   - gcse
@@ -714,7 +716,8 @@ Since $k + 1$ is an integer, this is a multiple of 8. $\blacksquare$
 
 5. $a = 6.3$ and $b = 2.7$Both correct to 1 decimal place. Find the lower bound of $\frac{a}{b}$.
 
-6. $y$ is directly proportional to the cube of $x$. When $x = 2$, $y = 40$. Find $x$ when $y = 1080$.
+6. $y$ is directly proportional to the cube of $x$. When $x = 2$, $y = 40$. Find $x$ when
+   $y = 1080$.
 
 7. Simplify $\frac{12x^5 y^{-2}}{3x^{-1} y^4} \times (xy^3)^2$.
 

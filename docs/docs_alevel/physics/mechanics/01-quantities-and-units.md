@@ -1,6 +1,8 @@
 ---
 title: Quantities and Units
-description: 'A-Level Physics Quantities and Units notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'A-Level Physics Quantities and Units notes covering key definitions, core concepts, worked
+  examples, and practice questions for exam preparation.'
 date: 2025-06-02T16:25:28.480Z
 tags:
   - Physics
@@ -353,8 +355,8 @@ The density of a cylinder is $\rho = \frac◆LB◆m◆RB◆◆LB◆\pi r^2 h◆R
 **Answer.** $\rho = \frac◆LB◆150.0◆RB◆◆LB◆\pi(1.20)^2(5.00)◆RB◆ = \frac{150.0}{22.62} = 6.63$ g
 cm$^{-3}$.
 
-Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$, $\frac{2(0.05)}{1.20} = 0.0833$ (power Rule),
-$\frac{0.02}{5.00} = 0.004$.
+Fractional uncertainties: $\frac{0.5}{150.0} = 0.0033$, $\frac{2(0.05)}{1.20} = 0.0833$ (power
+Rule), $\frac{0.02}{5.00} = 0.004$.
 
 Total fractional uncertainty: $0.0033 + 0.0833 + 0.004 = 0.0907$.
 $\Delta\rho = 6.63 \times 0.0907 = 0.60$ g cm$^{-3}$. Result: $\rho = 6.6 \pm 0.6$ g cm$^{-3}$.

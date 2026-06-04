@@ -1,6 +1,8 @@
 ---
 title: Advanced Genetics
-description: 'A-Level Biology Advanced Genetics notes covering key definitions, core concepts, worked examples, and practice questions for focused preparation.'
+description:
+  'A-Level Biology Advanced Genetics notes covering key definitions, core concepts, worked examples,
+  and practice questions for focused preparation.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -691,8 +693,8 @@ $$\text{Expected DCO frequency} = \text{RF}_{AB} \times \text{RF}_{BC}$$
 
 $$\text{Interference} = 1 - \text{Coincidence}$$
 
-**Worked Example.** Three genes ($A$, $B$, $C$) are mapped.
-$\text{RF}_{AB} = 15\%$, $\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
+**Worked Example.** Three genes ($A$, $B$, $C$) are mapped. $\text{RF}_{AB} = 15\%$,
+$\text{RF}_{BC} = 10\%$. Observed DCO frequency $= 0.5\%$.
 
 Expected DCO $= 0.15 \times 0.10 = 0.015 = 1.5\%$.
 

@@ -1083,7 +1083,9 @@ each school argues but why it argues it -- and what evidence supports or undermi
   conclusion -- what evidence did they prioritise? What evidence did they dismiss? How does their
   perspective challenge or complement other interpretations?
 
-## :::
+##
+
+:::
 
 ## Exam Preparation: Key Essay Questions
 

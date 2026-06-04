@@ -1,6 +1,8 @@
 ---
 title: Quadratics
-description: 'DSE Maths Quadratics notes covering key definitions, core concepts, worked examples, and practice questions for thorough exam preparation and revision.'
+description:
+  'DSE Maths Quadratics notes covering key definitions, core concepts, worked examples, and practice
+  questions for thorough exam preparation and revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - DSE
@@ -614,7 +616,8 @@ For quadratic problems in DSE Paper 1, examiners expect:
 ### Significant Figures
 
 Unless the question states otherwise, give final answers to 3 significant figures. Exact forms
-(e.g., $\sqrt{3}$, $\dfrac{5}{2}$) are preferred and should not be converted to decimals unless asked.
+(e.g., $\sqrt{3}$, $\dfrac{5}{2}$) are preferred and should not be converted to decimals unless
+asked.
 
 ### Common DSE Question Types
 

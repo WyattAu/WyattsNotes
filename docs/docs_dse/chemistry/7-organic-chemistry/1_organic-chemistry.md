@@ -1,6 +1,8 @@
 ---
 title: Organic Chemistry
-description: 'DSE Organic Chemistry notes covering key definitions, core concepts, worked examples, and practice questions for effective learning and effective revision.'
+description:
+  'DSE Organic Chemistry notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective learning and effective revision.'
 date: 2026-04-07T00:00:00.000Z
 tags:
   - DSE
@@ -972,23 +974,23 @@ A systematic approach to identifying functional groups:
 
 Key interconversions between functional groups:
 
-| From              | To                         | Reagent / Conditions                                                        |
-| ----------------- | -------------------------- | --------------------------------------------------------------------------- |
-| Alkene            | Alkane                     | $\mathrm{H}_2$ / Ni catalyst                                                |
-| Alkene            | Haloalkane                 | $\mathrm{HX}$ (e.g., HBr)                                                   |
+| From              | To                         | Reagent / Conditions                                                          |
+| ----------------- | -------------------------- | ----------------------------------------------------------------------------- |
+| Alkene            | Alkane                     | $\mathrm{H}_2$ / Ni catalyst                                                  |
+| Alkene            | Haloalkane                 | $\mathrm{HX}$ (e.g., HBr)                                                     |
 | Alkene            | Alcohol                    | $\mathrm{H}_2\mathrm{O}$ / $\mathrm{H}_3\mathrm{PO}_4$, $300^\circ\mathrm{C}$ |
-| Alkene            | Diol                       | Cold, dilute, alkaline $\mathrm{KMnO}_4$                                    |
-| Alkene            | Halogenoalkane (dihalide)  | $\mathrm{Br}_2$ or $\mathrm{Cl}_2$                                          |
-| Haloalkane        | Alcohol                    | NaOH (aq), heat                                                             |
-| Haloalkane        | Amine                      | Excess concentrated $\mathrm{NH}_3$ (alcoholic), heat                       |
-| Alcohol           | Aldehyde                   | Mild oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Distil)              |
-| Alcohol           | Carboxylic acid            | Strong oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Reflux)            |
-| Alcohol           | Ester                      | Carboxylic acid + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                     |
-| Carboxylic acid   | Ester                      | Alcohol + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                             |
-| Carboxylic acid   | Salt                       | Base (e.g., NaOH, $\mathrm{Na}_2\mathrm{CO}_3$)                             |
-| Ester             | Carboxylic acid + alcohol  | Acid hydrolysis (dilute $\mathrm{H}_2\mathrm{SO}_4$Heat)                    |
-| Ester             | Carboxylate salt + alcohol | Alkaline hydrolysis (NaOH, heat)                                            |
-| Aldehyde / Ketone | Cyanohydrin                | HCN (trace NaOH catalyst)                                                   |
+| Alkene            | Diol                       | Cold, dilute, alkaline $\mathrm{KMnO}_4$                                      |
+| Alkene            | Halogenoalkane (dihalide)  | $\mathrm{Br}_2$ or $\mathrm{Cl}_2$                                            |
+| Haloalkane        | Alcohol                    | NaOH (aq), heat                                                               |
+| Haloalkane        | Amine                      | Excess concentrated $\mathrm{NH}_3$ (alcoholic), heat                         |
+| Alcohol           | Aldehyde                   | Mild oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Distil)                |
+| Alcohol           | Carboxylic acid            | Strong oxidation ($\mathrm{K}_2\mathrm{Cr}_2\mathrm{O}_7$Reflux)              |
+| Alcohol           | Ester                      | Carboxylic acid + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                       |
+| Carboxylic acid   | Ester                      | Alcohol + conc. $\mathrm{H}_2\mathrm{SO}_4$Heat                               |
+| Carboxylic acid   | Salt                       | Base (e.g., NaOH, $\mathrm{Na}_2\mathrm{CO}_3$)                               |
+| Ester             | Carboxylic acid + alcohol  | Acid hydrolysis (dilute $\mathrm{H}_2\mathrm{SO}_4$Heat)                      |
+| Ester             | Carboxylate salt + alcohol | Alkaline hydrolysis (NaOH, heat)                                              |
+| Aldehyde / Ketone | Cyanohydrin                | HCN (trace NaOH catalyst)                                                     |
 
 ---
 
@@ -1919,7 +1921,6 @@ $$\mathrm{Percentage\ yield} = \frac{4.8}{6.90} \times 100\% = 69.6\%$$
 </details>
 
 ## Common Pitfalls
-
 
 1. Confusing structural isomers with stereoisomers — structural isomers have different bonding
    arrangements; stereoisomers have the same connectivity.

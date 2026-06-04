@@ -1,6 +1,8 @@
 ---
 title: Electricity
-description: 'Scottish Highers Physics Electricity notes covering key definitions, core concepts, worked examples, and practice questions for structured preparation.'
+description:
+  'Scottish Highers Physics Electricity notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured preparation.'
 date: 2026-04-14
 tags:
   - highers
@@ -325,8 +327,8 @@ In parallel)
 6. Three resistors of $4 \Omega$, $6 \Omega$And $12 \Omega$ are connected to a $12 \mathrm{ V$
    battery. Find the total resistance and current if (a) all are in series, (b) all are in parallel.
 
-7. A lamp rated $60 \mathrm{ W$, $240 \mathrm{ V$ is connected to a $200 \mathrm{ V$ supply. Calculate
-   the actual power dissipated, assuming the resistance of the lamp is constant.
+7. A lamp rated $60 \mathrm{ W$, $240 \mathrm{ V$ is connected to a $200 \mathrm{ V$ supply.
+   Calculate the actual power dissipated, assuming the resistance of the lamp is constant.
 
 8. A $470 \mu\mathrm{F$ capacitor stores $0.5 \mathrm{ J$ of energy. Find the voltage across it and
    the charge stored.
@@ -458,7 +460,8 @@ Check: $8.25 + 3.75 = 12 \mathrm{ V$. Correct.
 Design a circuit that turns on a fan when the temperature exceeds $30^{\circ}\mathrm{C$. Use a
 $9 \mathrm{ V$ supply, a $10 \mathrm{ k\Omega$ fixed resistor, and an NTC thermistor with the
 Following characteristics: $R = 20 \mathrm{ k\Omega$ at $20^{\circ}\mathrm{C$
-$R = 10 \mathrm{ k\Omega$ at $30^{\circ}\mathrm{C$, $R = 5 \mathrm{ k\Omega$ at $40^{\circ}\mathrm{C$.
+$R = 10 \mathrm{ k\Omega$ at $30^{\circ}\mathrm{C$, $R = 5 \mathrm{ k\Omega$ at
+$40^{\circ}\mathrm{C$.
 
 Place the thermistor as $R_2$ (top of the divider). The output voltage across the thermistor is:
 
@@ -475,16 +478,16 @@ $4.5 \mathrm{ V$ would switch on the fan when the temperature exceeds $30^{\circ
 
 ## 15. Summary Table: Key Electricity Formulas
 
-| Topic               | Formula                                          | Variables                  | Notes                         |
-| ------------------- | ------------------------------------------------ | -------------------------- | ----------------------------- |
-| Current             | $I = Q/t$                                        | $Q$, $t$                     | $I = nAve$ for drift velocity |
+| Topic               | Formula                                          | Variables                      | Notes                         |
+| ------------------- | ------------------------------------------------ | ------------------------------ | ----------------------------- |
+| Current             | $I = Q/t$                                        | $Q$, $t$                       | $I = nAve$ for drift velocity |
 | Ohm's law           | $V = IR$                                         | $V$, $I$, $R$                  | Only for ohmic conductors     |
 | Resistivity         | $R = \rho L / A$                                 | $\rho$, $L$, $A$               | $\rho$ depends on temperature |
 | Power               | $P = IV = I^2R = V^2/R$                          | $V$, $I$, $R$                  | Three equivalent forms        |
 | Internal resistance | $V = \varepsilon - Ir$                           | $\varepsilon$, $I$, $r$        | Terminal PD                   |
-| Capacitance         | $C = Q/V$                                        | $Q$, $V$                     | Unit: farad                   |
-| Capacitor energy    | $E = \frac{1}{2}CV^2$                            | $C$, $V$                     | Three equivalent forms        |
-| RC time constant    | $\tau = RC$                                      | $R$, $C$                     | 63.2% charge in one $\tau$    |
+| Capacitance         | $C = Q/V$                                        | $Q$, $V$                       | Unit: farad                   |
+| Capacitor energy    | $E = \frac{1}{2}CV^2$                            | $C$, $V$                       | Three equivalent forms        |
+| RC time constant    | $\tau = RC$                                      | $R$, $C$                       | 63.2% charge in one $\tau$    |
 | Potential divider   | $V_{\mathrm{out} = V_{\mathrm{in} R_2/(R_1+R_2)$ | $V_{\mathrm{in}$, $R_1$, $R_2$ | For sensing circuits          |
 
 ## 16. Practice Questions (Additional)
@@ -802,8 +805,8 @@ The speed of light.
     each, and the energy lost.
 
 28. An AC circuit has a $60 \Omega$ resistor and a $0.1 \mathrm{ H$ inductor in series with a
-    $230 \mathrm{ V$, $50 \mathrm{ Hz$ supply. Calculate the reactance of the inductor, the impedance,
-    the current, the power factor, and the phase angle.
+    $230 \mathrm{ V$, $50 \mathrm{ Hz$ supply. Calculate the reactance of the inductor, the
+    impedance, the current, the power factor, and the phase angle.
 
 29. A potential divider circuit uses a $10 \mathrm{ k\Omega$ variable resistor and an LDR. In
     darkness the LDR has resistance $1 \mathrm{ M\Omega$ and in bright light $500 \Omega$. The

@@ -1,6 +1,8 @@
 ---
 title: Energy and Work (Extended)
-description: 'A-Level Maths Energy and Work (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for analytical revision.'
+description:
+  'A-Level Maths Energy and Work (Extended) notes covering key definitions, core concepts, worked
+  examples, and practice questions for analytical revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
@@ -200,10 +202,10 @@ $$v = \sqrt{2gh} = \sqrt◆LB◆2 \times 9.8 \times 0.351◆RB◆ = \sqrt{6.88} 
 
 ### 5.3 Worked example: roller coaster
 
-**Problem.** A roller coaster car of mass $500\;\mathrm{kg}$ starts from rest at point
-$A$, $30\;\mathrm{m}$ Above the ground. It descends to point $B$ at ground level, then rises to point
-$C$ at $20\;\mathrm{m}$ Above ground. The average frictional force is $200\;\mathrm{N}$ and the
-total track length from $A$ To $C$ is $300\;\mathrm{m}$. Find the speed at $C$.
+**Problem.** A roller coaster car of mass $500\;\mathrm{kg}$ starts from rest at point $A$,
+$30\;\mathrm{m}$ Above the ground. It descends to point $B$ at ground level, then rises to point $C$
+at $20\;\mathrm{m}$ Above ground. The average frictional force is $200\;\mathrm{N}$ and the total
+track length from $A$ To $C$ is $300\;\mathrm{m}$. Find the speed at $C$.
 
 $$\mathrm{GPE}_A + \mathrm{KE}_A = \mathrm{GPE}_C + \mathrm{KE}_C + W_{\mathrm{friction}}$$
 

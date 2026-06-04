@@ -1,6 +1,8 @@
 ---
 title: Polar Coordinates
-description: 'A-Level Further Maths Polar Coordinates notes covering key definitions, core concepts, worked examples, and practice questions for comprehensive revision.'
+description:
+  'A-Level Further Maths Polar Coordinates notes covering key definitions, core concepts, worked
+  examples, and practice questions for comprehensive revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -933,8 +935,8 @@ $y = r(\theta)\sin\theta$.
 
 | Quantity             | Formula                                                                                           |
 | -------------------- | ------------------------------------------------------------------------------------------------- |
-| Cartesian from polar | $x = r\cos\theta$, $y = r\sin\theta$                                                                |
-| Polar from Cartesian | $r = \sqrt{x^2+y^2}$, $\theta = \arctan(y/x)$                                                       |
+| Cartesian from polar | $x = r\cos\theta$, $y = r\sin\theta$                                                              |
+| Polar from Cartesian | $r = \sqrt{x^2+y^2}$, $\theta = \arctan(y/x)$                                                     |
 | Polar area           | $A = \dfrac{1}{2}\displaystyle\int_\alpha^\beta r^2\,d\theta$                                     |
 | Polar arc length     | $s = \displaystyle\int_\alpha^\beta \sqrt◆LB◆r^2+\left(\dfrac{dr}{d\theta}\right)^2◆RB◆\,d\theta$ |
 | Tangent-radius angle | $\tan\psi = \dfrac◆LB◆r◆RB◆◆LB◆dr/d\theta◆RB◆$                                                    |

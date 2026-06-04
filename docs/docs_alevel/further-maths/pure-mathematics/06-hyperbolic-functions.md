@@ -1,6 +1,8 @@
 ---
 title: Hyperbolic Functions
-description: 'A-Level Further Maths Hyperbolic Functions notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'A-Level Further Maths Hyperbolic Functions notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured revision.'
 date: 2026-04-02T00:00:00.000Z
 tags:
   - FurtherMaths
@@ -55,8 +57,9 @@ $$\boxed{\tanh x = \frac◆LB◆\sinh x◆RB◆◆LB◆\cosh x◆RB◆ = \frac{e
 
 $$\mathrm{sech}\,x = \frac◆LB◆1◆RB◆◆LB◆\cosh x◆RB◆, \qquad \mathrm{cosech}\,x = \frac◆LB◆1◆RB◆◆LB◆\sinh x◆RB◆, \qquad \coth\,x = \frac◆LB◆\cosh x◆RB◆◆LB◆\sinh x◆RB◆$$
 
-:::warning Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals Use
-$\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$. :::
+:::warning Note the spelling: $\cosh$, $\sinh$, $\tanh$ are standard abbreviations. The reciprocals
+Use $\mathrm{sech}$ (not $\mathrm{sec h}$), $\mathrm{cosech}$ (not $\mathrm{csch}$), and $\coth$.
+:::
 
 ### 1.3 Domain and range
 
@@ -982,12 +985,12 @@ $\cos(ix) = \cosh x$ and $\sin(ix) = i\sinh x$. See
 | $\operatorname{arcosh}\, x$ | $\ln(x+\sqrt{x^2-1})$                            | $\dfrac◆LB◆1◆RB◆◆LB◆\sqrt{x^2-1}◆RB◆$ | —                  |
 | $\operatorname{artanh}\, x$ | $\dfrac{1}{2}\ln\!\left(\dfrac{1+x}{1-x}\right)$ | $\dfrac{1}{1-x^2}$                    | —                  |
 
-| Identity            | Formula                                                              |
-| ------------------- | -------------------------------------------------------------------- |
-| Fundamental         | $\cosh^2 x - \sinh^2 x = 1$                                          |
+| Identity            | Formula                                                                |
+| ------------------- | ---------------------------------------------------------------------- |
+| Fundamental         | $\cosh^2 x - \sinh^2 x = 1$                                            |
 | Osborn's rule       | Replace $\cos^2 \to \cosh^2$, $\sin^2 \to -\sinh^2$ in trig identities |
-| Double angle (cosh) | $\cosh 2x = 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$                         |
-| Double angle (sinh) | $\sinh 2x = 2\sinh x\cosh x$                                         |
+| Double angle (cosh) | $\cosh 2x = 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$                           |
+| Double angle (sinh) | $\sinh 2x = 2\sinh x\cosh x$                                           |
 
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: Statistical Distributions (Extended)
-description: 'A-Level Maths Statistical Distributions (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'A-Level Maths Statistical Distributions (Extended) notes covering key definitions, core concepts,
+  worked examples, and practice questions for focused revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
@@ -308,8 +310,8 @@ Sixes is between 8 and 14 inclusive.
 <details>
 <summary>Solution</summary>
 
-$X \sim B(60, 1/6)$.
-$\mu = 10$, $\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
+$X \sim B(60, 1/6)$. $\mu = 10$,
+$\sigma^2 = 60 \times \dfrac{1}{6} \times \dfrac{5}{6} = \dfrac{25}{3} \approx 8.333$.
 
 $\sigma \approx 2.887$.
 

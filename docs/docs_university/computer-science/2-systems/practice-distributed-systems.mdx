@@ -1,0 +1,151 @@
+---
+title: 'Distributed Systems -- Practice Problems'
+description:
+  'University Distributed Systems -- Practice Problems with MCQ questions covering CAP theorem,
+  consensus algorithms, replication, fault tolerance, and distributed transactions.'
+slug: practice-distributed-systems
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Distributed Systems -- Practice Problems
+
+10 MCQ questions covering the CAP theorem, consistency models, Paxos/Raft consensus, replication
+strategies, fault tolerance, and logical clocks. Select an option to check your answer.
+
+---
+
+## CAP Theorem and Consistency Models
+
+<PracticeProblem
+  question="According to the CAP theorem, during a network partition, a distributed system must choose between:"
+  options={[
+    'Consistency and Availability (it can guarantee at most one)',
+    'Partition tolerance and Performance',
+    'Durability and Availability',
+    'Consistency and Durability',
+  ]}
+  correctAnswer={0}
+  explanation"The CAP theorem states that a distributed system can guarantee at most two of Consistency, Availability, and Partition tolerance. Since partitions are inevitable in practice, the real choice during a partition is between C (reject requests to stay consistent) and A (accept writes and return stale data). This is extended by PACELC."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the key difference between linearizability and sequential consistency?"
+  options={[
+    'Linearizability requires operations to appear in real-time order; sequential consistency only requires program order per process',
+    'Sequential consistency is stronger than linearizability',
+    'Both are identical in terms of guarantees',
+    'Linearizability allows operations to be reordered but sequential consistency does not',
+  ]}
+  correctAnswer={0}
+  explanation"Linearizability (strong consistency) requires that every operation appears to execute atomically at a single point in real time. If $o_1$ completes before $o_2$ starts, $o_1$ must appear before $o_2$. Sequential consistency preserves program order within each process and provides a total order, but operations can appear at non-real times."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In causal consistency, which operations must be seen in the same order by all processes?"
+  options={[
+    'Only causally related operations; concurrent operations may appear in different orders',
+    'All operations must appear in the same total order',
+    'No ordering guarantees are provided',
+    'Only write operations must be ordered',
+  ]}
+  correctAnswer={0}
+  explanation"Causal consistency ensures that if operation $a$ causally precedes operation $b$ (e.g., $a$ is a read and $b$ is a write that depends on $a$'s value), then all processes see $a$ before $b$. Operations that are not causally related (concurrent) can be seen in different orders by different processes. This offers lower latency than linearizability."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In leaderless replication with quorum reads and writes, the condition $W + R > N$ guarantees:"
+  options={[
+    'At least one node has both the latest write and is consulted during the read',
+    'All replicas are always consistent',
+    'No data is ever lost during partitions',
+    'The system achieves linearizability',
+  ]}
+  correctAnswer={0}
+  explanation"With $N$ total replicas, $W$ write replicas, and $R$ read replicas, the condition $W + R > N$ ensures the read set and write set overlap by at least one node. That overlapping node has the latest data, so the read sees the most recent write. This prevents reading stale data. Setting $W = \\lceil N/2 \\rceil$ and $R = \\lceil N/2 \\rceil$ gives a balanced configuration."
+  difficulty="hard"
+/>
+
+## Consensus, Replication, and Fault Tolerance
+
+<PracticeProblem
+  question="In the Raft consensus algorithm, what mechanism prevents split votes during leader election?"
+  options={[
+    'Randomized election timeouts (typically 150-300ms)',
+    'Fixed election timeouts for all nodes',
+    'The leader pre-assigns votes to followers',
+    'A designated vice-leader always wins ties',
+  ]}
+  correctAnswer={0}
+  explanation"In Raft, if multiple followers start elections simultaneously, they could split the vote and no candidate achieves majority. Randomized election timeouts (drawn from 150-300ms) make it unlikely that multiple candidates start at exactly the same time, ensuring one candidate typically wins. This is a practical solution to FLP impossibility (which assumes deterministic algorithms)."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="A system that tolerates $f$ Byzantine (arbitrary) failures requires a minimum of how many total replicas?"
+  options={[
+    '$n \\geq 3f + 1$',
+    '$n \\geq 2f + 1$',
+    '$n \\geq f + 1$',
+    '$n \\geq 4f + 1$',
+  ]}
+  correctAnswer={0}
+  explanation"For crash failures, $n \\geq 2f + 1$ suffices (majority of honest nodes). For Byzantine failures where faulty nodes can send conflicting messages, $n \\geq 3f + 1$ is required. With $n = 3f + 1$, at most $2f + 1$ responses are from honest nodes, and at least $f + 1$ honest responses agree, outvoting the $f$ Byzantine nodes."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In the Paxos consensus protocol, Phase 1 (Prepare/Promise) ensures that:"
+  options={[
+    'The proposer learns the highest-numbered previously accepted value (if any) and no higher proposal can supersede it',
+    'The value is immediately committed',
+    'All acceptors agree on the value without further communication',
+    'The proposer is elected as the permanent leader',
+  ]}
+  correctAnswer={0}
+  explanation"In Paxos Phase 1, the proposer sends PREPARE($n$) to a majority. Acceptors promise not to accept proposals numbered less than $n$ and reply with any previously accepted value and its number. If any promise includes a value, the proposer must use that value (not its own) in Phase 2, ensuring that at most one value can be chosen for each proposal number."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="The Two-Phase Commit (2PC) protocol for distributed transactions has a critical flaw. What is it?"
+  options={[
+    'It is a blocking protocol: if the coordinator crashes, participants remain blocked holding locks',
+    'It cannot guarantee atomicity across partitions',
+    'It requires more than two phases for correctness',
+    'It only works with a single participant',
+  ]}
+  correctAnswer={0}
+  explanation"In 2PC, participants vote in Phase 1 and wait for the coordinator's decision in Phase 2. If the coordinator crashes after Phase 1 (participants have voted COMMIT and are holding locks) but before sending the decision, participants are blocked indefinitely. 3PC adds a pre-commit phase to avoid blocking under synchrony assumptions, and the Saga pattern avoids distributed locks entirely."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Vector clocks solve a limitation of Lamport logical clocks. Specifically, vector clocks can detect:"
+  options={[
+    'Concurrent events (events that are not causally related)',
+    'The exact physical time at which events occurred',
+    'Network partitions between processes',
+    'The order of all events in a distributed system',
+  ]}
+  correctAnswer={0}
+  explanation"Lamport clocks satisfy: if $a \\to b$ (happens-before), then $C(a) < C(b)$. However, $C(a) < C(b)$ does NOT imply $a \\to b$. Vector clocks extend this: $V(a) \\leq V(b)$ (component-wise) iff $a \\to b$. If neither $V(a) \\leq V(b)$ nor $V(b) \\leq V(a)$, the events are concurrent. Space is $O(n)$ per event where $n$ is the number of processes."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Consistent hashing places both nodes and keys on a hash ring (0 to $2^{128}$). When a node is added or removed, what fraction of keys must be moved?"
+  options={[
+    '$O(1/N)$ of keys, where $N$ is the total number of nodes',
+    'All keys must be reassigned',
+    '$O(\\log N)$ of keys',
+    'Half of all keys',
+  ]}
+  correctAnswer={0}
+  explanation"In consistent hashing, each key is assigned to the nearest node clockwise on the ring. Adding or removing a node only affects keys whose nearest clockwise node changes, which is approximately $1/N$ of all keys (each node owns roughly $1/N$ of the ring). Virtual nodes (multiple points per physical node) improve balance further."
+  difficulty="hard"
+/>

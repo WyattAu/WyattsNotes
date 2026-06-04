@@ -696,7 +696,9 @@ lower total Revenue. :::
   shifts supply RIGHT (downward), decreasing price and increasing quantity. The burden of a tax is
   shared between consumers and producers depending on the price elasticity of demand and supply.
 
-## :::
+##
+
+:::
 
 ## National Income Accounting
 

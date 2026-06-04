@@ -1,6 +1,8 @@
 ---
 title: Modern Texts and Poetry
-description: 'GCSE English Modern Texts and Poetry notes covering key definitions, core concepts, worked examples, and practice questions for thorough preparation.'
+description:
+  'GCSE English Modern Texts and Poetry notes covering key definitions, core concepts, worked
+  examples, and practice questions for thorough preparation.'
 date: 2026-04-22
 tags:
   - gcse

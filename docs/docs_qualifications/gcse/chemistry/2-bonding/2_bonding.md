@@ -1,6 +1,8 @@
 ---
 title: Bonding
-description: 'GCSE Chemistry Bonding notes covering key definitions, core concepts, worked examples, and practice questions for solid revision and examination preparation.'
+description:
+  'GCSE Chemistry Bonding notes covering key definitions, core concepts, worked examples, and
+  practice questions for solid revision and examination preparation.'
 date: 2026-04-14
 tags:
   - gcse

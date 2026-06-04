@@ -1,6 +1,8 @@
 ---
 title: Compare-and-Swap (CAS) Loops
-description: 'C++ Programming Compare-and-Swap (CAS) Loops notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'C++ Programming Compare-and-Swap (CAS) Loops notes covering key definitions, core concepts,
+  worked examples, and practice questions for effective revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp

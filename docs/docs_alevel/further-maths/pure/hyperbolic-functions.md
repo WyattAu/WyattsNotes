@@ -1,6 +1,8 @@
 ---
 title: Hyperbolic Functions (Extended)
-description: 'A-Level Further Maths Hyperbolic Functions (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for clear revision.'
+description:
+  'A-Level Further Maths Hyperbolic Functions (Extended) notes covering key definitions, core
+  concepts, worked examples, and practice questions for clear revision.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]
@@ -816,8 +818,8 @@ So $\ln 3 - \ln 2 = \operatorname{artanh}(1/5)$.
    $\displaystyle\int\frac{dx}{a^2 - x^2} = \frac{1}{2a}\ln\!\left|\frac{a+x}{a-x}\right|$ is valid
    for all $|x| \neq a$But $\dfrac{1}{a}\operatorname{artanh}(x/a)$ is only valid for $|x| < a$. For
    $|x| > a$Use the logarithmic form or $\operatorname{arcoth}$.
-3. **No absolute value needed for $\cosh$:** Unlike $|\cos x|$, $\sqrt◆LB◆\cosh^2 x◆RB◆ = \cosh x$ (no
-   absolute value needed) since $\cosh x \geq 1 > 0$ for all real $x$.
+3. **No absolute value needed for $\cosh$:** Unlike $|\cos x|$, $\sqrt◆LB◆\cosh^2 x◆RB◆ = \cosh x$
+   (no absolute value needed) since $\cosh x \geq 1 > 0$ for all real $x$.
 4. **Differential equation solutions:** The equation $y'' - y = 0$ has solutions in both exponential
    and hyperbolic forms. When boundary conditions involve $y(0)$ and $y'(0)$The hyperbolic form
    $y = A\cosh x + B\sinh x$ is often more convenient since $\cosh 0 = 1$ and $\sinh 0 = 0$. :::

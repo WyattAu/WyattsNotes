@@ -1,6 +1,8 @@
 ---
 title: Statistics
-description: 'GCSE Maths Statistics notes covering key definitions, core concepts, worked examples, and practice questions for complete study and examination practice.'
+description:
+  'GCSE Maths Statistics notes covering key definitions, core concepts, worked examples, and
+  practice questions for complete study and examination practice.'
 date: 2026-04-14
 tags:
   - gcse

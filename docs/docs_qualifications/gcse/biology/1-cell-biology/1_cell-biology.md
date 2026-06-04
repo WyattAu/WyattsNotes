@@ -1,6 +1,8 @@
 ---
 title: Cell Biology
-description: 'GCSE Cell Biology notes covering key definitions, core concepts, worked examples, and practice questions for methodical study and thorough revision.'
+description:
+  'GCSE Cell Biology notes covering key definitions, core concepts, worked examples, and practice
+  questions for methodical study and thorough revision.'
 date: 2026-04-14
 tags:
   - gcse

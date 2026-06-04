@@ -1,7 +1,9 @@
 ---
 id: dse-chemistry-atomic-structure-and-bonding
 title: Chemistry - Atomic Structure and Bonding
-description: 'DSE Chemistry - Atomic Structure and Bonding notes covering key definitions, core concepts, worked examples, and practice questions for thorough revision.'
+description:
+  'DSE Chemistry - Atomic Structure and Bonding notes covering key definitions, core concepts,
+  worked examples, and practice questions for thorough revision.'
 slug: chemistry-atomic-structure-and-bonding
 ---
 
@@ -1349,7 +1351,6 @@ These factors combine to give helium the highest first ionisation energy of all 
 </details>
 
 ## Common Pitfalls
-
 
 1. Drawing structural formulae incorrectly — check the number of bonds each atom can form and the
    overall charge.

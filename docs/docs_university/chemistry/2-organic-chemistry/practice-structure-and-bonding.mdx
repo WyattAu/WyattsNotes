@@ -1,0 +1,151 @@
+---
+title: 'Structure and Bonding -- Practice Problems'
+description:
+  'University Structure and Bonding -- Practice Problems with MCQ questions covering hybridization,
+  resonance, stereochemistry, conformational analysis, and aromaticity.'
+slug: practice-structure-and-bonding
+hide_table_of_contents: true
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+# Structure and Bonding -- Practice Problems
+
+10 MCQ questions covering hybridization, resonance, stereochemistry (R/S, E/Z), conformational
+analysis, and aromaticity. Select an option to check your answer and view the explanation.
+
+---
+
+## Hybridization and Resonance
+
+<PracticeProblem
+  question="The C=C double bond in ethylene involves $sp^2$ hybridization. What is the bond angle around each carbon and how many sigma and pi bonds does each carbon form?"
+  options={[
+    '120 degree bond angle; each carbon forms 3 sigma bonds (2 C-H and 1 C-C) and 1 pi bond (from unhybridized $p_z$ orbitals)',
+    '109.5 degree angle; each carbon forms 4 sigma bonds and 0 pi bonds',
+    '180 degree angle; each carbon forms 2 sigma bonds and 2 pi bonds',
+    '90 degree angle; each carbon forms 4 sigma bonds and 1 pi bond',
+  ]}
+  correctAnswer={0}
+  explanation"$sp^2$ hybridization: one $s$ + two $p$ orbitals form three hybrid orbitals in a trigonal planar arrangement (120 degrees). Each carbon forms 3 $\\sigma$ bonds (2 C-H + 1 C-C) using $sp^2$ hybrids and 1 $\\pi$ bond from the unhybridized $p_z$ orbitals overlapping sideways. The $\\pi$ bond is weaker than the $\\sigma$ bond and restricts rotation."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which of the following correctly describes the relationship between $s$ character and bond properties?"
+  options={[
+    'More $s$ character gives shorter, stronger bonds with larger bond angles (sp: 180 degree, 50% $s$ > sp2: 120 degree, 33% $s$ > sp3: 109.5 degree, 25% $s$)',
+    'More $s$ character gives longer, weaker bonds',
+    '$s$ character has no effect on bond length or strength',
+    'More $s$ character reduces bond angle and bond strength',
+  ]}
+  correctAnswer={0}
+  explanation"$s$ orbitals are closer to the nucleus (lower energy) than $p$ orbitals. More $s$ character in a hybrid orbital means the bond is pulled closer to the nucleus: shorter, stronger, with larger bond angles. sp (50% $s$): 180 degrees, strongest; $sp^2$ (33.3% $s$): 120 degrees; $sp^3$ (25% $s$): 109.5 degrees, weakest. The acidity of C-H bonds also increases with $s$ character."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For the carbonate anion $\\text{CO}_3^{2-}$, the three C-O bonds are experimentally identical in length (intermediate between single and double bonds). This is explained by:"
+  options={[
+    'Resonance: three equivalent contributing structures with the double bond delocalized across all three C-O positions',
+    'Rapid equilibrium between three isomers',
+    'All three C-O bonds are genuine double bonds',
+    'The carbonate ion has no pi bonding',
+  ]}
+  correctAnswer={0}
+  explanation"Resonance in $\\text{CO}_3^{2-}$: the $\\pi$ bond between C and one O in each contributing structure is delocalized over all three C-O positions. The actual structure is a resonance hybrid with partial double-bond character (bond order 4/3) on each C-O bond. None of the individual contributing structures alone represents the true molecule."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which molecule is aromatic according to Huckel's rule ($4n+2$ pi electrons in a planar, cyclic, conjugated system)?"
+  options={[
+    'Benzene (6 pi electrons, $n=1$)',
+    'Cyclobutadiene (4 pi electrons, $n=1$ for antiaromaticity)',
+    'Cyclooctatetraene (8 pi electrons, non-planar)',
+    '1,3,5,7-cyclooctatetraene in its planar form',
+  ]}
+  correctAnswer={0}
+  explanation"Huckel's rule: a planar, cyclic, fully conjugated system with $4n+2$ pi electrons ($n = 0, 1, 2, \\ldots$) is aromatic. Benzene: 6 pi electrons ($4(1)+2$), planar, cyclic, conjugated -- aromatic, exceptionally stable. Cyclobutadiene: 4 pi electrons ($4(1)$) -- antiaromatic, highly unstable. Cyclooctatetraene adopts a tub conformation to avoid antiaromaticity."
+  difficulty="easy"
+/>
+
+## Stereochemistry and Conformational Analysis
+
+<PracticeProblem
+  question="The Cahn-Ingold-Prelog (CIP) priority rules assign R/S configuration to chiral centers. What is the first rule for determining priority?"
+  options={[
+    'Higher atomic number of the atom directly attached to the chiral center gets higher priority',
+    'Higher molecular weight of the substituent gets higher priority',
+    'The substituent with more carbon atoms gets higher priority',
+    'Alphabetical order of the substituent name',
+  ]}
+  correctAnswer={0}
+  explanation"CIP priority rules: (1) Atoms directly attached to the chiral center: higher atomic number = higher priority (I > Br > Cl > F > O > N > C > H). (2) If tied, look at the next atoms outward (by atomic number, one at a time). (3) Double/triple bonds are treated as duplicates of the attached atom. After assigning priorities, view from the lowest-priority side; clockwise = R, anticlockwise = S."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="In the Newman projection of butane, the anti conformation has the two methyl groups at 180 degrees. What is the relative energy order of butane conformations?"
+  options={[
+    'Anti ($\\sim 0$ kJ/mol) < gauche ($\\sim 0.9$ kJ/mol, two equivalent) < eclipsed ($\\sim 12$ kJ/mol)',
+    'Gauche < anti < eclipsed',
+    'All conformations have the same energy',
+    'Anti < eclipsed < gauche',
+  ]}
+  correctAnswer={0}
+  explanation"The anti conformation (methyls 180 degrees apart) is most stable due to minimal steric repulsion and favorable staggered arrangement. Gauche (methyls 60 degrees apart) has steric repulsion (~0.9 kJ/mol above anti). Eclipsed (methyls 0 degrees apart) has maximum steric and torsional strain (~12 kJ/mol above anti). The energy barrier between anti and eclipsed is ~12-15 kJ/mol."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="For cyclohexane, which conformation is more stable and by how much?"
+  options={[
+    'Chair conformation is more stable by about 23 kJ/mol (no angle strain and minimal torsional strain)',
+    'Boat conformation is more stable due to reduced steric strain',
+    'Both are equally stable',
+    'Chair is only marginally more stable by about 1 kJ/mol',
+  ]}
+  correctAnswer={0}
+  explanation"The chair conformation of cyclohexane has bond angles close to tetrahedral (no angle strain) and all C-H bonds are staggered (minimal torsional strain). The boat has flagpole interactions (1,3-diaxial repulsion) and eclipsed bonds. Energy difference: ~23 kJ/mol. At room temperature, cyclohexane rapidly interconverts between two chair conformations via boat/twist-boat transition states."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In the chair conformation of methylcyclohexane, the methyl group preferentially occupies the equatorial position. The energy difference between axial and equatorial is approximately:"
+  options={[
+    '$\\sim 7.3$ kJ/mol (1,3-diaxial interactions between the axial methyl and two axial hydrogens)',
+    '$\\sim 0.5$ kJ/mol',
+    '$\\sim 23$ kJ/mol',
+    '$\\sim 15$ kJ/mol',
+  ]}
+  correctAnswer={0}
+  explanation"An axial methyl group on cyclohexane experiences two 1,3-diaxial gauche interactions with axial hydrogens at C-3 and C-5 positions, each costing ~3.6 kJ/mol, totaling ~7.3 kJ/mol. At room temperature (~94% equatorial), the equilibrium heavily favours the equatorial conformer. With a larger substituent (e.g., tert-butyl), the preference for equatorial is even stronger."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="Furan is a five-membered aromatic heterocycle with oxygen. How many pi electrons does it contribute to aromaticity?"
+  options={[
+    '6 pi electrons (4 from two C=C double bonds + 2 from the oxygen lone pair in the $p$ orbital)',
+    '4 pi electrons (from the two C=C bonds only)',
+    '8 pi electrons (including all oxygen lone pairs)',
+    '5 pi electrons (one from each atom in the ring)',
+  ]}
+  correctAnswer={0}
+  explanation"Furan satisfies Huckel's rule with 6 pi electrons. The oxygen contributes one lone pair to the pi system (in the $p$ orbital parallel to the ring), while the other lone pair is in the $sp^2$ plane (perpendicular). Total: 4 from two C=C bonds + 2 from oxygen = 6 pi electrons ($4n+2$ with $n=1$). Thiophene, pyrrole, and pyridine are other aromatic heterocycles with similar lone pair involvement."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="The E/Z nomenclature for alkene stereochemistry is based on the Cahn-Ingold-Prelog priority of substituents on each double-bond carbon. For 2-bromo-2-butene ($\\text{CH}_3-\\text{CH}=\\text{CBr}-\\text{CH}_3$), which isomer has the two higher-priority groups on the same side?"
+  options={[
+    'Z isomer: Br (higher priority than CH$_3$) and CH$_3$ (higher priority than H) are on the same side',
+    'E isomer: Br and CH$_3$ are on the same side',
+    'Neither isomer can be designated E or Z',
+    'The molecule does not exhibit stereoisomerism',
+  ]}
+  correctAnswer={0}
+  explanation"On the left C: H and CH$_3$; priority CH$_3$ > H. On the right C: Br and CH$_3$; priority Br > CH$_3$. If Br and CH$_3$ are on the same side = Z. If on opposite sides = E. Note: the Z/E system is more reliable than cis/trans for cases with four different substituents or when cis/trans is ambiguous."
+  difficulty="medium"
+/>

@@ -1,6 +1,8 @@
 ---
 title: Correlation and Regression (Extended)
-description: 'A-Level Maths Correlation and Regression (Extended) notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'A-Level Maths Correlation and Regression (Extended) notes covering key definitions, core
+  concepts, worked examples, and practice questions for exam preparation.'
 date: 2026-04-23T00:00:00.000Z
 tags: [Mathematics, ALevel]
 categories: [Mathematics]

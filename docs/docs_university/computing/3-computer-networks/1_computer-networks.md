@@ -1,6 +1,8 @@
 ---
 title: Computer Networks
-description: 'University Computing Computer Networks notes covering key definitions, core concepts, worked examples, and practice questions for structured revision.'
+description:
+  'University Computing Computer Networks notes covering key definitions, core concepts, worked
+  examples, and practice questions for structured revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Computing
@@ -575,13 +577,13 @@ Does not. $\blacksquare$
 
 **Switch forwarding methods.** A layer-2 switch can forward frames using two strategies:
 
-| Aspect             | Store-and-Forward                | Cut-Through                        |
-| ------------------ | -------------------------------- | ---------------------------------- |
-| Operation          | Receives entire frame first      | Reads destination MAC only         |
+| Aspect             | Store-and-Forward                 | Cut-Through                         |
+| ------------------ | --------------------------------- | ----------------------------------- |
+| Operation          | Receives entire frame first       | Reads destination MAC only          |
 | Latency            | $L/R + d_{\mathrm{prop}}$ per hop | $L_h/R + d_{\mathrm{prop}}$ per hop |
-| Error detection    | Can check FCS before forward     | Cannot check FCS                   |
-| Memory requirement | Must buffer full frame           | Only needs header buffer           |
-| Use case           | General-purpose switching        | Low-latency environments           |
+| Error detection    | Can check FCS before forward      | Cannot check FCS                    |
+| Memory requirement | Must buffer full frame            | Only needs header buffer            |
+| Use case           | General-purpose switching         | Low-latency environments            |
 
 Where $L$ is the full frame length, $L_h$ is the header length (14 bytes for Ethernet), $R$ is the
 Link rate, and $d_{\mathrm{prop}}$ is the propagation delay.
@@ -1182,8 +1184,8 @@ $$\mathrm{RTT_d} = (1 - \beta)\,\mathrm{RTT_d} + \beta\,|\mathrm{RTT_m} - \mathr
 
 $$\mathrm{RTO} = \mathrm{RTT_s} + 4 \cdot \mathrm{RTT_d}$$
 
-Where $\mathrm{RTT_m}$ = measured RTT, $\alpha = 1/8$, $\beta = 1/4$. Initial RTO = 1 s; minimum RTO =
-200 ms.
+Where $\mathrm{RTT_m}$ = measured RTT, $\alpha = 1/8$, $\beta = 1/4$. Initial RTO = 1 s; minimum RTO
+= 200 ms.
 
 :::caution Common Pitfall Karn's algorithm: do not update RTT estimates for retransmitted segments.
 The ACK could correspond To either the original or the retransmission (retransmission ambiguity).
@@ -1192,13 +1194,14 @@ The ACK could correspond To either the original or the retransmission (retransmi
 <details>
 <summary>Worked Example: RTT Estimation</summary>
 
-Given: $\alpha = 1/8$, $\beta = 1/4$Initial $\mathrm{RTT_s} = 0$, $\mathrm{RTT_d} = 0$. Measured RTTs: 220
-ms, 240 ms, 230 ms, 260 ms, 250 ms.
+Given: $\alpha = 1/8$, $\beta = 1/4$Initial $\mathrm{RTT_s} = 0$, $\mathrm{RTT_d} = 0$. Measured
+RTTs: 220 ms, 240 ms, 230 ms, 260 ms, 250 ms.
 
 **After measurement 1 (220 ms):**
 
 $\mathrm{RTT_s} = (7/8)(0) + (1/8)(220) = 27.5$ ms
-$\mathrm{RTT_d} = (3/4)(0) + (1/4)|220 - 27.5| = 48.125$ ms $\mathrm{RTO} = 27.5 + 4(48.125) = 220$ ms
+$\mathrm{RTT_d} = (3/4)(0) + (1/4)|220 - 27.5| = 48.125$ ms $\mathrm{RTO} = 27.5 + 4(48.125) = 220$
+ms
 
 **After measurement 2 (240 ms):**
 
@@ -1522,8 +1525,8 @@ Channel without prior shared key.
 3. Bob picks secret $b$Sends $B = g^b \bmod p$.
 4. Shared secret: $s = B^a \bmod p = g^{ab} \bmod p = A^b \bmod p$.
 
-An eavesdropper who sees $g$, $p$, $A$, $B$ cannot compute $g^{ab}$ without solving the discrete Logarithm
-problem.
+An eavesdropper who sees $g$, $p$, $A$, $B$ cannot compute $g^{ab}$ without solving the discrete
+Logarithm problem.
 
 **Digital signatures.** The sender signs a message hash with their private key. Anyone can verify
 Using the sender's public key. Provides authentication, integrity, and non-repudiation.
@@ -1681,8 +1684,8 @@ Rate limiting, connection throttling.
    error-free data rate. If 64 signal levels are used with a Nyquist-based scheme, is the channel
    being used within its theoretical limit?
 
-3. **Nyquist vs Shannon.** A channel has $H = 3000$ Hz and $\mathrm{SNR} = 31$ (about 15 dB). What is
-   the maximum number of signal levels $V$ that can be used reliably?
+3. **Nyquist vs Shannon.** A channel has $H = 3000$ Hz and $\mathrm{SNR} = 31$ (about 15 dB). What
+   is the maximum number of signal levels $V$ that can be used reliably?
 
 4. **Hamming code.** Encode the data bits $d_1 d_2 d_3 d_4 = 0110$ using Hamming(7,4). If bit 5 of
    the transmitted codeword is flipped, show how the receiver detects and corrects the error.
@@ -1735,8 +1738,8 @@ Rate limiting, connection throttling.
     `cwnd` through: slow start for 3 RTTs, then 2 RTTs of congestion avoidance, then a timeout. What
     is the value of `ssthresh` after the timeout?
 
-16. **RTT estimation.** Using $\alpha = 1/8$, $\beta = 1/4$And measured RTTs of 100 ms, 120 ms, 80 ms,
-    compute $\mathrm{RTT_s}$, $\mathrm{RTT_d}$And RTO after each measurement (starting from
+16. **RTT estimation.** Using $\alpha = 1/8$, $\beta = 1/4$And measured RTTs of 100 ms, 120 ms, 80
+    ms, compute $\mathrm{RTT_s}$, $\mathrm{RTT_d}$And RTO after each measurement (starting from
     $\mathrm{RTT_s} = \mathrm{RTT_d} = 0$).
 
 17. **DNS resolution.** A client at `192.168.1.100` wants to resolve `www.example.com`. Describe the
@@ -1764,9 +1767,9 @@ _Hint:_ Total data = 630 KB = 5.04 Mb. Transmission time = 5.04 / 10 = 0.504 s.
     (a) allows external HTTP/HTTPS to the web server, (b) allows external SMTP to the mail server,
     (c) allows internal users to access any external service, (d) blocks all other inbound traffic.
 
-20. **RSA encryption.** Given primes $p = 5$, $q = 11$And public exponent $e = 3$: (a) Compute
-    $n$, $\phi(n)$And the private key $d$. (b) Encrypt the message $m = 7$. (c) Decrypt the ciphertext
-    to verify.
+20. **RSA encryption.** Given primes $p = 5$, $q = 11$And public exponent $e = 3$: (a) Compute $n$,
+    $\phi(n)$And the private key $d$. (b) Encrypt the message $m = 7$. (c) Decrypt the ciphertext to
+    verify.
 
 21. **TCP throughput bound.** A TCP connection over a satellite link has RTT = 600 ms and bandwidth
     = 50 Mbps. The receiver advertises `rwnd` = 1 MB. If `cwnd` grows to 2 MB during slow start,

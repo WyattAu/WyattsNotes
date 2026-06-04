@@ -70,7 +70,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
           cache: pnpm
@@ -146,7 +146,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
           cache: pnpm
@@ -171,7 +171,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
           cache: pnpm
@@ -230,7 +230,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
           cache: pnpm
@@ -259,7 +259,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
           cache: pnpm
@@ -288,7 +288,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
           cache: pnpm
@@ -303,7 +303,7 @@ jobs:
         run: pnpm test:e2e
 
       - name: Upload Playwright report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@5076954047c2b9966f1f79bf275986b3e2cb5c02
         if: always()
         with:
           name: playwright-report
@@ -328,7 +328,7 @@ jobs:
         uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
         with:
           node-version: 22
           cache: pnpm

@@ -1,6 +1,8 @@
 ---
 title: Respiration (In Depth)
-description: 'A-Level Biology Respiration (In Depth) notes covering key definitions, core concepts, worked examples, and practice questions for focused revision.'
+description:
+  'A-Level Biology Respiration (In Depth) notes covering key definitions, core concepts, worked
+  examples, and practice questions for focused revision.'
 date: 2026-04-18T00:00:00.000Z
 tags:
   - Biology
@@ -391,7 +393,7 @@ production causes dough to rise).
 | Location                | Cytoplasm and mitochondria          | Cytoplasm only                                        |
 | Final electron acceptor | Oxygen                              | Pyruvate (in animals) / ethanal (in yeast)            |
 | ATP yield per glucose   | $\approx$ 30--32 ATP                | 2 ATP                                                 |
-| Products                | $\mathrm{CO_2}$, $\mathrm{H_2O}$      | Lactate (animals) / ethanol + $\mathrm{CO_2}$ (yeast) |
+| Products                | $\mathrm{CO_2}$, $\mathrm{H_2O}$    | Lactate (animals) / ethanol + $\mathrm{CO_2}$ (yeast) |
 | Rate                    | Slower (more steps, more efficient) | Faster (fewer steps, less efficient)                  |
 
 ## 7. Respiratory Substrates
@@ -1563,8 +1565,8 @@ Location: mitochondrial matrix.
 | ---- | ------------------------------------------------------ | ------------------------------------------------ |
 | 1    | Acetyl CoA (2C) + oxaloacetate (4C) $\to$ citrate (6C) | CoA released                                     |
 | 2    | Citrate $\to$ isocitrate (6C)                          | (isomerisation)                                  |
-| 3    | Isocitrate $\to$ $\alpha$-ketoglutarate (5C)           | $\mathrm{NADH}$, $\mathrm{CO_2}$                   |
-| 4    | $\alpha$-Ketoglutarate (5C) $\to$ succinyl CoA (4C)    | $\mathrm{NADH}$, $\mathrm{CO_2}$CoA                |
+| 3    | Isocitrate $\to$ $\alpha$-ketoglutarate (5C)           | $\mathrm{NADH}$, $\mathrm{CO_2}$                 |
+| 4    | $\alpha$-Ketoglutarate (5C) $\to$ succinyl CoA (4C)    | $\mathrm{NADH}$, $\mathrm{CO_2}$CoA              |
 | 5    | Succinyl CoA $\to$ succinate (4C)                      | ATP (or GTP) via substrate-level phosphorylation |
 | 6    | Succinate $\to$ fumarate (4C)                          | $\mathrm{FADH_2}$                                |
 | 7    | Fumarate $\to$ malate (4C)                             | $\mathrm{H_2O}$ added                            |

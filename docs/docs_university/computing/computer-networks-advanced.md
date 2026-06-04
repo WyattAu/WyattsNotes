@@ -1,6 +1,8 @@
 ---
 title: Computer Networks (Advanced)
-description: 'University Computing Computer Networks (Advanced) notes covering key definitions, core concepts, worked examples, and practice questions for exam preparation.'
+description:
+  'University Computing Computer Networks (Advanced) notes covering key definitions, core concepts,
+  worked examples, and practice questions for exam preparation.'
 date: 2026-05-06T00:00:00.000Z
 tags:
   - Computing
@@ -1145,8 +1147,8 @@ Utilisation: $\rho = 10 / (4 \times 3) = 10/12 = 0.833$.
 
 Using the Erlang C formula:
 
-Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum} factor$... This is complex
-to compute by hand. Let me use the simplified formula.
+Numerator: $(4 \times 0.833)^3 / (3! \times (1 - 0.833)) \times \text{sum} factor$... This is
+complex to compute by hand. Let me use the simplified formula.
 
 $a = \lambda / \mu = 10/3 = 3.333$.
 
@@ -1241,8 +1243,8 @@ $\text{MSS} = 1460$ bytes $= 11680$ bits. $\text{RTT} = 80$ ms $= 0.08$ s. $p = 
 
 $$\text{Throughput} \approx \frac{1.22 \times 11680}{0.08 \times \sqrt{0.001}} = \frac{14249.6}{0.08 \times 0.03162} = \frac{14249.6}{0.002530} \approx 5\,632\,727 \text{ bits/s} \approx 5.63 \text{ Mbps}$$
 
-The BDP is $\text{BW} \times \text{RTT} = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits $\approx 54.9$
-KB. The receive window must be at least this for full utilisation.
+The BDP is $\text{BW} \times \text{RTT} = 5.63 \times 10^6 \times 0.08 = 450\,640$ bits
+$\approx 54.9$ KB. The receive window must be at least this for full utilisation.
 
 If you get this wrong, revise: Section 2.1.
 

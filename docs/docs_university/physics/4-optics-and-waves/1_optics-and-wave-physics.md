@@ -1,6 +1,8 @@
 ---
 title: Optics and Wave Physics
-description: 'University Optics and Wave Physics notes covering key definitions, core concepts, worked examples, and practice questions for complete revision.'
+description:
+  'University Optics and Wave Physics notes covering key definitions, core concepts, worked
+  examples, and practice questions for complete revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics
@@ -362,7 +364,8 @@ Radiation pressure (reflecting):
 $P_{\mathrm{rad} = 2I/c = 2(6.37 \times 10^3)/(3 \times 10^8) = 4.25 \times 10^{-5}}$ Pa.
 
 Force:
-$F = P_{\mathrm{rad} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34 \times 10^{-11}}$ N.
+$F = P_{\mathrm{rad} \cdot A = (4.25 \times 10^{-5})(7.85 \times 10^{-7}) = 3.34 \times 10^{-11}}$
+N.
 
 </details>
 
@@ -614,9 +617,9 @@ $$2nt\cos\theta_t = m\lambda \quad \mathrm{(zero\ or\ two\ phase\ shifts)}$$
 :::caution Common Pitfall Always count the number of $\pi$ phase shifts that occur upon reflection.
 A reflection from Low-to-high refractive index introduces a $\pi$ shift; high-to-low does not. For a
 soap film in Air, there is one $\pi$ shift (at the top surface). For a coating on glass
-($n_{\mathrm{coat} \lt n_{\mathrm{glass}}}$), there is also one shift. The conditions for constructive
-and destructive interference swap depending on whether the total number of shifts is odd or even.
-:::
+($n_{\mathrm{coat} \lt n_{\mathrm{glass}}}$), there is also one shift. The conditions for
+constructive and destructive interference swap depending on whether the total number of shifts is
+odd or even. :::
 
 <details>
 <summary>Worked Example: Anti-reflection coating design</summary>
@@ -1086,9 +1089,9 @@ $\theta$. :::
 <details>
 <summary>Worked Example: Quarter-wave plate design and application</summary>
 
-**Problem.** (a) Design a quarter-wave plate for $\lambda = 589$ nm using calcite
-($n_o = 1.658$, $n_e = 1.486$). (b) If linearly polarised light at $30°$ to the fast axis Enters this
-QWP, describe the output polarisation.
+**Problem.** (a) Design a quarter-wave plate for $\lambda = 589$ nm using calcite ($n_o = 1.658$,
+$n_e = 1.486$). (b) If linearly polarised light at $30°$ to the fast axis Enters this QWP, describe
+the output polarisation.
 
 **Solution.**
 
@@ -1811,10 +1814,11 @@ $\mathrm{NA} = \sqrt{1.48^2 - 1.46^2} = \sqrt{2.190 - 2.132} = \sqrt{0.0588} = 0
 $\theta_{\max} = \arcsin(0.242) = 14.0°$.
 
 **Solution 12.** (a) First minimum at
-$\sin\theta_1 = \lambda/a = 633 \times 10^{-9}/(5.0 \times 10^{-5}) = 1.266 \times 10^{-2}$, $\theta_1 = 0.726°$.
-Central maximum width on screen: $2y_1 \approx 2L\theta_1 = 2(3.0)(1.266 \times 10^{-2}) = 7.60$ cm.
-(b) Second secondary maximum near $\alpha \approx 5\pi/2 = 7.854$.
-$I/I_0 = (\sin 7.854/7.854)^2 = (1/7.854)^2 = 0.0162$About 1.6% of $I_0$.
+$\sin\theta_1 = \lambda/a = 633 \times 10^{-9}/(5.0 \times 10^{-5}) = 1.266 \times 10^{-2}$,
+$\theta_1 = 0.726°$. Central maximum width on screen:
+$2y_1 \approx 2L\theta_1 = 2(3.0)(1.266 \times 10^{-2}) = 7.60$ cm. (b) Second secondary maximum
+near $\alpha \approx 5\pi/2 = 7.854$. $I/I_0 = (\sin 7.854/7.854)^2 = (1/7.854)^2 = 0.0162$About
+1.6% of $I_0$.
 
 **Solution 16.** After the QWP: fast-axis component $E_f = E_0\cos 30° = 0.866\,E_0$Slow-axis
 component $E_s = E_0\sin 30° = 0.500\,E_0$ with a $\pi/2$ phase delay. Since $E_f \neq E_s$The
@@ -1887,8 +1891,8 @@ of width $a$ and spacing $d$.
 <details>
 <summary>Solution</summary>
 
-The transmittance of a single slit centred at $x = 0$ is $t_{\mathrm{slit}(x) = \mathrm{rect}(x/a)}$.
-The full grating is $N$ slits:
+The transmittance of a single slit centred at $x = 0$ is
+$t_{\mathrm{slit}(x) = \mathrm{rect}(x/a)}$. The full grating is $N$ slits:
 
 $$t(x) = \sum_{n=0}^{N-1} t_{\mathrm{slit}(x - nd) = t_{\mathrm{slit}(x) * \sum_{n=0}^{N-1} \delta(x - nd)}}$$
 
@@ -2471,7 +2475,7 @@ Techniques:
 | SFG                        | $\chi^{(2)}$ | $\omega_1 + \omega_2 \to \omega_3$                       |
 | Pockels effect             | $\chi^{(2)}$ | Linear electro-optic effect ($\Delta n \propto E$)       |
 | Optical Kerr effect        | $\chi^{(3)}$ | $n = n_0 + n_2 I$ (intensity-dependent refractive index) |
-| Self-focusing              | $\chi^{(3)}$ | Beam collapses when $P > P_{\text{cr}}$                   |
+| Self-focusing              | $\chi^{(3)}$ | Beam collapses when $P > P_{\text{cr}}$                  |
 | Two-photon absorption      | $\chi^{(3)}$ | Simultaneous absorption of two photons                   |
 | Stimulated Raman/Brillouin | $\chi^{(3)}$ | Inelastic scattering amplification                       |
 

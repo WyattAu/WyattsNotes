@@ -1,6 +1,8 @@
 ---
 title: Classical Mechanics
-description: 'University Physics Classical Mechanics notes covering key definitions, core concepts, worked examples, and practice questions for systematic revision.'
+description:
+  'University Physics Classical Mechanics notes covering key definitions, core concepts, worked
+  examples, and practice questions for systematic revision.'
 date: 2026-04-23T00:00:00.000Z
 tags:
   - Physics
@@ -148,7 +150,8 @@ to $\mathbf{r}_i - \mathbf{r}_j$), the internal torques cancel in pairs. Hence:
 
 $$\dot{\mathbf{L}} = \boldsymbol{\tau}^{(\mathrm{ext})}$$
 
-If $\boldsymbol{\tau}^{(\mathrm{ext})} = \mathbf{0}$Then $\mathbf{L} = \mathrm{const}$. $\blacksquare$
+If $\boldsymbol{\tau}^{(\mathrm{ext})} = \mathbf{0}$Then $\mathbf{L} = \mathrm{const}$.
+$\blacksquare$
 
 ### 1.8 The Rocket Equation
 
@@ -581,8 +584,8 @@ $$mR^2\ddot{\theta} = mR^2\omega^2\sin\theta\cos\theta - mgR\sin\theta$$
 
 $$\ddot{\theta} = \sin\theta\left(\omega^2\cos\theta - \frac{g}{R}\right)$$
 
-Equilibrium ($\ddot{\theta} = 0$, $\dot{\theta} = 0$): $\sin\theta = 0$ giving $\theta = 0$ (bottom),
-or $\cos\theta = g/(R\omega^2)$ which exists only when $\omega^2 \gt g/R$.
+Equilibrium ($\ddot{\theta} = 0$, $\dot{\theta} = 0$): $\sin\theta = 0$ giving $\theta = 0$
+(bottom), or $\cos\theta = g/(R\omega^2)$ which exists only when $\omega^2 \gt g/R$.
 
 For $\omega^2 \lt g/R$: only $\theta = 0$ is stable. For $\omega^2 \gt g/R$: the bottom becomes
 unstable and the new equilibria at $\cos\theta = g/(R\omega^2)$ are stable.
@@ -969,8 +972,8 @@ Therefore $Q = \sum_j p_j\, \delta q_j - F$ is constant. $\blacksquare$
 <details>
 <summary>Solution</summary>
 
-Consider an infinitesimal translation $x \to x + \epsilon$I.e.,
-$\delta x = 1$, $\delta y = 0$, $\delta z = 0$.
+Consider an infinitesimal translation $x \to x + \epsilon$I.e., $\delta x = 1$, $\delta y = 0$,
+$\delta z = 0$.
 
 For a free particle, $L = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2)$Which is invariant
 ($\delta L = 0$So $F = 0$).
@@ -1079,7 +1082,8 @@ The **centrifugal barrier**.
 
 $$E = \frac{1}{2}m\dot{r}^2 + V_{\mathrm{eff}(r)}$$
 
-Since $E$ and $l$ are conserved, the radial motion is completely determined by $V_{\mathrm{eff}(r)}$.
+Since $E$ and $l$ are conserved, the radial motion is completely determined by
+$V_{\mathrm{eff}(r)}$.
 
 **Circular orbits** occur at radii $r_0$ where $V_{\mathrm{eff}'(r_0) = 0}$:
 
@@ -1101,7 +1105,9 @@ So the circular orbit is always stable for the Kepler problem.
 <!-- prettier-ignore -->
 <DesmosGraph title="Effective Potential for Kepler Problem" expressions={["-k/x+l^2/(2*x^2)", "y=E"]} width={800} height={500} />
 
-The effective potential $V_{\mathrm{eff}}(r) = -k/r + l^2/(2r^2)$ (blue) combines the attractive $-1/r$ well with the centrifugal barrier $\propto 1/r^2$. Adjust sliders `k` (force constant), `l` (angular momentum), and `E` (total energy) to explore bound and unbound orbits.
+The effective potential $V_{\mathrm{eff}}(r) = -k/r + l^2/(2r^2)$ (blue) combines the attractive
+$-1/r$ well with the centrifugal barrier $\propto 1/r^2$. Adjust sliders `k` (force constant), `l`
+(angular momentum), and `E` (total energy) to explore bound and unbound orbits.
 
 ### 6.3 The Orbit Equation
 
@@ -1559,8 +1565,8 @@ The inertia tensor is:
 
 $$\mathbf{I} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & ML^2/3 & 0 \\ 0 & 0 & ML^2/3 \end{pmatrix}$$
 
-The principal moments about one end are $0$, $ML^2/3$, $ML^2/3$. By the parallel axis theorem, about the
-centre of mass they would be $0$, $ML^2/12$, $ML^2/12$.
+The principal moments about one end are $0$, $ML^2/3$, $ML^2/3$. By the parallel axis theorem, about
+the centre of mass they would be $0$, $ML^2/12$, $ML^2/12$.
 
 $\blacksquare$
 
@@ -1663,8 +1669,8 @@ $$T = ml^2\dot{\theta}_1^2 + \frac{1}{2}ml^2\dot{\theta}_2^2 + ml^2\dot{\theta}_
 
 $$V = -2mgl\cos\theta_1 - mgl\cos\theta_2$$
 
-In the small-angle limit
-($\cos(\theta_1 - \theta_2) \approx 1$, $\cos\theta_i \approx 1 - \theta_i^2/2$):
+In the small-angle limit ($\cos(\theta_1 - \theta_2) \approx 1$,
+$\cos\theta_i \approx 1 - \theta_i^2/2$):
 
 $$T \approx ml^2\dot{\theta}_1^2 + \frac{1}{2}ml^2\dot{\theta}_2^2 + ml^2\dot{\theta}_1\dot{\theta}_2$$
 
@@ -2138,8 +2144,8 @@ be a rational multiple of $\pi$.
 **Step 3: Only two possibilities.** For the orbit to be closed (not just the apsidal angle to be
 rational, but the orbit to close for all initial conditions), a deeper analysis shows only $n = -1$
 ($V \propto -1/r$Kepler) and $n = 2$ ($V \propto r^2$Harmonic oscillator) work. For $n = -1$:
-$\beta^2 = 4$, $\beta = 2$, $\Delta\phi = \pi/2$ (ellipse closes after 2 oscillations, 4 quadrants). For
-$n = 2$: $\beta^2 = 1$, $\beta = 1$, $\Delta\phi = \pi$ (ellipse closes after 1 oscillation, 2
+$\beta^2 = 4$, $\beta = 2$, $\Delta\phi = \pi/2$ (ellipse closes after 2 oscillations, 4 quadrants).
+For $n = 2$: $\beta^2 = 1$, $\beta = 1$, $\Delta\phi = \pi$ (ellipse closes after 1 oscillation, 2
 half-turns).
 
 $\blacksquare$
@@ -2242,11 +2248,11 @@ steady precession and topples.
 A **canonical transformation** from $(q, p)$ to $(Q, P)$ preserves the form of Hamilton's equations.
 It is generated by a **generating function** $F$.
 
-**Type 1** ($F_1(q, Q, t)$):
-$p = \partial F_1/\partial q$, $P = -\partial F_1/\partial Q$, $K = H + \partial F_1/\partial t$.
+**Type 1** ($F_1(q, Q, t)$): $p = \partial F_1/\partial q$, $P = -\partial F_1/\partial Q$,
+$K = H + \partial F_1/\partial t$.
 
-**Type 2** ($F_2(q, P, t)$):
-$p = \partial F_2/\partial q$, $Q = \partial F_2/\partial P$, $K = H + \partial F_2/\partial t$.
+**Type 2** ($F_2(q, P, t)$): $p = \partial F_2/\partial q$, $Q = \partial F_2/\partial P$,
+$K = H + \partial F_2/\partial t$.
 
 The transformation is canonical if and only if:
 
@@ -2431,8 +2437,8 @@ At $r = 3.2$: the solutions are $x^* = 0.5130$ and $x^* = 0.7995$Matching our nu
 <details>
 <summary>Problem 19: Euler's Equations for an Asymmetric Body</summary>
 
-A rigid body with principal moments $I_1 = 1$, $I_2 = 2$, $I_3 = 3$ (in kg$\cdot$M$^2$) rotates freely
-with initial angular velocity $\boldsymbol{\omega}(0) = (0.1, 0.5, 1.0)$ rad/s.
+A rigid body with principal moments $I_1 = 1$, $I_2 = 2$, $I_3 = 3$ (in kg$\cdot$M$^2$) rotates
+freely with initial angular velocity $\boldsymbol{\omega}(0) = (0.1, 0.5, 1.0)$ rad/s.
 
 (a) Verify that $T$ and $L^2$ are conserved by computing them at $t = 0$.
 
@@ -2496,7 +2502,8 @@ $$E = P^2/(2m), \quad S(x, P, t) = Px - \frac{P^2}{2m}t$$
 $$X = \frac{\partial S}{\partial P} = x - \frac{P}{m}t$$
 
 The new Hamiltonian $K = H + \partial S/\partial t = P^2/(2m) - P^2/(2m) = 0$. All momenta and
-energies are constant. The new coordinate evolves as $X = x_0 = \text{const}$ (the initial position).
+energies are constant. The new coordinate evolves as $X = x_0 = \text{const}$ (the initial
+position).
 
 The original coordinate: $x = X + Pt/m = x_0 + v_0 t$ (uniform motion). $\checkmark$
 

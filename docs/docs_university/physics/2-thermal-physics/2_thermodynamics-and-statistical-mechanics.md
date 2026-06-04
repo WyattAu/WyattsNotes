@@ -1,6 +1,8 @@
 ---
 title: Thermodynamics and Statistical Mechanics
-description: 'University Physics Thermodynamics and Statistical Mechanics notes covering key definitions, core concepts, worked practice questions for practical revision.'
+description:
+  'University Physics Thermodynamics and Statistical Mechanics notes covering key definitions, core
+  concepts, worked practice questions for practical revision.'
 date: 2026-04-24T00:00:00.000Z
 tags:
   - Physics
@@ -124,8 +126,8 @@ of $dT$ and $dP$ along a constant-$P$ path:
 
 $$\left(\frac{\partial S}{\partial T}\right)_P = \left(\frac{\partial S}{\partial T}\right)_V + \left(\frac{\partial S}{\partial V}\right)_T \left(\frac{\partial V}{\partial T}\right)_P$$
 
-Multiply by $T$ and use $C_V = T(\partial S/\partial T)_V$, $C_P = T(\partial S/\partial T)_P$And the
-Maxwell relation $(\partial S/\partial V)_T = (\partial P/\partial T)_V$:
+Multiply by $T$ and use $C_V = T(\partial S/\partial T)_V$, $C_P = T(\partial S/\partial T)_P$And
+the Maxwell relation $(\partial S/\partial V)_T = (\partial P/\partial T)_V$:
 
 $$C_P - C_V = T\left(\frac{\partial P}{\partial T}\right)_V \left(\frac{\partial V}{\partial T}\right)_P$$
 
@@ -293,8 +295,8 @@ This is just mechanical equilibrium: $P_A = P_B$I.e., $N_A k_B T/V_A = N_B k_B T
 
 **Proof (for $G$).** Consider a system in contact with a reservoir at $T_0, P_0$. The total entropy
 Of system plus reservoir is $S_{\mathrm{tot} = S + S_R}$. At equilibrium, $S_{\mathrm{tot}}$ is
-Maximised, so $\delta S_{\mathrm{tot} \leq 0}$ for any variation. Since $dS_R = \delta Q_R / T_0$ And
-by energy conservation $\delta Q_R = -\delta Q = -(dU + P_0\,dV)$:
+Maximised, so $\delta S_{\mathrm{tot} \leq 0}$ for any variation. Since $dS_R = \delta Q_R / T_0$
+And by energy conservation $\delta Q_R = -\delta Q = -(dU + P_0\,dV)$:
 
 $$\delta S_{\mathrm{tot} = \delta S - \frac{1}{T_0}(dU + P_0\,dV) = -\frac{1}{T_0}\delta G \leq 0}$$
 
@@ -423,8 +425,8 @@ The efficiency is:
 $$\eta = 1 - \frac{Q_c}{Q_h} = 1 - \frac{T_c}{T_h}$$
 
 **Derivation.** For the isothermal steps, $\Delta S_{\mathrm{hot} = Q_h/T_h}$ and
-$\Delta S_{\mathrm{cold} = -Q_c/T_c}$. Since entropy is a state function and the cycle returns to The
-initial state, $\Delta S_{\mathrm{total} = 0}$So $Q_h/T_h = Q_c/T_c$. $\blacksquare$
+$\Delta S_{\mathrm{cold} = -Q_c/T_c}$. Since entropy is a state function and the cycle returns to
+The initial state, $\Delta S_{\mathrm{total} = 0}$So $Q_h/T_h = Q_c/T_c$. $\blacksquare$
 
 ### 4.2 Heat Pumps and Refrigerators
 
@@ -455,9 +457,9 @@ Where $\alpha = V_{\mathrm{max}/V_{\mathrm{cutoff}}}$ is the cutoff ratio.
 <details>
 <summary>Solution: Carnot Cycle with a Monatomic Ideal Gas</summary>
 
-A Carnot engine uses $n = 2$ mol of monatomic ideal gas ($C_V = \frac{3}{2}nR$, $C_P = \frac{5}{2}nR$
-$\gamma = 5/3$). The reservoirs are at $T_h = 600$ K and $T_c = 300$ K. At state $A$ (start of
-Isothermal expansion): $P_A = 10$ atm, $V_A = 10$ L.
+A Carnot engine uses $n = 2$ mol of monatomic ideal gas ($C_V = \frac{3}{2}nR$,
+$C_P = \frac{5}{2}nR$ $\gamma = 5/3$). The reservoirs are at $T_h = 600$ K and $T_c = 300$ K. At
+state $A$ (start of Isothermal expansion): $P_A = 10$ atm, $V_A = 10$ L.
 
 **Step 1: Isothermal expansion at $T_h = 600$ K from $A$ to $B$.** Let $V_B = 20$ L.
 
@@ -472,7 +474,8 @@ $TV^{\gamma-1} = \mathrm{const}$:
 
 $$V_C = V_B \left(\frac{T_h}{T_c}\right)^{1/(\gamma-1)} = 20 \times 2^{3/2} \approx 56.6\ \mathrm{L}$$
 
-$Q_{BC} = 0$, $W_{BC} = -\Delta U = nC_V(T_h - T_c) = 2 \times \frac{3}{2} \times 8.314 \times 300 \approx 7483\ \mathrm{J}$.
+$Q_{BC} = 0$,
+$W_{BC} = -\Delta U = nC_V(T_h - T_c) = 2 \times \frac{3}{2} \times 8.314 \times 300 \approx 7483\ \mathrm{J}$.
 
 **Step 3: Isothermal compression at $T_c = 300$ K from $C$ to $D$.** From
 $TV^{\gamma-1} = \mathrm{const}$ On the adiabat $DA$:
@@ -487,10 +490,10 @@ J.
 
 **Summary:**
 
-| Quantity                              | Value  |
-| ------------------------------------- | ------ |
-| $Q_h$ (absorbed)                      | 6915 J |
-| $Q_c$ (rejected)                      | 3458 J |
+| Quantity                               | Value  |
+| -------------------------------------- | ------ |
+| $Q_h$ (absorbed)                       | 6915 J |
+| $Q_c$ (rejected)                       | 3458 J |
 | $W_{\mathrm{net} = Q_h - Q_c}$         | 3457 J |
 | $\eta = W_{\mathrm{net}/Q_h}$          | 0.500  |
 | $\eta_{\mathrm{Carnot} = 1 - T_c/T_h}$ | 0.500  |
@@ -772,8 +775,8 @@ For a rigid rotor (diatomic molecule) with moment of inertia $I$:
 
 $$z_{\mathrm{rot} = \sum_{J=0}^{\infty} (2J + 1) e^{-\beta \hbar^2 J(J+1)/(2I)}}$$
 
-At high temperature ($T \gg \Theta_{\mathrm{rot} = \hbar^2/(2Ik_B)}$), the sum can be approximated By
-an integral:
+At high temperature ($T \gg \Theta_{\mathrm{rot} = \hbar^2/(2Ik_B)}$), the sum can be approximated
+By an integral:
 
 $$z_{\mathrm{rot} \approx \frac{T}{\Theta_{\mathrm{rot}} = \frac{2Ik_B T}{\hbar^2}}}$$
 
@@ -879,8 +882,8 @@ $$\lambda_{\mathrm{mfp} = \frac{1}{\sqrt{2}\,\pi d^2 n}}$$
 
 $\blacksquare$
 
-**Numerical example.** For air at STP ($n \approx 2.7 \times 10^{25}$
-m$^{-3}$, $d \approx 3.7
+**Numerical example.** For air at STP ($n \approx 2.7 \times 10^{25}$ m$^{-3}$,
+$d \approx 3.7
 \times 10^{-10}$ m):
 
 $$\lambda_{\mathrm{mfp} = \frac{1}{\sqrt{2}\,\pi (3.7 \times 10^{-10})^2 \times 2.7 \times 10^{25}} \approx 6.8 \times 10^{-8}\ \mathrm{m} \approx 68\ \mathrm{nm}}$$
@@ -1044,9 +1047,9 @@ $$\frac{N_0}{N} = 1 - \left(\frac{T}{T_c}\right)^{3/2}$$
 
 $$N_{\mathrm{ex} = \int_0^{\infty} \frac{g(\varepsilon)\,d\varepsilon}{e^{\beta\varepsilon} - 1} = V\left(\frac{mk_B T}{2\pi\hbar^2}\right)^{3/2} \zeta(3/2)}$$
 
-This has a maximum value at $\mu = 0$. When $N \gt N_{\mathrm{ex}^{\mathrm{max}}}$The excess Particles
-must go to the ground state. Setting $N = N_{\mathrm{ex}^{\mathrm{max}}}$ at $T = T_c$ Gives the
-critical temperature above. $\blacksquare$
+This has a maximum value at $\mu = 0$. When $N \gt N_{\mathrm{ex}^{\mathrm{max}}}$The excess
+Particles must go to the ground state. Setting $N = N_{\mathrm{ex}^{\mathrm{max}}}$ at $T = T_c$
+Gives the critical temperature above. $\blacksquare$
 
 ### 10.5 Comparison of the Three Statistics
 
@@ -1528,8 +1531,8 @@ $$= \frac{V^N}{N!h^{3N}}\left(\frac{2\pi m}{\beta}\right)^{3N/2} = \frac{1}{N!}\
 
 $\blacksquare$
 
-From this, all ideal gas thermodynamics follows:
-$F = -Nk_B T[\ln(V/N\lambda^3) + 1]$, $P = Nk_B T/V$, $S = Nk_B[\ln(V/N\lambda^3) + 5/2]$.
+From this, all ideal gas thermodynamics follows: $F = -Nk_B T[\ln(V/N\lambda^3) + 1]$,
+$P = Nk_B T/V$, $S = Nk_B[\ln(V/N\lambda^3) + 5/2]$.
 
 ## 17. Problem Set
 
@@ -1983,8 +1986,8 @@ Sirius).
 <summary>Problem 20: Free energy and phase equilibrium</summary>
 
 **Problem.** The Gibbs free energy of a substance near its melting point is given by:
-$G_{\mathrm{solid} = -10000 + 30T}$ J/mol and $G_{\mathrm{liquid} = -9500 + 25T}$ J/mol (valid for $T$
-near the melting point). Find $T_m$ and $L_f$.
+$G_{\mathrm{solid} = -10000 + 30T}$ J/mol and $G_{\mathrm{liquid} = -9500 + 25T}$ J/mol (valid for
+$T$ near the melting point). Find $T_m$ and $L_f$.
 
 **Solution.** At the melting point, $G_{\mathrm{solid} = G_{\mathrm{liquid}}}$:
 
@@ -2250,10 +2253,10 @@ physics.
    wrong cross-coefficients.
 
 2. **The relaxation time approximation is not exact:** Setting
-   $(\partial f/\partial t)_{\text{coll} = -(f - f_0)/\tau}$ assumes a single relaxation time for all
-   processes. In reality, $\tau$ depends on velocity (energy), and different scattering processes
-   have different time scales. The approximation works well for order-of-magnitude estimates but
-   fails for quantitatively accurate transport predictions.
+   $(\partial f/\partial t)_{\text{coll} = -(f - f_0)/\tau}$ assumes a single relaxation time for
+   all processes. In reality, $\tau$ depends on velocity (energy), and different scattering
+   processes have different time scales. The approximation works well for order-of-magnitude
+   estimates but fails for quantitatively accurate transport predictions.
 
 3. **Effusion vs. Hydrodynamic flow:** Effusion (molecular flow through a small hole) occurs when
    the hole diameter is much smaller than the mean free path ($d \ll \ell$Knudsen number $\gg 1$).
@@ -2424,8 +2427,8 @@ The **Landau free energy** for a scalar order parameter $\phi$ near $T_c$:
 
 $$f(\phi, T) = f_0(T) + \frac{a_0}{2}(T - T_c)\phi^2 + \frac{b}{4}\phi^4$$
 
-**Mean-field exponents:** $\alpha = 0$ (jump in $C$),
-$\beta = 1/2$, $\gamma = 1$, $\delta = 3$, $\eta = 0$.
+**Mean-field exponents:** $\alpha = 0$ (jump in $C$), $\beta = 1/2$, $\gamma = 1$, $\delta = 3$,
+$\eta = 0$.
 
 These are exact above the upper critical dimension $d_u = 4$. Below $d_u$Fluctuations modify the
 exponents (as computed by the epsilon expansion).
@@ -2456,8 +2459,8 @@ After thinning out modes in the shell $\Lambda/b < |k| < \Lambda$ and rescaling:
 The RG flow for $r_0$: $\frac{dr_0}{d\ln b} = 2r_0$ (relevant operator).
 
 This means $r_0$ grows under RG, flowing away from the Gaussian fixed point ($r_0 = 0$). The fixed
-point is unstable, indicating that the disordered phase ($r_0 > 0$, $\phi = 0$ is stable) is separated
-from the ordered phase by the critical point.
+point is unstable, indicating that the disordered phase ($r_0 > 0$, $\phi = 0$ is stable) is
+separated from the ordered phase by the critical point.
 
 The correlation length exponent: $\xi \propto r_0^{-1/2}$Giving $\nu = 1/2$ (the mean-field value).
 

@@ -1,6 +1,8 @@
 ---
 title: Value Taxonomy
-description: 'C++ Programming Value Taxonomy notes covering key definitions, core concepts, worked examples, and practice questions for methodical revision.'
+description:
+  'C++ Programming Value Taxonomy notes covering key definitions, core concepts, worked examples,
+  and practice questions for methodical revision.'
 date: 2026-04-03T00:00:00.000Z
 tags:
   - Cpp
