@@ -103,7 +103,7 @@ answer and view the explanation.
 
 <PracticeProblem
   question="Dijkstra's algorithm fails to find shortest paths when the graph contains negative edge weights. Which algorithm should be used instead?"
-  options={['Bellman-Ford algorithm', "Kruskal's algorithm", 'BFS', 'A* search algorithm']}
+  options={['Bellman-Ford algorithm', "Kruskal\'s algorithm", 'BFS', 'A* search algorithm']}
   correctAnswer={0}
   explanation="The Bellman-Ford algorithm correctly handles negative edge weights (but not negative cycles reachable from the source). It relaxes all edges $|V|-1$ times, guaranteeing shortest paths if no negative cycles exist. Time complexity is $O(VE)$. Dijkstra's greedy choice fails with negative edges because a shorter path through unvisited vertices may be discovered later."
   difficulty="medium"

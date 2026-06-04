@@ -23,7 +23,7 @@ the explanation.
   question={`What is the type of the expression \`val x: String? = null; val y = x?.length ?: "default"\`?`}
   options={['String', 'Int?', 'Any', 'Int']}
   correctAnswer={0}
-  explanation="The safe call `x?.length` returns `Int?` (null if x is null). The elvis operator `?:` provides `"default"` (a String) as the fallback. Since one branch produces `Int` and the other produces `String`, the compiler resolves the common supertype as `Any`. If both sides had the same type, the result would be that type."
+  explanation={`The safe call \`x?.length\` returns \`Int?\` (null if x is null). The elvis operator \`?:\` provides \`"default"\` (a String) as the fallback. Since one branch produces \`Int\` and the other produces \`String\`, the compiler resolves the common supertype as \`Any\`. If both sides had the same type, the result would be that type.`}
   difficulty="medium"
 />
 
@@ -149,7 +149,9 @@ the explanation.
 ### Inline and Reified
 
 <PracticeProblem
-  question={`Why does this code fail to compile without `reified`?\n\`\`\`\ninline fun <T> myGenericCheck(value: Any) = value is T\n\`\`\``}
+  question={
+    'Why does this code fail to compile without `reified`?\n```\ninline fun <T> myGenericCheck(value: Any) = value is T\n```'
+  }
   options={[
     'Type parameters are erased at runtime on the JVM, so `T` cannot be checked with `is` without `reified`',
     '`is` checks are not supported for generic types in Kotlin',

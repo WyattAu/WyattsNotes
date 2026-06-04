@@ -157,6 +157,6 @@ the explanation.
   question={`In what order does the JVM initialize a class? Given:\n\`\`\`\nclass Super {\n    static { System.out.print("A"); }\n}\nclass Sub extends Super {\n    static { System.out.print("B"); }\n    public static void main(String[] args) { System.out.print("C"); }\n}\n\`\`\`\nWhat is printed when \`Sub.main()\` is invoked?`}
   options={['ABC', 'BAC', 'ACB', 'CBA']}
   correctAnswer={0}
-  explanation="When `Sub.main` is invoked, the JVM triggers class initialization for `Sub`. Before initializing `Sub`, the JVM must first ensure its superclass `Super` is initialized. Superclass static initializers run before subclass static initializers. So: Super static block prints \"A\", then Sub static block prints \"B\", then `main` executes and prints \"C\". Output: ABC."
+  explanation={`When \`Sub.main\` is invoked, the JVM triggers class initialization for \`Sub\`. Before initializing \`Sub\`, the JVM must first ensure its superclass \`Super\` is initialized. Superclass static initializers run before subclass static initializers. So: Super static block prints "A", then Sub static block prints "B", then \`main\` executes and prints "C". Output: ABC.`}
   difficulty="hard"
 />

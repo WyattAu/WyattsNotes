@@ -74,8 +74,13 @@ the explanation.
 />
 
 <PracticeProblem
-  question={`What does `&(&1 * 2)` create?`}
-  options={['An anonymous function that multiplies its argument by 2', 'A reference to a variable named &1', 'A macro that doubles values at compile time', 'A syntax error']}
+  question={'What does `&(&1 * 2)` create?'}
+  options={[
+    'An anonymous function that multiplies its argument by 2',
+    'A reference to a variable named &1',
+    'A macro that doubles values at compile time',
+    'A syntax error',
+  ]}
   correctAnswer={0}
   explanation="The & operator with positional arguments (&1, &2, etc.) creates an anonymous function shorthand. &(&1 * 2) is equivalent to fn x -> x * 2 end. &1 is the first argument, &2 would be the second, and so on."
   difficulty="medium"
@@ -133,8 +138,13 @@ the explanation.
 />
 
 <PracticeProblem
-  question={`What does `quote do: 1 + 2` return in Elixir?`}
-  options={['An AST tuple: {:+, meta, [1, 2]}', 'The number 3', 'A string "1 + 2"', 'A macro definition']}
+  question={'What does `quote do: 1 + 2` return in Elixir?'}
+  options={[
+    'An AST tuple: {:+, meta, [1, 2]}',
+    'The number 3',
+    'A string "1 + 2"',
+    'A macro definition',
+  ]}
   correctAnswer={0}
   explanation="quote converts Elixir code into its Abstract Syntax Tree representation. 1 + 2 becomes {:+, [context: Elixir, imports: [{2, Kernel}]], [1, 2]} -- a three-element tuple with the operation atom, metadata, and argument list. Literals like integers represent themselves."
   difficulty="hard"

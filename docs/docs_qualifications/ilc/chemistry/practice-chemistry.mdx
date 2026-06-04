@@ -29,7 +29,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="The first ionisation energies of elements across Period 3 generally increase, but there is a notable decrease between magnesium (Mg) and aluminium (Al). What is the reason for this decrease?"
-  options={['Aluminium's outermost electron is in a 3p subshell, which is higher in energy and more easily removed than the 3s electron of magnesium', 'Aluminium has a smaller nuclear charge than magnesium', 'Magnesium has a completely filled 3p subshell that is more stable', 'The atomic radius of aluminium is significantly larger than magnesium']}
+  options={[
+    "Aluminium's outermost electron is in a 3p subshell, which is higher in energy and more easily removed than the 3s electron of magnesium",
+    'Aluminium has a smaller nuclear charge than magnesium',
+    'Magnesium has a completely filled 3p subshell that is more stable',
+    'The atomic radius of aluminium is significantly larger than magnesium',
+  ]}
   correctAnswer={0}
   explanation="Magnesium has the electron configuration [Ne] 3s2, so its first ionisation energy removes a 3s electron from a paired configuration. Aluminium has the configuration [Ne] 3s2 3p1, and its first ionisation energy removes the single 3p electron. The 3p subshell is slightly higher in energy and further from the nucleus on average than 3s, so the electron is less tightly held and easier to remove, causing the drop in first ionisation energy."
   difficulty="hard"

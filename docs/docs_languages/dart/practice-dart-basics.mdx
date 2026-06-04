@@ -106,7 +106,12 @@ the explanation.
 
 <PracticeProblem
   question="Given `mixin Walker { void walk() => print('walking'); }` and `class Person extends Animal with Walker {}`, what is the result of calling `walk()` on a `Person` instance?"
-  options={['Prints 'walking' -- Walker's method is mixed into Person', 'Throws NoSuchMethodError', 'Calls Animal's walk method instead', 'Compilation error: Walker cannot be used with Person']}
+  options={[
+    "Prints 'walking' -- Walker's method is mixed into Person",
+    'Throws NoSuchMethodError',
+    "Calls Animal's walk method instead",
+    'Compilation error: Walker cannot be used with Person',
+  ]}
   correctAnswer={0}
   explanation="Mixins inject their method implementations into the class that uses them. `Person` gains the `walk()` method from `Walker`. If `Person` also defines `walk()`, its own method takes precedence (override). If `Animal` defines `walk()` and `Walker` also defines it, the mixin's linearization order determines which wins -- mixins applied later have higher priority."
   difficulty="medium"
