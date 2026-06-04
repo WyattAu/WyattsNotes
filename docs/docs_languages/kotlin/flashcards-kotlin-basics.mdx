@@ -85,7 +85,7 @@ handled.",tags:["kotlin","sealed-classes"],difficulty:"medium"},{id:"kotlin-exte
 are extension functions and how do they work under the hood?",back:"Extension functions let you add
 methods to existing classes without modifying their source code. They are resolved statically at
 compile time -- they do not modify the original class or add members to its type. Under the hood, an
-extension function `fun String.addExclamation() = this + "!"` compiles to a static function that
+extension function `fun String.addExclamation() = this + \"!\"` compiles to a static function that
 takes the receiver as its first parameter. They cannot access private members of the receiver
 class.",tags:["kotlin","extensions"],difficulty:"medium"},{id:"kotlin-delegation-013",front:"How
 does the `by` keyword work for class delegation?",back:"The `by` keyword delegates the

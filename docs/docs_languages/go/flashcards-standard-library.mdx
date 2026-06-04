@@ -68,7 +68,7 @@ http.ListenAndServe(":8080", nil) to start the server on port 8080. The nil seco
 DefaultServeMux.', tags: ['net/http', 'server'], difficulty: 'medium', }, { id: 'go-json-1', front:
 'How does json.Marshal work and what does it return?', back: 'json.Marshal(v any) ([]byte, error)
 converts a Go value to JSON bytes. The value must be exportable (capitalised fields). Struct tags
-control key names: `json:"field_name"`. Returns the JSON-encoded bytes and any error. For pretty
+control key names: `json:\"field_name\"`. Returns the JSON-encoded bytes and any error. For pretty
 output, use json.MarshalIndent(v, "", " ").', tags: ['encoding/json', 'encoding'], difficulty:
 'medium', }, { id: 'go-json-2', front: 'How does json.Unmarshal work and what type must the second
 argument be?', back: 'json.Unmarshal(data []byte, v any) error decodes JSON data into the Go value

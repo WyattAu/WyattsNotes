@@ -65,7 +65,7 @@ the explanation.
   question={`What does \`val result = "hello".also { print(it) }.let { it.uppercase() }\` evaluate to?`}
   options={['"HELLO"', '"hello"', 'Unit', 'Compilation error']}
   correctAnswer={0}
-  explanation="The chain executes left to right. `also` prints `hello` (side effect) and returns the receiver `"hello"`. Then `let` receives `"hello"` as `it`, calls `uppercase()` on it, and returns `"HELLO"`. The final value of `result` is the return value of the last function in the chain, which is `\"HELLO\"`."
+  explanation={`The chain executes left to right. \`also\` prints \`hello\` (side effect) and returns the receiver \`"hello"\`. Then \`let\` receives \`"hello"\` as \`it\`, calls \`uppercase()\` on it, and returns \`"HELLO"\`. The final value of \`result\` is the return value of the last function in the chain, which is \`"HELLO"\`.`}
   difficulty="medium"
 />
 
