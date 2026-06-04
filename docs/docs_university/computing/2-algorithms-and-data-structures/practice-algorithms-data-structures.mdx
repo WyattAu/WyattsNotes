@@ -80,7 +80,7 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
     'All paths from a node to its descendant NIL nodes contain the same number of black nodes',
   ]}
   correctAnswer={0}
-  explanation="The key property is that no red node can have a red child (the "no red-red" constraint). Combined with the equal-black-height property, this bounds the ratio. The shortest possible root-to-leaf path has all black nodes, and the longest alternates red-black. Since red nodes cannot be consecutive, the longest path has at most twice as many nodes as the shortest, guaranteeing $O(\\log n)$ height."
+  explanation={`The key property is that no red node can have a red child (the "no red-red" constraint). Combined with the equal-black-height property, this bounds the ratio. The shortest possible root-to-leaf path has all black nodes, and the longest alternates red-black. Since red nodes cannot be consecutive, the longest path has at most twice as many nodes as the shortest, guaranteeing $O(\\log n)$ height.`}
   difficulty="hard"
 />
 

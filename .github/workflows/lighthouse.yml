@@ -103,7 +103,7 @@ jobs:
         run: node scripts/lighthouse-summary.mjs
         env:
           SITE_NAME: ${{ matrix.key }}
-      - uses: actions/upload-artifact@5076954047c2b9966f1f79bf275986b3e2cb5c02
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: lighthouse-${{ matrix.key }}-results

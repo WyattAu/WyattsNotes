@@ -92,7 +92,12 @@ the explanation.
 
 <PracticeProblem
   question="To accept L = {a^n b^n : n >= 0}, a Turing machine can use which core strategy?"
-  options={['Replace the leftmost a with X, move right to find the rightmost b, replace with Y, return left, and repeat', 'Count the a's, store the count in memory, then count the b's and compare', 'Convert the input to unary representation and compare lengths directly', 'Copy the a's to a second tape, then verify the second tape matches the b's']}
+  options={[
+    'Replace the leftmost a with X, move right to find the rightmost b, replace with Y, return left, and repeat',
+    `Count the a's, store the count in memory, then count the b's and compare`,
+    'Convert the input to unary representation and compare lengths directly',
+    `Copy the a's to a second tape, then verify the second tape matches the b's`,
+  ]}
   correctAnswer={0}
   explanation="The standard single-tape TM works as follows: (1) Scan left to right to find the leftmost a, replace it with X, (2) continue right to find the rightmost b, replace it with Y, (3) move left back to the first X, (4) repeat. If the counts match, after processing all a's and b's the tape contains only X's followed by Y's, and the TM accepts. If the counts differ, the TM will find an a when looking for b (or vice versa) and rejects. This demonstrates how a TM uses its unbounded tape and head movement to match patterns that finite automata cannot handle."
   difficulty="medium"
