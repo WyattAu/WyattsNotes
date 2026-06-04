@@ -1,0 +1,162 @@
+---
+title: Java Fundamentals Practice (Interactive)
+tags:
+  - java
+slug: java/practice-java-basics
+description:
+  'Interactive Java practice with auto-graded questions. Test your knowledge of types, collections,
+  Streams, concurrency, generics, GC, and JVM internals.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## Java -- Fundamentals Practice
+
+10 auto-graded practice problems covering Java fundamentals. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Types and Variables
+
+<PracticeProblem
+  question={`What is the result of the expression: \`byte b = 10; b = b + 1;\`?`}
+  options={[
+    'Compilation error -- cannot assign int to byte without a cast',
+    'b becomes 11',
+    'Runtime error -- overflow',
+    'b becomes 1 due to wrapping',
+  ]}
+  correctAnswer={0}
+  explanation="The expression `b + 1` is promoted to `int` because arithmetic operations on operands smaller than `int` are widened to `int`. The result type is `int`, and assigning an `int` back to `byte` without an explicit cast is a compilation error. Using the compound assignment `b += 1` would compile because it includes an implicit cast."
+  difficulty="easy"
+/>
+
+---
+
+### Access Modifiers
+
+<PracticeProblem
+  question={`A class is declared as \`class PackagePrivate\` with no access modifier. Which classes can access it?`}
+  options={[
+    'Only classes in the same package',
+    'All classes in the project',
+    'Only classes that extend it',
+    'Only the class itself and inner classes',
+  ]}
+  correctAnswer={0}
+  explanation="When a top-level class has no access modifier, it has package-private (default) access. It is accessible only to other classes within the same package. This is different from `public` (accessible everywhere), `protected` (accessible in the same package and subclasses), and `private` (only inner classes can be private)."
+  difficulty="easy"
+/>
+
+---
+
+### Collections
+
+<PracticeProblem
+  question="Which collection guarantees insertion order and does not allow duplicates?"
+  options={['LinkedHashSet', 'HashSet', 'TreeSet', 'ArrayList']}
+  correctAnswer={0}
+  explanation="LinkedHashSet extends HashSet and maintains a doubly-linked list running through its entries, preserving insertion order. HashSet does not guarantee order. TreeSet orders by natural ordering or a comparator (not insertion order). ArrayList allows duplicates and does not have set semantics. LinkedHashSet gives you both uniqueness and predictable iteration order."
+  difficulty="easy"
+/>
+
+---
+
+### Streams
+
+<PracticeProblem
+  question={`Given \`List.of(2, 1, 3).stream().map(x -> x * x).filter(x -> x > 3).collect(Collectors.toList())\`, what is the result?`}
+  options={['[4, 9]', '[1, 4, 9]', '[9]', '[4]']}
+  correctAnswer={0}
+  explanation="The stream maps each element to its square: [4, 1, 9]. Then `filter(x -> x > 3)` keeps only 4 and 9, producing [4, 9]. Streams are lazy and process elements one at a time through the pipeline. The `collect` terminal operation triggers the entire pipeline and gathers results into a list."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question={`Which of the following is a terminal operation?`}
+  options={['collect', 'filter', 'map', 'sorted']}
+  correctAnswer={0}
+  explanation="Terminal operations produce a result and close the Stream pipeline. `collect`, `forEach`, `reduce`, `count`, `toArray`, `findFirst`, and `anyMatch` are all terminal operations. `filter`, `map`, `sorted`, `distinct`, and `flatMap` are intermediate operations that return a new Stream and are lazy -- they do not execute until a terminal operation is invoked."
+  difficulty="medium"
+/>
+
+---
+
+### Concurrency
+
+<PracticeProblem
+  question={`What does \`volatile\` guarantee in the Java Memory Model?`}
+  options={[
+    'Writes to the variable are immediately visible to all other threads',
+    'Only one thread can access the variable at a time',
+    'The variable cannot be garbage collected',
+    'The variable is stored on the stack instead of the heap',
+  ]}
+  correctAnswer={0}
+  explanation="The `volatile` keyword establishes a happens-before relationship: a write to a volatile variable is immediately visible to subsequent reads by other threads. It prevents CPU caching and compiler reordering for that variable. However, `volatile` does not provide atomicity for compound actions like `count++`. For mutual exclusion (only one thread at a time), use `synchronized` or `ReentrantLock`."
+  difficulty="medium"
+/>
+
+---
+
+### Generics
+
+<PracticeProblem
+  question={`Why does the following code fail to compile?\n\`\`\`\nList<String> strings = new ArrayList<>();\nList<Object> objects = strings;\n\`\`\``}
+  options={[
+    'Generics are invariant -- List<String> is not a subtype of List<Object>',
+    'ArrayList<String> cannot be assigned to List<String>',
+    'The diamond operator is not allowed here',
+    'String is not a subtype of Object',
+  ]}
+  correctAnswer={0}
+  explanation="Java generics are invariant: `List<String>` is not a subtype of `List<Object>`, even though `String` is a subtype of `Object`. If this were allowed, you could add an `Integer` to a `List<String>` through the `List<Object>` reference, breaking type safety. Use wildcards (`List<? extends Object>`) for covariance or `List<? super String>` for contravariance."
+  difficulty="medium"
+/>
+
+---
+
+### Garbage Collection
+
+<PracticeProblem
+  question={`In the JVM heap, where are newly created objects first allocated?`}
+  options={[
+    'Eden space in the young generation',
+    'Old generation (tenured space)',
+    'Survivor space S0',
+    'Stack memory',
+  ]}
+  correctAnswer={0}
+  explanation="All new objects (except very large ones that bypass the young generation) are allocated in Eden, the first region of the young generation. When Eden fills up, a minor GC traces reachable objects and copies survivors to a survivor space. After surviving a configurable number of minor GCs (controlled by `-XX:MaxTenuringThreshold`), objects are promoted to the old (tenured) generation."
+  difficulty="medium"
+/>
+
+---
+
+### JIT Optimization (Hard)
+
+<PracticeProblem
+  question={`The JIT compiler performs "escape analysis." What does it mean when an object does not escape?`}
+  options={[
+    'The JIT can allocate the object on the stack instead of the heap',
+    'The object is eligible for garbage collection immediately',
+    'The object is serialized and sent to another JVM',
+    'The object is moved to the old generation',
+  ]}
+  correctAnswer={0}
+  explanation="Escape analysis determines whether an object is reachable outside the method that created it. If an object does not escape (is never stored in a static field, returned from the method, or passed to another method), the JIT can perform scalar replacement -- breaking the object into its individual fields and allocating them on the stack or in registers. This eliminates heap allocation and GC pressure entirely for that object."
+  difficulty="hard"
+/>
+
+---
+
+### Class Loading Order (Hard)
+
+<PracticeProblem
+  question={`In what order does the JVM initialize a class? Given:\n\`\`\`\nclass Super {\n    static { System.out.print("A"); }\n}\nclass Sub extends Super {\n    static { System.out.print("B"); }\n    public static void main(String[] args) { System.out.print("C"); }\n}\n\`\`\`\nWhat is printed when \`Sub.main()\` is invoked?`}
+  options={['ABC', 'BAC', 'ACB', 'CBA']}
+  correctAnswer={0}
+  explanation="When `Sub.main` is invoked, the JVM triggers class initialization for `Sub`. Before initializing `Sub`, the JVM must first ensure its superclass `Super` is initialized. Superclass static initializers run before subclass static initializers. So: Super static block prints \"A\", then Sub static block prints \"B\", then `main` executes and prints \"C\". Output: ABC."
+  difficulty="hard"
+/>

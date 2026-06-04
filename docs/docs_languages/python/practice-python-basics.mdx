@@ -1,0 +1,154 @@
+---
+title: Python Practice (Fundamentals)
+description:
+  '10 auto-graded MCQ problems on Python fundamentals -- types, OOP, decorators, async, and
+  internals. Select an answer, submit, and review the explanation.'
+slug: practice-python-basics
+sidebar_position: 4
+tags:
+  - Python
+categories:
+  - Python
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## Types and Variables
+
+<PracticeProblem
+  question="What is the output of `type([1, 2, 3]) == type((1, 2, 3))`?"
+  options={['False', 'True', 'TypeError', 'SyntaxError']}
+  correctAnswer={0}
+  explanation="`type([1, 2, 3])` is `<class 'list'>` and `type((1, 2, 3))` is `<class 'tuple'>`. These are different types, so `==` returns `False`. Lists use square brackets and tuples use parentheses."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="Which of the following is a mutable built-in type in Python?"
+  options={['list', 'str', 'int', 'tuple']}
+  correctAnswer={0}
+  explanation="Lists are mutable -- you can append, remove, or modify elements in place. Strings, integers, and tuples are all immutable: any operation that appears to modify them actually creates a new object."
+  difficulty="easy"
+/>
+
+---
+
+## Functions and Scope
+
+<PracticeProblem
+  question="What does `def f(a, b=[]): b.append(a); return b` return when called as `f(1); f(2)`?"
+  options={['[1, 2]', '[1], [2]', '[2]', 'TypeError']}
+  correctAnswer={0}
+  explanation="Mutable default arguments are evaluated once at function definition time and shared across all calls. After `f(1)`, `b` is `[1]`. After `f(2)`, `b` is `[1, 2]`. The function returns `[1, 2]` on the second call. Use `None` as the default and create the list inside the function body to avoid this."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What does the LEGB rule stand for in Python variable resolution?"
+  options={[
+    'Local, Enclosing, Global, Built-in',
+    'Local, External, Global, Base',
+    'Loop, Enclosing, Global, Built-in',
+    'Local, Enclosed, Generic, Built-in',
+  ]}
+  correctAnswer={0}
+  explanation="Python resolves variable names using the LEGB scope order: Local (inside the current function), Enclosing (in enclosing functions for nested functions), Global (module level), and Built-in (the `builtins` module). The first match in this order is used."
+  difficulty="easy"
+/>
+
+---
+
+## Object-Oriented Programming
+
+<PracticeProblem
+  question="Given `class A: x = 1` and `class B(A): pass`, what does `B.x` return?"
+  options={['1', 'AttributeError', 'None', '0']}
+  correctAnswer={0}
+  explanation="Class attributes are inherited. `B.x` is not found in `B`'s namespace, so Python looks up the MRO and finds `x = 1` in `A`. Assigning `B.x = 2` afterwards would shadow the inherited attribute without modifying `A.x`."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the MRO of `class D(B, C)` where `class B(A)` and `class C(A)`?"
+  options={['D, B, C, A, object', 'D, C, B, A, object', 'D, A, B, C, object', 'D, B, A, C, object']}
+  correctAnswer={0}
+  explanation="Python uses C3 linearization for MRO. It respects the left-to-right order of base classes (`B` before `C`) while ensuring each class appears only once. The result is `D -> B -> C -> A -> object`. You can verify with `D.__mro__` or `D.mro()`."
+  difficulty="medium"
+/>
+
+---
+
+## Decorators and Generators
+
+<PracticeProblem
+  question="What does `@functools.lru_cache(maxsize=2)` do when applied to a recursive function?"
+  options={[
+    'Caches up to 2 most recent distinct call results, eliminating redundant computation',
+    'Caches all call results indefinitely',
+    'Limits the function to 2 total calls',
+    'Raises an error when the cache is full',
+  ]}
+  correctAnswer={0}
+  explanation="The LRU (Least Recently Used) cache stores up to `maxsize` distinct argument-result pairs. When the cache is full, the least recently used entry is evicted. For recursive functions like Fibonacci, this transforms exponential time complexity into linear by avoiding recomputation of subproblems."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What happens when a generator function uses `return value` instead of `yield`?"
+  options={[
+    'It raises StopIteration with the value and terminates the generator',
+    'It yields the value and continues',
+    'It returns the value normally like a regular function',
+    'It raises SyntaxError',
+  ]}
+  correctAnswer={0}
+  explanation="In a generator function, `return value` raises `StopIteration(value)` to signal the generator is exhausted. The `value` is attached to the exception and can be retrieved via the return value of `next()` (using a try/except StopIteration) or by capturing it from `yield from`. The generator cannot be resumed after `return`."
+  difficulty="medium"
+/>
+
+---
+
+## Error Handling and Context Managers
+
+<PracticeProblem
+  question="What is the output of `try: 1/0 except ValueError: print('caught')`?"
+  options={[
+    'ZeroDivisionError is raised and not caught',
+    "'caught' is printed",
+    "'ZeroDivisionError: division by zero' is printed",
+    'None',
+  ]}
+  correctAnswer={0}
+  explanation="Dividing by zero raises `ZeroDivisionError`, which is a subclass of `ArithmeticError` and `Exception`, but NOT of `ValueError`. Since the `except` clause only catches `ValueError`, the exception propagates uncaught. The program would terminate with a traceback unless caught by an outer handler."
+  difficulty="medium"
+/>
+
+---
+
+## Async and Internals
+
+<PracticeProblem
+  question="What happens when you call an `async def` function without using `await`?"
+  options={[
+    'It returns a coroutine object without executing the function body',
+    'It runs the function synchronously',
+    'It raises SyntaxError',
+    'It returns None',
+  ]}
+  correctAnswer={0}
+  explanation="Calling an `async def` function does not execute its body. It creates and returns a coroutine object. To actually run the coroutine, you must `await` it inside another async function, or schedule it with `asyncio.run()`, `asyncio.create_task()`, or `asyncio.gather()`. The coroutine must be awaited or scheduled exactly once."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question="What is the effect of defining `__slots__ = ('x', 'y')` on a class?"
+  options={[
+    'It replaces the per-instance __dict__ with fixed-size slots, preventing dynamic attribute assignment and reducing memory usage by 40-60%',
+    'It makes the class abstract',
+    'It enables multiple inheritance',
+    'It adds type checking to attributes x and y',
+  ]}
+  correctAnswer={0}
+  explanation="`__slots__` tells the metaclass to allocate fixed attribute descriptors instead of a per-instance `__dict__`. This reduces memory overhead significantly for classes with many instances. Instances cannot have attributes not listed in `__slots__`, catching typos at runtime. All classes in the hierarchy must define `__slots__` for the full benefit."
+  difficulty="hard"
+/>

@@ -1,0 +1,141 @@
+---
+title: 'Python Flashcards: Fundamentals'
+slug: flashcards-python-basics
+description:
+  '20 interactive flashcards on Python types, functions, OOP, standard library, async, and internals
+  for comprehensive revision.'
+tags:
+  - Python
+  - Flashcards
+sidebar_position: 3
+---
+
+import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
+
+## Python -- Fundamentals Flashcards
+
+20 interactive flashcards covering core Python concepts from types and control flow to metaclasses
+and the GIL. Press Space to flip, rate 1-4.
+
+---
+
+const flashcardData = [{id:"python-types-001",front:"What is the difference between `list` and
+`tuple` in Python?",back:"Lists are mutable sequences (can be modified after creation) using square
+brackets `[]`. Tuples are immutable sequences (cannot be modified) using parentheses `()`. Tuples
+are hashable when all elements are hashable, making them usable as dict keys and set
+elements.",tags:["python","types"],difficulty:"easy"},{id:"python-types-002",front:"Which Python
+types are mutable and which are immutable?",back:"Mutable: `list`, `dict`, `set`, `bytearray`, and
+most user-defined class instances. Immutable: `int`, `float`, `str`, `bool`, `tuple`, `frozenset`,
+`bytes`, and `None`. Mutability determines whether an object can be changed in place and whether it
+can serve as a dict key or set element (requires hashability via
+immutability).",tags:["python","types"],difficulty:"easy"},{id:"python-types-003",front:"What are
+type hints and how do you use `Optional` and `Union`?",back:"Type hints (PEP 484) annotate function
+signatures and variables with expected types. `Optional[int]` means `Union[int, None]` -- the value
+may be an int or None. `Union[str, int]` means the value can be either a str or an int. As of Python
+3.10, `X | Y` syntax replaces `Union[X, Y]` and `X | None` replaces
+`Optional[X]`.",tags:["python","types"],difficulty:"easy"},{id:"python-control-flow-004",front:"How
+does `match`/`case` (structural pattern matching) work in Python 3.10+?",back:"`match` evaluates an
+expression and compares it against one or more `case` blocks using structural pattern matching (PEP
+634). It supports literal patterns, capture patterns, sequence patterns, mapping patterns, class
+patterns, and guard clauses with `if`. Unlike C-style switch, it does not fall through -- the first
+matching case is executed and the block
+exits.",tags:["python","control-flow"],difficulty:"medium"},{id:"python-control-flow-005",front:"What
+is a dictionary comprehension and how does it differ from `dict()`?",back:"A dict comprehension
+builds a dict inline: `{k: v for k, v in iterable if condition}`. It is more readable and typically
+faster than calling `dict()` on a list of tuples or using a for loop. Like list and set
+comprehensions, it supports an optional `if` clause for filtering and can nest arbitrarily, though
+deeply nested comprehensions hurt
+readability.",tags:["python","control-flow"],difficulty:"easy"},{id:"python-functions-006",front:"What
+is the difference between `*args` and `**kwargs`?",back:"`*args` collects excess positional
+arguments into a tuple. `**kwargs` collects excess keyword arguments into a dict. Both must appear
+after any named parameters: `def f(a, b, *args, key=default, **kwargs)`. You can use them in any
+order with keyword-only separator `*`: `def f(a, *, b, **kwargs)` makes `b`
+keyword-only.",tags:["python","functions"],difficulty:"easy"},{id:"python-functions-007",front:"What
+is a closure in Python and why does it work?",back:"A closure is a function that retains access to
+variables from its enclosing scope after the enclosing function has returned. Python implements this
+via cell objects -- when a nested function references a variable from the enclosing scope, that
+variable is stored in a cell rather than on the stack. The closure's `__closure__` attribute holds a
+tuple of these
+cells.",tags:["python","functions"],difficulty:"medium"},{id:"python-functions-008",front:"How do
+decorators work and what is `functools.wraps`?",back:"A decorator is a callable that takes a
+function and returns a modified function: `@decorator` is sugar for `func = decorator(func)`. Since
+the wrapper replaces the original, it loses the original's `__name__`, `__doc__`, and `__module__`.
+`functools.wraps` copies these attributes from the wrapped function to the wrapper, preserving
+introspection and debugging
+information.",tags:["python","functions"],difficulty:"medium"},{id:"python-generators-009",front:"What
+is the difference between `yield` and `return` in a function?",back:"`yield` pauses the function and
+produces a value, turning it into a generator. The function resumes from where it left off on the
+next iteration. `return` ends the function entirely and cannot be resumed. In a generator,
+`return value` raises `StopIteration(value)` to signal completion and pass the value
+back.",tags:["python","generators"],difficulty:"medium"},{id:"python-generators-010",front:"What is
+lazy evaluation and why do generators provide it?",back:"Lazy evaluation means values are computed
+only when needed, not upfront. A generator expression or function produces one value at a time on
+demand, holding only the current state in memory. This makes it ideal for processing large or
+infinite sequences where building the full list would exhaust memory. For example,
+`(x**2 for x in range(10**9))` uses constant memory, while `[x**2 for x in range(10**9)]` would
+crash.",tags:["python","generators"],difficulty:"medium"},{id:"python-oop-011",front:"What is the
+MRO (Method Resolution Order) in Python?",back:"MRO determines the order Python searches for methods
+when traversing the inheritance chain. Python uses C3 linearization (also called C3 superclass
+linearization), which produces a consistent, monotonic ordering. You can inspect it via
+`ClassName.__mro__` or `ClassName.mro()`. It guarantees that a child class always appears before its
+parents and respects the order of base
+classes.",tags:["python","oop"],difficulty:"medium"},{id:"python-oop-012",front:"What is a metaclass
+and how does `type()` relate to it?",back:"A metaclass is a class whose instances are classes
+themselves. Every class is an instance of `type` by default. The `type(name, bases, dict)`
+three-argument form dynamically creates a class. Custom metaclasses inherit from `type` and
+intercept class creation via `__new__` (constructing the class), `__init__` (initializing it),
+`__prepare__` (customizing the namespace), and `__call__` (controlling instance
+creation).",tags:["python","oop"],difficulty:"hard"},{id:"python-oop-013",front:"What is a
+descriptor and when should you use one?",back:"A descriptor is any object that implements `__get__`,
+`__set__`, or `__delete__`. When a descriptor is a class attribute, Python intercepts access on
+instances to call these methods. `property`, `classmethod`, and `staticmethod` are all built-in
+descriptors. Use custom descriptors for reusable attribute logic (validation, lazy computation, type
+checking) that decorators or `__setattr__` would make
+verbose.",tags:["python","oop"],difficulty:"medium"},{id:"python-collections-014",front:"What
+operations are O(1) on a Python dict?",back:"Key lookup (`d[key]`), insertion (`d[key] = val`),
+deletion (`del d[key]`), and membership test (`key in d`) are all average-case O(1) thanks to the
+hash table implementation. Worst case is O(n) due to hash collisions. Iteration is O(n).
+`d.get(key, default)` and `d.setdefault(key, default)` are also O(1) average
+case.",tags:["python","collections"],difficulty:"easy"},{id:"python-collections-015",front:"What set
+operations does Python support and what are their time complexities?",back:"Union (`a | b`),
+intersection (`a & b`), difference (`a - b`), and symmetric difference (`a ^ b`). All are
+O(len(small)) on average assuming the smaller set is iterated. Membership test (`x in set`) is O(1)
+average case. Sets require all elements to be
+hashable.",tags:["python","collections"],difficulty:"medium"},{id:"python-stdlib-016",front:"Why
+should you prefer `pathlib.Path` over `os.path`?",back:"`pathlib.Path` provides an object-oriented
+interface for path manipulation. Methods like `.exists()`, `.is_file()`, `.read_text()`,
+`.write_text()`, `.glob()`, and the `/` operator for joining paths make code more readable than
+`os.path.join()`, `os.path.exists()`, etc. `pathlib` is part of the standard library since Python
+3.4 and is the recommended
+approach.",tags:["python","stdlib"],difficulty:"medium"},{id:"python-stdlib-017",front:"What do
+`functools.lru_cache` and `functools.partial` do?",back:"`lru_cache` is a decorator that caches
+function call results with a bounded least-recently-used eviction policy. It takes optional
+`maxsize` and `typed` arguments. `partial` creates a new callable with some arguments pre-filled,
+enabling function reuse with fixed defaults. `partial(func, 42)` returns a callable where the first
+argument is always
+42.",tags:["python","stdlib"],difficulty:"medium"},{id:"python-async-018",front:"What is the asyncio
+event loop and how does `await` interact with it?",back:"The event loop is the central scheduler
+that runs async tasks, I/O callbacks, and timers. When an async function hits `await`, it yields
+control back to the event loop, which can run other tasks while waiting for the awaited operation to
+complete. `asyncio.run()` creates a new loop, runs the coroutine, and closes the loop. You cannot
+`await` outside an async function -- it is a syntax
+error.",tags:["python","async"],difficulty:"medium"},{id:"python-errors-019",front:"What is Python's
+exception hierarchy and how do `except` clauses match?",back:"All exceptions inherit from
+`BaseException`. `Exception` is the base for all built-in, non-system-exiting exceptions.
+`except Exception` catches all standard errors but not `SystemExit` or `KeyboardInterrupt`. Python
+matches `except` clauses top-down, so `except ValueError` before `except Exception` will catch only
+ValueErrors. Bare `except:` catches everything including `SystemExit` and should almost never be
+used.",tags:["python","errors"],difficulty:"medium"},{id:"python-memory-020",front:"What does the
+GIL do and how does `__slots__` reduce memory usage?",back:"The GIL (Global Interpreter Lock) is a
+mutex in CPython that allows only one thread to execute Python bytecode at a time. It protects
+CPython's internal state, particularly reference counting. I/O-bound operations release it, but
+CPU-bound threads cannot run in parallel. `__slots__` replaces per-instance `__dict__` with
+fixed-size descriptors, reducing memory by 40-60% and preventing dynamic attribute
+assignment.",tags:["python","memory"],difficulty:"hard"}];
+
+<FlashcardDeck
+  deckId="python-basics"
+  title="Python -- Fundamentals"
+  description="20 interactive flashcards covering types, functions, OOP, standard library, async, and internals."
+  cards={flashcardData}
+/>

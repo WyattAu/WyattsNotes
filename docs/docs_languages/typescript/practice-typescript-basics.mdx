@@ -1,0 +1,169 @@
+---
+title: TypeScript Fundamentals Practice (Interactive)
+tags:
+  - typescript
+slug: typescript/practice-typescript-basics
+description:
+  'Interactive TypeScript practice with auto-graded questions. Test your knowledge of the type
+  system, generics, utility types, advanced patterns, enums, classes, and React integration.'
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## TypeScript -- Fundamentals Practice
+
+10 auto-graded practice problems covering TypeScript fundamentals. Select an answer, submit, and
+review the explanation.
+
+---
+
+### Type System
+
+<PracticeProblem
+  question={`What happens when you assign a value of type \`unknown\` to a variable of type \`string\` without narrowing?`}
+  options={[
+    'Compilation error -- cannot assign `unknown` to `string` without a type assertion or narrowing check',
+    'It compiles successfully with a runtime cast',
+    'It compiles but the value becomes `undefined` at runtime',
+    'It compiles and works as expected',
+  ]}
+  correctAnswer={0}
+  explanation="TypeScript requires you to narrow `unknown` to a specific type before using it. You cannot assign `unknown` to `string` directly without a type guard (`typeof x === 'string'`), type assertion (`x as string`), or other narrowing mechanism. This is the key safety advantage of `unknown` over `any` -- it forces you to handle the type uncertainty explicitly."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question={`What is the result type of \`type Result = string | never\`?`}
+  options={['string', 'string | never', 'never', 'object']}
+  correctAnswer={0}
+  explanation="Since `never` is the empty set (a subtype of every type), the union `string | never` simplifies to just `string`. This is because unioning any type with `never` adds nothing -- there are no `never` values to include. This property is useful in conditional types where `never` branches collapse away during distribution, enabling type-level filtering and transformation patterns."
+  difficulty="medium"
+/>
+
+---
+
+### Generics
+
+<PracticeProblem
+  question={`What does \`type UnwrapPromise<T> = T extends Promise<infer U> ? U : T\` do?`}
+  options={[
+    'It extracts the inner type from a Promise if T is a Promise, otherwise returns T unchanged',
+    'It wraps any type T in a Promise',
+    'It checks if T is async',
+    'It returns `never` for all types',
+  ]}
+  correctAnswer={0}
+  explanation="This conditional type checks if `T` extends `Promise<U>` for some `U` (inferred via `infer`). If so, it returns the inferred inner type `U`. If not, it returns `T` unchanged. For example, `UnwrapPromise<Promise<string>>` is `string`, `UnwrapPromise<number>` is `number`. This is the same pattern used by the built-in `Awaited<T>` utility type."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question={`What is the result of \`type ReadonlyUser = Readonly<{ name: string; age: number }>\`?`}
+  options={[
+    '{ readonly name: string; readonly age: number }',
+    '{ name: string; age: number }',
+    '{ name?: string; age?: number }',
+    'Compilation error',
+  ]}
+  correctAnswer={0}
+  explanation="The `Readonly<T>` utility type makes all properties of `T` read-only by adding the `readonly` modifier to each property. This prevents reassignment of individual properties: `const u: ReadonlyUser = { name: 'a', age: 1 }; u.name = 'b'` would be a compile error. The object itself can still be mutated through mutable methods, and the original non-readonly type remains unchanged."
+  difficulty="easy"
+/>
+
+---
+
+### Advanced Patterns
+
+<PracticeProblem
+  question={`Given a discriminated union:\n\`\`\`\ntype Shape =\n  | { kind: 'circle'; radius: number }\n  | { kind: 'square'; size: number };\n\`\`\`\nWhat is the type of \`s.radius\` after narrowing with \`if (s.kind === 'circle')\`?`}
+  options={[
+    'number',
+    'number | undefined',
+    'unknown',
+    'Compilation error -- `radius` does not exist on `Shape`',
+  ]}
+  correctAnswer={0}
+  explanation="TypeScript uses the discriminant property `kind` to narrow the union. After the check `s.kind === 'circle'`, the compiler narrows `s` to `{ kind: 'circle'; radius: number }`, making `s.radius` accessible and typed as `number`. This is the core power of discriminated unions -- the common discriminant property enables type-safe narrowing without manual type assertions."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question={`What does the type \`type EventName = 'click' | 'focus' | 'blur'; type Handler = \`on\${Capitalize<EventName>}\`\` produce?`}
+  options={[
+    '"onClick" | "onFocus" | "onBlur"',
+    '"onclick" | "onfocus" | "onblur"',
+    'string',
+    'Compilation error',
+  ]}
+  correctAnswer={0}
+  explanation="Template literal types interpolate union types, distributing the template across each member. `Capitalize<EventName>` capitalizes each string literal, producing `'Click' | 'Focus' | 'Blur'`. The template literal then prepends `'on'` to each, resulting in the union `'onClick' | 'onFocus' | 'onBlur'`. This is a powerful feature for generating type-safe string patterns."
+  difficulty="medium"
+/>
+
+---
+
+### Enums and Union Types
+
+<PracticeProblem
+  question={`What is a key advantage of using \`type Status = 'active' | 'inactive' | 'pending'\` over \`enum Status { Active, Inactive, Pending }\`?`}
+  options={[
+    'Union types provide exhaustiveness checking in switch statements without emitting runtime JavaScript code',
+    'Union types are faster at runtime',
+    'Union types can be iterated with `for...of`',
+    'Union types support reverse mapping from value to name',
+  ]}
+  correctAnswer={0}
+  explanation="Union literal types exist only at the type level and are erased at runtime, producing zero JavaScript overhead. They still enable exhaustive checking in switch statements, especially with a `never` default case. Enums generate runtime JavaScript code (an IIFE and lookup object), which adds to bundle size. The TypeScript team recommends union types for most cases, reserving enums for when you need runtime enumeration values or reverse mapping."
+  difficulty="medium"
+/>
+
+---
+
+### Classes
+
+<PracticeProblem
+  question={`In a class with \`strictPropertyInitialization: true\`, when does TypeScript allow a property without an initializer?`}
+  options={[
+    'When the property is definitely assigned in the constructor, declared as optional (`?`), or has a `!` definite assignment assertion',
+    'Only when the property is `readonly`',
+    'Never -- all properties must have initializers',
+    'Only when the property is `private`',
+  ]}
+  correctAnswer={0}
+  explanation="With `strictPropertyInitialization`, TypeScript requires that all properties be initialized. There are three exceptions: the property is assigned in the constructor body (the compiler tracks definite assignment), the property is declared optional with `?` (defaults to `undefined`), or the property uses the definite assignment assertion `!` (e.g., `name!: string`) to tell the compiler it will be assigned externally (e.g., by a DI framework)."
+  difficulty="medium"
+/>
+
+---
+
+### Tooling
+
+<PracticeProblem
+  question={`What does \`"noImplicitAny": true\` in tsconfig.json prevent?`}
+  options={[
+    'Variables and parameters that have an implicit `any` type when the type cannot be inferred',
+    'Explicit use of `any` as a type annotation',
+    'Importing JavaScript files without type declarations',
+    'Using `// @ts-ignore` comments',
+  ]}
+  correctAnswer={0}
+  explanation="The `noImplicitAny` flag causes TypeScript to error when a variable, parameter, or return type would be implicitly typed as `any` because no annotation exists and the type cannot be inferred. For example, `function greet(name)` without a type annotation errors under this flag. It does not prevent explicit `any` usage -- you can still write `name: any` intentionally when needed."
+  difficulty="easy"
+/>
+
+---
+
+### React Integration
+
+<PracticeProblem
+  question={`How should you type a component that accepts an \`onClick\` handler for a button in React with TypeScript?`}
+  options={[
+    'Use `React.MouseEvent<HTMLButtonElement>` as the event type in the handler prop',
+    'Use `React.UIEvent` as the event type',
+    'Use `Event` from the DOM API directly',
+    'Type the handler as `() => void` without an event parameter',
+  ]}
+  correctAnswer={0}
+  explanation="React event types are parameterized by the HTML element they target. `React.MouseEvent<HTMLButtonElement>` gives you type-safe access to button-specific properties like `button` (which mouse button) and correct `currentTarget` typing. Using the generic DOM `Event` loses React-specific typing, and `React.UIEvent` is a broader type that misses mouse-specific details. Always match the event type to the specific element and interaction."
+  difficulty="medium"
+/>
