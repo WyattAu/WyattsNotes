@@ -1,0 +1,8 @@
+{
+  "label": "OOP and Protocols",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Classes, structs, enums, protocols, extensions, generics, and memory management."
+  }
+}

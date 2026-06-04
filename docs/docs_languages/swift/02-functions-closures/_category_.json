@@ -1,0 +1,8 @@
+{
+  "label": "Functions and Closures",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Functions, closures, escaping closures, property wrappers, and higher-order functions."
+  }
+}

@@ -1,0 +1,133 @@
+---
+title: Swift Practice (Basics)
+description:
+  'Interactive Swift practice with auto-graded MCQ problems. Test your knowledge of types,
+  optionals, closures, OOP, and error handling.'
+slug: practice-swift-basics
+tags:
+  - Swift
+categories:
+  - Swift
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## Swift -- Interactive Practice
+
+10 auto-graded practice problems covering core Swift concepts. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Types and Variables
+
+<PracticeProblem
+  question="What is the type of `let value = 3.14` in Swift?"
+  options={['Float', 'Double', 'Decimal', 'NSNumber']}
+  correctAnswer={1}
+  explanation="Floating-point literals without a type annotation default to `Double` (64-bit) in Swift. Use `let value: Float = 3.14` for a 32-bit float."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What does `typealias StringPair = (String, String)` create?"
+  options={[
+    'A new class',
+    'An alias for any two-element tuple of Strings',
+    'A new struct with two String properties',
+    'A dictionary with String keys and values',
+  ]}
+  correctAnswer={1}
+  explanation="A `typealias` creates an alternative name for an existing type. `StringPair` is simply another name for `(String, String)`, a tuple of two strings."
+  difficulty="easy"
+/>
+
+---
+
+### Optionals
+
+<PracticeProblem
+  question="What is the value of `let result: Int? = nil ?? 42`?"
+  options={['nil', '42', 'Compile error', 'Runtime crash']}
+  correctAnswer={1}
+  explanation="The nil coalescing operator `??` unwraps the left side. Since it is `nil`, the default value `42` is used. The result type is `Int` (not optional)."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question='Which statement correctly safely unwraps an optional `let name: String? = "Alice"`?'
+  options={['let n = name!', 'if let n = name { }', 'let n: String = name', 'name.bind { n in }']}
+  correctAnswer={1}
+  explanation="`if let` (optional binding) safely unwraps without crashing. `!` force-unwraps and crashes if nil. Direct assignment from optional to non-optional is a compile error."
+  difficulty="easy"
+/>
+
+---
+
+### Collections
+
+<PracticeProblem
+  question="What does `[1, 2, 3, 4, 5].filter { $0 % 2 == 0 }.map { $0 * $0 }` return?"
+  options={['[4, 16]', '[2, 4]', '[1, 9, 25]', '[1, 4, 9, 16, 25]']}
+  correctAnswer={0}
+  explanation="`filter` keeps even numbers: [2, 4]. Then `map` squares each: [4, 16]. Higher-order functions chain left-to-right."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the time complexity of `Set.contains(_:)` in Swift?"
+  options={['O(1) average, O(n) worst', 'O(n)', 'O(log n)', 'O(n log n)']}
+  correctAnswer={0}
+  explanation="Swift's `Set` is backed by a hash table. Average lookup is O(1), worst case is O(n) due to hash collisions. Use sets when you need fast membership testing."
+  difficulty="medium"
+/>
+
+---
+
+### Closures
+
+<PracticeProblem
+  question="What does `[3, 1, 4, 1, 5].sorted(by: >)` return?"
+  options={['[5, 4, 3, 1, 1]', '[1, 1, 3, 4, 5]', '[3, 1, 4, 1, 5]', 'Compile error']}
+  correctAnswer={0}
+  explanation="`sorted(by: >)` sorts in descending order. The `>` operator function is a valid closure for comparison."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="When is `@escaping` required on a closure parameter?"
+  options={[
+    'When the closure is called synchronously',
+    'When the closure is stored or called after the function returns',
+    'When the closure captures external variables',
+    'When the closure returns a value',
+  ]}
+  correctAnswer={1}
+  explanation="Non-escaping closures (the default) execute before the function returns. If the closure outlives the function -- stored as a property, passed to another async function, or called later -- `@escaping` is required."
+  difficulty="medium"
+/>
+
+---
+
+### OOP and Error Handling
+
+<PracticeProblem
+  question="What is the output of the following code? `struct Point { var x: Int }; var a = Point(x: 1); var b = a; b.x = 2; print(a.x)`"
+  options={['1', '2', 'nil', 'Compile error']}
+  correctAnswer={0}
+  explanation="Structs are value types. Assigning `a` to `b` creates a copy. Modifying `b.x` does not affect `a`. This is different from classes, which share the same reference."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="In the statement `do { try riskyOp() } catch NetworkError.timeout { } catch { }`, what does the bare `catch` block handle?"
+  options={[
+    'Only `NetworkError.timeout`',
+    'Only non-NetworkError errors',
+    'Any error not caught by previous catch blocks',
+    'Nothing -- it is unreachable',
+  ]}
+  correctAnswer={2}
+  explanation="A bare `catch` acts as a catch-all for any error not matched by preceding specific `catch` patterns. It must be the last catch block."
+  difficulty="medium"
+/>
