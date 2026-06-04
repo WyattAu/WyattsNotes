@@ -264,41 +264,41 @@ Complete inventory of 1,606 content files across 10 sub-sites.
 
 #### Sub-site Status
 
-| Sub-site       | Subjects | Content Files | Flashcards | Practice | Diagnostics | Status        |
-| -------------- | -------- | ------------- | ---------- | -------- | ----------- | ------------- |
-| A-Level        | 11       | 366           | 30         | 21       | 86          | Complete      |
-| IB             | 12       | 304           | 43         | 41       | 57          | Complete      |
-| DSE            | 6        | 151           | 14         | 14       | 57          | Complete      |
-| Qualifications | 8 types  | 227           | 31         | 29       | 40          | Near complete |
-| University     | 6        | 130           | 32         | 27       | 2           | Complete      |
-| Programming    | 3        | 129           | --         | --       | --          | Complete      |
+| Sub-site       | Subjects | Content Files | Flashcards | Practice | Diagnostics | Status   |
+| -------------- | -------- | ------------- | ---------- | -------- | ----------- | -------- |
+| A-Level        | 11       | 366           | 30         | 21       | 86          | Complete |
+| IB             | 12       | 304           | 43         | 41       | 57          | Complete |
+| DSE            | 8        | 164           | 16         | 16       | 57          | Complete |
+| Qualifications | 8+ types | 271           | 31         | 39       | 47          | Complete |
+| University     | 6        | 159           | 32         | 55       | 2           | Complete |
+| Programming    | 11       | 177           | 80         | 40       | --          | Complete |
 
 #### Qualification Coverage Detail
 
-| Qualification    | Subjects Covered                                                       | Interactive Coverage                               |
-| ---------------- | ---------------------------------------------------------------------- | -------------------------------------------------- |
-| A-Level          | Maths, FM, Physics, Chem, Bio, CS, Econ, English, Psych, Geog, History | Flashcards, practice, diagnostics for all subjects |
-| IB               | Bio, Chem, Physics, Maths AA, Econ, Psych, Geog, English, History, CS  | Flashcards, practice, diagnostics for all subjects |
-| DSE              | Bio, Chem, Econ, ICT, Maths, Physics                                   | Flashcards and practice for all 6 subjects         |
-| AP               | Maths (BC), Physics, Chem, Bio, CS                                     | Practice and diagnostics for all 5 subjects        |
-| GCSE             | Maths, Physics, Chem, Bio, CS, English                                 | Practice and diagnostics for all 6 subjects        |
-| Scottish Highers | Maths, Physics, Chem, Bio, CS                                          | Flashcards and practice for all 5 subjects         |
-| ILC              | Maths, Physics, Chem, Bio, CS                                          | Flashcards and practice for all 5 subjects         |
-| SAT              | Maths, Reading/Writing                                                 | Practice for both subjects                         |
-| CBSE             | Maths, Physics, Chem                                                   | Flashcards for maths/physics only                  |
-| Gaokao           | Mathematics (1 flashcard)                                              | Minimal content                                    |
-| HSC/VCE          | Physics (1 flashcard), intro                                           | Minimal content                                    |
+| Qualification    | Subjects Covered                                                       | Interactive Coverage                                           |
+| ---------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------- |
+| A-Level          | Maths, FM, Physics, Chem, Bio, CS, Econ, English, Psych, Geog, History | Flashcards, practice, diagnostics for all subjects             |
+| IB               | Bio, Chem, Physics, Maths AA, Econ, Psych, Geog, English, History, CS  | Flashcards, practice, diagnostics for all subjects             |
+| DSE              | Bio, Chem, Econ, ICT, Maths, Physics, Geography, History               | Flashcards, practice, diagnostics for all 8 subjects           |
+| AP               | Maths (BC), Physics, Chem, Bio, CS, Statistics, English, History       | Practice, diagnostics, and subtopic content for all 8 subjects |
+| GCSE             | Maths, Physics, Chem, Bio, CS, English                                 | Practice and diagnostics for all 6 subjects                    |
+| Scottish Highers | Maths, Physics, Chem, Bio, CS                                          | Flashcards and practice for all 5 subjects                     |
+| ILC              | Maths, Physics, Chem, Bio, CS                                          | Flashcards and practice for all 5 subjects                     |
+| SAT              | Maths, Reading/Writing                                                 | Practice for both subjects                                     |
+| CBSE             | Maths, Physics, Chem                                                   | Flashcards for maths/physics only                              |
+| Gaokao           | Mathematics (1 flashcard)                                              | Minimal content                                                |
+| HSC/VCE          | Physics (1 flashcard), intro                                           | Minimal content                                                |
 
 #### University Content Detail
 
-| Subject          | Topics             | Flashcards | Practice | Status         |
-| ---------------- | ------------------ | ---------- | -------- | -------------- |
-| Mathematics      | 9 (incl. topology) | 8          | 9        | Complete       |
-| Physics          | 7                  | 6          | 8        | Complete       |
-| Computing        | 6                  | 6          | 6        | Complete       |
-| Computer Science | 12                 | 3          | 0        | Needs practice |
-| Chemistry        | 12                 | 0          | 0        | Needs practice |
-| Admissions       | 5                  | 0          | 0        | Adequate       |
+| Subject          | Topics              | Flashcards | Practice | Status   |
+| ---------------- | ------------------- | ---------- | -------- | -------- |
+| Mathematics      | 12 (incl. topology) | 8          | 9        | Complete |
+| Physics          | 7                   | 6          | 8        | Complete |
+| Computing        | 6                   | 6          | 12       | Complete |
+| Computer Science | 12                  | 3          | 12       | Complete |
+| Chemistry        | 12                  | 0          | 14       | Complete |
+| Admissions       | 5                   | 0          | 0        | Adequate |
 
 ### 4.2 Priority Actions
 
@@ -341,18 +341,18 @@ All P0 items from original audit were based on incorrect data. Survey findings (
 
 #### P3: Low (future work)
 
-| #   | Action                                                                     | Subject Area     | Effort     |
-| --- | -------------------------------------------------------------------------- | ---------------- | ---------- |
-| 21  | DSE: add Geography and History subjects                                    | DSE              | Large      |
-| 22  | DSE Maths: add Extended Part M1/M2 content                                 | DSE Maths        | Medium     |
-| 23  | University: add Measure Theory, Functional Analysis, Differential Geometry | University Maths | Very large |
-| 24  | Qualifications: add AP Statistics, AP English, AP History                  | AP               | Very large |
-| 25  | Cross-language content (ZH, JA, KO, DE, FR, ES)                            | All              | Very large |
-| 26  | University CS: add practice files (12 topics, 0 practice)                  | University CS    | Large      |
-| 27  | University Chemistry: add practice files (12 topics, 0 practice)           | University Chem  | Large      |
-| 28  | IB Maths AI: create content or remove reference from intro.md              | IB Maths         | Medium     |
-| 29  | GCSE/Highers/ILC: add diagnostics (practice complete, diagnostics missing) | Qualifications   | Medium     |
-| 30  | CBSE: add flashcards and practice for maths/physics/chemistry              | CBSE             | Medium     |
+| #   | Action                                                                     | Subject Area     | Effort     | Status                                                |
+| --- | -------------------------------------------------------------------------- | ---------------- | ---------- | ----------------------------------------------------- |
+| 21  | DSE: add Geography and History subjects                                    | DSE              | Large      | **Done**                                              |
+| 22  | DSE Maths: add Extended Part M1/M2 content                                 | DSE Maths        | Medium     | **Done**                                              |
+| 23  | University: add Measure Theory, Functional Analysis, Differential Geometry | University Maths | Very large | **Done**                                              |
+| 24  | Qualifications: add AP Statistics, AP English, AP History                  | AP               | Very large | **Done**                                              |
+| 25  | Cross-language content (ZH, JA, KO, DE, FR, ES)                            | All              | Very large | **Blocked** -- needs native speakers for TQA Level 4+ |
+| 26  | University CS: add practice files (12 topics, 0 practice)                  | University CS    | Large      | **Done**                                              |
+| 27  | University Chemistry: add practice files (12 topics, 0 practice)           | University Chem  | Large      | **Done**                                              |
+| 28  | IB Maths AI: create content or remove reference from intro.md              | IB Maths         | Medium     | **Cancelled** -- non-issue, no AI reference exists    |
+| 29  | GCSE/Highers/ILC: add diagnostics (practice complete, diagnostics missing) | Qualifications   | Medium     | **Done**                                              |
+| 30  | CBSE: add flashcards and practice for maths/physics/chemistry              | CBSE             | Medium     | **Done**                                              |
 
 ### 4.3 University Foundational Ordering (Aluffi Algebra 0) -- COMPLETED
 
@@ -371,14 +371,15 @@ complex analysis about analytic functions on algebraically closed fields.
 Lagrange -> Normal/Quotient -> Homomorphisms -> Group Actions -> Sylow -> Rings -> Ideals ->
 Polynomial Rings -> EDs/PIDs/UFDs -> Field Theory -> Galois Theory).
 
-### 4.4 Programming Language Expansion
+### 4.4 Programming Language Expansion -- COMPLETED
 
-| Language | Current Lines | Target Lines | Priority |
-| -------- | ------------- | ------------ | -------- |
-| Swift    | 0             | 5,000+       | High     |
-| Ruby     | 0             | 5,000+       | Medium   |
-| Haskell  | 0             | 5,000+       | Medium   |
-| Elixir   | 0             | 5,000+       | Low      |
+| Language  | Lines      | Files  | Flashcards | Practice | Status   |
+| --------- | ---------- | ------ | ---------- | -------- | -------- |
+| Swift     | 4,215      | 14     | 20         | 10       | **Done** |
+| Ruby      | 6,536      | 16     | 20         | 10       | **Done** |
+| Haskell   | 5,177      | 16     | 20         | 10       | **Done** |
+| Elixir    | 5,370      | 14     | 20         | 10       | **Done** |
+| **Total** | **21,298** | **60** | **80**     | **40**   | --       |
 
 ### 4.4 Cross-Language Content
 
