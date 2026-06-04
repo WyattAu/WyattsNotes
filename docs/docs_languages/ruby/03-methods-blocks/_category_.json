@@ -1,0 +1,8 @@
+{
+  "label": "Methods and Blocks",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Method definitions, blocks, procs, lambdas, yield, and method objects in Ruby."
+  }
+}

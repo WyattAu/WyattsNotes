@@ -1,0 +1,8 @@
+{
+  "label": "Introduction",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Haskell overview, history, pure functional programming paradigm, lazy evaluation, and ecosystem setup."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Monads and Functors",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Maybe, Either, IO, State, Reader, Writer monads, monad transformers, and Kleisli composition."
+  }
+}

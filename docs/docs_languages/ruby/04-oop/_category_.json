@@ -1,0 +1,8 @@
+{
+  "label": "Object-Oriented Programming",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Classes, modules, inheritance, mixins, access control, and standard library modules."
+  }
+}

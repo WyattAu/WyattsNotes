@@ -1,0 +1,141 @@
+---
+title: Elixir Practice (Basics)
+description:
+  'Interactive Elixir practice with auto-graded MCQ problems. Test your knowledge of pattern
+  matching, data types, concurrency, OTP, and functional programming.'
+slug: practice-elixir-basics
+date: 2026-06-04
+tags:
+  - Elixir
+categories:
+  - Elixir
+---
+
+import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
+
+## Elixir -- Interactive Practice
+
+10 auto-graded practice problems covering core Elixir concepts. Select an answer, submit, and review
+the explanation.
+
+---
+
+### Data Types and Pattern Matching
+
+<PracticeProblem
+  question="What does `{a, b} = {1, 2}` do in Elixir?"
+  options={[
+    'Binds a to 1 and b to 2',
+    'Checks if a equals 1 and b equals 2',
+    'Creates a tuple {1, 2} and assigns it to a',
+    'Raises a syntax error',
+  ]}
+  correctAnswer={0}
+  explanation="The = operator is a match operator, not assignment. It matches the right side against the pattern on the left. Unbound variables (a, b) get bound to the corresponding values from the tuple."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What is the result of `[0 | [1, 2, 3]]`?"
+  options={['[0, 1, 2, 3]', '[1, 2, 3, 0]', '{:ok, [0, 1, 2, 3]}', 'Syntax error']}
+  correctAnswer={0}
+  explanation="The | operator prepends an element to a list. [0 | [1, 2, 3]] produces [0, 1, 2, 3]. This is O(1) because it only creates a new head node pointing to the existing tail."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question="What does `^x = 2` do if x is currently bound to 1?"
+  options={[
+    'Raises a MatchError because x (1) does not equal 2',
+    'Rebinds x to 2',
+    'Returns false',
+    'Returns :error',
+  ]}
+  correctAnswer={0}
+  explanation="The pin operator ^ prevents rebinding. ^x = 2 attempts to match x's current value (1) against 2. Since 1 != 2, it raises a MatchError. Without the pin, x = 2 would rebind x to 2."
+  difficulty="medium"
+/>
+
+---
+
+### Functions and Modules
+
+<PracticeProblem
+  question="What is the difference between `def` and `defp` in a module?"
+  options={[
+    'def is public, defp is private to the defining module',
+    'def is for functions, defp is for protocols',
+    'def compiles at runtime, defp compiles at compile time',
+    'def takes any number of args, defp takes exactly one',
+  ]}
+  correctAnswer={0}
+  explanation="def defines a public function callable from any module. defp defines a private function only callable from within the defining module. Attempting to call a private function from outside raises UndefinedFunctionError."
+  difficulty="easy"
+/>
+
+<PracticeProblem
+  question={`What does `&(&1 * 2)` create?`}
+  options={['An anonymous function that multiplies its argument by 2', 'A reference to a variable named &1', 'A macro that doubles values at compile time', 'A syntax error']}
+  correctAnswer={0}
+  explanation="The & operator with positional arguments (&1, &2, etc.) creates an anonymous function shorthand. &(&1 * 2) is equivalent to fn x -> x * 2 end. &1 is the first argument, &2 would be the second, and so on."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="Which of the following correctly accesses the value associated with the key :name in the map `%{name: "Alice", age: 30}`?"
+  options={['map.name', 'map[:name] or map.name both work', 'map.get(:name)', 'map.fetch("name")']}
+  correctAnswer={0}
+  explanation="For maps with atom keys, the dot syntax (map.name) works and returns the value. map[:name] also works and returns nil for missing keys. The dot syntax raises KeyError if the key is missing. map.get/2 is a Map module function, not a dot-access method."
+  difficulty="easy"
+/>
+
+---
+
+### Concurrency and OTP
+
+<PracticeProblem
+  question="What happens when a linked process crashes in Elixir?"
+  options={[
+    'The linked process receives an exit signal and also crashes',
+    'Nothing happens because processes are isolated',
+    'The process is automatically restarted by the VM',
+    'A log message is written and the crash is ignored',
+  ]}
+  correctAnswer={0}
+  explanation="spawn_link creates a bidirectional link. When one process exits abnormally, the exit signal propagates to the linked process, causing it to crash too. To prevent this, set Process.flag(:trap_exit, true) to receive {:EXIT, pid, reason} messages instead."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="What is the difference between GenServer.call and GenServer.cast?"
+  options={[
+    'call is synchronous (blocks for reply), cast is asynchronous (fire-and-forget)',
+    'call is for external callers, cast is for internal callers',
+    'call sends to a named process, cast sends to a PID',
+    'call uses TCP, cast uses UDP',
+  ]}
+  correctAnswer={0}
+  explanation="GenServer.call/3 blocks the caller until handle_call/3 returns {:reply, reply, new_state}. GenServer.cast/2 returns :ok immediately and the server processes the message via handle_cast/2, returning {:noreply, new_state}."
+  difficulty="medium"
+/>
+
+<PracticeProblem
+  question="When should you use the `:one_for_all` supervision strategy?"
+  options={[
+    'When children are tightly coupled and cannot function without each other',
+    'When each child is completely independent',
+    'When you want only the first child to restart',
+    'When children are on different machines',
+  ]}
+  correctAnswer={0}
+  explanation="The :one_for_all strategy restarts ALL children when any single child crashes. This is appropriate for tightly coupled processes that share state or dependencies and cannot operate correctly if one component is missing."
+  difficulty="hard"
+/>
+
+<PracticeProblem
+  question={`What does `quote do: 1 + 2` return in Elixir?`}
+  options={['An AST tuple: {:+, meta, [1, 2]}', 'The number 3', 'A string "1 + 2"', 'A macro definition']}
+  correctAnswer={0}
+  explanation="quote converts Elixir code into its Abstract Syntax Tree representation. 1 + 2 becomes {:+, [context: Elixir, imports: [{2, Kernel}]], [1, 2]} -- a three-element tuple with the operation atom, metadata, and argument list. Literals like integers represent themselves."
+  difficulty="hard"
+/>

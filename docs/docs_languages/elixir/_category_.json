@@ -1,0 +1,8 @@
+{
+  "label": "Elixir",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive Elixir notes covering fundamentals, pattern matching, concurrency with OTP, metaprogramming, and the Phoenix web framework."
+  }
+}

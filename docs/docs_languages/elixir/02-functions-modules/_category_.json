@@ -1,0 +1,8 @@
+{
+  "label": "Functions and Modules",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Named and anonymous functions, modules, structs, protocols, behaviours, and typespecs in Elixir."
+  }
+}

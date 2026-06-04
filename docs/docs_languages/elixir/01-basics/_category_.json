@@ -1,0 +1,8 @@
+{
+  "label": "Basics",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Elixir data types, pattern matching, guards, sigils, and variable binding semantics."
+  }
+}

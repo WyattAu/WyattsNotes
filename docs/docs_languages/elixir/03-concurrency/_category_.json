@@ -1,0 +1,8 @@
+{
+  "label": "Concurrency and OTP",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Processes, GenServer, Supervisors, Tasks, Agents, and fault tolerance with the OTP framework."
+  }
+}

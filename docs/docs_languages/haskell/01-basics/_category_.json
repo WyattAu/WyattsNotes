@@ -1,0 +1,8 @@
+{
+  "label": "Basics",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Core Haskell types, function definitions, guards, list comprehensions, currying, and higher-order functions."
+  }
+}

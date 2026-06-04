@@ -1,0 +1,8 @@
+{
+  "label": "Ruby",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive Ruby notes covering fundamentals, control flow, methods, blocks, OOP, metaprogramming, and concurrency."
+  }
+}
