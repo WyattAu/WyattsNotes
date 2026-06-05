@@ -1,3 +1,4 @@
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { describe, expect, it } from 'vitest';
@@ -211,5 +212,129 @@ describe('CircuitBuilder component', () => {
     expect(html).toContain('Resistor');
     expect(html).toContain('Ammeter');
     expect(html).toContain('Voltmeter');
+  });
+});
+
+describe('CircuitBuilder interactions', () => {
+  it('adds a resistor on click', () => {
+    render(<CircuitBuilder />);
+    expect(screen.queryByText('R1')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByText('+ Resistor'));
+    expect(screen.getByText('R1')).toBeInTheDocument();
+  });
+
+  it('adds ammeter on click', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Ammeter'));
+    // The ammeter badge "A" should appear in the component list
+    const badges = screen.getAllByText('A');
+
+    expect(badges.length).toBeGreaterThanOrEqual(2); // tip text + badge
+  });
+
+  it('adds voltmeter on click', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Voltmeter'));
+    // The voltmeter badge "V" should appear in the component list
+    const badges = screen.getAllByText('V');
+
+    expect(badges.length).toBeGreaterThanOrEqual(2); // tip text + badge
+  });
+
+  it('limits resistors to 3', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('+ Resistor'));
+    // 4th resistor should not appear
+    fireEvent.click(screen.getByText('+ Resistor'));
+    expect(screen.queryByText('R4')).not.toBeInTheDocument();
+    expect(screen.getByText('R3')).toBeInTheDocument();
+  });
+
+  it('limits ammeter to 1', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Ammeter'));
+    // Badge "A" in component list is now present
+    const beforeA = screen.getAllByText('A').length;
+
+    fireEvent.click(screen.getByText('+ Ammeter'));
+    // Adding second ammeter should be no-op — count unchanged
+    const afterA = screen.getAllByText('A').length;
+
+    expect(afterA).toBe(beforeA);
+  });
+
+  it('removes selected component', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Resistor'));
+    expect(screen.getByText('R1')).toBeInTheDocument();
+    // Select R1 then click Remove
+    fireEvent.click(screen.getByText('R1'));
+    fireEvent.click(screen.getByText('Remove'));
+    expect(screen.queryByText('R1')).not.toBeInTheDocument();
+  });
+
+  it('toggles between series and parallel', () => {
+    render(<CircuitBuilder />);
+    const parallelBtns = screen.getAllByText('Parallel');
+
+    // Click the circuit-type toggle (not preset)
+    fireEvent.click(parallelBtns[0]);
+    // Calculate should work with parallel
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('Calculate'));
+    expect(screen.getByText(/R_total/)).toBeInTheDocument();
+  });
+
+  it('calculates series circuit', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('Calculate'));
+    expect(screen.getByText(/R_total/)).toBeInTheDocument();
+    expect(screen.getByText(/I_total/)).toBeInTheDocument();
+  });
+
+  it('shows voltage drops after calculation', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('Calculate'));
+    expect(screen.getAllByText(/ΔV/).length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('loads a preset and calculates', () => {
+    render(<CircuitBuilder />);
+    // Preset button text is name.split(':')[0] = "Series"
+    const presetBtns = screen.getAllByText('Series');
+
+    // First "Series" is the circuit type button, second is the preset
+    expect(presetBtns.length).toBeGreaterThanOrEqual(2);
+    fireEvent.click(presetBtns[presetBtns.length - 1]);
+    // Preset loads 2 resistors
+    expect(screen.getByText('R1')).toBeInTheDocument();
+    fireEvent.click(screen.getByText('Calculate'));
+    expect(screen.getByText(/R_total/)).toBeInTheDocument();
+  });
+
+  it('shows no results before calculation', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Resistor'));
+    expect(screen.queryByText(/R_total/)).not.toBeInTheDocument();
+  });
+
+  it('clears results when switching circuit type', () => {
+    render(<CircuitBuilder />);
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('+ Resistor'));
+    fireEvent.click(screen.getByText('Calculate'));
+    expect(screen.getByText(/R_total/)).toBeInTheDocument();
+    // Switch type — results should clear
+    const parallelBtns = screen.getAllByText('Parallel');
+
+    fireEvent.click(parallelBtns[0]);
+    expect(screen.queryByText(/R_total/)).not.toBeInTheDocument();
   });
 });
