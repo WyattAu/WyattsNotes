@@ -27,7 +27,7 @@ DNS, HTTP, and error detection. Select an option to check your answer and view t
     'Data link layer (Layer 2)',
   ]}
   correctAnswer={0}
-  explanation"The transport layer (Layer 4) provides end-to-end communication services including reliable delivery (TCP), flow control, congestion control, and multiplexing. The network layer (Layer 3) handles routing and logical addressing (IP). The session layer manages dialogues. The data link layer handles framing and error detection on a single hop."
+  explanation="The transport layer (Layer 4) provides end-to-end communication services including reliable delivery (TCP), flow control, congestion control, and multiplexing. The network layer (Layer 3) handles routing and logical addressing (IP). The session layer manages dialogues. The data link layer handles framing and error detection on a single hop."
   difficulty="easy"
 />
 
@@ -40,20 +40,15 @@ DNS, HTTP, and error detection. Select an option to check your answer and view t
     '$\\text{SNR} = \\log_2(30)$',
   ]}
   correctAnswer={0}
-  explanation"SNR in decibels is defined as $\\text{SNR}_{\\text{dB}} = 10 \\log_{10}(\\text{SNR}_{\\text{power ratio}})$. To convert back: $\\text{SNR} = 10^{\\text{SNR}_{\\text{dB}}/10}$. For 30 dB: $\\text{SNR} = 10^3 = 1000$. If bandwidth is $B$ Hz, then $C = B \\log_2(1001) \\approx 10B$. A 30 dB SNR means the signal power is 1000 times the noise power."
+  explanation="SNR in decibels is defined as $\\text{SNR}_{\\text{dB}} = 10 \\log_{10}(\\text{SNR}_{\\text{power ratio}})$. To convert back: $\\text{SNR} = 10^{\\text{SNR}_{\\text{dB}}/10}$. For 30 dB: $\\text{SNR} = 10^3 = 1000$. If bandwidth is $B$ Hz, then $C = B \\log_2(1001) \\approx 10B$. A 30 dB SNR means the signal power is 1000 times the noise power."
   difficulty="medium"
 />
 
 <PracticeProblem
   question="CRC (Cyclic Redundancy Check) uses polynomial division to detect errors. A CRC with generator polynomial of degree $r$ can detect all error bursts of length up to:"
-  options={[
-    '$r$ bits',
-    '$r/2$ bits',
-    '$r + 1$ bits',
-    '$2r$ bits',
-  ]}
+  options={['$r$ bits', '$r/2$ bits', '$r + 1$ bits', '$2r$ bits']}
   correctAnswer={0}
-  explanation"CRC appends $r$ zero bits to the message and divides by a generator polynomial $G(x)$ of degree $r$. The remainder (also $r$ bits) is appended as the CRC. This construction guarantees detection of all single-bit errors, all double-bit errors, all odd-number errors, and any burst error of length $\\leq r$ bits. For bursts longer than $r$, the detection probability is $1 - 2^{-r}$."
+  explanation="CRC appends $r$ zero bits to the message and divides by a generator polynomial $G(x)$ of degree $r$. The remainder (also $r$ bits) is appended as the CRC. This construction guarantees detection of all single-bit errors, all double-bit errors, all odd-number errors, and any burst error of length $\\leq r$ bits. For bursts longer than $r$, the detection probability is $1 - 2^{-r}$."
   difficulty="medium"
 />
 
@@ -66,7 +61,7 @@ DNS, HTTP, and error detection. Select an option to check your answer and view t
     'The collision is resolved by the switch',
   ]}
   correctAnswer={0}
-  explanation"On collision detection, both stations send a jam signal to ensure all nodes detect the collision, then stop transmitting. Each station waits a random backoff time: $\\text{backoff} = \\text{rand}(0, 2^k - 1) \\times \\text{slot time}$ where $k = \\min(\\text{retries}, 10)$. The exponential backoff reduces collision probability on repeated attempts."
+  explanation="On collision detection, both stations send a jam signal to ensure all nodes detect the collision, then stop transmitting. Each station waits a random backoff time: $\\text{backoff} = \\text{rand}(0, 2^k - 1) \\times \\text{slot time}$ where $k = \\min(\\text{retries}, 10)$. The exponential backoff reduces collision probability on repeated attempts."
   difficulty="easy"
 />
 
@@ -79,7 +74,7 @@ DNS, HTTP, and error detection. Select an option to check your answer and view t
     'Both are identical in operation',
   ]}
   correctAnswer={0}
-  explanation"Ethernet (wired) uses CSMA/CD: stations can detect collisions while transmitting by comparing signal voltage on the wire. Wi-Fi (wireless) cannot reliably detect collisions during transmission due to the hidden terminal problem. CSMA/CA avoids collisions by reserving the channel with RTS/CTS (Request to Send / Clear to Send) handshake before data transmission."
+  explanation="Ethernet (wired) uses CSMA/CD: stations can detect collisions while transmitting by comparing signal voltage on the wire. Wi-Fi (wireless) cannot reliably detect collisions during transmission due to the hidden terminal problem. CSMA/CA avoids collisions by reserving the channel with RTS/CTS (Request to Send / Clear to Send) handshake before data transmission."
   difficulty="medium"
 />
 
@@ -94,7 +89,7 @@ DNS, HTTP, and error detection. Select an option to check your answer and view t
     'Subnet mask 255.255.255.0; 254 usable hosts per subnet',
   ]}
   correctAnswer={0}
-  explanation"A /26 prefix means 26 bits for network, 6 bits for host. Subnet mask: 11111111.11111111.11111111.11000000 = 255.255.255.192. Each subnet has $2^6 = 64$ addresses, minus network address and broadcast address = 62 usable hosts. From /24, this creates 4 subnets: 192.168.1.0/26, 192.168.1.64/26, 192.168.1.128/26, 192.168.1.192/26."
+  explanation="A /26 prefix means 26 bits for network, 6 bits for host. Subnet mask: 11111111.11111111.11111111.11000000 = 255.255.255.192. Each subnet has $2^6 = 64$ addresses, minus network address and broadcast address = 62 usable hosts. From /24, this creates 4 subnets: 192.168.1.0/26, 192.168.1.64/26, 192.168.1.128/26, 192.168.1.192/26."
   difficulty="medium"
 />
 
@@ -107,20 +102,15 @@ DNS, HTTP, and error detection. Select an option to check your answer and view t
     'No action is taken; the receiver must request retransmission',
   ]}
   correctAnswer={0}
-  explanation"Three duplicate ACKs indicate that one segment was lost but subsequent segments arrived. This triggers fast retransmit: retransmit the missing segment immediately (without waiting for timeout), set ssthresh = cwnd/2, and set cwnd = ssthresh (fast recovery). This avoids the costly timeout mechanism that would reset cwnd to 1 MSS."
+  explanation="Three duplicate ACKs indicate that one segment was lost but subsequent segments arrived. This triggers fast retransmit: retransmit the missing segment immediately (without waiting for timeout), set ssthresh = cwnd/2, and set cwnd = ssthresh (fast recovery). This avoids the costly timeout mechanism that would reset cwnd to 1 MSS."
   difficulty="hard"
 />
 
 <PracticeProblem
   question="In DNS resolution, which record type maps a domain name to an alias (another domain name)?"
-  options={[
-    'CNAME (Canonical Name)',
-    'A (IPv4 address)',
-    'MX (Mail Exchange)',
-    'NS (Name Server)',
-  ]}
+  options={['CNAME (Canonical Name)', 'A (IPv4 address)', 'MX (Mail Exchange)', 'NS (Name Server)']}
   correctAnswer={0}
-  explanation"CNAME maps a domain to another domain (aliasing). For example, www.example.com might be a CNAME for example.com. A records map to IPv4 addresses directly. MX records specify mail servers. NS records specify authoritative name servers for a zone. The DNS resolver follows CNAME chains until reaching an A or AAAA record."
+  explanation="CNAME maps a domain to another domain (aliasing). For example, www.example.com might be a CNAME for example.com. A records map to IPv4 addresses directly. MX records specify mail servers. NS records specify authoritative name servers for a zone. The DNS resolver follows CNAME chains until reaching an A or AAAA record."
   difficulty="easy"
 />
 
@@ -133,19 +123,19 @@ DNS, HTTP, and error detection. Select an option to check your answer and view t
     'Simpler header format without compression',
   ]}
   correctAnswer={0}
-  explanation"HTTP/1.1 allows pipelining but suffers from head-of-line blocking: one slow response blocks all subsequent responses on the same connection. HTTP/2 multiplexes requests and responses on a single TCP connection using streams and frames, with HPACK header compression. However, HTTP/2 still has HOL blocking at the TCP layer (solved by HTTP/3 with QUIC/UDP)."
+  explanation="HTTP/1.1 allows pipelining but suffers from head-of-line blocking: one slow response blocks all subsequent responses on the same connection. HTTP/2 multiplexes requests and responses on a single TCP connection using streams and frames, with HPACK header compression. However, HTTP/2 still has HOL blocking at the TCP layer (solved by HTTP/3 with QUIC/UDP)."
   difficulty="medium"
 />
 
 <PracticeProblem
   question="TCP uses a sliding window for flow control. What is Silly Window Syndrome and how is it avoided on the sender side?"
   options={[
-    'Small segments are sent due to tiny advertised windows; Nagle\'s algorithm buffers small writes and sends them together',
+    "Small segments are sent due to tiny advertised windows; Nagle's algorithm buffers small writes and sends them together",
     'Large segments overflow the receiver buffer; the window size must be doubled',
     'The window closes permanently; the connection must be reset',
     'Segments arrive out of order; selective acknowledgments fix this',
   ]}
   correctAnswer={0}
-  explanation"Silly Window Syndrome occurs when the receiver advertises tiny windows (e.g., 1 byte) causing the sender to transmit tiny segments inefficiently. Nagle's algorithm (sender side) buffers small writes until an ACK for the previous data arrives or enough data accumulates for a full segment. Clark's solution (receiver side) avoids advertising small windows."
+  explanation="Silly Window Syndrome occurs when the receiver advertises tiny windows (e.g., 1 byte) causing the sender to transmit tiny segments inefficiently. Nagle's algorithm (sender side) buffers small writes until an ACK for the previous data arrives or enough data accumulates for a full segment. Clark's solution (receiver side) avoids advertising small windows."
   difficulty="hard"
 />

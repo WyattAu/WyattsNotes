@@ -104,9 +104,14 @@ the explanation.
 
 <PracticeProblem
   question="By the Mean Value Theorem, if $f(1) = 3$ and $f(3) = 7$ and $f$ is differentiable on $(1, 3)$, what is guaranteed?"
-  options={['There exists $c \in (1, 3)$ with $f'(c) = 2$', '$f'(x) = 2$ for all $x \in (1, 3)$', 'There exists $c \in (1, 3)$ with $f'(c) = 4$', '$f$ is increasing on $(1, 3)$']}
+  options={[
+    `There exists $c \\in (1, 3)$ with $f'(c) = 2$`,
+    `$f'(x) = 2$ for all $x \\in (1, 3)$`,
+    `There exists $c \\in (1, 3)$ with $f'(c) = 4$`,
+    `$f$ is increasing on $(1, 3)$`,
+  ]}
   correctAnswer={0}
-  explanation="The MVT gives $\frac{f(b) - f(a)}{b - a} = f'(c)$ for some $c \in (a, b)$. Here: $\frac{f(3) - f(1)}{3 - 1} = \frac{7 - 3}{2} = 2 = f'(c)$ for some $c \in (1, 3)$. This means the instantaneous rate of change equals the average rate of change at some interior point. It does not mean $f'(x) = 2$ everywhere, only at some point."
+  explanation={`The MVT gives $\\frac{f(b) - f(a)}{b - a} = f'(c)$ for some $c \\in (a, b)$. Here: $\\frac{f(3) - f(1)}{3 - 1} = \\frac{7 - 3}{2} = 2 = f'(c)$ for some $c \\in (1, 3)$. This means the instantaneous rate of change equals the average rate of change at some interior point. It does not mean $f'(x) = 2$ everywhere, only at some point.`}
   difficulty="medium"
 />
 
@@ -129,7 +134,12 @@ the explanation.
 
 <PracticeProblem
   question="What does the Fundamental Theorem of Calculus (Part 1) state about $F(x) = \int_a^x f(t)\,dt$ when $f$ is continuous on $[a, b]$?"
-  options={['$F$ is differentiable on $(a, b)$ and $F'(x) = f(x)$', '$F$ is continuous and $\int_a^b F'(x)\,dx = F(b) - F(a)$', '$F(x) = f'(x)$ for all $x \in (a, b)$', '$F$ is twice differentiable and $F''(x) = f'(x)$']}
+  options={[
+    `$F$ is differentiable on $(a, b)$ and $F'(x) = f(x)$`,
+    `$F$ is continuous and $\int_a^b F'(x)\,dx = F(b) - F(a)$`,
+    `$F(x) = f'(x)$ for all $x \in (a, b)$`,
+    `$F$ is twice differentiable and $F''(x) = f'(x)$`,
+  ]}
   correctAnswer={0}
   explanation="FTC Part 1: If $f$ is continuous on $[a, b]$, then $F(x) = \int_a^x f(t)\,dt$ is differentiable on $(a, b)$ and $F'(x) = f(x)$. This establishes that integration and differentiation are inverse operations. FTC Part 2 (the evaluation theorem) states $\int_a^b f(x)\,dx = F(b) - F(a)$ where $F$ is any antiderivative of $f$."
   difficulty="medium"

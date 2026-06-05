@@ -27,7 +27,7 @@ strategies, and query optimization. Select an option to check your answer and vi
     'Neither filters aggregated results; you must use a subquery',
   ]}
   correctAnswer={0}
-  explanation"WHERE applies to individual rows before aggregation (filtering input to GROUP BY). HAVING applies to groups after aggregation (filtering the result of GROUP BY). Example: SELECT dept, AVG(salary) FROM emp GROUP BY dept HAVING COUNT(*) > 5 filters departments with more than 5 employees."
+  explanation="WHERE applies to individual rows before aggregation (filtering input to GROUP BY). HAVING applies to groups after aggregation (filtering the result of GROUP BY). Example: SELECT dept, AVG(salary) FROM emp GROUP BY dept HAVING COUNT(*) > 5 filters departments with more than 5 employees."
   difficulty="easy"
 />
 
@@ -40,7 +40,7 @@ strategies, and query optimization. Select an option to check your answer and vi
     'The relation is already in BCNF',
   ]}
   correctAnswer={0}
-  explanation"The candidate key is $\\{A, B\\}$. There are no partial dependencies (since AB is the key, and $C$ depends on all of AB). However, $C \\to D$ and $D \\to E$ are transitive dependencies: non-prime attributes $D$ and $E$ depend on $C$ rather than directly on the key. This violates 3NF (and BCNF). Decompose into $R_1(A,B,C)$, $R_2(C,D)$, $R_3(D,E)$."
+  explanation="The candidate key is $\\{A, B\\}$. There are no partial dependencies (since AB is the key, and $C$ depends on all of AB). However, $C \\to D$ and $D \\to E$ are transitive dependencies: non-prime attributes $D$ and $E$ depend on $C$ rather than directly on the key. This violates 3NF (and BCNF). Decompose into $R_1(A,B,C)$, $R_2(C,D)$, $R_3(D,E)$."
   difficulty="medium"
 />
 
@@ -53,7 +53,7 @@ strategies, and query optimization. Select an option to check your answer and vi
     '$X$ must contain at least one prime attribute',
   ]}
   correctAnswer={0}
-  explanation"BCNF is stricter than 3NF: for every non-trivial FD $X \\to Y$, $X$ must be a superkey (a superset of some candidate key). 3NF allows $X \\to Y$ if $Y$ is a prime attribute, even when $X$ is not a superkey. BCNF decomposition may cause lossless-join issues that 3NF decomposition avoids."
+  explanation="BCNF is stricter than 3NF: for every non-trivial FD $X \\to Y$, $X$ must be a superkey (a superset of some candidate key). 3NF allows $X \\to Y$ if $Y$ is a prime attribute, even when $X$ is not a superkey. BCNF decomposition may cause lossless-join issues that 3NF decomposition avoids."
   difficulty="medium"
 />
 
@@ -66,20 +66,15 @@ strategies, and query optimization. Select an option to check your answer and vi
     'The order depends on the query optimizer',
   ]}
   correctAnswer={0}
-  explanation"Relational algebra is applied inside-out (like nested function calls). First, $\\pi_{\\text{name, gpa}}(\\text{Students})$ projects only the name and gpa columns from Students. Then, $\\sigma_{\\text{dept}='CS'}$ filters the projected result. A query optimizer might push the selection down before projection for efficiency (selection pushdown), but the expression as written applies projection first."
+  explanation="Relational algebra is applied inside-out (like nested function calls). First, $\\pi_{\\text{name, gpa}}(\\text{Students})$ projects only the name and gpa columns from Students. Then, $\\sigma_{\\text{dept}='CS'}$ filters the projected result. A query optimizer might push the selection down before projection for efficiency (selection pushdown), but the expression as written applies projection first."
   difficulty="easy"
 />
 
 <PracticeProblem
   question="Armstrong's Axioms for functional dependencies include reflexivity ($Y \\subseteq X \\Rightarrow X \\to Y$), augmentation ($X \\to Y \\Rightarrow XZ \\to YZ$), and transitivity ($X \\to Y, Y \\to Z \\Rightarrow X \\to Z$). Which derived rule states that $X \\to Y$ and $X \\to Z$ implies $X \\to YZ$?"
-  options={[
-    'Union rule',
-    'Decomposition rule',
-    'Pseudotransitivity rule',
-    'Reflexivity rule',
-  ]}
+  options={['Union rule', 'Decomposition rule', 'Pseudotransitivity rule', 'Reflexivity rule']}
   correctAnswer={0}
-  explanation"The union rule: if $X \\to Y$ and $X \\to Z$, then $X \\to YZ$. Proof: from $X \\to Y$, by augmentation with $Z$: $XZ \\to YZ$. Since $X \\to Z$, by augmentation with $X$: $XX \\to XZ$, i.e., $X \\to XZ$. By transitivity: $X \\to YZ$. The decomposition rule is the reverse: $X \\to YZ$ implies $X \\to Y$ and $X \\to Z$."
+  explanation="The union rule: if $X \\to Y$ and $X \\to Z$, then $X \\to YZ$. Proof: from $X \\to Y$, by augmentation with $Z$: $XZ \\to YZ$. Since $X \\to Z$, by augmentation with $X$: $XX \\to XZ$, i.e., $X \\to XZ$. By transitivity: $X \\to YZ$. The decomposition rule is the reverse: $X \\to YZ$ implies $X \\to Y$ and $X \\to Z$."
   difficulty="medium"
 />
 
@@ -94,7 +89,7 @@ strategies, and query optimization. Select an option to check your answer and vi
     'Bitmap indexes are used for range scans',
   ]}
   correctAnswer={0}
-  explanation"B+ tree leaves are connected via pointers forming a linked list in sorted order. A range query first finds the starting key in $O(\\log_d n)$, then scans sequentially through the leaf list. Total cost: $O(\\log_d n + k)$ where $k$ is the number of results. The parameter $d$ is chosen so one node fits in a disk block."
+  explanation="B+ tree leaves are connected via pointers forming a linked list in sorted order. A range query first finds the starting key in $O(\\log_d n)$, then scans sequentially through the leaf list. Total cost: $O(\\log_d n + k)$ where $k$ is the number of results. The parameter $d$ is chosen so one node fits in a disk block."
   difficulty="medium"
 />
 
@@ -107,7 +102,7 @@ strategies, and query optimization. Select an option to check your answer and vi
     'Both dirty reads and non-repeatable reads',
   ]}
   correctAnswer={0}
-  explanation"REPEATABLE READ prevents dirty reads (no uncommitted data) and non-repeatable reads (locks acquired on read rows prevent modifications). However, it does not prevent phantom reads: new rows inserted by another transaction into the range of a repeated query will appear, because the locks are on existing rows, not on gaps in the range."
+  explanation="REPEATABLE READ prevents dirty reads (no uncommitted data) and non-repeatable reads (locks acquired on read rows prevent modifications). However, it does not prevent phantom reads: new rows inserted by another transaction into the range of a repeated query will appear, because the locks are on existing rows, not on gaps in the range."
   difficulty="medium"
 />
 
@@ -120,20 +115,15 @@ strategies, and query optimization. Select an option to check your answer and vi
     'Only one transaction can access any row at any time',
   ]}
   correctAnswer={0}
-  explanation"MVCC maintains multiple versions of each row with version start/end timestamps. Readers see the version that was current when their transaction began (snapshot isolation), while writers create new versions. This eliminates reader-writer blocking. Garbage collection removes old versions no longer visible to any active transaction. Used by PostgreSQL and MySQL InnoDB."
+  explanation="MVCC maintains multiple versions of each row with version start/end timestamps. Readers see the version that was current when their transaction began (snapshot isolation), while writers create new versions. This eliminates reader-writer blocking. Garbage collection removes old versions no longer visible to any active transaction. Used by PostgreSQL and MySQL InnoDB."
   difficulty="hard"
 />
 
 <PracticeProblem
   question="Which join algorithm has cost $O(|R| + |S|)$ and is most efficient when one relation fits entirely in memory?"
-  options={[
-    'Hash join',
-    'Nested-loop join',
-    'Sort-merge join',
-    'Block nested-loop join',
-  ]}
+  options={['Hash join', 'Nested-loop join', 'Sort-merge join', 'Block nested-loop join']}
   correctAnswer={0}
-  explanation"The hash join has two phases: build (hash all tuples of the smaller relation $R$ into a hash table) and probe (scan $S$ and look up matches). Cost is $O(|R| + |S|)$. It requires $O(\\min(|R|, |S|))$ memory for the hash table. Nested-loop is $O(|R| \\cdot |S|)$. Sort-merge is $O(|R|\\log|R| + |S|\\log|S|)$."
+  explanation="The hash join has two phases: build (hash all tuples of the smaller relation $R$ into a hash table) and probe (scan $S$ and look up matches). Cost is $O(|R| + |S|)$. It requires $O(\\min(|R|, |S|))$ memory for the hash table. Nested-loop is $O(|R| \\cdot |S|)$. Sort-merge is $O(|R|\\log|R| + |S|\\log|S|)$."
   difficulty="hard"
 />
 
@@ -146,6 +136,6 @@ strategies, and query optimization. Select an option to check your answer and vi
     'Variable-length text data',
   ]}
   correctAnswer={0}
-  explanation"Bitmap indexes store one bitmap per distinct value, where each bit represents whether a row has that value. For low-cardinality columns (e.g., gender, status flags), this is efficient: few bitmaps, fast bitwise AND/OR for queries. For high-cardinality columns, the number of bitmaps grows prohibitively. B+ tree or hash indexes are better for high-cardinality data."
+  explanation="Bitmap indexes store one bitmap per distinct value, where each bit represents whether a row has that value. For low-cardinality columns (e.g., gender, status flags), this is efficient: few bitmaps, fast bitwise AND/OR for queries. For high-cardinality columns, the number of bitmaps grows prohibitively. B+ tree or hash indexes are better for high-cardinality data."
   difficulty="easy"
 />

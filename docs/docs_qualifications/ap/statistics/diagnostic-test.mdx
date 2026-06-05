@@ -42,8 +42,7 @@ export const questions = [
     id: 'ed1',
     topic: 'Exploring Data',
     difficulty: 1,
-    question:
-      'Which measure of centre is most resistant to outliers?',
+    question: 'Which measure of centre is most resistant to outliers?',
     options: ['Mean', 'Median', 'Standard deviation', 'Range'],
     correctIndex: 1,
     explanation:
@@ -103,7 +102,12 @@ export const questions = [
     difficulty: 1,
     question:
       'A researcher selects every 10th person from a list of registered voters. What type of sampling method is this?',
-    options: ['Simple random sampling', 'Stratified sampling', 'Systematic sampling', 'Cluster sampling'],
+    options: [
+      'Simple random sampling',
+      'Stratified sampling',
+      'Systematic sampling',
+      'Cluster sampling',
+    ],
     correctIndex: 2,
     explanation:
       'Systematic sampling selects every kth element from an ordered list after a random starting point. In this case, every 10th person is selected. Simple random sampling would randomly select any individual with equal probability. Stratified sampling divides the population into groups and samples from each. Cluster sampling selects entire groups (clusters) at random.',
@@ -145,7 +149,7 @@ export const questions = [
     topic: 'Sampling and Experimentation',
     difficulty: 4,
     question:
-      'A double-blind experiment is conducted to test a new drug. Which individuals are 'blind' to the treatment assignment?',
+      'A double-blind experiment is conducted to test a new drug. Which individuals are "blind" to the treatment assignment?',
     options: [
       'Only the patients',
       'Only the researchers measuring outcomes',
@@ -160,8 +164,7 @@ export const questions = [
     id: 'pr1',
     topic: 'Probability',
     difficulty: 1,
-    question:
-      'If P(A) = 0.3 and P(B | A) = 0.6, what is P(A and B)?',
+    question: 'If P(A) = 0.3 and P(B | A) = 0.6, what is P(A and B)?',
     options: ['0.18', '0.6', '0.9', '0.42'],
     correctIndex: 0,
     explanation:
@@ -187,8 +190,7 @@ export const questions = [
     id: 'pr3',
     topic: 'Probability',
     difficulty: 3,
-    question:
-      'The Central Limit Theorem states that:',
+    question: 'The Central Limit Theorem states that:',
     options: [
       'The sample mean is always normally distributed regardless of sample size',
       'For large sample sizes, the sampling distribution of the sample mean is approximately normal regardless of the population distribution',
@@ -205,12 +207,7 @@ export const questions = [
     difficulty: 4,
     question:
       'A random variable X has E(X) = 10 and Var(X) = 16. What are E(3X + 2) and Var(3X + 2)?',
-    options: [
-      'E = 32, Var = 48',
-      'E = 32, Var = 144',
-      'E = 30, Var = 16',
-      'E = 32, Var = 52',
-    ],
+    options: ['E = 32, Var = 48', 'E = 32, Var = 144', 'E = 30, Var = 16', 'E = 32, Var = 52'],
     correctIndex: 1,
     explanation:
       'Using the rules of expected value and variance for linear transformations: E(aX + b) = aE(X) + b, so E(3X + 2) = 3(10) + 2 = 32. Var(aX + b) = a-squared x Var(X), so Var(3X + 2) = 9 x 16 = 144. Note that adding a constant (b) changes the mean but not the variance, and multiplying by a constant (a) scales the variance by a-squared.',
@@ -253,12 +250,7 @@ export const questions = [
     difficulty: 3,
     question:
       'A researcher tests H0: p = 0.5 vs Ha: p > 0.5 with a sample of n = 200 and obtains a test statistic of z = 2.33. What is the approximate p-value?',
-    options: [
-      '0.0099',
-      '0.0198',
-      '0.4901',
-      '0.9802',
-    ],
+    options: ['0.0099', '0.0198', '0.4901', '0.9802'],
     correctIndex: 0,
     explanation:
       'This is a one-sided (right-tailed) test. Using the standard normal distribution table, z = 2.33 corresponds to a left-tail area of approximately 0.9901. For a right-tailed test, the p-value is the area to the right of z: 1 - 0.9901 = 0.0099. If this were a two-sided test, the p-value would be 2 x 0.0099 = 0.0198. Always check the direction of the alternative hypothesis when computing the p-value.',
@@ -299,8 +291,7 @@ export const questions = [
     id: 'rg2',
     topic: 'Regression',
     difficulty: 2,
-    question:
-      'The residual for a data point is calculated as:',
+    question: 'The residual for a data point is calculated as:',
     options: [
       'Predicted y minus actual y',
       'Actual y minus predicted y',

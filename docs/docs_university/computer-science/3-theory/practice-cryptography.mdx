@@ -27,7 +27,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     'GCM (Galois/Counter): it does not provide authentication',
   ]}
   correctAnswer={0}
-  explanation"ECB encrypts each block independently with the same key, so identical plaintext blocks produce identical ciphertext blocks. This reveals patterns (e.g., the 'ECB penguin' image). CBC chains blocks ($C_i = E_K(P_i \\oplus C_{i-1})$), CTR turns a block cipher into a stream cipher, and GCM adds authentication. Never use ECB for multi-block messages."
+  explanation="ECB encrypts each block independently with the same key, so identical plaintext blocks produce identical ciphertext blocks. This reveals patterns (e.g., the 'ECB penguin' image). CBC chains blocks ($C_i = E_K(P_i \\oplus C_{i-1})$), CTR turns a block cipher into a stream cipher, and GCM adds authentication. Never use ECB for multi-block messages."
   difficulty="easy"
 />
 
@@ -40,7 +40,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     '8 rounds: SubBytes, ShiftRows, MixColumns, AddRoundKey, and KeyExpansion',
   ]}
   correctAnswer={0}
-  explanation"AES-128 has 10 rounds. Each round applies: (1) SubBytes (S-box substitution on each byte), (2) ShiftRows (cyclic left shift of rows), (3) MixColumns (matrix multiplication in GF(2^8)), (4) AddRoundKey (XOR with round key). The last round omits MixColumns. AES-192 has 12 rounds and AES-256 has 14 rounds."
+  explanation="AES-128 has 10 rounds. Each round applies: (1) SubBytes (S-box substitution on each byte), (2) ShiftRows (cyclic left shift of rows), (3) MixColumns (matrix multiplication in GF(2^8)), (4) AddRoundKey (XOR with round key). The last round omits MixColumns. AES-192 has 12 rounds and AES-256 has 14 rounds."
   difficulty="medium"
 />
 
@@ -53,7 +53,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     'It requires a public-key infrastructure',
   ]}
   correctAnswer={0}
-  explanation"The OTP encrypts via $c = p \\oplus k$ where $k$ is a truly random key as long as the message. Shannon proved it achieves perfect secrecy: the ciphertext reveals zero information about the plaintext. However, the key must be truly random, as long as the message, distributed securely, and never reused (reusing $k$ allows XOR of two ciphertexts to extract plaintext XOR)."
+  explanation="The OTP encrypts via $c = p \\oplus k$ where $k$ is a truly random key as long as the message. Shannon proved it achieves perfect secrecy: the ciphertext reveals zero information about the plaintext. However, the key must be truly random, as long as the message, distributed securely, and never reused (reusing $k$ allows XOR of two ciphertexts to extract plaintext XOR)."
   difficulty="easy"
 />
 
@@ -66,7 +66,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     'The authentication tag becomes invalid but data is safe',
   ]}
   correctAnswer={0}
-  explanation"In CTR mode: $C_i = P_i \\oplus E_K(\\text{nonce} \\| i)$. If the same nonce is reused for two messages, the same keystream encrypts both: $C_1 \\oplus C_2 = P_1 \\oplus P_2$. This is the classic two-time pad vulnerability, breaking confidentiality. Nonces must never repeat with the same key."
+  explanation="In CTR mode: $C_i = P_i \\oplus E_K(\\text{nonce} \\| i)$. If the same nonce is reused for two messages, the same keystream encrypts both: $C_1 \\oplus C_2 = P_1 \\oplus P_2$. This is the classic two-time pad vulnerability, breaking confidentiality. Nonces must never repeat with the same key."
   difficulty="medium"
 />
 
@@ -75,13 +75,13 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
 <PracticeProblem
   question="In RSA, given public key $(e, n)$ and private key $(d, n)$ where $n = pq$, the correctness of decryption relies on which theorem?"
   options={[
-    'Euler\'s theorem: $m^{ed} \\equiv m \\pmod{n}$ when $ed \\equiv 1 \\pmod{\\varphi(n)}$',
-    'Fermat\'s Last Theorem',
+    "Euler's theorem: $m^{ed} \\equiv m \\pmod{n}$ when $ed \\equiv 1 \\pmod{\\varphi(n)}$",
+    "Fermat's Last Theorem",
     'The Chinese Remainder Theorem for key generation only',
-    'Bayes\' theorem for probabilistic verification',
+    "Bayes' theorem for probabilistic verification",
   ]}
   correctAnswer={0}
-  explanation"RSA key generation: choose primes $p, q$, compute $n = pq$, $\\varphi(n) = (p-1)(q-1)$, choose $e$ coprime to $\\varphi(n)$, compute $d = e^{-1} \\bmod \\varphi(n)$. Encryption: $c = m^e \\bmod n$. Decryption: $m = c^d \\bmod n = m^{ed} \\bmod n$. Since $ed = k\\varphi(n)+1$, by Euler's theorem: $m^{ed} = m \\cdot (m^{\\varphi(n)})^k \\equiv m \\pmod{n}$."
+  explanation="RSA key generation: choose primes $p, q$, compute $n = pq$, $\\varphi(n) = (p-1)(q-1)$, choose $e$ coprime to $\\varphi(n)$, compute $d = e^{-1} \\bmod \\varphi(n)$. Encryption: $c = m^e \\bmod n$. Decryption: $m = c^d \\bmod n = m^{ed} \\bmod n$. Since $ed = k\\varphi(n)+1$, by Euler's theorem: $m^{ed} = m \\cdot (m^{\\varphi(n)})^k \\equiv m \\pmod{n}$."
   difficulty="medium"
 />
 
@@ -94,7 +94,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     '$O(2^{2n})$ evaluations',
   ]}
   correctAnswer={0}
-  explanation"The birthday paradox: with $\\sqrt{2^n} = 2^{n/2}$ random hash outputs, the probability of a collision is approximately 50%. For SHA-256 ($n=256$), this is $2^{128}$ evaluations. This is why SHA-1 (160-bit) was broken (collision found in $\\sim 2^{80}$ operations) and why 256-bit hashes are recommended for collision resistance."
+  explanation="The birthday paradox: with $\\sqrt{2^n} = 2^{n/2}$ random hash outputs, the probability of a collision is approximately 50%. For SHA-256 ($n=256$), this is $2^{128}$ evaluations. This is why SHA-1 (160-bit) was broken (collision found in $\\sim 2^{80}$ operations) and why 256-bit hashes are recommended for collision resistance."
   difficulty="easy"
 />
 
@@ -107,7 +107,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     'The knapsack problem',
   ]}
   correctAnswer={0}
-  explanation"In DH, Alice sends $A = g^a \\bmod p$, Bob sends $B = g^b \\bmod p$. Shared secret: $s = B^a = g^{ab} = A^b \\bmod p$. An eavesdropper sees $g$, $p$, $A$, $B$ but needs $a$ or $b$ to compute $s$. Finding $a$ from $A = g^a \\bmod p$ is the DLP, believed hard for appropriately chosen primes. Ephemeral DH (DHE) provides forward secrecy."
+  explanation="In DH, Alice sends $A = g^a \\bmod p$, Bob sends $B = g^b \\bmod p$. Shared secret: $s = B^a = g^{ab} = A^b \\bmod p$. An eavesdropper sees $g$, $p$, $A$, $B$ but needs $a$ or $b$ to compute $s$. Finding $a$ from $A = g^a \\bmod p$ is the DLP, believed hard for appropriately chosen primes. Ephemeral DH (DHE) provides forward secrecy."
   difficulty="medium"
 />
 
@@ -120,7 +120,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     'SHA-512',
   ]}
   correctAnswer={0}
-  explanation"NIST selected ML-KEM (based on the Module Learning With Errors problem) to replace Diffie-Hellman for key exchange against quantum attacks. Shor's algorithm can break RSA, ECC, and DH in polynomial time on a quantum computer. ML-KEM provides quantum-resistant security. ML-DSA (lattice-based) replaces RSA/ECDSA for signatures."
+  explanation="NIST selected ML-KEM (based on the Module Learning With Errors problem) to replace Diffie-Hellman for key exchange against quantum attacks. Shor's algorithm can break RSA, ECC, and DH in polynomial time on a quantum computer. ML-KEM provides quantum-resistant security. ML-DSA (lattice-based) replaces RSA/ECDSA for signatures."
   difficulty="hard"
 />
 
@@ -133,7 +133,7 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     'It only works for short messages',
   ]}
   correctAnswer={0}
-  explanation"Textbook RSA signatures sign the raw message hash: $\\sigma = H(m)^d \\bmod n$. Without proper padding (PSS - Probabilistic Signature Scheme), this is vulnerable to existential forgeries, multiplicative properties ($\\sigma_1 \\cdot \\sigma_2$ signs $m_1 \\cdot m_2$), and Bleichenbacher-style attacks. Always use PSS padding for RSA signatures."
+  explanation="Textbook RSA signatures sign the raw message hash: $\\sigma = H(m)^d \\bmod n$. Without proper padding (PSS - Probabilistic Signature Scheme), this is vulnerable to existential forgeries, multiplicative properties ($\\sigma_1 \\cdot \\sigma_2$ signs $m_1 \\cdot m_2$), and Bleichenbacher-style attacks. Always use PSS padding for RSA signatures."
   difficulty="hard"
 />
 
@@ -146,6 +146,6 @@ signatures, key exchange, and post-quantum cryptography. Select an option to che
     'All messages are encrypted with the same key indefinitely',
   ]}
   correctAnswer={0}
-  explanation"Forward secrecy (perfect forward secrecy) means that compromising a long-term private key does not allow decryption of past session communications. This is achieved by using ephemeral key exchange (DHE or ECDHE) where each session generates fresh key pairs that are discarded afterward. Static DH does not provide forward secrecy."
+  explanation="Forward secrecy (perfect forward secrecy) means that compromising a long-term private key does not allow decryption of past session communications. This is achieved by using ephemeral key exchange (DHE or ECDHE) where each session generates fresh key pairs that are discarded afterward. Static DH does not provide forward secrecy."
   difficulty="easy"
 />

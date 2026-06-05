@@ -27,7 +27,7 @@ thermodynamic properties from partition functions, and ensembles.
     '$q = \\varepsilon_i e^{-\\varepsilon_i/k_BT}$',
   ]}
   correctAnswer={0}
-  explanation"The partition function $q = \\sum_i e^{-\\varepsilon_i/k_BT}$ is the normalization constant for the Boltzmann distribution, ensuring $\\sum_i p_i = 1$. It encodes all thermodynamic information: $U = Nk_B T^2 (\\partial \\ln q / \\partial T)_V$, $S = Nk_B(\\ln q + T(\\partial \\ln q / \\partial T)_V)$, $A = -Nk_BT\\ln q$. Higher temperatures give larger $q$ (more states accessible)."
+  explanation="The partition function $q = \\sum_i e^{-\\varepsilon_i/k_BT}$ is the normalization constant for the Boltzmann distribution, ensuring $\\sum_i p_i = 1$. It encodes all thermodynamic information: $U = Nk_B T^2 (\\partial \\ln q / \\partial T)_V$, $S = Nk_B(\\ln q + T(\\partial \\ln q / \\partial T)_V)$, $A = -Nk_BT\\ln q$. Higher temperatures give larger $q$ (more states accessible)."
   difficulty="easy"
 />
 
@@ -40,7 +40,7 @@ thermodynamic properties from partition functions, and ensembles.
     '$q = 1 + 2e^{-\\epsilon/k_BT} + 3e^{-2\\epsilon/k_BT}$',
   ]}
   correctAnswer={0}
-  explanation"$q = \\sum_i g_i e^{-\\varepsilon_i/k_BT}$ where $g_i$ is the degeneracy. Since all states are non-degenerate ($g_i = 1$): $q = e^{-0/k_BT} + e^{-\\epsilon/k_BT} + e^{-2\\epsilon/k_BT} = 1 + e^{-\\epsilon/k_BT} + e^{-2\\epsilon/k_BT}$. At high $T$ ($k_BT \\gg \\epsilon$), all three terms approach 1 and $q \\to 3$. At low $T$, $q \\to 1$."
+  explanation="$q = \\sum_i g_i e^{-\\varepsilon_i/k_BT}$ where $g_i$ is the degeneracy. Since all states are non-degenerate ($g_i = 1$): $q = e^{-0/k_BT} + e^{-\\epsilon/k_BT} + e^{-2\\epsilon/k_BT} = 1 + e^{-\\epsilon/k_BT} + e^{-2\\epsilon/k_BT}$. At high $T$ ($k_BT \\gg \\epsilon$), all three terms approach 1 and $q \\to 3$. At low $T$, $q \\to 1$."
   difficulty="medium"
 />
 
@@ -53,7 +53,7 @@ thermodynamic properties from partition functions, and ensembles.
     '$q_{\\text{trans}} = N k_B T / P$',
   ]}
   correctAnswer={0}
-  explanation"From quantum mechanics, the translational energy levels in a 3D box give $q_{\\text{trans}} = \\sum_{n_x,n_y,n_z} \\exp\\left(-\\frac{h^2}{8mk_B T V^{2/3}}(n_x^2+n_y^2+n_z^2)\\right)$. In the classical limit (high $T$, large $V$), this sum becomes the integral $q_{\\text{trans}} = V(2\\pi m k_B T/h^2)^{3/2}$. The $V$ dependence leads directly to the ideal gas equation of state."
+  explanation="From quantum mechanics, the translational energy levels in a 3D box give $q_{\\text{trans}} = \\sum_{n_x,n_y,n_z} \\exp\\left(-\\frac{h^2}{8mk_B T V^{2/3}}(n_x^2+n_y^2+n_z^2)\\right)$. In the classical limit (high $T$, large $V$), this sum becomes the integral $q_{\\text{trans}} = V(2\\pi m k_B T/h^2)^{3/2}$. The $V$ dependence leads directly to the ideal gas equation of state."
   difficulty="hard"
 />
 
@@ -66,7 +66,7 @@ thermodynamic properties from partition functions, and ensembles.
     '$q_{\\text{rot}} = (T/\\Theta_r)^2$',
   ]}
   correctAnswer={0}
-  explanation"At high $T$ ($T \\gg \\Theta_r = \\hbar^2/2Ik_B$), $q_{\\text{rot}} = T/(\\sigma \\Theta_r)$. The symmetry number $\\sigma = 1$ for heteronuclear diatomics (e.g., HCl) and $\\sigma = 2$ for homonuclear (e.g., N$_2$, accounting for indistinguishable orientations). This factor prevents overcounting rotational states by the indistinguishable rotations."
+  explanation="At high $T$ ($T \\gg \\Theta_r = \\hbar^2/2Ik_B$), $q_{\\text{rot}} = T/(\\sigma \\Theta_r)$. The symmetry number $\\sigma = 1$ for heteronuclear diatomics (e.g., HCl) and $\\sigma = 2$ for homonuclear (e.g., N$_2$, accounting for indistinguishable orientations). This factor prevents overcounting rotational states by the indistinguishable rotations."
   difficulty="medium"
 />
 
@@ -81,7 +81,7 @@ thermodynamic properties from partition functions, and ensembles.
     '$U_{\\text{vib}} \\approx 3Nk_BT$',
   ]}
   correctAnswer={0}
-  explanation"At $T \\ll \\Theta_{\\text{vib}}$, most molecules are in the ground vibrational state ($v = 0$), so $U_{\\text{vib}} \\approx N\\varepsilon_0 = N(h\\nu/2)$. The classical equipartition prediction ($k_BT$ per vibrational mode) is not reached because the energy spacing $h\\nu$ is much larger than $k_BT$. Only at $T \\gg \\Theta_{\\text{vib}}$ does $U_{\\text{vib}} \\to Nk_BT$."
+  explanation="At $T \\ll \\Theta_{\\text{vib}}$, most molecules are in the ground vibrational state ($v = 0$), so $U_{\\text{vib}} \\approx N\\varepsilon_0 = N(h\\nu/2)$. The classical equipartition prediction ($k_BT$ per vibrational mode) is not reached because the energy spacing $h\\nu$ is much larger than $k_BT$. Only at $T \\gg \\Theta_{\\text{vib}}$ does $U_{\\text{vib}} \\to Nk_BT$."
   difficulty="medium"
 />
 
@@ -94,20 +94,20 @@ thermodynamic properties from partition functions, and ensembles.
     '$\\Lambda = \\sqrt{\\frac{h}{2\\pi m k_B T}}$',
   ]}
   correctAnswer={0}
-  explanation"The thermal de Broglie wavelength $\\Lambda = h / \\sqrt{2\\pi m k_B T}$ represents the quantum wavelength associated with a particle at temperature $T$. When $V/N\\Lambda^3 \\gg 1$, the gas behaves classically (Boltzmann statistics). When $V/N\\Lambda^3 \\lesssim 1$, quantum effects (Bose-Einstein or Fermi-Dirac statistics) become important."
+  explanation="The thermal de Broglie wavelength $\\Lambda = h / \\sqrt{2\\pi m k_B T}$ represents the quantum wavelength associated with a particle at temperature $T$. When $V/N\\Lambda^3 \\gg 1$, the gas behaves classically (Boltzmann statistics). When $V/N\\Lambda^3 \\lesssim 1$, quantum effects (Bose-Einstein or Fermi-Dirac statistics) become important."
   difficulty="hard"
 />
 
 <PracticeProblem
   question="The canonical ensemble describes a system at fixed $N$, $V$, and $T$. The canonical partition function is $Q = q^N/N!$ (for distinguishable translational states). The Helmholtz free energy is:"
   options={[
-    '$A = -k_BT \\ln Q = -Nk_BT(\\ln q - \\ln N + 1)$ using Stirling\'s approximation',
+    "$A = -k_BT \\ln Q = -Nk_BT(\\ln q - \\ln N + 1)$ using Stirling's approximation",
     '$A = k_BT \\ln Q$',
     '$A = -Nk_BT \\ln q$',
     '$A = E - TS + PV$',
   ]}
   correctAnswer={0}
-  explanation"$A = -k_BT \\ln Q$. For an ideal gas: $Q = q^N/N!$, so $\\ln Q = N\\ln q - \\ln(N!) \\approx N\\ln q - N\\ln N + N$ (Stirling). Thus $A = -Nk_BT(\\ln(q/N) + 1)$. From $A$, all other thermodynamic properties follow: $S = -(\\partial A/\\partial T)_V$, $P = -(\\partial A/\\partial V)_T$, $U = A + TS$."
+  explanation="$A = -k_BT \\ln Q$. For an ideal gas: $Q = q^N/N!$, so $\\ln Q = N\\ln q - \\ln(N!) \\approx N\\ln q - N\\ln N + N$ (Stirling). Thus $A = -Nk_BT(\\ln(q/N) + 1)$. From $A$, all other thermodynamic properties follow: $S = -(\\partial A/\\partial T)_V$, $P = -(\\partial A/\\partial V)_T$, $U = A + TS$."
   difficulty="hard"
 />
 
@@ -120,7 +120,7 @@ thermodynamic properties from partition functions, and ensembles.
     '$v_p = k_BT/m$',
   ]}
   correctAnswer={0}
-  explanation"The Maxwell-Boltzmann distribution gives three characteristic speeds: most probable $v_p = \\sqrt{2k_BT/m}$, mean $\\langle v \\rangle = \\sqrt{8k_BT/\\pi m}$, and root-mean-square $v_{\\text{rms}} = \\sqrt{3k_BT/m}$. The relationship is $v_p < \\langle v \\rangle < v_{\\text{rms}}$. All scale as $\\sqrt{T/m}$."
+  explanation="The Maxwell-Boltzmann distribution gives three characteristic speeds: most probable $v_p = \\sqrt{2k_BT/m}$, mean $\\langle v \\rangle = \\sqrt{8k_BT/\\pi m}$, and root-mean-square $v_{\\text{rms}} = \\sqrt{3k_BT/m}$. The relationship is $v_p < \\langle v \\rangle < v_{\\text{rms}}$. All scale as $\\sqrt{T/m}$."
   difficulty="easy"
 />
 
@@ -133,7 +133,7 @@ thermodynamic properties from partition functions, and ensembles.
     'Maximum $S$ when $n = 1$ (single excitation)',
   ]}
   correctAnswer={0}
-  explanation"$W = \\binom{N}{n}$ is maximized when $n = N/2$, giving the most microstates. $S = k_B \\ln \\binom{N}{n}$ is therefore maximized at equal populations. This is the Second Law: spontaneous processes tend toward configurations with more microstates (higher $W$, higher $S$). At finite $T$, the actual equilibrium population depends on the energy gap via the Boltzmann distribution."
+  explanation="$W = \\binom{N}{n}$ is maximized when $n = N/2$, giving the most microstates. $S = k_B \\ln \\binom{N}{n}$ is therefore maximized at equal populations. This is the Second Law: spontaneous processes tend toward configurations with more microstates (higher $W$, higher $S$). At finite $T$, the actual equilibrium population depends on the energy gap via the Boltzmann distribution."
   difficulty="medium"
 />
 
@@ -146,6 +146,6 @@ thermodynamic properties from partition functions, and ensembles.
     '$C_V = \\frac{7}{2}R$',
   ]}
   correctAnswer={0}
-  explanation"A diatomic molecule has 3 translational degrees of freedom (contributes $3/2 R$ to $C_V$), 2 rotational (linear molecule rotates about 2 axes, contributes $2 \\times 1/2 R = R$), and 1 vibrational mode. At moderate temperatures ($T_{\\text{rot}} \\ll T \\ll T_{\\text{vib}}$), vibration is not excited. Total $C_V = 3/2 R + R = 5/2 R$. At very high $T$, vibration adds $R$ more (kinetic + potential), giving $7/2 R$."
+  explanation="A diatomic molecule has 3 translational degrees of freedom (contributes $3/2 R$ to $C_V$), 2 rotational (linear molecule rotates about 2 axes, contributes $2 \\times 1/2 R = R$), and 1 vibrational mode. At moderate temperatures ($T_{\\text{rot}} \\ll T \\ll T_{\\text{vib}}$), vibration is not excited. Total $C_V = 3/2 R + R = 5/2 R$. At very high $T$, vibration adds $R$ more (kinetic + potential), giving $7/2 R$."
   difficulty="easy"
 />

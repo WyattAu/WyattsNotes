@@ -118,9 +118,7 @@ the explanation.
 />
 
 <PracticeProblem
-  question={
-    'Given `extension on String { String get reversed => split(\'\').reversed.join(); }`, what does `"hello".reversed` return?'
-  }
+  question={`Given \`extension on String { String get reversed => split('').reversed.join(); }\`, what does \`"hello".reversed\` return?`}
   options={['"olleh"', '"hello"', 'Compilation error: String already has reversed', 'null']}
   correctAnswer={0}
   explanation="Extension methods add members to existing types. This extension adds a `reversed` getter to `String`. `split('')` creates `['h','e','l','l','o']`, `.reversed` produces `['o','l','l','e','h']`, and `.join()` yields `'olleh'`. Extensions are resolved at compile time -- if `String` later adds a `reversed` member, the real member takes priority."

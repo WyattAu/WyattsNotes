@@ -28,7 +28,7 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     '$w = -nC_V\\Delta T$',
   ]}
   correctAnswer={0}
-  explanation"For a reversible expansion of an ideal gas: $w = -\\int_{V_i}^{V_f} P\\,dV = -\\int_{V_i}^{V_f} \\frac{nRT}{V}dV = -nRT\\ln\\frac{V_f}{V_i}$. The negative sign indicates work done by the system. For $V_f > V_i$, $w < 0$ (work is done by the gas). Since the process is isothermal and the gas is ideal, $\\Delta U = 0$, so $q = -w = nRT\\ln(V_f/V_i)$."
+  explanation="For a reversible expansion of an ideal gas: $w = -\\int_{V_i}^{V_f} P\\,dV = -\\int_{V_i}^{V_f} \\frac{nRT}{V}dV = -nRT\\ln\\frac{V_f}{V_i}$. The negative sign indicates work done by the system. For $V_f > V_i$, $w < 0$ (work is done by the gas). Since the process is isothermal and the gas is ideal, $\\Delta U = 0$, so $q = -w = nRT\\ln(V_f/V_i)$."
   difficulty="easy"
 />
 
@@ -41,20 +41,15 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     '$\\Delta S$ cannot be calculated for irreversible processes',
   ]}
   correctAnswer={0}
-  explanation"Entropy is a state function, so $\\Delta S$ depends only on initial and final states, not on the path. For an irreversible process, we design a reversible path connecting the same states and compute $\\Delta S = \\int dq_{\\text{rev}}/T$. We cannot use $q_{\\text{irrev}}/T$ because the inequality $dS > dq_{\\text{irrev}}/T$ holds."
+  explanation="Entropy is a state function, so $\\Delta S$ depends only on initial and final states, not on the path. For an irreversible process, we design a reversible path connecting the same states and compute $\\Delta S = \\int dq_{\\text{rev}}/T$. We cannot use $q_{\\text{irrev}}/T$ because the inequality $dS > dq_{\\text{irrev}}/T$ holds."
   difficulty="medium"
 />
 
 <PracticeProblem
   question="For the reaction $\\text{H}_2(g) + \\text{I}_2(g) \\rightleftharpoons 2\\text{HI}(g)$ at equilibrium with $K_p = 50.0$, if the initial partial pressures of $\\text{H}_2$ and $\\text{I}_2$ are both 0.10$ bar and no HI is present, what is the equilibrium partial pressure of HI?"
-  options={[
-    '0.155 bar',
-    '0.100 bar',
-    '0.200 bar',
-    '0.050 bar',
-  ]}
+  options={['0.155 bar', '0.100 bar', '0.200 bar', '0.050 bar']}
   correctAnswer={0}
-  explanation"$K_p = \\frac{(p_{\\text{HI}})^2}{p_{\\text{H}_2} \\cdot p_{\\text{I}_2}} = 50.0$. Let $x$ = amount of HI formed. Then $p_{\\text{H}_2} = p_{\\text{I}_2} = 0.10 - x/2$ and $p_{\\text{HI}} = x$. So $\\frac{x^2}{(0.10-x/2)^2} = 50.0$, giving $\\frac{x}{0.10-x/2} = \\sqrt{50} \\approx 7.07$, so $x = 0.707(0.10-x/2) = 0.0707 - 0.354x$, thus $1.354x = 0.0707$, $x \\approx 0.0522$ bar. But let me re-check: $x/(0.10 - 0.5x) = 7.07$, $x = 0.707 - 3.535x$, $4.535x = 0.707$, $x = 0.156$ bar."
+  explanation="$K_p = \\frac{(p_{\\text{HI}})^2}{p_{\\text{H}_2} \\cdot p_{\\text{I}_2}} = 50.0$. Let $x$ = amount of HI formed. Then $p_{\\text{H}_2} = p_{\\text{I}_2} = 0.10 - x/2$ and $p_{\\text{HI}} = x$. So $\\frac{x^2}{(0.10-x/2)^2} = 50.0$, giving $\\frac{x}{0.10-x/2} = \\sqrt{50} \\approx 7.07$, so $x = 0.707(0.10-x/2) = 0.0707 - 0.354x$, thus $1.354x = 0.0707$, $x \\approx 0.0522$ bar. But let me re-check: $x/(0.10 - 0.5x) = 7.07$, $x = 0.707 - 3.535x$, $4.535x = 0.707$, $x = 0.156$ bar."
   difficulty="hard"
 />
 
@@ -67,7 +62,7 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     '$\\Delta_r G^\\circ = -nRT\\ln K$',
   ]}
   correctAnswer={0}
-  explanation"The fundamental relationship is $\\Delta_r G^\\circ = -RT\\ln K$ where $K$ is the dimensionless thermodynamic equilibrium constant. A large $K$ ($K \\gg 1$) means $\\Delta_r G^\\circ \\ll 0$ (products strongly favored). At equilibrium, $\\Delta_r G = 0$. For non-standard conditions: $\\Delta_r G = \\Delta_r G^\\circ + RT\\ln Q$ where $Q$ is the reaction quotient."
+  explanation="The fundamental relationship is $\\Delta_r G^\\circ = -RT\\ln K$ where $K$ is the dimensionless thermodynamic equilibrium constant. A large $K$ ($K \\gg 1$) means $\\Delta_r G^\\circ \\ll 0$ (products strongly favored). At equilibrium, $\\Delta_r G = 0$. For non-standard conditions: $\\Delta_r G = \\Delta_r G^\\circ + RT\\ln Q$ where $Q$ is the reaction quotient."
   difficulty="easy"
 />
 
@@ -82,7 +77,7 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     '$\\ln P = -\\Delta S_{\\text{vap}}/R$',
   ]}
   correctAnswer={0}
-  explanation"The Clausius-Clapeyron equation (assuming $\\Delta H_{\\text{vap}}$ is constant) relates vapour pressures at two temperatures: $\\ln(P_2/P_1) = -\\frac{\\Delta H_{\\text{vap}}}{R}(1/T_2 - 1/T_1)$. This can be used to estimate $\\Delta H_{\\text{vap}}$ from vapour pressure data at different temperatures, or to extrapolate vapour pressure to a new temperature."
+  explanation="The Clausius-Clapeyron equation (assuming $\\Delta H_{\\text{vap}}$ is constant) relates vapour pressures at two temperatures: $\\ln(P_2/P_1) = -\\frac{\\Delta H_{\\text{vap}}}{R}(1/T_2 - 1/T_1)$. This can be used to estimate $\\Delta H_{\\text{vap}}$ from vapour pressure data at different temperatures, or to extrapolate vapour pressure to a new temperature."
   difficulty="medium"
 />
 
@@ -91,11 +86,11 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
   options={[
     'The A-B interactions are weaker than the average A-A and B-B interactions; the mixture has a minimum in the boiling point diagram',
     'The A-B interactions are stronger than average; the mixture has a maximum boiling point',
-    'Raoult\'s law is obeyed exactly at all compositions',
+    "Raoult's law is obeyed exactly at all compositions",
     'The mixture cannot form an azeotrope',
   ]}
   correctAnswer={0}
-  explanation"Positive deviation: $P_{\\text{total}} > x_A P_A^* + x_B P_B^*$ (Raoult's law prediction). This occurs when A-B interactions are weaker than A-A and B-B, making it easier for molecules to escape the liquid. The boiling point diagram shows a minimum (minimum-boiling azeotrope). Example: ethanol-water. Negative deviation (stronger A-B) gives maximum-boiling azeotropes."
+  explanation="Positive deviation: $P_{\\text{total}} > x_A P_A^* + x_B P_B^*$ (Raoult's law prediction). This occurs when A-B interactions are weaker than A-A and B-B, making it easier for molecules to escape the liquid. The boiling point diagram shows a minimum (minimum-boiling azeotrope). Example: ethanol-water. Negative deviation (stronger A-B) gives maximum-boiling azeotropes."
   difficulty="medium"
 />
 
@@ -108,7 +103,7 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     '$\\Delta_r G^\\circ = -RT\\ln E^\\circ_{\\text{cell}}$',
   ]}
   correctAnswer={0}
-  explanation"The relationship between Gibbs free energy and cell potential is $\\Delta_r G^\\circ = -nFE^\\circ_{\\text{cell}}$ where $n$ is moles of electrons transferred and $F = 96485$ C/mol is Faraday's constant. A positive $E^\\circ_{\\text{cell}}$ means $\\Delta_r G^\\circ < 0$ (spontaneous). The Nernst equation extends this to non-standard conditions: $E = E^\\circ - (RT/nF)\\ln Q$."
+  explanation="The relationship between Gibbs free energy and cell potential is $\\Delta_r G^\\circ = -nFE^\\circ_{\\text{cell}}$ where $n$ is moles of electrons transferred and $F = 96485$ C/mol is Faraday's constant. A positive $E^\\circ_{\\text{cell}}$ means $\\Delta_r G^\\circ < 0$ (spontaneous). The Nernst equation extends this to non-standard conditions: $E = E^\\circ - (RT/nF)\\ln Q$."
   difficulty="easy"
 />
 
@@ -121,7 +116,7 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     '$F = 3$',
   ]}
   correctAnswer={0}
-  explanation"At the triple point, three phases coexist ($P = 3$) for a single component ($C = 1$): $F = 1 - 3 + 2 = 0$. This means the triple point is invariant: both temperature and pressure are uniquely determined (for water: 273.16 K, 611 Pa). Along a phase boundary (two phases), $F = 1$ (univariant). In a single-phase region, $F = 2$."
+  explanation="At the triple point, three phases coexist ($P = 3$) for a single component ($C = 1$): $F = 1 - 3 + 2 = 0$. This means the triple point is invariant: both temperature and pressure are uniquely determined (for water: 273.16 K, 611 Pa). Along a phase boundary (two phases), $F = 1$ (univariant). In a single-phase region, $F = 2$."
   difficulty="medium"
 />
 
@@ -134,7 +129,7 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     '$\\Delta_{\\text{mix}} G$ is positive (non-spontaneous)',
   ]}
   correctAnswer={0}
-  explanation"For an ideal binary solution: $\\Delta_{\\text{mix}} G = nRT(x_A \\ln x_A + x_B \\ln x_B)$. Since $x_i < 1$, $\\ln x_i < 0$, so $\\Delta_{\\text{mix}} G < 0$ (spontaneous mixing). The entropy of mixing is $\\Delta_{\\text{mix}} S = -nR(x_A \\ln x_A + x_B \\ln x_B) > 0$. The enthalpy of mixing is zero ($\\Delta_{\\text{mix}} H = 0$), which defines an ideal solution."
+  explanation="For an ideal binary solution: $\\Delta_{\\text{mix}} G = nRT(x_A \\ln x_A + x_B \\ln x_B)$. Since $x_i < 1$, $\\ln x_i < 0$, so $\\Delta_{\\text{mix}} G < 0$ (spontaneous mixing). The entropy of mixing is $\\Delta_{\\text{mix}} S = -nR(x_A \\ln x_A + x_B \\ln x_B) > 0$. The enthalpy of mixing is zero ($\\Delta_{\\text{mix}} H = 0$), which defines an ideal solution."
   difficulty="medium"
 />
 
@@ -147,6 +142,6 @@ equilibrium, phase diagrams, and electrochemistry. Select an option to check you
     'Invert the sign of $\\Delta G^\\circ$',
   ]}
   correctAnswer={0}
-  explanation"For $\\Delta H^\\circ < 0$, $d\\ln K/dT < 0$, so $K$ decreases with increasing temperature. By Le Chatelier's principle, increasing temperature favors the endothermic direction (which absorbs the added heat). For an exothermic reaction, that means shifting toward reactants. The van't Hoff equation, integrated: $\\ln(K_2/K_1) = -\\frac{\\Delta H^\\circ}{R}(1/T_2 - 1/T_1)$."
+  explanation="For $\\Delta H^\\circ < 0$, $d\\ln K/dT < 0$, so $K$ decreases with increasing temperature. By Le Chatelier's principle, increasing temperature favors the endothermic direction (which absorbs the added heat). For an exothermic reaction, that means shifting toward reactants. The van't Hoff equation, integrated: $\\ln(K_2/K_1) = -\\frac{\\Delta H^\\circ}{R}(1/T_2 - 1/T_1)$."
   difficulty="hard"
 />

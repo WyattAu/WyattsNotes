@@ -29,7 +29,7 @@ your answer.
     'The target variable must be categorical',
   ]}
   correctAnswer={0}
-  explanation"The closed-form solution requires $(X^T X)^{-1}$ to exist, meaning $X^T X$ is full rank. This fails when features are linearly dependent (multicollinearity) or when $n < d$ (more features than samples). In these cases, use gradient descent, regularized regression (ridge: adds $\\lambda I$ to $X^T X$), or dimensionality reduction."
+  explanation="The closed-form solution requires $(X^T X)^{-1}$ to exist, meaning $X^T X$ is full rank. This fails when features are linearly dependent (multicollinearity) or when $n < d$ (more features than samples). In these cases, use gradient descent, regularized regression (ridge: adds $\\lambda I$ to $X^T X$), or dimensionality reduction."
   difficulty="easy"
 />
 
@@ -42,7 +42,7 @@ your answer.
     '$\\nabla_{\\mathbf{w}} \\mathcal{L} = \\frac{1}{n} \\sum_{i=1}^{n} (\\hat{y}_i - y_i) \\mathbf{x}_i \\hat{y}_i (1 - \\hat{y}_i)$',
   ]}
   correctAnswer={0}
-  explanation"The gradient of binary cross-entropy with respect to $\\mathbf{w}$ is $\\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$. This elegant result arises because the derivative of the log-sigmoid cancels with the sigmoid derivative. The update rule is $\\mathbf{w} \\leftarrow \\mathbf{w} - \\alpha \\cdot \\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$."
+  explanation="The gradient of binary cross-entropy with respect to $\\mathbf{w}$ is $\\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$. This elegant result arises because the derivative of the log-sigmoid cancels with the sigmoid derivative. The update rule is $\\mathbf{w} \\leftarrow \\mathbf{w} - \\alpha \\cdot \\frac{1}{n} \\sum (\\hat{y}_i - y_i) \\mathbf{x}_i$."
   difficulty="medium"
 />
 
@@ -55,7 +55,7 @@ your answer.
     'Chi-squared statistic',
   ]}
   correctAnswer={0}
-  explanation"Information gain is defined as $\\text{Gain}(S, A) = H(S) - \\sum_{v \\in \\text{Values}(A)} \\frac{|S_v|}{|S|} H(S_v)$ where $H(S) = -\\sum p_k \\log_2 p_k$ is the entropy. The feature and threshold that maximize information gain are chosen for the split. Gini impurity ($1 - \\sum p_k^2$) is an alternative criterion that is faster to compute."
+  explanation="Information gain is defined as $\\text{Gain}(S, A) = H(S) - \\sum_{v \\in \\text{Values}(A)} \\frac{|S_v|}{|S|} H(S_v)$ where $H(S) = -\\sum p_k \\log_2 p_k$ is the entropy. The feature and threshold that maximize information gain are chosen for the split. Gini impurity ($1 - \\sum p_k^2$) is an alternative criterion that is faster to compute."
   difficulty="easy"
 />
 
@@ -68,20 +68,20 @@ your answer.
     'Bagging corrects errors sequentially; boosting trains independently',
   ]}
   correctAnswer={0}
-  explanation"Bagging (Bootstrap Aggregating) trains each model independently on a random bootstrap sample of the data, then aggregates predictions (majority vote for classification, average for regression). This reduces variance. Boosting trains models sequentially: each new model fits the residuals (negative gradient) of the ensemble so far, reducing bias."
+  explanation="Bagging (Bootstrap Aggregating) trains each model independently on a random bootstrap sample of the data, then aggregates predictions (majority vote for classification, average for regression). This reduces variance. Boosting trains models sequentially: each new model fits the residuals (negative gradient) of the ensemble so far, reducing bias."
   difficulty="medium"
 />
 
 <PracticeProblem
   question="In backpropagation for a multi-layer neural network, how is the gradient at layer $l$ computed?"
   options={[
-    'Using the chain rule: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma\'(z[l])$',
+    "Using the chain rule: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma'(z[l])$",
     'By directly differentiating the loss with respect to $W[l]$ without intermediate layers',
     'Using numerical differentiation for each weight',
     'By random gradient estimation',
   ]}
   correctAnswer={0}
-  explanation"Backpropagation applies the chain rule layer by layer from output to input. The error signal $\\delta[L]$ at the output layer is computed from the loss gradient. For hidden layers: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma\'(z[l])$ where $\\circ$ is element-wise multiplication and $\\sigma\'$ is the activation derivative. Weight gradients: $\\nabla W[l] = \\delta[l] \\cdot a[l-1]^T$."
+  explanation="Backpropagation applies the chain rule layer by layer from output to input. The error signal $\\delta[L]$ at the output layer is computed from the loss gradient. For hidden layers: $\\delta[l] = (W[l+1]^T \\delta[l+1]) \\circ \\sigma\'(z[l])$ where $\\circ$ is element-wise multiplication and $\\sigma\'$ is the activation derivative. Weight gradients: $\\nabla W[l] = \\delta[l] \\cdot a[l-1]^T$."
   difficulty="hard"
 />
 
@@ -96,7 +96,7 @@ your answer.
     'Neither produces sparsity; only dropout does',
   ]}
   correctAnswer={0}
-  explanation"The L1 penalty $\\lambda \\sum |w_j|$ has a diamond-shaped constraint region with corners on the axes. The loss function's elliptical contours often touch a corner first, setting some weights to exactly zero. L2's circular constraint region touches contours at non-zero weights, shrinking but rarely zeroing them. This makes L1 useful for feature selection."
+  explanation="The L1 penalty $\\lambda \\sum |w_j|$ has a diamond-shaped constraint region with corners on the axes. The loss function's elliptical contours often touch a corner first, setting some weights to exactly zero. L2's circular constraint region touches contours at non-zero weights, shrinking but rarely zeroing them. This makes L1 useful for feature selection."
   difficulty="hard"
 />
 
@@ -109,7 +109,7 @@ your answer.
     'Training loss',
   ]}
   correctAnswer={0}
-  explanation"Accuracy is misleading on imbalanced data: predicting all negatives gives 99% accuracy but learns nothing useful. Precision ($\\frac{TP}{TP+FP}$) measures how many positive predictions are correct. Recall ($\\frac{TP}{TP+FN}$) measures how many actual positives are found. F1 ($2 \\cdot \\frac{P \\cdot R}{P+R}$) balances both. AUC-ROC measures ranking quality across all thresholds."
+  explanation="Accuracy is misleading on imbalanced data: predicting all negatives gives 99% accuracy but learns nothing useful. Precision ($\\frac{TP}{TP+FP}$) measures how many positive predictions are correct. Recall ($\\frac{TP}{TP+FN}$) measures how many actual positives are found. F1 ($2 \\cdot \\frac{P \\cdot R}{P+R}$) balances both. AUC-ROC measures ranking quality across all thresholds."
   difficulty="easy"
 />
 
@@ -122,7 +122,7 @@ your answer.
     'Optimal bias-variance tradeoff',
   ]}
   correctAnswer={0}
-  explanation"High training accuracy with low validation accuracy indicates overfitting: the model has memorized training data (including noise) but fails to generalize. This corresponds to high variance. Remedies include more training data, reducing model complexity, adding regularization (L1/L2/dropout), and early stopping. High bias (underfitting) shows high error on both training and validation sets."
+  explanation="High training accuracy with low validation accuracy indicates overfitting: the model has memorized training data (including noise) but fails to generalize. This corresponds to high variance. Remedies include more training data, reducing model complexity, adding regularization (L1/L2/dropout), and early stopping. High bias (underfitting) shows high error on both training and validation sets."
   difficulty="medium"
 />
 
@@ -135,7 +135,7 @@ your answer.
     'Dropout is applied with probability $1-p$',
   ]}
   correctAnswer={0}
-  explanation"During training, dropout sets each activation to zero with probability $p$ and scales surviving activations by $1/(1-p)$ (inverted dropout). This ensures the expected activation magnitude remains the same. At test time, no dropout is applied and no scaling is needed (since training already compensated). This creates an implicit ensemble of $2^n$ thinned networks."
+  explanation="During training, dropout sets each activation to zero with probability $p$ and scales surviving activations by $1/(1-p)$ (inverted dropout). This ensures the expected activation magnitude remains the same. At test time, no dropout is applied and no scaling is needed (since training already compensated). This creates an implicit ensemble of $2^n$ thinned networks."
   difficulty="medium"
 />
 
@@ -148,6 +148,6 @@ your answer.
     'It only works with ReLU activation',
   ]}
   correctAnswer={0}
-  explanation"The theorem proves that a sufficiently wide single hidden layer can approximate any continuous function to arbitrary precision. However, it says nothing about whether gradient descent can find the correct weights, how many neurons are needed (potentially exponential), or practical training time. Deeper networks can represent functions more efficiently (exponentially fewer parameters in some cases)."
+  explanation="The theorem proves that a sufficiently wide single hidden layer can approximate any continuous function to arbitrary precision. However, it says nothing about whether gradient descent can find the correct weights, how many neurons are needed (potentially exponential), or practical training time. Deeper networks can represent functions more efficiently (exponentially fewer parameters in some cases)."
   difficulty="hard"
 />

@@ -27,7 +27,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     'Multilevel Feedback Queue (MLFQ)',
   ]}
   correctAnswer={0}
-  explanation"FCFS is non-preemptive and processes run to completion in arrival order. If a long process arrives first, all subsequent short processes must wait, creating a 'convoy' effect. SJF minimizes average waiting time but requires knowing burst times. RR provides fair time slices. MLFQ automatically favors I/O-bound processes."
+  explanation="FCFS is non-preemptive and processes run to completion in arrival order. If a long process arrives first, all subsequent short processes must wait, creating a 'convoy' effect. SJF minimizes average waiting time but requires knowing burst times. RR provides fair time slices. MLFQ automatically favors I/O-bound processes."
   difficulty="easy"
 />
 
@@ -40,7 +40,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     'Processes never complete execution',
   ]}
   correctAnswer={0}
-  explanation"If the time quantum is too small (e.g., comparable to the context switch time), the CPU spends most of its time switching between processes rather than executing them. The rule of thumb is that the quantum should be approximately 10-100 times the context switch time. If too large, RR degenerates to FCFS."
+  explanation="If the time quantum is too small (e.g., comparable to the context switch time), the CPU spends most of its time switching between processes rather than executing them. The rule of thumb is that the quantum should be approximately 10-100 times the context switch time. If too large, RR degenerates to FCFS."
   difficulty="easy"
 />
 
@@ -53,7 +53,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     'No process needs more resources than currently allocated',
   ]}
   correctAnswer={0}
-  explanation"A safe state means there exists a sequence $\\langle P_1, P_2, \\ldots, P_n \\rangle$ such that for each $P_i$, $\\text{Need}[i] \\leq \\text{Work}$ (initially Available). After $P_i$ finishes, $\\text{Work} += \\text{Allocation}[i]$. The algorithm checks this iteratively. If all processes can finish, the state is safe. The time complexity is $O(m \\times n^2)$."
+  explanation="A safe state means there exists a sequence $\\langle P_1, P_2, \\ldots, P_n \\rangle$ such that for each $P_i$, $\\text{Need}[i] \\leq \\text{Work}$ (initially Available). After $P_i$ finishes, $\\text{Work} += \\text{Allocation}[i]$. The algorithm checks this iteratively. If all processes can finish, the state is safe. The time complexity is $O(m \\times n^2)$."
   difficulty="medium"
 />
 
@@ -66,7 +66,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     'To prevent buffer overflow',
   ]}
   correctAnswer={0}
-  explanation"If the producer calls WAIT(mutex) first when the buffer is full, it holds the mutex while calling WAIT(empty), which blocks. The consumer cannot enter WAIT(mutex) to consume and free space, causing deadlock. By calling WAIT(empty) first, the producer blocks on the counting semaphore without holding the mutex, allowing the consumer to proceed."
+  explanation="If the producer calls WAIT(mutex) first when the buffer is full, it holds the mutex while calling WAIT(empty), which blocks. The consumer cannot enter WAIT(mutex) to consume and free space, causing deadlock. By calling WAIT(empty) first, the producer blocks on the counting semaphore without holding the mutex, allowing the consumer to proceed."
   difficulty="hard"
 />
 
@@ -79,7 +79,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     'Both types are treated identically within the MLFQ structure',
   ]}
   correctAnswer={0}
-  explanation"MLFQ maintains multiple priority queues. New processes enter the highest-priority queue (shortest quantum). If a process uses its full quantum (CPU-bound), it is demoted to the next lower-priority queue with a longer quantum. I/O-bound processes typically block for I/O before exhausting their quantum, so they stay in higher-priority queues and get faster response times."
+  explanation="MLFQ maintains multiple priority queues. New processes enter the highest-priority queue (shortest quantum). If a process uses its full quantum (CPU-bound), it is demoted to the next lower-priority queue with a longer quantum. I/O-bound processes typically block for I/O before exhausting their quantum, so they stay in higher-priority queues and get faster response times."
   difficulty="medium"
 />
 
@@ -94,7 +94,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     '$2^{p + \\log_2 F}$ entries',
   ]}
   correctAnswer={0}
-  explanation"The number of pages = logical address space / page size = $2^p / F$. The page number has $p - \\log_2 F$ bits, so there are $2^{p - \\log_2 F}$ pages and thus the same number of page table entries. Each entry maps a page number to a frame number. For 32-bit addresses with 4KB pages: $2^{20} = 1,048,576$ entries."
+  explanation="The number of pages = logical address space / page size = $2^p / F$. The page number has $p - \\log_2 F$ bits, so there are $2^{p - \\log_2 F}$ pages and thus the same number of page table entries. Each entry maps a page number to a frame number. For 32-bit addresses with 4KB pages: $2^{20} = 1,048,576$ entries."
   difficulty="medium"
 />
 
@@ -107,7 +107,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     'Clock (Second Chance)',
   ]}
   correctAnswer={0}
-  explanation"Belady's anomaly occurs with FIFO: more frames can paradoxically cause more page faults. Example: reference string 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames gives 9 faults; with 4 frames gives 10 faults. LRU and OPT satisfy the stack property (the set of pages in $n+1$ frames is a superset of those in $n$ frames) and do not exhibit Belady's anomaly."
+  explanation="Belady's anomaly occurs with FIFO: more frames can paradoxically cause more page faults. Example: reference string 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames gives 9 faults; with 4 frames gives 10 faults. LRU and OPT satisfy the stack property (the set of pages in $n+1$ frames is a superset of those in $n$ frames) and do not exhibit Belady's anomaly."
   difficulty="easy"
 />
 
@@ -120,7 +120,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     'The TLB cache hit rate drops to zero',
   ]}
   correctAnswer={0}
-  explanation"Thrashing occurs when $\\sum \\text{working\\_sets} > \\text{available\\_frames}$. Each process needs a minimum set of pages (working set) in memory to make progress. When memory is overcommitted, page faults force pages out that will be needed again, causing constant paging. Solutions: reduce the degree of multiprogramming or add physical memory."
+  explanation="Thrashing occurs when $\\sum \\text{working\\_sets} > \\text{available\\_frames}$. Each process needs a minimum set of pages (working set) in memory to make progress. When memory is overcommitted, page faults force pages out that will be needed again, causing constant paging. Solutions: reduce the degree of multiprogramming or add physical memory."
   difficulty="medium"
 />
 
@@ -133,7 +133,7 @@ virtual memory. Select an option to check your answer and view the explanation.
     '$0.95 \\times 5 = 4.75$ ns',
   ]}
   correctAnswer={0}
-  explanation"On a TLB hit, the frame number is found in the TLB (5ns) and memory is accessed (100ns), total 105ns. On a miss, the TLB is checked (5ns), the page table is accessed in memory (100ns), then the actual data is accessed (100ns), total 205ns. Wait -- the standard formula is $\\text{EAT} = h \\cdot (t_{\\text{TLB}} + t_{\\text{mem}}) + (1-h) \\cdot (t_{\\text{TLB}} + 2 t_{\\text{mem}})$ for two-level or $h \\cdot t_{\\text{TLB}} + (1-h)(t_{\\text{mem}} + t_{\\text{TLB}})$ for the TLB lookup + one memory access. The correct answer uses the single-level formula: $0.95(5+100) + 0.05(5+100+100) = 99.75 + 10.25 = 110$ ns. Actually, let me restate: for single-level paging, EAT = $h(t_{TLB} + t_{mem}) + (1-h)(t_{TLB} + 2t_{mem})$."
+  explanation="On a TLB hit, the frame number is found in the TLB (5ns) and memory is accessed (100ns), total 105ns. On a miss, the TLB is checked (5ns), the page table is accessed in memory (100ns), then the actual data is accessed (100ns), total 205ns. Wait -- the standard formula is $\\text{EAT} = h \\cdot (t_{\\text{TLB}} + t_{\\text{mem}}) + (1-h) \\cdot (t_{\\text{TLB}} + 2 t_{\\text{mem}})$ for two-level or $h \\cdot t_{\\text{TLB}} + (1-h)(t_{\\text{mem}} + t_{\\text{TLB}})$ for the TLB lookup + one memory access. The correct answer uses the single-level formula: $0.95(5+100) + 0.05(5+100+100) = 99.75 + 10.25 = 110$ ns. Actually, let me restate: for single-level paging, EAT = $h(t_{TLB} + t_{mem}) + (1-h)(t_{TLB} + 2t_{mem})$."
   difficulty="hard"
 />
 
@@ -146,6 +146,6 @@ virtual memory. Select an option to check your answer and view the explanation.
     'Eliminate mutual exclusion by making all resources shareable',
   ]}
   correctAnswer={0}
-  explanation"Circular wait prevention imposes a total order on resource types (e.g., number them $R_1, R_2, \\ldots, R_n$) and requires that a process can only request $R_j$ after releasing all $R_i$ where $i > j$. This eliminates cycles in the resource-allocation graph. Hold-and-wait prevention requires requesting all resources upfront (impractical). Preemption is often not feasible for non-sharable resources."
+  explanation="Circular wait prevention imposes a total order on resource types (e.g., number them $R_1, R_2, \\ldots, R_n$) and requires that a process can only request $R_j$ after releasing all $R_i$ where $i > j$. This eliminates cycles in the resource-allocation graph. Hold-and-wait prevention requires requesting all resources upfront (impractical). Preemption is often not feasible for non-sharable resources."
   difficulty="medium"
 />

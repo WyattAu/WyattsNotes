@@ -27,7 +27,7 @@ representations, optimization, and code generation. Select an option to check yo
     'Preferting keywords over identifiers regardless of length',
   ]}
   correctAnswer={0}
-  explanation"Maximal munch: the lexer always matches the longest valid prefix as a single token. For example, '123abc' is tokenized as '123' (integer) then 'abc' (identifier), not '1', '2', '3', 'abc'. This is typically implemented by running the DFA and backtracking to the last accepting state when no further transitions are valid."
+  explanation="Maximal munch: the lexer always matches the longest valid prefix as a single token. For example, '123abc' is tokenized as '123' (integer) then 'abc' (identifier), not '1', '2', '3', 'abc'. This is typically implemented by running the DFA and backtracking to the last accepting state when no further transitions are valid."
   difficulty="easy"
 />
 
@@ -40,7 +40,7 @@ representations, optimization, and code generation. Select an option to check yo
     'The grammar must have exactly one production per nonterminal',
   ]}
   correctAnswer={0}
-  explanation"LL(1) requires: (1) no left recursion ($A \\to A\\alpha$ causes infinite loop in recursive descent), eliminated by $A \\to \\beta A' \\mid \\gamma; A' \\to \\alpha A' \\mid \\epsilon$; and (2) left factoring ($A \\to \\alpha\\beta_1 \\mid \\alpha\\beta_2$ causes ambiguity with one lookahead), eliminated by $A \\to \\alpha A'; A' \\to \\beta_1 \\mid \\beta_2$. After these, the parsing table must have no conflicts."
+  explanation="LL(1) requires: (1) no left recursion ($A \\to A\\alpha$ causes infinite loop in recursive descent), eliminated by $A \\to \\beta A' \\mid \\gamma; A' \\to \\alpha A' \\mid \\epsilon$; and (2) left factoring ($A \\to \\alpha\\beta_1 \\mid \\alpha\\beta_2$ causes ambiguity with one lookahead), eliminated by $A \\to \\alpha A'; A' \\to \\beta_1 \\mid \\beta_2$. After these, the parsing table must have no conflicts."
   difficulty="medium"
 />
 
@@ -53,7 +53,7 @@ representations, optimization, and code generation. Select an option to check yo
     'LALR(1) is more powerful than LR(1)',
   ]}
   correctAnswer={0}
-  explanation"SLR(1) uses global FOLLOW sets for reduce decisions and may incorrectly reject valid strings or miss conflicts. LR(1) carries full lookahead context per state (most precise, largest tables). LALR(1) merges LR(1) states with the same core, losing some precision but keeping tables compact. LALR(1) is used by Yacc/Bison and handles most practical grammars."
+  explanation="SLR(1) uses global FOLLOW sets for reduce decisions and may incorrectly reject valid strings or miss conflicts. LR(1) carries full lookahead context per state (most precise, largest tables). LALR(1) merges LR(1) states with the same core, losing some precision but keeping tables compact. LALR(1) is used by Yacc/Bison and handles most practical grammars."
   difficulty="medium"
 />
 
@@ -66,7 +66,7 @@ representations, optimization, and code generation. Select an option to check yo
     'The parser encounters an unexpected token',
   ]}
   correctAnswer={0}
-  explanation"A shift-reduce conflict means the ACTION table entry has both SHIFT and REDUCE for the same state and lookahead. A reduce-reduce conflict means two different productions can be reduced in the same state. SLR(1), LALR(1), and LR(1) progressively eliminate more conflicts. Resolving conflicts requires grammar modification or operator precedence declarations."
+  explanation="A shift-reduce conflict means the ACTION table entry has both SHIFT and REDUCE for the same state and lookahead. A reduce-reduce conflict means two different productions can be reduced in the same state. SLR(1), LALR(1), and LR(1) progressively eliminate more conflicts. Resolving conflicts requires grammar modification or operator precedence declarations."
   difficulty="medium"
 />
 
@@ -79,7 +79,7 @@ representations, optimization, and code generation. Select an option to check yo
     '$\\text{FIRST}(\\alpha)$ is always a singleton set',
   ]}
   correctAnswer={0}
-  explanation"For $\\alpha = Y_1 Y_2 \\ldots Y_k$: add FIRST($Y_1$) to FIRST($\\alpha$). If $\\epsilon \\in$ FIRST($Y_1$), also add FIRST($Y_2$). Continue until reaching $Y_i$ where $\\epsilon \\notin$ FIRST($Y_i$), or all symbols have $\\epsilon$-derivations (then $\\epsilon \\in$ FIRST($\\alpha$)). This cascading is key to computing FIRST for string arguments."
+  explanation="For $\\alpha = Y_1 Y_2 \\ldots Y_k$: add FIRST($Y_1$) to FIRST($\\alpha$). If $\\epsilon \\in$ FIRST($Y_1$), also add FIRST($Y_2$). Continue until reaching $Y_i$ where $\\epsilon \\notin$ FIRST($Y_i$), or all symbols have $\\epsilon$-derivations (then $\\epsilon \\in$ FIRST($\\alpha$)). This cascading is key to computing FIRST for string arguments."
   difficulty="hard"
 />
 
@@ -94,7 +94,7 @@ representations, optimization, and code generation. Select an option to check yo
     'Only at function call sites',
   ]}
   correctAnswer={0}
-  explanation"A $\\phi$-function merges values from different control flow paths: $x_3 = \\phi(x_1, x_2)$ means $x_3$ takes $x_1$ or $x_2$ depending on which path was taken. $\\phi$-functions are placed at the dominance frontier of each block that defines a variable. The dominance frontier is exactly where different definitions of a variable can reach the same point."
+  explanation="A $\\phi$-function merges values from different control flow paths: $x_3 = \\phi(x_1, x_2)$ means $x_3$ takes $x_1$ or $x_2$ depending on which path was taken. $\\phi$-functions are placed at the dominance frontier of each block that defines a variable. The dominance frontier is exactly where different definitions of a variable can reach the same point."
   difficulty="hard"
 />
 
@@ -107,7 +107,7 @@ representations, optimization, and code generation. Select an option to check yo
     'Constant propagation replaces variables with register names; constant folding removes functions',
   ]}
   correctAnswer={0}
-  explanation"Constant propagation (a data-flow analysis) determines that a variable always has a known constant value at a program point. Once propagated, constant folding evaluates expressions involving only constants at compile time: e.g., $x = 10; y = x + 5$ becomes $x = 10; y = 15$. These are often applied together in sequence."
+  explanation="Constant propagation (a data-flow analysis) determines that a variable always has a known constant value at a program point. Once propagated, constant folding evaluates expressions involving only constants at compile time: e.g., $x = 10; y = x + 5$ becomes $x = 10; y = 15$. These are often applied together in sequence."
   difficulty="medium"
 />
 
@@ -120,7 +120,7 @@ representations, optimization, and code generation. Select an option to check yo
     'Vertices are physical registers and edges represent available registers',
   ]}
   correctAnswer={0}
-  explanation"The interference graph has one vertex per virtual register. An edge connects $v_i$ and $v_j$ if they are simultaneously live (one is defined while the other is used later). A valid $k$-coloring assigns $k$ physical registers such that no two interfering virtual registers share a register. This is NP-hard in general; heuristics (simplify, coalesce, spill) work well in practice."
+  explanation="The interference graph has one vertex per virtual register. An edge connects $v_i$ and $v_j$ if they are simultaneously live (one is defined while the other is used later). A valid $k$-coloring assigns $k$ physical registers such that no two interfering virtual registers share a register. This is NP-hard in general; heuristics (simplify, coalesce, spill) work well in practice."
   difficulty="medium"
 />
 
@@ -133,7 +133,7 @@ representations, optimization, and code generation. Select an option to check yo
     'The parse tree uses binary branching and the AST uses n-ary branching only',
   ]}
   correctAnswer={0}
-  explanation"A parse tree preserves every grammar production, including parentheses, commas, and intermediate nonterminals (e.g., $E \\to E + T \\to T + F \\to \\text{id} + \\text{num}$). The AST simplifies this to $\\text{BinOp}(+, \\text{Var}(x), \\text{Num}(42))$, removing syntactic noise. ASTs are used for semantic analysis, optimization, and code generation."
+  explanation="A parse tree preserves every grammar production, including parentheses, commas, and intermediate nonterminals (e.g., $E \\to E + T \\to T + F \\to \\text{id} + \\text{num}$). The AST simplifies this to $\\text{BinOp}(+, \\text{Var}(x), \\text{Num}(42))$, removing syntactic noise. ASTs are used for semantic analysis, optimization, and code generation."
   difficulty="easy"
 />
 
@@ -146,6 +146,6 @@ representations, optimization, and code generation. Select an option to check yo
     '$x = y[i]$ (array access)',
   ]}
   correctAnswer={0}
-  explanation"Three-address code allows at most one operator and at most two operands on the right side of each instruction, plus one result on the left. The instruction $x = y + z + w$ has two operators and three operands, violating the three-address constraint. It would be split into $t_1 = y + z$ and $x = t_1 + w$."
+  explanation="Three-address code allows at most one operator and at most two operands on the right side of each instruction, plus one result on the left. The instruction $x = y + z + w$ has two operators and three operands, violating the three-address constraint. It would be split into $t_1 = y + z$ and $x = t_1 + w$."
   difficulty="easy"
 />
