@@ -92,7 +92,7 @@ runs:
       if: inputs.create-project == 'true'
       shell: bash
       run: |
-        npx wrangler pages project create ${{ inputs.project-name }} --production-branch main 2>/dev/null || true
+        npx wrangler@4 pages project create ${{ inputs.project-name }} --production-branch main 2>/dev/null || true
       env:
         CLOUDFLARE_API_TOKEN: '${{ secrets.CLOUDFLARE_API_TOKEN }}'
         CLOUDFLARE_ACCOUNT_ID: '${{ secrets.CLOUDFLARE_ACCOUNT_ID }}'
@@ -100,7 +100,7 @@ runs:
     - name: Deploy to Cloudflare Pages
       id: deploy
       shell: bash
-      run: npx wrangler pages deploy build --project-name ${{ inputs.project-name }}
+      run: npx wrangler@4 pages deploy build --project-name ${{ inputs.project-name }}
       env:
         CLOUDFLARE_API_TOKEN: '${{ secrets.CLOUDFLARE_API_TOKEN }}'
         CLOUDFLARE_ACCOUNT_ID: '${{ secrets.CLOUDFLARE_ACCOUNT_ID }}'

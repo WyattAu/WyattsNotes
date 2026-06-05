@@ -81,6 +81,12 @@ let baseline = null;
 
 if (fs.existsSync(BASELINE_FILE)) {
   baseline = JSON.parse(fs.readFileSync(BASELINE_FILE, 'utf-8'));
+  // Auto-fix empty baselines from initial setup
+  if (baseline.total === 0) {
+    console.log('Baseline has zero values — auto-updating with current build.');
+    fs.writeFileSync(BASELINE_FILE, JSON.stringify(current, null, 2) + '\n');
+    baseline = current;
+  }
 }
 
 const summaryPath = process.env.GITHUB_STEP_SUMMARY;
