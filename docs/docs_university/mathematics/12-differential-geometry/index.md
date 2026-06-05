@@ -10,7 +10,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: differential-geometry
 ---
 
 ## 1. Smooth Manifolds

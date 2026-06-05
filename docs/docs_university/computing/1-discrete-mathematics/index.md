@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computing
-slug: discrete-mathematics
 ---
 
 ## 1. Propositional and Predicate Logic

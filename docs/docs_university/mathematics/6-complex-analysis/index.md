@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: complex-analysis
 ---
 
 ## 1. Complex Numbers Review

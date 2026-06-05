@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computing
-slug: theory-of-computation
 ---
 
 ## 1. Introduction

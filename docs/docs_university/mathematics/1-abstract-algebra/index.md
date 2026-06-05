@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: abstract-algebra
 ---
 
 ## 1. Groups

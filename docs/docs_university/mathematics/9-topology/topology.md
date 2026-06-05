@@ -1,6 +1,6 @@
 ---
 title: Topology
-slug: university-maths/topology
+slug: topology
 date: 2026-05-30
 tags:
   - University Maths

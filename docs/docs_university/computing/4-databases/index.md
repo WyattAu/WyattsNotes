@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computing
-slug: databases
 ---
 
 ## 1. Introduction to Database Systems

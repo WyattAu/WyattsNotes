@@ -10,7 +10,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: functional-analysis
 ---
 
 ## 1. Normed Spaces and Banach Spaces

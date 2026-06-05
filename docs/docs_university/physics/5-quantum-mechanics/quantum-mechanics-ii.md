@@ -1,6 +1,6 @@
 ---
 title: quantum mechanics ii
-slug: university-physics/quantum-mechanics-ii
+slug: quantum-mechanics-ii
 date: 2026-05-30
 tags:
   - University Physics

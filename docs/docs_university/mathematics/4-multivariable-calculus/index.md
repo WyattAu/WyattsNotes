@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: multivariable-calculus
 ---
 
 ## 1. Partial Derivatives

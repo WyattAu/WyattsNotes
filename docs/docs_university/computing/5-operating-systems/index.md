@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computing
-slug: operating-systems
 ---
 
 ## 1. Introduction to Operating Systems

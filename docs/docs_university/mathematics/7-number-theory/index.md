@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: number-theory
 ---
 
 ## 1. Divisibility

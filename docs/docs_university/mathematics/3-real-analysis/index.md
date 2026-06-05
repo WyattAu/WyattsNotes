@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: real-analysis
 ---
 
 ## 1. The Real Number System

@@ -1,6 +1,6 @@
 ---
 title: thermodynamics
-slug: university-physics/thermodynamics
+slug: thermodynamics
 date: 2026-05-30
 tags:
   - University Physics

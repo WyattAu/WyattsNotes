@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computing
-slug: computer-networks
 ---
 
 ## 1. Network Models

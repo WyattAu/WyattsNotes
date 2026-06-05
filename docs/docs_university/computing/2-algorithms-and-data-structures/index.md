@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Computing
-slug: algorithms-and-data-structures
 ---
 
 ## 1. Algorithm Analysis

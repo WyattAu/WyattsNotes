@@ -9,7 +9,7 @@ tags:
   - University
 categories:
   - Mathematics
-slug: probability-and-.../4-statistics-and-probability/2_statistics
+slug: statistics
 ---
 
 ## 1. Probability Spaces

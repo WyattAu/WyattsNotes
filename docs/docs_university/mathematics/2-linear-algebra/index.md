@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: linear-algebra
 ---
 
 ## 1. Vectors and Vector Spaces

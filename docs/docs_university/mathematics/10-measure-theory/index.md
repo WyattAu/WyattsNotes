@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: measure-theory
 ---
 
 ## 1. Sigma-Algebras and Measurable Spaces
