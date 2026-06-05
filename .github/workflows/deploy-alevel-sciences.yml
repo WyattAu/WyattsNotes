@@ -34,82 +34,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Add swap space
-        run: |
-          sudo swapoff -a 2>/dev/null || true
-          sudo rm -f /swapfile
-          sudo dd if=/dev/zero of=/swapfile bs=1M count=16384
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
-          free -h
-
-      - uses: pnpm/action-setup@v6
-
-      - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8
+      - uses: ./.github/actions/docusaurus-build
         with:
-          node-version: 22
-          cache: pnpm
-
-      - run: pnpm install --frozen-lockfile
-
-      - name: Preprocess MDX files
-        run: node scripts/escape-latex-braces.js docs/docs_alevel
-
-      - name: Cache Docusaurus build
-        uses: actions/cache@v4
-        with:
-          path: node_modules/.cache/docusaurus
-          key: docusaurus-alevel-sciences-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            docusaurus-alevel-sciences-
-
-      - name: Build
-        run: |
-          npx docusaurus build --config docusaurus.alevel-sciences.config.ts 2>&1 | tee /tmp/build.log || true
-          # Check if build output exists (SSG may fail for some pages but client bundle is fine)
-          if [ -d "build" ]; then
-            echo "Build output exists, proceeding with deploy"
-            # Log SSG failures as warnings
-            grep "static site generation failed" /tmp/build.log && echo "::warning::SSG failed for some pages - client-side rendering will be used"
-          else
-            echo "::error::Build failed completely - no output directory"
-            exit 1
-          fi
-        env:
-          NODE_OPTIONS: --max-old-space-size=14336
-          DISABLE_LUNR: 'true'
-          GENERATE_SOURCEMAP: 'false'
-          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
-          GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
-          BING_SITE_VERIFICATION: ${{ secrets.BING_SITE_VERIFICATION }}
-          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
-
-      - name: Remove SSR bundle (Cloudflare Pages static-only, 25 MiB file limit)
-        run: rm -rf build/__server
-
-      - name: Create Cloudflare Pages project if needed
-        run:
-          npx wrangler pages project create wyattsnotes-alevel-sciences --production-branch main
-          2>/dev/null || true
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-
-      - name: Deploy to Cloudflare Pages
-        id: deploy
-        run: npx wrangler pages deploy build --project-name wyattsnotes-alevel-sciences
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-
-      - name: Deployment summary
-        if: always()
-        run: node scripts/deploy-summary.mjs
-        env:
-          SITE_NAME: 'A-Level Sciences'
-          DEPLOY_URL: 'https://alevel.wyattau.com'
-          BUILD_DURATION: '0'
-          GIT_SHA: ${{ github.sha }}
-          TRIGGER: ${{ github.event_name }}
-          DEPLOY_OUTCOME: ${{ steps.deploy.outcome }}
+          config-file: docusaurus.alevel-sciences.config.ts
+          project-name: wyattsnotes-alevel-sciences
+          site-name: 'A-Level Sciences'
+          deploy-url: 'https://alevel.wyattau.com'
+          node-memory: '14336'
+          preprocess-paths: 'docs/docs_alevel'
+          create-project: 'true'
+          allow-build-failure: 'true'
