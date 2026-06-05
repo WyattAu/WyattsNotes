@@ -20,53 +20,127 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'trig-1', front: 'State the double angle formula for sin(2θ) and
-cos(2θ).', back: 'sin(2θ) = 2sinθcosθ. cos(2θ) = cos²θ − sin²θ = 2cos²θ − 1 = 1 − 2sin²θ.', tags:
-['trigonometry'], difficulty: 'easy', }, { id: 'trig-2', front: 'State the sine rule.', back:
-'a/sinA = b/sinB = c/sinC = 2R, where R is the radius of the circumscribed circle. Used when you
-know an angle and its opposite side, plus one other value.', tags: ['trigonometry'], difficulty:
-'easy', }, { id: 'trig-3', front: 'State the cosine rule.', back: 'a² = b² + c² − 2bc·cosA.
-Rearranged: cosA = (b² + c² − a²)/(2bc). Used with two sides and the included angle (SAS) or all
-three sides (SSS).', tags: ['trigonometry'], difficulty: 'easy', }, { id: 'trig-4', front: 'State
-the small angle approximations for sinθ, cosθ, and tanθ when θ is in radians and small.', back:
-'sinθ ≈ θ, cosθ ≈ 1 − θ²/2, tanθ ≈ θ. These come from the first terms of the Maclaurin series and
-are valid when θ is small (in most cases θ < 0.3 rad).', tags: ['trigonometry'], difficulty:
-'medium', }, { id: 'int-1', front: 'List five standard integrals you must know for A-Level.', back:
-'∫xⁿ dx = xⁿ⁺¹/(n+1) + C (n≠−1). ∫(1/x) dx = ln|x| + C. ∫eˣ dx = eˣ + C. ∫sin(x) dx = −cos(x) + C.
-∫cos(x) dx = sin(x) + C.', tags: ['integration'], difficulty: 'easy', }, { id: 'int-2', front:
-'State integration by parts and give its LIATE priority rule.', back: '∫u dv = uv − ∫v du. LIATE
-priority for choosing u: Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential. Choose u
-as the function highest on the list.', tags: ['integration'], difficulty: 'medium', }, { id:
-'int-3', front: 'How do you integrate using substitution when the integrand contains a function and
-its derivative?', back: "If ∫f(g(x))·g'(x) dx, let u = g(x), so du = g'(x)dx. Then ∫f(u) du.
-Example: ∫2x·cos(x²) dx. Let u = x², du = 2x dx → ∫cos(u) du = sin(u) + C = sin(x²) + C.", tags:
-['integration'], difficulty: 'medium', }, { id: 'diff-1', front: 'State the chain rule for
-differentiation.', back: "If y = f(g(x)), then dy/dx = f'(g(x)) · g'(x). Example: d/dx[sin(3x)] =
-cos(3x) · 3 = 3cos(3x).", tags: ['differentiation'], difficulty: 'easy', }, { id: 'diff-2', front:
-'State the product rule for differentiation.', back: "If y = u(x) · v(x), then dy/dx = u'v + uv'.
-Example: d/dx[x² · sin(x)] = 2x · sin(x) + x² · cos(x).", tags: ['differentiation'], difficulty:
-'easy', }, { id: 'diff-3', front: 'State the quotient rule for differentiation.', back: "If y = u/v,
-then dy/dx = (v · u' − u · v') / v². Example: d/dx[sin(x)/x] = (x · cos(x) − sin(x) · 1) / x² =
-(xcosx − sinx) / x².", tags: ['differentiation'], difficulty: 'easy', }, { id: 'diff-4', front: 'How
-do you differentiate x² + y² = 4y implicitly?', back: 'Differentiate each term: 2x + 2y(dy/dx) =
-4(dy/dx). Collect dy/dx terms: 2y(dy/dx) − 4(dy/dx) = −2x. dy/dx(2y − 4) = −2x. dy/dx = 2x/(4 − 2y)
-= x/(2 − y).', tags: ['differentiation'], difficulty: 'medium', }, { id: 'vec-1', front: 'How do you
-find the magnitude of vector a = 3i − 4j + 12k?', back: '|a| = √(3² + (−4)² + 12²) = √(9 + 16 + 144)
-= √169 = 13. The magnitude is always non-negative.', tags: ['vectors'], difficulty: 'easy', }, { id:
-'vec-2', front: 'Define the dot product and state its geometric interpretation.', back: 'a · b =
-|a||b|cosθ = a₁b₁ + a₂b₂ + a₃b₃. Geometrically: a · b = 0 means perpendicular. a · b > 0 means θ <
-90°. a · b < 0 means θ > 90°.', tags: ['vectors'], difficulty: 'medium', }, { id: 'seq-1', front:
-'State the formula for the nth term and sum of the first n terms of an arithmetic sequence.', back:
-'nth term: aₙ = a₁ + (n−1)d. Sum of first n terms: Sₙ = n/2 · (2a₁ + (n−1)d) = n/2 · (a₁ + aₙ),
-where a₁ is the first term and d is the common difference.', tags: ['sequences'], difficulty:
-'easy', }, { id: 'seq-2', front: 'State the formula for the nth term and sum of the first n terms of
-a geometric sequence.', back: 'nth term: aₙ = a₁ · rⁿ⁻¹. Sum of first n terms: Sₙ = a₁(1 − rⁿ)/(1 −
-r) for r ≠ 1. Sum to infinity: S∞ = a₁/(1 − r) converges only when |r| < 1.', tags: ['sequences'],
-difficulty: 'medium', }, ];
+export const flashcards1 = [
+  {
+    id: 'trig-1',
+    front: 'State the double angle formula for sin(2θ) and cos(2θ).',
+    back: 'sin(2θ) = 2sinθcosθ. cos(2θ) = cos²θ − sin²θ = 2cos²θ − 1 = 1 − 2sin²θ.',
+    tags: ['trigonometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'trig-2',
+    front: 'State the sine rule.',
+    back: 'a/sinA = b/sinB = c/sinC = 2R, where R is the radius of the circumscribed circle. Used when you know an angle and its opposite side, plus one other value.',
+    tags: ['trigonometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'trig-3',
+    front: 'State the cosine rule.',
+    back: 'a² = b² + c² − 2bc·cosA. Rearranged: cosA = (b² + c² − a²)/(2bc). Used with two sides and the included angle (SAS) or all three sides (SSS).',
+    tags: ['trigonometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'trig-4',
+    front:
+      'State the small angle approximations for sinθ, cosθ, and tanθ when θ is in radians and small.',
+    back: 'sinθ ≈ θ, cosθ ≈ 1 − θ²/2, tanθ ≈ θ. These come from the first terms of the Maclaurin series and are valid when θ is small (in most cases θ < 0.3 rad).',
+    tags: ['trigonometry'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'int-1',
+    front: 'List five standard integrals you must know for A-Level.',
+    back: '∫xⁿ dx = xⁿ⁺¹/(n+1) + C (n≠−1). ∫(1/x) dx = ln|x| + C. ∫eˣ dx = eˣ + C. ∫sin(x) dx = −cos(x) + C. ∫cos(x) dx = sin(x) + C.',
+    tags: ['integration'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'int-2',
+    front: 'State integration by parts and give its LIATE priority rule.',
+    back: '∫u dv = uv − ∫v du. LIATE priority for choosing u: Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential. Choose u as the function highest on the list.',
+    tags: ['integration'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'int-3',
+    front:
+      'How do you integrate using substitution when the integrand contains a function and its derivative?',
+    back: "If ∫f(g(x))·g'(x) dx, let u = g(x), so du = g'(x)dx. Then ∫f(u) du. Example: ∫2x·cos(x²) dx. Let u = x², du = 2x dx → ∫cos(u) du = sin(u) + C = sin(x²) + C.",
+    tags: ['integration'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'diff-1',
+    front: 'State the chain rule for differentiation.',
+    back: "If y = f(g(x)), then dy/dx = f'(g(x)) · g'(x). Example: d/dx[sin(3x)] = cos(3x) · 3 = 3cos(3x).",
+    tags: ['differentiation'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'diff-2',
+    front: 'State the product rule for differentiation.',
+    back: "If y = u(x) · v(x), then dy/dx = u'v + uv'. Example: d/dx[x² · sin(x)] = 2x · sin(x) + x² · cos(x).",
+    tags: ['differentiation'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'diff-3',
+    front: 'State the quotient rule for differentiation.',
+    back: "If y = u/v, then dy/dx = (v · u' − u · v') / v². Example: d/dx[sin(x)/x] = (x · cos(x) − sin(x) · 1) / x² = (xcosx − sinx) / x².",
+    tags: ['differentiation'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'diff-4',
+    front: 'How do you differentiate x² + y² = 4y implicitly?',
+    back: 'Differentiate each term: 2x + 2y(dy/dx) = 4(dy/dx). Collect dy/dx terms: 2y(dy/dx) − 4(dy/dx) = −2x. dy/dx(2y − 4) = −2x. dy/dx = 2x/(4 − 2y) = x/(2 − y).',
+    tags: ['differentiation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'vec-1',
+    front: 'How do you find the magnitude of vector a = 3i − 4j + 12k?',
+    back: '|a| = √(3² + (−4)² + 12²) = √(9 + 16 + 144) = √169 = 13. The magnitude is always non-negative.',
+    tags: ['vectors'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'vec-2',
+    front: 'Define the dot product and state its geometric interpretation.',
+    back: 'a · b = |a||b|cosθ = a₁b₁ + a₂b₂ + a₃b₃. Geometrically: a · b = 0 means perpendicular. a · b > 0 means θ < 90°. a · b < 0 means θ > 90°.',
+    tags: ['vectors'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'seq-1',
+    front:
+      'State the formula for the nth term and sum of the first n terms of an arithmetic sequence.',
+    back: 'nth term: aₙ = a₁ + (n−1)d. Sum of first n terms: Sₙ = n/2 · (2a₁ + (n−1)d) = n/2 · (a₁ + aₙ), where a₁ is the first term and d is the common difference.',
+    tags: ['sequences'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'seq-2',
+    front:
+      'State the formula for the nth term and sum of the first n terms of a geometric sequence.',
+    back: 'nth term: aₙ = a₁ · rⁿ⁻¹. Sum of first n terms: Sₙ = a₁(1 − rⁿ)/(1 − r) for r ≠ 1. Sum to infinity: S∞ = a₁/(1 − r) converges only when |r| < 1.',
+    tags: ['sequences'],
+    difficulty: 'medium',
+  },
+];
 
 <FlashcardDeck
   deckId="alevel-pure-mathematics"
   title="A-Level Pure Mathematics"
   description="Trigonometry, integration, differentiation, vectors, and sequences"
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3]}
 />

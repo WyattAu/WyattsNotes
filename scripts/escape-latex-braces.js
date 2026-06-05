@@ -295,21 +295,22 @@ function collapseConstArrays(source) {
     }
 
     // Rename duplicate variable names to avoid MDX "already declared" errors
+    let renamedVarName = varName;
     if (varCounts[varName] > 1) {
       varIndex[varName] = (varIndex[varName] || 0) + 1;
       const idx = varIndex[varName];
-      const uniqueName = varName + idx;
+      renamedVarName = varName + idx;
       collapsed = collapsed.replace(
         new RegExp('(export\\s+const\\s+)' + varName + '(\\s*=)', 'g'),
-        '$1' + uniqueName + '$2',
+        '$1' + renamedVarName + '$2',
       );
-      // Also rename the JSX reference: {varName} → {uniqueName}
+      // Also rename the JSX reference: {varName} → {renamedVarName}
       // Look ahead in the lines after the array for <Component ... {varName} />
       for (let k = endLine + 1; k < Math.min(endLine + 10, lines.length); k++) {
         if (lines[k].includes('{' + varName + '}')) {
           lines[k] = lines[k].replace(
             new RegExp('\\{' + varName + '\\}', 'g'),
-            '{' + uniqueName + '}',
+            '{' + renamedVarName + '}',
           );
         }
       }
@@ -317,6 +318,32 @@ function collapseConstArrays(source) {
 
     // Escape apostrophes inside single-quoted strings
     collapsed = escapeApostrophesInStrings(collapsed);
+
+    // If the collapsed line is too long (>3000 chars), acorn fails on CI.
+    // Instead of collapsing, just add 'export' to the first line of the multi-line
+    // declaration and ensure a blank line after the closing ];
+    const MAX_COLLAPSED_LINE_LENGTH = 3000;
+    if (collapsed.length > MAX_COLLAPSED_LINE_LENGTH) {
+      let multilineReplacement = block;
+      if (!hasExport) {
+        multilineReplacement = prefix + 'export ' + multilineReplacement.trimStart();
+      }
+      // Apply same renaming to multi-line version
+      if (renamedVarName !== varName) {
+        multilineReplacement = multilineReplacement.replace(
+          new RegExp('(export\\s+const\\s+)' + varName + '(\\s*=)', 'g'),
+          '$1' + renamedVarName + '$2',
+        );
+      }
+      // Also apply apostrophe escaping to the multi-line version
+      multilineReplacement = multilineReplacement
+        .split('\n')
+        .map((l) => escapeApostrophesInStrings(l))
+        .join('\n');
+      replacements.push({ startLine, endLine, replacement: multilineReplacement });
+      i = endLine + 1;
+      continue;
+    }
 
     replacements.push({ startLine, endLine, replacement: collapsed });
     i = endLine + 1;
@@ -342,7 +369,7 @@ function collapseConstArrays(source) {
     lines = source.split('\n');
   }
 
-  return source;
+  return lines.join('\n');
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

@@ -18,78 +18,162 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"ib-cs-algorithms-data-structures-001",front:"State the truth table for
-the AND gate with inputs A and B.",back:"A=0,B=0 -> 0; A=0,B=1 -> 0; A=1,B=0 -> 0; A=1,B=1 ->
-1.",tags:["boolean-logic","gates"],difficulty:"easy"},{id:"ib-cs-algorithms-data-structures-002",front:"State
-the truth table for the OR gate with inputs A and B.",back:"A=0,B=0 -> 0; A=0,B=1 -> 1; A=1,B=0 ->
-1; A=1,B=1 ->
-1.",tags:["boolean-logic","gates"],difficulty:"easy"},{id:"ib-cs-algorithms-data-structures-003",front:"What
-does a NOT gate do?",back:"It outputs the opposite of the input: 0 becomes 1, and 1 becomes
-0.",tags:["boolean-logic","gates"],difficulty:"easy"},{id:"ib-cs-algorithms-data-structures-004",front:"Define
-an array and state one advantage of using arrays.",back:"An array is a data structure that stores a
-fixed number of elements of the same type in contiguous memory. Advantage: constant-time O(1) access
-by
-index.",tags:["data-structures","arrays"],difficulty:"easy"},{id:"ib-cs-algorithms-data-structures-005",front:"Describe
-the LIFO principle and name a data structure that uses it.",back:"Last In, First Out. A stack uses
-LIFO -- the most recently added element is removed
-first.",tags:["data-structures","stacks"],difficulty:"easy"},{id:"ib-cs-algorithms-data-structures-006",front:"Describe
-the FIFO principle and name a data structure that uses it.",back:"First In, First Out. A queue uses
-FIFO -- the earliest added element is removed
-first.",tags:["data-structures","queues"],difficulty:"easy"},{id:"ib-cs-algorithms-data-structures-007",front:"What
-is a linked list and how does it differ from an array?",back:"A linked list stores elements in nodes
-where each node contains data and a pointer to the next node. Unlike arrays, elements are not stored
-in contiguous memory and insertion/deletion is O(1) at known
-positions.",tags:["data-structures","linked-lists"],difficulty:"easy"},{id:"ib-cs-algorithms-data-structures-008",front:"Explain
-the purpose of a Karnaugh map.",back:"A Karnaugh map is a graphical method used to simplify boolean
-expressions by grouping adjacent 1s in a truth table grid, reducing the number of logic gates
-needed.",tags:["boolean-logic","karnaugh"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-009",front:"What
-is the output of an XOR gate when A=1 and B=1?",back:"0. XOR outputs 1 only when exactly one input
-is
-1.",tags:["boolean-logic","gates"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-010",front:"Explain
-decomposition in computational thinking.",back:"Decomposition is breaking a complex problem into
-smaller, more manageable sub-problems that can be solved independently, then combined to form the
-overall
-solution.",tags:["algorithms","decomposition"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-011",front:"Describe
-how bubble sort works.",back:"It repeatedly steps through the list, compares adjacent elements, and
-swaps them if they are in the wrong order. This process repeats until no swaps are
-needed.",tags:["sorting","bubble-sort"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-012",front:"How
-does binary search work and what precondition does it require?",back:"It repeatedly divides a sorted
-array in half, comparing the target with the middle element to determine which half to search next.
-Precondition: the array must be
-sorted.",tags:["searching","binary-search"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-013",front:"Describe
-how insertion sort works.",back:"It builds a sorted array one element at a time by taking each
-unsorted element and inserting it into its correct position within the sorted
-portion.",tags:["sorting","insertion-sort"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-014",front:"What
-is a hash table and how does it provide fast lookup?",back:"A hash table uses a hash function to map
-keys to array indices, enabling average O(1) insertion, deletion, and lookup. Collisions are handled
-by chaining or open
-addressing.",tags:["data-structures","hash-tables"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-015",front:"Describe
-the structure and properties of a binary search tree (BST).",back:"A BST is a tree where each node
-has at most two children. For any node, all values in the left subtree are smaller and all values in
-the right subtree are
-larger.",tags:["data-structures","trees"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-016",front:"What
-is the difference between a flowchart and pseudocode?",back:"A flowchart uses standard symbols to
-represent an algorithm graphically; pseudocode uses structured English-like statements to describe
-the logic
-textually.",tags:["algorithms","representation"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-017",front:"Explain
-selection sort.",back:"It finds the minimum element from the unsorted portion and swaps it with the
-first unsorted element, repeating until the entire array is
-sorted.",tags:["sorting","selection-sort"],difficulty:"medium"},{id:"ib-cs-algorithms-data-structures-018",front:"Describe
-the quicksort algorithm.",back:"It selects a pivot element, partitions the array into elements less
-than and greater than the pivot, then recursively sorts the two partitions. Average O(n log n),
-worst
-O(n^2).",tags:["sorting","quicksort"],difficulty:"hard"},{id:"ib-cs-algorithms-data-structures-019",front:"Explain
-two collision resolution strategies in hash tables.",back:"Chaining: each bucket holds a linked list
-of colliding elements. Open addressing: if a collision occurs, probe for the next available slot
-using linear probing, quadratic probing, or double
-hashing.",tags:["data-structures","hashing"],difficulty:"hard"},{id:"ib-cs-algorithms-data-structures-020",front:"Compare
-the time complexity of linear search, binary search, bubble sort, and quicksort.",back:"Linear
-search: O(n). Binary search: O(log n). Bubble sort: O(n^2). Quicksort: O(n log n) average, O(n^2)
-worst.",tags:["algorithms","complexity"],difficulty:"hard"}];
+export const flashcard1 = [
+  {
+    id: 'ib-cs-algorithms-data-structures-001',
+    front: 'State the truth table for the AND gate with inputs A and B.',
+    back: 'A=0,B=0 -> 0; A=0,B=1 -> 0; A=1,B=0 -> 0; A=1,B=1 -> 1.',
+    tags: ['boolean-logic', 'gates'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-002',
+    front: 'State the truth table for the OR gate with inputs A and B.',
+    back: 'A=0,B=0 -> 0; A=0,B=1 -> 1; A=1,B=0 -> 1; A=1,B=1 -> 1.',
+    tags: ['boolean-logic', 'gates'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-003',
+    front: 'What does a NOT gate do?',
+    back: 'It outputs the opposite of the input: 0 becomes 1, and 1 becomes 0.',
+    tags: ['boolean-logic', 'gates'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-004',
+    front: 'Define an array and state one advantage of using arrays.',
+    back: 'An array is a data structure that stores a fixed number of elements of the same type in contiguous memory. Advantage: constant-time O(1) access by index.',
+    tags: ['data-structures', 'arrays'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-005',
+    front: 'Describe the LIFO principle and name a data structure that uses it.',
+    back: 'Last In, First Out. A stack uses LIFO -- the most recently added element is removed first.',
+    tags: ['data-structures', 'stacks'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'ib-cs-algorithms-data-structures-006',
+    front: 'Describe the FIFO principle and name a data structure that uses it.',
+    back: 'First In, First Out. A queue uses FIFO -- the earliest added element is removed first.',
+    tags: ['data-structures', 'queues'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-007',
+    front: 'What is a linked list and how does it differ from an array?',
+    back: 'A linked list stores elements in nodes where each node contains data and a pointer to the next node. Unlike arrays, elements are not stored in contiguous memory and insertion/deletion is O(1) at known positions.',
+    tags: ['data-structures', 'linked-lists'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-008',
+    front: 'Explain the purpose of a Karnaugh map.',
+    back: 'A Karnaugh map is a graphical method used to simplify boolean expressions by grouping adjacent 1s in a truth table grid, reducing the number of logic gates needed.',
+    tags: ['boolean-logic', 'karnaugh'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-009',
+    front: 'What is the output of an XOR gate when A=1 and B=1?',
+    back: '0. XOR outputs 1 only when exactly one input is 1.',
+    tags: ['boolean-logic', 'gates'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-010',
+    front: 'Explain decomposition in computational thinking.',
+    back: 'Decomposition is breaking a complex problem into smaller, more manageable sub-problems that can be solved independently, then combined to form the overall solution.',
+    tags: ['algorithms', 'decomposition'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'ib-cs-algorithms-data-structures-011',
+    front: 'Describe how bubble sort works.',
+    back: 'It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process repeats until no swaps are needed.',
+    tags: ['sorting', 'bubble-sort'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-012',
+    front: 'How does binary search work and what precondition does it require?',
+    back: 'It repeatedly divides a sorted array in half, comparing the target with the middle element to determine which half to search next. Precondition: the array must be sorted.',
+    tags: ['searching', 'binary-search'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-013',
+    front: 'Describe how insertion sort works.',
+    back: 'It builds a sorted array one element at a time by taking each unsorted element and inserting it into its correct position within the sorted portion.',
+    tags: ['sorting', 'insertion-sort'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-014',
+    front: 'What is a hash table and how does it provide fast lookup?',
+    back: 'A hash table uses a hash function to map keys to array indices, enabling average O(1) insertion, deletion, and lookup. Collisions are handled by chaining or open addressing.',
+    tags: ['data-structures', 'hash-tables'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-015',
+    front: 'Describe the structure and properties of a binary search tree (BST).',
+    back: 'A BST is a tree where each node has at most two children. For any node, all values in the left subtree are smaller and all values in the right subtree are larger.',
+    tags: ['data-structures', 'trees'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'ib-cs-algorithms-data-structures-016',
+    front: 'What is the difference between a flowchart and pseudocode?',
+    back: 'A flowchart uses standard symbols to represent an algorithm graphically; pseudocode uses structured English-like statements to describe the logic textually.',
+    tags: ['algorithms', 'representation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-017',
+    front: 'Explain selection sort.',
+    back: 'It finds the minimum element from the unsorted portion and swaps it with the first unsorted element, repeating until the entire array is sorted.',
+    tags: ['sorting', 'selection-sort'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-018',
+    front: 'Describe the quicksort algorithm.',
+    back: 'It selects a pivot element, partitions the array into elements less than and greater than the pivot, then recursively sorts the two partitions. Average O(n log n), worst O(n^2).',
+    tags: ['sorting', 'quicksort'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-019',
+    front: 'Explain two collision resolution strategies in hash tables.',
+    back: 'Chaining: each bucket holds a linked list of colliding elements. Open addressing: if a collision occurs, probe for the next available slot using linear probing, quadratic probing, or double hashing.',
+    tags: ['data-structures', 'hashing'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-cs-algorithms-data-structures-020',
+    front:
+      'Compare the time complexity of linear search, binary search, bubble sort, and quicksort.',
+    back: 'Linear search: O(n). Binary search: O(log n). Bubble sort: O(n^2). Quicksort: O(n log n) average, O(n^2) worst.',
+    tags: ['algorithms', 'complexity'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ib-cs-algorithms-data-structures"
   title="IB CS -- Algorithms and Data Structures"
   description="Boolean logic, algorithms, data structures, searching, and sorting"
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

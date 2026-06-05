@@ -20,99 +20,124 @@ biotechnology, and evolution.
 
 ---
 
-const flashcardData = [ { id: 'dna-1', front: 'Describe the structure of a nucleotide.', back: 'A
-nucleotide consists of three components: 1) A pentose sugar (deoxyribose in DNA, ribose in RNA). 2)
-A phosphate group (attached to the 5\' carbon of the sugar). 3) A nitrogenous base (adenine,
-thymine, cytosine, or guanine in DNA — uracil replaces thymine in RNA). Nucleotides are linked by
-phosphodiester bonds between the 5\' phosphate and 3\' carbon of the next sugar.', tags: ['DNA
-structure', 'nucleotides'], difficulty: 'easy', }, { id: 'dna-2', front: 'Describe the double helix
-structure of DNA.', back: 'DNA is a double helix: two antiparallel strands (one 5\'→3\', the other
-3\'→5\') wound around each other. The sugar-phosphate backbones form the outside; the nitrogenous
-bases pair in the centre. The helix has a major groove and a minor groove. It is stabilised by
-hydrogen bonding between base pairs and hydrophobic interactions between stacked bases.', tags:
-['DNA structure', 'double helix'], difficulty: 'medium', }, { id: 'dna-3', front: 'Describe the base
-pairing rules in DNA and the hydrogen bonding involved.', back: 'Adenine (A) pairs with thymine (T)
-via 2 hydrogen bonds. Guanine (G) pairs with cytosine (C) via 3 hydrogen bonds. This complementary
-base pairing ensures DNA can replicate accurately. A–T and G–C pairings maintain a constant width of
-the helix (~2 nm). The G–C bond is stronger, so DNA with higher G-C content is more thermostable.',
-tags: ['DNA structure', 'base pairing'], difficulty: 'easy', }, { id: 'protein-1', front: 'Describe
-the process of transcription.', back: 'Transcription is the synthesis of mRNA from a DNA template.
-RNA polymerase binds to the promoter region on DNA and unwinds the double helix. Free RNA
-nucleotides align with the template (antisense) strand by complementary base pairing (A-U, T-A, G-C,
-C-G). RNA polymerase forms phosphodiester bonds in the 5\'→3\' direction. In eukaryotes: pre-mRNA is
-processed — introns removed (splicing), 5\' cap added, poly-A tail added.', tags: ['protein
-synthesis', 'transcription'], difficulty: 'medium', }, { id: 'protein-2', front: 'Describe the
-process of translation.', back: 'Translation occurs at ribosomes (free or on rough ER). Stages: 1)
-Initiation — mRNA binds to the small ribosomal subunit; initiator tRNA (methionine) binds to the
-start codon (AUG); large subunit joins. 2) Elongation — tRNAs bring amino acids; peptide bonds form
-between adjacent amino acids at the P and A sites. 3) Termination — a stop codon (UAA, UAG, UGA) is
-reached; the polypeptide is released.', tags: ['protein synthesis', 'translation'], difficulty:
-'medium', }, { id: 'protein-3', front: 'Explain the roles of codons and anticodons in translation.',
-back: 'A codon is a sequence of three nucleotide bases on mRNA that codes for a specific amino acid
-(degenerate — 64 codons for 20 amino acids). An anticodon is the complementary three-base sequence
-on tRNA. During translation, the anticodon on tRNA pairs with the codon on mRNA at the ribosome,
-ensuring the correct amino acid is incorporated. The wobble hypothesis allows some flexibility in
-the third base position.', tags: ['protein synthesis', 'codons', 'anticodons'], difficulty:
-'medium', }, { id: 'genetics-1', front: 'State Mendel\'s Law of Segregation and Law of Independent
-Assortment.', back: 'Law of Segregation: allele pairs separate during gamete formation (meiosis), so
-each gamete carries only one allele for each gene. Law of Independent Assortment: alleles of
-different genes assort independently during gamete formation (provided genes are on different
-chromosomes or far apart). These laws form the basis of Mendelian inheritance and predict
-genotypic/phenotypic ratios in crosses.', tags: ['genetics', 'Mendel\'s laws'], difficulty:
-'medium', }, { id: 'genetics-2', front: 'Explain incomplete dominance and codominance with
-examples.', back: 'Incomplete dominance: heterozygote has an intermediate phenotype. Example: red
-(RR) × white (WW) snapdragons → pink (RW). Neither allele is fully dominant. Codominance: both
-alleles are fully expressed in the heterozygote. Example: blood group AB — both A and B antigens are
-expressed on red blood cells simultaneously. Neither masks the other.', tags: ['genetics',
-'incomplete dominance'], difficulty: 'medium', }, { id: 'genetics-3', front: 'Explain sex-linked
-inheritance using an X-linked recessive trait as an example.', back: 'X-linked recessive alleles are
-carried on the X chromosome. Males (XY) need only one copy to express the trait (hemizygous).
-Females (XX) need two copies. Example: haemophilia — a carrier mother (XᴴXʰ) × unaffected father
-(XᴴY): daughters are 50% carriers, 50% unaffected; sons are 50% affected, 50% unaffected. Sex-linked
-traits are more common in males.', tags: ['genetics', 'sex-linked inheritance'], difficulty: 'hard',
-}, { id: 'biotech-1', front: 'Describe the process of PCR (polymerase chain reaction).', back: 'PCR
-amplifies a specific DNA sequence in vitro. Three steps repeated for 25–35 cycles: 1) Denaturation
-(95°C) — DNA unwinds into single strands. 2) Annealing (55–65°C) — primers (short DNA sequences)
-bind to complementary regions flanking the target. 3) Extension (72°C) — Taq polymerase synthesises
-new DNA strands. Each cycle doubles the DNA: 2ⁿ copies after n cycles. Requires template DNA,
-primers, free nucleotides, and Taq polymerase (thermostable).', tags: ['biotechnology', 'PCR'],
-difficulty: 'hard', }, { id: 'biotech-2', front: 'Explain how gel electrophoresis separates DNA
-fragments.', back: 'DNA fragments are loaded into wells in an agarose gel. An electric field is
-applied — DNA (negatively charged due to phosphate groups) moves towards the positive electrode.
-Smaller fragments move faster and travel further; larger fragments move slower. The gel is stained
-with a fluorescent dye (e.g. ethidium bromide) and viewed under UV light. Fragment sizes are
-determined by comparing to a DNA ladder (known size markers).', tags: ['biotechnology', 'gel
-electrophoresis'], difficulty: 'medium', }, { id: 'biotech-3', front: 'Describe the steps involved
-in genetic engineering using restriction enzymes and vectors.', back: '1) Isolation: the desired
-gene is cut from donor DNA using restriction enzymes (endonucleases) that recognise specific
-palindromic sequences. 2) Insertion: the gene is inserted into a vector (plasmid) cut with the same
-restriction enzyme — sticky ends anneal via complementary base pairing. DNA ligase seals the
-nicks. 3) Transfer: the recombinant plasmid is introduced into host cells (transformation). 4)
-Selection: cells containing the gene are identified using marker genes (e.g. antibiotic
-resistance).', tags: ['biotechnology', 'genetic engineering'], difficulty: 'hard', }, { id:
-'evolution-1', front: 'Explain natural selection and how it leads to evolution.', back: 'Natural
-selection: individuals with advantageous traits (adaptations) are more likely to survive and
-reproduce, passing on their alleles to the next generation. Key requirements: variation within a
-population, heritable traits, differential survival and reproduction (selection pressure), and
-competition for limited resources. Over many generations, allele frequencies change — this is
-evolution by natural selection. Can lead to speciation.', tags: ['evolution', 'natural selection'],
-difficulty: 'medium', }, { id: 'evolution-2', front: 'Describe genetic drift and the bottleneck
-effect.', back: 'Genetic drift: random changes in allele frequencies due to chance events,
-significant in small populations. Bottleneck effect: a population is drastically reduced (e.g. by
-natural disaster), losing genetic diversity. The surviving population may have different allele
-frequencies than the original. Founder effect: a small group colonises a new area, carrying only a
-subset of the original gene pool.', tags: ['evolution', 'genetic drift'], difficulty: 'hard', }, {
-id: 'evolution-3', front: 'Explain how speciation occurs through geographic isolation (allopatric
-speciation).', back: 'Allopatric speciation occurs when a population is physically separated by a
-geographic barrier (mountain range, river, ocean). Each isolated population experiences different
-selection pressures and genetic drift independently. Over time, allele frequencies diverge.
-Eventually, even if the populations are reunited, they can no longer interbreed to produce fertile
-offspring — they have become separate species. Reproductive isolation mechanisms include temporal,
-behavioural, and mechanical barriers.', tags: ['evolution', 'speciation'], difficulty: 'hard', }, ];
+export const flashcard1 = [
+  {
+    id: 'dna-1',
+    front: 'Describe the structure of a nucleotide.',
+    back: "A nucleotide consists of three components: 1) A pentose sugar (deoxyribose in DNA, ribose in RNA). 2) A phosphate group (attached to the 5' carbon of the sugar). 3) A nitrogenous base (adenine, thymine, cytosine, or guanine in DNA — uracil replaces thymine in RNA). Nucleotides are linked by phosphodiester bonds between the 5' phosphate and 3' carbon of the next sugar.",
+    tags: ['DNA structure', 'nucleotides'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'dna-2',
+    front: 'Describe the double helix structure of DNA.',
+    back: "DNA is a double helix: two antiparallel strands (one 5'→3', the other 3'→5') wound around each other. The sugar-phosphate backbones form the outside; the nitrogenous bases pair in the centre. The helix has a major groove and a minor groove. It is stabilised by hydrogen bonding between base pairs and hydrophobic interactions between stacked bases.",
+    tags: ['DNA structure', 'double helix'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dna-3',
+    front: 'Describe the base pairing rules in DNA and the hydrogen bonding involved.',
+    back: 'Adenine (A) pairs with thymine (T) via 2 hydrogen bonds. Guanine (G) pairs with cytosine (C) via 3 hydrogen bonds. This complementary base pairing ensures DNA can replicate accurately. A–T and G–C pairings maintain a constant width of the helix (~2 nm). The G–C bond is stronger, so DNA with higher G-C content is more thermostable.',
+    tags: ['DNA structure', 'base pairing'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'protein-1',
+    front: 'Describe the process of transcription.',
+    back: "Transcription is the synthesis of mRNA from a DNA template. RNA polymerase binds to the promoter region on DNA and unwinds the double helix. Free RNA nucleotides align with the template (antisense) strand by complementary base pairing (A-U, T-A, G-C, C-G). RNA polymerase forms phosphodiester bonds in the 5'→3' direction. In eukaryotes: pre-mRNA is processed — introns removed (splicing), 5' cap added, poly-A tail added.",
+    tags: ['protein synthesis', 'transcription'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'protein-2',
+    front: 'Describe the process of translation.',
+    back: 'Translation occurs at ribosomes (free or on rough ER). Stages: 1) Initiation — mRNA binds to the small ribosomal subunit; initiator tRNA (methionine) binds to the start codon (AUG); large subunit joins. 2) Elongation — tRNAs bring amino acids; peptide bonds form between adjacent amino acids at the P and A sites. 3) Termination — a stop codon (UAA, UAG, UGA) is reached; the polypeptide is released.',
+    tags: ['protein synthesis', 'translation'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'protein-3',
+    front: 'Explain the roles of codons and anticodons in translation.',
+    back: 'A codon is a sequence of three nucleotide bases on mRNA that codes for a specific amino acid (degenerate — 64 codons for 20 amino acids). An anticodon is the complementary three-base sequence on tRNA. During translation, the anticodon on tRNA pairs with the codon on mRNA at the ribosome, ensuring the correct amino acid is incorporated. The wobble hypothesis allows some flexibility in the third base position.',
+    tags: ['protein synthesis', 'codons', 'anticodons'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'genetics-1',
+    front: "State Mendel's Law of Segregation and Law of Independent Assortment.",
+    back: 'Law of Segregation: allele pairs separate during gamete formation (meiosis), so each gamete carries only one allele for each gene. Law of Independent Assortment: alleles of different genes assort independently during gamete formation (provided genes are on different chromosomes or far apart). These laws form the basis of Mendelian inheritance and predict genotypic/phenotypic ratios in crosses.',
+    tags: ['genetics', "Mendel's laws"],
+    difficulty: 'medium',
+  },
+  {
+    id: 'genetics-2',
+    front: 'Explain incomplete dominance and codominance with examples.',
+    back: 'Incomplete dominance: heterozygote has an intermediate phenotype. Example: red (RR) × white (WW) snapdragons → pink (RW). Neither allele is fully dominant. Codominance: both alleles are fully expressed in the heterozygote. Example: blood group AB — both A and B antigens are expressed on red blood cells simultaneously. Neither masks the other.',
+    tags: ['genetics', 'incomplete dominance'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'genetics-3',
+    front: 'Explain sex-linked inheritance using an X-linked recessive trait as an example.',
+    back: 'X-linked recessive alleles are carried on the X chromosome. Males (XY) need only one copy to express the trait (hemizygous). Females (XX) need two copies. Example: haemophilia — a carrier mother (XᴴXʰ) × unaffected father (XᴴY): daughters are 50% carriers, 50% unaffected; sons are 50% affected, 50% unaffected. Sex-linked traits are more common in males.',
+    tags: ['genetics', 'sex-linked inheritance'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'biotech-1',
+    front: 'Describe the process of PCR (polymerase chain reaction).',
+    back: 'PCR amplifies a specific DNA sequence in vitro. Three steps repeated for 25–35 cycles: 1) Denaturation (95°C) — DNA unwinds into single strands. 2) Annealing (55–65°C) — primers (short DNA sequences) bind to complementary regions flanking the target. 3) Extension (72°C) — Taq polymerase synthesises new DNA strands. Each cycle doubles the DNA: 2ⁿ copies after n cycles. Requires template DNA, primers, free nucleotides, and Taq polymerase (thermostable).',
+    tags: ['biotechnology', 'PCR'],
+    difficulty: 'hard',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'biotech-2',
+    front: 'Explain how gel electrophoresis separates DNA fragments.',
+    back: 'DNA fragments are loaded into wells in an agarose gel. An electric field is applied — DNA (negatively charged due to phosphate groups) moves towards the positive electrode. Smaller fragments move faster and travel further; larger fragments move slower. The gel is stained with a fluorescent dye (e.g. ethidium bromide) and viewed under UV light. Fragment sizes are determined by comparing to a DNA ladder (known size markers).',
+    tags: ['biotechnology', 'gel electrophoresis'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'biotech-3',
+    front:
+      'Describe the steps involved in genetic engineering using restriction enzymes and vectors.',
+    back: '1) Isolation: the desired gene is cut from donor DNA using restriction enzymes (endonucleases) that recognise specific palindromic sequences. 2) Insertion: the gene is inserted into a vector (plasmid) cut with the same restriction enzyme — sticky ends anneal via complementary base pairing. DNA ligase seals the nicks. 3) Transfer: the recombinant plasmid is introduced into host cells (transformation). 4) Selection: cells containing the gene are identified using marker genes (e.g. antibiotic resistance).',
+    tags: ['biotechnology', 'genetic engineering'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'evolution-1',
+    front: 'Explain natural selection and how it leads to evolution.',
+    back: 'Natural selection: individuals with advantageous traits (adaptations) are more likely to survive and reproduce, passing on their alleles to the next generation. Key requirements: variation within a population, heritable traits, differential survival and reproduction (selection pressure), and competition for limited resources. Over many generations, allele frequencies change — this is evolution by natural selection. Can lead to speciation.',
+    tags: ['evolution', 'natural selection'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'evolution-2',
+    front: 'Describe genetic drift and the bottleneck effect.',
+    back: 'Genetic drift: random changes in allele frequencies due to chance events, significant in small populations. Bottleneck effect: a population is drastically reduced (e.g. by natural disaster), losing genetic diversity. The surviving population may have different allele frequencies than the original. Founder effect: a small group colonises a new area, carrying only a subset of the original gene pool.',
+    tags: ['evolution', 'genetic drift'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'evolution-3',
+    front: 'Explain how speciation occurs through geographic isolation (allopatric speciation).',
+    back: 'Allopatric speciation occurs when a population is physically separated by a geographic barrier (mountain range, river, ocean). Each isolated population experiences different selection pressures and genetic drift independently. Over time, allele frequencies diverge. Eventually, even if the populations are reunited, they can no longer interbreed to produce fertile offspring — they have become separate species. Reproductive isolation mechanisms include temporal, behavioural, and mechanical barriers.',
+    tags: ['evolution', 'speciation'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ib-biology-genetics"
   title="IB Biology: Genetics"
   description="DNA structure, protein synthesis, inheritance, biotechnology, and evolution."
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3]}
 />

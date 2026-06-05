@@ -18,108 +18,172 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'sat-math-advanced-001', front: 'State the quadratic formula for ax² +
-bx + c = 0 and explain what the discriminant tells you.', back: 'x = (−b ± √(b² − 4ac)) / 2a. The
-discriminant D = b² − 4ac determines the nature of roots: D > 0 → two distinct real roots; D = 0 →
-one repeated real root; D < 0 → no real roots (two complex conjugate roots). On the SAT, check the
-discriminant first to determine whether the parabola crosses the x-axis.', tags: ['algebra'],
-difficulty: 'easy', }, { id: 'sat-math-advanced-002', front: 'Convert y = ax² + bx + c to vertex
-form y = a(x − h)² + k. State h and k in terms of a, b, c.', back: 'Vertex form: y = a(x − h)² + k
-where h = −b/(2a) and k = c − b²/(4a). The vertex is at (h, k). The axis of symmetry is x = h.
-Completing the square: y = a[x² + (b/a)x] + c = a[(x + b/2a)² − b²/4a²] + c = a(x + b/2a)² + (c −
-b²/4a).', tags: ['algebra'], difficulty: 'easy', }, { id: 'sat-math-advanced-003', front: 'State the
-properties of the discriminant b² − 4ac and its role in determining the nature and number of
-solutions.', back: 'b² − 4ac = 0: one real solution (parabola touches x-axis at vertex). b² − 4ac >
-0 and a perfect square: two rational solutions. b² − 4ac > 0 and not a perfect square: two
-irrational solutions. b² − 4ac < 0: no real solutions. Also: if a > 0 and D > 0, the parabola opens
-upward and crosses x-axis at two points.', tags: ['algebra'], difficulty: 'medium', }, { id:
-'sat-math-advanced-004', front: 'Write the equation of a circle with centre (h, k) and radius r. How
-do you find the centre and radius from the general form?', back: 'Standard form: (x − h)² + (y − k)²
-= r². General form: x² + y² + Dx + Ey + F = 0. Complete the square to convert: centre (−D/2, −E/2),
-radius = √((D/2)² + (E/2)² − F). The circle is valid only if the expression under the square root is
-positive.', tags: ['geometry'], difficulty: 'easy', }, { id: 'sat-math-advanced-005', front: 'State
-the exponential growth and decay formulas. How do you distinguish growth from decay?', back:
-'Exponential: y = a·bˣ or y = a·e^(kt). Growth when b > 1 (or k > 0), decay when 0 < b < 1 (or k <
-0). Growth: y = a(1 + r)ᵗ where r is the growth rate. Decay: y = a(1 − r)ᵗ where r is the decay
-rate. Half-life: y = a(½)^(t/h) where h is the half-life. Compound interest: A = P(1 + r/n)^(nt).',
-tags: ['algebra'], difficulty: 'medium', }, { id: 'sat-math-advanced-006', front: 'State the three
-fundamental logarithm properties: product rule, quotient rule, and power rule.', back: 'Product:
-log(ab) = log a + log b. Quotient: log(a/b) = log a − log b. Power: log(aⁿ) = n log a. Also:
-log_a(a) = 1 and log_a(1) = 0. Change of base: log_b(x) = log(x)/log(b) for any base. These
-properties are used to expand or condense logarithmic expressions on the SAT.', tags: ['algebra'],
-difficulty: 'easy', }, { id: 'sat-math-advanced-007', front: 'State SOHCAHTOA and the definitions of
-sine, cosine, and tangent in a right triangle.', back: 'SOH: sin θ = Opposite / Hypotenuse. CAH: cos
-θ = Adjacent / Hypotenuse. TOA: tan θ = Opposite / Adjacent. Also: sin²θ + cos²θ = 1, tan θ = sin θ
-/ cos θ. On the SAT, trigonometry appears in right triangle problems and some advanced questions.
-Remember: the hypotenuse is always opposite the right angle.', tags: ['trigonometry'], difficulty:
-'easy', }, { id: 'sat-math-advanced-008', front: 'State the Pythagorean identity and the two
-identities derived from it.', back: 'sin²θ + cos²θ = 1. Divide by cos²θ: 1 + tan²θ = sec²θ. Divide
-by sin²θ: 1 + cot²θ = csc²θ. From sin²θ + cos²θ = 1: sin²θ = 1 − cos²θ and cos²θ = 1 − sin²θ. These
-are useful for simplifying trigonometric expressions and solving equations.', tags:
-['trigonometry'], difficulty: 'medium', }, { id: 'sat-math-advanced-009', front: 'State the sum of
-angles formula for sine and cosine.', back: 'sin(A + B) = sin A cos B + cos A sin B. sin(A − B) =
-sin A cos B − cos A sin B. cos(A + B) = cos A cos B − sin A sin B. cos(A − B) = cos A cos B + sin A
-sin B. These are derived from the unit circle and are useful for evaluating trig functions of
-non-standard angles.', tags: ['trigonometry'], difficulty: 'hard', }, { id: 'sat-math-advanced-010',
-front: 'State the double angle formulas for sin(2A) and cos(2A).', back: 'sin(2A) = 2 sin A cos A.
-cos(2A) = cos²A − sin²A = 2cos²A − 1 = 1 − 2sin²A. The three forms of cos(2A) are equivalent and can
-be derived from each other using sin²A + cos²A = 1. Double angle formulas are essential for
-simplifying and solving trig equations.', tags: ['trigonometry'], difficulty: 'hard', }, { id:
-'sat-math-advanced-011', front: 'State the Law of Sines and the Law of Cosines.', back: 'Law of
-Sines: a/sin A = b/sin B = c/sin C. Used when you know an angle and its opposite side (AAS, SSA).
-Law of Cosines: c² = a² + b² − 2ab cos C. Used when you know three sides (SSS) or two sides and the
-included angle (SAS). When C = 90°, the Law of Cosines reduces to the Pythagorean theorem.', tags:
-['trigonometry'], difficulty: 'medium', }, { id: 'sat-math-advanced-012', front: 'State the distance
-formula between two points (x₁, y₁) and (x₂, y₂) and the midpoint formula.', back: 'Distance: d =
-√[(x₂ − x₁)² + (y₂ − y₁)²]. This is derived from the Pythagorean theorem. Midpoint: M = ((x₁ +
-x₂)/2, (y₁ + y₂)/2). The distance formula is also used to find the equation of a circle: (x − h)² +
-(y − k)² = r² where r is the distance from centre to any point on the circle.', tags: ['geometry'],
-difficulty: 'easy', }, { id: 'sat-math-advanced-013', front: 'State the slope formula and explain
-the conditions for parallel and perpendicular lines.', back: 'Slope: m = (y₂ − y₁)/(x₂ − x₁).
-Parallel lines: equal slopes (m₁ = m₂). Perpendicular lines: slopes are negative reciprocals (m₁ ×
-m₂ = −1, or m₂ = −1/m₁). A horizontal line has slope 0, a vertical line has undefined slope. The
-slope-intercept form is y = mx + b where m is the slope and b is the y-intercept.', tags:
-['geometry'], difficulty: 'medium', }, { id: 'sat-math-advanced-014', front: 'State the point-slope
-form of a line equation and when to use it.', back: 'y − y₁ = m(x − x₁), where m is the slope and
-(x₁, y₁) is a known point on the line. This form is most useful when given a point and slope (or two
-points). From point-slope, convert to: slope-intercept (y = mx + b), standard form (Ax + By = C), or
-general form. Always use this when a point on the line is given.', tags: ['geometry'], difficulty:
-'medium', }, { id: 'sat-math-advanced-015', front: 'What methods can be used to solve a system of
-two linear equations?', back: 'Three main methods: (1) Substitution: solve one equation for a
-variable, substitute into the other. (2) Elimination: multiply equations to align coefficients,
-add/subtract to eliminate a variable. (3) Graphical: find the intersection point. No solution
-(parallel lines), infinite solutions (same line), or one solution (lines intersect). On the SAT,
-choose the method that avoids fractions.', tags: ['algebra'], difficulty: 'easy', }, { id:
-'sat-math-advanced-016', front: 'Define function composition. Given f(x) = 2x + 1 and g(x) = x²,
-find f(g(3)) and g(f(3)).', back: 'Function composition: (f ∘ g)(x) = f(g(x)) — apply g first, then
-f. f(g(3)) = f(3²) = f(9) = 2(9) + 1 = 19. g(f(3)) = g(2(3)+1) = g(7) = 7² = 49. Note: f(g(x)) ≠
-g(f(x)) in general. The domain of f ∘ g is restricted to values of x where g(x) is in the domain of
-f.', tags: ['functions'], difficulty: 'medium', }, { id: 'sat-math-advanced-017', front: 'How do you
-solve an absolute value inequality |ax + b| < c and |ax + b| > c?', back: '|ax + b| < c → −c < ax +
-b < c (intersection/AND). Solve both inequalities separately. |ax + b| > c → ax + b < −c OR ax + b >
-c (union/OR). Key rule: less than → between; greater than → outside. For |ax + b| ≤ c: include the
-endpoints (−c ≤ ax + b ≤ c). Always check the direction of the inequality sign when dividing by a
-negative coefficient.', tags: ['algebra'], difficulty: 'medium', }, { id: 'sat-math-advanced-018',
-front: 'State the rules for operations with complex numbers: addition, multiplication, and
-division.', back: 'Addition: (a + bi) + (c + di) = (a+c) + (b+d)i. Multiplication: (a+bi)(c+di) =
-(ac−bd) + (ad+bc)i. Use FOIL. Division: multiply numerator and denominator by the conjugate of the
-denominator: (a+bi)/(c+di) = (a+bi)(c−di)/(c²+d²). Powers of i: i¹=i, i²=−1, i³=−i, i⁴=1 (repeats
-every 4).', tags: ['complex-numbers'], difficulty: 'medium', }, { id: 'sat-math-advanced-019',
-front: 'What is the relationship between the number of solutions of a system and the graph of the
-lines?', back: 'Two distinct intersection points: one unique solution. Parallel lines (same slope,
-different intercept): no solution (inconsistent). Coincident lines (same slope, same intercept):
-infinitely many solutions. For non-linear systems (e.g. line and parabola): 0, 1, or 2 solutions.
-The number of solutions equals the number of intersection points of the graphs.', tags: ['algebra'],
-difficulty: 'hard', }, { id: 'sat-math-advanced-020', front: 'State the relationship between zeros,
-factors, and x-intercepts of a polynomial.', back: 'If f(r) = 0, then r is a zero of f, (x − r) is a
-factor of f, and (r, 0) is an x-intercept of the graph of f. For a quadratic ax² + bx + c = a(x −
-r₁)(x − r₂). The sum of zeros = −b/a, product of zeros = c/a. A zero of even multiplicity touches
-but does not cross the x-axis. Odd multiplicity crosses the x-axis.', tags: ['algebra'], difficulty:
-'hard', } ];
+export const flashcard1 = [
+  {
+    id: 'sat-math-advanced-001',
+    front:
+      'State the quadratic formula for ax² + bx + c = 0 and explain what the discriminant tells you.',
+    back: 'x = (−b ± √(b² − 4ac)) / 2a. The discriminant D = b² − 4ac determines the nature of roots: D > 0 → two distinct real roots; D = 0 → one repeated real root; D < 0 → no real roots (two complex conjugate roots). On the SAT, check the discriminant first to determine whether the parabola crosses the x-axis.',
+    tags: ['algebra'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'sat-math-advanced-002',
+    front:
+      'Convert y = ax² + bx + c to vertex form y = a(x − h)² + k. State h and k in terms of a, b, c.',
+    back: 'Vertex form: y = a(x − h)² + k where h = −b/(2a) and k = c − b²/(4a). The vertex is at (h, k). The axis of symmetry is x = h. Completing the square: y = a[x² + (b/a)x] + c = a[(x + b/2a)² − b²/4a²] + c = a(x + b/2a)² + (c − b²/4a).',
+    tags: ['algebra'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'sat-math-advanced-003',
+    front:
+      'State the properties of the discriminant b² − 4ac and its role in determining the nature and number of solutions.',
+    back: 'b² − 4ac = 0: one real solution (parabola touches x-axis at vertex). b² − 4ac > 0 and a perfect square: two rational solutions. b² − 4ac > 0 and not a perfect square: two irrational solutions. b² − 4ac < 0: no real solutions. Also: if a > 0 and D > 0, the parabola opens upward and crosses x-axis at two points.',
+    tags: ['algebra'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-004',
+    front:
+      'Write the equation of a circle with centre (h, k) and radius r. How do you find the centre and radius from the general form?',
+    back: 'Standard form: (x − h)² + (y − k)² = r². General form: x² + y² + Dx + Ey + F = 0. Complete the square to convert: centre (−D/2, −E/2), radius = √((D/2)² + (E/2)² − F). The circle is valid only if the expression under the square root is positive.',
+    tags: ['geometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'sat-math-advanced-005',
+    front:
+      'State the exponential growth and decay formulas. How do you distinguish growth from decay?',
+    back: 'Exponential: y = a·bˣ or y = a·e^(kt). Growth when b > 1 (or k > 0), decay when 0 < b < 1 (or k < 0). Growth: y = a(1 + r)ᵗ where r is the growth rate. Decay: y = a(1 − r)ᵗ where r is the decay rate. Half-life: y = a(½)^(t/h) where h is the half-life. Compound interest: A = P(1 + r/n)^(nt).',
+    tags: ['algebra'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'sat-math-advanced-006',
+    front:
+      'State the three fundamental logarithm properties: product rule, quotient rule, and power rule.',
+    back: 'Product: log(ab) = log a + log b. Quotient: log(a/b) = log a − log b. Power: log(aⁿ) = n log a. Also: log_a(a) = 1 and log_a(1) = 0. Change of base: log_b(x) = log(x)/log(b) for any base. These properties are used to expand or condense logarithmic expressions on the SAT.',
+    tags: ['algebra'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'sat-math-advanced-007',
+    front: 'State SOHCAHTOA and the definitions of sine, cosine, and tangent in a right triangle.',
+    back: 'SOH: sin θ = Opposite / Hypotenuse. CAH: cos θ = Adjacent / Hypotenuse. TOA: tan θ = Opposite / Adjacent. Also: sin²θ + cos²θ = 1, tan θ = sin θ / cos θ. On the SAT, trigonometry appears in right triangle problems and some advanced questions. Remember: the hypotenuse is always opposite the right angle.',
+    tags: ['trigonometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'sat-math-advanced-008',
+    front: 'State the Pythagorean identity and the two identities derived from it.',
+    back: 'sin²θ + cos²θ = 1. Divide by cos²θ: 1 + tan²θ = sec²θ. Divide by sin²θ: 1 + cot²θ = csc²θ. From sin²θ + cos²θ = 1: sin²θ = 1 − cos²θ and cos²θ = 1 − sin²θ. These are useful for simplifying trigonometric expressions and solving equations.',
+    tags: ['trigonometry'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-009',
+    front: 'State the sum of angles formula for sine and cosine.',
+    back: 'sin(A + B) = sin A cos B + cos A sin B. sin(A − B) = sin A cos B − cos A sin B. cos(A + B) = cos A cos B − sin A sin B. cos(A − B) = cos A cos B + sin A sin B. These are derived from the unit circle and are useful for evaluating trig functions of non-standard angles.',
+    tags: ['trigonometry'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'sat-math-advanced-010',
+    front: 'State the double angle formulas for sin(2A) and cos(2A).',
+    back: 'sin(2A) = 2 sin A cos A. cos(2A) = cos²A − sin²A = 2cos²A − 1 = 1 − 2sin²A. The three forms of cos(2A) are equivalent and can be derived from each other using sin²A + cos²A = 1. Double angle formulas are essential for simplifying and solving trig equations.',
+    tags: ['trigonometry'],
+    difficulty: 'hard',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'sat-math-advanced-011',
+    front: 'State the Law of Sines and the Law of Cosines.',
+    back: 'Law of Sines: a/sin A = b/sin B = c/sin C. Used when you know an angle and its opposite side (AAS, SSA). Law of Cosines: c² = a² + b² − 2ab cos C. Used when you know three sides (SSS) or two sides and the included angle (SAS). When C = 90°, the Law of Cosines reduces to the Pythagorean theorem.',
+    tags: ['trigonometry'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-012',
+    front:
+      'State the distance formula between two points (x₁, y₁) and (x₂, y₂) and the midpoint formula.',
+    back: 'Distance: d = √[(x₂ − x₁)² + (y₂ − y₁)²]. This is derived from the Pythagorean theorem. Midpoint: M = ((x₁ + x₂)/2, (y₁ + y₂)/2). The distance formula is also used to find the equation of a circle: (x − h)² + (y − k)² = r² where r is the distance from centre to any point on the circle.',
+    tags: ['geometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'sat-math-advanced-013',
+    front:
+      'State the slope formula and explain the conditions for parallel and perpendicular lines.',
+    back: 'Slope: m = (y₂ − y₁)/(x₂ − x₁). Parallel lines: equal slopes (m₁ = m₂). Perpendicular lines: slopes are negative reciprocals (m₁ × m₂ = −1, or m₂ = −1/m₁). A horizontal line has slope 0, a vertical line has undefined slope. The slope-intercept form is y = mx + b where m is the slope and b is the y-intercept.',
+    tags: ['geometry'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-014',
+    front: 'State the point-slope form of a line equation and when to use it.',
+    back: 'y − y₁ = m(x − x₁), where m is the slope and (x₁, y₁) is a known point on the line. This form is most useful when given a point and slope (or two points). From point-slope, convert to: slope-intercept (y = mx + b), standard form (Ax + By = C), or general form. Always use this when a point on the line is given.',
+    tags: ['geometry'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-015',
+    front: 'What methods can be used to solve a system of two linear equations?',
+    back: 'Three main methods: (1) Substitution: solve one equation for a variable, substitute into the other. (2) Elimination: multiply equations to align coefficients, add/subtract to eliminate a variable. (3) Graphical: find the intersection point. No solution (parallel lines), infinite solutions (same line), or one solution (lines intersect). On the SAT, choose the method that avoids fractions.',
+    tags: ['algebra'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'sat-math-advanced-016',
+    front:
+      'Define function composition. Given f(x) = 2x + 1 and g(x) = x², find f(g(3)) and g(f(3)).',
+    back: 'Function composition: (f ∘ g)(x) = f(g(x)) — apply g first, then f. f(g(3)) = f(3²) = f(9) = 2(9) + 1 = 19. g(f(3)) = g(2(3)+1) = g(7) = 7² = 49. Note: f(g(x)) ≠ g(f(x)) in general. The domain of f ∘ g is restricted to values of x where g(x) is in the domain of f.',
+    tags: ['functions'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-017',
+    front: 'How do you solve an absolute value inequality |ax + b| < c and |ax + b| > c?',
+    back: '|ax + b| < c → −c < ax + b < c (intersection/AND). Solve both inequalities separately. |ax + b| > c → ax + b < −c OR ax + b > c (union/OR). Key rule: less than → between; greater than → outside. For |ax + b| ≤ c: include the endpoints (−c ≤ ax + b ≤ c). Always check the direction of the inequality sign when dividing by a negative coefficient.',
+    tags: ['algebra'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-018',
+    front:
+      'State the rules for operations with complex numbers: addition, multiplication, and division.',
+    back: 'Addition: (a + bi) + (c + di) = (a+c) + (b+d)i. Multiplication: (a+bi)(c+di) = (ac−bd) + (ad+bc)i. Use FOIL. Division: multiply numerator and denominator by the conjugate of the denominator: (a+bi)/(c+di) = (a+bi)(c−di)/(c²+d²). Powers of i: i¹=i, i²=−1, i³=−i, i⁴=1 (repeats every 4).',
+    tags: ['complex-numbers'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'sat-math-advanced-019',
+    front:
+      'What is the relationship between the number of solutions of a system and the graph of the lines?',
+    back: 'Two distinct intersection points: one unique solution. Parallel lines (same slope, different intercept): no solution (inconsistent). Coincident lines (same slope, same intercept): infinitely many solutions. For non-linear systems (e.g. line and parabola): 0, 1, or 2 solutions. The number of solutions equals the number of intersection points of the graphs.',
+    tags: ['algebra'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'sat-math-advanced-020',
+    front: 'State the relationship between zeros, factors, and x-intercepts of a polynomial.',
+    back: 'If f(r) = 0, then r is a zero of f, (x − r) is a factor of f, and (r, 0) is an x-intercept of the graph of f. For a quadratic ax² + bx + c = a(x − r₁)(x − r₂). The sum of zeros = −b/a, product of zeros = c/a. A zero of even multiplicity touches but does not cross the x-axis. Odd multiplicity crosses the x-axis.',
+    tags: ['algebra'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="sat-math-advanced"
   title="SAT Math: Advanced"
   description="Quadratics, trigonometry, coordinate geometry, exponentials, logarithms, complex numbers"
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

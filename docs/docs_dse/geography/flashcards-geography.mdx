@@ -15,154 +15,164 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ## 20 interactive flashcards. Press Space to flip, rate 1-4.
 
-const flashcardData = [ {id:"dse-geography-001", front:"Define population density and explain two
-physical factors that influence population distribution.", back:"Population density is the number of
-people per unit area, usually expressed as persons per square kilometre. Two physical factors
-influencing distribution are: (1) Climate -- areas with moderate temperatures and adequate rainfall
-(e.g., temperate zones) support higher population densities than extreme climates (deserts, polar
-regions). (2) Topography -- flat lowland areas are easier to settle, farm, and build infrastructure
-than mountainous regions, so populations tend to concentrate in lowlands and river valleys.",
-tags:["population"], difficulty:"easy"}, {id:"dse-geography-002", front:"Describe the five stages of
-the Demographic Transition Model (DTM).", back:"Stage 1 (High stationary): High birth rate and high
-death rate, low natural increase. Stage 2 (Early expanding): Death rate falls rapidly due to
-improved medicine and sanitation; birth rate remains high; rapid population growth. Stage 3 (Late
-expanding): Birth rate begins to fall due to family planning, education, urbanisation; death rate
-continues to fall slowly; growth rate declines. Stage 4 (Low stationary): Both birth and death rates
-are low; population stabilises. Stage 5 (Decline): Death rate exceeds birth rate; population
-declines.", tags:["population"], difficulty:"medium"}, {id:"dse-geography-003", front:"Define
-urbanisation and state three push factors driving rural-to-urban migration.", back:"Urbanisation is
-the increasing proportion of a country's population living in urban areas. Three push factors: (1)
-Mechanisation of agriculture reducing demand for farm labour. (2) Lack of employment opportunities
-and low wages in rural areas. (3) Poor access to education, healthcare, and social services in rural
-communities. These factors push people away from rural areas towards cities.",
-tags:["urbanisation"], difficulty:"easy"}, {id:"dse-geography-004", front:"Describe the Burgess
-concentric zone model of urban land use.", back:"The Burgess model (1925) describes cities as a
-series of concentric rings radiating outward from the CBD (Central Business District). Zones from
-centre outward: (1) CBD -- high land value, commercial uses. (2) Transition zone (inner city) --
-mixed industrial and older residential, often deteriorating. (3) Working-class zone -- denser, older
-housing near factories. (4) Residential zone -- better-quality housing for middle classes. (5)
-Commuter zone -- suburban residential areas. The model assumes a uniform city on flat terrain.",
-tags:["urbanisation"], difficulty:"medium"}, {id:"dse-geography-005", front:"Explain the difference
-between subsistence farming and commercial farming.", back:"Subsistence farming: Produces food
-primarily for the farmer's own family with little surplus for sale. Labour-intensive, uses
-traditional methods, small plot sizes, found in developing countries (e.g., rice farming in
-Bangladesh). Commercial farming: Produces crops and livestock for sale in markets.
-Capital-intensive, uses modern technology, large-scale operations, found in developed countries
-(e.g., wheat farming in the Canadian Prairies, cattle ranching in Argentina).",
-tags:["agriculture"], difficulty:"easy"}, {id:"dse-geography-006", front:"State von Thunen's model
-of agricultural location and its key assumptions.", back:"Von Thunen's model (1826) explains
-agricultural land use patterns around a single market (isolated state). Key assumptions: (1)
-Isotropic plain (uniform flat land). (2) Single central market with equal access from all
-directions. (3) Uniform transport costs proportional to distance. The model predicts concentric
-rings: dairy and vegetables closest to market (perishable, high transport cost), then forestry, then
-grain farming, then livestock ranching furthest out. Land rent decreases with distance from the
-market.", tags:["agriculture"], difficulty:"medium"}, {id:"dse-geography-007", front:"List four
-factors that influence industrial location decisions.", back:"(1) Raw materials -- proximity to
-inputs reduces transport costs (e.g., steel mills near iron ore). (2) Labour -- availability of
-workers with appropriate skills at competitive wages. (3) Market access -- proximity to consumers
-reduces distribution costs. (4) Transport -- good road, rail, port, and airport infrastructure
-facilitates movement of goods. Additional factors: government incentives (tax breaks, SEZs), energy
-supply, agglomeration economies (clustering benefits), and environmental regulations.",
-tags:["industry"], difficulty:"easy"}, {id:"dse-geography-008", front:"Compare renewable and
-non-renewable energy sources, giving two examples of each.", back:"Renewable energy sources can be
-replenished naturally within a human lifetime: solar, wind, hydroelectric, geothermal, biomass. They
-are sustainable, produce fewer greenhouse gas emissions, but may be intermittent or have high setup
-costs. Non-renewable energy sources exist in finite quantities and cannot be replenished once used:
-coal, oil, natural gas, nuclear (uranium). They provide reliable, large-scale energy but contribute
-to pollution and resource depletion.", tags:["energy"], difficulty:"easy"}, {id:"dse-geography-009",
-front:"Explain the theory of plate tectonics and name three types of plate boundaries.", back:"Plate
-tectonics theory states that the Earth's lithosphere is divided into rigid plates floating on the
-semi-fluid asthenosphere. These plates move due to convection currents in the mantle. Three boundary
-types: (1) Divergent (constructive) -- plates move apart; magma rises to create new crust (e.g.,
-Mid-Atlantic Ridge). (2) Convergent (destructive) -- plates collide; one may subduct beneath the
-other, causing volcanoes and earthquakes (e.g., Andes). (3) Transform (conservative) -- plates slide
-horizontally past each other, causing earthquakes (e.g., San Andreas Fault).",
-tags:["plate-tectonics"], difficulty:"medium"}, {id:"dse-geography-010", front:"Describe the
-formation of a tropical cyclone (typhoon) and its key features.", back:"Tropical cyclones form over
-warm ocean water (at least 26.5 degrees C) between 5 and 20 degrees latitude. Warm moist air rises,
-creating a low-pressure centre. As air rises, it cools and condenses, releasing latent heat that
-fuels further uplift. The Coriolis effect causes the system to rotate (counter-clockwise in the
-Northern Hemisphere, clockwise in the Southern). Key features: eye (calm centre), eye wall (most
-intense winds), spiral rain bands. They weaken over land as the warm water energy source is cut
-off.", tags:["weather"], difficulty:"medium"}, {id:"dse-geography-011", front:"Explain the enhanced
-greenhouse effect and its link to global climate change.", back:"The natural greenhouse effect traps
-heat from the Sun in the atmosphere through greenhouse gases (CO2, methane, water vapour, nitrous
-oxide), keeping Earth habitable. The enhanced greenhouse effect refers to the additional warming
-caused by increased concentrations of greenhouse gases from human activities (burning fossil fuels,
-deforestation, agriculture). This enhances the trapping of outgoing longwave radiation, raising
-global temperatures. Consequences include rising sea levels, melting ice caps, more extreme weather
-events, and shifts in climate zones.", tags:["climate-change"], difficulty:"medium"},
-{id:"dse-geography-012", front:"Describe four coastal erosion processes and their effects.",
-back:"(1) Hydraulic action -- waves force air into cracks in rocks, exerting pressure that breaks
-them apart. (2) Abrasion -- waves throw rocks and sediment against cliffs, wearing them down. (3)
-Attrition -- rocks and sediment collide in the water, breaking into smaller, smoother pieces. (4)
-Solution (corrosion) -- waves dissolve soluble rocks (e.g., limestone, chalk) through chemical
-reactions. These processes create landforms such as cliffs, wave-cut platforms, caves, arches,
-stacks, and stumps.", tags:["coastal"], difficulty:"medium"}, {id:"dse-geography-013",
-front:"Explain the hydrological cycle and identify the main stores and flows.", back:"The
-hydrological (water) cycle describes the continuous movement of water between the atmosphere, land
-surface, and oceans. Main stores: oceans (97% of water), glaciers and ice caps, groundwater
-(aquifers), surface water (rivers, lakes), soil moisture, atmosphere (water vapour). Main flows:
-evaporation (from oceans and surfaces), transpiration (from plants), condensation (forming clouds),
-precipitation (rain, snow, hail), surface runoff (over land), infiltration (into soil), percolation
-(into rock), groundwater flow.", tags:["river"], difficulty:"medium"}, {id:"dse-geography-014",
-front:"Define GIS (Geographical Information System) and state two applications in geography.",
-back:"GIS is a computer-based system for storing, analysing, manipulating, and displaying spatial
-(geographical) data. It layers different types of data (maps, satellite images, statistics) to
-identify patterns and relationships. Two applications: (1) Urban planning -- analysing land use
-patterns, planning transport routes, identifying areas at risk of flooding. (2) Disaster management
--- mapping hazard zones, coordinating emergency response, tracking population displacement after
-natural disasters.", tags:["gis"], difficulty:"easy"}, {id:"dse-geography-015", front:"Define
-sustainable development and explain Brundtland's definition.", back:"Sustainable development is
-development that meets the needs of the present without compromising the ability of future
-generations to meet their own needs (Brundtland Report, 1987). It balances three pillars: economic
-growth, social equity, and environmental protection. In geography, this concept applies to resource
-management, urban planning, energy use, and agriculture. Examples: using renewable energy, reducing
-waste, protecting biodiversity, ensuring fair distribution of resources.",
-tags:["sustainable-development"], difficulty:"easy"}, {id:"dse-geography-016", front:"Describe how
-to calculate population density and explain its limitations as a measure.", back:"Population density
-= Total population / Total land area, expressed in persons per km squared. Limitations: (1) It is an
-average and masks internal variations (e.g., Egypt's overall density is low, but almost everyone
-lives along the Nile). (2) It does not account for variations in population distribution within a
-country (urban vs rural). (3) It does not reflect quality of life or resource availability. A more
-useful measure may be population distribution maps or physiological density (population per unit of
-arable land).", tags:["population"], difficulty:"medium"}, {id:"dse-geography-017", front:"Explain
-the Hoyt sector model of urban land use and how it differs from the Burgess model.", back:"The Hoyt
-sector model (1939) modifies the Burgess concentric zone model by proposing that urban land use
-develops in wedge-shaped sectors radiating from the CBD along transport corridors (railways, roads).
-Key differences: (1) Hoyt includes sectors of high-class residential, middle-class residential,
-low-class residential, and industry extending outward along transport lines. (2) Industrial zones
-extend in wedges along railways and rivers, not in concentric rings. (3) Similar land uses cluster
-in sectors due to the influence of transport routes and land values decreasing along, not just
-outward from, the CBD.", tags:["urbanisation"], difficulty:"hard"}, {id:"dse-geography-018",
-front:"Explain the concept of an ecological footprint and its relevance to sustainable
-development.", back:"An ecological footprint measures the amount of biologically productive land and
-water area required to produce the resources consumed and absorb the wastes generated by a person,
-community, or country. It is measured in global hectares per person. If a population's footprint
-exceeds the available biocapacity, it is living unsustainably (ecological overshoot). Developed
-countries typically have much larger footprints than developing ones. The concept is relevant to
-sustainability because it quantifies human demand on natural resources and helps assess whether
-consumption patterns can be maintained long-term.", tags:["sustainable-development"],
-difficulty:"hard"}, {id:"dse-geography-019", front:"Describe the process of longshore drift and the
-landforms it creates.", back:"Longshore drift is the movement of sediment (sand, shingle) along a
-coastline by waves approaching at an angle to the shore. Swash (waves moving up the beach) carries
-material obliquely up the beach, while backwash (water returning down the beach) carries material
-straight down due to gravity. This zigzag movement transports material along the coast in the
-direction of the prevailing wind. Landforms created: beaches (depositional), spits (sand extending
-across a river mouth or bay), bars (sand connecting two headlands), and tombolos (sand connecting an
-island to the mainland).", tags:["coastal"], difficulty:"medium"}, {id:"dse-geography-020",
-front:"Explain the concept of ecosystem services and give three categories with examples.",
-back:"Ecosystem services are the benefits that humans derive from natural ecosystems. Three
-categories: (1) Provisioning services -- direct material outputs such as food (fish from oceans),
-fresh water, timber, and medicinal plants. (2) Regulating services -- natural processes that
-regulate environmental conditions, such as climate regulation (carbon storage by forests), flood
-regulation (wetlands absorbing excess water), and water purification. (3) Cultural services --
-non-material benefits such as recreation, tourism, aesthetic enjoyment, and spiritual value of
-natural landscapes.", tags:["ecosystems"], difficulty:"hard"} ];
+export const flashcards1 = [
+  {
+    id: 'dse-geography-001',
+    front:
+      'Define population density and explain two physical factors that influence population distribution.',
+    back: 'Population density is the number of people per unit area, usually expressed as persons per square kilometre. Two physical factors influencing distribution are: (1) Climate -- areas with moderate temperatures and adequate rainfall (e.g., temperate zones) support higher population densities than extreme climates (deserts, polar regions). (2) Topography -- flat lowland areas are easier to settle, farm, and build infrastructure than mountainous regions, so populations tend to concentrate in lowlands and river valleys.',
+    tags: ['population'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'dse-geography-002',
+    front: 'Describe the five stages of the Demographic Transition Model (DTM).',
+    back: 'Stage 1 (High stationary): High birth rate and high death rate, low natural increase. Stage 2 (Early expanding): Death rate falls rapidly due to improved medicine and sanitation; birth rate remains high; rapid population growth. Stage 3 (Late expanding): Birth rate begins to fall due to family planning, education, urbanisation; death rate continues to fall slowly; growth rate declines. Stage 4 (Low stationary): Both birth and death rates are low; population stabilises. Stage 5 (Decline): Death rate exceeds birth rate; population declines.',
+    tags: ['population'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-003',
+    front: 'Define urbanisation and state three push factors driving rural-to-urban migration.',
+    back: "Urbanisation is the increasing proportion of a country's population living in urban areas. Three push factors: (1) Mechanisation of agriculture reducing demand for farm labour. (2) Lack of employment opportunities and low wages in rural areas. (3) Poor access to education, healthcare, and social services in rural communities. These factors push people away from rural areas towards cities.",
+    tags: ['urbanisation'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'dse-geography-004',
+    front: 'Describe the Burgess concentric zone model of urban land use.',
+    back: 'The Burgess model (1925) describes cities as a series of concentric rings radiating outward from the CBD (Central Business District). Zones from centre outward: (1) CBD -- high land value, commercial uses. (2) Transition zone (inner city) -- mixed industrial and older residential, often deteriorating. (3) Working-class zone -- denser, older housing near factories. (4) Residential zone -- better-quality housing for middle classes. (5) Commuter zone -- suburban residential areas. The model assumes a uniform city on flat terrain.',
+    tags: ['urbanisation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-005',
+    front: 'Explain the difference between subsistence farming and commercial farming.',
+    back: "Subsistence farming: Produces food primarily for the farmer's own family with little surplus for sale. Labour-intensive, uses traditional methods, small plot sizes, found in developing countries (e.g., rice farming in Bangladesh). Commercial farming: Produces crops and livestock for sale in markets. Capital-intensive, uses modern technology, large-scale operations, found in developed countries (e.g., wheat farming in the Canadian Prairies, cattle ranching in Argentina).",
+    tags: ['agriculture'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'dse-geography-006',
+    front: "State von Thunen's model of agricultural location and its key assumptions.",
+    back: "Von Thunen's model (1826) explains agricultural land use patterns around a single market (isolated state). Key assumptions: (1) Isotropic plain (uniform flat land). (2) Single central market with equal access from all directions. (3) Uniform transport costs proportional to distance. The model predicts concentric rings: dairy and vegetables closest to market (perishable, high transport cost), then forestry, then grain farming, then livestock ranching furthest out. Land rent decreases with distance from the market.",
+    tags: ['agriculture'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-007',
+    front: 'List four factors that influence industrial location decisions.',
+    back: '(1) Raw materials -- proximity to inputs reduces transport costs (e.g., steel mills near iron ore). (2) Labour -- availability of workers with appropriate skills at competitive wages. (3) Market access -- proximity to consumers reduces distribution costs. (4) Transport -- good road, rail, port, and airport infrastructure facilitates movement of goods. Additional factors: government incentives (tax breaks, SEZs), energy supply, agglomeration economies (clustering benefits), and environmental regulations.',
+    tags: ['industry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'dse-geography-008',
+    front: 'Compare renewable and non-renewable energy sources, giving two examples of each.',
+    back: 'Renewable energy sources can be replenished naturally within a human lifetime: solar, wind, hydroelectric, geothermal, biomass. They are sustainable, produce fewer greenhouse gas emissions, but may be intermittent or have high setup costs. Non-renewable energy sources exist in finite quantities and cannot be replenished once used: coal, oil, natural gas, nuclear (uranium). They provide reliable, large-scale energy but contribute to pollution and resource depletion.',
+    tags: ['energy'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'dse-geography-009',
+    front: 'Explain the theory of plate tectonics and name three types of plate boundaries.',
+    back: "Plate tectonics theory states that the Earth's lithosphere is divided into rigid plates floating on the semi-fluid asthenosphere. These plates move due to convection currents in the mantle. Three boundary types: (1) Divergent (constructive) -- plates move apart; magma rises to create new crust (e.g., Mid-Atlantic Ridge). (2) Convergent (destructive) -- plates collide; one may subduct beneath the other, causing volcanoes and earthquakes (e.g., Andes). (3) Transform (conservative) -- plates slide horizontally past each other, causing earthquakes (e.g., San Andreas Fault).",
+    tags: ['plate-tectonics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-010',
+    front: 'Describe the formation of a tropical cyclone (typhoon) and its key features.',
+    back: 'Tropical cyclones form over warm ocean water (at least 26.5 degrees C) between 5 and 20 degrees latitude. Warm moist air rises, creating a low-pressure centre. As air rises, it cools and condenses, releasing latent heat that fuels further uplift. The Coriolis effect causes the system to rotate (counter-clockwise in the Northern Hemisphere, clockwise in the Southern). Key features: eye (calm centre), eye wall (most intense winds), spiral rain bands. They weaken over land as the warm water energy source is cut off.',
+    tags: ['weather'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'dse-geography-011',
+    front: 'Explain the enhanced greenhouse effect and its link to global climate change.',
+    back: 'The natural greenhouse effect traps heat from the Sun in the atmosphere through greenhouse gases (CO2, methane, water vapour, nitrous oxide), keeping Earth habitable. The enhanced greenhouse effect refers to the additional warming caused by increased concentrations of greenhouse gases from human activities (burning fossil fuels, deforestation, agriculture). This enhances the trapping of outgoing longwave radiation, raising global temperatures. Consequences include rising sea levels, melting ice caps, more extreme weather events, and shifts in climate zones.',
+    tags: ['climate-change'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-012',
+    front: 'Describe four coastal erosion processes and their effects.',
+    back: '(1) Hydraulic action -- waves force air into cracks in rocks, exerting pressure that breaks them apart. (2) Abrasion -- waves throw rocks and sediment against cliffs, wearing them down. (3) Attrition -- rocks and sediment collide in the water, breaking into smaller, smoother pieces. (4) Solution (corrosion) -- waves dissolve soluble rocks (e.g., limestone, chalk) through chemical reactions. These processes create landforms such as cliffs, wave-cut platforms, caves, arches, stacks, and stumps.',
+    tags: ['coastal'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-013',
+    front: 'Explain the hydrological cycle and identify the main stores and flows.',
+    back: 'The hydrological (water) cycle describes the continuous movement of water between the atmosphere, land surface, and oceans. Main stores: oceans (97% of water), glaciers and ice caps, groundwater (aquifers), surface water (rivers, lakes), soil moisture, atmosphere (water vapour). Main flows: evaporation (from oceans and surfaces), transpiration (from plants), condensation (forming clouds), precipitation (rain, snow, hail), surface runoff (over land), infiltration (into soil), percolation (into rock), groundwater flow.',
+    tags: ['river'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-014',
+    front: 'Define GIS (Geographical Information System) and state two applications in geography.',
+    back: 'GIS is a computer-based system for storing, analysing, manipulating, and displaying spatial (geographical) data. It layers different types of data (maps, satellite images, statistics) to identify patterns and relationships. Two applications: (1) Urban planning -- analysing land use patterns, planning transport routes, identifying areas at risk of flooding. (2) Disaster management -- mapping hazard zones, coordinating emergency response, tracking population displacement after natural disasters.',
+    tags: ['gis'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'dse-geography-015',
+    front: "Define sustainable development and explain Brundtland's definition.",
+    back: 'Sustainable development is development that meets the needs of the present without compromising the ability of future generations to meet their own needs (Brundtland Report, 1987). It balances three pillars: economic growth, social equity, and environmental protection. In geography, this concept applies to resource management, urban planning, energy use, and agriculture. Examples: using renewable energy, reducing waste, protecting biodiversity, ensuring fair distribution of resources.',
+    tags: ['sustainable-development'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'dse-geography-016',
+    front: 'Describe how to calculate population density and explain its limitations as a measure.',
+    back: "Population density = Total population / Total land area, expressed in persons per km squared. Limitations: (1) It is an average and masks internal variations (e.g., Egypt's overall density is low, but almost everyone lives along the Nile). (2) It does not account for variations in population distribution within a country (urban vs rural). (3) It does not reflect quality of life or resource availability. A more useful measure may be population distribution maps or physiological density (population per unit of arable land).",
+    tags: ['population'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-017',
+    front:
+      'Explain the Hoyt sector model of urban land use and how it differs from the Burgess model.',
+    back: 'The Hoyt sector model (1939) modifies the Burgess concentric zone model by proposing that urban land use develops in wedge-shaped sectors radiating from the CBD along transport corridors (railways, roads). Key differences: (1) Hoyt includes sectors of high-class residential, middle-class residential, low-class residential, and industry extending outward along transport lines. (2) Industrial zones extend in wedges along railways and rivers, not in concentric rings. (3) Similar land uses cluster in sectors due to the influence of transport routes and land values decreasing along, not just outward from, the CBD.',
+    tags: ['urbanisation'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'dse-geography-018',
+    front:
+      'Explain the concept of an ecological footprint and its relevance to sustainable development.',
+    back: "An ecological footprint measures the amount of biologically productive land and water area required to produce the resources consumed and absorb the wastes generated by a person, community, or country. It is measured in global hectares per person. If a population's footprint exceeds the available biocapacity, it is living unsustainably (ecological overshoot). Developed countries typically have much larger footprints than developing ones. The concept is relevant to sustainability because it quantifies human demand on natural resources and helps assess whether consumption patterns can be maintained long-term.",
+    tags: ['sustainable-development'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'dse-geography-019',
+    front: 'Describe the process of longshore drift and the landforms it creates.',
+    back: 'Longshore drift is the movement of sediment (sand, shingle) along a coastline by waves approaching at an angle to the shore. Swash (waves moving up the beach) carries material obliquely up the beach, while backwash (water returning down the beach) carries material straight down due to gravity. This zigzag movement transports material along the coast in the direction of the prevailing wind. Landforms created: beaches (depositional), spits (sand extending across a river mouth or bay), bars (sand connecting two headlands), and tombolos (sand connecting an island to the mainland).',
+    tags: ['coastal'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'dse-geography-020',
+    front: 'Explain the concept of ecosystem services and give three categories with examples.',
+    back: 'Ecosystem services are the benefits that humans derive from natural ecosystems. Three categories: (1) Provisioning services -- direct material outputs such as food (fish from oceans), fresh water, timber, and medicinal plants. (2) Regulating services -- natural processes that regulate environmental conditions, such as climate regulation (carbon storage by forests), flood regulation (wetlands absorbing excess water), and water purification. (3) Cultural services -- non-material benefits such as recreation, tourism, aesthetic enjoyment, and spiritual value of natural landscapes.',
+    tags: ['ecosystems'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="dse-geography"
   title="DSE Geography"
   description="Master population, urbanisation, agriculture, industry, energy, plate tectonics, weather, climate, and map skills for the HKDSE Geography exam."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

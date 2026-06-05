@@ -11,5 +11,162 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 ## Mathematics -- Linear Algebra Flashcards
 20 interactive flashcards for university-level Linear Algebra. Press Space to flip, rate 1-4.
 ---
-const flashcardData = [{id:"uni-maths-linear-algebra-001", front:"State the eight vector space axioms for a vector space V over a field F.", back:"For all u, v, w ∈ V and α, β ∈ F: (1) u + v ∈ V (closure under addition). (2) u + v = v + u (commutativity). (3) (u + v) + w = u + (v + w) (associativity). (4) ∃0 ∈ V such that u + 0 = u (additive identity). (5) ∃(−u) such that u + (−u) = 0 (additive inverse). (6) αu ∈ V (closure under scalar multiplication). (7) α(βu) = (αβ)u. (8) (α + β)u = αu + βu and α(u + v) = αu + αv.", tags:["vector-spaces"], difficulty:"easy"},{id:"uni-maths-linear-algebra-002", front:"Define a subspace W of a vector space V and state the subspace test.", back:"W ⊆ V is a subspace iff: (1) 0 ∈ W (non-empty), (2) for all u, v ∈ W, u + v ∈ W (closed under addition), (3) for all α ∈ F, w ∈ W, αw ∈ W (closed under scalar multiplication). Equivalently, W is a subspace iff for all u, v ∈ W and α, β ∈ F, αu + βv ∈ W.", tags:["vector-spaces"], difficulty:"easy"},{id:"uni-maths-linear-algebra-003", front:"Define the span of a set of vectors S = {v₁, ..., vₖ} ⊆ V.", back:"span(S) = {α₁v₁ + α₂v₂ + ... + αₖvₖ : αᵢ ∈ F}, the set of all finite linear combinations of vectors in S. span(S) is always a subspace of V. S spans V iff span(S) = V. A set is called a spanning set if its span equals the whole space.", tags:["vector-spaces"], difficulty:"easy"},{id:"uni-maths-linear-algebra-004", front:"Define linear independence and state the dependency test.", back:"Vectors v₁, ..., vₖ are linearly independent if α₁v₁ + ... + αₖvₖ = 0 implies α₁ = α₂ = ... = αₖ = 0. Equivalently, no vᵢ can be written as a linear combination of the others. Dependency test: form matrix A with vᵢ as columns; the vectors are independent iff rank(A) = k.", tags:["vector-spaces"], difficulty:"medium"},{id:"uni-maths-linear-algebra-005", front:"Define a basis of a vector space V and state its key properties.", back:"A basis of V is a linearly independent set that spans V. Key properties: every vector in V can be written uniquely as a linear combination of basis vectors. All bases of V have the same cardinality, called the dimension of V. If dim V = n, then any set of n linearly independent vectors forms a basis.", tags:["vector-spaces"], difficulty:"medium"},{id:"uni-maths-linear-algebra-006", front:"State the Dimension Theorem (for subspaces).", back:"If V is a finite-dimensional vector space and W₁, W₂ are subspaces, then dim(W₁ + W₂) + dim(W₁ ∩ W₂) = dim(W₁) + dim(W₂). Special case: for a linear map T: V → W, dim(ker T) + dim(im T) = dim V (this is the rank-nullity theorem).", tags:["vector-spaces"], difficulty:"medium"},{id:"uni-maths-linear-algebra-007", front:"State the Rank-Nullity Theorem.", back:"If T: V → W is a linear transformation and dim V = n, then rank(T) + nullity(T) = n, where rank(T) = dim(im T) and nullity(T) = dim(ker T). For an m×n matrix A: rank(A) + nullity(A) = n. This constrains the possible dimensions of image and kernel.", tags:["linear-transformations"], difficulty:"medium"},{id:"uni-maths-linear-algebra-008", front:"List key properties of the determinant of an n×n matrix A.", back:"(1) det(AB) = det(A)det(B). (2) det(Aᵀ) = det(A). (3) det(I) = 1. (4) Swapping two rows changes the sign. (5) Scaling a row by c multiplies det by c. (6) Adding a multiple of one row to another leaves det unchanged. (7) A is invertible iff det(A) ≠ 0. (8) det(A⁻¹) = 1/det(A).", tags:["matrices"], difficulty:"medium"},{id:"uni-maths-linear-algebra-009", front:"State the equivalent conditions for an n×n matrix A to be invertible.", back:"The following are equivalent: (1) A is invertible. (2) det(A) ≠ 0. (3) A has full rank (rank = n). (4) Ax = 0 has only the trivial solution. (5) Ax = b has a unique solution for every b. (6) The columns of A are linearly independent. (7) The rows of A are linearly independent. (8) 0 is not an eigenvalue of A. (9) The RREF of A is Iₙ.", tags:["matrices"], difficulty:"medium"},{id:"uni-maths-linear-algebra-010", front:"Define eigenvalues and eigenvectors of an n×n matrix A.", back:"A scalar λ ∈ F is an eigenvalue of A if there exists a nonzero vector v such that Av = λv. Such a vector v is called an eigenvector associated with λ. λ is an eigenvalue iff det(A − λI) = 0. The set of all eigenvalues is called the spectrum of A. The eigenvectors for distinct eigenvalues are linearly independent.", tags:["eigenvalues"], difficulty:"easy"},{id:"uni-maths-linear-algebra-011", front:"Define the characteristic polynomial of an n×n matrix A and state Cayley-Hamilton.", back:"The characteristic polynomial is p(λ) = det(A − λI), a polynomial of degree n. The roots of p are the eigenvalues of A. Cayley-Hamilton theorem: every square matrix satisfies its own characteristic polynomial, i.e. p(A) = 0 (the zero matrix). This is used to find A⁻¹ and compute powers of A.", tags:["eigenvalues"], difficulty:"medium"},{id:"uni-maths-linear-algebra-012", front:"State the Cayley-Hamilton theorem and give a key application.", back:"For an n×n matrix A with characteristic polynomial p(λ) = det(λI − A), we have p(A) = 0. Application: if p(λ) = λⁿ + cₙ₋₁λⁿ⁻¹ + ... + c₁λ + c₀, then Aⁿ = −cₙ₋₁Aⁿ⁻¹ − ... − c₁A − c₀I. If c₀ ≠ 0, then A⁻¹ = −(1/c₀)(Aⁿ⁻¹ + cₙ₋₁Aⁿ⁻² + ... + c₁I).", tags:["eigenvalues"], difficulty:"hard"},{id:"uni-maths-linear-algebra-013", front:"Define diagonalisation and state when a matrix A is diagonalisable.", back:"A is diagonalisable if there exists an invertible matrix P such that P⁻¹AP = D, where D is diagonal. Equivalent conditions: (1) A has n linearly independent eigenvectors. (2) The sum of geometric multiplicities of all eigenvalues equals n. (3) For each eigenvalue, algebraic multiplicity equals geometric multiplicity. Sufficient: A has n distinct eigenvalues.", tags:["eigenvalues"], difficulty:"medium"},{id:"uni-maths-linear-algebra-014", front:"Define an orthogonal matrix Q and state its key properties.", back:"A real n×n matrix Q is orthogonal if QᵀQ = QQᵀ = I, equivalently Qᵀ = Q⁻¹. Properties: (1) columns form an orthonormal basis for ℝⁿ. (2) Q preserves the dot product: (Qu)·(Qv) = u·v. (3) Q preserves lengths: ||Qv|| = ||v||. (4) det(Q) = ±1. (5) eigenvalues have |λ| = 1. (6) orthogonal matrices form a group under multiplication.", tags:["inner-product"], difficulty:"medium"},{id:"uni-maths-linear-algebra-015", front:"Outline the Gram-Schmidt orthogonalisation process.", back:"Given linearly independent vectors {v₁, ..., vₖ} in an inner product space, construct an orthonormal set {e₁, ..., eₖ}: (1) u₁ = v₁, e₁ = u₁/||u₁||. (2) uⱼ = vⱼ − Σ(i=1 to j-1)⟨vⱼ, eᵢ⟩eᵢ, then eⱼ = uⱼ/||uⱼ||. This produces an orthonormal basis for span{v₁, ..., vₖ}. Applied to columns of A to obtain QR decomposition.", tags:["inner-product"], difficulty:"medium"},{id:"uni-maths-linear-algebra-016", front:"Define an inner product space and state the Cauchy-Schwarz inequality.", back:"An inner product on V is a function ⟨·,·⟩: V×V → F satisfying: (1) positivity: ⟨v,v⟩ ≥ 0 with equality iff v = 0, (2) linearity in first argument, (3) conjugate symmetry. Cauchy-Schwarz: |⟨u,v⟩|² ≤ ⟨u,u⟩⟨v,v⟩, with equality iff u and v are linearly dependent. Consequence: defines a norm ||v|| = √⟨v,v⟩.", tags:["inner-product"], difficulty:"hard"},{id:"uni-maths-linear-algebra-017", front:"Define a linear transformation T: V → W and state its relationship to matrix representation.", back:"T: V → W is linear if T(αu + βv) = αT(u) + βT(v) for all u, v ∈ V and α, β ∈ F. Choosing bases B_V for V and B_W for W, there exists a unique matrix [T] such that [T(v)]_B_W = [T]_B_W,B_V [v]_B_V. Different choices of bases give different but similar matrices.", tags:["linear-transformations"], difficulty:"easy"},{id:"uni-maths-linear-algebra-018", front:"Define the kernel (null space) and image (column space) of a linear map T: V → W.", back:"ker(T) = {v ∈ V : T(v) = 0}. im(T) = {w ∈ W : ∃v ∈ V, T(v) = w}. ker(T) is a subspace of V; im(T) is a subspace of W. If A represents T in standard bases, ker(T) = null space of A (solutions to Ax = 0), im(T) = column space of A.", tags:["linear-transformations"], difficulty:"medium"},{id:"uni-maths-linear-algebra-019", front:"Describe the change of basis formula for a linear operator T: V → V.", back:"If T has matrix A relative to basis B₁ and matrix A' relative to basis B₂, then A' = P⁻¹AP, where P is the change-of-basis matrix from B₂ to B₁ (columns of P are B₂-vectors expressed in B₁-coordinates). Similar matrices share eigenvalues, trace, determinant, and rank.", tags:["linear-transformations"], difficulty:"hard"},{id:"uni-maths-linear-algebra-020", front:"State the Singular Value Decomposition (SVD) theorem.", back:"Any m×n real matrix A of rank r can be factored as A = UΣVᵀ, where U is m×m orthogonal, V is n×n orthogonal, and Σ is m×n diagonal with Σᵢᵢ = σᵢ > 0 for i = 1,...,r (the singular values). The σᵢ are the square roots of eigenvalues of AᵀA. Applications: low-rank approximation, pseudoinverse, PCA.", tags:["matrix-decomposition"], difficulty:"hard"}];
-<FlashcardDeck deckId="uni-maths-linear-algebra" title="University Maths -- Linear Algebra" description="Vector spaces, linear independence, eigenvalues, diagonalisation, inner products, SVD" cards={flashcardData} />
+
+export const flashcards1 = [
+  {
+    id: 'uni-maths-linear-algebra-001',
+    front: 'State the eight vector space axioms for a vector space V over a field F.',
+    back: 'For all u, v, w ∈ V and α, β ∈ F: (1) u + v ∈ V (closure under addition). (2) u + v = v + u (commutativity). (3) (u + v) + w = u + (v + w) (associativity). (4) ∃0 ∈ V such that u + 0 = u (additive identity). (5) ∃(−u) such that u + (−u) = 0 (additive inverse). (6) αu ∈ V (closure under scalar multiplication). (7) α(βu) = (αβ)u. (8) (α + β)u = αu + βu and α(u + v) = αu + αv.',
+    tags: ['vector-spaces'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-linear-algebra-002',
+    front: 'Define a subspace W of a vector space V and state the subspace test.',
+    back: 'W ⊆ V is a subspace iff: (1) 0 ∈ W (non-empty), (2) for all u, v ∈ W, u + v ∈ W (closed under addition), (3) for all α ∈ F, w ∈ W, αw ∈ W (closed under scalar multiplication). Equivalently, W is a subspace iff for all u, v ∈ W and α, β ∈ F, αu + βv ∈ W.',
+    tags: ['vector-spaces'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-linear-algebra-003',
+    front: 'Define the span of a set of vectors S = {v₁, ..., vₖ} ⊆ V.',
+    back: 'span(S) = {α₁v₁ + α₂v₂ + ... + αₖvₖ : αᵢ ∈ F}, the set of all finite linear combinations of vectors in S. span(S) is always a subspace of V. S spans V iff span(S) = V. A set is called a spanning set if its span equals the whole space.',
+    tags: ['vector-spaces'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-linear-algebra-004',
+    front: 'Define linear independence and state the dependency test.',
+    back: 'Vectors v₁, ..., vₖ are linearly independent if α₁v₁ + ... + αₖvₖ = 0 implies α₁ = α₂ = ... = αₖ = 0. Equivalently, no vᵢ can be written as a linear combination of the others. Dependency test: form matrix A with vᵢ as columns; the vectors are independent iff rank(A) = k.',
+    tags: ['vector-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-005',
+    front: 'Define a basis of a vector space V and state its key properties.',
+    back: 'A basis of V is a linearly independent set that spans V. Key properties: every vector in V can be written uniquely as a linear combination of basis vectors. All bases of V have the same cardinality, called the dimension of V. If dim V = n, then any set of n linearly independent vectors forms a basis.',
+    tags: ['vector-spaces'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-maths-linear-algebra-006',
+    front: 'State the Dimension Theorem (for subspaces).',
+    back: 'If V is a finite-dimensional vector space and W₁, W₂ are subspaces, then dim(W₁ + W₂) + dim(W₁ ∩ W₂) = dim(W₁) + dim(W₂). Special case: for a linear map T: V → W, dim(ker T) + dim(im T) = dim V (this is the rank-nullity theorem).',
+    tags: ['vector-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-007',
+    front: 'State the Rank-Nullity Theorem.',
+    back: 'If T: V → W is a linear transformation and dim V = n, then rank(T) + nullity(T) = n, where rank(T) = dim(im T) and nullity(T) = dim(ker T). For an m×n matrix A: rank(A) + nullity(A) = n. This constrains the possible dimensions of image and kernel.',
+    tags: ['linear-transformations'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-008',
+    front: 'List key properties of the determinant of an n×n matrix A.',
+    back: '(1) det(AB) = det(A)det(B). (2) det(Aᵀ) = det(A). (3) det(I) = 1. (4) Swapping two rows changes the sign. (5) Scaling a row by c multiplies det by c. (6) Adding a multiple of one row to another leaves det unchanged. (7) A is invertible iff det(A) ≠ 0. (8) det(A⁻¹) = 1/det(A).',
+    tags: ['matrices'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-009',
+    front: 'State the equivalent conditions for an n×n matrix A to be invertible.',
+    back: 'The following are equivalent: (1) A is invertible. (2) det(A) ≠ 0. (3) A has full rank (rank = n). (4) Ax = 0 has only the trivial solution. (5) Ax = b has a unique solution for every b. (6) The columns of A are linearly independent. (7) The rows of A are linearly independent. (8) 0 is not an eigenvalue of A. (9) The RREF of A is Iₙ.',
+    tags: ['matrices'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-010',
+    front: 'Define eigenvalues and eigenvectors of an n×n matrix A.',
+    back: 'A scalar λ ∈ F is an eigenvalue of A if there exists a nonzero vector v such that Av = λv. Such a vector v is called an eigenvector associated with λ. λ is an eigenvalue iff det(A − λI) = 0. The set of all eigenvalues is called the spectrum of A. The eigenvectors for distinct eigenvalues are linearly independent.',
+    tags: ['eigenvalues'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-maths-linear-algebra-011',
+    front: 'Define the characteristic polynomial of an n×n matrix A and state Cayley-Hamilton.',
+    back: 'The characteristic polynomial is p(λ) = det(A − λI), a polynomial of degree n. The roots of p are the eigenvalues of A. Cayley-Hamilton theorem: every square matrix satisfies its own characteristic polynomial, i.e. p(A) = 0 (the zero matrix). This is used to find A⁻¹ and compute powers of A.',
+    tags: ['eigenvalues'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-012',
+    front: 'State the Cayley-Hamilton theorem and give a key application.',
+    back: 'For an n×n matrix A with characteristic polynomial p(λ) = det(λI − A), we have p(A) = 0. Application: if p(λ) = λⁿ + cₙ₋₁λⁿ⁻¹ + ... + c₁λ + c₀, then Aⁿ = −cₙ₋₁Aⁿ⁻¹ − ... − c₁A − c₀I. If c₀ ≠ 0, then A⁻¹ = −(1/c₀)(Aⁿ⁻¹ + cₙ₋₁Aⁿ⁻² + ... + c₁I).',
+    tags: ['eigenvalues'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-linear-algebra-013',
+    front: 'Define diagonalisation and state when a matrix A is diagonalisable.',
+    back: 'A is diagonalisable if there exists an invertible matrix P such that P⁻¹AP = D, where D is diagonal. Equivalent conditions: (1) A has n linearly independent eigenvectors. (2) The sum of geometric multiplicities of all eigenvalues equals n. (3) For each eigenvalue, algebraic multiplicity equals geometric multiplicity. Sufficient: A has n distinct eigenvalues.',
+    tags: ['eigenvalues'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-014',
+    front: 'Define an orthogonal matrix Q and state its key properties.',
+    back: 'A real n×n matrix Q is orthogonal if QᵀQ = QQᵀ = I, equivalently Qᵀ = Q⁻¹. Properties: (1) columns form an orthonormal basis for ℝⁿ. (2) Q preserves the dot product: (Qu)·(Qv) = u·v. (3) Q preserves lengths: ||Qv|| = ||v||. (4) det(Q) = ±1. (5) eigenvalues have |λ| = 1. (6) orthogonal matrices form a group under multiplication.',
+    tags: ['inner-product'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-015',
+    front: 'Outline the Gram-Schmidt orthogonalisation process.',
+    back: 'Given linearly independent vectors {v₁, ..., vₖ} in an inner product space, construct an orthonormal set {e₁, ..., eₖ}: (1) u₁ = v₁, e₁ = u₁/||u₁||. (2) uⱼ = vⱼ − Σ(i=1 to j-1)⟨vⱼ, eᵢ⟩eᵢ, then eⱼ = uⱼ/||uⱼ||. This produces an orthonormal basis for span{v₁, ..., vₖ}. Applied to columns of A to obtain QR decomposition.',
+    tags: ['inner-product'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-maths-linear-algebra-016',
+    front: 'Define an inner product space and state the Cauchy-Schwarz inequality.',
+    back: 'An inner product on V is a function ⟨·,·⟩: V×V → F satisfying: (1) positivity: ⟨v,v⟩ ≥ 0 with equality iff v = 0, (2) linearity in first argument, (3) conjugate symmetry. Cauchy-Schwarz: |⟨u,v⟩|² ≤ ⟨u,u⟩⟨v,v⟩, with equality iff u and v are linearly dependent. Consequence: defines a norm ||v|| = √⟨v,v⟩.',
+    tags: ['inner-product'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-linear-algebra-017',
+    front:
+      'Define a linear transformation T: V → W and state its relationship to matrix representation.',
+    back: 'T: V → W is linear if T(αu + βv) = αT(u) + βT(v) for all u, v ∈ V and α, β ∈ F. Choosing bases B_V for V and B_W for W, there exists a unique matrix [T] such that [T(v)]_B_W = [T]_B_W,B_V [v]_B_V. Different choices of bases give different but similar matrices.',
+    tags: ['linear-transformations'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-linear-algebra-018',
+    front: 'Define the kernel (null space) and image (column space) of a linear map T: V → W.',
+    back: 'ker(T) = {v ∈ V : T(v) = 0}. im(T) = {w ∈ W : ∃v ∈ V, T(v) = w}. ker(T) is a subspace of V; im(T) is a subspace of W. If A represents T in standard bases, ker(T) = null space of A (solutions to Ax = 0), im(T) = column space of A.',
+    tags: ['linear-transformations'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-linear-algebra-019',
+    front: 'Describe the change of basis formula for a linear operator T: V → V.',
+    back: "If T has matrix A relative to basis B₁ and matrix A' relative to basis B₂, then A' = P⁻¹AP, where P is the change-of-basis matrix from B₂ to B₁ (columns of P are B₂-vectors expressed in B₁-coordinates). Similar matrices share eigenvalues, trace, determinant, and rank.",
+    tags: ['linear-transformations'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-linear-algebra-020',
+    front: 'State the Singular Value Decomposition (SVD) theorem.',
+    back: 'Any m×n real matrix A of rank r can be factored as A = UΣVᵀ, where U is m×m orthogonal, V is n×n orthogonal, and Σ is m×n diagonal with Σᵢᵢ = σᵢ > 0 for i = 1,...,r (the singular values). The σᵢ are the square roots of eigenvalues of AᵀA. Applications: low-rank approximation, pseudoinverse, PCA.',
+    tags: ['matrix-decomposition'],
+    difficulty: 'hard',
+  },
+];
+<FlashcardDeck
+  deckId="uni-maths-linear-algebra"
+  title="University Maths -- Linear Algebra"
+  description="Vector spaces, linear independence, eigenvalues, diagonalisation, inner products, SVD"
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
+/>;

@@ -18,81 +18,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"alevel-cs-networks-001",front:"What are the four layers of the TCP/IP
-model?",back:"Application layer, Transport layer, Internet layer (network layer), and Link layer
-(network access layer).",tags:["tcp-ip"],difficulty:"easy"},{id:"alevel-cs-networks-002",front:"What
-protocol operates at the Transport layer of TCP/IP?",back:"TCP (Transmission Control Protocol) for
-reliable, connection-oriented communication, and UDP (User Datagram Protocol) for fast,
-connectionless
-communication.",tags:["tcp-ip","protocols"],difficulty:"easy"},{id:"alevel-cs-networks-003",front:"What
-is a star network topology?",back:"A topology where all devices connect to a single central hub or
-switch; if the central device fails, the entire network goes down, but individual device failures do
-not affect others.",tags:["topologies"],difficulty:"easy"},{id:"alevel-cs-networks-004",front:"What
-is a mesh network topology?",back:"A topology where every device is connected to every other device
-(full mesh) or to multiple devices (partial mesh), providing high redundancy and
-reliability.",tags:["topologies"],difficulty:"easy"},{id:"alevel-cs-networks-005",front:"What is the
-purpose of DNS?",back:"The Domain Name System translates human-readable domain names (e.g.
-`example.com`) into IP addresses (e.g. `93.184.216.34`) that computers use to identify each
-other.",tags:["protocols"],difficulty:"easy"},{id:"alevel-cs-networks-006",front:"What does HTTP
-stand for and at which layer does it operate?",back:"HyperText Transfer Protocol, operating at the
-Application layer of the TCP/IP model, used to transfer web pages and data between a client and a
-web server.",tags:["protocols"],difficulty:"easy"},{id:"alevel-cs-networks-007",front:"What is
-symmetric encryption?",back:"An encryption method where the same single key is used for both
-encrypting and decrypting data. Both sender and receiver must have access to the secret
-key.",tags:["security"],difficulty:"easy"},{id:"alevel-cs-networks-008",front:"What is a MAC
-address?",back:"A Media Access Control address -- a unique 48-bit hardware address assigned to a
-network interface card (NIC) by the manufacturer, used at the Link layer for device identification
-on a local
-network.",tags:["fundamentals"],difficulty:"medium"},{id:"alevel-cs-networks-009",front:"What is the
-difference between a switch and a hub?",back:"A switch forwards data only to the intended recipient
-by reading MAC addresses. A hub broadcasts data to all connected devices, causing unnecessary
-traffic and
-collisions.",tags:["fundamentals"],difficulty:"medium"},{id:"alevel-cs-networks-010",front:"What is
-asymmetric encryption?",back:"An encryption method that uses a pair of keys -- a public key to
-encrypt data and a private key to decrypt it. Solves the key distribution problem of symmetric
-encryption.",tags:["security"],difficulty:"medium"},{id:"alevel-cs-networks-011",front:"What is the
-role of a firewall in network security?",back:"A firewall monitors and controls incoming and
-outgoing network traffic based on predetermined security rules, acting as a barrier between a
-trusted internal network and untrusted external
-networks.",tags:["security"],difficulty:"medium"},{id:"alevel-cs-networks-012",front:"What is a
-packet in networking?",back:"A unit of data formatted for transmission over a network, containing a
-header (source/destination addresses, sequencing, error-checking) and a payload (the actual
-data).",tags:["fundamentals"],difficulty:"medium"},{id:"alevel-cs-networks-013",front:"What is
-packet switching?",back:"A method of data transmission where messages are broken into packets that
-are routed independently across the network, each potentially taking a different path, and
-reassembled at the
-destination.",tags:["fundamentals"],difficulty:"medium"},{id:"alevel-cs-networks-014",front:"What is
-the difference between TCP and UDP?",back:"TCP is connection-oriented, reliable, and guarantees
-delivery with error checking and retransmission. UDP is connectionless, faster, does not guarantee
-delivery, and has no ordering of
-packets.",tags:["protocols"],difficulty:"medium"},{id:"alevel-cs-networks-015",front:"What is the
-three-way handshake in TCP?",back:"A connection-establishment process: client sends SYN, server
-responds with SYN-ACK, client sends ACK. This ensures both sides are ready to transmit data
-reliably.",tags:["protocols"],difficulty:"medium"},{id:"alevel-cs-networks-016",front:"What role
-does HTML play in web technologies?",back:"HTML (HyperText Markup Language) defines the structure
-and content of a web page using elements and tags. It is rendered by the browser to display text,
-images, links and other
-content.",tags:["web-tech"],difficulty:"medium"},{id:"alevel-cs-networks-017",front:"What is the
-difference between HTML, CSS and JavaScript?",back:"HTML provides the structure and content of a web
-page. CSS controls the visual presentation and layout. JavaScript adds interactivity and dynamic
-behaviour on the client
-side.",tags:["web-tech"],difficulty:"medium"},{id:"alevel-cs-networks-018",front:"What is a SQL
-injection attack?",back:"An attack where malicious SQL code is inserted into input fields or URL
-parameters of a web application, exploiting poor input validation to manipulate or extract data from
-the backend
-database.",tags:["security"],difficulty:"hard"},{id:"alevel-cs-networks-019",front:"Explain the
-difference between a Trojan and a virus.",back:"A Trojan disguises itself as legitimate software to
-trick the user into installing it. A virus attaches itself to a legitimate program and replicates by
-modifying other files when
-executed.",tags:["security"],difficulty:"hard"},{id:"alevel-cs-networks-020",front:"What is a
-man-in-the-middle attack and how can it be mitigated?",back:"An attacker intercepts communication
-between two parties, potentially reading or altering data. Mitigations include using HTTPS/TLS
-encryption, certificate pinning, and VPNs to encrypt all
-traffic.",tags:["security"],difficulty:"hard"}];
+export const flashcards1 = [
+  {
+    id: 'alevel-cs-networks-001',
+    front: 'What are the four layers of the TCP/IP model?',
+    back: 'Application layer, Transport layer, Internet layer (network layer), and Link layer (network access layer).',
+    tags: ['tcp-ip'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-networks-002',
+    front: 'What protocol operates at the Transport layer of TCP/IP?',
+    back: 'TCP (Transmission Control Protocol) for reliable, connection-oriented communication, and UDP (User Datagram Protocol) for fast, connectionless communication.',
+    tags: ['tcp-ip', 'protocols'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-networks-003',
+    front: 'What is a star network topology?',
+    back: 'A topology where all devices connect to a single central hub or switch; if the central device fails, the entire network goes down, but individual device failures do not affect others.',
+    tags: ['topologies'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-networks-004',
+    front: 'What is a mesh network topology?',
+    back: 'A topology where every device is connected to every other device (full mesh) or to multiple devices (partial mesh), providing high redundancy and reliability.',
+    tags: ['topologies'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-networks-005',
+    front: 'What is the purpose of DNS?',
+    back: 'The Domain Name System translates human-readable domain names (e.g. `example.com`) into IP addresses (e.g. `93.184.216.34`) that computers use to identify each other.',
+    tags: ['protocols'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'alevel-cs-networks-006',
+    front: 'What does HTTP stand for and at which layer does it operate?',
+    back: 'HyperText Transfer Protocol, operating at the Application layer of the TCP/IP model, used to transfer web pages and data between a client and a web server.',
+    tags: ['protocols'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-networks-007',
+    front: 'What is symmetric encryption?',
+    back: 'An encryption method where the same single key is used for both encrypting and decrypting data. Both sender and receiver must have access to the secret key.',
+    tags: ['security'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-networks-008',
+    front: 'What is a MAC address?',
+    back: 'A Media Access Control address -- a unique 48-bit hardware address assigned to a network interface card (NIC) by the manufacturer, used at the Link layer for device identification on a local network.',
+    tags: ['fundamentals'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-009',
+    front: 'What is the difference between a switch and a hub?',
+    back: 'A switch forwards data only to the intended recipient by reading MAC addresses. A hub broadcasts data to all connected devices, causing unnecessary traffic and collisions.',
+    tags: ['fundamentals'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-010',
+    front: 'What is asymmetric encryption?',
+    back: 'An encryption method that uses a pair of keys -- a public key to encrypt data and a private key to decrypt it. Solves the key distribution problem of symmetric encryption.',
+    tags: ['security'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'alevel-cs-networks-011',
+    front: 'What is the role of a firewall in network security?',
+    back: 'A firewall monitors and controls incoming and outgoing network traffic based on predetermined security rules, acting as a barrier between a trusted internal network and untrusted external networks.',
+    tags: ['security'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-012',
+    front: 'What is a packet in networking?',
+    back: 'A unit of data formatted for transmission over a network, containing a header (source/destination addresses, sequencing, error-checking) and a payload (the actual data).',
+    tags: ['fundamentals'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-013',
+    front: 'What is packet switching?',
+    back: 'A method of data transmission where messages are broken into packets that are routed independently across the network, each potentially taking a different path, and reassembled at the destination.',
+    tags: ['fundamentals'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-014',
+    front: 'What is the difference between TCP and UDP?',
+    back: 'TCP is connection-oriented, reliable, and guarantees delivery with error checking and retransmission. UDP is connectionless, faster, does not guarantee delivery, and has no ordering of packets.',
+    tags: ['protocols'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-015',
+    front: 'What is the three-way handshake in TCP?',
+    back: 'A connection-establishment process: client sends SYN, server responds with SYN-ACK, client sends ACK. This ensures both sides are ready to transmit data reliably.',
+    tags: ['protocols'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'alevel-cs-networks-016',
+    front: 'What role does HTML play in web technologies?',
+    back: 'HTML (HyperText Markup Language) defines the structure and content of a web page using elements and tags. It is rendered by the browser to display text, images, links and other content.',
+    tags: ['web-tech'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-017',
+    front: 'What is the difference between HTML, CSS and JavaScript?',
+    back: 'HTML provides the structure and content of a web page. CSS controls the visual presentation and layout. JavaScript adds interactivity and dynamic behaviour on the client side.',
+    tags: ['web-tech'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-networks-018',
+    front: 'What is a SQL injection attack?',
+    back: 'An attack where malicious SQL code is inserted into input fields or URL parameters of a web application, exploiting poor input validation to manipulate or extract data from the backend database.',
+    tags: ['security'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'alevel-cs-networks-019',
+    front: 'Explain the difference between a Trojan and a virus.',
+    back: 'A Trojan disguises itself as legitimate software to trick the user into installing it. A virus attaches itself to a legitimate program and replicates by modifying other files when executed.',
+    tags: ['security'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'alevel-cs-networks-020',
+    front: 'What is a man-in-the-middle attack and how can it be mitigated?',
+    back: 'An attacker intercepts communication between two parties, potentially reading or altering data. Mitigations include using HTTPS/TLS encryption, certificate pinning, and VPNs to encrypt all traffic.',
+    tags: ['security'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="alevel-cs-networks"
   title="A-Level CS -- Networks"
   description="TCP/IP, topologies, protocols, security and web technologies"
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

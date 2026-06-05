@@ -18,76 +18,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"alevel-cs-algorithms-001",front:"What is a linear search?",back:"A
-search algorithm that checks each element in a list sequentially from the first to the last until
-the target is found or the list is
-exhausted.",tags:["searching"],difficulty:"easy"},{id:"alevel-cs-algorithms-002",front:"What is a
-binary search?",back:"A search algorithm that repeatedly halves a sorted list, comparing the target
-to the middle element to determine which half to search
-next.",tags:["searching"],difficulty:"easy"},{id:"alevel-cs-algorithms-003",front:"What
-pre-condition must a list satisfy for binary search to work?",back:"The list must be sorted before
-binary search can be
-applied.",tags:["searching"],difficulty:"easy"},{id:"alevel-cs-algorithms-004",front:"What is bubble
-sort?",back:"A comparison-based sorting algorithm that repeatedly steps through the list, compares
-adjacent elements and swaps them if they are in the wrong order, bubbling the largest unsorted
-element to its correct position each
-pass.",tags:["sorting"],difficulty:"easy"},{id:"alevel-cs-algorithms-005",front:"What is insertion
-sort?",back:"A sorting algorithm that builds a sorted subarray one element at a time by taking each
-unsorted element and inserting it into the correct position within the sorted
-portion.",tags:["sorting"],difficulty:"easy"},{id:"alevel-cs-algorithms-006",front:"What is merge
-sort?",back:"A divide-and-conquer sorting algorithm that splits the list into halves recursively
-until each sublist has one element, then merges pairs of sublists back together in sorted
-order.",tags:["sorting"],difficulty:"easy"},{id:"alevel-cs-algorithms-007",front:"What is quick
-sort?",back:"A divide-and-conquer sorting algorithm that selects a pivot element, partitions the
-list into elements less than and greater than the pivot, then recursively sorts the
-partitions.",tags:["sorting"],difficulty:"easy"},{id:"alevel-cs-algorithms-008",front:"State the
-worst-case time complexity of bubble sort.",back:"O(n^2) -- occurs when the list is in reverse
-order.",tags:["complexity"],difficulty:"medium"},{id:"alevel-cs-algorithms-009",front:"State the
-best-case time complexity of binary search.",back:"O(1) -- occurs when the target is found at the
-middle element on the first
-check.",tags:["complexity"],difficulty:"medium"},{id:"alevel-cs-algorithms-010",front:"State the
-average-case time complexity of quick sort.",back:"O(n log n) -- achieved when the pivot
-consistently divides the list into roughly equal
-halves.",tags:["complexity"],difficulty:"medium"},{id:"alevel-cs-algorithms-011",front:"What is the
-time complexity of merge sort in all cases?",back:"O(n log n) in best, average, and worst cases,
-because merge sort always divides the list in half regardless of
-input.",tags:["complexity"],difficulty:"medium"},{id:"alevel-cs-algorithms-012",front:"What is a
-depth-first search (DFS) on a graph?",back:"A graph traversal algorithm that explores as far as
-possible along each branch before backtracking, typically implemented using a
-stack.",tags:["graphs"],difficulty:"medium"},{id:"alevel-cs-algorithms-013",front:"What is a
-breadth-first search (BFS) on a graph?",back:"A graph traversal algorithm that explores all
-neighbour nodes at the present depth before moving to nodes at the next depth level, typically
-implemented using a
-queue.",tags:["graphs"],difficulty:"medium"},{id:"alevel-cs-algorithms-014",front:"What data
-structure does Dijkstra's algorithm use to select the next node?",back:"A priority queue (often
-implemented as a min-heap) to always select the unvisited node with the smallest known
-distance.",tags:["graphs"],difficulty:"medium"},{id:"alevel-cs-algorithms-015",front:"What does
-Dijkstra's algorithm find?",back:"The shortest path from a single source node to all other nodes in
-a weighted graph with non-negative edge
-weights.",tags:["graphs"],difficulty:"medium"},{id:"alevel-cs-algorithms-016",front:"Explain the
-difference between best-case, average-case, and worst-case complexity.",back:"Best-case: minimum
-operations for the most favourable input. Average-case: expected operations across all possible
-inputs. Worst-case: maximum operations for the least favourable
-input.",tags:["complexity"],difficulty:"medium"},{id:"alevel-cs-algorithms-017",front:"Why is bubble
-sort considered inefficient for large datasets?",back:"Because its worst-case and average-case time
-complexity is O(n^2), and it makes many unnecessary comparisons and swaps even when the list is
-nearly
-sorted.",tags:["sorting","complexity"],difficulty:"medium"},{id:"alevel-cs-algorithms-018",front:"What
-is a stable sorting algorithm?",back:"A sorting algorithm that preserves the relative order of
-elements with equal keys. Merge sort is stable; quick sort is not (in its standard
-form).",tags:["sorting"],difficulty:"medium"},{id:"alevel-cs-algorithms-019",front:"Why does binary
-search require random access to elements?",back:"Because it must directly access the middle element
-by index to halve the search space, which is only possible in O(1) with random access structures
-like
-arrays.",tags:["searching","complexity"],difficulty:"hard"},{id:"alevel-cs-algorithms-020",front:"Explain
-why quick sort's worst-case time complexity is O(n^2) and when this occurs.",back:"It occurs when
-the pivot is always the smallest or largest element (e.g. an already sorted list with first-element
-pivot), causing one partition to be empty and the other to contain n-1 elements, resulting in n
-levels of recursion.",tags:["sorting","complexity"],difficulty:"hard"}];
+export const flashcards1 = [
+  {
+    id: 'alevel-cs-algorithms-001',
+    front: 'What is a linear search?',
+    back: 'A search algorithm that checks each element in a list sequentially from the first to the last until the target is found or the list is exhausted.',
+    tags: ['searching'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-algorithms-002',
+    front: 'What is a binary search?',
+    back: 'A search algorithm that repeatedly halves a sorted list, comparing the target to the middle element to determine which half to search next.',
+    tags: ['searching'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-algorithms-003',
+    front: 'What pre-condition must a list satisfy for binary search to work?',
+    back: 'The list must be sorted before binary search can be applied.',
+    tags: ['searching'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-algorithms-004',
+    front: 'What is bubble sort?',
+    back: 'A comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order, bubbling the largest unsorted element to its correct position each pass.',
+    tags: ['sorting'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-algorithms-005',
+    front: 'What is insertion sort?',
+    back: 'A sorting algorithm that builds a sorted subarray one element at a time by taking each unsorted element and inserting it into the correct position within the sorted portion.',
+    tags: ['sorting'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'alevel-cs-algorithms-006',
+    front: 'What is merge sort?',
+    back: 'A divide-and-conquer sorting algorithm that splits the list into halves recursively until each sublist has one element, then merges pairs of sublists back together in sorted order.',
+    tags: ['sorting'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-algorithms-007',
+    front: 'What is quick sort?',
+    back: 'A divide-and-conquer sorting algorithm that selects a pivot element, partitions the list into elements less than and greater than the pivot, then recursively sorts the partitions.',
+    tags: ['sorting'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-cs-algorithms-008',
+    front: 'State the worst-case time complexity of bubble sort.',
+    back: 'O(n^2) -- occurs when the list is in reverse order.',
+    tags: ['complexity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-009',
+    front: 'State the best-case time complexity of binary search.',
+    back: 'O(1) -- occurs when the target is found at the middle element on the first check.',
+    tags: ['complexity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-010',
+    front: 'State the average-case time complexity of quick sort.',
+    back: 'O(n log n) -- achieved when the pivot consistently divides the list into roughly equal halves.',
+    tags: ['complexity'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'alevel-cs-algorithms-011',
+    front: 'What is the time complexity of merge sort in all cases?',
+    back: 'O(n log n) in best, average, and worst cases, because merge sort always divides the list in half regardless of input.',
+    tags: ['complexity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-012',
+    front: 'What is a depth-first search (DFS) on a graph?',
+    back: 'A graph traversal algorithm that explores as far as possible along each branch before backtracking, typically implemented using a stack.',
+    tags: ['graphs'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-013',
+    front: 'What is a breadth-first search (BFS) on a graph?',
+    back: 'A graph traversal algorithm that explores all neighbour nodes at the present depth before moving to nodes at the next depth level, typically implemented using a queue.',
+    tags: ['graphs'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-014',
+    front: "What data structure does Dijkstra's algorithm use to select the next node?",
+    back: 'A priority queue (often implemented as a min-heap) to always select the unvisited node with the smallest known distance.',
+    tags: ['graphs'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-015',
+    front: "What does Dijkstra's algorithm find?",
+    back: 'The shortest path from a single source node to all other nodes in a weighted graph with non-negative edge weights.',
+    tags: ['graphs'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'alevel-cs-algorithms-016',
+    front: 'Explain the difference between best-case, average-case, and worst-case complexity.',
+    back: 'Best-case: minimum operations for the most favourable input. Average-case: expected operations across all possible inputs. Worst-case: maximum operations for the least favourable input.',
+    tags: ['complexity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-017',
+    front: 'Why is bubble sort considered inefficient for large datasets?',
+    back: 'Because its worst-case and average-case time complexity is O(n^2), and it makes many unnecessary comparisons and swaps even when the list is nearly sorted.',
+    tags: ['sorting', 'complexity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-018',
+    front: 'What is a stable sorting algorithm?',
+    back: 'A sorting algorithm that preserves the relative order of elements with equal keys. Merge sort is stable; quick sort is not (in its standard form).',
+    tags: ['sorting'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-cs-algorithms-019',
+    front: 'Why does binary search require random access to elements?',
+    back: 'Because it must directly access the middle element by index to halve the search space, which is only possible in O(1) with random access structures like arrays.',
+    tags: ['searching', 'complexity'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'alevel-cs-algorithms-020',
+    front: "Explain why quick sort's worst-case time complexity is O(n^2) and when this occurs.",
+    back: 'It occurs when the pivot is always the smallest or largest element (e.g. an already sorted list with first-element pivot), causing one partition to be empty and the other to contain n-1 elements, resulting in n levels of recursion.',
+    tags: ['sorting', 'complexity'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="alevel-cs-algorithms"
   title="A-Level CS -- Algorithms"
   description="Searching, sorting, graph algorithms and complexity analysis"
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

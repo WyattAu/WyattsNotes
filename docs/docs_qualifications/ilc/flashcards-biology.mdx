@@ -18,113 +18,165 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"ilc-biology-001",front:"State three key organelles and their functions
-in an eukaryotic cell.",back:"Mitochondria: aerobic respiration, producing ATP. Nucleus: contains
-DNA, controls cell activities via gene expression. Ribosomes: protein synthesis (translation of mRNA
-into polypeptides).",tags:["cell structure"],difficulty:"easy"},{id:"ilc-biology-002",front:"Name
-three structural differences between plant cells and animal cells.",back:"Plant cells have: (1) a
-rigid cellulose cell wall for support, (2) chloroplasts for photosynthesis, (3) a large central
-vacuole for turgor pressure and storage. Animal cells lack all three.",tags:["cell
-structure"],difficulty:"easy"},{id:"ilc-biology-003",front:"Define an ecosystem and give an example
-of a biotic and an abiotic component.",back:"An ecosystem is a community of living organisms
-interacting with each other and their non-living environment. Biotic component: trees, bacteria,
-consumers. Abiotic component: sunlight, water, soil pH,
-temperature.",tags:["ecology"],difficulty:"easy"},{id:"ilc-biology-004",front:"State the four DNA
-bases and their complementary pairing rules.",back:"Adenine (A) pairs with Thymine (T) via two
-hydrogen bonds. Guanine (G) pairs with Cytosine (C) via three hydrogen bonds. This complementary
-base pairing ensures accurate DNA replication and
-transcription.",tags:["genetics"],difficulty:"easy"},{id:"ilc-biology-005",front:"Write the word
-equation for photosynthesis.",back:"Carbon dioxide + Water + Light energy (chlorophyll) -> Glucose +
-Oxygen. Symbol equation: 6CO2 + 6H2O -> C6H12O6 + 6O2. Photosynthesis occurs in the chloroplasts,
-primarily in the leaves of plants.",tags:["plant
-biology"],difficulty:"easy"},{id:"ilc-biology-006",front:"Name the four main components of blood and
-state the function of each.",back:"Red blood cells (erythrocytes): transport oxygen via haemoglobin.
-White blood cells (leucocytes): defend against pathogens (phagocytes engulf, lymphocytes produce
-antibodies). Platelets (thrombocytes): blood clotting. Plasma: transports dissolved substances
-(glucose, amino acids, hormones, urea, CO2).",tags:["human
-body"],difficulty:"easy"},{id:"ilc-biology-007",front:"Define producer, consumer, and decomposer in
-a food chain.",back:"Producer: an organism that makes its own food via photosynthesis (e.g., plants,
-algae). Consumer: an organism that feeds on other organisms; primary consumers eat producers,
-secondary consumers eat primary consumers. Decomposer: breaks down dead organic matter, recycling
-nutrients (e.g., bacteria,
-fungi).",tags:["ecology"],difficulty:"easy"},{id:"ilc-biology-008",front:"Describe the key processes
-in the carbon cycle.",back:"Photosynthesis: plants absorb CO2 from the atmosphere. Respiration:
-organisms release CO2 by breaking down glucose. Combustion: burning fossil fuels releases CO2.
-Decomposition: decomposers break down organic matter, releasing CO2. These processes maintain
-atmospheric CO2 levels.",tags:["ecology"],difficulty:"medium"},{id:"ilc-biology-009",front:"Outline
-the main stages of the nitrogen cycle.",back:"Nitrogen fixation: N2 converted to ammonia by
-nitrogen-fixing bacteria (Rhizobium in root nodules) or lightning. Nitrification: ammonia converted
-to nitrites then nitrates by nitrifying bacteria. Absorption: plants absorb nitrates through roots.
-Decomposition: decomposers convert organic nitrogen back to ammonia. Denitrification: nitrates
-converted back to N2 gas by denitrifying
-bacteria.",tags:["ecology"],difficulty:"medium"},{id:"ilc-biology-010",front:"Describe the stages of
-protein synthesis: transcription and translation.",back:"Transcription: DNA template is used to make
-mRNA in the nucleus; RNA polymerase binds to the promoter, reads the DNA, and synthesises a
-complementary mRNA strand. Translation: mRNA moves to a ribosome; tRNA molecules bring amino acids
-matching each codon; the ribosome links amino acids in sequence to form a polypeptide chain, which
-folds into a functional
-protein.",tags:["genetics"],difficulty:"medium"},{id:"ilc-biology-011",front:"State Mendel's law of
-segregation and law of independent assortment.",back:"Law of segregation: each individual inherits
-two alleles for each gene, which separate during gamete formation so each gamete carries one allele.
-Law of independent assortment: alleles of different genes are distributed independently of one
-another during gamete formation (applies to genes on different
-chromosomes).",tags:["genetics"],difficulty:"medium"},{id:"ilc-biology-012",front:"Define
-transpiration and list four factors that affect its rate.",back:"Transpiration is the loss of water
-vapour from the leaves of a plant through stomata. Factors: (1) Temperature: higher temperature
-increases evaporation rate. (2) Humidity: lower humidity increases transpiration. (3) Wind speed:
-more wind removes water vapour from leaf surface. (4) Light intensity: higher light opens stomata
-wider, increasing water loss.",tags:["plant
-biology"],difficulty:"medium"},{id:"ilc-biology-013",front:"Explain the role of auxins in plant
-growth and tropisms.",back:"Auxins are plant hormones that promote cell elongation. In phototropism,
-auxins accumulate on the shaded side of a shoot, causing cells there to elongate more, bending the
-shoot toward light. In gravitropism, auxins redistribute in roots, causing differential growth that
-directs roots downward. Auxins also inhibit lateral bud growth (apical dominance).",tags:["plant
-biology"],difficulty:"medium"},{id:"ilc-biology-014",front:"Describe the structure of a motor neuron
-and how nerve impulses are transmitted.",back:"A motor neuron has a cell body, dendrites (receiving
-end), a long axon, and synaptic terminals. A nerve impulse (action potential) travels along the axon
-via depolarisation: sodium ions rush in, reversing the membrane potential. At the synapse,
-neurotransmitters are released from vesicles, cross the synaptic cleft, and bind to receptors on the
-next neuron or muscle cell.",tags:["human
-body"],difficulty:"medium"},{id:"ilc-biology-015",front:"Compare innate immunity and adaptive
-immunity.",back:"Innate immunity: non-specific, immediate response. Includes physical barriers
-(skin, mucous membranes), phagocytes (engulf pathogens), and inflammation. No memory. Adaptive
-immunity: specific response, slower onset. Involves lymphocytes (B cells produce antibodies; T cells
-destroy infected cells). Has immunological memory, enabling faster response on
-re-exposure.",tags:["human body"],difficulty:"medium"},{id:"ilc-biology-016",front:"Explain energy
-flow through an ecosystem and why energy decreases at each trophic level.",back:"Energy enters via
-photosynthesis (producers convert light to chemical energy). Only about 10% of energy transfers
-between trophic levels. Energy is lost as heat through respiration, excretion, and incomplete
-digestion. This limits food chain length typically to 4-5 levels. Pyramids of energy, biomass, and
-numbers all show this
-decrease.",tags:["ecology"],difficulty:"medium"},{id:"ilc-biology-017",front:"Compare mitosis and
-meiosis in terms of purpose, number of divisions, and genetic outcome.",back:"Mitosis: produces 2
-genetically identical diploid cells for growth and repair. One division. DNA replicates once,
-divides once. Meiosis: produces 4 genetically unique haploid cells (gametes) for sexual
-reproduction. Two divisions. DNA replicates once, divides twice. Crossing over and independent
-assortment in meiosis increase genetic
-variation.",tags:["genetics"],difficulty:"medium"},{id:"ilc-biology-018",front:"Explain how light
-intensity, CO2 concentration, and temperature act as limiting factors of photosynthesis.",back:"At
-low light intensity, photosynthesis rate increases linearly with light (light is limiting). At high
-light, rate plateaus (another factor limits). Increasing CO2 concentration raises the rate until
-saturation. Temperature affects enzyme activity in the Calvin cycle; rate peaks at optimum (around
-25-30C), then declines as enzymes denature above this.",tags:["plant
-biology"],difficulty:"medium"},{id:"ilc-biology-019",front:"Describe the semi-conservative
-replication of DNA.",back:"DNA unwinds as helicase breaks hydrogen bonds between base pairs. Each
-strand acts as a template. DNA polymerase adds free nucleotides complementary to each template
-strand, forming two new strands. The result is two DNA molecules, each containing one original
-(parent) strand and one newly synthesised strand, hence semi-conservative. The leading strand is
-synthesised continuously; the lagging strand is synthesised in Okazaki fragments joined by DNA
-ligase.",tags:["genetics"],difficulty:"hard"},{id:"ilc-biology-020",front:"Describe the adaptive
-immune response: antigen presentation, antibody production, and immunological memory.",back:"A
-macrophage engulfs a pathogen and displays its antigens on its surface (antigen-presenting cell).
-Helper T cells recognise the antigen and activate B cells and cytotoxic T cells. Activated B cells
-divide and differentiate into plasma cells (producing specific antibodies) and memory B cells.
-Antibodies bind to antigens, neutralising toxins or marking pathogens for destruction. Memory cells
-persist, enabling rapid secondary response on re-exposure.",tags:["human body"],difficulty:"hard"}];
+export const flashcard1 = [
+  {
+    id: 'ilc-biology-001',
+    front: 'State three key organelles and their functions in an eukaryotic cell.',
+    back: 'Mitochondria: aerobic respiration, producing ATP. Nucleus: contains DNA, controls cell activities via gene expression. Ribosomes: protein synthesis (translation of mRNA into polypeptides).',
+    tags: ['cell structure'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-biology-002',
+    front: 'Name three structural differences between plant cells and animal cells.',
+    back: 'Plant cells have: (1) a rigid cellulose cell wall for support, (2) chloroplasts for photosynthesis, (3) a large central vacuole for turgor pressure and storage. Animal cells lack all three.',
+    tags: ['cell structure'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-biology-003',
+    front: 'Define an ecosystem and give an example of a biotic and an abiotic component.',
+    back: 'An ecosystem is a community of living organisms interacting with each other and their non-living environment. Biotic component: trees, bacteria, consumers. Abiotic component: sunlight, water, soil pH, temperature.',
+    tags: ['ecology'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-biology-004',
+    front: 'State the four DNA bases and their complementary pairing rules.',
+    back: 'Adenine (A) pairs with Thymine (T) via two hydrogen bonds. Guanine (G) pairs with Cytosine (C) via three hydrogen bonds. This complementary base pairing ensures accurate DNA replication and transcription.',
+    tags: ['genetics'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-biology-005',
+    front: 'Write the word equation for photosynthesis.',
+    back: 'Carbon dioxide + Water + Light energy (chlorophyll) -> Glucose + Oxygen. Symbol equation: 6CO2 + 6H2O -> C6H12O6 + 6O2. Photosynthesis occurs in the chloroplasts, primarily in the leaves of plants.',
+    tags: ['plant biology'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'ilc-biology-006',
+    front: 'Name the four main components of blood and state the function of each.',
+    back: 'Red blood cells (erythrocytes): transport oxygen via haemoglobin. White blood cells (leucocytes): defend against pathogens (phagocytes engulf, lymphocytes produce antibodies). Platelets (thrombocytes): blood clotting. Plasma: transports dissolved substances (glucose, amino acids, hormones, urea, CO2).',
+    tags: ['human body'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-biology-007',
+    front: 'Define producer, consumer, and decomposer in a food chain.',
+    back: 'Producer: an organism that makes its own food via photosynthesis (e.g., plants, algae). Consumer: an organism that feeds on other organisms; primary consumers eat producers, secondary consumers eat primary consumers. Decomposer: breaks down dead organic matter, recycling nutrients (e.g., bacteria, fungi).',
+    tags: ['ecology'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-biology-008',
+    front: 'Describe the key processes in the carbon cycle.',
+    back: 'Photosynthesis: plants absorb CO2 from the atmosphere. Respiration: organisms release CO2 by breaking down glucose. Combustion: burning fossil fuels releases CO2. Decomposition: decomposers break down organic matter, releasing CO2. These processes maintain atmospheric CO2 levels.',
+    tags: ['ecology'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-009',
+    front: 'Outline the main stages of the nitrogen cycle.',
+    back: 'Nitrogen fixation: N2 converted to ammonia by nitrogen-fixing bacteria (Rhizobium in root nodules) or lightning. Nitrification: ammonia converted to nitrites then nitrates by nitrifying bacteria. Absorption: plants absorb nitrates through roots. Decomposition: decomposers convert organic nitrogen back to ammonia. Denitrification: nitrates converted back to N2 gas by denitrifying bacteria.',
+    tags: ['ecology'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-010',
+    front: 'Describe the stages of protein synthesis: transcription and translation.',
+    back: 'Transcription: DNA template is used to make mRNA in the nucleus; RNA polymerase binds to the promoter, reads the DNA, and synthesises a complementary mRNA strand. Translation: mRNA moves to a ribosome; tRNA molecules bring amino acids matching each codon; the ribosome links amino acids in sequence to form a polypeptide chain, which folds into a functional protein.',
+    tags: ['genetics'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'ilc-biology-011',
+    front: "State Mendel's law of segregation and law of independent assortment.",
+    back: 'Law of segregation: each individual inherits two alleles for each gene, which separate during gamete formation so each gamete carries one allele. Law of independent assortment: alleles of different genes are distributed independently of one another during gamete formation (applies to genes on different chromosomes).',
+    tags: ['genetics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-012',
+    front: 'Define transpiration and list four factors that affect its rate.',
+    back: 'Transpiration is the loss of water vapour from the leaves of a plant through stomata. Factors: (1) Temperature: higher temperature increases evaporation rate. (2) Humidity: lower humidity increases transpiration. (3) Wind speed: more wind removes water vapour from leaf surface. (4) Light intensity: higher light opens stomata wider, increasing water loss.',
+    tags: ['plant biology'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-013',
+    front: 'Explain the role of auxins in plant growth and tropisms.',
+    back: 'Auxins are plant hormones that promote cell elongation. In phototropism, auxins accumulate on the shaded side of a shoot, causing cells there to elongate more, bending the shoot toward light. In gravitropism, auxins redistribute in roots, causing differential growth that directs roots downward. Auxins also inhibit lateral bud growth (apical dominance).',
+    tags: ['plant biology'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-014',
+    front: 'Describe the structure of a motor neuron and how nerve impulses are transmitted.',
+    back: 'A motor neuron has a cell body, dendrites (receiving end), a long axon, and synaptic terminals. A nerve impulse (action potential) travels along the axon via depolarisation: sodium ions rush in, reversing the membrane potential. At the synapse, neurotransmitters are released from vesicles, cross the synaptic cleft, and bind to receptors on the next neuron or muscle cell.',
+    tags: ['human body'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-015',
+    front: 'Compare innate immunity and adaptive immunity.',
+    back: 'Innate immunity: non-specific, immediate response. Includes physical barriers (skin, mucous membranes), phagocytes (engulf pathogens), and inflammation. No memory. Adaptive immunity: specific response, slower onset. Involves lymphocytes (B cells produce antibodies; T cells destroy infected cells). Has immunological memory, enabling faster response on re-exposure.',
+    tags: ['human body'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'ilc-biology-016',
+    front:
+      'Explain energy flow through an ecosystem and why energy decreases at each trophic level.',
+    back: 'Energy enters via photosynthesis (producers convert light to chemical energy). Only about 10% of energy transfers between trophic levels. Energy is lost as heat through respiration, excretion, and incomplete digestion. This limits food chain length typically to 4-5 levels. Pyramids of energy, biomass, and numbers all show this decrease.',
+    tags: ['ecology'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-017',
+    front:
+      'Compare mitosis and meiosis in terms of purpose, number of divisions, and genetic outcome.',
+    back: 'Mitosis: produces 2 genetically identical diploid cells for growth and repair. One division. DNA replicates once, divides once. Meiosis: produces 4 genetically unique haploid cells (gametes) for sexual reproduction. Two divisions. DNA replicates once, divides twice. Crossing over and independent assortment in meiosis increase genetic variation.',
+    tags: ['genetics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-018',
+    front:
+      'Explain how light intensity, CO2 concentration, and temperature act as limiting factors of photosynthesis.',
+    back: 'At low light intensity, photosynthesis rate increases linearly with light (light is limiting). At high light, rate plateaus (another factor limits). Increasing CO2 concentration raises the rate until saturation. Temperature affects enzyme activity in the Calvin cycle; rate peaks at optimum (around 25-30C), then declines as enzymes denature above this.',
+    tags: ['plant biology'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-biology-019',
+    front: 'Describe the semi-conservative replication of DNA.',
+    back: 'DNA unwinds as helicase breaks hydrogen bonds between base pairs. Each strand acts as a template. DNA polymerase adds free nucleotides complementary to each template strand, forming two new strands. The result is two DNA molecules, each containing one original (parent) strand and one newly synthesised strand, hence semi-conservative. The leading strand is synthesised continuously; the lagging strand is synthesised in Okazaki fragments joined by DNA ligase.',
+    tags: ['genetics'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ilc-biology-020',
+    front:
+      'Describe the adaptive immune response: antigen presentation, antibody production, and immunological memory.',
+    back: 'A macrophage engulfs a pathogen and displays its antigens on its surface (antigen-presenting cell). Helper T cells recognise the antigen and activate B cells and cytotoxic T cells. Activated B cells divide and differentiate into plasma cells (producing specific antibodies) and memory B cells. Antibodies bind to antigens, neutralising toxins or marking pathogens for destruction. Memory cells persist, enabling rapid secondary response on re-exposure.',
+    tags: ['human body'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ilc-biology"
   title="ILC -- Biology"
   description="Cell structure, ecology, genetics, plant biology, and human body systems for ILC Biology revision."
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

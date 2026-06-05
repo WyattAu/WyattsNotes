@@ -11,5 +11,163 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 ## Mathematics -- Probability and Statistics Flashcards
 20 interactive flashcards for university-level Probability and Statistics. Press Space to flip, rate 1-4.
 ---
-const flashcardData = [{id:"uni-maths-probability-stats-001", front:"State Kolmogorov's probability axioms for a probability space (Ω, F, P).", back:"Let Ω be a sample space, F a sigma-algebra of events, P a function F → [0,1]. (1) Non-negativity: P(A) ≥ 0 for all A ∈ F. (2) Normalisation: P(Ω) = 1. (3) Countable additivity: for pairwise disjoint A₁, A₂, ..., P(∪ᵢ Aᵢ) = Σᵢ P(Aᵢ). From these: P(∅) = 0, P(Aᶜ) = 1 − P(A), P(A ∪ B) = P(A) + P(B) − P(A ∩ B).", tags:["foundations"], difficulty:"easy"},{id:"uni-maths-probability-stats-002", front:"Define conditional probability P(A|B) and state Bayes' theorem.", back:"P(A|B) = P(A ∩ B) / P(B), defined when P(B) > 0. Bayes' theorem: P(Aᵢ|B) = P(B|Aᵢ)P(Aᵢ) / Σⱼ P(B|Aⱼ)P(Aⱼ) for a partition {A₁, ..., Aₙ}. Law of total probability: P(B) = Σᵢ P(B|Aᵢ)P(Aᵢ). Bayes' theorem updates prior beliefs P(Aᵢ) to posteriors P(Aᵢ|B) given evidence B.", tags:["foundations"], difficulty:"easy"},{id:"uni-maths-probability-stats-003", front:"Define a random variable X: Ω → ℝ and its cumulative distribution function.", back:"A random variable is a measurable function from Ω to ℝ. The CDF is F(x) = P(X ≤ x) for x ∈ ℝ. Properties: (1) 0 ≤ F(x) ≤ 1. (2) F is non-decreasing. (3) lim(x→−∞) F(x) = 0, lim(x→∞) F(x) = 1. (4) Right-continuous. (5) P(a < X ≤ b) = F(b) − F(a). X is discrete if F is a step function, continuous if F is absolutely continuous.", tags:["random-variables"], difficulty:"easy"},{id:"uni-maths-probability-stats-004", front:"Distinguish PDF and PMF, and relate each to the CDF.", back:"For a continuous RV: the probability density function f satisfies F(x) = ∫₋∞ˣ f(t) dt, and f(x) = F'(x) where differentiable. Properties: f(x) ≥ 0, ∫₋∞^∞ f(x) dx = 1. P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx. For a discrete RV: the probability mass function p(xᵢ) = P(X = xᵢ), with F(x) = Σ(xᵢ ≤ x) p(xᵢ). Note: f(x) is a density, not a probability.", tags:["random-variables"], difficulty:"easy"},{id:"uni-maths-probability-stats-005", front:"State the key properties of expectation E[X] for a random variable X.", back:"E[X] = ∫₋∞^∞ x f(x) dx (continuous) or Σ xᵢ p(xᵢ) (discrete). Properties (when they exist): (1) Linearity: E[aX + bY] = aE[X] + bE[Y] for constants a, b. (2) E[a] = a for constant a. (3) E[X] ≥ E[Y] if X ≥ Y almost surely. (4) If X and Y are independent, E[XY] = E[X]E[Y]. (5) |E[X]| ≤ E[|X|]. (6) Jensen: E[φ(X)] ≥ φ(E[X]) for convex φ.", tags:["moments"], difficulty:"medium"},{id:"uni-maths-probability-stats-006", front:"Define variance Var(X) and state its key properties.", back:"Var(X) = E[(X − μ)²] = E[X²] − (E[X])² where μ = E[X]. Properties: (1) Var(X) ≥ 0, equals 0 iff X is constant a.s. (2) Var(aX + b) = a²Var(X). (3) For independent X, Y: Var(X + Y) = Var(X) + Var(Y). (4) Var(X) = E[X²] − (E[X])² (computational formula). (5) Chebyshev uses variance to bound deviation from the mean. (6) Var(X) = E[X(X−1)] + E[X] − (E[X])² for discrete.", tags:["moments"], difficulty:"medium"},{id:"uni-maths-probability-stats-007", front:"Define the moment generating function (MGF) Mₓ(t) and state its uses.", back:"Mₓ(t) = E[e^(tX)] (when it exists near t = 0). MGF generates moments: E[Xⁿ] = Mₓ⁽ⁿ⁾(0). Properties: (1) Mₓ₊ₐ(t) = e^(at)Mₓ(t). (2) Mₐₓ(t) = Mₓ(at). (3) Independent X, Y: Mₓ₊ᵧ(t) = Mₓ(t)Mᵧ(t). (4) If Mₓ(t) = Mᵧ(t) near 0, then X and Y have the same distribution (uniqueness). MGF is a Laplace transform variant.", tags:["moments"], difficulty:"medium"},{id:"uni-maths-probability-stats-008", front:"Define Bernoulli, Poisson, Exponential, and Normal distributions with their parameters.", back:"Bernoulli(p): P(X=1)=p, P(X=0)=1−p. E[X]=p, Var(X)=p(1−p). Poisson(λ): P(X=k)=e⁻λλᵏ/k!, k=0,1,2,...; E=Var=λ. Exponential(λ): f(x)=λe⁻λˣ for x≥0; E=1/λ, Var=1/λ². Memoryless property. Normal(μ,σ²): f(x)=(1/σ√2π)e^(−(x−μ)²/(2σ²)); E=μ, Var=σ². Standard Normal Z=(X−μ)/σ.", tags:["distributions"], difficulty:"medium"},{id:"uni-maths-probability-stats-009", front:"State the Central Limit Theorem (CLT).", back:"If X₁, X₂, ..., Xₙ are i.i.d. with mean μ and finite variance σ², then as n → ∞: (√n)(X̄ − μ)/σ → N(0, 1) in distribution. Equivalently: X̄ ≈ N(μ, σ²/n) for large n. The CLT applies regardless of the distribution of individual Xᵢ (universality). Justifies using normal approximations for means, sums, and proportions of large samples.", tags:["limit-theorems"], difficulty:"medium"},{id:"uni-maths-probability-stats-010", front:"State the Weak Law of Large Numbers and the Strong Law of Large Numbers.", back:"WLLN: X₁, X₂, ... i.i.d. with mean μ → X̄ₙ → μ in probability, i.e. ∀ε>0, lim(n→∞)P(|X̄ₙ−μ|>ε)=0. Requires E|X₁| < ∞. SLLN: X̄ₙ → μ almost surely (with probability 1). Requires E|X₁| < ∞ (Kolmogorov). The SLLN is stronger: almost sure convergence implies convergence in probability. Both justify the frequency interpretation of probability.", tags:["limit-theorems"], difficulty:"hard"},{id:"uni-maths-probability-stats-011", front:"State Chebyshev's inequality and give an application.", back:"For X with mean μ and variance σ², P(|X − μ| ≥ kσ) ≤ 1/k² for k > 0. More generally: P(|X − μ| ≥ ε) ≤ σ²/ε². Application: (1) Proof of the WLLN (without requiring a specific distribution). (2) Bounding tail probabilities when the distribution is unknown. (3) Justifying that the sample mean concentrates around the population mean.", tags:["inequalities"], difficulty:"medium"},{id:"uni-maths-probability-stats-012", front:"Describe maximum likelihood estimation (MLE) and the method of moments.", back:"MLE: given observations x₁, ..., xₙ from f(x|θ), find θ̂ = argmaxₓ L(θ) where L(θ) = Π f(xᵢ|θ). Equivalently, maximise log-likelihood l(θ) = Σ log f(xᵢ|θ). Under regularity conditions, MLE is consistent, asymptotically normal, and asymptotically efficient. Method of moments: equate sample moments E[Xᵏ] = mₖ to population moments, solve for θ. Simpler but generally less efficient than MLE.", tags:["estimation"], difficulty:"medium"},{id:"uni-maths-probability-stats-013", front:"Define an unbiased estimator and the Cramér-Rao lower bound.", back:"An estimator θ̂ of θ is unbiased if E[θ̂] = θ. The bias is E[θ̂] − θ. Cramér-Rao lower bound: for unbiased θ̂, Var(θ̂) ≥ 1/(nI(θ)), where I(θ) = E[(∂/∂θ log f(X|θ))²] is the Fisher information. An estimator achieving this bound is efficient. MSE(θ̂) = Var(θ̂) + (Bias)²; sometimes a biased estimator with smaller MSE is preferred.", tags:["estimation"], difficulty:"hard"},{id:"uni-maths-probability-stats-014", front:"Define a confidence interval and explain its interpretation.", back:"A 100(1−α)% confidence interval for θ is a random interval [L(X), U(X)] such that P(L ≤ θ ≤ U) = 1 − α. For X̄ ~ N(μ, σ²/n) with known σ: X̄ ± z_(α/2) · σ/√n. Interpretation: if we repeat the experiment many times, approximately 100(1−α)% of the computed intervals contain θ. The parameter θ is fixed, not random; the randomness is in the interval endpoints.", tags:["estimation"], difficulty:"medium"},{id:"uni-maths-probability-stats-015", front:"Outline the hypothesis testing framework: null, alternative, test statistic, rejection region.", back:"H₀ (null hypothesis) vs H₁ (alternative). Test statistic T, a function of data. Rejection region R: reject H₀ if T ∈ R. Type I error: reject H₀ when H₀ is true (probability α = significance level). Type II error: fail to reject H₀ when H₁ is true (probability β). Power = 1 − β. p-value: probability under H₀ of obtaining a test statistic as extreme as observed.", tags:["hypothesis-testing"], difficulty:"medium"},{id:"uni-maths-probability-stats-016", front:"Define the p-value and explain its correct interpretation.", back:"The p-value is P(T ≥ t_obs | H₀) (for a right-tailed test), the probability under H₀ of observing a result at least as extreme as the data. It is NOT the probability that H₀ is true. Interpretation: a small p-value means the data is unlikely under H₀. Convention: reject H₀ if p < α (typically α = 0.05). A p-value is a random variable, uniformly distributed under H₀.", tags:["hypothesis-testing"], difficulty:"medium"},{id:"uni-maths-probability-stats-017", front:"Define Type I and Type II errors and explain the trade-off.", back:"Type I error (α): rejecting a true H₀ (false positive). Type II error (β): failing to reject a false H₀ (false negative). Power = 1 − β. Trade-off: decreasing α (stricter significance) generally increases β (lower power), and vice versa. For fixed α, power increases with: larger sample size n, larger effect size, smaller variance σ². Neyman-Pearson lemma: likelihood ratio test is most powerful for simple hypotheses.", tags:["hypothesis-testing"], difficulty:"medium"},{id:"uni-maths-probability-stats-018", front:"Describe the chi-squared (χ²) goodness-of-fit test.", back:"Tests whether observed frequencies Oᵢ differ significantly from expected frequencies Eᵢ under H₀. Test statistic: χ² = Σ (Oᵢ − Eᵢ)² / Eᵢ, which approximately follows χ²(k−1−p) where k = number of categories, p = number of estimated parameters. Reject H₀ if χ² > χ²_(α, k−1−p). Assumptions: Eᵢ ≥ 5 for all i (combine categories if needed). Applications: testing uniformity, comparing distributions.", tags:["hypothesis-testing"], difficulty:"hard"},{id:"uni-maths-probability-stats-019", front:"State the ANOVA concept for comparing k group means.", back:"One-way ANOVA tests H₀: μ₁ = μ₂ = ... = μₖ. Total sum of squares: SST = SSB + SSW (between-groups + within-groups). F-statistic: F = (SSB/(k−1)) / (SSW/(n−k)). Under H₀: F ~ F(k−1, n−k). Reject H₀ if F > F_α. Assumptions: independent normal residuals, equal variances (homoscedasticity). ANOVA is a generalisation of the two-sample t-test to k ≥ 2 groups.", tags:["hypothesis-testing"], difficulty:"hard"},{id:"uni-maths-probability-stats-020", front:"State the concept behind the multivariate normal distribution.", back:"X = (X₁, ..., Xₚ) ~ Nₚ(μ, Σ) where μ ∈ ℝᵖ is the mean vector and Σ is the p×p positive semi-definite covariance matrix. PDF: f(x) = (2π)^(−p/2)|Σ|^(−1/2) exp(−½(x−μ)ᵀΣ⁻¹(x−μ)). Key properties: (1) All marginals are normal. (2) All linear combinations aᵀX are normal. (3) Xᵢ, Xⱼ independent iff Σᵢⱼ = 0. (4) Characterised by μ and Σ.", tags:["distributions"], difficulty:"hard"}];
-<FlashcardDeck deckId="uni-maths-probability-stats" title="University Maths -- Probability and Statistics" description="Kolmogorov axioms, distributions, CLT, MLE, hypothesis testing, ANOVA" cards={flashcardData} />
+
+export const flashcards1 = [
+  {
+    id: 'uni-maths-probability-stats-001',
+    front: "State Kolmogorov's probability axioms for a probability space (Ω, F, P).",
+    back: 'Let Ω be a sample space, F a sigma-algebra of events, P a function F → [0,1]. (1) Non-negativity: P(A) ≥ 0 for all A ∈ F. (2) Normalisation: P(Ω) = 1. (3) Countable additivity: for pairwise disjoint A₁, A₂, ..., P(∪ᵢ Aᵢ) = Σᵢ P(Aᵢ). From these: P(∅) = 0, P(Aᶜ) = 1 − P(A), P(A ∪ B) = P(A) + P(B) − P(A ∩ B).',
+    tags: ['foundations'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-probability-stats-002',
+    front: "Define conditional probability P(A|B) and state Bayes' theorem.",
+    back: "P(A|B) = P(A ∩ B) / P(B), defined when P(B) > 0. Bayes' theorem: P(Aᵢ|B) = P(B|Aᵢ)P(Aᵢ) / Σⱼ P(B|Aⱼ)P(Aⱼ) for a partition {A₁, ..., Aₙ}. Law of total probability: P(B) = Σᵢ P(B|Aᵢ)P(Aᵢ). Bayes' theorem updates prior beliefs P(Aᵢ) to posteriors P(Aᵢ|B) given evidence B.",
+    tags: ['foundations'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-probability-stats-003',
+    front: 'Define a random variable X: Ω → ℝ and its cumulative distribution function.',
+    back: 'A random variable is a measurable function from Ω to ℝ. The CDF is F(x) = P(X ≤ x) for x ∈ ℝ. Properties: (1) 0 ≤ F(x) ≤ 1. (2) F is non-decreasing. (3) lim(x→−∞) F(x) = 0, lim(x→∞) F(x) = 1. (4) Right-continuous. (5) P(a < X ≤ b) = F(b) − F(a). X is discrete if F is a step function, continuous if F is absolutely continuous.',
+    tags: ['random-variables'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-probability-stats-004',
+    front: 'Distinguish PDF and PMF, and relate each to the CDF.',
+    back: "For a continuous RV: the probability density function f satisfies F(x) = ∫₋∞ˣ f(t) dt, and f(x) = F'(x) where differentiable. Properties: f(x) ≥ 0, ∫₋∞^∞ f(x) dx = 1. P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx. For a discrete RV: the probability mass function p(xᵢ) = P(X = xᵢ), with F(x) = Σ(xᵢ ≤ x) p(xᵢ). Note: f(x) is a density, not a probability.",
+    tags: ['random-variables'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-probability-stats-005',
+    front: 'State the key properties of expectation E[X] for a random variable X.',
+    back: 'E[X] = ∫₋∞^∞ x f(x) dx (continuous) or Σ xᵢ p(xᵢ) (discrete). Properties (when they exist): (1) Linearity: E[aX + bY] = aE[X] + bE[Y] for constants a, b. (2) E[a] = a for constant a. (3) E[X] ≥ E[Y] if X ≥ Y almost surely. (4) If X and Y are independent, E[XY] = E[X]E[Y]. (5) |E[X]| ≤ E[|X|]. (6) Jensen: E[φ(X)] ≥ φ(E[X]) for convex φ.',
+    tags: ['moments'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-maths-probability-stats-006',
+    front: 'Define variance Var(X) and state its key properties.',
+    back: 'Var(X) = E[(X − μ)²] = E[X²] − (E[X])² where μ = E[X]. Properties: (1) Var(X) ≥ 0, equals 0 iff X is constant a.s. (2) Var(aX + b) = a²Var(X). (3) For independent X, Y: Var(X + Y) = Var(X) + Var(Y). (4) Var(X) = E[X²] − (E[X])² (computational formula). (5) Chebyshev uses variance to bound deviation from the mean. (6) Var(X) = E[X(X−1)] + E[X] − (E[X])² for discrete.',
+    tags: ['moments'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-007',
+    front: 'Define the moment generating function (MGF) Mₓ(t) and state its uses.',
+    back: 'Mₓ(t) = E[e^(tX)] (when it exists near t = 0). MGF generates moments: E[Xⁿ] = Mₓ⁽ⁿ⁾(0). Properties: (1) Mₓ₊ₐ(t) = e^(at)Mₓ(t). (2) Mₐₓ(t) = Mₓ(at). (3) Independent X, Y: Mₓ₊ᵧ(t) = Mₓ(t)Mᵧ(t). (4) If Mₓ(t) = Mᵧ(t) near 0, then X and Y have the same distribution (uniqueness). MGF is a Laplace transform variant.',
+    tags: ['moments'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-008',
+    front:
+      'Define Bernoulli, Poisson, Exponential, and Normal distributions with their parameters.',
+    back: 'Bernoulli(p): P(X=1)=p, P(X=0)=1−p. E[X]=p, Var(X)=p(1−p). Poisson(λ): P(X=k)=e⁻λλᵏ/k!, k=0,1,2,...; E=Var=λ. Exponential(λ): f(x)=λe⁻λˣ for x≥0; E=1/λ, Var=1/λ². Memoryless property. Normal(μ,σ²): f(x)=(1/σ√2π)e^(−(x−μ)²/(2σ²)); E=μ, Var=σ². Standard Normal Z=(X−μ)/σ.',
+    tags: ['distributions'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-009',
+    front: 'State the Central Limit Theorem (CLT).',
+    back: 'If X₁, X₂, ..., Xₙ are i.i.d. with mean μ and finite variance σ², then as n → ∞: (√n)(X̄ − μ)/σ → N(0, 1) in distribution. Equivalently: X̄ ≈ N(μ, σ²/n) for large n. The CLT applies regardless of the distribution of individual Xᵢ (universality). Justifies using normal approximations for means, sums, and proportions of large samples.',
+    tags: ['limit-theorems'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-010',
+    front: 'State the Weak Law of Large Numbers and the Strong Law of Large Numbers.',
+    back: 'WLLN: X₁, X₂, ... i.i.d. with mean μ → X̄ₙ → μ in probability, i.e. ∀ε>0, lim(n→∞)P(|X̄ₙ−μ|>ε)=0. Requires E|X₁| < ∞. SLLN: X̄ₙ → μ almost surely (with probability 1). Requires E|X₁| < ∞ (Kolmogorov). The SLLN is stronger: almost sure convergence implies convergence in probability. Both justify the frequency interpretation of probability.',
+    tags: ['limit-theorems'],
+    difficulty: 'hard',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-maths-probability-stats-011',
+    front: "State Chebyshev's inequality and give an application.",
+    back: 'For X with mean μ and variance σ², P(|X − μ| ≥ kσ) ≤ 1/k² for k > 0. More generally: P(|X − μ| ≥ ε) ≤ σ²/ε². Application: (1) Proof of the WLLN (without requiring a specific distribution). (2) Bounding tail probabilities when the distribution is unknown. (3) Justifying that the sample mean concentrates around the population mean.',
+    tags: ['inequalities'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-012',
+    front: 'Describe maximum likelihood estimation (MLE) and the method of moments.',
+    back: 'MLE: given observations x₁, ..., xₙ from f(x|θ), find θ̂ = argmaxₓ L(θ) where L(θ) = Π f(xᵢ|θ). Equivalently, maximise log-likelihood l(θ) = Σ log f(xᵢ|θ). Under regularity conditions, MLE is consistent, asymptotically normal, and asymptotically efficient. Method of moments: equate sample moments E[Xᵏ] = mₖ to population moments, solve for θ. Simpler but generally less efficient than MLE.',
+    tags: ['estimation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-013',
+    front: 'Define an unbiased estimator and the Cramér-Rao lower bound.',
+    back: 'An estimator θ̂ of θ is unbiased if E[θ̂] = θ. The bias is E[θ̂] − θ. Cramér-Rao lower bound: for unbiased θ̂, Var(θ̂) ≥ 1/(nI(θ)), where I(θ) = E[(∂/∂θ log f(X|θ))²] is the Fisher information. An estimator achieving this bound is efficient. MSE(θ̂) = Var(θ̂) + (Bias)²; sometimes a biased estimator with smaller MSE is preferred.',
+    tags: ['estimation'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-probability-stats-014',
+    front: 'Define a confidence interval and explain its interpretation.',
+    back: 'A 100(1−α)% confidence interval for θ is a random interval [L(X), U(X)] such that P(L ≤ θ ≤ U) = 1 − α. For X̄ ~ N(μ, σ²/n) with known σ: X̄ ± z_(α/2) · σ/√n. Interpretation: if we repeat the experiment many times, approximately 100(1−α)% of the computed intervals contain θ. The parameter θ is fixed, not random; the randomness is in the interval endpoints.',
+    tags: ['estimation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-015',
+    front:
+      'Outline the hypothesis testing framework: null, alternative, test statistic, rejection region.',
+    back: 'H₀ (null hypothesis) vs H₁ (alternative). Test statistic T, a function of data. Rejection region R: reject H₀ if T ∈ R. Type I error: reject H₀ when H₀ is true (probability α = significance level). Type II error: fail to reject H₀ when H₁ is true (probability β). Power = 1 − β. p-value: probability under H₀ of obtaining a test statistic as extreme as observed.',
+    tags: ['hypothesis-testing'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-maths-probability-stats-016',
+    front: 'Define the p-value and explain its correct interpretation.',
+    back: 'The p-value is P(T ≥ t_obs | H₀) (for a right-tailed test), the probability under H₀ of observing a result at least as extreme as the data. It is NOT the probability that H₀ is true. Interpretation: a small p-value means the data is unlikely under H₀. Convention: reject H₀ if p < α (typically α = 0.05). A p-value is a random variable, uniformly distributed under H₀.',
+    tags: ['hypothesis-testing'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-017',
+    front: 'Define Type I and Type II errors and explain the trade-off.',
+    back: 'Type I error (α): rejecting a true H₀ (false positive). Type II error (β): failing to reject a false H₀ (false negative). Power = 1 − β. Trade-off: decreasing α (stricter significance) generally increases β (lower power), and vice versa. For fixed α, power increases with: larger sample size n, larger effect size, smaller variance σ². Neyman-Pearson lemma: likelihood ratio test is most powerful for simple hypotheses.',
+    tags: ['hypothesis-testing'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-probability-stats-018',
+    front: 'Describe the chi-squared (χ²) goodness-of-fit test.',
+    back: 'Tests whether observed frequencies Oᵢ differ significantly from expected frequencies Eᵢ under H₀. Test statistic: χ² = Σ (Oᵢ − Eᵢ)² / Eᵢ, which approximately follows χ²(k−1−p) where k = number of categories, p = number of estimated parameters. Reject H₀ if χ² > χ²_(α, k−1−p). Assumptions: Eᵢ ≥ 5 for all i (combine categories if needed). Applications: testing uniformity, comparing distributions.',
+    tags: ['hypothesis-testing'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-probability-stats-019',
+    front: 'State the ANOVA concept for comparing k group means.',
+    back: 'One-way ANOVA tests H₀: μ₁ = μ₂ = ... = μₖ. Total sum of squares: SST = SSB + SSW (between-groups + within-groups). F-statistic: F = (SSB/(k−1)) / (SSW/(n−k)). Under H₀: F ~ F(k−1, n−k). Reject H₀ if F > F_α. Assumptions: independent normal residuals, equal variances (homoscedasticity). ANOVA is a generalisation of the two-sample t-test to k ≥ 2 groups.',
+    tags: ['hypothesis-testing'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-probability-stats-020',
+    front: 'State the concept behind the multivariate normal distribution.',
+    back: 'X = (X₁, ..., Xₚ) ~ Nₚ(μ, Σ) where μ ∈ ℝᵖ is the mean vector and Σ is the p×p positive semi-definite covariance matrix. PDF: f(x) = (2π)^(−p/2)|Σ|^(−1/2) exp(−½(x−μ)ᵀΣ⁻¹(x−μ)). Key properties: (1) All marginals are normal. (2) All linear combinations aᵀX are normal. (3) Xᵢ, Xⱼ independent iff Σᵢⱼ = 0. (4) Characterised by μ and Σ.',
+    tags: ['distributions'],
+    difficulty: 'hard',
+  },
+];
+<FlashcardDeck
+  deckId="uni-maths-probability-stats"
+  title="University Maths -- Probability and Statistics"
+  description="Kolmogorov axioms, distributions, CLT, MLE, hypothesis testing, ANOVA"
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
+/>;

@@ -19,96 +19,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"uni-cs-computer-networks-001",front:"What are the 7 layers of the OSI
-model from bottom to top?",back:"Physical, Data Link, Network, Transport, Session, Presentation,
-Application. Remembered via mnemonics like 'Please Do Not Throw Sausage Pizza
-Away'.",tags:["OSI/TCP-IP Model"],difficulty:"easy"},{id:"uni-cs-computer-networks-002",front:"How
-does the TCP/IP model differ from the OSI model in terms of layers?",back:"TCP/IP has 4 layers:
-Network Access (combines Physical + Data Link), Internet (Network), Transport, Application (combines
-Session + Presentation + Application). It is the practical model used on the
-internet.",tags:["OSI/TCP-IP
-Model"],difficulty:"easy"},{id:"uni-cs-computer-networks-003",front:"What is Manchester encoding and
-why is it used in Ethernet?",back:"Each bit period has a transition in the middle: a low-to-high
-transition represents `1`, high-to-low represents `0` (or vice versa). It provides a clock signal
-embedded in the data, ensuring synchronisation at the receiver.",tags:["Physical
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-004",front:"How does CRC (Cyclic
-Redundancy Check) detect errors at the Data Link layer?",back:"The sender divides the data (as a
-polynomial) by a generator polynomial, appends the remainder as the CRC checksum. The receiver
-performs the same division; a non-zero remainder indicates an error.",tags:["Data Link
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-005",front:"What is the purpose of MAC
-addresses and how long are they?",back:"Media Access Control addresses uniquely identify network
-interfaces at the Data Link layer. They are 48 bits (6 bytes), typically written as hex pairs (e.g.
-`00:1A:2B:3C:4D:5E`), assigned by the NIC manufacturer.",tags:["Data Link
-Layer"],difficulty:"easy"},{id:"uni-cs-computer-networks-006",front:"What is the difference between
-a Class A, B, and C IP address?",back:"Class A: first octet 1-126, `/8` netmask, supports `2^24 - 2`
-hosts. Class B: 128-191, `/16`, supports `2^16 - 2` hosts. Class C: 192-223, `/24`, supports
-`2^8 - 2 = 254` hosts.",tags:["Network
-Layer"],difficulty:"easy"},{id:"uni-cs-computer-networks-007",front:"Given a `/26` subnet mask, how
-many usable host addresses are available?",back:"`2^(32-26) - 2 = 2^6 - 2 = 62` usable hosts. The
-`-2` subtracts the network address and the broadcast address. The subnet mask in dotted decimal is
-`255.255.255.192`.",tags:["Network
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-008",front:"What is the difference
-between distance-vector and link-state routing protocols?",back:"Distance-vector (e.g. RIP): each
-router shares its entire routing table with neighbours only; susceptible to count-to-infinity.
-Link-state (e.g. OSPF): each router floods link information to all routers; builds a complete
-topology map.",tags:["Network
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-009",front:"What is the role of ARP
-(Address Resolution Protocol)?",back:"ARP maps a known IP address to an unknown MAC address on a
-local network. The sender broadcasts an ARP request; the device with the matching IP replies with
-its MAC address. Results are cached in the ARP table.",tags:["Network
-Layer"],difficulty:"easy"},{id:"uni-cs-computer-networks-010",front:"What are the key differences
-between TCP and UDP?",back:"TCP: connection-oriented, reliable (ACKs, retransmission), ordered
-delivery, flow control, congestion control. UDP: connectionless, unreliable, no ordering, no flow
-control, no congestion control, lower overhead.",tags:["Transport
-Layer"],difficulty:"easy"},{id:"uni-cs-computer-networks-011",front:"How does TCP's three-way
-handshake work?",back:"Client sends `SYN` with sequence number `x`. Server replies with `SYN-ACK`,
-acknowledging `x+1` and sending its own sequence `y`. Client sends `ACK` with `y+1`. Connection is
-now established.",tags:["Transport
-Layer"],difficulty:"easy"},{id:"uni-cs-computer-networks-012",front:"Describe TCP's slow start
-congestion control mechanism.",back:"Starts with a small congestion window (`cwnd` = 1 MSS),
-doubling `cwnd` each round-trip time until a threshold (`ssthresh`) is reached or a loss occurs.
-After reaching `ssthresh`, it switches to congestion avoidance (linear increase).",tags:["Transport
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-013",front:"What is the difference
-between flow control and congestion control in TCP?",back:"Flow control prevents the sender from
-overwhelming the receiver (uses receive window `rwnd`). Congestion control prevents the sender from
-overwhelming the network (uses congestion window `cwnd`). The effective window is
-`min(rwnd, cwnd)`.",tags:["Transport
-Layer"],difficulty:"hard"},{id:"uni-cs-computer-networks-014",front:"What is NAT (Network Address
-Translation) and why is it used?",back:"NAT translates private IP addresses to a public IP address
-(and vice versa) at the router. It conserves the limited IPv4 address space by allowing multiple
-internal devices to share one public IP, and adds a layer of security by hiding internal
-addresses.",tags:["Network
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-015",front:"How does DNS resolution work
-when you enter a URL in a browser?",back:"Browser checks cache, then OS resolver, then recursive
-query to the configured DNS server. The resolver queries root server, then TLD server (e.g. `.com`),
-then authoritative name server for the domain, returning the IP address.",tags:["Application
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-016",front:"What is the difference
-between HTTP/1.1 and HTTP/2?",back:"HTTP/2 adds multiplexing (multiple requests/responses over a
-single TCP connection), header compression (HPACK), server push, and binary framing. It reduces
-latency and improves page load performance compared to HTTP/1.1.",tags:["Application
-Layer"],difficulty:"medium"},{id:"uni-cs-computer-networks-017",front:"What is the role of DHCP in a
-network?",back:"Dynamic Host Configuration Protocol automatically assigns IP addresses, subnet
-masks, default gateways, and DNS servers to devices. It uses a 4-step process: DDISCOVER, OFFER,
-REQUEST, ACK, with leases that expire and must be renewed.",tags:["Application
-Layer"],difficulty:"easy"},{id:"uni-cs-computer-networks-018",front:"How does TLS establish a secure
-connection?",back:"TLS uses a handshake: client and server negotiate cipher suite, exchange
-certificates (authentication), and agree on a shared secret using asymmetric crypto (e.g.
-Diffie-Hellman). All subsequent application data is encrypted with symmetric encryption using the
-shared secret.",tags:["Security"],difficulty:"hard"},{id:"uni-cs-computer-networks-019",front:"What
-is a VPN (Virtual Private Network) and how does it provide security?",back:"A VPN creates an
-encrypted tunnel between a client and a VPN server over a public network. It uses protocols like
-IPsec or OpenVPN to encrypt and authenticate all traffic, protecting data confidentiality and
-integrity from
-eavesdroppers.",tags:["Security"],difficulty:"medium"},{id:"uni-cs-computer-networks-020",front:"What
-is a firewall and what are the main types?",back:"A firewall filters network traffic based on rules.
-Packet-filtering firewalls examine individual packets (headers only). Stateful firewalls track
-connection state. Application-layer (proxy) firewalls inspect application-level data. Next-gen
-firewalls combine all with IPS/IDS and deep packet
-inspection.",tags:["Security"],difficulty:"hard"}];
+export const flashcards1 = [
+  {
+    id: 'uni-cs-computer-networks-001',
+    front: 'What are the 7 layers of the OSI model from bottom to top?',
+    back: "Physical, Data Link, Network, Transport, Session, Presentation, Application. Remembered via mnemonics like 'Please Do Not Throw Sausage Pizza Away'.",
+    tags: ['OSI/TCP-IP Model'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-computer-networks-002',
+    front: 'How does the TCP/IP model differ from the OSI model in terms of layers?',
+    back: 'TCP/IP has 4 layers: Network Access (combines Physical + Data Link), Internet (Network), Transport, Application (combines Session + Presentation + Application). It is the practical model used on the internet.',
+    tags: ['OSI/TCP-IP Model'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-computer-networks-003',
+    front: 'What is Manchester encoding and why is it used in Ethernet?',
+    back: 'Each bit period has a transition in the middle: a low-to-high transition represents `1`, high-to-low represents `0` (or vice versa). It provides a clock signal embedded in the data, ensuring synchronisation at the receiver.',
+    tags: ['Physical Layer'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-004',
+    front: 'How does CRC (Cyclic Redundancy Check) detect errors at the Data Link layer?',
+    back: 'The sender divides the data (as a polynomial) by a generator polynomial, appends the remainder as the CRC checksum. The receiver performs the same division; a non-zero remainder indicates an error.',
+    tags: ['Data Link Layer'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-005',
+    front: 'What is the purpose of MAC addresses and how long are they?',
+    back: 'Media Access Control addresses uniquely identify network interfaces at the Data Link layer. They are 48 bits (6 bytes), typically written as hex pairs (e.g. `00:1A:2B:3C:4D:5E`), assigned by the NIC manufacturer.',
+    tags: ['Data Link Layer'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-cs-computer-networks-006',
+    front: 'What is the difference between a Class A, B, and C IP address?',
+    back: 'Class A: first octet 1-126, `/8` netmask, supports `2^24 - 2` hosts. Class B: 128-191, `/16`, supports `2^16 - 2` hosts. Class C: 192-223, `/24`, supports `2^8 - 2 = 254` hosts.',
+    tags: ['Network Layer'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-computer-networks-007',
+    front: 'Given a `/26` subnet mask, how many usable host addresses are available?',
+    back: '`2^(32-26) - 2 = 2^6 - 2 = 62` usable hosts. The `-2` subtracts the network address and the broadcast address. The subnet mask in dotted decimal is `255.255.255.192`.',
+    tags: ['Network Layer'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-008',
+    front: 'What is the difference between distance-vector and link-state routing protocols?',
+    back: 'Distance-vector (e.g. RIP): each router shares its entire routing table with neighbours only; susceptible to count-to-infinity. Link-state (e.g. OSPF): each router floods link information to all routers; builds a complete topology map.',
+    tags: ['Network Layer'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-009',
+    front: 'What is the role of ARP (Address Resolution Protocol)?',
+    back: 'ARP maps a known IP address to an unknown MAC address on a local network. The sender broadcasts an ARP request; the device with the matching IP replies with its MAC address. Results are cached in the ARP table.',
+    tags: ['Network Layer'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-computer-networks-010',
+    front: 'What are the key differences between TCP and UDP?',
+    back: 'TCP: connection-oriented, reliable (ACKs, retransmission), ordered delivery, flow control, congestion control. UDP: connectionless, unreliable, no ordering, no flow control, no congestion control, lower overhead.',
+    tags: ['Transport Layer'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-cs-computer-networks-011',
+    front: "How does TCP's three-way handshake work?",
+    back: 'Client sends `SYN` with sequence number `x`. Server replies with `SYN-ACK`, acknowledging `x+1` and sending its own sequence `y`. Client sends `ACK` with `y+1`. Connection is now established.',
+    tags: ['Transport Layer'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-computer-networks-012',
+    front: "Describe TCP's slow start congestion control mechanism.",
+    back: 'Starts with a small congestion window (`cwnd` = 1 MSS), doubling `cwnd` each round-trip time until a threshold (`ssthresh`) is reached or a loss occurs. After reaching `ssthresh`, it switches to congestion avoidance (linear increase).',
+    tags: ['Transport Layer'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-013',
+    front: 'What is the difference between flow control and congestion control in TCP?',
+    back: 'Flow control prevents the sender from overwhelming the receiver (uses receive window `rwnd`). Congestion control prevents the sender from overwhelming the network (uses congestion window `cwnd`). The effective window is `min(rwnd, cwnd)`.',
+    tags: ['Transport Layer'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-computer-networks-014',
+    front: 'What is NAT (Network Address Translation) and why is it used?',
+    back: 'NAT translates private IP addresses to a public IP address (and vice versa) at the router. It conserves the limited IPv4 address space by allowing multiple internal devices to share one public IP, and adds a layer of security by hiding internal addresses.',
+    tags: ['Network Layer'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-015',
+    front: 'How does DNS resolution work when you enter a URL in a browser?',
+    back: 'Browser checks cache, then OS resolver, then recursive query to the configured DNS server. The resolver queries root server, then TLD server (e.g. `.com`), then authoritative name server for the domain, returning the IP address.',
+    tags: ['Application Layer'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-cs-computer-networks-016',
+    front: 'What is the difference between HTTP/1.1 and HTTP/2?',
+    back: 'HTTP/2 adds multiplexing (multiple requests/responses over a single TCP connection), header compression (HPACK), server push, and binary framing. It reduces latency and improves page load performance compared to HTTP/1.1.',
+    tags: ['Application Layer'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-017',
+    front: 'What is the role of DHCP in a network?',
+    back: 'Dynamic Host Configuration Protocol automatically assigns IP addresses, subnet masks, default gateways, and DNS servers to devices. It uses a 4-step process: DDISCOVER, OFFER, REQUEST, ACK, with leases that expire and must be renewed.',
+    tags: ['Application Layer'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-computer-networks-018',
+    front: 'How does TLS establish a secure connection?',
+    back: 'TLS uses a handshake: client and server negotiate cipher suite, exchange certificates (authentication), and agree on a shared secret using asymmetric crypto (e.g. Diffie-Hellman). All subsequent application data is encrypted with symmetric encryption using the shared secret.',
+    tags: ['Security'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-computer-networks-019',
+    front: 'What is a VPN (Virtual Private Network) and how does it provide security?',
+    back: 'A VPN creates an encrypted tunnel between a client and a VPN server over a public network. It uses protocols like IPsec or OpenVPN to encrypt and authenticate all traffic, protecting data confidentiality and integrity from eavesdroppers.',
+    tags: ['Security'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-computer-networks-020',
+    front: 'What is a firewall and what are the main types?',
+    back: 'A firewall filters network traffic based on rules. Packet-filtering firewalls examine individual packets (headers only). Stateful firewalls track connection state. Application-layer (proxy) firewalls inspect application-level data. Next-gen firewalls combine all with IPS/IDS and deep packet inspection.',
+    tags: ['Security'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="uni-cs-computer-networks"
   title="University Computing -- Computer Networks"
   description="20 interactive flashcards covering OSI/TCP-IP models, physical and data link layers, network layer, transport layer, application layer, and network security."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

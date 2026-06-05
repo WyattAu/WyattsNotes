@@ -18,92 +18,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"uni-cs-databases-001",front:"What is a relational database
-schema?",back:"A relational schema defines the structure of a database: a set of relation names,
-their attributes, domains, and integrity constraints (primary keys, foreign keys, CHECK
-constraints).",tags:["relational-model","schema"],difficulty:"easy"},{id:"uni-cs-databases-002",front:"What
-is the difference between a primary key and a candidate key?",back:"A candidate key is any minimal
-set of attributes that uniquely identifies a tuple. The primary key is the candidate key chosen by
-the database designer to be the principal
-identifier.",tags:["relational-model","keys"],difficulty:"easy"},{id:"uni-cs-databases-003",front:"What
-is the difference between DDL and DML in SQL?",back:"DDL (Data Definition Language) defines and
-modifies schema structures (CREATE, ALTER, DROP). DML (Data Manipulation Language) queries and
-modifies data (SELECT, INSERT, UPDATE,
-DELETE).",tags:["sql","ddl-dml"],difficulty:"easy"},{id:"uni-cs-databases-004",front:"What is a
-foreign key constraint?",back:"A foreign key is an attribute (or set) in one relation that
-references the primary key of another relation, enforcing referential integrity so that every
-referenced value must exist in the referenced
-table.",tags:["relational-model","keys","integrity"],difficulty:"easy"},{id:"uni-cs-databases-005",front:"What
-is the difference between INNER JOIN and LEFT OUTER JOIN?",back:"INNER JOIN returns only rows where
-the join condition is satisfied in both tables. LEFT OUTER JOIN returns all rows from the left
-table, with NULLs for columns from the right table when there is no
-match.",tags:["sql","joins"],difficulty:"easy"},{id:"uni-cs-databases-006",front:"What does a GROUP
-BY clause do in SQL?",back:"GROUP BY groups rows that have the same values in specified columns. It
-is used with aggregate functions (COUNT, SUM, AVG, etc.) to produce summary values for each
-group.",tags:["sql","aggregations"],difficulty:"easy"},{id:"uni-cs-databases-007",front:"What is a
-correlated subquery?",back:"A correlated subquery references columns from the outer query and is
-re-evaluated for each row processed by the outer query. It cannot be evaluated independently, unlike
-a non-correlated
-subquery.",tags:["sql","subqueries"],difficulty:"medium"},{id:"uni-cs-databases-008",front:"Define
-First Normal Form (1NF).",back:"1NF requires that every attribute of a relation contains only atomic
-(indivisible) values, and every row is uniquely identifiable. No repeating groups or multi-valued
-attributes are
-allowed.",tags:["normalization","1nf"],difficulty:"medium"},{id:"uni-cs-databases-009",front:"Define
-Second Normal Form (2NF).",back:"A relation is in 2NF if it is in 1NF and no non-prime attribute is
-partially dependent on any candidate key. Every non-prime attribute must depend on the entire key,
-not just part of
-it.",tags:["normalization","2nf"],difficulty:"medium"},{id:"uni-cs-databases-010",front:"Define
-Third Normal Form (3NF).",back:"A relation is in 3NF if it is in 2NF and has no transitive
-dependencies: every non-prime attribute is non-transitively dependent on every candidate key (i.e.,
-non-prime attributes depend only on candidate
-keys).",tags:["normalization","3nf"],difficulty:"medium"},{id:"uni-cs-databases-011",front:"What is
-Boyce-Codd Normal Form (BCNF)?",back:"BCNF requires that for every non-trivial functional dependency
-X -> Y, X is a superkey of the relation. It is stricter than 3NF and guarantees no redundancy from
-functional
-dependencies.",tags:["normalization","bcnf"],difficulty:"medium"},{id:"uni-cs-databases-012",front:"What
-is a lossless-join decomposition?",back:"A decomposition of relation R into R1 and R2 is lossless if
-the natural join of R1 and R2 always produces exactly R. Formally, R1 intersect R2 must be a
-superkey of either R1 or
-R2.",tags:["normalization","decomposition"],difficulty:"medium"},{id:"uni-cs-databases-013",front:"What
-are the four ACID properties of transactions?",back:"Atomicity (all or nothing), Consistency
-(database moves between valid states), Isolation (concurrent transactions do not interfere),
-Durability (committed results persist despite
-failures).",tags:["transactions","acid"],difficulty:"medium"},{id:"uni-cs-databases-014",front:"What
-is the difference between Read Committed and Repeatable Read isolation levels?",back:"Read Committed
-prevents dirty reads but allows non-repeatable reads. Repeatable Read prevents both dirty and
-non-repeatable reads, but may still allow phantom reads (new rows appearing in re-executed
-queries).",tags:["transactions","isolation-levels"],difficulty:"medium"},{id:"uni-cs-databases-015",front:"What
-is serializability in the context of transactions?",back:"A schedule is serializable if its effect
-is equivalent to some serial schedule (where transactions execute one after another). Conflict
-serializability can be checked via precedence
-graphs.",tags:["transactions","serializability"],difficulty:"medium"},{id:"uni-cs-databases-016",front:"Why
-are B+ trees preferred over hash indexes for range queries?",back:"B+ trees store keys in sorted
-order in their leaf nodes, which are linked sequentially, enabling efficient range scans. Hash
-indexes only support exact-match lookups since data is distributed by hash
-function.",tags:["indexing","b-plus-trees","query-optimization"],difficulty:"medium"},{id:"uni-cs-databases-017",front:"What
-is the CAP theorem?",back:"A distributed system can guarantee at most two of three properties:
-Consistency (all nodes see the same data), Availability (every request receives a non-error
-response), and Partition tolerance (system continues despite network
-partitions).",tags:["nosql","cap-theorem"],difficulty:"medium"},{id:"uni-cs-databases-018",front:"Compare
-document databases (e.g. MongoDB) and graph databases (e.g. Neo4j).",back:"Document databases store
-semi-structured data as JSON-like documents, optimized for flexible schemas and hierarchical
-queries. Graph databases store nodes and edges, optimized for traversing relationships and complex
-multi-hop
-queries.",tags:["nosql","document-db","graph-db"],difficulty:"hard"},{id:"uni-cs-databases-019",front:"What
-is the difference between conflict serializability and view serializability?",back:"Conflict
-serializability is based on conflicting read/write operations and is checkable via precedence graphs
-(decidable). View serializability requires the same read/write sets and final writes as some serial
-schedule but is NP-complete to
-check.",tags:["transactions","serializability"],difficulty:"hard"},{id:"uni-cs-databases-020",front:"Describe
-the structure of a B+ tree index and how it supports point and range queries.",back:"Internal nodes
-contain search keys and child pointers. Leaf nodes contain all key-pointer pairs and are linked as a
-sorted doubly-linked list. Point queries traverse from root to leaf in O(log n). Range queries find
-the starting key then scan the linked leaf
-chain.",tags:["indexing","b-plus-trees","query-optimization"],difficulty:"hard"}];
+export const flashcards1 = [
+  {
+    id: 'uni-cs-databases-001',
+    front: 'What is a relational database schema?',
+    back: 'A relational schema defines the structure of a database: a set of relation names, their attributes, domains, and integrity constraints (primary keys, foreign keys, CHECK constraints).',
+    tags: ['relational-model', 'schema'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-databases-002',
+    front: 'What is the difference between a primary key and a candidate key?',
+    back: 'A candidate key is any minimal set of attributes that uniquely identifies a tuple. The primary key is the candidate key chosen by the database designer to be the principal identifier.',
+    tags: ['relational-model', 'keys'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-databases-003',
+    front: 'What is the difference between DDL and DML in SQL?',
+    back: 'DDL (Data Definition Language) defines and modifies schema structures (CREATE, ALTER, DROP). DML (Data Manipulation Language) queries and modifies data (SELECT, INSERT, UPDATE, DELETE).',
+    tags: ['sql', 'ddl-dml'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-databases-004',
+    front: 'What is a foreign key constraint?',
+    back: 'A foreign key is an attribute (or set) in one relation that references the primary key of another relation, enforcing referential integrity so that every referenced value must exist in the referenced table.',
+    tags: ['relational-model', 'keys', 'integrity'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-databases-005',
+    front: 'What is the difference between INNER JOIN and LEFT OUTER JOIN?',
+    back: 'INNER JOIN returns only rows where the join condition is satisfied in both tables. LEFT OUTER JOIN returns all rows from the left table, with NULLs for columns from the right table when there is no match.',
+    tags: ['sql', 'joins'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-cs-databases-006',
+    front: 'What does a GROUP BY clause do in SQL?',
+    back: 'GROUP BY groups rows that have the same values in specified columns. It is used with aggregate functions (COUNT, SUM, AVG, etc.) to produce summary values for each group.',
+    tags: ['sql', 'aggregations'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-databases-007',
+    front: 'What is a correlated subquery?',
+    back: 'A correlated subquery references columns from the outer query and is re-evaluated for each row processed by the outer query. It cannot be evaluated independently, unlike a non-correlated subquery.',
+    tags: ['sql', 'subqueries'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-008',
+    front: 'Define First Normal Form (1NF).',
+    back: '1NF requires that every attribute of a relation contains only atomic (indivisible) values, and every row is uniquely identifiable. No repeating groups or multi-valued attributes are allowed.',
+    tags: ['normalization', '1nf'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-009',
+    front: 'Define Second Normal Form (2NF).',
+    back: 'A relation is in 2NF if it is in 1NF and no non-prime attribute is partially dependent on any candidate key. Every non-prime attribute must depend on the entire key, not just part of it.',
+    tags: ['normalization', '2nf'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-010',
+    front: 'Define Third Normal Form (3NF).',
+    back: 'A relation is in 3NF if it is in 2NF and has no transitive dependencies: every non-prime attribute is non-transitively dependent on every candidate key (i.e., non-prime attributes depend only on candidate keys).',
+    tags: ['normalization', '3nf'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-cs-databases-011',
+    front: 'What is Boyce-Codd Normal Form (BCNF)?',
+    back: 'BCNF requires that for every non-trivial functional dependency X -> Y, X is a superkey of the relation. It is stricter than 3NF and guarantees no redundancy from functional dependencies.',
+    tags: ['normalization', 'bcnf'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-012',
+    front: 'What is a lossless-join decomposition?',
+    back: 'A decomposition of relation R into R1 and R2 is lossless if the natural join of R1 and R2 always produces exactly R. Formally, R1 intersect R2 must be a superkey of either R1 or R2.',
+    tags: ['normalization', 'decomposition'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-013',
+    front: 'What are the four ACID properties of transactions?',
+    back: 'Atomicity (all or nothing), Consistency (database moves between valid states), Isolation (concurrent transactions do not interfere), Durability (committed results persist despite failures).',
+    tags: ['transactions', 'acid'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-014',
+    front: 'What is the difference between Read Committed and Repeatable Read isolation levels?',
+    back: 'Read Committed prevents dirty reads but allows non-repeatable reads. Repeatable Read prevents both dirty and non-repeatable reads, but may still allow phantom reads (new rows appearing in re-executed queries).',
+    tags: ['transactions', 'isolation-levels'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-015',
+    front: 'What is serializability in the context of transactions?',
+    back: 'A schedule is serializable if its effect is equivalent to some serial schedule (where transactions execute one after another). Conflict serializability can be checked via precedence graphs.',
+    tags: ['transactions', 'serializability'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-cs-databases-016',
+    front: 'Why are B+ trees preferred over hash indexes for range queries?',
+    back: 'B+ trees store keys in sorted order in their leaf nodes, which are linked sequentially, enabling efficient range scans. Hash indexes only support exact-match lookups since data is distributed by hash function.',
+    tags: ['indexing', 'b-plus-trees', 'query-optimization'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-017',
+    front: 'What is the CAP theorem?',
+    back: 'A distributed system can guarantee at most two of three properties: Consistency (all nodes see the same data), Availability (every request receives a non-error response), and Partition tolerance (system continues despite network partitions).',
+    tags: ['nosql', 'cap-theorem'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-databases-018',
+    front: 'Compare document databases (e.g. MongoDB) and graph databases (e.g. Neo4j).',
+    back: 'Document databases store semi-structured data as JSON-like documents, optimized for flexible schemas and hierarchical queries. Graph databases store nodes and edges, optimized for traversing relationships and complex multi-hop queries.',
+    tags: ['nosql', 'document-db', 'graph-db'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-databases-019',
+    front: 'What is the difference between conflict serializability and view serializability?',
+    back: 'Conflict serializability is based on conflicting read/write operations and is checkable via precedence graphs (decidable). View serializability requires the same read/write sets and final writes as some serial schedule but is NP-complete to check.',
+    tags: ['transactions', 'serializability'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-databases-020',
+    front: 'Describe the structure of a B+ tree index and how it supports point and range queries.',
+    back: 'Internal nodes contain search keys and child pointers. Leaf nodes contain all key-pointer pairs and are linked as a sorted doubly-linked list. Point queries traverse from root to leaf in O(log n). Range queries find the starting key then scan the linked leaf chain.',
+    tags: ['indexing', 'b-plus-trees', 'query-optimization'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="uni-cs-databases"
   title="University Computing -- Databases"
   description="Flashcards covering relational model, SQL, normalization, transactions, indexing, and NoSQL concepts."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

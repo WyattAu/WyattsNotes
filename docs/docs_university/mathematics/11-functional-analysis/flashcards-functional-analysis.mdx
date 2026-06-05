@@ -11,5 +11,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 ## Mathematics -- Functional Analysis Flashcards
 20 interactive flashcards for university-level Functional Analysis. Press Space to flip, rate 1-4.
 ---
-const flashcardData = [{id:"uni-maths-functional-analysis-001", front:"What is the difference between a normed space and a Banach space?", back:"A Banach space is a normed space that is complete: every Cauchy sequence converges to an element of the space. Not every normed space is complete (e.g., C[a,b] with the L^1 norm is not a Banach space; its completion is L^1[a,b]).", tags:["banach-spaces"], difficulty:"easy"},{id:"uni-maths-functional-analysis-002", front:"What is Riesz's Lemma and what does it imply?", back:"Riesz's Lemma: if Y is a proper closed subspace of normed space X and 0 < theta < 1, there exists x with ||x|| = 1 and d(x, Y) >= theta. This implies the closed unit ball in an infinite-dimensional normed space is never compact (compactness of the unit ball characterizes finite dimension).", tags:["banach-spaces"], difficulty:"medium"},{id:"uni-maths-functional-analysis-003", front:"State the parallelogram law and explain its significance.", back:"In an inner product space: ||x+y||^2 + ||x-y||^2 = 2||x||^2 + 2||y||^2. This is a necessary and sufficient condition for a norm to come from an inner product. A Banach space whose norm satisfies the parallelogram law is a Hilbert space (Jordan-von Neumann theorem).", tags:["hilbert-spaces"], difficulty:"medium"},{id:"uni-maths-functional-analysis-004", front:"State the orthogonal projection theorem in Hilbert spaces.", back:"If M is a closed subspace of a Hilbert space H, then for every x in H there exists a unique y in M such that x - y is orthogonal to M. This gives the orthogonal decomposition H = M direct sum M^perp. The map P_M: H -> M is linear, bounded with ||P_M|| = 1 (when M is nonzero).", tags:["hilbert-spaces"], difficulty:"medium"},{id:"uni-maths-functional-analysis-005", front:"State the Riesz Representation Theorem.", back:"For a Hilbert space H, every bounded linear functional phi in H* has the form phi(x) = <x, y> for a unique y in H, with ||phi|| = ||y||. This gives an anti-linear isometric isomorphism H* = H. This theorem fails for general Banach spaces: e.g., (L^1)* = L^infinity but L^infinity is much larger than L^1.", tags:["hilbert-spaces"], difficulty:"medium"},{id:"uni-maths-functional-analysis-006", front:"What is the operator norm of T: X -> Y and how is it computed?", back:"||T|| = sup{||Tx||_Y : ||x||_X <= 1} = sup{||Tx||_Y : ||x||_X = 1}. It satisfies ||Tx|| <= ||T|| * ||x|| for all x. For the identity: ||I|| = 1. For the right shift on ell^2: ||T|| = 1. T is bounded iff ||T|| < infinity iff T is continuous.", tags:["operators"], difficulty:"easy"},{id:"uni-maths-functional-analysis-007", front:"What is the dual space of X and give examples of duals of classical spaces.", back:"X* = B(X, R) (or B(X, C)), the Banach space of bounded linear functionals. Key duals: (ell^p)* = ell^q for 1 <= p < infinity (1/p + 1/q = 1). (c_0)* = ell^1. (L^p)* = L^q for 1 <= p < infinity. (C[a,b])* = space of regular Borel signed measures (Riesz representation for C[a,b]).", tags:["dual-spaces"], difficulty:"medium"},{id:"uni-maths-functional-analysis-008", front:"State the Hahn-Banach Theorem (normed space version).", back:"If M is a subspace of normed space X, every bounded linear functional f on M extends to a functional F on X with the same norm: ||F|| = ||f||. This implies every normed space has enough bounded functionals (for x != 0, there exists phi with ||phi|| = 1 and phi(x) = ||x||).", tags:["fundamental-theorems"], difficulty:"medium"},{id:"uni-maths-functional-analysis-009", front:"State the Open Mapping Theorem and its corollary.", back:"If T: X -> Y is a surjective bounded operator between Banach spaces, T maps open sets to open sets. Corollary (Bounded Inverse Theorem): if T is bijective and bounded, then T^{-1} is also bounded. This fails if X or Y is not complete.", tags:["fundamental-theorems"], difficulty:"medium"},{id:"uni-maths-functional-analysis-010", front:"State the Closed Graph Theorem.", back:"A linear operator T: X -> Y between Banach spaces is bounded if and only if its graph Gamma(T) = {(x, Tx) : x in X} is closed in X x Y. Equivalently: if x_n -> x and Tx_n -> y imply y = Tx, then T is bounded. This requires BOTH spaces to be Banach.", tags:["fundamental-theorems"], difficulty:"medium"},{id:"uni-maths-functional-analysis-011", front:"State the Uniform Boundedness Principle.", back:"If {T_alpha} is a family of bounded operators from Banach space X to normed space Y, and for each x, sup_alpha ||T_alpha x|| < infinity (pointwise bounded), then sup_alpha ||T_alpha|| < infinity (uniformly bounded). Proof uses Baire category theorem: the sets E_n = {x : sup_alpha ||T_alpha x|| <= n} cover X, so some E_n has nonempty interior.", tags:["fundamental-theorems"], difficulty:"medium"},{id:"uni-maths-functional-analysis-012", front:"Define a compact operator and give a key example.", back:"T: X -> Y is compact if T(B_X) has compact closure in Y, where B_X is the closed unit ball. Every compact operator is bounded. Every finite-rank operator is compact. Example: the Volterra operator (Tf)(x) = integral from 0 to x of f(t) dt on L^2[0,1] is compact (it is the limit of finite-rank operators).", tags:["compact-operators"], difficulty:"medium"},{id:"uni-maths-functional-analysis-013", front:"State the spectral theorem for compact self-adjoint operators.", back:"If T is a compact self-adjoint operator on Hilbert space H, then: (1) eigenvalues are real, (2) eigenvectors for distinct eigenvalues are orthogonal, (3) nonzero eigenvalues form a countable sequence converging to 0 (or are finitely many), (4) H has an orthonormal basis of eigenvectors, (5) Tx = sum_n lambda_n <x, e_n> e_n.", tags:["spectral-theory"], difficulty:"hard"},{id:"uni-maths-functional-analysis-014", front:"State the Fredholm Alternative for compact operators.", back:"If T is compact on Banach space X and lambda != 0, then exactly one holds: (1) lambda*I - T is bijective (hence invertible with bounded inverse), or (2) lambda*I - T has nontrivial kernel (lambda is an eigenvalue). The ranges and null spaces have the same finite dimension for lambda*I - T and its adjoint.", tags:["spectral-theory"], difficulty:"hard"},{id:"uni-maths-functional-analysis-015", front:"Define weak convergence x_n weak-arrow x in a normed space X.", back:"x_n converges weakly to x (x_n weak-arrow x) if phi(x_n) -> phi(x) for every phi in X*. Weak convergence implies boundedness (sup_n ||x_n|| < infinity). Strong convergence (in norm) implies weak convergence. In ell^2, e_n weak-arrow 0 but ||e_n|| = 1 for all n.", tags:["weak-convergence"], difficulty:"medium"},{id:"uni-maths-functional-analysis-016", front:"Define weak* convergence and state the Banach-Alaoglu theorem.", back:"phi_n weak*-converges to phi if phi_n(x) -> phi(x) for every x in X (test against X, not X**). Banach-Alaoglu: the closed unit ball of X* is weak*-compact. This is a fundamental compactness result used extensively in PDE theory and variational analysis to extract convergent subsequences.", tags:["weak-convergence"], difficulty:"hard"},{id:"uni-maths-functional-analysis-017", front:"In what sense is a Hilbert space H isomorphic to its dual H*?", back:"By the Riesz representation theorem, H* is isometrically isomorphic to H, but the isomorphism is conjugate-linear (anti-linear): phi maps to y where phi(x) = <x, y>. For real Hilbert spaces, the isomorphism is linear. For complex Hilbert spaces, one identifies H* with the conjugate space of H.", tags:["hilbert-spaces"], difficulty:"medium"},{id:"uni-maths-functional-analysis-018", front:"Give an example where the Closed Graph Theorem is useful.", back:"To show a linear operator T is bounded, it suffices to check that x_n -> x and Tx_n -> y imply y = Tx (sequential closedness of the graph). This is often easier than estimating ||T|| directly. Example: if T: L^2 -> L^2 is defined by (Tf)(x) = integral K(x,y)f(y)dy with K in L^2([a,b]^2), show T is bounded by verifying the graph is closed.", tags:["fundamental-theorems"], difficulty:"medium"},{id:"uni-maths-functional-analysis-019", front:"What is an orthonormal basis in a Hilbert space and when does one exist?", back:"An orthonormal basis is a maximal orthonormal set, equivalent to: every x in H has the expansion x = sum <x, e_n> e_n with Parseval identity ||x||^2 = sum |<x,e_n>|^2. A separable Hilbert space always has a countable orthonormal basis. Non-separable Hilbert spaces have uncountable orthonormal bases (by Zorn's lemma).", tags:["hilbert-spaces"], difficulty:"medium"},{id:"uni-maths-functional-analysis-020", front:"How is functional analysis applied in quantum mechanics?", back:"The state space is a Hilbert space H (usually L^2). Observables are self-adjoint operators. The spectral theorem decomposes observables: A = integral lambda dP(lambda), where P is the projection-valued measure. The Heisenberg uncertainty principle follows from the commutation relation [X, P] = i*hbar*I and the Cauchy-Schwarz inequality.", tags:["applications"], difficulty:"hard"}];
-<FlashcardDeck deckId="uni-maths-functional-analysis" title="University Maths -- Functional Analysis" description="Banach spaces, Hilbert spaces, bounded operators, fundamental theorems, compact operators, spectral theory, weak convergence" cards={flashcardData} />
+
+export const flashcards1 = [
+  {
+    id: 'uni-maths-functional-analysis-001',
+    front: 'What is the difference between a normed space and a Banach space?',
+    back: 'A Banach space is a normed space that is complete: every Cauchy sequence converges to an element of the space. Not every normed space is complete (e.g., C[a,b] with the L^1 norm is not a Banach space; its completion is L^1[a,b]).',
+    tags: ['banach-spaces'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-functional-analysis-002',
+    front: "What is Riesz's Lemma and what does it imply?",
+    back: "Riesz's Lemma: if Y is a proper closed subspace of normed space X and 0 < theta < 1, there exists x with ||x|| = 1 and d(x, Y) >= theta. This implies the closed unit ball in an infinite-dimensional normed space is never compact (compactness of the unit ball characterizes finite dimension).",
+    tags: ['banach-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-003',
+    front: 'State the parallelogram law and explain its significance.',
+    back: 'In an inner product space: ||x+y||^2 + ||x-y||^2 = 2||x||^2 + 2||y||^2. This is a necessary and sufficient condition for a norm to come from an inner product. A Banach space whose norm satisfies the parallelogram law is a Hilbert space (Jordan-von Neumann theorem).',
+    tags: ['hilbert-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-004',
+    front: 'State the orthogonal projection theorem in Hilbert spaces.',
+    back: 'If M is a closed subspace of a Hilbert space H, then for every x in H there exists a unique y in M such that x - y is orthogonal to M. This gives the orthogonal decomposition H = M direct sum M^perp. The map P_M: H -> M is linear, bounded with ||P_M|| = 1 (when M is nonzero).',
+    tags: ['hilbert-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-005',
+    front: 'State the Riesz Representation Theorem.',
+    back: 'For a Hilbert space H, every bounded linear functional phi in H* has the form phi(x) = <x, y> for a unique y in H, with ||phi|| = ||y||. This gives an anti-linear isometric isomorphism H* = H. This theorem fails for general Banach spaces: e.g., (L^1)* = L^infinity but L^infinity is much larger than L^1.',
+    tags: ['hilbert-spaces'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-maths-functional-analysis-006',
+    front: 'What is the operator norm of T: X -> Y and how is it computed?',
+    back: '||T|| = sup{||Tx||_Y : ||x||_X <= 1} = sup{||Tx||_Y : ||x||_X = 1}. It satisfies ||Tx|| <= ||T|| * ||x|| for all x. For the identity: ||I|| = 1. For the right shift on ell^2: ||T|| = 1. T is bounded iff ||T|| < infinity iff T is continuous.',
+    tags: ['operators'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-functional-analysis-007',
+    front: 'What is the dual space of X and give examples of duals of classical spaces.',
+    back: 'X* = B(X, R) (or B(X, C)), the Banach space of bounded linear functionals. Key duals: (ell^p)* = ell^q for 1 <= p < infinity (1/p + 1/q = 1). (c_0)* = ell^1. (L^p)* = L^q for 1 <= p < infinity. (C[a,b])* = space of regular Borel signed measures (Riesz representation for C[a,b]).',
+    tags: ['dual-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-008',
+    front: 'State the Hahn-Banach Theorem (normed space version).',
+    back: 'If M is a subspace of normed space X, every bounded linear functional f on M extends to a functional F on X with the same norm: ||F|| = ||f||. This implies every normed space has enough bounded functionals (for x != 0, there exists phi with ||phi|| = 1 and phi(x) = ||x||).',
+    tags: ['fundamental-theorems'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-009',
+    front: 'State the Open Mapping Theorem and its corollary.',
+    back: 'If T: X -> Y is a surjective bounded operator between Banach spaces, T maps open sets to open sets. Corollary (Bounded Inverse Theorem): if T is bijective and bounded, then T^{-1} is also bounded. This fails if X or Y is not complete.',
+    tags: ['fundamental-theorems'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-010',
+    front: 'State the Closed Graph Theorem.',
+    back: 'A linear operator T: X -> Y between Banach spaces is bounded if and only if its graph Gamma(T) = {(x, Tx) : x in X} is closed in X x Y. Equivalently: if x_n -> x and Tx_n -> y imply y = Tx, then T is bounded. This requires BOTH spaces to be Banach.',
+    tags: ['fundamental-theorems'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-maths-functional-analysis-011',
+    front: 'State the Uniform Boundedness Principle.',
+    back: 'If {T_alpha} is a family of bounded operators from Banach space X to normed space Y, and for each x, sup_alpha ||T_alpha x|| < infinity (pointwise bounded), then sup_alpha ||T_alpha|| < infinity (uniformly bounded). Proof uses Baire category theorem: the sets E_n = {x : sup_alpha ||T_alpha x|| <= n} cover X, so some E_n has nonempty interior.',
+    tags: ['fundamental-theorems'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-012',
+    front: 'Define a compact operator and give a key example.',
+    back: 'T: X -> Y is compact if T(B_X) has compact closure in Y, where B_X is the closed unit ball. Every compact operator is bounded. Every finite-rank operator is compact. Example: the Volterra operator (Tf)(x) = integral from 0 to x of f(t) dt on L^2[0,1] is compact (it is the limit of finite-rank operators).',
+    tags: ['compact-operators'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-013',
+    front: 'State the spectral theorem for compact self-adjoint operators.',
+    back: 'If T is a compact self-adjoint operator on Hilbert space H, then: (1) eigenvalues are real, (2) eigenvectors for distinct eigenvalues are orthogonal, (3) nonzero eigenvalues form a countable sequence converging to 0 (or are finitely many), (4) H has an orthonormal basis of eigenvectors, (5) Tx = sum_n lambda_n <x, e_n> e_n.',
+    tags: ['spectral-theory'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-functional-analysis-014',
+    front: 'State the Fredholm Alternative for compact operators.',
+    back: 'If T is compact on Banach space X and lambda != 0, then exactly one holds: (1) lambda*I - T is bijective (hence invertible with bounded inverse), or (2) lambda*I - T has nontrivial kernel (lambda is an eigenvalue). The ranges and null spaces have the same finite dimension for lambda*I - T and its adjoint.',
+    tags: ['spectral-theory'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-functional-analysis-015',
+    front: 'Define weak convergence x_n weak-arrow x in a normed space X.',
+    back: 'x_n converges weakly to x (x_n weak-arrow x) if phi(x_n) -> phi(x) for every phi in X*. Weak convergence implies boundedness (sup_n ||x_n|| < infinity). Strong convergence (in norm) implies weak convergence. In ell^2, e_n weak-arrow 0 but ||e_n|| = 1 for all n.',
+    tags: ['weak-convergence'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-maths-functional-analysis-016',
+    front: 'Define weak* convergence and state the Banach-Alaoglu theorem.',
+    back: 'phi_n weak*-converges to phi if phi_n(x) -> phi(x) for every x in X (test against X, not X**). Banach-Alaoglu: the closed unit ball of X* is weak*-compact. This is a fundamental compactness result used extensively in PDE theory and variational analysis to extract convergent subsequences.',
+    tags: ['weak-convergence'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-functional-analysis-017',
+    front: 'In what sense is a Hilbert space H isomorphic to its dual H*?',
+    back: 'By the Riesz representation theorem, H* is isometrically isomorphic to H, but the isomorphism is conjugate-linear (anti-linear): phi maps to y where phi(x) = <x, y>. For real Hilbert spaces, the isomorphism is linear. For complex Hilbert spaces, one identifies H* with the conjugate space of H.',
+    tags: ['hilbert-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-018',
+    front: 'Give an example where the Closed Graph Theorem is useful.',
+    back: 'To show a linear operator T is bounded, it suffices to check that x_n -> x and Tx_n -> y imply y = Tx (sequential closedness of the graph). This is often easier than estimating ||T|| directly. Example: if T: L^2 -> L^2 is defined by (Tf)(x) = integral K(x,y)f(y)dy with K in L^2([a,b]^2), show T is bounded by verifying the graph is closed.',
+    tags: ['fundamental-theorems'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-019',
+    front: 'What is an orthonormal basis in a Hilbert space and when does one exist?',
+    back: "An orthonormal basis is a maximal orthonormal set, equivalent to: every x in H has the expansion x = sum <x, e_n> e_n with Parseval identity ||x||^2 = sum |<x,e_n>|^2. A separable Hilbert space always has a countable orthonormal basis. Non-separable Hilbert spaces have uncountable orthonormal bases (by Zorn's lemma).",
+    tags: ['hilbert-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-functional-analysis-020',
+    front: 'How is functional analysis applied in quantum mechanics?',
+    back: 'The state space is a Hilbert space H (usually L^2). Observables are self-adjoint operators. The spectral theorem decomposes observables: A = integral lambda dP(lambda), where P is the projection-valued measure. The Heisenberg uncertainty principle follows from the commutation relation [X, P] = i*hbar*I and the Cauchy-Schwarz inequality.',
+    tags: ['applications'],
+    difficulty: 'hard',
+  },
+];
+<FlashcardDeck
+  deckId="uni-maths-functional-analysis"
+  title="University Maths -- Functional Analysis"
+  description="Banach spaces, Hilbert spaces, bounded operators, fundamental theorems, compact operators, spectral theory, weak convergence"
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
+/>;

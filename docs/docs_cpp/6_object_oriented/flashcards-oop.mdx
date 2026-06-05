@@ -17,110 +17,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: "cpp-oop-001", front: "What is the difference between `class` and
-`struct` in C++?", back: "Both are identical except for default access: `class` defaults to
-`private`, `struct` defaults to `public`. Conventionally, `struct` is used for plain data aggregates
-(POD-like) and `class` for types with encapsulated state and invariants. Both support inheritance,
-member functions, and constructors.", tags: ["class", "struct"], difficulty: "easy" }, { id:
-"cpp-oop-002", front: "What are the three access specifiers in C++?", back: "`public`: accessible
-from anywhere. `protected`: accessible from the class and its derived classes. `private`: accessible
-only from the class itself and friends. Access specifiers apply per-label and affect all members
-declared after that label until the next specifier.", tags: ["access-specifiers"], difficulty:
-"easy" }, { id: "cpp-oop-003", front: "What is a virtual function and how does dynamic dispatch
-work?", back: "A `virtual` function is resolved at runtime through the object's vtable (virtual
-method table). Each polymorphic class has a vtable; each object has a vptr pointing to it.
-Overriding in derived classes uses the same signature. Enables runtime polymorphism through base
-pointers/references.", tags: ["virtual-functions", "vtable"], difficulty: "easy" }, { id:
-"cpp-oop-004", front: "What is a pure virtual function and what does it make the class?", back: "A
-pure virtual function is declared with `= 0`: `virtual void draw() = 0;`. It has no implementation
-in the declaring class, making the class **abstract** -- it cannot be instantiated directly. Derived
-classes must override all pure virtual functions to become concrete (instantiable).", tags:
-["abstract-classes", "pure-virtual"], difficulty: "easy" }, { id: "cpp-oop-005", front: "What do the
-`override` and `final` keywords do?", back: "`override` (C++11): explicitly marks a function as
-overriding a base class virtual function. Compiler error if no base function matches. `final`: on a
-virtual function, prevents further overriding in derived classes. On a class, prevents inheritance
-entirely. Catches bugs at compile time.", tags: ["override", "final", "c++11"], difficulty: "easy"
-}, { id: "cpp-oop-006", front: "What are the five types of constructors in C++?", back:
-"**Default**: no arguments. **Parameterized**: takes arguments. **Copy**: `T(const T&)`, creates
-from existing object. **Move**: `T(T&&)`, transfers ownership (C++11). **Delegating**: constructor
-calls another constructor of the same class (C++11): `Widget(int x) : Widget(x, 0) {}`.", tags:
-["constructors"], difficulty: "medium" }, { id: "cpp-oop-007", front: "Why should base class
-destructors be virtual?", back: "If a derived object is destroyed through a base pointer and the
-base destructor is non-virtual, only the base destructor runs (object slicing), leaking derived
-resources. Making the base destructor `virtual` ensures the correct derived destructor is called via
-dynamic dispatch. Rule: if a class has any virtual function, its destructor should be virtual.",
-tags: ["virtual-destructor", "destructor", "polymorphism"], difficulty: "medium" }, { id:
-"cpp-oop-008", front: "What is encapsulation and how does C++ enforce it?", back: "Encapsulation
-bundles data with the methods that operate on it and restricts direct access to internal state. C++
-enforces this via `private`/`protected` members with `public` accessor/mutator methods. Invariants
-can be checked in setters and class methods, preventing invalid states.", tags: ["encapsulation",
-"access-specifiers"], difficulty: "medium" }, { id: "cpp-oop-009", front: "What is the difference
-between runtime and compile-time polymorphism in C++?", back: "**Runtime polymorphism**: virtual
-functions, resolved via vtable at runtime (dynamic dispatch). Overhead per call. **Compile-time
-polymorphism**: templates, function overloading, CRTP. Resolved at compile time, zero runtime
-overhead. Prefer compile-time when the set of types is known at compile time.", tags:
-["polymorphism", "templates", "virtual-functions"], difficulty: "medium" }, { id: "cpp-oop-010",
-front: "What is operator overloading and how do you overload `operator+`?", back: "Operator
-overloading defines custom behavior for built-in operators on user-defined types. As a member:
-`Vector Vector::operator+(const Vector& rhs) const`. As a non-member (preferred for symmetry):
-`Vector operator+(const Vector& a, const Vector& b)`. Cannot change precedence, arity, or invent new
-operators.", tags: ["operator-overloading"], difficulty: "medium" }, { id: "cpp-oop-011", front:
-"What are conversion operators and how are they declared?", back: "A conversion operator enables
-implicit conversion from a class to another type: `operator int() const { return value_; }`. To
-prevent unintended implicit conversions, mark them `explicit` (C++11):
-`explicit operator bool() const`. `explicit bool` allows contextual conversion (if-conditions,
-while-loops) but not implicit conversion.", tags: ["conversion-operators", "explicit"], difficulty:
-"medium" }, { id: "cpp-oop-012", front: "What is a friend function and when should you use
-`friend`?", back: "A `friend` function or class is granted access to `private` and `protected`
-members of the declaring class. Declared inside the class with `friend`. Common uses: overloading
-`<<` and `>>` for iostream, factory functions, and tight coupling between cooperating classes.
-Friendship is not inherited or transitive.", tags: ["friend", "access"], difficulty: "medium" }, {
-id: "cpp-oop-013", front: "How do SOLID principles apply to C++ class design?", back: "**S** --
-Single Responsibility: one reason to change per class. **O** -- Open/Closed: extend via
-inheritance/templates, not modification. **L** -- Liskov Substitution: derived types substitutable
-for base. **I** -- Interface Segregation: small, focused interfaces. **D** -- Dependency Inversion:
-depend on abstractions, not concretions.", tags: ["solid", "design-principles"], difficulty:
-"medium" }, { id: "cpp-oop-014", front: "What is a delegating constructor and what problem does it
-solve?", back: "A delegating constructor (C++11) calls another constructor of the same class in its
-initializer list: `Widget() : Widget(0, \"default\") {}`. Eliminates code duplication in constructor
-overloads. A delegating constructor cannot have other member initializers -- only the delegated
-constructor initializes members.", tags: ["constructors", "delegating", "c++11"], difficulty:
-"medium" }, { id: "cpp-oop-015", front: "What is the diamond problem in C++ multiple inheritance and
-how is it resolved?", back: "The diamond problem occurs when a class D inherits from B and C, which
-both inherit from A. D has two copies of A's members, causing ambiguity. Solved with **virtual
-inheritance**: `class B : virtual public A`. This ensures only one shared instance of A's base
-subobject exists in D.", tags: ["multiple-inheritance", "virtual-inheritance", "diamond-problem"],
-difficulty: "hard" }, { id: "cpp-oop-016", front: "What is the pimpl (pointer to implementation)
-idiom?", back: "Hide private implementation details behind a forward-declared struct pointer: in the
-header, `class Widget { std::unique_ptr<Impl> pImpl; };`. Define `Impl` in the .cpp file. Reduces
-compilation dependencies (no need to include implementation headers), improves encapsulation, and
-enables ABI stability.", tags: ["pimpl", "idioms", "compilation-firewall"], difficulty: "hard" }, {
-id: "cpp-oop-017", front: "What is virtual inheritance and how does it affect construction order?",
-back: "Virtual inheritance (`class B : virtual public A`) ensures a single shared base class
-subobject in a diamond hierarchy. The virtual base is constructed by the **most derived class**, not
-the intermediate classes. Its constructor is called first, before non-virtual bases. Construction
-order: virtual base, then direct base classes in declaration order.", tags: ["virtual-inheritance",
-"construction-order", "multiple-inheritance"], difficulty: "hard" }, { id: "cpp-oop-018", front:
-"How does the copy-and-swap idiom provide a strong exception-safe assignment operator?", back:
-"Implement `swap` as a non-throwing member. The copy assignment operator takes its parameter by
-value (copy is made). Modify the copy; if it throws, `*this` is unmodified. Then
-`swap(*this, other)` the copy into `*this`. The old state is destroyed when the parameter (holding
-old data) destructs. Strong guarantee with a single `noexcept` swap.", tags: ["copy-and-swap",
-"exception-safety", "idioms"], difficulty: "hard" }, { id: "cpp-oop-019", front: "What is the Liskov
-Substitution Principle and how does it apply to C++ inheritance?", back: "Objects of a derived type
-must be substitutable for objects of the base type without breaking program correctness. Violations
-in C++ include: overriding methods that narrow preconditions, widen postconditions, or throw
-exceptions not thrown by the base. `override` helps catch signature mismatches at compile time.",
-tags: ["solid", "lsp", "inheritance"], difficulty: "hard" }, { id: "cpp-oop-020", front: "What is
-the cost of virtual dispatch and when does it matter?", back: "Each virtual call involves an
-indirect memory access through the vptr and vtable (typically 1-2 extra memory reads). This prevents
-inlining and branch prediction optimization. Matters in hot loops, tight game physics, or embedded
-systems. Mitigate with: `final` (devirtualization), CRTP (static dispatch), or `constexpr`.", tags:
-["performance", "vtable", "virtual-functions"], difficulty: "hard" }, ];
+export const flashcards1 = [
+  {
+    id: 'cpp-oop-001',
+    front: 'What is the difference between `class` and `struct` in C++?',
+    back: 'Both are identical except for default access: `class` defaults to `private`, `struct` defaults to `public`. Conventionally, `struct` is used for plain data aggregates (POD-like) and `class` for types with encapsulated state and invariants. Both support inheritance, member functions, and constructors.',
+    tags: ['class', 'struct'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cpp-oop-002',
+    front: 'What are the three access specifiers in C++?',
+    back: '`public`: accessible from anywhere. `protected`: accessible from the class and its derived classes. `private`: accessible only from the class itself and friends. Access specifiers apply per-label and affect all members declared after that label until the next specifier.',
+    tags: ['access-specifiers'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cpp-oop-003',
+    front: 'What is a virtual function and how does dynamic dispatch work?',
+    back: "A `virtual` function is resolved at runtime through the object's vtable (virtual method table). Each polymorphic class has a vtable; each object has a vptr pointing to it. Overriding in derived classes uses the same signature. Enables runtime polymorphism through base pointers/references.",
+    tags: ['virtual-functions', 'vtable'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cpp-oop-004',
+    front: 'What is a pure virtual function and what does it make the class?',
+    back: 'A pure virtual function is declared with `= 0`: `virtual void draw() = 0;`. It has no implementation in the declaring class, making the class **abstract** -- it cannot be instantiated directly. Derived classes must override all pure virtual functions to become concrete (instantiable).',
+    tags: ['abstract-classes', 'pure-virtual'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cpp-oop-005',
+    front: 'What do the `override` and `final` keywords do?',
+    back: '`override` (C++11): explicitly marks a function as overriding a base class virtual function. Compiler error if no base function matches. `final`: on a virtual function, prevents further overriding in derived classes. On a class, prevents inheritance entirely. Catches bugs at compile time.',
+    tags: ['override', 'final', 'c++11'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'cpp-oop-006',
+    front: 'What are the five types of constructors in C++?',
+    back: '**Default**: no arguments. **Parameterized**: takes arguments. **Copy**: `T(const T&)`, creates from existing object. **Move**: `T(T&&)`, transfers ownership (C++11). **Delegating**: constructor calls another constructor of the same class (C++11): `Widget(int x) : Widget(x, 0) {}`.',
+    tags: ['constructors'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-007',
+    front: 'Why should base class destructors be virtual?',
+    back: 'If a derived object is destroyed through a base pointer and the base destructor is non-virtual, only the base destructor runs (object slicing), leaking derived resources. Making the base destructor `virtual` ensures the correct derived destructor is called via dynamic dispatch. Rule: if a class has any virtual function, its destructor should be virtual.',
+    tags: ['virtual-destructor', 'destructor', 'polymorphism'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-008',
+    front: 'What is encapsulation and how does C++ enforce it?',
+    back: 'Encapsulation bundles data with the methods that operate on it and restricts direct access to internal state. C++ enforces this via `private`/`protected` members with `public` accessor/mutator methods. Invariants can be checked in setters and class methods, preventing invalid states.',
+    tags: ['encapsulation', 'access-specifiers'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-009',
+    front: 'What is the difference between runtime and compile-time polymorphism in C++?',
+    back: '**Runtime polymorphism**: virtual functions, resolved via vtable at runtime (dynamic dispatch). Overhead per call. **Compile-time polymorphism**: templates, function overloading, CRTP. Resolved at compile time, zero runtime overhead. Prefer compile-time when the set of types is known at compile time.',
+    tags: ['polymorphism', 'templates', 'virtual-functions'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-010',
+    front: 'What is operator overloading and how do you overload `operator+`?',
+    back: 'Operator overloading defines custom behavior for built-in operators on user-defined types. As a member: `Vector Vector::operator+(const Vector& rhs) const`. As a non-member (preferred for symmetry): `Vector operator+(const Vector& a, const Vector& b)`. Cannot change precedence, arity, or invent new operators.',
+    tags: ['operator-overloading'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'cpp-oop-011',
+    front: 'What are conversion operators and how are they declared?',
+    back: 'A conversion operator enables implicit conversion from a class to another type: `operator int() const { return value_; }`. To prevent unintended implicit conversions, mark them `explicit` (C++11): `explicit operator bool() const`. `explicit bool` allows contextual conversion (if-conditions, while-loops) but not implicit conversion.',
+    tags: ['conversion-operators', 'explicit'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-012',
+    front: 'What is a friend function and when should you use `friend`?',
+    back: 'A `friend` function or class is granted access to `private` and `protected` members of the declaring class. Declared inside the class with `friend`. Common uses: overloading `<<` and `>>` for iostream, factory functions, and tight coupling between cooperating classes. Friendship is not inherited or transitive.',
+    tags: ['friend', 'access'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-013',
+    front: 'How do SOLID principles apply to C++ class design?',
+    back: '**S** -- Single Responsibility: one reason to change per class. **O** -- Open/Closed: extend via inheritance/templates, not modification. **L** -- Liskov Substitution: derived types substitutable for base. **I** -- Interface Segregation: small, focused interfaces. **D** -- Dependency Inversion: depend on abstractions, not concretions.',
+    tags: ['solid', 'design-principles'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-014',
+    front: 'What is a delegating constructor and what problem does it solve?',
+    back: 'A delegating constructor (C++11) calls another constructor of the same class in its initializer list: `Widget() : Widget(0, "default") {}`. Eliminates code duplication in constructor overloads. A delegating constructor cannot have other member initializers -- only the delegated constructor initializes members.',
+    tags: ['constructors', 'delegating', 'c++11'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cpp-oop-015',
+    front: 'What is the diamond problem in C++ multiple inheritance and how is it resolved?',
+    back: "The diamond problem occurs when a class D inherits from B and C, which both inherit from A. D has two copies of A's members, causing ambiguity. Solved with **virtual inheritance**: `class B : virtual public A`. This ensures only one shared instance of A's base subobject exists in D.",
+    tags: ['multiple-inheritance', 'virtual-inheritance', 'diamond-problem'],
+    difficulty: 'hard',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'cpp-oop-016',
+    front: 'What is the pimpl (pointer to implementation) idiom?',
+    back: 'Hide private implementation details behind a forward-declared struct pointer: in the header, `class Widget { std::unique_ptr<Impl> pImpl; };`. Define `Impl` in the .cpp file. Reduces compilation dependencies (no need to include implementation headers), improves encapsulation, and enables ABI stability.',
+    tags: ['pimpl', 'idioms', 'compilation-firewall'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'cpp-oop-017',
+    front: 'What is virtual inheritance and how does it affect construction order?',
+    back: 'Virtual inheritance (`class B : virtual public A`) ensures a single shared base class subobject in a diamond hierarchy. The virtual base is constructed by the **most derived class**, not the intermediate classes. Its constructor is called first, before non-virtual bases. Construction order: virtual base, then direct base classes in declaration order.',
+    tags: ['virtual-inheritance', 'construction-order', 'multiple-inheritance'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'cpp-oop-018',
+    front: 'How does the copy-and-swap idiom provide a strong exception-safe assignment operator?',
+    back: 'Implement `swap` as a non-throwing member. The copy assignment operator takes its parameter by value (copy is made). Modify the copy; if it throws, `*this` is unmodified. Then `swap(*this, other)` the copy into `*this`. The old state is destroyed when the parameter (holding old data) destructs. Strong guarantee with a single `noexcept` swap.',
+    tags: ['copy-and-swap', 'exception-safety', 'idioms'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'cpp-oop-019',
+    front: 'What is the Liskov Substitution Principle and how does it apply to C++ inheritance?',
+    back: 'Objects of a derived type must be substitutable for objects of the base type without breaking program correctness. Violations in C++ include: overriding methods that narrow preconditions, widen postconditions, or throw exceptions not thrown by the base. `override` helps catch signature mismatches at compile time.',
+    tags: ['solid', 'lsp', 'inheritance'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'cpp-oop-020',
+    front: 'What is the cost of virtual dispatch and when does it matter?',
+    back: 'Each virtual call involves an indirect memory access through the vptr and vtable (typically 1-2 extra memory reads). This prevents inlining and branch prediction optimization. Matters in hot loops, tight game physics, or embedded systems. Mitigate with: `final` (devirtualization), CRTP (static dispatch), or `constexpr`.',
+    tags: ['performance', 'vtable', 'virtual-functions'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="cpp-oop"
   title="C++ Object-Oriented Programming Flashcards"
   description="Interactive flashcards on C++ OOP: classes, inheritance, virtual functions, polymorphism, constructors, operator overloading, SOLID, and pimpl idiom."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

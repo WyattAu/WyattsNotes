@@ -18,257 +18,178 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'clm-1', front: 'Describe the three-cell model of atmospheric
-circulation, naming the three cells and their locations.', back: "The three-cell model explains
-global atmospheric circulation based on differential heating: (1) Hadley Cell (0-30 degrees
-latitude): warm air rises at the equator (ITCZ), moves poleward aloft, descends at 30 degrees,
-creating subtropical high-pressure zones and trade winds at the surface. (2) Ferrel Cell (30-60
-degrees): thermally indirect cell; air descends at 30 degrees, moves poleward at the surface
-(westerlies), rises at 60 degrees. (3) Polar Cell (60-90 degrees): cold air descends at the poles,
-moves equatorward at the surface (polar easterlies), rises at 60 degrees. Together these cells
-redistribute heat from the equator to the poles and drive major wind patterns. They explain the
-distribution of the world's major deserts at 30 degrees (descending, dry air) and rainfall at the
-equator and 60 degrees (rising, moist air).", tags: ['atmospheric-circulation', 'three-cell-model'],
-difficulty: 'medium', }, { id: 'clm-2', front: 'Describe the ITCZ, trade winds, westerlies, and
-polar easterlies. How do these pressure belts and wind patterns influence global climates?', back:
-'ITCZ (Intertropical Convergence Zone): belt of low pressure near the equator where the NE and SE
-trade winds converge; rising air causes heavy convective rainfall (wet tropics). Migrates
-north/south with the seasons. Trade winds: surface winds blowing from subtropical high-pressure
-belts (30 degrees) towards the equator -- NE in Northern Hemisphere, SE in Southern Hemisphere.
-Reliable, bring moisture to tropical east coasts. Westerlies: surface winds from 30 degrees to 60
-degrees, blowing from SW in NH and NW in SH. Bring variable weather and precipitation to
-mid-latitudes. Polar easterlies: cold, dry winds from polar high pressure (90 degrees) towards 60
-degrees low pressure. These patterns determine precipitation belts: wet at equator (ITCZ), dry at 30
-degrees (deserts), wet at 60 degrees (frontal rainfall).', tags: ['pressure-belts',
-'wind-patterns'], difficulty: 'medium', }, { id: 'clm-3', front: 'Explain what jet streams and
-Rossby waves are and how they influence weather patterns.', back: 'Jet streams are narrow bands of
-fast-moving air (up to 400 km/h) in the upper troposphere (9-12 km altitude) at the boundaries
-between air masses of different temperatures. The Polar Front Jet Stream flows between the Ferrel
-and Polar cells (~60 degrees latitude); the Subtropical Jet Stream flows near 30 degrees. Rossby
-waves are large-scale meanders in the jet stream caused by the Coriolis effect acting on north-south
-air flow. They have a wavelength of 4,000-6,000 km and move eastward around the planet. When Rossby
-waves amplify (larger north-south excursions), they bring cold polar air southward and warm tropical
-air northward, causing extreme weather events (e.g. the 2021 Texas freeze caused by an amplified
-polar vortex with a large Rossby wave bringing Arctic air far south). Climate change is linked to
-increased Rossby wave amplification due to Arctic warming reducing the temperature gradient that
-drives the jet stream.', tags: ['jet-streams', 'Rossby-waves'], difficulty: 'hard', }, { id:
-'clm-4', front: 'Distinguish between surface ocean currents and thermohaline circulation (AMOC). How
-do they redistribute heat globally?', back: 'Surface currents: driven by wind (trade winds,
-westerlies) and the Coriolis effect, flowing in circular patterns (gyres) in each ocean basin. Warm
-currents flow poleward (e.g. Gulf Stream, Kuroshio), cold currents flow equatorward (e.g. Canary
-Current, Humboldt Current). They transfer heat from equator to poles, moderating coastal climates
-(e.g. Gulf Stream keeps NW Europe 5-10 degrees C warmer than comparable latitudes). Thermohaline
-circulation (THC/AMOC -- Atlantic Meridional Overturning Circulation): deep ocean circulation driven
-by density differences from temperature (thermo) and salinity (haline). Cold, salty water sinks in
-the North Atlantic, flows south along the ocean floor, eventually upwelling in the Indian and
-Pacific Oceans. This "global conveyor belt" moves water around all ocean basins over ~1,000 years,
-distributing heat and dissolved gases. AMOC has weakened by ~15% since 1950; a full collapse would
-cool NW Europe by 5-10 degrees C.', tags: ['ocean-currents', 'thermohaline', 'AMOC'], difficulty:
-'medium', }, { id: 'clm-5', front: 'Explain ENSO. What are the differences between El Nino and La
-Nina, and what are their global impacts?', back: 'ENSO (El Nino-Southern Oscillation) is a periodic
-fluctuation in sea surface temperature and atmospheric pressure across the equatorial Pacific (2-7
-year cycle). El Nino: warming of the eastern Pacific Ocean (~2-3 degrees C above average). The
-Walker Circulation weakens/reverses; trade winds weaken. Impacts: drought in Australia, Southeast
-Asia, southern Africa; heavy rainfall and flooding in western South America (Peru, Ecuador); milder
-winters in northern USA/Canada; reduced Atlantic hurricane activity; reduced Indian monsoon. La
-Nina: cooling of the eastern Pacific. Trade winds strengthen. Opposite impacts: wetter conditions in
-Australia/SE Asia; drought in South America; enhanced Atlantic hurricanes; increased flooding in
-southern Africa. The 2015-16 El Nino was among the strongest recorded, causing drought affecting 60
-million people globally.', tags: ['ENSO', 'El-Nino', 'La-Nina'], difficulty: 'easy', }, { id:
-'clm-6', front: 'Describe the natural carbon cycle, including the main natural fluxes and carbon
-sinks.', back: 'The carbon cycle is the movement of carbon between the atmosphere, biosphere,
-hydrosphere, and lithosphere. Natural fluxes (exchanges per year): (1) Photosynthesis: plants absorb
-~120 GtC/year from the atmosphere. (2) Respiration: plants, animals, and decomposers release ~120
-GtC/year back. (3) Ocean-atmosphere exchange: oceans absorb ~92 GtC/year and release ~90 GtC/year.
-(4) Volcanic eruptions release ~0.1 GtC/year. Carbon sinks: (1) Oceans -- the largest sink,
-absorbing ~25% of anthropogenic CO2 through dissolution and biological pump. (2) Terrestrial
-biosphere -- forests, soils, and wetlands absorb ~30% of anthropogenic CO2 through photosynthesis
-and soil storage. (3) Lithosphere -- long-term storage in fossil fuels, carbonate rocks, and
-sediments (millions of years). In pre-industrial equilibrium, natural sources and sinks were roughly
-balanced. Anthropogenic emissions (10 GtC/year from fossil fuels + 1.5 GtC/year from land use
-change) now far exceed natural uptake.', tags: ['carbon-cycle', 'natural-fluxes'], difficulty:
-'medium', }, { id: 'clm-7', front: 'Explain natural carbon sequestration methods: afforestation,
-soil carbon management, wetland restoration, and REDD+.', back: "Afforestation/reforestation:
-planting trees absorbs CO2 through photosynthesis (~10 tonnes CO2/ha/year for tropical forests).
-Long-term storage in biomass and soils. Soil carbon management: adopting no-till farming, cover
-cropping, and organic amendments increases soil organic carbon. Globally, soils hold 2-3x more
-carbon than the atmosphere; increasing soil carbon by 0.4%/year could sequester significant amounts.
-Wetland restoration: wetlands (peatlands, mangroves, salt marshes) store carbon at exceptionally
-high rates (peatlands store 30% of soil carbon on 3% of land area). Drainage releases stored carbon;
-restoration reverses this. REDD+ (Reducing Emissions from Deforestation and Forest Degradation): UN
-programme paying developing countries to keep forests standing. Evaluations show mixed results --
-effective in some areas (Brazil's Amazon deforestation fell 80% 2004-2012 under REDD+ policies) but
-enforcement challenges and leakage (deforestation moves elsewhere) remain.", tags: ['sequestration',
-'natural', 'REDD-plus'], difficulty: 'medium', }, { id: 'clm-8', front: 'Explain technological
-carbon sequestration methods: CCS, BECCS, and DAC. How viable are they?', back: 'CCS (Carbon Capture
-and Storage): captures CO2 from point sources (power plants, industrial processes), compresses it,
-and stores it underground in geological formations (depleted oil/gas fields, saline aquifers).
-Currently captures ~40 MtCO2/year globally. Limitations: expensive ($50-100/tCO2), energy-intensive,
-does not address distributed emissions (transport, buildings). BECCS (Bioenergy with CCS): grows
-biomass (absorbs CO2), burns it for energy, captures and stores the CO2 -- theoretically
-net-negative emissions. Required at massive scale in most IPCC 1.5 degrees C pathways (up to 10
-GtCO2/year by 2050), but land and water requirements are enormous. DAC (Direct Air Capture):
-chemical processes that extract CO2 directly from ambient air (e.g. Climeworks Orca plant in
-Iceland, 4,000 tCO2/year). Currently very expensive ($200-600/tCO2) but costs are falling. All three
-face scale-up challenges; DAC is the most promising long-term but least mature technology.', tags:
-['sequestration', 'technology', 'CCS', 'BECCS', 'DAC'], difficulty: 'medium', }, { id: 'clm-9',
-front: 'Explain carbon trading systems (cap and trade, carbon credits) and evaluate their
-effectiveness.', back: 'Cap and trade: a government sets a total cap on emissions and issues
-tradable permits (allowances). Companies that reduce emissions below their allowance can sell
-surplus permits to those exceeding theirs. The EU Emissions Trading System (EU ETS, launched 2005)
-is the largest, covering ~40% of EU emissions. Carbon credits: units representing one tonne of CO2
-equivalent that can be purchased to offset emissions. Generated by emission-reduction projects (e.g.
-tree planting, renewable energy installations). Evaluation: Cap and trade has been effective in the
-EU (emissions from covered sectors fell 35% 2005-2021), but early over-allocation caused low carbon
-prices (the market was reformed in 2019 to tighten the cap). Criticisms: (1) permits can be "banked"
-by companies, allowing continued pollution. (2) Offsets may not represent genuine emission
-reductions (additionality problem). (3) Carbon markets can be volatile. (4) May allow rich companies
-to "buy" the right to pollute rather than reducing emissions.', tags: ['carbon-trading',
-'cap-and-trade'], difficulty: 'easy', }, { id: 'clm-10', front: 'Distinguish between climate change
-mitigation and adaptation, giving two examples of each.', back: 'Mitigation: actions that reduce the
-causes or rate of climate change by reducing greenhouse gas emissions or enhancing carbon sinks.
-Examples: (1) Transition to renewable energy (solar, wind, hydro) replacing fossil fuels. (2)
-Reforestation and afforestation to absorb CO2. (3) Energy efficiency standards for buildings,
-vehicles, and industry. Adaptation: actions that reduce vulnerability to the impacts of climate
-change that are already occurring or are unavoidable. Examples: (1) Building sea walls and flood
-defences to protect coastal cities. (2) Developing drought-resistant crop varieties for agriculture.
-(3) Early warning systems for extreme weather events. Both are necessary: mitigation alone cannot
-prevent all warming (committed warming from past emissions); adaptation alone cannot prevent
-unmanageable impacts. The Paris Agreement recognises both, with a global goal for mitigation and a
-separate adaptation framework.', tags: ['mitigation', 'adaptation'], difficulty: 'easy', }, { id:
-'clm-11', front: 'Describe three major mitigation strategies and assess their potential to reduce
-global emissions.', back: '(1) Renewable energy transition: replacing coal, oil, and gas with solar,
-wind, and hydro. Solar costs fell 89% between 2010 and 2023. Potential: could provide 80%+ of global
-electricity by 2050 under the IEA Net Zero scenario. Limitations: intermittency (solar/wind), energy
-storage needs, land use, and minerals extraction for batteries. (2) Electrification of transport:
-shifting from internal combustion engines to electric vehicles (EVs). EVs now represent 13% of
-global car sales. Potential: transport accounts for 20% of global CO2. Limitations: charging
-infrastructure, battery production emissions, grid capacity. (3) Reforestation: restoring degraded
-forests and planting new ones. Potential: 10 GtCO2/year removal by 2050. Limitations: competition
-with agriculture for land, slow growth (decades for mature trees), fire and climate risks to stored
-carbon.', tags: ['mitigation', 'strategies'], difficulty: 'medium', }, { id: 'clm-12', front:
-'Describe three major adaptation strategies (agricultural, infrastructural, and community-based)
-with examples.', back: 'Agricultural: (1) Drought-resistant and heat-tolerant crop varieties (e.g.
-drought-tolerant maize in Kenya, salt-tolerant rice in Bangladesh). (2) Conservation agriculture --
-minimum tillage, crop rotation, mulching to retain soil moisture. (3) Precision irrigation (drip
-irrigation) to reduce water use by 30-50%. Case study: Niger\'s farmer-managed natural regeneration
-has restored 5 million hectares, increasing crop yields and resilience. Infrastructural: (1) Flood
-defences -- sea walls, levees, storm surge barriers (e.g. Thames Barrier, London; MOSE, Venice). (2)
-Cooling infrastructure -- reflective "cool roofs", urban green spaces to combat heat waves. (3)
-Water storage and desalination for drought-prone areas. Community-based: (1) Early warning systems
-using mobile phones and radio. (2) Community disaster preparedness and evacuation plans. (3)
-Livelihood diversification to reduce climate vulnerability (e.g. Bangladeshi farmers combining crops
-with fish farming).', tags: ['adaptation', 'strategies'], difficulty: 'medium', }, { id: 'clm-13',
-front: 'Explain the key features of the Paris Agreement (2015), including NDCs and the 1.5 vs 2
-degrees C target.', back: "The Paris Agreement (COP21, 2015) was signed by 196 parties and entered
-into force in 2016. Key features: (1) Goal: limit global warming to well below 2 degrees C above
-pre-industrial levels, pursuing efforts to limit to 1.5 degrees C. (2) NDCs (Nationally Determined
-Contributions): each country sets its own emission reduction targets, updated every 5 years with
-increasing ambition (ratchet mechanism). (3) Global stocktake: assessment of collective progress
-every 5 years (first in 2023). (4) Climate finance: developed countries committed to $100
-billion/year to support developing countries' mitigation and adaptation (target not met until 2022).
-(5) Loss and damage: acknowledgement of irreversible climate impacts on vulnerable countries, with a
-dedicated fund agreed at COP27 (2022). The 1.5 vs 2 degrees C distinction is critical: IPCC
-estimates that 1.5 degrees C warming would expose 14% of the global population to severe heatwaves
-every 5 years vs 37% at 2 degrees C; 70-90% of coral reefs lost at 1.5 degrees C vs >99% at 2
-degrees C.", tags: ['Paris-Agreement', 'NDCs', 'COP'], difficulty: 'easy', }, { id: 'clm-14', front:
-'What are COP conferences and why are they significant for global climate governance?', back: 'COP
-(Conference of the Parties) is the annual decision-making body of the UNFCCC (United Nations
-Framework Convention on Climate Change), where all 198 signatory nations meet to negotiate climate
-action. Key COPs: COP3 (1997, Kyoto) -- Kyoto Protocol, binding targets for developed countries (USA
-never ratified). COP15 (2009, Copenhagen) -- Copenhagen Accord, non-binding, widely seen as a
-failure. COP21 (2015, Paris) -- Paris Agreement, the landmark global climate treaty. COP24 (2018,
-Katowice) -- Paris Rulebook for implementation. COP26 (2021, Glasgow) -- Glasgow Climate Pact, first
-COP to reference fossil fuels (phase-down of coal). COP27 (2022, Sharm el-Sheikh) -- Loss and Damage
-Fund agreed. COP28 (2023, Dubai) -- first Global Stocktake, historic agreement to "transition away
-from fossil fuels." Significance: they are the primary forum for setting global climate policy, but
-rely on voluntary national commitments and face challenges of consensus-building among 198 nations
-with divergent interests.', tags: ['COP', 'UNFCCC', 'governance'], difficulty: 'medium', }, { id:
-'clm-15', front: "Using the Netherlands as a case study, explain a country's approach to climate
-change adaptation.", back: 'The Netherlands is one of the world\'s most vulnerable countries to
-climate change: 26% of land is below sea level, 59% susceptible to flooding. Adaptation strategy:
-Delta Programme (launched 2010) with a budget of 20 billion euros to 2050. Key measures: (1) Room
-for the River (2006-2015) -- widened river channels, created floodplains, relocated dikes, lowering
-flood levels by 30-60 cm along major rivers. (2) Maeslantkering storm surge barrier -- protects
-Rotterdam from North Sea surges, the largest moving structure on Earth. (3) Sand nourishment --
-"Building with Nature" approach using sand supplementation to maintain coastal defences rather than
-hard engineering. (4) Floating architecture -- amphibious houses and floating farms in Amsterdam and
-Rotterdam. (5) Urban adaptation -- green roofs, water squares (Benthemplein in Rotterdam that store
-stormwater in heavy rain). The Netherlands demonstrates how long-term, integrated, multi-level
-governance can manage severe climate risk, combining hard and soft engineering with innovative
-spatial planning.', tags: ['case-study', 'Netherlands', 'adaptation'], difficulty: 'hard', }, { id:
-'clm-16', front: 'Explain why the Maldives is particularly vulnerable to climate change and what
-adaptation and mitigation strategies it is pursuing.', back: 'The Maldives (1,192 islands,
-population 540,000) is the flattest country on Earth (maximum elevation 2.4 m). Vulnerabilities: (1)
-Sea-level rise -- 80% of land area is less than 1 m above sea level; a 1 m rise would submerge most
-islands and make them uninhabitable through saltwater intrusion. (2) Coral bleaching -- warming
-oceans threaten reef ecosystems that support tourism and fisheries. (3) Increased storm intensity.
-(4) Freshwater contamination from saltwater intrusion. Adaptation strategies: (1) Hulhumale Island
--- an artificial island reclaimed from the sea at 2 m elevation, designed to relocate populations
-from threatened islands. (2) Floating city (Maldives Floating City, under construction) -- modular
-floating structures on pontoons. (3) Desalination plants and rainwater harvesting for freshwater
-security. (4) Coral reef restoration. Mitigation: committed to carbon neutrality by 2030, solar
-energy expansion, VAT on tourist flights to fund adaptation. The Maldives exemplifies the extreme
-vulnerability of Small Island Developing States (SIDS) and the limits of adaptation.', tags:
-['case-study', 'Maldives', 'SIDS'], difficulty: 'hard', }, { id: 'clm-17', front: "Describe Rwanda's
-green growth strategy as a case study of climate action in a developing country.", back: 'Rwanda has
-pursued an ambitious green growth agenda despite being an LIC. Key elements: (1) National Climate
-Policy and Green Growth Strategy -- targets to reduce GHG emissions by 38% by 2030. (2) Forest
-landscape restoration -- committed to restoring 2 million hectares under the Bonn Challenge; forest
-cover increased from 10% (1994) to 30% (2020). (3) Renewable energy -- hydroelectric power (Rusizi
-Falls), solar farms ( Rwanda has 8.5 MW of solar capacity), and plans for methane extraction from
-Lake Kivu. (4) Ecosystem-based adaptation -- terracing on hillsides to prevent erosion, agroforestry
-combining crops with trees. (5) Sustainable urbanism -- Kigali Green City Masterplan, car-free
-zones, electric motorcycles (Ampersand). (6) Climate finance -- accessing international green funds
-(Green Climate Fund, Adaptation Fund). Challenges: limited financial resources, high dependence on
-agriculture (which is climate-sensitive), and population growth. Rwanda demonstrates that climate
-action can be integrated into a broader development strategy even in a LIC context.', tags:
-['case-study', 'Rwanda', 'green-growth'], difficulty: 'hard', }, { id: 'clm-18', front: 'Explain the
-greenhouse effect. How do greenhouse gases warm the Earth and what are the main anthropogenic
-sources?', back: "The greenhouse effect is the process by which certain gases in the atmosphere trap
-outgoing longwave (infrared) radiation emitted by the Earth's surface, warming the planet. Shortwave
-solar radiation passes through the atmosphere and warms the surface. The surface re-radiates this
-energy as longwave radiation, which is absorbed by greenhouse gases and re-emitted in all directions
-(including back towards the surface), increasing temperature. Main greenhouse gases and
-anthropogenic sources: CO2 (76% of anthropogenic GHGs) -- fossil fuel combustion (73%),
-deforestation (11%), cement production (3%). Methane CH4 (16%) -- agriculture (livestock enteric
-fermentation, rice paddies), fossil fuel extraction, landfills, waste decomposition. Nitrous oxide
-N2O (6%) -- synthetic fertilisers, industrial processes, fossil fuel combustion. Fluorinated gases
-(2%) -- refrigerants, industrial applications. Without the natural greenhouse effect, Earth's
-average temperature would be -18 degrees C; anthropogenic enhancement has increased it to +1.1
-degrees C above pre-industrial (2023).", tags: ['greenhouse-effect', 'GHGs'], difficulty: 'easy', },
-{ id: 'clm-19', front: 'Assess the effectiveness of the Paris Agreement. Is it sufficient to limit
-warming to 1.5 degrees C?', back: 'Achievements: (1) Near-universal participation (196 parties) --
-more inclusive than the Kyoto Protocol. (2) Established the global framework for climate action with
-the 1.5 degrees C goal. (3) Mobilised climate finance (though the $100 billion target was delayed).
-(4) Created accountability through NDCs and the Global Stocktake. Limitations: (1) NDCs are not
-legally binding in terms of their specific targets. (2) Even if all current NDCs were fully
-implemented, warming would reach 2.4-2.8 degrees C by 2100 -- far above 1.5 degrees C. (3)
-Implementation gap: many countries are not on track to meet even their own NDC commitments. (4) The
-ratchet mechanism relies on increasing ambition, but progress has been slow. (5) No enforcement
-mechanism for non-compliance. (6) Fossil fuel subsidies ($7 trillion globally) contradict emission
-reduction goals. Evaluation: the Paris Agreement is an essential framework but insufficient without
-stronger NDCs, faster implementation, phase-out of fossil fuels, and significantly increased climate
-finance. COP28\'s agreement to "transition away from fossil fuels" represents progress but lacks
-binding commitments.', tags: ['Paris-Agreement', 'evaluation', 'effectiveness'], difficulty:
-'medium', }, { id: 'clm-20', front: 'Explain the concept of "loss and damage" in climate change
-negotiations. Why is it controversial and what was agreed at COP27?', back: 'Loss and damage refers
-to the irreversible impacts of climate change that go beyond what can be adapted to, affecting
-vulnerable countries and communities that contributed least to the problem. Types: economic losses
-(destroyed infrastructure, lost crops) and non-economic losses (cultural heritage, biodiversity,
-territory). Why controversial: developed countries (historically responsible for most emissions)
-fear unlimited financial liability; they prefer to frame it as "adaptation." Developing countries
-and small island states argue it is a matter of climate justice -- they suffer the consequences of
-others\' emissions. COP27 (2022) breakthrough: agreement to establish a Loss and Damage Fund, with
-initial pledges exceeding $700 million (from UAE, Germany, UK, USA, etc.). However, the fund is a
-fraction of estimated needs ($400 billion/year by 2030) and details on contributions, governance,
-and eligibility remain contentious. It represents a significant symbolic shift but faces major
-implementation challenges.', tags: ['loss-and-damage', 'COP27', 'climate-justice'], difficulty:
-'hard', }, ];
+export const flashcard1 = [
+  {
+    id: 'clm-1',
+    front:
+      'Describe the three-cell model of atmospheric circulation, naming the three cells and their locations.',
+    back: "The three-cell model explains global atmospheric circulation based on differential heating: (1) Hadley Cell (0-30 degrees latitude): warm air rises at the equator (ITCZ), moves poleward aloft, descends at 30 degrees, creating subtropical high-pressure zones and trade winds at the surface. (2) Ferrel Cell (30-60 degrees): thermally indirect cell; air descends at 30 degrees, moves poleward at the surface (westerlies), rises at 60 degrees. (3) Polar Cell (60-90 degrees): cold air descends at the poles, moves equatorward at the surface (polar easterlies), rises at 60 degrees. Together these cells redistribute heat from the equator to the poles and drive major wind patterns. They explain the distribution of the world's major deserts at 30 degrees (descending, dry air) and rainfall at the equator and 60 degrees (rising, moist air).",
+    tags: ['atmospheric-circulation', 'three-cell-model'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-2',
+    front:
+      'Describe the ITCZ, trade winds, westerlies, and polar easterlies. How do these pressure belts and wind patterns influence global climates?',
+    back: 'ITCZ (Intertropical Convergence Zone): belt of low pressure near the equator where the NE and SE trade winds converge; rising air causes heavy convective rainfall (wet tropics). Migrates north/south with the seasons. Trade winds: surface winds blowing from subtropical high-pressure belts (30 degrees) towards the equator -- NE in Northern Hemisphere, SE in Southern Hemisphere. Reliable, bring moisture to tropical east coasts. Westerlies: surface winds from 30 degrees to 60 degrees, blowing from SW in NH and NW in SH. Bring variable weather and precipitation to mid-latitudes. Polar easterlies: cold, dry winds from polar high pressure (90 degrees) towards 60 degrees low pressure. These patterns determine precipitation belts: wet at equator (ITCZ), dry at 30 degrees (deserts), wet at 60 degrees (frontal rainfall).',
+    tags: ['pressure-belts', 'wind-patterns'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-3',
+    front: 'Explain what jet streams and Rossby waves are and how they influence weather patterns.',
+    back: 'Jet streams are narrow bands of fast-moving air (up to 400 km/h) in the upper troposphere (9-12 km altitude) at the boundaries between air masses of different temperatures. The Polar Front Jet Stream flows between the Ferrel and Polar cells (~60 degrees latitude); the Subtropical Jet Stream flows near 30 degrees. Rossby waves are large-scale meanders in the jet stream caused by the Coriolis effect acting on north-south air flow. They have a wavelength of 4,000-6,000 km and move eastward around the planet. When Rossby waves amplify (larger north-south excursions), they bring cold polar air southward and warm tropical air northward, causing extreme weather events (e.g. the 2021 Texas freeze caused by an amplified polar vortex with a large Rossby wave bringing Arctic air far south). Climate change is linked to increased Rossby wave amplification due to Arctic warming reducing the temperature gradient that drives the jet stream.',
+    tags: ['jet-streams', 'Rossby-waves'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'clm-4',
+    front:
+      'Distinguish between surface ocean currents and thermohaline circulation (AMOC). How do they redistribute heat globally?',
+    back: 'Surface currents: driven by wind (trade winds, westerlies) and the Coriolis effect, flowing in circular patterns (gyres) in each ocean basin. Warm currents flow poleward (e.g. Gulf Stream, Kuroshio), cold currents flow equatorward (e.g. Canary Current, Humboldt Current). They transfer heat from equator to poles, moderating coastal climates (e.g. Gulf Stream keeps NW Europe 5-10 degrees C warmer than comparable latitudes). Thermohaline circulation (THC/AMOC -- Atlantic Meridional Overturning Circulation): deep ocean circulation driven by density differences from temperature (thermo) and salinity (haline). Cold, salty water sinks in the North Atlantic, flows south along the ocean floor, eventually upwelling in the Indian and Pacific Oceans. This "global conveyor belt" moves water around all ocean basins over ~1,000 years, distributing heat and dissolved gases. AMOC has weakened by ~15% since 1950; a full collapse would cool NW Europe by 5-10 degrees C.',
+    tags: ['ocean-currents', 'thermohaline', 'AMOC'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-5',
+    front:
+      'Explain ENSO. What are the differences between El Nino and La Nina, and what are their global impacts?',
+    back: 'ENSO (El Nino-Southern Oscillation) is a periodic fluctuation in sea surface temperature and atmospheric pressure across the equatorial Pacific (2-7 year cycle). El Nino: warming of the eastern Pacific Ocean (~2-3 degrees C above average). The Walker Circulation weakens/reverses; trade winds weaken. Impacts: drought in Australia, Southeast Asia, southern Africa; heavy rainfall and flooding in western South America (Peru, Ecuador); milder winters in northern USA/Canada; reduced Atlantic hurricane activity; reduced Indian monsoon. La Nina: cooling of the eastern Pacific. Trade winds strengthen. Opposite impacts: wetter conditions in Australia/SE Asia; drought in South America; enhanced Atlantic hurricanes; increased flooding in southern Africa. The 2015-16 El Nino was among the strongest recorded, causing drought affecting 60 million people globally.',
+    tags: ['ENSO', 'El-Nino', 'La-Nina'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'clm-6',
+    front: 'Describe the natural carbon cycle, including the main natural fluxes and carbon sinks.',
+    back: 'The carbon cycle is the movement of carbon between the atmosphere, biosphere, hydrosphere, and lithosphere. Natural fluxes (exchanges per year): (1) Photosynthesis: plants absorb ~120 GtC/year from the atmosphere. (2) Respiration: plants, animals, and decomposers release ~120 GtC/year back. (3) Ocean-atmosphere exchange: oceans absorb ~92 GtC/year and release ~90 GtC/year. (4) Volcanic eruptions release ~0.1 GtC/year. Carbon sinks: (1) Oceans -- the largest sink, absorbing ~25% of anthropogenic CO2 through dissolution and biological pump. (2) Terrestrial biosphere -- forests, soils, and wetlands absorb ~30% of anthropogenic CO2 through photosynthesis and soil storage. (3) Lithosphere -- long-term storage in fossil fuels, carbonate rocks, and sediments (millions of years). In pre-industrial equilibrium, natural sources and sinks were roughly balanced. Anthropogenic emissions (10 GtC/year from fossil fuels + 1.5 GtC/year from land use change) now far exceed natural uptake.',
+    tags: ['carbon-cycle', 'natural-fluxes'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-7',
+    front:
+      'Explain natural carbon sequestration methods: afforestation, soil carbon management, wetland restoration, and REDD+.',
+    back: "Afforestation/reforestation: planting trees absorbs CO2 through photosynthesis (~10 tonnes CO2/ha/year for tropical forests). Long-term storage in biomass and soils. Soil carbon management: adopting no-till farming, cover cropping, and organic amendments increases soil organic carbon. Globally, soils hold 2-3x more carbon than the atmosphere; increasing soil carbon by 0.4%/year could sequester significant amounts. Wetland restoration: wetlands (peatlands, mangroves, salt marshes) store carbon at exceptionally high rates (peatlands store 30% of soil carbon on 3% of land area). Drainage releases stored carbon; restoration reverses this. REDD+ (Reducing Emissions from Deforestation and Forest Degradation): UN programme paying developing countries to keep forests standing. Evaluations show mixed results -- effective in some areas (Brazil's Amazon deforestation fell 80% 2004-2012 under REDD+ policies) but enforcement challenges and leakage (deforestation moves elsewhere) remain.",
+    tags: ['sequestration', 'natural', 'REDD-plus'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-8',
+    front:
+      'Explain technological carbon sequestration methods: CCS, BECCS, and DAC. How viable are they?',
+    back: 'CCS (Carbon Capture and Storage): captures CO2 from point sources (power plants, industrial processes), compresses it, and stores it underground in geological formations (depleted oil/gas fields, saline aquifers). Currently captures ~40 MtCO2/year globally. Limitations: expensive ($50-100/tCO2), energy-intensive, does not address distributed emissions (transport, buildings). BECCS (Bioenergy with CCS): grows biomass (absorbs CO2), burns it for energy, captures and stores the CO2 -- theoretically net-negative emissions. Required at massive scale in most IPCC 1.5 degrees C pathways (up to 10 GtCO2/year by 2050), but land and water requirements are enormous. DAC (Direct Air Capture): chemical processes that extract CO2 directly from ambient air (e.g. Climeworks Orca plant in Iceland, 4,000 tCO2/year). Currently very expensive ($200-600/tCO2) but costs are falling. All three face scale-up challenges; DAC is the most promising long-term but least mature technology.',
+    tags: ['sequestration', 'technology', 'CCS', 'BECCS', 'DAC'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-9',
+    front:
+      'Explain carbon trading systems (cap and trade, carbon credits) and evaluate their effectiveness.',
+    back: 'Cap and trade: a government sets a total cap on emissions and issues tradable permits (allowances). Companies that reduce emissions below their allowance can sell surplus permits to those exceeding theirs. The EU Emissions Trading System (EU ETS, launched 2005) is the largest, covering ~40% of EU emissions. Carbon credits: units representing one tonne of CO2 equivalent that can be purchased to offset emissions. Generated by emission-reduction projects (e.g. tree planting, renewable energy installations). Evaluation: Cap and trade has been effective in the EU (emissions from covered sectors fell 35% 2005-2021), but early over-allocation caused low carbon prices (the market was reformed in 2019 to tighten the cap). Criticisms: (1) permits can be "banked" by companies, allowing continued pollution. (2) Offsets may not represent genuine emission reductions (additionality problem). (3) Carbon markets can be volatile. (4) May allow rich companies to "buy" the right to pollute rather than reducing emissions.',
+    tags: ['carbon-trading', 'cap-and-trade'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'clm-10',
+    front:
+      'Distinguish between climate change mitigation and adaptation, giving two examples of each.',
+    back: 'Mitigation: actions that reduce the causes or rate of climate change by reducing greenhouse gas emissions or enhancing carbon sinks. Examples: (1) Transition to renewable energy (solar, wind, hydro) replacing fossil fuels. (2) Reforestation and afforestation to absorb CO2. (3) Energy efficiency standards for buildings, vehicles, and industry. Adaptation: actions that reduce vulnerability to the impacts of climate change that are already occurring or are unavoidable. Examples: (1) Building sea walls and flood defences to protect coastal cities. (2) Developing drought-resistant crop varieties for agriculture. (3) Early warning systems for extreme weather events. Both are necessary: mitigation alone cannot prevent all warming (committed warming from past emissions); adaptation alone cannot prevent unmanageable impacts. The Paris Agreement recognises both, with a global goal for mitigation and a separate adaptation framework.',
+    tags: ['mitigation', 'adaptation'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'clm-11',
+    front:
+      'Describe three major mitigation strategies and assess their potential to reduce global emissions.',
+    back: '(1) Renewable energy transition: replacing coal, oil, and gas with solar, wind, and hydro. Solar costs fell 89% between 2010 and 2023. Potential: could provide 80%+ of global electricity by 2050 under the IEA Net Zero scenario. Limitations: intermittency (solar/wind), energy storage needs, land use, and minerals extraction for batteries. (2) Electrification of transport: shifting from internal combustion engines to electric vehicles (EVs). EVs now represent 13% of global car sales. Potential: transport accounts for 20% of global CO2. Limitations: charging infrastructure, battery production emissions, grid capacity. (3) Reforestation: restoring degraded forests and planting new ones. Potential: 10 GtCO2/year removal by 2050. Limitations: competition with agriculture for land, slow growth (decades for mature trees), fire and climate risks to stored carbon.',
+    tags: ['mitigation', 'strategies'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-12',
+    front:
+      'Describe three major adaptation strategies (agricultural, infrastructural, and community-based) with examples.',
+    back: 'Agricultural: (1) Drought-resistant and heat-tolerant crop varieties (e.g. drought-tolerant maize in Kenya, salt-tolerant rice in Bangladesh). (2) Conservation agriculture -- minimum tillage, crop rotation, mulching to retain soil moisture. (3) Precision irrigation (drip irrigation) to reduce water use by 30-50%. Case study: Niger\'s farmer-managed natural regeneration has restored 5 million hectares, increasing crop yields and resilience. Infrastructural: (1) Flood defences -- sea walls, levees, storm surge barriers (e.g. Thames Barrier, London; MOSE, Venice). (2) Cooling infrastructure -- reflective "cool roofs", urban green spaces to combat heat waves. (3) Water storage and desalination for drought-prone areas. Community-based: (1) Early warning systems using mobile phones and radio. (2) Community disaster preparedness and evacuation plans. (3) Livelihood diversification to reduce climate vulnerability (e.g. Bangladeshi farmers combining crops with fish farming).',
+    tags: ['adaptation', 'strategies'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-13',
+    front:
+      'Explain the key features of the Paris Agreement (2015), including NDCs and the 1.5 vs 2 degrees C target.',
+    back: "The Paris Agreement (COP21, 2015) was signed by 196 parties and entered into force in 2016. Key features: (1) Goal: limit global warming to well below 2 degrees C above pre-industrial levels, pursuing efforts to limit to 1.5 degrees C. (2) NDCs (Nationally Determined Contributions): each country sets its own emission reduction targets, updated every 5 years with increasing ambition (ratchet mechanism). (3) Global stocktake: assessment of collective progress every 5 years (first in 2023). (4) Climate finance: developed countries committed to $100 billion/year to support developing countries' mitigation and adaptation (target not met until 2022). (5) Loss and damage: acknowledgement of irreversible climate impacts on vulnerable countries, with a dedicated fund agreed at COP27 (2022). The 1.5 vs 2 degrees C distinction is critical: IPCC estimates that 1.5 degrees C warming would expose 14% of the global population to severe heatwaves every 5 years vs 37% at 2 degrees C; 70-90% of coral reefs lost at 1.5 degrees C vs >99% at 2 degrees C.",
+    tags: ['Paris-Agreement', 'NDCs', 'COP'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'clm-14',
+    front: 'What are COP conferences and why are they significant for global climate governance?',
+    back: 'COP (Conference of the Parties) is the annual decision-making body of the UNFCCC (United Nations Framework Convention on Climate Change), where all 198 signatory nations meet to negotiate climate action. Key COPs: COP3 (1997, Kyoto) -- Kyoto Protocol, binding targets for developed countries (USA never ratified). COP15 (2009, Copenhagen) -- Copenhagen Accord, non-binding, widely seen as a failure. COP21 (2015, Paris) -- Paris Agreement, the landmark global climate treaty. COP24 (2018, Katowice) -- Paris Rulebook for implementation. COP26 (2021, Glasgow) -- Glasgow Climate Pact, first COP to reference fossil fuels (phase-down of coal). COP27 (2022, Sharm el-Sheikh) -- Loss and Damage Fund agreed. COP28 (2023, Dubai) -- first Global Stocktake, historic agreement to "transition away from fossil fuels." Significance: they are the primary forum for setting global climate policy, but rely on voluntary national commitments and face challenges of consensus-building among 198 nations with divergent interests.',
+    tags: ['COP', 'UNFCCC', 'governance'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-15',
+    front:
+      "Using the Netherlands as a case study, explain a country's approach to climate change adaptation.",
+    back: 'The Netherlands is one of the world\'s most vulnerable countries to climate change: 26% of land is below sea level, 59% susceptible to flooding. Adaptation strategy: Delta Programme (launched 2010) with a budget of 20 billion euros to 2050. Key measures: (1) Room for the River (2006-2015) -- widened river channels, created floodplains, relocated dikes, lowering flood levels by 30-60 cm along major rivers. (2) Maeslantkering storm surge barrier -- protects Rotterdam from North Sea surges, the largest moving structure on Earth. (3) Sand nourishment -- "Building with Nature" approach using sand supplementation to maintain coastal defences rather than hard engineering. (4) Floating architecture -- amphibious houses and floating farms in Amsterdam and Rotterdam. (5) Urban adaptation -- green roofs, water squares (Benthemplein in Rotterdam that store stormwater in heavy rain). The Netherlands demonstrates how long-term, integrated, multi-level governance can manage severe climate risk, combining hard and soft engineering with innovative spatial planning.',
+    tags: ['case-study', 'Netherlands', 'adaptation'],
+    difficulty: 'hard',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'clm-16',
+    front:
+      'Explain why the Maldives is particularly vulnerable to climate change and what adaptation and mitigation strategies it is pursuing.',
+    back: 'The Maldives (1,192 islands, population 540,000) is the flattest country on Earth (maximum elevation 2.4 m). Vulnerabilities: (1) Sea-level rise -- 80% of land area is less than 1 m above sea level; a 1 m rise would submerge most islands and make them uninhabitable through saltwater intrusion. (2) Coral bleaching -- warming oceans threaten reef ecosystems that support tourism and fisheries. (3) Increased storm intensity. (4) Freshwater contamination from saltwater intrusion. Adaptation strategies: (1) Hulhumale Island -- an artificial island reclaimed from the sea at 2 m elevation, designed to relocate populations from threatened islands. (2) Floating city (Maldives Floating City, under construction) -- modular floating structures on pontoons. (3) Desalination plants and rainwater harvesting for freshwater security. (4) Coral reef restoration. Mitigation: committed to carbon neutrality by 2030, solar energy expansion, VAT on tourist flights to fund adaptation. The Maldives exemplifies the extreme vulnerability of Small Island Developing States (SIDS) and the limits of adaptation.',
+    tags: ['case-study', 'Maldives', 'SIDS'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'clm-17',
+    front:
+      "Describe Rwanda's green growth strategy as a case study of climate action in a developing country.",
+    back: 'Rwanda has pursued an ambitious green growth agenda despite being an LIC. Key elements: (1) National Climate Policy and Green Growth Strategy -- targets to reduce GHG emissions by 38% by 2030. (2) Forest landscape restoration -- committed to restoring 2 million hectares under the Bonn Challenge; forest cover increased from 10% (1994) to 30% (2020). (3) Renewable energy -- hydroelectric power (Rusizi Falls), solar farms ( Rwanda has 8.5 MW of solar capacity), and plans for methane extraction from Lake Kivu. (4) Ecosystem-based adaptation -- terracing on hillsides to prevent erosion, agroforestry combining crops with trees. (5) Sustainable urbanism -- Kigali Green City Masterplan, car-free zones, electric motorcycles (Ampersand). (6) Climate finance -- accessing international green funds (Green Climate Fund, Adaptation Fund). Challenges: limited financial resources, high dependence on agriculture (which is climate-sensitive), and population growth. Rwanda demonstrates that climate action can be integrated into a broader development strategy even in a LIC context.',
+    tags: ['case-study', 'Rwanda', 'green-growth'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'clm-18',
+    front:
+      'Explain the greenhouse effect. How do greenhouse gases warm the Earth and what are the main anthropogenic sources?',
+    back: "The greenhouse effect is the process by which certain gases in the atmosphere trap outgoing longwave (infrared) radiation emitted by the Earth's surface, warming the planet. Shortwave solar radiation passes through the atmosphere and warms the surface. The surface re-radiates this energy as longwave radiation, which is absorbed by greenhouse gases and re-emitted in all directions (including back towards the surface), increasing temperature. Main greenhouse gases and anthropogenic sources: CO2 (76% of anthropogenic GHGs) -- fossil fuel combustion (73%), deforestation (11%), cement production (3%). Methane CH4 (16%) -- agriculture (livestock enteric fermentation, rice paddies), fossil fuel extraction, landfills, waste decomposition. Nitrous oxide N2O (6%) -- synthetic fertilisers, industrial processes, fossil fuel combustion. Fluorinated gases (2%) -- refrigerants, industrial applications. Without the natural greenhouse effect, Earth's average temperature would be -18 degrees C; anthropogenic enhancement has increased it to +1.1 degrees C above pre-industrial (2023).",
+    tags: ['greenhouse-effect', 'GHGs'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'clm-19',
+    front:
+      'Assess the effectiveness of the Paris Agreement. Is it sufficient to limit warming to 1.5 degrees C?',
+    back: 'Achievements: (1) Near-universal participation (196 parties) -- more inclusive than the Kyoto Protocol. (2) Established the global framework for climate action with the 1.5 degrees C goal. (3) Mobilised climate finance (though the $100 billion target was delayed). (4) Created accountability through NDCs and the Global Stocktake. Limitations: (1) NDCs are not legally binding in terms of their specific targets. (2) Even if all current NDCs were fully implemented, warming would reach 2.4-2.8 degrees C by 2100 -- far above 1.5 degrees C. (3) Implementation gap: many countries are not on track to meet even their own NDC commitments. (4) The ratchet mechanism relies on increasing ambition, but progress has been slow. (5) No enforcement mechanism for non-compliance. (6) Fossil fuel subsidies ($7 trillion globally) contradict emission reduction goals. Evaluation: the Paris Agreement is an essential framework but insufficient without stronger NDCs, faster implementation, phase-out of fossil fuels, and significantly increased climate finance. COP28\'s agreement to "transition away from fossil fuels" represents progress but lacks binding commitments.',
+    tags: ['Paris-Agreement', 'evaluation', 'effectiveness'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'clm-20',
+    front:
+      'Explain the concept of "loss and damage" in climate change negotiations. Why is it controversial and what was agreed at COP27?',
+    back: 'Loss and damage refers to the irreversible impacts of climate change that go beyond what can be adapted to, affecting vulnerable countries and communities that contributed least to the problem. Types: economic losses (destroyed infrastructure, lost crops) and non-economic losses (cultural heritage, biodiversity, territory). Why controversial: developed countries (historically responsible for most emissions) fear unlimited financial liability; they prefer to frame it as "adaptation." Developing countries and small island states argue it is a matter of climate justice -- they suffer the consequences of others\' emissions. COP27 (2022) breakthrough: agreement to establish a Loss and Damage Fund, with initial pledges exceeding $700 million (from UAE, Germany, UK, USA, etc.). However, the fund is a fraction of estimated needs ($400 billion/year by 2030) and details on contributions, governance, and eligibility remain contentious. It represents a significant symbolic shift but faces major implementation challenges.',
+    tags: ['loss-and-damage', 'COP27', 'climate-justice'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ib-geography-climate"
   title="IB Geography: Climate Change"
   description="Atmospheric systems, carbon cycle, ENSO, Paris Agreement, mitigation and adaptation strategies"
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

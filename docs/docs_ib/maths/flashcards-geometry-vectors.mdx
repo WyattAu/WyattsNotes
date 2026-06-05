@@ -11,103 +11,161 @@ description:
 
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
-const flashcardData = [ { id: "ib-maths-geometry-vectors-001", front: "State the sine rule and
-cosine rule.", back: "Sine rule: a/sin A = b/sin B = c/sin C. Use for finding unknown sides/angles
-when you know an angle-side pair. Cosine rule: a² = b² + c² − 2bc cos A, or cos A = (b² + c² −
-a²)/(2bc). Use when you know all three sides or two sides and the included angle.", tags:
-["trigonometry", "rules"], difficulty: "easy" }, { id: "ib-maths-geometry-vectors-002", front:
-"State the double angle formulas for sin(2A) and cos(2A).", back: "sin(2A) = 2 sin A cos A. cos(2A)
-has three equivalent forms: cos²A − sin²A, 2cos²A − 1, 1 − 2sin²A. Choose the form that simplifies
-your equation. These are essential for solving trigonometric equations in IB Maths HL.", tags:
-["trigonometry", "identities"], difficulty: "medium" }, { id: "ib-maths-geometry-vectors-003",
-front: "How do you add and subtract vectors?", back: "Vector addition: a + b = (a₁ + b₁, a₂ + b₂,
-a₃ + b₃). Component-wise for 2D and 3D. Subtraction: a − b = (a₁ − b₁, a₂ − b₂, a₃ − b₃).
-Geometrically: a + b is the resultant from the tip of a to the tip of b (triangle law), or along the
-diagonal of the parallelogram formed by a and b.", tags: ["vectors", "operations"], difficulty:
-"easy" }, { id: "ib-maths-geometry-vectors-004", front: "State the scalar (dot) product formula in
-component form.", back: "For a = (a₁, a₂, a₃) and b = (b₁, b₂, b₃): a · b = a₁b₁ + a₂b₂ + a₃b₃. The
-result is a scalar (not a vector). Properties: a · b = b · a (commutative), a · (b + c) = a · b + a
-· c (distributive). a · a = |a|². a · b = 0 means a ⊥ b (provided a, b ≠ 0).", tags: ["vectors",
-"dot product"], difficulty: "medium" }, { id: "ib-maths-geometry-vectors-005", front: "State the
-geometric interpretation of the dot product.", back: "a · b = |a||b| cos θ, where θ is the angle
-between vectors a and b. This means: cos θ = (a · b)/(|a||b|). If a · b > 0, the angle is acute (<
-90°). If a · b < 0, the angle is obtuse (> 90°). If a · b = 0, the vectors are perpendicular (θ =
-90°).", tags: ["vectors", "dot product"], difficulty: "medium" }, { id:
-"ib-maths-geometry-vectors-006", front: "State the key properties of the cross product a × b (HL).",
-back: "a × b is a vector perpendicular to both a and b. |a × b| = |a||b| sin θ. Direction:
-right-hand rule. Properties: a × b ≠ b × a (anti-commutative: a × b = −(b × a)). a × a = 0. If a × b
-= 0, then a is parallel to b. Geometrically: |a × b| = area of the parallelogram formed by a and
-b.", tags: ["vectors", "cross product"], difficulty: "hard" }, { id:
-"ib-maths-geometry-vectors-007", front: "How do you calculate the magnitude of a 3D vector?", back:
-"For a = (a₁, a₂, a₃): |a| = √(a₁² + a₂² + a₃²). Example: |(3, 4, 12)| = √(9 + 16 + 144) = √169
-= 13. The magnitude is the length of the vector, always non-negative. The unit vector in the
-direction of a is â = a/|a|.", tags: ["vectors", "magnitude"], difficulty: "easy" }, { id:
-"ib-maths-geometry-vectors-008", front: "What is a unit vector and how is it calculated?", back: "A
-unit vector has magnitude 1. The unit vector in the direction of a (where a ≠ 0) is â = a/|a| =
-(a₁/|a|, a₂/|a|, a₃/|a|). Standard unit vectors: i = (1,0,0), j = (0,1,0), k = (0,0,1). Any vector a
-= a₁i + a₂j + a₃k.", tags: ["vectors", "unit vector"], difficulty: "easy" }, { id:
-"ib-maths-geometry-vectors-009", front: "How do you find the angle between two vectors?", back: "cos
-θ = (a · b)/(|a||b|), so θ = cos⁻¹((a · b)/(|a||b|)). Both vectors are placed tail-to-tail. The
-angle θ is always between 0° and 180°. Example: a = (1,0,0), b = (0,1,0): cos θ = 0/(1×1) = 0, so θ
-= 90°.", tags: ["vectors", "angle"], difficulty: "medium" }, { id: "ib-maths-geometry-vectors-010",
-front: "State the vector equation of a line in 3D.", back: "r = a + tb, where a is the position
-vector of a point on the line, b is the direction vector, and t is a scalar parameter. Parametric
-form: x = a₁ + tb₁, y = a₂ + tb₂, z = a₃ + tb₃. Two lines are parallel if their direction vectors
-are scalar multiples. They intersect if they share a common point.", tags: ["3D geometry", "lines"],
-difficulty: "medium" }, { id: "ib-maths-geometry-vectors-011", front: "How do you find the shortest
-distance from a point to a line in 3D?", back: "Distance = |AP × d|/|d|, where A is a point on the
-line, P is the given point, and d is the direction vector. AP is the vector from A to P. The cross
-product gives a vector perpendicular to the line whose magnitude equals the area of the
-parallelogram. Dividing by |d| gives the perpendicular height = shortest distance.", tags: ["3D
-geometry", "distance"], difficulty: "hard" }, { id: "ib-maths-geometry-vectors-012", front: "State
-the equation of a plane in 3D.", back: "Scalar form: n · r = d, or ax + by + cz = d, where n =
-(a,b,c) is the normal vector and d is a constant. Point-normal form: n · (r − a) = 0, where a is a
-position vector of a known point on the plane. The normal vector n is perpendicular to every
-direction vector lying in the plane.", tags: ["3D geometry", "planes"], difficulty: "medium" }, {
-id: "ib-maths-geometry-vectors-013", front: "How do you find the shortest distance from a point to a
-plane?", back: "Distance = |n · (P − A)|/|n| = |ax₀ + by₀ + cz₀ − d|/√(a²+b²+c²), where P(x₀,y₀,z₀)
-is the point and the plane is ax + by + cz = d. Alternatively: substitute the point coordinates into
-the plane equation and divide by |n|. Example: distance from (1,2,3) to 2x − y + 3z = 8:
-|2(1)−(2)+3(3)−8|/√(4+1+9) = |2−2+9−8|/√14 = 1/√14.", tags: ["3D geometry", "distance"], difficulty:
-"hard" }, { id: "ib-maths-geometry-vectors-014", front: "State the standard equation of a circle and
-identify its components.", back: "(x − a)² + (y − b)² = r², where (a, b) is the centre and r is the
-radius. General form: x² + y² + Dx + Ey + F = 0. Convert by completing the square: (x + D/2)² + (y +
-E/2)² = D²/4 + E²/4 − F. The circle exists only if the RHS > 0.", tags: ["geometry", "circles"],
-difficulty: "easy" }, { id: "ib-maths-geometry-vectors-015", front: "State the formulas for arc
-length and sector area of a circle.", back: "Arc length: l = rθ (θ in radians). Sector area: A =
-(1/2)r²θ. Note: these formulas only work with radians. To convert: 180° = π radians. Full circle: θ
-= 2π, arc = 2πr (circumference), area = πr². Example: arc of 60° in circle of radius 10: θ = π/3, l
-= 10π/3.", tags: ["geometry", "circles"], difficulty: "easy" }, { id:
-"ib-maths-geometry-vectors-016", front: "What are the standard transformation matrices for rotation
-and reflection?", back: "Rotation θ° anticlockwise: [[cos θ, −sin θ],[sin θ, cos θ]]. Reflection in
-x-axis: [[1,0],[0,−1]]. Reflection in y-axis: [[−1,0],[0,1]]. Reflection in y = x: [[0,1],[1,0]].
-Reflection in y = −x: [[0,−1],[−1,0]]. Rotation 90° anticlockwise: [[0,−1],[1,0]]. Rotation 180°:
-[[−1,0],[0,−1]].", tags: ["transformations", "matrices"], difficulty: "medium" }, { id:
-"ib-maths-geometry-vectors-017", front: "How do composite transformations work with matrices?",
-back: "For two transformations M₁ then M₂, the combined transformation matrix is M₂ × M₁ (applied
-right to left). The point is transformed as: M₂M₁v. Example: reflect in y-axis (M₁ = [[−1,0],[0,1]])
-then rotate 90° anticlockwise (M₂ = [[0,−1],[1,0]]): M₂M₁ = [[0,−1],[1,0]][[−1,0],[0,1]] =
-[[0,−1],[−1,0]].", tags: ["transformations", "composite"], difficulty: "hard" }, { id:
-"ib-maths-geometry-vectors-018", front: "How does the determinant of a transformation matrix relate
-to area?", back: "For a 2×2 transformation matrix M = [[a,b],[c,d]], det(M) = ad − bc. |det(M)|
-gives the area scale factor: the ratio of the area of the image to the area of the original shape.
-If det(M) > 0: orientation preserved. If det(M) < 0: orientation reversed (e.g., reflection). If
-det(M) = 0: the transformation collapses area to zero (not invertible).", tags: ["transformations",
-"determinant"], difficulty: "hard" }, { id: "ib-maths-geometry-vectors-019", front: "State the area
-of a triangle using the cross product (HL).", back: "Area of triangle with sides as vectors a and b
-from the same point: Area = (1/2)|a × b|. This follows since |a × b| is the area of the
-parallelogram, and the triangle is half of it. Example: a = (3,0,0), b = (0,4,0): a × b = (0,0,12),
-|a × b| = 12, Area = 6.", tags: ["vectors", "cross product", "area"], difficulty: "hard" }, { id:
-"ib-maths-geometry-vectors-020", front: "How do you find where a line intersects a plane in 3D?",
-back: "Substitute the parametric equations of the line r = a + tb into the plane equation n · r = d.
-Solve for t: n · (a + tb) = d → n · a + t(n · b) = d → t = (d − n · a)/(n · b). If n · b = 0, the
-line is parallel to the plane (no intersection if the point is not on the plane, or the line lies in
-the plane if n · a = d). Substitute t back to find the intersection point.", tags: ["3D geometry",
-"intersection"], difficulty: "hard" } ];
+export const flashcard1 = [
+  {
+    id: 'ib-maths-geometry-vectors-001',
+    front: 'State the sine rule and cosine rule.',
+    back: 'Sine rule: a/sin A = b/sin B = c/sin C. Use for finding unknown sides/angles when you know an angle-side pair. Cosine rule: a² = b² + c² − 2bc cos A, or cos A = (b² + c² − a²)/(2bc). Use when you know all three sides or two sides and the included angle.',
+    tags: ['trigonometry', 'rules'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-002',
+    front: 'State the double angle formulas for sin(2A) and cos(2A).',
+    back: 'sin(2A) = 2 sin A cos A. cos(2A) has three equivalent forms: cos²A − sin²A, 2cos²A − 1, 1 − 2sin²A. Choose the form that simplifies your equation. These are essential for solving trigonometric equations in IB Maths HL.',
+    tags: ['trigonometry', 'identities'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-003',
+    front: 'How do you add and subtract vectors?',
+    back: 'Vector addition: a + b = (a₁ + b₁, a₂ + b₂, a₃ + b₃). Component-wise for 2D and 3D. Subtraction: a − b = (a₁ − b₁, a₂ − b₂, a₃ − b₃). Geometrically: a + b is the resultant from the tip of a to the tip of b (triangle law), or along the diagonal of the parallelogram formed by a and b.',
+    tags: ['vectors', 'operations'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-004',
+    front: 'State the scalar (dot) product formula in component form.',
+    back: 'For a = (a₁, a₂, a₃) and b = (b₁, b₂, b₃): a · b = a₁b₁ + a₂b₂ + a₃b₃. The result is a scalar (not a vector). Properties: a · b = b · a (commutative), a · (b + c) = a · b + a · c (distributive). a · a = |a|². a · b = 0 means a ⊥ b (provided a, b ≠ 0).',
+    tags: ['vectors', 'dot product'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-005',
+    front: 'State the geometric interpretation of the dot product.',
+    back: 'a · b = |a||b| cos θ, where θ is the angle between vectors a and b. This means: cos θ = (a · b)/(|a||b|). If a · b > 0, the angle is acute (< 90°). If a · b < 0, the angle is obtuse (> 90°). If a · b = 0, the vectors are perpendicular (θ = 90°).',
+    tags: ['vectors', 'dot product'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'ib-maths-geometry-vectors-006',
+    front: 'State the key properties of the cross product a × b (HL).',
+    back: 'a × b is a vector perpendicular to both a and b. |a × b| = |a||b| sin θ. Direction: right-hand rule. Properties: a × b ≠ b × a (anti-commutative: a × b = −(b × a)). a × a = 0. If a × b = 0, then a is parallel to b. Geometrically: |a × b| = area of the parallelogram formed by a and b.',
+    tags: ['vectors', 'cross product'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-007',
+    front: 'How do you calculate the magnitude of a 3D vector?',
+    back: 'For a = (a₁, a₂, a₃): |a| = √(a₁² + a₂² + a₃²). Example: |(3, 4, 12)| = √(9 + 16 + 144) = √169 = 13. The magnitude is the length of the vector, always non-negative. The unit vector in the direction of a is â = a/|a|.',
+    tags: ['vectors', 'magnitude'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-008',
+    front: 'What is a unit vector and how is it calculated?',
+    back: 'A unit vector has magnitude 1. The unit vector in the direction of a (where a ≠ 0) is â = a/|a| = (a₁/|a|, a₂/|a|, a₃/|a|). Standard unit vectors: i = (1,0,0), j = (0,1,0), k = (0,0,1). Any vector a = a₁i + a₂j + a₃k.',
+    tags: ['vectors', 'unit vector'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-009',
+    front: 'How do you find the angle between two vectors?',
+    back: 'cos θ = (a · b)/(|a||b|), so θ = cos⁻¹((a · b)/(|a||b|)). Both vectors are placed tail-to-tail. The angle θ is always between 0° and 180°. Example: a = (1,0,0), b = (0,1,0): cos θ = 0/(1×1) = 0, so θ = 90°.',
+    tags: ['vectors', 'angle'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-010',
+    front: 'State the vector equation of a line in 3D.',
+    back: 'r = a + tb, where a is the position vector of a point on the line, b is the direction vector, and t is a scalar parameter. Parametric form: x = a₁ + tb₁, y = a₂ + tb₂, z = a₃ + tb₃. Two lines are parallel if their direction vectors are scalar multiples. They intersect if they share a common point.',
+    tags: ['3D geometry', 'lines'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'ib-maths-geometry-vectors-011',
+    front: 'How do you find the shortest distance from a point to a line in 3D?',
+    back: 'Distance = |AP × d|/|d|, where A is a point on the line, P is the given point, and d is the direction vector. AP is the vector from A to P. The cross product gives a vector perpendicular to the line whose magnitude equals the area of the parallelogram. Dividing by |d| gives the perpendicular height = shortest distance.',
+    tags: ['3D geometry', 'distance'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-012',
+    front: 'State the equation of a plane in 3D.',
+    back: 'Scalar form: n · r = d, or ax + by + cz = d, where n = (a,b,c) is the normal vector and d is a constant. Point-normal form: n · (r − a) = 0, where a is a position vector of a known point on the plane. The normal vector n is perpendicular to every direction vector lying in the plane.',
+    tags: ['3D geometry', 'planes'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-013',
+    front: 'How do you find the shortest distance from a point to a plane?',
+    back: 'Distance = |n · (P − A)|/|n| = |ax₀ + by₀ + cz₀ − d|/√(a²+b²+c²), where P(x₀,y₀,z₀) is the point and the plane is ax + by + cz = d. Alternatively: substitute the point coordinates into the plane equation and divide by |n|. Example: distance from (1,2,3) to 2x − y + 3z = 8: |2(1)−(2)+3(3)−8|/√(4+1+9) = |2−2+9−8|/√14 = 1/√14.',
+    tags: ['3D geometry', 'distance'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-014',
+    front: 'State the standard equation of a circle and identify its components.',
+    back: '(x − a)² + (y − b)² = r², where (a, b) is the centre and r is the radius. General form: x² + y² + Dx + Ey + F = 0. Convert by completing the square: (x + D/2)² + (y + E/2)² = D²/4 + E²/4 − F. The circle exists only if the RHS > 0.',
+    tags: ['geometry', 'circles'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-015',
+    front: 'State the formulas for arc length and sector area of a circle.',
+    back: 'Arc length: l = rθ (θ in radians). Sector area: A = (1/2)r²θ. Note: these formulas only work with radians. To convert: 180° = π radians. Full circle: θ = 2π, arc = 2πr (circumference), area = πr². Example: arc of 60° in circle of radius 10: θ = π/3, l = 10π/3.',
+    tags: ['geometry', 'circles'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'ib-maths-geometry-vectors-016',
+    front: 'What are the standard transformation matrices for rotation and reflection?',
+    back: 'Rotation θ° anticlockwise: [[cos θ, −sin θ],[sin θ, cos θ]]. Reflection in x-axis: [[1,0],[0,−1]]. Reflection in y-axis: [[−1,0],[0,1]]. Reflection in y = x: [[0,1],[1,0]]. Reflection in y = −x: [[0,−1],[−1,0]]. Rotation 90° anticlockwise: [[0,−1],[1,0]]. Rotation 180°: [[−1,0],[0,−1]].',
+    tags: ['transformations', 'matrices'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-017',
+    front: 'How do composite transformations work with matrices?',
+    back: 'For two transformations M₁ then M₂, the combined transformation matrix is M₂ × M₁ (applied right to left). The point is transformed as: M₂M₁v. Example: reflect in y-axis (M₁ = [[−1,0],[0,1]]) then rotate 90° anticlockwise (M₂ = [[0,−1],[1,0]]): M₂M₁ = [[0,−1],[1,0]][[−1,0],[0,1]] = [[0,−1],[−1,0]].',
+    tags: ['transformations', 'composite'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-018',
+    front: 'How does the determinant of a transformation matrix relate to area?',
+    back: 'For a 2×2 transformation matrix M = [[a,b],[c,d]], det(M) = ad − bc. |det(M)| gives the area scale factor: the ratio of the area of the image to the area of the original shape. If det(M) > 0: orientation preserved. If det(M) < 0: orientation reversed (e.g., reflection). If det(M) = 0: the transformation collapses area to zero (not invertible).',
+    tags: ['transformations', 'determinant'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-019',
+    front: 'State the area of a triangle using the cross product (HL).',
+    back: 'Area of triangle with sides as vectors a and b from the same point: Area = (1/2)|a × b|. This follows since |a × b| is the area of the parallelogram, and the triangle is half of it. Example: a = (3,0,0), b = (0,4,0): a × b = (0,0,12), |a × b| = 12, Area = 6.',
+    tags: ['vectors', 'cross product', 'area'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-maths-geometry-vectors-020',
+    front: 'How do you find where a line intersects a plane in 3D?',
+    back: 'Substitute the parametric equations of the line r = a + tb into the plane equation n · r = d. Solve for t: n · (a + tb) = d → n · a + t(n · b) = d → t = (d − n · a)/(n · b). If n · b = 0, the line is parallel to the plane (no intersection if the point is not on the plane, or the line lies in the plane if n · a = d). Substitute t back to find the intersection point.',
+    tags: ['3D geometry', 'intersection'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ib-maths-geometry-vectors"
   title="IB Maths Geometry and Vectors"
   description="Key geometry and vectors concepts for IB Maths SL and HL, including trigonometric identities, 3D geometry, and transformations."
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

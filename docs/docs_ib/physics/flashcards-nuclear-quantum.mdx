@@ -8,7 +8,7 @@ tags: [Physics, IB Physics, Flashcards]
 ---
 
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
-const flashcardData = [
+export const flashcard1 = [
   {
     id: 'ib-phys-nuclear-quantum-001',
     front: "Describe Rutherford's alpha scattering experiment and its conclusions.",
@@ -19,7 +19,7 @@ const flashcardData = [
   {
     id: 'ib-phys-nuclear-quantum-002',
     front: 'Describe the Bohr model of the atom and its key postulates.',
-    back: "1) Electrons orbit the nucleus in fixed energy levels (stationary states) without radiating energy.\n2) Each orbit has a quantised energy: E_n = −13.6/n² eV (hydrogen).\n3) Electrons can jump between levels by absorbing (up) or emitting (down) photons.\n4) Photon energy = energy difference: hf = E_higher − E_lower.\nLimitations: only works for hydrogen; doesn't explain multi-electron atoms or fine structure. Replaced by quantum mechanics.",
+    back: "1) Electrons orbit the nucleus in fixed energy levels (stationary states) without radiating energy. 2) Each orbit has a quantised energy: E_n = −13.6/n² eV (hydrogen). 3) Electrons can jump between levels by absorbing (up) or emitting (down) photons. 4) Photon energy = energy difference: hf = E_higher − E_lower. Limitations: only works for hydrogen; doesn't explain multi-electron atoms or fine structure. Replaced by quantum mechanics.",
     tags: ['nuclear', 'atomic structure'],
     difficulty: 'medium',
   },
@@ -33,7 +33,7 @@ const flashcardData = [
   {
     id: 'ib-phys-nuclear-quantum-004',
     front: 'Define binding energy and binding energy per nucleon.',
-    back: 'Binding energy: the minimum energy required to completely separate a nucleus into its individual protons and neutrons. E_b = Δmc².\nBinding energy per nucleon: E_b / A (where A = mass number). This measures nuclear stability — higher binding energy per nucleon = more stable. Peak is at Fe-56 (~8.8 MeV per nucleon). Nuclei with A < 56 gain stability through fusion; A > 56 through fission.',
+    back: 'Binding energy: the minimum energy required to completely separate a nucleus into its individual protons and neutrons. E_b = Δmc². Binding energy per nucleon: E_b / A (where A = mass number). This measures nuclear stability — higher binding energy per nucleon = more stable. Peak is at Fe-56 (~8.8 MeV per nucleon). Nuclei with A < 56 gain stability through fusion; A > 56 through fission.',
     tags: ['nuclear', 'binding energy'],
     difficulty: 'medium',
   },
@@ -44,31 +44,34 @@ const flashcardData = [
     tags: ['nuclear', 'binding energy curve'],
     difficulty: 'hard',
   },
+];
+
+export const flashcard2 = [
   {
     id: 'ib-phys-nuclear-quantum-006',
     front: 'Explain nuclear fission and state a typical fission equation.',
-    back: 'Fission: a heavy nucleus splits into two lighter nuclei (fragments) plus neutrons, releasing energy. Example: ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3¹₀n + energy.\nEach fission releases ~200 MeV. The released neutrons sustain a chain reaction. Controlled: nuclear power reactors (using moderators and control rods). Uncontrolled: nuclear weapons. Requires critical mass for sustained chain reaction.',
+    back: 'Fission: a heavy nucleus splits into two lighter nuclei (fragments) plus neutrons, releasing energy. Example: ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3¹₀n + energy. Each fission releases ~200 MeV. The released neutrons sustain a chain reaction. Controlled: nuclear power reactors (using moderators and control rods). Uncontrolled: nuclear weapons. Requires critical mass for sustained chain reaction.',
     tags: ['nuclear', 'fission'],
     difficulty: 'hard',
   },
   {
     id: 'ib-phys-nuclear-quantum-007',
     front: 'Explain nuclear fusion and state a typical fusion equation.',
-    back: 'Fusion: two light nuclei combine to form a heavier nucleus, releasing energy. Example: ²₁H + ³₁H → ⁴₂He + ¹₀n + 17.6 MeV.\nFusion powers the Sun and stars (proton-proton chain). Conditions needed: extremely high temperatures (10⁷ K) and pressures to overcome electrostatic repulsion between positively charged nuclei. Advantages over fission: abundant fuel (hydrogen), minimal radioactive waste. Challenge: containing and sustaining the reaction (tokamak, ITER).',
+    back: 'Fusion: two light nuclei combine to form a heavier nucleus, releasing energy. Example: ²₁H + ³₁H → ⁴₂He + ¹₀n + 17.6 MeV. Fusion powers the Sun and stars (proton-proton chain). Conditions needed: extremely high temperatures (10⁷ K) and pressures to overcome electrostatic repulsion between positively charged nuclei. Advantages over fission: abundant fuel (hydrogen), minimal radioactive waste. Challenge: containing and sustaining the reaction (tokamak, ITER).',
     tags: ['nuclear', 'fusion'],
     difficulty: 'hard',
   },
   {
     id: 'ib-phys-nuclear-quantum-008',
     front: 'Describe alpha decay and write the general equation.',
-    back: 'Alpha decay: parent nucleus emits an alpha particle (²₄He). General equation: ˢᵤX → ˢ⁻⁴ᵤ₋₂Y + ⁴₂He.\nAtomic number Z decreases by 2, mass number A decreases by 4. The alpha particle is a helium-4 nucleus (2 protons, 2 neutrons). Alpha particles are heavy, positively charged, have high ionising power but low penetrating power (stopped by paper or few cm of air). Examples: U-238 → Th-234 + α.',
+    back: 'Alpha decay: parent nucleus emits an alpha particle (²₄He). General equation: ˢᵤX → ˢ⁻⁴ᵤ₋₂Y + ⁴₂He. Atomic number Z decreases by 2, mass number A decreases by 4. The alpha particle is a helium-4 nucleus (2 protons, 2 neutrons). Alpha particles are heavy, positively charged, have high ionising power but low penetrating power (stopped by paper or few cm of air). Examples: U-238 → Th-234 + α.',
     tags: ['nuclear', 'decay'],
     difficulty: 'easy',
   },
   {
     id: 'ib-phys-nuclear-quantum-009',
     front: 'Describe beta-minus decay and write the general equation.',
-    back: 'Beta-minus decay: a neutron converts to a proton, emitting an electron and antineutrino. ˢᵤX → ˢᵤ₊₁Y + ⁰₋₁e + ν̄_e.\nAtomic number Z increases by 1, mass number A stays the same. Caused by the weak nuclear force. In the nucleus: n → p + e⁻ + ν̄_e. Beta particles are fast electrons, have moderate ionising power, moderate penetrating power (stopped by aluminium, few mm). Conservation: charge, lepton number, baryon number.',
+    back: 'Beta-minus decay: a neutron converts to a proton, emitting an electron and antineutrino. ˢᵤX → ˢᵤ₊₁Y + ⁰₋₁e + ν̄_e. Atomic number Z increases by 1, mass number A stays the same. Caused by the weak nuclear force. In the nucleus: n → p + e⁻ + ν̄_e. Beta particles are fast electrons, have moderate ionising power, moderate penetrating power (stopped by aluminium, few mm). Conservation: charge, lepton number, baryon number.',
     tags: ['nuclear', 'decay'],
     difficulty: 'medium',
   },
@@ -79,6 +82,9 @@ const flashcardData = [
     tags: ['nuclear', 'decay'],
     difficulty: 'easy',
   },
+];
+
+export const flashcard3 = [
   {
     id: 'ib-phys-nuclear-quantum-011',
     front: 'Define half-life and state the decay equation.',
@@ -89,49 +95,52 @@ const flashcardData = [
   {
     id: 'ib-phys-nuclear-quantum-012',
     front: 'Define decay constant and its relationship to half-life and activity.',
-    back: 'Decay constant λ: the probability per unit time that a nucleus will decay. Units: s⁻¹.\nRelationships: t_½ = ln2/λ. Activity A = λN = λN₀e^(−λt). Activity has units of becquerel (Bq = 1 decay s⁻¹). Activity decreases exponentially with time. After one half-life, activity halves. A larger λ means faster decay and shorter half-life.',
+    back: 'Decay constant λ: the probability per unit time that a nucleus will decay. Units: s⁻¹. Relationships: t_½ = ln2/λ. Activity A = λN = λN₀e^(−λt). Activity has units of becquerel (Bq = 1 decay s⁻¹). Activity decreases exponentially with time. After one half-life, activity halves. A larger λ means faster decay and shorter half-life.',
     tags: ['nuclear', 'decay'],
     difficulty: 'medium',
   },
   {
     id: 'ib-phys-nuclear-quantum-013',
     front: 'State the photoelectric equation and define each term.',
-    back: "Einstein's photoelectric equation: E_k(max) = hf − φ.\nE_k(max) = maximum kinetic energy of emitted photoelectron (J or eV).\nhf = energy of incident photon (h = 6.63 × 10⁻³⁴ J s, f = frequency).\nφ (phi) = work function — minimum energy needed to release an electron from the surface.\nIf hf < φ: no photoelectrons emitted regardless of intensity. If hf > φ: excess energy becomes kinetic energy of the photoelectron.",
+    back: "Einstein's photoelectric equation: E_k(max) = hf − φ. E_k(max) = maximum kinetic energy of emitted photoelectron (J or eV). hf = energy of incident photon (h = 6.63 × 10⁻³⁴ J s, f = frequency). φ (phi) = work function — minimum energy needed to release an electron from the surface. If hf < φ: no photoelectrons emitted regardless of intensity. If hf > φ: excess energy becomes kinetic energy of the photoelectron.",
     tags: ['quantum', 'photoelectric effect'],
     difficulty: 'medium',
   },
   {
     id: 'ib-phys-nuclear-quantum-014',
     front: 'Define work function and threshold frequency.',
-    back: 'Work function (φ): the minimum energy required to remove an electron from the metal surface. It is a property of the specific metal. Units: joules (J) or electron-volts (eV). φ = hf₀ where f₀ = threshold frequency.\nThreshold frequency (f₀): the minimum frequency of light needed to cause photoelectric emission. f₀ = φ/h. Below f₀, no electrons are emitted regardless of intensity. Each metal has a unique work function (e.g. sodium: ~2.3 eV, gold: ~5.1 eV).',
+    back: 'Work function (φ): the minimum energy required to remove an electron from the metal surface. It is a property of the specific metal. Units: joules (J) or electron-volts (eV). φ = hf₀ where f₀ = threshold frequency. Threshold frequency (f₀): the minimum frequency of light needed to cause photoelectric emission. f₀ = φ/h. Below f₀, no electrons are emitted regardless of intensity. Each metal has a unique work function (e.g. sodium: ~2.3 eV, gold: ~5.1 eV).',
     tags: ['quantum', 'photoelectric effect'],
     difficulty: 'medium',
   },
   {
     id: 'ib-phys-nuclear-quantum-015',
     front: 'State the photon energy equation and convert between eV and joules.',
-    back: 'Photon energy: E = hf = hc/λ where c = 3.00 × 10⁸ m s⁻¹.\nConversion: 1 eV = 1.60 × 10⁻¹⁹ J. To convert eV to J: multiply by 1.60 × 10⁻¹⁹. To convert J to eV: divide by 1.60 × 10⁻¹⁹.\nA photon of wavelength 500 nm has energy: E = (6.63 × 10⁻³⁴ × 3.00 × 10⁸)/(500 × 10⁻⁹) = 3.98 × 10⁻¹⁹ J = 2.49 eV. Visible light photons: ~1.8 eV (red) to ~3.1 eV (violet).',
+    back: 'Photon energy: E = hf = hc/λ where c = 3.00 × 10⁸ m s⁻¹. Conversion: 1 eV = 1.60 × 10⁻¹⁹ J. To convert eV to J: multiply by 1.60 × 10⁻¹⁹. To convert J to eV: divide by 1.60 × 10⁻¹⁹. A photon of wavelength 500 nm has energy: E = (6.63 × 10⁻³⁴ × 3.00 × 10⁸)/(500 × 10⁻⁹) = 3.98 × 10⁻¹⁹ J = 2.49 eV. Visible light photons: ~1.8 eV (red) to ~3.1 eV (violet).',
     tags: ['quantum', 'photons'],
     difficulty: 'easy',
   },
+];
+
+export const flashcard4 = [
   {
     id: 'ib-phys-nuclear-quantum-016',
     front: 'State the de Broglie equation and explain its significance.',
-    back: 'de Broglie wavelength: λ = h/p = h/(mv) where h = Planck constant, p = momentum, m = mass, v = velocity.\nSignificance: all matter exhibits wave-like properties with wavelength inversely proportional to momentum. Large objects (e.g. a ball) have negligible de Broglie wavelengths. Electrons at typical speeds have wavelengths comparable to atomic spacings (~0.1 nm), making electron diffraction observable. This is the foundation of wave-particle duality.',
+    back: 'de Broglie wavelength: λ = h/p = h/(mv) where h = Planck constant, p = momentum, m = mass, v = velocity. Significance: all matter exhibits wave-like properties with wavelength inversely proportional to momentum. Large objects (e.g. a ball) have negligible de Broglie wavelengths. Electrons at typical speeds have wavelengths comparable to atomic spacings (~0.1 nm), making electron diffraction observable. This is the foundation of wave-particle duality.',
     tags: ['quantum', 'de Broglie'],
     difficulty: 'hard',
   },
   {
     id: 'ib-phys-nuclear-quantum-017',
     front: 'What evidence supports wave-particle duality?',
-    back: "Wave nature of light: diffraction (single-slit pattern), interference (Young's double slit), polarization.\nParticle nature of light: photoelectric effect (Einstein), Compton scattering.\nWave nature of matter: electron diffraction (Davisson-Germer experiment, 1927). Electrons produced interference patterns when directed through a crystal lattice, confirming de Broglie's hypothesis. Wave-particle duality applies to ALL matter and radiation.",
+    back: "Wave nature of light: diffraction (single-slit pattern), interference (Young's double slit), polarization. Particle nature of light: photoelectric effect (Einstein), Compton scattering. Wave nature of matter: electron diffraction (Davisson-Germer experiment, 1927). Electrons produced interference patterns when directed through a crystal lattice, confirming de Broglie's hypothesis. Wave-particle duality applies to ALL matter and radiation.",
     tags: ['quantum', 'duality'],
     difficulty: 'hard',
   },
   {
     id: 'ib-phys-nuclear-quantum-018',
     front: 'Explain energy level transitions, emission and absorption spectra.',
-    back: 'Emission: electron drops from higher to lower level, emitting a photon of energy hf = E_upper − E_lower. Produces bright lines on a dark background (emission spectrum).\nAbsorption: electron absorbs a photon and jumps from lower to higher level. Photon must have exactly the right energy (hf = ΔE). Produces dark lines on a continuous spectrum (absorption spectrum).\nEach element has a unique set of spectral lines (spectral fingerprint). Hydrogen: Lyman series (to n=1, UV), Balmer (to n=2, visible), Paschen (to n=3, IR).',
+    back: 'Emission: electron drops from higher to lower level, emitting a photon of energy hf = E_upper − E_lower. Produces bright lines on a dark background (emission spectrum). Absorption: electron absorbs a photon and jumps from lower to higher level. Photon must have exactly the right energy (hf = ΔE). Produces dark lines on a continuous spectrum (absorption spectrum). Each element has a unique set of spectral lines (spectral fingerprint). Hydrogen: Lyman series (to n=1, UV), Balmer (to n=2, visible), Paschen (to n=3, IR).',
     tags: ['quantum', 'spectra'],
     difficulty: 'hard',
   },
@@ -150,9 +159,11 @@ const flashcardData = [
     difficulty: 'hard',
   },
 ];
+
 <FlashcardDeck
   deckId="ib-phys-nuclear-quantum"
   title="IB Physics: Nuclear and Quantum Physics"
   description="Atomic structure, mass defect, binding energy, nuclear reactions, radioactive decay, photoelectric effect, wave-particle duality, and energy levels."
-  cards={flashcardData}
-/>;
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
+/>
+;

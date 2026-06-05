@@ -18,129 +18,165 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"ilc-computer-science-001",front:"Name the three main components of the
-CPU and state the function of each.",back:"ALU (Arithmetic Logic Unit): performs arithmetic (add,
-subtract) and logical (AND, OR, NOT) operations. CU (Control Unit): coordinates and controls
-computer operations; decodes instructions and sends control signals. Registers: small, fast storage
-locations within the CPU holding data and instructions being processed (e.g., PC, MAR, MDR,
-accumulator).",tags:["hardware"],difficulty:"easy"},{id:"ilc-computer-science-002",front:"Define a
-variable in programming and list four common data types.",back:"A variable is a named storage
-location in memory that holds a value which can change during program execution. Common data types:
-integer (whole numbers), float/double (decimal numbers), string (text), boolean (true/false). Some
-languages also support char (single character) and array (collection of
-elements).",tags:["programming"],difficulty:"easy"},{id:"ilc-computer-science-003",front:"Compare
-RAM and ROM in terms of volatility, purpose, and contents.",back:"RAM (Random Access Memory):
-volatile (loses data when power off), stores data and programs currently in use, allows both read
-and write operations. ROM (Read Only Memory): non-volatile (retains data without power), stores the
-boot-up instructions (BIOS/firmware), generally read-only. RAM is larger and faster than ROM in
-access speed for dynamic
-data.",tags:["hardware"],difficulty:"easy"},{id:"ilc-computer-science-004",front:"Define LAN and
-WAN. Give an example of each.",back:"LAN (Local Area Network): connects computers within a limited
-area such as a school, office, or building. Covers a small geographical area. Example: a school
-computer lab network. WAN (Wide Area Network): connects computers across large geographical
-distances, often spanning cities or countries. Example: the Internet, connecting millions of devices
-globally.",tags:["networks"],difficulty:"easy"},{id:"ilc-computer-science-005",front:"Define a
-function (procedure/subroutine) in programming and explain why functions are used.",back:"A function
-is a self-contained block of code that performs a specific task and can be called (invoked) from
-other parts of the program. Functions promote code reusability (write once, call many times),
-improve readability by breaking programs into logical sections, make debugging easier by isolating
-tasks, and support modular design and
-abstraction.",tags:["programming"],difficulty:"easy"},{id:"ilc-computer-science-006",front:"Define
-primary key and foreign key in a relational database.",back:"Primary key: a column (or combination
-of columns) that uniquely identifies each record in a table. It cannot contain NULL values and must
-be unique. Example: StudentID in a Students table. Foreign key: a column in one table that
-references the primary key of another table, establishing a relationship between the two tables.
-Example: StudentID in an Enrolments table referencing the Students
-table.",tags:["databases"],difficulty:"easy"},{id:"ilc-computer-science-007",front:"Describe the
-linear search algorithm.",back:"Linear search checks each element in a list sequentially from the
-first to the last until the target value is found or the end of the list is reached. It works on
-both sorted and unsorted lists. Time complexity is O(n) in all cases (best case O(1) if target is
-first). Simple to implement but inefficient for large
-datasets.",tags:["algorithms"],difficulty:"easy"},{id:"ilc-computer-science-008",front:"Describe the
-fetch-decode-execute cycle.",back:"Fetch: the control unit sends the address in the PC (Program
-Counter) to memory via the address bus; the instruction is copied from memory to the MDR (Memory
-Data Register) via the data bus; the PC is incremented. Decode: the instruction in the CIR (Current
-Instruction Register) is decoded by the control unit to determine the operation. Execute: the
-control unit sends signals to relevant components to perform the instruction (e.g., ALU for
-arithmetic).",tags:["hardware"],difficulty:"medium"},{id:"ilc-computer-science-009",front:"Compare a
-while loop and a for loop, including when each is most appropriate.",back:"While loop: condition
-checked before each iteration; continues while condition is true; used when the number of iterations
-is unknown (e.g., reading input until user enters 'quit'). For loop: initialisation, condition
-check, and increment/decrement in one line; used when the number of iterations is known in advance
-(e.g., iterating through an array by index). Both are pre-condition (entry-controlled)
-loops.",tags:["programming"],difficulty:"medium"},{id:"ilc-computer-science-010",front:"List the
-four layers of the TCP/IP model and briefly describe each.",back:"Application layer: provides
-services directly to user applications (HTTP, FTP, SMTP). Transport layer: manages end-to-end
-communication and data integrity (TCP for reliable delivery, UDP for fast delivery). Internet layer:
-handles routing and addressing (IP, ICMP). Network access layer (link layer): handles physical
-transmission over the network medium (Ethernet, Wi-Fi
-frames).",tags:["networks"],difficulty:"medium"},{id:"ilc-computer-science-011",front:"Explain
-normalisation to Third Normal Form (3NF) with an example.",back:"1NF: all attributes contain atomic
-(single) values; each row is unique. 2NF: in 1NF and no partial dependencies (non-key attributes
-depend on the entire primary key, not just part of it). 3NF: in 2NF and no transitive dependencies
-(non-key attributes depend only on the primary key, not on other non-key attributes). Example:
-removing StudentAddress from an Enrolments table into a separate Students table eliminates
-transitive
-dependency.",tags:["databases"],difficulty:"medium"},{id:"ilc-computer-science-012",front:"Describe
-the binary search algorithm and state its precondition.",back:"Binary search finds a target value in
-a sorted array by repeatedly dividing the search range in half. Compare the target with the middle
-element; if equal, found. If target is less, search the left half. If target is greater, search the
-right half. Repeat until found or range is empty. Precondition: the data must be sorted. Time
-complexity: O(log n), much faster than linear search for large sorted
-datasets.",tags:["algorithms"],difficulty:"medium"},{id:"ilc-computer-science-013",front:"Describe
-three network topologies: star, bus, and ring.",back:"Star: all devices connect to a central
-hub/switch; failure of one device does not affect others, but hub failure brings down the network.
-Bus: all devices share a single backbone cable; simple and cheap, but a single cable fault affects
-all devices. Ring: devices connected in a circular loop; data travels in one direction; failure of
-one device can disrupt the entire network unless dual-ring is
-used.",tags:["networks"],difficulty:"medium"},{id:"ilc-computer-science-014",front:"Explain what an
-array is and describe three common operations performed on arrays.",back:"An array is a data
-structure that stores a fixed number of elements of the same data type in contiguous memory
-locations, accessed by index. Operations: (1) Access: read/write an element at a given index, O(1).
-(2) Traversal: visit each element sequentially, O(n). (3) Insertion/Deletion: add or remove
-elements; may require shifting, O(n). Arrays are fundamental for storing collections of related
-data.",tags:["programming"],difficulty:"medium"},{id:"ilc-computer-science-015",front:"Write an SQL
-query using INNER JOIN to display student names and their enrolled course names.",back:"SELECT
-Students.StudentName, Courses.CourseName FROM Students INNER JOIN Enrolments ON Students.StudentID =
-Enrolments.StudentID INNER JOIN Courses ON Enrolments.CourseID = Courses.CourseID; INNER JOIN
-returns only rows where there is a match in both tables. LEFT JOIN would return all students even if
-not enrolled in any
-course.",tags:["databases"],difficulty:"medium"},{id:"ilc-computer-science-016",front:"Describe the
-bubble sort algorithm and state its time complexity.",back:"Bubble sort repeatedly steps through the
-list, compares adjacent elements, and swaps them if they are in the wrong order. Each pass bubbles
-the largest unsorted element to its correct position. The algorithm repeats until no swaps are
-needed, indicating the list is sorted. Time complexity: O(n squared) in average and worst case, O(n)
-in best case (already sorted). Simple but inefficient for large
-datasets.",tags:["algorithms"],difficulty:"medium"},{id:"ilc-computer-science-017",front:"Compare
-input devices, output devices, and storage devices with two examples of each.",back:"Input devices:
-send data to the computer. Examples: keyboard (text entry), mouse (pointing and clicking). Output
-devices: present data from the computer. Examples: monitor (visual display), printer (hard copy).
-Storage devices: save data permanently or semi-permanently. Examples: HDD (magnetic, large
-capacity), SSD (flash memory, faster access). Some devices are both input and output, e.g.,
-touchscreen.",tags:["hardware"],difficulty:"medium"},{id:"ilc-computer-science-018",front:"Explain
-Big O notation and state the time complexity of linear search, binary search, bubble sort, and merge
-sort.",back:"Big O notation describes the upper bound of an algorithm's time or space requirements
-as input size n grows. Linear search: O(n). Binary search: O(log n). Bubble sort: O(n squared).
-Merge sort: O(n log n). Big O focuses on the dominant term as n approaches infinity, ignoring
-constants and lower-order terms. It helps compare algorithm efficiency independent of
-hardware.",tags:["algorithms"],difficulty:"hard"},{id:"ilc-computer-science-019",front:"Compare
-symmetric and asymmetric encryption, including a common algorithm for each.",back:"Symmetric
-encryption: same key used to encrypt and decrypt data; fast; key distribution is a security
-challenge. Algorithm: AES (Advanced Encryption Standard). Asymmetric encryption: uses a public key
-(to encrypt) and a private key (to decrypt); slower but solves key distribution; enables digital
-signatures. Algorithm: RSA. Hybrid systems often combine both: asymmetric encryption exchanges a
-symmetric session key, then symmetric encryption handles data
-transfer.",tags:["networks"],difficulty:"hard"},{id:"ilc-computer-science-020",front:"Explain the
-concept of recursion in programming, including the base case and the recursive
-case.",back:"Recursion is when a function calls itself to solve a smaller instance of the same
-problem. Every recursive function must have a base case (termination condition that stops recursion)
-and a recursive case (where the function calls itself with modified parameters). Without a base
-case, the recursion continues infinitely, causing a stack overflow. Example: factorial(n) = n \*
-factorial(n-1) with base case factorial(0) = 1.",tags:["programming"],difficulty:"hard"}];
+export const flashcard1 = [
+  {
+    id: 'ilc-computer-science-001',
+    front: 'Name the three main components of the CPU and state the function of each.',
+    back: 'ALU (Arithmetic Logic Unit): performs arithmetic (add, subtract) and logical (AND, OR, NOT) operations. CU (Control Unit): coordinates and controls computer operations; decodes instructions and sends control signals. Registers: small, fast storage locations within the CPU holding data and instructions being processed (e.g., PC, MAR, MDR, accumulator).',
+    tags: ['hardware'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-computer-science-002',
+    front: 'Define a variable in programming and list four common data types.',
+    back: 'A variable is a named storage location in memory that holds a value which can change during program execution. Common data types: integer (whole numbers), float/double (decimal numbers), string (text), boolean (true/false). Some languages also support char (single character) and array (collection of elements).',
+    tags: ['programming'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-computer-science-003',
+    front: 'Compare RAM and ROM in terms of volatility, purpose, and contents.',
+    back: 'RAM (Random Access Memory): volatile (loses data when power off), stores data and programs currently in use, allows both read and write operations. ROM (Read Only Memory): non-volatile (retains data without power), stores the boot-up instructions (BIOS/firmware), generally read-only. RAM is larger and faster than ROM in access speed for dynamic data.',
+    tags: ['hardware'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-computer-science-004',
+    front: 'Define LAN and WAN. Give an example of each.',
+    back: 'LAN (Local Area Network): connects computers within a limited area such as a school, office, or building. Covers a small geographical area. Example: a school computer lab network. WAN (Wide Area Network): connects computers across large geographical distances, often spanning cities or countries. Example: the Internet, connecting millions of devices globally.',
+    tags: ['networks'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-computer-science-005',
+    front:
+      'Define a function (procedure/subroutine) in programming and explain why functions are used.',
+    back: 'A function is a self-contained block of code that performs a specific task and can be called (invoked) from other parts of the program. Functions promote code reusability (write once, call many times), improve readability by breaking programs into logical sections, make debugging easier by isolating tasks, and support modular design and abstraction.',
+    tags: ['programming'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'ilc-computer-science-006',
+    front: 'Define primary key and foreign key in a relational database.',
+    back: 'Primary key: a column (or combination of columns) that uniquely identifies each record in a table. It cannot contain NULL values and must be unique. Example: StudentID in a Students table. Foreign key: a column in one table that references the primary key of another table, establishing a relationship between the two tables. Example: StudentID in an Enrolments table referencing the Students table.',
+    tags: ['databases'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-computer-science-007',
+    front: 'Describe the linear search algorithm.',
+    back: 'Linear search checks each element in a list sequentially from the first to the last until the target value is found or the end of the list is reached. It works on both sorted and unsorted lists. Time complexity is O(n) in all cases (best case O(1) if target is first). Simple to implement but inefficient for large datasets.',
+    tags: ['algorithms'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-computer-science-008',
+    front: 'Describe the fetch-decode-execute cycle.',
+    back: 'Fetch: the control unit sends the address in the PC (Program Counter) to memory via the address bus; the instruction is copied from memory to the MDR (Memory Data Register) via the data bus; the PC is incremented. Decode: the instruction in the CIR (Current Instruction Register) is decoded by the control unit to determine the operation. Execute: the control unit sends signals to relevant components to perform the instruction (e.g., ALU for arithmetic).',
+    tags: ['hardware'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-009',
+    front: 'Compare a while loop and a for loop, including when each is most appropriate.',
+    back: "While loop: condition checked before each iteration; continues while condition is true; used when the number of iterations is unknown (e.g., reading input until user enters 'quit'). For loop: initialisation, condition check, and increment/decrement in one line; used when the number of iterations is known in advance (e.g., iterating through an array by index). Both are pre-condition (entry-controlled) loops.",
+    tags: ['programming'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-010',
+    front: 'List the four layers of the TCP/IP model and briefly describe each.',
+    back: 'Application layer: provides services directly to user applications (HTTP, FTP, SMTP). Transport layer: manages end-to-end communication and data integrity (TCP for reliable delivery, UDP for fast delivery). Internet layer: handles routing and addressing (IP, ICMP). Network access layer (link layer): handles physical transmission over the network medium (Ethernet, Wi-Fi frames).',
+    tags: ['networks'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'ilc-computer-science-011',
+    front: 'Explain normalisation to Third Normal Form (3NF) with an example.',
+    back: '1NF: all attributes contain atomic (single) values; each row is unique. 2NF: in 1NF and no partial dependencies (non-key attributes depend on the entire primary key, not just part of it). 3NF: in 2NF and no transitive dependencies (non-key attributes depend only on the primary key, not on other non-key attributes). Example: removing StudentAddress from an Enrolments table into a separate Students table eliminates transitive dependency.',
+    tags: ['databases'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-012',
+    front: 'Describe the binary search algorithm and state its precondition.',
+    back: 'Binary search finds a target value in a sorted array by repeatedly dividing the search range in half. Compare the target with the middle element; if equal, found. If target is less, search the left half. If target is greater, search the right half. Repeat until found or range is empty. Precondition: the data must be sorted. Time complexity: O(log n), much faster than linear search for large sorted datasets.',
+    tags: ['algorithms'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-013',
+    front: 'Describe three network topologies: star, bus, and ring.',
+    back: 'Star: all devices connect to a central hub/switch; failure of one device does not affect others, but hub failure brings down the network. Bus: all devices share a single backbone cable; simple and cheap, but a single cable fault affects all devices. Ring: devices connected in a circular loop; data travels in one direction; failure of one device can disrupt the entire network unless dual-ring is used.',
+    tags: ['networks'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-014',
+    front: 'Explain what an array is and describe three common operations performed on arrays.',
+    back: 'An array is a data structure that stores a fixed number of elements of the same data type in contiguous memory locations, accessed by index. Operations: (1) Access: read/write an element at a given index, O(1). (2) Traversal: visit each element sequentially, O(n). (3) Insertion/Deletion: add or remove elements; may require shifting, O(n). Arrays are fundamental for storing collections of related data.',
+    tags: ['programming'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-015',
+    front:
+      'Write an SQL query using INNER JOIN to display student names and their enrolled course names.',
+    back: 'SELECT Students.StudentName, Courses.CourseName FROM Students INNER JOIN Enrolments ON Students.StudentID = Enrolments.StudentID INNER JOIN Courses ON Enrolments.CourseID = Courses.CourseID; INNER JOIN returns only rows where there is a match in both tables. LEFT JOIN would return all students even if not enrolled in any course.',
+    tags: ['databases'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'ilc-computer-science-016',
+    front: 'Describe the bubble sort algorithm and state its time complexity.',
+    back: 'Bubble sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. Each pass bubbles the largest unsorted element to its correct position. The algorithm repeats until no swaps are needed, indicating the list is sorted. Time complexity: O(n squared) in average and worst case, O(n) in best case (already sorted). Simple but inefficient for large datasets.',
+    tags: ['algorithms'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-017',
+    front: 'Compare input devices, output devices, and storage devices with two examples of each.',
+    back: 'Input devices: send data to the computer. Examples: keyboard (text entry), mouse (pointing and clicking). Output devices: present data from the computer. Examples: monitor (visual display), printer (hard copy). Storage devices: save data permanently or semi-permanently. Examples: HDD (magnetic, large capacity), SSD (flash memory, faster access). Some devices are both input and output, e.g., touchscreen.',
+    tags: ['hardware'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-computer-science-018',
+    front:
+      'Explain Big O notation and state the time complexity of linear search, binary search, bubble sort, and merge sort.',
+    back: "Big O notation describes the upper bound of an algorithm's time or space requirements as input size n grows. Linear search: O(n). Binary search: O(log n). Bubble sort: O(n squared). Merge sort: O(n log n). Big O focuses on the dominant term as n approaches infinity, ignoring constants and lower-order terms. It helps compare algorithm efficiency independent of hardware.",
+    tags: ['algorithms'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ilc-computer-science-019',
+    front: 'Compare symmetric and asymmetric encryption, including a common algorithm for each.',
+    back: 'Symmetric encryption: same key used to encrypt and decrypt data; fast; key distribution is a security challenge. Algorithm: AES (Advanced Encryption Standard). Asymmetric encryption: uses a public key (to encrypt) and a private key (to decrypt); slower but solves key distribution; enables digital signatures. Algorithm: RSA. Hybrid systems often combine both: asymmetric encryption exchanges a symmetric session key, then symmetric encryption handles data transfer.',
+    tags: ['networks'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ilc-computer-science-020',
+    front:
+      'Explain the concept of recursion in programming, including the base case and the recursive case.',
+    back: 'Recursion is when a function calls itself to solve a smaller instance of the same problem. Every recursive function must have a base case (termination condition that stops recursion) and a recursive case (where the function calls itself with modified parameters). Without a base case, the recursion continues infinitely, causing a stack overflow. Example: factorial(n) = n * factorial(n-1) with base case factorial(0) = 1.',
+    tags: ['programming'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ilc-computer-science"
   title="ILC -- Computer Science"
   description="Hardware, programming, databases, networks, and algorithms for ILC Computer Science revision."
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

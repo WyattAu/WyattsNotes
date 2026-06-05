@@ -18,117 +18,169 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"ilc-maths-001",front:"Solve the quadratic equation x squared minus 5x
-plus 6 equals 0 by factorisation.",back:"x squared - 5x + 6 = 0. Find two numbers that multiply to 6
-and add to -5: -2 and -3. Factorise: (x - 2)(x - 3) = 0. Solutions: x = 2 or x = 3. Verification:
-4 - 10 + 6 = 0 and 9 - 15 + 6 = 0. When factorisation is difficult, use the quadratic formula: x =
-(-b plus or minus the square root of (b squared minus 4ac)) /
-2a.",tags:["algebra"],difficulty:"easy"},{id:"ilc-maths-002",front:"State the distance formula and
-midpoint formula between two points (x1, y1) and (x2, y2).",back:"Distance = square root of ((x2 -
-x1) squared + (y2 - y1) squared), derived from Pythagoras' theorem. Midpoint = ((x1 + x2)/2, (y1 +
-y2)/2). Example: between (1, 3) and (5, 7), distance = square root of (16 + 16) = square root of 32
-= 4 times square root of 2. Midpoint = (3,
-5).",tags:["algebra"],difficulty:"easy"},{id:"ilc-maths-003",front:"State Pythagoras' theorem and
-apply it to a right-angled triangle with sides 5 and 12.",back:"Pythagoras' theorem: in a
-right-angled triangle, a squared + b squared = c squared, where c is the hypotenuse (longest side
-opposite the right angle). Given sides 5 and 12 (legs): c squared = 25 + 144 = 169, so c = 13.
-Converse: if a squared + b squared = c squared, the triangle is
-right-angled.",tags:["geometry"],difficulty:"easy"},{id:"ilc-maths-004",front:"Define mean, median,
-and mode for a data set. Given the data {3, 7, 7, 2, 9}, calculate each.",back:"Mean: sum of all
-values divided by the number of values. Median: middle value when data is ordered. Mode: most
-frequently occurring value. Data: {2, 3, 7, 7, 9}. Mean = (2+3+7+7+9)/5 = 28/5 = 5.6. Median = 7
-(middle of 5 values). Mode = 7 (occurs twice). Mean is affected by outliers; median and mode are
-more resistant.",tags:["probability and
-statistics"],difficulty:"easy"},{id:"ilc-maths-005",front:"State the formula for the nth term of an
-arithmetic sequence and calculate the 20th term of 3, 7, 11, 15, ...",back:"nth term: a_n = a_1 +
-(n - 1)d, where a_1 is the first term and d is the common difference. Here a_1 = 3, d = 4. a_20 =
-3 + (20 - 1) times 4 = 3 + 76 = 79. The sum of the first n terms: S_n = n/2 times (2a_1 + (n-1)d) =
-n/2 times (a_1 + a_n).",tags:["number
-sequences"],difficulty:"easy"},{id:"ilc-maths-006",front:"State the power rule for differentiation.
-Differentiate y = 4x cubed minus 2x plus 7.",back:"Power rule: if y = ax to the power n, then dy/dx
-= anx to the power (n-1). The derivative of a constant is 0. Applying: y = 4x cubed - 2x + 7, so
-dy/dx = 12x squared - 2. The power rule works for any real exponent n, including negative and
-fractional powers.",tags:["calculus"],difficulty:"easy"},{id:"ilc-maths-007",front:"State the
-formulae for the area and circumference of a circle with radius r.",back:"Area = pi times r squared.
-Circumference = 2 times pi times r. Example: for r = 7, Area = 49pi (approximately 153.94 square
-units), Circumference = 14pi (approximately 43.98 units). The diameter d = 2r, so the circumference
-can also be written as pi times
-d.",tags:["geometry"],difficulty:"easy"},{id:"ilc-maths-008",front:"Solve the simultaneous equations
-2x + y = 10 and x - y = 2 using elimination.",back:"Add the two equations to eliminate y: (2x + y) +
-(x - y) = 10 + 2, giving 3x = 12, so x = 4. Substitute x = 4 into x - y = 2: 4 - y = 2, so y = 2.
-Solution: x = 4, y = 2. Verification: 2(4) + 2 = 10 (correct) and 4 - 2 = 2 (correct).
-Alternatively, substitution method can be
-used.",tags:["algebra"],difficulty:"medium"},{id:"ilc-maths-009",front:"State the chain rule for
-differentiation and apply it to y = (2x + 1) to the power 5.",back:"Chain rule: dy/dx = dy/du times
-du/dx, where u is an inner function of x. Alternatively: if y = f(g(x)), then dy/dx = f'(g(x)) times
-g'(x). For y = (2x + 1)^5: let u = 2x + 1, y = u^5. dy/du = 5u^4, du/dx = 2. dy/dx = 5(2x + 1)^4
-times 2 = 10(2x + 1)^4.",tags:["calculus"],difficulty:"medium"},{id:"ilc-maths-010",front:"State the
-sine rule and cosine rule. When is each used?",back:"Sine rule: a/sin(A) = b/sin(B) = c/sin(C). Used
-when you know an angle and its opposite side plus one other angle or side. Cosine rule: a squared =
-b squared + c squared - 2bc cos(A). Used when you know two sides and the included angle (to find the
-third side), or all three sides (to find an angle). Rearranged form: cos(A) = (b squared + c
-squared - a squared) /
-2bc.",tags:["geometry"],difficulty:"medium"},{id:"ilc-maths-011",front:"Define standard deviation.
-Calculate it for the data set {4, 8, 6, 5, 3}.",back:"Standard deviation measures the average spread
-of data around the mean. Formula (population): sigma = square root of (sum of (x - mean) squared /
-n). Mean = (4+8+6+5+3)/5 = 26/5 = 5.2. Deviations squared: (1.2)^2 + (2.8)^2 + (0.8)^2 + (0.2)^2 +
-(2.2)^2 = 1.44 + 7.84 + 0.64 + 0.04 + 4.84 = 14.8. Variance = 14.8/5 = 2.96. SD = square root of
-2.96 is approximately 1.72. For a sample, divide by n-1 instead of n.",tags:["probability and
-statistics"],difficulty:"medium"},{id:"ilc-maths-012",front:"State the formula for the nth term and
-sum of a geometric sequence. Find the 6th term of 2, 6, 18, 54, ...",back:"nth term: a_n = a_1 times
-r to the power (n-1), where a_1 is the first term and r is the common ratio. Sum of first n terms:
-S_n = a_1(1 - r to the power n) / (1 - r) for r is not equal to 1. Here a_1 = 2, r = 3. a_6 = 2
-times 3^5 = 2 times 243 = 486. For infinite geometric series with |r| < 1, S infinity = a_1 / (1 -
-r).",tags:["number sequences"],difficulty:"medium"},{id:"ilc-maths-013",front:"State three circle
-theorems.",back:"(1) Angle at centre theorem: the angle at the centre is twice the angle at the
-circumference subtended by the same arc. (2) Angle in a semicircle: the angle in a semicircle is
-always 90 degrees. (3) Cyclic quadrilateral theorem: opposite angles in a cyclic quadrilateral sum
-to 180 degrees. Other theorems involve tangents, chords, and alternate segment
-theorem.",tags:["geometry"],difficulty:"medium"},{id:"ilc-maths-014",front:"State the rule for
-integrating a power of x. Find the indefinite integral of 6x squared + 4x minus 3.",back:"If y = ax
-to the power n, then the integral of y dx = (a/(n+1)) times x to the power (n+1) + C, where C is the
-constant of integration (n cannot equal -1). Integral of 6x squared + 4x - 3 = 6 times (x cubed
-/ 3) + 4 times (x squared / 2) - 3x + C = 2x cubed + 2x squared - 3x + C. Always add the constant of
-integration for indefinite
-integrals.",tags:["calculus"],difficulty:"medium"},{id:"ilc-maths-015",front:"Express x squared
-minus 6x + 5 in completed square form and identify the vertex of the parabola.",back:"x squared -
-6x + 5 = (x - 3) squared - 9 + 5 = (x - 3) squared - 4. Method: halve the coefficient of x to get
--3, square it to get 9, then add and subtract 9. The vertex is at (3, -4). Since the coefficient of
-x squared is positive, it is a minimum point. Completed square form reveals the turning point
-directly and helps solve quadratic
-inequalities.",tags:["algebra"],difficulty:"medium"},{id:"ilc-maths-016",front:"State the addition
-and multiplication rules of probability for independent and mutually exclusive
-events.",back:"Addition rule (mutually exclusive events): P(A or B) = P(A) + P(B). Events cannot
-happen simultaneously. Multiplication rule (independent events): P(A and B) = P(A) times P(B). The
-occurrence of one does not affect the other. For non-mutually exclusive events: P(A or B) = P(A) +
-P(B) - P(A and B). For non-independent events: P(A and B) = P(A) times P(B|A).",tags:["probability
-and statistics"],difficulty:"medium"},{id:"ilc-maths-017",front:"Explain how to use the second
-derivative to classify stationary points.",back:"Find dy/dx and set equal to zero to find stationary
-points (x values). Then find d squared y / dx squared. If d squared y / dx squared > 0 at a
-stationary point, it is a local minimum. If d squared y / dx squared < 0, it is a local maximum. If
-d squared y / dx squared = 0, the test is inconclusive and the first derivative test (sign change of
-dy/dx) must be used.",tags:["calculus"],difficulty:"medium"},{id:"ilc-maths-018",front:"Describe the
-method of integration by substitution with an example.",back:"Used to integrate composite functions.
-Choose a substitution u = g(x) that simplifies the integrand. Replace dx with du/g'(x) and rewrite
-the integral in terms of u. Example: integral of 2x(x squared + 1)^3 dx. Let u = x squared + 1, so
-du = 2x dx. The integral becomes integral of u cubed du = u to the power 4 / 4 + C = (x squared +
-1)^4 / 4 + C. Always express the final answer in terms of the original
-variable.",tags:["calculus"],difficulty:"hard"},{id:"ilc-maths-019",front:"Solve the equation sin(x)
-= 0.5 for 0 degrees less than or equal to x less than 360 degrees.",back:"sin(x) = 0.5. Principal
-value: x = 30 degrees (using inverse sine). Since sin is positive in the first and second quadrants,
-the second solution is x = 180 - 30 = 150 degrees. Solutions: x = 30 degrees and x = 150 degrees.
-General solutions: x = 30 + 360n degrees or x = 150 + 360n degrees, where n is an integer. Always
-check the required range.",tags:["geometry"],difficulty:"hard"},{id:"ilc-maths-020",front:"Describe
-the properties of the normal distribution and state the 68-95-99.7 rule.",back:"The normal
-distribution is a continuous probability distribution that is symmetric and bell-shaped. Mean =
-median = mode, and the curve is defined by two parameters: mean (mu) and standard deviation (sigma).
-The 68-95-99.7 rule: approximately 68% of data falls within 1 SD of the mean, 95% within 2 SDs, and
-99.7% within 3 SDs. The total area under the curve equals 1 (100%).",tags:["probability and
-statistics"],difficulty:"hard"}];
+export const flashcard1 = [
+  {
+    id: 'ilc-maths-001',
+    front: 'Solve the quadratic equation x squared minus 5x plus 6 equals 0 by factorisation.',
+    back: 'x squared - 5x + 6 = 0. Find two numbers that multiply to 6 and add to -5: -2 and -3. Factorise: (x - 2)(x - 3) = 0. Solutions: x = 2 or x = 3. Verification: 4 - 10 + 6 = 0 and 9 - 15 + 6 = 0. When factorisation is difficult, use the quadratic formula: x = (-b plus or minus the square root of (b squared minus 4ac)) / 2a.',
+    tags: ['algebra'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-maths-002',
+    front:
+      'State the distance formula and midpoint formula between two points (x1, y1) and (x2, y2).',
+    back: "Distance = square root of ((x2 - x1) squared + (y2 - y1) squared), derived from Pythagoras' theorem. Midpoint = ((x1 + x2)/2, (y1 + y2)/2). Example: between (1, 3) and (5, 7), distance = square root of (16 + 16) = square root of 32 = 4 times square root of 2. Midpoint = (3, 5).",
+    tags: ['algebra'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-maths-003',
+    front: "State Pythagoras' theorem and apply it to a right-angled triangle with sides 5 and 12.",
+    back: "Pythagoras' theorem: in a right-angled triangle, a squared + b squared = c squared, where c is the hypotenuse (longest side opposite the right angle). Given sides 5 and 12 (legs): c squared = 25 + 144 = 169, so c = 13. Converse: if a squared + b squared = c squared, the triangle is right-angled.",
+    tags: ['geometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-maths-004',
+    front:
+      'Define mean, median, and mode for a data set. Given the data {3, 7, 7, 2, 9}, calculate each.',
+    back: 'Mean: sum of all values divided by the number of values. Median: middle value when data is ordered. Mode: most frequently occurring value. Data: {2, 3, 7, 7, 9}. Mean = (2+3+7+7+9)/5 = 28/5 = 5.6. Median = 7 (middle of 5 values). Mode = 7 (occurs twice). Mean is affected by outliers; median and mode are more resistant.',
+    tags: ['probability and statistics'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-maths-005',
+    front:
+      'State the formula for the nth term of an arithmetic sequence and calculate the 20th term of 3, 7, 11, 15, ...',
+    back: 'nth term: a_n = a_1 + (n - 1)d, where a_1 is the first term and d is the common difference. Here a_1 = 3, d = 4. a_20 = 3 + (20 - 1) times 4 = 3 + 76 = 79. The sum of the first n terms: S_n = n/2 times (2a_1 + (n-1)d) = n/2 times (a_1 + a_n).',
+    tags: ['number sequences'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'ilc-maths-006',
+    front: 'State the power rule for differentiation. Differentiate y = 4x cubed minus 2x plus 7.',
+    back: 'Power rule: if y = ax to the power n, then dy/dx = anx to the power (n-1). The derivative of a constant is 0. Applying: y = 4x cubed - 2x + 7, so dy/dx = 12x squared - 2. The power rule works for any real exponent n, including negative and fractional powers.',
+    tags: ['calculus'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-maths-007',
+    front: 'State the formulae for the area and circumference of a circle with radius r.',
+    back: 'Area = pi times r squared. Circumference = 2 times pi times r. Example: for r = 7, Area = 49pi (approximately 153.94 square units), Circumference = 14pi (approximately 43.98 units). The diameter d = 2r, so the circumference can also be written as pi times d.',
+    tags: ['geometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ilc-maths-008',
+    front: 'Solve the simultaneous equations 2x + y = 10 and x - y = 2 using elimination.',
+    back: 'Add the two equations to eliminate y: (2x + y) + (x - y) = 10 + 2, giving 3x = 12, so x = 4. Substitute x = 4 into x - y = 2: 4 - y = 2, so y = 2. Solution: x = 4, y = 2. Verification: 2(4) + 2 = 10 (correct) and 4 - 2 = 2 (correct). Alternatively, substitution method can be used.',
+    tags: ['algebra'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-009',
+    front: 'State the chain rule for differentiation and apply it to y = (2x + 1) to the power 5.',
+    back: "Chain rule: dy/dx = dy/du times du/dx, where u is an inner function of x. Alternatively: if y = f(g(x)), then dy/dx = f'(g(x)) times g'(x). For y = (2x + 1)^5: let u = 2x + 1, y = u^5. dy/du = 5u^4, du/dx = 2. dy/dx = 5(2x + 1)^4 times 2 = 10(2x + 1)^4.",
+    tags: ['calculus'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-010',
+    front: 'State the sine rule and cosine rule. When is each used?',
+    back: 'Sine rule: a/sin(A) = b/sin(B) = c/sin(C). Used when you know an angle and its opposite side plus one other angle or side. Cosine rule: a squared = b squared + c squared - 2bc cos(A). Used when you know two sides and the included angle (to find the third side), or all three sides (to find an angle). Rearranged form: cos(A) = (b squared + c squared - a squared) / 2bc.',
+    tags: ['geometry'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'ilc-maths-011',
+    front: 'Define standard deviation. Calculate it for the data set {4, 8, 6, 5, 3}.',
+    back: 'Standard deviation measures the average spread of data around the mean. Formula (population): sigma = square root of (sum of (x - mean) squared / n). Mean = (4+8+6+5+3)/5 = 26/5 = 5.2. Deviations squared: (1.2)^2 + (2.8)^2 + (0.8)^2 + (0.2)^2 + (2.2)^2 = 1.44 + 7.84 + 0.64 + 0.04 + 4.84 = 14.8. Variance = 14.8/5 = 2.96. SD = square root of 2.96 is approximately 1.72. For a sample, divide by n-1 instead of n.',
+    tags: ['probability and statistics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-012',
+    front:
+      'State the formula for the nth term and sum of a geometric sequence. Find the 6th term of 2, 6, 18, 54, ...',
+    back: 'nth term: a_n = a_1 times r to the power (n-1), where a_1 is the first term and r is the common ratio. Sum of first n terms: S_n = a_1(1 - r to the power n) / (1 - r) for r is not equal to 1. Here a_1 = 2, r = 3. a_6 = 2 times 3^5 = 2 times 243 = 486. For infinite geometric series with |r| < 1, S infinity = a_1 / (1 - r).',
+    tags: ['number sequences'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-013',
+    front: 'State three circle theorems.',
+    back: '(1) Angle at centre theorem: the angle at the centre is twice the angle at the circumference subtended by the same arc. (2) Angle in a semicircle: the angle in a semicircle is always 90 degrees. (3) Cyclic quadrilateral theorem: opposite angles in a cyclic quadrilateral sum to 180 degrees. Other theorems involve tangents, chords, and alternate segment theorem.',
+    tags: ['geometry'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-014',
+    front:
+      'State the rule for integrating a power of x. Find the indefinite integral of 6x squared + 4x minus 3.',
+    back: 'If y = ax to the power n, then the integral of y dx = (a/(n+1)) times x to the power (n+1) + C, where C is the constant of integration (n cannot equal -1). Integral of 6x squared + 4x - 3 = 6 times (x cubed / 3) + 4 times (x squared / 2) - 3x + C = 2x cubed + 2x squared - 3x + C. Always add the constant of integration for indefinite integrals.',
+    tags: ['calculus'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-015',
+    front:
+      'Express x squared minus 6x + 5 in completed square form and identify the vertex of the parabola.',
+    back: 'x squared - 6x + 5 = (x - 3) squared - 9 + 5 = (x - 3) squared - 4. Method: halve the coefficient of x to get -3, square it to get 9, then add and subtract 9. The vertex is at (3, -4). Since the coefficient of x squared is positive, it is a minimum point. Completed square form reveals the turning point directly and helps solve quadratic inequalities.',
+    tags: ['algebra'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'ilc-maths-016',
+    front:
+      'State the addition and multiplication rules of probability for independent and mutually exclusive events.',
+    back: 'Addition rule (mutually exclusive events): P(A or B) = P(A) + P(B). Events cannot happen simultaneously. Multiplication rule (independent events): P(A and B) = P(A) times P(B). The occurrence of one does not affect the other. For non-mutually exclusive events: P(A or B) = P(A) + P(B) - P(A and B). For non-independent events: P(A and B) = P(A) times P(B|A).',
+    tags: ['probability and statistics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-017',
+    front: 'Explain how to use the second derivative to classify stationary points.',
+    back: 'Find dy/dx and set equal to zero to find stationary points (x values). Then find d squared y / dx squared. If d squared y / dx squared > 0 at a stationary point, it is a local minimum. If d squared y / dx squared < 0, it is a local maximum. If d squared y / dx squared = 0, the test is inconclusive and the first derivative test (sign change of dy/dx) must be used.',
+    tags: ['calculus'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ilc-maths-018',
+    front: 'Describe the method of integration by substitution with an example.',
+    back: "Used to integrate composite functions. Choose a substitution u = g(x) that simplifies the integrand. Replace dx with du/g'(x) and rewrite the integral in terms of u. Example: integral of 2x(x squared + 1)^3 dx. Let u = x squared + 1, so du = 2x dx. The integral becomes integral of u cubed du = u to the power 4 / 4 + C = (x squared + 1)^4 / 4 + C. Always express the final answer in terms of the original variable.",
+    tags: ['calculus'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ilc-maths-019',
+    front:
+      'Solve the equation sin(x) = 0.5 for 0 degrees less than or equal to x less than 360 degrees.',
+    back: 'sin(x) = 0.5. Principal value: x = 30 degrees (using inverse sine). Since sin is positive in the first and second quadrants, the second solution is x = 180 - 30 = 150 degrees. Solutions: x = 30 degrees and x = 150 degrees. General solutions: x = 30 + 360n degrees or x = 150 + 360n degrees, where n is an integer. Always check the required range.',
+    tags: ['geometry'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ilc-maths-020',
+    front: 'Describe the properties of the normal distribution and state the 68-95-99.7 rule.',
+    back: 'The normal distribution is a continuous probability distribution that is symmetric and bell-shaped. Mean = median = mode, and the curve is defined by two parameters: mean (mu) and standard deviation (sigma). The 68-95-99.7 rule: approximately 68% of data falls within 1 SD of the mean, 95% within 2 SDs, and 99.7% within 3 SDs. The total area under the curve equals 1 (100%).',
+    tags: ['probability and statistics'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ilc-maths"
   title="ILC -- Maths"
   description="Algebra, calculus, geometry, trigonometry, probability, statistics, and number sequences for ILC Maths revision."
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

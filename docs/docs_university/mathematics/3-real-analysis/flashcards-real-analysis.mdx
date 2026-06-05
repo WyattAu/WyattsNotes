@@ -11,5 +11,163 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 ## Mathematics -- Real Analysis Flashcards
 20 interactive flashcards for university-level Real Analysis. Press Space to flip, rate 1-4.
 ---
-const flashcardData = [{id:"uni-maths-real-analysis-001", front:"Define the supremum (least upper bound) of a non-empty set S ⊆ ℝ that is bounded above.", back:"sup S is the real number α such that: (1) α is an upper bound for S (x ≤ α for all x ∈ S), and (2) if β is any upper bound for S, then α ≤ β. The Completeness Axiom guarantees sup S exists for every non-empty subset of ℝ that is bounded above.", tags:["order-theory"], difficulty:"easy"},{id:"uni-maths-real-analysis-002", front:"Define open and closed sets in ℝ with the standard topology.", back:"A set U ⊆ ℝ is open if for every x ∈ U there exists ε > 0 such that (x − ε, x + ε) ⊆ U. A set F ⊆ ℝ is closed if its complement ℝ \\ F is open. Equivalent characterisation: F is closed iff it contains all its limit points. Note: sets can be both open and closed (ℝ, ∅), or neither.", tags:["topology"], difficulty:"easy"},{id:"uni-maths-real-analysis-003", front:"State the Heine-Borel theorem for subsets of ℝⁿ.", back:"A subset K ⊆ ℝⁿ is compact if and only if it is closed and bounded. Equivalently (by sequential compactness), K is compact iff every sequence in K has a convergent subsequence whose limit lies in K. This equivalence fails in infinite-dimensional spaces.", tags:["compactness"], difficulty:"medium"},{id:"uni-maths-real-analysis-004", front:"Define convergence of a sequence (aₙ) to a limit L using the ε-N definition.", back:"For every ε > 0, there exists N ∈ ℕ such that for all n ≥ N, we have |aₙ − L| < ε. We write lim(n→∞) aₙ = L or aₙ → L. The N depends on both ε and the sequence. Equivalently, every ε-neighbourhood of L contains all but finitely many terms of the sequence.", tags:["sequences"], difficulty:"easy"},{id:"uni-maths-real-analysis-005", front:"Define a Cauchy sequence and state its relationship to convergence in ℝ.", back:"A sequence (aₙ) is Cauchy if for every ε > 0, there exists N ∈ ℕ such that for all m, n ≥ N, |aₘ − aₙ| < ε. In ℝ, every Cauchy sequence converges (ℝ is complete). This is the Cauchy completeness criterion. In ℚ, Cauchy sequences need not converge (e.g. decimal approximations of √2).", tags:["sequences"], difficulty:"medium"},{id:"uni-maths-real-analysis-006", front:"Define lim sup and lim inf for a bounded sequence (aₙ).", back:"lim sup aₙ = lim(n→∞) sup{aₘ : m ≥ n}. lim inf aₙ = lim(n→∞) inf{aₘ : m ≥ n}. Equivalently, lim sup is the supremum of all subsequential limits, lim inf is the infimum. A bounded sequence converges iff lim sup = lim inf, and the common value is the limit.", tags:["sequences"], difficulty:"medium"},{id:"uni-maths-real-analysis-007", front:"Define continuity of a function f: ℝ → ℝ at a point c using the ε-δ definition.", back:"For every ε > 0, there exists δ > 0 such that for all x in the domain, if |x − c| < δ then |f(x) − f(c)| < ε. Sequentially equivalent: f is continuous at c iff for every sequence xₙ → c, we have f(xₙ) → f(c). f is continuous on a set if it is continuous at every point of that set.", tags:["continuity"], difficulty:"easy"},{id:"uni-maths-real-analysis-008", front:"Define uniform continuity and distinguish it from pointwise continuity.", back:"f is uniformly continuous on S if for every ε > 0 there exists δ > 0 such that for all x, y ∈ S, |x − y| < δ implies |f(x) − f(y)| < ε. Key difference: δ depends only on ε, not on the point. Theorem: if f is continuous on a compact set K ⊆ ℝ, then f is uniformly continuous on K (Heine-Cantor theorem).", tags:["continuity"], difficulty:"medium"},{id:"uni-maths-real-analysis-009", front:"State the Intermediate Value Theorem (IVT) with precise hypotheses.", back:"If f: [a, b] → ℝ is continuous, then for every value y between f(a) and f(b), there exists c ∈ [a, b] such that f(c) = y. Prerequisites: f must be continuous on a closed interval [a, b]. Corollary: continuous functions map intervals to intervals. This is a consequence of connectedness.", tags:["theorems"], difficulty:"easy"},{id:"uni-maths-real-analysis-010", front:"State the Bolzano-Weierstrass theorem.", back:"Every bounded sequence in ℝⁿ has a convergent subsequence. Proof idea (for ℝ): use a bisection argument to find a subsequence that lies in nested closed intervals whose lengths tend to zero. The limit of this subsequence lies in the intersection of all intervals. This theorem is central to establishing compactness in ℝⁿ.", tags:["compactness"], difficulty:"medium"},{id:"uni-maths-real-analysis-011", front:"State the Ratio Test for convergence of a series ∑aₙ.", back:"Let L = lim(n→∞) |aₙ₊₁/aₙ|. If L < 1, the series converges absolutely. If L > 1 (or L = ∞), the series diverges. If L = 1, the test is inconclusive. The ratio test is derived by comparison with a geometric series. Useful when terms involve factorials or exponentials.", tags:["series"], difficulty:"medium"},{id:"uni-maths-real-analysis-012", front:"Distinguish between absolute convergence and conditional convergence.", back:"∑aₙ converges absolutely if ∑|aₙ| converges. ∑aₙ converges conditionally if ∑aₙ converges but ∑|aₙ| diverges. Key results: (1) Absolute convergence implies convergence. (2) Riemann rearrangement theorem: any conditionally convergent series can be rearranged to converge to any real value, or to diverge.", tags:["series"], difficulty:"medium"},{id:"uni-maths-real-analysis-013", front:"Define the Riemann integral of a bounded function f on [a, b].", back:"Let P = {x₀, x₁, ..., xₙ} be a partition of [a, b] with a = x₀ < x₁ < ... < xₙ = b. Form Riemann sums S(f, P) = Σ f(tᵢ)(xᵢ − xᵢ₋₁) where tᵢ ∈ [xᵢ₋₁, xᵢ]. f is Riemann integrable if as mesh(P) → 0, S(f, P) converges to a unique limit I, called ∫ₐᵇ f(x) dx.", tags:["integration"], difficulty:"medium"},{id:"uni-maths-real-analysis-014", front:"Define upper and lower Darboux sums and the Darboux integral.", back:"For partition P of [a, b]: U(f, P) = Σ Mᵢ(xᵢ − xᵢ₋₁) where Mᵢ = sup{f(x) : x ∈ [xᵢ₋₁, xᵢ]}; L(f, P) = Σ mᵢ(xᵢ − xᵢ₋₁) where mᵢ = inf{f(x) : x ∈ [xᵢ₋₁, xᵢ]}. Upper integral = inf{U(f, P) : all P}; lower integral = sup{L(f, P) : all P}. f is Darboux integrable iff upper = lower integral.", tags:["integration"], difficulty:"medium"},{id:"uni-maths-real-analysis-015", front:"State both parts of the Fundamental Theorem of Calculus.", back:"FTC I: If f is continuous on [a, b] and F(x) = ∫ₐˣ f(t) dt, then F is differentiable and F'(x) = f(x) for x ∈ (a, b). FTC II: If f is integrable on [a, b] and F is any antiderivative of f, then ∫ₐᵇ f(x) dx = F(b) − F(a). Together, these connect differentiation and integration.", tags:["integration"], difficulty:"medium"},{id:"uni-maths-real-analysis-016", front:"Distinguish pointwise convergence from uniform convergence of a sequence of functions.", back:"fₙ → f pointwise on D if for each x ∈ D and ε > 0, ∃N such that |fₙ(x) − f(x)| < ε for n ≥ N (N may depend on x). fₙ → f uniformly on D if N can be chosen independently of x. Uniform convergence preserves continuity, integrability, and (with extra conditions) differentiability.", tags:["convergence"], difficulty:"medium"},{id:"uni-maths-real-analysis-017", front:"State the Weierstrass M-test for uniform convergence of series of functions.", back:"If |fₙ(x)| ≤ Mₙ for all x ∈ D and all n, and ∑Mₙ converges (Mₙ independent of x), then ∑fₙ(x) converges uniformly (and absolutely) on D. The Mₙ serve as a convergent majorant series. Application: power series converge uniformly on compact subsets within their radius of convergence.", tags:["convergence"], difficulty:"hard"},{id:"uni-maths-real-analysis-018", front:"Define differentiability of f: ℝ → ℝ at a point c and state its relationship to continuity.", back:"f is differentiable at c if the limit f'(c) = lim(h→0) [f(c+h) − f(c)] / h exists and is finite. Equivalently, f(c+h) = f(c) + f'(c)h + o(h). Every differentiable function is continuous, but the converse fails: f(x) = |x| is continuous at 0 but not differentiable at 0.", tags:["differentiability"], difficulty:"easy"},{id:"uni-maths-real-analysis-019", front:"State the Mean Value Theorem (MVT) and one of its corollaries.", back:"If f: [a, b] → ℝ is continuous on [a, b] and differentiable on (a, b), then there exists c ∈ (a, b) such that f'(c) = [f(b) − f(a)] / (b − a). Geometrically: there is a point where the tangent is parallel to the secant line. Corollary: if f' = 0 on an interval, then f is constant.", tags:["differentiability"], difficulty:"medium"},{id:"uni-maths-real-analysis-020", front:"State Taylor's theorem with the Lagrange form of the remainder.", back:"If f is (n+1)-times differentiable on an open interval containing a, then f(x) = Σ(k=0 to n) [f⁽ᵏ⁾(a)/k!] (x−a)ᵏ + Rₙ(x), where Rₙ(x) = f⁽ⁿ⁺¹⁾(c)/(n+1)! · (x−a)ⁿ⁺¹ for some c between a and x. Rₙ → 0 as n → ∞ for analytic functions. The integral form remainder is also widely used.", tags:["series"], difficulty:"hard"}];
-<FlashcardDeck deckId="uni-maths-real-analysis" title="University Maths -- Real Analysis" description="Supremum, compactness, convergence, continuity, Riemann integration, series tests" cards={flashcardData} />
+
+export const flashcards1 = [
+  {
+    id: 'uni-maths-real-analysis-001',
+    front:
+      'Define the supremum (least upper bound) of a non-empty set S ⊆ ℝ that is bounded above.',
+    back: 'sup S is the real number α such that: (1) α is an upper bound for S (x ≤ α for all x ∈ S), and (2) if β is any upper bound for S, then α ≤ β. The Completeness Axiom guarantees sup S exists for every non-empty subset of ℝ that is bounded above.',
+    tags: ['order-theory'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-real-analysis-002',
+    front: 'Define open and closed sets in ℝ with the standard topology.',
+    back: 'A set U ⊆ ℝ is open if for every x ∈ U there exists ε > 0 such that (x − ε, x + ε) ⊆ U. A set F ⊆ ℝ is closed if its complement ℝ \\ F is open. Equivalent characterisation: F is closed iff it contains all its limit points. Note: sets can be both open and closed (ℝ, ∅), or neither.',
+    tags: ['topology'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-real-analysis-003',
+    front: 'State the Heine-Borel theorem for subsets of ℝⁿ.',
+    back: 'A subset K ⊆ ℝⁿ is compact if and only if it is closed and bounded. Equivalently (by sequential compactness), K is compact iff every sequence in K has a convergent subsequence whose limit lies in K. This equivalence fails in infinite-dimensional spaces.',
+    tags: ['compactness'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-004',
+    front: 'Define convergence of a sequence (aₙ) to a limit L using the ε-N definition.',
+    back: 'For every ε > 0, there exists N ∈ ℕ such that for all n ≥ N, we have |aₙ − L| < ε. We write lim(n→∞) aₙ = L or aₙ → L. The N depends on both ε and the sequence. Equivalently, every ε-neighbourhood of L contains all but finitely many terms of the sequence.',
+    tags: ['sequences'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-real-analysis-005',
+    front: 'Define a Cauchy sequence and state its relationship to convergence in ℝ.',
+    back: 'A sequence (aₙ) is Cauchy if for every ε > 0, there exists N ∈ ℕ such that for all m, n ≥ N, |aₘ − aₙ| < ε. In ℝ, every Cauchy sequence converges (ℝ is complete). This is the Cauchy completeness criterion. In ℚ, Cauchy sequences need not converge (e.g. decimal approximations of √2).',
+    tags: ['sequences'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-maths-real-analysis-006',
+    front: 'Define lim sup and lim inf for a bounded sequence (aₙ).',
+    back: 'lim sup aₙ = lim(n→∞) sup{aₘ : m ≥ n}. lim inf aₙ = lim(n→∞) inf{aₘ : m ≥ n}. Equivalently, lim sup is the supremum of all subsequential limits, lim inf is the infimum. A bounded sequence converges iff lim sup = lim inf, and the common value is the limit.',
+    tags: ['sequences'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-007',
+    front: 'Define continuity of a function f: ℝ → ℝ at a point c using the ε-δ definition.',
+    back: 'For every ε > 0, there exists δ > 0 such that for all x in the domain, if |x − c| < δ then |f(x) − f(c)| < ε. Sequentially equivalent: f is continuous at c iff for every sequence xₙ → c, we have f(xₙ) → f(c). f is continuous on a set if it is continuous at every point of that set.',
+    tags: ['continuity'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-real-analysis-008',
+    front: 'Define uniform continuity and distinguish it from pointwise continuity.',
+    back: 'f is uniformly continuous on S if for every ε > 0 there exists δ > 0 such that for all x, y ∈ S, |x − y| < δ implies |f(x) − f(y)| < ε. Key difference: δ depends only on ε, not on the point. Theorem: if f is continuous on a compact set K ⊆ ℝ, then f is uniformly continuous on K (Heine-Cantor theorem).',
+    tags: ['continuity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-009',
+    front: 'State the Intermediate Value Theorem (IVT) with precise hypotheses.',
+    back: 'If f: [a, b] → ℝ is continuous, then for every value y between f(a) and f(b), there exists c ∈ [a, b] such that f(c) = y. Prerequisites: f must be continuous on a closed interval [a, b]. Corollary: continuous functions map intervals to intervals. This is a consequence of connectedness.',
+    tags: ['theorems'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-real-analysis-010',
+    front: 'State the Bolzano-Weierstrass theorem.',
+    back: 'Every bounded sequence in ℝⁿ has a convergent subsequence. Proof idea (for ℝ): use a bisection argument to find a subsequence that lies in nested closed intervals whose lengths tend to zero. The limit of this subsequence lies in the intersection of all intervals. This theorem is central to establishing compactness in ℝⁿ.',
+    tags: ['compactness'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-maths-real-analysis-011',
+    front: 'State the Ratio Test for convergence of a series ∑aₙ.',
+    back: 'Let L = lim(n→∞) |aₙ₊₁/aₙ|. If L < 1, the series converges absolutely. If L > 1 (or L = ∞), the series diverges. If L = 1, the test is inconclusive. The ratio test is derived by comparison with a geometric series. Useful when terms involve factorials or exponentials.',
+    tags: ['series'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-012',
+    front: 'Distinguish between absolute convergence and conditional convergence.',
+    back: '∑aₙ converges absolutely if ∑|aₙ| converges. ∑aₙ converges conditionally if ∑aₙ converges but ∑|aₙ| diverges. Key results: (1) Absolute convergence implies convergence. (2) Riemann rearrangement theorem: any conditionally convergent series can be rearranged to converge to any real value, or to diverge.',
+    tags: ['series'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-013',
+    front: 'Define the Riemann integral of a bounded function f on [a, b].',
+    back: 'Let P = {x₀, x₁, ..., xₙ} be a partition of [a, b] with a = x₀ < x₁ < ... < xₙ = b. Form Riemann sums S(f, P) = Σ f(tᵢ)(xᵢ − xᵢ₋₁) where tᵢ ∈ [xᵢ₋₁, xᵢ]. f is Riemann integrable if as mesh(P) → 0, S(f, P) converges to a unique limit I, called ∫ₐᵇ f(x) dx.',
+    tags: ['integration'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-014',
+    front: 'Define upper and lower Darboux sums and the Darboux integral.',
+    back: 'For partition P of [a, b]: U(f, P) = Σ Mᵢ(xᵢ − xᵢ₋₁) where Mᵢ = sup{f(x) : x ∈ [xᵢ₋₁, xᵢ]}; L(f, P) = Σ mᵢ(xᵢ − xᵢ₋₁) where mᵢ = inf{f(x) : x ∈ [xᵢ₋₁, xᵢ]}. Upper integral = inf{U(f, P) : all P}; lower integral = sup{L(f, P) : all P}. f is Darboux integrable iff upper = lower integral.',
+    tags: ['integration'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-015',
+    front: 'State both parts of the Fundamental Theorem of Calculus.',
+    back: "FTC I: If f is continuous on [a, b] and F(x) = ∫ₐˣ f(t) dt, then F is differentiable and F'(x) = f(x) for x ∈ (a, b). FTC II: If f is integrable on [a, b] and F is any antiderivative of f, then ∫ₐᵇ f(x) dx = F(b) − F(a). Together, these connect differentiation and integration.",
+    tags: ['integration'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-maths-real-analysis-016',
+    front: 'Distinguish pointwise convergence from uniform convergence of a sequence of functions.',
+    back: 'fₙ → f pointwise on D if for each x ∈ D and ε > 0, ∃N such that |fₙ(x) − f(x)| < ε for n ≥ N (N may depend on x). fₙ → f uniformly on D if N can be chosen independently of x. Uniform convergence preserves continuity, integrability, and (with extra conditions) differentiability.',
+    tags: ['convergence'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-017',
+    front: 'State the Weierstrass M-test for uniform convergence of series of functions.',
+    back: 'If |fₙ(x)| ≤ Mₙ for all x ∈ D and all n, and ∑Mₙ converges (Mₙ independent of x), then ∑fₙ(x) converges uniformly (and absolutely) on D. The Mₙ serve as a convergent majorant series. Application: power series converge uniformly on compact subsets within their radius of convergence.',
+    tags: ['convergence'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-real-analysis-018',
+    front:
+      'Define differentiability of f: ℝ → ℝ at a point c and state its relationship to continuity.',
+    back: "f is differentiable at c if the limit f'(c) = lim(h→0) [f(c+h) − f(c)] / h exists and is finite. Equivalently, f(c+h) = f(c) + f'(c)h + o(h). Every differentiable function is continuous, but the converse fails: f(x) = |x| is continuous at 0 but not differentiable at 0.",
+    tags: ['differentiability'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-real-analysis-019',
+    front: 'State the Mean Value Theorem (MVT) and one of its corollaries.',
+    back: "If f: [a, b] → ℝ is continuous on [a, b] and differentiable on (a, b), then there exists c ∈ (a, b) such that f'(c) = [f(b) − f(a)] / (b − a). Geometrically: there is a point where the tangent is parallel to the secant line. Corollary: if f' = 0 on an interval, then f is constant.",
+    tags: ['differentiability'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-real-analysis-020',
+    front: "State Taylor's theorem with the Lagrange form of the remainder.",
+    back: 'If f is (n+1)-times differentiable on an open interval containing a, then f(x) = Σ(k=0 to n) [f⁽ᵏ⁾(a)/k!] (x−a)ᵏ + Rₙ(x), where Rₙ(x) = f⁽ⁿ⁺¹⁾(c)/(n+1)! · (x−a)ⁿ⁺¹ for some c between a and x. Rₙ → 0 as n → ∞ for analytic functions. The integral form remainder is also widely used.',
+    tags: ['series'],
+    difficulty: 'hard',
+  },
+];
+<FlashcardDeck
+  deckId="uni-maths-real-analysis"
+  title="University Maths -- Real Analysis"
+  description="Supremum, compactness, convergence, continuity, Riemann integration, series tests"
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
+/>;

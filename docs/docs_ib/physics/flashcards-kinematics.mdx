@@ -8,7 +8,7 @@ tags: [Physics, IB Physics, Flashcards]
 ---
 
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
-const flashcardData = [
+export const flashcard1 = [
   {
     id: 'ib-phys-kinematics-001',
     front: 'What is the difference between scalar and vector quantities?',
@@ -40,10 +40,13 @@ const flashcardData = [
   {
     id: 'ib-phys-kinematics-005',
     front: 'List all five SUVAT equations and state when to use each.',
-    back: 'All require constant acceleration a and straight-line motion:\n1) v = u + at (missing s)\n2) s = ut + ½at² (missing v)\n3) v² = u² + 2as (missing t)\n4) s = ½(u + v)t (missing a)\n5) s = vt − ½at² (missing u)\nChoose based on which variable is unknown. u = initial velocity, v = final velocity, s = displacement, a = acceleration, t = time.',
+    back: 'All require constant acceleration a and straight-line motion: 1) v = u + at (missing s) 2) s = ut + ½at² (missing v) 3) v² = u² + 2as (missing t) 4) s = ½(u + v)t (missing a) 5) s = vt − ½at² (missing u) Choose based on which variable is unknown. u = initial velocity, v = final velocity, s = displacement, a = acceleration, t = time.',
     tags: ['kinematics', 'SUVAT'],
     difficulty: 'medium',
   },
+];
+
+export const flashcard2 = [
   {
     id: 'ib-phys-kinematics-006',
     front: 'What is free fall and what is the value of g?',
@@ -54,14 +57,14 @@ const flashcardData = [
   {
     id: 'ib-phys-kinematics-007',
     front: 'Explain projectile motion and how to analyse it.',
-    back: 'Projectile motion is the motion of an object launched into the air, subject only to gravity. Analyse by resolving into horizontal and vertical components:\nHorizontal: constant velocity (no acceleration, neglecting air resistance), x = u cos θ × t.\nVertical: uniform acceleration g, use SUVAT equations with a = −9.81 m s⁻¹.\nThe two components are independent — horizontal motion does not affect vertical motion.',
+    back: 'Projectile motion is the motion of an object launched into the air, subject only to gravity. Analyse by resolving into horizontal and vertical components: Horizontal: constant velocity (no acceleration, neglecting air resistance), x = u cos θ × t. Vertical: uniform acceleration g, use SUVAT equations with a = −9.81 m s⁻¹. The two components are independent — horizontal motion does not affect vertical motion.',
     tags: ['kinematics', 'projectile motion'],
     difficulty: 'medium',
   },
   {
     id: 'ib-phys-kinematics-008',
     front: 'State the key projectile motion formulas for horizontal range and maximum height.',
-    back: 'Launched at speed u, angle θ from level ground:\nMax height: H = (u sin θ)² / (2g)\nTime of flight: T = 2u sin θ / g\nHorizontal range: R = u² sin(2θ) / g\nMaximum range occurs at θ = 45°. Complementary angles (θ and 90° − θ) give the same range.',
+    back: 'Launched at speed u, angle θ from level ground: Max height: H = (u sin θ)² / (2g) Time of flight: T = 2u sin θ / g Horizontal range: R = u² sin(2θ) / g Maximum range occurs at θ = 45°. Complementary angles (θ and 90° − θ) give the same range.',
     tags: ['kinematics', 'projectile motion'],
     difficulty: 'medium',
   },
@@ -79,6 +82,9 @@ const flashcardData = [
     tags: ['kinematics', 'air resistance'],
     difficulty: 'medium',
   },
+];
+
+export const flashcard3 = [
   {
     id: 'ib-phys-kinematics-011',
     front: 'What does the gradient of a velocity-time graph represent?',
@@ -103,7 +109,7 @@ const flashcardData = [
   {
     id: 'ib-phys-kinematics-014',
     front: 'Derive v² = u² + 2as from first principles.',
-    back: 'From v = u + at: t = (v − u)/a. Substitute into s = ut + ½at²:\ns = u(v − u)/a + ½a((v − u)/a)²\ns = (uv − u²)/a + (v² − 2uv + u²)/(2a)\nMultiply by 2a: 2as = 2uv − 2u² + v² − 2uv + u² = v² − u²\nTherefore: v² = u² + 2as.',
+    back: 'From v = u + at: t = (v − u)/a. Substitute into s = ut + ½at²: s = u(v − u)/a + ½a((v − u)/a)² s = (uv − u²)/a + (v² − 2uv + u²)/(2a) Multiply by 2a: 2as = 2uv − 2u² + v² − 2uv + u² = v² − u² Therefore: v² = u² + 2as.',
     tags: ['kinematics', 'SUVAT', 'derivation'],
     difficulty: 'hard',
   },
@@ -115,6 +121,9 @@ const flashcardData = [
     tags: ['kinematics', 'free fall', 'calculation'],
     difficulty: 'hard',
   },
+];
+
+export const flashcard4 = [
   {
     id: 'ib-phys-kinematics-016',
     front:
@@ -153,9 +162,11 @@ const flashcardData = [
     difficulty: 'hard',
   },
 ];
+
 <FlashcardDeck
   deckId="ib-phys-kinematics"
   title="IB Physics: Kinematics"
   description="Scalars, vectors, SUVAT equations, projectile motion, free fall, terminal velocity, and graph interpretation."
-  cards={flashcardData}
-/>;
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
+/>
+;

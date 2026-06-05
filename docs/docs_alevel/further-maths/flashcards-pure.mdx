@@ -18,106 +18,171 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'complex-mod-arg', front: 'Define the modulus and argument of a
-complex number z = a + bi.', back: 'Modulus: |z| = √(a² + b²). This is the distance from the origin
-to the point (a,b) in the Argand diagram. Argument: arg(z) = arctan(b/a), measured from the positive
-real axis. The principal value is in the range -π < arg(z) ≤ π. Always sketch the Argand diagram to
-determine the correct quadrant.', tags: ['complex-numbers'], difficulty: 'easy', }, { id:
-'complex-polar', front: 'State Euler\'s formula and convert between Cartesian and polar forms of a
-complex number.', back: 'Euler\'s formula: e^(iθ) = cosθ + i sinθ. Polar form: z = r(cosθ + i sinθ)
-= re^(iθ) where r = |z| and θ = arg(z). Cartesian to polar: r = √(a²+b²), θ = arctan(b/a). Polar to
-Cartesian: a = r cosθ, b = r sinθ.', tags: ['complex-numbers'], difficulty: 'easy', }, { id:
-'de-moivre', front: 'State De Moivre\'s theorem for powers and roots of complex numbers.', back: 'De
-Moivre: [r(cosθ + i sinθ)]ⁿ = rⁿ(cos(nθ) + i sin(nθ)). For roots: z = r^(1/n)[cos((θ + 2kπ)/n) + i
-sin((θ + 2kπ)/n)] for k = 0, 1, ..., n-1. The n roots lie on a circle of radius r^(1/n) equally
-spaced at angles 2π/n apart.', tags: ['complex-numbers'], difficulty: 'medium', }, { id:
-'matrix-ops', front: 'State the rules for matrix multiplication and state when two matrices cannot
-be multiplied.', back: 'If A is m×n and B is p×q, then AB is defined only when n = p, giving an m×q
-matrix. The (i,j) entry of AB is the dot product of row i of A with column j of B. Matrix
-multiplication is associative but NOT commutative (AB ≠ BA in general). (AB)⁻¹ = B⁻¹A⁻¹.', tags:
-['matrices'], difficulty: 'easy', }, { id: 'matrix-det-inv', front: 'State the formula for the
-determinant and inverse of a 2×2 and 3×3 matrix.', back: '2×2: det M = ad - bc for M =
-[[a,b],[c,d]]. M⁻¹ = (1/det M)[[d,-b],[-c,a]]. 3×3: det M = a(ei-fh) - b(di-fg) + c(dh-eg) for rows
-[a,b,c],[d,e,f],[g,h,i]. The inverse of a 3×3 uses the adjugate (transpose of cofactor matrix)
-divided by the determinant.', tags: ['matrices'], difficulty: 'medium', }, { id: 'matrix-transform',
-front: 'Give the 2×2 matrices for reflection in the y-axis, rotation by 90° anticlockwise, and
-enlargement by scale factor k.', back: 'Reflection in y-axis: [[-1,0],[0,1]]. Rotation 90°
-anticlockwise: [[0,-1],[1,0]]. Enlargement by scale factor k: [[k,0],[0,k]]. The determinant of a
-transformation matrix gives the area scale factor. Negative determinant means the orientation is
-reversed.', tags: ['matrices', 'transformations'], difficulty: 'medium', }, { id: 'induction-steps',
-front: 'Outline the steps for a proof by mathematical induction.', back: 'Step 1 (Base case): Show
-the statement is true for n = 1 (or the given starting value). Step 2 (Assumption): Assume the
-statement is true for n = k. Step 3 (Inductive step): Using the assumption, prove the statement is
-true for n = k + 1. Step 4 (Conclusion): State "Since true for n = 1 and true for n = k implies true
-for n = k + 1, by mathematical induction the statement is true for all positive integers n."', tags:
-['proof'], difficulty: 'easy', }, { id: 'induction-divisibility', front: 'Prove by induction that
-3ⁿ - 1 is divisible by 2 for all positive integers n.', back: 'Base: n=1: 3¹ - 1 = 2, divisible
-by 2. Assume 3^k - 1 = 2m. For n=k+1: 3^(k+1) - 1 = 3(3^k) - 1 = 3(2m + 1) - 1 = 6m + 3 - 1 = 6m + 2
-= 2(3m+1), divisible by 2. QED.', tags: ['proof', 'divisibility'], difficulty: 'medium', }, { id:
-'induction-series', front: 'State the approach for proving a summation formula by induction.', back:
-'To prove Σᵢ₌₁ⁿ f(i) = g(n): Base case: verify Σᵢ₌₁¹ f(i) = g(1). Assume true for n = k: Σᵢ₌₁ᵏ f(i)
-= g(k). For n = k+1: Σᵢ₌₁ᵏ⁺¹ f(i) = g(k) + f(k+1). Then show g(k) + f(k+1) = g(k+1) by algebraic
-manipulation. Conclude by induction.', tags: ['proof', 'series'], difficulty: 'medium', }, { id:
-'hyperbolic-def', front: 'Define sinh x, cosh x and tanh x. State the key identity relating sinh²x
-and cosh²x.', back: 'sinh x = (eˣ - e⁻ˣ)/2. cosh x = (eˣ + e⁻ˣ)/2. tanh x = sinh x / cosh x = (eˣ -
-e⁻ˣ)/(eˣ + e⁻ˣ). Key identity: cosh²x - sinh²x = 1 (compare with cos²x + sin²x = 1). This follows
-directly from the definitions.', tags: ['hyperbolic-functions'], difficulty: 'easy', }, { id:
-'hyperbolic-inverse', front: 'State the logarithmic forms of arsinh x, arcosh x and artanh x.',
-back: 'arsinh x = ln(x + √(x² + 1)) for all real x. arcosh x = ln(x + √(x² - 1)) for x ≥ 1. artanh x
-= ½ ln((1+x)/(1-x)) for |x| < 1. These come from solving y = sinh x, y = cosh x, y = tanh x for x in
-terms of y, then using exponentials.', tags: ['hyperbolic-functions'], difficulty: 'hard', }, { id:
-'de-first-order', front: 'State the method for solving a first-order differential equation using an
-integrating factor.', back: 'For dy/dx + P(x)y = Q(x): Integrating factor IF = e^(∫P(x)dx). Multiply
-both sides by IF: IF × dy/dx + IF × P(x)y = IF × Q(x). The LHS becomes d/dx[y × IF]. Integrate both
-sides: y × IF = ∫[IF × Q(x)]dx + C. Solve for y. Always identify P(x) and Q(x) first by writing the
-equation in standard form.', tags: ['differential-equations'], difficulty: 'medium', }, { id:
-'de-second-order', front: 'State the method for solving a second-order homogeneous differential
-equation: a(d²y/dx²) + b(dy/dx) + cy = 0.', back: 'Form the auxiliary equation: am² + bm + c = 0.
-Three cases: (1) Real distinct roots m₁, m₂: y = Ae^(m₁x) + Be^(m₂x). (2) Repeated root m: y = (A +
-Bx)e^(mx). (3) Complex roots α ± βi: y = e^(αx)(A cos βx + B sin βx). A and B are constants found
-from boundary conditions.', tags: ['differential-equations'], difficulty: 'medium', }, { id:
-'de-particular', front: 'How do you find the particular integral for a second-order differential
-equation with a non-zero RHS?', back: 'For ay\'\' + by\' + cy = f(x): find complementary function
-(CF) as for homogeneous case, then guess a particular integral (PI) based on f(x). If f(x) is
-polynomial of degree n, try PI = polynomial of degree n. If f(x) = ke^(px), try PI = Ae^(px). If
-f(x) = a cos(qx) + b sin(qx), try PI = A cos(qx) + B sin(qx). General solution: y = CF + PI. If the
-PI guess appears in the CF, multiply by x and try again.', tags: ['differential-equations'],
-difficulty: 'hard', }, { id: 'polar-coords', front: 'Define polar coordinates and state how to
-convert between polar and Cartesian. How do you find the area enclosed by a polar curve?', back:
-'Polar: (r, θ) where r = distance from origin, θ = angle from positive x-axis. To Cartesian: x = r
-cosθ, y = r sinθ. To polar: r = √(x²+y²), θ = arctan(y/x). Area = ½ ∫ r² dθ. Area of a sector: A =
-½r²θ. Tangent at point: dy/dx = (r cosθ + r\'sinθ)/(-r sinθ + r\'cosθ) where r\' = dr/dθ.', tags:
-['polar-coordinates'], difficulty: 'medium', }, { id: 'maclaurin-series', front: 'State the
-Maclaurin series for eˣ, sin x, cos x and ln(1+x). Give the general formula.', back: 'f(x) = f(0) +
-f\'(0)x + f\'\'(0)x²/2! + f\'\'\'(0)x³/3! + ... = Σ f⁽ⁿ⁾(0)xⁿ/n!. eˣ = 1 + x + x²/2! + x³/3! + ...
-sin x = x - x³/3! + x⁵/5! - ... cos x = 1 - x²/2! + x⁴/4! - ... ln(1+x) = x - x²/2 + x³/3 - ... for
-|x| < 1. binomial: (1+x)ⁿ = 1 + nx + n(n-1)x²/2! + ...', tags: ['series'], difficulty: 'medium', },
-{ id: 'vector-geometry', front: 'How do you find the shortest distance between two skew lines in
-3D?', back: 'Two skew lines: r₁ = a + su and r₂ = b + tv. The shortest distance is along a line
-perpendicular to both. d = |(b - a) · (u × v)| / |u × v| where u and v are direction vectors. If the
-lines intersect, the cross product in the numerator gives zero. This formula also gives the distance
-between parallel lines.', tags: ['vectors'], difficulty: 'hard', }, { id: 'conic-parabola', front:
-'Define the parabola, ellipse and hyperbola in terms of focus-directrix properties and give their
-standard Cartesian equations.', back: 'Parabola: set of points equidistant from focus and directrix.
-y² = 4ax (focus at (a,0), directrix x = -a). Ellipse: sum of distances from two foci is constant
-(2a). x²/a² + y²/b² = 1 where a > b, foci at (±c, 0), c² = a² - b². Hyperbola: difference of
-distances from two foci is constant (2a). x²/a² - y²/b² = 1, foci at (±c, 0), c² = a² + b².
-Eccentricity: parabola e = 1, ellipse 0 < e < 1, hyperbola e > 1.', tags: ['conic-sections'],
-difficulty: 'hard', }, { id: 'complex-loci', front: 'How do you represent loci in the Argand diagram
-for |z - a| = r, |z - a| = |z - b|, and arg(z - a) = α?', back: '|z - a| = r: circle, centre a,
-radius r. |z - z₁| = k|z - z₂|: circle (Apollonius circle). |z - a| = |z - b|: perpendicular
-bisector of the line segment joining a and b. arg(z - a) = α: half-line from point a at angle α to
-the positive real axis (excluding point a itself). arg(z - a) - arg(z - b) = α: arc of a circle.',
-tags: ['complex-numbers', 'loci'], difficulty: 'hard', }, { id: 'taylor-series', front: 'What is the
-difference between Maclaurin and Taylor series? State the Taylor expansion of f(x) about x = a.',
-back: 'Maclaurin series is the special case of Taylor series about x = 0. Taylor series about x = a:
-f(x) = f(a) + f\'(a)(x-a) + f\'\'(a)(x-a)²/2! + ... = Σ f⁽ⁿ⁾(a)(x-a)ⁿ/n!. This is useful when f(0),
-f\'(0) etc. are difficult to evaluate but the function is well-behaved near x = a. Commonly used to
-approximate functions near a specific point.', tags: ['series'], difficulty: 'medium', } ];
+export const flashcards1 = [
+  {
+    id: 'complex-mod-arg',
+    front: 'Define the modulus and argument of a complex number z = a + bi.',
+    back: 'Modulus: |z| = √(a² + b²). This is the distance from the origin to the point (a,b) in the Argand diagram. Argument: arg(z) = arctan(b/a), measured from the positive real axis. The principal value is in the range -π < arg(z) ≤ π. Always sketch the Argand diagram to determine the correct quadrant.',
+    tags: ['complex-numbers'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'complex-polar',
+    front:
+      "State Euler's formula and convert between Cartesian and polar forms of a complex number.",
+    back: "Euler's formula: e^(iθ) = cosθ + i sinθ. Polar form: z = r(cosθ + i sinθ) = re^(iθ) where r = |z| and θ = arg(z). Cartesian to polar: r = √(a²+b²), θ = arctan(b/a). Polar to Cartesian: a = r cosθ, b = r sinθ.",
+    tags: ['complex-numbers'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'de-moivre',
+    front: "State De Moivre's theorem for powers and roots of complex numbers.",
+    back: 'De Moivre: [r(cosθ + i sinθ)]ⁿ = rⁿ(cos(nθ) + i sin(nθ)). For roots: z = r^(1/n)[cos((θ + 2kπ)/n) + i sin((θ + 2kπ)/n)] for k = 0, 1, ..., n-1. The n roots lie on a circle of radius r^(1/n) equally spaced at angles 2π/n apart.',
+    tags: ['complex-numbers'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'matrix-ops',
+    front:
+      'State the rules for matrix multiplication and state when two matrices cannot be multiplied.',
+    back: 'If A is m×n and B is p×q, then AB is defined only when n = p, giving an m×q matrix. The (i,j) entry of AB is the dot product of row i of A with column j of B. Matrix multiplication is associative but NOT commutative (AB ≠ BA in general). (AB)⁻¹ = B⁻¹A⁻¹.',
+    tags: ['matrices'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'matrix-det-inv',
+    front: 'State the formula for the determinant and inverse of a 2×2 and 3×3 matrix.',
+    back: '2×2: det M = ad - bc for M = [[a,b],[c,d]]. M⁻¹ = (1/det M)[[d,-b],[-c,a]]. 3×3: det M = a(ei-fh) - b(di-fg) + c(dh-eg) for rows [a,b,c],[d,e,f],[g,h,i]. The inverse of a 3×3 uses the adjugate (transpose of cofactor matrix) divided by the determinant.',
+    tags: ['matrices'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'matrix-transform',
+    front:
+      'Give the 2×2 matrices for reflection in the y-axis, rotation by 90° anticlockwise, and enlargement by scale factor k.',
+    back: 'Reflection in y-axis: [[-1,0],[0,1]]. Rotation 90° anticlockwise: [[0,-1],[1,0]]. Enlargement by scale factor k: [[k,0],[0,k]]. The determinant of a transformation matrix gives the area scale factor. Negative determinant means the orientation is reversed.',
+    tags: ['matrices', 'transformations'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'induction-steps',
+    front: 'Outline the steps for a proof by mathematical induction.',
+    back: 'Step 1 (Base case): Show the statement is true for n = 1 (or the given starting value). Step 2 (Assumption): Assume the statement is true for n = k. Step 3 (Inductive step): Using the assumption, prove the statement is true for n = k + 1. Step 4 (Conclusion): State "Since true for n = 1 and true for n = k implies true for n = k + 1, by mathematical induction the statement is true for all positive integers n."',
+    tags: ['proof'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'induction-divisibility',
+    front: 'Prove by induction that 3ⁿ - 1 is divisible by 2 for all positive integers n.',
+    back: 'Base: n=1: 3¹ - 1 = 2, divisible by 2. Assume 3^k - 1 = 2m. For n=k+1: 3^(k+1) - 1 = 3(3^k) - 1 = 3(2m + 1) - 1 = 6m + 3 - 1 = 6m + 2 = 2(3m+1), divisible by 2. QED.',
+    tags: ['proof', 'divisibility'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'induction-series',
+    front: 'State the approach for proving a summation formula by induction.',
+    back: 'To prove Σᵢ₌₁ⁿ f(i) = g(n): Base case: verify Σᵢ₌₁¹ f(i) = g(1). Assume true for n = k: Σᵢ₌₁ᵏ f(i) = g(k). For n = k+1: Σᵢ₌₁ᵏ⁺¹ f(i) = g(k) + f(k+1). Then show g(k) + f(k+1) = g(k+1) by algebraic manipulation. Conclude by induction.',
+    tags: ['proof', 'series'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hyperbolic-def',
+    front: 'Define sinh x, cosh x and tanh x. State the key identity relating sinh²x and cosh²x.',
+    back: 'sinh x = (eˣ - e⁻ˣ)/2. cosh x = (eˣ + e⁻ˣ)/2. tanh x = sinh x / cosh x = (eˣ - e⁻ˣ)/(eˣ + e⁻ˣ). Key identity: cosh²x - sinh²x = 1 (compare with cos²x + sin²x = 1). This follows directly from the definitions.',
+    tags: ['hyperbolic-functions'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'hyperbolic-inverse',
+    front: 'State the logarithmic forms of arsinh x, arcosh x and artanh x.',
+    back: 'arsinh x = ln(x + √(x² + 1)) for all real x. arcosh x = ln(x + √(x² - 1)) for x ≥ 1. artanh x = ½ ln((1+x)/(1-x)) for |x| < 1. These come from solving y = sinh x, y = cosh x, y = tanh x for x in terms of y, then using exponentials.',
+    tags: ['hyperbolic-functions'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'de-first-order',
+    front:
+      'State the method for solving a first-order differential equation using an integrating factor.',
+    back: 'For dy/dx + P(x)y = Q(x): Integrating factor IF = e^(∫P(x)dx). Multiply both sides by IF: IF × dy/dx + IF × P(x)y = IF × Q(x). The LHS becomes d/dx[y × IF]. Integrate both sides: y × IF = ∫[IF × Q(x)]dx + C. Solve for y. Always identify P(x) and Q(x) first by writing the equation in standard form.',
+    tags: ['differential-equations'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'de-second-order',
+    front:
+      'State the method for solving a second-order homogeneous differential equation: a(d²y/dx²) + b(dy/dx) + cy = 0.',
+    back: 'Form the auxiliary equation: am² + bm + c = 0. Three cases: (1) Real distinct roots m₁, m₂: y = Ae^(m₁x) + Be^(m₂x). (2) Repeated root m: y = (A + Bx)e^(mx). (3) Complex roots α ± βi: y = e^(αx)(A cos βx + B sin βx). A and B are constants found from boundary conditions.',
+    tags: ['differential-equations'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'de-particular',
+    front:
+      'How do you find the particular integral for a second-order differential equation with a non-zero RHS?',
+    back: "For ay'' + by' + cy = f(x): find complementary function (CF) as for homogeneous case, then guess a particular integral (PI) based on f(x). If f(x) is polynomial of degree n, try PI = polynomial of degree n. If f(x) = ke^(px), try PI = Ae^(px). If f(x) = a cos(qx) + b sin(qx), try PI = A cos(qx) + B sin(qx). General solution: y = CF + PI. If the PI guess appears in the CF, multiply by x and try again.",
+    tags: ['differential-equations'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'polar-coords',
+    front:
+      'Define polar coordinates and state how to convert between polar and Cartesian. How do you find the area enclosed by a polar curve?',
+    back: "Polar: (r, θ) where r = distance from origin, θ = angle from positive x-axis. To Cartesian: x = r cosθ, y = r sinθ. To polar: r = √(x²+y²), θ = arctan(y/x). Area = ½ ∫ r² dθ. Area of a sector: A = ½r²θ. Tangent at point: dy/dx = (r cosθ + r'sinθ)/(-r sinθ + r'cosθ) where r' = dr/dθ.",
+    tags: ['polar-coordinates'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'maclaurin-series',
+    front: 'State the Maclaurin series for eˣ, sin x, cos x and ln(1+x). Give the general formula.',
+    back: "f(x) = f(0) + f'(0)x + f''(0)x²/2! + f'''(0)x³/3! + ... = Σ f⁽ⁿ⁾(0)xⁿ/n!. eˣ = 1 + x + x²/2! + x³/3! + ... sin x = x - x³/3! + x⁵/5! - ... cos x = 1 - x²/2! + x⁴/4! - ... ln(1+x) = x - x²/2 + x³/3 - ... for |x| < 1. binomial: (1+x)ⁿ = 1 + nx + n(n-1)x²/2! + ...",
+    tags: ['series'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'vector-geometry',
+    front: 'How do you find the shortest distance between two skew lines in 3D?',
+    back: 'Two skew lines: r₁ = a + su and r₂ = b + tv. The shortest distance is along a line perpendicular to both. d = |(b - a) · (u × v)| / |u × v| where u and v are direction vectors. If the lines intersect, the cross product in the numerator gives zero. This formula also gives the distance between parallel lines.',
+    tags: ['vectors'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'conic-parabola',
+    front:
+      'Define the parabola, ellipse and hyperbola in terms of focus-directrix properties and give their standard Cartesian equations.',
+    back: 'Parabola: set of points equidistant from focus and directrix. y² = 4ax (focus at (a,0), directrix x = -a). Ellipse: sum of distances from two foci is constant (2a). x²/a² + y²/b² = 1 where a > b, foci at (±c, 0), c² = a² - b². Hyperbola: difference of distances from two foci is constant (2a). x²/a² - y²/b² = 1, foci at (±c, 0), c² = a² + b². Eccentricity: parabola e = 1, ellipse 0 < e < 1, hyperbola e > 1.',
+    tags: ['conic-sections'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'complex-loci',
+    front:
+      'How do you represent loci in the Argand diagram for |z - a| = r, |z - a| = |z - b|, and arg(z - a) = α?',
+    back: '|z - a| = r: circle, centre a, radius r. |z - z₁| = k|z - z₂|: circle (Apollonius circle). |z - a| = |z - b|: perpendicular bisector of the line segment joining a and b. arg(z - a) = α: half-line from point a at angle α to the positive real axis (excluding point a itself). arg(z - a) - arg(z - b) = α: arc of a circle.',
+    tags: ['complex-numbers', 'loci'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'taylor-series',
+    front:
+      'What is the difference between Maclaurin and Taylor series? State the Taylor expansion of f(x) about x = a.',
+    back: "Maclaurin series is the special case of Taylor series about x = 0. Taylor series about x = a: f(x) = f(a) + f'(a)(x-a) + f''(a)(x-a)²/2! + ... = Σ f⁽ⁿ⁾(a)(x-a)ⁿ/n!. This is useful when f(0), f'(0) etc. are difficult to evaluate but the function is well-behaved near x = a. Commonly used to approximate functions near a specific point.",
+    tags: ['series'],
+    difficulty: 'medium',
+  },
+];
 
 <FlashcardDeck
   deckId="alevel-further-maths-pure"
   title="A-Level Further Maths: Pure Mathematics"
   description="Complex numbers, matrices, induction, hyperbolics, DEs, polar coordinates, series"
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

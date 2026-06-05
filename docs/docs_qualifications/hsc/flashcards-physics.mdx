@@ -18,140 +18,169 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'hsc-physics-001', front: 'State the five kinematic equations for
-constant acceleration and define each variable.', back: 'v = u + at (velocity-time). v² = u² + 2as
-(velocity-displacement, no time). s = ut + ½at² (displacement-time). s = ½(u+v)t (average velocity).
-s = vt − ½at² (displacement from final velocity). Variables: u = initial velocity, v = final
-velocity, a = acceleration, t = time, s = displacement. Use only when acceleration is constant.
-Choose the equation that has the unknown variable you need to find.', tags: ['kinematics'],
-difficulty: 'easy', }, { id: 'hsc-physics-002', front: 'State Newton\'s three laws of motion and
-give a real-world application of each.', back: 'First (inertia): An object remains at rest or in
-uniform motion unless acted on by a net force. Application: seatbelts prevent passengers continuing
-forward. Second: F = ma. The acceleration is proportional to net force and inversely proportional to
-mass. Application: heavier vehicles need more braking force. Third (action-reaction): For every
-action there is an equal and opposite reaction. Application: rocket thrust against expelled gas.',
-tags: ['dynamics'], difficulty: 'easy', }, { id: 'hsc-physics-003', front: 'State the work-energy
-theorem and the principle of conservation of energy.', back: 'Work-energy theorem: W_net = ΔKE =
-½mv² − ½mu². Net work done equals change in kinetic energy. Conservation of energy: total energy
-(KE + PE + other forms) in an isolated system is constant. Energy can be transformed between forms
-but not created or destroyed. KE = ½mv², gravitational PE = mgh (near surface), elastic PE = ½kx².
-Power P = W/t = Fv (for constant force in direction of motion).', tags: ['energy'], difficulty:
-'medium', }, { id: 'hsc-physics-004', front: 'State the law of conservation of momentum and apply it
-to collisions.', back: 'Total momentum before = total momentum after (for an isolated system). p =
-mv. In elastic collisions: both momentum and KE are conserved. In inelastic collisions: momentum is
-conserved but KE is not (some KE is converted to heat, sound, deformation). Perfectly inelastic:
-objects stick together, maximum KE loss. For 1D: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂. Explosion problems:
-initial momentum = 0, so final momenta are equal and opposite.', tags: ['momentum'], difficulty:
-'medium', }, { id: 'hsc-physics-005', front: 'Describe circular motion. Define centripetal force,
-period, and frequency. Give the equations.', back: 'Circular motion: objects move in a circle at
-constant speed but changing velocity (direction changes → acceleration). Centripetal force F_c =
-mv²/r = mω²r (directed towards centre). Period T = 2πr/v = 2π/ω (time for one revolution). Frequency
-f = 1/T = v/(2πr) (revolutions per second). Angular velocity ω = 2πf = 2π/T = v/r (rad/s). The
-centripetal force is not a new force; it is provided by existing forces (tension, gravity, friction,
-normal force).', tags: ['circular-motion'], difficulty: 'medium', }, { id: 'hsc-physics-006', front:
-'Derive the equations for projectile motion: range and maximum height.', back: 'Horizontal: x =
-v₀cosθ × t (constant velocity, aₓ = 0). Vertical: y = v₀sinθ × t − ½gt². Time of flight: t =
-2v₀sinθ/g. Maximum height: H = (v₀sinθ)²/(2g). Range: R = v₀²sin(2θ)/g. Maximum range occurs at θ =
-45°. Complementary angles give the same range. At max height: vertical velocity = 0, only horizontal
-velocity remains.', tags: ['projectile-motion'], difficulty: 'hard', }, { id: 'hsc-physics-007',
-front: 'State the wave equation, describe superposition, and distinguish constructive from
-destructive interference.', back: 'Wave equation: v = fλ (speed = frequency × wavelength). Period T
-= 1/f. Superposition: when two waves overlap, the resultant displacement equals the sum of
-individual displacements. Constructive interference: waves in phase (crest meets crest) → amplitude
-doubles. Destructive interference: waves 180° out of phase (crest meets trough) → amplitude = 0.
-Path difference for constructive: nλ. Path difference for destructive: (n + ½)λ. Standing waves:
-nodes (no displacement) and antinodes (max displacement).', tags: ['waves'], difficulty: 'medium',
-}, { id: 'hsc-physics-008', front: 'Describe the motor effect, Faraday\'s law of electromagnetic
-induction, and Lenz\'s law.', back: 'Motor effect: a current-carrying conductor in a magnetic field
-experiences a force. F = BIl sinθ (θ between conductor and field). Direction: right-hand rule or
-Fleming\'s left-hand rule. Faraday\'s law: the induced EMF is proportional to the rate of change of
-magnetic flux: ε = −N(ΔΦ/Δt). Lenz\'s law: the induced current opposes the change in flux that
-produced it (minus sign). Applications: generators, transformers, induction cooktops.', tags:
-['electromagnetism'], difficulty: 'hard', }, { id: 'hsc-physics-009', front: 'State the key
-postulates of special relativity. Derive time dilation and length contraction.', back: 'Postulates:
-(1) Laws of physics are the same in all inertial reference frames. (2) Speed of light c is constant
-in all inertial frames (independent of source/observer motion). Time dilation: Δt = γΔt₀ where γ =
-1/√(1 − v²/c²) and Δt₀ is proper time. Moving clocks run slower. Length contraction: L = L₀/γ where
-L₀ is proper length. Moving objects contract in the direction of motion. Mass increase: m = γm₀.',
-tags: ['relativity'], difficulty: 'hard', }, { id: 'hsc-physics-010', front: 'Describe the Bohr
-model of the hydrogen atom and its limitations.', back: 'Bohr model: electrons orbit the nucleus in
-fixed circular orbits (energy levels). Postulates: (1) Electrons in allowed orbits do not radiate
-energy. (2) Radiation is emitted/absorbed when electrons jump between orbits. Energy of orbit n: Eₙ
-= −13.6/n² eV. Limitations: only works for hydrogen (single electron), cannot explain fine
-structure, violates uncertainty principle (precise orbits), does not explain electron-electron
-interactions. Replaced by quantum mechanical model.', tags: ['quantum-physics'], difficulty: 'hard',
-}, { id: 'hsc-physics-011', front: 'Describe the quantum mechanical model of the atom and the
-Heisenberg uncertainty principle.', back: 'Quantum model: electrons exist in probability clouds
-(orbitals) described by wave functions ψ. The probability of finding an electron is |ψ|². Orbitals
-are characterised by quantum numbers: n (principal), l (angular momentum), mₗ (magnetic), mₛ (spin).
-Heisenberg uncertainty principle: ΔxΔp ≥ ℏ/2. Cannot simultaneously know exact position and exact
-momentum of a particle. This explains why electrons do not spiral into the nucleus and why Bohr\'s
-precise orbits are invalid.', tags: ['quantum-physics'], difficulty: 'hard', }, { id:
-'hsc-physics-012', front: 'Describe the photoelectric effect and state Einstein\'s equation.', back:
-'Photoelectric effect: electrons are emitted from a metal surface when light of sufficient frequency
-(above the threshold frequency f₀) shines on it. Einstein\'s equation: E_k(max) = hf − φ where φ =
-hf₀ is the work function. Key observations: (1) Emission is instantaneous. (2) Increasing intensity
-increases number of photons but not their energy. (3) Increasing frequency increases KE of emitted
-electrons. (4) Below f₀: no emission regardless of intensity. Evidence for particle nature of
-light.', tags: ['quantum-physics'], difficulty: 'medium', }, { id: 'hsc-physics-013', front: 'State
-the de Broglie wavelength and explain its significance.', back: 'de Broglie: λ = h/p = h/(mv) where
-h = 6.626 × 10⁻³⁴ J·s (Planck\'s constant). All matter exhibits wave-like properties with wavelength
-inversely proportional to momentum. Significance: explains electron diffraction patterns
-(Davisson-Germer experiment), provides the theoretical basis for the wave nature of matter. High
-momentum particles have very short wavelengths (not detectable). Electron wavelengths are comparable
-to atomic spacing, enabling electron microscopy.', tags: ['quantum-physics'], difficulty: 'medium',
-}, { id: 'hsc-physics-014', front: 'Describe gravitational fields: weight, gravitational
-acceleration g, and orbital velocity.', back: 'Gravitational field: region of space where a mass
-experiences a gravitational force. Weight W = mg (near surface). Field strength g = GM/r² (varies
-with distance). For a satellite in circular orbit: gravitational force = centripetal force. GMm/r² =
-mv²/r → v_orbital = √(GM/r). Orbital period T = 2π√(r³/GM). Geostationary orbit: T = 24 h, r ≈
-42,300 km from Earth\'s centre. Gravitational potential energy: U = −GMm/r (zero at infinity).
-Escape velocity: v_esc = √(2GM/r).', tags: ['gravity'], difficulty: 'medium', }, { id:
-'hsc-physics-015', front: 'State Coulomb\'s law and describe electric fields and potential
-difference.', back: 'Coulomb\'s law: F = kq₁q₂/r² = (1/4πε₀)q₁q₂/r² where k ≈ 8.99 × 10⁹ N·m²/C².
-Like charges repel, unlike charges attract. Electric field E = F/q = kQ/r² (radial, from positive
-charges). Electric potential V = kQ/r (scalar, zero at infinity). Potential difference (voltage): V
-= W/q, the work done per unit charge moving between two points. For uniform field between parallel
-plates: E = V/d. Electric potential energy: U = kq₁q₂/r.', tags: ['electric-fields'], difficulty:
-'medium', }, { id: 'hsc-physics-016', front: 'Describe magnetic fields: force on a moving charge,
-and the right-hand rule.', back: 'Force on charge q moving at velocity v in field B: F = qvB sinθ.
-Maximum force when v ⊥ B, zero when v ∥ B. Direction: use right-hand rule (for positive charge) —
-fingers point along v, curl towards B, thumb gives force direction. For negative charges, reverse
-the direction. Units: B in Tesla (T), F in Newtons (N). A charge moving in a uniform magnetic field
-follows a circular path: qvB = mv²/r → r = mv/(qB). This is the principle behind mass
-spectrometers.', tags: ['magnetic-fields'], difficulty: 'hard', }, { id: 'hsc-physics-017', front:
-'Describe ideal transformers. State the transformer equation and the conditions for ideality.',
-back: 'Transformer equation: V_s/V_p = N_s/N_p (voltage ratio = turns ratio). For an ideal
-transformer: power in = power out, so V_pI_p = V_sI_s → I_s/I_p = N_p/N_s. Conditions for ideality:
-no energy loss (no resistance in coils, no magnetic flux leakage, no eddy current losses). In
-practice: efficiency < 100%. Step-up: N_s > N_p (increases voltage, decreases current). Step-down:
-N_s < N_p (decreases voltage, increases current). Used in power transmission to minimise I²R
-losses.', tags: ['transformers'], difficulty: 'medium', }, { id: 'hsc-physics-018', front: 'Describe
-AC circuits. Define RMS voltage and current. How are they related to peak values?', back: 'AC
-(alternating current): current direction reverses periodically. V(t) = V_peak sin(ωt) or V_peak
-cos(ωt). RMS (root mean square): the DC equivalent that delivers the same average power. V_rms =
-V_peak/√2. I_rms = I_peak/√2. Average power: P = V_rms × I_rms = V_peak I_peak/2. Australian mains:
-240 V RMS = 340 V peak, 50 Hz. Power dissipated in a resistor: P = I²R = V²/R (using RMS values).
-Oscilloscope measures peak values; multimeters typically read RMS.', tags: ['ac-circuits'],
-difficulty: 'medium', }, { id: 'hsc-physics-019', front: 'Describe nuclear physics: binding energy,
-mass defect, and types of radioactivity.', back: 'Mass defect: the mass of a nucleus is less than
-the sum of its nucleon masses. The "missing" mass is converted to binding energy: E = Δmc². Binding
-energy per nucleon peaks at Fe-56 (most stable nucleus). Fission: heavy nuclei split → energy
-released (nuclear power, atomic bombs). Fusion: light nuclei combine → energy released (stars,
-hydrogen bombs). Radioactivity: alpha (He nucleus, +2 charge, stopped by paper), beta (electron, −1
-charge, stopped by aluminium), gamma (EM radiation, no charge, stopped by lead). Half-life: time for
-half the nuclei to decay.', tags: ['nuclear-physics'], difficulty: 'medium', }, { id:
-'hsc-physics-020', front: 'State the mass-energy equivalence equation and calculate the energy
-released in a nuclear reaction.', back: 'E = mc² (Einstein). Energy released = (mass before − mass
-after) × c². Units: mass in kg, c = 3 × 10⁸ m/s → E in joules. Or: use atomic mass units (u), where
-1 u = 1.66 × 10⁻²⁷ kg, and 1 u × c² ≈ 931.5 MeV. Example: U-235 fission releases ≈ 200 MeV per
-nucleus. In comparison, chemical reactions release ≈ eV per molecule — nuclear reactions are ~10⁶
-times more energetic per mass than chemical reactions.', tags: ['nuclear-physics'], difficulty:
-'hard', } ];
+export const flashcard1 = [
+  {
+    id: 'hsc-physics-001',
+    front: 'State the five kinematic equations for constant acceleration and define each variable.',
+    back: 'v = u + at (velocity-time). v² = u² + 2as (velocity-displacement, no time). s = ut + ½at² (displacement-time). s = ½(u+v)t (average velocity). s = vt − ½at² (displacement from final velocity). Variables: u = initial velocity, v = final velocity, a = acceleration, t = time, s = displacement. Use only when acceleration is constant. Choose the equation that has the unknown variable you need to find.',
+    tags: ['kinematics'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'hsc-physics-002',
+    front: "State Newton's three laws of motion and give a real-world application of each.",
+    back: 'First (inertia): An object remains at rest or in uniform motion unless acted on by a net force. Application: seatbelts prevent passengers continuing forward. Second: F = ma. The acceleration is proportional to net force and inversely proportional to mass. Application: heavier vehicles need more braking force. Third (action-reaction): For every action there is an equal and opposite reaction. Application: rocket thrust against expelled gas.',
+    tags: ['dynamics'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'hsc-physics-003',
+    front: 'State the work-energy theorem and the principle of conservation of energy.',
+    back: 'Work-energy theorem: W_net = ΔKE = ½mv² − ½mu². Net work done equals change in kinetic energy. Conservation of energy: total energy (KE + PE + other forms) in an isolated system is constant. Energy can be transformed between forms but not created or destroyed. KE = ½mv², gravitational PE = mgh (near surface), elastic PE = ½kx². Power P = W/t = Fv (for constant force in direction of motion).',
+    tags: ['energy'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-004',
+    front: 'State the law of conservation of momentum and apply it to collisions.',
+    back: 'Total momentum before = total momentum after (for an isolated system). p = mv. In elastic collisions: both momentum and KE are conserved. In inelastic collisions: momentum is conserved but KE is not (some KE is converted to heat, sound, deformation). Perfectly inelastic: objects stick together, maximum KE loss. For 1D: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂. Explosion problems: initial momentum = 0, so final momenta are equal and opposite.',
+    tags: ['momentum'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-005',
+    front:
+      'Describe circular motion. Define centripetal force, period, and frequency. Give the equations.',
+    back: 'Circular motion: objects move in a circle at constant speed but changing velocity (direction changes → acceleration). Centripetal force F_c = mv²/r = mω²r (directed towards centre). Period T = 2πr/v = 2π/ω (time for one revolution). Frequency f = 1/T = v/(2πr) (revolutions per second). Angular velocity ω = 2πf = 2π/T = v/r (rad/s). The centripetal force is not a new force; it is provided by existing forces (tension, gravity, friction, normal force).',
+    tags: ['circular-motion'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'hsc-physics-006',
+    front: 'Derive the equations for projectile motion: range and maximum height.',
+    back: 'Horizontal: x = v₀cosθ × t (constant velocity, aₓ = 0). Vertical: y = v₀sinθ × t − ½gt². Time of flight: t = 2v₀sinθ/g. Maximum height: H = (v₀sinθ)²/(2g). Range: R = v₀²sin(2θ)/g. Maximum range occurs at θ = 45°. Complementary angles give the same range. At max height: vertical velocity = 0, only horizontal velocity remains.',
+    tags: ['projectile-motion'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'hsc-physics-007',
+    front:
+      'State the wave equation, describe superposition, and distinguish constructive from destructive interference.',
+    back: 'Wave equation: v = fλ (speed = frequency × wavelength). Period T = 1/f. Superposition: when two waves overlap, the resultant displacement equals the sum of individual displacements. Constructive interference: waves in phase (crest meets crest) → amplitude doubles. Destructive interference: waves 180° out of phase (crest meets trough) → amplitude = 0. Path difference for constructive: nλ. Path difference for destructive: (n + ½)λ. Standing waves: nodes (no displacement) and antinodes (max displacement).',
+    tags: ['waves'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-008',
+    front: "Describe the motor effect, Faraday's law of electromagnetic induction, and Lenz's law.",
+    back: "Motor effect: a current-carrying conductor in a magnetic field experiences a force. F = BIl sinθ (θ between conductor and field). Direction: right-hand rule or Fleming's left-hand rule. Faraday's law: the induced EMF is proportional to the rate of change of magnetic flux: ε = −N(ΔΦ/Δt). Lenz's law: the induced current opposes the change in flux that produced it (minus sign). Applications: generators, transformers, induction cooktops.",
+    tags: ['electromagnetism'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'hsc-physics-009',
+    front:
+      'State the key postulates of special relativity. Derive time dilation and length contraction.',
+    back: 'Postulates: (1) Laws of physics are the same in all inertial reference frames. (2) Speed of light c is constant in all inertial frames (independent of source/observer motion). Time dilation: Δt = γΔt₀ where γ = 1/√(1 − v²/c²) and Δt₀ is proper time. Moving clocks run slower. Length contraction: L = L₀/γ where L₀ is proper length. Moving objects contract in the direction of motion. Mass increase: m = γm₀.',
+    tags: ['relativity'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'hsc-physics-010',
+    front: 'Describe the Bohr model of the hydrogen atom and its limitations.',
+    back: 'Bohr model: electrons orbit the nucleus in fixed circular orbits (energy levels). Postulates: (1) Electrons in allowed orbits do not radiate energy. (2) Radiation is emitted/absorbed when electrons jump between orbits. Energy of orbit n: Eₙ = −13.6/n² eV. Limitations: only works for hydrogen (single electron), cannot explain fine structure, violates uncertainty principle (precise orbits), does not explain electron-electron interactions. Replaced by quantum mechanical model.',
+    tags: ['quantum-physics'],
+    difficulty: 'hard',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'hsc-physics-011',
+    front:
+      'Describe the quantum mechanical model of the atom and the Heisenberg uncertainty principle.',
+    back: "Quantum model: electrons exist in probability clouds (orbitals) described by wave functions ψ. The probability of finding an electron is |ψ|². Orbitals are characterised by quantum numbers: n (principal), l (angular momentum), mₗ (magnetic), mₛ (spin). Heisenberg uncertainty principle: ΔxΔp ≥ ℏ/2. Cannot simultaneously know exact position and exact momentum of a particle. This explains why electrons do not spiral into the nucleus and why Bohr's precise orbits are invalid.",
+    tags: ['quantum-physics'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'hsc-physics-012',
+    front: "Describe the photoelectric effect and state Einstein's equation.",
+    back: "Photoelectric effect: electrons are emitted from a metal surface when light of sufficient frequency (above the threshold frequency f₀) shines on it. Einstein's equation: E_k(max) = hf − φ where φ = hf₀ is the work function. Key observations: (1) Emission is instantaneous. (2) Increasing intensity increases number of photons but not their energy. (3) Increasing frequency increases KE of emitted electrons. (4) Below f₀: no emission regardless of intensity. Evidence for particle nature of light.",
+    tags: ['quantum-physics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-013',
+    front: 'State the de Broglie wavelength and explain its significance.',
+    back: "de Broglie: λ = h/p = h/(mv) where h = 6.626 × 10⁻³⁴ J·s (Planck's constant). All matter exhibits wave-like properties with wavelength inversely proportional to momentum. Significance: explains electron diffraction patterns (Davisson-Germer experiment), provides the theoretical basis for the wave nature of matter. High momentum particles have very short wavelengths (not detectable). Electron wavelengths are comparable to atomic spacing, enabling electron microscopy.",
+    tags: ['quantum-physics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-014',
+    front:
+      'Describe gravitational fields: weight, gravitational acceleration g, and orbital velocity.',
+    back: "Gravitational field: region of space where a mass experiences a gravitational force. Weight W = mg (near surface). Field strength g = GM/r² (varies with distance). For a satellite in circular orbit: gravitational force = centripetal force. GMm/r² = mv²/r → v_orbital = √(GM/r). Orbital period T = 2π√(r³/GM). Geostationary orbit: T = 24 h, r ≈ 42,300 km from Earth's centre. Gravitational potential energy: U = −GMm/r (zero at infinity). Escape velocity: v_esc = √(2GM/r).",
+    tags: ['gravity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-015',
+    front: "State Coulomb's law and describe electric fields and potential difference.",
+    back: "Coulomb's law: F = kq₁q₂/r² = (1/4πε₀)q₁q₂/r² where k ≈ 8.99 × 10⁹ N·m²/C². Like charges repel, unlike charges attract. Electric field E = F/q = kQ/r² (radial, from positive charges). Electric potential V = kQ/r (scalar, zero at infinity). Potential difference (voltage): V = W/q, the work done per unit charge moving between two points. For uniform field between parallel plates: E = V/d. Electric potential energy: U = kq₁q₂/r.",
+    tags: ['electric-fields'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'hsc-physics-016',
+    front: 'Describe magnetic fields: force on a moving charge, and the right-hand rule.',
+    back: 'Force on charge q moving at velocity v in field B: F = qvB sinθ. Maximum force when v ⊥ B, zero when v ∥ B. Direction: use right-hand rule (for positive charge) — fingers point along v, curl towards B, thumb gives force direction. For negative charges, reverse the direction. Units: B in Tesla (T), F in Newtons (N). A charge moving in a uniform magnetic field follows a circular path: qvB = mv²/r → r = mv/(qB). This is the principle behind mass spectrometers.',
+    tags: ['magnetic-fields'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'hsc-physics-017',
+    front:
+      'Describe ideal transformers. State the transformer equation and the conditions for ideality.',
+    back: 'Transformer equation: V_s/V_p = N_s/N_p (voltage ratio = turns ratio). For an ideal transformer: power in = power out, so V_pI_p = V_sI_s → I_s/I_p = N_p/N_s. Conditions for ideality: no energy loss (no resistance in coils, no magnetic flux leakage, no eddy current losses). In practice: efficiency < 100%. Step-up: N_s > N_p (increases voltage, decreases current). Step-down: N_s < N_p (decreases voltage, increases current). Used in power transmission to minimise I²R losses.',
+    tags: ['transformers'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-018',
+    front:
+      'Describe AC circuits. Define RMS voltage and current. How are they related to peak values?',
+    back: 'AC (alternating current): current direction reverses periodically. V(t) = V_peak sin(ωt) or V_peak cos(ωt). RMS (root mean square): the DC equivalent that delivers the same average power. V_rms = V_peak/√2. I_rms = I_peak/√2. Average power: P = V_rms × I_rms = V_peak I_peak/2. Australian mains: 240 V RMS = 340 V peak, 50 Hz. Power dissipated in a resistor: P = I²R = V²/R (using RMS values). Oscilloscope measures peak values; multimeters typically read RMS.',
+    tags: ['ac-circuits'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-019',
+    front: 'Describe nuclear physics: binding energy, mass defect, and types of radioactivity.',
+    back: 'Mass defect: the mass of a nucleus is less than the sum of its nucleon masses. The "missing" mass is converted to binding energy: E = Δmc². Binding energy per nucleon peaks at Fe-56 (most stable nucleus). Fission: heavy nuclei split → energy released (nuclear power, atomic bombs). Fusion: light nuclei combine → energy released (stars, hydrogen bombs). Radioactivity: alpha (He nucleus, +2 charge, stopped by paper), beta (electron, −1 charge, stopped by aluminium), gamma (EM radiation, no charge, stopped by lead). Half-life: time for half the nuclei to decay.',
+    tags: ['nuclear-physics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'hsc-physics-020',
+    front:
+      'State the mass-energy equivalence equation and calculate the energy released in a nuclear reaction.',
+    back: 'E = mc² (Einstein). Energy released = (mass before − mass after) × c². Units: mass in kg, c = 3 × 10⁸ m/s → E in joules. Or: use atomic mass units (u), where 1 u = 1.66 × 10⁻²⁷ kg, and 1 u × c² ≈ 931.5 MeV. Example: U-235 fission releases ≈ 200 MeV per nucleus. In comparison, chemical reactions release ≈ eV per molecule — nuclear reactions are ~10⁶ times more energetic per mass than chemical reactions.',
+    tags: ['nuclear-physics'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="hsc-physics"
   title="NSW HSC Physics"
   description="Kinematics, forces, energy, waves, electromagnetism, relativity, quantum, orbital mechanics, nuclear physics"
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

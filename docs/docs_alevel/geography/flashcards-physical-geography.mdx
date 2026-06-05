@@ -18,90 +18,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"alevel-geog-physical-001",front:"What are the main stores in the water
-cycle?",back:"Oceans, ice caps and glaciers, groundwater, lakes, rivers, soil moisture, biomass and
-the
-atmosphere.",tags:["water-cycle"],difficulty:"easy"},{id:"alevel-geog-physical-002",front:"Define
-evapotranspiration.",back:"The combined process of evaporation from water surfaces and soil, plus
-transpiration from plants, returning water vapour to the
-atmosphere.",tags:["water-cycle"],difficulty:"easy"},{id:"alevel-geog-physical-003",front:"What is a
-drainage basin?",back:"An open system bounded by a watershed, where precipitation enters as input,
-moves through stores and transfers, and leaves via river discharge and
-evapotranspiration.",tags:["water-cycle"],difficulty:"easy"},{id:"alevel-geog-physical-004",front:"Name
-the four main coastal erosion processes.",back:"Hydraulic action (wave pressure in cracks), abrasion
-(sediment scraping rock), attrition (sediment particles colliding and breaking down), and
-corrosion/solution (chemical dissolution of soluble
-rocks).",tags:["coastal"],difficulty:"easy"},{id:"alevel-geog-physical-005",front:"What is longshore
-drift?",back:"The movement of sediment along a coastline by waves approaching at an angle, creating
-swash up the beach at an angle and backwash straight down under
-gravity.",tags:["coastal"],difficulty:"easy"},{id:"alevel-geog-physical-006",front:"What is a
-glacier's equilibrium line?",back:"The point on a glacier where accumulation (snowfall adding mass)
-equals ablation (melting and calving removing mass). Above it the glacier gains mass; below it the
-glacier loses
-mass.",tags:["glacial"],difficulty:"easy"},{id:"alevel-geog-physical-007",front:"Define a tectonic
-plate.",back:"A rigid segment of the Earth's lithosphere that moves, floats and sometimes fractures,
-whose movements cause earthquakes and volcanic activity at plate
-boundaries.",tags:["hazards"],difficulty:"easy"},{id:"alevel-geog-physical-008",front:"What are the
-two main stores in the carbon cycle?",back:"The lithosphere (fossil fuels, limestone, organic matter
-in soil) and the atmosphere (carbon dioxide and methane). Additional stores include the hydrosphere
-and
-biosphere.",tags:["carbon-cycle"],difficulty:"medium"},{id:"alevel-geog-physical-009",front:"Explain
-the difference between throughflow and overland flow.",back:"Throughflow is water moving downslope
-through soil pores and percolation, relatively slow and filtering sediments. Overland flow (surface
-runoff) is fast water movement across the surface when the soil is saturated or impermeable,
-carrying more sediment and increasing flood
-risk.",tags:["water-cycle"],difficulty:"medium"},{id:"alevel-geog-physical-010",front:"How does a
-headland and bay coastline form?",back:"Differential erosion on coastlines with alternating bands of
-resistant and less resistant rock. Less resistant rock erodes faster forming bays; resistant rock
-remains as headlands. Wave refraction concentrates energy on headlands, accelerating
-erosion.",tags:["coastal"],difficulty:"medium"},{id:"alevel-geog-physical-011",front:"Describe how a
-spit forms.",back:"Longshore drift carries sediment along the coast. When the coastline changes
-direction, sediment continues depositing into open water, forming an elongated ridge. A salt marsh
-may develop in the sheltered area behind the
-spit.",tags:["coastal"],difficulty:"medium"},{id:"alevel-geog-physical-012",front:"What is the
-difference between constructive and destructive waves?",back:"Constructive waves have a strong swash
-and weak backwash, depositing sediment and building wide gentle beaches. Destructive waves have a
-weak swash and powerful backwash, eroding sediment and creating steep narrow
-beaches.",tags:["coastal"],difficulty:"medium"},{id:"alevel-geog-physical-013",front:"How does
-glacial plucking differ from glacial abrasion?",back:"Plucking (quarrying) occurs when meltwater
-refreezes in bedrock joints and the glacier pulls away loosened blocks as it moves. Abrasion
-involves sediment embedded in ice scratching and polishing bedrock, producing striations parallel to
-ice flow.",tags:["glacial"],difficulty:"medium"},{id:"alevel-geog-physical-014",front:"Explain how a
-corrie (cirque) forms.",back:"Snow accumulates in a hollow on a mountainside, compacting into ice.
-Freeze-thaw weathering (nivation) weakens the back wall. Rotational slip deepens the hollow, while
-abrasion steepens the back wall. A rock lip forms where erosion is less intense at the corrie
-edge.",tags:["glacial"],difficulty:"medium"},{id:"alevel-geog-physical-015",front:"What is a
-pyroclastic flow?",back:"A high-speed (up to 700 km/h), high-temperature (700+ degrees C) density
-current of hot gas, ash and rock fragments that flows down a volcano's flank during explosive
-eruptions. It is the deadliest volcanic
-phenomenon.",tags:["hazards"],difficulty:"medium"},{id:"alevel-geog-physical-016",front:"How does
-the UNISDR disaster risk equation work?",back:"Disaster Risk = Hazard x Vulnerability x Exposure,
-mitigated by Capacity. The same hazard can produce vastly different outcomes depending on a
-population's vulnerability, exposure and capacity to
-cope.",tags:["hazards"],difficulty:"medium"},{id:"alevel-geog-physical-017",front:"What are the four
-stages of the Park Model (1978)?",back:"Pre-disaster (existing conditions), emergency/immediate
-impact phase (short-term response), recovery/rehabilitation phase (rebuilding infrastructure and
-services), and long-term reconstruction phase (addressing underlying
-vulnerabilities).",tags:["hazards"],difficulty:"medium"},{id:"alevel-geog-physical-018",front:"Explain
-the concept of a soil moisture budget and its relationship to AET and PET.",back:"A soil moisture
-budget tracks inputs (precipitation) against outputs (AET). When rainfall exceeds AET there is a
-soil moisture surplus. When AET exceeds rainfall, a deficit develops. AET equals PET only when
-sufficient soil water is available; in arid regions AET is constrained below
-PET.",tags:["water-cycle"],difficulty:"hard"},{id:"alevel-geog-physical-019",front:"Assess how
-climate change alters the carbon cycle and creates positive feedback loops.",back:"Warming increases
-ocean temperature, reducing CO2 solubility so oceans absorb less carbon. Melting permafrost releases
-stored methane, a potent greenhouse gas. Deforestation reduces biomass carbon stores. These changes
-amplify warming, creating positive feedback loops that further accelerate carbon
-release.",tags:["carbon-cycle"],difficulty:"hard"},{id:"alevel-geog-physical-020",front:"Evaluate
-why vulnerability to tectonic hazards is often higher in developing nations.",back:"Developing
-nations face higher vulnerability due to limited building codes and enforcement, inadequate
-emergency services, dense urban populations in hazard-prone areas, lower literacy reducing
-preparedness, and limited government capacity for disaster response and reconstruction. Poverty is
-the single greatest driver of vulnerability.",tags:["hazards"],difficulty:"hard"}];
+export const flashcards1 = [
+  {
+    id: 'alevel-geog-physical-001',
+    front: 'What are the main stores in the water cycle?',
+    back: 'Oceans, ice caps and glaciers, groundwater, lakes, rivers, soil moisture, biomass and the atmosphere.',
+    tags: ['water-cycle'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-geog-physical-002',
+    front: 'Define evapotranspiration.',
+    back: 'The combined process of evaporation from water surfaces and soil, plus transpiration from plants, returning water vapour to the atmosphere.',
+    tags: ['water-cycle'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-geog-physical-003',
+    front: 'What is a drainage basin?',
+    back: 'An open system bounded by a watershed, where precipitation enters as input, moves through stores and transfers, and leaves via river discharge and evapotranspiration.',
+    tags: ['water-cycle'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-geog-physical-004',
+    front: 'Name the four main coastal erosion processes.',
+    back: 'Hydraulic action (wave pressure in cracks), abrasion (sediment scraping rock), attrition (sediment particles colliding and breaking down), and corrosion/solution (chemical dissolution of soluble rocks).',
+    tags: ['coastal'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-geog-physical-005',
+    front: 'What is longshore drift?',
+    back: 'The movement of sediment along a coastline by waves approaching at an angle, creating swash up the beach at an angle and backwash straight down under gravity.',
+    tags: ['coastal'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'alevel-geog-physical-006',
+    front: "What is a glacier's equilibrium line?",
+    back: 'The point on a glacier where accumulation (snowfall adding mass) equals ablation (melting and calving removing mass). Above it the glacier gains mass; below it the glacier loses mass.',
+    tags: ['glacial'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-geog-physical-007',
+    front: 'Define a tectonic plate.',
+    back: "A rigid segment of the Earth's lithosphere that moves, floats and sometimes fractures, whose movements cause earthquakes and volcanic activity at plate boundaries.",
+    tags: ['hazards'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'alevel-geog-physical-008',
+    front: 'What are the two main stores in the carbon cycle?',
+    back: 'The lithosphere (fossil fuels, limestone, organic matter in soil) and the atmosphere (carbon dioxide and methane). Additional stores include the hydrosphere and biosphere.',
+    tags: ['carbon-cycle'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-009',
+    front: 'Explain the difference between throughflow and overland flow.',
+    back: 'Throughflow is water moving downslope through soil pores and percolation, relatively slow and filtering sediments. Overland flow (surface runoff) is fast water movement across the surface when the soil is saturated or impermeable, carrying more sediment and increasing flood risk.',
+    tags: ['water-cycle'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-010',
+    front: 'How does a headland and bay coastline form?',
+    back: 'Differential erosion on coastlines with alternating bands of resistant and less resistant rock. Less resistant rock erodes faster forming bays; resistant rock remains as headlands. Wave refraction concentrates energy on headlands, accelerating erosion.',
+    tags: ['coastal'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'alevel-geog-physical-011',
+    front: 'Describe how a spit forms.',
+    back: 'Longshore drift carries sediment along the coast. When the coastline changes direction, sediment continues depositing into open water, forming an elongated ridge. A salt marsh may develop in the sheltered area behind the spit.',
+    tags: ['coastal'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-012',
+    front: 'What is the difference between constructive and destructive waves?',
+    back: 'Constructive waves have a strong swash and weak backwash, depositing sediment and building wide gentle beaches. Destructive waves have a weak swash and powerful backwash, eroding sediment and creating steep narrow beaches.',
+    tags: ['coastal'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-013',
+    front: 'How does glacial plucking differ from glacial abrasion?',
+    back: 'Plucking (quarrying) occurs when meltwater refreezes in bedrock joints and the glacier pulls away loosened blocks as it moves. Abrasion involves sediment embedded in ice scratching and polishing bedrock, producing striations parallel to ice flow.',
+    tags: ['glacial'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-014',
+    front: 'Explain how a corrie (cirque) forms.',
+    back: 'Snow accumulates in a hollow on a mountainside, compacting into ice. Freeze-thaw weathering (nivation) weakens the back wall. Rotational slip deepens the hollow, while abrasion steepens the back wall. A rock lip forms where erosion is less intense at the corrie edge.',
+    tags: ['glacial'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-015',
+    front: 'What is a pyroclastic flow?',
+    back: "A high-speed (up to 700 km/h), high-temperature (700+ degrees C) density current of hot gas, ash and rock fragments that flows down a volcano's flank during explosive eruptions. It is the deadliest volcanic phenomenon.",
+    tags: ['hazards'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'alevel-geog-physical-016',
+    front: 'How does the UNISDR disaster risk equation work?',
+    back: "Disaster Risk = Hazard x Vulnerability x Exposure, mitigated by Capacity. The same hazard can produce vastly different outcomes depending on a population's vulnerability, exposure and capacity to cope.",
+    tags: ['hazards'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-017',
+    front: 'What are the four stages of the Park Model (1978)?',
+    back: 'Pre-disaster (existing conditions), emergency/immediate impact phase (short-term response), recovery/rehabilitation phase (rebuilding infrastructure and services), and long-term reconstruction phase (addressing underlying vulnerabilities).',
+    tags: ['hazards'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'alevel-geog-physical-018',
+    front: 'Explain the concept of a soil moisture budget and its relationship to AET and PET.',
+    back: 'A soil moisture budget tracks inputs (precipitation) against outputs (AET). When rainfall exceeds AET there is a soil moisture surplus. When AET exceeds rainfall, a deficit develops. AET equals PET only when sufficient soil water is available; in arid regions AET is constrained below PET.',
+    tags: ['water-cycle'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'alevel-geog-physical-019',
+    front: 'Assess how climate change alters the carbon cycle and creates positive feedback loops.',
+    back: 'Warming increases ocean temperature, reducing CO2 solubility so oceans absorb less carbon. Melting permafrost releases stored methane, a potent greenhouse gas. Deforestation reduces biomass carbon stores. These changes amplify warming, creating positive feedback loops that further accelerate carbon release.',
+    tags: ['carbon-cycle'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'alevel-geog-physical-020',
+    front: 'Evaluate why vulnerability to tectonic hazards is often higher in developing nations.',
+    back: 'Developing nations face higher vulnerability due to limited building codes and enforcement, inadequate emergency services, dense urban populations in hazard-prone areas, lower literacy reducing preparedness, and limited government capacity for disaster response and reconstruction. Poverty is the single greatest driver of vulnerability.',
+    tags: ['hazards'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="alevel-geog-physical"
   title="A-Level Geography -- Physical Geography"
   description="Flashcards covering the water cycle, carbon cycle, coastal processes, glacial systems, and tectonic and atmospheric hazards."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

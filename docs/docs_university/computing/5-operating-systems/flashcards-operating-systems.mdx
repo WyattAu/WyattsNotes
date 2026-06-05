@@ -18,93 +18,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"uni-cs-operating-systems-001",front:"What is a Process Control Block
-(PCB)?",back:"A PCB is a data structure maintained by the OS for each process, containing its
-process ID, register values, memory limits, open files, scheduling information (priority, state),
-and I/O
-status.",tags:["process-management","pcb"],difficulty:"easy"},{id:"uni-cs-operating-systems-002",front:"What
-is context switching?",back:"Context switching is the process of saving the state (registers, PCB)
-of the currently running process and loading the saved state of the next process, enabling the CPU
-to share execution time between
-processes.",tags:["process-management","context-switching"],difficulty:"easy"},{id:"uni-cs-operating-systems-003",front:"Name
-three common CPU scheduling algorithms.",back:"First-Come First-Served (FCFS), Shortest Job First
-(SJF), and Round Robin (RR). FCFS is simplest, SJF minimizes average waiting time, and RR provides
-fair time-sliced execution using a ready
-queue.",tags:["process-management","scheduling"],difficulty:"easy"},{id:"uni-cs-operating-systems-004",front:"What
-is the difference between paging and segmentation?",back:"Paging divides memory into fixed-size
-pages to eliminate external fragmentation. Segmentation divides memory into variable-sized logical
-segments reflecting the program structure (code, stack, heap), supporting user-visible memory
-division.",tags:["memory-management","paging","segmentation"],difficulty:"easy"},{id:"uni-cs-operating-systems-005",front:"What
-is a Translation Lookaside Buffer (TLB)?",back:"A TLB is a small, fast hardware cache that stores
-recent virtual-to-physical address translations. It avoids the need to access the page table in main
-memory for every memory reference, significantly speeding up address
-translation.",tags:["memory-management","tlb","virtual-memory"],difficulty:"easy"},{id:"uni-cs-operating-systems-006",front:"What
-is the purpose of demand paging?",back:"Demand paging loads pages into physical memory only when
-they are first referenced, not at program start. This reduces memory usage and startup time,
-allowing programs larger than physical memory to
-run.",tags:["memory-management","virtual-memory","demand-paging"],difficulty:"easy"},{id:"uni-cs-operating-systems-007",front:"What
-is an inode in a Unix file system?",back:"An inode is a data structure that stores metadata about a
-file: its size, owner, permissions, timestamps, and the disk block addresses (direct and indirect
-pointers) where the file's data is
-stored.",tags:["file-systems","inode"],difficulty:"easy"},{id:"uni-cs-operating-systems-008",front:"What
-is journaling in a file system?",back:"Journaling records intended changes to disk metadata in a log
-(journal) before committing them. After a crash, the journal is replayed to restore consistency,
-preventing file system corruption from incomplete
-writes.",tags:["file-systems","journaling"],difficulty:"medium"},{id:"uni-cs-operating-systems-009",front:"How
-does Round Robin scheduling differ from FCFS?",back:"RR adds a time quantum (time slice) and
-preempts processes when their quantum expires, placing them at the back of the ready queue. FCFS
-runs each process to completion without preemption. RR provides better response time for interactive
-systems.",tags:["process-management","scheduling"],difficulty:"medium"},{id:"uni-cs-operating-systems-010",front:"What
-is a page fault and how is it handled?",back:"A page fault occurs when a process accesses a virtual
-address whose page is not in physical memory. The OS traps the fault, locates the page on disk,
-loads it into a free frame, updates the page table, and restarts the
-instruction.",tags:["memory-management","virtual-memory"],difficulty:"medium"},{id:"uni-cs-operating-systems-011",front:"Compare
-three disk block allocation methods.",back:"Contiguous allocation uses consecutive blocks (fast
-access, external fragmentation). Linked allocation chains blocks via pointers (no fragmentation,
-slow random access). Indexed allocation uses an index block of pointers (direct access, index block
-overhead).",tags:["file-systems","allocation"],difficulty:"medium"},{id:"uni-cs-operating-systems-012",front:"What
-is a semaphore?",back:"A semaphore is a synchronization primitive with an integer value and two
-atomic operations: wait(P) decrements the value (blocks if it becomes negative) and signal(V)
-increments it (wakes a blocked process). It controls access to shared
-resources.",tags:["synchronization","semaphores"],difficulty:"medium"},{id:"uni-cs-operating-systems-013",front:"What
-are the four necessary conditions for deadlock?",back:"Mutual exclusion (resources cannot be
-shared), Hold and wait (a process holds resources while waiting for more), No preemption (resources
-cannot be forcibly taken), and Circular wait (a cycle of processes each waiting on the
-next).",tags:["synchronization","deadlock"],difficulty:"medium"},{id:"uni-cs-operating-systems-014",front:"What
-is the difference between a monitor and a semaphore?",back:"A monitor is a high-level
-synchronization construct that encapsulates shared data with condition variables and mutual
-exclusion is implicit. Semaphores are lower-level, requiring the programmer to explicitly manage
-wait/signal operations
-correctly.",tags:["synchronization","monitors","semaphores"],difficulty:"medium"},{id:"uni-cs-operating-systems-015",front:"What
-is the difference between polling and interrupt-driven I/O?",back:"Polling has the CPU repeatedly
-check the device status register, wasting CPU cycles when the device is idle. Interrupt-driven I/O
-lets the CPU work on other tasks; the device raises an interrupt when data is
-ready.",tags:["io-management","interrupts","polling"],difficulty:"medium"},{id:"uni-cs-operating-systems-016",front:"What
-is Direct Memory Access (DMA)?",back:"DMA allows a specialized controller to transfer data directly
-between I/O devices and memory without CPU intervention for each word. The CPU initiates the
-transfer and is interrupted only when the entire block transfer
-completes.",tags:["io-management","dma"],difficulty:"medium"},{id:"uni-cs-operating-systems-017",front:"What
-is the difference between access control lists and capabilities?",back:"Access control lists (ACLs)
-associate each resource with a list of who can access it and how (resource-centric). Capabilities
-are unforgeable tokens held by subjects granting access to specific resources
-(subject-centric).",tags:["security","access-control"],difficulty:"medium"},{id:"uni-cs-operating-systems-018",front:"What
-is thrashing and how can it be mitigated?",back:"Thrashing occurs when a process spends more time
-paging in/out than executing, caused by insufficient frames for the working set. Mitigation includes
-local replacement, working set model, reducing multiprogramming degree, or swapping processes
-out.",tags:["memory-management","virtual-memory","thrashing"],difficulty:"hard"},{id:"uni-cs-operating-systems-019",front:"How
-does sandboxing enforce process isolation at the OS level?",back:"Sandboxing restricts a process's
-access to system resources using namespaces (isolating filesystem, network, PID views), cgroups
-(limiting CPU, memory, I/O), seccomp (filtering system calls), and mandatory access control policies
-(SELinux/AppArmor).",tags:["security","sandboxing"],difficulty:"hard"},{id:"uni-cs-operating-systems-020",front:"Explain
-the readers-writers problem and one solution using semaphores.",back:"Multiple readers can read
-concurrently, but writers need exclusive access. A solution uses a read_count variable protected by
-a mutex, a wrt semaphore to enforce exclusive writing, and a mutex3 semaphore to prevent writer
-starvation (readers wait if a writer is
-waiting).",tags:["synchronization","semaphores","classical-problems"],difficulty:"hard"}];
+export const flashcards1 = [
+  {
+    id: 'uni-cs-operating-systems-001',
+    front: 'What is a Process Control Block (PCB)?',
+    back: 'A PCB is a data structure maintained by the OS for each process, containing its process ID, register values, memory limits, open files, scheduling information (priority, state), and I/O status.',
+    tags: ['process-management', 'pcb'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-operating-systems-002',
+    front: 'What is context switching?',
+    back: 'Context switching is the process of saving the state (registers, PCB) of the currently running process and loading the saved state of the next process, enabling the CPU to share execution time between processes.',
+    tags: ['process-management', 'context-switching'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-operating-systems-003',
+    front: 'Name three common CPU scheduling algorithms.',
+    back: 'First-Come First-Served (FCFS), Shortest Job First (SJF), and Round Robin (RR). FCFS is simplest, SJF minimizes average waiting time, and RR provides fair time-sliced execution using a ready queue.',
+    tags: ['process-management', 'scheduling'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-operating-systems-004',
+    front: 'What is the difference between paging and segmentation?',
+    back: 'Paging divides memory into fixed-size pages to eliminate external fragmentation. Segmentation divides memory into variable-sized logical segments reflecting the program structure (code, stack, heap), supporting user-visible memory division.',
+    tags: ['memory-management', 'paging', 'segmentation'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-operating-systems-005',
+    front: 'What is a Translation Lookaside Buffer (TLB)?',
+    back: 'A TLB is a small, fast hardware cache that stores recent virtual-to-physical address translations. It avoids the need to access the page table in main memory for every memory reference, significantly speeding up address translation.',
+    tags: ['memory-management', 'tlb', 'virtual-memory'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-cs-operating-systems-006',
+    front: 'What is the purpose of demand paging?',
+    back: 'Demand paging loads pages into physical memory only when they are first referenced, not at program start. This reduces memory usage and startup time, allowing programs larger than physical memory to run.',
+    tags: ['memory-management', 'virtual-memory', 'demand-paging'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-operating-systems-007',
+    front: 'What is an inode in a Unix file system?',
+    back: "An inode is a data structure that stores metadata about a file: its size, owner, permissions, timestamps, and the disk block addresses (direct and indirect pointers) where the file's data is stored.",
+    tags: ['file-systems', 'inode'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-operating-systems-008',
+    front: 'What is journaling in a file system?',
+    back: 'Journaling records intended changes to disk metadata in a log (journal) before committing them. After a crash, the journal is replayed to restore consistency, preventing file system corruption from incomplete writes.',
+    tags: ['file-systems', 'journaling'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-009',
+    front: 'How does Round Robin scheduling differ from FCFS?',
+    back: 'RR adds a time quantum (time slice) and preempts processes when their quantum expires, placing them at the back of the ready queue. FCFS runs each process to completion without preemption. RR provides better response time for interactive systems.',
+    tags: ['process-management', 'scheduling'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-010',
+    front: 'What is a page fault and how is it handled?',
+    back: 'A page fault occurs when a process accesses a virtual address whose page is not in physical memory. The OS traps the fault, locates the page on disk, loads it into a free frame, updates the page table, and restarts the instruction.',
+    tags: ['memory-management', 'virtual-memory'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-cs-operating-systems-011',
+    front: 'Compare three disk block allocation methods.',
+    back: 'Contiguous allocation uses consecutive blocks (fast access, external fragmentation). Linked allocation chains blocks via pointers (no fragmentation, slow random access). Indexed allocation uses an index block of pointers (direct access, index block overhead).',
+    tags: ['file-systems', 'allocation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-012',
+    front: 'What is a semaphore?',
+    back: 'A semaphore is a synchronization primitive with an integer value and two atomic operations: wait(P) decrements the value (blocks if it becomes negative) and signal(V) increments it (wakes a blocked process). It controls access to shared resources.',
+    tags: ['synchronization', 'semaphores'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-013',
+    front: 'What are the four necessary conditions for deadlock?',
+    back: 'Mutual exclusion (resources cannot be shared), Hold and wait (a process holds resources while waiting for more), No preemption (resources cannot be forcibly taken), and Circular wait (a cycle of processes each waiting on the next).',
+    tags: ['synchronization', 'deadlock'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-014',
+    front: 'What is the difference between a monitor and a semaphore?',
+    back: 'A monitor is a high-level synchronization construct that encapsulates shared data with condition variables and mutual exclusion is implicit. Semaphores are lower-level, requiring the programmer to explicitly manage wait/signal operations correctly.',
+    tags: ['synchronization', 'monitors', 'semaphores'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-015',
+    front: 'What is the difference between polling and interrupt-driven I/O?',
+    back: 'Polling has the CPU repeatedly check the device status register, wasting CPU cycles when the device is idle. Interrupt-driven I/O lets the CPU work on other tasks; the device raises an interrupt when data is ready.',
+    tags: ['io-management', 'interrupts', 'polling'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-cs-operating-systems-016',
+    front: 'What is Direct Memory Access (DMA)?',
+    back: 'DMA allows a specialized controller to transfer data directly between I/O devices and memory without CPU intervention for each word. The CPU initiates the transfer and is interrupted only when the entire block transfer completes.',
+    tags: ['io-management', 'dma'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-017',
+    front: 'What is the difference between access control lists and capabilities?',
+    back: 'Access control lists (ACLs) associate each resource with a list of who can access it and how (resource-centric). Capabilities are unforgeable tokens held by subjects granting access to specific resources (subject-centric).',
+    tags: ['security', 'access-control'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-operating-systems-018',
+    front: 'What is thrashing and how can it be mitigated?',
+    back: 'Thrashing occurs when a process spends more time paging in/out than executing, caused by insufficient frames for the working set. Mitigation includes local replacement, working set model, reducing multiprogramming degree, or swapping processes out.',
+    tags: ['memory-management', 'virtual-memory', 'thrashing'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-operating-systems-019',
+    front: 'How does sandboxing enforce process isolation at the OS level?',
+    back: "Sandboxing restricts a process's access to system resources using namespaces (isolating filesystem, network, PID views), cgroups (limiting CPU, memory, I/O), seccomp (filtering system calls), and mandatory access control policies (SELinux/AppArmor).",
+    tags: ['security', 'sandboxing'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-operating-systems-020',
+    front: 'Explain the readers-writers problem and one solution using semaphores.',
+    back: 'Multiple readers can read concurrently, but writers need exclusive access. A solution uses a read_count variable protected by a mutex, a wrt semaphore to enforce exclusive writing, and a mutex3 semaphore to prevent writer starvation (readers wait if a writer is waiting).',
+    tags: ['synchronization', 'semaphores', 'classical-problems'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="uni-cs-operating-systems"
   title="University Computing -- Operating Systems"
   description="Flashcards covering process management, memory management, file systems, synchronization, I/O, and security."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

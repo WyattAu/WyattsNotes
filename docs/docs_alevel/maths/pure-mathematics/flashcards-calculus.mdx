@@ -20,49 +20,125 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'diff-1', front: 'State the chain rule for differentiation.', back:
-'If y = f(g(x)), then dy/dx = f\'(g(x)) · g\'(x). Example: d/dx[sin(x²)] = cos(x²) · 2x.', tags:
-['differentiation'], difficulty: 'easy', }, { id: 'diff-2', front: 'State the product rule.', back:
-'If y = u(x) · v(x), then dy/dx = u\'v + uv\'. Example: d/dx[x² · eˣ] = 2x · eˣ + x² · eˣ = eˣ(2x +
-x²).', tags: ['differentiation'], difficulty: 'easy', }, { id: 'diff-3', front: 'State the quotient
-rule.', back: 'If y = u/v, then dy/dx = (v · u\' − u · v\') / v². Example: d/dx[x/sin(x)] = (sin(x)
-− x·cos(x)) / sin²(x).', tags: ['differentiation'], difficulty: 'easy', }, { id: 'diff-4', front:
-'How do you differentiate x² + y² = 25 implicitly?', back: 'Differentiate term by term: 2x + 2y ·
-dy/dx = 0. So dy/dx = −x/y.', tags: ['differentiation'], difficulty: 'medium', }, { id: 'int-1',
-front: 'State the method of integration by parts.', back: '∫u dv = uv − ∫v du. Use LIATE (Log,
-Inverse trig, Algebraic, Trig, Exponential) to choose u. Example: ∫x·eˣ dx = x·eˣ − ∫eˣ dx = x·eˣ −
-eˣ + C.', tags: ['integration'], difficulty: 'medium', }, { id: 'int-2', front: 'How do you use
-integration by substitution?', back: 'Choose a substitution u = g(x) so the integrand simplifies.
-Replace dx with du/g\'(x). Example: ∫2x·cos(x²) dx. Let u = x², du = 2x dx → ∫cos(u) du = sin(u) + C
-= sin(x²) + C.', tags: ['integration'], difficulty: 'medium', }, { id: 'int-3', front: 'How do you
-integrate a proper fraction with distinct linear factors?', back: 'Express as partial fractions:
-A/(x−p) + B/(x−q) + ..., then integrate each term to get A·ln|x−p| + B·ln|x−q| + C.', tags:
-['integration'], difficulty: 'hard', }, { id: 'app-1', front: 'A rectangular box with a square base
-has volume 64 cm³. Find the minimum surface area.', back: 'Let base side = x, height = 64/x². SA =
-x² + 4x(64/x²) = x² + 256/x. dSA/dx = 2x − 256/x² = 0 → x³ = 128 → x = 4∛2 ≈ 5.04. Min SA ≈ 76.2
-cm².', tags: ['applications'], difficulty: 'hard', }, { id: 'app-2', front: 'A spherical balloon is
-inflated at 100 cm³/s. How fast is the radius increasing when r = 5 cm?', back: 'V = (4/3)πr³, dV/dt
-= 100. dV/dt = 4πr² · dr/dt → dr/dt = 100/(4π·25) = 1/π ≈ 0.318 cm/s.', tags: ['applications'],
-difficulty: 'medium', }, { id: 'app-3', front: 'Find the area between y = x² and y = x from x = 0 to
-x = 1.', back: 'Area = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6 square units.', tags:
-['applications'], difficulty: 'medium', }, { id: 'app-4', front: 'Find the volume of revolution when
-y = √x is rotated 360° about the x-axis from x = 0 to x = 4.', back: 'V = π ∫₀⁴ (√x)² dx = π ∫₀⁴ x
-dx = π [x²/2]₀⁴ = π · 8 = 8π cubic units.', tags: ['applications'], difficulty: 'medium', }, { id:
-'de-1', front: 'Solve dy/dx = 3y using separation of variables.', back: '∫(1/y) dy = ∫3 dx → ln|y| =
-3x + C → y = Ae³ˣ where A = ±eᶜ.', tags: ['differential-equations'], difficulty: 'medium', }, { id:
-'de-2', front: 'What is an integrating factor and when is it used?', back: 'Used for first-order
-linear ODEs: dy/dx + P(x)y = Q(x). The integrating factor is e^(∫P(x)dx). Multiply through: d/dx[IF
-· y] = IF · Q(x), then integrate.', tags: ['differential-equations'], difficulty: 'hard', }, { id:
-'series-1', front: 'State the Maclaurin series for eˣ, sin(x), and cos(x).', back: 'eˣ = 1 + x +
-x²/2! + x³/3! + ... sin(x) = x − x³/3! + x⁵/5! − ... cos(x) = 1 − x²/2! + x⁴/4! − ...', tags:
-['series'], difficulty: 'medium', }, { id: 'series-2', front: 'How does a Taylor series differ from
-a Maclaurin series?', back: 'Maclaurin series expands about x = 0: f(x) = Σ f⁽ⁿ⁾(0)/n! · xⁿ. Taylor
-series expands about x = a: f(x) = Σ f⁽ⁿ⁾(a)/n! · (x−a)ⁿ. Maclaurin is a special case of Taylor with
-a = 0.', tags: ['series'], difficulty: 'medium', }, ];
+export const flashcards1 = [
+  {
+    id: 'diff-1',
+    front: 'State the chain rule for differentiation.',
+    back: "If y = f(g(x)), then dy/dx = f'(g(x)) · g'(x). Example: d/dx[sin(x²)] = cos(x²) · 2x.",
+    tags: ['differentiation'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'diff-2',
+    front: 'State the product rule.',
+    back: "If y = u(x) · v(x), then dy/dx = u'v + uv'. Example: d/dx[x² · eˣ] = 2x · eˣ + x² · eˣ = eˣ(2x + x²).",
+    tags: ['differentiation'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'diff-3',
+    front: 'State the quotient rule.',
+    back: "If y = u/v, then dy/dx = (v · u' − u · v') / v². Example: d/dx[x/sin(x)] = (sin(x) − x·cos(x)) / sin²(x).",
+    tags: ['differentiation'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'diff-4',
+    front: 'How do you differentiate x² + y² = 25 implicitly?',
+    back: 'Differentiate term by term: 2x + 2y · dy/dx = 0. So dy/dx = −x/y.',
+    tags: ['differentiation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'int-1',
+    front: 'State the method of integration by parts.',
+    back: '∫u dv = uv − ∫v du. Use LIATE (Log, Inverse trig, Algebraic, Trig, Exponential) to choose u. Example: ∫x·eˣ dx = x·eˣ − ∫eˣ dx = x·eˣ − eˣ + C.',
+    tags: ['integration'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'int-2',
+    front: 'How do you use integration by substitution?',
+    back: "Choose a substitution u = g(x) so the integrand simplifies. Replace dx with du/g'(x). Example: ∫2x·cos(x²) dx. Let u = x², du = 2x dx → ∫cos(u) du = sin(u) + C = sin(x²) + C.",
+    tags: ['integration'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'int-3',
+    front: 'How do you integrate a proper fraction with distinct linear factors?',
+    back: 'Express as partial fractions: A/(x−p) + B/(x−q) + ..., then integrate each term to get A·ln|x−p| + B·ln|x−q| + C.',
+    tags: ['integration'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'app-1',
+    front: 'A rectangular box with a square base has volume 64 cm³. Find the minimum surface area.',
+    back: 'Let base side = x, height = 64/x². SA = x² + 4x(64/x²) = x² + 256/x. dSA/dx = 2x − 256/x² = 0 → x³ = 128 → x = 4∛2 ≈ 5.04. Min SA ≈ 76.2 cm².',
+    tags: ['applications'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'app-2',
+    front:
+      'A spherical balloon is inflated at 100 cm³/s. How fast is the radius increasing when r = 5 cm?',
+    back: 'V = (4/3)πr³, dV/dt = 100. dV/dt = 4πr² · dr/dt → dr/dt = 100/(4π·25) = 1/π ≈ 0.318 cm/s.',
+    tags: ['applications'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'app-3',
+    front: 'Find the area between y = x² and y = x from x = 0 to x = 1.',
+    back: 'Area = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6 square units.',
+    tags: ['applications'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'app-4',
+    front:
+      'Find the volume of revolution when y = √x is rotated 360° about the x-axis from x = 0 to x = 4.',
+    back: 'V = π ∫₀⁴ (√x)² dx = π ∫₀⁴ x dx = π [x²/2]₀⁴ = π · 8 = 8π cubic units.',
+    tags: ['applications'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'de-1',
+    front: 'Solve dy/dx = 3y using separation of variables.',
+    back: '∫(1/y) dy = ∫3 dx → ln|y| = 3x + C → y = Ae³ˣ where A = ±eᶜ.',
+    tags: ['differential-equations'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'de-2',
+    front: 'What is an integrating factor and when is it used?',
+    back: 'Used for first-order linear ODEs: dy/dx + P(x)y = Q(x). The integrating factor is e^(∫P(x)dx). Multiply through: d/dx[IF · y] = IF · Q(x), then integrate.',
+    tags: ['differential-equations'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'series-1',
+    front: 'State the Maclaurin series for eˣ, sin(x), and cos(x).',
+    back: 'eˣ = 1 + x + x²/2! + x³/3! + ... sin(x) = x − x³/3! + x⁵/5! − ... cos(x) = 1 − x²/2! + x⁴/4! − ...',
+    tags: ['series'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'series-2',
+    front: 'How does a Taylor series differ from a Maclaurin series?',
+    back: 'Maclaurin series expands about x = 0: f(x) = Σ f⁽ⁿ⁾(0)/n! · xⁿ. Taylor series expands about x = a: f(x) = Σ f⁽ⁿ⁾(a)/n! · (x−a)ⁿ. Maclaurin is a special case of Taylor with a = 0.',
+    tags: ['series'],
+    difficulty: 'medium',
+  },
+];
 
 <FlashcardDeck
   deckId="alevel-calculus"
   title="A-Level Calculus"
   description="Differentiation, integration, applications, differential equations, and series"
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3]}
 />

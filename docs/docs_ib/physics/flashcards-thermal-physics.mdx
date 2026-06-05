@@ -8,7 +8,7 @@ tags: [Physics, IB Physics, Flashcards]
 ---
 
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
-const flashcardData = [
+export const flashcard1 = [
   {
     id: 'ib-phys-thermal-001',
     front: 'What is the difference between temperature and internal energy?',
@@ -40,10 +40,13 @@ const flashcardData = [
   {
     id: 'ib-phys-thermal-005',
     front: 'What are the assumptions of the kinetic theory for an ideal gas?',
-    back: "1) The gas consists of a large number of small molecules in random motion.\n2) Molecules are point particles — their volume is negligible compared to the container.\n3) No intermolecular forces act except during collisions.\n4) All collisions are perfectly elastic (KE conserved).\n5) The duration of collisions is negligible compared to time between collisions.\n6) Molecules obey Newton's laws of motion.",
+    back: "1) The gas consists of a large number of small molecules in random motion. 2) Molecules are point particles — their volume is negligible compared to the container. 3) No intermolecular forces act except during collisions. 4) All collisions are perfectly elastic (KE conserved). 5) The duration of collisions is negligible compared to time between collisions. 6) Molecules obey Newton's laws of motion.",
     tags: ['thermal', 'kinetic theory'],
     difficulty: 'medium',
   },
+];
+
+export const flashcard2 = [
   {
     id: 'ib-phys-thermal-006',
     front: 'State the relationship between the Boltzmann constant and the universal gas constant.',
@@ -75,14 +78,17 @@ const flashcardData = [
   {
     id: 'ib-phys-thermal-010',
     front: "State Charles's law and Gay-Lussac's law.",
-    back: "Charles's law: at constant pressure, V ∝ T (V/T = constant). When heated at constant P, gas must expand. Microscopic: molecules move faster at higher T, exerting more force on walls; to keep P constant, V must increase to reduce collision frequency.\nGay-Lussac's law: at constant volume, P ∝ T (P/T = constant). Faster molecules collide harder and more often with fixed walls, increasing pressure.",
+    back: "Charles's law: at constant pressure, V ∝ T (V/T = constant). When heated at constant P, gas must expand. Microscopic: molecules move faster at higher T, exerting more force on walls; to keep P constant, V must increase to reduce collision frequency. Gay-Lussac's law: at constant volume, P ∝ T (P/T = constant). Faster molecules collide harder and more often with fixed walls, increasing pressure.",
     tags: ['thermal', 'gas laws'],
     difficulty: 'medium',
   },
+];
+
+export const flashcard3 = [
   {
     id: 'ib-phys-thermal-011',
     front: 'How does the phase change diagram (heating curve) work for water?',
-    back: 'Heating water from −20 °C to 120 °C:\n1) Ice warms: Q = mc_ice × ΔT (c_ice = 2100 J kg⁻¹ K⁻¹)\n2) Melting at 0 °C: Q = mL_f (temperature constant, L_f = 3.34 × 10⁵ J kg⁻¹)\n3) Water warms: Q = mc_water × ΔT (c_water = 4180 J kg⁻¹ K⁻¹)\n4) Boiling at 100 °C: Q = mL_v (temperature constant, L_v = 2.26 × 10⁶ J kg⁻¹)\n5) Steam warms: Q = mc_steam × ΔT (c_steam ≈ 2010 J kg⁻¹ K⁻¹)',
+    back: 'Heating water from −20 °C to 120 °C: 1) Ice warms: Q = mc_ice × ΔT (c_ice = 2100 J kg⁻¹ K⁻¹) 2) Melting at 0 °C: Q = mL_f (temperature constant, L_f = 3.34 × 10⁵ J kg⁻¹) 3) Water warms: Q = mc_water × ΔT (c_water = 4180 J kg⁻¹ K⁻¹) 4) Boiling at 100 °C: Q = mL_v (temperature constant, L_v = 2.26 × 10⁶ J kg⁻¹) 5) Steam warms: Q = mc_steam × ΔT (c_steam ≈ 2010 J kg⁻¹ K⁻¹)',
     tags: ['thermal', 'phase changes'],
     difficulty: 'medium',
   },
@@ -114,6 +120,9 @@ const flashcardData = [
     tags: ['thermal', 'ideal gas', 'internal energy'],
     difficulty: 'hard',
   },
+];
+
+export const flashcard4 = [
   {
     id: 'ib-phys-thermal-016',
     front: 'How does the Maxwell-Boltzmann distribution change with temperature?',
@@ -151,9 +160,11 @@ const flashcardData = [
     difficulty: 'hard',
   },
 ];
+
 <FlashcardDeck
   deckId="ib-phys-thermal"
   title="IB Physics: Thermal Physics"
   description="Temperature, internal energy, specific and latent heat, ideal gas laws, kinetic theory, phase changes, and calorimetry."
-  cards={flashcardData}
-/>;
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
+/>
+;

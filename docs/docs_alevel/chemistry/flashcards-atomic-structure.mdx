@@ -18,108 +18,166 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'at-1', front: 'State the three subatomic particles, their relative
-masses, and relative charges.', back: 'Proton: relative mass 1, charge +1. Neutron: relative mass 1,
-charge 0. Electron: relative mass 1/1836 (negligible), charge -1. Protons and neutrons are in the
-nucleus; electrons orbit in shells.', tags: ['atomic-structure'], difficulty: 'easy', }, { id:
-'at-2', front: 'Define mass number and atomic number. How are they related?', back: 'Mass number (A)
-= number of protons + number of neutrons. Atomic number (Z) = number of protons. Number of neutrons
-= A - Z. Isotopes of an element have the same Z but different A.', tags: ['atomic-structure',
-'isotopes'], difficulty: 'easy', }, { id: 'at-3', front: 'Define isotopes and explain why they have
-identical chemical properties.', back: 'Isotopes are atoms of the same element with the same number
-of protons but different numbers of neutrons. They have identical chemical properties because
-chemical behaviour is determined by electron configuration, which depends only on proton number.
-Physical properties (e.g., density, melting point) may differ slightly.', tags: ['isotopes'],
-difficulty: 'easy', }, { id: 'at-4', front: 'How is relative atomic mass (Ar) calculated from
-isotopic abundances?', back: 'Ar = (abundance1 x mass1 + abundance2 x mass2 + ...) / total
-abundance. Example: chlorine has 75.8% Cl-35 and 24.2% Cl-37. Ar = (75.8 x 35 + 24.2 x 37) / 100 =
-(2653 + 895.4) / 100 = 35.48.', tags: ['isotopes', 'calculation'], difficulty: 'medium', }, { id:
-'at-5', front: 'Write the electron configuration of potassium (K, Z=19) and explain why it is in
-Group 1.', back: '1s2 2s2 2p6 3s2 3p6 4s1. The outermost shell (4th) contains 1 electron, so
-potassium is in Group 1. Note that the 4s subshell fills before 3d because 4s has slightly lower
-energy than 3d in neutral atoms.', tags: ['electron-configuration'], difficulty: 'easy', }, { id:
-'at-6', front: 'Write the electron configuration of chromium (Cr, Z=24) and explain the exception.',
-back: 'Expected: [Ar] 4s2 3d4. Actual: [Ar] 4s1 3d5. Chromium gains extra stability by having a
-half-filled d-subshell (3d5) and half-filled s-subshell (4s1). A half-filled subshell is more stable
-due to symmetrical electron distribution and exchange energy.', tags: ['electron-configuration',
-'exceptions'], difficulty: 'medium', }, { id: 'at-7', front: 'Write the electron configuration of
-copper (Cu, Z=29) and explain the exception.', back: 'Expected: [Ar] 4s2 3d9. Actual: [Ar] 4s1 3d10.
-Copper gains extra stability by having a fully-filled d-subshell (3d10). The energy lowering from a
-full d-subshell compensates for promoting an electron from 4s to 3d. The stability order: full >
-half-filled > partially filled.', tags: ['electron-configuration', 'exceptions'], difficulty:
-'medium', }, { id: 'at-8', front: 'State the four quantum numbers (n, l, ml, ms) and what each
-describes.', back: 'n (principal): shell/energy level (1, 2, 3...). l (azimuthal): subshell type
-(0=s, 1=p, 2=d, 3=f). ml (magnetic): orbital within subshell (-l to +l). ms (spin): electron spin
-direction (+1/2 or -1/2). No two electrons in an atom can have the same set of four quantum numbers
-(Pauli exclusion principle).', tags: ['quantum-numbers'], difficulty: 'medium', }, { id: 'at-9',
-front: 'Describe the shapes of s, p, and d orbitals.', back: 's orbital: spherical (1 per subshell).
-p orbitals: dumbbell-shaped, 3 per subshell (px, py, pz) oriented along x, y, z axes with a nodal
-plane through the nucleus. d orbitals: 5 per subshell, four are cloverleaf-shaped (dxy, dyz, dxz,
-dx2-y2) and one is doughnut-shaped with a lobe along z (dz2).', tags: ['orbitals'], difficulty:
-'medium', }, { id: 'at-10', front: 'How many orbitals and electrons can each subshell hold?', back:
-'s: 1 orbital, max 2 electrons. p: 3 orbitals, max 6 electrons. d: 5 orbitals, max 10 electrons. f:
-7 orbitals, max 14 electrons. Total per shell: 2n2 electrons.', tags: ['orbitals',
-'electron-configuration'], difficulty: 'easy', }, { id: 'at-11', front: 'Describe the trend in first
-ionisation energy across Period 3 (Na to Ar) and explain the general pattern.', back: 'First
-ionisation energy generally increases across Period 3. Reason: nuclear charge increases (more
-protons) while shielding remains similar, so electrons are held more tightly. Small dips occur at Al
-(electron removed from 3p, which is higher in energy and slightly shielded by 3s) and at S (electron
-paired in 3p, so repulsion makes removal easier).', tags: ['ionisation-energy', 'periodic-trends'],
-difficulty: 'medium', }, { id: 'at-12', front: 'Describe the trend in first ionisation energy down
-Group 2 and explain why.', back: 'First ionisation energy decreases down Group 2. Reason: each
-successive element adds an extra electron shell, so the outermost electron is further from the
-nucleus. Although nuclear charge increases, the extra inner shells provide additional shielding. The
-increased distance and shielding outweigh the increased nuclear charge.', tags:
-['ionisation-energy', 'periodic-trends'], difficulty: 'medium', }, { id: 'at-13', front: 'What can
-successive ionisation energies tell you about the electron configuration of an element?', back:
-'Successive ionisation energies always increase because removing an electron from an increasingly
-positive ion requires more energy. Large jumps indicate removal of an electron from a new shell
-closer to the nucleus. Example: for aluminium, large jumps occur after the 3rd, 11th, and 13th
-ionisation energies, confirming the electron configuration 2, 8, 3.', tags: ['ionisation-energy'],
-difficulty: 'medium', }, { id: 'at-14', front: 'The first five successive ionisation energies of an
-element are: 578, 1817, 2745, 11578, 14831 kJ/mol. Identify the element and explain.', back: 'This
-is aluminium (Al, Z=13). The first three electrons are removed from the 3rd shell (relatively easy),
-so energies increase gradually. The large jump between the 3rd (2745) and 4th (11578) indicates the
-4th electron is being removed from the 2nd shell (closer to nucleus, less shielding). Electron
-configuration: 2, 8, 3.', tags: ['ionisation-energy'], difficulty: 'hard', }, { id: 'at-15', front:
-'Describe and explain the trend in atomic radius across a period and down a group.', back: 'Across a
-period: atomic radius decreases. Increasing nuclear charge pulls electrons closer with similar
-shielding. Down a group: atomic radius increases. Extra electron shells are added, placing outer
-electrons further from the nucleus despite increased nuclear charge and shielding.', tags:
-['periodic-trends', 'atomic-radius'], difficulty: 'medium', }, { id: 'at-16', front: 'Define
-electronegativity and describe its trend across a period and down a group.', back:
-'Electronegativity is the ability of an atom to attract the bonding pair of electrons in a covalent
-bond (Pauling scale). Across a period: electronegativity increases (increasing nuclear charge,
-decreasing atomic radius). Down a group: electronegativity decreases (increasing atomic radius and
-shielding reduce electron-attracting power). Most electronegative element: fluorine (4.0 on Pauling
-scale).', tags: ['electronegativity', 'periodic-trends'], difficulty: 'medium', }, { id: 'at-17',
-front: 'Explain what effective nuclear charge is and how it affects atomic properties.', back:
-'Effective nuclear charge (Zeff) is the net positive charge experienced by an electron after
-accounting for shielding by other electrons. Zeff = Z - S (shielding constant). Higher Zeff means
-electrons are held more tightly: higher ionisation energy, smaller atomic radius, higher
-electronegativity. Zeff increases across a period (shielding stays roughly constant while Z
-increases) and stays roughly constant down a group.', tags: ['effective-nuclear-charge'],
-difficulty: 'hard', }, { id: 'at-18', front: 'What are the s, p, d, and f blocks of the periodic
-table and how are they defined?', back: 's-block: Groups 1 and 2, valence electrons in s subshell
-(ns1 or ns2). p-block: Groups 13-18, valence electrons filling p subshell (ns2 np1-6). d-block:
-transition metals (Groups 3-12), electrons filling d subshell (general: ns2 (n-1)d1-10). f-block:
-lanthanides and actinides, electrons filling f subshell. The block indicates the type of orbital
-being filled with the highest-energy electrons.', tags: ['periodic-table', 'blocks'], difficulty:
-'medium', }, { id: 'at-19', front: 'Write the electron configuration of iron (Fe, Z=26) and identify
-the 3d electrons.', back: 'Fe: [Ar] 4s2 3d6. Iron has 6 electrons in the 3d subshell. When iron
-forms Fe2+, it loses the two 4s electrons first (not 3d): [Ar] 3d6. Fe3+ loses 4s2 and one 3d
-electron: [Ar] 3d5 (half-filled, more stable). When forming ions, 4s electrons are always removed
-before 3d.', tags: ['transition-metals', 'electron-configuration'], difficulty: 'hard', }, { id:
-'at-20', front: 'Define the Pauli exclusion principle and explain its consequence for orbital
-occupancy.', back: 'The Pauli exclusion principle states that no two electrons in an atom can have
-the same set of four quantum numbers. Consequence: each orbital can hold a maximum of 2 electrons,
-and they must have opposite spins. This is represented by up and down arrows in orbital diagrams. It
-explains why maximum electron capacity follows the pattern: s=2, p=6, d=10, f=14.', tags:
-['quantum-numbers', 'principles'], difficulty: 'hard', }, ];
+export const flashcards1 = [
+  {
+    id: 'at-1',
+    front: 'State the three subatomic particles, their relative masses, and relative charges.',
+    back: 'Proton: relative mass 1, charge +1. Neutron: relative mass 1, charge 0. Electron: relative mass 1/1836 (negligible), charge -1. Protons and neutrons are in the nucleus; electrons orbit in shells.',
+    tags: ['atomic-structure'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'at-2',
+    front: 'Define mass number and atomic number. How are they related?',
+    back: 'Mass number (A) = number of protons + number of neutrons. Atomic number (Z) = number of protons. Number of neutrons = A - Z. Isotopes of an element have the same Z but different A.',
+    tags: ['atomic-structure', 'isotopes'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'at-3',
+    front: 'Define isotopes and explain why they have identical chemical properties.',
+    back: 'Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons. They have identical chemical properties because chemical behaviour is determined by electron configuration, which depends only on proton number. Physical properties (e.g., density, melting point) may differ slightly.',
+    tags: ['isotopes'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'at-4',
+    front: 'How is relative atomic mass (Ar) calculated from isotopic abundances?',
+    back: 'Ar = (abundance1 x mass1 + abundance2 x mass2 + ...) / total abundance. Example: chlorine has 75.8% Cl-35 and 24.2% Cl-37. Ar = (75.8 x 35 + 24.2 x 37) / 100 = (2653 + 895.4) / 100 = 35.48.',
+    tags: ['isotopes', 'calculation'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-5',
+    front:
+      'Write the electron configuration of potassium (K, Z=19) and explain why it is in Group 1.',
+    back: '1s2 2s2 2p6 3s2 3p6 4s1. The outermost shell (4th) contains 1 electron, so potassium is in Group 1. Note that the 4s subshell fills before 3d because 4s has slightly lower energy than 3d in neutral atoms.',
+    tags: ['electron-configuration'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'at-6',
+    front: 'Write the electron configuration of chromium (Cr, Z=24) and explain the exception.',
+    back: 'Expected: [Ar] 4s2 3d4. Actual: [Ar] 4s1 3d5. Chromium gains extra stability by having a half-filled d-subshell (3d5) and half-filled s-subshell (4s1). A half-filled subshell is more stable due to symmetrical electron distribution and exchange energy.',
+    tags: ['electron-configuration', 'exceptions'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-7',
+    front: 'Write the electron configuration of copper (Cu, Z=29) and explain the exception.',
+    back: 'Expected: [Ar] 4s2 3d9. Actual: [Ar] 4s1 3d10. Copper gains extra stability by having a fully-filled d-subshell (3d10). The energy lowering from a full d-subshell compensates for promoting an electron from 4s to 3d. The stability order: full > half-filled > partially filled.',
+    tags: ['electron-configuration', 'exceptions'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-8',
+    front: 'State the four quantum numbers (n, l, ml, ms) and what each describes.',
+    back: 'n (principal): shell/energy level (1, 2, 3...). l (azimuthal): subshell type (0=s, 1=p, 2=d, 3=f). ml (magnetic): orbital within subshell (-l to +l). ms (spin): electron spin direction (+1/2 or -1/2). No two electrons in an atom can have the same set of four quantum numbers (Pauli exclusion principle).',
+    tags: ['quantum-numbers'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-9',
+    front: 'Describe the shapes of s, p, and d orbitals.',
+    back: 's orbital: spherical (1 per subshell). p orbitals: dumbbell-shaped, 3 per subshell (px, py, pz) oriented along x, y, z axes with a nodal plane through the nucleus. d orbitals: 5 per subshell, four are cloverleaf-shaped (dxy, dyz, dxz, dx2-y2) and one is doughnut-shaped with a lobe along z (dz2).',
+    tags: ['orbitals'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-10',
+    front: 'How many orbitals and electrons can each subshell hold?',
+    back: 's: 1 orbital, max 2 electrons. p: 3 orbitals, max 6 electrons. d: 5 orbitals, max 10 electrons. f: 7 orbitals, max 14 electrons. Total per shell: 2n2 electrons.',
+    tags: ['orbitals', 'electron-configuration'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'at-11',
+    front:
+      'Describe the trend in first ionisation energy across Period 3 (Na to Ar) and explain the general pattern.',
+    back: 'First ionisation energy generally increases across Period 3. Reason: nuclear charge increases (more protons) while shielding remains similar, so electrons are held more tightly. Small dips occur at Al (electron removed from 3p, which is higher in energy and slightly shielded by 3s) and at S (electron paired in 3p, so repulsion makes removal easier).',
+    tags: ['ionisation-energy', 'periodic-trends'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-12',
+    front: 'Describe the trend in first ionisation energy down Group 2 and explain why.',
+    back: 'First ionisation energy decreases down Group 2. Reason: each successive element adds an extra electron shell, so the outermost electron is further from the nucleus. Although nuclear charge increases, the extra inner shells provide additional shielding. The increased distance and shielding outweigh the increased nuclear charge.',
+    tags: ['ionisation-energy', 'periodic-trends'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-13',
+    front:
+      'What can successive ionisation energies tell you about the electron configuration of an element?',
+    back: 'Successive ionisation energies always increase because removing an electron from an increasingly positive ion requires more energy. Large jumps indicate removal of an electron from a new shell closer to the nucleus. Example: for aluminium, large jumps occur after the 3rd, 11th, and 13th ionisation energies, confirming the electron configuration 2, 8, 3.',
+    tags: ['ionisation-energy'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-14',
+    front:
+      'The first five successive ionisation energies of an element are: 578, 1817, 2745, 11578, 14831 kJ/mol. Identify the element and explain.',
+    back: 'This is aluminium (Al, Z=13). The first three electrons are removed from the 3rd shell (relatively easy), so energies increase gradually. The large jump between the 3rd (2745) and 4th (11578) indicates the 4th electron is being removed from the 2nd shell (closer to nucleus, less shielding). Electron configuration: 2, 8, 3.',
+    tags: ['ionisation-energy'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'at-15',
+    front: 'Describe and explain the trend in atomic radius across a period and down a group.',
+    back: 'Across a period: atomic radius decreases. Increasing nuclear charge pulls electrons closer with similar shielding. Down a group: atomic radius increases. Extra electron shells are added, placing outer electrons further from the nucleus despite increased nuclear charge and shielding.',
+    tags: ['periodic-trends', 'atomic-radius'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'at-16',
+    front: 'Define electronegativity and describe its trend across a period and down a group.',
+    back: 'Electronegativity is the ability of an atom to attract the bonding pair of electrons in a covalent bond (Pauling scale). Across a period: electronegativity increases (increasing nuclear charge, decreasing atomic radius). Down a group: electronegativity decreases (increasing atomic radius and shielding reduce electron-attracting power). Most electronegative element: fluorine (4.0 on Pauling scale).',
+    tags: ['electronegativity', 'periodic-trends'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-17',
+    front: 'Explain what effective nuclear charge is and how it affects atomic properties.',
+    back: 'Effective nuclear charge (Zeff) is the net positive charge experienced by an electron after accounting for shielding by other electrons. Zeff = Z - S (shielding constant). Higher Zeff means electrons are held more tightly: higher ionisation energy, smaller atomic radius, higher electronegativity. Zeff increases across a period (shielding stays roughly constant while Z increases) and stays roughly constant down a group.',
+    tags: ['effective-nuclear-charge'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'at-18',
+    front: 'What are the s, p, d, and f blocks of the periodic table and how are they defined?',
+    back: 's-block: Groups 1 and 2, valence electrons in s subshell (ns1 or ns2). p-block: Groups 13-18, valence electrons filling p subshell (ns2 np1-6). d-block: transition metals (Groups 3-12), electrons filling d subshell (general: ns2 (n-1)d1-10). f-block: lanthanides and actinides, electrons filling f subshell. The block indicates the type of orbital being filled with the highest-energy electrons.',
+    tags: ['periodic-table', 'blocks'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'at-19',
+    front: 'Write the electron configuration of iron (Fe, Z=26) and identify the 3d electrons.',
+    back: 'Fe: [Ar] 4s2 3d6. Iron has 6 electrons in the 3d subshell. When iron forms Fe2+, it loses the two 4s electrons first (not 3d): [Ar] 3d6. Fe3+ loses 4s2 and one 3d electron: [Ar] 3d5 (half-filled, more stable). When forming ions, 4s electrons are always removed before 3d.',
+    tags: ['transition-metals', 'electron-configuration'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'at-20',
+    front:
+      'Define the Pauli exclusion principle and explain its consequence for orbital occupancy.',
+    back: 'The Pauli exclusion principle states that no two electrons in an atom can have the same set of four quantum numbers. Consequence: each orbital can hold a maximum of 2 electrons, and they must have opposite spins. This is represented by up and down arrows in orbital diagrams. It explains why maximum electron capacity follows the pattern: s=2, p=6, d=10, f=14.',
+    tags: ['quantum-numbers', 'principles'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="alevel-atomic-structure"
   title="A-Level Atomic Structure"
   description="Electron configuration, periodic trends, ionisation energy, and quantum numbers"
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

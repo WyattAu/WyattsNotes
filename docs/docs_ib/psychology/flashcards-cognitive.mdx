@@ -18,174 +18,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [ { id: 'cog-1', front: 'Describe the multi-store model of memory proposed by
-Atkinson and Shiffrin (1968).', back: 'The multi-store model divides memory into three stores:
-sensory memory (duration < 1 second, capacity large), short-term memory (duration approximately
-18--30 seconds, capacity 7 +/- 2 items), and long-term memory (potentially unlimited capacity and
-duration). Information flows from sensory to STM via attention, and from STM to LTM via rehearsal.
-Support: Sperling (1960) demonstrated sensory memory; Peterson and Peterson (1959) showed STM
-duration without rehearsal. Criticism: the model is oversimplified and does not account for
-different types of LTM.', tags: ['multi-store model', 'Atkinson-Shiffrin', 'memory'], difficulty:
-'easy', }, { id: 'cog-2', front: "What are the components of Baddeley and Hitch's working memory
-model (1974)?", back: 'The working memory model has four components: (1) Central Executive --
-allocates attention and coordinates the slave systems, limited capacity. (2) Phonological Loop --
-processes auditory information, has two sub-components: phonological store (holds inner speech) and
-articulatory rehearsal process. (3) Visuospatial Sketchpad -- processes visual and spatial
-information. (4) Episodic Buffer (added by Baddeley, 2000) -- integrates information from the
-phonological loop, visuospatial sketchpad, and LTM into a coherent episodic representation.', tags:
-['working memory', 'Baddeley', 'central executive'], difficulty: 'medium', }, { id: 'cog-3', front:
-'What is the levels of processing theory proposed by Craik and Lockhart (1972)?', back: 'The levels
-of processing theory suggests that memory recall is determined by the depth of mental processing
-during encoding. Shallow processing involves structural or phonetic analysis (e.g., checking if a
-word is in capital letters). Deep processing involves semantic analysis (e.g., considering the
-meaning of a word). Deeper processing leads to better recall because it creates more durable memory
-traces. Craik and Tulving (1975) found that words processed semantically had the highest recall
-rates. Unlike the multi-store model, this theory does not distinguish between STM and LTM as
-separate stores.', tags: ['levels of processing', 'Craik and Lockhart', 'encoding'], difficulty:
-'medium', }, { id: 'cog-4', front: 'What is schema theory and who proposed it?', back: 'Schema
-theory, developed by Bartlett (1932), proposes that memory is not an accurate record of events but
-is reconstructed using schemas -- organised mental frameworks of knowledge and expectations about
-the world. Schemas influence what we notice, how we encode information, and how we recall it.
-Bartlett demonstrated this with the "War of the Ghosts" study: British participants recalled the
-Native American story in a way that was more consistent with their own cultural schemas, omitting
-unfamiliar details and adding familiar ones.', tags: ['schema theory', 'Bartlett', 'memory
-reconstruction'], difficulty: 'easy', }, { id: 'cog-5', front: 'What evidence supports the
-reconstructive nature of memory?', back: 'Reconstructive memory suggests we actively reconstruct
-memories rather than retrieving them passively. Evidence: (1) Bartlett (1932) -- participants
-distorted the "War of the Ghosts" story to fit their cultural schemas. (2) Loftus and Palmer (1974)
--- misleading post-event information altered memory recall (e.g., using "smashed" vs "hit" changed
-speed estimates and false memory of broken glass). (3) Loftus and Pickrell (1995) -- the "lost in
-the mall" technique created false memories of childhood events. This has significant implications
-for eyewitness testimony reliability.', tags: ['reconstructive memory', 'false memory', 'Loftus'],
-difficulty: 'medium', }, { id: 'cog-6', front: 'What did Sperling (1960) demonstrate about sensory
-memory?', back: 'Sperling (1960) used a tachistoscope to briefly display a 3x4 grid of letters for
-50 milliseconds. Participants could in most cases report only 4--5 items. However, when a tone cued
-recall of a specific row immediately after presentation, participants could recall most items in
-that row. This showed that sensory memory has a large capacity (the full grid) but very short
-duration (less than 1 second), and that information decays rapidly before it can be fully
-transferred to short-term memory through attention.', tags: ['Sperling', 'sensory memory', 'iconic
-memory'], difficulty: 'easy', }, { id: 'cog-7', front: 'What did Loftus and Palmer (1974)
-demonstrate about eyewitness testimony?', back: 'Loftus and Palmer (1974) conducted two experiments.
-In Experiment 1, participants watched a car crash video and were asked "About how fast were the cars
-going when they \_\_\_ each other?" The verb varied: smashed (mean 40.8 mph), collided (39.3),
-bumped (38.1), hit (34.0), contacted (31.8). In Experiment 2, one week later, participants who heard
-"smashed" were more likely to falsely report seeing broken glass. This demonstrates the
-misinformation effect -- post-event information can alter eyewitness memory, questioning the
-reliability of eyewitness testimony.', tags: ['Loftus and Palmer', 'eyewitness testimony',
-'misinformation effect'], difficulty: 'medium', }, { id: 'cog-8', front: 'What is the availability
-heuristic and how does it affect judgement?', back: 'The availability heuristic (Tversky and
-Kahneman, 1973) is a mental shortcut where people estimate the likelihood of an event based on how
-readily examples come to mind. Events that are vivid, recent, or emotionally charged are more
-available in memory and therefore judged as more probable, even if they are statistically rare. For
-example, people overestimate the risk of plane crashes after media coverage. Carluccio (2018)
-demonstrated that availability heuristics influence health risk perceptions. The heuristic is
-efficient but can lead to systematic biases in probability judgement.', tags: ['availability
-heuristic', 'heuristics', 'Tversky and Kahneman'], difficulty: 'medium', }, { id: 'cog-9', front:
-'Explain the representativeness heuristic and its limitations.', back: 'The representativeness
-heuristic involves judging the probability that an object or event belongs to a category based on
-how typical or representative it seems, rather than base rates. Tversky and Kahneman (1973)
-demonstrated this with the "Tom W." problem -- participants judged personality descriptions against
-occupational stereotypes while ignoring base rate information (e.g., that there are more farmers
-than librarians). It leads to errors such as ignoring the conjunction fallacy and base-rate fallacy.
-Gigerenzer (1996) argued frequency formats can reduce this bias.', tags: ['representativeness
-heuristic', 'heuristics', 'base rate fallacy'], difficulty: 'medium', }, { id: 'cog-10', front:
-'What is the anchoring heuristic and how does it influence decision-making?', back: 'The anchoring
-heuristic occurs when people rely too heavily on an initial piece of information (the "anchor") when
-making numerical estimates or decisions. Even irrelevant anchors can influence judgements. Tversky
-and Kahneman (1974) demonstrated this with a spinning wheel task: participants given a random anchor
-adjusted insufficiently from it when estimating the percentage of African nations in the UN.
-Anchoring affects negotiations, pricing, and legal judgements. Ariely et al. (2003) showed that
-arbitrary numbers (e.g., the last two digits of a social security number) influenced willingness to
-pay for items.', tags: ['anchoring', 'heuristics', 'decision-making'], difficulty: 'medium', }, {
-id: 'cog-11', front: 'What is confirmation bias and why is it significant in cognitive psychology?',
-back: "Confirmation bias is the tendency to search for, interpret, and remember information that
-confirms one's pre-existing beliefs while ignoring contradictory evidence. Lord, Ross, and Lepper
-(1979) found that participants evaluating evidence about capital punishment became more polarised --
-proponents found pro-evidence stronger and anti-evidence weaker. Wason (1960) demonstrated this with
-the 2-4-6 task: participants tested only confirmatory instances of their hypothesis. Confirmation
-bias affects scientific reasoning, jury decisions, and everyday problem-solving, making it a key
-cognitive bias to understand.", tags: ['confirmation bias', 'cognitive bias', 'Wason'], difficulty:
-'medium', }, { id: 'cog-12', front: 'What is hindsight bias and how does it affect our understanding
-of events?', back: 'Hindsight bias ("I knew it all along" effect) is the tendency, after an event
-has occurred, to believe that one would have predicted or expected the outcome. Fischhoff (1975)
-asked participants to predict outcomes of historical events and then, after being told the actual
-outcome, overestimated how much they would have correctly predicted. Roese and Vohs (2012)
-identified three cognitive mechanisms: memory distortion (misremembering past judgements),
-inevitability (event seems inevitable), and foreseeability (event seems foreseeable). It distorts
-evaluations of past decisions and can impede learning from mistakes.', tags: ['hindsight bias',
-'cognitive bias', 'Fischhoff'], difficulty: 'medium', }, { id: 'cog-13', front: 'What is
-dual-process theory and how does it explain thinking?', back: 'Dual-process theory (Kahneman, 2011)
-distinguishes between two systems of thinking. System 1 is fast, automatic, intuitive,
-emotion-based, and requires little cognitive effort (heuristics, snap judgements). System 2 is slow,
-deliberate, analytical, and requires conscious effort (complex calculations, logical reasoning).
-Most thinking uses System 1, but System 2 can override it when needed. Cognitive biases in most
-cases arise from System 1 thinking when System 2 fails to intervene. Evans and Stanovich (2013)
-noted individual differences in the tendency to engage System 2 thinking.', tags: ['dual-process
-theory', 'System 1', 'System 2', 'Kahneman'], difficulty: 'medium', }, { id: 'cog-14', front: 'What
-is prospect theory and how does it differ from expected utility theory?', back: 'Prospect theory
-(Kahneman and Tversky, 1979) describes how people make decisions under risk. Unlike expected utility
-theory, it accounts for cognitive biases: (1) Loss aversion -- losses are felt approximately twice
-as strongly as equivalent gains. (2) Reference dependence -- people evaluate outcomes relative to a
-reference point rather than in absolute terms. (3) Diminishing sensitivity -- the difference between
-100 and 200 feels larger than between 1100 and 1200. (4) Probability weighting -- people overweight
-small probabilities and underweight large ones. This explains the Allais paradox and framing
-effects.', tags: ['prospect theory', 'Kahneman and Tversky', 'decision-making'], difficulty: 'hard',
-}, { id: 'cog-15', front: 'What is the Sapir-Whorf hypothesis and what evidence supports or
-challenges it?', back: 'The Sapir-Whorf (linguistic relativity) hypothesis proposes that the
-language we speak shapes our thought processes. The strong version (linguistic determinism) argues
-language determines thought; the weak version argues language influences thought. Boroditsky (2001)
-provided evidence: English speakers arrange time left-to-right, but Hebrew speakers arrange it
-right-to-left, and Kuuk Thaayorre speakers (Australia) arrange it east-to-west. However, Pinker
-(2007) criticised strong determinism, arguing that thought can exist without language, citing
-studies of infants and non-human primates demonstrating conceptual reasoning.', tags:
-['Sapir-Whorf', 'linguistic relativity', 'Boroditsky'], difficulty: 'hard', }, { id: 'cog-16',
-front: 'What evidence exists for bilingual cognitive advantages?', back: 'Research suggests
-bilingualism may confer cognitive advantages in executive function. Bialystok (2004) found bilingual
-children outperformed monolinguals on the Simon task and Dimensional Change Card Sort, demonstrating
-better inhibitory control and cognitive flexibility. Boroditsky argued that bilinguals think
-differently depending on which language they are using. However, Paap and Greenberg (2013) failed to
-replicate these advantages, suggesting they may be limited to specific task conditions or
-populations. The debate continues regarding the reliability and scope of the bilingual advantage.',
-tags: ['bilingualism', 'cognitive advantage', 'Bialystok'], difficulty: 'hard', }, { id: 'cog-17',
-front: 'How does the working memory model explain the word-length effect?', back: 'The word-length
-effect refers to the finding that people recall fewer long words than short words in short-term
-memory tasks. The working memory model explains this through the phonological loop: the articulatory
-rehearsal process can only maintain approximately 2 seconds of spoken material. Longer words take
-more time to articulate, so fewer can be rehearsed within this time window. Baddeley et al. (1975)
-confirmed this by showing that words with faster articulation rates (shorter words) had higher
-recall spans. This supports the model over the unitary STM in the multi-store model.', tags:
-['word-length effect', 'working memory', 'phonological loop'], difficulty: 'hard', }, { id:
-'cog-18', front: 'What is the cognitive interview technique and why was it developed?', back: 'The
-cognitive interview was developed by Fisher and Geiselman (1992) to improve eyewitness recall and
-reduce the inaccuracies identified by Loftus and Palmer. It has four components: (1) Report
-everything -- recall every detail without editing. (2) Reinstate context -- mentally recreate the
-physical and emotional context of the event. (3) Change sequence -- recall events in different
-temporal orders. (4) Change perspective -- recall from different viewpoints. Research shows the
-cognitive interview increases the amount of correct information recalled by 25--40% without
-increasing false memories significantly compared to standard police interviews.', tags: ['cognitive
-interview', 'eyewitness testimony', 'Fisher and Geiselman'], difficulty: 'easy', }, { id: 'cog-19',
-front: 'How do flashbulb memories differ from ordinary memories?', back: "Flashbulb memories are
-vivid, detailed memories of emotionally significant, surprising public events (e.g., 9/11). Brown
-and Kulik (1977) proposed they are encoded with special mechanisms involving the amygdala, making
-them more resistant to forgetting. However, Neisser and Harsch (1992) found that participants'
-memories of the Challenger disaster were highly inaccurate 2--3 years later, despite high
-confidence. Talarico and Rubin (2003) compared flashbulb and everyday memories and found both
-declined at similar rates, though confidence in flashbulb memories remained high. This suggests
-flashbulb memories are not more accurate, just more confidently held.", tags: ['flashbulb memory',
-'emotion and memory', 'Brown and Kulik'], difficulty: 'medium', }, { id: 'cog-20', front: 'Evaluate
-dual-process theory as an explanation of cognitive biases.', back: 'Dual-process theory provides a
-strong framework for explaining why cognitive biases occur -- System 1 relies on heuristics that are
-generally efficient but systematically biased. However, the theory has limitations: (1) The
-distinction between systems is not always clear-cut; some researchers argue for a spectrum rather
-than dichotomy (Evans, 2008). (2) Neuroimaging evidence is mixed -- some studies show distinct
-neural correlates, others do not. (3) It may be overly simplistic; Stanovich (2011) proposed a
-tripartite model with autonomous mind, algorithmic mind, and reflective mind. Despite criticisms, it
-remains the most influential framework for understanding judgment and decision-making.', tags:
-['dual-process theory', 'evaluation', 'cognitive biases'], difficulty: 'hard', }, ];
+export const flashcard1 = [
+  {
+    id: 'cog-1',
+    front: 'Describe the multi-store model of memory proposed by Atkinson and Shiffrin (1968).',
+    back: 'The multi-store model divides memory into three stores: sensory memory (duration < 1 second, capacity large), short-term memory (duration approximately 18--30 seconds, capacity 7 +/- 2 items), and long-term memory (potentially unlimited capacity and duration). Information flows from sensory to STM via attention, and from STM to LTM via rehearsal. Support: Sperling (1960) demonstrated sensory memory; Peterson and Peterson (1959) showed STM duration without rehearsal. Criticism: the model is oversimplified and does not account for different types of LTM.',
+    tags: ['multi-store model', 'Atkinson-Shiffrin', 'memory'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cog-2',
+    front: "What are the components of Baddeley and Hitch's working memory model (1974)?",
+    back: 'The working memory model has four components: (1) Central Executive -- allocates attention and coordinates the slave systems, limited capacity. (2) Phonological Loop -- processes auditory information, has two sub-components: phonological store (holds inner speech) and articulatory rehearsal process. (3) Visuospatial Sketchpad -- processes visual and spatial information. (4) Episodic Buffer (added by Baddeley, 2000) -- integrates information from the phonological loop, visuospatial sketchpad, and LTM into a coherent episodic representation.',
+    tags: ['working memory', 'Baddeley', 'central executive'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-3',
+    front: 'What is the levels of processing theory proposed by Craik and Lockhart (1972)?',
+    back: 'The levels of processing theory suggests that memory recall is determined by the depth of mental processing during encoding. Shallow processing involves structural or phonetic analysis (e.g., checking if a word is in capital letters). Deep processing involves semantic analysis (e.g., considering the meaning of a word). Deeper processing leads to better recall because it creates more durable memory traces. Craik and Tulving (1975) found that words processed semantically had the highest recall rates. Unlike the multi-store model, this theory does not distinguish between STM and LTM as separate stores.',
+    tags: ['levels of processing', 'Craik and Lockhart', 'encoding'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-4',
+    front: 'What is schema theory and who proposed it?',
+    back: 'Schema theory, developed by Bartlett (1932), proposes that memory is not an accurate record of events but is reconstructed using schemas -- organised mental frameworks of knowledge and expectations about the world. Schemas influence what we notice, how we encode information, and how we recall it. Bartlett demonstrated this with the "War of the Ghosts" study: British participants recalled the Native American story in a way that was more consistent with their own cultural schemas, omitting unfamiliar details and adding familiar ones.',
+    tags: ['schema theory', 'Bartlett', 'memory reconstruction'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cog-5',
+    front: 'What evidence supports the reconstructive nature of memory?',
+    back: 'Reconstructive memory suggests we actively reconstruct memories rather than retrieving them passively. Evidence: (1) Bartlett (1932) -- participants distorted the "War of the Ghosts" story to fit their cultural schemas. (2) Loftus and Palmer (1974) -- misleading post-event information altered memory recall (e.g., using "smashed" vs "hit" changed speed estimates and false memory of broken glass). (3) Loftus and Pickrell (1995) -- the "lost in the mall" technique created false memories of childhood events. This has significant implications for eyewitness testimony reliability.',
+    tags: ['reconstructive memory', 'false memory', 'Loftus'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'cog-6',
+    front: 'What did Sperling (1960) demonstrate about sensory memory?',
+    back: 'Sperling (1960) used a tachistoscope to briefly display a 3x4 grid of letters for 50 milliseconds. Participants could in most cases report only 4--5 items. However, when a tone cued recall of a specific row immediately after presentation, participants could recall most items in that row. This showed that sensory memory has a large capacity (the full grid) but very short duration (less than 1 second), and that information decays rapidly before it can be fully transferred to short-term memory through attention.',
+    tags: ['Sperling', 'sensory memory', 'iconic memory'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cog-7',
+    front: 'What did Loftus and Palmer (1974) demonstrate about eyewitness testimony?',
+    back: 'Loftus and Palmer (1974) conducted two experiments. In Experiment 1, participants watched a car crash video and were asked "About how fast were the cars going when they ___ each other?" The verb varied: smashed (mean 40.8 mph), collided (39.3), bumped (38.1), hit (34.0), contacted (31.8). In Experiment 2, one week later, participants who heard "smashed" were more likely to falsely report seeing broken glass. This demonstrates the misinformation effect -- post-event information can alter eyewitness memory, questioning the reliability of eyewitness testimony.',
+    tags: ['Loftus and Palmer', 'eyewitness testimony', 'misinformation effect'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-8',
+    front: 'What is the availability heuristic and how does it affect judgement?',
+    back: 'The availability heuristic (Tversky and Kahneman, 1973) is a mental shortcut where people estimate the likelihood of an event based on how readily examples come to mind. Events that are vivid, recent, or emotionally charged are more available in memory and therefore judged as more probable, even if they are statistically rare. For example, people overestimate the risk of plane crashes after media coverage. Carluccio (2018) demonstrated that availability heuristics influence health risk perceptions. The heuristic is efficient but can lead to systematic biases in probability judgement.',
+    tags: ['availability heuristic', 'heuristics', 'Tversky and Kahneman'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-9',
+    front: 'Explain the representativeness heuristic and its limitations.',
+    back: 'The representativeness heuristic involves judging the probability that an object or event belongs to a category based on how typical or representative it seems, rather than base rates. Tversky and Kahneman (1973) demonstrated this with the "Tom W." problem -- participants judged personality descriptions against occupational stereotypes while ignoring base rate information (e.g., that there are more farmers than librarians). It leads to errors such as ignoring the conjunction fallacy and base-rate fallacy. Gigerenzer (1996) argued frequency formats can reduce this bias.',
+    tags: ['representativeness heuristic', 'heuristics', 'base rate fallacy'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-10',
+    front: 'What is the anchoring heuristic and how does it influence decision-making?',
+    back: 'The anchoring heuristic occurs when people rely too heavily on an initial piece of information (the "anchor") when making numerical estimates or decisions. Even irrelevant anchors can influence judgements. Tversky and Kahneman (1974) demonstrated this with a spinning wheel task: participants given a random anchor adjusted insufficiently from it when estimating the percentage of African nations in the UN. Anchoring affects negotiations, pricing, and legal judgements. Ariely et al. (2003) showed that arbitrary numbers (e.g., the last two digits of a social security number) influenced willingness to pay for items.',
+    tags: ['anchoring', 'heuristics', 'decision-making'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'cog-11',
+    front: 'What is confirmation bias and why is it significant in cognitive psychology?',
+    back: "Confirmation bias is the tendency to search for, interpret, and remember information that confirms one's pre-existing beliefs while ignoring contradictory evidence. Lord, Ross, and Lepper (1979) found that participants evaluating evidence about capital punishment became more polarised -- proponents found pro-evidence stronger and anti-evidence weaker. Wason (1960) demonstrated this with the 2-4-6 task: participants tested only confirmatory instances of their hypothesis. Confirmation bias affects scientific reasoning, jury decisions, and everyday problem-solving, making it a key cognitive bias to understand.",
+    tags: ['confirmation bias', 'cognitive bias', 'Wason'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-12',
+    front: 'What is hindsight bias and how does it affect our understanding of events?',
+    back: 'Hindsight bias ("I knew it all along" effect) is the tendency, after an event has occurred, to believe that one would have predicted or expected the outcome. Fischhoff (1975) asked participants to predict outcomes of historical events and then, after being told the actual outcome, overestimated how much they would have correctly predicted. Roese and Vohs (2012) identified three cognitive mechanisms: memory distortion (misremembering past judgements), inevitability (event seems inevitable), and foreseeability (event seems foreseeable). It distorts evaluations of past decisions and can impede learning from mistakes.',
+    tags: ['hindsight bias', 'cognitive bias', 'Fischhoff'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-13',
+    front: 'What is dual-process theory and how does it explain thinking?',
+    back: 'Dual-process theory (Kahneman, 2011) distinguishes between two systems of thinking. System 1 is fast, automatic, intuitive, emotion-based, and requires little cognitive effort (heuristics, snap judgements). System 2 is slow, deliberate, analytical, and requires conscious effort (complex calculations, logical reasoning). Most thinking uses System 1, but System 2 can override it when needed. Cognitive biases in most cases arise from System 1 thinking when System 2 fails to intervene. Evans and Stanovich (2013) noted individual differences in the tendency to engage System 2 thinking.',
+    tags: ['dual-process theory', 'System 1', 'System 2', 'Kahneman'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-14',
+    front: 'What is prospect theory and how does it differ from expected utility theory?',
+    back: 'Prospect theory (Kahneman and Tversky, 1979) describes how people make decisions under risk. Unlike expected utility theory, it accounts for cognitive biases: (1) Loss aversion -- losses are felt approximately twice as strongly as equivalent gains. (2) Reference dependence -- people evaluate outcomes relative to a reference point rather than in absolute terms. (3) Diminishing sensitivity -- the difference between 100 and 200 feels larger than between 1100 and 1200. (4) Probability weighting -- people overweight small probabilities and underweight large ones. This explains the Allais paradox and framing effects.',
+    tags: ['prospect theory', 'Kahneman and Tversky', 'decision-making'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'cog-15',
+    front: 'What is the Sapir-Whorf hypothesis and what evidence supports or challenges it?',
+    back: 'The Sapir-Whorf (linguistic relativity) hypothesis proposes that the language we speak shapes our thought processes. The strong version (linguistic determinism) argues language determines thought; the weak version argues language influences thought. Boroditsky (2001) provided evidence: English speakers arrange time left-to-right, but Hebrew speakers arrange it right-to-left, and Kuuk Thaayorre speakers (Australia) arrange it east-to-west. However, Pinker (2007) criticised strong determinism, arguing that thought can exist without language, citing studies of infants and non-human primates demonstrating conceptual reasoning.',
+    tags: ['Sapir-Whorf', 'linguistic relativity', 'Boroditsky'],
+    difficulty: 'hard',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'cog-16',
+    front: 'What evidence exists for bilingual cognitive advantages?',
+    back: 'Research suggests bilingualism may confer cognitive advantages in executive function. Bialystok (2004) found bilingual children outperformed monolinguals on the Simon task and Dimensional Change Card Sort, demonstrating better inhibitory control and cognitive flexibility. Boroditsky argued that bilinguals think differently depending on which language they are using. However, Paap and Greenberg (2013) failed to replicate these advantages, suggesting they may be limited to specific task conditions or populations. The debate continues regarding the reliability and scope of the bilingual advantage.',
+    tags: ['bilingualism', 'cognitive advantage', 'Bialystok'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'cog-17',
+    front: 'How does the working memory model explain the word-length effect?',
+    back: 'The word-length effect refers to the finding that people recall fewer long words than short words in short-term memory tasks. The working memory model explains this through the phonological loop: the articulatory rehearsal process can only maintain approximately 2 seconds of spoken material. Longer words take more time to articulate, so fewer can be rehearsed within this time window. Baddeley et al. (1975) confirmed this by showing that words with faster articulation rates (shorter words) had higher recall spans. This supports the model over the unitary STM in the multi-store model.',
+    tags: ['word-length effect', 'working memory', 'phonological loop'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'cog-18',
+    front: 'What is the cognitive interview technique and why was it developed?',
+    back: 'The cognitive interview was developed by Fisher and Geiselman (1992) to improve eyewitness recall and reduce the inaccuracies identified by Loftus and Palmer. It has four components: (1) Report everything -- recall every detail without editing. (2) Reinstate context -- mentally recreate the physical and emotional context of the event. (3) Change sequence -- recall events in different temporal orders. (4) Change perspective -- recall from different viewpoints. Research shows the cognitive interview increases the amount of correct information recalled by 25--40% without increasing false memories significantly compared to standard police interviews.',
+    tags: ['cognitive interview', 'eyewitness testimony', 'Fisher and Geiselman'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'cog-19',
+    front: 'How do flashbulb memories differ from ordinary memories?',
+    back: "Flashbulb memories are vivid, detailed memories of emotionally significant, surprising public events (e.g., 9/11). Brown and Kulik (1977) proposed they are encoded with special mechanisms involving the amygdala, making them more resistant to forgetting. However, Neisser and Harsch (1992) found that participants' memories of the Challenger disaster were highly inaccurate 2--3 years later, despite high confidence. Talarico and Rubin (2003) compared flashbulb and everyday memories and found both declined at similar rates, though confidence in flashbulb memories remained high. This suggests flashbulb memories are not more accurate, just more confidently held.",
+    tags: ['flashbulb memory', 'emotion and memory', 'Brown and Kulik'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'cog-20',
+    front: 'Evaluate dual-process theory as an explanation of cognitive biases.',
+    back: 'Dual-process theory provides a strong framework for explaining why cognitive biases occur -- System 1 relies on heuristics that are generally efficient but systematically biased. However, the theory has limitations: (1) The distinction between systems is not always clear-cut; some researchers argue for a spectrum rather than dichotomy (Evans, 2008). (2) Neuroimaging evidence is mixed -- some studies show distinct neural correlates, others do not. (3) It may be overly simplistic; Stanovich (2011) proposed a tripartite model with autonomous mind, algorithmic mind, and reflective mind. Despite criticisms, it remains the most influential framework for understanding judgment and decision-making.',
+    tags: ['dual-process theory', 'evaluation', 'cognitive biases'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ib-psychology-cognitive"
   title="IB Psychology: Cognitive Level of Analysis"
   description="Memory models, schema theory, reconstructive memory, eyewitness testimony, heuristics, cognitive biases, dual-process theory, prospect theory, and language"
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

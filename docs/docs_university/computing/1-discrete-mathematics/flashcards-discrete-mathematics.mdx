@@ -18,83 +18,164 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"uni-cs-discrete-mathematics-001",front:"What is a tautology in
-propositional logic?",back:"A statement that is true for every possible assignment of truth values
-to its variables, e.g. `P OR NOT P` is always true.",tags:["Propositional
-Logic"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-002",front:"State De Morgan's laws for
-propositional logic.",back:"`NOT (P AND Q)` is equivalent to `NOT P OR NOT Q`. `NOT (P OR Q)` is
-equivalent to `NOT P AND NOT Q`.",tags:["Propositional
-Logic"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-003",front:"What is modus
-ponens?",back:"If `P` is true and `P => Q` is true, then `Q` must be true. It is a fundamental rule
-of inference: `P, P=>Q | therefore Q`.",tags:["Propositional
-Logic"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-004",front:"What is the cardinality of
-the power set of a set A with n elements?",back:"The power set `P(A)` has `2^n` elements. For
-example, if `|A| = 3`, then `|P(A)| = 8`.",tags:["Set
-Theory"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-005",front:"Prove that for any two sets
-A and B, `|A union B| = |A| + |B| - |A intersect B|`.",back:"This is the inclusion-exclusion
-principle for two sets. Elements in A alone are counted once, elements in B alone once, but elements
-in both were double-counted, so subtract `|A intersect B|`.",tags:["Set
-Theory"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-006",front:"What are the three
-properties that define an equivalence relation?",back:"Reflexivity (`a R a` for all a), symmetry
-(`a R b` implies `b R a`), and transitivity (`a R b` and `b R c` implies
-`a R c`).",tags:["Relations"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-007",front:"How
-does a partial order differ from a total order?",back:"A partial order requires reflexivity,
-antisymmetry, and transitivity, but not every pair need be comparable. A total order adds
-comparability: for any `a, b`, either `a <= b` or
-`b <= a`.",tags:["Relations"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-008",front:"What
-is the difference between an injective and a surjective function?",back:"Injective (one-to-one):
-distinct inputs map to distinct outputs. Surjective (onto): every element in the codomain is mapped
-to by at least one element in the
-domain.",tags:["Relations"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-009",front:"How many
-permutations are there of n distinct objects taken r at a time?",back:"`P(n, r) = n! / (n - r)!`.
-This counts ordered arrangements of r elements selected from n distinct
-elements.",tags:["Combinatorics"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-010",front:"State
-the binomial theorem for
-`(x + y)^n`.",back:"`(x + y)^n = sum from k=0 to n of C(n,k) * x^(n-k) * y^k`, where
-`C(n,k) = n! / (k!(n-k)!)` is the binomial
-coefficient.",tags:["Combinatorics"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-011",front:"When
-does a connected graph have an Euler circuit vs. an Euler path?",back:"Euler circuit: every vertex
-has even degree. Euler path: exactly two vertices have odd degree. The graph must be connected in
-both cases.",tags:["Graph
-Theory"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-012",front:"State the Handshaking
-Lemma.",back:"For any finite undirected graph, the sum of all vertex degrees equals twice the number
-of edges: `sum(deg(v)) = 2|E|`.",tags:["Graph
-Theory"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-013",front:"What is the necessary and
-sufficient condition for a graph to be planar (Kuratowski's Theorem)?",back:"A graph is planar if
-and only if it does not contain a subgraph that is a subdivision of `K5` (complete graph on 5
-vertices) or `K3,3` (complete bipartite graph with partitions of size 3 and 3).",tags:["Graph
-Theory"],difficulty:"hard"},{id:"uni-cs-discrete-mathematics-014",front:"How many edges does a
-spanning tree of a connected graph with n vertices and m edges have?",back:"A spanning tree always
-has exactly `n - 1` edges, regardless of the original graph's number of edges `m`. It is a minimal
-connected subgraph containing all vertices.",tags:["Graph
-Theory"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-015",front:"What is the Principle of
-Mathematical Induction?",back:"Prove the base case `P(1)` is true. Assume `P(k)` holds (inductive
-hypothesis), then prove `P(k+1)` follows. If both steps succeed, `P(n)` is true for all
-`n >= 1`.",tags:["Proof
-Techniques"],difficulty:"easy"},{id:"uni-cs-discrete-mathematics-016",front:"How does proof by
-contradiction work?",back:"Assume the negation of what you want to prove. Through valid logical
-steps, derive a contradiction (e.g. `P AND NOT P`). Since the assumption leads to an impossibility,
-the original statement must be true.",tags:["Proof
-Techniques"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-017",front:"When should you use
-the contrapositive instead of direct proof for `P => Q`?",back:"Prove the contrapositive
-`NOT Q => NOT P` instead. It is logically equivalent to the original implication and is often easier
-when the negation of the conclusion gives more useful structure to work with.",tags:["Proof
-Techniques"],difficulty:"medium"},{id:"uni-cs-discrete-mathematics-018",front:"What is strong
-induction and how does it differ from ordinary induction?",back:"Strong induction assumes
-`P(1), P(2), ..., P(k)` all hold to prove `P(k+1)`, rather than just `P(k)`. Useful when the step
-from k to k+1 depends on more than just the immediately preceding case.",tags:["Proof
-Techniques"],difficulty:"hard"},{id:"uni-cs-discrete-mathematics-019",front:"How many ways can you
-choose k items from n distinct items with replacement, where order does not
-matter?",back:"`C(n + k - 1, k) = (n + k - 1)! / (k!(n - 1)!)`. This is the stars and bars formula,
-counting combinations with
-repetition.",tags:["Combinatorics"],difficulty:"hard"},{id:"uni-cs-discrete-mathematics-020",front:"What
-is the Pigeonhole Principle?",back:"If `n` items are placed into `m` containers and `n > m`, then at
-least one container must contain more than one item. General form: if `n > km`, at least one
-container has `>= k + 1` items.",tags:["Combinatorics"],difficulty:"medium"}];
+export const flashcards1 = [
+  {
+    id: 'uni-cs-discrete-mathematics-001',
+    front: 'What is a tautology in propositional logic?',
+    back: 'A statement that is true for every possible assignment of truth values to its variables, e.g. `P OR NOT P` is always true.',
+    tags: ['Propositional Logic'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-002',
+    front: "State De Morgan's laws for propositional logic.",
+    back: '`NOT (P AND Q)` is equivalent to `NOT P OR NOT Q`. `NOT (P OR Q)` is equivalent to `NOT P AND NOT Q`.',
+    tags: ['Propositional Logic'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-003',
+    front: 'What is modus ponens?',
+    back: 'If `P` is true and `P => Q` is true, then `Q` must be true. It is a fundamental rule of inference: `P, P=>Q | therefore Q`.',
+    tags: ['Propositional Logic'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-004',
+    front: 'What is the cardinality of the power set of a set A with n elements?',
+    back: 'The power set `P(A)` has `2^n` elements. For example, if `|A| = 3`, then `|P(A)| = 8`.',
+    tags: ['Set Theory'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-005',
+    front: 'Prove that for any two sets A and B, `|A union B| = |A| + |B| - |A intersect B|`.',
+    back: 'This is the inclusion-exclusion principle for two sets. Elements in A alone are counted once, elements in B alone once, but elements in both were double-counted, so subtract `|A intersect B|`.',
+    tags: ['Set Theory'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-cs-discrete-mathematics-006',
+    front: 'What are the three properties that define an equivalence relation?',
+    back: 'Reflexivity (`a R a` for all a), symmetry (`a R b` implies `b R a`), and transitivity (`a R b` and `b R c` implies `a R c`).',
+    tags: ['Relations'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-007',
+    front: 'How does a partial order differ from a total order?',
+    back: 'A partial order requires reflexivity, antisymmetry, and transitivity, but not every pair need be comparable. A total order adds comparability: for any `a, b`, either `a <= b` or `b <= a`.',
+    tags: ['Relations'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-008',
+    front: 'What is the difference between an injective and a surjective function?',
+    back: 'Injective (one-to-one): distinct inputs map to distinct outputs. Surjective (onto): every element in the codomain is mapped to by at least one element in the domain.',
+    tags: ['Relations'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-009',
+    front: 'How many permutations are there of n distinct objects taken r at a time?',
+    back: '`P(n, r) = n! / (n - r)!`. This counts ordered arrangements of r elements selected from n distinct elements.',
+    tags: ['Combinatorics'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-010',
+    front: 'State the binomial theorem for `(x + y)^n`.',
+    back: '`(x + y)^n = sum from k=0 to n of C(n,k) * x^(n-k) * y^k`, where `C(n,k) = n! / (k!(n-k)!)` is the binomial coefficient.',
+    tags: ['Combinatorics'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-cs-discrete-mathematics-011',
+    front: 'When does a connected graph have an Euler circuit vs. an Euler path?',
+    back: 'Euler circuit: every vertex has even degree. Euler path: exactly two vertices have odd degree. The graph must be connected in both cases.',
+    tags: ['Graph Theory'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-012',
+    front: 'State the Handshaking Lemma.',
+    back: 'For any finite undirected graph, the sum of all vertex degrees equals twice the number of edges: `sum(deg(v)) = 2|E|`.',
+    tags: ['Graph Theory'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-013',
+    front:
+      "What is the necessary and sufficient condition for a graph to be planar (Kuratowski's Theorem)?",
+    back: 'A graph is planar if and only if it does not contain a subgraph that is a subdivision of `K5` (complete graph on 5 vertices) or `K3,3` (complete bipartite graph with partitions of size 3 and 3).',
+    tags: ['Graph Theory'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-014',
+    front:
+      'How many edges does a spanning tree of a connected graph with n vertices and m edges have?',
+    back: "A spanning tree always has exactly `n - 1` edges, regardless of the original graph's number of edges `m`. It is a minimal connected subgraph containing all vertices.",
+    tags: ['Graph Theory'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-015',
+    front: 'What is the Principle of Mathematical Induction?',
+    back: 'Prove the base case `P(1)` is true. Assume `P(k)` holds (inductive hypothesis), then prove `P(k+1)` follows. If both steps succeed, `P(n)` is true for all `n >= 1`.',
+    tags: ['Proof Techniques'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-cs-discrete-mathematics-016',
+    front: 'How does proof by contradiction work?',
+    back: 'Assume the negation of what you want to prove. Through valid logical steps, derive a contradiction (e.g. `P AND NOT P`). Since the assumption leads to an impossibility, the original statement must be true.',
+    tags: ['Proof Techniques'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-017',
+    front: 'When should you use the contrapositive instead of direct proof for `P => Q`?',
+    back: 'Prove the contrapositive `NOT Q => NOT P` instead. It is logically equivalent to the original implication and is often easier when the negation of the conclusion gives more useful structure to work with.',
+    tags: ['Proof Techniques'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-018',
+    front: 'What is strong induction and how does it differ from ordinary induction?',
+    back: 'Strong induction assumes `P(1), P(2), ..., P(k)` all hold to prove `P(k+1)`, rather than just `P(k)`. Useful when the step from k to k+1 depends on more than just the immediately preceding case.',
+    tags: ['Proof Techniques'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-019',
+    front:
+      'How many ways can you choose k items from n distinct items with replacement, where order does not matter?',
+    back: '`C(n + k - 1, k) = (n + k - 1)! / (k!(n - 1)!)`. This is the stars and bars formula, counting combinations with repetition.',
+    tags: ['Combinatorics'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-discrete-mathematics-020',
+    front: 'What is the Pigeonhole Principle?',
+    back: 'If `n` items are placed into `m` containers and `n > m`, then at least one container must contain more than one item. General form: if `n > km`, at least one container has `>= k + 1` items.',
+    tags: ['Combinatorics'],
+    difficulty: 'medium',
+  },
+];
 
 <FlashcardDeck
   deckId="uni-cs-discrete-mathematics"
   title="University Computing -- Discrete Mathematics"
   description="20 interactive flashcards covering propositional logic, set theory, relations, combinatorics, graph theory, and proof techniques."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />

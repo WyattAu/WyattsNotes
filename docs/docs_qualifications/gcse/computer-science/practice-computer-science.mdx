@@ -57,7 +57,12 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 <PracticeProblem
   question="What is the key difference between RAM and ROM?"
-  options={['RAM is volatile (loses data when power is off) and ROM is non-volatile (retains data when power is off)', 'RAM stores the operating system permanently and ROM stores running applications', 'RAM is read-only and ROM is read-write', 'RAM is slower than ROM'}
+  options={[
+    'RAM is volatile (loses data when power is off) and ROM is non-volatile (retains data when power is off)',
+    'RAM stores the operating system permanently and ROM stores running applications',
+    'RAM is read-only and ROM is read-write',
+    'RAM is slower than ROM',
+  ]}
   correctAnswer={0}
   explanation="RAM (Random Access Memory) is volatile, meaning all stored data is lost when the computer is switched off. It is used to store currently running programs and data that the CPU needs quickly. ROM (Read Only Memory) is non-volatile and retains its contents permanently. It stores the BIOS/firmware that the computer needs to boot up. RAM is generally faster and has larger capacity than ROM."
   difficulty="medium"

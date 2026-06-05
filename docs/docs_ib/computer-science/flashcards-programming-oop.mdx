@@ -18,89 +18,162 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"ib-cs-programming-oop-001",front:"What is a variable and why must it be
-declared before use?",back:"A variable is a named storage location in memory that holds a value.
-Declaration specifies the name and data type, allowing the compiler to allocate appropriate
-memory.",tags:["programming","variables"],difficulty:"easy"},{id:"ib-cs-programming-oop-002",front:"Describe
-the selection construct in programming.",back:"Selection allows the program to choose between
-different paths of execution based on a condition, using statements such as if-then-else or
-case/switch.",tags:["programming","selection"],difficulty:"easy"},{id:"ib-cs-programming-oop-003",front:"What
-is the difference between a while loop and a repeat/until loop?",back:"A while loop checks the
-condition before each iteration (pre-test) and may execute zero times; a repeat/until loop checks
-after each iteration (post-test) and always executes at least
-once.",tags:["programming","iteration"],difficulty:"easy"},{id:"ib-cs-programming-oop-004",front:"Define
-a class and an object in object-oriented programming.",back:"A class is a blueprint or template that
-defines attributes and methods. An object is a specific instance of a class created at runtime with
-its own
-data.",tags:["oop","classes-objects"],difficulty:"easy"},{id:"ib-cs-programming-oop-005",front:"What
-is encapsulation in OOP?",back:"Encapsulation is bundling data (attributes) and methods that operate
-on that data within a class, and restricting direct access to internal details through access
-modifiers
-(private/protected).",tags:["oop","encapsulation"],difficulty:"easy"},{id:"ib-cs-programming-oop-006",front:"What
-is the difference between a procedure and a function?",back:"A procedure performs an action but does
-not return a value; a function performs an action and returns a value to the calling
-code.",tags:["programming","subprograms"],difficulty:"easy"},{id:"ib-cs-programming-oop-007",front:"Name
-three primitive data types commonly used in programming.",back:"Integer (whole numbers),
-Float/Double (decimal numbers), Boolean
-(true/false).",tags:["programming","data-types"],difficulty:"easy"},{id:"ib-cs-programming-oop-008",front:"Explain
-the difference between passing parameters by value and by reference.",back:"Pass by value sends a
-copy of the argument, so changes inside the subprogram do not affect the original. Pass by reference
-sends the memory address, so changes inside the subprogram modify the original
-variable.",tags:["programming","parameters"],difficulty:"medium"},{id:"ib-cs-programming-oop-009",front:"What
-is inheritance in OOP and what problem does it solve?",back:"Inheritance allows a subclass to
-acquire attributes and methods from a superclass, promoting code reuse and establishing an is-a
-relationship between
-classes.",tags:["oop","inheritance"],difficulty:"medium"},{id:"ib-cs-programming-oop-010",front:"Explain
-polymorphism in OOP with an example.",back:"Polymorphism allows objects of different classes to be
-treated through a common interface. Example: a Shape class with a draw() method, where Circle and
-Rectangle subclasses each implement draw()
-differently.",tags:["oop","polymorphism"],difficulty:"medium"},{id:"ib-cs-programming-oop-011",front:"What
-is a for loop and when is it preferred over a while loop?",back:"A for loop iterates a known number
-of times using a counter variable. It is preferred when the number of iterations is known in
-advance.",tags:["programming","iteration"],difficulty:"medium"},{id:"ib-cs-programming-oop-012",front:"What
-is an Abstract Data Type (ADT)?",back:"An ADT defines a data type by its behavior (operations)
-rather than its implementation. Examples: stack (push, pop, peek), queue (enqueue, dequeue), list
-(add, remove,
-get).",tags:["abstraction","adts"],difficulty:"medium"},{id:"ib-cs-programming-oop-013",front:"Explain
-the concept of scope in programming.",back:"Scope determines the region of code where a variable is
-accessible. Local variables are accessible only within the block where declared; global variables
-are accessible throughout the
-program.",tags:["programming","scope"],difficulty:"medium"},{id:"ib-cs-programming-oop-014",front:"How
-does modularity contribute to good program design?",back:"Modularity divides a program into
-independent modules, each with a single responsibility. This improves readability, simplifies
-debugging, enables parallel development, and allows code
-reuse.",tags:["abstraction","modularity"],difficulty:"medium"},{id:"ib-cs-programming-oop-015",front:"Compare
-procedural programming with object-oriented programming.",back:"Procedural programming organizes
-code around functions operating on data; OOP organizes code around objects that encapsulate both
-data and behavior. OOP provides better encapsulation and reuse through inheritance and
-polymorphism.",tags:["paradigms","comparison"],difficulty:"medium"},{id:"ib-cs-programming-oop-016",front:"What
-is recursion and what must every recursive function have?",back:"Recursion is when a function calls
-itself to solve a smaller instance of the same problem. Every recursive function must have a base
-case (stopping condition) to prevent infinite
-calls.",tags:["programming","recursion"],difficulty:"medium"},{id:"ib-cs-programming-oop-017",front:"Describe
-the concept of abstraction as it relates to data types.",back:"Data abstraction hides implementation
-details and exposes only essential features. For example, a string abstracts away the underlying
-character array, exposing only operations like concatenation and
-substring.",tags:["abstraction","data-types"],difficulty:"medium"},{id:"ib-cs-programming-oop-018",front:"What
-is dynamic dispatch in OOP and how does it enable polymorphism?",back:"Dynamic dispatch is the
-runtime selection of which method implementation to call based on the actual object type, not the
-declared type. This allows a superclass reference pointing to a subclass object to invoke the
-subclass's overridden
-method.",tags:["oop","polymorphism"],difficulty:"hard"},{id:"ib-cs-programming-oop-019",front:"Compare
-an abstract class with an interface.",back:"An abstract class can have both implemented and abstract
-methods, and may contain state (attributes). An interface declares only method signatures with no
-implementation and no state. A class can implement multiple interfaces but typically extends only
-one abstract
-class.",tags:["oop","abstraction"],difficulty:"hard"},{id:"ib-cs-programming-oop-020",front:"Evaluate
-the trade-offs between using multiple inheritance versus single inheritance with
-interfaces.",back:"Multiple inheritance allows a class to inherit from multiple superclasses,
-creating the diamond problem (ambiguity when two superclasses define the same method). Single
-inheritance with interfaces avoids this by separating method contracts from implementation,
-providing flexibility without ambiguity.",tags:["oop","inheritance"],difficulty:"hard"}];
+export const flashcard1 = [
+  {
+    id: 'ib-cs-programming-oop-001',
+    front: 'What is a variable and why must it be declared before use?',
+    back: 'A variable is a named storage location in memory that holds a value. Declaration specifies the name and data type, allowing the compiler to allocate appropriate memory.',
+    tags: ['programming', 'variables'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-programming-oop-002',
+    front: 'Describe the selection construct in programming.',
+    back: 'Selection allows the program to choose between different paths of execution based on a condition, using statements such as if-then-else or case/switch.',
+    tags: ['programming', 'selection'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-programming-oop-003',
+    front: 'What is the difference between a while loop and a repeat/until loop?',
+    back: 'A while loop checks the condition before each iteration (pre-test) and may execute zero times; a repeat/until loop checks after each iteration (post-test) and always executes at least once.',
+    tags: ['programming', 'iteration'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-programming-oop-004',
+    front: 'Define a class and an object in object-oriented programming.',
+    back: 'A class is a blueprint or template that defines attributes and methods. An object is a specific instance of a class created at runtime with its own data.',
+    tags: ['oop', 'classes-objects'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-programming-oop-005',
+    front: 'What is encapsulation in OOP?',
+    back: 'Encapsulation is bundling data (attributes) and methods that operate on that data within a class, and restricting direct access to internal details through access modifiers (private/protected).',
+    tags: ['oop', 'encapsulation'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcard2 = [
+  {
+    id: 'ib-cs-programming-oop-006',
+    front: 'What is the difference between a procedure and a function?',
+    back: 'A procedure performs an action but does not return a value; a function performs an action and returns a value to the calling code.',
+    tags: ['programming', 'subprograms'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-programming-oop-007',
+    front: 'Name three primitive data types commonly used in programming.',
+    back: 'Integer (whole numbers), Float/Double (decimal numbers), Boolean (true/false).',
+    tags: ['programming', 'data-types'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'ib-cs-programming-oop-008',
+    front: 'Explain the difference between passing parameters by value and by reference.',
+    back: 'Pass by value sends a copy of the argument, so changes inside the subprogram do not affect the original. Pass by reference sends the memory address, so changes inside the subprogram modify the original variable.',
+    tags: ['programming', 'parameters'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-009',
+    front: 'What is inheritance in OOP and what problem does it solve?',
+    back: 'Inheritance allows a subclass to acquire attributes and methods from a superclass, promoting code reuse and establishing an is-a relationship between classes.',
+    tags: ['oop', 'inheritance'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-010',
+    front: 'Explain polymorphism in OOP with an example.',
+    back: 'Polymorphism allows objects of different classes to be treated through a common interface. Example: a Shape class with a draw() method, where Circle and Rectangle subclasses each implement draw() differently.',
+    tags: ['oop', 'polymorphism'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard3 = [
+  {
+    id: 'ib-cs-programming-oop-011',
+    front: 'What is a for loop and when is it preferred over a while loop?',
+    back: 'A for loop iterates a known number of times using a counter variable. It is preferred when the number of iterations is known in advance.',
+    tags: ['programming', 'iteration'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-012',
+    front: 'What is an Abstract Data Type (ADT)?',
+    back: 'An ADT defines a data type by its behavior (operations) rather than its implementation. Examples: stack (push, pop, peek), queue (enqueue, dequeue), list (add, remove, get).',
+    tags: ['abstraction', 'adts'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-013',
+    front: 'Explain the concept of scope in programming.',
+    back: 'Scope determines the region of code where a variable is accessible. Local variables are accessible only within the block where declared; global variables are accessible throughout the program.',
+    tags: ['programming', 'scope'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-014',
+    front: 'How does modularity contribute to good program design?',
+    back: 'Modularity divides a program into independent modules, each with a single responsibility. This improves readability, simplifies debugging, enables parallel development, and allows code reuse.',
+    tags: ['abstraction', 'modularity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-015',
+    front: 'Compare procedural programming with object-oriented programming.',
+    back: 'Procedural programming organizes code around functions operating on data; OOP organizes code around objects that encapsulate both data and behavior. OOP provides better encapsulation and reuse through inheritance and polymorphism.',
+    tags: ['paradigms', 'comparison'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcard4 = [
+  {
+    id: 'ib-cs-programming-oop-016',
+    front: 'What is recursion and what must every recursive function have?',
+    back: 'Recursion is when a function calls itself to solve a smaller instance of the same problem. Every recursive function must have a base case (stopping condition) to prevent infinite calls.',
+    tags: ['programming', 'recursion'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-017',
+    front: 'Describe the concept of abstraction as it relates to data types.',
+    back: 'Data abstraction hides implementation details and exposes only essential features. For example, a string abstracts away the underlying character array, exposing only operations like concatenation and substring.',
+    tags: ['abstraction', 'data-types'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'ib-cs-programming-oop-018',
+    front: 'What is dynamic dispatch in OOP and how does it enable polymorphism?',
+    back: "Dynamic dispatch is the runtime selection of which method implementation to call based on the actual object type, not the declared type. This allows a superclass reference pointing to a subclass object to invoke the subclass's overridden method.",
+    tags: ['oop', 'polymorphism'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-cs-programming-oop-019',
+    front: 'Compare an abstract class with an interface.',
+    back: 'An abstract class can have both implemented and abstract methods, and may contain state (attributes). An interface declares only method signatures with no implementation and no state. A class can implement multiple interfaces but typically extends only one abstract class.',
+    tags: ['oop', 'abstraction'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'ib-cs-programming-oop-020',
+    front:
+      'Evaluate the trade-offs between using multiple inheritance versus single inheritance with interfaces.',
+    back: 'Multiple inheritance allows a class to inherit from multiple superclasses, creating the diamond problem (ambiguity when two superclasses define the same method). Single inheritance with interfaces avoids this by separating method contracts from implementation, providing flexibility without ambiguity.',
+    tags: ['oop', 'inheritance'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="ib-cs-programming-oop"
   title="IB CS -- Programming and OOP"
   description="Programming constructs, OOP principles, abstraction, and paradigms"
-  cards={flashcardData}
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
 />

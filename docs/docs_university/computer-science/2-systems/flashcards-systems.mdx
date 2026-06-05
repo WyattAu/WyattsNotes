@@ -11,5 +11,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 ## Computer Science -- Systems Flashcards
 20 interactive flashcards for university-level Computer Systems. Press Space to flip, rate 1-4.
 ---
-const flashcardData = [{id:"uni-cs-systems-001", front:"Describe the Von Neumann architecture and its key components.", back:"Proposed in 1945: CPU (ALU + control unit + registers), memory (stored program and data), input/output devices, and a bus connecting them. Key idea: both instructions and data are stored in the same memory (stored-program concept). The CPU fetches, decodes, and executes instructions sequentially (program counter). Limitation: the Von Neumann bottleneck -- single bus between CPU and memory creates a throughput bottleneck.", tags:["architecture"], difficulty:"easy"},{id:"uni-cs-systems-002", front:"Describe the cache hierarchy (L1, L2, L3) and the principles of locality.", back:"Levels: L1 (smallest, fastest, ~1 cycle, per-core), L2 (medium, ~10 cycles, per-core), L3 (largest, ~40 cycles, shared). Principles: temporal locality (recently accessed data likely accessed again soon), spatial locality (data near recently accessed data likely accessed soon). Cache exploits both. L1 split into instruction cache and data cache (Harvard architecture within the core). Cache line size typically 64 bytes.", tags:["memory"], difficulty:"easy"},{id:"uni-cs-systems-003", front:"Describe the MESI cache coherence protocol.", back:"Each cache line has one of four states: Modified (dirty, only in this cache), Exclusive (clean copy, only in this cache), Shared (clean copies may exist in other caches), Invalid (not in this cache). Transitions on read/write events with bus snooping or directory-based communication. Ensures all cores see a consistent view of memory. Write-back policy: Modified lines written to memory only when evicted or when another cache requests the line.", tags:["memory"], difficulty:"hard"},{id:"uni-cs-systems-004", front:"Define virtual memory and explain its benefits.", back:"Virtual memory gives each process the illusion of having its own private, contiguous address space. Implemented via page tables mapping virtual to physical addresses. Benefits: (1) Memory protection (isolation between processes). (2) Allows programs larger than physical memory. (3) Simplifies memory allocation (contiguous virtual addresses via non-contiguous physical pages). (4) Enables memory-mapped files and shared memory. (5) Over-commitment (physical memory > sum of virtual).", tags:["memory"], difficulty:"medium"},{id:"uni-cs-systems-005", front:"Describe multi-level page tables and their advantages.", back:"A two-level page table splits the virtual address into: outer page number (index into page directory), inner page number (index into page table), offset. Advantages: (1) Only allocates page table pages for regions actually in use (sparse address spaces). (2) Fits in cache better than a single flat table. (3) x86-64 uses 4-level page tables (PML4 → PDPT → PD → PT → page). Trade-off: extra memory accesses per TLB miss.", tags:["memory"], difficulty:"medium"},{id:"uni-cs-systems-006", front:"Define the TLB (Translation Lookaside Buffer) and its role.", back:"The TLB is a hardware cache for virtual-to-physical address translations (page table entries). On a memory access: check TLB first (parallel with cache access). TLB hit: translate immediately (~1 cycle). TLB miss: walk the page table in software or hardware (~10-100 cycles). Typical TLB size: 64-1024 entries. TLB flush required on context switch (or use ASID tags). Large pages (2MB, 1GB) reduce TLB pressure.", tags:["memory"], difficulty:"medium"},{id:"uni-cs-systems-007", front:"Compare paging and segmentation as memory management schemes.", back:"Paging: fixed-size blocks (pages, frames). Eliminates external fragmentation, causes internal fragmentation. Simple allocation (free frame list). Segmentation: variable-size blocks based on program structure (code, stack, heap). Supports sharing and protection at the segment level. Causes external fragmentation. Modern systems combine both: segments for protection/structure, paging for physical memory allocation (e.g. x86 segmented + paged model).", tags:["memory"], difficulty:"medium"},{id:"uni-cs-systems-008", front:"State the four necessary conditions for deadlock.", back:"Coffman conditions (all four must hold simultaneously): (1) Mutual exclusion: at least one resource is held non-shareably. (2) Hold and wait: a process holds resources while waiting for others. (3) No preemption: resources cannot be forcibly taken from a process. (4) Circular wait: there exists a circular chain of processes, each waiting for a resource held by the next. Breaking any one condition prevents deadlock.", tags:["deadlock"], difficulty:"easy"},{id:"uni-cs-systems-009", front:"Distinguish deadlock prevention, avoidance, and detection.", back:"Prevention: ensure at least one Coffman condition cannot hold (e.g. resource ordering to break circular wait). Avoidance: allow deadlock states but make choices to avoid unsafe states (Banker's algorithm using safe state check). Detection: allow deadlock to occur, then detect via resource allocation graph cycle detection or the wait-for graph. Recovery: process termination or resource preemption. Prevention is conservative; avoidance requires advance resource knowledge.", tags:["deadlock"], difficulty:"medium"},{id:"uni-cs-systems-010", front:"Compare FCFS, SJF, Round Robin, and priority scheduling algorithms.", back:"FCFS: first-come, first-served, non-preemptive. Simple but causes convoy effect (short processes wait behind long ones). SJF: shortest job first, optimal average waiting time but requires knowing job length; can starve long jobs. Round Robin: time-sliced FCFS with quantum q. Fair, good response time; performance depends on q. Priority: assigns priority to processes; can starve low-priority processes (solved by aging).", tags:["scheduling"], difficulty:"medium"},{id:"uni-cs-systems-011", front:"Define common CPU scheduling metrics.", back:"(1) Turnaround time: total time from submission to completion (arrival to finish). (2) Waiting time: time spent in ready queue (turnaround − burst time). (3) Response time: time from submission to first response (arrival to first CPU allocation). (4) CPU utilisation: percentage of time CPU is busy. (5) Throughput: number of processes completed per time unit. SJF minimises average waiting time. Scheduling trade-offs: optimising one metric may worsen another.", tags:["scheduling"], difficulty:"medium"},{id:"uni-cs-systems-012", front:"Describe the cost of a context switch.", back:"A context switch saves the current process state (registers, PC, SP, flags) and loads the new process state. Costs include: (1) Kernel overhead for saving/restoring registers (~1-10 μs). (2) TLB flush (if not using PCID/ASID), causing subsequent TLB misses. (3) Cache pollution (new process displaces old process's data). (4) Pipeline flushes. High-frequency context switches degrade performance. Solutions: thread pools, lock-free data structures, reducing switch frequency.", tags:["scheduling"], difficulty:"hard"},{id:"uni-cs-systems-013", front:"Compare first-fit, best-fit, and buddy system memory allocation.", back:"First-fit: allocate the first hole large enough. Fast, may leave small fragments at the beginning. Best-fit: allocate the smallest adequate hole. Minimises wasted space but maximises fragmentation search time. Worst-fit: allocate the largest hole (leaves large remainder, but degrades quickly). Buddy system: memory split into power-of-2 blocks; allocates smallest power-of-2 block that fits. Fast coalescing of free buddies, but internal fragmentation up to 50%.", tags:["memory"], difficulty:"medium"},{id:"uni-cs-systems-014", front:"Compare FCFS, SSTF, SCAN, and C-SCAN disk scheduling algorithms.", back:"FCFS: serves requests in arrival order. Fair but high seek time. SSTF (Shortest Seek Time First): serves the closest request next. Minimises seek but can starve distant requests. SCAN (elevator): moves head in one direction serving all requests, then reverses. C-SCAN: like SCAN but only serves in one direction, jumps back (more uniform wait). LOOK/C-LOOK variants reverse at the last request, not the disk end.", tags:["io"], difficulty:"medium"},{id:"uni-cs-systems-015", front:"Describe the role of the OS kernel in I/O management.", back:"The kernel provides a uniform interface for I/O through system calls (read, write, ioctl). Responsibilities: (1) Device abstraction (block devices vs character devices). (2) Device drivers (kernel modules interfacing with hardware). (3) Buffering and caching (buffer cache for block devices). (4) Scheduling I/O requests (disk arm scheduling). (5) Interrupt handling. (6) DMA setup for large transfers, offloading work from the CPU.", tags:["io"], difficulty:"medium"},{id:"uni-cs-systems-016", front:"Compare interrupts and polling for I/O device communication.", back:"Interrupts: device signals CPU when ready. CPU can do other work. Efficient for low data rates. Overhead per interrupt (context switch). Polling: CPU repeatedly checks device status register. No interrupt overhead, but wastes CPU cycles when device is idle. Hybrid: interrupt-driven with polling for bursts (e.g. NAPI in Linux networking). Modern systems use interrupts for most I/O; polling is used for high-throughput devices or interrupt mitigation.", tags:["io"], difficulty:"medium"},{id:"uni-cs-systems-017", front:"Define DMA (Direct Memory Access) and its advantages.", back:"DMA allows I/O devices to transfer data directly to/from memory without CPU intervention. A DMA controller: (1) CPU programs the controller (source address, destination, count). (2) DMA controller transfers data autonomously. (3) Controller sends an interrupt when transfer is complete. Advantages: CPU is free for computation during transfer; reduces CPU overhead for large transfers (e.g. disk I/O, network packets). Bus contention with CPU is the main limitation.", tags:["io"], difficulty:"easy"},{id:"uni-cs-systems-018", front:"Compare inode-based and journaling file systems.", back:"Inode-based (Unix FFS): each file has an inode containing metadata (permissions, timestamps) and direct/indirect block pointers pointing to data blocks. Simple but vulnerable to corruption after a crash (inconsistent metadata vs data). Journaling (ext4, NTFS): writes changes to a journal (log) before committing to the main file system. After a crash, replay the journal to restore consistency. Journaling provides fast recovery and guarantees metadata integrity.", tags:["file-systems"], difficulty:"medium"},{id:"uni-cs-systems-019", front:"State the CAP theorem for distributed systems.", back:"In a distributed data store, at most two of the following three properties can be simultaneously guaranteed: Consistency (every read returns the most recent write or an error), Availability (every request receives a non-error response), Partition tolerance (the system continues operating despite network partitions between nodes). Since network partitions are inevitable in practice, the real trade-off is between consistency and availability during a partition: CP systems prioritise consistency (e.g. etcd), AP systems prioritise availability (e.g. Cassandra).", tags:["distributed-systems"], difficulty:"hard"},{id:"uni-cs-systems-020", front:"Define a process and a thread, and explain their differences.", back:"A process is an instance of a running program with its own virtual address space, file descriptors, and resources. A thread is a lightweight unit of execution within a process, sharing the address space, file descriptors, and other resources with sibling threads. Key differences: threads share memory (concurrent access requires synchronisation); processes are isolated. Thread creation is faster (no new address space). Context switch between threads is cheaper than between processes. Each thread has its own stack, registers, and program counter.", tags:["processes"], difficulty:"easy"}];
-<FlashcardDeck deckId="uni-cs-systems" title="University CS -- Systems" description="Architecture, memory hierarchy, deadlock, scheduling, file systems, CAP theorem" cards={flashcardData} />
+
+export const flashcards1 = [
+  {
+    id: 'uni-cs-systems-001',
+    front: 'Describe the Von Neumann architecture and its key components.',
+    back: 'Proposed in 1945: CPU (ALU + control unit + registers), memory (stored program and data), input/output devices, and a bus connecting them. Key idea: both instructions and data are stored in the same memory (stored-program concept). The CPU fetches, decodes, and executes instructions sequentially (program counter). Limitation: the Von Neumann bottleneck -- single bus between CPU and memory creates a throughput bottleneck.',
+    tags: ['architecture'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-systems-002',
+    front: 'Describe the cache hierarchy (L1, L2, L3) and the principles of locality.',
+    back: 'Levels: L1 (smallest, fastest, ~1 cycle, per-core), L2 (medium, ~10 cycles, per-core), L3 (largest, ~40 cycles, shared). Principles: temporal locality (recently accessed data likely accessed again soon), spatial locality (data near recently accessed data likely accessed soon). Cache exploits both. L1 split into instruction cache and data cache (Harvard architecture within the core). Cache line size typically 64 bytes.',
+    tags: ['memory'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-systems-003',
+    front: 'Describe the MESI cache coherence protocol.',
+    back: 'Each cache line has one of four states: Modified (dirty, only in this cache), Exclusive (clean copy, only in this cache), Shared (clean copies may exist in other caches), Invalid (not in this cache). Transitions on read/write events with bus snooping or directory-based communication. Ensures all cores see a consistent view of memory. Write-back policy: Modified lines written to memory only when evicted or when another cache requests the line.',
+    tags: ['memory'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-systems-004',
+    front: 'Define virtual memory and explain its benefits.',
+    back: 'Virtual memory gives each process the illusion of having its own private, contiguous address space. Implemented via page tables mapping virtual to physical addresses. Benefits: (1) Memory protection (isolation between processes). (2) Allows programs larger than physical memory. (3) Simplifies memory allocation (contiguous virtual addresses via non-contiguous physical pages). (4) Enables memory-mapped files and shared memory. (5) Over-commitment (physical memory > sum of virtual).',
+    tags: ['memory'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-005',
+    front: 'Describe multi-level page tables and their advantages.',
+    back: 'A two-level page table splits the virtual address into: outer page number (index into page directory), inner page number (index into page table), offset. Advantages: (1) Only allocates page table pages for regions actually in use (sparse address spaces). (2) Fits in cache better than a single flat table. (3) x86-64 uses 4-level page tables (PML4 → PDPT → PD → PT → page). Trade-off: extra memory accesses per TLB miss.',
+    tags: ['memory'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-cs-systems-006',
+    front: 'Define the TLB (Translation Lookaside Buffer) and its role.',
+    back: 'The TLB is a hardware cache for virtual-to-physical address translations (page table entries). On a memory access: check TLB first (parallel with cache access). TLB hit: translate immediately (~1 cycle). TLB miss: walk the page table in software or hardware (~10-100 cycles). Typical TLB size: 64-1024 entries. TLB flush required on context switch (or use ASID tags). Large pages (2MB, 1GB) reduce TLB pressure.',
+    tags: ['memory'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-007',
+    front: 'Compare paging and segmentation as memory management schemes.',
+    back: 'Paging: fixed-size blocks (pages, frames). Eliminates external fragmentation, causes internal fragmentation. Simple allocation (free frame list). Segmentation: variable-size blocks based on program structure (code, stack, heap). Supports sharing and protection at the segment level. Causes external fragmentation. Modern systems combine both: segments for protection/structure, paging for physical memory allocation (e.g. x86 segmented + paged model).',
+    tags: ['memory'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-008',
+    front: 'State the four necessary conditions for deadlock.',
+    back: 'Coffman conditions (all four must hold simultaneously): (1) Mutual exclusion: at least one resource is held non-shareably. (2) Hold and wait: a process holds resources while waiting for others. (3) No preemption: resources cannot be forcibly taken from a process. (4) Circular wait: there exists a circular chain of processes, each waiting for a resource held by the next. Breaking any one condition prevents deadlock.',
+    tags: ['deadlock'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-systems-009',
+    front: 'Distinguish deadlock prevention, avoidance, and detection.',
+    back: "Prevention: ensure at least one Coffman condition cannot hold (e.g. resource ordering to break circular wait). Avoidance: allow deadlock states but make choices to avoid unsafe states (Banker's algorithm using safe state check). Detection: allow deadlock to occur, then detect via resource allocation graph cycle detection or the wait-for graph. Recovery: process termination or resource preemption. Prevention is conservative; avoidance requires advance resource knowledge.",
+    tags: ['deadlock'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-010',
+    front: 'Compare FCFS, SJF, Round Robin, and priority scheduling algorithms.',
+    back: 'FCFS: first-come, first-served, non-preemptive. Simple but causes convoy effect (short processes wait behind long ones). SJF: shortest job first, optimal average waiting time but requires knowing job length; can starve long jobs. Round Robin: time-sliced FCFS with quantum q. Fair, good response time; performance depends on q. Priority: assigns priority to processes; can starve low-priority processes (solved by aging).',
+    tags: ['scheduling'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-cs-systems-011',
+    front: 'Define common CPU scheduling metrics.',
+    back: '(1) Turnaround time: total time from submission to completion (arrival to finish). (2) Waiting time: time spent in ready queue (turnaround − burst time). (3) Response time: time from submission to first response (arrival to first CPU allocation). (4) CPU utilisation: percentage of time CPU is busy. (5) Throughput: number of processes completed per time unit. SJF minimises average waiting time. Scheduling trade-offs: optimising one metric may worsen another.',
+    tags: ['scheduling'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-012',
+    front: 'Describe the cost of a context switch.',
+    back: "A context switch saves the current process state (registers, PC, SP, flags) and loads the new process state. Costs include: (1) Kernel overhead for saving/restoring registers (~1-10 μs). (2) TLB flush (if not using PCID/ASID), causing subsequent TLB misses. (3) Cache pollution (new process displaces old process's data). (4) Pipeline flushes. High-frequency context switches degrade performance. Solutions: thread pools, lock-free data structures, reducing switch frequency.",
+    tags: ['scheduling'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-systems-013',
+    front: 'Compare first-fit, best-fit, and buddy system memory allocation.',
+    back: 'First-fit: allocate the first hole large enough. Fast, may leave small fragments at the beginning. Best-fit: allocate the smallest adequate hole. Minimises wasted space but maximises fragmentation search time. Worst-fit: allocate the largest hole (leaves large remainder, but degrades quickly). Buddy system: memory split into power-of-2 blocks; allocates smallest power-of-2 block that fits. Fast coalescing of free buddies, but internal fragmentation up to 50%.',
+    tags: ['memory'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-014',
+    front: 'Compare FCFS, SSTF, SCAN, and C-SCAN disk scheduling algorithms.',
+    back: 'FCFS: serves requests in arrival order. Fair but high seek time. SSTF (Shortest Seek Time First): serves the closest request next. Minimises seek but can starve distant requests. SCAN (elevator): moves head in one direction serving all requests, then reverses. C-SCAN: like SCAN but only serves in one direction, jumps back (more uniform wait). LOOK/C-LOOK variants reverse at the last request, not the disk end.',
+    tags: ['io'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-015',
+    front: 'Describe the role of the OS kernel in I/O management.',
+    back: 'The kernel provides a uniform interface for I/O through system calls (read, write, ioctl). Responsibilities: (1) Device abstraction (block devices vs character devices). (2) Device drivers (kernel modules interfacing with hardware). (3) Buffering and caching (buffer cache for block devices). (4) Scheduling I/O requests (disk arm scheduling). (5) Interrupt handling. (6) DMA setup for large transfers, offloading work from the CPU.',
+    tags: ['io'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-cs-systems-016',
+    front: 'Compare interrupts and polling for I/O device communication.',
+    back: 'Interrupts: device signals CPU when ready. CPU can do other work. Efficient for low data rates. Overhead per interrupt (context switch). Polling: CPU repeatedly checks device status register. No interrupt overhead, but wastes CPU cycles when device is idle. Hybrid: interrupt-driven with polling for bursts (e.g. NAPI in Linux networking). Modern systems use interrupts for most I/O; polling is used for high-throughput devices or interrupt mitigation.',
+    tags: ['io'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-017',
+    front: 'Define DMA (Direct Memory Access) and its advantages.',
+    back: 'DMA allows I/O devices to transfer data directly to/from memory without CPU intervention. A DMA controller: (1) CPU programs the controller (source address, destination, count). (2) DMA controller transfers data autonomously. (3) Controller sends an interrupt when transfer is complete. Advantages: CPU is free for computation during transfer; reduces CPU overhead for large transfers (e.g. disk I/O, network packets). Bus contention with CPU is the main limitation.',
+    tags: ['io'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-systems-018',
+    front: 'Compare inode-based and journaling file systems.',
+    back: 'Inode-based (Unix FFS): each file has an inode containing metadata (permissions, timestamps) and direct/indirect block pointers pointing to data blocks. Simple but vulnerable to corruption after a crash (inconsistent metadata vs data). Journaling (ext4, NTFS): writes changes to a journal (log) before committing to the main file system. After a crash, replay the journal to restore consistency. Journaling provides fast recovery and guarantees metadata integrity.',
+    tags: ['file-systems'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-systems-019',
+    front: 'State the CAP theorem for distributed systems.',
+    back: 'In a distributed data store, at most two of the following three properties can be simultaneously guaranteed: Consistency (every read returns the most recent write or an error), Availability (every request receives a non-error response), Partition tolerance (the system continues operating despite network partitions between nodes). Since network partitions are inevitable in practice, the real trade-off is between consistency and availability during a partition: CP systems prioritise consistency (e.g. etcd), AP systems prioritise availability (e.g. Cassandra).',
+    tags: ['distributed-systems'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-systems-020',
+    front: 'Define a process and a thread, and explain their differences.',
+    back: 'A process is an instance of a running program with its own virtual address space, file descriptors, and resources. A thread is a lightweight unit of execution within a process, sharing the address space, file descriptors, and other resources with sibling threads. Key differences: threads share memory (concurrent access requires synchronisation); processes are isolated. Thread creation is faster (no new address space). Context switch between threads is cheaper than between processes. Each thread has its own stack, registers, and program counter.',
+    tags: ['processes'],
+    difficulty: 'easy',
+  },
+];
+<FlashcardDeck
+  deckId="uni-cs-systems"
+  title="University CS -- Systems"
+  description="Architecture, memory hierarchy, deadlock, scheduling, file systems, CAP theorem"
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
+/>;

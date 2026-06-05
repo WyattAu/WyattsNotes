@@ -11,5 +11,161 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 ## Mathematics -- Differential Geometry Flashcards
 20 interactive flashcards for university-level Differential Geometry. Press Space to flip, rate 1-4.
 ---
-const flashcardData = [{id:"uni-maths-differential-geometry-001", front:"What three properties define a topological n-manifold?", back:"(1) Hausdorff: distinct points have disjoint neighborhoods. (2) Second countable: the topology has a countable basis. (3) Locally Euclidean of dimension n: every point has a neighborhood homeomorphic to an open subset of R^n. A smooth manifold additionally requires a smooth atlas with smooth transition maps.", tags:["manifolds"], difficulty:"easy"},{id:"uni-maths-differential-geometry-002", front:"What is a smooth atlas and what are transition maps?", back:"A smooth atlas is a collection of charts {(U_alpha, phi_alpha)} covering M such that for overlapping charts, the transition map phi_beta o phi_alpha^{-1} is a smooth diffeomorphism between open subsets of R^n. A maximal smooth atlas is a smooth structure. Two atlases are compatible if their union is still a smooth atlas.", tags:["manifolds"], difficulty:"easy"},{id:"uni-maths-differential-geometry-003", front:"Define the tangent space T_p M in terms of derivations.", back:"T_p M is the set of derivations at p: linear maps v: C^infinity(M) -> R satisfying the Leibniz rule v(fg) = f(p)v(g) + v(f)g(p). The dimension of T_p M equals dim M = n. In coordinates, T_p M has basis {partial/partial x^1|_p, ..., partial/partial x^n|_p}.", tags:["tangent-spaces"], difficulty:"medium"},{id:"uni-maths-differential-geometry-004", front:"What is the tangent bundle TM of a manifold M?", back:"TM = disjoint union of T_p M over all p in M = {(p, v) : p in M, v in T_p M}. It is a smooth manifold of dimension 2n. A vector field is a smooth section X: M -> TM with pi o X = id_M. The tangent bundle is an example of a vector bundle over M.", tags:["tangent-spaces"], difficulty:"medium"},{id:"uni-maths-differential-geometry-005", front:"What is the differential df_p of a smooth map f: M -> N?", back:"df_p: T_p M -> T_{f(p)} N is the linear map (pushforward) defined by df_p(v)(g) = v(g o f). In local coordinates, df_p is represented by the Jacobian matrix of f at p. The chain rule holds: d(g o f)_p = dg_{f(p)} o df_p.", tags:["tangent-spaces"], difficulty:"medium"},{id:"uni-maths-differential-geometry-006", front:"Define the Lie bracket of vector fields and list its key properties.", back:"[X, Y](f) = X(Y(f)) - Y(X(f)). Properties: (1) Bilinear. (2) Anti-symmetric: [X,Y] = -[Y,X]. (3) Jacobi identity: [X,[Y,Z]] + [Y,[Z,X]] + [Z,[X,Y]] = 0. The space of vector fields with the Lie bracket forms a Lie algebra. The Lie bracket [X,Y] measures the failure of flows of X and Y to commute.", tags:["vector-fields"], difficulty:"medium"},{id:"uni-maths-differential-geometry-007", front:"What is an integral curve of a vector field X?", back:"An integral curve through p is a smooth curve gamma with gamma(0) = p and gamma'(t) = X_{gamma(t)} for all t. By the existence and uniqueness theorem for ODEs, for every p there exists a unique maximal integral curve. The flow of X is the map Phi: R x M -> M (or local) sending (t, p) to gamma_p(t).", tags:["vector-fields"], difficulty:"easy"},{id:"uni-maths-differential-geometry-008", front:"What is a differential k-form and give examples for k = 0, 1, 2.", back:"A k-form is a smooth section of Lambda^k T*M (alternating k-linear maps on tangent spaces). k=0: smooth function f. k=1: covector field omega = sum omega_i dx^i. k=2: omega = sum_{i<j} omega_{ij} dx^i wedge dx^j. The wedge product is anti-commutative: alpha wedge beta = (-1)^{kl} beta wedge alpha for a k-form alpha and l-form beta.", tags:["differential-forms"], difficulty:"medium"},{id:"uni-maths-differential-geometry-009", front:"State the key properties of the exterior derivative d.", back:"d: Omega^k(M) -> Omega^{k+1}(M) satisfies: (1) d o d = 0 (Poincare lemma). (2) d(alpha wedge beta) = d(alpha) wedge beta + (-1)^k alpha wedge d(beta) for alpha in Omega^k. (3) d is local and natural (commutes with pullbacks). On functions: df = sum (partial f/partial x^i) dx^i.", tags:["differential-forms"], difficulty:"medium"},{id:"uni-maths-differential-geometry-010", front:"State Stokes' Theorem for differential forms.", back:"If M is an oriented n-manifold with boundary and omega is a compactly supported (n-1)-form, then integral over partial M of omega = integral over M of d(omega). Special cases: Green's theorem, classical Stokes' theorem (curl theorem), divergence theorem, and the fundamental theorem of calculus are all instances of this general result.", tags:["differential-forms"], difficulty:"medium"},{id:"uni-maths-differential-geometry-011", front:"What is a Riemannian metric on a smooth manifold M?", back:"A Riemannian metric is a smooth family of inner products g_p: T_p M x T_p M -> R, varying smoothly with p. In local coordinates: g = g_{ij}(x) dx^i tensor dx^j where (g_{ij}) is symmetric positive-definite. The metric allows measurement of lengths, angles, areas, and volumes. Every smooth manifold admits a Riemannian metric (by partition of unity).", tags:["riemannian-geometry"], difficulty:"easy"},{id:"uni-maths-differential-geometry-012", front:"State the Levi-Civita Theorem.", back:"On any Riemannian manifold (M, g), there exists a unique connection nabla that is: (1) metric-compatible: nabla g = 0 (parallel transport preserves inner products), (2) torsion-free: nabla_X Y - nabla_Y X = [X, Y]. This is the Levi-Civita connection. It is used to define geodesics, curvature, and parallel transport.", tags:["connections"], difficulty:"medium"},{id:"uni-maths-differential-geometry-013", front:"What are the Christoffel symbols and how are they computed from the metric?", back:"Gamma^k_{ij} = (1/2) g^{kl} (partial g_{jl}/partial x^i + partial g_{il}/partial x^j - partial g_{ij}/partial x^l), where (g^{kl}) is the inverse of (g_{kl}). Christoffel symbols are NOT tensor components: they do not transform as tensors under coordinate changes. In flat Euclidean space with standard coordinates, all Gamma^k_{ij} = 0.", tags:["connections"], difficulty:"medium"},{id:"uni-maths-differential-geometry-014", front:"What is a geodesic and what equation does it satisfy?", back:"A geodesic gamma satisfies nabla_{dot_gamma} dot_gamma = 0 (zero acceleration). In local coordinates: gamma''^k + Gamma^k_{ij} gamma'^i gamma'^j = 0. Geodesics are locally length-minimizing: for small enough intervals, the geodesic between two points has the shortest length among all nearby curves. Great circles on S^2 are geodesics.", tags:["geodesics"], difficulty:"medium"},{id:"uni-maths-differential-geometry-015", front:"Define the exponential map exp_p: T_p M -> M.", back:"exp_p(v) = gamma_v(1), where gamma_v is the geodesic with gamma_v(0) = p and dot_gamma_v(0) = v. It is a local diffeomorphism near the origin in T_p M. The Hopf-Rinow theorem states that if M is geodesically complete, then exp_p is defined on all of T_p M and (M, d) is a complete metric space.", tags:["geodesics"], difficulty:"medium"},{id:"uni-maths-differential-geometry-016", front:"State the Hopf-Rinow Theorem.", back:"For a connected Riemannian manifold: (1) geodesic completeness is equivalent to metric completeness. (2) Any two points can be joined by a minimizing geodesic if M is complete. (3) Closed bounded subsets are compact if and only if M is complete. (4) Compact Riemannian manifolds are always geodesically complete.", tags:["geodesics"], difficulty:"hard"},{id:"uni-maths-differential-geometry-017", front:"Define the Riemann curvature tensor R and list its symmetries.", back:"R(X,Y)Z = nabla_X nabla_Y Z - nabla_Y nabla_X Z - nabla_{[X,Y]} Z. Symmetries: (1) R_{ijkl} = -R_{jikl}. (2) R_{ijkl} = -R_{ijlk}. (3) R_{ijkl} = R_{klij} (block symmetry). (4) R_{ijkl} + R_{iklj} + R_{iljk} = 0 (first Bianchi identity). When R = 0 everywhere, the manifold is flat.", tags:["curvature"], difficulty:"hard"},{id:"uni-maths-differential-geometry-018", front:"What is sectional curvature and what are the model spaces?", back:"For a 2-plane span{u, v} in T_p M, K(u,v) = <R(u,v)v, u> / (||u||^2 ||v||^2 - <u,v>^2). Model spaces: R^n has K = 0 (flat), S^n has K = 1 (positive, great circles converge), H^n (hyperbolic) has K = -1 (negative, great circles diverge). Constant sectional curvature implies the space is locally isometric to one of these models.", tags:["curvature"], difficulty:"medium"},{id:"uni-maths-differential-geometry-019", front:"What are the Ricci tensor and scalar curvature?", back:"Ric_{jk} = R^i_{jik} (contraction of the Riemann tensor). Scalar curvature S = g^{jk} Ric_{jk}. In 2D, the Ricci tensor determines the Riemann tensor completely: R_{ijkl} = K(g_{ik}g_{jl} - g_{il}g_{jk}) where K is the Gaussian curvature. In general, Ric and S contain less information than the full Riemann tensor.", tags:["curvature"], difficulty:"medium"},{id:"uni-maths-differential-geometry-020", front:"State the Gauss-Bonnet Theorem and explain its significance.", back:"For a compact oriented Riemannian 2-manifold M without boundary: integral over M of K dA = 2*pi * chi(M), where chi is the Euler characteristic. This shows total curvature is a topological invariant: S^2 (chi=2) has total curvature 4*pi; T^2 (chi=0) has total curvature 0. The Gauss-Bonnet theorem is the prototype of index theorems connecting geometry and topology.", tags:["gauss-bonnet"], difficulty:"hard"}];
-<FlashcardDeck deckId="uni-maths-differential-geometry" title="University Maths -- Differential Geometry" description="Smooth manifolds, tangent spaces, vector fields, differential forms, Riemannian metrics, curvature, geodesics, Gauss-Bonnet" cards={flashcardData} />
+
+export const flashcards1 = [
+  {
+    id: 'uni-maths-differential-geometry-001',
+    front: 'What three properties define a topological n-manifold?',
+    back: '(1) Hausdorff: distinct points have disjoint neighborhoods. (2) Second countable: the topology has a countable basis. (3) Locally Euclidean of dimension n: every point has a neighborhood homeomorphic to an open subset of R^n. A smooth manifold additionally requires a smooth atlas with smooth transition maps.',
+    tags: ['manifolds'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-differential-geometry-002',
+    front: 'What is a smooth atlas and what are transition maps?',
+    back: 'A smooth atlas is a collection of charts {(U_alpha, phi_alpha)} covering M such that for overlapping charts, the transition map phi_beta o phi_alpha^{-1} is a smooth diffeomorphism between open subsets of R^n. A maximal smooth atlas is a smooth structure. Two atlases are compatible if their union is still a smooth atlas.',
+    tags: ['manifolds'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-differential-geometry-003',
+    front: 'Define the tangent space T_p M in terms of derivations.',
+    back: 'T_p M is the set of derivations at p: linear maps v: C^infinity(M) -> R satisfying the Leibniz rule v(fg) = f(p)v(g) + v(f)g(p). The dimension of T_p M equals dim M = n. In coordinates, T_p M has basis {partial/partial x^1|_p, ..., partial/partial x^n|_p}.',
+    tags: ['tangent-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-004',
+    front: 'What is the tangent bundle TM of a manifold M?',
+    back: 'TM = disjoint union of T_p M over all p in M = {(p, v) : p in M, v in T_p M}. It is a smooth manifold of dimension 2n. A vector field is a smooth section X: M -> TM with pi o X = id_M. The tangent bundle is an example of a vector bundle over M.',
+    tags: ['tangent-spaces'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-005',
+    front: 'What is the differential df_p of a smooth map f: M -> N?',
+    back: 'df_p: T_p M -> T_{f(p)} N is the linear map (pushforward) defined by df_p(v)(g) = v(g o f). In local coordinates, df_p is represented by the Jacobian matrix of f at p. The chain rule holds: d(g o f)_p = dg_{f(p)} o df_p.',
+    tags: ['tangent-spaces'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-maths-differential-geometry-006',
+    front: 'Define the Lie bracket of vector fields and list its key properties.',
+    back: '[X, Y](f) = X(Y(f)) - Y(X(f)). Properties: (1) Bilinear. (2) Anti-symmetric: [X,Y] = -[Y,X]. (3) Jacobi identity: [X,[Y,Z]] + [Y,[Z,X]] + [Z,[X,Y]] = 0. The space of vector fields with the Lie bracket forms a Lie algebra. The Lie bracket [X,Y] measures the failure of flows of X and Y to commute.',
+    tags: ['vector-fields'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-007',
+    front: 'What is an integral curve of a vector field X?',
+    back: "An integral curve through p is a smooth curve gamma with gamma(0) = p and gamma'(t) = X_{gamma(t)} for all t. By the existence and uniqueness theorem for ODEs, for every p there exists a unique maximal integral curve. The flow of X is the map Phi: R x M -> M (or local) sending (t, p) to gamma_p(t).",
+    tags: ['vector-fields'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-differential-geometry-008',
+    front: 'What is a differential k-form and give examples for k = 0, 1, 2.',
+    back: 'A k-form is a smooth section of Lambda^k T*M (alternating k-linear maps on tangent spaces). k=0: smooth function f. k=1: covector field omega = sum omega_i dx^i. k=2: omega = sum_{i<j} omega_{ij} dx^i wedge dx^j. The wedge product is anti-commutative: alpha wedge beta = (-1)^{kl} beta wedge alpha for a k-form alpha and l-form beta.',
+    tags: ['differential-forms'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-009',
+    front: 'State the key properties of the exterior derivative d.',
+    back: 'd: Omega^k(M) -> Omega^{k+1}(M) satisfies: (1) d o d = 0 (Poincare lemma). (2) d(alpha wedge beta) = d(alpha) wedge beta + (-1)^k alpha wedge d(beta) for alpha in Omega^k. (3) d is local and natural (commutes with pullbacks). On functions: df = sum (partial f/partial x^i) dx^i.',
+    tags: ['differential-forms'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-010',
+    front: "State Stokes' Theorem for differential forms.",
+    back: "If M is an oriented n-manifold with boundary and omega is a compactly supported (n-1)-form, then integral over partial M of omega = integral over M of d(omega). Special cases: Green's theorem, classical Stokes' theorem (curl theorem), divergence theorem, and the fundamental theorem of calculus are all instances of this general result.",
+    tags: ['differential-forms'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-maths-differential-geometry-011',
+    front: 'What is a Riemannian metric on a smooth manifold M?',
+    back: 'A Riemannian metric is a smooth family of inner products g_p: T_p M x T_p M -> R, varying smoothly with p. In local coordinates: g = g_{ij}(x) dx^i tensor dx^j where (g_{ij}) is symmetric positive-definite. The metric allows measurement of lengths, angles, areas, and volumes. Every smooth manifold admits a Riemannian metric (by partition of unity).',
+    tags: ['riemannian-geometry'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-maths-differential-geometry-012',
+    front: 'State the Levi-Civita Theorem.',
+    back: 'On any Riemannian manifold (M, g), there exists a unique connection nabla that is: (1) metric-compatible: nabla g = 0 (parallel transport preserves inner products), (2) torsion-free: nabla_X Y - nabla_Y X = [X, Y]. This is the Levi-Civita connection. It is used to define geodesics, curvature, and parallel transport.',
+    tags: ['connections'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-013',
+    front: 'What are the Christoffel symbols and how are they computed from the metric?',
+    back: 'Gamma^k_{ij} = (1/2) g^{kl} (partial g_{jl}/partial x^i + partial g_{il}/partial x^j - partial g_{ij}/partial x^l), where (g^{kl}) is the inverse of (g_{kl}). Christoffel symbols are NOT tensor components: they do not transform as tensors under coordinate changes. In flat Euclidean space with standard coordinates, all Gamma^k_{ij} = 0.',
+    tags: ['connections'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-014',
+    front: 'What is a geodesic and what equation does it satisfy?',
+    back: "A geodesic gamma satisfies nabla_{dot_gamma} dot_gamma = 0 (zero acceleration). In local coordinates: gamma''^k + Gamma^k_{ij} gamma'^i gamma'^j = 0. Geodesics are locally length-minimizing: for small enough intervals, the geodesic between two points has the shortest length among all nearby curves. Great circles on S^2 are geodesics.",
+    tags: ['geodesics'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-015',
+    front: 'Define the exponential map exp_p: T_p M -> M.',
+    back: 'exp_p(v) = gamma_v(1), where gamma_v is the geodesic with gamma_v(0) = p and dot_gamma_v(0) = v. It is a local diffeomorphism near the origin in T_p M. The Hopf-Rinow theorem states that if M is geodesically complete, then exp_p is defined on all of T_p M and (M, d) is a complete metric space.',
+    tags: ['geodesics'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-maths-differential-geometry-016',
+    front: 'State the Hopf-Rinow Theorem.',
+    back: 'For a connected Riemannian manifold: (1) geodesic completeness is equivalent to metric completeness. (2) Any two points can be joined by a minimizing geodesic if M is complete. (3) Closed bounded subsets are compact if and only if M is complete. (4) Compact Riemannian manifolds are always geodesically complete.',
+    tags: ['geodesics'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-differential-geometry-017',
+    front: 'Define the Riemann curvature tensor R and list its symmetries.',
+    back: 'R(X,Y)Z = nabla_X nabla_Y Z - nabla_Y nabla_X Z - nabla_{[X,Y]} Z. Symmetries: (1) R_{ijkl} = -R_{jikl}. (2) R_{ijkl} = -R_{ijlk}. (3) R_{ijkl} = R_{klij} (block symmetry). (4) R_{ijkl} + R_{iklj} + R_{iljk} = 0 (first Bianchi identity). When R = 0 everywhere, the manifold is flat.',
+    tags: ['curvature'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-maths-differential-geometry-018',
+    front: 'What is sectional curvature and what are the model spaces?',
+    back: 'For a 2-plane span{u, v} in T_p M, K(u,v) = <R(u,v)v, u> / (||u||^2 ||v||^2 - <u,v>^2). Model spaces: R^n has K = 0 (flat), S^n has K = 1 (positive, great circles converge), H^n (hyperbolic) has K = -1 (negative, great circles diverge). Constant sectional curvature implies the space is locally isometric to one of these models.',
+    tags: ['curvature'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-019',
+    front: 'What are the Ricci tensor and scalar curvature?',
+    back: 'Ric_{jk} = R^i_{jik} (contraction of the Riemann tensor). Scalar curvature S = g^{jk} Ric_{jk}. In 2D, the Ricci tensor determines the Riemann tensor completely: R_{ijkl} = K(g_{ik}g_{jl} - g_{il}g_{jk}) where K is the Gaussian curvature. In general, Ric and S contain less information than the full Riemann tensor.',
+    tags: ['curvature'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-maths-differential-geometry-020',
+    front: 'State the Gauss-Bonnet Theorem and explain its significance.',
+    back: 'For a compact oriented Riemannian 2-manifold M without boundary: integral over M of K dA = 2*pi * chi(M), where chi is the Euler characteristic. This shows total curvature is a topological invariant: S^2 (chi=2) has total curvature 4*pi; T^2 (chi=0) has total curvature 0. The Gauss-Bonnet theorem is the prototype of index theorems connecting geometry and topology.',
+    tags: ['gauss-bonnet'],
+    difficulty: 'hard',
+  },
+];
+<FlashcardDeck
+  deckId="uni-maths-differential-geometry"
+  title="University Maths -- Differential Geometry"
+  description="Smooth manifolds, tangent spaces, vector fields, differential forms, Riemannian metrics, curvature, geodesics, Gauss-Bonnet"
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
+/>;

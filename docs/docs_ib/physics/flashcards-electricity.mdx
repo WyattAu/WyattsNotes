@@ -8,7 +8,7 @@ tags: [Physics, IB Physics, Flashcards]
 ---
 
 import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
-const flashcardData = [
+export const flashcard1 = [
   {
     id: 'ib-phys-electricity-001',
     front: 'Define electric current and state its unit.',
@@ -44,6 +44,9 @@ const flashcardData = [
     tags: ['electricity', 'resistance'],
     difficulty: 'medium',
   },
+];
+
+export const flashcard2 = [
   {
     id: 'ib-phys-electricity-006',
     front: 'State the resistivity equation and explain each variable.',
@@ -54,14 +57,14 @@ const flashcardData = [
   {
     id: 'ib-phys-electricity-007',
     front: 'State the rules for series circuits.',
-    back: '1) Current is the same through all components: I_total = I₁ = I₂ = ...\n2) Total voltage equals sum of individual voltages: V_total = V₁ + V₂ + ...\n3) Total resistance equals sum of individual resistances: R_total = R₁ + R₂ + ...\n4) If one component fails, the entire circuit is broken (no current flows).\n5) Adding more resistors increases total resistance.',
+    back: '1) Current is the same through all components: I_total = I₁ = I₂ = ... 2) Total voltage equals sum of individual voltages: V_total = V₁ + V₂ + ... 3) Total resistance equals sum of individual resistances: R_total = R₁ + R₂ + ... 4) If one component fails, the entire circuit is broken (no current flows). 5) Adding more resistors increases total resistance.',
     tags: ['electricity', 'circuits'],
     difficulty: 'medium',
   },
   {
     id: 'ib-phys-electricity-008',
     front: 'State the rules for parallel circuits.',
-    back: '1) Voltage is the same across all branches: V_total = V₁ = V₂ = ...\n2) Total current equals sum of branch currents: I_total = I₁ + I₂ + ...\n3) 1/R_total = 1/R₁ + 1/R₂ + ... (total resistance is LESS than smallest individual resistor)\n4) If one branch fails, other branches continue to work.\n5) Adding more parallel resistors decreases total resistance (more paths for current).',
+    back: '1) Voltage is the same across all branches: V_total = V₁ = V₂ = ... 2) Total current equals sum of branch currents: I_total = I₁ + I₂ + ... 3) 1/R_total = 1/R₁ + 1/R₂ + ... (total resistance is LESS than smallest individual resistor) 4) If one branch fails, other branches continue to work. 5) Adding more parallel resistors decreases total resistance (more paths for current).',
     tags: ['electricity', 'circuits'],
     difficulty: 'medium',
   },
@@ -79,6 +82,9 @@ const flashcardData = [
     tags: ['electricity', "Kirchhoff's laws"],
     difficulty: 'medium',
   },
+];
+
+export const flashcard3 = [
   {
     id: 'ib-phys-electricity-011',
     front: 'State the potential divider formula and its applications.',
@@ -114,6 +120,9 @@ const flashcardData = [
     tags: ['electricity', 'I-V characteristics'],
     difficulty: 'hard',
   },
+];
+
+export const flashcard4 = [
   {
     id: 'ib-phys-electricity-016',
     front: 'Describe the I-V characteristic of a semiconductor diode.',
@@ -150,9 +159,11 @@ const flashcardData = [
     difficulty: 'hard',
   },
 ];
+
 <FlashcardDeck
   deckId="ib-phys-electricity"
   title="IB Physics: Electricity"
   description="Electric current, potential difference, resistance, Ohm's law, I-V characteristics, circuits, Kirchhoff's laws, power, and internal resistance."
-  cards={flashcardData}
-/>;
+  cards={[...flashcard1, ...flashcard2, ...flashcard3, ...flashcard4]}
+/>
+;

@@ -18,96 +18,162 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-const flashcardData = [{id:"uni-cs-theory-of-computation-001",front:"What is a Deterministic Finite
-Automaton (DFA)?",back:"A DFA is a 5-tuple (Q, Sigma, delta, q0, F) where Q is a finite set of
-states, Sigma is the input alphabet, delta is a deterministic transition function from Q x Sigma to
-Q, q0 is the start state, and F is the set of accepting
-states.",tags:["automata","dfa"],difficulty:"easy"},{id:"uni-cs-theory-of-computation-002",front:"What
-is the difference between a DFA and an NFA?",back:"In a DFA, each state has exactly one transition
-per input symbol (deterministic). In an NFA, a state may have zero, one, or multiple transitions per
-symbol, and may also have epsilon (empty string)
-transitions.",tags:["automata","dfa","nfa"],difficulty:"easy"},{id:"uni-cs-theory-of-computation-003",front:"Are
-DFAs and NFAs equivalent in expressive power?",back:"Yes. For every NFA there exists an equivalent
-DFA that accepts the same language. The subset construction algorithm converts an NFA to a DFA,
-where each DFA state corresponds to a subset of NFA
-states.",tags:["automata","dfa","nfa","equivalence"],difficulty:"easy"},{id:"uni-cs-theory-of-computation-004",front:"State
-the pumping lemma for regular languages.",back:"If L is regular, there exists a pumping length p
-such that any string s in L with |s| >= p can be split into s = xyz where |xy| <= p, |y| > 0, and
-for all i >= 0, xy^i z is also in
-L.",tags:["regular-languages","pumping-lemma"],difficulty:"easy"},{id:"uni-cs-theory-of-computation-005",front:"What
-is Chomsky Normal Form (CNF) for context-free grammars?",back:"CNF requires every production rule to
-be of the form A -> BC (two non-terminals) or A -> a (single terminal), with the possible exception
-of S -> epsilon if S does not appear on any right-hand
-side.",tags:["cfg","cnf"],difficulty:"easy"},{id:"uni-cs-theory-of-computation-006",front:"What is a
-Turing machine?",back:"A Turing machine is a 7-tuple (Q, Sigma, Gamma, delta, q0, q_accept,
-q_reject) with a finite state control, an infinite tape of cells, and a read/write head. At each
-step it reads a symbol, writes a symbol, moves left or right, and changes state according to
-delta.",tags:["turing-machines"],difficulty:"easy"},{id:"uni-cs-theory-of-computation-007",front:"What
-is the Church-Turing thesis?",back:"The Church-Turing thesis states that any function that can be
-computed by an algorithm can be computed by a Turing machine. It is a thesis, not a theorem, since
-'algorithm' has no formal mathematical definition outside the
-model.",tags:["turing-machines","church-turing"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-008",front:"How
-is DFA minimization performed?",back:"DFA minimization repeatedly merges pairs of states that are
-indistinguishable: start by marking pairs where one is accepting and the other is not, then
-iteratively mark pairs whose transitions lead to already-marked pairs. Unmarked pairs are equivalent
-and can be
-merged.",tags:["automata","dfa","minimization"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-009",front:"What
-are the closure properties of regular languages?",back:"Regular languages are closed under union,
-intersection, complement, concatenation, Kleene star, reversal, difference, and homomorphism. These
-can be proven by constructing automata or using regular
-expressions.",tags:["regular-languages","closure-properties"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-010",front:"What
-is the difference between a DPDA and an NPDA?",back:"A Deterministic PDA (DPDA) has at most one
-valid transition per configuration (state, stack symbol, input). A Nondeterministic PDA (NPDA) may
-have multiple valid transitions. DPDAs accept a proper subset of languages accepted by NPDAs
-(deterministic
-CFLs).",tags:["pda","dpda","npda"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-011",front:"Describe
-the CYK algorithm for parsing.",back:"The CYK (Cocke-Younger-Kasami) algorithm determines if a
-string is in a CFL given a grammar in CNF. It fills a dynamic programming table where entry C[i,j]
-is the set of non-terminals deriving the substring from position i to j, in O(n^3 \* |G|)
-time.",tags:["cfg","cyk","parsing"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-012",front:"What
-does it mean for a context-free grammar to be ambiguous?",back:"A CFG is ambiguous if there exists
-at least one string in the language that has two or more distinct parse trees (equivalently, two or
-more distinct leftmost derivations). Ambiguity is undecidable in
-general.",tags:["cfg","ambiguity"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-013",front:"What
-is the halting problem?",back:"The halting problem asks: given a description of a Turing machine M
-and input w, does M halt on w? Turing proved in 1936 that no Turing machine can solve this problem
-for all possible M and w; it is
-undecidable.",tags:["decidability","halting-problem"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-014",front:"What
-is a reduction in computability theory?",back:"A reduction from language A to language B (A <=\_m B)
-is a computable function f such that w is in A iff f(w) is in B. If B is decidable then A is
-decidable. If A is undecidable then B is
-undecidable.",tags:["decidability","reduction"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-015",front:"What
-is the difference between P and NP complexity classes?",back:"P is the class of languages decidable
-by a deterministic Turing machine in polynomial time. NP is the class of languages decidable by a
-nondeterministic Turing machine in polynomial time, equivalently verifiable by a deterministic
-machine in polynomial
-time.",tags:["complexity","p","np"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-016",front:"What
-is the difference between a multi-tape Turing machine and a standard single-tape TM?",back:"A
-multi-tape TM has multiple tapes, each with its own head. Despite the apparent increased power, any
-multi-tape TM can be simulated by a single-tape TM with at most quadratic time overhead. They
-recognize the same class of
-languages.",tags:["turing-machines","variants"],difficulty:"medium"},{id:"uni-cs-theory-of-computation-017",front:"State
-Rice's theorem.",back:"Rice's theorem states that for any non-trivial semantic property P of
-recursively enumerable languages (i.e., P holds for some but not all RE languages), it is
-undecidable whether a given Turing machine's language has property
-P.",tags:["decidability","rices-theorem"],difficulty:"hard"},{id:"uni-cs-theory-of-computation-018",front:"What
-does it mean for a problem to be NP-complete?",back:"A problem is NP-complete if it is in NP and
-every problem in NP can be reduced to it in polynomial time (it is NP-hard). Solving any NP-complete
-problem in polynomial time would imply P = NP. Examples: SAT, Clique, Hamiltonian
-Path.",tags:["complexity","np-complete"],difficulty:"hard"},{id:"uni-cs-theory-of-computation-019",front:"What
-is the class co-NP and how does it relate to NP?",back:"co-NP contains languages whose complements
-are in NP. A 'no' answer can be verified in polynomial time. It is unknown whether NP = co-NP. If NP
-!= co-NP, then there exist problems where 'yes' instances are easy to verify but 'no' instances are
-not.",tags:["complexity","co-np","np"],difficulty:"hard"},{id:"uni-cs-theory-of-computation-020",front:"Prove
-that the language {a^n b^n c^n | n >= 0} is not context-free.",back:"Assume it is context-free. By
-the pumping lemma for CFLs, let p be the pumping length. Consider s = a^p b^p c^p. The repeated
-substring must span at most two of the three symbol types. Pumping will disrupt the balance of a's,
-b's, and c's, producing a string not in the language -- a
-contradiction.",tags:["cfg","pumping-lemma-cfl","undecidable"],difficulty:"hard"}];
+export const flashcards1 = [
+  {
+    id: 'uni-cs-theory-of-computation-001',
+    front: 'What is a Deterministic Finite Automaton (DFA)?',
+    back: 'A DFA is a 5-tuple (Q, Sigma, delta, q0, F) where Q is a finite set of states, Sigma is the input alphabet, delta is a deterministic transition function from Q x Sigma to Q, q0 is the start state, and F is the set of accepting states.',
+    tags: ['automata', 'dfa'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-002',
+    front: 'What is the difference between a DFA and an NFA?',
+    back: 'In a DFA, each state has exactly one transition per input symbol (deterministic). In an NFA, a state may have zero, one, or multiple transitions per symbol, and may also have epsilon (empty string) transitions.',
+    tags: ['automata', 'dfa', 'nfa'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-003',
+    front: 'Are DFAs and NFAs equivalent in expressive power?',
+    back: 'Yes. For every NFA there exists an equivalent DFA that accepts the same language. The subset construction algorithm converts an NFA to a DFA, where each DFA state corresponds to a subset of NFA states.',
+    tags: ['automata', 'dfa', 'nfa', 'equivalence'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-004',
+    front: 'State the pumping lemma for regular languages.',
+    back: 'If L is regular, there exists a pumping length p such that any string s in L with |s| >= p can be split into s = xyz where |xy| <= p, |y| > 0, and for all i >= 0, xy^i z is also in L.',
+    tags: ['regular-languages', 'pumping-lemma'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-005',
+    front: 'What is Chomsky Normal Form (CNF) for context-free grammars?',
+    back: 'CNF requires every production rule to be of the form A -> BC (two non-terminals) or A -> a (single terminal), with the possible exception of S -> epsilon if S does not appear on any right-hand side.',
+    tags: ['cfg', 'cnf'],
+    difficulty: 'easy',
+  },
+];
+
+export const flashcards2 = [
+  {
+    id: 'uni-cs-theory-of-computation-006',
+    front: 'What is a Turing machine?',
+    back: 'A Turing machine is a 7-tuple (Q, Sigma, Gamma, delta, q0, q_accept, q_reject) with a finite state control, an infinite tape of cells, and a read/write head. At each step it reads a symbol, writes a symbol, moves left or right, and changes state according to delta.',
+    tags: ['turing-machines'],
+    difficulty: 'easy',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-007',
+    front: 'What is the Church-Turing thesis?',
+    back: "The Church-Turing thesis states that any function that can be computed by an algorithm can be computed by a Turing machine. It is a thesis, not a theorem, since 'algorithm' has no formal mathematical definition outside the model.",
+    tags: ['turing-machines', 'church-turing'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-008',
+    front: 'How is DFA minimization performed?',
+    back: 'DFA minimization repeatedly merges pairs of states that are indistinguishable: start by marking pairs where one is accepting and the other is not, then iteratively mark pairs whose transitions lead to already-marked pairs. Unmarked pairs are equivalent and can be merged.',
+    tags: ['automata', 'dfa', 'minimization'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-009',
+    front: 'What are the closure properties of regular languages?',
+    back: 'Regular languages are closed under union, intersection, complement, concatenation, Kleene star, reversal, difference, and homomorphism. These can be proven by constructing automata or using regular expressions.',
+    tags: ['regular-languages', 'closure-properties'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-010',
+    front: 'What is the difference between a DPDA and an NPDA?',
+    back: 'A Deterministic PDA (DPDA) has at most one valid transition per configuration (state, stack symbol, input). A Nondeterministic PDA (NPDA) may have multiple valid transitions. DPDAs accept a proper subset of languages accepted by NPDAs (deterministic CFLs).',
+    tags: ['pda', 'dpda', 'npda'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards3 = [
+  {
+    id: 'uni-cs-theory-of-computation-011',
+    front: 'Describe the CYK algorithm for parsing.',
+    back: 'The CYK (Cocke-Younger-Kasami) algorithm determines if a string is in a CFL given a grammar in CNF. It fills a dynamic programming table where entry C[i,j] is the set of non-terminals deriving the substring from position i to j, in O(n^3 * |G|) time.',
+    tags: ['cfg', 'cyk', 'parsing'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-012',
+    front: 'What does it mean for a context-free grammar to be ambiguous?',
+    back: 'A CFG is ambiguous if there exists at least one string in the language that has two or more distinct parse trees (equivalently, two or more distinct leftmost derivations). Ambiguity is undecidable in general.',
+    tags: ['cfg', 'ambiguity'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-013',
+    front: 'What is the halting problem?',
+    back: 'The halting problem asks: given a description of a Turing machine M and input w, does M halt on w? Turing proved in 1936 that no Turing machine can solve this problem for all possible M and w; it is undecidable.',
+    tags: ['decidability', 'halting-problem'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-014',
+    front: 'What is a reduction in computability theory?',
+    back: 'A reduction from language A to language B (A <=_m B) is a computable function f such that w is in A iff f(w) is in B. If B is decidable then A is decidable. If A is undecidable then B is undecidable.',
+    tags: ['decidability', 'reduction'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-015',
+    front: 'What is the difference between P and NP complexity classes?',
+    back: 'P is the class of languages decidable by a deterministic Turing machine in polynomial time. NP is the class of languages decidable by a nondeterministic Turing machine in polynomial time, equivalently verifiable by a deterministic machine in polynomial time.',
+    tags: ['complexity', 'p', 'np'],
+    difficulty: 'medium',
+  },
+];
+
+export const flashcards4 = [
+  {
+    id: 'uni-cs-theory-of-computation-016',
+    front:
+      'What is the difference between a multi-tape Turing machine and a standard single-tape TM?',
+    back: 'A multi-tape TM has multiple tapes, each with its own head. Despite the apparent increased power, any multi-tape TM can be simulated by a single-tape TM with at most quadratic time overhead. They recognize the same class of languages.',
+    tags: ['turing-machines', 'variants'],
+    difficulty: 'medium',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-017',
+    front: "State Rice's theorem.",
+    back: "Rice's theorem states that for any non-trivial semantic property P of recursively enumerable languages (i.e., P holds for some but not all RE languages), it is undecidable whether a given Turing machine's language has property P.",
+    tags: ['decidability', 'rices-theorem'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-018',
+    front: 'What does it mean for a problem to be NP-complete?',
+    back: 'A problem is NP-complete if it is in NP and every problem in NP can be reduced to it in polynomial time (it is NP-hard). Solving any NP-complete problem in polynomial time would imply P = NP. Examples: SAT, Clique, Hamiltonian Path.',
+    tags: ['complexity', 'np-complete'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-019',
+    front: 'What is the class co-NP and how does it relate to NP?',
+    back: "co-NP contains languages whose complements are in NP. A 'no' answer can be verified in polynomial time. It is unknown whether NP = co-NP. If NP != co-NP, then there exist problems where 'yes' instances are easy to verify but 'no' instances are not.",
+    tags: ['complexity', 'co-np', 'np'],
+    difficulty: 'hard',
+  },
+  {
+    id: 'uni-cs-theory-of-computation-020',
+    front: 'Prove that the language {a^n b^n c^n | n >= 0} is not context-free.',
+    back: "Assume it is context-free. By the pumping lemma for CFLs, let p be the pumping length. Consider s = a^p b^p c^p. The repeated substring must span at most two of the three symbol types. Pumping will disrupt the balance of a's, b's, and c's, producing a string not in the language -- a contradiction.",
+    tags: ['cfg', 'pumping-lemma-cfl', 'undecidable'],
+    difficulty: 'hard',
+  },
+];
 
 <FlashcardDeck
   deckId="uni-cs-theory-of-computation"
   title="University Computing -- Theory of Computation"
   description="Flashcards covering automata, regular languages, context-free grammars, Turing machines, decidability, and complexity classes."
-  cards={flashcardData}
+  cards={[...flashcards1, ...flashcards2, ...flashcards3, ...flashcards4]}
 />
