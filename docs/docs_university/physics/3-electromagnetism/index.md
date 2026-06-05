@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Physics
-slug: electromagnetism
 ---
 
 ## 1. Maxwell's Equations

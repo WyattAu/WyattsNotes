@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Physics
-slug: quantum-mechanics
 ---
 
 ## 1. Historical Motivation

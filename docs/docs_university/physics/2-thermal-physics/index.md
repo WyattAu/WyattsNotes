@@ -1,13 +1,14 @@
 ---
 title: Thermal Physics
-description: 'University Thermal Physics notes covering key definitions, core concepts, worked examples, and practice questions for effective revision.'
+description:
+  'University Thermal Physics notes covering key definitions, core concepts, worked examples, and
+  practice questions for effective revision.'
 date: 2026-04-26T00:00:00.000Z
 tags:
   - Physics
   - University
 categories:
   - Physics
-slug: thermal-physics
 ---
 
 ## 1. The Laws of Thermodynamics
@@ -1026,8 +1027,8 @@ Solving gives:
 
 $$T_c = \frac{8a}{27bk_B}, \qquad P_c = \frac{a}{27b^2}, \qquad v_c = 3b$$
 
-Near the critical point, define the **reduced variables**
-$\tilde{T} = T/T_c$, $\tilde{P} = P/P_c$, $\tilde{v} = v/v_c$ to obtain the universal form:
+Near the critical point, define the **reduced variables** $\tilde{T} = T/T_c$, $\tilde{P} = P/P_c$,
+$\tilde{v} = v/v_c$ to obtain the universal form:
 
 $$\left(\tilde{P} + \frac{3}{\tilde{v}^2}\right)(3\tilde{v} - 1) = 8\tilde{T}$$
 
@@ -1067,8 +1068,8 @@ atm.
 <details>
 <summary>Worked Example 10.2: Critical Parameters of CO$_2$</summary>
 
-For CO$_2$, $a = 0.364$ Pa$\cdot$M$^6$/mol$^2$, $b = 4.27 \times 10^{-5}$ m$^3$/mol. Using the critical
-point formulas:
+For CO$_2$, $a = 0.364$ Pa$\cdot$M$^6$/mol$^2$, $b = 4.27 \times 10^{-5}$ m$^3$/mol. Using the
+critical point formulas:
 
 $$T_c = \frac{8a}{27Rb} = \frac{8 \times 0.364}{27 \times 8.314 \times 4.27 \times 10^{-5}} = \frac{2.912}{9.585 \times 10^{-3}} \approx 303.7 \text{ K}$$
 
@@ -1258,12 +1259,12 @@ $$C \sim -A\ln|T - T_c|$$
 For $J = 1$ (in units of $k_B$):
 
 | Lattice      | $z$ | $T_c^{\text{MF}}$ |
-| ------------ | --- | ---------------- |
-| Linear chain | 2   | 2                |
-| Square       | 4   | 4                |
-| Simple cubic | 6   | 6                |
-| BCC          | 8   | 8                |
-| FCC          | 12  | 12               |
+| ------------ | --- | ----------------- |
+| Linear chain | 2   | 2                 |
+| Square       | 4   | 4                 |
+| Simple cubic | 6   | 6                 |
+| BCC          | 8   | 8                 |
+| FCC          | 12  | 12                |
 
 Compare with the exact $T_c$: 1D has no transition, 2D square has
 $T_c \approx 2.269$3D (numerical) $T_c \approx 4.51$. Mean-field overestimates $T_c$ in all cases,
@@ -1691,8 +1692,8 @@ $$\frac{C_P}{C_V} = 1 + \frac{Nk_B}{5Nk_B/2} = 1 + \frac{2}{5} = \frac{7}{5} = 1
 5. **Classical vs. Quantum .../4-statistics-and-probability/2_statistics**: At temperatures much
    higher than the degeneracy temperature $T_F$ (fermions) or $T_c$ (bosons), both Fermi--Dirac and
    Bose--Einstein distributions reduce to the Maxwell--Boltzmann distribution. The quantum
-   corrections are of order $n\lambda_{\text{dB}^3}$ where $\lambda_{\text{dB} = h/\sqrt{2\pi mk_BT}}$
-   is the thermal de Broglie wavelength.
+   corrections are of order $n\lambda_{\text{dB}^3}$ where
+   $\lambda_{\text{dB} = h/\sqrt{2\pi mk_BT}}$ is the thermal de Broglie wavelength.
 
 ## Problems
 

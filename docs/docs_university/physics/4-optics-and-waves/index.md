@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Physics
-slug: optics-and-wave-physics
 ---
 
 ## 1. The Wave Equation

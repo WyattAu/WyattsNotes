@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Physics
-slug: solid-state-physics
 ---
 
 ## 1. Crystal Structures

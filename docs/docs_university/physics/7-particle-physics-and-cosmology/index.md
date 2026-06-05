@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Physics
-slug: particle-physics-and-cosmology
 ---
 
 ## 1. The Standard Model

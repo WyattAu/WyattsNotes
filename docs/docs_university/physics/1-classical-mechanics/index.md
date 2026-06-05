@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Physics
-slug: classical-mechanics
 ---
 
 ## 1. Newtonian Mechanics Review
