@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { sanitizeHtml } from '../../utils/sanitize';
 
 export interface DiagnosticQuestion {
   id: string;
@@ -492,7 +493,7 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
           marginBottom: 16,
           color: 'var(--ifm-font-color-base)',
         }}
-        dangerouslySetInnerHTML={{ __html: currentQuestion.question }}
+        dangerouslySetInnerHTML={{ __html: sanitizeHtml(currentQuestion.question) }}
       />
       <div role="group" aria-label="Answer options">
         {currentQuestion.options.map((opt, i) => (
@@ -547,7 +548,7 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
             </strong>
             <div
               style={{ marginTop: 8, lineHeight: 1.6, color: 'var(--ifm-font-color-base)' }}
-              dangerouslySetInnerHTML={{ __html: currentQuestion.explanation }}
+              dangerouslySetInnerHTML={{ __html: sanitizeHtml(currentQuestion.explanation) }}
             />
           </div>
           <button

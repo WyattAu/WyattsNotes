@@ -1,5 +1,6 @@
 import Layout from '@theme/Layout';
 import React, { useEffect, useRef, useState } from 'react';
+import { sanitizeHtml } from '../utils/sanitize';
 import styles from './search.module.css';
 
 const ALGOLIA_APP_ID = 'SJ0ASLWZCS';
@@ -156,7 +157,10 @@ const SearchResultCard = React.memo(function SearchResultCard({
       </div>
       <div className={styles.cardTitle}>{hit.title}</div>
       {snippet && (
-        <div className={styles.cardSnippet} dangerouslySetInnerHTML={{ __html: snippet }} />
+        <div
+          className={styles.cardSnippet}
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(snippet) }}
+        />
       )}
     </a>
   );

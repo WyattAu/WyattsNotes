@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { sanitizeHtml } from '../../utils/sanitize';
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
@@ -260,7 +261,7 @@ function PracticeProblemItem({
           </strong>
           <div
             style={{ marginTop: 8, lineHeight: 1.6, color: 'var(--ifm-font-color-base)' }}
-            dangerouslySetInnerHTML={{ __html: explanation }}
+            dangerouslySetInnerHTML={{ __html: sanitizeHtml(explanation) }}
           />
         </div>
       )}
