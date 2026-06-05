@@ -9,7 +9,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: differential-equations
 ---
 
 ## 1. Introduction and Classification

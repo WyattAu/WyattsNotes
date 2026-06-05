@@ -57,10 +57,12 @@ export default defineConfig({
         'src/**/index.ts', // Barrel exports only
       ],
       thresholds: {
-        lines: 50,
-        branches: 40,
-        functions: 40,
-        statements: 50,
+        // Baseline established 2026-06-05: 85.13% stmts, 82.8% branches
+        // Thresholds set at baseline - 2% to allow minor fluctuations
+        lines: 83,
+        branches: 80,
+        functions: 83,
+        statements: 83,
       },
     },
   },

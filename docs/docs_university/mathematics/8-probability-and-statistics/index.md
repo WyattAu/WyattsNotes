@@ -7,7 +7,6 @@ tags:
   - University
 categories:
   - Mathematics
-slug: probability
 ---
 
 ## 1. Probability Spaces
