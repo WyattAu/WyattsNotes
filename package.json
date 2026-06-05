@@ -68,7 +68,7 @@
     "@docusaurus/preset-classic": "^3.10.0",
     "@docusaurus/theme-live-codeblock": "^3.10.0",
     "@docusaurus/theme-mermaid": "^3.10.0",
-    "@docusaurus/tsconfig": "^3.10.0",
+    "@docusaurus/tsconfig": "^3.10.1",
     "@docusaurus/types": "^3.10.0",
     "@lhci/cli": "^0.14.0",
     "@playwright/test": "^1.60.0",
