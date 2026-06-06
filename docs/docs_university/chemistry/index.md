@@ -1,6 +1,5 @@
 ---
 title: Chemistry
-slug: /
 ---
 
 # Chemistry

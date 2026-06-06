@@ -1,6 +1,5 @@
 ---
 title: Algorithms
-slug: /
 ---
 
 # Algorithms

@@ -1,6 +1,5 @@
 ---
 title: Systems
-slug: /
 ---
 
 # Systems
