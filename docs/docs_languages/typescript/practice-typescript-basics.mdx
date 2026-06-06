@@ -79,7 +79,7 @@ u.name = 'b'` would be a compile error. The object itself can still be mutated t
 <PracticeProblem
   question={`Given a discriminated union:\n\`\`\`\ntype Shape =\n  | { kind: 'circle'; radius: number }\n  | { kind: 'square'; size: number };
 
-\n\`\`\`\nWhat is the type of \`s.radius\` after narrowing with \`if (s.kind === 'circle')\`?`}
+\`\`\`\nWhat is the type of \`s.radius\` after narrowing with \`if (s.kind === 'circle')\`?`}
   options={[
     'number',
     'number | undefined',
