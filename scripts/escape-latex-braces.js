@@ -176,7 +176,13 @@ function escapeApostrophesInStrings(line) {
           // Potential closing quote or apostrophe.
           const prev = result[result.length - 1];
           const next = i + 1 < line.length ? line[i + 1] : '';
-          const isApostrophe = /[a-z]/.test(prev) && /[a-z]/.test(next);
+          const next2 = i + 2 < line.length ? line[i + 2] : '';
+          // Possessive patterns:
+          // 1. letter + ' + letter (e.g., "it's a") — mid-word apostrophe
+          // 2. letter + ' + s + non-letter (e.g., "beryllium's ") — word-boundary possessive
+          const isApostrophe =
+            (/[a-z]/.test(prev) && /[a-z]/.test(next)) ||
+            (/[a-z]/.test(prev) && next === 's' && !/[a-zA-Z]/.test(next2));
 
           if (isApostrophe) {
             result += '\\' + "'";
@@ -532,16 +538,58 @@ function diamondifySuperscriptSubscript(source) {
 // ─────────────────────────────────────────────────────────────────────────────
 // Orchestrator
 // ─────────────────────────────────────────────────────────────────────────────
+// Transformation 6: Escape apostrophes in ALL lines (not just const arrays)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * Apply escapeApostrophesInStrings to every line of the source.
+ *
+ * This catches possessive apostrophes (e.g., "beryllium's") inside
+ * single-quoted JSX attribute values on <Component> lines that are
+ * NOT processed by collapseConstArrays (which only handles const
+ * declarations).
+ */
+function escapeApostrophesAllLines(source) {
+  // Skip frontmatter
+  const lines = source.split('\n');
+  let frontmatterEnd = 0;
+  if (lines[0]?.trim() === '---') {
+    for (let i = 1; i < lines.length; i++) {
+      if (lines[i].trim() === '---') {
+        frontmatterEnd = i + 1;
+        break;
+      }
+    }
+  }
+
+  let changed = false;
+  const result = lines.map((line, idx) => {
+    if (idx < frontmatterEnd) return line;
+    // Skip lines that are pure markdown (no ' or " or JSX)
+    if (!line.includes("'")) return line;
+    const escaped = escapeApostrophesInStrings(line);
+    if (escaped !== line) {
+      changed = true;
+      return escaped;
+    }
+    return line;
+  });
+
+  return changed ? result.join('\n') : source;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 function processFile(filepath) {
   const content = fs.readFileSync(filepath, 'utf8');
 
-  // Apply transformations in order: blank lines → collapse → autolinks → latex braces → superscripts
+  // Apply transformations in order: blank lines → collapse → autolinks → latex braces → superscripts → apostrophes
   let processed = ensureBlankLineAfterImport(content);
   processed = collapseConstArrays(processed);
   processed = fixAutolinks(processed);
   processed = diamondifyLatexBraces(processed);
   processed = diamondifySuperscriptSubscript(processed);
+  processed = escapeApostrophesAllLines(processed);
 
   if (processed !== content) {
     fs.writeFileSync(filepath, processed);
