@@ -56,7 +56,9 @@ runs:
         node-version: 22
         cache: pnpm
 
-    - run: pnpm install --frozen-lockfile
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile
 
     - name: Preprocess MDX files
       if: inputs.preprocess-paths != ''
@@ -86,6 +88,7 @@ runs:
         CLOUDFLARE_ANALYTICS_TOKEN: '${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}'
 
     - name: Remove SSR bundle
+      shell: bash
       run: rm -rf build/__server
 
     - name: Create Cloudflare Pages project if needed
