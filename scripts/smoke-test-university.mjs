@@ -1,150 +1,168 @@
 #!/usr/bin/env node
 /**
- * Deployment smoke test for university site.
- * Verifies all expected pages return 200 after deployment.
+ * Comprehensive deployment smoke test for university site.
+ * Auto-discovers all pages from the docs directory structure.
  *
  * Usage:
- *   node scripts/smoke-test-university.mjs [--base-url URL] [--fail-fast]
- *
- * Options:
- *   --base-url URL   Base URL to test (default: https://wyattsnotes-university.pages.dev)
- *   --fail-fast      Exit on first failure
- *   --timeout MS     Per-request timeout in ms (default: 10000)
+ *   node scripts/smoke-test-university.mjs [--base-url URL] [--fail-fast] [--concurrency N]
  */
+
+import { execSync } from 'child_process';
 
 const BASE_URL = process.argv.includes('--base-url')
   ? process.argv[process.argv.indexOf('--base-url') + 1]
   : 'https://wyattsnotes-university.pages.dev';
 
 const FAIL_FAST = process.argv.includes('--fail-fast');
-const TIMEOUT = parseInt(
-  process.argv[process.argv.indexOf('--timeout') + 1] || '10000',
+const CONCURRENCY = parseInt(
+  process.argv[process.argv.indexOf('--concurrency') + 1] || '5',
   10,
 );
 
-const EXPECTED_PAGES = [
-  // Intro
-  '/docs/intro',
+// Auto-discover all pages from the filesystem
+function discoverPages() {
+  const stdout = execSync(
+    'find docs/docs_university -name "*.md" -o -name "*.mdx"',
+    { encoding: 'utf8', cwd: new URL('..', import.meta.url) },
+  );
 
-  // Mathematics — root-level flat files
-  '/docs/mathematics/linear-algebra',
-  '/docs/mathematics/real-analysis',
-  '/docs/mathematics/probability-and-statistics',
-  '/docs/mathematics/number-theory',
-  '/docs/mathematics/multivariable-calculus',
-  '/docs/mathematics/differential-equations',
-  '/docs/mathematics/complex-analysis',
-  '/docs/mathematics/abstract-algebra',
-  '/docs/mathematics/probability',
+  const pages = new Set();
 
-  // Mathematics — numbered subdirectories (index.md)
-  '/docs/mathematics/probability-and-statistics',
-  '/docs/mathematics/topology',
-  '/docs/mathematics/measure-theory',
-  '/docs/mathematics/functional-analysis',
-  '/docs/mathematics/differential-geometry',
+  for (const filePath of stdout.trim().split('\n').filter(Boolean)) {
+    // Remove docs/docs_university/ prefix
+    let page = filePath.replace(/^docs\/docs_university\//, '');
 
-  // Mathematics — sub-pages (slug prefix fixed)
-  '/docs/mathematics/linear-algebra/flashcards-linear-algebra',
-  '/docs/mathematics/linear-algebra/practice-linear-algebra',
-  '/docs/mathematics/real-analysis/flashcards-real-analysis',
-  '/docs/mathematics/real-analysis/practice-real-analysis',
-  '/docs/mathematics/abstract-algebra/flashcards-abstract-algebra',
-  '/docs/mathematics/abstract-algebra/practice-abstract-algebra',
+    // Remove extension
+    page = page.replace(/\.mdx?$/, '');
 
-  // Physics — numbered subdirectories (index.md)
-  '/docs/physics/classical-mechanics',
-  '/docs/physics/thermal-physics',
-  '/docs/physics/electromagnetism',
-  '/docs/physics/optics-and-waves',
-  '/docs/physics/quantum-mechanics',
-  '/docs/physics/solid-state-physics',
-  '/docs/physics/particle-physics-and-cosmology',
+    // Convert index.md to directory URL (trailing slash)
+    if (page.endsWith('/index')) {
+      page = page.replace(/\/index$/, '');
+    }
 
-  // Physics — sub-pages
-  '/docs/physics/classical-mechanics/flashcards-classical-mechanics',
-  '/docs/physics/classical-mechanics/practice-classical-mechanics',
-  '/docs/physics/quantum-mechanics/quantum-mechanics-ii',
+    // Skip empty paths
+    if (!page || page === '/') continue;
 
-  // Computing — root-level flat files
-  '/docs/computing/algorithms-and-data-structures',
-  '/docs/computing/algorithms-advanced',
-  '/docs/computing/computer-networks',
-  '/docs/computing/computer-networks-advanced',
-  '/docs/computing/databases',
-  '/docs/computing/databases-advanced',
-  '/docs/computing/discrete-mathematics',
-  '/docs/computing/operating-systems',
-  '/docs/computing/operating-systems-advanced',
-  '/docs/computing/theory-of-computation',
+    pages.add(page);
+  }
 
-  // Computing — numbered subdirectories (index.md)
-  '/docs/computing/algorithms-and-data-structures/data-structures-advanced',
-  '/docs/computing/algorithms-and-data-structures/algorithms-advanced',
+  return [...pages].sort();
+}
 
-  // Admissions
-  '/docs/admissions/step-preparation',
-  '/docs/admissions/tmua-preparation',
-  '/docs/admissions/mat-preparation',
-  '/docs/admissions/bmo-preparation',
-  '/docs/admissions/imo-preparation',
-  '/docs/admissions/flashcards-admissions',
-];
-
-async function fetchPage(url) {
+// Cloudflare Pages returns 200 for 404 pages, so we need to check content
+async function checkPage(url) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), TIMEOUT);
+  const timer = setTimeout(() => controller.abort(), 15000);
   try {
     const res = await fetch(url, {
       signal: controller.signal,
       redirect: 'follow',
       headers: { 'User-Agent': 'smoke-test/1.0' },
     });
-    return res.status;
+
+    if (res.status !== 200) {
+      return { status: res.status, is404: true };
+    }
+
+    // Check if it's actually a 404 page (Cloudflare returns 200 with 404 HTML)
+    const html = await res.text();
+    const titleMatch = html.match(/<title>([^<]*)<\/title>/i);
+    const title = titleMatch ? titleMatch[1] : '';
+
+    if (
+      title.includes('Page not found') ||
+      title.includes('404') ||
+      html.includes('This page could not be found')
+    ) {
+      return { status: 200, is404: true, title };
+    }
+
+    return { status: 200, is404: false };
+  } catch (err) {
+    return { status: 0, is404: true, error: err.message };
   } finally {
     clearTimeout(timer);
   }
 }
 
+// Concurrency-limited runner
+async function runWithConcurrency(items, fn, concurrency) {
+  const results = [];
+  let idx = 0;
+
+  async function worker() {
+    while (idx < items.length) {
+      const i = idx++;
+      results[i] = await fn(items[i], i);
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, () => worker());
+  await Promise.all(workers);
+  return results;
+}
+
 async function main() {
-  console.log(`\n=== University Site Smoke Test ===`);
-  console.log(`Base URL: ${BASE_URL}`);
-  console.log(`Pages to check: ${EXPECTED_PAGES.length}`);
-  console.log(`Fail fast: ${FAIL_FAST}\n`);
+  const pages = discoverPages();
+
+  console.log(`\n${'='.repeat(60)}`);
+  console.log(`University Site Comprehensive Smoke Test`);
+  console.log(`${'='.repeat(60)}`);
+  console.log(`Base URL:    ${BASE_URL}`);
+  console.log(`Total pages:  ${pages.length}`);
+  console.log(`Concurrency:  ${CONCURRENCY}`);
+  console.log(`Fail fast:    ${FAIL_FAST}`);
+  console.log('');
+
+  // Group pages by subject for summary
+  const subjects = {};
+  for (const page of pages) {
+    const subject = page.split('/')[0];
+    if (!subjects[subject]) subjects[subject] = 0;
+    subjects[subject]++;
+  }
+  console.log('Pages by subject:');
+  for (const [subj, count] of Object.entries(subjects).sort()) {
+    console.log(`  ${subj}: ${count}`);
+  }
+  console.log('');
+
+  const results = await runWithConcurrency(pages, async (page, i) => {
+    const url = `${BASE_URL}/docs/${page}`;
+    const result = await checkPage(url);
+    return { page, url, ...result };
+  }, CONCURRENCY);
 
   let passed = 0;
   let failed = 0;
   const failures = [];
 
-  for (const path of EXPECTED_PAGES) {
-    const url = `${BASE_URL}${path}`;
-    const status = await fetchPage(url);
-
-    if (status === 200) {
+  for (const r of results) {
+    if (r.is404 || r.status !== 200) {
+      failed++;
+      const reason = r.error
+        ? `Error: ${r.error}`
+        : r.title
+          ? `404 (title: ${r.title})`
+          : `HTTP ${r.status}`;
+      failures.push({ page: r.page, reason });
+      process.stdout.write('✗');
+    } else {
       passed++;
       process.stdout.write('✓');
-    } else {
-      failed++;
-      const msg = `${status} ${path}`;
-      failures.push(msg);
-      process.stdout.write('✗');
-      if (FAIL_FAST) {
-        console.log(`\n❌ ${msg}`);
-        process.exit(1);
-      }
     }
   }
 
-  console.log(`\n\nResults: ${passed} passed, ${failed} failed out of ${EXPECTED_PAGES.length}`);
+  console.log(`\n\nResults: ${passed} passed, ${failed} failed out of ${pages.length}`);
 
   if (failures.length > 0) {
-    console.log('\nFailed pages:');
+    console.log(`\nFailed pages (${failures.length}):`);
     for (const f of failures) {
-      console.log(`  ❌ ${f}`);
+      console.log(`  ❌ /docs/${f.page} — ${f.reason}`);
     }
     process.exit(1);
   } else {
-    console.log('\n✅ All pages accessible!');
+    console.log('\n✅ All university pages are live and accessible!');
   }
 }
 
