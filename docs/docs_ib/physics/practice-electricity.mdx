@@ -12,85 +12,47 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ## 16 MCQ practice problems covering core IB Physics electricity content, from basic charge and current to Kirchhoff's laws, potential dividers, and internal resistance.
 
-### Electric Charge, Current and Potential Difference
-
-export const practiceQuestions = [ {question: "A current of 2.5 A flows for 4.0 minutes. How much charge
-passes a point in the circuit?", options: ["A) 10 C", "B) 600 C", "C) 150 C", "D) 250 C"], correct:
-1, explanation: "Q = It = 2.5 × (4.0 × 60) = 2.5 × 240 = 600 C. Remember to convert minutes to
-seconds."}, {question: "A 12 V battery supplies a current of 0.80 A to a lamp for 30 minutes. How
-much energy does the lamp transfer?", options: ["A) 288 J", "B) 17,280 J", "C) 9.6 J", "D) 7,200
-J"], correct: 1, explanation: "E = VIt = 12 × 0.80 × (30 × 60) = 12 × 0.80 × 1800 = 17,280 J. Energy
-= charge × potential difference."}, {question: "The conventional direction of electric current is:",
-options: ["A) From negative to positive terminal", "B) From positive to negative terminal, opposite
-to electron flow", "C) In the direction of electron flow", "D) Perpendicular to the electric
-field"], correct: 1, explanation: "Conventional current flows from positive to negative terminal of
-a cell — opposite to the actual drift of electrons. This historical convention predates the
-discovery of the electron."} ];
-
-<PracticeProblem questions={practiceQuestions} />
-
 ---
 
-### Resistance and Ohm's Law
+### Practice Questions
 
-export const practiceQuestions = [ {question: "A resistor has a resistance of 100 Ω at 20 °C. A current of
+export const practiceQuestions = [
+ {question: "A current of 2.5 A flows for 4.0 minutes. How much charge passes a point in the circuit?", options: ["A) 10 C", "B) 600 C", "C) 150 C", "D) 250 C"], correct:
+1, explanation: "Q = It = 2.5 × (4.0 × 60) = 2.5 × 240 = 600 C. Remember to convert minutes to seconds."}, {question: "A 12 V battery supplies a current of 0.80 A to a lamp for 30 minutes. How much energy does the lamp transfer?", options: ["A) 288 J", "B) 17,280 J", "C) 9.6 J", "D) 7,200 J"], correct: 1, explanation: "E = VIt = 12 × 0.80 × (30 × 60) = 12 × 0.80 × 1800 = 17,280 J. Energy = charge × potential difference."}, {question: "The conventional direction of electric current is:",
+options: ["A) From negative to positive terminal", "B) From positive to negative terminal, opposite to electron flow", "C) In the direction of electron flow", "D) Perpendicular to the electric field"], correct: 1, explanation: "Conventional current flows from positive to negative terminal of a cell — opposite to the actual drift of electrons. This historical convention predates the discovery of the electron."},
+ {question: "A resistor has a resistance of 100 Ω at 20 °C. A current of
 0.15 A flows through it. What is the potential difference across it?", options: ["A) 6.67 V", "B)
-15.0 V", "C) 1.50 V", "D) 0.0015 V"], correct: 1, explanation: "Using Ohm's law V = IR = 0.15 × 100
-= 15.0 V. Ohm's law states that V is proportional to I for an ohmic conductor at constant
+15.0 V", "C) 1.50 V", "D) 0.0015 V"], correct: 1, explanation: "Using Ohm's law V = IR = 0.15 × 100 = 15.0 V. Ohm's law states that V is proportional to I for an ohmic conductor at constant
 temperature."}, {question: "A wire of length 2.0 m and cross-sectional area 1.5 × 10⁻⁶ m² has a
 resistance of 4.0 Ω. What is the resistivity of the material?", options: ["A) 3.0 × 10⁻⁶ Ω m", "B)
 6.0 × 10⁻⁶ Ω m", "C) 3.0 × 10⁻⁷ Ω m", "D) 1.2 × 10⁻⁵ Ω m"], correct: 0, explanation: "Using R =
 ρL/A: ρ = RA/L = 4.0 × 1.5 × 10⁻⁶ / 2.0 = 6.0 × 10⁻⁶ / 2.0 = 3.0 × 10⁻⁶ Ω m."}, {question: "Which of
-the following is an ohmic conductor?", options: ["A) A filament lamp", "B) A semiconductor diode",
-"C) A resistor at constant temperature", "D) A thermistor"], correct: 2, explanation: "An ohmic
+the following is an ohmic conductor?", options: ["A) A filament lamp", "B) A semiconductor diode", "C) A resistor at constant temperature", "D) A thermistor"], correct: 2, explanation: "An ohmic
 conductor has a constant resistance regardless of the applied voltage — its I-V graph is a straight
-line through the origin. A filament lamp's resistance increases with temperature. A diode only
-conducts in one direction. A thermistor's resistance changes with temperature."}, {question: "A wire
+line through the origin. A filament lamp's resistance increases with temperature. A diode only conducts in one direction. A thermistor's resistance changes with temperature."}, {question: "A wire
 of resistivity 1.7 × 10⁻⁸ Ω m has its length doubled and its diameter halved. By what factor does
 its resistance change?", options: ["A) ×2", "B) ×4", "C) ×8", "D) ×16"], correct: 2, explanation: "R
 = ρL/A. New length L' = 2L. New diameter d' = d/2, so new area A' = π(d/2)²/4 = A/4. R' =
 ρ(2L)/(A/4) = 8ρL/A = 8R. Resistance increases by a factor of 8."}, {question: "The I-V
 characteristic of a filament lamp curves because:", options: ["A) The current decreases with
 increasing voltage", "B) The resistance increases as the filament heats up", "C) The lamp acts as a
-semiconductor at high voltages", "D) The power dissipated decreases with current"], correct: 1,
-explanation: "As current flows through the filament, it heats up. For a metal, resistance increases
+semiconductor at high voltages", "D) The power dissipated decreases with current"], correct: 1, explanation: "As current flows through the filament, it heats up. For a metal, resistance increases
 with temperature (positive temperature coefficient). Higher resistance means the gradient (V/I) of
-the I-V graph increases, producing a curve that bends away from the current axis."} ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Series and Parallel Circuits
-
-export const practiceQuestions = [ {question: "Two resistors of 6.0 Ω and 12.0 Ω are connected in parallel.
-What is their combined resistance?", options: ["A) 18.0 Ω", "B) 4.0 Ω", "C) 2.0 Ω", "D) 6.0 Ω"],
-correct: 1, explanation: "For parallel resistors: 1/R_total = 1/R₁ + 1/R₂ = 1/6 + 1/12 = 2/12 + 1/12
+the I-V graph increases, producing a curve that bends away from the current axis."},
+ {question: "Two resistors of 6.0 Ω and 12.0 Ω are connected in parallel.
+What is their combined resistance?", options: ["A) 18.0 Ω", "B) 4.0 Ω", "C) 2.0 Ω", "D) 6.0 Ω"], correct: 1, explanation: "For parallel resistors: 1/R_total = 1/R₁ + 1/R₂ = 1/6 + 1/12 = 2/12 + 1/12
 = 3/12 = 1/4. R_total = 4.0 Ω. The parallel combination is always less than the smallest individual
 resistor."}, {question: "Three identical 9.0 Ω resistors are connected in series to a 27 V supply.
-What current flows?", options: ["A) 3.0 A", "B) 1.0 A", "C) 0.33 A", "D) 9.0 A"], correct: 1,
-explanation: "Total resistance in series: R_total = 9 + 9 + 9 = 27 Ω. Current I = V/R_total = 27/27
+What current flows?", options: ["A) 3.0 A", "B) 1.0 A", "C) 0.33 A", "D) 9.0 A"], correct: 1, explanation: "Total resistance in series: R_total = 9 + 9 + 9 = 27 Ω. Current I = V/R_total = 27/27
 = 1.0 A. In series, current is the same through all resistors and the total resistance is the sum of
-individual resistances."} ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Kirchhoff's Laws, Power and Internal Resistance
-
-export const practiceQuestions = [ {question: "Kirchhoff's first law (current law) is a consequence of:",
-options: ["A) Conservation of energy", "B) Conservation of charge", "C) Ohm's law", "D) Newton's
-third law"], correct: 1, explanation: "Kirchhoff's first law states that the sum of currents
-entering a junction equals the sum of currents leaving it. This is a consequence of conservation of
-charge — charge cannot accumulate at a junction. Kirchhoff's second law (sum of EMFs = sum of PDs
+individual resistances."},
+ {question: "Kirchhoff's first law (current law) is a consequence of:", options: ["A) Conservation of energy", "B) Conservation of charge", "C) Ohm's law", "D) Newton's
+third law"], correct: 1, explanation: "Kirchhoff's first law states that the sum of currents entering a junction equals the sum of currents leaving it. This is a consequence of conservation of charge — charge cannot accumulate at a junction. Kirchhoff's second law (sum of EMFs = sum of PDs
 around a loop) follows from conservation of energy."}, {question: "A cell of EMF 9.0 V and internal
 resistance 0.50 Ω is connected to a 4.0 Ω external resistor. What is the terminal potential
-difference?", options: ["A) 8.0 V", "B) 9.0 V", "C) 7.2 V", "D) 8.5 V"], correct: 0, explanation:
-"Total resistance = 4.0 + 0.50 = 4.50 Ω. Current I = EMF/R_total = 9.0/4.50 = 2.0 A. Terminal PD =
+difference?", options: ["A) 8.0 V", "B) 9.0 V", "C) 7.2 V", "D) 8.5 V"], correct: 0, explanation: "Total resistance = 4.0 + 0.50 = 4.50 Ω. Current I = EMF/R_total = 9.0/4.50 = 2.0 A. Terminal PD =
 EMF − Ir = 9.0 − 2.0 × 0.50 = 9.0 − 1.0 = 8.0 V. Some EMF is 'lost' across the internal
-resistance."}, {question: "A 2.0 kW heater runs on a 230 V mains supply. What is its resistance?",
-options: ["A) 26.5 Ω", "B) 115 Ω", "C) 8.70 Ω", "D) 460,000 Ω"], correct: 0, explanation: "Using P =
+resistance."}, {question: "A 2.0 kW heater runs on a 230 V mains supply. What is its resistance?", options: ["A) 26.5 Ω", "B) 115 Ω", "C) 8.70 Ω", "D) 460,000 Ω"], correct: 0, explanation: "Using P =
 V²/R: R = V²/P = 230²/2000 = 52,900/2000 = 26.45 Ω ≈ 26.5 Ω. Alternatively: I = P/V = 2000/230 =
 8.70 A, then R = V/I = 230/8.70 = 26.5 Ω."}, {question: "In a potential divider circuit with two
 resistors R₁ = 10 kΩ and R₂ = 20 kΩ connected across a 9.0 V supply, what is the voltage across
@@ -98,9 +60,9 @@ R₂?", options: ["A) 3.0 V", "B) 6.0 V", "C) 9.0 V", "D) 4.5 V"], correct: 1, e
 potential divider: V_out = V_in × R₂/(R₁ + R₂) = 9.0 × 20,000/(10,000 + 20,000) = 9.0 × 2/3 = 6.0 V.
 The larger resistor gets the larger share of the voltage."}, {question: "A battery with EMF 12 V and
 unknown internal resistance r is connected to a variable resistor. When the external resistance is
-5.0 Ω, the current is 1.8 A. What is the internal resistance?", options: ["A) 1.7 Ω", "B) 0.33 Ω",
-"C) 6.7 Ω", "D) 2.0 Ω"], correct: 0, explanation: "EMF = I(R + r). 12 = 1.8(5.0 + r). 12 = 9.0 +
+5.0 Ω, the current is 1.8 A. What is the internal resistance?", options: ["A) 1.7 Ω", "B) 0.33 Ω", "C) 6.7 Ω", "D) 2.0 Ω"], correct: 0, explanation: "EMF = I(R + r). 12 = 1.8(5.0 + r). 12 = 9.0 +
 1.8r. 1.8r = 3.0. r = 3.0/1.8 = 1.67 Ω ≈ 1.7 Ω. The internal resistance 'uses up' some of the EMF,
-reducing the terminal voltage available to the external circuit."} ];
+reducing the terminal voltage available to the external circuit."},
+];
 
 <PracticeProblem questions={practiceQuestions} />

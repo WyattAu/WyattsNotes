@@ -23,8 +23,7 @@ export const flashcards1 = [
   {
     id: 'shm-derivation',
     front:
-      "Derive the equation of SHM for a mass on a spring (Hooke's law) and for a simple pendulum.",
-    back: "Mass-spring: F = -kx (Hooke's law), ma = -kx → d²x/dt² = -(k/m)x → ω² = k/m, T = 2π√(m/k). Simple pendulum: restoring force F = -mg sinθ ≈ -mgx/L for small angles. d²x/dt² = -(g/L)x → ω² = g/L, T = 2π√(L/g). Both give a = -ω²x confirming SHM.",
+      "Derive the equation of SHM for a mass on a spring (Hooke's law) and for a simple pendulum.", back: "Mass-spring: F = -kx (Hooke's law), ma = -kx → d²x/dt² = -(k/m)x → ω² = k/m, T = 2π√(m/k). Simple pendulum: restoring force F = -mg sinθ ≈ -mgx/L for small angles. d²x/dt² = -(g/L)x → ω² = g/L, T = 2π√(L/g). Both give a = -ω²x confirming SHM.",
     tags: ['shm'],
     difficulty: 'medium',
   },
@@ -71,22 +70,7 @@ export const flashcards2 = [
   {
     id: 'grav-field',
     front:
-      "State Newton's law of gravitation and the equations for gravitational field strength and gravitational potential.",
-    back: 'F = GMm/r² (force between two point masses). Gravitational field strength g = GM/r² (force per unit mass, directed towards the mass). Gravitational potential V = -GM/r (potential energy per unit mass, always negative). g = -dV/dr. At the surface of Earth: g ≈ 9.81 m/s². Potential is zero at infinity.',
-    tags: ['gravitation'],
-    difficulty: 'easy',
-  },
-  {
-    id: 'escape-vel',
-    front:
-      'Derive the escape velocity formula and calculate it for Earth. (M_E = 5.97 × 10²⁴ kg, R_E = 6.37 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m²/kg²)',
-    back: 'For escape: ½mv² = GMm/r → v_esc = √(2GM/r). All KE converts to PE. At infinity, KE = 0 and PE = 0. For Earth: v_esc = √(2 × 6.67×10⁻¹¹ × 5.97×10²⁴ / 6.37×10⁶) = √(1.25 × 10⁸) = 11,200 m/s ≈ 11.2 km/s.',
-    tags: ['gravitation', 'escape-velocity'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'kepler-laws',
-    front: "State Kepler's three laws of planetary motion.",
+      "State Newton's law of gravitation and the equations for gravitational field strength and gravitational potential.", back: 'F = GMm/r² (force between two point masses). Gravitational field strength g = GM/r² (force per unit mass, directed towards the mass). Gravitational potential V = -GM/r (potential energy per unit mass, always negative). g = -dV/dr. At the surface of Earth: g ≈ 9.81 m/s². Potential is zero at infinity.', tags: ['gravitation'], difficulty: 'easy', }, { id: 'escape-vel', front: 'Derive the escape velocity formula and calculate it for Earth. (M_E = 5.97 × 10²⁴ kg, R_E = 6.37 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m²/kg²)', back: 'For escape: ½mv² = GMm/r → v_esc = √(2GM/r). All KE converts to PE. At infinity, KE = 0 and PE = 0. For Earth: v_esc = √(2 × 6.67×10⁻¹¹ × 5.97×10²⁴ / 6.37×10⁶) = √(1.25 × 10⁸) = 11,200 m/s ≈ 11.2 km/s.', tags: ['gravitation', 'escape-velocity'], difficulty: 'medium', }, { id: 'kepler-laws', front: "State Kepler's three laws of planetary motion.",
     back: 'First: Planets orbit in ellipses with the Sun at one focus. Second: A line from Sun to planet sweeps out equal areas in equal times (planet moves faster when closer to Sun). Third: T² ∝ r³ for all planets (T²/r³ = constant = 4π²/GM_sun). The third law can be derived from equating gravitational force with centripetal force.',
     tags: ['orbits'],
     difficulty: 'easy',
@@ -163,25 +147,7 @@ export const flashcards4 = [
     id: 'grav-pe-work',
     front:
       'Explain the difference between gΔh and GMm(1/r₁ - 1/r₂) for gravitational potential energy changes.',
-    back: "Near Earth's surface (small height changes): ΔPE = mgΔh is a good approximation. For large distances: ΔPE = GMm(1/r₁ - 1/r₂) = -GMm/r₂ - (-GMm/r₁) using V = -GM/r. Note: ΔPE is positive when moving away from the mass. The two formulas agree when Δh << r because gΔh ≈ GMmΔh/r² × Δh/... Actually gΔh works because g ≈ GM/R² near the surface.",
-    tags: ['gravitation', 'energy'],
-    difficulty: 'hard',
-  },
-  {
-    id: 'critical-damping-use',
-    front: 'Give three practical examples where critical damping is desirable and explain why.',
-    back: 'Car suspension: critical damping prevents oscillation after hitting a bump for comfort and safety. Door closers: critically damped so the door closes quickly without bouncing back. Voltmeters/ammeters: the needle is critically damped to settle at the reading without oscillating. In each case, critical damping gives the fastest return to equilibrium without overshoot.',
-    tags: ['damped-oscillations', 'applications'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'energy-in-damped',
-    front:
-      'Describe how total mechanical energy decreases in a damped oscillator and relate it to the damping constant.',
-    back: 'In damped SHM, total energy decays exponentially: E(t) = E₀e^(-bt/m) where b is the damping constant and m is mass. The amplitude decays as A(t) = A₀e^(-bt/2m) (half the exponent since E ∝ A²). The rate of energy loss = power dissipated = bω²A₀²/2m × e^(-bt/m). Energy is lost as heat due to the damping force doing negative work.',
-    tags: ['damped-oscillations', 'energy'],
-    difficulty: 'hard',
-  },
+    back: "Near Earth's surface (small height changes): ΔPE = mgΔh is a good approximation. For large distances: ΔPE = GMm(1/r₁ - 1/r₂) = -GMm/r₂ - (-GMm/r₁) using V = -GM/r. Note: ΔPE is positive when moving away from the mass. The two formulas agree when Δh << r because gΔh ≈ GMmΔh/r² × Δh/... Actually gΔh works because g ≈ GM/R² near the surface.", tags: ['gravitation', 'energy'], difficulty: 'hard', }, { id: 'critical-damping-use', front: 'Give three practical examples where critical damping is desirable and explain why.', back: 'Car suspension: critical damping prevents oscillation after hitting a bump for comfort and safety. Door closers: critically damped so the door closes quickly without bouncing back. Voltmeters/ammeters: the needle is critically damped to settle at the reading without oscillating. In each case, critical damping gives the fastest return to equilibrium without overshoot.', tags: ['damped-oscillations', 'applications'], difficulty: 'medium', }, { id: 'energy-in-damped', front: 'Describe how total mechanical energy decreases in a damped oscillator and relate it to the damping constant.', back: 'In damped SHM, total energy decays exponentially: E(t) = E₀e^(-bt/m) where b is the damping constant and m is mass. The amplitude decays as A(t) = A₀e^(-bt/2m) (half the exponent since E ∝ A²). The rate of energy loss = power dissipated = bω²A₀²/2m × e^(-bt/m). Energy is lost as heat due to the damping force doing negative work.', tags: ['damped-oscillations', 'energy'], difficulty: 'hard', },
 ];
 
 <FlashcardDeck

@@ -1,5 +1,5 @@
 ---
-title: M2: Coordinate Geometry
+title: 'M2: Coordinate Geometry'
 description:
   'DSE Maths Extended Part M2 notes covering coordinate geometry of lines and circles, conic sections,
   transformations, and vector methods for proofs and problem solving.'

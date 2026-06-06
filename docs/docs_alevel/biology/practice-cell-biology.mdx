@@ -16,105 +16,19 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ---
 
-### Cell Structure
+### Practice Questions
 
-export const practiceQuestions = [ { question: 'Which of the following structures is present in a
-prokaryotic cell but absent from an eukaryotic animal cell?', options: ['A) Mitochondria', 'B)
-Plasmid', 'C) Endoplasmic reticulum', 'D) Nuclear envelope'], correct: 1, explanation: 'Plasmids are
-small, circular, extra-chromosomal DNA molecules found in prokaryotes. Eukaryotic animal cells do
-not possess plasmids. Mitochondria, endoplasmic reticulum, and nuclear envelopes are all eukaryotic
-organelles. Prokaryotes also lack membrane-bound organelles entirely.', }, { question: "The rough
-endoplasmic reticulum is described as 'rough' because it has which of the following attached to its
-surface?", options: ['A) ATP synthase enzymes', 'B) Ribosomes', 'C) Lysosomes', 'D) Microtubules'],
-correct: 1, explanation: 'The rough ER has ribosomes bound to its cytoplasmic surface, giving it a
-granular appearance under electron microscopy. These ribosomes synthesise proteins destined for
-secretion, insertion into membranes, or delivery to lysosomes and other organelles. The smooth ER
-lacks ribosomes and is involved in lipid synthesis.', }, { question: 'Compare the ultrastructure of
-a plant cell and an animal cell. Which structure is found in plant cells but NOT in animal cells?',
-options: [ 'A) Golgi apparatus', 'B) Cell membrane', 'C) Cell wall made of cellulose', 'D)
-Centrioles', ], correct: 2, explanation: 'Plant cells have a rigid cell wall composed of cellulose
-microfibrils embedded in a matrix of pectins and hemicellulose. This provides structural support and
-prevents lysis in hypotonic conditions. Animal cells lack a cell wall. Centrioles are actually
-absent from most plant cells (present in animal cells). Both cell types share the Golgi apparatus
-and cell membranes.', }, ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Cell Membrane
-
-export const practiceQuestions = [ { question: 'The fluid mosaic model of cell membranes describes the
-membrane as having phospholipid molecules that can:', options: [ 'A) Flip from one layer to the
-other frequently', 'B) Move laterally within their own layer', 'C) Dissolve in the extracellular
-fluid', 'D) Form covalent bonds with cholesterol', ], correct: 1, explanation: 'The fluid mosaic
-model (Singer and Nicolson, 1972) proposes that phospholipids form a bilayer in which individual
-molecules can move laterally within their monolayer, giving the membrane fluidity. Transverse
-flipping (moving between layers) is rare and energetically unfavourable without the enzyme flippase.
-Cholesterol sits between phospholipids, reducing fluidity at high temperatures and maintaining it at
-low temperatures.', }, { question: 'Facilitated diffusion differs from simple diffusion because
-facilitated diffusion:', options: [ 'A) Requires ATP hydrolysis', 'B) Moves substances against their
-concentration gradient', 'C) Involves specific transmembrane proteins such as channel or carrier
-proteins', 'D) Only occurs in prokaryotic cells', ], correct: 2, explanation: 'Facilitated diffusion
-uses transmembrane proteins -- either channel proteins (forming hydrophilic pores) or carrier
-proteins (undergoing conformational change) -- to move substances down their concentration gradient.
-Unlike active transport, it does not require ATP. Unlike simple diffusion, it is specific to
-particular ions or molecules. Both processes are passive and occur in all cell types.', }, {
-question: 'Endocytosis is the process by which cells:', options: [ 'A) Release substances outside
-the cell via vesicle fusion with the membrane', 'B) Engulf external substances by invaginating the
-cell membrane to form vesicles', 'C) Actively pump ions out using ATP-driven carrier proteins', 'D)
-Synthesize membrane phospholipids in the Golgi apparatus', ], correct: 1, explanation: "Endocytosis
-involves the cell membrane invaginating to surround extracellular material, forming an intracellular
-vesicle. There are two main types: phagocytosis (engulfing solid particles, e.g. by phagocytes) and
-pinocytosis ('cell drinking', uptake of dissolved solutes). The reverse process, exocytosis,
-releases substances. Endocytosis is a form of bulk transport and requires energy.", }, ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Cell Division
-
-export const practiceQuestions = [ { question: 'During which phase of mitosis do sister chromatids separate
-and move to opposite poles?', options: ['A) Prophase', 'B) Metaphase', 'C) Anaphase', 'D)
-Telophase'], correct: 2, explanation: 'Anaphase begins when the centromeres divide, separating
-sister chromatids. Spindle fibres (microtubules) shorten, pulling each chromatid (now a chromosome)
-towards opposite poles. This ensures each daughter cell receives an identical set of chromosomes.
-Prophase sees chromosome condensation and spindle formation. Metaphase involves alignment at the
-equator. Telophase involves nuclear envelope reformation.', }, { question: 'Cyclin-dependent kinases
-(Cdks) regulate the cell cycle. Analyse the role of cyclins in controlling progression through cell
-cycle checkpoints.', options: [ 'A) Cyclins inhibit Cdks to prevent cell division', 'B) Cyclins bind
-to Cdks, activating them only at specific concentrations that rise and fall during the cycle', 'C)
-Cyclins are structural proteins that form the mitotic spindle', 'D) Cyclins are produced in constant
-amounts throughout the cell cycle', ], correct: 1, explanation: 'Cyclins are regulatory proteins
-whose concentrations fluctuate cyclically. When cyclin concentration reaches a threshold, it binds
-to a Cdk, forming a cyclin-Cdk complex that phosphorylates target proteins, triggering progression
-past checkpoints (e.g. G1/S, G2/M). Once the cyclin is degraded (by proteasomes), the Cdk is
-inactivated. This mechanism ensures cell division only proceeds when conditions are favourable.
-Disruption of cyclin/Cdk regulation can lead to uncontrolled division (cancer).', }, { question:
+export const practiceQuestions = [
+ { question: 'Which of the following structures is present in a prokaryotic cell but absent from an eukaryotic animal cell?', options: ['A) Mitochondria', 'B) Plasmid', 'C) Endoplasmic reticulum', 'D) Nuclear envelope'], correct: 1, explanation: 'Plasmids are small, circular, extra-chromosomal DNA molecules found in prokaryotes. Eukaryotic animal cells do not possess plasmids. Mitochondria, endoplasmic reticulum, and nuclear envelopes are all eukaryotic organelles. Prokaryotes also lack membrane-bound organelles entirely.', }, { question: "The rough endoplasmic reticulum is described as 'rough' because it has which of the following attached to its surface?", options: ['A) ATP synthase enzymes', 'B) Ribosomes', 'C) Lysosomes', 'D) Microtubules'],
+correct: 1, explanation: 'The rough ER has ribosomes bound to its cytoplasmic surface, giving it a granular appearance under electron microscopy. These ribosomes synthesise proteins destined for secretion, insertion into membranes, or delivery to lysosomes and other organelles. The smooth ER lacks ribosomes and is involved in lipid synthesis.', }, { question: 'Compare the ultrastructure of a plant cell and an animal cell. Which structure is found in plant cells but NOT in animal cells?',
+options: [ 'A) Golgi apparatus', 'B) Cell membrane', 'C) Cell wall made of cellulose', 'D) Centrioles', ], correct: 2, explanation: 'Plant cells have a rigid cell wall composed of cellulose microfibrils embedded in a matrix of pectins and hemicellulose. This provides structural support and prevents lysis in hypotonic conditions. Animal cells lack a cell wall. Centrioles are actually absent from most plant cells (present in animal cells). Both cell types share the Golgi apparatus and cell membranes.', },
+ { question: 'The fluid mosaic model of cell membranes describes the membrane as having phospholipid molecules that can:', options: [ 'A) Flip from one layer to the other frequently', 'B) Move laterally within their own layer', 'C) Dissolve in the extracellular fluid', 'D) Form covalent bonds with cholesterol', ], correct: 1, explanation: 'The fluid mosaic model (Singer and Nicolson, 1972) proposes that phospholipids form a bilayer in which individual molecules can move laterally within their monolayer, giving the membrane fluidity. Transverse flipping (moving between layers) is rare and energetically unfavourable without the enzyme flippase. Cholesterol sits between phospholipids, reducing fluidity at high temperatures and maintaining it at low temperatures.', }, { question: 'Facilitated diffusion differs from simple diffusion because facilitated diffusion:', options: [ 'A) Requires ATP hydrolysis', 'B) Moves substances against their concentration gradient', 'C) Involves specific transmembrane proteins such as channel or carrier proteins', 'D) Only occurs in prokaryotic cells', ], correct: 2, explanation: 'Facilitated diffusion uses transmembrane proteins -- either channel proteins (forming hydrophilic pores) or carrier proteins (undergoing conformational change) -- to move substances down their concentration gradient. Unlike active transport, it does not require ATP. Unlike simple diffusion, it is specific to particular ions or molecules. Both processes are passive and occur in all cell types.', }, {
+question: 'Endocytosis is the process by which cells:', options: [ 'A) Release substances outside the cell via vesicle fusion with the membrane', 'B) Engulf external substances by invaginating the cell membrane to form vesicles', 'C) Actively pump ions out using ATP-driven carrier proteins', 'D) Synthesize membrane phospholipids in the Golgi apparatus', ], correct: 1, explanation: "Endocytosis involves the cell membrane invaginating to surround extracellular material, forming an intracellular vesicle. There are two main types: phagocytosis (engulfing solid particles, e.g. by phagocytes) and pinocytosis ('cell drinking', uptake of dissolved solutes). The reverse process, exocytosis, releases substances. Endocytosis is a form of bulk transport and requires energy.", },
+ { question: 'During which phase of mitosis do sister chromatids separate and move to opposite poles?', options: ['A) Prophase', 'B) Metaphase', 'C) Anaphase', 'D) Telophase'], correct: 2, explanation: 'Anaphase begins when the centromeres divide, separating sister chromatids. Spindle fibres (microtubules) shorten, pulling each chromatid (now a chromosome) towards opposite poles. This ensures each daughter cell receives an identical set of chromosomes. Prophase sees chromosome condensation and spindle formation. Metaphase involves alignment at the equator. Telophase involves nuclear envelope reformation.', }, { question: 'Cyclin-dependent kinases (Cdks) regulate the cell cycle. Analyse the role of cyclins in controlling progression through cell cycle checkpoints.', options: [ 'A) Cyclins inhibit Cdks to prevent cell division', 'B) Cyclins bind to Cdks, activating them only at specific concentrations that rise and fall during the cycle', 'C) Cyclins are structural proteins that form the mitotic spindle', 'D) Cyclins are produced in constant amounts throughout the cell cycle', ], correct: 1, explanation: 'Cyclins are regulatory proteins whose concentrations fluctuate cyclically. When cyclin concentration reaches a threshold, it binds to a Cdk, forming a cyclin-Cdk complex that phosphorylates target proteins, triggering progression past checkpoints (e.g. G1/S, G2/M). Once the cyclin is degraded (by proteasomes), the Cdk is inactivated. This mechanism ensures cell division only proceeds when conditions are favourable. Disruption of cyclin/Cdk regulation can lead to uncontrolled division (cancer).', }, { question:
 'Evaluate which of the following is most likely to result in a cell becoming cancerous.', options: [
-'A) Upregulation of tumour suppressor genes such as p53', 'B) A mutation that activates an oncogene
-causing uncontrolled cell division', 'C) Increased expression of cyclins at the correct phase of the
-cell cycle', 'D) Apoptosis of damaged cells triggered by DNA surveillance mechanisms', ], correct:
-1, explanation: 'Oncogenes are mutated versions of proto-oncogenes that drive cell division. When
-activated by mutation, they cause cells to divide uncontrollably, bypassing normal regulatory
-checkpoints. In contrast, tumour suppressor genes (like p53) normally inhibit cell division; their
-upregulation would protect against cancer. Normal cyclin regulation is essential for controlled
-division. Apoptosis removes damaged cells. Proto-oncogenes can be activated by: gene translocation,
-amplification, or point mutation (as in the ras oncogene).', }, ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Biological Molecules
-
-export const practiceQuestions = [ { question: 'Which monosaccharide is the primary product of
-photosynthesis and the main respiratory substrate in cells?', options: ['A) Fructose', 'B)
-Galactose', 'C) Glucose', 'D) Ribose'], correct: 2, explanation: "Glucose (C6H12O6) is the direct
-product of the light-independent stage of photosynthesis (Calvin cycle) and the principal substrate
-for aerobic respiration (glycolysis). It exists in alpha and beta anomers. Fructose is a ketose
-sugar; galactose differs at C-4; ribose is a pentose used in RNA. Glucose's six-carbon structure and
+'A) Upregulation of tumour suppressor genes such as p53', 'B) A mutation that activates an oncogene causing uncontrolled cell division', 'C) Increased expression of cyclins at the correct phase of the cell cycle', 'D) Apoptosis of damaged cells triggered by DNA surveillance mechanisms', ], correct:
+1, explanation: 'Oncogenes are mutated versions of proto-oncogenes that drive cell division. When activated by mutation, they cause cells to divide uncontrollably, bypassing normal regulatory checkpoints. In contrast, tumour suppressor genes (like p53) normally inhibit cell division; their upregulation would protect against cancer. Normal cyclin regulation is essential for controlled division. Apoptosis removes damaged cells. Proto-oncogenes can be activated by: gene translocation, amplification, or point mutation (as in the ras oncogene).', },
+ { question: 'Which monosaccharide is the primary product of photosynthesis and the main respiratory substrate in cells?', options: ['A) Fructose', 'B) Galactose', 'C) Glucose', 'D) Ribose'], correct: 2, explanation: "Glucose (C6H12O6) is the direct product of the light-independent stage of photosynthesis (Calvin cycle) and the principal substrate for aerobic respiration (glycolysis). It exists in alpha and beta anomers. Fructose is a ketose sugar; galactose differs at C-4; ribose is a pentose used in RNA. Glucose's six-carbon structure and
 abundance in biological systems make it the central metabolic fuel.", }, { question: 'Describe the
 structure and function of a triglyceride molecule.', options: [ 'A) Three fatty acids linked by
 peptide bonds to a glycerol backbone; functions as an enzyme', 'B) Three fatty acids ester-bonded to
@@ -125,67 +39,29 @@ consists of one glycerol molecule (3-carbon alcohol) joined to three fatty acids
 reactions forming ester bonds. Three water molecules are released. The fatty acids may be saturated
 (no C=C bonds, solid at room temp) or unsaturated (one or more C=C bonds, liquid). Triglycerides are
 the main energy storage molecule in animals (adipose tissue) and some plants (seeds). They contain
-roughly twice the energy per gram as carbohydrates due to the high proportion of C-H bonds.', }, {
-question: "A DNA molecule has 120 adenine bases. Using Chargaff's rules and base pairing rules,
-calculate the number of cytosine bases if the total number of bases is 600.", options: ['A) 120',
+roughly twice the energy per gram as carbohydrates due to the high proportion of C-H bonds.', }, { question: "A DNA molecule has 120 adenine bases. Using Chargaff's rules and base pairing rules, calculate the number of cytosine bases if the total number of bases is 600.", options: ['A) 120',
 'B) 180', 'C) 240', 'D) 300'], correct: 1, explanation: "Chargaff's rules state that in DNA, A pairs
 with T and G pairs with C. Therefore A = T = 120. The total bases = 600, so G + C = 600 - (A + T) =
 600 - 240 = 360. Since G = C, cytosine = 360 / 2 = 180. This is a standard A-Level calculation
-requiring application of complementary base pairing and Chargaff's rules.", }, ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Exchange and Transport
-
-export const practiceQuestions = [ { question: 'Osmosis can be defined as:', options: [ 'A) The movement of
-solute molecules from high to low water potential', 'B) The net movement of water molecules through
-a selectively permeable membrane from a region of higher water potential to lower water potential',
-'C) The active transport of water against its concentration gradient', 'D) The bulk transport of
-water via vesicle formation', ], correct: 1, explanation: 'Osmosis is the passive net movement of
-water molecules across a selectively permeable membrane from a region of higher water potential
-(closer to zero, less negative) to a region of lower water potential (more negative). It is driven
-by the water potential gradient. Water potential is denoted by the Greek letter psi and is measured
-in kPa. Pure water has a water potential of 0 kPa. Adding solutes lowers (makes more negative) the
-water potential.', }, { question: 'Analyse why the xylem vessels in plant roots are adapted for mass
-flow of water.', options: [ 'A) They are living cells with lignin deposits that actively pump water
-upwards', 'B) They are dead, hollow tubes with lignified walls providing strength and no cross-walls
-to impede flow', 'C) They contain cytoplasm that generates root pressure by active transport', 'D)
-They have thin walls allowing diffusion of water and minerals laterally', ], correct: 1,
-explanation: 'Xylem vessels are composed of dead cells arranged end-to-end. The end walls
-(cross-walls) break down completely, forming continuous hollow tubes. Lignin impregnates the walls,
-providing mechanical strength to withstand the negative pressure generated by transpiration pull
-(cohesion-tension theory). Being dead, they contain no cytoplasm to obstruct flow. Root pressure
-(generated by active transport in the endodermis) can contribute but is a minor component compared
-to transpiration pull in tall plants.', }, { question: "Evaluate the Fick's law relationship: Rate
+requiring application of complementary base pairing and Chargaff's rules.", },
+ { question: 'Osmosis can be defined as:', options: [ 'A) The movement of solute molecules from high to low water potential', 'B) The net movement of water molecules through a selectively permeable membrane from a region of higher water potential to lower water potential',
+'C) The active transport of water against its concentration gradient', 'D) The bulk transport of water via vesicle formation', ], correct: 1, explanation: 'Osmosis is the passive net movement of water molecules across a selectively permeable membrane from a region of higher water potential (closer to zero, less negative) to a region of lower water potential (more negative). It is driven by the water potential gradient. Water potential is denoted by the Greek letter psi and is measured in kPa. Pure water has a water potential of 0 kPa. Adding solutes lowers (makes more negative) the water potential.', }, { question: 'Analyse why the xylem vessels in plant roots are adapted for mass flow of water.', options: [ 'A) They are living cells with lignin deposits that actively pump water upwards', 'B) They are dead, hollow tubes with lignified walls providing strength and no cross-walls to impede flow', 'C) They contain cytoplasm that generates root pressure by active transport', 'D) They have thin walls allowing diffusion of water and minerals laterally', ], correct: 1,
+explanation: 'Xylem vessels are composed of dead cells arranged end-to-end. The end walls (cross-walls) break down completely, forming continuous hollow tubes. Lignin impregnates the walls, providing mechanical strength to withstand the negative pressure generated by transpiration pull (cohesion-tension theory). Being dead, they contain no cytoplasm to obstruct flow. Root pressure (generated by active transport in the endodermis) can contribute but is a minor component compared to transpiration pull in tall plants.', }, { question: "Evaluate the Fick's law relationship: Rate
 of Diffusion is proportional to (Surface Area x Concentration Difference) / Thickness. A cell
 doubles in radius. By what factor does the surface area to volume ratio change?", options: ['A)
-Halves', 'B) Decreases by a factor of 2', 'C) Remains constant', 'D) Doubles'], correct: 1,
-explanation: 'For a sphere: SA = 4 pi r^2 and V = (4/3) pi r^3, so SA:V = 3/r. If radius doubles
+Halves', 'B) Decreases by a factor of 2', 'C) Remains constant', 'D) Doubles'], correct: 1, explanation: 'For a sphere: SA = 4 pi r^2 and V = (4/3) pi r^3, so SA:V = 3/r. If radius doubles
 from r to 2r, SA:V changes from 3/r to 3/(2r) = (3/r) x 0.5. The SA:V ratio halves. This is why
 small cells are more efficient for exchange -- they have a larger SA:V ratio. As organisms increase
 in size, specialised exchange surfaces (alveoli, villi, gill lamellae) and mass transport systems
-(circulatory system) are needed to compensate for the decreasing SA:V ratio.', }, ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Nervous System
-
-export const practiceQuestions = [ { question: 'At a resting neurone, the inside of the axon membrane is
-approximately -70mV relative to the outside. This resting potential is maintained primarily by:',
-options: [ 'A) The diffusion of sodium ions into the axon', 'B) The sodium-potassium pump actively
+(circulatory system) are needed to compensate for the decreasing SA:V ratio.', },
+ { question: 'At a resting neurone, the inside of the axon membrane is
+approximately -70mV relative to the outside. This resting potential is maintained primarily by:', options: [ 'A) The diffusion of sodium ions into the axon', 'B) The sodium-potassium pump actively
 transporting 3 Na+ out for every 2 K+ in', 'C) The diffusion of potassium ions into the axon down
-their concentration gradient', 'D) Calcium ions diffusing into synaptic knobs', ], correct: 1,
-explanation: 'The Na+/K+ pump (a transmembrane carrier protein) uses ATP to actively transport 3 Na+
+their concentration gradient', 'D) Calcium ions diffusing into synaptic knobs', ], correct: 1, explanation: 'The Na+/K+ pump (a transmembrane carrier protein) uses ATP to actively transport 3 Na+
 ions out and 2 K+ ions in per cycle. This creates: (1) a concentration gradient (high Na+ outside,
 high K+ inside), and (2) an electrochemical gradient (more positive charges outside). The membrane
 is also more permeable to K+ at rest (K+ leak channels), so K+ diffuses out, contributing to the
-negative internal charge. The combined effect gives the -70mV resting potential.', }, { question:
-'Describe the events that occur at a cholinergic synapse when an action potential arrives.',
-options: [ 'A) Acetylcholine directly opens voltage-gated sodium channels on the postsynaptic
+negative internal charge. The combined effect gives the -70mV resting potential.', }, { question: 'Describe the events that occur at a cholinergic synapse when an action potential arrives.', options: [ 'A) Acetylcholine directly opens voltage-gated sodium channels on the postsynaptic
 membrane', 'B) Calcium ions enter the presynaptic knob, causing vesicles to fuse with the membrane
 and release acetylcholine into the synaptic cleft', 'C) Sodium ions diffuse across the synaptic
 cleft, binding to receptors on the postsynaptic membrane', 'D) Acetylcholinesterase is released from
@@ -196,16 +72,7 @@ cause synaptic vesicles containing acetylcholine (ACh) to fuse with the presynap
 on the postsynaptic membrane, causing ligand-gated Na+ channels to open. Na+ flows in, depolarising
 the postsynaptic membrane and potentially triggering an action potential. ACh is then broken down by
 acetylcholinesterase to prevent continuous stimulation.', }, { question: "Evaluate why a reflex arc
-is advantageous for an organism's survival compared to a non-reflex neural pathway.", options: [ 'A)
-Reflex arcs involve conscious processing in the brain, allowing considered responses', 'B) Reflex
-arcs bypass the brain, involving fewer synapses for faster involuntary responses to harmful
-stimuli', 'C) Reflex arcs only operate during sleep when the brain is inactive', 'D) Reflex arcs
-transmit signals via hormones rather than neurones', ], correct: 1, explanation: 'Reflex arcs
-provide rapid, automatic responses to potentially harmful stimuli (e.g. touching a hot surface). The
-pathway is: receptor, sensory neurone, relay neurone (in spinal cord), motor neurone, effector. Key
-advantages: (1) they do not require processing in the brain, reducing the number of synapses and
-therefore synaptic delay; (2) the response is involuntary and protective; (3) some reflexes are
-innate (not learned). The brain may be informed afterwards via a neural pathway to the sensory
-cortex for conscious awareness, allowing learning and behavioural modification.', }, ];
+is advantageous for an organism's survival compared to a non-reflex neural pathway.", options: [ 'A) Reflex arcs involve conscious processing in the brain, allowing considered responses', 'B) Reflex arcs bypass the brain, involving fewer synapses for faster involuntary responses to harmful stimuli', 'C) Reflex arcs only operate during sleep when the brain is inactive', 'D) Reflex arcs transmit signals via hormones rather than neurones', ], correct: 1, explanation: 'Reflex arcs provide rapid, automatic responses to potentially harmful stimuli (e.g. touching a hot surface). The pathway is: receptor, sensory neurone, relay neurone (in spinal cord), motor neurone, effector. Key advantages: (1) they do not require processing in the brain, reducing the number of synapses and therefore synaptic delay; (2) the response is involuntary and protective; (3) some reflexes are innate (not learned). The brain may be informed afterwards via a neural pathway to the sensory cortex for conscious awareness, allowing learning and behavioural modification.', },
+];
 
 <PracticeProblem questions={practiceQuestions} />

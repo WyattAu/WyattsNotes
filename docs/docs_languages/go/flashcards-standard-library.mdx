@@ -20,73 +20,27 @@ encoding/json, and os.
 
 ---
 
-export const flashcardData = [ { id: 'go-fmt-1', front: 'What are the most common Printf format verbs in
-Go?', back: '%s — string, %d — integer (base 10), %f — floating point, %v — default format (any
-value), %T — type of value, %p — pointer address, %b — binary, %x — hexadecimal, %q — quoted string.
-Use %% to print a literal percent sign.', tags: ['fmt', 'formatting'], difficulty: 'easy', }, { id:
+export const flashcardData = [ { id: 'go-fmt-1', front: 'What are the most common Printf format verbs in Go?', back: '%s — string, %d — integer (base 10), %f — floating point, %v — default format (any value), %T — type of value, %p — pointer address, %b — binary, %x — hexadecimal, %q — quoted string. Use %% to print a literal percent sign.', tags: ['fmt', 'formatting'], difficulty: 'easy', }, { id:
 'go-fmt-2', front: 'What does fmt.Sprintf do and how does it differ from fmt.Printf?', back:
-'fmt.Sprintf formats and returns the resulting string without printing it to stdout. fmt.Printf
-formats and writes directly to standard output. Sprintf is useful when you need the formatted string
-as a variable for further processing.', tags: ['fmt', 'formatting'], difficulty: 'easy', }, { id:
-'go-fmt-3', front: 'How does fmt.Errorf differ from errors.New?', back: 'fmt.Errorf formats a string
-(like Sprintf) and returns it as an error. It supports format verbs, e.g. fmt.Errorf("failed to open
-%s: %w", file, err). The %w verb wraps an existing error, enabling errors.Is() and errors.As() on
-the returned error. errors.New only takes a plain string.', tags: ['fmt', 'errors'], difficulty:
-'medium', }, { id: 'go-strings-1', front: 'What does strings.Contains return and what are its
-parameters?', back: 'strings.Contains(s, substr) returns true if substr is found within s, false
-otherwise. Both arguments are strings. It is case-sensitive. Example: strings.Contains("Hello
+'fmt.Sprintf formats and returns the resulting string without printing it to stdout. fmt.Printf formats and writes directly to standard output. Sprintf is useful when you need the formatted string as a variable for further processing.', tags: ['fmt', 'formatting'], difficulty: 'easy', }, { id:
+'go-fmt-3', front: 'How does fmt.Errorf differ from errors.New?', back: 'fmt.Errorf formats a string (like Sprintf) and returns it as an error. It supports format verbs, e.g. fmt.Errorf("failed to open
+%s: %w", file, err). The %w verb wraps an existing error, enabling errors.Is() and errors.As() on the returned error. errors.New only takes a plain string.', tags: ['fmt', 'errors'], difficulty:
+'medium', }, { id: 'go-strings-1', front: 'What does strings.Contains return and what are its parameters?', back: 'strings.Contains(s, substr) returns true if substr is found within s, false otherwise. Both arguments are strings. It is case-sensitive. Example: strings.Contains("Hello
 World", "World") → true.', tags: ['strings'], difficulty: 'easy', }, { id: 'go-strings-2', front:
 'Explain the difference between strings.HasPrefix and strings.HasSuffix.', back:
-'strings.HasPrefix(s, prefix) returns true if s starts with prefix. strings.HasSuffix(s, suffix)
-returns true if s ends with suffix. Both are case-sensitive. Example: HasPrefix("Hello.go", "Hello")
-→ true. HasSuffix("main.go", ".go") → true.', tags: ['strings'], difficulty: 'easy', }, { id:
+'strings.HasPrefix(s, prefix) returns true if s starts with prefix. strings.HasSuffix(s, suffix) returns true if s ends with suffix. Both are case-sensitive. Example: HasPrefix("Hello.go", "Hello") → true. HasSuffix("main.go", ".go") → true.', tags: ['strings'], difficulty: 'easy', }, { id:
 'go-strings-3', front: 'How does strings.Replace and strings.ReplaceAll work?', back:
-'strings.Replace(s, old, new, n) replaces the first n occurrences of old with new in s. If n < 0,
-all occurrences are replaced. strings.ReplaceAll(s, old, new) replaces all occurrences (equivalent
-to Replace with n = -1). Both return a new string — strings are immutable in Go.', tags:
+'strings.Replace(s, old, new, n) replaces the first n occurrences of old with new in s. If n < 0, all occurrences are replaced. strings.ReplaceAll(s, old, new) replaces all occurrences (equivalent to Replace with n = -1). Both return a new string — strings are immutable in Go.', tags:
 ['strings'], difficulty: 'medium', }, { id: 'go-io-1', front: 'Describe the io.Reader interface.',
-back: 'type Reader interface { Read(p []byte) (n int, err error) }. Read reads up to len(p) bytes
-into p and returns the number of bytes read (n) and any error encountered. Returns io.EOF when no
-more input is available. Implemented by os.File, bytes.Buffer, strings.Reader, net.Conn, and many
-others.', tags: ['io', 'interfaces'], difficulty: 'medium', }, { id: 'go-io-2', front: 'Describe the
-io.Writer interface.', back: 'type Writer interface { Write(p []byte) (n int, err error) }. Write
-writes len(p) bytes from p and returns the number of bytes written (n) and any error. Implemented by
-os.File, os.Stdout, bytes.Buffer, net.Conn, etc. io.Copy(dst Writer, src Reader) copies from a
-Reader to a Writer efficiently.', tags: ['io', 'interfaces'], difficulty: 'medium', }, { id:
-'go-http-1', front: 'How do you make a simple HTTP GET request using net/http?', back: 'resp, err :=
-http.Get("https://example.com"). This returns an *http.Response. Always defer resp.Body.Close().
-Read the body with io.ReadAll(resp.Body). Check resp.StatusCode and err. The body is a ReadCloser
-(implements both io.Reader and io.Closer).', tags: ['net/http', 'client'], difficulty: 'easy', }, {
-id: 'go-http-2', front: 'How does http.Post differ from http.Get?', back: 'http.Post(url,
-contentType string, body io.Reader) sends a POST request with a specified Content-Type and request
-body. Example: http.Post("https://api.example.com/data", "application/json",
-bytes.NewBuffer(jsonData)). http.Get only sends a GET request with no body.', tags: ['net/http',
-'client'], difficulty: 'medium', }, { id: 'go-http-3', front: 'How do you register and start an HTTP
-server using http.HandleFunc?', back: 'http.HandleFunc("/path", handler) registers a handler for a
-pattern. The handler has signature func(w http.ResponseWriter, r *http.Request). Then call
-http.ListenAndServe(":8080", nil) to start the server on port 8080. The nil second argument uses
-DefaultServeMux.', tags: ['net/http', 'server'], difficulty: 'medium', }, { id: 'go-json-1', front:
-'How does json.Marshal work and what does it return?', back: 'json.Marshal(v any) ([]byte, error)
-converts a Go value to JSON bytes. The value must be exportable (capitalised fields). Struct tags
-control key names: `json:\"field_name\"`. Returns the JSON-encoded bytes and any error. For pretty
-output, use json.MarshalIndent(v, "", " ").', tags: ['encoding/json', 'encoding'], difficulty:
-'medium', }, { id: 'go-json-2', front: 'How does json.Unmarshal work and what type must the second
-argument be?', back: 'json.Unmarshal(data []byte, v any) error decodes JSON data into the Go value
-pointed to by v. The second argument MUST be a pointer: var result MyStruct; json.Unmarshal(data,
-&result). Returns an error if decoding fails. Unmatched JSON fields are silently ignored.', tags:
-['encoding/json', 'encoding'], difficulty: 'medium', }, { id: 'go-os-1', front: 'What is os.Args and
-how do you access command-line arguments?', back: 'os.Args is a []string holding command-line
-arguments. os.Args[0] is the program name. os.Args[1:] are the actual arguments. Example: for i, arg
-:= range os.Args[1:] { fmt.Printf("Arg %d: %s\\n", i, arg) }. For more advanced parsing, use the
-flag package.', tags: ['os'], difficulty: 'easy', }, { id: 'go-os-2', front: 'What does os.Getenv do
-and what happens if the variable is not set?', back: 'os.Getenv(key string) string returns the value
-of the environment variable named by key. If the variable is not set, it returns an empty string ""
-— it does NOT return an error. To distinguish "not set" from "set to empty", use os.LookupEnv which
-returns (value string, ok bool).', tags: ['os', 'environment'], difficulty: 'easy', }, ];
+back: 'type Reader interface { Read(p []byte) (n int, err error) }. Read reads up to len(p) bytes into p and returns the number of bytes read (n) and any error encountered. Returns io.EOF when no more input is available. Implemented by os.File, bytes.Buffer, strings.Reader, net.Conn, and many others.', tags: ['io', 'interfaces'], difficulty: 'medium', }, { id: 'go-io-2', front: 'Describe the io.Writer interface.', back: 'type Writer interface { Write(p []byte) (n int, err error) }. Write writes len(p) bytes from p and returns the number of bytes written (n) and any error. Implemented by os.File, os.Stdout, bytes.Buffer, net.Conn, etc. io.Copy(dst Writer, src Reader) copies from a Reader to a Writer efficiently.', tags: ['io', 'interfaces'], difficulty: 'medium', }, { id:
+'go-http-1', front: 'How do you make a simple HTTP GET request using net/http?', back: 'resp, err := http.Get("https://example.com"). This returns an *http.Response. Always defer resp.Body.Close(). Read the body with io.ReadAll(resp.Body). Check resp.StatusCode and err. The body is a ReadCloser (implements both io.Reader and io.Closer).', tags: ['net/http', 'client'], difficulty: 'easy', }, {
+id: 'go-http-2', front: 'How does http.Post differ from http.Get?', back: 'http.Post(url, contentType string, body io.Reader) sends a POST request with a specified Content-Type and request body. Example: http.Post("https://api.example.com/data", "application/json", bytes.NewBuffer(jsonData)). http.Get only sends a GET request with no body.', tags: ['net/http',
+'client'], difficulty: 'medium', }, { id: 'go-http-3', front: 'How do you register and start an HTTP server using http.HandleFunc?', back: 'http.HandleFunc("/path", handler) registers a handler for a pattern. The handler has signature func(w http.ResponseWriter, r *http.Request). Then call http.ListenAndServe(":8080", nil) to start the server on port 8080. The nil second argument uses DefaultServeMux.', tags: ['net/http', 'server'], difficulty: 'medium', }, { id: 'go-json-1', front:
+'How does json.Marshal work and what does it return?', back: 'json.Marshal(v any) ([]byte, error) converts a Go value to JSON bytes. The value must be exportable (capitalised fields). Struct tags control key names: `json:\"field_name\"`. Returns the JSON-encoded bytes and any error. For pretty output, use json.MarshalIndent(v, "", " ").', tags: ['encoding/json', 'encoding'], difficulty:
+'medium', }, { id: 'go-json-2', front: 'How does json.Unmarshal work and what type must the second argument be?', back: 'json.Unmarshal(data []byte, v any) error decodes JSON data into the Go value pointed to by v. The second argument MUST be a pointer: var result MyStruct; json.Unmarshal(data, &result). Returns an error if decoding fails. Unmatched JSON fields are silently ignored.', tags:
+['encoding/json', 'encoding'], difficulty: 'medium', }, { id: 'go-os-1', front: 'What is os.Args and how do you access command-line arguments?', back: 'os.Args is a []string holding command-line arguments. os.Args[0] is the program name. os.Args[1:] are the actual arguments. Example: for i, arg := range os.Args[1:] { fmt.Printf("Arg %d: %s\\n", i, arg) }. For more advanced parsing, use the flag package.', tags: ['os'], difficulty: 'easy', }, { id: 'go-os-2', front: 'What does os.Getenv do and what happens if the variable is not set?', back: 'os.Getenv(key string) string returns the value of the environment variable named by key. If the variable is not set, it returns an empty string "" — it does NOT return an error. To distinguish "not set" from "set to empty", use os.LookupEnv which returns (value string, ok bool).', tags: ['os', 'environment'], difficulty: 'easy', }, ];
 
 <FlashcardDeck
   deckId="go-standard-library"
   title="Go: Standard Library"
-  description="Key functions and interfaces from Go's most commonly used packages."
-  cards={flashcardData}
-/>
+  description="Key functions and interfaces from Go's most commonly used packages." cards={flashcardData} /> 

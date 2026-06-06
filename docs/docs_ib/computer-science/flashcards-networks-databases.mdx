@@ -157,17 +157,7 @@ export const flashcard4 = [
   {
     id: 'ib-cs-networks-databases-019',
     front: 'Explain deadlock in transaction processing and name two strategies to prevent it.',
-    back: "Deadlock occurs when two or more transactions wait indefinitely for each other's locks. Prevention strategies: locking all required resources upfront (wait-die scheme), or using timestamps to order transactions.",
-    tags: ['databases', 'transactions'],
-    difficulty: 'hard',
-  },
-  {
-    id: 'ib-cs-networks-databases-020',
-    front: 'What is 3NF and how does it differ from 2NF?',
-    back: '3NF is in 2NF and has no transitive dependencies -- no non-key column depends on another non-key column. If A -> B and B -> C, then A -> C must be handled by ensuring C depends directly on the key, not through B.',
-    tags: ['databases', 'normalization'],
-    difficulty: 'hard',
-  },
+    back: "Deadlock occurs when two or more transactions wait indefinitely for each other's locks. Prevention strategies: locking all required resources upfront (wait-die scheme), or using timestamps to order transactions.", tags: ['databases', 'transactions'], difficulty: 'hard', }, { id: 'ib-cs-networks-databases-020', front: 'What is 3NF and how does it differ from 2NF?', back: '3NF is in 2NF and has no transitive dependencies -- no non-key column depends on another non-key column. If A -> B and B -> C, then A -> C must be handled by ensuring C depends directly on the key, not through B.', tags: ['databases', 'normalization'], difficulty: 'hard', },
 ];
 
 <FlashcardDeck

@@ -573,3 +573,5 @@ export function DiagnosticTest({ subject, questions, onComplete }: DiagnosticTes
     </div>
   );
 }
+
+export default DiagnosticTest;

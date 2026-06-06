@@ -1,5 +1,5 @@
 ---
-title: M1: Algebra and Calculus
+title: 'M1: Algebra and Calculus'
 description:
   'DSE Maths Extended Part M1 notes covering inequalities, absolute values, functions, sequences and
   series, limits, differentiation, and integration with LaTeX math.'

@@ -19,95 +19,28 @@ import FlashcardDeck from '@site/src/components/interactive/FlashcardDeck';
 
 ---
 
-export const flashcardData = [ { id: 'ruby-variables-001', front: 'What is the naming convention for local
-variables in Ruby?', back: 'snake_case (e.g., user_name, total_count). Local variables start with a
-lowercase letter or underscore. Instance variables use @prefix, class variables use @@prefix,
-constants use UPPER_SNAKE_CASE.', tags: ['ruby', 'variables'], difficulty: 'easy' }, { id:
+export const flashcardData = [ { id: 'ruby-variables-001', front: 'What is the naming convention for local variables in Ruby?', back: 'snake_case (e.g., user_name, total_count). Local variables start with a lowercase letter or underscore. Instance variables use @prefix, class variables use @@prefix, constants use UPPER_SNAKE_CASE.', tags: ['ruby', 'variables'], difficulty: 'easy' }, { id:
 'ruby-types-002', front: 'What are the two boolean values in Ruby and which values are falsy?',
-back: 'true and false. Only nil and false are falsy. Everything else is truthy, including 0, empty
-strings "", empty arrays [], and empty hashes {}. This differs from languages like Python and C.',
-tags: ['ruby', 'types'], difficulty: 'easy' }, { id: 'ruby-types-003', front: 'What is the
-difference between a String and a Symbol in Ruby?', back: 'Strings are mutable sequences of
-characters -- each "hello" creates a new object. Symbols are immutable, interned identifiers --
-:hello always refers to the same object. Symbols are commonly used as hash keys because of identity
-comparison and memory efficiency.', tags: ['ruby', 'types'], difficulty: 'easy' }, { id:
+back: 'true and false. Only nil and false are falsy. Everything else is truthy, including 0, empty strings "", empty arrays [], and empty hashes {}. This differs from languages like Python and C.',
+tags: ['ruby', 'types'], difficulty: 'easy' }, { id: 'ruby-types-003', front: 'What is the difference between a String and a Symbol in Ruby?', back: 'Strings are mutable sequences of characters -- each "hello" creates a new object. Symbols are immutable, interned identifiers -- :hello always refers to the same object. Symbols are commonly used as hash keys because of identity comparison and memory efficiency.', tags: ['ruby', 'types'], difficulty: 'easy' }, { id:
 'ruby-oop-004', front: 'What does attr_accessor do and how does it differ from attr_reader?', back:
-'attr_accessor generates both a getter and setter method for an instance variable. attr_reader only
-generates the getter. attr_writer only generates the setter. For a :name attribute, attr_accessor
-creates name() and name=() methods.', tags: ['ruby', 'oop'], difficulty: 'easy' }, { id:
-'ruby-variables-005', front: 'What is the difference between class variables (@@) and class instance
-variables (@)?', back: 'Class variables (@@) are shared across the entire class hierarchy --
-subclasses modify the parent class variable. Class instance variables (@) belong to the class object
-itself and are NOT shared with subclasses. Prefer class instance variables for safer class-level
-state.', tags: ['ruby', 'variables', 'oop'], difficulty: 'easy' }, { id: 'ruby-blocks-006', front:
-'What is the difference between a block, a Proc, and a lambda?', back: 'A block is a chunk of code
-passed to a method ({} or do..end). A Proc is a stored block object -- lenient arity, return exits
-the enclosing method. A lambda is a strict Proc -- strict arity, return exits only from the lambda.
-Both are Proc objects, but lambda? returns true only for lambdas.', tags: ['ruby', 'blocks'],
-difficulty: 'medium' }, { id: 'ruby-control-007', front: 'How does the case/when statement work in
-Ruby?', back: 'case/when uses the === operator for matching. This means ranges (1..10 === 5),
-regexes (/pattern/ === "string"), classes (Integer === 42), and procs all work naturally in when
-clauses. It can also be used without an argument like a series of if/elsif.', tags: ['ruby',
-'control-flow'], difficulty: 'easy' }, { id: 'ruby-oop-008', front: 'What is the difference between
-include, extend, and prepend?', back: 'include adds module methods as instance methods to the class.
-extend adds module methods as singleton (class-level) methods to the object. prepend inserts the
-module before the class in the method lookup chain, allowing the module to call super to reach the
-class method.', tags: ['ruby', 'oop', 'modules'], difficulty: 'medium' }, { id: 'ruby-blocks-009',
-front: 'What does yield do and when should you use it?', back: 'yield calls the block passed to a
-method. It transfers control from the method to the block and back. Use block_given? to check if a
-block was provided. yield is the idiomatic way to create iterators like each, map, and select.',
-tags: ['ruby', 'blocks'], difficulty: 'easy' }, { id: 'ruby-oop-010', front: 'What is the method
-resolution order (MRO) in Ruby and how does it work with modules?', back: 'Ruby looks up methods in
-the ancestors chain: the class itself, then included modules in reverse order of inclusion, then the
-superclass, its modules, and so on up to BasicObject. You can inspect it with MyClass.ancestors.
-prepend modules appear before the class in the chain.', tags: ['ruby', 'oop'], difficulty: 'medium'
-}, { id: 'ruby-control-011', front: 'What are the differences between next, break, and redo in
-loops?', back: 'next skips to the next iteration (like continue in other languages). break exits the
-loop entirely and can return a value. redo restarts the current iteration from the beginning without
-re-evaluating the loop condition.', tags: ['ruby', 'control-flow'], difficulty: 'medium' }, { id:
+'attr_accessor generates both a getter and setter method for an instance variable. attr_reader only generates the getter. attr_writer only generates the setter. For a :name attribute, attr_accessor creates name() and name=() methods.', tags: ['ruby', 'oop'], difficulty: 'easy' }, { id:
+'ruby-variables-005', front: 'What is the difference between class variables (@@) and class instance variables (@)?', back: 'Class variables (@@) are shared across the entire class hierarchy -- subclasses modify the parent class variable. Class instance variables (@) belong to the class object itself and are NOT shared with subclasses. Prefer class instance variables for safer class-level state.', tags: ['ruby', 'variables', 'oop'], difficulty: 'easy' }, { id: 'ruby-blocks-006', front:
+'What is the difference between a block, a Proc, and a lambda?', back: 'A block is a chunk of code passed to a method ({} or do..end). A Proc is a stored block object -- lenient arity, return exits the enclosing method. A lambda is a strict Proc -- strict arity, return exits only from the lambda. Both are Proc objects, but lambda? returns true only for lambdas.', tags: ['ruby', 'blocks'],
+difficulty: 'medium' }, { id: 'ruby-control-007', front: 'How does the case/when statement work in Ruby?', back: 'case/when uses the === operator for matching. This means ranges (1..10 === 5), regexes (/pattern/ === "string"), classes (Integer === 42), and procs all work naturally in when clauses. It can also be used without an argument like a series of if/elsif.', tags: ['ruby',
+'control-flow'], difficulty: 'easy' }, { id: 'ruby-oop-008', front: 'What is the difference between include, extend, and prepend?', back: 'include adds module methods as instance methods to the class. extend adds module methods as singleton (class-level) methods to the object. prepend inserts the module before the class in the method lookup chain, allowing the module to call super to reach the class method.', tags: ['ruby', 'oop', 'modules'], difficulty: 'medium' }, { id: 'ruby-blocks-009',
+front: 'What does yield do and when should you use it?', back: 'yield calls the block passed to a method. It transfers control from the method to the block and back. Use block_given? to check if a block was provided. yield is the idiomatic way to create iterators like each, map, and select.',
+tags: ['ruby', 'blocks'], difficulty: 'easy' }, { id: 'ruby-oop-010', front: 'What is the method resolution order (MRO) in Ruby and how does it work with modules?', back: 'Ruby looks up methods in the ancestors chain: the class itself, then included modules in reverse order of inclusion, then the superclass, its modules, and so on up to BasicObject. You can inspect it with MyClass.ancestors. prepend modules appear before the class in the chain.', tags: ['ruby', 'oop'], difficulty: 'medium'
+}, { id: 'ruby-control-011', front: 'What are the differences between next, break, and redo in loops?', back: 'next skips to the next iteration (like continue in other languages). break exits the loop entirely and can return a value. redo restarts the current iteration from the beginning without re-evaluating the loop condition.', tags: ['ruby', 'control-flow'], difficulty: 'medium' }, { id:
 'ruby-metaprog-012', front: 'What is method_missing and what are the best practices when using it?',
-back: 'method_missing is called when an unknown method is invoked. Best practices: (1) always define
-respond_to_missing? alongside it, (2) always call super at the end for methods you do not handle,
-(3) prefer define_method over method_missing for performance-critical code, (4) be aware that
-method_missing is slower and harder to debug.', tags: ['ruby', 'metaprogramming'], difficulty:
-'medium' }, { id: 'ruby-control-013', front: 'What is the structure of begin/rescue/else/ensure in
-Ruby?', back: 'begin starts the protected block. rescue catches exceptions. else executes only if no
-exception was raised. ensure always executes (like finally in Java), typically for cleanup. Multiple
-rescue clauses catch different exception types. The generic rescue (without a specific type) catches
-StandardError.', tags: ['ruby', 'control-flow', 'exceptions'], difficulty: 'medium' }, { id:
-'ruby-concurrency-014', front: 'What is the GIL (Global Interpreter Lock) in Ruby and how does
-Ractor solve it?', back: 'The GIL in MRI Ruby ensures only one thread executes Ruby code at a time.
-I/O operations release the GIL, so threads help with I/O-bound tasks. Ractor (Ruby 3.0+) provides
-true parallelism by creating isolated execution units that communicate via message passing,
-bypassing the GIL entirely.', tags: ['ruby', 'concurrency'], difficulty: 'medium' }, { id:
-'ruby-metaprog-015', front: 'What is the difference between send and public_send?', back: 'send
-calls any method on an object, including private and protected methods. public_send only calls
-public methods -- it raises NoMethodError for private/protected methods. Prefer public_send in
-application code for safety. Use **send** when send might be overridden.', tags: ['ruby',
-'metaprogramming'], difficulty: 'medium' }, { id: 'ruby-types-016', front: 'What is duck typing in
-Ruby?', back: 'Objects are classified by what methods they respond to, not by their class hierarchy.
-"If it walks like a duck and quacks like a duck, it must be a duck." Use respond_to? to check
-capabilities. This enables polymorphism without inheritance -- any object with the right methods
-works.', tags: ['ruby', 'types', 'oop'], difficulty: 'medium' }, { id: 'ruby-concurrency-017',
-front: 'What is the difference between a Thread and a Fiber in Ruby?', back: 'Threads are preemptive
-(the scheduler switches between them), support true parallelism for I/O tasks, and have separate
-stacks. Fibers are cooperative (they explicitly yield control), run on a single thread, and are
-lightweight. Fibers use yield/resume for control transfer; threads use the OS scheduler.', tags:
-['ruby', 'concurrency'], difficulty: 'medium' }, { id: 'ruby-metaprog-018', front: 'What are Ruby
-refinements and why were they introduced?', back: 'Refinements provide scoped monkey patching.
-Modifications defined with refine in a module are only active within a specific scope (after
-`using`). This prevents global side effects of monkey patching. They were introduced because
-unscoped monkey patches can cause unpredictable behaviour in large codebases.', tags: ['ruby',
-'metaprogramming'], difficulty: 'hard' }, { id: 'ruby-concurrency-019', front: 'How does Ractor
-enforce isolation and what objects can be shared between Ractors?', back: 'Ractors enforce isolation
-by restricting shared memory. Shareable objects include frozen objects, integers, floats, true,
-false, nil, and symbols. Mutable objects cannot be shared directly -- they must be passed via
-message passing using Ractor.yield and Ractor.receive. Ractor.make_shareable creates deeply frozen
-copies.', tags: ['ruby', 'concurrency'], difficulty: 'hard' }, { id: 'ruby-oop-020', front: 'How
-does the Comparable module work and what must you implement?', back: 'Include Comparable and
-implement the <=> (spaceship) operator. Comparable then provides <, <=, ==, >=, >, and between?
-methods automatically. The <=> method should return -1, 0, or 1 depending on whether the receiver is
-less than, equal to, or greater than the argument.', tags: ['ruby', 'oop', 'modules'], difficulty:
+back: 'method_missing is called when an unknown method is invoked. Best practices: (1) always define respond_to_missing? alongside it, (2) always call super at the end for methods you do not handle, (3) prefer define_method over method_missing for performance-critical code, (4) be aware that method_missing is slower and harder to debug.', tags: ['ruby', 'metaprogramming'], difficulty:
+'medium' }, { id: 'ruby-control-013', front: 'What is the structure of begin/rescue/else/ensure in Ruby?', back: 'begin starts the protected block. rescue catches exceptions. else executes only if no exception was raised. ensure always executes (like finally in Java), typically for cleanup. Multiple rescue clauses catch different exception types. The generic rescue (without a specific type) catches StandardError.', tags: ['ruby', 'control-flow', 'exceptions'], difficulty: 'medium' }, { id:
+'ruby-concurrency-014', front: 'What is the GIL (Global Interpreter Lock) in Ruby and how does Ractor solve it?', back: 'The GIL in MRI Ruby ensures only one thread executes Ruby code at a time. I/O operations release the GIL, so threads help with I/O-bound tasks. Ractor (Ruby 3.0+) provides true parallelism by creating isolated execution units that communicate via message passing, bypassing the GIL entirely.', tags: ['ruby', 'concurrency'], difficulty: 'medium' }, { id:
+'ruby-metaprog-015', front: 'What is the difference between send and public_send?', back: 'send calls any method on an object, including private and protected methods. public_send only calls public methods -- it raises NoMethodError for private/protected methods. Prefer public_send in application code for safety. Use **send** when send might be overridden.', tags: ['ruby',
+'metaprogramming'], difficulty: 'medium' }, { id: 'ruby-types-016', front: 'What is duck typing in Ruby?', back: 'Objects are classified by what methods they respond to, not by their class hierarchy. "If it walks like a duck and quacks like a duck, it must be a duck." Use respond_to? to check capabilities. This enables polymorphism without inheritance -- any object with the right methods works.', tags: ['ruby', 'types', 'oop'], difficulty: 'medium' }, { id: 'ruby-concurrency-017',
+front: 'What is the difference between a Thread and a Fiber in Ruby?', back: 'Threads are preemptive (the scheduler switches between them), support true parallelism for I/O tasks, and have separate stacks. Fibers are cooperative (they explicitly yield control), run on a single thread, and are lightweight. Fibers use yield/resume for control transfer; threads use the OS scheduler.', tags:
+['ruby', 'concurrency'], difficulty: 'medium' }, { id: 'ruby-metaprog-018', front: 'What are Ruby refinements and why were they introduced?', back: 'Refinements provide scoped monkey patching. Modifications defined with refine in a module are only active within a specific scope (after `using`). This prevents global side effects of monkey patching. They were introduced because unscoped monkey patches can cause unpredictable behaviour in large codebases.', tags: ['ruby',
+'metaprogramming'], difficulty: 'hard' }, { id: 'ruby-concurrency-019', front: 'How does Ractor enforce isolation and what objects can be shared between Ractors?', back: 'Ractors enforce isolation by restricting shared memory. Shareable objects include frozen objects, integers, floats, true, false, nil, and symbols. Mutable objects cannot be shared directly -- they must be passed via message passing using Ractor.yield and Ractor.receive. Ractor.make_shareable creates deeply frozen copies.', tags: ['ruby', 'concurrency'], difficulty: 'hard' }, { id: 'ruby-oop-020', front: 'How does the Comparable module work and what must you implement?', back: 'Include Comparable and implement the <=> (spaceship) operator. Comparable then provides <, <=, ==, >=, >, and between? methods automatically. The <=> method should return -1, 0, or 1 depending on whether the receiver is less than, equal to, or greater than the argument.', tags: ['ruby', 'oop', 'modules'], difficulty:
 'hard' }, ];
 
 <FlashcardDeck

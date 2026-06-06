@@ -29,24 +29,7 @@ export const flashcard1 = [
   {
     id: 'ib-maths-statistics-003',
     front: 'State the variance formula for a population and a sample.',
-    back: "Population variance: σ² = Σ(xᵢ − μ)²/N. Sample variance: s² = Σ(xᵢ − x̄)²/(n−1) (using Bessel's correction). For frequency data: σ² = Σfᵢ(xᵢ − x̄)²/Σfᵢ. Variance is always non-negative; σ = 0 only when all values are identical.",
-    tags: ['descriptive statistics', 'spread'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'ib-maths-statistics-004',
-    front: 'What is standard deviation and how does it relate to variance?',
-    back: 'Standard deviation σ = √(variance). It measures the typical distance of data points from the mean, in the same units as the data. For X ~ N(μ, σ²), approximately 68% of data lies within μ ± σ, 95% within μ ± 2σ, and 99.7% within μ ± 3σ.',
-    tags: ['descriptive statistics', 'spread'],
-    difficulty: 'easy',
-  },
-  {
-    id: 'ib-maths-statistics-005',
-    front: 'State the addition and multiplication rules of probability.',
-    back: 'Addition rule: P(A ∪ B) = P(A) + P(B) − P(A ∩ B). For mutually exclusive events: P(A ∪ B) = P(A) + P(B). Multiplication rule: P(A ∩ B) = P(A|B) · P(B). For independent events: P(A ∩ B) = P(A) · P(B).',
-    tags: ['probability', 'rules'],
-    difficulty: 'medium',
-  },
+    back: "Population variance: σ² = Σ(xᵢ − μ)²/N. Sample variance: s² = Σ(xᵢ − x̄)²/(n−1) (using Bessel's correction). For frequency data: σ² = Σfᵢ(xᵢ − x̄)²/Σfᵢ. Variance is always non-negative; σ = 0 only when all values are identical.", tags: ['descriptive statistics', 'spread'], difficulty: 'medium', }, { id: 'ib-maths-statistics-004', front: 'What is standard deviation and how does it relate to variance?', back: 'Standard deviation σ = √(variance). It measures the typical distance of data points from the mean, in the same units as the data. For X ~ N(μ, σ²), approximately 68% of data lies within μ ± σ, 95% within μ ± 2σ, and 99.7% within μ ± 3σ.', tags: ['descriptive statistics', 'spread'], difficulty: 'easy', }, { id: 'ib-maths-statistics-005', front: 'State the addition and multiplication rules of probability.', back: 'Addition rule: P(A ∪ B) = P(A) + P(B) − P(A ∩ B). For mutually exclusive events: P(A ∪ B) = P(A) + P(B). Multiplication rule: P(A ∩ B) = P(A|B) · P(B). For independent events: P(A ∩ B) = P(A) · P(B).', tags: ['probability', 'rules'], difficulty: 'medium', },
 ];
 
 export const flashcard2 = [
@@ -97,15 +80,7 @@ export const flashcard3 = [
   },
   {
     id: 'ib-maths-statistics-012',
-    front: "How do you interpret Pearson's product-moment correlation coefficient (PMCC), r?",
-    back: 'r ranges from −1 to +1. r = +1: perfect positive linear correlation. r = −1: perfect negative linear correlation. r = 0: no linear correlation. |r| > 0.8: strong correlation. 0.5 < |r| < 0.8: moderate. |r| < 0.5: weak. Always check the scatter plot — r only measures linear association.',
-    tags: ['correlation', 'PMCC'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'ib-maths-statistics-013',
-    front: 'State the equation of the least squares regression line of y on x.',
-    back: "y = a + bx, where b = S_xy/S_xx = Σ(xᵢ−x̄)(yᵢ−ȳ) / Σ(xᵢ−x̄)² and a = ȳ − bx̄. The line minimises Σ(yᵢ − (a+bxᵢ))². The regression line of y on x passes through (x̄, ȳ). Note: the regression line of x on y is different: x = a' + b'y, with b' = S_xy/S_yy.",
+    front: "How do you interpret Pearson's product-moment correlation coefficient (PMCC), r?", back: 'r ranges from −1 to +1. r = +1: perfect positive linear correlation. r = −1: perfect negative linear correlation. r = 0: no linear correlation. |r| > 0.8: strong correlation. 0.5 < |r| < 0.8: moderate. |r| < 0.5: weak. Always check the scatter plot — r only measures linear association.', tags: ['correlation', 'PMCC'], difficulty: 'medium', }, { id: 'ib-maths-statistics-013', front: 'State the equation of the least squares regression line of y on x.', back: "y = a + bx, where b = S_xy/S_xx = Σ(xᵢ−x̄)(yᵢ−ȳ) / Σ(xᵢ−x̄)² and a = ȳ − bx̄. The line minimises Σ(yᵢ − (a+bxᵢ))². The regression line of y on x passes through (x̄, ȳ). Note: the regression line of x on y is different: x = a' + b'y, with b' = S_xy/S_yy.",
     tags: ['correlation', 'regression'],
     difficulty: 'hard',
   },
@@ -156,11 +131,7 @@ export const flashcard4 = [
   },
   {
     id: 'ib-maths-statistics-020',
-    front: "What is Spearman's rank correlation coefficient and when is it used?",
-    back: 'rₛ measures the strength and direction of monotonic (not necessarily linear) association between two variables ranked in order. Formula: rₛ = 1 − 6Σdᵢ²/(n(n²−1)) where dᵢ = rank difference (for data with no tied ranks). Values range from −1 to +1. Use when data is ordinal or when the relationship is non-linear but monotonic.',
-    tags: ['correlation', 'Spearman'],
-    difficulty: 'hard',
-  },
+    front: "What is Spearman's rank correlation coefficient and when is it used?", back: 'rₛ measures the strength and direction of monotonic (not necessarily linear) association between two variables ranked in order. Formula: rₛ = 1 − 6Σdᵢ²/(n(n²−1)) where dᵢ = rank difference (for data with no tied ranks). Values range from −1 to +1. Use when data is ordinal or when the relationship is non-linear but monotonic.', tags: ['correlation', 'Spearman'], difficulty: 'hard', },
 ];
 
 <FlashcardDeck

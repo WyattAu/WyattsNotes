@@ -18,110 +18,34 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ---
 
-### Simple Harmonic Motion
+### Practice Questions
 
-export const practiceQuestions = [ { question: "A particle oscillates with SHM of amplitude 0.05 m and
-angular frequency 10 rad/s. What is its maximum speed?", options: ["A) 0.25 m/s", "B) 0.5 m/s", "C)
-5 m/s", "D) 0.05 m/s"], correct: 1, explanation: "Maximum speed v_max = ωA = 10 × 0.05 = 0.5 m/s.
-This occurs as the particle passes through the equilibrium position where displacement x = 0." }, {
-question: "A mass of 0.4 kg is attached to a spring with spring constant k = 100 N/m. Find the
-period of oscillation.", options: ["A) π/10 s", "B) 2π/5 s", "C) π/5 s", "D) 4π/5 s"], correct: 2,
-explanation: "ω² = k/m = 100/0.4 = 250. ω = 5√10 ≈ 15.8 rad/s. T = 2π/ω = 2π/(5√10). Wait: ω =
-√(k/m) = √250 = 5√10. T = 2π/(5√10). Simplifying: T = π/(5√10/2). Actually T = 2π√(m/k) =
-2π√(0.4/100) = 2π√(0.004) = 2π × 0.0632 = π/5 s." }, { question: "In a damped SHM system, the
-amplitude decays to half its initial value in 5 seconds. If the damping constant b = 0.2 kg/s and
-mass m = 0.5 kg, what is the initial amplitude if the amplitude after 10 seconds is 0.03 m?",
-options: ["A) 0.06 m", "B) 0.12 m", "C) 0.09 m", "D) 0.15 m"], correct: 1, explanation: "A(t) = A₀
-e^(-bt/2m) = A₀ e^(-0.2t/1) = A₀ e^(-0.2t). At t=10: 0.03 = A₀ e^(-2) → A₀ = 0.03 e² ≈ 0.03 × 7.389
-≈ 0.22 m. Check: with b/(2m) = 0.2, A(10) = A₀ e^(-2). A₀ = 0.03/e^(-2) = 0.03 × e² ≈ 0.222.
-However, the problem states amplitude halves in 5s, so A₀/2 = A₀ e^(-0.2×5) = A₀ e^(-1), giving
-e^(-1) = 0.5, which gives b/(2m) = ln2/5. The answer is B) 0.12 m when using consistent parameters."
-}, { question: "A forced oscillator has natural frequency ω₀ = 20 rad/s and damping constant b = 4
-kg/s. A driving force F₀ cos(ωt) is applied. At what driving frequency ω does the amplitude of
-steady-state oscillation become maximum?", options: ["A) 20 rad/s", "B) √(396) rad/s", "C) √(400 -
-16) rad/s", "D) 22 rad/s"], correct: 2, explanation: "The amplitude peak occurs at ω = √(ω₀² -
-(b/2m)²). With ω₀ = 20 and b/(2m) = 4/(2m), we need m. For light damping, the resonance peak is very
-close to ω₀. The exact resonance frequency is ω_r = √(ω₀² - 2(b/2m)²). For the standard result:
-ω_resonance = √(ω₀² - (b/2m)²). This is slightly less than ω₀ for light damping." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Circular Motion
-
-export const practiceQuestions = [ { question: "A car of mass 1200 kg travels around a roundabout of radius
-25 m at 12 m/s. What is the centripetal force required?", options: ["A) 576 N", "B) 6912 N", "C) 48
-N", "D) 3456 N"], correct: 1, explanation: "F = mv²/r = 1200 × 12²/25 = 1200 × 144/25 = 1200 × 5.76
-= 6912 N." }, { question: "A conical pendulum has a string of length 0.5 m making an angle of 30°
-with the vertical. Find the angular velocity of the bob.", options: ["A) √(g tan30° / (0.5
-cos30°))", "B) √(g / (0.5 cos30°))", "C) √(g sin30° / 0.5)", "D) √(10g / √3)"], correct: 1,
-explanation: "For a conical pendulum at angle θ: the radius r = L sinθ and T cosθ = mg. T sinθ =
-mω²r = mω²L sinθ. So T = mω²L. Combining: mω²L cosθ = mg → ω² = g/(L cosθ). With L = 0.5 and θ =
-30°: ω = √(g/(0.5 × cos30°)) = √(g/(0.5√3/2)) = √(4g/√3)." }, { question: "A bead of mass m slides
-on a frictionless vertical circular wire of radius r. At the top of the circle, the normal reaction
-is zero. What is the speed of the bead at this point?", options: ["A) √(4gr)", "B) √(gr)", "C)
-√(2gr)", "D) √(5gr)"], correct: 1, explanation: "At the top of the circle: N + mg = mv²/r. When N =
-0: mg = mv²/r → v² = gr → v = √(gr). This is the minimum speed required for the bead to maintain
-contact with the wire at the top." }, { question: "A satellite orbits Earth at altitude 300 km
-(Earth radius 6370 km, g = 9.81 m/s² at surface). Find its orbital speed.", options: ["A) 7726 m/s",
-"B) 6370 m/s", "C) 7900 m/s", "D) 8200 m/s"], correct: 0, explanation: "r = 6370 + 300 = 6670 km =
-6.67 × 10⁶ m. Orbital speed v = √(GM/r) = √(gr_E²/r) = √(9.81 × (6.37×10⁶)²/(6.67×10⁶)) = √(9.81 ×
-6.37²×10¹²/6.67×10⁶) = √(9.81 × 6.083×10⁷) = √(5.967×10⁸) ≈ 7726 m/s." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Gravitational Fields
-
-export const practiceQuestions = [ { question: "The gravitational field strength on the surface of a planet
-of mass M and radius R is g. What is the gravitational field strength at a height R above the
-surface?", options: ["A) g/4", "B) g/2", "C) 2g", "D) g/3"], correct: 1, explanation: "g at surface
-= GM/R². At height R above surface, distance from centre = 2R. g' = GM/(2R)² = GM/(4R²) = g/4." }, {
-question: "Two identical masses m are placed at points A and B, separated by distance 2d. At the
+export const practiceQuestions = [
+ { question: "A particle oscillates with SHM of amplitude 0.05 m and angular frequency 10 rad/s. What is its maximum speed?", options: ["A) 0.25 m/s", "B) 0.5 m/s", "C) 5 m/s", "D) 0.05 m/s"], correct: 1, explanation: "Maximum speed v_max = ωA = 10 × 0.05 = 0.5 m/s. This occurs as the particle passes through the equilibrium position where displacement x = 0." }, {
+question: "A mass of 0.4 kg is attached to a spring with spring constant k = 100 N/m. Find the period of oscillation.", options: ["A) π/10 s", "B) 2π/5 s", "C) π/5 s", "D) 4π/5 s"], correct: 2,
+explanation: "ω² = k/m = 100/0.4 = 250. ω = 5√10 ≈ 15.8 rad/s. T = 2π/ω = 2π/(5√10). Wait: ω = √(k/m) = √250 = 5√10. T = 2π/(5√10). Simplifying: T = π/(5√10/2). Actually T = 2π√(m/k) = 2π√(0.4/100) = 2π√(0.004) = 2π × 0.0632 = π/5 s." }, { question: "In a damped SHM system, the amplitude decays to half its initial value in 5 seconds. If the damping constant b = 0.2 kg/s and mass m = 0.5 kg, what is the initial amplitude if the amplitude after 10 seconds is 0.03 m?",
+options: ["A) 0.06 m", "B) 0.12 m", "C) 0.09 m", "D) 0.15 m"], correct: 1, explanation: "A(t) = A₀ e^(-bt/2m) = A₀ e^(-0.2t/1) = A₀ e^(-0.2t). At t=10: 0.03 = A₀ e^(-2) → A₀ = 0.03 e² ≈ 0.03 × 7.389 ≈ 0.22 m. Check: with b/(2m) = 0.2, A(10) = A₀ e^(-2). A₀ = 0.03/e^(-2) = 0.03 × e² ≈ 0.222. However, the problem states amplitude halves in 5s, so A₀/2 = A₀ e^(-0.2×5) = A₀ e^(-1), giving e^(-1) = 0.5, which gives b/(2m) = ln2/5. The answer is B) 0.12 m when using consistent parameters."
+}, { question: "A forced oscillator has natural frequency ω₀ = 20 rad/s and damping constant b = 4 kg/s. A driving force F₀ cos(ωt) is applied. At what driving frequency ω does the amplitude of steady-state oscillation become maximum?", options: ["A) 20 rad/s", "B) √(396) rad/s", "C) √(400 - 16) rad/s", "D) 22 rad/s"], correct: 2, explanation: "The amplitude peak occurs at ω = √(ω₀² - (b/2m)²). With ω₀ = 20 and b/(2m) = 4/(2m), we need m. For light damping, the resonance peak is very close to ω₀. The exact resonance frequency is ω_r = √(ω₀² - 2(b/2m)²). For the standard result: ω_resonance = √(ω₀² - (b/2m)²). This is slightly less than ω₀ for light damping." },
+ { question: "A car of mass 1200 kg travels around a roundabout of radius 25 m at 12 m/s. What is the centripetal force required?", options: ["A) 576 N", "B) 6912 N", "C) 48 N", "D) 3456 N"], correct: 1, explanation: "F = mv²/r = 1200 × 12²/25 = 1200 × 144/25 = 1200 × 5.76 = 6912 N." }, { question: "A conical pendulum has a string of length 0.5 m making an angle of 30° with the vertical. Find the angular velocity of the bob.", options: ["A) √(g tan30° / (0.5 cos30°))", "B) √(g / (0.5 cos30°))", "C) √(g sin30° / 0.5)", "D) √(10g / √3)"], correct: 1,
+explanation: "For a conical pendulum at angle θ: the radius r = L sinθ and T cosθ = mg. T sinθ = mω²r = mω²L sinθ. So T = mω²L. Combining: mω²L cosθ = mg → ω² = g/(L cosθ). With L = 0.5 and θ = 30°: ω = √(g/(0.5 × cos30°)) = √(g/(0.5√3/2)) = √(4g/√3)." }, { question: "A bead of mass m slides on a frictionless vertical circular wire of radius r. At the top of the circle, the normal reaction is zero. What is the speed of the bead at this point?", options: ["A) √(4gr)", "B) √(gr)", "C) √(2gr)", "D) √(5gr)"], correct: 1, explanation: "At the top of the circle: N + mg = mv²/r. When N = 0: mg = mv²/r → v² = gr → v = √(gr). This is the minimum speed required for the bead to maintain contact with the wire at the top." }, { question: "A satellite orbits Earth at altitude 300 km (Earth radius 6370 km, g = 9.81 m/s² at surface). Find its orbital speed.", options: ["A) 7726 m/s",
+"B) 6370 m/s", "C) 7900 m/s", "D) 8200 m/s"], correct: 0, explanation: "r = 6370 + 300 = 6670 km = 6.67 × 10⁶ m. Orbital speed v = √(GM/r) = √(gr_E²/r) = √(9.81 × (6.37×10⁶)²/(6.67×10⁶)) = √(9.81 × 6.37²×10¹²/6.67×10⁶) = √(9.81 × 6.083×10⁷) = √(5.967×10⁸) ≈ 7726 m/s." },
+ { question: "The gravitational field strength on the surface of a planet of mass M and radius R is g. What is the gravitational field strength at a height R above the surface?", options: ["A) g/4", "B) g/2", "C) 2g", "D) g/3"], correct: 1, explanation: "g at surface = GM/R². At height R above surface, distance from centre = 2R. g' = GM/(2R)² = GM/(4R²) = g/4." }, { question: "Two identical masses m are placed at points A and B, separated by distance 2d. At the
 midpoint P, what is the magnitude of the gravitational field strength?", options: ["A) 0", "B)
 2GMm/d²", "C) GMm/d²", "D) 4GMm/d²"], correct: 0, explanation: "At the midpoint, each mass produces
 a field of magnitude Gm/d² directed towards itself. Since the masses are on opposite sides, the
 fields point in opposite directions and cancel exactly. Net field = 0. This is analogous to the
 electric field at the midpoint between two equal charges." }, { question: "A planet has twice the
-mass and twice the radius of Earth. What is the escape velocity from its surface compared to Earth's
-escape velocity v_E?", options: ["A) v_E", "B) 2v_E", "C) v_E/√2", "D) √2 v_E"], correct: 0,
-explanation: "v_esc = √(2GM/R). New planet: v_new = √(2G(2M)/(2R)) = √(2GM/R) = v_E. Doubling both
-mass and radius gives the same escape velocity." }, { question: "Two stars of masses M and 4M orbit
-their common centre of mass in circular orbits. If their separation is d, find the orbital period of
-each star.", options: ["A) 2π√(d³/(5GM))", "B) 2π√(d³/(GM))", "C) π√(d³/(GM))", "D)
-2π√(d³/(20GM))"], correct: 0, explanation: "Centre of mass divides the separation: r₁ + r₂ = d, Mr₁
-= 4Mr₂, so r₁ = 4d/5, r₂ = d/5. For the system: T² = 4π²d³/(G(M+4M)) = 4π²d³/(5GM) → T =
-2π√(d³/(5GM)). Both stars share the same period." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Dimensional Analysis
-
-export const practiceQuestions = [ { question: "What are the dimensions of the gravitational constant G in
-terms of base quantities M, L, T?", options: ["A) M⁻¹L³T⁻²", "B) MLT⁻²", "C) M⁻¹L⁻³T²", "D)
-ML⁻¹T⁻²"], correct: 0, explanation: "From F = GMm/r²: G = Fr²/(Mm). [F] = MLT⁻², [r²] = L², [Mm] =
-M². [G] = MLT⁻² × L²/M² = M⁻¹L³T⁻²." }, { question: "A student proposes that the period T of a
-pendulum is given by T = 2π√(L/g). Check dimensional consistency.", options: ["A) Dimensionally
-consistent: LHS [T], RHS [T]", "B) Inconsistent: RHS has dimensions [L]", "C) Inconsistent: RHS has
-dimensions [LT⁻¹]", "D) Consistent only if g has dimensions [LT⁻²]"], correct: 0, explanation:
-"[LHS] = [T]. [RHS] = [L/(LT⁻²)]^(1/2) = [T²]^(1/2) = [T]. Both sides have dimension of time, so the
-formula is dimensionally consistent. Note: dimensional analysis cannot determine the dimensionless
-constant 2π." }, { question: "The drag force F on a sphere moving through a fluid depends on the
-radius r, velocity v, fluid density ρ and viscosity η. If F = kr^a v^b ρ^c η^d, and [η] = ML⁻¹T⁻¹,
-find the relationship between a, b, c, d.", options: ["A) a=2, b=2, c=1, d=0 (Reynolds number
-form)", "B) a=1, b=1, c=1, d=1", "C) a=2, b=1, c=1, d=1", "D) Cannot be determined without
-experiment"], correct: 0, explanation: "This relates to the Reynolds number Re = ρvr/η. For high Re
-(inertia-dominated): F ∝ ρv²r² (a=2, b=2, c=1, d=0). For low Re (viscosity-dominated, Stokes' law):
+mass and twice the radius of Earth. What is the escape velocity from its surface compared to Earth's escape velocity v_E?", options: ["A) v_E", "B) 2v_E", "C) v_E/√2", "D) √2 v_E"], correct: 0,
+explanation: "v_esc = √(2GM/R). New planet: v_new = √(2G(2M)/(2R)) = √(2GM/R) = v_E. Doubling both mass and radius gives the same escape velocity." }, { question: "Two stars of masses M and 4M orbit their common centre of mass in circular orbits. If their separation is d, find the orbital period of each star.", options: ["A) 2π√(d³/(5GM))", "B) 2π√(d³/(GM))", "C) π√(d³/(GM))", "D) 2π√(d³/(20GM))"], correct: 0, explanation: "Centre of mass divides the separation: r₁ + r₂ = d, Mr₁ = 4Mr₂, so r₁ = 4d/5, r₂ = d/5. For the system: T² = 4π²d³/(G(M+4M)) = 4π²d³/(5GM) → T = 2π√(d³/(5GM)). Both stars share the same period." },
+ { question: "What are the dimensions of the gravitational constant G in terms of base quantities M, L, T?", options: ["A) M⁻¹L³T⁻²", "B) MLT⁻²", "C) M⁻¹L⁻³T²", "D) ML⁻¹T⁻²"], correct: 0, explanation: "From F = GMm/r²: G = Fr²/(Mm). [F] = MLT⁻², [r²] = L², [Mm] = M². [G] = MLT⁻² × L²/M² = M⁻¹L³T⁻²." }, { question: "A student proposes that the period T of a pendulum is given by T = 2π√(L/g). Check dimensional consistency.", options: ["A) Dimensionally consistent: LHS [T], RHS [T]", "B) Inconsistent: RHS has dimensions [L]", "C) Inconsistent: RHS has dimensions [LT⁻¹]", "D) Consistent only if g has dimensions [LT⁻²]"], correct: 0, explanation:
+"[LHS] = [T]. [RHS] = [L/(LT⁻²)]^(1/2) = [T²]^(1/2) = [T]. Both sides have dimension of time, so the formula is dimensionally consistent. Note: dimensional analysis cannot determine the dimensionless constant 2π." }, { question: "The drag force F on a sphere moving through a fluid depends on the radius r, velocity v, fluid density ρ and viscosity η. If F = kr^a v^b ρ^c η^d, and [η] = ML⁻¹T⁻¹, find the relationship between a, b, c, d.", options: ["A) a=2, b=2, c=1, d=0 (Reynolds number form)", "B) a=1, b=1, c=1, d=1", "C) a=2, b=1, c=1, d=1", "D) Cannot be determined without experiment"], correct: 0, explanation: "This relates to the Reynolds number Re = ρvr/η. For high Re (inertia-dominated): F ∝ ρv²r² (a=2, b=2, c=1, d=0). For low Re (viscosity-dominated, Stokes' law):
 F = 6πηvr (a=1, b=1, c=0, d=1). The Buckingham Pi theorem gives two dimensionless groups for 5
 variables with 3 base dimensions." }, { question: "Using the Buckingham Pi theorem with n = 5
 variables (F, r, v, ρ, η) and k = 3 base dimensions, how many dimensionless Pi groups are
 expected?", options: ["A) 1", "B) 2", "C) 3", "D) 5"], correct: 1, explanation: "The Buckingham Pi
 theorem states that n - k = number of independent dimensionless groups. Here n = 5 (F, r, v, ρ, η)
 and k = 3 (M, L, T), giving 5 - 3 = 2 dimensionless Pi groups. For drag on a sphere, these are the
-drag coefficient C_D = F/(ρv²r²) and the Reynolds number Re = ρvr/η." } ];
+drag coefficient C_D = F/(ρv²r²) and the Reynolds number Re = ρvr/η." },
+];
 
 <PracticeProblem questions={practiceQuestions} />

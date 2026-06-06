@@ -29,33 +29,13 @@ export const flashcards1 = [
   {
     id: 'complex-polar',
     front:
-      "State Euler's formula and convert between Cartesian and polar forms of a complex number.",
-    back: "Euler's formula: e^(iθ) = cosθ + i sinθ. Polar form: z = r(cosθ + i sinθ) = re^(iθ) where r = |z| and θ = arg(z). Cartesian to polar: r = √(a²+b²), θ = arctan(b/a). Polar to Cartesian: a = r cosθ, b = r sinθ.",
+      "State Euler's formula and convert between Cartesian and polar forms of a complex number.", back: "Euler's formula: e^(iθ) = cosθ + i sinθ. Polar form: z = r(cosθ + i sinθ) = re^(iθ) where r = |z| and θ = arg(z). Cartesian to polar: r = √(a²+b²), θ = arctan(b/a). Polar to Cartesian: a = r cosθ, b = r sinθ.",
     tags: ['complex-numbers'],
     difficulty: 'easy',
   },
   {
     id: 'de-moivre',
-    front: "State De Moivre's theorem for powers and roots of complex numbers.",
-    back: 'De Moivre: [r(cosθ + i sinθ)]ⁿ = rⁿ(cos(nθ) + i sin(nθ)). For roots: z = r^(1/n)[cos((θ + 2kπ)/n) + i sin((θ + 2kπ)/n)] for k = 0, 1, ..., n-1. The n roots lie on a circle of radius r^(1/n) equally spaced at angles 2π/n apart.',
-    tags: ['complex-numbers'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'matrix-ops',
-    front:
-      'State the rules for matrix multiplication and state when two matrices cannot be multiplied.',
-    back: 'If A is m×n and B is p×q, then AB is defined only when n = p, giving an m×q matrix. The (i,j) entry of AB is the dot product of row i of A with column j of B. Matrix multiplication is associative but NOT commutative (AB ≠ BA in general). (AB)⁻¹ = B⁻¹A⁻¹.',
-    tags: ['matrices'],
-    difficulty: 'easy',
-  },
-  {
-    id: 'matrix-det-inv',
-    front: 'State the formula for the determinant and inverse of a 2×2 and 3×3 matrix.',
-    back: '2×2: det M = ad - bc for M = [[a,b],[c,d]]. M⁻¹ = (1/det M)[[d,-b],[-c,a]]. 3×3: det M = a(ei-fh) - b(di-fg) + c(dh-eg) for rows [a,b,c],[d,e,f],[g,h,i]. The inverse of a 3×3 uses the adjugate (transpose of cofactor matrix) divided by the determinant.',
-    tags: ['matrices'],
-    difficulty: 'medium',
-  },
+    front: "State De Moivre's theorem for powers and roots of complex numbers.", back: 'De Moivre: [r(cosθ + i sinθ)]ⁿ = rⁿ(cos(nθ) + i sin(nθ)). For roots: z = r^(1/n)[cos((θ + 2kπ)/n) + i sin((θ + 2kπ)/n)] for k = 0, 1, ..., n-1. The n roots lie on a circle of radius r^(1/n) equally spaced at angles 2π/n apart.', tags: ['complex-numbers'], difficulty: 'medium', }, { id: 'matrix-ops', front: 'State the rules for matrix multiplication and state when two matrices cannot be multiplied.', back: 'If A is m×n and B is p×q, then AB is defined only when n = p, giving an m×q matrix. The (i,j) entry of AB is the dot product of row i of A with column j of B. Matrix multiplication is associative but NOT commutative (AB ≠ BA in general). (AB)⁻¹ = B⁻¹A⁻¹.', tags: ['matrices'], difficulty: 'easy', }, { id: 'matrix-det-inv', front: 'State the formula for the determinant and inverse of a 2×2 and 3×3 matrix.', back: '2×2: det M = ad - bc for M = [[a,b],[c,d]]. M⁻¹ = (1/det M)[[d,-b],[-c,a]]. 3×3: det M = a(ei-fh) - b(di-fg) + c(dh-eg) for rows [a,b,c],[d,e,f],[g,h,i]. The inverse of a 3×3 uses the adjugate (transpose of cofactor matrix) divided by the determinant.', tags: ['matrices'], difficulty: 'medium', },
 ];
 
 export const flashcards2 = [
@@ -125,15 +105,7 @@ export const flashcards3 = [
     id: 'de-particular',
     front:
       'How do you find the particular integral for a second-order differential equation with a non-zero RHS?',
-    back: "For ay'' + by' + cy = f(x): find complementary function (CF) as for homogeneous case, then guess a particular integral (PI) based on f(x). If f(x) is polynomial of degree n, try PI = polynomial of degree n. If f(x) = ke^(px), try PI = Ae^(px). If f(x) = a cos(qx) + b sin(qx), try PI = A cos(qx) + B sin(qx). General solution: y = CF + PI. If the PI guess appears in the CF, multiply by x and try again.",
-    tags: ['differential-equations'],
-    difficulty: 'hard',
-  },
-  {
-    id: 'polar-coords',
-    front:
-      'Define polar coordinates and state how to convert between polar and Cartesian. How do you find the area enclosed by a polar curve?',
-    back: "Polar: (r, θ) where r = distance from origin, θ = angle from positive x-axis. To Cartesian: x = r cosθ, y = r sinθ. To polar: r = √(x²+y²), θ = arctan(y/x). Area = ½ ∫ r² dθ. Area of a sector: A = ½r²θ. Tangent at point: dy/dx = (r cosθ + r'sinθ)/(-r sinθ + r'cosθ) where r' = dr/dθ.",
+    back: "For ay'' + by' + cy = f(x): find complementary function (CF) as for homogeneous case, then guess a particular integral (PI) based on f(x). If f(x) is polynomial of degree n, try PI = polynomial of degree n. If f(x) = ke^(px), try PI = Ae^(px). If f(x) = a cos(qx) + b sin(qx), try PI = A cos(qx) + B sin(qx). General solution: y = CF + PI. If the PI guess appears in the CF, multiply by x and try again.", tags: ['differential-equations'], difficulty: 'hard', }, { id: 'polar-coords', front: 'Define polar coordinates and state how to convert between polar and Cartesian. How do you find the area enclosed by a polar curve?', back: "Polar: (r, θ) where r = distance from origin, θ = angle from positive x-axis. To Cartesian: x = r cosθ, y = r sinθ. To polar: r = √(x²+y²), θ = arctan(y/x). Area = ½ ∫ r² dθ. Area of a sector: A = ½r²θ. Tangent at point: dy/dx = (r cosθ + r'sinθ)/(-r sinθ + r'cosθ) where r' = dr/dθ.",
     tags: ['polar-coordinates'],
     difficulty: 'medium',
   },

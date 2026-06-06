@@ -17,151 +17,26 @@ import PracticeProblem from '@site/src/components/interactive/PracticeProblem';
 
 ---
 
-### Nuclear Structure
+### Practice Questions
 
-export const practiceQuestions = [ { question: "An atom of potassium-40 has 19 protons. How many neutrons
-does it contain?", options: [ "A) 19", "B) 21", "C) 40", "D) 59" ], correct: 1, explanation:
-"Neutron number N = A - Z = 40 - 19 = 21 neutrons." }, { question: "The binding energy per nucleon
-of iron-56 is approximately 8.79 MeV. What is the total binding energy of an iron-56 nucleus?",
+export const practiceQuestions = [
+ { question: "An atom of potassium-40 has 19 protons. How many neutrons does it contain?", options: [ "A) 19", "B) 21", "C) 40", "D) 59" ], correct: 1, explanation:
+"Neutron number N = A - Z = 40 - 19 = 21 neutrons." }, { question: "The binding energy per nucleon of iron-56 is approximately 8.79 MeV. What is the total binding energy of an iron-56 nucleus?",
 options: [ "A) 8.79 MeV", "B) 492 MeV", "C) 245 MeV", "D) 16.6 MeV" ], correct: 1, explanation:
-"Total binding energy = binding energy per nucleon x number of nucleons = 8.79 x 56 = 492.24 MeV
-(approx 492 MeV)." }, { question: "On a graph of neutron number N against proton number Z, stable
-nuclei that lie above the stability curve (excess neutrons) are likely to undergo which type of
-radioactive decay?", options: [ "A) Alpha decay", "B) Beta-plus (positron) decay", "C) Beta-minus
-decay", "D) Gamma emission" ], correct: 2, explanation: "Nuclei above the stability curve have
-excess neutrons. Beta-minus decay converts a neutron to a proton (n -> p + e- + anti-neutrino),
-reducing N and increasing Z, moving the nucleus closer to the stability curve." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Radioactivity
-
-export const practiceQuestions = [ { question: "A radioactive isotope has a half-life of 5.0 days. Starting
-with 160 g of the isotope, how much remains after 20 days?", options: [ "A) 10 g", "B) 20 g", "C) 40
-g", "D) 80 g" ], correct: 0, explanation: "Number of half-lives = 20/5 = 4. Remaining mass = 160 x
-(1/2)^4 = 160/16 = 10 g." }, { question: "A radioactive sample contains 4.0 x 10^15 nuclei with a
-decay constant of 1.2 x 10^-6 s^-1. What is its activity?", options: [ "A) 3.3 x 10^9 Bq", "B) 4.8 x
-10^9 Bq", "C) 4.8 x 10^15 Bq", "D) 3.3 x 10^21 Bq" ], correct: 1, explanation: "Activity A =
-lambda*N = 1.2 x 10^-6 x 4.0 x 10^15 = 4.8 x 10^9 Bq." }, { question: "A piece of ancient wood has
-25% of the carbon-14 activity of a living sample. The half-life of carbon-14 is 5730 years. How old
-is the wood?", options: [ "A) 5730 years", "B) 11460 years", "C) 17190 years", "D) 2865 years" ],
-correct: 1, explanation: "Activity ratio = 0.25 = (1/2)^2, so 2 half-lives have elapsed. Age = 2 x
-5730 = 11,460 years. Using N = N0*e^(-lambda*t): 0.25 = e^(-lambda*t), t = -ln(0.25)/lambda = ln(4)
-x 5730/ln(2) = 2 x 5730 = 11,460 years." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Nuclear Reactions
-
-export const practiceQuestions = [ { question: "In a nuclear fission reactor, which component absorbs
-neutrons to control the rate of the chain reaction?", options: [ "A) Control rods (e.g. boron or
-cadmium)", "B) Moderator (e.g. graphite or water)", "C) Fuel rods (e.g. uranium-235)", "D) Coolant
-(e.g. carbon dioxide)" ], correct: 0, explanation: "Control rods absorb neutrons, reducing the
-number of neutrons available to sustain the fission chain reaction. The moderator slows neutrons to
-thermal energies. Fuel rods undergo fission. The coolant transfers heat away from the reactor core."
-}, { question: "In a typical fission of U-235, approximately 200 MeV of energy is released per
-nucleus. Calculate the total energy released when 1.0 g of U-235 undergoes complete fission. (N_A =
-6.02 x 10^23 mol^-1, 1 eV = 1.6 x 10^-19 J)", options: [ "A) 8.2 x 10^7 J", "B) 8.2 x 10^10 J", "C)
-5.1 x 10^12 J", "D) 2.6 x 10^20 J" ], correct: 1, explanation: "Number of U-235 atoms = (1.0/235) x
-6.02 x 10^23 = 2.56 x 10^21. Energy per fission = 200 x 1.6 x 10^-13 J = 3.2 x 10^-11 J. Total
-energy = 2.56 x 10^21 x 3.2 x 10^-11 = 8.19 x 10^10 J (approx 8.2 x 10^10 J)." }, { question: "The
-proton-proton chain is the dominant fusion process in main sequence stars like the Sun. What minimum
-core temperature is required for fusion to begin, and what physical barrier must be overcome?",
-options: [ "A) 10^6 K; electrons must be stripped from atoms to form plasma", "B) 10^7 K; Coulomb
-(electrostatic) repulsion between protons must be overcome", "C) 10^8 K; the strong nuclear force
-must be weakened to allow protons to combine", "D) 10^9 K; gravitational pressure must exceed
-radiation pressure" ], correct: 1, explanation: "Fusion requires temperatures of approximately 10^7
-K so that protons have sufficient kinetic energy to overcome the Coulomb repulsion between their
-positive charges and approach within range of the strong nuclear force (~1 fm). The strong force is
-attractive at this range and binds the protons together." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Particle Physics
-
-export const practiceQuestions = [ { question: "A pi-plus meson (pi+) has a charge of +1e. What is its
-quark composition?", options: [ "A) up + anti-up (u u-bar)", "B) down + anti-down (d d-bar)", "C) up
-+ anti-down (u d-bar)", "D) strange + anti-strange (s s-bar)" ], correct: 2, explanation: "A pi+
-meson has charge +1e. It consists of an up quark (charge +2/3 e) and an anti-down quark (charge +1/3
-e). Total charge = +2/3 + 1/3 = +1e. The pi+ is a meson (quark-antiquark pair), so u d-bar is
-correct." }, { question: "A free neutron undergoes beta-minus decay: n -> p + e- + anti-nu_e. Which
-quantities are conserved in this process?", options: [ "A) Charge and baryon number only", "B)
-Charge, baryon number and lepton number", "C) Mass number and energy only", "D) Strangeness and
-lepton number only" ], correct: 1, explanation: "Charge: 0 = +1 + (-1) + 0 = 0 (conserved). Baryon
-number: 1 = 1 + 0 + 0 = 1 (conserved). Lepton number: 0 = 0 + 1 + (-1) = 0 (conserved). Mass number
-is also conserved (1 = 1 + 0 + 0) but total mass is not conserved -- the neutron is slightly more
-massive than the proton." }, { question: "A positron (e+) and an electron (e-) annihilate producing
-two gamma ray photons. Why must exactly two photons be produced rather than one?", options: [ "A) A
-single photon would not carry enough energy to equal the rest mass energy", "B) A single photon
-cannot conserve both momentum and energy simultaneously in the centre-of-mass frame", "C) Two
-photons are required to conserve lepton number", "D) The rest mass energy must be split equally
-between photons to maintain charge neutrality" ], correct: 1, explanation: "In the centre-of-mass
-frame, total momentum before annihilation is zero. A single photon always carries momentum p = E/c
-(which is non-zero if E > 0), so it cannot have zero total momentum. Two photons emitted in opposite
-directions have equal and opposite momenta, giving total momentum of zero. Each photon has energy E
-= m_e\*c^2 = 0.511 MeV." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Astrophysics -- Stars
-
-export const practiceQuestions = [ { question: "On the Hertzsprung-Russell diagram, where are approximately
-90% of stars located?", options: [ "A) Along the main sequence", "B) In the red giant region", "C)
-In the white dwarf region", "D) In the supergiant region" ], correct: 0, explanation: "About 90% of
-stars lie along the main sequence, a diagonal band from top-left (hot, luminous, blue O-type stars)
-to bottom-right (cool, dim, red M-type stars). Stars spend the majority of their lifetimes fusing
-hydrogen into helium on the main sequence." }, { question: "What primarily determines whether a star
-ends its life as a white dwarf, neutron star or black hole?", options: [ "A) Its initial luminosity
-on the main sequence", "B) Its initial mass", "C) Its surface temperature", "D) Its distance from
-the observer" ], correct: 1, explanation: "The final fate of a star is determined by its initial
-mass. Stars with initial mass less than about 8 solar masses become white dwarfs. Stars with initial
-mass between about 8 and 25 solar masses become neutron stars. Stars with initial mass greater than
-about 25 solar masses become black holes." }, { question: "The Chandrasekhar limit is approximately
-1.4 solar masses. What is its physical significance?", options: [ "A) The minimum mass a protostar
-needs to begin hydrogen fusion on the main sequence", "B) The maximum mass that can be supported by
-electron degeneracy pressure in a white dwarf", "C) The minimum mass a neutron star needs to
-overcome neutron degeneracy pressure and collapse into a black hole", "D) The maximum mass a main
-sequence star can have before it becomes a Wolf-Rayet star" ], correct: 1, explanation: "The
-Chandrasekhar limit (~1.4 M_sun) is the maximum mass of a stable white dwarf supported by electron
-degeneracy pressure. If a white dwarf accretes mass (e.g. from a binary companion) and exceeds this
-limit, electron degeneracy pressure is insufficient and the star may undergo a Type Ia supernova or
-collapse." } ];
-
-<PracticeProblem questions={practiceQuestions} />
-
----
-
-### Astrophysics -- Cosmology
-
-export const practiceQuestions = [ { question: "What does cosmological redshift of light from distant
-galaxies indicate?", options: [ "A) The galaxies are moving towards us", "B) The galaxies are moving
-away from us", "C) The galaxies are stationary and the light is losing energy in transit", "D) The
-galaxies are moving perpendicular to our line of sight" ], correct: 1, explanation: "Cosmological
-redshift (spectral lines shifted to longer wavelengths) indicates galaxies are receding from us. The
-greater the redshift, the faster the recession velocity. This observation by Hubble provided key
-evidence for the expansion of the universe." }, { question: "Given Hubble's constant H_0 = 68
+"Total binding energy = binding energy per nucleon x number of nucleons = 8.79 x 56 = 492.24 MeV (approx 492 MeV)." }, { question: "On a graph of neutron number N against proton number Z, stable nuclei that lie above the stability curve (excess neutrons) are likely to undergo which type of radioactive decay?", options: [ "A) Alpha decay", "B) Beta-plus (positron) decay", "C) Beta-minus decay", "D) Gamma emission" ], correct: 2, explanation: "Nuclei above the stability curve have excess neutrons. Beta-minus decay converts a neutron to a proton (n -> p + e- + anti-neutrino), reducing N and increasing Z, moving the nucleus closer to the stability curve." },
+ { question: "A radioactive isotope has a half-life of 5.0 days. Starting with 160 g of the isotope, how much remains after 20 days?", options: [ "A) 10 g", "B) 20 g", "C) 40 g", "D) 80 g" ], correct: 0, explanation: "Number of half-lives = 20/5 = 4. Remaining mass = 160 x (1/2)^4 = 160/16 = 10 g." }, { question: "A radioactive sample contains 4.0 x 10^15 nuclei with a decay constant of 1.2 x 10^-6 s^-1. What is its activity?", options: [ "A) 3.3 x 10^9 Bq", "B) 4.8 x 10^9 Bq", "C) 4.8 x 10^15 Bq", "D) 3.3 x 10^21 Bq" ], correct: 1, explanation: "Activity A = lambda*N = 1.2 x 10^-6 x 4.0 x 10^15 = 4.8 x 10^9 Bq." }, { question: "A piece of ancient wood has 25% of the carbon-14 activity of a living sample. The half-life of carbon-14 is 5730 years. How old is the wood?", options: [ "A) 5730 years", "B) 11460 years", "C) 17190 years", "D) 2865 years" ],
+correct: 1, explanation: "Activity ratio = 0.25 = (1/2)^2, so 2 half-lives have elapsed. Age = 2 x 5730 = 11,460 years. Using N = N0*e^(-lambda*t): 0.25 = e^(-lambda*t), t = -ln(0.25)/lambda = ln(4) x 5730/ln(2) = 2 x 5730 = 11,460 years." },
+ { question: "In a nuclear fission reactor, which component absorbs neutrons to control the rate of the chain reaction?", options: [ "A) Control rods (e.g. boron or cadmium)", "B) Moderator (e.g. graphite or water)", "C) Fuel rods (e.g. uranium-235)", "D) Coolant (e.g. carbon dioxide)" ], correct: 0, explanation: "Control rods absorb neutrons, reducing the number of neutrons available to sustain the fission chain reaction. The moderator slows neutrons to thermal energies. Fuel rods undergo fission. The coolant transfers heat away from the reactor core."
+}, { question: "In a typical fission of U-235, approximately 200 MeV of energy is released per nucleus. Calculate the total energy released when 1.0 g of U-235 undergoes complete fission. (N_A = 6.02 x 10^23 mol^-1, 1 eV = 1.6 x 10^-19 J)", options: [ "A) 8.2 x 10^7 J", "B) 8.2 x 10^10 J", "C) 5.1 x 10^12 J", "D) 2.6 x 10^20 J" ], correct: 1, explanation: "Number of U-235 atoms = (1.0/235) x 6.02 x 10^23 = 2.56 x 10^21. Energy per fission = 200 x 1.6 x 10^-13 J = 3.2 x 10^-11 J. Total energy = 2.56 x 10^21 x 3.2 x 10^-11 = 8.19 x 10^10 J (approx 8.2 x 10^10 J)." }, { question: "The proton-proton chain is the dominant fusion process in main sequence stars like the Sun. What minimum core temperature is required for fusion to begin, and what physical barrier must be overcome?",
+options: [ "A) 10^6 K; electrons must be stripped from atoms to form plasma", "B) 10^7 K; Coulomb (electrostatic) repulsion between protons must be overcome", "C) 10^8 K; the strong nuclear force must be weakened to allow protons to combine", "D) 10^9 K; gravitational pressure must exceed radiation pressure" ], correct: 1, explanation: "Fusion requires temperatures of approximately 10^7 K so that protons have sufficient kinetic energy to overcome the Coulomb repulsion between their positive charges and approach within range of the strong nuclear force (~1 fm). The strong force is attractive at this range and binds the protons together." },
+ { question: "A pi-plus meson (pi+) has a charge of +1e. What is its quark composition?", options: [ "A) up + anti-up (u u-bar)", "B) down + anti-down (d d-bar)", "C) up + anti-down (u d-bar)", "D) strange + anti-strange (s s-bar)" ], correct: 2, explanation: "A pi+ meson has charge +1e. It consists of an up quark (charge +2/3 e) and an anti-down quark (charge +1/3 e). Total charge = +2/3 + 1/3 = +1e. The pi+ is a meson (quark-antiquark pair), so u d-bar is correct." }, { question: "A free neutron undergoes beta-minus decay: n -> p + e- + anti-nu_e. Which quantities are conserved in this process?", options: [ "A) Charge and baryon number only", "B) Charge, baryon number and lepton number", "C) Mass number and energy only", "D) Strangeness and lepton number only" ], correct: 1, explanation: "Charge: 0 = +1 + (-1) + 0 = 0 (conserved). Baryon number: 1 = 1 + 0 + 0 = 1 (conserved). Lepton number: 0 = 0 + 1 + (-1) = 0 (conserved). Mass number is also conserved (1 = 1 + 0 + 0) but total mass is not conserved -- the neutron is slightly more massive than the proton." }, { question: "A positron (e+) and an electron (e-) annihilate producing two gamma ray photons. Why must exactly two photons be produced rather than one?", options: [ "A) A single photon would not carry enough energy to equal the rest mass energy", "B) A single photon cannot conserve both momentum and energy simultaneously in the centre-of-mass frame", "C) Two photons are required to conserve lepton number", "D) The rest mass energy must be split equally between photons to maintain charge neutrality" ], correct: 1, explanation: "In the centre-of-mass frame, total momentum before annihilation is zero. A single photon always carries momentum p = E/c (which is non-zero if E > 0), so it cannot have zero total momentum. Two photons emitted in opposite directions have equal and opposite momenta, giving total momentum of zero. Each photon has energy E = m_e\*c^2 = 0.511 MeV." },
+ { question: "On the Hertzsprung-Russell diagram, where are approximately 90% of stars located?", options: [ "A) Along the main sequence", "B) In the red giant region", "C) In the white dwarf region", "D) In the supergiant region" ], correct: 0, explanation: "About 90% of stars lie along the main sequence, a diagonal band from top-left (hot, luminous, blue O-type stars) to bottom-right (cool, dim, red M-type stars). Stars spend the majority of their lifetimes fusing hydrogen into helium on the main sequence." }, { question: "What primarily determines whether a star ends its life as a white dwarf, neutron star or black hole?", options: [ "A) Its initial luminosity on the main sequence", "B) Its initial mass", "C) Its surface temperature", "D) Its distance from the observer" ], correct: 1, explanation: "The final fate of a star is determined by its initial mass. Stars with initial mass less than about 8 solar masses become white dwarfs. Stars with initial mass between about 8 and 25 solar masses become neutron stars. Stars with initial mass greater than about 25 solar masses become black holes." }, { question: "The Chandrasekhar limit is approximately 1.4 solar masses. What is its physical significance?", options: [ "A) The minimum mass a protostar needs to begin hydrogen fusion on the main sequence", "B) The maximum mass that can be supported by electron degeneracy pressure in a white dwarf", "C) The minimum mass a neutron star needs to overcome neutron degeneracy pressure and collapse into a black hole", "D) The maximum mass a main sequence star can have before it becomes a Wolf-Rayet star" ], correct: 1, explanation: "The Chandrasekhar limit (~1.4 M_sun) is the maximum mass of a stable white dwarf supported by electron degeneracy pressure. If a white dwarf accretes mass (e.g. from a binary companion) and exceeds this limit, electron degeneracy pressure is insufficient and the star may undergo a Type Ia supernova or collapse." },
+ { question: "What does cosmological redshift of light from distant galaxies indicate?", options: [ "A) The galaxies are moving towards us", "B) The galaxies are moving away from us", "C) The galaxies are stationary and the light is losing energy in transit", "D) The galaxies are moving perpendicular to our line of sight" ], correct: 1, explanation: "Cosmological redshift (spectral lines shifted to longer wavelengths) indicates galaxies are receding from us. The greater the redshift, the faster the recession velocity. This observation by Hubble provided key evidence for the expansion of the universe." }, { question: "Given Hubble's constant H_0 = 68
 km/s/Mpc, estimate the age of the universe using t = 1/H_0. (1 Mpc = 3.086 x 10^19 km, 1 year =
-3.156 x 10^7 s)", options: [ "A) 4.6 billion years", "B) 13.8 billion years", "C) 68 billion years",
-"D) 9.8 billion years" ], correct: 1, explanation: "H_0 = 68 km/s/Mpc = 68 / (3.086 x 10^19) s^-1 =
+3.156 x 10^7 s)", options: [ "A) 4.6 billion years", "B) 13.8 billion years", "C) 68 billion years", "D) 9.8 billion years" ], correct: 1, explanation: "H_0 = 68 km/s/Mpc = 68 / (3.086 x 10^19) s^-1 =
 2.20 x 10^-18 s^-1. t = 1/H_0 = 4.54 x 10^17 s = 4.54 x 10^17 / (3.156 x 10^7) = 1.44 x 10^10 years
-= 14.4 billion years (approximately 13.8 billion years with current precise measurements)." }, {
-question: "The cosmic microwave background (CMB) radiation has a blackbody spectrum with a peak
-wavelength of 1.06 mm. Using Wien's displacement law (lambda_max \* T = 2.90 x 10^-3 m K), what is
-the temperature of the CMB and what does it represent?", options: [ "A) 2.73 K; the temperature of
-interstellar space today", "B) 2730 K; the surface temperature of the first stars that formed", "C)
-2.73 K; the cooled remnant radiation from the hot, dense early universe after the Big Bang", "D)
-0.273 K; evidence that the universe is approaching absolute zero" ], correct: 2, explanation: "T =
-2.90 x 10^-3 / (1.06 x 10^-3) = 2.74 K (approx 2.73 K). The CMB is the remnant radiation from when
-the universe became transparent at about 380,000 years after the Big Bang (recombination era). At
-that time the temperature was about 3000 K; expansion has redshifted the radiation to microwave
-wavelengths, cooling it to 2.73 K." } ];
+= 14.4 billion years (approximately 13.8 billion years with current precise measurements)." }, { question: "The cosmic microwave background (CMB) radiation has a blackbody spectrum with a peak
+wavelength of 1.06 mm. Using Wien's displacement law (lambda_max \* T = 2.90 x 10^-3 m K), what is the temperature of the CMB and what does it represent?", options: [ "A) 2.73 K; the temperature of interstellar space today", "B) 2730 K; the surface temperature of the first stars that formed", "C) 2.73 K; the cooled remnant radiation from the hot, dense early universe after the Big Bang", "D) 0.273 K; evidence that the universe is approaching absolute zero" ], correct: 2, explanation: "T = 2.90 x 10^-3 / (1.06 x 10^-3) = 2.74 K (approx 2.73 K). The CMB is the remnant radiation from when the universe became transparent at about 380,000 years after the Big Bang (recombination era). At that time the temperature was about 3000 K; expansion has redshifted the radiation to microwave wavelengths, cooling it to 2.73 K." },
+];
 
 <PracticeProblem questions={practiceQuestions} />

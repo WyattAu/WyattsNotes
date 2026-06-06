@@ -46,17 +46,7 @@ export const flashcards1 = [
     id: 'alevel-further-stats-004',
     front:
       'State Var(X) = E(X²) - [E(X)]² and explain why this form is preferred over Var(X) = E[(X - μ)²].',
-    back: "Var(X) = E(X²) - [E(X)]². Both are equivalent, but E(X²) - [E(X)]² is easier to compute because E(X²) = Σ x²·P(X=x) (or ∫ x²f(x)dx) avoids expanding (X-μ)². This form also directly shows variance ≥ 0 since E(X²) ≥ [E(X)]² by Jensen's inequality.",
-    tags: ['variance'],
-    difficulty: 'easy',
-  },
-  {
-    id: 'alevel-further-stats-005',
-    front: 'How does coding Y = aX + b affect E(X) and Var(X)? State the general rules.',
-    back: 'E(Y) = aE(X) + b. Var(Y) = a²Var(X). The mean scales by a and shifts by b. The variance scales by a² only; adding a constant b does not change the spread. Standard deviation: σ*Y = |a|σ_X. These rules are fundamental for working with coded data in exam questions.',
-    tags: ['coding'],
-    difficulty: 'medium',
-  },
+    back: "Var(X) = E(X²) - [E(X)]². Both are equivalent, but E(X²) - [E(X)]² is easier to compute because E(X²) = Σ x²·P(X=x) (or ∫ x²f(x)dx) avoids expanding (X-μ)². This form also directly shows variance ≥ 0 since E(X²) ≥ [E(X)]² by Jensen's inequality.", tags: ['variance'], difficulty: 'easy', }, { id: 'alevel-further-stats-005', front: 'How does coding Y = aX + b affect E(X) and Var(X)? State the general rules.', back: 'E(Y) = aE(X) + b. Var(Y) = a²Var(X). The mean scales by a and shifts by b. The variance scales by a² only; adding a constant b does not change the spread. Standard deviation: σ*Y = |a|σ_X. These rules are fundamental for working with coded data in exam questions.', tags: ['coding'], difficulty: 'medium', },
 ];
 
 export const flashcards2 = [
@@ -141,39 +131,8 @@ export const flashcards4 = [
   {
     id: 'alevel-further-stats-016',
     front: 'Define the power of a statistical test and explain the factors that affect it.',
-    back: "Power = P(reject H₀ | H₀ is false) = 1 - β. It measures the test's ability to detect a false H₀. Factors increasing power: (1) Larger sample size n. (2) Larger effect size (difference between H₀ and true value). (3) Larger significance level α. (4) Using a one-tailed test. (5) Smaller population variance σ². A power of 0.8 (80%) is commonly used as a target in study design.",
-    tags: ['power'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'alevel-further-stats-017',
-    front: 'Define the critical region of a hypothesis test and explain how it is determined.',
-    back: 'The critical region (rejection region) is the set of values of the test statistic for which H₀ is rejected. It is determined by the significance level α and whether the test is one-tailed or two-tailed. For a two-tailed test at α = 0.05: critical region is the top 2.5% and bottom 2.5% of the sampling distribution under H₀. For one-tailed: the critical region is the extreme 5% in the direction of H₁.',
-    tags: ['critical-region'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'alevel-further-stats-018',
-    front: 'Define the p-value and explain how it is used in hypothesis testing.',
-    back: 'The p-value is the probability of obtaining a test statistic at least as extreme as the observed value, assuming H₀ is true. Decision rule: reject H₀ if p-value < α. A small p-value provides evidence against H₀. p-value is NOT the probability that H₀ is true. The p-value depends on the observed data and is a random variable: more extreme data gives smaller p-values.',
-    tags: ['p-value'],
-    difficulty: 'medium',
-  },
-  {
-    id: 'alevel-further-stats-019',
-    front: 'Describe the chi-squared goodness of fit test procedure and conditions for validity.',
-    back: 'Purpose: test whether observed data fits a hypothesised distribution. Procedure: (1) State H₀: data follows specified distribution. (2) Calculate expected frequencies Eᵢ = n × pᵢ. (3) Compute χ² = Σ (Oᵢ - Eᵢ)²/Eᵢ. (4) Compare with critical value from χ²(k-1) table. Conditions: all Eᵢ ≥ 5 (combine categories if needed), observations are independent, n is sufficiently large.',
-    tags: ['chi-squared'],
-    difficulty: 'hard',
-  },
-  {
-    id: 'alevel-further-stats-020',
-    front:
-      "Describe the chi-squared test for association in a contingency table and state Yates' correction.",
-    back: "Purpose: test whether two categorical variables are associated/independent. H₀: the variables are independent. Expected frequency: Eᵢⱼ = (row total × column total) / grand total. Test statistic: χ² = Σ (Oᵢⱼ - Eᵢⱼ)²/Eᵢⱼ. df = (r-1)(c-1). Yates' correction: for a 2×2 table, use (|O - E| - 0.5)²/E instead. This continuity correction reduces χ², making the test more conservative and preventing over-rejection of H₀ with small samples.",
-    tags: ['chi-squared'],
-    difficulty: 'hard',
-  },
+    back: "Power = P(reject H₀ | H₀ is false) = 1 - β. It measures the test's ability to detect a false H₀. Factors increasing power: (1) Larger sample size n. (2) Larger effect size (difference between H₀ and true value). (3) Larger significance level α. (4) Using a one-tailed test. (5) Smaller population variance σ². A power of 0.8 (80%) is commonly used as a target in study design.", tags: ['power'], difficulty: 'medium', }, { id: 'alevel-further-stats-017', front: 'Define the critical region of a hypothesis test and explain how it is determined.', back: 'The critical region (rejection region) is the set of values of the test statistic for which H₀ is rejected. It is determined by the significance level α and whether the test is one-tailed or two-tailed. For a two-tailed test at α = 0.05: critical region is the top 2.5% and bottom 2.5% of the sampling distribution under H₀. For one-tailed: the critical region is the extreme 5% in the direction of H₁.', tags: ['critical-region'], difficulty: 'medium', }, { id: 'alevel-further-stats-018', front: 'Define the p-value and explain how it is used in hypothesis testing.', back: 'The p-value is the probability of obtaining a test statistic at least as extreme as the observed value, assuming H₀ is true. Decision rule: reject H₀ if p-value < α. A small p-value provides evidence against H₀. p-value is NOT the probability that H₀ is true. The p-value depends on the observed data and is a random variable: more extreme data gives smaller p-values.', tags: ['p-value'], difficulty: 'medium', }, { id: 'alevel-further-stats-019', front: 'Describe the chi-squared goodness of fit test procedure and conditions for validity.', back: 'Purpose: test whether observed data fits a hypothesised distribution. Procedure: (1) State H₀: data follows specified distribution. (2) Calculate expected frequencies Eᵢ = n × pᵢ. (3) Compute χ² = Σ (Oᵢ - Eᵢ)²/Eᵢ. (4) Compare with critical value from χ²(k-1) table. Conditions: all Eᵢ ≥ 5 (combine categories if needed), observations are independent, n is sufficiently large.', tags: ['chi-squared'], difficulty: 'hard', }, { id: 'alevel-further-stats-020', front: "Describe the chi-squared test for association in a contingency table and state Yates' correction.",
+    back: "Purpose: test whether two categorical variables are associated/independent. H₀: the variables are independent. Expected frequency: Eᵢⱼ = (row total × column total) / grand total. Test statistic: χ² = Σ (Oᵢⱼ - Eᵢⱼ)²/Eᵢⱼ. df = (r-1)(c-1). Yates' correction: for a 2×2 table, use (|O - E| - 0.5)²/E instead. This continuity correction reduces χ², making the test more conservative and preventing over-rejection of H₀ with small samples.", tags: ['chi-squared'], difficulty: 'hard', },
 ];
 
 <FlashcardDeck
