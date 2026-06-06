@@ -42,3 +42,9 @@ jobs:
           node-memory: '11264'
           preprocess-paths: 'docs/docs_dse'
           create-project: 'true'
+          sentry-dsn: ${{ secrets.SENTRY_DSN }}
+          google-site-verification: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
+          bing-site-verification: ${{ secrets.BING_SITE_VERIFICATION }}
+          cloudflare-analytics-token: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          cloudflare-api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          cloudflare-account-id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
